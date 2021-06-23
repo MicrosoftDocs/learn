@@ -8,11 +8,15 @@ In this unit, you will learn how to set limits on the frequency your census API 
 
 To apply a **throttling** policy within API Management, follow these steps:
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+
 1. On the Azure portal menu or from the **Home** page, select **All Resources**, and then select your API gateway.
-1. Under **API management**, click **APIs**, and then select **Census Data**.
-1. On the top of the screen, select the **Design** tab, and then select **All operations**.
-1. In the **Inbound processing** section, click the **</>** icon.
+
+1. In the left menu pane, Under **APIs**, select **APIs**, and in the middle pane, select **Census Data**.
+
+1. In the top menu bar, select the **Design** tab, and then select **All operations**.
+
+1. In the **Inbound processing** section, select the **</>** icon.
 
     ![Overview of API management](../media/7-apply-throttling-policy.png)
 
@@ -25,7 +29,7 @@ To apply a **throttling** policy within API Management, follow these steps:
     </inbound>
     ```
 
-1. Click the **Save** button
+1. Select **Save**.
 
 Your policy file should contain all three policies, similar to this code:
 
@@ -39,7 +43,7 @@ Your policy file should contain all three policies, similar to this code:
         <base />
     </backend>
     <outbound>
-        <set-header name="X-Powered-By" exists-action="delete" />
+        <set-header name="x-powered-by" exists-action="delete" />
         <redirect-content-urls />
         <base />
     </outbound>
@@ -52,12 +56,14 @@ Your policy file should contain all three policies, similar to this code:
 > [!NOTE]
 > The order of the policies within each section is not important for this example.
 
-## Test the policy 
+## Test the policy
 
 Now let's see if the throttling policy is working:
 
-1. Select **Census Data**, and then at the top of the screen, select the **Test** tab.
-1. Next, select the **GetLatestCensus** operation, and then click **Send** three times in a row.
-1. Send the request for the fourth time. You should get a **429 error (too many requests)** response:
+1. Select **Census Data** again, and in the top menu bar, select the **Test** tab.
+
+1. Select the **GetLatestCensus** operation, and then select **Send** three times in a row.
+
+1. Upon sending the request the third time, you should get a **429 error (too many requests)** response:
 
     ![Mask URL Policy](../media/7-too-many-requests.png)

@@ -26,7 +26,7 @@ In this unit, you'll use the Azure CLI to monitor events sent to Azure IoT Hub. 
 1. With everything working correctly, the output from the `az iot hub monitor-events` command will look similar to the following output:
 
     ```bash
-     user@Azure:~$ az iot hub monitor-events -n AZ-220-HUB-1119
+     az iot hub monitor-events -n AZ-220-HUB-1119
      Starting event monitor, use ctrl-c to stop...
      {
          "event": {

@@ -1,25 +1,25 @@
 ### YamlMime:Module
 uid: learn.azdo.scan-open-source
+hidden: true
 metadata:
   title: Scan open-source components for vulnerabilities and license ratings in Azure Pipelines
   description: Scan open-source components for security vulnerabilities and assess their license ratings when your application builds in Azure Pipelines.
-  ms.date: 01/21/2020
+  ms.date: 05/27/2021
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
-  #ms.learn-contact: thpetche
   ms.prod: learning-azure
 title: Scan open source components for vulnerabilities and license ratings in Azure Pipelines
 summary: Scan open-source components for security vulnerabilities and assess their license ratings when your application builds in Azure Pipelines.
 abstract: |
-  In this module, you will:
-  - Learn which tools you can use to inspect open-source software packages for security and license ratings
+  After completing this module, you'll be able to:
+  - Evaluate which tools you can use to inspect open-source software packages for security and license ratings
   - Access package and license ratings for open-source components by using WhiteSource Bolt
   - Analyze the results of the scan so you can take the appropriate action
 prerequisites: |
   - An Azure DevOps organization
   - Visual Studio Code
-  - .NET Core 3.1
+  - .NET 5.0 SDK
   - Git
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/manage-security-and-compliance-in-your-build-pipeline.svg

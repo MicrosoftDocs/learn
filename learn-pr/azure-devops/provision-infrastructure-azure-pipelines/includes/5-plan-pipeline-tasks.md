@@ -135,7 +135,7 @@ That way, if you make changes to your Terraform plan but forget to set a variabl
 
 For learning purposes, your Terraform plan uses a random number to make your App Service name unique. In practice, you would choose a name that matches the name of your application or service.
 
-Recall from the [Deploy applications with Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops?azure-portal=true) learning path that the `AzureWebApp@1` task needs the name of the App Service instance where you want to deploy your application.
+Recall from the [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true) learning path that the `AzureWebApp@1` task needs the name of the App Service instance where you want to deploy your application.
 
 [!code-yml[](code/5-azure-pipelines-1.yml?highlight=5)]
 

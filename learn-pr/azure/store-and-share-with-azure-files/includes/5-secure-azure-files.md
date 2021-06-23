@@ -26,7 +26,7 @@ Add-AzStorageAccountNetworkRule `
 Or, you could use a CLI command.
 
 ```azurecli
-"az storage account network-rule add \"
+az storage account network-rule add \
     --resource-group "myresourcegroup" \
     --account-name "mystorageaccount" \
     --ip-address "NNN.NNN.NNN.NNN"

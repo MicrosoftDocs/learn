@@ -31,11 +31,11 @@ There are several ways to import an API into Azure API Management.
 
 Using the Azure portal, you select **APIs**, and then **+ Add API**. You start by selecting the API framework you'd like to import.
 
-![Import API using Azure portal](../media/4-apim-import.png)
+![Screenshot of Azure portal showing API Management service with the APIs section highlighted and selected.](../media/4-apim-import.png)
 
 You then provide a link to your API specification as a URL or file, and a name for the API. Here's an example for an OpenAPI import.
 
-![API details](../media/4-api-details.png)
+![Screenshot of create from OpenAPI specification import settings with OpenAPI specification and display name fields highlighted.](../media/4-api-details.png)
 
 The Azure portal is not the most efficient tool for importing and configuring large numbers of APIs. As you scale up your API management, you'll need other tools. You can use **Azure PowerShell** to manage your API gateway, and to import APIs. There are cmdlets for deploying API gateways, defining and configuring products, importing APIs, and managing users and subscriptions.
 
@@ -45,7 +45,7 @@ You can use the API gateway as a way to visualize how data is processed through 
 
 If you are an administrator, you can visualize APIs in the Azure portal.
 
-![Visualize API using Azure portal](../media/4-apim-azure-portal-visualize.png)
+![Screenshot of Azure portal API configuration showing a highlighted GET request test on an imported API.](../media/4-apim-azure-portal-visualize.png)
 
 ## Policies
 Policies provide powerful capabilities to change the behavior of an API through configuration. They exist as a collection of statements that are executed sequentially on the request or response of an API.
@@ -59,10 +59,10 @@ Popular configurations include:
 You use the Azure portal to apply different policies to APIs. 
 Policies can be viewed in the **Design** tab.
 
-![](../media/4-policies-1.png)
+![Screenshot of Azure portal showing API configuration for all operations with base policies highlighted for inbound, outbound, and backend sections.](../media/4-policies-1.png)
 
 You can also use the Design tab to add new policies.
-![](../media/4-policies-2.png)
+![Screenshot of Azure portal showing inbound policy options for API configuration.](../media/4-policies-2.png)
 
 ## Product
 
@@ -84,6 +84,6 @@ You assign policies so that your products can have different access rules, usage
 
 You use the Azure portal to associate APIs with a product.
 
-![](../media/4-apim-products.png)
+![Screenshot of Azure portal showing API Management with products section highlighted.](../media/4-apim-products.png)
 
 For all pricing tiers except consumption, there two default products: **Starter** and **Unlimited**. The Unlimited product is designed for production API management, as it has no restrictions on the number of attached APIs. You can create as many new products as you need. The starter product has a limit of five API calls/minute, and a maximum of 100 API calls/week.

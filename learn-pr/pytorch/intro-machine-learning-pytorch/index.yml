@@ -15,7 +15,7 @@ abstract: |
   - Learn the key concepts used to build machine learning models
   - Learn how to build a Computer Vision model
   - Build models with the PyTorch API
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/pytorch-intro.svg
 levels:
 - beginner
 roles:

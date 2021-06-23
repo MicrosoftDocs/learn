@@ -1,6 +1,6 @@
 This module is about expressing your infrastructure requirements as code. By adopting this practice, you can automatically provision the infrastructure that you need for your application or service.
 
-In the [Deploy applications with Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops?azure-portal=true) learning path, you built a release pipeline in Azure Pipelines. You deployed a web application to Azure App Service instances that you brought up manually through the Azure portal and through the Azure CLI.
+In the [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true) learning path, you built a release pipeline in Azure Pipelines. You deployed a web application to Azure App Service instances that you brought up manually through the Azure portal and through the Azure CLI.
 
 Keeping up with changes in your infrastructure is a challenge. New resources need to be built. Old resources need maintenance. Environments need to be consistent. _Infrastructure as code_ enables you to describe, through code, the infrastructure that you need for your application.
 
@@ -22,9 +22,9 @@ The modules in this learning path form a progression.
 
 To follow the progression from the beginning, be sure to first complete these learning paths:
 
-- [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true)
-- [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true)
-- [Deploy applications with Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops?azure-portal=true)
+- [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
+- [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
+- [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true)
 
 If you want to start with this learning path, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
 

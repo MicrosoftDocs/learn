@@ -16,7 +16,7 @@ The exercise also runs a client app that simulates several users issuing POST an
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-1. Select **Web**, search for and select **Web App**, and then select **Create**. The **Web App** pane appears.
+1. Select **Web**, search for and select **Web App**, and then select **Create**. The **Create Web App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 

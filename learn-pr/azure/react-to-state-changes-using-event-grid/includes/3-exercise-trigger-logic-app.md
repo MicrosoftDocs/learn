@@ -10,9 +10,9 @@ Let's start by creating a new virtual machine in the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the account that you used to activate the sandbox.
 
-1. Select **Create a resource**.
+1. Select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Compute**, and then select **Virtual machine**. The **Create a virtual machine** pane appears.
+1. In the left menu pane, select **Compute**, and then select **Virtual machine** from the *Featured* list. The **Create a virtual machine** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -40,9 +40,11 @@ Let's start by creating a new virtual machine in the Azure portal.
 
 The next step is to create the logic app that will run when a virtual machine change is detected. Let's create a blank logic app.
 
-1. From the **Home** page, select **Create a resource**.
+1. From the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Integration**, search for and select **Logic App**, and then select **Create**. The **Create a logic app** page appears.
+1. In the left menu pane, select **Integration**, search for and select **Logic App**. The **Logic App (Consumption)** pane appears.
+
+1. Select **Create**. The **Create a logic app** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -54,7 +56,7 @@ The next step is to create the logic app that will run when a virtual machine ch
     | **Instance details** |
     | Logic app name | Enter a name |
     | Region | Select a region near you |
-    | Enable log analytics | Off (unchecked) |
+    | Enable log analytics | No checkmark |
 
 1. Select **Review + create**, and then select **Create**.
 

@@ -241,7 +241,7 @@ In this section, you'll use `az cli db restore` to restore the database to a tim
 
     After you see that the restore is in progress, the restore should take 2-3 minutes more. You'll know when it's done because the command will complete. Also, you'll no longer see "(Restoring...)" next to the copy database when you start a refresh.  
 
-    If you notice that the restore is taking longer than the times described earlier, that could be because of your Microsoft Learn environment. There's a limit to the number of restore requests that can be processed/submitted at once for a single subscription. If you want to learn more about the limits and related details about PITR while you wait, see [Recover using automated database backups](https://docs.microsoft.com/azure/sql-database/sql-database-recovery-using-backups?azure-portal=true).  
+    If you notice that the restore is taking longer than the times described earlier, that could be because of your Microsoft Learn environment. There's a limit to the number of restore requests that can be processed/submitted at once for a single subscription. If you want to learn more about the limits and related details about PITR while you wait, see [Recover using automated database backups](/azure/sql-database/sql-database-recovery-using-backups?azure-portal=true).  
 
 1. You'll now confirm that the new database is in the correct state (as it was before the accident occurred). Right-click the logical server in SSMS and then select **Refresh** to refresh your connection to the Azure SQL Database logical server.  
 

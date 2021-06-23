@@ -13,17 +13,36 @@ durationInMinutes: 1
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What's the purpose of interactive mode?"
+  - content: "What is the main version of Python currently supported?"
     choices:
-    - content: "To build an entire application."
+    - content: "Python 1"
       isCorrect: false
-      explanation: "Incorrect. You wouldn't build an entire application in interactive mode."
-    - content: "To debug your code."
+      explanation: "Incorrect. Python 1 isn't currently supported."
+    - content: "Python 2"
       isCorrect: false
-      explanation: "Incorrect. Although interactive mode could help you understand what a Python command can do, it's not intended to help you debug your application."
-    - content: "To test your application."
-      isCorrect: false
-      explanation: "Incorrect. Although interactive mode could help you understand what a Python command can do, it's not intended to help you test your application."
-    - content: "To run one line of code at a time."
+      explanation: "Incorrect. Python 2 isn't currently supported."
+    - content: "Python 3"
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct! The currently supported version of Python is Python 3."
+  - content: "What Python function is used to display information on the screen?"
+    choices:
+    - content: "len"
+      isCorrect: false
+      explanation: "Incorrect. len is used to find the length of an item."
+    - content: "print"
+      isCorrect: true
+      explanation: "Correct! The Python function to display information on the screen is print."
+    - content: "open"
+      isCorrect: false
+      explanation: "Incorrect. open is used to open a file."
+  - content: "What file extension is typically used for Python files?"
+    choices:
+    - content: "python"
+      isCorrect: false
+      explanation: "Incorrect. python isn't the standard extension for Python files."
+    - content: "p"
+      isCorrect: false
+      explanation: "Incorrect. p isn't the standard extension for Python files."
+    - content: "py"
+      isCorrect: true
+      explanation: "Correct! py is the standard extension for Python files."

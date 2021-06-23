@@ -1,9 +1,9 @@
 ### YamlMime:LearningPath
 uid: learn.pytorch.pytorch-fundamentals
-title: Get started with PyTorch
+title: PyTorch Fundamentals
 summary: Learn the fundamentals of deep learning with PyTorch! This beginner friendly learning path will introduce key concepts to building machine learning models in multiple domains include speech, vision, and natural language processing. 
 metadata:
-  title: Get started with PyTorch
+  title: PyTorch Fundamentals
   description: Learn the fundamentals of deep learning with PyTorch! This beginner friendly learning path will introduce key concepts to building machine learning models in multiple domains include speech, vision, and natural language processing.
   ms.date: 04/09/2021
   author: cassieview
@@ -14,7 +14,10 @@ prerequisites: |
   - Basic Python knowledge
   - Basic knowledge about how to use Jupyter Notebooks
   - Basic understanding of machine learning
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/pytorch-intro-trophy.svg
+video:
+  title: PyTorch Fundamentals
+  url: https://www.microsoft.com/videoplayer/embed/RE4Nci7
 levels:
 - beginner
 - intermediate

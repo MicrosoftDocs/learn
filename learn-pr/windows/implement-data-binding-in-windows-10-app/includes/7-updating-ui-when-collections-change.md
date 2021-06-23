@@ -1,10 +1,10 @@
 ::: zone pivot="uwp"
 
-![Tech logo](../media/tech-uwp.png)
+:::image type="icon" source="../media/tech-uwp.png":::
 
 In this lesson, the user will select favorite colors. The available colors are listed in a dropdown (a `ComboBox` control). The user selects a color, and add it to your favorites by pressing a button. The favorite colors are displayed below. Selecting a favorite color also displays a button that allows the user to remove the selected color from their favorites.
 
-![Screenshot of sample app](../media/lesson7-finished.png)
+![Screenshot of sample databinding app running and displaying favorite colors.](../media/lesson7-finished.png)
 
 First, add the ability to select a color from the `LotsOfColors` collection, and add it to the favorite colors` list.
 
@@ -56,11 +56,11 @@ With this, we're done with the code (for now). Let's turn our attention to the X
 
 Because we want to have the full list of colors to be shown in a dropdown (which is a `ComboBox` control), we need to change the XAML. Luckily, both `ListBox` and `ComboBox` are descendants of the `ItemsControl` control, and they work similarly despite there being a difference in how they look and behave. All we have to do is replace `ListBox` with `ComboBox` in the ColorList.xaml file. You can use the **Edit** > **Find and Replace** > **Quick Replace** command (CtrlL+H) for this. 
 
-![Screenshot of Quick Replace command](../media/quickreplace.png)
+![Screenshot of Visual Studio showing the Quick Replace command.](../media/quickreplace.png)
 
 If you quickly run the app now, you can see that the `ListBox` has been replaced with a `ComboBox`, but the colors are still displayed by using the same template. 
 
-![Screenshot of combo box](../media/combobox.png)
+![Screenshot of favorite colors app showing the color selection combo box.](../media/combobox.png)
 
 #### 5. Extract the template to a resource
 
@@ -150,7 +150,7 @@ public ObservableCollection<ColorDescriptor> FavoriteColors { get; } =
 
 If you run the app now, selecting colors from the dropdown and selecting the **Add to Favorites** button now works properly. The selected favorite colors are reflected in the `ListBox`. Nice!
 
-![Screenshot of sample app](../media/colorlist3.png)
+![Screenshot of sample app showing favorite colors added to list.](../media/colorlist3.png)
 
 #### 8. Avoid adding empty items
 
@@ -222,12 +222,12 @@ This lesson illustrated how you can acquire and set the selected item in a `Comb
 
 ::: zone pivot="wpf"
 
-![Tech logo](../media/tech-wpf.png)
+:::image type="icon" source="../media/tech-wpf.png":::
 
 
 In this lesson, the user will select favorite colors. The available colors are listed in a dropdown (a `ComboBox` control). The user selects a color, and adds it to his or her favorites by pressing a button. The favorite colors are displayed below. Selecting a favorite color also displays a button that allows the user to remove the selected color from their favorites.
 
-![Screenshot of sample app](../media/lesson7-finished_wpf.png)
+![Screenshot of sample app showing selected favorite color with remove button available.](../media/lesson7-finished_wpf.png)
 
 First, add the ability to select a color from the `LotsOfColors` collection, and add it to the favorite colors` list.
 
@@ -279,11 +279,11 @@ With this, we're done with the code (for now). Let's turn our attention to the X
 
 Because we want to have the full list of colors to be shown in a dropdown (which is a `ComboBox` control), we need to change the XAML. Luckily, both `ListBox` and `ComboBox` are descendants of the `ItemsControl` control, and they work similarly despite there being numerous difference in how they look and behave. All we have to do is replace `ListBox` with `ComboBox` in the ColorList.xaml file. You can use the **Edit** > **Find and Replace** > **Quick Replace** command (CtrlL+H) for this. 
 
-![Screenshot of Quick Replace command](../media/quickreplace.png)
+![Repeat screenshot of Visual Studio showing Quick Replace command.](../media/quickreplace.png)
 
 If you quickly run the app now, you can see that the `ListBox` has been replaced with a `ComboBox`, but the colors are still displayed by using the same template. 
 
-![](../media/combobox_wpf.png)
+![Screenshot of sample app showing color list in a ComboBox.](../media/combobox_wpf.png)
 
 #### 5. Extract the template to a resource
 
@@ -376,7 +376,7 @@ Double-click the `Add to Favorites` button in the visual designer in Visual Stud
 
 Rename the `Button_Click` method to `AddToFavorites_Click` in both the codebehind and the XAML. You can do this by renaming it in the code, and then using the lightbulb icon, selecting "Rename `Button_Click` to `AddToFavorites_Click`". This will take care of changing the method's name in the XAML file, too.
 
-![Screenshot of Visual Studio option to rename method](../media/rename_addtofavorites_click_wpf.png).
+![Screenshot of Visual Studio quick action option to rename button click method.](../media/rename_addtofavorites_click_wpf.png).
 
 Add a convenience property to the top of the `ColorList` class to make it easier to access the `ColorListDataContext`: 
 
@@ -408,7 +408,7 @@ public ObservableCollection<ColorDescriptor> FavoriteColors { get; } =
 
 If you run the app now, selecting colors from the dropdown and selecting the **Add to Favorites** button now works properly. The selected favorite colors are reflected in the `ListBox`. Nice!
 
-![Screenshot of sample app](../media/colorlist3_wpf.png)
+![Screenshot of sample app showing selected color added to favorites.](../media/colorlist3_wpf.png)
 
 #### 9. Avoid adding empty items
 

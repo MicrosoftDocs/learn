@@ -26,9 +26,9 @@ Let's start by creating the problematic infrastructure, which includes a configu
     az network vnet create \
         --resource-group $RG \
         --name MyVNet1 \
-        --address-prefix 10.10.0.0/16 \
+        --address-prefixes 10.10.0.0/16 \
         --subnet-name FrontendSubnet \
-        --subnet-prefix 10.10.1.0/24
+        --subnet-prefixes 10.10.1.0/24
     ```
 
 1. To create the subnet called **BackendSubnet**, run this command.

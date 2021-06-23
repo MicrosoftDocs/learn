@@ -4,12 +4,10 @@ Adding Swashbuckle packages to your project provides you professional OpenAPI do
 
 You then learned how to enhance the default documentation through XML comments and annotations.
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
-
 ## Learn more
 
 - [Getting started with OpenAPI](https://oai.github.io/Documentation/start-here.html)
 - [Getting Started with Swagger](https://github.com/swagger-api/swagger-core/wiki/Swagger-2.X---Getting-started)
-- [Swashbuckle](https://docs.microsoft.com/aspnet/core/tutorials/getting-started-with-swashbuckle)
+- [Swashbuckle](/aspnet/core/tutorials/getting-started-with-swashbuckle)
 - [.NET Swashbuckle CLI](https://www.nuget.org/packages/Swashbuckle.AspNetCore.Cli/)
 - [Swagger for node](https://github.com/swagger-api/swagger-node)

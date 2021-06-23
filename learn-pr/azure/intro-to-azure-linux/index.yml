@@ -20,7 +20,7 @@ abstract: |
   - Envision building new Linux-based workloads and migrating existing workloads to Azure
   - Evaluate whether Linux on Azure is the right choice for your solutions
 prerequisites: |
-  - Beginner-level familiarity with the fundamental concepts of cloud computing, including IaaS and PaaS. You can find an overview of these concepts in [Cloud Concepts - Principles of cloud computing](https://docs.microsoft.com/learn/modules/principles-cloud-computing/).
+  - Beginner-level familiarity with the fundamental concepts of cloud computing, including IaaS and PaaS. You can find an overview of these concepts in [Cloud Concepts - Principles of cloud computing](/learn/modules/principles-cloud-computing/).
 iconUrl: /learn/achievements/intro-to-azure-linux.svg
 levels:
 - beginner

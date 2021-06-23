@@ -1,7 +1,7 @@
-Now that we have a deeper understanding of reliability and some useful
+Now that we have a deeper understanding of reliability, and some useful
 framing for how to view it for monitoring, it is time to get practical.
-This unit will introduce us to a product suite on Azure and a specific tool
-in that suite that will allow us to put this to direct use.
+This unit introduces a product suite in Azure, and a specific tool
+in that suite that will allow us to put this information to direct use.
 
 ## Azure Monitor
 
@@ -12,16 +12,14 @@ monitor and improve your reliability.
 
 ### Data sources
 
-A look at Azure Monitor starts with the data that comes into the system.
-Azure Monitor takes in data from a number of different sources. These
-include:
+Azure Monitor starts with the data that comes into the system. It takes in data from a number of different sources. These include:
 
--   Data from applications
--   Data from the various operating systems running in Azure
--   Information fed from Azure resources, subscriptions, and tenants
+-   Data from applications.
+-   Data from the various operating systems running in Azure.
+-   Information fed from Azure resources, subscriptions, and tenants.
 -   Custom data. If you’d like to send in monitoring-related data from your
     systems or applications, basically of any sort and from any source,
-    Azure monitor can take it that custom data.
+    Azure Monitor can take in that custom data.
 
 :::image type="content" source="../media/azure-monitor-overview-sources.png" alt-text="Partial overview diagram of Azure monitor showing data sources":::
 
@@ -29,10 +27,10 @@ include:
 
 The data that comes into Azure Monitor can be divided into two types:
 
--   **Metrics:** small numerical pieces of information from counters,
-    gauges, and so forth that are collected on a regular basis
+-   **Metrics**: Small numerical pieces of information from counters,
+    gauges, and so forth that are collected on a regular basis.
 
--   **Log data:** information gathered from many different logs such as
+-   **Log data**: Information gathered from many different logs, such as
     Windows event logs, Linux syslog, agents running on virtual machines,
     custom logs, telemetry from Application Insights, and more.
 
@@ -42,11 +40,9 @@ In this module, we will be focusing primarily on log data.
 
 ### Do something with the data
 
-Once the data is in Azure Monitor, there are a whole suite of tools that
-will let us analyze, visualize, respond to specific contents and integrate
-that data with other tools.
+Once the data is in Azure Monitor, there is a suite of tools that will let us analyze, visualize, respond to specific contents, and integrate that data with other tools.
 
 :::image type="content" source="../media/azure-monitor-overview-full.png" alt-text="Complete overview diagram of the data sources, data types and offerings in Azure monitor":::
 
-In our next unit, we're going to explore in more detail one of the most
-useful tools for working with reliability, log analytics.
+In our next unit, we're going to explore in more detail at one of the most
+useful tools for working with reliability - Log Analytics.

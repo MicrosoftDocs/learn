@@ -28,9 +28,9 @@ In this exercise, you'll create a virtual machine, set up a backup, and start a 
     az network vnet create \
         --resource-group $RGROUP \
         --name NorthwindInternal \
-        --address-prefix 10.0.0.0/16 \
+        --address-prefixes 10.0.0.0/16 \
         --subnet-name NorthwindInternal1 \
-        --subnet-prefix 10.0.0.0/24
+        --subnet-prefixes 10.0.0.0/24
     ```
 
 ### Create a Windows virtual machine by using the Azure CLI

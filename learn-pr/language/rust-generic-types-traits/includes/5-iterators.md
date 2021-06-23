@@ -13,8 +13,8 @@ trait Iterator {
 
 An `Iterator` has a method, `next`, which when called returns an `Option<Item>`. The `next` method will return `Some(Item)` as long as there are elements. After they've all been exhausted, it will return `None` to indicate that iteration is finished.
 
-Notice this definition uses some new syntax: `type Item` and `Self::Item`, which are defining an
-associated type with this trait. This means that every implementation of the `Iterator` traits also requires the definition of the associated `Item` type, which is used as the return type of the `next` method. In other words, the `Item` type will be the type returned from the iterator inside the `for` loop block.
+Notice this definition uses some new syntax: `type Item` and `Self::Item`, which define an
+associated type with this trait. This definition means that every implementation of the `Iterator` traits also requires the definition of the associated `Item` type, which is used as the return type of the `next` method. In other words, the `Item` type will be the type returned from the iterator inside the `for` loop block.
 
 ## Implement our own iterator
 
@@ -36,30 +36,31 @@ struct Counter {
 
 impl Counter {
     fn new(length: usize) -> Counter {
-	Counter {
-	    count: 0,
-	    length,
-	}
+	    Counter {
+	        count: 0,
+	        length,
+	    }
     }
 }
 ```
 
-Then, we implement the `Iterator` trait for our `Counter` struct. We'll be counting with usize, so we declare that our associated `Item` type should be of that type.
+Then, we implement our `Counter` struct's `Iterator` trait. We'll be counting with usize, so we declare that our associated `Item` type should be of that type.
 
 The `next()` method is the only required method that we should define. Inside its body, we increment our
-count by one at every call *(this is why we started at zero)*. Then we check to see if we've finished counting or not. We use the `Some(value)` variant of the `Option` type to express that iteration is still yielding results and the `None` variant to express that iteration should stop.
+count by one at every call *(which is why we started at zero)*. Then we check to see if we've finished counting or not. We use the `Some(value)` variant of the `Option` type to express that iteration is still yielding results and the `None` variant to express that iteration should stop.
 
 ```rust
 impl Iterator for Counter {
     type Item = usize;
 
     fn next(&mut self) -> Option<Self::Item> {
-    self.count += 1;
-    if self.count <= self.length {
-        Some(self.count)
-    } else {
-        None
-    }
+    
+        self.count += 1;
+        if self.count <= self.length {
+            Some(self.count)
+        } else {
+            None
+        }
     }
 }
 ```
@@ -91,7 +92,7 @@ But calling `next` this way gets repetitive. Rust allows us to use `for` loops i
 ```rust
 fn main() {
     for number in Counter::new(10) {
-    println!("{}", number);
+        println!("{}", number);
     }
 }
 ```

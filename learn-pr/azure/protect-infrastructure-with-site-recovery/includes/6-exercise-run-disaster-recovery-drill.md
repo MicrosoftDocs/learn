@@ -2,19 +2,22 @@ Azure Site Recovery is flexible enough to support many different recovery scenar
 
 With Site Recovery in place, the head of Ops has asked you to test how long it takes to fail over all your infrastructure. You've investigated the different options, and decided to create a recovery plan so that you can fail over all the VMs. With the plan in place, you'll run a test failover, and monitor its progress.
 
-In this exercise, you'll complete the steps needed to run a disaster recovery drill using a recovery plan on the portal.
+In this exercise, you'll complete the steps needed to run a DR drill using a recovery plan on the portal.
+
+> [!NOTE]
+> For Azure Site Recovery to efficiently function, a minimum memory of 1 GB is required on each VM.
 
 ## Create a recovery plan
 
 1. Sign into the [Azure portal](https://portal.azure.com) with your credentials.
 
-1. On the left of the portal, select **All resources**.
+1. On the home page, select **All resources**.
 
 1. From the list of resources, select the Recovery Services vault, **asr-vault**.
 
-1. Under **Manage**, select **Recovery Plans (Site Recovery)**.
+1. In the middle menu pane, under **Manage**, select **Recovery Plans (Site Recovery)**.
 
-1. Select **+ Recovery Plan**. The **Create recovery plan** window appears.
+1. Select **Recovery Plan**. The **Create recovery plan** pane appears.
 
     | Setting | Value |
     |---|---|
@@ -38,12 +41,12 @@ In this exercise, you'll complete the steps needed to run a disaster recovery dr
 
     ![Screenshot showing the created disaster recovery plan](../media/6-view-dr-plans.png)
 
-1. On the recovery plan details pane, at the top, select **Test failover**.
+1. On the recovery plan details pane, from the top menu bar, select **Test failover**.
 
     ![Screenshot showing the recovery plan details, highlighting the Test failover button](../media/6-recovery-plan-details.png)
 
     > [!IMPORTANT]
-    > The network configuration failover support for each VM can take several minutes to auto configure as each VM also needs to complete an initial synchronization. Running a failover test may not be available immediately.
+    > The network configuration failover support for each VM can take several minutes to auto-configure as each VM also needs to complete an initial synchronization. Running a failover test may not be available immediately.
 
     | Setting | Value |
     |---|---|
@@ -57,7 +60,7 @@ In this exercise, you'll complete the steps needed to run a disaster recovery dr
 
 ## Monitor failover progress
 
-1. In the navigation icon at the top of the pane, select **asr-vault - Recovery Plans (Site Recovery)**. Under **Monitoring**, select **Site Recovery jobs**.
+1. In the navigation icon at the top of the pane, select **asr-vault - Recovery Plans (Site Recovery)**. In the left menu pane, under **Monitoring**, select **Site Recovery jobs**.
 
     ![Screenshot showing the list of recovery plans created](../media/6-site-recovery-monitoring.png)
 
@@ -65,11 +68,11 @@ In this exercise, you'll complete the steps needed to run a disaster recovery dr
 
     ![Screenshot of the list of Site Recovery jobs](../media/6-dr-drill-job-list.png)
 
-1. The **Test failover** page appears and you view the status of the jobs.
+1. The **Test failover** pane appears and you view the status of the jobs.
 
     ![Screenshot of the test failover jobs showing their status](../media/6-dr-drill-results.png)
 
-    You'll use the information on this page to report back to the Ops manager that an Azure failover for your company's current infrastructure will take less than three minutes to complete. These jobs are running in parallel, (rather than a simple sum of all of jobs), to work out the total of time taken.
+    You'll use the information on this pane to report back to the Ops manager that an Azure failover for your company's current infrastructure will take less than three minutes to complete. These jobs are running in parallel, (rather than a simple sum of all of jobs), to work out the total of time taken.
 
 1. After all the jobs have completed successfully, on the far left, select **Virtual machines**.
 

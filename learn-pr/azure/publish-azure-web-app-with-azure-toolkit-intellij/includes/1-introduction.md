@@ -15,10 +15,10 @@ In this module, you'll learn how to:
 ## Prerequisites
 
 - [IntelliJ IDEA](https://www.jetbrains.com/idea/) *Ultimate Edition* or *Community Edition*
-- The [Azure Toolkit for IntelliJ](https://docs.microsoft.com/azure/developer/java/toolkit-for-intellij/)
+- The [Azure Toolkit for IntelliJ](/azure/developer/java/toolkit-for-intellij/)
 - Experience writing web apps in Java and Java Server Pages
 - Experience using IntelliJ IDEA to create projects in Java
 
 > [!NOTE]
 >
-> If you have not installed the Azure Toolkit for IntelliJ, you can follow the steps in this article: [Installing the Azure Toolkit for IntelliJ](https://docs.microsoft.com/azure/java/intellij/azure-toolkit-for-intellij-installation).
+> If you have not installed the Azure Toolkit for IntelliJ, you can follow the steps in this article: [Installing the Azure Toolkit for IntelliJ](/azure/java/intellij/azure-toolkit-for-intellij-installation).

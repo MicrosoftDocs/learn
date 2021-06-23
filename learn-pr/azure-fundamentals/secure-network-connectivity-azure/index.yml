@@ -8,6 +8,7 @@ metadata:
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  adobe-target: true
 title: Secure network connectivity on Azure
 summary: Learn about the Azure services you can use to help ensure that your network is safe, secure, and trusted.
 abstract: |

@@ -1,6 +1,6 @@
 After a cloud application has been designed and developed, it can be moved to the deployment phase for release to clients. Deployment can be a multi-stage process, each involving a series of checks to ensure that the goals of the application are met. 
 
-Before you deploy a cloud application into production, it is useful to have a checklist to assist in evaluating your application against a list of essential and recommended best practices. Examples include the deployment checklist from [AWS](https://aws.amazon.com/architecture/well-architected/) and [Azure](https://docs.microsoft.com/azure/architecture/). Many cloud providers provide a comprehensive list of tools and services that assist in deployment, such as [this document](https://docs.microsoft.com/azure/architecture/guide/) from Azure.
+Before you deploy a cloud application into production, it is useful to have a checklist to assist in evaluating your application against a list of essential and recommended best practices. Examples include the deployment checklist from [AWS](https://aws.amazon.com/architecture/well-architected/) and [Azure](/azure/architecture/). Many cloud providers provide a comprehensive list of tools and services that assist in deployment, such as [this document](/azure/architecture/guide/) from Azure.
 
 ## Deployment process
 

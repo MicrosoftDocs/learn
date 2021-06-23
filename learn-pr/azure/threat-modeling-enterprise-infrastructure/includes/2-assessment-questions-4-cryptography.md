@@ -19,4 +19,4 @@ These questions allow you to:
 |**How is enterprise data protected in-transit, at-rest, and in-use?**|<ul><li>Cryptographic practices and baselines used.</li></ul>|
 
 > [!TIP]
-> Check out [Azure encryption](https://docs.microsoft.com/azure/security/fundamentals/encryption-overview) for tips on encrypting enterprise data.
+> Check out [Azure encryption](/azure/security/fundamentals/encryption-overview) for tips on encrypting enterprise data.

@@ -58,14 +58,10 @@ from typing import List
 from azure.quantum.optimization import Term
 from azure.quantum import Workspace
 
-workspace = Workspace (
-    subscription_id = "",  # Add your subscription_id
-    resource_group = "",   # Add your resource_group
-    name = "",             # Add your workspace name
-    location = ""          # Add your workspace location (for example, "westus")
-    )
-
-workspace.login()
+workspace = Workspace(
+    resource_id = "", # add the Resource ID of the Azure Quantum workspace you created
+    location = ""     # add the location of your Azure Quantum workspace (e.g. "westus")
+)
 ```
 
 ## Problem formulation

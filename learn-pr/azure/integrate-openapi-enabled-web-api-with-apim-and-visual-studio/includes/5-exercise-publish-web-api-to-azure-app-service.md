@@ -78,6 +78,6 @@ After the previous exercise, the web API application is ready to publish. In ord
 Congratulations! You've now published your ASP.NET Core Web API app to Azure App Service through Visual Studio!
 
 
-[az appsvc]: https://docs.microsoft.com/azure/app-service/overview
-[az apim]: https://docs.microsoft.com/azure/api-management/api-management-key-concepts
+[az appsvc]: /azure/app-service/overview
+[az apim]: /azure/api-management/api-management-key-concepts
 [az account free]: https://azure.microsoft.com/free/

@@ -4,12 +4,12 @@ In this exercise, you use a template that creates a SQL Server logical instance,
 
 Here, you open Cloud Shell through the Azure portal so that you can run your Azure Resource Manager template.
 
-You can also [install and run the Azure CLI locally](https://docs.microsoft.com/cli/azure/install-azure-cli?azure-portal=true).
+You can also [install and run the Azure CLI locally](/cli/azure/install-azure-cli?azure-portal=true).
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu bar, select **Cloud Shell**. Select the **Bash** experience.
 
-    ![Azure portal page with the Cloud Shell icon on the menu bar.](../../shared/media/azure-portal-menu-cloud-shell.png)
+    :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
     > [!NOTE]
     > Cloud Shell requires an Azure storage resource to persist any files that you create while working in Cloud Shell. The first time you open Cloud Shell, it prompts you with an offer to create a resource group, storage account, and Azure Files share on your behalf. This is a one-time step and will be automatically attached for all future Cloud Shell sessions.
@@ -298,7 +298,7 @@ SQL_PASSWORD=$(openssl rand -base64 32)
 
 1. Go to the Azure portal and select **Resource groups**, and then select the **tailspin-spacegame-web-rg** resource group. Notice that you have an App Service plan, an App Service instance, and a SQL Server instance. Take note of the suffix on each of these resources. It's made from the `deployPrefix` variable and your `uniqueSuffix` variable.
 
-    ![Azure portal page with a ist of resources created by the template run.](../media/3-resource-list.png)
+    :::image type="content" source="../media/3-resource-list.png" alt-text="Azure portal page with a ist of resources created by the template run.":::
 
 1. Run the template a second time.
 
@@ -320,4 +320,4 @@ From the Azure portal, delete the resources by selecting them in the resource gr
 
 The **Delete Resources** pane appears. Enter **Yes** to confirm, and then select **Delete**. Verify that the resources are deleted but the resource group remains.
 
-![Azure portal page showing deleting resources in the resource group.](../media/3-delete-resources.png)
+:::image type="content" source="../media/3-delete-resources.png" alt-text="Azure portal page showing deleting resources in the resource group.":::

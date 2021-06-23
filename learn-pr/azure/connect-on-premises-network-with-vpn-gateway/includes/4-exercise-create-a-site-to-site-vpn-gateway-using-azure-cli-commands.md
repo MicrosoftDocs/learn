@@ -30,7 +30,7 @@ First, you'll create the VPN gateway for the Azure end of the connection. It can
     az network vnet-gateway create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name VNG-Azure-VNet-1 \
-        --public-ip-address PIP-VNG-Azure-VNet-1 \
+        --public-ip-addresses PIP-VNG-Azure-VNet-1 \
         --vnet VNG-Azure-VNet-1 \
         --gateway-type Vpn \
         --vpn-type RouteBased \
@@ -66,7 +66,7 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
     az network vnet-gateway create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name VNG-HQ-Network \
-        --public-ip-address PIP-VNG-HQ-Network \
+        --public-ip-addresses PIP-VNG-HQ-Network \
         --vnet VNG-HQ-Network \
         --gateway-type Vpn \
         --vpn-type RouteBased \

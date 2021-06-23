@@ -2,7 +2,7 @@ Often, the response for a specific security threat is well-known, and if perform
 
 Azure Security Center provides a feature called _Workflow Automation_ to execute these sorts of responses when specific security alerts are detected.
 
-## What is Workflow automation in Azure Security Center?
+## What is Workflow Automation in Azure Security Center?
 
 A workflow automation is a collection of grouped procedures that the security response team can execute with a single click in Security Center when a specific alert is detected. These actions are _not_ automatically triggered - they require human interaction to run.
 

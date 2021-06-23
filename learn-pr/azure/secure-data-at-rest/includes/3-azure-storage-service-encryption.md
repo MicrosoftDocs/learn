@@ -32,14 +32,14 @@ Always take a snapshot of the VM, or create a backup, before you enable disk enc
 
 When you're in the process of encrypting Linux OS disks, you should consider those Linux machines unusable. Also, the key vault and the virtual machine should always be in the same region.
 
-When you've taken the appropriate precautions, you can enable disk encryption on a VM. You can also keep all of your disk encryption keys secure in Azure Key Vault. The following example shows how to use the Azure CLI to encrypt a VM running on Azure:
+When you've taken the appropriate precautions, you can enable disk encryption on a VM. You can also keep all of your disk encryption keys secure in Azure Key Vault. The following example shows how to use the Azure CLI to encrypt both OS and data volumes for a VM running on Azure by specifying the volume type parameter:
 
 ```azurecli
 az vm encryption enable \
 --resource-group "YourVirtualMachineResourceGroup" \
 --name "YourSecureVM" \
 --disk-encryption-keyvault "YourSecureVault"\
---volume-type [All|OS|Data]
+--volume-type ALL
 ```
 
 Ensure that the disks have been encrypted by using this command:

@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.student-evangelism.web-development-101-if-else
+metadata:
+  title: Make decisions with JavaScript
+  description: Learn the syntax for controlling data flow in JavaScript and its significance when used with Boolean data types.
+  ms.date: 06/04/2021
+  author: chloecodesthings
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Make decisions with JavaScript
+summary: This lesson covers the basics of JavaScript if/else decision-making concepts. You'll learn how comparing variables, using Booleans, and using if/else statements allow you to make decisions in your code.
+abstract: |
+  In this module, you'll:
+  - Review Booleans.
+  - Learn about comparison operators.
+  - Explore how if and else are used in JavaScript.
+  - Discover how to form conditions and make decisions with logical operators.
+prerequisites: None
+iconUrl: /learn/achievements/student-evangelism/web-development-101-if-else.svg #TODO change
+levels:
+- beginner
+roles:
+- student
+products:
+- "vs-code"
+units:
+- learn.student-evangelism.web-development-101-if-else.introduction
+- learn.student-evangelism.web-development-101-if-else.decisions-overview
+- learn.student-evangelism.web-development-101-if-else.booleans-operators
+- learn.student-evangelism.web-development-101-if-else.if-else
+- learn.student-evangelism.web-development-101-if-else.logical-operators
+- learn.student-evangelism.web-development-101-if-else.exercise-if-else
+- learn.student-evangelism.web-development-101-if-else.knowledge-check
+- learn.student-evangelism.web-development-101-if-else.summary
+badge:
+  uid: learn.student-evangelism.web-development-101-if-else.badge

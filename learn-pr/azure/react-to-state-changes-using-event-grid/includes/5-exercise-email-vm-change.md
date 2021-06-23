@@ -82,7 +82,7 @@ The final step is to test the complete workflow.
 
 1. In the left menu pane, under **Settings**, select **Size**.
 
-1. Select a new size of **DS2_v2** for the virtual machine, and then select **Resize**.
+1. Select a new size of **DS2_v2** for the virtual machine, and then select **Resize**. Wait to be notified that your virtual machine has been resized.
 
 1. After the virtual machine has been resized, you should receive an email that looks similar to the following:
 

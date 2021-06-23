@@ -13,7 +13,7 @@ Let's start by exploring the numeric data types.
 
 ## Integer numbers
 
-In general terms, the keyword to define an integer type is `int`. But Go also provides the `int8`, `int16`, `int32`, and `int64` types, which are ints with a size of 8, 16, 32, or 64 bits, respectively. When you just use `int`, the size is 32 bits on 32-bit systems and 64 bits on 64-bit systems (most of the time, but it might differ from one computer to another). If you need to represent a value as an unsigned number, you can use `uint`, but only use this type when you have a specific reason to. Go also provides `uint8`, `uint16`, `uint32`, and `uint64` types.
+In general terms, the keyword to define an integer type is `int`. But Go also provides the `int8`, `int16`, `int32`, and `int64` types, which are ints with a size of 8, 16, 32, or 64 bits, respectively. When you're using a 32-bit operating system, if you just use `int`, the size is usually 32 bits. On 64-bit systems, the `int` size is usually 64 bits. But this behavior can differ from one computer to another. You can use `unit`. But only use this type if you need to represent a value as an unsigned number for a certain reason. Go also provides `uint8`, `uint16`, `uint32`, and `uint64` types.
 
 Here's an example of how to use the various integer types in Go:
 
@@ -39,7 +39,7 @@ When you run the program, you'll get this error:
 invalid operation: integer16 + integer32 (mismatched types int16 and int32)
 ```
 
-As you can see, unlike in other programming languages, in Go you need to be explicit when you convert a value from one type to another. We'll talk about how to cast types properly at the end of this module.
+As you can see, when you convert a value from one type to another in Go, you need to explicitly state the new type. We'll talk about how to cast types properly at the end of this module.
 
 As you progress in your Go learning, you might hear about [runes](https://www.geeksforgeeks.org/rune-in-golang/?azure-portal=true). A `rune` is simply an alias for an `int32` data type. It's used to represent a Unicode character (or a Unicode code point). For example, say you have this code:
 

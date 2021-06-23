@@ -31,8 +31,6 @@ The following steps create an IoT Central application and generate an API token 
       --display-name 'Fleet management'
     ```
 
-    If this is the first time you use a command from the [azure-iot extension](https://docs.microsoft.com/cli/azure/ext/azure-iot/?view=azure-cli-latest&preserve-view=true), the extension installs automatically.
-
     Expect this command to take a minute or two to run.
 
 1. Run the following command to see a list of the IoT Central applications in your subscription:

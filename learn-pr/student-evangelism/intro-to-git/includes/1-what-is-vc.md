@@ -65,6 +65,6 @@ Key features provided by GitHub include:
 - Forks
 - Projects
 
-To learn more about GitHub, see the [Introduction to GitHub](https://docs.microsoft.com/learn/modules/introduction-to-github?azure-portal=true) Microsoft Learn module or the [Getting started with GitHub](https://docs.github.com/free-pro-team@latest/github/getting-started-with-github?azure-portal=true) help documentation. 
+To learn more about GitHub, see the [Introduction to GitHub](/learn/modules/introduction-to-github?azure-portal=true) Microsoft Learn module or the [Getting started with GitHub](https://docs.github.com/free-pro-team@latest/github/getting-started-with-github?azure-portal=true) help documentation. 
 
 The next step is to try out Git for yourself!

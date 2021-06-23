@@ -80,5 +80,5 @@ As you also created the Azure API Management instance and integrate the web API 
 Congratulations! You've now integrated your web API app with Azure API Management through Visual Studio!
 
 
-[az appsvc]: https://docs.microsoft.com/azure/app-service/overview
-[az apim]: https://docs.microsoft.com/azure/api-management/api-management-key-concepts
+[az appsvc]: /azure/app-service/overview
+[az apim]: /azure/api-management/api-management-key-concepts

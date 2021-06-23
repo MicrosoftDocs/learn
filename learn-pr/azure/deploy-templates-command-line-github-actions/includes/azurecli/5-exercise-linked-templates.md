@@ -30,7 +30,7 @@ az group list -o table
 In this command, use the name of the resource name that you got from the previous command. (It will look like something like `learn-a73131a1-b618-48b8-af70-21af7ca420c4`.) This allows you to omit that parameter from the rest of the Azure CLI commands in this exercise.
 
 > [!NOTE]
-> Normally, when you use an Azure CLI command to deploy a template, you need to specify the target resource group name. In the exercise in this module, we're bypassing this requirement by setting the context of our deployment. We're specifying our sandbox resource group name in the next step by using the [az configure](https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest&azure-portal=true) Azure CLI command.
+> Normally, when you use an Azure CLI command to deploy a template, you need to specify the target resource group name. In the exercise in this module, we're bypassing this requirement by setting the context of our deployment. We're specifying our sandbox resource group name in the next step by using the [az configure](/cli/azure/azure-cli-configuration?azure-portal=true&view=azure-cli-latest) Azure CLI command.
 
 ```azurecli
 az configure --defaults group={Resource Group Name}
@@ -105,7 +105,7 @@ In this exercise, we'll review and deploy a template that includes two linked te
 
 1. Copy and paste the content of the preceding template into a file in a local directory. Use `C:\JSON\linkedtemplate.json or /mnt/c/Users/you/json/linkedtemplate.json`, for example.
 
-1. After you've saved that file locally, deploy it at the resource group level by using the following Azure CLI command. Namely, use [az deployment group create](https://docs.microsoft.com/cli/azure/deployment/group?view=azure-cli-latest&azure-portal=true#az-deployment-group-create).
+1. After you've saved that file locally, deploy it at the resource group level by using the following Azure CLI command. Namely, use [az deployment group create](/cli/azure/deployment/group?azure-portal=true&view=azure-cli-latest#az-deployment-group-create).
 
       ```bash
       templateFile=/mnt/c/Users/<UserName>/json/linkedtemplate.json

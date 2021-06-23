@@ -11,7 +11,7 @@ Privileged access management requires users to request just-in-time access to co
 
 Watch this six-minute video to get a tour of privileged access management:
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4xqtC]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWFfgv]
 
 Privileged access management (PAM) sounds a lot like Privileged Identity Management (PIM), so what is the difference?
 

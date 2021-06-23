@@ -31,7 +31,7 @@ Throughput and IOPS have a direct relationship, changing one will have a direct 
 
 Reading and writing data takes time. This is where _latency_ comes in. Latency is the time it takes your app to send a request to the disk and get a response. Essentially, latency tells us how long it takes to _process_ a single read or write I/O request.
 
-Latency puts a limit on IOPS. For example, if our disk can handle 5000 IOPS but each operation takes 10 ms to process, then our app will be capped to 100 operation per second due to the processing time. This is a simple example, most of the time latency will be much lower. Ultimately, latency and throughput will determine how fast your app can process data from storage. 
+Latency puts a limit on IOPS. For example, if our disk can handle 5000 IOPS but each operation takes 10 ms to process, then our app will be capped to 500 operation per second due to the processing time. This is a simple example, most of the time latency will be much lower. Ultimately, latency and throughput will determine how fast your app can process data from storage. 
 
 Premium Storage provides consistent low latencies and you can achieve even better latency when necessary through _caching_. 
 

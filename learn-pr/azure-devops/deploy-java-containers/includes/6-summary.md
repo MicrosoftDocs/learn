@@ -8,6 +8,6 @@ In this module, you worked with Java, which is just one of the many platforms Az
 
 Azure also provides a variety of resources that you can use for Java apps. To learn more about the opportunities for Java on Azure, see [Build and deploy Java apps on Azure](https://azure.microsoft.com/develop/java/?azure-portal=true).
 
-This module packages a Java app as a Docker container. To learn more about working with containers in Azure, see the [Administer containers in Azure](/learn/paths/administer-containers-in-azure/?azure-portal=true) learning path.
+This module packages a Java app as a Docker container. To learn more about working with containers in Azure, see the [Administer containers in Azure](../../../paths/administer-containers-in-azure/index.yml?azure-portal=true) learning path.
 
 The application in this module connects to Azure Database for MySQL. To learn about migrating an on-premises MySQL installation to Azure Database for MySQL, see the [Migrate on-premises MySQL databases to Azure Database for MySQL](/learn/modules/migrate-on-premises-mysql-databases/?azure-portal=true) module.

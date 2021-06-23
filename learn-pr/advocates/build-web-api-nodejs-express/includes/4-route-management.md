@@ -1,4 +1,4 @@
-An application has different resources like products or orders. Divide your application into different sections for the different resources. This makes it easy to maintain and extend the app.
+An application has different resources, like products or orders. Divide your application into different sections for the different resources. This makes it easy to maintain and extend the app.
 
 An easy way to extend a web application is to make sure that different resources are accessible through dedicated URLs. Two different URLs trigger two different parts of code in your web application.  
 
@@ -8,7 +8,7 @@ It's important to understand what a URL is, as well as other concepts used to bu
 - **Routes**: A route is a subsection of a URL that usually points to a specific resource. Other concepts for routes help the user be more intentional:
   - **Route parameters**: A route parameter identifies a specific resource item from a collection, for instance, **/products/123**.
   - **Query parameters**: Query parameters are located at the very end of the URL and filter down the size of the response. For instance, **/products?sort=desc**.
-  - **HTTP verbs**: HTTP verbs express the *what*. By using the verb *get* the user says they want to read data from the resource. The verb *post* means that they want to write data toward the resource.
+  - **HTTP verbs**: HTTP verbs express the *what*. By using the verb *get*, the user says they want to read data from the resource. The verb *post* means that they want to write data toward the resource.
 
 ## URL
 
@@ -28,15 +28,15 @@ Let's explain the parts:
 
 - **Scheme**: This part indicates the protocol used. In this case, the scheme is **http**. Other examples of schemes are **https**, **ftp**, **irc**, and **file**.
 - **Authority**: The authority consists of two parts:
-  - **User info**: It consists of an optional username@password part and also a **host** part. In the example, **localhost** is the host part. The **localhost** points to your own machine as the web server. On the web, the **host** part is usually a domain name like **google** or **microsoft**.
+  - **User info**: User info consists of an optional username@password part and also a **host** part. In the example, **localhost** is the host part. The **localhost** points to your own machine as the web server. On the web, the **host** part is usually a domain name like **google** or **microsoft**.
   - **Host**:  The host is a friendly name that you specify instead of an IP address. The IP address is the actual web address. It's a series of numbers, such as **127.0.0.1**. An IP address makes it easy for routers to *route* requests from one part of the web to another. However, they're not human friendly. Hosts and domain names exist so that we can remember them.
-- **Path**: The path portion of the URL consists of 0 to many segments. Each segment is separated by a **/**. In the example, the only segment is **/products**. A segment filters down the exact resources you're interested in.
+- **Path**: The path portion of the URL consists of zero to many segments. Each segment is separated by a **/**. In the example, the only segment is **/products**. A segment filters down the exact resources you're interested in.
 - **Query**: The query portion is an optional part of the URL that is defined after the **?** character. It consists of a number of query parameter-value pairs delimited by either **&** or **;**. It filters down data further by asking for a number of records from a specific page. The query in the example is **?page=1&pageSize=20**. Imagine you have two million records on this resource. It would take a long time to return all those records. If you specify that you want 20 records, the data returns quickly and is small in size.
 - **Fragment**: This is part of the URL that helps you be even more specific. For example, a fragment can sort the data you ask for in a specific sort order.
 
 ## Routes
 
-You learned in the previous unit how Express lets you associate an HTTP verb with a specific route like **/products**. Express also handles the following:
+You learned in the previous unit how Express lets you associate an HTTP verb with a specific route, like **/products**. Express also handles the following:
 
 - **Routing parameters**: A routing parameter in a URL expresses that you want to access a specific resource. Looking at the route **/orders/1/items/2**, the routing parameters are **1** and **2**. The **1** signals we want a specific order with the unique key **1**. The **2** asks for a specific order item with the unique key **2**. These routing parameters return a specific resource rather than all resources of a specific type.
 - **Query parameters**: The query part of the URL is a set of key-value pairs that exist after the **?** character. The route example, **/products?page=1&pageSize=20**, shows the query parameters **page** and **pageSize**. These two parameters work in tandem to help you filter down the size of a returned response. Imagine if the route **/products** returned 2 million records from a database. That answer would be huge and it would also take a long time for the user to see the rendered response. That's a poor user experience and a strain on the app. A better approach is to use query parameters to limit the size of the response.
@@ -66,7 +66,7 @@ Route parameters are written to a **params** property on the request object **re
 
 ### Query parameters
 
-Express has an easy way of handling query parameters. Given the route **/products?page=1&pageSize=20**, the query parameters are written to a query object on the request object **res**. See the example:
+Express has an easy way of handling query parameters. Given the route **/products?page=1&pageSize=20**, the query parameters are written to a query object on the request object **res**, like the following example:
 
 ```javascript
 app.get('/products', (req, res) => {

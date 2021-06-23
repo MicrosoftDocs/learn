@@ -54,10 +54,10 @@ Although there's always room for improvement, this change is a win for the team.
 
 Use these additional resources to learn more about App Service, deployment slots, and rolling back changes:
 
-* [App Service documentation](https://docs.microsoft.com/azure/app-service?azure-portal=true)
-* [Deploy a website to Azure by using App Service](https://docs.microsoft.com/learn/paths/deploy-a-website-with-azure-app-service?azure-portal=true)
-* [Stage a web app deployment for testing and rollback by using App Service deployment slots](https://docs.microsoft.com/learn/modules/stage-deploy-app-service-deployment-slots?azure-portal=true)
-* [Set up staging environments in App Service](https://docs.microsoft.com/azure/app-service/deploy-staging-slots?azure-portal=true)
+* [App Service documentation](/azure/app-service?azure-portal=true)
+* [Deploy a website to Azure by using App Service](../../../paths/deploy-a-website-with-azure-app-service/index.yml?azure-portal=true)
+* [Stage a web app deployment for testing and rollback by using App Service deployment slots](/learn/modules/stage-deploy-app-service-deployment-slots?azure-portal=true)
+* [Set up staging environments in App Service](/azure/app-service/deploy-staging-slots?azure-portal=true)
 
 ## Appendix: Recommendations for using feature flags
 

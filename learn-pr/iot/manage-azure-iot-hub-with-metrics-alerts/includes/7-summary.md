@@ -20,11 +20,11 @@ No need to delete your project code though, keep it for future reference!
 
 Take your interest further with:
 
-- [Create and manage action groups in the Azure portal](https://docs.microsoft.com/azure/azure-monitor/platform/action-groups)
-- [Azure Monitor documentation](https://docs.microsoft.com/azure/azure-monitor)
-- [Create diagnostic setting to collect platform logs and metrics in Azure](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings)
-- [Azure Monitor log queries](https://docs.microsoft.com/azure/azure-monitor/log-query/query-language)
-- [An introduction to Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview)
+- [Create and manage action groups in the Azure portal](/azure/azure-monitor/platform/action-groups)
+- [Azure Monitor documentation](/azure/azure-monitor)
+- [Create diagnostic setting to collect platform logs and metrics in Azure](/azure/azure-monitor/platform/diagnostic-settings)
+- [Azure Monitor log queries](/azure/azure-monitor/log-query/query-language)
+- [An introduction to Azure Functions](/azure/azure-functions/functions-overview)
 
 And look out for additional Learn modules on IoT Hub.
 

@@ -14,12 +14,12 @@ pretty easy to you.
 
 ## How Log Analytics works
 
-So let's see how this is all going to work. Here's a diagram of how Log
+So let's see how this is all going to work. Here's a diagram about how Log
 Analytics works:
 
 :::image type="content" source="../media/log-analytics-overview.png" alt-text="Overview diagram of Log Analytics showing data inputs, tables, and sample queries":::
 
-Data for log analytics comes in from a number of sources including:
+Data for Log Analytics comes in from a number of sources including:
 
 - Windows event logs
 - syslog on Linux machines
@@ -32,18 +32,18 @@ All of this information comes into what Log Analytics calls "tables". You
 can think of each table as a separate database. You will be writing queries
 to pull the information from the tables. For the examples we will be
 showing later in this module, we'll be working primarily with a table
-called "requests".
+called "requests."
 
 :::image type="content" source="../media/log-analytics-requests-table.png" alt-text="Overview diagram of Log Analytics with requests table highlighted":::
 
-## Log analytics interface
+## Log Analytics interface
 
 The graphic below shows the different parts of the Log Analytics interface.
 
 :::image type="content" source="../media/log-analytics-user-interface.png" alt-text="Screenshot of the Log Analytics workspace in the Azure portal":::
 
 On the left is a section of the screen that makes sure you never get lost
-when using log analytics. It shows the tables you are potentially working
+when using Log Analytics. It shows the tables you are potentially working
 with, and if you expand a section, you’ll see a listing of the fields in
 that table that are available to query. If you click on any of the fields
 or the table name, it will be copied into the query construction area.
@@ -61,14 +61,14 @@ you were working on a query, tried something, and had to backtrack.
 ## Writing KQL queries
 
 KQL is a powerful query language. We're only going to scratch the surface
-with some basic queries so you can see how easy it is to use. Later on if
+with some basic queries so you can see how easy it is to use. Later on, if
 you'd like to dive deeper to use some of the more advanced features
 (including some machine learning functionality), be sure to check out the
-[Azure documentation on log analytics](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-portal).
+[Log Analytics tutorial](/azure/azure-monitor/log-query/get-started-portal).
 
 Let's start by writing a simple KQL query. Almost all KQL queries begin
-with the data source, the table you are querying. So, if we were querying
-data from a "requests" table we'd start with this in the query area:
+with the data source - the table you are querying. So, if we were querying
+data from a "requests" table, we'd start with this in the query area:
 
 `Requests`
 
@@ -85,10 +85,10 @@ Requests
 ```
 
 Here are some examples of other common commands you might use instead of
-"top 10":
+"top 10:"
 
 -   If you want to see any random 10 records instead of the top 10 (for
-    example, to see the table structure), you can use the command
+    example, to see the table structure), you can use the command:
 
     ```kusto
     requests
@@ -105,7 +105,7 @@ Here are some examples of other common commands you might use instead of
 
 -   Another common task is to specify the order in which the data is to be
     returned. Here is an example of a query that sorts by a specific field
-    (timestamp) in descending order (i.e., most recent data first):
+    (timestamp) in descending order (for example, most recent data first):
 
     ```kusto
     requests
@@ -119,7 +119,7 @@ the input of the next command. A single query can have any number of
 commands.
 
 Here is an example of a query that returns all of the 404 response code
-records (i.e., all of the “page not found” records from a web service) in
+records (for example, all of the “page not found” records from a web service) in
 the last 30 minutes:
 
 ```kusto

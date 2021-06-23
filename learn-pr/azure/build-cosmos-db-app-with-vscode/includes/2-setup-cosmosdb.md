@@ -1,10 +1,10 @@
-The Azure Cosmos DB extension for Visual Studio Code simplifies account, database, and collection creation by enabling you to create resources using the command window.
+The Azure Databases extension for Visual Studio Code simplifies account, database, and collection creation by enabling you to create resources using the command window.
 
-In this unit you will install the Azure Cosmos DB extension for Visual Studio, and then use it to create an account, database, and collection.
+In this unit you will install the Azure Databases extension for Visual Studio, and then use it to create an account, database, and collection.
 
-## Install the Azure Cosmos DB extension for Visual Studio
+## Install the Azure Databases extension for Visual Studio
 
-1. Go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb&azure-portal=true), and install the **Azure Cosmos DB** extension for Visual Studio Code.
+1. Go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb&azure-portal=true), and install the **Azure Databases** extension for Visual Studio Code.
 
 1. When the extension tab loads in Visual Studio Code, select **Install**.
 

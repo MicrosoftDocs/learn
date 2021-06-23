@@ -2,104 +2,29 @@ In this exercise, you'll deploy a Java EE (Jakarta EE) application to JBoss EAP 
 
 ## Configure the app with the Maven Plugin for Azure App Service
 
-Let's configure the application by executing the configuration goal in the Maven Plugin for Azure App Service:
+Please confirmed `pom.xml` file and add the `<plugins>` entries in the `<build>` with following configurable options.
 
-```bash
-./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.12.0:config
-```
-
-> [!IMPORTANT]
-> If you changed the region of your MySQL server, you should change to the same region for your Java EE application to minimize latency delays.
-
-In the command, select `Java 8` for `javaVersion` and `Jbosseap 7.2` for `runtimeStack`:
-
-|  Input element  |  Value  |
+|  Configurable element  |  Value  |
 | ---- | ---- |
-|  `Choose a Web Container Web App [\<create\>]:` |  `1: <create>`  |
-|  `Define value for OS [Linux]:`  |  `Linux`  |
-|  `Define value for pricingTier [P1v2]:`  |  `P1v2`  |
-|  `Define value for javaVersion [Java 8]:`  |  `1: Java 8`  |
-|  `Define value for runtimeStack:`  |  `1: Jbosseap 7.2`  |
-|  `Confirm (Y/N) [Y]:` | `Y` |
-
-After you run the command, you'll see the following messages in the terminal:
-
-```bash
-[INFO] Scanning for projects...
-[INFO] 
-[INFO] ---------< com.microsoft.azure.samples:jakartaee-app-on-jboss >---------
-[INFO] Building jakartaee-app-on-jboss 1.0-SNAPSHOT
-[INFO] --------------------------------[ war ]---------------------------------
-[INFO] 
-[INFO] Auth Type : AZURE_CLI, Auth Files : [/Users/yoterada/.azure/azureProfile.json, /Users/yoterada/.azure/accessTokens.json]
-Available subscriptions:
-   1: My Subscription(********-****-****-****-************)
-Please choose a subscription [My Subscription]: 1
-[INFO] It may take a few minutes to load all Java Web Apps, please be patient.
-Web Container Web Apps in subscription My Subscription:
-* 1: <create>
-Please choose a Web Container Web App [<create>]: 
-Define value for OS [Linux]:
-* 1: Linux
-  2: Docker
-  3: Windows
-Enter your choice: 
-Define value for pricingTier [P1v2]:
-   1: B1
-   2: B2
-   3: B3
-   4: D1
-   5: F1
-*  6: P1v2
-   7: P2v2
-   8: P3v2
-   9: S1
-  10: S2
-  11: S3
-Enter your choice: 
-Define value for javaVersion [Java 8]:
-* 1: Java 8
-  2: Java 11
-Enter your choice: 
-Define value for runtimeStack:
-  1: Jbosseap 7.2
-* 2: Tomcat 8.5
-  3: Tomcat 9.0
-Enter your choice: 1
-Please confirm webapp properties
-Subscription Id : ********-****-****-****-************
-AppName : jakartaee-app-on-jboss-1606464084546
-ResourceGroup : jakartaee-app-on-jboss-1606464084546-rg
-Region : westeurope
-PricingTier : PremiumV2_P1v2
-OS : Linux
-Java : Java 8
-Web server stack: Jbosseap 7.2
-Deploy to slot : false
-Confirm (Y/N) [Y]: y
-[INFO] Saving configuration to pom.
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  55.093 s
-[INFO] Finished at: 2020-11-27T17:01:43+09:00
-[INFO] ------------------------------------------------------------------------
-```
-
-After the command finishes, you can see that following entry is added in your Maven `pom.xml` file:
+|  `subscriptionId` | `Your appropriate subscription` |
+|  `resourceGroup` |  `Your appropriate resource group name`  |
+|  `appName`  |  `Your Azure App Service Instance Name`  |
+|  `region`  |  `Your appropriate install location`  |
 
 ```xml
-    <plugins>
+  <build> 
+    <finalName>ROOT</finalName>  
+    <plugins> 
       <plugin>
         <groupId>com.microsoft.azure</groupId>
         <artifactId>azure-webapp-maven-plugin</artifactId>
-        <version>1.12.0</version>
+        <version>1.15.0</version>
         <configuration>
           <schemaVersion>v2</schemaVersion>
           <subscriptionId>********-****-****-****-************</subscriptionId>
-          <resourceGroup>jakartaee-app-on-jboss-1606464084546-rg</resourceGroup>
-          <appName>jakartaee-app-on-jboss-1606464084546</appName>
-          <pricingTier>P1v2</pricingTier>
+          <resourceGroup>jakartaee-app-on-jboss-1623043825268-rg</resourceGroup>
+          <appName>jakartaee-app-on-jboss-1623043825268</appName>
+          <pricingTier>P3v3</pricingTier>
           <region>westeurope</region>
           <runtime>
             <os>Linux</os>
@@ -114,19 +39,42 @@ After the command finishes, you can see that following entry is added in your Ma
                   <include>*.war</include>
                 </includes>
               </resource>
+              <resource>
+                <type>startup</type>
+                <directory>${project.basedir}/src/main/webapp/WEB-INF/</directory>
+                <includes>
+                  <include>createMySQLDataSource.sh</include>
+                </includes>
+              </resource>
             </resources>
           </deployment>
         </configuration>
       </plugin>
-    </plugins>
+    </plugins> 
+  </build> 
+</project>
 ```
 
 > [!IMPORTANT]
 > Check the `<region>` element. If it's not the same installation location as MySQL, change it to the same location.
 
+Now, check the values for the resource group name and application name from the above XML file. Note these names or better assign them to environment variables.
+
+```xml
+<resourceGroup>jakartaee-app-on-jboss-1623043825268-rg</resourceGroup>
+<appName>jakartaee-app-on-jboss-1623043825268</appName>
+```
+
+If you are using the bash, configure the environment variables with the following command.
+
+```bash
+export WEBAPP_NAME=jakartaee-app-on-jboss-1606464084546
+export RESOURCEGROUP_NAME=jakartaee-app-on-jboss-1606464084546-rg
+```
+
 ## Compile and build the Java EE app
 
-After you configure the Azure App Service deployment settings, compile and package the source code:
+After you configured the Azure App Service deployment settings, compile and package the source code.
 
 ```bash
 ./mvnw clean package
@@ -136,17 +84,17 @@ The following output appears in the terminal:
 
 ```text
 [INFO] Packaging webapp
-[INFO] Assembling webapp [jakartaee-app-on-jboss] in [/Users/********/Desktop/MySQL/jakartaee-app-on-jboss/target/ROOT]
+[INFO] Assembling webapp [jakartaee-app-on-jboss] in [/private/tmp/mslearn-jakarta-ee-azure/target/ROOT]
 [INFO] Processing war project
-[INFO] Copying webapp resources [/Users/********/Desktop/MySQL/jakartaee-app-on-jboss/src/main/webapp]
-[INFO] Webapp assembled in [276 msecs]
-[INFO] Building war: /Users/********/Desktop/MySQL/jakartaee-app-on-jboss/target/ROOT.war
+[INFO] Copying webapp resources [/private/tmp/mslearn-jakarta-ee-azure/src/main/webapp]
+[INFO] Webapp assembled in [360 msecs]
+[INFO] Building war: /private/tmp/mslearn-jakarta-ee-azure/target/ROOT.war
 [INFO] WEB-INF/web.xml already added, skipping
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  6.631 s
-[INFO] Finished at: 2020-11-27T17:07:21+09:00
+[INFO] Total time:  5.315 s
+[INFO] Finished at: 2021-06-07T14:52:45+09:00
 [INFO] ------------------------------------------------------------------------
 ```
 
@@ -161,22 +109,25 @@ After you compile and package the code, deploy the application:
 The following message appears in the terminal:
 
 ```text
-[INFO] Auth Type : AZURE_CLI, Auth Files : [/Users/********/.azure/azureProfile.json, /Users/********/.azure/accessTokens.json]
-[INFO] Subscription : My Subscription(********-****-****-****-************)
-[INFO] Target Web App doesn't exist. Creating a new one...
-[INFO] Creating App Service Plan 'ServicePlancd5a2677-324c-47d7'...
-[INFO] Successfully created App Service Plan.
-[INFO] Successfully created Web App.
-[INFO] Using 'UTF-8' encoding to copy filtered resources.
-[INFO] Copying 1 resource to /Users/********/Desktop/MySQL/jakartaee-app-on-jboss/target/azure-webapp/jakartaee-app-on-jboss-1606464084546-c16ffb02-b9f4-4673-907a-7719393772cd
-[INFO] Trying to deploy artifact to jakartaee-app-on-jboss-1606464084546...
-[INFO] Deploying the war file ROOT.war...
-[INFO] Successfully deployed the artifact to https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net
+Auth type: AZURE_CLI
+Default subscription: Microsoft Azure Internal Billing-CDA(********-****-****-****-************)
+Username: YOUR_EMAIL_ADDRESS@************.com
+[INFO] Subscription: Microsoft Azure Internal Billing-CDA(********-****-****-****-************)
+[INFO] Creating resource group jakartaee-app-on-jboss-1623043825268-rg in region westeurope...
+[INFO] Successfully created resource group jakartaee-app-on-jboss-1623043825268-rg.
+[INFO] Creating app service plan...
+[INFO] Successfully created app service plan asp-jakartaee-app-on-jboss-1623043825268.
+[INFO] Creating web app jakartaee-app-on-jboss-1623043825268...
+[INFO] Successfully created Web App jakartaee-app-on-jboss-1623043825268.
+[INFO] Trying to deploy artifact to jakartaee-app-on-jboss-1623043825268...
+[INFO] Deploying (/private/tmp/mslearn-jakarta-ee-azure/target/ROOT.war)[war]  ...
+[INFO] Deploying (/private/tmp/mslearn-jakarta-ee-azure/src/main/webapp/WEB-INF/createMySQLDataSource.sh)[startup]  ...
+[INFO] Successfully deployed the artifact to https://jakartaee-app-on-jboss-1623043825268.azurewebsites.net
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  01:43 min
-[INFO] Finished at: 2020-11-27T17:09:08+09:00
+[INFO] Total time:  02:20 min
+[INFO] Finished at: 2021-06-07T14:55:16+09:00
 [INFO] ------------------------------------------------------------------------
 ```
 
@@ -189,7 +140,7 @@ https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net
 
 ## Configure a database connection
 
-The sample application will connect to your MySQL Database and display data. 
+The sample application will connect to your MySQL Database and display data.
 
 In the Maven project configuration in `pom.xml`, we specified the MySQL JDBC driver as follows:
 
@@ -250,7 +201,7 @@ Now configure your App Service instance to invoke the startup script:
 # [Linux/Mac OS X](#tab/linux)
 
 ```azurecli
-az webapp config set --startup-file=/home/site/wwwroot/webapps/ROOT/WEB-INF/createMySQLDataSource.sh \
+az webapp config set --startup-file '/home/site/scripts/startup.sh' \
 -n ${WEBAPP_NAME} \
 -g ${RESOURCEGROUP_NAME}
 ```
@@ -259,12 +210,11 @@ az webapp config set --startup-file=/home/site/wwwroot/webapps/ROOT/WEB-INF/crea
 
 ```azurecli
 export MSYS_NO_PATHCONV=1
-az webapp config set --startup-file=/home/site/wwwroot/webapps/ROOT/WEB-INF/createMySQLDataSource.sh \
+az webapp config set --startup-file '/home/site/scripts/startup.sh' \
 -n ${WEBAPP_NAME} \
 -g ${RESOURCEGROUP_NAME}
 ```
 ---
-
 
 After the script runs, it will be invoked every time the application server is restarted.
 
@@ -279,8 +229,8 @@ After you configure the startup script, configure App Service to use certain env
 az webapp config appsettings set \
   --resource-group ${RESOURCEGROUP_NAME} --name ${WEBAPP_NAME} \
   --settings \
-  MYSQL_CONNECTION_URL='jdbc:mysql://mysqlserver-**********.mysql.database.azure.com:3306/world?useSSL=true&requireSSL=false&serverTimezone=JST' \
-  MYSQL_PASSWORD=************ \
+  MYSQL_CONNECTION_URL='jdbc:mysql://mysqlserver-**********.mysql.database.azure.com:3306/world?useSSL=true&requireSSL=false' \
+  MYSQL_PASSWORD='************' \
   MYSQL_USER=azureuser
 ```
 

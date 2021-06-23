@@ -47,7 +47,7 @@ When you design your application, consider the following factors:
     | T1 |  | Record is replicated | T1 | Last Sync Time field is updated |
     | T2 | Consultant updates patient record | |T1 | Record is updated in primary region but not replicated |
     | T3 | Read record from secondary region | | | Data from the secondary region is stale, because updates haven't yet been replicated from the primary region |
-    | T4 |  | Record replicated | T1 | Data at secondary region is now updated; Last Sync Time field is updated |
+    | T4 |  | Record replicated | T4 | Data at secondary region is now updated; Last Sync Time field is updated |
 
 ## Best practices for cloud-based applications with RA-GRS
 
@@ -95,4 +95,4 @@ Use the Circuit Breaker pattern to prevent an application from trying connection
 
 When you implement the Circuit Breaker pattern, set the *LocationMode* of read requests appropriately. Most of the time, you should set this mode to *PrimaryThenSecondary*. If the read from the primary location times out, the secondary location is used. However, this process can slow down an application if it's done repeatedly. After the circuit breaker has detected that the primary location is unavailable, it should switch the mode to *SecondaryOnly*. This action ensures that read operations don't wait for a timeout from the primary location before trying the secondary location. When the circuit breaker estimates that the primary location has been repaired, it can revert back to the *PrimaryThenSecondary* mode.
 
-For more information, see [Circuit Breaker pattern](https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker).
+For more information, see [Circuit Breaker pattern](/azure/architecture/patterns/circuit-breaker).

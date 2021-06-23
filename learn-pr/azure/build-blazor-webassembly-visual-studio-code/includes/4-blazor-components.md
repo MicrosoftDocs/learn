@@ -1,16 +1,6 @@
-Now that you have your development environment set up, you'll explore the structure of a Blazor WebAssembly project and learn how to add new pages.
+Now that you have your development environment set up, you'll explore the structure of a Blazor project and learn how to add new pages.
 
-## Blazor WebAssembly project file
 
-Blazor WebAssembly projects target Microsoft .NET Standard, which is currently version 2.0. Blazor WebAssembly apps are different from Blazor Server apps, which are .NET Core projects.
-
-Blazor WebAssembly apps target .NET Standard because it runs directly in a browser on a WebAssembly-based .NET runtime that uses Mono. You can't install .NET directly into a browser.
-
-## Blazor WebAssembly entry point
-
-The entry point for the app is defined in a C# file named Program.cs. When the **Program** class is instantiated and runs, its **Main** method is called.
-
-By default, the **Main** method configures and creates the .NET WebAssembly object. This object communicates with the WebAssembly host and loads the app's Razor components.
 
 ## What is Razor?
 
@@ -25,3 +15,41 @@ A Razor file defines components that make up a portion of the app UI. Components
 If you explore the project, you'll see that most files are .razor files.
 
 At compile time, each Razor component is built into a .NET class. The class includes common UI elements like state, rendering logic, lifecycle methods, and event handlers.
+
+## Try the Counter
+
+In the running app, navigate to the Counter page by clicking the Counter tab in the sidebar on the left. The following page should then be displayed. 
+
+![Counter Screenshot](../media/counter.png)
+
+Select the **Click me** button to increment the count without a page refresh. Incrementing a counter in a webpage normally requires writing JavaScript, but with Blazor you can use C#.
+
+You can find the implementation of the Counter component at `Pages/Counter.razor`.
+
+```razor
+@page "/counter"
+
+<h1>Counter</h1>
+
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
+```
+
+A request for `/counter` in the browser, as specified by the `@page` directive at the top, causes the `Counter` component to render its content.
+
+Each time the **Click me** button is selected:
+
+- The onclick event is fired.
+- The IncrementCount method is called.
+- The currentCount is incremented.
+- The component is rendered to show the updated count.

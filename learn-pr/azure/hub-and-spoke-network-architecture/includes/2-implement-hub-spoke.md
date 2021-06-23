@@ -2,11 +2,11 @@ By using virtual networks, network security groups, virtual network peering, and
 
 Your company is planning a migration of your on-premises resources to Azure. Your central datacenter is currently located at your headquarters, and will eventually migrate completely to Azure. Initially, you've been asked to move some of your satellite offices into the cloud, while also maintaining the connectivity to your headquarters. The ultimate goal for the migration is to host all your computing resources on Azure.
 
-In this unit, you'll explore the hub and spoke architecture, the topology, the components needed in Azure, and how to plan implementing infrastructure by using this model.
+In this unit, you'll explore the hub-spoke architecture, the topology, the components needed in Azure, and how to plan implementing infrastructure by using this model.
 
-## Hub and spoke architecture foundations
+## Hub-spoke architecture foundations
 
-![Diagram of a hub and spoke architecture](../media/2-hub-and-spoke.png)
+![Diagram of a hub-spoke architecture](../media/2-hub-and-spoke.png)
 
 A hub and spoke consists of a centralized architecture (a hub) connecting to multiple points (spokes). When drawn, it looks similar to a wheel, with a hub at the center and spokes connected to it. This model in Azure organizes your network infrastructure into multiple connected virtual networks. This architecture provides an efficient way to manage common communication, security requirements, and potential subscription limitations.
 
@@ -16,11 +16,11 @@ Implementing a hub and spoke architecture can have the following benefits:
 - Integration of separate working environments into a central location for shared services.
 - Traffic routing through the central hub, so workloads can be managed centrally.
 
-## Introduction to the hub-spoke topology
+## Introduction to hub-spoke topology
 
 Hub-spoke networks are commonly used for hybrid cloud architectures, and can be simpler to implement and maintain in the long term. The hub is a virtual network that acts as a central location for managing external connectivity, and hosting services used by multiple workloads. The hub coordinates all communications to and from the spokes. IT rules or processes like security can inspect, route, and centrally manage traffic. The spokes are virtual networks that host workloads, and connect to the central hub through virtual network peering.
 
-Hub and spoke topologies offer several business benefits:
+Hub-spoke topologies offer several business benefits:
 
 - Increased business agility by standardizing on network connections. Organizations can adapt to changing markets, adding a new branch in a different geopolitical region, or a new business channel, as spokes.
 - Liability reduction by maintaining a consistent architecture. As the business grows, or traffic volumes increase, it's simple to add more systems.

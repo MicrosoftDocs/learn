@@ -52,8 +52,8 @@ In the Customer Portal scenario, you've decided you need more detailed informati
 
 1. Under **Storage Accounts**, under your storage account, expand **Blob Containers**, and you should see a container named **\$logs**, with a folder named **blob**. If this container doesn't appear, wait for a few minutes while Storage Analytics processes the log data, and then select **Refresh** in the toolbar.
 
-    [![](../media/6-storage-explorer-logs.png "Screenshot of Azure Storage Explorer, showing the $logs container")](../media/6-storage-explorer-logs.png#lightbox)
+    :::image type="content" source="../media/6-storage-explorer-logs.png" alt-text="Screenshot of Azure Storage Explorer, showing the $logs container." lightbox="../media/6-storage-explorer-logs.png":::
   
 1. Select **blob** in the detail panel, and then navigate through the folder structure to the folder containing the latest set of log files. You should see a set of files similar to the files in the following example image.
 
-    [![](../media/6-storage-explorer-log-files.png "Screenshot of Azure Storage Explorer, showing the log files in the $logs container")](../media/6-storage-explorer-log-files.png#lightbox)
+    :::image type="content" source="../media/6-storage-explorer-log-files.png" alt-text="Screenshot of Azure Storage Explorer, showing the log files in the $logs container." lightbox="../media/6-storage-explorer-log-files.png":::

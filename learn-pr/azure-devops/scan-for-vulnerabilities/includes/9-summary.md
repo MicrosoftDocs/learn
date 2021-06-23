@@ -22,7 +22,7 @@ If you build .NET applications, as an optional exercise you can practice fixing 
 
 A relatively easy bug to fix relates to replacing the bold `<b>` tag with the `<strong>` tag, as you saw earlier.
 
-![Screenshot of SonarCloud bug details for "Replace this <b> tag by <strong>".](../media/3-sonar-scan-bug.png)
+:::image type="content" source="../media/3-sonar-scan-bug.png" alt-text="Screenshot of SonarCloud bug details for replacing the bold tag by strong.":::
 
 See if you can locate this issue in the source code based on the report. After you fix the issue and commit the change to the `master` branch on GitHub, you see the issue disappear the next time the scanner runs.
 
@@ -33,15 +33,15 @@ Thinking about security is part of every phase of your development lifecycle. Mi
 In this module, you learned about some of the tools and processes you can use to analyze your code. Here's where you can learn more:
 
 * [OWASP](https://www.owasp.org?azure-portal=true)
-* [Roslyn analyzers](https://docs.microsoft.com/visualstudio/code-quality/roslyn-analyzers-overview?azure-portal=true)
+* [Roslyn analyzers](/visualstudio/code-quality/roslyn-analyzers-overview?azure-portal=true)
 * [Common Weakness Enumeration](https://cwe.mitre.org/index.html?azure-portal=true) (CWE)
 * [Common Vulnerabilities and Exposures](https://cve.mitre.org/cve/?azure-portal=true) (CVE)
 * [Microsoft Security Development Lifecycle](https://www.microsoft.com/securityengineering/sdl/?azure-portal=true)
 
 Here are some resources that relate to Azure Pipelines features you used in this module:
 
-* [Specify conditions](https://docs.microsoft.com/azure/devops/pipelines/process/conditions?tabs=yaml&azure-portal=true) in Azure Pipelines
-* [Secret variables](https://docs.microsoft.com/azure/devops/pipelines/process/variables?tabs=yaml%2Cbatch#secret-variables) in Azure Pipelines
+* [Specify conditions](/azure/devops/pipelines/process/conditions?azure-portal=true&tabs=yaml) in Azure Pipelines
+* [Secret variables](/azure/devops/pipelines/process/variables?tabs=yaml%2cbatch#secret-variables) in Azure Pipelines
 
 ## Appendix
 

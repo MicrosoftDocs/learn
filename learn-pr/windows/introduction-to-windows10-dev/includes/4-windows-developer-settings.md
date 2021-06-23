@@ -27,7 +27,7 @@ Here's the settings page on the desktop device family:
 
 ## Developer Mode features
 
-When you enable Developer Mode on a desktop computer that's running Windows 10, a package of features is installed. The features include a secure shell (SSH) service that allows remote deployment of apps to your computer, and the Windows Device Portal (WDP). The features are relevant if you enable device discovery on your computer, or if you develop apps for Internet of Things (IoT) applications. If you're developing only Windows apps, you can safely ignore them. For more information, see [enable your device for deployment](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development).
+When you enable Developer Mode on a desktop computer that's running Windows 10, a package of features is installed. The features include a secure shell (SSH) service that allows remote deployment of apps to your computer, and the Windows Device Portal (WDP). The features are relevant if you enable device discovery on your computer, or if you develop apps for Internet of Things (IoT) applications. If you're developing only Windows apps, you can safely ignore them. For more information, see [enable your device for deployment](/windows/uwp/get-started/enable-your-device-for-development).
 
 ### Failure to install
 
@@ -45,4 +45,4 @@ If you want to submit apps or add-ins to the Microsoft Store, you need a develop
 
 To register for a developer account, go to the [registration page](https://developer.microsoft.com/store/register) and select **Sign up.** You're prompted to log in to your Microsoft account (or to create a new one), which you use to sign in to your developer account. Follow the steps to choose your country, account type, public publisher display name, and contact information.
 
-For a step-by-step walkthrough of the developer account process and in-depth information about the specific account settings, see [Open a developer account](https://docs.microsoft.com/windows/uwp/publish/opening-a-developer-account).
+For a step-by-step walkthrough of the developer account process and in-depth information about the specific account settings, see [Open a developer account](/windows/uwp/publish/opening-a-developer-account).

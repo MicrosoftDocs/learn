@@ -32,7 +32,7 @@ Every request to a queue must be authorized and there are several options to cho
 Your account key is available in the **Settings > Access keys** section of your storage account in the Azure portal, or you can retrieve it through the command line:
 
 ```azurecli
-az storage account keys list ...
+az storage account keys list --account-name <your storage account name>
 ```
 
 ```powershell

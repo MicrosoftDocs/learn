@@ -51,7 +51,7 @@ In the *Tailspin.SpaceGame.Database* project, the Profiles table has changed. Th
         Verify that the `favoriteMap` column is populated with data.
 1. Navigate to one of your host names, for example, **tailspin-space-game-web-dev-1234.azurewebsites.net**. Select a player to see the new data on the profile.
 
-    ![The website displaying a profile that shows the player's favorite galaxy.](../media/7-profile-with-favorite-galaxy.png)
+    :::image type="content" source="../media/7-profile-with-favorite-galaxy.png" alt-text="The website displaying a profile that shows the player's favorite galaxy.":::
 
 **Tim:** I think the meeting went well. We managed to get the DBA involved, and they're a tough customer. Score one for DevOps. But I can see a problem here. Every application change triggers this pipeline to run. We won't have schema changes every time. But the pipeline will stop and wait for approval even if the change file contains no changes. How can we fix that problem?
 
@@ -74,7 +74,7 @@ Don't copy this script yet. Soon you'll replace the entire contents of the *azur
 
 If the keyword search returns a match, create a variable in the pipeline variable group. Set its value to `True`. If the variable is in the pipeline variable group, all stages can see it. Currently, when you set a new variable in a stage, the variable is scoped to only that stage. 
 
-Here you use a PowerShell library that was created by Donovan Brown. The library, called [VSTeam](https://www.powershellgallery.com/packages/VSTeam/6.3.5?azure-portal=true), uses the [REST API for Azure DevOps Services](https://docs.microsoft.com/rest/api/azure/devops/search/?azure-portal=true) to access Azure DevOps programmatically.
+Here you use a PowerShell library that was created by Donovan Brown. The library, called [VSTeam](https://www.powershellgallery.com/packages/VSTeam/6.3.5?azure-portal=true), uses the [REST API for Azure DevOps Services](/rest/api/azure/devops/search/?azure-portal=true) to access Azure DevOps programmatically.
 
 This script copies all variables out of the variable group. It adds a new variable named `schemaChanged`. It also updates the variable group with the complete set of variables.
 
@@ -133,7 +133,7 @@ From Azure DevOps:
 
 1. Select your profile from the upper-right corner, then select **Personal access tokens**.
 
-    ![Accessing personal access tokens from Azure DevOps.](../../shared/media/azure-devops-profile-personal-access-tokens.png)
+    :::image type="content" source="../../shared/media/azure-devops-profile-personal-access-tokens.png" alt-text="Accessing personal access tokens from Azure DevOps.":::
 
 1. Select **+ New Token**.
 1. For the name, enter *Database Changes*.
@@ -173,7 +173,7 @@ From Azure DevOps:
 
 1. Navigate back to Azure DevOps and watch the pipeline run.
 
-    ![Azure Pipelines showing the skipped stage.](../media/7-pipeline-run-skipped.png)
+    :::image type="content" source="../media/7-pipeline-run-skipped.png" alt-text="Azure Pipelines showing the skipped stage.":::
 
 ## Recommended practices
 

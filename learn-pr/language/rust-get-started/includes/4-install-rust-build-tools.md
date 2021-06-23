@@ -40,6 +40,9 @@ After the installation completes, you can continue with the Rust installation.
 
 After you complete the Rust installation, you should have the `rustc` and `cargo` commands available.
 
+> [!Note]
+> The following commands work on all platforms.
+
 Run the following command in your terminal or command prompt:
 
 ```console
@@ -64,8 +67,14 @@ You should see similar output:
 cargo 1.50.0 (f04e7fab7 2021-02-04)
 ```
 
-You should see the version number, commit hash, and commit date for the latest stable version that's been released. This information is shown in the following format:
+Both output lines contain the following information on the latest stable versions of Rust and Cargo that are available:
 
-`rustc x.y.z (abcabcabc yyyy-mm-dd)`
+- The release number
+- The commit hash
+- The commit date
 
-If you see this type of output, you installed Rust successfully! If you don't see this information and you're on Windows, check that Rust is in your `%PATH%` system variable.
+This information appears in the following format:
+
+`<executable-name> <three-part-release-number> (<9-character-hash-code> <4-digit-year>-<2-digit-month>-<2-digit-day>)`
+
+If you see this type of output, both installations were successful. If you don't see this information, check your `PATH` environment variable. Make sure it includes a folder that contains the `rustc.exe` and `cargo.exe` executable files.

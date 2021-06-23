@@ -20,7 +20,7 @@ There are specific requirements to use LUIS in a container environment.  The fir
 
 This module does not cover how to install Docker or manage it.  You will use the commands and processes necessary to pull down the Docker container and deploy your LUIS application to that container. For information on installing and using Docker, refer to the [Docker Get Started](https://www.docker.com/get-started) page.
 
-To containerize LUIS, you require an existing LUIS application.  You will not create a LUIS app insider a Docker container.  LUIS offers the ability to export to a container. Before you can export the app as a container, it must be trained so ensure that you have selected the **Train** button and its status is showing a green dot.
+To containerize LUIS, you require an existing LUIS application.  You will not create a LUIS app inside a Docker container.  LUIS offers the ability to export to a container. Before you can export the app as a container, it must be trained so ensure that you have selected the **Train** button and its status is showing a green dot.
 
 To export your LUIS app for containerization;
 

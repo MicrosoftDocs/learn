@@ -20,7 +20,7 @@ Your network architect would like to ensure customers have the best performance.
         --resource-group <rgn>Sandbox resource group </rgn> \
         --name westus2-vm-nic-pip \
         --query id \
-        --out tsv)
+        --output tsv)
 
     az network traffic-manager endpoint create \
         --resource-group <rgn>Sandbox resource group </rgn> \
@@ -34,7 +34,7 @@ Your network architect would like to ensure customers have the best performance.
         --resource-group <rgn>Sandbox resource group </rgn> \
         --name eastasia-vm-nic-pip \
         --query id \
-        --out tsv)
+        --output tsv)
 
     az network traffic-manager endpoint create \
         --resource-group <rgn>Sandbox resource group </rgn> \

@@ -1,8 +1,8 @@
-To complete the project, we must now implement a way to enter data for the user's and their manager's forenames and surnames.
+To complete the project, you must now implement a way to enter data for the user's and their manager's forenames and surnames.
 
-## Add data entry elements for names
+## Add data-entry elements for names
 
-1. Replace `<!-- Report and Manager Information -->` with the following XAML:
+Replace `<!-- User and Manager Information -->` with the following XAML:
 
 ```xaml
 <Grid
@@ -38,15 +38,15 @@ To complete the project, we must now implement a way to enter data for the user'
 
 ## Run the application
 
-When you run the application and use the screen reader to navigate the elements on the screen. The default ordering of the screen reader is row-based. This means that the entry of names changes back and forth between the report and the managers names. 
+When you run the application and use the screen reader to move through elements on the screen, the default order is row-based. The entry of names changes back and forth between the user and the manager. 
 
-![Default Row-based Tab Order](../media/default-tab-order.png)
+![Screenshot that shows the default row-based tab order.](../media/default-tab-order.png)
 
-The default tab order of controls is the same order in which they are listed in XAML, or added to a collection. In the `Grid` items are added to the layout based on the row. This is not an accessible order for data entry. Instead we would prefer them to fill in the forename and then the surname before moving to the next person.
+The default tab order of controls is the same order in which they're listed in XAML or added to a collection. In `Grid`, items are added to the layout based on the row. This is not an accessible order for data entry. Instead, we'd prefer the user to fill in the forename and then the surname before moving to the next person.
 
 ## Reorder the elements
 
-Reorder the `Entry` elements so they in the order in which the screen reader should read them back.
+Reorder the `Entry` elements so they appear in the order in which the screen reader should read them:
 
 
 ```xaml
@@ -80,12 +80,12 @@ Reorder the `Entry` elements so they in the order in which the screen reader sho
 </Grid>
 ```
 
-Now, when you run the application you will see the new column-based accessibility ordering as navigating through the elements. We have also improved the screen reader information on the `Entry` by updating the `Placeholder` with more valuable information such as "Manager's surname" and "Manager's forename" that is read back.
+Now, when you run the application, you'll see the new column-based accessibility order as you move through the elements. You've also improved the screen reader information on `Entry` by updating `Placeholder` with more valuable information that's read back, such as "Manager's surname" and "Manager's forename."
 
-![Column-based Tab Order](../media/correct-tab-order.png)
+![Screenshot that shows a column-based tab order.](../media/correct-tab-order.png)
 
 
 > [!NOTE]
-> If you are interested in further manipulating the accessibility ordering, there are APIs that make this possible. However, it is advised to maintain logical and meaningful content ordering before leveraging those APIs.
+> If you're interested in further changing the accessibility order, you can use APIs for that. However, you should maintain a logical and meaningful content order before using those APIs.
 
-We have now explored multiple ways to enhance the accessibility of the application. Let's recap what we have learned and discover even more ways in which we can make apps app accessible.
+You've now explored multiple ways to enhance the accessibility of the application. Let's recap what you've learned and discover even more ways to make apps accessible.

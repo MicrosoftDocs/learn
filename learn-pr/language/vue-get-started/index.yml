@@ -20,7 +20,7 @@ prerequisites: |
   - Git
   - npm
   - JavaScript
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/vue-get-started.svg
 ratingEnabled: true
 levels:
 - intermediate

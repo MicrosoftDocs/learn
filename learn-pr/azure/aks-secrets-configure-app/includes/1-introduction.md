@@ -13,41 +13,12 @@ By the end of this module, you'll be able to:
 ## Prerequisites
 
 - Familiarity with Kubernetes concepts. If you're new to Kubernetes, start with the [basics of Kubernetes](https://azure.microsoft.com/topic/what-is-kubernetes).
-- Familiarity with [Git](https://docs.microsoft.com/contribute/git-github-fundamentals) and [GitHub](https://github.com).
+- Familiarity with [Git](/contribute/git-github-fundamentals) and [GitHub](https://github.com).
 - Familiarity with [Docker](https://docker.com) and Docker images.
 - An active Azure [subscription](https://azure.microsoft.com/free/services/kubernetes-service).
-- The ability to use the [Azure CLI](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough).
-- The ability to create a Docker container. If you're new to Docker, start with the [introduction to containers](https://docs.microsoft.com/learn/modules/intro-to-containers/).
+- The ability to use the [Azure CLI](/azure/aks/kubernetes-walkthrough).
+- The ability to create a Docker container. If you're new to Docker, start with the [introduction to containers](/learn/modules/intro-to-containers/).
 
-All exercises will use [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview), which already has all the needed tools installed. If you prefer to run the examples in your own terminal, you'll need to have the following tools installed first:
-- [Azure CLI](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough)
-- [Kubectl](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough#connect-to-the-cluster)
-
-## Before we start
-
-We'll assume an AKS cluster is already created and running. To create your AKS cluster, run the following commands in a Cloud Shell environment:
-
-```azurecli-interactive
-export RESOURCE_GROUP=learn-ship-manager && \
-az group create -n $RESOURCE_GROUP -l eastus
-```
-
-```azurecli-interactive
-export CLUSTER_NAME=ship-manager && \
-az aks create \
- -g $RESOURCE_GROUP \
- -n $CLUSTER_NAME \
- --node-count 1 \
- --node-vm-size Standard_B2s \
- --generate-ssh-keys \
- --enable-addons http_application_routing
-```
-
-```azurecli-interactive
-az aks get-credentials -n $CLUSTER_NAME -g $RESOURCE_GROUP
-```
-
-The complete cluster creation can take up to five minutes.
-
-> [!IMPORTANT]
-> Make a note of the `RESOURCE_GROUP` and `CLUSTER_NAME` variables for later use.
+All exercises will use [Azure Cloud Shell](/azure/cloud-shell/overview), which already has all the needed tools installed. If you prefer to run the examples in your own terminal, you'll need to have the following tools installed first:
+- [Azure CLI](/azure/aks/kubernetes-walkthrough)
+- [Kubectl](/azure/aks/kubernetes-walkthrough#connect-to-the-cluster)

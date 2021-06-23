@@ -38,7 +38,7 @@ The diagram below depicts an end-to-end "live" data stream processing solution u
 
 ![The diagram depicts an end-to-end solution using Event Hubs to ingest streaming data, Azure Stream Analytics to transform the data, and Power BI to visualize and analyze it.](../media/data-stream-processing-live.png "Live data stream processing")
 
-The "on-demand" approach for processing streaming data involves persisting all incoming data in a data store, such as [Azure Data Lake Storage (ADLS) Gen2](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction). This method allows you to collect streaming data over time and store it as static data. You can then process the _static_ data in batches when convenient or during times when compute costs are lower.
+The "on-demand" approach for processing streaming data involves persisting all incoming data in a data store, such as [Azure Data Lake Storage (ADLS) Gen2](/azure/storage/blobs/data-lake-storage-introduction). This method allows you to collect streaming data over time and store it as static data. You can then process the _static_ data in batches when convenient or during times when compute costs are lower.
 
 The following diagram illustrates an on-demand data stream processing solution. Streaming data from Azure Event Hubs and IoT Hub are written as blobs into Azure Data Lake Storage (ADLS) Gen2. The static data are then processed using Azure Stream Analytics and output to a Power BI dashboard for visualization and analysis.
 

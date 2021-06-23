@@ -10,8 +10,8 @@ Once you practice by doing and explore the documentation, it will become clearer
 
 ## Learn more
 
-- [Build Azure Resource Manager templates](https://docs.microsoft.com/learn/modules/build-azure-vm-templates/)
-- [Azure Logic Apps Documentation](https://docs.microsoft.com/azure/logic-apps/)
-- [Quickstart: Create and manage automated logic app workflows - Visual Studio Code](https://docs.microsoft.com/azure/logic-apps/Quickstart-create-logic-apps-visual-studio-code)
-- [Schema reference for Workflow Definition Language in Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-workflow-definition-language)
-- [Create Azure Resource Manager templates for deploying logic appsSS](https://docs.microsoft.com/azure/logic-apps/logic-apps-create-deploy-template) 
+- [Build Azure Resource Manager templates](/learn/modules/build-azure-vm-templates/)
+- [Azure Logic Apps Documentation](/azure/logic-apps/)
+- [Quickstart: Create and manage automated logic app workflows - Visual Studio Code](/azure/logic-apps/Quickstart-create-logic-apps-visual-studio-code)
+- [Schema reference for Workflow Definition Language in Azure Logic Apps](/azure/logic-apps/logic-apps-workflow-definition-language)
+- [Create Azure Resource Manager templates for deploying logic appsSS](/azure/logic-apps/logic-apps-create-deploy-template)

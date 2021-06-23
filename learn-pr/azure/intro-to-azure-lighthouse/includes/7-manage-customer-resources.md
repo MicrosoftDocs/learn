@@ -9,7 +9,7 @@ An example of the Azure portal All Resources blade showing network security grou
 :::image type="content" source="../media/7-all-resources.png" alt-text="Depiction of All Resources with customer subscriptions and network security groups ":::
 
 ## Hybrid resources with Azure Arc
-Azure Lighthouse also supports resources that are on-premises or in other clouds, using Azure Arc. So, along with your customer's Azure resources, you can also view and manage their Azure Arc enabled servers and Azure Arc enabled Kubernetes. [Learn more about Azure Arc](https://docs.microsoft.com/azure/azure-arc/).
+Azure Lighthouse also supports resources that are on-premises or in other clouds, using Azure Arc. So, along with your customer's Azure resources, you can also view and manage their Azure Arc enabled servers and Azure Arc enabled Kubernetes. [Learn more about Azure Arc](/azure/azure-arc/).
 
 ## Resource management examples
 
@@ -42,4 +42,4 @@ Cross-tenant visibility in Azure Security Center lets you monitor compliance of 
 
 Using Azure Policy, you can create and edit policy definitions within your customer's tenants. At scale, you can deploy policy definitions and assignments across multiple tenants.  
 
-For a list of key scenarios that benefit from cross-tenant management at scale, visit [Cross-tenant management experiences](https://docs.microsoft.com/azure/lighthouse/concepts/cross-tenant-management-experience#enhanced-services-and-scenarios)
+For a list of key scenarios that benefit from cross-tenant management at scale, visit [Cross-tenant management experiences](/azure/lighthouse/concepts/cross-tenant-management-experience#enhanced-services-and-scenarios)

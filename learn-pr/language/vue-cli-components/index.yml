@@ -15,7 +15,7 @@ abstract: |
   - Use Vue CLI
   - Create components
 prerequisites: HTML/CSS, Git, npm, JavaScript, and some knowledge of Vue.js
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/vue-cli-components.svg
 ratingEnabled: true
 levels:
 - intermediate

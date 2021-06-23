@@ -115,7 +115,7 @@ You can also set up Ansible on a Linux VM running on Azure, or in your datacente
 
 ## Azure Automation
 
-Azure Automation is a service in Azure that helps you automate manual tasks. Automation has the concept of a _runbook_, which is a set of tasks that perform some automated procedure in Automation. Tasks in a runbook are written in PowerShell, [PowerShell Workflow](https://docs.microsoft.com/system-center/sma/overview-powershell-workflows?azure-portal=true), or Python. You can run a runbook either manually or on a schedule.
+Azure Automation is a service in Azure that helps you automate manual tasks. Automation has the concept of a _runbook_, which is a set of tasks that perform some automated procedure in Automation. Tasks in a runbook are written in PowerShell, [PowerShell Workflow](/system-center/sma/overview-powershell-workflows?azure-portal=true), or Python. You can run a runbook either manually or on a schedule.
 
 Here's a basic example that uses PowerShell Workflow to stop a running service:
 

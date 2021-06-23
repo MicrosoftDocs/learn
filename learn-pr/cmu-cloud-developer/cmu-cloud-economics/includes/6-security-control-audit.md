@@ -2,7 +2,7 @@ When you run an application on the cloud, different aspects of security must be 
 
 ![Security responsibilities in Azure between provider and customer](../media/security-3.png)
 
-_Figure 13: Security responsibilities in Azure_ ([Source](https://docs.microsoft.com/azure/security/fundamentals/shared-responsibility))
+_Figure 13: Security responsibilities in Azure_ ([Source](/azure/security/fundamentals/shared-responsibility))
 
 Many classes of applications require different infrastructure, process, and security certifications. Most cloud service providers will comply with a majority of the popular certifications and audit requirements followed in the US and Europe.
 

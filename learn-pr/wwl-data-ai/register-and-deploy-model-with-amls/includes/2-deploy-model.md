@@ -37,7 +37,7 @@ The model will be deployed as a service that consist of:
 
 You must therefore define the script and environment for the service.
 
-### Creating an entry script
+### Create an entry script
 
 Create the *entry script* (sometimes referred to as the *scoring script*) for the service as a Python (.py) file. It must include two functions:
 
@@ -69,7 +69,7 @@ def run(raw_data):
     return predictions.tolist()
 ```
 
-### Creating an environment
+### Create an environment
 
 Your service requires a Python environment in which to run the entry script, which you can configure using Conda configuration file. An easy way to create this file is to use a **CondaDependencies** class to create a default environment (which includes the **azureml-defaults** package and commonly-used packages like **numpy** and **pandas**), add any other required packages, and then serialize the environment to a string and save it:
 
@@ -87,7 +87,7 @@ with open(env_file,"w") as f:
 print("Saved dependency info in", env_file)
 ```
 
-### Combining the script and environment in an InferenceConfig
+### Combine the script and environment in an InferenceConfig
 
 After creating the entry script and environment configuration file, you can combine them in an **InferenceConfig** for the service like this:
 
@@ -146,4 +146,4 @@ service.wait_for_deployment(show_output = True)
 
 For ACI or local services, you can omit the **deployment_target** parameter (or set it to **None**).
 
-> **More Information**: For more information about deploying models with Azure Machine Learning, see [Deploy models with Azure Machine Learning](https://aka.ms/AA70zfv) in the documentation.
+For more information about deploying models with Azure Machine Learning, see [Deploy machine learning models to Azure](https://aka.ms/AA70zfv) in the documentation.

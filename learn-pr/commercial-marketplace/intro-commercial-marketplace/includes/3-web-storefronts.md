@@ -1,4 +1,4 @@
-When Microsoft partners add their solutions to the commercial marketplace, one way that customers can find their products and services is by visiting the online stores. You go to the [commercial marketplace documentation](https://docs.microsoft.com/azure/marketplace/overview) to learn more.
+When Microsoft partners add their solutions to the commercial marketplace, one way that customers can find their products and services is by visiting the online stores. You go to the [commercial marketplace documentation](/azure/marketplace/overview) to learn more.
 
 ## Azure Marketplace
 

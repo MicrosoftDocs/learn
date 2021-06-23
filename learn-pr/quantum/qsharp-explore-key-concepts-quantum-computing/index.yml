@@ -18,9 +18,9 @@ abstract: |
 prerequisites: |
   - The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true)
   - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
-  - The [Quantum Development Kit](https://docs.microsoft.com/quantum/quickstarts/install-command-line?view=qsharp-preview&tabs=tabid-vscode?azure-portal=true)
+  - The [Quantum Development Kit](/quantum/quickstarts/install-command-line?tabs=tabid-vscode&azure-portal=true&view=qsharp-preview)
 
-  If you don't have these tools installed, we recommend that you complete the [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) module to get set up and learn the basics.
+  If you don't have these tools installed, we recommend that you complete the [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) module to get set up and learn the basics.
 
   You also need basic knowledge of linear algebra and complex numbers. If you want more background, check out the following
   Python tutorials in the form of Jupyter notebooks. You can run them locally or online.

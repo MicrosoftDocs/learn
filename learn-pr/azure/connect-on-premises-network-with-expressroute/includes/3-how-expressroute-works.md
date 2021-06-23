@@ -51,7 +51,7 @@ When you're using the Azure portal, select **Create a resource** > **Networking*
 | **Provider** | The ExpressRoute provider with which you've registered your subscription.  |
 | **Peering location** | A location enabled by the ExpressRoute provider in which to create your circuit. |
 | **Bandwidth** | Select your bandwidth, from 50 Mbps up to 10 Gbps. Start with a low value. You can increase it later with no interruption to service. However, you can't reduce the bandwidth if you set it too high initially. |
-| **SKU** | Select **Standard** if you have up to 10 virtual networks and only need to connect to resources in the same geopolitical region. Otherwise, select **Premium**. |
+| **SKU** | Select **Standard** if you have up to 10 virtual networks and only need to connect to resources in the same geographical region. Otherwise, select **Premium**. |
 | **Billing model** | Select **Unlimited** to pay a flat fee regardless of usage. Or select **Metered** to pay according to the volume of traffic that enters and exits the circuit.
 | **Subscription** | The subscription you've registered with your ExpressRoute provider. |
 | **Resource group** | The Azure resource group in which to create the circuit. |
@@ -102,7 +102,7 @@ You can configure network security groups and firewall rules to control the traf
 >
 > ![Creating a virtual network gateway with the gateway type set to ExpressRoute](../media/3-create-virtual-network-gateway.png)
 
-Up to 10 virtual networks can be linked to an ExpressRoute circuit, but these virtual networks must be in the same geopolitical region as the ExpressRoute circuit. You can link a single virtual network to four ExpressRoute circuits if necessary. The ExpressRoute circuit can be in the same subscription to the virtual network, or in a different one.
+Up to 10 virtual networks can be linked to an ExpressRoute circuit, but these virtual networks must be in the same geographical region as the ExpressRoute circuit. You can link a single virtual network to four ExpressRoute circuits if necessary. The ExpressRoute circuit can be in the same subscription to the virtual network, or in a different one.
 
 If you're using the Azure portal, you connect a peering to a virtual network gateway as follows:
 

@@ -58,7 +58,7 @@ At this stage, the Azure portal will generate the script you’ll use to onboard
 - For Windows machines, there will be a generated PowerShell script, called **OnboardingScript.ps1**.
 - For Linux machines, the generated script will be a bash script.
 
-For more information on how to manually install the Connected Machine agent on a target machine, see [onboarding non-Azure machines using Azure Arc.](https://docs.microsoft.com/azure/azure-arc/servers/onboard-portal).
+For more information on how to manually install the Connected Machine agent on a target machine, see [onboarding non-Azure machines using Azure Arc.](/azure/azure-arc/servers/onboard-portal).
 
 ### Installing the Connected Machine agent on a Windows server
 
@@ -103,7 +103,7 @@ It's easy to identify each non-Azure device from the available resources, as the
 
 Now that Lamna Healthcare’s Azure virtual machines and non-Azure servers are projected into the Relecloud Azure tenant, they can use Azure Policy to enforce organizational standards. Using the Azure Policy compliance dashboard, Relecloud staff members can evaluate the overall state of the environment. They can drill down to get per-resource, and per-policy granularity. Relecloud can also ensure resource compliance through bulk remediation for existing resources and automatic remediation for the new non-Azure resources.
 
-For more information about Azure Policy see [Governance policy overview](https://docs.microsoft.com/azure/governance/policy/overview).
+For more information about Azure Policy see [Governance policy overview](/azure/governance/policy/overview).
 
 ### Manage hybrid resources for your customers
 

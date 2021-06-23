@@ -18,8 +18,8 @@ All rules associated with device templates that are part of the Trial subscripti
 
 Take your interest further with:
 
-- [Azure IoT Central Documentation](https://docs.microsoft.com/azure/iot-central/)
-- [Build workflows with the IoT Central connector in Microsoft Flow](https://docs.microsoft.com/azure/iot-central/howto-add-microsoft-flow)
+- [Azure IoT Central Documentation](/azure/iot-central/)
+- [Build workflows with the IoT Central connector in Microsoft Flow](/azure/iot-central/howto-add-microsoft-flow)
 
 And look out for additional Learn modules covering IoT Central.
 

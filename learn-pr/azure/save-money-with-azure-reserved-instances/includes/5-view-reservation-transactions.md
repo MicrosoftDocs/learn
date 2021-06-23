@@ -12,7 +12,7 @@ Enterprise Agreement and Microsoft Customer Agreement billing administrators can
 
     [![Example showing reservation transactions](../media/5-reservation-transactions.png)](../media/5-reservation-transactions.png#lightbox)
 
-You can also get reservation transactions using the [Transactions API](https://docs.microsoft.com/rest/api/consumption/reservationtransactions/list).
+You can also get reservation transactions using the [Transactions API](/rest/api/consumption/reservationtransactions/list).
 
 ## Reservation transactions using Power BI
 
@@ -34,4 +34,4 @@ Enterprise Agreement and Microsoft Customer Agreement customers can get the purc
 
 1. Select all records where **Publisher** = **Azure**.
 
-You can also get usage details data [using APIs](https://docs.microsoft.com/azure/cost-management-billing/reservations/understand-reserved-instance-usage-ea#get-azure-consumption-and-reservation-usage-data-using-api).
+You can also get usage details data [using APIs](/azure/cost-management-billing/reservations/understand-reserved-instance-usage-ea#get-azure-consumption-and-reservation-usage-data-using-api).

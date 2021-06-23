@@ -100,7 +100,7 @@ Identify the subtasks of *Create custom roles for Azure resources with role-base
 
 ## Notes
 
-- Use this as the base of the solution for the scenario: [Create custom roles for Azure resources using Azure CLI](https://docs.microsoft.com/azure/role-based-access-control/custom-roles-cli)
+- Use this as the base of the solution for the scenario: [Create custom roles for Azure resources using Azure CLI](/azure/role-based-access-control/custom-roles-cli)
 
 Topics to cover:
 
@@ -108,7 +108,7 @@ Topics to cover:
 1. Difference between Azure AD custom roles and RBAC custom roles. RBAC custom roles are to manage Azure resources.
 1. Who you can assign them to: custom roles can be assigned to users, groups, service principals, or managed identities.
 1. Permissions needed: Owner RBAC role for scope or User Access Administrator RBAC role
-1. For scenario, review VM related built in roles (to see need for custom role): [Built-in roles for Azure resources](https://docs.microsoft.com/en-us/azure/role-based-access-control/built-in-roles). Admins should first try to find a suitable built-in role before trying to create a custom role. You could say that the Virtual Machine Contributor built-in role has more permissions than the employee needs and Virtual Machine Administrator Login does not have enough, so you decide to create a custom role.
+1. For scenario, review VM related built in roles (to see need for custom role): [Built-in roles for Azure resources](/azure/role-based-access-control/built-in-roles). Admins should first try to find a suitable built-in role before trying to create a custom role. You could say that the Virtual Machine Contributor built-in role has more permissions than the employee needs and Virtual Machine Administrator Login does not have enough, so you decide to create a custom role.
 1. Role definition structure and properties
 1. Determine permissions needed based on scenario:
    - Resource provider operations (Actions/NotActions)
@@ -122,7 +122,7 @@ Topics to cover:
    1. Assign to role to user
    1. Test role 
 1. Manage custom roles
-   - [Who can manage](https://docs.microsoft.com/en-us/azure/role-based-access-control/custom-roles#who-can-create-delete-update-or-view-a-custom-role)
+   - [Who can manage](/azure/role-based-access-control/custom-roles#who-can-create-delete-update-or-view-a-custom-role)
    - How you can list, update, and delete custom roles (portal, PowerShell, CLI, REST options)
 1. Exercise for manage custom roles 
    1. View custom role in Azure portal
@@ -136,9 +136,9 @@ about assigning management access with RBAC. That one plans to cover RBAC vs. AD
 
 ## Resources
 
-- [Custom roles for Azure resources - steps to create](https://docs.microsoft.com/en-us/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role)
-- [Role properties](https://docs.microsoft.com/en-us/azure/role-based-access-control/custom-roles#custom-role-properties)
-- [Understand role definitions for Azure resources](https://docs.microsoft.com/azure/role-based-access-control/role-definitions)
-- [Tutorial: Create a custom role for Azure resources using Azure PowerShell](https://docs.microsoft.com/azure/role-based-access-control/tutorial-custom-role-powershell)
-- [Tutorial: Create a custom role for Azure resources using Azure CLI](https://docs.microsoft.com/azure/role-based-access-control/tutorial-custom-role-cli)
-- Related module: [Secure your Azure resources with role-based access control (RBAC)](https://docs.microsoft.com/learn/modules/secure-azure-resources-with-rbac)
+- [Custom roles for Azure resources - steps to create](/azure/role-based-access-control/custom-roles#steps-to-create-a-custom-role)
+- [Role properties](/azure/role-based-access-control/custom-roles#custom-role-properties)
+- [Understand role definitions for Azure resources](/azure/role-based-access-control/role-definitions)
+- [Tutorial: Create a custom role for Azure resources using Azure PowerShell](/azure/role-based-access-control/tutorial-custom-role-powershell)
+- [Tutorial: Create a custom role for Azure resources using Azure CLI](/azure/role-based-access-control/tutorial-custom-role-cli)
+- Related module: [Secure your Azure resources with role-based access control (RBAC)](/learn/modules/secure-azure-resources-with-rbac)

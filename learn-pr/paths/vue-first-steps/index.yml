@@ -19,7 +19,7 @@ summary: |
     - Work with forms and events.
     - Create components by using Vue CLI.
 prerequisites: HTML/CSS, Git, npm, and JavaScript
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/vue-first-steps.svg
 levels:
 - intermediate
 roles:

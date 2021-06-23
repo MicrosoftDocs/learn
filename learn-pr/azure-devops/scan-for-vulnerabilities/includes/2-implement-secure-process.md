@@ -38,11 +38,11 @@ You see the OWASP Top Ten in action when you scan the _Space Game_ project later
 
 ### Roslyn analyzers
 
-Roslyn refers to the .NET Compiler Platform. [Roslyn analyzers](https://docs.microsoft.com/visualstudio/code-quality/roslyn-analyzers-overview) highlight potential problems in your code. Categories include code style, quality and maintainability, and design.
+Roslyn refers to the .NET Compiler Platform. [Roslyn analyzers](/visualstudio/code-quality/roslyn-analyzers-overview) highlight potential problems in your code. Categories include code style, quality and maintainability, and design.
 
 You can run Roslyn analyzers from Visual Studio or from the command line. The following image shows an example of running the Roslyn analyzers on the _Space Game_ web project from Visual Studio.
 
-![Screenshot of Visual Studio showing a run of Roslyn analyzers with two unused variable declaration warnings.](../media/2-roslyn-results.png)
+:::image type="content" source="../media/2-roslyn-results.png" alt-text="A screenshot of Visual Studio showing a run of Roslyn analyzers with two unused variable declaration warnings.":::
 
 ### SonarCloud
 
@@ -56,7 +56,7 @@ SonarCloud works with programming languages like Java, C++, C#, and Python. Sona
 
 When the analysis completes, SonarCloud can upload the results so that they're available from its web interface. Here's an example that shows the summary for an analysis run on the _Space Game_ web project.
 
-![Screenshot of SonarCloud analysis summary showing 1 bug (B rating), 4 vulnerabilities (B rating), 4 code smells (A rating), and 11.5 percent coverage.](../media/3-sonar-scan-summary.png)
+:::image type="content" source="../media/3-sonar-scan-summary.png" alt-text="A screenshot of SonarCloud analysis summary showing 1 bug (B rating), 4 vulnerabilities (B rating), 4 code smells (A rating), and 11.5 percent coverage.":::
 
 You can select a category to learn more about the potential bugs or vulnerabilities the scan discovered.
 

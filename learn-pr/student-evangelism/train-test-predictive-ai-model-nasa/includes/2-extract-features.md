@@ -11,3 +11,6 @@ In the following photo, we see filters move over an image to extract features li
 We'll use 32 filters to classify the rocks in our model, but more filters are available.
 
 :::image type="content" source="../media/filters.gif" alt-text="Dynamic diagram that demonstrates the application of a filter." loc-scope="Azure":::
+
+> *Visualization credit: Grant Sanderson, https://www.3blue1brown.com/.*
+

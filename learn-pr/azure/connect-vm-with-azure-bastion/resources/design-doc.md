@@ -151,7 +151,7 @@ https://docs.microsoft.com/azure/bastion/bastion-overview. Include process steps
 
    Monitor sessions - what, why, & how. Reference: https://docs.microsoft.com/azure/bastion/session-monitoring
 
-   Include from [FAQ](https://docs.microsoft.com/azure/bastion/bastion-faq):
+   Include from [FAQ](/azure/bastion/bastion-faq):
    - Limit for how many connections can be monitored. 25 per RDP connection & 50 for SSH.
    - Workaround: Add one bastion per vNet or create & move to another vNet.
    - Do not include in content but at the end of calendar year will be able to scale # of connections. Will need work item to update content then.

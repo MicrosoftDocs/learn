@@ -27,7 +27,7 @@ Mara shows Andy the updated build configuration on Azure Pipelines. Andy likes w
 
 ## Review the new unit test
 
-Andy's latest feature involves the leaderboard. He needs to get the number of scores from the database, so he decides to write a unit test to verify the ``IDocumentDBRepository`1.GetItemsAsync`` method.
+Andy's latest feature involves the leaderboard. He needs to get the number of scores from the database, so he decides to write a unit test to verify the `IDocumentDBRepository<T>.GetItemsAsync` method.
 
 Here's what the test looks like. You don't need to add any code just yet.
 
@@ -81,7 +81,7 @@ As you did earlier, you fetch the `failed-test` branch from GitHub and check out
 
 1. Run these commands to create a local tool manifest file, install the `ReportGenerator` tool, and add the `coverlet.msbuild` package to your tests project:
 
-    ```bash
+    ```dotnetcli
     dotnet new tool-manifest
     dotnet tool install dotnet-reportgenerator-globaltool
     dotnet add Tailspin.SpaceGame.Web.Tests package coverlet.msbuild
@@ -89,7 +89,7 @@ As you did earlier, you fetch the `failed-test` branch from GitHub and check out
 
     You need this step because the `failed-test` branch does not contain the work you added to the `unit-tests` branch.
 
-1. Add your test project file and your tool manifest file to the staging index and commit your changes. 
+1. Add your test project file and your tool manifest file to the staging index and commit your changes.
 
     ```bash
     git add Tailspin.SpaceGame.Web.Tests/Tailspin.SpaceGame.Web.Tests.csproj
@@ -112,7 +112,7 @@ Let's say that Andy was in a hurry and pushed up his work without running the te
 
     You see that the `ReturnRequestedCount` test method fails.
 
-    ![Screenshot of Azure Pipelines dashboard showing output log of an assertion failure on the unit test, expecting 10 but was 9.](../media/7-pipeline-test-failure.png)
+    :::image type="content" source="../media/7-pipeline-test-failure.png" alt-text="A screenshot of Azure Pipelines dashboard showing output log of an assertion failure on the unit test, expecting 10 but was 9.":::
 
     The test passes when the input value is 0, but it fails when the input value is 1 or 10.
 
@@ -124,22 +124,22 @@ In practice, you won't always manually trace the build as it runs. Here are a fe
 
     You can configure Azure DevOps to send you an email notification when the build is complete. The subject line starts with "[Build failed]" when the build fails.
 
-    ![Screenshot of a portion of a build failed email notification.](../media/7-email-notification.png)
+    :::image type="content" source="../media/7-email-notification.png" alt-text="A screenshot of a portion of a build failed email notification.":::
 * **Azure Test Plans**
 
     In Azure DevOps, select **Test Plans**, and then select **Runs**. You see the recent test runs, including the one that just ran. Select the latest completed test. You see that two of the eight tests failed.
 
-    ![Screenshot of Azure DevOps test run outcome showing two of eight failed tests in a ring chart.](../media/7-test-run-outcome.png)
+    :::image type="content" source="../media/7-test-run-outcome.png" alt-text="A screenshot of Azure DevOps test run outcome showing two of eight failed tests as a ring chart.":::
 * **The dashboard**
 
     In Azure DevOps, select **Overview**, and then select **Dashboards**. You see the failure appear in the **Test Results Trend** widget. The **Code Coverage** widget is blank, which indicates that code coverage was not run.
 
-    ![Screenshot of Azure DevOps dashboard trend chart widget showing two failed test in the last test run.](../media/7-dashboard-failed-test.png)
+    :::image type="content" source="../media/7-dashboard-failed-test.png" alt-text="A screenshot of Azure DevOps dashboard trend chart widget showing two failed test in the last test run.":::
 * **The build badge**
 
     Although the `failed-test` branch doesn't include the build badge in the *README.md* file, here's what you would see on GitHub when the build fails:
 
-    ![Screenshot of Azure Pipelines build badge on GitHub indicating a failure.](../media/7-badge-failed.png)
+    :::image type="content" source="../media/7-badge-failed.png" alt-text="A screenshot of Azure Pipelines build badge on GitHub indicating a failure.":::
 
 ## Analyze the test failure
 
@@ -163,46 +163,50 @@ In this section, you reproduce the failure locally, just like Mara and Andy.
 1. In Visual Studio Code, open the integrated terminal.
 1. In the terminal, run this `dotnet build` command to build the application:
 
-    ```bash
+    ```dotnetcli
     dotnet build --configuration Release
     ```
 
 1. In the terminal, run this `dotnet test` command to run the unit tests:
 
-    ```bash
+    ```dotnetcli
     dotnet test --no-build --configuration Release
     ```
 
     You see the same errors that you saw in the pipeline. Here's part of the output:
 
     ```output
-      X ReturnRequestedCount(10) [6ms]
+    Starting test execution, please wait...
+    A total of 1 test files matched the specified pattern.
+      Failed ReturnRequestedCount(1) [33 ms]
+      Error Message:
+         Expected: 1
+      But was:  0
+    
+      Stack Trace:
+         at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
+       at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+       at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+    
+      Failed ReturnRequestedCount(10) [1 ms]
       Error Message:
          Expected: 10
       But was:  9
-
+    
       Stack Trace:
          at NUnit.Framework.Internal.Commands.TestMethodCommand.Execute(TestExecutionContext context)
-       at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.Execute(TestExecutionContext context)
-       at NUnit.Framework.Internal.Execution.SimpleWorkItem.PerformWork()
-       at NUnit.Framework.Internal.Execution.CompositeWorkItem.RunChildren()
-       at NUnit.Framework.Internal.Execution.CompositeWorkItem.RunChildren()
-       at NUnit.Framework.Internal.Execution.TestWorker.TestWorkerThreadProc()
-       at System.Threading.Thread.ThreadMain_ThreadStart()
-
-
-    Test Run Failed.
-    Total tests: 8
-         Passed: 6
-         Failed: 2
-     Total time: 1.3882 Seconds
+       at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.<>c__DisplayClass1_0.<Execute>b__0()
+       at NUnit.Framework.Internal.Commands.BeforeAndAfterTestCommand.RunTestMethodInThreadAbortSafeZone(TestExecutionContext context, Action action)
+    
+    
+    Failed!  - Failed:     2, Passed:     6, Skipped:     0, Total:     8, Duration: 98 ms
     ```
 
 ### Find the cause of the error
 
 Mara notices that each failed test produces a result that's off by one. For example, when 10 is expected, the test returns 9.
 
-Mara and Andy look at the source code for the method that's being tested, ``LocalDocumentDBRepository`1.GetItemsAsync``. They see this:
+Mara and Andy look at the source code for the method that's being tested, `LocalDocumentDBRepository<T>.GetItemsAsync`. They see this:
 
 ```csharp
 public Task<IEnumerable<T>> GetItemsAsync(
@@ -224,7 +228,7 @@ public Task<IEnumerable<T>> GetItemsAsync(
 
 They examine the file on GitHub and notice that it was recently changed.
 
-![Screenshot of GitHub showing a file diff where a minus one operation was added.](../media/7-github-diff.png)
+:::image type="content" source="../media/7-github-diff.png" alt-text="A screenshot of GitHub showing a file diff where a minus one operation was added.":::
 
 Mara suspects that `pageSize - 1` is returning one fewer results and that this should be just `pageSize`.
 
@@ -267,7 +271,7 @@ In this section, you fix the error by changing the code back to its original sta
 1. Save the file.
 1. In the integrated terminal, build the application.
 
-    ```bash
+    ```dotnetcli
     dotnet build --configuration Release
     ```
 
@@ -277,7 +281,7 @@ In this section, you fix the error by changing the code back to its original sta
 
 1. In the terminal, run the unit tests.
 
-    ```bash
+    ```dotnetcli
     dotnet test --no-build --configuration Release
     ```
 
@@ -285,11 +289,9 @@ In this section, you fix the error by changing the code back to its original sta
 
     ```output
     Starting test execution, please wait...
-
-    Test Run Successful.
-    Total tests: 8
-         Passed: 8
-     Total time: 1.2506 Seconds
+    A total of 1 test files matched the specified pattern.
+    
+    Passed!  - Failed:     0, Passed:     8, Skipped:     0, Total:     8, Duration: 69 ms
     ```
 
 1. In the integrated terminal, add each modified file to the index, commit the changes, and push the branch up to GitHub.
@@ -311,7 +313,7 @@ In this section, you fix the error by changing the code back to its original sta
 
     You can also check out the dashboard to view the updated results trend.
 
-    ![Screenshot of Azure DevOps dashboard trend chart widget showing a return to all tests passing.](../media/7-dashboard-passing-test.png)
+    :::image type="content" source="../media/7-dashboard-passing-test.png" alt-text="A screenshot of Azure DevOps dashboard trend chart widget showing a return to all tests passing.":::
 
 **Andy:** Great! We fixed the build! I'm sorry for breaking it. I was in a hurry and I forgot to run the tests one final time.
 

@@ -24,7 +24,7 @@ Here's a list of what we know about the company's digital estate:
 - Operations management is inconsistent.
   - Patching is inconsistent.
   - Basic datacenter sprawl has datacenter resource consumption at 25 percent over planned targets.
-  - Backup appliances are past storage capacity. Backups for low-priority workloads are local backups only.
+  - Backup appliances has exceeded its storage capacity. Backups for low-priority workloads are local backups only.
   - Active monitoring and optimization are limited to mission critical workloads.
   - The operations team is over-taxed and understaffed.
   - The service now expert on the team left three years ago, shortly after a vendor completed configuration of the configuration management database (CMDB). Since then, there has been no new discovery or mapping of assets.
@@ -63,16 +63,16 @@ Start by identifying your on-premises infrastructure, applications, and dependen
 
 - Review the support and deployment requirements for agent-based dependency analysis for:
 
-  - [VMware VMs](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-vmware?azure-portal=true#dependency-analysis-requirements-agent-based)
-  - [Physical servers](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-physical?azure-portal=true#agent-based-dependency-analysis-requirements)
-  - [Hyper-V VMs](https://docs.microsoft.com/azure/migrate/migrate-support-matrix-hyper-v?azure-portal=true#agent-based-dependency-analysis-requirements)
+  - [VMware VMs](/azure/migrate/migrate-support-matrix-vmware?azure-portal=true#dependency-analysis-requirements-agent-based)
+  - [Physical servers](/azure/migrate/migrate-support-matrix-physical?azure-portal=true#agent-based-dependency-analysis-requirements)
+  - [Hyper-V VMs](/azure/migrate/migrate-support-matrix-hyper-v?azure-portal=true#agent-based-dependency-analysis-requirements)
 - Make sure you:
-  - Have an Azure Migrate project. If you don't, [create](https://docs.microsoft.com/azure/migrate/create-manage-projects?azure-portal=true) one now.
-  - Check that you've [added](https://docs.microsoft.com/azure/migrate/how-to-assess?azure-portal=true) the server assessment tool to the project.
-  - Set up an [Azure Migrate appliance](https://docs.microsoft.com/azure/migrate/migrate-appliance?azure-portal=true) to discover on-premises machines, applications, and data by using an agentless appliance. The appliance discovers on-premises machines, and sends metadata and performance data to the server assessment tool. Set up an appliance for:
-    - [VMware](https://docs.microsoft.com/azure/migrate/how-to-set-up-appliance-vmware?azure-portal=true) VMs
-    - [Hyper-V](https://docs.microsoft.com/azure/migrate/how-to-set-up-appliance-hyper-v?azure-portal=true) VMs
-    - [Physical servers](https://docs.microsoft.com/azure/migrate/how-to-set-up-appliance-physical?azure-portal=true)
+  - Have an Azure Migrate project. If you don't, [create](/azure/migrate/create-manage-projects?azure-portal=true) one now.
+  - Check that you've [added](/azure/migrate/how-to-assess?azure-portal=true) the server assessment tool to the project.
+  - Set up an [Azure Migrate appliance](/azure/migrate/migrate-appliance?azure-portal=true) to discover on-premises machines, applications, and data by using an agentless appliance. The appliance discovers on-premises machines, and sends metadata and performance data to the server assessment tool. Set up an appliance for:
+    - [VMware](/azure/migrate/how-to-set-up-appliance-vmware?azure-portal=true) VMs
+    - [Hyper-V](/azure/migrate/how-to-set-up-appliance-hyper-v?azure-portal=true) VMs
+    - [Physical servers](/azure/migrate/how-to-set-up-appliance-physical?azure-portal=true)
 - Next, you'll use the discovery and assessment tool in Azure Migrate to discover and assess the following for migration to Azure: on-premises VMware VMs, Hyper-V VMs, VMs hosted on other public clouds, and physical servers. The discovery and assessment tool pulls data from the Azure Migrate appliance, which will help you complete the following:
   - Azure readiness: Assesses whether on-premises machines are ready for migration to Azure.
   - Azure sizing: Estimates the size of Azure VMs or number of Azure VMware nodes after migration.
@@ -101,7 +101,7 @@ Along with data discovered via the server assessment tool, you can use your CMDB
 
 ### Dependencies between workloads
 
-After server discovery, you can [analyze dependencies](https://docs.microsoft.com/azure/migrate/concepts-dependency-visualization?azure-portal=true), to visualize and identify cross-server dependencies, and understand optimization strategies for moving interdependent servers to Azure. The visualization helps to understand whether certain machines are in use, or if they can be decommissioned, instead of being migrated. Analyzing dependencies helps ensure that nothing is left behind, and avoid surprise outages during migration. With your application inventory and dependency analysis done, you can create high-confidence groups of servers, and start assessing them.
+After server discovery, you can [analyze dependencies](/azure/migrate/concepts-dependency-visualization?azure-portal=true), to visualize and identify cross-server dependencies, and understand optimization strategies for moving interdependent servers to Azure. The visualization helps to understand whether certain machines are in use, or if they can be decommissioned, instead of being migrated. Analyzing dependencies helps ensure that nothing is left behind, and avoid surprise outages during migration. With your application inventory and dependency analysis done, you can create high-confidence groups of servers, and start assessing them.
 
 :::image type="content" source="../media/concepts-migration-planning/expand-client-group.png" alt-text="Diagram that shows dependency mapping." border="false":::
 
@@ -132,7 +132,7 @@ The performance-based sizing option in Azure Migrate assessments helps you to ri
 
 - **Reserved Instances:** With [Reserved Instances](https://azure.microsoft.com/pricing/reserved-vm-instances/?azure-portal=true), you can significantly reduce costs compared to [pay-as-you-go pricing](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/?azure-portal=true).
 - **Azure Hybrid Benefit:** With [Azure Hybrid Benefit](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/?azure-portal=true), you can bring on-premises Windows Server licenses with active Software Assurance, or Linux subscriptions, to Azure. You can combine this with Reserved Instances options.
-- **Enterprise Agreement:** Azure [Enterprise Agreements (EA)](https://docs.microsoft.com/azure/cost-management-billing/manage/ea-portal-agreements?azure-portal=true) can offer savings for Azure subscriptions and services.
+- **Enterprise Agreement:** Azure [Enterprise Agreements (EA)](/azure/cost-management-billing/manage/ea-portal-agreements?azure-portal=true) can offer savings for Azure subscriptions and services.
 - **Offers:** There are multiple [Azure offers](https://azure.microsoft.com/support/legal/offer-details/?azure-portal=true). For example, [Pay-As-You-Go Dev/Test](https://azure.microsoft.com/pricing/dev-test/?azure-portal=true), or [Enterprise Dev/Test offer](https://azure.microsoft.com/offers/ms-azr-0148p/?azure-portal=true), provide lower rates for dev/test VMs.
 - **VM uptime:** You can review days per month and hours per day in which Azure VMs run. Shutting off machines when they're not in use can reduce your costs.
 - **Target region:** You can create assessments in different regions, to determine whether migrating to a specific region might be more cost effective.
@@ -159,7 +159,7 @@ Here are a few recommendations:
 
     **State** | **Action**
     --- | ---
-    **Azure-ready VMs** | Export the assessment report, and filter all machines with state *Ready for Azure*. This might be the first group of machines that you move to Azure, by using the [Azure Migrate: Server Migration](https://docs.microsoft.com/azure/migrate/migrate-services-overview?azure-portal=true#azure-migrate-server-migration-tool) tool.
+    **Azure-ready VMs** | Export the assessment report, and filter all machines with state *Ready for Azure*. This might be the first group of machines that you move to Azure, by using the [Azure Migrate: Server Migration](/azure/migrate/migrate-services-overview?azure-portal=true#azure-migrate-server-migration-tool) tool.
     **End-of-support operating systems** | Export the assessment report, and filter all machines running Windows Server 2008 R2 or Windows Server 2008. These operating systems are at the end of support, and only Azure provides a free three years of security updates when you migrate them to Azure.
     **SQL Server migration** | Use the database assessment recommendations to migrate databases that are ready for Azure SQL Database. Migrate the databases ready for Azure SQL Database VM.
     **End-of-support software** | Export your application inventory, and filter for any software or extensions that might be reaching end-of-support. Prioritize these applications for migration.
@@ -177,7 +177,7 @@ Before finalizing your migration plan, make sure you consider and mitigate other
 - **Network requirements:** Evaluate network bandwidth and latency constraints, which might cause unforeseen delays and disruptions to migration replication speed.
 - **Testing/post-migration tweaks:** Allow a time buffer to conduct performance and user acceptance testing for migrated applications, or to configure and tweak applications post-migration. For example, you might need to update database connection strings, configure web servers, or perform cut-overs or cleanup.
 - **Permissions:** Review recommended Azure permissions, and server and database access roles and permissions needed for migration.
-- **Training:** Prepare your organization for the digital transformation. A solid training foundation is important for successful organizational change. Check out free training on [Microsoft Learn](https://docs.microsoft.com/learn/azure/?ocid=CM_Discovery_Checklist_PDF&azure-portal=true), including courses on Azure fundamentals, solution architectures, and security. Encourage your team to explore [Azure certifications](https://docs.microsoft.com/learn/certifications/?ocid=CM_Discovery_Checklist_PDF&azure-portal=true).
+- **Training:** Prepare your organization for the digital transformation. A solid training foundation is important for successful organizational change. Check out free training on [Microsoft Learn](/learn/azure/?azure-portal=true&ocid=CM_Discovery_Checklist_PDF), including courses on Azure fundamentals, solution architectures, and security. Encourage your team to explore [Azure certifications](/learn/certifications/?azure-portal=true&ocid=CM_Discovery_Checklist_PDF).
 - **Implementation support:** Get support for your implementation if you need it. Many organizations opt for outside help to support cloud migration. To move to Azure quickly and confidently with personalized assistance, consider an [Azure Expert Managed Service Provider](https://www.microsoft.com/solution-providers/search?cacheId=9c2fed4f-f9e2-42fb-8966-4c565f08f11e&ocid=CM_Discovery_Checklist_PDF&azure-portal=true), or [FastTrack for Azure](https://azure.microsoft.com/programs/azure-fasttrack/?ocid=CM_Discovery_Checklist_PDF&azure-portal=true).
 
 Create an effective cloud migration plan that includes detailed information about the applications you want to migrate, application and database availability, downtime constraints, and migration milestones. The plan considers how long the data copy will take, and includes a realistic buffer for post-migration testing and cut-over activities.

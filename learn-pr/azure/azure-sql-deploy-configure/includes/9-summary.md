@@ -14,27 +14,27 @@ People learn in different ways. With that in mind, a [video series related to th
 
 To learn more about how to migrate to Azure SQL, review the [Azure Database Migration Guide](https://datamigration.microsoft.com). It has custom guidance on how to migrate based on your source and target database. Also consider accessing the resources and support available through the [Azure Migration Program](https://azure.com/amp).  
 
-One part of pre-deployment planning is determining which service tier and size are best for your workload. The Data Migration Assistant tool has a [SKU recommender](https://docs.microsoft.com/sql/dma/dma-sku-recommend-sql-db?view=sql-server-ver15?azure-portal=true) that can help you determine the number of vCores and the size. 
+One part of pre-deployment planning is determining which service tier and size are best for your workload. The Data Migration Assistant tool has a [SKU recommender](/sql/dma/dma-sku-recommend-sql-db?view=sql-server-ver15&azure-portal=true) that can help you determine the number of vCores and the size. 
 
 The hands-on exercises focused on Azure SQL Database. If you want to try out your new deployment and configuration toolbox in Azure SQL Managed Instance, see:
 
-- [Migrate to Azure SQL Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-migrate?azure-portal=true)
-- [Quickstart: Create a managed instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-get-started?azure-portal=true)
-- [Azure SQL Managed Instance pools](https://docs.microsoft.com/azure/sql-database/sql-database-instance-pools-how-to#create-an-instance-pool?azure-portal=true)
+- [Migrate to Azure SQL Managed Instance](/azure/sql-database/sql-database-managed-instance-migrate?azure-portal=true)
+- [Quickstart: Create a managed instance](/azure/sql-database/sql-database-managed-instance-get-started?azure-portal=true)
+- [Azure SQL Managed Instance pools](/azure/sql-database/sql-database-instance-pools-how-to#create-an-instance-pool?azure-portal=true)
 
-You might also want to dive deeper into the resource limits based on service tier and configuration for [SQL Managed Instance](https://docs.microsoft.com/azure/azure-sql/managed-instance/resource-limits?azure-portal=true) and [SQL Database](https://docs.microsoft.com/azure/azure-sql/database/resource-limits-vcore-single-databases?azure-portal=true).
+You might also want to dive deeper into the resource limits based on service tier and configuration for [SQL Managed Instance](/azure/azure-sql/managed-instance/resource-limits?azure-portal=true) and [SQL Database](/azure/azure-sql/database/resource-limits-vcore-single-databases?azure-portal=true).
 
 ### Deploy, verify, and configure
 
-Two common command-line tools for deploying, verifying, and configuring Azure SQL are the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest?azure-portal=true) and [Azure PowerShell](https://docs.microsoft.com/powershell/azure?azure-portal=true). You can also access both of these tools through [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview?azure-portal=true), which is an integrated terminal that supports Bash and PowerShell in the Azure portal.
+Two common command-line tools for deploying, verifying, and configuring Azure SQL are the [Azure CLI](/cli/azure/?view=azure-cli-latest&azure-portal=true) and [Azure PowerShell](/powershell/azure?azure-portal=true). You can also access both of these tools through [Azure Cloud Shell](/azure/cloud-shell/overview?azure-portal=true), which is an integrated terminal that supports Bash and PowerShell in the Azure portal.
 
 #### Data max size
 
-For more information about the difference between data space used, data space allocated, and **Data max size**, see [Manage file space for databases in Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-file-space-management#understanding-types-of-storage-space-for-a-database?azure-portal=true).
+For more information about the difference between data space used, data space allocated, and **Data max size**, see [Manage file space for databases in Azure SQL Database](/azure/sql-database/sql-database-file-space-management#understanding-types-of-storage-space-for-a-database?azure-portal=true).
 
 #### Connectivity to Azure SQL
 
-You can find more information on connectivity for [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-connectivity-architecture?azure-portal=true) and for [Azure SQL Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-connectivity-architecture?azure-portal=true). Upcoming sections and modules will also cover this topic.  
+You can find more information on connectivity for [Azure SQL Database](/azure/sql-database/sql-database-connectivity-architecture?azure-portal=true) and for [Azure SQL Managed Instance](/azure/sql-database/sql-database-managed-instance-connectivity-architecture?azure-portal=true). Upcoming sections and modules will also cover this topic.  
 
 #### Azure Marketplace terms
 
@@ -46,8 +46,8 @@ Resource governance from the Azure side is something new to consider in Azure SQ
 
 #### Job management
 
-To learn more about the differences between SQL Server Agent in SQL Server and in Azure SQL Managed Instance, see [T-SQL differences between SQL Server and Azure SQL Managed Instance](https://docs.microsoft.com/azure/azure-sql/managed-instance/transact-sql-tsql-differences-sql-server#sql-server-agent?azure-portal=true). To learn about elastic jobs for Azure SQL Database, see [Create, configure, and manage elastic jobs](https://docs.microsoft.com/azure/azure-sql/database/elastic-jobs-overview?azure-portal=true).
+To learn more about the differences between SQL Server Agent in SQL Server and in Azure SQL Managed Instance, see [T-SQL differences between SQL Server and Azure SQL Managed Instance](/azure/azure-sql/managed-instance/transact-sql-tsql-differences-sql-server#sql-server-agent?azure-portal=true). To learn about elastic jobs for Azure SQL Database, see [Create, configure, and manage elastic jobs](/azure/azure-sql/database/elastic-jobs-overview?azure-portal=true).
 
 #### Load data
 
-For more information on using Azure Data Factory to load data into Azure SQL Managed Instance and SQL Database, refer to [this documentation page](https://docs.microsoft.com/azure/data-factory/connector-sql-server). Also, [here's a blog](https://techcommunity.microsoft.com/t5/datacat/turbo-boost-data-loads-from-spark-using-sql-spark-connector/ba-p/305523) detailing how to use Spark to load efficiently into Azure SQL.
+For more information on using Azure Data Factory to load data into Azure SQL Managed Instance and SQL Database, refer to [this documentation page](/azure/data-factory/connector-sql-server). Also, [here's a blog](https://techcommunity.microsoft.com/t5/datacat/turbo-boost-data-loads-from-spark-using-sql-spark-connector/ba-p/305523) detailing how to use Spark to load efficiently into Azure SQL.

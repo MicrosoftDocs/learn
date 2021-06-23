@@ -69,7 +69,7 @@ You can see that the value of the `name` property has become the property name, 
 There are limits to how much can be copied. Currently the limit is 800 entries.
 
 > [!IMPORTANT]
-> For more information on the exact limitations, see [Resource iteration in ARM templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/copy-resources).
+> For more information on the exact limitations, see [Resource iteration in ARM templates](/azure/azure-resource-manager/templates/copy-resources).
 
 ## Control the iteration
 

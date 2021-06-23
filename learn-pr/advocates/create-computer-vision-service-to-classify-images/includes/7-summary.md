@@ -9,6 +9,6 @@ As a next step, take some time to make the same calls with your own images. Then
 
 ## Further reading
 
-- [Azure CLI overview](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest)
-- [Azure CLI command reference](https://docs.microsoft.com/cli/azure/reference-index?view=azure-cli-latest)
-- [Computer Vision API reference documentation](https://docs.microsoft.com/azure/cognitive-services/)
+- [Azure CLI overview](/cli/azure/?view=azure-cli-latest)
+- [Azure CLI command reference](/cli/azure/reference-index?view=azure-cli-latest)
+- [Computer Vision API reference documentation](/azure/cognitive-services/)

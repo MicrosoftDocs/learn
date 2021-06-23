@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azure.introduction-to-azure-api-management
+metadata:
+  moduleType: introduction
+  title: Introduction to Azure API Management
+  description: Evaluate whether Azure API Management is appropriate for managing and exposing your organization's APIs
+  ms.date: 06/16/2021
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure API Management
+summary: "Describe how policies, the API gateway, and the developer portal enable developers to use your APIs. Determine the types of deployments for which Azure API Management is a good API lifecycle management solution. "
+abstract: |
+  By the end of this module, you'll be able to:
+    - Evaluate whether Azure API Management is appropriate for managing and exposing your organization's APIs.
+    - Determine how groups, API keys, revisions, and versions give you secure and controlled exposure of your APIs.
+prerequisites: |
+  - Basic knowledge of application programming interfaces, including API concepts such as SOAP, REST, and OpenAPI
+  - Basic knowledge of Azure services such as endpoints, virtual networks, and virtual machines
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - devops-engineer
+  - solution-architect
+products:
+  - azure-api-management
+units:
+- learn.azure.introduction-to-azure-api-management.introduction
+- learn.azure.introduction-to-azure-api-management.what-is-azure-api-management
+- learn.azure.introduction-to-azure-api-management.how-azure-api-management-works
+- learn.azure.introduction-to-azure-api-management.when-to-use-azure-api-management
+- learn.azure.introduction-to-azure-api-management.knowledge-check
+- learn.azure.introduction-to-azure-api-management.summary
+badge:
+  uid: learn.azure.introduction-to-azure-api-management.badge

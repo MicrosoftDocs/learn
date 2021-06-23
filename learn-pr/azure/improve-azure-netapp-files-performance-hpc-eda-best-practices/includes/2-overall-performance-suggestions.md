@@ -1,20 +1,20 @@
-We'll introduce overall performance suggestions regarding reference architecture, client VMs, and network running your EDA applications on Azure NetApp Files.
+In this module, we'll introduce performance suggestions for reference architecture, client VMs, and network when you're running your EDA applications on Azure NetApp Files.
 
-## Gain a high-level understanding of your EDA workload by reviewing a reference architecture
+## Understanding your EDA workload by reviewing a reference architecture
 
-Different EDA tools and chips simulation process may have different reference architecture. The reference architecture below illustrates a generic case how you can use Azure NetApp Files for EDA workloads in both cloud-bursting (hybrid) and fully-on-Azure scenarios.
+The simulation processes for EDA tools and chips might have different reference architectures. The following reference architecture illustrates a generic case for how you can use Azure NetApp Files for EDA workloads in both cloud-bursting (hybrid) and fully-on-Azure scenarios.
 
 ![Diagram of the reference architecture to illustrate how you can use Azure NetApp Files for EDA workloads.](../media/2-overall-performance-suggestions-01.png)
 
-## Suggestions on VNET, Accelerated Networking, and client update
+## Suggestions for virtual networks, accelerated networking, and client updates
 
-Reside your client VMs and Azure NetApp Files to be in the same region and same VNET when possible, so to reduce network latency in between.
+When possible, put your client VMs and Azure NetApp Files in the same region and same virtual network, to reduce network latency in between.
 
-Enable Accelerated Networking on your client VMs if supported, to provide 30+ Gb/s in networking throughput. Accelerated Networking will not only lower the latency from client VMs to Azure NetApp Files, but also boost overall performance especially on Distributed Multi-Scenario Analysis (DMSA) type of simulation.
+Enable accelerated networking on your client VMs if it's supported, to provide 30+ gigabits per second (Gbps) in networking throughput. Accelerated networking will lower the latency from client VMs to Azure NetApp Files. It will also boost overall performance, especially on the distributed multi-scenario analysis (DMSA) type of simulation.
 
-It's always the best practice to run the latest OS patch version available, and updating the NFS utilities to their latest releases to get the newest bug fixes and feature functionality, to optimal performance and system stability.
+It's a best practice to run the latest patch version available for the operating system. You should also update the Network File System (NFS) utilities to their latest releases, to get the newest bug fixes and feature functionality. These updates will help ensure optimal performance and system stability.
 
-For example:
+For example, run these commands:
 
 ```bash
 sudo yum update

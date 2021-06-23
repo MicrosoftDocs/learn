@@ -1,6 +1,6 @@
 The application you're building is a cross-platform mobile app that talks to the Azure Functions to share your location. In this unit, you'll create a blank mobile app using Visual Studio and install a NuGet package that has an API for getting the user's location.
 
-To complete the steps in this unit, you need Xamarin.Forms cross-platform UI toolkit installed in your Visual Studio. If you do not have this already, visit [installing Xamarin](https://docs.microsoft.com/xamarin/get-started/installation/?tabs=windows).
+To complete the steps in this unit, you need Xamarin.Forms cross-platform UI toolkit installed in your Visual Studio. If you do not have this already, visit [installing Xamarin](/xamarin/get-started/installation/?tabs=windows).
 
 ## Create the Xamarin.Forms project
 
@@ -39,7 +39,7 @@ The platform-specific app projects contain the platform-specific code needed to 
 
 ## Adding Xamarin.Essentials
 
-The UWP, Android, and iOS platforms provide numerous similar capabilities that take advantage of the operating system and hardware. Despite these similarities, the APIs are very different. Using these APIs from cross-platform code requires writing platform-specific code in your app projects that you expose to your .NET Standard libraries. [Xamarin.Essentials](https://docs.microsoft.com/xamarin/essentials/?azure-portal=true) is a NuGet package that provides a cross-platform abstraction over a number of these APIs so that you don't need to write platform-specific code. This includes the geolocation APIs that you will use in your app to get the user's location.
+The UWP, Android, and iOS platforms provide numerous similar capabilities that take advantage of the operating system and hardware. Despite these similarities, the APIs are very different. Using these APIs from cross-platform code requires writing platform-specific code in your app projects that you expose to your .NET Standard libraries. [Xamarin.Essentials](/xamarin/essentials/?azure-portal=true) is a NuGet package that provides a cross-platform abstraction over a number of these APIs so that you don't need to write platform-specific code. This includes the geolocation APIs that you will use in your app to get the user's location.
 
 1. Right-click on the `ImHere` solution (the top level solution, not the `ImHere` .NET Standard project) in the Visual Studio Solution Explorer and select *Manage NuGet Packages for Solution...*.
 

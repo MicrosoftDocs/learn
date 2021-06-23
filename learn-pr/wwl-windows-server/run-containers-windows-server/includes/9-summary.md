@@ -6,7 +6,7 @@ You can learn more by reviewing the following documents:
 
 - [Windows container requirements](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/system-requirements?azure-portal=true)
 - [About PackageManagement](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_packagemanagement?view=powershell-7.1?azure-portal=true)
-- [Container host deployment: Windows Server](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/deploy-containers-on-server?azure-portal=true)
+- [Container host deployment: Windows Server](https://techcommunity.microsoft.com/t5/itops-talk-blog/step-by-step-how-to-deploy-a-container-host-with-windows-admin/ba-p/1688026)
 - [What is Docker](https://docs.microsoft.com/dotnet/architecture/microservices/container-docker-introduction/docker-defined?azure-portal=true)
 - [Microsoft syndicates container catalog (mcr.microsoft.com)](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/?azure-portal=true)
 - [Persistent Storage in Containers](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/persistent-storage?azure-portal=true)

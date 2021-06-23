@@ -2,7 +2,7 @@ In this exercise, you'll create an Azure Automation account and upload a PowerSh
 
 ## Create a VM
 
-Start by deploying a new VM from a Windows Server 2016 image.
+Start by deploying a new VM from a Windows Server 2019 image.
 
 1. In Azure Cloud Shell, run the following commands to create a username and generate a random password.
 
@@ -54,20 +54,22 @@ Start by deploying a new VM from a Windows Server 2016 image.
 
 1. Use your Microsoft Learn account to sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the **Search the Marketplace** text box, enter **Automation**, and press <kbd>Enter</kbd>.
+1. In the **Search the Marketplace** text box, enter **Automation**, and press <kbd>Enter</kbd> to view the search results.
+
+1. In the "Automation" search results, select the **Automation** Azure service published by Microsoft.
 
 1. Select **Create** on the **Automation** item. The **Add Automation Account** pane appears.
 
-1. Enter the following property values. The automation account must have a unique name. We suggest using something like *\[*your name or initials*\]-automation-account*. Use this name wherever you see *\[your-automation-account-name\]* in this exercise.
+1. Enter the following values for each setting. The automation account must have a unique name. We suggest using something like *\[*your name or initials*\]-automation-account*. Use this name wherever you see *\[your-automation-account-name\]* in this exercise.
 
     | Setting  | Value  |
     |---|---|
     | Name | *\[your-automation-account-name\]* |
     | Subscription | Concierge Subscription  |
-    | Resource Group | Select existing resource group associated with Concierge Subscription |
-    | Location | The default location |
+    | Resource group | Select existing resource group associated with Concierge Subscription |
+    | Location | Default location |
 
 1. Ignore the message about permissions for the Run as account. You don't need it to be created as a Run As account in Azure Active Directory.
 
@@ -100,12 +102,12 @@ Start by deploying a new VM from a Windows Server 2016 image.
     }
     ```
 
-1. Select <kbd>Ctrl+S</kbd> to save the file. Then select <kbd>Ctrl+Q</kbd> to close the editor.
+1. Select <kbd>Ctrl+S</kbd> to save the file. Then, select <kbd>Ctrl+Q</kbd> to close the editor.
 
-1. Run the following PowerShell command to upload your DSC script into your Azure Automation account:
+1. Run the following PowerShell command to upload your DSC script into your Azure Automation account. Replace the placeholder automation account name with the name you used to create the automation account.
 
     ```powershell
-    Import-AzureRmAutomationDscConfiguration `
+    Import-AzAutomationDscConfiguration `
         -AutomationAccountName [your-automation-account-name] `
         -ResourceGroupName <rgn>[Sandbox resource group name]</rgn> `
         -SourcePath $HOME/MyDscConfiguration.ps1 `
@@ -161,17 +163,17 @@ If you needed to add modules, in your automation account you would go to **Share
 
 ## Register the VM with your Azure Automation account
 
-1. On the **State configuration (DSC)** pane, select **Nodes** > **Add**.
+1. On the **State configuration (DSC)** pane for the *Automation Account*, in the left menu pane, under **Configuration Management**, select **Nodes** > **Add**.
 
     ![Screenshot of the Azure portal, showing the Nodes pane](../media/4-nodes.png)
 
 1. On the **Virtual Machines** pane, select the VM you created at the start of this unit, **myVM**.
 
-1. On the **myVM** pane, select **+ Connect**.
+1. On the **myVM** pane, select **Connect**.
 
     ![Screenshot of the Azure portal, showing the Virtual Machines pane](../media/4-add-vm.png)
 
-1. On the **Registration** pane, enter the following values, and then select **OK**.
+1. On the **Registration** pane, enter the following values for each setting, and then select **OK**.
 
     | Setting  | Value  |
     |---|---|
@@ -183,7 +185,7 @@ If you needed to add modules, in your automation account you would go to **Share
     | Reboot Node if Needed | Select |
     | Action after Reboot | ContinueConfiguration |
 
-1. Wait until the VM is connected, and then close the **myVM** pane.
+1. Wait until the VM is connected, and then close the **myVM** pane. This process might take a few minutes.
 
 1. Close the **Virtual Machines** pane.
 

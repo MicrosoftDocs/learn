@@ -56,7 +56,7 @@ let newManager: ManagementEmployee = {
 };
 ```
 
-You can learn more about interfaces in the [Implement interfaces in TypeScript](https://docs.microsoft.com/learn/modules/typescript-implement-interfaces/) module.
+You can learn more about interfaces in the [Implement interfaces in TypeScript](/learn/modules/typescript-implement-interfaces/) module.
 
 ## Literal types
 

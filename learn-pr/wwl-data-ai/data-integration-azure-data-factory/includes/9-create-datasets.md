@@ -40,8 +40,9 @@ The following table describes properties in the above JSON:
 
 In this procedure, you create two datasets: InputDataset and OutputDataset. These datasets are of type Binary. They refer to the Azure Storage linked service named AzureStorageLinkedService. The input dataset represents the source data in the input folder. In the input dataset definition, you specify the blob container (adftutorial), the folder (input), and the file (emp.txt) that contain the source data. The output dataset represents the data that's copied to the destination. In the output dataset definition, you specify the blob container (adftutorial), the folder (output), and the file to which the data is copied.
 
-1. Create a JSON file named InputDataset.json in the C:\ADFv2QuickStartPSH folder, with the following content:
+1. In your desktop, create a folder named ADFv2QuickStartPSH in your C drive.
 
+1. Create a JSON file named InputDataset.json in the C:\ADFv2QuickStartPSH folder with the following content:
      ```JSON
        {
            "name": "InputDataset",

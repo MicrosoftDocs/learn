@@ -16,18 +16,18 @@ You can optionally set up virtual networks and geo-redundancy during account cre
 
 ## Create an Azure Cosmos DB account in the portal
 
-1. Sign into the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
     > [!IMPORTANT]
     > Log in to the Azure portal using the link at the beginning of this exercise to ensure you are connected to the sandbox, which provides access to a Concierge Subscription.
 
-1. On the Azure portal menu, select **Create a resource**.
+1. On the Azure portal menu, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
    ![Create a resource from Azure portal menu](../media/2-create-a-resource-azure-cosmos-db.png)
 
-1. Select **Databases**, and then select **Azure Cosmos DB**. The **Create Azure Cosmos DB Account** pane appears.
+1. In the left menu pane, select **Databases**, and then select **Azure Cosmos DB** under *Popular offers*. The **Select API option** pane appears.
 
-1. Select **Create**.
+1. Select **Create** within the **Core (SQL) - Recommended** box. The **Create Azure Cosmos DB Account - Core (SQL)** pane appears.
 
    ![Select Azure Cosmos DB](../media/2-select-database-azure-cosmos-db.png)
 
@@ -42,7 +42,6 @@ You can optionally set up virtual networks and geo-redundancy during account cre
     | **Resource Group** | *<rgn>[sandbox resource group name]</rgn>* | Here you would either create a new resource group, or select an existing one in your subscription. |
     | **Instance Details** |
     | **Account Name** | *Enter a unique name* | Enter a unique name to identify this Azure Cosmos DB account. Because *documents.azure.com* is appended to the ID that you provide to create your URI, use a unique but identifiable ID. You will use this ID to complete the exercises later in this module.<br><br>The ID can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 31 characters. |
-    | **API** | *Core (SQL)* | The API determines the type of account to create. Azure Cosmos DB provides five APIs to suit the needs of your application: SQL (relational database), Gremlin (graph database), MongoDB (document database), Azure Table, and Cassandra, each of which currently requires a separate account. <br><br>Select *Core (SQL)* because in this module you are creating a document database that is queryable using SQL syntax and accessible with the SQL API. |
     | **Location** | *Select the region closest to you from the following list* | Select the location where the database should be located. |
     | **Capacity mode** | *Provisioned throughput* | This is the default, and there is no need to change it. |
     | **Apply Free Tier Discount** | *Do Not Apply* | The free tier is not necessary for this module. |
@@ -71,7 +70,7 @@ You can optionally set up virtual networks and geo-redundancy during account cre
 
     ![Go to resource](../media/2-azure-cosmos-db-go-to-resource.png)
 
-    The portal displays the **Congratulations! Your Azure Cosmos DB account was created** pane.
+    The **Quick start** pane for your Azure Cosmos DB account appears.
 
     ![The Azure portal Notifications pane](../media/2-azure-cosmos-db-account-created.png)
 

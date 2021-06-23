@@ -2,15 +2,15 @@ trigger:
 - '*'
 
 pool:
-  vmImage: 'ubuntu-18.04'
+  vmImage: 'ubuntu-20.04'
   demands:
-    - npm
+  - npm
 
 steps:
 - task: UseDotNet@2
-  displayName: 'Use .NET Core SDK 3.1.300'
+  displayName: 'Use .NET SDK 5.0'
   inputs:
-    version: 3.1.300
+    version: 5.0.203
 
 - task: Npm@1
   displayName: 'Run npm install'

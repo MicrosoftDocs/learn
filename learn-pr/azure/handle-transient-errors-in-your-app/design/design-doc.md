@@ -179,9 +179,9 @@ Libraries:
 
 Comsos DB retry:
 
-- [C#](https://docs.microsoft.com/dotnet/api/microsoft.azure.documents.client.connectionpolicy.retryoptions?redirectedfrom=MSDN&view=azure-dotnet#overloads)
-- [Java](https://docs.microsoft.com/java/api/com.microsoft.azure.cosmosdb.retryoptions?view=azure-java-stable)
-- [Node.JS](https://docs.microsoft.com/javascript/api/%40azure/cosmos/retryoptions?view=azure-node-latest)
+- [C#](/dotnet/api/microsoft.azure.documents.client.connectionpolicy.retryoptions?view=azure-dotnet#overloads)
+- [Java](/java/api/com.microsoft.azure.cosmosdb.retryoptions?view=azure-java-stable)
+- [Node.JS](/javascript/api/%40azure/cosmos/retryoptions?view=azure-node-latest)
 - [MongoDB](https://docs.mongodb.com/manual/core/retryable-writes/#retryable-writes)
 
 ## Additional Comments

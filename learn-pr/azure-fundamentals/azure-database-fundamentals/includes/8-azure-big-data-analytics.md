@@ -18,7 +18,7 @@ Open-source cluster technologies have been developed, over time, to try to deal 
 
 **Azure Synapse Analytics**
 
-[Azure Synapse Analytics](https://docs.microsoft.com/azure/sql-data-warehouse/?azure-portal=true) (formerly Azure SQL Data Warehouse) is a limitless analytics service that brings together enterprise data warehousing and big data analytics. You can query data on your terms by using either serverless or provisioned resources at scale. You have a unified experience to ingest, prepare, manage, and serve data for immediate BI and machine learning needs.
+[Azure Synapse Analytics](/azure/sql-data-warehouse/?azure-portal=true) (formerly Azure SQL Data Warehouse) is a limitless analytics service that brings together enterprise data warehousing and big data analytics. You can query data on your terms by using either serverless or provisioned resources at scale. You have a unified experience to ingest, prepare, manage, and serve data for immediate BI and machine learning needs.
 
 
   :::column-end:::
@@ -37,7 +37,7 @@ Open-source cluster technologies have been developed, over time, to try to deal 
 
 **Azure HDInsight**
 
-[Azure HDInsight](https://azure.microsoft.com/services/hdinsight/?azure-portal=true) is a fully managed, open-source analytics service for enterprises. It's a cloud service that makes it easier, faster, and more cost-effective to process massive amounts of data. You can run popular open-source frameworks and create cluster types such as [Apache Spark](https://docs.microsoft.com/azure/hdinsight/spark/apache-spark-overview?azure-portal=true), [Apache Hadoop](https://docs.microsoft.com/azure/hdinsight/hadoop/apache-hadoop-introduction?azure-portal=true), [Apache Kafka](https://docs.microsoft.com/azure/hdinsight/kafka/apache-kafka-introduction?azure-portal=true), [Apache HBase](https://docs.microsoft.com/azure/hdinsight/hbase/apache-hbase-overview?azure-portal=true), [Apache Storm](https://docs.microsoft.com/azure/hdinsight/storm/apache-storm-overview?azure-portal=true), and [Machine Learning Services](https://docs.microsoft.com/azure/hdinsight/r-server/r-server-overview?azure-portal=true). HDInsight also supports a broad range of scenarios such as extraction, transformation, and loading (ETL), data warehousing, machine learning, and IoT.
+[Azure HDInsight](https://azure.microsoft.com/services/hdinsight/?azure-portal=true) is a fully managed, open-source analytics service for enterprises. It's a cloud service that makes it easier, faster, and more cost-effective to process massive amounts of data. You can run popular open-source frameworks and create cluster types such as [Apache Spark](/azure/hdinsight/spark/apache-spark-overview?azure-portal=true), [Apache Hadoop](/azure/hdinsight/hadoop/apache-hadoop-introduction?azure-portal=true), [Apache Kafka](/azure/hdinsight/kafka/apache-kafka-introduction?azure-portal=true), [Apache HBase](/azure/hdinsight/hbase/apache-hbase-overview?azure-portal=true), [Apache Storm](/azure/hdinsight/storm/apache-storm-overview?azure-portal=true), and [Machine Learning Services](/azure/hdinsight/r-server/r-server-overview?azure-portal=true). HDInsight also supports a broad range of scenarios such as extraction, transformation, and loading (ETL), data warehousing, machine learning, and IoT.
 
 
   :::column-end:::

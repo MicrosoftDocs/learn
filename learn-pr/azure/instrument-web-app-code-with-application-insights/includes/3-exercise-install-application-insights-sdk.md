@@ -6,7 +6,7 @@ In this unit, we'll create a web app and add the Application Insights SDK to it.
 
 To create a web app, we'll use a quickstart template that's included with the ASP.NET Core command-line tools.
 
-Run the following command in the Azure Cloud Shell terminal window on the right.
+Run the following command in Azure Cloud Shell terminal window on the right.
 
 ```bash
 dotnet new mvc -o videowebapp
@@ -16,7 +16,7 @@ dotnet new mvc -o videowebapp
 
 To reference the Application Insights SDK within the app, install the appropriate NuGet packages:
 
-1. In the Cloud Shell, make sure you're in the video app's directory by running the following command.
+1. In Cloud Shell, make sure you're in the video app's directory by running the following command.
 
     ```bash
     cd videowebapp
@@ -32,7 +32,7 @@ To reference the Application Insights SDK within the app, install the appropriat
 
 To initialize the Application Insights SDK, you need to call the `UseApplicationInsights` method in the *Program.cs* file. Perform the following steps.
 
-1. Open the source code for the app in the Cloud Shell editor by running this command.
+1. Open the source code for the app in Cloud Shell editor by running the following command.
 
     ```bash
     code .
@@ -55,33 +55,37 @@ We'll host our app in Azure App Service. Instead of manually creating an Applica
 
 1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. On the Azure portal menu, or from the **Home** page, select **Create a resource**.
+1. On the Azure portal menu, or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. Select **Web**, search for and select **Web App**. Select **Create**.
+1. In the left menu pane, select **Web**, then search for and select **Web App**, and select **Create**. The **Create Web App** pane appears.
 
-1. In the **Web App** window, enter these settings.
+1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting                   | Value    |
     |---------------------------|------------------|
-    | In the **Basics** tab, under **Project Details** section: |
-    | Subscription              | **Concierge Subscription**   |
-    | Resource Group            | Select **Use existing**, and then select **<rgn>Sandbox resource group</rgn>** |
-    | Under **Instance Details** section: |
+    | **Project Details** |
+    | Subscription              | Concierge Subscription   |
+    | Resource Group            | Select **<rgn>Sandbox resource group</rgn>** |
+    | **Instance Details** |
     | Name                      | Choose a unique name. Make a note of it. You'll need it later on. |
     | Publish                   | **Code** |
     | Runtime stack             | **.NET Core 2.1 (LTS)**  |
     | Operating System          | **Windows** |
     | Region                    | Choose location close to you. |
-    | Under **App Service Plan** section: |
+    | **App Service Plan** |
     | Windows plan              | Select **<rgn>Sandbox resource group</rgn>** |
-    | Sku and size              |Select **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1**, and  then select **Apply**.    |
-    | Select **Next : Monitoring** |
-    | Under **Application Insights** section: |
-    | Enable Application Insights      | **Yes**. An alert will appear indicating that your app will be connected to an automatically created Application Insights resource with the same name as the app. |
+    | Sku and size              | Select **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1**, and then select **Apply**.    |
 
-1. Select **Review + create**.
+1. Select **Next : Monitoring**.
 
-1. In the **Create Web App** window, select **Create**.
+1. Enter the following value for the setting.
+
+    | Setting                   | Value    |
+    |---------------------------|------------------|
+    | **Application Insights**  |
+    | Enable Application Insights | **Yes**. An alert will appear indicating that your app will be connected to an automatically created Application Insights resource with the same name as the app. |
+
+1. Select **Review + create** > **Create**.
 
     Creating your App Service web app will take a minute or two. The portal will notify you when it's finished.
 

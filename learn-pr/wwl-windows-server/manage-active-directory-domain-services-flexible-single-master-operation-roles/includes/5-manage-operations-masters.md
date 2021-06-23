@@ -17,8 +17,6 @@ By default, the first domain controller installed in a forest hosts all five rol
 
 You can place all five on a single domain controller, or distribute them across several domain controllers.
 
-By default, the first domain controller installed in a forest hosts all five roles. However, you can transfer these roles after deploying additional domain controllers. When performing operations master-specific changes, you must connect to the domain controller with the role. The five operations master roles have the following distribution:
-
 ### Forest operations masters
 
 A forest has the following operations master roles:

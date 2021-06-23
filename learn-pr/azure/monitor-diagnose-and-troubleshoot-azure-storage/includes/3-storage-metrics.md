@@ -86,7 +86,7 @@ If you have chosen to capture metrics by API, you'll see aggregated data for eac
 
  ![Screenshot of the Azure Storage Explorer showing the hourly statistics captured for the blob service in a storage account](../media/3-Azure-Storage-Explorer.png)
 
-For a description of the metrics gathered by Storage Analytics, visit [Storage Analytics Logged Operations and Status Messages](https://docs.microsoft.com/rest/api/storageservices/storage-analytics-logged-operations-and-status-messages).
+For a description of the metrics gathered by Storage Analytics, visit [Storage Analytics Logged Operations and Status Messages](/rest/api/storageservices/storage-analytics-logged-operations-and-status-messages).
 
 ## Analyze Storage Analytics metrics
 

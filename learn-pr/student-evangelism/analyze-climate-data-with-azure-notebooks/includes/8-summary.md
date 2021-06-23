@@ -8,5 +8,5 @@ Check out the Azure Notebooks home page for additional sample notebooks, and use
 ## Learn more
 
 - [Azure Notebooks Web site](https://notebooks.azure.com/)
-- [Azure Notebooks documentation](https://docs.microsoft.com/azure/notebooks/)
+- [Azure Notebooks documentation](/azure/notebooks/)
 - [Azure Notebooks samples](https://github.com/Microsoft/AzureNotebooks)

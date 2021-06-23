@@ -10,7 +10,7 @@ Only the following types of subscriptions support reservation purchases:
 - Pay-As-You-Go subscription (Azure offers MS-AZR-0003P or MS-AZR-0023P)
 - Microsoft Customer Agreement subscription
 
-Cloud solution providers can use the Azure portal or [Partner Center](https://docs.microsoft.com/partner-center/azure-reservations) to purchase Azure reservations, or they can enable their customers to buy reservations from the Azure portal. 
+Cloud solution providers can use the Azure portal or [Partner Center](/partner-center/azure-reservations) to purchase Azure reservations, or they can enable their customers to buy reservations from the Azure portal. 
 
 Enterprise Agreement (EA) admins can limit purchases by disabling the **Add Reserved Instances** option in the EA portal. Disabling the option prevents everyone except EA admins from purchasing reservations.
 

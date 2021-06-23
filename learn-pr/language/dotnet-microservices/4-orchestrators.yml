@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.dotnet-microservices.orchestrators
+title: Microservices orchestration
+metadata:
+  title: Microservices orchestration
+  description: Deploy microservices using container orchestration.
+  ms.date: 05/07/2021
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-orchestrators.md)]
+quiz:
+  questions:
+  - content: "What is one use case for an orchestrator?"
+    choices:
+    - content: "To scale out and manage complex distributed systems of microservices."
+      isCorrect: true
+      explanation: "Orchestrators are tools used to manage the hosts on which containers run."
+    - content: "To hold the Docker images in source control."
+      isCorrect: false
+      explanation: "Although docker images can be expressed as text files and thus put into source control, that is not the purpose of orchestrators."
+    - content: "To automate security penetration testing."
+      isCorrect: false
+      explanation: "Orchestrators can keep tabs on overall health, but are not meant for security testing."    
+  - content: "Which language is an docker compose file written in."
+    choices:
+    - content: "C#"
+      isCorrect: false
+      explanation: "C# is a language that you may choose to write your microservice in."
+    - content: "YAML"
+      isCorrect: true
+      explanation: "YAML is the language that docker compose files are written in."
+    - content: "JSON"
+      isCorrect: false
+      explanation: "Docker compose files are not written in JSON."

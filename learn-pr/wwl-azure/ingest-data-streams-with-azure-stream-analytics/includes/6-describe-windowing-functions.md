@@ -1,8 +1,8 @@
 Windowing functions are operations performed against the data contained within a temporal or time-boxed window. A window contains event data along a timeline. Using windowing provides a way to aggregate events over various time intervals depending on specific window definitions.
 
-In applications that process real-time events, time-boxed computations or aggregations, such as counting the number of times an event happens during a particular period, are a frequently used pattern. The ability to easily query time segments is a fundamental necessity for event-processing systems. Azure Stream Analytics includes native support for [five kinds of temporal windowing functions](https://docs.microsoft.com/stream-analytics-query/windowing-azure-stream-analytics). These functions enable you to develop powerful, real-time analytics solutions using a straightforward, declarative [SQL-like language](https://docs.microsoft.com/stream-analytics-query/stream-analytics-query-language-reference) with embedded support for temporal logic.
+In applications that process real-time events, time-boxed computations or aggregations, such as counting the number of times an event happens during a particular period, are a frequently used pattern. The ability to easily query time segments is a fundamental necessity for event-processing systems. Azure Stream Analytics includes native support for [five kinds of temporal windowing functions](/stream-analytics-query/windowing-azure-stream-analytics). These functions enable you to develop powerful, real-time analytics solutions using a straightforward, declarative [SQL-like language](/stream-analytics-query/stream-analytics-query-language-reference) with embedded support for temporal logic.
 
-The supported windowing functions are [Tumbling](https://docs.microsoft.com/stream-analytics-query/tumbling-window-azure-stream-analytics), [Hopping](https://docs.microsoft.com/stream-analytics-query/hopping-window-azure-stream-analytics), [Sliding](https://docs.microsoft.com/stream-analytics-query/sliding-window-azure-stream-analytics), [Session](https://docs.microsoft.com/stream-analytics-query/session-window-azure-stream-analytics), and [Snapshot](https://docs.microsoft.com/stream-analytics-query/snapshot-window-azure-stream-analytics).
+The supported windowing functions are [Tumbling](/stream-analytics-query/tumbling-window-azure-stream-analytics), [Hopping](/stream-analytics-query/hopping-window-azure-stream-analytics), [Sliding](/stream-analytics-query/sliding-window-azure-stream-analytics), [Session](/stream-analytics-query/session-window-azure-stream-analytics), and [Snapshot](/stream-analytics-query/snapshot-window-azure-stream-analytics).
 
 ## Tumbling
 
@@ -10,7 +10,7 @@ The supported windowing functions are [Tumbling](https://docs.microsoft.com/stre
 
 ![The diagram illustrates a stream with a series of events mapped into 10-minute tumbling windows.](../media/tumble-window.png "Tumbling windows")
 
-The Tumbling window example, represented by the query below, counts the number of times each event occurs during a 10-minute window. Windowing functions are applied in Stream Analytics jobs using the [GROUP BY](https://docs.microsoft.com/stream-analytics-query/group-by-azure-stream-analytics) clause of the query syntax. The `GROUP BY` clause in the query below contains the `TumblingWindow()` function, which specifies a 10-minute window size.
+The Tumbling window example, represented by the query below, counts the number of times each event occurs during a 10-minute window. Windowing functions are applied in Stream Analytics jobs using the [GROUP BY](/stream-analytics-query/group-by-azure-stream-analytics) clause of the query syntax. The `GROUP BY` clause in the query below contains the `TumblingWindow()` function, which specifies a 10-minute window size.
 
 ```sql
 SELECT EventName, COUNT(*) AS Count
@@ -81,7 +81,7 @@ The query above also defines a partitioning key of `Username`. Partition keys re
 
 ## Snapshot
 
-**Snapshot** windows groups events by identical timestamp values. Unlike other windowing types, a specific window function (such as [SessionWindow()](https://docs.microsoft.com/stream-analytics-query/session-window-azure-stream-analytics), is not required. You can employ a snapshot window by adding `System.Timestamp()` to your query's `GROUP BY` clause.
+**Snapshot** windows groups events by identical timestamp values. Unlike other windowing types, a specific window function (such as [SessionWindow()](/stream-analytics-query/session-window-azure-stream-analytics), is not required. You can employ a snapshot window by adding `System.Timestamp()` to your query's `GROUP BY` clause.
 
 ![The diagram illustrates a stream with a series of events mapped into snapshot windows.](../media/snapshot-window.png "Snapshot windows")
 

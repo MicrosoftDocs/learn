@@ -1,4 +1,4 @@
-There are a lot of elements to a real-time service deployment, including the trained model, the runtime environment configuration, the scoring script, the container image, and the container host. Troubleshooting a failed deployment, or an error when consuming a deployed service can be complex.
+There are a lot of elements to a real-time service deployment, including the trained model, the runtime environment configuration, the scoring script, the container image, and the container host. Troubleshooting a failed deployment or an error when consuming a deployed service can be complex.
 
 ## Check the service state
 
@@ -27,7 +27,7 @@ If a service is not healthy, or you are experiencing errors when using it, you c
 print(service.get_logs())
 ```
 
-The logs include detailed information about the provisioning of the service, and the requests it has processed; and can often provide an insight into the cause of unexpected errors.
+The logs include detailed information about the provisioning of the service, and the requests it has processed. They can often provide an insight into the cause of unexpected errors.
 
 ## Deploy to a local container
 

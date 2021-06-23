@@ -195,4 +195,4 @@ Here are a few ways you can get a starter template:
 
 No matter your approach, writing a template involves working with a text editor. You can bring your favorite editor, but Visual Studio Code's [Azure Resource Manager Tools extension](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) is specially designed for the task of creating templates. This extension makes it easier to navigate your template code and provides autocompletion for many common tasks.
 
-As you explore and write your templates, you'll want to [refer to the documentation](https://docs.microsoft.com/azure/templates?azure-portal=true) to understand what resource types are available and how to use them.
+As you explore and write your templates, you'll want to [refer to the documentation](/azure/templates?azure-portal=true) to understand what resource types are available and how to use them.

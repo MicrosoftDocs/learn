@@ -6,9 +6,9 @@ App Service simplifies managing and controlling your web app in comparison to tr
 
 ## Learn More
 
-- [Continuous deployment to Azure App Service](https://docs.microsoft.com/azure/app-service/deploy-continuous-deployment)
-- [Set up staging environments in Azure App Service](https://docs.microsoft.com/azure/app-service/deploy-staging-slots)
-- [Deploy to Azure App Service using Visual Studio Code](https://docs.microsoft.com/azure/javascript/tutorial-vscode-azure-app-service-node-01)
-- [Deployment FAQs for Web Apps in Azure](https://docs.microsoft.com/azure/app-service/faq-deployment)
-- [App Service on Azure Stack overview](https://docs.microsoft.com/azure-stack/operator/azure-stack-app-service-overview)
-- [Configure deployment sources for App Services on Azure Stack](https://docs.microsoft.com/azure-stack/operator/azure-stack-app-service-configure-deployment-sources)
+- [Continuous deployment to Azure App Service](/azure/app-service/deploy-continuous-deployment)
+- [Set up staging environments in Azure App Service](/azure/app-service/deploy-staging-slots)
+- [Deploy to Azure App Service using Visual Studio Code](/azure/javascript/tutorial-vscode-azure-app-service-node-01)
+- [Deployment FAQs for Web Apps in Azure](/azure/app-service/faq-deployment)
+- [App Service on Azure Stack overview](/azure-stack/operator/azure-stack-app-service-overview)
+- [Configure deployment sources for App Services on Azure Stack](/azure-stack/operator/azure-stack-app-service-configure-deployment-sources)

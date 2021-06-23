@@ -104,7 +104,7 @@ Once the CLI is installed, your first step is to sign in to the Azure subscripti
 1. Enter the command
 
     ```azurecli
-    az account list-locations --query "[].{Region:name}" --out table 
+    az account list-locations --query "[].{Region:name}" --output table 
     ```
 
 1. Once you determine the supported regions, choose the region closest to you, or closest to the location where the resource will be used and create a resource group in that region.  A resource group helps organize your resources and makes management easier.
@@ -118,7 +118,7 @@ Once the CLI is installed, your first step is to sign in to the Azure subscripti
 1. Now that you are on the proper Azure subscription and have created a new resource group in the appropriate region, create a multi-service Cognitive Services resource with the following command,
 
     ```azurecli
-    az cognitiveservices account create --name myMultiCogService --resource-group cog-services-staging --kind CognitiveServices   --sku F0 --location westus --yes
+    az cognitiveservices account create --name myMultiCogService --resource-group cog-services-staging --kind CognitiveServices --sku F0 --location westus --yes
     ```
 
     >[!NOTE]

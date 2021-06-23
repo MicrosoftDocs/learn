@@ -94,10 +94,10 @@ To support our development work, we'll use two scripts with Snowpack. The first 
 
     ```json
     {
-        "scripts": [
+        "scripts": {
             "start": "snowpack dev",
             "build": "snowpack build"
-        ]
+        }
     }
     ```
 

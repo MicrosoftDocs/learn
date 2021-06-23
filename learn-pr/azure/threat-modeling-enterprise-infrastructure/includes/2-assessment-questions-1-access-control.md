@@ -25,4 +25,4 @@ These questions allow you to:
 |**Describe the process used to approve, audit, and manage resource access requests.**|<ul><li>Initial request handling, review process, initial training requirements, and audits.</li><li>Who manages resource access request process?</li></ul>|
 
 > [!TIP]
-> Check out [Azure identity fundamentals](https://docs.microsoft.com/azure/security/fundamentals/identity-management-best-practices) for tips on securing your identity infrastructure.
+> Check out [Azure identity fundamentals](/azure/security/fundamentals/identity-management-best-practices) for tips on securing your identity infrastructure.

@@ -3,7 +3,7 @@ uid: learn.wwl.query-multiple-tables-with-joins
 metadata:
   title: Combine multiple tables with JOINs in T-SQL
   description: "Combine multiple tables with JOINs in T-SQL"
-  ms.date: 05/07/2021
+  ms.date: 05/12/2021
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Write queries that use self joins
 prerequisites: |
   Before starting this module, you should have experience of using Transact-SQL SELECT queries to retrieve and filter data from a table in a database.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/query-multiple-tables-with-transact-sql.svg
 levels:
 - beginner
 roles:

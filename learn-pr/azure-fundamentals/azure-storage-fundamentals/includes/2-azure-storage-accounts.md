@@ -19,4 +19,4 @@ Your storage account will contain all of your Azure Storage data objects, such a
 
 A storage account provides a unique namespace for your Azure Storage data, that's accessible from anywhere in the world over HTTP or HTTPS. Data in this account is secure, highly available, durable, and massively scalable.
 
-For more information, see [Create a storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create?azure-portal=true).
+For more information, see [Create a storage account](/azure/storage/common/storage-account-create?azure-portal=true).

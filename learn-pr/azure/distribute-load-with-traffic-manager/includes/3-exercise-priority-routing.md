@@ -41,7 +41,7 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
         --resource-group <rgn>Sandbox resource group </rgn> \
         --name westus2-vm-nic-pip \
         --query id \
-        --out tsv)
+        --output tsv)
 
     az network traffic-manager endpoint create \
         --resource-group <rgn>Sandbox resource group </rgn> \
@@ -57,7 +57,7 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
         --resource-group <rgn>Sandbox resource group </rgn> \
         --name eastasia-vm-nic-pip \
         --query id \
-        --out tsv)
+        --output tsv)
 
     az network traffic-manager endpoint create \
         --resource-group <rgn>Sandbox resource group </rgn> \
@@ -111,7 +111,7 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
                 --resource-group <rgn>Sandbox resource group </rgn> \
                 --name TM-MusicStream-Priority \
                 --query dnsConfig.fqdn \
-                --out tsv)
+                --output tsv)
     ```
 
     The address for the Traffic Manager profile should match the IP address for the **westus2-vm-nic-pip** public IP assigned to the **westus2-vm** virtual machine.
@@ -123,7 +123,7 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
         --resource-group <rgn>Sandbox resource group </rgn> \
         --name TM-MusicStream-Priority \
         --query dnsConfig.fqdn \
-        --out tsv)
+        --output tsv)
     ```
 
     The code prints out the FQDN in Cloud Shell. You can select the FQDN to open a new browser window or tab.
@@ -172,7 +172,7 @@ In this exercise, you set up Traffic Manager to use the United States endpoint a
                 --resource-group <rgn>Sandbox resource group </rgn> \
                 --name TM-MusicStream-Priority \
                 --query dnsConfig.fqdn \
-                --out tsv)
+                --output tsv)
    ```
 
     The address for the Traffic Manager profile should now match the East Asia web app.

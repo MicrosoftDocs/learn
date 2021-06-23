@@ -71,12 +71,12 @@ In this exercise, you'll explore an Azure Sentinel analytics rule and perform th
 1. In the Azure portal, search for and select Azure Sentinel, and then select the previously created Azure Sentinel workspace.
 2. Open **Azure Sentinel**, on the menu bar, in the **Configuration** section, select **Analytics**.
 3. Open **Azure Sentinel | Analytics**, select **Rule templates.**
-4. In the search field, enter and select **Create incidents based on Azure Security Center alerts**.  
+4. In the search field, enter and select **Create incidents based on Azure Defender alerts**.   
 5. In the details pane, select **Create rule**.
 6. In the **General** pane, observe the name of the analytics rule, and verify that the **Status** of the rule is **Enabled**.
-7. In the **Analytics rule logic** section, verify that in the drop-down menu for the Microsoft security service, **Azure Security Center** is selected.
+7. In the **Analytics rule logic** section, verify that in the drop-down menu for the Microsoft security service, **Azure Defender** is selected.
 8. In the **Filter by severity** section, select **Custom**, and then in the drop-down menu, select **High** and **Medium**.
-9. If you want to further filter the alerts from Azure Security Center, you can add additional text in **Include specific alerts** or **Exclude specific alerts**.
+9. If you want to further filter the alerts from Azure Defender, you can add additional text in **Include specific alerts** or **Exclude specific alerts**.
 10. Select **Next: Review**, and then on the **Review and Create** page, select **Create**.
 
 ### Results

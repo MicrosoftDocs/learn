@@ -40,31 +40,16 @@ Some examples of event handlers within Azure are:
 
 ## Topics and event subscriptions
 
-Topics provide the core mechanism for managing the various events being raised throughout your system's life cycle. Think of them as subject areas that define the topic of a conversation. You can create as many topics as you need in Event Grid to provide the granularity required to manage events in your system.
+Topics provide the core mechanism for managing the various events being raised throughout your system's lifecycle. Think of them as subject areas that define the topic of a conversation. You can create as many topics as you need in Event Grid to provide the granularity required to manage events in your system.
 
 When the topics have been defined, you can subscribe to them. Subscriptions convey which events on a topic you're interested in receiving. These events can then be filtered by type or subject.
 
 ## Subscribe to events
 
-To understand how an event handler subscribes to events, you can create a subscriber. You can use the Azure Logic Apps service as an example subscriber. A logic app is a way of scheduling or orchestrating tasks. It's a solution that you use to orchestrate a set of jobs when a trigger is run.
-
-1. Open your web app in the Azure portal.
-1. Select the **Add Resource** page.
-1. Select **Add** and search for **Logic App**.
-1. Select **Create**.
-
-    ![Create button](../media/2-create-logic-app.png)
-
-1. Name the logic app.
-
-    ![Pane for providing details to create a logic app](../media/2-create-logic-app-name.png)
-
-1. Select the **When an Event Grid resource event occurs** tile.
-
-    ![Tile for configuring a logic app to subscribe to Event Grid](../media/2-eventgrid-event.png)
+To understand how an event handler subscribes to events, you can create a subscriber. You can use the Azure Logic Apps Designer service as an example subscriber. A logic app is a way of scheduling or orchestrating tasks. It's a solution that you use to orchestrate a set of jobs when a trigger is run.
 
 ## Configure connectors and triggers
 
-Now that you have an event handler that deals with an event, you can configure the connectors and triggers associated to it. You can configure the Event Grid connector on the logic app to look for any events of a certain topic. The following screenshot shows the configuration options available on an Event Grid connector. When an event that contains this topic is created, it will trigger the logic app through the Event Grid connector.
+After creating an event handler that deals with an event, you can configure the connectors and triggers associated to it. Using the Logic Apps Designer, you can configure the Event Grid connector on the logic app to look for any events of a certain topic.  When an event that contains this topic is created, it will trigger the logic app through the Event Grid connector.
 
-![Event Grid connector](../media/2-eventgrid-connector.png)
+Let's try an exercise to trigger a logic app by using Event Grid.

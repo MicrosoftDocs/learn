@@ -1,10 +1,11 @@
-Now that you have improved the accessibility of the project data entry and images, it is time to add entry information for the report's and manager's names. You will be using a grid-like system to enter the forenames and surnames. Screen readers attempt to do their best to read back information about controls in the correct order; yet, as user interfaces get more complex, we must remain intentional about how we can support appropriate accessibility ordering.
+Now that you've improved the accessibility of the project data entry and images, it's time to add entry information for the user's and manager's names. You'll use a grid-like system to enter the forenames and surnames. 
+
+Screen readers try their best to read information about controls in the correct order. As user interfaces get more complex, developers must remain intentional about how to support an appropriate accessibility order.
 
 ## Accessibility order for screen reader and keyboard navigation
 
-If an application does not support keyboard accessibility, it can create difficulties to the app's users. You may have experienced something similar when filling out a form online and using your keyboard to move through the data fields. When you press the Tab key, the focus may not always go next to where you expect. We can consider this an error in keyboard accessibility which makes the form and overall app less usable.
+If an application doesn't support keyboard accessibility, it can create difficulties for the app's users. You might have experienced something similar when filling out a form online and using your keyboard to move through the data fields. When you press the Tab key, the focus might not always move to where you expect. You can consider this an error in keyboard accessibility that makes the form and overall app less usable.
 
-The default accessibility order of controls is the same order in which they are listed in XAML, or added to the layout. Furthermore, various layouts may have more factors influencing accessibility order: `StackLayout`'s accessibility order is also based on the `Orientation` and a `Grid`'s accessibility order is also based on the row and column arrangement.
+The default accessibility order of controls is the same order in which they're listed in XAML or added to the layout. Various layouts might have more factors that influence accessibility order. For example, the accessibility order of `StackLayout` is also based on `Orientation`. The accessibility order of `Grid` is also based on the row and column arrangement.
 
-
-We will now take a look at how to optimize our layouts to be more accessible.
+We'll now look at how to optimize our layouts to be more accessible.

@@ -77,6 +77,6 @@ In this module, you created resources using your Azure subscription. You want to
 
 ## Learn More
 
-[Azure Container Registry (ACR) documentation](https://docs.microsoft.com/azure/container-registry/)
+[Azure Container Registry (ACR) documentation](/azure/container-registry/)
 
-[Docker on Azure](https://docs.microsoft.com/azure/docker/)
+[Docker on Azure](/azure/docker/)

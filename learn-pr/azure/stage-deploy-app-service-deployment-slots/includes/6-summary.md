@@ -8,6 +8,6 @@ Use the Azure portal to delete the **mslearn-slots** resource group from your su
 
 ## Learn more
 
-- [Set up staging environments in App Service](https://docs.microsoft.com/azure/app-service/deploy-staging-slots).
-- [Learn about Azure subscriptions, service limits, quotas, and constraints](https://docs.microsoft.com/azure/azure-subscription-service-limits).
-- [Find out more about App Service static IP restrictions](https://docs.microsoft.com/azure/app-service/app-service-ip-restrictions).
+- [Set up staging environments in App Service](/azure/app-service/deploy-staging-slots).
+- [Learn about Azure subscriptions, service limits, quotas, and constraints](/azure/azure-subscription-service-limits).
+- [Find out more about App Service static IP restrictions](/azure/app-service/app-service-ip-restrictions).

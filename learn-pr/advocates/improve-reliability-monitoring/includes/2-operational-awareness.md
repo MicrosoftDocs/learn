@@ -60,7 +60,7 @@ to iterate if and when we have reliability improving updates to make. It
 can also be a really useful indicator of work that we could be doing that
 will make a real difference.
 
-## Azure Tools for Operational Awareness
+## Azure Tools for operational awareness
 
 Gaining operational awareness is often not easy, but we are going to look
 at a few tools provided by Azure that can assist with the process. This
@@ -139,7 +139,7 @@ going to explore how you construct, edit and use dashboards. That is
 largely done by pinning content from other places in the portal and then
 moving them around as you see fit.
 
-Instead let's look at two dashboard features less commonly used that could
+Instead, let's look at two dashboard features less commonly used that could
 be of real benefit to you. These features can be found at the top of every
 dashboard.
 
@@ -148,7 +148,7 @@ dashboard.
 The two highlighted arrows allow you to upload and download JSON
 representations of dashboards.
 
-First let's start with the download functionality. If we click the down
+First, let's start with the download functionality. If we click the down
 arrow, a JSON file that represents the current dashboard will be downloaded
 to your computer. If you'd like, try this now by logging into the portal,
 choosing "Dashboard" from the product menu, and then click the download
@@ -172,7 +172,7 @@ handy:
     highlight a second period from the same dashboard, let's say an hour in
     the future, it is easy to edit the JSON.
 
-That's the download functionality, now let's focus on the uses for the
+That's the download functionality. Now, let's focus on the uses for the
 upload functionality. Besides being able to load the version-controlled or
 edited files from the last section, we can use the upload functionality to
 make use of other people's careful work when constructing dashboards.
@@ -181,8 +181,8 @@ Let's look at final example for this section that nicely ties together two
 of the ideas from this unit. If you download this JSON file:
 
 [AzureInventoryDashboard.json](https://raw.githubusercontent.com/microsoft/ignite-learning-paths-training-ops/main/ops10/demos/AzureInventoryDashboard.json)
-to your computer and then upload it to a dashboard, you should see
-something like this:
+
+to your computer and then upload it to a dashboard, you should see something like this:
 
 :::image type="content" source="../media/azure-inventory-dashboard.png" alt-text="Dashboard displaying inventory of Azure resources, one resource per tile":::
 

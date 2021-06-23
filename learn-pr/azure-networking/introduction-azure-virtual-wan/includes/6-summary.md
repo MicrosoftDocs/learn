@@ -13,8 +13,8 @@ It's deployed in a well-understood hub-and-spoke architecture. This model suppor
 
 To learn more, refer to the following articles:
 
-- [Virtual WAN documentation](https://docs.microsoft.com/azure/virtual-wan?azure-portal=true)
-- [Migrate to Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/migrate-from-hub-spoke-topology?azure-portal=true)
-- [Global transit network architecture and Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-global-transit-network-architecture?azure-portal=true)
-- [SD-WAN connectivity architecture with Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/sd-wan-connectivity-architecture?azure-portal=true)
-- [What are security partner providers?](https://docs.microsoft.com/azure/firewall-manager/trusted-security-partners?azure-portal=true)
+- [Virtual WAN documentation](/azure/virtual-wan?azure-portal=true)
+- [Migrate to Azure Virtual WAN](/azure/virtual-wan/migrate-from-hub-spoke-topology?azure-portal=true)
+- [Global transit network architecture and Virtual WAN](/azure/virtual-wan/virtual-wan-global-transit-network-architecture?azure-portal=true)
+- [SD-WAN connectivity architecture with Azure Virtual WAN](/azure/virtual-wan/sd-wan-connectivity-architecture?azure-portal=true)
+- [What are security partner providers?](/azure/firewall-manager/trusted-security-partners?azure-portal=true)

@@ -3,7 +3,7 @@ uid: learn.wwl.design-bot-conversation-flow
 metadata:
   title: Create a bot with the Bot Framework SDK
   description: "Learn how to build a bot by using the Microsoft Bot Framework SDK."
-  ms.date: 04/07/2021
+  ms.date: 06/10/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   Before starting this learning path, you will need
   - Familiarity with Microsoft Azure and the Azure portal.
-  - Experience programming with C# or Python. If you are new to programming, consider completing the [Take your first steps with C#](https://docs.microsoft.com/learn/paths/csharp-first-steps/) or [Take your first steps with Python](https://docs.microsoft.com/learn/paths/python-first-steps/) learning path first.
+  - Experience programming with C# or Python. If you are new to programming, consider completing the [Take your first steps with C#](/learn/paths/csharp-first-steps/) or [Take your first steps with Python](/learn/paths/python-first-steps/) learning path first.
 iconUrl: /learn/achievements/design-a-bot-conversation-flow.svg
 levels:
 - intermediate

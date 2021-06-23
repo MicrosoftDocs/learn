@@ -22,4 +22,4 @@ Between the two online stores and the in-product experiences, the commercial mar
 
 The potential to get your products in front of all these people sounds like the opportunity your executive team asked you to find, but you still need to learn more about the online stores. Your company sells solutions that were built with different customer groups in mind, and you need to understand how those solutions would fit into the commercial marketplace.
 
-To determine which online store is best suited for your solutions, you reference the [commercial marketplace documentation](https://docs.microsoft.com/azure/marketplace/overview) to learn more about **Microsoft AppSource** and **Azure Marketplace.**
+To determine which online store is best suited for your solutions, you reference the [commercial marketplace documentation](/azure/marketplace/overview) to learn more about **Microsoft AppSource** and **Azure Marketplace.**

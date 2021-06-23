@@ -16,7 +16,7 @@ Now that you have a resource available in Azure for content moderation, and you 
 
 Scroll down the page and evaluate the response from the testing console.
 
-You'll see the that the email, IP address, phone, and address values are under a JSON array value of PII.  You didn't have to set the PII value to true for this result.
+You'll see that the email, IP address, phone, and address values are under a JSON array value of PII.  You didn't have to set the PII value to true for this result.
 
 ## Run additional tests
 
@@ -34,4 +34,4 @@ You'll see the that the email, IP address, phone, and address values are under a
 1. Study the JSON response and the Request URL syntax to see how your custom applications can call this API.
 
 > [!TIP]
-> To test this API by using a C# application, see [Quickstart: Analyze text content for objectionable material in C#](https://docs.microsoft.com/azure/cognitive-services/content-moderator/text-moderation-quickstart-dotnet).
+> To test this API by using a C# application, see [Quickstart: Analyze text content for objectionable material in C#](/azure/cognitive-services/content-moderator/text-moderation-quickstart-dotnet).

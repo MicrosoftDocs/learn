@@ -21,14 +21,14 @@ In this module, you will:
 
 The modules in this learning path form a progression. To follow the progression from the beginning, be sure to first complete these learning paths:
 
-* [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true)
-* [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true)
+* [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
+* [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
 
-We also recommend you start at the beginning of this learning path: [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops?azure-portal=true). This module picks up where [Automate Docker container deployments with Azure Pipelines](/learn/modules/deploy-docker?azure-portal=true) leaves off.
+We also recommend you start at the beginning of this learning path: [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true). This module picks up where [Automate Docker container deployments with Azure Pipelines](/learn/modules/deploy-docker?azure-portal=true) leaves off.
 
 [!include[](../../shared/includes/project-details-note.md)]
 
-This module also assumes you have basic familiarity with Kubernetes, although that knowledge is not required to complete it. If you are new to the topic, we recommend that you complete the [Administer containers in Azure learning path](/learn/paths/administer-containers-in-azure/?azure-portal=true) learning path first. You'll also find additional resources at this end of this module.
+This module also assumes you have basic familiarity with Kubernetes, although that knowledge is not required to complete it. If you are new to the topic, we recommend that you complete the [Administer containers in Azure learning path](../../../paths/administer-containers-in-azure/index.yml?azure-portal=true) learning path first. You'll also find additional resources at this end of this module.
 
 ## Meet the team
 

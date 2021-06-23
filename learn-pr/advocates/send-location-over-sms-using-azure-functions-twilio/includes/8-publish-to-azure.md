@@ -1,6 +1,6 @@
 The app and Azure Functions are now complete and running locally. In this unit, you'll publish the function to Azure to run in the cloud.
 
-You'll publish your function from Visual Studio. This is a great way to get started for proof-of-concepts, prototypes, and learning, but for a production-quality app you should **not** use this method. You should use some form of CI-based deployment. You can read more about doing this in the [Azure Functions Deployment docs](https://docs.microsoft.com/azure/azure-functions/functions-continuous-deployment?azure-portal=true).
+You'll publish your function from Visual Studio. This is a great way to get started for proof-of-concepts, prototypes, and learning, but for a production-quality app you should **not** use this method. You should use some form of CI-based deployment. You can read more about doing this in the [Azure Functions Deployment docs](/azure/azure-functions/functions-continuous-deployment?azure-portal=true).
 
 ## Publishing your app to Azure
 

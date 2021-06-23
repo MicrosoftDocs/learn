@@ -4,7 +4,7 @@ In this module, we used the Application Insights SDK to generate custom event te
 
 ## Learn more
 
-- [What is Application Insights?](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview)
-- [Log-based and pre-aggregated metrics in Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/pre-aggregated-metrics-log-metrics)
-- [Application Insights API for custom events and metrics](https://docs.microsoft.com/azure/azure-monitor/app/api-custom-events-metrics)
+- [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview)
+- [Log-based and pre-aggregated metrics in Application Insights](/azure/azure-monitor/app/pre-aggregated-metrics-log-metrics)
+- [Application Insights API for custom events and metrics](/azure/azure-monitor/app/api-custom-events-metrics)
 - [Application Insights for ASP.NET Core](https://github.com/Microsoft/ApplicationInsights-aspnetcore)

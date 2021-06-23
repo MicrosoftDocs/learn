@@ -2,4 +2,4 @@ In this module, you compared operating models, evaluated design areas and develo
 
 ## Next steps
 
-Continue to learn about implementation options for Azure landing zones by reviewing the best practices in the [Ready methodology](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/?azure-portal=true) of the Cloud Adoption Framework. Those practices help you to choose how and when to refactor your landing zone to better fit your needs.
+Continue to learn about implementation options for Azure landing zones by reviewing the best practices in the [Ready methodology](/azure/cloud-adoption-framework/ready/?azure-portal=true) of the Cloud Adoption Framework. Those practices help you to choose how and when to refactor your landing zone to better fit your needs.

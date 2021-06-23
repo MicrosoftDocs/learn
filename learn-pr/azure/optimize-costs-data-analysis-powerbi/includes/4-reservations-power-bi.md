@@ -57,7 +57,7 @@ Pricing information in the following image is an example for informational purpo
 
 :::image type="content" source="../media/4-reservations-chargeback.png" alt-text="Screenshot showing the Reservations Chargeback report." lightbox="../media/4-reservations-chargeback.png" :::
 
-For more information about amortized data, see [Get Enterprise Agreement reservation costs and usage](https://docs.microsoft.com/azure/cost-management-billing/reservations/understand-reserved-instance-usage-ea).
+For more information about amortized data, see [Get Enterprise Agreement reservation costs and usage](/azure/cost-management-billing/reservations/understand-reserved-instance-usage-ea).
 
 ## RI Purchases
 

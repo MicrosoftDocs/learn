@@ -118,7 +118,7 @@ To publish a private DNS zone to your virtual network, you specify the list of v
 Private DNS zones have the following benefits:
 
 - There's no need to invest in a DNS solution. DNS zones are supported as part of the Azure infrastructure.
-- All DNS record types are supported: A, CNAME, TXT, MX, SOA, AAAA, PTR, and SVR.
+- All DNS record types are supported: A, CNAME, TXT, MX, SOA, AAAA, PTR, and SRV.
 - Host names for VMs in your virtual network are automatically maintained.
 - Split-horizon DNS support allows the same domain name to exist in both private and public zones. It resolves to the correct one based on the originating request location.
 
