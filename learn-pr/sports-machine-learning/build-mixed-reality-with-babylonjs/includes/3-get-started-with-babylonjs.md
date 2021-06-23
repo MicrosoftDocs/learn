@@ -100,6 +100,8 @@ var createScene = async function () {
   // Create the scene and the camera
   var scene = new Scene(engine);
   var camera = new ArcRotateCamera("cam", -Math.PI / 2, Math.PI / 2, 10, new Vector3(0, -2, 3), scene);
+  camera.wheelDeltaPercentage = 0.01;
+  camera.attachControl(canvas, true);
 
   // Create a basic hemispheric light source and add it to the scene
   var light = new HemisphericLight(
