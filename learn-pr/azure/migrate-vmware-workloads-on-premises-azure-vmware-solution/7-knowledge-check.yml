@@ -43,10 +43,10 @@ quiz:
       explanation: "Port 443 needs to be open between the on-premises HCX Connector and the HCX Cloud Manager environment in Azure VMware Solution."
     - content: "3389"
       isCorrect: false
-      explanation: "Port 3389 is for Remote Desktop Protocol and doesn't have to do with the HCX Connector on-premises routing traffic to the HCX Cloud Manager environment."
+      explanation: "Port 3389 is for Remote Desktop Protocol, and doesn't have to do with the HCX Connector on-premises routing traffic to the HCX Cloud Manager environment."
     - content: "53"
       isCorrect: false
-      explanation: "Port 53 is for DNS and doesn't have to do with the HCX Connector on-premises routing traffic to the HCX Cloud Manager environment."
+      explanation: "Port 53 is for DNS, and doesn't have to do with the HCX Connector on-premises routing traffic to the HCX Cloud Manager environment."
   - content: "Sai can't create a service mesh within HCX. What might be the issue?"
     choices:
     - content: "Check permissions on the subscription and resource group."
