@@ -48,7 +48,7 @@ The `init()` function should go in the `Environment` class in the *environment.t
 ```javascript
     public async init() {
         this.createCharacterButtons();
-        this.addLogo();
+        this.addLegalLine();
     }
 
 ```
