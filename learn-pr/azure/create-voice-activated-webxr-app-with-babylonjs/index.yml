@@ -8,7 +8,7 @@ metadata:
   author: JING1201
   ms.author: t-jinglow
   ms.topic: interactive-tutorial
-title: create-voice-activated-webxr-app-with-babylonjs
+title: Create and deploy a voice activated WebXR app with BabylonJS and Azure Cognitive Services
 summary: Create a voice activated WebXR app using BabylonJS and the Azure Speech-to-text API under Azure Cognitive Services, and then deploy the app using Azure Blob Storage.
 abstract: | 
   By the end of this module, you'll be able to:

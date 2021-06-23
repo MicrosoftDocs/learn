@@ -1,15 +1,6 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Speech-to-text is an Artificial Intelligence-powered technology that accurately converts voice audio to text data in real time. It has become the underlying technology that supports most voice-related systems today. For example, our voice is converted to text whenever we speak to a virtual assistant. The system then process the text data to determine next steps for the virtual assistant. Speech-to-text also powers real-time transcription to make live videos or meetings more accessible to people with hearing impairments.
 
-    Goal: briefly summarize the key skill this unit will teach
-
-    Heading: none
-
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
-
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
-
+In the scenario of the amusement park application, you can recognize the spell being said by matching the text with the text representation of the expected spell.
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
     Goal: Describe the part of the scenario that will be solved by the content in this unit
