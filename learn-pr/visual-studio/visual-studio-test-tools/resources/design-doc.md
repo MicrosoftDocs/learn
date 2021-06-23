@@ -64,7 +64,7 @@ Suppose you are creating a calculator app for school and you've been able to suc
         - The templates come with a pre-written test. Note the 'Assert' line. Assert statements are what decide if your test passes or fails. You can add multiple asserts to any given test. If one assert fails, then the test will fail.
         - Add an assert statement to check if a type in your product code is null.
         - Add an assert statement that causes your test to fail. An example of a failing assert would be asserting IsTrue on a false boolean.
-        - Writing good tests can take a while to learn, just like writing good code. If you would like to learn more about writing good tests, see the [conceptual guidance](TBD).
+        - Writing good tests can take a while to learn, just like writing good code. If you would like to learn more about writing good tests, see the [conceptual guidance](../../visual-studio-test-concepts/resources/design-doc.md).
 
         ```csharp
         Assert.IsTrue(false); // Will fail the test
@@ -151,7 +151,7 @@ Suppose you are creating a calculator app for school and you've been able to suc
 
 ## Notes
 
-There is a wide range of materials and tools out there to help make you a better tester. Check out the [testing conceptual guidance](TBD) to learn more about best practices.
+There is a wide range of materials and tools out there to help make you a better tester. Check out the [testing conceptual guidance](../../visual-studio-test-concepts/resources/design-doc.md) to learn more about best practices.
 
 Ready to find out how tests can improve your entire pipeline? Check out the [automated testing module](https://docs.microsoft.com/learn/modules/run-quality-tests-build-pipeline/2-what-is-automated-testing)
 
