@@ -1,4 +1,4 @@
-Azure Databricks is a fully-managed, cloud-based Big Data and Machine Learning platform, which empowers developers to accelerate AI and innovation by simplifying the process of building enterprise-grade production data applications. Built as a joint effort by the team that started Apache Spark and Microsoft, Azure Databricks provides data science and engineering teams with a single platform for Big Data processing and Machine Learning.
+Azure Databricks is a fully managed, cloud-based Big Data and Machine Learning platform, which empowers developers to accelerate AI and innovation by simplifying the process of building enterprise-grade production data applications. Built as a joint effort by the team that started Apache Spark and Microsoft, Azure Databricks provides data science and engineering teams with a single platform for Big Data processing and Machine Learning.
 
 By combining the power of Databricks, an end-to-end, managed Apache Spark platform optimized for the cloud, with the enterprise scale and security of Microsoft's Azure platform, Azure Databricks makes it simple to run large-scale Spark workloads.
 
@@ -20,7 +20,7 @@ Databricks was founded by the creators of Apache Spark, Delta Lake, and MLflow.
 
 Over 2000 global companies use the Databricks platform across big data & machine learning lifecycle.
 
-**Databricks Vision**: Accelerate innovation by unifying data science, data engineering and business.
+**Databricks Vision**: Accelerate innovation by unifying data science, data engineering, and business.
 
 **Databricks Solution**: Big Data Analytics Platform
 
@@ -40,7 +40,7 @@ Spark is a unified processing engine that can analyze big data using SQL, machin
 ![Spark Engines](../media/spark-4engines.png)
 
 - At its core is the Spark Engine.
-- The DataFrames API provides an abstraction above RDDs while simultaneously improving performance 5-20x over traditional RDDs with its Catalyst Optimizer.
+- The DataFrames API provides an abstraction above Resilient Distributed Datasets (RDDs) while simultaneously improving performance 5-20x over traditional RDDs with its Catalyst Optimizer.
 - Spark ML provides high quality and finely tuned machine learning algorithms for processing big data.
 - The Graph processing API gives us an easily approachable API for modeling pairwise relationships between people, objects, or nodes in a network.
 - The Streaming APIs give us End-to-End Fault Tolerance, with Exactly-Once semantics, and the possibility for sub-millisecond latency.
