@@ -31,6 +31,17 @@ All of the following code should go into the `createScene()` function, because t
   gymFloor.physicsImpostor = new PhysicsImpostor(gymFloor, PhysicsImpostor.PlaneImpostor, { mass: 0, restitution: 1 }, scene);
 ```
 
+Once you have created the `gymFloor`. Make sure you replace the floor mesh in the default XR experience. Find the code:
+
+\```
+// Create the default XR experience
+const xr = await scene.createDefaultXRExperienceAsync({
+  floorMeshes: [env.ground],
+});
+\```
+
+Replace `env.ground` with `gymFloor`.
+
 If you're interested in exploring more details to fine-tune your XR experience, you can [read more about procedural textures](https://doc.babylonjs.com/divingDeeper/materials/using/proceduralTextures?azure-portal=true).
 
 ## Create a PhotoDome background
