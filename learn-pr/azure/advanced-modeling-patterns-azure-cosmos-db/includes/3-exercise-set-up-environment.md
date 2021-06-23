@@ -20,9 +20,9 @@ dotnet run --load-data
 
 In the **database-v2** container, where data is stored in individual containers, run a query to get the product category name, and then view the request charge for that query.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activated the sandbox.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) with the same account you used to activate the sandbox.
 1. On the left pane, select **Azure Cosmos DB**.
-1. Select the Azure Cosmos DB account with the name that starts with, **cosmicworks**.
+1. Select the Azure Cosmos DB account with the name that starts with **cosmicworks**.
 1. On the left pane, select **Data Explorer**.
 1. Expand **database-v2**.
 1. Select the **productCategory** container.
@@ -117,7 +117,7 @@ Last, run a query to return the tags for "ML Headset".
 
     :::image type="content" source="../media/3-product-tag-ml-stats.png" alt-text="Screenshot of the results of our query to the product tag container for 'ML Headset' query stats.":::
 
-## Add up the RU/s charges
+## Add up the RU charges
 
 Now, let's add up all the RU costs from each of the queries you ran.
 
@@ -148,7 +148,7 @@ Let's query for the same information but in the denormalized database.
 
     :::image type="content" source="../media/3-product-query-v2.png" alt-text="Screenshot of the results of the query to the product container in the newly modeled product container." lightbox="../media/3-product-query-v2.png":::
 
-1. Review the data returned in this query. It contains all the information you need to render the products for this category, including the category name and tag names for each of the three products.
+1. Review the data that's returned in this query. It contains all the information you need to render the products for this category, including the category name and tag names for each of the three products.
 
 1. Select the **Query Stats** tab, and note the request charge of 2.9 RUs.
 
