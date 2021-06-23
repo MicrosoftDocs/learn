@@ -16,7 +16,7 @@ Specifically, you learned:
     - Reduce your datacenter footprint 
     - Prepare for disaster recovery and business continuity
     - Modernize your workloads
-- Azure pricing benefits for Azure VMware Solution
+- Pricing for Azure VMware Solution
 
 
 Continue on this path to learn about how to deploy and migrate VMs to Azure VMware Solution.

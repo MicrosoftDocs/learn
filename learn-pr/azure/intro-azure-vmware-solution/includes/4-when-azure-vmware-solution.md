@@ -8,7 +8,7 @@ Let's discuss the scenarios best suited for Azure VMware Solution. The following
 |Business need  |  Description  |
 |---------|---------|
 |Migrate existing assets "as is"    |Take the fast path to the cloud. Replicate existing IT systems, apps, and workloads natively in Azure (also known as a "lift and shift" migration) without needing to change them beforehand.    | 
-|Reduce your datacenter footprint     | If your enterprise wants to get out of the datacenter business, you can use Azure as a way to enable decommissioning legacy infrastructure, after you've brought resources into the cloud.   |
+|Reduce your datacenter footprint     | If your enterprise wants to leave the datacenter business, you can use Azure as a way to enable decommissioning legacy infrastructure, after you've brought resources into the cloud.   |
 |Prepare for disaster recovery and business continuity     |Move your apps to the cloud without disruption to your business. You can also deploy VMware resources on Azure for a primary or secondary on-demand recovery site to provide business continuity for your existing on-premises datacenter resources.      |
 |Modernize your workloads   |  Provide a future path to innovate and expand on the value of cloud investments. At your speed and pace, take advantage of Azure tools and services to modernize your datacenter and applications. |
 

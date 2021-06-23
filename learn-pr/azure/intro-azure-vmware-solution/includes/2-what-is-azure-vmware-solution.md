@@ -18,23 +18,23 @@ The following diagram illustrates the relationship between private clouds and ne
 ### Key features
 Azure VMware Solution provides a comprehensive VMware environment in Azure. It enables your organization to:
 
-**Use existing VMware investments**: There's no need to reskill and learn new tools because the underlying product is the standard VMware vSphere and vCenter products. You can manage your VMware environments without the need to retrain staff or refactor the underlying hypervisors. 
+- **Use existing VMware investments**: There's no need to reskill and learn new tools because the underlying products are the standard VMware vSphere and vCenter products. You can manage your VMware environments without the need to retrain staff or refactor the underlying hypervisors. 
 
-**Create operational consistency for admins**: Operational consistency is created for admins because you continue to use VMware for resources running on Azure, including vSphere Client and NSX-T Manager. Admins have direct access to VMware vSphere interfaces. The Azure portal is used only for deployment and management operations.
+- **Create operational consistency for admins**: Operational consistency is created for admins because you continue to use VMware for resources running on Azure, including vSphere Client and NSX-T Manager. Admins have direct access to VMware vSphere interfaces. The Azure portal is used only for deployment and management operations.
 
-**Maintain operational consistency for the business**: The service can reduce change management and maintain operational consistency for the business. You can use all of your organization's existing investments in:
-- Training
-- Process management
-- Change management
-- Tooling
+- **Maintain operational consistency for the business**: The service can reduce change management and maintain operational consistency for the business. You can use all of your organization's existing investments in:
+  - Training
+  - Process management
+  - Change management
+  - Tooling
 
-You can accelerate migration and minimize downtime by using the latest HCX Enterprise functionality for large-scale, live migration from on-premises to Azure.
+   You can accelerate migration and minimize downtime by using the latest HCX Enterprise functionality for large-scale, live migration from on-premises to Azure.
 
-**Have a single point of support**: Azure VMware Solution is Microsoft developed, operated, and supported. Microsoft is the first and only contact and coordinates support with VMware as required.
+- **Have a single point of support**: Azure VMware Solution is Microsoft developed, operated, and supported. Microsoft is the first and only contact and coordinates support with VMware as required.
 
-**Avoid licensing complexity**: You work with a single vendor for licensing and resource consumption. You can track VMware licensing directly with resource nodes as they're deployed and decommissioned.
+- **Avoid licensing complexity**: You work with a single vendor for licensing and resource consumption. You can track VMware licensing directly with resource nodes as they're deployed and decommissioned.
 
-**Maximize the value of existing Windows Server and SQL Server licenses**: You can use Azure Hybrid Benefit for both Windows Server and SQL Server to bring existing licenses to Azure and reduce costs.
+- **Maximize the value of existing Windows Server and SQL Server licenses**: You can use Azure Hybrid Benefit for both Windows Server and SQL Server to bring existing licenses to Azure and reduce costs.
 
 ### Integration with native Azure services
 
