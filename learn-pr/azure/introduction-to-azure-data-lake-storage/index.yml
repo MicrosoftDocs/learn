@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.introduction-to-azure-data-lake-storage
+uid: learn.intro-to-azure-data-lake-storage
 metadata:
   ms.prod: learning-azure
   moduleType: introduction        
@@ -30,11 +30,11 @@ roles:
 products:
   - azure-data-lake-storage
 units:
-- learn.introduction-to-azure-data-lake-storage.introduction
-- learn.introduction-to-azure-data-lake-storage.what-is-azure-data-lake-storage
-- learn.introduction-to-azure-data-lake-storage.how-azure-data-lake-storage-works
-- learn.introduction-to-azure-data-lake-storage.when-to-use-azure-data-lake-storage
-- learn.introduction-to-azure-data-lake-storage.knowledge-check
-- learn.introduction-to-azure-data-lake-storage.summary
+- learn.intro-to-azure-data-lake-storage.introduction
+- learn.intro-to-azure-data-lake-storage.what-is-azure-data-lake-storage
+- learn.intro-to-azure-data-lake-storage.how-azure-data-lake-storage-works
+- learn.intro-to-azure-data-lake-storage.when-to-use-azure-data-lake-storage
+- learn.intro-to-azure-data-lake-storage.knowledge-check
+- learn.intro-to-azure-data-lake-storage.summary
 badge:
-  uid: learn.introduction-to-azure-data-lake-storage.badge
+  uid: learn.intro-to-azure-data-lake-storage.badge
