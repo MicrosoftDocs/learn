@@ -1,4 +1,4 @@
-In this module, you learned key concepts, techniques and technologies that are used to model and partition data for NoSQL databases, such as Azure Cosmos DB. You applied them to your e-commerce application, which you needed to migrate from a relational database to a NoSQL database. 
+In this module, you learned key concepts, techniques, and technologies that are used to model and partition data for NoSQL databases, such as Azure Cosmos DB. You applied them to your e-commerce application, which you needed to migrate from a relational database to a NoSQL database. 
 
 The concepts you learned about in this module include:
 
