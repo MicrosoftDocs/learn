@@ -10,30 +10,21 @@ This function belongs in the `Environment` class found in the *environment.ts* f
 
 ```javascript
 public addLegalLine() {
-    // Create a GUI that will be full-screen
-    const guiMenu = GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
     guiMenu.idealHeight = 720;
 
-    // Create a rectangle that the image will be added to
-    const imageRect = new GUI.Rectangle("titleContainer");
-    imageRect.thickness = 0;
+    //Creating the legal text box
+    const textRect = new GUI.Rectangle("legalContainer");
+    textRect.color = "white";
+    guiMenu.addControl(textRect);
 
-    // Add the image rectangle to the GUI
-    guiMenu.addControl(imageRect);
+    //Creating the legal text
+    const legal = new GUI.TextBlock("legalText", "© 2021 WBEI TM & ©2021 WarnerMediaDirect, LLC. All Rights Reserved.");
+    legal.height = 0.2;
 
-    // Create the logo with an image
-    const logo = new GUI.Image("", "https://sjanlassets.blob.core.windows.net/assets/SpaceJamANewLegacyLogo.png")
-
-    // Specify the height and width of the photo
-    logo.width = 0.1;
-    logo.height = 0.2;
-
-    // Align the logo to the top and center of the GUI, which is the top and center of the screen
-    logo.verticalAlignment = GUI.Control.VERTICAL_ALIGNMENT_TOP;
-    logo.horizontalAlignment = GUI.Control.HORIZONTAL_ALIGNMENT_CENTER;
-
-    // Add the logo to the image rectangle
-    imageRect.addControl(logo);
+    // Positioning the legal text to the bottom center
+    legal.verticalAlignment = GUI.Control.VERTICAL_ALIGNMENT_BOTTOM;
+    legal.horizontalAlignment = GUI.Control.HORIZONTAL_ALIGNMENT_CENTER;
+    textRect.addControl(legal);
 }
 ```
 
