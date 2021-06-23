@@ -5,7 +5,7 @@ In this unit, you'll configure continuous deployment for the web app and create 
 
 ## Configure continuous deployment and create a webhook
 
-1. Return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and go to the **Container settings** pane of your web app.
+1. Return to the [Azure portal](https://portal.azure.com/?azure-portal=true) and go to the **Container settings** pane of your web app.
 
 1. Set **Continuous Deployment** to **On**, and then select **Save**. This setting configures a webhook that Container Registry uses to alert the web app that the Docker image has changed.
 

@@ -4,7 +4,7 @@ In this exercise, you'll clone one of the agency's projects: a Products Dashboar
 
 ## Clone the sample repo
 
-1.  Ensure that Docker Desktop is running on your machine.
+1.  Ensure that [Docker Desktop](https://www.docker.com/products/docker-desktop) is installed and running on your machine.
 1.  Copy the URL for the sample repo to your clipboard.
 
     ```bash
@@ -26,7 +26,7 @@ The project should now be open in Visual Studio Code.
 
 ### Windows Only : Configure Docker
 
-If you are using Windows and are **not** using the Windows Subsystem For Linux (WSL) backend, you will need to allow Docker to access the sample project through the File Sharing settings.
+If you are using Windows and are **not** using the [Windows Subsystem For Linux (WSL)](https://docs.microsoft.com/windows/wsl/about?WT.mc_id=aiml-24635-ayyonet) backend, you will need to allow Docker to access the sample project through the File Sharing settings.
 
 1. Right-click on the Docker task bar item, select Settings > Resources > File Sharing and add the location where you cloned the sample project in the previous step. This option is not available if you have enabled the WSL 2 back-end.
 
@@ -91,7 +91,7 @@ The container will begin building. The initial build might take a few minutes be
 
 ## Install project dependencies
 
-Run the following command in the terminal to install the Flask dependencies that you need to run the project:
+Run the following command in the terminal to install the [Flask](https://flask.palletsprojects.com/en/2.0.x/) dependencies that you need to run the project:
 
 ```bash
 pip3 install --user -r requirements.txt
@@ -111,6 +111,6 @@ pip3 install --user -r requirements.txt
 
     :::image type="content" source="../media/products-dashboard.jpg" alt-text="Screenshot of the Python Products Dashboard application.":::
 
-Great work! You have a Python web application with Flask running on your machine, and you might not know what those things even are. That's OK! You don't have to. The container takes care of setting up the entire environment.
+Great work! You have a Python web application with [Flask](https://flask.palletsprojects.com/en/2.0.x/) running on your machine, and you might not know what those things even are. That's OK! You don't have to. The container takes care of setting up the entire environment.
 
 You might have noticed in the last notification that Visual Studio Code said: "127.0.0.1:5000 on remote is now forwarded to 127.0.0.1:5000 locally." This is called _port forwarding_, and it's what allows you to access an application running inside the container. In the next section, you'll learn more about port forwarding and how you can use it to make anything in a container feel like it's running locally.

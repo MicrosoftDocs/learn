@@ -16,7 +16,7 @@ With TLS client authentication, the API Management gateway can inspect the certi
 | **Expiration Date** | Only allow certificates that have not expired |
 | | |
 
-These properties are not mutually exclusive and they can be mixed together to form your own policy requirements. For instance, you can specify that the certificate passed in the request is signed by a certain certificate authority and hasn't expired.
+These properties are not mutually exclusive and they can be mixed together to form your own policy requirements. For example, you can specify that the certificate passed in the request is signed by a certain certificate authority and hasn't expired.
 
 Client certificates are signed to ensure that they are not tampered with. When a partner sends you a certificate, verify that it comes from them and not an imposter. There are two common ways to verify a certificate:
 
@@ -25,7 +25,7 @@ Client certificates are signed to ensure that they are not tampered with. When a
 
 ## Accept client certificates in the Consumption tier
 
-The Consumption tier in API Management is designed to conform with serverless design principals. If you build your APIs from serverless technologies, such as Azure Functions, this tier is a good fit. In the Consumption tier, you must explicitly enable the use of client certificates, which you can do on the **Custom domains** page. This step is not necessary in other tiers.
+The Consumption tier in API Management is designed to conform with serverless design principles. If you build your APIs from serverless technologies, such as Azure Functions, this tier is a good fit. In the Consumption tier, you must explicitly enable the use of client certificates, which you can do on the **Custom domains** page. This step is not necessary in other tiers.
 
 ![Configure the gateway to request certificates](../media/5-config-request-certificates.png)
 

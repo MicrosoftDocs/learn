@@ -5,7 +5,7 @@ metadata:
   description: Deploy the smart contract for the to-do list to the Ropsten network.
   ms.date: 01/20/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Deploy to the Ropsten test network
