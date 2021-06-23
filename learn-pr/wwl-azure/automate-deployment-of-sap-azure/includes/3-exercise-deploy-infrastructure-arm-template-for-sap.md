@@ -73,14 +73,6 @@ If you start a deployment of a Marketplace item, you can use and modify the exis
 
 ## Review the updated template 
 
- Review the references for the 5 resource structures:
-
-- [Microsoft.Storage storageAccounts template reference](/azure/templates/Microsoft.Storage/2018-07-01/storageAccounts)
-- [Microsoft.Network publicIPAddresses template reference](/azure/templates/Microsoft.Network/2018-08-01/publicIPAddresses)
-- [Microsoft.Network virtualNetworks template reference](/azure/templates/Microsoft.Network/2018-08-01/virtualNetworks)
-- [Microsoft.Network networkInterfaces template reference](/azure/templates/Microsoft.Network/2018-08-01/networkInterfaces)
-- [Microsoft.Compute virtualMachines template reference](/azure/templates/Microsoft.Network/2018-08-01/virtualNetworks)
-
 Examine the Resource Manager template to get a better understanding of its structure and the resources defined by the template. Below is a section from the top of the template.
 
 ![ARM template with the changes made in the previous steps.](../media/marketplace-7.png)

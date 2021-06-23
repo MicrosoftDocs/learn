@@ -21,23 +21,23 @@ quiz:
     - content: "Policies applied to a management level are automatically applied to all higher levels as well."
       isCorrect: false
       explanation: "Incorrect. \"Idempotent\" means that you can deploy the same template many times and get the same resource types in the same state."
-    - content: "ARM templates can be created and edited only through the Azure Portal."
+    - content: "ARM templates can be created and edited only through the Azure portal."
       isCorrect: false
       explanation: "Incorrect. \"Idempotent\" means that you can deploy the same template many times and get the same resource types in the same state."
     - content: "You can deploy the same template many times and get the same resource types in the same state."
       isCorrect: true
       explanation: "That is correct. \"Idempotent\" means that you can deploy the same template many times and get the same resource types in the same state."
-  - content: "Which of the following is NOT one of the four basic Terraform commands used when creating and applying a Terraform execution plan to your cloud infrastructure?"
+  - content: "Which of the following is one of the four basic Terraform commands used when creating and applying a Terraform execution plan to your cloud infrastructure?"
     choices:
-    - content: "Plan"
+    - content: "Check"
       isCorrect: false
       explanation: "Incorrect. The four basic Terraform commands needed for creating and applying a Terraform execution plan are Init, Plan, Apply, and Destroy"
     - content: "Apply"
-      isCorrect: false
-      explanation: "Incorrect. The four basic Terraform commands needed for creating and applying a Terraform execution plan are Init, Plan, Apply, and Destroy"
-    - content: "Delete"
       isCorrect: true
       explanation: "That is correct. The four basic Terraform commands needed for creating and applying a Terraform execution plan are Init, Plan, Apply, and Destroy"
+    - content: "Delete"
+      isCorrect: false
+      explanation: "Incorrect. The four basic Terraform commands needed for creating and applying a Terraform execution plan are Init, Plan, Apply, and Destroy"
   - content: "Which types of machines does Ansible need to be installed on after all."
     choices:
     - content: "One"

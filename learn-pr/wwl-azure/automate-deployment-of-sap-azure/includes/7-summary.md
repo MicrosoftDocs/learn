@@ -18,16 +18,6 @@ Now that you have reviewed this module, you should be able to:
 
 - [Azure Marketplace](https://portal.azure.com/#blade/Microsoft_Azure_Marketplace/MarketplaceOffersBlade/selectedMenuItemId/home)
 
-- [Microsoft.Storage storageAccounts template reference](/azure/templates/Microsoft.Storage/2018-07-01/storageAccounts)
-
-- [Microsoft.Network publicIPAddresses template reference](/azure/templates/Microsoft.Network/2018-08-01/publicIPAddresses)
-
-- [Microsoft.Network virtualNetworks template reference](/azure/templates/Microsoft.Network/2018-08-01/virtualNetworks)
-
-- [Microsoft.Network networkInterfaces template reference](/azure/templates/Microsoft.Network/2018-08-01/networkInterfaces)
-
-- [Microsoft.Compute virtualMachines template reference](/azure/templates/Microsoft.Network/2018-08-01/virtualNetworks)
-
 - [Create Resource Manager parameter file](/azure/azure-resource-manager/templates/parameter-files)
 
 ### Terraform
