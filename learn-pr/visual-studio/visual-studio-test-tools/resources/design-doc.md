@@ -39,7 +39,7 @@ Identify the subtasks of C# Testing Tutorial
 | Subtask | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- |
 | Create a test project | Knowledge check | 1 | Yes |
-| Add a reference from the test project to product code  |Knowledge check | 1 | No, combine with create test. |
+| Add a reference from the test project to product code  | Knowledge check | 1 | No, combine with create test. |
 | Write a test | Knowledge check | 1 | Yes |
 | View tests in the Test Explorer | Exercise | 2 | Yes |
 | Run tests from the Test Explorer | Exercise | 2 | No, combine with view tests. |
@@ -100,10 +100,50 @@ Suppose you are creating a calculator app for school and you've been able to suc
         - State
         - **(All of the above)**
 
-1. Sharpen your testing tool set
-    - Fluent Assertions
-    - Data driven tests
-    - Mocking
+1. Sharpen your test writing skills
+    - You can brush up on different types of tests and more testing concepts in the [Testing concept learning module](../../visual-studio-test-concepts/resources/design-doc.md)
+    - There are many tools out there to help you write good tests that help make your tests easy to understand, avoid repetition, and help you test any architecture. Let's go over some popular ones and their advantages.
+        - Fluent Assertions
+            - [Fluent assertions](https://fluentassertions.com/) is a popular set of extension methods provided by the .NET community that can help you clearly identify your assertion methods. It uses more human-readable language making it easier to write and read tests.
+
+            ```csharp
+                using FluentAssertions;
+    
+                // Check if a string begins, ends, or contains a particular phrase
+                string actual = "ABCDEFGHI";
+                actual.Should().StartWith("AB").And.EndWith("HI").And.Contain("EF").And.HaveLength(9);
+            ```
+
+        - Data driven tests
+            - [Data driven tests](https://docs.microsoft.com/visualstudio/test/how-to-create-a-data-driven-unit-test) (also known as parameterized testing or DDT) allows you to run the same test method a number of times with a variety of parameters. This allows you to avoid repetition in your code while also checking the same function with a whole set of different data inputs. You can input data in-line as shown in the example below or even connect to a database the get input.
+
+            ```csharp
+            [DataTestMethod]
+            [DataRow(1, 1, 2)]
+            [DataRow(2, 2, 4)]
+            [DataRow(3, 3, 6)]
+            [DataRow(0, 0, 1)] // The test run with this row fails
+            public void AddDataTests(int x, int y, int expected)
+            {
+                Assert.AreEqual(expected, x + y);
+            }
+            ```
+
+        - Mocking
+            - Sometimes the architecture of your code is not as modular as you may want in order to unit test it well. In order to isolate the parts of your code that you are testing without re-writing it you may want to use a mocking framework. Mocking helps you isolate the code you are trying to test by creating stubs or shims of that code dependencies. This allows the code you are testing to make the required calls to its dependencies without actually testing the dependencies. This helps you focus a unit test down to precisely the behavior you want to test. There are many popular mocking frameworks available including [MOQ](https://github.com/Moq/moq4/wiki/Quickstart) and [Microsoft Fakes](https://docs.microsoft.com/visualstudio/test/isolating-code-under-test-with-microsoft-fakes).
+
+    1. **Knowledge check**
+
+    - If you have one method that you'd like to test with multiple different inputs, what testing tool could help you?
+        - Fluent Assertions
+        - **Data driven tests**
+        - Mocking
+        - No framework is needed, you should simply copy and paste the test multiple times and only change the parameters.
+    - Stubs and shims are found in what testing tool?
+        - Fluent Assertions
+        - Data driven tests
+        - **Mocking**
+        - Behavior driven tests
 
 1. **Summary**
 
@@ -113,6 +153,6 @@ Suppose you are creating a calculator app for school and you've been able to suc
 
 There is a wide range of materials and tools out there to help make you a better tester. Check out the [testing conceptual guidance](TBD) to learn more about best practices.
 
-Ready to find out how tests can improve your entire pipeline? Check out the [automated testing module](https://docs.microsoft.com/en-us/learn/modules/run-quality-tests-build-pipeline/2-what-is-automated-testing)
+Ready to find out how tests can improve your entire pipeline? Check out the [automated testing module](https://docs.microsoft.com/learn/modules/run-quality-tests-build-pipeline/2-what-is-automated-testing)
 
 For a more in-depth look at the Test Explorer and other Visual Studio testing tools check out the [Visual Studio Testing docs](https://docs.microsoft.com/visualstudio/test).
