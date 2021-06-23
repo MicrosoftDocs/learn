@@ -257,6 +257,32 @@ To add the variables:
 
     :::image type="content" source="../media/3-library-variable-group.png" alt-text="A screenshot of Azure Pipelines, showing the variable group. The group contains three variables.":::
 
+## Create the dev, test, and staging environments
+
+In previous modules, you created environments for the **dev**, **test**, and **staging** environments. Here, you repeat the process.
+
+To create the **dev**, **test**, and **staging** environments:
+
+1. From Azure Pipelines, select **Environments**.
+
+    :::image type="content" source="../../shared/media/pipelines-environments.png" alt-text="A screenshot of Azure Pipelines showing the location of the Environments menu option.":::
+
+1. To create the **dev** environment:
+    1. Select **Create environment**.
+    1. Under **Name**, enter *dev*.
+    1. Leave the remaining fields at their default values.
+    1. Select **Create**.
+1. To create the **test** environment:
+    1. Return to the **Environments** page.
+    1. Select **New environment**.
+    1. Under **Name**, enter *test*.
+    1. Select **Create**.
+1. To create the **staging** environment:
+    1. Return to the **Environments** page.
+    1. Select **New environment**.
+    1. Under **Name**, enter *staging*.
+    1. Select **Create**.
+
 ## Create a service connection
 
 Here you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the previous module.
