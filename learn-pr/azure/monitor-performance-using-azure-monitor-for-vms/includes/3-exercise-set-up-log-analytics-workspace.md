@@ -1,10 +1,10 @@
-In the previous unit, recall that you need to explore Azure native monitoring tools for your company. To further your knowledge, you'll need to know how to provision a Log Analytics workspace with the right permissions model. Then you'll configure Azure Monitor for VMs to complete the process.
+In the previous unit, recall that you need to explore Azure native monitoring tools for your company. To further your knowledge, you'll need to know how to provision a Log Analytics workspace with the right permissions model. Then you'll configure Azure Monitor VM Insights to complete the process.
 
 In this unit, you'll:
 
 1. Create a Log Analytics workspace.
 1. Configure the Log Analytics workspace permissions model for the environment you're supporting.
-1. Create two virtual machines and onboard both to Azure Monitor for VMs.
+1. Create two virtual machines and onboard both to Azure Monitor VM Insights.
 
 ## Create and configure a Log Analytics workspace
 
@@ -61,7 +61,7 @@ In this unit, you'll:
       --verbose
     ```
 
-## Onboard virtual machines to Azure Monitor for VMs
+## Onboard virtual machines to Azure Monitor VM Insights
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), search for and select **Virtual machines**.
 
@@ -73,7 +73,7 @@ In this unit, you'll:
 
 1. Select **Enable**.
 
-    :::image type="content" source="../media/3-enable-azure-monitor-vms.png" alt-text="Enable Azure Monitor for VMs after selecting the right subscription and Log Analytics workspace.":::
+    :::image type="content" source="../media/3-enable-azure-monitor-vms.png" alt-text="Enable Azure Monitor VM Insights after selecting the right subscription and Log Analytics workspace.":::
 
 1. Repeat the same steps for SampleVM2.
 
@@ -86,7 +86,7 @@ In this unit, you'll:
 
 1. Select the **Performance** tab.
 
-    :::image type="content" source="../media/3-virtual-machine-insights.png" alt-text="Screenshot of performance after enabling Azure Monitor for VMs." lightbox="../media/3-virtual-machine-insights.png":::
+    :::image type="content" source="../media/3-virtual-machine-insights.png" alt-text="Screenshot of performance after enabling Azure Monitor VM Insights." lightbox="../media/3-virtual-machine-insights.png":::
 
 1. Explore the different graphs for:
 
@@ -104,11 +104,11 @@ In this unit, you'll:
 
 1. Select **Log Events**.
 
-    :::image type="content" source="../media/3-log-events.png" alt-text="Screenshot of where Log Events show up within Azure Monitor for VMs." lightbox="../media/3-log-events.png":::
+    :::image type="content" source="../media/3-log-events.png" alt-text="Screenshot of where Log Events show up within Azure Monitor VM Insights." lightbox="../media/3-log-events.png":::
 
 1. Select the **InsightsMetrics** table.
 
-    :::image type="content" source="../media/3-azure-monitor-logs-data-summary.png" alt-text="Screenshot after selecting Log Events from the Azure Monitor for VMs pane.":::
+    :::image type="content" source="../media/3-azure-monitor-logs-data-summary.png" alt-text="Screenshot after selecting Log Events from the Azure Monitor VM Insights pane.":::
 
 1. The logs section of a Log Analytics workspace opens with a prepopulated query showing the data being collected.
 

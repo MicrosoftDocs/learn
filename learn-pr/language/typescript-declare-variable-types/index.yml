@@ -5,7 +5,7 @@ metadata:
   description: Learn about the available types and how to associate them with variables.
   ms.date: 02/11/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: 'Declare variable types in TypeScript'

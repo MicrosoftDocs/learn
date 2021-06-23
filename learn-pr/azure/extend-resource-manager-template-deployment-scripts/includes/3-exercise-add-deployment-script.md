@@ -178,7 +178,7 @@ Now that you have a deployment script uploading a file into Azure Blob Storage, 
 
 After the `resources` section of the ARM template, add an output that references the URI for the file as reported by the deployment script.
 
-:::code language="json" source="code/3-template-with-deploymentscript.json" range="109-114":::
+:::code language="json" source="code/3-template-with-deploymentscript.json" range="102-107":::
 
 ::: zone-end
 

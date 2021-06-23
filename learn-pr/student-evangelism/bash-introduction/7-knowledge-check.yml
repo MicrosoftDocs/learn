@@ -5,8 +5,8 @@
     title: Knowledge check
     description: Check your knowledge about working with Bash.
     ms.date: 03/19/2021
-    author: shanamatthews
-    ms.author: shanama
+    author: softchris
+    ms.author: chnoring
     ms.topic: interactive-tutorial
     ms.prod: learning-bash
   durationInMinutes: 5  

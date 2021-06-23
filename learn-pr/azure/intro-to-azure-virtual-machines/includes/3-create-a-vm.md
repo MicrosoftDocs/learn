@@ -16,9 +16,9 @@ After you've signed in, you're presented with two main areas. The first is a men
 
 Let's assume you want to create a VM running an Ubuntu server. Setting up a site isn't difficult, but there are a couple of things to keep in mind. You need to install and configure an operating system, configure a website, install a database, and worry about things like firewalls. We're going to cover creating VMs in the next few modules, but let's create one here to see how easy it is. We won't go through all the options - check out one of the **Create a VM** module to get complete details on each option.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Select **Create a resource** in the top-left corner of the portal page.
+1. On the Azure home page, under **Azure services**, select **Create a resource**.
 
     ![Screenshot that shows the Azure Marketplace with create a resource highlighted](../media/3-create-new-resource.png)
 
@@ -43,7 +43,7 @@ We need to configure the basic parameters of our Ubuntu virtual machine. If some
     | Resource group | "**<rgn>[sandbox resource group name]</rgn>**" |
     | **Instance Details** |
     | Virtual machine name  | test-ubuntu-cus-vm |
-    | Region | Select a geographical location close to you. |
+    | Region | From the dropdown list, select a geographical location close to you. |
     | Availability options  | No infrastructure redundancy required |
     | Image | Ubuntu Server 18.04 LTS |
     | Size | Standard D2s V3 |
@@ -51,8 +51,6 @@ We need to configure the basic parameters of our Ubuntu virtual machine. If some
     | Authentication type | Password |
     | Username | Enter a username |
     | Password | Enter a password |
-
-    [!include[](../../../includes/azure-sandbox-regions-note-friendly.md)]
 
 1. There are several other tabs you can explore to see the settings you can influence during the VM creation. After you're finished exploring, select **Review + create** to review and validate the settings.
 
