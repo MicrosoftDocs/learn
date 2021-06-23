@@ -4,7 +4,7 @@ title: Exercise - Deploy infrastructure ARM template for SAP on Azure
 metadata:
   title: Exercise - Deploy infrastructure ARM template for SAP on Azure
   description: "Exercise - Deploy infrastructure ARM template for SAP on Azure"
-  ms.date: 06/22/2021
+  ms.date: 06/23/2021
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 9
 content: |
-  [!include[](includes/3-exercise-deploy-infrastructure-arm-template-for-sap-on-azure.md)]
+  [!include[](includes/3-exercise-deploy-infrastructure-arm-template-for-sap.md)]

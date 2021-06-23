@@ -12,7 +12,7 @@ If you start a deployment of a Marketplace item, you can use and modify the exis
 
 3. From the list of results, select **Infrastructure for SAP NetWeaver and SAP HANA**.
 
-![Azure Marketplace search results.](../media/MarketPlace2Tier_0.png)
+![Azure Marketplace search results.](../media/marketplace-0.png)
 
 ### Basics tab
 
@@ -29,7 +29,7 @@ If you start a deployment of a Marketplace item, you can use and modify the exis
 
 4. Go to the next tab: **SAP Configuration**.
  
-![Create infrastructure for SAP NetWeaver and SAP HANA, basics tab.](../media/MarketPlace2Tier_1.png)
+![Create infrastructure for SAP NetWeaver and SAP HANA, basics tab.](../media/marketplace-1.png)
 
 ### SAP Configuration tab
 
@@ -39,7 +39,7 @@ If you start a deployment of a Marketplace item, you can use and modify the exis
 
 3. Go to the next tab: **VM Sizes Configuration**.
 
-![Create infrastructure for SAP NetWeaver and SAP HANA, SAP Configuration tab.](../media/MarketPlace2Tier_2.png)
+![Create infrastructure for SAP NetWeaver and SAP HANA, SAP Configuration tab.](../media/marketplace-2.png)
 
 ### VM Sizes Configuration tab
 
@@ -50,7 +50,7 @@ If you start a deployment of a Marketplace item, you can use and modify the exis
 
 2. Go to the next tab: **Network Configuration**.
 
-![Create infrastructure for SAP NetWeaver and SAP HANA, VM Sizes Configuration tab.](../media/MarketPlace2Tier_3.png)
+![Create infrastructure for SAP NetWeaver and SAP HANA, VM Sizes Configuration tab.](../media/marketplace-3.png)
 
 ### Network Configuration tab
 
@@ -61,7 +61,7 @@ If you start a deployment of a Marketplace item, you can use and modify the exis
 
 2. Go to the next tab: **Review + create**.
 
-![Create infrastructure for SAP NetWeaver and SAP HANA, Network Configuration tab.](../media/MarketPlace2Tier_4.png)
+![Create infrastructure for SAP NetWeaver and SAP HANA, Network Configuration tab.](../media/marketplace-4.png)
 
 ### Validation
 
@@ -69,7 +69,7 @@ If you start a deployment of a Marketplace item, you can use and modify the exis
 
 2. Select **Download a template for automation**.
 
-![Create infrastructure for SAP NetWeaver and SAP HANA, Validation.](../media/MarketPlace2Tier_5.png)
+![Create infrastructure for SAP NetWeaver and SAP HANA, Validation.](../media/marketplace-5.png)
 
 ## Review the updated template 
 
@@ -83,7 +83,7 @@ If you start a deployment of a Marketplace item, you can use and modify the exis
 
 Examine the Resource Manager template to get a better understanding of its structure and the resources defined by the template. Below is a section from the top of the template.
 
-![ARM template with the changes made in the previous steps.](../media/MarketPlace2Tier_7.png)
+![ARM template with the changes made in the previous steps.](../media/marketplace-7.png)
 
 | # | Information |
 |---|---|
@@ -97,7 +97,7 @@ Examine the Resource Manager template to get a better understanding of its struc
 
 3. Alternatively, if you want to store the updated template stored locally, select **Download**.
 
-![Example of a value, in this case, hanaVMSize, that can be manually edited in the template.](../media/MarketPlace2Tier_8.png)
+![Example of a value, in this case, hanaVMSize, that can be manually edited in the template.](../media/marketplace-8.png)
 
 ## Edit template 
 
@@ -106,7 +106,7 @@ Examine the Resource Manager template to get a better understanding of its struc
     > [!NOTE]
     > You can also select **Edit parameters**.
     
-    ![Project details.](../media/MarketPlace2Tier_9.png)
+    ![Project details.](../media/marketplace-9.png)
 
 2. On the **Edit template** page, make any changes that you want to the ARM template and parameters JSON. For example, remove **Large** from the `allowedValues` under `size`.
 
@@ -116,13 +116,13 @@ Examine the Resource Manager template to get a better understanding of its struc
 
 5. Alternatively, select **Deploy** and deploy your custom template based on the Azure Marketplace **Infrastructure for SAP NetWeaver and SAP HANA** item.
  
-![Edit template displaying JSON.](../media/MarketPlace2Tier_8b.png)
+![Edit template displaying JSON.](../media/marketplace-8-b.png)
 
 ## Generating Azure Resource Manager Templates from deployments
 
 To access ARM Templates for your previous deployments, navigate to **Settings** > **Deployments**, select your resource group, and select a deployment from the list. You will see an overview of the deployment resources and can select **Template** to download the Template and Parameters or deploy the template in the portal.
  
-![Deployments.](../media/MarketPlace2Tier_11.png)
+![Deployments.](../media/marketplace-11.png)
 
 ## Deploying Azure Resource Manager using the CLI
 

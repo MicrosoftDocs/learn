@@ -34,7 +34,7 @@ az login --service-principal -u <service_principal_name> -p "<service_principal_
 
 Terraform language is designed to be readable.
 
-![Example of ARM Template Syntax vs HCL Syntax.](../media/Example_of_ARM_Template_Syntax_vs_HCL_Syntax.png)
+![Example of ARM Template Syntax vs HCL Syntax.](../media/example-of-arm-template-syntax-hcl-syntax.png)
 
 ## Sample Linux VM Azure Terraform configuration file
 
@@ -267,7 +267,7 @@ To see Terraform in action using the commands introduced in the next section, cr
 
 In this section, you learn how to create an execution plan and apply it to your cloud infrastructure.
 
-![Basic Terraform commands: Init, Plan, Apply, Destroy.](../media/Basic_Terraform_commands.png)
+![Basic Terraform commands: Init, Plan, Apply, Destroy.](../media/basic-terraform-commands.png)
  
 With your Terraform template created, the next steps are: 
 

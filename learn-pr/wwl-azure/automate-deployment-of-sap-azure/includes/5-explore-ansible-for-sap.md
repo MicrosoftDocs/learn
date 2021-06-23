@@ -32,7 +32,7 @@ Ansible is designed for multiple tier deployments, meaning you don't have to ins
 
 The following workflow and component diagram outlines how playbooks can run in different circumstances, one after another. 
 
-![Workflow and component diagram outlining how playbooks can run in different circumstances.](../media/ansibleworkflow.png)
+![Workflow and component diagram outlining how playbooks can run in different circumstances.](../media/ansible-workflow.png)
 
 In the workflow, Ansible playbooks:
 
@@ -254,68 +254,68 @@ The following steps outline how to create a resource group in Azure using Ansibl
 
 4. Create a new file using the following command:
 
-```bash
-vi rg.yml
-```
+    ```bash
+    vi rg.yml
+    ```
 
 5. Enter insert mode by pressing the I key.
 
 6. Copy and paste the following code into the file, and remove the **#** comment character. (It's included here for displaying code in the learning platform.) The code should be aligned as previously described.
 
- ```yml
-  #---
-    - hosts: localhost
-      connection: local
-      tasks:
-        - name: Create resource group
-          azure_rm_resourcegroup:
-            name: ansible-rg
-            location: eastus
-```
+    ```yml
+      #---
+        - hosts: localhost
+          connection: local
+          tasks:
+            - name: Create resource group
+              azure_rm_resourcegroup:
+                name: ansible-rg
+                location: eastus
+    ```
 
 7. Exit insert mode by pressing the Esc key.
 
 8. Save the file and exit the vi editor by entering the following command:
 
-```bash
-:wq
-```
+    ```bash
+    :wq
+    ```
 
 9. Run the playbook with the following command:
 
-```yml
-ansible-playbook rg.yml
-```
+    ```yml
+    ansible-playbook rg.yml
+    ```
 
 10. Verify that you receive output like the following code:
 
-```yml
-PLAY [localhost] *********************************************************************************
+    ```yml
+    PLAY [localhost] *********************************************************************************
     
-TASK [Gathering Facts] ***************************************************************************
-ok: [localhost]
+    TASK [Gathering Facts] ***************************************************************************
+    ok: [localhost]
    
-TASK [Create resource group] *********************************************************************
-changed: [localhost]
+    TASK [Create resource group] *********************************************************************
+    changed: [localhost]
     
-TASK [debug] *************************************************************************************
-ok: [localhost] => {
-    "rg": {
-        "changed": true,
-        "contains_resources": false,
-        "failed": false,
-        "state": {
-            "id": "/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/ansible-rg",
-            "location": "eastus",
-            "name": "ansible-rg",
-            "provisioning_state": "Succeeded",
-            "tags": null
+    TASK [debug] *************************************************************************************
+    ok: [localhost] => {
+        "rg": {
+            "changed": true,
+            "contains_resources": false,
+            "failed": false,
+            "state": {
+                "id": "/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/ansible-rg",
+                "location": "eastus",
+                "name": "ansible-rg",
+                "provisioning_state": "Succeeded",
+                "tags": null
+            }
         }
     }
-}
     
-PLAY RECAP ***************************************************************************************
-localhost                  : ok=3    changed=1    unreachable=0    failed=0
-```
+    PLAY RECAP ***************************************************************************************
+    localhost                  : ok=3    changed=1    unreachable=0    failed=0
+    ```
 
 11. Open the Azure portal and verify that the resource group is now available in the portal.
