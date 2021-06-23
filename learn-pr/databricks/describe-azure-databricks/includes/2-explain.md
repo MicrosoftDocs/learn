@@ -40,8 +40,8 @@ Spark is a unified processing engine that can analyze big data using SQL, machin
 ![Spark Engines](../media/spark-4engines.png)
 
 - At its core is the Spark Engine.
-- The DataFrames API provides an abstraction above RDDs while simultaneously improving performance 5-20x over traditional RDDs with its Catalyst Optimizer.
-- Spark ML provides high quality and finely tuned machine learning algorithms for processing big data.
+- The DataFrames API provides an abstraction above Resilient Distributed Datasets (RDDs) while simultaneously improving performance 5-20x over traditional RDDs with its Catalyst Optimizer.
+- Spark ML provides high quality and finely-tuned machine learning algorithms for processing big data.
 - The Graph processing API gives us an easily approachable API for modeling pairwise relationships between people, objects, or nodes in a network.
 - The Streaming APIs give us End-to-End Fault Tolerance, with Exactly-Once semantics, and the possibility for sub-millisecond latency.
 
