@@ -6,4 +6,17 @@ In this module, you will create the core components of this requested applicatio
 
 By the end of this module, you will be able to build and deploy a voice activated BabylonJS WebXR application.
 
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+## Learning objectives
+
+- Call the Azure Speech-to-text API through Azure Cognitive Services JavaScript SDK
+- Enable VR or AR support in a BabylonJS web app
+- Deploy your web app using Static Website Hosting provided by Azure Blob Storage
+
+## Prerequisites
+
+- A computer connected to the internet
+- A microphone for capturing audio (can be built in to your computer or external)
+- Visual Studio Code
+- NodeJS (v14.17.X or above) and npm (v6.14.X or above) installed on your computer
+- Basic familiarity with the structure of a BabylonJS project
+- Basic familiarity with JavaScript
