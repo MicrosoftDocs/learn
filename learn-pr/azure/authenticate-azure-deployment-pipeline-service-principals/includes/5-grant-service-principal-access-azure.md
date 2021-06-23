@@ -2,12 +2,12 @@ By itself, a service principal can't do anything in your Azure environment - jus
 
 ## Service principal authorization
 
-Up till now, we've focused on what service principals are, and how they can be used to prove the identity of a pipeline to Azure Active Directory (Azure AD). This is all about _authentication_.
+Up till now, you've focused on what service principals are, and how they can be used to prove the identity of a pipeline to Azure Active Directory (Azure AD). This is all about _authentication_.
 
 Once Azure AD has authenticated a service principal, the next question becomes: what can this service principal do? This is the domain of _authorization, and is the responsibility of Azure's role-based access control (RBAC) system, sometimes called identity and access management (IAM). By using Azure RBAC, you can grant a service principal access to a specific resource group, subscription, or management group.
 
 > [!NOTE]
-> Everything we're doing here is using Azure's RBAC system to grant access to create and manage Azure resources, like your storage accounts, App Services, and virtual networks. Azure AD also has its own role system, which is sometimes called _directory roles_. You use these to grant permissions for service principals to manage Azure AD. We don't discuss these in this module, but be aware that the term _role_ can be used for both situations in some documentation.
+> Everything you're doing here is using Azure's RBAC system to grant access to create and manage Azure resources, like your storage accounts, App Services, and virtual networks. Azure AD also has its own role system, which is sometimes called _directory roles_. You use these to grant permissions for service principals to manage Azure AD. We don't discuss these in this module, but be aware that the term _role_ can be used for both situations in some documentation.
 
 ## Select the right role assignment for your pipeline
 
@@ -47,7 +47,7 @@ Now that you understand the components of a role assignment, you can decide the 
 > [!div class="checklist"]
 > * Use the least permissive role you can. If your pipeline is only going to deploy basic Bicep templates and won't manage role assignments, don't use the **Owner** role.
 > * Use the narrowest scope you can. Most pipelines only need to deploy resources to a resource group, so they shouldn't be given subscription-scoped role assignments.
-> * Make sure you consider everything your pipeline does, and everything it might do in the future. For example, we might consider creating a custom role definition for our website's deployment pipeline and only grant permissions for App Service and Application Insights. Next month, we might need to add a Cosmos DB account to our Bicep file, but the custom role will block Cosmos DB resources from being created. Instead, it's often better to use a built-in role to avoid having to repeatedly change your role definitions. Consider using Azure Policy to enforce your governance requirements for allowed services, SKUs, and locations.
+> * Make sure you consider everything your pipeline does, and everything it might do in the future. For example, you might consider creating a custom role definition for your website's deployment pipeline and only grant permissions for App Service and Application Insights. Next month, you might need to add a Cosmos DB account to your Bicep file, but the custom role will block Cosmos DB resources from being created. Instead, it's often better to use a built-in role to avoid having to repeatedly change your role definitions. Consider using Azure Policy to enforce your governance requirements for allowed services, SKUs, and locations.
 > * For many pipelines, a good default option for a role assignment is the **Contributor** role on the resource group scope.
 > * Make sure you test the pipeline to verify the role assignment works.
 

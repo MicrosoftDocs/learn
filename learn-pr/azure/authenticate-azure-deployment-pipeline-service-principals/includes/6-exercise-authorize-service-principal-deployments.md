@@ -116,7 +116,7 @@ You previously created a Bicep file that deploys your website's resources. Here,
 
 ## Deploy the Bicep file using the service principal
 
-You don't currently have a deployment pipeline, so we'll simulate what a pipeline does to deploy your Bicep file. First, you'll sign in using the service principal's credentials. Next, you'll deploy the Bicep file you just created.
+You don't currently have a deployment pipeline, so you'll simulate what a pipeline does to deploy your Bicep file. First, you'll sign in using the service principal's credentials. Next, you'll deploy the Bicep file you just created.
 
 ::: zone pivot="cli"
 
