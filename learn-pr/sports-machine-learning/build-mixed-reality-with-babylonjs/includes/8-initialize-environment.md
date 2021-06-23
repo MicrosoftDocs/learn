@@ -10,6 +10,7 @@ This function belongs in the `Environment` class found in the *environment.ts* f
 
 ```javascript
 public addLegalLine() {
+    const guiMenu = GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
     guiMenu.idealHeight = 720;
 
     //Creating the legal text box
