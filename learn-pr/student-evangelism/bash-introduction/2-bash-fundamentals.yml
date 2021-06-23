@@ -5,8 +5,8 @@ metadata:
   title: Bash fundamentals
   description: Learn about the syntax of Bash commands.
   ms.date: 03/19/2021
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-bash
 durationInMinutes: 8

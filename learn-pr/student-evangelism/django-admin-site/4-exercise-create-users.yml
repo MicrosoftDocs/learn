@@ -6,7 +6,7 @@ metadata:
   description: Learn how to create the superuser to allow administration of the site. Then create individual users.
   ms.date: 2/26/2021  
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8
