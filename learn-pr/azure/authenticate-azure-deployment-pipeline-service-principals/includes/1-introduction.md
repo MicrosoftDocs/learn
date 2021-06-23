@@ -14,9 +14,21 @@ By the end of this module, you'll have an understanding of service principals an
 
 ## Prerequisites
 
-You should be familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resources.
+You should be familiar with:
 
-To follow along with the exercises in the module, you'll need either:
+- Creating and deploying basic Bicep templates, including modules.
+- Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
-- The latest [Azure CLI](/cli/azure/install-azure-cli.md) tools, installed locally.
-- The latest [Azure PowerShell](/powershell/azure/install-az-ps.md), installed locally.
+To follow along with the exercises in the module, you'll need:
+
+- An Azure account, with the ability to create resource groups, and to create Azure AD applications and service principals.
+
+  > [!TIP]
+  > If you can't meet these requirements with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
+
+- [Visual Studio Code](https://code.visualstudio.com), installed locally.  
+- The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally.  
+- Either:
+  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools, installed locally.  
+  - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps), installed locally.
+

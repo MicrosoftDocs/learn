@@ -20,11 +20,17 @@ abstract: |
   - Create a service principal and manage its keys
   - Configure the appropriate authorization to deploy Azure resources (both role and scope)
 prerequisites: |
-  You should be familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resources.
+  You should be familiar with:
+  - Creating and deploying basic Bicep templates.
+  - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
-  To follow along with the exercises in the module, you'll need either:
-  - The latest [Azure CLI](/cli/azure/install-azure-cli.md) tools, installed locally.
-  - The latest [Azure PowerShell](/powershell/azure/install-az-ps.md), installed locally.
+  To follow along with the exercises in the module, you'll need:
+  - An Azure account, with the ability to create resource groups, and to create Azure AD applications and service principals.
+  - [Visual Studio Code](https://code.visualstudio.com), installed locally.  
+  - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally.  
+  - Either:
+    - The latest [Azure CLI](/cli/azure/install-azure-cli) tools, installed locally.  
+    - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps), installed locally.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - intermediate
