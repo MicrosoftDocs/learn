@@ -6,9 +6,6 @@ This transformational journey is a manic mashup of two worlds that reveals just 
 
 In this module, you'll prepare the resources needed to create a Mixed Reality experience for basketball fans and coaches inspired by *Space Jam: A New Legacy*.
 
-> [!TIP]
-> This module is part of a multimodal learning experience. [Follow along with a video walk-through of the module in a new tab](https://aka.ms/LearnWithDrG/Basketball/Video4?azure-portal=true).
-
 © 2021 Warner Bros. Ent. All Rights Reserved.
 
 ## Learning objectives
@@ -21,4 +18,4 @@ In this module, you'll begin to discover:
 
 ## Prerequisites
 
-- None
+None

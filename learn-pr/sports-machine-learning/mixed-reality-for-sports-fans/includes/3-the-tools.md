@@ -7,7 +7,7 @@ Before you dive into these frameworks, it's good to get an idea of the types of 
 
 ## Babylon.js tools
 
-Babylon.js is a JavaScript framework, so the tools can be lightweight. The two main tools you'll need are:
+Babylon.js is a complete JavaScript framework for building 3D games and experiences with HTML5, WebGL, WebVR, and Web Audio. Because Babylon.js is a web framework, the tools can be lightweight. The two main tools you'll need are:
 
 - Visual Studio Code
 - GitHub
@@ -30,7 +30,7 @@ To get started on GitHub, create an account at [GitHub.com](https://github.com?a
 
 ## Mixed Reality Toolkit
 
-The Windows 10 SDK and the Mixed Reality Toolkit are powerful tools. With the power of Visual Studio and Unity, you can create a fully immersive Mixed Reality experience designed for headsets. But don't worry! Unity provides an effective testing environment, so the only hardware you need is a Windows 10 computer.
+The Windows 10 SDK and the [Mixed Reality Toolkit](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started?azure-portal=true) are powerful tools. With the power of Visual Studio and Unity, you can create a fully immersive Mixed Reality experience designed for headsets. But don't worry! Unity provides an effective testing environment, so the only hardware you need is a Windows 10 computer.
 
 ### Visual Studio
 
