@@ -9,7 +9,7 @@ The Azure Bot Service developer tools create a *bot package* that contains the b
 > [!NOTE]
 > The bot package is serviced using the development tools discussed in the previous unit, such as Bot Framework Composer or the Bot Framework SDK through Visual Studio or Visual Studio Code.
 
-:::image type="content" source="../media/2-bot-service-architecture.png" alt-text="Azure Bot Service architecture":::
+:::image type="content" source="../media/3-bot-service-architecture.png" alt-text="Azure Bot Service architecture":::
 
 ## Make a plan of the bot you want to create
 
