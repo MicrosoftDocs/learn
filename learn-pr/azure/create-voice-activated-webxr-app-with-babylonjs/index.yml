@@ -3,7 +3,7 @@ uid: learn.create-voice-activated-webxr-app-with-babylonjs
 metadata:
   moduleType: standard
   title: Create and deploy a voice activated WebXR app with BabylonJS and Azure Cognitive Services
-  description: Create a voice activated WebXR app using BabylonJS and the Azure Speech-to-text API under Azure Cognitive Services, and then deploy the app using Static Website Hosting provided by Azure Blob Storage. The app can be viewed on devices such as Hololens, Windows Mixed Reality devices, mobile phones, etc.
+  description: Create a voice activated WebXR app using BabylonJS and the Azure Speech-to-text API under Azure Cognitive Services, and then deploy the app using Static Website Hosting provided by Azure Blob Storage. The app can be viewed on devices such as HoloLens, Windows Mixed Reality devices, mobile phones, etc.
   ms.date: 6/22/2021
   author: JING1201
   ms.author: t-jinglow
@@ -12,16 +12,16 @@ title: create-voice-activated-webxr-app-with-babylonjs
 summary: Create a voice activated WebXR app using BabylonJS and the Azure Speech-to-text API under Azure Cognitive Services, and then deploy the app using Azure Blob Storage.
 abstract: | 
   By the end of this module, you'll be able to:
-    -	Call the Azure Speech-to-text API through Azure Cognitive Services Javascript SDK
+    -	Call the Azure Speech-to-text API through Azure Cognitive Services JavaScript SDK
     - Enable VR or AR support in a BabylonJS web app
     - Deploy your web app using Static Website Hosting provided by Azure Blob Storage
 prerequisites: |
   - A computer connected to the internet
-  - A microphone for capturing audio (can be built-in to your computer or external)
+  - A microphone for capturing audio (can be built in to your computer or external)
   - Visual Studio Code
   - NodeJS (v14.17.X or above) and npm (v6.14.X or above) installed on your computer
   - Basic familiarity with the structure of a BabylonJS project
-  - Basic familiarity with Javascript
+  - Basic familiarity with JavaScript
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
