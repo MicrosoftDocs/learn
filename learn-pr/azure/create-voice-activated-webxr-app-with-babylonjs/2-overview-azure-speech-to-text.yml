@@ -9,6 +9,7 @@ metadata:
   author: JING1201
   ms.author: t-jinglow
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 3
 content: |
   [!include[](includes/2-overview-azure-speech-to-text.md)]

@@ -9,6 +9,7 @@ metadata:
   author: JING1201
   ms.author: t-jinglow
   ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-azure
 durationInMinutes: 1 # user input: the estimate time to complete the unit
 content: |
   [!include[](includes/11-summary.md)]
