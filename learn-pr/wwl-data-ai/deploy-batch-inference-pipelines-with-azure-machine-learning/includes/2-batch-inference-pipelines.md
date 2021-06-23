@@ -63,11 +63,11 @@ def run(mini_batch):
 
 ## 3. Create a pipeline with a ParallelRunStep
 
-Azure Machine Learning provides a type of pipeline step specifically for performing parallel batch inferencing. Using the **ParallelRunStep** class, you can read batches of files from a **File** dataset and write the processing output to a **PipelineData** reference. Additionally, you can set the **output_action** setting for the step to "append_row", which will ensure that all instances of the step being run in parallel will collate their results to a single output file named *parallel_run_step.txt*. The following code snippet shows an example of creating a pipeline with a **ParallelRunStep**:
+Azure Machine Learning provides a type of pipeline step specifically for performing parallel batch inferencing. Using the **ParallelRunStep** class, you can read batches of files from a **File** dataset and write the processing output to a **OutputFileDatasetConfig**. Additionally, you can set the **output_action** setting for the step to "append_row", which will ensure that all instances of the step being run in parallel will collate their results to a single output file named *parallel_run_step.txt*:
 
 ```python
 from azureml.pipeline.steps import ParallelRunConfig, ParallelRunStep
-from azureml.pipeline.core import PipelineData
+from azureml.data import OutputFileDatasetConfig
 from azureml.pipeline.core import Pipeline
 
 # Get the batch dataset for input
@@ -75,9 +75,7 @@ batch_data_set = ws.datasets['batch-data']
 
 # Set the output location
 default_ds = ws.get_default_datastore()
-output_dir = PipelineData(name='inferences',
-                          datastore=default_ds,
-                          output_path_on_compute='results')
+output_dir = OutputFileDatasetConfig(name='inferences')
 
 # Define the parallel run step step configuration
 parallel_run_config = ParallelRunConfig(
