@@ -6,7 +6,7 @@ metadata:
   description: Learn about the purpose of an interface, identify the reasons for using an interface, and explain how an interface is different from a type alias.
   ms.date: 02/11/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
