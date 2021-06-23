@@ -29,8 +29,8 @@ Learn the common best practices, theory, and anti-patterns to avoid when writing
 
 ## Learning objectives
 
-1. Why we test
-1. Types of testing and the testing pyramid
+1. Understand why we test
+1. Explore different types of testing and the testing pyramid
 1. Schools of thought when it comes to testing
 
 ## Chunk your content into subtasks
