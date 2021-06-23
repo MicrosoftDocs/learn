@@ -91,7 +91,7 @@ Suppose you are creating a calculator app for school and you've been able to suc
 
     1. **Knowledge check**
 
-    - I can only run tests from the Test Explorer. True/**False** You can run tests with the right-click menu, keyboard shortcuts, or the CodeLens icons. Whatever feel natural to you and helps you get into your most productive coding flow.
+    - I can only run tests from the Test Explorer. True/**False** You can run tests with the right-click menu, keyboard shortcuts, or the CodeLens icons. Whatever feels natural to you and helps you get into your most productive coding flow.
     - The Test Explorer group by allows me to view tests groupings according to: (Check all that apply)
         - Project
         - Namespace
