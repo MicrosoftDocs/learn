@@ -16,7 +16,6 @@ abstract: |
     - Enable VR or AR support in a BabylonJS web app
     - Deploy your web app using Static Website Hosting provided by Azure Blob Storage
 prerequisites: |
-  - A computer connected to the internet
   - A microphone for capturing audio (can be built in to your computer or external)
   - Visual Studio Code
   - NodeJS (v14.17.X or above) and npm (v6.14.X or above) installed on your computer
