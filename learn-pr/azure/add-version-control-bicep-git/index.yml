@@ -18,7 +18,7 @@ abstract: |
     - Commit Bicep templates to a Git repository
     - View the history of a Bicep template
     - Create and merge a branch
-    - Explain the basic principles of trunk-based development.
+    - Explain the basic workflow for trunk-based development
 prerequisites: |
   You should be familiar with:
     - Creating and deploying basic Bicep templates, including modules.
