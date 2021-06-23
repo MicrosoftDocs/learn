@@ -123,8 +123,15 @@ Learn the common best practices, theory, and anti-patterns to avoid when writing
     What types of questions will test *the different types of testing*? *[(Knowledge check guidance)](/help/learn/id-guidance-knowledge-check)*
 
     - What is the most common type of test?
-        - 
-    - Question type
+        - Integration
+        - UI
+        - **Unit**
+        - Acceptance
+    - If I want to test how my app scales with multiple users using it, what type of test am I likely to write?
+        - **Load**
+        - Unit
+        - Integration
+        - Performance
 
 1. **Exercise - exercise unit title**
 
@@ -148,8 +155,16 @@ Learn the common best practices, theory, and anti-patterns to avoid when writing
 
     What types of questions will test *the schools of thought on testing*? *[(Knowledge check guidance)](/help/learn/id-guidance-knowledge-check)*
 
-    - Question type
-    - Question type
+    - What does TDD stand for?
+        - Test Driven Design
+        - Testing Data Daily
+        - **Test Driven Development**
+        - Technical Data Development
+    - What is the best recommended testing approach?
+        - TDD
+        - DRY
+        - It depends on the needs of the repo and the team!
+        - BDD
 
 1. **Exercise - exercise unit title**
 
