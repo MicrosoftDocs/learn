@@ -130,11 +130,11 @@ Here you push your reverted change through the pipeline and see the results.
 
     The *production* slot now points to your reverted change, which is the original website.
 
-    :::image type="content" source="../media/5-app-service-staging-revert.png" alt-text="A browser showing the normal Space Game website.":::
+    :::image type="content" source="../media/5-app-service-staging-revert.png" alt-text="A browser showing the original Space Game website after reverting the changes. The website does not include the color and text changes.":::
 
     The *swap* slot now points to the previous change.
 
-    :::image type="content" source="../media/5-app-service-staging-swap-revert.png" alt-text="A browser showing the Space Game website with color and text changes.":::
+    :::image type="content" source="../media/5-app-service-staging-swap-revert.png" alt-text="A browser showing the Space Game website after reverting the change. The website shows the color and text changes.":::
 
 Great work! The team now has a way to automate the releases. They can get new features to their users without incurring downtime.
 
