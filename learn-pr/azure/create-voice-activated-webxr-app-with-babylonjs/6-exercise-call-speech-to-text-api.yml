@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-voice-activated-webxr-app-with-babylonjs.summary
-title: Summary
+uid: learn.create-voice-activated-webxr-app-with-babylonjs.exercise-call-speech-to-text-api
+title: Call the Azure Speech-to-text API in your BabylonJS project
 metadata:
-  unitType: summary
+  unitType: {{patternType}} 
   title: "TODO" # user input: module title for browser tab and search results
   description: "TODO" # user input: a description for site search and SEO
-  ms.date: 6/22/2021
-  author: JING1201
-  ms.author: t-jinglow
+  ms.date: 6/22/2021 
+  author: JING1201 
+  ms.author: t-jinglow 
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 1 # user input: the estimate time to complete the unit
 content: |
-  [!include[](includes/5-summary.md)]
+  [!include[](includes/6-exercise-call-speech-to-text-api.md)]
