@@ -150,12 +150,14 @@ Here you create App Service instances for the three stages that you'll deploy to
     az appservice plan create \
       --name tailspin-space-game-test-asp \
       --resource-group tailspin-space-game-rg \
-      --sku B1
+      --sku B1 \
+      --is-linux
 
     az appservice plan create \
       --name tailspin-space-game-prod-asp \
       --resource-group tailspin-space-game-rg \
-      --sku P1V2
+      --sku P1V2 \
+      --is-linux
     ```
 
     > [!IMPORTANT]
@@ -175,17 +177,20 @@ Here you create App Service instances for the three stages that you'll deploy to
     az webapp create \
       --name tailspin-space-game-web-dev-$webappsuffix \
       --resource-group tailspin-space-game-rg \
-      --plan tailspin-space-game-test-asp
+      --plan tailspin-space-game-test-asp \
+      --runtime "DOTNET|5.0"
 
     az webapp create \
       --name tailspin-space-game-web-test-$webappsuffix \
       --resource-group tailspin-space-game-rg \
-      --plan tailspin-space-game-test-asp
+      --plan tailspin-space-game-test-asp \
+      --runtime "DOTNET|5.0"
 
     az webapp create \
       --name tailspin-space-game-web-staging-$webappsuffix \
       --resource-group tailspin-space-game-rg \
-      --plan tailspin-space-game-prod-asp
+      --plan tailspin-space-game-prod-asp \
+      --runtime "DOTNET|5.0"
     ```
 
     Notice that here you apply the same App Service plan, **B1 Basic**, to the App Service instances for _Dev_ and _Test_. You apply the App Service plan **Premium P1V2** to the App Service instance for _Staging_.

@@ -183,10 +183,11 @@ To create your App Service instances, follow these steps:
     az appservice plan create \
       --name tailspin-space-game-asp \
       --resource-group tailspin-space-game-rg \
-      --sku B1
+      --sku B1 \
+      --is-linux
     ```
 
-    The `--sku` argument specifies the B1 plan. This plan runs on the Basic tier.
+    The `--sku` argument specifies the B1 plan. This plan runs on the Basic tier. The `--is-linux` argument specifies to use Linux workers.
 
     > [!IMPORTANT]
     > If the B1 SKU isn't available in your Azure subscription, [select a different plan](https://azure.microsoft.com/pricing/details/app-service/linux/?azure-portal=true), such as S1 (Standard).
@@ -195,22 +196,22 @@ To create your App Service instances, follow these steps:
 
     ```azurecli
     az webapp create \
-      --runtime "DOTNET|5.0" \
       --name tailspin-space-game-web-dev-$webappsuffix \
       --resource-group tailspin-space-game-rg \
-      --plan tailspin-space-game-asp
+      --plan tailspin-space-game-asp \
+      --runtime "DOTNET|5.0"
 
     az webapp create \
-      --runtime "DOTNET|5.0" \
       --name tailspin-space-game-web-test-$webappsuffix \
       --resource-group tailspin-space-game-rg \
-      --plan tailspin-space-game-asp
+      --plan tailspin-space-game-asp \
+      --runtime "DOTNET|5.0"
 
     az webapp create \
-      --runtime "DOTNET|5.0" \
       --name tailspin-space-game-web-staging-$webappsuffix \
       --resource-group tailspin-space-game-rg \
-      --plan tailspin-space-game-asp
+      --plan tailspin-space-game-asp \
+      --runtime "DOTNET|5.0"
     ```
 
     For learning purposes, here, you apply the same App Service plan, B1 Basic, to each App Service instance. In practice, you would assign a plan that matches your expected workload.
