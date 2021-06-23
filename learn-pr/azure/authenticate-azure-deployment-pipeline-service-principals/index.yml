@@ -40,6 +40,8 @@ roles:
   - solution-architect
 products:
   - azure
+  - azure-active-directory
+  - azure-devops
   - azure-resource-manager
 units:
   - learn.azure.authenticate-azure-deployment-pipeline-service-principals.introduction
