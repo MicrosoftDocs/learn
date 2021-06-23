@@ -5,7 +5,7 @@ metadata:
   description: Learn about the significance of tokens and how they are used in blockchain.
   ms.date: 10/16/2020
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create tokens using OpenZeppelin
