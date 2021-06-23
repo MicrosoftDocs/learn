@@ -119,10 +119,10 @@ The following JavaScript code snippet shows how to log a message using the `cont
 context.log('Enter your logging statement here');
 ```
 
-We could do the same thing in C# using the `log.Info` method. In this case, the `log` object is passed to the C# method processing the function.
+We could do the same thing in C# using the `log.LogInformation` method. In this case, the `log` object is passed to the C# method processing the function.
 
 ```csharp
-log.Info("Enter your logging statement here");
+log.LogInformation("Enter your logging statement here");
 ```
 
 In PowerShell, use `Write-Host` to write to the log:

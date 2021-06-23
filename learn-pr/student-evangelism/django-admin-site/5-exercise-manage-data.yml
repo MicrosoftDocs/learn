@@ -6,7 +6,7 @@ metadata:
   description: Learn to access data, register models, and update data.
   ms.date: 2/26/2021  
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8
