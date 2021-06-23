@@ -12,10 +12,10 @@ title: Run clustered applications on Azure with shared disks
 summary: |
   Providing high availability for clustered applications is an important requirement for most organizations. Microsoft Azure shared disks helps you do that by enabling you to run clustered or high-availability applications on Azure.
 abstract: |
-  After completing this module, you should know more about:
-  - Azure shared disks. 
-  - Using Azure shared disks with VMs.
-  - Benefits and limitations of Azure shared disks.
+  After completing this module, you'll will learn more about:
+  - Azure shared disks 
+  - Using Azure shared disks with VMs
+  - Benefits and limitations of Azure shared disks
 prerequisites: |
   - Basic knowledge of Azure Disk Storage.
   - Basic knowledge of Azure virtual machines (VMs).
