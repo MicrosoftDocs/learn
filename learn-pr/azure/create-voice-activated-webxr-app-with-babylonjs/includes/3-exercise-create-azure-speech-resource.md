@@ -1,78 +1,55 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Azure Speech-to-text API allows us to transcribe voice audio to text accurately without the need to implement our own model.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+In order to use the Azure Speech-to-text API in the amusement park application, we must have an Azure Speech Resource as well as a subscription key to access the API from the code.
 
-    Heading: none
+Here, you will create an Azure Speech Resource in the Azure portal and retrieve the subscription key from there.
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+<!-- Taken from Mixed Reality Module, still needs to be modified -->
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+## Create a Speech service resource
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you used to activate the sandbox.
 
-    Goal: Describe the part of the scenario covered in this exercise
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource.
+1. The portal takes you to the **Marketplace** page. In the **Search the Marketplace** box, type **speech** and press the Enter key.
+1. Select **Speech** from the results.
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+    :::image type="content" source="../media/marketplace-results.png" alt-text="A screenshot of the Azure Marketplace results. There's a red box around the Speech service.":::
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+1. On the page for the Speech service resource, select **Create**.
+1. Fill out the wizard with the following values:
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+    |Field  |Value  |Details  |
+    |---------|---------|---------|
+    |**Name**     |    Enter a unique name     |   Choose a globally unique name for the resource. For example, you might name the resource *mr-speech-xxx*, where the x's are replaced with your initials. If the name isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9, and -.      |
+    |**Subscription**    |   Concierge subscription      |    The resource you're creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs or will belong, if you're creating the resource group within the wizard.     |
+    |**Location**     |    Geographical location near you     |   The geographical location where your app will be used.      |
+    |**Pricing tier**     |     Free F0    |    The pricing tier of the plan being created. The selected tier corresponds to the usage of the resource. The Free F0 tier currently provides five audio hours free per month for Speech Translation.    |
+    |**Resource group**     |   <rgn>[Sandbox resource group]</rgn>      |    The resource group to which the Speech service will belong. All Azure resources must belong to a resource group.     |
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+   :::image type="content" source="../media/create-speech-resource.png" alt-text="A screenshot of the values provided for the Create Speech Resource wizard.":::
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+1. Select **Create**.
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+> [!NOTE]
+> It can take a few seconds to get your Speech service resource created and ready for use.
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+A notification will appear after deployment is complete. Your new Speech service resource and API keys will then be available for use.
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+## View the subscription keys and endpoint
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+1. On the Azure portal menu or from the **Home** page, select **All resources**.
+1. Select the Speech service resource from the list.
 
-    Goal: List the steps they'll do to complete the exercise.
+    :::image type="content" source="../media/all-resources.png" alt-text="A screenshot of the list of all resources. There's a red box around the M R dash speech dash A A S resource.":::
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+1. In the **Resource Management** section, select **Keys and Endpoint**.
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+    :::image type="content" source="../media/select-keys-and-endpoint.png" alt-text="A screenshot of the Speech service resource page. There's a red box around the menu item Keys and Endpoint.":::
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+In later exercises, you'll need the values for **KEY 1**, **ENDPOINT**, and **LOCATION** as you create the SpeechTranslation.cs script in Unity.
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
-
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+:::image type="content" source="../media/key-endpoint-location.png" alt-text="A screenshot of the key and endpoints for the speech service. There's a red box around KEY 1, ENDPOINT, and LOCATION.":::
 
 <!-- 5. Validation chunk -------------------------------------------------------------------------------------
 
