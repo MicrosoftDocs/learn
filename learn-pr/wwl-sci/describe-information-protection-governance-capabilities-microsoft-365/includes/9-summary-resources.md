@@ -12,7 +12,7 @@ Now you’ve completed this module, you should be able to:
 
 - [Know your data - data classification overview](/microsoft-365/compliance/data-classification-overview)
 - [Get started with content explorer](/microsoft-365/compliance/data-classification-content-explorer)
-- [Learn about sensitivity labels](//microsoft-365/compliance/sensitivity-labels)
+- [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels)
 - [Get started with activity explorer](/microsoft-365/compliance/data-classification-activity-explorer)
 - [Learn about retention policies and retention labels](/microsoft-365/compliance/retention)
 - [Microsoft Information Governance in Microsoft 365](/microsoft-365/compliance/manage-information-governance)
