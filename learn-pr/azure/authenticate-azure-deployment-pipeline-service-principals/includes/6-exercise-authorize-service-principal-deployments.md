@@ -97,7 +97,7 @@ New-AzRoleAssignment `
   -ApplicationId APPLICATION-ID `
   -RoleDefinitionName Contributor `
   -Scope RESOURCE-GROUP-ID `
-  -Description 'The deployment pipeline for the company's website needs to be able to create resources within the resource group.'
+  -Description "The deployment pipeline for the company's website needs to be able to create resources within the resource group."
 ```
 
 ::: zone-end
@@ -108,11 +108,11 @@ You previously created a Bicep file that deploys your website's resources. Here,
 
 1. Create a new file called *main.bicep*.
 
-2. Add the following content to the *main.bicep* file. You'll deploy the template soon.
+1. Add the following content to the *main.bicep* file. You'll deploy the template soon.
 
    :::code language="bicep" source="code/6-template.bicep" :::
 
-3. Save the changes to the file. You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
+1. Save the changes to the file. You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 
 ## Deploy the Bicep file using the service principal
 
@@ -191,6 +191,8 @@ Use the Azure portal to inspect the resources that you deploy and to inspect the
 
     :::image type="content" source="../media/6-development-deployment-details.png" alt-text="Screenshot of the Azure portal resource group overview pane for the specific deployment, with an App Service plan and app, and an Application Insights instance listed." border="true":::
 
+   Notice that there's nothing unusual about this deployment - even though it was initiated by a service principal, it's just like any other Bicep deployment.
+
 ## Clean up the resource group and service principal
 
 You've successfully created a service principal and role assignment, and deployed your website's resources by using a Bicep file. You can now remove the resources that you've created. First, you need to sign out as the service principal, and sign back in as your own user account.
@@ -203,7 +205,7 @@ You've successfully created a service principal and role assignment, and deploye
    az logout
    ```
 
-1. In the Visual Studio Code terminal, sign in to Azure by running the following command: 
+1. Sign back in to Azure using your own user account by running the following command: 
 
     ```azurecli
     az login
@@ -211,15 +213,15 @@ You've successfully created a service principal and role assignment, and deploye
 
 1. In the browser that opens, sign in to your Azure account.
 
-2. Run the following Azure CLI command to delete the resource group, its contents, and the role assignment:
+1. Run the following Azure CLI command to delete the resource group, its contents, and the role assignment:
 
    ```azurecli
-   az group delete --name ToyWebsite --no-wait
+   az group delete --name ToyWebsite
    ```
 
-   When you're prompted to confirm, enter `y`. Notice that you use the `--no-wait` argument to run the deletion asynchronously in the background.
+   When you're prompted to confirm, enter `y`.
 
-3. Run the following command to delete the service principal. Make sure you replace the `APPLICATION-ID` placeholder with the application ID you copied in the previous exercise:
+1. Run the following command to delete the service principal. Make sure you replace the `APPLICATION-ID` placeholder with the application ID you copied in the previous exercise:
 
    ```azurecli
    az ad sp delete --id APPLICATION-ID
@@ -235,26 +237,28 @@ You've successfully created a service principal and role assignment, and deploye
    Logout-AzAccount
    ```
 
-2. In the Visual Studio Code terminal, sign in to Azure by running the following command:
+1. Sign back in to Azure using your own user account by running the following command: 
 
     ```azurepowershell
     Connect-AzAccount
     ```
 
-3. In the browser that opens, sign in to your Azure account.
+1. In the browser that opens, sign in to your Azure account.
 
-4. Run the following Azure PowerShell command to delete the resource group, its contents, and the role assignment:
+1. Run the following Azure PowerShell command to delete the resource group, its contents, and the role assignment:
 
    ```azurepowershell
-   Remove-AzResourceGroup -Name ToyWebsite -AsJob
+   Remove-AzResourceGroup -Name ToyWebsite
    ```
 
-   When you're prompted to confirm, enter `y`. Notice that you use the `-AsJob` argument to run the deletion asynchronously in the background.
+   When you're prompted to confirm, enter `y`.
 
-5. Run the following command to delete the service principal. Make sure you replace the `APPLICATION-ID` placeholder with the application ID you copied in the previous exercise:
+1. Run the following command to delete the service principal. Make sure you replace the `APPLICATION-ID` placeholder with the application ID you copied in the previous exercise:
 
    ```azurepowershell
    Remove-AzADServicePrincipal -ApplicationId APPLICATION-ID
    ```
+
+   When you're prompted to confirm, enter `y`.
 
 ::: zone-end

@@ -17,7 +17,7 @@ A role assignment has three key parts: who the role is assigned to (the **assign
 
 When you work with a service principal, you assign roles for that service principal. Sometimes this is called the _assignee_. You use the service principal's application ID to identify the right service principal.
 
-### Which role is assigned
+### The role to assign
 
 It can be a little more work to figure out which role to assign. In Azure, there are a few common roles:
 
@@ -87,7 +87,7 @@ New-AzRoleAssignment `
   -ApplicationId b585b740-942d-44e9-9126-f1181c95d497 `
   -RoleDefinitionName Contributor `
   -Scope '/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/ToyWebsite' `
-  -Description 'The deployment pipeline for the company's website needs to be able to create resources within the resource group.'
+  -Description "The deployment pipeline for the company's website needs to be able to create resources within the resource group."
 ```
 
 Let's look at each argument:
