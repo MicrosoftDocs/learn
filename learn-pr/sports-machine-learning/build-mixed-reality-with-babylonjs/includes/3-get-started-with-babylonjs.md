@@ -47,7 +47,7 @@ The *index.ts* file is the TypeScript file that creates the main scene. When you
 
 We're using WebPack, which is an open-source JavaScript module bundler. It generates static assets that represent those modules. The configuration for WebPack is in the *webpack.config.js* file. This file describes how to bundle the assets for the *dist* folder. WebPack compiles the script down to one source, and that source is used to serve the game script.
 
-The following script shows how we import the needed packages from Babylon.js to create our game scene. Create the `canvas` variable to grab the `renderCanvas` canvas HTML tag from the `html` > `body` section. Then create the engine variable and pass in the new [Babylon.js Engine](https://www.babylonjs.com/?azure-portal=true).
+The following code belongs at the top of the 'index.ts' file and shows how we import the needed packages from Babylon.js to create our game scene. Create the `canvas` variable to grab the `renderCanvas` canvas HTML tag from the `html` > `body` section. Then create the engine variable and pass in the new [Babylon.js Engine](https://www.babylonjs.com/?azure-portal=true).
 
 ```javascript
  import {
