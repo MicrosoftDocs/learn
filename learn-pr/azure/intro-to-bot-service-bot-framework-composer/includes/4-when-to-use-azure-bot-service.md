@@ -17,7 +17,7 @@ You have three primary bot creation methods available, Power Virtual Agents, QnA
 
 ### Power Virtual Agents
 
-Power Virtual Agents lets you create powerful chat bots that can answer questions posed by your customers, other employees, or visitors to your website or service. The You can use the Power Virtual Agents web app to create chat bots using a guided, no-code graphical interface, removing the need for code-based or developer expertise.
+You can use Power Virtual Agents to create powerful chat bots that can answer questions posed by your customers, other employees, or visitors to your website or service. Because of the guided, no-code graphical interface, you can use the Power Virtual Agents web app to create chat bots without needing developer expertise.
 
 Topics inform the bot conversation in Power Virtual Agents. Each topic contains a dialog tree that guides conversation flow. Each topic also has trigger phrases that a user is likely to type. These phrases are matched to a specific topic using built-in natural language understanding. For example, a user might type "Open hours" into your bot—the AI will be able to match that to the Store hours topic and begin a conversation that asks which store the customer is interested in, and then display the hours the store is open.
 
