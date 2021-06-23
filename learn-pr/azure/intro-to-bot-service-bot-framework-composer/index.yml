@@ -3,7 +3,7 @@ uid: learn.intro-to-bot-service-bot-framework-composer
 metadata:
   moduleType: introduction        # Do not edit: type must be 'introduction'
   title: Introduction to Azure Bot Service and Bot Framework Composer          # Do not edit: title must be "Introduction to (product)"
-  description: "TODO"             # Copy your 'evaluate' Learning Objective here (see below)
+  description: "TODOs"             # Copy your 'evaluate' Learning Objective here (see below)
   ms.date: 6/15/2021             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: jasonkellingtonwaypoint      # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: v-jaske           # Alias     of the Microsoft employee either authoring or project-managing this content
@@ -26,7 +26,6 @@ levels:
   - beginner
 roles:
   - ai-engineer
-  - ai-edge-engineer
   - developer
   - solution-architect
   - student
