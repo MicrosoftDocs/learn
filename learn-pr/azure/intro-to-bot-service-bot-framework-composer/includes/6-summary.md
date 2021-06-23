@@ -4,6 +4,6 @@ After learning about the components and capabilities of the Azure Bot Service, y
 
 ## Further learning links
 
-- [Bot Framework Composer documentation](https://docs.microsoft.com/composer?azure-portal=true)
-- [Best practices for building bots using Composer](https://docs.microsoft.com/composer/concept-best-practices?azure-portal=true)
-- [Build an enterprise-grade conversational bot](https://docs.microsoft.com/azure/architecture/reference-architectures/ai/conversational-bot?azure-portal=true)
+- [Bot Framework Composer documentation](/composer?azure-portal=true)
+- [Best practices for building bots using Composer](/composer/concept-best-practices?azure-portal=true)
+- [Build an enterprise-grade conversational bot](/azure/architecture/reference-architectures/ai/conversational-bot?azure-portal=true)
