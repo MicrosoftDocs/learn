@@ -1,4 +1,4 @@
-Azure Cosmos DB is the Microsoft fully managed NoSQL database on Azure. As a NoSQL database, Azure Cosmos DB is both horizontally scalable and non-relational. Horizontal scalability enables Azure Cosmos DB to grow well beyond the size of typical relational databases. And horizontal scalability doesn't impose relational constraints on data, which means that Azure Cosmos DB can deliver predictable performance.
+Azure Cosmos DB is a fully managed Microsoft NoSQL database on Azure. As a NoSQL database, Azure Cosmos DB is both horizontally scalable and non-relational. Horizontal scalability enables Azure Cosmos DB to grow well beyond the size of typical relational databases. And horizontal scalability doesn't impose relational constraints on data, which means that Azure Cosmos DB can deliver predictable performance.
 
 To achieve this level of scalability, it's important to understand the concepts, techniques, and technologies for modeling and partitioning data that are unique to NoSQL databases. It's also important to understand how relational concepts, such as maintaining referential integrity, are applied in a NoSQL world.
 
@@ -19,4 +19,4 @@ In this module, you'll complete the redesign of the NoSQL database for your e-co
 
 ## What is the main goal?
 
-After you've finishedf this module and companion module "Model and partition your data in Azure Cosmos DB," you'll have the knowledge and skills necessary to properly model and partition data for a NoSQL database such as Azure Cosmos DB.
+After you've finished this module and its companion module "Model and partition your data in Azure Cosmos DB," you'll have the knowledge and skills necessary to properly model and partition data for a NoSQL database, such as Azure Cosmos DB.
