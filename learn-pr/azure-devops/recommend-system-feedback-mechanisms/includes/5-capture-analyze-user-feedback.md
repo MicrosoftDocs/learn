@@ -29,13 +29,13 @@ With a dataset of feedback – whether that's from customer reviews, support tic
 
 Here's a diagram that shows automated analysis category sentiment for Slack, the instant messaging platform developed by Slack Technologies.
 
-![A bar chart showing customer sentiment for Slack, weighted by category](../media/5-feedback-results.png)
+:::image type="content" source="../media/5-feedback-results.png" alt-text="A bar chart showing customer sentiment for Slack, weighted by category.":::
 
 The categories on the left refer to different parts of Slack's product, and the bars represent how positively or negatively customers feel about each.
 
 With the data, you can also build a summary that helps you focus on the most positive and the most negative parts of your product. You might summarize the Slack bar chart like this:
 
-![A something here](../media/5-sentiment.png)
+:::image type="content" source="../media/5-sentiment.png" alt-text="A diagram that highlights positive and negative sentiment around product UX and support.":::
 
 As the saying goes, "For every customer who bothers to complain, 20 other customers remain silent."
 

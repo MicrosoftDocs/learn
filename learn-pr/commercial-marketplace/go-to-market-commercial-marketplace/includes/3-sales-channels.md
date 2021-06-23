@@ -6,7 +6,7 @@ When you list your company’s products and services in the commercial marketpla
 - In direct collaboration with Microsoft sales professionals through the **Co-sell program**
 
 > [!Note]
->The Co-sell program is reserved for software built with your intellectual property (IP) as repeatable, packaged offers and for services with Microsoft technology embedded. If you’re interested in learning more about Co-sell program eligibility and benefits, you can reference the **[Co-sell partner engagement article](https://docs.microsoft.com/azure/marketplace/marketplace-co-sell)** in our documentation.
+>The Co-sell program is reserved for software built with your intellectual property (IP) as repeatable, packaged offers and for services with Microsoft technology embedded. If you’re interested in learning more about Co-sell program eligibility and benefits, you can reference the **[Co-sell partner engagement article](/azure/marketplace/marketplace-co-sell)** in our documentation.
 
 Now we'll share some things you can consider as you prepare to sell your products and services through each channel.
 
@@ -16,7 +16,7 @@ Now we'll share some things you can consider as you prepare to sell your product
 
 #### Online stores & in-product experiences
 
-When you publish your solution to the commercial marketplace from Partner Center, it will be placed in one or both online stores—[Microsoft AppSource](https://appsource.microsoft.com) and [Azure Marketplace](https://azuremarketplace.microsoft.com). Your product and the information you tell us about it determines where we place your product. For the most part, business solutions appear in Microsoft AppSource, while IT solutions are found in Azure Marketplace. For more information about online store product selection, read our [documentation on selecting an online store](https://docs.microsoft.com/azure/marketplace/determine-your-listing-type#selecting-an-online-store)
+When you publish your solution to the commercial marketplace from Partner Center, it will be placed in one or both online stores—[Microsoft AppSource](https://appsource.microsoft.com) and [Azure Marketplace](https://azuremarketplace.microsoft.com). Your product and the information you tell us about it determines where we place your product. For the most part, business solutions appear in Microsoft AppSource, while IT solutions are found in Azure Marketplace. For more information about online store product selection, read our [documentation on selecting an online store](/azure/marketplace/determine-your-listing-type#selecting-an-online-store)
 
 Customers will also be able to find your software in Microsoft products including Microsoft 365, Dynamics 365, Microsoft Power Platform, and Azure. Software from Azure Marketplace is also found by browsing resources in the Azure portal. Add-ins and software from AppSource can also be found on Microsoft 365, Dynamics 365, and Microsoft Power Platform.
 
@@ -37,7 +37,7 @@ You get to decide the types of information that's included for CSP partners. As 
 
 In addition to the specialized CSP materials, you’ll also be asked to list a CSP program point of contact from your organization. Make sure that this person is ready to engage with resellers that might have questions about the solutions you’ve opted into the program.
 
-For more information and instructions on opting into the CSP program, you can reference our [documentation on the Cloud Solution Provider program](https://docs.microsoft.com/azure/marketplace/cloud-solution-providers).
+For more information and instructions on opting into the CSP program, you can reference our [documentation on the Cloud Solution Provider program](/azure/marketplace/cloud-solution-providers).
 
 ### Co-sell program
 
@@ -48,4 +48,4 @@ If you qualify for the program, you will be required to provide additional resou
 - One-page document that summarize the value your solution creates for users
 - Customer-focused presentations that go into more detail on your solution
 
-For more information on how to provide required Co-sell program information on your solution in Partner Center, you can read our documentation on the [Co-sell option in Partner Center](https://docs.microsoft.com/azure/marketplace/partner-center-portal/commercial-marketplace-co-sell).
+For more information on how to provide required Co-sell program information on your solution in Partner Center, you can read our documentation on the [Co-sell option in Partner Center](/azure/marketplace/partner-center-portal/commercial-marketplace-co-sell).

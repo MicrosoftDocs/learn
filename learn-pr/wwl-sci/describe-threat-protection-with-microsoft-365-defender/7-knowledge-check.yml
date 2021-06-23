@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/11/2021
+  ms.date: 06/21/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -38,14 +38,14 @@ quiz:
     - content: "Data Security."
       isCorrect: true
       explanation: "That's correct. Through the Data Security pillar, an admin can identify and control sensitive information and respond to classification labels on content."
-  - content: "When considering using Microsoft Cloud App Security for an organization, what is one of the key considerations?"
+  - content: "Which of the following is a is a cloud-based security solution that identifies, detects, and helps to investigate advanced threats, compromised identities, and malicious insider actions directed at your organization?"
     choices:
-    - content: "The data security of your entire estate."
+    - content: "Microsoft Defender for Office 365"
       isCorrect: false
-      explanation: "That's incorrect. While data security is important for any organization, it isn't a key consideration for Microsoft Cloud App Security."
-    - content: "The architecture of your entire estate."
+      explanation: "That's incorrect. Microsoft Defender for Office 365 is a cloud-based email filtering service that helps protect your organization against unknown malware and viruses."
+    - content: "Microsoft Defender for Identity"
       isCorrect: true
-      explanation: "That's correct. When using Cloud App Security, consideration must be given to the entire estate."
-    - content: "The use of Shadow IT in your entire estate."
+      explanation: "That's correct. Microsoft Defender for Identity is a cloud-based security solution that identifies, detects, and helps you investigate advanced threats, compromised identities, and malicious insider actions directed at your organization."
+    - content: "Microsoft Cloud App Security"
       isCorrect: false
-      explanation: "That's incorrect. While the use of shadow IT is important for any organization it is not one of the key considerations when implementing Microsoft Cloud App Security."
+      explanation: "That's incorrect. Microsoft Cloud App Security is a Cloud Access Security Broker that supports various deployment modes including log collection, API connectors, and reverse proxy."

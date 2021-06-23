@@ -63,7 +63,7 @@ Whenever possible, as a best practice, use database-level IP firewall rules to e
 
 Let's take a look at how these work in practice, and how you can secure network access to only allow what is necessary. Recall that we created an Azure SQL Database logical server, a database, and the _appServer_ Linux VM acting as an application server. This scenario is often seen when a database has been migrated to Azure SQL Database and resources inside of a virtual network need to access it. The firewall feature of Azure SQL Database can be used in many scenarios, but this is an example that has practical applicability and demonstrates how each of the rules functions.
 
-Let's go through the firewall settings and see how they work. We'll use both the Cloud Shell and the portal for these exercises.
+Let's go through the firewall settings and see how they work. We'll use both the portal and Cloud Shell for these exercises.
 
 The database we created currently does not allow access from any connections. This is by design based on the commands that we ran to create the logical server and database. Let's confirm this.
 
@@ -131,7 +131,7 @@ EXECUTE sp_set_database_firewall_rule N'My Firewall Rule', '40.112.128.214', '40
     > When running T-SQL commands such as the following, the `GO` on the second line may not copy through to the `sqlcmd` prompt, so you will likely need to type this out. The T-SQL command won't execute without it, so make sure to run the `GO` command.
 
     ```sql
-    EXECUTE sp_set_database_firewall_rule N'Allow appServer database level rule', '[From IP Address]', '[To IP Address]';
+    EXECUTE sp_set_database_firewall_rule N'My Firewall Rule', '[From IP Address]', '[To IP Address]';
     GO
     ```
 
@@ -162,7 +162,7 @@ Let's now use a server-level IP rule to restrict the systems that can connect.
 1. While still at the sqlcmd prompt, run the following command to delete the database-level IP address rule.
 
     ```sql
-    EXECUTE sp_delete_database_firewall_rule N'Allow appServer database level rule';
+    EXECUTE sp_delete_database_firewall_rule N'My Firewall Rule';
     GO
     ```
 

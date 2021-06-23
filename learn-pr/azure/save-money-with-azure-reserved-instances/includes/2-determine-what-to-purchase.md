@@ -28,7 +28,7 @@ The prices depicted are for example purposes only. They are not intended to impl
 
 :::image type="content" source="../media/2-savings-by-quantity.png" alt-text="Screenshot showing the savings by quantity tab." lightbox="../media/2-savings-by-quantity.png" :::
 
-You can also get the [reservation recommendations using API](https://docs.microsoft.com/rest/api/consumption/reservationrecommendations/list).
+You can also get the [reservation recommendations using API](/rest/api/consumption/reservationrecommendations/list).
 
 ## View reservation recommendations in Azure Advisor
 

@@ -13,5 +13,5 @@ To find out more about any of the topics covered in this module, go to:
 - [Integrated threat protection with SIEM and XDR](https://www.microsoft.com/security/business/threat-protection)
 - [Microsoft delivers unified SIEM and XDR to modernize security operations](https://www.microsoft.com/security/blog/2020/09/22/microsoft-unified-siem-xdr-modernize-security-operations/)
 - [Azure Sentinel and SIEM](https://azure.microsoft.com/services/azure-sentinel/)
-- [What is Azure Sentinel?](https://docs.microsoft.com/azure/sentinel/overview)
+- [What is Azure Sentinel?](/azure/sentinel/overview)
 - [Azure Sentinel pricing](https://azure.microsoft.com/pricing/details/azure-sentinel/)

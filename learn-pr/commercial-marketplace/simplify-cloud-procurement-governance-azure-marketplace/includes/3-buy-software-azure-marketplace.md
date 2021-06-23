@@ -44,7 +44,7 @@ Software applications in Azure Marketplace are either subject to terms and condi
 
 ### Standard Contract
 
-The [Standard Contract](https://docs.microsoft.com/azure/marketplace/standard-contract) helps simplify the procurement process by reducing legal complexity. All solutions that use the Standard Contract contain the same terms and conditions, so your legal team only needs to review the contract once.
+The [Standard Contract](/azure/marketplace/standard-contract) helps simplify the procurement process by reducing legal complexity. All solutions that use the Standard Contract contain the same terms and conditions, so your legal team only needs to review the contract once.
 
 You can find the applicable terms and conditions on the product detail page under the legal section. Here you'll see either the terms set by the provider or terms under the Standard Contract.
 
@@ -88,7 +88,7 @@ If your organization has signed a Microsoft Azure Consumption Commitment (MACC),
 
 ### Completing your purchase
 
-After you’ve found the right software application, completing the purchase is simple. You’ll need to have appropriate permissions within the Azure subscription. Since Azure operates on a [Role Based Access Control](https://docs.microsoft.com/azure/role-based-access-control/overview) (RBAC) model, your account needs subscription owner or contributor rights for the purchase to be completed.
+After you’ve found the right software application, completing the purchase is simple. You’ll need to have appropriate permissions within the Azure subscription. Since Azure operates on a [Role Based Access Control](/azure/role-based-access-control/overview) (RBAC) model, your account needs subscription owner or contributor rights for the purchase to be completed.
 
 In the Azure portal, find the software application you want to buy and click ‘create’ or ‘set up + subscribe’. You’ll be prompted to provide some information before being able to use your new solution.
 

@@ -3,7 +3,7 @@ Intune uses Azure Active Directory (Azure AD) groups to organize and manage devi
 You can add the following types of groups in Intune:
 
 - **Assigned groups** - Manually add users or devices into a static group.
-- **Dynamic groups** (Requires [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-get-started-premium)) - Automatically add users or devices to user groups or device groups based on an expression you create. For example, when a user is added with the manager title, the user is automatically added to an **All managers** users group. Or, when a device has the iOS/iPadOS device OS type, the device is automatically added to an **All iOS/iPadOS devices** group.
+- **Dynamic groups** (Requires [Azure AD Premium](/azure/active-directory/fundamentals/active-directory-get-started-premium)) - Automatically add users or devices to user groups or device groups based on an expression you create. For example, when a user is added with the manager title, the user is automatically added to an **All managers** users group. Or, when a device has the iOS/iPadOS device OS type, the device is automatically added to an **All iOS/iPadOS devices** group.
 
 ## Add a new group
 
@@ -26,7 +26,7 @@ Use the following steps to create a new group:
 
 
 4. Enter a **Group name** and **Group description** for the new group.
-5. Select whether Azure AD roles can be assigned to the group. If you choose **Yes**, you can assign a cloud group to Azure AD built-in roles. With this feature, you can use groups to grant admin access in Azure AD with minimal effort from your Global and Privileged role admins. Once set, the group's eligibility for role assignment is permanent.​ For more information, see [Use cloud groups to manage role assignments in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/roles/groups-concept).
+5. Select whether Azure AD roles can be assigned to the group. If you choose **Yes**, you can assign a cloud group to Azure AD built-in roles. With this feature, you can use groups to grant admin access in Azure AD with minimal effort from your Global and Privileged role admins. Once set, the group's eligibility for role assignment is permanent.​ For more information, see [Use cloud groups to manage role assignments in Azure Active Directory](/azure/active-directory/roles/groups-concept).
 6. Select the **Membership type**. Your options include the following choices:
 
     - **Assigned**: Administrators manually assign users or devices to this group, and manually remove users or devices.
@@ -51,7 +51,7 @@ You can create a wide variety of dynamic user and device groups you, such as:
 
 Access to your organization's resources are controlled by users and groups you create.
 
-When you create groups, consider how you'll apply [compliance policies](https://docs.microsoft.com/mem/intune/protect/device-compliance-get-started?azure-portal=true) and [configuration profiles](https://docs.microsoft.com/mem/intune/configuration/device-profiles?azure-portal=true). For example, you might have:
+When you create groups, consider how you'll apply [compliance policies](/mem/intune/protect/device-compliance-get-started?azure-portal=true) and [configuration profiles](/mem/intune/configuration/device-profiles?azure-portal=true). For example, you might have:
 
 - Policies that are specific to a device operating system.
 - Policies that are specific to different roles in your organization.

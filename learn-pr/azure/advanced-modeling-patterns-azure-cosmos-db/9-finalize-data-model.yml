@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.advanced-modeling-patterns-azure-cosmos-db.finalize-data-model
+title: Finalize the data model
+metadata: 
+  title: Finalize the data model
+  description: Finalize the data model
+  ms.date: 6/11/2021 
+  author: markjbrown 
+  ms.author: mjbrown 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 02
+content: |
+  [!include[](includes/9-finalize-data-model.md)]

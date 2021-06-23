@@ -29,14 +29,14 @@ The modules in this learning path form a progression. You follow the Tailspin we
 Run a template that sets up your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=manage-database-changes&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=manage-database-changes&azure-portal=true)
 
 On the Azure DevOps Demo Generator site, follow these steps to run the template.
 
 1. Select **Sign In** and accept the usage terms.
 1. From the **Create New Project** page, select your Azure DevOps organization. Enter a project name, such as *Space Game - web - Database*.
 
-    ![A web page showing creating a project through the Azure DevOps Demo Generator.](../media/4-create-new-project.png)
+    :::image type="content" source="../media/4-create-new-project.png" alt-text="A web page showing creating a project through the Azure DevOps Demo Generator.":::
 
 1. Select **Yes, I want to fork this repository**, and then select **Authorize**.
 1. Select **Create Project**.
@@ -57,7 +57,7 @@ Assigning work in this way gives you a checklist to work from. The work item let
 
 Recall that the team settled on these top issues for the current sprint:
 
-![Azure Boards, showing the tasks for this sprint.](../../shared/media/deploy-all-tasks.png)
+:::image type="content" source="../../shared/media/deploy-all-tasks.png" alt-text="Azure Boards, showing the tasks for this sprint.":::
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number for each work item might not match what you see here.
@@ -68,15 +68,15 @@ To set up the work item:
 
 1. In Azure DevOps, navigate to **Boards**. In the menu, select **Boards**.
 
-    ![Azure DevOps, showing the Boards menu.](../../shared/media/azure-devops-boards-menu.png)
+    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
 
 1. In the **Connect the web app to a database** work item, select the down arrow at the bottom of the card. Assign the work item to yourself.
 
-    ![Azure Boards showing assigning the work item to yourself.](../../shared/media/azure-boards-down-chevron.png)
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 
 1. Move the work item from the **To Do** column to the **Doing** column.
 
-    ![Azure Boards showing the card in the Doing column.](../media/4-azure-boards-wi2-doing.png)
+    :::image type="content" source="../media/4-azure-boards-wi2-doing.png" alt-text="Azure Boards showing the card in the Doing column.":::
 
 At the end of this module, you move the card to the **Done** column after you complete the task.
 

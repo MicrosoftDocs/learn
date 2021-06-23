@@ -40,8 +40,6 @@ We won't go into many of the details about how App Service works or the configur
     | **Linux Plan**       | Keep the default value.                                                                       |
     | **Sku and size**     | Select **Change size** > **Dev/Test** tab > **B1** > **Apply**. |
 
-   
-
 1. Select **Review + create** > **Create**.
 
     The deployment takes a few moments to finish.
@@ -50,13 +48,13 @@ We won't go into many of the details about how App Service works or the configur
 
     You see details related to your deployment.
 
-    ![Deployment details in the Azure portal](../media/5-app-service-details.png)
+    :::image type="content" source="../media/5-app-service-details.png" alt-text="A screenshot of the Azure portal showing deployment details. Details include the deployment URL.":::
 
 1. Select the URL.
 
     From a new browser tab, you see the default home page for your app.
 
-    ![A browser showing the default App Service home page](../media/5-default-home-page.png)
+    :::image type="content" source="../media/5-default-home-page.png" alt-text="A screenshot of a web browser showing the default App Service home page.":::
 
     Soon you'll define a pipeline stage that deploys the _Space Game_ website to this App Service instance.
 
@@ -116,7 +114,7 @@ variables:
 
 steps:
 - task: UseDotNet@2
-  displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
+  displayName: 'Use .NET SDK $(dotnetSdkVersion)'
   inputs:
     version: '$(dotnetSdkVersion)'
 
@@ -145,10 +143,11 @@ Before we add the _Deploy_ stage to the pipeline, let's first convert the existi
     git commit -m "Add a build stage to the pipeline"
     git push origin release-pipeline
     ```
+
 1. In Azure Pipelines, go to the build and trace the build as it runs.
 1. After the build finishes, select the back button to return to the summary page.
 
-    ![Azure Pipelines, showing the job summary](../media/5-pipeline-build-stage-summary.png)
+    :::image type="content" source="../media/5-pipeline-build-stage-summary.png" alt-text="A screenshot of Azure Pipelines showing the job summary.":::
 
     You see that the build finished successfully. Your build pipeline accomplishes the same task as before. It builds the web app and publishes the artifact to the pipeline. But with this new change, you can now add more stages to the pipeline.
 
@@ -166,7 +165,7 @@ To add the variable:
 
 1. In Azure DevOps, under **Pipelines**, select **Library**.
 
-    ![Azure Pipelines, showing the Library menu](../media/5-pipelines-library.png)
+    :::image type="content" source="../media/5-pipelines-library.png" alt-text="A screenshot of Azure Pipelines showing the location of the Library menu.":::
 1. Select **+ Variable group**.
 1. Under **Properties**, enter *Release* for the variable group name.
 1. Under **Variables**, select **+ Add**.
@@ -194,7 +193,7 @@ Here you extend your pipeline by adding a deployment stage that uses App Service
 1. In Azure Pipelines, trace the build and deployment through each of the stages.
 1. After the pipeline finishes, select the back button to return to the summary page.
 
-    ![Azure Pipelines, showing the completed stages](../media/5-pipeline-deployment-summary.png)
+    :::image type="content" source="../media/5-pipeline-deployment-summary.png" alt-text="A screenshot of Azure Pipelines showing the completed Build and Deploy stages.":::
 
     You see that both the build stages and the deployment stages finished successfully.
 
@@ -206,10 +205,10 @@ When you created your App Service instance, you saw the default website that was
 
     If you still have the browser tab open, simply refresh the page. If the browser tab isn't open, you can find the URL on the App Service details page in the Azure portal.
 
-    ![Deployment details in the Azure portal](../media/5-app-service-details.png)
+    :::image type="content" source="../media/5-app-service-details.png" alt-text="A screenshot of the Azure portal showing deployment details.":::
 
 1. See that the _Space Game_ website has been successfully deployed to App Service and is running.
 
-    ![A browser showing the Space Game website](../media/5-deployed-website.png)
+    :::image type="content" source="../media/5-deployed-website.png" alt-text="A screenshot of web browser showing the Space Game website.":::
 
 Congratulations! You've successfully deployed the _Space Game_ website to App Service by using Azure Pipelines.

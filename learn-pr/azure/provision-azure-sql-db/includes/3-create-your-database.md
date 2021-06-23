@@ -89,8 +89,8 @@ Over time, if you realize you need additional compute power to keep up with dema
 
     | Setting | Value |
     | --- | --- |
-    | **Server name** | A globally unique [server name](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). |
-    | **Server admin login** | A [database identifier](https://docs.microsoft.com/sql/relational-databases/databases/database-identifiers) that serves as your primary administrator login name. |
+    | **Server name** | A globally unique [server name](/azure/architecture/best-practices/naming-conventions). |
+    | **Server admin login** | A [database identifier](/sql/relational-databases/databases/database-identifiers) that serves as your primary administrator login name. |
     | **Password** | Any valid password that has at least eight characters and contains characters from three of these categories: uppercase characters, lowercase characters, numbers, and non-alphanumeric characters. |
     | **Location** | Any valid location from the dropdown. |
 

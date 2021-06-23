@@ -36,4 +36,3 @@ You would perform the following steps:
 In this code example, the spark.sql method is used to create a database named nyctaxi. A DataFrame named df reads data from a table named Trip in the SQLPOOL1 dedicated SQL pool instance. Finally, the DataFrame df writes data into it and used the saveAsTable method to save it as nyctaxi.trip.
 
 As you can see, there are various ways to load data into an Apache Spark DataFrame depending on the source.
-

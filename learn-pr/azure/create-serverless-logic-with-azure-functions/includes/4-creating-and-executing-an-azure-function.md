@@ -25,7 +25,7 @@ Bindings are a declarative way to connect data and services to your function. Bi
 
 A trigger is a special type of input binding that has the additional capability of initiating execution.
 
-Azure provides a [large number of bindings](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings#supported-bindings) to connect to different storage and messaging services.
+Azure provides a [large number of bindings](/azure/azure-functions/functions-triggers-bindings#supported-bindings) to connect to different storage and messaging services.
 
 ### Define a sample binding
 
@@ -119,10 +119,10 @@ The following JavaScript code snippet shows how to log a message using the `cont
 context.log('Enter your logging statement here');
 ```
 
-We could do the same thing in C# using the `log.Info` method. In this case, the `log` object is passed to the C# method processing the function.
+We could do the same thing in C# using the `log.LogInformation` method. In this case, the `log` object is passed to the C# method processing the function.
 
 ```csharp
-log.Info("Enter your logging statement here");
+log.LogInformation("Enter your logging statement here");
 ```
 
 In PowerShell, use `Write-Host` to write to the log:
@@ -133,4 +133,4 @@ Write-Host "Enter your logging statement here"
 
 ### Errors and warnings in the logs pane
 
-You can locate the errors and warnings in the Logs pane as well. This pane shows compilation errors and warnings within your code.
+You can locate the errors and warnings window tab in the same flyout menu as the log window. This window shows compilation errors and warnings within your code.

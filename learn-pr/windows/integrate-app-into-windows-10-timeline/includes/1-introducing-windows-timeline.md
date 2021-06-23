@@ -12,9 +12,9 @@ Many of the apps you run in Windows 10 appear in Timeline, but unless the apps c
 
 ### Adaptive Cards in Timeline
 
-The Adaptive Cards feature used in Windows 10 Timeline is simpler than the more sophisticated cards discussed in the related module, [Introducing Adaptive Cards](https://docs.microsoft.com/learn/modules/writing-adaptive-cards/). A Timeline card needs only a title, some descriptive text, and a background image. Your choice of an attractive and appropriate background image is important. No extra coding is involved, so it's a matter of your taste in art and design.
+The Adaptive Cards feature used in Windows 10 Timeline is simpler than the more sophisticated cards discussed in the related module, [Introducing Adaptive Cards](/learn/modules/writing-adaptive-cards/). A Timeline card needs only a title, some descriptive text, and a background image. Your choice of an attractive and appropriate background image is important. No extra coding is involved, so it's a matter of your taste in art and design.
 
-For this module, you can use any Universal Windows Platform (UWP) app that you wrote previously in Visual Studio 2017. For example, we add an adaptive card to the [Astronomy Picture of the Day](https://docs.microsoft.com/learn/modules/build-internet-connected-windows10-apps/) app we built in a previous tutorial. We show you where to download that app in the next step, in case you want to use it, too.
+For this module, you can use any Universal Windows Platform (UWP) app that you wrote previously in Visual Studio 2017. For example, we add an adaptive card to the [Astronomy Picture of the Day](/learn/modules/build-internet-connected-windows10-apps/) app we built in a previous tutorial. We show you where to download that app in the next step, in case you want to use it, too.
 
 ### Personalized apps
 

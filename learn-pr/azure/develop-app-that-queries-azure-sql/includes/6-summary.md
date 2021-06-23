@@ -4,8 +4,8 @@ You helped the university switch their application from storing data in raw text
 
 ## Learn more
 
-- [Tutorial: Design a relational database in a single database within Azure SQL Database using SSMS](https://docs.microsoft.com/azure/sql-database/sql-database-design-first-database)
-- [Quickstart: Use .NET Core (C#) to query an Azure SQL database](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-dotnet-core)
-- [Tutorial: Build an ASP.NET app in Azure with SQL Database](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase)
-- [Choose among the vCore service tiers and migrate from the DTU service tiers](https://docs.microsoft.com/azure/sql-database/sql-database-service-tiers-vcore)
-- [Service tiers in the DTU-based purchase model](https://docs.microsoft.com/azure/sql-database/sql-database-service-tiers-dtu)
+- [Tutorial: Design a relational database in a single database within Azure SQL Database using SSMS](/azure/sql-database/sql-database-design-first-database)
+- [Quickstart: Use .NET Core (C#) to query an Azure SQL database](/azure/sql-database/sql-database-connect-query-dotnet-core)
+- [Tutorial: Build an ASP.NET app in Azure with SQL Database](/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase)
+- [Choose among the vCore service tiers and migrate from the DTU service tiers](/azure/sql-database/sql-database-service-tiers-vcore)
+- [Service tiers in the DTU-based purchase model](/azure/sql-database/sql-database-service-tiers-dtu)

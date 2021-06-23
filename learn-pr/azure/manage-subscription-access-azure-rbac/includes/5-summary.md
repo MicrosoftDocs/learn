@@ -8,6 +8,6 @@ In this module, you've learned:
 
 ## Learn more
 
-- [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/roles/permissions-reference)
-- [What is Azure role-based access control (Azure RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
-- [Manage access to billing information for Azure](https://docs.microsoft.com/azure/cost-management-billing/manage/manage-billing-access)
+- [Administrator role permissions in Azure Active Directory](/azure/active-directory/roles/permissions-reference)
+- [What is Azure role-based access control (Azure RBAC)?](/azure/role-based-access-control/overview)
+- [Manage access to billing information for Azure](/azure/cost-management-billing/manage/manage-billing-access)

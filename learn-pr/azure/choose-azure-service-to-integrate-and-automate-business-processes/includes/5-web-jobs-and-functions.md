@@ -49,7 +49,7 @@ As in the previous scenario, any of these technologies could be used to build th
 
 ### Design-first or code-first?
 
-To implement this workflow using just Logic Apps or Power Automate would be difficult. While we haven't heard too many low-level details, it's clear that this process needs to access an inventory system, place orders with a third-party parts company. This is new business logic and there is no requirement that we consider a design-first approach. We can wrap our solution in a custom connector to integrate with other workflows created with Logic Apps or Power Automate.  As a developer, you have most flexibility by approaching this scenario from a code-first approach, so let's do that!
+To implement this workflow using just Logic Apps or Power Automate would be difficult. While we haven't heard too many low-level details, it's clear that this process needs to access an inventory system and place orders with a third-party parts company. This is new business logic and there is no requirement that we consider a design-first approach. We can wrap our solution in a custom connector to integrate with other workflows created with Logic Apps or Power Automate.  As a developer, you have most flexibility by approaching this scenario from a code-first approach, so let's do that!
 
 ### Azure Functions or Azure Apps Service WebJobs?
 

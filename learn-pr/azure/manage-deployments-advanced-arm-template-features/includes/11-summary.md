@@ -10,10 +10,10 @@ You should now have a good understanding of what advanced constructs are at your
 
 ## Additional resources
 
-- [Use Azure Key Vault to pass secure parameter value during deployment](https://docs.microsoft.com/azure/azure-resource-manager/templates/key-vault-parameter?tabs=azure-cli&azure-portal=true)
-- [Tutorial: Integrate Azure Key Vault in your ARM template deployment](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-tutorial-use-key-vault?azure-portal=true)
-- [Conditional deployment in ARM templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/conditional-resource-deployment?azure-portal=true) 
-- [Tutorial: Use condition in ARM templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-tutorial-use-conditions?azure-portal=true)
-- [Define the order for deploying resources in ARM templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/define-resource-dependency?azure-portal=true)
-- [Tutorial: Create ARM templates with dependent resources](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-tutorial-create-templates-with-dependent-resources?tabs=CLI&azure-portal=true)
-- [Tutorial: Create multiple resource instances with ARM templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-tutorial-create-multiple-instances?tabs=CLI%2Cazure-cli&azure-portal=true)
+- [Use Azure Key Vault to pass secure parameter value during deployment](/azure/azure-resource-manager/templates/key-vault-parameter?azure-portal=true&tabs=azure-cli)
+- [Tutorial: Integrate Azure Key Vault in your ARM template deployment](/azure/azure-resource-manager/templates/template-tutorial-use-key-vault?azure-portal=true)
+- [Conditional deployment in ARM templates](/azure/azure-resource-manager/templates/conditional-resource-deployment?azure-portal=true) 
+- [Tutorial: Use condition in ARM templates](/azure/azure-resource-manager/templates/template-tutorial-use-conditions?azure-portal=true)
+- [Define the order for deploying resources in ARM templates](/azure/azure-resource-manager/templates/define-resource-dependency?azure-portal=true)
+- [Tutorial: Create ARM templates with dependent resources](/azure/azure-resource-manager/templates/template-tutorial-create-templates-with-dependent-resources?azure-portal=true&tabs=CLI)
+- [Tutorial: Create multiple resource instances with ARM templates](/azure/azure-resource-manager/templates/template-tutorial-create-multiple-instances?azure-portal=true&tabs=CLI%2cazure-cli)

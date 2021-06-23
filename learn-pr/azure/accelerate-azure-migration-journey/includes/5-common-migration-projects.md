@@ -119,7 +119,7 @@ There are [discounted rates on Azure](https://azure.microsoft.com/pricing/dev-te
 
 - No Microsoft software charges on VMs.
 - Significant dev/test pricing discounts on other Azure services.
-- Access to Windows 10 VMs and Windows Virtual Desktop.
+- Access to Windows 10 VMs and Azure Virtual Desktop.
 
 ## VMware
 
@@ -158,12 +158,12 @@ Learn more about running SAP on Azure:
 
 Moving an organization's user desktops to the cloud is a common scenario in cloud migrations. Doing so helps improve employee productivity and accelerate the migration of various workloads to support the organization's user experience. There's also a heavy focus on remote workers worldwide.
 
-There are two options for VDI in Azure. One option is to move your current Remote Desktop Services VMs to Azure running in IaaS. Most customers will choose to modernize their VDI implementation where existing Citrix, VMware, or Remote Desktop Services farms are replaced with a PaaS solution called [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/?azure-portal=true).
+There are two options for VDI in Azure. One option is to move your current Remote Desktop Services VMs to Azure running in IaaS. Most customers will choose to modernize their VDI implementation where existing Citrix, VMware, or Remote Desktop Services farms are replaced with a PaaS solution called [Azure Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/?azure-portal=true).
 
 ![Graphic showing how to modernize VDI in Azure.](../media/migrate-vdi.png)
 
-Tailwind Traders can set up Windows Virtual Desktop in minutes to enable secure remote work. Provide the familiarity and compatibility of Windows 10 with the new scalable multisession experience for your users. You can also save costs by using the same Windows licenses. Manage the end-to-end Windows Virtual Desktop deployment alongside other Azure services within the Azure portal.
+Tailwind Traders can set up Azure Virtual Desktop in minutes to enable secure remote work. Provide the familiarity and compatibility of Windows 10 with the new scalable multisession experience for your users. You can also save costs by using the same Windows licenses. Manage the end-to-end Azure Virtual Desktop deployment alongside other Azure services within the Azure portal.
 
 In this scenario, desktop images are either migrated to Azure or new images are generated. Similarly, user profiles are either migrated to Azure or new profiles are created. The client solution is enabled but largely unchanged by this migration effort.
 
-Learn more about using [Windows Virtual Desktop](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rds-to-wvd/?azure-portal=true) in Azure to move an on-premises Remote Desktop Services environment to Azure.
+Learn more about using [Azure Virtual Desktop](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rds-to-wvd/?azure-portal=true) in Azure to move an on-premises Remote Desktop Services environment to Azure.

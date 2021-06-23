@@ -20,4 +20,4 @@ There are additional benefits to using an MDM service with app protection polici
 
 ![Devices using app protection policies without enrollment - Microsoft Endpoint Manager](../media/intro-to-endpoint-manager-22.png)
 
-For more information about app protection in Intune, see [App protection policies overview](https://docs.microsoft.com/mem/intune/apps/app-protection-policy?azure-portal=true).
+For more information about app protection in Intune, see [App protection policies overview](/mem/intune/apps/app-protection-policy?azure-portal=true).

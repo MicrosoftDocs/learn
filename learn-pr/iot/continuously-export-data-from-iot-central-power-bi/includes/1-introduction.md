@@ -2,13 +2,13 @@ In this module, we look at the ability of an Azure IoT Central app to continuous
 
 The data in this scenario is telemetry from one or more Internet of Things (IoT) devices. The continuous data stream can be along a warm path for data analysis, or visualization, or along a cold path into storage. Or both.
 
-This module builds on the app that you developed in the [Create your first Azure IoT Central app](https://docs.microsoft.com/learn/modules/create-your-first-iot-central-app/) module by adding data export and a data viewing app. It's not a _requirement_ to have completed the earlier module, but it might help your understanding of Azure IoT Central if you do complete it.
+This module builds on the app that you developed in the [Create your first Azure IoT Central app](/learn/modules/create-your-first-iot-central-app/) module by adding data export and a data viewing app. It's not a _requirement_ to have completed the earlier module, but it might help your understanding of Azure IoT Central if you do complete it.
 
 The earlier module explains how to monitor and command the movements of a refrigerated truck. This module adds to the realism of the scenario by archiving all the incoming data. Also, an external app is added to the mix. This app enables a remote viewer to easily use a mobile phone to check the temperature of the contents of the refrigerated truck.
 
 You build the Azure IoT Central app from a pre-prepared JSON file that defines all the device capabilities. You load and run the device app code. A more detailed explanation of the sections of code is available in the earlier module.
 
-You might notice that the next two units are identical to those in the [Set up rules and take action on telemetry data in Azure IoT Central](https://docs.microsoft.com/learn/modules/set-up-rules-take-actions-telemetry-data-azure-iot-central/) module, which also builds on the refrigerated trucks scenario, where you added rules and actions. If you haven't deleted the app you built for the rules and actions module, you can reuse it and go straight to unit 4. If you don't still have the app, start here at the beginning of this module.
+You might notice that the next two units are identical to those in the [Set up rules and take action on telemetry data in Azure IoT Central](/learn/modules/set-up-rules-take-actions-telemetry-data-azure-iot-central/) module, which also builds on the refrigerated trucks scenario, where you added rules and actions. If you haven't deleted the app you built for the rules and actions module, you can reuse it and go straight to unit 4. If you don't still have the app, start here at the beginning of this module.
 
 ## Learning objectives
 

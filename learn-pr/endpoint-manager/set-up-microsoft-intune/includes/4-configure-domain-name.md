@@ -3,12 +3,12 @@ When your organization signs up for Microsoft Intune, you're given an initial do
 > [!NOTE]
 > Setting up a custom domain name is **optional**. If you are simply evaluating Intune using the free trial, you can skip the steps in this section.
 
-Azure AD is the underlying infrastructure that supports identity management for all Microsoft cloud services. Azure AD stores information about license assignment states for users. Your subscription to Intune is hosted by an [Azure AD tenant](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)). The tenant represents your organization. It's a dedicated instance of Azure AD that your organization receives at the beginning of a relationship with Microsoft. It's in this Azure AD tenant that you register and manage your end user's devices and apps.
+Azure AD is the underlying infrastructure that supports identity management for all Microsoft cloud services. Azure AD stores information about license assignment states for users. Your subscription to Intune is hosted by an [Azure AD tenant](/previous-versions/azure/azure-services/jj573650(v=azure.100)). The tenant represents your organization. It's a dedicated instance of Azure AD that your organization receives at the beginning of a relationship with Microsoft. It's in this Azure AD tenant that you register and manage your end user's devices and apps.
 
 Before you create user accounts or synchronize your on-premises Active Directory (for those using Endpoint Configuration Manager), we strongly recommend that you decide whether to use only the *.onmicrosoft.com* domain or to add one or more of your custom domain names. Set up a custom domain before adding users will help to simplify user management. Setting up a custom domain lets users sign in with the credentials they use to access your organization's other domain resources.
 
 > [!TIP]
-> To learn more about custom domains, see [Managing custom domain names in your Azure Active Directory](https://docs.microsoft.com/azure/active-directory/enterprise-users/domains-manage?azure-portal=true).
+> To learn more about custom domains, see [Managing custom domain names in your Azure Active Directory](/azure/active-directory/enterprise-users/domains-manage?azure-portal=true).
 
 You would not rename or remove the initial *onmicrosoft.com* domain name. However, you can add, verify, or remove a custom domain name used with Intune to keep your business identity clear. You must have access to your own custom domain name in order to add it to your Intune tenant.
 
@@ -34,8 +34,8 @@ You would not rename or remove the initial *onmicrosoft.com* domain name. Howeve
 
    ![Screenshot of Microsoft 365 admin center - Verify your domain](../media/sign-up-for-intune-08a.png)
 
-   The steps to add and verify a custom domain can also be [performed in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/add-custom-domain?azure-portal=true).
+   The steps to add and verify a custom domain can also be [performed in Azure Active Directory](/azure/active-directory/fundamentals/add-custom-domain?azure-portal=true).
 
 ## Learn more
 - For more information about domains, see [Domain FAQ](https://support.office.com/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?azure-portal=true).
-- You can learn more about how to [simplify Windows enrollment without Azure AD Premium](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll?azure-portal=true#simplify-windows-enrollment-without-azure-ad-premium) by creating a DNS CNAME that redirects enrollment to Intune servers.
+- You can learn more about how to [simplify Windows enrollment without Azure AD Premium](/mem/intune/enrollment/windows-enroll?azure-portal=true#simplify-windows-enrollment-without-azure-ad-premium) by creating a DNS CNAME that redirects enrollment to Intune servers.

@@ -10,7 +10,7 @@ Because of the multimodel architecture of Azure Cosmos DB, you benefit from each
 
 > [!NOTE]
 >
-> For more information about the APIs that are available in Azure Cosmos DB, see [Choose the appropriate API for Azure Cosmos DB storage](https://docs.microsoft.com/learn/modules/choose-api-for-cosmos-db/).
+> For more information about the APIs that are available in Azure Cosmos DB, see [Choose the appropriate API for Azure Cosmos DB storage](/learn/modules/choose-api-for-cosmos-db/).
 
 ## When to use Azure Cosmos DB
 

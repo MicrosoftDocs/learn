@@ -27,7 +27,7 @@ The desktop version of [Azure Storage Explorer](https://azure.microsoft.com/feat
 
 ### AzCopy
 
-You can download the storage account logs to your local computer by using the [AzCopy](https://aka.ms/AzCopy) utility, or the desktop version of [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/). You can then analyze this data by using analysis tools on your desktop.
+You can download the storage account logs to your local computer by using the [AzCopy](/azure/storage/common/storage-use-azcopy-v10) utility, or the desktop version of [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/). You can then analyze this data by using analysis tools on your desktop.
 
 Unlike Azure Storage Explorer, you can't use AzCopy to download data from storage tables. As a result, you can't use this tool to retrieve the data from the **\$Metrics** tables.
 

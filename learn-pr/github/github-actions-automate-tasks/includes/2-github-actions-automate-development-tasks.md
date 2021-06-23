@@ -97,7 +97,7 @@ branding:
 
 Notice the ```inputs``` section. Here you are getting the value of a variable called MY_NAME. This variable will be set in the workflow that runs this action.
 
-In the ```runs``` section, notice you specify *docker* in the ```using``` attribute. When you do this, you'll need to provide the path to the docker image file. Here, it's called *Dockerfile*. We won't get into the specifics of Docker here, but if you would like more information, check out the [Introduction to Docker Containers](https://docs.microsoft.com/learn/modules/intro-to-docker-containers/?azure-portal=true) module.
+In the ```runs``` section, notice you specify *docker* in the ```using``` attribute. When you do this, you'll need to provide the path to the docker image file. Here, it's called *Dockerfile*. We won't get into the specifics of Docker here, but if you would like more information, check out the [Introduction to Docker Containers](/learn/modules/intro-to-docker-containers/?azure-portal=true) module.
 
 The last section, *branding*, personalizes your action in the GitHub Marketplace if you decide to publish it there.
 

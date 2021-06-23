@@ -18,7 +18,7 @@ To complete the work item:
 1. From Azure DevOps, navigate to **Boards** and then select **Boards** from the menu.
 1. Move the **Check code for vulnerabilities** work item from the **Doing** column to the **Done** column.
 
-    ![Screenshot of Azure DevOps Boards showing the code vulnerability card in the Done column.](../media/8-azure-boards-wi4-done.png)
+    :::image type="content" source="../media/8-azure-boards-wi4-done.png" alt-text="Screenshot of Azure DevOps Boards showing the code vulnerability card in the Done column.":::
 
 ## Disable the pipeline or delete your project
 
@@ -37,7 +37,7 @@ To disable the pipeline:
 1. In Azure Pipelines, navigate to your pipeline.
 1. From the drop-down menu, select **Settings**:
 
-    ![The Settings menu option in Azure Pipelines](../../shared/media/azure-pipelines-settings-button.png)
+    :::image type="content" source="../../shared/media/azure-pipelines-settings-button.png" alt-text="A screenshot of Azure Pipelines showing the location of the Settings menu.":::
 1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
 
     Your pipeline will no longer process build requests.
@@ -49,14 +49,10 @@ This option deletes your Azure DevOps project, which includes what's on Azure Bo
 To delete the project:
 
 1. From Azure DevOps, navigate to your project. Earlier, we recommended that you name this project **Space Game - web - SonarCloud**.
-1. Select the gear icon next to the project name.
-
-    The icon might not appear until you move your mouse over that area.
-
-    ![Screenshot of Azure DevOps showing the project gear icon highlighted.](../../shared/media/azure-devops-project-gear.png)
+1. Select **Project settings** in the lower corner.
 1. From the **Project details** area, scroll to the bottom and select **Delete**.
 
-    ![Screenshot of Azure DevOps showing the Delete button to delete your project.](../../shared/media/azure-devops-delete-project.png)
+    :::image type="content" source="../../shared/media/azure-devops-delete-project.png" alt-text="A screenshot of Azure Pipelines showing the location of the Delete button.":::
 1. From the window that appears, enter the project name and select **Delete** a second time.
 
     Your project is now deleted.

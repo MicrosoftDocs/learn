@@ -38,9 +38,11 @@ Andy and Mara review the slides and investigate further. They find a few options
 
 [Black Duck](https://www.blackducksoftware.com?azure-portal=true) by Synopsys scans your open-source dependencies against their own database. They keep that database up-to-date with the latest vulnerabilities and give you timely information on fixes, workarounds, and on the exploits. They cover over 80 programming languages, and get their information from many sources.
 
+Their [Azure Pipelines extension](https://marketplace.visualstudio.com/items?itemName=synopsys-detect.synopsys-detect&azure-portal=true) enables you to scan a variety of programming languages and package managers across different application security techniques.
+
 ### GitLab
 
-[GitLab](https://about.gitlab.com?azure-portal=true) is a CI/CD pipeline tool that enables you to scan the dependencies in code that comes from GitLab repositories. It supports JavaScript, Ruby, Python, PHP, and Java. 
+[GitLab](https://about.gitlab.com?azure-portal=true) is a CI/CD pipeline tool that enables you to scan the dependencies in code that comes from GitLab repositories. It supports JavaScript, Ruby, Python, PHP, and Java.
 
 Their [Azure Pipelines extension](https://marketplace.visualstudio.com/items?itemName=onlyutkarsh.gitlab-integration&azure-portal=true) enables you to add a GitLab repository as a source.
 
@@ -49,7 +51,7 @@ Their [Azure Pipelines extension](https://marketplace.visualstudio.com/items?ite
 [Sonatype Nexus](https://www.sonatype.com/nexus-repository-sonatype?azure-portal=true) scans your dependencies for known vulnerabilities, licenses, and old or unsupported components.
 
 Their [Azure Pipelines extension](https://marketplace.visualstudio.com/items?itemName=ms-vsts.nexus-build-extension&azure-portal=true) enables you to upload your artifacts to Sonatype Nexus for scanning.
-  
+
 ### Veracode
 
 [Veracode](https://www.veracode.com?azure-portal=true) is a code scanning tool that integrates with Azure Pipelines to help you find vulnerabilities early in the development process. 

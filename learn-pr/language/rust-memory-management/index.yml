@@ -5,7 +5,7 @@ metadata:
   description: "Discover the features that make Rust so unique: ownership and borrowing."
   ms.date: 01/21/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Understand how Rust manages memory

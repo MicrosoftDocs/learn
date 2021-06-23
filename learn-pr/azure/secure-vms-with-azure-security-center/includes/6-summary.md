@@ -1,4 +1,4 @@
-Azure Security Center offers built-in security management and threat protection for your cloud workloads. Security Center helps you find & fix vulnerabilities, aids in blocking malicious access, and identifying weak areas in your servers and network.
+Azure Security Center offers built-in security management and threat protection for your cloud workloads. Security Center helps you find and fix vulnerabilities, block malicious access, and identify weak areas in your servers and network.
 
 Security Center is available to every Azure subscription through a free, basic tier. You can activate a paid tier to get more features, including integration with on-premise resources and other cloud providers.
 
@@ -18,7 +18,7 @@ We created two VM resources in this module. To ensure you don't continue to get 
 
     ![Screenshot of the Azure portal showing the Delete resource group entry](../media/6-summary-cleanup.png)
 
-1. Type the resource group name (**mslearnDeleteMe**) into the entry and select **Delete**.
+1. Enter the resource group name (**mslearnDeleteMe**) into the entry, and select **Delete**.
 
 ## Further reading
 
@@ -26,7 +26,7 @@ To learn more about the topics in this module, check out the following links:
 
 - [Microsoft Security Intelligence](https://www.microsoft.com/wdsi)
 - [Azure Security Center overview](https://azure.microsoft.com/services/security-center/)
-- [Azure Security Center documentation](https://docs.microsoft.com/azure/security-center/)
-- [Microsoft Antimalware](https://docs.microsoft.com/azure/security/fundamentals/antimalware)
+- [Azure Security Center documentation](/azure/security-center/)
+- [Microsoft Antimalware](/azure/security/fundamentals/antimalware)
 - [Azure Security blog](https://azure.microsoft.com/blog/topics/security/)
-- [ARM template to test a virus attack on an Azure VM](https://aka.ms/ASCPlaybooksVAttack)
+- [ARM template to test a virus attack on an Azure VM](https://azure.microsoft.com/resources/templates/vm-virus-attack-prevention/)

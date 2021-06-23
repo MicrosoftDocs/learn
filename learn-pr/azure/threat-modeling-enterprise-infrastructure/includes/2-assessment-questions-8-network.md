@@ -21,4 +21,4 @@ These questions allow you to:
 |**How is the enterprise network managed?**|<ul><li>VPN and remote network access management process.</li><li>Configuration of allow and deny rules for out-of-band connection points and endpoints.</li><li>Network identity verification.</li><li>Updated network diagrams.</li></ul>|
 
 > [!TIP]
-> Check out [Azure network](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices) for tips on securing your infrastructure network.
+> Check out [Azure network](/azure/security/fundamentals/network-best-practices) for tips on securing your infrastructure network.

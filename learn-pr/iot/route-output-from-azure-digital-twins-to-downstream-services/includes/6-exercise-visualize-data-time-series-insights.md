@@ -7,7 +7,7 @@
     $tsiname=$random+"tsienv"
     az storage account create -g $rgname -n $storage --https-only -l $location
     $key=$(az storage account keys list -g $rgname -n $storage --query [0].value --output tsv)
-    az timeseriesinsights environment longterm create -g $rgname -n $tsiname --location $location --sku-name L1 --sku-capacity 1 --data-retention 7 --time-series-id-properties '$dtId' --storage-account-name $storage --storage-management-key $key -l $location
+    az tsi environment longterm create -g $rgname -n $tsiname --location $location --sku-name L1 --sku-capacity 1 --data-retention 7 --time-series-id-properties '$dtId' --storage-account-name $storage --storage-management-key $key -l $location
     ```
 
 1. After the Time Series Insights environment is provisioned, you need to set up an event source. Use the Event Hub that receives the processed Twin Change events:
@@ -22,7 +22,7 @@
 
     ```powershell
     $id=$(az ad user show --id {subscriptionId} --query objectId -o tsv)
-    az timeseriesinsights access-policy create -g $rgname --environment-name $tsiname -n access1 --principal-object-id $id  --description "some description" --roles Contributor Reader
+    az tsi access-policy create -g $rgname --environment-name $tsiname -n access1 --principal-object-id $id  --description "some description" --roles Contributor Reader
     ```
 
 ## View Time Series Insights data

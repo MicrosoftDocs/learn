@@ -12,7 +12,7 @@ Understanding when to assign the correct type of role to the right user is a fun
 
 Administrator roles in Azure AD allow users elevated access to control who is allowed to do what. You assign these roles to a limited group of users to manage identity tasks in an Azure AD organization. You can assign administrator roles that allow a user to create or edit users, assign administrative roles to others, reset user passwords, manage user licenses, and more.
 
-If your user account has the User Administrator or Global Administrator role, you can create a new user in Azure AD by using either the Azure portal, the Azure CLI, or PowerShell. In PowerShell, use the cmdlet `New-AzureADUser`. In the Azure CLI, use `az ad user create`.
+If your user account has the User Administrator or Global Administrator role, you can create a new user in Azure AD by using either the Azure portal, the Azure CLI, or PowerShell. In PowerShell, run the cmdlet `New-AzureADUser`. In the Azure CLI, use `az ad user create`.
 
 ## Member users
 
@@ -30,7 +30,7 @@ Your organization might need to work with an external partner. To collaborate wi
 
 You can add individual user accounts through the Azure portal, Azure PowerShell, or the Azure CLI.
 
-If you want to use the Azure CLI, use the following cmdlet:
+If you want to use the Azure CLI, run the following cmdlet:
 
 ```azurecli
 # create a new user
@@ -39,7 +39,7 @@ az ad user create
 
  This command creates a new user by using the Azure CLI.
 
-For Azure PowerShell, use the following cmdlet:
+For Azure PowerShell, run the following cmdlet:
 
 ```powershell
 # create a new user
@@ -70,6 +70,6 @@ You create the comma-separated values (CSV) file with the list of all the users 
 
 ## Delete user accounts
 
-You can also delete user accounts through the Azure portal, Azure PowerShell, or the Azure CLI. In PowerShell, use the cmdlet `Remove-AzureADUser`. In the Azure CLI, use the cmdlet `az ad user delete`. 
+You can also delete user accounts through the Azure portal, Azure PowerShell, or the Azure CLI. In PowerShell, run the cmdlet `Remove-AzureADUser`. In the Azure CLI, run the cmdlet `az ad user delete`.
 
 When you delete a user, the account remains in a suspended state for 30 days. During that 30-day window, the user account can be restored.

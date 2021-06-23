@@ -2,13 +2,13 @@ The Core Tools give you a way to get started developing functions locally by cre
 
 You've decided to start your work with Azure Functions by locally developing a function that computes simple interest. Eventually you'll work your way up to more complex functions that work together and call other services and databases, but using the Core Tools to build a function that performs a basic loan calculation is a good start. You also want to try calling your function on your own computer before publishing it to Azure.
 
-In this exercise, we'll create and run our first function from the Cloud Shell command line using the Core Tools.
+In this exercise, we'll create and run our first function from Azure Cloud Shell command line using the Core Tools.
 
 ## Create a local Azure Functions project
 
-In this exercise, we'll use the in-browser Cloud Shell to develop our function. The Cloud Shell system has the Core Tools and Azure CLI preinstalled, as well as an editor we'll use to write code. Make sure to activate the sandbox above before proceeding.
+In this exercise, we'll use Cloud Shell to develop our function. Cloud Shell system has the Core Tools and Azure CLI preinstalled, as well as an editor we'll use to write code. Make sure to activate the sandbox above before proceeding.
 
-1. In the Cloud Shell pane on the right, create a new directory called `loan-wizard` and `cd` into it.
+1. In Cloud Shell pane on the right, create a new directory called `loan-wizard` and `cd` into it.
 
     ```bash
     mkdir ~/loan-wizard
@@ -21,9 +21,9 @@ In this exercise, we'll use the in-browser Cloud Shell to develop our function. 
     func init
     ```
 
-1. When prompted to select a worker runtime, choose **node**.
+1. When prompted to select a worker runtime, choose **node** (enter **2**).
 
-1. When prompted to select a language, choose **javascript**.
+1. When prompted to select a language, choose **javascript** (enter **1**).
 
     The output from the tool will indicate the files being written to disk. You'll see **host.json** and **local.settings.json**, as well as a few other files. **package.json** is a JavaScript-specific file that keeps track of any packages you install and use within your code. **.gitignore** and **extensions.json** are configuration files that can be used by the Git version control tool and Visual Studio Code, respectively, but you can ignore them for now.
 
@@ -31,7 +31,7 @@ In this exercise, we'll use the in-browser Cloud Shell to develop our function. 
 
 Let's create our function!
 
-1. In the Cloud Shell pane, run `func new` to start the function creation wizard.
+1. In Cloud Shell, run `func new` to start the function creation wizard.
 
     ```bash
     func new
@@ -39,17 +39,17 @@ Let's create our function!
 
     Note that we're running `func new` from inside the `loan-wizard` project folder we just created, which is important.
 
-1. When prompted, select the **HTTP trigger** template option.
+1. When prompted to select a template, select the **HTTP trigger** (enter **8**) template option.
 
 1. When prompted, enter **simple-interest** as the function name.
 
-1. Open the Cloud Shell editor.
+1. Open Cloud Shell editor by running the following command.
 
     ```bash
     code .
     ```
 
-    ![Viewing the simple-interest function in the Cloud Shell code editor](../media/3-functions-project-view.png)
+    ![Viewing the simple-interest function in Cloud Shell code editor](../media/3-functions-project-view.png)
 
     The wizard has created a new folder in our functions project called **simple-interest**, and generated default **index.js** and **function.json** files in it. If you like, take a moment now to explore the project files in the editor.
 
@@ -91,7 +91,7 @@ The function implementation that the Core Tools created for us in **index.js** l
 
 To run our new function locally and try it out, we'll use `func start` to start the functions runtime.
 
-1. Run `func start` to start the local functions host. As with `func new`, your shell should still be in the `loan-wizard` directory.
+1. Run `func start` to start the local functions host. As with `func new`, Cloud Shell should still be in the `loan-wizard` directory.
 
     ```bash
     func start
@@ -99,9 +99,9 @@ To run our new function locally and try it out, we'll use `func start` to start 
 
     At the end of the output, you'll see a message that the simple-interest function is available at the URL `http://localhost:7071/api/simple-interest`. If you see an error message, press <kbd>Ctrl+C</kbd> to stop the host, and make sure that the contents of your index.js file are the same as the sample above.
 
-    This localhost URL is not published to the web, it's only reachable from tools running in the Cloud Shell. We're going to use a command-line tool, `curl`, to interact with our function. To do that, we need to restart the Functions host as a background process so we can use the command line while it's running.
+    This localhost URL is not published to the web, it's only reachable from tools running in Cloud Shell. We're going to use a command-line tool, `curl`, to interact with our function. To do that, we need to restart the Functions host as a background process so we can use the command line while it's running.
 
-    If you were using the Core Tools from your own computer, you probably wouldn't need to do this. You could use `curl` from a second terminal window, and the output produced by the Core Tools would be displayed in real time in the first window. In the Cloud Shell, we are limited to a single terminal, so this technique is necessary for this tutorial.
+    If you were using the Core Tools from your own computer, you probably wouldn't need to do this. You could use `curl` from a second terminal window, and the output produced by the Core Tools would be displayed in real time in the first window. In Cloud Shell, we are limited to a single terminal, so this technique is necessary for this tutorial.
 
 1. Press <kbd>Ctrl+C</kbd> to stop the Functions host.
 

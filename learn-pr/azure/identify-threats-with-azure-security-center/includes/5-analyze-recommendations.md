@@ -10,11 +10,11 @@ Here you can identify the severity of the issue, and get help on correcting each
 
 ## View recommendations by category
 
-Under the **RESOURCE SECURITY HYGIENE** header in Security Center, you can examine specific recommendations based on category. For example, the **Compute & apps** section of Azure Security Center provides recommendations for Azure VMs, non-Azure computers (standard-tier), App Services, Containers, and VM scale sets.
+In the **Security Center**, select **View all recommendations in Security Center**. The **Recommendations** pane appears wherein you can examine specific recommendations based on category. For example, the **Compute & apps** section of Azure Security Center provides recommendations for Azure VMs, non-Azure computers (standard-tier), App Services, Containers, and VM scale sets.
 
 ![Screenshot showing the Compute & App recommendations from Security Center](../media/4-compute-apps-recommendations.png)
 
-As in the secure score screen, some recommendations can be fixed directly from the Security Center dashboard while other issues require you to perform some steps on the resource. For example, in the previous image, the **System updates should be installed on your machines** will only give you the list of computers that need updates. To address this issue you would use a solution such as Windows Update Services (WSUS).
+As in the secure score pane, some recommendations can be fixed directly from the Security Center dashboard while other issues require you to perform some steps on the resource. For example, in the previous image, the **System updates should be installed on your machines** will only give you the list of computers that need updates. To address this issue you would use a solution such as Windows Update Services (WSUS).
 
 Each recommendation can be selected to get more details. For issues which need manual remediation, you will get a list of steps to perform. For example, selecting the **Virtual machines should be migrated to new Azure Resource Manager resources** will show the following screen.
 
@@ -33,15 +33,13 @@ VMs are particularly important to protect as they often have a broader attack su
 
 Security Center lists similar sections for Networking, IoT Hubs, Data & storage, Identity & access, and other security products such as the Next Generation Firewall and Web Application Firewall.
 
-![Screenshot of the various sections you can explore in Security Center](../media/4-resource-security-hygiene.png)
-
-Try selecting each item in the **RESOURCE SECURITY HYGIENE** section to see examples of recommendations Security Center makes for each area.
+Try selecting each item under the **All recommendations** tab to see examples of recommendations Security Center makes for each area.
 
 ### Disable security recommendations
 
 It's recommended to leave all the security policies enabled; however, sometimes a recommendation will be generated that isn't relevant to your environment. You can turn it off by disabling the security policy that is sending the recommendation.
 
-1. In the **Policy & Compliance** section, select **Security policy**.
+1. In the **Recommendations** pane, select a recommendation.
 
     ![Screenshot of the policy management screen in Security Center](../media/3-policy-management.png)
 

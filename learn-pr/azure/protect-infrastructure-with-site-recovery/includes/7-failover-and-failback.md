@@ -1,4 +1,4 @@
-Azure Site Recovery enables your organization to have flexibility - either manually failing over to a secondary Azure region, or failing back to a source virtual machine. The simplest way to manage this process is manually on the Azure portal. You do have other options to enable automation if your company wants to automate triggering a failover. These options include technologies like scripting via PowerShell, or setting up runbooks in Azure Automation to orchestrate failovers.
+Azure Site Recovery enables your organization to have flexibility - either manually failing over to a secondary Azure region, or failing back to a source VM. The simplest way to manage this process is manually on the Azure portal. You do have other options to enable automation if your company wants to automate triggering a failover. These options include technologies like scripting via PowerShell, or setting up runbooks in Azure Automation to orchestrate failovers.
 
 Follow these steps to run through a full failover of a protected VM to a secondary region in your subscription. After the failover has completed successfully, you'll then fail back that VM.
 

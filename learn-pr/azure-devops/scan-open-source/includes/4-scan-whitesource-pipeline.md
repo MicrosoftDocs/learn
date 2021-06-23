@@ -37,25 +37,25 @@ Here you'll install the **WhiteSource Bolt** extension for Microsoft Azure Pipel
 1. Search for "WhiteSource Bolt".
 1. Select **WhiteSource Bolt** from the results.
 
-    ![Screenshot of Azure DevOps Marketplace showing results for a search of "WhiteSource Bolt".](../media/4-marketplace-whitesource-bolt.png)
+    :::image type="content" source="../media/4-marketplace-whitesource-bolt.png" alt-text="Screenshot of Azure DevOps Marketplace showing results for a search of WhiteSource Bolt.":::
 1. Select **Get it free**.
 1. Select your Microsoft Azure DevOps organization from the drop-down box.
 1. Select **Install**.
 1. From Azure DevOps, go to your project. Then go to **Pipelines**.
 1. Go to the **WhiteSource Bolt** tab.
 
-    ![Screenshot of Azure Pipelines menu showing the WhiteSource Bolt menu item highlighted.](../media/4-pipelines-whitesource-menu.png)
+    :::image type="content" source="../media/4-pipelines-whitesource-menu.png" alt-text="Screenshot of Azure Pipelines menu showing the WhiteSource Bolt menu item highlighted.":::
 
     You see a form that asks for your email address and company name.
 
-   ![Screenshot of the Activate WhiteSource Bolt pane with an email and company name entered.](../media/4-activate-whitesource.png)
+   :::image type="content" source="../media/4-activate-whitesource.png" alt-text="Screenshot of the Activate WhiteSource Bolt pane with an email and company name entered.":::
 
     Enter the required information.
 1. Select **Get Started**.
 
 ## Add tasks to the pipeline configuration
 
-Here you'll use the built-in task `WhiteSource Bolt@20` that's provided by the WhiteSource Bolt extension to scan your open-source dependencies when the pipeline runs.
+Here you'll use the built-in task `WhiteSource@21` that's provided by the WhiteSource Bolt extension to scan your open-source dependencies when the pipeline runs.
 
 > [!IMPORTANT]
 > The major version number for WhiteSource Bolt that you noted earlier must match the version number of the `WhiteSource Bolt` task. At the time of this writing the version was 20.
@@ -64,7 +64,7 @@ Here you'll use the built-in task `WhiteSource Bolt@20` that's provided by the W
 
     [!code-yml[](code/4-azure-pipelines.yml?highlight=57-58)]
 
-    The `WhiteSource Bolt@20` task, which runs before the `PublishBuildArtifacts@1` task, is highlighted. It analyzes your open-source dependencies for known vulnerabilities, as well as licenses and prepares reports that you can review directly from Azure Pipelines.
+    The `WhiteSource@21` task, which runs before the `PublishBuildArtifacts@1` task, is highlighted. It analyzes your open-source dependencies for known vulnerabilities, as well as licenses and prepares reports that you can review directly from Azure Pipelines.
 
 ## Watch Azure Pipelines build the application
 
@@ -82,17 +82,17 @@ Here you'll push your changes to GitHub and see the pipeline run. Recall that yo
 
     You see the scan task complete successfully.
 
-    ![Screenshot of WhiteSource scan completed in pipeline: Publish the project - Release, Run WhiteSource Bolt, and Publish Artifact: drop are all marked "succeeded".](../media/4-scan-success.png)
+    :::image type="content" source="../media/4-scan-success.png" alt-text="Screenshot of WhiteSource scan completed in pipeline: Publish the project - Release, Run WhiteSource Bolt, and Publish Artifact: drop are all marked succeeded.":::
 
 1. Select the completed **Run WhiteSource Bolt** task, and then scroll to the bottom of the report details for that task.
 
-    ![Screenshot of WhiteSource scan pipeline output ending with "##[section]Finishing: Run WhiteSource Bolt".](../media/4-scan-task-detail.png)
+    :::image type="content" source="../media/4-scan-task-detail.png" alt-text="Screenshot of WhiteSource scan pipeline output.":::
 
     You see that the data is being uploaded for the scan report.
 
 1. When the build completes, navigate to the **WhiteSource Bolt Build Report** tab.
 
-    ![Screenshot of WhiteSource report screen with a vulnerability score of medium and several medium-rated vulnerabilities listed.](../media/4-scan-report.png)
+    :::image type="content" source="../media/4-scan-report.png" alt-text="Screenshot of WhiteSource report screen with a vulnerability score of medium and several medium-rated vulnerabilities listed.":::
 
     This image is for illustration. You may see different results based on the current recommendations.
 
@@ -102,13 +102,13 @@ Take a moment to review the findings. You see that there are some issues to addr
 
 1. In the **Security Vulnerabilities** section find the **jquery-3.3.1.js** entry. Then select the CVE link.
 
-    ![Screenshot of jQuery vulnerability CVE entry (CVE-2019-11358).](../media/4-cve-report-jquery.png)
+    :::image type="content" source="../media/4-cve-report-jquery.png" alt-text="Screenshot of jQuery vulnerability CVE entry (CVE-2019-11358).":::
 
     This shows the vulnerability that is associated with this library.
 
 1. Go back to the report and scroll down to the **License Risk and Compliance** section. Notice the list of licenses for the open-source dependencies. While they may all be green, it's  up to the legal team to decide if these are acceptable.
 
-    ![Screenshot of License Risks and Compliance report listing 5 low-risk licenses used and one with an unspecified, unknown-risk license.](../media/4-license-risk.png)
+    :::image type="content" source="../media/4-license-risk.png" alt-text="Screenshot of License Risks and Compliance report listing 5 low-risk licenses used and one with an unspecified, unknown-risk license.":::
 
 The team gets together to look at the results.
 

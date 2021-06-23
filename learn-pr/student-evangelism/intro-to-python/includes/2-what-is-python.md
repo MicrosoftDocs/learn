@@ -10,10 +10,10 @@ Python is an _interpreted language, which reduces the edit-test-debug cycle beca
 
 Most of the runtime environments support two ways to execute Python code:
 
-1. Interactive mode: in this mode, each command you type is interpreted and executed immediately and you see the results each time you press <kbd>ENTER</kbd>. This is the default mode if you don't pass a filename to the interpreter.
-1. Script mode: in script mode, you put a set of Python statements into a text file with a **.py** extension. You then run the `python` interpreter and point it at the file. The program is executed line-by-line and the output is displayed. There is no compilation step as shown in the following diagram.
+- **Interactive mode:** in this mode, each command you type is interpreted and executed immediately and you see the results each time you press <kbd>ENTER</kbd>. The interactive mode is the default mode if you don't pass a filename to the interpreter.
+- **Script mode:** in script mode, you put a set of Python statements into a text file with a **.py** extension. You then run the `python` interpreter and point it at the file. The program is executed line-by-line and the output is displayed. There is no compilation step as shown in the following diagram.
 
-![Diagram showing the execution of a .py file through the Python interpreter](../media/2-python-steps.png)
+:::image type="content" source="../media/2-python-steps.png" alt-text="Diagram showing the execution of a .py file through the Python interpreter":::
 
 > [!NOTE]
 > Most Python implementations do a partial compile of scripts, turning the source code into _byte code_ which can be run on any supported platform. This partial compile is done to improve performance for subsequent runs of the script and happens automatically. You can also generate a "compiled" version of the script and distribute an app without providing the full source code.
@@ -22,12 +22,12 @@ Most of the runtime environments support two ways to execute Python code:
 
 Python is licensed under the OSI open-source license and there are several implementations available depending on your needs. Here are a few of the options available:
 
-- The most popular is the reference implementation (CPython), available from the [Python website](https://www.python.org). CPython is commonly used for web development, application development and scripting. There are install packages for Windows and macOS. Linux users can install Python using built-in package managers such as **apt**, **yum**, and **Zypper**. There is also an online playground where you can try Python statements right on the website. Finally, the complete source code is available allowing you to build your own version of the interpreter.
+- **CPython, the reference implementation**. The most popular is the reference implementation (CPython), available from the [Python website](https://www.python.org). CPython is commonly used for web development, application development and scripting. There are install packages for Windows and macOS. Linux users can install Python using built-in package managers such as **apt**, **yum**, and **Zypper**. There is also an online playground where you can try Python statements right on the website. Finally, the complete source code is available allowing you to build your own version of the interpreter.
 
-- [Anaconda](https://www.anaconda.com) is a specialized Python distribution tailored for scientific programming tasks such as data science and machine learning.
+- **Anaconda**, is a specialized Python distribution tailored for scientific programming tasks such as data science and machine learning. [Check out more details on Anaconda here](https://www.anaconda.com).
 
-- [IronPython](https://ironpython.net/) is an open-source implementation of Python built on the .NET runtime.
+- **Iron Python**, is an open-source implementation of Python built on the .NET runtime. [Learn more about IronPython](https://ironpython.net/)
 
-- [Jupyter notebooks](https://jupyter.org) is a web-based interactive programming environment that supports various programming languages including Python. Jupyter notebooks are widely used in research and academia for mathematical modeling, machine learning, statistical analysis, and for teaching and learning how to code.
+- **Jupyter Notebook**, is a web-based interactive programming environment that supports various programming languages including Python. Jupyter notebooks are widely used in research and academia for mathematical modeling, machine learning, statistical analysis, and for teaching and learning how to code. [Install Jupyter notebooks](https://jupyter.org).
 
-We'll use the Azure Cloud Shell to develop with Python in this module, but the summary has links to download and install Python on your local computer once you have completed this module.
+You'll use the Azure Cloud Shell to develop with Python in this module, but the summary has links to download and install Python on your local computer once you have completed this module.

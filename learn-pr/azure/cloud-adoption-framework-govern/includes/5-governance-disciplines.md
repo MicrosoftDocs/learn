@@ -1,10 +1,8 @@
-Common governance disciplines within cloud platforms inform policies, align toolchains, and help organizations to determine how to best automate and enforce corporate policies across their unique cloud platforms.
-
-## Governance disciplines
+Common governance disciplines within cloud platforms inform policies, align toolchains, and help organizations determine how best to automate and enforce corporate policies across their unique cloud platforms.
 
 The following table summarizes each discipline from the Govern methodology in the Cloud Adoption Framework:
 
-|  |  |
+| &nbsp; | &nbsp; |
 |--|--|
 | <br> :::image type="content" source="../media/cost-management-icon.png" alt-text="Cost management icon." border="false"::: | <br> [Cost Management discipline](/azure/cloud-adoption-framework/govern/cost-management/?azure-portal=true): Cost is a primary concern for cloud users. Develop policies for cost control for all cloud platforms. |
 | <br> :::image type="content" source="../media/security-baseline-icon.png" alt-text="Security baseline icon." border="false"::: | <br> [Security Baseline discipline](/azure/cloud-adoption-framework/govern/security-baseline/?azure-portal=true): Security is a complex subject that's unique to each company. Once security requirements are established, cloud governance policies and enforcement apply those requirements across network, data, and asset configurations.|
@@ -14,67 +12,68 @@ The following table summarizes each discipline from the Govern methodology in th
 
 ## Resource Consistency discipline
 
-Resource consistency focuses on the initial organization of resources required to establish a foundation for governance. Long term, this discipline focuses on proper onboarding processes to ensure that all assets meet any operational support requirements.
+### Cost Management discipline
 
-:::image type="content" source="../media/resource-consistency.png" alt-text="The Resource Consistency baseline." border="false":::
+This discipline focuses on scaling the operational best practices for cost management across all workloads and assets in your portfolio.
 
-*Figure 1: Resource Consistency.*
+This discipline would help Tailwind Traders address the following risk:
 
-This discipline would help Tailwind Traders to address the following risks from the prior unit:
+- Overspending in the cloud.
 
-- Operations management issues or oversights
+Later, we'll demonstrate how Tailwind Traders can add cost controls to its governance foundation.
 
-A future unit in this module will apply this discipline to the early needs of our customer narrative, Tailwind Traders.
-
-## Cost Management discipline
-
-This discipline focuses on scaling the operational best practices for cost management, across all workloads and assets in your portfolio.
-
-This discipline would help Tailwind Traders to address the following risk from the prior unit:
-
-- Overspending in the cloud
-
-A future unit in this module will demonstrate how Tailwind Traders can add cost controls to their governance foundation.
-
-## Security Baseline discipline
+### Security Baseline discipline
 
 This discipline focuses on automating the application of security principles to ensure consistency across your environment.
 
-:::image type="content" source="../media/security-baseline.png" alt-text="The security baseline." border="false":::
+:::image type="content" source="../media/security-baseline.png" alt-text="Diagram of components in the security baseline." border="false":::
 
-*Figure 3: The Security Baseline discipline.*
+*Figure 2: The Security Baseline discipline.*
 
-This discipline would help Tailwind Traders to address the following risks from the prior unit:
+This discipline would help Tailwind Traders address the following risks:
 
-- The organization not meeting security or compliance requirements
-- Unauthorized access compromising systems or data
+- The organization not meeting security or compliance requirements.
+- Unauthorized access compromising systems or data.
 
-## Identity Baseline discipline
+### Identity Baseline discipline
 
-Once you've established identity and access requirements for your cloud environment, this discipline ensures that those requirements are consistently applied to all workloads and assets.
+After you've established identity and access requirements for your cloud environment, this discipline ensures that those requirements are consistently applied to all workloads and assets.
 
-:::image type="content" source="../media/identity-baseline.png" alt-text="The Identity Baseline discipline." border="false":::
+:::image type="content" source="../media/identity-baseline.png" alt-text="Diagram of components in the Identity Baseline discipline." border="false":::
 
-*Figure 4: The Identity Baseline discipline.*
+*Figure 3: The Identity Baseline discipline.*
 
-This discipline would help Tailwind Traders to address the following risk from the prior unit:
+This discipline would help Tailwind Traders to address the following risk:
 
-- Unauthorized access compromising systems or data
+- Unauthorized access compromising systems or data.
 
-## Deployment Acceleration discipline
+### Resource Consistency discipline
 
-Automating governance leads to automation in adoption. Providing infrastructure-as-code templates to the various adoption teams allows them to quickly deploy workloads into compliant, well-managed environments.
+Resource consistency focuses on the initial organization of the resources that are required to establish a foundation for governance. In the long term, this discipline focuses on proper onboarding processes to ensure that all assets meet any operational support requirements.
 
-:::image type="content" source="../media/deployment-acceleration.png" alt-text="The Deployment Acceleration discipline." border="false":::
+:::image type="content" source="../media/resource-consistency.png" alt-text="Image that demonstrates the Resource Consistency baseline as a hierarchy of resources." border="false":::
 
-*Figure 5: The Deployment Acceleration discipline.*
+*Figure 1: The Resource Consistency discipline.*
 
-This discipline would help Tailwind Traders to address the following risk from the prior unit:
+This discipline would help Tailwind Traders address the following risks:
 
-- Inconsistent governance due to immature processes and lack of skills on the team
+- Operations management issues or oversights.
 
-## Summary
+Later, we'll apply this discipline to the early needs of our customer narrative for Tailwind Traders.
 
-The five disciplines of the Govern methodology in the Cloud Adoption Framework help establish the right collection of processes, tools, and automation to address common risks and concerns. Understanding these disciplines can help Tailwind Traders to discover and address tangible risks and concerns and address against a prioritized backlog.
+### Deployment Acceleration discipline
 
-In the next units, we will explore technical solutions to help you get started with a cloud governance foundation to support each discipline. We'll also look at some technical solutions to address cost-management-related risks.
+Automating governance leads to automation in adoption. Providing infrastructure as code (IaC) templates to the various adoption teams helps them quickly deploy workloads into compliant, well-managed environments.
+
+:::image type="content" source="../media/deployment-acceleration.png" alt-text="Diagram that demonstrates the Deployment Acceleration discipline." border="false":::
+
+*Figure 4: The Deployment Acceleration discipline.*
+
+This discipline would help Tailwind Traders to address the following risk:
+
+- Inconsistent governance due to immature processes and lack of skills on the team.
+
+The five disciplines of the Govern methodology in the Cloud Adoption Framework help establish the right collection of processes, tools, and automation to address common risks and concerns. Understanding these disciplines can help Tailwind Traders discover and address tangible risks and concerns, and then address them against a prioritized backlog.
+
+In the next units, we'll explore technical solutions to help you get started with a cloud governance foundation to support each discipline. We'll also look at some technical solutions that address risks related to managing costs.
+

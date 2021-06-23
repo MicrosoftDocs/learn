@@ -21,7 +21,7 @@ If you don’t use any of these CRM systems, you'll still be able to see your le
 > [!IMPORTANT]
 > If you don’t configure your lead destination in Partner Center, you will not be able to access the customer leads from your listing. Microsoft adheres to strict privacy policies regarding our customers’ personally identifiable information (PII), which means we won’t be able to resend leads to publishers that haven’t configured their lead management connection.
 
-For detailed instructions on configuring your lead management connection in Partner Center and deciphering lead data, you can reference our [documentation on customer leads from your commercial marketplace offer](https://docs.microsoft.com/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads).
+For detailed instructions on configuring your lead management connection in Partner Center and deciphering lead data, you can reference our [documentation on customer leads from your commercial marketplace offer](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads).
 
 ## Lead management best practices
 
@@ -32,7 +32,7 @@ As you get ready to engage your customers through the commercial marketplace, co
 **Qualify**: Before you start getting leads from Microsoft, make sure your lead qualification process is adapted for your commercial marketplace leads. This means training your sales and marketing representatives to interpret incoming marketplace leads so that you’re following up with different types of leads in the best way. Marketplace leads contain valuable information about the ways that potential customers interacted with your solution in the marketplace. This information is typically found in the “LeadSource” field in lead data you’ll receive from Microsoft.
 
 > [!NOTE]
-> For more information on deciphering lead data, you can reference our **[documentation on understanding lead data](https://docs.microsoft.com/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads#understand-lead-data)**.
+> For more information on deciphering lead data, you can reference our **[documentation on understanding lead data](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads#understand-lead-data)**.
 
 **Follow-up + nurture**: When you receive leads from your listing, follow-up in a timely manner to catch potential customers while they still have your product in mind. Focus on determining if your solution is a good fit for the customer, following up as needed until you can close out the opportunity.
 

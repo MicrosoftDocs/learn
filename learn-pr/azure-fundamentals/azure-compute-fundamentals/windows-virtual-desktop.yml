@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-compute-fundamentals.windows-virtual-desktop
-title: Decide when to use Windows Virtual Desktop
+title: Decide when to use Azure Virtual Desktop
 metadata:
-  title: Decide when to use Windows Virtual Desktop
-  description: "In this unit, you'll learn about Windows Virtual Desktop."
-  ms.date: 05/20/2021
+  title: Decide when to use Azure Virtual Desktop
+  description: "In this unit, you'll learn about Azure Virtual Desktop."
+  ms.date: 06/10/2021
   author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial

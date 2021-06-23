@@ -30,7 +30,17 @@ Batch transcription supports WAV, MP3, and OGG file formats, and functions acros
 
 In the example below, we can see a JSON request to transcribe in English everything within an Azure blob container and provide timestamps.
 
-JSON EXAMPLE TO BE ADDED
+```JSON
+{
+    "contentContainerUrl": "<SAS URL to the Azure blob container to transcribe>",
+    "properties": {
+        "wordLevelTimestampsEnabled": true
+    },
+    "locale": "en-US",
+    "displayName": "Transcription of container using default model for en-US"
+}
+
+```
 
 ## Custom speech-to-text
 

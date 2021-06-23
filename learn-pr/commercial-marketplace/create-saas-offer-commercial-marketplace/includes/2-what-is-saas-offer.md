@@ -52,9 +52,9 @@ Choosing to sell your offer through Microsoft is an important decision that has 
 
   - Cost savings and operational efficiencies as Microsoft takes on billing, collections, currency conversions, and taxation for purchases from the commercial marketplace.
   
-  - More valuable [Marketplace Rewards](https://docs.microsoft.com/azure/marketplace/gtm-your-marketplace-benefits) program benefits that are unlocked when your offer reaches revenue milestones through marketplace.
+  - More valuable [Marketplace Rewards](/azure/marketplace/gtm-your-marketplace-benefits) program benefits that are unlocked when your offer reaches revenue milestones through marketplace.
 
-  - The ability to take advantage of customers’ Azure [consumption commitment benefit](https://docs.microsoft.com/azure/marketplace/azure-consumption-commitment-benefit). This benefit makes it possible for customers to purchase qualified offers from the commercial marketplace and receive credit against their Microsoft Azure Consumption Commitment (MACC). This streamlines purchasing and budgeting for customers with existing enterprise agreements (EA) or Microsoft Customer Agreements (MCA).
+  - The ability to take advantage of customers’ Azure [consumption commitment benefit](/azure/marketplace/azure-consumption-commitment-benefit). This benefit makes it possible for customers to purchase qualified offers from the commercial marketplace and receive credit against their Microsoft Azure Consumption Commitment (MACC). This streamlines purchasing and budgeting for customers with existing enterprise agreements (EA) or Microsoft Customer Agreements (MCA).
 
 ### Summary
 

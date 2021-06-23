@@ -33,4 +33,4 @@ Use the Azure portal to get both of these values.
 1. Save the URL into the same text file you previously created.
 
 > [!IMPORTANT]
-> The Storage account access keys allow _full-access_ to the contents in the storage account. Never disclose these keys to untrusted parties or third-party applications. For more information on how to manage the security of your storage account, see the [Secure your Azure Storage account](https://docs.microsoft.com/learn/modules/secure-azure-storage-account/) module.
+> The Storage account access keys allow _full-access_ to the contents in the storage account. Never disclose these keys to untrusted parties or third-party applications. For more information on how to manage the security of your storage account, see the [Secure your Azure Storage account](/learn/modules/secure-azure-storage-account/) module.

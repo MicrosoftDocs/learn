@@ -4,13 +4,13 @@ This pattern relies on the twin updates rather than forwarding telemetry from an
 
 To continue, choose one of these options:
 
-- If you've been following the **Develop with Azure Digital Twins** learning path modules in sequence, have successfully completed all exercises in [Module 3: Ingest data into Azure Digital Twins](https://docs.microsoft.com/learn/modules/develop-with-azure-digital-twins/ingest-data-into-azure-digital-twins/), and have kept the solution resources in your Azure subscription, skip to [Create a route and filter for twin update notifications](https://docs.microsoft.com/learn/modules/develop-with-azure-digital-twins/route-output-from-azure-digital-twins-to-downstream-services/4-exercise-create-route-filter-twin-update-notifications).
+- If you've been following the **Develop with Azure Digital Twins** learning path modules in sequence, have successfully completed all exercises in [Module 3: Ingest data into Azure Digital Twins](/learn/modules/develop-with-azure-digital-twins/ingest-data-into-azure-digital-twins/), and have kept the solution resources in your Azure subscription, skip to [Create a route and filter for twin update notifications](/learn/modules/develop-with-azure-digital-twins/route-output-from-azure-digital-twins-to-downstream-services/4-exercise-create-route-filter-twin-update-notifications).
 
 - If you haven't completed the previous modules and you still want to proceed with the exercises in this module, continue with the following steps.
 
 ## Deploy an ARM template
 
-This step is required to re-provision the resources created in [Module 3: Ingest data into Azure Digital Twins](https://docs.microsoft.com/learn/modules/develop-with-azure-digital-twins/ingest-data-into-azure-digital-twins/).
+This step is required to re-provision the resources created in [Module 3: Ingest data into Azure Digital Twins](/learn/modules/develop-with-azure-digital-twins/ingest-data-into-azure-digital-twins/).
 
 1. Select **Deploy to Azure**: 
 
@@ -55,7 +55,7 @@ This step is required to re-provision the resources created in [Module 3: Ingest
 
 1. Copy the list of variables you had in Notepad and run them in PowerShell to continue working locally in the next exercises.
 
-You now have an Azure digital twin of a factory production line! You can view your digital twin by using a sample application like [Azure Digital Twins Explorer](https://docs.microsoft.com/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/). Azure Digital Twins Explorer also provides capabilities like uploading models, creating twins, creating relationships, and updating twin properties.
+You now have an Azure digital twin of a factory production line! You can view your digital twin by using a sample application like [Azure Digital Twins Explorer](/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/). Azure Digital Twins Explorer also provides capabilities like uploading models, creating twins, creating relationships, and updating twin properties.
 
 :::image type="content" source="../media/azure-digital-twins-explorer.png" alt-text="Screenshot that shows Azure Digital Twins Explorer.":::
 

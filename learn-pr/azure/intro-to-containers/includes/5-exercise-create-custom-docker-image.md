@@ -89,7 +89,7 @@ In this exercise, you'll create a Dockerfile for an app that doesn't have one. T
 
 ## Test the web app
 
-1. Run a container using the `reservationsystem` image using the following command. Docker will respond with a lengthy string of hex digits – the container runs in the background without any UI. Port 80 in the container is mapped to port 8080 on the host machine. The container is named `reservations`.
+1. Run a container using the `reservationsystem` image running the following command. Docker will respond with a lengthy string of hex digits – the container runs in the background without any UI. Port 80 in the container is mapped to port 8080 on the host machine. The container is named `reservations`.
 
     ```bash
     docker run -p 8080:80 -d --name reservations reservationsystem

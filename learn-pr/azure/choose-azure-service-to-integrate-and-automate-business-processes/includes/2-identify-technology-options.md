@@ -2,13 +2,13 @@ You don't have much time to get business processes properly integrated between y
 
 In this unit, we'll explore the Azure technology options that are available to automate and integrate your business processes.
 
-## Common Business Problems
+## Common business issues
 
-In business, one way to guarantee a high-quality service to users and high-quality products is to design and implement strict business processes. Such processes may involve multiple steps, multiple people, and multiple software packages. Each process may run in a simple line of activities that workers perform one after the other or they may branch or loop. Each process may also run quickly or take days or weeks to complete.
+In business, one way to guarantee high-quality products and service to customers is to design and implement strict business processes. Such processes may involve multiple steps, people, and software packages. Each process may run in a simple line of activities that workers perform one after the other or they may branch or loop. Each process may also run quickly or take days or weeks to complete.
 
 Frequently, a business runs into issues when it merges with a second business or integrates with a partner organization. How can administrators integrate the separate processes used in the two organizations, which may have been implemented using different software?
 
-Business processes modeled in software are often called **workflows**. Azure includes four different technologies that you can use to build and implement workflows that integrate multiple systems:
+Business processes modeled in software are often called *workflows*. Azure includes four different technologies that you can use to build and implement workflows that integrate multiple systems:
 
 - Logic Apps
 - Microsoft Power Automate
@@ -32,7 +32,7 @@ When business analysts discuss and plan a business process, they may draw a flow
 
 :::image type="icon" border="false" source="../media/2-logic-apps-logo.png":::
 
-[Logic Apps](https://azure.microsoft.com/services/logic-apps/) is a service within Azure that you can use to automate, orchestrate, and integrate disparate components of a distributed application. By using the design-first approach in Logic Apps, you can draw out complex workflows that model complex business processes. The following screenshot shows the Logic Apps Designer and design canvas that you use to define your workflow.
+[Logic Apps](https://azure.microsoft.com/services/logic-apps/) is a service within Azure to automate, orchestrate, and integrate disparate components of a distributed application. By using the design-first approach in Logic Apps, you can draw out complex workflows that model complex business processes. The following screenshot shows the Logic Apps Designer and design canvas that you use to define your workflow.
 
 ![Screenshot of the Logic Apps workflow designer in the Azure portal.](../media/2-logic-apps-workflow-designer.png)
 
@@ -46,17 +46,16 @@ One reason why Logic Apps is so good at integration is that [over 200 connectors
 
 :::image type="icon" border="false" source="../media/2-microsoft-flow-logo.png":::
 
-Microsoft [Power Automate](https://flow.microsoft.com/) is a service that you can use to create workflows even when you have no development or IT Pro experience. You can create workflows that integrate and orchestrate many different components by using the website or the Microsoft [Power Automate mobile app](https://flow.microsoft.com/mobile/download/).
+Microsoft [Power Automate](https://flow.microsoft.com/) is a service to create workflows even when you have no development or IT Pro experience. You can create workflows that integrate and orchestrate many different components by using the website or the Microsoft [Power Automate mobile app](https://flow.microsoft.com/mobile/download/).
 
 There are four different types of flow that you can create:
 
-- **Automated**: A flow that is started by a trigger from some event. For example, the event could be the arrival of a new tweet or a new file being uploaded.
-- **Button**: Use a button flow to run a repetitive task with a single click from your mobile device.
-- **Scheduled**: A flow that executes on a regular basis such as once a week, on a specific date, or after 10 hours.
-- **Business process**: A flow that models a business process such as the stock ordering process or the complaints procedure. 
-  The flow process can have: notification to required people; with their approval recorded; calendar dates for steps; and recorded time of flow steps.
+- **Automated**: Starts by a trigger from some event. For example, the event could be the arrival of a new tweet or a new file being uploaded.
+- **Button**: Runs a repetitive task with a single click from your mobile device.
+- **Scheduled**: Runs on a regular basis such like once a week, on a specific date, or after 10 hours.
+- **Business process**: Models a business process such as the stock ordering process or the complaints procedure. The flow process can have: notification to required people; with their approval recorded; calendar dates for steps; and recorded time of flow steps.
 
-Microsoft Power Automate provides an easy-to-use design surface that anyone can use to create flows of the above types. As the following screenshot illustrates, the designer makes it easy to design and layout your process.
+Microsoft Power Automate provides an easy-to-use design surface to create flows of the above types. As the following screenshot illustrates, the designer makes it easy to design and lay out your process.
 
 ![Screenshot of the Microsoft Power Automate designer showing a workflow with a file trigger, an Office action to get a user's profile and an Outlook action to send an email.](../media/2-flow-designer.png)
 
@@ -85,10 +84,10 @@ The [Azure App Service](https://azure.microsoft.com/services/app-service/) is a 
 
 [WebJobs](/azure/app-service/webjobs-create) are a part of the Azure App Service that you can use to run a program or script automatically. There are two kinds of WebJob:
 
-- **Continuous.** These WebJobs run in a continuous loop. For example, you could use a continuous WebJob to check a shared folder for a new photo.
-- **Triggered.** These WebJobs run when you manually start them or on a schedule.
+- **Continuous.** Run in a continuous loop. For example, you could use a continuous WebJob to check a shared folder for a new photo.
+- **Triggered.** Run when you manually start them or on a schedule.
 
-To determine what actions your WebJobs takes, you can write code in several different languages. For example, you can script the WebJob by writing code in a Shell Script (Windows, PowerShell, Bash). Alternatively, you can write a program in PHP, Python, Node.js, or JavaScript.  These WebJOBS do have a few limitations, such as only supporting ASP.NET / SDK 2.x; however SDK 3.x supports .NET Core. 
+To determine what actions your WebJobs takes, you can write code in several different languages. For example, you can script the WebJob by writing code in a Shell Script (Windows, PowerShell, Bash). Alternatively, you can write a program in PHP, Python, Node.js, or JavaScript.  These WebJOBS do have a few limitations, such as only supporting ASP.NET / SDK 2.x; however SDK 3.x supports .NET Core.
 
 You can also program a WebJob by using the .NET Framework or the .NET Core Framework and a .NET language such as C# or VB.NET. In this case, you can also use the WebJobs SDK to make the task easier. The SDK includes a range of classes, such as `JobHostConfiguration` and `HostBuilder`, which reduce the amount of code required to interact with the Azure App Service.
 
@@ -102,12 +101,12 @@ An [Azure Function](https://azure.microsoft.com/services/functions/) is a simple
 
 When you create an Azure Function, you can start by writing the code for it in the portal. Alternatively, if you need source code management, you can use GitHub or Azure DevOps Services.
 
-To create an Azure Function, choose from the range of templates. The following list is an example of some of the templates available to you.
+To create an Azure Function, choose from the range of templates. The following list is a sample of some of the templates available to you:
 
-- **HTTPTrigger**. Use this template when you want the code to execute in response to a request sent through the HTTP protocol.
-- **TimerTrigger**. Use this template when you want the code to execute according to a schedule.
-- **BlobTrigger**. Use this template when you want the code to execute when a new blob is added to an Azure Storage account.
-- **CosmosDBTrigger**. Use this template when you want the code to execute in response to new or updated documents in a NoSQL database.
+- **HTTPTrigger**. When you want the code to execute in response to a request sent through the HTTP protocol.
+- **TimerTrigger**. When you want the code to execute according to a schedule.
+- **BlobTrigger**. When you want the code to execute when a new blob is added to an Azure Storage account.
+- **CosmosDBTrigger**. When you want the code to execute in response to new or updated documents in a NoSQL database.
 
 Azure Functions can integrate with many different services both within Azure and from third parties. These services can trigger your function, or send data input to your function, or receive data output from your function.
 
@@ -120,13 +119,13 @@ In most cases, the simple administration and more flexible coding model provided
 
 | | Azure WebJobs | Azure Functions |
 | -- | --| -- |
-| Supported languages | C# if you are using the WebJobs SDK | C#, Java, JavaScript, PowerShell, etc. |
+| Supported languages | C# if you are using the WebJobs SDK | C#, Java, JavaScript, PowerShell, and so on |
 | Automatic scaling | No | Yes |
 | Development and testing in a browser | No | Yes |
 | Pay-per-use pricing | No | Yes |
 | Integration with Logic Apps | No | Yes |
 | Package managers | NuGet if you are using the WebJobs SDK | Nuget and NPM |
-| Can be part of an App Service application | Yes | No |
+| Can be part of an App Service application | Yes | Yes (hosted under App Service plan) |
 | Provides close control of `JobHost` | Yes | No |
 
 Now that you know what design-first and code-first technologies are available to you, how do you narrow your choices? We'll look at this question in the next unit.

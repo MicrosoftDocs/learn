@@ -9,7 +9,7 @@ To limit the risks of disrupting your customers' production and the cost of a la
 
 ## Manage group of devices with Device Twins tags
 
-The first thing that you will need to do when managing groups of devices via Azure IoT Hub is to assign meta data to your devices to group them depending on their location, the hardware version, the customer's name. To store that metadata and make it available to your solution, you can use the Device Twins tags. See [Understand and use device twins in Azure IoT Hub](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-device-twins) to learn more.
+The first thing that you will need to do when managing groups of devices via Azure IoT Hub is to assign meta data to your devices to group them depending on their location, the hardware version, the customer's name. To store that metadata and make it available to your solution, you can use the Device Twins tags. See [Understand and use device twins in Azure IoT Hub](/azure/iot-hub/iot-hub-devguide-device-twins) to learn more.
 
 ## Putting theory in practice
 

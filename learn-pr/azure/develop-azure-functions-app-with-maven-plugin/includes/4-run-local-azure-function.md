@@ -10,7 +10,7 @@ At this time, there are three versions of the Azure Functions Core Tools. Howeve
 
 > [!NOTE]
 >
->  If you used your personal Azure account instead of the Cloud Shell in the Learn sandbox, you would need to consult [Work with Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local) for descriptions, requirements, and installation instructions for the different versions of the Azure Functions Core Tools.
+>  If you used your personal Azure account instead of the Cloud Shell in the Learn sandbox, you would need to consult [Work with Azure Functions Core Tools](/azure/azure-functions/functions-run-local) for descriptions, requirements, and installation instructions for the different versions of the Azure Functions Core Tools.
 >
 
 ## Configuring the Cloud Shell environment for testing

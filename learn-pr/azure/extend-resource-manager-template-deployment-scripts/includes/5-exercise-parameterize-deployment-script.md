@@ -4,7 +4,14 @@ The team's process has similar requirements, but the team needs to deploy multip
 
 In this exercise, you'll take your previous template as a starting point and update the PowerShell script to use the one from your partner team. Then you'll add a way to enable the person who's deploying the template to specify what configuration files to deploy (one or more).
 
-This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
+During the process, you'll:
+
+> [!div class="checklist"]
+> * Update the deployment script.
+> * Add an environment variable and template parameter, and pass these to your deployment script.
+> * Add an output to the deployment script.
+> * Add a parameters file.
+> * Deploy the template, and verify the outcome.
 
 ## Create the starting template
 
@@ -183,11 +190,11 @@ Because you're changing the deployment script to deploy one or more files, you n
 
 1. Update the `outputs` in the template to return the whole object, which will have a URI per file.
 
-    :::code language="json" source="code/5-template-with-deploymentscript-parameters.json" range="142-151" highlight="3-4" :::
+    :::code language="json" source="code/5-template-with-deploymentscript-parameters.json" range="126-135" highlight="3-4" :::
 
 1. Add another output with the storage account name (which has a random identifier). You'll use this later to validate that the deployment script did what you expected.
 
-    :::code language="json" source="code/5-template-with-deploymentscript-parameters.json" range="142-151" highlight="6-9" :::
+    :::code language="json" source="code/5-template-with-deploymentscript-parameters.json" range="126-135" highlight="6-9" :::
 
 ::: zone-end
 
@@ -284,7 +291,7 @@ deploymentName="deploymentscript-"$today
 az deployment group create \
     --resource-group $resourceGroupName \
     --name $deploymentName \
-    --template-file $templateFile
+    --template-file $templateFile \
     --parameters $templateParameterFile
 ```
 
@@ -318,7 +325,7 @@ New-AzResourceGroupDeployment `
 Deploy the template by using Azure CLI commands in the Visual Studio Code terminal.
 
 ```azurecli
-templateFile="azuredeploy.bicep"
+templateFile="main.bicep"
 templateParameterFile="azuredeploy.parameters.json"
 today=$(date +"%d-%b-%Y")
 deploymentName="deploymentscript-"$today
@@ -326,7 +333,7 @@ deploymentName="deploymentscript-"$today
 az deployment group create \
     --resource-group $resourceGroupName \
     --name $deploymentName \
-    --template-file $templateFile
+    --template-file $templateFile \
     --parameters $templateParameterFile
 ```
 

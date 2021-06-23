@@ -6,7 +6,7 @@ Next, you saw how to take recovery time objectives and recovery point objectives
 
 To learn more about Azure Site Recovery, see the following articles:
 
-- [Azure Site Recovery overview](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview)
-- [VMware disaster recovery overview](https://docs.microsoft.com/azure/site-recovery/vmware-azure-about-disaster-recovery)
-- [Hyper-V to Azure disaster recovery architecture](https://docs.microsoft.com/azure/site-recovery/hyper-v-azure-architecture)
-- [Physical server to Azure disaster recovery architecture](https://docs.microsoft.com/azure/site-recovery/physical-azure-architecture)
+- [Azure Site Recovery overview](/azure/site-recovery/site-recovery-overview)
+- [VMware disaster recovery overview](/azure/site-recovery/vmware-azure-about-disaster-recovery)
+- [Hyper-V to Azure disaster recovery architecture](/azure/site-recovery/hyper-v-azure-architecture)
+- [Physical server to Azure disaster recovery architecture](/azure/site-recovery/physical-azure-architecture)

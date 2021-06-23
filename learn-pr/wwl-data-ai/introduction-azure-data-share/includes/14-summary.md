@@ -9,4 +9,3 @@ Since you have completed this module, you are now able to:
 *	Track and monitor data sharing using Azure Data Share
 *	Secure Azure Data Share
 *	Manage existing shares
-

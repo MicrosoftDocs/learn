@@ -10,7 +10,7 @@ As fans, we can't influence the methodology for gathering data. This detail intr
 
 Because we're fans of the sport, and not necessarily the scientists who gather the data, you'll explore the data by looking for missing values, outlying values, and patterns.
 
-Data scientists commonly find themselves in this sort of situation. Collecting data can take years. So when you're first starting out in an area, you might have to rely on previously collected data to guide initial findings. As you know from the [data science lifecycle](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/overview?azure-portal=true), the data science process is iterative. If you discover patterns and insights from the current data, you can perhaps influence the data that's collected in the future! 
+Data scientists commonly find themselves in this sort of situation. Collecting data can take years. So when you're first starting out in an area, you might have to rely on previously collected data to guide initial findings. As you know from the [data science lifecycle](/azure/machine-learning/team-data-science-process/overview?azure-portal=true), the data science process is iterative. If you discover patterns and insights from the current data, you can perhaps influence the data that's collected in the future! 
 
 ## Explore the data
 

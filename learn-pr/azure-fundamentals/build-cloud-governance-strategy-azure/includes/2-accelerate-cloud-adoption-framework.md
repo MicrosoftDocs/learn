@@ -1,4 +1,4 @@
-The [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/?azure-portal=true) provides you with proven guidance to help with your cloud adoption journey. The Cloud Adoption Framework helps you create and implement the business and technology strategies needed to succeed in the cloud.
+The [Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/overview?azure-portal=true) provides you with proven guidance to help with your cloud adoption journey. The Cloud Adoption Framework helps you create and implement the business and technology strategies needed to succeed in the cloud.
 
 Tailwind Traders needs to control its cloud environment so that it complies with several industry standards, but it's not sure where to start. It has existing business requirements, and it understands how these requirements relate to its on-premises workloads. These requirements also must be met by any workloads it runs in the cloud.
 
@@ -6,7 +6,9 @@ You've been tasked with investigating what's available on Azure and to define an
 
 ## What's in the Cloud Adoption Framework?
 
-The Cloud Adoption Framework consists of tools, documentation, and proven practices. The Cloud Adoption Framework includes these stages:
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWEA1P]
+
+As mentioned in the video, Cloud Adoption Framework consists of tools, documentation, and proven practices. The Cloud Adoption Framework includes these stages:
 
 1. Define your strategy.
 1. Make a plan.

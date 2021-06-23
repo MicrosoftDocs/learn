@@ -59,4 +59,4 @@ Here's how Azure Backup completes a backup for Azure VMs:
 
 ![Azure Backup architecture](../media/3-azure-vm-backup-architecture.png)
 
-You may additionally enable [vault encryption with customer-managed keys (CMK)](https://docs.microsoft.com/azure/backup/encryption-at-rest-with-cmk#configuring-a-vault-to-encrypt-using-customer-managed-keys?azure-portal=true).
+You may additionally enable [vault encryption with customer-managed keys (CMK)](/azure/backup/encryption-at-rest-with-cmk#configuring-a-vault-to-encrypt-using-customer-managed-keys?azure-portal=true).

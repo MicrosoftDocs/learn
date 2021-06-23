@@ -6,6 +6,8 @@ We'll discuss:
 * Kusto Query Language
 * Visualization
 
+:::image type="content" source="../../media/overview-architecture.png" alt-text="Image representing architecture of Azure Data Explorer and data connections in and out of the service.":::
+
 ## Major components
 
 An Azure Data Explorer cluster does all the work to ingest, process, and query your data. The clusters are auto-scalable according to your needs. Azure Data Explorer also stores the data on Azure Storage and caches some of this data on the cluster compute nodes to achieve optimal query performance. 

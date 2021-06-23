@@ -297,7 +297,7 @@ Run Terraform to apply your configuration. This time, you use a remote state fil
 
     You see the default App Service home page.
 
-    ![App Service home page](../media/6-default-website.png)
+    :::image type="content" source="../media/6-default-website.png" alt-text="App Service home page.":::
 
 1. As an optional step, download the state file from Blob storage to */tmp/terraform.tfstate* and view its contents.
 

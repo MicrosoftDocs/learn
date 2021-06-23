@@ -39,7 +39,7 @@ Azure and AKS resources:
 
 - [Kubernetes core concepts for AKS](/azure/aks/concepts-clusters-workloads?azure-portal=true)
 - [Network concepts for applications in AKS](/azure/aks/concepts-network?azure-portal=true)
-- [Security concepts for applications and clusters in Azure Kubernetes Service (AKS)](//azure/aks/concepts-security?azure-portal=true)
+- [Security concepts for applications and clusters in Azure Kubernetes Service (AKS)](/azure/aks/concepts-security)
 - [Azure Monitor for containers overview](/azure/azure-monitor/insights/container-insights-overview?azure-portal=true)
 - [Create a Log Analytics workspace in the Azure portal](/azure/azure-monitor/learn/quick-create-workspace?azure-portal=true)
 

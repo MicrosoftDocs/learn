@@ -44,7 +44,7 @@ impl Counter {
 }
 ```
 
-Then, we implement the `Iterator` trait for our `Counter` struct. We'll be counting with usize, so we declare that our associated `Item` type should be of that type.
+Then, we implement our `Counter` struct's `Iterator` trait. We'll be counting with usize, so we declare that our associated `Item` type should be of that type.
 
 The `next()` method is the only required method that we should define. Inside its body, we increment our
 count by one at every call *(which is why we started at zero)*. Then we check to see if we've finished counting or not. We use the `Some(value)` variant of the `Option` type to express that iteration is still yielding results and the `None` variant to express that iteration should stop.

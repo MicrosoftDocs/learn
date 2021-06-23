@@ -103,4 +103,4 @@ This unit was a brief introduction to regular expressions and what you can accom
 | ( | Indicates where string extraction is to start |
 | ) | Indicates where string extraction is to end |
 
-You can also learn more about Visual Studio Code and regular expressions in the [Visual Studio Code documentation](https://docs.microsoft.com/visualstudio/ide/using-regular-expressions-in-visual-studio?view=vs-2019).
+You can also learn more about Visual Studio Code and regular expressions in the [Visual Studio Code documentation](/visualstudio/ide/using-regular-expressions-in-visual-studio?view=vs-2019).

@@ -5,7 +5,7 @@ metadata:
   description: Learn about one of Rust's most unique features, how to borrow mutable data.
   ms.date: 05/16/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Learn about borrowing

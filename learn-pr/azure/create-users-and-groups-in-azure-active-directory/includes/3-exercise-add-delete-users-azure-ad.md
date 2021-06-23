@@ -51,7 +51,7 @@ For Azure AD Premium to complete all the exercises in this module, you'll need t
 
 Now, let's create a user account.
 
-1. In the Azure AD organization you created, under **Manage**, select **Users**. The **Users | All users** pane appears.
+1. In the Azure AD organization you created, in the left menu pane, under **Manage**, select **Users**. The **All users** pane appears.
 
 1. In the top menu bar, select **New user**. The **New user** pane appears for *Contoso Marketing Company*.
 

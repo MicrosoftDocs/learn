@@ -260,7 +260,7 @@ namespace AppNavigation.Uwp
 }
 ```
 
-Notice that we're first checking whether the `Frame` can go backward before calling **GoBack**. The `Frame` keeps a history of these page instances in **Frame.BackStack** and doesn't create new instances. This leaves the page state intact. Advanced navigation is outside the scope of this lesson. See [Navigation history and backwards navigation](https://docs.microsoft.com/windows/uwp/design/basics/navigation-history-and-backwards-navigation) to learn more.
+Notice that we're first checking whether the `Frame` can go backward before calling **GoBack**. The `Frame` keeps a history of these page instances in **Frame.BackStack** and doesn't create new instances. This leaves the page state intact. Advanced navigation is outside the scope of this lesson. See [Navigation history and backwards navigation](/windows/uwp/design/basics/navigation-history-and-backwards-navigation) to learn more.
 
 **Run the app and navigate between `MainPage` and `Page1`**
 

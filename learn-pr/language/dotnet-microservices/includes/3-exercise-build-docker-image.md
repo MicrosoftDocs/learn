@@ -8,8 +8,10 @@ In this exercise you will learn to create a microservice endpoint and containeri
 The website and API have already been created for you. Clone the [repository from GitHub](https://github.com/MicrosoftDocs/mslearn-dotnetmicroservices/) to retrieve the code.
 
 1. Open up a command prompt.
+
 1. Change to a directory that you want the code to be downloaded to.
-1. Enter the following command to download, or clone, the sample repository:
+
+1. Run the following command to download, or clone, the sample repository:
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-dotnetmicroservices
@@ -17,12 +19,14 @@ The website and API have already been created for you. Clone the [repository fro
 
 The code will download into a new folder named **mslearn-dotnetmicroservices**.
 
-## Create the Dockerfile for the backend web API
+## Create the Dockerfile for the back-end web API
 
-Now that the code is downloaded, we'll be deploying our backend and frontend microservices as Docker containers. In order to do that we need to create a Dockerfile that instructs Docker how to build the image.
+Now that the code is downloaded, we'll be deploying our back-end and front-end microservices as Docker containers. To do that, we need to create a Dockerfile that instructs Docker how to build the image.
 
 1. Open the **backend** directory from the repository that you just cloned in a text editor such as VS Code.
+
 1. Within the **backend** directory, open the file named **Dockerfile**, this file will be empty.
+
 1. Enter the following code:
 
     ```dockerfile
@@ -43,7 +47,7 @@ Now that the code is downloaded, we'll be deploying our backend and frontend mic
     - Copy everything in the local working directory to the image.
     - Calls `dotnet publish` on the project.
 
-1. Directly below the last line, now enter this:
+1. Directly below the last line, enter this code:
 
     ```dockerfile
     FROM mcr.microsoft.com/dotnet/aspnet:5.0
@@ -62,25 +66,27 @@ Now that the code is downloaded, we'll be deploying our backend and frontend mic
     - Copy everything from the `/app` directory of the **build** image created above into the root directory of this image.
     - Sets the entrypoint of this image to `dotnet` and passes `backend.dll` as an argument.
 
-1. Save the Dockerfile, open a command prompt, and navigate to the directory that holds that file.
+1. Save the Dockerfile, open a command prompt, and go to the directory that holds that file.
+
 1. Run this command to create image and tag the image with the name **pizzabackend**:
 
     ```bash
     docker build -t pizzabackend .
     ```
 
-    This executes the commands in the `Dockerfile` in the current directory and applies the tag `pizzabackend` to the resulting image.
+    This runs the commands in the `Dockerfile` in the current directory and applies the tag `pizzabackend` to the resulting image.
 
     > [!TIP]
     > If you are getting errors from Docker, it may not have be installed correctly. Run the following command to verify:
     > `docker run hello-world`
-    > If you do _not_ see "Hello from Docker!" amongst the output, please follow this [Docker installation tutorial](https://dotnet.microsoft.com/learn/aspnet/microservice-tutorial/install-docker).
+    > If you do _not_ see "Hello from Docker!" amongst the output, follow this [Docker installation tutorial](https://dotnet.microsoft.com/learn/aspnet/microservice-tutorial/install-docker).
 
-1. After much output, the image will be built. Typing `docker images` will show you a list of all images on your machine with `pizzaapiservice` listed.
-1. To run the web API service, enter the following command to start a new Docker container using the **pizzabackend** image and expose the service on port 5200:
+1. After much output, the image will be built. Entering `docker images` will show you a list of all images on your machine with `pizzabackend` listed.
+
+1. To run the web API service, run the following command to start a new Docker container using the **pizzabackend** image and expose the service on port 5200:
 
     ```bash
     docker run -it --rm -p 5200:80 --name pizzabackendcontainer pizzabackend
     ```
 
-1. Then you can browse to `http://localhost:5200/pizzainfo` and see a JSON representation of the Contoso Pizza's menu.
+1. You can browse to `http://localhost:5200/pizzainfo` and see a JSON representation of the Contoso Pizza's menu.

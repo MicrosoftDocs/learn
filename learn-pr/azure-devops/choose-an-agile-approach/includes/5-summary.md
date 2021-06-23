@@ -8,7 +8,7 @@ In this module, the Tailspin team took their first steps towards adopting DevOps
 
 This module touches on Agile and Agile processes but there's a lot more to learn.
 
-If you're interested in learning more about the benefits of Agile, check out [What is Agile Development?](/azure/devops/learn/agile/what-is-agile-development?azure-portal=true)
+If you're interested in learning more about the benefits of Agile, check out [What is Agile Development?](/devops/plan/what-is-agile-development?azure-portal=true)
 
 In this module, you followed the Basic process. You'll continue using this process in upcoming modules. For your own projects, learn how to [choose a process](/azure/devops/boards/work-items/guidance/choose-process?azure-portal=true) that best fits your team. You can also learn more about each process Azure Boards supports.
 

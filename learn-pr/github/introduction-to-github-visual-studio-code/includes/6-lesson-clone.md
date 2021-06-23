@@ -4,15 +4,15 @@ Imagine that you want to contribute to another project that you've found on GitH
 
 When you clone a repository from GitHub, a copy of that repository is downloaded to your machine. If you clone via the Git CLI, you have to enter your GitHub credentials. You also have to set the local repository's remote URL. The remote URL is required so Git knows where to push your changes.
 
-## Cloning from Visual Studio Code
+## Clone from Visual Studio Code
 
-You can clone a repository from GitHub by using the Visual Studio Code Explorer or the Command Palette. If you have a new window with no folder open, you can toggle the Explorer from the Activity Bar or by selecting **View** > **Explorer**. You'll see a **Clone Repository** button.
+You can clone a repository from GitHub by using the Visual Studio Code Explorer or the command palette. If you have a new window with no folder open, you can toggle the Explorer from the activity bar or by selecting **View** > **Explorer**. You'll see a **Clone Repository** button.
 
 :::image type="content" source="../media/4-clone.png" alt-text="The option for cloning a repository in the Visual Studio Code Explorer view.":::
 
-If you have a folder open in Visual Studio Code, you won't see the **Clone Repository** button. But you can still clone a repository from the Command Palette by entering **Git: Clone**.
+If you have a folder open in Visual Studio Code, you won't see the **Clone Repository** button. But you can still clone a repository from the command palette by entering **Git: Clone**.
 
-When you select **Git: Clone**, you see an option to enter the URL of a repository or select **Clone from GitHub**. You see a list of repositories you've created on GitHub.com. You can even search for other repositories across GitHub.com from here. 
+When you select **Git: Clone**, you see an option to enter the URL of a repository or select **Clone from GitHub**. You see a list of repositories you've created on GitHub.com. You can even search for other repositories across GitHub.com from here.
 
 When you choose the repository that you want to clone, Visual Studio Code will clone it over HTTPS. After it's done, Visual Studio Code will prompt you to open the folder. Visual Studio Code sets up the remote URL so you don't have to worry about configuring anything.
 

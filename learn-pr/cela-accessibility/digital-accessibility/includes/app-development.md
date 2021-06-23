@@ -28,7 +28,7 @@ Group of app menu elements/controls
 
 The goal is to help the user understand how the UI is laid out, and identify the controls that are actionable. If you are finding that there are too many tab stops before the user completes the navigation loop, consider grouping related controls together. Some controls that are related, such as a hybrid control, may need to be addressed at the early exploration stage of developing your app. After you begin to develop your product, it's difficult to rework the keyboard navigation, so plan carefully and plan early!
 
-To learn more about keyboard navigation among UI elements, explore the Windows Dev Center documentation about [Keyboard accessibility](https://docs.microsoft.com/windows/uwp/design/accessibility/keyboard-accessibility).
+To learn more about keyboard navigation among UI elements, explore the Windows Dev Center documentation about [Keyboard accessibility](/windows/uwp/design/accessibility/keyboard-accessibility).
 
 The [Engineering Software for Accessibility](https://www.microsoft.com/download/details.aspx?id=19262) eBook has a helpful chapter on this subject titled "Designing the Logical Hierarchy."
 
@@ -47,7 +47,7 @@ consistently and with system colors (not with hard-coded colors) to ensure that 
 As long as you haven't overridden system colors, a Universal Windows Platform (UWP) app that works on all Windows-based platforms and devices will support high-contrast themes by default. If a user has chosen that
 they want the system to use a high-contrast theme from their device's system settings or accessibility tools, the UWP framework automatically uses colors and style settings that produce a high-contrast layout and rendering for controls and components in the UI.
 
-For more information, refer to the Windows support article about [High-contrast](https://docs.microsoft.com/windows/uwp/design/accessibility/high-contrast-themes).
+For more information, refer to the Windows support article about [High-contrast](/windows/uwp/design/accessibility/high-contrast-themes).
 
 If you prefer to use your own color theme for design purposes instead of system colors, consider these guidelines:
 
@@ -71,7 +71,7 @@ determines what actions and options are available to the user. Therefore, if an 
 For example, accessible names and descriptions for content and interactive UI controls are critical elements to achieve programmatic access in your app. For people who use Microsoft Narrator or a Braille
 display to use an app, the descriptive names for images or buttons help them understand and navigate the app.
 
-For more information about making app UI elements available to assistive technologies, review the Windows Dev Center documentation about how to [expose basic accessibility information](https://docs.microsoft.com/windows/uwp/design/accessibility/basic-accessibility-information).
+For more information about making app UI elements available to assistive technologies, review the Windows Dev Center documentation about how to [expose basic accessibility information](/windows/uwp/design/accessibility/basic-accessibility-information).
 
 For more information about assistive technology applications, explore the list of Microsoft [assistive technology partners](https://www.microsoft.com/accessibility/assistive-technology-partners).
 
@@ -85,4 +85,4 @@ version of an accessibility checklist you may find useful:
 1. Visually verify your UI to ensure that the text contrast is adequate, elements render correctly in the high-contrast themes, and colors are used correctly.
 1. Run accessibility tools, address reported issues, and verify the screen reading experience.
 1. Make sure all the features of your app follow accessibility guidelines.
-1. [Declare your app as accessible in the Microsoft Store](https://docs.microsoft.com/windows/uwp/design/accessibility/accessibility-in-the-store).
+1. [Declare your app as accessible in the Microsoft Store](/windows/uwp/design/accessibility/accessibility-in-the-store).

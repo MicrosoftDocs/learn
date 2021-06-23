@@ -24,7 +24,7 @@ Here's a list of what we know about the company's digital estate:
 - Operations management is inconsistent.
   - Patching is inconsistent.
   - Basic datacenter sprawl has datacenter resource consumption at 25 percent over planned targets.
-  - Backup appliances are past storage capacity. Backups for low-priority workloads are local backups only.
+  - Backup appliances has exceeded its storage capacity. Backups for low-priority workloads are local backups only.
   - Active monitoring and optimization are limited to mission critical workloads.
   - The operations team is over-taxed and understaffed.
   - The service now expert on the team left three years ago, shortly after a vendor completed configuration of the configuration management database (CMDB). Since then, there has been no new discovery or mapping of assets.

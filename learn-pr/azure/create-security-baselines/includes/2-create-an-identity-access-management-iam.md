@@ -83,7 +83,7 @@ With dual identification set, an attacker would require compromising both the id
 
 ### Establish an interval for reconfirming user authentication methods - Level 1
 
-If authentication reconfirmation is set to disabled, register users will never be prompted to reconfirm their authentication information.
+If authentication reconfirmation is set to disabled, registered users will never be prompted to reconfirm their authentication information.
 
 1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 

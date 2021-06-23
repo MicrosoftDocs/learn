@@ -9,7 +9,7 @@ In this module you have learned how to:
 
 ## Learn more
 
-- [Introduction to Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)
-- [Introduction to Azure Blob storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)
-- [Introduction to Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction)
-- [Description of the database normalization basics](https://docs.microsoft.com/office/troubleshoot/access/database-normalization-description)
+- [Introduction to Azure SQL Database](/azure/sql-database/sql-database-technical-overview)
+- [Introduction to Azure Blob storage](/azure/storage/blobs/storage-blobs-introduction)
+- [Introduction to Azure Cosmos DB](/azure/cosmos-db/introduction)
+- [Description of the database normalization basics](/office/troubleshoot/access/database-normalization-description)

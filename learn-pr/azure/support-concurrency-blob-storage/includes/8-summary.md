@@ -14,6 +14,6 @@ In this lesson, we've gone over code examples for each of the three approaches.
 
 The documentation provides more information on the APIs as well as tutorials and samples. Here are a few useful links to explore further:
 
-- [Managing Concurrency in Microsoft Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-concurrency)
-- [Specifying Conditional Headers for Blob Service Operations](https://docs.microsoft.com/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations)
-- [Lease Blob](https://docs.microsoft.com/rest/api/storageservices/lease-blob)
+- [Managing Concurrency in Microsoft Azure Storage](/azure/storage/common/storage-concurrency)
+- [Specifying Conditional Headers for Blob Service Operations](/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations)
+- [Lease Blob](/rest/api/storageservices/lease-blob)

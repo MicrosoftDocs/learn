@@ -30,5 +30,5 @@ In this module, you will begin to discover:
 ## Prerequisites
 
 - [Visual Studio Code, with the Python extension](https://aka.ms/LearnOnVSCode?azure-portal=true)
-- An [Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account?azure-portal=true)
-- A [GitHub account](https://docs.microsoft.com/learn/modules/introduction-to-github?azure-portal=true)
+- An [Azure account](/learn/modules/create-an-azure-account?azure-portal=true)
+- A [GitHub account](/learn/modules/introduction-to-github?azure-portal=true)

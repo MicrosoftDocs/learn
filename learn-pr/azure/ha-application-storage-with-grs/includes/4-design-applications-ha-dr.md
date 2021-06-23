@@ -47,7 +47,7 @@ When you design your application, consider the following factors:
     | T1 |  | Record is replicated | T1 | Last Sync Time field is updated |
     | T2 | Consultant updates patient record | |T1 | Record is updated in primary region but not replicated |
     | T3 | Read record from secondary region | | | Data from the secondary region is stale, because updates haven't yet been replicated from the primary region |
-    | T4 |  | Record replicated | T1 | Data at secondary region is now updated; Last Sync Time field is updated |
+    | T4 |  | Record replicated | T4 | Data at secondary region is now updated; Last Sync Time field is updated |
 
 ## Best practices for cloud-based applications with RA-GRS
 

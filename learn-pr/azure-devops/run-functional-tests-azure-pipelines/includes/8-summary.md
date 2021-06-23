@@ -16,7 +16,7 @@ In this module, you worked with NUnit tests. If you're interested in unit-testin
 
 * [NUnit.org](https://nunit.org?azure-portal=true)
 * [Unit test tools and tasks](/visualstudio/test/unit-test-your-code?azure-portal=true)
-* [Unit testing C# by using NUnit and .NET Core](//dotnet/core/testing/unit-testing-with-nunit?azure-portal=true)
+* [Unit testing C# by using NUnit and .NET Core](/dotnet/core/testing/unit-testing-with-nunit)
 
 ### Learn about parallel jobs
 

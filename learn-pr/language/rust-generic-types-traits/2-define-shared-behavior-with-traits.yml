@@ -5,7 +5,7 @@ metadata:
   description: Learn how to use traits to define common behavior and characteristics of an object.
   ms.date: 05/16/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Define shared behavior with traits

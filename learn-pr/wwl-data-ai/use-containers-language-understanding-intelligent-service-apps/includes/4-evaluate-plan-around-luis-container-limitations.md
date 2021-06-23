@@ -2,7 +2,7 @@ There are specific limitations around containerizing LUIS. Limitations revolve a
 
 ## Supported dependencies
 
-LUIS supports some of the new prebuilt domains in a container environment.  The prebuilt domains are enterprise-focused and include entities, example utterances, and patterns that can be included in your LUIS app. For the complete list of supported pre-built domains, including language support for those pre-built domains, visit the [pre-built domain reference page](https://docs.microsoft.com/azure/cognitive-services/luis/luis-reference-prebuilt-domains).
+LUIS supports some of the new prebuilt domains in a container environment.  The prebuilt domains are enterprise-focused and include entities, example utterances, and patterns that can be included in your LUIS app. For the complete list of supported pre-built domains, including language support for those pre-built domains, visit the [pre-built domain reference page](/azure/cognitive-services/luis/luis-reference-prebuilt-domains).
 
 ## Unsupported dependencies
 
@@ -24,4 +24,4 @@ LUIS containers only support a subset of the overall language support in LUIS ap
 - Phrase list recommendations
 - Text Analytics, specifically sentiment analysis and keyword detection
 
-For a complete list of the supported language features, refer to the **Languages Supported** section on the [LUIS container limitations](https://docs.microsoft.com/azure/cognitive-services/luis/luis-container-limitations) page.
+For a complete list of the supported language features, refer to the **Languages Supported** section on the [LUIS container limitations](/azure/cognitive-services/luis/luis-container-limitations) page.
