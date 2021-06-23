@@ -1,4 +1,4 @@
-In this unit, you'll see how to denormalize an aggregate to write the top 10 customers query for your e-commerce site. You'll use the transactional batch feature in the Azure Cosmos DB .NET SDK that will simultaneously insert a new sales order and update the customer's **salesOrderCount** property, both of which are in the same logical partition.
+In this unit, you'll see how to denormalize an aggregate to write the top 10 customers query for your e-commerce site. You'll use the transactional batch feature in the Azure Cosmos DB .NET SDK that simultaneously inserts a new sales order and updates the customer's salesOrderCount property, both of which are in the same logical partition.
 
 For this exercise, you'll complete the following steps:
 
@@ -43,7 +43,7 @@ To get to the code that you'll use in this unit, do the following:
 
     This function creates a new sales order and updates the customer record by using transactional batch.
 
-    First, the customer record is retrieved by calling `ReadItemAsync()` by passing in the `customerId` as both the partition key and ID.
+    First, the customer record is retrieved by calling `ReadItemAsync()` and passing in the `customerId` as both the partition key and ID.
 
 1. At line 486, below the `//To-Do:` comment, increment the value of the **salesOrderCount** by pasting the following code snippet:
 
@@ -60,7 +60,7 @@ To get to the code that you'll use in this unit, do the following:
 
 1. Scroll down a few lines to see the data for the new sales order you'll create for your customer.
 
-    Our new sales order object has a header and detail structure typical of sales orders in an e-commerce application.
+    Your new sales order object has a header and detail structure typical of sales orders in an e-commerce application.
 
     The sales order header has an `orderId`, `customerId`, `orderDate`, and `shipDate`, which you'll leave blank.
 
@@ -68,7 +68,7 @@ To get to the code that you'll use in this unit, do the following:
 
     Farther down, you can also see the two products for the order that make up the details section in your sales order.
 
-1. Scroll farther to the next `//To-Do:` comment. You need to add code that will insert a new sales order and update the customer record by using transactional batch. To do so, in the line below the `//To-Do:` comment, paste the following code snippet:
+1. You need to add code that inserts a new sales order and updates the customer record by using transactional batch. To do so, in the line below the `//To-Do:` comment, paste the following code snippet:
 
     ```csharp
     TransactionalBatchResponse txBatchResponse = await container.CreateTransactionalBatch(
@@ -104,7 +104,7 @@ To get to the code that you'll use in this unit, do the following:
 
 ## Query for the customer and their sales orders
 
-Because you designed your database to store both customers and all their sales orders in the same container by using `customerId` as your partition key, you can query the customer container and return the customer's record and all of the customer's sales orders in a single operation.
+Because you designed your database to store both the customer and all their sales orders in the same container by using `customerId` as your partition key, you can query the customer container and return the customer's record and all of the customer's sales orders in a single operation.
 
 1. On the main menu, select **c** to run the menu item for *Query for customer and all orders*. This query returns the customer record, followed by all the customer's sales orders. You should see all the customer's sales orders output on the screen.
 
@@ -200,4 +200,4 @@ Let's look at the query for your top 10 customers.
 
     Something you might not realize is that the top 10 customers query is a cross-partition query that fans out across all the partitions in your container.
 
-    The companion lab to this one pointed out that you should strive to avoid cross-partition queries. However, in reality, such queries can be OK in situations where the container is still small or the query is run infrequently. If the query is executed frequently or the container is exceptionally large, it would be worth exploring the cost of materializing this data into another container and using it to serve this query.
+    The companion lab to this one pointed out that you should strive to avoid cross-partition queries. However, in reality, such queries can be OK in situations where the container is still small or the query is run infrequently. If the query is run frequently or the container is exceptionally large, it would be worth exploring the cost of materializing this data into another container and using it to serve this query.
