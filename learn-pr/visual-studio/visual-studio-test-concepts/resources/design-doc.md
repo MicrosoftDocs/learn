@@ -70,8 +70,17 @@ Learn the common best practices, theory, and anti-patterns to avoid when writing
 
     What types of questions will test knowledge on *Why we test*? *[(Knowledge check guidance)](/help/learn/id-guidance-knowledge-check)*
 
-    - Question type
-    - Question type
+    - Which of these is **not** a benefit of testing:
+        - Tests encourage a more modular architecture.
+        - **The code coverage tests provide is the ultimate indication of repo health.**
+        - Tests help keep track of the different capabilities of a program.
+        - Tests help large repositories built by a community avoid bugs by providing checks for both old and new behavior.
+        
+    - The correct code coverage goal in a repo is:
+        - 100%
+        - 70%
+        - 50%
+        - **There is no one true answer. Your code coverage goal depends on the repository.**
 
 1. **Exercise - exercise unit title**
 
@@ -85,6 +94,9 @@ Learn the common best practices, theory, and anti-patterns to avoid when writing
 
     - The Testing pyramid
         - The testing pyramid has been popularized over the past several years to explain the different types of testing and how common each of them are in software. You can find many different versions of the testing pyramid out there and it's use is still debated, but we'll try to provide a simple and uncontroversial explanation. The base of the pyramid is made up of unit tests. These are typically the easiest tests to write, maintain as code changes, and run the fastest. For many users, unit tests are the first introduction to testing. As you climb the pyramid, the tests usually become more expensive to write, maintain, and run, but they can still provide high value though there are usually fewer of these types.
+
+![image](media/testing-pyramid.png)
+
     - Unit
         - Unit tests are the most basic types of tests. They should be specific to one method or one function. A method can have many unit tests to cover all it's functionality given a range of parameters. These are the easiest to write and also the easiest to debug because they should be the simplest way to exercise the piece of code that they test.
     - Integration
@@ -93,19 +105,20 @@ Learn the common best practices, theory, and anti-patterns to avoid when writing
         - Performance tests usually capture the time it takes certain parts of your program to execute. Performance tests are a great way to catch a code change that slows down your app. You can set timers at the beginning of tests that only complete when the test is finished executing and report a test failure if the timer was above a certain threshold.
     - Load
         - Load tests can be similar to performance testing, but focuses more on using your app at scale. How does the app hold up with 1000 users are using it? 10,000 users? Load tests help determine if your app is slowing down or throwing exceptions when under stress.
+    - Acceptance
+        - Acceptance tests can be tests that guide the business desired outcome. If your customer gave you a list of criteria for the app, you can write acceptance tests that only pass once all of those criteria are met. Acceptance tests are another way of integrating your spec with your code.
     - UI
         - UI tests can directly test the UI interactions of an app. This is meant to mimic an actual user clicking and interacting with your app and testing if the UI response is correct. There are many frameworks that can automate UI interactions. For example, [Playwright](https://playwright.dev/dotnet/docs/why-playwright) can automate the browser to mimic a user using your website.
         - Another type of UI testing is manual testing. Manual testing is when an actual person uses your app. Having a user test out your app before it is released has some advantages and disadvantages. It can be a slower type of testing because it can take a while to describe how to use the app to a new user and it may be difficult to repeat the exact same steps every time. The major advantage is higher confidence that the app is ready for real human customers and nothing was missed because the app was used by more than just automation.
         - A word of caution, it's easy to invest in UI tests because they can seem like the most direct representation of what users are experiencing when using your app. The industry rapidly embraced UI Tests when they first appeared on the scene for this very reason. The disadvantage was that UI also rapidly changes so all the tests you write may need consistent updates even for a small change. Be wary of writing too many UI tests that will need a high investment to keep up-to-date as your app grows. Many modern UI testing frameworks specifically address this ability to keep UI tests up-to-date, so it's good to look for platforms that also enable easier maintainability as you test.
-    - Acceptance
-        - Acceptance tests can be tests that guide the business desired outcome. If your customer gave you a list of criteria for the app, you can write acceptance tests that only pass once all of those criteria are met. Acceptance tests are another way of integrating your spec with your code.
     - Since the industry is ever evolving better ways to ensure code quality with tests there are likely many more types of tests not listed here, but these are the major ones. The testing pyramid itself may need to be re-written or re-shaped as better software practices and development technologies evolve how we think and test.
 
     **Knowledge check**
 
     What types of questions will test *the different types of testing*? *[(Knowledge check guidance)](/help/learn/id-guidance-knowledge-check)*
 
-    - Question type
+    - What is the most common type of test?
+        - 
     - Question type
 
 1. **Exercise - exercise unit title**
