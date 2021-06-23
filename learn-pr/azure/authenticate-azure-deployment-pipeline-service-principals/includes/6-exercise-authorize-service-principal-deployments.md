@@ -185,6 +185,8 @@ Use the Azure portal to inspect the resources that you deploy and to inspect the
 
     :::image type="content" source="../media/6-deployment-succeeded.png" alt-text="Screenshot of the Azure portal resource group overview pane, displaying additional details of the successful deployment." border="true":::
 
+   You may also see a deployment named **Failure-Anomalies-Alert-Rule-Deployment**. This is created automatically by Application Insights.
+
 1. Select the deployment called **main** to see what resources were deployed, and then select **Deployment details** to expand it. 
  
    In this case, the App Service plan and app, as well as the Application Insights instance, are listed.
