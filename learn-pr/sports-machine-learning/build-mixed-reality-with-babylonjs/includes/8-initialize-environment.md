@@ -1,4 +1,4 @@
-The last thing you need to do before your custom experience is ready for game time is to initialize the environment and replace the default environment in the *index.ts* file. But before you do that, you might want to add more 2D imagery!
+The last thing you need to do before your custom experience is ready for game time is to initialize the environment and replace the default environment in the *index.ts* file. But, before you do that, let's make sure you're attributing the *Space Jam: A New Legacy* film for using the imagery! 
 
 ## Add the *Space Jam: A New Legacy* film attribution
 
