@@ -1,6 +1,6 @@
-The last thing you need to do before your custom experience is ready for game time is to initialize the environment and replace the default environment in the *index.ts* file. But before you do that, you might want to add more 2D imagery!
+The last thing you need to do before your custom experience is ready for game time is to initialize the environment and replace the default environment in the *index.ts* file. But, before you do that, let's make sure you're attributing the *Space Jam: A New Legacy* film for using the imagery! 
 
-## Add the *Space Jam: A New Legacy* logo
+## Add the *Space Jam: A New Legacy* film attribution
 
 Sometimes you need to add 2D text and images. To add these types of objects to the scene, use `AdvancedDynamicTexture`. It allows you to add other `GUI` controls. 
 
@@ -9,7 +9,7 @@ Add `GUI.Rectangle` to create `imageRect`, and add that to the `guiMenu` dynamic
 This function belongs in the `Environment` class found in the *environment.ts* file:
 
 ```javascript
-public addLogo() {
+public addLegalLine() {
     // Create a GUI that will be full-screen
     const guiMenu = GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
     guiMenu.idealHeight = 720;
@@ -48,7 +48,7 @@ The `init()` function should go in the `Environment` class in the *environment.t
 ```javascript
     public async init() {
         this.createCharacterButtons();
-        this.addLogo();
+        this.addLegalLine();
     }
 
 ```
@@ -57,7 +57,7 @@ Now you're ready to exchange the default environment for the one that you just c
 
 ## Initialize the custom environment and test
 
-Back in the *index.ts* file, create a new `Environment` instance. Pass in the `scene` and `engine` instances that you created earlier to construct the class. Then, call `init` to set up the buttons.
+Back in the *index.ts* file, you need to replace the default environment that you created and create a new `Environment` instance. Pass in the `scene` and `engine` instances that you created earlier to construct the class. Then, call `init` to set up the buttons. Replace the line `const env = scene.createDefaultEnvironment();` with the following two lines of code:
 
 ```javascript
   const environment = new Environment(scene, engine);
