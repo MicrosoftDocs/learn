@@ -1,4 +1,4 @@
-Before you start creating the deployment pipeline for your toy company's website, you need to create a service principal and grant it access to your Azure environment. In this exercise, you'll create a service principal that you'll use for your deployment pipeline.
+Before you create the deployment pipeline for your toy company's website, you need to create a service principal and grant it access to your Azure environment. In this exercise, you'll create the service principal that you'll use for your deployment pipeline.
 
 During the process, you'll:
 
@@ -85,11 +85,11 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 1. Look at the JSON output from the previous command. It includes the following properties:
  
-   - `name`: the service principal's name.
+   - `appId`: the service principal's application ID.
    - `password`: the service principal's key.
    - `tenant`: your Azure AD tenant ID.
 
-   Copy the values somewhere safe. You'll use this soon. Make sure not to leave the key anywhere insecure.
+   Copy these values somewhere safe. You'll use this soon. Make sure not to leave the key anywhere insecure.
 
 ::: zone-end
 
@@ -105,10 +105,10 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
    $plaintextSecret = [System.Net.NetworkCredential]::new('', $servicePrincipal.Secret).Password
    ```
 
-1. Run the following command to show the service principal's name, the key, and your Azure AD tenant ID:
+1. Run the following command to show the service principal's aplication ID, the key, and your Azure AD tenant ID:
 
    ```azurepowershell
-   Write-Output "Service principal name: $($servicePrincipal.ServicePrincipalNames[0])"
+   Write-Output "Service principal application ID: $($servicePrincipal.ApplicationId)"
    Write-Output "Service principal key: $($plaintextSecret)"
    Write-Output "Your Azure AD tenant ID: $((Get-AzContext).Tenant.Id)"
    ```
@@ -119,25 +119,25 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 ## Test the service principal
 
-Now the service principal has been created, you will log in using its credentials to verify it's been created successfully.
+Now the service principal has been created, you will sign in using its credentials to verify it's been created successfully.
 
 ::: zone pivot="cli"
 
-1. Run this Azure CLI command in the Visual Studio Code terminal to log in using the service principal's credentials. Make sure you replace the placeholders with the values you copied in the previous step.
+1. Run this Azure CLI command in the Visual Studio Code terminal to sign in using the service principal's credentials. Make sure you replace the placeholders with the values you copied in the previous step.
 
    ```azurecli
    az login --service-principal \
-     --username SERVICE-PRINCIPAL-NAME \
-     --password SERVICE-PRINCIPAL-PASSWORD \
-     --tenant YOUR-AZURE-AD-TENANT-ID \
+     --username APPLICATION-ID \
+     --password SERVICE-PRINCIPAL-KEY \
+     --tenant AZURE-AD-TENANT-ID \
      --allow-no-subscriptions
    ```
 
    Notice that you include the `--allow-no-subscriptions` argument. Normally when you run the `az login` command, the Azure CLI looks for the Azure subscriptions you can access. The service principal hasn't been granted access to anything yet, so you use the `--allow-no-subscriptions` argument to avoid the Azure CLI checking the subscription list and showing an error.
 
-1. Check that the output from the previous command is a JSON object, which includes a `user` property with the service principal's name. This indicates the service principal signed in successfully.
+1. Check that the output from the previous command is a JSON object, which includes a `user` property with the service principal's application ID. This indicates that the service principal signed in successfully.
 
-1. Log out of the service principal's account by using the following command:
+1. Sign out of the service principal's account by using the following command:
 
    ```azurecli
    az logout
@@ -147,23 +147,23 @@ Now the service principal has been created, you will log in using its credential
 
 ::: zone pivot="powershell"
 
-1. Run this Azure PowerShell command in the Visual Studio Code terminal to securely prompt you for the service principal's credentials. Use the service principal's name and key from the previous step for the username and password, respectively.
+1. Run this Azure PowerShell command in the Visual Studio Code terminal to securely prompt you for the service principal's credentials. Use the service principal's application ID and key from the previous step for the username and password, respectively.
 
    ```azurepowershell
    $credential = Get-Credential
    ```
 
-1. Run this Azure PowerShell command in the Visual Studio Code terminal to log in using the service principal's credentials. Make sure you replace the placeholders with the values you copied in the previous step.
+1. Run this Azure PowerShell command in the Visual Studio Code terminal to sign in using the service principal's credentials. Make sure you replace the placeholders with the values you copied in the previous step.
 
    ```azurepowershell
    Connect-AzAccount -ServicePrincipal `
      -Credential $credential `
-     -Tenant YOUR-AZURE-AD-TENANT-ID
+     -Tenant AZURE-AD-TENANT-ID
    ```
 
-1. Check that the output from the previous command includes an `Account` property with the service principal's name, and a blank `SubscriptionName`.
+1. Check that the output from the previous command includes an `Account` property with the service principal's application ID, and a blank `SubscriptionName`. This indicates that the service principal signed in successfully.
 
-1. Log out of the service principal's account by using the following command:
+1. Sign out of the service principal's account by using the following command:
 
    ```azurepowershell
    Logout-AzAccount

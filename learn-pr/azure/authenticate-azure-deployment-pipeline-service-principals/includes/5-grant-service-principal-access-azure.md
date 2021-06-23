@@ -71,7 +71,7 @@ az role assignment create \
 
 Let's look at each argument:
 
-- `--assignee` specifies the service principal name. To avoid ambiguity, it's a good practice to use the application ID.
+- `--assignee` specifies the service principal. To avoid ambiguity, it's a good practice to use the application ID.
 - `--role` specifies the role. If you use a built-in role, you can specify it by name. If you use a custom role definition then you specify the full role definition ID.
 - `--scope` specifies the scope. This is usually a resource ID for a single resource, a resource group, or a subscription.
 - `--description` is a human-readable description of the role assignment.
