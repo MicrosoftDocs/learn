@@ -10,8 +10,8 @@ Azure Cognitive Services is a set of cloud services that make cognitive intellig
 
 Speech Service is one of the main categories under Azure Cognitive Services. It encompasses services such as speech-to-text, text-to-speech, speaker recognition, speech translation, and so on.
 
-## Azure Speech-to-text API
+## Speech-to-text
 
-The Azure Speech-to-text API can be used to transcribe an audio stream or a local file. The service supports transcription in more than three dozens of languages, and it uses Microsoft's Universal Language Model by default.
+The speech-to-text service under Azure Speech Services can be used to transcribe an audio stream or a local file. The service supports transcription in more than three dozens of languages, and it uses Microsoft's Universal Language Model by default.
 
-However, several options exist for customization. 
+However, several options exist for customizing the transcription model. You can create a customized model by using the Custom Speech service. There, you can upload your own test data and train a unique model based on the set of data. Or, you can use a Phrase List to help the model identify certain phrases in your use case more accurately.
