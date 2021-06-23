@@ -56,7 +56,7 @@ Back in the *index.ts* file, you need to replace the default environment that yo
   environment.init();
 ```
 
-Finally, don't forget to import the Environment class that you just created. To import the class, add the following import statement towards the top of the `index.ts` file, just below the other import statements that were already there:
+Finally, don't forget to import the `Environment` class that you just created. To import the class, add the following import statement toward the top of the *index.ts* file, just below the other import statements that were already there:
 /```javascript
 import {Environment} from "./environment"
 /```
