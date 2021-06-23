@@ -28,8 +28,9 @@ When you run the above command, a window will pop up with the build in Monaco ed
 
 ## Run the setup script
 
-The below script takes 20-30 minutes to run and includes the creation of an Azure spring Cloud and a MySQL instance. In Azure Cloud Shell, run the shell script to set up the environment for this module's exercises. Leave the browser window and Azure Cloud Shell open while running. This sample script also populates some sample data for the monitoring logs, traces, and metrics:
+Next we will run the setup script. The script takes 15-30 minutes to run and includes the creation of an Azure spring Cloud and a MySQL instance to set up the environment for this module's exercises. This sample script also populates some sample data for the monitoring logs, traces, and metrics.
 
+Open Azure Cloud Shell, and run the shell script. Leave the browser window and Azure Cloud Shell open while running. Store the URL it returns as the public endpoint for your environment:
 
 ```bash
 sh deployPetClinicApp.sh
@@ -37,10 +38,28 @@ sh deployPetClinicApp.sh
 
 ## Test the application
 
-Navigate to the URL provided by the previous command to open the Pet Clinic microservice application.
+The Navigate to the URL provided by the previous command to open the Pet Clinic microservice application.
 
-Next, navigate to the "Owners" tab and select the "Find all owners" Tab.
-Your sample app is up and running, populated with data and now ready for you to explore.
+> [!TIP]
+> Access the app gateway and customers service from a browser with the Public Url in the format of "https://> <your-app>-api-gateway.azuremicroservices.io".
+
+Verify your apps are installed and registered via the Azure Portal.
+
+- Open the Azure Portal
+- Select "Azure Spring Cloud" from the list of Azure services
+- Select your Azure Spring Cloud instance
+- On the right hand side select "Apps" under settings
+- Verify all the apps are running and registered
+
+![App selection](../media/3-app-selection.jpg)
+
+- On the left hand side select the "api-gateway" app
+- The URL for your app is listed on the left hand side properties as "URL"
+
+![API gateway URL](../media/3-gateway-url.jpg)
+
+Next, navigate to the "Owners" tab and select "Find all owners".
+Confirm sample app is up and running, populated with data and now ready for you to explore.
 
 ![Real-time metrics](../media/4-petclinic.jpg)
 
