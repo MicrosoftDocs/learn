@@ -23,7 +23,7 @@ One aspect of learning new frameworks is learning how to work with them to creat
 
 ## Mixed Reality Toolkit
 
-The Windows [Mixed Reality Toolkit](/windows/mixed-reality/mrtk-unity/?view=mrtkunity-2021-05?azure-portal=true) is a framework that provides components and features that support you while you create cross-platform Mixed Reality applications by using Unity.
+The Windows [Mixed Reality Toolkit](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/) is a framework that provides components and features that support you while you create cross-platform Mixed Reality applications by using Unity.
 
 Because the MRTK is dependent on Unity, you get an entire platform that was built to create 2D and 3D interactive games and experiences to support your learning. In Unity, for example, everything that you want to do is part of an object in a scene. Common objects include:
 

@@ -30,7 +30,7 @@ To get started on GitHub, create an account at [GitHub.com](https://github.com?a
 
 ## Mixed Reality Toolkit
 
-The Windows 10 SDK and the [Mixed Reality Toolkit](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started?azure-portal=true) are powerful tools. With the power of Visual Studio and Unity, you can create a fully immersive Mixed Reality experience designed for headsets. But don't worry! Unity provides an effective testing environment, so the only hardware you need is a Windows 10 computer.
+The Windows 10 SDK and the [Mixed Reality Toolkit](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/) are powerful tools. With the power of Visual Studio and Unity, you can create a fully immersive Mixed Reality experience designed for headsets. But don't worry! Unity provides an effective testing environment, so the only hardware you need is a Windows 10 computer.
 
 ### Visual Studio
 
