@@ -1,6 +1,6 @@
 The last thing you need to do before your custom experience is ready for game time is to initialize the environment and replace the default environment in the *index.ts* file. But before you do that, you might want to add more 2D imagery!
 
-## Add the *Space Jam: A New Legacy* logo
+## Add the *Space Jam: A New Legacy* film attribution
 
 Sometimes you need to add 2D text and images. To add these types of objects to the scene, use `AdvancedDynamicTexture`. It allows you to add other `GUI` controls. 
 
