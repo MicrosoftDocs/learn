@@ -23,22 +23,22 @@ Azure Active Directory (Azure AD) is the service that manages identities for Azu
 - **A user** represents a human, who usually signs in interactively using a browser. Users often have additional security checks associated with their sign-ins, such as multi-factor authentication (MFA) and conditional access based on their location or network.
 - **A group** represents a collection of users. Groups don't authenticate directly, but they provide a convenient way to assign permissions to a set of users together.
 - **A service principal** represents an automated process or system, which usually doesn't have a human directly running it. Service principals are the topic of this module.
-- **A managed identity** is a special type of service principal, which is discussed further below.
+- **A managed identity** is a special type of service principal.
 
 ### Service principals
 
-A service principal is a special type of account. It can sign into Azure AD, but there's no human to interact with the sign-in process. This means that service principals don't have multifactor authentication or other similar protections, since those require a person to do something to prove their identity.
+A service principal is a special type of account. It can sign in to Azure AD, but there's no human to interact with the sign-in process. This means that service principals don't have multifactor authentication or other similar protections, since those require a person to do something to prove their identity.
 
 In Azure AD, a service principal is identified by an _application ID_, which is a globally unique ID (GUID), and a credential. For pipelines, the credential is usually a strong password called a _key_, or alternatively you can use a _certificate_.
 
 ### Managed identities
 
-A _managed identity- is a special type of service principal. Like a normal service principal, it's designed for situations where a human isn't involved in the authentication process. But unlike a normal service principal, a managed identity doesn't require that you know or maintain its credentials. Instead, Azure manages the credentials automatically, and it provides the credentials to the resource that needs them. Managed identities are a great way for Azure resources to authenticate themselves for situations like automating your Azure management, connecting to databases, and reading secret data from Key Vault.
+A _managed identity- is a special type of service principal. Like a normal service principal, it's designed for situations where a human isn't involved in the authentication process. But unlike a normal service principal, a managed identity doesn't require that you know or maintain its credentials. Instead, Azure manages the credentials automatically, and it provides the credentials to the resource that needs them. Managed identities are only available inside Azure, and they are a great way for Azure resources to authenticate themselves for situations like automating your Azure management, connecting to databases, and reading secret data from Key Vault.
 
 When you work with pipelines, you usually can't use managed identities. This is because managed identities require that you own and manage the Azure resources. When you work with Azure Pipelines and GitHub Actions, you usually rely on shared infrastructure provided by Microsoft or GitHub.
 
 > [!NOTE]
-> There are some situations where pipelines can use managed identities. In Azure Pipelines, you can create a _self-hosted agent_ to run your pipelines using your own virtual machine. Since you own the virtual machine, you can assign it a managed identity and use it from your pipeline. However, most of the time, you use a _hosted agent_ that is managed by Microsoft, or a _hosted runner_ that is managed by GitHub, which aren't compatible with managed identities.
+> There are some situations where pipelines can use managed identities. In Azure Pipelines, you can create a _self-hosted agent_ to run your pipelines using your own Azure-based virtual machine. Since you own the virtual machine, you can assign it a managed identity and use it from your pipeline. However, most of the time, you use a _hosted agent_ that is managed by Microsoft, or a _hosted runner_ that is managed by GitHub, which aren't compatible with managed identities.
 
 > [!TIP]
 > In other parts of your solution, if you have a choice between using a managed identity or using a normal service principal, it's usually best to go with a managed identity since they are easier to work with and can be more secure.
@@ -60,7 +60,7 @@ For these reasons, the built-in pipeline tasks that interact with Azure don't ev
 
 You might see a few different terms in use when you work with service principals. Although it's not essential to understand these terms just to use service principals in a pipeline, it's helpful to know a little about how this works. When you work with different tools like the Azure portal, or the Microsoft Graph API, you might see these concepts or terms.
 
-Service principals are a feature of Azure AD. Azure AD has a concept of an _application_, which represents a system, piece of software, process, or some other non-human agent. You can consider a deployment pipeline to be an application too. In Azure AD, applications can do many different things that are beyond what authenticating and working with pipelines. When you create a brand new application and tell Azure AD about it, you create an object called an _application registration_. An application registration represents the application in Azure AD.
+Service principals are a feature of Azure AD. Azure AD has a concept of an _application_, which represents a system, piece of software, process, or some other non-human agent. You can consider a deployment pipeline to be an application too. In Azure AD, applications can do many different things that are beyond the scope of authentication and pipeline deployments. When you create a brand new application and tell Azure AD about it, you create an object called an _application registration_. An application registration represents the application in Azure AD.
 
 Service principals and applications are tightly linked. When you look at a service principal in the Azure portal, you see a lot of other functionality and configuration that might not seem relevant. Much of this is because service principals are linked to applications.
 
