@@ -6,9 +6,9 @@ For this exercise, you'll complete the following steps:
 - Complete some C# code to highlight key concepts to understand.
 - Start the change feed processor so that it begins to listen to the productCategory container.
 - Query the product container for the category whose name you're changing and the number of products in that category.
-- Update the category name and watch change feed propagate the changes to the product container.
+- Update the category name, and watch change feed propagate the changes to the product container.
 - Query the new product container with the new category name, and count the number of products to ensure that they're all updated.
-- Change the name back to the original and watch change feed propagate the changes back.
+- Change the name back to the original, and watch change feed propagate the changes back.
 
 ## Start Azure Cloud Shell and open Visual Studio Code
 
@@ -75,8 +75,6 @@ Add code to handle the changes that are passed into the delegate, loop through e
 
 1. Select Ctrl+G, and then enter **648** to find your `UpdateProductCategory()` function. Here you write some code that updates each product in the product container with the new category name captured by change feed.
 
-1. Go to the line that starts with **//To-Do:**.
-
 1. Copy the following code snippet and paste it below the line that starts with **//To-Do:**. The function does two things. It first queries the product container for all the products for the passed in `categoryId`. It then updates each product with the new product category name.
 
     ```csharp
@@ -133,7 +131,7 @@ Now that you've completed the code for change feed, let's see it in action.
     a. Queries the products container for the "Accessories, Tires, and Tubes" category, and counts how many products are in that category.  
     b. Updates the category name and replaces the word "and" with an ampersand (&).  
     c. Change feed picks up that change and, using the code you wrote, updates all the products for that category.  
-    d. Change feed reverts the name change and changes the category name back, replacing "&" with the original "and" in the name.  
+    d. Change feed reverts the name change and changes the category name back, replacing "&" with the original "and."  
     e. Change feed picks up that change and updates all the products back to the original product category name.
 
 1. Select **b** on the main menu and follow the prompts until change feed runs a second time, and then hold. The results will look like the following:
