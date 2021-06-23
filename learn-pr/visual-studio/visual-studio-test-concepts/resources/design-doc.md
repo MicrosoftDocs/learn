@@ -42,7 +42,7 @@ Learn the common best practices, theory, and anti-patterns to avoid when writing
 | Testing effects on architecture | Why we test | Knowledge Check | 1 | No, combine with why we test |
 | Code coverage and code health | Why we test | Knowledge Check | 1 | No, combine with why we test |
 | Types of testing and the testing pyramid | Types of testing and the testing pyramid | Knowledge Check | 2 | Yes |
-| TDD, DRY, Red/Green/Refactor | Schools of thought | Knowledge Check | 3 | No, combine with Schools of thought |
+| TDD, DRY, Red/Green/Refactor, BDD | Schools of thought | Knowledge Check | 3 | No, combine with Schools of thought |
 | Choose what works for you | Schools of thought | Knowledge Check | 3 | No, combine with Schools of thought |
 
 ## Outline the units
@@ -69,35 +69,33 @@ Learn the common best practices, theory, and anti-patterns to avoid when writing
         - Code coverage is a metric indicating how much of an app's production code is covered by tests. It indicates if tests actually exercise all the product code, including branching logic, method overloads, etc. Code coverage can give a basic idea of what areas need more testing.Visual Studio even has tools that can [highlight what lines are covered by tests](https://docs.microsoft.com/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested) and what aren't in your editor.
         - Tracking the code coverage percentage overtime can give you an idea if the new code being added to your repository has tests. If new code isn't being tested, it *may* be an indication the repository is building up technical debt. While code coverage is useful, it is *not* an ultimate indication of repo health. It should only be one of many factors used to assess the health of a repo. Different code coverage engines can calculate coverage differently and many programs may appear to have low coverage, despite being well tested. For example, heavily testing certain methods that have extremely high use, and ignoring others may actually be the right thing to do for a given repo. We would not encourage every repo to try to achieve 100% code coverage because that is not a practical investment for many businesses. There is much debate if there is a universal code coverage percentage that repositories should aspire too, but we believe for now the best guidance is to judge on a case-by-case basis and not arbitrarily hold your team to a number without a deeper discussion.
 
-    **Knowledge check**
+    1. **Knowledge check**
 
-    What types of questions will test knowledge on *Why we test*? *[(Knowledge check guidance)](/help/learn/id-guidance-knowledge-check)*
+        - Which of these is **not** a benefit of testing:
+            - Tests encourage a more modular architecture.
+            - **The code coverage tests provide is the ultimate indication of repo health.**
+            - Tests help keep track of the different capabilities of a program.
+            - Tests help large repositories built by a community avoid bugs by providing checks for both old and new behavior.
 
-    - Which of these is **not** a benefit of testing:
-        - Tests encourage a more modular architecture.
-        - **The code coverage tests provide is the ultimate indication of repo health.**
-        - Tests help keep track of the different capabilities of a program.
-        - Tests help large repositories built by a community avoid bugs by providing checks for both old and new behavior.
-        
-    - The correct code coverage goal in a repo is:
-        - 100%
-        - 70%
-        - 50%
-        - **There is no one true answer. Your code coverage goal depends on the repository.**
+        - The correct code coverage goal in a repo is:
+            - 100%
+            - 70%
+            - 50%
+            - **There is no one true answer. Your code coverage goal depends on the repository.**
 
-1. **Exercise - exercise unit title**
+    1. **Exercise - exercise unit title**
 
-    List the steps which apply the learning content from previous unit:
+        List the steps which apply the learning content from previous unit:
 
-    1. Step
-    1. Step
-    1. Step
+        1. Step
+        1. Step
+        1. Step
 
 1. **Types of testing and the testing pyramid**
 
     - The Testing pyramid
         - The testing pyramid has been popularized over the past several years to explain the different types of testing and how common each of them are in software. You can find many different versions of the testing pyramid out there and it's use is still debated, but we'll try to provide a simple and uncontroversial explanation. The base of the pyramid is made up of unit tests. These are typically the easiest tests to write, maintain as code changes, and run the fastest. For many users, unit tests are the first introduction to testing. As you climb the pyramid, the tests usually become more expensive to write, maintain, and run, but they can still provide high value though there are usually fewer of these types.
-        
+
         ![image](../media/testing-pyramid.png)
 
     - Unit
@@ -118,66 +116,66 @@ Learn the common best practices, theory, and anti-patterns to avoid when writing
         - A word of caution, it's easy to invest in UI tests because they can seem like the most direct representation of what users are experiencing when using your app. The industry rapidly embraced UI Tests when they first appeared on the scene for this very reason. The disadvantage was that UI also rapidly changes so all the tests you write may need consistent updates even for a small change. Be wary of writing too many UI tests that will need a high investment to keep up-to-date as your app grows. Many modern UI testing frameworks specifically address this ability to keep UI tests up-to-date, so it's good to look for platforms that also enable easier maintainability as you test.
     - Since the industry is ever evolving better ways to ensure code quality with tests there are likely many more types of tests not listed here, but these are the major ones. The testing pyramid itself may need to be re-written or re-shaped as better software practices and development technologies evolve how we think and test.
 
-    **Knowledge check**
+    1. **Knowledge check**
 
-    What types of questions will test *the different types of testing*? *[(Knowledge check guidance)](/help/learn/id-guidance-knowledge-check)*
+        What types of questions will test *the different types of testing*? *[(Knowledge check guidance)](/help/learn/id-guidance-knowledge-check)*
 
-    - What is the most common type of test?
-        - Integration
-        - UI
-        - **Unit**
-        - Acceptance
-    - If I want to test how my app scales with multiple users using it, what type of test am I likely to write?
-        - **Load**
-        - Unit
-        - Integration
-        - Performance
+        - What is the most common type of test?
+            - Integration
+            - UI
+            - **Unit**
+            - Acceptance
+        - If I want to test how my app scales with multiple users using it, what type of test am I likely to write?
+            - **Load**
+            - Unit
+            - Integration
+            - Performance
 
-1. **Exercise - exercise unit title**
+    1. **Exercise - exercise unit title**
 
-    List the steps which apply the learning content from previous unit:
+        List the steps which apply the learning content from previous unit:
 
-    1. Step
-    1. Step
-    1. Step
+        1. Step
+        1. Step
+        1. Step
 
 1. **Schools of thought**
 
     - Test Driven Development (TDD)
         - Test driven development, often referred to as TDD, is a method of directly coupling testing with every part of your day-to-day development. Developers who use TDD typically start developing by first writing a test that fails and then writing the code that makes the test pass. This means product code is more likely to get very high test coverage and the tests typically come first. Many developers find this useful to help them prioritize good architecture from the start of development and stay laser focused on each part of the functionality they need to implement. This school of thought advocates for testing not being an after-thought of development, but rather a driving force.
         - There is a type of TDD called Red/Green/Refactor that gives further order to this process: (1) Write a failing "red" test (2) Add the necessary product code to make that test pass or turn "green" (3) "refactor" now that you have the correct functionality. This pattern provides an easy guide as you get into a programming flow.
+    - Behavior Driven Development
+        - Behavior driven development (or BDD) is very similar to TDD, but with greater focus on using acceptance tests to guide development at a high level. You may work with your customers, business partners, or program managers to define a set of tests that list the needed criteria for the product. These tests are usually much higher-level descriptions of functionality than unit tests and are more business-oriented.
     - DRY (Don't Repeat Yourself)
         - Don't Repeat Yourself, also known as DRY, is another practice also referred to in testing. This is strong guidance to avoid repeating information and logic everywhere you can. You can do this by abstracting the information and remembering to honor one source of truth rather than maintaining multiple copies of the same data. For example, let's say you are writing unit tests for different constructors, but you are re-using many of the parameters for multiple tests. You could choose to write a test helper method that keeps all the parameter inputs in one place so they can more easily be called and modified for all of your tests. This is an example reducing duplication so you Don't Repeat Yourself.
     - Choose what works best for you!
         - Ultimately, you should choose what practices work best for you and make you the most effective programmer. That may be different for everyone since we all think and solve problems in many different ways. Don't worry if TDD is too intense or it doesn't fit your particular project. Maybe the team you are working on has better guidance on practices that work best specifically for your code base. I would encourage you to do some research and find something that is a good fit for you!
 
-    **Knowledge check**
+    1. **Knowledge check**
 
-    What types of questions will test *the schools of thought on testing*? *[(Knowledge check guidance)](/help/learn/id-guidance-knowledge-check)*
+        - What does TDD stand for?
+            - Test Driven Design
+            - Testing Data Daily
+            - **Test Driven Development**
+            - Technical Data Development
+        - What is the best recommended testing approach?
+            - TDD
+            - DRY
+            - It depends on the needs of the repo and the team!
+            - BDD
 
-    - What does TDD stand for?
-        - Test Driven Design
-        - Testing Data Daily
-        - **Test Driven Development**
-        - Technical Data Development
-    - What is the best recommended testing approach?
-        - TDD
-        - DRY
-        - It depends on the needs of the repo and the team!
-        - BDD
+    1. **Exercise - exercise unit title**
 
-1. **Exercise - exercise unit title**
+        List the steps which apply the learning content from previous unit:
 
-    List the steps which apply the learning content from previous unit:
-
-    1. Step
-    1. Step
-    1. Step
+        1. Step
+        1. Step
+        1. Step
 
 1. **Summary**
 
-    Now you've read the conceptual overview of why we test, the different types of tests, and the schools of thought on testing. If you haven't tried the hands-on tutorial yet I suggest following the [Create tests C# tutorial](TBD). You should feel a little more oriented to tackle testing in your project to improve your repository's code health. There is no one-size-fits-all testing approach, but there is plenty of advice on best practices and common pitfalls authored by the industry and you should find what best suits you, your team, your repository, and your business needs.
+    Now you've read the conceptual overview of why we test, the different types of tests, and the schools of thought on testing. If you haven't tried the hands-on tutorial yet I suggest following the [Create tests C# tutorial](../../visual-studio-test-tools/resources/design-doc.md). You should feel a little more oriented to tackle testing in your project to improve your repository's code health. There is no one-size-fits-all testing approach, but there is plenty of advice on best practices and common pitfalls authored by the industry and you should find what best suits you, your team, your repository, and your business needs.
 
 ## Notes
 
- Start writing, running, and managing tests with the [Create tests C# tutorial](TBD).
+ Start writing, running, and managing tests with the [Create tests C# tutorial](../../visual-studio-test-tools/resources/design-doc.md).
