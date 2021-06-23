@@ -6,7 +6,6 @@ This transformational journey is a manic mashup of two worlds that reveals just 
 
 In this learning module, we'll introduce you to the core concepts of building Mixed Reality (MR) experiences with Babylon.js. We'll create a simple WebXR app that can be run cross-platform.
 
-> This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module on a new tab](https://aka.ms/LearnWithDrG/Basketball/Video5?azure-portal=true).
 
 © 2021 Warner Bros. Ent. All Rights Reserved.
 
