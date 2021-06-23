@@ -20,11 +20,11 @@ Smart contracts have these key properties and advantages:
 
 Smart contracts can benefit many industries and processes. Consider the following use cases.
 
-**Insurance**: Smart contracts can simplify and streamline the claims process by automatically triggering a claim when certain events occur. Claim details can be recorded on the blockchain to determine the amount of compensation that users will receive. This functionality can reduce processing times and human errors.
+**Insurance**: When certain events occur, smart contracts automatically triggers a claim which simplifies and streamlines the claims process. Then, to determine the amount of compensation that users receive, claim details can be recorded on the blockchain. This functionality can reduce processing times and human errors.
 
 **Voting**: Smart contracts can help make voting automatic and transparent. Each contract serves as one ballot, which represents a voter's identity. Because a blockchain is immutable, meaning that it can't be changed, votes can't be tampered with.
 
-**Supply chains**: Smart contracts can record ownership as items move through a supply chain. The contracts confirm who's responsible for a product at any given time. At any stage, the smart contract can be used to find out exactly where the products should be. If any party in the supply chain fails to deliver on time, then every other party knows where the problem happened.
+**Supply chains**: As items move through the supply chain, smart contracts can record ownership and can confirm who's responsible for a product at any given time. At any stage, the smart contract can be used to find out exactly where the products should be. If any party in the supply chain fails to deliver on time, then every other party knows where the problem happened.
 
 **Record keeping**: Many industries can use smart contracts to improve the speed and security of record keeping. Blockchain technology can be used to digitize records and to securely encrypt and store them. Plus, access can be gated so that only allowed individuals can access the records.
 
