@@ -24,10 +24,10 @@ Here, you'll create an Azure Cosmos DB instance and use environment variables to
 
     `$COSMOS_DB_NAME` specifies your unique database name. The command prints the endpoint address for your database. Here, the command saves this address to the Bash variable `COSMOS_DB_ENDPOINT`.
 
-1. Run `az cosmosdb list-keys` to get the Azure Cosmos DB connection key and store it in a Bash variable named `COSMOS_DB_MASTERKEY`.
+1. Run `az cosmosdb keys list` to get the Azure Cosmos DB connection key and store it in a Bash variable named `COSMOS_DB_MASTERKEY`.
 
     ```azurecli
-    COSMOS_DB_MASTERKEY=$(az cosmosdb list-keys \
+    COSMOS_DB_MASTERKEY=$(az cosmosdb keys list \
       --resource-group learn-deploy-aci-rg \
       --name $COSMOS_DB_NAME \
       --query primaryMasterKey \
