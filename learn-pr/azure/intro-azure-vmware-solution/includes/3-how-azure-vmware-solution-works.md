@@ -49,7 +49,7 @@ Minimum and maximum node configurations are:
 - Maximum of 12 clusters in an Azure private cloud
 - Maximum of 96 nodes in an Azure private cloud
 
-Each of the high-end hosts has 576 GB of RAM and dual Intel 18 core, 2.3-GHz processors. The high-end hosts have two vSAN disk groups with a 15.36-TB (SSD) raw vSAN capacity tier and a 3.2 TB (NVMe) vSAN cache tier.
+Each of the high-end hosts has 576 GB of RAM and dual Intel 18- core, 2.3-GHz processors. The high-end hosts have two vSAN disk groups with a 15.36-TB (SSD) raw vSAN capacity tier and a 3.2 TB (NVMe) vSAN cache tier.
 
 You use vSphere and NSX-T Manager to manage most aspects of cluster configuration or operation. All local storage for each host in a cluster is under the control of vSAN. Each ESXi host in the solution is configured with four 25-Gbps NICs, two NICs provisioned for ESXi system traffic, and two NICs provisioned for workload traffic.
 
@@ -88,7 +88,7 @@ There are two options for interconnectivity in the private cloud for Azure VMwar
 
 - **Basic Azure-only interconnectivity** lets you manage and use your private cloud with only a single virtual network in Azure. This implementation is best suited for Azure VMware Solution evaluations or implementations that don't require access from on-premises environments.
 
-- **Full on-premises to private cloud interconnectivity** extends the basic Azure-only implementation to include interconnectivity between on-premises and Azure VMware Solution private clouds.
+- **Full interconnectivity between on-premises and private cloud** extends the basic Azure-only implementation to include interconnectivity between on-premises environments and Azure VMware Solution private clouds.
 
 During the deployment of a private cloud, the private networks for management, provisioning, and vMotion are created. These private networks will be used to access vCenter and NSX-T Manager and virtual machine vMotion or deployment.
 
@@ -115,13 +115,13 @@ Azure VMware Solution private clouds use vSphere role-based access control for a
 
 In Azure VMware Solution, vCenter has a built-in local user called cloudadmin that's assigned to the cloudAdmin role. The cloudAdmin role has vCenter privileges that differ from the privileges in other VMware cloud solutions:
 
-- The local cloudadmin user is used to set up users in Active Directory.
+- The local cloudadmin user sets up users in Active Directory.
 
-- In an Azure VMware Solution deployment, the administrator doesn't have access to the administrator user account. They can, however, assign Active Directory users and groups to the cloudAdmin role on vCenter.
+- In an Azure VMware Solution deployment, the administrator doesn't have access to the administrator user account. The admin can, however, assign Active Directory users and groups to the cloudAdmin role on vCenter.
 
-- The private cloud user doesn't have access to and can't configure specific management components that Microsoft supports and manages. Examples of these components are clusters, hosts, datastores, and distributed virtual switches.
+- The private cloud user doesn't have access to, and can't configure, specific management components that Microsoft supports and manages. Examples of these components are clusters, hosts, datastores, and distributed virtual switches.
 
-Azure VMware Solution provides security for vSAN storage datastores by using data-at-rest encryption that's turned on by default. The encryption is KMS-based and supports vCenter operations for key management. Keys are stored encrypted and wrapped by an Azure Key Vault master key. When a host is removed from a cluster, data on SSDs is invalidated immediately. The following diagram illustrates the relationship of the encryption keys to Azure VMware Solution.
+Azure VMware Solution provides security for vSAN storage datastores by using data-at-rest encryption that's turned on by default. The encryption is based on Amazon Key Management Service (KMS) and supports vCenter operations for key management. Keys are stored encrypted and wrapped by an Azure Key Vault master key. When a host is removed from a cluster, data on SSDs is invalidated immediately. The following diagram illustrates the relationship of the encryption keys to Azure VMware Solution.
 
 :::image type="icon" source="../media/3-security-overview.png" border="false" alt-text="Diagram that shows the flow of encryption keys in Azure VMware Solution.":::
 
