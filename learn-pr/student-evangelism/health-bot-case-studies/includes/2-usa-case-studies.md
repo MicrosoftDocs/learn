@@ -15,7 +15,6 @@ The Centers for Disease Control and Prevention (CDC) bot, which utilizes the Azu
 
 :::image type="content" source="../media/cdc.png" alt-text="Example chat with the CDC bot.":::
 
-
 ## Providence
 
 One of the largest health systems in the United States created a [healthcare chatbot named Grace](https://www.providence.org/news/uf/623601749) by using the Azure Health Bot service. Providence created Grace to help answer patients' questions online. 
@@ -32,7 +31,6 @@ Walgreens, the global pharmacy and healthcare retail provider, [used Azure Healt
 
 :::image type="content" source="../media/aurora.png" alt-text="Example questions and answers in the Aurora Health Care symptom checker, followed by a scheduled appointment.":::
 
-
 ## Virginia Mason
 
 Serving the Pacific Northwest region, the [Virginia Mason health system](https://www.virginiamason.org/coronavirus) created a healthcare bot to help patients understand whether they need care. This Azure Health Bot instance has thousands of daily users.
@@ -42,7 +40,6 @@ Serving the Pacific Northwest region, the [Virginia Mason health system](https:/
 Premera Blue Cross improved its patient experience by implementing Scout, an intelligent virtual health assistant. Scout offers digital services such as checking healthcare claim status, eligibility, and health plans on Android and iOS.
 
 :::image type="content" source="../media/premera.png" alt-text="Example of a Premera patient sign-in screen and a chat with the Scout assistant.":::
-
 
 ## Quest Diagnostics
 
