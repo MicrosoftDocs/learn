@@ -8,7 +8,7 @@ There are two ways to continue through this module. Either will lead you to the 
 
 In this option, you use [CodeTour in Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour&azure-portal=true) to explore a nearly completed version and add your own personalization.
 
-To get started, create a GitHub repository for this app. Go to [the page to create a repository based on the template](https://aka.ms/LearnWithBasketball/BabylonsJS?azure-portal=true) and fill in the form. Name your repo *space-jam-a-new-legacy-babylonjs*. You can make this repo public or private, but be sure to include all branches.
+To get started, create a GitHub repository for this app. Go to [the page to create a repository based on the template](https://aka.ms/LearnWithBasketball/BabylonJS?azure-portal=true) and fill in the form. Name your repo *space-jam-a-new-legacy-babylonjs*. You can make this repo public or private, but be sure to include all branches.
 
 ![Screenshot that shows creating a repository for the project by using the GitHub template, for a completed experience.](../media/template-github.png)
 
