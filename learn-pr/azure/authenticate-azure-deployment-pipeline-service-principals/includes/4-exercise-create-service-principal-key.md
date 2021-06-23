@@ -127,9 +127,9 @@ Now the service principal has been created, you will sign in using its credentia
 
    ```azurecli
    az login --service-principal \
-     --username APPLICATION-ID \
-     --password SERVICE-PRINCIPAL-KEY \
-     --tenant AZURE-AD-TENANT-ID \
+     --username APPLICATION_ID \
+     --password SERVICE_PRINCIPAL_KEY \
+     --tenant TENANT_ID \
      --allow-no-subscriptions
    ```
 
@@ -158,7 +158,7 @@ Now the service principal has been created, you will sign in using its credentia
    ```azurepowershell
    Connect-AzAccount -ServicePrincipal `
      -Credential $credential `
-     -Tenant AZURE-AD-TENANT-ID
+     -Tenant TENANT_ID
    ```
 
 1. Check that the output from the previous command includes an `Account` property with the service principal's application ID, and a blank `SubscriptionName`. This indicates that the service principal signed in successfully.

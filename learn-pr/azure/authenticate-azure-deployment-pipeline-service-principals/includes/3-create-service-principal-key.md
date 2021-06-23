@@ -5,7 +5,7 @@ Now that you understand the concept of a service principal, you might wonder how
 When a service principal needs to communicate with Azure, it signs into Azure AD. Once Azure AD verifies the service principal's identity, it issues a _token_ that the client application stores and uses when it makes any requests to Azure. Broadly speaking, this process is similar to how things work when you sign into Azure yourself as a user. However, compared to users, service principals have a slightly different type of credential to prove their identity. There are two main credentials that service principals use: keys and certificates.
 
 > [!NOTE]
-> Managed identities are special types of service principal that work within Azure. They have a different type of authentication process that doesn't require that you know or handle credentials at all.
+> Managed identities are special service principals that work within Azure. They have a different type of authentication process that doesn't require that you know or handle credentials at all.
 
 ### Keys
 
@@ -20,7 +20,7 @@ Certificates are another way to authenticate service principals. They are very s
 When you create a service principal, you generally ask Azure to create a key at the same time. Azure typically generates a random key for you.
 
 > [!NOTE]
-> Remember our early discussion on how service principals work under the covers? Keys are stored as part of the application registration object. If you open up the Azure portal, look within the Azure AD configuration, and then navigate to the application registrations, you can also create and delete keys there too.
+> Remember our early discussion on how service principals work under the covers? Keys are stored as part of the application registration object. If you open up the Azure portal, look within the Azure AD configuration, and then navigate to the application registrations, you can create and delete keys there too.
 
 Azure provides the key to you when you create the service principal. This is the only time it will ever show you that key. After that, you won't be able to get it anymore. It's important that you securely copy the key so you can use it when you configure your pipeline. If you lose the key, you must delete it and create a new one.
 
@@ -80,7 +80,7 @@ Service principals have several identifiers and names that you use to identify a
 > Use a clear, descriptive display name for your service principal. It's important to help your team understand what the service principal is for, so that nobody accidentally deletes it or changes its permissions.
 
 > [!CAUTION]
-> A display name isn't unique. Multiple service principals might share the same display name. Be careful when you grant permissions to a service principal by using its display name to find it - you might accidentally give permissions to the wrong service principal. It's good practice to use the application ID instead.
+> A display name isn't unique. Multiple service principals might share the same display name. Be careful when you grant permissions to a service principal by using its display name to identity it - you might accidentally give permissions to the wrong service principal. It's a good practice to use the application ID instead.
 
 When you create a service principal, you typically only set the display name, and Azure assigns the other names and identifiers automatically.
 

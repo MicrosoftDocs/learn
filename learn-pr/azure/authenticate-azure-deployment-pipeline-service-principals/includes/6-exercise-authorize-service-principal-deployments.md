@@ -80,9 +80,9 @@ Run this Azure CLI command in the Visual Studio Code terminal to create the role
 
 ```azurecli
 az role assignment create \
-  --assignee APPLICATION-ID \
+  --assignee APPLICATION_ID \
   --role Contributor \
-  --scope RESOURCE-GROUP-ID \
+  --scope RESOURCE_GROUP_ID \
   --description "The deployment pipeline for the company's website needs to be able to create resources within the resource group."
 ```
 
@@ -94,9 +94,9 @@ Run this Azure CLI command in the Visual Studio Code terminal to create the role
 
 ```azurepowershell
 New-AzRoleAssignment `
-  -ApplicationId APPLICATION-ID `
+  -ApplicationId APPLICATION_ID `
   -RoleDefinitionName Contributor `
-  -Scope RESOURCE-GROUP-ID `
+  -Scope RESOURCE_GROUP_ID `
   -Description "The deployment pipeline for the company's website needs to be able to create resources within the resource group."
 ```
 
@@ -124,9 +124,9 @@ You don't currently have a deployment pipeline, so you'll simulate what a pipeli
 
    ```azurecli
    az login --service-principal \
-     --username APPLICATION-ID \
-     --password SERVICE-PRINCIPAL-KEY \
-     --tenant AZURE-AD-TENANT-ID
+     --username APPLICATION_ID \
+     --password SERVICE_PRINCIPAL_KEY \
+     --tenant TENANT_ID
    ```
 
 1. Deploy the Bicep file by running the following Azure CLI command:
@@ -154,7 +154,7 @@ You don't currently have a deployment pipeline, so you'll simulate what a pipeli
    ```azurepowershell
    Connect-AzAccount -ServicePrincipal `
      -Credential $credential `
-     -Tenant AZURE-AD-TENANT-ID
+     -Tenant TENANT_ID
    ```
 
 1. Deploy the Bicep file by running the following Azure PowerShell command:
@@ -223,10 +223,10 @@ You've successfully created a service principal and role assignment, and deploye
 
    When you're prompted to confirm, enter `y`.
 
-1. Run the following command to delete the service principal. Make sure you replace the `APPLICATION-ID` placeholder with the application ID you copied in the previous exercise:
+2. Run the following command to delete the service principal. Make sure you replace the `APPLICATION_ID` placeholder with the application ID you copied in the previous exercise:
 
    ```azurecli
-   az ad sp delete --id APPLICATION-ID
+   az ad sp delete --id APPLICATION_ID
    ```
 
 ::: zone-end
@@ -255,10 +255,10 @@ You've successfully created a service principal and role assignment, and deploye
 
    When you're prompted to confirm, enter `y`.
 
-1. Run the following command to delete the service principal. Make sure you replace the `APPLICATION-ID` placeholder with the application ID you copied in the previous exercise:
+1. Run the following command to delete the service principal. Make sure you replace the `APPLICATION_ID` placeholder with the application ID you copied in the previous exercise:
 
    ```azurepowershell
-   Remove-AzADServicePrincipal -ApplicationId APPLICATION-ID
+   Remove-AzADServicePrincipal -ApplicationId APPLICATION_ID
    ```
 
    When you're prompted to confirm, enter `y`.
