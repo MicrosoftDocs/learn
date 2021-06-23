@@ -9,7 +9,7 @@ Add `GUI.Rectangle` to create `imageRect`, and add that to the `guiMenu` dynamic
 This function belongs in the `Environment` class found in the *environment.ts* file:
 
 ```javascript
-public addLogo() {
+public addLegalLine() {
     // Create a GUI that will be full-screen
     const guiMenu = GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
     guiMenu.idealHeight = 720;
