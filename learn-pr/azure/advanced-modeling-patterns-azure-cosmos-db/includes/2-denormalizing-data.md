@@ -1,37 +1,37 @@
-In this section, we're going to look at our product table from our relational database and model it for a NoSQL database. We're also going to look at the Many to Many relationship our Product table has with ProductTags.
+In this unit, you'll look at the product table from your relational database and model it for a NoSQL database. You'll also look at the *many to many* relationship your product table has with product tags.
 
 :::image type="content" source="../media/2-product-model.png" alt-text="Diagram that shows the relationship between the product and product tags entities." border="false":::
 
 ## Model the product entities
 
-Our initial model for Product only includes the fields from our relational table. However, our e-commerce application needs to display the product tags when we display a product page. We also will want to query for products by product tags that can be accommodated in one of two ways. We can store products in a product tags container or we could embed our tags in the product container.
+Your initial model for the product table includes only the fields from your relational table. However, your e-commerce application must display the product tags when you display a product page. You'll also want to query for products by product tags in either of two ways. You can store products in a product tags container, or you can embed your tags in the product container.
 
-Given there are far fewer tags per product than products per tags, it makes more sense to embed the product tags in the product table. There is a 1 to few relationship between each product and tags so making it a good candidate for embedding. We will also store our product data with embedded tags in our new product container. So our new product model will look like the following diagram.
+Because there are far fewer tags per product than products per tag, it makes more sense to embed the product tags in the product table. There is a *one to few* relationship between each product and tags, which makes a good case for embedding. You'll also store your product data with embedded tags in your new product container. So your new product model will appear as shown in the following diagram:
 
-:::image type="content" source="../media/2-product-tags-model-container.png" alt-text="Diagram that shows the relationship between the product and product tags entities but also includes a product container where we haven't yet picked a partition key." border="false":::
+:::image type="content" source="../media/2-product-tags-model-container.png" alt-text="Diagram that shows the relationship between the product and product tags entities but also includes a product container for which you haven't yet picked a partition key." border="false":::
 
 ## Select a partition key
 
-Next, we will select a partition key for the product container. Again, we need to look at the operations to be performed to decide on a partition key. Our operations are, create a product, and edit a product. As customers navigate the e-commerce site, they will often do so by product category. We need a query that filters products by `categoryId` to display to the user. In order to make our query a single-partition query with all products by category, we will use `categoryId` as our partition key for our product container.
+Next, you'll select a partition key for the product container. Again, you need to look at the operations to be performed to decide on a partition key. Your operations are either to create a product or edit a product. As customers navigate the e-commerce site, they'll often do so by product category. You need a query that filters products by `categoryId` to display them to users. To make your query a single-partition query with all products by category, you use `categoryId` as the partition key for your product container.
 
-:::image type="content" source="../media/2-product-container-categoryid.png" alt-text="Diagram of the product container with category I D as the partition key, the list of all operations, and a SQL statement to list all products from a category." border="false":::
+:::image type="content" source="../media/2-product-container-categoryid.png" alt-text="Diagram of the product container with 'categoryId' as the partition key, a list of operations, and a SQL statement to list all products in a category." border="false":::
 
-So `categoryId` is a good partition key that will allow us to retrieve all products in a category efficiently. Embedding tag IDs also allows us to get the IDs in our Many to Many relationship between products and tags as well. However, when we query for products, you not only need the product data but you also want to display the category name and the tag names as well. How can we return the category name for each product, and the names for the product tags when we query for products?
+So `categoryId` is a good partition key that lets you retrieve all products in a category efficiently. By embedding tag IDs, you can get the IDs in your *many to many* relationship between products and tags as well. However, when you query for products, you need not only the product data but you also need to display the category name and the tag names. When you query for products, how can you return the category name for each product and the names for the product tags?
 
-To display a product page for a category, we need to run the following queries:
+To display a product page for a category, run the following queries:
 
-- Query product container to return all the products in a category.
-- Query productCategory container to return the product category's name.
-- Then for every product returned by the first query, run a third query on productTag container to get each product tag's name.
+1. Query the product container to return all the products in a category.
+1. Query the productCategory container to return the product category's name.
+1. Then, for every product returned by the first query, run a third query on productTag container to get each product tag's name.
 
-:::image type="content" source="../media/2-product-category-and-tags-queries.png" alt-text="Diagram of the product, product category, and product tags containers with each of the queries needed to run to satisfy our list all products from a category operation." border="false":::
+:::image type="content" source="../media/2-product-category-and-tags-queries.png" alt-text="Diagram of the product, productCategory, and productTag containers and the queries to run to list all products from a category operation." border="false":::
 
 ## Denormalize product entities
 
-Now running all these queries above could work for us. However, it is not very scalable. Remember that in a NoSQL database there are no joins between containers. So joins are not an option for us. Also remember, for a NoSQL database, the objective is to reduce the number of requests by modeling data such that all the data needed by the application can be fetched in as few requests as possible.
+Running all the preceding queries could work for you. However, this approach isn't very scalable. Remember that, in NoSQL databases, there are no *joins* between containers, so joins aren't an option for you. Also remember that, for NoSQL databases, the objective is to reduce the number of requests by modeling data so that you can fetch your application's data in as few requests as possible.
 
-The solution for us is to *denormalize* our data. With denormalization, we're able to optimize our data models to make sure that all the required data for our application is ready to be served by our queries.
+The solution, then, is to *denormalize* your data. With denormalization, you can optimize your data models to ensure that all the required data for your application is ready to be served by your queries.
 
-To denormalize our data here, we will add more properties like the name of the category and the name for each tag in our tags array. By adding these properties, we now are able to retrieve all of the data we need to return to our clients in just a single request.
+To denormalize your data in this instance, you add more properties, such as the name of the category and the name of each tag in your tags array. By adding these properties, you can now retrieve all the data you need to return to your clients in only a single request.
 
-:::image type="content" source="../media/2-product-denormalized.png" alt-text="Diagram of our product container with partition key of category I D, the modeled product document schema with category name denormalized, and a denormalized product tag array." border="false":::
+:::image type="content" source="../media/2-product-denormalized.png" alt-text="Diagram of a container with partition key 'categoryId' and modeled product document schema with a denormalized category name and product tag array." border="false":::
