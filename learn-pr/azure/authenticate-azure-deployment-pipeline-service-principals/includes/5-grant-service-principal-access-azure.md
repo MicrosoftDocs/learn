@@ -2,7 +2,7 @@ By itself, a service principal can't do anything in your Azure environment - jus
 
 ## Service principal authorization
 
-Up till now, you've focused on what service principals are, and how they can be used to prove the identity of a pipeline to Azure Active Directory (Azure AD). This is all about _authentication_.
+Until now, you've focused on what service principals are, and how they can be used to prove the identity of a pipeline to Azure Active Directory (Azure AD). This is all about _authentication_.
 
 Once Azure AD has authenticated a service principal, the next question becomes: what can this service principal do? This is the domain of _authorization, and is the responsibility of Azure's role-based access control (RBAC) system, sometimes called identity and access management (IAM). By using Azure RBAC, you can grant a service principal access to a specific resource group, subscription, or management group.
 
@@ -32,7 +32,7 @@ There are also lots of very specific roles that provide access just to a subset 
 
 ### The scope of the assignment
 
-You need to determine how broadly you assign the role. This impacts the number of resources that service principal will be able to modify. Common scopes include:
+You need to determine how broadly you assign the role. This impacts the number of resources that service principal can modify. Common scopes include:
 
 - **Single resource:** You can grant access just to a specific resource. Typically pipelines don't use this scope, because a pipeline creates resources that don't exist yet, or reconfigures multiple resources.
 - **Resource group:** You can grant access to all resources within a resource group. **Contributors** and **Owners** can also create resources within the group. This is a good option for many deployment pipelines.

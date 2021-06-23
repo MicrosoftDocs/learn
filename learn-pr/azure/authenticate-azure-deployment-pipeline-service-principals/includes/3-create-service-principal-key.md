@@ -22,7 +22,7 @@ When you create a service principal, you generally ask Azure to create a key at 
 > [!NOTE]
 > Remember our early discussion on how service principals work under the covers? Keys are stored as part of the application registration object. If you open up the Azure portal, look within the Azure AD configuration, and then navigate to the application registrations, you can create and delete keys there too.
 
-Azure provides the key to you when you create the service principal. This is the only time it will ever show you that key. After that, you won't be able to get it anymore. It's important that you securely copy the key so you can use it when you configure your pipeline. If you lose the key, you must delete it and create a new one.
+Azure provides the key to you when you create the service principal. This is the only time it will ever show you that key. After that, you can't get it anymore. It's important that you securely copy the key so you can use it when you configure your pipeline. If you lose the key, you must delete it and create a new one.
 
 > [!TIP]
 > When you create a key for a pipeline's service principal, it's a good idea to immediately copy the key into the pipeline's configuration. That way, you avoid storing the key unnecessarily. In this module we only discuss how to create a service principal and key, but you'll learn how to update your pipeline with the key in a later module.
@@ -31,7 +31,7 @@ Azure provides the key to you when you create the service principal. This is the
 
 ::: zone pivot="cli"
 
-To create a service principal and a key, use the `az az sp create-for-rbac` command. The command accepts several arguments, and can optionally assign roles to the service principal. You'll learn about this later in this module, so for now he's an example illustrating how to create a service principal without any Azure role assignments:
+To create a service principal and a key, use the `az az sp create-for-rbac` command. The command accepts several arguments, and can optionally assign roles to the service principal. You'll learn about this later in this module, so for now here's an example illustrating how to create a service principal without any Azure role assignments:
 
 ```azurecli
 az ad sp create-for-rbac \
@@ -48,7 +48,7 @@ When you run this command, the Azure CLI returns a JSON response with a `passwor
 
 ::: zone pivot="powershell"
 
-To create a service principal and a key, use the `New-AzADServicePrincipal` cmdlet. The command accepts several arguments, and can optionally assign roles to the service principal. You'll learn about this later in this module, so for now he's an example illustrating how to create a service principal without any Azure role assignments:
+To create a service principal and a key, use the `New-AzADServicePrincipal` cmdlet. The command accepts several arguments, and can optionally assign roles to the service principal. You'll learn about this later in this module, so for now here's an example illustrating how to create a service principal without any Azure role assignments:
 
 ```azurepowershell
 $servicePrincipal = New-AzADServicePrincipal `
@@ -86,7 +86,7 @@ When you create a service principal, you typically only set the display name, an
 
 ## Handle expired keys
 
-Service principals don't expire, but their keys do. When you create a key you can configure its expiry time. By default the expiry time is set to one year. After this expiry time, the key no longer works and the pipeline won't be able to sign into Azure AD. You need to renew or _rotate_ keys regularly.
+Service principals don't expire, but their keys do. When you create a key you can configure its expiry time. By default the expiry time is set to one year. After this expiry time, the key no longer works and the pipeline can't sign into Azure AD. You need to renew or _rotate_ keys regularly.
 
 > [!CAUTION]
 > It might be tempting to set long expiry times for your keys, but you shouldn't do so. Service principals are only protected by their credentials, so if an attacker obtains a service principal's key they can do a great deal of damage. The best approach to minimize the period that an attack can last is to regularly change your keys. You should also delete and recreate keys if you ever suspect they've been leaked.

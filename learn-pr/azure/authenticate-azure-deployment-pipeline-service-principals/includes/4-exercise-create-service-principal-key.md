@@ -105,7 +105,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
    $plaintextSecret = [System.Net.NetworkCredential]::new('', $servicePrincipal.Secret).Password
    ```
 
-1. Run the following command to show the service principal's aplication ID, the key, and your Azure AD tenant ID:
+1. Run the following command to show the service principal's application ID, the key, and your Azure AD tenant ID:
 
    ```azurepowershell
    Write-Output "Service principal application ID: $($servicePrincipal.ApplicationId)"
@@ -119,7 +119,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 ## Test the service principal
 
-Now the service principal has been created, you will sign in using its credentials to verify it's been created successfully.
+Now that the service principal has been created, you sign in using its credentials to verify it's been created successfully.
 
 ::: zone pivot="cli"
 

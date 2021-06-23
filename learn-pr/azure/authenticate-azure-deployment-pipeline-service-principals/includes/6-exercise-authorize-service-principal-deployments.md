@@ -40,7 +40,7 @@ In the previous exercise, you logged in using the service principal and then you
 
 ## Create a resource group
 
-Now you will create a resource group to contain the toy company's website resources.
+Now you'll create a resource group to contain the toy company's website resources.
 
 ::: zone pivot="cli"
 
@@ -50,7 +50,7 @@ Now you will create a resource group to contain the toy company's website resour
    az group create --name ToyWebsite --location eastus
    ```
 
-1. Look at the JSON output from the previous command. It includes a property named `id`, which is the resource group's ID. Copy this somewhere safe. You'll use it soon.
+2. Look at the JSON output from the previous command. It includes a property named `id`, which is the resource group's ID. Copy this somewhere safe. You'll use it soon.
 
 ::: zone-end
 
@@ -197,7 +197,7 @@ Use the Azure portal to inspect the resources that you deploy and to inspect the
 
 ## Clean up the resource group and service principal
 
-You've successfully created a service principal and role assignment, and deployed your website's resources by using a Bicep file. You can now remove the resources that you've created. First, you need to sign out as the service principal, and sign back in as your own user account.
+You've successfully created a service principal and role assignment, and deployed your website's resources by using a Bicep file. You can now remove the resources that you've created. First, you sign out as the service principal, and sign back in as your own user account.
 
 ::: zone pivot="cli"
 
