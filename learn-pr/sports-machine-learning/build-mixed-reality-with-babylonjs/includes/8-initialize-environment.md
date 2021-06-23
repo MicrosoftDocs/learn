@@ -57,7 +57,7 @@ Now you're ready to exchange the default environment for the one that you just c
 
 ## Initialize the custom environment and test
 
-Back in the *index.ts* file, create a new `Environment` instance. Pass in the `scene` and `engine` instances that you created earlier to construct the class. Then, call `init` to set up the buttons.
+Back in the *index.ts* file, you need to replace the default environment that you created and create a new `Environment` instance. Pass in the `scene` and `engine` instances that you created earlier to construct the class. Then, call `init` to set up the buttons. Replace the line `const env = scene.createDefaultEnvironment();` with the following two lines of code:
 
 ```javascript
   const environment = new Environment(scene, engine);
