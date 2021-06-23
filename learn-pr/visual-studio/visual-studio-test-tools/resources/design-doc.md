@@ -100,6 +100,11 @@ Suppose you are creating a calculator app for school and you've been able to suc
         - State
         - **(All of the above)**
 
+1. Sharpen your testing tool set
+    - Fluent Assertions
+    - Data driven tests
+    - Mocking
+
 1. **Summary**
 
     Recall the calculator app example from the beginning. As the functionality of the app expanded, more and more inputs needed to be checked. Manually doing this by running the app and trying it out can take a long time. With tests, you can create test methods to put your app through its paces programmatically. You can save all those inputs in your test methods that make sure the behavior of your code stays stable even as you make changes. The Test Explorer enables you to view your tests, run them automatically with the click of a button, and debug specific parts of your code through your tests.
