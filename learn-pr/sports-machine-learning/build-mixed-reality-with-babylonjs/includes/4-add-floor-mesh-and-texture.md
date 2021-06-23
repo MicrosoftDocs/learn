@@ -31,7 +31,7 @@ All of the following code should go into the `createScene()` function, because t
   gymFloor.physicsImpostor = new PhysicsImpostor(gymFloor, PhysicsImpostor.PlaneImpostor, { mass: 0, restitution: 1 }, scene);
 ```
 
-Once you have created the `gymFloor`. Make sure you replace the floor mesh in the default XR experience. Find the code:
+After you've created `gymFloor`, make sure you replace the floor mesh in the default XR experience. Find the code:
 
 \```
 // Create the default XR experience
