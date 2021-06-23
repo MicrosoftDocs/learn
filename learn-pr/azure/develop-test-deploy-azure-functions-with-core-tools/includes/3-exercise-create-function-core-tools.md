@@ -59,7 +59,7 @@ Let's create our function!
 
 The function implementation that the Core Tools created for us in **index.js** looks for an input called `name` in the query string or the body of the inbound HTTP request and returns the string `Hello {name}`. This is a good illustration about how to use an HTTP trigger, but we want to replace it with our simple interest implementation.
 
-1. In the code editor's Files pane, expand the `simple-interest` folder and select `index.js` to open it in the editor.
+1. In the code editor's **Files** pane, expand the `simple-interest` folder, and select `index.js` to open it in the editor.
 
 2. Replace the full contents of `index.js` with the following code:
 
@@ -103,7 +103,7 @@ To run our new function locally and try it out, we'll use `func start` to start 
 
     This localhost URL is not published to the web, it's only reachable from tools running in Cloud Shell. We're going to use a command-line tool, `curl`, to interact with our function. To do that, we need to restart the Functions host as a background process so we can use the command line while it's running.
 
-    If you were using the Core Tools from your own computer, you probably wouldn't need to do this. You could use `curl` from a second terminal window, and the output produced by the Core Tools would be displayed in real time in the first window. In Cloud Shell, we are limited to a single terminal, so this technique is necessary for this tutorial.
+    If you were using the Core Tools from your own computer, you probably wouldn't need to do this. You could use `curl` from a second terminal window, and the output produced by the Core Tools would appear in real time in the first window. In Cloud Shell, we are limited to a single terminal, so this technique is necessary for this tutorial.
 
 1. Press <kbd>Ctrl+C</kbd> to stop the Functions host.
 
@@ -115,7 +115,7 @@ To run our new function locally and try it out, we'll use `func start` to start 
 
     You can ignore the output of this command. The Functions host is now running exactly as before, but its output is being sent to the file `~/output.txt`, and we can continue to use the command line while it's running.
 
-1. Run this command to send an HTTP GET request to our locally running function.
+1. Run the following command to send an HTTP GET request to our locally running function.
 
     ```bash
     curl "http://localhost:7071/api/simple-interest" -w "\n"

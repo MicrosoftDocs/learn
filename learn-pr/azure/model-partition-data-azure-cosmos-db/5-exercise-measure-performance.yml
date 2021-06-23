@@ -4,7 +4,7 @@ title: Exercise - Measure performance for the customer entities
 metadata:
   type: exercise  
   title: Exercise - Measure performance for the customer entities
-  description: In this exercise we will measure the difference for our new customer entities when we model data as a single document versus modeling them separately.
+  description: In this exercise, we'll measure the difference for new customer entities when we model data as a single document versus modeling them separately.
   ms.date: 6/14/2021  
   author: markjbrown  
   ms.author: mjbrown  
