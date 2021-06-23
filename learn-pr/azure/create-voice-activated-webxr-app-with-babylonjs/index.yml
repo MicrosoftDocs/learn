@@ -38,7 +38,7 @@ products:
 - hololens
 units:
 - learn.create-voice-activated-webxr-app-with-babylonjs.introduction
-- learn.create-voice-activated-webxr-app-with-babylonjs.azure-speech-to-text-api
+- learn.create-voice-activated-webxr-app-with-babylonjs.overview-azure-speech-to-text
 - learn.create-voice-activated-webxr-app-with-babylonjs.exercise-create-azure-speech-resource
 - learn.create-voice-activated-webxr-app-with-babylonjs.speech-to-text-javascript-sdk
 - learn.create-voice-activated-webxr-app-with-babylonjs.exercise-call-speech-to-text-api
