@@ -1,8 +1,8 @@
-You need to discover and analyze your company's criteria. This will help you choose the bot-building option with the best fit for your company.
+You must analyze your company's criteria. This will help you choose the bot-building option with the best fit for your company.
 
 ## Compare bot-building options based on your requirements
 
-With three viable bot-building options (Power Virtual Agents, QnA Maker, and Bot Framework Composer), you need to determine which is the best one for your company. Start by analyzing how each tool fulfills the criteria based on your company's requirements. Also examine the nuanced differences between the products. Consider the answers to the following questions to help you compare the three bot-building options.
+You have three bot-building options (Power Virtual Agents, QnA Maker, and Bot Framework Composer) to compare so you can decide which is best for your company. Start by analyzing how each tool fulfills the criteria based on your company's requirements. Also examine the nuanced differences between the products. Consider the answers to the following questions as you compare the three bot-building options.
 
 ### Do you prefer a low-code design interface?
 
@@ -13,7 +13,7 @@ If you prefer a low-code design interface, compare the three options:
 - QnA Maker has a portal interface you use to create a bot. You do this after you've created and designed your QnA Maker knowledge base.
 
      > [!NOTE]
-     > The QnA Maker portal doesn't offer bot modification possibilities, so if you needed to modify your bot to meet test requirements, you would have to edit the bot source code.
+     > The QnA Maker portal doesn't offer bot-modification options. If you must modify your bot to meet test requirements, you'd have to edit the bot's source code.
 
 - Bot Framework Composer has a low-code, visual designer that you can download for Windows, macOS, and Linux. You can also host Bot Framework Composer as a shared, hosted web service. Bot Framework Composer offers extensive bot building capabilities, including controlling conversation flow, defining intents and entities, and adding authentication. Bot Framework Composer also offers built-in low-code integration with LUIS and QnA Maker.
 
@@ -23,9 +23,9 @@ If you require low-code integration with other components, compare the three opt
 
 - Power Virtual Agents offers integration with Bot Framework skills and Power Automate connectors in a low-code environment. You can also modify Power Virtual Agents bots with the Bot Framework Composer, further extending your integration capabilities.
 
-- QnA Maker does not offer significant integration capabilities in a low-code design environment.
+- QnA Maker doesn't offer significant integration capabilities in a low-code design environment.
 
-- Bot Framework Composer offers comprehensive integration possibilities. You can use Bot Framework Composer to extend the functionality of your bot with numerous AI, logic, and task based features. Bot Framework Composer also offers built-in integration with LUIS and QnA Maker.
+- Bot Framework Composer offers comprehensive integration possibilities. You can use Bot Framework Composer to extend the functionality of your bot with numerous AI, logic, and task-based features. Bot Framework Composer also offers built-in integration with LUIS and QnA Maker.
 
 ### Do you need a bot-building tool that supports code-based development with the bot source?
 
@@ -43,9 +43,9 @@ If you have specific publishing option requirements, compare the three options:
 
 - Power Virtual Agents bots can be published to a website or the Power Apps portal. You can add Power Virtual Agents bots to Azure Bot Service channels, Microsoft Teams, Facebook, or to mobile or custom apps.
 
-- QnA Maker bots are created as Azure Bot Service bots. You can host them in an Azure Web App or connect them to numerous channels, including web chat, Microsoft Teams, Microsoft Outlook, and Slack.
+- <!-- ID/SME: Because this bullet and the next are identical except for the service name, please combine them similar to "QnA Maker *and* Bot Framework Composer bots are created... -->QnA Maker bots are created as Azure Bot Service bots. You can host them in Azure Web App or connect them to many channels, including web chat, Microsoft Teams, Microsoft Outlook, and Slack.
 
-- Bot Framework Composer bots are also created as Azure Bot Service bots. You can host them in and Azure Web App, or connect them to numerous channels, including web chat, Microsoft Teams, Microsoft Outlook, and Slack.
+- Bot Framework Composer bots are also created as Azure Bot Service bots. You can host them in Azure Web App or connect them to many channels, including web chat, Microsoft Teams, Microsoft Outlook, and Slack.
   
      > [!NOTE]
-     > Bot Framework Composer bots can be self-hosted in Internet Information Services (IIS) or other web hosting services provided it has an internet-accessible endpoint and a valid HTTPS certificate.
+     > Bot Framework Composer bots can be self-hosted in Internet Information Services (IIS) or other web hosting services provided it has an internet-accessible endpoint and a valid HTTPS certificate. <!-- ID/SME: If they're self-hosted in IIS, do they need the internet-accessible endpoint and certificate, or is that just if they're being host in other web services? It's not clear whether the endpoint and certificate are required for both. Also, please break this into two sentences, per Acrolinx. -->
