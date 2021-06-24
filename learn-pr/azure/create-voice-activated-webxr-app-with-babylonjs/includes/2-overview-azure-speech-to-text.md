@@ -2,7 +2,7 @@ Speech-to-text is a technology that accurately converts voice audio to text data
 
 In the scenario of the amusement park application, we can use S to recognize magic spells. When a user says the spell, the speech-to-text service converts the audio data to text. Then, the app can match the transcribed text against the text representation of the expected spell to see if the user has said a certain spell.
 
-Here, you will learn about how the Azure Speech Services can help achieve the flow described above.
+Here, you will learn about the speech-to-text service provided as a part of the Azure Speech Services.
 
 ## Azure Speech Services
 
@@ -15,3 +15,7 @@ Speech Service is one of the main categories under Azure Cognitive Services. It 
 The Speech-to-text service under Azure Speech Services can be used to transcribe an audio stream or a local file. The service supports transcription in more than three dozens of languages, and it uses Microsoft's Universal Language Model by default.
 
 However, several options exist for customizing the transcription model. You can create a customized model by using the Custom Speech service. There, you can upload your own test data and train a unique model based on the set of data. Or, you can add certain phrases into the Phrase List to help the model identify those phrases in your use case more accurately.
+
+## Privacy and Security
+
+Azure Speech Services is certified by SOC, FedRAMP, PCI DSS, HIPAA, HITECH, and ISO. Neither audio input or transcription data is logged, and all custom speech data and models are encrypted when saved in storage. You can also view or delete any custom speech data or models at anytime.

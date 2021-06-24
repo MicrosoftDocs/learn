@@ -4,8 +4,6 @@ In order to use the Azure Speech-to-text API in the amusement park application, 
 
 Here, you will create an Azure Speech Resource in the Azure portal and retrieve the subscription key from there.
 
-<!-- Taken from Mixed Reality Module, still needs to be modified -->
-
 ## Create a Speech service resource
 
 Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you used to activate the sandbox.
@@ -41,45 +39,12 @@ A notification will appear after deployment is complete. Your new Speech service
 1. On the Azure portal menu or from the **Home** page, select **All resources**.
 1. Select the Speech service resource from the list.
 
-    :::image type="content" source="../media/all-resources.png" alt-text="A screenshot of the list of all resources. There's a red box around the M R dash speech dash A A S resource.":::
+    :::image type="content" source="../media/all-resources.png" alt-text="A screenshot of the list of all resources. There's a red box around the Web X R dash magic dash spell resource.":::
 
 1. In the **Resource Management** section, select **Keys and Endpoint**.
 
     :::image type="content" source="../media/select-keys-and-endpoint.png" alt-text="A screenshot of the Speech service resource page. There's a red box around the menu item Keys and Endpoint.":::
 
-In later exercises, you'll need the values for **KEY 1**, **ENDPOINT**, and **LOCATION** as you create the SpeechTranslation.cs script in Unity.
+In later exercises, you'll need the values for **KEY 1** and **LOCATION** as you call the Speech-to-text API using the Javascript SDK.
 
-:::image type="content" source="../media/key-endpoint-location.png" alt-text="A screenshot of the key and endpoints for the speech service. There's a red box around KEY 1, ENDPOINT, and LOCATION.":::
-
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
-
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
-
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+:::image type="content" source="../media/key-endpoint-location.png" alt-text="A screenshot of the key and endpoints for the speech service. There's a red box around KEY 1 and LOCATION.":::
