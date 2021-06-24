@@ -38,7 +38,7 @@ quiz:
     - content: "Delete"
       isCorrect: false
       explanation: "Incorrect. The four basic Terraform commands needed for creating and applying a Terraform execution plan are Init, Plan, Apply, and Destroy"
-  - content: "Which types of machines does Ansible need to be installed on after all."
+  - content: "Which types of machines does Ansible need to be installed on after all?"
     choices:
     - content: "One"
       isCorrect: true
