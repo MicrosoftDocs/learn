@@ -33,7 +33,7 @@ All of the following code should go into the `createScene()` function, because t
 
 After you've created `gymFloor`, make sure you replace the floor mesh in the default XR experience. Find the code:
 
-```
+```javascript
 // Create the default XR experience
 const xr = await scene.createDefaultXRExperienceAsync({
   floorMeshes: [env.ground],
