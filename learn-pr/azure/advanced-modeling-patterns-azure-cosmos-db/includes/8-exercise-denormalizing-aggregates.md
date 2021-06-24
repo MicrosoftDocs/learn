@@ -68,7 +68,9 @@ To get to the code that you'll use in this unit, do the following:
 
     Farther down, you can also see the two products for the order that make up the details section in your sales order.
 
-1. You need to add code that inserts a new sales order and updates the customer record by using transactional batch. To do so, in the line below the `//To-Do:` comment, paste the following code snippet:
+1. Scroll a little farther to another `//To-Do:` comment. Here, you need to add code that inserts a new sales order and updates the customer record by using transactional batch. 
+
+1. On the line below the `//To-Do:` comment, paste the following code snippet:
 
     ```csharp
     TransactionalBatchResponse txBatchResponse = await container.CreateTransactionalBatch(
