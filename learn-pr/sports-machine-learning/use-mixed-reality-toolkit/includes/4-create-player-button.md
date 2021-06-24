@@ -30,7 +30,7 @@ Now that you have an area for all of your players to go, you need to create butt
 
 ## Create the cube primitive
 
-The cube primitive will be a 3D object onto which you put a character's image, name, and PER score. Then you make that cube interactive.
+The cube primitive will be a 3D object onto which you put a character's image, name, and player efficiency rating (PER) score. Then you make that cube interactive.
 
 To create the cube primitive, follow these steps:
 
