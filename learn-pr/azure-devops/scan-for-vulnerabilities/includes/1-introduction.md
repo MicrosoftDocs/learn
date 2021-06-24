@@ -8,9 +8,9 @@ In this module, you learn about tools and procedures that you can use to give yo
 
 After completing this module, you'll be able to:
 
-- Explain which resources are available to scan your code for security vulnerabilities, bugs, and code smells.
-- Use SonarCloud to scan your code locally and as part of your build pipeline.
-- Limit your scanning to pull requests only by using conditions.
+- Explain which resources are available to scan your code for security vulnerabilities, bugs, and code smells
+- Use SonarCloud to scan your code locally and as part of your build pipeline
+- Limit your scanning to pull requests only by using conditions
 
 ## Prerequisites
 

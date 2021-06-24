@@ -10,9 +10,9 @@ In the [Run quality tests in your build pipeline using Azure Pipelines](/learn/m
 
 After completing this module, you'll be able to:
 
-- Define the role of functional tests and identify some popular kinds of tests you can run.
-- Map manual testing steps to automated test cases.
-- Run automated UI tests locally and in the pipeline by using Selenium.
+- Define the role of functional tests and identify some popular kinds of tests you can run
+- Map manual testing steps to automated test cases
+- Run automated UI tests locally and in the pipeline by using Selenium
 
 ## Prerequisites
 

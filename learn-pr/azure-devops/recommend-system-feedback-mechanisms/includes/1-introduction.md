@@ -6,9 +6,9 @@ Engaging customers throughout your product lifecycle is a primary Agile principl
 
 After completing this module, you'll be able to:
 
-- Explain the tensions between speed and risk.
-- Choose the appropriate techniques for gathering customer feedback.
-- Apply automation to help with troubleshooting complex problems.
+- Explain the tensions between speed and risk
+- Choose the appropriate techniques for gathering customer feedback
+- Apply automation to help with troubleshooting complex problems
 
 ## Prerequisites
 

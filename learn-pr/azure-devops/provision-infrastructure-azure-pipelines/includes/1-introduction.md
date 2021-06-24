@@ -12,9 +12,9 @@ In this module, you continue your journey with the Tailspin team as they add aut
 
 After completing this module, you'll be able to:
 
-- Explain what we mean by _infrastructure as code_ and why it's a best practice in DevOps.
-- Apply a Terraform plan that provisions everything you need to run your web application.
-- Add a job to your Azure Pipelines configuration that provisions your infrastructure when the pipeline runs.
+- Explain what we mean by _infrastructure as code_ and why it's a best practice in DevOps
+- Apply a Terraform plan that provisions everything you need to run your web application
+- Add a job to your Azure Pipelines configuration that provisions your infrastructure when the pipeline runs
 
 ## Prerequisites
 

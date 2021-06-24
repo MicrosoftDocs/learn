@@ -12,9 +12,9 @@ title: Automate Docker container deployments with Azure Pipelines
 summary: Implement a CI/CD pipeline for Docker containers.
 abstract: |
   After completing this module, you'll be able to:
-  - Create Azure resources to support a Docker container web application.
-  - Update a basic release pipeline to build, publish, and deploy a Docker container.
-  - Monitor the build, release, and deployment of your project.
+  - Create Azure resources to support a Docker container web application
+  - Update a basic release pipeline to build, publish, and deploy a Docker container
+  - Monitor the build, release, and deployment of your project
 prerequisites: |
   - An Azure subscription
   - An Azure DevOps organization

@@ -12,10 +12,10 @@ While this module focuses on the core tasks that are required to build and deplo
 
 After completing this module, you'll be able to:
 
-- Explain the benefits of Kubernetes and when to use it.
-- Create Azure resources to support a Kubernetes cluster.
-- Update a basic release pipeline to build, publish, and deploy multiple Docker containers to the Kubernetes cluster.
-- Monitor the build, release, and deployment of your project.
+- Explain the benefits of Kubernetes and when to use it
+- Create Azure resources to support a Kubernetes cluster
+- Update a basic release pipeline to build, publish, and deploy multiple Docker containers to the Kubernetes cluster
+- Monitor the build, release, and deployment of your project
 
 ## Prerequisites
 

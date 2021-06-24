@@ -8,9 +8,9 @@ While this module focuses on the core tasks that are required to build and deplo
 
 After completing this module, you'll be able to:
 
-- Explain how Azure and Azure DevOps support Python applications.
-- Create a project in Azure Pipelines that builds and deploys a basic Python application that uses Django to Azure App Service.
-- Trigger the pipeline and see your application be built and deployed to Azure.
+- Explain how Azure and Azure DevOps support Python applications
+- Create a project in Azure Pipelines that builds and deploys a basic Python application that uses Django to Azure App Service
+- Trigger the pipeline and see your application be built and deployed to Azure
 
 ## Prerequisites
 

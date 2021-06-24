@@ -6,9 +6,9 @@ In this module, you help the team solve another problem. How do they implement a
 
 After completing this module, you'll be able to:
 
-- Explain why deployment patterns matter.
-- Compare different deployment patterns so that you can choose the one that best suits your needs.
-- Apply the blue-green deployment pattern in your pipeline.
+- Explain why deployment patterns matter
+- Compare different deployment patterns so that you can choose the one that best suits your needs
+- Apply the blue-green deployment pattern in your pipeline
 
 ## Prerequisites
 

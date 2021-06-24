@@ -12,9 +12,9 @@ In this module, you continue your journey with the Tailspin team, as they add au
 
 After completing this module, you'll be able to:
 
-- Define what we mean by _configuration as code_, and discover the kinds of tools you can use to configure your systems.
-- Apply an Ansible playbook that configures service accounts on a Linux virtual machine running on Azure.
-- Create a pipeline in Azure Pipelines that configures your infrastructure when the pipeline runs.
+- Define what we mean by _configuration as code_, and discover the kinds of tools you can use to configure your systems
+- Apply an Ansible playbook that configures service accounts on a Linux virtual machine running on Azure
+- Create a pipeline in Azure Pipelines that configures your infrastructure when the pipeline runs
 
 ## Prerequisites
 

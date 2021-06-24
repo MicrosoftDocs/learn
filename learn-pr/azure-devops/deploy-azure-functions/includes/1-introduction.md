@@ -10,9 +10,9 @@ While this module focuses on the core build and deployment tasks, it's important
 
 After completing this module, you'll be able to:
 
-- Explain the benefits of Azure Functions and when to use them.
-- Extend a basic release pipeline to also deploy an Azure Function app.
-- Monitor the build, release, and deployment of your project.
+- Explain the benefits of Azure Functions and when to use them
+- Extend a basic release pipeline to also deploy an Azure Function app
+- Monitor the build, release, and deployment of your project
 
 ## Prerequisites
 
