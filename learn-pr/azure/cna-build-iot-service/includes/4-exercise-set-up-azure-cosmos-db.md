@@ -17,23 +17,23 @@ To perform this exercise, you need:
 1. Start a web browser, refer to the [Azure portal](https://portal.azure.com/?azure-portal=true), and sign in to access the Azure subscription you'll be using in this module.
 1. Use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Cosmos DB**, and in the list of results, select **Azure Cosmos DB**.
 1. On the **Azure Cosmos DB** blade, select **+ Add**.
-1. On the **Basics** tab of the **Create Azure Cosmos DB Account** blade, configure the following settings, and then select **Next: Global Distribution**.
+1. On the **which API best suits your workload?** blade, select **Core (SQL) - Recommendded** and select **Create**.
+1. On the **Basics** tab of the **Create Azure Cosmos DB Account - Core (SQL)** blade, configure the following settings, and then select **Next: Global Distribution**.
 
    | Setting | Configuration |
    | --- | --- |
    | Subscription | Select the name of the Azure subscription you'll be using in this module. |
    | Resource Group | Create a new resource group named **cosmos-db-RG**. |
-   | API | Select **Core (SQL)**. |
+   | Account Name | Specify a unique account name. |
    | Location | Select the Azure region closest to the location of your lab environment. |
    | Capacity mode| Select **Provisioned throughput**. |
    | Apply Free Tier Discount | Select **Apply** if that option is available. |
-   | Version | Select **3.1**. |
 
    :::image type="content" source="../media/4-azure-cosmos-db-create-basics.png" alt-text="Screenshot of the Basics tab of the Create Azure Cosmos DB Account blade in the Azure portal.":::
 
-1. On the **Global Distribution** tab of the **Create Azure Cosmos DB Account** blade, accept the default settings, and then select **Next: Networking >**.
-1. On the **Networking** tab of the **Create Azure Cosmos DB Account** blade, accept the default settings, and then select **Next: Backup Policy**.
-1. On the **Backup Policy** tab of the **Create Azure Cosmos DB Account** blade, specify the following settings (leave others with their default values), and then select **Next: Encryption >**:
+1. On the **Global Distribution** tab of the **Create Azure Cosmos DB Account - Core (SQL)** blade, accept the default settings, and then select **Next: Networking >**.
+1. On the **Networking** tab of the **Create Azure Cosmos DB Account - Core (SQL)** blade, accept the default settings, and then select **Next: Backup Policy**.
+1. On the **Backup Policy** tab of the **Create Azure Cosmos DB Account - Core (SQL)** blade, specify the following settings (leave others with their default values), and then select **Next: Encryption >**:
 
    | Setting | Configuration |
    | --- | --- |
@@ -44,8 +44,8 @@ To perform this exercise, you need:
    > [!NOTE]
    > These choices don't represent the recommended settings, but are acceptable in a lab environment.
 
-1. On the **Encryption** tab of the **Create Azure Cosmos DB Account** blade, accept the default settings, and then select **Review + create**.
-1. On the **Review + create** tab of the **Create Azure Cosmos DB Account** blade, select **Create**.
+1. On the **Encryption** tab of the **Create Azure Cosmos DB Account - Core (SQL)** blade, accept the default settings, and then select **Review + create**.
+1. On the **Review + create** tab of the **Create Azure Cosmos DB Account - Core (SQL)** blade, select **Create**.
 
    > [!NOTE]
    > Wait for the Azure Cosmos DB provisioning to complete. This might take about three minutes.
