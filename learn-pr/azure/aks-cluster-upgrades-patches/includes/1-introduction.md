@@ -1,9 +1,9 @@
 
-Imagine you work for a music software company called Songify. Songify provides music software as a services (SaaS) applications to help enable musicians and artist around the world to share their music. The music applications have been containerized. Your job as part of the deployment team is to take those containerized applications and deploy it to Azure Kubernetes Service (AKS).
+Imagine you work for a music software company called Nod Publishers. Nod Publishers provides music software as a services (SaaS) applications to help enable musicians and artist around the world to share their music. The music applications have been containerized. Your job as part of the deployment team is to take those containerized applications and deploy it to Azure Kubernetes Service (AKS).
 
 To get started, your deployment team created some AKS clusters. A few months later, your deployment team successfully deployed all of the music application containers to those AKS clusters.
 
-Your deployment team ends the week with celebrations or as the CEO of Songify would say, "Good job everyone, we have ended the week on a high note".
+Your deployment team ends the week with celebrations or as the CEO of Nod Publishers would say, "Good job everyone, we have ended the week on a high note".
 
 However, when you get to work on Monday morning, you find the following email in your inbox: 
 

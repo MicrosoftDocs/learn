@@ -16,8 +16,8 @@ abstract: |
   - Find the current Kubernetes versions supported by Azure Kubernetes Services (AKS)
   - Upgrade your existing Azure Kubernetes Service (AKS) clusters through a Blue/Green deployment approach
 prerequisites: |  
-  - # A basic understanding of containers.
-  - # A basic understanding of Azure Kubernetes Service. 
+  - A basic understanding of containers.
+  - A basic understanding of Azure Kubernetes Service. 
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels: 
   - beginner
@@ -30,9 +30,8 @@ products:
 units:  
 - learn.aks-cluster-upgrades-patches.introduction
 - learn.aks-cluster-upgrades-patches.what-are-versions 
-- learn.aks-cluster-upgrades-patches.knowledge-check-1
 - learn.aks-cluster-upgrades-patches.what-are-aks-versions 
-- learn.aks-cluster-upgrades-patches.knowledge-check-2
+- learn.aks-cluster-upgrades-patches.how-to-upgrade-aks-clusters
 - learn.aks-cluster-upgrades-patches.exercise
 - learn.aks-cluster-upgrades-patches.summary
 badge:  

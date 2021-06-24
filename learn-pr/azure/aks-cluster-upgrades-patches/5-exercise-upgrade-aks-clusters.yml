@@ -9,7 +9,8 @@ metadata:
   ms.author: mixie 
   author: microsoftmichelle
   sandbox: true
+  interactive: bash
   ms.product: learning-azure
-durationInMinutes: 25
+durationInMinutes: 20
 content: |
-  [!include[](includes/6-exercise-upgrade-aks-cluster.md)]
+  [!include[](includes/5-exercise-upgrade-aks-clusters.md)]
