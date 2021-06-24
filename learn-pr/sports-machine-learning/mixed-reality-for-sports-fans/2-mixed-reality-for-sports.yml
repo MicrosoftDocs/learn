@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.sports-machine-learning.mixed-reality-for-sports-fans.mixed-reality-for-sports
 metadata:
-  title: A Mixed Reality Experience for Sports Fans
-  description: A short description of how Mixed Reality could enhance the experience of sports fans.
+  title: A Mixed Reality experience for sports fans
+  description: A short description of how Mixed Reality could enhance the experience of sports fans
   ms.date: 06/15/2021
   author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: A Mixed Reality Experience for Sports Fans
+title: A Mixed Reality experience for sports fans
 durationInMinutes: 1
 content: |
   [!include[](includes/2-mixed-reality-for-sports.md)]
