@@ -2,7 +2,7 @@
 uid: learn.sports-machine-learning.use-mixed-reality-toolkit.create-player-button
 metadata:
   title: Create buttons with Unity cubes and MRTK scripts
-  description: Create buttons with Unity cubes and MRTK scripts
+  description: Create buttons with Unity cubes and Mixed Reality Toolkit (MRTK) scripts.
   ms.date: 06/15/2021
   author: aprilspeight
   ms.author: apspeigh
