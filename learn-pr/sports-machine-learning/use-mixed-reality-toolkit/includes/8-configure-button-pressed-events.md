@@ -25,11 +25,11 @@ How to simulate hand input:
 - While holding the space bar, move your mouse to move the hand.
 - Use the **mouse scroll wheel** to adjust the depth of the hand.
 
-## Configure PlayerButton button pressed event
+## Configure the PlayerButton button pressed event
 
 By default, objects within the scene are set to `active`. Whether an object is active is determined by a `true` or `false` value. You can manage whether an object is active in the editor, and you can also do this with code.
 
-In the **Inspector** window, you can control whether an object is active at start by using the checkbox next to the object's name. Because the `StatsCard` object and its children should not be active when the scene starts, uncheck the box so that the object is not visible.
+In the **Inspector** window, you can control whether an object is active at start by using the checkbox next to the object's name. Because the `StatsCard` object and its children should not be active when the scene starts, clear the checkbox so that the object is not visible.
 
 ![Screenshot of the inspector window for the stats card object. The object is unchecked for visibility.](../media/stats-card-disabled.png)
 
@@ -49,7 +49,7 @@ When you're creating a `Button Pressed ()` event, the object receiving the event
 
     Then select the function drop-down that appears, and select **GameObject** > **SetActive (bool)**.
 
-    After the function is assigned, check the box next to the **StatsCard** object assignment.
+    After the function is assigned, select the checkbox next to the **StatsCard** object assignment.
 
     ![Screenshot of the newly added button pressed event for the player button object.](../media/button-pressed-event.png)
 
@@ -57,7 +57,7 @@ Now that the `Button Pressed ()` event is added for the `PlayerButton` object, e
 
 ![A demo of pressing the player button object with simulated hand input. When the player button object is pressed, the stats card appears.](../media/press-button-demo.gif)
 
-## Configure CloseCard button pressed event
+## Configure the CloseCard button pressed event
 
 Although MRTK provides you with scripts that have functions that can be used for events, you can also write and use your own scripts.
 
