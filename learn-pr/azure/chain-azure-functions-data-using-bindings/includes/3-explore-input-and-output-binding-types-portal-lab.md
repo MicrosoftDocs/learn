@@ -28,14 +28,14 @@ Let's create a function app that we'll use throughout this module. A function ap
 
 1. On the **Basics** tab, enter the following values for each section.
 
-    1. Enter the following values for the settings in the **Project Details** section.
+    - Enter the following values for the settings in the **Project Details** section.
 
         | Setting | Value | Description |
         |---|---|---|
         | Subscription | Concierge Subscription | The Azure subscription that you want to use. |
         | Resource Group | <rgn>[sandbox resource group name]</rgn> | This setting is pre-populated with the resource group from your sandbox. |
 
-    1. Enter the following values for the settings in the **Instance Details** section.
+    - Enter the following values for the settings in the **Instance Details** section.
 
         | Setting | Value | Description |
         |---|---|---|
@@ -51,11 +51,11 @@ Let's create a function app that we'll use throughout this module. A function ap
 
     ![Screenshot of a notification that function app deployment is in progress.](../media/3-func-app-deploy-progress-small.PNG)
 
-1. Deployment can take some time, so stay in the Notifications hub and watch for a **Deployment succeeded** message similar to the following message.
+1. Deployment can take some time, so stay in the **Notifications** hub and watch for a **Deployment succeeded** message similar to the following message.
 
     ![Screenshot of a notification that function app deployment has completed.](../media/3-func-app-deploy-success-small.PNG)
 
-1. After your function app is deployed, select **Go to resource**. The Overview pane for your function app appears.
+1. After your function app is deployed, select **Go to resource**. The **Overview** pane for your function app appears.
 
 ::: zone-end
 
@@ -69,14 +69,14 @@ Let's create a function app that we'll use throughout this module. A function ap
 
 1. On the **Basics** tab, enter the following values for each section.
 
-    1. Enter the following values for the settings in the **Project Details** section.
+    - Enter the following values for the settings in the **Project Details** section.
 
         | Setting | Value | Description |
         |---|---|---|
         | Subscription | Concierge Subscription | The Azure subscription that you want to use for this Azure Cosmos DB account. |
         | Resource Group | <rgn>[sandbox resource group name]</rgn> | This setting is pre-populated with the resource group from your sandbox. |
 
-    1. Enter the following values for the settings in the **Instance Details** section.
+    - Enter the following values for the settings in the **Instance Details** section.
 
         | Setting | Value | Description |
         |---|---|---|
@@ -92,16 +92,16 @@ Let's create a function app that we'll use throughout this module. A function ap
 
     ![Screenshot of a notification that function app deployment is in progress.](../media/3-func-app-deploy-progress-small.PNG)
 
-1. Deployment can take some time. So, stay in the Notifications hub and watch for a **Deployment succeeded** message similar to the following message.
+1. Deployment can take some time. So, stay in the **Notifications** hub and watch for a **Deployment succeeded** message similar to the following message.
 
     ![Screenshot of a notification that function app deployment has completed.](../media/3-func-app-deploy-success-small.PNG)
 
-1. After your function app is deployed, select **Go to resource**. The Overview pane for your function app appears.
+1. After your function app is deployed, select **Go to resource**. The **Overview** pane for your function app appears.
 
 ::: zone-end
 
-    >[!TIP]
-    >If you are having trouble finding your function apps in the portal, find out how to [add function apps to your favorites in the portal](/azure/azure-functions/functions-how-to-use-azure-function-app-settings).
+> [!TIP]
+> If you are having trouble finding your function apps in the portal, find out how to [add function apps to your favorites in the portal](/azure/azure-functions/functions-how-to-use-azure-function-app-settings).
 
 ## Create a function
 
@@ -122,6 +122,8 @@ Now that we have a function app, it's time to create a function. A function is a
     - Leave the **Authorization level** dropdown selection as *Function*.
 
         The authorization level option determines what kind of key is used to securely access your function. Choosing *Function* requires callers of your function to provide a function-specific key with their requests.
+
+        [![Screenshot for the Add Function dialog box.](../media/3-add-function-small.png)](../media/3-add-function.png#lightbox)
 
 1. Select **Add**. Your new **Function** pane for *HttpTrigger1* appears.
 
@@ -215,6 +217,8 @@ Now that we have a function app, it's time to create a function. A function is a
 
         The authorization level option determines what kind of key is used to securely access your function. Choosing *Function* requires callers of your function to provide a function-specific key with their requests.
 
+        [![Screenshot for the Add Function dialog box.](../media/3-add-function-small.png)](../media/3-add-function.png#lightbox)
+
 1. Select **Add**. Your new **Function** pane for *HttpTrigger1* appears.
 
 1. In the top menu bar, select **Get Function Url**. The **Get Function Url** dialog box appears.
@@ -303,11 +307,13 @@ Now that we have a function app, it's time to create a function. A function is a
 
 ### Explore binding types
 
+::: zone pivot="javascript"
+
 1. In the left menu pane, under **Developer**, select **Integration**. The **Integration** pane for your function appears.
 
     Notice that we have already defined a trigger and an output binding, as shown in the following image.
 
-    [![Screen shot of the integration screen. Trigger and Inputs lead to Function and on to Output.](../media/3-function-integration-small.png)](../media/3-function-integration.png#lightbox)
+    [![Screen shot of the integration screen. Trigger and Inputs lead to Function and on to Output.](../media/3-function-integration-vertical-small.png)](../media/3-function-integration-vertical.png#lightbox)
 
     You can see that we can't add more than _one_ trigger. In fact, to change the trigger for our function, we would have to first delete the trigger, and create a new one. However, the **Inputs** and **Outputs** sections of this pane display a plus sign (+) to add more bindings so we can accept more than one input value, and emit more than one output value.
 
@@ -324,5 +330,33 @@ Now that we have a function app, it's time to create a function. A function is a
     ![Screen shot of the Add input options.](../media/3-function-output-bindings.png)
 
     As you can see, there are several output binding types. We'll get back to adding output bindings later in this module but, for now, select **Cancel** to dismiss this pane.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. In the left menu pane, under **Developer**, select **Integration**. The **Integration** pane for your function appears.
+
+    Notice that we have already defined a trigger and an output binding, as shown in the following image.
+
+    [![Screen shot of the integration screen. Trigger and Inputs lead to Function and on to Output.](../media/3-function-integration-horizontal-small.png)](../media/3-function-integration-horizontal.png#lightbox)
+
+    You can see that we can't add more than _one_ trigger. In fact, to change the trigger for our function, we would have to first delete the trigger, and create a new one. However, the **Inputs** and **Outputs** sections of this pane display a plus sign (+) to add more bindings so we can accept more than one input value, and emit more than one output value.
+
+1. Select **Add input** in the **Inputs** box. The **Create Input** pane appears showing a list of all possible input **Binding Types** in a dropdown menu.
+
+    ![Screen shot of the Add input options.](../media/3-function-input-bindings.png)
+    
+    Take a moment to consider each of these input bindings, and how you might use them in a solution. There are many selections to choose from.
+
+    We'll get back to adding input bindings later in this module but for now, select **Cancel** to dismiss this pane.
+
+1. Select **Add output** in the **Outputs** box. The **Create Output** pane appears showing a list of all possible output **Binding Types** in a dropdown menu.
+
+    ![Screen shot of the Add input options.](../media/3-function-output-bindings.png)
+
+    As you can see, there are several output binding types. We'll get back to adding output bindings later in this module but, for now, select **Cancel** to dismiss this pane.
+
+::: zone-end
 
 So far, we've learned how to create a function app and add a function to it. We've seen a simple function in action - one that runs when an HTTP request is made to it. We've also explored the Azure portal and types of input and output bindings that are available to our functions. In the next unit, we'll use an input binding to read text from a database.

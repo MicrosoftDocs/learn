@@ -11,7 +11,7 @@ You need to store the data somewhere. In this flowchart, the data store is an Az
 ## Create an Azure Cosmos DB account
 
 > [!NOTE]
-> This unit is not intended to be a tutorial on Azure Cosmos DB. After finishing this module, if you're interested in learning more, there is a complete learning path about Azure Cosmos DB.
+> This exercise is not intended to be a tutorial on Azure Cosmos DB. After finishing this module, if you're interested in learning more, there is a complete learning path about Azure Cosmos DB.
 
 ### Create a database account
 
@@ -37,21 +37,21 @@ A database account is a container for managing one or more databases. Before we 
 
 1. On the **Basics** tab, enter the following values for each section.
 
-    1. Enter the following values for the settings in the **Project Details** section.
+    - Enter the following values for the settings in the **Project Details** section.
 
         | Setting | Value | Description |
         |---|---|---|
         | Subscription | Concierge Subscription | The Azure subscription that you want to use for this Azure Cosmos DB account. |
         | Resource Group | <rgn>[sandbox resource group name]</rgn> | This setting is pre-populated with the resource group from your sandbox. |
 
-    1. Enter the following values for the settings in the **Instance Details** section.
+    - Enter the following values for the settings in the **Instance Details** section.
 
         | Setting | Value | Description |
         |---|---|---|
         | Account Name | Enter a *globally unique name* | Enter a unique name to identify this Azure Cosmos DB account. Because `documents.azure.com` is appended to the name that you provide to create your URI, use a unique but identifiable name.<br><br>The account name can contain only lowercase letters, numbers, and the hyphen (-) character, and it must contain 3 to 50 characters. |
         | Location | Central US | Select the region nearest to you. |
 
-    1. Leave the default values for all of the other settings in this new account pane.
+    - Leave the default values for all of the other settings in this new account pane.
 
 1. Select **Review + create** to review and validate the configuration. A *Validation Success* notification appears.
 
@@ -173,7 +173,7 @@ You can verify what we have done so far by testing our new function using the fo
 
 1. Select **default (function key)** from the dropdown list, then select the *Copy to clipboard* icon at the end of the URL.
 
-1. Paste the function URL you copied into your browser's address bar. Add the query string value `&name=<your function name>` (remember to replace `<your function name>` with the name of your function) to the end of the URL, and press <kbd>Enter</kbd>. You should get a response from the Azure Function in the browser.
+1. Paste the function URL you copied into your browser's address bar. Add the query string value `&name=<your function name>` (where `<your function name>` is the name of your function), to the end of the URL, and press <kbd>Enter</kbd>. You should get a response from the Azure Function in the browser.
 
 Now that we have our skeletal function working, let's turn our attention to reading data from Azure Cosmos DB, or in our scenario, your **Bookmarks** container.
 
@@ -204,21 +204,25 @@ To read data from the database, you need to define an input binding. As you'll s
 
     A new connection to the database is configured and appears in the **Cosmos DB account connection** dropdown list in the **Create Input** pane.
 
-    You want to look up a bookmark with a specific ID, so let's tie an ID that we receive in the query string to the binding.
-
-1. In the **Document ID** setting, enter `id`.
-
-    This syntax is known as a *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up. Because IDs are unique in our collection, the binding will return either 0 (not found) or 1 (found) documents.
+    We want to look up a bookmark with a specific ID, so let's tie an ID that we receive in the query string to the binding.
 
 1. Enter the following values for each setting in this pane. To learn more about the purpose of each setting, you can select the information icon to its right.
 
+    > [!NOTE]
+    > Ensure you enter the following values precisely as documented here:
+    > - **Collection Name** = `Bookmarks` with a capital B
+    > - **Partition key** = `id` (slash id; NOT curly brackets or any combination of curly brackets and slashes)
+
     | Setting | Value | Description |
     |---|---|---|
-    | Document parameter name | bookmark | The name used to identify this binding in your code. |
-    | Database name | func-io-learn-db | The database to work with. This value is the database name we set earlier in this lesson. |
-    | Collection Name | Bookmarks | The collection from which we'll read data. This setting was defined earlier in the lesson. |
-    | Partition key | /id | Add the partition key that you defined when you created the _Bookmarks_ Azure Cosmos DB collection earlier. The key entered here (specified in input binding format `<key>`) must match the one in the collection. |
-    | SQL Query (optional) | Leave blank | You are only retrieving one document at a time based on the ID. So, filtering with the Document ID setting is a better than using a SQL Query in this instance. You could craft a SQL Query to return one entry (`SELECT * from b where b.ID = id`). That query would indeed return a document, but it would return it in a document collection. Your code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
+    | **Document parameter name** | `bookmark` | The name used to identify this binding in your code. |
+    | **Database name** | `func-io-learn-db` | The database to work with. This value is the database name we set earlier in this lesson. |
+    | **Collection Name** | `Bookmarks` | The collection from which we'll read data. This setting was defined earlier in the lesson. |
+    | **Document ID** | `id` | Add the Document ID that we defined when we created the _Bookmarks_ Azure Cosmos DB container earlier. |
+    | **Partition key** | `/id` | Add the partition key that you defined when you created the _Bookmarks_ Azure Cosmos DB collection earlier. The key entered here (specified in input binding format `<key>`) must match the one in the collection. |
+    | **SQL Query (optional)** | _Leave blank_ | You are only retrieving one document at a time based on the ID. So, filtering with the Document ID setting is a better than using a SQL Query in this instance. You could craft a SQL Query to return one entry (`SELECT * from b where b.ID = id`). That query would indeed return a document, but it would return it in a document collection. Your code would have to manipulate a collection unnecessarily. Use the SQL Query approach when you want to get multiple documents. |
+
+    The following explanation should clarify the values that we are using: we want to look up a bookmark with a specific ID, so we tied the **Document ID** that function our function receives in the query string to the binding. This syntax is known as a *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up. Because IDs are unique in our collection, the binding will return either 0 (not found) or 1 (found) documents.
 
 1. To save all changes to this binding configuration, select **OK**.
 
@@ -240,7 +244,7 @@ There are two changes that need to be made in order to implement the binding tha
 
 1. Replace all code in the index.js file with the code from the following snippet, and in the top menu bar, select **Save**. The **Logs** pane appears showing your connection.
 
-    ```json
+    ```javascript
  	module.exports = function (context, req) {
     
     	var bookmark = context.bindings.bookmark
