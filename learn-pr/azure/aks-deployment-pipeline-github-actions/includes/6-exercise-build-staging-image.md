@@ -160,7 +160,7 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
           - name: Docker Login
             # You may pin to the exact commit or the version.
             # uses: docker/login-action@f3364599c6aa293cdc2b8391b1b56d0c30e45c8a
-            uses: docker/login-action@v1.8.0
+            uses: docker/login-action@v1
             with:
               # Server address of Docker registry. If not set then will default to Docker Hub
               registry: # optional
@@ -199,7 +199,7 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
           - name: Docker Login
             # You may pin to the exact commit or the version.
             # uses: docker/login-action@f3364599c6aa293cdc2b8391b1b56d0c30e45c8a
-            uses: docker/login-action@v1.8.0
+            uses: docker/login-action@v1
             with:
               # Server address of Docker registry. If not set then will default to Docker Hub
               registry: # optional
@@ -213,56 +213,15 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
           - name: Build and push Docker images
             # You may pin to the exact commit or the version.
             # uses: docker/build-push-action@e1b7f96249f2e4c8e4ac1519b9608c0d48944a1f
-            uses: docker/build-push-action@v2.4.0
+            uses: docker/build-push-action@v2
             with:
-              # List of extra privileged entitlement (eg. network.host,security.insecure)
-              allow: # optional
-              # List of build-time variables
-              build-args: # optional
-              # Builder instance
-              builder: # optional
-              # List of external cache sources for buildx (eg. user/app:cache, type=local,src=path/to/dir)
-              cache-from: # optional
-              # List of cache export destinations for buildx (eg. user/app:cache, type=local,dest=path/to/dir)
-              cache-to: # optional
-              # Build's context is the set of files located in the specified PATH or URL
-              context: # optional
-              # Path to the Dockerfile
-              file: # optional
-              # List of metadata for an image
-              labels: # optional
-              # Load is a shorthand for --output=type=docker
-              load: # optional, default is false
-              # Set the networking mode for the RUN instructions during build
-              network: # optional
-              # Do not use cache when building the image
-              no-cache: # optional, default is false
-              # List of output destinations (format: type=local,dest=path)
-              outputs: # optional
-              # List of target platforms for build
-              platforms: # optional
-              # Always attempt to pull a newer version of the image
-              pull: # optional, default is false
-              # Push is a shorthand for --output=type=registry
-              push: # optional, default is false
-              # List of secrets to expose to the build (eg. key=string, GIT_AUTH_TOKEN=mytoken)
-              secrets: # optional
-              # List of secret files to expose to the build (eg. key=filename, MY_SECRET=./secret.txt)
-              secret-files: # optional
-              # List of SSH agent socket or keys to expose to the build
-              ssh: # optional
-              # List of tags
-              tags: # optional
-              # Sets the target stage to build
-              target: # optional
-              # GitHub Token used to authenticate against a repository for Git context
-              github-token: # optional, default is ${{ github.token }}
+              # Here we'll have a list of parameters
     ```
 
     > [!IMPORTANT]
     > Be careful with indentation when you use YAML. The `name` key should be aligned with the preceding `uses` key.
 
-    You can adjust usage for this action. For more information, see the [GitHub build-push-action documentation](https://github.com/docker/build-push-action/tree/v2.4.0?azure-portal=true).
+    You can adjust usage for this action. For more information, see the [GitHub build-push-action documentation](https://github.com/docker/build-push-action/tree/v2?azure-portal=true).
 
 1. Rename the `name` key `Build and push staging image`.
 
@@ -278,6 +237,7 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
     |repository   |`docker/build-and-push`|contoso-website                                 |
     |tags         |`docker/build-and-push`|latest                                          |
     |context      |`docker/build-and-push`|`.`                                             |
+    |push      |`docker/build-and-push`|`true`                                             |
 
     You can delete all the other keys because we won't use them in this exercise.
 
@@ -298,18 +258,18 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
           - uses: actions/checkout@v2
 
           - name: Docker Login
-            uses: docker/login-action@v1.8.0
+            uses: docker/login-action@v1
             with:
               registry: ${{ secrets.ACR_NAME }}
               username: ${{ secrets.ACR_LOGIN }}
               password: ${{ secrets.ACR_PASSWORD }}
 
           - name: Build and push staging images
-            uses: docker/build-push-action@v2.4.0
+            uses: docker/build-push-action@v2
             with:
               context: .
-              tags: latest
-              repository: contoso-website
+              tags: ${{secrets.ACR_NAME}}/contoso-website:latest
+              push: true
     ```
 
 1. Before you save the file, we'll also add another action between the checkout action and the login action to set up the build engine for Docker to use. This action is called `docker/setup-buildx-action` and you'll use `v1`.
@@ -341,18 +301,18 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
             uses: docker/setup-buildx-action@v1
 
           - name: Docker Login
-            uses: docker/login-action@v1.8.0
+            uses: docker/login-action@v1
             with:
               registry: ${{ secrets.ACR_NAME }}
               username: ${{ secrets.ACR_LOGIN }}
               password: ${{ secrets.ACR_PASSWORD }}
 
           - name: Build and push staging images
-            uses: docker/build-push-action@v2.4.0
+            uses: docker/build-push-action@v2
             with:
               context: .
-              tags: latest
-              repository: contoso-website
+              tags: ${{secrets.ACR_NAME}}/contoso-website:latest
+              push: true
     ```
 
 1. To commit the changes, select the green **Start commit** button. Enter a description for the commit, and then select the **Commit new file** button:
