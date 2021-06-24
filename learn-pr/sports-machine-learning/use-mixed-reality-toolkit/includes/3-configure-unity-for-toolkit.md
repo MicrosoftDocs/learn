@@ -22,7 +22,7 @@ Typically, if you were to start this project from scratch, you'd need to use the
 
 Before you can use the MRTK features, you'll need to add MRTK to the scene, and configure it.
 
-In the Unity menu, select **Mixed Reality Toolkit** > **Add to Scene and Configure...** to add MRTK to your current scene.
+On the Unity menu, select **Mixed Reality Toolkit** > **Add to Scene and Configure** to add MRTK to your current scene.
 
 ![Screenshot of the M R T K menu. The Add to Scene and Configure option is highlighted.](../media/add-to-scene-configure.png)
 
@@ -38,7 +38,7 @@ The `Main Camera` object is moved as a child to the `MixedRealityPlayspace` obje
 
 One of the main ways that MRTK is configured is through the many profiles available in the Foundation package. Profiles configure the behavior of MRTK core components. The `MixedRealityToolkit` object contains the active profile, and you can view it in the **Inspector** window.
 
-When MRTK is added to the scene, the **DefaultMixedRealityToolkitConfigurationProfile** is preselected.
+When MRTK is added to the scene, **DefaultMixedRealityToolkitConfigurationProfile** is preselected.
 
 ![Screenshot of the Inspector window. The configuration profile is highlighted.](../media/configuration-profile.png)
 
@@ -49,7 +49,7 @@ MRTK provides additional default profiles, which cover most platforms and scenar
 
 ## Import TextMesh Pro Essential Resources
 
-Some MRTK prefabs and assets require TextMesh Pro. TextMesh Pro is Unity's default text component. TextMesh Pro uses advanced text rendering techniques and a set of custom shaders to deliver visual quality improvements. TextMesh Pro also provides greater flexibility for text styling and texturing. The TextMesh Pro assets must be added to your project by importing its essential resources.
+Some MRTK prefabs and assets require TextMesh Pro. TextMesh Pro is Unity's default text component. It uses advanced text rendering techniques and a set of custom shaders to deliver visual quality improvements. It also provides greater flexibility for text styling and texturing. The TextMesh Pro assets must be added to your project by importing its essential resources.
 
 In the Unity menu, select **Window** > **TextMeshPro** > **Import TMP Essential Resources**.
 
