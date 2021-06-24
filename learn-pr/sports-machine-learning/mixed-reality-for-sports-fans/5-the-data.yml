@@ -2,7 +2,7 @@
 uid: learn.sports-machine-learning.mixed-reality-for-sports-fans.the-data
 metadata:
   title: Exercise - Prep JSON data for Mixed Reality experiences
-  description: Converting CSV data from a web app to JSON data for a Mixed Reality Experience
+  description: Convert CSV data from a web app to JSON data for a Mixed Reality experience.
   ms.date: 06/15/2021
   author: drguthals
   ms.author: sguthals
