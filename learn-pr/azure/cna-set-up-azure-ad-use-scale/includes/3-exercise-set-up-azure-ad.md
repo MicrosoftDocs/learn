@@ -1,4 +1,4 @@
-This exercise takes you through the process of creating Azure AD-related entities, including an Azure AD tenant and user and group objects. You'll use these entities in the next exercises of this module to access an Azure AD-integrated instance of an Azure Database for PostgreSQL single server instance.
+This exercise takes you through the process of creating and managingAzure AD-related entities, including Azure AD tenants, users and groups. You will start by creating a user account and two groups in the Azure AD tenant associated with your subscription, and adding the user to the first group. Then you will create another Azure AD tenant and a user account in that tentant. To conclude this exercise, you will add the user account from the second tenant as a guest account in the first tenant. In the subsequent exercises of this module, you will implement integration between an Azure Database for PostgreSQL single server instance and the first Azure AD tenant and grant access to its content to the two previously created groups.
 
 In this exercise, you'll:
 
@@ -13,27 +13,29 @@ To perform this exercise, you need:
 * An Azure subscription.
 * A Microsoft account or an Azure AD account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
 
+    > [!NOTE]
+    > The exercises in this module perform sensitive operations and require very high privileges so, as such, should be performed within an isolated lab environment. If you don't have access to such environment, consider using for this purpose an Azure Trial subscription.
+
 ## Create Azure AD user and group objects in the Azure AD tenant associated with your Azure subscription
 
 You'll start by creating Azure AD user and group objects. After the objects are created, you'll configure their respective group memberships. To speed up the configuration tasks, you'll use Azure CLI. You'll rely on the Azure AD objects to authenticate to the Azure Database for PostgreSQL single server instance in the next exercise of this module.
 
 1. Start a web browser, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in to access the Azure subscription you'll be using in this module.
 1. In the Azure portal, open the **Cloud Shell** by selecting its icon in the toolbar next to the search text box.
-1. If you're prompted to select either **Bash** or **PowerShell**, select **Bash**.
+1. If needed, select **Bash**.
 
     > [!NOTE]
     > If this is the first time you're starting Azure Cloud Shell and you're presented with the **You have no storage mounted** message, select the subscription you're using in this exercise, and then select **Create storage**.
 
 1. Within the Bash session on the **Azure Cloud Shell** pane, run the following command to identify the default DNS domain name of the Azure AD tenant associated with the Azure subscription:
 
-    ```azurecli-interactive
-    UPN=$(az ad user list --query "[0].userPrincipalName" -o tsv)
-    DOMAIN_NAME=${UPN#*@}
+    ```azurecli
+    DOMAIN_NAME=$(az rest --method GET --url 'https://management.azure.com/tenants?api-version=2020-01-01' --query "value[0].defaultDomain" -o tsv)
     ```
 
 1. Run the following command to create an Azure AD user in the Azure AD tenant associated with the Azure subscription:
 
-    ```azurecli-interactive
+    ```azurecli
     ADMIN_NAME=adatumadmin1
     ADMIN=$(az ad user create --display-name $ADMIN_NAME \
                       --password Pa55w.rd1234 \
@@ -46,16 +48,16 @@ You'll start by creating Azure AD user and group objects. After the objects are 
 
 1. Run the following command to identify the value of the **userPrincipalName** attribute of the Azure AD user you created in the previous step:
 
-    ```azurecli-interactive
+    ```azurecli
     echo $ADMIN | jq -r '.userPrincipalName'
     ```
 
     > [!NOTE]
     > Record this value. You'll need it in the next exercise of this module.
 
-1. Run the following command to assign to the newly created user the Contributor role in the Azure subscription you're using for the exercises in this module:
+1. Run the following commands to assign to the newly created user the Contributor role in the Azure subscription you're using for the exercises in this module:
 
-    ```azurecli-interactive
+    ```azurecli
     ADMIN_OBJECT_ID=$(echo $ADMIN | jq -r '.objectId')
     SUBSCRIPTION_ID=$(az account show --query id --output tsv)
     az role assignment create --assignee "$ADMIN_OBJECT_ID" \
@@ -64,9 +66,12 @@ You'll start by creating Azure AD user and group objects. After the objects are 
 
     ```
 
+    > [!NOTE]
+    > The second command will return the ID of your default subscription. If you intend to use a different subscription, you need to set the value of the $SUBSCRIPTION_ID variable accordingly.
+
 1. Run the following command to create an Azure AD user in the Azure AD tenant associated with the Azure subscription:
 
-    ```azurecli-interactive
+    ```azurecli
     USER_NAME=adatumuser1
     USER=$(az ad user create --display-name $USER_NAME \
                       --password Pa55w.rd1234 \
@@ -79,7 +84,7 @@ You'll start by creating Azure AD user and group objects. After the objects are 
 
 1. Run the following command to create an Azure AD group in the Azure AD tenant associated with the Azure subscription:
 
-    ```azurecli-interactive
+    ```azurecli
     GROUP_NAME=adatumgroup1
     GROUP=$(az ad group create --display-name $GROUP_NAME \
                              --mail-nickname $GROUP_NAME \
@@ -91,14 +96,14 @@ You'll start by creating Azure AD user and group objects. After the objects are 
 
 1. Run the following command to add the user to the group:
 
-    ```azurecli-interactive
+    ```azurecli
     USER_OBJECT_ID=$(echo $USER | jq -r '.objectId')
     az ad group member add --group $GROUP_NAME --member-id $USER_OBJECT_ID
     ```
 
 1. Run the following command to assign to the newly created user the Contributor role in the Azure subscription you're using for the exercises in this module:
 
-    ```azurecli-interactive
+    ```azurecli
     SUBSCRIPTION_ID=$(az account show --query id --output tsv)
     az role assignment create --assignee "$USER_OBJECT_ID" \
                               --role "Contributor" \
@@ -122,6 +127,8 @@ You'll start by creating Azure AD user and group objects. After the objects are 
 In this task, you'll create an Azure AD tenant and a user account in the new tenant by using the Azure portal. In the next task, you'll configure this user account as a guest user account in the first tenant.
 
 1. In the web browser, on the Azure portal blade displaying properties of your Azure AD tenant, in the toolbar, select **+ Create a tenant**.
+1. On the **Basics** tab of the **Create a tenant** blade, ensure that the **Azure Active Directory** option is selected and select **Next: Configuration >**.
+1. On the **Configuration** tab of the **Create a tenant** blade, specify the following settings:
 
     | Setting | Value |
     | --- | --- |
@@ -129,7 +136,8 @@ In this task, you'll create an Azure AD tenant and a user account in the new ten
     | Initial domain name | Any valid DNS name consisting of lowercase letters and digits and starting with a letter |
     | Country/Region | The name of your country or region |
 
-1. On the **Review + create** tab of the **Create a tenant** blade, select **Create**.
+1. Select **Review + create** and, on the **Review + create** tab of the **Create a tenant** blade, select **Create**.
+1. If prompted, on the **Help us prove you're not a robot**, type the provided code and select **Submit**.
 1. Wait for the provisioning to complete and then select the **Contoso** link to navigate to the blade displaying properties of the Contoso Azure AD tenant.
 1. In the web browser, on the Azure portal blade displaying the **Contoso \| Overview** blade of the **Contoso** Azure AD tenant, in the vertical menu, in the **Manage** sections, select **Users**.
 1. On the **Users \| All users (Preview)** blade of the **Contoso - Azure Active Directory** tenant, select **+ New user**.
@@ -142,8 +150,7 @@ In this task, you'll create an Azure AD tenant and a user account in the new ten
     | Let me create the password | Enabled |
     | Initial password | **Pa55w.rd1234** |
 
-    > [!NOTE]
-    > Use the **Copy to clipboard** icon next to the **User name** drop-down list to record the value of the **userPrincipalName** attribute of **contosouser1**. You'll need it later in this and subsequent exercises.
+1. Use the **Copy to clipboard** icon next to the **User name** drop-down list to record the value of the **userPrincipalName** attribute of **contosouser1**. You'll need it later in this and subsequent exercises.
 
 1. On the **New user** blade, select **Create**.
 1. On the **Users \| All users (Preview)** blade of the **Contoso - Azure Active Directory** tenant, review the list of user accounts and verify that the new user account was created successfully.
@@ -155,7 +162,7 @@ In this task, you'll create an Azure AD tenant and a user account in the new ten
 
 To conclude this exercise, you'll use the Azure portal to configure the user account in the **Contoso** Azure AD tenant as a guest user in the **Adatum** Azure AD tenant, create a new group in that tenant, and add the guest user to that group.
 
-1. In the web browser, on the Azure portal blade displaying the **Contoso \| Overview** blade of the **Contoso** Azure AD tenant, in the toolbar, select the **Directory + Subscription** icon next to the **Cloud Shell** icon.
+1. In the web browser, on the Azure portal blade displaying the **Contoso \| Overview** blade of the **Contoso** Azure AD tenant, in the toolbar, in the upper right corner, select the **Directory + Subscription** icon next to the **Cloud Shell** icon.
 1. On the **Directory + subscription** blade, in the **Switch directory** section, select the entry representing the Azure AD tenant associated with the Azure subscription you're using in the exercises of this module.
 
     > [!NOTE]

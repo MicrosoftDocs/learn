@@ -5,15 +5,9 @@
 Implementing Azure AD-integrated apps warrants the following special considerations, some of which might require additional management and maintenance tasks:
 
 - Keep track of all redirect Uniform Resource Identifiers (URIs) associated with your applications, including the corresponding Domain Name Service (DNS) records.
-- Avoid using wildcards (*) in redirect URIs.
 - Protect web apps by ensuring that redirect URIs correspond to encrypted endpoints.
-- Transition away from password-based authentication.
 - Maintain credentials for web apps, web APIs, and daemon apps.
-- Whenever possible, use certificate credentials, rather than client secrets.
 - When using secrets, consider automating their management, including their rotation.
-- Ensure that credentials aren't stored in your code.
-- Whenever possible, use managed identities for authenticating access to Azure resources.
-- Consider storing secrets, keys, and certificates in Azure Key Vault.
 - Apply the principle of least privilege when configuring the permission scope of your applications. Applications should request additional permissions only when required.
 - Whenever possible, use delegated permissions rather than application permissions.
 - During development, use the Microsoft Authentication Library rather than programming directly against protocols such as OAuth 2.0 and Open ID.
@@ -21,8 +15,8 @@ Implementing Azure AD-integrated apps warrants the following special considerati
     > [!NOTE]
     > The Microsoft Authentication Library offers an easy-to-use approach for implementing a wide range of authentication scenarios, including Conditional Access, device-wide single sign-on (SSO), and token caching.
 
-- Minimize the number of times a user needs to enter credentials, by using silent token acquisition.
-- Implement a single sign-out experience to protect user credentials.
+    > [!NOTE]
+    > This module is not intended to provide a complete guidance and best practices regarding integrating cloud-native applications with Azure AD, but rather is intended to introduce concepts of Azure AD authentication and multi-tenancy.
 
 ## What are additional considerations related to multitenant Azure AD-integrated apps?
 

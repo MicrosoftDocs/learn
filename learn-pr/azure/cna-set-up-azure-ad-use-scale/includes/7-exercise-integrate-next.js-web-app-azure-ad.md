@@ -68,13 +68,13 @@ With the application registered in the Azure AD tenant, you can now proceed with
 1. On your computer, start the Node.js command prompt.
 1. From the Node.js command prompt, run the following command to clone the GitHub repo containing the sample Next.js application code you'll use in this exercise:
 
-    ```azurecli-interactive
+    ```azurecli
     git clone https://github.com/polichtm/wp2104-m06u07.git
     ```
 
 1. Run the following command to switch to the directory that hosts the clone of the GitHub repo:
 
-    ```azurecli-interactive
+    ```azurecli
     cd wp2104-m06u07
     ```
 

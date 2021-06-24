@@ -48,11 +48,13 @@ There are two types of authentication available for service principals:
 
 ## What are different types of application authentication scenarios?
 
-Specifics of the authentication flow and the corresponding configuration details depend on the application type. The main categories of application types include:
+The authentication flow and the corresponding configuration details depend on the application type. The common categories of application types include:
 
-- Single-page applications (SPAs). These are web apps in which tokens are acquired by a JavaScript or TypeScript app running in the browser. These applications often use a framework such as Angular, React, or Vue. MSAL.js is the only Microsoft Authentication Library that supports SPAs.
+- Browser-based apps. These are web apps in which tokens are acquired by a JavaScript or TypeScript app running in the browser. These applications often use a framework such as Angular, React, or Vue. MSAL.js is the only Microsoft Authentication Library that supports SPAs.
 - Public client applications. These are apps that always rely on signed-in users to obtain tokens. Such apps include desktop and mobile apps that call web APIs on behalf of signed-in users.
 - Confidential client applications. These obtain tokens on their own. Apps in this category include web apps that call a web API, web APIs that call another web API, Linux daemons, and Windows services.
+
+The first two items above authenticate a user, whereas the third only authenticates an app or service between the user and a back-end service. In this case, the back-end service won't know anything about the end user, but it will know which app is using it. For example, think of an app using Azure maps as a back-end service. The maps service needs to know that an authorized application is calling it for correct billing, but it doesn't need to know anything about the end user.
 
 ## What is the difference between single-tenant and multitenant Azure AD applications?
 

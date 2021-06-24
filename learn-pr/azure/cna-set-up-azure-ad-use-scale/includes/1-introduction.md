@@ -1,4 +1,4 @@
-﻿Cloud-native applications are modular in nature, with loosely coupled, self-contained components. You can develop each of these components independently by using an arbitrary combination of technology stacks, while still allowing for their interaction through well-defined programming interfaces. These benefits include the ability to help secure access by relying on Azure Active Directory (Azure AD) for authentication and authorization.
+﻿Reslient, flexible, and scalable security controls are particularly important when implementing cloud-native applications. To provide this functionality, you can leverage authentication and authorization functionality offered by Azure Active Directory (Azure AD).
 
 ## Scenario: Set up apps for authentication
 

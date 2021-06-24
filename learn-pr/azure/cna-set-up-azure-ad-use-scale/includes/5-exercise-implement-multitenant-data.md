@@ -31,7 +31,7 @@ To perform this exercise, you need:
 You'll start by creating an instance of Azure Database for PostgreSQL single server:
 
 1. If needed, start a web browser, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in to access the Azure subscription you'll be using in this module.
-1. Use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Database for PostgreSQL**, and in the list of results, in the **Marketplace** section, select **Azure Database for PostgreSQL**.
+1. Use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Database for PostgreSQL servers**, and in the list of results, in the **Marketplace** section, select **Azure Database for PostgreSQL servers**.
 1. On the **Select Azure Database for PostgreSQL deployment option** blade, on the **Single server** tile, select **Create**.
 1. On the **Basics** tab of the **Single server** blade, configure the following settings, and then select **Next: Review + create >**, while leaving all other settings with their default values:
 
@@ -50,9 +50,7 @@ You'll start by creating an instance of Azure Database for PostgreSQL single ser
     :::image type="content" source="../media/5-azure-db-postgresql-create-basics.png" alt-text="Screenshot of the Basics tab of the single server blade in the Azure portal.":::
 
 1. On the **Review + create** tab of the **Single server** blade, select **Create**.
-
-    > [!NOTE]
-    > Wait for the provisioning to complete. This might take about five minutes.
+1. Wait for the provisioning to complete. This might take about five minutes.
 
     > [!NOTE]
     > The provisioning process automatically creates a database named **postgres** within the target server.
@@ -83,7 +81,7 @@ With the Azure Database for PostgreSQL single server provisioned, you'll connect
     > [!NOTE]
     >  The connection string has the following syntax, where the `<server_name>` placeholder represents the name of the server you identified previously in this task:
     ```
-    psql "host=<server_name>.postgres.database.azure.com port=5432 dbname={your_database} user=student@cnapostgresqldb password={your_password} sslmode=require"
+    psql "host=<server_name>.postgres.database.azure.com port=5432 dbname={your_database} user=student@<server_name> password={your_password} sslmode=require"
     ```
 
 1. In the Azure portal, open a Bash session of the **Cloud Shell** by selecting its icon in the toolbar next to the search text box.
@@ -147,14 +145,14 @@ With the Azure Database for PostgreSQL single server provisioned, you'll connect
     \dt
     ```
 
-1. Run the following command to load sample data into the newly created tables:
+1. Run the following command to load sample data into the tenants table:
 
     ```t-sql
     INSERT INTO tenants (id, name) VALUES (1, 'adatum');
     INSERT INTO tenants (id, name) VALUES (2, 'contoso');
     ```
 
-1. Run the following command to load sample data into the newly created tables:
+1. Run the following command to load sample data into the inventory table:
 
     ```t-sql
     INSERT INTO inventory (id, tenant_id, name, quantity) VALUES (1, 1, 'yogurt', 200);
@@ -177,12 +175,12 @@ To integrate the Azure Database for PostgreSQL single server instance with Azure
 
 1. Within the browser window displaying the Azure portal with the Azure Database for PostgreSQL single server blade, in the vertical menu, in the **Settings** section, select **Active Directory admin**, and then in the toolbar, select **Set admin**.
 1. On the **Active Directory admin** blade, in the list of Azure AD user accounts, select the **adatumadmin1** user account you created in the previous exercise, select **Select**, and then select **Save**.
-1. Open another web browser window in the Incognito/InPrivate mode, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true), and sign in by using the **adatumadmin1** user account you created in the previous exercise.
+1. Open another web browser window in the Incognito/InPrivate mode, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true), and sign in by using the **adatumadmin1** user account (with the **Pa55w.rd1234** password) you created in the previous exercise.
 1. In the Azure portal, open the **Cloud Shell** by selecting its icon in the toolbar next to the search text box.
 1. When you're prompted to select either **Bash** or **PowerShell**, select **Bash**, and then when presented with the message **You have no storage mounted**, select **Create storage**.
 1. Within the Bash session on the **Cloud Shell** pane, run the following command to retrieve an Azure AD access token required to access Azure Database for PostgreSQL:
 
-    ```azurecli-interactive
+    ```azurecli
     FULL_TOKEN=$(az account get-access-token --resource-type oss-rdbms)
     ```
 
@@ -203,15 +201,14 @@ To integrate the Azure Database for PostgreSQL single server instance with Azure
 
 1. Run the following command to set the value of the **PGPASSWORD** variable to the value of the access token from the output of the command you ran in the previous step:
 
-    ```azurecli-interactive
+    ```azurecli
     export PGPASSWORD=$(echo $FULL_TOKEN | jq -r '.accessToken')
     ```
 
 1. Run the following command to connect to the **cnamtinventory** database using the **psql** tool and by using Azure AD authentication (replace the `<server_name>` placeholder with the name of the server you identified previously in this exercise):
 
-    ```azurecli-interactive
-    UPN=$(az ad user list --query "[0].userPrincipalName" -o tsv)
-    DOMAIN_NAME=${UPN#*@}
+    ```azurecli
+    DOMAIN_NAME=$(az rest --method GET --url 'https://management.azure.com/tenants?api-version=2020-01-01' --query "value[0].defaultDomain" -o tsv)
     psql "host=<server_name>.postgres.database.azure.com user=adatumadmin1@$DOMAIN_NAME@<server_name> dbname=cnamtinventory sslmode=require"
     ```
 
@@ -259,7 +256,7 @@ To implement a sample Node.js-based application that uses Azure AD authenticatio
 
     :::image type="content" source="../media/5-azure-ad-node.js-app-registered.png" alt-text="Screenshot of the cna-app blade in the Azure portal.":::
 
-1. On the **cna-app** blade, in the **Manage** section, select **Certificates & secrets**.
+1. On the **cna-app** blade, in the **Manage** section, select **Certificates & secrets** and select **+ New client secret**.
 1. On the **Add a client secret** blade, in the **Description** text box, enter **cna-secret-0**. Leave the **Expires** drop-down list entry with its default value and select **Add**.
 
     :::image type="content" source="../media/5-azure-ad-node.js-app-add-secret.png" alt-text="Screenshot of the Add a client secret blade in the Azure portal.":::
@@ -267,7 +264,7 @@ To implement a sample Node.js-based application that uses Azure AD authenticatio
 1. Back on the **cna-app \| Certificates & secrets** blade, copy the value of the newly generated secret.
 
     > [!NOTE]
-    > Make sure to copy the value of the secret before you navigate away from this blade, because at that point, you'll no longer be able to retrieve it.
+    > Make sure to copy the value of the secret before you navigate away from this blade, because at that point, you'll no longer be able to retrieve it. If that happens, create another secret.
 
     :::image type="content" source="../media/5-azure-ad-node.js-app-added-secret-.png" alt-text="Screenshot of the value of the client secret on the cna-app Certificates & secrets blade in the Azure portal.":::
 
@@ -298,20 +295,26 @@ With the application registered in the Azure AD tenant, you can now proceed with
 1. Within the browser window displaying the Azure portal, start a Bash session within the **Cloud Shell** by selecting its icon in the toolbar next to the search text box.
 1. Within the Bash session on the **Cloud Shell** pane, run the following command to initialize a Node.js project in a new directory:
 
-    ```azurecli-interactive
+    ```azurecli
     mkdir -p cna-aadexpress && cd cna-aadexpress
     npm init -y
     ```
 
-1. Run the following command to add required packages to the project's dependency:
+1. Run the following commands to add required packages to the project's dependency:
 
-    ```azurecli-interactive
+    ```azurecli
     npm install express
     npm install pg
     npm install @azure/msal-node
     ```
 
-1. Use the nano editor to create a file named **index.js** in the root of the project and add the following content. Replace the placeholders `<client_id>`, `<tenant_id>`, `<client_secret>`, and <server_name> with their actual values you recorded previously in this exercise:
+1. Run the following command to create a file named **index.js** in the root of the project:
+
+    ```azurecli
+    touch .\index.js
+    ```
+
+1. Use the nano editor to open the file **index.js** and add the following content. Replace the placeholders `<client_id>`, `<tenant_id>`, `<client_secret>`, and `<server_name>` (including the `postgres.database.azure.com` suffix) with their actual values you recorded previously in this exercise:
 
     ```javascript
     // Import dependencies
@@ -326,23 +329,21 @@ With the application registered in the Azure AD tenant, you can now proceed with
 
     // Authentication parameters
     const config = {
-        auth: {
+    auth: {
             clientId: "<client_id>",
             authority: "https://login.microsoftonline.com/<tenant_id>",
             clientSecret: "<client_secret>"
-        },
-        system: {
-            loggerOptions: {
-                loggerCallback(loglevel, message, containsPii) {
-                console.log(message);
-                },
-            piiLoggingEnabled: false,
-            logLevel: msal.LogLevel.Verbose,
-            }
+    },
+    system: {
+        loggerOptions: {
+            loggerCallback(loglevel, message, containsPii) {
+            console.log(message);
+            },
+        piiLoggingEnabled: false,
+        logLevel: msal.LogLevel.Verbose,
+        }
         }
     };
-
-    const REDIRECT_URI = "http://localhost:8080/redirect";
 
     var outputrows = ""
 
@@ -350,80 +351,85 @@ With the application registered in the Azure AD tenant, you can now proceed with
     const cca = new msal.ConfidentialClientApplication(config);
 
     app.get('/auth', (req, res) => {
-        // Construct a request object for auth code
-        const authCodeUrlParameters = {
-            scopes: ["https://ossrdbms-aad.database.windows.net/user_impersonation"],
-            redirectUri: REDIRECT_URI,
-        };
+    
+    redirectUri = req.hostname.toLowerCase()=="localhost" ? "http://localhost:8080/redirect" : "https://aadexpress100515837.azurewebsites.net/redirect";
 
-        // Request auth code, then redirect
-        cca.getAuthCodeUrl(authCodeUrlParameters)
-            .then((response) => {
-                res.redirect(response);
-            }).catch((error) => res.send(error));
+    // Construct a request object for auth code
+    const authCodeUrlParameters = {
+        scopes: ["https://ossrdbms-aad.database.windows.net/user_impersonation"],
+        redirectUri: redirectUri,
+    };
+
+    // Request auth code, then redirect
+    cca.getAuthCodeUrl(authCodeUrlParameters)
+        .then((response) => {
+            res.redirect(response);
+        }).catch((error) => res.send(error));
     });
 
     app.get('/redirect', (req, res) => {
-        // Use the auth code in redirect request to construct a token request object
-        const tokenRequest = {
-            code: req.query.code,
-            scopes: ["https://ossrdbms-aad.database.windows.net/user_impersonation"],
-            redirectUri: REDIRECT_URI,
-        };
+    redirectUri = req.hostname.toLowerCase()=="localhost" ? "http://localhost:8080/redirect" : "https://<websitename>.azurewebsites.net/redirect";
+    
+    // Use the auth code in redirect request to construct a token request object
+    const tokenRequest = {
+        code: req.query.code,
+        scopes: ["https://ossrdbms-aad.database.windows.net/user_impersonation"],
+        redirectUri: redirectUri,
+    };
 
-        // Exchange the auth code for tokens
-        cca.acquireTokenByCode(tokenRequest)
-        .then((response) => {
-            res.send(response);
+    // Exchange the auth code for tokens
+    cca.acquireTokenByCode(tokenRequest)
+    .then((response) => {
+        //res.send(response);
 
-            var username = 'adatumgroup1';
-            var databasename = 'cnamtinventory';
-            var servername = '<server_name>';
-            var tablename = 'inventory';
+        var username = 'adatumgroup1';
+        var databasename = 'cnamtinventory';
+        var servername = 'jasdeb-cna-postgresql';
+        var tablename = 'inventory';
 
-            process.env.PGPASSWORD = response.accessToken;
-            const connectionString =
-                `postgres://${username}@${servername}@${servername}.postgres.database.azure.com:5432/${databasename}?ssl=true`;
+        process.env.PGPASSWORD = response.accessToken;
+        const connectionString =
+            `postgres://${username}@${servername}@${servername}.postgres.database.azure.com:5432/${databasename}?ssl=true`;
 
-            res.write(connectionString + "\n\n");
-            res.write(response.accessToken + "\n\n");
+        res.write(connectionString + "\n\n");
+        res.write(response.accessToken + "\n\n");
 
-            const client = new pg.Client(connectionString);
-            client.connect(err => {
-                if (err) throw err;
-                else {
-                    queryDatabase(response.account.name);
-                }
-            });
-
-            function queryDatabase(tenant_id) {
-                console.log(`Running query to PostgreSQL server: ${servername}`);
-                switch (tenant_id) {
-                    case "adatumuser1":
-                        id = "1";
-                        break;
-                    case "contosouser1":
-                        id = "2";
-                        break;
-                }
-                const query = `SELECT * FROM ${tablename} WHERE tenant_id = ${id};`;
-                client.query(query)
-                .then(qresponse => {
-                    const rows = qresponse.rows;
-                    rows.map(row => {
-                        var singlerow = `${JSON.stringify(row)}`;
-                        console.log(singlerow);
-                        outputrows += singlerow + "\n";
-                    });
-                    res.write(outputrows);
-                    res.end();
-                    process.exit();
-                })
-                .catch(err => {
-                     console.log(err);
-                });
+        const client = new pg.Client(connectionString);
+        client.connect(err => {
+            if (err) throw err;
+            else {
+                queryDatabase(response.account.name);
             }
-        }).catch((error) => res.status(500).send(error));
+        });
+
+        function queryDatabase(tenant_id) {
+            console.log(`Running query to PostgreSQL server: ${servername}`);
+            switch (tenant_id) {
+                case "adatumuser1":
+                    id = "1";
+                    break;
+                case "contosouser1":
+                    id = "2";
+                    break;
+            }
+            const query = `SELECT * FROM ${tablename} WHERE tenant_id = ${id};`;
+            client.query(query)
+            .then(qresponse => {
+                const rows = qresponse.rows;
+                rows.map(row => {
+                    var singlerow = `${JSON.stringify(row)}`;
+                    console.log(singlerow);
+                    outputrows += singlerow + "\n";
+                });
+                res.write(outputrows);
+                res.end();
+                process.exit();
+            })
+            .catch(err => {
+                 console.log(err);
+            });
+        }
+      }).catch((error) => res.write(error));
     });
     ```
 
@@ -433,7 +439,7 @@ With the application registered in the Azure AD tenant, you can now proceed with
     > [!NOTE]
     > Keep in mind that after you deploy the application, you'll need to replace the value of **REDIRECT URL** to match its actual redirect URL.
 
-1. Use the nano editor to edit the **package.json** file in the root of the project and replace it with the following content:
+1. Use the code editor to edit the **package.json** file in the root of the project and replace it with the following content:
 
     ```json
     {
@@ -463,7 +469,7 @@ You're finally ready to test the functionality of your web app. While you could 
 
 1. Within the web browser window displaying the Azure portal, from the Bash session on the **Cloud Shell** pane, run the following commands to create a resource group that will host the Azure web app, into which you'll deploy the Node.js Express app:
 
-    ```azurecli-interactive
+    ```azurecli
     RG1NAME=postgresql-db-RG
     LOCATION=$(az group show --resource-group $RG1NAME --query location --output tsv)
     RG2NAME=cna-aadexpress-RG
@@ -472,25 +478,25 @@ You're finally ready to test the functionality of your web app. While you could 
 
 1. Run the following commands to create a Free-tier Azure App Service plan that will host the new Azure web app:
 
-    ```azurecli-interactive
+    ```azurecli
     SPNAME=aadexpress-sp
-    az appservice plan create --name $SPNAME --resource-group $RG2NAME --sku F1
+    az appservice plan create --name $SPNAME --resource-group $RG2NAME --sku F1 --is-linux
     ```
 
 1. Run the following commands to create the new Node.js-based Azure web app:
 
-    ```azurecli-interactive
+    ```azurecli
     WEBAPPNAME=aadexpress$RANDOM$RANDOM
     az webapp create --name $WEBAPPNAME --resource-group $RG2NAME --plan $SPNAME --runtime "NODE|12-lts"
     ```
 
 1. Run the following commands to identify the name of the web app:
 
-    ```azurecli-interactive
+    ```azurecli
     echo $WEBAPPNAME.azurewebsites.net
     ```
 
-1. Use the nano editor to open the **index.js** file and replace the `const REDIRECT_URI = "http://localhost:8080/redirect";` entry with the following one (including replacing the `<webapp_name>` placeholder with the name you identified in the previous step):
+1. Use the code editor to open the **index.js** file and replace the `const REDIRECT_URI = "http://localhost:8080/redirect";` entry with the following one (including replacing the `<webapp_name>` placeholder with the name you identified in the previous step):
 
     ```
     const REDIRECT_URI = "https://<webapp_name>/redirect";
@@ -498,14 +504,14 @@ You're finally ready to test the functionality of your web app. While you could 
 
 1. Open another tab in the web browser window displaying the Azure portal, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) and, if prompted, sign in to access the Azure subscription you'll be using in this module.
 1. In the Azure portal, use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Active Directory** and, in the list of results, select **Azure Active Directory**.
-1. On the Azure Active Directory blade, in the vertical menu, in the **Manage** section, select **Authentication**.
+1. On the Azure Active Directory blade, navigate to the **App registrations** blade, select the **cna-app** entry, in the vertical menu, in the **Manage** section, select **Authentication**.
 1. On the **cna-app \| Authentication** blade, modify the value of the **Redirect URI** to match the entry you updated in the **index.js** file and save the change.
 
     :::image type="content" source="../media/5-azure-ad-node.js-app-redirect-uri-update.png" alt-text="Screenshot of the cna-app Authentication blade in the Azure portal.":::
 
 1. Switch back to the web browser tab displaying the Bash session on the **Cloud Shell** pane and run the following commands to initialize the local Git repository and commit all changes in the main branch:
 
-    ```azurecli-interactive
+    ```azurecli
     cd ~/cna-aadexpress
     git config --global user.email "user1@adatum.com"
     git config --global user.name "Adatum User1"
@@ -516,7 +522,7 @@ You're finally ready to test the functionality of your web app. While you could 
 
 1. Run the following commands to set up user-level deployment credentials:
 
-    ```azurecli-interactive
+    ```azurecli
     DEPLOYMENTUSER=m06User$RANDOM
     DEPLOYMENTPASS=m06Pass$RANDOM$RANDOM
     az webapp deployment user set --user-name $DEPLOYMENTUSER --password $DEPLOYMENTPASS
@@ -524,14 +530,14 @@ You're finally ready to test the functionality of your web app. While you could 
 
 1. Run the following commands to identify the user-level deployment credentials and record their value, because you'll need them later in this task:
 
-    ```azurecli-interactive
+    ```azurecli
     echo $DEPLOYMENTUSER
     echo $DEPLOYMENTPASS
     ```
 
 1. Run the following commands to identify the Azure web app deployment URL that you'll use as the target of the `git push` command:
 
-    ```azurecli-interactive
+    ```azurecli
     RG2NAME=cna-aadexpress-RG
     WEBAPPNAME=$(az webapp list --resource-group $RG2NAME --query "[0].name" --output tsv)
     DEPLOYMENTURL=$(az webapp deployment source config-local-git --name $WEBAPPNAME --resource-group $RG2NAME --output tsv)
@@ -539,13 +545,13 @@ You're finally ready to test the functionality of your web app. While you could 
 
 1. Run the following command to configure the remote repo named **azure**, representing the deployment URL you identified in the previous step:
 
-    ```azurecli-interactive
+    ```azurecli
     git remote add azure $DEPLOYMENTURL
     ```
 
 1. Run the following commands to create the **master** branch based on the **main** branch and push its contents to the Azure Web app (when prompted for the password that's part of the user-level deployment credentials you recorded previously in this task):
 
-    ```azurecli-interactive
+    ```azurecli
     git checkout -b master
     git commit -a -m "test"
     git push --set-upstream azure master
@@ -560,15 +566,10 @@ You're finally ready to test the functionality of your web app. While you could 
     > [!NOTE]
     > The URL should have the following format: `https://<webapp_name>.azurewebsites.net/auth`
 
-1. Verify that the resulting webpage includes the Azure AD authentication information for the currently signed-in user.
+1. Verify that the resulting webpage consists of the Azure AD authentication information for the currently signed-in user (the output might differ).
 
     :::image type="content" source="../media/5-azure-ad-node.js-app-output-page.png" alt-text="Screenshot of the page of the Node.js web app displaying the Azure AD authentication information.":::
 
-1. Switch back to the web browser tab displaying the properties of the web app. In the vertical menu, in the **Development Tools** section, select the **App Service Editor (Preview)** entry, and then on the **App Service Editor (Preview)**, select **Go**.
-1. On the **App Service Editor** interface, in the vertical menu, select the **Open Console** icon, which is directly after the **Start** icon.
-1. Verify that the resulting page includes the listing of the records in the **inventory** table for the first tenant:
-
-    :::image type="content" source="../media/5-azure-ad-node.js-app-output-console.png" alt-text="Screenshot of the page of the deployed Azure web app containing the listing of the inventory items.":::
 
 ## Results
 

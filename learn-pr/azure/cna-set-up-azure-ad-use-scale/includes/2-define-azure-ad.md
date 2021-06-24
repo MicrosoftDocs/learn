@@ -1,7 +1,6 @@
 ﻿The Adatum management team wants to ensure that the company's customers have a reliable way to securely access the services provided by your applications. You intend to implement this functionality by relying on the authentication and authorization capabilities of Azure AD. To accomplish this objective, you decide to explore the core features and benefits of Azure AD, while focusing on those that are applicable to cloud-native applications.
 
-> [!NOTE]
-> Authentication determines the identity of a security principal, such as a user or a device. Authorization involves granting an authenticated security principal permission to perform an action or access a resource.
+Authentication determines the identity of a security principal, such as a user or a device. Authorization involves granting an authenticated security principal permission to perform an action or access a resource.
 
 ## What is Azure AD and what are its benefits?
 
@@ -14,8 +13,7 @@ Azure AD serves as an identity store, providing you with the ability to create a
 
 For each of these scenarios, you can implement additional controls that dictate the level of protection against potential threats. These controls include built-in support for multifactor authentication and conditional access.
 
-> [!NOTE]
-> Azure AD organizes its objects, such as users, groups, and apps into containers called tenants. Each tenant represents an administrative and security boundary. You can create one or more tenants for your organization. Every Azure subscription is associated with an Azure AD tenant.
+Azure AD organizes its objects, such as users, groups, and apps into containers called tenants. Each tenant represents an administrative and security boundary. You can create one or more tenants for your organization. Every Azure subscription is associated with an Azure AD tenant.
 
 ## What is the role of Azure AD in cloud-native applications?
 
