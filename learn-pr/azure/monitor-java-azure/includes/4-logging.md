@@ -21,7 +21,7 @@ If multiple instances exist for the application named `app`, you can view the in
 First, you can get the application instance names with following command.
 
 ```azurecli
-az spring-cloud app logs -f -n customers-service
+az spring-cloud app logs -f --name customers-service
 ```
 
 With results:
@@ -37,7 +37,7 @@ Please use '-i/--instance' parameter to specify the instance name
 Then, you can stream logs of an application instance with the option `-i/--instance` option:
 
 ```azurecli
-az spring-cloud app logs -f -n customers-service -i customers-service-default-17-7bc5f9dd79-fshb9
+az spring-cloud app logs -f --name customers-service --instance customers-service-default-17-7bc5f9dd79-fshb9
 ```
 
 You can also get details of application instances from the Azure portal.  After selecting **Apps** in the left navigation pane of your Azure Spring Cloud service, select **App Instances**.
