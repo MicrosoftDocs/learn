@@ -1,4 +1,4 @@
-Azure Speech Services, BabylonJS, and Azure Blob Storage make building and deploying a voice activated WebXR application simple and efficient.
+Azure Speech Services, BabylonJS, and Azure Blob Storage allows you to create and deploy a voice activated WebXR application efficiently.
 
 ## Example scenario
 
