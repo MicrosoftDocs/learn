@@ -6,7 +6,7 @@ To achieve this level of scalability, it's important to understand the concepts,
 
 ## Scenario
 
-Imagine that you're working for a retail startup that's designing a database to manage online orders. You're working on a proposal for an efficient database design. You've been given a relational model to start from. To improve scalability, efficiency, and performance, you want to migrate the model correctly to NoSQL. You've modeled most of the entities so far, but there are more entities to model and further optimizations to make.
+Imagine that you're working for a retail startup that's designing a database to manage online orders. You're working on a proposal for an efficient database design. You've been given a relational model to start from. To improve scalability, efficiency, and performance, you want to migrate the model to NoSQL. You've modeled most of the entities so far, but there are more entities to model and further optimizations to make.
 
 ## What will we be doing?
 
