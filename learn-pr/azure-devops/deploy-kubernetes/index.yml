@@ -3,7 +3,7 @@ uid: learn.azdo.deploy-kubernetes
 metadata:
   title: Automate multi-container Kubernetes deployments with Azure Pipelines
   description: Implement a CI/CD pipeline for multiple containers to Kubernetes.
-  ms.date: 04/24/2020
+  ms.date: 06/23/2021
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial

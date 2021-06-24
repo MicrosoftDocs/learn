@@ -4,7 +4,7 @@ hidden: true
 metadata:
   title: Scan code for vulnerabilities in Azure Pipelines
   description: Find out about resources that enable you to scan for vulnerabilities in your source code, both locally and in the build pipeline, during the build process.
-  ms.date: 01/21/2020
+  ms.date: 06/23/2021
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
