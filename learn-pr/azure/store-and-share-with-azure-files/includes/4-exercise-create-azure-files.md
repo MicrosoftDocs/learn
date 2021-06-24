@@ -68,7 +68,7 @@ Next, create a Windows Server VM to simulate an on-premises machine running in t
 
 1. On the **Enter your credentials** prompt, select **More choices**. Then select **Use a different account**. In the **Username/Email address** field, enter **azureuser**, and enter the password you created earlier.
 
-1. Select **OK**, and then select **Yes** to connect to the server.
+1. Select **OK**, and then select **Yes** to open the remote desktop.
 
 ## Map drives to the Azure file shares
 
