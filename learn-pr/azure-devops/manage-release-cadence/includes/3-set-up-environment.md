@@ -150,12 +150,14 @@ Here you create App Service instances for the three stages that you'll deploy to
     az appservice plan create \
       --name tailspin-space-game-test-asp \
       --resource-group tailspin-space-game-rg \
-      --sku B1
+      --sku B1 \
+      --is-linux
 
     az appservice plan create \
       --name tailspin-space-game-prod-asp \
       --resource-group tailspin-space-game-rg \
-      --sku P1V2
+      --sku P1V2 \
+      --is-linux
     ```
 
     > [!IMPORTANT]
@@ -175,17 +177,20 @@ Here you create App Service instances for the three stages that you'll deploy to
     az webapp create \
       --name tailspin-space-game-web-dev-$webappsuffix \
       --resource-group tailspin-space-game-rg \
-      --plan tailspin-space-game-test-asp
+      --plan tailspin-space-game-test-asp \
+      --runtime "DOTNET|5.0"
 
     az webapp create \
       --name tailspin-space-game-web-test-$webappsuffix \
       --resource-group tailspin-space-game-rg \
-      --plan tailspin-space-game-test-asp
+      --plan tailspin-space-game-test-asp \
+      --runtime "DOTNET|5.0"
 
     az webapp create \
       --name tailspin-space-game-web-staging-$webappsuffix \
       --resource-group tailspin-space-game-rg \
-      --plan tailspin-space-game-prod-asp
+      --plan tailspin-space-game-prod-asp \
+      --runtime "DOTNET|5.0"
     ```
 
     Notice that here you apply the same App Service plan, **B1 Basic**, to the App Service instances for _Dev_ and _Test_. You apply the App Service plan **Premium P1V2** to the App Service instance for _Staging_.
@@ -252,6 +257,32 @@ To add the variables:
 
     :::image type="content" source="../media/3-library-variable-group.png" alt-text="A screenshot of Azure Pipelines, showing the variable group. The group contains three variables.":::
 
+## Create the dev, test, and staging environments
+
+In previous modules, you created environments for the **dev**, **test**, and **staging** environments. Here, you repeat the process.
+
+To create the **dev**, **test**, and **staging** environments:
+
+1. From Azure Pipelines, select **Environments**.
+
+    :::image type="content" source="../../shared/media/pipelines-environments.png" alt-text="A screenshot of Azure Pipelines showing the location of the Environments menu option.":::
+
+1. To create the **dev** environment:
+    1. Select **Create environment**.
+    1. Under **Name**, enter *dev*.
+    1. Leave the remaining fields at their default values.
+    1. Select **Create**.
+1. To create the **test** environment:
+    1. Return to the **Environments** page.
+    1. Select **New environment**.
+    1. Under **Name**, enter *test*.
+    1. Select **Create**.
+1. To create the **staging** environment:
+    1. Return to the **Environments** page.
+    1. Select **New environment**.
+    1. Under **Name**, enter *staging*.
+    1. Select **Create**.
+
 ## Create a service connection
 
 Here you create a service connection that enables Azure Pipelines to access your Azure subscription. Azure Pipelines uses this service connection to deploy the website to App Service. You created a similar service connection in the previous module.
@@ -292,7 +323,7 @@ This branch contains the _Space Game_ project that you worked with in the previo
 
     ```bash
     git fetch upstream blue-green
-    git checkout -b blue-green upstream/blue-green
+    git checkout -B blue-green upstream/blue-green
     ```
 
     The format of these commands enables you to get starter code from the Microsoft GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
@@ -301,7 +332,7 @@ This branch contains the _Space Game_ project that you worked with in the previo
 
     The configuration resembles the ones that you created in the previous modules in this learning path. It builds only the application's **Release** configuration. For brevity, it omits the triggers, manual approvals, and tests that you set up in previous modules.
 
-    For learning purposes, this configuration promotes changes from any branch to _Dev_, _Test_, and _Staging_. A more robust approach might promote changes from only a release branch or `master`. You used this robust approach in the [Create a multistage pipeline by using Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true) module.
+    For learning purposes, this configuration promotes changes from any branch to _Dev_, _Test_, and _Staging_. A more robust approach might promote changes from only a release branch or `main`. You used this robust approach in the [Create a multistage pipeline by using Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true) module.
 
 ## Run the pipeline and see the deployed website
 
