@@ -14,7 +14,7 @@ summary: Create a voice activated WebXR app using Babylon.js and the Azure Speec
 abstract: | 
   By the end of this module, you'll be able to:
     -	Call the Azure Speech to Text API through Azure Cognitive Services JavaScript SDK
-    - Enable VR or AR support in a BabylonJS web app
+    - Enable VR or AR support in a Babylon.js web app
     - Deploy your web app using Static Website Hosting provided by Azure Blob Storage
 prerequisites: |
   - A microphone for capturing audio (can be built in to your computer or external)
