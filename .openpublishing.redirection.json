@@ -7964,6 +7964,21 @@
       "source_path": "learn-pr/wwl-sci/describe-microsoft-security-compliance-principles/6-summary-resources.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/describe-compliance-management-capabilities-microsoft/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-manage-cognitive-services/1-introduction-accounts.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-manage-cognitive-services/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-manage-cognitive-services/4-service-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-manage-cognitive-services/4-use-rest",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-manage-cognitive-services/5-monitor-services-using-diagnostics-logging.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-manage-cognitive-services/5-use-sdk",
+      "redirect_document_id": false
     }
   ]
 }
