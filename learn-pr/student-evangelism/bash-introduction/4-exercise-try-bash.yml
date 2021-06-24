@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Try Bash
   description: Get some experience with Bash by trying some commands
   ms.date: 03/19/2021
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-bash
 durationInMinutes: 8

@@ -5,7 +5,7 @@ metadata:
   description: Learn how to declare and instantiate classes in TypeScript.
   ms.date: 02/11/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: 'Declare and instantiate classes in TypeScript'

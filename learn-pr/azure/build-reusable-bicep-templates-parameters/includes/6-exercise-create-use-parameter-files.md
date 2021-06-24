@@ -10,8 +10,6 @@ During the process, you'll:
 > * Update the parameter file to refer to the key vault secrets.
 > * Re-test the deployment to ensure that the parameter file is still valid.
 
-This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
-
 ## Remove the default value for the App Service plan SKU
 
 To make your template work across environments, the Azure App Service plan SKU details will be provided in a parameter file rather than by a default value.

@@ -6,7 +6,7 @@ metadata:
   description: Learn about the TypeScript Playground, select an integrated development environment (IDE) that supports TypeScript, and install Visual Studio Code.
   ms.date: 02/10/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

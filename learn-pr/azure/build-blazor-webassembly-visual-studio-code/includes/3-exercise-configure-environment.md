@@ -31,7 +31,7 @@ To set up a Blazor project to work with, we'll use Visual Studio Code. Visual St
       -| Counter.razor
       -| Error.cshtml
       -| Error.cshtml.cs
-      -| FethData.razor
+      -| FetchData.razor
       -| Index.razor
     -| Properties
     -| Shared

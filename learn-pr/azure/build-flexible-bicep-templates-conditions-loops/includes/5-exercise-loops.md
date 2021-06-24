@@ -10,8 +10,6 @@ During the process, you'll:
 > * Deploy the Bicep file, and verify the deployment of the resources.
 > * Modify the parameter to add an additional location, redeploy the file, and then verify that the new resources have been deployed.
 
-This exercise uses [the Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
-
 ## Move resources into a module
 
 1. In Visual Studio Code, create a new folder called *modules* in the same folder where you created your *main.bicep* file.

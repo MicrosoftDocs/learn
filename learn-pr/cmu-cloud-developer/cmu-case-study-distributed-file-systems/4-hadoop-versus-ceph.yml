@@ -5,8 +5,8 @@ metadata:
   title: Comparison of Hadoop versus Ceph file systems
   description: A case study comparison of the Hadoop distributed file system (HDFS) versus the Ceph file system.
   ms.date: 03/20/2020
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

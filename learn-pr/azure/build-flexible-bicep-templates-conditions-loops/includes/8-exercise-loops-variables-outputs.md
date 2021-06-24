@@ -2,15 +2,13 @@ For your toy company, you need to deploy virtual networks in each country where 
 
 In this exercise, you'll add the virtual network and its configuration to your Bicep code, and you'll output the logical server FQDNs.
 
-In the process, you'll:
+During the process, you'll:
 
 > [!div class="checklist"]
 > * Update your Bicep code to specify a parameter for each virtual network's subnets.
 > * Add a variable loop to create a subnet array, which you'll use in the virtual network resource declaration.
 > * Add an output loop to create the list of logical server FQDNs.
 > * Deploy the Bicep file and verify the deployment.
-
-This exercise uses [the Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
 
 ## Add the virtual network to your Bicep file
 

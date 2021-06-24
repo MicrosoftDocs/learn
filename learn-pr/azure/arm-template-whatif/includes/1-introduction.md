@@ -16,7 +16,10 @@ By the end of this module, you'll be able to preview the changes that will happe
 
 ## Prerequisites
 
-You should have familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+You should be familiar with:
+
+- Creating and deploying basic ARM templates, using either Bicep or JSON.
+- Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
 To follow along with the exercises in the module, you'll need:
 

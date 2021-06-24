@@ -5,7 +5,7 @@ metadata:
   description: This module will teach you how to model problems by using object-oriented programming (OOP) concepts.
   ms.date: 12/01/2020
   author: softchris
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to object-oriented programming with Python

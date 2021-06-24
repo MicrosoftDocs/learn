@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/16/2021
+  ms.date: 06/21/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -38,14 +38,14 @@ quiz:
     - content: "Azure Blueprints"
       isCorrect: true
       explanation: "​​​Azure Blueprint will enable your development teams to define a repeatable set of Azure resources, and achieve shorter development times and faster delivery."
-  - content: "Within an organization, there are many users who will need to access Azure and perform different actions across various scopes. The admin wants to implement action management at all scopes across Azure for the organization. What can the admin use to address this need?"
+  - content: "As the compliance admin for your organization, you need to ensure that Azure resources meet your organization's business rules?  Which Azure capability should you use?"
     choices:
-    - content: "Use Azure role-based access control (RBAC)"
+    - content: "Use Azure role-based access control (RBAC)."
+      isCorrect: false
+      explanation: "Incorrect.  Azure RBAC is used to manage access to resources."
+    - content: "Use Azure Policy."
       isCorrect: true
-      explanation: "Azure RBAC focuses on user action management at different scopes. If actions need to be controlled, then you would use Azure RBAC.​​​"
-    - content: "Use Azure Policy"
+      explanation: "Correct.  Azure Policy is used to ensure that your Azure resources comply with your organization's business rules."
+    - content: "Use Azure resource locks."
       isCorrect: false
-      explanation: "Azure Policy doesn't enforce user action management at different scopes. If actions need to be controlled, then you should use Azure RBAC.​​​"
-    - content: "Use Azure action management (AM)"
-      isCorrect: false
-      explanation: "This option doesn't exist. Instead, use Azure RBAC because it focuses on user action management at different scopes. If actions need to be controlled, then you should use Azure RBAC.​​​"
+      explanation: "Incorrect. Azure resource locks prevent resources from being accidentally deleted or changed."

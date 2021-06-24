@@ -26,8 +26,10 @@ By the end of this module, you'll be able to create Bicep templates that define 
 
 ## Prerequisites
 
-- You should have an understanding of what infrastructure as code is, and what its benefits are.
-- You should have some familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resources.
+You should be familiar with:
+
+- What infrastructure as code is, and what its benefits are.
+- Azure, including the Azure portal, subscriptions, resource groups, and resources.
 
 To follow along with the exercises in the module, you'll need:
 
