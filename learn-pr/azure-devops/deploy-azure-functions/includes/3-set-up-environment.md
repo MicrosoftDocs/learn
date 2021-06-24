@@ -131,9 +131,9 @@ To make commands easier to run, start by selecting a default region. After you s
     az configure --defaults location=westus2
     ```
 
-### Create some Bash variables
+### Create Bash variables
 
-Here, create some Bash variables to make the setup process more convenient and less error-prone. Using variables for shared text strings helps avoid accidental typos.
+Here, create Bash variables to make the setup process more convenient and less error-prone. Using variables for shared text strings helps avoid accidental typos.
 
 1. From Cloud Shell, generate a random number. This will make it easier to create globally unique names for certain services in the next step.
 
@@ -175,10 +175,11 @@ This solution requires several Azure resources for deployment, which will be cre
     az appservice plan create \
       --name $planName \
       --resource-group $rgName \
-      --sku B1
+      --sku B1 \
+      --is-linux
     ```
 
-    The `--sku` argument specifies the B1 plan. This plan runs on the Basic tier.
+    The `--sku` argument specifies the B1 plan. This plan runs on the Basic tier. The `--is-linux` argument specifies to use Linux workers.
 
     > [!IMPORTANT]
     > If the B1 SKU isn't available in your Azure subscription, [choose a different plan](https://azure.microsoft.com/pricing/details/app-service/linux/?azure-portal=true), such as S1 (Standard).
@@ -189,7 +190,8 @@ This solution requires several Azure resources for deployment, which will be cre
     az webapp create \
       --name $webName \
       --resource-group $rgName \
-      --plan $planName
+      --plan $planName \
+      --runtime "DOTNETCORE|3.1"
     ```
 
 1. Azure Functions requires a storage account for deployment. Run the following `az storage account create` command to create it.
@@ -201,7 +203,7 @@ This solution requires several Azure resources for deployment, which will be cre
       --sku Standard_LRS
     ```
 
-1. Run the following `az functionapp create` command to create the Azure Functions app instance. Replace the &lt;region&gt; with your preferred region.
+1. Run the following `az functionapp create` command to create the Azure Functions app instance. Replace the `<region>` with your preferred region.
 
     ```azurecli
     az functionapp create \
@@ -287,6 +289,21 @@ To add the variables:
     Your variable group resembles this one:
 
     :::image type="content" source="../media/3-library-variable-group.png" alt-text="A screenshot of Azure Pipelines showing the variable group. The group contains three variables.":::
+
+## Create the spike environment
+
+In previous modules, you created environments for the **dev**, **test**, and **staging** environments. Here, you repeat the process. This time, you'll create an environment named **spike**.
+
+To create the **spike** environment:
+
+1. From Azure Pipelines, select **Environments**.
+
+    :::image type="content" source="../../shared/media/pipelines-environments.png" alt-text="A screenshot of Azure Pipelines showing the location of the Environments menu option.":::
+
+1. Select **Create environment**.
+1. Under **Name**, enter *spike*.
+1. Leave the remaining fields at their default values.
+1. Select **Create**.
 
 ## Create a service connection
 
