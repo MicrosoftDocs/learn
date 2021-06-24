@@ -327,7 +327,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. Select **Add output** in the **Outputs** box. The **Create Output** pane appears showing a list of all possible output **Binding Types** in a dropdown menu.
 
-    ![Screen shot of the Add input options.](../media/3-function-output-bindings.png)
+    ![Screen shot of the Add output options.](../media/3-function-output-bindings.png)
 
     As you can see, there are several output binding types. We'll get back to adding output bindings later in this module but, for now, select **Cancel** to dismiss this pane.
 
@@ -353,7 +353,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. Select **Add output** in the **Outputs** box. The **Create Output** pane appears showing a list of all possible output **Binding Types** in a dropdown menu.
 
-    ![Screen shot of the Add input options.](../media/3-function-output-bindings.png)
+    ![Screen shot of the Add output options.](../media/3-function-output-bindings.png)
 
     As you can see, there are several output binding types. We'll get back to adding output bindings later in this module but, for now, select **Cancel** to dismiss this pane.
 
