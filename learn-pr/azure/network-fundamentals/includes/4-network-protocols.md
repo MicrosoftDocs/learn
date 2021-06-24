@@ -22,9 +22,9 @@ We'll explore these two address types in more detail later.
 
 ### What is a data packet?
 
-A data packet is a unit that's used to describe the message two devices on a network send each other. A data packet consists of raw data, headers, and potentially also a trailer. The header contains several information items. For example, it includes the sender and destination device addresses, the size of the packet, the protocol used, and the packet number. The trailer in a data packet deals with error checking.
+A data packet is a unit that's used to describe the message that two devices on a network send each other. A data packet consists of raw data, headers, and potentially a trailer. The header contains several information items. For example, it includes the sender and destination device addresses, the size of the packet, the protocol used, and the packet number. The trailer in a data packet deals with error checking.
 
-The concept is similar to sending someone a letter in the mail. But instead of sending several pages in one envelope, each page is sent in a separate envelope. Enough information is sent in each envelope to allow the recipient to piece together the complete message after they have all the pages.
+The concept is similar to sending someone a letter in the mail, for example. Instead of sending several pages in one envelope, each page is sent in a separate envelope. Enough information is sent in each envelope to allow the recipient to piece together the complete message after receiving all the pages.
 
 ### What is a datagram?
 
