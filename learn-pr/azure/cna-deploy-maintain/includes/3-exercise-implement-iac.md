@@ -49,7 +49,7 @@ To prepare for an AKS cluster deployment, you'll add a secret to the repository 
     > [!NOTE]
     > Record the output of the command. You'll need it later in this exercise.
 
-1. Within the Bash session in the Azure Cloud Shell pane, run the following command to generate an Azure AD service principal that will be used<!-- ID/SME: "that you will use?" "that GitHib will use?"--> to provide the GitHub workflow to your Azure subscription:
+1. Within the Bash session in the Azure Cloud Shell pane, run the following command to generate an Azure AD service principal that will be used to provide the GitHub workflow to your Azure subscription:
 
     ```bash
     SERVICE_PRINCIPAL=$(az ad sp create-for-rbac --name "cna-sp03" --sdk-auth --role Contributor --scopes /subscriptions/$SUBSCRIPTION_ID)
@@ -64,7 +64,7 @@ To prepare for an AKS cluster deployment, you'll add a secret to the repository 
 1. On the **Action secrets** page, select **New repository secret**.
 1. On the **Actions secrets / New secret** page, in the **Name** text box, enter **AZURE_CREDENTIALS**. In the **Value** text box, paste the JSON representation of the service principal settings you recorded earlier, and then select **Add secret**.
 1. Switch to the web browser tab displaying the Azure portal with the Bash session of the **Cloud Shell** open.
-1. Within the Bash session in the Azure Cloud Shell pane, run the following command to create a resource group that will host the AKS cluster. <!-- ID/SME: I would recommend making this next sentence into a Note. If you do, end the previous sentence with a colon.-->(Make sure to replace the <location><!-- ID/SME: I'm not sure how to fix this, but the "<location>" text is not displaying in preview mode. --> placeholder with the name of the Azure region where you can provision Azure resources, such as `eastus` or 'southcentralus`.)<!-- ID/SME: For some reason, eastus and southcentralus are displaying differently. Please review this in preview mode. -->
+1. Within the Bash session in the Azure Cloud Shell pane, run the following command to create a resource group that will host the AKS cluster. Make sure to replace the `location` placeholder with the name of the Azure region where you can provision Azure resources, such as `eastus` or 'southcentralus`.
 
     ```bash
     LOCATION='southcentralus'
@@ -232,7 +232,7 @@ Now you're ready to proceed with deploying an AKS cluster by using a GitHub work
    :::image type="content" source="../media/3-github-deployment-completed.png" alt-text="Screenshot of the completed AKS deployment jobs in GitHub." border="false":::
 
 1. Switch back to the web browser window displaying the Azure portal.
-1. Navigate to the **cna-devops-03-rg** resource group blade<!-- ID/SME. If any of the other pages/windows are Azure blades, we should use the term "blade" instead. -->, and verify that it contains the AKS cluster **cna-devops-03-aks**.
+1. Navigate to the **cna-devops-03-rg** resource group blade and verify that it contains the AKS cluster **cna-devops-03-aks**.
 
     :::image type="content" source="../media/3-azure-deployment-completed.png" alt-text="Screenshot of the cna-devops-03-rg resource group with the AKS cluster can-devops-03-aks in the Azure portal." border="false":::STOP:
 

@@ -4,18 +4,18 @@ You have successfully tested the concept of IaC by using GitHub Actions to deplo
 
 DevOps practices facilitate implementing cloud-native applications. They closely align with Twelve-Factor App guidelines that serve as the foundation for building cloud-native apps. In particular, they help address the following guidelines:
 
-- Code Base. A single code base for each microservice that's stored in its own repository and tracked with version control. It can also be deployed to multiple environments, such as QA, staging, and production.<!-- ID/SME: please verify this edit, as I wasn't sure about whether the deploying to multiple parts applied to Code Base or version control tracking. -->
-- Build, Release, Run. Each release must enforce a strict separation across the build, release, and run stages. Each stage should be tagged with a unique ID and support the ability to roll back<!-- ID/SME: Roll back what? -->.
+- Code Base. A single code base for each microservice that's stored in its own repository and tracked with version control. It can also be deployed to multiple environments, such as QA, staging, and production.
+- Build, Release, Run. Each release must enforce a strict separation across the build, release, and run stages. Each stage should be tagged with a unique ID and support the ability to roll back to a previous version.
 
-CI/CD solutions such as Azure DevOps or GitHub Actions allow you to separate deployments across multiple environments. while also helping to ensure consistency across all of them. Developers author new features in their own environment. Then, after the development is complete, the code is committed into a designated branch of a code repository via a CI pipeline<!-- ID/SME: Please verify this edit. -->. The commit triggers a build stage that transforms the code into a binary artifact. It then automatically builds, tests, and packages the application.
+CI/CD solutions such as Azure DevOps or GitHub Actions allow you to separate deployments across multiple environments. while also helping to ensure consistency across all of them. Developers author new features in their own environment. Then, after the development is complete, the code is committed into a designated branch of a code repository via a CI pipeline. The commit triggers a build stage that transforms the code into a binary artifact. It then automatically builds, tests, and packages the application.
 
 The release stage picks up the binary artifact, applies external application and environment configuration information, and then produces an immutable release. The release is then deployed to a specified environment and implemented with a CD pipeline. Finally, the released feature is run in the target execution environment.
 
 ## How to implement CI/CD by using GitHub actions
 
-Cloud-native applications are particularly suitable for containerization and container orchestration, which further enhances their agility. Typically, their Azure-based implementations tie closely to the use of such services as AKS and Azure Container Registry (ACR)<!-- ID/SME: The acronym ACR is not in Term Studio, Microsoft Docs, or in Microsoft Cloud Style Guide. The latter has "Container Registry" as an approved shortened version. If you agree, please s/r through all units, and the Knowledge-check.yml doc. -->.
+Cloud-native applications are particularly suitable for containerization and container orchestration, which further enhances their agility. Typically, their Azure-based implementations tie closely to the use of such services as AKS and Azure Container Registry (ACR).
 
-GitHub Actions accommodate such implementations through a number of built-in and Marketplace-based Azure-specific actions<!-- ID/SME: Acrolinx will most likely ding us for using three hyphens in a row. Can we rewrite this? Perhaps change the last one to "actions specific to Azure?" -->. With GitHub Actions for Azure, you can create workflows that build, test, package, release, and deploy your applications to Azure. GitHub Actions also include support for capabilities such as:
+GitHub Actions accommodate such implementations through a number of built-in and Marketplace-based actions that are specific to Azure. With GitHub Actions for Azure, you can create workflows that build, test, package, release, and deploy your applications to Azure. GitHub Actions also include support for capabilities such as:
 
 - Provisioning resources by using Azure Resource Manager templates.
 - Running Azure CLI commands.

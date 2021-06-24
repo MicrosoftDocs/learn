@@ -46,7 +46,7 @@ Before you can proceed with deploying Azure resources by using GitHub actions, y
 Now you're ready to proceed with implementing a CI/CD pipeline by using Azure DevOps Starter.
 
 1. In the web browser displaying the Azure portal, use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **DevOps Starter**. From the list of results, in the **Services** section, select **DevOps Starter**.
-1. On the **DevOps Starter** blade, select **+ Create**.<!-- ID/SME: Because all of the following steps take place in the Azure portal DevOps Starter blade, we don't need to keep mentioning either of them. Only if we leave them and come back do we need to restate where they are. -->
+1. On the **DevOps Starter** blade, select **+ Create**.
 1. On the **Start fresh with a new application** tab, verify the presence of the **Setting up DevOps starter with GitHub** label. If the label states **Setting up DevOps starter with Azure DevOps**, select the **here** link, select **GitHub**, and then select **Done**.
 1. On the **Start fresh with a new application** page, select the **Node.js** tile, and then select **Next: Framework >**.
 
@@ -145,9 +145,11 @@ Now you're ready to proceed with implementing a CI/CD pipeline by using Azure De
     :::image type="content" source="../media/5-azure-devops-starter-deployment-progress.png" alt-text="Screenshot of the progress of the build and deployment jobs on the Azure DevOps starter blade." border="false":::
 
     > [!NOTE]
-    > Wait for the deployment to complete, which might take about five minutes.<!-- ID/SME: We should have text between the following two images. Can we add something about now view the ...? -->
+    > Wait for the deployment to complete, which might take about five minutes.
 
     :::image type="content" source="../media/5-azure-devops-starter-deployment-completed.png" alt-text="Screenshot of the completed build and deployment jobs on the Azure DevOps starter blade." border="false":::
+
+    Now you can review the completed jobs.
 
     :::image type="content" source="../media/5-github-deployment-completed.png" alt-text="Screenshot of the completed build and deployment jobs in GitHub." border="false":::
 
@@ -164,7 +166,7 @@ Now that the GitHub workflow and the corresponding Azure resources are fully dep
     > [!NOTE]
     > The sampleapp listens to incoming HTTP requests on TCP port 8080.
 
-1. Open a new browser window and navigate to the URL, which consists of the **http://**<!-- ID/SME: This http:// link is live, and it shouldn't be. I'm not sure how to format that though. --> prefix followed by the value of the IP address you identified in the previous step and ending with the **:8080** suffix.
+1. Open a new browser window and navigate to the URL, which consists of the `http://` prefix followed by the value of the IP address you identified in the previous step and ending with the **:8080** suffix.
 1. Verify that the web browser displays the **Success!** page.
 
     :::image type="content" source="../media/5-sampleapp-original.png" alt-text="Screenshot of the Success page for the sample web app in its original form." border="false":::
@@ -185,7 +187,7 @@ Now that the GitHub workflow and the corresponding Azure resources are fully dep
 1. After the deployment completes, switch to the browser window displaying the sample web app.
 1. Refresh the webpage, and verify that it contains the text **GitHub repository has been successfully updated**.
 
-    :::image type="content" source="../media/5-sampleapp-updated.png" alt-text="Screenshot of the sample web app in its modified form." border="false":::<!-- This isn't the sample web app. It's just a Success page. Please revisit. -->
+    :::image type="content" source="../media/5-sampleapp-updated.png" alt-text="Screenshot of the success page with a message that the GitHub repository has been successfully updated." border="false":::
 
 ## Delete deployed resources
 
