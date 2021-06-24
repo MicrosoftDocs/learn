@@ -39,7 +39,7 @@ For better project organization, place all your prefabs into a **Prefabs** folde
     - `MixedRealityToolkit`
     - `MixedRealityPlayspace`
 
-## Create the PlayerParent
+## Create the PlayerParent object
 
 As mentioned, when the scene starts, a button for each player should be instantiated with the respective player data. To better organize the placement of each button, you can use an MRTK **Object Collection** script. These scripts help lay out an array of objects in predefined three-dimensional shapes. 
 
@@ -64,7 +64,7 @@ For this project, you'll arrange the buttons into a grid by using the GridObject
 
 1. At the bottom of the **GridObjectCollection (Script)** component, select **Update Collection**.
 
-## Create the PlayerLoader
+## Create the PlayerLoader object
 
 The final step for this project is to create an object that loads the scene. This object consists of a script that will spawn each `PlayerContainer` prefab into the scene. The script also tells Unity to arrange the instantiated children within the `PlayerParent` object into a grid collection defined by the `PlayerParent` object.
 
