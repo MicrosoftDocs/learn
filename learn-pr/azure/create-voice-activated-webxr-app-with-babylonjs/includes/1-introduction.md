@@ -8,7 +8,7 @@ In most activities within in this area of the park, the visitors will be able to
 
 ## What will we be doing?
 
-In this module, you will create the core components of this requested application. Your teammates have already set up the Babylon.js project and imported the assets necessary for this application. You will implement the recognition of spells through the Azure Speech to Text API, enable VR or AR support for the Babylon.js web application, and deploy the application to the public web using Azure Blob Storage.
+In this module, you will create the core components of this requested application. Your teammates have already set up the Babylon.js project and imported the assets necessary for this application. You will implement the recognition of spells through the Azure Speech-to-text API, enable VR or AR support for the Babylon.js web application, and deploy the application to the public web using Azure Blob Storage.
 
 ## What is the main goal?
 
