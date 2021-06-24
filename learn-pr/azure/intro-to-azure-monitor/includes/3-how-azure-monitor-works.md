@@ -24,7 +24,7 @@ As soon as you create a resource in Azure, the Azure Monitor begins collecting d
 :::image type="content" source="../media/azure-metrics.png" alt-text="Screenshot of metrics graph selected for a web app depicting average memory working set in a line graph format":::
 
 ## Azure Monitor agents
-Virtual machines and other compute resources require an agent to collect monitoring data required to measure the performance and availability of their guest operating system and workloads. The Azure Monitor agent (AMA), currently in preview, collects monitoring data from the guest operating system of virtual machines and delivers it to Azure Monitor.
+Virtual machines and other compute resources require an agent to collect monitoring data required to measure the performance and availability of their guest operating system and workloads. The Azure Monitor agent (AMA) collects monitoring data from the guest operating system of virtual machines and delivers it to Azure Monitor.
 
 The Azure Monitor agent has replaced the Log Analytics agent, the diagnostic extension, and the Telegraf agent. By utilizing the Azure Monitor Agent, you can realize the following benefits:
 
