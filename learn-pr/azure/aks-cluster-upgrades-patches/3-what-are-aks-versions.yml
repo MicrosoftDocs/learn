@@ -12,7 +12,6 @@ durationInMinutes: 13
 content: |
   [!include[](includes/3-what-are-aks-versions.md)]
 
-content: |
 quiz:
   questions:
   - content: "Kubernetes has just released a new minor version 1.20.0. Which of the following Kubernetes versions will go out of support according to the N-2 rule?"

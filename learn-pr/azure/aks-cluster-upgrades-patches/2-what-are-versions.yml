@@ -8,12 +8,10 @@ metadata:
   ms.author: mixie 
   author: microsoftmichelle
   ms.product: learning-azure
-  ms.topic: azure
 durationInMinutes: 8
 content: |
   [!include[](includes/2-what-are-versions.md)]
 
-content: |
 quiz:
   questions:
   - content: "Some bugs have been identified by the Kubernetes community that needs to be fixed. When the bug fixes have been made, what should Kubernetes do?"

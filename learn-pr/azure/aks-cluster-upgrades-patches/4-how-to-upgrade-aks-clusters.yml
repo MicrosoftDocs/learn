@@ -13,7 +13,6 @@ durationInMinutes: 5
 content: |
   [!include[](includes/4-how-to-upgrade-aks-clusters.md)]
 
-  content: |
 quiz:
   questions:
   - content: "Your organization has decided to use Blue/Green deployment to test and deploy the newly upgraded AKS clusters. Which of the following most accurately describes this test and deployment strategy?"
