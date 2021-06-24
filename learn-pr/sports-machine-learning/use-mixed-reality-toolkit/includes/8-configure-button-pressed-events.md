@@ -5,7 +5,7 @@ Each button created has four `Events` properties that can be configured to trigg
 - `Touch Begin()`: Triggers an action when an object is initially touched.
 - `Touch End ()`: Triggers an action when the touch of an object ends.
 - `Button Pressed ()`: Triggers an action when a button is pressed.
-- `Button Released ()`: Triggers an action on the release of a button pressed.
+- `Button Released ()`: Triggers an action on the release of a button press.
 
 For this unit, you'll focus on the `Button Pressed()` event.
 
@@ -25,7 +25,7 @@ How to simulate hand input:
 - While holding the space bar, move your mouse to move the hand.
 - Use the **mouse scroll wheel** to adjust the depth of the hand.
 
-## Configure the PlayerButton button pressed event
+## Configure the PlayerButton button press event
 
 By default, objects within the scene are set to `active`. Whether an object is active is determined by a `true` or `false` value. You can manage whether an object is active in the editor, and you can also do this with code.
 
@@ -43,7 +43,7 @@ When you're creating a `Button Pressed ()` event, the object receiving the event
 
 1. In the **Inspector** window, within the **PressableButton** component, select the **+** button within the **Button Pressed ()** property.
 
-    ![Screenshot of the pressable button component for the player button. The plus icon is highlighted for the button pressed property.](../media/add-button-pressed-event.png)
+    ![Screenshot of the pressable button component for the player button. The plus icon is highlighted for the button press property.](../media/add-button-pressed-event.png)
 
 1. In the section that appears, drag the **StatsCard** object to the **None (Object)** field.
 
@@ -51,13 +51,13 @@ When you're creating a `Button Pressed ()` event, the object receiving the event
 
     After the function is assigned, select the checkbox next to the **StatsCard** object assignment.
 
-    ![Screenshot of the newly added button pressed event for the player button object.](../media/button-pressed-event.png)
+    ![Screenshot of the newly added button press event for the player button object.](../media/button-pressed-event.png)
 
 Now that the `Button Pressed ()` event is added for the `PlayerButton` object, enter into **Play** mode. In the **Game** window, use simulated hand input to press the **PlayerButton** object to view the **StatsCard** object display.
 
 ![A demo of pressing the player button object with simulated hand input. When the player button object is pressed, the stats card appears.](../media/press-button-demo.gif)
 
-## Configure the CloseCard button pressed event
+## Configure the CloseCard button press event
 
 Although MRTK provides you with scripts that have functions that can be used for events, you can also write and use your own scripts.
 
@@ -105,7 +105,7 @@ Now that you have a function available to set an object to inactive, you can use
 
     Then select the function drop-down that appears, and select **CloseCard** > **Disabled ()**.
 
-    ![Screenshot of the events properties for the close card button object. The newly added button pressed event is highlighted.](../media/close-card-button-button-pressed-event.png)
+    ![Screenshot of the events properties for the close card button object. The newly added button press event is highlighted.](../media/close-card-button-button-pressed-event.png)
 
 Now that the `Button Pressed ()` event is added for the `CloseCardButton` object, enter into **Play** mode and press the button to view the stats card close.
 

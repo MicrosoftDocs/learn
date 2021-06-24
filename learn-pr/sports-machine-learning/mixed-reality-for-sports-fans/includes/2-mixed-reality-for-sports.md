@@ -6,7 +6,7 @@ In the second module of this learning path, you created a web app where a basket
 
 In the next two modules of this learning path, you'll explore how to build a fan view of this same web app by using Mixed Reality.
 
-Your Mixed Reality experience will feature 16 members of the Tune Squad in their full Tune Squad uniform. Whether you're using BabylonJS, a web-based framework, or the Microsoft Mixed Reality Toolkit, a Unity-based framework, you'll build a Mixed Reality experience for the first time!
+Your Mixed Reality experience will feature 16 members of the Tune Squad in their full Tune Squad uniform. Whether you're using Babylon.js, a web-based framework, or the Microsoft Mixed Reality Toolkit, a Unity-based framework, you'll build a Mixed Reality experience for the first time!
 
 The best part? You don't need a Mixed Reality headset to complete either of the following modules.
 
