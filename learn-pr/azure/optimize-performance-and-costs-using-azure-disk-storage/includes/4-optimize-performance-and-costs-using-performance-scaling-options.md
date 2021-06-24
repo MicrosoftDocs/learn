@@ -23,7 +23,6 @@ At the time of writing of this content, Azure supports this functionality in pre
 You can change the performance tier of the disk by using the Azure command-line interface (Azure CLI) or the Azure portal.
 Use the following commands to change the disk performance tier:
 
-Azure CLI
 
 ```azurecli
 subscriptionId="yourSubscriptionID"
@@ -61,7 +60,6 @@ You can enable on-demand bursting by using PowerShell, Azure CLI, or Azure Resou
 
 Use the following command to create an empty data disk with on-demand bursting:
 
-Azure PowerShell
 
 ```azurepowershell
 Set-AzContext -SubscriptionName "yourSubscriptionName"
