@@ -10,11 +10,11 @@ Your company has important criteria for creating the bot you need to consider. T
 - The test bot should include an existing LUIS app for language understanding. It should be trained to recognize financial industry terms and phrases.
 - The bot will be hosted on the company website.
 - After testing the bot, your team needs to integrate into it several C# libraries to extend its functionality.
-- After testing, you need to integrate the bot with a pre-existing REST-enabled FAQ application.
+- After testing, you need to integrate the bot with a preexisting REST-enabled FAQ application.
 
 ## Consider factors to choose a service
 
-To choose the service you will use, consider these three factors:
+To choose the service you'll use, consider these three factors:
 
 - What informs conversational flow?
 - Where do you publish the bot?
@@ -41,7 +41,7 @@ For the test bot, all development must be performed in a low-code designer that 
 
 ## Why Power Virtual Agents isn't a good choice
 
-The second requirement for the test bot involves integration with a LUIS app. Although Power Virtual Agents does have its own natural language understanding capabilities, it doesn't support direct integration with LUIS in its low-code designer. This is one reason why it's not an appropriate service to use.
+The second requirement for the test bot involves integration with a LUIS app. Although Power Virtual Agents does have its own natural language understanding capabilities, it doesn't support direct integration with LUIS in its low-code designer. This is one reason it's not an appropriate service to use.
 
 A second reason Power Virtual Agents isn't appropriate is because it doesn't fulfill the requirement for code-based integration of the C# libraries your development team requires. 
 

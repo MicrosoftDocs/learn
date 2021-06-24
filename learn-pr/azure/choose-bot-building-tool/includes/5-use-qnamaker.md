@@ -8,11 +8,11 @@ Recall the criteria for creating the bot that should inform your decision-making
 - The test bot should include an existing LUIS app for language understanding. It should be trained to recognize financial industry terms and phrases.
 - The bot will be hosted on the company website.
 - After testing the bot, your team needs to integrate into it several C# libraries to extend its functionality.
-- After testing, you need to integrate the bot with a pre-existing REST-enabled FAQ application.
+- After testing, you need to integrate the bot with a preexisting REST-enabled FAQ application.
 
 ## Consider the QnA Maker service
 
-One of the options you are considering to build the bot is the Bot Framework Composer service. Use the previous list of criteria and the following factors to examine building a bot using QnA Maker.
+One tool you're considering using to build your bot is the <!-- ID/SME> Shouldn't this be the "QnA Maker service" since that's what we're talking about in this unit and the BFC is talked about in the next unit?! --> Bot Framework Composer service. Use the previous list of criteria and the following factors to examine building a bot using QnA Maker.
 
 ### What informs conversational flow?
 
@@ -22,11 +22,11 @@ The first step when you create a bot using QnA Maker is to create a QnA Maker kn
 
 After the knowledge base is published, you can publish a bot based on the knowledge base to an Azure Bot Service bot. You can connect to the bot using Bot Service channels, or publish the bot to an Azure Web App.
 
-One of your company's requirements is that the bot can be hosted on the company website. A bot created with QnA Maker fulfills this requirement, because you can publish it to a web page.
+One of your company's requirements is that the bot can be hosted on the company website. A bot created with QnA Maker fulfills this requirement, because you can publish it to a webpage.
 
 ### Where do you perform development?
 
-You can download the source code of a QnA Maker bot and modify it using your IDE of choice. Since QnA Maker bots can be created using C# source code, your development team could extend the bot functionality in many ways. These might include incorporating the C# libraries that the criteria requires. The bot's code-based design also enables your developers to integrate your bot with the REST-enabled FAQ application. This fulfills another criteria.
+You can download the source code of a QnA Maker bot and modify it using your IDE of choice. QnA Maker bots can be created using C# source code, so your development team could extend the bot functionality in many ways. These might include incorporating the C# libraries that the criteria require. The bot's code-based design also enables your developers to integrate your bot with the REST-enabled FAQ application. This fulfills another criteria.
 
 ## Why QnA Maker isn't a good choice
 

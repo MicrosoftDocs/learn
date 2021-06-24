@@ -8,7 +8,7 @@ With three viable bot-building options (Power Virtual Agents, QnA Maker, and Bot
 
 If you prefer a low-code design interface, compare the three options:
 
-- Power Virtual Agents has a low-code, visual designer. The designer is hosted in a web app that you can use to design your bot. You can use the designer to create your bot, and create and edit topics to govern conversation flow. You can also extend the bot with built-in AI capabilities, entities, variables, and Bot Framework skills.
+- Power Virtual Agents has a low-code, visual designer. The designer is hosted in a web app that you can use to design your bot. You can use the designer to create your bot and create and edit topics to govern conversation flow. You can also extend the bot with built-in AI capabilities, entities, variables, and Bot Framework skills.
 
 - QnA Maker has a portal interface you use to create a bot. You do this after you've created and designed your QnA Maker knowledge base.
 
@@ -43,9 +43,9 @@ If you have specific publishing option requirements, compare the three options:
 
 - Power Virtual Agents bots can be published to a website or the Power Apps portal. You can add Power Virtual Agents bots to Azure Bot Service channels, Microsoft Teams, Facebook, or to mobile or custom apps.
 
-- QnA Maker bots are created as Azure Bot Service bots. You can host them in an Azure Web App, or they can connected to numerous channels, including web chat, Microsoft Teams, Microsoft Outlook, and Slack.
+- QnA Maker bots are created as Azure Bot Service bots. You can host them in an Azure Web App or connect them to numerous channels, including web chat, Microsoft Teams, Microsoft Outlook, and Slack.
 
 - Bot Framework Composer bots are also created as Azure Bot Service bots. You can host them in and Azure Web App, or connect them to numerous channels, including web chat, Microsoft Teams, Microsoft Outlook, and Slack.
   
      > [!NOTE]
-     > Bot Framework Composer bots can also be self-hosted in Internet Information Services (IIS) or other web hosting services as long as the bot has an internet-accessible endpoint and a valid HTTPS certificate.
+     > Bot Framework Composer bots can be self-hosted in Internet Information Services (IIS) or other web hosting services provided it has an internet-accessible endpoint and a valid HTTPS certificate.
