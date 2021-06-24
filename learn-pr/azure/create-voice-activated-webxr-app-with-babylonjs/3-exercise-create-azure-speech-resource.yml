@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-voice-activated-webxr-app-with-babylonjs.exercise-create-azure-speech-resource
 title: Exercise - Create an Azure Speech Resource
-# azureSandbox: true
+azureSandbox: true
 metadata:
   unitType: exercise
   title: "TODO" # user input: module title for browser tab and search results
