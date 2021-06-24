@@ -18,11 +18,11 @@ If necessary, allow Unity to upgrade the project to your installed version.
 
 Next, open the project in Unity.
 
-In the **Project** panel, open the **Scenes** folder. Next, select and open the **PlayerRoster** scene.
+In the **Project** panel, open the **Scenes** folder. Then, select and open the **PlayerRoster** scene.
 
 ![Screenshot of the Unity Project panel, with the Scenes folder highlighted and the PlayerRoster scene highlighted.](../media/unity-scenes.png)
 
-In the **Hierarchy** panel, you should now see the **PlayerRoster** scene. The scene includes the lighting, the **MixedRealityToolkit**, and the **MixedRealityPlayspace**, which contains the camera.
+In the **Hierarchy** panel, you should now see the **PlayerRoster** scene. The scene includes the lighting, **MixedRealityToolkit**, and **MixedRealityPlayspace**, which contains the camera.
 
 ![Screenshot of the Unity Hierarchy panel, with the PlayerRoster scene components highlighted.](../media/player-roster-scene-open.png)
 
