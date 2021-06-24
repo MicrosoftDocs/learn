@@ -1,4 +1,4 @@
-To make Mixed Reality projects, you need some key tools. The two Mixed Reality projects that follow this module in the learning path inspired by *Space Jam: A New Legacy* uses two different frameworks:
+To make Mixed Reality projects, you need some key tools. The two Mixed Reality projects that follow this module in the learning path inspired by *Space Jam: A New Legacy* will use two different frameworks:
 
 - Babylon.js
 - Mixed Reality Toolkit (MRTK)
