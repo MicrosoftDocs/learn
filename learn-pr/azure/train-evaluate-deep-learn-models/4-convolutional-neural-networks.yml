@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.train-evaluate-deep-learn-models.convolutional-neural-networks
+title: Convolutional neural networks
+metadata:
+  title: Convolutional neural networks
+  description: "Convolutional neural networks"
+  ms.date: 01/04/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-convolutional-neural-networks.md)]

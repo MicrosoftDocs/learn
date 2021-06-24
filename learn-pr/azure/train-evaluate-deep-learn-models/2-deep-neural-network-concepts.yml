@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.train-evaluate-deep-learn-models.deep-neural-network-concepts
+title: Deep neural network concepts
+metadata:
+  title: Deep neural network concepts
+  description: "Deep neural network concepts"
+  ms.date: 01/04/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-deep-neural-network-concepts.md)]

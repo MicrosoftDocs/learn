@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.train-evaluate-deep-learn-models.exercise-train-convolutional-neural-network
+title: Exercise - Train a convolutional neural network
+metadata:
+  title: Exercise - Train a convolutional neural network
+  description: "Exercise - Train a convolutional neural network"
+  ms.date: 01/04/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 45
+sandbox: true
+notebook: https://review.docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models/notebooks/02-convolutional-neural-networks.ipynb?branch=pr-en-us-17743
