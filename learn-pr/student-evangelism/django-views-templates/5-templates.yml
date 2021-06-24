@@ -6,7 +6,7 @@ metadata:
   description: Find out how to use templates to dynamically create HTML.
   ms.date: 3/2/2021  
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

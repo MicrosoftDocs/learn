@@ -13,6 +13,8 @@ During the process, you'll:
 > * Update the template to deploy the module to the resource group.
 > * Deploy the template.
 
+This exercise requires that you have permission to deploy subscription-scoped resources. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant. Alternatively, you can skip the deployment steps in this exercise.
+
 ## Create a resource group
 
 1. In Visual Studio Code, open the *main.bicep* file that you created in the earlier exercise.
