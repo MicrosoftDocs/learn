@@ -2,21 +2,19 @@ In this exercise, you'll configure a sample Application to be ready for monitori
 
 ## Introduction
 
-In this exercise, you'll clone a GitHub repository and run a script that sets-up a sample Azure Spring Cloud architecture.
-The script deploys existing well-known sample app PetClinic and is built around small independent services (a few hundred lines of code), running in their own JVM and communicating over HTTP via a REST API.
-
-Azure Spring Cloud is a fully managed service for Spring Boot apps that lets you focus on building the apps that run your business without the hassle of managing infrastructure. Simply deploy your JARs or code and Azure Spring Cloud will automatically wire your apps with the Spring service runtime. Once deployed you can easily monitor application performance, fix errors, and rapidly improve applications.
+In this exercise, you'll clone a Git repository and run a script that sets-up an Azure Spring Cloud architecture.
+The script deploys a well-known PetClinic application and is built around small independent services, communicating over HTTP via a REST API.
 
 ## The sample application
 
-The PetClinic application is decomposed into 4 core microservices. All of them are independently deployable applications organized by business domains.
+The PetClinic application is decomposed into four core microservices. All of them are independently deployable applications organized by business domains.
 
 - Customers service: Contains general user input logic and validation including pets and owners information (Name, Address, City, Telephone).
 - Visits service: Stores and shows visits information for each pets' comments.
 - Vets service: Stores and shows Veterinarians' information, including names and specialties.
-- API Gateway: The API Gateway is a single entry point into the system, used to handle requests and route them to an appropriate service or to invoke multiple services, and aggregate the results. The three core services expose an external API to client. In real-world systems, the number of functions can grow very quickly with system complexity. Hundreds of services might be involved in rendering of one complex webpage.
+- API Gateway: A single entry point into the system, used to handle requests and route them to an appropriate service, and aggregate the results.
 
-## Setup the  sample application
+## Set up the  sample application
 
 Open https://shell.azure.com and run the following to clone the sample repository and open the Monaco code editor:
 
@@ -42,7 +40,7 @@ When you run the above command, a window will pop up with the build in Monaco ed
 
 ## Run the setup script
 
-Next we will run the setup script. The script takes 15-30 minutes to run and includes the creation of an Azure spring Cloud and a MySQL instance to set up the environment for this module's exercises. This sample script also populates some sample data for the monitoring logs, traces, and metrics.
+Next we'll run the setup script. The script takes 15-30 minutes to run and includes the creation of an Azure spring Cloud and a MySQL instance. This sample script also populates some sample data for the monitoring logs, traces, and metrics.
 
 Open Azure Cloud Shell, and run the shell script. Leave the browser window and Azure Cloud Shell open while running. Store the URL it returns as the public endpoint for your environment:
 
@@ -57,18 +55,18 @@ The Navigate to the URL provided by the previous command to open the Pet Clinic 
 > [!TIP]
 > Access the app gateway and customers service from a browser with the Public Url in the format of "https://> <your-app>-api-gateway.azuremicroservices.io".
 
-Verify your apps are installed and registered via the Azure Portal.
+Verify your apps are installed and registered via the Azure portal.
 
-- Open the Azure Portal
+- Open the Azure portal
 - Select "Azure Spring Cloud" from the list of Azure services
 - Select your Azure Spring Cloud instance
-- On the right hand side select "Apps" under settings
+- On the right-hand side, select "Apps" under settings
 - Verify all the apps are running and registered
 
 ![App selection](../media/3-app-selection.jpg)
 
-- On the left hand side select the "api-gateway" app
-- The URL for your app is listed on the left hand side properties as "URL"
+- On the left-hand side, select the "api-gateway" app
+- The URL for your app is listed on the left-hand side properties as "URL"
 
 ![API gateway URL](../media/3-gateway-url.jpg)
 
