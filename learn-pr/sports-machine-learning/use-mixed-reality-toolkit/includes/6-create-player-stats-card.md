@@ -1,4 +1,4 @@
-Now that you've created a button for the player, the next step is to create a card that appears when the player button is pressed. The card will display the player's stats provided in the JSON file.
+Now that you've created a button for the Tune Squad player, the next step is to create a card that appears when the player button is pressed. The card will display the player's stats provided in the JSON file.
 
 ## Create a container for the stats card
 

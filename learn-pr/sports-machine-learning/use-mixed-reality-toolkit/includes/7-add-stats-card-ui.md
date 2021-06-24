@@ -1,4 +1,4 @@
-The stats card contains the player's name and PER. You'll need a text object for each label, and a text object for the respective values. The configuration for each text object is the same, except where the text objects are positioned. Therefore, you can create one text object, configure, and then duplicate for the remaining text objects. After all the necessary text objects are created, you can reposition each one.
+The stats card contains the Tune Squad player's name and PER. You'll need a text object for each label, and a text object for the respective values. The configuration for each text object is the same, except where the text objects are positioned. Therefore, you can create one text object, configure, and then duplicate for the remaining text objects. After all the necessary text objects are created, you can reposition each one.
 
 1. In the **Hierarchy** window, right-click the **Background** object and select **3D Object** > **Text - TextMeshPro**. Ensure that the **Text (TMP)** object is created as a child of the **Background** object.
 

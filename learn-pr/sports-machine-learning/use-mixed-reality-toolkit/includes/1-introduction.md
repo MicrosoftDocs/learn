@@ -10,9 +10,6 @@ You can reuse prefabs in your app. Prefabs store a `GameObject`, complete with a
 
 In this module, you'll create your own button prefab, configured with UI that pulls data from a JSON file. You'll also customize an MRTK button prefab for additional app functionality.
 
-> [!TIP]
-> This module is part of a multimodal learning experience. [Follow along with a video walk-through of the module in a new tab](https://aka.ms/LearnWithDrG/Basketball/Video6?azure-portal=true).
-
 © 2021 Warner Bros. Ent. All Rights Reserved.
 
 ## Learning objectives
