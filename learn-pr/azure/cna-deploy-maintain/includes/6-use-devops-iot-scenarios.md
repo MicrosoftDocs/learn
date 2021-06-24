@@ -1,53 +1,53 @@
-﻿Now that you've implemented a fully functional CI/CD pipeline that deploys a cloud-native application to an AKS cluster, you want to explore the use of DevOps principles in IoT scenarios. To accomplish this, you decide to test Azure Pipelines, which offers tight integration with Azure IoT Edge.
+﻿Now that you've implemented a fully functional CI/CD pipeline that deploys a cloud-native application to an AKS cluster, you want to explore DevOps principles in IoT scenarios. To accomplish this, you decide to test Azure Pipelines, which offers tight integration with Azure IoT Edge.
 
 ## What is IoT Edge?
 
-Azure IoT Edge is a managed service that provides the ability to deploy and manage containerized workloads on cross-platform IoT devices. Such workloads benefit from cloud intelligence by using services such as Azure Machine Learning and Azure Cognitive Services. You can build Azure IoT Edge solutions by using a wide range of programming languages, including C#, Node.js, Python, Java, or C, and package your code as Windows or Linux containers.
+*Azure IoT Edge* is a managed service that helps you deploy and manage containerized workloads on cross-platform IoT devices. Workloads like this benefit from cloud intelligence by using services such as Azure Machine Learning and Azure Cognitive Services. You can build Azure IoT Edge solutions by using a wide range of programming languages including C#, Node.js, Python, Java, or C. You can also package your code as Windows or Linux containers.
 
 ## How to apply DevOps principles in IoT Edge scenarios
 
-The same rationale that favors the use of DevOps in regard to cloud-native applications applies to IoT apps. While the choice of the DevOps solution is mainly a matter of preference, Azure Pipelines simplify the task of authoring CI/CD pipelines by providing the built-in Azure Iot Edge task, which includes support for building and deploying Azure IoT Edge images.
+The same rationale that favors using DevOps for cloud-native applications applies to IoT apps. Choosing DevOps is mainly a matter of preference. However, Azure Pipelines simplify the task of authoring CI/CD pipelines by providing the built-in Azure IoT Edge task. This task includes support for building and deploying Azure IoT Edge images.<!-- ID/SME: Please verify this edit. I tried breaking up the sentences for Acrolinx but I'm not certain the meaning is still the same. -->
 
 When authoring Azure Pipelines, you have a choice between using the classic or YAML-based approach:
 
-- With the classic approach, you rely on the visual designer included in the Azure DevOps web-based portal to define a build pipeline that builds your code, tests it, and publishes resulting artifacts. You also use a similar graphical interface to define a release pipeline that consumes and deploys these artifacts to deployment targets. Neither of these pipelines resides in the code repository, but instead, both are hosted by Azure Pipelines.
-- With the YAML-based approach, your pipeline takes the form of a YAML-formatted file, which, by default, resides in the same repository as the code used to build artifacts. You can define the build and deployment within the same file. Because the pipeline is part of your code, you benefit from the version control functionality, which allows you to track pipeline changes and simplify the identification of potential issues related to these changes.
+- With the classic approach, you rely on the visual designer included in the Azure DevOps web-based portal to define a build pipeline that builds your code, tests it, and publishes resulting artifacts<!-- ID/SME: Can we shorten or break up this sentence? Acrolinx doesn't like it. -->. You also use a similar graphical user interface (GUI) to define a release pipeline that consumes and deploys these artifacts to deployment targets. Neither of these pipelines are in the code repository, but instead are hosted by Azure Pipelines.
+- With the YAML-based approach, your pipeline takes the form of a YAML-formatted file that by default is in the same repository as the code used to build artifacts. You can define the build and deployment within the same file. Because the pipeline is part of your code, you get the version control functionality, which allows you to track pipeline changes. It also simplifies identifying potential issues related to these changes.
 
-When you plan a pipeline, you usually begin by identifying its stages. Typically, a stage maps to an environment, but this isn't required. In the context of Azure Pipelines, an environment represents one or more deployment targets, such as groups of development, testing, and production Azure App Service instances.
+When you plan a pipeline, you usually begin by identifying its stages. Typically, a stage maps to an environment, but this step isn't required. In Azure Pipelines, an *environment* represents one or more deployment targets, such as groups of development, testing, and production Azure App Service instances.
 
-You can execute parts of the pipeline corresponding to individual stages independently. You can invoke this execution manually or configure it to take place automatically in response to a trigger. Such triggers can be based on a predefined schedule or an event, such as a repository commit (in case of CI) or successful completion of the build process (in case of CD).
+You can execute parts of the pipeline corresponding to individual stages independently. You can invoke this execution manually or configure it to take place automatically in response to a trigger. You can base triggers either on a predefined schedule, or an event. Events might be a repository commit (if there's CI) or successful completion of the build process (if there was CD).<!-- ID/SME: Can we change these sentences so they don't all begin with "You can?" -->
 
 ## How to design CI/CD for Azure IoT Edge applications
 
 You're considering a design that will include the following infrastructure components:
 
-- Azure Repos. One of Azure DevOps components that serves as code repository.
-- Azure Pipelines. One of Azure DevOps components that automates builds and deployments.
-- Azure Container Registry. An Azure-hosted private Docker registry that serves as a store for containerized IoT Edge modules.
-- Azure IoT Hub. An Azure service that provides the ability to connect to, monitor, and manage IoT devices.
-- Azure IoT Hub Device Provisioning Service. A component of Azure IoT hub that facilitates the automatic provisioning of IoT devices.
+- Azure Repos. Azure Repos is one of Azure DevOps components that serves as code repository.
+- Azure Pipelines. Azure Pipelines is one of Azure DevOps components that automates builds and deployments.
+- Azure Container Registry. An Azure Container Registry is an Azure-hosted private Docker registry that serves as a store for containerized IoT Edge modules.
+- Azure IoT Hub. Azure IoT Hub is an Azure service that enables you to connect to, monitor, and manage IoT devices.
+- Azure IoT Hub Device Provisioning Service. This is a component of Azure IoT hub that facilitates the automatic provisioning of IoT devices.
 
-You intend to deliver the new version of your app across three stages: dev, qa, and production. An Azure build pipeline will test, build, and store the latest version of an IoT app pushed into Azure Repos. Through continuous integration, a successful build will trigger the release pipeline, which will provision the remaining infrastructure components in the target environment and deploy the app into them. To conclude the deployment, the pipeline will invoke a smoke test that checks the following conditions:
+You intend to deliver the new version of your app across three stages: development, quality service, and production. An Azure build pipeline will test, build, and store the latest version of an IoT app pushed into Azure Repos. Through continuous integration, a successful build will trigger the release pipeline. This will in turn provision the remaining infrastructure components in the target environment and deploy the app into them. To conclude the deployment, the pipeline will invoke a smoke test that checks the following conditions:
 
-- The availability of the IoT devices.
-- The connectivity between the IoT device and the IoT hub.
-- The presence of the new deployment manifest on the IoT devices.
-- The online status of the modules specified in the deployment manifest.
+- The availability of the IoT devices
+- The connectivity between the IoT device and the IoT hub
+- The presence of the new deployment manifest on the IoT devices
+- The online status of the modules specified in the deployment manifest
 
-A successful outcome for all of these checks is required for the continuous delivery to the next stage.
+A successful outcome for all these checks is required for the continuous delivery to the next stage.
 
 ## How to implement CI/CD for Azure IoT Edge applications
 
-From the implementation standpoint, the build pipeline will perform the following sequence of actions:
+From the implementation standpoint, the build pipeline will perform the following sequence<!-- ID/SME: If the following items are a sequence that occur in a specific order, they should be numbered and not bulleted. --> of actions:
 
-- Perform unit testing of the newly developed version of the app (the choice of the most suitable task depends on the development framework).
-- Provision an Azure container registry instance or connect to an existing one (by using an Azure Resource group deployment task).
+- Perform unit testing of the newly developed app version. (The choice of the most suitable task depends on the development framework.)
+- Provision an Azure container registry instance or connect to an existing one (by using an Azure Resource group deployment task).<!-- ID/SME: I'm not sure why we have the ending of these tasks in parenthesis. If it's part of how they provision/retrieve/build, etc. can we take them out of their parenthesis? -->
 - Retrieve the credentials necessary to push an image to the Azure container registry instance (by using an Azure CLI task).
-- Build an Azure IoT module image (by using the Azure IoT Edge task).
+- Build an Azure IoT module image (by using the Azure IoT Edge task).<!-- ID/SME: Can we change "the Azure IoT Edge task" to "an Azure IoT...?" If you agree, please replace all four instances in this unit. -->
 - Push the Azure IoT module image (by using the Azure IoT Edge task).
-- Copy files, such as the smoke test script, to the artifact staging directory (by using the Copy Files task).
+- Copy files such as the smoke test script to the artifact staging directory (by using the **Copy Files** task).
 
-The delivery pipeline for each stage will perform the following sequence of actions:
+The delivery pipeline for each stage will perform the following sequence<!-- ID/SME: Same comment about changing the following bulleted items to numbered steps. --> of actions:
 
 - Provision an IoT Edge device (by using an Azure CLI task or an Azure Resource Manager template).
 - Retrieve credentials necessary to pull a module image from the Azure container registry instance (by using an Azure CLI task).
@@ -55,6 +55,7 @@ The delivery pipeline for each stage will perform the following sequence of acti
 - Deploy the module image into Azure IoT Edge device (by using the Azure IoT Edge task).
 - Perform the smoke test (by using an Azure CLI task).
 
-The delivery to the dev stage will include provisioning of an IoT hub. You have the option of using the same hub for subsequent deployments or creating one for each stage. Optionally, you could also implement Azure Application Insights to monitor status and performance of the deployed module.
+The delivery<!-- ID/SME: by what? What delivers it? Is "delivery" the right word, or should it be just "The development stage?" Either way, change "dev" to "development. --> to the dev stage will include provisioning of an IoT hub. You have the option of using the same hub for subsequent deployments or creating one for each stage. Optionally, you could also implement Application Insights to monitor the deployed module's status and performance.
 
     :::image type="content" source="../media/7-azure-devops-iot-pipeline" alt-text="Image illustrating an Azure DevOps pipeline that deploys Azure IoT Edge modules." border="false":::
+<!-- ID/SME: This image text is displaying in the preview doc. -->

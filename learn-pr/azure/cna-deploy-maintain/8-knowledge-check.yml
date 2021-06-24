@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "In the context of GitHub actions, what is the name of the component that represents a standalone command that delivers a desired outcome?"
+  - content: "In the context of GitHub actions, what's the name of the component that represents a standalone command that delivers a desired outcome?"
     choices:
     - content: "job"
       isCorrect: false

@@ -2,7 +2,7 @@
 
 ## What is DevOps?
 
-DevOps has been one of the dominant trends in software lifecycle management over the past several years. Its basic purpose is to facilitate convergence between development and operational practices to optimize the process for developing, deploying, and maintaining software<!-- ID/SME: I'm thinking Acrolinx won't like the length of this sentence. -->. DevOps represents patterns and practices that accelerate software releases to deliver value to the business. It also helps increase the overall stability and reliability of your environment.
+DevOps has been one of the dominant trends in software lifecycle management over the past several years. Its basic purpose is to facilitate<!-- ID/SME: Is there a less formal word we could use instead of "facilitate?" --> convergence between development and operational practices to optimize the process for developing, deploying, and maintaining software<!-- ID/SME: I'm thinking Acrolinx won't like the length of this sentence. -->. DevOps represents patterns and practices that accelerate software releases to deliver value to the business. It also helps increase the overall stability and reliability of your environment.
 
 ## What are the main DevOps components?
 
@@ -30,11 +30,11 @@ Source control, also referred to as *version control*, is the practice of tracki
 
 IaC applies DevOps principles to managing and maintaining services that traditionally are the responsibility of infrastructure and platform teams within an IT organization. These services include compute, networking, and storage components that serve as the basis for software deployment&mdash;the primary focus of development and operations teams. IaC started gaining prominence with the advent of cloud technologies, which practically eliminated dependency on physical, on-premises infrastructures.
 
-IaC uses automation to set up infrastructure services and control their configuration. By using IaC, you can automatically provision AKS clusters into which you can subsequently deploy your containerized apps. This approach offers a range of benefits, including consistency, scalability, agility, and repeatability.
+IaC uses automation to set up infrastructure services and control their configuration. By using IaC, you can automatically provision AKS clusters into which you can then deploy your containerized apps. This approach offers a range of benefits, including consistency, scalability, agility, and repeatability.
 
 There are two ways to implement IaC:
 
-* Declarative. Declarative code defines what the code should accomplish, but not how to achieve the result. When operating in Azure, you can use tools and techniques such as Azure Resource Manager templates for this purpose.
+* Declarative. Declarative code defines what the code should accomplish, not how to achieve the result. When operating in Azure, you can use tools and techniques such as Azure Resource Manager templates for this purpose.
 * Imperative. Imperative code defines both what the program should accomplish and how to achieve the result. When operating in Azure, you can use tools and techniques such as Azure PowerShell, Azure Command-Line Interface (Azure CLI), or Azure SDK for this purpose.
 
 ## What are the benefits of GitHub Actions?
@@ -50,7 +50,7 @@ GitHub Actions consist of the following components:
 * step. A task that can execute one or more actions.
 * action. A standalone command that delivers a desired outcome.
 
-You can configure GitHub Actions to trigger complex workflows whenever a developer commits a new version of source code into a designated repository branch.  You can also configure it to run according to an arbitrary schedule. The result is a reliable and sustainable build and deployment process that increases release cadency without negatively impacting your environment's stability. You can also use GitHub Actions to implement your Azure infrastructure components by using Azure Resource Manager templates.
+You can configure GitHub Actions to trigger complex workflows whenever a developer commits a new version of source code into a designated repository branch.  You can also configure it to run according to an arbitrary schedule. The result is a reliable and sustainable build and deployment process that increases release cadency without negatively impacting your environment's stability. You can also use GitHub Actions to implement your Azure infrastructure components by using Azure Resource Manager templates.<!-- ID/SME: Acrolinx doesn't like us starting sentences with "You," and "You can" every time. -->
 
 > [!NOTE]
 > GitHub Actions take the form of YAML-formatted<!-- ID/SME: Can we change this to "yaml-formatted?" --> files. Their syntax rules are fully documented on GitHub.
