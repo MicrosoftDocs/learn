@@ -7,7 +7,7 @@ In this part, you:
 > [!div class="checklist"]
 > * Install the Azure Pipelines extension for your GitHub repo.
 > * Set up an Azure DevOps project for this module.
-> * Create a CI/CD pipeline triggered by commits to the *master* branch.
+> * Create a CI/CD pipeline triggered by commits to the *main* branch.
 > * Review the pipeline tasks.
 > * Add tasks to run functional tests against the deployment and publish their results.
 > * Save the pipeline to trigger a CI/CD workflow.
@@ -66,7 +66,7 @@ The starter pipeline code provides everything you need to build, test, package, 
 
 ### The CI trigger
 
-The pipeline is configured to run whenever a change is committed to the `master` branch. You can adjust this as needed, such as if you wanted to include (or exclude) runs based on their branch, path, or tag.
+The pipeline is configured to run whenever a change is committed to the `main` branch. You can adjust this as needed, such as if you wanted to include (or exclude) runs based on their branch, path, or tag.
 
 [!code-yml[](code/4-1-azure-pipelines.yml)]
 
