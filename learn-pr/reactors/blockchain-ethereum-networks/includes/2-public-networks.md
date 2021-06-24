@@ -2,9 +2,9 @@ The [Ethereum](https://ethereum.org/?azure-portal=true) protocol is made up of m
 
 ## Overview of the mainnet
 
-The [*mainnet*](https://ethereum.org/en/glossary/#mainnet?azure-portal=true), short for "main network," is the one real public Ethereum blockchain. Applications that are deployed to the mainnet can exchange and use information and interact with one another.
+The [*mainnet*](https://ethereum.org/en/glossary/#mainnet?azure-portal=true) (short for "main network"), is the one real public Ethereum blockchain. Applications that are deployed to the mainnet can exchange and use information and interact with one another.
 
-Deployed applications can use the full potential of decentralized blockchain. There's no centralized authority. The mainnet is fully decentralized. 
+Deployed applications can exercise the full capabilities of the decentralized blockchain. There's no centralized authority. The mainnet is fully decentralized. 
 
 Different types of tokens and applications might be deployed to the mainnet. After transactions are deployed on the mainnet, they're immutable and can't be changed. 
 
@@ -100,17 +100,20 @@ Here are some common [Ethereum clients](https://ethereum.org/en/developers/docs/
 
 - [Geth client](https://geth.ethereum.org/?azure-portal=true)
 
-    Go Ethereum (also called *Geth*) is one of the original implementations of the Ethereum protocol. Currently, it's the most widespread client. It has the biggest user base and offers numerous tools for users and developers. 
+    Go Ethereum (also called *Geth*) is one of the first implementations of the protocol. This client has the largest user base and is the most commonly used. Geth offers a wide variety of tools for both blockchain developers and users. 
 
-    Geth is written in Go. It's fully open source and is licensed under GNU Lesser General Public License (LGPL) version 3.
+    The Geth client is written in Go and is open source. It's licensed under GNU Lesser General Public License (LGPL) version 3.
 
 - [OpenEthereum](https://openethereum.github.io/?azure-portal=true)
 
-    The goal of OpenEthereum is to be the fastest, lightest, and most secure Ethereum client. OpenEthereum is written in  the Rust programming language. It's licensed under GNU General Public License (GPL) version 3. You can use it for all of your Ethereum needs.
+    The OpenEthereum client is useful for all work with the protocol. It simplifies tasks like customization, product integration, data storage, and memory management. It aims to be the most lightweight, fast, and secure of all the Ethereum clients.
+
+    OpenEthereum is written in the Rust programming language. It's licensed under GNU General Public License (GPL) version 3. 
 
 - [Nethermind](https://nethermind.io/?azure-portal=true)
 
     Nethermind provides the world's fastest .NET Core Ethereum client and P2P data marketplace. It offers consulting services for developers of Ethereum blockchain solutions.
+
 
 ### APIs
 
@@ -118,11 +121,11 @@ Here are some common Ethereum APIs:
 
 - [Infura](https://infura.io/?azure-portal=true)
 
-    The Infura API suite provides instant access over HTTPS and WebSockets to the Ethereum and IPFS networks. Use its simple, intuitive interface to connect to the endpoints of all testnets. Infura supports both *Truffle Suite* and the *Visual Studio Code Blockchain development kit for Ethereum*.
+    The Infura API suite provides instant access over HTTPS and WebSockets to the Ethereum and IPFS networks. Use this intuitive interface to connect to the endpoints of all testnets. Infura supports both *Truffle Suite* and the *Visual Studio Code Blockchain development kit for Ethereum*.
 
 - [MetaMask](https://metamask.io/?azure-portal=true)
 
-    When you deploy to either a testnet or the mainnet, the MetaMask client provides a robust interface and wallet that connects to and interacts with Ethereum blockchains.
+    When you deploy to a testnet or the mainnet, the MetaMask client provides a robust interface and wallet that connects to and interacts with Ethereum blockchains.
 
     Using MetaMask to send ether and tokens on a testnet is straightforward. The client provides an easy interface to select and use different Ethereum networks. When you need to interact with development networks, MetaMask simplifies connecting to localhost 8545 or custom RPC so you can connect with Ganache and Truffle. Similarly, MetaMask has predefined connections to the public testnets and the mainnet. 
 
