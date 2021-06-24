@@ -12,4 +12,4 @@ In this module, you will create the core components of this requested applicatio
 
 ## What is the main goal?
 
-By the end of this module, you will be able to build and deploy a voice activated BabylonJS WebXR application.
+By the end of this module, you will be able to build and deploy a voice activated Babylon.js WebXR application.
