@@ -1,8 +1,22 @@
 In this exercise, you'll configure a sample Application to be ready for monitoring. Later, you'll access the collected monitoring data and view it in the Azure portal.
 
-## Access the sample application
+## Introduction
 
-In this exercise, you'll clone a GitHub repository that contains all the code for Monitoring.
+In this exercise, you'll clone a GitHub repository and run a script that sets-up a sample Azure Spring Cloud architecture.
+The script deploys existing well-known sample app PetClinic and is built around small independent services (a few hundred lines of code), running in their own JVM and communicating over HTTP via a REST API.
+
+Azure Spring Cloud is a fully managed service for Spring Boot apps that lets you focus on building the apps that run your business without the hassle of managing infrastructure. Simply deploy your JARs or code and Azure Spring Cloud will automatically wire your apps with the Spring service runtime. Once deployed you can easily monitor application performance, fix errors, and rapidly improve applications.
+
+## The sample application
+
+The PetClinic application is decomposed into 4 core microservices. All of them are independently deployable applications organized by business domains.
+
+- Customers service: Contains general user input logic and validation including pets and owners information (Name, Address, City, Telephone).
+- Visits service: Stores and shows visits information for each pets' comments.
+- Vets service: Stores and shows Veterinarians' information, including names and specialties.
+- API Gateway: The API Gateway is a single entry point into the system, used to handle requests and route them to an appropriate service or to invoke multiple services, and aggregate the results. The three core services expose an external API to client. In real-world systems, the number of functions can grow very quickly with system complexity. Hundreds of services might be involved in rendering of one complex webpage.
+
+## Setup the  sample application
 
 Open https://shell.azure.com and run the following to clone the sample repository and open the Monaco code editor:
 
@@ -59,7 +73,7 @@ Verify your apps are installed and registered via the Azure Portal.
 ![API gateway URL](../media/3-gateway-url.jpg)
 
 Next, navigate to the "Owners" tab and select "Find all owners".
-Confirm sample app is up and running, populated with data and now ready for you to explore.
+Confirm your sample app is up and running, populated with data and now ready for you to explore.
 
 ![Real-time metrics](../media/4-petclinic.jpg)
 
