@@ -42,7 +42,7 @@ In this exercise, you'll:
       # This workflow contains a single job called "build"
       build:
         # The type of runner that the job will run on
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
 
         # Steps represent a sequence of tasks that will be executed as part of the job
         steps:
@@ -103,7 +103,7 @@ Let's work on the jobs you're going to run. In this process, you address both th
 
 GitHub workflows are divided into jobs, and jobs are divided into steps. Each step can have multiple commands and use multiple actions to be executed.
 
-The `jobs` key is already set to run on `ubuntu-latest`, which is the environment where you want this workflow to run.
+The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubuntu-20.04` which is the environment you want this workflow to run in.
 
 1. Rename the `build` key `build_push_image`.
 
@@ -120,7 +120,7 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
 
     jobs:
       build_push_image:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
 
         steps:
           - uses: actions/checkout@v2
@@ -152,7 +152,7 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
 
     jobs:
       build_push_image:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
 
         steps:
           - uses: actions/checkout@v2
@@ -191,7 +191,7 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
 
     jobs:
       build_push_image:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
 
         steps:
           - uses: actions/checkout@v2
@@ -252,7 +252,7 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
 
     jobs:
       build_push_image:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
 
         steps:
           - uses: actions/checkout@v2
@@ -292,7 +292,7 @@ The `jobs` key is already set to run on `ubuntu-latest`, which is the environmen
 
     jobs:
       build_push_image:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-20.04
 
         steps:
           - uses: actions/checkout@v2
