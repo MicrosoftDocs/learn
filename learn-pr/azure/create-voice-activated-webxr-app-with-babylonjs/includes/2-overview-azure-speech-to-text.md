@@ -18,4 +18,4 @@ However, several options exist for customizing the transcription model. You can 
 
 ## Privacy and Security
 
-Azure Speech Services is certified by SOC, FedRAMP, PCI DSS, HIPAA, HITECH, and ISO. Neither audio input or transcription data is logged, and all custom speech data and models are encrypted when saved in storage. You can also view or delete any custom speech data or models at anytime.
+Azure Speech Services is certified by SOC, FedRAMP, PCI DSS, HIPAA, HITECH, and ISO. Both audio input and transcription data are not logged, and all custom speech data and models are encrypted when saved in storage. You can also view or delete any custom speech data or models at any time.
