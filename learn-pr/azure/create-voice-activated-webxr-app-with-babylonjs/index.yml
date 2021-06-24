@@ -20,7 +20,7 @@ prerequisites: |
   - A microphone for capturing audio (can be built in to your computer or external)
   - Visual Studio Code
   - NodeJS (v14.17.X or above) and npm (v6.14.X or above) installed on your computer
-  - Basic familiarity with the structure of a BabylonJS project
+  - Basic familiarity with Babylon.js (creating a scene, adding meshes to a scene)
   - Basic familiarity with JavaScript
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
