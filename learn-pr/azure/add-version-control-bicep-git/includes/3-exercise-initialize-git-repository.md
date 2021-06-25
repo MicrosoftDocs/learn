@@ -26,11 +26,13 @@ During the process, you'll:
 
 1. Run `git init`
 
-1. Using the Visual Studio Code terminal, execute the following command to re-open Visual Studio Code with your repository's folder loaded:
+1. Using the Visual Studio Code terminal, execute the following command to reopen Visual Studio Code with your repository's folder loaded:
 
    ```bash
-   code -r .
+   code --reuse-window .
    ```
+
+   Visual Studio Code reloads.
 
 ## Add a Bicep file
 
