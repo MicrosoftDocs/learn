@@ -38,13 +38,13 @@ During the process, you'll:
 
 You've been working with Bicep enough that you have built up a collection of files for different scenarios. Here, you add a single Bicep file to your repository, but the same approach can be used when you have more templates to add in the future.
 
-1. Create a subfolder named **deploy**. You can do this using Visual Studio Code's file explorer, or you can use the following command in the Visual Studio Code terminal:
+1. Create a subfolder named *deploy*. You can do this using Visual Studio Code's file explorer, or you can use the following command in the Visual Studio Code terminal:
 
    ```bash
    mkdir deploy
    ```
 
-1. In the **deploy** folder, create a new file called *main.bicep*.
+1. In the *deploy* folder, create a new file called *main.bicep*.
 
 1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
  

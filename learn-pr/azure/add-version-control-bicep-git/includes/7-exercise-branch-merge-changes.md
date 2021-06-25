@@ -14,16 +14,17 @@ TODO
 
 1. Check out the branch by using VS Code
 1. Add another Bicep module
-2. Update **main.bicep** again
-3. Inspect the diff
-4. Commit the change using VS Code
+1. Update *main.bicep* again
+1. Inspect the diff
+1. Commit the change using VS Code
 
 ## Switch branches
 
 1. Check out the main branch by running `git checkout main`
-2. Look at the **main.bicep** file and see the change isn't there
+1. Look at the *main.bicep* file and see the change isn't there
 
 ## Merge your branch
 
 1. From the main branch, run `git merge add-database`
-2. Look at the **main.bicep** file again and see the change is now merged
+
+1. Look at the *main.bicep* file again and see the change is now merged

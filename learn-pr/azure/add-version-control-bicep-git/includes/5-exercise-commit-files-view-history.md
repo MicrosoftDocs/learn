@@ -15,11 +15,11 @@ During the process, you'll:
 ## Add a Bicep module
 
 1. Add a new Bicep module file.
-2. Update **main.bicep** to reference the module.
+2. Update *main.bicep* to reference the module.
 
 ## Compare the difference
 
-1. In VS Code, look at the file diff for **main.bicep** and notice the green/red highlighting etc.
+1. In VS Code, look at the file diff for *main.bicep* and notice the green/red highlighting etc.
 
 ## Commit the updated Bicep code
 
