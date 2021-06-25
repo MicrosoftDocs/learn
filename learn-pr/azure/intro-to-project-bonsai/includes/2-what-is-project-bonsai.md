@@ -57,17 +57,23 @@ The training engine in Bonsai has four components. These are described in the fo
 
 ### What is the Bonsai training curriculum?
 
-The training curriculum (also referred to as goals and objectives) enables you to create goals and define objectives. Use your subject matter expertise to break complex problems into key objectives for the AI to learn. 
+The training curriculum is made up of **goals** and **objectives**. Goals and
+objectives let you use your subject matter expertise to break complex problems
+into key objectives for the AI to learn. 
 
-> [!TIP]
-> Use Inkling to encode those objectives as goals and objectives.
+Goals are a high-level specification of what you want the system to
+learn. They encapsulate your intentions for the AI without having to craft
+explicit reward functions or early termination definitions. Objectives are 
+directives like "avoid" and "minimize" that the training engine uses to direct
+and judge how well the AI is learning. 
 
 :::image type="content" source="../media/training-curriculum.png" alt-text="The same graphic is displayed that highlights the training curriculum section..":::
 
-Goals are a high-level specification of what you want the system to learn. They encapsulate your intentions for the AI without having to craft reward functions and early termination definitions.
-
-> [!NOTE]
-> Inkling code defines what (and how) you want to teach your AI. An expression in Inkling code is any syntactic entity that can be evaluated to determine its value including comments, identifies, keywords, literals, and operators.
+Bonsai uses a proprietary language called Inkling to encode goals and
+objectives. Inkling code defines what (and how) you want to teach your AI. An
+expression in Inkling code is any syntactic entity that can be evaluated to
+determine its value including comments, identifies, keywords, literals, and
+operators.
 
 
 
@@ -106,6 +112,5 @@ Using the Bonsai platform helps simplify machine teaching so you can train and d
    - In the cloud
    - At the edge
    - On-premises
-
 
 
