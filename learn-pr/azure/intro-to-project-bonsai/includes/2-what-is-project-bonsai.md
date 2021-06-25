@@ -23,7 +23,7 @@ With Bonsai, you can use training simulations to replicate your real-world syste
 
 :::image type="content" source="../media/training-simulation.png" alt-text="Graphic displays a simulator icon flowing into a circular graph that connects the training engine, training curriculum, and integrated simulation. Another arrow flows away from the circular graph to indicate an exported brain. The Training simulator section is highlighted.":::
 
-Your training simulations model your real-world processes and change state as the Bonsai brain applies actions. Your training tasks can be fairly basic, like "stand up", or more challenging, like "learn to dance". 
+Training simulations model real-world processes and change state as the Bonsai brain applies actions. Training tasks can be fairly basic, like "stand up", or more challenging, like "learn to dance". 
 
 The following are all domains that use simulations to model the behavior of complex systems:
 
