@@ -14,7 +14,7 @@ By the end of this module, you'll have an understanding of what version control 
 
 ## Prerequisites
 
-You should have:
+You should be familiar with:
 
-- Familiarity with the basic Bicep template structure and syntax, including modules.
-- Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+- Creating and deploying basic Bicep templates, including modules.
+- Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.

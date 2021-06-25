@@ -16,7 +16,7 @@ Git is an open-source version control system. By using Git, you create _reposito
 
 Bicep code is maintained in text files, so it's a great fit for many version control systems. Version control helps a lot with some common scenarios you likely face as you write your Bicep code, such as:
 
-- TODO scenario - making changes and needing to undo
+- TODO scenario - making changes and needing to undo - avoid keeping (copy (1), copy (2), etc)
 - TODO collaborating
 - TODO branching - e.g. making a major change but needing to deploy the current template at the same time
 
@@ -32,7 +32,7 @@ In this module, you'll use two tools to work with your Git repository: Visual St
 
 ### Visual Studio Code
 
-Visual Studio Code is a text editor for Windows, macOS, and Linux. It provides a lot of powerful features to work with Bicep code, as well as other source code and text files. For example, by installing the [Bicep extension for Visual Studio Code](TODO), you get a great editing experience for Bicep with auto-complete, IntelliSense, and suggestions for how your code can be improved.
+Visual Studio Code is a text editor for Windows, macOS, and Linux. It provides a lot of powerful features to work with Bicep code, as well as other source code and text files. For example, by installing the [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), you get a great editing experience for Bicep with auto-complete, IntelliSense, and suggestions for how your code can be improved.
 
 You can write Bicep code using another text editor if you want, but Visual Studio Code is a great choice because it has Bicep support and it integrates with Git.
 
