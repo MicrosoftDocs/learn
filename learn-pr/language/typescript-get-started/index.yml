@@ -5,7 +5,7 @@ metadata:
   description: This module introduces you to the TypeScript language and shows you how to set up a TypeScript development environment.
   ms.date: 02/10/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Get started with TypeScript

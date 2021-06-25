@@ -6,7 +6,7 @@ metadata:
   description: Learn about the use of generic constraints to limit types and check the type of a generic variable by using a type guard.
   ms.date: 02/11/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
