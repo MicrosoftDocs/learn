@@ -15,6 +15,5 @@ You can learn more by reviewing the following articles:
 * [Defining cloud native](https://docs.microsoft.com/dotnet/architecture/cloud-native/definition)
 * [DevOps](https://docs.microsoft.com/dotnet/architecture/cloud-native/devops)
 * [What is GitHub Actions for Azure](https://docs.microsoft.com/azure/developer/github/github-actions)
-* [Automatically deploy to IoT Edge devices](https://docs.microsoft.com/dotnet/architecture/cloud-native/definition)<!-- ID/SMe: This link goes to a page entitled "Defining cloud native."  -->
 * [Continuous integration and continuous deployment to Azure IoT Edge devices (classic editor)](https://docs.microsoft.com/azure/iot-edge/how-to-continuous-integration-continuous-deployment-classic?view=iotedge-2020-11)
 * [Create a CI/CD pipeline for IoT Edge with Azure DevOps Starter](https://docs.microsoft.com/azure/iot-edge/how-to-devops-starter?view=iotedge-2020-11)
