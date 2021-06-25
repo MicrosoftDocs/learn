@@ -31,7 +31,7 @@ quiz:
     - content: "A different ID."
       isCorrect: false
       explanation: "Incorrect. A different ID isn't required to differentiate entities within a query."
-    - content: "It is not possible. You have to look at the query results."
+    - content: "It's not possible. You have to look at the query results."
       isCorrect: false
       explanation: "Incorrect. It is possible to distinguish the different entities when querying."
     - content: "A discriminator property with a static value per entity."
