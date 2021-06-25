@@ -1,11 +1,11 @@
 Your organization is using Azure Virtual Desktop to provide your workforce access to virtualized desktops and apps. Because of the sensitive data your organization works with and your organization's network security requirements, you can't have any unauthorized network traffic in your Azure Virtual Desktop environment. You decided to deploy Azure Firewall to limit outbound network traffic for Azure Virtual Desktop.
 
-You completed the following steps to deploy Azure Firewall to protect an Azure Virtual Desktop session host VM.
+You completed the following steps to deploy Azure Firewall to protect an Azure Virtual Desktop host pool.
 
 **Step 1: Set up the network**
 
 - Created a hub virtual network that includes a subnet for the firewall deployment.
-- Peered the hub virtual network with the virtual network used by Azure Virtual Desktop.  
+- Peered the hub virtual network with the virtual network used by the Azure Virtual Desktop host pool.  
 
 **Step 2: Deployed Azure Firewall**
 
@@ -24,4 +24,5 @@ You completed the following steps to deploy Azure Firewall to protect an Azure V
 
 - [Connect virtual networks with virtual network peering using PowerShell](/azure/virtual-network/tutorial-connect-virtual-networks-powershell)
 - [Virtual network peering overview](/azure/virtual-network/virtual-network-peering-overview)
+- [Office 365 IP Address and URL web service](/microsoft-365/enterprise/microsoft-365-ip-web-service)
 - [How to use Microsoft Edge command-line options to configure proxy settings](/deployedge/edge-learnmore-cmdline-options-proxy-settings)
