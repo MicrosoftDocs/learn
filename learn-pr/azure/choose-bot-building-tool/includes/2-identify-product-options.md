@@ -2,14 +2,14 @@ You must choose a bot-building tool that meets your company's technical requirem
 
 ## What is a bot?
 
-A *bot* provides a conversational interface in websites and applications. You can use a bot to shift simple, repetitive tasks, such as arranging travel or gathering user information, to automated systems that don’t require direct human intervention. At its core, a bot can be thought of as web application with a conversational interface. A user connects to a bot though a channel such as Facebook, Slack, or Microsoft Teams. The bot receives user input and performs relevant tasks based on internal reasoning logic. Task examples include asking the user for additional information or accessing services on behalf of the user.
+A *bot* provides a conversational interface in websites and applications. Use one to shift simple, repetitive tasks to automated systems that don't require human interaction. For instance, a bot could make travel arrangements or gather user information. At its core, a bot is a web application with a conversational interface. A user connects to a bot through a <!-- ID/SME: Is "channel" the correct word here? Wouldn't "app" or "website" be better? And then we should probably not use Facebook. Maybe just say "...such as Microsoft Teams...". --> channel such as Facebook, Slack, or Microsoft Teams. The bot receives user input and performs relevant tasks based on internal reasoning logic. Examples of tasks it can perform include asking users for additional information or accessing services for users.
 
 ### Conversing with a bot
 
-Bots often have natural language understanding capabilities to interpret the user's input to  recognize what the user is asking for or saying. The bot responds to the user to communicate what the bot is doing or has done. Bots typically support numerous configurations and publishing channels like Teams, telephony, and voice assistants. 
+Bots often are able to understand natural language. This ability allows them to interpret a user's input to  recognize what a user is asking for or saying. The bot responds to a user and communicates what it's doing or has done. Bots typically support many configurations and publishing channels, including Teams, telephony, and voice assistants.
 
 > [!NOTE]
-> Depending on the bot's configuration, you can converse with it using text, interactive cards, speech, or a combination of these. Bot interactions can be quick questions and answers, guided conversation flows, or a sophisticated conversation that integrates with external capabilities and AI systems.
+> Depending on the bot's configuration, you can converse with it by using text, interactive cards, speech, or a combination of these. Bot can have quick question-and-answer interactions and guided conversation flows. They also can conduct sophisticated conversations that integrate with external capabilities and AI systems.
 
 ## Bot-creation tools to consider
 
@@ -21,18 +21,18 @@ There are three bot-creation tools examined in this module. Although you can use
 
 ### Power Virtual Agents
 
-You can create powerful chat bots that can answer questions in conversational form by using Power Virtual Agents. The *Power Virtual Agents* web app has a guided, no-code graphical interface you can use to create chat bots. This interface eliminates the need for code-based or developer expertise.
+You can create powerful chat bots that can answer questions in conversational form by using Power Virtual Agents. The *Power Virtual Agents* web app has a guided, no-code graphical interface you can use to create chat bots. The interface eliminates the need for code-based or developer expertise.
 
-Topics inform the bot conversation in Power Virtual Agents. Each topic contains a dialog tree that guides conversation flow. Each topic also has trigger phrases that a user is likely to type. These phrases are matched to a specific topic using built-in natural language understanding. For example, if a user types "Open hours" into your bot, the AI will be able to match that to a topic named Store hours, begin a conversation that asks which store the customer is interested in, and then provide information about the store's hours of operation.
+Topics guide a bot's conversation in Power Virtual Agents. Each topic contains a dialog tree that guides conversation flow. Each topic also has trigger phrases that a user is likely to enter. These phrases are matched to a specific topic using built-in natural language understanding. For instance, consider that a user enters "Open hours" into your bot. The bot's AI can match that to a topic named Store hours and then begin a conversation asking the user which store they're asking about. Ultimately, the boy then provides that store's hours of operation.
 
 > [!TIP]
 > You can extend Power Virtual Agents bot capability with advanced AI features, prebuilt and custom entities, variables, authentication, Power Automate flows for more task automation, and skills created using Bot Framework Composer and/or Bot Framework SDK. (These tools are discussed next.)
 
 ### QnA Maker
 
-*QnA Maker* is an Azure-based question-and-answer service that uses Natural Language Processing to create an elegant conversational layer over your data. It is used to find the most appropriate answer for any input from your custom knowledge base of information.
+*QnA Maker* is an Azure-based question-and-answer service. It uses Natural Language Processing to create an elegant conversational layer over your data. Use QnA Maker to find the most appropriate answer for any input from your custom knowledge base of information.
 
-The QnA Maker portal provides the complete knowledge base authoring experience. You can import documents in their current form to your knowledge base. These documents might include an FAQ, product manual, spreadsheet, or web page. The documents are converted into question and answer pairs. Each pair is analyzed for follow-up prompts and connected to other pairs.
+The QnA Maker portal provides the complete knowledge base authoring experience. You can import documents in their current form to your knowledge base. These documents might include an FAQ, product manual, spreadsheet, or webpage. The documents are converted into question and answer pairs. Each pair is analyzed for follow-up prompts and connected to other pairs.
 
 >[!NOTE]
 > The final markdown format supports rich presentation including images and links.
@@ -41,12 +41,12 @@ Once your knowledge base is edited, you can publish the knowledge base to a work
 
 ### Bot Framework Composer and Azure Bot Service
 
-*Bot Framework Composer* is an open-source, visual IDE for developers to author, test, provision, and manage conversational experiences. It's built on the Bot Framework SDK. It provides a robust visual authoring canvas with built-in dialog and conversation flow functionality. It can also integrate directly with Azure services for language understanding, knowledge bases, and the like. You then can build your logic and configure common integrations from a single design canvas.
+*Bot Framework Composer*, or Composer, is an open-source, visual integrated development environment (IDE) for developers to author, test, provision, and manage conversational experiences. The Bot Framework Composer is built on the Bot Framework SDK. It provides a robust visual authoring canvas with built-in dialog and conversation flow functionality. Composer also integrates directly with Azure services for language understanding, knowledge bases, and the like. You then can build your logic and configure common integrations from a single design canvas.
 
 > [!NOTE]
-> Composer is available as a desktop application for Windows, macOS and Linux. It's also available as a web-based component which you can customize and extend to suit your needs.
+> Composer is available as a desktop application for Windows, macOS and Linux. It's also available as a web-based component that you can customize and extend to suit your needs.
 
-Composer offers a visual design experience. This gives you greater design efficiency. This can make it easier for you to model more sophisticated conversational experiences where context switching, interruption, and more natural and dynamic conversation flows are important.
+Composer's visual-design experience provides greater design efficiency. You can model more sophisticated conversational experiences that include context switching, interruption, and more natural and dynamic conversation flows.
 
 >[!TIP]
-> More complex activities such as integrating with dependencies such as REST API can be accomplished by directly modifying the code of the bot using Visual Studio Code or another IDE.
+> Accomplish more complex activities, such as integrating with dependencies including REST API, by directly modifying your bot's code by using Visual Studio Code or another IDE.
