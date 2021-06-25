@@ -25,7 +25,6 @@ roles:
   - ai-engineer
 products:
   - azure
-  - azure-machine-learning
 units:
 - learn.azure.intro-to-project-bonsai.1-introduction
 - learn.azure.intro-to-project-bonsai.2-what-is-project-bonsai
