@@ -18,7 +18,7 @@ To create a dashboard, select **Dashboard** in the Azure portal menu (your defau
 
 You can add a range of tiles and other visualizations to a dashboard, and when viewing metrics for a specific resource in a chart, as described previously, you can add the chart to a new or existing dashboard. In the following image, two charts showing metrics for an Azure Cognitive Services resource have been added to a dashboard.
 
-![Metrics for a Cognitive Services resource](../media/metric-dashboard.png)
+![Metrics in a dashboard](../media/metric-dashboard.png)
 
 > [!NOTE]
 > For more information about dashboards, see [Create a dashboard in the Azure portal](/azure/azure-portal/azure-portal-dashboards) in the Azure documentation.
