@@ -6,7 +6,7 @@ In this unit, you'll create the firewall in its own virtual network. Then you pe
 Create a virtual network that'll acts as the central connectivity point or hub for Azure Firewall.  
 
 1. In the [Azure portal](https://portal.azure.com?azure-portal=true), search for and select **Virtual networks**.
-1. Select **+ New**.
+1. Select **+ Create**.
 1. Enter the following information.
 
     |Field |Value  |
@@ -40,19 +40,20 @@ Connect the hub virtual network with the virtual network used by the host pool b
 
     |Field |Value |
     |---------|---------|
-    |Peering link name    |  firewallVNet-hostVNet   |
-    |Remote Peering link name     |   remote-firewallVNet-hostVNet      |
+    |This virtual network: Peering link name    |  firewallVNet-hostVNet   |
+    |Remote virtual network: Peering link name     |   remote-firewallVNet-hostVNet      |
     |Subscription     | Your subscription        |
     |Virtual network    | hostVNet       |
 
     Use the default values for the rest of the fields.
+1. Select **Add**.
 
 ## Deploy Azure Firewall
 
 Now that you have the virtual networks created and peered, deploy Azure Firewall.
 
 1. In the Azure portal, search for and select **Firewalls**.
-1. Select **+ Add** to create a firewall.
+1. Select **+ Create** to create a firewall.
 1. Enter the following table to configure the firewall.
 
    |Field |Value  |
