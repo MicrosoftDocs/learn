@@ -18,7 +18,7 @@ One thing you might have noticed with the salesOrder container is that it shares
 
 :::image type="content" source="../media/6-sales-orders-customers.png" alt-text="Diagram showing the sales orders and customer models and containers going to a single customer container with both the sales order and customer documents stored in it." border="false":::
 
-First, you need to add a `customerId` property to each customer document. Customers will now have the same value for ID and `customerId`. Next, you need a way to distinguish a sales order from a customer in the container. So you'll add a discriminator property you'll call `type` that has a value of "customer" and "salesOrder" for each entity.
+First, you need to add a `customerId` property to each customer document. Customers will now have the same value for ID and `customerId`. Next, you need a way to distinguish a sales order from a customer in the container. So you'll add a discriminator property you'll call `type` that has a value of `customer` and `salesOrder` for each entity.
 
 :::image type="content" source="../media/6-sales-orders-customers-query.png" alt-text="Diagram that shows logical partitions with sales order and customer documents, and a query for a sales order in the new customer container." border="false":::
 
