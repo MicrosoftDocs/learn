@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.healthbot-language-understanding
+uid: learn.health-bot-language-understanding
 metadata:
   title: Language Understanding in Azure Health Bot
   description: Language Understanding plays a fundamental role in the working of Azure Health Bot. 
@@ -24,13 +24,13 @@ products:
   - vs
 prerequisites: None
 units:
-- learn.healthbot-language-understanding.1-introduction
-- learn.healthbot-language-understanding.2-language-understanding-luis
-- learn.healthbot-language-understanding.3-language-models
-- learn.healthbot-language-understanding.4-knowledge-check-1
-- learn.healthbot-language-understanding.5-create-luis-conversation-app
-- learn.healthbot-language-understanding.6-integrate-luis
-- learn.healthbot-language-understanding.7-knowledge-check-2
-- learn.healthbot-language-understanding.8-summary
+- learn.health-bot-language-understanding.1-introduction
+- learn.health-bot-language-understanding.2-language-understanding-luis
+- learn.health-bot-language-understanding.3-language-models
+- learn.health-bot-language-understanding.4-knowledge-check-1
+- learn.health-bot-language-understanding.5-create-luis-conversation-app
+- learn.health-bot-language-understanding.6-integrate-luis
+- learn.health-bot-language-understanding.7-knowledge-check-2
+- learn.health-bot-language-understanding.8-summary
 badge:
-  uid: learn.healthbot-language-understanding.badge
+  uid: learn.health-bot-language-understanding.badge
