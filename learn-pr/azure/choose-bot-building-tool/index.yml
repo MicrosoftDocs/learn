@@ -3,7 +3,7 @@ uid: learn.azure.choose-bot-building-tool
 metadata:
   moduleType: standard
   title: Choose a bot building tool
-  description: Identify the different tools available from Microsoft that you can use to create bots. Learn about Azure Bot Service, Microsoft Power Visual Agents, QnA Maker, and Bot Framework Composer and Bot Service. 
+  description: Identify the different tools available from Microsoft that you can use to create bots. Learn about Azure Bot Service, Microsoft Power Visual Agents, QnA Maker, and Bot Framework Composer and Azure Bot Service. 
   ms.date: 6/15/2021
   author: jasonkellingtonwaypoint
   ms.author: v-jaske

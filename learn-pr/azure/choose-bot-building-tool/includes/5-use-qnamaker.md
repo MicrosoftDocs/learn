@@ -12,7 +12,7 @@ Recall the criteria for creating the bot that should inform your decision-making
 
 ## Consider the QnA Maker service
 
-One tool you're considering using to build your bot is the <!-- ID/SME> Shouldn't this be the "QnA Maker service" since that's what we're talking about in this unit and the BFC is talked about in the next unit?! --> Bot Framework Composer service. Use the previous list of criteria and the following factors to examine building a bot using QnA Maker.
+One tool you're considering using to build your bot is the QnA Maker service. Use the previous list of criteria and the following factors to examine building a bot using QnA Maker.
 
 ### What informs conversational flow?
 

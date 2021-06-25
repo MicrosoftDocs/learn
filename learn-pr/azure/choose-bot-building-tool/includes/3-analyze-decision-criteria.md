@@ -21,7 +21,7 @@ If you prefer a low-code design interface, compare the three options:
 
 If you require low-code integration with other components, compare the three options:
 
-- Power Virtual Agents offers integration with Bot Framework skills and Power Automate connectors in a low-code environment. You can also modify Power Virtual Agents bots with the Bot Framework Composer, further extending your integration capabilities.
+- Power Virtual Agents offers integration with Bot Framework skills and Power Automate connectors in a low-code environment. You can also modify Power Virtual Agents bots with Bot Framework Composer, further extending your integration capabilities.
 
 - QnA Maker doesn't offer significant integration capabilities in a low-code design environment.
 
@@ -43,9 +43,7 @@ If you have specific publishing option requirements, compare the three options:
 
 - Power Virtual Agents bots can be published to a website or the Power Apps portal. You can add Power Virtual Agents bots to Azure Bot Service channels, Microsoft Teams, Facebook, or to mobile or custom apps.
 
-- <!-- ID/SME: Because this bullet and the next are identical except for the service name, please combine them similar to "QnA Maker *and* Bot Framework Composer bots are created... -->QnA Maker bots are created as Azure Bot Service bots. You can host them in Azure Web App or connect them to many channels, including web chat, Microsoft Teams, Microsoft Outlook, and Slack.
+- QnA Maker bots and Bot Framework Composer bots are created as Azure Bot Service bots. You can host them in Azure Web App or connect them to many channels, including web chat, Microsoft Teams, Microsoft Outlook, and Slack.
 
-- Bot Framework Composer bots are also created as Azure Bot Service bots. You can host them in Azure Web App or connect them to many channels, including web chat, Microsoft Teams, Microsoft Outlook, and Slack.
-  
      > [!NOTE]
-     > Bot Framework Composer bots can be self-hosted in Internet Information Services (IIS) or other web hosting services provided it has an internet-accessible endpoint and a valid HTTPS certificate. <!-- ID/SME: If they're self-hosted in IIS, do they need the internet-accessible endpoint and certificate, or is that just if they're being host in other web services? It's not clear whether the endpoint and certificate are required for both. Also, please break this into two sentences, per Acrolinx. -->
+     > Bot Framework Composer bots can be hosted in Internet Information Services (IIS) or other web hosting services. This requires an internet-accessible endpoint and a valid HTTPS certificate.

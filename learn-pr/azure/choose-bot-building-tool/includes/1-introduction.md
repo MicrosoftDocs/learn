@@ -17,5 +17,5 @@ After completing this module, you should know more about:
 
 To get the best learning experience from this module, you should have:
 
-- Working experience of the Azure Portal<!-- ID/SME: It should be "the Azure portal" (note capitalization). The "Azure Portal" (uppercase "P") is a deprecated term. Please fix globally in the module files, as Acrolinx is flagging it. Thanks! -->.
+- Working experience of the Azure portal.
 - Fundamental knowledge about bot concepts.
