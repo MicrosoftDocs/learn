@@ -2,7 +2,6 @@ Recall that your organization wants to automate customer chat support by using a
 
 ## Chat bot requirements
 
-
 When you're choosing a bot service, a primary consideration should be which bot-creation tool best meets your requirements. Your company's requirements for a chat bot are:
 
 - Bots must be simple to create and manage.
@@ -32,9 +31,9 @@ Extend Power Virtual Agents bot capability by using the Bot Framework SDK. Bot e
 
 ### QnA Maker
 
-*QnA Maker* is an Azure-based Natural Language Processing service that allows you to create a natural conversational layer over your data. It's used to find the most appropriate answer for any input from your custom knowledge base of information.
+Recall that QnA Maker is an Azure-based Natural Language Processing service. Use QnA Maker to create a natural conversational layer over your data. It's used to find the most appropriate answer for any input from your custom knowledge base of information.
 
-The QnA Maker portal provides the complete knowledge base authoring experience. You can import documents in their current form to your knowledge base. These documents might include an FAQ, product manual, spreadsheet, or webpage. The documents are converted into question and answer pairs. Each pair is analyzed for follow-up prompts and connected to other pairs.
+The QnA Maker portal is a complete knowledge base authoring experience. You can import documents in their current form to your knowledge base. These documents might include an FAQ, product manual, spreadsheet, or webpage. The documents are converted into question and answer pairs. Each pair is analyzed for follow-up prompts and connected to other pairs.
 
 >[!NOTE]
 > The final markdown format supports rich presentation including images and links.
@@ -43,12 +42,7 @@ Once your knowledge base is edited, you can publish the knowledge base to a work
 
 ### Bot Framework Composer and Azure Bot Service
 
-*Bot Framework Composer* is an open-source, visual IDE for developers to author, test, provision, and manage conversational experiences. It's built on the Bot Framework SDK. It provides a robust visual authoring canvas with integrated dialog, language-understanding models, knowledge bases and language generation functionality. Implement all these features from a single design canvas. Resulting experiences can then be tested within Bot Framework Composer and provisioned into Azure along with any dependent resources.
-
-> [!NOTE]
-> Bot Framework Composer is available as a desktop application for Windows, macOS and Linux. It's also available as a web-based component that you can customize and extend.
-
-Bot Framework Composer offers a visual design experience. This experience gives you greater design efficiency. It makes it easier for you to model more sophisticated conversational experiences where context switching, interruption, and more natural and dynamic conversation flows are important.
+Bot Framework Composer is a component of Azure Bot Service. Recall that it's an open-source, visual IDE for developers to author, test, provision, and manage conversational experiences.
 
 >[!TIP]
 > More complex activities such as integrating with dependencies such as REST API can be accomplished by directly modifying the code of the bot using Visual Studio Code or another IDE.
