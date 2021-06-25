@@ -41,7 +41,7 @@ Composer offers a visual design experience that makes it easy to model sophistic
 
 ### Bot Framework SDK
 
-*Bot Framework SDK* is a modular set of components for building and extending bots. The Bot Framework SDK is available for C#, JavaScript, Typescript, Python, and Java (preview). The SDK includes tools for various stages of bot development to help you design and build bots. More complex activities such as integrating with dependencies such as Web Services are best suited towards extending your bot with the Bot Framework SDK and code.
+*Bot Framework SDK* is a modular set of components for building and extending bots. The Bot Framework SDK is available for C#, JavaScript, Typescript, Python, and Java (preview). The SDK includes tools for various stages of bot development to help you design and build bots. More complex activities such as integrating with dependencies such as REST Web Services are best suited towards extending your bot with the Bot Framework SDK and code.
 
 ### Bot Framework Emulator
 
