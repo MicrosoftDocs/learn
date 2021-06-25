@@ -13,6 +13,6 @@ You can use the `player_data_final.csv` file that you created to determine the b
 
 And don't forget to watch [_Space Jam: A New Legacy_](https://www.facebook.com/SpaceJamMovie?azure-portal=true) coming Summer 2021!
 
-:::image type="content" source="../media/space-jam-end-card.png" alt-text="Logo for SPACE JAM: A NEW LEGACY.":::
+:::image type="content" source="../media/space-jam-a-new-legacy-end-card.png" alt-text="Logo for SPACE JAM: A NEW LEGACY.":::
 
-© 2020 Warner Bros. Ent. All Rights Reserved.
+© 2021 Warner Bros. Ent. All Rights Reserved.
