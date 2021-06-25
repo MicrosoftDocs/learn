@@ -5,7 +5,12 @@ whether it might benefit your organization.
 
 ## What is low-code AI-powered automation?
 
-Low-code AI solutions enable developers with some level of experience to quickly build apps. Typically these solutions use visual development environments. This helps developers focus on creating the solution rather than focusing on the tools used to create the solution. What this means is that you can use the technology to do what it does best, and let your developers do what they do best. 
+Low-code AI solutions let Engineers and Data Scientists with varying levels of
+development experience successfully build AI-powered control systems. Low-code
+solutions typically use visual development environments in addition to a more
+traditional coding environment. Visual editors let developers focus on creating
+the right solution rather than focusing on the tools used to create the
+solution.
 
 ## Project Bonsai definition
 
