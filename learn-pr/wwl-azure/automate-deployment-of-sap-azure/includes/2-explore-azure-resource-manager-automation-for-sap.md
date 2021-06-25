@@ -1,4 +1,4 @@
-In this unit, you’ll learn about the native Azure tools for using Azure Resource Manager and Azure Resource Manager Templates (ARM templates) to start deploying SAP on Azure infrastructure. ARM templates are an important step on the journey towards understanding how to gain the advantages of infrastructure as code (IaC). These advantages include:
+In this unit, you’ll learn about the native Azure tools for using Azure Resource Manager and Azure Resource Manager Templates to start deploying SAP on Azure infrastructure. Azure Resource Manager templates are an important step on the journey towards understanding how to gain the advantages of infrastructure as code (IaC). These advantages include:
 
 - Consistent configurations
 - Improved scalability
@@ -18,7 +18,7 @@ The Azure CLI cross-platform command-line tool is used to connect to Azure and e
 The [Azure AZ PowerShell module](/powershell/azure/new-azureps-module-az) is a set of cmdlets for managing Azure resources directly from PowerShell and is included in Azure Cloud Shell PowerShell.
  
 > [!NOTE]
-> This module focuses on using Bash for CLI commands and uses Bash for running ARM Templates, and in later units for working with Terraform and Ansible templates.
+> This module focuses on using Bash for CLI commands and uses Bash for running Azure Resource Manager Templates, and in later units for working with Terraform and Ansible templates.
  
 When a user sends a request from any of the Azure tools, APIs, or SDKs, Resource Manager receives the request. It authenticates and authorizes the request. Resource Manager sends the request to the Azure service, which takes the requested action. Because all requests are handled through the same API, you see consistent results and capabilities in all the different tools.
 
@@ -34,12 +34,12 @@ Azure provides four levels of scope: management groups, subscriptions, resource 
 
 You can apply management settings at any of these levels of scope. The level you select determines how widely the setting is applied. Lower levels inherit settings from higher levels. For example, when you apply a policy to the subscription, the policy is applied to all resource groups and resources in your subscription. When you apply a policy on the resource group, that policy is applied to the resource group and all its resources. However, that policy assignment doesn’t apply to other resource groups.
  
-### Azure Resource Manager Templates (ARM templates)
+### Azure Resource Manager Templates
 
-ARM templates use a declarative code syntax that you treat like application code. Treating your infrastructure as code enables you to track changes to your infrastructure requirements, making deployments more consistent and repeatable.
+Azure Resource Manager templates use a declarative code syntax that you treat like application code. Treating your infrastructure as code enables you to track changes to your infrastructure requirements, making deployments more consistent and repeatable.
 
-ARM templates allow you to declare what you intend to deploy without having to write the sequence of programming commands to create it. In an ARM template, you specify the resources and the properties for those resources. Then Azure Resource Manager uses that information to deploy the resources in an organized and consistent manner.
+Azure Resource Manager templates allow you to declare what you intend to deploy without having to write the sequence of programming commands to create it. In an Azure Resource Manager template, you specify the resources and the properties for those resources. Then Azure Resource Manager uses that information to deploy the resources in an organized and consistent manner.
  
-ARM templates are *idempotent*, which means you can deploy the same template many times and get the same resource types in the same state.
+Azure Resource Manager templates are *idempotent*, which means you can deploy the same template many times and get the same resource types in the same state.
 
-Resource Manager orchestrates the deployment of the resources so that they're created in the correct order. When possible, resources will also be created in parallel, so ARM template deployments finish faster than scripted deployments.
+Resource Manager orchestrates the deployment of the resources so that they're created in the correct order. When possible, resources will also be created in parallel, so Azure Resource Manager template deployments finish faster than scripted deployments.

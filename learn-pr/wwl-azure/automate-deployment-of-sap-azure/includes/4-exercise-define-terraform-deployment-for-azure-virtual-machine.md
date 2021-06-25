@@ -1,4 +1,4 @@
-[Hashicorp Terraform](https://www.terraform.io/) is an open-source tool for provisioning and managing cloud infrastructure. It codifies infrastructure in configuration files that describe the topology of cloud resources. These resources include virtual machines, storage accounts, and networking interfaces. The Terraform CLI provides a simple mechanism to deploy and version the configuration files to Azure. Understanding Terraform deployment, along with ARM templates and Ansible software install and configuration, will assist you in adopting Infrastructure as Code (IaC) practices like those provided in the **SAP on Azure Deployment Automation Framework**. The [SAP on Azure Deployment Automation Framework repository](https://github.com/Azure/sap-hana/blob/beta/documentation/SAP_Automation_on_Azure/table_of_contents.md) contains tooling designed to enable automated deployment for SAP on Azure. 
+[Hashicorp Terraform](https://www.terraform.io/) is an open-source tool for provisioning and managing cloud infrastructure. It codifies infrastructure in configuration files that describe the topology of cloud resources. These resources include virtual machines, storage accounts, and networking interfaces. The Terraform CLI provides a simple mechanism to deploy and version the configuration files to Azure. Understanding Terraform deployment, along with Azure Resource Manager templates and Ansible software install and configuration, will assist you in adopting Infrastructure as Code (IaC) practices like those provided in the **SAP on Azure Deployment Automation Framework**. The [SAP on Azure Deployment Automation Framework repository](https://github.com/Azure/sap-hana/blob/beta/documentation/SAP_Automation_on_Azure/table_of_contents.md) contains tooling designed to enable automated deployment for SAP on Azure. 
  
 ## Using Terraform
 
@@ -8,7 +8,7 @@ To follow along in this section, you will need to sign in to the Azure CLI with 
 
 To sign into an Azure subscription using a service principal, you first need access to a service principal. If you already have a service principal, you can skip this part of the section.
 
-Automated tools that deploy or use Azure services such as Terraform should always have restricted permissions. Instead of signing in to applications as a fully privileged user, Azure offers service principals. There are many options when [creating a service principal with the Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli). We'll use [az ad sp create-for-rbac](/cli/azure/ad/sp#az_ad_sp_create_for_rbac) to create a service principal with a Contributor role. The Contributor role (the default) has full permissions to read and write to an Azure account. 
+Automated tools that deploy or use Azure services such as Terraform should always have restricted permissions. Instead of signing in to applications as a fully privileged user, Azure offers service principals. There are many options when [creating a service principal with the Azure CLI](/cli/azure/create-an-azure-service-principal-azure-cli). We'll use [az ad sp create-for-rbac](https://docs.microsoft.com/cli/azure/ad/sp?#az_ad_sp_create_for_rbac) to create a service principal with a Contributor role. The Contributor role (the default) has full permissions to read and write to an Azure account. 
  
 ### Create an Azure service principal 
 
@@ -20,7 +20,7 @@ az ad sp create-for-rbac --role Contributor --scopes /subscriptions/{SubID}
 
 > [!IMPORTANT]
 > - Upon successful completion, `az ad sp create-for-rbac` displays several values. The `name`, `password`, and `tenant` values are used in the next step.
-> - The password can't be retrieved if lost. As such, you should store your password in a safe place. If you forget your password, you'll need to [reset the service principal credentials](/cli/azure/create-an-azure-service-principal-azure-cli#reset-credentials).
+> - The password can't be retrieved if lost. As such, you should store your password in a safe place. If you forget your password, you'll need to [reset the service principal credentials](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli#reset-credentials).
  
 ### Sign in using an Azure service principal
 
@@ -34,7 +34,7 @@ az login --service-principal -u <service_principal_name> -p "<service_principal_
 
 Terraform language is designed to be readable.
 
-![Example of ARM Template Syntax vs HCL Syntax.](../media/example-of-arm-template-syntax-hcl-syntax.png)
+![Example of Azure Resource Manager Template Syntax vs HCL Syntax.](../media/example-azure-resource-manager-template-syntax-hcl-syntax.png)
 
 ## Sample Linux VM Azure Terraform configuration file
 
