@@ -26,7 +26,7 @@ In this exercise, you'll complete the steps needed to run a DR drill using a rec
     | Name | asr-dr-drill |
     | Source | West US 2 |
     | Target | East US 2 |
-    | Allow items with deployment model | From the dropdown list, se;ect **Resource Manager**. |
+    | Allow items with deployment model | From the dropdown list, select **Resource Manager**. |
 
 1. Select the **Select items** link. The **Select items** pane appears.
 
