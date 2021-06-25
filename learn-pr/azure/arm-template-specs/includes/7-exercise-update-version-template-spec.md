@@ -30,7 +30,7 @@ During the process, you'll:
 
 1. Update the *main.bicep* file to include the following changes:
 
-   :::code language="plaintext" source="code/7-template.bicep" highlight="9-22, 45-70" :::
+   :::code language="bicep" source="code/7-template.bicep" highlight="9-22, 45-70" :::
 
 1. Save the file.
 
