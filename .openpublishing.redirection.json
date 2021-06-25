@@ -7979,6 +7979,16 @@
       "source_path": "learn-pr/wwl-data-ai/create-manage-cognitive-services/5-monitor-services-using-diagnostics-logging.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/create-manage-cognitive-services/5-use-sdk",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/secure-cognitive-services/2-keys.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/secure-cognitive-services/2-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/secure-cognitive-services/4-manage-privacy-policies.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/secure-cognitive-services/4-exercise-secure-cognitive-services",
+      "redirect_document_id": false
     }
   ]
 }
