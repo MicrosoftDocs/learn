@@ -4,7 +4,7 @@ The **translate** function supports numerous parameters that affect the output.
 
 In written English (using Latin script), spaces are used to separate words. However, in some other languages (and more specifically, scripts) this is not always the case.
 
-For example, translating "Cognitive Services" from **en** (English) to **zh** (Simplified Chinese) produces the result "认知服务", and its difficult to understand the relationship between the characters in the source text and the corresponding characters in the translation. To resolve this problem, you can specify the **includeAlignment** parameter with a value of **true** to produce the following result:
+For example, translating "Cognitive Services" from **en** (English) to **zh** (Simplified Chinese) produces the result "认知服务", and it's difficult to understand the relationship between the characters in the source text and the corresponding characters in the translation. To resolve this problem, you can specify the **includeAlignment** parameter with a value of **true** to produce the following result:
 
 ```JSON
 [
