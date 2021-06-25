@@ -53,7 +53,7 @@ The chart below shows `gateway-requests` (Spring Cloud Gateway), `hikaricp_conne
 
 To create a metric chart, open the Metrics tab and follow these steps:
 
-1. Ensure your Azure Spring Cloud is selected in the resource scope picker. The resource should already be populated if you opened metrics explorer from the resource's menu.
+1. Ensure your Azure Spring Cloud is selected in the resource scope picker. It will already be populated if you opened metrics explorer from the resource's menu.
 
 2. Next, under **namespaces**, select the **azure.applicationinsights** namespace. The namespace is just a way to organize metrics so that you can easily find them.
 
@@ -72,25 +72,30 @@ To create a metric chart, open the Metrics tab and follow these steps:
 
 ![add metrics](../media/7-custom-third.jpg)
 
-5. Next, on the top right hand side, change the graph type to **Area Chart**
+5. Next, on the top right-hand side, change the graph type to **Area Chart**
 
 ![add metrics](../media/7-custom-area.jpg)
 
-6. Your final graph will show the counts in the last 24 hours for each of the pet, vet and owner microservices:
+6. Your final graph will show the counts in the last 24 hours for each of the pet, vet, and owner microservices:
 
 ![custom metrics](../media/7-custom.jpg)
 
 ### Availability
 
-You can use the Availability Test feature in Application Insights to monitor the availability of applications in Azure Spring Cloud. This is a recurring test to monitor the availability and responsiveness of applications at regular intervals from anywhere across the globe. It can proactively alert you if your applications are not responding or if they respond too slowly.
+You can use the Availability Test feature in Application Insights to monitor the availability of applications in Azure Spring Cloud. This feature is a recurring test to monitor the availability and responsiveness of applications at regular intervals. It can proactively alert you if your applications aren't responding or if they respond too slowly.
 
 ![availability](../media/4-petclinic-microservices-availability.jpg)
 
 ### Live Metrics
 
-Navigate to the Live Metrics blade where you can see live metrics practically in real time, within only one second:
+When you deploy a new version of your web app, you want to know immediately its effect on performance. Have response times improved or worsened, or is it showing failures? Watch Live Metrics Stream in Application Insights while your deployment is happening, and you’ll see the effect immediately. If there are problems, you could back out the deployment before too many users are affected.
+On the left, navigate to **Live Metrics** where you can see live metrics practically in real time, within only one second:
 
 ![Live Metrics](../media/4-petclinic-microservices-live-metrics.jpg)
+
+Scroll down the metrics to see the metrics for each microservice:
+
+![Server Metrics](../media/7-live-metrics-servers.jpg)
 
 ## Next steps
 
