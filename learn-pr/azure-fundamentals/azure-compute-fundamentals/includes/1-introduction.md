@@ -18,7 +18,7 @@ After completing this module, you'll be able to describe the benefits and usage 
  -  Azure Container Instances
  -  Azure Kubernetes Service
  -  Azure Functions
- -  Azure Virtual Desktop
+ -  Windows Virtual Desktop
 
 ## Prerequisites
 
