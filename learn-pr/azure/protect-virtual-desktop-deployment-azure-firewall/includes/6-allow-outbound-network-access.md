@@ -61,6 +61,7 @@ Create a network rule collection and add the following rules:
 
 You might need to create more Azure Firewall application and network rules when you want to allow users outbound internet access.
 
-If you have a well defined list of allowed destinations like Microsoft 365, use Azure Firewall application and network rules to route end-user traffic directly to the destinations.
+If you have a well defined list of allowed destinations like Microsoft 365, use Azure Firewall application and network rules to route end-user traffic directly to the destinations. For information about the Office 365 IP address and URL web service, see the resources listed at the end of this module.
 
-To filter outbound user Internet traffic by using an existing on-premises secure web gateway, configure web browsers or other applications that run on the Azure Virtual Desktop host pool with an explicit proxy configuration.
+To filter outbound user Internet traffic by using an existing on-premises secure web gateway, configure web browsers or other applications that run on the Azure Virtual Desktop host pool with an explicit proxy configuration. For example, use Microsoft Edge command-line options to configure proxy settings. These proxy settings only influence your end-user Internet access, allowing the Azure Virtual Desktop service outbound traffic directly through Azure Firewall. For more information, see the resources listed at the end of this module.
+
