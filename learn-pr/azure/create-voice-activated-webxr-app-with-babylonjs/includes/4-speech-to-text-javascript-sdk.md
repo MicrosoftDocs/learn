@@ -4,18 +4,6 @@ Recall that the amusement park application needs to be served on the web, and yo
 
 Here, we'll go through the important classes and functions (from the SDK) for setting up and using the Azure Speech-to-text service in the amusement park application.
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
-
 ## SpeechConfig
 
 The SpeechConfig class contains the necessary configuration data needed to connect to the Speech service in Azure. For example, you can create a SpeechConfig instance through the following code:
@@ -46,7 +34,7 @@ The SpeechRecognizer class performs the speech-to-text transcription action. To 
 const recognizer = new SpeechRecognizer(speechConfig, audioConfig);
 ```
 
-After the SpeechRecognizer instance is initialized, we can start the recognition session by calling this method:
+After the SpeechRecognizer instance is initialized, we can start to perform speech-to-text on the audio input by calling this method:
 
 ```javascript
 recognizer.startContinuousRecognitionAsync();
@@ -64,6 +52,17 @@ While the SpeechRecognizer is listening for input, we can retrieve the transcrib
 recognizer.recognized = async (s: Recognizer, e: SpeechRecognitionEventArgs) => {
     if (e.result.reason == ResultReason.RecognizedSpeech) {
         console.log(e.result.text); // e.result.text contains the transcription as a string (includes punctuation)
+    }
+};
+```
+
+The *recognized* event handler is triggered when the recognition result, or the transcribed text, is finalized. To handle the case that an error occurred during the recognition, we can implement the *canceled* event handler:
+
+```javascript
+recognizer.canceled = (s: Recognizer, e: SpeechRecognitionCanceledEventArgs) => {
+    if (e.reason == CancellationReason.Error) {
+        console.log(`"CANCELED: ErrorCode=${e.errorCode}`);
+        console.log(`"CANCELED: ErrorDetails=${e.errorDetails}`);
     }
 };
 ```
