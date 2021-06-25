@@ -1,39 +1,8 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+The Azure Speech JavaScript SDK allow developers to integrate Azure Speech services into their applications more efficiently.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+In the amusement park application, we need to use a speech-to-text service to recognize a magical spell. Once the spell is recognized, the application needs to render the dragon 3D models to create the experience of "summoning the dragon."
 
-    Heading: none
-
-    Example: "A storage account represents a collection of settings that implement a business policy."
-
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
-
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
-
-    Goal: Describe the part of the scenario covered in this exercise
-
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
-
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
-
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
-
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
-
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
-
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
-
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
-
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+Here, you will use the Azure Speech JavaScript SDK to integrate the Azure Speech-to-text service into the amusement park application.
 
 <!-- 4. Chunked steps -------------------------------------------------------------------------------------
 
@@ -56,23 +25,58 @@ TODO: describe the end-state
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
+## Clone the Github Repository
+
+Recall that your teammate has already set up a Babylon.js project with all of the necessary assets imported into the Babylon.js scene. You have to clone the repository that contains their work so far.
+
+1. Goto [this Github repository](https://github.com/JING1201/learn-magic-template) and select the **Code** dropdown.
+
+    (screenshot)
+1. Copy the **URL of the repository** under the **HTTPS** tab.
+1. Open Visual Studio Code in a new window.
+1. Select the Settings button in the bottom left of the window, and then select **Command Palette** from the options.
+1. After the Command Palette pops up, type in "git" and select the **Git: Clone** command.
+1. Paste the URL of the Github repository.
+1. Select the folder where you would like to save the repository. The root folder of the repository becomes a subdirectory in the folder you select.
+1. Select open the repository after cloning finishes.
+
+## Install dependencies
+
+You might have noticed that this project is organized to be used with *webpack*, a Javascript module bundler. All of the required dependencies are listed in the *package.json* file. Let's use *npm* to install all of them.
+
+1. Select **Terminal** in the menu of Visual Studio Code, and then select **New Terminal** to create a new terminal.
+1. Within the terminal, make sure that you are in the root folder of the repository.
+1. Use `npm install` to install all dependencies for the project.
+1. You should see a folder named node_modules created in the repository folder.
+
+## Import dependencies
+
+The next thing that you might have noticed is that the source files in this repository have the *.ts* extension, which means that the files are written in TypeScript instead of Javascript. While TypeScript and JavaScript are very similar in nature, TypeScript requires types to be clear for every variable and function parameters.
+
+As a result, you'll need to import every class that is used as a variable or as a function parameter:
+
+1. Navigate to **src/index.ts** in your VSCode window.
+1. Add this import statement at the top of the file:
+
+    ```typescript
+    import { 
+        SpeechConfig, 
+        AudioConfig, 
+        Recognizer, 
+        SpeechRecognizer, 
+        PhraseListGrammar, 
+        SpeechRecognitionEventArgs, 
+        SpeechRecognitionCanceledEventArgs, 
+        ResultReason, 
+        CancellationReason, 
+    } from 'microsoft-cognitiveservices-speech-sdk';
+    ```
+
 1. <!-- Step n -->
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+## Create Speech Recognizer
 
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+## Render dragon when spell is recognized
 
 <!-- 5. Validation chunk -------------------------------------------------------------------------------------
 

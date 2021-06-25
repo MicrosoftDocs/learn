@@ -8,7 +8,7 @@ Here, we'll go through the important classes and functions (from the SDK) for se
 
 The SpeechConfig class contains the necessary configuration data needed to connect to the Speech service in Azure. For example, you can create a SpeechConfig instance through the following code:
 
-```javascript
+```typescript
 const speechConfig = SpeechConfig.fromSubscription(SUBSCRIPTION_KEY, REGION);
 ```
 
@@ -22,7 +22,7 @@ The AudioConfig class contains the configuration data for the audio input source
 
 The line below creates a AudioConfig instance for the microphone:
 
-```javascript
+```typescript
 const audioConfig = AudioConfig.fromDefaultMicrophoneInput();
 ```
 
@@ -30,25 +30,25 @@ const audioConfig = AudioConfig.fromDefaultMicrophoneInput();
 
 The SpeechRecognizer class performs the speech-to-text transcription action. To create an instance of the SpeechRecognizer, pass in the SpeechConfig and AudioConfig instances to the constructor:
 
-```javascript
+```typescript
 const recognizer = new SpeechRecognizer(speechConfig, audioConfig);
 ```
 
 After the SpeechRecognizer instance is initialized, we can start to perform speech-to-text on the audio input by calling this method:
 
-```javascript
+```typescript
 recognizer.startContinuousRecognitionAsync();
 ```
 
 The SpeechRecognizer will continue to listen for input until this method is called:
 
-```javascript
+```typescript
 recognizer.stopContinuousRecognitionAsync();
 ```
 
 While the SpeechRecognizer is listening for input, we can retrieve the transcribed text by defining the event handler of the *recognized* event:
 
-```javascript
+```typescript
 recognizer.recognized = async (s: Recognizer, e: SpeechRecognitionEventArgs) => {
     if (e.result.reason == ResultReason.RecognizedSpeech) {
         console.log(e.result.text); // e.result.text contains the transcription as a string (includes punctuation)
@@ -58,7 +58,7 @@ recognizer.recognized = async (s: Recognizer, e: SpeechRecognitionEventArgs) => 
 
 The *recognized* event handler is triggered when the recognition result, or the transcribed text, is finalized. To handle the case that an error occurred during the recognition, we can implement the *canceled* event handler:
 
-```javascript
+```typescript
 recognizer.canceled = (s: Recognizer, e: SpeechRecognitionCanceledEventArgs) => {
     if (e.reason == CancellationReason.Error) {
         console.log(`"CANCELED: ErrorCode=${e.errorCode}`);
@@ -73,7 +73,7 @@ The PhraseListGrammar class allows us to add specific phrases to improve speech 
 
 Here's how to create a PhraseListGrammar instance and add a phrase to it:
 
-```javascript
+```typescript
 const phraseList = PhraseListGrammar.fromRecognizer(recognizer);
 phraseList.addPhrase("for Ward");
 ```
