@@ -59,6 +59,8 @@ products:
 modules:
 - learn.student-evangelism.predict-basketball-player-efficiency-ratings
 - learn.student-evangelism.optimize-basketball-player-rest-breaks
-- learn.student-evangelism.python-flask-build-ai-web-app
+- learn.sports-machine-learning.mixed-reality-for-sports-fans
+- learn.sports-machine-learning.build-mixed-reality-with-babylonjs
+- learn.sports-machine-learning.use-mixed-reality-toolkit
 trophy:
   uid: learn.optimize-basketball-games-with-machine-learning.trophy
