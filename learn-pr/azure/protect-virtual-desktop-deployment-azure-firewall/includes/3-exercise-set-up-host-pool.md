@@ -1,6 +1,6 @@
 In the accounting firm scenario, your organization is using Azure Virtual Desktop to provide your workforce access to virtualized desktops and apps.
 
-So, in this unit, you create a host pool and add a VM that'll act as a session host. To avoid having to domain join the VM, you manually install the Azure Virtual Desktop agents to register the VM to the host pool. You'll then have a Azure Virtual Desktop deployment that you can use in the rest of the module exercises.
+So, in this unit, you create a host pool and add a VM that will act as a session host. To avoid having to domain join the VM, you manually install the Azure Virtual Desktop agents to register the VM to the host pool. You'll then have an Azure Virtual Desktop deployment that you can use in the rest of the module exercises.
 
 [!include[](../../../includes/azure-subscription-prerequisite.md)]
 
@@ -47,7 +47,7 @@ Next, let's create a host pool that will contain the VM you'll create later in t
 
 Create a registration token to authorize a session host to join the host pool.
 
-1. In Cloud Shell, run the following command to create a registration token that'll expire in 4 hours.
+1. In Cloud Shell, run the following command to create a registration token that will expire in 4 hours.
 
    ```powershell
     $hostPoolName = 'learn-host-pool' 
@@ -169,4 +169,4 @@ At this point, the virtual machine should be registered as a session host for th
 1. Under **Status**, select **ViewDetails**.
 :::image type="content" source="../media/3-host-pool-status.png" alt-text="Screenshot that shows the status of the host pool and the link to view status details.":::
 1. The health check **"DomainJoinedCheck"** failed as we didn't domain join the VM. But the rest of the health checks succeeded.
-:::image type="content" source="../media/3-session-host-status-detail.png" alt-text="Screenshot of the session host status details which show that the domain joined check failed but rest of checks succeeded.":::
+:::image type="content" source="../media/3-session-host-status-detail.png" alt-text="Screenshot of the session host status details that show that the domain joined check failed but rest of checks succeeded.":::

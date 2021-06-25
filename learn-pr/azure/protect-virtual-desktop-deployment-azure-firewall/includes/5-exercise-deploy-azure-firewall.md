@@ -3,7 +3,7 @@ In this unit, you'll create the firewall in its own virtual network. Then you pe
 
 ## Create a virtual network and subnet for Azure Firewall
 
-Create a virtual network that'll acts as the central connectivity point or hub for Azure Firewall.  
+Create a virtual network that will acts as the central connectivity point or hub for Azure Firewall.  
 
 1. In the [Azure portal](https://portal.azure.com?azure-portal=true), search for and select **Virtual networks**.
 1. Select **+ Create**.
@@ -73,7 +73,7 @@ Now that you have the virtual networks created and peered, deploy Azure Firewall
 
 ## Check your work
 
-At this point, you have a Firewall deployed within it's own virtual network and you've peered that virtual network with the host pool virtual network. Let's take a look at the firewall to copy the private and public IP addresses. You need those IP addresses in the next exercise unit.
+At this point, you have a Firewall deployed within its own virtual network and you've peered that virtual network with the host pool virtual network. Let's take a look at the firewall to copy the private and public IP addresses. You need those IP addresses in the next exercise unit.
 
 1. After the deployment is complete, select **Go to resource**.
 1. In the center pane, you see **Provisioning state: Succeeded**.

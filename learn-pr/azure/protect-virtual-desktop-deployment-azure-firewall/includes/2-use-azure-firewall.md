@@ -16,7 +16,7 @@ Azure Virtual Desktop is a desktop and app virtualization service that runs on t
 
 ## How does Azure Firewall filters traffic for Azure Virtual Desktop?
 
-When an end user connects to an Azure Virtual Desktop environment, their session is run by a host pool. A host pool is a collection of Azure virtual machines (VMs) that register to Azure Virtual Desktop as session hosts. These VMs run in a Azure virtual network and are subject to virtual network security controls.
+When an end user connects to an Azure Virtual Desktop environment, their session is run by a host pool. A host pool is a collection of Azure virtual machines (VMs) that register to Azure Virtual Desktop as session hosts. These VMs run in an Azure virtual network and are subject to virtual network security controls.
 
 For Azure Virtual Desktop to work, the host pool needs outbound internet access to the Azure Virtual Desktop service. The host pool might also need outbound internet access for your users. You can use Azure Firewall to lock down your environment and filter outbound network traffic.
 
