@@ -21,35 +21,35 @@ quiz:
     choices:
     - content: Define a resource for the policy assignment by using the *audit* effect, and ignore any errors for non-production environments.
       isCorrect: false
-      explanation: It's not good practice to ignore policy violations. Instead, you should conditionally deploy the policy assignment so that it's only for your production environments.
+      explanation: Incorrect. It's not good practice to ignore policy violations. Instead, you should conditionally deploy the policy assignment so that it's only for your production environments.
     - content: Add a condition to your Bicep template so that the policy assignment is deployed only when the `environmentName` parameter value is set to `Production`.
       isCorrect: true
-      explanation: By using a condition with your resource declaration, you'll assign the policy only to environments that need it.
+      explanation: Correct. By using a condition with your resource declaration, you'll assign the policy only to environments that need it.
     - content: Move the policy assignment into its own module.
       isCorrect: false
-      explanation: Putting the assignment into its own module won't achieve your goal to deploy the policy assignment only for your production environments.
+      explanation: Incorrect. Putting the assignment into its own module won't achieve your goal to deploy the policy assignment only for your production environments.
   - content: Which one of the following is a good situation to use loops?
     choices:
     - content: You need to deploy multiple resources that are almost identical but with some minor differences between them.
       isCorrect: true
-      explanation: The copy loops feature enables you to deploy multiple resources that are identical or have minor differences.
+      explanation: Correct. The copy loops feature enables you to deploy multiple resources that are identical or have minor differences.
     - content: You need to deploy the same resources to multiple environments.
       isCorrect: false
-      explanation: You ordinarily use the same template with different deployment parameters when you're deploying resources to different environments. You use copy loops when you're creating multiple instances of resources within a single deployment.
+      explanation: Incorrect. You ordinarily use the same template with different deployment parameters when you're deploying resources to different environments. You use copy loops when you're creating multiple instances of resources within a single deployment.
     - content: You need to run custom code inside your Bicep file.
       isCorrect: false
-      explanation: Loops can't be used to execute custom code. You can consider using _deployment scripts_.
+      explanation: Incorrect. Loops can't be used to execute custom code. You can consider using _deployment scripts_.
   - content: How can you reference the current loop item within a Bicep loop?
     choices:
     - content: Use the `copyIndex()` function.
       isCorrect: false
-      explanation: The `copyIndex()` function is used within JSON templates, not within Bicep templates.
+      explanation: Incorrect. The `copyIndex()` function is used within JSON templates, not within Bicep templates.
     - content: Use array functions.
       isCorrect: false
-      explanation: Array functions are often useful when you're working with loops, but they don't let you access the current item.
+      explanation: Incorrect. Array functions are often useful when you're working with loops, but they don't let you access the current item.
     - content: Use the symbolic name you specified within the loop declaration.
       isCorrect: true
-      explanation: You can access the current loop item by using the symbolic name that you used in the loop declaration.
+      explanation: Correct. You can access the current loop item by using the symbolic name that you used in the loop declaration.
   - content: |
       You used an array parameter to create a specified number of storage accounts.
       You need to return the storage account names for all the storage accounts you deploy so that users who run the deployment can see it.
@@ -57,10 +57,10 @@ quiz:
     choices:
     - content: Use an output loop to return an array with the storage account names.
       isCorrect: true
-      explanation: By using an output loop, you can retrieve the name and other properties of the storage accounts you've deployed.
+      explanation: Correct. By using an output loop, you can retrieve the name and other properties of the storage accounts you've deployed.
     - content: Use a variable loop to create a list of storage account names for each resource.
       isCorrect: false
-      explanation: Variables aren't returned to users who are running the deployment.
+      explanation: Incorrect. Variables aren't returned to users who are running the deployment.
     - content: Use the output function within a resource declaration loop.
       isCorrect: false
-      explanation: Outputs, including output loops, must be declared separately from resources.
+      explanation: Incorrect. Outputs, including output loops, must be declared separately from resources.

@@ -5,7 +5,7 @@ metadata:
   description: Understand how to handle errors and log helpful information in your Go programs.
   ms.date: 02/12/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Implement error handling and logging in Go
@@ -40,4 +40,3 @@ units:
 - learn.language.go-errors-logs.4-summary
 badge:
   uid: learn.language.go-errors-logs.badge
-hidden: true

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/16/2021
+  ms.date: 06/17/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -17,13 +17,13 @@ quiz:
     choices:
     - content: "Datastore"
       isCorrect: false
-      explanation: "That is incorrect. To pass data between steps in a pipeline, use a PipelineData object."
-    - content: "PipelineData"
+      explanation: "That is incorrect. To pass data between steps in a pipeline, use an OutputFileDatasetConfig object."
+    - content: "OutputFileDatasetConfig"
       isCorrect: true
-      explanation: "That is correct. To pass data between steps in a pipeline, use a PipelineData object."
-    - content: "Data Reference"
+      explanation: "That is correct. To pass data between steps in a pipeline, use an OutputFileDatasetConfig object."
+    - content: "Dataset"
       isCorrect: false
-      explanation: "That is incorrect. To pass data between steps in a pipeline, use a PipelineData object."
+      explanation: "That is incorrect. To pass data between steps in a pipeline, use an OutputFileDatasetConfig object."
   - content: "You've published a pipeline that you want to run every week. You plan to use the Schedule.create method to create the schedule. What kind of object must you create first to configure how frequently the pipeline runs?"
     choices:
     - content: "Datastore"

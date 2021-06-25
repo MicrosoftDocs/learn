@@ -27,7 +27,7 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 1. In the top menu bar, select **Add**. The **Add function** pane appears.
 
-1. The pane shows us the current set of supported triggers. Under the **Select a template** section, select **HTTP trigger**, and then select **Add**. The **HttpTrigger3** pane appears displaying a default implementation of your HTTP-triggered function. This action also opens the *index.js* file in the code editor.
+1. The pane shows us the current set of supported triggers. Under the **Select a template** section, select **HTTP trigger**, and then select **Add**. The **HttpTrigger3** pane appears displaying a default implementation of your HTTP-triggered function.
 
 ::: zone-end
 
@@ -41,7 +41,7 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 1. In the top menu bar, select **Add**. The **Add function** pane appears.
 
-1. The pane shows us the current set of supported triggers. Under the **Select a template** section, select **HTTP trigger**, and then select **Add**. The **HttpTrigger3** pane appears displaying a default implementation of your HTTP-triggered function. This action also opens the *index.js* file in the code editor.
+1. The pane shows us the current set of supported triggers. Under the **Select a template** section, select **HTTP trigger**, and then select **Add**. The **HttpTrigger3** pane appears displaying a default implementation of your HTTP-triggered function.
 
 ::: zone-end
 

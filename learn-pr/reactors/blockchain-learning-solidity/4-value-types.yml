@@ -2,10 +2,10 @@
 uid: learn.reactors.blockchain-learning-solidity.4-value-types
 metadata:
   title: Explore value types
-  description: Learn about the primary value types you will use when working with Solidity.
-  ms.date: 10/05/2020
-  author: meaghanlewis
-  ms.author: shanama
+  description: Learn about the primary value types you'll use when working with Solidity.
+  ms.date: 06/16/2021
+  author: danmabee
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore value types

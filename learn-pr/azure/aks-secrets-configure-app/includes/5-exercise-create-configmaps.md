@@ -1,5 +1,46 @@
 The backend part of the application is deployed and now you need to deploy the front-end bit. You already know you're going to need a ConfigMap. So let's start by creating one.
 
+## Activate the Azure sandbox
+
+1. Start by **activating the Azure sandbox above.**
+1. Once it's activated, sign into the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account you activated the sandbox with.
+
+## Before we start
+
+We'll assume an AKS cluster is already created and running. Before creating a new cluster, execute the following commands to be sure there's no other clusters or resources already created:
+
+```azurecli-interactive
+export RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
+export CLUSTER_NAME=ship-manager-cluster
+```
+
+```azurecli-interactive
+az aks show -n $CLUSTER_NAME -g $RESOURCE_GROUP
+```
+
+If the list is empty, proceed to create your AKS cluster, running the following commands in a Cloud Shell environment:
+
+```azurecli-interactive
+az aks create \
+ -g $RESOURCE_GROUP \
+ -n $CLUSTER_NAME \
+ --node-count 1 \
+ --node-vm-size Standard_B2s \
+ --generate-ssh-keys \
+ --enable-addons http_application_routing
+```
+
+After the above command, or if the list is not empty (the cluster is already created), get the administration config:
+
+```azurecli-interactive
+az aks get-credentials -n $CLUSTER_NAME -g $RESOURCE_GROUP
+```
+
+The complete cluster creation can take up to five minutes.
+
+> [!IMPORTANT]
+> Make a note of the `RESOURCE_GROUP` and `CLUSTER_NAME` variables for later use.
+
 ## Create a ConfigMap
 
 1. Log in to your Azure Cloud Shell. Get the DNS zone that has been made available with the HTTP application routing add-on:
@@ -127,10 +168,6 @@ The backend part of the application is deployed and now you need to deploy the f
     kubectl get deploy contoso-ship-manager-frontend
     ```
 
-    The DNS propagation may take up to five minutes to complete. Check the DNS creation using the following command:
+    The DNS propagation may take up to five minutes to complete.
 
-    ```azurecli-interactive
-    az network dns zone list -o table
-    ```
-
-    Check if there are two new records with the same DNS zone but starting with `contoso-ship-manager`.
+To check your work, access the frontend URL defined in the frontend ingress configuration.

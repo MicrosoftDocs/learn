@@ -1,23 +1,28 @@
-Deployment scripts in Azure Resource Manager (ARM) templates enable custom automation for your environment management.
+Deployment scripts in Azure Resource Manager templates (ARM templates) enable custom automation for your environment management. You use deployment scripts to execute your own scripts within your ARM template deployments.
+
+## Example scenario
 
 Suppose you're a member of a cross-functional team that supports an application. Your team has adopted ARM templates for creating and managing the environments for your application. Part of the application environment includes staging some assets in a storage account. You've decided to use a deployment script to ensure that the storage account has the required assets.
+
+## What will we be doing?
 
 In this module, you'll learn how to add custom behavior to your Bicep or JSON ARM templates by using a deployment script.
 
 [!INCLUDE [Bicep introduction for JSON modules](../../includes/azure-template-json-bicep-intro.md)]
 
-## Learning objectives
+## What is the main goal?
 
-After you finish this module, you'll be able to:
-
-- Perform custom steps in your ARM templates by using a deployment script.
-- Define parameters to make your deployment scripts more reusable.
+By the end of this module, you'll be able to perform custom steps in your ARM templates by using a deployment script. You'll also be able to define parameters to make your deployment scripts more reusable.
 
 ## Prerequisites
 
-You should have familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+You should be familiar with:
+
+- Creating and deploying basic ARM templates, using either Bicep or JSON.
+- Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
 To follow along with the exercises in the module, you'll need:
+
 - An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true).
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
 - Either:

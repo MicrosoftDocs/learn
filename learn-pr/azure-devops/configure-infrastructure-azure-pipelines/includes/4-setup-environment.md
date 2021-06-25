@@ -26,7 +26,7 @@ Before you set up Git, add Visual Studio Code to your system PATH. This step mak
 Here, you create a directory to hold your Git repository.
 
 1. On the **View** menu, select **Terminal**.
-1. In the drop-down list, select **bash**:
+1. In the drop-down list, select **bash**. If you're familiar with another Unix shell that you prefer to use, such as Zsh, select that shell instead.
 
     :::image type="content" source="../../shared/media/vscode-terminal-bash.png" alt-text="A screenshot of Visual Studio Code showing where to select the Bash shell.":::
 

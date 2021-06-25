@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-azure-vmware-solution.how-azure-vmware-solution-works
+title: How Azure VMware Solution Works
+metadata:
+  title: How Azure VMware Solution Works
+  description: How Azure VMware Solution Works
+  ms.date: 06/17/2021
+  author: exchangegoddess
+  ms.author: phschmit
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-how-azure-vmware-solution-works.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What component of the Azure VMware Solution is the customer not responsible for?"
+    choices:
+    - content: "Tier 1 gateways."
+      isCorrect: false
+      explanation: "Tier 1 gateways are managed by the customer."
+    - content: "Lifecycle management of VMware software (ESXi, vCenter, and vSAN)."
+      isCorrect: true
+      explanation: "Microsoft, in partnership with VMware, will support and maintain the lifecycle management of VMware software (ESXi, vCenter, and vSAN)."
+    - content: "Virtual machines."
+      isCorrect: false
+      explanation: "Microsoft doesn't manage the virtual machines."
+  - content: "Shannon wants to start migrating to Azure VMware Solution. What minimum number of nodes must Shannon have to get started?"
+    choices:
+    - content: "Three nodes"
+      isCorrect: true
+      explanation: "The minimum nodes required are 3 in a cluster."
+    - content: "24 nodes"
+      isCorrect: false
+      explanation: "The minimum nodes required are 3 in a cluster."
+    - content: "16 nodes"
+      isCorrect: false
+      explanation: "The maximum number of nodes in a cluster is 16."
+  - content: "What does the cloudadmin role in the Azure VMware Solution vCenter do?"
+    choices:
+    - content: "The local cloudadmin user is used to set up users in Active Directory (AD)."
+      isCorrect: false
+      explanation: "The cloudAdmin user is a member of the cloudadmin role."
+    - content: "The cloudAdmin role creates and manages workloads in your private cloud."
+      isCorrect: true
+      explanation: "The cloudAdmin role creates and manages workloads in your private cloud."
+    - content: "The cloudadmin role has access to the ESXi hosts in Azure."
+      isCorrect: false
+      explanation: "The cloudAdmin role doesn't have access to and can't configure specific management components supported and managed by Microsoft."
+  

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.language.go-control-flow.5-challenge
 metadata:
-  title: Challenge - Use control flows to write programs
+  title: Exercise - Use control flows in Go
   description: Practice what you've learned about control flow statements.
-  ms.date: 04/13/2021
-  author: meaghanlewis
-  ms.author: shanama
+  ms.date: 06/20/2021
+  author: GitHubber17
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Challenge - Use control flows to write programs
-durationInMinutes: 10
+title: Exercise - Use control flows in Go
+durationInMinutes: 12
 content: |
   [!include[](includes/5-challenge.md)]

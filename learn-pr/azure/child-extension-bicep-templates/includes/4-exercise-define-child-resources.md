@@ -2,7 +2,14 @@
 
 You're starting to work on your R&D team's requests, and you decide to start by building an Azure Cosmos DB database for the toy drone's test data. In this exercise, you'll create the Azure Cosmos DB account and two child resources, one by using the `parent` property and the other as a nested resource.
 
-This exercise uses [the Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
+During the process, you'll:
+
+> [!div class="checklist"]
+> * Create a Bicep file that deploys a Cosmos DB account.
+> * Add a database and container, which are child resources of the Cosmos DB account.
+> * Deploy the template and verify the deployment.
+
+[!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
 
 ## Create a Bicep template that contains an Azure Cosmos DB account
 
@@ -10,7 +17,9 @@ First, you create a new Bicep template with an Azure Cosmos DB account. To do so
 
 1. Open Visual Studio Code.
 
-1. Create a new file called *main.bicep*, and then save the empty file so that Visual Studio Code loads the Bicep tooling. 
+1. Create a new file called *main.bicep*.
+
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
  
    You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 

@@ -1,10 +1,23 @@
 [!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
-The design team at your toy company has asked you to update a template that configures a virtual network. In this unit, you'll create and deploy an initial template. After the deployment is complete, you'll prepare to deploy a template that's slightly different, and you'll use the what-if operation to review the expected changes. Then, you'll use a complete deployment to deploy an empty template.
+The design team at your toy company has asked you to update a template that configures a virtual network. In this unit, you'll use what-if to verify the effects of deploying the updated template.
+
+During the process, you'll:
+
+> [!div class="checklist"]
+> * Create and deploy an initial template.
+> * Prepare to deploy a template that's slightly different, and use the what-if operation to review the expected changes.
+> * Use a complete deployment to deploy an empty template, and use the what-if operation to review the expected changes.
+
+::: zone pivot="jsoncli,jsonpowershell"
+
+[!INCLUDE [Install the JSON ARM template extension for Visual Studio Code](../../includes/azure-template-json-exercise-vscode-extension.md)]
+
+::: zone-end
 
 ::: zone pivot="biceppowershell,bicepcli"
 
-This exercise uses [the Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
+[!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
 
 ::: zone-end
 
@@ -17,6 +30,10 @@ You start with an existing template that your team has been using. The template 
 1. Open Visual Studio Code.
 
 1. Create a new file called *azuredeploy.json*.
+
+1. Save the empty file so that Visual Studio Code loads the ARM template tooling. 
+ 
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 
 1. Copy the following code into *azuredeploy.json*.
 
@@ -31,6 +48,10 @@ You start with an existing template that your team has been using. The template 
 1. Open Visual Studio Code.
 
 1. Create a new file called *main.bicep*.
+
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
+ 
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 
 1. Copy the following code into *main.bicep*.
 

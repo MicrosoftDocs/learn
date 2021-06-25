@@ -28,6 +28,6 @@ Trojans are a common type of malware which can’t spread on their own. This mea
 
 A worm is a type of malware that can copy itself and often spreads through a network by exploiting security vulnerabilities. It can spread through email attachments, text messages, file-sharing programs, social networking sites, network shares, removable drives, and software vulnerabilities.
 
-Exploits take advantage of vulnerabilities in software. A vulnerability is like a hole in your software that malware uses to get onto your device. Malware exploits these vulnerabilities to bypass your computer's security safeguards and infect your device.
+Exploits take advantage of vulnerabilities in software. A vulnerability is a weakness in your software that malware uses to get onto your device. Malware exploits these vulnerabilities to bypass your computer's security safeguards and infect your device.
 
 These examples are just a few of the threats commonly seen. This is a continually evolving area and new threats emerge all the time.

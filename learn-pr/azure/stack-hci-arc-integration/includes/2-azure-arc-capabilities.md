@@ -80,7 +80,7 @@ You can learn more by visiting the following webpages:
 - [What is Azure Arc enabled servers?](/azure/azure-arc/servers/overview/?azure-portal=true)
 - [Connect Azure Stack HCI to Azure](/azure-stack/hci/deploy/register-with-azure/?azure-portal=true)
 - [Azure Arc enabled SQL Server (preview)](/sql/sql-server/azure-arc/overview?view=sql-server-ver15&azure-portal=true)
-- [What is Azure Arc enabled Kubernetes Preview?](/azure/azure-arc/kubernetes/overview/?azure-portal=true)
+- [What is Azure Arc enabled Kubernetes?](/azure/azure-arc/kubernetes/overview/?azure-portal=true)
 - [What is Azure Kubernetes Service on Azure Stack HCI?](/azure-stack/aks-hci/overview/?azure-portal=true)
 - [What are Azure Arc enabled data services (preview)?](/azure/azure-arc/data/overview/?azure-portal=true)
 
