@@ -2,22 +2,22 @@
 
 In this exercise, you'll:
 
-* Create an Azure Cosmos DB account.
-* Create an Azure Cosmos DB database.
+- Create an Azure Cosmos DB account.
+- Create an Azure Cosmos DB database.
 
 ## Prerequisites
 
 To perform this exercise, you need:
 
-* An Azure subscription
-* A Microsoft account or an Azure Active Directory (Azure AD) account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+- An Azure subscription
+- A Microsoft account or an Azure Active Directory (Azure AD) account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
 
 ## Create an Azure Cosmos DB account
 
 1. Start a web browser, refer to the [Azure portal](https://portal.azure.com/?azure-portal=true), and sign in to access the Azure subscription you'll be using in this module.
 1. Use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Cosmos DB**, and in the list of results, select **Azure Cosmos DB**.
-1. On the **Azure Cosmos DB** blade, select **+ Add**.
-1. On the **which API best suits your workload?** blade, select **Core (SQL) - Recommendded** and select **Create**.
+1. On the **Azure Cosmos DB** blade, select **+ Create**.
+1. On the **Which API best suits your workload?** blade, select **Core (SQL) - Recommendded** and select **Create**.
 1. On the **Basics** tab of the **Create Azure Cosmos DB Account - Core (SQL)** blade, configure the following settings, and then select **Next: Global Distribution**.
 
    | Setting | Configuration |
@@ -31,9 +31,9 @@ To perform this exercise, you need:
 
    :::image type="content" source="../media/4-azure-cosmos-db-create-basics.png" alt-text="Screenshot of the Basics tab of the Create Azure Cosmos DB Account blade in the Azure portal.":::
 
-1. On the **Global Distribution** tab of the **Create Azure Cosmos DB Account - Core (SQL)** blade, accept the default settings, and then select **Next: Networking >**.
+1. On the **Global Distribution** tab of the **Create Azure Cosmos DB Account - Core (SQL)** blade, accept the default settings, and then select **Next: Networking**.
 1. On the **Networking** tab of the **Create Azure Cosmos DB Account - Core (SQL)** blade, accept the default settings, and then select **Next: Backup Policy**.
-1. On the **Backup Policy** tab of the **Create Azure Cosmos DB Account - Core (SQL)** blade, specify the following settings (leave others with their default values), and then select **Next: Encryption >**:
+1. On the **Backup Policy** tab of the **Create Azure Cosmos DB Account - Core (SQL)** blade, specify the following settings (leave others with their default values), and then select **Next: Encryption **:
 
    | Setting | Configuration |
    | --- | --- |
@@ -59,11 +59,20 @@ To perform this exercise, you need:
 
    | Setting | Configuration |
    | --- | --- |
-   | Database id Create new | **iotdb** |
-   | Throughput (autoscale) | **Autoscale** |
-   | Max RU/s | **4000** |
+   | Database id | **iotdb** |
+   | Database throughput (autoscale) | **Autoscale** |
+   | Database Max RU/s | **4000** |
 
    :::image type="content" source="../media/4-azure-cosmos-db-new-database.png" alt-text="Screenshot of the New Database blade within the Data Explorer blade of an Azure Cosmos DB Account in the Azure portal.":::
+
+1. On the Azure Cosmos DB blade, in the vertical menu, select **Data Explorer**, then in the **DATA** sectcion, select the ellipsis icon next to the newly created database **iotdb** and select **New Container**.
+1. On the **New Container**, specify the following settings (leave others with their default values) and select **OK**:
+
+   | Setting | Configuration |
+   | --- | --- |
+   | Database id | **iotdb** |
+   | Container id | **iotcollection** |
+   | Partition Key | **/pk/timestamp/deviceid** |
 
 1. Keep all the web browser windows open. You'll use them in the next exercise of this module.
 

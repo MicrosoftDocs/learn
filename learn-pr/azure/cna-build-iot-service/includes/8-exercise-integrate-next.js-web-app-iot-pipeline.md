@@ -2,17 +2,17 @@
 
 In this exercise, you'll:
 
-* Clone a GitHub repo containing a sample Next.js code and customize it to process the existing Cosmos DB-resident IoT data.
-* Deploy an Azure web app hosting the Next.js application.
-* Validate the functionality of the Azure web app.
+- Configure a Next.js application
+- Deploy an Azure web app hosting the Next.js application
+- Validate the functionality of the Azure web app
 
 ## Prerequisites
 
 To perform this exercise, you need:
 
-* An Azure subscription.
-* A Microsoft account or an Azure AD account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
-* To have completed the exercise units **Set up Azure Cosmos DB** and **Integrate Azure Cosmos DB with the IoT data pipeline**.
+- An Azure subscription.
+- A Microsoft account or an Azure AD account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+- To have completed the exercise units **Set up Azure Cosmos DB** and **Integrate Azure Cosmos DB with the IoT data pipeline**.
 
 In this exercise, you'll use an existing Next.js application code that retrieves IoT telemetry data from the Cosmos DB collection you implemented in the previous exercise unit of this module.
 
@@ -164,7 +164,7 @@ In this task, you'll deploy the newly configured Next.js application to an Azure
    ```
    
       > [!NOTE]
-      > Wait for the deployment to complete.
+      > Wait for the deployment to complete. You should receive a message stating that the deployment was successful.
       
 1. Close the **Cloud Shell** pane.
 
@@ -173,7 +173,7 @@ In this task, you'll deploy the newly configured Next.js application to an Azure
 In this task, you'll validate the functionality of the Azure web app hosting the Next.js application.
 
 1. In the web browser window displaying the Azure portal, use the **Search resources, services, and docs** text box at the top of the Azure portal page to search for **App Services**.
-1. On the **App Services** blade, in the list of App Service instances, select the entry representing the Azure web app you deployed in the previous task of this exercise.
+1. On the **App Services** blade, in the list of App Service instances, select the entry representing the Azure web app you deployed in the previous task of this exercise (the name should consist of the **nextjs** prefix followed by a string of digits).
 1. On the blade displaying the properties of the web app, in the vertical menu, in the **Development Tools** section, select the **App Service Editor (Preview)** entry. Then, on the **App Service Editor (Preview)**, select **Go**.
 1. On the **App Service Editor** page, in the vertical menu, select the **Open Console** icon (the second one from the end).
 1. From the console prompt, run the following command:
@@ -186,7 +186,7 @@ In this task, you'll validate the functionality of the Azure web app hosting the
  
      :::image type="content" source="../media/8-next.js-web-app-build.png" alt-text="Screenshot of the start of the build process in the App Service Editor console of the Azure web app.":::
   
-1. Wait for the build process to complete.
+1. Wait for the build process to complete. This might take about 5 minutes.
       
       :::image type="content" source="../media/8-next.js-web-app-build-completed.png" alt-text="Screenshot of the completed build process in the App Service Editor console of the Azure web app.":::
   
@@ -206,4 +206,4 @@ Congratulations! You completed the third exercise of this module. You created an
 
 ## Clean up the resources
 
-To avoid unnecessary charges from using Azure resources, you should delete the **cosmos-db-RG** and **nextjs-webapp-RG** resource groups you created in this exercise. To do so, in the Azure portal, navigate to the blade of each of these resource groups, and select the **Delete resource group** entry in the toolbar. In the **TYPE THE RESOURCE GROUP NAME** text box, enter the name of the resource group, and then select **Delete**.
+To avoid unnecessary charges from using Azure resources, you should delete the **cosmos-db-RG**, **nextjs-webapp-RG**, and **function-app-RG** resource groups you created in this exercise. To do so, in the Azure portal, navigate to the blade of each of these resource groups, and select the **Delete resource group** entry in the toolbar. In the **TYPE THE RESOURCE GROUP NAME** text box, enter the name of the resource group, and then select **Delete**.

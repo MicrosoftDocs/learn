@@ -2,28 +2,30 @@ This exercise provides an overview of setting up the collection, processing, and
 
 In this exercise, you'll:
 
-* Create an Azure function that uploads telemetry data to an Azure Cosmos DB collection.
-* Configure a telemetry rule of the Azure IoT Central application.
-* Validate the functionality of the Azure IoT Central telemetry pipeline consisting of an Azure Function app and an Azure Cosmos DB collection.
+- Create an Azure IoT Central application
+- Create an Azure function that logs an HTTP request payload
+- Configure and validate IoT telemetry rules of an Azure IoT Central application
 
 ## Prerequisites
 
 To perform this exercise, you need:
 
-* An Azure subscription.
-* A Microsoft account or an Azure AD account with the Global Administrator role in the Azure AD tenant that's associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
-* To have completed the exercise unit **Set up Azure Cosmos DB**.
+- An Azure subscription.
+- A Microsoft account or an Azure AD account with the Global Administrator role in the Azure AD tenant that's associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
+- To have completed the exercise unit **Set up Azure Cosmos DB**.
 
 ## Create an Azure IoT Central application
 
 1. Start a web browser and navigate to the [Welcome to IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) page.
-1. On the **Welcome to IoT Central** page, select the avatar icon.
+1. On the **Welcome to IoT Central** page, select the avatar icon in the upper right corner.
 1. When prompted, sign in to access the Azure subscription you'll be using in this module.
 1. On the **Welcome to IoT Central** page, expand the vertical menu, and then select the **My apps** menu entry.
 1. On the **My apps** page, select **+ New application**.
 1. On the **Build your IoT application** page, ensure that the **Retail** tab is selected, review the available application, and in the **In-store analytics - condition monitoring** tile, select **Create app**.
-1. On the **New application** page, configure the following settings, and then select **Create**.
+
    :::image type="content" source="../media/6-iot-central-create-app-using-template.png" alt-text="Screenshot of the built-in templates on the Build your IoT application page in the IoT Central Application portal.":::
+
+1. On the **New application** page, configure the following settings, and then select **Create**.
 
    | Setting | Configuration |
    | --- | --- |
@@ -34,7 +36,7 @@ To perform this exercise, you need:
    :::image type="content" source="../media/6-iot-new-application.png" alt-text="Screenshot of the New application page in the IoT Central Application portal.":::
 
    > [!NOTE]
-   > This will display the **Dashboard** page. Review telemetry and analytics of the sample Azure IoT Central application.
+   > This will display the **Dashboard** page. This might take a few minutes. Review telemetry and analytics of the sample Azure IoT Central application.
 
 1. On the **Dashboard** page of the IoT Central Application portal, in the vertical menu, select **Devices**.
 1. On the **Devices** page, in the **Thermostat** section, select **Thermostat-Zone1**.
@@ -52,7 +54,7 @@ In this task, you'll create an Azure Function app that implements the HTTP webho
 
 1. Start a web browser, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true), and sign in to access the Azure subscription you'll be using in this module.
 1. Use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Function App**.
-1. On the **Function App** blade, select **+ Create**.
+1. On the **Function App** blade, select **+ Add**.
 1. On the **Basics** tab of the **Create Function App** blade, configure the following settings, and then select **Next: Hosting >**
 
    | Setting | Configuration |
@@ -97,9 +99,9 @@ In this task, you'll create an Azure Function app that implements the HTTP webho
    | Setting | Configuration |
    | --- | --- |
    | Binding type | Select **Azure Cosmos DB**. |
-   | Document parameter name | Accept the default value of **outputDocument**. |
+   | Document parameter name | Replace the default value **outDoc**. |
    | Database name | Enter the name of the database you created in the previous exercise, **iotdb**. |
-   | Collection Name | Enter **iotcol**. |
+   | Collection Name | Enter **iotcollection**. |
    | If true, creates the Cosmos DB database | Select **Yes**. |
    | Cosmos DB account connection | Select **New**. In the **New Cosmos DB connection** popup window, ensure that the **Azure Cosmos DB Account** option is selected. In the **Cosmos DB account connection** drop-down list, select the entry representing the Cosmos DB account you created in the previous exercise, and then select **OK** twice. |
 
@@ -124,7 +126,8 @@ In this task, you'll create an Azure Function app that implements the HTTP webho
      log.LogInformation($"C# Queue trigger function processed: {req.Body}");
 
      string requestBody = new StreamReader(req.Body).ReadToEnd();
-     dynamic iotData = JObject.Parse(requestBody);
+     dynamic iotDataJson = JObject.Parse(requestBody);
+     dynamic iotData = JsonConvert.DeserializeObject<dynamic>(iotDataJson.ToString());
 
      log.LogInformation($"{iotData}");
 
@@ -142,7 +145,7 @@ In this task, you'll create an Azure Function app that implements the HTTP webho
    > [!NOTE]
    > The function logs the JSON-based payload of the HTTP request and constructs individual JSON elements to be stored in an individual document of the target Cosmos DB collection corresponding to the function output you configured. You could use the **pk** element, which consists of the concatenated deviceId property and date of the collected telemetry data point, as the partition key.
 
-1. On the **HttpTrigger1 \| Code + Test** blade, select **Get function URL** and record its value.
+1. On the **HttpTrigger1 \| Code + Test** blade, select **Get function URL** for the function key and record its value.
 
    :::image type="content" source="../media/6-azure-function-app-function-url.png" alt-text="Screenshot of the Code + Test blade of the HttpTrigger1 blade of the Azure Function app in the Azure portal, with the Get function URL pop-up window.":::
 
