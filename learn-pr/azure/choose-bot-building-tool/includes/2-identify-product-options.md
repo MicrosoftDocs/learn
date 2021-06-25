@@ -41,7 +41,7 @@ Once your knowledge base is edited, you can publish the knowledge base to a work
 
 ### Bot Framework Composer and Azure Bot Service
 
-*Bot Framework Composer*, or Composer, is an open-source, visual integrated development environment (IDE) for developers to author, test, provision, and manage conversational experiences. Bot Framework Composer is built on the Bot Framework SDK. It provides a robust visual authoring canvas with built-in dialog and conversation flow functionality. Composer also integrates directly with Azure services for language understanding, knowledge bases, and the like. You then can build your logic and configure common integrations from a single design canvas.
+*Bot Framework Composer*, or Composer, is an open-source, visual integrated development environment (IDE) for developers to author, test, provision, and manage conversational experiences. Composer is built on the Bot Framework SDK. It provides a robust visual authoring canvas with built-in dialog and conversation flow functionality. Composer also integrates directly with Azure services for language understanding, knowledge bases, and the like. You then can build your logic and configure common integrations from a single design canvas.
 
 > [!NOTE]
 > Composer is available as a desktop application for Windows, macOS and Linux. It's also available as a web-based component that you can customize and extend to suit your needs.

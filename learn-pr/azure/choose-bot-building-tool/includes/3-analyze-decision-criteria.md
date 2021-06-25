@@ -15,7 +15,7 @@ If you prefer a low-code design interface, compare the three options:
      > [!NOTE]
      > The QnA Maker portal doesn't offer bot-modification options. If you must modify your bot to meet test requirements, you'd have to edit the bot's source code.
 
-- Bot Framework Composer has a low-code, visual designer that you can download for Windows, macOS, and Linux. You can also host Bot Framework Composer as a shared, hosted web service. Bot Framework Composer offers extensive bot building capabilities, including controlling conversation flow, defining intents and entities, and adding authentication. Bot Framework Composer also offers built-in low-code integration with LUIS and QnA Maker.
+- Bot Framework Composer has a low-code, visual designer that you can download for Windows, macOS, and Linux. You can also host Composer as a shared, hosted web service. Composer offers extensive bot building capabilities, including controlling conversation flow, defining intents and entities, and adding authentication. Composer also offers built-in low-code integration with LUIS and QnA Maker.
 
 ### Do you require low-code integration with other components?
 
@@ -25,7 +25,7 @@ If you require low-code integration with other components, compare the three opt
 
 - QnA Maker doesn't offer significant integration capabilities in a low-code design environment.
 
-- Bot Framework Composer offers comprehensive integration possibilities. You can use Bot Framework Composer to extend the functionality of your bot with numerous AI, logic, and task-based features. Bot Framework Composer also offers built-in integration with LUIS and QnA Maker.
+- Bot Framework Composer offers comprehensive integration possibilities. You can use Composer to extend the functionality of your bot with numerous AI, logic, and task-based features. Composer also offers built-in integration with LUIS and QnA Maker.
 
 ### Do you need a bot-building tool that supports code-based development with the bot source?
 
@@ -35,7 +35,7 @@ If you need a bot-building tool that supports code-based development with the bo
 
 - QnA Maker bots can be modified by working in the bot source code to add or enhance bot functionality. You can use Visual Studio, Visual Studio Code, or any other code-based IDE that supports the language and libraries you require.
 
-- Bot Framework Composer bots are fully extensible using the Bot Framework SDK. You can use Visual Studio, Visual Studio Code, or any other code-based IDE that supports the language and libraries you require.
+- Composer bots are fully extensible using the Bot Framework SDK. You can use Visual Studio, Visual Studio Code, or any other code-based IDE that supports the language and libraries you require.
 
 ### Do you need specific publishing options?
 
@@ -43,7 +43,7 @@ If you have specific publishing option requirements, compare the three options:
 
 - Power Virtual Agents bots can be published to a website or the Power Apps portal. You can add Power Virtual Agents bots to Azure Bot Service channels, Microsoft Teams, Facebook, or to mobile or custom apps.
 
-- QnA Maker bots and Bot Framework Composer bots are created as Azure Bot Service bots. You can host them in Azure Web App or connect them to many channels, including web chat, Microsoft Teams, Microsoft Outlook, and Slack.
+- QnA Maker bots and Composer bots are created as Azure Bot Service bots. You can host them in Azure Web App or connect them to many channels, including web chat, Microsoft Teams, Microsoft Outlook, and Slack.
 
      > [!NOTE]
-     > Bot Framework Composer bots can be hosted in Internet Information Services (IIS) or other web hosting services. This requires an internet-accessible endpoint and a valid HTTPS certificate.
+     > Composer bots can be hosted in Internet Information Services (IIS) or other web hosting services. This requires an internet-accessible endpoint and a valid HTTPS certificate.
