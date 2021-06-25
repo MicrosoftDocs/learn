@@ -24,22 +24,32 @@ logical elements, which are displayed in the following image:
 
 ## Example scenario
 
-Let's suppose you work for a soap manufacturing company. The company uses a process called extrusion to produce the soap. Engineers  at the company think that changes in manufacturing could yield significant production increases. The company uses an advanced process control (APC) system, controlled by experienced operators to manage production. These operators send commands to the APC system to control manufacturing. The APC system then adjusts the manufacturing equipment accordingly.
+Suppose you work for a soap manufacturing company. The company uses an extrusion
+process to produce the soap and an advanced process control (APC) system to
+manage production.
 
-Because of the complexity of the soap manufacturing process, it can be difficult to control and therefore optimize production. This is because there are so many variables involved in production, such as:
+The Engineers that oversee the APC system think that making changes to the
+manufacturing process could improve production yield. To make the changes, the
+Engineers send new commands to the APC system to control manufacturing. The APC
+system then adjusts the manufacturing equipment accordingly.
+
+Because of the complexity of the soap manufacturing process, it can be difficult
+to control, and therefore optimize, production. Some of the variables include:
 
 - Adjustments in the parts of the manufacturing equipment. 
 - Variations in raw materials.
 - Wear and tear on the machinery.
 - Residue from previous production runs. 
 
-The company can benefit from using Project Bonsai because a Bonsai brain is able to:
+The soap company can benefit from using Project Bonsai because a Bonsai brain
+would be able to:
 
-- Automatically signal the company's APC system.
-- Adapt fast to production changeovers.
-- Apply short-term process changes due to residue.
+- Automatically signal the APC system.
+- Adapt quickly to production changeovers.
+- Apply short-term process changes due to residue in the extruder.
 - Apply long-term process changes due to equipment wear and tear.
-- Advise operators to make adjustments instead of controlling the extruder directly.
+- Advise operators to make adjustments instead of controlling the extruder
+  directly.
 
 :::image type="content" source="../media/soap-machine.png" alt-text="Graphic displays an example production line that displays the stages of soap manufacture.":::
 
@@ -56,5 +66,4 @@ You'll assess the capabilities of Project Bonsai and determine whether it's a go
 ## What is the main goal?
 
 By the end of this module, you'll be able to determine whether Bonsai is suitable for your organization. You'll also be able to describe how Bonsai can help accelerate AI-powered automation development. 
-
 
