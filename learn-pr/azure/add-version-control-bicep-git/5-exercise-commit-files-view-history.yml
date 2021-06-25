@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.add-version-control-bicep-git.exercise-commit-files-view-history
-title: Commit files to your repository and view their history
+title: Exercise - Commit files to your repository and view their history
 metadata:
   unitType: exercise
   title: Exercise - Commit files to your repository and view their history
