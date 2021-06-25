@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.introduction-to-machine-learning.creating-ml-models
+title: What are machine learning models?
+metadata:
+  title: What are machine learning models?
+  description: Description :)
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-what-are-ml-models.md)]
+quiz:
+  title: Hi Jason! Can we put a knowledge check here?
+  questions:
+  - content: "Do we want a knowledge check here?"
+    choices:
+    - content: "Straight or curved, whichever best fits the data."
+      isCorrect: false
+      explanation: "Incorrect. Linear regression finds the best straight line that fits the data. It does not check if a curved line is a better fit."
+    - content: "Straight."
+      isCorrect: true
+      explanation: "Correct. Linear regression tries to find the optimal angle and position for a straight line."
+    - content: "Curved."
+      isCorrect: false
+      explanation: "Incorrect. Linear regression finds the best linear line that fits the data."
+    - content: "Jagged."
+      isCorrect: false
+      explanation: "Incorrect. Linear regression finds a regular line that fits the data."
+  - content: "A line that fits well will have a:"
+    choices:
+    - content: "Small error."
+      isCorrect: true
+      explanation: "Correct. If the error is small, this means that the predicted values are close to the data points."
+    - content: "Large error."
+      isCorrect: false
+      explanation: "Incorrect. If the error is large, this means that the predicted values do not match the data well."
+    - content: "Unknown error."
+      isCorrect: false
+      explanation: "Incorrect. The error must be known to know how well the line fits the data."
+    - content: "Negative error."
+      isCorrect: false
+      explanation: "Incorrect. The error can not be negative."
