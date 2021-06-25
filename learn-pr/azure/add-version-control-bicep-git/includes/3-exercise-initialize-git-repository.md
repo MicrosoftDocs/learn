@@ -14,19 +14,20 @@ During the process, you'll:
 ## Configure Git
 
 1. Open terminal
+
+1. Check Git version?
+
 1. Configure Git commit name and email address
 
 <!-- TODO see https://docs.microsoft.com/en-us/learn/modules/intro-to-git/2-exercise-configure-git?ns-enrollment-type=LearningPath&ns-enrollment-id=learn.student-evangelism.intro-to-vc-git -->
 
 ## Create and initialize a Git repository
 
-1. Create a folder for your repository. TODO
+1. Create a folder for your repository. TODO right way to do this for cross-plat compatibility?
 
-1. In the Visual Studio Code 
+2. In the Visual Studio Code terminal, run `git init`
 
-1. Run `git init`
-
-1. Using the Visual Studio Code terminal, execute the following command to reopen Visual Studio Code with your repository's folder loaded:
+3. Using the Visual Studio Code terminal, execute the following command to reopen Visual Studio Code with your repository's folder loaded:
 
    ```bash
    code --reuse-window .
