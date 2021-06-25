@@ -70,7 +70,6 @@ The following table lists some of the key differences between Azure Durable Func
 |--|--|--|
 | Development | Code-first (imperative) | Design-first (declarative) |
 | Connectivity |  About a dozen built-in binding types. You can write code for custom bindings. | Large collection of connectors. Enterprise Integration Pack for B2B. You can also build custom connectors. |
-| Actions | Each activity is an Azure Function. You write the code for activity functions. |  Large collection of ready-made actions. You integrate custom logic through custom connectors.  |
+| Actions | Each activity is an Azure Function. You write the code for activity functions. | Large collection of ready-made actions. You integrate custom logic through custom connectors.  |
 | Monitoring | Azure Application Insights | Azure portal,  Azure Monitor logs |
-| Management | REST API, Visual Studio | Azure portal,  REST API,  PowerShell,  Visual Studio |
-| Execution context | Can run locally  or in the cloud | Runs only in the cloud |
+| Management | REST API, PowerShell, Visual Studio | Azure portal,  REST API,  PowerShell,  Visual Studio, [Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurelogicapps#:~:text=%20Run%20the%20logic%20app%20locally%20%201%2cedit%20the%20value%20of%20AzureWebJobsStorage%20in...%20More%20) |
