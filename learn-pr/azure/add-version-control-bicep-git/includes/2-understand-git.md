@@ -10,6 +10,9 @@ Version control is a practice by which you maintain a history of changes to your
 
 Most version control systems work with all file types, but they're optimized for text files.
 
+> [!NOTE]
+> Version control is also sometimes called source code management, or SCM.
+
 Git is an open-source version control system. By using Git, you create _repositories_ that maintain history and track changes. You can use different repositories for each project, or you might choose to use a single repository for all your Bicep code.
 
 ## How does Git help with your Bicep code?

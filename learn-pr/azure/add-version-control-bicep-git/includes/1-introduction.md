@@ -6,7 +6,7 @@ Suppose you're responsible for deploying and configuring the Azure infrastructur
 
 ## What will we be doing?
 
-In this module, you'll create a Git repository and add some of your Bicep files to it. You'll explore some of important Git features, like commits, branches, and merges, and see how they can help as you write your Bicep code.
+In this module, you'll create a Git repository and add some of your Bicep files to it. You'll explore some important Git features, like commits, branches, and merges, and see how they can help as you write your Bicep code.
 
 ## What is the main goal?
 

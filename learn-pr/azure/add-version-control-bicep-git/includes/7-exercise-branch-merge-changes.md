@@ -1,13 +1,20 @@
 ## Create a branch in your repository
 
+1. Create a branch using the CLI: `git branch add-database`
+
 ## Update a file on your branch
 
-Including commit
+1. Add another Bicep module
+2. Update **main.bicep** again
+3. Inspect the diff
+4. Commit the change using VS Code
 
 ## Switch branches
 
-Switch back to main branch and see the change isn't there
+1. Check out the main branch by running `git checkout main`
+2. Look at the **main.bicep** file and see the change isn't there
 
 ## Merge your branch
 
-Merge back to main
+1. From the main branch, run `git merge add-database`
+2. Look at the **main.bicep** file again and see the change is now merged
