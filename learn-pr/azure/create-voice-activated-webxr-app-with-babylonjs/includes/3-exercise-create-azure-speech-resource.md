@@ -1,6 +1,6 @@
-Azure Speech-to-text API allows us to transcribe voice audio to text accurately without the need to implement our own model.
+Azure Speech-to-text allows us to transcribe voice audio to text accurately without the need to implement our own model.
 
-In order to use the Azure Speech-to-text API in the amusement park application, we must have an Azure Speech Resource as well as a subscription key to access the API from the code.
+In order to use the Azure Speech-to-text service in the amusement park application, we must have an Azure Speech Resource as well as a subscription key to access the API from the code.
 
 Here, you will create an Azure Speech Resource in the Azure portal and retrieve the subscription key from there.
 
