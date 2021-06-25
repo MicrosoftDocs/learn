@@ -15,6 +15,9 @@ Keys are similar to passwords. However, keys are much longer and more complex. I
 
 Certificates are another way to authenticate service principals. They are very secure, but also can be difficult to manage. Some organizations require the use of certificates for certain types of service principals. We won't discuss certificates in this module. However, if you work with a service principal that uses certificate authentication, it basically works the same way as any other service principal when it comes time to manage it and grant it permission for your pipeline.
 
+> [!NOTE]
+> Certificates are a good option when you can use them: they are harder for attackers to steal, and it's harder to intercept and modify requests that use certificates. However, certificates require more infrastructure and have some ongoing maintenance overhead.
+
 ## Work with keys for service principals
 
 When you create a service principal, you generally ask Azure to create a key at the same time. Azure typically generates a random key for you.
@@ -71,16 +74,17 @@ The `plaintextSecret` variable contains the service principal's key. You can't g
 
 ## Identify a service principal
 
-Service principals have several identifiers and names that you use to identify and work with them. The two you mostly use are:
+Service principals have several identifiers and names that you use to identify and work with them. The identifiers you mostly use are:
 
 - **Application ID:** The application registration has a unique identifier, often called an _application ID_ or sometimes a _client ID_. You typically use this as the username when the service principal signs into Azure.
+- **Object ID:** The application registration and the service principal each have their own separate object IDs, which are unique identifiers assigned by Azure AD. Occasionally you need to use these object IDs when you manage a service principal.
 - **Display name:** This is a human-readable name that describes the service principal.
 
 > [!TIP]
 > Use a clear, descriptive display name for your service principal. It's important to help your team understand what the service principal is for, so that nobody accidentally deletes it or changes its permissions.
 
 > [!CAUTION]
-> A display name isn't unique. Multiple service principals might share the same display name. Be careful when you grant permissions to a service principal by using its display name to identity it - you might accidentally give permissions to the wrong service principal. It's a good practice to use the application ID instead.
+> A display name isn't unique. Multiple service principals might share the same display name. Be careful when you grant permissions to a service principal by using its display name to identify it - you might accidentally give permissions to the wrong service principal. It's a good practice to use the application ID instead.
 
 When you create a service principal, you typically only set the display name, and Azure assigns the other names and identifiers automatically.
 

@@ -33,7 +33,7 @@ In Azure AD, a service principal is identified by an _application ID_, which is 
 
 ### Managed identities
 
-A _managed identity- is a special type of service principal. Like a normal service principal, it's designed for situations where a human isn't involved in the authentication process. But unlike a normal service principal, a managed identity doesn't require that you know or maintain its credentials. Instead, Azure manages the credentials automatically, and it provides the credentials to the resource that needs them. Managed identities are only available inside Azure, and they are a great way for Azure resources to authenticate themselves for situations like automating your Azure management, connecting to databases, and reading secret data from Key Vault.
+A _managed identity_ is a special type of service principal. Like a normal service principal, it's designed for situations where a human isn't involved in the authentication process. But unlike a normal service principal, a managed identity doesn't require that you know or maintain its credentials. Instead, Azure manages the credentials automatically, and it provides the credentials to the resource that needs them. Managed identities are available for Azure-hosted resources like virtual machines and App Service apps. They're a great way for Azure resources to authenticate themselves for situations like automating your Azure management, connecting to databases, and reading secret data from Key Vault.
 
 When you work with pipelines, you usually can't use managed identities. This is because managed identities require that you own and manage the Azure resources. When you work with Azure Pipelines and GitHub Actions, you usually rely on shared infrastructure provided by Microsoft or GitHub.
 
@@ -45,7 +45,7 @@ When you work with pipelines, you usually can't use managed identities. This is 
 
 ### Why can't you just use your user account?
 
-You might wonder why you need to create this whole new type of object just to authenticate a pipeline, when you've got user accounts that have worked perfectly well.
+You might wonder why you need to create this whole new type of object just to authenticate a pipeline, when you've got user accounts that work perfectly well.
 
 User accounts aren't designed or intended for unattended use. The authentication process for a user account often checks that a human is the person who is attempting to sign in. Increasingly often, organizations employ additional security checks during authentication, including MFA, CAPTCHA checks, and inspecting the device and network the user is using so that they can verify the legitimacy of a sign-in request.
 
@@ -73,4 +73,4 @@ When you create a service principal, most of the tools you use also create an ap
 
 A managed identity is a special kind of service principal that isn't associated with an application registration. Azure manages the configuration and credentials for a managed identity.
 
-To summarize, when you create a service principal, you actually first create an application registration, and then link it to your tenant by creating a service principal. Most of the tools you work with will do this for you so you're not even aware of it. You might not use all of the features of Azure AD applications when you work with deployment pipelines, but since service principals are related to applications, the same Azure AD object structure applies.
+To summarize, when you create a service principal, you actually first create an application registration, and then create a service principal for that application registration to use. Most of the tools you work with will do this for you so you're not even aware of it. You might not use all of the features of Azure AD applications when you work with deployment pipelines, but since service principals are related to applications, the same Azure AD object structure applies.

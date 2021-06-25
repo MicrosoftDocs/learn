@@ -36,7 +36,7 @@ quiz:
     - content: Your client can authenticate, but receives a warning that the key has expired.
       isCorrect: false
       explanation: Incorrect. Once a service principal's key has expired, the key can't be used to authenticate. You need to issue a new key.
-  - content: You're creating a service principal to run a pipeline. The pipeline deploys a Bicep template that creates a single storage account. Which of these has the minimum permission you need for your pipeline?
+  - content: You're creating a service principal to run a pipeline. The pipeline deploys a Bicep template that creates a single storage account. Which of the following options has the least privileged access that you need for your pipeline?
     choices:
     - content: |
         **Role definition:** Contributor<br />
