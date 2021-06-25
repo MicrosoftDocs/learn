@@ -1,0 +1,171 @@
+Your Cosmos DB template spec has been used throughout your organization to provision lots of new Cosmos DB accounts, and all of them have been configured to use continuous backup. Your security team has recently reviewed the Cosmos DB security capabilities, and they have decided that new accounts should use Azure AD authentication and Cosmos DB's role-based access control.
+
+In this exercise, you'll update your template spec with a new version that includes the updated authentication configuration.
+
+During the process, you'll:
+
+> [!div class="checklist"]
+> * Update your template to reconfigure the backup policy.
+> * Publish a new version of your template spec.
+> * Verify the template spec has been updated.
+> * Test the new version of your template spec by deploying another Cosmos DB account.
+
+## Update the template
+
+::: zone pivot="jsoncli,jsonpowershell"
+
+1. In Visual Studio Code, open the *azuredeploy.json* file.
+
+1. Update the *azuredeploy.json* file to include the following changes:
+
+   :::code language="json" source="code/7-template.json" highlight="21-43, 45-48, 75-108" :::
+
+1. Save the file.
+
+::: zone-end
+
+::: zone pivot="bicepcli,biceppowershell"
+
+1. In Visual Studio Code, open the *main.bicep* file.
+
+1. Update the *main.bicep* file to include the following changes:
+
+   :::code language="plaintext" source="code/7-template.bicep" highlight="9-22, 45-70" :::
+
+1. Save the file.
+
+## Convert the Bicep file to a JSON ARM template
+
+Convert your updated Bicep file to a JSON template before you publish it, using this command:
+
+::: zone-end
+
+::: zone pivot="bicepcli"
+
+```azurecli
+az bicep build --file main.bicep --outfile azuredeploy.json
+```
+
+::: zone-end
+
+::: zone pivot="biceppowershell"
+
+```powershell
+bicep build main.bicep --outfile azuredeploy.json
+```
+
+::: zone-end
+
+## Publish a new version of the template spec
+
+::: zone pivot="biceppowershell,jsonpowershell"
+
+Publish the template spec by using this Azure PowerShell cmdlet in the Visual Studio Code terminal:
+
+:::code language="azurepowershell" source="code/7-add-version.ps1" range="1-6" :::
+
+::: zone-end
+
+::: zone pivot="bicepcli,jsoncli"
+
+Publish the template spec by using this Azure CLI command in the Visual Studio Code terminal:
+
+:::code language="azurecli" source="code/7-add-version.sh" range="1-5" :::
+
+::: zone-end
+
+## Verify the template spec
+
+1. In your browser, go back to the Azure portal. Go to your resource group.
+
+1. Select the template spec. Notice that the latest version is now listed as **2.0**.
+
+   :::image type="content" source="../media/7-template-spec.png" alt-text="Screenshot of the Azure portal interface for the template spec, showing the latest version as 2.0." border="true":::
+
+1. Select the **Versions** menu item. Notice that both versions are now listed.
+
+   :::image type="content" source="../media/7-template-spec-versions.png" alt-text="Screenshot of the Azure portal interface for the template spec, showing the list of versions as 1.0 and 2.0." border="true":::
+
+   Template spec versions enable you to go back to previous versions of your template spec if you need to.
+
+## Deploy the new template spec version
+
+::: zone pivot="biceppowershell,jsonpowershell"
+
+1. Get the new template spec version's resource ID by executing the following Azure PowerShell command:
+
+   ```azurepowershell
+   $templateSpecVersionResourceId = ( `
+      Get-AzTemplateSpec `
+         -ResourceGroupName <rgn>[sandbox resource group name]</rgn> `
+         -Name ToyCosmosDBAccount `
+         -Version 2.0 `
+      ).Versions[0].Id
+   ```
+
+   Notice you use the `Versions` property to get the template spec version's resource ID.
+
+1. Your new template spec version has a parameter for the user principal ID. Use the following commands to get your own user account's principal ID:
+
+   ```azurepowershell
+   $token = (Get-AzAccessToken -ResourceUrl "https://graph.windows.net/").Token
+   $userObjectId = (Invoke-RestMethod -Uri 'https://graph.windows.net/me?api-version=1.6' -Headers @{ 'Authorization' = "Bearer $token"}).objectID
+   ```
+
+   The commands use the Microsoft Graph API to query your own user profile.
+
+1. Deploy the template spec by using this Azure PowerShell command in the Visual Studio Code terminal:
+
+   ```azurepowershell
+   New-AzResourceGroupDeployment `
+     -TemplateSpecId $templateSpecVersionResourceId `
+     -roleAssignmentPrincipalId $userObjectId
+   ```
+
+::: zone-end
+
+::: zone pivot="bicepcli,jsoncli"
+
+1. Get the template spec version's resource ID by executing the following Azure CLI command:
+
+   ```azurecli
+   templateSpecVersionResourceId=$(az ts show \
+     --name ToyCosmosDBAccount \
+     --version 2.0 \
+     --query id \
+     --output tsv)
+   ```
+
+1. Your template spec version has a parameter for the user principal ID. Use the following commands to get your own user account's principal ID:
+
+   ```azurecli
+   userObjectId=$(az ad signed-in-user show --query objectId --output tsv)
+   ```
+
+1. Deploy the template spec by using this Azure CLI command in the Visual Studio Code terminal:
+
+   ```azurecli
+   az deployment group create \
+     --template-spec $templateSpecVersionResourceId \
+     --parameters roleAssignmentPrincipalId=$userObjectId
+   ```
+
+::: zone-end
+
+This can take a minute or two to complete, and then you'll see a successful deployment.
+
+## Verify the deployment
+
+1. In your browser, go back to the Azure portal. Go to your resource group.
+
+1. Next to **Deployments**, select **2 Succeeded**.
+
+   :::image type="content" source="../media/7-deployment-succeeded.png" alt-text="Screenshot of the Azure portal interface for the resource group overview, with the deployments section showing that two succeeded." border="true":::
+
+1. Select the most recent deployment.
+
+   :::image type="content" source="../media/7-deployment.png" alt-text="Screenshot of the Azure portal interface for the deployments, with two deployments listed." border="true":::
+
+1. Select **Deployment details** to expand it. Notice that the Cosmos DB role-based access control resources has been deployed.
+
+   :::image type="content" source="../media/7-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with the Cosmos DB resources listed." border="true":::
