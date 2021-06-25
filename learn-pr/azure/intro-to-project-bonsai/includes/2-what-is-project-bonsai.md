@@ -12,7 +12,7 @@ Bonsai includes integrated simulation software support. This software integrates
 
 Bonsai consists of the following components which work together: 
 
-- Simulation
+- Training simulation
 - Training engine
 - Training curriculum
 - Brains
