@@ -11,13 +11,13 @@ stages:
   - job: 'Build'
     displayName: 'Build job'
     pool:
-      vmImage: 'ubuntu-18.04'
+      vmImage: 'ubuntu-20.04'
       demands:
       - npm
 
     variables:
       wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
-      dotnetSdkVersion: '3.1.300'
+      dotnetSdkVersion: '5.x'
 
     steps:
     - task: UseDotNet@2
@@ -72,7 +72,7 @@ stages:
   - job: Provision
     displayName: 'Provision Azure App Service'
     pool:
-      vmImage: 'ubuntu-18.04'
+      vmImage: 'ubuntu-20.04'
     variables:
     - group: Release
     steps:
@@ -110,7 +110,7 @@ stages:
     variables:
       WebAppNameDev: $[ dependencies.Provision.outputs['RunTerraform.WebAppNameDev'] ]
     pool:
-      vmImage: 'ubuntu-18.04'
+      vmImage: 'ubuntu-20.04'
     environment: dev
     strategy:
       runOnce:

@@ -22,7 +22,7 @@ In [Run functional tests in Azure Pipelines](/learn/modules/run-functional-tests
 
 In short, _functional tests_ verify that each function of the software does what it should. In other words, functional tests verify an application's functionality.
 
-_Nonfunctional tests_ check nonfunctional aspects of an application, such as performance and reliability. You can also do nonfunctional tests on systems that aren't apps, such as infrastructure components. One example of a nonfunctional test is to determine how many people can simultaneously sign in to an application without causing a problem, such as slower response times.
+_Nonfunctional tests_ check nonfunctional aspects of an application, such as performance and reliability. You can also run nonfunctional tests on systems that aren't apps, such as infrastructure components. One example of a nonfunctional test is to determine how many people can simultaneously sign in to an application without causing a problem, such as slower response times.
 
 Taking the _Space Game_ website as an example, a functional test might verify that the leaderboard appears correctly and that it shows the correct records when the user selects a filter. A nonfunctional test might verify that leaderboard filtering finishes in less than one second, even when many users connect to the website at the same time.
 

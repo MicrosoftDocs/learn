@@ -60,10 +60,11 @@ To create the App Service instances, you:
     az appservice plan create \
       --name tailspin-space-game-asp \
       --resource-group tailspin-space-game-rg \
-      --sku B1
+      --sku B1 \
+      --is-linux
     ```
 
-    The `--sku` argument specifies the **B1** plan, which runs on the **Basic** tier.
+    The `--sku` argument specifies the **B1** plan, which runs on the **Basic** tier. The `--is-linux` argument specifies to use Linux workers.
 
     > [!IMPORTANT]
     > If the **B1** SKU is unavailable in your Azure subscription, [choose a different plan](https://azure.microsoft.com/pricing/details/app-service/linux/), such as **S1** (**Standard**).
@@ -74,17 +75,20 @@ To create the App Service instances, you:
     az webapp create \
       --name tailspin-space-game-web-dev-$webappsuffix \
       --resource-group tailspin-space-game-rg \
-      --plan tailspin-space-game-asp
+      --plan tailspin-space-game-asp \
+      --runtime "DOTNET|5.0"
 
     az webapp create \
       --name tailspin-space-game-web-test-$webappsuffix \
       --resource-group tailspin-space-game-rg \
-      --plan tailspin-space-game-asp
+      --plan tailspin-space-game-asp \
+      --runtime "DOTNET|5.0"
 
     az webapp create \
       --name tailspin-space-game-web-staging-$webappsuffix \
       --resource-group tailspin-space-game-rg \
-      --plan tailspin-space-game-asp
+      --plan tailspin-space-game-asp \
+      --runtime "DOTNET|5.0"
     ```
 
 1. Run the following `az webapp list` command to list the host name and state of each App Service instance.
