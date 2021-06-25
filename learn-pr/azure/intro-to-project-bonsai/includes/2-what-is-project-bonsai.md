@@ -10,7 +10,7 @@ With Bonsai, your developers can codify what the AI should learn using human-fri
 
 Bonsai includes integrated simulation software support. This software integrates with common simulation software, which means that your developers can build Machine Teaching simulations using familiar software. 
 
-Bonsai consists of the following components which work together: 
+AI training with Bonsai consists of the following components which work together: 
 
 - Training simulation
 - Training engine
