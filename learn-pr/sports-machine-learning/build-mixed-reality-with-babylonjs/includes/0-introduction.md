@@ -4,7 +4,7 @@ Welcome to the Jam! Basketball champion and global icon LeBron James goes on an 
 
 This transformational journey is a manic mashup of two worlds that reveals just how far some parents will go to connect with their kids. When LeBron and his young son Dom are trapped in a digital space by a rogue AI, LeBron must get them home safely by leading Bugs, Lola Bunny, and the whole gang of notoriously undisciplined Looney Tunes to victory over the AI's digitized champions on the court: a powered-up roster of basketball stars as you’ve never seen them before. It's Tunes versus Goons in the highest-stakes challenge of LeBron's life, which will redefine his bond with his son and shine a light on the power of being yourself. The ready-for-action Tunes destroy convention, supercharge their unique talents, and surprise even "King" James by playing the game their own way.
 
-In this learning module, we'll introduce you to the core concepts of building Mixed Reality (MR) experiences with Babylon.js. We'll create a simple WebXR app that can be run cross-platform.
+In this learning module, we'll introduce you to the core concepts of building Mixed Reality (MR) experiences with Babylon.js. We'll create a WebXR app that can be run cross-platform.
 
 
 © 2021 Warner Bros. Ent. All Rights Reserved.
