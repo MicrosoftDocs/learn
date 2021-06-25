@@ -1,11 +1,11 @@
-TODO
+You've decided that your workflow could benefit from a version control system, and you're going to try Git. The first step is to install the tools you need, and then to initialize a repository. In this exercise you'll get everything ready so that you can start to work with Git.
 
 During the process, you'll:
 
 > [!div class="checklist"]
 > * Install and configure Git.
 > * Create and initialize a Git repository.
-> * Add a Bicep file and see how the repository's status changes.
+> * Add a Bicep file to the repository folder and see how the repository's status changes.
 
 ## Install Git
 
@@ -58,7 +58,7 @@ You've been working with Bicep enough that you have built up a collection of fil
 
 ## Inspect the repository status
 
-Git monitors the repository folder for changes, and you can query Git to see the list of files that have been modified. Here, you use both the Git CLI and Visual Studio Code to view the status of your repository.
+Git monitors the repository folder for changes, and you can query Git to see the list of files that have been modified. This is really useful to see what you've done and to verify you haven't accidentally added files or made changes you didn't mean to include. Here, you use both the Git CLI and Visual Studio Code to view the status of your repository.
 
 1. Using the Visual Studio Code terminal, execute the following command:
 
@@ -69,6 +69,8 @@ Git monitors the repository folder for changes, and you can query Git to see the
    Look at the results. TODO
 
 1. TODO Look at VS Code's 'changes' panel.
+
+   Notice that the status reported by both tools is the same. That's because both the Git CLI and Visual Studio Code use the same Git engine. You can mix and match the tools you use to work with your repositories, and use different tools based on what suits you best.
 
 > [!NOTE]
 > Even though you've saved the file into your repository's folder, Git isn't tracking it yet. You'll learn how Git keeps track of files in the next unit.

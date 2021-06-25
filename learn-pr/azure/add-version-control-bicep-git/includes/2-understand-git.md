@@ -29,7 +29,7 @@ Git is a _distributed_ version control system, which means you can have multiple
 
 In this module, we'll focus on local Git repositories, where you're the only person using them. In a future module, you'll learn about how you can distribute your Git repository and work collaboratively by using GitHub and Azure Repos.
 
-## Tools to work with Git
+## What tools will I need?
 
 In this module, you'll use two tools to work with your Git repository: Visual Studio Code and Git.
 
@@ -39,11 +39,11 @@ Visual Studio Code is a text editor for Windows, macOS, and Linux. It provides a
 
 You can write Bicep code using another text editor if you want, but Visual Studio Code is a great choice because it has Bicep support and it integrates with Git.
 
-### Git tool
+### Git
 
 Git is based on a command-line tool, and most of the documentation and examples you'll find online use the Git command-line interface (CLI). In this module, we'll use a mixture of CLI command and Visual Studio Code to work with Git.
 
 > [!TIP]
-> When your use of Git matures, you'll likely need to learn some more CLI commands. Later in this module we link to some good resources to continue your exploration of Git and its many advanced features.
+> As your use of Git matures, you'll need to learn some more advanced Git CLI commands. Later in this module we link to some good resources to continue your exploration of Git and its many advanced features.
 
 You need to install Git separately to Visual Studio Code. You'll see how to do this in the next unit. Once you install Git, Visual Studio Code detects it and enables its Git integration automatically.
