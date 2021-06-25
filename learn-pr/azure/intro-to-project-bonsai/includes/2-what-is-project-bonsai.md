@@ -37,9 +37,9 @@ The following are all domains that use simulations to model the behavior of comp
 
 You can use almost any simulation with Bonsai that has:
 
-- A defined start state
-- Iterates over time
-- Responds to external actions
+- Has a defined start state.
+- Iterates over time.
+- Responds to external actions.
 
 
 ### What is the Bonsai training engine?
@@ -116,4 +116,3 @@ Using the Bonsai platform helps simplify machine teaching so you can train and d
    - In the cloud
    - At the edge
    - On-premises
-
