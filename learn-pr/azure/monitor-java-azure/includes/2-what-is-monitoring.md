@@ -34,7 +34,7 @@ Azure provides **Azure Monitor**, which includes a set of services that develope
 - Metric alerts provide an alert trigger when a specified threshold is exceeded. For example, a metric alert can notify you when CPU usage is greater than 95 percent.
 - Log alerts are based on things written to log files. For example, a log alert can notify you when a web server has returned many 404 or 500 responses.
 
-Developers can monitor Azure applications, services, and infrastructure using any monitoring systems of their choice - such as Elastic Stack, Splunk, New Relic, Dynatrace, and App Dynamics. Though this module will focus on Azure Monitor, Log Analytics and Application Insights.
+You can monitor Azure applications, services, and infrastructure using any monitoring systems of your choice - such as Elastic Stack, Splunk, New Relic, Dynatrace, and App Dynamics. Though this module will focus on Azure Monitor, Log Analytics and Application Insights.
 
 ## Next steps
 
