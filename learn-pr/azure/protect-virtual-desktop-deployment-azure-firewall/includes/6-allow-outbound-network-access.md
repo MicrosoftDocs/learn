@@ -45,7 +45,7 @@ To allow the host pool outbound network access to Azure Virtual Desktop, create 
 
 When you add both rules, your rule collection will look similar to the following screenshot.
 
-:::image type="content" source="../media/6-firewall-rules-classic-application-rule-collection-form.png" alt-text="Screenshot that shows an example application rule collection form filled out.":::
+:::image type="content" source="../media/6-firewall-rules-classic-application-rule-collection-form.png" alt-text="Screenshot that shows an example application rule collection form filled out." lightbox="../media/6-firewall-rules-classic-application-rule-collection-form.png":::
 
 You'll walk through the specific steps to create the application rule collection in the next exercise unit.
 
@@ -56,6 +56,10 @@ Create a network rule collection and add the following rules:
 
 - Allow DNS: Allow traffic from your Active Directory Domain Server (AD DS) private IP address to * for TCP and UDP ports 53.
 - Allow KMS: Allow traffic from your Azure Virtual Desktop VMs to the Windows Activation Service TCP port 1688.
+
+When you add both network rules, your rule collection will look similar to the following screenshot.
+
+:::image type="content" source="../media/6-network-collection-example.png" alt-text="Screenshot that shows a network collection with added to allow DNS and KMS traffic." lightbox="../media/6-network-collection-example.png":::
 
 ### Allow secure outbound Internet access for your end users
 
