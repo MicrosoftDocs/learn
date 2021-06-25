@@ -17,7 +17,7 @@ Bonsai consists of the following components which work together:
 - Training curriculum
 - Brains
 
-### What is Bonsai simulation?
+### What is a training simulation?
 
 With Bonsai, you can use training simulations to replicate your real-world systems to create a realistic training context for Bonsai brains. Add simulations from a range of Bonsai simulation partners or use the Simulator API to integrate custom simulators.
 
