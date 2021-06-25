@@ -6,7 +6,7 @@ metadata:
   description: Learn how to create a LUIS conversation app.
   author: nrd26
   ms.author: chnoring
-  ms.date: 04/14/2020
+  ms.date: 06/25/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15

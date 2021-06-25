@@ -19,4 +19,4 @@ In this module, you'll:
 - Ability to use Health Bot
 - Ability to use the Azure portal
 
-*Produced in partnership with Nihal Dias and Annanya Vedala (Microsoft Learn Student Ambassadors) and the Microsoft Health Bot Product Group.*
+**Produced in partnership with Nihal Dias and Annanya Vedala (Microsoft Learn Student Ambassadors) and the Microsoft Health Bot Product Group.**
