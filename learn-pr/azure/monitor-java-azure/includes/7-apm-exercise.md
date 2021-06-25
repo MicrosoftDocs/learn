@@ -27,13 +27,13 @@ You can see the performance number for dependencies, particularly SQL calls:
 
 ![Dependenices](../media/4-petclinic-microservices-insights-on-dependencies.jpg)
 
-You can select a SQL call or a dependency to see the full end-to-end transaction in context:
+You can select a SQL call or a dependency to see the transaction in context:
 
 ![end-to-end](../media/4-petclinic-microservices-end-to-end-transaction-details.jpg)
 
 ### Failures/Exceptions
 
-Next, select **Failures** in the Application Insights resource menu located in the Investigate section. You will see the failure rate trends for your requests, how many of them are failing, and how many users are impacted. As an Overall view, you'll see some of the most useful distributions specific to the selected failing operation, including top three response codes, top three exception types, and top three failing dependency types
+Next, select **Failures** in the Application Insights resource menu located in the Investigate section. In this view, you'll see top three failure response codes, top three exception types, and top three failing dependency types.
 
 ![Exceptions](../media/7-petclinic-microservices-failures.jpg)
 
@@ -43,24 +43,42 @@ Select an exception and drill in for meaningful insights and actionable stack tr
 
 ### Metrics
 
+Spring Boot registers many core metrics: JVM, CPU, Tomcat, Logback...
 You can see metrics contributed by Spring Boot apps, Spring Cloud modules, and dependencies.
-The chart below shows `gateway-requests` (Spring Cloud Gateway), `hikaricp_connections` (JDBC Connections) and `http_client_requests`.
+The chart below shows `gateway-requests` (Spring Cloud Gateway), `hikaricp_connections` (JDBC Connections), and `http_client_requests`.
 
 ![gateway-requests](../media/4-petclinic-microservices-metrics.jpg)
 
-Spring Boot registers a number of core metrics: JVM, CPU, Tomcat, Logback...
-The Spring Boot auto-configuration enables the instrumentation of requests handled by Spring MVC.
-All those three REST controllers `OwnerResource`, `PetResource` and `VisitResource` have been instrumented by the `@Timed` Micrometer annotation at class level.
+### Custom Metrics
 
-* `customers-service` application has the following custom metrics enabled:
-  * @Timed: `petclinic.owner`
-  * @Timed: `petclinic.pet`
-* `visits-service` application has the following custom metrics enabled:
-  * @Timed: `petclinic.visit`
+To create a metric chart, open the Metrics tab and follow these steps:
 
-You can see these custom metrics in the `Metrics` blade:
+1. Ensure your Azure Spring Cloud is selected in the resource scope picker. The resource should already be populated if you opened metrics explorer from the resource's menu.
 
-![custom metrics](../media/4-petclinic-microservices-custom-metrics.jpg)
+2. Next, under **namespaces**, select the **azure.applicationinsights** namespace. The namespace is just a way to organize metrics so that you can easily find them.
+
+![add metrics](../media/7-custom-namespace.jpg)
+
+3. Next, under metrics, add the following custom metrics and aggregation:
+
+* Metric `petclinic_pet`, Aggregation: `count`
+
+![add metrics](../media/7-custom-metrics.jpg)
+
+4. Add the metrics for the `owner` and `visit` services:
+
+* Metric `petclinic_owner`, Aggregation: `count`
+* Metric `petclinic_visit`, Aggregation: `count`
+
+![add metrics](../media/7-custom-third.jpg)
+
+5. Next, on the top right hand side, change the graph type to **Area Chart**
+
+![add metrics](../media/7-custom-area.jpg)
+
+6. Your final graph will show the counts in the last 24 hours for each of the pet, vet and owner microservices:
+
+![custom metrics](../media/7-custom.jpg)
 
 ### Availability
 
@@ -70,7 +88,7 @@ You can use the Availability Test feature in Application Insights to monitor the
 
 ### Live Metrics
 
-Navigate to the Live Metrics blade where you can see live metrics practically in real-time, within only one second:
+Navigate to the Live Metrics blade where you can see live metrics practically in real time, within only one second:
 
 ![Live Metrics](../media/4-petclinic-microservices-live-metrics.jpg)
 
