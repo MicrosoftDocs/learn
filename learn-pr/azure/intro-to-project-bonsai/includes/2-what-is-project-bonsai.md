@@ -35,7 +35,7 @@ The following are all domains that use simulations to model the behavior of comp
 > [!NOTE]
 > Bonsai uses simulations and Deep Reinforcement Learning (DRL) to train brains. 
 
-You can use almost any simulation with Bonsai that has:
+You can use almost any simulation with Bonsai that:
 
 - Has a defined start state.
 - Iterates over time.
