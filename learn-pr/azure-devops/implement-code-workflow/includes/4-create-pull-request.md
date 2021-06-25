@@ -34,7 +34,7 @@ Although you could use the build pipeline you built in the previous module, let'
 1. Create a branch named `code-workflow`.
 
     ```bash
-    git checkout -b code-workflow
+    git checkout -B code-workflow
     ```
 
     The `-b` argument specifies to create a new branch if it doesn't exist. Omit the `-b` argument when you want to switch to an existing branch.

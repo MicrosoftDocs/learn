@@ -4,7 +4,7 @@ title: Exercise - Deploy a Docker container to Azure
 metadata:
   title: Exercise - Deploy a Docker container to Azure
   description: Extend the CI/CD pipeline to build and deploy a Docker container.
-  ms.date: 04/22/2020
+  ms.date: 06/23/2021
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
