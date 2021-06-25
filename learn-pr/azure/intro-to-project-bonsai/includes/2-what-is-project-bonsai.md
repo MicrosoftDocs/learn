@@ -14,9 +14,13 @@ solution.
 
 ## Project Bonsai definition
 
-With Bonsai, your developers can codify what the AI should learn using human-friendly statements like “avoid” and “maximize”. They don't need to explicitly define reward and terminal functions. 
+With Bonsai, you can codify what the AI should learn using human-friendly
+statements like "avoid" and "maximize" instead of having to explicitly define
+detailed reward and terminal functions. 
 
-Bonsai includes integrated simulation software support. This software integrates with common simulation software, which means that your developers can build Machine Teaching simulations using familiar software. 
+Bonsai includes integrated support for popular simulation software packages like
+Simulink, MATLAB, and AnyLogic. Let your simulation developers build machine
+teaching simulations using familiar software.
 
 AI training with Bonsai consists of the following components which work together: 
 
