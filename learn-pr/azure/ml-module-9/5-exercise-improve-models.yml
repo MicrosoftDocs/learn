@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout.exercise-improve-models
+title: Exercise - Visualize inputs and outputs
+metadata:
+  title: Exercise - Visualize inputs and outputs
+  description: Description :)
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+sandbox: true
+notebook: https://review.docs.microsoft.com/learn/modules/introduction-to-machine-learning/notebooks/5-exercise-improve-models.ipynb?branch=pr-en-us-17743 

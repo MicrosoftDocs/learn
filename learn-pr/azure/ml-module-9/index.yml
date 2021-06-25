@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout
+metadata:
+  title: Measure and optimize model performance with ROC, AUC, and dropout
+  description: Skeleton module for Jason to review. A soft introduction to machine learning.
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Measure and optimize model performance with ROC, AUC, and dropout
+summary: Skeleton module for Jason to review. A soft introduction to machine learning.
+abstract: | 
+  In this module, you will:
+  - Explore how machine learning differs from traditional software
+  - Define about models, objectives, inputs, and outputs
+  - Create and test a machine learning model
+  - Load a model and use it with new data
+prerequisites: None
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+- beginner
+roles: 
+- ai-engineer
+- data-scientist
+- student
+products: 
+- azure
+units: 
+- learn.machinelearning.optimize-model-performance-roc-auc-dropout.introduction
+- learn.machinelearning.optimize-model-performance-roc-auc-dropout.creating-ml-models
+- learn.machinelearning.optimize-model-performance-roc-auc-dropout.exercise-create-ml-model
+- learn.machinelearning.optimize-model-performance-roc-auc-dropout.what-is-error
+- learn.machinelearning.optimize-model-performance-roc-auc-dropout.exercise-improve-models
+- learn.machinelearning.optimize-model-performance-roc-auc-dropout.testing-models
+- learn.machinelearning.optimize-model-performance-roc-auc-dropout.exercise-test-ml-models
+- learn.machinelearning.optimize-model-performance-roc-auc-dropout.knowledge-check
+- learn.machinelearning.optimize-model-performance-roc-auc-dropout.summary
+badge: 
+  uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout.badge #add the uid for your achievement badge.
