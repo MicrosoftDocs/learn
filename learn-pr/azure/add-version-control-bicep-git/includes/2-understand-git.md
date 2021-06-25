@@ -41,9 +41,9 @@ You can write Bicep code using another text editor if you want, but Visual Studi
 
 ### Git tool
 
-Git is based on a command-line tool, and most of the documentation and examples you'll find online use the Git command-line interface (CLI). However, in this module, we'll use Visual Studio Code to work with Git.
+Git is based on a command-line tool, and most of the documentation and examples you'll find online use the Git command-line interface (CLI). In this module, we'll use a mixture of CLI command and Visual Studio Code to work with Git.
 
 > [!TIP]
-> When your use of Git matures, you'll likely need to learn some basic CLI commands. Later in this module we link to some good resources to continue your exploration of Git and its many advanced features.
+> When your use of Git matures, you'll likely need to learn some more CLI commands. Later in this module we link to some good resources to continue your exploration of Git and its many advanced features.
 
 You need to install Git separately to Visual Studio Code. You'll see how to do this in the next unit. Once you install Git, Visual Studio Code detects it and enables its Git integration automatically.

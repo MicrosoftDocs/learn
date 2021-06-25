@@ -5,7 +5,7 @@ During the process, you'll:
 > [!div class="checklist"]
 > * Install and configure Git.
 > * Create and initialize a Git repository.
-> * Add a Bicep file and see how the repository status changes.
+> * Add a Bicep file and see how the repository's status changes.
 
 ## Install Git
 

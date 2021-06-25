@@ -1,3 +1,13 @@
+TODO
+
+During the process, you'll:
+
+> [!div class="checklist"]
+> * Commit the file you created in the previous exercise.
+> * Add a new Bicep module, and compare the differences in your Bicep code by using Git.
+> * Commit the updated Bicep code.
+> * View the commit history and the main Bicep file's history.
+
 ## Commit the Bicep file to your Git repository
 
 1. Run `git commit -m ...`

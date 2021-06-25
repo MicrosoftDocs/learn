@@ -1,9 +1,18 @@
+TODO
+
+> [!div class="checklist"]
+> * Create a branch and switch to it.
+> * Make some changes to your Bicep code on the branch.
+> * Switch back to your main branch.
+> * Merge your branch.
+
 ## Create a branch in your repository
 
 1. Create a branch using the CLI: `git branch add-database`
 
 ## Update a file on your branch
 
+1. Check out the branch by using VS Code
 1. Add another Bicep module
 2. Update **main.bicep** again
 3. Inspect the diff
