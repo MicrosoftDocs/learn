@@ -1,4 +1,4 @@
-In this unit, you'll see how to denormalize an aggregate to write the top 10 customers query for your e-commerce site. You'll use the transactional batch feature in the Azure Cosmos DB .NET SDK that simultaneously inserts a new sales order and updates the customer's salesOrderCount property, both of which are in the same logical partition.
+In this unit, you'll see how to denormalize an aggregate to write the top 10 customers query for your e-commerce site. You'll use the transactional batch feature in the Azure Cosmos DB .NET SDK that simultaneously inserts a new sales order and updates the customer's `salesOrderCount` property, both of which are in the same logical partition.
 
 For this exercise, you'll complete the following steps:
 
@@ -7,7 +7,7 @@ For this exercise, you'll complete the following steps:
 - Complete the C# code to increment *salesOrderCount* for the customer.
 - Complete the C# code to implement the transaction to insert the new sales order and update the customer record by using *transactional batch*.
 - Run a query for a specific customer to see the customer's record and all of the customer's orders.
-- Create a new sales order for that customer and update their *salesOrderCount* property.
+- Create a new sales order for that customer and update their `salesOrderCount` property.
 - Run your top 10 customers query to see what the results currently are.
 - Show how you can use transactional batch when a customer cancels an order.
 
@@ -45,7 +45,7 @@ To get to the code that you'll use in this unit, do the following:
 
     First, the customer record is retrieved by calling `ReadItemAsync()` and passing in the `customerId` as both the partition key and ID.
 
-1. At line 486, below the `//To-Do:` comment, increment the value of the **salesOrderCount** by pasting the following code snippet:
+1. At line 486, below the `//To-Do:` comment, increment the value of `salesOrderCount` by pasting the following code snippet:
 
     ```csharp
     //Increment the salesOrderTotal property
@@ -62,9 +62,9 @@ To get to the code that you'll use in this unit, do the following:
 
     Your new sales order object has a header and detail structure typical of sales orders in an e-commerce application.
 
-    The sales order header has an `orderId`, `customerId`, `orderDate`, and `shipDate`, which you'll leave blank.
+    The sales order header has `orderId`, `customerId`, `orderDate`, and `shipDate`, which you'll leave blank.
 
-    Because your customer container contains both customer and sales order entities, your sales order object also contains your discriminator property, `type`, with the value of "salesOrder." This helps you distinguish a sales order from a customer object in your customer container.
+    Because your customer container contains both customer and sales order entities, your sales order object also contains your discriminator property, `type`, with the value of `salesOrder`. This helps you distinguish a sales order from a customer object in your customer container.
 
     Farther down, you can also see the two products for the order that make up the details section in your sales order.
 
@@ -108,11 +108,11 @@ To get to the code that you'll use in this unit, do the following:
 
 Because you designed your database to store both the customer and all their sales orders in the same container by using `customerId` as your partition key, you can query the customer container and return the customer's record and all of the customer's sales orders in a single operation.
 
-1. On the main menu, select **c** to run the menu item for *Query for customer and all orders*. This query returns the customer record, followed by all the customer's sales orders. You should see all the customer's sales orders output on the screen.
+1. On the main menu, select **c** to run the menu item for **Query for customer and all orders**. This query returns the customer record, followed by all the customer's sales orders. You should see all the customer's sales orders output on the screen.
 
-   Note that the last order was for a *Road-650 Red, 58* for $782.99.
+   Note that the last order was for a **Road-650 Red, 58** for $782.99.
 
-1. Scroll up to *Print out customer record and all their orders*.
+1. Scroll up to **Print out customer record and all their orders**.
 
    Note that the `salesOrderCount` property shows two sales orders.
 
@@ -125,13 +125,13 @@ Because you designed your database to store both the customer and all their sale
 Create a new sales order for the same customer, and update the total sales orders saved in their customer record.
 
 1. Press any key in the window to return to the main menu.
-1. Select **d** to run the menu item for *Create new order and update order total*.
+1. Select **d** to run the menu item for **Create new order and update order total**.
 1. Press any key to return to the main menu.
 1. Select **c** to run the same query again.
 
-   Note that the new sales order shows *HL Mountain Frame - Black, 38* and *Racing Socks, M*.
+   Note that the new sales order shows **HL Mountain Frame - Black, 38** and **Racing Socks, M**.
 
-1. Scroll back up to *Print out customer record and all their orders*.
+1. Scroll back up to **Print out customer record and all their orders**.
 
    Note that the `salesOrderCount` property shows three sales orders.
 
@@ -145,12 +145,12 @@ As with any e-commerce application, customers also cancel orders. You can do the
 
 1. Press any key to return to the main menu.
 
-1. Select **f** to run the menu item for *Delete order and update order total*.
+1. Select **f** to run the menu item for **Delete order and update order total**.
 
 1. Press any key to return to the main menu.
 1. Select **c** to run the same query again to confirm that the customer record is updated.
 
-   Note that the new order is no longer returned. If you scroll up, you can see that `salesOrderCount` value has returned to 2.
+   Note that the new order is no longer returned. If you scroll up, you can see that `salesOrderCount` value has returned to `2`.
 
 ## View the code that deletes a sales order
 
@@ -187,7 +187,7 @@ Let's look at the query for your top 10 customers.
 
     This query is fairly simple, with a `TOP` statement to limit the number of records returned and an `ORDER BY` on your `salesOrderCount` property in descending order.
 
-    Also notice the discriminator property of `type` with a value of *customer*, so you return only back customers because your customer container has both customers and sales orders within it.
+    Also notice the discriminator property of `type` with a value of `customer`, so you return only back customers because your customer container has both customers and sales orders within it.
 
 1. Select CTRL+Q to close Visual Studio Code.
 1. To start the application again, run the following command:
