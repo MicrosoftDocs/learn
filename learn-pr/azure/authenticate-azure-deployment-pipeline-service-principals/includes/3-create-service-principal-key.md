@@ -107,11 +107,15 @@ az ad sp credential reset --name b585b740-942d-44e9-9126-f1181c95d497
 
 ::: zone pivot="powershell"
 
-To reset a key for a service principal, first use the `New-AzADSpCredential` to add a new credential, then use the `Remove-AzADSpCredential` cmdlet to remove the old credential. It's best to use the application ID, as in this example:
+To reset a key for a service principal, first use the `Remove-AzADSpCredential` cmdlet to remove the existing credential, then use the `New-AzADSpCredential` cmdlet to add a new credential. These cmdlets both use the service principal's object ID to identify it, before you use the cmdlets you need to obtain this from the application ID:
 
 ```azurepowershell
-Remove-AzADSpCredential -ServicePrincipalName b585b740-942d-44e9-9126-f1181c95d497
-New-AzADSpCredential -ServicePrincipalName b585b740-942d-44e9-9126-f1181c95d497
+$applicationId = 'b585b740-942d-44e9-9126-f1181c95d497'
+$servicePrincipalObjectId = (Get-AzADServicePrincipal -ApplicationId $applicationId).Id
+
+Remove-AzADSpCredential -ObjectId $servicePrincipalObjectId
+$newCredential = New-AzADSpCredential -ObjectId $servicePrincipalObjectId
+$plaintextSecret = [System.Net.NetworkCredential]::new('', $newCredential.Secret).Password
 ```
 
 ::: zone-end
