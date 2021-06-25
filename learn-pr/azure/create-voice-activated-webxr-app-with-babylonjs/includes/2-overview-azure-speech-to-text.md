@@ -1,6 +1,6 @@
 Speech-to-text is a technology that accurately converts voice audio to text data in real time. It has become the underlying technology that supports most voice-related systems today. For example, speech-to-text powers real-time transcription to make live videos or meetings more accessible to people with hearing impairments.
 
-In the scenario of the amusement park application, we can use S to recognize magic spells. When a user says the spell, the speech-to-text service converts the audio data to text. Then, the app can match the transcribed text against the text representation of the expected spell to see if the user has said a certain spell.
+In the scenario of the amusement park application, we can use speech-to-text to recognize magic spells. When a user says the spell, the speech-to-text service converts the audio data to text. Then, the app can match the transcribed text against the text representation of the expected spell to see if the user has said a certain spell.
 
 Here, you will learn about the speech-to-text service provided as a part of the Azure Speech Services.
 
