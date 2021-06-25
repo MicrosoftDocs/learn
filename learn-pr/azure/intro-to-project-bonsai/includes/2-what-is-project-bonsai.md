@@ -79,7 +79,11 @@ operators.
 
 ### What are Bonsai brains?
 
-You create Bonsai brains through training in the training engine and using the training curriculum. A Bonsai brain is a trained AI model. The model you create has the ability to control and optimize your real-world systems. Your Bonsai brain can contain multiple versions. 
+A Bonsai brain is an AI model in the process of learning on the Bonsai platform.
+Brains are guided by the training engine as they learn the provided curriculum.
+You can save new brain versions and revisit previous versions as you develop
+your curriculum. The final, trained brain that you export has the ability to
+control and optimize your real-world systems.
 
 When you make significant changes to your training curriculum, Bonsai creates a new version of your brain. 
 
@@ -112,5 +116,4 @@ Using the Bonsai platform helps simplify machine teaching so you can train and d
    - In the cloud
    - At the edge
    - On-premises
-
 
