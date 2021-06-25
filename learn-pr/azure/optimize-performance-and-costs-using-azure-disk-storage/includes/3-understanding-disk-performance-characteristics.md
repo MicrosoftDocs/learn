@@ -1,11 +1,11 @@
 Application performance often depends on how quickly it can read and write data. To understand how to improve application performance, you first must understand how performance is measured and the settings and choices that affect it.
 
-## Disk performance measures
+## Disk performance characteristics
 
 To choose the right disk type, it's important that you understand the performance indicators. The following indicators express performance:
 
-- Input/output operations per second (IOPS). IOPS measure the rate at which the disk can complete a mix of read and write operations. IOPS directly affects your application performance. Some applications, such as retail websites, need high IOPS to manage all the small and random I/O requests that must be processed quickly to keep the site responsive. Higher performance disks have higher IOPS values.
-- Throughput. Throughput measures the rate at which data can be moved onto the disk from the host computer and off the disk to the host computer. Throughput is also called *data transfer rate* and is measured in megabytes per second (mbps). If your application is performing I/O with large blocks of data, it requires high throughput. Higher performance disks have higher throughput.
+- Input/output operations per second (IOPS). IOPS is the number of requests that your application is sending to the disks in one second. IOPS directly affects your application performance. Some applications, such as retail websites, need high IOPS to manage all the small and random I/O requests that must be processed quickly to keep the site responsive. Higher performance disks have higher IOPS values.
+- Throughput. Throughput is the amount of data that your application is sending to the disks in a specified interval. Throughput is also called data transfer rate and is measured in megabytes per second (MBps). If your application is performing I/O with large blocks of data, it requires high throughput. Higher performance disks have higher throughput.
 - Latency. Latency expresses the time it takes your app to send a request to the disk and receive a response. Latency puts a limit on effective IOPS. For example, if your disk can handle 5,000 IOPS but each operation takes 10 ms to process, your app will be capped to 100 operations per second because of the processing time. The latency is significantly improved if you enable ReadOnly host caching.
 
 ## IOPS vs. throughput
