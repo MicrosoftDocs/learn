@@ -64,9 +64,9 @@ You can use Durable Functions to implement many common workflow patterns. These 
 
 Durable Functions and Logic Apps are both Azure services that enable serverless workload. Azure Durable Functions is intended as a powerful serverless compute option to run custom logic. Azure Logic Apps is better suited for integrating Azure services and components. You can use either technology to create complex orchestrations. With Azure Durable Functions, you develop orchestrations by writing code and using the Durable Functions extension. With Logic Apps, you create orchestrations by using the design surface or editing configuration files.
 
-The following table lists some of the key differences between Azure Durable Functions and Azure Logic Apps:
+The following table lists some of the key differences between Azure Durable Functions and Azure Logic Apps.
 
-|  | Azure Durable Functions | Azure Logic Apps |
+| Element | Azure Durable Functions | Azure Logic Apps |
 |--|--|--|
 | Development | Code-first (imperative) | Design-first (declarative) |
 | Connectivity |  About a dozen built-in binding types. You can write code for custom bindings. | Large collection of connectors. Enterprise Integration Pack for B2B. You can also build custom connectors. |
