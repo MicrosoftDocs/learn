@@ -56,7 +56,7 @@ would be able to:
 
 ## What will we be doing?
 
-You'll assess the capabilities of Project Bonsai and determine whether it's a good choice to help manage implement AI. To do this, you'll:
+You'll assess the capabilities of Project Bonsai to develop and deploy AI-powered control systems. To do this, you'll:
 
 - Identify the key features and components of Bonsai.
 - Describe the function of these components.
@@ -66,4 +66,3 @@ You'll assess the capabilities of Project Bonsai and determine whether it's a go
 ## What is the main goal?
 
 By the end of this module, you'll be able to determine whether Bonsai is suitable for your organization. You'll also be able to describe how Bonsai can help accelerate AI-powered automation development. 
-
