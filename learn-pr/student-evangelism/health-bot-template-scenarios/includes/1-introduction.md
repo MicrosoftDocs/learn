@@ -17,4 +17,4 @@ In this module, you will:
 - Basic understanding of the Health Bot service
 - Ability to use the Azure portal
 
-***Produced in partnership with Dwitrisha Saha and Foteini Savvidou, Microsoft Learn student ambassadors, and the Azure Health Bot product group***
+**Produced in partnership with Dwitrisha Saha and Foteini Savvidou, Microsoft Learn student ambassadors, and the Azure Health Bot product group**

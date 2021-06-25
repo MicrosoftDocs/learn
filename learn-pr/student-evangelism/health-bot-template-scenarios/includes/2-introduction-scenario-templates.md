@@ -7,7 +7,7 @@ Scenarios are conversational flows that are programmed into the bot. Typically, 
 There are two types of scenarios: built-in and custom. Built-in scenarios enable important functionality, like:
 
 - Showing a help menu or presenting the terms of service to users.
-- Performing tasks such as triaging, checking symptoms, or answering questions about medical conditions and types of drugs. 
+- Performing tasks such as triaging, checking symptoms, or answering questions about medical conditions and types of drugs.
 
 Custom scenarios extend the functionality of the Health Bot service. They can integrate with external data sources to create engaging experiences for users.
 
