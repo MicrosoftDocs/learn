@@ -74,33 +74,49 @@ az disk create -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --siz
     myPublicIP1=$(az network public-ip show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM1PublicIP --query 'ipAddress' --output tsv)
     ```
 
-1. Connect to the first VM by using SSH:
+1. Connect to the first VM over SSH:
 
     ```bash
     ssh azureuser@$myPublicIP1
     ```
 
 1. When prompted for **Are you sure you want to continue connecting (yes/no)**, enter **yes**, and then select **Enter.**
-1. To install **sg3-utils**, run the following command, select **Enter**, enter **Y**, and then select **Enter** to continue installing:
+1. To install **sg3-utils**, run the following commands:
 
     ```bash
-    # Install sg3-utils
-    sudo apt-get install sg3-utils
-      
-    # Read the current reservation. This command will identify the current reservations that exist for the shared disk. Since this is the first time that we run, there should be no new reservations.
+    sudo apt-get update
+    sudo apt-get install -y sg3-utils
+    ```
+
+1. To read the current reservation, run this command:
+
+    ```bash
     sudo sg_persist /dev/sdc -s
     ```
 
+    This command identifies the current reservations that exist for the shared disk. Since this is the first time that we run, there should be no new reservations.
+
     :::image type="content" source="../media/05-Disk-status-without-VM-registration.PNG" alt-text="Disk-status-without-VM-registration." border="true":::
 
+1. Run the following command to register new reservation key 1234 on **myVM1**:
+
     ```bash
-    # Register new reservation key 1234 on **myVM1**. This command will provide SCSI_PR registration, which ensure that VM1 can read or write to the new shared disk.
     sudo sg_persist --register --device /dev/sdc --param-rk=0 --param-sark=1234 --out
-       
-    # Read back the keys on VM1. Now the command should show one reservation  to the shared disk for VM1.
+    ```
+
+    This command will provide SCSI_PR registration, which ensure that VM1 can read or write to the new shared disk.
+
+1. Read back the keys on VM1:
+
+    ```bash
     sudo sg_persist /dev/sdc -s
-      
-    # Exit the secure shell session from **myVM1**
+    ```
+
+    The command should show one reservation to the shared disk for VM1.
+
+1. Exit the SSH session:
+
+    ```bash
     exit
     ```
 
@@ -115,11 +131,12 @@ az disk create -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --siz
     ```
 
 1. When prompted for **Are you sure you want to continue connecting (yes/no)?**, enter **yes**, and then select **Enter.**
-1. To install **sg3-utils**, run the following command, select **Enter**, enter **Y**, and then select  **Enter** to continue installing:
+1. To install **sg3-utils**, run the following commands:
 
     ```bash
     # Install sg3-utils
-    sudo apt-get install sg3-utils
+    sudo apt-get update
+    sudo apt-get install -y sg3-utils
 
     # Register the key 1235 on VM2. This command will provide SCSI_PR registration for VM2, so it can read or write on the shared disk.
     sudo sg_persist --register --device /dev/sdc --param-rk=0 --param-sark=1235 --out
