@@ -58,7 +58,7 @@ quiz:
       explanation: "Incorrect. QnAMaker provides question- and answer-based chat bots by first building a knowledge base."
     - content: "Text Analytics"
       isCorrect: false
-      explanation: "Incorrect. Text Analytics provides numerous text-based APIs, including language detection, sentiment analysis, and key phrase extraction."
+      explanation: "Incorrect. Text Analytics provides several text-based APIs. These APIs include language detection, sentiment analysis, and key phrase extraction."
   - content: "Which of the following Bot Framework Composer features is used exclusively to support conversation flow control?"
     choices:
     - content: "Dialogs"
@@ -66,7 +66,7 @@ quiz:
       explanation: "Correct. Dialogs provide logical conversational flow within a Bot Framework Composer bot."
     - content: "Skills"
       isCorrect: false
-      explanation: "Incorrect. While skills can contribute to conversation logic, they are more widely used to perform complex tasks and workflows within a bot."
+      explanation: "Incorrect. Skills do contribute to conversation logic. However, they're more widely used to perform complex tasks and workflows within a bot."
     - content: "Cards"
       isCorrect: false
       explanation: "Incorrect. Cards provide rich text presentation including text, images, and video."
