@@ -81,7 +81,7 @@ With the application registered in the Azure AD tenant, you can now proceed with
 1. Use your preferred text editor to review the content of the **./src/App.js** file, which retrieves an access token from Azure AD for a single-page application:
 
     > [!NOTE]
-    > The sample code is based on [Tutorial: Sign in users and call the Microsoft Graph API from a React single-page app (SPA) using auth code flow](https://docs.microsoft.com/azure/active-directory/develop/tutorial-v2-react?azure-portal=true).
+    > The sample code is based on [Tutorial: Sign in users and call the Microsoft Graph API from a React single-page app (SPA) using auth code flow](/azure/active-directory/develop/tutorial-v2-react?azure-portal=true).
 
     The **./src/App.js** file has the following content:
 
