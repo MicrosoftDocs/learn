@@ -21,7 +21,6 @@ Introduction to testing concepts
 
 - Ability to write C# at the beginner level with C# concepts including writing methods and creating projects.
 - Basic familiarity with debugging an app.
-- Visual Studio should be installed.
 
 ## Summary
 
@@ -51,7 +50,7 @@ Learn the common best practices, theory, and anti-patterns to avoid when writing
 
     There are many reasons you may be interested in starting testing. Perhaps your manager, mentor, or professor just asked you to add tests to your code. Maybe your company is interested in improving code quality and catching bugs faster. Maybe another developer asked what your code coverage is like in a discussion on code quality. Maybe the behavior of your app is growing quickly and you need a formal way to capture and check all functionality as your project continues to scale. This learning module will cover why we test and a brief introduction to testing software best practices. We'll go over different types of testing starting at the most fundamental level, unit tests. We'll also touch on various schools of thought around testing. There are limitless testing technologies out there, but no matter your language or software stack, this guidance should help you to get a grasp of the basic concepts and help you avoid common pitfalls.
 
-    If you want to get started testing right away see the [Create tests C# tutorial](TBD) that dives into writing, running, and managing tests.
+    If you want to get started testing right away see the [Create tests C# tutorial](../../visual-studio-test-tools/resources/design-doc.md) that dives into writing, running, and managing tests.
 
 1. **Why we test**
 
@@ -82,14 +81,6 @@ Learn the common best practices, theory, and anti-patterns to avoid when writing
             - 70%
             - 50%
             - **There is no one true answer. Your code coverage goal depends on the repository.**
-
-    1. **Exercise - exercise unit title**
-
-        List the steps which apply the learning content from previous unit:
-
-        1. Step
-        1. Step
-        1. Step
 
 1. **Types of testing and the testing pyramid**
 
@@ -131,14 +122,6 @@ Learn the common best practices, theory, and anti-patterns to avoid when writing
             - Integration
             - Performance
 
-    1. **Exercise - exercise unit title**
-
-        List the steps which apply the learning content from previous unit:
-
-        1. Step
-        1. Step
-        1. Step
-
 1. **Schools of thought**
 
     - Test Driven Development (TDD)
@@ -163,14 +146,6 @@ Learn the common best practices, theory, and anti-patterns to avoid when writing
             - DRY
             - It depends on the needs of the repo and the team!
             - BDD
-
-    1. **Exercise - exercise unit title**
-
-        List the steps which apply the learning content from previous unit:
-
-        1. Step
-        1. Step
-        1. Step
 
 1. **Summary**
 
