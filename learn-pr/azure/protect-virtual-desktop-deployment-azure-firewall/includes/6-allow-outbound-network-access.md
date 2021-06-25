@@ -2,7 +2,7 @@ When you plan an Azure Firewall deployment to protect a workload like Azure Virt
 
 Recall from the accounting firm example, that you can't have any unauthorized network traffic in your Azure Virtual Desktop environment. You want to limit outbound network traffic for Azure Virtual Desktop by using Azure Firewall.
 
-For Azure Virtual Desktop to work, the session host virtual machines (VMs) need outbound internet access to the Azure Virtual Desktop service. The VMs might also need outbound internet access for your users.
+For Azure Virtual Desktop to work, the host pool needs outbound internet access to the Azure Virtual Desktop service. The host pool might also need outbound internet access for your users.
 
 <!-- Diagram to show the pieces?? highlight from one of previous diagrams-->
 
@@ -10,8 +10,8 @@ For Azure Virtual Desktop to work, the session host virtual machines (VMs) need 
 
 After you've deployed Azure Firewall, you need to route all traffic through it. In the next exercise unit, you'll complete the following three steps.
 
-1. Create a route table in the same resource group as your session host VMs and firewall.
-1. Associate the route table to the subnet that your session host VMs uses.
+1. Create a route table in the same resource group as your host pool and firewall.
+1. Associate the route table to the subnet that your host pool uses.
 1. On the route table, add the route to the firewall.
 
 After you complete those steps, all traffic will route to Azure Firewall. By default, the firewall denies access to everything. So you need to configure conditions under which traffic is allowed through the firewall.

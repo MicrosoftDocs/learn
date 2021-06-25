@@ -1,6 +1,6 @@
 In the accounting firm scenario, your organization is using Azure Virtual Desktop to provide your workforce access to virtualized desktops and apps.
 
-So, in this unit, you create a host pool and  a VM that'll act as a session host. To avoid having to domain join the VM, you manually install the Azure Virtual Desktop agents to register the VM to the host pool. You'll then have a Azure Virtual Desktop deployment that you can use in the rest of the module exercises.
+So, in this unit, you create a host pool and add a VM that'll act as a session host. To avoid having to domain join the VM, you manually install the Azure Virtual Desktop agents to register the VM to the host pool. You'll then have a Azure Virtual Desktop deployment that you can use in the rest of the module exercises.
 
 [!include[](../../../includes/azure-subscription-prerequisite.md)]
 
@@ -65,7 +65,7 @@ Create a registration token to authorize a session host to join the host pool.
 
 1. Copy the token to a note app like Notepad.  
 
-## Create subnet and virtual network for session host
+## Create a subnet and virtual network for the host pool
 
 In Cloud Shell, run the following command to create a subnet and virtual network in the same location as the resource group.
 

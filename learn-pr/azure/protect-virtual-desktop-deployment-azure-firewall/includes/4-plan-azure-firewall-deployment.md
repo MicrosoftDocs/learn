@@ -7,7 +7,7 @@ Recall that Azure Firewall is best deployed using a hub and spoke network topolo
 - A virtual network that acts as the central connectivity point. This network is the hub virtual network.
 - One or more virtual networks that are peered to the hub. These peers are the spoke virtual networks and are used to provision workload servers.
 
-You deploy the firewall instance in a subnet of the hub virtual network and then configure all inbound and outbound traffic to go through the firewall. You'll use this configuration when you deploy Azure Firewall to protect the session host VMs for Azure Virtual Desktop.
+You deploy the firewall instance in a subnet of the hub virtual network and then configure all inbound and outbound traffic to go through the firewall. You'll use this configuration when you deploy Azure Firewall to protect the host pool for Azure Virtual Desktop.
 
 ## Azure Firewall rules
 
@@ -39,12 +39,12 @@ Recall that Azure Firewall offers many features designed to make it easier to cr
 
 ## Deployment steps for Azure Firewall
 
-In the previous exercise, we created a virtual network with a subnet, and deployed a session host VM for Azure Virtual Desktop into that subnet. In the next exercises, you'll complete the following steps to deploy Azure Firewall to protect the session host VM.
+In the previous exercise, you created a host pool and virtual network with a subnet. You deployed a session host VM into that subnet and registered it with the host pool. In the next exercises, you'll complete the following steps to deploy Azure Firewall to protect the host pool.
 
 **Step 1: Set up the network**
 
 - Create a hub virtual network that includes a subnet for the firewall deployment.
-- Peer the hub and spoke networks. In the next exercise, you'll peer the hub virtual network with the virtual network used by Azure Virtual Desktop.  
+- Peer the hub and spoke networks. In the next exercise, you'll peer the hub virtual network with the virtual network used by the host pool of Azure Virtual Desktop.  
 
 **Step 2: Deploy Azure Firewall**
 

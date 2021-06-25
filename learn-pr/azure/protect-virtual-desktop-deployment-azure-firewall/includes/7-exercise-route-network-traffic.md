@@ -2,7 +2,7 @@ In the previous exercise, you deployed Azure Firewall. Now you need to route all
 
 ## Route all traffic through the firewall
 
-For the subnet used by the session host, configure the outbound default route to go through the firewall.
+For the subnet used by the host pool, configure the outbound default route to go through the firewall.
 
 ### Create route table
 
