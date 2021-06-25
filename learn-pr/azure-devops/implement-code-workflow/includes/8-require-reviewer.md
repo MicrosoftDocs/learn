@@ -63,7 +63,7 @@ In this section, you submit a fix to the typing error on the home page. Recall t
 1. To fix the error, create and check out a branch:
 
     ```bash
-    git checkout -b bugfix/home-page-typo
+    git checkout -B bugfix/home-page-typo
     ```
 
 1. In File Explorer, open **Index.cshtml**.
