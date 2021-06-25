@@ -21,7 +21,7 @@ prerequisites: |
   - Visual Studio Code
   - NodeJS (v14.17.X or above) and npm (v6.14.X or above) installed on your computer
   - Basic familiarity with Babylon.js (creating a scene, adding meshes to a scene)
-  - Basic familiarity with JavaScript
+  - Basic familiarity with JavaScript or TypeScript
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner

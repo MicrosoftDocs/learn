@@ -40,7 +40,33 @@ const audioConfig = AudioConfig.fromDefaultMicrophoneInput();
 
 ## SpeechRecognizer
 
-The SpeechRecognizer class 
+The SpeechRecognizer class performs the speech-to-text transcription action. To create an instance of the SpeechRecognizer, pass in the SpeechConfig and AudioConfig instances to the constructor:
+
+```javascript
+const recognizer = new SpeechRecognizer(speechConfig, audioConfig);
+```
+
+After the SpeechRecognizer instance is initialized, we can start the recognition session by calling this method:
+
+```javascript
+recognizer.startContinuousRecognitionAsync();
+```
+
+The SpeechRecognizer will continue to listen for input until this method is called:
+
+```javascript
+recognizer.stopContinuousRecognitionAsync();
+```
+
+While the SpeechRecognizer is listening for input, we can retrieve the transcribed text by defining the event handler of the *recognized* event:
+
+```javascript
+recognizer.recognized = async (s: Recognizer, e: SpeechRecognitionEventArgs) => {
+    if (e.result.reason == ResultReason.RecognizedSpeech) {
+        console.log(e.result.text); // e.result.text contains the transcription as a string (includes punctuation)
+    }
+};
+```
 
 ## PhraseListGrammar
 
