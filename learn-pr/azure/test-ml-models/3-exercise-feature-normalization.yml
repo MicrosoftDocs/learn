@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.test-machine-learning-models.exercise-feature-normalization
+title: Exercise – Feature normalization
+metadata:
+  title: Exercise – Feature normalization
+  description: Learn how to build a simple model.
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+sandbox: true
+notebook: https://review.docs.microsoft.com/learn/modules/test-ml-models/notebooks/3-exercise-create-ml-model.ipynb?branch=pr-en-us-17743 
