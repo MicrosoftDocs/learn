@@ -137,13 +137,17 @@ az disk create -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --siz
     # Install sg3-utils
     sudo apt-get update
     sudo apt-get install -y sg3-utils
+    ```
 
+    ```bash
     # Register the key 1235 on VM2. This command will provide SCSI_PR registration for VM2, so it can read or write on the shared disk.
     sudo sg_persist --register --device /dev/sdc --param-rk=0 --param-sark=1235 --out
 
     # Read back the keys for the shared disk. Now it should show 2 reservation to the shared disk for both VM1 and VM2.
     sudo sg_persist /dev/sdc -s
+    ```
 
+    ```bash
     exit
     ```
 
