@@ -1,4 +1,13 @@
-Now that you've finished creating the database for your R&D team to use, you need to ensure that access to the database is logged. You have an existing Log Analytics workspace that you want these logs to be sent to. You also need to send the logs from the R&D team's storage account to the same Log Analytics workspace. 
+Now that you've finished creating the database for your R&D team to use, you need to ensure that access to the database is logged. You have an existing Log Analytics workspace that you want these logs to be sent to. You also need to send the logs from the R&D team's storage account to the same Log Analytics workspace. In this exercise, you'll update your Bicep file to meet these requirements.
+
+During the process, you'll:
+
+> [!div class="checklist"]
+> * Create a Log Analytics workspace.
+> * Update your Bicep file to add diagnostic settings to your Cosmos DB account.
+> * Create a storage account.
+> * In your Bicep file, update the diagnostic settings for the storage account.
+> * Deploy your template and verify the result.
 
 ## Create a Log Analytics workspace
 

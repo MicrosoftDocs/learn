@@ -64,7 +64,7 @@ In this step, we'll add the Order function to the API Management resource that w
 
 Now that we've added OrderDetails to our API, let's test it by using the API Management tools in the Azure portal.
 
-1. In the **APIs** window for your **API Management service** page that appears from the previous section, in the left menu pane, under **All APIs**, ensure that your *OrderFunction** API is selected.
+1. In the **APIs** window for your **API Management service** page that appears from the previous section, in the left menu pane, under **All APIs**, ensure that your **OrderFunction** API is selected.
 
 1. In the list of operations, select **GET OrderDetails**, and then select the **Test** tab.
 
@@ -82,7 +82,7 @@ We can use the `curl` command-line tool to submit requests to our API. It's idea
 
 1. In the **Overview** pane,  select the **Copy to clipboard** icon to the right of the **URL** value.
 
-1. In the Cloud Shell, run the following command, paste the **Gateway URL** value that you copied in place of the token, and then press <kbd>Enter</kbd>.
+1. In Cloud Shell, run the following command, paste the **Gateway URL** value that you copied in place of the token, and then press <kbd>Enter</kbd>.
 
     ```bash
     GATEWAY_URL=<paste the URL here>
@@ -96,13 +96,13 @@ We can use the `curl` command-line tool to submit requests to our API. It's idea
 
 1. To the right of **Primary key** field, select the **Copy to clipboard** icon.
 
-1. In the Cloud Shell, run the following command, paste the **PRIMARY KEY** value that you copied in place of the token, and then press <kbd>Enter</kbd>.
+1. In Cloud Shell, run the following command, paste the **PRIMARY KEY** value that you copied in place of the token, and then press <kbd>Enter</kbd>.
 
     ```bash
     SUB_KEY=<paste the key here>
     ```
 
-1. To request the details of a product, run the following command in the Cloud Shell.
+1. To request the details of a product, run the following command in Cloud Shell.
 
     ```bash
     curl -X GET "$GATEWAY_URL/products/ProductDetails?id=2" -H "Ocp-Apim-Subscription-Key: $SUB_KEY"

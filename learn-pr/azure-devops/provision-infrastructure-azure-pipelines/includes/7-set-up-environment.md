@@ -39,7 +39,7 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 1. Select **Yes, I want to fork this repository**, and then select **Authorize**.
 1. Select **Create Project**.
 
-    ![Creating a project through the Azure DevOps Demo Generator](../media/7-create-new-project.png)
+    :::image type="content" source="../media/7-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator.":::
 
     It takes a few moments for the template to run.
 1. Select **Fork repository on GitHub**, and then select **Authorize**. If a window appears, authorize access to your GitHub account.
@@ -62,7 +62,7 @@ Assigning work in this way gives you a checklist. It gives others on your team v
 
 Recall that the team settled on these three top issues for the current sprint:
 
-![Azure Boards list that shows the tasks for this sprint](../../shared/media/automate-all-tasks.png)
+:::image type="content" source="../../shared/media/automate-all-tasks.png" alt-text="Azure Boards list that shows the tasks for this sprint.":::
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
@@ -80,7 +80,7 @@ To set up the work item:
     :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 1. Move the work item from the **To Do** column to the **Doing** column.
 
-    ![Azure Boards showing the card in the Doing column](../media/7-azure-boards-wi1-doing.png)
+    :::image type="content" source="../media/7-azure-boards-wi1-doing.png" alt-text="Azure Boards showing the card in the Doing column.":::
 
 At the end of this module, you move the card to the **Done** column after you've completed the task.
 
@@ -92,9 +92,9 @@ Visual Studio Code comes with an integrated terminal, so you can edit files and 
 
 1. Start Visual Studio Code.
 1. On the **View** menu, select **Terminal**.
-1. In the drop-down list, select **bash**:
+1. In the drop-down list, select **bash**. If you're familiar with another Unix shell that you prefer to use, such as Zsh, select that shell instead.
 
-    ![Selecting the Bash shell in Visual Studio Code](../../shared/media/vscode-terminal-bash.png)
+    :::image type="content" source="../../shared/media/vscode-terminal-bash.png" alt-text="Selecting the Bash shell in Visual Studio Code.":::
 
     The terminal window lets you choose any shell that's installed on your system, like Bash, Zsh, and PowerShell.
 
@@ -165,42 +165,42 @@ To clone the *Space Game* web project to your computer:
 
 ### Set the upstream remote
 
-A *remote* is a Git repository where team members collaborate (like a repository on GitHub).
+A *remote* is a Git repository where team members collaborate (like a repository on GitHub). Here you list your remotes and add a remote that points to Microsoft's copy of the repository so that you can get the latest sample code.
 
-Run this `git remote` command to list your remotes:
+1. Run this `git remote` command to list your remotes:
 
-```bash
-git remote -v
-```
+    ```bash
+    git remote -v
+    ```
 
-You see that you have both fetch (download) and push (upload) access to your repository:
+    You see that you have both fetch (download) and push (upload) access to your repository:
 
-```output
-origin  https://github.com/username/mslearn-tailspin-spacegame-web-automate.git (fetch)
-origin  https://github.com/username/mslearn-tailspin-spacegame-web-automate.git (push)
-```
+    ```output
+    origin  https://github.com/username/mslearn-tailspin-spacegame-web-automate.git (fetch)
+    origin  https://github.com/username/mslearn-tailspin-spacegame-web-automate.git (push)
+    ```
 
-*Origin* specifies your repository on GitHub. When you fork code from another repository, it's common to name the original remote (the one you forked from) as *upstream*.
+    *Origin* specifies your repository on GitHub. When you fork code from another repository, it's common to name the original remote (the one you forked from) as *upstream*.
 
-Run this `git remote add` command to create a remote named *upstream* that points to the Microsoft repository:
+1. Run this `git remote add` command to create a remote named *upstream* that points to the Microsoft repository:
 
-```bash
-git remote add upstream https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-automate.git
-```
+    ```bash
+    git remote add upstream https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-automate.git
+    ```
 
-Run `git remote` a second time to see the changes:
+1. Run `git remote` a second time to see the changes:
 
-```bash
-git remote -v
-```
+    ```bash
+    git remote -v
+    ```
 
-You see that you still have both fetch (download) and push (upload) access to your repository. You also now have fetch access from the Microsoft repository:
+    You see that you still have both fetch (download) and push (upload) access to your repository. You also now have fetch access from the Microsoft repository:
 
-```output
-origin  https://github.com/username/mslearn-tailspin-spacegame-web-automate.git (fetch)
-origin  https://github.com/username/mslearn-tailspin-spacegame-web-automate.git (push)
-upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-automate.git (fetch)
-```
+    ```output
+    origin  https://github.com/username/mslearn-tailspin-spacegame-web-automate.git (fetch)
+    origin  https://github.com/username/mslearn-tailspin-spacegame-web-automate.git (push)
+    upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-automate.git (fetch)
+    ```
 
 ### Open the project in the file explorer
 
@@ -232,7 +232,7 @@ Fetch and check out a Git branch that contains starter code for this module.
 
     ```bash
     git fetch upstream terraform
-    git checkout -b terraform upstream/terraform
+    git checkout -B terraform upstream/terraform
     ```
 
     Recall that `upstream` refers to Microsoft's GitHub repository. Your project's Git configuration understands the `upstream` remote because you set up that relationship when you forked the project from Microsoft's repository and cloned it locally.

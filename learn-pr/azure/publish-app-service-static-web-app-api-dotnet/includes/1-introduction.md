@@ -30,9 +30,9 @@ Azure hosts and serves your web app while Azure Functions powers back-end API fu
 
 ## Learning objectives
 
-In this tutorial, you'll create, modify, and deploy a web app and API to Azure Static Web Apps.
+In this module, you'll create, modify, and deploy a web app and API to Azure Static Web Apps.
 
-This tutorial provides a sample Blazor application, as well as an API written in C#.
+This module provides a sample Blazor application, as well as an API written in C#.
 
 ### What you'll do
 

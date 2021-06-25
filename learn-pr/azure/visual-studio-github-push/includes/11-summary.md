@@ -6,6 +6,10 @@ Imagine how much work it would be to go outside Visual Studio for your Git tooli
 
 Continuous context switching causes a mental overhead that all of us want to avoid. Visual Studio makes it all easy. On top of that, Visual Studio has safety rails to make sure you're not doing anything dangerous without understanding the full impact. You can now forget about Git complexities and focus on your code.
 
+Here's a video summary of what you just learned:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OFn7]
+
 ## Learn more
 Check out the following resources:
 

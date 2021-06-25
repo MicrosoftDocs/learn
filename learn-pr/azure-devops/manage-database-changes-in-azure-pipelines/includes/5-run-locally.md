@@ -13,7 +13,7 @@ To fetch and check out the `database` branch from GitHub:
 
     ```bash
     git fetch upstream database
-    git checkout -b database upstream/database
+    git checkout -B database upstream/database
     ```
 
     The format of these commands enables you to get starter code from the Microsoft GitHub repository. This repository is known as `upstream`. Shortly, you'll push this branch up to your GitHub repository. Your GitHub repository is known as `origin`.
@@ -65,7 +65,7 @@ Here you fetch the connection string for your database. You store it in a file n
 1. Choose **tailspindatabase**.
 1. Under **Settings**, select **Connection strings**. Copy the connection string that appears on the **ADO.NET** tab.
 
-   ![Azure portal page showing selecting connection strings.](../media/5-get-connection-string.png)
+   :::image type="content" source="../media/5-get-connection-string.png" alt-text="Azure portal page showing selecting connection strings.":::
 
     Notice that the connection string doesn't show your password. You'll specify your password shortly.
 
@@ -147,7 +147,7 @@ Here you build and run the web application locally to verify that the applicatio
 
     You see this interface:
 
-    ![The Space Game website](../media/5-space-game-top.png)
+    :::image type="content" source="../media/5-space-game-top.png" alt-text="The Space Game website.":::
 
     > [!TIP]
     > In your browser, if you see an error that's related to a privacy or certificate error:
@@ -159,7 +159,7 @@ Here you build and run the web application locally to verify that the applicatio
 
     You can interact with the page, including the leaderboard. When you select a player's name, you see details about that player.
 
-    ![A web page showing the Space Game leaderboard.](../media/5-space-game-leaderboard-profile.png)
+    :::image type="content" source="../media/5-space-game-leaderboard-profile.png" alt-text="A web page showing the Space Game leaderboard.":::
 
     Unlike in previous modules, the leaderboard data is read from your Azure SQL Database.
 

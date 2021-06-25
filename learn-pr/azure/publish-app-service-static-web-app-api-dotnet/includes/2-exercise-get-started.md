@@ -2,7 +2,7 @@ Azure Static Web Apps publishes websites to a production environment by building
 
 ## Create a repository
 
-This tutorial makes it easy for you to create a new repository by using a GitHub template repository. A template is available which contains a starter app built with Blazor.
+This module makes it easy for you to create a new repository by using a GitHub template repository. A template is available which contains a starter app built with Blazor.
 
 1. Navigate to the [create from template page](https://github.com/MicrosoftDocs/mslearn-staticwebapp-dotnet/generate?azure-portal=true) for the template repository.
    - If you get a 404 Page Not Found error, sign in to GitHub and try again.
@@ -26,7 +26,7 @@ It's time to see your application running locally. Visual Studio will open the w
 
 :::image type="content" source="../media/my-shopping-list-app-loading.png" alt-text="Browsing to your web app":::
 
-Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this tutorial.
+Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this module.
 
 Now stop your running app by ending the debugging session in Visual Studio.
 

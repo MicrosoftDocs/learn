@@ -36,7 +36,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template.
 1. Select **Sign In** and accept the usage terms.
 1. From the **Create New Project** page, select your Azure DevOps organization. Enter a project name, such as *Space Game - web - Database*.
 
-    ![A web page showing creating a project through the Azure DevOps Demo Generator.](../media/4-create-new-project.png)
+    :::image type="content" source="../media/4-create-new-project.png" alt-text="A web page showing creating a project through the Azure DevOps Demo Generator.":::
 
 1. Select **Yes, I want to fork this repository**, and then select **Authorize**.
 1. Select **Create Project**.
@@ -57,7 +57,7 @@ Assigning work in this way gives you a checklist to work from. The work item let
 
 Recall that the team settled on these top issues for the current sprint:
 
-![Azure Boards, showing the tasks for this sprint.](../../shared/media/deploy-all-tasks.png)
+:::image type="content" source="../../shared/media/deploy-all-tasks.png" alt-text="Azure Boards, showing the tasks for this sprint.":::
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number for each work item might not match what you see here.
@@ -76,7 +76,7 @@ To set up the work item:
 
 1. Move the work item from the **To Do** column to the **Doing** column.
 
-    ![Azure Boards showing the card in the Doing column.](../media/4-azure-boards-wi2-doing.png)
+    :::image type="content" source="../media/4-azure-boards-wi2-doing.png" alt-text="Azure Boards showing the card in the Doing column.":::
 
 At the end of this module, you move the card to the **Done** column after you complete the task.
 

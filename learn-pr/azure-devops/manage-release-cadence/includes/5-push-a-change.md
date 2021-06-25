@@ -58,13 +58,13 @@ For brevity, here you commit the changes to your branch, push your branch to Git
 
     You see that the deployed website shows the color and text changes.
 
-    ![A browser showing the Space Game website with color and text changes](../media/5-app-service-staging.png)
+    :::image type="content" source="../media/5-app-service-staging.png" alt-text="A browser showing the Space Game website with color and text changes.":::
 
 1. Go to the URL that corresponds to the *swap* slot for your _Staging_ environment. The URL includes "-swap.azurewebsites.net" in its name.
 
     You see the previous version of the website, without the color and text changes.
 
-    ![A browser showing the normal Space Game website](../media/5-app-service-staging-swap.png)
+    :::image type="content" source="../media/5-app-service-staging-swap.png" alt-text="A browser showing the normal Space Game website.":::
 
     You see no changes because you swapped the *production* slot and the *swap* slot. In other words, here you always deploy to the *swap* slot, and then you swap the *production* slot and *swap* slot. The swap process ensures that the *production* slot points to the more recent deployment.
 
@@ -85,9 +85,9 @@ In Git, you seldom remove commits from a file's history. Unlike the "undo" opera
     Your output resembles the following code example. In your output, you see additional commits and different commit IDs.
 
     ```output
-    06a26bd (HEAD -> blue-green) Change text and colors on the home page
-    e5e8fe5 Swap deployment slots
-    664d946 Trigger the pipeline
+    d6130b0 (HEAD -> blue-green, origin/blue-green) Change text and colors on the home page
+    ce56955 Swap deployment slots
+    0d6a123 Trigger the pipeline
     ```
 
     In the output, trace the commit history. The latest commit is on top.
@@ -109,10 +109,10 @@ In Git, you seldom remove commits from a file's history. Unlike the "undo" opera
     At the top of your output, you see an additional commit that reverts the previous commit. Here's an example:
 
     ```output
-    95fa0ac (HEAD -> blue-green) Revert "Change text and colors on the home page"
-    06a26bd Change text and colors on the home page
-    e5e8fe5 Swap deployment slots
-    664d946 Trigger the pipeline
+    e58896a (HEAD -> blue-green) Revert "Change text and colors on the home page"
+    d6130b0 (origin/blue-green) Change text and colors on the home page
+    ce56955 Swap deployment slots
+    0d6a123 Trigger the pipeline
     ```
 
 ## Push the reverted change through the pipeline
@@ -130,11 +130,11 @@ Here you push your reverted change through the pipeline and see the results.
 
     The *production* slot now points to your reverted change, which is the original website.
 
-    ![A browser showing the normal Space Game website](../media/5-app-service-staging-swap.png)
+    :::image type="content" source="../media/5-app-service-staging-revert.png" alt-text="A browser showing the original Space Game website after reverting the changes. The website does not include the color and text changes.":::
 
     The *swap* slot now points to the previous change.
 
-    ![A browser showing the Space Game website with color and text changes](../media/5-app-service-staging.png)
+    :::image type="content" source="../media/5-app-service-staging-swap-revert.png" alt-text="A browser showing the Space Game website after reverting the change. The website shows the color and text changes.":::
 
 Great work! The team now has a way to automate the releases. They can get new features to their users without incurring downtime.
 

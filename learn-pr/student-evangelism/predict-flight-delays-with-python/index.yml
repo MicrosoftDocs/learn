@@ -5,7 +5,7 @@ metadata:
   description: Learn how to import airline arrival data into a Jupyter notebook, use Pandas and Scikit-Learn, and then visualize the output with Matplotlib.
   ms.date: 02/24/2019
   author: JeffProsise
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Predict flight delays by creating a machine learning model in Python

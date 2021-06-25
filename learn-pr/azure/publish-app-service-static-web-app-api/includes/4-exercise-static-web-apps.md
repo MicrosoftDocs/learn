@@ -68,34 +68,6 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
    :::image type="content" source="../media/extension-app-location-angular.png" alt-text="Angular application code location":::
 
-::: zone-end
-
-::: zone pivot="react"
-
-7. Select **react-app** as the location for the application code, and press <kbd>Enter</kbd>.
-
-   :::image type="content" source="../media/extension-app-location-react.png" alt-text="React application code location":::
-
-::: zone-end
-
-::: zone pivot="svelte"
-
-7. Select **svelte-app** as the location for the application code, and press <kbd>Enter</kbd>.
-
-   :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Svelte application code location":::
-
-::: zone-end
-
-::: zone pivot="vue"
-
-7. Select **vue-app** as the location for the application code, and press <kbd>Enter</kbd>.
-
-   :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Vue application code location":::
-
-::: zone-end
-
-::: zone pivot="angular"
-
 8. Enter **dist/angular-app** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-artifact-angular.png" alt-text="Angular app files path":::
@@ -103,6 +75,10 @@ The Azure sandbox that you activated allows you to use Azure services without in
 ::: zone-end
 
 ::: zone pivot="react"
+
+7. Select **react-app** as the location for the application code, and press <kbd>Enter</kbd>.
+
+   :::image type="content" source="../media/extension-app-location-react.png" alt-text="React application code location":::
 
 8. Enter **build** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
@@ -112,6 +88,10 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="svelte"
 
+7. Select **svelte-app** as the location for the application code, and press <kbd>Enter</kbd>.
+
+   :::image type="content" source="../media/extension-app-location-svelte.png" alt-text="Svelte application code location":::
+
 8. Enter **public** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-artifact-svelte.png" alt-text="Svelte app files path":::
@@ -120,47 +100,36 @@ The Azure sandbox that you activated allows you to use Azure services without in
 
 ::: zone pivot="vue"
 
+7. Select **vue-app** as the location for the application code, and press <kbd>Enter</kbd>.
+
+   :::image type="content" source="../media/extension-app-location-vue.png" alt-text="Vue application code location":::
+
 8. Enter **dist** as the build output location where files are built for production in your app, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-artifact-vue.png" alt-text="Vue app files path":::
 
 ::: zone-end
 
-9. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section, right-click on **my-first-static-web-app**, and select **Open in Portal** to view app in the Azure portal.
-
-   :::image type="content" source="../media/extension-open-in-portal.png" alt-text="Open portal":::
-
 > [!NOTE]
-> Your repository is a bit different than the ones you may have used in the past. It contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. This isn't common. Typically, you have one app in the root of your repository and specify `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - you get full control over how the app is built.
+> Your repository may be a bit different than the ones you may have used in the past. It contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. Typically, you have one app in the root of your repository and specify `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - you get full control over how the app is built.
 
-### Review the GitHub Action
+9. Once the app is created, a confirmation notification is shown in Visual Studio Code.
 
-At this stage, your Static Web Apps instance is created in Azure, but your app isn't yet deployed. The GitHub Action that Azure creates in your repository will run automatically to trigger the first build and deployment of your app, but it takes a couple minutes to finish.
+   :::image type="content" source="../media/extension-confirmation.png" alt-text="Open Actions in GitHub or View/Edit Config":::
 
-You can check the status of your build and deploy action by navigating to the Actions page of your GitHub repository.
+   As the deployment is in progress, the Visual Studio Code extension reports the build status to you.
 
-1. Select the link shown in the following image.
+   :::image type="content" source="../media/extension-waiting-for-deployment.png" alt-text="Waiting for Deployment":::
 
-   :::image type="content" source="../media/goto-action.png" alt-text="Browse to see the progress of the GitHub Actions workflow":::
+10. You can view the progress of the deployment using GitHub Actions by expanding the **Actions** menu.
 
-   > [!NOTE]
-   > You can open the Azure page by right-clicking on my-first-static-web-app in the Visual Studio Code editor, and selecting **Open in portal**.
+    :::image type="content" source="../media/extension-actions.png" alt-text="GitHub Actions":::
 
-1. Select **Azure Static Web Apps CI/CD**.
+    Once the deployment is complete, you can navigate directly to your website.
 
-1. Select the topmost commit titled similar to **ci: add Azure Static Web Apps workflow file**.
+11. To view the website in the browser, right-click on the project in the Static Web Apps extension, and select Browse Site.
 
-1. Select the **Build and Deploy Job** link on the left.
-
-From here, you can observe the progress of your app as it builds.
-
-### View website
-
-After your GitHub Action finishes building and publishing your web app, you can browse to see your running app.
-
-Select the _URL_ link in the Azure portal to visit your app in the browser.
-
-:::image type="content" source="../media/static-web-apps-resource-overview.png" alt-text="Azure Static Web Apps overview page":::
+    :::image type="content" source="../media/extension-browse-site.png" alt-text="Browse Site":::
 
 Congratulations! You've deployed your first app to Azure Static Web Apps!
 

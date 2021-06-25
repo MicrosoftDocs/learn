@@ -37,11 +37,11 @@ Azure hosts and serves your web app while Azure Functions powers back-end API fu
 
 ## Learning objectives
 
-In this tutorial, you'll create, modify, and deploy a web app and API with user authentication to Azure Static Web Apps.
+In this module, you'll create, modify, and deploy a web app and API with user authentication to Azure Static Web Apps.
 
 ### Choose your own path
 
-This tutorial provides four variations of the sample application for you to choose from: Angular, React, Svelte, and Vue. The power of Azure Static Web Apps is that all of these flavors "just work".
+This module provides four variations of the sample application for you to choose from: Angular, React, Svelte, and Vue. The power of Azure Static Web Apps is that all of these flavors "just work".
 
 The starter code includes the four apps and the starting point for an API that you'll use.
 

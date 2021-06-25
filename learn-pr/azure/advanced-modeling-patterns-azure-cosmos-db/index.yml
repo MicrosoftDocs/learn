@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.azure.advanced-modeling-patterns-azure-cosmos-db  
+metadata:
+  moduleType: standard  
+  title: Optimize your database by using advanced modeling patterns for Azure Cosmos DB
+  description: Learn about different strategies to manage relationships between data entities when modeling a database for Azure Cosmos DB.
+  ms.date: 6/11/2021  
+  author: markjbrown  
+  ms.author: mjbrown  
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Optimize your database by using advanced modeling patterns for Azure Cosmos DB  
+summary: Identify strategies to manage relationships between data entitles like customers and sales data. Improve performance and scaling of your data model by pre-aggregating and denormalizing data. Use change feed to maintain referential integrity of your data.
+abstract: | 
+  By the end of this module, you will be able to: 
+    - Manage relationship between data entities by using advanced modeling and partitioning strategies
+    - Maintain referential integrity of your data by using change feed
+    - Implement pre-aggregating and denormalizing data strategies to improve performance and scaling of your data model
+prerequisites: | 
+  - Familiarity with Azure Cosmos DB concepts like databases, containers, documents and throughput (RU/s)
+  - Familiarity navigating Azure Cosmos DB resources and data using Data Explorer in Azure portal, running queries, viewing query stats in results
+  - Familiarity with basic modeling and partitioning strategies like embedding or referencing data in entities
+  - Familiarity with Azure Cosmos DB .NET SDK v3
+  - Familiarity with Azure Cosmos DB change feed
+iconUrl: /learn/achievements/advanced-modeling-patterns-azure-cosmos-db.svg
+levels: 
+  - intermediate
+roles: 
+  - developer
+  - solution-architect
+products:  
+  - azure-cosmos-db
+units:
+- learn.azure.advanced-modeling-patterns-azure-cosmos-db.introduction
+- learn.azure.advanced-modeling-patterns-azure-cosmos-db.denormalizing-data
+- learn.azure.advanced-modeling-patterns-azure-cosmos-db.exercise-set-up-environment
+- learn.azure.advanced-modeling-patterns-azure-cosmos-db.manage-referential-integrity-with-change-feed
+- learn.azure.advanced-modeling-patterns-azure-cosmos-db.exercise-use-change-feed
+- learn.azure.advanced-modeling-patterns-azure-cosmos-db.combine-different-entities
+- learn.azure.advanced-modeling-patterns-azure-cosmos-db.denormalizing-aggregates
+- learn.azure.advanced-modeling-patterns-azure-cosmos-db.exercise-denormalizing-aggregates
+- learn.azure.advanced-modeling-patterns-azure-cosmos-db.finalize-data-model
+- learn.azure.advanced-modeling-patterns-azure-cosmos-db.summary
+badge:  
+  uid: learn.azure.advanced-modeling-patterns-azure-cosmos-db.badge

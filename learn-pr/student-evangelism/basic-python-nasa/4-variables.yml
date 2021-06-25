@@ -3,7 +3,7 @@ uid: learn.student-evangelism.basic-python-nasa.4-variables
 metadata:
   title: Exercise - Create variables in Python Notebooks for future data analysis
   description: Variables in programming.
-  ms.date: 05/05/2021
+  ms.date: 06/18/2021
   author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Create variables in Python Notebooks for future data analysis
 durationInMinutes: 6
 sandbox: true
-notebook: https://docs.microsoft.com/learn/modules/basic-python-nasa/notebooks/4-variables.ipynb
+notebook: /learn/modules/basic-python-nasa/notebooks/4-variables.ipynb
