@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Repeat code with while and for loops
 durationInMinutes: 5
 sandbox: true
-notebook: https://docs.microsoft.com/learn/modules/intermediate-python-nasa/notebooks/4-iterations.ipynb
+notebook: /learn/modules/intermediate-python-nasa/notebooks/4-iterations.ipynb
