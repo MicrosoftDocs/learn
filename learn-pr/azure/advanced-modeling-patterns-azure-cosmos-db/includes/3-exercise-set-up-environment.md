@@ -33,7 +33,7 @@ In the **database-v2** container, where data is stored in individual containers,
     SELECT * FROM c where c.type = 'category' and c.id = "AB952F9F-5ABA-4251-BC2D-AFF8DF412A4A"
     ```
 
-1. Select the **Results** tab to review the results. You see that this query returns the name of the product category, "Components, Headsets".
+1. Select the **Results** tab to review the results. You see that this query returns the name of the product category, "Components, Headsets."
 
     :::image type="content" source="../media/3-product-category-results.png" alt-text="Screenshot that shows the results of the query to the product category container.":::
 
@@ -53,7 +53,7 @@ Next, query the product container to get all the products in the "Components, He
     SELECT * FROM c where c.categoryId = "AB952F9F-5ABA-4251-BC2D-AFF8DF412A4A"
     ```
 
-1. Select the **Results** tab to review the results. You see there are three products returned, "HL Headset", "LL Headset", and "ML Headset". Each product has a sku, name, price, and an array of product tags.
+1. Select the **Results** tab to review the results. You see there are three products returned, HL Headset, LL Headset, and ML Headset. Each product has a SKU, name, price, and an array of product tags.
 
 1. Select the **Query Stats** tab, and note the request charge of 2.9 RUs.
 
@@ -61,11 +61,11 @@ Next, query the product container to get all the products in the "Components, He
 
 ## Query for each product's tags
 
-Next, query the productTag container three times, once for each of the three products: "HL Headset", "LL Headset", and "ML Headset".
+Next, query the productTag container three times, once for each of the three products: HL Headset, LL Headset, and ML Headset.
 
 ### HL headset tags
 
-First, run a query to return the tags for "HL Headset".
+First, run a query to return the tags for HL Headset.
 
 1. Select the **productTag** container.
 1. At the top of the page, select **New SQL Query**.
@@ -75,7 +75,7 @@ First, run a query to return the tags for "HL Headset".
     SELECT * FROM c where c.type = 'tag' and c.id IN ('87BC6842-2CCA-4CD3-994C-33AB101455F4', 'F07885AF-BD6C-4B71-88B1-F04295992176')
     ```
 
-    This query returns the two tags for the "HL Headset" product.
+    This query returns the two tags for the HL Headset product.
 
 1. Select the **Query Stats** tab, and note the request charge of 3.06 RUs.
 
@@ -83,7 +83,7 @@ First, run a query to return the tags for "HL Headset".
 
 ### LL headset tags
 
-Next, run a query to return the tags for "LL Headset".
+Next, run a query to return the tags for LL Headset.
 
 1. Select the **productTag** container.
 1. At the top of the page, select **New SQL Query**.
@@ -93,7 +93,7 @@ Next, run a query to return the tags for "LL Headset".
     SELECT * FROM c where c.type = 'tag' and c.id IN ('18AC309F-F81C-4234-A752-5DDD2BEAEE83', '1B387A00-57D3-4444-8331-18A90725E98B', 'C6AB3E24-BA48-40F0-A260-CB04EB03D5B0', 'DAC25651-3DD3-4483-8FD1-581DC41EF34B', 'E6D5275B-8C42-47AE-BDEC-FC708DB3E0AC')
     ```
 
-    This query returns the five tags for the "LL Headset" product.
+    This query returns the five tags for the LL Headset product.
 
 1. Select the **Query Stats** tab, and note the request charge of 3.47 RUs.
 
@@ -101,7 +101,7 @@ Next, run a query to return the tags for "LL Headset".
 
 ### ML headset tags
 
-Last, run a query to return the tags for "ML Headset".
+Last, run a query to return the tags for ML Headset.
 
 1. Select the **productTag** container.
 1. At the top of the page, select **New SQL Query**.
@@ -111,7 +111,7 @@ Last, run a query to return the tags for "ML Headset".
     SELECT * FROM c where c.type = 'tag' and c.id IN ('A34D34F7-3286-4FA4-B4B0-5E61CCEEE197', 'BA4D7ABD-2E82-4DC2-ACF2-5D3B0DEAE1C1', 'D69B1B6C-4963-4E85-8FA5-6A3E1CD1C83B')
     ```
 
-    This query returns the three tags for the "ML Headset" product.
+    This query returns the three tags for the ML Headset product.
 
 1. Select the **Query Stats** tab, and note the request charge of 3.2 RUs.
 
