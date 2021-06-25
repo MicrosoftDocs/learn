@@ -2,40 +2,40 @@ In this exercise, with zero configuration, you'll effortlessly monitor data flow
 
 ## Monitor the Application with Application insights
 
-Select you Azure Spring instance and In the left navigation pane, click Application Insights to jump to the Overview page of Application Insights.
+Select you Azure Spring instance and in the left navigation pane, select Application Insights to jump to the Overview page of Application Insights.
 
 ![Open Application insights](../media/7-insights-start.jpg)
 
 ### Application Map
 
-Application Map helps you spot performance bottlenecks or failure hotspots across all components of your distributed application. Navigate to the Application Map blade where you can see a view of your Azure Spring Cloud microservices:
+Application Map helps you spot performance bottlenecks or failure hotspots across all components of your distributed application. On the left, navigate to **Application Map** where you can see a view of your Azure Spring Cloud microservices:
 
 ![Application Map](../media/4-distributed-tracking-new-ai-agent.jpg)
 
-Applications that are operating correctly (green) and those with bottlenecks (red).
-In the Application Map above each of the names in green boxes are different services of your Azure Spring Cloud.
-You can easily identify issues in their applications and quickly troubleshoot and fix them. Each node on the map represents a MicroService or its dependencies, as well as health KPI and alerts status. You can click through from any component to more detailed diagnostics, such as Application Insights events.
+Applications that are operating correctly (green) and those applications with bottlenecks (red).
+In the Application Map above, each of the names in green boxes are different services of your Azure Spring Cloud.
+You can easily identify issues in their applications and quickly troubleshoot and fix them. Each node on the map represents a MicroService or its dependencies with health KPI and alerts status. You can select from any component to more detailed diagnostics, such as Application Insights events.
 
 ### Performance
 
-Navigate to the Performance blade where you can see response times and request counts for operations exposed by your applications.
+On the left, navigate to **Performance** where you can see response times and request counts for operations exposed by your applications.
 
 ![Performance](../media/4-petclinic-microservices-performance.jpg)
 
-Navigate to the Dependencies tab in the Performance blade where you can see all your dependencies and their response times and request counts.
+Next, on the right, navigate to **Dependencies** where you can see all your dependencies and their response times and request counts.
 You can see the performance number for dependencies, particularly SQL calls:
 
 ![Dependenices](../media/4-petclinic-microservices-insights-on-dependencies.jpg)
 
-You can click a SQL call or a dependency to see the full end-to-end transaction in context:
+You can select a SQL call or a dependency to see the full end-to-end transaction in context:
 
 ![end-to-end](../media/4-petclinic-microservices-end-to-end-transaction-details.jpg)
 
 ### Failures/Exceptions
 
-Navigate to the Exceptions tab in the Failures blade to see a collection of exceptions thrown by applications:
+Next, select **Failures** in the Application Insights resource menu located in the Investigate section. You will see the failure rate trends for your requests, how many of them are failing, and how many users are impacted. As an Overall view, you'll see some of the most useful distributions specific to the selected failing operation, including top three response codes, top three exception types, and top three failing dependency types
 
-![Exceptions](../media/4-petclinic-microservices-failures-exceptions.jpg)
+![Exceptions](../media/7-petclinic-microservices-failures.jpg)
 
 Select an exception and drill in for meaningful insights and actionable stack trace:
 
