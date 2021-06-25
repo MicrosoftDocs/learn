@@ -25,6 +25,7 @@ The following diagram shows how traffic for the Azure Virtual Desktop service an
 :::image type="content" source="../media/2-firewall-azure-virtual-desktop-architecture.png" alt-text="Diagram of Azure Firewall filtering network traffic between the Azure Virtual Network service and the host pool virtual network." border="false":::
 
 The following table explains the labels in the illustration.
+
 |Label  |Description  |
 |---------|---------|
 |A     |The host pool's outbound network access to the Azure Virtual Desktop service is filtered by Azure Firewall.      |
