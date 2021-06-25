@@ -51,9 +51,6 @@ would be able to:
 - Advise operators to make adjustments instead of controlling the extruder
   directly.
 
-:::image type="content" source="../media/soap-machine.png" alt-text="Graphic displays an example production line that displays the stages of soap manufacture.":::
-
-
 ## What will we be doing?
 
 You'll assess the capabilities of Project Bonsai to develop and deploy AI-powered control systems. To do this, you'll:
