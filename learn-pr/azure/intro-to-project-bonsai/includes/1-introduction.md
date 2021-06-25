@@ -1,19 +1,18 @@
-Microsoft Project Bonsai is a low-code AI platform. It helps accelerate AI-powered automation development. You can use Bonsai to build AI components that can:
+Microsoft Project Bonsai is a low-code AI platform. Accelerate development for
+control systems that provide operator guidance or make independent decisions.
 
-- Optimize process variables
-- Improve production efficiency
-- Help reduce downtime
+Build AI-powered control systems to:
 
-You can use Bonsai to either:
+- Optimize process variables.
+- Improve production efficiency.
+- Help reduce downtime.
 
-- Provide operator guidance 
-- Make independent decisions 
-
-Bonsai provides an intuitive interface that lets you create AI. Bonsai consists of a number of logical elements, displayed in the following image:
+To help you understand how Bonsai works, we will start by covering the underlying
+logical elements, which are displayed in the following image:
 
 - Training simulator
 - Training engine
-- Training curriculum 
+- Training curriculum
 - Integrated simulator
 - Trained AI, also known as a Bonsai brain
 
@@ -57,6 +56,5 @@ You'll assess the capabilities of Project Bonsai and determine whether it's a go
 ## What is the main goal?
 
 By the end of this module, you'll be able to determine whether Bonsai is suitable for your organization. You'll also be able to describe how Bonsai can help accelerate AI-powered automation development. 
-
 
 
