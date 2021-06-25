@@ -1,4 +1,7 @@
-Microsoft Project Bonsai is a low-code AI platform. It can help you build machine teaching simulations using software with which you're already familiar. This can help you to more quickly and easily implement AI-powered automation development. By understanding what Bonsai is, and what it can do, you can make a determination as to whether it might benefit your organization. 
+Microsoft Project Bonsai is a low-code AI platform that works with machine
+teaching simulations built on simulation software you may already use.
+By understanding what Bonsai is, and what it can do, you can better determine
+whether it might benefit your organization.
 
 ## What is low-code AI-powered automation?
 
