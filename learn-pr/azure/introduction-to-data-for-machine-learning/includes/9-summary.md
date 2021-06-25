@@ -1,0 +1,26 @@
+We’ve covered a lot. Let’s recap on some of the key messages.
+
+## What are Data?
+
+Data fall into several conceptual categories. The most common are:
+* continuous data (numbers),
+* categorical data that have no order,
+* ordinal data, which can be treated as numbers or ordered categories.
+
+Data are stored on a computer as distinctive types, and we usually try to match the datatype to the kind of data that it is. For example, continuous data are best stored as floating-point numbers, because these allow fractions to be stored. By contrast, categorical data often arrive as strings (text) and must be converted to one-hot vectors for the computer to understand them properly.
+
+## What Makes a Good Dataset?
+
+We learned that a dataset it helpful if it:
+
+* contains relevant information,
+* is complete,
+* is a good representation of the population (real world).
+
+If data are not complete, we can take steps to make sure that this does not cause big issues. When doing so, we need to be careful not to introduce new issues, such as making data no longer representative.
+
+## Thinking about Data
+
+We showed how visualizing data can help to get an understanding of what might be useful in a model. Using different types of graphs, colours, and so on can be fun and make complex information much more intuitive.
+
+We learned that understanding our data lets us make better decisions about our models. In the final exercise, we improved our model by exploring how many cabins were on the ship and taking time to consider why this information was helpful but could be improved through simplification into nine Deck labels.
