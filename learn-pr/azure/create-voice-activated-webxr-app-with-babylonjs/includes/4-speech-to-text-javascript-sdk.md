@@ -1,42 +1,8 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Azure Speech Services provides software development kits (SDKs) in multiple languages to help developers integrate the service into their applications. Speech-to-text is available in the SDKs for these languages: C++, C#, Java, JavaScript, Python, Swift, Objective-C, and Go.
 
-    Goal: briefly summarize the key skill this unit will teach
+Recall that the amusement park application needs to be served on the web, and your team is using Babylon.js to create the application. To integrate Azure Speech-to-text into the amusement park application, we will need to use Azure Speech's JavaScript SDK.
 
-    Heading: none
-
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
-
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
-
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
-
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
-
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
-
-    Goal: State concisely what's covered in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
-
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
+Here, we'll go through the important classes and functions (from the SDK) for setting up and using the Azure Speech-to-text service in the amusement park application.
 
 <!-- 5. Chunked content-------------------------------------------------------------------------------------
 
@@ -50,29 +16,39 @@ TODO: add a visual element
     [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
 -->
 
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+## SpeechConfig
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+The SpeechConfig class contains the necessary configuration data needed to connect to the Speech service in Azure. For example, you can create a SpeechConfig instance through the following code:
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+```javascript
+const speechConfig = SpeechConfig.fromSubscription(SUBSCRIPTION_KEY, REGION);
+```
 
-<!-- Do not add a unit summary or references/links -->
+The fromSubscription() method allows us to create an instance of SpeechConfig that contains the subscription key and the region of your Azure Speech service instance. Recall that you have retrieved the values for both of these values at the end of the last exercise.
+
+While it is also possible to create a SpeechConfig using other types of configuration values, we will be using the combination of subscription key and region in this module.
+
+## AudioConfig
+
+The AudioConfig class contains the configuration data for the audio input source. Specifically, it allows us to specify whether the input is coming from a microphone, file, or stream.
+
+The line below creates a AudioConfig instance for the microphone:
+
+```javascript
+const audioConfig = AudioConfig.fromDefaultMicrophoneInput();
+```
+
+## SpeechRecognizer
+
+The SpeechRecognizer class 
+
+## PhraseListGrammar
+
+The PhraseListGrammar class allows us to add specific phrases to improve speech recognition accuracy. For example, adding the phrase "for Ward" to the list will lower the chances of the audio being transcribed as "forward" by mistake.
+
+Here's how to create a PhraseListGrammar instance and add a phrase to it:
+
+```javascript
+const phraseList = PhraseListGrammar.fromRecognizer(recognizer);
+phraseList.addPhrase("for Ward");
+```
