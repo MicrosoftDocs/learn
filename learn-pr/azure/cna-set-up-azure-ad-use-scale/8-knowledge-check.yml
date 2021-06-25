@@ -39,12 +39,12 @@ quiz:
       explanation: "Correct. Delegated permissions are used by interactive apps with a signed-in user. As a result, the app acts on behalf of a signed-in user when it accesses the target resource."
   - content: 'Suppose a developer is creating a multitenant application for which the home tenant will be the Azure AD tenant with the verified domain name of contoso.com. What should they configure as the sign-in requests endpoint for the app?'
     choices:
-    - content: "https://login.microsoftonline.com/contoso.com"
+    - content: 'login.microsoftonline.com/contoso.com'
       isCorrect: false
       explanation: "Incorrect. This is the endpoint for a single-tenant app."
-    - content: "https://login.microsoftonline.com/contoso.onmicrosoft.com"
+    - content: 'login.microsoftonline.com/contoso.onmicrosoft.com'
       isCorrect: false
       explanation: "Incorrect. This is the endpoint for a single-tenant app."
-    - content: "https://login.microsoftonline.com/common"
+    - content: 'login.microsoftonline.com/common'
       isCorrect: true
       explanation: "Correct. With a multitenant app, you can't determine ahead of time which tenant will be used, so you need to use the **https://login.microsoftonline.com/common** endpoint, which serves all Azure AD tenants."

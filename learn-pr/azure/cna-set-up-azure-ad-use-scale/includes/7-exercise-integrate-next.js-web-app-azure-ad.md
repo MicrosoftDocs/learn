@@ -1,10 +1,10 @@
-This exercise takes you through the process of configuring a simple Next.js-based application that uses Azure AD authentication to access an inventory database hosted by Azure Database for PostgreSQL in the single server deployment model.
+This exercise takes you through the process of configuring a simple Next.js-based application that integrates with Azure AD. 
 
 In this exercise, you'll:
 
 * Register an Azure AD application.
 * Implement a simple, Azure AD-integrated Next.js-based application.
-* Validate the functionality of the Next.js-based application.
+* Validate the Azure AD integration of the Next.js-based application.
 
 ## Prerequisites
 
@@ -229,9 +229,9 @@ With the application registered in the Azure AD tenant, you can now proceed with
 1. Within the text editor displaying the content of the **./src/authConfig.js** file, replace the entry `scopes: ["User.Read"]` with `scopes: ["User.Read","https://ossrdbms-aad.database.windows.net/user_impersonation"]`.
 1. Save the changes and close the file.
 
-## Validate the functionality of the Next.js-based application
+## Validate the Azure AD integration of the Next.js-based application.
 
-You're ready to test the functionality of the app. You could containerize it, but for simplicity you'll run it locally on your computer first, within the Node.js development environment. This will provide a quick way to validate its functionality and ensure that containerizing it is a viable option.
+You're ready to validate the Azure AD integration of the app. You could containerize it, but for simplicity you'll run it locally on your computer first, within the Node.js development environment. This will provide a quick way to validate its functionality and ensure that containerizing it is a viable option.
 
 1. From the Node.js command prompt, run the following command to install the dependency packages of the sample Next.js application:
 
@@ -285,13 +285,35 @@ You're ready to test the functionality of the app. You could containerize it, bu
     > The URL should have the following format: `https://<webapp_name>.azurewebsites.net/auth`
 
     > [!NOTE]
-    > Verify that the resulting web page displays the inventory data.
+    > Verify that the resulting web page displays the inventory data for the first tenant.
 
     :::image type="content" source="../media/7-azure-ad-next.js-app-displayed-database-inventory.png" alt-text="Screenshot of the page of the Express.js web app displaying the inventory data.":::
 
+1. Close the web browser window in the Incognito/InPrivate mode.
+
+    > [!NOTE]
+    > Now, you will repeat the same sequence of steps as the **contosuser1** and verify that you also can access the inventory data and display set of records corresponding to the second tenant.
+
+1. Start another web browser window in the Incognito/InPrivate mode, and navigate to the **http://localhost:3000** URL.
+1. On the **Welcome to the Microsoft Authentication Library For Javascript - React Quickstart** page, select **Sign In**, and then in the expanding menu, select **Sign in using Popup**.
+1. When prompted to sign in, authenticate by using the **contosouser1** **userPrincipalName** and its password **Pa55w.rd1234**.
+
+    > [!NOTE]
+    > You created this user account in the first exercise of this module.
+
+1. On the **Welcome to the Microsoft Authentication Library For Javascript - React Quickstart** page, select **Request Profile Information**.
+
+    > [!NOTE]
+    > Verify that the output includes the Email, Id, and the access token of the **contosouser1** Azure AD user account.
+
+1. Open another browser tab in the same web browser window and navigate to the web application you deployed in the previous exercises.
+
+    > [!NOTE]
+    > Verify that the resulting web page displays the inventory data for the second tenant.
+
 ## Results
 
-Congratulations! You completed the third exercise of this module. In this exercise, you implemented a simple Next.js-based application that queries the database by relying on Azure AD authentication.
+Congratulations! You completed the third exercise of this module. In this exercise, you implemented a simple AD-integrated Next.js-based application and verified its functionality.
 
 ## Clean up the resources
 
