@@ -13,7 +13,7 @@ In this exercise, you'll complete the steps needed to run a DR drill using a rec
 
 1. On the home page, select **All resources**.
 
-1. From the list of resources, select the Recovery Services vault, **asr-vault**.
+1. From the list of resources, select the Recovery Services vault named *asr-vault*.
 
 1. In the middle menu pane, under **Manage**, select **Recovery Plans (Site Recovery)**.
 
@@ -34,7 +34,7 @@ In this exercise, you'll complete the steps needed to run a DR drill using a rec
 
     ![Screenshot showing the create recovery plan panes, including the selection screen for virtual machines](../media/6-create-recovery-plan.png)
 
-1. Select **Create**. The **recovery Plans (Site Recovery) pane reappears.
+1. Select **Create**. The **Recovery Plans (Site Recovery)** pane reappears.
 
     > [!NOTE]
     > It can happen that the configuration fails. If the configuration fails, delete the plan and create a new plan.
@@ -45,7 +45,7 @@ In this exercise, you'll complete the steps needed to run a DR drill using a rec
 
     ![Screenshot showing the created disaster recovery plan](../media/6-view-dr-plans.png)
 
-    The **asr-vault** pane named *asr-dr-drill** pane appears.
+    The **Recovery Services vault** pane named *asr-dr-drill* appears.
 
 1. In the top menu bar, select **Test failover**.
 

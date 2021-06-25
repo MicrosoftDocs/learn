@@ -49,8 +49,6 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the Azu
     | **Replication settings** tab |
     | Target location | **East US 2**. |
     | Target subscription | Select the **Customize** link. The **Customize target subscription** pane appears. In the **Target subscription** field, select your Azure subscription, and select **OK**. The **Enable replication** pane reappears. |
-    | Target resource group | **east-coast-rg** |
-    | For each VM | From the dropdown list, change the **Cache storage** to **asrcacheXXXX**, where **XXXX** is a random number. Select **OK**. |
 
     ![Screenshot showing the source options for replication](../media/4-enable-replication-source.png)
 
