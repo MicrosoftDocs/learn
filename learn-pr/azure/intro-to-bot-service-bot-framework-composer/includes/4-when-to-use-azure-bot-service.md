@@ -19,15 +19,22 @@ You have three primary bot creation methods available, Power Virtual Agents, QnA
 
 Use Power Virtual Agents to create powerful chat bots. These bots can answer questions posed by your customers, other employees, or visitors to your website or service. Because of the guided, no-code graphical interface, you can use the Power Virtual Agents web app to create chat bots without needing developer expertise.
 
-Topics inform the bot conversation in Power Virtual Agents. Each topic contains a dialog tree that guides conversation flow. Each topic also has trigger phrases that a user is likely to enter. These phrases are matched to a specific topic using built-in natural language understanding. <!-- ID/SME: I marked up a very similar section in Mod 1. Please use that language here. Thanks! -->For example, a user might enter "Open hours" into your bot—the AI will be able to match that to the Store hours topic and begin a conversation that asks which store the customer is interested in, and then display the hours the store is open.
+Topics guide a bot's conversation in Power Virtual Agents. Each topic contains a dialog tree that guides conversation flow. Each topic also has trigger phrases that a user is likely to enter. These phrases are matched to a specific topic using built-in natural language understanding. For instance, consider that a user enters "Open hours" into your bot. The bot's AI can match that to a topic named Store hours and then begin a conversation asking the user which store they're asking about. Ultimately, the bot then provides that store's hours of operation.
 
-<!-- ID/SME: Please rework this sentence, breaking it into two shorter sentences and making it more clear. Currently, as written, it's too long and doesn't make sense. --> Extend Power Virtual Agents bot capability with advanced AI features, prebuilt and custom entities, variables, authentication, Power Automate flows for more task automation, and skills created using the Bot Framework SDK.
+Extend Power Virtual Agents bot capability by using the Bot Framework SDK. Bot extensions can include:
+
+- Advanced AI features
+- Entities
+- Variables
+- Authentication
+- Power Automate flows
+- Skills
 
 ### QnA Maker
 
 *QnA Maker* is an Azure-based Natural Language Processing service that allows you to create a natural conversational layer over your data. It's used to find the most appropriate answer for any input from your custom knowledge base of information.
 
-The QnA Maker portal provides the complete knowledge base authoring experience. You can import documents in their current form to your knowledge base. These documents might include an FAQ, product manual, spreadsheet, or <!-- ID/SME: Always one word, "webpage" and not two. Please fix globally. -->.web page. The documents are converted into question and answer pairs. Each pair is analyzed for follow-up prompts and connected to other pairs.
+The QnA Maker portal provides the complete knowledge base authoring experience. You can import documents in their current form to your knowledge base. These documents might include an FAQ, product manual, spreadsheet, or webpage. The documents are converted into question and answer pairs. Each pair is analyzed for follow-up prompts and connected to other pairs.
 
 >[!NOTE]
 > The final markdown format supports rich presentation including images and links.

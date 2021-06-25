@@ -13,7 +13,7 @@ The Azure Bot Service developer tools create a *bot package.* This package conta
 
 ## Consider the type of bot you want to create
 
-Before building your bot, you need to decide what kind of bot you're creating. as you decide, consider the following questions:
+Before building your bot, you need to decide what kind of bot you're creating. As you decide, consider the following questions:
 
 - What will you use your bot for? Determine what kind of bot you want to build. Planning helps define the functionalities you want to implement.
 - What problems does your bot intend to solve? Be clear about this. Solving problems for customers is a primary consideration when you're building bots. You should also consider things such as how to solve the user's problem better, easier, or faster than the alternative experiences.

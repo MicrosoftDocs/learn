@@ -19,7 +19,7 @@ abstract: |
     - Use the Azure Bot Service components in Azure.
 prerequisites: |
   To get the best learning experience from this module, you should have:
-    - Working experience of the Azure Portal.
+    - Working experience of the Azure portal.
     - General knowledge of cloud computing.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
