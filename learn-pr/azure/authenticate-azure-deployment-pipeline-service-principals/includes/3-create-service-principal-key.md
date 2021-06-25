@@ -34,7 +34,7 @@ Azure provides the key to you when you create the service principal. This is the
 
 ::: zone pivot="cli"
 
-To create a service principal and a key, use the `az az sp create-for-rbac` command. The command accepts several arguments, and can optionally assign roles to the service principal. You'll learn about this later in this module, so for now here's an example illustrating how to create a service principal without any Azure role assignments:
+To create a service principal and a key, use the `az ad sp create-for-rbac` command. The command accepts several arguments, and can optionally assign roles to the service principal. You'll learn about this later in this module, so for now here's an example illustrating how to create a service principal without any Azure role assignments:
 
 ```azurecli
 az ad sp create-for-rbac \

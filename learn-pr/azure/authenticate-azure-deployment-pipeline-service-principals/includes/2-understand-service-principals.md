@@ -12,11 +12,11 @@ All of these operations require permission, since they access and modify your Az
 
 Until now, you've probably deployed your Bicep templates yourself using the Azure CLI or Azure PowerShell. When you use these tools, you normally use your own user account and you authenticate using your browser. This is referred to as using your own _identity_. When you submit a deployment, Azure verifies that your identity has the necessary permissions to do what your Bicep template specifies.
 
-Once you move to a pipeline, you need to use a different type of identity.
+Once you move to a pipeline, you need to use a different type of identity, since the pipeline runs deployments itself without your direct involvement.
 
 ## Types of security principals
 
-Azure Active Directory (Azure AD) is the service that manages identities for Azure. Azure AD has multiple different types of _security principals_:
+Azure Active Directory (Azure AD) is the service that manages identities for Azure. Azure AD has multiple different types of identities, which are also called _security principals_:
 
 :::image type="content" source="../media/2-security-principals.png" alt-text="Diagram showing the four types of security principal: user, group, service principal, and managed identity." border="false":::
 
@@ -66,10 +66,10 @@ Service principals and applications are tightly linked. When you look at a servi
 
 Azure AD is a global identity service. Many different companies use Azure AD, and each company is called a _tenant_. One of the features of Azure AD is that one tenant can optionally provide other tenants with access to their applications, and access applications provided by others. By default, an application is only used within your own Azure AD tenant. But you can optionally make your application available to other Azure AD tenants too, by configuring it as a _multitenant app_. This enables a lot of interesting features for cross-company collaboration, but these features aren't usually relevant for deployment pipelines. However, it's important to know that whenever an application registration is added to an Azure AD tenant, a _service principal_ object is created in that Azure AD tenant.
 
-When you create a service principal, most of the tools you use also create an application registration at the same time, so you may not notice that there's are two different objects.
+When you create a service principal, most of the tools you use also create an application registration at the same time, so you may not notice that there are two different objects.
 
 > [!IMPORTANT]
-> A service principal is sometimes called an _enterprise application_. Some tools uses one name and other tools uses the other. You might also see service principals called _managed applications in your local directory_.
+> A service principal is sometimes called an _enterprise application_. Some tools use one name and other tools use the other. You might also see service principals called _managed applications in your local directory_.
 
 A managed identity is a special kind of service principal that isn't associated with an application registration. Azure manages the configuration and credentials for a managed identity.
 

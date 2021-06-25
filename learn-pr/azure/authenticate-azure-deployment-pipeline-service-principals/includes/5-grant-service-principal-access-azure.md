@@ -34,11 +34,11 @@ There are also lots of very specific roles that provide access just to a subset 
 
 You need to determine how broadly you assign the role. This impacts the number of resources that service principal can modify. Common scopes include:
 
-- **Single resource:** You can grant access just to a specific resource. Typically pipelines don't use this scope, because a pipeline creates resources that don't exist yet, or reconfigures multiple resources.
+- **Single resource:** You can grant access just to a specific resource. Typically deployment pipelines don't use this scope, because a pipeline creates resources that don't exist yet, or reconfigures multiple resources.
 - **Resource group:** You can grant access to all resources within a resource group. **Contributors** and **Owners** can also create resources within the group. This is a good option for many deployment pipelines.
 - **Subscription:** You can grant access to all resources within a subscription. If you have multiple applications, workloads, or environments in a single subscription then this can be unnecessarily permissive for a pipeline.
 
-Remember that role assignments are inherited. This means that if you assign a role at a subscription, the assignee will have access to every resource inside that subscription.
+Remember that role assignments are inherited. This means that if you assign a role at a subscription, the assignee will have access to every resource group and resource inside that subscription.
 
 ### How do you select the right role assignment?
 
