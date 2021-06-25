@@ -27,7 +27,7 @@ You're considering a design that will include the following infrastructure compo
 - Azure IoT Hub. Azure IoT Hub is an Azure service that enables you to connect to, monitor, and manage IoT devices.
 - Azure IoT Hub Device Provisioning Service. This is a component of Azure IoT hub that facilitates the automatic provisioning of IoT devices.
 
-You intend to deliver the new version of your app across three stages: development, quality service, and production. An Azure build pipeline will test, build, and store the latest version of an IoT app pushed into Azure Repos. Through continuous integration, a successful build will trigger the release pipeline. This will in turn provision the remaining infrastructure components in the target environment and deploy the app into them. To conclude the deployment, the pipeline will invoke a smoke test that checks the following conditions:
+You intend to deliver the new version of your app across three stages: dev, qa, and production. An Azure build pipeline will test, build, and store the latest version of an IoT app pushed into Azure Repos. Through continuous integration, a successful build will trigger the release pipeline. This will in turn provision the remaining infrastructure components in the target environment and deploy the app into them. To conclude the deployment, the pipeline will invoke a smoke test that checks the following conditions:
 
 - The availability of the IoT devices
 - The connectivity between the IoT device and the IoT hub
