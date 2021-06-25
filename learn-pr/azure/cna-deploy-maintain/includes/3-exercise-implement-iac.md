@@ -234,7 +234,7 @@ Now you're ready to proceed with deploying an AKS cluster by using a GitHub work
 1. Switch back to the web browser window displaying the Azure portal.
 1. Navigate to the **cna-devops-03-rg** resource group blade and verify that it contains the AKS cluster **cna-devops-03-aks**.
 
-    :::image type="content" source="../media/3-azure-deployment-completed.png" alt-text="Screenshot of the cna-devops-03-rg resource group with the AKS cluster can-devops-03-aks in the Azure portal." border="false":::STOP:
+    :::image type="content" source="../media/3-azure-deployment-completed.png" alt-text="Screenshot of the cna-devops-03-rg resource group with the AKS cluster can-devops-03-aks in the Azure portal." border="false":::
 
 ## Delete deployed resources
 
