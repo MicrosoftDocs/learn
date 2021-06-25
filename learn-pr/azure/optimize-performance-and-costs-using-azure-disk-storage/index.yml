@@ -37,7 +37,7 @@ products:
 units:
 - learn.azure.optimize-performance-and-costs-using-azure-disk-storage.introduction
 - learn.azure.optimize-performance-and-costs-using-azure-disk-storage.choose-right-azure-disk-storage-option
-- learn.azure.optimize-performance-and-costs-using-azure-disk-storage.understanding-disk-performance-characteristics
+- learn.azure.optimize-performance-and-costs-using-azure-disk-storage.understand-disk-performance-characteristics
 - learn.azure.optimize-performance-and-costs-using-azure-disk-storage.optimize-performance-and-costs-using-performance-scaling-options
 - learn.azure.optimize-performance-and-costs-using-azure-disk-storage.knowledge-check
 - learn.azure.optimize-performance-and-costs-using-azure-disk-storage.summary
