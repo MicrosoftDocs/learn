@@ -25,6 +25,9 @@ It can be a little more work to figure out which role to assign. In Azure, there
 - **Contributor**, which allows the assignee to create resources, and read and modify existing resources. However, contributors can't grant other principals access to resources.
 - **Owner**, which allows full control over resources, including granting other principals access.
 
+> [!CAUTION]
+> You should only grant service pricipals the minimum permissions they need to do their jobs. Most of the time, the **Owner** role is too permissive for a deployment pipeline.
+
 There are also lots of very specific roles that provide access just to a subset of functionality. You can even create your own _role definition_ to specify the exact list of permissions that you want to assign.
 
 > [!NOTE]
@@ -36,7 +39,7 @@ You need to determine how broadly you assign the role. This impacts the number o
 
 - **Single resource:** You can grant access just to a specific resource. Typically deployment pipelines don't use this scope, because a pipeline creates resources that don't exist yet, or reconfigures multiple resources.
 - **Resource group:** You can grant access to all resources within a resource group. **Contributors** and **Owners** can also create resources within the group. This is a good option for many deployment pipelines.
-- **Subscription:** You can grant access to all resources within a subscription. If you have multiple applications, workloads, or environments in a single subscription then this can be unnecessarily permissive for a pipeline.
+- **Subscription:** You can grant access to all resources within a subscription. If you have multiple applications, workloads, or environments in a single subscription then you can grant permissions to the subscription's scope, but this is usually too permissive for a deployment pipeline. You should instead consider scoping your role assignments to resource groups.
 
 Remember that role assignments are inherited. This means that if you assign a role at a subscription, the assignee will have access to every resource group and resource inside that subscription.
 
@@ -54,6 +57,12 @@ Now that you understand the components of a role assignment, you can decide the 
 ### Mix and match role assignments
 
 You can create multiple role assignments that provide different permissions at different scopes. For example, you might assign a service principal the role of **Reader** with a scope of the entire subscription, and then separately assign the same service principal the role of **Contributor** for a specific resource group. When the service principal tries to work with the resource group, the more permissive assignment is applied.
+
+### Work with multiple environments
+
+You likely work with multiple environments, like a development, test, and production environment for your applications. The resources for each environment should be deployed to different resource groups or subscriptions.
+
+You should create separate service principals for each environment, and grant each service principal the minimum set of permissions that it needs for its deployments. Be especially careful to avoid mixing permissions for production deployments with those for deployments to non-production environments.
 
 ## Create a role assignment for a service principal
 

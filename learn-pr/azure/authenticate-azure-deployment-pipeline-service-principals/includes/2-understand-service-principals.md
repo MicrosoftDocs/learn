@@ -38,7 +38,7 @@ A _managed identity_ is a special type of service principal. Like a normal servi
 When you work with pipelines, you usually can't use managed identities. This is because managed identities require that you own and manage the Azure resources. When you work with Azure Pipelines and GitHub Actions, you usually rely on shared infrastructure provided by Microsoft or GitHub.
 
 > [!NOTE]
-> There are some situations where pipelines can use managed identities. In Azure Pipelines, you can create a _self-hosted agent_ to run your pipelines using your own Azure-based virtual machine. Since you own the virtual machine, you can assign it a managed identity and use it from your pipeline. However, most of the time, you use a _hosted agent_ that is managed by Microsoft, or a _hosted runner_ that is managed by GitHub, which aren't compatible with managed identities.
+> There are some situations where pipelines can use managed identities. In Azure Pipelines, you can create a _self-hosted agent_ to run your pipeline's scripts and code using on your own Azure-based virtual machine. Since you own the virtual machine, you can assign it a managed identity and use it from your pipeline. However, most of the time, your pipelines run using a _hosted agent_, which is a server that is managed by Microsoft, or a _hosted runner_, which is managed by GitHub. Hosted agents and hosted runners aren't compatible with managed identities.
 
 > [!TIP]
 > In other parts of your solution, if you have a choice between using a managed identity or using a normal service principal, it's usually best to go with a managed identity since they are easier to work with and can be more secure.
@@ -60,17 +60,17 @@ For these reasons, the built-in pipeline tasks that interact with Azure don't ev
 
 You might see a few different terms in use when you work with service principals. Although it's not essential to understand these terms just to use service principals in a pipeline, it's helpful to know a little about how this works. When you work with different tools like the Azure portal, or the Microsoft Graph API, you might see these concepts or terms.
 
-Service principals are a feature of Azure AD. Azure AD has a concept of an _application_, which represents a system, piece of software, process, or some other non-human agent. You can consider a deployment pipeline to be an application too. In Azure AD, applications can do many different things that are beyond the scope of authentication and pipeline deployments. When you create a brand new application and tell Azure AD about it, you create an object called an _application registration_. An application registration represents the application in Azure AD.
+Service principals are a feature of Azure AD. Azure AD is a global identity service. Many different companies use Azure AD, and each company is called a _tenant_.
 
-Service principals and applications are tightly linked. When you look at a service principal in the Azure portal, you see a lot of other functionality and configuration that might not seem relevant. Much of this is because service principals are linked to applications.
+Azure AD also has a concept of an _application_, which represents a system, piece of software, process, or some other non-human agent. You can think of a deployment pipeline as an application too. In Azure AD, applications can do many different things that are beyond the scope of authentication and pipeline deployments. When you create a brand new application and tell Azure AD about it, you create an object called an _application registration_. An application registration represents the application in Azure AD.
 
-Azure AD is a global identity service. Many different companies use Azure AD, and each company is called a _tenant_. One of the features of Azure AD is that one tenant can optionally provide other tenants with access to their applications, and access applications provided by others. By default, an application is only used within your own Azure AD tenant. But you can optionally make your application available to other Azure AD tenants too, by configuring it as a _multitenant app_. This enables a lot of interesting features for cross-company collaboration, but these features aren't usually relevant for deployment pipelines. However, it's important to know that whenever an application registration is added to an Azure AD tenant, a _service principal_ object is created in that Azure AD tenant.
+Service principals and applications are tightly linked. Whenever an application registration is added to an Azure AD tenant, a _service principal_ object is created in that Azure AD tenant. When you look at a service principal in the Azure portal, you see a lot of other functionality and configuration that might not seem relevant. Much of this is because service principals are linked to applications.
 
 When you create a service principal, most of the tools you use also create an application registration at the same time, so you may not notice that there are two different objects.
 
-> [!IMPORTANT]
-> A service principal is sometimes called an _enterprise application_. Some tools use one name and other tools use the other. You might also see service principals called _managed applications in your local directory_.
-
 A managed identity is a special kind of service principal that isn't associated with an application registration. Azure manages the configuration and credentials for a managed identity.
+
+> [!NOTE]
+> A service principal is sometimes called an _enterprise application_. Some tools use one name and other tools use the other. You might also see service principals called _managed applications in your local directory_, but these aren't the same thing as managed identities.
 
 To summarize, when you create a service principal, you actually first create an application registration, and then create a service principal for that application registration to use. Most of the tools you work with will do this for you so you're not even aware of it. You might not use all of the features of Azure AD applications when you work with deployment pipelines, but since service principals are related to applications, the same Azure AD object structure applies.
