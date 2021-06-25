@@ -103,6 +103,8 @@ To reset a key for a service principal, use the `az ad sp` command with the appl
 az ad sp credential reset --name b585b740-942d-44e9-9126-f1181c95d497
 ```
 
+You can also remove and recreate the service principal's key in two separate steps by using the `az ad sp credential delete` and `az ad sp credential reset --append` commands.
+
 ::: zone-end
 
 ::: zone pivot="powershell"
