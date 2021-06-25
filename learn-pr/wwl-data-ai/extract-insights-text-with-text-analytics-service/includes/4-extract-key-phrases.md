@@ -2,7 +2,7 @@ Key phrase extraction is the process of evaluating the text of a document, or do
 
 Key phrase extraction works best for larger documents (the maximum size that can be analyzed is 5,120 characters).
 
-Just as with language detection, the REST interface enables you to submit one or more documents for analysis.
+As with language detection, the REST interface enables you to submit one or more documents for analysis.
 
 ```JSON
 {

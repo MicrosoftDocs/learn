@@ -1,4 +1,4 @@
-Sentiment analysis is used to evaluate how positive or negative a text document is, which can be useful in a variety of workloads, such as:
+Sentiment analysis is used to evaluate how positive or negative a text document is, which can be useful in various workloads, such as:
 
 - Evaluating a movie, book, or product by quantifying sentiment based on reviews.
 - Prioritizing customer service responses to correspondence received through email or social media messaging.
