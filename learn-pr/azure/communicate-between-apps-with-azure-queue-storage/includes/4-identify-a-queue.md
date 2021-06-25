@@ -18,7 +18,7 @@ The combination of your storage account name and your queue name uniquely identi
 
 Every request to a queue must be authorized and there are several options to choose from.
 
-| Authorization Type | Description |
+| Authorization type | Description |
 |--------------------|-------------|
 | **Azure Active Directory** | You can use role-based authentication and identify specific clients based on AAD credentials. |
 | **Shared Key** | Sometimes referred to as an **account key**, this is an encrypted key signature associated with the storage account. Every storage account has two of these keys that can be passed with each request to authenticate access. Using this approach is like using a root password - it provides _full access_ to the storage account. |
