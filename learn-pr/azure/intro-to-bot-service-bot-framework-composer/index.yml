@@ -13,10 +13,10 @@ title: Introduction to Azure Bot Service and Bot Framework Composer
 summary: Introduction to Azure Bot Service and Bot Framework Composer
 abstract: |
   By the end of this module, you'll know more about:
-    - List the features and functionalities of a bot.
-    - Describe bot design and using Azure Bot Service.
-    - Create a bot by using Bot Framework Composer.
-    - Use the Azure Bot Service components in Azure.
+    - The features and functionalities of a bot.
+    - Bot design and using Azure Bot Service.
+    - Creating a bot by using Bot Framework Composer.
+    - How the Azure Bot Service components work together in Azure.
 prerequisites: |
   To get the best learning experience from this module, you should have:
     - Working experience of the Azure portal.
