@@ -67,7 +67,9 @@ We'll learn the capabilities of tests and help you decide when to use different 
     Example: "By the end of this session, you'll be able to decide whether Logic Apps is a good choice to automate your business processes."
 
  -->
+
 ## What is the main goal?
-By the end of this session, you'll be able to (TODO)
+
+By the end of this session, you'll be able to evaluate how testing can improve your code quality.
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
