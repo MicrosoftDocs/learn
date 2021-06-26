@@ -80,7 +80,7 @@ Like all resources, services also have manifest files that describe how they sho
           targetPort: http # Port to forward to in the POD
     ```
 
-1. Save the manifest file by pressing <kbd>Ctrl-S</kbd>>, and close the editor by pressing <kbd>Ctrl-Q</kbd>.
+1. Save the manifest file by pressing <kbd>Ctrl-S</kbd>, and close the editor by pressing <kbd>Ctrl-Q</kbd>.
 
 ## Deploy the service
 
@@ -197,7 +197,7 @@ To expose your website to the world via DNS, you must create an ingress controll
                 path: / # Which path is this rule referring to
     ```
 
-1. Save the manifest file by pressing <kbd>Ctrl-S</kbd>>, and close the editor by pressing <kbd>Ctrl-Q</kbd>.
+1. Save the manifest file by pressing <kbd>Ctrl-S</kbd>, and close the editor by pressing <kbd>Ctrl-Q</kbd>.
 
 ## Deploy the ingress
 
