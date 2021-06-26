@@ -47,13 +47,13 @@ You might have noticed that this project is organized to be used with *webpack*,
 1. Select **Terminal** in the menu of Visual Studio Code, and then select **New Terminal** to create a new terminal.
 1. Within the terminal, make sure that you are in the root folder of the repository.
 1. Use `npm install` to install all dependencies for the project.
-1. You should see a folder named node_modules created in the repository folder.
+1. You should see a folder named *node_modules* created in the repository folder.
 
 ## Import dependencies
 
 The next thing that you might have noticed is that the source files in this repository have the *.ts* extension, which means that the files are written in TypeScript instead of Javascript. While TypeScript and JavaScript are very similar in nature, TypeScript requires types to be clear for every variable and function parameters.
 
-As a result, you'll need to import every class that is used as a variable or as a function parameter:
+As a result, you'll need to import every class that is used in a variable or a function parameter:
 
 1. Navigate to **src/index.ts** in your VSCode window.
 1. Add this import statement at the top of the file:
@@ -72,11 +72,141 @@ As a result, you'll need to import every class that is used as a variable or as 
     } from 'microsoft-cognitiveservices-speech-sdk';
     ```
 
-1. <!-- Step n -->
-
 ## Create Speech Recognizer
 
+Let's create a Speech Recognizer using the Azure Speech JavaScript SDK.
+
+1. Find the createScene() function in *index.ts*.
+
+    ```typescript
+    const createScene = async function () {
+        const scene = new BABYLON.Scene(engine);
+        const env = await environment.setup(scene, theCanvas);
+        
+        return scene;
+    };
+    ```
+
+1. Before the return statement, add these lines to create the speech recognizer:
+
+    ```typescript
+    const SUBSCRIPTION_KEY = "YOUR_AZURE_SPEECH_SUBSCRIPTION_KEY";
+    const LOCATION = "YOUR_AZURE_SPEECH_INSTANCE_LOCATION";
+
+    const speechConfig = SpeechConfig.fromSubscription(SUBSCRIPTION_KEY, LOCATION);
+    speechConfig.speechRecognitionLanguage = 'en-US';
+    const audioConfig = AudioConfig.fromDefaultMicrophoneInput();
+
+    const recognizer = new SpeechRecognizer(speechConfig, audioConfig);
+    ```
+
+    Make sure to assign your Azure Speech **subscription key** and **location** to their corresponding variables.
+
+1. Add Phrase List support and include the spell in the list. Here, we will use "go dragon" as the spell that we want the users to say.
+
+    ```typescript
+    const spell = "go dragon";
+    const phraseList = PhraseListGrammar.fromRecognizer(recognizer);
+    phraseList.addPhrase(spell);
+    ```
+
+1. If an error occurs during a speech recognition session, let's stop recognizing:
+
+    ```typescript
+    recognizer.canceled = (s: Recognizer, e: SpeechRecognitionCanceledEventArgs) => {
+        if (e.reason == CancellationReason.Error) {
+            console.log(`"CANCELED: ErrorCode=${e.errorCode}`);
+            console.log(`"CANCELED: ErrorDetails=${e.errorDetails}`);
+        }
+    
+        recognizer.stopContinuousRecognitionAsync();
+    };
+    ```
+
 ## Render dragon when spell is recognized
+
+1. Let's set up the event handler for the *recognized* event, which signals that a final recognition result has been received:
+
+    ```typescript
+    recognizer.recognized = async (s: Recognizer, e: SpeechRecognitionEventArgs) => {
+        if (e.result.reason == ResultReason.RecognizedSpeech) {
+            // take action here
+        }
+    };
+    ```
+
+1. Recall that we need to match the transcribed text against the spell to make sure if the user has said the spell. Expand the if-statement in the event handler to perform the text matching:
+
+    ```typescript
+    recognizer.recognized = async (s: Recognizer, e: SpeechRecognitionEventArgs) => {
+        if (e.result.reason == ResultReason.RecognizedSpeech 
+            && e.result.text.toLowerCase().replace(/[^a-zA-Z0-9]+/g, " ").trim() === spell) {
+            //take action here
+        }
+    };
+    ```
+
+1. The 3D models for the dragon (and the magic circle) are stored in the *env* object. Let's add the code to have the magic circle and the dragon models fade in, one after another. Also, let's stop the speech recognition as the dragon has been summoned.
+
+    ```typescript
+    recognizer.recognized = async (s: Recognizer, e: SpeechRecognitionEventArgs) => {
+        if (e.result.reason == ResultReason.RecognizedSpeech 
+            && e.result.text.toLowerCase().replace(/[^a-zA-Z0-9]+/g, " ").trim() === spell) {
+                env.magicCircle.fadeIn(true);
+                setTimeout(() => {
+                    env.dragon.fadeIn(true);
+                }, 500);
+                recognizer.stopContinuousRecognitionAsync();
+        }
+    };
+    ```
+
+1. Finally, call recognizer.startContinuousRecognitionAsync() to start the speech recognition service. Here is what the entire createScene() function look like at this step:
+
+    ```typescript
+    const createScene = async function () {
+        const scene = new BABYLON.Scene(engine);
+        
+        const env = await environment.setup(scene, theCanvas);
+    
+        const SUBSCRIPTION_KEY = "YOUR_AZURE_SPEECH_SUBSCRIPTION_KEY";
+        const LOCATION = "YOUR_AZURE_SPEECH_INSTANCE_LOCATION";
+    
+        const speechConfig = SpeechConfig.fromSubscription(SUBSCRIPTION_KEY, LOCATION);
+        speechConfig.speechRecognitionLanguage = 'en-US';
+        const audioConfig = AudioConfig.fromDefaultMicrophoneInput();
+    
+        const recognizer = new SpeechRecognizer(speechConfig, audioConfig);
+
+        const spell = "go dragon";
+        const phraseList = PhraseListGrammar.fromRecognizer(recognizer);
+        phraseList.addPhrase(spell);
+
+        recognizer.canceled = (s: Recognizer, e: SpeechRecognitionCanceledEventArgs) => {
+            if (e.reason == CancellationReason.Error) {
+                console.log(`"CANCELED: ErrorCode=${e.errorCode}`);
+                console.log(`"CANCELED: ErrorDetails=${e.errorDetails}`);
+            }
+        
+            recognizer.stopContinuousRecognitionAsync();
+        };
+            
+        recognizer.recognized = async (s: Recognizer, e: SpeechRecognitionEventArgs) => {
+            if (e.result.reason == ResultReason.RecognizedSpeech 
+                && e.result.text.toLowerCase().replace(/[^a-zA-Z0-9]+/g, " ").trim() === spell) {
+                    env.magicCircle.fadeIn(true);
+                    setTimeout(() => {
+                        env.dragon.fadeIn(true);
+                    }, 500);
+                    recognizer.stopContinuousRecognitionAsync();
+            }
+        };
+    
+        recognizer.startContinuousRecognitionAsync();
+        
+        return scene;
+    }
+    ```
 
 <!-- 5. Validation chunk -------------------------------------------------------------------------------------
 
