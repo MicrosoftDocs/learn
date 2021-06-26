@@ -8,7 +8,7 @@ Imagine that we wanted our machine learning model to draw realistic pictures of 
 
 Recall that training requires several components:
 
-IMAGE TO BE ADDED
+![Machine learning lifecycle.](../media/2-2-a.png)
 
 In unsupervised learning, the objective function makes its judgment purely on the model’s estimate, which means it often needs to be relatively sophisticated. For example, the objective function might need to contain a ‘dog detector’ to assess if images drawn by the model looked realistic. The only data we need for unsupervised learning are features: data that we provide to the model.
 
@@ -20,6 +20,8 @@ Meaning that, while we can have very simple objective functions, we need both:
 
 1. Features that are provided as inputs to the model, and
 2. Labels, which are the correct answers we want the model to be able to produce.
+
+![Machine learning lifecycle with labels.](../media/2-2-b.png)
 
 For example, consider our desire to predict what the temperature will be on January 31st of a given year. For this, we will need data with two components:
 

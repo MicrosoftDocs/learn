@@ -1,8 +1,6 @@
-This module explores a process called supervised learning, in which machine learning models learn by example.
+This module explores a process called supervised learning, in which machine learning models learn from examples.
 
 By understanding supervised learning, we will start a deeper dive into the individual components of the learning process, and exactly how this process can improve a model. Through examples, we will also explore how setting up this learning process correctly is critical to achieving a high-performance model.
-
-## Scenario:
 
 Throughout this module, we’ll be using the following example scenario to explain the process of supervised learning. This is designed to provide an example for how you might meet these concepts while programming yourself:
 
@@ -10,16 +8,13 @@ Your family have managed Washington State’s longest-running elk farm for sever
 
 ## Prerequisites
 
-* Familiarity with Python programming language syntax
-* Understand basic differences between traditional software and machine learning applications
-* Have a basic understanding of data
-* Familiarity with fundamental machine learning terms, such as inputs, outputs, and model
+A basic familiarity with inputs, outputs, and models
 
 ## Learning objectives
 
 In this module, you will:
 
-* Contrast supervised and unsupervised learning,
-* Explore how cost functions affect the learning process,
-* Discover how models are optimized by gradient descent,
-* Experiment with learning rate, and see how they can affect training.
+* Define supervised and unsupervised learning
+* Explore how cost functions affect the learning process
+* Discover how models are optimized by gradient descent
+* Experiment with learning rates, and see how they can affect training
