@@ -133,10 +133,10 @@ This will create a new `package.json` file in the current folder. You should see
     }
     ```
 
-1. Save the file by selecting the **...** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Command+S</kbd> on macOS).
+1. Save the file by selecting the **...** menu, or press (<kbd>Ctrl+S</kbd> on Windows and Linux, and <kbd>Command+S</kbd> on macOS).
 
 > [!IMPORTANT]
-> Whenever you paste or change code into a file in the editor, make sure to save afterwards by selecting the **...** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux; <kbd>Command+S</kbd> on macOS). To exit the editor, press the accelerator key <kbd>Ctrl+Q</kbd> on Windows and Linux; <kbd>Command+Q</kbd> on macOS).
+> Whenever you paste or change code into a file in the editor, make sure to save afterwards by selecting the **...** menu, or pressing (<kbd>Ctrl+S</kbd> on Windows and Linux; <kbd>Command+S</kbd> on macOS). To exit the editor, press <kbd>Ctrl+Q</kbd> on Windows and Linux; <kbd>Command+Q</kbd> on macOS.
 
 1. Switch to the `index.js` file, and add the following contents to it. This is a small Node.js program that always responds with "Hello World!" when any GET request is made to the server.
 
@@ -154,7 +154,7 @@ This will create a new `package.json` file in the current folder. You should see
     console.log(`Server running at http://localhost:${port}`);
     ```
 
-1. Save the file and exit the editor. Exit the editor by selecting the **...** menu on the top right, or by pressing <kbd>Ctrl+Q</kbd>.
+1. Save the file and exit the editor. Save your file and exit the editor by selecting the **...** menu on the top right, and then selecting **Save** > **Close Editor**, or by pressing <kbd>Ctrl+S</kbd> and <kbd>Ctrl+Q</kbd> on Windows and Linux; <kbd>Command+S</kbd> and <kbd>Command+Q</kbd> on macOS.
 
 ### Optionally test your web app
 
@@ -219,7 +219,7 @@ To create a starter web application, we'll use the web application framework Fla
         return "<html><body><h1>Hello Best Bike App!</h1></body></html>\n"
     ```
 
-1. Save the file, and exit the editor. You can save the file and exit the editor by selecting the **...** menu on the top right, or use shortcuts (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Command+S</kbd> on macOS); To exit the editor, use the shortcuts <kbd>Ctrl+Q</kbd> on Windows and Linux; <kbd>Command+Q</kbd> on macOS).
+1. Save the file and exit the editor. Save your file and exit the editor by selecting the **...** menu on the top right, and then selecting **Save** > **Close Editor**, or by pressing <kbd>Ctrl+S</kbd> and <kbd>Ctrl+Q</kbd> on Windows and Linux; <kbd>Command+S</kbd> and <kbd>Command+Q</kbd> on macOS.
 
 1. To deploy your application to Azure, you will need to save your list of application requirements in a *requirements.txt* file. To do so, run the following command.
 
