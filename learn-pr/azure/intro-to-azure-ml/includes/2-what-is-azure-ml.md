@@ -34,7 +34,7 @@ In the image below, we can see an overview of the AutoML pipeline building and r
 
 If you prefer a no-code option, _Azure ML Designer_ within the Azure ML Studio gives you a **visual canvas with drag and drop controls to manipulate datasets and modules.** Modules within Azure ML Designer are algorithms that can have a range of purposes, from data ingress functions to training, scoring, and validation processes. These linked modules create effective ML pipelines to build, test, and deploy ML models, as seen in the example below.
 
-:::image type="content" source="../media/2-designer.gif" alt-text="azure ml notebooks example." lightbox="../media/2-designer.gif":::
+:::image type="content" source="../media/2-designer.gif" alt-text="azure ml designer example." lightbox="../media/2-designer.gif":::
 
 ## Managing data
 
