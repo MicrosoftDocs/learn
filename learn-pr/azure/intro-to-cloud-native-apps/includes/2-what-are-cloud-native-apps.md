@@ -31,7 +31,7 @@ You can connect a backend to your relational database of choice for one service,
 :::column-end:::
 :::column:::
 
-![Cloud-native design with components.](../media/2-components1.png)
+![Cloud-native design with components.](../media/2-components-1.png)
 
 :::column-end:::
 :::row-end:::

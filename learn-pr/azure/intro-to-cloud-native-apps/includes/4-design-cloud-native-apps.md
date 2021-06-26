@@ -20,7 +20,7 @@ This solution is easily connected to your database of choice, allowing a scalabl
 :::column-end:::
 :::column span="1":::
 
-![Basic inventory service with Node and webapp.](../media/3-basic-service1.png)
+![Basic inventory service with Node and webapp.](../media/3-basic-service-1.png)
 
 :::column-end:::
 :::row-end:::
@@ -39,11 +39,11 @@ Because of the loosely coupled nature of Cloud Native Apps, for telemetry data y
 :::column-end:::
 :::column span="1":::
 
-![Telemetry service using IoT Hub, Azure Stream Analytics, and Cosmos DB.](../media/3-telemetry-service1.png)
+![Telemetry service using IoT Hub, Azure Stream Analytics, and Cosmos DB.](../media/3-telemetry-service-1.png)
 
 :::column-end:::
 :::row-end:::
 
 As the services are separated, your team can also develop and deploy an IoT service with no impact on your existing inventory service, as shown in the image below.
 
-![Final architecture combining both the inventory service and telemetry service.](../media/3-final-architecture1.png)
+![Final architecture combining both the inventory service and telemetry service.](../media/3-final-architecture-1.png)

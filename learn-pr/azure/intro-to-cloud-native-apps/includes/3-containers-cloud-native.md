@@ -12,7 +12,7 @@ While we can use containers directly, by taking a working software program from 
 :::column-end:::
 :::column span="1":::
 
-![Cloud-native design with containers.](../media/2-containers1.png)
+![Cloud-native design with containers.](../media/2-containers-1.png)
 
 :::column-end:::
 :::row-end:::
