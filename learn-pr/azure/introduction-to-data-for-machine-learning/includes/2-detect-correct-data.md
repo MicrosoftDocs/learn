@@ -37,7 +37,6 @@ A dataset that is complete has no missing data. Data can be missing in two ways.
 |Heuy|1.8|75|
 |Dewey| |82|
 
-
 Our data are incomplete because we have a sample missing: Louie is missing entirely, while Dewey’s height is missing.
 
 Ideally, we always work with complete data, but this isn’t always realistic. When we have incomplete data, we can:
