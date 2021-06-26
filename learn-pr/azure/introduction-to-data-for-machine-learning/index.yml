@@ -2,20 +2,20 @@
 uid: learn.azure.introduction-to-data-for-machine-learning
 metadata:
   title: Introduction to data for machine learning
-  description: Quick run through of ML models - Build a model, test a model, save a model, use a saved model on new data.
+  description: The power of machine learning models comes from the data that is used to train them. Through content and exercises, we explore how to understand your data, how to encode it so that the computer can interpret it properly, how to clean it of errors, and tips that will help you create models that perform well.
   ms.date: 05/25/2021
   author: TomReidNZ
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to data for machine learning
-summary: Skeleton module for Jason to review. Quick run through of ML models - Build a model, test a model, save a model, use a saved model on new data.
+summary: The power of machine learning models comes from the data that is used to train them. Through content and exercises, we explore how to understand your data, how to encode it so that the computer can interpret it properly, how to clean it of errors, and tips that will help you create models that perform well.
 abstract: | 
   In this module, you will:
-  - Clean a dataset of missing values
-  - Define supervised learning
+  - Explore large datasets by generating graphs
+  - Clean a dataset of errors
   - Predict unknown values using numeric and categorical data
-prerequisites: None
+prerequisites: Some familiarity with machine learning concepts, such as models and cost, is helpful, but not essential
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
 - beginner

@@ -32,7 +32,11 @@ Data entry errors mean that data was collected correctly but entered into a spre
 
 A dataset that is complete has no missing data. Data can be missing in two ways. Consider that we record the heights and weights of Huey, Dewey, and Louie:
 
-TABLE TO BE ADDED
+|Name| Height (m) |	Weight (kg)|
+|---|---|---|
+|Heuy|1.8|75|
+|Dewey| |82|
+
 
 Our data are incomplete because we have a sample missing: Louie is missing entirely, while Dewey’s height is missing.
 
