@@ -2,7 +2,7 @@ The goal of training is to improve a model so that it can make high-quality esti
 
 Models don’t train themselves, they are trained using data plus two pieces of code: the objective function, and the optimizer. Let’s explore how these components work together to train a model to work well.
 
-Picture to go here
+![Untrained model with two parameters, and a trained model with 0.7 and 0.4 as the parameters.](../media/1-4-a.png)
 
 ## The Objective
 
@@ -25,9 +25,3 @@ During training, the model makes a prediction, and the objective function calcul
 How an optimizer does this is complex, and something we cover in later material. Don’t be intimidated though: we don’t normally write our own optimizers—we use open-source frameworks where the hard work has been done for us.
 
 It is important to keep in mind that the objective, data, and optimizer are simply a means to train the model. They are not needed once training is complete. It is also important to remember that training only changes the parameter values inside of a model; it does not change what kind of model is used.
-
-## Training: The Big Picture
-
-Let’s revise how these parts fit together to train a model.
-
-A video to go here.
