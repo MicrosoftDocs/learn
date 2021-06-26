@@ -26,13 +26,13 @@ In this task, you'll clone a GitHub repo containing a sample Next.js code and cu
 1. From the Bash session on the **Cloud Shell** pane, run the following command to clone the GitHub repo containing the sample Next.js application code that you'll use in this exercise:
 
     ```azurecli
-    git clone https://github.com/polichtm/wp2104-m03u07.git
+    git clone https://github.com/MicrosoftDocs/mslearn-cloud-native-apps.git
     ```
 
 1. Run the following command to switch to the directory containing the clone of the GitHub repo:
 
     ```azurecli
-    cd ~/wp2104-m03u07/
+    cd ~/mslearn-cloud-native-apps/m03u07/
     ```
 
 1. Run the following command to display the content of the **./prisma/schema.prisma** file containing the definition of the data model corresponding to the **inventory** table in the **cnainventory** database:
