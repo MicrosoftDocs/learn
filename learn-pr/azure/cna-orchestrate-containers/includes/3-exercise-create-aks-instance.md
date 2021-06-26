@@ -73,11 +73,11 @@ In this exercise, you will:
     cd mslearn-cloud-native-apps-express/src
     ```
 
-1.  Run the following command. This command sends the folder's contents to Azure Container Registry, which uses the instructions in the Docker file to build the image and store it. Take care not to remove the `.` character at the end of the command.
+1. Run the following command. This command sends the folder's contents to Azure Container Registry, which uses the instructions in the Docker file to build the image and store it. Take care not to remove the `.` character at the end of the command.
 
-   ```bash
-   az acr build --registry $REGISTRYNAME --image expressimage .
-   ```
+    ```bash
+    az acr build --registry $REGISTRYNAME --image expressimage .
+    ```
 
     > [!TIP]
     >  
@@ -106,7 +106,7 @@ In this section, we'll create an Azure Kubernetes Service instance in the Azure 
     > [!div class="nextstepaction"]
     > [Azure portal](https://portal.azure.com/)
 
-To create an AKS cluster, complete the following steps:
+    To create an AKS cluster, complete the following steps:
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
