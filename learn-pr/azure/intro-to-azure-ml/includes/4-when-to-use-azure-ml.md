@@ -16,8 +16,6 @@ Azure ML’s features and supported tools enhance intelligibility and oversight 
 
 Azure ML also helps safeguard people and their data by integrating differential privacy tools such as SmartNoise to protect sensitive data and avoid leaks. Azure ML also supports Microsoft SEAL encryption to maintain the confidentiality of private information—even from teams using the data. MLOps features also deliver more control of the end-to-end ML life cycle with governance data logging and tools—and a robust security framework
 
-![responsible ml image](../media/4-responsible-ml.png)
-
 ## Ongoing predictions and forecasting
 
 The wide array of algorithms and their potential uses means that almost every industry can deploy models that will help boost productivity or shine a light on new customers and better serve existing ones. The most used algorithms are regression, classification, and time-series forecasting. These can predict target categories, find unusual data points, predict values, and discover similarities. Modeling data can help businesses find their next store location or locate areas within a factory that likely require maintenance before trouble arises. In our daily lives, weather reporting relies heavily on these models to predict the coming weather or the path of storm systems, allowing people to prepare. With Azure ML, these different models can be created quickly, but if you are unsure which is suitable for your data, AutoML can be used to test, train, and suggest the most appropriate model for your data.
