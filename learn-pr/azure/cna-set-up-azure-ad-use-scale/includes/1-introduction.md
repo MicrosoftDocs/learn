@@ -1,4 +1,4 @@
-﻿Reslient, flexible, and scalable security controls are particularly important when implementing cloud-native applications. To provide this functionality, you can leverage authentication and authorization functionality offered by Azure Active Directory (Azure AD).
+Resilient, flexible, and scalable security controls are particularly important when implementing cloud-native applications. To provide this functionality, you can leverage authentication and authorization functionality offered by Azure Active Directory (Azure AD).
 
 ## Scenario: Set up apps for authentication
 

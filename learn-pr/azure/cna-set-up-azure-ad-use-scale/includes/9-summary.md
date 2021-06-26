@@ -14,13 +14,13 @@ Now that you've completed this module, you should know more about how to:
 
 You can learn more by reviewing the following articles:
 
-* [What is Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis?azure-portal=true)
-* [Quickstart: Set up a tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant?azure-portal=true)
-* [What is guest user access in Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b?azure-portal=true)
-* [Application model](https://docs.microsoft.com/azure/active-directory/develop/application-model?azure-portal=true)
-* [Permissions and consent in the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent?azure-portal=true)
-* [Authentication flows and application scenarios](https://docs.microsoft.com/azure/active-directory/develop/authentication-flows-app-scenarios?azure-portal=true)
-* [What is Azure Database for PostgreSQL?](https://docs.microsoft.com/azure/postgresql/overview?azure-portal=true)
-* [Microsoft identity platform best practices and recommendations](https://docs.microsoft.com/azure/active-directory/develop/identity-platform-integration-checklist?azure-portal=true)
-* [How to: Sign in any Azure Active Directory user using the multi-tenant application pattern](https://docs.microsoft.com/azure/active-directory/develop/howto-convert-app-to-be-multi-tenant?azure-portal=true)
-* [Quickstart: Sign in and get an access token in a React SPA using the auth code flow](https://docs.microsoft.com/azure/active-directory/develop/quickstart-v2-javascript-auth-code-react?azure-portal=true)
+* [What is Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-whatis?azure-portal=true)
+* [Quickstart: Set up a tenant](/azure/active-directory/develop/quickstart-create-new-tenant?azure-portal=true)
+* [What is guest user access in Azure Active Directory B2B?](/azure/active-directory/external-identities/what-is-b2b?azure-portal=true)
+* [Application model](/azure/active-directory/develop/application-model?azure-portal=true)
+* [Permissions and consent in the Microsoft identity platform](/azure/active-directory/develop/v2-permissions-and-consent?azure-portal=true)
+* [Authentication flows and application scenarios](/azure/active-directory/develop/authentication-flows-app-scenarios?azure-portal=true)
+* [What is Azure Database for PostgreSQL?](/azure/postgresql/overview?azure-portal=true)
+* [Microsoft identity platform best practices and recommendations](/azure/active-directory/develop/identity-platform-integration-checklist?azure-portal=true)
+* [How to: Sign in any Azure Active Directory user using the multi-tenant application pattern](/azure/active-directory/develop/howto-convert-app-to-be-multi-tenant?azure-portal=true)
+* [Quickstart: Sign in and get an access token in a React SPA using the auth code flow](/azure/active-directory/develop/quickstart-v2-javascript-auth-code-react?azure-portal=true)
