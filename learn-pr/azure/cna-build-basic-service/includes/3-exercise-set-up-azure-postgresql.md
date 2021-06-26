@@ -35,7 +35,7 @@ To perform this exercise, you need:
 
     :::image type="content" source="../media/3-azure-db-postgresql-create-basics.png" alt-text="Screenshot of the Basics tab of the Single server blade in the Azure portal.":::
 
-1. Select **Next: Review + create >**.
+1. Select **Review + create**.
 1. On the **Review + create** tab of the **Single server** blade, select **Create**. Wait for the provisioning to complete. This might take about five minutes.
 
     > [!NOTE]
@@ -72,11 +72,12 @@ To perform this exercise, you need:
     psql --host=<server_name> --port=5432 --username=<user_name> --dbname=postgres
     ```
 
-    After you successfully connect, you should be presented with the `postgres=>` prompt.
+    > [!NOTE]
+    > Once you successfully connect, you should be presented with the `postgres=>` prompt.
 
 ## Create a sample database and table
 
-1. From the `postgres=>` prompt, run the following command to create a new database named **cnainventory**:
+1. From the `postgres=>` prompt, run the following command to create a new database named **cnainventory** (make sure to include the semicolon at the end of the command):
 
     ```t-sql
     CREATE DATABASE cnainventory;
@@ -115,11 +116,13 @@ To perform this exercise, you need:
     INSERT INTO inventory (id, name, quantity) VALUES (2, 'milk', 100);
     ```
 
-1. Run the following command to verify that the table contains the data you inserted:
+1. Run the following command to verify that the table contains the data you inserted (the output should display newly added inventory items):
 
     ```t-sql
     SELECT * FROM inventory;
     ```
+
+1. Close the Cloud Shell pane displaying a Bash seesion.
 
 ## Results
 

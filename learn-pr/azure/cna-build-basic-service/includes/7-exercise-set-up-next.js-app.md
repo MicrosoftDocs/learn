@@ -208,7 +208,7 @@ As in the previous exercise, you could, at this point, containerize the newly cu
 
     ```azurecli
    SPNAME=nextjs-sp
-   az appservice plan create --name $SPNAME --resource-group $RG2NAME --sku F1 --is-linux
+   az appservice plan create --name $SPNAME --resource-group $RG2NAME --sku B1
     ```
 
 1. Run the following commands to create a Node.js-based Azure web app:
@@ -261,7 +261,7 @@ As in the previous exercise, you could, at this point, containerize the newly cu
     ```
 
     > [!NOTE]
-    > Wait for the deployment to complete. This should take about three minutes.
+    > Wait for the deployment to complete. This should take about ten minutes. Once the deployment completes, you should receive a message stating that the deployment was successful.
 
 1. Close the **Cloud Shell** pane.
 
@@ -270,7 +270,11 @@ As in the previous exercise, you could, at this point, containerize the newly cu
 In this task, you'll validate the functionality of the Next.js application deployed to an Azure web app.
 
 1. In the web browser window displaying the Azure portal, use the **Search resources, services, and docs** text box at the top of the Azure portal page to search for **App Services**.
-1. On the **App Services** blade, in the list of App Service instances, select the entry representing the Azure web app you deployed in the previous task of this exercise.
+1. On the **App Services** blade, in the list of App Service instances, select the entry representing the Azure web app you deployed in the previous task of this exercise. 
+
+    > [!NOTE]
+    > The web app name will have the **nextjs** prefix. You can also identify it by reviewing the output of the deployment you completed in the previous task.
+
 1. On the blade displaying the properties of the web app, in the vertical menu, in the **Development Tools** section, select the **App Service Editor (Preview)** entry, and then on the **App Service Editor (Preview)**, select **Go**.
 1. On the **App Service Editor** interface, in the vertical menu, select the **Open Console** icon, which is directly after the **Start** icon.
 
@@ -298,4 +302,4 @@ Congratulations! You've completed the third and final exercise of this module. I
 
 ## Clean up the resources
 
-To avoid unnecessary charges from usage of Azure resources, you should delete the **cosmos-db-RG**, **cna-express-RG**, and **cna-nextjs-RG** resource groups you created throughout the exercises of this module. To do so, in the Azure portal, navigate to the blade of each of these resource groups, and select the **Delete resource group** entry in the toolbar. In the **TYPE THE RESOURCE GROUP NAME** textbox, enter the name of the resource group, and then select **Delete**.
+To avoid unnecessary charges from usage of Azure resources, you should delete the **postgresql-db-RG**, **cna-express-RG**, and **cna-nextjs-RG** resource groups you created throughout the exercises of this module. To do so, in the Azure portal, navigate to the blade of each of these resource groups, and select the **Delete resource group** entry in the toolbar. In the **TYPE THE RESOURCE GROUP NAME** textbox, enter the name of the resource group, and then select **Delete**.
