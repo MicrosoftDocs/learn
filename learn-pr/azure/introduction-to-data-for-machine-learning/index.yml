@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.introduction-to-data-for-machine-learning
+uid: learn.machinelearning.introduction-to-data-for-machine-learning
 metadata:
   title: Introduction to data for machine learning
   description: The power of machine learning models comes from the data that is used to train them. Through content and exercises, we explore how to understand your data, how to encode it so that the computer can interpret it properly, how to clean it of errors, and tips that will help you create models that perform well.
@@ -26,15 +26,15 @@ roles:
 products: 
 - azure
 units: 
-- learn.azure.introduction-to-data-for-machine-learning.introduction
-- learn.azure.introduction-to-data-for-machine-learning.detect-correct-data
-- learn.azure.introduction-to-data-for-machine-learning.exercise-detect-visualize-missing-data
-- learn.azure.introduction-to-data-for-machine-learning.examine-data-types
-- learn.azure.introduction-to-data-for-machine-learning.exercise-normalize-data-predict-missing-values
-- learn.azure.introduction-to-data-for-machine-learning.evaluate-image-language-data
-- learn.azure.introduction-to-data-for-machine-learning.exercise-one-hot-vectors
-- learn.azure.introduction-to-data-for-machine-learning.knowledge-check
-- learn.azure.introduction-to-data-for-machine-learning.summary
+- learn.machinelearning.introduction-to-data-for-machine-learning.introduction
+- learn.machinelearning.introduction-to-data-for-machine-learning.detect-correct-data
+- learn.machinelearning.introduction-to-data-for-machine-learning.exercise-detect-visualize-missing-data
+- learn.machinelearning.introduction-to-data-for-machine-learning.examine-data-types
+- learn.machinelearning.introduction-to-data-for-machine-learning.exercise-normalize-data-predict-missing-values
+- learn.machinelearning.introduction-to-data-for-machine-learning.evaluate-image-language-data
+- learn.machinelearning.introduction-to-data-for-machine-learning.exercise-one-hot-vectors
+- learn.machinelearning.introduction-to-data-for-machine-learning.knowledge-check
+- learn.machinelearning.introduction-to-data-for-machine-learning.summary
 
 badge: 
-  uid: learn.azure.introduction-to-data-for-machine-learning.badge #add the uid for your achievement badge.
+  uid: learn.machinelearning.introduction-to-data-for-machine-learning.badge #add the uid for your achievement badge.
