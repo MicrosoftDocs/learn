@@ -7,6 +7,9 @@ During the process, you'll:
 > * Create and initialize a Git repository.
 > * Add a Bicep file to the repository folder and see how the repository's status changes.
 
+> [!NOTE]
+> Visual Studio Code is a powerful editor, and it has many different ways of achieving the same thing. Almost every action has keyboard shortcuts, and there are often several ways of performing common actions by using the user interface too. In this module, you'll be guided to perform the actions using one approach. Feel free to use a different approach if you want.
+
 ## Install Git
 
 You need to [install Git](https://git-scm.com/download). Make sure you choose the correct version based on your operating system.
@@ -95,7 +98,7 @@ You need to run a few commands to configure Git so that it associates your name 
 
 1. In the *deploy* folder, create a new file called *main.bicep*.
 
-1. Save the empty file so that Visual Studio Code loads the Bicep tooling.
+1. Open and save the empty file so that Visual Studio Code loads the Bicep tooling.
  
    You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 
@@ -103,7 +106,7 @@ You need to run a few commands to configure Git so that it associates your name 
 
    :::code language="bicep" source="code/3-main.bicep" :::
 
-   Notice that this Bicep file contains an App Service plan and app.
+   Notice that this Bicep file contains some parameters, but doesn't define any resources yet.
 
 1. Save the file.
 
@@ -147,7 +150,7 @@ Visual Studio Code shows the same information that the `git status` command prov
 
 1. In Visual Studio Code, select **View** and then **SCM**, or press <kbd>Ctrl+Shift+G</kbd>.
 
-1. The **Source Control** panel opens.
+   The **Source Control** panel opens.
 
    TODO screenshot
 
