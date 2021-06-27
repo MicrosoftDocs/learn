@@ -13,10 +13,13 @@ Git is a powerful tool for working with deployment templates and scripts. There'
 
 There are certain features of Git that are particularly useful when you work with infrastructure as code, including:
 
+- [Staging your changes](TODO), which enables you to only commit some of the things you've changed while leaving others out of the commit.
+- [Stashing your changes](https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning), which enables you to keep your changes without committing them.
 - [Undoing changes](https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things), including reverting commits and resetting your repository status.
-- [Branches](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging), including handling merge conflicts, and [rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing).
+- [Branches](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging), including handling merge conflicts, [advanced merging](https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging), and [rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing).
 - [Branching workflows](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows) to support your team's ways of working. In this module we covered trunk-based development, but many teams prefer the TODO GitFlow or [GitHub Flow](https://docs.github.com/get-started/quickstart/github-flow) models.
 - [Rewriting history](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History), including amending commit messages and removing information from your commit history, and squashing changes.
+- [Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
 Much of the power of Git comes from its use in team environments. In future modules you'll learn about some of these benefits when you use GitHub and Azure Repos. Some specific features you will likely work with include:
 

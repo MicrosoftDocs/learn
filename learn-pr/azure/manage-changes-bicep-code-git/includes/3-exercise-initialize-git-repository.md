@@ -107,9 +107,12 @@ You need to run a few commands to configure Git so that it associates your name 
 
 1. Save the file.
 
-## Inspect the repository status
+> [!NOTE]
+> Even though you've saved the file into your repository's folder, Git isn't tracking it yet. You'll learn how Git keeps track of files in the next unit.
 
-Git monitors the repository folder for changes, and you can query Git to see the list of files that have been modified. This is really useful to see what you've done and to verify you haven't accidentally added files or made changes you didn't mean to include. Here, you use both the Git CLI and Visual Studio Code to view the status of your repository.
+## Inspect the repository status by using the CLI
+
+Git monitors the repository folder for changes, and you can query Git to see the list of files that have been modified. This is really useful to see what you've done and to verify you haven't accidentally added files or made changes you didn't mean to include. You can use both the Git CLI and Visual Studio Code to view the status of your repository.
 
 1. Using the Visual Studio Code terminal, execute the following command:
 
@@ -117,7 +120,7 @@ Git monitors the repository folder for changes, and you can query Git to see the
    git status
    ```
 
-   Look at the results. You see something similar to the following:
+1. Look at the results. You see something similar to the following:
 
    ```output
    On branch main
@@ -131,13 +134,29 @@ Git monitors the repository folder for changes, and you can query Git to see the
    nothing added to commit but untracked files present (use "git add" to track)
    ```
 
-1. In Visual Studio Code, open the **Source Control** panel by selecting **View** and then **SCM**.
+   This tells you four pieces of information:
+
+   - You are currently on the **main** branch. You'll learn about branches shortly.
+   - There have been no commits to this repository. You'll learn about commits in the next unit.
+   - There are untracked files in the *deploy* folder.
+   - You haven't told Git to add any files to be tracked by the repository yet.
+
+## Inspect the repository status by using Visual Studio Code
+
+Visual Studio Code shows the same information that the `git status` command provides, but it integrates in the information into the Visual Studio Code interface.
+
+1. In Visual Studio Code, select **View** and then **SCM**, or press <kbd>Ctrl+Shift+G</kbd>.
+
+1. The **Source Control** panel opens.
 
    TODO screenshot
 
-   Notice that Visual Studio Code shows that the *main.bicep* file in the *deploy* folder has changed.
+   Notice that Visual Studio Code shows that the *main.bicep* file in the *deploy* folder has changed. Additionally, the **Source Control** icon has a badge showing the number `1`, which indicates there's one untracked file.
 
-   The status reported by both Git and Visual Studio Code is the same. That's because both the Git CLI and Visual Studio Code use the same Git engine. You can mix and match the tools you use to work with your repositories, and use different tools based on what suits you best.
+1. The **Status Bar** appears at the bottom of Visual Studio Code. It provides lots of useful information and functionality. Notice that, towards the left side of the status bar, it shows the word **main**:
 
-> [!NOTE]
-> Even though you've saved the file into your repository's folder, Git isn't tracking it yet. You'll learn how Git keeps track of files in the next unit.
+   TODO screenshot
+
+   This indicates that you are currently on the **main** branch. You'll learn about branches shortly.
+
+The status reported by both Git and Visual Studio Code is the same. That's because both the Git CLI and Visual Studio Code use the same Git engine. You can mix and match the tools you use to work with your repositories, and use different tools based on what suits you best.
