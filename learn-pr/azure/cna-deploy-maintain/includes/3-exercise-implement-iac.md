@@ -227,7 +227,7 @@ Now you're ready to proceed with deploying an AKS cluster by using a GitHub work
     > [!NOTE]
     > Disregard any warnings during the **Create AKS Cluster** job.
 
-1.Wait for the deployment to complete. This might take about five minutes.
+1. Wait for the deployment to complete. This might take about five minutes.
 
    :::image type="content" source="../media/3-github-deployment-completed.png" alt-text="Screenshot of the completed AKS deployment jobs in GitHub." border="false":::
 
