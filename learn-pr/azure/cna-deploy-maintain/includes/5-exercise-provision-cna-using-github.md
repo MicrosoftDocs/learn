@@ -181,9 +181,6 @@ Now that the GitHub workflow and the corresponding Azure resources are fully dep
 1. In GitHub, go back to the **Actions** tab.
 1. In the **Actions** tab, select the **Update index.pug** run entry in the list of jobs, and then select **Build and push image to container registry** to review the detailed status of the build process.
 1. Wait until the build completes, and then in the list of jobs, select **Deploy application to AKS** to review the detailed status of the deployment process.
-
-    :::image type="content" source="../media/5-github-build-job-status.png" alt-text="Screenshot of the status of the build job in GitHub." border="false":::
-
 1. After the deployment completes, switch to the browser window displaying the sample web app.
 1. Refresh the webpage, and verify that it contains the text **GitHub repository has been successfully updated**.
 
