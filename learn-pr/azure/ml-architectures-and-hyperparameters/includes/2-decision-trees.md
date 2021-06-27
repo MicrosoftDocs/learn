@@ -8,7 +8,7 @@ Let’s explore this more concretely with decision trees as an example.
 
 In essence, a decision tree is a flow chart. Decision trees are a categorisation models that break decisions down into multiple steps.
 
-**Image to go here**
+![Decision tree.](../media/7-2-a.jpg)
 
 The sample if provided at the entry point (top, in the diagram above) and each exit point has a label (bottom in the diagram). At each node, a simple ‘if’ statement decides which branch the sample passes to next. Once the branch has reached the end of the tree (the leaves) it will be assigned to a label.
 

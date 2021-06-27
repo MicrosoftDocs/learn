@@ -15,15 +15,3 @@ The Olympics games’ motto consists of three Latin words: Citius - Altius - For
 * Discover new model types– decision trees and random forests.
 * Learn how model architecture can affect performance
 * Practice working with hyperparameters to improve training effectiveness
-
-## Table of Contents
-
-* Unit 1 - Conceptual - Introduction
-* Unit 2 - Conceptual - Decision trees and model architecture
-* Unit 3 - Exercise - Exercise - Decision trees and model architecture
-* Unit 4 - Conceptual - Random forests and selecting architectures
-* Unit 5 - Exercise - Selecting random forest architectures
-* Unit 6 - Hyperparameters in classification
-* Unit 7 - Exercise - Hyperparameter tuning with random forests
-* Unit 8 - Exercise - Knowledge check
-* Unit 9 - Conceptual - Summary
