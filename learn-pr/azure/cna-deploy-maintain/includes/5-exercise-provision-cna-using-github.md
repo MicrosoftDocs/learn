@@ -142,7 +142,7 @@ Now you're ready to proceed with implementing a CI/CD pipeline by using Azure De
 1. Switch back to the web browser window displaying the Azure portal.
 1. From the portal, monitor the build and deployment process from the **cna-devops-05** DevOps starter blade, including the GitHub workflow and Azure resources.
 
-    :::image type="content" source="../media/5-azure-devops-starter-deployment-progress.png" alt-text="Screenshot of the progress of the build and deployment jobs on the Azure DevOps starter blade." border="true":::
+    :::image type="content" source="../media/5-azure-devops-starter-deployment-progress.png" alt-text="Screenshot of the progress of the build and deployment jobs on the Azure DevOps starter blade." border="false":::
 
     > [!NOTE]
     > Wait for the deployment to complete, which might take about five minutes.
