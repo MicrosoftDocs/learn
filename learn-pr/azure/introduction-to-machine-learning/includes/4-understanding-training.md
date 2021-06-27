@@ -16,7 +16,7 @@ Data refers to the information that we provide the model with (aka inputs). In o
 
 Data also refers to information that the objective function might need. For example, if our objective function reports whether the model guessed the boot size correctly, it will need to know the correct boot size! This is why in our previous exercise, we provided both harness sizes and the correct answers to the training code.
 
-We will practice working with data in the next exercise.
+We'll practice working with data in the next exercise.
 
 ## The Optimizer
 
@@ -24,4 +24,4 @@ During training, the model makes a prediction, and the objective function calcul
 
 How an optimizer does this is complex, and something we cover in later material. Don’t be intimidated though: we don’t normally write our own optimizers—we use open-source frameworks where the hard work has been done for us.
 
-It is important to keep in mind that the objective, data, and optimizer are simply a means to train the model. They are not needed once training is complete. It is also important to remember that training only changes the parameter values inside of a model; it does not change what kind of model is used.
+It is important to keep in mind that the objective, data, and optimizer are simply a means to train the model. They are not needed once training is complete. It is also important to remember that training only changes the parameter values inside of a model—it does not change what kind of model is used.

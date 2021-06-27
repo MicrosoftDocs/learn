@@ -25,14 +25,14 @@ Recall that a dataset is a collection of information about objects or things. Fo
 |   2   |     25 |   10  |  White   |  Labrador   |
 |   3   |    29  |   14  |  Black   |  Black Shephard |
 
-When we use our model, we only need the column(s) of data that the model accepts as input. These columns are called features. In our scenario, if our model accepts harness size and estimates boot size, then our feature is harness size.
+When we use our model, we only need the column(s) of data that the model accepts as input. **These columns are called features.** In our scenario, if our model accepts harness size and estimates boot size, then **our feature is harness size.**
 
-During training, the objective function usually needs to know both the model’s output and what the correct answer was. These are called labels. In our scenario, if our model predicts boot size, boot size is our label.
+During training, the objective function usually needs to know both the model’s output and what the correct answer was. **These are called labels.** In our scenario, if our model predicts boot size, **boot size is our label.**
 
-Taken together, **this means that to use a model, we only ever need features**, while during training we usually need both features and labels. In our scenario, during training we need both our harness-size feature and our boot-size label. When we use our model in our website, we only need to know the harness-size feature—our model will then estimate the boot size for us to use.
+Taken together, this means that to use a model, we only ever need features, while during training we usually need both features and labels. In our scenario, during training we need both our harness-size feature and our boot-size label. When we use our model in our website, we only need to know the harness-size feature—our model will then estimate the boot size for us to use.
 
 ## I've finished training. What now?
 
-Once a model has finished training, it can be saved to file by itself. **We no longer need the original data, the objective function, or the model updater**. When we want to use the model, we can load it from disk, provide it with new data, and get back a prediction.
+Once a model has finished training, it can be saved to file by itself. **We no longer need the original data, the objective function, or the model updater.** When we want to use the model, we can load it from disk, provide it with new data, and get back a prediction.
 
-In our next exercise, we will practice saving a model, loading it from disk, and using it like we would in the real world. To complete our online store scenario, we will also practice using the outputs of the model to warn our customers if they seem to be buying the wrong sized doggy boots.
+In our next exercise, we will practice saving a model, loading it from disk, and using it like we would in the real world. To complete our online store scenario, we'll also practice using the outputs of the model to warn our customers if they seem to be buying the wrong sized doggy boots.
