@@ -12,8 +12,8 @@ Now that you've completed this module, you should be able to:
 
 You can learn more by reviewing the following articles:
 
-* [Defining cloud native](https://docs.microsoft.com/dotnet/architecture/cloud-native/definition)
-* [DevOps](https://docs.microsoft.com/dotnet/architecture/cloud-native/devops)
-* [What is GitHub Actions for Azure](https://docs.microsoft.com/azure/developer/github/github-actions)
-* [Continuous integration and continuous deployment to Azure IoT Edge devices (classic editor)](https://docs.microsoft.com/azure/iot-edge/how-to-continuous-integration-continuous-deployment-classic?view=iotedge-2020-11)
-* [Create a CI/CD pipeline for IoT Edge with Azure DevOps Starter](https://docs.microsoft.com/azure/iot-edge/how-to-devops-starter?view=iotedge-2020-11)
+* [Defining cloud native](/dotnet/architecture/cloud-native/definition)
+* [DevOps](/dotnet/architecture/cloud-native/devops)
+* [What is GitHub Actions for Azure](/azure/developer/github/github-actions)
+* [Continuous integration and continuous deployment to Azure IoT Edge devices (classic editor)](/azure/iot-edge/how-to-continuous-integration-continuous-deployment-classic?view=iotedge-2020-11)
+* [Create a CI/CD pipeline for IoT Edge with Azure DevOps Starter](/azure/iot-edge/how-to-devops-starter?view=iotedge-2020-11)
