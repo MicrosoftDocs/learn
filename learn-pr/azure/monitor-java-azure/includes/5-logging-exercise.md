@@ -33,13 +33,13 @@ az spring-cloud app logs --name customers-service --resource-group <resource gro
 
 We'll create an error to show the value of how developers can quickly see it, debug and find a root cause.
 
-Open the customers-service and follow the logs, in shell.azure.com or your local environment:
+1. Open the customers-service and follow the logs, in shell.azure.com or your local environment:
 
 ```azurecli
 az spring-cloud app logs --name customers-service --resource-group <resource group name> --service <service instance name> -f
 ```
 
-Next, in a web browser, trigger a warning with the following command:
+2. Next, in a web browser, trigger a warning with the following command:
 (Replace the "<spring-cloud-name"> with the name of your spring cloud instance)
 
 ```html
@@ -51,7 +51,7 @@ You will now be able to see a warning similar to the below screen:
 
 ![Log Warning](../media/5-warning.jpg)
 
-To resolve this warning, in a web browser, search for the customer using the customer ID:
+3. To resolve this warning, in a web browser, rather search for the customer using the customer ID:
 
 ```html
 https://<spring-cloud-name>-api-gateway.azuremicroservices.io/api/customer/owners/1
