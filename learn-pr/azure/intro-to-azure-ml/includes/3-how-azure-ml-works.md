@@ -14,7 +14,7 @@ The status of runs can be logged and monitored natively via the SDK, Azure Monit
 
 In the example below, we can see how Azure ML Studio’s visualization can be customized to add charts, compare data, and apply filters to better analyze your results and metrics.
 
-![azure ml studio visualization example](../media/3-studio-chart.gif)
+:::image type="content" source="../media/3-studio-chart.gif" alt-text="azure ml studio visualization example." lightbox="../media/3-studio-chart.gif":::
 
 ### Experiments
 
@@ -30,7 +30,7 @@ You can create datasets from datastores, public URLs, and Azure Open Datasets. B
 
 Azure ML can periodically check for newly stored data with an **incremental refresh,** enabling datasets to be updated automatically when new data is added to the datastore. The service can also analyze data for changes over time—known as **data drift**—and trigger an alert. Datasets and features can then be viewed in the dashboard to analyze the data drift, as seen in the example below.
 
-![azure ml data drifts dashboard](../media/3-datadrifts.gif)
+:::image type="content" source="../media/3-datadrifts.gif" alt-text="azure ml data drifts dashboard." lightbox="../media/3-datadrifts.gif":::
 
 ### Labeling
 
@@ -38,7 +38,7 @@ _Labeling Projects_ is a centralized place to create, manage, and monitor labeli
 
 Below we can see an example of a labeling task underway in Azure ML Studio.
 
-![azure ml studio labelling](../media/3-labelling.gif)
+:::image type="content" source="../media/3-labelling.gif" alt-text="azure ml studio labelling." lightbox="../media/3-labelling.gif":::
 
 ## Deploying machine learning models
 

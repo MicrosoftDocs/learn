@@ -10,7 +10,7 @@ Azure ML has a comprehensive suite of features to support logging, monitoring, a
 
 Azure Machine Learning Studio is a browser-based service that provides no-code and code-first solutions to visually create, train, and manage models through a web UI. Azure ML Studio allows _Python_ and _R_ SDK to seamlessly integrate with the natively supported _Jupyter Notebooks_ for collaborative notes and coding. Data within Azure Machine Learning Studio is simple to manage with intuitive data visualization and AI-assisted image or text labeling features.
 
-![azure learning studio example](../media/2-studio.gif)
+:::image type="content" source="../media/2-studio.gif" alt-text="azure learning studio example." lightbox="../media/2-studio.gif":::
 
 ## Creating a model
 
@@ -20,7 +20,7 @@ Models can be created in Azure ML in several ways. Training can take place on a 
 
 With the _Azure Machine Learning SDK for Python and R_, you can interact with the service from multiple environments—including Jupyter Notebooks. Notebooks provide a collaborative environment for runnable code, visualizations, and comments. Azure Machine Learning notebook widgets allow you to view a history of all your training, with run logs and a model repository that have previous versions of models created for easy tracking. The notebooks also include code completion aids and code snippet insertions to speed up your work, as seen in the example below.
 
-![azure ml notebooks example](../media/2-notebooks.gif)
+:::image type="content" source="../media/2-notebooks.gif" alt-text="azure ml notebooks example." lightbox="../media/2-notebooks.gif":::
 
 ### AutoML
 
@@ -34,7 +34,7 @@ In the image below, we can see an overview of the AutoML pipeline building and r
 
 If you prefer a no-code option, _Azure ML Designer_ within the Azure ML Studio gives you a **visual canvas with drag and drop controls to manipulate datasets and modules.** Modules within Azure ML Designer are algorithms that can have a range of purposes, from data ingress functions to training, scoring, and validation processes. These linked modules create effective ML pipelines to build, test, and deploy ML models, as seen in the example below.
 
-![azure ml designer example](../media/2-designer.gif)
+:::image type="content" source="../media/2-designer.gif" alt-text="azure ml designer example." lightbox="../media/2-designer.gif":::
 
 ## Managing data
 
@@ -44,7 +44,7 @@ With Azure ML, the time-intensive process of data preparation and ingestion can 
 
 Azure ML securely stores your raw data in the datastore, so you don’t have to rely on external sources for your scripts, and your training sets can be experimented upon without risking the integrity of the original raw data. Once stored, you can clean, transform, and label data to create training sets from the datastore. Azure ML offers tools to help label tabular, image, and text data—with built-in machine learning systems that can suggest labels or fully automate data labeling. The example below shows a human led multi-label classification project underway in the Azure ML Studio.
 
-![multi-label classification in azure ml studio](../media/2-human-labelling.gif)
+:::image type="content" source="../media/2-human-labelling.gif" alt-text="multi-label classification in azure ml studio." lightbox="../media/2-human-labelling.gif":::
 
 ## MLOps
 
