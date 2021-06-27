@@ -29,4 +29,6 @@ Azure AD facilitates implementing a range of scenarios commonly encountered when
 - Applications accessing backend web APIs without an active user or user interface, using their own identity.
 - Applications interacting with other web APIs, acting on a user's behalf with that user's delegated credentials.
 
+    :::image type="content" source="../media/2-azure-ad-high-level-architecture.png" alt-text="Image illustrating Azure AD support for a different apps.":::
+
 In each of these scenarios, applications need to be secured against unauthorized use. At a minimum, this step requires authenticating the security principal requesting access to a resource. This authentication might use one of several common protocols such as Security Assertion Markup Language (SAML) V2.0, WS-Fed, or OpenID Connect. Communicating with web APIs typically relies on the OAuth2 protocol and its support for access tokens.
