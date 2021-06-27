@@ -13,45 +13,58 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'What are the characteristics of OLTP workloads?'
+  - content: 'What is the difference between supervised learning and unsupervised learning?'
     choices:
-    - content: "High numbers of transactions with large amounts of data"
+    - content: "Supervised learning requires human supervision, while unsupervised learning doesn't"
       isCorrect: false
-      explanation: "Incorrect. Analytical workloads tend to have high amounts of data. OLTP workloads have high numbers of transactions, but not large amounts of data."
-    - content: "Business intelligence and analytical workloads"
+      explanation: "Incorrect."
+    - content: "Supervised learning always uses an optimizer, but unsupervised never does"
       isCorrect: false
-      explanation: "Incorrect. OLTP workloads tend to be high numbers of transactions, not analytical workloads."
-    - content: "Time series data"
-      isCorrect: false
-      explanation: "Incorrect. Time series data is one of many data types usable in OLTP workloads."
-    - content: "High numbers of transactions with low amounts of data"
+      explanation: "Incorrect."
+    - content: "Supervised learning trains a model by comparing estimations to correct answers. The cost function for unsupervised learning does not need correct answers"
       isCorrect: true
-      explanation: "Correct. OLTP workloads tend to have low amounts of data, with a high number of transactions, like text messages or purchasing items online."
-  - content: 'Why do multi-tenant applications provide massive cost savings?'
+      explanation: "Correct."
+  - content: 'What is the role of the cost function in supervised learning?'
     choices:
-    - content: "OLAP workloads involve low amounts of data"
+    - content: "To maximize the cost so that the objective is reached."
       isCorrect: false
-      explanation: "Incorrect. Multi-tenant applications usually have OLTP workloads, with large numbers of tenants."
-    - content: "The combined workloads of multiple tenants is low"
-      isCorrect: false
-      explanation: "Incorrect. Multi-tenant applications don't necessarily have low workloads, but the overall workload can be low on average with resources being shared between tenants."
-    - content: "Many customers share resources."
+      explanation: "Incorrect."
+    - content: "To calculate cost by comparing estimations to correct answers."
       isCorrect: true
-      explanation: "Correct. Multi-tenant applications allow for high numbers of users sharing resources, which can provide savings per user."
-    - content: "Recent cloud advances in storing large amounts of data."
+      explanation: "Correct."
+    - content: "To update model parameters."
       isCorrect: false
-      explanation: "Incorrect. While the cost of cloud storage has fallen, there are other resources other than storage to take into account."
-  - content: 'What is a benefit of sharding?'
+      explanation: "Incorrect."
+  - content: 'How does gradient descent know how to update parameters?'
     choices:
-    - content: "OLAP workloads only need to access a single node to run queries"
+    - content: "It compares costs for several combinations of parameters, and then selects the best option"
       isCorrect: false
-      explanation: "Incorrect. Sharding can provide extra performance to OLAP workloads by combining the resources of multiple nodes, which reduces latency."
-    - content: "Sharding allows efficient distribution of your data to multiple servers, allowing a level of performance that is impossible to achieve on a single server."
+      explanation: "Incorrect."
+    - content: "It uses an internal understanding of the relationship between features and labels to make intelligent choices"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "It uses calculus to estimate the slope of the cost function"
       isCorrect: true
-      explanation: "Correct. Sharding allows your data to be distributed among nodes, which can leverage more resources than a single node."
-    - content: "Queries can be combined into a single, master query."
+      explanation: "Correct. Once the slope it known, it is clear whether to make parameters smaller or larger."
+  - content: 'Why are there many cost functions available?'
+    choices:
+    - content: "A unique cost function is required for each processed currency or banking system"
       isCorrect: false
-      explanation: "Incorrect. Sharding allows for intelligent distribution of data, not combining queries."
-    - content: "Sharding allows applications to directly query worker nodes, removing the need for a coordinator node."
+      explanation: "Incorrect."
+    - content: "Because cost functions help models process data, and many model types are available"
       isCorrect: false
-      explanation: "Incorrect. When sharding has distributed data to worker nodes, applications can't directly connect to worker nodes. Queries are routed through the coordinator node."
+      explanation: "Incorrect. Models do not rely on other components to make an estimation. That said, cost functions can need slight adjustments so that they are compatible with different types of model output"
+    - content: "Because different cost functions can arrive at different answers, and what is best depends on our goal."
+      isCorrect: true
+      explanation: "Correct."
+  - content: 'Why is learning rate important?'
+    choices:
+    - content: "It speeds up or slows down training"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "If too large or too small, it can prevent a model from being trained optimally"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Both options are correct "
+      isCorrect: true
+      explanation: "Correct."      
