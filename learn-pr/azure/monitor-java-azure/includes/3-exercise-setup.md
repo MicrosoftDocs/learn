@@ -2,7 +2,7 @@ In this exercise, you'll configure a sample Application to be ready for monitori
 
 ## Introduction
 
-In this exercise, you'll clone a Git repository and run a script that sets-up an Azure Spring Cloud architecture.
+In this exercise, you'll clone a Git repository and run a script that sets-up an Azure Spring Cloud application and Azure Database for MySQL.
 The script deploys a well-known PetClinic application and is built around small independent services, communicating over HTTP via a REST API.
 
 ## The sample application
@@ -26,8 +26,8 @@ Open https://shell.azure.com and run the following to clone the sample repositor
 
 ## Setup and run the Setup script
 
-When you run the above command, a window will pop up with the build in Monaco editor with the file deployPetClinicApp.sh opened.
-"Edit the variables in the `deployPetClinicApp.sh` and customize the parameters for your environment
+When you run the above command, a window will pop up with the file 'deployPetClinicApp.sh' ready to be edited in the build in Azure editor.
+1. Edit the variables in the `deployPetClinicApp.sh` and customize the following parameters for your environment:
 
 | Variable | Description |
 |-|-|
@@ -38,9 +38,13 @@ When you run the above command, a window will pop up with the build in Monaco ed
 | mysql_server_admin_name | Username for the MySQL Administrator. The admin name can't be "azure_superuser", "admin", "administrator", "root", "guest, or "public" |
 | mysql_server_admin_password | A new password for the server admin user. The password must be 8 to 128 characters long and contain a combination of uppercase or lowercase letters, numbers, and non-alphanumeric characters (!, $, #, %, and so on).|
 
+2. Save the file by selecting the ... action panel in the top right of the editor and select Save editor.
+3. Close the editor - open the ... action panel in the top right of the editor and select Close editor.
+4. Don't close the Azure Cloud Shell as next, we'll run the setup script.
+
 ## Run the setup script
 
-Next we'll run the setup script. The script takes 15-30 minutes to run and includes the creation of an Azure spring Cloud and a MySQL instance. This sample script also populates some sample data for the monitoring logs, traces, and metrics.
+The script takes 15-30 minutes to run and includes the creation of an Azure spring Cloud and a MySQL instance. This sample script also populates some sample data for the monitoring logs, traces, and metrics.
 
 Open Azure Cloud Shell, and run the shell script. Leave the browser window and Azure Cloud Shell open while running. Store the URL it returns as the public endpoint for your environment:
 
