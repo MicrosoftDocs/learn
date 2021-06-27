@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.add-version-control-bicep-git.commit-files-view-history
+uid: learn.azure.manage-changes-bicep-code-git.commit-files-view-history
 title: Commit files and view history
 metadata:
   unitType: learning-content

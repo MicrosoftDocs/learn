@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.add-version-control-bicep-git.exercise-initialize-git-repository
+uid: learn.azure.manage-changes-bicep-code-git.exercise-initialize-git-repository
 title: Exercise - Initialize a Git repository
 metadata:
   unitType: exercise

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.add-version-control-bicep-git.exercise-branch-merge-changes
+uid: learn.azure.manage-changes-bicep-code-git.exercise-branch-merge-changes
 title: Exercise - Create and merge to your branch
 metadata:
   unitType: exercise

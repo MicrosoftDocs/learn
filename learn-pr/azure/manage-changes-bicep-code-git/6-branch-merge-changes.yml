@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.add-version-control-bicep-git.branch-merge-changes
+uid: learn.azure.manage-changes-bicep-code-git.branch-merge-changes
 title: Branch and merge your changes
 metadata:
   unitType: learning-content
