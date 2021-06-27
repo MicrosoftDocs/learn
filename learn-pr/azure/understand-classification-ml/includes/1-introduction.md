@@ -19,13 +19,3 @@ In this module, you will:
 * Discover how classification differs from classical regression
 * Build models that can perform classification tasks
 * Explore how to assess and improve classification models
-
-Unit 1 – Introduction
-Unit 2 – Conceptual - What are classification models?
-Unit 3 – Exercise – Build a simple logistic regression model
-Unit 4 – Conceptual - Assessing a classification model
-Unit 5 – Exercise - Assessing a logistic regression model
-Unit 6 – Conceptual - Improving classification models
-Unit 7 – Exercise – Improving classification models
-Unit 8 – Knowledge check
-Unit 9 – Summary
