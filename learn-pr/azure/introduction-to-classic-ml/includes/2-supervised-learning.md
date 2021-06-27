@@ -21,7 +21,7 @@ Meaning that, while we can have very simple objective functions, we need both:
 1. Features that are provided as inputs to the model, and
 2. Labels, which are the correct answers we want the model to be able to produce.
 
-![Machine learning lifecycle with labels.](../media/2-2-b.png)
+![Machine learning lifecycle with labels.](../media/2-2-b.jpg)
 
 For example, consider our desire to predict what the temperature will be on January 31st of a given year. For this, we will need data with two components:
 
