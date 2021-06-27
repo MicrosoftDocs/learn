@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.machinelearning.introduction-to-classical-machine-learning.creating-ml-models
+uid: learn.machinelearning.introduction-to-classical-machine-learning.supervised-learning
 title: What is Supervised Learning?
 metadata: 
   title: What is Supervised Learning?
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-creating-ml-models.md)]
+  [!include[](includes/2-supervised-learning.md)]

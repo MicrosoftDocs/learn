@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.machinelearning.introduction-to-classical-machine-learning.exercise-improve-models
+uid: learn.machinelearning.introduction-to-classical-machine-learning.exercise-optimize-models
 title: Exercise - Optimize a model using cost functions
 metadata:
   title: Exercise - Optimize a model using cost functions
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 sandbox: true
-notebook: https://review.docs.microsoft.com/learn/modules/introduction-to-classic-ml/notebooks/2-5-exercise-improve-models.ipynb?branch=pr-en-us-18646
+notebook: https://review.docs.microsoft.com/learn/modules/introduction-to-classic-ml/notebooks/2-5-exercise-optimize-models.ipynb?branch=pr-en-us-18646

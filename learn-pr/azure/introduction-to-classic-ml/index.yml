@@ -28,12 +28,12 @@ products:
 - azure
 units: 
 - learn.machinelearning.introduction-to-classical-machine-learning.introduction
-- learn.machinelearning.introduction-to-classical-machine-learning.creating-ml-models
-- learn.machinelearning.introduction-to-classical-machine-learning.exercise-create-ml-model
-- learn.machinelearning.introduction-to-classical-machine-learning.what-is-error
-- learn.machinelearning.introduction-to-classical-machine-learning.exercise-improve-models
-- learn.machinelearning.introduction-to-classical-machine-learning.testing-models
-- learn.machinelearning.introduction-to-classical-machine-learning.exercise-test-ml-models
+- learn.machinelearning.introduction-to-classical-machine-learning.supervised-learning
+- learn.machinelearning.introduction-to-classical-machine-learning.exercise-separate-data-test-model
+- learn.machinelearning.introduction-to-classical-machine-learning.minimize-error-cost-functions
+- learn.machinelearning.introduction-to-classical-machine-learning.exercise-optimize-models
+- learn.machinelearning.introduction-to-classical-machine-learning.gradient-descent
+- learn.machinelearning.introduction-to-classical-machine-learning.exercise-implement-gradient-descent
 - learn.machinelearning.introduction-to-classical-machine-learning.knowledge-check
 - learn.machinelearning.introduction-to-classical-machine-learning.summary
 badge: 

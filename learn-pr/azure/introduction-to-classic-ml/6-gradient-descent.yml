@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.machinelearning.introduction-to-classical-machine-learning.testing-models
+uid: learn.machinelearning.introduction-to-classical-machine-learning.gradient-descent
 title: Optimize models using gradient descent
 metadata:
   title: Optimize models using gradient descent
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-testing-models.md)] 
+  [!include[](includes/6-gradient-descent.md)] 

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.machinelearning.introduction-to-classical-machine-learning.what-is-error
+uid: learn.machinelearning.introduction-to-classical-machine-learning.minimize-error-cost-functions
 title: Minimize model errors with cost functions
 metadata:
   title: Minimize model errors with cost functions
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-what-is-error.md)]
+  [!include[](includes/4-minimize-error-cost-functions.md)]
