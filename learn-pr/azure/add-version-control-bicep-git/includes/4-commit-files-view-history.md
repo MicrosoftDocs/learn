@@ -10,4 +10,5 @@ TODO
 
 ## Folder structure for your repository
 
+- Store alongside applications
 - Suggested repo layout (root has a _deploy_ folder with your _main.bicep_ file, and there's a _modules_ subfolder under that)
