@@ -15,7 +15,7 @@ To perform this exercise, you need:
 
 * An Azure subscription.
 * A Microsoft account, or an Azure AD account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
-* An Azure DevOps organization associated with the Microsoft account or the Azure AD account referenced in the previous prerequisite. To create an Azure DevOps organization, follow the instructions available at [Create an organization or project collection](https://docs.microsoft.com/azure/devops/organizations/accounts/create-organization?view=azure-devops).
+* An Azure DevOps organization associated with the Microsoft account or the Azure AD account referenced in the previous prerequisite. To create an Azure DevOps organization, follow the instructions available at [Create an organization or project collection](/azure/devops/organizations/accounts/create-organization?view=azure-devops).
 * At least one concurrent pipeline in your Azure DevOps organization.
 
 > [!NOTE]
