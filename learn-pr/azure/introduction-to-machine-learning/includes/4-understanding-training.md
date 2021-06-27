@@ -24,4 +24,4 @@ During training, the model makes a prediction, and the objective function calcul
 
 How an optimizer does this is complex, and something we cover in later material. Don’t be intimidated though: we don’t normally write our own optimizers—we use open-source frameworks where the hard work has been done for us.
 
-It is important to keep in mind that the objective, data, and optimizer are simply a means to train the model. They are not needed once training is complete. It is also important to remember that training only changes the parameter values inside of a model—it does not change what kind of model is used.
+It's important to keep in mind that the objective, data, and optimizer are simply a means to train the model. They are not needed once training is complete. It's also important to remember that training only changes the parameter values inside of a model—it doesn't change what kind of model is used.
