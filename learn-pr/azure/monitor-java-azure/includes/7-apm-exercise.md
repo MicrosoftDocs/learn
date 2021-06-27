@@ -89,6 +89,8 @@ You can use the Availability Test feature in Application Insights to monitor the
 ### Live Metrics
 
 When you deploy a new version of your web app, you want to know immediately its effect on performance. Have response times improved or worsened, or is it showing failures? Watch Live Metrics Stream in Application Insights while your deployment is happening, and you’ll see the effect immediately. If there are problems, you could back out the deployment before too many users are affected.
+Live Metrics Stream enables you to probe the beating heart of your live, in-production web application. You can select and filter metrics and performance counters to watch in real time, without any disturbance to your service. You can also inspect stack traces from sample failed requests and exceptions.
+
 On the left, navigate to **Live Metrics** where you can see live metrics practically in real time, within only one second:
 
 ![Live Metrics](../media/4-petclinic-microservices-live-metrics.jpg)
