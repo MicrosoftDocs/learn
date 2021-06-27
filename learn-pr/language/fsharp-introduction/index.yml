@@ -8,8 +8,8 @@ metadata:
   author: luisquintanilla
   ms.author: luquinta
   ms.topic: interactive-tutorial # do we need ms.topic?
-title: fsharp-introduction
-summary: "TODO" # user input: introductory summary (https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)
+title: Introduction to F#
+summary: "Leanr how to get started with F#" # user input: introductory summary (https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)
 abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
   By the end of this module, you'll be able to:
     - # Understand what F# is 
