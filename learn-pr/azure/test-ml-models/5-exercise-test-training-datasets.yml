@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 sandbox: true
-notebook: https://review.docs.microsoft.com/learn/modules/test-ml-models/notebooks/5-exercise-improve-models.ipynb?branch=pr-en-us-17743 
+notebook: https://review.docs.microsoft.com/learn/modules/test-ml-models/notebooks/5-5-exercise-test-training-datasets.ipynb?branch=pr-en-us-17743 
