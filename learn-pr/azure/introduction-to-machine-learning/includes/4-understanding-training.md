@@ -1,6 +1,6 @@
 The goal of training is to improve a model so that it can make high-quality estimations or predictions. Once trained, a model can be used in the real world, similarly to normal software.
 
-Models don’t train themselves, they are trained using data plus two pieces of code: the objective function, and the optimizer. Let’s explore how these components work together to train a model to work well.
+Models don’t train themselves, they're trained using data plus two pieces of code: the objective function, and the optimizer. Let’s explore how these components work together to train a model to work well.
 
 ![Untrained model with two parameters, and a trained model with 0.7 and 0.4 as the parameters.](../media/1-4-a.jpg)
 
@@ -8,11 +8,11 @@ Models don’t train themselves, they are trained using data plus two pieces of 
 
 The objective is what we want to the model to be able to do. For example, the objective of our scenario is to be able to estimate a dog’s boot size, based on their harness size.
 
-So that a computer can understand our objective, we need to provide our goal as code snippet called an objective function (aka cost function). Objective functions judge whether the model is doing a good job (estimating boot size well) or bad job (estimating boot size badly). We will cover objective functions in more depth in later learning material.
+So that a computer can understand our objective, we need to provide our goal as code snippet called an objective function (also known as cost function). Objective functions judge whether the model is doing a good job (estimating boot size well) or bad job (estimating boot size badly). We will cover objective functions in more depth in later learning material.
 
 ## The Data
 
-Data refers to the information that we provide the model with (aka inputs). In our scenario, this is harness size.
+Data refers to the information that we provide the model with (also known as inputs). In our scenario, this is harness size.
 
 Data also refers to information that the objective function might need. For example, if our objective function reports whether the model guessed the boot size correctly, it will need to know the correct boot size! This is why in our previous exercise, we provided both harness sizes and the correct answers to the training code.
 
