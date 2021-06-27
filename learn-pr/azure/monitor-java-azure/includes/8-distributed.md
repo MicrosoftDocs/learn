@@ -2,22 +2,23 @@ In this unit, we look at monitoring the entire solution.
 
 ## Introduction
 
-Most cloud deployments are based on distributed architectures where components are distributed across various services. Troubleshooting monolithic applications often requires only one or two lenses - the application and the database. With distributed architectures, troubleshooting is complex and challenging because of various factors. This unit describes some of the tools to help with those challenges.
+Enabling monitoring across today's complex computing environments, requires collection of operational data from every layer, and component, of a distributed system. You need deep insights on this data and combine it with different perspectives to support the multitude of stakeholders in your organization.
+
+Azure Monitor collects data from different kinds of sources where it can be used for analysis, visualization, and alerting. It gives you deep insights across all your monitored resources and even with data from other services that store their data in Azure Monitor.
 
 ## Log analytics
 
-Log Analytics provides aggregated logs with advanced query capability. Data is retrieved from a Log Analytics workspace using a log query, which is a read-only request to process data and return results. Log queries are written in **Kusto Query Language (KQL)**, which is the same query language used by Azure Data Explorer. You can write log queries in Log Analytics to interactively analyze their results, use them in alert rules to be proactively notified of issues, or include their results in workbooks or dashboards.
+Logs are events that occurred within the system. Logs can contain different kinds of data and may be structured or free form text with a timestamp. Logs may be created sporadically as events in the environment generate log entries, and a system under heavy load will typically generate more log volume.
+
+Logs in Azure Monitor are valuable for identifying root case of issues. Data collected by Azure Monitor Logs is stored in one or more Log Analytics workspaces. Data is retrieved from a Log Analytics workspace using a log query, which is a read-only request to process data and return results. Log queries are written in **Kusto Query Language (KQL)**, which is the same query language used by Azure Data Explorer.
 
 > [!NOTE]
-> Data collected by Azure Monitor Logs is stored in one or more Log Analytics workspaces.
 > Your Azure Spring Cloud sample application already has been setup with a Log Analytics workspace.
 > For more information on KQL syntax, see the Summary unit at the end of this training.
 
 ### Use Log Analytics
 
-There are actually three ways to access your application's logs: Azure Storage, Azure Events Hub, and Log Analytics. We'll focus here on Log Analytics as it's the most common one, and as it's integrated into Azure Spring Cloud.
-
-Log Analytics is part of Azure Monitor, which is integrated into Azure Spring Cloud for metrics monitoring.
+There are actually three ways to access your application's logs: Azure Storage, Azure Events Hub, and Log Analytics. We'll focus here on Log Analytics as it's the most common one and is integrated into Azure Spring Cloud for metrics monitoring.
 
 1. In the Azure portal, in the left pane, select **Log Analytics**.
 1. Select the Log Analytics workspace that you chose when you added your diagnostics settings.
@@ -92,7 +93,7 @@ Monitoring data about your servers helps you troubleshoot and optimize for your 
 
 In Azure Database for MySQL, the slow query log is available to users. Access to the transaction log isn't supported. The slow query log can be used to identify performance bottlenecks for troubleshooting.
 
-In our sample application, your slow query logs are piped to Azure Monitor Logs through Diagnostic Logs, and you can do further analysis of your slow queries. Below is a sample queries to help you get started. Make sure to update the below with your server name.
+In our sample application, your slow query logs are piped to Azure Monitor Logs through Diagnostic Logs, and you can do further analysis of your slow queries. Below are sample queries to help you get started. Make sure to update the below with your server name:
 
 * Queries longer than 10 seconds on a particular server
 
@@ -145,11 +146,9 @@ In our sample application, your slow query logs are piped to Azure Monitor Logs 
     | where query_time_d > 10
     ```
   
-In Azure Database for MySQL, the audit log is available to users. The audit log can be used to track database-level activity and is commonly used for compliance. Audit logs are integrated with Azure Monitor Diagnostic Logs. In your sample, you've enabled audit logs on your MySQL server so you can do further analysis of your audited events.
+The audit log can also be used to track database-level activity and is commonly used for compliance. Audit logs are integrated with Azure Monitor Diagnostic Logs. In your sample, we've enabled audit logs on your MySQL server so you can do further analysis of your audited events.
 
-Below are some sample queries to help you get started. Make sure to update the below with your server name.
-
-Say for example:
+Below are some sample queries to help you get started. Make sure to update the below with your server name:
 
 * List GENERAL events on a particular server
 
@@ -224,7 +223,7 @@ In the portal page of your Azure Database for MySQL server, select **Query Perfo
 The **Long running queries tab** shows the top 5 queries by average duration per execution, aggregated in 15-minute intervals
 
 > [!NOTE]
-> Your Azure Spring Cloud sample application already has Query Performance Insights activated for Long running queries for your MySQL instance
+> As part of the setup script, your Azure Spring Cloud sample application activated Query Performance Insights for Long running queries for your MySQL instance.
 > For Query Performance Insight to function, data must exist in the Query Store and can take a few minutes to reflect.
 
 ![Long Running Queries](../media/8-query-performance.jpg)
