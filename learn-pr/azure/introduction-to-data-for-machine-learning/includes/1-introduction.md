@@ -14,6 +14,6 @@ As an eager marine archaeologist, you have an unusually keen interest in maritim
 
 In this module, you will:
 
-* Explore large datasets by generating graphs
+* Explore large datasets with Exploratory Data Analysis (EDA)
 * Clean a dataset of errors
 * Predict unknown values using numeric and categorical data
