@@ -10,7 +10,7 @@ Select you Azure Spring instance and in the left navigation pane, select Applica
 
 Application Map helps you spot performance bottlenecks or failure hotspots across all components of your distributed application. On the left, navigate to **Application Map** where you can see a view of your Azure Spring Cloud microservices:
 
-![Application Map](../media/4-distributed-tracking-new-ai-agent.jpg)
+:::image type="content" source="../media/4-distributed-tracking-new-ai-agent.jpg" alt-text="Application map":::
 
 Applications that are operating correctly (green) and those applications with bottlenecks (red).
 In the Application Map above, each of the names in green boxes are different services of your Azure Spring Cloud.
@@ -20,7 +20,7 @@ You can easily identify issues in their applications and quickly troubleshoot an
 
 On the left, navigate to **Performance** where you can see response times and request counts for operations exposed by your applications.
 
-![Performance](../media/4-petclinic-microservices-performance.jpg)
+:::image type="content" source="../media/4-petclinic-microservices-performance.jpg" alt-text="Performance":::
 
 Next, on the right, navigate to **Dependencies** where you can see all your dependencies and their response times and request counts.
 You can see the performance number for dependencies, particularly SQL calls:
