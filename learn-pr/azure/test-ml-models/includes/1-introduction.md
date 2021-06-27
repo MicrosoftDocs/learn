@@ -17,13 +17,3 @@ In this module, you will:
 * Discover feature normalization – a simple means of improving training
 * Create and work with test datasets
 * Discover how testing models can both improve and harm training
-
-Unit 1 – Introduction
-Unit 2 – Normalization and standardization
-Unit 3 – Exercise – Feature normalization
-Unit 4 – Test and training datasets
-Unit 5 – Exercise - Test and train datasets
-Unit 6 – Nuances of test sets
-Unit 7 – Exercise – Test set nuances
-Unit 8 – Knowledge check
-Unit 9 – Summary
