@@ -200,10 +200,6 @@ Below are some sample queries to help you get started. Make sure to update the b
     | order by TimeGenerated asc nulls last
     ```
 
-### Metrics
-
-Azure Database for MySQL provides tools and methods you can use to monitor usage easily, add, or remove resources (such as CPU, memory, or I/O), troubleshoot potential problems, and help improve the performance of a database. You can monitor performance metrics regularly to see the average, maximum, and minimum values for various time ranges.
-
 ## Query Store and Performance Insights
 
 Query Store is a feature that keeps track of query performance over time including query runtime statistics and wait events.

@@ -12,29 +12,29 @@ metadata:
 durationInMinutes: 2
 quiz:
   questions:
-  - content: "Which of the following monitoring form involves permanent, immutable records of events?"
+  - content: "Which of the following monitoring form involves records of events?"
     choices:
     - content: "Traces"
       isCorrect: false
       explanation: "Incorrect. Traces are records of the paths of execution for programs and services."
     - content: "Logs"
       isCorrect: true
-      explanation: "Correct. Logs are permanent, immutable records of events stored in a consistent, tabular format."
+      explanation: "Correct. Logs are records of events stored in a consistent, tabular format."
     - content: "Metrics"
       isCorrect: false
       explanation: "Incorrect. Metrics are values that represent the relative health, stability, and availability of resources."    
-  - content: "Which monitoring tool enables you to view and compare database performance from one release to the next in a graphical format?"
+  - content: "Which feature of Application insights allow you to view your application's performance in real time?"
     choices:
-    - content: Query Performance Insights.
-      isCorrect: True
-      explanation: "The Query Performance Insight view in the Azure portal provides visualizations on key information from a Query Store."
-    - content: Log Analytics.
+    - content: Availability.
       isCorrect: false
-      explanation: "Incorrect. Log Analytics provides aggregated views on application logs with query capability."
-    - content: Query Store.
+      explanation: "This feature is a recurring test to monitor the availability and responsiveness of applications at regular intervals."
+    - content: Custom Metrics.
       isCorrect: false
-      explanation: "Incorrect. Query Store captures a history of queries and runtime statistics in a tabular format"
-  - content: "What query language is supported in Query Analytics?"
+      explanation: "Incorrect. These metrics consist of custom performance indicators or business-specific metrics to provide deeper insights."
+    - content: Live Metrics.
+      isCorrect: true
+      explanation: "Correct. Live Metrics Stream enables you to probe the real-time metrics of your live application"
+  - content: "What query language is supported in Log Analytics to query logs, metrics and traces?"
     choices:
     - content: "Java"
       isCorrect: false
