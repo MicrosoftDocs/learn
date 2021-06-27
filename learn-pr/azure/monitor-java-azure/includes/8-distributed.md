@@ -90,6 +90,117 @@ AppPlatformLogsforSpring
 
 Monitoring data about your servers helps you troubleshoot and optimize for your workload. Azure Database for MySQL provides various metrics that give insight into the behavior of your server.
 
+In Azure Database for MySQL, the slow query log is available to users. Access to the transaction log isn't supported. The slow query log can be used to identify performance bottlenecks for troubleshooting.
+
+In our sample application, your slow query logs are piped to Azure Monitor Logs through Diagnostic Logs, and you can do further analysis of your slow queries. Below is a sample queries to help you get started. Make sure to update the below with your server name.
+
+* Queries longer than 10 seconds on a particular server
+
+    ```sql
+    AzureDiagnostics
+    | where LogicalServerName_s == '<your server name>'
+    | where Category == 'MySqlSlowLogs'
+    | project TimeGenerated, LogicalServerName_s, event_class_s, start_time_t , query_time_d, sql_text_s 
+    | where query_time_d > 10
+    ```
+
+* List top five longest queries on a particular server
+
+    ```sql
+    AzureDiagnostics
+    | where LogicalServerName_s == '<your server name>'
+    | where Category == 'MySqlSlowLogs'
+    | project TimeGenerated, LogicalServerName_s, event_class_s, start_time_t , query_time_d, sql_text_s 
+    | order by query_time_d desc
+    | take 5
+    ```
+
+* Summarize slow queries by minimum, maximum, average, and standard deviation query time on a particular server
+
+    ```sql
+    AzureDiagnostics
+    | where LogicalServerName_s == '<your server name>'
+    | where Category == 'MySqlSlowLogs'
+    | project TimeGenerated, LogicalServerName_s, event_class_s, start_time_t , query_time_d, sql_text_s 
+    | summarize count(), min(query_time_d), max(query_time_d), avg(query_time_d), stdev(query_time_d), percentile(query_time_d, 95) by LogicalServerName_s
+    ```
+
+* Graph the slow query distribution on a particular server
+
+    ```sql
+    AzureDiagnostics
+    | where LogicalServerName_s == '<your server name>'
+    | where Category == 'MySqlSlowLogs'
+    | project TimeGenerated, LogicalServerName_s, event_class_s, start_time_t , query_time_d, sql_text_s 
+    | summarize count() by LogicalServerName_s, bin(TimeGenerated, 5m)
+    | render timechart
+    ```
+
+* Display queries longer than 10 seconds across all MySQL servers with Diagnostic Logs enabled
+
+    ```sql
+    AzureDiagnostics
+    | where Category == 'MySqlSlowLogs'
+    | project TimeGenerated, LogicalServerName_s, event_class_s, start_time_t , query_time_d, sql_text_s 
+    | where query_time_d > 10
+    ```
+  
+In Azure Database for MySQL, the audit log is available to users. The audit log can be used to track database-level activity and is commonly used for compliance. Audit logs are integrated with Azure Monitor Diagnostic Logs. In your sample, you've enabled audit logs on your MySQL server so you can do further analysis of your audited events.
+
+Below are some sample queries to help you get started. Make sure to update the below with your server name.
+
+Say for example:
+
+* List GENERAL events on a particular server
+
+    ```sql
+    AzureDiagnostics
+    | where LogicalServerName_s == '<your server name>'
+    | where Category == 'MySqlAuditLogs' and event_class_s == "general_log"
+    | project TimeGenerated, LogicalServerName_s, event_class_s, event_subclass_s, event_time_t, user_s , ip_s , sql_text_s 
+    | order by TimeGenerated asc nulls last 
+    ```
+
+* List CONNECTION events on a particular server
+
+    ```sql
+    AzureDiagnostics
+    | where LogicalServerName_s == '<your server name>'
+    | where Category == 'MySqlAuditLogs' and event_class_s == "connection_log"
+    | project TimeGenerated, LogicalServerName_s, event_class_s, event_subclass_s, event_time_t, user_s , ip_s , sql_text_s 
+    | order by TimeGenerated asc nulls last
+    ```
+
+* Summarize audited events on a particular server
+
+    ```sql
+    AzureDiagnostics
+    | where LogicalServerName_s == '<your server name>'
+    | where Category == 'MySqlAuditLogs'
+    | project TimeGenerated, LogicalServerName_s, event_class_s, event_subclass_s, event_time_t, user_s , ip_s , sql_text_s 
+    | summarize count() by event_class_s, event_subclass_s, user_s, ip_s
+    ```
+
+* Graph the audit event type distribution on a particular server
+
+    ```sql
+    AzureDiagnostics
+    | where LogicalServerName_s == '<your server name>'
+    | where Category == 'MySqlAuditLogs'
+    | project TimeGenerated, LogicalServerName_s, event_class_s, event_subclass_s, event_time_t, user_s , ip_s , sql_text_s 
+    | summarize count() by LogicalServerName_s, bin(TimeGenerated, 5m)
+    | render timechart 
+    ```
+
+* List audited events across all MySQL servers with Diagnostic Logs enabled for audit logs
+
+    ```sql
+    AzureDiagnostics
+    | where Category == 'MySqlAuditLogs'
+    | project TimeGenerated, LogicalServerName_s, event_class_s, event_subclass_s, event_time_t, user_s , ip_s , sql_text_s 
+    | order by TimeGenerated asc nulls last
+    ```
+
 ### Metrics
 
 Azure Database for MySQL provides tools and methods you can use to monitor usage easily, add, or remove resources (such as CPU, memory, or I/O), troubleshoot potential problems, and help improve the performance of a database. You can monitor performance metrics regularly to see the average, maximum, and minimum values for various time ranges.
@@ -136,8 +247,8 @@ Open Performance Recommendations from the **Intelligent Performance** section of
 
 ## UI monitoring
 
-If you add Application Insights to your page script, you get timings of page loads and AJAX calls, counts, and details of browser exceptions and AJAX failures, as well as users and session counts. All these can be segmented by page, client OS and browser version, geo location, and other dimensions. You can set alerts on failure counts or slow page loading. And by inserting trace calls in your JavaScript code, you can track how the different features of your web page application are used.
-Application Insights can be used with any web pages - you just add a short piece of JavaScript. If your web service is Java, you can use the server-side SDKs in conjunction with the client-side JavaScript SDK to get an end-to-end understanding of your app's performance.
+If you add Application Insights to your page script, you get timings of page loads and AJAX calls, counts, and details of browser exceptions and AJAX failures, also users and session counts. All these metrics can be segmented by page, client OS and browser version, geo location, and other dimensions. You can set alerts on failure counts or slow page loading. And by inserting trace calls in your JavaScript code, you can track how the different features of your web page application are used.
+Application Insights can be used with any web pages - you just add a short piece of JavaScript. If your web service is Java, you can use the server-side SDKs with the client-side JavaScript SDK to get an understanding of your app's performance.
 
 > [!NOTE]
 > For more information on UI monitoring, see the Summary unit at the end of this training.
