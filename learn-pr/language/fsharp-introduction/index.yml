@@ -12,21 +12,20 @@ title: fsharp-introduction
 summary: "TODO" # user input: introductory summary (https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)
 abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
   By the end of this module, you'll be able to:
-    - # objective 1
-    - # objective 2
-    - # objective 3 (if needed)
+    - # Understand what F# is 
+    - # Write your first line of F#
+    - # Create your first F# application
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
-  - # prerequisite 1
-  - # prerequisite 2
-  - # prerequisite 3
+  - # .NET SDK
+  - # Visual Studio Code
+  - # Ionide F# extension
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
-  - # level
+  - beginner
 roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role)
-  - # role 1
-  - # role 2
+  - developer
 products:
-  {{products}}
+  - dotnet
 units:
 - learn.fsharp-introduction.introduction
 - learn.fsharp-introduction.learning-content
