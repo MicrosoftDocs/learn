@@ -24,7 +24,7 @@ Our previous example looked to do a good job, assuming that cost would have kept
 
 ![Plot of cost verus model parameter, with a minima for cost when the model parameter is 5.](../media/2-6-b.png)
 
-This won't have been such a great job, if parameters smaller than zero or larger than 10 would have resulted in lower costs, like this:
+This won't have been such a great job, if parameters smaller than zero or larger than 10 would have resulted in lower costs, like in this image:
 
 ![Plot of cost verus model parameter, this time with a local minima for cost when the model parameter is 5, but a lower cost when the model parameter is at -6.](../media/2-6-c.png)
 
@@ -36,7 +36,7 @@ A related issue is that gradient descent sometimes shows instability. This usual
 
 ![Plot of cost verus model parameter, that shows cost moving in large steps, with minimal decrease in cost.](../media/2-6-d.png)
 
-Having a slower learning rate can solve this problem, but this can also introduce issues. Firstly, slower learning rates can mean training takes a very long time, as more steps are required. Secondly, taking smaller steps makes it more likely that training settles on a local minimum:
+Having a slower learning rate can solve this problem but may also introduce issues. Firstly, slower learning rates can mean training takes a long time, as more steps are required. Secondly, taking smaller steps makes it more likely that training settles on a local minimum:
 
 ![Plot of cost verus model parameter, showing small movements in cost.](../media/2-6-e.png)
 

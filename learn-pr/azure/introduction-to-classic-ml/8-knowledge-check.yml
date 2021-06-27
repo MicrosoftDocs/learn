@@ -21,7 +21,7 @@ quiz:
     - content: "Supervised learning always uses an optimizer, but unsupervised never does"
       isCorrect: false
       explanation: "Incorrect."
-    - content: "Supervised learning trains a model by comparing estimations to correct answers. The cost function for unsupervised learning does not need correct answers"
+    - content: "Supervised learning trains a model by comparing estimations to correct answers. The cost function for unsupervised learning doesn't need correct answers"
       isCorrect: true
       explanation: "Correct."
   - content: 'What is the role of the cost function in supervised learning?'
@@ -45,7 +45,7 @@ quiz:
       explanation: "Incorrect."
     - content: "It uses calculus to estimate the slope of the cost function"
       isCorrect: true
-      explanation: "Correct. Once the slope it known, it is clear whether to make parameters smaller or larger."
+      explanation: "Correct. Once the slope it known, it's clear whether to make parameters smaller or larger."
   - content: 'Why are there many cost functions available?'
     choices:
     - content: "A unique cost function is required for each processed currency or banking system"

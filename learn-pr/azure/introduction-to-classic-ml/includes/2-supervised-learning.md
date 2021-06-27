@@ -2,7 +2,7 @@ The process of training a model can be referred to as being either supervised or
 
 ## What is Unsupervised Learning?
 
-In unsupervised learning we train a model to solve a problem without us knowing the correct answer. In fact, unsupervised learning is usually used for problems where there isn’t one correct answer, but there are better and worse solutions.
+In unsupervised learning we train a model to solve a problem without us knowing the correct answer. In fact, unsupervised learning is usually used for problems where there isn’t one correct answer, but instead, better and worse solutions.
 
 Imagine that we wanted our machine learning model to draw realistic pictures of avalanche rescue dogs. There isn’t one ‘correct’ drawing to draw–-so long as the image looked somewhat like a dog, we would be satisfied. Yet, if the image produced was of a cat, we would say it’s a worse solution.
 
@@ -23,12 +23,12 @@ Meaning that, while we can have very simple objective functions, we need both:
 
 ![Machine learning lifecycle with labels.](../media/2-2-b.jpg)
 
-For example, consider our desire to predict what the temperature will be on January 31st of a given year. For this, we will need data with two components:
+For example, consider our desire to predict what the temperature will be on January 31st of a given year. For this prediction, we'll need data with two components:
 
 1. Feature: Date
 2. Label: Daily temperature (for example, from historical records)
 
-In this scenario, we would provide the date feature to the model. The model would predict the temperature and we would compare this to the datasets ‘correct’ temperature. The objective function can then calculate how well the model worked, and adjustments can then be made to the model.
+In the scenario, we would provide the date feature to the model. The model would predict the temperature and we would compare this to the datasets ‘correct’ temperature. The objective function can then calculate how well the model worked, and adjustments can then be made to the model.
 
 ## Labels are only for learning
 
