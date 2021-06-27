@@ -9,12 +9,12 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy and maintain cloud-native apps
-summary: |
+summary: This module describes how to implement Microsoft Azure DevOps in cloud-native application scenarios. It also describes how to use GitHub and DevOps to build and deploy infrastructure and applications.
 abstract: |
   In this module, you'll:
-  - Describe the principles of Microsoft Azure DevOps and their implementation in cloud-native application scenarios.
+  - Describe the principles of DevOps and their implementation in cloud-native application scenarios.
   - Implement DevOps principles by using GitHub and DevOps.
-  - Build and deploy infrastructure and applications by using GitHub and Azure DevOps.
+  - Build and deploy infrastructure and applications by using GitHub and DevOps.
 prerequisites: | 
   - Understanding of cloud computing
   - Familiarity with Azure
