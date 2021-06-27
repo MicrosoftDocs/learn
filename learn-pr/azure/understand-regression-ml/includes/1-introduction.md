@@ -21,13 +21,3 @@ In this module, you will:
 * Understand the strengths and limitations of regression models
 * Visualize error and cost functions in linear regression
 * Understand basic evaluation metrics for regression
-
-Unit 1 – Introduction
-Unit 2 – What is regression?
-Unit 3 – Exercise – Train a simple linear regression model
-Unit 4 – Multiple linear regression and R2
-Unit 5 – Exercise - Train a multiple linear regression model
-Unit 6 – Polynomial Regression
-Unit 7 – Exercise – Polynomial Regression
-Unit 8 – Knowledge check
-Unit 9 – Summary
