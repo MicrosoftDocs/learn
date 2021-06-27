@@ -10,5 +10,5 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
-notebook: https://review.docs.microsoft.com/learn/modules/introduction-to-machine-learning/notebooks/3-7-exercise-one-hot-vectors.ipynb?branch=pr-en-us-18647 
+notebook: https://review.docs.microsoft.com/learn/modules/introduction-to-data-for-machine-learning/notebooks/3-7-exercise-one-hot-vectors.ipynb?branch=pr-en-us-18647 
 sandbox: true

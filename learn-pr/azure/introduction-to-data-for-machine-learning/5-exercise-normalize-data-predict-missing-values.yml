@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 8
 sandbox: true
-notebook: https://review.docs.microsoft.com/learn/modules/introduction-to-machine-learning/notebooks/3-5-exercise-normalize-data-predict-missing-values.ipynb?branch=pr-en-us-18647 
+notebook: https://review.docs.microsoft.com/learn/modules/introduction-to-data-for-machine-learning/notebooks/3-5-exercise-normalize-data-predict-missing-values.ipynb?branch=pr-en-us-18647 
