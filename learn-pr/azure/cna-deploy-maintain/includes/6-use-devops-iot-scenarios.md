@@ -57,4 +57,4 @@ The delivery pipeline for each stage will perform the following sequence of acti
 
 The delivery to the dev stage will include provisioning of an IoT hub. You have the option of using the same hub for subsequent deployments or creating one for each stage. Optionally, you could also implement Azure Application Insights to monitor status and performance of the deployed module.
 
-    :::image type="content" source="../media/6-azure-devops-iot-pipeline" alt-text="Image illustrating an Azure DevOps pipeline that deploys Azure IoT Edge modules." border="false":::
+    :::image type="content" source="../media/6-azure-devops-iot-pipeline.png" alt-text="Image illustrating an Azure DevOps pipeline that deploys Azure IoT Edge modules." border="false":::
