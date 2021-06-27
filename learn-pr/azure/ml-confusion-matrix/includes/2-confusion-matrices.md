@@ -49,13 +49,7 @@ This provides very direct information about the predictions our model is making,
 
 The key to understanding the model performance is to combine the table for model prediction with the table for ground-truth data labels:
 
-                         | Actual label |
-                         |--------------|
-                         |False | True  |
-                         |--------------|
-                         | 750  | 250   |
-|Model     | False | 700 | TN   |  FN   |
-|Prediction| True  | 300 | FP   |  TP   |
+![Confusion matrix with total numbers added.](../media/8-2-a.jpg)
 
 The square we have not filled out is called the confusion matrix.
 
@@ -67,36 +61,36 @@ Let’s explain these one by one, replacing these acronyms with actual values. N
 
 The top-left value will list how many times the model predicted false, and the actual label was also false. In other words, this lists how many times the model correctly predicted false. Let’s say, for our example, that this happened 500 times:
 
-**Weird table again**
+![Confusion matrix without total numbers, showing true negatives only.](../media/8-2-b.jpg)
 
 ### False Negatives (FN)
 
 The top right value tells us how many times the model predicted false, but the actual label was true. We know now that this is 200. How? Because the model predicted false 700 times, and 500 of those times it did so correctly. Thus, 200 times it must have predicted false when it should not have.
 
-**Weird table again**
+![Confusion matrix showing false negatives only.](../media/8-2-c.jpg)
 
 ### False Positives (FP)
 
 The bottom right value holds false positives. This tells us how many times the model predicted true, but the actual label was false. We know now that this is 250, because there were 750 time that the correct answer was false. 500 of these times appear in the top left cell (TN):
 
-**Weird graph to go here**
+![Confusion matrix showing false positives also.](../media/8-2-d.jpg)
 
 ### True Positives (TP)
 
 Finally, we have true positives. This is the number of times that the model correctly prediction of true. We know that this is 50 for two reasons. Firstly, the model predicted true 300 times, but 250 times it was incorrect (bottom left cell). Secondly, there were 250 times that true was the correct answer, but 200 times the model predicted false.
 
-**And another one**
+![Confusion matrix showing true positives also.](../media/8-2-e.jpg)
 
 ### The final matrix
 
 We normally simplify our confusion matrix slightly, like so:
 
-**Weird table again - also figure out how to highlight cells**
+![Simplified confusion matrix.](../media/8-2-f.jpg)
 
 We’ve colored the cells here to highlight when the model made correct predictions. From this we know not only how often the model made certain types of predictions, but also how often those predictions were correct, or incorrect.
 
 Confusion matrices can also be constructed when there are more labels. For example, for our person/ animal/tree example, we might get a matrix like so:
 
-**Hopefully the last weird table and this one has coloured cells**
+![Expanded confusion matrix with three labels - person, animal, and tree.](../media/8-2-g.jpg)
 
 When there are three categories, metrics like True Positives no longer apply, but we can still see exactly how often the model made certain kinds of mistakes. For example, we can see that the model predicted that ‘person’ 300 times when the actual correct result was ‘animal’.

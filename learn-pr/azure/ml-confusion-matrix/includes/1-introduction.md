@@ -6,7 +6,6 @@ Throughout this module, we’ll be using the following example scenario to expla
 
 As winter rolls around again, concern has risen because hikers are ignoring avalanche risk warnings and are venturing out even when the mountain is closed. Not only does this risk causing more avalanches, but because hikers are rarely checking in before venturing out, there is no way to know if anyone was on the mountain when an avalanche took place. A generous donor has provided the avalanche rescue team with a swarm of miniature drones that are capable of automatically scanning the slopes for objects. Due to the extreme terrain and battery-drain in the cold, their bandwidth remains too low to transmit video. Instead, the sensors onboard can extract basic information such as object shape, size, and movement and transmit this to home base. Can you build a model that can determine when the drone has come across a person, to keep track of who is on the mountain?
 
-
 ## Prerequisites
 
 * Basic familiarity with classification models
@@ -18,13 +17,3 @@ In this module, you will:
 * Assess performance of classification models
 * Review metrics to improve classification models
 * Mitigate performance issues from data imbalances
-
-* Unit 1 – Introduction
-* Unit 2 – Conceptual - Confusion matrices
-* Unit 3 – Exercise – Building a confusion matrix
-* Unit 4 – Conceptual - Data imbalances
-* Unit 5 – Exercise - Resolving biases in a classification model
-* Unit 6 – Conceptual - Cost functions versus evaluation metrics
-* Unit 7 – Exercise – Multiple metrics and ROC curves
-* Unit 8 – Knowledge check
-* Unit 9 – Summary

@@ -32,33 +32,33 @@ This phenomenon takes place because cost functions, by default, simply determine
 
 Confusion matrices are the key to identifying data imbalances or model bias. In an ideal scenario, the test data have an approximately even number of labels, and the predictions made by the model also are approximately spread across the labels. For 1000 samples, a model that is unbiased, but often gets answers wrong, might look something like so:
 
-**Weird table again**
+![Simplified confusion matrix with 250 for each data point.](../media/8-4-a.jpg)
 
 We can tell that the input data is unbiased, because the row sums are the same (500 each), indicating that half the labels are ‘true’, and half are ‘false’. Similarly, we can see that the model is giving unbiased responses because it is returning true half the time and false the other half of the time.  
 
 By contrast, biased data mostly contains one kind of label, like so:
 
-**Weird table again**
+![Simplified confusion matrix with 400 for true negatives, 100 for false negatives, 400 for false positives, and 100 for true positives.](../media/8-4-b.jpg)
 
 Similarly, a biased model mostly produces one kind of label, like so:
 
-**Weird table again**
+![Simplified confusion matrix with 400 for true negatives, 400 for false negatives, 100 for false positives, and 100 for true positives.](../media/8-4-c.jpg)
 
 ### Model bias is not accuracy
 
 Remember that bias is not accuracy. For example, some of the examples above are biased, and others are not, but they all show a model that is gets the answer correct 50% of the time. As a more extreme example, the matrix below shows an unbiased model that is very inaccurate:
 
-**Weird table again**
+![Simplified confusion matrix with 10 for true negatives, 490 for false negatives, 490 for false positives, and 10 for true positives.](../media/8-4-d.jpg)
 
 Notice how the number of rows and columns all add to 500, indicating both data are balanced and the model is not biased. This model is getting almost all responses incorrect, though!
 
 Of course, **our goal is to have models are accurate and unbiased,** such as:
 
-**Weird table**
+![Simplified confusion matrix with 400 for true negatives, 100 for false negatives, 100 for false positives, and 400 for true positives.](../media/8-4-e.jpg)
 
 …but we need to ensure our accurate models are not biased, simply because the data are:
 
-**Weird table**
+![Simplified confusion matrix with 900 for true negatives, 50 for false negatives, 10 for false positives, and 20 for true positives.](../media/8-4-f.jpg)
 
 In this example, notice how the actual labels are mostly false (left column, **showing a data imbalance**) and the model also frequently returns false (top row, **showing model bias**). This model is not very good at correctly giving ‘True’ responses.
 
