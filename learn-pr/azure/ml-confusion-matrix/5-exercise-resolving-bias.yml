@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 sandbox: true
-notebook: https://review.docs.microsoft.com/learn/modules/ml-confusion-matrix/notebooks/5-exercise-improve-models.ipynb?branch=pr-en-us-17743 
+notebook: https://review.docs.microsoft.com/learn/modules/ml-confusion-matrix/notebooks/8-5-exercise-resolving-bias.ipynb?branch=pr-en-us-18641 
