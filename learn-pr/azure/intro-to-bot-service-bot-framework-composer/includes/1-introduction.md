@@ -1,4 +1,4 @@
-You can use The Azure Bot Service and Microsoft Bot Framework to design, build, deploy and host bots to provide enteprise grade conversational AI experiences. You can use Bot Framework Composer to design conversation logic and integration within a bot or extend bot functionality with code by using the Bot Framework SDK. Azure Bot Service lets you host bots and expose them to your users.
+You can use The Azure Bot Service and Microsoft Bot Framework to design, build, deploy and host bots to provide enterprise grade conversational AI experiences. You can use Bot Framework Composer to design conversation logic and integration within a bot or extend bot functionality with code by using the Bot Framework SDK. Azure Bot Service lets you host bots and expose them to your users.
 
 Imagine you work for an online retail company. You've been asked to investigate methods to provide chat support to customers who are exploring and purchasing products on your company's website.
 
