@@ -9,7 +9,7 @@ In this exercise, you'll explore an Azure Sentinel analytics rule and perform th
 - Create an analytics rule from an rule template.
 
 > [!NOTE]
-> In order to complete this exercise, you must have completed [Exercise Setup unit](includes/2-exercise-setup.md). If you have not done so, complete it now, and then continue with the exercise steps.
+> In order to complete this exercise, you must have completed **Exercise Setup unit** in Unit 2. If you have not done so, complete it now, and then continue with the exercise steps.
 
 ### Task 1: Create an analytics rule from the analytics rule wizard
 
