@@ -32,7 +32,7 @@ Now that we have a shared vocabulary, lets investigate an example illustrating t
 
 The following is an illustration of sending an encrypted message using Public Key encryption.
 
-:::image type="content" source="../media/public-key-encryption.png" alt-text="A diagram of a secure exchange of a message using a public key encryption process. ":::
+:::image type="content" source="/media/public-key-encryption.png" alt-text="A diagram of a secure exchange of a message using a public key encryption process.":::
 
 #### The process includes the following procedures
 
