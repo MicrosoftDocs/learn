@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-cybersecurity.summary
+uid: learn.intro-to-cybersecurity.6-summary
 title: Summary
 metadata:
   unitType: summary
   title: Introduction to cybersecurity
   description: Reflect on cybersecurity learnings and examine references for further learning
-  ms.date: 06-25-2021
+  ms.date: 06/25/2021
   author: cecilyn
   ms.author: tijon
   ms.topic: interactive-tutorial # do we need ms.topic?
