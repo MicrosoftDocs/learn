@@ -2,15 +2,15 @@ The goal of training is to improve a model so that it can make high-quality esti
 
 Models don’t train themselves, they're trained using data plus two pieces of code: the objective function, and the optimizer. Let’s explore how these components work together to train a model to work well.
 
-![Untrained model with two parameters, and a trained model with 0.7 and 0.4 as the parameters.](../media/1-4-a.jpg)
+![Diagram showing an untrained model with two parameters, and a trained model with 0.7 and 0.4 as the parameters.](../media/1-4-a.jpg)
 
-## The Objective
+## The objective
 
 The objective is what we want to the model to be able to do. For example, the objective of our scenario is to be able to estimate a dog’s boot size, based on their harness size.
 
 So that a computer can understand our objective, we need to provide our goal as code snippet called an objective function (also known as cost function). Objective functions judge whether the model is doing a good job (estimating boot size well) or bad job (estimating boot size badly). We will cover objective functions in more depth in later learning material.
 
-## The Data
+## The data
 
 Data refers to the information that we provide the model with (also known as inputs). In our scenario, this is harness size.
 
@@ -18,7 +18,7 @@ Data also refers to information that the objective function might need. For exam
 
 We'll practice working with data in the next exercise.
 
-## The Optimizer
+## The optimizer
 
 During training, the model makes a prediction, and the objective function calculates how well it performed. The optimizer is code that then changes the model’s parameters so the model will do a better job next time.
 

@@ -6,24 +6,24 @@ It is important to make a distinction between training and using a model.
 
 Using a model means providing inputs and receiving an estimation or prediction. We do this both when we are training our model and when we, or our customers, use it in the real world. Using a model normally takes less than a few seconds.
 
-![ML model with data going into the model, which then moves to an estimate](../media/1-6-a.png)
+![Diagram showing a machine learning model with data going into the model, which then moves to an estimate.](../media/1-6-a.png)
 
 By contrast, training a model is the process of improving how well a model works. Training requires that we use the model, as well as the objective function and optimizer, in a special loop. This can take minutes or days to complete. Usually, we only train a model once. Once it is trained, we can use it as many times as we like without making further changes.
 
-![Final training figure showing the ML model lifecycle.](../media/1-6-b.png)
+![Diagram showing the final training figure showing the machine learning model lifecycle.](../media/1-6-b.png)
 
-For example, in our avalanche-rescue dog store scenario, we want to train a model using a public dataset, which will change the model so that it can predict a dog’s boot size based on its harness size. Once our model is trained, we will use the model as part of our online store to make sure customers are buying doggy boots that’ll fit their dog.
+For example, in our avalanche-rescue dog store scenario, we want to train a model using a public dataset, which will change the model so that it can predict a dog’s boot size based on its harness size. Once our model is trained, we will use the model as part of our online store to make sure customers are buying doggy boots that will fit their dog.
 
 ## Data for use, data for training
 
 Recall that a dataset is a collection of information about objects or things. For example, a dataset might contain information about dogs:
 
-|Dog Id|Boot Size|Harness Size| Dog Colour| Breed|
+|Dog ID|Boot Size|Harness Size| Dog Color| Breed|
 |----------|-------------|-----|-----|-----|
 | 0     |   27    |  12   |   Brown  |  St Bernhard   |
 |  1    |    26   |   11 |  Black   |   Labrador  |
 |   2   |     25 |   10  |  White   |  Labrador   |
-|   3   |    29  |   14  |  Black   |  Black Shephard |
+|   3   |    29  |   14  |  Black   |  Black Shepherd |
 
 When we use our model, we only need the column(s) of data that the model accepts as input. **These columns are called features.** In our scenario, if our model accepts harness size and estimates boot size, then **our feature is harness size.**
 
