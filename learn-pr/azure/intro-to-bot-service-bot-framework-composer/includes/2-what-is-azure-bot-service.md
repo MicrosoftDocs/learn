@@ -11,6 +11,10 @@ A *bot* is an app that users interact with in a conversational way using text, g
 
 *Azure Bot Service* is a collection of tools that you can use to create enterprise-grade conversational AI experiences. Use it to create conversational bots that interact with customers and provide them with an enriched, interactive chat experience. Bots can also solve business problems using AI and other cognition capabilities. You can use Azure Bot Service components to design, build, test, and deploy bot functionality. These components include Bot Framework Composer, or Composer, and the Bot Framework SDK.
 
+### Azure Bot
+
+The *Azure Bot* resource enables you to register your Composer or SDK bot in the Azure Bot Service. You can build, connect, and manage bots to interact with your users wherever they are, from your app or website to Teams, Messenger, and many other channels.
+
 ### Core bot functionality
 
 Bots created using Azure Bot Service have the following core functionalities:
@@ -26,13 +30,13 @@ Bots created using Azure Bot Service have the following core functionalities:
 
 :::image type="content" source="../media/2-overview.png" alt-text="Azure Bot Service scenario diagram":::
 
-## Components of Azure Bot Service
+## What is the Microsoft Bot Framework?
 
-Azure Bot Service is made up of several components and tools. Use these tools to build, test, extend, and publish your bots.
+*The Microsoft Bot Framework* is a collection of tools that you can use to create enterprise-grade conversational AI experiences. Use the framework tools to create conversational bots that interact with customers and provide them with an enriched, interactive chat experience. Bots can also solve business problems using AI and other cognition capabilities. You can use Bot Framework components to design, build, test, and deploy bot functionality. These components include Bot Framework Composer, the Bot Framework SDK, and the Bot Framework Emulator.
 
 ### Bot Framework Composer
 
-*Bot Framework Composer*, built on the Bot Framework SDK, is an open-source IDE for developers to author, test, provision, and manage conversational experiences. It provides a powerful visual-authoring canvas. This canvas enables you to create dialogs, language-understanding models, knowledge bases and language generation responses from a single design canvas. Extend bots with code for more complex tasks such as integration with external services and apps. These bots  can then be tested within Composer and provisioned into Azure along with any dependent resources. 
+*Bot Framework Composer*, built on the Bot Framework SDK, is an open-source IDE for developers to author, test, provision, and manage conversational experiences. It provides a powerful visual-authoring canvas. This canvas enables you to create dialogs, language-understanding models, knowledge bases and language generation responses from a single design canvas. Extend bots with code for more complex tasks such as integration with external services and apps. These bots can then be tested within Composer and provisioned into Azure as a Bot Service instance, along with any dependent resources.
 
 > [!NOTE]
 > Bot Framework Composer is available as a desktop application for Windows, macOS and Linux. It's also available as a web-based component that you can customize and extend.
@@ -41,15 +45,12 @@ Composer offers a visual design experience that makes it easy to model sophistic
 
 ### Bot Framework SDK
 
-*Bot Framework SDK* is a modular set of components for building and extending bots. The Bot Framework SDK is available for C#, JavaScript, Typescript, Python, and Java (preview). The SDK includes tools for various stages of bot development to help you design and build bots. Extend bots with the Bot Framework SDK and code when you need bots to perform more complex activities. These activities include bots integrating with dependencies such as REST APIs.
+*Bot Framework SDK* is a modular set of components for building and extending bots. The Bot Framework SDK is available for C#, JavaScript, Typescript, Python, and Java (preview). The SDK includes tools for various stages of bot development to help you design and build bots. Extend bots with the Bot Framework SDK and code when you need bots to perform more complex activities. These activities include bots integrating with dependencies such as authentication services or non-standard web services.
 
 ### Bot Framework Emulator
 
-*Bot Framework Emulator* is a desktop application that allows bot developers to test and debug bots, either locally or remotely. Using the Emulator, you can chat with your bot and inspect the messages that your bot sends and receives. The Emulator displays messages as they would appear in a web chat UI and logs JSON requests and responses as you exchange messages with your bot. Before you deploy your bot to the cloud, run it locally and test it using the Emulator. You can test your bot using the Emulator even if you haven't yet created it with Azure Bot Service or configured it to run on any channels.
+*Bot Framework Emulator* is a desktop application that emulates a bot client interface so you can interact with your bot for testing, either locally or remotely. Using the Emulator, you can chat with your bot and inspect the messages that your bot sends and receives. The Emulator displays messages as they would appear in a web chat UI and logs JSON requests and responses as you exchange messages with your bot. Before you deploy your bot to the cloud, run it locally and test it using the Emulator. You can test your bot using the Emulator even if you haven't yet created it with Azure Bot Service or configured it to run on any channels.
 
-### Azure Bot
-
-The *Azure Bot* resource enables you to register your Composer or SDK bot in the Azure Bot Service. You can build, connect, and manage bots to interact with your users wherever they are, from your app or website to Teams, Messenger, and many other channels.
 
 ### Other bot-building tools
 

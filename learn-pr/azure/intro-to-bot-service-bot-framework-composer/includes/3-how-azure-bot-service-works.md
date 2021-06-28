@@ -1,13 +1,13 @@
-You'll explore using Bot Framework Composer to understand the bot-design process. You'll also gain a basic understanding of how to create a bot, extend bot capabilities, and publish a bot in Azure.
+You'll explore using Bot Framework Composer to help you design bots in an interactive, visual designer. You'll learn how to extend your bot with AI and language capabilities within Bot Framework Composer and gain a basic understanding of how to create a bot, extend bot capabilities, and publish a bot in the Azure Bot Service.
 
 ## What is the architecture of a bot package?
 
-The Azure Bot Service supports the complete bot-creation process. The supported process includes design, building, testing, and publishing tasks.
+Azure Bot Service and Bot Framework support the complete bot-creation process. The supported process includes design, building, testing, and publishing tasks.
 
-The Azure Bot Service developer tools create a *bot package.* This package contains the bot logic and details about bot integrations and connections, including input channels and authentication. The bot package also contains any custom bot code. The bot package is hosted in an Azure Web App that provides the primary endpoint for bot interaction. Through the web app, users can interact with the bot. Meanwhile, it can manage incoming and outgoing REST interactions for external channels and other integrations.
+Bot developers use Bot Framework Composer to create a *bot package.* This package contains the bot logic and details about bot integrations and connections, including input channels and authentication. The bot package also contains any custom bot code. The bot package is hosted by the Azure Bot Service. An Azure Bot can be thought of as an Azure Web App with a few extra features that provides the primary endpoint for bot interaction. Through the Bot Service, users can interact with the bot. Meanwhile, it can manage incoming and outgoing REST interactions for external channels and other integrations.
 
 > [!NOTE]
-> The bot package is serviced using the development tools discussed in the previous unit, such as Bot Framework Composer or the Bot Framework SDK through Visual Studio or Visual Studio Code.
+> The bot package can also be serviced using the Bot Framework SDK through Visual Studio or Visual Studio Code.
 
 :::image type="content" source="../media/3-bot-service-architecture.png" alt-text="Azure Bot Service architecture":::
 
@@ -20,9 +20,9 @@ Before building your bot, you need to decide what kind of bot you're creating. A
 - Who will use your bot? If you're designing a bot, it's safe to assume that you're expecting users to use it. Different customers will expect different user experiences. Knowing who your audience is will help determine how complex your bot design should be. Consider what languages to implement for the bot.
 
     > [!TIP]
-    > Ensuring a great user experience should be your number one priority when designing a bot. 
+    > Ensuring a great user experience should be your number one priority when designing a bot.
 
-- Where will your bot run? You must decide on which platforms your bot will run. For example, a bot designed to run on a mobile device might require features such as sending SMS.
+- Where will your bot be used? You must decide on which platforms your bot will run. For example, a bot designed to run on a mobile device might require features such as sending SMS.
  
     > [!IMPORTANT]
     > The publishing experience varies from platform to platform.
@@ -40,13 +40,6 @@ You can use Composer's visual designer to intuitively develop the core functiona
 - Publish bots to Azure App Service and Azure Functions.
 - Integrate external services such as LUIS apps and QnA Maker knowledge bases.
 
-### Adaptive dialog format
-
-Apps created with Composer use the *adaptive dialog* format. This format is a JSON specification shared by many tools that the Bot Framework provides. Composer bot projects contain reusable assets in the form of JSON and Markdown files that you can bundle and package with a bot's source code. You can check these components into source-control systems. You also can deploy them along with code updates, such as dialogs, language understanding training data, and message templates. Bots that you create with Composer can be extended and modified. All you have to do is edit the bot source code and use the Bot Framework SDK in a code-based IDE.
-
-> [!NOTE]
-> *Bot Framework* is a comprehensive framework for building enterprise-grade conversational AI experiences. All bots built in Composer or the Bot Framework SDK are supported in Azure by the Bot Framework.
-
 ### Create dialogs and conversation flow
 
 Dialogs control the conversations that a bot has with its users. Dialogs contain language generation response templates that define bot responses and instructions for how a bot will perform tasks, such as making dinner reservations at a restaurant or creating an Outlook calendar item.
@@ -55,7 +48,7 @@ Many dialogs are linear, with a simple question and response sequence. But some 
 
 ### Include external flows with skills and other bots
 
-You can create more complex conversation flows by importing Composer skills, NuGet packages, and even other Azure Bot Service bots into your bot. You can create a nested series of bots to create a more modular and reusable set of bot functionality. You can combine these smaller, modular components in multiple combinations to provide a set of capabilities for different parent bots.
+You can create more complex conversation flows by importing Composer skills, NuGet packages, and even other Azure Bot Service bots into your bot. You can create a nested series of bots to create a more modular and reusable set of bot functionality. You can combine these smaller, modular components in multiple combinations to provide a set of capabilities for different parent bots. For example, you might have a bot that handles conversation flow around managing calendar entries, with inputs and responses such as, "when's my next meeting?" or "Do you need a meeting room?" By packaging the bot as a skill, you can easily integrate the skill (and the associated calendar conversation-handling capability) into any other bot you create.
 
 ### Use cards, images, and buttons to enhance conversation
 
@@ -79,6 +72,6 @@ Use Visual Studio, Visual Studio Code, or the supported IDE of your choice and t
 
 The Azure Bot Service hosts bot functionality in Azure. Publish bots directly from the Composer interface, creating an end-to-end development experience within Composer.
 
-Azure Bot Service hosts a bot in an Azure Web App resource. This resources contains the code, logic, and basic HTTP REST endpoints for standard connectivity to external resources such as databases or REST APIs. Azure Bot Service also provides ready-made Bot Service channels. These channels allow built-in integration with Facebook, Slack, Teams, telephony, and others.
+Azure Bot Service hosts a bot in an Azure Web App resource. This resource contains the code, logic, and basic HTTP REST endpoints for connectivity to external resources. Azure Bot Service also provides ready-made Bot Service channels. Bot Service Channels provide an adapter layer that adapts bot interaction to another chat service protocol, such as Facebook, Slack, Teams, telephony, and others.
 
 When you publish from Composer, the publishing process can also create or import dependent Azure resources. These resources include LUIS, QnA Maker, Azure Cosmos DB, Application Insights, and Blob Storage.
