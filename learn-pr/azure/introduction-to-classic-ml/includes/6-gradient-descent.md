@@ -12,7 +12,7 @@ The most common optimization algorithm today is called Gradient Descent. Several
 
 Gradient descent uses calculus to estimate how changing each parameter will change the cost. For example, increasing a parameter might be predicted to reduce the cost.
 
-Gradient descent is named as such because it calculates the gradient (slope) of the relationship between each model parameter and the cost. The parameters are then altered to move down this slope. Don’t be daunted if this sounds confusing: in the video below, we explain this visually.
+Gradient descent is named as such because it calculates the gradient (slope) of the relationship between each model parameter and the cost. The parameters are then altered to move down this slope.
 
 ## Limitations of gradient descent
 
