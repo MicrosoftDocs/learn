@@ -11,7 +11,7 @@ In this unit, you'll learn how the Project Bonsai components work together. If y
 > [!NOTE]
 > A Bonsai brain (trained AI) is a nascent AI in the process of learning.
 
-:::image type="content" source="../media/introduction.png" alt-text="A simulator icon flowing into a circular graph that connects the training engine, training curriculum, and integrated simulation. Another arrow flows away from the circular graph to indicate an exported brain.":::
+:::image type="content" source="../media/introduction.png" alt-text="A simulator icon flowing into a circular graph that connects the training engine, training curriculum, and integrated simulation. An arrow flows away from the circular graph to indicate an exported brain.":::
 
 ## How do these components work together?
 
