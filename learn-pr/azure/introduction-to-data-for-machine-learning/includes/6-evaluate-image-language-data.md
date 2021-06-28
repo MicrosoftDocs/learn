@@ -12,13 +12,13 @@ For example, Port of Embarkment has three values, C (Cherbourg), Q (Queenstown),
 
 As an example of this problem, let’s throw caution to the wind and model the relationship between Port of Embarkment and Ticket Class, treating Port of Embarkment as a number. First, we set C < S < Q:
 
-![Plot of PClass against PortAsNumber.](../media/3-6-a.png)
+![Diagram of a graph showing a plot of PClass against PortAsNumber.](../media/3-6-a.png)
 
 In the above plot, the line predicts a Pclass of ~3 for Port Q.
 
 Now, setting S < C< Q we get a completely different trendline and prediction:
 
-![Plot of PClass against PortAsNumber with a flatter trend line.](../media/3-6-b.png)
+![Diagram of a graph showing a plot of PClass against PortAsNumber with a flatter trend line.](../media/3-6-b.png)
 
 Neither of these trendlines are correct; it doesn't make sense to treat categories as continuous features. So, how do we work with categories?
 
