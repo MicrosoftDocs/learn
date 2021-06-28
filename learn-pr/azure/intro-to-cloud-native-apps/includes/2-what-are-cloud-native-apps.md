@@ -10,7 +10,7 @@ With Cloud Native, we're leveraging many pre-built types of services or services
 :::column-end:::
 :::column:::
 
-![Cloud-native design with services.](../media/2-services.png)
+![Cloud-native design with services, with different components making up each service.](../media/2-services.png)
 
 :::column-end:::
 :::row-end:::
