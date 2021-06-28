@@ -55,7 +55,7 @@ https://<spring-cloud-name>-api-gateway.azuremicroservices.io/api/customer/owner
 Accessing the URL triggers a warning, as the variable "George" cannot be cast into a number to search for a customer.
 You now can see a warning similar to the below screen:
 
-![Log Warning](../media/5-warning.jpg)
+:::image type="content" source="../media/5-warning.jpg" alt-text="screenshot of azure cloud shell with log warning":::
 
 3. To resolve this warning, in a web browser, rather search for the customer using the customer ID:
 

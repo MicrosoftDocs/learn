@@ -67,12 +67,12 @@ Next, we'll verify your apps are installed and registered via the Azure portal.
 - On the right-hand side, select "Apps" under settings
 - Verify all the apps are running and registered
 
-![App selection](../media/3-app-selection.jpg)
+:::image type="content" source="../media/3-app-selection.jpg" alt-text="screenshot showing applications under your spring cloud":::
 
 - On the left-hand side, select the "api-gateway" app
 - The URL for your app is listed on the left-hand side properties as "URL"
 
-![API gateway URL](../media/3-gateway-url.jpg)
+:::image type="content" source="../media/3-gateway-url.jpg" alt-text="screenshot showing the Spring Cloud gateway url":::
 
 In a web browser, navigate to the URL of your api-gateway to open the Pet Clinic microservice application.
 
@@ -82,7 +82,7 @@ In a web browser, navigate to the URL of your api-gateway to open the Pet Clinic
 Next, navigate to the "Owners" tab and select "Find all owners".
 Confirm your sample app is up and running, populated with data and now ready for you to explore.
 
-![Real-time metrics](../media/4-petclinic.jpg)
+:::image type="content" source="../media/4-petclinic.jpg" alt-text="screenshot real-time metrics for the Spring Cloud":::
 
 ## Next steps
 

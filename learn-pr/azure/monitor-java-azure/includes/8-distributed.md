@@ -170,7 +170,7 @@ The **Long running queries tab** shows the top 5 queries by average duration per
 > As part of the setup script, your Azure Spring Cloud sample application activated Query Performance Insights for Long running queries for your MySQL instance.
 > For Query Performance Insight to function, data must exist in the Query Store and can take a few minutes to reflect.
 
-![Long Running Queries](../media/8-query-performance.jpg)
+:::image type="content" source="../media/8-query-performance.jpg" alt-text="Screenshot showing Long running queries view for MySQL server":::
 
 ### Wait statistics
 
