@@ -25,7 +25,8 @@ During the process, you'll:
    The output looks similar to the following:
 
    ```output
-   TODO
+   On branch add-database
+   nothing to commit, working tree clean
    ```
 
    Notice that the first line of the output tells you that Git is on the **add-database** branch.

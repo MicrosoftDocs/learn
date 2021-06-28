@@ -8,7 +8,7 @@ During the process, you'll:
 > * Commit the updated Bicep code.
 > * View the commit history and the main Bicep file's history.
 
-## Commit the Bicep file to your Git repository
+## Commit the Bicep file by using the Git CLI
 
 1. Using the Visual Studio Code terminal, execute the following command to stage the _main.bicep_ file:
 
@@ -58,7 +58,7 @@ Now that you've made a change to the _main.bicep_ file, let's inspect the differ
 
    A file difference opens.
 
-   TODO screenshot
+   :::image type="content" source="../media/5-vscode-diff.png" alt-text="Screenshot of Visual Studio Code showing the difference between the current main.bicep file and the modified version." border="true":::
 
    Notice that Visual Studio Code shows you the changes you have made. The original file is on the left, and the changed file is on the right. Additions to the file are displayed in green, and anything you've removed from the file is displayed in red.
 
@@ -72,11 +72,13 @@ Now that you've reviewed the changes and are satisfied with it, you commit the u
 
 1. At the top of the the **Source Control** panel, enter a descriptive commit message, like:
 
-   _Add App Service module._
+   ```plaintext
+   Add App Service module.
+   ```
 
 1. Select the checkmark icon above the commit message text box.
 
-   TODO screenshot
+   :::image type="content" source="../media/5-vscode-commit.png" alt-text="Screenshot of Visual Studio Code showing the Source Control panel, with the commit icon highlighted." border="true":::
 
    Visual Studio Code commits the two changes. Since you didn't explicitly stage them, Visual Studio Code automatically staged both files before it committed them.
 
@@ -91,7 +93,8 @@ Now that you've reviewed the changes and are satisfied with it, you commit the u
    The output looks similar to the following:
 
    ```output
-   TODO
+   238b0867f533e14bcaabbade31b9d9e1bda6123b (HEAD -> main) Add App Service module.
+   9e41f816bf0f5c590cee88590aacc977f1361124 Add first version of Bicep template.
    ```
 
 1. Inspect the output. Notice you see both of your commits in the commit history.
@@ -104,12 +107,10 @@ You can also view the history of a single file, the state of the file from that 
 
 1. Right-click the _main.bicep_ file and select **Open Timeline**.
 
-   TODO screenshot
+   :::image type="content" source="../media/5-vscode-timeline-menu.png" alt-text="Screenshot of Visual Studio Code showing the Explorer panel, with the right-click menu displayed for the main.bicep file. The Open Timeline menu item is highlighted." border="true":::
 
    The timeline pane opens, showing both commits.
 
-   TODO screenshot
+   :::image type="content" source="../media/5-vscode-timeline.png" alt-text="Screenshot of Visual Studio Code showing the timeline for the main.bicep file, with two commits listed." border="true":::
 
-1. Double-click the bottom commit in the list to view the state of the file at that point in time.
-
-   TODO screenshot
+1. Click on each commit in the list to view the state of the file at that point in time.

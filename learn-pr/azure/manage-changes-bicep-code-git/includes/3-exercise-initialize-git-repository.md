@@ -65,20 +65,20 @@ You need to run a few commands to configure Git so that it associates your name 
 
 ## Create and initialize a Git repository
 
-1. In the Visual Studio Code terminal, create a new folder named *toy-website*:
+1. In the Visual Studio Code terminal, create a new folder named _toy-website_:
 
    ```bash
    mkdir toy-website
    cd toy-website
    ```
 
-1. Using the Visual Studio Code terminal, execute the following command to reopen Visual Studio Code with the *toy-website* folder loaded:
+1. Using the Visual Studio Code terminal, execute the following command to reopen Visual Studio Code with the _toy-website_ folder loaded:
 
    ```bash
    code --reuse-window .
    ```
 
-   Visual Studio Code reloads. If you're prompted to trust the folder, select **Trust**.
+   Visual Studio Code reloads. If you're prompted to trust the folder, select **Yes, I trust the authors**.
 
 1. In the Visual Studio Code terminal, run the following command to initialize a new Git repository in the folder you just created:
 
@@ -90,19 +90,19 @@ You need to run a few commands to configure Git so that it associates your name 
 
 ## Add a Bicep file
 
-1. Create a subfolder named *deploy*. You can do this using Visual Studio Code's file explorer, or you can use the following command in the Visual Studio Code terminal:
+1. Create a subfolder named _deploy_. You can do this using Visual Studio Code's **Explorer** panel, or you can use the following command in the Visual Studio Code terminal:
 
    ```bash
    mkdir deploy
    ```
 
-1. In the *deploy* folder, create a new file called *main.bicep*.
+1. In the *deploy* folder, create a new file called _main.bicep_.
 
 1. Open and save the empty file so that Visual Studio Code loads the Bicep tooling.
  
    You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 
-1. Copy the following code into *main.bicep*.
+1. Copy the following code into _main.bicep_.
 
    :::code language="bicep" source="code/3-main.bicep" :::
 
@@ -152,13 +152,13 @@ Visual Studio Code shows the same information that the `git status` command prov
 
    The **Source Control** panel opens.
 
-   TODO screenshot
+   :::image type="content" source="../media/3-vscode-source-control.png" alt-text="Screenshot of Visual Studio Code showing the Source Control panel, with one change on the icon badge, and the main.bicep file listed as a changed file." border="true":::
 
-   Notice that Visual Studio Code shows that the *main.bicep* file in the *deploy* folder has changed. Additionally, the **Source Control** icon has a badge showing the number `1`, which indicates there's one untracked file.
+   Notice that Visual Studio Code shows that the _main.bicep_ file in the *deploy* folder has changed. Additionally, the **Source Control** icon has a badge showing the number `1`, which indicates there's one untracked file.
 
 1. The **Status Bar** appears at the bottom of Visual Studio Code. It provides lots of useful information and functionality. Notice that, towards the left side of the status bar, it shows the word **main**:
 
-   TODO screenshot
+   :::image type="content" source="../media/3-vscode-status-bar.png" alt-text="Screenshot of the Visual Studio Code Status Bar, showing the branch name as main." border="true":::
 
    This indicates that you are currently on the **main** branch. You'll learn about branches shortly.
 

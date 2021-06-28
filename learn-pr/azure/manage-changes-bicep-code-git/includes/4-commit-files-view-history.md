@@ -34,7 +34,7 @@ To stage a file, you use the `git add` command and specify the filename or folde
 > [!IMPORTANT]
 > Once you've staged a file, if you make any further changes to it before you commit, those changes won't be recorded by Git. You need to stage the file again for Git to catch the most recent changes.
 
-For example, imagine you've just created a Bicep module to define an Azure Cosmos DB account. It's named *cosmos-db.bicep* and you saved it in the *deploy/modules* folder. Here's how you could stage the file:
+For example, imagine you've just created a Bicep module to define an Azure Cosmos DB account. It's named _cosmos-db.bicep_ and you saved it in the *deploy/modules* folder. Here's how you could stage the file:
 
 ```bash
 git add deploy/modules/cosmos-db.bicep
