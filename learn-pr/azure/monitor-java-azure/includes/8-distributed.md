@@ -20,10 +20,12 @@ Logs in Azure Monitor are valuable for identifying root case of issues. Data col
 
 There are actually three ways to access your application's logs: Azure Storage, Azure Events Hub, and Log Analytics. We'll focus here on Log Analytics as it's the most common one and is integrated into Azure Spring Cloud for metrics monitoring.
 
-1. In the Azure portal, in the left pane, select **Log Analytics**.
-1. Select the Log Analytics workspace that you chose when you added your diagnostics settings.
+1. In the Azure portal, in the left pane, select your Azure Spring Cloud instance.
 1. To open the **Log Search** pane, select **Logs**.
-1. In the **Tables** search box,
+
+:::image type="content" source="../media/8-cloud-logs.jpg" alt-text="Screenshot showing query for azure spring cloud logs":::
+
+3. In the **Query** search box
 
    * to view logs, enter a query such as:
 
@@ -95,10 +97,13 @@ In Azure Database for MySQL, the slow query log is available to users. Access to
 
 In our sample application, your slow query logs are set up to be piped to Azure Monitor Logs through Diagnostic Logs, and you can do further analysis of your slow queries. Below are sample queries to help you get started:
 
-1. In the Azure portal, in the left pane, select **Log Analytics**.
-1. Select the Log Analytics workspace that you chose when you added your diagnostics settings.
-1. To open the **Log Search** pane, select **Logs**.
-1. In the **Tables** search box,
+1. Sign in to the Azure portal.
+1. Select your Azure Database for MySQL server.
+1. select **Logs**
+
+:::image type="content" source="../media/8-MYSQL-logs.jpg" alt-text="Screenshot showing query for queries longer than 1 second":::
+
+4. In the **Query** search box,
 
 * Retrieve all Queries longer than 1-second
 
