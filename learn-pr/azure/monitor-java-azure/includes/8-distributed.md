@@ -25,7 +25,7 @@ There are actually three ways to access your application's logs: Azure Storage, 
 
 :::image type="content" source="../media/8-cloud-logs.jpg" alt-text="Screenshot showing query for azure spring cloud logs":::
 
-3. In the **Query** search box
+3. In the **Query** search box,
 
    * to view logs, enter a query such as:
 
@@ -50,13 +50,17 @@ There are actually three ways to access your application's logs: Azure Storage, 
     | limit 50
     ```
 
-### Analyze the logs
+### Analyze the Application logs
 
 Application logs provide critical information and verbose logs about your application's health, performance, and more. In the next sections are some  queries to help you understand your application's current and past states.
 
 ### Show application logs from Azure Spring Cloud
 
-* To review a list of application logs from Azure Spring Cloud, sorted by time with the most recent logs shown first, run the following query:
+1. In the Azure portal, in the left pane, select your Azure Spring Cloud instance.
+1. To open the **Log Search** pane, select **Logs**.
+1. In the **Query** search box,
+
+    * To review a list of application logs from Azure Spring Cloud, sorted by time with the most recent logs shown first, run the following query:
 
     ```sql
     AppPlatformLogsforSpring
@@ -64,9 +68,7 @@ Application logs provide critical information and verbose logs about your applic
     | sort by TimeGenerated desc
     ```
 
-### Show logs entries containing errors or exceptions
-
-* To review unsorted log entries that mention an error or exception, run the following query:
+    * To review unsorted log entries that mention an error or exception, run the following query:
 
     ```sql
     AppPlatformLogsforSpring
@@ -74,11 +76,7 @@ Application logs provide critical information and verbose logs about your applic
     | where Log contains "error" or Log contains "exception"
     ```
 
-Use this query to find errors, or modify the query terms to find specific error codes or exceptions.
-
-### Show the number of errors and exceptions reported by your application over the last hour
-
-* To create a pie chart that displays the number of errors and exceptions logged by your application, run the following query:
+    * To create a pie chart that displays the number of errors and exceptions logged by your application, run the following query:
 
     ```sql
     AppPlatformLogsforSpring
