@@ -66,9 +66,9 @@ Now that you've made a change to the _main.bicep_ file, let's inspect the differ
 
    Notice that there's nothing on the left side of the difference, since this file is new and wasn't already added to the repository.
 
-## Commit the updated Bicep code
+## Commit the updated Bicep code by using Visual Studio Code
 
-Now that you've reviewed the changes and are satisfied with it, you commit the update to the file.
+Now that you've reviewed the changes and are satisfied with it, you commit the update to the file. This time, you commit using Visual Studio Code.
 
 1. At the top of the the **Source Control** panel, enter a descriptive commit message, like:
 
@@ -78,7 +78,7 @@ Now that you've reviewed the changes and are satisfied with it, you commit the u
 
    TODO screenshot
 
-   Visual Studio Code commits the two changes. Since you didn't explicitly stage them, Visual Studio Code automatically staged both files.
+   Visual Studio Code commits the two changes. Since you didn't explicitly stage them, Visual Studio Code automatically staged both files before it committed them.
 
 ## View the commit history by using the Git CLI
 
@@ -90,7 +90,7 @@ Now that you've reviewed the changes and are satisfied with it, you commit the u
 
    The output looks similar to the following:
 
-   TODO
+   TODO output
 
 1. Inspect the output. Notice you see both of your commits in the commit history.
 

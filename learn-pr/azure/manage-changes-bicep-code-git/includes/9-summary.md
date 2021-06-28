@@ -17,7 +17,7 @@ There are certain features of Git that are particularly useful when you work wit
 - [Stashing your changes](https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning), which enables you to keep your changes without committing them.
 - [Undoing changes](https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things), including reverting commits and resetting your repository status.
 - [Branches](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging), including handling merge conflicts, [advanced merging](https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging), and [rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing).
-- [Branching workflows](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows) to support your team's ways of working. In this module we covered trunk-based development, but many teams prefer the TODO GitFlow or [GitHub Flow](https://docs.github.com/get-started/quickstart/github-flow) models.
+- [Branching workflows](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows) to support your team's ways of working. In this module we introduced [trunk-based development](https://trunkbaseddevelopment.com/), but some teams prefer the [GitHub Flow](https://docs.github.com/get-started/quickstart/github-flow) model. [Consider some best practices when selecting your branching strategy](/azure/devops/repos/git/git-branching-guidance).
 - [Rewriting history](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History), including amending commit messages and removing information from your commit history, and squashing changes.
 - [Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
