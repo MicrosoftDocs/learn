@@ -5,8 +5,8 @@ metadata:
   title: Introduction to cybersecurity
   description: Evaluate how to defend against the most common cyberthreat.
   ms.date: 06/25/2021
-  author: cecilyn      # GitHub ID of the Microsoft employee either authoring or project-managing this content
-  ms.author: tijon
+  author: mbcrump
+  ms.author: micrum
   ms.topic: interactive-tutorial
 title: Introduction to cybersecurity
 summary: "Knowing the fundamentals of cybersecurity is a first step toward countering increasing cyberthreats. Examine key terminology and discover common cyberthreats and how to defend against them."
@@ -25,7 +25,7 @@ roles:
   - technology-manager
   - student
 products:
-- Azure
+- learning-azure
 units:
 - learn.intro-to-cybersecurity.1-introduction
 - learn.intro-to-cybersecurity.2-what-is-cybersecurity
