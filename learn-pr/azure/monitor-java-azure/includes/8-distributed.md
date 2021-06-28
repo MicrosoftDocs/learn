@@ -100,7 +100,7 @@ In our sample application, your slow query logs are set up to be piped to Azure 
 1. To open the **Log Search** pane, select **Logs**.
 1. In the **Tables** search box,
 
-* Retrieve all Queries longer than 1 second
+* Retrieve all Queries longer than 1-second
 
     ```sql
     AzureDiagnostics
@@ -139,7 +139,7 @@ In our sample application, your slow query logs are set up to be piped to Azure 
   
 The audit log can also be used to track database-level activity and is commonly used for compliance. Audit logs are integrated with Azure Monitor Diagnostic Logs. In your sample, we've enabled audit logs on your MySQL server so you can do further analysis of your audited events.
 
-* Below is a sample queries, that retrieve the general MySQL log:
+* Below is a sample query, that retrieves the general MySQL log:
 
     ```sql
     AzureDiagnostics
