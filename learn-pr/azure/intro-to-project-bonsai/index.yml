@@ -16,7 +16,7 @@ abstract: |
     - Evaluate whether Microsoft Project Bonsai can simplify machine teaching so you can train and deploy smarter autonomous systems.
 prerequisites: |
   - Experience working with hosted platforms
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /media/learn/module.svg
 levels:
   - beginner
 roles:
