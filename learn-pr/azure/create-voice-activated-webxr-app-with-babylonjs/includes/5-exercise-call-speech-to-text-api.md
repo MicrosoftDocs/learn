@@ -1,29 +1,8 @@
 The Azure Speech JavaScript SDK allow developers to integrate Azure Speech services into their applications more efficiently.
 
-In the amusement park application, we need to use a speech-to-text service to recognize a magical spell. Once the spell is recognized, the application needs to render the dragon 3D models to create the experience of "summoning the dragon."
+In the amusement park application, we need to use a speech-to-text service to recognize a magical spell. Once the spell is recognized, the application needs to render the dragon 3D model to create the experience of "summoning the dragon."
 
 Here, you will use the Azure Speech JavaScript SDK to integrate the Azure Speech-to-text service into the amusement park application.
-
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
-
-    Goal: List the steps they'll do to complete the exercise.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
-
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
 
 ## Clone the Github Repository
 
@@ -146,7 +125,7 @@ Let's create a Speech Recognizer using the Azure Speech JavaScript SDK.
     };
     ```
 
-1. The 3D models for the dragon (and the magic circle) are stored in the *env* object. Let's add the code to have the magic circle and the dragon models fade in, one after another. Also, let's stop the speech recognition as the dragon has been summoned.
+1. In addition to the dragon 3D model, we will also render a magic circle 3D model for better visual effect. The 3D models for the dragon and the magic circle are stored in the *env* object. Let's add the code to have the magic circle and the dragon models fade in, one after another. Also, let's stop the speech recognition as the dragon has been summoned.
 
     ```typescript
     recognizer.recognized = async (s: Recognizer, e: SpeechRecognitionEventArgs) => {
@@ -208,29 +187,8 @@ Let's create a Speech Recognizer using the Azure Speech JavaScript SDK.
     }
     ```
 
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
-
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
-
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
-
 ## Check the app in the browser
+
 Now that the code is ready, it is time to verify that the web application works as intended. We will need to make sure that the dragon and magic circle models fade in when we say "go dragon" when the app is running.
 
 1. In your VSCode terminal, make sure you are in the root folder of the web project, and run **npm start**.
