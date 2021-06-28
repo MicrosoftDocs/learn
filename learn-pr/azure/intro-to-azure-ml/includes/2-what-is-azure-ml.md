@@ -4,8 +4,6 @@ Azure ML enables users familiar with ML frameworks to quickly train and deploy m
 
 Azure ML has a comprehensive suite of features to support logging, monitoring, and governance of datasets and models, ensuring your models are performing as intended and effectively communicated to stakeholders.
 
-![Azure Machine Learning example](../media/2-deploy-models.gif)
-
 ## What is Azure Machine Learning studio?
 
 Azure Machine Learning studio is a browser-based service that provides no-code and code-first solutions to visually create, train, and manage models through a web UI. Azure ML studio allows _Python_ and _R_ SDK to seamlessly integrate with the natively supported _Jupyter Notebooks_ for collaborative notes and coding. Data within Azure Machine Learning studio is simple to manage with intuitive data visualization and AI-assisted image or text labeling features.
