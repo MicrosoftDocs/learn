@@ -122,7 +122,7 @@ To perform this exercise, you need:
     SELECT * FROM inventory;
     ```
 
-1. Close the Cloud Shell pane displaying a Bash seesion.
+1. Close the Cloud Shell pane displaying a Bash session.
 
 ## Results
 
