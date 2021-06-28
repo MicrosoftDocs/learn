@@ -1,46 +1,23 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-
-    Goal: briefly summarize the key skill this unit will teach
-
-    Heading: none
-
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
-
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format)
--->
-WebXR is a technology that helps bring VR and AR functionality to the web. The WebXR Device API at its core handles the logic for interfacing with devices which support VR or AR. 
+WebXR is a technology that helps bring VR and AR functionality to the web. The WebXR Device API at its core handles the logic for interfacing with devices that support VR or AR. 
 
 In the scenario of the amusement park application, the company wants the VR/AR application to be easily accessible through a browser connected to the internet. WebXR is the perfect technology to fulfill this need.
 
-Here, you will learn about the WebXR support and features provided in Babylon.js.
+Here, you'll learn about a selection of the WebXR features provided by Babylon.js.
 
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=master)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
 ## WebXR in Babylon.js
 
-Babylon.js is a powerful 3D rendering engine packed into a Javascript framework. Other than its main features such as rendering 3D meshes and animations, the framework also provides support for WebXR.
+Babylon.js is a powerful 3D rendering engine packed into a JavaScript framework. Other than its main features such as rendering 3D meshes and animations, the framework also provides support for WebXR.
 
 The WebXR experience can be enabled for a Babylon.js scene in one line:
 
 ```javascript
-await scene.createDefaultXRExperienceAsync();
+const xr = await scene.createDefaultXRExperienceAsync();
 ```
 
 By default, this line of code enables WebXR support in the immersive VR mode. To enable the support for WebXR support in the AR mode:
 
 ```javascript
-await scene.createDefaultXRExperienceAsync({
+const xr = await scene.createDefaultXRExperienceAsync({
     uiOptions: {
         sessionMode: "immersive-ar",
     },
@@ -49,24 +26,36 @@ await scene.createDefaultXRExperienceAsync({
 
 After WebXR is enabled using this function, if the Babylon.js application is opened on a browser and device that supports WebXR in the specified mode (VR or AR), an XR button will appear in the bottom-right corner of the page:
 
-:::image type="content" source="../media/webxr-button.jpg" alt-text="An empty Babylon J S scene with an X R button in the bottom right corner.":::
+:::image type="content" source="../media/webxr-button.jpg" alt-text="An empty Babylon J S scene with an X R button in the bottom-right corner.":::
 
 One can then enter the VR or AR session by pressing on that button.
 
 ### WebXR Session Manager
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
+
+The WebXR Session Manager serves as the interface for us to interact with the WebXR session of the scene.
+
+When we use scene.createDefaultXRExperienceAsync() to enable the WebXR support, the session manager is created automatically and can be accessed through **xr.baseExperience.sessionManager**.
+
+The WebXR Session Manager provides a set of observables for us to recognize events related to the WebXR sessions. For example, the onXRSessionInit observable is triggered when a new WebXR session is created, and the onXRSessionEnded observable is triggered when a WebXR session ended. These observables are useful for recognizing when users are entering the WebXR session through the button selection.
+
+The WebXR Session Manager can also be used to initialize or end a WebXR session programmatically, as well as specifying the type of the session (VR or AR) when creating the session programmatically.
+
 ### WebXR Camera
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### AR: Background Remover
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+The WebXR Camera refers to the camera rendering the view of the WebXR session. In other words, the position and direction of the WebXR Camera would show the position and direction of the host device relative to the virtual space in the WebXR session.
 
-<!-- Do not add a unit summary or references/links -->
+Like the WebXR Session Manager, the WebXR Camera is also created at the scene.createDefaultXRExperienceAsync() call. The instance of the camera can be accessed by using **xr.baseExperience.camera**.
+
+### Background Remover
+
+Background remover is an AR-exclusive feature that helps make Babylon.js scenes reusable across both VR and AR session modes.
+
+When viewing a Babylon.js scene without WebXR support or in an immersive VR session, the scene often has background materials (ground, sky, etc.) that describe the setting of the scene. However, in an AR session, we only want to render the non-background meshes and instead use the user's real surroundings as the background.
+
+The background remover feature allows us to specify what meshes to remove when the user is in an AR session. The example below shows how it can be enabled:
+
+```javascript
+featuresManager.enableFeature(BABYLON.WebXRBackgroundRemover, 'latest', {
+    backgroundMeshes: [ground, sky]
+});
+```
