@@ -161,7 +161,7 @@ Let's create a Speech Recognizer using the Azure Speech JavaScript SDK.
     };
     ```
 
-1. Finally, call recognizer.startContinuousRecognitionAsync() to start the speech recognition service. Here is what the entire createScene() function look like at this step:
+1. Finally, call recognizer.startContinuousRecognitionAsync() to start the speech recognition session. Here is what the entire createScene() function looks like at this step:
 
     ```typescript
     const createScene = async function () {
@@ -230,13 +230,11 @@ Let's create a Speech Recognizer using the Azure Speech JavaScript SDK.
               6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
 -->
 
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
+## Check the app in the browser
+Now that the code is ready, it is time to verify that the web application works as intended. We will need to make sure that the dragon and magic circle models fade in when we say "go dragon" when the app is running.
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+1. In your VSCode terminal, make sure you are in the root folder of the web project, and run **npm start**.
+1. Once the application finishes compiling, open your browser and head to **localhost:8080**.
+1. If the app loads successfully, you will see an empty scene with a dark background. (If it does not load successfully, you will see a white screen. Make sure your createScene() function matches the snippet given in the section above, or use the Developer Console for further debugging if you wish.)
+1. Your browser might ask for your permission to allow microphone usage on this page. Make sure to click on **Allow** when the popup appears.
+1. After that, the speech recognition session starts. Say "go dragon" to your microphone and wait for the 3D models to fade in.
