@@ -12,7 +12,7 @@ There are other ways to scale data, but the nuances of these are beyond what we 
 
 There are many reasons we normalize or standardize data before training. These can be understood more easily with an example. Let’s say we want to train a model to predict whether a dog will be a successful at working in the snow. Our data are shown below as dots, and the trendline we're trying to find is shown as a solid line:
 
-![graph of dog height and rescues](../media/2-normalization-graph.png)
+![Diagram showing normalization in a graph of dog height and rescues starting at 50.](../media/2-normalization-graph.png)
 
 ### Normalization gives learning a better starting point
 
@@ -20,7 +20,7 @@ The optimal line, above, has two parameters: the intercept, which is 50, the lin
 
 If our training iterations are altering parameters by around 0.01 per iteration on average, it'll take at least 5000 iterations before the intercept is found: 50 / 0.01 = 5000 iterations. Normalization can bring this optimal intercept is closer to zero, which means we can find it much faster. For example, if we subtract the mean from our label—annual rescues—and our feature—height—the intercept is -0.5, not 50, which we can find about 100 times faster.
 
-![graph of dog height and rescues at 0](../media/2-normalization-graph-2.png)
+![Diagram showing normalization in a graph of dog height and rescues starting at 0.](../media/2-normalization-graph-2.png)
 
 There are other reasons that complex models can be very slow to train when the initial guess is far from the mark, but the solution is still the same – offset features to something closer to the initial guess.
 
@@ -32,7 +32,7 @@ For example, our initial guesses for offset and slope are both zero. If we're ch
 
 What happens if we scale our feature of height?
 
-![graph of dog height and rescues scaled](../media/2-normalization-graph-3.png)
+![Diagram showing normalization in a graph of dog height and rescues scaled.](../media/2-normalization-graph-3.png)
 
 The slope of the line is now 0.5. Pay attention to the x-axis. Our optimal intercept of -0.5 and slope of 0.5 are the same scale! It's now easy to pick a sensible step size, which is how fast the gradient descent updates parameters.
 

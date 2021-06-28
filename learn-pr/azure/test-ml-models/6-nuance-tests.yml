@@ -3,7 +3,7 @@ uid: learn.machinelearning.test-machine-learning-models.nuance-tests
 title: Nuances of test sets
 metadata:
   title: Nuances of test sets
-  description: Description :)
+  description: Conceptual unit about nuances of test sets in machine learning
   ms.date: 05/25/2021
   author: TomReidNZ
   ms.author: jasdeb

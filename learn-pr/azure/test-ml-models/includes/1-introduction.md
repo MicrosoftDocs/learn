@@ -1,6 +1,6 @@
 The way we train models is by no means a perfectly automated process. Training’s blind reliance on data can lead it to learn things that aren't helpful in the end, or to not learn things effectively that are actually useful. The following learning material walks through some simple reasons why under-fitting and over-fitting take place, and what can be done about it.
 
-## Scenario: Training Avalanche Rescue Dogs
+## Scenario: Training avalanche rescue dogs
 
 Throughout this module, we’ll be using the following example scenario to explain underfitting and overfitting. This scenario is designed to provide an example for how you might meet these concepts while programming yourself. Keep in mind that these principles generally apply to almost all types of models, not just those we work with here.
 

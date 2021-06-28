@@ -8,19 +8,19 @@ A model has been _overfit_ if it works better on the training data than it does 
 
 Overfitting can be avoided several ways. The simplest way is to have a simpler model, or to use a dataset that is a better representation of what is seen in the real-world. To understand these methods, consider a scenario where real-world data look like so:
 
-![plot graph of height and rescues](../media/4-overfitting-graph.png)
+![Diagram showing a plot graph of dog height and rescues.](../media/4-overfitting-graph.png)
 
 Let’s say we collect information about only five dogs, though, and use as our training dataset to fit a complex line. If we can do so, we can fit it very well:
 
-![graph using five dogs](../media/4-overfitting-graph-2.png)
+![Diagram showing a complex line graph using only five dogs height and rescue information.](../media/4-overfitting-graph-2.png)
 
 When this is used in the real world, though, we'll find it makes predictions that turn out to be wrong:
 
-![real world vs training data graph](../media/4-overfitting-graph-3.png)
+![Diagram showing real world vs training data in a graph of dog height and rescues.](../media/4-overfitting-graph-3.png)
 
 If we had a more representative dataset and a simpler model, the line we fit turns out to make better, although not perfect, predictions:
 
-![representative dog rescue graph](../media/4-overfitting-graph-4.png)
+![Diagram showing a representative dog height and rescue graph using real world and training data.](../media/4-overfitting-graph-4.png)
 
 A complimentary way we can avoid overfitting is to stop training after the model has learned general rules, but before the model has been overfit. This requires detecting when we're beginning to overfit our model though. We can do this using a _test dataset._
 
