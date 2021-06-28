@@ -4,8 +4,14 @@ In this exercise, we look at logging and Log Analytics.
 
 ### Tail log
 
-You can view the log of the application instance with the following command:
+In your existing Azure Cloud Shell window, view the log of the application instance with the following command:
 
+```azurecli
+az spring-cloud app logs --name customers-service
+```
+
+> [!IMPORTANT]
+> If you closed the original Azure Cloud Shell window, or want to run the commands in your local development environment, you must select your resource group and azure cloud service name:
 ```azurecli
 az spring-cloud app logs --name customers-service --resource-group <resource group name> --service <service instance name>
 ```
@@ -26,17 +32,17 @@ This command will return logs:
 By default, `az spring-cloud app log tail` prints only existing logs streamed to the app console and then exits. If you want to stream new logs, add `-f` (`--follow`):  
 
 ```azurecli
-az spring-cloud app logs --name customers-service --resource-group <resource group name> --service <service instance name> -f
+az spring-cloud app logs --name customers-service -f
 ```
 
 ## Errors and Warnings exercise
 
 We'll create an error to show the value of how developers can quickly see it, debug and find a root cause.
 
-1. Open the customers-service and follow the logs, in shell.azure.com or your local environment:
+1. Open the customers-service and follow the logs:
 
 ```azurecli
-az spring-cloud app logs --name customers-service --resource-group <resource group name> --service <service instance name> -f
+az spring-cloud app logs --name customers-service -f
 ```
 
 2. Next, in a web browser, trigger a warning with the following command:
@@ -46,8 +52,8 @@ az spring-cloud app logs --name customers-service --resource-group <resource gro
 https://<spring-cloud-name>-api-gateway.azuremicroservices.io/api/customer/owners/George
 ```
 
-The URL triggers a warning as the variable "George" cannot be cast into a number to search for a customer.
-You will now be able to see a warning similar to the below screen:
+Accessing the URL triggers a warning, as the variable "George" cannot be cast into a number to search for a customer.
+You now can see a warning similar to the below screen:
 
 ![Log Warning](../media/5-warning.jpg)
 
