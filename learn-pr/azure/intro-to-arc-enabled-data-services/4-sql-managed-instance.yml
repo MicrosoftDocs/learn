@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-arc-enabled-data-services.4-sql-managed-instance
+metadata:
+  title: Azure Arc-enabled SQL Managed Instance
+  description: This unit will describe what Azure Arc-enabled SQL Managed instance provides and why it provides a hybrid data solution for SQL applications. This unit will also compare the features and management capabilities of Azure Arc-enabled SQL Managed Instance with SQL Server and Azure SQL Managed Instance. This unit will also provide more details on the interfaces used with Azure Arc-enabled SQL Managed Instance.
+  ms.date: 06/28/2021
+  author: micrum
+  ms.author: micrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: e2e-hybrid
+title: Azure Arc-enabled SQL Managed Instance
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-sql-managed-instance.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which version of Helm is required on your management computer to connect connect a Kubernetes cluster to Azure Arc?"
+    choices:
+    - content: "1"
+      isCorrect: false
+      explanation: "The administrator needs to use Helm 3."
+    - content: "2"
+      isCorrect: false
+      explanation: "The administrator needs to use Helm 3."
+    - content: "3"
+      isCorrect: true
+      explanation: "The administrator needs to use Helm 3."
+    - content: "4"
+      isCorrect: false
+      explanation: "This version is not available yet."
+  - content: "What's the minimum version of Azure CLI required on your management computer to connect connect a Kubernetes cluster to Azure Arc?"
+    choices:
+    - content: "2.15"
+      isCorrect: true
+      explanation: "You need an Azure CLI version 2.15 or newer installed on your management computer. This is necessary to install Azure Arc enabled Kubernetes CLI extensions."
+    - content: "1.15"
+      isCorrect: false
+      explanation: "The version 2.15 of an Azure CLI is sufficient."
+    - content: "2.0"
+      isCorrect: false
+      explanation: "You need at least version 2.15 of Azure CLI."
+    - content: "3.0"
+      isCorrect: false
+      explanation: "The version 2.15 of an Azure CLI is sufficient."

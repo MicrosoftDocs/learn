@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-arc-enabled-data-services
+metadata:
+  title: Introduction to Azure Arc enabled data services
+  description: Introduction to Azure Arc enabled data services
+  ms.date: 06/28/2021
+  author: buckwoody
+  ms.author: bwoody
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: e2e-hybrid
+title: Introduction to Azure Arc enabled data services
+summary: In this module you will learn the fundamentals of hybrid computing and Azure Arc. You will also learn the basics of Azure Arc-enabled data services including the overall architecture. Then you will learn the fundamentals of the major services in Azure Arc-enabled data services, SQL Managed Instance and PostgreSQL Hyperscale.
+abstract: |
+  In this module you will:
+  - Understand how Azure Arc enabled-data services fits within the Azure Arc set of services.
+  - Learn how Azure Arc-enabled data services provides a hybrid data solution.
+  - Understand a comparison Azure Arc-enabled data services and counterparts for on-premises and Azure solutions.
+prerequisites: |
+  - Azure Fundamentals part 1 learning Path
+  - Introduction to Azure SQL from Azure SQL Fundamentals learning Path
+  - Introduction to Docker containers module in the Administer containers in Azure learning path
+  - Introduction to Kubernetes module in the Administer containers in Azure learning path
+  - Working knowledge of SQL Server
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- intermediate
+roles:
+- administrator
+- database-administrator
+- data-engineer
+- developer
+- devops-engineer
+- higher-ed-educator
+- solution-architect
+- student
+- technology-manager
+products:
+- azure
+units:
+- learn.azure.intro-to-arc-enabled-data-services.1-introduction
+- learn.azure.intro-to-arc-enabled-data-services.2-hybrid-computing
+- learn.azure.intro-to-arc-enabled-data-services.3-fundamentals
+- learn.azure.intro-to-arc-enabled-data-services.4-sql-managed-instance
+- learn.azure.intro-to-arc-enabled-data-services.5-postgresql-hyperscale
+- learn.azure.intro-to-arc-enabled-data-services.6-summary
+badge:
+  uid: learn.azure.intro-to-arc-enabled-data-services.badge

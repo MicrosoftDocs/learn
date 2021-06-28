@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-arc-enabled-data-services.5-postgresql-hyperscale
+metadata:
+  title: Azure Arc-enabled PostgreSQL Hyperscale
+  description: This unit will describe what Azure Arc-enabled PostgreSQL Hyperscale provides and why it provides a hybrid data solution for PostgreSQL applications. This unit will also compare the features and management capabilities of Azure Arc-enabled PostgreSQL Hyperscale with PostgreSQL and Azure Database for PostgreSQL. This unit will also provide more details on the interfaces used with Azure Arc-enabled PostgreSQL Hyperscale.
+  ms.date: 06/28/2021
+  author: buckwoody
+  ms.author: bwoody
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: e2e-hybrid
+title: Azure Arc-enabled PostgreSQL Hyperscale
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-postgresql-hyperscale.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which Kubernetes component is used to implement the Azure Policy for Kubernetes agents"
+    choices:
+    - content: "service"
+      isCorrect: false
+      explanation: "A service provides internal or external inbound connectivity, not applicable in this case."
+    - content: "admission controller"
+      isCorrect: true
+      explanation: "Azure Policy for Kubernetes takes the form of an extension of Gatekeeper, which is an open-source admission controller Kubernetes-based implementation of OPA."
+    - content: "ingress controller"
+      isCorrect: false
+      explanation: "An ingress controller provides inbound connectivity, not applicable in this case."
+    - content: "namespace"
+      isCorrect: false
+      explanation: "A namespace is not capable of running an agent."
+  - content: "Which of the following types of Kubernetes lacks support by Azure Policy"
+    choices:
+    - content: "Azure Kubernetes Service running on Azure Stack HCI"
+      isCorrect: false
+      explanation: "This is supported."
+    - content: "Azure Arc enabled Kubernetes"
+      isCorrect: false
+      explanation: "This is supported."
+    - content: "AKS Engine"
+      isCorrect: false
+      explanation: "This is supported."
+    - content: "OpenShift"
+      isCorrect: true
+      explanation: "This is unsupported directly, although it is supported if the cluster has the Azure Arc enabled Kubernetes installed."
