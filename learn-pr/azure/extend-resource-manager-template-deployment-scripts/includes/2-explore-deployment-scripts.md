@@ -37,7 +37,7 @@ Two `deploymentScripts`-specific values are required:
 
   ::: zone pivot="bicepcli,biceppowershell"
 
-  :::code language="plaintext" source="code/2-example-template.bicep" range="1-10,21" highlight="4" :::
+  :::code language="bicep" source="code/2-example-template.bicep" range="1-10,21" highlight="4" :::
 
   ::: zone-end
 
@@ -51,7 +51,7 @@ Two `deploymentScripts`-specific values are required:
 
   ::: zone pivot="bicepcli,biceppowershell"
 
-  :::code language="plaintext" source="code/2-example-template.bicep" range="1-10,21" highlight="5-10" :::
+  :::code language="bicep" source="code/2-example-template.bicep" range="1-10,21" highlight="5-10" :::
 
   ::: zone-end
 
@@ -65,7 +65,7 @@ After you set those elements, you can move into the `properties` section of the 
 
 ::: zone pivot="bicepcli,biceppowershell"
 
-:::code language="plaintext" source="code/2-example-template.bicep" range="11, 13-18, 20" :::
+:::code language="bicep" source="code/2-example-template.bicep" range="11, 13-18, 20" :::
 
 Notice that the `scriptContent` uses a multi-line string. In Bicep, you can specify a multi-line string by using three quotes together (`'''`) before and after your string.
 
@@ -83,7 +83,7 @@ For a PowerShell script, you pass outputs back by creating a variable named `$De
 
 ::: zone pivot="bicepcli,biceppowershell"
 
-:::code language="plaintext" source="code/2-example-template.bicep" range="14-17" highlight="3-4" :::
+:::code language="bicep" source="code/2-example-template.bicep" range="14-17" highlight="3-4" :::
 
 ::: zone-end
 
@@ -102,7 +102,7 @@ The retention interval is how long the results should be kept if you want to kee
 
   ::: zone pivot="bicepcli,biceppowershell"
 
-  :::code language="plaintext" source="code/2-example-template.bicep" range="11-20" highlight="9" :::
+  :::code language="bicep" source="code/2-example-template.bicep" range="11-20" highlight="9" :::
 
   ::: zone-end
 
@@ -116,7 +116,7 @@ Our full template would look something like:
 
   ::: zone pivot="bicepcli,biceppowershell"
 
-  :::code language="plaintext" source="code/2-example-template.bicep" :::
+  :::code language="bicep" source="code/2-example-template.bicep" :::
 
   ::: zone-end
 
