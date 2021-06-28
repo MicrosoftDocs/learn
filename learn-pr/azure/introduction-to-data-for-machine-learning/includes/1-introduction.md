@@ -1,4 +1,4 @@
-Machine learning’s predictive power comes from the fact that it is shaped by data. To make effective models, it is important that you understand what data you are working with.
+Machine learning’s predictive power comes from the fact that it's shaped by data. To make effective models, it's important that you understand what data you're working with.
 
 Here, we explore how data can be categorized, stored, and interpreted both by humans and by computers. We explore what makes a good dataset, and how to fix issues in data that we have. We also practice exploring new data and show how thinking about a dataset more deeply can help to build better predictive models.
 

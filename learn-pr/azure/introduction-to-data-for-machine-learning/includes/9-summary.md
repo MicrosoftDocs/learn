@@ -17,10 +17,10 @@ We learned that a dataset it helpful if it:
 * is complete,
 * is a good representation of the population (real world).
 
-If data are not complete, we can take steps to make sure that this does not cause big issues. When doing so, we need to be careful not to introduce new issues, such as making data no longer representative.
+If data aren't complete, we can take steps to make sure that incomplete data doesn't cause big issues. When doing so, we need to be careful not to introduce new issues, such as making data no longer representative.
 
 ## Thinking about Data
 
-We showed how visualizing data can help to get an understanding of what might be useful in a model. Using different types of graphs, colours, and so on can be fun and make complex information much more intuitive.
+We showed how visualizing data can help to get an understanding of what might be useful in a model. Using different types of graphs, colors, and so on, can be fun and make complex information much more intuitive.
 
-We learned that understanding our data lets us make better decisions about our models. In the final exercise, we improved our model by exploring how many cabins were on the ship and taking time to consider why this information was helpful but could be improved through simplification into nine Deck labels.
+We learned that understanding our data lets us make better decisions about our models. In the final exercise, we improved our model by exploring how many cabins were on the ship and taking the time to consider why this information was helpful. Yet, overall found the could be improved through simplification into nine Deck labels.

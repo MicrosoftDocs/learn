@@ -46,7 +46,7 @@ quiz:
     - content: "A population is all possible data we care about. A sample is the subset of that data which we actually have on hand."
       isCorrect: true
       explanation: "Correct."
-  - content: 'You have a model that is not performing well. Which of these will definitely **not** help improve its performance?'
+  - content: 'You have a model that isn't performing well. Which of these will definitely **not** help improve its performance?'
     choices:
     - content: "Adding additional samples (rows)"
       isCorrect: false
@@ -54,6 +54,6 @@ quiz:
     - content: "Adding a small number of features (columns) that you know are related to what the model is trying to predict"
       isCorrect: false
       explanation: "Incorrect. So long as you have enough rows of data, adding relevant features is likely to help your model train."
-    - content: "Adding a large number of features that you know are not related to what the model is trying to predict."
+    - content: "Adding a large number of features that you know aren't related to what the model is trying to predict."
       isCorrect: true
-      explanation: "Correct. Adding additional features that are not relevant will probably harm its performance"      
+      explanation: "Correct. Adding additional features that aren't relevant will probably harm its performance"      
