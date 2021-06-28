@@ -6,8 +6,8 @@ metadata:
   title: Introduction to cybersecurity
   description: Learn mitigation strategies to counter common cyber attacks
   ms.date: 2021-06-25
-  author: LBN-commits
-  ms.author: v-lanai
+  author: cecilyn
+  ms.author: tijon
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 8
 content: |
