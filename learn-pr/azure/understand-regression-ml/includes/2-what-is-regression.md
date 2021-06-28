@@ -2,9 +2,9 @@ Regression is a simple, common, and highly useful data analysis technique, often
 
 ## Simple linear regression
 
-Simple linear regression models a linear relationship between a single feature and a--usually continuous--label, allowing the label to be predicted by the feature. Visually, it might look something like this:
+Simple linear regression models a linear relationship between a single feature and a usually continuous label, allowing the label to be predicted by the feature. Visually, it might look something like this:
 
-![simple linear regression graph.](../media/2-simple-linear-regression.png)
+![Diagram of a simple linear regression graph on the relationship between age and body temperature.](../media/2-simple-linear-regression.png)
 
 Simple linear regression has two parameters: an intercept (c) which indicates the value that the label is when the feature is set to zero, and a slope (m) which indicates how much the label will increase for each 1-point increase in the feature.
 
@@ -20,7 +20,7 @@ temperature=m*age+c
 
 And need to find the values of "m" and "c" during the fitting procedure. If we found m = 0.5 and c = 37, we might visualize it like this:
 
-![simple linear regression graph.2](../media/2-linear-graph.png)
+![Diagram showing a simple linear regression graph, of the relationship between age and body temperature with a sharper line.](../media/2-linear-graph.png)
 
 This would mean that every year of age is associated with body temperature increase of 0.5°C, with a starting point of 37°C.
 
@@ -28,11 +28,11 @@ This would mean that every year of age is associated with body temperature incre
 
 We normally use existing libraries to fit regression models for us. Regression typically aims to find the line that produces the least amount of error, where error here means the difference between the actual data point value, and the predicted value. For example, in the image below, the black line indicates the error between the prediction, the red line, and one actual value: the dot.
 
-![fitting linear regression graph](../media/2-fitting-linear-regression.png)
+![Diagram showing fitting a linear regression graph with plot points and a black line to indicate error.](../media/2-fitting-linear-regression.png)
 
 By looking at these two points on a y-axis, we can see that the prediction was 39.5, but the actual value was 41.
 
-![fitting linear regression graph.2](../media/2-fitting-linear-regression.2.png)
+![Diagram showing fitting a linear regression graph with plot points and a dotted black line to measure error.](../media/2-fitting-linear-regression.2.png)
 
 So, the model was wrong by 1.5 for this datapoint.
 

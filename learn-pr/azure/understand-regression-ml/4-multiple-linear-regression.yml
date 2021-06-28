@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.machinelearning.understand-regression-machine-learning.multiple-linear-regression
-title: Multiple linear regression and R2
+title: Multiple linear regression and R<sup>2</sup>
 metadata:
-  title: Multiple linear regression and R2
-  description: Description :)
+  title: Multiple linear regression and R<sup>2</sup>
+  description: Conceptual unit about multiple linear regression and R-squared in machine learning
   ms.date: 05/25/2021
   author: TomReidNZ
   ms.author: jasdeb
