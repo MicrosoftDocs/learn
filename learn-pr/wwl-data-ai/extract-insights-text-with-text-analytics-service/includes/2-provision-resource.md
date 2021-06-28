@@ -6,7 +6,8 @@ The **Text Analytics** service is designed to help you extract information from 
 - *Named entity recognition* - detecting references to entities, including people, locations, time periods, organizations, and more.
 - *Entity linking* - identifying specific entities by providing reference links to Wikipedia articles.
 
-![A Text Analytics resource performing language detection, key phrase extraction, sentiment analysis, named entity recognition, and entity linking](../media/text-analytics-resource.png)
+> [!div class="mx-imgBorder"]
+> ![A Text Analytics resource performing language detection, key phrase extraction, sentiment analysis, named entity recognition, and entity linking](../media/text-analytics-resource.png)
 
 ## Azure resources for Text Analytics
 

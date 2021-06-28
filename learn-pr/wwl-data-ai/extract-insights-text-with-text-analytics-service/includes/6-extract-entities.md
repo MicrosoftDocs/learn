@@ -8,7 +8,8 @@ Named Entity Recognition identifies entities that are mentioned in the text. Ent
 - Email
 - URL
 
-> **Note**: For a full list of categories, see the [Text Analytics documentation](/azure/cognitive-services/text-analytics/named-entity-types).
+> [!Note]
+> For a full list of categories, see the [Text Analytics documentation](/azure/cognitive-services/text-analytics/named-entity-types).
 
 Input for entity recognition is similar to input for other text Analytics functions:
 
