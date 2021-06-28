@@ -26,7 +26,7 @@ The two variants are:
 - *Denial of service (DoS)*– An attack where a computer sends many requests to a network service to overwhelm the target service.
 - *Distributed denial of service (DDoS)*- A DoS attack using multiple computers distributed in numerous locations.
 
-#### Social engineering exploitations
+#### Social engineering exploitation
 
 Social engineering impersonation is the process of an unauthorized person gaining the trust of an authorized person for nefarious purposes. When their target is an employee of a company, they often masquerade as upper management or technical support or a trusted group member. Social engineering exploits the human element, typically the weakest link in security.
 
