@@ -1,27 +1,27 @@
-The Azure Speech JavaScript SDK allow developers to integrate Azure Speech services into their applications more efficiently.
+The Azure Speech JavaScript SDK allows developers to integrate Azure Speech services into their applications more efficiently.
 
 In the amusement park application, we need to use a speech-to-text service to recognize a magical spell. Once the spell is recognized, the application needs to render the dragon 3D model to create the experience of "summoning the dragon."
 
 Here, you will use the Azure Speech JavaScript SDK to integrate the Azure Speech-to-text service into the amusement park application.
 
-## Clone the Github Repository
+## Clone the GitHub Repository
 
-Recall that your teammate has already set up a Babylon.js project with all of the necessary assets imported into the Babylon.js scene. You have to clone the repository that contains their work so far.
+Recall that your teammate has already set up a Babylon.js project with all of the necessary assets imported into the Babylon.js scene. Let's clone the repository that contains their work so far.
 
-1. Goto [this Github repository](https://github.com/JING1201/learn-magic-template) and select the **Code** dropdown.
+1. Goto [this GitHub repository](https://github.com/JING1201/learn-magic-template) and select the **Code** dropdown.
 
     (screenshot)
 1. Copy the **URL of the repository** under the **HTTPS** tab.
 1. Open Visual Studio Code in a new window.
 1. Select the Settings button in the bottom left of the window, and then select **Command Palette** from the options.
 1. After the Command Palette pops up, type in "git" and select the **Git: Clone** command.
-1. Paste the URL of the Github repository.
+1. Paste the URL of the GitHub repository.
 1. Select the folder where you would like to save the repository. The root folder of the repository becomes a subdirectory in the folder you select.
 1. Select open the repository after cloning finishes.
 
 ## Install dependencies
 
-You might have noticed that this project is organized to be used with *webpack*, a Javascript module bundler. All of the required dependencies are listed in the *package.json* file. Let's use *npm* to install all of them.
+You might have noticed that this project is organized to be used with *webpack*, a JavaScript module bundler. All of the required dependencies are listed in the *package.json* file. Let's use *npm* to install all of them.
 
 1. Select **Terminal** in the menu of Visual Studio Code, and then select **New Terminal** to create a new terminal.
 1. Within the terminal, make sure that you are in the root folder of the repository.
@@ -30,9 +30,9 @@ You might have noticed that this project is organized to be used with *webpack*,
 
 ## Import dependencies
 
-The next thing that you might have noticed is that the source files in this repository have the *.ts* extension, which means that the files are written in TypeScript instead of Javascript. While TypeScript and JavaScript are very similar in nature, TypeScript requires types to be clear for every variable and function parameters.
+The next thing that you might have noticed is that the source files in this repository have the *.ts* extension, which means that the files are written in TypeScript instead of JavaScript. While TypeScript and JavaScript are similar in nature, TypeScript requires types to be clearly defined for function parameters.
 
-As a result, you'll need to import every class that is used in a variable or a function parameter:
+As a result, you'll need to import every class that will be used in a variable or a function parameter:
 
 1. Navigate to **src/index.ts** in your VSCode window.
 1. Add this import statement at the top of the file:
@@ -79,9 +79,13 @@ Let's create a Speech Recognizer using the Azure Speech JavaScript SDK.
     const recognizer = new SpeechRecognizer(speechConfig, audioConfig);
     ```
 
-    Make sure to assign your Azure Speech **subscription key** and **location** to their corresponding variables.
+    Make sure to replace **YOUR_AZURE_SPEECH_SUBSCRIPTION_KEY** and **YOUR_AZURE_SPEECH_INSTANCE_LOCATION** with your Azure Speech instance's subscription key and location, which you obtained in the last exercise.
 
-1. Add Phrase List support and include the spell in the list. Here, we will use "go dragon" as the spell that we want the users to say.
+> [!NOTE]
+> It is not the best practice to include secrets or keys in client side code due to security concerns.
+> In this exercise, we store the keys as constants in the client side code for convenience, as the keys become invalid after the sandbox is deactivated. However, generally, you should put the values of the keys in a backend service for any application deployed to the public web.
+
+1. Add Phrase List support and include the text representation of the spell in the list. Here, we will use "go dragon" as the spell that we want the users to say.
 
     ```typescript
     const spell = "go dragon";
@@ -125,7 +129,7 @@ Let's create a Speech Recognizer using the Azure Speech JavaScript SDK.
     };
     ```
 
-1. In addition to the dragon 3D model, we will also render a magic circle 3D model for better visual effect. The 3D models for the dragon and the magic circle are stored in the *env* object. Let's add the code to have the magic circle and the dragon models fade in, one after another. Also, let's stop the speech recognition as the dragon has been summoned.
+1. In addition to the dragon 3D model, we'll also render a magic circle 3D model for better visual effect. The 3D models for the dragon and the magic circle are stored in the *env* object. Let's add the code to have the magic circle and the dragon models fade in, one after another. Also, let's stop the speech recognition after the dragon has been summoned.
 
     ```typescript
     recognizer.recognized = async (s: Recognizer, e: SpeechRecognitionEventArgs) => {
@@ -189,10 +193,11 @@ Let's create a Speech Recognizer using the Azure Speech JavaScript SDK.
 
 ## Check the app in the browser
 
-Now that the code is ready, it is time to verify that the web application works as intended. We will need to make sure that the dragon and magic circle models fade in when we say "go dragon" when the app is running.
+Now that the code is ready, it is time to verify that the web application works as intended. We will need to make sure that the dragon and magic circle models fade in when users say "go dragon" to the application.
 
 1. In your VSCode terminal, make sure you are in the root folder of the web project, and run **npm start**.
 1. Once the application finishes compiling, open your browser and head to **localhost:8080**.
-1. If the app loads successfully, you will see an empty scene with a dark background. (If it does not load successfully, you will see a white screen. Make sure your createScene() function matches the snippet given in the section above, or use the Developer Console for further debugging if you wish.)
-1. Your browser might ask for your permission to allow microphone usage on this page. Make sure to click on **Allow** when the popup appears.
+1. If the app loads successfully, you will see an empty scene with a dark background. (If it does not load successfully, you will see a white screen. Make sure your createScene() function matches the snippet given in the section above. Use the Developer Console for further debugging if you wish.)
+1. 
+1. Your browser might ask for your permission to allow microphone usage on this page. Make sure to select **Allow** when the popup appears.
 1. After that, the speech recognition session starts. Say "go dragon" to your microphone and wait for the 3D models to fade in.
