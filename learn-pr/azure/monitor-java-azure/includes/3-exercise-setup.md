@@ -16,10 +16,12 @@ The PetClinic application is decomposed into four core microservices. All of the
 
 ## Set up the  sample application
 
-Open https://shell.azure.com in a browser, and run the following to clone the sample repository and open the build in Azure editor:
+In a web browser, open https://shell.azure.com and select "Bash" mode in the top right hand side.
+Next, run the following command to clone the sample repository and open the build in the Azure editor:
 
    ```bash
    git clone https://github.com/roryp/azure-spring-cloud-reference-architecture.git
+   cd azure-spring-cloud-reference-architecture
    cd petclinic
    code deployPetClinicApp.sh
    ```
