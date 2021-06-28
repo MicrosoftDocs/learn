@@ -9,11 +9,11 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build an IoT service for your cloud-native apps by using IoT Central
-summary: Build an IoT service.
+summary: This module describes how to extend your cloud-native application to provide IoT functionality by integrating its components with Microsoft Azure IoT services and using Cosmos DB to provide a persistent data store.
 abstract: |
   In this module, you'll:
   - Describe the architecture and components of IoT services.
-  - Describe the characteristics and functionality of Microsoft Azure Cosmos DB.
+  - Describe the characteristics and functionality of Azure Cosmos DB.
   - Integrate Azure data stores with IoT pipelines.
   - Implement Azure Cosmos DB for processing telemetry data.
   - Analyze and manage telemetry data.
