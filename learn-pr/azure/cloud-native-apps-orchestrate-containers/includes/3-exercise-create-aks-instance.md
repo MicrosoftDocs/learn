@@ -147,7 +147,7 @@ In this section, we'll create an Azure Kubernetes Service instance in the Azure 
     CLUSTERNAME={cluster-name}
     ```
 
-    ## Build the management app Docker Image
+    ### Build the management app Docker Image
 
     While AKS gets set up, you can upload the management webapp to the Container Registry.
 

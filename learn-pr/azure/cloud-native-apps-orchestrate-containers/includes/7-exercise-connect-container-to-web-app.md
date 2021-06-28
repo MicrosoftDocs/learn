@@ -70,7 +70,7 @@ In this unit, you will:
 
     There could be a small delay between the creation of the ingress and the creation of the zone record. Let's load the webapp while this happens.
 
-    ## Use a Docker image to create the webapp
+    ### Use a Docker image to create the webapp
 
     While AKS gets sets up, you can start to use the Container Registry to deploy the management webapp.
 
@@ -89,7 +89,7 @@ In this unit, you will:
 
     You're now ready to create your web app.
 
-    ## Review the ingress
+    ### Review the ingress
 
 1. In the Cloud Shell, run the ` kubectl get ingress` command to check if the deployment was successful.
 
@@ -145,7 +145,7 @@ In this unit, you will:
 
     :::image type="content" source="../media/deployment.png" alt-text="Deployment test.":::
 
-    ## Create a web app
+    ### Create a web app
 
 1. Go back to the [Azure portal](https://portal.azure.com/) home page, and select **Create a resource**.
 

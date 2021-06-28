@@ -46,7 +46,7 @@ In this unit, you will:
     az acr list --resource-group $RESOURCEGROUP --query "[].{acrLoginServer:loginServer}" --output table
     ```
 
-    ## Deploy your container to AKS
+    ### Deploy your container to AKS
 
     You'll be using a deployment manifest file to deploy your application. The manifest file allows you to define what type of resource you want to deploy and all the details associated with the workload.
 
@@ -88,7 +88,7 @@ In this unit, you will:
 
 1. **Save the manifest file** and close the editor.
 
-   ## Apply the manifest
+   ### Apply the manifest
 
 1. In Cloud Shell, run the `kubectl apply` command to submit the deployment manifest to your cluster.
 
@@ -134,7 +134,7 @@ In this unit, you will:
     cna-express-7c58c5f699-r79mv       1/1     Running   0          63s
     ```
 
-    ## Prepare AKS for use
+    ### Prepare AKS for use
 
     It can take some time to fully deploy Kubuernetes clusters and access them. You'll save time by enabling the Application gateway for the cluster now, as it can take up to 15 minutes to be fully functional.
 
@@ -151,7 +151,7 @@ In this unit, you will:
 
     You set your cluster up for deployment by configuring the deployment manifest file, and enabling the Application gateway. In the next unit, we'll review the ingress controller you just enabled.
 
-    ## Review the service manifest
+    ### Review the service manifest
 
     Like all resources, services also have manifest files that describe how they should behave. Let's create a new service description.
 
@@ -185,7 +185,7 @@ In this unit, you will:
 
 1. Close the editor.
 
-    ## Deploy the service
+    ### Deploy the service
 
 1. In Cloud Shell, run the `kubectl apply` command to submit the service manifest to your cluster.
 
