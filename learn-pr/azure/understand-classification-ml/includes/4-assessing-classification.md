@@ -6,7 +6,7 @@ Remember that during training, we calculate how badly a model performs, and call
 
 ## Cost functions for classification
 
-Classification models be judged either on their output probabilities (such as 40% chance of an avalanche) or final labels (‘no avalanche’ or ‘avalanche’). Using the probabilities can be advantageous during training because slight changes in the model will be seen in changes in probabilities, even if they are not enough to change the final decision. Using the final labels for a cost function is more useful if we want to estimate the real-world performance of our model (i.e. on the test set). This is because, for real world use, we will be using the final labels, not the probabilities.
+Classification models be judged either on their output probabilities (such as 40% chance of an avalanche) or final labels (‘no avalanche’ or ‘avalanche’). Using the probabilities can be advantageous during training because slight changes in the model will be seen in changes in probabilities, even if they aren't enough to change the final decision. Using the final labels for a cost function is more useful if we want to estimate the real-world performance of our model (i.e. on the test set). This is because, for real world use, we'll be using the final labels, not the probabilities.
 
 ## Log loss
 
@@ -14,7 +14,7 @@ Log loss is one of the most popular cost functions for simple classification. Lo
 
 ![log loss example graph](../media/4-log-loss-graph.png)
 
-On the x-axis are possible model outputs – probabilities from 0 to 1 – and on the y axis is the cost. If a model is quite confident the correct response is 0 (for example predicting 0.1), the cost is low because in this instance the correct response is 0. If the model is confidently predicting the outcome wrongly (for example, predicting 0.9) then cost becomes very high. In fact, at x=1, the cost is so high that we have cropped the x-axis here to 0.999 to keep the graph readable.
+On the x-axis are possible model outputs – probabilities from 0 to 1 – and on the y axis is the cost. If a model is quite confident the correct response is 0 (for example predicting 0.1), the cost is low because in this instance the correct response is 0. If the model is confidently predicting the outcome wrongly (for example, predicting 0.9) then cost becomes very high. In fact, at x=1, the cost is so high that we've cropped the x-axis here to 0.999 to keep the graph readable.
 
 ## Why not MSE?
 
@@ -28,4 +28,4 @@ Having higher cost in this way helps the model learn faster because the slope of
 
 Using a single cost functions for (human) assessment of the model is always limited because it doesn’t tell you what kind of mistakes your model is making. For example, consider our avalanche prediction scenario. A high log loss value could mean that the model is repeatedly predicting avalanches when there are none, or that it repeatedly failing to predict avalanches that then happen.
 
-To understand our models better, it can be easier to use more than one number to assess if they work well. This is a larger topic we cover in other learning material though we will touch on in the following exercises.
+To understand our models better, it can be easier to use more than one number to assess if they work well. This is a larger topic we cover in other learning material though we'll touch on in the following exercises.

@@ -37,7 +37,7 @@ quiz:
       explanation: "Incorrect."
   - content: 'What is one reason why logistic regression uses log-loss rather than a more intuitive cost function?'
     choices:
-    - content: "Log-loss is stricter about model errors, even if they are close to correct"
+    - content: "Log-loss is stricter about model errors, even if they're close to correct"
       isCorrect: true
       explanation: "Correct."
     - content: "It is the only way to calculate error for categorical labels"
