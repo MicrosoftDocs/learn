@@ -3,7 +3,7 @@
 :::row:::
 :::column span="3":::
 
-Containers are loosely isolated environments that can run software packages. They’re usually a key component of Cloud Native Apps, as they provide a reliable, separated environment that works the same on any machine. Containers are often referred to as ”Docker containers”, named after the most popular tool for creating and managing them.
+Containers are loosely isolated environments that can run software packages. They’re usually a key component of cloud-native apps, as they provide a reliable, separated environment that works the same on any machine. Containers are often referred to as ”Docker containers”, named after the most popular tool for creating and managing them.
 
 Each container is self-contained, with its own code, data, and dependencies. One of the strengths of containerization is that you don't have to configure hardware and spend time installing operating systems, virtual machines, and software to host a deployment.
 

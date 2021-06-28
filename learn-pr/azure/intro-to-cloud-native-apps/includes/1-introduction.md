@@ -1,12 +1,12 @@
-Cloud Native Apps represent a modern approach to app development, where software systems are designed with cloud technologies in mind. Unlike apps that were originally designed to run on premises, Cloud Native Apps can take full advantage of the many services Azure has to offer.
+cloud-native apps represent a modern approach to app development, where software systems are designed with cloud technologies in mind. Unlike apps that were originally designed to run on premises, cloud-native apps can take full advantage of the many services Azure has to offer.
 
-When designing Cloud Native Apps, many cloud architects choose to leverage Open-Source Software (OSS) like Kubernetes and Docker, but turn to proprietary offerings like Cosmos DB when the benefit is overwhelming. Because of this, Cloud Native Apps make the end-to-end process of building an application easier, with a focus on **architectural modularity**, rather than monolithic, all-in-one applications. You can utilize the technologies that suit your skillset and situation, without being locked into technology choices.
+When designing cloud-native apps, many cloud architects choose to leverage Open-Source Software (OSS) like Kubernetes and Docker, but turn to proprietary offerings like Cosmos DB when the benefit is overwhelming. Because of this, cloud-native apps make the end-to-end process of building an application easier, with a focus on **architectural modularity**, rather than monolithic, all-in-one applications. You can utilize the technologies that suit your skillset and situation, without being locked into technology choices.
 
 ## Scenario: Smart fridges, smarter service, at scale
 
 Suppose you work for Adatum Corporation, a manufacturer of home appliances, where you lead a small development team and you've been tasked with building an app for smart fridges.
 
-We could, for example, start with creating a small inventory management app for the fridges, so businesses can know what needs to be restocked, or potentially, have items reordered automatically. It’s the nature of Cloud Native Apps to have loosely coupled functionality, so we can be more agile in our design and don't need to predict future requirements. Rather, we can extend the app if it becomes necessary. Later, we can add functionality to the app, such as connecting to fridge telemetry and onboard sensors.
+We could, for example, start with creating a small inventory management app for the fridges, so businesses can know what needs to be restocked, or potentially, have items reordered automatically. It’s the nature of cloud-native apps to have loosely coupled functionality, so we can be more agile in our design and don't need to predict future requirements. Rather, we can extend the app if it becomes necessary. Later, we can add functionality to the app, such as connecting to fridge telemetry and onboard sensors.
 
 ## Prerequisites
 

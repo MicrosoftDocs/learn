@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-cloud-native-apps.2-what-are-cloud-native-apps
-title: What are Cloud Native Apps? 
+title: What are cloud-native apps? 
 metadata:
-  title: What are Cloud Native Apps?
-  description: An overview of Cloud Native Apps
+  title: What are cloud-native apps?
+  description: An overview of cloud-native apps
   ms.date: 10/23/2020
   author: tomreidnz
   ms.author: jasdeb
