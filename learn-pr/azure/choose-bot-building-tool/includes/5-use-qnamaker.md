@@ -26,7 +26,7 @@ One of your company's requirements is that the bot can be hosted on the company 
 
 ### Where do you perform development?
 
-You can download a QnA Maker bot's source code and modify it using an IDE. QnA Maker bots support C# source code, which enables your development team to extend bot functionality in many ways. They can incorporate the C# libraries that the criteria require. The bot's code-based design also enables your developers to integrate your bot with the REST-enabled FAQ application. This fulfills another criteria.
+You can download a QnA Maker bot's source code and modify it using an IDE. QnA Maker bots support C# source code. Your development team can use C# to extend bot functionality in many ways. For example, they can incorporate the C# libraries that the criteria require. The bot's code-based design also enables your developers to integrate your bot with the REST-enabled FAQ application. This fulfills another criteria.
 
 ## Why QnA Maker isn't a good choice
 
