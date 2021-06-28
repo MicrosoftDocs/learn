@@ -32,8 +32,8 @@ Azure Cosmos DB offers many capabilities that make it particularly suitable for 
 
 - Partitioning. Azure Cosmos DB automatically partitions containers by using the logical partition key that you specify. Partitioning is the core mechanism behind scalability and resiliency of Azure Cosmos DB. By choosing the partition key, you can accommodate IoT scenarios that require the storing and processing of large volumes of device and telemetry data.
 
-> [!NOTE]
-> A logical partition can't exceed 20 GB in size.
+  > [!NOTE]
+  > A logical partition can't exceed 20 GB in size.
 
 - Time to Live (TTL). With TTL, Azure Cosmos DB provides the ability to automatically delete items after a period that you designate. This simplifies data lifecycle management and lowers cost, because TTL-based deletions don't count towards the RU usage.
 - Change feed. Azure Cosmos DB uses change feed to automatically trigger an action following changes to collection items. This simplifies implementing the common IoT design pattern, which relies on data changes to trigger a corresponding action.
