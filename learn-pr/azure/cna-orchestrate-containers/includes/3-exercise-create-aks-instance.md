@@ -111,7 +111,7 @@ In this section, we'll create an Azure Kubernetes Service instance in the Azure 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
 1. Select **Containers** >  **Kubernetes Service**.
-    :::image type="content" source="../media/3d-select-aks.png" alt-text="Select AKS in Azure portal.":::
+    :::image type="content" source="../media/3-d-select-aks.png" alt-text="Select AKS in Azure portal.":::
 
 1. On the **Basics** tab, enter the following information:  
 
