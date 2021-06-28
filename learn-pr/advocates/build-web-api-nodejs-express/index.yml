@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.build-web-api-nodejs-express
 metadata:
-  title: Build a web API with Node.js and Express 
-  description: Use Express for Node.js to build RESTful APIs. Create and configure middleware to add things like logging and authentication/authorization. Use JavaScript/TypeScript with Express to create a Node.js web server with Visual Studio Code.
+  title: Build a web API with Node.js and Express using JavaScript
+  description: Use Express for Node.js to build RESTful APIs. Create and configure middleware to add things like logging and authentication/authorization among other web development topics. Use JavaScript with Express to create a Node.js web server with Visual Studio Code.
   ms.date: 02/06/2020
   author: "softchris"
   ms.author: "chnoring"
