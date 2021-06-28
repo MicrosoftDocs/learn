@@ -32,4 +32,4 @@ AKS handles Kubernetes for you, by deploying, managing, and scaling Kubernetes c
 
 In our scenario, we’ll use AKS to host containers in the cloud. The smart fridges will send REST messages to the cloud, where it will be received by AKS. AKS will route the messages to a container.
 
-The container will run a Node.js program that will then route messages to a management webapp. With the flexibility of AKS and a Cloud-Native approach, it will be easy to adjust and connect the Node.js container to a database.
+The container will run a Node.js program that will then route messages to a management webapp. With the flexibility of AKS and a cloud-native approach, it will be easy to adjust and connect the Node.js container to a database.

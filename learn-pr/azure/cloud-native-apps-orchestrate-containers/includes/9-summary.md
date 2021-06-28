@@ -1,4 +1,4 @@
-In this module, you learned about orchestrating containers for Cloud Native Apps. You created a container registry, a Kubernetes cluster with AKS, and deployed a docker container to the cluster. Then, you created manifest files to configure the cluster and allow API communication. All this, while you also learned about services, containers, and other cloud services and concepts.
+In this module, you learned about orchestrating containers for cloud-native apps. You created a container registry, a Kubernetes cluster with AKS, and deployed a docker container to the cluster. Then, you created manifest files to configure the cluster and allow API communication. All this, while you also learned about services, containers, and other cloud services and concepts.
 
 This module is designed to give you an overview of how to set up a scalable Cloud Native App using AKS. For more in-depth knowledge and tutorials on containers, Kubernetes, and AKS, you can visit the resources below.
 
