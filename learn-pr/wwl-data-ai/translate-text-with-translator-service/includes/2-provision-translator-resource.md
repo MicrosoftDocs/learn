@@ -4,7 +4,8 @@ The **Translator** service provides a multilingual text translation API that you
 - One-to-many translation
 - Script transliteration (converting text from its native script to an alternative script)
 
-![A Translator resource performing language detection, one-to-many translation and transliteration](../media/translator-resource.png)
+> [!div class="mx-imgBorder"]
+> ![A Translator resource performing language detection, one-to-many translation and transliteration](../media/translator-resource.png)
 
 ## Azure resources for Translator
 
