@@ -2,7 +2,7 @@ Data is just another word for collected information. There are lots of kinds of 
 
 There are also lots of ways we can categorize data. To work in machine learning we need to understand the kind of data, and how it's being stored digitally.
 
-## Continuous, Ordinal, and Categorical data
+## Continuous, ordinal, and categorical data
 
 When we work with data, sometimes we need to be aware of what kind of thing it represents. This awareness can help us to pick the right machine learning model or organize our data in particular ways.
 
@@ -30,7 +30,7 @@ The exact terms and implementation for these concepts varies from language to la
 
 It’s notable that in some circumstances two different datatypes offer equivalent functionality. For example, true/false values can often be encoded as Booleans (true or false), strings (‘y’, or ‘n’), integers (0 or 1) or even floating-point numbers (0.0 or 1.0).
 
-## Derived Datatypes
+## Derived datatypes
 
 By now you’ve seen there are datatypes that are more impressive than these! Computers can store dates, images, 3D models, and so on. These are called derived datatypes and are constructed by one or more primitive types.
 

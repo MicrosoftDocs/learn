@@ -30,14 +30,14 @@ Data entry errors mean data was collected correctly but entered into a spreadshe
 
 ## What is complete data?
 
-A dataset that is complete has no missing data. Data can be missing in two ways. Consider that we record the heights and weights of Huey, Dewey, and Louie:
+A dataset that is complete has no missing data. Data can be missing in two ways. Consider that we record the heights and weights of Dylan, Reece, and Tom:
 
 |Name| Height (m) |	Weight (kg)|
 |---|---|---|
-|Heuy|1.8|75|
-|Dewey| |82|
+|Dylan|1.8|75|
+|Reece| |82|
 
-Our data are incomplete because we have a sample missing: Louie is missing entirely, while Dewey’s height is missing.
+Our data are incomplete because we have a sample missing: Louie is missing entirely, while Tom's height is missing.
 
 Ideally, we always work with complete data, but this practice isn’t always realistic. When we have incomplete data, we can:
 

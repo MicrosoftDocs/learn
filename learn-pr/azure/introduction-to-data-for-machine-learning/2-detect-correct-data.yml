@@ -3,7 +3,7 @@ uid: learn.machinelearning.introduction-to-data-for-machine-learning.detect-corr
 title: Good, bad, and missing data
 metadata:
   title: Good, bad, and missing data
-  description: Description :)
+  description: Conceptual unit introducing types of data in machine learning
   ms.date: 05/25/2021
   author: TomReidNZ
   ms.author: jasdeb

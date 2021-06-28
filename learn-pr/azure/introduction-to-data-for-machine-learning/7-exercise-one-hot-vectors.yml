@@ -3,7 +3,7 @@ uid: learn.machinelearning.introduction-to-data-for-machine-learning.exercise-on
 title: Exercise - Predict unknown values using one-hot vectors
 metadata:
   title: Exercise - Predict unknown values using one-hot vectors
-  description: Description :)
+  description: Exercise unit using one-hot vectors to predict unknown values in machine learning
   ms.date: 05/25/2021
   author: TomReidNZ
   ms.author: jasdeb

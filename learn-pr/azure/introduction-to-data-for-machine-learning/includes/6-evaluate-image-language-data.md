@@ -2,7 +2,7 @@ So far, we’ve covered encoding continuous data (floating point numbers), ordin
 
 Here we'll look at how to encode, and categorical data that have more than two classes. We also explore how decisions we make to improve our models can actually damage their performance.
 
-## Categorical Data aren't numerical
+## Categorical data aren't numerical
 
 Categorical data aren't numbers in the same way that other kinds of data are. With _ordinal_ or _continuous_ (numerical) data, higher values imply an increase in amount. For example, on the Titanic, a ticket price of £30 is more money than a ticket price of £12.
 
@@ -22,7 +22,7 @@ Now, setting S < C< Q we get a completely different trendline and prediction:
 
 Neither of these trendlines are correct; it doesn't make sense to treat categories as continuous features. So, how do we work with categories?
 
-## One-Hot Encoding
+## One-hot encoding
 
 One-hot encoding is a way to encode categorical data that avoids the above problem. Each available category gets its own single column, and a given row only contains a single 1 in the category it belongs to.
 
@@ -44,17 +44,17 @@ A person who boarded at Southampton would have a 1 in the third column
 |---|---|---|
 |0|0|1|
 
-## One-Hot Encoding, Data Cleaning, and Statistical Power
+## One-hot encoding, data cleaning, and statistical power
 
 Before using one-hot encoding, it's important to understand that its use can have positive or negative impacts on a model’s real-world performance.
 
-### What is Statistical Power?
+### What is statistical power?
 
 Statistical power refers to a model’s ability to reliably identify real relationships between features and labels. For example, a powerful model might report a relationship between ticket price and survival rate with a high degree of certainty. By contrast, a model with low statistical power might not find this relationship or report it with a low degree of certainty.
 
 We’ll stay out of the maths, but it’s important to keep in mind that certain choices we make can affect how powerful our models are.
 
-### Removing Data Lowers Statistical Power
+### Removing data lowers statistical power
 
 We’ve talked several times about cleaning data by removing samples that are incomplete. An unfortunate side effect is that this also reduces statistical power. For example, let’s pretend that we want to be able to predict survival given the following data:
 
@@ -73,7 +73,7 @@ From here we could guess that someone with a ticket worth £15 would survive, be
 |£8|0|
 |£25|1|
 
-### Worthless Columns Lower Statistical Power
+### Worthless columns lower statistical power
 
 Statistical power can also hurt by providing models with features that have little value, particularly when the number of features (columns) begins to approach the number of samples (rows).
 
@@ -99,7 +99,7 @@ Imagine, however, that we have another feature (Cabin):
 
 Cabin doesn't provide useful information, because it simply corresponds to the ticket price. Now it'sn't clear if someone with a ticket costing £25 for Cabin A would survive – do they perish, like others from Cabin A, or survive like those with £25 tickets?
 
-### One-Hot Encoding Can Reduce Statistical Power
+### One-hot encoding can reduce statistical power
 
 One-hot encoding reduces statistical power much more than continuous or ordinal data because it requires multiple columns–one for each possible categorical value. For example, one-hot encoding port of embarkation adds three model inputs (C, S, and Q).
 

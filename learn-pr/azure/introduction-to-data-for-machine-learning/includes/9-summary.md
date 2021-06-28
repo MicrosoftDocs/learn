@@ -1,6 +1,6 @@
 We’ve covered a lot. Let’s recap on some of the key messages.
 
-## What are Data?
+## What are data?
 
 Data fall into several conceptual categories. The most common are:
 * continuous data (numbers),
@@ -9,7 +9,7 @@ Data fall into several conceptual categories. The most common are:
 
 Data are stored on a computer as distinctive types, and we usually try to match the datatype to the kind of data that it is. For example, continuous data are best stored as floating-point numbers, because these allow fractions to be stored. By contrast, categorical data often arrive as strings (text) and must be converted to one-hot vectors for the computer to understand them properly.
 
-## What Makes a Good Dataset?
+## What makes a good dataset?
 
 We learned that a dataset it helpful if it:
 
@@ -19,7 +19,7 @@ We learned that a dataset it helpful if it:
 
 If data aren't complete, we can take steps to make sure that incomplete data doesn't cause big issues. When doing so, we need to be careful not to introduce new issues, such as making data no longer representative.
 
-## Thinking about Data
+## Thinking about data
 
 We showed how visualizing data can help to get an understanding of what might be useful in a model. Using different types of graphs, colors, and so on, can be fun and make complex information much more intuitive.
 
