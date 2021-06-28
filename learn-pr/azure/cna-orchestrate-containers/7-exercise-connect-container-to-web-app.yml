@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/7-exercise-connect-container-to-webapp.md)]
+  [!include[](includes/7-exercise-connect-container-to-web-app.md)]
