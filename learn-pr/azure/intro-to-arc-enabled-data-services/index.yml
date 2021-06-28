@@ -5,7 +5,7 @@ metadata:
   description: Introduction to Azure Arc enabled data services
   ms.date: 06/28/2021
   author: buckwoody
-  ms.author: buckwoody
+  ms.author: bwoody
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid
