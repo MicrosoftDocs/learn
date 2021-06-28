@@ -9,7 +9,7 @@ In this unit, you'll evaluate whether Project Bonsai can help you build machine 
 | Criteria                                                     | Analysis                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Is there value in optimizing your automation systems?        | This is the crucial question. Many organizations estimate a two to five percent increase in a key performance indicator (KPI), or increases in revenue or cost savings of roughly 1 million USD, following optimization. |
-| Do you have AI experts?                                      | Do you have AI experts, and will you have  access to those experts who have controlled the system in the past? These experts can provide valuable insights during the optimization project. The vast majority of the system is built on learning from these experts and then building even more optimization on top of that experience. |
+| Do you have AI experts?                                      | Do you have AI experts, and will you have access to those experts that have controlled the system in the past? These experts can provide valuable insights during the optimization project. The vast majority of the system is built on learning from these experts and then building even more optimization on top of that experience. |
 | Can you build a simulation system, or do you already have one? | After you determine there is value in optimizing the system, then you must determine if there is already a simulated environment. If not, do you have the skills to create one? |
 
 ## Apply the criteria
@@ -19,7 +19,7 @@ Consider using Project Bonsai when you meet the following criteria:
 - There is value in optimizing your automation systems.
 - You have a simulation of your automation systems, or you're able to build one.
 
-It's also ideal, but not essential that you have AI experts in your organization that have experience optimizing your automation systems.
+It's also ideal, but not essential, that you have AI experts in your organization that have experience optimizing your automation systems.
 
 ### Example of when to use
 
