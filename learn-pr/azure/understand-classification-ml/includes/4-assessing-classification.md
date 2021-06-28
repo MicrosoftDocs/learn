@@ -12,7 +12,7 @@ Classification models will be judged either on their output probabilities, such 
 
 Log loss is one of the most popular cost functions for simple classification. Log loss is usually applied to output probabilities. Similarly to MSE, small amounts of error result in small cost, while moderate amounts of error result in large costs. We have plotted log loss below, for a label where the correct answer was 0 (false).
 
-![log loss example graph](../media/4-log-loss-graph.png)
+![Diagram showing a log loss example graph.](../media/4-log-loss-graph.png)
 
 On the x-axis are possible model outputs – probabilities from 0 to 1 – and on the y axis is the cost. If a model is quite confident the correct response is 0 (for example predicting 0.1), the cost is low because in this instance the correct response is 0. If the model is confidently predicting the outcome wrongly (for example, predicting 0.9) then cost becomes very high. In fact, at x=1, the cost is so high that we've cropped the x-axis here to 0.999 to keep the graph readable.
 
@@ -20,7 +20,7 @@ On the x-axis are possible model outputs – probabilities from 0 to 1 – and o
 
 MSE and log loss are similar metrics. There are some complex reasons why log-loss is favored for logistic regression, but some simpler reasons too. For example, **log loss** punishes wrong answers much more strongly than MSE. For example, in the example below, where the correct answer is 0, predictions above 0.8 have a much higher cost for log-loss than MSE.
 
-![log loss vs mse graph](../media/4-mse-graph.png)
+![Diagram showing a log loss versus mse graph.](../media/4-mse-graph.png)
 
 Having higher cost in this way helps the model learn faster because the slope of the line is much steeper. Similarly, log-loss helps models become more confident at giving the correct answer: notice in the plot above that the MSE cost for values smaller than 0.2 are very small and the slope almost flat. This makes training slow for models that are near to correct. Log loss has a steeper slope for these values, which helps the model learn faster.
 
