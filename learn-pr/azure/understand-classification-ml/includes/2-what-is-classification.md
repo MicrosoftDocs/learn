@@ -14,7 +14,7 @@ For example, let’s say we're trying to predict if an avalanche will occur toda
 
 ### Converting outputs to categories
 
-As logistic regression gives us these probabilities, rather than simple true/false values, we need to take extra steps to convert the result to a category. The simplest way to do this is to apply a threshold. For example, in the graph below, our threshold is set to 0.5. This means that any y-value below 0.5 is converted to false--left bottom box--and any value at above 0.5 is converted to true--right top box.
+As logistic regression gives us these probabilities, rather than simple true/false values, we need to take extra steps to convert the result to a category. The simplest way to do this is to apply a threshold. For example, in the graph below, our threshold is set to 0.5. This means that any y-value below 0.5 is converted to false—left bottom box—and any value at above 0.5 is converted to true—right top box.
 
 ![logistic function graph](../media/2-logistic-function-graph.png)
 
