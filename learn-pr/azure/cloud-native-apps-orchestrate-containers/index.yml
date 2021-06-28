@@ -17,7 +17,7 @@ abstract: |
   - Connect the docker container to a webapp
 prerequisites: | 
  - A basic familiarity with Azure
- - A familiarity with basic Cloud Native concepts and terminology
+ - A familiarity with basic Cloud-Native concepts and terminology
  - An understanding of cloud computing is helpful, but isn't necessary
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
