@@ -15,10 +15,10 @@ quiz:
   questions:
   - content: 'Why is linear regression is a popular model?'
     choices:
-    - content: "It is fast to calculate and easily interpreted"
+    - content: "It's fast to calculate and easily interpreted"
       isCorrect: false
       explanation: "Incorrect."
-    - content: "It is easy to extrapolate from and the fitting procedure does not require ‘tuning’ to find an optimum solution"
+    - content: "It's easy to extrapolate from and the fitting procedure doesn't require ‘tuning’ to find an optimum solution"
       isCorrect: false
       explanation: "Incorrect."
     - content: "Both options are correct"
@@ -29,10 +29,10 @@ quiz:
     - content: "Simple regression uses special mathematics to speed up analysis"
       isCorrect: false
       explanation: "Incorrect."
-    - content: "Multiple regression predicts multiple labels, but simple regression does not"
+    - content: "Multiple regression predicts multiple labels, but simple regression doesn't"
       isCorrect: false
       explanation: "Incorrect."
-    - content: "Multiple regression accepts multiple features, but simple regression does not"
+    - content: "Multiple regression accepts multiple features, but simple regression doesn't"
       isCorrect: true
       explanation: "Correct."
   - content: 'What are the main strengths and weaknesses of polynomial regression, compared to simple linear regression?'

@@ -1,9 +1,10 @@
-So far, we’ve only looked at linear regression models – i.e. models that can be modelled as straight lines. Regression models can work with virtually any other kind of relationship, though.
+So far, we’ve only looked at linear regression models–models that can be modeled as straight lines. Regression models can work with virtually any other kind of relationship, though.
 
 ## What is polynomial regression?
-Polynomial regression models relationships as a particular kind of curve. Polynomials are a family of curves – ranging from simple to complex shapes. The more parameters in the equation (model), the more complex the curve can be.
 
-For example a two-parameter polynomial is simply a straight line:
+Polynomial regression models relationships as a particular type of curve. Polynomials are a family of curves – ranging from simple to complex shapes. The more parameters in the equation (model), the more complex the curve can be.
+
+For example, a two-parameter polynomial is simply a straight line:
 
 y = intercept + B1*x
 
@@ -35,6 +36,6 @@ The major disadvantage to polynomial curves is that they often extrapolate poorl
 
 ![polynomial curve with plots](../media/6-curve.png)
 
-### Can curves be used with multiple features?
+## Can curves be used with multiple features?
 
-We have seen how multiple regression can fit several linear relationships at the same time. There is no need for these to be limited to linear relationships, however. Curves of all kinds can be used for these relationships where appropriate. Care should be taken, however, not to use curves (such as polynomials) in with multiple features where they are not necessary. This is because the relationships can end up very complex, which makes it harder to understand the models, and assess whether they will make predictions that do not make sense, from a real-world standpoint.
+We've seen how multiple regression can fit several linear relationships at the same time. There's no need for these to be limited to linear relationships, though. Curves of all kinds can be used for these relationships where appropriate. Although, care should be taken not to use curves-such as polynomials-in with multiple features where they're not necessary. This is because the relationships can end up very complex, which makes it harder to understand the models, and assess whether they'll make predictions that don't make sense, from a real-world standpoint.
