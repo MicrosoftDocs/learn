@@ -5,10 +5,10 @@ metadata:
   unitType: learning-content
   title: Introduction to cybersecurity
   description: Learn about common cybercrime and exploits
-  ms.date: 2021-06-25
+  ms.date: 06-25-2021
   author: cecilyn
   ms.author: tijon
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-how-{product}-works.md)]
+  [!include[](includes/3-the-threat-landscape.md)]
