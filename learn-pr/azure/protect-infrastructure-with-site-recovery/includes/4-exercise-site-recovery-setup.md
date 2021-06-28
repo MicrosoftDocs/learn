@@ -24,7 +24,7 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the Azu
     |---------|---------|
     | **Project Details** |
     | Subscription | *your subscription* |
-    | Resource group | Select **east-coast-rg**, and then select **OK**. |
+    | Resource group | From the dropdown list, select **east-coast-rg**. |
     | **Instance Details** |
     | Vault name | **asr-vault** |
     | Region | **East US 2** |
@@ -33,11 +33,11 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the Azu
 
 ## Enable replication
 
-1. In the Recovery Services vault pane, in the left menu bar, under **Protected items**, select **Replicated items**. The **Replicated items** pane appears.
+1. In the Recovery Services vault pane named *asr-vault*, in the left menu bar, under **Protected items**, select **Replicated items**. The **Replicated items** pane appears.
 
-1. In the top menu bar, select **Replicate**, and from the dropdown list, select **Azure virtual machines**. Enter the following values for each setting.
+1. In the top menu bar, select **Replicate**, and from the dropdown list, select **Azure virtual machines**. The **Enable replication** pane appears.
 
-    ![Screenshot showing the source options for replication](../media/4-enable-replication-source.png)
+1. Enter the following values for each setting.
 
     | Setting | Value |
     |---------|---------|
@@ -48,12 +48,11 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the Azu
     | Select both VMs | **hr-records** and **patient-records**. Select **Next**. |
     | **Replication settings** tab |
     | Target location | **East US 2**. |
-    | **Customize**. Select it. The **Customize target settings** pane appears. |
-    | Target resource group | **east-coast-rg** |
-    | For each VM | From the dropdown list, change the **Cache storage** to **asrcacheXXXX**, where **XXXX** is a random number. Select **OK**. |
-    | Select **Enable replication**. |
+    | Target subscription | Select the **Customize** link. The **Customize target subscription** pane appears. In the **Target subscription** field, select your Azure subscription, and select **OK**. The **Enable replication** pane reappears. |
 
-Continue to the next steps to monitor the progress.
+    ![Screenshot showing the source options for replication](../media/4-enable-replication-source.png)
+
+1. Select **Enable replication**. When deployment succeeds, select **Go to resource group**. The **Recovery Services vault** pane named *asr-vault* appears.
 
 ## Monitor replication progress
 
