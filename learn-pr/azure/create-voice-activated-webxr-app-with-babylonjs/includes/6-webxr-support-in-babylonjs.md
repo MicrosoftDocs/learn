@@ -27,23 +27,41 @@ Here, you will learn about the WebXR support and features provided in Babylon.js
 -->
 
 <!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+## WebXR in Babylon.js
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
+Babylon.js is a powerful 3D rendering engine packed into a Javascript framework. Other than its main features such as rendering 3D meshes and animations, the framework also provides support for WebXR.
+
+The WebXR experience can be enabled for a Babylon.js scene in one line:
+
+```javascript
+await scene.createDefaultXRExperienceAsync();
+```
+
+By default, this line of code enables WebXR support in the immersive VR mode. To enable the support for WebXR support in the AR mode:
+
+```javascript
+await scene.createDefaultXRExperienceAsync({
+    uiOptions: {
+        sessionMode: "immersive-ar",
+    },
+});
+```
+
+After WebXR is enabled using this function, if the Babylon.js application is opened on a browser and device that supports WebXR in the specified mode (VR or AR), an XR button will appear in the bottom-right corner of the page:
+
+:::image type="content" source="../media/webxr-button.jpg" alt-text="An empty Babylon J S scene with an X R button in the bottom right corner.":::
+
+One can then enter the VR or AR session by pressing on that button.
+
+### WebXR Session Manager
 Strong lead sentence; remainder of paragraph.
 Visual (image, table, list)
-### H3 heading
+### WebXR Camera
 Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list)
 Paragraph (optional)
-### H3 heading
+### AR: Background Remover
 Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list)
