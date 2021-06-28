@@ -20,7 +20,7 @@ Keep your browser and your operating system updated and patched. Security vulner
 
 ### Enable Pop-ups blocker by default
 
-Pop-ups are typically small advertising ads that appear without permission. They’re created by JavaScript code embedded in the HTML webpage. These pop-ups can contain links to malicious software that could be downloaded to your computer. On modern browsers the Pop-uo blocker is enabled by default.
+Pop-ups are typically small advertising ads that appear without permission. They’re created by JavaScript code embedded in the HTML webpage. These pop-ups can contain links to malicious software that could be downloaded to your computer. On modern browsers the pop-up blocker is enabled by default.
 
 ### Consider using a Password Manager
 
