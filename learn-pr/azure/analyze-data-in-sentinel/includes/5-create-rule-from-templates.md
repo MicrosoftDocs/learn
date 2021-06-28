@@ -72,7 +72,7 @@ The following screenshot presents an example of creating an incident from alerts
 
 :::image type="content" source="../media/04-create-analytics-rule.png" alt-text="Screenshot of the wizard used to create analytics rules from templates." border="true":::
 
-For instructions on how to create an analytics rule from a scheduled rule type template, see [Create an analytics rule from a scheduled rule template](includes/6-create-rule-from-wizard.md).
+For instructions on how to create an analytics rule from a scheduled rule type template, see **Create an analytics rule from a scheduled rule template** in next unit (Unit 6).
 
 > [!NOTE]
 > For certain rule templates, the **Create rule** button might be disabled, which indicates that you can't create a rule from selected template because of a missing data source.
