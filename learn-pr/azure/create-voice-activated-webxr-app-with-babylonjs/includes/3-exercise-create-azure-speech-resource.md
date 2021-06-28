@@ -19,7 +19,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
     |Field  |Value  |Details  |
     |---------|---------|---------|
-    |**Name**     |    Enter a unique name     |   Choose a globally unique name for the resource. For example, you might name the resource *mr-speech-xxx*, where the x's are replaced with your initials. If the name isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9, and -.      |
+    |**Name**     |    Enter a unique name     |   Choose a globally unique name for the resource. For example, you might name the resource *webxr-magic-spell-xxx*, where the x's are replaced with your initials. If the name isn't globally unique, you can try any other combination. Valid characters are a-z, 0-9, and -.      |
     |**Subscription**    |   Concierge subscription      |    The resource you're creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs or will belong, if you're creating the resource group within the wizard.     |
     |**Location**     |    Geographical location near you     |   The geographical location where your app will be used.      |
     |**Pricing tier**     |     Free F0    |    The pricing tier of the plan being created. The selected tier corresponds to the usage of the resource. The Free F0 tier currently provides five audio hours free per month for Speech Translation.    |
