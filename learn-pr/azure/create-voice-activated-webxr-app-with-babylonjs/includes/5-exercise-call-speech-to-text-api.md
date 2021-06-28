@@ -12,25 +12,25 @@ Recall that your teammate has already set up a Babylon.js project with all of th
 
     (screenshot)
 1. Copy the **URL of the repository** under the **HTTPS** tab.
-1. Open Visual Studio Code in a new window.
+1. Open Visual Studio Code.
 1. Select the Settings button in the bottom left of the window, and then select **Command Palette** from the options.
 1. After the Command Palette pops up, type in "git" and select the **Git: Clone** command.
 1. Paste the URL of the GitHub repository.
 1. Select the folder where you would like to save the repository. The root folder of the repository becomes a subdirectory in the folder you select.
-1. Select open the repository after cloning finishes.
+1. Select **Open the repository** after cloning finishes.
 
 ## Install dependencies
 
-You might have noticed that this project is organized to be used with *webpack*, a JavaScript module bundler. All of the required dependencies are listed in the *package.json* file. Let's use *npm* to install all of them.
+Since we are using Node.js, all of the required dependencies are listed in the *package.json* file. Let's use *npm* to install all of them.
 
 1. Select **Terminal** in the menu of Visual Studio Code, and then select **New Terminal** to create a new terminal.
 1. Within the terminal, make sure that you are in the root folder of the repository.
-1. Use `npm install` to install all dependencies for the project.
-1. You should see a folder named *node_modules* created in the repository folder.
+1. Run `npm install` in the terminal to install all dependencies for the project.
+1. After the command finishes running, you should see a folder named *node_modules* created in the repository folder.
 
 ## Import dependencies
 
-The next thing that you might have noticed is that the source files in this repository have the *.ts* extension, which means that the files are written in TypeScript instead of JavaScript. While TypeScript and JavaScript are similar in nature, TypeScript requires types to be clearly defined for function parameters.
+You might have noticed is that the source files in this repository have the *.ts* extension, which means that the files are written in TypeScript instead of JavaScript. While TypeScript and JavaScript are similar in nature, TypeScript requires types to be clearly defined for function parameters.
 
 As a result, you'll need to import every class that will be used in a variable or a function parameter:
 
@@ -195,7 +195,7 @@ Let's create a Speech Recognizer using the Azure Speech JavaScript SDK.
 
 Now that the code is ready, it is time to verify that the web application works as intended. We will need to make sure that the dragon and magic circle models fade in when users say "go dragon" to the application.
 
-1. In your VSCode terminal, make sure you are in the root folder of the web project, and run **npm start**.
+1. In your VSCode terminal, make sure you are in the root folder of the web project, and run `npm start`.
 1. Once the application finishes compiling, open your browser and head to **localhost:8080**.
 1. If the app loads successfully, you will see an empty scene with a dark background.
 
