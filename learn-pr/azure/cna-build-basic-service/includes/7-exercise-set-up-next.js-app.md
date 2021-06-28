@@ -278,7 +278,7 @@ In this task, you'll validate the functionality of the Next.js application deplo
 1. On the blade displaying the properties of the web app, in the vertical menu, in the **Development Tools** section, select the **App Service Editor (Preview)** entry, and then on the **App Service Editor (Preview)**, select **Go**.
 1. On the **App Service Editor** interface, in the vertical menu, select the **Open Console** icon, which is directly after the **Start** icon.
 
-  :::image type="content" source="../media/7-next.js-web-app-console.png" alt-text="Screenshot of the console pane of the App Service Editor interface of the Azure web app.":::
+    :::image type="content" source="../media/7-next.js-web-app-console.png" alt-text="Screenshot of the console pane of the App Service Editor interface of the Azure web app.":::
 
 1. From the console prompt, run the following command to build the Next.js application you pushed to the Azure web app:
 
