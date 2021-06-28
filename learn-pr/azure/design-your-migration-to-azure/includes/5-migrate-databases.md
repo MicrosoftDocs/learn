@@ -20,7 +20,7 @@ Your relational database can be migrated to a number of different destinations i
 - **Single Azure SQL Database instance**: A fully managed, single SQL database.
 - **Azure SQL Database managed instance**: 100% compatible with SQL Server Enterprise Edition Database Engine, but missing some minor SQL Server features.
 - **SQL Server on Azure Virtual Machines**: An infrastructure-as-a-service (IaaS) offering that runs a full version of SQL Server and supports all the features of SQL Server.
-- **Azure Database for MySQL**: An Azure database service based on the MySQL Community Edition, versions 5.6 and 5.7.
+- **Azure Database for MySQL**: An Azure database service based on the MySQL Community Edition, versions 5.6, 5.7, and 8.0.
 - **Azure Database for PostgresSQL**: An Azure database service based on the community version of the PostgreSQL database engine.
 - **Azure Cosmos DB**: A globally distributed, multi-model, fully managed database service.
 

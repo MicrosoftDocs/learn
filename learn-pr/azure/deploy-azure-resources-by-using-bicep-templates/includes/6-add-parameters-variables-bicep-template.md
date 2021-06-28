@@ -23,7 +23,7 @@ During the process, you'll:
 
 1. Find the places within the resource definitions where the `location` and `name` properties are set, and update them to use the parameter values. After you're finished, the resource definitions within your Bicep file should look like this:
 
-   :::code language="plaintext" source="code/6-template-1.bicep" range="7-35" highlight="2-3, 14-15, 23-24":::
+   :::code language="bicep" source="code/6-template-1.bicep" range="7-35" highlight="2-3, 14-15, 23-24":::
 
 1. Save the changes to the file.
 
@@ -43,7 +43,7 @@ During the process, you'll:
 
 1. Find the places within the resource definitions where the  `sku` properties are set, and update them to use the parameter values. After you're finished, the resource definitions in your Bicep file should look like this:
 
-   :::code language="plaintext" source="code/6-template-2.bicep" range="16-44" highlight="5, 17-18":::
+   :::code language="bicep" source="code/6-template-2.bicep" range="16-44" highlight="5, 17-18":::
 
    Notice that you haven't parameterized everything. You've set some properties right in the resource definitions where you know these aren't going to change between deployments.
 

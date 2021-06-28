@@ -72,17 +72,17 @@ To use a template spec from within a Bicep file, you create a reference to the t
 
 First, you use the `existing` keyword to create a reference to the template spec, and to the version of the template spec you're using:
 
-:::code language="plaintext" source="code/4-template.bicep" range="6-12" :::
+:::code language="bicep" source="code/4-template.bicep" range="6-12" :::
 
 Now that you have a reference to the template spec, you can create a deployment. In Azure, a deployment is actually a resource, and it has the resource type `Microsoft.Resources/deployments`. When you deploy a Bicep file, you're creating a deployment resource. The same concept applies when you deploy a template spec, like this:
 
-:::code language="plaintext" source="code/4-template.bicep" range="14-20, 26-27" highlight="5-7" :::
+:::code language="bicep" source="code/4-template.bicep" range="14-20, 26-27" highlight="5-7" :::
 
 Notice that the deployment includes a reference to the template spec version, and it uses the child resource accessor operator (`::`) to refer to the version, since the template spec version is a child resource of the template spec resource.
 
 When you have parameters to provide to the template spec deployment, you use the `parameters` property:
 
-:::code language="plaintext" source="code/4-template.bicep" range="14-27" highlight="8-12" :::
+:::code language="bicep" source="code/4-template.bicep" range="14-27" highlight="8-12" :::
 
 ::: zone-end
 
