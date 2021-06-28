@@ -6,8 +6,8 @@ metadata:
   title: Introduction to cybersecurity
   description: Learn mitigation strategies to counter common cyber attacks
   ms.date: 06/25/2021
-  author: cecilyn
-  ms.author: tijon
+  author: mbcrump
+  ms.author: micrum
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 8
 content: |
