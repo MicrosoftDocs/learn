@@ -13,7 +13,7 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Why is linear regression is a popular model?'
+  - content: 'Why is linear regression a popular model?'
     choices:
     - content: "It's fast to calculate and easily interpreted"
       isCorrect: false

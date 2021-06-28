@@ -2,7 +2,7 @@ Regression is a simple, common, and highly useful data analysis technique, often
 
 ## Simple linear regression
 
-Simple linear regression models a linear relationship between a single feature and a (usually continuous) label, allowing the label to be predicted by the feature. Visually, it might look something like this:
+Simple linear regression models a linear relationship between a single feature and a--usually continuous--label, allowing the label to be predicted by the feature. Visually, it might look something like this:
 
 ![simple linear regression graph.](../media/2-simple-linear-regression.png)
 
@@ -18,7 +18,7 @@ For example, in our scenario, if we were to try to predict which patients will h
 
 temperature=m*age+c
 
-And need to find the values of m and c during the fitting procedure. If we found m = 0.5 and c = 37, we might visualize it like this:
+And need to find the values of "m" and "c" during the fitting procedure. If we found m = 0.5 and c = 37, we might visualize it like this:
 
 ![simple linear regression graph.2](../media/2-linear-graph.png)
 
@@ -26,7 +26,7 @@ This would mean that every year of age is associated with body temperature incre
 
 ## Fitting linear regression
 
-We normally use existing libraries to fit regression models for us. Regression typically aims to find the line that produces the least amount of error, where error here means the difference between the actual data point value, and the predicted value. For example, in the image below, the black line indicates the error between the prediction (red line) and one actual value (dot).
+We normally use existing libraries to fit regression models for us. Regression typically aims to find the line that produces the least amount of error, where error here means the difference between the actual data point value, and the predicted value. For example, in the image below, the black line indicates the error between the prediction, the red line, and one actual value: the dot.
 
 ![fitting linear regression graph](../media/2-fitting-linear-regression.png)
 
@@ -42,7 +42,7 @@ Most commonly, we fit a model by minimizing the residual sum of squares. This me
 2. Square these values
 3. Sum (or average) these squared values
 
-This squaring step means that not all points contribute evenly to the line: outliers (points that don't fall in the expected pattern) have disproportionately larger error, which can influence the position of the line.
+This squaring step means that not all points contribute evenly to the line: outliers, which are points that don't fall in the expected pattern, have disproportionately larger error, which can influence the position of the line.
 
 ## Strengths of regression
 
@@ -54,7 +54,7 @@ Regressions are easy to interpret because they describe simple mathematical equa
 
 ### Easy to extrapolate
 
-Regressions make it easy to extrapolate (make predictions for values outside the range of our dataset). For example, it's simple to estimate in our previous example that a nine year old will have a temperature of 40.5°C. Caution should always be applied to extrapolation: this model would predict that a 90 year old would have a temperature nearly hot enough to boil water.
+Regressions make it easy to extrapolate--make predictions for values outside the range of our dataset. For example, it's simple to estimate in our previous example that a nine year old will have a temperature of 40.5°C. Caution should always be applied to extrapolation: this model would predict that a 90 year old would have a temperature nearly hot enough to boil water.
 
 ### Optimal fitting is usually guaranteed
 

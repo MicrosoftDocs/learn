@@ -1,4 +1,4 @@
-Regression is a simple, common, and highly useful data analysis technique, colloquially referred to as “fitting a trend line". Regression identifies the strength of relationship between one or more features and a single label. Its simplicity, predictable behavior, ability to forecast and high level of interpretability means this technique is used throughout finance, business, social sciences, epidemiology, and medicine.
+Regression is a simple, common, and highly useful data analysis technique, colloquially referred to as “fitting a trend line". Regression identifies the strength of relationship between one or more features and a single label. Its simplicity, predictable behavior, ability to forecast, and high level of interpretability means this technique is used throughout finance, business, social sciences, epidemiology, and medicine.
 
 In this module, we'll take a deeper dive into how regression works, and understand its limitations, and learn how to assess its performance.
 
