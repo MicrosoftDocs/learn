@@ -38,7 +38,7 @@ _Labeling Projects_ is a centralized place to create, manage, and monitor labeli
 
 Below we can see an example of a labeling task underway in Azure ML Studio.
 
-:::image type="content" source="../media/3-labelling.gif" alt-text="azure ml studio labelling." lightbox="../media/3-labelling.gif":::
+:::image type="content" source="../media/3-labeling.gif" alt-text="azure ml studio labeling." lightbox="../media/3-labeling.gif":::
 
 ## Deploying machine learning models
 

@@ -44,7 +44,7 @@ With Azure ML, the time-intensive process of data preparation and ingestion can 
 
 Azure ML securely stores your raw data in the datastore, so you don’t have to rely on external sources for your scripts, and your training sets can be experimented upon without risking the integrity of the original raw data. Once stored, you can clean, transform, and label data to create training sets from the datastore. Azure ML offers tools to help label tabular, image, and text data—with built-in machine learning systems that can suggest labels or fully automate data labeling. The example below shows a human led multi-label classification project underway in the Azure ML Studio.
 
-:::image type="content" source="../media/2-human-labelling.gif" alt-text="multi-label classification in azure ml studio." lightbox="../media/2-human-labelling.gif":::
+:::image type="content" source="../media/2-human-labeling.gif" alt-text="multi-label classification in azure ml studio." lightbox="../media/2-human-labeling.gif":::
 
 ## MLOps
 
