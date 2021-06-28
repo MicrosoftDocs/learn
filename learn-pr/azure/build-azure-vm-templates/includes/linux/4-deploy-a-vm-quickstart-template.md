@@ -61,7 +61,7 @@ Near the start of the template, you see a section named `parameters`. This secti
 
 This image highlights the first few parameters.
 
-![The source code for the template's parameters section, highlighting each parameter name](../../media/4-armviz-params-linux.png)
+![The source code for the template's parameters section, highlighting each parameter name.](../../media/4-armviz-params-linux.png)
 
 The `authenticationType` parameter specifies whether to use password authentication or key-based authentication to connect to the virtual machine. The `adminPasswordOrKey` parameter specifies the password or SSH key. Although key-based authentication is typically more secure than password authentication, here you'll use password authentication for learning purposes.
 

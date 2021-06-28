@@ -39,10 +39,10 @@ To view the subscription key and endpoint for your Computer Vision subscription:
 
 1. Copy and save the values of **KEY 1** and **ENDPOINT**. These will be used when connecting to the API.
 
-    :::image type="content" source="../media/face-api-key-and-endpoint-ssm.png" alt-text="Copy the Face subscription key":::
+    :::image type="content" source="../media/face-api-key-and-endpoint-ssm.png" alt-text="Copy the Face subscription key.":::
 
 1. In the menu group, select **Overview**. Then copy the value under **Endpoint**.
 
-    :::image type="content" source="../media/6-subscribe-to-face-api-endpoint.png" alt-text="Copy the Face API endpoint":::
+    :::image type="content" source="../media/6-subscribe-to-face-api-endpoint.png" alt-text="Copy the Face API endpoint.":::
 
 Now that you know the location and values of your Face API subscription key and endpoint, you're ready to start writing some code or testing the API with an image.

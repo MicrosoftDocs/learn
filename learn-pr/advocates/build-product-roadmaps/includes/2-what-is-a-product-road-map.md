@@ -26,7 +26,7 @@ A product road map is hard to build. It’s a balancing act of finding the right
 
 The final form of your road map could be represented in many different ways. Sometimes it's a wall of Post It notes in your office showing your plan for the product, other times it's a spreadsheet or document, or stored in a specialized road map tool.
 
-![A product road map](../media/story.png)
+![A product road map.](../media/story.png)
 
 ## What makes up a typical road map?
 
@@ -38,6 +38,6 @@ To build a road map, we work top down; from the least granular component to the 
 * Epics: collections of user stories that often represent a feature, for example, Authentication.
 * User Stories: user-centric stories that describe a requirement, for example "Giving the user the ability to reset their password". User stories are usually collected in an epic.
 
-![Product road map hierarchy](../media/product-roadmap.png)
+![Product road map hierarchy.](../media/product-roadmap.png)
 
 This approach is recommended because the top-level components are closer to the mission and should be a logical progression of detail, easily rolled up and tied to that mission. The alternative, starting from the base and writing up a series of user stories, leaves a lot of space between your mission and its practical application. We find if you start with that base you end up twisting the top-level components into the shape of the user stories and not vice-versa.

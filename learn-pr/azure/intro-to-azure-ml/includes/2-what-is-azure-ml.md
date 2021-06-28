@@ -4,7 +4,7 @@ Azure ML enables people who may not fully grasp coding to have a powerful and in
 
 Azure ML has a comprehensive suite of features to support logging, monitoring, and governance of datasets and models, ensuring your models are performing as intended and effectively communicated to stakeholders.
 
-![azure machine learning example](../media/2-deploy-models.gif)
+![azure machine learning example.](../media/2-deploy-models.gif)
 
 ## What is Azure Machine Learning Studio?
 
@@ -28,7 +28,7 @@ _Automated Machine Learning (AutoML)_ automates creating the best machine learni
 
 In the image below, we can see an overview of the AutoML pipeline building and recommending a model.
 
-![azure automl pipeline](../media/2-pipeline.gif)
+![azure automl pipeline.](../media/2-pipeline.gif)
 
 ### Designer
 

@@ -63,11 +63,11 @@ Because we're using Node.js, a *packages.json* file defines the needed packages.
 
    If you chose option 1 earlier, you should see the following scene.
 
-   ![starter-template-scene-option-1](../media/space-jam-scene-no-buttons.png)
+   ![starter-template-scene-option-1.](../media/space-jam-scene-no-buttons.png)
 
    If you chose option 2, you should see the following scene.  
 
-   ![starter-template-scene-option-2](../media/default-scene.png)
+   ![starter-template-scene-option-2.](../media/default-scene.png)
 
 With these basic scenes, you're ready to get started rendering your Mixed Reality experience!
 

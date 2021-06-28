@@ -20,7 +20,7 @@ module.exports = {
 
 Now, when you push your code to GitHub and it's built, a service worker should be created. You can use the Developer Tools to determine your page's Lighthouse Score, which is a good way to gauge the performance of your Progressive Web App.
 
-![lighthouse score](../media/lighthouse.png)
+![lighthouse score.](../media/lighthouse.png)
 
 ## Test the app
 
