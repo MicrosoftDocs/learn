@@ -2,7 +2,7 @@ Because Cloud Native Apps are made up of the components of your choice, you can 
 
 For example, many cloud services, such as Azure Database for MySQL, allow you to develop using the open-source versions of technologies that you’re used to, but have Azure take care of administration and deployment responsibilities for you.
 
-### Architecting a cloud native solution for Adatum
+### Architecting a Cloud-Native solution for Adatum
 
 In our scenario, we can architect a solution that’s easy for a small team to develop but also scales safely to thousands of devices. This is because cloud functionality eliminates many development issues arising from a need to connect to large numbers of devices and process data on demand. By using cloud infrastructure, pre-built services can be easily configured to communicate with each other and autoscale as needed.
 
