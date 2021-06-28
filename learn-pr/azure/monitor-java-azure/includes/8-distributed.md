@@ -93,39 +93,36 @@ Monitoring data about your servers helps you troubleshoot and optimize for your 
 
 In Azure Database for MySQL, the slow query log is available to users. Access to the transaction log isn't supported. The slow query log can be used to identify performance bottlenecks for troubleshooting.
 
-In our sample application, your slow query logs are set up to be piped to Azure Monitor Logs through Diagnostic Logs, and you can do further analysis of your slow queries. Below are sample queries to help you get started. Make sure to update the below with your server name:
+In our sample application, your slow query logs are set up to be piped to Azure Monitor Logs through Diagnostic Logs, and you can do further analysis of your slow queries. Below are sample queries to help you get started:
 
 1. In the Azure portal, in the left pane, select **Log Analytics**.
 1. Select the Log Analytics workspace that you chose when you added your diagnostics settings.
 1. To open the **Log Search** pane, select **Logs**.
 1. In the **Tables** search box,
 
-* Queries longer than 10 seconds on a particular server
+* Queries longer than 10 seconds
 
     ```sql
     AzureDiagnostics
-    | where LogicalServerName_s == '<your server name>'
     | where Category == 'MySqlSlowLogs'
     | project TimeGenerated, LogicalServerName_s, event_class_s, start_time_t , query_time_d, sql_text_s 
     | where query_time_d > 10
     ```
 
-* List top five longest queries on a particular server
+* List top five longest queries
 
     ```sql
     AzureDiagnostics
-    | where LogicalServerName_s == '<your server name>'
     | where Category == 'MySqlSlowLogs'
     | project TimeGenerated, LogicalServerName_s, event_class_s, start_time_t , query_time_d, sql_text_s 
     | order by query_time_d desc
     | take 5
     ```
 
-* Summarize slow queries by minimum, maximum, average, and standard deviation query time on a particular server
+* Summarize slow queries by minimum, maximum, average, and standard deviation query time
 
     ```sql
     AzureDiagnostics
-    | where LogicalServerName_s == '<your server name>'
     | where Category == 'MySqlSlowLogs'
     | project TimeGenerated, LogicalServerName_s, event_class_s, start_time_t , query_time_d, sql_text_s 
     | summarize count(), min(query_time_d), max(query_time_d), avg(query_time_d), stdev(query_time_d), percentile(query_time_d, 95) by LogicalServerName_s
@@ -135,7 +132,6 @@ In our sample application, your slow query logs are set up to be piped to Azure 
 
     ```sql
     AzureDiagnostics
-    | where LogicalServerName_s == '<your server name>'
     | where Category == 'MySqlSlowLogs'
     | project TimeGenerated, LogicalServerName_s, event_class_s, start_time_t , query_time_d, sql_text_s 
     | summarize count() by LogicalServerName_s, bin(TimeGenerated, 5m)
@@ -153,56 +149,14 @@ In our sample application, your slow query logs are set up to be piped to Azure 
   
 The audit log can also be used to track database-level activity and is commonly used for compliance. Audit logs are integrated with Azure Monitor Diagnostic Logs. In your sample, we've enabled audit logs on your MySQL server so you can do further analysis of your audited events.
 
-Below are some sample queries to help you get started. Make sure to update the below with your server name:
-
-* List GENERAL events on a particular server
+Below is a sample queries, that retrieve the general MySQL log:
 
     ```sql
     AzureDiagnostics
-    | where LogicalServerName_s == '<your server name>'
+    | where ResourceProvider =="MICROSOFT.DBFORMYSQL"
     | where Category == 'MySqlAuditLogs' and event_class_s == "general_log"
     | project TimeGenerated, LogicalServerName_s, event_class_s, event_subclass_s, event_time_t, user_s , ip_s , sql_text_s 
-    | order by TimeGenerated asc nulls last 
-    ```
-
-* List CONNECTION events on a particular server
-
-    ```sql
-    AzureDiagnostics
-    | where LogicalServerName_s == '<your server name>'
-    | where Category == 'MySqlAuditLogs' and event_class_s == "connection_log"
-    | project TimeGenerated, LogicalServerName_s, event_class_s, event_subclass_s, event_time_t, user_s , ip_s , sql_text_s 
-    | order by TimeGenerated asc nulls last
-    ```
-
-* Summarize audited events on a particular server
-
-    ```sql
-    AzureDiagnostics
-    | where LogicalServerName_s == '<your server name>'
-    | where Category == 'MySqlAuditLogs'
-    | project TimeGenerated, LogicalServerName_s, event_class_s, event_subclass_s, event_time_t, user_s , ip_s , sql_text_s 
-    | summarize count() by event_class_s, event_subclass_s, user_s, ip_s
-    ```
-
-* Graph the audit event type distribution on a particular server
-
-    ```sql
-    AzureDiagnostics
-    | where LogicalServerName_s == '<your server name>'
-    | where Category == 'MySqlAuditLogs'
-    | project TimeGenerated, LogicalServerName_s, event_class_s, event_subclass_s, event_time_t, user_s , ip_s , sql_text_s 
-    | summarize count() by LogicalServerName_s, bin(TimeGenerated, 5m)
-    | render timechart 
-    ```
-
-* List audited events across all MySQL servers with Diagnostic Logs enabled for audit logs
-
-    ```sql
-    AzureDiagnostics
-    | where Category == 'MySqlAuditLogs'
-    | project TimeGenerated, LogicalServerName_s, event_class_s, event_subclass_s, event_time_t, user_s , ip_s , sql_text_s 
-    | order by TimeGenerated asc nulls last
+    | order by TimeGenerated desc
     ```
 
 ## Query Store and Performance Insights
