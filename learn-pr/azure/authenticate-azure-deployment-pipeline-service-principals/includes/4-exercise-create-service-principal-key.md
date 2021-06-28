@@ -117,6 +117,9 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 ::: zone-end
 
+> [!WARNING]
+> The outputs from the commands above contain the key for your service principal. Make sure you're careful about where you run these commands - for example, don't run them in an environment where someone might be able to view them.
+
 ## Test the service principal
 
 Now that the service principal has been created, you sign in using its credentials to verify it's been created successfully.

@@ -11,6 +11,9 @@ When a service principal needs to communicate with Azure, it signs into Azure AD
 
 Keys are similar to passwords. However, keys are much longer and more complex. In fact, for most situations, Azure AD generates keys itself to ensure they are _cryptographically random_ - that is, extremely difficult to guess - and to ensure humans don't accidentally use weak passwords as keys. Service principals often have quite highly privileged permissions, so it's essential that they are secure. Typically you only need to handle the key very briefly when first configuring the service principal and your pipeline, so it doesn't need to be memorable or easy to type. Also, a single service principal can have multiple keys at the same time, but users can't have multiple passwords. Like passwords, keys have an expiry date - you'll learn more about this soon.
 
+> [!NOTE]
+> Think of keys like very important passwords, similar to storage account keys. You should treat them with the same level of security and care.
+
 ### Certificates
 
 Certificates are another way to authenticate service principals. They are very secure, but also can be difficult to manage. Some organizations require the use of certificates for certain types of service principals. We won't discuss certificates in this module. However, if you work with a service principal that uses certificate authentication, it basically works the same way as any other service principal when it comes time to manage it and grant it permission for your pipeline.
@@ -71,6 +74,9 @@ The `plaintextSecret` variable contains the service principal's key. You can't g
 > Under the covers, the `New-AzADServicePrincipal` cmdlet creates an application registration in Azure AD, adds a service principal to your Azure AD tenant, and creates a key for the application registration.
 
 ::: zone-end
+
+> [!CAUTION]
+> Pipeline tools include secure ways to specify your service principal's application ID and key: use _encrypted secrets_ with GitHub Actions, and use _service connections_ when you work with Azure Pipelines. Never store credentials of any kind in source control.
 
 ## Identify a service principal
 
