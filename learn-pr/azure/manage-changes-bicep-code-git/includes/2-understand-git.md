@@ -29,6 +29,12 @@ Git is a _distributed_ version control system, which means you can have multiple
 
 In this module, we'll focus on local Git repositories, where you're the only person using them. In a future module, you'll learn about how you can distribute your Git repository and work collaboratively by using GitHub and Azure Repos.
 
+## How does Git work with folders?
+
+A Git repository is represented as a folder on your computer. When you work with the repository, it's just like working with any other folder with files in it. You can view and edit the files using any tools you want, although in this module you'll use Visual Studio Code.
+
+Git stores some metadata about the repository in a special hidden folder within your repository's folder. When you first create a repository, you need to _initialize_ the repository to create the metadata. After that, you work with the folder as normal, and use Git's tools to help you maintain the versions of the files in the repository. You'll learn more about Git's commands throughout this module.
+
 ## What tools will I need?
 
 In this module, you'll use two tools to work with your Git repository: Visual Studio Code and Git.
