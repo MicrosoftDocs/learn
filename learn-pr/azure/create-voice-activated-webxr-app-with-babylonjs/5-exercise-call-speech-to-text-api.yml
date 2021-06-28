@@ -10,6 +10,6 @@ metadata:
   ms.author: t-jinglow 
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
-durationInMinutes: 1 # user input: the estimate time to complete the unit
+durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise-call-speech-to-text-api.md)]
