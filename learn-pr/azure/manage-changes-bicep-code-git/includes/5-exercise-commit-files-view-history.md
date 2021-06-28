@@ -90,7 +90,9 @@ Now that you've reviewed the changes and are satisfied with it, you commit the u
 
    The output looks similar to the following:
 
-   TODO output
+   ```output
+   TODO
+   ```
 
 1. Inspect the output. Notice you see both of your commits in the commit history.
 

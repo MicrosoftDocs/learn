@@ -3,14 +3,17 @@ uid: learn.azure.manage-changes-bicep-code-git
 metadata:
   moduleType: standard
   title: Manage changes to your Bicep code by using Git
-  description: TODO
+  description: Learn how to use Git version control with your Bicep files and infrastructure as code.
   ms.date: 06/17/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage changes to your Bicep code by using Git
-summary: TODO
+summary: |
+  Version control enables you to keep track of the changes you make to your Bicep code and other files.
+  In this module, you'll learn about Git, and how to use Git to support your Bicep development workflow.
+  You'll find out how to commit files, view the history of the files you've changed, and how to use branches to develop multiple versions of your code at the same time.
 abstract: |
   After completing this module, you'll be able to:
     - Explain the benefits of version control and Git

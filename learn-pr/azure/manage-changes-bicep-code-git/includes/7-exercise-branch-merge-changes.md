@@ -24,7 +24,9 @@ During the process, you'll:
 
    The output looks similar to the following:
 
-   TODO output
+   ```output
+   TODO
+   ```
 
    Notice that the first line of the output tells you that Git is on the **add-database** branch.
 
