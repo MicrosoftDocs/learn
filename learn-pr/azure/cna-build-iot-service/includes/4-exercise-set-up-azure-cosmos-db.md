@@ -17,7 +17,7 @@ To perform this exercise, you need:
 1. Start a web browser, refer to the [Azure portal](https://portal.azure.com/?azure-portal=true), and sign in to access the Azure subscription you'll be using in this module.
 1. Use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Cosmos DB**, and in the list of results, select **Azure Cosmos DB**.
 1. On the **Azure Cosmos DB** blade, select **+ Create**.
-1. On the **Which API best suits your workload?** blade, select **Core (SQL) - Recommendded** and select **Create**.
+1. On the **Which API best suits your workload?** blade, select **Core (SQL) - Recommended** and select **Create**.
 1. On the **Basics** tab of the **Create Azure Cosmos DB Account - Core (SQL)** blade, configure the following settings, and then select **Next: Global Distribution**.
 
    | Setting | Configuration |
@@ -65,7 +65,7 @@ To perform this exercise, you need:
 
    :::image type="content" source="../media/4-azure-cosmos-db-new-database.png" alt-text="Screenshot of the New Database blade within the Data Explorer blade of an Azure Cosmos DB Account in the Azure portal.":::
 
-1. On the Azure Cosmos DB blade, in the vertical menu, select **Data Explorer**, then in the **DATA** sectcion, select the ellipsis icon next to the newly created database **iotdb** and select **New Container**.
+1. On the Azure Cosmos DB blade, in the vertical menu, select **Data Explorer**, then in the **DATA** section, select the ellipsis icon next to the newly created database **iotdb** and select **New Container**.
 1. On the **New Container**, specify the following settings (leave others with their default values) and select **OK**:
 
    | Setting | Configuration |
