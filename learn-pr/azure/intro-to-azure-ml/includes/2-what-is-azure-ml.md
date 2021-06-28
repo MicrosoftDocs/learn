@@ -34,6 +34,10 @@ If you prefer a no-code option, _Azure ML Designer_ within the Azure ML studio g
 
 :::image type="content" source="../media/2-designer.gif" alt-text="azure ml designer example." lightbox="../media/2-designer.gif":::
 
+## Compute
+
+The computing resources you need for your ML environment can be allocated or attached through Azure ML. From the compute that powers your Jupyter notebooks for exploratory data analysis, to the clusters you'll use for training and the kubernetes clusters you'll deploy to for production inferencing at scale, it can be managed through Azure ML.
+
 ## Managing data
 
 With Azure ML, the time-intensive process of data preparation and ingestion can be streamlined and collaboratively worked on. The platform smoothly integrates with _Azure Synapse, Azure Databricks,_ and a suite of other Azure services to assist data engineering pipelines to extract, transform, and load (ETL) raw data into datastores.
