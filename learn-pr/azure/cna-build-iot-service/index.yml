@@ -41,7 +41,7 @@ units:
 - learn.azure.cna-build-iot-service.5-integrate-data-stores-iot-pipelines
 - learn.azure.cna-build-iot-service.6-exercise-integrate-azure-cosmos-db-iot-data-pipelines
 - learn.azure.cna-build-iot-service.7-analyze-telemetry-data
-- learn.azure.cna-build-iot-service.8-exercise-integrate-next.js-web-app-iot-pipeline
+- learn.azure.cna-build-iot-service.8-exercise-integrate-next-js-web-app-iot-pipeline
 - learn.azure.cna-build-iot-service.9-knowledge-check
 - learn.azure.cna-build-iot-service.10-summary
 badge:
