@@ -44,7 +44,7 @@ Now that you've created a branch, you will add a new Bicep module for your websi
 
 1. Open and save the empty _cosmos-db.bicep_ file so that Visual Studio Code loads the Bicep tooling.
 
-1. Copy the following code into _cosmos-db.bicep_.
+1. Copy the following code into _cosmos-db.bicep_:
 
    :::code language="bicep" source="code/7-module-cosmos-db.bicep" :::
 
@@ -52,9 +52,13 @@ Now that you've created a branch, you will add a new Bicep module for your websi
 
 1. Open the _main.bicep_ file.
 
+1. Add the following parameter definitions below the `appServiceAppName` parameter definition:
+
+   :::code language="bicep" source="code/7-main.bicep" range="14-15" :::
+
 1. Underneath the current resource declarations, add the following module definition:
 
-   :::code language="bicep" source="code/7-main.bicep" :::
+   :::code language="bicep" source="code/7-main.bicep" range="26-33" :::
 
 1. Save and close the _main.bicep_ file.
 

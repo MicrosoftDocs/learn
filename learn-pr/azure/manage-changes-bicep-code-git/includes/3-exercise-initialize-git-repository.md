@@ -106,7 +106,7 @@ You need to run a few commands to configure Git so that it associates your name 
 
    :::code language="bicep" source="code/3-main.bicep" :::
 
-   Notice that this Bicep file contains some parameters, but doesn't define any resources yet.
+   Notice that this Bicep file contains two parameters, but doesn't define any resources yet.
 
 1. Save the file.
 

@@ -32,7 +32,7 @@ Here you add a Bicep module, and reference it from your _main.bicep_ file.
 
 1. Open and save the empty _app-service.bicep_ file so that Visual Studio Code loads the Bicep tooling.
 
-1. Copy the following code into *app-service.bicep*.
+1. Copy the following code into _app-service.bicep_:
 
    :::code language="bicep" source="code/5-module-app-service.bicep" :::
 
@@ -40,9 +40,9 @@ Here you add a Bicep module, and reference it from your _main.bicep_ file.
 
 1. Open the _main.bicep_ file.
 
-1. Underneath the parameter declarations, add the following module definition:
+1. Underneath the parameter declarations, add the following parameter declaration and module definition:
 
-   :::code language="bicep" source="code/5-main.bicep" :::
+   :::code language="bicep" source="code/5-main.bicep" range="11-21" :::
 
 1. Save and close the _main.bicep_ file.
 
