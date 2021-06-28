@@ -8,7 +8,7 @@ Now that you've completed this module, you should know more about how to:
 * Implement Azure AD authentication for cloud-native applications.
 
 > [!NOTE]
-> This module provided a basic overview of Azure AD authentication and, through hands-on exercises, familiarize readers with some aspects of Azure AD integration. It was not meant to deliver a comprehensive coverage of the best practices in implementing multi-tenant applications. 
+> This module provided a basic overview of Azure AD authentication and, through hands-on exercises, familiarized readers with some aspects of Azure AD integration. It was not meant to deliver a comprehensive coverage of the best practices in implementing multi-tenant applications. 
 
 ## Learn more
 
