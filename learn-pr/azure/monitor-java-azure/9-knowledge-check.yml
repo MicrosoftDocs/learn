@@ -12,7 +12,7 @@ metadata:
 durationInMinutes: 2
 quiz:
   questions:
-  - content: "Which of the following monitoring form involves records of events?"
+  - content: "Which of the following monitoring forms involve records of events?"
     choices:
     - content: "Traces"
       isCorrect: false
