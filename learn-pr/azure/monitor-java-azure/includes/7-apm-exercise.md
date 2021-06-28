@@ -8,7 +8,7 @@ Select you Azure Spring instance and in the left navigation pane, select Applica
 
 ### Application Map
 
-Application Map helps you spot performance bottlenecks or failure hotspots across all components of your distributed application. On the left, navigate to **Application Map** where you can see a view of your Azure Spring Cloud microservices:
+Application Map helps you spot performance bottlenecks or failure hot-spots across all components of your distributed application. On the left, navigate to **Application Map** where you can see a view of your Azure Spring Cloud microservices:
 
 :::image type="content" source="../media/4-distributed-tracking-new-ai-agent.jpg" alt-text="Application map":::
 
@@ -43,6 +43,7 @@ Select an exception and drill in for meaningful insights and actionable stack tr
 
 ### Metrics
 
+Next, under the Monitoring section, select **Metrics** in the Application Insights resource menu.
 Spring Boot registers many core metrics: JVM, CPU, Tomcat, Logback...
 You can see metrics contributed by Spring Boot apps, Spring Cloud modules, and dependencies.
 The chart below shows `gateway-requests` (Spring Cloud Gateway), `hikaricp_connections` (JDBC Connections), and `http_client_requests`.
@@ -54,7 +55,7 @@ The chart below shows `gateway-requests` (Spring Cloud Gateway), `hikaricp_conne
 As you deploy resources and applications in Azure, you'll want to start collecting telemetry to gain insights into their performance and health. Azure makes some metrics available to you out of the box. These metrics are called standard or platform. However, they're limited in nature.
 You might want to collect some custom performance indicators or business-specific metrics to provide deeper insights.
 
-To create a custom metric chart, open the Metrics tab and follow these steps:
+To create a custom metric chart, under the Monitoring section, open the Metrics tab and follow these steps:
 
 1. Ensure your Azure Spring Cloud is selected in the resource scope picker. It will already be populated if you opened metrics explorer from the resource's menu.
 
@@ -85,19 +86,21 @@ To create a custom metric chart, open the Metrics tab and follow these steps:
 
 ### Availability
 
-Azure Application Insights sends requests to your application at regular intervals. It can alert you if your application isn't responding, or if it responds too slowly.
-You can use the Availability Test feature in Application Insights to monitor the availability of applications in Azure Spring Cloud. This feature is a recurring test to monitor the availability and responsiveness of your micro-services at regular intervals. It can proactively alert you if your services aren't responding or if they respond too slowly.
+Next, on the left, under the Investigate section, select **Availibity**.
 
 ![availability](../media/4-petclinic-microservices-availability.jpg)
 
+Azure Application Insights sends requests to your application at regular intervals. It can alert you if your application isn't responding, or if it responds too slowly.
+You can use the Availability Test feature in Application Insights to monitor the availability of applications in Azure Spring Cloud. This feature is a recurring test to monitor the availability and responsiveness of your micro-services at regular intervals. It can proactively alert you if your services aren't responding or if they respond too slowly.
+
 ### Live Metrics
+
+Next, on the left, under the Investigate section, navigate to **Live Metrics** where you can see live metrics practically in real time, within only one second:
+
+![Live Metrics](../media/4-petclinic-microservices-live-metrics.jpg)
 
 When you deploy a new version of your web app, you want to know immediately its effect on performance. Have response times improved or worsened, or is it showing failures? Watch Live Metrics Stream in Application Insights while your deployment is happening, and you’ll see the effect immediately. If there are problems, you could back out the deployment before too many users are affected.
 Live Metrics Stream enables you to probe the beating heart of your live applications. You can select and filter metrics and performance counters to watch in real time, without any disturbance to your service. You can also inspect stack traces from sample failed requests and exceptions.
-
-On the left, navigate to **Live Metrics** where you can see live metrics practically in real time, within only one second:
-
-![Live Metrics](../media/4-petclinic-microservices-live-metrics.jpg)
 
 Scroll down the metrics to see the metrics for each microservice:
 

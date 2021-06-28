@@ -1,14 +1,14 @@
-In this unit, we'll look at Logging concepts.
+In this unit, we'll look at Logging concepts and commands and then in the next exercise, implement the commands.
 
 ## Types of Logging
 
-With the sample application, there are two ways to see logs: log streaming of real-time logs per application instance or Log Analytics for aggregated logs with advanced query capability. In this unit, we'll explore log streaming via the Azure CLI.
-
-The log streaming feature allows developers to get real-time application logs via the Azure CLI and know what’s happening with specified application instance in your Azure Spring Cloud.
+With the sample application, there are two ways to see logs: **Log streaming** of real-time logs per application instance, or **Log Analytics** for aggregated logs with advanced query capability. In this unit, we'll explore log streaming via the Azure CLI.
 
 ### Log streaming
 
-You can use log streaming in the Azure CLI with the following command.
+Log streaming allows developers to get real-time application logs via the Azure CLI and know what’s happening with specified application instance in your Azure Spring Cloud.
+
+You can use log streaming in the Azure CLI via the Azure Shell with the following command.
 
 ```azurecli
 az spring-cloud app logs --name <application> --resource-group <resource group name> --service <service instance name> -f

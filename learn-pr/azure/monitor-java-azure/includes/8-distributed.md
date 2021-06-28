@@ -93,7 +93,7 @@ Monitoring data about your servers helps you troubleshoot and optimize for your 
 
 In Azure Database for MySQL, the slow query log is available to users. Access to the transaction log isn't supported. The slow query log can be used to identify performance bottlenecks for troubleshooting.
 
-In our sample application, your slow query logs are piped to Azure Monitor Logs through Diagnostic Logs, and you can do further analysis of your slow queries. Below are sample queries to help you get started. Make sure to update the below with your server name:
+In our sample application, your slow query logs are set up to be piped to Azure Monitor Logs through Diagnostic Logs, and you can do further analysis of your slow queries. Below are sample queries to help you get started. Make sure to update the below with your server name:
 
 * Queries longer than 10 seconds on a particular server
 

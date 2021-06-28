@@ -1,6 +1,6 @@
 In this exercise, we look at logging and Log Analytics.
 
-## Streaming logs
+## Streaming logs exercise
 
 ### Tail log
 
@@ -29,7 +29,7 @@ By default, `az spring-cloud app log tail` prints only existing logs streamed to
 az spring-cloud app logs --name customers-service --resource-group <resource group name> --service <service instance name> -f
 ```
 
-## Errors and Warnings
+## Errors and Warnings exercise
 
 We'll create an error to show the value of how developers can quickly see it, debug and find a root cause.
 

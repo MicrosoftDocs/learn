@@ -2,7 +2,7 @@ In this exercise, you'll configure a sample Application to be ready for monitori
 
 ## Introduction
 
-In this exercise, you'll clone a Git repository and run a script that sets-up an Azure Spring Cloud application and Azure Database for MySQL.
+In this exercise, you'll clone a GIT repository and run a script that sets-up an Azure Spring Cloud application and Azure Database for MySQL.
 The script deploys a well-known PetClinic application and is built around small independent services, communicating over HTTP via a REST API.
 
 ## The sample application
@@ -16,7 +16,7 @@ The PetClinic application is decomposed into four core microservices. All of the
 
 ## Set up the  sample application
 
-Open https://shell.azure.com and run the following to clone the sample repository and open the Monaco code editor:
+Open https://shell.azure.com in a browser, and run the following to clone the sample repository and open the build in Azure editor:
 
    ```bash
    git clone https://github.com/roryp/azure-spring-cloud-reference-architecture.git
@@ -27,6 +27,7 @@ Open https://shell.azure.com and run the following to clone the sample repositor
 ## Setup and run the Setup script
 
 When you run the above command, a window will pop up with the file 'deployPetClinicApp.sh' ready to be edited in the build in Azure editor.
+
 1. Edit the variables in the `deployPetClinicApp.sh` and customize the following parameters for your environment:
 
 | Variable | Description |
@@ -38,15 +39,17 @@ When you run the above command, a window will pop up with the file 'deployPetCli
 | mysql_server_admin_name | Username for the MySQL Administrator. The admin name can't be "azure_superuser", "admin", "administrator", "root", "guest, or "public" |
 | mysql_server_admin_password | A new password for the server admin user. The password must be 8 to 128 characters long and contain a combination of uppercase or lowercase letters, numbers, and non-alphanumeric characters (!, $, #, %, and so on).|
 
-2. Save the file by selecting the ... action panel in the top right of the editor and select Save editor.
-3. Close the editor - open the ... action panel in the top right of the editor and select Close editor.
+2. Save the file by selecting the ... action panel in the top right of the editor and select "Save".
+
+3. Close the editor - open the ... action panel in the top right of the editor and select "Close".
+
 4. Don't close the Azure Cloud Shell as next, we'll run the setup script.
 
 ## Run the setup script
 
 The script takes 15-30 minutes to run and includes the creation of an Azure spring Cloud and a MySQL instance. This sample script also populates some sample data for the monitoring logs, traces, and metrics.
 
-Open Azure Cloud Shell, and run the shell script. Leave the browser window and Azure Cloud Shell open while running. Store the URL it returns as the public endpoint for your environment:
+In the already open Azure Cloud Shell, run the below shell script. Leave the browser window and Azure Cloud Shell open while running. Store the URL it when the script finishes as the public endpoint for your environment:
 
 ```bash
 sh deployPetClinicApp.sh
@@ -54,12 +57,7 @@ sh deployPetClinicApp.sh
 
 ## Test the application
 
-The Navigate to the URL provided by the previous command to open the Pet Clinic microservice application.
-
-> [!TIP]
-> Access the app gateway and customers service from a browser with the Public Url in the format of "https://> <your-app>-api-gateway.azuremicroservices.io".
-
-Verify your apps are installed and registered via the Azure portal.
+Next, we'll verify your apps are installed and registered via the Azure portal.
 
 - Open the Azure portal
 - Select "Azure Spring Cloud" from the list of Azure services
@@ -73,6 +71,11 @@ Verify your apps are installed and registered via the Azure portal.
 - The URL for your app is listed on the left-hand side properties as "URL"
 
 ![API gateway URL](../media/3-gateway-url.jpg)
+
+In a web browser, navigate to the URL of your api-gateway to open the Pet Clinic microservice application.
+
+> [!TIP]
+> Access the Public Url in the format of "https://> <your-app>-api-gateway.azuremicroservices.io".
 
 Next, navigate to the "Owners" tab and select "Find all owners".
 Confirm your sample app is up and running, populated with data and now ready for you to explore.

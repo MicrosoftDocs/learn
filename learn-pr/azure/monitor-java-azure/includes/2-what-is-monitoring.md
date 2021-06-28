@@ -6,18 +6,18 @@ In any environment, it's important to track the way in which users use your syst
 
 ## Monitoring forms
 
-Monitoring generally takes on the four forms:
+Monitoring generally takes on four forms:
 
 - **Logs** - Permanent, immutable records of events stored in a consistent, tabular format, if not in a full database. An *event* may be indicative of one of many conditions, including:
 
-  - A change in the status of a monitored component (for example, from "busy" to "available")
-  - The completion of a task or sequence of instructions
-  - A milestone in the progression of data through a network, or the availability of units in a network
-  - An error, which in this context is a behavior that the system or application hasn't been programmed to handle or mitigate
+  - A change in the status of a monitored component (for example, from "busy" to "available").
+  - The completion of a task or sequence of instructions.
+  - A milestone in the progression of data through a network, or the availability of units in a network.
+  - An error, which in this context is a behavior that the system or application hasn't been programmed to handle or mitigate.
 
-- **Metrics** - Values that represent the relative health, stability, and availability of a service or application or the infrastructure that hosts it
+- **Metrics** - Values that represent the relative health, stability, and availability of a service or application or the infrastructure that hosts it.
 
-- **Traces** - Records of the paths of execution for programs and services, especially in a highly distributed system, indicating the sequence of instructions that may have triggered, either directly or indirectly, an event
+- **Traces** - Records of the paths of execution for programs and services, especially in a highly distributed system, indicating the sequence of instructions that may have triggered, either directly or indirectly, an event.
 
 - **Alerts** - Alerts proactively notify you when issues are found with your infrastructure or application. They allow you to identify and address issues before the users of your system notice them.
 
@@ -34,7 +34,7 @@ Azure provides **Azure Monitor**, which includes a set of services that develope
 - Metric alerts provide an alert trigger when a specified threshold is exceeded. For example, a metric alert can notify you when CPU usage is greater than 95 percent.
 - Log alerts are based on things written to log files. For example, a log alert can notify you when a web server has returned many 404 or 500 responses.
 
-You can monitor Azure applications, services, and infrastructure using any monitoring systems of your choice - such as Elastic Stack, Splunk, New Relic, Dynatrace, and App Dynamics. Though this module will focus on Azure Monitor, Log Analytics and Application Insights.
+You can monitor Azure applications, services, and infrastructure using any monitoring systems of your choice - such as Elastic Stack, Splunk, New Relic, Dynatrace, and App Dynamics. Though this module we'll focus on Azure Monitor, Log Analytics and Application Insights.
 
 ## Next steps
 

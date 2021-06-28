@@ -6,7 +6,7 @@ In this module, you'll:
 
 - Understand monitoring Java Applications on Azure.
 - Build and deploy a sample microservice application and configure it for Azure Application Performance Monitoring (APM).
-- Debug using application log stream on development machines.
+- Debug using application log streams on development machines.
 - Troubleshoot using incredible views, meaningful insights, and actionable logs and metrics.
 - Monitor the entire solution - applications, databases, and any other backend services.
 
