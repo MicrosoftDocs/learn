@@ -6,7 +6,7 @@ Remember that during training, we calculate how badly a model performs, and call
 
 ## Cost functions for classification
 
-Classification models will be judged either on their output probabilities, such as 40% chance of an avalanche, or final labels--‘no avalanche’ or ‘avalanche’. Using the probabilities can be advantageous during training because slight changes in the model will be seen in changes in probabilities, even if they aren't enough to change the final decision. Using the final labels for a cost function is more useful if we want to estimate the real-world performance of our model, for instance, on the test set. This is because, for real-world use, we'll be using the final labels, not the probabilities.
+Classification models will be judged either on their output probabilities, such as 40% chance of an avalanche, or final labels—‘no avalanche’ or ‘avalanche’. Using the probabilities can be advantageous during training because slight changes in the model will be seen in changes in probabilities, even if they aren't enough to change the final decision. Using the final labels for a cost function is more useful if we want to estimate the real-world performance of our model, for instance, on the test set. This is because, for real-world use, we'll be using the final labels, not the probabilities.
 
 ## Log loss
 

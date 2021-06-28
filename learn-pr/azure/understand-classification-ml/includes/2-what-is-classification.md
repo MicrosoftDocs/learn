@@ -1,6 +1,6 @@
-Classification models are used to make decisions or assign items into categories. Unlike regression modules, which output continuous numbers, such as heights or weights, classification models output Boolean--meaning either true or false--or categorical decisions, such as ‘apple’, ’banana’ or ‘cherry’.
+Classification models are used to make decisions or assign items into categories. Unlike regression modules, which output continuous numbers, such as heights or weights, classification models output Boolean—either true or false—or categorical decisions, such as ‘apple’, ’banana’ or ‘cherry’.
 
-There are many types of classification models. Some work similarly to classical regression models, while others are fundamentally different. One of the best models to learn initially is called logistic regression.
+There are many types of classification models. Some work similarly to classical regression models, while others are fundamentally different. One of the best models to learn initially is called _logistic regression._
 
 ## What is logistic regression?
 
@@ -8,7 +8,7 @@ Logistic regression is a type of _classification_ model that works similarly to 
 
 ![logistic regression example graph](../media/2-logistic-regression-graph.png)
 
-Logistic regression is better for estimating Boolean--true/false--outcomes than linear regression because the logistic curve always produces a value between 0 (false) and 1 (true). Anything between these two values can be thought of as a probability.
+Logistic regression is better for estimating Boolean outcomes than linear regression because the logistic curve always produces a value between 0 (false) and 1 (true). Anything between these two values can be thought of as a probability.
 
 For example, let’s say we're trying to predict if an avalanche will occur today. If our logistic regression model gives us the value of 0.3, then it estimates there's a 30% probability of an avalanche.
 
