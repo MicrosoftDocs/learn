@@ -30,7 +30,7 @@ A Password Manager enforces password controls, including storing passwords, enfo
 
 Currently, the most successful method for protecting our security depends heavily on training individuals. The training needs to be interesting, engaging, up-to-date, and mandatory. The lessons need to be focused on helping people recognize possibly malicious actions on their network and systems. Following training, fake phishing emails and other scams need to be sent to the trainees to reinforce their information. The following is a sample of a fake testing Microsoft notice about “Unusual Sign-in activity." The email directs users to a malicious website. 
 
-:::image type="content" source="../media/ms_tech_support-scam.webp" alt-text="A fake message supposedly from Microsoft Support with a fictitious phone number ":::
+:::image type="content" source="/media/ms_tech_support-scam.webp" alt-text="A fake message supposedly from Microsoft Support with a fictitious phone number ":::
 
 Some rules of thumb to help protect yourself and your company from social media hackers.
 
