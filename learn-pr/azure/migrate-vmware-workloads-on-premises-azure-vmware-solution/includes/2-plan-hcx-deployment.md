@@ -1,4 +1,4 @@
-VMware HCX (HCX) Advanced Cloud Manager deploys by default in Azure VMware Solution. After deployment, the next step involves planning to deploy the HCX Connector on-premises. To connect on-premises VMware environments with Azure VMware Solution, you need to configure a *site pair* between the source and destination. A site pair establishes the network connectivity needed for management, authentication, and orchestration of HCX services.
+VMware HCX (HCX) Advanced Cloud Manager deploys by default in Azure VMware Solution. After deployment, the next step involves planning to deploy HCX Connector on-premises. To connect on-premises VMware environments with Azure VMware Solution, you need to configure a *site pair* between the source and destination. A site pair establishes the network connectivity needed for management, authentication, and orchestration of HCX services.
 
 ## What is VMware HCX?
 
@@ -23,7 +23,7 @@ For older versions of vSphere (5.0+), HCX Connector needs to be deployed and dow
 
 Azure VMware Solution configures an Azure ExpressRoute circuit during deployment of the resource in Azure. You then need to peer the circuit into an Azure virtual network for access to all resources in Azure.
 
-Next, configure the Global Reach feature of ExpressRoute between the on-premises VMware environment and the Azure VMware Solution ExpressRoute, by using a separate ExpressRoute circuit. Global Reach enables east-west connectivity between both ExpressRoute circuits by using BGP. That connectivity routes all traffic privately within the Microsoft global backbone. Before the HCX Connector can be deployed and a site pairing established, you must enable Global Reach.
+Next, configure the Global Reach feature of ExpressRoute between the on-premises VMware environment and the Azure VMware Solution ExpressRoute, by using a separate ExpressRoute circuit. Global Reach enables east-west connectivity between both ExpressRoute circuits by using BGP. That connectivity routes all traffic privately within the Microsoft global backbone. Before HCX Connector can be deployed and a site pairing established, you must enable Global Reach.
 
 All required network ports need to be open for communication between the on-premises VMware environment and Azure VMware Solution. The following table outlines all ports, protocols used, and what VMware components need open ports for configuration.
 

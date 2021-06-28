@@ -33,7 +33,7 @@ After you confirm the networking ports, and test them as open, you take the foll
 
     :::image type="content" source="../media/5-review-services-enabled-configuration.png" alt-text="Screenshot of where to review the services enabled for Azure VMware Solution.":::
 
-1. In **Advanced Configuration - Override Uplink Network profiles** select **Continue**. This is an optional configuration.
+1. In **Advanced Configuration - Override Uplink Network profiles**, select **Continue**. This is an optional configuration.
 
     :::image type="content" source="../media/5-advanced-configuration-optional.png" alt-text="Screenshot of the optional advanced configuration to override uplink network profiles.":::
 

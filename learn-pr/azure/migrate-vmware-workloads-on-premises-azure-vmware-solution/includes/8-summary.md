@@ -3,8 +3,7 @@ In this module, you learned about the deployment and configuration steps to set 
 First, you learned about the planning that's required to deploy VMware HCX. Next, you learned how to:
 
 - Download the OVA file from the portal.
-- Deploy the HCX Connector on-premises.
-- Configure the HCX Connector on-premises.
+- Deploy and configure HCX Connector on-premises.
 
 From there, you learned how to create the following components to migrate VMs:
 

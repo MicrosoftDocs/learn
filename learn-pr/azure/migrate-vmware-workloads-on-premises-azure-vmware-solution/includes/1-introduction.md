@@ -20,7 +20,7 @@ Imagine you work for a healthcare company that runs production workloads on a VM
 
 ## What will we be doing?
 
-First, you'll learn how to plan for the VMware HCX Connector deployment on-premises. From there, you'll learn how to deploy the HCX Connector on-premises and connect the appliance to Azure VMware Solution. Additionally, you'll learn about the steps required to ensure the service is configured correctly. After HCX is deployed and configured, you'll learn how to migrate VMware workloads from on-premises to Azure VMware Solution.
+First, you'll learn how to plan for the VMware HCX Connector deployment on-premises. From there, you'll learn how to deploy HCX Connector on-premises and connect the appliance to Azure VMware Solution. Additionally, you'll learn about the steps required to ensure the service is configured correctly. After HCX is deployed and configured, you'll learn how to migrate VMware workloads from on-premises to Azure VMware Solution.
 
 ## What is the main goal?
 
