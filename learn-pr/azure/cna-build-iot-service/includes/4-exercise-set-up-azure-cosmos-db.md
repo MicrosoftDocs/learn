@@ -33,7 +33,7 @@ To perform this exercise, you need:
 
 1. On the **Global Distribution** tab of the **Create Azure Cosmos DB Account - Core (SQL)** blade, accept the default settings, and then select **Next: Networking**.
 1. On the **Networking** tab of the **Create Azure Cosmos DB Account - Core (SQL)** blade, accept the default settings, and then select **Next: Backup Policy**.
-1. On the **Backup Policy** tab of the **Create Azure Cosmos DB Account - Core (SQL)** blade, specify the following settings (leave others with their default values), and then select **Next: Encryption **:
+1. On the **Backup Policy** tab of the **Create Azure Cosmos DB Account - Core (SQL)** blade, specify the following settings (leave others with their default values), and then select **Next: Encryption**:
 
    | Setting | Configuration |
    | --- | --- |
