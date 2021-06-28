@@ -2,7 +2,7 @@ The data we use to train a model is often called a _training dataset._ We’ve a
 
 ## What is overfitting?
 
-A model has been _overfit_ if ir works better on the training data than it does on other data. The name refers to the fact that the model has been fit so well that it's memorized details of the training set, rather than finding broad rules that will apply to other data. Overfitting is common but not desirable. At the end of the day, we only care how well our model works on real-world data.
+A model has been _overfit_ if it works better on the training data than it does on other data. The name refers to the fact that the model has been fit so well that it's memorized details of the training set, rather than finding broad rules that will apply to other data. Overfitting is common but not desirable. At the end of the day, we only care how well our model works on real-world data.
 
 ## How can overfitting be avoided?
 
@@ -34,7 +34,7 @@ The job of the training dataset is to train the model – we’ve seen training 
 
 The point of a test dataset is twofold.
 
-Firstly if test performance stops improving during training, we can stop – there is no point in continuing. If we do continue, we can end up encouraging the model to learn details about the training dataset that aren't in the test dataset, which is overfitting.
+First, if test performance stops improving during training, we can stop – there is no point in continuing. If we do continue, we can end up encouraging the model to learn details about the training dataset that aren't in the test dataset, which is overfitting.
 
 Secondly, we can use a test dataset after training. This gives us an indication of how well the final model will work when it sees ‘real-world’ data it hasn't seen before.
 

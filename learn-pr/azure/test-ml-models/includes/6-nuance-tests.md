@@ -8,7 +8,7 @@ For example, let’s say we're trying to find the relationship between number of
 
 ## Test sets aren't free
 
-We’ve already seen how the more training data we have, the less likely it's that our model will overfit. Similarly, the larger the test sets, the more we feel we can trust our test results. However, we usually work with finite amounts of data – and a datapoint cannot be in both the training and the test set. This means that as we get larger test sets, we get smaller training datasets and vice versa. Exactly how much data should be sacrificed to appear in the test dataset depends on individual circumstances, with anything between 10 - 50% being relatively common, depending on the volume of data available.
+We’ve already seen how the more training data we have, the less likely it's that our model will overfit. Similarly, the larger the test sets, the more we feel we can trust our test results. However, we usually work with finite amounts of data and a datapoint cannot be in both the training and the test set. This means that as we get larger test sets, we get smaller training datasets and vice versa. Exactly how much data should be sacrificed to appear in the test dataset depends on individual circumstances, with anything between 10 - 50% being relatively common, depending on the volume of data available.
 
 ## Train and test isn't the only approach
 
@@ -16,9 +16,9 @@ It’s worthwhile keeping in mind that train-and-test is common but not the only
 
 ### The hold-out approach
 
-The hold-out approach is like train-and-test, but instead of splitting a dataset into two, it's split into three: _training, test, also known as validation, and hold-out._ The training and test datasets are as we’ve described above. The hold-out dataset is a kind of test set that is used only once, when we're ready to deploy our model for real-world use. In other words, it's not used until we have finish experimenting with different kinds of training regimens, different kinds of models, and so on.
+The hold-out approach is like train-and-test, but instead of splitting a dataset into two, it's split into three: _training, test—also known as validation—and hold-out._ The training and test datasets are as we’ve described above. The hold-out dataset is a kind of test set that is used only once, when we're ready to deploy our model for real-world use. In other words, it's not used until we have finish experimenting with different kinds of training regimens, different kinds of models, and so on.
 
-This approach tackles the fact that we usually experiment with different models and training regimens. For example, we fit a model, find it doesn't work well with the test dataset, change some aspects of the model being trained, and try again until we can get a good result. This means we're purposefully altering our model to work for a particular set of data--the test set--just like normal training does with the training dataset. By doing this, we can end up with a model that is essentially too overtrained to work on our test dataset!
+This approach tackles the fact that we usually experiment with different models and training regimens. For example, we fit a model, find it doesn't work well with the test dataset, change some aspects of the model being trained, and try again until we can get a good result. This means we're purposefully altering our model to work for a particular set of data, just like normal training does with the training dataset. By doing this, we can end up with a model that is essentially too overtrained to work on our test dataset!
 
 The idea of a third dataset is we can test for this too. This approach means splitting the data three ways, which means we start with even less training data. If we don't have a lot of data to work with, this approach can reduce our ability to obtain a good model.
 
