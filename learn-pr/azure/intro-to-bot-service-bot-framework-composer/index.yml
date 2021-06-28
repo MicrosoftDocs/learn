@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.intro-to-bot-service-bot-framework-composer
 metadata:
-  moduleType: introduction        # Do not edit: type must be 'introduction'
-  title: Introduction to Azure Bot Service and Bot Framework Composer          # Do not edit: title must be "Introduction to (product)"
-  description: "TODOs"             # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 6/15/2021             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
-  author: jasonkellingtonwaypoint      # GitHub ID of the Microsoft employee either authoring or project-managing this content
-  ms.author: v-jaske           # Alias     of the Microsoft employee either authoring or project-managing this content
-  ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"
-  ms.prod: learning-azure         # Edit as appropriate for your portfolio area
+  moduleType: introduction
+  title: Introduction to Azure Bot Service and Bot Framework Composer
+  description: "TODOs"
+  ms.date: 6/15/2021
+  author: jasonkellingtonwaypoint
+  ms.author: v-jaske
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: Introduction to Azure Bot Service and Bot Framework Composer
 summary: Introduction to Azure Bot Service and Bot Framework Composer
 abstract: |
