@@ -16,7 +16,7 @@ Implementing Azure AD-integrated apps warrants the following special considerati
     > The Microsoft Authentication Library offers an easy-to-use approach for implementing a wide range of authentication scenarios, including Conditional Access, device-wide single sign-on (SSO), and token caching.
 
     > [!NOTE]
-    > This module is not intended to provide a complete guidance and best practices regarding integrating cloud-native applications with Azure AD, but rather is intended to introduce concepts of Azure AD authentication and multi-tenancy.
+    > This module is not intended to provide a complete guidance and best practices regarding integrating cloud-native applications with Azure AD, but rather is intended to introduce concepts of Azure AD authentication and multitenancy.
 
 ## What are additional considerations related to multitenant Azure AD-integrated apps?
 
