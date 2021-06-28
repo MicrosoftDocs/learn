@@ -3,7 +3,7 @@ uid: learn.machinelearning.introduction-to-classical-machine-learning.gradient-d
 title: Optimize models using gradient descent
 metadata:
   title: Optimize models using gradient descent
-  description: Description :)
+  description: Conceptual unit about optimizing models using gradient descent
   ms.date: 05/25/2021
   author: TomReidNZ
   ms.author: jasdeb

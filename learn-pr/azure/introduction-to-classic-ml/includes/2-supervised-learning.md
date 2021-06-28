@@ -18,15 +18,15 @@ Supervised learning can be thought of as learning by example. In supervised lear
 
 Meaning that, while we can have very simple objective functions, we need both:
 
-1. Features that are provided as inputs to the model, and
-2. Labels, which are the correct answers we want the model to be able to produce.
+* Features that are provided as inputs to the model, and
+* Labels, which are the correct answers we want the model to be able to produce.
 
 ![Machine learning lifecycle with labels.](../media/2-2-b.jpg)
 
 For example, consider our desire to predict what the temperature will be on January 31st of a given year. For this prediction, we'll need data with two components:
 
-1. Feature: Date
-2. Label: Daily temperature (for example, from historical records)
+* Feature: Date
+* Label: Daily temperature (for example, from historical records)
 
 In the scenario, we would provide the date feature to the model. The model would predict the temperature and we would compare this to the datasets ‘correct’ temperature. The objective function can then calculate how well the model worked, and adjustments can then be made to the model.
 

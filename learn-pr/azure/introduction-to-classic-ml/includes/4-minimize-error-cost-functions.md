@@ -1,12 +1,12 @@
 The learning process repeatedly alters a model until it can make high-quality estimates. To determine how well a model is performing, it uses mathematics in the form of a cost function, also known as an objective function. To understand what objective function is, let’s break it down a little.
 
-## Error, Cost, and Loss
+## Error, cost, and loss
 
 In supervised learning, error, cost, and loss all refer to the number of mistakes that a model makes in predicting one or more labels.
 
 These three terms are used somewhat loosely and often interchangeably in machine learning, which can cause some confusion when reading from multiple sources. For the sake of simplicity, we'll use them interchangeably here. Cost is calculated using mathematics, it isn't a qualitative judgment. For example, if a model predicts that a daily temperature will be 40°F, but the actual value is 35°F, we might say it has an error of 5°F.
 
-## Minimizing Cost is our Goal
+## Minimizing cost is our goal
 
 Given that cost indicates how badly a model works, our goal is to have zero cost. In other words, we want to train the model to make no mistakes at all. This idea is often impossible though, so instead we set a slightly more nebulous goal of training the model to have the minimum cost possible.
 
