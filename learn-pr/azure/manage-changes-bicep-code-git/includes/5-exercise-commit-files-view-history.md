@@ -70,6 +70,12 @@ Now that you've made a change to the _main.bicep_ file, let's inspect the differ
 
 Now that you've reviewed the changes and are satisfied with it, you commit the update to the file. This time, you commit using Visual Studio Code.
 
+1. Open the **Source Control** panel.
+
+1. Select each of the two changed files and stage them. You can click the plus (`+`) icon on each file, or you can right-click each file and select **Stage Changes**.
+
+   :::image type="content" source="../media/5-vscode-stage.png" alt-text="Screenshot of Visual Studio Code showing the Source Control panel, with the main.bicep context menu displayed, and the Stage Changes menu item highlighted." border="true":::
+
 1. At the top of the the **Source Control** panel, enter a descriptive commit message, like:
 
    ```plaintext

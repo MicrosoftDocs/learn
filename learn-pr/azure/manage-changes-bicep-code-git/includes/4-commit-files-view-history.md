@@ -64,7 +64,7 @@ git commit --message "Add Cosmos DB account definition."
 > - _Remove storage account since it's been replaced by a Cosmos DB database._
 > - _Add Application Insights resource definition and integrate with function app._
 
-Visual Studio Code can commit to your Git repository too. When you use Visual Studio Code's Git integration, you can commit without explicitly staging the files. Visual Studio Code automatically stages all of the changed files. If you want, you can also stage and unstage files using the **Source Control** panel.
+Visual Studio Code can commit to your Git repository too. When you use Visual Studio Code's Git integration, if you haven't already staged the files, Visual Studio Code asks if you want it to stage all of the changed files for you. You can even set this as the default behavior. Or, if you prefer, you can manually stage and unstage files using the **Source Control** panel.
 
 ## View a file's history
 
