@@ -28,19 +28,19 @@ You start with one of the templates that your team has already created. The temp
 
 1. Open Visual Studio Code.
 
-2. Create a new file called *main.bicep*.
+1. Create a new file called *main.bicep*.
 
-3. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
  
    You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 
-4. Copy the following code into *main.bicep*.
+1. Copy the following code into *main.bicep*.
 
    :::code language="bicep" source="code/5-starting.bicep" :::
 
    Notice that you set the `backupPolicy` to `Continuous`. This configures Cosmos DB to take backups of your data on a continuous basis instead of periodically.
 
-5. Save the file.
+1. Save the file.
 
 ::: zone-end
 
@@ -72,11 +72,11 @@ When you work with template specs, it's important you consider how others will u
 
 1. Update the `location` parameter definition to add a description:
 
-   :::code language="plaintext" source="code/5-template.bicep" range="1-2" highlight="1" :::
+   :::code language="bicep" source="code/5-template.bicep" range="1-2" highlight="1" :::
 
 1. Update the `cosmosDBAccountName` parameter definition to add a description, and to specify the minimum and maximum length of the name:
 
-   :::code language="plaintext" source="code/5-template.bicep" range="4-7" highlight="1-3" :::
+   :::code language="bicep" source="code/5-template.bicep" range="4-7" highlight="1-3" :::
 
 1. Save the file.
 

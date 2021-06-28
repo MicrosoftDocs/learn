@@ -20,7 +20,7 @@ In the example above, the template parameters use the `allowedValues`, `maxValue
 
 It's important that your template is easy for anyone in your organization to understand and use, especially the parameters. Make sure you use clear and understandable parameter names, and use parameter decorators to provide information about the values that you expect your parameters to include, like in this example:
 
-:::code language="plaintext" source="code/3-parameter.bicep" highlight="1-5, 8-9, 12, 15-16" :::
+:::code language="bicep" source="code/3-parameter.bicep" highlight="1-5, 8-9, 12, 15-16" :::
 
 In the example above, the template parameters use the `@allowedValues`, `@maxValue`, and `@description` decorators to make it clear what the parameters are for and the impact of setting their values. The template also includes the `secure` decorator to indicate that the `key` parameter contains secret data.
 

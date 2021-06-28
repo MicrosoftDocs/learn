@@ -3,17 +3,16 @@ uid: learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions
 title: Analyze a scenario and map it to a HDInsight configuration option
 metadata:
   title: Analyze a scenario and map it to a HDInsight configuration option
-  description: Analyze a scenario and map it to a HDInsight configuration option
-  ms.date: 10/25/2019
+  description: "Analyze a scenario and map it to a HDInsight configuration option"
+  ms.date: 06/25/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: False
+azureSandbox: false
 durationInMinutes: 9
 content: |
   [!include[](includes/4-analyze-scenario.md)]
-
 quiz:
   title: "Knowledge check"
   questions:
