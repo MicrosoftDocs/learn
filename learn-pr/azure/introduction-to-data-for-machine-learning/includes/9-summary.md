@@ -15,7 +15,7 @@ We learned that a dataset it helpful if it:
 
 * contains relevant information,
 * is complete,
-* is a good representation of the population (real world).
+* is a good representation of the population (real-world).
 
 If data aren't complete, we can take steps to make sure that incomplete data doesn't cause big issues. When doing so, we need to be careful not to introduce new issues, such as making data no longer representative.
 

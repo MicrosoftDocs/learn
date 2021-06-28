@@ -1,4 +1,4 @@
-Machine learning’s predictive power comes from the fact that it's shaped by data. A side effect is that models trained only on small amounts of data rarely perform well in the real world. This is because small amounts of data aren't usually good representations of the real world. For example, if we selected four people at random from the world, they wouldn't be very representative of the average person on Earth. By contrast, if we selected 1 billion people, our data would probably be quite representative.
+Machine learning’s predictive power comes from the fact that it's shaped by data. A side effect is that models trained only on small amounts of data rarely perform well in the real-world. This is because small amounts of data aren't usually good representations of the real-world. For example, if we selected four people at random from the world, they wouldn't be very representative of the average person on Earth. By contrast, if we selected 1 billion people, our data would probably be quite representative.
 
 But it’s not all about quantity. It can be equally important that data:
 

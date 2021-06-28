@@ -4,7 +4,7 @@ Here, we explore how data can be categorized, stored, and interpreted both by hu
 
 ## Scenario: the last voyage of the Titanic
 
-As an eager marine archaeologist, you have an unusually keen interest in maritime disasters. Late one night while scrolling between images of whale bones, and ancient scrolls about Atlantis, you come across a public dataset listing people known to be on the Titanic during its first – and last – voyage. Captured by the balance between fate and chance, you ponder – what were the factors that dictated whether a person survived this famous shipwreck? Data from this period are slightly patchy – a lot of information for certain passengers is unknown. You’ll need to find ways to patch up this data before analyzing it in full.
+As an eager marine archaeologist, you have an unusually keen interest in maritime disasters. Late one night while scrolling between images of whale bones and ancient scrolls about Atlantis, you come across a public dataset listing people known to be on the Titanic during its first – and last – voyage. Captured by the balance between fate and chance, you ponder – what were the factors that dictated whether a person survived this famous shipwreck? Data from this period are slightly patchy – a lot of information for certain passengers is unknown. You’ll need to find ways to patch up this data before analyzing it in full.
 
 ## Prerequisites
 

@@ -1,6 +1,6 @@
 So far, we’ve covered encoding continuous data (floating point numbers), ordinal data (usually integers), and binary categorical data such as survived/died, male/female.
 
-Here we'll look at how to encode, and categorical data that have more than two classes (options). We also explore how decisions we make to improve our models can actually damage their performance.
+Here we'll look at how to encode, and categorical data that have more than two classes. We also explore how decisions we make to improve our models can actually damage their performance.
 
 ## Categorical Data aren't numerical
 
@@ -101,7 +101,7 @@ Cabin doesn't provide useful information, because it simply corresponds to the t
 
 ### One-Hot Encoding Can Reduce Statistical Power
 
-One-hot encoding reduces statistical power much more than continuous or ordinal data because it requires multiple columns –one for each possible categorical value. For example, one-hot encoding port of embarkation adds three model inputs (C, S, and Q).
+One-hot encoding reduces statistical power much more than continuous or ordinal data because it requires multiple columns–one for each possible categorical value. For example, one-hot encoding port of embarkation adds three model inputs (C, S, and Q).
 
 As a rule of thumb, a categorical variable is worth including if the number of categories is substantially lower than the number of samples (dataset rows) and this category provides information that isn't already available to the model through other inputs.
 

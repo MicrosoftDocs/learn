@@ -8,9 +8,9 @@ When we work with data, sometimes we need to be aware of what kind of thing it r
 
 _Continuous data_ are numbers that can be increased or decreased by any amount. For example, you can add 1 mm to 1 m resulting in 1.001 m.
 
-Categorical data are data that don’t fall on a spectrum. In our scenario, people on the Titanic were categorized as “staff” or “passengers”. Categorical data can’t be stored as numbers in an obvious way.
+_Categorical data_ are data that don’t fall on a spectrum. In our scenario, people on the Titanic were categorized as “staff” or “passengers”. Categorical data can’t be stored as numbers in an obvious way.
 
-Ordinal data are categorical data that have an order, and so can be stored as numbers. For example, big, medium, small are ordinal data because they can be ranked like so: big > medium > small. By contrast, ‘apple’, ‘orange’ and ‘coconut’ are categorical because they can’t be ranked. Ordinal data can also refer to numbers that can be increased or decreased, but only by set amounts. For instance, the number of people boarding a boat is guaranteed to be a whole number: no-one can half board.
+_Ordinal data_ are categorical data that have an order, and so can be stored as numbers. For example, big, medium, small are ordinal data because they can be ranked like so: big > medium > small. By contrast, ‘apple’, ‘orange’ and ‘coconut’ are categorical because they can’t be ranked. Ordinal data can also refer to numbers that can be increased or decreased, but only by set amounts. For instance, the number of people boarding a boat is guaranteed to be a whole number: no-one can half board.
 
 _IDs_ are a special kind of categorical data where each sample has its own ID. For example, in our dataset, each person on the Titanic has their own ID, even if they have the same name as someone else. Identities are useful for helping us find our way around a dataset, but they aren't data we analyze per-se.
 
@@ -18,7 +18,7 @@ _IDs_ are a special kind of categorical data where each sample has its own ID. F
 
 All data we use for machine learning must be able to be stored and processed by a computer. While we can put almost any data we want on a piece of paper with a pencil, computers store information as series of 0's and 1's. This means how we use information is much more restricted.
 
-Datatype, refers to the type of data that is stored on a computer. The common primitive (basic) datatypes are:
+Datatype, refers to the type of data that is stored on a computer. The common basic datatypes are:
 
 * integers: counting numbers, like 2
 * floating-point numbers: numbers with decimal places, like 2.43
