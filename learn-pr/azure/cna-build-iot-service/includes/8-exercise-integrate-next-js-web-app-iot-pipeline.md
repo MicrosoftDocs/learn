@@ -184,11 +184,11 @@ In this task, you'll validate the functionality of the Azure web app hosting the
    
  1.  This command builds the Next.js application you pushed to the Azure web app.
  
-     :::image type="content" source="../media/8-next.js-web-app-build.png" alt-text="Screenshot of the start of the build process in the App Service Editor console of the Azure web app.":::
+     :::image type="content" source="../media/8-next-js-web-app-build.png" alt-text="Screenshot of the start of the build process in the App Service Editor console of the Azure web app.":::
   
 1. Wait for the build process to complete. This might take about 5 minutes.
       
-      :::image type="content" source="../media/8-next.js-web-app-build-completed.png" alt-text="Screenshot of the completed build process in the App Service Editor console of the Azure web app.":::
+      :::image type="content" source="../media/8-next-js-web-app-build-completed.png" alt-text="Screenshot of the completed build process in the App Service Editor console of the Azure web app.":::
   
 1. Close the web browser tab displaying the **App Service Editor** page.
 1. On the Azure portal blade displaying the properties of the web app, in the vertical menu, select the first entry, labeled **Overview**. On the **Essentials** pane, select the link labeled **URL**.
@@ -198,7 +198,7 @@ In this task, you'll validate the functionality of the Azure web app hosting the
       
 1. Verify that the web browser page displays the **Next.js - Cosmos DB IoT telemetry data** page with the listing of the IoT telemetry data points retrieved from the Azure Cosmos DB collection.
 
-     :::image type="content" source="../media/8-next.js-web-app-deployed.png" alt-text="Screenshot of the page of the deployed Azure web app containing the listing of the Azure Cosmos DB items.":::
+     :::image type="content" source="../media/8-next-js-web-app-deployed.png" alt-text="Screenshot of the page of the deployed Azure web app containing the listing of the Azure Cosmos DB items.":::
 
 ## Results
 
