@@ -1,5 +1,4 @@
-Microsoft Project Bonsai is a low-code AI platform. Accelerate development for
-control systems that provide operator guidance or make independent decisions.
+Microsoft Project Bonsai is a low-code AI platform. Accelerate development for control systems that provide operator guidance or make independent decisions.
 
 Build AI-powered control systems to:
 
@@ -7,8 +6,7 @@ Build AI-powered control systems to:
 - Improve production efficiency.
 - Help reduce downtime.
 
-To help you understand how Bonsai works, we will start by covering the underlying
-logical elements, which are displayed in the following image:
+To help you understand how Bonsai works, we will start by covering the underlying logical elements, which are displayed in the following image:
 
 - Training simulator
 - Training engine
@@ -24,25 +22,18 @@ logical elements, which are displayed in the following image:
 
 ## Example scenario
 
-Suppose you work for a soap manufacturing company. The company uses an extrusion
-process to produce the soap and an advanced process control (APC) system to
-manage production.
+Suppose you work for a soap manufacturing company. The company uses an extrusion process to produce the soap and an advanced process control (APC) system to manage production.
 
-The Engineers that oversee the APC system think that making changes to the
-manufacturing process could improve production yield. To make the changes, the
-Engineers send new commands to the APC system to control manufacturing. The APC
-system then adjusts the manufacturing equipment accordingly.
+The engineers that oversee the APC system think that making changes to the manufacturing process could improve production yield. To make the changes, the engineers send new commands to the APC system to control manufacturing. The APC system then adjusts the manufacturing equipment accordingly.
 
-Because of the complexity of the soap manufacturing process, it can be difficult
-to control, and therefore optimize, production. Some of the variables include:
+Because of the complexity of the soap manufacturing process, it can be difficult to control, and therefore optimize, production. Some of the variables include:
 
 - Adjustments in the parts of the manufacturing equipment. 
 - Variations in raw materials.
 - Wear and tear on the machinery.
 - Residue from previous production runs. 
 
-The soap company can benefit from using Project Bonsai because a Bonsai brain
-would be able to:
+The soap company can benefit from using Project Bonsai because a Bonsai brain would be able to:
 
 - Automatically signal the APC system.
 - Adapt quickly to production changeovers.

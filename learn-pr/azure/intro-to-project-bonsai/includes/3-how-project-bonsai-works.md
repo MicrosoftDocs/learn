@@ -22,18 +22,14 @@ using AI.
 
 You then:
 
-1. Create a simulation that models the real-world environment in which the AI
-   will operate. 
+1. Create a simulation that models the real-world environment in which the AI will operate. 
 1. Test and verify the simulation locally.
-1. Use a connector to import the simulation as a managed simulation package in
-   Bonsai. 
+1. Use a connector to import the simulation as a managed simulation package in Bonsai. 
 1. Design a teaching plan in Inkling using goals and objectives.
 1. Iteratively train and assess the performance of the Bonsai brain.
-1. When you feel the brain is trained appropriately, export the now fully
-   trained AI as a Docker container.
+1. When you feel the brain is trained appropriately, export the now fully trained AI as a Docker container.
 1. Run verification against the exported AI. 
-1. When you are satisfied with the AI performance, deploy the Docker container
-   and integrate it with your real-world control system.
+1. When you are satisfied with the AI performance, deploy the Docker container and integrate it with your real-world control system.
 
 ## Work with simulations
 
@@ -63,7 +59,7 @@ When considering your simulation approach, it may be helpful to look for people 
 > [!TIP]
 > You can often repurpose simulations originally created for other purposes, and enhance them to work with the Bonsai training engine. 
 
-Try to locate  simulations with the following characteristics:
+Try to locate simulations with the following characteristics:
 
 - Used to train human operators.
 - Used in conjunction with production systems.

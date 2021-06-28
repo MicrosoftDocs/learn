@@ -1,26 +1,14 @@
-Microsoft Project Bonsai is a low-code AI platform that works with machine
-teaching simulations built on simulation software you may already use.
-By understanding what Bonsai is, and what it can do, you can better determine
-whether it might benefit your organization.
+Microsoft Project Bonsai is a low-code AI platform that works with machine teaching simulations built on simulation software you may already use. By understanding what Bonsai is, and what it can do, you can better determine whether it might benefit your organization.
 
 ## What is low-code AI-powered automation?
 
-Low-code AI solutions let Engineers and Data Scientists with varying levels of
-development experience successfully build AI-powered control systems. Low-code
-solutions typically use visual development environments in addition to a more
-traditional coding environment. Visual editors let developers focus on creating
-the right solution rather than focusing on the tools used to create the
-solution.
+Low-code AI solutions let engineers and data scientists with varying levels of development experience successfully build AI-powered control systems. Low-code solutions typically use visual development environments in addition to a more traditional coding environment. Visual editors let developers focus on creating the right solution rather than focusing on the tools used to create the solution.
 
 ## Project Bonsai definition
 
-With Bonsai, you can codify what the AI should learn using human-friendly
-statements like "avoid" and "maximize" instead of having to explicitly define
-detailed reward and terminal functions. 
+With Bonsai, you can codify what the AI should learn using human-friendly statements like "avoid" and "maximize" instead of having to explicitly define detailed reward and terminal functions. 
 
-Bonsai includes integrated support for popular simulation software packages like
-Simulink, MATLAB, and AnyLogic. Let your simulation developers build machine
-teaching simulations using familiar software.
+Bonsai includes integrated support for popular simulation software packages such as: Simulink, MATLAB, and AnyLogic. Let your simulation developers build machine teaching simulations using familiar software.
 
 AI training with Bonsai consists of the following components which work together: 
 
@@ -69,33 +57,20 @@ The training engine in Bonsai has four components. These are described in the fo
 
 ### What is the Bonsai training curriculum?
 
-The training curriculum is made up of **goals** and **objectives**. Goals and
-objectives let you use your subject matter expertise to break complex problems
-into key objectives for the AI to learn. 
+The training curriculum is made up of **goals** and **objectives**. Goals and objectives let you use your subject matter expertise to break complex problems into key objectives for the AI to learn. 
 
-Goals are a high-level specification of what you want the system to
-learn. They encapsulate your intentions for the AI without having to craft
-explicit reward functions or early termination definitions. Objectives are 
-directives like "avoid" and "minimize" that the training engine uses to direct
-and judge how well the AI is learning. 
+Goals are a high-level specification of what you want the system to learn. They encapsulate your intentions for the AI without having to craft explicit reward functions or early termination definitions. Objectives are directives like "avoid" and "minimize" that the training engine uses to direct and judge how well the AI is learning. 
 
 :::image type="content" source="../media/training-curriculum.png" alt-text="The same graphic is displayed that highlights the training curriculum section..":::
 
-Bonsai uses a proprietary language called Inkling to encode goals and
-objectives. Inkling code defines what (and how) you want to teach your AI. An
-expression in Inkling code is any syntactic entity that can be evaluated to
-determine its value including comments, identifies, keywords, literals, and
-operators.
+Bonsai uses a proprietary language called Inkling to encode goals and objectives. Inkling code defines what (and how) you want to teach your AI. An expression in Inkling code is any syntactic entity that can be evaluated to
+determine its value including comments, identifies, keywords, literals, and operators.
 
 
 
 ### What are Bonsai brains?
 
-A Bonsai brain is an AI model in the process of learning on the Bonsai platform.
-Brains are guided by the training engine as they learn the provided curriculum.
-You can save new brain versions and revisit previous versions as you develop
-your curriculum. The final, trained brain that you export has the ability to
-control and optimize your real-world systems.
+A Bonsai brain is an AI model in the process of learning on the Bonsai platform. Brains are guided by the training engine as they learn the provided curriculum. You can save new brain versions and revisit previous versions as you develop your curriculum. The final, trained brain that you export has the ability to control and optimize your real-world systems.
 
 When you make significant changes to your training curriculum, Bonsai creates a new version of your brain. 
 
