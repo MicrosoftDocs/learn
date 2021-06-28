@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-java-azure.logging
-title: Log Streaming
+title: Log streaming
 metadata:
   unitType: learning-content
   title: Log Streaming
-  description: Log Streaming
+  description: We'll discuss Logging concepts and commands
   ms.date: 4/8/2021
   author: roryp
   ms.author: ropreddy

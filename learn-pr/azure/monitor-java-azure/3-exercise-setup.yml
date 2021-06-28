@@ -3,8 +3,8 @@ uid: learn.monitor-java-azure.exercise-setup
 title: Exercise  - Set up the exercise environment
 metadata:
   unitType: exercise
-  title: Exercise  - Set up the exercise environment
-  description: Monitoring exercise setup
+  title: Exercise  - Set up the sample application environment
+  description: In this exercise we will setup the sample application environment
   ms.date: 4/8/2021
   author: roryp
   ms.author: ropreddy
