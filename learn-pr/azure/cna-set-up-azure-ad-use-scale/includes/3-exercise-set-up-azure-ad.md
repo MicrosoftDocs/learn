@@ -137,7 +137,7 @@ In this task, you'll create an Azure AD tenant and a user account in the new ten
     | Country/Region | The name of your country or region |
 
 1. Select **Review + create** and, on the **Review + create** tab of the **Create a tenant** blade, select **Create**.
-1. If prompted, on the **Help us prove you're not a robot**, type the provided code and select **Submit**.
+1. If prompted, on the **Help us prove you're not a robot**, enter the provided code, and then select **Submit**.
 1. Wait for the provisioning to complete and then select the **Contoso** link to navigate to the blade displaying properties of the Contoso Azure AD tenant.
 1. In the web browser, on the Azure portal blade displaying the **Contoso \| Overview** blade of the **Contoso** Azure AD tenant, in the vertical menu, in the **Manage** sections, select **Users**.
 1. On the **Users \| All users (Preview)** blade of the **Contoso - Azure Active Directory** tenant, select **+ New user**.
