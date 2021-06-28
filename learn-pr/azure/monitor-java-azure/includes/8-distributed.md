@@ -54,38 +54,38 @@ Application logs provide critical information and verbose logs about your applic
 
 ### Show application logs from Azure Spring Cloud
 
-To review a list of application logs from Azure Spring Cloud, sorted by time with the most recent logs shown first, run the following query:
+* To review a list of application logs from Azure Spring Cloud, sorted by time with the most recent logs shown first, run the following query:
 
-```sql
-AppPlatformLogsforSpring
-| project TimeGenerated , ServiceName , AppName , InstanceName , Log
-| sort by TimeGenerated desc
-```
+    ```sql
+    AppPlatformLogsforSpring
+    | project TimeGenerated , ServiceName , AppName , InstanceName , Log
+    | sort by TimeGenerated desc
+    ```
 
 ### Show logs entries containing errors or exceptions
 
-To review unsorted log entries that mention an error or exception, run the following query:
+* To review unsorted log entries that mention an error or exception, run the following query:
 
-```sql
-AppPlatformLogsforSpring
-| project TimeGenerated , ServiceName , AppName , InstanceName , Log
-| where Log contains "error" or Log contains "exception"
-```
+    ```sql
+    AppPlatformLogsforSpring
+    | project TimeGenerated , ServiceName , AppName , InstanceName , Log
+    | where Log contains "error" or Log contains "exception"
+    ```
 
 Use this query to find errors, or modify the query terms to find specific error codes or exceptions.
 
 ### Show the number of errors and exceptions reported by your application over the last hour
 
-To create a pie chart that displays the number of errors and exceptions logged by your application, run the following query:
+* To create a pie chart that displays the number of errors and exceptions logged by your application, run the following query:
 
-```sql
-AppPlatformLogsforSpring
-| where TimeGenerated > ago(1h)
-| where Log contains "error" or Log contains "exception"
-| summarize count_per_app = count() by AppName
-| sort by count_per_app desc
-| render piechart
-```
+    ```sql
+    AppPlatformLogsforSpring
+    | where TimeGenerated > ago(1h)
+    | where Log contains "error" or Log contains "exception"
+    | summarize count_per_app = count() by AppName
+    | sort by count_per_app desc
+    | render piechart
+    ```
 
 ## Database Monitoring
 
@@ -100,13 +100,12 @@ In our sample application, your slow query logs are set up to be piped to Azure 
 1. To open the **Log Search** pane, select **Logs**.
 1. In the **Tables** search box,
 
-* Queries longer than 10 seconds
+* Retrieve all Queries longer than 1 second
 
     ```sql
     AzureDiagnostics
     | where Category == 'MySqlSlowLogs'
     | project TimeGenerated, LogicalServerName_s, event_class_s, start_time_t , query_time_d, sql_text_s 
-    | where query_time_d > 10
     ```
 
 * List top five longest queries
@@ -137,23 +136,13 @@ In our sample application, your slow query logs are set up to be piped to Azure 
     | summarize count() by LogicalServerName_s, bin(TimeGenerated, 5m)
     | render timechart
     ```
-
-* Display queries longer than 10 seconds across all MySQL servers with Diagnostic Logs enabled
-
-    ```sql
-    AzureDiagnostics
-    | where Category == 'MySqlSlowLogs'
-    | project TimeGenerated, LogicalServerName_s, event_class_s, start_time_t , query_time_d, sql_text_s 
-    | where query_time_d > 10
-    ```
   
 The audit log can also be used to track database-level activity and is commonly used for compliance. Audit logs are integrated with Azure Monitor Diagnostic Logs. In your sample, we've enabled audit logs on your MySQL server so you can do further analysis of your audited events.
 
-Below is a sample queries, that retrieve the general MySQL log:
+* Below is a sample queries, that retrieve the general MySQL log:
 
     ```sql
     AzureDiagnostics
-    | where ResourceProvider =="MICROSOFT.DBFORMYSQL"
     | where Category == 'MySqlAuditLogs' and event_class_s == "general_log"
     | project TimeGenerated, LogicalServerName_s, event_class_s, event_subclass_s, event_time_t, user_s , ip_s , sql_text_s 
     | order by TimeGenerated desc
