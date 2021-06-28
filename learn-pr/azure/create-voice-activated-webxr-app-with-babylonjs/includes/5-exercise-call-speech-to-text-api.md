@@ -197,7 +197,16 @@ Now that the code is ready, it is time to verify that the web application works 
 
 1. In your VSCode terminal, make sure you are in the root folder of the web project, and run **npm start**.
 1. Once the application finishes compiling, open your browser and head to **localhost:8080**.
-1. If the app loads successfully, you will see an empty scene with a dark background. (If it does not load successfully, you will see a white screen. Make sure your createScene() function matches the snippet given in the section above. Use the Developer Console for further debugging if you wish.)
-1. 
+1. If the app loads successfully, you will see an empty scene with a dark background.
+
+    :::image type="content" source="../media/empty-scene.PNG" alt-text="An empty Babylon J S scene with only the background skybox is displayed in the browser.":::
+
+    If it does not load successfully, you will see a white screen. Make sure your createScene() function matches the snippet given in the section above. Use the Developer Console for further debugging if you wish.
+
 1. Your browser might ask for your permission to allow microphone usage on this page. Make sure to select **Allow** when the popup appears.
+
+    :::image type="content" source="../media/allow-microphone.png" alt-text="A browser popup that asks for permission to allow microphone usage. The Allow button is surrounded by a red box.":::
+
 1. After that, the speech recognition session starts. Say "go dragon" to your microphone and wait for the 3D models to fade in.
+
+    :::image type="content" source="../media/dragon-magic-circle-fade-in.gif" alt-text="The dragon model and the magic circle model fades into an empty Babylon J S scene.":::
