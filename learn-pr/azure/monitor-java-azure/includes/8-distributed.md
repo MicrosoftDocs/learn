@@ -95,6 +95,11 @@ In Azure Database for MySQL, the slow query log is available to users. Access to
 
 In our sample application, your slow query logs are set up to be piped to Azure Monitor Logs through Diagnostic Logs, and you can do further analysis of your slow queries. Below are sample queries to help you get started. Make sure to update the below with your server name:
 
+1. In the Azure portal, in the left pane, select **Log Analytics**.
+1. Select the Log Analytics workspace that you chose when you added your diagnostics settings.
+1. To open the **Log Search** pane, select **Logs**.
+1. In the **Tables** search box,
+
 * Queries longer than 10 seconds on a particular server
 
     ```sql
