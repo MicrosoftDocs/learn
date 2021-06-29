@@ -10,7 +10,7 @@ One last thing to note is that taking snapshots of a VM during migration, either
 
 1. From within the HCX dashboard on-premises, select **Services** > **Migration**.
 
-1. The **Migrate Tracking** pane displays a summary of virtual machine migrations. This is your first migration, so no VMs will display.
+1. The **Migrate Tracking** pane displays a summary of virtual machine migrations. This is your first migration, so no VMs will appear.
 
 1. Select **Migrate**.
 
@@ -30,6 +30,6 @@ One last thing to note is that taking snapshots of a VM during migration, either
 
     :::image type="content" source="../media/6-select-network-vm-migration.png" alt-text="Screenshot of where to configure the network settings for the VMware VM.":::
 
-1. After the network configuration completes, select **Validate** or **Go**. **Validate** ensures the settings are configured correctly. **Go** starts the migration.
+1. After the network configuration finishes, select **Validate** or **Go**. **Validate** ensures the settings are configured correctly. **Go** starts the migration.
 
 1. HCX Manager then migrates all VMs selected. If you see a warning or error when you validate, fix the configuration and select **Go** to start the migration again.
