@@ -80,7 +80,7 @@ Like all resources, services also have manifest files that describe how they sho
           targetPort: http # Port to forward to in the POD
     ```
 
-1. Save the manifest file, and close the editor.
+1. Save the manifest file by pressing <kbd>Ctrl-S</kbd>, and close the editor by pressing <kbd>Ctrl-Q</kbd>.
 
 ## Deploy the service
 
@@ -197,7 +197,7 @@ To expose your website to the world via DNS, you must create an ingress controll
                 path: / # Which path is this rule referring to
     ```
 
-1. Save the manifest file, and close the editor.
+1. Save the manifest file by pressing <kbd>Ctrl-S</kbd>, and close the editor by pressing <kbd>Ctrl-Q</kbd>.
 
 ## Deploy the ingress
 
@@ -265,6 +265,6 @@ Now we need to deploy the service for our changes to take effect.
 
     Make sure there are two new records at the bottom of the list with the host we created in the `host` key. The `ProvisioningState` value is `Succeeded`. It can take up to two minutes for zone records to propagate.
 
-1. Open your browser, and go to the FQDN described in the output. You should see a website as displayed in the following example screenshot.
+1. Open your browser, and go to the FQDN described in the output. You should see a website that looks like the following example screenshot.
 
 :::image type="content" source="../media/7-website-success.png" alt-text="Screenshot of the Contoso video rendering service website.":::

@@ -36,7 +36,7 @@ In this exercise, you create a migration project by using Data Migration Assista
 
 1. Move the mouse to the end of the **Server name** line, and select **Copy to clipboard**.
 
-    :::image type="content" source="../media/06-azure-sql-server.png" alt-text="Selection for copying the server name." loc-scope="azure-database-migration":::
+    :::image type="content" source="../media/06-azure-sql-server-copy.png" alt-text="Selection for copying the server name." loc-scope="azure-database-migration":::
 
 1. Switch back to Data Migration Assistant on your virtual machine. Paste the name of your SQL Server instance into the **Server name** box.
 

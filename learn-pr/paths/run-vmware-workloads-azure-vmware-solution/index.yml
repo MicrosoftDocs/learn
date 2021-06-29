@@ -15,7 +15,7 @@ summary:  |
 prerequisites: |
   - Experience managing VMware infrastructure, such as vSphere, vCenter, NSX-T, and vSAN.
   - Basic knowledge of network concepts, such as Classless Inter-Domain Routing (CIDR), Border Gateway Protocol (BGP) routing, Dynamic Host Configuration Protocol (DHCP), and subnets.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/run-vmware-workloads-azure-vmware-solution.svg
 levels:
 - intermediate
 roles:

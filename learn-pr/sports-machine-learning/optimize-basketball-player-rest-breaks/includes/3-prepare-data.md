@@ -140,4 +140,4 @@ Here's the output:
 
 In the code to rearrange the columns, because the **player_type** column wasn't necessary now that we have the actual names of the players, it was easiest to replace the column with the **player_name** column. We didn't have to explicitly drop the **player_type** column!
 
-© 2020 Warner Bros. Ent. All Rights Reserved
+© 2021 Warner Bros. Ent. All Rights Reserved
