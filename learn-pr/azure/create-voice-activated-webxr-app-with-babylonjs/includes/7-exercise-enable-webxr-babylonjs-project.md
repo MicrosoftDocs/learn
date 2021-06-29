@@ -82,7 +82,8 @@ When users enter the AR session, we want them to use their own surroundings as t
 ::: zone-end
 
 ## Limit speech recognition to WebXR sessions
-<!-- Introduction paragraph -->
+
+Currently, the users can summon the dragon without entering a WebXR session. 
 1. <!-- Step 1 -->
 1. <!-- Step 2 -->
 1. <!-- Step n -->

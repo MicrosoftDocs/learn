@@ -59,3 +59,9 @@ featuresManager.enableFeature(BABYLON.WebXRBackgroundRemover, 'latest', {
     backgroundMeshes: [ground, sky]
 });
 ```
+
+## Supported devices
+
+VR and AR WebXR sessions are supported on Android and iOS mobile phones. For Android, it is supported on the native Chrome browser; for iOS, it can be viewed on an application named WebXR Viewer.
+
+Other than mobile phones, you can also view immersive VR sessions using any Windows Mixed Reality headset or Hololens, which supports AR as well.
