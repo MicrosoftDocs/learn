@@ -24,7 +24,7 @@ You decide to start the training lesson by defining vocabulary used to discuss c
 - _Zero-day vulnerability_: A software or hardware flaw for which there is no existing patch. Named after the medical term Patient Zero. When a zero-day vulnerability is discovered, the software or hardware vendor has no days to fix the flaw. Zero-days are a hacker’s most dangerous exploit.
 - _Computer worm_: A harmful software code that can replicate and search for new hosts to infect. Once infected, it can destroy data and/or corrupt the system.
 - _Computer virus_: This is a type of malware that can replicate itself by modifying other computer applications. It’s malicious software that interferes with a computer’s operations.
-- _Cryptography_: A field of mathematics that is used to protect data with encryption. The unencrypted data is *plaintext,* and the encrypted information is a *cipher*. A cryptographic key is often a large number and is "seeded" into the encryption algorithm to scramble the data.
+- _Cryptography_: A field of mathematics that is used to protect data and communications with encryption. The unencrypted data is *plaintext,* and the encrypted information is a *cipher*. A cryptographic key is often a large number and is "seeded" into the encryption algorithm to scramble the data.
 - _Encryption_: is the process of encoding data to keep the contents secret.
   - _Public key encryption_: This method of encryption uses a private key and a public key. These two different keys are a *keypair* and they mathematically relate to each other. Data encryption uses different keys or *asymmetric encryption*.
 
@@ -46,4 +46,4 @@ The following is an illustration of sending an encrypted message using Public Ke
 1. User B is the only one that can decrypt the message because it requires Users B’s private key.
 1. Public Key encryption works with SSL/TLS protocol for end-to-end encryption connections.
 
-Now that we understand some standard terms let’s examine the threat landscape to sharpen our cybersecurity knowledge.
+Now that we understand some standard terms and have reviewed an illustration about securing messages, let’s examine the threat landscape to sharpen our cybersecurity knowledge.
