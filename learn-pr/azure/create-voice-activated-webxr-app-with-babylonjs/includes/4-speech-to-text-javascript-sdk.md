@@ -1,4 +1,4 @@
-Azure Speech Services provides software development kits (SDKs) in multiple languages to help developers integrate the service into their applications. Speech-to-text is available in the SDKs for these languages: C++, C#, Java, JavaScript, Python, Swift, Objective-C, and Go.
+Azure Speech Services provides software development kits (SDKs) in multiple languages to help developers integrate the service into their applications. Speech-to-text is available in the SDKs for the following languages: C++, C#, Java, JavaScript, Python, Swift, Objective-C, and Go.
 
 Recall that the amusement park application needs to be served on the web, and your team is using Babylon.js to create the application. To integrate Azure Speech-to-text into the amusement park application, we will need to use Azure Speech's JavaScript SDK.
 
