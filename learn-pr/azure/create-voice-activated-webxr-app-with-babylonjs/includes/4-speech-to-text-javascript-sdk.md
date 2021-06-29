@@ -34,7 +34,7 @@ The SpeechRecognizer class performs the speech-to-text transcription action. To 
 const recognizer = new SpeechRecognizer(speechConfig, audioConfig);
 ```
 
-After the SpeechRecognizer instance is initialized, we can start to perform speech-to-text on the audio input by calling this method:
+After the SpeechRecognizer instance is initialized, we can start to perform speech-to-text on the audio input by calling `startContinuousRecognitionAsync()`:
 
 ```typescript
 recognizer.startContinuousRecognitionAsync();
