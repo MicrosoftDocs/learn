@@ -33,7 +33,6 @@ products:
 - azure-database-mysql
 - azure-spring-cloud
 units:
-- learn.monitor-java-azure.introduction
 - learn.monitor-java-azure.learning-content
 - learn.monitor-java-azure.exercise-setup
 - learn.monitor-java-azure.logging
