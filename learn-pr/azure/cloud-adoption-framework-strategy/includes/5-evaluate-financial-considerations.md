@@ -215,4 +215,3 @@ After you've worked with the business to make decisions about a cloud accounting
 ## Record your observations
 
 If you haven't already, download the [Cloud Adoption Framework Strategy and Plan template](https://raw.githubusercontent.com/microsoft/CloudAdoptionFramework/master/plan/cloud-adoption-framework-strategy-and-plan-template.docx?azure-portal=true). Under **Business justification**, use the financial considerations that are discussed in this unit to describe your business justification or financial considerations.
-
