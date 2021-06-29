@@ -1,12 +1,26 @@
 # How Azure Advisor works?
 
+## How configure recommendations
+
+![Configuration of Azure Advisor.](../media/3-advisor-configuration.png)
+
+![Configuration of Rules on Azure Advisor.](../media/3-advisor-rules.png)
+
+## How create alerts on new recommendations
+
+![Alerts on Azure Advisor.](../media/3-create-alert.png)
+
+## How configure recommendations summary
+
+![Digests on Azure Advisor.](../media/3-advisor-digest.png)
+
 ## How access the recommendations?
 
 You can access Advisor through the Azure portal. Sign in to the portal, locate Advisor in the navigation menu, or search for it in the All services menu.
 
 Then you will be able to see the recommendations divided into five categories: Cost, Security, Reliability, Operational excellence and Performance.
 
-### Cost
+### Costs Recommendations
 
 Azure Advisor help to identify idle and underutilized resources. You can get cost recommendations from the Cost tab on the Advisor dashboard.
 
@@ -18,7 +32,7 @@ In this case I chosen the recommendation to shut down or resize my virtual machi
 
 ![Recommendation from costs on Azure Advisor.](../media/3-advisor-cost-shutdown-vm.png)
 
-### Security
+### Security Recommendations
 
 Security recommendations are integrated with Azure Security Center. You can get security recommendations from the Security tab on the Advisor dashboard.
 
@@ -30,7 +44,7 @@ Example of a recommendation regarding system updates available for my virtual ma
 
 ![Recommendation from security on Azure Advisor.](../media/3-advisor-security-updates.png)
 
-### Reliability
+### Reliability Recommendations
 
 Azure Advisor helps you ensure and improve the continuity of your business-critical applications. You can get reliability recommendations from Advisor on the Reliability tab of the Advisor dashboard.
 
@@ -42,7 +56,7 @@ Example of a recommendation suggesting upgrade virtual machines to Managed Disks
 
 ![Recommendation from reliability on Azure Advisor.](../media/3-advisor-reliability-upgradedisks.png)
 
-### Operational excellence
+### Operational excellence Recommendations
 
 Operational excellence recommendations in Azure Advisor can help you with:
 
@@ -59,7 +73,7 @@ Example of a recommendation to assign a policy to restrict the allowed SKUs for 
 
 ![Recommendation from operational excellence on Azure Advisor.](../media/3-advisor-operational-excellence-policy.png)
 
-### Performance
+### Performance Recommendations
 
 The performance recommendations in Azure Advisor can help improve the speed and responsiveness of your business-critical applications. You can get performance recommendations from Advisor on the Performance tab of the Advisor dashboard.
 
@@ -71,16 +85,3 @@ Recommendation warning about a unsupported Kubernetes version detected, which ca
 
 ![Recommendation from operational excellence on Azure Advisor.](../media/3-advisor-performance-aks.png)
 
-## How configure recommendations
-
-![Configuration of Azure Advisor.](../media/3-advisor-configuration.png)
-
-![Configuration of Rules on Azure Advisor.](../media/3-advisor-rules.png)
-
-## How create alerts on new recommendations
-
-![Alerts on Azure Advisor.](../media/3-create-alert.png)
-
-## How configure recommendations summary
-
-![Digests on Azure Advisor.](../media/3-advisor-digest.png)
