@@ -1,4 +1,4 @@
-# Introduction to Testing Concepts
+# What is Testing?
 
 <!-- 1. Topic sentence(s) ---------------------------------------------------------------
 

@@ -1,3 +1,5 @@
+# Different Types of Testing and the Testing Pyramid
+
 <!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
 
     Goal: state what's in this unit and how it aligns to the 'evaluate' learning objective.
@@ -16,11 +18,15 @@
         * Conditionals
         * Connectors"
 -->
-TODO: add your topic sentences(s)
-TODO: add your bulleted list of key things covered
-* TODO
-* TODO
-* TODO
+Here, we'll go over the testing pyramid and the many types of tests. Knowing how different types of tests can help address different vulnerabilities in your code will make sure you are spending your test investment in the most impactful way.
+
+* The Testing pyramid
+* Unit Tests
+* Integration Tests
+* Performance Tests
+* Load Tests
+* Acceptance Tests
+* UI Tests
 
 <!-- 2. Decision criteria introduction --------------------------------------------------------------------------------
 
@@ -38,138 +44,44 @@ TODO: add your bulleted list of key things covered
         "Decision criteria"
          "Logic Apps helps you coordinate the flow of data through disparate systems. The cases where Logic Apps might not be the best option typically involve real-time requirements, complex business rules, or use of non-standard services. Here's some discussion of each of these factors."
 -->
-## Decision criteria
-TODO: add your 3 lead-in sentences
 
-<!-- 3a. Decision criteria (for simple criteria) ----------------------------------------------------
+## The Testing pyramid
 
-    Note:
-        Choose either 3a or 3b for your content; do not do both.
-        This pattern is for simple criteria where the analysis is brief and does not require a visual element.
+The testing pyramid has been popularized over the past several years to explain the different types of testing and how common each of them are in software. You can find many different versions of the testing pyramid out there and it's use is still debated, but we'll try to provide a simple and uncontroversial explanation. The base of the pyramid is made up of unit tests. These are typically the easiest tests to write, maintain as code changes, and run the fastest. For many users, unit tests are the first introduction to testing. As you climb the pyramid, the tests usually become more expensive to write, maintain, and run, but they can still provide high value though there are usually fewer of these types.
 
-    Goal: Describe in detail each criterion that helps the "when to use it" decision.
+![image](../media/testing-pyramid.png)
 
-    Heading: none, this content will be the 'body' for the "Decision criteria" heading above.
+## Types of Tests
 
-    Pattern:
-        No heading.
-        Place both the criteria and analysis into a table.
+The industry is ever evolving better ways to ensure code quality with tests there are likely many more types of tests not listed here, but these are the major ones. The testing pyramid itself may need to be re-written or re-shaped as better software practices and development technologies evolve how we think and test.
 
-    Example:
-        | | |
-        | --- | --- |
-        | **Criteria** | **Analysis**|
-        | **Integration** | The key question to ask when you're considering Logic Apps is "do I need to integrate services?".... |
-        | **Performance** | The next consideration is performance. The Logic Apps execution engine scales your apps automatically.... |
-        | **Conditionals** | Logic Apps provides control constructs like Boolean expressions, switch statements, and loops.... |
-        | **Connectors** | The last consideration is whether there are pre-built connectors for all the services you need to access. |
-        |   |   |
--->
-TODO: add your topic sentences(s)
+### Unit Tests
 
-<!-- 3b. Decision criteria (for complex criteria) ----------------------------------------------------------
+Unit tests are the most basic types of tests. They should be specific to one method or one function. A method can have many unit tests to cover all it's functionality given a range of parameters. These are the easiest to write and also the easiest to debug because they should be the simplest way to exercise the piece of code that they test.
+For example, let's say you have a method that parses a postal address from a string of input. Good unit tests for this method would insert many kinds of different postal addresses to make sure they were parsed correctly by the method and matched the expected result. One unit test may insert a postal address from a different country as a string. Another may insert a string that had special characters to make sure it doesn't break your parser. Unit tests should be testing small aspects of the behavior of your app so that, if the test fails, it's easy to determine what behavior failed.
 
-    Note:
-        Choose either 3a or 3b for your content; do not do both.
-        This pattern is for complex criteria where the analysis of each criterion needs both and a visual element.
+### Integration Tests
 
-    Goal: Describe in detail each criterion that helps the "when to use it" decision.
+Integration tests are the next step up from unit tests. They may cover multiple methods or a broader set of behavior than unit tests.
+Going back to our postal address example, an integration test could test both the postal addresser parse and a method for calculating a shipping rate for that location. The two combined help summarize if multiple parts of your app are working together as expected.
 
-    Pattern:
-        For each criterion, repeat this pattern:
-            1. H3 of the criterion.
-            2. 1-3 paragraphs of discussion/analysis.
-            3. Visual like an image, table, list, code sample, or blockquote.
-            
-    Example:
-        H3: "Integration"
-        Prose: The key question to ask when you're considering Logic Apps is _"do I need to integrate services?"_ Logic Apps work well when you need to get multiple applications and systems to work together. That's what they were designed to do. If you're building an app with no external connections, Logic Apps is probably not the best option."
-        Visual: (image preferred)
--->
-### (criterion)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
+### Performance Tests
 
-### (criterion)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
+Performance tests usually capture the time it takes certain parts of your program to execute. Performance tests are a great way to catch a code change that slows down your app. You can set timers at the beginning of tests that only complete when the test is finished executing and report a test failure if the timer was above a certain threshold.
 
-### (criterion)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
+### Load Tests
 
-<!-- 4. Apply-the-criteria introduction --------------------------------------------------------------------------------
+Load tests can be similar to performance testing, but focuses more on using your app at scale. How does the app hold up with 1000 users are using it? 10,000 users? Load tests help determine if your app is slowing down or throwing exceptions when under stress.
 
-    Goal: Lead-in to the example applications of the criteria.
+### Acceptance Tests
 
-    Pattern:
-        1 paragraph consisting of 3 sentences
-            Sentence 1: summarizing the criteria from a positive view ("when to use").
-            Sentence 2: Acknowledge that there are cases for which (product) won't work and/or there are edge cases that are difficult to decide.
-            Sentence 3: transition/lead-in to the detailed discussion.
+Acceptance tests can be tests that guide the business desired outcome. If your customer gave you a list of criteria for the app, you can write acceptance tests that only pass once all of those criteria are met. Acceptance tests are another way of integrating your spec with your code.
 
-    Heading: "## Apply the criteria"
+### UI Tests
 
-    Example:
-        "Apply the criteria"
-         "Logic Apps works best when you're integrating multiple services with some added control logic. The decision is often a judgment call though. Let's think about how to apply these criteria to our example processes."
--->
-## Apply the criteria
-TODO: add your 3 lead-in sentences
-
-<!-- 5. Apply the criteria examples -----------------------------------------------------------------------------
-
-    Goal: Apply the criteria to the 2-3 customer tasks in the scenario described in your introduction unit.
-
-    Pattern:
-        For each customer task, repeat this pattern:
-            1. "### Should (scenario subtask) use (product)?".
-            2. 1-3 paragraphs of discussion/analysis (first sentence should answer yes/no about whether the product is suitable).
-            3. Visual like an image, table, list, code sample, or blockquote.
-
-    Example:
-        H3: "Should the video-archive utility use Logic Apps?"
-        Prose: "The video archive task is a good fit for Logic Apps even though it doesn't integrate multiple systems. Logic Apps has a built-in timer trigger and an Azure blob connector that are perfect to implement this process...."
-        Visual: (image preferred)
--->
-
-### Should (scenario subtask) use (product)?
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-### Should (scenario subtask) use (product)?
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-### Should (scenario subtask) use (product)?
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- 6. Guidance summary (optional) ------------------------------------------------
-
-    Goal: Job-aid for future use to help customers evaluate their own tasks against the criteria.
-
-    Pattern:
-        1. Heading "## Guidance summary"
-        2. Lead-in sentence acknowledging that this is a summary/repeat of previous material.
-        3. Visual like a flowchart (as an image) or rubric (as a table).
-
-    Example:
-        "The following flowchart summarizes the key questions to ask when you're considering using Logic Apps."
-        <flowchart image>
--->
+UI tests can directly test the UI interactions of an app. This is meant to mimic an actual user clicking and interacting with your app and testing if the UI response is correct. There are many frameworks that can automate UI interactions. For example, [Playwright](https://playwright.dev/dotnet/docs/why-playwright) can automate the browser to mimic a user using your website.
+Another type of UI testing is manual testing. Manual testing is when an actual person uses your app. Having a user test out your app before it is released has some advantages and disadvantages. It can be a slower type of testing because it can take a while to describe how to use the app to a new user and it may be difficult to repeat the exact same steps every time. The major advantage is higher confidence that the app is ready for real human customers and nothing was missed because the app was used by more than just automation.
+A word of caution, it's easy to invest in UI tests because they can seem like the most direct representation of what users are experiencing when using your app. The industry rapidly embraced UI Tests when they first appeared on the scene for this very reason. The disadvantage was that UI also rapidly changes so all the tests you write may need consistent updates even for a small change. Be wary of writing too many UI tests that will need a high investment to keep up-to-date as your app grows. Many modern UI testing frameworks specifically address this ability to keep UI tests up-to-date, so it's good to look for platforms that also enable easier maintainability as you test.
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
