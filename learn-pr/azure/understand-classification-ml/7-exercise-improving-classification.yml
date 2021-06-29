@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.understand-classification-machine-learning.exercise-improving-classification
+title: Exercise - Improving classification models
+metadata:
+  title: Exercise - Improving classification models
+  description: Exercise about improving classification models in machine learning
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+sandbox: true
+notebook: https://review.docs.microsoft.com/learn/modules/understand-classification-ml/notebooks/6-7-exercise-improving-classification.ipynb?branch=pr-en-us-18702
