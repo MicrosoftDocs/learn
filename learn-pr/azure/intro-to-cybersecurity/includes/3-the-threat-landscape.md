@@ -1,4 +1,4 @@
-*Threat intelligence* is knowledge that you can use to prevent or mitigate cyberattacks. Threat intelligence gives you context that helps you make informed decisions about your security by answering questions such as who is attacking you, what are their motivations and capabilities, and what indicators of compromise can you search for in your systems. The threat landscape is in constant motion. For example, organized criminals are moving from traditional criminal activities to cybercrime. The advent of digital currency like Bitcoin has accelerated this trend. 
+*Threat intelligence* is knowledge that you can use to prevent or mitigate cyberattacks. Threat intelligence gives you context that helps you make informed decisions about your security by answering questions such as who is attacking you, what are their motivations and capabilities, and what indicators of compromise can you search for in your systems. The threat landscape is in constant motion. For example, organized criminals are moving from traditional criminal activities to cybercrime. 
 
 The following is a list of some of the most common cybercrime attacks today:
 
@@ -6,9 +6,6 @@ The following is a list of some of the most common cybercrime attacks today:
 - Destruction of property and/or IT resources
 - Identity theft
 - Social engineering attacks
-
-And in the case of government attacks:
-
 - Espionage
 - Surveillance of enemies or dissidents
 - Sowing confusion
@@ -63,6 +60,6 @@ Another browser attack is known as *cross-site scripting (XSS)*. In XSS attacks,
 
 #### Data Breach
 
-A 2021 investigation report details how over 90 percent of companies that acknowledged that they have been hacked found out about the hack from entities outside their organizations. Refer to the Summary for further information on this report. A recent data breach involved *shadow IT*. Some employees were using a not approved off-site storage solution. The users received what seemed to be a valid email asking them to visit the link and change their passwords because a hack compromised user account information. Some users responded that they thought they were changing their password but instead gave their account information to hackers. With that information, the hackers were able to steal data from the cloud storage vendor and use the account information to move into the company’s networked computers. The term for unauthorized removal of data is *Data Exfiltration*.
+A 2021 investigation report details how over 90 percent of companies that acknowledged that they have been hacked found out about the hack from entities outside their organizations. A recent data breach involved *shadow IT*. Some employees were using a not approved off-site storage solution. The users received what seemed to be a valid email asking them to visit the link and change their passwords because a hack compromised user account information. Some users responded that they thought they were changing their password but instead gave their account information to hackers. With that information, the hackers were able to steal data from the cloud storage vendor and use the account information to move into the company’s networked computers. The term for unauthorized removal of data is *Data Exfiltration*.
 
 When the IT department eventually discovered this data loss and internal system compromise, the employees were questioned about using the unauthorized cloud storage instead of Office365 and OneDrive. They said they used the cloud storage from home and just continued to use it.
