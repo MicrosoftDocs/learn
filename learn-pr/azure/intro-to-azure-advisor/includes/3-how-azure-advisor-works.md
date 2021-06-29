@@ -2,29 +2,33 @@
 
 ## How configure recommendations
 
+Configuration
+
 ![Configuration of Azure Advisor.](../media/3-advisor-configuration.png)
+
+Rules
 
 ![Configuration of Rules on Azure Advisor.](../media/3-advisor-rules.png)
 
 ## How create alerts on new recommendations
 
+Alerts
+
 ![Alerts on Azure Advisor.](../media/3-create-alert.png)
 
 ## How configure recommendations summary
+
+Summary
 
 ![Digests on Azure Advisor.](../media/3-advisor-digest.png)
 
 ## How access the recommendations?
 
-You can access Advisor through the Azure portal. Sign in to the portal, locate Advisor in the navigation menu, or search for it in the All services menu.
-
-Then you will be able to see the recommendations divided into five categories: Cost, Security, Reliability, Operational excellence and Performance.
+You can access Advisor through the Azure portal. Sign in to the portal, locate Advisor in the navigation menu, or search for it in the All services menu. Then you will be able to see the recommendations divided into five categories: Cost, Security, Reliability, Operational excellence and Performance.
 
 ### Costs Recommendations
 
-Azure Advisor help to identify idle and underutilized resources. You can get cost recommendations from the Cost tab on the Advisor dashboard.
-
-Here you can see a list of recommendations to reduce costs:
+Azure Advisor help to identify idle and underutilized resources. You can get cost recommendations from the Cost tab on the Advisor dashboard. Here you can see a list of recommendations to reduce costs:
 
 ![Costs on Azure Advisor.](../media/3-advisor-cost.png)
 
@@ -34,9 +38,7 @@ In this case I chosen the recommendation to shut down or resize my virtual machi
 
 ### Security Recommendations
 
-Security recommendations are integrated with Azure Security Center. You can get security recommendations from the Security tab on the Advisor dashboard.
-
-Full list of security recommendations to selected subscriptions: 
+Security recommendations are integrated with Azure Security Center. You can get security recommendations from the Security tab on the Advisor dashboard. Full list of security recommendations to selected subscriptions: 
 
 ![Security on Azure Advisor.](../media/3-advisor-security.png)
 
@@ -46,9 +48,7 @@ Example of a recommendation regarding system updates available for my virtual ma
 
 ### Reliability Recommendations
 
-Azure Advisor helps you ensure and improve the continuity of your business-critical applications. You can get reliability recommendations from Advisor on the Reliability tab of the Advisor dashboard.
-
-List of recommendations to my subscriptions:
+Azure Advisor helps you ensure and improve the continuity of your business-critical applications. You can get reliability recommendations from Advisor on the Reliability tab of the Advisor dashboard. List of recommendations to my subscriptions:
 
 ![Reliability on Azure Advisor.](../media/3-advisor-reliability.png)
 
