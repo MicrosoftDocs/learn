@@ -122,9 +122,12 @@ products:
 ###
 units: # stub based on prefix, module folder, and unit names
 - learn.visual-studio-test-tools.introduction
-- learn.visual-studio-test-tools.what-is-{product}
-- learn.visual-studio-test-tools.how-{product}-works
-- learn.visual-studio-test-tools.when-to-use-{product}
+- learn.visual-studio-test-tools.what-is-testing
+- learn.visual-studio-test-tools.why-we-test
+- learn.visual-studio-test-tools.knowledge-check
+- learn.visual-studio-test-tools.different-types-of-testing
+- learn.visual-studio-test-tools.knowledge-check
+- learn.visual-studio-test-tools.testing-schools-of-thought
 - learn.visual-studio-test-tools.knowledge-check
 - learn.visual-studio-test-tools.summary
 - learn.visual-studio-test-tools.resources
