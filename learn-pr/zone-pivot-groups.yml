@@ -383,7 +383,7 @@ groups:
     - id: jsonpowershell
       title: JSON + PowerShell
 - id: webxr-vr-ar
-  title: VR and AR
+  title: WebXR for VR or AR
   prompt: Choose your WebXR session type
   pivots:
     - id: vr
