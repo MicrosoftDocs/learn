@@ -43,7 +43,7 @@ When you run the above command, a window will pop up with the file 'deployPetCli
 
 2. Save the file by selecting the ... action panel in the top right of the editor and select "Save".
 
-3. Close the editor - open the ... action panel in the top right of the editor and select "Close".
+3. Close the editor - open the ... action panel in the top right of the editor and select "Close Editor".
 
 4. Don't close the Azure Cloud Shell, as next, we'll run the setup script.
 
