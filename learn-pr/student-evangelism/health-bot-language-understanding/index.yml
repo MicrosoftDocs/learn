@@ -15,7 +15,7 @@ abstract: |
   - Learn about LUIS and concepts like intents, utterances, and entities in the context of Health Bot.
   - Understand the importance of different language models and how to add them to your Health Bot instance.
   - Learn how to integrate LUIS into your Health Bot instance.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/student-evangelism/health-bot-language-understanding.svg
 levels:
   - beginner
 roles:
@@ -33,4 +33,4 @@ units:
 - learn.health-bot-language-understanding.7-knowledge-check-2
 - learn.health-bot-language-understanding.8-summary
 badge:
-  uid: learn.health-bot-language-understanding.badge
+  uid: learn.student-evangelism.health-bot-language-understanding.badge

@@ -15,7 +15,7 @@ abstract: |
   - Learn what scenario templates are.
   - Recognize use cases for scenario templates.
   - Build a health bot by using a scenario template.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/student-evangelism/health-bot-template-scenarios.svg
 levels:
   - beginner
 roles:
@@ -32,4 +32,4 @@ units:
   - learn.health-bot-template-scenarios.4-knowledge-check
   - learn.health-bot-template-scenarios.5-summary
 badge:
-  uid: learn.health-bot-template-scenarios.badge
+  uid: learn.student-evangelism.health-bot-template-scenarios.badge

@@ -25,6 +25,17 @@ quiz:
         - content: Scenario templates can't be customized or extended.
           isCorrect: false
           explanation: You can easily customize and extend any part of a template scenario.
+    - content: A developer in the IT department of a healthcare organization wants to build a health bot that triages patient issues with a symptom checker and gives patients chat support from live agents. Which is a proper way to accomplish that?
+      choices:
+        - content: Create a new custom scenario and build the scenario logic from scratch using the conversational, flow control, and advanced functionality elements of the **Designer** tab.
+          isCorrect: false
+          explanation: Scenario templates enable you to quickly build your own custom scenarios. The *triage and handoff* scenario template extends the built-in symptom checker and transitions the conversations to a live nurse.
+        - content: Create a new custom scenario and build the scenario logic using the built-in symptom checker and handoff scenarios.
+          isCorrect: false
+          explanation: Scenario templates enable you to quickly build your own custom scenarios. The *triage and handoff* scenario template extends the built-in symptom checker and transitions the conversations to a live nurse.
+        - content: Import the *triage and handoff* scenario template in the health bot instance and customize the flow by using the **Designer** visual interface or code.
+          isCorrect: true
+          explanation: Scenario templates enable you to quickly build your own custom scenarios. The *triage and handoff* scenario template extends the built-in symptom checker and transitions the conversations to a live nurse.
     - content: Which of the following statements is true about the triage and handoff template?
       choices:
         - content: The triage and handoff template can be used to extend the built-in symptom checker and transition the conversations to a live nurse.
