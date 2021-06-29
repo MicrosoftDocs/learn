@@ -65,6 +65,3 @@ In this module, we're using a very simple workflow called _trunk-based developme
 
 There are other workflows too. These are common in team environments where you might want to control how frequently you release your changes. In the summary for this module, we provide some links to more information about Git workflows you can consider.
 
-## Pull requests
-
-When you start working collaboratively with others in Git by using GitHub or Azure Repos, you gain access to a useful feature called _pull requests_, often shortened to _PRs_. A pull request is effectively a controlled merge of two branches, and GitHub or Azure Repos can enforce policies about who can merge and what kinds of changes can be merged. A typical team workflow would involve a team member making changes to their code on a branch, then creating a pull request to ask someone else to merge their changes into the **main** branch. Other team members can see the list of changes in the PR, and they can even provide reviews on the changes before they accept them. In the summary for this module, we provide some links to more information about how GitHub and Azure Repos enable you to use pull requests.

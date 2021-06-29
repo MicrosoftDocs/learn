@@ -382,3 +382,11 @@ groups:
       title: JSON + CLI
     - id: jsonpowershell
       title: JSON + PowerShell
+- id: repository-hosting-platform
+  title: Choose a repository hosting platform
+  prompt: Choose a repository hosting platform
+  pivots:
+    - id: github
+      title: GitHub
+    - id: azure-repos
+      title: Azure Repos

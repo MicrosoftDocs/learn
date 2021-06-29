@@ -28,6 +28,7 @@ Bicep code is maintained in text files, so it's a great fit for many version con
 Git is a _distributed_ version control system, which means you can have multiple copies of your Git repository across different computers and servers. This makes Git an excellent choice for collaborating with team members to share and write your Bicep code together, and also means that you can use automated deployment pipelines to access your files from a Git repository.
 
 In this module, we'll focus on local Git repositories, where you're the only person using them. In a future module, you'll learn about how you can distribute your Git repository and work collaboratively by using GitHub and Azure Repos.
+<!-- TODO above -->
 
 ## How does Git work with folders?
 

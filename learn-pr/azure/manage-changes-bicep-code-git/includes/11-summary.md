@@ -22,6 +22,7 @@ There are certain features of Git that are particularly useful when you work wit
 - [Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
 Much of the power of Git comes from its use in team environments. In future modules you'll learn about some of these benefits when you use GitHub and Azure Repos. Some specific features you will likely work with include:
+<!-- TODO update the above -->
 
 - Cloning repositories ([GitHub](https://docs.github.com/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository), [Azure Repos](/azure/devops/repos/git/clone))
 - Forking repositories ([GitHub](https://docs.github.com/get-started/quickstart/fork-a-repo), [Azure Repos](/azure/devops/repos/git/forks))

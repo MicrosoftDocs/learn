@@ -41,6 +41,8 @@ units:
 - learn.azure.manage-changes-bicep-code-git.exercise-commit-files-view-history
 - learn.azure.manage-changes-bicep-code-git.branch-merge-changes
 - learn.azure.manage-changes-bicep-code-git.exercise-branch-merge-changes
+- learn.azure.manage-changes-bicep-code-git.publish-repository-enable-collaboration
+- learn.azure.manage-changes-bicep-code-git.exercise-publish-repository
 - learn.azure.manage-changes-bicep-code-git.knowledge-check
 - learn.azure.manage-changes-bicep-code-git.summary
 badge:
