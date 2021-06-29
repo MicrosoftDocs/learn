@@ -4,8 +4,8 @@ metadata:
   title: Introduction to Azure Arc enabled data services
   description: Introduction to Azure Arc enabled data services
   ms.date: 06/28/2021
-  author: buckwoody
-  ms.author: bwoody
+  author: bobward
+  ms.author: "GitOps-based configuration and workload management is the benefit of Azure Arc enabled Kubernetes"
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid
