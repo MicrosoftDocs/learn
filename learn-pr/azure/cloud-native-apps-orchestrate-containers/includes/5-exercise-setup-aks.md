@@ -48,9 +48,9 @@ In this unit, you will:
 
 ### Deploy your container to AKS
 
-    You'll be using a deployment manifest file to deploy your application. The manifest file allows you to define what type of resource you want to deploy and all the details associated with the workload.
+You'll be using a deployment manifest file to deploy your application. The manifest file allows you to define what type of resource you want to deploy and all the details associated with the workload.
 
-    Kubernetes groups containers into logical structures called pods, which have no intelligence. Deployments add the missing intelligence to create your application. Let's edit the base deployment file in the source code for your cluster.
+Kubernetes groups containers into logical structures called pods, which have no intelligence. Deployments add the missing intelligence to create your application. Let's edit the base deployment file in the source code for your cluster.
 
 4. In Cloud Shell, move to the AKS folder:
 
@@ -136,7 +136,7 @@ In this unit, you will:
 
 ### Prepare AKS for use
 
-    It can take some time to fully deploy Kubuernetes clusters and access them. You'll save time by enabling the Application gateway for the cluster now, as it can take up to 15 minutes to be fully functional.
+It can take some time to fully deploy Kubuernetes clusters and access them. You'll save time by enabling the Application gateway for the cluster now, as it can take up to 15 minutes to be fully functional.
 
 13. Go to the Azure portal and select AKS service.
 
@@ -153,7 +153,7 @@ In this unit, you will:
 
 ### Review the service manifest
 
-    Like all resources, services also have manifest files that describe how they should behave. Let's create a new service description.
+Like all resources, services also have manifest files that describe how they should behave. Let's create a new service description.
 
 17. Return to Azure Cloud Shell if you haven't done so already.
 
