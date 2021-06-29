@@ -1,34 +1,34 @@
-Given the details of the types of cyberattacks described in the previous unit, what are some mitigation strategies and policies to prevent them. Once policies are put in place, you must prioritize and monitor them. There’s no point to deploying mitigation's if no one is paying attention to them. The mitigation strategies and policies help ensure the *confidentiality, integrity,* and *availability* of your or your companies' data. This strategy is known as the confidentiality, integrity, and availability *(CIA) triad*.
+Given the details of the types of cyberattacks described in the previous unit, what are some mitigation strategies and policies to prevent them.
 
 ## Browser security
 
 ### Securing connections with websites
 
-The data transferred using HTTP is not encrypted and is readable by someone intercepting your communications. Using HTTPS ensures your communications between you and the website are encrypted, even if you’re using a public Wi-Fi network. Most websites have switched to always using HTTPS, but some have not. It’s recommended to install the HTTPS Everywhere plug-in for your browser. It will automatically request a site to switch from insecure HTTP to secure HTTPS.
+The data transferred using HTTP is not encrypted and is readable by someone intercepting your communications. Using HTTPS ensures your communications between you and the website are encrypted, even if you’re using a public Wi-Fi network. Most websites have switched to always using HTTPS, but some have not. It’s recommended for you to install the HTTPS Everywhere plug-in for your browser. It will automatically request a site to switch from insecure HTTP to secure HTTPS.
 
 ### A browser allows for private mode
 
-All the most common browsers offer a private browsing mode. For example, on Chrome, it is called an incognito window, and on Microsoft Edge, it is called an InPrivate Window. This mode offers a higher level of privacy because your browsing history is deleted when you close all windows of the private mode browser. Additionally, private browsing deletes the logging of sites visited and temporary files or cookies stored on your computer. However, it will not hide browsing history from your school, employer, or ISP.
+All the most common browsers offer a private browsing mode. For example, on Chrome, it is called an incognito window, and on Microsoft Edge, it is called an InPrivate Window. When you choose this mode, it offers a higher level of privacy because your browsing history is deleted when you close all windows of the private mode browser. Additionally, private browsing deletes the logging of sites visited and temporary files or cookies stored on your computer. However, it will not hide browsing history from your school, employer, or ISP.
 
 ### Certificates checks are critical
 
-A secure browser will check the status of certificates that are set by various websites. They are checked to determine if the certificate is from a valid domain and if it’s expired. Valid website certificates are keys to determine that the website is not pretending to be the requested site. The public certificates come from a Certificate Authority (CA) and the organization installs the certificates on their website. The browser can verify the server identity by checking the certificate store.
+A secure browser will check the status of certificates that are set by various websites. They are checked to determine if the certificate is from a valid domain and if it’s expired. Valid website certificates are keys to determine that the website is not pretending to be the requested site. The public certificates come from a Certificate Authority (CA) and the organization installs the certificates on their website. The browser can verify the server identity by checking the certificate store. This certificate check is maintained by the browser vendor.
 
 ### Keep your browser updated
 
-Keep your browser and your operating system updated and patched. Security vulnerabilities are typically fixed promptly. Vulnerabilities in the render engine and JavaScript engine, when patched, prevent the running of malicious code.
+Keep your browser and your operating system updated and patched. Security vulnerabilities are typically fixed promptly. Vulnerabilities in the render engine and JavaScript engine, when patched, prevent the running of malicious code. The browser vendor as well as the end user can help ensure that their browser is up to date.
 
 ### Enable Pop-ups blocker by default
 
-Pop-ups are typically small advertising ads that appear without permission. They’re created by JavaScript code embedded in the HTML webpage. These pop-ups can contain links to malicious software that could be downloaded to your computer. On modern browsers the pop-up blocker is enabled by default.
+Pop-ups are typically small advertising ads that appear without permission. They’re created by JavaScript code embedded in the HTML webpage. These pop-ups can contain links to malicious software that could be downloaded to your computer. On modern browsers the pop-up blocker is enabled by default. As the browser user, it's recommended to leave the pop-up blocker on, or to enable it if it's off.
 
 ### Consider using a Password Manager
 
-A Password Manager enforces password controls, including storing passwords, enforcement of password changes and length, encrypted forms, checks for multiple uses of the same password, and avoidance of onscreen password displays. The passwords are stored in a secure off-site storage vault. These managers also recommend using two-factor authentication. Using a Password Manager means that you only need to remember your vault master password. The managers have a plug-in for browsers and desktop applications. Passwords changed on one device are automatically accessible from other devices after you enter the master password.
+A Password Manager enforces password controls, including storing passwords, enforcement of password changes and length, encrypted forms, checks for multiple uses of the same password, and avoidance of onscreen password displays. The passwords are stored in a secure off-site storage vault. These managers also recommend using two-factor authentication. Using a Password Manager means that you only need to remember your vault master password. The managers have a plug-in for browsers and desktop applications. Passwords changed on one device are automatically accessible from other devices after you enter the master password. This is typically the end user's choice.
 
 ## Defeat social engineering attacks
 
-Currently, the most successful method for protecting our security depends heavily on training individuals. The training needs to be interesting, engaging, up-to-date, and mandatory. The lessons need to be focused on helping people recognize possibly malicious actions on their network and systems. Following training, fake phishing emails and other scams need to be sent to the trainees to reinforce their information. The following is a sample of a fake testing Microsoft notice about “Unusual Sign-in activity." The email directs users to a malicious website and is from a fake Microsoft account. 
+Currently, the most successful method for protecting our security depends heavily on training individuals. The training needs to be interesting, engaging, up-to-date, and easy to access. Organizations can reinforce learning through the use of tools such as attack simulation training in Microsoft Defender for Office 365. The attack simulator training lets administrators run benign cyber attack simulations on your organization to test your security policies and practices. The following is a sample of a fake testing Microsoft notice about “Unusual Sign-in activity." The email directs users to a malicious website and is from a fake Microsoft account. 
 
 :::image type="content" source="../media/ms-tech_support-scam.png" alt-text="A fake message supposedly from Microsoft Support using a fictitious email account." border="false":::
 
