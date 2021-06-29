@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: Test your knowledge on the basic concepts behind why people test.
   ms.date: 6/28/2021
   author: {{githubUsername}}
   ms.author: {{msUser}}
@@ -37,58 +37,31 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "Which of these is **not** a benefit of testing?"
     choices:
-    - content: ""
+    - content: "Tests encourage a more modular architecture."
+      isCorrect: false
+      explanation: "Tests do encourage a more modular architecture by using unit tests to encourage separating methods by functionality that can be called independently."
+    - content: "The code coverage tests provide is the ultimate indication of repo health."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Code coverage is not the ultimate indicator of repo health, there could be many other factors involved such as number of contributors over time or number of open bugs or issues."
+    - content: "Tests help keep track of the different capabilities of a program."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Tests can help keep track of different capabilities by checking all functionality regularly even as new code is added."
+    - content: "Tests help large repositories built by a community avoid bugs by providing checks for both old and new behavior."
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Tests do help maintain large repositories by providing a way to check functionality that does not depend on a single person understanding the full system, but rather by checking behaviors programmatically."
+  - content: "The correct code coverage goal in a repo is"
     choices:
-    - content: ""
+    - content: "100%"
+      isCorrect: false
+      explanation: "100% code coverage can often be a unrealistic and unhelpful goal for modern code bases. Not *all* code needs to be tested and you don't want to require a team to do any busy work just to reach a complete percentage that doesn't actually improve code quality. Over investing in tests can also be harmful if it comes at the cost of expanding the functionality of your app and business."
+    - content: "70%"
+      isCorrect: false
+      explanation: "There is some advice that indicates 70% code coverage could be a happy medium of code coverage, but there isn't much empirical evidence supporting this specific number today. Most commonly, developers observe some kind of drop in efficacy code coverage as it increases between 70% and 100%. Any new bugs that tests may possibly find diminish and it gets more time consuming to write tests only to achieve coverage rather than wholistically thinking about testing different behaviors of your code."
+    - content: "50%"
+      isCorrect: false
+      explanation: "In most cases, this may be considered too low to be an effective or motivating goal."
+    - content: "There is no one true answer. Your code coverage goal depends on the repository."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "There is no one true answer that can be applied to all code bases equally. It is best to agree as a team on a metric and pay more attention to new code causing code coverage to decrease to indicate it's time to test the newly added functionality."

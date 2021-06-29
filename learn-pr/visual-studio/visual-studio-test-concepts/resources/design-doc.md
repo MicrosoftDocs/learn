@@ -144,7 +144,7 @@ Learn the common best practices, theory, and anti-patterns to avoid when writing
         - What is the best recommended testing approach?
             - TDD
             - DRY
-            - It depends on the needs of the repo and the team!
+            - **It depends on the needs of the repo and the team!**
             - BDD
 
 1. **Summary**
