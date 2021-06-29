@@ -9,6 +9,6 @@ metadata:
   author: roryp
   ms.author: ropreddy
   ms.topic: interactive-tutorial
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/5-logging-exercise.md)]

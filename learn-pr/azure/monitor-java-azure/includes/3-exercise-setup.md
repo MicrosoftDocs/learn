@@ -20,9 +20,8 @@ In a web browser, open https://shell.azure.com and select "Bash" mode in the top
 Next, run the following command to clone the sample repository and open the built-in the Azure editor:
 
    ```bash
-   git clone https://github.com/roryp/azure-spring-cloud-reference-architecture.git
-   cd azure-spring-cloud-reference-architecture
-   cd petclinic
+   git clone https://github.com/roryp/ms-learn-monitoring-java
+   cd ms-learn-monitoring-java
    code deployPetClinicApp.sh
    ```
 
