@@ -10,7 +10,7 @@ In this unit, you will:
 
 ## Configure the ingress manifest
 
-    To expose your container to the management webapp via DNS, you'll configure and deploy an ingress controller. You'll find the zone name to access the cna-express service and add to to the `ingress.yaml` file.
+To expose your container to the management webapp via DNS, you'll configure and deploy an ingress controller. You'll find the zone name to access the cna-express service and add to to the `ingress.yaml` file.
 
 1. Identify the fully qualified domain name (FQDN) of the host allowed access to the cluster.
 
@@ -48,7 +48,7 @@ In this unit, you will:
 
 ## Deploy the ingress
 
-    Now we need to deploy the service for our changes to take effect.
+Now we need to deploy the service for our changes to take effect.
 
 5. In Cloud Shell, run the `kubectl apply` command to submit the ingress manifest to your cluster.
 
@@ -72,9 +72,9 @@ In this unit, you will:
 
 ## Use a Docker image to create the webapp
 
-    While AKS gets sets up, you can start to use the Container Registry to deploy the management webapp.
+While AKS gets sets up, you can start to use the Container Registry to deploy the management webapp.
 
-    You'll use the Docker image to deploy the webapp, which will require a username and password to perform this action. The ACR allows you to enable the registry name as the username and admin access key as the password to allow Docker to login to your container registry.
+You'll use the Docker image to deploy the webapp, which will require a username and password to perform this action. The ACR allows you to enable the registry name as the username and admin access key as the password to allow Docker to login to your container registry.
 
 7. Return to the [Azure portal](https://portal.azure.com/), and go to **All resources**.
 
@@ -222,10 +222,10 @@ In this unit, you will:
     echo http://$WEBAPPNAME.azurewebsites.net
     ```
 
-    And that's it! You've now created a scalable, cloud-native solution. Feel free to play around with the resources and code you've created. When you're done, run the next step in the Azure Cloud Shell to delete the resource group, and avoid any unnecessary charges to your account.
+And that's it! You've now created a scalable, cloud-native solution. Feel free to play around with the resources and code you've created. When you're done, run the next step in the Azure Cloud Shell to delete the resource group, and avoid any unnecessary charges to your account.
 
-    ```azurecli
-    az group delete --name $RESOURCEGROUP
-    ```
+```azurecli
+az group delete --name $RESOURCEGROUP
+```
 
-    Press `y`, and then press <kbd>Enter</kbd>. The process will take a while, and you can move onto the next unit.
+Press `y`, and then press <kbd>Enter</kbd>. The process will take a while, and you can move onto the next unit.
