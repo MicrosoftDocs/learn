@@ -85,4 +85,4 @@ Confirm your sample application is up and running, populated with data and now r
 
 ## Next steps
 
-In the next exercise, you'll explore logging for your sample application.
+In the next unit, you'll explore logging for your sample application.
