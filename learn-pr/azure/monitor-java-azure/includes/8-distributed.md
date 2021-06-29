@@ -14,16 +14,16 @@ Logs in Azure Monitor are valuable for identifying root case of issues. Data col
 
 > [!NOTE]
 > Your Azure Spring Cloud sample application already has been setup with a Log Analytics workspace.
-> For more information on KQL syntax, see the Summary unit at the end of this training.
+> For more information on **KQL** syntax, see the Summary unit at the end of this training.
 
 ### Use Log Analytics
 
 There are actually three ways to access your application's logs: Azure Storage, Azure Events Hub, and Log Analytics. We'll focus here on Log Analytics as it's the most common one and is integrated into Azure Spring Cloud for metrics monitoring.
 
 1. In the Azure portal, in the left pane, select your Azure Spring Cloud instance.
-1. To open the **Log Search** pane, select **Logs**.
+1. Next, under the Monitoring section, select **Logs**.
 
-:::image type="content" source="../media/8-cloud-logs.jpg" alt-text="Screenshot showing query for azure spring cloud logs":::
+:::image type="content" source="../media/8-cloud-logs.jpg" alt-text="Screenshot showing query for Azure spring cloud logs":::
 
 3. In the **Query** search box,
 
@@ -57,7 +57,7 @@ Application logs provide critical information and verbose logs about your applic
 ### Show application logs from Azure Spring Cloud
 
 1. In the Azure portal, in the left pane, select your Azure Spring Cloud instance.
-1. To open the **Log Search** pane, select **Logs**.
+1. Next, under the Monitoring section, select **Logs**.
 1. In the **Query** search box,
 
     * To review a list of application logs from Azure Spring Cloud, sorted by time with the most recent logs shown first, run the following query:
@@ -96,8 +96,8 @@ In Azure Database for MySQL, the slow query log is available to users. Access to
 In our sample application, your slow query logs are set up to be piped to Azure Monitor Logs through Diagnostic Logs, and you can do further analysis of your slow queries. Below are sample queries to help you get started:
 
 1. Sign in to the Azure portal.
-1. Select your Azure Database for MySQL server.
-1. select **Logs**
+1. Select your Azure Database for MySQL server you use for your Azure Spring Cloud
+1. Next, under the Monitoring section, select **Logs**.
 
 :::image type="content" source="../media/8-MYSQL-logs.jpg" alt-text="Screenshot showing query for queries longer than 1 second":::
 
@@ -163,7 +163,9 @@ Query Performance Insight helps you to quickly identify what your longest runnin
 
 The Query Performance Insight view in the Azure portal will surface visualizations on key information from Query Store.
 
-In the portal page of your Azure Database for MySQL server, select **Query Performance Insight** under the **Intelligent Performance** section of the menu bar.
+1. Sign in to the Azure portal.
+1. Select your Azure Database for MySQL server you use for your Azure Spring Cloud
+1. In the portal page of your Azure Database for MySQL server, select **Query Performance Insight** under the **Intelligent Performance** section of the menu bar.
 
 ### Long running queries
 
