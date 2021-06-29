@@ -382,3 +382,11 @@ groups:
       title: JSON + CLI
     - id: jsonpowershell
       title: JSON + PowerShell
+- id: webxr-vr-ar
+  title: VR and AR
+  prompt: Choose your WebXR session type
+  pivots:
+    - id: vr
+      title: VR
+    - id: ar
+      title: AR
