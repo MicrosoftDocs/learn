@@ -12,7 +12,7 @@ All the most common browsers offer a private browsing mode. For example, on Chro
 
 ### Certificates checks are critical
 
-A secure browser will check the status of certificates that are set by various websites. They are checked to determine if the certificate is from a valid domain and if it’s expired. Valid website certificates are keys to determine that the website is not pretending to be the requested site. The public certificates come from a Certificate Authority (CA) like VeriSign, and the organization installs the certificates on their website. The browser can verify the server identity by checking the certificate store.
+A secure browser will check the status of certificates that are set by various websites. They are checked to determine if the certificate is from a valid domain and if it’s expired. Valid website certificates are keys to determine that the website is not pretending to be the requested site. The public certificates come from a Certificate Authority (CA) and the organization installs the certificates on their website. The browser can verify the server identity by checking the certificate store.
 
 ### Keep your browser updated
 
@@ -28,16 +28,16 @@ A Password Manager enforces password controls, including storing passwords, enfo
 
 ## Defeat social engineering attacks
 
-Currently, the most successful method for protecting our security depends heavily on training individuals. The training needs to be interesting, engaging, up-to-date, and mandatory. The lessons need to be focused on helping people recognize possibly malicious actions on their network and systems. Following training, fake phishing emails and other scams need to be sent to the trainees to reinforce their information. The following is a sample of a fake testing Microsoft notice about “Unusual Sign-in activity." The email directs users to a malicious website. 
+Currently, the most successful method for protecting our security depends heavily on training individuals. The training needs to be interesting, engaging, up-to-date, and mandatory. The lessons need to be focused on helping people recognize possibly malicious actions on their network and systems. Following training, fake phishing emails and other scams need to be sent to the trainees to reinforce their information. The following is a sample of a fake testing Microsoft notice about “Unusual Sign-in activity." The email directs users to a malicious website and is from a fake Microsoft account. 
 
-:::image type="content" source="../media/ms-tech_support-scam.png" alt-text="A fake message supposedly from Microsoft Support with a fictitious phone number." border="false":::
+:::image type="content" source="../media/ms-tech_support-scam.png" alt-text="A fake message supposedly from Microsoft Support using a fictitious email account." border="false":::
 
 Some rules of thumb to help protect yourself and your company from social media hackers.
 
 - Examine all your social network settings. Enable two-factor authentication.
 - Avoid sharing your work email address.
 - Know that most companies will never send an email to verify your credentials.
-- Hover your pointer over an email or text link without selecting it to observe the actual URL underneath the words.
+- Hover your pointer or navigate to an email or text link without selecting it to observe the actual URL underneath the words.
 - Use cloud-based antivirus (AV) solutions like Microsoft Windows Defender on a Windows 10 device. Windows Defender leverages Azure for faster analysis instead of waiting for traditional AV definitions to be delivered.
 - Before you post to social media, think about the information that can be harvested from it.
 - Don’t select links in *call-to-action* messages that demand action such as., do this now, or something terrible will happen! Instead, open a web browser and access that company’s website and your account. If it’s authentic, that message will be there also.
