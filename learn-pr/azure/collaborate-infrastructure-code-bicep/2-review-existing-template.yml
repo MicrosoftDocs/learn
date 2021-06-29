@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.collaborate-infrastructure-code-bicep.review-existing-template
+title: Review your existing Bicep template
+metadata:
+  unitType: learning-content
+  title: Review your existing Bicep template
+  description: TODO
+  ms.date: 04/20/2021
+  author: pazdedav
+  ms.author: dapazd
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-azure
+durationInMinutes: 5 # user input: the estimate time to complete the unit
+content: |
+  [!include[](includes/2-review-existing-template.md)]

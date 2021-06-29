@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.azure.collaborate-infrastructure-code-bicep
+metadata:
+  moduleType: standard
+  title: Collaborate on infrastructure as code using Bicep
+  description: Learn how to create modular, reusable, and documented infrastructure as code using Bicep and enable team collaboration. # user input: a description for site search and SEO
+  ms.date: 04/20/2021
+  author: pazdedav
+  ms.author: dapazd
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-azure
+title: Collaborate on infrastructure as code using Bicep
+summary: Restructure your Bicep templates into reusable modules and add comments to your infrastructure code to document it. Publish your templates on GitHub and enable team collaboration through standard Git-based workflows. # user input: introductory summary (https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)
+abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
+  After competing this module, you'll be able to:
+    - Structure your Bicep code for better team collaboration.
+    - Document your code by using comments and other metadata.
+    - Publish your infrastructure code in a code repository.
+prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
+  - Familiarity with the basic Bicep template structure and syntax.
+  - Familiarity with Azure, including the Azure portal, subscriptions, and resource groups.
+  - Understanding of Infrastructure as Code (IaC), and its benefits.
+  - Basic concepts and commands of using Git as distributed VCS.
+  - Basic experience with using GitHub.
+  - [Visual Studio Code](https://code.visualstudio.com) installed locally.
+  - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed.
+  - GitHub account
+  - The [Git client](http://git-scm.com/downloads) installed locally
+  - Either:
+    - The latest [Azure CLI](/cli/azure/install-azure-cli) installed locally.
+    - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps) installed locally.
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
+  - intermediate
+roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role)
+  - devops-engineer
+  - developer
+  - administrator
+products:
+  - azure-resource-manager
+units:
+- learn.azure.collaborate-infrastructure-code-bicep.introduction
+- learn.azure.collaborate-infrastructure-code-bicep.review-existing-template
+- learn.azure.collaborate-infrastructure-code-bicep.exercise-git
+- learn.azure.collaborate-infrastructure-code-bicep.template-structure
+- learn.azure.collaborate-infrastructure-code-bicep.exercise-refactor-existing-template
+- learn.azure.collaborate-infrastructure-code-bicep.modules
+- learn.azure.collaborate-infrastructure-code-bicep.exercise-modules
+- learn.azure.collaborate-infrastructure-code-bicep.comments-resource-metadata
+- learn.azure.collaborate-infrastructure-code-bicep.exercise-add-comments-resource-metadata
+- learn.azure.collaborate-infrastructure-code-bicep.share-infrastructure-code
+- learn.azure.collaborate-infrastructure-code-bicep.exercise-publish-refactored-code
+- learn.azure.collaborate-infrastructure-code-bicep.knowledge-check
+- learn.azure.collaborate-infrastructure-code-bicep.summary
+badge:
+  uid: learn.azure.collaborate-infrastructure-code-bicep.badge

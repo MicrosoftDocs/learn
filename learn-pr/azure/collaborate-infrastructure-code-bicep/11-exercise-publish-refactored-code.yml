@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.collaborate-infrastructure-code-bicep.exercise-publish-refactored-code
+title: Exercise - Publish refactored Bicep code on GitHub
+metadata:
+  unitType: exercise
+  title: Exercise - Publish refactored Bicep code on GitHub
+  description: TODO # user input: a description for site search and SEO
+  ms.date: 04/20/2021
+  author: pazdedav
+  ms.author: dapazd
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-azure
+durationInMinutes: 123 # user input: the estimate time to complete the unit
+content: |
+  [!include[](includes/11-exercise-publish-refactored-code.md)]

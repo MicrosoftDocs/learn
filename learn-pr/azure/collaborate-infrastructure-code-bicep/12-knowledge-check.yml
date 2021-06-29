@@ -1,0 +1,94 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.collaborate-infrastructure-code-bicep.knowledge-check
+title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+metadata:
+  unitType: knowledge_check
+  title: "Knowledge check"
+  description: "Knowledge check"
+  ms.date: 04/20/2021
+  author: pazdedav
+  ms.author: dapazd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5 # user input: the estimate time to complete the unit
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+#Structure your Bicep code for better usability and team collaboration.
+##What are modules and how do you refer to them from you Bicep templates?
+##How do you pass parameter values from the main template to modules?
+#Document your code by using comments and other metadata.
+##What type of comments are supported in Bicep files? (a/ Only single-line comments, b/ Both single-line and multi-line, c/ Not supported)
+##How can you declare resource tags and apply them to multiple resources?
+#Publish your infrastructure code in a code repository
+##What command would you use to stage your changes using Git?
+##Which of the following commands will publish your code in a remote Git repository?*
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "What is one of the benefits of using Known configuration approach for authoring Bicep templates?"
+    choices:
+    - content: "You can expose all resources properties to end-users."
+      isCorrect: false
+      explanation: "Free-form configuration approach exposes all resources properties."
+    - content: "You provide a discrete set of options your users can choose from."
+      isCorrect: true
+      explanation: "You abstract technical complexity by providing options your users are familiar with."
+    - content: "You can structure your template and group elements in any order."
+      isCorrect: false
+      explanation: "This is a general feature of Bicep templates. Known configuration provides a discrete set of options to choose from."
+  - content: "How do you pass parameter values from the main template to modules?"
+    choices:
+    - content: "You use the `params` section in module declaration."
+      isCorrect: true
+      explanation: "Parameters declared in a module file are referenced from the module declaration using `params` section in the template."
+    - content: "You must provide a parameters file (JSON) for each module you use."
+      isCorrect: false
+      explanation: "All modules are compiled into one Resource Manager template. You provide one parameters file for the deployment."
+    - content: "Parameters for modules are not supported, only for the main template."
+      isCorrect: false
+      explanation: "Your modules can include parameters. Their values are populated by referencing the from the module declaration using `params` section."
+  - content: "What types of comments are supported in Bicep files?"
+    choices:
+    - content: "Only single-line comments are supported."
+      isCorrect: false
+      explanation: "You can use both single-line and multi-line comments in your Bicep files."
+    - content: "Both single-line and multi-line comments."
+      isCorrect: true
+      explanation: "You can use both single-line and multi-line comments in your Bicep files."
+    - content: "Comments are not supported in Bicep."
+      isCorrect: false
+      explanation: "You can use both single-line and multi-line comments in your Bicep files."
+  - content: "How do you ensure the users are providing valid parameter inputs?"
+    choices:
+    - content: "You apply parameter decorators."
+      isCorrect: true
+      explanation: "Correct. Parameter decorators like @maxLenght() can help with input validation."
+    - content: "You apply Azure RBAC on your deployment scope."
+      isCorrect: false
+      explanation: "Azure RBAC defines what permissions users have on a given scope, it doesn't validate what parameter values they provide."
+    - content: "You hardcode as many values into templates as possible."
+      isCorrect: false
+      explanation: "While hardcoding values can in a way limit users from providing incorrect input, it's not recommended. Validate input using decorators instead."
+  - content: "Which of the following commands will publish your code into a remote Git repository called `origin`?"
+    choices:
+    - content: "`git push origin main`"
+      isCorrect: true
+      explanation: "Push is the correct command."
+    - content: "`git publish origin main`"
+      isCorrect: false
+      explanation: "Git doesn't have a `publish` command. Use `git push` instead."
+    - content: "`git sync origin`"
+      isCorrect: false
+      explanation: "Git doesn't have a `sync` command. Use `git push` instead."
