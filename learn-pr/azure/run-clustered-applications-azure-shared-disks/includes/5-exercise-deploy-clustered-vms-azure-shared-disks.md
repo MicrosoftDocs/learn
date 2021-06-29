@@ -96,7 +96,7 @@ az disk create -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --siz
 
     This command identifies the current reservations that exist for the shared disk. Since this is the first time that we run, there should be no new reservations.
 
-    :::image type="content" source="../media/exercise-disk-status-without-VM-registration.png" alt-text="Disk-status-without-VM-registration." border="true":::
+    :::image type="content" source="../media/05-disk-status-without-vm-registration.png" alt-text="Screenshot of disk status without V M registration." border="true":::
 
 1. Run the following command to register new reservation key 1234 on **myVM1**:
 
@@ -120,7 +120,7 @@ az disk create -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --siz
     exit
     ```
 
-    :::image type="content" source="../media/exercise-disk-status-with-VM1-registration.png" alt-text="Disk-status-with-VM1-registration." border="true":::
+    :::image type="content" source="../media/05-disk-status-with-vm1-registration.png" alt-text="Screenshot of disk status with V M 1 registration." border="true":::
 
 1. Connect to the second VM by using SSH using the following command:
 
@@ -151,7 +151,7 @@ az disk create -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --siz
     exit
     ```
 
-    :::image type="content" source="../media/exercise-disk-status-with-VM1-and-VM2-registrations.png" alt-text="Disk-status-with-VM1-and-VM2-registrations." border="true":::
+    :::image type="content" source="../media/05-disk-status-with-vm1-and-vm2-registrations.png" alt-text="Disk status with VM1 and VM2 registrations." border="true":::
 
 1. Connect to **myVM1** using SSH:
 
@@ -166,7 +166,7 @@ az disk create -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --siz
     exit
     ```
 
-    :::image type="content" source="../media/exercise-disk-status-with-VM1-reservation.png" alt-text="Disk-status-with-VM1-reservation." border="true":::
+    :::image type="content" source="../media/05-disk-status-with-vm1-reservation.png" alt-text="Screenshot of disk status with V M 1 reservation." border="true":::
 
 1. Connect to **myVM2** by using SSH:
 
@@ -180,7 +180,7 @@ az disk create -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --siz
     sudo sg_persist /dev/sdc -c
     ```
 
-    :::image type="content" source="../media/exercise-disk-status-with-VM2-reservation.png" alt-text="05-Disk-status-with-VM2-reservation." border="true":::
+    :::image type="content" source="../media/05-disk-status-with-vm2-reservation.png" alt-text="Screenshot of disk status with V M 2 reservation." border="true":::
 
     ```bash
     # Unregister from **myVM2**. This command release access to the shared disk.

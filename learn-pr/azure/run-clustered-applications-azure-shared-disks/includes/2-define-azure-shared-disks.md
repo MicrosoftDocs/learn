@@ -43,7 +43,7 @@ Let's examine the following example to understand how a shared disk works:
 5. The reservation to write is now enforced on the VM2 and other VMs can't write to the disk.
 6. Applications that were running on VM1 will now fail over on VM2.
 
-:::image type="content" source="../media/02_diagram_for_failover_clustering_using_shared_disk.PNG" alt-text="Diagram_for_failover_clustering_using_shared_disk.PNG" border="true":::
+:::image type="content" source="../media/02-diagram-for-failover-clustering-using-shared-disk.png" alt-text="Diagram that shows how failover clustering works with shared disks on Azure." border="true":::
 
 ### SQL Failover Cluster Instance (FCI).
 
@@ -71,7 +71,7 @@ The clustered application running on multiple VMs can access the Azure shared di
 
 The following diagram illustrates another common clustered workload. It consists of several nodes that read a disk's data for running parallel processes:
 
-:::image type="content" source="../media/02_diagram_for_model_training_for_machine_learning_using_shared_disk.PNG" alt-text="Diagram_for_model_training_for_machine_learning_using_shared_disk." border="true":::
+:::image type="content" source="../media/02-diagram-for-model-training-for-machine-learning-using-shared-disk.png" alt-text="Diagram for model training for machine learning using shared disk." border="true":::
 
 > [!Note]
 > You can also enable a multiple-write scenario. However, this scenario requires that applications can write.
