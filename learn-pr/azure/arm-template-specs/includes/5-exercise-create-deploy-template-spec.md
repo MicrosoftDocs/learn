@@ -36,7 +36,7 @@ You start with one of the templates that your team has already created. The temp
  
    You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 
-1. Copy the following code into *main.bicep*.
+1. Copy the following code into *main.bicep*:
 
    :::code language="bicep" source="code/5-starting.bicep" :::
 
@@ -52,11 +52,11 @@ You start with one of the templates that your team has already created. The temp
 
 1. Create a new file called *azuredeploy.json*.
 
-1. Save the empty file so that Visual Studio Code loads the ARM template tooling. 
+1. Save the empty file so that Visual Studio Code loads the Azure Resource Manager template (ARM template) tooling. 
  
    You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 
-1. Copy the following code into *azuredeploy.json*.
+1. Copy the following code into *azuredeploy.json*:
 
    :::code language="json" source="code/5-starting.json" :::
 
@@ -68,7 +68,7 @@ You start with one of the templates that your team has already created. The temp
 
 ## Make the parameters easier to understand
 
-When you work with template specs, it's important to consider how others will use your template. This is especially important for parameters, because they're the main way other people will interact with your code. The parameters in your team's template don't include descriptions or other hints about how they should be used, so you add this information here.
+When you work with template specs, it's important to consider how others will use your template. This is especially important for parameters, because they're the main way that other people will interact with your code. The parameters in your team's template don't include descriptions or other hints about how they should be used, so you add this information here.
 
 ::: zone pivot="bicepcli,biceppowershell"
 

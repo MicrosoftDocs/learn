@@ -182,6 +182,6 @@ Because template specs are Azure resources, they use Azure's identity and access
 > To deploy a template spec, a user needs:
 > 
 > - Access to read the template spec.
-> - Access to deploy to the resource group or other scope they're asking to deploy to. 
+> - Access to deploy to the resource group or other scope that they're asking to deploy to. 
 >
->Azure checks both conditions before the deployment starts.
+> Azure checks both conditions before the deployment starts.

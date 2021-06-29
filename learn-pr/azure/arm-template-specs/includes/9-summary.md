@@ -2,7 +2,7 @@ Your organization's use of Azure is growing. Along with that growth, your worklo
 
 You decided to create template specs for your colleagues to use. Template specs provide a way for you to publish a template so that other people in your organization can reuse it.
 
-In this module, you learned about the benefits of template specs, how template specs work, and how to create, publish, deploy, and manage them. You learned how to create a complete template spec deployment, and how to use a template spec within another ARM template deployment.
+In this module, you learned about the benefits of template specs, how template specs work, and how to create, publish, deploy, and manage them. You learned how to create a complete template spec deployment, and how to use a template spec within another Azure Resource Manager template (ARM template) deployment.
 
 By using template specs, you can create libraries of reusable templates that configure resources according to your requirements. Now, you can enable your colleagues to deploy their own Azure resources quickly, while ensuring that those resources meet your quality standards.
 

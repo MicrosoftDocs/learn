@@ -2,7 +2,7 @@ Let's look at how you create and publish a template spec.
 
 ## Create a template
 
-To create a template that you'll use as a template spec, you write an ARM template just like you normally do. You can include parameters, variables, resources, and outputs.
+To create a template that you'll use as a template spec, you write an Azure Resource Manager template (ARM template) just like you normally do. You can include parameters, variables, resources, and outputs.
 
 ::: zone pivot="jsoncli,jsonpowershell"
 
@@ -36,7 +36,7 @@ This screenshot illustrates the entry of parameter values:
 
 :::image type="content" source="../media/3-portal-parameters.png" alt-text="Screenshot that shows the Azure portal interface for entering parameter values for a template spec deployment." border="true":::
 
-It's important to think about how the users of your template spec will use it, and ensure your parameters are clear and understandable.
+It's important to think about how the users of your template spec will use it, and ensure that your parameters are clear and understandable.
 
 ## Publish the template spec to Azure
 

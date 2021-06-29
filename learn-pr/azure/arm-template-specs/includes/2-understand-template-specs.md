@@ -1,4 +1,4 @@
-By now, you're used to deploying ARM templates to Azure by using Bicep or JSON. You create a template file, and then you submit it to Azure by creating a deployment. Azure Resource Manager orchestrates the creation or reconfiguration of your resources. 
+By now, you're used to deploying Azure Resource Manager templates (ARM templates) to Azure by using Bicep or JSON. You create a template file, and then you submit it to Azure by creating a deployment. Azure Resource Manager orchestrates the creation or reconfiguration of your resources. 
 
 When you work with template specs, you still send the template to Azure. But instead of deploying it, Azure will save it for you to use in the future. Then, you can go back later and tell Azure to deploy the template spec. You can even use the same template spec repeatedly to deploy more environments.
 
@@ -15,7 +15,7 @@ At your toy company, you've created lots of reusable templates, including:
 
 Template specs are a great way to create a library of reusable ARM templates for common scenarios in your organization. An expert can build a template with a preconfigured resource or set of resources. That expert can then publish it as a template spec, enabling other people in the organization to deploy it. 
 
-You can use template specs to ensure the resources that your team creates are configured according to your requirements. For example, you could publish the storage account template described earlier as a template spec. Whenever anyone in your organization deploys your template spec, you can be sure they've created a storage account with the right authentication settings.
+You can use template specs to ensure that the resources your team creates are configured according to your requirements. For example, you could publish the storage account template described earlier as a template spec. Whenever anyone in your organization deploys your template spec, you can be sure they've created a storage account with the right authentication settings.
 
 Template specs are stored within Azure, so you don't need to maintain shared template files yourself. You can use Azure role-based access control to manage who can use and modify the template specs. Without template specs, you need to choose a storage location, like Azure Storage, to keep your template files. You also need to control access yourself.
 
@@ -40,8 +40,8 @@ A template spec is an Azure resource, just like a storage account or virtual mac
 
 When you work with template specs, you create two resources:
 
-* The **template spec** is the container resource. It contains one or multiple versions.
-* **Template spec versions** contain the actual template to deploy.
+* The *template spec* is the container resource. It contains one or multiple versions.
+* *Template spec versions* contain the actual template to deploy.
 
 You work with template specs and versions by using their resource IDs. Here's an example resource ID for a template spec:
 

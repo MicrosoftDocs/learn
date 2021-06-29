@@ -1,4 +1,4 @@
-After you've created and published your template spec, you can deploy it. In this unit, you learn about the ways you can deploy a template spec.
+After you've created and published your template spec, you can deploy it. In this unit, you learn about the ways to deploy a template spec.
 
 ## Create a deployment by using a template spec
 
@@ -52,7 +52,7 @@ Each of these commands accepts the `--template-spec` argument to initiate a temp
 
 ## Use a template spec as a linked deployment
 
-To use a template spec from within another ARM template, you create a deployment that uses that template spec. This is called a _linked deployment_ because you're linking to a deployment template specified externally.
+To use a template spec from within another Azure Resource Manager template (ARM template), you create a deployment that uses that template spec. This is called a _linked deployment_ because you're linking to a deployment template specified externally.
 
 In Azure, a deployment is a resource that has the resource type `Microsoft.Resources/deployments`. When you deploy an ARM template, you're creating a deployment resource. The same concept applies when you deploy a template spec, like this:
 

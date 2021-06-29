@@ -2,7 +2,7 @@ Template specs provide a way to create and manage reusable Azure Resource Manage
 
 ## Example scenario
 
-Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. Your Azure environment is maturing, and you've got lots of people from lots of teams who come to you to provision and configure new Azure infrastructure for them to use. 
+Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. Your Azure environment is maturing. Lots of people from lots of teams come to you to provision and configure new Azure infrastructure for them to use. 
 
 Everyone trusts you to provision the infrastructure correctly and in a way that follows your company's policies. It's great that they trust you so much, but this means you're spending all your time deploying templates. And your company's use of Azure is growing, so your workload is going to keep increasing.
 
