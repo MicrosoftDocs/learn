@@ -14,6 +14,6 @@ It’s time for your charity to train a new generation of dogs in how to find hi
 
 In this module, you will:
 
-* Discover feature normalization – a simple means of improving training
+* Define feature normalization
 * Create and work with test datasets
-* Discover how testing models can both improve and harm training
+* Articulate how testing models can both improve and harm training
