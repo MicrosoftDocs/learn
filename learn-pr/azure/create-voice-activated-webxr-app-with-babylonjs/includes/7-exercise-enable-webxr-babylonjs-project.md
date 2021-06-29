@@ -36,10 +36,50 @@ Here, you have a choice of adding support for the VR mode or the AR mode based o
 -->
 
 ## Enable WebXR Support
-Zone pivot for vr and ar
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+
+::: zone pivot="vr"
+
+Let's enable WebXR support for the immersive VR mode in the amusement park application.
+
+1. If you have closed it, open your project folder from the previous exercise in Visual Studio Code.
+1. Navigate to *src/index.ts* in your project folder.
+1. In the createScene() function, add the following code before the function's return statement:
+
+    ```typescript
+    const xr = await scene.createDefaultXRExperienceAsync();
+    ```
+
+::: zone-end
+
+::: zone pivot="ar"
+
+Let's enable WebXR support for the immersive AR mode in the amusement park application.
+
+1. If you have closed it, open your project folder from the previous exercise in Visual Studio Code.
+1. Navigate to *src/index.ts* in your project folder.
+1. In the createScene() function, add the following code before the function's return statement:
+
+    ```typescript
+    const xr = await scene.createDefaultXRExperienceAsync({
+        uiOptions: {
+            sessionMode: "immersive-ar",
+        },
+    });
+    ```
+
+## Add background remover
+
+When users enter the AR session, we want them to use their own surroundings as the background for the dragon-summoning activity. Let's enable the background remover feature to remove the ground and sky meshes only during an AR session.
+
+1. Below the scene.createDefaultXRExperienceAsync() function call, add this line to enable the background remover feature:
+
+    ```typescript
+    xr.baseExperience.featuresManager.enableFeature(BABYLON.WebXRBackgroundRemover, 'latest', {
+        backgroundMeshes: [env.skybox, env.ground]
+    });
+    ```
+
+::: zone-end
 
 ## Limit speech recognition to WebXR sessions
 <!-- Introduction paragraph -->
@@ -53,7 +93,7 @@ Zone pivot for vr and ar
 1. <!-- Step 2 -->
 1. <!-- Step n -->
 
-## AR only - Background remover
+
 
 <!-- 5. Validation chunk -------------------------------------------------------------------------------------
 

@@ -6,17 +6,17 @@ Here, you'll learn about a selection of the WebXR features provided by Babylon.j
 
 ## WebXR in Babylon.js
 
-Babylon.js is a powerful 3D rendering engine packed into a JavaScript framework. Other than its main features such as rendering 3D meshes and animations, the framework also provides support for WebXR.
+Babylon.js is a powerful 3D rendering engine packed into a typescript framework. Other than its main features such as rendering 3D meshes and animations, the framework also provides support for WebXR.
 
 The WebXR experience can be enabled for a Babylon.js scene in one line:
 
-```javascript
+```typescript
 const xr = await scene.createDefaultXRExperienceAsync();
 ```
 
 By default, this line of code enables WebXR support in the immersive VR mode. To enable the support for WebXR support in the AR mode:
 
-```javascript
+```typescript
 const xr = await scene.createDefaultXRExperienceAsync({
     uiOptions: {
         sessionMode: "immersive-ar",
@@ -54,7 +54,7 @@ When viewing a Babylon.js scene without WebXR support or in an immersive VR sess
 
 The background remover feature allows us to specify what meshes to remove when the user is in an AR session. The example below shows how it can be enabled:
 
-```javascript
+```typescript
 featuresManager.enableFeature(BABYLON.WebXRBackgroundRemover, 'latest', {
     backgroundMeshes: [ground, sky]
 });
