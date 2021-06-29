@@ -16,7 +16,11 @@ Use these common finance terms when your team is creating a cloud migration busi
 
 ## Terms
 
+<<<<<<< HEAD
 **Amortization**: An expense tied to a typically intangible asset, that reflects the *economic* usage of that asset in a particular time period. For example if you purchase a license worth 100 USD, you'd capitalize that on your balance sheet. If you amortized it over five years, you'd annually recognize an expense of 20 USD per year that impacts your income statement.
+=======
+**Amortization**: An expense tied to a typically intangible asset, that reflects the *economic* usage of that asset in a particular time period. For example if you purchase a license worth \$100, you'd capitalize that on your balance sheet. If you amortized it over five years, you'd annually recognize an expense of \$20 per year that impacts your income statement.
+>>>>>>> 34d5e712a0a4680d3e10b820e98a59ad77db0f16
 
 **Balance sheet**: A balance sheet is a financial statement that reports a company's assets, liabilities, and shareholders' equity as of a specific date.
 
@@ -26,7 +30,11 @@ Use these common finance terms when your team is creating a cloud migration busi
 
 **[Cloud economics](https://azure.microsoft.com/overview/cloud-economics/)**: An understanding of the benefits and costs of the cloud, and the financial impact when you start a migration from on-premises to cloud computing.
 
+<<<<<<< HEAD
 **Depreciation**: An expense tied to a capitalized asset, that reflects the *economic* usage of that asset in a particular time period. For example, if you purchase a server worth 100 USD, you'd capitalize that on your balance sheet. If you depreciated it over five years, you'd annually recognize an expense of 20 USD per year that impacts your income statement.
+=======
+**Depreciation**: An expense tied to a capitalized asset, that reflects the *economic* usage of that asset in a particular time period. For example if you purchase a server worth \$100, you'd capitalize that on your balance sheet. If you depreciated it over five years, you'd annually recognize an expense of \$20 per year that impacts your income statement.
+>>>>>>> 34d5e712a0a4680d3e10b820e98a59ad77db0f16
 
 **Double-mortgage period**: A period when you have two sets of costs at the same time. For example, when you have both on-premises and cloud costs.
 
