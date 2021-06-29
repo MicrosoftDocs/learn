@@ -1,4 +1,4 @@
-Organizations use AKS to deploy applications on Kubernetes without needing to manage the underlying infrastructure. In the case of Trailwinds, deploying an AKS cluster to run Elastic allows the company to get started quickly and provides integrated capabilities that create efficiencies.
+Organizations use AKS to deploy applications on Kubernetes without needing to manage the underlying infrastructure. In the case of Tailwind Traders, deploying an AKS cluster to run Elastic allows the company to get started quickly and provides integrated capabilities that create efficiencies.
 
 Here, we will review the steps involved with creating a cluster in Azure Kubernetes Service and installing Elastic Cloud on Kubernetes (ECK) to your cluster, which will function as the Kubernetes operator.
 

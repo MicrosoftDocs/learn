@@ -1,4 +1,4 @@
-An AKS cluster with Kubernetes operator lets you deploy complex applications on Kubernetes with increased control over the infrastructure and greater efficiency. Recall that in the Trailwinds Clothing example, you need to set up an AKS cluster to deploy Elastic Cloud on Kubernetes on AKS. Here, we will walk through the steps for creating an AKS cluster and installing Elastic Cloud on Kubernetes operator.
+An AKS cluster with Kubernetes operator lets you deploy complex applications on Kubernetes with increased control over the infrastructure and greater efficiency. Recall that in the Tailwind Traders example, you need to set up an AKS cluster to deploy Elastic Cloud on Kubernetes on AKS. Here, we will walk through the steps for creating an AKS cluster and installing Elastic Cloud on Kubernetes operator.
 
 ## Begin in the Azure portal
 

@@ -1,6 +1,6 @@
 Elasticsearch and Kibana help you search, analyze, monitor, and secure your apps and IT.
 
-For Trailwinds, once the AKS cluster is set up and Elastic Cloud on Kubernetes is installed (with the Kubernetes operator and RBAC rules), the company needs to deploy Elasticsearch and Kibana for search and visualization functionality.
+For Tailwind Traders, once the AKS cluster is set up and Elastic Cloud on Kubernetes is installed (with the Kubernetes operator and RBAC rules), the company needs to deploy Elasticsearch and Kibana for search and visualization functionality.
 
 Here, we will discuss the process for adding a three-node Elasticsearch cluster and deploying two instances of Kibana.
 

@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: The Azure portal
       isCorrect: true
-      explanation: se your Azure account or sign up for a free trial to access the Azure portal and create an AKS cluster.
+      explanation: Use your Azure account or sign up for a free trial to access the Azure portal and create an AKS cluster.
     - content: The Elastic Stack
       isCorrect: false
       explanation: The Elastic Stack provides tools to help you search, analyze, monitor, and secure your apps and IT. You will deploy it on your AKS cluster.
@@ -46,4 +46,4 @@ quiz:
       explanation: A three-node cluster is recommended to provide resiliency for the architecture and room to perform lifecycle operations, such as upgrade, security patching for the underlying infrastructure, and mitigating data loss with replication.
     - content: "50"
       isCorrect: false
-      explanation: a three-node cluster is recommended when starting with Elastic Cloud on AKS.
+      explanation: A three-node cluster is recommended when starting with Elastic Cloud on AKS.
