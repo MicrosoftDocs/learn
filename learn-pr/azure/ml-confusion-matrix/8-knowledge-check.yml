@@ -13,45 +13,36 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'What are the characteristics of OLTP workloads?'
+  - content: 'What does it mean to have an imbalanced dataset?'
     choices:
-    - content: "High numbers of transactions with large amounts of data"
+    - content: "The number of samples is much smaller or greater than is required "
       isCorrect: false
-      explanation: "Incorrect. Analytical workloads tend to have high amounts of data. OLTP workloads have high numbers of transactions, but not large amounts of data."
-    - content: "Business intelligence and analytical workloads"
+      explanation: "Incorrect."
+    - content: "The feature columns contain many missing values"
       isCorrect: false
-      explanation: "Incorrect. OLTP workloads tend to be high numbers of transactions, not analytical workloads."
-    - content: "Time series data"
-      isCorrect: false
-      explanation: "Incorrect. Time series data is one of many data types usable in OLTP workloads."
-    - content: "High numbers of transactions with low amounts of data"
+      explanation: "Incorrect."
+    - content: "The feature columns contain many missing values"
       isCorrect: true
-      explanation: "Correct. OLTP workloads tend to have low amounts of data, with a high number of transactions, like text messages or purchasing items online."
-  - content: 'Why do multi-tenant applications provide massive cost savings?'
+      explanation: "Correct."
+  - content: 'What information can we extract from a single confusion matrix?'
     choices:
-    - content: "OLAP workloads involve low amounts of data"
+    - content: "Log loss, and/or mean squared error"
       isCorrect: false
-      explanation: "Incorrect. Multi-tenant applications usually have OLTP workloads, with large numbers of tenants."
-    - content: "The combined workloads of multiple tenants is low"
+      explanation: "Incorrect."
+    - content: "Whether the dataset has overfit the training set"
       isCorrect: false
-      explanation: "Incorrect. Multi-tenant applications don't necessarily have low workloads, but the overall workload can be low on average with resources being shared between tenants."
-    - content: "Many customers share resources."
+      explanation: "Incorrect."
+    - content: "What kind of mistakes the model is making"
       isCorrect: true
-      explanation: "Correct. Multi-tenant applications allow for high numbers of users sharing resources, which can provide savings per user."
-    - content: "Recent cloud advances in storing large amounts of data."
-      isCorrect: false
-      explanation: "Incorrect. While the cost of cloud storage has fallen, there are other resources other than storage to take into account."
-  - content: 'What is a benefit of sharding?'
+      explanation: "Correct."
+  - content: 'Why don’t we use measures like “True Positives” or “Accuracy” to train our models directly?'
     choices:
-    - content: "OLAP workloads only need to access a single node to run queries"
+    - content: "There are mathematical barriers that prevent these being used for some training regimens"
       isCorrect: false
-      explanation: "Incorrect. Sharding can provide extra performance to OLAP workloads by combining the resources of multiple nodes, which reduces latency."
-    - content: "Sharding allows efficient distribution of your data to multiple servers, allowing a level of performance that is impossible to achieve on a single server."
+      explanation: "Incorrect."
+    - content: "Subtle model improvements often do not affect these metrics"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Both of the above"
       isCorrect: true
-      explanation: "Correct. Sharding allows your data to be distributed among nodes, which can leverage more resources than a single node."
-    - content: "Queries can be combined into a single, master query."
-      isCorrect: false
-      explanation: "Incorrect. Sharding allows for intelligent distribution of data, not combining queries."
-    - content: "Sharding allows applications to directly query worker nodes, removing the need for a coordinator node."
-      isCorrect: false
-      explanation: "Incorrect. When sharding has distributed data to worker nodes, applications can't directly connect to worker nodes. Queries are routed through the coordinator node."
+      explanation: "Correct. In fact, these answers are often related. Methods like gradient descent rely on measures of slope, which do not exist for non-smooth functions like accuracy."
