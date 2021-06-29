@@ -185,7 +185,7 @@ window.addEventListener("resize", function () {
 
 Now you can test the scene being rendered in the browser!
 
-Run `npm start` and go to the localhost ([https://localhost:8080](https://localhost:8080?azure-portal=true)). If you still have it running from earlier, the hot reload should have refreshed when you saved your changes, and you'll see them reflected. The scene will be blank blue, because you haven't added any mesh objects or textures.
+Run `npm start` and go to the localhost ('https://localhost:8080'). If you still have it running from earlier, the hot reload should have refreshed when you saved your changes, and you'll see them reflected. The scene will be blank blue, because you haven't added any mesh objects or textures.
 
 Now that you've set up the basic elements of the scene, you're ready to start adding meshes and building out the Virtual Reality experience.
 
