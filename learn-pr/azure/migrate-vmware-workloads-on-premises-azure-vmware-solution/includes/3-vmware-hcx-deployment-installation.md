@@ -3,7 +3,7 @@ Remember that VMware HCX (HCX) Advanced deploys by default when Azure VMware Sol
 To complete the exercises, you'll need access to an Azure subscription, with contributor rights assigned to configure an Azure VMware Solution environment.
 
 ## Download VMware HCX Connector
-Before deploying HCX Connector in the on-premises vCenter, download the VMware HCX Connector OVA file from the Azure portal.
+Before you deploy HCX Connector in the on-premises vCenter, download the VMware HCX Connector OVA file from the Azure portal.
 
 1. Search for and select the Azure VMware Solution private cloud in the Azure portal.
 
@@ -40,7 +40,7 @@ Before deploying HCX Connector in the on-premises vCenter, download the VMware H
 ## Deploy the VMware HCX Connector OVA on-premises
 Next, the HCX Connector OVA file needs to be installed in the on-premises VMware environment. Sign in to the web GUI of vCenter, and begin deployment of the OVA file on-premises.
 
-1. Right-click on the vCenter datacenter, and select **Deploy OVF Template**.
+1. Right-click the vCenter datacenter, and select **Deploy OVF Template**.
 
     :::image type="content" source="../media/3-deploy-ovf-template.png" alt-text="Screenshot that shows how to deploy the OVA file downloaded for HCX Connector on-premises in vCenter.":::
 
@@ -80,7 +80,7 @@ Next, the HCX Connector OVA file needs to be installed in the on-premises VMware
 
     :::image type="content" source="../media/3-ready-to-complete.png" alt-text="Screenshot that shows the appliance is ready to complete the installation on-premises.":::
 
-1. After the appliance deploys, you'll need to power on the virtual appliance manually in vCenter. After powering on, wait 10-15 minutes before finishing the configuration.
+1. After the appliance deploys, you'll need to power on the virtual appliance manually in vCenter. Then wait 10-15 minutes before finishing the configuration.
 
 ## Activate VMware HCX
 After deploying and powering on the VMware HCX Connector appliance on-premises, you activate HCX Connector. You need to get a license key from the Azure VMware Solution environment in Azure.
