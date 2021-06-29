@@ -71,7 +71,7 @@ recognizer.canceled = (s: Recognizer, e: SpeechRecognitionCanceledEventArgs) => 
 
 The PhraseListGrammar class allows us to add specific phrases to improve speech recognition accuracy. For example, adding the phrase "for Ward" to the list will lower the chances of the audio being transcribed as "forward" by mistake.
 
-Here's how to create a PhraseListGrammar instance and add a phrase to it:
+Here's how to create a PhraseListGrammar instance and add a phrase:
 
 ```typescript
 const phraseList = PhraseListGrammar.fromRecognizer(recognizer);
