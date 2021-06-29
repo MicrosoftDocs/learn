@@ -9,6 +9,6 @@ metadata:
   author: roryp
   ms.author: ropreddy
   ms.topic: interactive-tutorial
-durationInMinutes: 20
+durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-setup.md)]
