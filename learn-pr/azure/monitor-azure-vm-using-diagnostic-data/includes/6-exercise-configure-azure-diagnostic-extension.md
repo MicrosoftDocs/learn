@@ -1,40 +1,50 @@
 The last time your band went on tour, your website went down while your fans were trying to buy tickets. You're not sure if the web server ran out of memory, or if the VM wasn't the right size. For your new tour, you'd like a dashboard to keep track of the VM's traffic, memory, and CPU usage.
 
-In this exercise, you'll install the Azure Diagnostics extension on your new VM to collect near real-time metrics for the OS level. After you install the extension, you'll change the sample rate to every minute. Then, you'll create a KPI dashboard to view the new metrics being captured.
+In this exercise, you'll install the Azure Monitor Agent on your new VM to collect near real-time metrics at the guest OS level. After you install the agent, you'll create a KPI dashboard to view the new metrics being captured.
 
-## Install the Azure Diagnostics extension
+## Install the Azure Monitor agent using Data Collection rules
 
-Use the portal to enable guest-level metric monitoring of the VM. When you enable this monitoring, Azure installs and configures the Azure Diagnostics extension for you.
+In the Portal, Search for Azure Monitor. Click on Data Collection rules and click **Create new rule**.
 
-1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and sign in with the account that you used to enable the sandbox.
+![Screenshot of the Data Collection Rules Landing Page](../media/5-enable-diagnostics-portal.png)
 
-1. On the Azure portal menu or from the **Home** page, select **Virtual machines**.
+Next, you define the rule name and select the subscription, resource group, region and platform type.
 
-1. Select the **monitored-linux-vm** virtual machine that you created.
+![Screenshot of the Data Collection Rules Basics](../media/5-enable-diagnostics-portal.png)
 
-1. In the left menu pane, under **Monitoring**, select **Diagnostic settings**. The **Diagnostics settings** pane appears for your virtual machine.
+Next, you add the resource(s) to be monitored. Click on **Add resources** Find and select the your VM, the monitored-linux-vm.
 
-    ![Screenshot that shows the monitoring section for a VM](../media/6-scroll-to-monitoring.png)
+![Screenshot of the Data Collection Rules Resources](../media/5-enable-diagnostics-portal.png)
 
-1. On the **Overview** tab, select **Enable guest-level monitoring**.
+Next, you configure the data to be collected and the destination where it will be sent. Click on **Add data source**. 
+You have different configuration options depending on the OS installed on the VM. At the basic level, these options are:
 
-    ![Screenshot that shows the button for enabling guest-level monitoring](../media/6-enable-guest-level-monitoring.png)
+|Windows  |Linux  |
+|---------|---------|
+|Performance counters: CPU, Memory, Disk, Network   |  Metrics: Processor, Memory, Network, Filesystem, Disk      |
+|Destination: Azure Monitor Metrics, Azure Monitor Logs     | Azure Monitor Metrics, Azure Monitor Logs        |
 
-1. Wait until the diagnostic settings are configured. This process might take a minute.
+However, you can also choose to collect custom metrics like percentage of free disk space on Windows, or the amount of swap available on Linux.
 
-## Configure the extension
+Set the data source type to Performance Counters, leave the default for the Basic Performance Counters and Sample rate.
 
-1. After the extension is installed, the **Diagnostics settings** pane appears highlighting the **Overview** tab.
+![Screenshot of the Data Collection Rules Performance Counters](../media/5-enable-diagnostics-portal.png)
 
-1. Select the **Metrics** tab.
+Click the Destination tab to view the default destinations for Performance Counters, Azure Monitor Metrics. Click on Add data source.
 
-    ![Screenshot that shows the Overview page](../media/6-diagnostics-enabled.png)
+![Screenshot of the Data Collection Rules Performance Counters Destination](../media/5-enable-diagnostics-portal.png)
 
-1. Change all the **Sample rates** to **60** seconds, and then select **Save**.
+Confirm your settings for the Collect and deliver step of the wizard.
 
-    ![Screenshot that shows changing the sample rate to 60 seconds](../media/6-change-sample-rate.png)
+![Screenshot of the Data Collection Rules Collect and Deliver](../media/5-enable-diagnostics-portal.png)
 
-   It might take a minute to save your update.
+Review and create your new data collection rule, which will install the Azure Monitor Agent on the selected VM.
+
+## Confirm that the agent is installed on the VM
+
+Return to your VM to ensure that the Azure Monitor Agent was successfully installed.
+
+![Screenshot of VM Overview with Agent Installed ](../media/5-diagnostics-settings-on.png)
 
 ## Create a custom KPI dashboard
 
