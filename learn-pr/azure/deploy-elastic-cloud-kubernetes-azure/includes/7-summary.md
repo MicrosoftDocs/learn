@@ -1,4 +1,4 @@
-Your boss at Trailwinds Clothing asked you to deploy Elastic on AKS with Kubernetes operator in order to have control over the underlying infrastructure while increasing efficiency though reduced infrastructure management. You created an AKS cluster and installed Elastic Cloud on Kubernetes operator. Then, you deployed a three-node Elasticsearch cluster with two instances of Kibana on AKS.
+Your boss at Trailwinds Clothing asked you to deploy Elastic on AKS with the Kubernetes operator. The goal was to gain control over the underlying infrastructure while increasing efficiency. You created an AKS cluster and installed Elastic Cloud on Kubernetes operator. Then, you deployed a three-node Elasticsearch cluster with two instances of Kibana on AKS.
 
 ## References
 
