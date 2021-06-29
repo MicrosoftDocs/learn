@@ -29,21 +29,21 @@ quiz:
       explanation: "Correct. The architect component of the training engine generates learning models ."
   - content: "In which of the following scenarios could Bonsai be of some benefit to an organization?"
     choices:
-    - content: "An organization has concluded that there is considerable scope for improving automated production systems."
+    - content: "An organization has concluded that there's considerable scope for improving automated production systems."
       isCorrect: true
-      explanation: "Correct. This is an ideal scenario for Bonsai."
+      explanation: "Correct. This scenario is ideal for Bonsai."
     - content: "An organization uses little in the way of automation systems."
       isCorrect: false
       explanation: "Incorrect. Bonsai is designed to help optimize automation systems."
     - content: "An organization has no simulations, and no experts skilled in working with simulations."
       isCorrect: false
       explanation: "Incorrect. Bonsai works with simulations to optimize an automation system."
-  - content: "When implementing Bonsai, what's the purpose of having a customizable start state in a simulation??"
+  - content: "When implementing Bonsai, what's the purpose of having a customizable start state in a simulation?"
     choices:
     - content: "It helps ensure meaningful real-time assessment during training."
       isCorrect: false
       explanation: "Incorrect. That's provided by having useful visualization and data output in your simulation."
-    - content: "It helps ensure that the Bonsai brain learns from a variety of conditions."
+    - content: "It helps ensure that the Bonsai brain learns from various conditions."
       isCorrect: true
       explanation: "Correct. This means you can adjust the start conditions to test the brain's responses."
     - content: "It helps identify when a system gets into a state where further progress is impossible."
@@ -53,10 +53,10 @@ quiz:
     choices:
     - content: "The Instructor carries out the underlying AI algorithms selected by the Architect."
       isCorrect: false
-      explanation: "Incorrect. It is the Learner that performs this task."
+      explanation: "Incorrect. The Learner performs this task."
     - content: "The Predictor carries out the training plan by configuring the Learner."
       isCorrect: false
-      explanation: "Incorrect. It is the Instructor that performs this task."
+      explanation: "Incorrect. The Instructor performs this task."
     - content: "The Architect creates and optimizes learning topologies."
       isCorrect: true
       explanation: "Correct. The Architect also proposes the configuration of learning algorithms and topologies."
