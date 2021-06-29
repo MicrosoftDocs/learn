@@ -83,12 +83,56 @@ When users enter the AR session, we want them to use their own surroundings as t
 
 ## Limit speech recognition to WebXR sessions
 
-Currently, the users can summon the dragon without entering a WebXR session. 
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+Currently, the users can summon the dragon without entering a WebXR session. However, the amusement park company wants the experience to be shown through VR/AR in order to simulate the true park activity. 
+
+Let's restrict the summoning activity to only the VR/AR mode. To do so, we will start the speech recognition session after users enters a WebXR session.
+
+1. In the createScene() function, find and delete the `recognizer.startContinuousRecognitionAsync();` line.
+1. Right before the createScene() function's return statement, add this line of code:
+
+    ```typescript
+    xr.baseExperience.sessionManager.onXRSessionInit.add((eventData: XRSession, eventState: BABYLON.EventState) => {
+        recognizer.startContinuousRecognitionAsync();
+    })
+    ```
+
+1. Let's also stop the recognition when the users exit the session, just in case they leave without summoning the dragon.
+
+    ```typescript
+    xr.baseExperience.sessionManager.onXRSessionEnded.add((eventData: XRSession, eventState: BABYLON.EventState) => {
+        recognizer.stopContinuousRecognitionAsync();
+    }
+    ```
+
+1. With the current code, if a user summons the dragon, leave the WebXR session, and then go back to the session, the speech recognition session will start again. Let's create a flag to check if a dragon has been summoned. Change the *recognized* event handler and the *onXRSessionInit* handler:
+
+    ```typescript
+    var isSummoned = false;
+    recognizer.recognized = async (s: Recognizer, e: SpeechRecognitionEventArgs) => {
+        if (e.result.reason == ResultReason.RecognizedSpeech 
+            && e.result.text.toLowerCase().replace(/[^a-zA-Z0-9]+/g, " ").trim() === spell) {
+                env.magicCircle.fadeIn(true);
+                setTimeout(() => {
+                    env.dragon.fadeIn(true);
+                }, 500);
+                isSummoned = true;
+                recognizer.stopContinuousRecognitionAsync();
+        }
+    };
+    ```
+
+    ```typescript
+    xr.baseExperience.sessionManager.onXRSessionInit.add((eventData: XRSession, eventState: BABYLON.EventState) => {
+        if (!isSummoned) {
+            recognizer.startContinuousRecognitionAsync();
+        }
+    })
+    ```
+
+    With the updated logic, the speech recognition will only start if the dragon has not been summoned.
 
 ## Position the dragon
+
 <!-- Introduction paragraph -->
 1. <!-- Step 1 -->
 1. <!-- Step 2 -->
