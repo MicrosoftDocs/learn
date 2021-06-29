@@ -1,4 +1,4 @@
-Azure Speech Services provides software development kits (SDKs) in multiple languages to help developers integrate the service into their applications. Speech-to-text is available in the SDKs for these languages: C++, C#, Java, JavaScript, Python, Swift, Objective-C, and Go.
+Azure Speech Services provides software development kits (SDKs) in multiple languages to help developers integrate the service into their applications. Speech-to-text is available in the SDKs for the following languages: C++, C#, Java, JavaScript, Python, Swift, Objective-C, and Go.
 
 Recall that the amusement park application needs to be served on the web, and your team is using Babylon.js to create the application. To integrate Azure Speech-to-text into the amusement park application, we will need to use Azure Speech's JavaScript SDK.
 
@@ -34,13 +34,13 @@ The SpeechRecognizer class performs the speech-to-text transcription action. To 
 const recognizer = new SpeechRecognizer(speechConfig, audioConfig);
 ```
 
-After the SpeechRecognizer instance is initialized, we can start to perform speech-to-text on the audio input by calling this method:
+After the SpeechRecognizer instance is initialized, we can start to perform speech-to-text on the audio input by calling `startContinuousRecognitionAsync()`:
 
 ```typescript
 recognizer.startContinuousRecognitionAsync();
 ```
 
-The SpeechRecognizer will continue to listen for input until this method is called:
+The SpeechRecognizer will continue to listen for input until `stopContinuousRecognitionAsync()` is called:
 
 ```typescript
 recognizer.stopContinuousRecognitionAsync();
@@ -71,7 +71,7 @@ recognizer.canceled = (s: Recognizer, e: SpeechRecognitionCanceledEventArgs) => 
 
 The PhraseListGrammar class allows us to add specific phrases to improve speech recognition accuracy. For example, adding the phrase "for Ward" to the list will lower the chances of the audio being transcribed as "forward" by mistake.
 
-Here's how to create a PhraseListGrammar instance and add a phrase to it:
+Here's how to create a PhraseListGrammar instance and add a phrase:
 
 ```typescript
 const phraseList = PhraseListGrammar.fromRecognizer(recognizer);
