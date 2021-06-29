@@ -1,6 +1,6 @@
 In the accounting firm scenario, your organization is using Azure Virtual Desktop to provide your workforce access to virtualized desktops and apps.
 
-So, in this unit, you create a host pool and add a VM that will act as a session host. To avoid having to domain join the VM, you manually install the Azure Virtual Desktop agents to register the VM to the host pool. You'll then have an Azure Virtual Desktop deployment that you can use in the rest of the module exercises.
+So, in this unit, you create a host pool and add a VM that will act as a session host. To avoid having to domain join the VM, you manually install the Azure Virtual Desktop agent and boot loader to register the VM to the host pool. You'll then have a Azure Virtual Desktop deployment that you can use in the rest of the module exercises.
 
 [!include[](../../../includes/azure-subscription-prerequisite.md)]
 
@@ -124,16 +124,16 @@ Use a remote desktop session to sign into the VM you created in the previous sec
 
 ## Register the virtual machine with host pool
 
-Install the Azure Virtual Desktop agents on the VM to register the VM to the host pool.
+Install the Azure Virtual Desktop agent and boot loader on the VM to register the VM to the host pool.
 
-### Install the  Azure Virtual Desktop Agent
+### Install the agent
 
-In your remote desktop session on the VM, install the  Azure Virtual Desktop Agent. You'll need the registration token for the host pool to complete the installation.
+In your remote desktop session on the VM, install the  Azure Virtual Desktop agent. You'll need the registration token for the host pool to complete the installation.
 
-1. Copy the link to the [Windows Virtual Desktop Agent](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv).
+1. Copy the link to the [Azure Virtual Desktop agent](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv).
 1. On the VM, open Microsoft Edge to start a web browser session.
 1. Paste the link into a web browser.
-1. At the bottom of the web browser window, select **Open file** to install the Azure Virtual Desktop Agent.
+1. At the bottom of the web browser window, select **Open file** to install the Azure Virtual Desktop agent.
 1. When the installer asks you for the registration token, paste in the value you got after you created the token.
 1. If you no longer have the token value, go back to your Cloud Shell session and run the following command.
 
@@ -145,13 +145,13 @@ In your remote desktop session on the VM, install the  Azure Virtual Desktop Age
 
 1. Complete the installation.
 
-### Install the  Azure Virtual Desktop Agent Bootloader
+### Install the boot loader
 
-In your remote desktop session on the VM, install the  Azure Virtual Desktop Agent Bootloader.
+In your remote desktop session on the VM, install the  Azure Virtual Desktop boot loader.
 
-1. Copy the link to the [Azure Virtual Desktop Agent Bootloader](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH).
+1. Copy the link to the [Azure Virtual Desktop boot loader](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH).
 1. Paste the link into a web browser session in the VM.
-1. At the bottom of the web browser window, select **Open file** to install the Azure Virtual Desktop Agent Bootloader.
+1. At the bottom of the web browser window, select **Open file** to install the Azure Virtual Desktop boot loader.
 1. Complete the installation.
 1. Close the remote desktop session.
 

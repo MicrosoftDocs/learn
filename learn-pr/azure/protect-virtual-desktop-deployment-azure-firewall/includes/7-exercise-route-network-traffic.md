@@ -2,7 +2,13 @@ In the previous exercise, you deployed Azure Firewall. Now you need to route all
 
 ## Route all traffic through the firewall
 
-For the subnet used by the host pool, configure the outbound default route to go through the firewall.
+For the subnet used by the host pool, configure the outbound default route to go through the firewall. You'll complete the following three steps.
+
+1. Create a route table in the same resource group as your host pool VMs and firewall.
+1. Associate the route table to the subnet that your host pool VMs uses.
+1. On the route table, add the route to the firewall.
+
+After you complete those steps, all traffic will route to Azure Firewall.
 
 ### Create route table
 
@@ -60,6 +66,8 @@ The last step is to add a route to Azure Firewall on the route table. After you 
 
 ## Create application rule collection
 
+By default, the firewall denies access to everything. So you need to configure conditions under which traffic is allowed through the firewall.
+
 Create an application rule collection with rules to allow Azure Virtual Desktop access to several Fully Qualified Domain Names (FQDNs).
 
 1. In the Azure portal, search for and select **Firewalls**.
@@ -96,6 +104,36 @@ Create an application rule collection with rules to allow Azure Virtual Desktop 
 
 1. When you're done, the form looks like the following image.
 :::image type="content" source="../media/7-firewall-rules-classic-application-rule-collection-form.png" alt-text="Screenshot that shows the application rule collection form filled out.":::
+1. Select **Add**.
+
+## Create network rule collection
+
+Let's say our scenario uses Azure Active Directory Domain Services (Azure AD DS) so you don't need to create a network rule to allow DNS. But you do need to create a rule to allow traffic from your Azure Virtual Desktop VMs to the Windows activation service. For our network rule to allow KMS, as the destination IP address, you'll use the IP address of the KMS server for the Azure Global cloud.
+
+1. On **learn-fw** >  **Rules (classic)**, select **Network rule collection**.
+1. Select the **Network rule collection** tab > **Add network  rule collection**.
+:::image type="content" source="../media/7-firewall-rules-add-network-collection.png" alt-text="Screenshot that shows the network rule collection tab with the add network rule collection option.":::
+1. Enter the following information.
+
+    |Field  |Value  |
+    |---------|---------|
+    |Name     |     net-coll01    |
+    |Priority    |    200     |
+    |Action     |  Allow       |
+1. Under **Rules**, in the **IP Addresses** section, enter the following information.
+ 
+    |Field  |Value  |
+    |---------|---------|
+    |Name     |     allow-kms    |
+    |Protocol|TCP|
+    |Source type    | IP address        |
+    |Source     |   Address space for hostVNet like 10.0.0.0/16     |
+    |Destination type  |  IP address      |
+    |Destination Address    |   23.102.135.246    |
+    |Destination Ports    |   1688   |
+
+1. When you're done, the form looks like the following image.
+:::image type="content" source="../media/7-firewall-rule-network-rule-collection-rule.png" alt-text="Screenshot that shows the network rule collection form filled out.":::
 1. Select **Add**.
 
 ## Check your work
