@@ -52,7 +52,7 @@ When users enter the AR session, we want them to use their own surroundings as t
 
 ## Limit speech recognition to WebXR sessions
 
-Currently, the users can summon the dragon without entering a WebXR session. However, the amusement park company wants the experience to be shown through VR/AR in order to simulate the true park activity. 
+Currently, users can summon the dragon without entering a WebXR session. However, the amusement park company wants the experience to be shown through VR/AR in order to simulate the true park activity. 
 
 Let's restrict the summoning activity to only the VR/AR mode. To do so, we will start the speech recognition session after users enters a WebXR session.
 
@@ -102,7 +102,7 @@ Let's restrict the summoning activity to only the VR/AR mode. To do so, we will 
 
 ## Position the dragon
 
-Currently, the fade in at the same position. However, in a WebXR session, if a user faces another direction when summoning the dragon, the meshes might appear next to them or even behind them. Let's make sure that the dragon would always appear in front of the user.
+Currently, the dragon and the magic circle always fade in at the same position. However, in a WebXR session, if a user faces another direction when summoning the dragon, the meshes might appear next to them or even behind them. Let's make sure that the dragon would always appear in front of the user.
 
 1. Modify the *recognizer.recognized* event handler:
 
@@ -270,4 +270,4 @@ const createScene = async function () {
 
 ::: zone-end
 
-Since most browsers on computers cannot open WebXR sessions, we can't see the updated code in action yet. In the next exercise, you'll deploy this application to the web and verify its functionalities on any device that supports VR or AR.
+Since most browsers on computers cannot open WebXR sessions without an external device which supports WebXR, we can't see the updated code in action yet. In the next exercise, you'll deploy this application to the web and verify its functionalities on any device that supports VR or AR.

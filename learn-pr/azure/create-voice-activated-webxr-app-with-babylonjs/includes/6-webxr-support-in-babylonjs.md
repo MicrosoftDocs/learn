@@ -14,7 +14,7 @@ The WebXR experience can be enabled for a Babylon.js scene in one line:
 const xr = await scene.createDefaultXRExperienceAsync({});
 ```
 
-By default, this line of code enables WebXR support in the immersive VR mode. To enable the support for WebXR support in the AR mode:
+By default, this line of code enables WebXR support in the immersive VR mode. To enable the support for WebXR support in the AR mode, use this line:
 
 ```typescript
 const xr = await scene.createDefaultXRExperienceAsync({
@@ -34,9 +34,9 @@ One can then enter the VR or AR session by pressing on that button.
 
 The WebXR Session Manager serves as the interface for us to interact with the WebXR session of the scene.
 
-When we use scene.createDefaultXRExperienceAsync() to enable the WebXR support, the session manager is created automatically and can be accessed through **xr.baseExperience.sessionManager**.
+When we use `scene.createDefaultXRExperienceAsync()` to enable the WebXR support, the session manager is created automatically and can be accessed through **xr.baseExperience.sessionManager**.
 
-The WebXR Session Manager provides a set of observables for us to recognize events related to the WebXR sessions. For example, the onXRSessionInit observable is triggered when a new WebXR session is created, and the onXRSessionEnded observable is triggered when a WebXR session ended. These observables are useful for recognizing when users are entering the WebXR session through the button selection.
+The WebXR Session Manager provides a set of observables for us to recognize events related to the WebXR sessions. For example, the *onXRSessionInit* observable is triggered when a new WebXR session is created, and the *onXRSessionEnded* observable is triggered when a WebXR session ended. These observables are useful for recognizing when users are entering the WebXR session through the button selection.
 
 The WebXR Session Manager can also be used to initialize or end a WebXR session programmatically, as well as specifying the type of the session (VR or AR) when creating the session programmatically.
 
@@ -60,13 +60,13 @@ When viewing a Babylon.js scene without WebXR support or in an immersive VR sess
 The background remover feature allows us to specify what meshes to remove when the user is in an AR session. The example below shows how it can be enabled:
 
 ```typescript
-featuresManager.enableFeature(BABYLON.WebXRBackgroundRemover, 'latest', {
+xr.baseExperience.featuresManager.enableFeature(BABYLON.WebXRBackgroundRemover, 'latest', {
     backgroundMeshes: [ground, sky]
 });
 ```
 
 ## Supported devices
 
-VR and AR WebXR sessions are available on Android and iOS mobile phones. For Android, they're supported on the native Chrome browser; for iOS, they can be viewed on an application named WebXR Viewer.
+VR and AR WebXR sessions can be opened on Android and iOS mobile phones. For Android, they're supported on the native Chrome browser; for iOS, they can be viewed on an application named WebXR Viewer.
 
 Other than mobile phones, you can also view immersive VR sessions using any Windows Mixed Reality headset or HoloLens, which support AR as well.
