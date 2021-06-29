@@ -40,7 +40,7 @@ After the SpeechRecognizer instance is initialized, we can start to perform spee
 recognizer.startContinuousRecognitionAsync();
 ```
 
-The SpeechRecognizer will continue to listen for input until this method is called:
+The SpeechRecognizer will continue to listen for input until `stopContinuousRecognitionAsync()` is called:
 
 ```typescript
 recognizer.stopContinuousRecognitionAsync();
