@@ -20,6 +20,9 @@ Logs in Azure Monitor are valuable for identifying root case of issues. Data col
 
 There are actually three ways to access your application's logs: Azure Storage, Azure Events Hub, and Log Analytics. We'll focus here on Log Analytics as it's the most common one and is integrated into Azure Spring Cloud for metrics monitoring.
 
+> [!IMPORTANT]
+> The Log data ingestion time in Azure Monitor can take up to 15 minutes. If data is not found in Log Analytics, it may take additional time to ingest Azure Spring Cloud log data.
+
 1. Open the Azure portal
 1. Select "Azure Spring Cloud" from the list of Azure services
 1. Select your Azure Spring Cloud instance
@@ -96,6 +99,9 @@ Monitoring data about your servers helps you troubleshoot and optimize for your 
 In Azure Database for MySQL, the slow query log is available to users. Access to the transaction log isn't supported. The slow query log can be used to identify performance bottlenecks for troubleshooting.
 
 In our sample application, your slow query logs are set up to be piped to Azure Monitor Logs through Diagnostic Logs, and you can do further analysis of your slow queries. Below are sample queries to help you get started:
+
+> [!IMPORTANT]
+> The MySQL Log data ingestion time in Azure Monitor can take up to 15 minutes. If data is not found in Log Analytics, it may take additional time to ingest MySQL log data.
 
 1. Sign in to the Azure portal.
 1. Select your Azure Database for MySQL server you use for your Azure Spring Cloud
