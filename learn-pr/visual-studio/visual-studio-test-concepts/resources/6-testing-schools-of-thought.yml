@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.visual-studio-test-tools.when-to-use-{product}
-title: When to use {product}
+uid: learn.visual-studio-test-tools.testing-schools-of-thought
+title: Testing Schools of Thought
 metadata:
   unitType: learning-content
-  title: when-to-use-{product}
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  title: testing-schools-of-thought
+  description: There are many different schools of thought when it comes to testing. Find a summary of Test Driven Development (TDD), Behavior Driven Development (BDD), Red/Green/Refactor, and Don't Repeat Yourself (DRY) as well as the advantages of each strategy.
   ms.date: 6/28/2021
   author: {{githubUsername}}
   ms.author: {{msUser}}
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-visual-studio # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-when-to-use-{product}.md)]
+  [!include[](includes/5-testing-schools-of-thought.md)]
