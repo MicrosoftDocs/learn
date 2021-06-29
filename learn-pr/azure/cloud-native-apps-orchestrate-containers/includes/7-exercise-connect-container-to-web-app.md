@@ -8,7 +8,7 @@ In this unit, you will:
 * Deploy the ingress controller
 * Create a webapp using a Docker image
 
-    ## Configure the ingress manifest
+## Configure the ingress manifest
 
     To expose your container to the management webapp via DNS, you'll configure and deploy an ingress controller. You'll find the zone name to access the cna-express service and add to to the `ingress.yaml` file.
 
@@ -20,8 +20,8 @@ In this unit, you will:
     az aks show --resource-group $RESOURCEGROUP --name $CLUSTERNAME -o tsv --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
     ```
 
-1. Copy the output, and open the integrated editor in Cloud Shell by entering `code .`
-1. Open the `ingress.yaml` file and replace the `<zone-name>` placeholder value with the `ZoneName` value you copied.
+2. Copy the output, and open the integrated editor in Cloud Shell by entering `code .`
+3. Open the `ingress.yaml` file and replace the `<zone-name>` placeholder value with the `ZoneName` value you copied.
 
     The `ingress.yaml` file should match the following YAML, with `<exampleURL.eastus.aksapp.io>` **replaced by the output in step 7**.
 
@@ -44,13 +44,13 @@ In this unit, you will:
                 path: / # Which path is this rule referring to
     ```
 
-1. **Save the manifest file**, and close the editor.
+4. **Save the manifest file**, and close the editor.
 
-    ### Deploy the ingress
+## Deploy the ingress
 
     Now we need to deploy the service for our changes to take effect.
 
-1. In Cloud Shell, run the `kubectl apply` command to submit the ingress manifest to your cluster.
+5. In Cloud Shell, run the `kubectl apply` command to submit the ingress manifest to your cluster.
 
     ```bash
     kubectl apply -f ./ingress.yaml
@@ -62,7 +62,7 @@ In this unit, you will:
     ingress.extensions/cna-express created
     ```
 
-1. Return the Cloud Shell to the source folder.
+6. Return the Cloud Shell to the source folder.
 
     ```bash
     cd ..
@@ -70,28 +70,27 @@ In this unit, you will:
 
     There could be a small delay between the creation of the ingress and the creation of the zone record. Let's load the webapp while this happens.
 
-    ### Use a Docker image to create the webapp
+## Use a Docker image to create the webapp
 
     While AKS gets sets up, you can start to use the Container Registry to deploy the management webapp.
 
     You'll use the Docker image to deploy the webapp, which will require a username and password to perform this action. The ACR allows you to enable the registry name as the username and admin access key as the password to allow Docker to login to your container registry.
 
-1. Return to the [Azure portal](https://portal.azure.com/), and go to **All resources**.
+7. Return to the [Azure portal](https://portal.azure.com/), and go to **All resources**.
 
-1. Select the container registry you created earlier, to navigate to the Overview page for the container registry.
+8. Select the container registry you created earlier, to navigate to the Overview page for the container registry.
 
-1. In the left menu pane, under **Settings**, select **Access keys**.
+9. In the left menu pane, under **Settings**, select **Access keys**.
 
-1. Set the **Admin user** option to **Enable**. This change saves automatically.
+10. Set the **Admin user** option to **Enable**. This change saves automatically.
 
     :::image type="content" source="../media/admin-user.png" alt-text="Screenshot that shows the Access keys page for the container registry with Admin user selected.":::
 
-
     You're now ready to create your web app.
 
-    ### Review the ingress
+## Review the ingress
 
-1. In the Cloud Shell, run the ` kubectl get ingress` command to check if the deployment was successful.
+11. In the Cloud Shell, run the ` kubectl get ingress` command to check if the deployment was successful.
 
     ```bash
     kubectl get ingress cna-express
@@ -106,7 +105,7 @@ In this unit, you will:
 
     Make sure the `ADDRESS` column of the output is filled with an IP address. That's the address of your cluster.
 
-1. Let's query Azure to find out if our DNS has been created and we can access the website container.
+12. Let's query Azure to find out if our DNS has been created and we can access the website container.
 
     Run the `list` command to list all DNS zones again.
 
@@ -122,7 +121,7 @@ In this unit, you will:
     5cd29ec927f24764b052.eastus.aksapp.io  mc_rg-contoso-video_aks-contoso-video_eastus  4             10000
     ```
 
-1. Copy the `ZoneName` and `ResourceGroup` columns, and run the `az network dns` command. Replace the `<resource-group>` and `<zone-name>` value placeholders with the values you copied.
+13. Copy the `ZoneName` and `ResourceGroup` columns, and run the `az network dns` command. Replace the `<resource-group>` and `<zone-name>` value placeholders with the values you copied.
 
     ```bash
     az network dns record-set list -g <resource-group> -z <zone-name> --output table
@@ -141,23 +140,23 @@ In this unit, you will:
 
     Make sure there are two new records at the bottom of the list with the host we created in the `host` key. The `ProvisioningState` value is `Succeeded`. It can take several minutes for zone records to propagate.
 
-1. Open your browser, and go to your full aksapp.io FQDN URL described in the output. You should see a hello world message. **Remember to not to include the `.` from the end of the URL.**
+14. Open your browser, and go to your full aksapp.io FQDN URL described in the output. You should see a hello world message. **Remember to not to include the `.` from the end of the URL.**
 
     :::image type="content" source="../media/deployment.png" alt-text="Deployment test.":::
 
-    ### Create a web app
+## Create a web app
 
-1. Go back to the [Azure portal](https://portal.azure.com/) home page, and select **Create a resource**.
+15. Go back to the [Azure portal](https://portal.azure.com/) home page, and select **Create a resource**.
 
-1. In the left menu pane, select **Web**, then search for and select **Web App**. The **Web App** pane appears.
+16. In the left menu pane, select **Web**, then search for and select **Web App**. The **Web App** pane appears.
 
-1. Select **Create**.
+17. Select **Create**.
 
     :::image type="content" source="../media/search-web-app-annotated.png" alt-text="Screenshot that shows the Azure Marketplace with Web App selected.":::
 
     The **Create Web App** pane appears.
 
-1. On the **Basics** tab, enter the following values for each setting.
+18. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
     |---|---|
@@ -174,9 +173,9 @@ In this unit, you will:
 
     Take note of the name of your webapp - we'll need this in a couple of steps.
 
-1. Select **Next:&nbsp;Docker&nbsp;&gt;**.
+19. Select **Next:&nbsp;Docker&nbsp;&gt;**.
 
-1. On the **Docker** tab, enter the following values for each setting.
+20. On the **Docker** tab, enter the following values for each setting.
 
     | Setting | Value |
     |---|---|
@@ -188,35 +187,35 @@ In this unit, you will:
     | Tag | `latest` |
     | Startup Command | Leave this setting empty. |
 
-1. Select **Review and create**, and then select **Create**.
+21. Select **Review and create**, and then select **Create**.
 
-1. When the deployment is complete, select **Go to resource**
+22. When the deployment is complete, select **Go to resource**
 
-1. In the left menu pane, under **Settings**, select **Configuration**.
+23. In the left menu pane, under **Settings**, select **Configuration**.
 
-1. Under **Application settings**, select **New application setting**.
+24. Under **Application settings**, select **New application setting**.
 
-1. Copy the following value and paste it into the `Name`
+25. Copy the following value and paste it into the `Name`
 
     ```
     SOCKET_SERVER_URL
     ```
 
-1. For Value, use the same aksapp.io FQDN URL you used with your ingress controller and to access the hello world webpage.
+26. For Value, use the same aksapp.io FQDN URL you used with your ingress controller and to access the hello world webpage.
 
-1. Select **OK**, then Select **Save**, and **Continue**.
+27. Select **OK**, then Select **Save**, and **Continue**.
 
     :::image type="content" source="../media/application-setting.png" alt-text="Screenshot that shows the Web App application setting being set.":::
 
-1. Return to the Cloud Shell, and paste in the following command. Replace `<webapp-name>` with the name of your webapp, and select <kbd>Enter</kbd> to save your webapp name.
+28. Return to the Cloud Shell, and paste in the following command. Replace `<webapp-name>` with the name of your webapp, and select <kbd>Enter</kbd> to save your webapp name.
 
     ```bash
     WEBAPPNAME=<webapp-name>
     ```
 
-    ## Test the solution
+## Test the solution
 
-1. In the Azure Cloud Shell, run the following command and select the URL for your webapp.
+29. In the Azure Cloud Shell, run the following command and select the URL for your webapp.
 
     ```bash
     echo select the link below

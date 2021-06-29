@@ -32,7 +32,7 @@ In this unit, you will:
       az aks get-credentials --resource-group $RESOURCEGROUP --name $CLUSTERNAME
       ```
 
-1. To verify the connection to your cluster, run the `kubectl get nodes` command to return a list of the cluster nodes:
+2. To verify the connection to your cluster, run the `kubectl get nodes` command to return a list of the cluster nodes:
 
     ```azurecli
     kubectl get nodes
@@ -40,27 +40,27 @@ In this unit, you will:
 
     Now, you've connected to the cluster and verified that the nodes are deployed and ready. Next, you'll query the server to get information for our deployment file.
 
-1. Get the `ACR login server` name using the `az acr list` command as follows:
+3. Get the `ACR login server` name using the `az acr list` command as follows:
 
     ```azurecli
     az acr list --resource-group $RESOURCEGROUP --query "[].{acrLoginServer:loginServer}" --output table
     ```
 
-    ### Deploy your container to AKS
+## Deploy your container to AKS
 
     You'll be using a deployment manifest file to deploy your application. The manifest file allows you to define what type of resource you want to deploy and all the details associated with the workload.
 
     Kubernetes groups containers into logical structures called pods, which have no intelligence. Deployments add the missing intelligence to create your application. Let's edit the base deployment file in the source code for your cluster.
 
-1. In Cloud Shell, move to the AKS folder:
+4. In Cloud Shell, move to the AKS folder:
 
     ```bash
     cd aks
     ```
 
-1. Open the integrated editor in Cloud Shell by entering `code .`
+5. Open the integrated editor in Cloud Shell by entering `code .`
 
-1. Open the `deployment.yaml` file, which is missing our `ACR login server` from step 3. The file contains the instructions to deploy our express container, with the following configuration.
+6. Open the `deployment.yaml` file, which is missing our `ACR login server` from step 3. The file contains the instructions to deploy our express container, with the following configuration.
 
     ```yaml
     # deployment.yaml
@@ -84,13 +84,13 @@ In this unit, you will:
                 - containerPort: 80
     ```
 
-1. **Change the `<AcrLoginServer>` to the server that was output in step 3**. Remember to leave the `/expressimage` directly after.
+7. **Change the `<AcrLoginServer>` to the server that was output in step 3**. Remember to leave the `/expressimage` directly after.
 
-1. **Save the manifest file** and close the editor.
+8. **Save the manifest file** and close the editor.
 
-   ### Apply the manifest
+## Apply the manifest
 
-1. In Cloud Shell, run the `kubectl apply` command to submit the deployment manifest to your cluster.
+9. In Cloud Shell, run the `kubectl apply` command to submit the deployment manifest to your cluster.
 
     ```bash
     kubectl apply -f ./deployment.yaml
@@ -102,13 +102,13 @@ In this unit, you will:
     deployment.apps/cna-express created
     ```
 
-1. Return the Cloud Shell to the source folder.
+10. Return the Cloud Shell to the source folder.
 
     ```bash
     cd ..
     ```
 
-1. Run the `kubectl get deploy` command to check if the deployment was successful.
+11. Run the `kubectl get deploy` command to check if the deployment was successful.
 
     ```bash
     kubectl get deploy cna-express
@@ -121,7 +121,7 @@ In this unit, you will:
     cna-express       0/1     1            0           16s
     ```
 
-1. Run the `kubectl get pods` command to check if the pod is running.
+12. Run the `kubectl get pods` command to check if the pod is running.
 
     ```bash
     kubectl get pods
@@ -134,37 +134,37 @@ In this unit, you will:
     cna-express-7c58c5f699-r79mv       1/1     Running   0          63s
     ```
 
-    ### Prepare AKS for use
+## Prepare AKS for use
 
     It can take some time to fully deploy Kubuernetes clusters and access them. You'll save time by enabling the Application gateway for the cluster now, as it can take up to 15 minutes to be fully functional.
 
-1. Go to the Azure portal and select AKS service.
+13. Go to the Azure portal and select AKS service.
 
     > [!div class="nextstepaction"]
     > [Azure portal](https://portal.azure.com/)
 
-1. On the left-hand side menu, select **Networking**.
+14. On the left-hand side menu, select **Networking**.
 
-1. Select the radio box for **Enable ingress controller**.
+15. Select the radio box for **Enable ingress controller**.
 
-1. Select **Save** and return to the Cloud Shell.
+16. Select **Save** and return to the Cloud Shell.
 
     You set your cluster up for deployment by configuring the deployment manifest file, and enabling the Application gateway. In the next unit, we'll review the ingress controller you just enabled.
 
-    ### Review the service manifest
+## Review the service manifest
 
     Like all resources, services also have manifest files that describe how they should behave. Let's create a new service description.
 
-1. Return to Azure Cloud Shell if you haven't done so already.
+17. Return to Azure Cloud Shell if you haven't done so already.
 
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com/)
 
-1. In the Cloud Shell, if you've left the `aks` folder you need to navigate to it.
+18. In the Cloud Shell, if you've left the `aks` folder you need to navigate to it.
 
-1. Open the integrated editor in Cloud Shell by entering `code .`
+19. Open the integrated editor in Cloud Shell by entering `code .`
 
-1. Open the `service.yaml` file to review the following configuration. **You don't need to edit anything**, just take note that we're going to name our service `cna-express`.
+20. Open the `service.yaml` file to review the following configuration. **You don't need to edit anything**, just take note that we're going to name our service `cna-express`.
 
     ```yaml
     #service.yaml
@@ -183,11 +183,11 @@ In this unit, you will:
           targetPort: 4000
     ```
 
-1. Close the editor.
+21. Close the editor.
 
-    ### Deploy the service
+## Deploy the service
 
-1. In Cloud Shell, run the `kubectl apply` command to submit the service manifest to your cluster.
+22. In Cloud Shell, run the `kubectl apply` command to submit the service manifest to your cluster.
 
     ```bash
     kubectl apply -f ./service.yaml
@@ -199,7 +199,7 @@ In this unit, you will:
     service/cna-express created
     ```
 
-1. Run the `kubectl get service` command to check if the deployment was successful.
+23. Run the `kubectl get service` command to check if the deployment was successful.
 
     ```bash
     kubectl get service cna-express
