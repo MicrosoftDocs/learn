@@ -63,9 +63,9 @@ In this exercise, you will:
 
 10. In the Azure Cloud Shell, run the following command to download the source code for the Node.js app. This app is simple - it accepts a POST request from smart fridges.
 
-   ```bash
-   git clone https://github.com/MicrosoftDocs/mslearn-cloud-native-apps-express.git
-   ```
+    ```bash
+    git clone https://github.com/MicrosoftDocs/mslearn-cloud-native-apps-express.git
+    ```
 
 11. Move to the source folder for express:
 
@@ -159,9 +159,9 @@ While AKS gets set up, you can upload the management webapp to the Container Reg
 
 13. Run the following command to build the image and store it. Take care not to remove the `.` character at the end of the command.
 
-   ```bash
-   az acr build --registry $REGISTRYNAME --image webimage .
-   ```
+    ```bash
+    az acr build --registry $REGISTRYNAME --image webimage .
+    ```
 
 14. Return to the main directory
 

@@ -46,7 +46,7 @@ To expose your container to the management webapp via DNS, you'll configure and 
 
 4. **Save the manifest file**, and close the editor.
 
-## Deploy the ingress
+### Deploy the ingress
 
 Now we need to deploy the service for our changes to take effect.
 
@@ -70,7 +70,7 @@ Now we need to deploy the service for our changes to take effect.
 
     There could be a small delay between the creation of the ingress and the creation of the zone record. Let's load the webapp while this happens.
 
-## Use a Docker image to create the webapp
+### Use a Docker image to create the webapp
 
 While AKS gets sets up, you can start to use the Container Registry to deploy the management webapp.
 
@@ -88,7 +88,7 @@ You'll use the Docker image to deploy the webapp, which will require a username 
 
     You're now ready to create your web app.
 
-## Review the ingress
+### Review the ingress
 
 11. In the Cloud Shell, run the ` kubectl get ingress` command to check if the deployment was successful.
 
@@ -144,7 +144,7 @@ You'll use the Docker image to deploy the webapp, which will require a username 
 
     :::image type="content" source="../media/deployment.png" alt-text="Deployment test.":::
 
-## Create a web app
+### Create a web app
 
 15. Go back to the [Azure portal](https://portal.azure.com/) home page, and select **Create a resource**.
 
@@ -213,7 +213,7 @@ You'll use the Docker image to deploy the webapp, which will require a username 
     WEBAPPNAME=<webapp-name>
     ```
 
-## Test the solution
+### Test the solution
 
 29. In the Azure Cloud Shell, run the following command and select the URL for your webapp.
 
