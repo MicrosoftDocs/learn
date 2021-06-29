@@ -5,6 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: "This unit checks for users' understanding of the Elastic Cloud on Azure content discussed in the module."
+  ms.date: 6/11/2021
   author: yenchiho
   ms.author: yenchiho
   ms.topic: interactive-tutorial
