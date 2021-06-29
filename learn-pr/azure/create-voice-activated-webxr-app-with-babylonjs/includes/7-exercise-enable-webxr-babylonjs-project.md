@@ -12,6 +12,8 @@ Babylon.js is a 3D rendering engine which provides a variety of WebXR features a
 
 Recall that the amusement park company wanted the application to be a VR/AR application accessible through the public web. In this exercise, you will add WebXR support and features to the Babylon.js application built so far.
 
+Here, you have a choice of adding support for the VR mode or the AR mode based on your preference. Select the tab of the path that you prefer to continue.
+
 <!-- 4. Chunked steps -------------------------------------------------------------------------------------
 
     Goal: List the steps they'll do to complete the exercise.
