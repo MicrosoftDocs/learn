@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.machinelearning.machine-learning-architectures-and-hyperparameters
 metadata:
-  title: More complex models often can be manually customised to improve how effective they are. Through exercises and explanatory content, we explore how altering the architecture of more complex models can bring about more effective results.
+  title: More complex models often can be manually customized to improve how effective they're. Through exercises and explanatory content, we explore how altering the architecture of more complex models can bring about more effective results.
   description: Skeleton module for Jason to review. A soft introduction to machine learning.
   ms.date: 05/25/2021
   author: TomReidNZ
@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Select and customize architectures and hyperparameters using random forest
-summary: More complex models often can be manually customised to improve how effective they are. Through exercises and explanatory content, we explore how altering the architecture of more complex models can bring about more effective results.
+summary: More complex models often can be manually customized to improve how effective they're. Through exercises and explanatory content, we explore how altering the architecture of more complex models can bring about more effective results.
 abstract: | 
   In this module, you will:
   - Discover new model types– decision trees and random forests.
