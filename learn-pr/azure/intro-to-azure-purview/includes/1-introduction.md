@@ -1,4 +1,4 @@
-Tracking the data that your organization uses can be challenging. The data is constantly growing, stored in different locations, and shared among users. How do users know what data is available? How do administrators manage data when they may not know what type of data exists and where it is stored? Does the data contain sensitive or personal information?
+As the volume and variety of data increases, the challenges of effective data governance will only grow more difficult. Digital transformation technologies have resulted in an explosion of new data sources. How do users know what data is available? How do administrators manage data when they may not know what type of data exists and where it is stored? Does the data contain sensitive or personal information?
 
 All these questions are typically not easy to answer without insights into the data and the source of storage. Before you can develop solid security plans for storage and usage, it's important to have a good idea of the data your organization uses.
 
