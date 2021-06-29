@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 sandbox: true
-notebook: https://review.docs.microsoft.com/learn/modules/introduction-to-classic-ml/notebooks/2-5-exercise-optimize-models.ipynb?branch=pr-en-us-18697
+notebook: https://review.docs.microsoft.com/learn/modules/introduction-to-classic-machine-learning/notebooks/2-5-exercise-optimize-models.ipynb?branch=pr-en-us-18697
