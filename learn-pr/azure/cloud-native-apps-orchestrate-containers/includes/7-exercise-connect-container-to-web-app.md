@@ -23,7 +23,7 @@ To expose your container to the management webapp via DNS, you'll configure and 
 2. Copy the output, and open the integrated editor in Cloud Shell by entering `code .`
 3. Open the `ingress.yaml` file and replace the `<zone-name>` placeholder value with the `ZoneName` value you copied.
 
-    The `ingress.yaml` file should match the following YAML, with `<exampleURL.eastus.aksapp.io>` **replaced by the output in step 7**.
+    The `ingress.yaml` file should match the following YAML, with `<exampleURL.eastus.aksapp.io>` **replaced by the output in step 1**.
 
     ```yaml
     #ingress.yaml
