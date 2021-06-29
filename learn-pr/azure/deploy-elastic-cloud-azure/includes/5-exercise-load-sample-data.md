@@ -1,4 +1,4 @@
-Kibana helps you visualize, present, and analyze the data in Elasticsearch. Recall that Trailwinds wants to offer analysts a visualization tool that will allow them to gain deeper insights from their data. For this exercise, we will walk through the steps of creating a demo environment using sample data that comes with Kibana, and point out some of the capabilities your team can experiment with to help inform their decision-making process.
+Kibana helps you visualize, present, and analyze the data in Elasticsearch. Recall that Tailwind Traders wants to offer analysts a visualization tool that will allow them to gain deeper insights from their data. For this exercise, we will walk through the steps of creating a demo environment using sample data that comes with Kibana, and point out some of the capabilities your team can experiment with to help inform their decision-making process.
 
 1. Click **Open Kibana**.
 

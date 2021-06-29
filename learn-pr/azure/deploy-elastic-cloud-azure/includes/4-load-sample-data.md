@@ -1,4 +1,4 @@
-Data visualization is a method for creating dashboards, reports, and real-time insights. Elastic Cloud offers a built-in visualization tool, Kibana, that deploys automatically. For Trailwinds, you want to demo how analysts will be able to use Kibana to visualize data in Elastic. This unit walks through the basics steps on how to add a pre-loaded, sample data to Elastic so your teams can get started exploring.
+Data visualization is a method for creating dashboards, reports, and real-time insights. Elastic Cloud offers a built-in visualization tool, Kibana, that deploys automatically. For Tailwind Traders, you want to demo how analysts will be able to use Kibana to visualize data in Elastic. This unit walks through the basics steps on how to add a pre-loaded, sample data to Elastic so your teams can get started exploring.
 
 ## Kibana Canvas enables data visualization
 

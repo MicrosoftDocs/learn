@@ -1,4 +1,4 @@
-Organizations use cloud-based apps to spin up solutions quickly to meet their business needs. For Trailwinds Clothing, we can deploy Elastic Cloud on Azure to get Elasticsearch capabilities built in. Here, you will learn about the steps involved and key considerations for deploying Elastic Cloud on Azure.
+Organizations use cloud-based apps to spin up solutions quickly to meet their business needs. For Tailwind Traders, we can deploy Elastic Cloud on Azure to get Elasticsearch capabilities built in. Here, you will learn about the steps involved and key considerations for deploying Elastic Cloud on Azure.
 
 ## Start through the Azure Marketplace or Azure portal
 
