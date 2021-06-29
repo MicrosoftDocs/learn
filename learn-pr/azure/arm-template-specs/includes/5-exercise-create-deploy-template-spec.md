@@ -72,11 +72,11 @@ When you work with template specs, it's important you consider how others will u
 
 1. Update the `location` parameter definition to add a description:
 
-   :::code language="plaintext" source="code/5-template.bicep" range="1-2" highlight="1" :::
+   :::code language="bicep" source="code/5-template.bicep" range="1-2" highlight="1" :::
 
 1. Update the `cosmosDBAccountName` parameter definition to add a description, and to specify the minimum and maximum length of the name:
 
-   :::code language="plaintext" source="code/5-template.bicep" range="4-7" highlight="1-3" :::
+   :::code language="bicep" source="code/5-template.bicep" range="4-7" highlight="1-3" :::
 
 1. Save the file.
 
