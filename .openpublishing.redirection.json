@@ -8014,6 +8014,16 @@
       "source_path": "learn-pr/wwl-data-ai/investigate-container-for-use-cognitive-services/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/investigate-container-for-use-cognitive-services/6-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/implement-cicd-iot-edge/7-how-monitor-devices.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/implement-cicd-iot-edge/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/student-evangelism/implement-cicd-iot-edge/8-monitor-devices-app-insights.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/implement-cicd-iot-edge/",
+      "redirect_document_id": false
     }
   ]
 }
