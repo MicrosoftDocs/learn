@@ -22,6 +22,9 @@ You completed the following steps to deploy Azure Firewall to protect an Azure V
 
 ## Learn more
 
+- [Understanding Azure Virtual Desktop network connectivity](/azure/virtual-desktop/network-connectivity)
 - [Connect virtual networks with virtual network peering using PowerShell](/azure/virtual-network/tutorial-connect-virtual-networks-powershell)
 - [Virtual network peering overview](/azure/virtual-network/virtual-network-peering-overview)
+- [Required URL list for Azure Virtual Desktop](/azure/virtual-desktop/safe-url-list)
+- [Proxy server guidelines for Azure Virtual Desktop](/azure/virtual-desktop/proxy-server-support)
 - [How to use Microsoft Edge command-line options to configure proxy settings](/deployedge/edge-learnmore-cmdline-options-proxy-settings)

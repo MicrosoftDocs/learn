@@ -2,7 +2,13 @@ In the previous exercise, you deployed Azure Firewall. Now you need to route all
 
 ## Route all traffic through the firewall
 
-For the subnet used by the session host, configure the outbound default route to go through the firewall.
+For the subnet used by the session host, configure the outbound default route to go through the firewall. You'll complete the following three steps.
+
+1. Create a route table in the same resource group as your session host VMs and firewall.
+1. Associate the route table to the subnet that your session host VMs uses.
+1. On the route table, add the route to the firewall.
+
+After you complete those steps, all traffic will route to Azure Firewall.
 
 ### Create route table
 
@@ -60,6 +66,8 @@ The last step is to add a route to Azure Firewall on the route table. After you 
 
 ## Create application rule collection
 
+By default, the firewall denies access to everything. So you need to configure conditions under which traffic is allowed through the firewall.
+
 Create an application rule collection with rules to allow Azure Virtual Desktop access to several Fully Qualified Domain Names (FQDNs).
 
 1. In the Azure portal, search for and select **Firewalls**.
@@ -98,6 +106,12 @@ Create an application rule collection with rules to allow Azure Virtual Desktop 
 :::image type="content" source="../media/7-firewall-rules-classic-application-rule-collection-form.png" alt-text="Screenshot that shows the application rule collection form filled out.":::
 1. Select **Add**.
 
+## Create network rule collection
+
+Let's say our scenario uses Azure AD DS so you don't need to create a network rule to allow DNS. But you do need to create a rule to allow traffic from your Azure Virtual Desktop VMs to the Windows Activation Service.
+
+1. On **learn-fw** >  **Rules (classic)**, select 
+1. 
 ## Check your work
 
 At this point, you've routed all network traffic for Azure Virtual Desktop through the firewall. Let's make sure the firewall is working as expected.
