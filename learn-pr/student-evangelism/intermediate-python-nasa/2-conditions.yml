@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Compare values of data with Python code
 durationInMinutes: 6
 sandbox: true
-notebook: /learn/modules/intermediate-python-nasa/notebooks/2-conditions.ipynb
+notebook: https://docs.microsoft.com/learn/modules/intermediate-python-nasa/2-conditions
