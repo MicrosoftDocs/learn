@@ -43,17 +43,19 @@ You'll walk through the specific steps to create the application rule collection
 
 ## Configure network rules
 
-To allow Azure Virtual Desktop to work, you need to add Azure Firewall rules for DNS and the Windows Activation service.
+To allow Azure Virtual Desktop to work, you need to add Azure Firewall rules for DNS and the Windows activation service.
 Create a network rule collection and add the following rules:
 
 |Rule  |Description  |
 |---------|---------|
 |Allow DNS    |Allow traffic from your Active Directory Domain Server (AD DS) private IP address to * for TCP and UDP ports 53. Some deployments may not need DNS rules.For example Azure AD DS forwards DNS queries to Azure DNS at 168.63.129.16. |
-|Allow KMS    |  Allow traffic from your Azure Virtual Desktop VMs to the Windows Activation Service TCP port 1688|
+|Allow KMS    |  Allow traffic from your Azure Virtual Desktop VMs to the Windows activation service TCP port 1688|
 
 When you add both network rules, your rule collection will look similar to the following screenshot.
 
-:::image type="content" source="../media/6-network-collection-example.png" alt-text="Screenshot that shows a network collection with added to allow DNS and KMS traffic." lightbox="../media/6-network-collection-example.png":::
+:::image type="content" source="../media/6-network-collection-example.png" alt-text="Screenshot that shows a network collection with rules added to allow DNS and KMS traffic." lightbox="../media/6-network-collection-example.png":::
+
+You'll walk through the specific steps to create a network rule collection in the next exercise unit.
 
 ### Allow secure outbound Internet access for your end users
 

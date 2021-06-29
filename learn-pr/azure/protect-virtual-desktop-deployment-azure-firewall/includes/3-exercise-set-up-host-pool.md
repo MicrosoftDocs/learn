@@ -133,7 +133,7 @@ In your remote desktop session on the VM, install the  Azure Virtual Desktop age
 1. Copy the link to the [Azure Virtual Desktop agent](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv).
 1. On the VM, open Microsoft Edge to start a web browser session.
 1. Paste the link into a web browser.
-1. At the bottom of the web browser window, select **Open file** to install the Azure Virtual Desktop Agent.
+1. At the bottom of the web browser window, select **Open file** to install the Azure Virtual Desktop agent.
 1. When the installer asks you for the registration token, paste in the value you got after you created the token.
 1. If you no longer have the token value, go back to your Cloud Shell session and run the following command.
 
