@@ -26,7 +26,7 @@ quiz:
       explanation: "Incorrect. This component enables you to create goals and define objectives."
     - content: "The training engine"
       isCorrect: true
-      explanation: "Correct. The architect component of the training engine generates learning models ."
+      explanation: "Correct. The architect component of the training engine generates learning models."
   - content: "In which of the following scenarios could Bonsai be of some benefit to an organization?"
     choices:
     - content: "An organization has concluded that there is considerable scope for improving automated production systems."
