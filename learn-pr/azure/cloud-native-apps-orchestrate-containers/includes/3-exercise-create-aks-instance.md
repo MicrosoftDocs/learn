@@ -39,7 +39,7 @@ In this exercise, you will:
 
 5. Select **Create**. Wait until the container registry has been created before you continue. It should only take a few seconds and the webpage will display `Your deployment is complete`.
 
-## Build a Docker image and upload it to Azure Container Registry
+### Build a Docker image and upload it to Azure Container Registry
 
 6. Go to Azure Cloud Shell.
     > [!div class="nextstepaction"]
