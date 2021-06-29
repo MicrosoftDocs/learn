@@ -1,4 +1,4 @@
-In this exercise, we look at exercises for logging and Log Analytics.
+In this exercise, we look at exercises for viewing the logs of your sample application.
 
 ## Streaming logs exercise
 
@@ -11,7 +11,7 @@ az spring-cloud app logs --name customers-service
 ```
 
 > [!IMPORTANT]
-> If you closed the original Azure Cloud Shell window, or want to run the commands in your local development environment, you must select your resource group and azure cloud service name:
+> If you closed the original Azure Cloud Shell window, or want to run the commands in your local development environment, you must specify your resource group and Azure Spring Cloud service name:
 ```azurecli
 az spring-cloud app logs --name customers-service --resource-group <resource group name> --service <service instance name>
 ```
@@ -37,7 +37,7 @@ az spring-cloud app logs --name customers-service -f
 
 ## Errors and Warnings exercise
 
-We'll create an error to show the value of how developers can quickly see it, debug and find a root cause.
+Next, we'll create an error, to show the value of how you can quickly debug and find it's root cause.
 
 1. Open the customers-service and follow the logs:
 

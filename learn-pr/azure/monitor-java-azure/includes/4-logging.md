@@ -1,4 +1,4 @@
-In this unit, we'll look at Logging concepts and commands and then in the next exercise, implement the commands.
+In this unit, we'll look at logging concepts and commands, and then in the next exercise, run the commands.
 
 ## Types of Logging
 

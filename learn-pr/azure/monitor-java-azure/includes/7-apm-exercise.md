@@ -2,13 +2,16 @@ In this exercise, with zero configuration, you'll effortlessly monitor data flow
 
 ## Monitor the Application with Application insights
 
-Select you Azure Spring instance and in the left navigation pane, select Application Insights to jump to the Overview page of Application Insights.
+Application Map helps you spot performance bottlenecks or failure hot-spots across all components of your distributed application.
+
+1. Open the Azure portal
+1. Select "Azure Spring Cloud" from the list of Azure services
+1. Select your Azure Spring Cloud instance
+1. Select **Application Insights** to jump to the Overview page of Application Insights.
 
 :::image type="content" source="../media/7-insights-start.jpg" alt-text="screenshot showing Application insights for your spring cloud":::
 
-### Application Map
-
-Application Map helps you spot performance bottlenecks or failure hot-spots across all components of your distributed application. On the left, navigate to **Application Map** where you can see a view of your Azure Spring Cloud microservices:
+5. On the left, navigate to **Application Map** where you can see a view of your Azure Spring Cloud microservices:
 
 :::image type="content" source="../media/4-distributed-tracking-new-ai-agent.jpg" alt-text="Screenshot showing Application map with microservices":::
 
