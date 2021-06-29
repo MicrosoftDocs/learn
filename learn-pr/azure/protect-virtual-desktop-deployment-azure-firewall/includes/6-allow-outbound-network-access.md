@@ -2,7 +2,7 @@ When you plan an Azure Firewall deployment to protect a workload like Azure Virt
 
 Recall from the accounting firm example, that you can't have any unauthorized network traffic in your Azure Virtual Desktop environment. You want to limit outbound network traffic for Azure Virtual Desktop by using Azure Firewall.
 
-For Azure Virtual Desktop to work, the session host virtual machines (VMs) need outbound internet access to the Azure Virtual Desktop service. The VMs might also need outbound internet access for your users.
+For Azure Virtual Desktop to work, the host pool needs outbound internet access to the Azure Virtual Desktop service. The host pool might also need outbound internet access for your users.
 
 ## Create firewall rules
 
@@ -37,7 +37,7 @@ The following table shows the target FQDNs options you can use to create a rule 
 
 When you add both rules, your rule collection will look similar to the following screenshot.
 
-:::image type="content" source="../media/6-firewall-rules-classic-application-rule-collection-form.png" alt-text="Screenshot that shows an example application rule collection form filled out.":::
+:::image type="content" source="../media/6-firewall-rules-classic-application-rule-collection-form.png" alt-text="Screenshot that shows an example application rule collection form filled out." lightbox="../media/6-firewall-rules-classic-application-rule-collection-form.png":::
 
 You'll walk through the specific steps to create the application rule collection in the next exercise unit.
 
@@ -51,11 +51,15 @@ Create a network rule collection and add the following rules:
 |Allow DNS    |Allow traffic from your Active Directory Domain Server (AD DS) private IP address to * for TCP and UDP ports 53. Some deployments may not need DNS rules.For example Azure AD DS forwards DNS queries to Azure DNS at 168.63.129.16. |
 |Allow KMS    |  Allow traffic from your Azure Virtual Desktop VMs to the Windows Activation Service TCP port 1688|
 
+When you add both network rules, your rule collection will look similar to the following screenshot.
 
-## Allow secure outbound Internet access for your end users
+:::image type="content" source="../media/6-network-collection-example.png" alt-text="Screenshot that shows a network collection with added to allow DNS and KMS traffic." lightbox="../media/6-network-collection-example.png":::
+
+### Allow secure outbound Internet access for your end users
 
 You might need to create more Azure Firewall application and network rules when you want to allow users outbound internet access.
 
-If you have a well defined list of allowed destinations like Microsoft 365, use Azure Firewall application and network rules to route end-user traffic directly to the destinations.
+If you have a well-defined list of allowed destinations like Microsoft 365, use Azure Firewall application and network rules to route end-user traffic directly to the destinations. For information about the Office 365 IP address and URL web service, see the resources listed at the end of this module.
 
-To filter outbound user Internet traffic by using an existing on-premises secure web gateway, configure web browsers or other applications that run on the Azure Virtual Desktop host pool with an explicit proxy configuration.
+To filter outbound user Internet traffic by using an existing on-premises secure web gateway, configure web browsers or other applications that run on the Azure Virtual Desktop host pool with an explicit proxy configuration. For example, use Microsoft Edge command-line options to configure proxy settings. These proxy settings only influence your end-user Internet access, allowing the Azure Virtual Desktop service outbound traffic directly through Azure Firewall. For more information, see the resources listed at the end of this module.
+

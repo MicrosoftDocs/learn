@@ -2,10 +2,10 @@ In the previous exercise, you deployed Azure Firewall. Now you need to route all
 
 ## Route all traffic through the firewall
 
-For the subnet used by the session host, configure the outbound default route to go through the firewall. You'll complete the following three steps.
+For the subnet used by the host pool, configure the outbound default route to go through the firewall. You'll complete the following three steps.
 
-1. Create a route table in the same resource group as your session host VMs and firewall.
-1. Associate the route table to the subnet that your session host VMs uses.
+1. Create a route table in the same resource group as your host pool VMs and firewall.
+1. Associate the route table to the subnet that your host pool VMs uses.
 1. On the route table, add the route to the firewall.
 
 After you complete those steps, all traffic will route to Azure Firewall.
@@ -15,7 +15,7 @@ After you complete those steps, all traffic will route to Azure Firewall.
 First, create a route table named "firewall-route".
 
 1. In [Azure portal](https://portal.azure.com?azure-portal=true), search for and select **Route tables**.
-1. Select **+ New**.
+1. Select **+ Create**.
 1. Use the following values.
 
     |Field |Value |
@@ -108,10 +108,34 @@ Create an application rule collection with rules to allow Azure Virtual Desktop 
 
 ## Create network rule collection
 
-Let's say our scenario uses Azure AD DS so you don't need to create a network rule to allow DNS. But you do need to create a rule to allow traffic from your Azure Virtual Desktop VMs to the Windows Activation Service.
+Let's say our scenario uses Azure AD DS so you don't need to create a network rule to allow DNS. But you do need to create a rule to allow traffic from your Azure Virtual Desktop VMs to the Windows Activation Service. For our network rule to allow KMS, you'll use the IP address of the KMS server for the Azure Global cloud as the destination IP address.
 
-1. On **learn-fw** >  **Rules (classic)**, select 
-1. 
+1. On **learn-fw** >  **Rules (classic)**, select **Network rule collection**.
+1. Select the **Network rule collection** tab > **Add network  rule collection**.
+:::image type="content" source="../media/7-firewall-rules-add-network-collection.png" alt-text="Screenshot that shows the network rule collection tab with the add network rule collection option.":::
+1. Enter the following information.
+
+    |Field  |Value  |
+    |---------|---------|
+    |Name     |     net-coll01    |
+    |Priority    |    200     |
+    |Action     |  Allow       |
+1. Under **Rules**, in the **IP Addresses** section, enter the following information.
+ 
+    |Field  |Value  |
+    |---------|---------|
+    |Name     |     allow-kms    |
+    |Protocol|TCP|
+    |Source type    | IP address        |
+    |Source     |   Address space for hostVNet like 10.0.0.0/16     |
+    |Destination type  |  IP address      |
+    |Destination Address    |   23.102.135.246    |
+    |Destination Ports    |   1688   |
+
+1. When you're done, the form looks like the following image.
+:::image type="content" source="../media/7-firewall-rule-network-rule-collection-rule.png" alt-text="Screenshot that shows the network rule collection form filled out.":::
+1. Select **Add**.
+
 ## Check your work
 
 At this point, you've routed all network traffic for Azure Virtual Desktop through the firewall. Let's make sure the firewall is working as expected.

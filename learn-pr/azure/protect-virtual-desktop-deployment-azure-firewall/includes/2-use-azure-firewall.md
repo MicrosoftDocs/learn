@@ -1,4 +1,4 @@
-To prevent any unauthorized network traffic in your Azure Virtual Desktop environment, limit network traffic by using Azure Firewall. In this unit, you learn how Azure Firewall filters traffic for Azure Virtual Desktop.
+To prevent any unauthorized network traffic in your Azure Virtual Desktop environment, limit network traffic by using Azure Firewall. In this unit, you'll learn how Azure Firewall filters traffic for Azure Virtual Desktop.
 
 ## What is Azure Firewall?
 
@@ -14,7 +14,7 @@ Azure Firewall works not only for traffic to and from the internet, but also int
 
 Azure Virtual Desktop is a desktop and app virtualization service that runs on the cloud. Azure Virtual Desktop works across devices, like Windows, Mac, iOS, Android, and Linux, with apps that you can use to access remote desktops and apps. You can also use most modern browsers to access Azure Virtual Desktop-hosted experiences.
 
-## Why use Azure Firewall with Azure Virtual Desktop?
+## How does Azure Firewall filter traffic for Azure Virtual Desktop?
 
 When an end user connects to an Azure Virtual Desktop virtual machine, that virtual machine belongs to a host pool. A host pool is a collection of Azure virtual machines (VMs) that register to the Azure Virtual Desktop service as session hosts. These VMs run in a Azure virtual network and are subject to virtual network security controls.
 
@@ -22,10 +22,12 @@ For Azure Virtual Desktop to work, the host pool needs outbound internet access 
 
 The following diagram shows how traffic for the Azure Virtual Desktop service and host pools is filtered by Azure Firewall.
 
-- **A**: Azure Virtual Desktop platform outbound access is filtered by Azure Firewall.
-- **B**: Application and network firewall rules, and threat intelligence filter user outbound access from the host pool network. 
-- **C**: Traffic is filtered from Azure to on-premises. Azure Firewall can also send user traffic to on-premises proxy.
-
-
 :::image type="content" source="../media/2-firewall-azure-virtual-desktop-architecture.png" alt-text="Diagram of Azure Firewall filtering network traffic between the Azure Virtual Network service and the host pool virtual network." border="false":::
 
+The following table explains the labels in the illustration.
+
+|Label  |Description  |
+|---------|---------|
+|A     |The host pool's outbound network access to the Azure Virtual Desktop service is filtered by Azure Firewall.      |
+|B     |Application and network firewall rules, and threat intelligence filter user outbound access from the host pool virtual network.      |
+|C     |Traffic is filtered from the firewall to on-premises. Azure Firewall can also send user traffic to an on-premises proxy.        |

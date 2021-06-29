@@ -7,7 +7,7 @@ Recall that Azure Firewall is best deployed using a hub and spoke network topolo
 - A virtual network that acts as the central connectivity point. This network is the hub virtual network.
 - One or more virtual networks that are peered to the hub. These peers are the spoke virtual networks and are used to provision workload servers.
 
-You deploy the firewall instance in a subnet of the hub virtual network and then configure all inbound and outbound traffic to go through the firewall. You'll use this configuration when you deploy Azure Firewall to protect the session host VMs for Azure Virtual Desktop.
+You deploy the firewall instance in a subnet of the hub virtual network and then configure all inbound and outbound traffic to go through the firewall. You'll use this configuration when you deploy Azure Firewall to protect the host pool for Azure Virtual Desktop.
 
 ## Azure Firewall rules
 
@@ -18,7 +18,7 @@ The following table describes the three types of rules you can create for an Azu
 |Rule type  |Description  |
 |---------|---------|
 |NAT     |Translate and filter inbound internet traffic based on your firewall's public IP address and a specified port number. For example, to enable a remote desktop connection to a virtual machine (VM), you might use a NAT rule to translate your firewall's public IP address and port **3389** to the private IP address of the VM.    |
-|Application     |Filter traffic based on an FQDN or FQDN tag. A FQDN tag represents a group of fully qualified domain names (FQDNs) associated with well known Microsoft services like Azure Virtual Desktop. For example, you'll use an application rule to allow outbound traffic for the Azure Virtual Desktop VMs using the FQDN tag "WindowsVirtualDesktop".         |
+|Application     |Filter traffic based on an FQDN or FQDN tag. An FQDN tag represents a group of fully qualified domain names (FQDNs) associated with well-known Microsoft services like Azure Virtual Desktop. For example, you'll use an application rule to allow outbound traffic for the Azure Virtual Desktop VMs using the FQDN tag "WindowsVirtualDesktop".         |
 |Network     |Filter traffic based on one or more of the following three network parameters: IP address, port, and protocol. For example, use a network rule to allow traffic from an on-premises Active Directory Domain Server (AD DS) private IP address to Azure for TCP and UDP port **53**. If you're using Azure AD DS, you don't need to create a network rule. DNS queries are forwarded to Azure DNS at 168.63.129.16. |
 
 Azure Firewall applies rules in priority order. Rules based on threat intelligence are always given the highest priority and are processed first. After that, rules are applied by type: NAT rules, then network rules, then application rules. Within each type, rules are processed according to the priority values you assign when you create the rule, from lowest value to highest value.
@@ -39,12 +39,12 @@ Recall that Azure Firewall offers many features designed to make it easier to cr
 
 ## Deployment steps for Azure Firewall
 
-In the previous exercise, we created a virtual network with a subnet, and deployed a session host VM for Azure Virtual Desktop into that subnet. In the next exercises, you'll complete the following steps to deploy Azure Firewall to protect the session host VM.
+In the previous exercise, you created a host pool and virtual network with a subnet. You deployed a session host VM into that subnet and registered it with the host pool. In the next exercises, you'll complete the following steps to deploy Azure Firewall to protect the host pool.
 
 **Step 1: Set up the network**
 
 - Create a hub virtual network that includes a subnet for the firewall deployment.
-- Peer the hub and spoke networks. In the next exercise, you'll peer the hub virtual network with the virtual network used by Azure Virtual Desktop.  
+- Peer the hub and spoke networks. In the next exercise, you'll peer the hub virtual network with the virtual network used by the host pool of Azure Virtual Desktop.  
 
 **Step 2: Deploy Azure Firewall**
 

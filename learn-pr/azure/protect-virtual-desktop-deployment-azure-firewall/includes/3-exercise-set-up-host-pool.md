@@ -1,6 +1,6 @@
 In the accounting firm scenario, your organization is using Azure Virtual Desktop to provide your workforce access to virtualized desktops and apps.
 
-So, in this unit, you create a host pool and  a VM that'll act as a session host. To avoid having to domain join the VM, you manually install the Azure Virtual Desktop agent and boot loader to register the VM to the host pool. You'll then have a Azure Virtual Desktop deployment that you can use in the rest of the module exercises.
+So, in this unit, you create a host pool and add a VM that will act as a session host. To avoid having to domain join the VM, you manually install the Azure Virtual Desktop agent and boot loader to register the VM to the host pool. You'll then have a Azure Virtual Desktop deployment that you can use in the rest of the module exercises.
 
 [!include[](../../../includes/azure-subscription-prerequisite.md)]
 
@@ -47,7 +47,7 @@ Next, let's create a host pool that will contain the VM you'll create later in t
 
 Create a registration token to authorize a session host to join the host pool.
 
-1. In Cloud Shell, run the following command to create a registration token that'll expire in 4 hours.
+1. In Cloud Shell, run the following command to create a registration token that will expire in 4 hours.
 
    ```powershell
     $hostPoolName = 'learn-host-pool' 
@@ -65,7 +65,7 @@ Create a registration token to authorize a session host to join the host pool.
 
 1. Copy the token to a note app like Notepad.  
 
-## Create subnet and virtual network for session host
+## Create a subnet and virtual network for the host pool
 
 In Cloud Shell, run the following command to create a subnet and virtual network in the same location as the resource group.
 
@@ -126,14 +126,14 @@ Use a remote desktop session to sign into the VM you created in the previous sec
 
 Install the Azure Virtual Desktop agent and boot loader on the VM to register the VM to the host pool.
 
-### Install the  Azure Virtual Desktop agent
+### Install the agent
 
 In your remote desktop session on the VM, install the  Azure Virtual Desktop agent. You'll need the registration token for the host pool to complete the installation.
 
 1. Copy the link to the [Azure Virtual Desktop agent](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv).
 1. On the VM, open Microsoft Edge to start a web browser session.
 1. Paste the link into a web browser.
-1. Select **Open file** to install the Azure Virtual Desktop Agent.
+1. At the bottom of the web browser window, select **Open file** to install the Azure Virtual Desktop Agent.
 1. When the installer asks you for the registration token, paste in the value you got after you created the token.
 1. If you no longer have the token value, go back to your Cloud Shell session and run the following command.
 
@@ -145,13 +145,13 @@ In your remote desktop session on the VM, install the  Azure Virtual Desktop age
 
 1. Complete the installation.
 
-### Install the  Azure Virtual Desktop boot loader
+### Install the boot loader
 
 In your remote desktop session on the VM, install the  Azure Virtual Desktop boot loader.
 
 1. Copy the link to the [Azure Virtual Desktop boot loader](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH).
 1. Paste the link into a web browser session in the VM.
-1. Select **Open file** to install the Azure Virtual Desktop boot loader.
+1. At the bottom of the web browser window, select **Open file** to install the Azure Virtual Desktop boot loader.
 1. Complete the installation.
 1. Close the remote desktop session.
 
@@ -169,4 +169,4 @@ At this point, the virtual machine should be registered as a session host for th
 1. Under **Status**, select **ViewDetails**.
 :::image type="content" source="../media/3-host-pool-status.png" alt-text="Screenshot that shows the status of the host pool and the link to view status details.":::
 1. The health check **"DomainJoinedCheck"** failed as we didn't domain join the VM. But the rest of the health checks succeeded.
-:::image type="content" source="../media/3-session-host-status-detail.png" alt-text="Screenshot of the session host status details which show that the domain joined check failed but rest of checks succeeded.":::
+:::image type="content" source="../media/3-session-host-status-detail.png" alt-text="Screenshot of the session host status details that show that the domain joined check failed but rest of checks succeeded.":::
