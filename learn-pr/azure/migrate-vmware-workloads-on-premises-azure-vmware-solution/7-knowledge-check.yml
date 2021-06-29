@@ -36,7 +36,7 @@ quiz:
     - content: "The VMware HCX Connector can't route to Alberto's HCX Cloud Manager IP over port 443."
       isCorrect: true
       explanation: "The ability to route traffic over port 443 must be accounted for if Alberto can't establish an HCX site pairing."
-  - content: "In order for the VMware HCX Connector to route to the HCX Cloud Manager environment, which port needs to be open?"
+  - content: "For the VMware HCX Connector to route to the HCX Cloud Manager environment, which port needs to be open?"
     choices:
     - content: "443"
       isCorrect: true
