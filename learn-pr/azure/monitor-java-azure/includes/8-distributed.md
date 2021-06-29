@@ -20,29 +20,29 @@ Logs in Azure Monitor are valuable for identifying root case of issues. Data col
 
 There are actually three ways to access your application's logs: Azure Storage, Azure Events Hub, and Log Analytics. We'll focus here on Log Analytics as it's the most common one and is integrated into Azure Spring Cloud for metrics monitoring.
 
-1. In the Azure portal, in the left pane, select your Azure Spring Cloud instance.
+1. Open the Azure portal
+1. Select "Azure Spring Cloud" from the list of Azure services
+1. Select your Azure Spring Cloud instance
 1. Next, under the Monitoring section, select **Logs**.
+1. In the **Query** search box,
 
 :::image type="content" source="../media/8-cloud-logs.jpg" alt-text="Screenshot showing query for Azure spring cloud logs":::
 
-3. In the **Query** search box,
-
-   * to view logs, enter a query such as:
+* to view logs, run a query such as:
 
     ```sql
     AppPlatformLogsforSpring
     | limit 50
     ```
 
-    * to view metrics, enter a query such as:
+* to view metrics, enter a query such as:
 
     ```sql
     AzureMetrics
     | limit 50
     ```
 
-1. To view the search result, select **Run**.
-1. You can search the logs of the specific application or instance by setting a filter condition:
+* You can search the logs of the specific application or instance by setting a filter condition:
 
     ```sql
     AppPlatformLogsforSpring
@@ -56,7 +56,9 @@ Application logs provide critical information and verbose logs about your applic
 
 ### Show application logs from Azure Spring Cloud
 
-1. In the Azure portal, in the left pane, select your Azure Spring Cloud instance.
+1. Open the Azure portal
+1. Select "Azure Spring Cloud" from the list of Azure services
+1. Select your Azure Spring Cloud instance
 1. Next, under the Monitoring section, select **Logs**.
 1. In the **Query** search box,
 
