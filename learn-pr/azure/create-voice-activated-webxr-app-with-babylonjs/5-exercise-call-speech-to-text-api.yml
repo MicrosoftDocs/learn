@@ -3,8 +3,8 @@ uid: learn.create-voice-activated-webxr-app-with-babylonjs.exercise-call-speech-
 title: Exercise - Call the Azure Speech to Text API in your Babylon.js project
 metadata:
   unitType: exercise
-  title: "TODO" # user input: module title for browser tab and search results
-  description: "TODO" # user input: a description for site search and SEO
+  title: Exercise - Call the Azure Speech to Text API in your Babylon.js project
+  description: Integrate the Azure Speech to Text service into the Babylon.js project
   ms.date: 6/22/2021 
   author: JING1201 
   ms.author: t-jinglow 

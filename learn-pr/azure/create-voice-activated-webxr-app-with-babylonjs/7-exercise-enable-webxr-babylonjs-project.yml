@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-voice-activated-webxr-app-with-babylonjs.exercise-enable-webxr-babylonjs-project
-title: Exercise - Enable WebXR support in your BabylonJS project
+title: Exercise - Enable WebXR support in your Babylon.js project
 metadata:
   unitType: exercise 
-  title: "TODO" # user input: module title for browser tab and search results
-  description: "TODO" # user input: a description for site search and SEO
+  title: Exercise - Enable WebXR support in your Babylon.js project
+  description: Add various WebXR features to your Babylon.js project
   zone_pivot_groups: webxr-vr-ar
   ms.date: 6/22/2021 
   author: JING1201 
   ms.author: t-jinglow 
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
-durationInMinutes: 1 # user input: the estimate time to complete the unit
+durationInMinutes: 8
 content: |
   [!include[](includes/7-exercise-enable-webxr-babylonjs-project.md)]

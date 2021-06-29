@@ -11,7 +11,7 @@ Babylon.js is a powerful 3D rendering engine packed into a typescript framework.
 The WebXR experience can be enabled for a Babylon.js scene in one line:
 
 ```typescript
-const xr = await scene.createDefaultXRExperienceAsync();
+const xr = await scene.createDefaultXRExperienceAsync({});
 ```
 
 By default, this line of code enables WebXR support in the immersive VR mode. To enable the support for WebXR support in the AR mode:
@@ -24,7 +24,7 @@ const xr = await scene.createDefaultXRExperienceAsync({
 });
 ```
 
-After WebXR is enabled using this function, if the Babylon.js application is opened on a browser and device that supports WebXR in the specified mode (VR or AR), an XR button will appear in the bottom-right corner of the page:
+After WebXR is enabled using this function, if the Babylon.js application is opened on a browser of a device that supports WebXR in the specified mode (VR or AR), an XR button will appear in the bottom-right corner of the page:
 
 :::image type="content" source="../media/webxr-button.jpg" alt-text="An empty Babylon J S scene with an X R button in the bottom-right corner.":::
 
@@ -42,7 +42,12 @@ The WebXR Session Manager can also be used to initialize or end a WebXR session 
 
 ### WebXR Camera
 
-The WebXR Camera refers to the camera rendering the view of the WebXR session. In other words, the position and direction of the WebXR Camera would show the position and direction of the host device relative to the virtual space in the WebXR session.
+The WebXR Camera refers to the camera rendering the view of the WebXR session. In other words, the position and direction of the WebXR Camera would show the position and direction of the host device relative to the virtual space in the WebXR session. Specifically, you can get the position in front of the camera using:
+
+```typescript
+// the position which is 0 meter in front of the camera
+const position = xr.baseExperience.camera.getFrontPosition(0);
+```
 
 Like the WebXR Session Manager, the WebXR Camera is also created at the scene.createDefaultXRExperienceAsync() call. The instance of the camera can be accessed by using **xr.baseExperience.camera**.
 
@@ -62,6 +67,6 @@ featuresManager.enableFeature(BABYLON.WebXRBackgroundRemover, 'latest', {
 
 ## Supported devices
 
-VR and AR WebXR sessions are supported on Android and iOS mobile phones. For Android, it is supported on the native Chrome browser; for iOS, it can be viewed on an application named WebXR Viewer.
+VR and AR WebXR sessions are available on Android and iOS mobile phones. For Android, they're supported on the native Chrome browser; for iOS, they can be viewed on an application named WebXR Viewer.
 
-Other than mobile phones, you can also view immersive VR sessions using any Windows Mixed Reality headset or Hololens, which supports AR as well.
+Other than mobile phones, you can also view immersive VR sessions using any Windows Mixed Reality headset or HoloLens, which support AR as well.
