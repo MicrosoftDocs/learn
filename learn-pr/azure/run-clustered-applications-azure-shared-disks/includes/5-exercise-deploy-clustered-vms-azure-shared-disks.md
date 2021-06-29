@@ -96,7 +96,7 @@ az disk create -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --siz
 
     This command identifies the current reservations that exist for the shared disk. Since this is the first time that we run, there should be no new reservations.
 
-    :::image type="content" source="../media/exercise-disk-status-without-VM-registration.png" alt-text="Screenshot of disk status without V M registration." border="true":::
+    :::image type="content" source="../media/05-disk-status-without-vm-registration.png" alt-text="Screenshot of disk status without V M registration." border="true":::
 
 1. Run the following command to register new reservation key 1234 on **myVM1**:
 
