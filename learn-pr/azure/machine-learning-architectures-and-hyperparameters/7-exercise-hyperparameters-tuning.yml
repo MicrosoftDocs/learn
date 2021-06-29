@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 12
 sandbox: true
-notebook: https://review.docs.microsoft.com/learn/modules/ml-architectures-and-hyperparameters/notebooks/7-7-exercise-hyperparameters-tuning.ipynb?branch=pr-en-us-18640 
+notebook: https://review.docs.microsoft.com/learn/modules/machine-learning-architectures-and-hyperparameters/notebooks/7-7-exercise-hyperparameters-tuning.ipynb?branch=pr-en-us-18640 

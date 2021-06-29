@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 sandbox: true
-notebook: https://review.docs.microsoft.com/learn/modules/ml-architectures-and-hyperparameters/notebooks/7-5-exercise-random-forests.ipynb?branch=pr-en-us-18640 
+notebook: https://review.docs.microsoft.com/learn/modules/machine-learning-architectures-and-hyperparameters/notebooks/7-5-exercise-random-forests.ipynb?branch=pr-en-us-18640 
