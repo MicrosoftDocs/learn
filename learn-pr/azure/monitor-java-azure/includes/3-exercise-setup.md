@@ -21,7 +21,7 @@ Next, run the following command to clone the sample repository and open the buil
 
    ```bash
    git clone https://github.com/MicrosoftDocs/mslearn-monitoring-java
-   cd ms-learn-monitoring-java
+   cd mslearn-monitoring-java
    code deployPetClinicApp.sh
    ```
 
