@@ -1,6 +1,142 @@
 Bicep gives you a lot of flexibility to decide how you structure your code. You can organize your template in the way you like and apply your own style.
 
-So far we managed to break down our template into reusable artifacts. In this unit, we'll continue to refactor the code and optimize the structure of templates and modules. We'll also revisit some key pointers from the original template review.
+In this unit, you'll learn about the standard style for Bicep code, and the options you have to customize and use your own style. You'll also look at the Bicep template you saw earlier, and you'll start to think about how to improve it.
+
+
+
+## How are your resources named?
+
+There's an old saying in the tech community that naming conventions are one of the hardest problems to solve in the industry. Whatever language you use, you should define one convention and then use it consistently.
+
+In Bicep, it's important that you give your resources meaningful names. Resources in Bicep have two names:
+
+- The symbolic name is only used within the Bicep file and doesn't appear in Azure. This helps anyone who reads or modifies your template to understand the purpose of the resource and its configuration, so they can make an informed decision about whether to change it.
+- The resource name is the name of the resource that's created in Azure. Many resources have constraints on their names, and may require unique names.
+
+In the Bicep template above, your template resources have symbolic names with several different naming styles, such as:
+
+- `webSite` and `webSiteConnectionStrings`, which use camel case.
+- `roleassignment` and `sqlserver`, which are all in lowercase.
+- `sqlserverName_databaseName` and `AppInsights_webSiteName`, which use underscores to separate parts of their names, and a mixture of capitalization styles.
+
+A _naming convention_ is a set of rules for choosing how you represent identifiers in your code. There are many commonly used conventions. For example, imagine you're creating a parameter to collect the name of a SKU. You might use any of these conventions:
+
+|Name  |Example for 'SKU Name' parameter  |
+|---------|---------|
+| Camel case     | `skuName`        |
+| Pascal case     | `SkuName`        |
+| Snake case     | `sku_name`        |
+| Flat case     | `skuname`        |
+| Train case     | `Sku-Name`        |
+
+While choosing a naming convention is a matter of personal preference, it's important to agree on one standard within your team and use it consistently! Also make sure you use **descriptive names** that aren't ambiguous.
+<!-- TODO should we just suggest camelCase? -->
+
+When renaming identifiers, you need to make sure you rename them consistently in all parts of your template. Visual Studio Code offers a convenient way to **rename symbols**:
+
+1. Select the identifier,
+2. Press the F2 key,
+3. Provide a new name,
+4. Confirm the change by pressing Enter
+
+:::image type="content" source="../media/4-rename-symbol.png" alt-text="Screenshot from VS Code showing how to rename a symbol." border="false":::
+
+This action will rename not only the identifier but also all references to it!
+
+### Resource names
+
+In the previous chapter, we addressed the naming convention of identifiers but there's another important area: **naming convention of resources**. Almost every resource type has certain naming [rules and restrictions](/azure/azure-resource-manager/management/resource-name-rules).
+
+Many organizations define their own naming convention that works for them. There's a specific [guidance](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging) in the **Cloud Adoption Framework** for Azure (CAF) that can help you define yours.
+
+Following the naming convention can become a complex problem, especially since you can't rename your resource post deployment. A **well-written Bicep template should hide this complexity** from its users and handle it internally.
+
+There are two common patterns that can be used (or even combined):
+
+- using **parameter decorators** to limit and validate inputs from users
+- using variables to construct resource names internally and using parameters to receive only parts of resource names. Typically a prefix or a suffix
+
+In our template, there are several variables used to generate resource names, for example the `hostingPlanName` variable used for the `serverfarms` resource name:
+
+```bicep
+var hostingPlanName = 'hostingplan${uniqueString(resourceGroup().id)}'
+```
+
+> [!IMPORTANT]
+> You should always check what rules apply to resources you have in your templates and ensure incorrect names won't break the deployment.
+
+In this specific example, the `serverfarms` resource [requires](/azure/azure-resource-manager/management/resource-name-rules) its name must be:
+
+- unique within the resource group,
+- the length can be between 1-40 alphanumeric characters (with an option to use hyphens).
+
+The variable above is a concatenation of `hostingplan` string and an autogenerated, [unique](/azure/azure-resource-manager/templates/template-functions-string), 13 characters long string, that is derived from the Resource Group ID.
+
+Since the only dynamic part is the unique string, we're certain that it will always match the rules. If we wanted to allow users to influence how the final name looks like, we could introduce a new parameter for name prefix. We would use the `@maxLenght()` decorator to ensure the prefix won't exceed 27 characters and add the `@description()` decorator to provide additional information.
+
+```bicep
+@maxLength(27)
+@description('Naming prefix for web farm resource. Only alphanumeric characters and hyphen are allowed. Max size is 27 characters.')
+param hostingPlanNamePrefix string = 'hostingplan'
+
+var hostingPlanName = '${hostingPlanNamePrefix}${uniqueString(resourceGroup().id)}'
+```
+
+> [!NOTE]
+> Currently there isn't a possibility to use regular expressions to validate, if a parameter value only contains allowed characters. That is why it's sometimes better to fully control resource naming within the template.
+
+TODO
+
+---
+
+### How usable are the parameters?
+
+Your template has several parameters. Parameters help to make Bicep files reusable and flexible. However, it's important that the purpose of each parameter is clear. There are some parameters here that aren't clear:
+
+- `skuName` and `skuCapacity`: What sort of SKU do they refer to? What resources are affected by choosing different values for these parameters?
+- `roleDefinitionId`: What role definition are you assigning and why?
+
+Default values are an important way to make your template usable by others. It's important to use default values where they make sense. In your template, the `managedIdentityName` parameter doesn't have a default value - could you change that, or better yet, create the name automatically? And look at the `roleDefinitionId` parameter. Why is there a default value of `b24988ac-6180-42a0-ab88-20f7382dd24c`? What does that big long identifier mean? How would someone else know whether to use the default value or override it? What could you do to help this?
+
+Bicep can also help to validate the input that the user provides when they deploy the template. The template uses a few _parameter decorators_ to help Bicep and the user understand what values are permitted for each parameter, but there's plenty of room for improvement!
+
+### Resource dependencies
+
+In any complex Bicep template, you need to have _dependencies_ between your resources. When Bicep understands the dependencies between your resources, it deploys them in the correct order.
+
+Bicep allows you to explicitly specify a dependency by using the `dependsOn` property. However, in most cases, it's possible to let Bicep automatically detect dependencies. When you use the symbolic name of one resource within a property of another, Bicep detects the relationship. It's better to let Bicep manage these itself whenever you can. That way, when you change your template, Bicep will make sure the dependencies are always correct, and you won't add unnecessary code that makes your template more cumbersome and harder to read.
+
+Here's one of your resources, which includes a `dependsOn` property - does it really need it?
+
+::: code language="bicep" source="code/2-template.bicep" range="56-65" highlight="7-9" :::
+
+### Child resources
+
+Azure Resource Manager and Bicep have the concept of child resources, which only make sense to deploy within the context of their parent. For example, a SQL database is a child of a SQL server.
+
+There are several ways to define child resources, but in most cases, it's a good idea to use the `parent` property. This helps Bicep to understand the relationship, and it makes it clear to anyone else who reads the template too.
+
+Notice how this child resource was declared in your template:
+
+::: code language="bicep" source="code/2-template.bicep" range="44-54" highlight="2" :::
+
+How could you modify how this resource is declared?
+
+### Property values
+
+You need to specify the values for resource properties in your Bicep files. It's a good idea to avoid hard-coding values directly, unless you know they won't change. This makes your Bicep template more dynamic and reusable. When you do hard-code values, it's good to make sure the values are understandable to others. For example, take a look at the properties of the SQL database resource:
+
+::: code language="bicep" source="code/2-template.bicep" range="44-54" highlight="5, 8-9" :::
+
+Does the SKU `name` property really make sense to hard-code? And what are those weird-looking values for the `collation` and `maxSizeBytes` properties?
+
+For some resource properties, you need to create complex expressions, and use functions and string interpolation to construct values automatically. Your Bicep code is usually clearer when you declare variables and reference them in the resource code blocks. Can you spot any room for improvement in the following code block from the template?
+
+::: code language="bicep" source="code/2-template.bicep" range="94-102" highlight="98" :::
+
+
+---
+
 
 ## Choose your authoring style
 
@@ -32,6 +168,8 @@ There are **two authoring styles** used in the community. You and your team shou
 - it can simplify navigation
 
 In our project, we'll use the first style. *Practically it means we won't need to make many structural changes.*
+
+TODO SECTION 2
 
 ## Choose free-form vs. known configurations
 
@@ -99,6 +237,8 @@ resource hostingPlan 'Microsoft.Web/serverfarms@2020-06-01' = {
 }
 ```
 
+TODO SECTION 1 OR 3
+
 ## Make your Bicep code dynamic
 
 Whatever approach you prefer, you still want to **avoid hardcoding values directly** in resources declaration, which would make parts of your code less reusable. *You could still consider it for values that don't change frequently.*
@@ -142,87 +282,3 @@ resource webSiteConnectionStrings 'Microsoft.Web/sites/config@2020-06-01' = {
 }
 ```
 
-## Apply consistent naming convention
-
-A naming [convention](https://en.wikipedia.org/wiki/Naming_convention_(programming)) is a set of rules for choosing the character sequence to be used for identifiers and other entities in source code and documentation. There are many commonly used conventions, for example:
-
-|Name  |Example for 'SKU Name' variable  |
-|---------|---------|
-| Camel case     | `skuName`        |
-| Pascal case     | `SkuName`        |
-| Snake case     | `sku_name`        |
-| Flat case     | `skuname`        |
-| Train case     | `Sku-Name`        |
-
-While choosing a naming convention is a matter of personal preference, it's important to agree on one standard within your team and use it consistently! Also make sure you use **descriptive names** that aren't ambiguous.
-
-### Symbolic names
-
-> [!IMPORTANT]
-> All symbolic names (identifiers) must be unique within one Bicep template. In Resource Manager templates it is possible to have both a parameter and a variable called `location`. You would reference them using functions - `[parameters('location')]` and `[variables('location')]`. This is not possible in Bicep.
-
-The most commonly used convention in Resource Manager templates and inherently Bicep files is **Camel case**. Let's say we decided to use it in our project. When inspecting the original template, there are three identifiers we need to rename to have one standard in our code:
-
-| Line  | Description  | Old name  | New name  |
-|---------|---------|---------|---------|
-| 17     | Parameter for SQL Server SKU name       | `skuName`        | `sqlServerSkuName`        |
-| 20     | Parameter for SQL Server SKU capacity        | `skuCapacity`        | `sqlServerSkuCapacity`        |
-| 56     | Symbolic name for SQL firewall rule(s)        | `sqlserverName_AllowAllWindowsAzureIps`        | `sqlServerAllowAllIps`        |
-| 106     | Symbolic name for Role assignment        | `roleassignment`        | `roleAssignment`        |
-| 116     | Symbolic name for Application Insights        | `AppInsights_webSiteName`        | `appInsights`        |
-
-> [!IMPORTANT]
-> When renaming identifiers, you need to make sure you rename them consistently in all parts of your template.
-
-Visual Studio Code offers a convenient way to **rename symbols**:
-
-1. Select the identifier,
-2. Press the F2 key,
-3. Provide a new name,
-4. Confirm the change by pressing Enter
-
-:::image type="content" source="../media/4-rename-symbol.png" alt-text="Screenshot from VS Code showing how to rename a symbol." border="false":::
-
-This action will rename not only the identifier but also all references!
-
-### Resource names
-
-In the previous chapter, we addressed the naming convention of identifiers but there's another important area: **naming convention of resources**. Almost every resource type has certain naming [rules and restrictions](/azure/azure-resource-manager/management/resource-name-rules).
-
-Many organizations define their own naming convention that works for them. There's a specific [guidance](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging) in the **Cloud Adoption Framework** for Azure (CAF) that can help you define yours.
-
-Following the naming convention can become a complex problem, especially since you can't rename your resource post deployment. A **well-written Bicep template should hide this complexity** from its users and handle it internally.
-
-There are two common patterns that can be used (or even combined):
-
-- using **parameter decorators** to limit and validate inputs from users
-- using variables to construct resource names internally and using parameters to receive only parts of resource names. Typically a prefix or a suffix
-
-In our template, there are several variables used to generate resource names, for example the `hostingPlanName` variable used for the `serverfarms` resource name:
-
-```bicep
-var hostingPlanName = 'hostingplan${uniqueString(resourceGroup().id)}'
-```
-
-> [!IMPORTANT]
-> You should always check what rules apply to resources you have in your templates and ensure incorrect names won't break the deployment.
-
-In this specific example, the `serverfarms` resource [requires](/azure/azure-resource-manager/management/resource-name-rules) its name must be:
-
-- unique within the resource group,
-- the length can be between 1-40 alphanumeric characters (with an option to use hyphens).
-
-The variable above is a concatenation of `hostingplan` string and an autogenerated, [unique](/azure/azure-resource-manager/templates/template-functions-string), 13 characters long string, that is derived from the Resource Group ID.
-
-Since the only dynamic part is the unique string, we're certain that it will always match the rules. If we wanted to allow users to influence how the final name looks like, we could introduce a new parameter for name prefix. We would use the `@maxLenght()` decorator to ensure the prefix won't exceed 27 characters and add the `@description()` decorator to provide additional information.
-
-```bicep
-@maxLength(27)
-@description('Naming prefix for web farm resource. Only alphanumeric characters and hyphen are allowed. Max size is 27 characters.')
-param hostingPlanNamePrefix string = 'hostingplan'
-
-var hostingPlanName = '${hostingPlanNamePrefix}${uniqueString(resourceGroup().id)}'
-```
-
-> [!NOTE]
-> Currently there isn't a possibility to use regular expressions to validate, if a parameter value only contains allowed characters. That is why it's sometimes better to fully control resource naming within the template.
