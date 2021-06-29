@@ -12,10 +12,15 @@ title: Monitoring Java applications on Azure
 summary: Monitoring Java applications on Azure
 abstract: |
   By the end of this module, you will be able to:
-  - Build and deploy a sample microservice application and configure it for Azure Application Performance Monitoring.
-  - Monitor the application with Azure Application Insights.
+  - Understand monitoring Java Applications on Azure.
+  - Build and deploy a sample microservice application and configure it for Azure Application Performance Monitoring (APM).
+  - Debug using application log streams on development machines.
+  - Troubleshoot using incredible views, meaningful insights, and actionable logs and metrics.
+  - Monitor the entire solution - applications, databases, and any other backend services.
 prerequisites: |
   - Azure subscription
+  - Basic knowledge of the [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview/?WT.mc_id=java-00000-ropreddy)
+  - Basic knowledge in [editing files](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor/?WT.mc_id=java-00000-ropreddy) in the Azure Cloud Shell
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels: 
   - intermediate
