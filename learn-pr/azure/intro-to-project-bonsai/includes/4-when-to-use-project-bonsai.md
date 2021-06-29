@@ -1,36 +1,36 @@
-In this unit, you'll evaluate whether Project Bonsai can help you build machine teaching simulations. You'll decide whether Bonsai can help you to more quickly and easily implement AI-powered automation development. The criteria you'll consider are:
+In this unit, you'll evaluate whether Project Bonsai can help you build machine-teaching simulations. You'll decide whether Bonsai enables you to more quickly and easily implement AI-powered automation development. The criteria you'll consider are:
 
 - Is there value in optimizing any of your automation systems?
-- Do you have AI experts in your organization to optimize those systems?
-- Can you use an existing simulation of your automation systems (or build a new one)?
+- Does your organization have AI experts who can optimize those systems?
+- Can you use an existing simulation of your automation systems or build a new one?
 
 ## Decision criteria
 
 | Criteria                                                     | Analysis                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Is there value in optimizing your automation systems?        | This is the crucial question. Many organizations estimate a two to five percent increase in a key performance indicator (KPI), or increases in revenue or cost savings of roughly 1 million USD, following optimization. |
-| Do you have AI experts?                                      | Do you have AI experts, and will you have access to those experts that have controlled the system in the past? These experts can provide valuable insights during the optimization project. The vast majority of the system is built on learning from these experts and then building even more optimization on top of that experience. |
-| Can you build a simulation system, or do you already have one? | After you determine there is value in optimizing the system, then you must determine if there is already a simulated environment. If not, do you have the skills to create one? |
+| Is there value in optimizing your automation systems?        | This question is crucial. Many organizations estimate a 2 percent to 5 percent increase in a key performance indicator (KPI) or increases in revenue or cost savings of roughly 1 million USD, following optimization. |
+| Do you have AI experts?                                      | Do you have AI experts? Will you have access to the experts who have previously controlled the system? These experts can provide valuable insights during your optimization project. Most of the system is built on learning from those experts and then building even more optimization on top of that experience. |
+| Can you build a simulation system or do you already have one? | If you determine there's value in optimizing the system, you must determine if there's already a simulated environment. If not, do you have the skills to create one? |
 
 ## Apply the criteria
 
 Consider using Project Bonsai when you meet the following criteria:
 
-- There is value in optimizing your automation systems.
-- You have a simulation of your automation systems, or you're able to build one.
+- There's value in optimizing your automation systems.
+- You have a simulation of your automation systems or you're able to build one.
 
-It's also ideal, but not essential, that you have AI experts in your organization that have experience optimizing your automation systems.
+It's also ideal, but not essential, that you have AI experts in your organization who have experience optimizing your automation systems.
 
 ### Example of when to use
 
-Going back to our earlier example, and making soap. Manufacturing soap is complex, and affected by many variables:
+Let's consider our earlier example of making soap. Manufacturing soap is complex and many variables affect it, including:
 
-- The chemical process can be hard to control.
+- The chemical process, which can be hard to control.
 - Predicting the behavior of the machinery (an extruder) can be difficult.
 
 Because of these challenges, it can be hard to optimize the system. Bonsai brains would provide this organization with improved control over their automation systems. The organization's engineers want a brain that:
 
-- Automatically signals their advanced process control system.
+- Automatically signals their advanced process-control system.
 - Adapts quickly to production changeovers.
 - Applies short-term process changes when the extruder becomes coated with soap over multiple runs.
 - Applies long-term process changes as extruder equipment wears.

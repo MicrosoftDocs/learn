@@ -1,4 +1,4 @@
-Microsoft Project Bonsai is a low-code AI platform. Accelerate development for control systems that provide operator guidance or make independent decisions.
+Microsoft Project Bonsai is a low-code AI platform. Accelerate development for control systems that provide operator guidance or make independent decisions. 
 
 Build AI-powered control systems to:
 
@@ -6,38 +6,38 @@ Build AI-powered control systems to:
 - Improve production efficiency.
 - Help reduce downtime.
 
-To help you understand how Bonsai works, we'll start by covering the underlying logical elements, which are displayed in the following image:
+To help you understand how Bonsai works, we'll describe the underlying logical elements. The following image displays those elements, which include:
 
-- Training simulator
-- Training engine
-- Training curriculum
-- Integrated simulator
-- Trained AI, also known as a Bonsai brain
+- Training simulator.
+- Training engine.
+- Training curriculum.
+- Integrated simulator.
+- Trained AI or a *Bonsai brain*.
 
-:::image type="content" source="../media/introduction.png" alt-text="A simulator icon flowing into a circular graph that connects the training engine, training curriculum, and integrated simulation. Another arrow flows away from the circular graph to indicate an exported brain.":::
+:::image type="content" source="../media/introduction.png" alt-text="A simulator icon that flows into a circular graph. The graph connects the training engine, training curriculum, and integrated simulation. Another arrow flows away from the circular graph to indicate an exported brain.":::
 
 > [!NOTE]
 > Bonsai is part of the Microsoft Autonomous Systems suite.
 
 ## Example scenario
 
-Suppose you work for a soap manufacturing company. The company uses an extrusion process to produce the soap and an advanced process control system to manage production.
+Suppose you work for a soap manufacturing company. The company uses an extrusion process to produce its soap. It also uses an advanced process-control system to manage production.
 
-The engineers that oversee the advanced process control system think that making changes to the manufacturing process could improve production yield. To make the changes, the engineers send new commands to the advanced process control system to control manufacturing. The advanced process control system then adjusts the manufacturing equipment accordingly.
+The engineers who manage the advanced process-control system believe changing the manufacturing process could improve production yield. To make the changes, the engineers send new commands to the advanced process-control system to control manufacturing. The advanced process-control system then adjusts the manufacturing equipment accordingly.
 
-Because of the complexity of the soap manufacturing process, it can be difficult to control, and therefore optimize, production. Some of the variables include:
+The soap manufacturing process is complex. It can be difficult to control and therefore optimize production. Some of the variables include:
 
-- Adjustments in the parts of the manufacturing equipment.
+- Adjustments to parts of the manufacturing equipment.
 - Variations in raw materials.
-- Wear and tear on the machinery.
+- Wear and tear on machinery.
 - Residue from previous production runs.
 
-The soap company can benefit from using Project Bonsai, because a Bonsai brain would be able to:
+The soap company can benefit from utilizing a Bonsai brain, which could:
 
-- Automatically signal the advanced process control system.
+- Automatically signal the advanced process-control system.
 - Adapt quickly to production changeovers.
-- Apply short-term process changes due to residue in the extruder.
-- Apply long-term process changes due to equipment wear and tear.
+- Apply short-term process changes from extruder residue.
+- Apply long-term process changes because of equipment wear and tear.
 - Advise operators to make adjustments instead of controlling the extruder directly.
 
 ## What will we be doing?
