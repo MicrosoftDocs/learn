@@ -4,7 +4,7 @@ In a cloud environment is easy to create resources, explore features and try eve
 
 So how to track your environment and ensure cloud usage with correct approach over some pillars like cost effectiveness, security, reliability, operational excellence, and performance?
 
-To address this, Azure Advisor will give to you proactive, actionable, personalized consultancy to help you follow best practices over those five pillars of cloud usage.
+To address this, Azure Advisor will give to you proactive, actionable, personalized recommendations to help you follow best practices over those five pillars of cloud usage.
 
 ![A screenshot of the Azure portal displaying the entry representing Azure Advisor.](../media/1-intro-advisor.png)
 
