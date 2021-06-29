@@ -54,7 +54,7 @@ Now that you've made a change to the _main.bicep_ file, let's inspect the differ
 
    The **Source Control** panel opens.
 
-1. Double-click the _main.bicep_ file in the **Source Control** panel.
+1. Select the _main.bicep_ file in the **Source Control** panel.
 
    A file difference opens.
 
@@ -72,7 +72,7 @@ Now that you've reviewed the changes and are satisfied with it, you commit the u
 
 1. Open the **Source Control** panel.
 
-1. Select each of the two changed files and stage them. You can click the plus (`+`) icon on each file, or you can right-click each file and select **Stage Changes**.
+1. Select each of the two changed files and stage them. You can click the plus (`+`) icon on each file, or you can select and hold (or right-click) each file and select **Stage Changes**.
 
    :::image type="content" source="../media/5-vscode-stage.png" alt-text="Screenshot of Visual Studio Code showing the Source Control panel, with the main.bicep context menu displayed, and the Stage Changes menu item highlighted." border="true":::
 
@@ -111,9 +111,9 @@ You can also view the history of a single file, the state of the file from that 
 
 1. Open the **Explorer** pane in Visual Studio Code.
 
-1. Right-click the _main.bicep_ file and select **Open Timeline**.
+1. Select and hold (or right-click) the _main.bicep_ file, and select **Open Timeline**.
 
-   :::image type="content" source="../media/5-vscode-timeline-menu.png" alt-text="Screenshot of Visual Studio Code showing the Explorer panel, with the right-click menu displayed for the main.bicep file. The Open Timeline menu item is highlighted." border="true":::
+   :::image type="content" source="../media/5-vscode-timeline-menu.png" alt-text="Screenshot of Visual Studio Code showing the Explorer panel, with the context menu displayed for the main.bicep file. The Open Timeline menu item is highlighted." border="true":::
 
    The timeline pane opens, showing both commits.
 
