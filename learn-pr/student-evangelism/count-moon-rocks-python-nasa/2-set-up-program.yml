@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Create a Jupyter Notebook to explore data about Moon rocks
 durationInMinutes: 4
 sandbox: true
-notebook: https://docs.microsoft.com/learn/modules/count-moon-rocks-python-nasa/notebooks/2-set-up-program.ipynb
+notebook: /learn/modules/count-moon-rocks-python-nasa/notebooks/2-set-up-program.ipynb
