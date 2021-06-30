@@ -1,9 +1,9 @@
-TODO
+At your toy company, the website's development team has asked to help to write the Bicep template. You told them you've been keeping the Bicep code in a repository, and they've asked you to publish the repository. In this exercise, you'll publish your Git repository so that so your colleagues can view the files and collaborate with 
 
 During the process, you'll: 
 
 > [!div class="checklist"]
-> * Create a remote repository.
+> * Create a new remote repository.
 > * Configure your local Git repository to integrate with the remote repository.
 > * Push your changes from your local repository to the remote repository.
 > * Verify that the changes appear in the remote repository.
@@ -49,7 +49,7 @@ During the process, you'll:
 
    If you signed in to an existing Azure DevOps organization, select the **New project** button to create a new project.
 
-   :::image type="content" source="../media/9-azure-devops-create-project.png" alt-text="Screenshot of the Azure DevOps interface showing the button to create a new project. border="true":::
+   :::image type="content" source="../media/9-azure-devops-create-project.png" alt-text="Screenshot of the Azure DevOps interface showing the button to create a new project." border="true":::
 
 1. Enter the details of your new project:
 

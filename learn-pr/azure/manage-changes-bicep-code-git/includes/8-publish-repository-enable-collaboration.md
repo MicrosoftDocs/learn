@@ -1,4 +1,4 @@
-TODO lead-in
+You've learned about how Git enables you to track the changes to your Bicep code. In this unit, you'll learn how Git also enables collaboration with your team members.
 
 ## What are GitHub and Azure Repos?
 
