@@ -31,11 +31,9 @@ During the process, you'll:
 
 1. Select **Create repository**.
 
-1. On the confirmation page that appears, copy the repository's URL. You'll use this in the next step.
+1. On the confirmation page that appears, make a note of the repository's URL. You'll use this shortly.
 
    :::image type="content" source="../media/9-github-new-repository-confirmation.png" alt-text="Screenshot of the GitHub interface showing the new repository's details, with the repository's URL highlighted." border="true":::
-
-   Keep your browser open. You'll check on the GitHub repository again shortly.
 
 ::: zone-end
 
@@ -66,13 +64,27 @@ During the process, you'll:
 
    :::image type="content" source="../media/9-azure-devops-repos-menu.png" alt-text="Screenshot of the Azure DevOps interface showing the menu, with the Repos item highlighted." border="true":::
 
-1. Copy the repository's URL. You'll use this in the next step.
+1. Make a note of the repository's URL. You'll use this shortly.
 
    :::image type="content" source="../media/9-azure-devops-repo-details.png" alt-text="Screenshot of the Azure Repos interface showing the repository's details, with the repository's URL highlighted." border="true":::
 
-   Keep your browser open. You'll check on the repository again shortly.
+::: zone-end
+
+::: zone pivot="azure-repos,macos"
+
+## Generate a Git password
+
+When you work with Azure Repos from macOS, you need to use a special password that's different from the password you use to sign in.
+
+1. Select the **Generate Git credentials** button.
+
+   Azure Repos creates a random password for you to use.
+
+1. Make a note of the **Password**. You'll use this shortly.
 
 ::: zone-end
+
+Keep your browser open. You'll check on the repository again later in this exercise.
 
 ## Configure your local Git repository
 
@@ -98,11 +110,7 @@ During the process, you'll:
 
 1. This is the first time you've used this repository, so the terminal prompts you to select how to authenticate. Choose the option to use the browser.
 
-1. Follow the instructions in the browser to sign in.
-
-1. GitHub asks you to authorize Git Credential Manager to access your repository. Review the request and select **Authorize GitCredentialManager**.
-
-   :::image type="content" source="../media/9-github-vscode-authorize.png" alt-text="Screenshot of the GitHub interface showing a prompt to authorize Git Credential Manager to access the repository." border="true":::
+1. Follow the instructions in the browser to sign in and authorize Visual Studio Code to access your GitHub repository.
 
 1. In your terminal window, Git displays output similar to the following:
 
@@ -122,7 +130,7 @@ During the process, you'll:
 
 ::: zone-end
 
-::: zone pivot="azure-repos"
+::: zone pivot="azure-repos,windows"
 
 1. In the Visual Studio Code terminal, enter the following command:
 
@@ -132,7 +140,40 @@ During the process, you'll:
 
    Since your current local branch is **main**, this command tells Git that your local **main** branch _tracks_ the **main** branch in your remote repository. It also _pushes_ the commits from your local repository to the remote.
 
-1. This is the first time you've used this repository, you are prompted to sign in. Enter the same credentials you used to sign in to Azure DevOps earlier in this exercise.
+1. This is the first time you've used this repository, so you are prompted to sign in. Enter the same credentials you used to sign in to Azure DevOps earlier in this exercise.
+
+1. In your terminal window, Git displays output similar to the following:
+
+   ```output
+   Enumerating objects: 10, done.
+   Counting objects: 100% (10/10), done.
+   Delta compression using up to 4 threads
+   Compressing objects: 100% (4/4), done.
+   Writing objects: 100% (10/10), 1.01 KiB | 343.00 KiB/s, done.
+   Total 10 (delta 0), reused 0 (delta 0), pack-reused 0
+   remote: Analyzing objects... (10/10) (5 ms)
+   remote: Storing packfile... done (165 ms)
+   remote: Storing index... done (75 ms)
+   To https://dev.azure.com/myuser/toy-website/_git/toy-website
+    * [new branch]      main -> main
+   Branch 'main' set up to track remote branch 'main' from 'origin'.
+   ```
+
+   This indicates that Git successfully pushed the contents of your repository to the remote.
+
+::: zone-end
+
+::: zone pivot="azure-repos,macos"
+
+1. In the Visual Studio Code terminal, enter the following command:
+
+   ```bash
+   git push -u origin main
+   ```
+
+   Since your current local branch is **main**, this command tells Git that your local **main** branch _tracks_ the **main** branch in your remote repository. It also _pushes_ the commits from your local repository to the remote.
+
+1. This is the first time you've used this repository, so you are prompted to enter a password. Paste the password that you generated earlier in this exercise.
 
 1. In your terminal window, Git displays output similar to the following:
 
