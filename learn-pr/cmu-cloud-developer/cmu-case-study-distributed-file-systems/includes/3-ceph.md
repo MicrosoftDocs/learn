@@ -122,12 +122,12 @@ Metadata servers in Ceph FS typically cache metadata information in memory and s
 ***
 ### References
 
-1. _Weil, S. A., Brandt, S. A., Miller, E. L., & Maltzahn, C. (2006). [CRUSH: Controlled, scalable, decentralized placement of replicated data](https://ceph.com/wp-content/uploads/2016/08/weil-crush-sc06.pdf) In Proceedings of the 2006 ACM/IEEE conference on Supercomputing 122_
+1. _Weil, S. A., Brandt, S. A., Miller, E. L., & Maltzahn, C. (2006). [CRUSH: Controlled, scalable, decentralized placement of replicated data](https://users.soe.ucsc.edu/~elm/Papers/sc06.pdf) In Proceedings of the 2006 ACM/IEEE conference on Supercomputing 122_
 2. _Weil, S. A., Brandt, S. A., Miller, E. L., & Maltzahn, C. (2006). Ceph: [A scalable, high-performance distributed file system](https://www.ssrc.ucsc.edu/Papers/weil-osdi06.pdf) Proceedings of the 7th symposium on Operating systems design and implementation (OSDI) 307-320_
-3. _Weil, S. A., Pollack, K. T., Brandt, S. A., & Miller, E. L. (2004). [Dynamic metadata management for petabyte-scale file systems](https://ceph.io/wp-content/uploads/2016/08/weil-mds-sc04.pdf) In Proceedings of the 2004 ACM/IEEE conference on Supercomputing 4_
+3. _Weil, S. A., Pollack, K. T., Brandt, S. A., & Miller, E. L. (2004). [Dynamic metadata management for petabyte-scale file systems](https://users.soe.ucsc.edu/~elm/Papers/sc04.pdf) In Proceedings of the 2004 ACM/IEEE conference on Supercomputing 4_
 
 ***
 
-[^1]: <https://ceph.com/wp-content/uploads/2016/08/weil-crush-sc06.pdf> "Weil, S. A., Brandt, S. A., Miller, E. L., & Maltzahn, C. (2006) *CRUSH: Controlled, scalable, decentralized placement of replicated data* In Proceedings of the 2006 ACM/IEEE conference on Supercomputing 122"
+[^1]: <https://users.soe.ucsc.edu/~elm/Papers/sc06.pdf> "Weil, S. A., Brandt, S. A., Miller, E. L., & Maltzahn, C. (2006) *CRUSH: Controlled, scalable, decentralized placement of replicated data* In Proceedings of the 2006 ACM/IEEE conference on Supercomputing 122"
 [^2]: <https://www.ssrc.ucsc.edu/Papers/weil-osdi06.pdf> "Weil, S. A., Brandt, S. A., Miller, E. L., & Maltzahn, C. (2006). Ceph: *A scalable, high-performance distributed file system* In Proceedings of the 7th symposium on Operating systems design and implementation (OSDI) 307-320"
-[^3]: <https://ceph.io/wp-content/uploads/2016/08/weil-mds-sc04.pdf> "Weil, S. A., Pollack, K. T., Brandt, S. A., & Miller, E. L. (2004). *Dynamic metadata management for petabyte-scale file systems* In Proceedings of the 2004 ACM/IEEE conference on Supercomputing 4"
+[^3]: <https://users.soe.ucsc.edu/~elm/Papers/sc04.pdf> "Weil, S. A., Pollack, K. T., Brandt, S. A., & Miller, E. L. (2004). *Dynamic metadata management for petabyte-scale file systems* In Proceedings of the 2004 ACM/IEEE conference on Supercomputing 4"
