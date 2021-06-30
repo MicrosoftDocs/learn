@@ -42,14 +42,6 @@ You need to run a few commands to configure Git so that it associates your name 
     git config --global user.email "USER_EMAIL_ADDRESS"
     ```
 
-1. Use the following command to configure Git to create a default branch named **main**:
-
-   ```bash
-   git config --global init.defaultBranch main
-   ```
-
-   You'll learn more about branches later in this module.
-
 1. Run the following command to check that your changes worked:
 
     ```bash
@@ -143,6 +135,14 @@ Git monitors the repository folder for changes, and you can query Git to see the
    - There have been no commits to this repository. You'll learn about commits in the next unit.
    - There are untracked files in the *deploy* folder.
    - You haven't told Git to add any files to be tracked by the repository yet.
+
+1. Look at the first line of the output from the preceding step. If it shows a branch name that's different from **main**, run the following command to rename your branch to **main**:
+
+   ```bash
+   git branch -M main
+   ```
+
+   This ensures you can follow along with the remaining exercises in this module.
 
 ## Inspect the repository status by using Visual Studio Code
 

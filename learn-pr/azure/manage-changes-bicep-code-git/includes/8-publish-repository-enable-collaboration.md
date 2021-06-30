@@ -9,11 +9,15 @@ TODO
 - Need an account with GitHub/Azure DevOps first
 - Set up repo - this is called a remote
 - Configure your local repo to know about the remote repo
+- Track branches
 - Push your changes to the remote
 
 Can also work with repos that have already been created and published
 
-## 
+## Authentication
+
+Need to authenticate
+Git Credential Manager handles this on Windows - what about macOS?
 
 ## Collaborate with others
 
