@@ -1,6 +1,6 @@
 WebXR is a technology that helps bring VR and AR functionality to the web. The WebXR Device API at its core handles the logic for interfacing with devices that support VR or AR. 
 
-In the scenario of the amusement park application, the company wants the VR/AR application to be easily accessible through a browser connected to the internet. WebXR is the perfect technology to fulfill this need.
+In the scenario of the amusement park application, the company wants the VR/AR application to be easily accessible through a browser connected to the internet. WebXR is the most fitting technology to fulfill this need.
 
 Here, you'll learn about a selection of the WebXR features provided by Babylon.js.
 
@@ -34,9 +34,9 @@ One can then enter the VR or AR session by pressing on that button.
 
 The WebXR Session Manager serves as the interface for us to interact with the WebXR session of the scene.
 
-When we use `scene.createDefaultXRExperienceAsync()` to enable the WebXR support, the session manager is created automatically and can be accessed through **xr.baseExperience.sessionManager**.
+When we use `scene.createDefaultXRExperienceAsync()` to enable the WebXR support, the session manager is created automatically and can be accessed through `xr.baseExperience.sessionManager`.
 
-The WebXR Session Manager provides a set of observables for us to recognize events related to the WebXR sessions. For example, the *onXRSessionInit* observable is triggered when a new WebXR session is created, and the *onXRSessionEnded* observable is triggered when a WebXR session ended. These observables are useful for recognizing when users are entering the WebXR session through the button selection.
+The WebXR Session Manager provides a set of observables, which events that we can subscribe to and take action on. For example, the *onXRSessionInit* observable is triggered when a new WebXR session is created, and the *onXRSessionEnded* observable is triggered when a WebXR session ended. These observables are useful for recognizing when users are entering the WebXR session through the button selection.
 
 The WebXR Session Manager can also be used to initialize or end a WebXR session programmatically, as well as specifying the type of the session (VR or AR) when creating the session programmatically.
 
@@ -49,7 +49,7 @@ The WebXR Camera refers to the camera rendering the view of the WebXR session. I
 const position = xr.baseExperience.camera.getFrontPosition(0);
 ```
 
-Like the WebXR Session Manager, the WebXR Camera is also created at the scene.createDefaultXRExperienceAsync() call. The instance of the camera can be accessed by using **xr.baseExperience.camera**.
+Like the WebXR Session Manager, the WebXR Camera is also created at the scene.createDefaultXRExperienceAsync() call. The instance of the camera can be accessed by using `xr.baseExperience.camera`.
 
 ### Background Remover
 

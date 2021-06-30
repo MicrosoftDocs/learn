@@ -34,22 +34,19 @@ You might have noticed that the source files in this repository have the *.ts* e
 
 As a result, you'll need to import every class that will be used in a variable or a function parameter. In VSCode, navigate to **src/index.ts** and add the following import statement at the top of the file:
 
-1. Navigate to **src/index.ts** in your VSCode window.
-1. Add this import statement at the top of the file:
-
-    ```typescript
-    import { 
-        SpeechConfig, 
-        AudioConfig, 
-        Recognizer, 
-        SpeechRecognizer, 
-        PhraseListGrammar, 
-        SpeechRecognitionEventArgs, 
-        SpeechRecognitionCanceledEventArgs, 
-        ResultReason, 
-        CancellationReason, 
-    } from 'microsoft-cognitiveservices-speech-sdk';
-    ```
+```typescript
+import { 
+    SpeechConfig, 
+    AudioConfig, 
+    Recognizer, 
+    SpeechRecognizer, 
+    PhraseListGrammar, 
+    SpeechRecognitionEventArgs, 
+    SpeechRecognitionCanceledEventArgs, 
+    ResultReason, 
+    CancellationReason, 
+} from 'microsoft-cognitiveservices-speech-sdk';
+```
 
 ## Create Speech Recognizer
 
@@ -81,9 +78,9 @@ Let's create a Speech Recognizer using the Azure Speech JavaScript SDK.
 
     Make sure to replace **YOUR_AZURE_SPEECH_SUBSCRIPTION_KEY** and **YOUR_AZURE_SPEECH_INSTANCE_LOCATION** with your Azure Speech instance's subscription key and location, which you obtained in the last exercise.
 
-> [!NOTE]
-> It is not the best practice to include secrets or keys in client side code due to security concerns.
-> In this exercise, we store the keys as constants in the client side code for convenience, as the keys become invalid after the sandbox is deactivated. However, generally, you should put the values of the keys in a backend service for any application deployed to the public web.
+    > [!NOTE]
+    > It is not the best practice to include secrets or keys in client side code due to security concerns.
+    > In this exercise, we store the keys as constants in the client side code for convenience, as the keys become invalid after the sandbox is deactivated. However, generally, you should put the values of the keys in a backend service for any application deployed to the public web.
 
 1. Add Phrase List support and include the text representation of the spell in the list. Here, we will use "go dragon" as the spell that we want the users to say.
 
@@ -201,7 +198,7 @@ Now that the code is ready, it is time to verify that the web application works 
 
     :::image type="content" source="../media/empty-scene.PNG" alt-text="An empty Babylon J S scene with only the background skybox is displayed in the browser.":::
 
-    If it does not load successfully, you will see a white screen. Make sure your createScene() function matches the snippet given in the section above. Use the Developer Console for further debugging if you wish.
+    If it does not load successfully, you will see a white screen. Make sure your createScene() function matches the snippet given in the section above.
 
 1. Your browser might ask for your permission to allow microphone usage on this page. Make sure to select **Allow** when the popup appears.
 

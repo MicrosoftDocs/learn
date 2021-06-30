@@ -65,7 +65,7 @@ Let's restrict the summoning activity to only the VR/AR mode. To do so, we will 
     });
     ```
 
-1. Let's also stop the recognition when the users exit the session, just in case they leave without summoning the dragon.
+1. Let's also stop the recognition when the users exit the session, just in case they leave without summoning the dragon. Add the code below right before createScene() function's return statement:
 
     ```typescript
     xr.baseExperience.sessionManager.onXRSessionEnded.add((eventData: XRSession, eventState: BABYLON.EventState) => {
