@@ -64,6 +64,7 @@ Identify the subtasks of **Cluster governance using Azure Policy**
         - Azure Policy
         - effects
         - continued monitoring
+        - Policy scopes
         - links for more info
     - How does Azure policy integrate with AKS
         - explain azure control plane vs kubernetes control plane
@@ -82,7 +83,7 @@ Identify the subtasks of **Cluster governance using Azure Policy**
 
 1. **Exercise - enabling Azure Policy for Azure Kubernetes Service**
 
-    1. Ensure the learner has a AKS cluster, and if not refer to docs on how to create one (FYI, I don't think we can use the sandbox. enabling policy takes up to 30 minutes, which does not play well with the maximum 60 minutes sandbox)
+    1. Create a new AKS cluster with policy add-on enabled. If learner has an existing cluster, show how to enable the add-on on existing cluster.
     1. Enabling Azure Policy for AKS for a specific resource group
     1. How to automatically enable Azure Policy for AKS
     1. How to monitor which clusters have the add-on installed
@@ -90,6 +91,8 @@ Identify the subtasks of **Cluster governance using Azure Policy**
 1. **Built-in policies for Azure Kubernetes Servcice**
 
     - How to find built-in policies for AKS, and provide links to documentation
+        - Explain cluster policy, like authorized ip ranges for example.
+        - Explain workload policy, like only allow trusted registry
     - Explain the two secure baseline initiatives
     
 1. **Exercise - assigning a policy to an AKS cluster**
@@ -111,7 +114,3 @@ In this module, you learned to:
 - Monitor cluster compliance status using Azure policy
 
 ## Notes
-
-
-### Questions:
-The focus of the excersize will be the example outlined in the scenario, meaning non-compliant registries. I was thinking of using mcr.microsoft.com vs dockerhub as the example, since this does not require a learner to deploy an Azure container registry. Is that OK or do we want to add the complexity of an ACR?
