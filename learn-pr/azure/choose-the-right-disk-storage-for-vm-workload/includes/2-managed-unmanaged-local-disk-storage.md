@@ -1,4 +1,4 @@
-You can choose whether to let Azure manage the storage infrastructure for your virtual hard disks or manage that infrastructure yourself. 
+You can choose whether to let Azure manage the storage infrastructure for your virtual hard disks or manage that infrastructure yourself.
 
 Suppose you have a variety of virtual machines running healthcare workloads in your on-premises network that you want to migrate to Azure. You want to maximize performance while minimizing administrative effort.
 
