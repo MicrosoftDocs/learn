@@ -68,4 +68,4 @@ quiz:
       explanation: "Proxy servers wouldn't affect Azure HPC Cache."
     - content: "If the company installed Azure ExpressRoute to maximize bandwidth"
       isCorrect: true
-      explanation: "Yes. ExpressRoute will maximize bandwidth between the company's clients in the cloud and it's data on-premises."
+      explanation: "Correct. ExpressRoute will maximize bandwidth between the company's clients in the cloud and it's data on-premises."
