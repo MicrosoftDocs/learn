@@ -30,7 +30,7 @@ A Password Manager enforces password controls. These controls include storing pa
 
 Currently, the most successful method for protecting our security depends heavily on training individuals. The training needs to be interesting, engaging, up-to-date, and easy to access. Organizations can reinforce learning by using tools such as attack-simulation training in Microsoft Defender for Office 365. The attack simulator training lets administrators run benign cyber attack simulations on your organization to test your security policies and practices. The following example is a fake testing Microsoft notice about “Unusual Sign-in activity." The email directs users to a malicious website and is from a fake Microsoft account. 
 
-:::image type="content" source="../media/ms-tech_support-scam.png" alt-text="A fake message supposedly from Microsoft Support using a fictitious email account." border="false":::
+:::image type="content" source="../media/4-ms-tech_support-scam.png" alt-text="A fake message supposedly from Microsoft Support using a fictitious email account." border="false":::
 
 Some rules of thumb to help protect yourself and your company from social media hackers.
 
