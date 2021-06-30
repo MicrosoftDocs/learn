@@ -10,7 +10,7 @@ Azure Advisor help to identify idle and underutilized resources. You can get cos
 
 ![Costs on Azure Advisor.](../media/3-advisor-cost.png)
 
-In this case I chosen the recommendation to shut down or resize my virtual machine and I can have more details regarding the recommendation, rules used, additional details over the potential saving, related subscription and take some action.
+In this case I chosen the recommendation to shut down or resize my virtual machine. I can have more details regarding the recommendation, rules used, another details over the potential savings, related subscription, and options to take an action.
 
 ![Recommendation from costs on Azure Advisor.](../media/3-advisor-cost-shutdown-vm.png)
 
@@ -20,7 +20,7 @@ Security recommendations are integrated with Azure Security Center. You can get 
 
 ![Security on Azure Advisor.](../media/3-advisor-security.png)
 
-Example of a recommendation regarding system updates available for my virtual machines, affected resources and more:
+Example of a recommendation about system updates available for my virtual machines, affected resources, and more:
 
 ![Recommendation from security on Azure Advisor.](../media/3-advisor-security-updates.png)
 
@@ -59,13 +59,13 @@ Recommendations to ensure performance improvements:
 
 ![Performance on Azure Advisor.](../media/3-advisor-performance.png)
 
-Recommendation warning about a unsupported Kubernetes version detected, which can affect the overall performance on the workload:
+Recommendation warning about an unsupported Kubernetes version detected, which can affect the overall performance on the workload:
 
 ![Recommendation from operational excellence on Azure Advisor.](../media/3-advisor-performance-aks.png)
 
-## How configure recommendations
+## How to configure recommendations
 
-It's possible to choose for which Subscriptions and Resource Groups you want receive recommendations from Azure Advisor. To do this, open Advisor then click on **Configuration** under **Settings** and apply.
+It's possible to choose for which Subscriptions and Resource Groups you want receive recommendations from Azure Advisor. To do this, open Advisor then select on **Configuration** under **Settings** and apply.
 
 ![Configuration of Azure Advisor.](../media/3-advisor-configuration.png)
 
@@ -75,9 +75,9 @@ Also is possible configure the average CPU utilization rule for the low usage vi
 
 ![Configuration of Rules on Azure Advisor.](../media/3-advisor-rules.png)
 
-## How download the recommendations
+## How to download the recommendations
 
-You can download a summary of the recommendations from Advisor in a CSV or PDF format. This makes easy share with your co-workers or perform your own analysis
+You can download a summary of the recommendations from Advisor in a CSV or PDF format. This makes easy share with your coworkers or perform your own analysis
 
 ![Download recommendations.](../media/3-advisor-download-recommendations.png)
 
@@ -85,9 +85,9 @@ Example of a PDF file generated:
 
 ![PDF recommendations.](../media/3-summary-recommendations.png)
 
-## How create alerts on new recommendations
+## How to create alerts on new recommendations
 
-To create alerts for recommendations you should open Azure Advisor and go to **Alerts**Alerts under **Monitoring**. Then click to **New Advisor Alert**
+To create alerts for recommendations, you should open Azure Advisor and go to **Alerts**Alerts under **Monitoring**. Then select **New Advisor Alert**
 
 ![Create alerts on Azure Advisor.](../media/3-advisor-alert.png)
 
@@ -95,8 +95,8 @@ The first step is to define a scope. Then select the subscription and optionally
 
 The second step is to define the conditions for the alert. Here you have two options:
 
-* Category and impact level: In this option, optionally you could select one of the categories (Cost, Performance, Reliability and Operational excellence) and a impact level (Low, Medium and High)
-* Recommendation Type: If you choose by recommendation type you should select the recommendation type which have more fit with your needs from a full  dropdown list.
+* Category and impact level: In this option, optionally you could select one of the categories (Cost, Performance, Reliability, and Operational excellence) and a impact level (Low, Medium, and High)
+* Recommendation Type: If you choose by recommendation type, you should select the recommendation type that have more fit with your needs from a full  dropdown list.
 
 The third step is to select an existing action group or create a new one. An action group is a collection of notification preferences defined by the owner of an Azure subscription. The Azure Monitor, Service Health and Azure Advisor use action groups to notify users that an alert has been triggered.
 
@@ -104,20 +104,20 @@ The fourth and final step is to specify an alert rule name, description (optiona
 
 ![Alerts on Azure Advisor.](../media/3-create-alert.png)
 
-## How configure recommendations summary
+## How to configure recommendations summary
 
 Access the Azure Advisor regularly to check recommendations is a good practice. Receive an alert when some recommendation is triggered also is great. But what about receive a weekly digest by e-mail with all of them?
 
-To do that, access Advisor, click to **Recommendation digests** under **Monitoring** then click to **New Recommendation Digest**:
+To do that, access Advisor, select **Recommendation digests** under **Monitoring** then select **New Recommendation Digest**:
 
 ![Digests on Azure Advisor.](../media/3-advisor-create-digest.png)
 
 After define the subscription under Scope, you should set the frequency, recommendation category and language:
 
-* Frequency: Choose between Weekly, Bi-weekly or Monthly
-* Recommendation category: You can pick all options which make sense for you between Reliability, Security, Performance, Operational Excellence and Cost
+* Frequency: Choose between Weekly, Bi-weekly, or Monthly
+* Recommendation category: You can pick all options that make sense for you between Reliability, Security, Performance, Operational Excellence, and Cost
 * Language: You can select a language you prefer receive the digest from a dropdown list.
 
-Then select an existing or create e new action group then give a name for your digest and click to create!
+Then select an existing or create e new action group then give a name for your digest and create!
 
 ![Digests on Azure Advisor.](../media/3-advisor-digest.png)
