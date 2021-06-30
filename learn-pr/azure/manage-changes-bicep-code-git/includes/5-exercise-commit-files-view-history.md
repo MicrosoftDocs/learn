@@ -86,7 +86,7 @@ Now that you've reviewed the changes and are satisfied with it, you commit the u
 
    :::image type="content" source="../media/5-vscode-commit.png" alt-text="Screenshot of Visual Studio Code showing Source Control, with the commit icon highlighted." border="true":::
 
-   Visual Studio Code commits the two changes. Since you didn't explicitly stage them, Visual Studio Code automatically staged both files before it committed them.
+   Visual Studio Code commits the two changes.
 
 ## View the commit history by using the Git CLI
 

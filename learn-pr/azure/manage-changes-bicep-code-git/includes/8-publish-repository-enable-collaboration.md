@@ -9,14 +9,14 @@ GitHub and Azure Repos are both online services that keep copies of your Git rep
 > [!NOTE]
 > Azure Repos is a feature of Azure DevOps. When you work with Azure Repos, you use the Azure DevOps website.
 
-In a team environment, everyone on the team maintains their own local Git repository and synchronizes it with the online copy. In most times, the online copy becomes the _source of truth_ for your team. In a future module, you'll learn about deploying your Bicep code through an automated deployment pipeline. Pipelines require that your code is stored in an online repository - the pipeline accesses the code from there too.
+In a team environment, everyone on the team maintains their own local Git repository and synchronizes it with the online copy. In most situations, the online copy becomes the _source of truth_ for your team. In a future module, you'll learn about deploying your Bicep code through an automated deployment pipeline. Pipelines require that your code is stored in an online repository - the pipeline accesses the code from there too.
 
 > [!NOTE]
-> GitHub and Azure DevOps are both great options for you to use for hosting your Git repository, and they both have many powerful features. Your organization may already use one or the other tool. If you don't already have a preference, we recommend you use GitHub.
+> GitHub and Azure DevOps are both great options for you to use for hosting your Git repository, and they both have many powerful features. Your organization may already use one or the other tool. If you don't already have a preference, GitHub is a good choice since it's typically easier to get started.
 
 ## Local and remote repositories
 
-When you work with repositories hosted in GitHub or Azure DevOps, you configure your local Git repository to know about the remote repository. An online repository has a URL that Git can use to access it from your computer. Conventionally, use the term _origin_ refers to the online repository that your local repository synchronizes with.
+When you work with repositories hosted in GitHub or Azure DevOps, you configure your local Git repository to know about the remote repository. An online repository has a URL that Git can use to access it from your computer. Conventionally, the term _origin_ refers to the online repository that your local repository synchronizes with.
 
 You also need to set up _tracking branches_. This tells Git that a branch from your local repository represents the same branch as in your online repository. This is especially important for your **main** branch, since you want to keep that synchronized across all of your repositories. You can also enable tracking on other branches too.
 

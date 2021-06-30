@@ -103,7 +103,7 @@ You need to run a few commands to configure Git so that it associates your name 
 1. Save the file.
 
 > [!NOTE]
-> Even though you've saved the file into your repository's folder, Git isn't tracking it yet. You'll learn how Git keeps track of files in the next unit.
+> Even though you've saved the file into your repository's folder, Git isn't _tracking_ it yet. You'll learn how Git keeps track of files in the next unit.
 
 ## Inspect the repository status by using the CLI
 

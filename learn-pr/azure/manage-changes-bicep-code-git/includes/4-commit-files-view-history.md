@@ -27,7 +27,7 @@ A _commit_ represents a set of changes to one or more files in your repository. 
 
 ## Stage your changes
 
-Before you commit your changes, you first need to _stage_ them. Staging tells Git that you consider the changes important enough to change. It might seem like an unnecessary extra step, but staging gives you a lot of flexibility as you work. For example, you might make changes to several files, but only want to commit one of them.
+Before you commit your changes, you first need to _stage_ them. Staging tells Git that you consider the changes important enough to change. It might seem like an unnecessary extra step, but staging gives you a lot of flexibility as you work. For example, you might make changes to several files, but only want to commit one of them. Or, you may want to only commit some of the changes that you've made to a file.
 
 To stage a file, you use the `git add` command and specify the filename or folder name that you want to stage. Once you do this, Git knows that you might want to commit the change. When you query the repository status by using `git status`, you see the staged changed.
 

@@ -55,7 +55,7 @@ git branch -d my-experimental-changes
 
 ## Merge conflicts
 
-When Git merges changes from one branch into another, it looks at the files that have been modified and it tries its best to merge the changes together. Sometimes, you might have made changes to the same lines of code on two different branches. In these situations it'll be impossible for Git to know what to do. These are called _merge conflicts_. We don't discuss merge conflicts in this module, but it's important to know that this can happen - and it's even more common when you collaborate with other people. In the summary for this module, we provide some links to more information about how Git and Visual Studio Code help you to resolve merge conflicts.
+When Git merges changes from one branch into another, it looks at the files that have been modified and it tries its best to merge the changes together. Sometimes, you might have made changes to the same lines of code on two different branches. In these situations, Git cannot choose which is the correct version of the code, and so it will instead create a _merge conflict_. We don't discuss merge conflicts in this module, but it's important to know that this can happen - and it's even more common when you collaborate with other people. In the summary for this module, we provide some links to more information about how Git and Visual Studio Code help you to resolve merge conflicts.
 
 ## Git workflows
 

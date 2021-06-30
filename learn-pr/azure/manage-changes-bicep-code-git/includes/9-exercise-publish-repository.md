@@ -215,7 +215,7 @@ Now that your repository will be used by your colleagues, it's important to crea
    
    The Azure infrastructure is defined using [Bicep](https://docs.microsoft.com/azure/azure-resource-manager/bicep/).
 
-   To deploy the website's Azure resources, use the **deploy/main.bicep** file.
+   To deploy the website's Azure resources, use the *deploy/main.bicep* file.
    ```
 
    > [!NOTE]
@@ -223,7 +223,7 @@ Now that your repository will be used by your colleagues, it's important to crea
 
 1. Save the file.
 
-1. Commit the file to your Git repository. You can choose whether you commit using the Git CLI or the Visual Studio Code **Source Control**.
+1. Commit the file to your local Git repository. You can choose whether you commit using the Git CLI or the Visual Studio Code **Source Control**.
 
 ## Push again by using Visual Studio Code
 
