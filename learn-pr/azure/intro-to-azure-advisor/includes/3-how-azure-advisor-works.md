@@ -106,6 +106,18 @@ The fourth and final step is to specify an alert rule name, description (optiona
 
 ## How configure recommendations summary
 
-Summary
+Access the Azure Advisor regularly to check recommendations is a good practice. Receive an alert when some recommendation is triggered also is great. But what about receive a weekly digest by e-mail with all of them?
+
+To do that, access Advisor, click to **Recommendation digests** under **Monitoring** then click to **New Recommendation Digest**:
+
+![Digests on Azure Advisor.](../media/3-advisor-create-digest.png)
+
+After define the subscription under Scope, you should set the frequency, recommendation category and language:
+
+* Frequency: Choose between Weekly, Bi-weekly or Monthly
+* Recommendation category: You can pick all options which make sense for you between Reliability, Security, Performance, Operational Excellence and Cost
+* Language: You can select a language you prefer receive the digest from a dropdown list.
+
+Then select an existing or create e new action group then give a name for your digest and click to create!
 
 ![Digests on Azure Advisor.](../media/3-advisor-digest.png)
