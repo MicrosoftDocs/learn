@@ -120,7 +120,7 @@ Our full template would look something like:
 
   ::: zone-end
 
-::: zone pivot="bicep"
+::: zone pivot="bicepcli,biceppowershell"
 
 ## Include script files
 
