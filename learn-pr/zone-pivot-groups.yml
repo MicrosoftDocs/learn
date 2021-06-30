@@ -387,6 +387,6 @@ groups:
   prompt: Choose your WebXR session type
   pivots:
     - id: vr
-      title: VR
+      title: Virtual reality
     - id: ar
-      title: AR
+      title: Augmented reality
