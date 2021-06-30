@@ -1,14 +1,14 @@
 Babylon.js is a 3D rendering engine that provides various WebXR features and support within its framework.
 
-Recall that the amusement park company wanted the application to be a VR/AR application accessible through the public web. In this exercise, you will add WebXR support and features to the Babylon.js application built so far.
+Recall that the amusement park company wanted the application to be a Virtual Reality/Augmented Reality application accessible through the public web. In this exercise, you will add WebXR support and features to the Babylon.js application built so far.
 
-Here, you have a choice of adding WebXR support in the VR mode or the AR mode based on your preference. Make sure to select the tab of the path that you prefer before continuing to the exercise.
+Here, you have a choice of adding WebXR support in the Virtual Reality mode or the Augmented Reality mode based on your preference. Make sure to select the tab of the path that you prefer before continuing to the exercise.
 
 ## Enable WebXR Support
 
 ::: zone pivot="vr"
 
-Let's enable WebXR support for the immersive VR mode in the amusement park application.
+Let's enable WebXR support for the immersive Virtual Reality mode in the amusement park application.
 
 1. If you have closed it, open your project folder from the previous exercise in Visual Studio Code.
 1. Navigate to *src/index.ts* in your project folder.
@@ -22,7 +22,7 @@ Let's enable WebXR support for the immersive VR mode in the amusement park appli
 
 ::: zone pivot="ar"
 
-Let's enable WebXR support for the immersive AR mode in the amusement park application.
+Let's enable WebXR support for the immersive Augmented Reality mode in the amusement park application.
 
 1. Open your project folder from the previous exercise in Visual Studio Code.
 1. Navigate to *src/index.ts* in your project folder.
@@ -38,7 +38,7 @@ Let's enable WebXR support for the immersive AR mode in the amusement park appli
 
 ## Add background remover
 
-When users enter the AR session, we want them to use their own surroundings as the background for the dragon-summoning activity. Let's enable the background remover feature to remove the ground and sky meshes only during an AR session.
+When users enter the Augmented Reality session, we want them to use their own surroundings as the background for the dragon-summoning activity. Let's enable the background remover feature to remove the ground and sky meshes only during an Augmented Reality session.
 
 Below the scene.createDefaultXRExperienceAsync() function call, add this line to enable the background remover feature:
 
@@ -52,9 +52,9 @@ xr.baseExperience.featuresManager.enableFeature(BABYLON.WebXRBackgroundRemover, 
 
 ## Limit speech recognition to WebXR sessions
 
-Currently, users can summon the dragon without entering a WebXR session. However, the amusement park company wants the experience to be shown through VR/AR in order to simulate the true park activity.
+Currently, users can summon the dragon without entering a WebXR session. However, the amusement park company wants the experience to be shown through Virtual Reality/Augmented Reality in order to simulate the true park activity.
 
-Let's restrict the summoning activity to only the VR/AR mode. To do so, we will start the speech recognition session after users enter a WebXR session.
+Let's restrict the summoning activity to only the Virtual Reality/Augmented Reality mode. To do so, we will start the speech recognition session after users enter a WebXR session.
 
 1. In the createScene() function, find and delete the `recognizer.startContinuousRecognitionAsync();` line.
 1. Right before the createScene() function's return statement, add this line of code:
@@ -270,4 +270,4 @@ const createScene = async function () {
 
 ::: zone-end
 
-Since most browsers on computers cannot open WebXR sessions without an external device which supports WebXR, we can't see the updated code in action yet. In the next exercise, you'll deploy this application to the web and verify its functionalities on any device that supports VR or AR.
+Since most browsers on computers cannot open WebXR sessions without an external device which supports WebXR, we can't see the updated code in action yet. In the next exercise, you'll deploy this application to the web and verify its functionalities on any device that supports Virtual Reality or Augmented Reality.

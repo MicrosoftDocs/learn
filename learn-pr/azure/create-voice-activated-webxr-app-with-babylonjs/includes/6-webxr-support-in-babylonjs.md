@@ -1,6 +1,6 @@
-WebXR is a technology that helps bring VR and AR functionality to the web. The WebXR Device API at its core handles the logic for interfacing with devices that support VR or AR. 
+WebXR is a technology that helps bring Virtual Reality and Augmented Reality functionality to the web. The WebXR Device API at its core handles the logic for interfacing with devices that support Virtual Reality or Augmented Reality. 
 
-In the scenario of the amusement park application, the company wants the VR/AR application to be easily accessible through a browser connected to the internet. WebXR is the most fitting technology to fulfill this need.
+In the scenario of the amusement park application, the company wants the Virtual Reality/Augmented Reality application to be easily accessible through a browser connected to the internet. WebXR is the most fitting technology to fulfill this need.
 
 Here, you'll learn about a selection of the WebXR features provided by Babylon.js.
 
@@ -14,7 +14,7 @@ The WebXR experience can be enabled for a Babylon.js scene in one line:
 const xr = await scene.createDefaultXRExperienceAsync({});
 ```
 
-By default, this line of code enables WebXR support in the immersive VR mode. To enable the support for WebXR support in the AR mode, use this line:
+By default, this line of code enables WebXR support in the immersive Virtual Reality mode. To enable the support for WebXR support in the Augmented Reality mode, use this line:
 
 ```typescript
 const xr = await scene.createDefaultXRExperienceAsync({
@@ -24,11 +24,11 @@ const xr = await scene.createDefaultXRExperienceAsync({
 });
 ```
 
-After WebXR is enabled using this function, if the Babylon.js application is opened on a browser of a device that supports WebXR in the specified mode (VR or AR), an XR button will appear in the bottom-right corner of the page:
+After WebXR is enabled using this function, if the Babylon.js application is opened on a browser of a device that supports WebXR in the specified mode (Virtual Reality or Augmented Reality), an XR button will appear in the bottom-right corner of the page:
 
 :::image type="content" source="../media/webxr-button.jpg" alt-text="Screenshot of an empty Babylon J S scene with an X R button in the bottom-right corner.":::
 
-One can then enter the VR or AR session by pressing on that button.
+One can then enter the Virtual Reality or Augmented Reality session by pressing on that button.
 
 ### WebXR Session Manager
 
@@ -38,7 +38,7 @@ When we use `scene.createDefaultXRExperienceAsync()` to enable the WebXR support
 
 The WebXR Session Manager provides a set of observables, which events that we can subscribe to and take action on. For example, the *onXRSessionInit* observable is triggered when a new WebXR session is created, and the *onXRSessionEnded* observable is triggered when a WebXR session ended. These observables are useful for recognizing when users are entering the WebXR session through the button selection.
 
-The WebXR Session Manager can also be used to initialize or end a WebXR session programmatically, as well as specifying the type of the session (VR or AR) when creating the session programmatically.
+The WebXR Session Manager can also be used to initialize or end a WebXR session programmatically, as well as specifying the type of the session (Virtual Reality or Augmented Reality) when creating the session programmatically.
 
 ### WebXR Camera
 
@@ -53,11 +53,11 @@ Like the WebXR Session Manager, the WebXR Camera is also created at the scene.cr
 
 ### Background Remover
 
-Background remover is an AR-exclusive feature that helps make Babylon.js scenes reusable across both VR and AR session modes.
+Background remover is an Augmented Reality-exclusive feature that helps make Babylon.js scenes reusable across both Virtual Reality and Augmented Reality session modes.
 
-When viewing a Babylon.js scene without WebXR support or in an immersive VR session, the scene often has background materials (ground, sky, etc.) that describe the setting of the scene. However, in an AR session, we only want to render the non-background meshes and instead use the user's real surroundings as the background.
+When viewing a Babylon.js scene without WebXR support or in an immersive Virtual Reality session, the scene often has background materials (ground, sky, etc.) that describe the setting of the scene. However, in an Augmented Reality session, we only want to render the non-background meshes and instead use the user's real surroundings as the background.
 
-The background remover feature allows us to specify what meshes to remove when the user is in an AR session. The example below shows how it can be enabled:
+The background remover feature allows us to specify what meshes to remove when the user is in an Augmented Reality session. The example below shows how it can be enabled:
 
 ```typescript
 xr.baseExperience.featuresManager.enableFeature(BABYLON.WebXRBackgroundRemover, 'latest', {
@@ -67,6 +67,6 @@ xr.baseExperience.featuresManager.enableFeature(BABYLON.WebXRBackgroundRemover, 
 
 ## Supported devices
 
-VR and AR WebXR sessions can be opened on Android and iOS mobile phones. For Android, sessions are supported on the native Chrome browser; for iOS, sessions can be viewed on an application named WebXR Viewer.
+Virtual Reality and Augmented Reality WebXR sessions can be opened on Android and iOS mobile phones. For Android, sessions are supported on the native Chrome browser; for iOS, sessions can be viewed on an application named WebXR Viewer.
 
-Other than mobile phones, you can also view immersive VR sessions using any Windows Mixed Reality headset or HoloLens, which support AR as well.
+Other than mobile phones, you can also view immersive Virtual Reality sessions using any Windows Mixed Reality headset or HoloLens, which support Augmented Reality as well.
