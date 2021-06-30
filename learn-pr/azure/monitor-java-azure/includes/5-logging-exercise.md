@@ -37,7 +37,7 @@ az spring-cloud app logs --name customers-service -f
 
 ## Errors and Warnings exercise
 
-Next, we'll create an error, to show the value of how you can quickly debug and find it's root cause.
+Next, we'll create an error, to show the value of how you can quickly debug and find its root cause.
 
 1. Open the customers-service and follow the logs:
 
@@ -55,7 +55,7 @@ https://<spring-cloud-name>-api-gateway.azuremicroservices.io/api/customer/owner
 Accessing the URL triggers a warning, as the variable "George" cannot be cast into a number to search for a customer.
 You now can see a warning similar to the below screen:
 
-:::image type="content" source="../media/5-warning.jpg" alt-text="screenshot of azure cloud shell with log warning":::
+:::image type="content" source="../media/5-warning.jpg" alt-text="screenshot of Azure Cloud Shell with log warning":::
 
 3. To resolve this warning, in a web browser, rather search for the customer using the customer ID:
 
