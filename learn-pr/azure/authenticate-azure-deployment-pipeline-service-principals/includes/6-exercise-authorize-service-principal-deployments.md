@@ -149,7 +149,7 @@ You don't currently have a deployment pipeline, so you'll simulate what a pipeli
    $credential = Get-Credential
    ```
 
-1. Run this Azure PowerShell command in the Visual Studio Code terminal to sign in using the service principal's credentials. Make sure you replace the placeholders with the values you copied in the previous step.
+1. Run this Azure PowerShell command in the Visual Studio Code terminal to sign in using the service principal's credentials. Make sure you replace the `TENANT_ID` placeholder with the value you copied earlier.
 
    ```azurepowershell
    Connect-AzAccount -ServicePrincipal `
@@ -185,13 +185,13 @@ Use the Azure portal to inspect the resources that you deploy and to inspect the
 
     :::image type="content" source="../media/6-deployment-succeeded.png" alt-text="Screenshot of the Azure portal resource group overview pane, displaying additional details of the successful deployment." border="true":::
 
-   You may also see a deployment named **Failure-Anomalies-Alert-Rule-Deployment**. This is created automatically by Application Insights.
+   You might also see a deployment named **Failure-Anomalies-Alert-Rule-Deployment**. This is created automatically by Application Insights.
 
 1. Select the deployment called **main** to see what resources were deployed, and then select **Deployment details** to expand it. 
  
    In this case, the App Service plan and app, as well as the Application Insights instance, are listed.
 
-    :::image type="content" source="../media/6-development-deployment-details.png" alt-text="Screenshot of the Azure portal resource group overview pane for the specific deployment, with an App Service plan and app, and an Application Insights instance listed." border="true":::
+    :::image type="content" source="../media/6-deployment-details.png" alt-text="Screenshot of the Azure portal resource group overview pane for the specific deployment, with an App Service plan and app, and an Application Insights instance listed." border="true":::
 
    Notice that there's nothing unusual about this deployment - even though it was initiated by a service principal, it's just like any other Bicep deployment.
 
