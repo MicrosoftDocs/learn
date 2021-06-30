@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.fsharp-introduction.write-your-first
+title: First line F# code
+metadata:
+  unitType: exercise
+  title: "Write your first line of F# code" # user input: module title for browser tab and search results
+  description: "Use F# interactive to print Hello World to the console" # user input: a description for site search and SEO
+  ms.date: 6/26/2021
+  author: luisquintanilla
+  ms.author: luquinta
+  ms.topic: interactive-tutorial # do we need ms.topic?
+durationInMinutes: 1 # user input: the estimate time to complete the unit
+content: |
+  [!include[](includes/drafts/5-write-your-first.md)]

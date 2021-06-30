@@ -28,9 +28,9 @@ products:
   - dotnet
 units:
 - learn.fsharp-introduction.introduction
-- learn.fsharp-introduction.learning-content
-- learn.fsharp-introduction.exercise
-- learn.fsharp-introduction.knowledge-check
-- learn.fsharp-introduction.summary
+- learn.fsharp-introduction.what-is-fsharp
+- learn.fsharp-introduction.set-up-development-environment
+- learn.fsharp-introduction.fsharp-interactive
+- learn.fsharp-introduction.write-your-first
 badge:
   uid: learn.fsharp-introduction.badge
