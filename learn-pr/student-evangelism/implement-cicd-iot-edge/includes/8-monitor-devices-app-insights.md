@@ -61,7 +61,7 @@ To create an AKS cluster, complete the following steps:
 
 1. Select the **Deploy an application to a Kubernetes cluster by using its Helm chart** template, and select **Apply**.
 
-   ![The illustration shows adding smoke test by choosing a template](../media/integration-test.png)
+   ![The illustration shows adding smoke test by choosing a template.](../media/integration-test.png)
 
 1. Rename this stage to **Integration**.
 
@@ -145,8 +145,8 @@ Make sure that the device has been deployed and is running. You can monitor the 
 
 1. Add the following values to monitor block I/O for all edge modules.
 
-   ![The illustration shows chart details of block io](../media/ai-block-io.png)
+   ![The illustration shows chart details of block io.](../media/ai-block-io.png)
 
 1. Add the following values to monitor the network traffic for all Edge modules.
 
-   ![The illustration shows chart details of traffic](../media/ai-network-traffic.png)
+   ![The illustration shows chart details of traffic.](../media/ai-network-traffic.png)
