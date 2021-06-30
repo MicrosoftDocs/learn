@@ -40,19 +40,19 @@ Let's enable WebXR support for the immersive AR mode in the amusement park appli
 
 When users enter the AR session, we want them to use their own surroundings as the background for the dragon-summoning activity. Let's enable the background remover feature to remove the ground and sky meshes only during an AR session.
 
-1. Below the scene.createDefaultXRExperienceAsync() function call, add this line to enable the background remover feature:
+Below the scene.createDefaultXRExperienceAsync() function call, add this line to enable the background remover feature:
 
-    ```typescript
-    xr.baseExperience.featuresManager.enableFeature(BABYLON.WebXRBackgroundRemover, 'latest', {
-        backgroundMeshes: [env.skybox, env.ground]
-    });
-    ```
+```typescript
+xr.baseExperience.featuresManager.enableFeature(BABYLON.WebXRBackgroundRemover, 'latest', {
+    backgroundMeshes: [env.skybox, env.ground]
+});
+```
 
 ::: zone-end
 
 ## Limit speech recognition to WebXR sessions
 
-Currently, users can summon the dragon without entering a WebXR session. However, the amusement park company wants the experience to be shown through VR/AR in order to simulate the true park activity. 
+Currently, users can summon the dragon without entering a WebXR session. However, the amusement park company wants the experience to be shown through VR/AR in order to simulate the true park activity.
 
 Let's restrict the summoning activity to only the VR/AR mode. To do so, we will start the speech recognition session after users enter a WebXR session.
 

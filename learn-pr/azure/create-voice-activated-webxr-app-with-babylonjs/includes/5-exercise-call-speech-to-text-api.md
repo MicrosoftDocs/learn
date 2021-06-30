@@ -32,7 +32,7 @@ Since we are using Node.js, all of the required dependencies are listed in the *
 
 You might have noticed that the source files in this repository have the *.ts* extension, which means that the files are written in TypeScript instead of JavaScript. While TypeScript and JavaScript are similar in nature, TypeScript requires types to be clearly defined for function parameters.
 
-As a result, you'll need to import every class that will be used in a variable or a function parameter. In VSCode, navigate to **src/index.ts** and add the following import statement at the top of the file:
+As a result, you'll need to import every class that will be used in a variable or a function parameter. In VSCode, navigate to *src/index.ts* and add the following import statement at the top of the file:
 
 ```typescript
 import { 
