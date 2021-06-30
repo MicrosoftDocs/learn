@@ -4,6 +4,6 @@ After your evaluation, you recognize that there's a gap between IT and Contosoâ€
 
 You can learn more by reviewing the following documents.
 
-- [Microsoft Edge security for business](/deployedge/ms-edge-security-for-business)
+- [Microsoft Edge security for business](https://docs.microsoft.com/deployedge/ms-edge-security-for-business)
 - [Sharing OneDrive Files: Security- Microsoft Community](https://answers.microsoft.com/en-us/msoffice/forum/msoffice_drive-mso_win10-mso_365hp/sharing-onedrive-files-security/4d40c7c6-c3ae-4ad5-a308-46271bfe22a0)
-- [Simulate a phishing attack](/microsoft-365/security/office-365-security/attack-simulation-training)
+- [Simulate a phishing attack](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide)
