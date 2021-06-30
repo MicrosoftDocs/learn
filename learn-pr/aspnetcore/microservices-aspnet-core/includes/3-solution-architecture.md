@@ -2,7 +2,7 @@ In this unit, you'll gain an understanding of the *:::no-loc text="eShopOnContai
 
 ## Solution architecture
 
-:::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="eShopOnContainers solution architecture diagram" border="true" lightbox="../../media/microservices/eshop-architecture.png":::
+:::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="eShopOnContainers solution architecture diagram." border="true" lightbox="../../media/microservices/eshop-architecture.png":::
 
 The *:::no-loc text="eShopOnContainers":::* app is an online store that sells various products, including pins, T-shirts, and coffee mugs. The store includes the following features:
 
@@ -27,7 +27,7 @@ The identity service in the diagram is configured to allow direct access. Conseq
 
 You use an event bus for asynchronous messaging and event-driven communication. The preceding architecture diagram depicts RabbitMQ in a Docker container deployed to AKS, but a service such as [Azure Service Bus](https://azure.microsoft.com/services/service-bus) would also be appropriate.
 
-:::image type="content" source="../media/3-solution-architecture/eventbus-implementation.png" alt-text="event bus illustration" border="true" lightbox="../media/3-solution-architecture/eventbus-implementation.png":::
+:::image type="content" source="../media/3-solution-architecture/eventbus-implementation.png" alt-text="event bus illustration." border="true" lightbox="../media/3-solution-architecture/eventbus-implementation.png":::
 
 The preceding diagram depicts the publish/subscribe (commonly shortened to *pub-sub*) pattern used with the event bus. Any service can publish an event to the event bus. Each service is responsible for subscribing to the messages relevant to its domain. The services each call an `AddEventBus` extension method in the `ConfigureServices` method of *:::no-loc text="Startup.cs":::*. This method establishes a connection to the event bus, and registers the appropriate event handlers for that service's domain.
 

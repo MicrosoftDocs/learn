@@ -7,4 +7,4 @@ use the Translator app on their own mobile device, desktop, or in PowerPoint to 
 
 Microsoft Teams also has translation capability. The inline message translation feature allows users to translate Teams messages in the language specified in their personal language settings for Office 365 (image below). This way people from different backgrounds and with different abilities can all communicate and participate equally within a meeting.
 
-:::image type="content" source="../media/TeamsChat.png" alt-text="Five people in a Microsoft Teams meeting using live captions":::
+:::image type="content" source="../media/TeamsChat.png" alt-text="Five people in a Microsoft Teams meeting using live captions.":::

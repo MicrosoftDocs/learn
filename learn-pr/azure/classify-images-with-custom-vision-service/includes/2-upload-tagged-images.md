@@ -16,13 +16,13 @@ In this unit, you'll add images of famous paintings by Picasso, Pollock, and Rem
 
 1. Back in the portal, select **Add images** to add images to the project.
 
-    ![Screenshot of the Artworks project with the Add images button highlighted](../media/2-portal-click-add-images.png)
+    ![Screenshot of the Artworks project with the Add images button highlighted.](../media/2-portal-click-add-images.png)
 
 1. In the **cvs-resources** folder that you downloaded locally in step 4, navigate to the "Artists\Picasso" folder.
 
 1. Select all of the files in "Artists\Picasso", and then select **Open**.
 
-    ![Screenshot of the Picasso folder with all the image files selected and the Open button highlighted ](../media/2-fe-browse-picasso-01.png)
+    ![Screenshot of the Picasso folder with all the image files selected and the Open button highlighted.](../media/2-fe-browse-picasso-01.png)
 
 1. The **Image upload** dialog appears and displays thumbnails of all the images we are uploading. Select the **My Tags** field, which opens a dropdown of the tags you can assign these images.
 

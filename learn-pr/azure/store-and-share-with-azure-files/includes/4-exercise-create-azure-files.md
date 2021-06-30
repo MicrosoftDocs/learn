@@ -76,22 +76,22 @@ Next, create a Windows Server VM to simulate an on-premises machine running in t
 
 1. Select the created storage account that should be named **learnazurefileshare**, followed by random numbers.
 
-    ![Screenshot of the Azure portal showing the storage account overview](../media/4-select-file-shares.png)
+    ![Screenshot of the Azure portal showing the storage account overview.](../media/4-select-file-shares.png)
 
 1. Select **File shares**, and then select **data** (same page you just selected data).
 
-    ![Screenshot of the file shares in the storage account](../media/4-select-data.png)
+    ![Screenshot of the file shares in the storage account.](../media/4-select-data.png)
 
 1. Select **Connect**, and in the pop-up window on the right, select the **F** drive letter.
 
-    ![Screenshot of the data file share and its connection commands](../media/4-connect-share.png)
+    ![Screenshot of the data file share and its connection commands.](../media/4-connect-share.png)
 
 1. Copy the PowerShell command.
 1. On your virtual machine, right-click **Start** and select **Windows PowerShell (Admin)**.
 1. In the PowerShell window, paste the copied commands.
 1. Return to the Azure portal, go back to the file shares, and select the **reports** file share.
 
-    ![Screenshot of how to go back to the file shares ](../media/4-navigate-back.png)
+    ![Screenshot of how to go back to the file shares.](../media/4-navigate-back.png)
 
 1. Select **Connect**, and in the pop-up window on the right, select the **G** drive letter.
 1. Copy the bottom PowerShell command.
@@ -101,7 +101,7 @@ Next, create a Windows Server VM to simulate an on-premises machine running in t
 
 1. Open Explorer in the VM , and select **This PC**.
 
-    ![Explorer showing This PC](../media/4-explorer-mapped-drives.png)
+    ![Explorer showing This PC.](../media/4-explorer-mapped-drives.png)
 
 1. Select the data drive named drive **F**. 
 1. Right-click the main window, and select **New** > **Text Document**. 

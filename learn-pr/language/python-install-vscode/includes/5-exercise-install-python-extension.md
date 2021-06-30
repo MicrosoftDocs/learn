@@ -10,7 +10,7 @@ You can browse through extensions and install them from within Visual Studio Cod
 
 Open the Extensions view by selecting **View** and **Extensions**.
 
-![Screenshot of the menu option for the Extensions panel](../media/visual-studio-code-extensions-open.png)
+![Screenshot of the menu option for the Extensions panel.](../media/visual-studio-code-extensions-open.png)
 
 Extensions view will display a list of the Visual Studio Code extensions that are the most popular on the Visual Studio Code Marketplace.
 
@@ -26,7 +26,7 @@ Select the Python extension published by Microsoft (usually the first one in the
 
 In the main area, where you see the details about the Python extension, select **Install**.
 
-![Screenshot of the search results in the Extensions panel for Python with Install highlighted](../media/visual-studio-code-extensions-install.png)
+![Screenshot of the search results in the Extensions panel for Python with Install highlighted.](../media/visual-studio-code-extensions-install.png)
 
 When the installation is complete, the button's text will change to **Uninstall**. This message lets you know that you've successfully installed the Python extension.
 
@@ -38,7 +38,7 @@ When the installation is complete, the button's text will change to **Uninstall*
 
 In the main area, where you see the details about the Python extension, select **Install**.
 
-![Screenshot of the search results in the Extensions panel for Python with Install highlighted](../media/visual-studio-code-extensions-install.png)
+![Screenshot of the search results in the Extensions panel for Python with Install highlighted.](../media/visual-studio-code-extensions-install.png)
 
 When the installation is complete, the button's text will change to **Uninstall**. This message lets you know that you've successfully installed the Python extension.
 
@@ -50,7 +50,7 @@ When the installation is complete, the button's text will change to **Uninstall*
 
 In the main area, where you see the details about the Python extension, select **Install**.
 
-![Screenshot of the search results in the Extensions panel for Python with Install highlighted](../media/visual-studio-code-extensions-install.png)
+![Screenshot of the search results in the Extensions panel for Python with Install highlighted.](../media/visual-studio-code-extensions-install.png)
 
 When the installation is complete, the button's text will change to **Uninstall**. This message lets you know that you've successfully installed the Python extension.
 

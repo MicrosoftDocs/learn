@@ -20,15 +20,15 @@ Open the Microsoft Store by selecting *Start*, typing *start* and *Microsoft Sto
 
 You'll be presented with a list of various options. Select the most recent version of Python, which at the time of this writing is Python 3.9.
 
-![Screenshot of search results screen from Microsoft store for Python showing Python 3.9 highlighted](../media/windows-install-python-search.png)
+![Screenshot of search results screen from Microsoft store for Python showing Python 3.9 highlighted.](../media/windows-install-python-search.png)
 
 On the details screen, select *Install*.
 
-![Screenshot of the Python details screen in the Microsoft Store with Install highlighted](../media/windows-install-python-splash.png)
+![Screenshot of the Python details screen in the Microsoft Store with Install highlighted.](../media/windows-install-python-splash.png)
 
 Python will be installed in the background. The installation may take a couple of minutes depending on the speed of your system.
 
-![Screenshot of installation progress for Python from the Microsoft Store](../media/windows-install-python-progress.png)
+![Screenshot of installation progress for Python from the Microsoft Store.](../media/windows-install-python-progress.png)
 
 After Python installs, return to the command prompt. Enter the following command and then press <kbd>Enter</kbd> to see the version of Python:
 

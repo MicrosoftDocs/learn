@@ -1,6 +1,6 @@
 Imagine that you want to create a simple bookmark lookup service. Your service is read-only initially. If users want to find an entry, they send a request with the ID of the entry, and you return the URL. The following flowchart illustrates the flow.
 
-![Decision flow diagram illustrating the process of finding a bookmark in our Azure Cosmos DB back-end and returning a response. ](../media/5-find-bookmark-flow-small.png)
+![Decision flow diagram illustrating the process of finding a bookmark in our Azure Cosmos DB back-end and returning a response.](../media/5-find-bookmark-flow-small.png)
 
 When users send you a request with some text, you try to find an entry in your back-end database that contains this text as a key or ID. You return a result that indicates whether you found the entry.
 

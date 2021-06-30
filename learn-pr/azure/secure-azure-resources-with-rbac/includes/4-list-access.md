@@ -16,11 +16,11 @@ Follow these steps to see what roles are currently assigned to you.
 
 1. On the Profile menu, click the ellipsis (**...**) to see more links.
 
-    ![Screenshot of user menu with My permissions highlighted](../media/4-my-permissions-menu.png)
+    ![Screenshot of user menu with My permissions highlighted.](../media/4-my-permissions-menu.png)
 
 1. Select **My permissions** to open the My permissions pane.
 
-    ![Screenshot of the My permissions pane](../media/4-my-permissions-pane.png)
+    ![Screenshot of the My permissions pane.](../media/4-my-permissions-pane.png)
 
     On the My permissions pane, you can see the roles that you have been assigned and the scope. Your list will look different.
 
@@ -30,17 +30,17 @@ Follow these steps to see what roles are assigned at the resource group scope.
 
 1. Select Home, and then under  **Azure services** select **Resource groups**.
 
-   ![Screenshot of the Azure portal showing Azure services and recent resources](../media/4-resource-groups.png)
+   ![Screenshot of the Azure portal showing Azure services and recent resources.](../media/4-resource-groups.png)
 
 1. Select the resource group  **FirstUpConsultantsRG1-_XXXXXXX_** and on the left menu pane, select **Access control (IAM)**.
 
-   ![Screenshot showing Access control (IAM) option on the resource group pane](../media/4-resource-group-access-control.png)
+   ![Screenshot showing Access control (IAM) option on the resource group pane.](../media/4-resource-group-access-control.png)
 
 1. Select the **Role assignments** tab.
 
     This tab shows who has access to the resource group. Notice that some roles are scoped to **This resource** while others are **(Inherited)** from a parent scope.
 
-   ![Screenshot showing Role assignments tab for the selected resource group](../media/4-resource-group-role-assignment.png)
+   ![Screenshot showing Role assignments tab for the selected resource group.](../media/4-resource-group-role-assignment.png)
 
 ## List roles
 
