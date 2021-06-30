@@ -54,7 +54,7 @@ When users enter the AR session, we want them to use their own surroundings as t
 
 Currently, users can summon the dragon without entering a WebXR session. However, the amusement park company wants the experience to be shown through VR/AR in order to simulate the true park activity. 
 
-Let's restrict the summoning activity to only the VR/AR mode. To do so, we will start the speech recognition session after users enters a WebXR session.
+Let's restrict the summoning activity to only the VR/AR mode. To do so, we will start the speech recognition session after users enter a WebXR session.
 
 1. In the createScene() function, find and delete the `recognizer.startContinuousRecognitionAsync();` line.
 1. Right before the createScene() function's return statement, add this line of code:
