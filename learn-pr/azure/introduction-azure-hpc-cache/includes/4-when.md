@@ -16,10 +16,10 @@ Datasets should include megabyte- or ideally gigagbyte-sized files. The working 
 
 Use HPC Cache when you plan on using thousands of compute cores to run read-heavy workloads against a single, static dataset using NFS.
 
-HPC Cache wouldn't be the best fit:
+HPC Cache wouldn't be the best fit if:
 
-- Where the dataset is constantly changing.
-- There are only a few clients accessing data on a non-NAS server.
+- The dataset is constantly changing.
+- Only a few clients are accessing data on a non-NAS server.
 - A large set of the storage calls are write requests.
 - The file system isn't NFS.
 
@@ -35,7 +35,7 @@ The following table lists criteria for using HPC Cache.
 
 ## Apply the criteria
 
-Read-heavy NFS workloads on NAS are ideal for HPC Cache. There are times when there might not be a perfect fit, but HPC Cache is still a good solution. Let's look at a few scenarios to determine whether HPC Cache should be used.
+Read-heavy NFS workloads on NAS are ideal for HPC Cache. There are times when the fit might not be perfect, but HPC Cache is still a good solution. Let's look at a few scenarios to determine whether HPC Cache should be used.
 
 ### Should financial institutions use HPC Cache to run simulations?
 
@@ -45,6 +45,6 @@ Financial simulations are a great fit for HPC Cache. The dataset of historic sto
 
 Using home directories isn't a good fit for HPC Cache. The dataset is only a few gigabytes in size. Only a single client accesses the data. The data is often changing. Data is stored in an SMB file system.
 
-### Should Engineering Design Automation (EDA) use HPC Cache to accelerate a tools repository?
+### Should Engineering Design Automation use HPC Cache to accelerate a tools repository?
 
-Accelerating EDA tools repositories is a perfect fit for HPC Cache. Several clients use the tools repo while designing and architecting. The repo is large and is accessed via NFS.
+Accelerating Engineering Design Automation (EDA) tools repositories is a good fit for HPC Cache. Several clients use the tools repo while designing and architecting. The repo is large and is accessed via NFS.

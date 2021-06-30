@@ -6,9 +6,9 @@ Here, we'll discuss how Azure HPC Cache works. You'll learn how the different st
 
 ## How source data is accessed
 
-Without a caching solution, clients would directly access the source data. When using the caching service, clients access HPC Cache for faster access to data instead of directly accessing the source data.
+Without a caching solution, clients directly access the source data. When clients use the caching service, they access HPC Cache for faster access to data instead of directly accessing the source data.
 
-HPC Cache reads data from a customer storage target like network-attached storage (NAS) in the customer datacenter and stores frequently accessed data in memory and on high-speed drives.
+HPC Cache reads data from a customer storage target like network-attached storage (NAS) in the customer datacenter. It stores frequently accessed data in memory and on high-speed drives.
 
 ## How the cache manages the data
 
@@ -20,6 +20,6 @@ When multiple clients read the same data, the cache supplies the data faster tha
 
 To access the data from the storage target, the cache typically exchanges traffic over the public internet. Data transmissions are secured by using encryption.
 
-Because bandwidth can be low and slow the transfer of information, Azure ExpressRoute is recommended to accelerate data transfer. While it's not required, a dedicated line like ExpressRoute provides faster data transfers than relying on public internet communication alone.
+Because bandwidth can be low and slow the transfer of information, consider using Azure ExpressRoute to accelerate data transfer. While it's not required, a dedicated line like ExpressRoute provides faster data transfers than relying on public internet communication alone.
 
-:::image type="content" source="../media/infrastructure-diagram.png" alt-text="Diagram showing clients connecting to the cache which is then connected to datacenter storage via ExpressRoute.":::
+:::image type="content" source="../media/infrastructure-diagram.png" alt-text="Diagram showing clients connecting to the cache that is then connected to datacenter storage via ExpressRoute.":::

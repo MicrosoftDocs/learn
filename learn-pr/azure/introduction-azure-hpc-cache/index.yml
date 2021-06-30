@@ -18,7 +18,7 @@ abstract: |
   - Describe how Azure HPC Cache enables you to accelerate, scale, and manage your file-based high performance computing workloads in Azure.
 prerequisites: |
   - Understanding of basic NFS storage concepts like read and write operations.
-  - Basic understanding of networking concepts like bandwidth and leased lines like ExpressRoute.
+  - Basic understanding of networking concepts like bandwidth and leased lines like Azure ExpressRoute.
   - Knowledge of how basic caching works like saving data on fast media for future requests.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

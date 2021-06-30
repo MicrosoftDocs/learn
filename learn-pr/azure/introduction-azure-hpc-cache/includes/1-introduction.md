@@ -8,9 +8,9 @@ Suppose you're a storage administrator for an animation studio. The studio's lat
 
 The process of rendering the video on the studio's local storage runs overnight. Because of the impending deadline, changes must be reviewed on the same day and can't wait for an overnight render. You need to determine whether a storage caching solution like HPC Cache will help you complete your video renders during the workday.
 
-## What will we be doing?
+## What will you be doing?
 
-We'll examine the ideal situation for using HPC Cache to help you decide if the cache service is the solution you need. You'll look at:
+You'll examine the ideal situation for using HPC Cache to help you decide if the cache service is the solution you need. You'll look at:
 
 - **Protocol**: What storage protocol is supported?
 - **Storage**: What storage can be accelerated with the cache service?
@@ -20,4 +20,4 @@ We'll examine the ideal situation for using HPC Cache to help you decide if the 
 
 ## What is the main goal?
 
-By the end of this module, you'll be able to determine if HPC Cache will help you accelerate storage for your high-performance computing clients.
+By the end of this module, you'll be able to determine if HPC Cache will help you accelerate storage for your HPC clients.
