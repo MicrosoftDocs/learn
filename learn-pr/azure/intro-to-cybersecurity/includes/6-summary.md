@@ -1,4 +1,4 @@
-After your evaluation, you know there is a gap between IT and Contoso’s employees. To narrow this gap, it’s critical to provide the employees with cybersecurity awareness training. You know that educating employees to make the right cyber defense choices can reduce the cyber risks to themselves and Contoso.
+After your evaluation, you recognize that there's a gap between IT and Contoso’s employees. To narrow this gap, it’s critical to provide the employees with cybersecurity awareness training. You know that educating employees to make the right cyber-defense choices can help reduce cyber risks to employees and Contoso.
 
 ## Learn more
 
