@@ -13,7 +13,7 @@ Recall that your teammate has already set up a Babylon.js project with all of th
     (screenshot)
 1. Copy the **URL of the repository** under the **HTTPS** tab.
 1. Open Visual Studio Code.
-1. Select the Settings button in the bottom left of the window, and then select **Command Palette** from the options.
+1. Select the Settings button in the bottom left of the window, and then select **Command Palette** from the options (or Ctrl+Shift+P/Cmd+Shift+P).
 1. After the Command Palette pops up, type in "git" and select the **Git: Clone** command.
 1. Paste the URL of the GitHub repository.
 1. Select the folder where you would like to save the repository. The root folder of the repository becomes a subdirectory in the folder you select.
