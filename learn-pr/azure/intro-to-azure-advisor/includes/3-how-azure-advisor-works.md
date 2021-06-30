@@ -71,7 +71,7 @@ It's possible to choose for which Subscriptions and Resource Groups you want rec
 
 Also is possible configure the average CPU utilization rule for the low usage virtual machine recommendation. The CPU utilization rule can be set to 5%, 10%, 15%, or 20%.
 
-*Please note that to adjust the average CPU utilization rule for identifying low usage virtual machines, you must be a subscription Owner. If you do not have the required permissions for a subscription or resource group, the option to include or exclude it will be disabled in the user interface.*
+> Please note that to adjust the average CPU utilization rule for identifying low usage virtual machines, you must be a subscription Owner. If you do not have the required permissions for a subscription or resource group, the option to include or exclude it will be disabled in the user interface.
 
 ![Configuration of Rules on Azure Advisor.](../media/3-advisor-rules.png)
 
@@ -87,7 +87,20 @@ Example of a PDF file generated:
 
 ## How create alerts on new recommendations
 
-Alerts
+To create alerts for recommendations you should open Azure Advisor and go to **Alerts**Alerts under **Monitoring**. Then click to **New Advisor Alert**
+
+![Create alerts on Azure Advisor.](../media/3-advisor-alert.png)
+
+The first step is to define a scope. Then select the subscription and optionally an resource group.
+
+The second step is to define the conditions for the alert. Here you have two options:
+
+* Category and impact level: In this option, optionally you could select one of the categories (Cost, Performance, Reliability and Operational excellence) and a impact level (Low, Medium and High)
+* Recommendation Type: If you choose by recommendation type you should select the recommendation type which have more fit with your needs from a full  dropdown list.
+
+The third step is to select an existing action group or create a new one. An action group is a collection of notification preferences defined by the owner of an Azure subscription. The Azure Monitor, Service Health and Azure Advisor use action groups to notify users that an alert has been triggered.
+
+The fourth and final step is to specify an alert rule name, description (optional), choose to be enabled or not upon creation and a resource group where to save.
 
 ![Alerts on Azure Advisor.](../media/3-create-alert.png)
 
