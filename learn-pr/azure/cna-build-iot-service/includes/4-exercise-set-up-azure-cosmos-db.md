@@ -59,7 +59,7 @@ To perform this exercise, you need:
 
    | Setting | Configuration |
    | --- | --- |
-   | Database id | **Use existing - iotdb** |
+   | Database id | **iotdb** |
    | Database throughput (autoscale) | **Autoscale** |
    | Database Max RU/s | **4000** |
 
@@ -70,7 +70,7 @@ To perform this exercise, you need:
 
    | Setting | Configuration |
    | --- | --- |
-   | Database id | **iotdb** |
+   | Database id | **Use existing - iotdb** |
    | Container id | **iotcollection** |
    | Partition Key | **/pk/timestamp/deviceid** |
 
