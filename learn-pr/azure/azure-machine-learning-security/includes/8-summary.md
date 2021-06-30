@@ -10,5 +10,5 @@ Now that you've reviewed this module, you should be able to:
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-* [Azure Machine Learning role-based access control documentation](https://docs.microsoft.com/en-us/azure/role-based-access-control/)
+* [Azure Machine Learning role-based access control documentation](/azure/role-based-access-control/)
 
