@@ -16,7 +16,7 @@ abstract: |
   - Describe what Batch Transcription is
   - Define scenarios where Batch Transcription can be applied
 prerequisites: A basic familiarity with Azure
-iconUrl: /learn/achievements/intro-to-batch-stt.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
