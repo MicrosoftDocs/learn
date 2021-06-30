@@ -5,9 +5,9 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 6/24/2021
-  author: gerryaobrien
-  ms.author: gerryo
+  ms.date: 6/30/2021
+  author: ricmmartins
+  ms.author: ricmart
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 1
@@ -37,58 +37,36 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "Which of the following statements accurately describes Azure Advisor?"
     choices:
-    - content: ""
+    - content: "A service to scan your environment looking for security issues."
+      isCorrect: false
+      explanation: "Azure Advisor can help on security issues, but isn't limited to it."
+    - content: "Azure Advisor is like a cloud consultant working to you. It scans your Azure configuration and recommends changes to optimize deployments, increase security, and save you money."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "This is the statement which best describes Azure Advisor"
+    - content: "Azure Advisor is a monitoring tool for your environment."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Azure Advisor isn't a monitoring tool."
+  - content: "What are the pillars which Azure Advisor can provide recommendations?"
     choices:
-    - content: ""
+    - content: "Cost, Security, Reliability, Operational Excellence, Performance"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Those are the cloud pillars where you can receive recommendations from Azure Advisor."
+    - content: "Cost, Interoperability, Availability, Performance"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Those aren't the cloud pillars which Azure Advisor provide recommendations."
+    - content: "Security, Performance, Spend, Business Continuity, Availability"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Those aren't the cloud pillars which Azure Advisor provide recommendations."
+  - content: "Azure Advisor is capable to:"
     choices:
-    - content: ""
+    - content: "Provide recommendations over all Azure Services."
+      isCorrect: false
+      explanation: "Not. There is a specific list of Azure Services which Azure Advisor can provide recommendations."
+    - content: "Provide recommendations for on-premises resources."
+      isCorrect: false
+      explanation: "Not. Actually Azure Advisor provide recommendations for Azure services only."
+    - content: "Provide recommendations for a specific list of Azure Services regarding Costs, Security, Reliability, Operational Excellence and Performance."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Correct. This is exactly what Azure Advisor does."
