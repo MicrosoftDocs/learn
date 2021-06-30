@@ -26,6 +26,7 @@ In this task, you'll clone a GitHub repo containing a sample Next.js code and cu
 1. From the Bash session on the **Cloud Shell** pane, run the following command to clone the GitHub repo containing the sample Next.js application code that you'll use in this exercise:
 
     ```azurecli
+    cd ~/
     git clone https://github.com/MicrosoftDocs/mslearn-cloud-native-apps.git
     ```
 
