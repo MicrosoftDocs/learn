@@ -52,9 +52,9 @@ Now that you've made a change to the _main.bicep_ file, let's inspect the differ
 
 1. In Visual Studio Code, select **View** and then **SCM**, or press <kbd>Ctrl+Shift+G</kbd>.
 
-   The **Source Control** panel opens.
+   **Source Control** opens.
 
-1. Double-click the _main.bicep_ file in the **Source Control** panel.
+1. Double-click the _main.bicep_ file in **Source Control**.
 
    A file difference opens.
 
@@ -70,13 +70,13 @@ Now that you've made a change to the _main.bicep_ file, let's inspect the differ
 
 Now that you've reviewed the changes and are satisfied with it, you commit the update to the file. This time, you commit using Visual Studio Code.
 
-1. Open the **Source Control** panel.
+1. Open **Source Control**.
 
 1. Select each of the two changed files and stage them. You can click the plus (`+`) icon on each file, or you can right-click each file and select **Stage Changes**.
 
-   :::image type="content" source="../media/5-vscode-stage.png" alt-text="Screenshot of Visual Studio Code showing the Source Control panel, with the main.bicep context menu displayed, and the Stage Changes menu item highlighted." border="true":::
+   :::image type="content" source="../media/5-vscode-stage.png" alt-text="Screenshot of Visual Studio Code showing Source Control, with the main.bicep context menu displayed, and the Stage Changes menu item highlighted." border="true":::
 
-1. At the top of the the **Source Control** panel, enter a descriptive commit message, like:
+1. At the top of **Source Control**, enter a descriptive commit message, like:
 
    ```plaintext
    Add App Service module.
@@ -84,7 +84,7 @@ Now that you've reviewed the changes and are satisfied with it, you commit the u
 
 1. Select the checkmark icon above the commit message text box.
 
-   :::image type="content" source="../media/5-vscode-commit.png" alt-text="Screenshot of Visual Studio Code showing the Source Control panel, with the commit icon highlighted." border="true":::
+   :::image type="content" source="../media/5-vscode-commit.png" alt-text="Screenshot of Visual Studio Code showing Source Control, with the commit icon highlighted." border="true":::
 
    Visual Studio Code commits the two changes. Since you didn't explicitly stage them, Visual Studio Code automatically staged both files before it committed them.
 
@@ -109,13 +109,13 @@ Now that you've reviewed the changes and are satisfied with it, you commit the u
 
 You can also view the history of a single file, the state of the file from that commit, and the change that the commit applied.
 
-1. Open the **Explorer** pane in Visual Studio Code.
+1. Open **Explorer** in Visual Studio Code.
 
 1. Right-click the _main.bicep_ file and select **Open Timeline**.
 
-   :::image type="content" source="../media/5-vscode-timeline-menu.png" alt-text="Screenshot of Visual Studio Code showing the Explorer panel, with the right-click menu displayed for the main.bicep file. The Open Timeline menu item is highlighted." border="true":::
+   :::image type="content" source="../media/5-vscode-timeline-menu.png" alt-text="Screenshot of Visual Studio Code showing Explorer, with the right-click menu displayed for the main.bicep file. The Open Timeline menu item is highlighted." border="true":::
 
-   The timeline pane opens, showing both commits.
+   The timeline opens, showing both commits.
 
    :::image type="content" source="../media/5-vscode-timeline.png" alt-text="Screenshot of Visual Studio Code showing the timeline for the main.bicep file, with two commits listed." border="true":::
 

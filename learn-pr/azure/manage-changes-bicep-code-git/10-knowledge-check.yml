@@ -47,3 +47,15 @@ quiz:
     - content: Trunk-based development encourages you to use short-lived branches.
       isCorrect: true
       explanation: Correct. Trunk-based development encourages the use of short-lived branches.
+  - content: A colleague has created a repository on GitHub and has granted you access. You want to make a local copy of the repository so that you can add some Bicep files to it. Which of these commands should you run first?
+    choices:
+    - content: "`git clone`"
+      isCorrect: true
+      explanation: Correct. The `git clone` command enables you to make a local copy of a repository that's already been created.
+    - content: "`git pull`"
+      isCorrect: false
+      explanation: Incorrect. The `git pull` command retrieves the changes from a remote repository, but you have to set up your local repository first.
+    - content: "`git remote upstream add`"
+      isCorrect: false
+      explanation: Incorrect. Since you're making a copy of a repository that's already on GitHub, you should use the `git clone` command.
+  

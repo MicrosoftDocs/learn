@@ -155,15 +155,44 @@ During the process, you'll:
 
 ::: zone-end
 
+## Add a README file
+
+Now that your repository will be used by your colleagues, it's important to create a **README.md** file to help them understand what your repository is for and how they can get started.
+
+1. Open **Explorer** in Visual Studio Code.
+
+1. Add a new file at the root of your current folder structure, and name it **README.md**.
+
+1. Copy the following text into the file:
+
+   ```markdown
+   # Toy company's website
+
+   This repository contains the website for our toy company.
+
+   ## How to use
+   
+   The Azure infrastructure is defined using [Bicep](https://docs.microsoft.com/azure/azure-resource-manager/bicep/).
+
+   To deploy the website's Azure resources, use the **deploy/main.bicep** file.
+   ```
+
+   > [!NOTE]
+   > This is a placeholder README file, so it doesn't have a lot of useful content. When you work with your own Git repositories, create a README file that helps someone understand how to get started with your code. Think of it as a lightweight manual for your project.
+
+1. Save the file.
+
+1. Commit the file to your Git repository. You can choose whether you commit using the Git CLI or the Visual Studio Code **Source Control**.
+
 ## Push again by using Visual Studio Code
 
-You just pushed all of your changes, so there's no need to push again. However, it's good to see how you push changes by using Visual Studio Code, so here you push an empty set of changes.
+Now that you've committed a new file, you need to push your changes again so that the remote has the latest files. This time, you use Visual Studio Code to push to the remote.
 
-1. Open the **Source Control** panel in Visual Studio Code.
+1. Open **Source Control** in Visual Studio Code.
 
-1. Select the icon with three dots on the right side of the **Source Control** panel's toolbar, then select **Push**:
+1. Select the icon with three dots on the right side of the **Source Control** toolbar, then select **Push**:
 
-   :::image type="content" source="../media/9-vscode-push.png" alt-text="Screenshot of Visual Studio Code showing the Source Control panel's menu, with the Push menu item highlighted." border="true":::
+   :::image type="content" source="../media/9-vscode-push.png" alt-text="Screenshot of Visual Studio Code showing the Source Control menu, with the Push menu item highlighted." border="true":::
 
    Notice that you're not prompted to sign in again. Your Git credentials are shared between the Git CLI and Visual Studio Code.
 

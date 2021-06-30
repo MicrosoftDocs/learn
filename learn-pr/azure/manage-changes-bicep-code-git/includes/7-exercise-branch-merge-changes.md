@@ -65,7 +65,7 @@ Now that you've created a branch, you will add a new Bicep module for your websi
 
 ## Review the difference and commit the changes
 
-1. Using the **Source Control** pane in Visual Studio Code, look at the difference for both files.
+1. Using **Source Control** in Visual Studio Code, look at the difference for both files.
 
    Notice you see the changed lines highlighted in the _main.bicep_ file.
 
@@ -90,7 +90,7 @@ Now that you've made the change on your branch, you can verify that the change i
 
         A list of branches appear. Select the **main** branch.
 
-1. In the Visual Studio Code **Explorer** pane, open the _main.bicep_ file.
+1. In the Visual Studio Code **Explorer**, open the _main.bicep_ file.
 
    Notice that none of the Cosmos DB changes you made are included. Now that you've switched to the **main** branch, the database module isn't there. Don't worry - they are safely stored on your branch.
 
@@ -106,7 +106,7 @@ Your website team has come back to you and told you they're ready to launch the 
    git merge add-database
    ```
 
-1. In the Visual Studio Code **Explorer** pane, open the _main.bicep_ file.
+1. In the Visual Studio Code **Explorer**, open the _main.bicep_ file.
 
    Notice that the database module now appears in the file. You've now updated your known-good Bicep files, on your **main** branch, to include the change from your **add-database** branch.
 

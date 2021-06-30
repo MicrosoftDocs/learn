@@ -82,7 +82,7 @@ You need to run a few commands to configure Git so that it associates your name 
 
 ## Add a Bicep file
 
-1. Create a subfolder named _deploy_. You can do this using Visual Studio Code's **Explorer** panel, or you can use the following command in the Visual Studio Code terminal:
+1. Create a subfolder named _deploy_. You can do this using Visual Studio Code's **Explorer**, or you can use the following command in the Visual Studio Code terminal:
 
    ```bash
    mkdir deploy
@@ -150,9 +150,9 @@ Visual Studio Code shows the same information that the `git status` command prov
 
 1. In Visual Studio Code, select **View** and then **SCM**, or press <kbd>Ctrl+Shift+G</kbd>.
 
-   The **Source Control** panel opens.
+   **Source Control** opens.
 
-   :::image type="content" source="../media/3-vscode-source-control.png" alt-text="Screenshot of Visual Studio Code showing the Source Control panel, with one change on the icon badge, and the main.bicep file listed as a changed file." border="true":::
+   :::image type="content" source="../media/3-vscode-source-control.png" alt-text="Screenshot of Visual Studio Code showing Source Control, with one change on the icon badge, and the main.bicep file listed as a changed file." border="true":::
 
    Notice that Visual Studio Code shows that the _main.bicep_ file in the *deploy* folder has changed. Additionally, the **Source Control** icon has a badge showing the number `1`, which indicates there's one untracked file.
 

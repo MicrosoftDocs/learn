@@ -64,7 +64,7 @@ git commit --message "Add Cosmos DB account definition."
 > - _Remove storage account since it's been replaced by a Cosmos DB database._
 > - _Add Application Insights resource definition and integrate with function app._
 
-Visual Studio Code can commit to your Git repository too. When you use Visual Studio Code's Git integration, if you haven't already staged the files, Visual Studio Code asks if you want it to stage all of the changed files for you. You can even set this as the default behavior. Or, if you prefer, you can manually stage and unstage files using the **Source Control** panel.
+Visual Studio Code can commit to your Git repository too. When you use Visual Studio Code's Git integration, if you haven't already staged the files, Visual Studio Code asks if you want it to stage all of the changed files for you. You can even set this as the default behavior. Or, if you prefer, you can manually stage and unstage files using Visual Studio Code's **Source Control**.
 
 ## View a file's history
 
@@ -84,4 +84,4 @@ It's also common to view the commits to a specific file. You can specify the fil
 git log deploy/main.bicep
 ```
 
-The Git CLI and the `git log` command provide many arguments you can use to view information about your commits and files. However, it's often easier to use Visual Studio Code to view the commit history for a file. In the **Explorer** pane in Visual Studio Code, you can right-click a file in your repository and select **View Timeline**. The **Timeline** pane opens, and shows a list of each commit that affected that file. When you click a commit, you see the exact changes to the file. You'll see how to use this in the next exercise.
+The Git CLI and the `git log` command provide many arguments you can use to view information about your commits and files. However, it's often easier to use Visual Studio Code to view the commit history for a file. In Visual Studio Code's **Explorer**, you can right-click a file in your repository and select **View Timeline**. The **Timeline** opens, and shows a list of each commit that affected that file. When you click a commit, you see the exact changes to the file. You'll see how to use this in the next exercise.
