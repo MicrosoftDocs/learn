@@ -6,11 +6,11 @@ Suppose you're responsible for deploying and configuring the Azure infrastructur
 
 ## What will we be doing?
 
-In this module, you'll create a Git repository and add some of your Bicep files to it. You'll explore some important Git features, like commits, branches, and merges, and see how they can help as you write your Bicep code.
+In this module, you'll create a Git repository and add some of your Bicep files to it. You'll explore some important Git features, like commits, branches, and merges, and see how they can help as you write your Bicep code. You'll also learn about GitHub and Azure Repos, and learn how publishing your Git repository to one of these services enables you to collaborate with your team.
 
 ## What is the main goal?
 
-By the end of this module, you'll have an understanding of what version control and Git can do to help you as you work with Bicep code. You'll be able to use the Visual Studio Code support for Git to initialize a local Git repository, commit files, create branches, and merge branches.
+By the end of this module, you'll have an understanding of what version control and Git can do to help you as you work with Bicep code. You'll be able to use the Visual Studio Code support for Git to initialize a local Git repository, commit files, create branches, and merge branches. Finally, you'll be able to publish a Git repository to GitHub or Azure Repos.
 
 ## Prerequisites
 

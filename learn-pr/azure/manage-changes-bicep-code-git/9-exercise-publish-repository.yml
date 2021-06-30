@@ -11,6 +11,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: repository-hosting-platform
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/9-exercise-publish-repository.md)]
