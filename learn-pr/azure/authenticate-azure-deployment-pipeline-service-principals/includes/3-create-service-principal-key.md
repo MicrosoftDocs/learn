@@ -130,7 +130,7 @@ $plaintextSecret = [System.Net.NetworkCredential]::new('', $newCredential.Secret
 
 ## Manage the lifecycle of your service principal
 
-It's important to consider the whole lifecycle of each service principal that you create. When you build a service principal for a pipeline, what will happen if the pipeline is eventually deleted or is no longer used? Service principals aren't removed automatically, so you need to ensure you plan how you audit your service principals.
+It's important to consider the whole lifecycle of each service principal that you create. When you build a service principal for a pipeline, what will happen if the pipeline is eventually deleted or is no longer used? Service principals aren't removed automatically, so you need to ensure you audit and remove old service principals. It's important to remove old service principals for the same reason you delete old user accounts: attackers might gain access to their keys, and it's best not to have credentials that aren't actively used.
 
 It's a good practice to document your service principals somewhere that you and your team can easily access. You should include the following information for each service principal:
 
