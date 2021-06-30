@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 sandbox: true
-notebook: /notebooks/01-numpy-and-pandas.ipynb
+notebook: /learn/modules/explore-analyze-data-with-python/3-exercise-explore-data/notebooks/01-numpy-and-pandas.ipynb
