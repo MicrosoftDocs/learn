@@ -127,3 +127,18 @@ $plaintextSecret = [System.Net.NetworkCredential]::new('', $newCredential.Secret
 
 > [!TIP]
 > A single service principal can have multiple keys. You can use this to safely update your application to use a new key while the old key is still valid, and then delete the old key when it's no longer in use. This avoids downtime due to key expiry.
+
+## Manage the lifecycle of your service principal
+
+It's important to consider the whole lifecycle of each service principal that you create. When you build a service principal for a pipeline, what will happen if the pipeline is eventually deleted or is no longer used? Service principals aren't removed automatically, so you need to ensure you plan how you audit your service principals.
+
+It's a good practice to document your service principals somewhere that you and your team can easily access. You should include the following information for each service principal:
+
+> [!div class="checklist"]
+> * Key identifying information, like its name and application ID.
+> * The purpose of the service principal.
+> * Who created it, who is responsible for managing it and its keys, and who to contact if there's a problem.
+> * The permissions it needs, and a clear justification for why it needs them.
+> * What its expected lifetime is.
+
+You should regularly audit your service principals to ensure they are still being used and that the permissions they've been assigned are still correct.
