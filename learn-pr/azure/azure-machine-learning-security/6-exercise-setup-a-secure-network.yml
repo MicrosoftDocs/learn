@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-machine-learning-security.exercise-setup-a-secure-network
-title: How Azure Machine Learning works
+title: Exercise - Setup a secure Azure Virtual Network
 metadata:
-  title: How Azure Machine Learning works
+  title: Exercise - Setup a secure Azure Virtual Network
   description: How Azure Machine Learning works
   ms.date: 03/14/2021
   author: tomreidnz

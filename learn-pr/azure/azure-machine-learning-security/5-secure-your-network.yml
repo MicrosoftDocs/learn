@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-machine-learning-security.secure-your-network
-title: When to use Azure Machine Learning
+title: Secure your Azure ML network
 metadata:
-  title: When to user Azure Machine Learning
+  title: Secure your Azure ML network
   description: When to use Azure Machine Learning
   ms.date: 03/14/2021
   author: tomreidnz

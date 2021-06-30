@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-machine-learning-security.exercise-setup-custom-roles
-title: How Azure Machine Learning works
+title: Exercise – Setup Azure ML with custom roles
 metadata:
-  title: How Azure Machine Learning works
+  title: Exercise – Setup Azure ML with custom roles
   description: How Azure Machine Learning works
   ms.date: 03/14/2021
   author: tomreidnz
