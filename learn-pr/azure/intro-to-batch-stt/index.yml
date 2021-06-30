@@ -2,14 +2,14 @@
 uid: learn.azure.intro-to-batch-stt
 metadata:
   title: Introduction to Batch Transcription
-  description: Batch Transcription provides your software with automated data identification and extraction from your documents. Using an SDK or REST, the AI-powered service decreases, or can completely eliminate, time spent on and errors in data entry, while also making it easier to utilize your data.
+  description: Batch transcription is an Azure cognitive service that enables you to transcribe audio asynchronously—in non-real-time—from a storage container. Batch transcription is ideal for transcribing large amounts of audio at once. Such as with recorded phone calls with customers to ensure regulations and compliance standards are being met or for transcribing media audio to create subtitles to increase accessibility.
   ms.date: 03/14/2021
   author: tomreidnz
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Batch Transcription 
-summary: Batch Transcription provides your software with automated data identification and extraction from your documents. Using an SDK or REST, the AI-powered service decreases, or can completely eliminate, time spent on and errors in data entry, while also making it easier to utilize your data.
+summary: Batch transcription is an Azure cognitive service that enables you to transcribe audio asynchronously—in non-real-time—from a storage container. Batch transcription is ideal for transcribing large amounts of audio at once. Such as with recorded phone calls with customers to ensure regulations and compliance standards are being met or for transcribing media audio to create subtitles to increase accessibility.
 abstract: |
   In this module, you will:
   - Assess the benefits of Batch Transcription
@@ -29,9 +29,11 @@ products:
 - azure
 units:
 - learn.azure.intro-to-batch-stt.introduction
-- learn.azure.intro-to-batch-stt.what-is-batch-stt
-- learn.azure.intro-to-batch-stt.how-batch-stt-works
-- learn.azure.intro-to-batch-stt.when-to-use-batch-stt
+- learn.azure.intro-to-batch-stt.what-is-batch-transcription
+- learn.azure.intro-to-batch-stt.exercise-transcribe-audio-files
+- learn.azure.intro-to-batch-stt.additional-options
+- learn.azure.intro-to-batch-stt.exercise-customize-batch-transcription
+- learn.azure.intro-to-batch-stt.use-cases
 - learn.azure.intro-to-batch-stt.knowledge-check
 - learn.azure.intro-to-batch-stt.summary
 badge:

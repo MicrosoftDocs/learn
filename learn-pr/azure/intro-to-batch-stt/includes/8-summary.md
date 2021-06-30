@@ -1,4 +1,4 @@
-In this module, you learned about Batch Transcription, a cognitive service available on Azure. You learned about the different types of forms that prebuilt models can analyze and extract data from, how Layout API can extract document structures, and how prebuilt models can extract data tailored specifically to your forms.
+In this module, you learned about Batch transcription, a cognitive service available on Azure. You learned about the different types of features available, how to use batch transcription, and how to create a custom model to use with batch transcription.
 
 Now that you've reviewed this module, you should be able to:
 

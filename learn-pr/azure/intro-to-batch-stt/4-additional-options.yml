@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-batch-stt.when-to-use-batch-stt
+uid: learn.azure.intro-to-batch-stt.additional-options
 title: When to use Batch Transcription
 metadata:
-  title: When to user Batch Transcription
+  title: When to use Batch Transcription
   description: When to use Batch Transcription
   ms.date: 03/14/2021
   author: tomreidnz
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-when-to-use-batch-stt.md)]
+  [!include[](includes/4-additional-options.md)]
