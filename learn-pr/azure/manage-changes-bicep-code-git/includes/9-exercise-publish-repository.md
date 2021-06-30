@@ -1,4 +1,4 @@
-At your toy company, the website's development team has asked to help to write the Bicep template. You told them you've been keeping the Bicep code in a repository, and they've asked you to publish the repository. In this exercise, you'll publish your Git repository so that so your colleagues can view the files and collaborate with 
+At your toy company, the website's development team has asked to help to write the Bicep template. You told them you've been keeping the Bicep code in a repository, and they've asked you to publish the repository. In this exercise, you'll publish your Git repository so that so your colleagues can view the files and collaborate with you.
 
 During the process, you'll: 
 
@@ -88,7 +88,13 @@ Keep your browser open. You'll check on the repository again later in this exerc
 
 ## Configure your local Git repository
 
-1. In the Visual Studio Code terminal, enter the following command to integrate your local repository with the remote repository that you just created. Make sure you replace `YOUR_REPOSITORY_URL` with the URL you copied in the previous step.
+1. Ensure you're on the **main** branch by entering the following command in the Visual Studio Code terminal:
+
+   ```bash
+   git checkout main
+   ```
+
+1. Enter the following command to integrate your local repository with the remote repository that you just created. Make sure you replace `YOUR_REPOSITORY_URL` with the URL that you saved earlier.
 
    ```bash
    git remote add origin YOUR_REPOSITORY_URL
@@ -223,7 +229,7 @@ Now that your repository will be used by your colleagues, it's important to crea
 
 1. Save the file.
 
-1. Commit the file to your local Git repository. You can choose whether you commit using the Git CLI or the Visual Studio Code **Source Control**.
+1. Stage and commit the file to your local Git repository. You can choose whether you commit using the Git CLI or the Visual Studio Code **Source Control**.
 
 ## Push again by using Visual Studio Code
 

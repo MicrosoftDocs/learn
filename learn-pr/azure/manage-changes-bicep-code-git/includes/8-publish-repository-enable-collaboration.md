@@ -16,7 +16,7 @@ In a team environment, everyone on the team maintains their own local Git reposi
 
 ## Local and remote repositories
 
-When you work with repositories hosted in GitHub or Azure DevOps, you configure your local Git repository to know about the remote repository. An online repository has a URL that Git can use to access it from your computer. Conventionally, the term _origin_ refers to the online repository that your local repository synchronizes with.
+When you work with repositories hosted in GitHub or Azure DevOps, you configure your local Git repository to know about the remote repository. An online repository has a URL that Git can use to access it from your computer. Conventionally, the term _origin_ refers to the remote repository that your local repository synchronizes with.
 
 You also need to set up _tracking branches_. This tells Git that a branch from your local repository represents the same branch as in your online repository. This is especially important for your **main** branch, since you want to keep that synchronized across all of your repositories. You can also enable tracking on other branches too.
 

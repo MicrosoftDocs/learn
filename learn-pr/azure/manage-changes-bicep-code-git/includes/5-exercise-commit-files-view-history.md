@@ -72,6 +72,10 @@ Now that you've reviewed the changes and are satisfied with it, you commit the u
 
 1. Open **Source Control**.
 
+   **Source Control** shows two changed files. If you don't see changed files, select the refresh button so Visual Studio Code scans for changes.
+
+   :::image type="content" source="../media/5-vscode-refresh.png" alt-text="Screenshot of Visual Studio Code showing Source Control, with the Refresh toolbar icon highlighted." border="true":::
+
 1. Select each of the two changed files and stage them. You can click the plus (`+`) icon on each file, or you can right-click each file and select **Stage Changes**.
 
    :::image type="content" source="../media/5-vscode-stage.png" alt-text="Screenshot of Visual Studio Code showing Source Control, with the main.bicep context menu displayed, and the Stage Changes menu item highlighted." border="true":::
