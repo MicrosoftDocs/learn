@@ -166,11 +166,10 @@ You just pushed all of your changes, so there's no need to push again. However, 
    :::image type="content" source="../media/9-vscode-push.png" alt-text="Screenshot of Visual Studio Code showing the Source Control panel's menu, with the Push menu item highlighted." border="true":::
 
    Notice that you're not prompted to sign in again. Your Git credentials are shared between the Git CLI and Visual Studio Code.
-   <!-- TODO check that applies to macOS -->
 
 ::: zone pivot="github"
 
-## Verify that the changes show in GitHub
+## Verify the changes in GitHub
 
 Now that you've pushed your changes to your remote repository, you can inspect the contents of the repository on GitHub.
 
@@ -186,7 +185,7 @@ Now that you've pushed your changes to your remote repository, you can inspect t
 
 ::: zone pivot="azure-repos"
 
-## Verify that the changes show in Azure Repos
+## Verify the changes in Azure Repos
 
 Now that you've pushed your changes to your remote repository, you can inspect the contents of the repository on Azure Repos.
 
