@@ -32,6 +32,7 @@ units:
 - learn.fsharp-introduction.set-up-development-environment
 - learn.fsharp-introduction.fsharp-interactive
 - learn.fsharp-introduction.write-your-first
+- learn.fsharp-introduction.build-your-first
 - learn.fsharp-introduction.knowledge-check
 - learn.fsharp-introduction.summary
 badge:
