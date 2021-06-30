@@ -8,7 +8,7 @@ Here, you will use the Azure Speech JavaScript SDK to integrate the Azure Speech
 
 Recall that your teammate has already set up a Babylon.js project with all of the necessary assets imported into the Babylon.js scene. Let's clone the repository that contains their work so far.
 
-1. Goto [this GitHub repository](https://github.com/JING1201/learn-magic-template) and select the **Code** dropdown.
+1. Go to [this GitHub repository](https://github.com/JING1201/learn-magic-template) and select the **Code** dropdown.
 
     (screenshot)
 1. Copy the **URL of the repository** under the **HTTPS** tab.
