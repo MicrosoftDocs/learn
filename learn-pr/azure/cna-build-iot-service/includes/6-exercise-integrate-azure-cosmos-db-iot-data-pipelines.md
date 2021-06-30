@@ -54,7 +54,7 @@ In this task, you'll create an Azure Function app that implements the HTTP webho
 
 1. Start a web browser, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true), and sign in to access the Azure subscription you'll be using in this module.
 1. Use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Function App**.
-1. On the **Function App** blade, select **+ Add**.
+1. On the **Function App** blade, select **+ Create**.
 1. On the **Basics** tab of the **Create Function App** blade, configure the following settings, and then select **Next: Hosting >**
 
    | Setting | Configuration |
@@ -77,7 +77,7 @@ In this task, you'll create an Azure Function app that implements the HTTP webho
    > Wait for the Azure Function app provisioning to complete. This might take about two minutes.
 
 1. Within the browser window displaying the Azure portal with the Azure Function app provisioning status blade, select **Go to resource**.
-1. On the Azure Function app blade, select **Functions**, and then select **+ Create**.
+1. On the Azure Function app blade, select **Functions**, and then select **+ Add**.
 1. On the **Add function** blade, specify the following settings, and then select **Add**.
 
    | Setting | Configuration |
@@ -104,11 +104,12 @@ In this task, you'll create an Azure Function app that implements the HTTP webho
    | Collection Name | Enter **iotcollection**. |
    | If true, creates the Cosmos DB database | Select **Yes**. |
    | Cosmos DB account connection | Select **New**. In the **New Cosmos DB connection** popup window, ensure that the **Azure Cosmos DB Account** option is selected. In the **Cosmos DB account connection** drop-down list, select the entry representing the Cosmos DB account you created in the previous exercise, and then select **OK** twice. |
+   | Partition key (optional) | Enter **/pk/timestamp/deviceid**. |
 
    :::image type="content" source="../media/6-azure-function-cosmos-db-output.png" alt-text="Screenshot of the Create Output blade of the HttpTrigger1 Integration blade of an Azure function in the Azure portal.":::
 
    > [!NOTE]
-   > Leave the **Partition key** entry blank. When choosing an optimal partition key, it's important to consider the usage patterns and the 20 GB logical partition size limit. In this case, you could, for example, create a synthetic partition key consisting of a combination of **deviceId** and **date**.
+   > When choosing an optimal partition key, it's important to consider the usage patterns and the 20 GB logical partition size limit. You could, for example, create a synthetic partition key consisting of a combination of **deviceId** and **date**.
 
 1. On the **HttpTrigger1 \| Integration** blade, in the vertical menu bar, in the **Developer** section, select **Code + Test**.
 1. On the **HttpTrigger1 \| Code + Test** blade, replace the existing code with the following content, and then select **Save** to save your changes:
@@ -117,6 +118,7 @@ In this task, you'll create an Azure Function app that implements the HTTP webho
    #r "Newtonsoft.Json"
 
    using Microsoft.Azure.WebJobs.Host;
+   using Newtonsoft.Json;
    using Newtonsoft.Json.Linq;
    using Microsoft.Extensions.Logging;
    using Microsoft.AspNetCore.Mvc;

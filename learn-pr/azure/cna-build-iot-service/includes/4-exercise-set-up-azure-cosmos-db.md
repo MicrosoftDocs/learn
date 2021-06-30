@@ -59,14 +59,14 @@ To perform this exercise, you need:
 
    | Setting | Configuration |
    | --- | --- |
-   | Database id | **iotdb** |
+   | Database id | **Use existing - iotdb** |
    | Database throughput (autoscale) | **Autoscale** |
    | Database Max RU/s | **4000** |
 
    :::image type="content" source="../media/4-azure-cosmos-db-new-database.png" alt-text="Screenshot of the New Database blade within the Data Explorer blade of an Azure Cosmos DB Account in the Azure portal.":::
 
 1. On the Azure Cosmos DB blade, in the vertical menu, select **Data Explorer**, then in the **DATA** section, select the ellipsis icon next to the newly created database **iotdb** and select **New Container**.
-1. On the **New Container**, specify the following settings (leave others with their default values) and select **OK**:
+1. On the **New Container** blade, specify the following settings (leave others with their default values) and select **OK**:
 
    | Setting | Configuration |
    | --- | --- |
