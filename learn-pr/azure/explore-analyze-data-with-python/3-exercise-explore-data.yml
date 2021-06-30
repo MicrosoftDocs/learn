@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 sandbox: true
-notebook: ./notebooks/01-numpy-and-pandas.ipynb
+notebook: /notebooks/01-numpy-and-pandas.ipynb
