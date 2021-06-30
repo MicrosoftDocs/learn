@@ -29,13 +29,13 @@ quiz:
     choices:
     - content: "Directory operations (listing folder content)"
       isCorrect: false
-      explanation: ""
+      explanation: "Directory operations aren't ideal workloads for Azure HPC Cache."
     - content: "Read operations (requesting file content)"
       isCorrect: true
-      explanation: ""
+      explanation: "Correct. Read operations are ideal workloads for Azure HPC Cache."
     - content: "Write operations (creating or modifying content)"
       isCorrect: false
-      explanation: ""
+      explanation: "Write operations aren't ideal workloads for Azure HPC Cache."
   - content: "Azure HPC Cache is designed to run best when the data is what size?"
     choices:
     - content: "Kilobyte files in a megabyte working set"
@@ -54,18 +54,18 @@ quiz:
       explanation: "Personal data files might or might not be private. Privacy status doesn't affect how the cache works."
     - content: "Personal data files aren't being accessed by several clients."
       isCorrect: true
-      explanation: "Yes. A cache is most efficient when it's being accessed by several clients at the same time."
+      explanation: "Correct. A cache is most efficient when it's being accessed by several clients at the same time."
     - content: "Personal data files aren't sensitive and don't need to be encrypted."
       isCorrect: false
       explanation: "All files are encrypted in Azure HPC Cache. File sensitivity and encryption don't make the cache a good fit or bad fit."
   - content: "Suppose a genetic research company is considering Azure HPC Cache for a workload that compares gigabyte DNA files to the same reference DNA file. The company uses hundreds of cloud clients running an NFS workload. What would make this good fit even better?"
     choices:
-    - content: "If the company installed a load balancer to distribute the workload."
+    - content: "If the company installed a load balancer to distribute the workload"
       isCorrect: false
       explanation: "A load balancer wouldn't affect Azure HPC Cache."
-    - content: "If the company installed a proxy server to handle network traffic."
+    - content: "If the company installed a proxy server to handle network traffic"
       isCorrect: false
       explanation: "Proxy servers wouldn't affect Azure HPC Cache."
-    - content: "If the company installed Azure ExpressRoute to maximize bandwidth."
+    - content: "If the company installed Azure ExpressRoute to maximize bandwidth"
       isCorrect: true
       explanation: "Yes. ExpressRoute will maximize bandwidth between the company's clients in the cloud and it's data on-premises."

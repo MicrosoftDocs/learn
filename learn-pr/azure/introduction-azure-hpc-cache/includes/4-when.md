@@ -20,7 +20,7 @@ HPC Cache wouldn't be the best fit if:
 
 - The dataset is constantly changing.
 - Only a few clients are accessing data on a non-NAS server.
-- A large set of the storage calls are write requests.
+- A large set of the storage calls is made up of write requests.
 - The file system isn't NFS.
 
 The following table lists criteria for using HPC Cache.

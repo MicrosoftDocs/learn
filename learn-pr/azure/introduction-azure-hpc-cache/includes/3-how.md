@@ -1,4 +1,4 @@
-Here, we'll discuss how Azure HPC Cache works. You'll learn how the different storage and network elements come together to provide a faster storage experience.
+Here, we'll discuss how Azure HPC Cache works. You'll learn how the different storage and network elements come together to provide a faster storage experience, such as:
 
 - Source data
 - Data access
