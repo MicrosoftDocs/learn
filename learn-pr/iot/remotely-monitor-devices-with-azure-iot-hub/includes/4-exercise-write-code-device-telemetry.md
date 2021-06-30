@@ -48,14 +48,14 @@ At the end of this unit, you'll be sending and receiving telemetry.
 
 1. Navigate to the **JavaScript** project types, and create a new **Blank Node.js Console Application** project, called "CheeseCave".
 
-    [![Screenshot showing how to create the blank Node.js Visual Studio project](../media/cheesecave-vs-project.png)](../media/cheesecave-vs-project.png#lightbox)
+    [![Screenshot showing how to create the blank Node.js Visual Studio project.](../media/cheesecave-vs-project.png)](../media/cheesecave-vs-project.png#lightbox)
 
 1. In the **Solution Explorer** tab, right click **npm**, and select **Install New npm Packages**. Install:
     * **azure-iot-device**
     * **azure-iot-device-mqtt**
     * **chalk**
 
-    [![Screenshot showing how to install npm packages into your Visual Studio project](../media/cheesecave-vs-npm.png)](../media/cheesecave-vs-npm.png#lightbox)
+    [![Screenshot showing how to install npm packages into your Visual Studio project.](../media/cheesecave-vs-npm.png)](../media/cheesecave-vs-npm.png#lightbox)
 
 1. Delete the default contents of the **app.js** file.
 
@@ -381,7 +381,7 @@ This section adds code to send telemetry from a simulated device. The device sen
 1. Run the app.
 1. You should quickly get a console screen, similar to the following image. Note the use of green text, to show things are working as they should! If you don't get a screen similar to this image, check your device connection string carefully.
 
-    [![Screenshot showing the temperature and humidity telemetry being sent](../media/cheesecave-telemetry.png)](../media/cheesecave-telemetry.png#lightbox)
+    [![Screenshot showing the temperature and humidity telemetry being sent.](../media/cheesecave-telemetry.png)](../media/cheesecave-telemetry.png#lightbox)
 
 1. Watch the telemetry for a short while, checking that is it giving temperatures and humidity in the expected ranges.
 1. You can leave this app running, as it's needed for the next section.
@@ -679,7 +679,7 @@ This test is important, checking whether your back-end app is picking up the tel
 1. Run the service app.
 1. A second console window should open up, and immediately respond if it successfully connects to IoT Hub. If not, carefully check your IoT Hub service connection string, noting that this string should be the _service_ connection string, and not any other.
 
-    [![Screenshot showing the temperature and humidity telemetry being received](../media/cheesecave-telemetry-received.png)](../media/cheesecave-telemetry-received.png#lightbox)
+    [![Screenshot showing the temperature and humidity telemetry being received.](../media/cheesecave-telemetry-received.png)](../media/cheesecave-telemetry-received.png#lightbox)
 
 1. Visually compare the telemetry sent and received. Is there an exact match? Is there much of a delay? If it looks good, close both the console windows for now.
 

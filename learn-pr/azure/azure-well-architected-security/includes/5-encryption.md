@@ -89,7 +89,7 @@ Disk Encryption for Windows IaaS and Linux VMs is in general availability in all
 
 In addition, if you use Azure Security Center, you're alerted if you have VMs that aren't encrypted. The alerts appear as High Severity, and the recommendation is to encrypt these VMs.
 
-![Screenshot showing the warning from Azure Security Center to encrypt the VM disks in the subscription](../media/5-security-center-disk-encryption.png)
+![Screenshot showing the warning from Azure Security Center to encrypt the VM disks in the subscription.](../media/5-security-center-disk-encryption.png)
 
 Your organization can apply Disk Encryption to its virtual machines to be sure that any data stored on VHDs is secured to organizational and compliance requirements. Because startup disks are also encrypted, the organization can control and audit usage.
 

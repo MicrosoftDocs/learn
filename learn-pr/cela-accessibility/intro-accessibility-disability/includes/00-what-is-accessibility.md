@@ -8,14 +8,14 @@ Accessibility is defined as a "word used to describe whether a product can be us
 
 Some people with disabilities may use assistive technology (AT) to access technology or perform tasks. AT is any item, piece of equipment, software program, or product that is used to increase, maintain, or improve the functional capabilities of people with disabilities (ATIA)*. There is a wide variety of AT products and applications that enable people improve their ability to access technology.
 
-For example, someone with low vision may use Magnifier in Windows 10 to navigate a web page or read a document. With the keyboard shortcut, **Windows logo key** ![Windows logo Key](../media/windows-logo.png) + **Plus sign** (Figure 1), a person can quickly enlarge text and images to view the content. A person with low vision can also use Speech Recognition (Figure 2) to navigate on a computer to complete tasks with voice commands, such as opening and closing apps.
+For example, someone with low vision may use Magnifier in Windows 10 to navigate a web page or read a document. With the keyboard shortcut, **Windows logo key** ![Windows logo Key.](../media/windows-logo.png) + **Plus sign** (Figure 1), a person can quickly enlarge text and images to view the content. A person with low vision can also use Speech Recognition (Figure 2) to navigate on a computer to complete tasks with voice commands, such as opening and closing apps.
 
 \*[Assistive Technology Industry Association](https://www.atia.org/at-resources/what-is-at/#what-is-assistive-technology) (ATIA)
 
-:::image type="content" source="../media/WindowsMagnifier.png" alt-text="Screenshot showing Magnifier app in Windows 10":::
+:::image type="content" source="../media/WindowsMagnifier.png" alt-text="Screenshot showing Magnifier app in Windows 10.":::
 Figure 1. Magnifier in Windows 10
 
-:::image type="content" source="../media/WindowsSetUpMicrophone.png" alt-text="Screenshot of how to configure speech recognition for Windows 10":::
+:::image type="content" source="../media/WindowsSetUpMicrophone.png" alt-text="Screenshot of how to configure speech recognition for Windows 10.":::
 Figure 2. Speech recognition in Windows 10
 
 1. Open settings

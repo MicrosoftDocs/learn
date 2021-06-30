@@ -18,17 +18,17 @@ For this exercise, we will be using the FastPass tool.
 
 1. Open the Launch Pad for Accessibility Insights for Web by clicking on the extension toolbar button in the browser. You can also open  or by using the keyboard shortcuts Ctrl+Shift+K (⌘+Shift+K for macOS)
 
-   :::image type="content" source="../media/launch-pad.png" alt-text="Accessibility Insights for Web Launch Pad":::
+   :::image type="content" source="../media/launch-pad.png" alt-text="Accessibility Insights for Web Launch Pad.":::
 
 1. Click on the **FastPass** link. A second window will open, which will list the accessibility issues that FastPass has detected using automated checks.
 
-    :::image type="content" source="../media/automated-checks-first-run.png" alt-text="Accessibility Insights for Web Fast Pass":::
+    :::image type="content" source="../media/automated-checks-first-run.png" alt-text="Accessibility Insights for Web Fast Pass.":::
 
    Automated Checks have detected many errors. We're going to focus on the form in this exercise.
 
 1. There are two different ways to interact with the error message - we can use the list in the FastPass tool, or we can click on the error messages in the web page. In this case, the FastPass tool lists errors across the entire page, which can be a little overwhelming when we want to focus on the form. We'll use the in-page error message for now. Click on the exclamation point to the right of the *First Name* label.
 
-    :::image type="content" source="../media/first-name-error-icon.png" alt-text="Error icon displayed for First Name label":::
+    :::image type="content" source="../media/first-name-error-icon.png" alt-text="Error icon displayed for First Name label.":::
 
    This shows that this label has low contrast, and also brings to our attention the fact that we're using color coding to indicate required fields in this form. By clicking on the error icons for the other labels, we can see that they all have low contrast. Let's look at the HTML for the the First Name section of the form to understand the color contrast issue:
 
@@ -58,7 +58,7 @@ For this exercise, we will be using the FastPass tool.
 
 1. Run the application again, then launch the *FastPass* as before. We can see that the error for the *First Name* label has been cleared.
 
-    :::image type="content" source="../media/first-name-fixed.png" alt-text="Accessibility Insights showing First Name label has been fixed":::
+    :::image type="content" source="../media/first-name-fixed.png" alt-text="Accessibility Insights showing First Name label has been fixed.":::
 
     Great! That wasn't too hard, and now that we know the fix we can do the same thing for the rest of the labels, too. 
 
@@ -133,7 +133,7 @@ For this exercise, we will be using the FastPass tool.
 
 1. We're now ready to fix up the form element. Clicking on the error indication for the *First Name* field shows that there are two errors. The first error indicates that the form `<input>` tag does not have a unique attribute. This is a problem, since HTML IDs are always assumed to be unique, and assistive technologies will often only act on the first element.
 
-   :::image type="content" source="../media/id-attribute-required.png" alt-text="Error message showing a unique ID attribute is required for each input":::
+   :::image type="content" source="../media/id-attribute-required.png" alt-text="Error message showing a unique ID attribute is required for each input.":::
 
    Looking at the source code, we can see that we used `Name` as the ID for both the *First Name* and *Last Name* fields:
 
@@ -171,7 +171,7 @@ For this exercise, we will be using the FastPass tool.
 
 1. Run the application and check **FastPass** again. Clicking on the error indication for each of the input fields shows that we're getting close now, each has the same error message: each form field should have a label.
 
-    :::image type="content" source="../media/label-error-message.png" alt-text="Error message showing each form element should have an associated label":::
+    :::image type="content" source="../media/label-error-message.png" alt-text="Error message showing each form element should have an associated label.":::
 
 1. Update the *First Name* text to use a `<label>` tag as shown:
 
@@ -322,4 +322,4 @@ We've completed all of our required fixes, but there's one more quick improvemen
 
 1. Run the application and check with **FastPass**. You'll see that we've improved the experience for all users while fixing our accessibility issues. The new form shows no errors in **FastPass**, and includes browser-native input controls with validation and required field checking with no another code.
 
-    :::image type="content" source="../media/completed-form.png" alt-text="Completed form showing various input types and automatic validation":::
+    :::image type="content" source="../media/completed-form.png" alt-text="Completed form showing various input types and automatic validation.":::

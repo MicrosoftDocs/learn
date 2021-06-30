@@ -17,4 +17,4 @@ Follow these steps to change default network access in the Azure portal.
 
 1. To apply your changes, select **Save**.
 
-![Screenshot showing the firewall options for storage accounts](../media/5-firewall.png)
+![Screenshot showing the firewall options for storage accounts.](../media/5-firewall.png)

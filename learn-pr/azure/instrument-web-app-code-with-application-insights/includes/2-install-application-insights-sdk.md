@@ -12,7 +12,7 @@ The SDK sends this telemetry data to an Application Insights resource in Azure. 
 
 Use of the SDK is not limited to web applications. You can instrument any kind of service or component for which you want to record telemetry, though most of the data that the SDK can record automatically is specific to web apps. And the SDK isn't limited to applications that are deployed to Azure.
 
-![Application Insights architecture](../media/2-app-insights-architecture.png)
+![Application Insights architecture.](../media/2-app-insights-architecture.png)
 
 ## Why install the SDK?
 

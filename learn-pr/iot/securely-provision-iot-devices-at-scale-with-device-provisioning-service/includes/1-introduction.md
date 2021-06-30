@@ -30,13 +30,13 @@ Suppose you're the manager of the cheese cave maturing process. Your first chees
 
 If your cheese business carries on growing, you're going to need solutions that scale smoothly and effortlessly.
 
-[![Conceptual art, showing the business of agriculture](../media/iot-hub-provisioning-art.png)](../media/iot-hub-provisioning-art.png#lightbox)
+[![Conceptual art, showing the business of agriculture.](../media/iot-hub-provisioning-art.png)](../media/iot-hub-provisioning-art.png#lightbox)
 
 You decide on a single Azure IoT Hub to process the telemetry from all 30 sensors. You decide that commercial competition requires that your system is secure. You must be certain of each device before accepting its input. You decide to investigate Azure DPS as your security service.
 
 Cheese making is a competitive business, and you want to keep your secrets well wrapped. And maybe your cheese too.
 
-[![Photograph of mature blue cheese](../media/cheese-rect4.png)](../media/cheese-rect4.png#lightbox)
+[![Photograph of mature blue cheese.](../media/cheese-rect4.png)](../media/cheese-rect4.png#lightbox)
 
 ### The first step
 

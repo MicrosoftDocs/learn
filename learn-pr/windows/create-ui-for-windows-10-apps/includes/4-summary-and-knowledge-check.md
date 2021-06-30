@@ -1,4 +1,4 @@
-![Application](../media/tech-all.png)
+![Application.](../media/tech-all.png)
 
 In this module, you learned a lot about how to build a user interface in UWP and WPF applications. You use these foundational concepts throughout almost every Windows app you make:
 

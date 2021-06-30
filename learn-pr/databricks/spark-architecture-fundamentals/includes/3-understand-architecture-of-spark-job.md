@@ -4,7 +4,7 @@ Before we break down these components in detail, let us summarize the fundamenta
 
 ## The cluster: Drivers, executors, slots & tasks
 
-![Spark Physical Cluster, slots](../media/spark-cluster-slots.png)
+![Spark Physical Cluster, slots.](../media/spark-cluster-slots.png)
 
 - The **Driver** is the JVM in which our application runs.
 - The secret to Spark's awesome performance is parallelism.
@@ -15,7 +15,7 @@ Before we break down these components in detail, let us summarize the fundamenta
   - The second level of parallelization is the **Slot** - the number of which is determined by the number of cores and CPUs of each node.
 - Each **Executor** has a number of **Slots** to which parallelized **Tasks** can be assigned to it by the **Driver**.
 
-![Spark Physical Cluster, tasks](../media/spark-cluster-tasks.png)
+![Spark Physical Cluster, tasks.](../media/spark-cluster-tasks.png)
 
 - The JVM is naturally multithreaded, but a single JVM, such as our **Driver**, has a finite upper limit.
 - By creating **Tasks**, the **Driver** can assign units of work to **Slots** for parallel execution.

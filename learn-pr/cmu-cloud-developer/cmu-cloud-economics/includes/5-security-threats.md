@@ -8,13 +8,13 @@ They also generally provide an accessible interface to modify security settings,
 
 Let us look at the cloud from the point of view of a traditional enterprise that uses in-house IT infrastructure. Enterprises find that they lose control as a function of asset ownership as they move away from traditional servers toward private clouds and then up the stack from IaaS to SaaS (Figure 11). In all three service models, the cloud vendor has full ownership of the underlying infrastructure (networks, storage, and hosts). In PaaS, the service provider may additionally claim partial ownership of the application infrastructure. Finally, in the SaaS model, the application infrastructure is fully owned by the service provider. 
 
-![Enterprises lose control as you move up public cloud stack](../media/security-1.jpg)
+![Enterprises lose control as you move up public cloud stack.](../media/security-1.jpg)
 
 _Figure 11: Enterprises lose control as you move up the public cloud stack_
 
 In all three models, however, the enterprise has full ownership of all its data. Unfortunately, it does not have full control over this data, as it is stored outside the network perimeter. This lack of control over sensitive data storage and transfer is one of the leading inhibitors to large-scale cloud adoption. Two-thirds of potential adopters have placed "data security and privacy" as the biggest risk in cloud computing. 
 
-![Security concerns are biggest barrier to large-scale cloud adoption](../media/security-2.jpg)
+![Security concerns are biggest barrier to large-scale cloud adoption.](../media/security-2.jpg)
 
 _Figure 12: Security concerns are biggest barrier to large-scale cloud adoption_
 

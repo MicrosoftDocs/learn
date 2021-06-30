@@ -24,7 +24,7 @@ In Azure Storage accounts, shared keys are called *storage account keys*. Azure 
 
 You'll find the storage account keys in the Azure portal view of the storage account. Just select **Settings** > **Access keys**. 
 
-![Screenshot showing the access keys in the Azure portal](../media/3-storage-keys.png)
+![Screenshot showing the access keys in the Azure portal.](../media/3-storage-keys.png)
 
 ## Protect shared keys
 

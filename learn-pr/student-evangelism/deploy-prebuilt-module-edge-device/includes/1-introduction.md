@@ -2,7 +2,7 @@ In the development phase of an IoT project, the continuous streams of data typic
 
 Suppose you're a developer who is deploying IoT applications for a factory automation application. You want to capture data about the machines running on the factory floor, such as the server room or the wind turbine. But you also want to capture data about the environment around the machines, like the ambient temperature. It isn't easy to acquire and visualize this data from the factory floor before the application goes live. Hence, you need a way to simulate data that mimics your scenarios to test your application.
 
-![An illustration showing the flow for deploying prebuilt module to the Edge device](../media/deploy-prebuilt-module.png)
+![An illustration showing the flow for deploying prebuilt module to the Edge device.](../media/deploy-prebuilt-module.png)
 
 We explore the following engineering-led themes:
 

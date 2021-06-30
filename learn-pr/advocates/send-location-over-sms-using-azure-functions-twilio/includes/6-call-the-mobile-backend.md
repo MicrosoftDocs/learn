@@ -145,7 +145,7 @@ namespace ImHere
 
 1. Set the UWP app as the startup app and run it. Click the **Send Location** button. You'll see output in the Functions runtime console window showing the function being called, and the logging showing the generated URL.
 
-    ![Output of the function being called](../media/6-function-called.png)
+    ![Output of the function being called.](../media/6-function-called.png)
 
 1. To test the URL generation, paste it from the console into a browser. It should show your current location.
 
