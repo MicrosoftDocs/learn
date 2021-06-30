@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure.azure-machine-learning-security
+metadata:
+  title: Introduction to Azure Machine Learning Security
+  description: Azure Machine Learning provides your software with automated data identification and extraction from your documents. Using an SDK or REST, the AI-powered service decreases, or can completely eliminate, time spent on and errors in data entry, while also making it easier to utilize your data.
+  ms.date: 03/14/2021
+  author: tomreidnz
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure Machine Learning Security
+summary: Azure Machine Learning provides your software with automated data identification and extraction from your documents. Using an SDK or REST, the AI-powered service decreases, or can completely eliminate, time spent on and errors in data entry, while also making it easier to utilize your data.
+abstract: |
+  In this module, you will:
+  - Assess the benefits of Azure Machine Learning
+  - Describe what Azure Machine Learning is
+  - Define scenarios where Azure Machine Learning can be applied
+prerequisites: A basic familiarity with Azure
+iconUrl: /learn/achievements/azure-machine-learning-security.svg
+levels:
+- beginner
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- solution-architect
+- student
+products:
+- azure
+units:
+- learn.azure.azure-machine-learning-security.introduction
+- learn.azure.azure-machine-learning-security.what-is-role-based-access-control
+- learn.azure.azure-machine-learning-security.exercise-setup-custom-roles
+- learn.azure.azure-machine-learning-security.azure-key-vault
+- learn.azure.azure-machine-learning-security.secure-your-network
+- learn.azure.azure-machine-learning-security.exercise-setup-a-secure-network
+- learn.azure.azure-machine-learning-security.knowledge-check
+- learn.azure.azure-machine-learning-security.summary
+badge:
+  uid: learn.azure.azure-machine-learning-security.badge
