@@ -26,7 +26,7 @@ const xr = await scene.createDefaultXRExperienceAsync({
 
 After WebXR is enabled using this function, if the Babylon.js application is opened on a browser of a device that supports WebXR in the specified mode (VR or AR), an XR button will appear in the bottom-right corner of the page:
 
-:::image type="content" source="../media/webxr-button.jpg" alt-text="An empty Babylon J S scene with an X R button in the bottom-right corner.":::
+:::image type="content" source="../media/webxr-button.jpg" alt-text="Screenshot of an empty Babylon J S scene with an X R button in the bottom-right corner.":::
 
 One can then enter the VR or AR session by pressing on that button.
 
