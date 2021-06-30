@@ -14,7 +14,7 @@ abstract: | # user input: learning objectives (https://review.docs.microsoft.com
   By the end of this module, you'll be able to:
     - # Understand what F# is 
     - # Write your first line of F#
-    - # Create your first F# application
+    - # Build your first F# console application
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
   - # .NET SDK
   - # Visual Studio Code
@@ -32,5 +32,7 @@ units:
 - learn.fsharp-introduction.set-up-development-environment
 - learn.fsharp-introduction.fsharp-interactive
 - learn.fsharp-introduction.write-your-first
+- learn.fsharp-introduction.knowledge-check
+- learn.fsharp-introduction.summary
 badge:
   uid: learn.fsharp-introduction.badge
