@@ -2,21 +2,20 @@
 uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout
 metadata:
   title: Measure and optimize model performance with ROC, AUC, and dropout
-  description: Skeleton module for Jason to review. A soft introduction to machine learning.
+  description: Receiver operator characteristic curves are a powerful way to assess and fine-tune trained classification models. We introduce and explain the utility of these curves through learning content and practical exercises.
   ms.date: 05/25/2021
   author: TomReidNZ
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Measure and optimize model performance with ROC, AUC, and dropout
-summary: Skeleton module for Jason to review. A soft introduction to machine learning.
+summary: Receiver operator characteristic curves are a powerful way to assess and fine-tune trained classification models. We introduce and explain the utility of these curves through learning content and practical exercises.
 abstract: | 
   In this module, you will:
-  - Explore how machine learning differs from traditional software
-  - Define about models, objectives, inputs, and outputs
-  - Create and test a machine learning model
-  - Load a model and use it with new data
-prerequisites: None
+  - Understand how to create ROC curves
+  - Explore how to assess and compare models using these curves
+  - Practice fine-tuning a model using characteristics plotted on ROC curves
+prerequisites: Familiarity with machine learning models
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
 - beginner
@@ -28,12 +27,10 @@ products:
 - azure
 units: 
 - learn.machinelearning.optimize-model-performance-roc-auc-dropout.introduction
-- learn.machinelearning.optimize-model-performance-roc-auc-dropout.creating-ml-models
-- learn.machinelearning.optimize-model-performance-roc-auc-dropout.exercise-create-ml-model
-- learn.machinelearning.optimize-model-performance-roc-auc-dropout.what-is-error
-- learn.machinelearning.optimize-model-performance-roc-auc-dropout.exercise-improve-models
-- learn.machinelearning.optimize-model-performance-roc-auc-dropout.testing-models
-- learn.machinelearning.optimize-model-performance-roc-auc-dropout.exercise-test-ml-models
+- learn.machinelearning.optimize-model-performance-roc-auc-dropout.receiver-operator-characteristic-curve
+- learn.machinelearning.optimize-model-performance-roc-auc-dropout.exercise-good-bad-curves
+- learn.machinelearning.optimize-model-performance-roc-auc-dropout.comparing-optimizing-curves
+- learn.machinelearning.optimize-model-performance-roc-auc-dropout.exercise-tuning-under-the-curve
 - learn.machinelearning.optimize-model-performance-roc-auc-dropout.knowledge-check
 - learn.machinelearning.optimize-model-performance-roc-auc-dropout.summary
 badge: 

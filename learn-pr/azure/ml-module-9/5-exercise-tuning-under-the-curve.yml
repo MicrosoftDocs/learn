@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout.exercise-improve-models
-title: Exercise - Visualize inputs and outputs
+uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout.exercise-tuning-under-the-curve
+title: Exercise - Tuning and area under the curve
 metadata:
-  title: Exercise - Visualize inputs and outputs
-  description: Description :)
+  title: Exercise - Tuning and area under the curve
+  description: Exercise unit about tuning under the curve in machine learning
   ms.date: 05/25/2021
   author: TomReidNZ
   ms.author: jasdeb

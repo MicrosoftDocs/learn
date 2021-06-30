@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout.exercise-create-ml-model
-title: Exercise - Create a machine learning model
+uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout.exercise-good-bad-curves
+title: Exercise - Good and Bad ROC curves
 metadata:
-  title: Exercise - Create a machine learning model
-  description: Learn how to build a simple model.
+  title: Exercise - Good and Bad ROC curves
+  description: Exercise about good and bad ROC curves in machine learning
   ms.date: 05/25/2021
   author: TomReidNZ
   ms.author: jasdeb
