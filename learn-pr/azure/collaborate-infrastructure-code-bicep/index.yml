@@ -48,8 +48,6 @@ units:
 - learn.azure.collaborate-infrastructure-code-bicep.exercise-modules
 - learn.azure.collaborate-infrastructure-code-bicep.comments-resource-metadata
 - learn.azure.collaborate-infrastructure-code-bicep.exercise-add-comments-resource-metadata
-- learn.azure.collaborate-infrastructure-code-bicep.share-infrastructure-code
-- learn.azure.collaborate-infrastructure-code-bicep.exercise-publish-refactored-code
 - learn.azure.collaborate-infrastructure-code-bicep.knowledge-check
 - learn.azure.collaborate-infrastructure-code-bicep.summary
 badge:
