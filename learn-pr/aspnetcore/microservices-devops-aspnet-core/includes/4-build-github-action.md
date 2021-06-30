@@ -69,7 +69,7 @@ Create a GitHub Action for the build with the following steps:
 
 1. Replace the default workflow file name of *:::no-loc text="main.yml":::* with *:::no-loc text="build.yml":::*:
 
-    :::image type="content" source="../media/4-build-github-action/action-file-name.png" alt-text="GitHub Action file name text box" border="true" lightbox="../media/4-build-github-action/action-file-name.png":::
+    :::image type="content" source="../media/4-build-github-action/action-file-name.png" alt-text="GitHub Action file name text box." border="true" lightbox="../media/4-build-github-action/action-file-name.png":::
 
 1. Select the **:::no-loc text="Start commit":::** button, select the **:::no-loc text="Commit directly to the `main` branch":::** radio button, and select **:::no-loc text="Commit new file":::** to save the workflow file.
 
@@ -80,7 +80,7 @@ You've finished creating the build workflow for your CI/CD pipeline. The Marketi
 1. Select the **:::no-loc text="Code":::** tab in your fork of the repository.
 1. Select the edit icon to open the *:::no-loc text="src/Services/Coupon/Coupon.API/Controllers/CouponController.cs":::* file in the editor:
 
-    :::image type="content" source="../media/4-build-github-action/edit-file-icon.png" alt-text="GitHub edit file icon" border="true" lightbox="../media/4-build-github-action/edit-file-icon.png":::
+    :::image type="content" source="../media/4-build-github-action/edit-file-icon.png" alt-text="GitHub edit file icon." border="true" lightbox="../media/4-build-github-action/edit-file-icon.png":::
 
 1. Replace the comment `// Add LogInformation call` with the following code:
 
@@ -100,7 +100,7 @@ View the real-time progress of the build by completing the following steps:
 1. Select the **:::no-loc text="Actions":::** tab.
 1. Select the most recent workflow run listed for the **:::no-loc text="eShop build":::** workflow. The commit message used in the previous step becomes the run's name.
 
-    :::image type="content" source="../media/4-build-github-action/eshop-build-workflow.png" alt-text="eShop build workflow listed on the workflows page" border="true" lightbox="../media/4-build-github-action/eshop-build-workflow.png":::
+    :::image type="content" source="../media/4-build-github-action/eshop-build-workflow.png" alt-text="eShop build workflow listed on the workflows page." border="true" lightbox="../media/4-build-github-action/eshop-build-workflow.png":::
 
 1. Select the **:::no-loc text="build-and-push-docker-image":::** task.
 1. Wait a few minutes. Notice that:
@@ -108,7 +108,7 @@ View the real-time progress of the build by completing the following steps:
     - The build fails on the `Run unit tests` step.
     - The `Build and push Docker image` step doesn't run because the previous step failed.
 
-    :::image type="content" source="../media/4-build-github-action/failed-unit-tests.png" alt-text="eShop build workflow listed on the workflows page" border="true" lightbox="../media/4-build-github-action/failed-unit-tests.png":::
+    :::image type="content" source="../media/4-build-github-action/failed-unit-tests.png" alt-text="eShop build workflow listed on the workflows page." border="true" lightbox="../media/4-build-github-action/failed-unit-tests.png":::
 
 ## Fix the build
 
@@ -125,7 +125,7 @@ View the real-time progress of the build by completing the following steps:
 
 When the build completes successfully, all steps are prefixed with a green check mark. Expand any task for the output generated during its execution. For example:
 
-:::image type="content" source="../media/4-build-github-action/build-workflow-success.png" alt-text="page showing output for a successful build" border="true" lightbox="../media/4-build-github-action/build-workflow-success.png":::
+:::image type="content" source="../media/4-build-github-action/build-workflow-success.png" alt-text="page showing output for a successful build." border="true" lightbox="../media/4-build-github-action/build-workflow-success.png":::
 
 > [!NOTE]
 > It's possible to move the `dotnet test` command to the *:::no-loc text="Dockerfile":::*. In this example, you're running `dotnet test` in the GitHub Action to:

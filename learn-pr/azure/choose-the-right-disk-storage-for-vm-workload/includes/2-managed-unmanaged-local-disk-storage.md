@@ -14,7 +14,7 @@ Each disk can take one of three roles in a virtual machine:
 
 You can administer OS disks and data disks on the **Disks** page of the virtual machine in the Azure portal.
 
-![Editing disks in the Azure portal](../media/2-edit-disks-portal.png)
+![Editing disks in the Azure portal.](../media/2-edit-disks-portal.png)
 
 ## Ephemeral OS disks
 
@@ -45,7 +45,7 @@ Because unmanaged disks don't support all of the scalability and management feat
 
 In the portal, to use unmanaged disks, expand the **Advanced** section on the **Disks** page of the **Create a virtual machine** wizard.
 
-![Using unmanaged disks in the Azure portal](../media/2-using-unmanaged-disks.png)
+![Using unmanaged disks in the Azure portal.](../media/2-using-unmanaged-disks.png)
 
 Originally, all virtual hard disks in Azure were unmanaged. If you're running an old virtual machine, it might have unmanaged disks. You can convert those unmanaged disks to managed disks by using the `ConvertTo-AzureRmVmManagedDisk` PowerShell cmdlet.
 

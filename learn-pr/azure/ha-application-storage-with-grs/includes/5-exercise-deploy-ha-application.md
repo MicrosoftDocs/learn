@@ -6,7 +6,7 @@ Before you commit to full-blown development of the healthcare application, you w
 
 In this exercise, you run an application that shows how you can use the Circuit Breaker pattern with an RA-GRS storage account. When a problem is detected, the application switches to the secondary storage account, and it fails back to the primary location when it's available again. The application uploads a file to Blob storage and then loops, repeatedly downloading the same file. If there's an error reading the storage account from the primary location, the application retries the operation. If the retry fails after a number of repeated attempts, the application switches to the storage account at the secondary location. The application reads the data from the secondary location until the number of reads has exceeded a specified threshold. The application then attempts to switch back to the primary location, but it returns to the secondary location if the primary location is still unavailable.
 
-![A scenario for configuring failover](../media/5-exercise-failover-visual.png)
+![A scenario for configuring failover.](../media/5-exercise-failover-visual.png)
 
 ## What is Fiddler?
 

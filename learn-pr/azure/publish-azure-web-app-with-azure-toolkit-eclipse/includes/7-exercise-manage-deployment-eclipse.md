@@ -15,12 +15,12 @@ Finally, you'll use Azure Explorer to delete the web app and remove it from Azur
 1. In the **Azure Explorer** window, expand **Web Apps**, right-click your web app, and then click **Stop**.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of the context menu for the web app in the **Azure Explorer** window](../media/7-web-app-stop.png)
+    > ![Screenshot of the context menu for the web app in the **Azure Explorer** window.](../media/7-web-app-stop.png)
 
 1. Right-click your web app again, and then click **Open in Browser**. The web browser should display an HTTP 403 message indicating that the web app isn't currently running.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of the web browser displaying the HTTP 403 message](../media/7-web-browser-403.png)
+    > ![Screenshot of the web browser displaying the HTTP 403 message.](../media/7-web-browser-403.png)
 
 1. Leave the web browser open and return to Eclipse. 
 
@@ -35,7 +35,7 @@ Finally, you'll use Azure Explorer to delete the web app and remove it from Azur
 1. In the **Azure Explorer** window, right-click the web app, and then click **Show Properties**. The properties window for the web app should appear:
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of the properties window for the web app](../media/7-web-app-properties.png)
+    > ![Screenshot of the properties window for the web app.](../media/7-web-app-properties.png)
 
 1. In the properties window, click **New** to add a new property key and value.
 
@@ -48,7 +48,7 @@ Finally, you'll use Azure Explorer to delete the web app and remove it from Azur
 1. Add another property named **Iterations**, with the value **10**.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of the properties window for the web app showing the new properties and values](../media/7-new-web-app-properties.png)
+    > ![Screenshot of the properties window for the web app showing the new properties and values.](../media/7-new-web-app-properties.png)
 
 1. Click **Save**.
 
@@ -123,4 +123,4 @@ Finally, you'll use Azure Explorer to delete the web app and remove it from Azur
 > Deleting the web app using the Azure Toolkit for Eclipse doesn't delete the app service plan, but you can remove the plan using the Azure portal. To do so, navigate to the appropriate resource group, select the app service plan, and then click **Delete**, as shown in the image below:
 >
 > [!div class="mx-imgBorder"]
-> ![Screenshot of the Azure portal. The user is deleting the app service plan](../media/7-delete-app-service-plan.png)
+> ![Screenshot of the Azure portal. The user is deleting the app service plan.](../media/7-delete-app-service-plan.png)

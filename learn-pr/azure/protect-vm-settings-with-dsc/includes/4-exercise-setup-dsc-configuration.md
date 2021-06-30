@@ -147,7 +147,7 @@ If you needed to add modules, in your automation account you would go to **Share
 
 1. Select the **Configurations** tab. Verify that the configuration **MyDscConfiguration** appears.
 
-    ![Screenshot of the Azure portal, showing the state configurations available on the State configuration (DSC) pane](../media/4-state-configurations.png)
+    ![Screenshot of the Azure portal, showing the state configurations available on the State configuration (DSC) pane.](../media/4-state-configurations.png)
 
 1. Select **MyDscConfiguration**.
   
@@ -157,7 +157,7 @@ If you needed to add modules, in your automation account you would go to **Share
 
 1. Wait for the compilation job to queue and run. The **Status** will change to **Completed**. You might need to refresh the screen to see the compilation status change.
 
-    ![Screenshot of the Azure portal, showing the state of the compilation job for the configuration](../media/4-compilation.png)
+    ![Screenshot of the Azure portal, showing the state of the compilation job for the configuration.](../media/4-compilation.png)
 
 1. Close the **MyDscConfiguration** pane, and return to the **State configuration (DSC)** pane.
 
@@ -165,7 +165,7 @@ If you needed to add modules, in your automation account you would go to **Share
 
 1. On the **State configuration (DSC)** pane for your *Automation Account*, select the **Nodes** tab, and in the top menu bar, select **Add**.
 
-    ![Screenshot of the Azure portal, showing the Nodes pane](../media/4-nodes.png)
+    ![Screenshot of the Azure portal, showing the Nodes pane.](../media/4-nodes.png)
 
     The **Virtual Machines** pane for your *Automation Account* appears. 
 
@@ -173,7 +173,7 @@ If you needed to add modules, in your automation account you would go to **Share
 
 1. In the top menu bar, select **Connect**.
 
-    ![Screenshot of the Azure portal, showing the Virtual Machines pane](../media/4-add-vm.png)
+    ![Screenshot of the Azure portal, showing the Virtual Machines pane.](../media/4-add-vm.png)
 
     The **Registration** pane appears.
 
@@ -199,7 +199,7 @@ If you needed to add modules, in your automation account you would go to **Share
 
 1. Verify that the node **myVM** appears in the list and that its status is **Compliant**.
 
-    ![Screenshot of the Azure portal, showing the Nodes pane with myVM registered](../media/4-registered.png)
+    ![Screenshot of the Azure portal, showing the Nodes pane with myVM registered.](../media/4-registered.png)
 
 ## Verify that IIS is installed on the VM
 

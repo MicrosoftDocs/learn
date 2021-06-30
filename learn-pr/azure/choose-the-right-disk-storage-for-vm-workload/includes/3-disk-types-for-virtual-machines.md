@@ -60,7 +60,7 @@ If you need higher performance than standard disks provide, or if you can't sust
 
 You can migrate a disk to a premium SSD at any time, if you've found that its performance isn't good enough.
 
-![Creating a premium SSD](../media/3-create-premium-ssd.png)
+![Creating a premium SSD.](../media/3-create-premium-ssd.png)
 
 ## Standard SSD
 
@@ -80,7 +80,7 @@ These performance figures aren't guaranteed but are achieved 99% of the time.
 
 Use standard SSDs when you have budgetary constraints and a workload that isn't disk intensive. For example, web servers, lightly used enterprise applications, and test servers can all run on standard SSDs.
 
-![Selecting a size for a standard SSD](../media/3-select-standard-ssd-size.png)
+![Selecting a size for a standard SSD.](../media/3-select-standard-ssd-size.png)
 
 ## Standard HDD
 

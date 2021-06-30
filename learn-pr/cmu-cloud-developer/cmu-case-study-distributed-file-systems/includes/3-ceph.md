@@ -12,13 +12,13 @@ Ceph is designed to be accessible through 3 different abstractions, as shown in 
 
 The **Ceph storage cluster** is a distributed object store. Layered on top of the storage cluster are different client-facing storage services. The **Ceph object gateway** service allows for clients to access a Ceph storage cluster using a REST-based HTTP interface that is currently compatible with Amazon's S3 and Openstack's Swift protocols. The **Ceph block device** service allows for clients to access the storage cluster as block devices, which can be formatted with a local file system and mounted in an operating system, or used as a virtual disk to operate virtual machines in Xen, KVM, VMWare or QEMU. Finally, the **Ceph file system** (Ceph FS) provides the file and directory abstraction over the entire storage cluster as a POSIX-compliant file system.
 
-![Ceph ecosystem](../media/ceph.png)
+![Ceph ecosystem.](../media/ceph.png)
 
 _Figure 6: Ceph ecosystem_
 
 Taking a deeper look, the architecture of Ceph is illustrated below:
 
-![Ceph architecture](../media/ceph-architecture.png)
+![Ceph architecture.](../media/ceph-architecture.png)
 
 _Figure 7: Ceph architecture_
 
@@ -64,7 +64,7 @@ When an object name is hashed to a placement group, CRUSH produces a list of exa
 
 In RADOS, an object is replicated among multiple OSDs that are associated with that object's placement group. This ensures that there are multiple copies of a particular object in case a certain OSD fails. RADOS has multiple available schemes in which the replication is actually performed; these are the **primary copy**, **chain**, and **splay** replication schemes (Figure 10). 
 
-![The replication modes supported in RADOS](../media/replication-ceph-1.png)
+![The replication modes supported in RADOS.](../media/replication-ceph-1.png)
 
 _Figure 10: The replication modes supported in RADOS._ (Source [2][^2])
 
@@ -76,7 +76,7 @@ _Figure 10: The replication modes supported in RADOS._ (Source [2][^2])
 
 In addition to these replication schemes, persistence in RADOS is handled by utilizing two separate acknowledgment messages (Figure 11). Each OSD has a buffer cache of the data served by it. Updates are written to the buffer cache and acknowledged back immediately through an **ack** message. This buffer cache is periodically flushed to disk, and when the last replica has committed the data to disk, a **commit** message is sent to the client, indicating that the data has been persisted. 
 
-![Ack versus commit messages in RADOS](../media/replication-ceph-2.png)
+![Ack versus commit messages in RADOS.](../media/replication-ceph-2.png)
 
 _Figure 11: Ack versus commit messages in RADOS_ (Source [2][^2])
 
@@ -101,7 +101,7 @@ As indicated in the previous figure, the Ceph FS is a layer of abstraction over 
 
 In addition to the cluster node roles of OSDs and Monitors, Ceph FS introduces **metadata (MDS)** servers (Figure 12). These servers store the file system metadata (the directory tree, as well as the access control lists and permissions, mode, ownership information, and timestamps for each file). 
 
-![Metadata servers in the Ceph file system](../media/ceph-file-system-architecture.png)
+![Metadata servers in the Ceph file system.](../media/ceph-file-system-architecture.png)
 
 _Figure 12: Metadata servers in the Ceph file system_
 
@@ -111,7 +111,7 @@ The metadata used by Ceph FS differs from the metadata used by local file system
 
 Initially a single metadata server will be responsible for the entire metadata for the cluster. As metadata servers are added to the cluster, the directory tree of the file system is partitioned and assigned to the resulting group of metadata servers (Figure 13). Each MDS measures the popularity of metadata within its directory hierarchy using counters. A weighted scheme<sup>[3][^3]</sup> is used to not only update the counter of a specific leaf node in the directory, but also for the ancestors of that directory element up to the root. Thus each MDS is able to keep a list of hotspots in the metadata that can be moved off to a new MDS when it's added to the cluster.
 
-![Dynamic subtree partitioning in the Ceph file system](../media/dynamic-subtree-partitioning-ceph.png)
+![Dynamic subtree partitioning in the Ceph file system.](../media/dynamic-subtree-partitioning-ceph.png)
 
 _Figure 13: Dynamic subtree partitioning in the Ceph file system_
 

@@ -119,7 +119,7 @@ Create an Azure Function App using the **Azure Functions** template.
 
 1. In Visual Studio, set a breakpoint on the line of code that retrieves the model from the query string.
 
-    ![Screenshot of Visual Studio. The user has set a breakpoint on the statement that reads the model from the query string](../media/3-visual-studio-breakpoint.png)
+    ![Screenshot of Visual Studio. The user has set a breakpoint on the statement that reads the model from the query string.](../media/3-visual-studio-breakpoint.png)
 
 1. Restart the web browser, and enter the URL without the query string again, `http://localhost:7071/api/WatchInfo`.
 

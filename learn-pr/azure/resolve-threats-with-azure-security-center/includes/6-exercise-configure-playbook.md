@@ -42,7 +42,7 @@ Workflow Automations are created directly in the Security Center portal.
 
     Accept the default values for the rest of the fields.
 
-    ![Screenshot showing the Logic Apps creation screen in the Azure portal](../media/6-create-new-logic-app.png)
+    ![Screenshot showing the Logic Apps creation screen in the Azure portal.](../media/6-create-new-logic-app.png)
 
 1. Select **Review + create** and then select **Create**. It takes a minute or two to create the app. You can monitor the creation through the alerts icon, or select **Refresh** to refresh the screen.
 
@@ -52,7 +52,7 @@ Workflow Automations are created directly in the Security Center portal.
 
 1. Select **Get a notification email when Security Center detects a threat** as shown below. You could also select **Blank Logic App** if you wanted to create some custom logic to run in response to an alert, or if you don't have an M365-based email account.
 
-    ![Screenshot showing the popular security options from Logic apps](../media/7-select-logic-app.png)
+    ![Screenshot showing the popular security options from Logic apps.](../media/7-select-logic-app.png)
 
 1. Select **Use this template** to create the app.
 
@@ -84,7 +84,7 @@ You normally run playbooks from the Security Center dashboard using an existing 
 
 1. Here, you would select an alert, and at the top of the details page, select **Run playbooks**.
 
-    ![Screenshot showing the Run playbooks option](../media/7-security-center-playbooks.png)
+    ![Screenshot showing the Run playbooks option.](../media/7-security-center-playbooks.png)
 
 In this case, in the Azure Sandbox, you likely don't have any alerts - so you can't execute the playbook this way. However, we can test it through the Logic Apps panel.
 
@@ -94,7 +94,7 @@ In this case, in the Azure Sandbox, you likely don't have any alerts - so you ca
 
 1. On the **Overview** pane, from the top menu bar, select **Run Trigger**.
 
-    ![Screenshot showing the Run Trigger option in Azure Logic Apps](../media/6-run-playbook-from-logic-apps.png)
+    ![Screenshot showing the Run Trigger option in Azure Logic Apps.](../media/6-run-playbook-from-logic-apps.png)
 
 1. A new entry will show up under the _Runs history_ tab in the Overview pane. You can select that entry to drill into details. For example, you can drill into the inputs and outputs of the run:
 

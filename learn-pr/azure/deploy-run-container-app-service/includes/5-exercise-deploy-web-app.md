@@ -71,7 +71,7 @@ You're now ready to create your web app.
 
 3. After the cold-start delay while your app's Docker image loads and starts, you'll see a page like the following image.
 
-    ![Screenshot of the sample Docker image](../media/5-sample-web-app-dotnet.png)
+    ![Screenshot of the sample Docker image.](../media/5-sample-web-app-dotnet.png)
 
 ::: zone-end
 
@@ -79,7 +79,7 @@ You're now ready to create your web app.
 
 3. After the cold-start delay while your app's Docker image loads and starts, you'll see a page like the following image.
 
-    ![Screenshot of the sample Welcome to Express](../media/5-sample-web-app-node.png)
+    ![Screenshot of the sample Welcome to Express.](../media/5-sample-web-app-node.png)
 
 ::: zone-end
 
