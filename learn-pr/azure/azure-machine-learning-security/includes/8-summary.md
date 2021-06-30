@@ -1,15 +1,14 @@
-In this module, you learned about Azure Machine Learning, a cognitive service available on Azure. You learned about the different types of forms that prebuilt models can analyze and extract data from, how Layout API can extract document structures, and how prebuilt models can extract data tailored specifically to your forms.
+In this module, you learned about Azure Machine Learning Role-Based Access Control, a security service available for Azure. You learned about the different types of roles that you can assign, what is and how to use key vaults, and how to secure your network.
 
 Now that you've reviewed this module, you should be able to:
 
-* Assess the benefits of Azure Machine Learning
-* Describe what Azure Machine Learning is
-* Define scenarios where Azure Machine Learning can be applied
+* Assess the benefits of Azure Machine Learning Role-Based Access Control
+* Describe what Azure Machine Learning Role-Based Access Control is
+* Define scenarios where Azure Machine Learning Role-Based Access Control can be applied
 
 ## Use these resources to discover more
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-* [Azure Machine Learning documentation](https://docs.microsoft.com/azure/cognitive-services/azure-ml/)
-* [Microsoft Learn - Analyze receipts with the Azure Machine Learning service](https://docs.microsoft.com/learn/modules/analyze-receipts-azure-ml/)
-* [Microsoft Learn - Implement knowledge mining with Azure Cognitive Search](https://docs.microsoft.com/learn/paths/implement-knowledge-mining-azure-cognitive-search/)
+* [Azure Machine Learning role-based access control documentation](https://docs.microsoft.com/en-us/azure/role-based-access-control/)
+
