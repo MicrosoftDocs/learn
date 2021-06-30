@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Control the flow of code using conditional statements
 durationInMinutes: 6
 sandbox: true
-notebook: /learn/modules/intermediate-python-nasa/notebooks/3-if-statements.ipynb
+notebook: https://docs.microsoft.com/learn/modules/intermediate-python-nasa/notebooks/3-if-statements.ipynb
