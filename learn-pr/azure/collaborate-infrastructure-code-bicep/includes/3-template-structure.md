@@ -38,7 +38,7 @@ This renames the identifier, and all of the references to it as well.
 
 ### Resource names
 
-TODO do this section
+TODO
 
 Almost every resource type has certain naming [rules and restrictions](/azure/azure-resource-manager/management/resource-name-rules).
 
@@ -97,7 +97,7 @@ Bicep allows you to explicitly specify a dependency by using the `dependsOn` pro
 
 Azure Resource Manager and Bicep have the concept of _child resources_, which only make sense to deploy within the context of their parent. For example, a SQL database is a child of a SQL server. There are several ways to define child resources, but in most cases, it's a good idea to use the `parent` property. This helps Bicep to understand the relationship, and it makes it clear to anyone else who reads the template too.
 
-## How are property values determined?
+## How do you set resource properties?
 
 You need to specify the values for resource properties in your Bicep files. It's a good idea to avoid hard-coding values directly, unless you know they won't change. This makes your Bicep template more dynamic and reusable. When you do hard-code values, it's good to make sure the values are understandable to others. For example, if you have to include a specific value for your resource to do what you need, consider creating a well-named variable and assigning the value using that. Or, consider adding a comment - you'll learn more about comments soon.
 
@@ -208,6 +208,8 @@ TODO END
 
 ## Use version control effectively
 
-Refactoring requires version control
-Commit often so you can go back to an older version if you want
-Remove commented-out code and rely on your version control system instead
+Version control systems like Git can help a lot when you're refactoring code.
+
+Since version control systems are designed to keep track of the changes to your files, you can use them to easily return to an older version of your code if you make a mistake. It's a good idea to commit your work often so that you can go back to the exact point in time that you need.
+
+Version control also helps you to avoid keeping old code in your Bicep files. Imagine that your Bicep code includes a resource definition that you don't need anymore. But, you might feel like there's a chance you could need the resource definition again in the future. It might be tempting to comment out the resource definition so you keep it in the file. This actually just clutters up your Bicep files, and makes it hard for anyone else to understand what's going on and the commented-out resources are there. It's also easy for someone to accidentally uncomment the definition in future, leading to unpredictable results. Instead, when you use a version control system, you can simply remove the old resource definition. If you need to see it again in the future, you can always go back to the history of the file.

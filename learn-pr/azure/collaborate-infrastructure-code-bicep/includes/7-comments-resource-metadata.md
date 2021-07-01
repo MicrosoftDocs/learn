@@ -216,3 +216,6 @@ resource sqlserver 'Microsoft.Sql/servers@2019-06-01-preview' = {
 ...
 
 ```
+
+
+TODO mention that you can add comments to param files too - use .jsonc file extension
