@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 sandbox: true
-notebook: /notebooks/03-tuning.ipynb
+notebook: notebooks/03-tuning.ipynb

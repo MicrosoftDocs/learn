@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 25
 sandbox: true
-notebook: /notebooks/01-deep-neural-networks.ipynb
+notebook: notebooks/01-deep-neural-networks.ipynb

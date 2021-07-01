@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 45
 sandbox: true
-notebook: /notebooks/02-convolutional-neural-networks.ipynb
+notebook: notebooks/02-convolutional-neural-networks.ipynb

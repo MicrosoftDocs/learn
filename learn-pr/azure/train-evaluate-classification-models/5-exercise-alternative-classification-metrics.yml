@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 sandbox: true
-notebook: /notebooks/02-metrics.ipynb
+notebook: notebooks/02-metrics.ipynb

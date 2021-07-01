@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 30
 sandbox: true
-notebook: /notebooks/03-transfer-learning.ipynb
+notebook: notebooks/03-transfer-learning.ipynb

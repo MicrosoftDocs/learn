@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 12
 sandbox: true
-notebook: /notebooks/03-real-world-data.ipynb
+notebook: notebooks/03-real-world-data.ipynb
