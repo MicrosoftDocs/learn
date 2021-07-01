@@ -40,7 +40,7 @@ quiz:
     - content: "How well the model works at its optimum decision threshold"
       isCorrect: false
       explanation: "Incorrect. This might be obtainable from the ROC plot but we can’t get this information from the AUC."
-    - content: "Which is the optimum decision threshold."
+    - content: "Which is the optimum decision threshold?"
       isCorrect: false
       explanation: "Incorrect. AUC is a summary metric that is too simplified to tell us this."
     - content: "It gives a summary of how well a model works across a variety of thresholds."
