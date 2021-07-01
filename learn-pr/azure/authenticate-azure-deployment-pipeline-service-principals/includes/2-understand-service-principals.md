@@ -2,23 +2,25 @@ Service principals provide a way to authenticate pipelines, applications, and so
 
 ## Why does a pipeline need to authenticate?
 
-When you deploy a Bicep template, you effectively ask Azure Resource Manager to create or modify your Azure resources. In the example scenario, you've created a Bicep template to deploy your toy company's website. The Bicep template declares resources including an App Service plan, an app, and an Application Insights instance. When you deploy the template, Resource Manager checks whether the resources exist. If they don't, it creates them. If any already exists, Resource Manager ensures its configuration matches the configuration you specify in the template.
+When you deploy a Bicep template, you effectively ask Azure Resource Manager to create or modify your Azure resources. In the example scenario, you've created a Bicep template to deploy your toy company's website. The Bicep template declares resources that include an Azure App Service plan, an app, and an Application Insights instance. 
 
-All of these operations require permission, since they access and modify your Azure resources. The specific permissions needed to deploy will depend on what the template contains. To deploy the example Bicep template for your toy company's website, you need to have the following permissions inside the resource group you're deploying to:
+When you deploy the template, Resource Manager checks whether the resources exist. If they don't, Resource Manager creates them. If any already exist, Resource Manager ensures that their configuration matches the configuration that you specify in the template.
+
+All of these operations require permission, because they access and modify your Azure resources. The specific permissions needed for deployment will depend on what the template contains. To deploy the example Bicep template for your toy company's website, you need to have the following permissions inside the resource group you're deploying to:
 
 - The ability to create deployments. Deployments are considered to be resources with a type of `Microsoft.Resources/deployments`.
 - The ability to create and modify App Service plans and apps.
 - The ability to create and modify Application Insights instances.
 
-Until now, you've probably deployed your Bicep templates yourself using the Azure CLI or Azure PowerShell. When you use these tools, you normally use your own user account and you authenticate using your browser. This is referred to as using your own _identity_. When you submit a deployment, Azure verifies that your identity has the necessary permissions to do what your Bicep template specifies.
+Until now, you've probably deployed your Bicep templates yourself by using the Azure CLI or Azure PowerShell. When you use these tools, you normally use your own user account and authenticate by using your browser. This is called using your own _identity_. When you submit a deployment, Azure verifies that your identity has the necessary permissions to do what your Bicep template specifies.
 
-Once you move to a pipeline, you need to use a different type of identity, since the pipeline runs deployments itself without your direct involvement.
+After you move to a pipeline, you need to use a different type of identity because the pipeline runs deployments itself without your direct involvement.
 
 ## Types of security principals
 
 Azure Active Directory (Azure AD) is the service that manages identities for Azure. Azure AD has multiple different types of identities, which are also called _security principals_:
 
-:::image type="content" source="../media/2-security-principals.png" alt-text="Diagram showing the four types of security principal: user, group, service principal, and managed identity." border="false":::
+:::image type="content" source="../media/2-security-principals.png" alt-text="Diagram that shows the four types of security principals: user, group, service principal, and managed identity." border="false":::
 
 - **A user** represents a human, who usually signs in interactively using a browser. Users often have additional security checks to perform when they sign in, such as multifactor authentication (MFA) and conditional access based on their location or network.
 - **A group** represents a collection of users. Groups don't authenticate directly, but they provide a convenient way to assign permissions to a set of users together.
@@ -33,12 +35,16 @@ In Azure AD, a service principal is identified by an _application ID_, which is 
 
 ### Managed identities
 
-A _managed identity_ is a special type of service principal. Like a normal service principal, it's designed for situations where a human isn't involved in the authentication process. But unlike a normal service principal, a managed identity doesn't require that you know or maintain its credentials. Instead, Azure manages the credentials automatically, and it provides the credentials to the resource that needs them. Managed identities are available for Azure-hosted resources like virtual machines and App Service apps. They're a great way for Azure resources to authenticate themselves for situations like automating your Azure management, connecting to databases, and reading secret data from Key Vault.
+A _managed identity_ is a special type of service principal. Like a normal service principal, it's designed for situations where a human isn't involved in the authentication process. But unlike a normal service principal, a managed identity doesn't require that you know or maintain its credentials. Instead, Azure manages the credentials automatically, and it provides the credentials to the resource that needs them. 
+
+Managed identities are available for Azure-hosted resources like virtual machines and App Service apps. They're a great way for Azure resources to authenticate themselves for situations like automating your Azure management, connecting to databases, and reading secret data from Azure Key Vault.
 
 When you work with pipelines, you usually can't use managed identities. This is because managed identities require that you own and manage the Azure resources. When you work with Azure Pipelines and GitHub Actions, you usually rely on shared infrastructure provided by Microsoft or GitHub.
 
 > [!NOTE]
-> There are some situations where pipelines can use managed identities. In Azure Pipelines, you can create a _self-hosted agent_ to run your pipeline's scripts and code using on your own Azure-based virtual machine. Since you own the virtual machine, you can assign it a managed identity and use it from your pipeline. However, most of the time, your pipelines run using a _hosted agent_, which is a server that is managed by Microsoft, or a _hosted runner_, which is managed by GitHub. Hosted agents and hosted runners aren't compatible with managed identities.
+> There are some situations where pipelines can use managed identities. In Azure Pipelines, you can create a _self-hosted agent_ to run your pipeline's scripts and code using on your own Azure-based virtual machine. Since you own the virtual machine, you can assign it a managed identity and use it from your pipeline. 
+>
+> However, most of the time, your pipelines run using a _hosted agent_, which is a server that is managed by Microsoft, or a _hosted runner_, which is managed by GitHub. Hosted agents and hosted runners aren't compatible with managed identities.
 
 > [!TIP]
 > In other parts of your solution, if you have a choice between using a managed identity or using a normal service principal, it's usually best to go with a managed identity since they are easier to work with and can be more secure.
@@ -49,7 +55,7 @@ You might wonder why you need to create this whole new type of object just to au
 
 User accounts aren't designed or intended for unattended use. The authentication process for a user account often checks that a human is the person who is attempting to sign in. Increasingly often, organizations employ additional security checks during authentication, including MFA, CAPTCHA checks, and inspecting the device and network the user is using so that they can verify the legitimacy of a request to sign in.
 
-Pipelines are designed to run your deployments even when nobody is sitting there actively running them - in fact, most of the benefits of pipelines come from the fact that they are completely automated and don't require human interaction. If you store your username and password in a pipeline and try to use it to sign in, it probably won't work. Even if it does seem to work, it could easily break in the future if Azure AD or your organizational administrator adds more security checks to your user authentication process.
+Pipelines are designed to run your deployments even when nobody is sitting there actively running them. In fact, most of the benefits of pipelines come from the fact that they are completely automated and don't require human interaction. If you store your username and password in a pipeline and try to use it to sign in, it probably won't work. Even if it does seem to work, it could easily break in the future if Azure AD or your organizational administrator adds more security checks to your user authentication process.
 
 > [!WARNING]
 > It's also a bad idea to save your username and password anywhere, since someone else might get access to it and then use it to impersonate you.
@@ -62,7 +68,9 @@ You might see a few different terms in use when you work with service principals
 
 Service principals are a feature of Azure AD. Azure AD is a global identity service. Many different companies use Azure AD, and each company is called a _tenant_.
 
-Azure AD also has a concept of an _application_, which represents a system, piece of software, process, or some other non-human agent. You can think of a deployment pipeline as an application too. In Azure AD, applications can do many different things that are beyond the scope of authentication and pipeline deployments. When you create a brand new application and tell Azure AD about it, you create an object called an _application registration_. An application registration represents the application in Azure AD.
+Azure AD also has a concept of an _application_, which represents a system, piece of software, process, or some other non-human agent. You can think of a deployment pipeline as an application too. 
+
+In Azure AD, applications can do many different things that are beyond the scope of authentication and pipeline deployments. When you create a brand new application and tell Azure AD about it, you create an object called an _application registration_. An application registration represents the application in Azure AD.
 
 Service principals and applications are tightly linked. Whenever an application registration is added to an Azure AD tenant, a _service principal_ object is created in that Azure AD tenant. When you look at a service principal in the Azure portal, you see a lot of other functionality and configuration that might not seem relevant. Much of this is because service principals are linked to applications.
 
