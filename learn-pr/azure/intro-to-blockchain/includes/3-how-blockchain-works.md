@@ -6,7 +6,7 @@ In our scenario, there are multiple companies. We could have a centralized datab
 
 Each node is connected to other nodes using a blockchain network. For example, Dalia Pelayo farms, the ice cream factory, and the ice cream shops each have a node they manage. Contoso West and Contoso East are separate partners that share the same parent company. Contoso has one node. There doesn't need to be a one to one relationship of nodes to companies.
 
-![Several participant blockchain nodes connected by a network](../media/peer-network.png)
+![Several participant blockchain nodes connected by a network.](../media/peer-network.png)
 
 ## Changing state
 
@@ -26,7 +26,7 @@ When sending a transaction, you send it to a blockchain transaction node. Let's 
 
 Blockchain sends the transaction throughout the blockchain network. Each node gets a copy of the transaction.
 
-![A transaction being copied to all participant blockchain node peers](../media/copy-transaction.png)
+![A transaction being copied to all participant blockchain node peers.](../media/copy-transaction.png)
 
 Each node processes the transaction but it still requires validation using a consensus mechanism. Consensus enables consistency and trust for the distributed ledger.
 
@@ -82,7 +82,7 @@ Smart contracts are deployed to the blockchain and are referenced by an address.
 
 When the responsibility of a product transfers to another party, a transaction is executed. Smart contract logic updates the state data. In our ice cream scenario, the ice cream factory shipping system creates a smart contract instance for a new ice cream shipment. The factory shipping system sends a transaction that calls the *TransferResponsibility* function to transfer the responsibility of the shipment to Contoso East shipping. The blockchain network sends the transaction to all nodes. The smart contract logic executes at each node.
 
-![A smart contract transaction is sent to one node and copied to the other peer nodes](../media/smart-contract-transaction.png)
+![A smart contract transaction is sent to one node and copied to the other peer nodes.](../media/smart-contract-transaction.png)
 
 What if during shipment the refrigeration unit fails and the temperature of the ice cream goes above freezing? An IoT temperature sensor monitors the ice cream temperature and sends transactions periodically. If the temperature is above freezing, the smart contract logic marks the shipment as non-compliant.
 

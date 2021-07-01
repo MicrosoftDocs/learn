@@ -20,10 +20,10 @@ By the end of this module, you'll be able to:
 
 ## Prerequisites
 
-You should have:
+You should be familiar with:
 
-- Familiarity with the basic Bicep template structure and syntax.
-- Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+- Creating and deploying basic Bicep templates.
+- Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
 To follow along with the exercises in the module, you'll need:
 

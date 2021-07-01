@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azure.deploy-elastic-azure-virtual-machines
+metadata:
+  moduleType: standard
+  title: Deploy Elastic on Azure virtual machines
+  description: "Deploy Elastic on Azure virtual machines (VMs) to get the benefits of Elasticsearch for your Linux workloads by following the instructions provided here."
+  ms.date: 6/15/2021
+  author: yenchiho
+  ms.author: yenchiho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy Elastic on Azure virtual machines
+summary: In this module, we will demonstrate how to deploy Elastic on Azure virtual machines.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Deploy Elastic on Azure VMs
+prerequisites: |
+  - An Azure subscription
+  - Basic understanding of Elasticserach, Kibana, Logstash, and Beats
+  - Familiarity with Azure virtual machines (VMs)
+  - Established Ubuntu username 
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - azure
+  - azure-virtual-machines
+  - azure-linux-vm
+units:
+- learn.azure.deploy-elastic-cloud-azure-virtual-machines.introduction
+- learn.azure.deploy-elastic-azure-virtual-machines.deploy
+- learn.azure.deploy-elastic-azure-virtual-machines.exercise-deploy
+- learn.azure.deploy-elastic-azure-virtual-machines.knowledge-check
+- learn.azure.deploy-elastic-azure-virtual-machines.summary
+badge:
+  uid: learn.azure.deploy-elastic-azure-virtual-machines.badge

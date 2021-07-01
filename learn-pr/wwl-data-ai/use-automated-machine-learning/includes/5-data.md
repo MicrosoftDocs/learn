@@ -22,6 +22,7 @@ In Azure Machine Learning, data for model training and other operations is usual
         * **Encoding**: UTF-8
         * **Column headers**: Only first file has headers 
         * **Skip rows**: None
+        * **Dataset contains multi-line data**: _Do not select_ 
     * **Schema**:
         * Include all columns other than **Path**
         * Review the automatically detected types

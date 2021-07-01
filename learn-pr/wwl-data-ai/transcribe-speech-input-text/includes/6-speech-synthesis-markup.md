@@ -35,4 +35,4 @@ To submit an SSML description to the Speech service, you can use the **SpeakSsml
 speechSynthesizer.SpeakSsmlAsync(ssml_string);
 ```
 
-For more information about SSML, see the [Speech SDK documentation](https://docs.microsoft.com/azure/cognitive-services/speech-service/speech-synthesis-markup).
+For more information about SSML, see the [Speech SDK documentation](/azure/cognitive-services/speech-service/speech-synthesis-markup).

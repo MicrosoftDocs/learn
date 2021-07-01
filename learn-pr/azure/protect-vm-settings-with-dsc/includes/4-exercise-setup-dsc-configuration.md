@@ -37,7 +37,7 @@ Start by deploying a new VM from a Windows Server 2019 image.
     }
     ```
 
-    Write down the `publicIpAddress` in this output. You'll need this address later to access the VM.
+    Copy the `publicIpAddress` in this output. You'll need this address later to access the VM.
 
 1. Run the following command in Cloud Shell to open your VM's port 80 for web traffic:
 
@@ -60,7 +60,7 @@ Start by deploying a new VM from a Windows Server 2019 image.
 
 1. In the "Automation" search results, select the **Automation** Azure service published by Microsoft.
 
-1. Select **Create** on the **Automation** item. The **Add Automation Account** pane appears.
+1. Select **Create**. The **Add Automation Account** pane appears.
 
 1. Enter the following values for each setting. The automation account must have a unique name. We suggest using something like *\[*your name or initials*\]-automation-account*. Use this name wherever you see *\[your-automation-account-name\]* in this exercise.
 
@@ -71,9 +71,11 @@ Start by deploying a new VM from a Windows Server 2019 image.
     | Resource group | Select existing resource group associated with Concierge Subscription |
     | Location | Default location |
 
-1. Ignore the message about permissions for the Run as account. You don't need it to be created as a Run As account in Azure Active Directory.
+1. Ignore the message about permissions for the **Create Azure Run As account**. You don't need it to be created as a Run As account in Azure Active Directory.
 
 1. Select **Create**. Wait until the automation account is created before you continue.
+
+1. Select **Go to resource** when deployment completes. Your **Automation Account** pane appears.
 
 ## Create a DSC configuration script
 
@@ -141,39 +143,41 @@ If you needed to add modules, in your automation account you would go to **Share
 
 1. Return to your Azure Automation account in the Azure portal.
 
-1. Under **Configuration Management**, select **State configuration (DSC)**.
+1. In the left menu pane, under **Configuration Management**, select **State configuration (DSC)**. The **State configuration (DSC)** pane appears.
 
-1. On the **State configuration (DSC)** pane, select **Configurations**.
+1. Select the **Configurations** tab. Verify that the configuration **MyDscConfiguration** appears.
 
-    Verify that the configuration **MyDscConfiguration** appears.
-
-    ![Screenshot of the Azure portal, showing the state configurations available on the State configuration (DSC) pane](../media/4-state-configurations.png)
+    ![Screenshot of the Azure portal, showing the state configurations available on the State configuration (DSC) pane.](../media/4-state-configurations.png)
 
 1. Select **MyDscConfiguration**.
   
-1. Select **Compile**.
+1. In the top menu bar, select **Compile**.
 
 1. In the **Compile DSC Configuration** message box, select **Yes**.
 
 1. Wait for the compilation job to queue and run. The **Status** will change to **Completed**. You might need to refresh the screen to see the compilation status change.
 
-    ![Screenshot of the Azure portal, showing the state of the compilation job for the configuration](../media/4-compilation.png)
+    ![Screenshot of the Azure portal, showing the state of the compilation job for the configuration.](../media/4-compilation.png)
 
 1. Close the **MyDscConfiguration** pane, and return to the **State configuration (DSC)** pane.
 
 ## Register the VM with your Azure Automation account
 
-1. On the **State configuration (DSC)** pane for the *Automation Account*, in the left menu pane, under **Configuration Management**, select **Nodes** > **Add**.
+1. On the **State configuration (DSC)** pane for your *Automation Account*, select the **Nodes** tab, and in the top menu bar, select **Add**.
 
-    ![Screenshot of the Azure portal, showing the Nodes pane](../media/4-nodes.png)
+    ![Screenshot of the Azure portal, showing the Nodes pane.](../media/4-nodes.png)
 
-1. On the **Virtual Machines** pane, select the VM you created at the start of this unit, **myVM**.
+    The **Virtual Machines** pane for your *Automation Account* appears. 
 
-1. On the **myVM** pane, select **Connect**.
+1. Select the VM you created at the start of this unit: **myVM**. The **myVM** pane appears.
 
-    ![Screenshot of the Azure portal, showing the Virtual Machines pane](../media/4-add-vm.png)
+1. In the top menu bar, select **Connect**.
 
-1. On the **Registration** pane, enter the following values for each setting, and then select **OK**.
+    ![Screenshot of the Azure portal, showing the Virtual Machines pane.](../media/4-add-vm.png)
+
+    The **Registration** pane appears.
+
+1. Enter the following values for each setting.
 
     | Setting  | Value  |
     |---|---|
@@ -185,15 +189,17 @@ If you needed to add modules, in your automation account you would go to **Share
     | Reboot Node if Needed | Select |
     | Action after Reboot | ContinueConfiguration |
 
+1. Select **OK**.
+
 1. Wait until the VM is connected, and then close the **myVM** pane. This process might take a few minutes.
 
 1. Close the **Virtual Machines** pane.
 
-1. On the **State configuration (DSC)** pane, select **Refresh**.
+1. Return to the **State configuration (DSC)** pane, and in the top menu bar, select **Refresh**.
 
 1. Verify that the node **myVM** appears in the list and that its status is **Compliant**.
 
-    ![Screenshot of the Azure portal, showing the Nodes pane with myVM registered](../media/4-registered.png)
+    ![Screenshot of the Azure portal, showing the Nodes pane with myVM registered.](../media/4-registered.png)
 
 ## Verify that IIS is installed on the VM
 

@@ -40,8 +40,8 @@ products:
 #- azure-devops
 - azure-spring-cloud
 - azure-web-apps
-#- msal-java
-#- azure-service-bus
+- msal-java
+- azure-service-bus
 modules:
 - learn.azure.intro-to-java-azure
 - learn.java-target-destinations
@@ -52,6 +52,7 @@ modules:
 - learn.azure.deploy-java-ee-app-to-app-service
 - learn.azure.deploy-java-azure-pipeline-terraform
 - learn.azure.cloud-scale-messaging-jms-service-bus
+- learn.azure.azure-java-app-enable-authentication-authorization
 - learn.accelerate-scale-spring-boot-application-azure-cache-redis
 - learn.cosmos-db-java-app
 - learn.azure.publish-azure-web-app-with-azure-toolkit-intellij

@@ -1,11 +1,13 @@
 Here is where we will take a look at how Azure Purview works, behind the scenes. You'll learn the core operational theory behind the functioning of Azure Purview for mapping and scanning your data sources. The key areas we will focus on include:
 
-* Sourcing data
-* Mapping data
-* Scanning data
-* Look at metadata
+* Loading Data in the Data Map
+* Browse and Search Information
 
-## Sourcing data
+## Loading data in the Data Map
+
+The Purview Data Map is a unified map of your data assets and their relationships that enable more effective governance for your data estate. It is a knowledge graph that is the underpinning for the Purview Data Catalog and all the features that it has to offer. It is scalable and robust to meet your enterprise compliance requirements.
+
+### Sourcing data
 Sourcing your data starts with a process where you register data sources. Azure Purview supports an array of data sources that span on-premises, multi-cloud, and software-as-a-service (SaaS) options. You register the various data sources so Azure Purview is aware of them. The data remains in its location and is not migrated to any other platform.
 
 Registering a data source is done from within the Azure portal. Once you have an Azure Purview service configured in Azure, you use Purview Studio to register your data sources.
@@ -18,6 +20,9 @@ Each type of data source you choose, will require specific information to comple
 
 Each data source will have specific requirements for authenticating and configuration, to permit scanning of the assets in that data source. If you have data stored in an Amazon S3 standard bucket, you will need to provide configuration for the connection. For this service, use Purview to provide a Microsoft account with secure access to AWS, where the Purview scanner will run. The Purview scanner uses this access to your Amazon S3 buckets to read your data, and then reports the scanning results, including only the metadata and classification, back to Azure. Use the Purview classification and labeling reports to analyze and review your data scan results.
 
+> [!NOTE]
+> Check the [Azure Purview connector for Amazon S3 documentation](https://docs.microsoft.com/azure/purview/register-scan-amazon-s3) for region support related to AWS S3 sources.
+
 In Azure Purview, there are a few options to use for authentication when the service needs to scan data sources. Some of these options are:
 
 * Azure Purview Managed Identity
@@ -25,7 +30,7 @@ In Azure Purview, there are a few options to use for authentication when the ser
 * SQL Authentication (using Key Vault)
 * Service Principal (using Key Vault)
 
-## Mapping data
+### Mapping data
 A data map is the foundational platform for Azure Purview. Data Map = Data assets + Lineage + Classifications + Business Context. Customers create a knowledge graph of data coming in from a range of sources. Purview makes it easy to register, and automatically scan and classify data at scale. Within the data map, you can identify the type of data source along with other details around security, scanning, etc. The data map allows you to use collections as well.
 
 Collections are a way of grouping data assets into logical collections (Categories), to simplify management and discovery of assets within the catalog.
@@ -34,10 +39,10 @@ Selecting the Map view displays the data sources in a graphical view, along with
 
 :::image type="content" source="../media/data-map-collections.png" alt-text="Screenshot depicting map view of the sources window in Purview Studio. There are three collections listed, each with a single data source, and two other data sources that are not assigned to a collection.":::
 
-## Scanning data
+### Scanning data
 Once you have your data sources registered, you will need to run a scan to be able to access the metadata and browse the asset information. You configure scan rules for the data you want to scan. In an Azure Purview catalog, you can create scan rule sets to enable you to quickly scan data sources in your organization.
 
-A scan rule set is a container for grouping a set of scan rules together so that you can easily associate them with a scan. For example, you might create a default scan rule set for each of your data source types, and then use these scan rule sets by default for all scans within your company. You might also want users with the right permissions to create other scan rule sets with different configurations based on business need.
+A scan rule set is a container for grouping a set of scan rules together so that you can easily associate them with a scan. A scan rule set lets you select file types for schema extraction and classification, and it also let’s you define new custom file types. For example, you might create a default scan rule set for each of your data source types, and then use these scan rule sets by default for all scans within your company. You might also want users with the right permissions to create other scan rule sets with different configurations based on business need.
 
 Scanning the data sources will require the entry of credentials for these sources. You can store the credentials in an Azure Key Vault for security and ease of access by your scan rules. Purview Studio comes with existing system scan rule sets that you can select when creating a new scan rule, or you can specify a custom scan rule set.
 
@@ -57,9 +62,9 @@ You can also select the file types to include in the scan. The file types will b
 * ORC
 * Document file types (.doc, pdf, xls, etc.)
 
-You can also configure custom file types by providing a file extension, a description for the file type, and specify if the contents are using custom delimiters or are of a system file type.
+You can select which system and custom classification rules you want to run. The system classification rules are the same as the sensitive information types in Microsoft 365, which will let you extend your sensitivity labeling policies in the Microsoft 365 Compliance Center to Azure Purview supported stores.
 
-## Metadata
+### Classification
 Metadata is used to help describe the data that is being scanned and made available in the catalog. During the configuration of a scan set, you can specify classification rules to apply during the scan that will also serve as metadata. The classification rules fall under five major categories:
 
 * Government - covers attributes such as government identity cards, driver license numbers, passport numbers, etc.
@@ -75,3 +80,18 @@ After you register a data source, you can then enrich its metadata. Either the u
 Discovering and understanding data sources and their use is the primary purpose of registering the sources. Enterprise users might need data for business intelligence, application development, data science, or any other task where the right data is required. They use the data catalog discovery experience to quickly find data that matches their needs, understand the data to evaluate its fitness for the purpose, and consume the data by opening the data source in their tool of choice.
 
 At the same time, users can contribute to the catalog by tagging, documenting, and annotating data sources that have already been registered. They can also register new data sources, which are then discovered, understood, and consumed by the community of catalog users.
+
+## Browse and search
+
+Azure Purview allows you to search information from Data Map using Purview Catalog. You can perform text-based search and incorporate business context into the search as well.
+
+Use business context to search information from the Purview catalog. You can define business glossaries (bulk import existing ones too) and apply business context onto assets in the Data Map. They can then use this business context to browse and search information from the Data Map.
+
+Enable effortless discovery with:
+
+* Semantic search and browse
+* Business glossary and workflows
+* Data lineage with sources, owners, transformations, and lifecycle​
+
+
+:::image type="content" source="../media/search.png" alt-text="Screenshot depicting fictional company Adatum Corporation using the search functional of Azure Purview.":::

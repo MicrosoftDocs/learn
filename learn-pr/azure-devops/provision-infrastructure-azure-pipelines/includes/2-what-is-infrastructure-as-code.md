@@ -45,7 +45,7 @@ The team does more brainstorming. As they do every few weeks, they identify the 
 
 The team agrees. Mara sets up a sprint iteration and adds these tasks:
 
-![Azure Boards list that shows the tasks for this sprint](../../shared/media/automate-all-tasks.png)
+:::image type="content" source="../../shared/media/automate-all-tasks.png" alt-text="Azure Boards list that shows the tasks for this sprint.":::
 
 Each of these tasks relates to what you'll do in this and the following modules. You don't need to add these tasks to Azure Boards now. You'll run a template that populates Azure Boards with these tasks, just as you did in previous modules.
 
@@ -90,7 +90,7 @@ Andy scribbles them down on a napkin:
 * Better traceability
   :::column-end:::
   :::column:::
-![A cup of coffee and a napkin that lists the benefits of infrastructure as code](../media/2-iac-improvements-napkin.png)
+:::image type="content" source="../media/2-iac-improvements-napkin.png" alt-text="A cup of coffee and a napkin that lists the benefits of infrastructure as code.":::
   :::column-end:::
 :::row-end:::
 

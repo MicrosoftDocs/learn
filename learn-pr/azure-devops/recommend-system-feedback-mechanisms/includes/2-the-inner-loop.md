@@ -22,7 +22,7 @@ The _inner loop_ is the iterative process that developers perform when they writ
 
 Here's a diagram that illustrates this idea:
 
-![A drawing of the design build test loop](../media/2-inner-loop.png)
+:::image type="content" source="../media/2-inner-loop.png" alt-text="A drawing of the inner loop, which includes the code, build, and test phases.":::
 
 Exactly what goes into each developer's inner loop depends on the technologies they work with, the tools they use, and their own preferences.
 
@@ -30,7 +30,7 @@ For example, if you're writing a C# library, your inner loop might include codin
 
 The following illustrates these two types of inner loops:
 
-![A comparison of two types of inner loops](../media/2-inner-loop-2.png)
+:::image type="content" source="../media/2-inner-loop-2.png" alt-text="A comparison of two types of inner loops.":::
 
 Each of these loops might include a fourth step, where you commit and integrate your changes with the team's central repository, for example, on GitHub.
 
@@ -53,7 +53,7 @@ In the example of building a C# library, here's how you might categorize each st
 
 Here's a diagram that shows this mapping:
 
-![A drawing of the design, build, test loop](../media/2-inner-loop-3.png)
+:::image type="content" source="../media/2-inner-loop-3.png" alt-text="A drawing of the design, build, test loop.":::
 
 Of all the steps in the inner loop, coding is the only one that adds customer value. Building and testing code are important, but ultimately you use these as tools to gain feedback about whether the changes provide sufficient value. For example, does the code compile? Does the feature satisfy the requirements? Does the feature work correctly with other features?
 
@@ -91,7 +91,7 @@ To do this, you would typically move your library code to a separate repository 
 
 Development of the library code forms its own inner loop. When you make changes to the library and, for example, submit a pull request to merge your changes, you transition the workflow from the inner loop to the _outer loop_. The outer loop includes anything that depends on your library, for example, your monolithic application.
 
-![Transitioning the workflow from the inner loop to the outer loop](../media/2-inner-loop-4.png)
+:::image type="content" source="../media/2-inner-loop-4.png" alt-text="Transitioning the workflow from the inner loop to the outer loop.":::
 
 Initially, you might see some benefits. For example, you might see decreased build times in your application because the library code is already built for you. It's likely, though, that you'll need to develop an application feature that requires new capabilities in the library. This is where teams who have incorrectly separated their codebases start to feel pain.
 
@@ -99,7 +99,7 @@ When you evolve code in two separate repositories where a dependency is present,
 
 Outer loops can include taxes such as code reviews, security scanning, package signing, and release approvals. You don't want to pay that tax every time you add a function to the library that your application needs.
 
-![A drawing of the design build test loop](../media/2-inner-loop-5.png)
+:::image type="content" source="../media/2-inner-loop-5.png" alt-text="A drawing of the outer loop.":::
 
 In practice, this situation can force developers to work around processes or code in order to move forward. Such workarounds can build up taxes that you'll have to pay at some point.
 

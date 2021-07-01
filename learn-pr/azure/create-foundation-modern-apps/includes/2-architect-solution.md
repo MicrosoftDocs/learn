@@ -45,7 +45,7 @@ Knowing that such feed is available, the other thing to do is to figure out how 
 
 Based on the scenario and the ideal solution, here's a possible architecture:
 
-:::image type="content" source="../media/1-catch-the-bus.svg" alt-text="Catch the bus microservices architecture diagram" border="false":::
+:::image type="content" source="../media/1-catch-the-bus.svg" alt-text="Catch the bus microservices architecture diagram." border="false":::
 
 The architecture uses several different services to minimize the amount of code you need to write, and to take advantage as much as possible of the scalability and infrastructure benefits provided by Azure.
 

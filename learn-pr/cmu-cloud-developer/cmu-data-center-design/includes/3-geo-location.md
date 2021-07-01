@@ -20,7 +20,7 @@ There are also basic logistics that are desirable to have available to support t
 
 We already discussed economization, or the mixing of colder outside air with the hot air expelled from the IT equipment. In Figure 10, you will notice different colored bands. In regions of yellow or orange, you could use outside cooling during the colder seasons. In regions of green and blue, you could likely use outside cooling year round. Regions marked as red could still use outside cooling, but for only a few months of the year. For example, because of its cold average climate and renewable energy sources, Iceland has a growing datacenter industry.
 
-![Global average temperature map from Wikipedia, 2014](../media/temperature-map.png)
+![Global average temperature map from Wikipedia, 2014.](../media/temperature-map.png)
 
 _Figure 10: Global average temperature map_ ([Wikipedia, 2014](https://commons.wikimedia.org/wiki/File:Annual_Average_Temperature_Map.jpg))
 
@@ -30,35 +30,35 @@ The average amount of annual rainfall might be a factor if you are considering u
 
 Part of a risk assessment for a particular location includes the frequency of natural disasters in the region, such as floods, hurricanes or cyclones, tornadoes, tsunamis, and earthquakes. The following figures show that different regions have varying levels of susceptibility to a potentially damaging event.
 
-![Earthquake risk map](../media/earthquake-risk-map.png)
+![Earthquake risk map.](../media/earthquake-risk-map.png)
 
 _Figure 11: Earthquake risk map_
 
-![Flood risk map](../media/flood-risk-map.png)
+![Flood risk map.](../media/flood-risk-map.png)
 
 _Figure 12: Flood risk map_
 
-![Hurricane risk map](../media/hurricane-risk-map.png)
+![Hurricane risk map.](../media/hurricane-risk-map.png)
 
 _Figure 13: Hurricane risk map_
 
-![Lightning risk map](../media/lightening-risk-map.png)
+![Lightning risk map.](../media/lightening-risk-map.png)
 
 _Figure 14: Lightning risk map_
 
-![Tornado risk map](../media/tornado-risk-map.png)
+![Tornado risk map.](../media/tornado-risk-map.png)
 
 _Figure 15: Tornado risk map_
 
-![Thunderstorm risk map](../media/thunderstorm-risk-map.png)
+![Thunderstorm risk map.](../media/thunderstorm-risk-map.png)
 
 _Figure 16: Thunderstorm risk map_
 
-![Volcano risk map](../media/volcano-risk-map.png)
+![Volcano risk map.](../media/volcano-risk-map.png)
 
 _Figure 17: Volcano risk map_
 
-![Wildfire risk map](../media/wildfire-risk-map.png)
+![Wildfire risk map.](../media/wildfire-risk-map.png)
 
 _Figure 18: Wildfire risk map_
 
@@ -72,7 +72,7 @@ As broadband adoption among consumers continues to grow, the effectiveness of cl
 
 The internet relies on fiber optics to send and receive data over long distances. Figure 19 shows the relationship between multiple tiers of the internet. Tier 1 providers own the actual fiber cables, the network equipment, and the buildings they are housed in. Tier 2 providers own large networks as well and peer with (have connections to) other tier 2 providers but also have to lease some connections from tier 1 providers in order to reach the whole internet. Tier 3 providers are only resellers, which provide connections to end users. A single corporate entity, such as Verizon in the United States, may provide services at all tiers.
 
-![Internet connectivity from Wikipedia, 2014](../media/internet-connectivity.png)
+![Internet connectivity from Wikipedia, 2014.](../media/internet-connectivity.png)
 
 _Figure 19: Internet connectivity_ ([Wikipedia, 2014](https://en.wikipedia.org/wiki/File:Internet_Connectivity_Distribution_%26_Core.svg))
 

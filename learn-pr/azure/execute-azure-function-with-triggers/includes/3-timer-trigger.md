@@ -13,11 +13,7 @@ A *CRON expression* is a string that consists of six fields that represent a set
 
 The order of the six fields in Azure is: `{second} {minute} {hour} {day} {month} {day of the week}`.
 
-For example, a CRON expression to create a trigger that executes every five minutes looks like:
-
-```log
-0 */5 * * * *
-```
+For example, a CRON expression to create a trigger that executes every five minutes looks like: `0 */5 * * * *`
 
 At first, this string may look confusing. We'll come back and break down these concepts when we have a deeper look at CRON expressions.
 
@@ -32,7 +28,7 @@ To build a CRON expression, you need to have a basic understanding of some of th
 
 Now we'll go back to the original CRON expression example. Let’s try to understand it better by breaking it down field by field.
 
-```log
+```text
 0 */5 * * * *
 ```
 

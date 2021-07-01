@@ -25,7 +25,7 @@ Microservices provide long-term agility. Microservices enable better maintainabi
 
 As an additional benefit, microservices can scale out independently. Instead of having a single monolithic application that you must scale out as a unit, you can instead scale out specific microservices. That way, you can scale just the functional area that needs more processing power or network bandwidth to support demand, rather than scaling out other areas of the application that don't need to be scaled. That means cost savings because you need less hardware.
 
-![Diagram showing how microservices can scale across virtual machines](../media/microservice-approach.png)
+![Diagram showing how microservices can scale across virtual machines.](../media/microservice-approach.png)
 
 The microservices approach allows agile changes and rapid iteration of each microservice, because you can change specific, small areas of complex, large, and scalable applications.
 
@@ -39,7 +39,7 @@ Just as shipping containers allow goods to be transported by ship, train, or tru
 
 If that sounds like containerizing an application would be a great way to implement the microservice architecture pattern, it is. The benefits of containers almost line up exactly to the benefits of microservices one-to-one.
 
-![diagram showing multiple containers running on a single host](../media/multiple-containers-single-host.png)
+![diagram showing multiple containers running on a single host.](../media/multiple-containers-single-host.png)
 
 > [!NOTE]
 > Containerizing an application is not the only way to deploy microservices. You could deploy microservices as individual services in Azure App Service, or via virtual machines, or any number of ways. However, containers are the tool that we'll use for the rest of this module to deploy our microservices in.

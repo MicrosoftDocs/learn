@@ -7,7 +7,7 @@ The hypervisor deals with the situation by applying a **reclamation technique**.
 
 One of the popular reclamation techniques is the **ballooning process** introduced in VMware ESXi, which has been the basis for similar techniques in other hypervisors.
 
-![The ballooning process in VMware ESXi](../media/ballooning-process.png)
+![The ballooning process in VMware ESXi.](../media/ballooning-process.png)
 
 _Figure 4: The ballooning process in VMware ESXi_
 

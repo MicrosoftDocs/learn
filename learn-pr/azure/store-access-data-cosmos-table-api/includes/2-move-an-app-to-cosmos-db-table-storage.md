@@ -83,4 +83,4 @@ If you have decided to move to Azure Cosmos DB, and you currently have data in o
 
    - Import from that local file to a database in Cosmos, specifying the destination database by using its URL and access key.
 
-![The Data Migration Tool](../media/2-data-import-tool-tables-page.png)
+![The Data Migration Tool.](../media/2-data-import-tool-tables-page.png)

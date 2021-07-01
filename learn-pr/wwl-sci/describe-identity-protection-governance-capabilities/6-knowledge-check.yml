@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/30/2021
+  ms.date: 06/21/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -16,25 +16,25 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "An organization has recently merged with a competitor, nearly doubling the number of employees. The organization needs to implement an access lifecycle system that won't add a significant amount of work for its IT administrators. Which Azure AD feature should they implement?"
+  - content: "Your organization has implemented important changes in their customer facing web-based applications.  You want to ensure that any user who wishes to access these applications agrees to the legal disclaimers. Which Azure AD feature should you implement?"
     choices:
-    - content: "Dynamic groups."
-      isCorrect: true
-      explanation: "Correct. Dynamic groups use attribute-based rules to determine who is a member of a group, thereby reducing the administrative overhead of adding and removing users."
-    - content: "Conditional Access policies."
+    - content: "Entitlement management."
       isCorrect: false
-      explanation: "Incorrect. Conditional Access policies are used to enforce organizational rules for access, but don't implement access lifecycle requirements."
+      explanation: "Incorrect. Entitlement management automates access request workflows, access assignments, reviews, and expiration but does not address the business requirement for users to agree to terms of use."
     - content: "Azure AD Terms of Use."
+      isCorrect: true
+      explanation: "Correct. Azure AD Terms of Use presents information to users before they access data and can be configured to require users to accept the terms of use."
+    - content: "Identity Protection."
       isCorrect: false
-      explanation: "Incorrect. Azure AD Terms of Use presents information to users before they access data. Azure AD Terms of Use doesn't implement access lifecycle requirements."
+      explanation: "Incorrect. Identity Protection is a tool that allows organizations to utilize security signals to identify potential threats."
   - content: "An organization is project-oriented with employees often working on more than one project at a time. Which solution is best suited to managing user access to this organization’s resources?"
     choices:
     - content: "Azure Terms of Use."
       isCorrect: false
       explanation: "Incorrect. Azure AD Terms of Use presents information to users before they access data but doesn't manage access rights."
-    - content: "Dynamic groups."
+    - content: "Identity Protection."
       isCorrect: false
-      explanation: "Incorrect. Dynamic groups use attribute-based rules to determine who is a member of a group, which is well suited to role-based organizations."
+      explanation: "Incorrect. Identity Protection is a tool that allows organizations to utilize security signals to identify potential threats."
     - content: "Entitlement management."
       isCorrect: true
       explanation: "Correct. Entitlement management is well suited to handling project-based access needs. Entitlement management automates access requests, access assignments, reviews, and expiration for bundles of resources relevant to a project."

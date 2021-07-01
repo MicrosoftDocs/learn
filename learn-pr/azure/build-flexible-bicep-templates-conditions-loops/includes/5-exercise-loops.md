@@ -10,8 +10,6 @@ During the process, you'll:
 > * Deploy the Bicep file, and verify the deployment of the resources.
 > * Modify the parameter to add an additional location, redeploy the file, and then verify that the new resources have been deployed.
 
-This exercise uses [the Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
-
 ## Move resources into a module
 
 1. In Visual Studio Code, create a new folder called *modules* in the same folder where you created your *main.bicep* file.
@@ -97,7 +95,7 @@ The teddy bear toy team is about to launch again, this time into Asia. The team 
 
 1. Return to Visual Studio Code. At the top of the *main.bicep* file, add a new value to the `locations` array:
 
-   ::: code language="plaintext" source="code/5-add-location.bicep" highlight="5" :::
+   ::: code language="bicep" source="code/5-add-location.bicep" highlight="5" :::
 
 1. Save the changes to the file.
 
@@ -113,7 +111,7 @@ The teddy bear toy team is about to launch again, this time into Asia. The team 
 
 1. Return to Visual Studio Code. At the top of the *main.bicep* file, add a new value to the `locations` array:
 
-   ::: code language="plaintext" source="code/5-add-location.bicep" highlight="5" :::
+   ::: code language="bicep" source="code/5-add-location.bicep" highlight="5" :::
 
 1. Save the changes to the file.
 

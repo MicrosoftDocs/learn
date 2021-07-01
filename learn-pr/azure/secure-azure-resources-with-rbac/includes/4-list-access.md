@@ -13,11 +13,11 @@ Follow these steps to see what roles are currently assigned to you.
 
 1. Click the ellipsis (**...**) to see more links.
 
-    ![Screenshot of user menu with My permissions highlighted](../media/4-my-permissions-menu.png)
+    ![Screenshot of user menu with My permissions highlighted.](../media/4-my-permissions-menu.png)
 
 1. Click **My permissions** to open the My permissions pane.
 
-    ![Screenshot of the My permissions pane](../media/4-my-permissions-pane.png)
+    ![Screenshot of the My permissions pane.](../media/4-my-permissions-pane.png)
 
     On the My permissions pane, you can see the roles that you have been assigned and the scope. Your list will look different.
 
@@ -27,19 +27,19 @@ Follow these steps to see what roles are assigned at the resource group scope.
 
 1. In the navigation list, click **Resource groups**.
 
-   ![Screenshot of the Azure portal showing the Resource groups pane](../media/4-resource-groups.png)
+   ![Screenshot of the Azure portal showing the Resource groups pane.](../media/4-resource-groups.png)
 
 1. Find and click the resource group named **FirstUpConsultantsRG1-_XXXXXXX_**.
 
 1. Click **Access control (IAM)**.
 
-   ![Screenshot showing the location of the Access control (IAM) option in the selected resource group pane](../media/4-resource-group-access-control.png)
+   ![Screenshot showing the location of the Access control (IAM) option in the selected resource group pane.](../media/4-resource-group-access-control.png)
 
 1. Click the **Role assignments** tab.
 
     You can see who has access to this resource group. Notice that some roles are scoped to **This resource** while others are **(Inherited)** from a parent scope.
 
-   ![Screenshot showing the Access control for the selected resource group with the Role assignments tab selected](../media/4-resource-group-role-assignment.png)
+   ![Screenshot showing the Access control for the selected resource group with the Role assignments tab selected.](../media/4-resource-group-role-assignment.png)
 
 ## List roles
 

@@ -133,7 +133,7 @@ In this part, you provide a condition to each build task that relates to SonarCl
 
     You see that the scanning tasks that relate to SonarCloud are now skipped.
 
-    ![Screenshot of Azure DevOps Pipelines showing skipped tasks: Prepare SonarCloud analysis, Run SonarCloud code analysis, and Publish SonarCloud quality gate results.](../media/6-ci-skipped-tasks.png)
+    :::image type="content" source="../media/6-ci-skipped-tasks.png" alt-text="Screenshot of Azure DevOps Pipelines showing skipped tasks: Prepare SonarCloud analysis, Run SonarCloud code analysis, and Publish SonarCloud quality gate results.":::
 
     That's because this run is for a normal CI build, and not a PR build. The conditions you added to your pipeline configuration run these tasks only when the build is for a pull request.
 1. From a browser, go to [github.com](https://www.github.com?azure-portal=true) and sign in.
@@ -168,6 +168,6 @@ In this part, you provide a condition to each build task that relates to SonarCl
 
     You see that all tasks, including the SonarCloud tasks, are run in the pull request build. That's because your pull request targets the `master` branch, which satisfies the conditions to run these tasks.
 
-    ![Screenshot of Azure DevOps Pipelines showing a PR build that ran all tasks as succeeded.](../media/6-pr-build-tasks.png)
+    :::image type="content" source="../media/6-pr-build-tasks.png" alt-text="Screenshot of Azure DevOps Pipelines showing a PR build that ran all tasks as succeeded.":::
 
 For brevity, you won't merge your pull request here. But in practice, you might merge your pull request only after all build checks pass and another team member approves your changes.

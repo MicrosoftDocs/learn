@@ -74,7 +74,7 @@ Although Mara and her team identified a number of issues, here you'll add the th
 
 1. In the **Description** field, enter this text:
 
-    > The build server keeps falling over. The OS, Ubuntu 16.04, requires security patches and updates. It's also a challenge to keep build tools and other software up to date.
+    > The build server keeps falling over. The OS requires security patches and updates. It's also a challenge to keep build tools and other software up to date.
 
 1. Select **Save & Close**.
 
@@ -97,7 +97,7 @@ When you create an Azure Boards project, you get an initial sprint called **Spri
 
 1. In the left-side column, select **Sprints**.
 
-    ![Azure DevOps showing the location of the Sprints menu.](../media/4-boards-sprints-menu.png)
+    :::image type="content" source="../media/4-boards-sprints-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Sprints menu.":::
 
 1. Select **Set dates** from the upper right.
 

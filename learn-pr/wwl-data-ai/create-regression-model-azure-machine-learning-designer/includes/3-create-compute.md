@@ -9,6 +9,10 @@ In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view
 - **Compute Clusters**: Scalable clusters of virtual machines for on-demand processing of experiment code.
 - **Inference Clusters**: Deployment targets for predictive services that use your trained models.
 - **Attached Compute**: Links to existing Azure compute resources, such as Virtual Machines or Azure Databricks clusters.
+
+> [!NOTE]
+> Compute instances and clusters are based on standard Azure virtual machine images. For this module, the *Standard_DS11_v2* image is recommended to achieve the optimal balance of cost and performance. If your subscription has a quota that does not include this image, choose an alternative image; but bear in mind that a larger image may incur higher cost and a smaller image may not be sufficient to complete the tasks. Alternatively, ask your Azure administrator to extend your quota.
+
 1. On the **Compute Instances** tab, add a new compute instance with the following settings. You'll use this as a workstation from which to test your model:
     - **Virtual Machine type**: CPU
     - **Virtual Machine size**: Standard_DS11_v2 (Choose **Select from all options** to search for and select this machine size)
@@ -24,7 +28,7 @@ In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view
     - **Idle seconds before scale down**: 120
     * **Enable SSH access**: Unselected
 
-> [!NOTE]
-> If you decide not to complete this module, be sure to stop your compute instance to avoid incurring unnecessary charges to your Azure subscription.
+> [!TIP]
+> After completing each module, be sure to follow the **Clean Up** instructions at the end of the module to stop your compute resources. Stopping your compute ensures your subscription won't be charged for compute resources. 
 
 The compute targets will take some time to be created. You can move onto the next unit while you wait.

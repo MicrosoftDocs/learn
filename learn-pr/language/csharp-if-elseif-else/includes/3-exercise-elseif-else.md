@@ -1,4 +1,4 @@
-Previously, we used multiple if statements to implement the rules of our game.  However, when we left off in the previous unit, there was opportunity for improvement -- improvement to the expressiveness of the code, and improvement to fix a subtle bug in our code. We'll use variants of the if statement to improve our code.
+Previously, we used multiple if statements to implement the rules of our game. However, when we left off in the previous unit, there was opportunity for improvement -- improvement to the expressiveness of the code, and improvement to fix a subtle bug in our code. We'll use variants of the if statement to improve our code.
 
 ### Step 1 - Use the if-else statement instead of two separate if statements
 
@@ -37,7 +37,7 @@ else
 }
 ```
 
-Here, if `total >= 15` is false, then the code block below the `else` keyword will execute. Since these two options are related opposites, this is a perfect scenario for the `else` keyword.
+Here, if `total >= 15` is false, then the following code block the `else` keyword will execute. Because these two options are related opposites, this is a perfect scenario for the `else` keyword.
 
 ### Step 2 - Modify the code to remove the stacking bonus for doubles and triples using nesting.
 
@@ -97,6 +97,7 @@ Dice roll: 6 + 6 + 5 = 17
 You rolled doubles!  +2 bonus to total!
 You win!
 ```
+
 To test that triples work, modify the value of `roll3` like so:
 
 ```csharp
@@ -104,6 +105,7 @@ roll1 = 6;
 roll2 = 6;
 roll3 = 6;
 ```
+
 When you run the code, you should see:
 
 ```output

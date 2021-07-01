@@ -89,17 +89,17 @@ To trigger a deployment, you'll increment the `appVersion` in the coupon service
 1. Select the **:::no-loc text="Actions":::** tab in your repository to monitor the deployment's progress.
 1. Select the most recent workflow run listed for the **:::no-loc text="eShop deploy":::** workflow. The commit message used in the previous step becomes the run's name.
 
-    :::image type="content" source="../media/5-deploy-github-action/eshop-deploy-workflow.png" alt-text="eShop deploy workflow listed on the workflows page" border="true" lightbox="../media/5-deploy-github-action/eshop-deploy-workflow.png":::
+    :::image type="content" source="../media/5-deploy-github-action/eshop-deploy-workflow.png" alt-text="eShop deploy workflow listed on the workflows page." border="true" lightbox="../media/5-deploy-github-action/eshop-deploy-workflow.png":::
 
 1. Select the **:::no-loc text="deploy-to-aks":::** task:
 
-    :::image type="content" source="../media/5-deploy-github-action/deploy-to-aks-task.png" alt-text="Actions tab showing a completed build and deployment" border="true" lightbox="../media/5-deploy-github-action/deploy-to-aks-task.png":::
+    :::image type="content" source="../media/5-deploy-github-action/deploy-to-aks-task.png" alt-text="Actions tab showing a completed build and deployment." border="true" lightbox="../media/5-deploy-github-action/deploy-to-aks-task.png":::
 
     In the preceding image, you can see details of the `deploy-to-aks` job for this particular workflow run. The `Set up job` and `Complete job` steps are listed. In between those two steps are the custom steps defined within the `deploy-to-aks` job.
 
 1. Select the **:::no-loc text="Actions":::** tab again. You'll see a variation of the following screen when the deployment completes:
 
-    :::image type="content" source="../media/5-deploy-github-action/deployment-action-completed.png" alt-text="Actions tab showing a completed build and deployment" border="true" lightbox="../media/5-deploy-github-action/deployment-action-completed.png":::
+    :::image type="content" source="../media/5-deploy-github-action/deployment-action-completed.png" alt-text="Actions tab showing a completed build and deployment." border="true" lightbox="../media/5-deploy-github-action/deployment-action-completed.png":::
 
 1. Back in the command shell, run the following command to monitor the coupon service pods in your AKS cluster:
 
@@ -158,7 +158,7 @@ Complete the following steps to verify your change is deployed:
 
     The logs are filtered to display the following entry:
 
-    :::image type="content" source="../media/5-deploy-github-action/seq-logs.png" alt-text="A screen capture of the Seq log output" border="true" lightbox="../media/5-deploy-github-action/seq-logs.png":::
+    :::image type="content" source="../media/5-deploy-github-action/seq-logs.png" alt-text="A screen capture of the Seq log output." border="true" lightbox="../media/5-deploy-github-action/seq-logs.png":::
 
 ## Roll back the deployment
 

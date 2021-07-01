@@ -261,4 +261,4 @@ You should now see a new CSV file in your *space-jam-anl* folder.
 
 :::image type="content" source="../media/output-csv.png" alt-text="Screenshot showing the final cleansed dataset ready for use.":::
 
-© 2020 Warner Bros. Ent. All Rights Reserved.
+© 2021 Warner Bros. Ent. All Rights Reserved.

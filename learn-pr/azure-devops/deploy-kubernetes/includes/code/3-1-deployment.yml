@@ -17,7 +17,7 @@ spec:
           image: tailspinspacegame4692.azurecr.io/web
           ports:
           - containerPort: 80
----
+
 apiVersion : apps/v1
 kind: Deployment
 metadata:

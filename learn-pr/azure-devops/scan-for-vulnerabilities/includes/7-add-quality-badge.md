@@ -16,7 +16,7 @@ You can add other kinds of badges to your repository, such as a quality badge th
 
 Here's an example quality badge:
 
-![Screenshot of an example quality badge on GitHub, saying quality gate passed.](../media/7-example-quality-badge.png)
+:::image type="content" source="../media/7-example-quality-badge.png" alt-text="Screenshot of an example quality badge on GitHub, saying quality gate passed.":::
 
 ## Add the quality badge
 
@@ -44,7 +44,7 @@ Here, you follow a similar process. You get the Markdown code you need from Sona
 
     GitHub renders the Markdown file and shows you the quality badge.
 
-    ![Screenshot of GitHub change previewing the addition of a quality badge.](../media/7-github-preview-changes.png)
+    :::image type="content" source="../media/7-github-preview-changes.png" alt-text="Screenshot of GitHub change previewing the addition of a quality badge.":::
 
 ## Commit your changes to master
 
@@ -55,7 +55,7 @@ Here you commit your changes to the `master` branch on GitHub.
 
     You see your quality badge on the README page.
 
-    ![Screenshot of GitHub project showing the quality gate badge adjacent to an existing Azure Pipelines succeeded badge.](../media/7-example-quality-badge.png)
+    :::image type="content" source="../media/7-example-quality-badge.png" alt-text="Screenshot of GitHub project showing the quality gate badge adjacent to an existing Azure Pipelines succeeded badge.":::
 
     This process is a more basic way to merge code into GitHub. Instead of committing directly, you also can  create a pull request with your changes for others to review.
 

@@ -1,6 +1,6 @@
 Imagine that you want to create a simple bookmark lookup service. Your service is read-only initially. If users want to find an entry, they send a request with the ID of the entry, and you return the URL. The following flowchart illustrates the flow.
 
-![Decision flow diagram illustrating the process of finding a bookmark in our Azure Cosmos DB back-end and returning a response. ](../media/5-find-bookmark-flow-small.png)
+![Decision flow diagram illustrating the process of finding a bookmark in our Azure Cosmos DB back-end and returning a response.](../media/5-find-bookmark-flow-small.png)
 
 When users send you a request with some text, you try to find an entry in your back-end database that contains this text as a key or ID. You return a result that indicates whether you found the entry.
 
@@ -65,11 +65,6 @@ Let's use the Data Explorer tool in the Azure portal to create a database and co
 1. Select the **New Container** box. The **New Container** pane appears. To see it, you may need to scroll to the right.
 
 1. Enter the following values for each setting.
-
-    > [!NOTE]
-    > Ensure you enter the following values precisely as documented here:
-    > - Container id = *Bookmarks* with a capital B
-    > - Partition key = /id (slash id); NOT curly brackets (braces) or any combination of curly brackets and slashes
 
     | Setting | Value | Description |
     |---|---|---|
@@ -219,11 +214,6 @@ To read data from the database, you need to define an input binding. As you'll s
     This syntax is known as a *binding expression*. The function is triggered by an HTTP request that uses a query string to specify the ID to look up. Because IDs are unique in our collection, the binding will return either 0 (not found) or 1 (found) documents.
 
 1. Enter the following values for each setting in this pane. To learn more about the purpose of each setting, you can select the information icon to its right.
-
-    > [!NOTE]
-    > Ensure you enter the following values precisely as documented here:
-    > - Collection Name = *Bookmarks* with a capital B
-    > - Partition key = /id (slash id; NOT curly brackets or any combination of curly brackets and slashes)
 
     | Setting | Value | Description |
     |---|---|---|

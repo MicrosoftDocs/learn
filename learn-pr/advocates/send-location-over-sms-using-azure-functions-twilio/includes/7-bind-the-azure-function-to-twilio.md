@@ -13,7 +13,7 @@ Sending SMS messages via Twilio requires an output binding that is configured wi
 1. Add the "Microsoft.Azure.WebJobs.Extensions.Twilio" NuGet package to the `ImHere.Functions` project. This NuGet package contains the relevant classes for the binding.
 Make sure that you also have NuGet packages for Mcrosoft.Azure.WebJobs and latest .NET SDK installed in your function. The NuGet section for your function should look like the screenshot below:
 
-   ![Screenshot showing the function NuGet dependencies](../media/Imhere-function-dependencies.png)
+   ![Screenshot showing the function NuGet dependencies.](../media/Imhere-function-dependencies.png)
 
 1. Open the SendLocation class in the ImHere.Functions project for editing.
 
@@ -160,15 +160,15 @@ public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anon
 
 1. Click the **Send Location** button. If the SMS message was sent successfully, you'll see a message in the Xamarin.Forms app saying, "Location sent successfully".
 
-    ![The Xamarin.Forms app showing the location as sent](../media/7-ui-location-sent.png)
+    ![The Xamarin.Forms app showing the location as sent.](../media/7-ui-location-sent.png)
 
 1. In the console logs for your function, you'll see the message being created and sent. If any errors occur (such as, the number is in the wrong format), they will be logged out here.
 
-    ![The Azure Functions console showing the message has been sent](../media/7-function-message-sent.png)
+    ![The Azure Functions console showing the message has been sent.](../media/7-function-message-sent.png)
 
 1. Check your phone for a message. Follow the link in the message to see your location.
 
-    ![The SMS message received on a mobile phone](../media/7-message-received.png)
+    ![The SMS message received on a mobile phone.](../media/7-message-received.png)
 
     > [!TIP]
     > The location you'll see is the location where the app is running, so will be near to the data center that the VM is running from. If this app was running on your local device then it would show your location.
