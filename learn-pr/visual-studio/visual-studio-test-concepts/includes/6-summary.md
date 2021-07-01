@@ -1,3 +1,5 @@
+# Summary of Testing Concepts
+
 <!-- 1. Goal and criteria-----------------------------------------------------------------------------
 
     Goal: Recap that this module's goal is 'evaluate' using the provided decision criteria.
@@ -13,8 +15,12 @@
     * Connectors"
 
 -->
-TODO: 1-2 sentences restating the module's "evaluate" goal
-TODO: bulleted list of the decision criteria
+Our goal was to help you understand the purpose, concepts, and schools of thought behind testing and how they can help you improve your code quality.
+
+* We explained what testing is and how it can help catch bugs before release
+* We explained how testing helps validate code changes, improve architecture, and improve code health.
+* We explained how the different types of testing can address different needs in a code base.
+* We explained the testing schools of thought that help guide good practices across teams.
 
 <!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
 
@@ -24,8 +30,7 @@ TODO: bulleted list of the decision criteria
 
     Example: "We applied these criteria to our fictional shoe company. The analysis helped us see how difficult it would be to use Logic Apps for each process. Both the social-media monitor and the video archive utility used only the built-in connectors. This characteristic made them perfect for Logic Apps. The online sales portal required more work because it had complex conditionals and needed custom connectors."
  -->
-
-TODO: add your discussion of applying the criteria
+You saw how testing can both document and verify behavior in the phone number example. Tests enable you to automatically check functionality with out needing to consciously walk through every supported scenario. Any app that is constantly growing can make use of tests to verify that new functionality doesn't break old behavior.
 
 <!-- 3. Describe the business impact ----------------------------------------------------
 
@@ -35,7 +40,8 @@ TODO: add your discussion of applying the criteria
 
     Example: "The criteria help you evaluate whether your business processes are a good match for Logic Apps. First, they let you assess how well Logic Apps will solve your problem. Second, they give you an idea of the amount of customization effort involved in using them for your task. This process should give you enough information to choose the right product for your work."
  -->
-TODO: describe the business impact
+Learning about the different types of tests can open up new ways of verifying your code. Maybe the validity of some changes are confirmed by your unit tests, but a performance test catches that a function is now taking twice as long to execute. Maybe the unit tests and performance tests pass, but your UI tests catch strange behavior when it actually comes to rendering your UI. Testing from multiple different perspectives improves the quality of your app before it reaches customers.
+The testing schools of thought recommend different styles of testing that can drive teams towards better architecture and higher code coverage. While you don't have to follow them to-the-letter, it's good to know there is plenty of guidance out there for people wanting to evolve their testing practices.
 
 <!-- 4. References (optional) ----------------------------------------------------
 
@@ -55,5 +61,10 @@ TODO: describe the business impact
         * [What is Azure role-based access control (Azure RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
         * [Manage access to billing information for Azure](https://docs.microsoft.com/azure/billing/billing-manage-access)"
  -->
+
+## References
+
+* [Create tests C# tutorial](../../visual-studio-test-tools/resources/design-doc.md)
+* [Run tests in Azure DevOps](../../../azure-devops/run-functional-tests-azure-pipelines/includes/1-introduction.md)
 
 <!-- Do not include any other content -->
