@@ -25,11 +25,10 @@ param sqlAdministratorLoginPassword string
 
 param managedIdentityName string
 param roleDefinitionId string = 'b24988ac-6180-42a0-ab88-20f7382dd24c'
+param webSiteName string = 'webSite${uniqueString(resourceGroup().id)}'
 
 var hostingPlanName = 'hostingplan${uniqueString(resourceGroup().id)}'
-var webSiteName = 'webSite${uniqueString(resourceGroup().id)}'
 var sqlserverName = 'sqlserver${uniqueString(resourceGroup().id)}'
-var databaseName = 'sampledb'
 
 resource sqlserver 'Microsoft.Sql/servers@2019-06-01-preview' = {
   name: sqlserverName
@@ -41,6 +40,7 @@ resource sqlserver 'Microsoft.Sql/servers@2019-06-01-preview' = {
   }
 }
 
+var databaseName = 'sampledb'
 resource sqlserverName_databaseName 'Microsoft.Sql/servers/databases@2020-08-01-preview' = {
   name: '${sqlserver.name}/${databaseName}'
   location: location

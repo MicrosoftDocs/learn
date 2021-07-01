@@ -43,6 +43,14 @@ Take a look at the symbolic names for the resources in the template. What could 
 
    Is the symbolic name descriptive enough to help someone else work with this template?
 
+## Resource names
+
+There are two parameters that explicitly set resource names:
+
+::: code language="bicep" source="code/2-template.bicep" range="26-28" :::
+
+Is there another way you could do this?
+
 ### Dependencies and child resources
 
 1. Here's one of your resources, which includes a `dependsOn` property - does it really need it?
@@ -66,6 +74,12 @@ Take a look at the symbolic names for the resources in the template. What could 
 1. Can you change the way the connection string is set so that the complex expression isn't defined in-line with the resource?
 
    ::: code language="bicep" source="code/2-template.bicep" range="94-102" highlight="5" :::
+
+## Order of elements
+
+Are you happy with the order of the elements in the file? Take a look at the `databaseName` variable - does that belong where it is now?
+
+::: code language="bicep" source="code/2-template.bicep" range="43-54" :::
 
 ### Configuration set
 
