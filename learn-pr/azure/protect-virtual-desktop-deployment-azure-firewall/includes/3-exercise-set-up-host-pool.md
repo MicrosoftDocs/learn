@@ -83,6 +83,8 @@ In Cloud Shell, run the following command to create a subnet and virtual network
 
    ```
 
+Ignore the warning message about upcoming breaking changes. It doesn't apply to the command you're running.
+
 ## Create a session host for the host pool
 
 Create an Azure VM to act as a session host for the host pool.
@@ -108,7 +110,9 @@ Create an Azure VM to act as a session host for the host pool.
 
     ```
 
-   Wait a couple of minutes for the VM to be created.
+   Ignore message "No size value has been provided..." The VM will be created with the size you specified in the command above.
+
+1. Wait a couple of minutes for the VM to be created.
 
 ## Connect to the VM by using a remote desktop session
 
