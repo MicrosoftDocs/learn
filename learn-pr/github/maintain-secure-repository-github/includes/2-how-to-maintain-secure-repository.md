@@ -85,7 +85,7 @@ Virtually every project these days takes dependencies on external packages. Whil
 
 One default feature every repository enjoys are dependency graphs. GitHub scans common package manifests, such as `package.json`, `requirements.txt`, and others. These graphs enable project owners to recursively track all of the dependencies their project relies on.
 
-![GitHub dependency graph](../media/2-dependency-graph.png)
+![GitHub dependency graph.](../media/2-dependency-graph.png)
 
 For the list of supported dependency manifests, see [Listing the packages that a repository depends on](https://help.github.com/github/visualizing-repository-data-with-graphs/listing-the-packages-that-a-repository-depends-on#supported-languages?azure-portal=true)
 
@@ -93,7 +93,7 @@ For the list of supported dependency manifests, see [Listing the packages that a
 
 Even with a visual dependency graph, it can still be overwhelming to stay on top of the latest security considerations for every dependency a project has. To reduce this overhead, GitHub provides automated dependency alerts that watch your dependency graphs for you. It then cross-references target versions with versions on known vulnerability lists. When a risk is discovered, the project is alerted.
 
-![A GitHub alert for a vulnerable dependency](../media/2-dependency-alert.png)
+![A GitHub alert for a vulnerable dependency.](../media/2-dependency-alert.png)
 
 ### Automated dependency updates with Dependabot
 

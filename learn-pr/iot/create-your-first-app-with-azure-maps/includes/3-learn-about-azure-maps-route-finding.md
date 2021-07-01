@@ -5,7 +5,7 @@ In this unit, we have a broad look at the features and applications of Azure Map
 
 We dive extensively into the route finding features of Azure Maps in this module. However, there are many other uses that have nothing to do with roads and travel. Route finding is one of the more complex features, as it involves extensive knowledge of current road conditions, road quality, ferry schedules, road regulations, and a mass of other data. A more simple use of the maps is to use it largely as background, to display data relevant to any particular location on the map. One example is earthquake data. The following image is known as a _heat map_, and it shows the number of significant earthquakes over a certain time period. There's a _heat gradient_, typically from violet, through blue, green, to yellow, orange then red. The more, and stronger, the earthquakes, the higher the _heat_.
 
-[![Screenshot showing a heat map for the ring of fire](../media/azure-maps-earthquake.png)](../media/azure-maps-earthquake.png#lightbox)
+[![Screenshot showing a heat map for the ring of fire.](../media/azure-maps-earthquake.png)](../media/azure-maps-earthquake.png#lightbox)
 
 The aptly named _ring of fire_ is obvious.
 
@@ -19,19 +19,19 @@ Azure Maps are constructed in layers. You can choose which layers to display. Le
 
 The base layer contains the outline of terrain, complete with parks.
 
-[![Screenshot showing the New York base layer of Azure Maps](../media/ny-base.png)](../media/ny-base.png#lightbox)
+[![Screenshot showing the New York base layer of Azure Maps.](../media/ny-base.png)](../media/ny-base.png#lightbox)
 
 Let's add the transit layer to the base. The transit layer adds all known roads, major and minor. If you look closely, you can see it has also added ferry routes. Rail lines are also added.
 
-[![Screenshot showing the New York transit layer of Azure Maps](../media/ny-base-transit.png)](../media/ny-base-transit.png#lightbox)
+[![Screenshot showing the New York transit layer of Azure Maps.](../media/ny-base-transit.png)](../media/ny-base-transit.png#lightbox)
 
 On top of transit, we add the labels layer. Now it's starting to look like a map.
 
-[![Screenshot showing the New York labels layer of Azure Maps](../media/ny-base-transit-labels.png)](../media/ny-base-transit-labels.png#lightbox)
+[![Screenshot showing the New York labels layer of Azure Maps.](../media/ny-base-transit-labels.png)](../media/ny-base-transit-labels.png#lightbox)
 
 We could stop at the labels layer. An additional layer is called the _flow_ layer. This layer shows all the traffic hazards. No shortage of hazards in New York!
 
-[![Screenshot showing the New York flow layer of Azure Maps](../media/ny-base-transit-labels-flow.png)](../media/ny-base-transit-labels-flow.png#lightbox)
+[![Screenshot showing the New York flow layer of Azure Maps.](../media/ny-base-transit-labels-flow.png)](../media/ny-base-transit-labels-flow.png#lightbox)
 
 When we program with calls to Azure Maps, we can add our own layers. An obvious layer to add would be the best route found from A to B. We could add weather layers, and layers containing spatial data, if need be. There obviously comes a point when you've too many layers. Notice how the flow layer above obscures some of the labels layer. Layers have a priority, so you can determine what information gets obscured.
 

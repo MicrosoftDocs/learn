@@ -20,7 +20,7 @@ Let's assume you want to create a VM running an Ubuntu server. Setting up a site
 
 1. On the Azure home page, under **Azure services**, select **Create a resource**.
 
-    ![Screenshot that shows the Azure Marketplace with create a resource highlighted](../media/3-create-new-resource.png)
+    ![Screenshot that shows the Azure Marketplace with create a resource highlighted.](../media/3-create-new-resource.png)
 
     The *Azure Marketplace* appears in the **Create a resource** pane.
 

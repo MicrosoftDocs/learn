@@ -14,7 +14,7 @@ You're going to use a template Microsoft has published on GitHub that is specifi
 
 1. Select **Create**.
 
-    ![Screenshot showing the Template Deployment item selected with the Create button highlighted](../media/6-create-template.png)
+    ![Screenshot showing the Template Deployment item selected with the Create button highlighted.](../media/6-create-template.png)
 
     The **Custom deployment** pane appears.
 

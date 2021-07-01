@@ -4,7 +4,7 @@ The face detection API provides information about detected faces in an image, bu
 
 The ability to use artificial intelligence to recognize and match faces is one of the more powerful aspects of the Face API.
 
-:::image type="content" source="../media/4-face-recognition-concepts.png" alt-text="A group of related faces":::
+:::image type="content" source="../media/4-face-recognition-concepts.png" alt-text="A group of related faces.":::
 
 ## Face detection vs. Face recognition
 
