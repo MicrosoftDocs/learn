@@ -25,7 +25,7 @@ C# Testing Tutorial
 
 ## Summary
 
-Learn to test your C# apps with the testing tools in Visual Studio.
+Start testing your C# apps with the testing tools in Visual Studio.
 
 ## Learning objectives
 

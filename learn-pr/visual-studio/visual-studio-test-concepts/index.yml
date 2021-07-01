@@ -121,16 +121,15 @@ products:
 ### Do not edit: the unit names and order are exactly determined by the "Introduction to (product)" module pattern
 ###
 units: # stub based on prefix, module folder, and unit names
-- learn.visual-studio-test-tools.introduction
-- learn.visual-studio-test-tools.what-is-testing
-- learn.visual-studio-test-tools.why-we-test
-- learn.visual-studio-test-tools.knowledge-check
-- learn.visual-studio-test-tools.different-types-of-testing
-- learn.visual-studio-test-tools.knowledge-check
-- learn.visual-studio-test-tools.testing-schools-of-thought
-- learn.visual-studio-test-tools.knowledge-check
-- learn.visual-studio-test-tools.summary
-- learn.visual-studio-test-tools.resources
+- learn.visual-studio-test-concepts.introduction
+- learn.visual-studio-test-concepts.what-is-testing
+- learn.visual-studio-test-concepts.why-we-test
+- learn.visual-studio-test-concepts.knowledge-check
+- learn.visual-studio-test-concepts.different-types-of-testing
+- learn.visual-studio-test-concepts.knowledge-check
+- learn.visual-studio-test-concepts.testing-schools-of-thought
+- learn.visual-studio-test-concepts.knowledge-check
+- learn.visual-studio-test-concepts.summary
 ###########################################################################
 ###
 ### TODO: verify if this should start as temporary/default badge
