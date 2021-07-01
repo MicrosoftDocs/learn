@@ -44,6 +44,7 @@ Identify the subtasks of C# Testing Tutorial
 | View tests in the Test Explorer | Exercise | 2 | Yes |
 | Run tests from the Test Explorer | Exercise | 2 | No, combine with view tests. |
 | Debug tests from the Test Explorer | Exercise | 2 | No, combine with view tests. |
+| Sharpen your test writing skills | Knowledge check | 3 | Yes |
 
 ## Outline the units
 
