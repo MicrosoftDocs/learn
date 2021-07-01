@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-to-azure-virtual-networks.exercise-design-implement-virtual-network-azure
+title: 'Exercise: design and implement a Virtual Network in Azure'
+metadata:
+  title: 'Exercise: design and implement a Virtual Network in Azure'
+  description: "Exercise: design and implement a Virtual Network in Azure"
+  ms.date: 07/01/2021
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-exercise-design-implement-virtual-network-azure.md)]
