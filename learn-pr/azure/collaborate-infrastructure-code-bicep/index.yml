@@ -2,14 +2,14 @@
 uid: learn.azure.collaborate-infrastructure-code-bicep
 metadata:
   moduleType: standard
-  title: Collaborate on infrastructure as code using Bicep
+  title: Structure your Bicep code for collaboration
   description: Learn how to create modular, reusable, and documented infrastructure as code using Bicep and enable team collaboration. # user input: a description for site search and SEO
   ms.date: 04/20/2021
   author: pazdedav
   ms.author: dapazd
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
-title: Collaborate on infrastructure as code using Bicep
+title: Structure your Bicep code for collaboration
 summary: Restructure your Bicep templates into reusable modules and add comments to your infrastructure code to document it. Publish your templates on GitHub and enable team collaboration through standard Git-based workflows. # user input: introductory summary (https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)
 abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
   After competing this module, you'll be able to:
