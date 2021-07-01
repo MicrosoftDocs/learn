@@ -17,10 +17,12 @@ For example, imagine you're defining a storage account. The storage account will
 
 ### Capitalization
 
-In Bicep, you typically use camel case for the names of parameters, variables, and resource symbolic names. If you choose to use a different style, it's important to agree on one standard within your team and use it consistently.
+In Bicep, you typically use _camel case_ for the names of parameters, variables, and resource symbolic names. This means use a lowercase first letter for the first word, and then capitalize the first letter of subsequent words - like in `productManualStorageAccount`.
+
+You're not required to use camel case. If you choose to use a different style, it's important to agree on one standard within your team and use it consistently.
 
 > [!NOTE]
-> _Camel case_ means that you use a lowercase first letter for the first word, and then capitalize the first letter of subsequent words - like in `productManualStorageAccount`. Other capitalization styles include:
+> Other capitalization styles include:
 > - Pascal case (`ProductManualStorageAccount`)
 > - Snake case (`product_manual_storage_account`)
 > - Flat case (`productmanualstorageaccount`)
@@ -38,21 +40,24 @@ This renames the identifier, and all of the references to it as well.
 
 ### Resource names
 
-TODO
+Every Azure resource has a name. Names make up a part of the resource's identifier. In many cases, they also are represented as the hostnames that you use to access the resource. For example, when you create an App Service app named `myapp`, the hostname you use to access the app will be `myapp.azurewebsites.net`. Resources can't be renamed once they're deployed.
+
+It's important to consider how you name your Azure resources. Many organizations define their own resource naming convention. [The Azure Cloud Adoption framework has specific guidance](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging?azure-portal=true) that can help you define yours. The purpose of a resource naming convention is to help everyone in your organization understand what each resource is for.
+
+Additionally, every Azure resource has certain naming [rules and restrictions](/azure/azure-resource-manager/management/resource-name-rules). For example, there are restrictions around the length of names, the characters they can include, and whether names have to be globally unique or just unique within a resource group.
+
+It can be complex to follow all of the naming conventions for your organization as well as the naming requirements for Azure. A well-written Bicep template should hide this complexity from its users and determine the names for resources automatically. A good approach to follow is:
+
+- Add a parameter that is used to create a _uniqueness suffix_. This helps to ensure that your resources have unique names. It's a good idea to use the `uniqueString()` function to generate a default value. Someone who deploys your template can override this with a specific value if they want to have a meaningful name.
+- Use variables to construct resource names dynamically. Your Bicep code can ensure the names it generates follow your organization's naming convention as well as Azure's requirements. Include the uniqueness suffix as part of the resource name.
+
+> [!TIP]
+> It's better to use uniqueness suffixes rather than prefixes. This approach makes it easier to sort and to quickly scan your resource names. Also, some Azure resources have restrictions about the first character of the name, and randomly generated names can sometimes violate these restrictions.
+
+<!-- TODO -->
 
 > [!WARNING]
-> I haven't updated this section yet.
-
-Almost every resource type has certain naming [rules and restrictions](/azure/azure-resource-manager/management/resource-name-rules).
-
-Many organizations define their own naming convention that works for them. There's a specific [guidance](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging) in the Cloud Adoption Framework for Azure that can help you define yours.
-
-Following the naming convention can become a complex problem, especially since you can't rename your resource post deployment. A well-written Bicep template should hide this complexity from its users and determine the names for resources automatically.
-
-There are two common patterns that can be used (or even combined):
-
-- using **parameter decorators** to limit and validate inputs from users
-- using variables to construct resource names internally and using parameters to receive only parts of resource names. Typically a prefix or a suffix
+> I haven't updated the rest of this section yet.
 
 In our template, there are several variables used to generate resource names, for example the `hostingPlanName` variable used for the `serverfarms` resource name:
 
