@@ -21,7 +21,7 @@ AI training with Bonsai has several components that work together, including:
 
 Training simulations replicate your real-world systems to create a realistic training context for Bonsai brains. Add simulations from a range of Bonsai simulation partners or use the Simulator API to integrate custom simulators.
 
-:::image type="content" source="../media/training-simulation.png" alt-text="A simulator icon that flows into a circular graph that connects the training engine, training curriculum, and integrated simulation. An arrow flows away to indicate an exported brain. The Training simulator section is highlighted.":::
+:::image type="content" source="../media/training-simulation.png" alt-text="Simulator flows into circular graph. Outgoing arrow indicates an exported brain. The Training simulator section is highlighted.":::
 
 Training simulations model real-world processes and change state as the Bonsai brain applies actions. Training tasks can be fairly basic, such as "stand up," or more challenging, such as "learn to dance."
 
@@ -52,7 +52,7 @@ The following table describes the four training-engine components in Bonsai:
 | Learner    | Gains experience at solving the problem based on direction that an Instructor provides. |
 | Predictor  | Reports how the trained Learner behaves when presented with new data. The Predictor represents the trained brain that will be exported. |
 
-:::image type="content" source="../media/training-engine.png" alt-text="A simulator icon that flows into a circular graph that connects the training engine, training curriculum, and integrated simulation. An arrow flows away to indicate an exported brain. The training engine section is highlighted.":::
+:::image type="content" source="../media/training-engine.png" alt-text="Simulator flows into circular graph. Outgoing arrow indicates an exported brain. The training engine section is highlighted.":::
 
 ### What is the Bonsai training curriculum?
 
@@ -60,7 +60,7 @@ The following table describes the four training-engine components in Bonsai:
 
 Goals are a high-level specification of what you want the system to learn. They encapsulate your intentions for the AI. But you don't have to craft explicit reward functions or early termination definitions. Objectives are directives such as "avoid" and "minimize" that the training engine uses to direct and judge how well the AI is learning.
 
-:::image type="content" source="../media/training-curriculum.png" alt-text="A simulator icon that flows into a circular graph that connects the training engine, training curriculum, and integrated simulation. An arrow flows away to indicate an exported brain. The training curriculum section is highlighted.":::
+:::image type="content" source="../media/training-curriculum.png" alt-text="Simulator flows into circular graph. Outgoing arrow indicates an exported brain. The training curriculum section is highlighted.":::
 
 Bonsai uses a proprietary language called Inkling to encode goals and objectives. Inkling code defines what (and how) you want to teach your AI. An expression in Inkling code is any syntactic entity that can be evaluated to
 determine its value. These entities can include comments, identifies, keywords, literals, and operators.
@@ -77,7 +77,7 @@ When you make significant changes to your training curriculum, Bonsai creates a 
 
 When you're happy with the brain, you can export any version of it for use outside the platform.
 
-:::image type="content" source="../media/brains.png" alt-text="A simulator icon that flows into a circular graph that connects the training engine, training curriculum, and integrated simulation. An arrow flows away to indicate an exported brain. The Trained AI, or brain section is highlighted.":::
+:::image type="content" source="../media/brains.png" alt-text="Simulator flows into circular graph. Outgoing arrow indicates an exported brain. The Trained AI, or brain section is highlighted.":::
 
 ## How to use Bonsai to deliver AI-powered automation
 
