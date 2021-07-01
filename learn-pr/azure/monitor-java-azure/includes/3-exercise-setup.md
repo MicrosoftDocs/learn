@@ -48,7 +48,7 @@ When you run the above command, a window will pop up with the file 'deployPetCli
 
 ## Run the setup script
 
-The script takes 15-30 minutes to run and includes the creation of an Azure spring Cloud and a MySQL instance. This sample script also populates some sample data for the monitoring logs, traces, and metrics.
+The script takes 30-45 minutes to run and includes the creation of an Azure spring Cloud and a MySQL instance. This sample script also populates some sample data for the monitoring logs, traces, and metrics.
 
 In the already open Azure Cloud Shell, run the below shell script. Leave the browser window and Azure Cloud Shell open while running. Store the URL when the script completes:
 
