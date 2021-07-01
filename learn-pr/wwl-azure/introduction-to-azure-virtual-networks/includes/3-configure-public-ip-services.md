@@ -55,21 +55,3 @@ To ensure a static range of public IP addresses, you can create a public IP addr
 ## Check your knowledge 
 
 Choose the best response for each of the questions below. When you're done, select **Check your answers**.
-
-## Multiple Choice
-
-Which of the following statements about Azure VNets is correct?
-( ) Azure VNets enable communication between Azure resources. {{Virtual Networks can connect Azure resources including VMs, the App Service Environment, Azure Kubernetes Service, and Azure VM Scale sets. You can use service endpoints to connect to other Azure resource types, such as Azure SQL databases and storage accounts.}}
-( ) Outbound communication with the internet must be configured for each resource on the VNet. {{All resources in a VNet can communicate outbound to the internet, by default.}}
-( ) Azure VNets cannot be configured to communicate with on-premises resources. {{You can connect your on-premises computers and networks to a virtual network using any of the following options: Point-to-site virtual private network (VPN), Site-to-site VPN, Azure ExpressRoute.}} 
-
-( ) Traffic on an Azure VNet cannot be filtered. {{You can filter network traffic between subnets using any combination of network security groups and network virtual appliances like firewalls, gateways, proxies, and Network Address Translation (NAT) services.}} 
-
-## Multiple Choice 
-
-Which of the following statements about subnets is NOT correct?
-( ) You can assign the same IP address range to multiple subnets within a the same VNet. {{Each subnet must have a unique address range, specified in Classless Inter-Domain Routing (CIDR) format.}}
-( ) You can create multiple subnets within one VNet. {{You can create multiple virtual networks per subscription and per region, and multiple subnets within each virtual network.}}
-( ) You can use Network Security Groups (NSGs) to control access to a subnet and the resources on it. {{You can associate zero or one NSGs to each subnet to control access to the subnet and the resources on it.}}
-
-( ) You can create an unlimited number of subnets. {{The number of subnets you can create is restricted only by your subscription limit.}} 
