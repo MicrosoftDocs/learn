@@ -57,6 +57,10 @@ In the already open Azure Cloud Shell, run the below shell script. Leave the bro
 sh deployPetClinicApp.sh
 ```
 
+> [!IMPORTANT]
+> If you run into issues with the setup script, you may need to delete your resources and try again.
+> The Summary unit has instructions on how do delete your resource group and resources.
+
 ## Test the application
 
 Next, we'll verify your environment via the Azure portal.
