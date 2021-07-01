@@ -26,7 +26,7 @@ In Bicep, you typically use camel case for the names of parameters, variables, a
 > - Flat case (`productmanualstorageaccount`)
 > - Train case (`Product-Manual-StorageAccount`)
 
-### Rename identifiers in Visual Studio Code
+### Change symbolic names in Visual Studio Code
 
 When you rename identifiers, you need to make sure you rename them consistently in all parts of your template. This is especially important for parameters, variables, and resources that you refer to throughout your template.
 
@@ -39,6 +39,9 @@ This renames the identifier, and all of the references to it as well.
 ### Resource names
 
 TODO
+
+> [!WARNING]
+> I haven't updated this section yet.
 
 Almost every resource type has certain naming [rules and restrictions](/azure/azure-resource-manager/management/resource-name-rules).
 
@@ -107,6 +110,9 @@ For some resource properties, you need to create complex expressions, and then u
 
 TODO
 
+> [!WARNING]
+> I haven't updated this section yet.
+
 Your Bicep templates can contain many **elements**:
 
 - parameters (with or without default values)
@@ -141,6 +147,9 @@ TODO END
 ## Choose free-form vs. known configurations
 
 TODO
+
+> [!WARNING]
+> I haven't updated this section yet.
 
 One of the goals is to design and author a reusable and flexible infrastructure code. You don't want to have single-purpose templates with hardcoded configuration. On the other hand, exposing all resource properties as parameters can be problematic too. There are two common approaches you can choose from:
 

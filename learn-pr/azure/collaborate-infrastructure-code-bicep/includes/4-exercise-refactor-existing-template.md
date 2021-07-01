@@ -1,5 +1,11 @@
 TODO scenario
 
+## Your task
+
+Look at the Bicep template that you saved earlier. Think about the advice you've seen for how to structure your templates. Try to update your template to resolve the issues.
+
+In the sections below, there are some pointers to specific parts of the template and some hints for things you might want to change.
+
 ### Parameters
 
 1. There are some parameters in your template that aren't clear. For example, consider these parameters:
@@ -14,7 +20,7 @@ TODO scenario
 
    ::: code language="bicep" source="code/2-template.bicep" range="27" :::
 
-   Why is there a default value of `b24988ac-6180-42a0-ab88-20f7382dd24c`? What does that big long identifier mean? How would someone else know whether to use the default value or override it? What could you do to help this?
+   Why is there a default value of `b24988ac-6180-42a0-ab88-20f7382dd24c`? What does that big long identifier mean? How would someone else know whether to use the default value or override it? What could you do to improve this?
 
    > [!TIP]
    > That identifier is the _Contributor_ role definition ID for Azure. How can you use that information to improve the template?
