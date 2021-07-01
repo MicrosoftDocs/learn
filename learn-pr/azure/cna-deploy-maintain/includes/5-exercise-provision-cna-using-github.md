@@ -73,7 +73,7 @@ Now you're ready to proceed with implementing a CI/CD pipeline by using Azure De
 
     | Setting | Value |
     | --- | --- |
-    | Organization | The name of the Azure DevOps organization you'll be using in this exercise. |
+    | Organization | The name of the GitHub account you'll be using in this exercise. |
     | Repository | **cna-devops-05** |
     | Subscription | The name of the Azure subscription you'll be using in this exercise. |
     | Create new or use existing cluster | **Create new** |

@@ -170,7 +170,7 @@ Now you're ready to proceed with deploying an AKS cluster by using a GitHub work
 1. Within the GitHub repo, select the **Actions** tab header.
 1. On the **Get started with GitHub Actions** page, select **Set up this workflow**.
 1. In the file path, replace **blank.yml** with **aks-deploy.yml**.
-1. In the **Edit new file** section, replace the existing template with the following content, while ensuring that you preserve the existing indentations:
+1. In the **Edit new file** section, replace the existing template with the following content, while ensuring that you preserve the existing indentations (replace the `<subscription_ID>` placeholder with your subscription ID, which you identified earlier in this exercise):
 
     ```yaml
     name: Deploy AKS
@@ -179,7 +179,7 @@ Now you're ready to proceed with deploying an AKS cluster by using a GitHub work
 
     env:
       RESOURCEGROUPNAME: "cna-devops-03-rg"
-      SUBSCRIPTIONID: "d15badf3-b17b-4ad5-a913-5fb904bd2f71"
+      SUBSCRIPTIONID: "<subscription_id>"
       CLUSTERNAME: "cna-devops-03-aks"
       AGENTCOUNT: "3"
       AGENTVMSIZE: "Standard_DS2_v2"
@@ -214,7 +214,7 @@ Now you're ready to proceed with deploying an AKS cluster by using a GitHub work
     > The **workflow_dispatch** event will allow you to launch the workflow manually.
 
 1. On the beginning of the page, select **Start commit**.
-1. In the **Commit changes** pop-up window, select **Commit changes**.
+1. In the **Commit changes** pop-up window, select **Commit new file**.
 1. On the **Actions** tab, in the list of workflows, select the **Deploy AKS** entry.
 1. From the list of workflow runs, select **Run workflow**, and then in the drop-down menu, select **Run workflow**.
 

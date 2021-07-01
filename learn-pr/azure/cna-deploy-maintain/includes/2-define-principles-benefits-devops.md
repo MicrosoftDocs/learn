@@ -28,7 +28,7 @@ Source control, also referred to as *version control*, is the practice of tracki
 
 ### What is IaC?
 
-IaC applies DevOps principles to managing and maintaining services that traditionally are the responsibility of infrastructure and platform teams within an IT organization. These services include compute, networking, and storage components that serve as the basis for software deployment&mdash;the primary focus of development and operations teams. IaC started gaining prominence with the advent of cloud technologies, which practically eliminated dependency on physical, on-premises infrastructures.
+Infrastructure as Code (IaC) applies DevOps principles to managing and maintaining services that traditionally are the responsibility of infrastructure and platform teams within an IT organization. These services include compute, networking, and storage components that serve as the basis for software deployment&mdash;the primary focus of development and operations teams. IaC started gaining prominence with the advent of cloud technologies, which practically eliminated dependency on physical, on-premises infrastructures.
 
 IaC uses automation to set up infrastructure services and control their configuration. By using IaC, you can automatically provision AKS clusters into which you can then deploy your containerized apps. This approach offers a range of benefits, including consistency, scalability, agility, and repeatability.
 

@@ -1,15 +1,15 @@
 ﻿### YamlMime:Module
 uid: learn.azure.cna-deploy-maintain-cloud-native-apps
 metadata:
-  title: Deploy and maintain cloud-native apps
+  title: Deploy and maintain cloud-native apps with Azure Pipelines and GitHub actions
   description: This module describes how to deploy and maintain cloud-native apps.
   ms.date: 05/31/2021
   author: mpolicht
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Deploy and maintain cloud-native apps
-summary: This module describes how to implement Microsoft Azure DevOps in cloud-native application scenarios. It also describes how to use GitHub and DevOps to build and deploy infrastructure and applications.
+title: Deploy and maintain cloud-native apps with Azure Pipelines and GitHub actions
+summary: Implement DevOps in cloud-native application scenarios. Use GitHub actions and Azure Pipelines to build and deploy infrastructure and applications.
 abstract: |
   In this module, you'll:
   - Describe the principles of DevOps and their implementation in cloud-native application scenarios.
@@ -19,7 +19,7 @@ prerequisites: |
   - Understanding of cloud computing
   - Familiarity with Azure
   - Familiarity with programming concepts
-  - Understanding of DevOps principles
+  - Familiarity with DevOps principles
 iconUrl: /learn/achievements/cna-deploy-maintain-cloud-native-apps.svg
 levels:
 - intermediate

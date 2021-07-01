@@ -1,4 +1,6 @@
-﻿Applying DevOps principles to development, deployment, monitoring, and management of cloud-native applications helps you maximize their availability, stability, and performance. You can also enhance their functionality by speeding up delivery of new features.
+﻿As the scope and complexity of applications increases, so does the level of difficulty associating with deploying them in a consistent manner across multiple environments. It also becomes more difficult to minimize the potential for downtime due to a human error. Applying the best practices of software development to operational tasks helps address these challenges. Incorporating automation into the deployment process, combined with a wide range of tests and feedback loops, further mitigates potential risks. Azure Devops and GitHub Actions considerably simplify converting these ideas into practice.
+
+By applying DevOps principles to development, deployment, monitoring, and management of cloud-native applications, you can maximize their availability, stability, and performance. This also helps you enhance their functionality by speeding up delivery of new features.
 
 ## Scenario: Set up apps for authentication
 
@@ -24,5 +26,5 @@ To successfully complete this module, you should have:
 After completing this module, you'll be able to:
 
 * Describe the principles of DevOps and their implementation in cloud-native application scenarios.
-* Implement DevOps principles by using GitHub repositories, actions, and workflows.
-* Build and deploy infrastructure and applications by using GitHub workflows.
+* Implement DevOps principles by using GitHub repositories, actions, and workflows, as well as Azure Pipelines and Azure Repos.
+* Build and deploy infrastructure and applications by using GitHub workflows and Azure Pipelines.
