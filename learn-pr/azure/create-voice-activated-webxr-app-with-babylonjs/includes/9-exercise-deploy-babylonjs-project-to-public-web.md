@@ -34,13 +34,39 @@ Before jumping into hosting the website, we must first package our Node.js web p
 1. Run `npm run-script build` in the terminal to package the project into static files.
 1. After the command finishes running, you should see a folder named *dist* created in the root folder of the project.
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+## Create a storage account
 
-## (Chunk n heading)
+Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and make sure that you're using the same account that you used to create the Azure Speech resource.
+
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+1. After landing on the **Marketplace** page, in the **Search the Marketplace** box, type **storage account** and press the Enter key.
+1. Select **Storage Account** from the results.
+
+    :::image type="content" source="../media/marketplace-storage-account.png" alt-text="A screenshot of the Azure Marketplace results. There's a red box around the Speech service.":::
+
+1. On the page for the Storage Account resource, select **Create**.
+
+1. On the **Basics** tab, enter the following values for each setting.
+
+    |Field  |Value  |Details  |
+    |---------|---------|---------|
+    | **Project details**| | |
+    |**Subscription**    |   Concierge subscription      |    The resource you're creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs or will belong, if you're creating the resource group within the wizard.     |
+    |**Resource group**     |   <rgn>[Sandbox resource group]</rgn>      |    The resource group to which the Speech service will belong. All Azure resources must belong to a resource group.     |
+    | **Instance details**| | |
+    |**Name**     |    Enter a unique name     |   Choose a globally unique name for the resource. For example, you might name the resource *webxrmagicxxx*, where the x's are replaced with your initials or a series of numbers. If the name isn't globally unique, you can try any other combination. Valid characters are a-z and 0-9. The name must be 3 to 24 characters long and will be used to generate the public URL for accessing data in the account.      |
+    |**Region**     |    Geographical location near you     |   The geographical location where your app will be used.      |
+    |**Performance** | Standard | This option decides the type of disk storage used to hold the data in the Storage account. Standard uses traditional hard disks, and Premium uses solid-state drives (SSD) for faster access. |
+    |**Redundancy** | Geo-redundant storage (GRS) | In the case of a regional unavailability, the data in the storage account will still be present and accessible thanks to redundancy in other regions. Keep "Make read access to data available in the event of regional unavailability" checked. |
+
+    :::image type="content" source="../media/create-storage-account.PNG" alt-text="Screenshot of values for creating a storage account on Azure portal":::
+
+1. Select **Review + Create**.
+
+> [!NOTE]
+> It can take a few seconds to get the storage account created and ready for use. A notification will appear after deployment is complete.
+
+## Enable Static Website Hosting
 <!-- Introduction paragraph -->
 1. <!-- Step 1 -->
 1. <!-- Step 2 -->
