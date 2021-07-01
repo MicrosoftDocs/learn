@@ -15,7 +15,7 @@ quiz:
   questions:
   - content: "What is the first line of defense between untrusted network application traffic and your trusted device or your company’s trusted network?"
     choices:
-    - content: "The training of a company's employees"
+    - content: "The training of a company's employees."
       isCorrect: false
       explanation: "That's incorrect. Training, while very important, won't guard your network traffic."
     - content: "A firewall"
