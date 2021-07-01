@@ -13,17 +13,21 @@ Create a virtual network that will acts as the central connectivity point or hub
     |---------|---------|
     |Subscription     | Your subscription        |
     |Resource group    | learn-firewall-rg        |
-    |Name    |   firewallVNet      | 
+    |Name    |   firewallVNet      |
     |Region     | Same region as your resource group      |
 
 1. Select the **IP Addresses** tab.
-1. Under **Subnet name**, select **default**.
+1. Enter the following IP address space.
+    |Field |Value |
+    |---------|---------|
+    |IPv4 address space   |  10.1.0.0/16   |
+1. Above **Subnet name**, select **+ Add subnet**.
 1. Enter the following information for the subnet.
 
     |Field |Value |
     |---------|---------|
-    |Name    |  AzureFirewallSubnet    |
-    |Address range     |   10.1.0.0/24      |
+    |Subnet name    |  AzureFirewallSubnet    |
+    |Subnet address range     |   10.1.0.0/24      |
 
     Leave the rest of the values as they are.
 1. Select **Save**.
