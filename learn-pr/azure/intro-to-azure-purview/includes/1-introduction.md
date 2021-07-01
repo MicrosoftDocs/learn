@@ -2,7 +2,7 @@ As the volume and variety of data increases, the challenges of effective data go
 
 All these questions are typically not easy to answer without insights into the data and the source of storage. Before you can develop solid security plans for storage and usage, it's important to have a good idea of the data your organization uses.
 
-:::image type="content" source="../media/unified.png" alt-text="Screenshot of Azure Purview data sources listing collections that consist of SQL Server, SAP-HANA, Azure Data Lake Storage among others.":::
+:::image type="content" source="../media/where-is-data.png" alt-text="Depiction of a pie chart showing percentages of data location splits with 81% in multiple public cloud sources, 11% in private dedicated clouds, 7.5% in one public + one or more private clouds, and 0.5% in multiple public clouds only.  Also displays icons representing various source locations for on-premises and cloud sources.":::
 
 ## Example scenario
 Suppose you are a data consumer or producer of data. You may be a business or technical data analyst, data scientist, or data engineer. You likely spend much time on manual processes to annotate, catalog, and find trusted data sources.
@@ -13,7 +13,7 @@ Annotating data sources with descriptive metadata is often a lost effort. Client
 
 Azure Purview is designed to address these issues and to help enterprises get the most value from their existing information assets. The catalog makes data sources easily discoverable and understandable by the users who manage the data.
 
-:::image type="content" source="../media/schema-tab.png" alt-text="Screenshot depicting the schema tab of a .csv file data source stored in Azure Blob storage. The tab displays column names, classifications such as IP address, credit card numbers, and person's name classifications for the data. Also included is the data type for each data column. ":::
+:::image type="content" source="../media/data-governance.png" alt-text="Depiction of data governance showing a Chief Data Officer in the middle, with connections to an icon representing discovery considerations and a second icon for compliance issues.":::
 
 ## What will we be doing?
 We'll get a high-level overview of Azure Purview and discover the key aspects that make it the tool of choice for mapping out your enterprise data. We'll learn how it can help you:

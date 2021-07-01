@@ -5,7 +5,7 @@ Here is where we will take a look at how Azure Purview works, behind the scenes.
 
 ## Loading data in the Data Map
 
-The Purview Data Map is a unified map of your data assets and their relationships that enables more effective governance for your data estate. It is a knowledge graph that is the underpinning for the Purview Data Catalog and all the features that it has to offer. It is scalable and robust to meet your enterprise compliance requirements.
+The Purview Data Map is a unified map of your data assets and their relationships that enable more effective governance for your data estate. It is a knowledge graph that is the underpinning for the Purview Data Catalog and all the features that it has to offer. It is scalable and robust to meet your enterprise compliance requirements.
 
 ### Sourcing data
 Sourcing your data starts with a process where you register data sources. Azure Purview supports an array of data sources that span on-premises, multi-cloud, and software-as-a-service (SaaS) options. You register the various data sources so Azure Purview is aware of them. The data remains in its location and is not migrated to any other platform.
@@ -19,6 +19,9 @@ Each type of data source you choose, will require specific information to comple
 :::image type="content" source="../media/register-sources-form.png" alt-text="Screenshot depicting the dialog to register an Azure Blob Storage source for Azure Purview. The dialog has entries for a name, Azure subscription name and storage account name, an endpoint, and a collection to add the source to.":::
 
 Each data source will have specific requirements for authenticating and configuration, to permit scanning of the assets in that data source. If you have data stored in an Amazon S3 standard bucket, you will need to provide configuration for the connection. For this service, use Purview to provide a Microsoft account with secure access to AWS, where the Purview scanner will run. The Purview scanner uses this access to your Amazon S3 buckets to read your data, and then reports the scanning results, including only the metadata and classification, back to Azure. Use the Purview classification and labeling reports to analyze and review your data scan results.
+
+> [!NOTE]
+> Check the [Azure Purview connector for Amazon S3 documentation](https://docs.microsoft.com/azure/purview/register-scan-amazon-s3) for region support related to AWS S3 sources.
 
 In Azure Purview, there are a few options to use for authentication when the service needs to scan data sources. Some of these options are:
 
@@ -80,6 +83,15 @@ At the same time, users can contribute to the catalog by tagging, documenting, a
 
 ## Browse and search
 
-Azure Purview allows you to search information from Data Map using Purview Catalog. You can perform text based search 
+Azure Purview allows you to search information from Data Map using Purview Catalog. You can perform text-based search and incorporate business context into the search as well.
 
-Use business context to search information from the Purview catalog. Customers can define business glossaries (bulk import existing ones too) and apply business context onto assets in the Data Map. They can then use this business context to browse and search information from the Data Map 
+Use business context to search information from the Purview catalog. You can define business glossaries (bulk import existing ones too) and apply business context onto assets in the Data Map. They can then use this business context to browse and search information from the Data Map.
+
+Enable effortless discovery with:
+
+* Semantic search and browse
+* Business glossary and workflows
+* Data lineage with sources, owners, transformations, and lifecycle​
+
+
+:::image type="content" source="../media/search.png" alt-text="Screenshot depicting fictional company Adatum Corporation using the search functional of Azure Purview.":::
