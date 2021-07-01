@@ -14,7 +14,7 @@ To help you understand how Bonsai works, we'll describe the underlying logical e
 - Integrated simulator.
 - Trained AI or a *Bonsai brain*.
 
-:::image type="content" source="../media/introduction.png" alt-text="A simulator icon that flows into a circular graph. The graph connects the training engine, training curriculum, and integrated simulation. Another arrow flows away from the circular graph to indicate an exported brain.":::
+:::image type="content" source="../media/introduction.png" alt-text="Simulator flows into circular graph connecting training engine and curriculum and integrated simulation. Outgoing arrow indicates an exported brain.":::
 
 > [!NOTE]
 > Bonsai is part of the Microsoft Autonomous Systems suite.
