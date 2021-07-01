@@ -113,41 +113,36 @@ For some resource properties, you need to create complex expressions, and then u
 
 ## What order should your Bicep code follow?
 
-TODO
+Your Bicep templates can contain many elements, including parameters, variables, resources, modules, outputs, and a `targetScope` for the entire template. Bicep doesn't enforce an order for your elements to be in. However, it's important you think about the order of your elements to make sure your template is clear and understandable.
 
-> [!WARNING]
-> I haven't updated this section yet.
+There are two main authoring styles used in the community. You and your team should agree on one and use it consistently.
 
-Your Bicep templates can contain many **elements**:
+### Group elements together by element type
 
-- parameters (with or without default values)
-- variables
-- resources (including syntaxes for conditional and iterative deployments)
-- modules (also with conditional and iterative deployments, or deployments to different scopes)
-- outputs (with an option of iterative syntax)
-- target scope for the entire template
+You can group all elements of the same type together. So, all of your parameters would go in one place, usually at the top of the file, followed by variables, and then resources and modules, with outputs at the bottom. If you follow this convention, consider putting the `targetScope` at the top of the file.
 
-As a declarative language that doesn't come with a strict schema, **these elements can be written in any order**. During the deployment, when your Bicep file is compiled to a Resource Manager template, all the elements will be placed according to the JSON schema.
+This ordering makes some intuitive sense when you're used to other infrastructure as code languages, like JSON ARM templates. It also can make your template easy to understand because it's clear where you need to look for specific types of elements. However, in longer templates, it can be challenging to navigate and jump between the elements of your template.
 
-There are **two authoring styles** used in the community. You and your team should agree on one and use it consistently:
+> [!TIP]
+> Consider using Visual Studio Code's features to navigate around your template:
+> - Go to Definition
+> - Find All References
+> - Peek Definition
 
-### All element types grouped together
+You still have to decide how to order the elements within these categories. It's a good idea to group related parameters together - so for example, all of the parameters that are about a storage account belong together, and within that, the parameters about the storage account's SKU would also belong together. Similarly, group related resources together too. This helps anyone who uses your template to quickly navigate around, and to understand the important parts of the template.
 
-- our original template follows this style
-- easy to adopt if you have a prior experience with Resource Manager templates
-- for bigger templates it can be challenging to navigate and jump between the elements
+Sometimes, you create a template that has deploys a primary resource, with a number of secondary supporting resources. For example, you might create a template to deploy a website hosted on Azure App Service. The primary resource is the App Service app. Secondary resources in the same template would include the App Service plan, storage account, Application Insights instance, and others. When you have a template like this, it's a good idea to put the primary resource or resources at the top of the resource section of the template, so that anyone who opens the template can quickly identify the purpose of the template and can find the important resources.
 
-  > [!TIP]
-  > To overcome this challenge you can use built-in features in VS Code like "Go to Definition", "Find All References", or "Peak Definition".
+### Group elements together by resource type
 
-### All elements belonging to one resource grouped together
+Alternative, you can group your elements based on the type of the resources being deployed. For example, you might have a Bicep file that deploys an Azure SQL database server and database, as well as a storage account and a Log Analytics workspace. You could put all of the parameters, variables, and resources that relate to the Azure SQL resources together, then put the parameters, variables and resources for the storage account, and finally the elements for the Log Analytics workspace.
 
-- exceptions are common elements like the `location` parameter in our template. Those common elements should be placed together, ideally at the top of the Bicep file.
-- it can simplify navigation
+This approach can make it easy to read your template, since all of the elements you need for a specific resource are together. But it makes it harder to quickly check how specific element types are declared, like if you want to review all of your parameters.
 
-In our project, we'll use the first style. *Practically it means we won't need to make many structural changes.*
+You also need to consider how to handle parameters and variables that are common to multiple resources, like a `location` parameter that tells Bicep the Azure region to deploy all of your resources to. These common elements should be placed together, ideally at the top of the Bicep file.
 
-TODO END
+> [!TIP]
+> If you find yourself using this approach, consider whether it might make more sense to create _modules_ for groups of related resources, and then use a simpler template to combine the modules together. Bicep modules are covered in more detail later in this Learn module.
 
 ## Choose free-form vs. known configurations
 

@@ -2,7 +2,7 @@ You have an existing template that has been working for you so far. It deploys c
 
 As you work your way through the template, your colleague starts to get confused. Maybe your template needs some improvement to help them understand what's happening.
 
-Take a look at the template now. How many issues can you find? You're seeing the template for the first time - do you understand what everything's doing? What could be done to improve the template?
+Take a look at the template. How many issues can you find? You're seeing the template for the first time - do you understand what everything in the template is doing? What could you do to improve the template?
 
 ::: code language="bicep" source="code/2-template.bicep" :::
 
