@@ -65,25 +65,29 @@ To implement a sample Next.js-based application that uses Azure AD authenticatio
 
 With the application registered in the Azure AD tenant, you can now proceed with its implementation. To simplify your task, you'll clone a GitHub repo containing a sample Next.js code and customize it to integrate with your Azure AD tenant.
 
-1. On your computer, start the Node.js command prompt.
+1. On your local computer, start the Node.js command prompt.
+
+    > [!NOTE]
+    > Make sure to run this using the local installation of Node.js on your computer.
+
 1. From the Node.js command prompt, run the following command to clone the GitHub repo containing the sample Next.js application code you'll use in this exercise:
 
     ```azurecli
-    git clone https://github.com/polichtm/wp2104-m06u07.git
+    git clone https://github.com/MicrosoftDocs/mslearn-cloud-native-apps.git
     ```
 
 1. Run the following command to switch to the directory that hosts the clone of the GitHub repo:
 
     ```azurecli
-    cd wp2104-m06u07
+    cd ./mslearn-cloud-native-apps/m06u07
     ```
 
-1. Use your preferred text editor to review the content of the **./src/App.js** file, which retrieves an access token from Azure AD for a single-page application:
+1. Use your preferred text editor to review the content of the **./src/App.jsx** file, which retrieves an access token from Azure AD for a single-page application:
 
     > [!NOTE]
     > The sample code is based on [Tutorial: Sign in users and call the Microsoft Graph API from a React single-page app (SPA) using auth code flow](/azure/active-directory/develop/tutorial-v2-react?azure-portal=true).
 
-    The **./src/App.js** file has the following content:
+    The **./src/App.jsx** file has the following content:
 
     ```json
     import React, { useState } from "react";
@@ -287,6 +291,9 @@ You're ready to validate the Azure AD integration of the app. You could containe
     > [!NOTE]
     > Verify that the resulting web page displays the inventory data for the first tenant.
 
+    > [!NOTE]
+    > If the initial attempt fails, try again.
+
     :::image type="content" source="../media/7-azure-ad-next.js-app-displayed-database-inventory.png" alt-text="Screenshot of the page of the Express.js web app displaying the inventory data.":::
 
 1. Close the web browser window in the Incognito/InPrivate mode.
@@ -307,6 +314,9 @@ You're ready to validate the Azure AD integration of the app. You could containe
     > Verify that the output includes the Email, Id, and the access token of the **contosouser1** Azure AD user account.
 
 1. Open another browser tab in the same web browser window and navigate to the web application you deployed in the previous exercises.
+
+    > [!NOTE]
+    > If prompted, change the password of the **contosouser1** account.
 
     > [!NOTE]
     > Verify that the resulting web page displays the inventory data for the second tenant.

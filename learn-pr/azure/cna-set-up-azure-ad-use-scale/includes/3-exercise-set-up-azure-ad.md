@@ -126,7 +126,7 @@ You'll start by creating Azure AD user and group objects. After the objects are 
 
 In this task, you'll create an Azure AD tenant and a user account in the new tenant by using the Azure portal. In the next task, you'll configure this user account as a guest user account in the first tenant.
 
-1. In the web browser, on the Azure portal blade displaying properties of your Azure AD tenant, in the toolbar, select **+ Create a tenant**.
+1. In the web browser, on the Azure portal blade displaying properties of your Azure AD tenant, select **Manage tenants** and then select **+ Create**.
 1. On the **Basics** tab of the **Create a tenant** blade, ensure that the **Azure Active Directory** option is selected and select **Next: Configuration >**.
 1. On the **Configuration** tab of the **Create a tenant** blade, specify the following settings:
 
@@ -145,7 +145,7 @@ In this task, you'll create an Azure AD tenant and a user account in the new ten
 
     | Setting | Value |
     | --- | --- |
-    | User name | **contosuser1** |
+    | User name | **contosouser1** |
     | Name | **contosouser1** |
     | Let me create the password | Enabled |
     | Initial password | **Pa55w.rd1234** |
@@ -162,8 +162,8 @@ In this task, you'll create an Azure AD tenant and a user account in the new ten
 
 To conclude this exercise, you'll use the Azure portal to configure the user account in the **Contoso** Azure AD tenant as a guest user in the **Adatum** Azure AD tenant, create a new group in that tenant, and add the guest user to that group.
 
-1. In the web browser, on the Azure portal blade displaying the **Contoso \| Overview** blade of the **Contoso** Azure AD tenant, in the toolbar, in the upper right corner, select the **Directory + Subscription** icon next to the **Cloud Shell** icon.
-1. On the **Directory + subscription** blade, in the **Switch directory** section, select the entry representing the Azure AD tenant associated with the Azure subscription you're using in the exercises of this module.
+1. In the web browser, on the Azure portal blade displaying the **Contoso \| Overview** blade of the **Contoso** Azure AD tenant, in the toolbar, in the upper right corner, select the **Subscriptions** icon next to the **Cloud Shell** icon, and then select the **Switch directory** link. 
+1. On the **Directories** blade, select the entry representing the Azure AD tenant associated with the Azure subscription you're using in the exercises of this module, and then select **Switch** twice.
 
     > [!NOTE]
     > This will automatically switch your session to the Azure AD tenant associated with the Azure subscription you're using in the exercises of this module.
@@ -175,7 +175,7 @@ To conclude this exercise, you'll use the Azure portal to configure the user acc
 
     | Setting | Value |
     | --- | --- |
-    | User name | **contosuser1** |
+    | User name | **contosouser1** |
     | Email address | The value of the userPrincipalName attribute of **contosouser1** you recorded earlier in this task |
     | Personal message | **Welcome to Adatum** |
 
