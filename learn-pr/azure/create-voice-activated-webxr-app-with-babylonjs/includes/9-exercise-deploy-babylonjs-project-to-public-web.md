@@ -1,39 +1,8 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Azure Blob Storage allows developers to serve static content on the web by storing the source files in the *$web* container.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+Recall that in the scenario of the amusement park application, we need to make the Babylon.js WebXR application available on the public web.
 
-    Heading: none
-
-    Example: "A storage account represents a collection of settings that implement a business policy."
-
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
-
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
-
-    Goal: Describe the part of the scenario covered in this exercise
-
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
-
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
-
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
-
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
-
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
-
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
-
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
-
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+In this exercise, you''ll use Azure Blob Storage to serve the amusement park application as a public static website.
 
 <!-- 4. Chunked steps -------------------------------------------------------------------------------------
 
@@ -56,11 +25,14 @@ TODO: describe the end-state
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+## Build the web project
+
+Before jumping into hosting the website, we must first package our Node.js web project into a folder of static files.
+
+1. If you don't already have a terminal open in VSCode, select **Terminal** in the menu of Visual Studio Code, and then select **New Terminal** to create a new terminal.
+1. Within the terminal, make sure that you are in the root folder of the repository.
+1. Run `npm run-script build` in the terminal to package the project into static files.
+1. After the command finishes running, you should see a folder named *dist* created in the root folder of the project.
 
 ## (Chunk 2 heading)
 <!-- Introduction paragraph -->
