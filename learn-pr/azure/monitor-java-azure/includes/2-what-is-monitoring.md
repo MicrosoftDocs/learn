@@ -2,7 +2,7 @@ In this unit, we look at monitoring Java application concepts.
 
 ## Why Monitoring?
 
-In any environment, it's important to track the way in which users use your system, trace resource usage, and generally monitor the health and performance of your system. You can use this information as a diagnostic aid to detect and correct issues, and also to help spot potential problems and prevent them from occurring.
+In any environment, it's important to track the way in which people use your system, trace resource usage, and generally monitor the health and performance of your system. You can use this information as a diagnostic aid to detect and correct issues, and also to help spot potential problems and prevent them from occurring.
 
 ## Monitoring forms
 
@@ -32,7 +32,7 @@ Azure provides **Azure Monitor**, which includes a set of services that develope
 **Azure Alerts** - Monitoring data may also be sent to other locations to support certain scenarios, and some resources may write to other locations before they can be collected into Logs or Metrics.
 
 - Metric alerts provide an alert trigger when a specified threshold is exceeded. For example, a metric alert can notify you when CPU usage is greater than 95 percent.
-- Log alerts are based on things written to log files. For example, a log alert can notify you when a web server has returned many 404 or 500 responses.
+- Log alerts are based on data written to log files. For example, a log alert can notify you when a web server has returned many 404 or 500 responses.
 
 You can monitor Azure applications, services, and infrastructure using any monitoring systems of your choice - such as Elastic Stack, Splunk, New Relic, Dynatrace, and App Dynamics. Though this module we'll focus on Azure Monitor, Log Analytics and Application Insights.
 

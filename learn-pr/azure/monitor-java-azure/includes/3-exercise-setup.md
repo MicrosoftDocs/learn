@@ -2,7 +2,7 @@ In this exercise, you'll configure a sample Application to be ready for monitori
 
 ## Introduction
 
-In this exercise, you'll clone a GIT repository and run a script that sets-up an Azure Spring Cloud application and Azure Database for MySQL.
+In this exercise, you'll clone a Git repository and run a script that sets-up an Azure Spring Cloud application and Azure Database for MySQL.
 The script deploys a well-known PetClinic microservice application and is built around small independent services, communicating over HTTP via a REST API.
 
 ## The sample microservice application
@@ -39,6 +39,7 @@ When you run the above command, a window will pop up with the file 'deployPetCli
 | mysql_server_name | The name of your MySQL server. It should be unique across Azure |
 | mysql_server_admin_name | Username for the MySQL Administrator. The admin name can't be "azure_superuser", "admin", "administrator", "root", "guest, or "public" |
 | mysql_server_admin_password | A new password for the server admin user. The password must be 8 to 128 characters long and contain a combination of uppercase or lowercase letters, numbers, and non-alphanumeric characters (!, $, #, %, and so on).|
+| log_analytics | Name of your Azure Log Analytics workspace |
 
 2. Save the file by selecting the ... action panel in the top right of the editor and select "Save".
 
@@ -48,7 +49,7 @@ When you run the above command, a window will pop up with the file 'deployPetCli
 
 ## Run the setup script
 
-The script takes 30-45 minutes to run and includes the creation of an Azure spring Cloud and a MySQL instance. This sample script also populates some sample data for the monitoring logs, traces, and metrics.
+The script takes 30-45 minutes to run and includes the creation of an Azure spring Cloud and a MySQL instance. This sample script also populates sample data for the monitoring logs, traces, and metrics.
 
 In the already open Azure Cloud Shell, run the below shell script. Leave the browser window and Azure Cloud Shell open while running. Store the URL when the script completes:
 
@@ -74,9 +75,6 @@ Next, we'll verify your environment via the Azure portal.
 :::image type="content" source="../media/3-gateway-url.jpg" alt-text="screenshot showing the Spring Cloud gateway url":::
 
 In a web browser, navigate to the URL of your api-gateway to open the Pet Clinic microservice application.
-
-> [!TIP]
-> Access the Public Url in the format of "https://> <your-app>-api-gateway.azuremicroservices.io".
 
 Next, navigate to the "Owners" tab and select "Find all owners".
 Confirm your sample application is up and running, populated with data and now ready for you to explore.

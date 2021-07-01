@@ -2,13 +2,13 @@ Congratulations! You've learned how to use monitoring to for your Java applicati
 
 To that end, you've done the following actions:
 
-* Learned about the different forms of Monitoring on Azure
+* Learned about the different forms of Monitoring on Azure.
 
-* Build and deploy a Sample Microservices Application and configured it for Azure Application Performance Monitoring(APM).
+* Build and deploy a Sample Microservices Application and configured it for Azure Application Performance Monitoring (APM).
 
 * Monitored the application with Azure Application Insights.
 
-* Learned how to monitor the entire solution
+* Learned how to monitor the entire solution.
 
 ## Clean up your Azure resources
 
