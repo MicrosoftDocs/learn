@@ -96,13 +96,15 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
 > [!IMPORTANT]
 > Your virtual network gateways must be successfully deployed before you start the next exercise. A gateway can take up to 30+ minutes to complete. If the ProvisioningState does not show "Succeeded" yet, you need to wait.
 
-In this section, you'll update the remote gateway IP address references that are defined in the local network gateways. You can't update the local network gateways until you've created the VPN gateways and an IPv4 address is assigned to and associated with them. Use the following Azure CLI command to check whether both virtual network gateways have been created.  The initial state will show **Updating**.  You want to see **Succeeded** on both VNG-Azure-VNet-1 and VNG-HQ-Network.
+In this section, you'll update the remote gateway IP address references that are defined in the local network gateways. You can't update the local network gateways until you've created the VPN gateways and an IPv4 address is assigned to and associated with them.
 
-```azurecli
-az network vnet-gateway list \
-    --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --output table
-```
+1. Run the following Azure CLI command to check whether both virtual network gateways have been created.  The initial state will show **Updating**.  You want to see **Succeeded** on both VNG-Azure-VNet-1 and VNG-HQ-Network.
+
+    ```azurecli
+    az network vnet-gateway list \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --output table
+    ```
 
 ```output
 Name              Location    GatewayType    VpnType     VpnGatewayGeneration    EnableBgp    EnablePrivateIpAddress    Active    ResourceGuid                        ProvisioningState    ResourceGroup
@@ -113,7 +115,7 @@ VNG-HQ-Network    westus      Vpn            RouteBased  Generation1         Fal
 
 Remember to wait until the lists of gateways are successfully returned. Also, remember that the local network gateway resources define the settings of the *remote* gateway and network that they're named after. For example, the **LNG-Azure-VNet-1** local network gateway contains information like the IP address and networks for **Azure-VNet-1**.
 
-1. Run this command in Cloud Shell to retrieve the IPv4 address assigned to **PIP-VNG-Azure-VNet-1** and store it in a variable.
+1. Run the following command in Cloud Shell to retrieve the IPv4 address assigned to **PIP-VNG-Azure-VNet-1** and store it in a variable.
 
     ```azurecli
     PIPVNGAZUREVNET1=$(az network public-ip show \
@@ -123,7 +125,7 @@ Remember to wait until the lists of gateways are successfully returned. Also, re
         --output tsv)
     ```
 
-1. Run this command in Cloud Shell to update the **LNG-Azure-VNet-1** local network gateway so that it points to the public IP address attached to the **VNG-Azure-VNet-1** virtual network gateway.
+1. Run the following command in Cloud Shell to update the **LNG-Azure-VNet-1** local network gateway so that it points to the public IP address attached to the **VNG-Azure-VNet-1** virtual network gateway.
 
     ```azurecli
     az network local-gateway update \
@@ -132,7 +134,7 @@ Remember to wait until the lists of gateways are successfully returned. Also, re
         --gateway-ip-address $PIPVNGAZUREVNET1
     ```
 
-1. Run this command in Cloud Shell to retrieve the IPv4 address assigned to **PIP-VNG-HQ-Network** and store it in a variable.
+1. Run the following command in Cloud Shell to retrieve the IPv4 address assigned to **PIP-VNG-HQ-Network** and store it in a variable.
 
     ```azurecli
     PIPVNGHQNETWORK=$(az network public-ip show \
@@ -142,7 +144,7 @@ Remember to wait until the lists of gateways are successfully returned. Also, re
         --output tsv)
     ```
 
-1. Run this command in Cloud Shell to update the **LNG-HQ-Network** local network gateway so that it points to the public IP address attached to the **VNG-HQ-Network** virtual network gateway.
+1. Run the following command in Cloud Shell to update the **LNG-HQ-Network** local network gateway so that it points to the public IP address attached to the **VNG-HQ-Network** virtual network gateway.
 
     ```azurecli
     az network local-gateway update \
@@ -164,7 +166,7 @@ You'll now complete the configuration by creating the connections from each VPN 
     SHAREDKEY=<shared key>
     ```
 
-2. Remember that **LNG-HQ-Network** contains a reference to the IP address on your simulated on-premises VPN device. Run this command in Cloud Shell to create a connection from **VNG-Azure-VNet-1** to **LNG-HQ-Network**.
+2. Remember that **LNG-HQ-Network** contains a reference to the IP address on your simulated on-premises VPN device. Run the following command in Cloud Shell to create a connection from **VNG-Azure-VNet-1** to **LNG-HQ-Network**.
 
     ```azurecli
     az network vpn-connection create \
