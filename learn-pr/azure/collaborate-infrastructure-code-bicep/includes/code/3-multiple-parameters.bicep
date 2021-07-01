@@ -1,0 +1,3 @@
+param appServicePlanSkuName string
+param appServicePlanSkuCapacity int
+param storageAccountSkuName string

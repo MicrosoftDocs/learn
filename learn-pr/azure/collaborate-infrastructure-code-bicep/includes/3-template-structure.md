@@ -146,73 +146,39 @@ You also need to consider how to handle parameters and variables that are common
 
 ## How flexible should a Bicep file be?
 
-When you define your infrastructure as code, one of your goals is to make your templates reusable and flexible. You don't want to create single-purpose templates that have hard-coded configuration. On the other hand, it doesn't make sense to expose all resource properties as parameters: you create templates that work for your specific business problem or solution, not generic templates that need to work for every situation.
+One of the goals of defining your infrastructure as code is to make your templates reusable and flexible. You don't want to create single-purpose templates that have hard-coded configuration. On the other hand, it doesn't make sense to expose all resource properties as parameters: you create templates that work for your specific business problem or solution, not generic templates that need to work for every situation. You also don't want to have so many unnecessary parameters that it takes a long time for anyone to deploy your template. This is particularly important when you configure the SKUs and instance counts of resources.
 
-TODO
+When you're planning a template, consider how you'll balance flexibility with simplicity. There are two common approaches to providing parameters in templates: providing free-form configuration options, and using known sets of configuration. Let's consider an example Bicep that deploys a storage account and an App Service plan.
 
-There are two common approaches you can choose from:
+### Provide free-form configuration options
 
-### Free-form configuration
+You might consider creating a set of parameters to control each of the SKUs and instance counts for the resources:
 
-- provides maximum flexibility and many variations
-- all resource properties are made available as parameters, allowing the user to provide all input values
-- makes it difficult to exclude incorrect combinations and apply input validations
+::: code language="bicep" source="code/3-multiple-parameters.bicep" :::
 
-  > [!TIP]
-  > Having potentially dozens of parameters in a template can be overwhelming. This could be simplified by grouping related parameters together in form of a parameter object. This will however reduce your ability to validate provided inputs.
+This provides the most flexibility, since anyone who uses the template can specify any combination of parameter values they want. However, as you add more resources, you need more parameters - and your template becomes more complicated as a result. Also, you might need to restrict certain combinations of parameters, or ensure that when a specific resource is deployed using one SKU, another resource needs to be deployed using another specific SKU. It's hard to enforce these rules when you provide so many individual parameters.
 
-### Known configuration
+> [!TIP]
+> Think about anyone who will use or work with your template. If they open it and see dozens of parameters, it could be overwhelming. You might be able to reduce the number of parameters by grouping related parameters together in form of a parameter object. However, this reduces your ability to validate the parameter values.
 
-- also known as *T-shirt sizing*
-- allows you to select from a set of defined configurations based on size, criticality, or environment type
-- offers lower flexibility but delivers tested and validated configurations
-- it also abstracts more complexity from end users, for example a domain-specific knowledge
-- it's easier to support, test, and troubleshoot
+### Use known configuration sets
 
-If we wanted to use the second approach for our template, instead of exposing all the capacity details for the `serverFarm` resource, we could introduce two "sizes":
+Alternatively, you could provide a single parameter with a list of allowed values, like a list of environment types. When someone deploys your template, they only need to select a value for this one parameter:
 
-| Environment  | Specification  |
-|---------|---------|
-|Production     | P2V3 SKU and three worker nodes        |
-|Test     | S2 SKU and one worker node        |
+::: code language="bicep" source="code/3-configuration-map.bicep" range="4-9" :::
 
-To implement this change, we would:
+> [!NOTE]
+> This approach is sometimes called _t-shirt sizing_. When you buy a t-shirt, you don't get lots of options for its length, width, sleeves, and so forth - you simply choose between small, medium, and large sizes.
 
-1. Create a new `environment` parameter with two allowed values,
-2. Add a `webFarmSizing` variable that would hold both configuration options, and
-3. Update the `sku` property in the `hostingPlan` resource.
+Configuration sets offer lower flexibility, since anyone who deploys your template can't specify specific sizes for individual resources. But, it means you can validate each set of configurations and ensure they fit your requirements. It reduces the need for your template's users to understand all of the different options available for each resource, and it becomes easier to support, test, and troubleshoot your templates.
 
-The following code snippet shows how such implementation could look like:
+When you work with configuration sets, it's often useful to create a _map_ variable, which you use to determine the specific properties you set on different resources based on the parameter:
 
-```bicep
-@description('Select what environment you want to provision. Allowed values are Production and Test')
-@allowed([
-  'Production'
-  'Test'
-])
-param environment string = 'Test'
+::: code language="bicep" source="code/3-configuration-map.bicep" range="13-36" :::
 
-var webFarmSizing = {
-  Production: {
-    name: 'P2V3'
-    capacity: 3
-  }
-  Test: {
-    name: 'S2'
-    capacity: 1
-  }
-}
+Your resource definitions then use the configuration map to define the resource properties:
 
-...
-
-resource hostingPlan 'Microsoft.Web/serverfarms@2020-06-01' = {
-  name: hostingPlanName
-  location: location
-  sku: webFarmSizing[environment]
-}
-```
-
-TODO END
+::: code language="bicep" source="code/3-configuration-map.bicep" range="38-42" highlight="4" :::
 
 ## Use version control effectively
 

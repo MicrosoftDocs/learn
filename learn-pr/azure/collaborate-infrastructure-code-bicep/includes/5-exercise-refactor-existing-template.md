@@ -67,6 +67,14 @@ Take a look at the symbolic names for the resources in the template. What could 
 
    ::: code language="bicep" source="code/2-template.bicep" range="94-102" highlight="5" :::
 
+### Configuration set
+
+Look at how the SKUs are set for the App Service plan.
+
+TODO
+
+Could you provide a configuration set to simplify the parameters?
+
 ### Commented-out resource
 
 See the commented-out resource, `storageAccount`? Do you think that needs to be in the file?
