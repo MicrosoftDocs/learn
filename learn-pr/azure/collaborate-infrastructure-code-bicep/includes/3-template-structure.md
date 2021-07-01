@@ -144,14 +144,13 @@ You also need to consider how to handle parameters and variables that are common
 > [!TIP]
 > If you find yourself using this approach, consider whether it might make more sense to create _modules_ for groups of related resources, and then use a simpler template to combine the modules together. Bicep modules are covered in more detail later in this Learn module.
 
-## Choose free-form vs. known configurations
+## How flexible should a Bicep file be?
+
+When you define your infrastructure as code, one of your goals is to make your templates reusable and flexible. You don't want to create single-purpose templates that have hard-coded configuration. On the other hand, it doesn't make sense to expose all resource properties as parameters: you create templates that work for your specific business problem or solution, not generic templates that need to work for every situation.
 
 TODO
 
-> [!WARNING]
-> I haven't updated this section yet.
-
-One of the goals is to design and author a reusable and flexible infrastructure code. You don't want to have single-purpose templates with hardcoded configuration. On the other hand, exposing all resource properties as parameters can be problematic too. There are two common approaches you can choose from:
+There are two common approaches you can choose from:
 
 ### Free-form configuration
 
