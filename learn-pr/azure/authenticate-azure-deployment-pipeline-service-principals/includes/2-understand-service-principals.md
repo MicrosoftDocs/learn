@@ -20,14 +20,14 @@ Azure Active Directory (Azure AD) is the service that manages identities for Azu
 
 :::image type="content" source="../media/2-security-principals.png" alt-text="Diagram showing the four types of security principal: user, group, service principal, and managed identity." border="false":::
 
-- **A user** represents a human, who usually signs in interactively using a browser. Users often have additional security checks associated with their sign-ins, such as multi-factor authentication (MFA) and conditional access based on their location or network.
+- **A user** represents a human, who usually signs in interactively using a browser. Users often have additional security checks to perform when they sign in, such as multifactor authentication (MFA) and conditional access based on their location or network.
 - **A group** represents a collection of users. Groups don't authenticate directly, but they provide a convenient way to assign permissions to a set of users together.
-- **A service principal** represents an automated process or system, which usually doesn't have a human directly running it. Service principals are the topic of this module.
+- **A service principal** represents an automated process or system, which usually doesn't have a human directly running it.
 - **A managed identity** is a special type of service principal.
 
 ### Service principals
 
-A service principal is a special type of account. It can sign in to Azure AD, but there's no human to interact with the sign-in process. This means that service principals don't have multifactor authentication or other similar protections, since those require a person to do something to prove their identity.
+A service principal is a special type of account. It can sign in to Azure AD, but there's no human to sign in and interact with the authentication process. This means that service principals don't have multifactor authentication or other similar protections, since those require a person to do something to prove their identity.
 
 In Azure AD, a service principal is identified by an _application ID_, which is a globally unique ID (GUID), and a credential. For pipelines, the credential is usually a strong password called a _key_, or alternatively you can use a _certificate_.
 
@@ -47,7 +47,7 @@ When you work with pipelines, you usually can't use managed identities. This is 
 
 You might wonder why you need to create this whole new type of object just to authenticate a pipeline, when you've got user accounts that work perfectly well.
 
-User accounts aren't designed or intended for unattended use. The authentication process for a user account often checks that a human is the person who is attempting to sign in. Increasingly often, organizations employ additional security checks during authentication, including MFA, CAPTCHA checks, and inspecting the device and network the user is using so that they can verify the legitimacy of a sign-in request.
+User accounts aren't designed or intended for unattended use. The authentication process for a user account often checks that a human is the person who is attempting to sign in. Increasingly often, organizations employ additional security checks during authentication, including MFA, CAPTCHA checks, and inspecting the device and network the user is using so that they can verify the legitimacy of a request to sign in.
 
 Pipelines are designed to run your deployments even when nobody is sitting there actively running them - in fact, most of the benefits of pipelines come from the fact that they are completely automated and don't require human interaction. If you store your username and password in a pipeline and try to use it to sign in, it probably won't work. Even if it does seem to work, it could easily break in the future if Azure AD or your organizational administrator adds more security checks to your user authentication process.
 
