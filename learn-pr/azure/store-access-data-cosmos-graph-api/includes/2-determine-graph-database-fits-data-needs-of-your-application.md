@@ -18,7 +18,7 @@ In order to understand graph databases, you first need to know what we mean by a
 
 More formally, this data model is known as a *Property Graph Model*, and Azure Cosmos DB supports this model.
 
-![Screenshot showing the data graph and their relationships](../media/2-graph-data-relationships.png)
+![Screenshot showing the data graph and their relationships.](../media/2-graph-data-relationships.png)
 
 Typically, graph databases are implemented as NoSQL stores, such as Azure Cosmos DB or MongoDB, and usually require schema flexibility and rapid iteration. With the graph data model, changes to the data model can be achieved with little or no impact to the application. Because relationships are treated as data rather than schema structure, there are many scenarios where graph databases are useful, as they let you model and store efficiently in a non-tabular format.
 

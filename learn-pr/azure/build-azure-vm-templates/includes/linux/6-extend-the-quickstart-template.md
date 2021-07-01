@@ -2,7 +2,7 @@ Now that you've defined the template resource for the Custom Script Extension th
 
 Here's what the Nginx configuration will look like.
 
-![A web browser showing the resulting Nginx configuration](../../media/6-browser-linux.png)
+![A web browser showing the resulting Nginx configuration.](../../media/6-browser-linux.png)
 
 ## Build the template
 
@@ -157,6 +157,6 @@ The deployment succeeded, so let's see the resulting configuration in action.
 
  1. Navigate to the IP address you see from a separate browser tab. You see something like the following message:
 
-    ![A web browser showing the resulting Nginx configuration](../../media/6-browser-linux.png)
+    ![A web browser showing the resulting Nginx configuration.](../../media/6-browser-linux.png)
 
 Great work! With the Custom Script Extension resource in place, you're able to extend your deployment to do more.

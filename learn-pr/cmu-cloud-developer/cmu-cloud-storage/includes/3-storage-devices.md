@@ -7,7 +7,7 @@ We shall now dive into the actual devices used to store and persist data. This v
 
 As a quick recap, the memory hierarchy is illustrated in the following figure. The fastest (and most expensive) storage space in a modern computer is the on-chip registers, which consist of about sixteen 8-byte registers per core. These can be accessed within a single clock cycle (<1 nanosecond). Next, we have static RAM (SRAM), which the storage technology uses in cache memory. It can be accessed between 0.5 to 2.5 nanoseconds, but costs about $10-50 per megabyte. Modern processors have a few megabytes of this type of memory located within the various levels (L1-L3) of cache on the processor die. Each level differs in terms of capacity, access time, bandwidth, and organization.
 
-![Memory hierarchy](../media/memory-triangle.png)
+![Memory hierarchy.](../media/memory-triangle.png)
 
 _Figure 3: Memory hierarchy_
 
@@ -23,7 +23,7 @@ Magnetic disks have been the most cost-effective and popular storage systems for
 
 However, magnetic disks are among the slowest storage technologies. Typical access latencies on modern disks are 5-20 milliseconds. The main reason for the performance of magnetic disks is the fact that there are moving parts involved during reading and writing of data. As illustrated in the following figure, magnetic disks are organized as a collection of sectors, tracks, and cylinders. In particular, a surface on a typical disk drive is divided into a number of concentric tracks. Each track is divided into a number of equal-sized sectors. The data stored at sectors is read and written using a set of read and write heads, with one head per surface. The set of tracks selected by the disk heads at any one time is called a **cylinder**. The data at sectors is accessed by moving disk heads to the appropriate cylinder (the time required for this task is called **seek time**) and then waiting for the disk to rotate until the desired disk sector is under one of the heads (called the **rotational time**). The time required to access a sector (i.e., seek time + rotational time) depends on the distance of the current position of the disk heads from the desired sector.
 
-![Architecture of a magnetic hard disk drive](../media/disk-architecture.png)
+![Architecture of a magnetic hard disk drive.](../media/disk-architecture.png)
 
 _Figure 4: Architecture of a magnetic hard disk drive_
 
@@ -33,7 +33,7 @@ As a result, magnetic storage disks are slow, particularly for random reads and 
 
 The emergence of NAND flash technology has brought increased performance and reduced prices to solid-state storage in the past decade or so. Solid-state drives (SSDs), unlike magnetic disks, do not have any moving parts, and are nearly an order of magnitude faster than magnetic disks for random reads and writes. SSDs have access latencies that are an order of magnitude better than magnetic disks (70-150 nanoseconds for sequential operations), but cost significantly more (about $2-$5 per GB). 
 
-![Architecture of a solid-state hard drive](../media/ssd.png)
+![Architecture of a solid-state hard drive.](../media/ssd.png)
 
 _Figure 5: Architecture of a solid-state hard drive_
 

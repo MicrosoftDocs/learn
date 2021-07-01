@@ -6,7 +6,7 @@ Good contrast allows people with low vision or color blindness to view content o
 
 When using color to represent something on a slide, provide an alternative method of communicating the same information. For example, if you have a series of circles that have different colors to distinguish them from each other, add a unique symbol or icon within each shape.
 
-:::image type="content" source="../media/colored-circles.png" alt-text="A set of three different colored circles with unique icons in the middle":::
+:::image type="content" source="../media/colored-circles.png" alt-text="A set of three different colored circles with unique icons in the middle.":::
 
 To check contrast:
 
@@ -25,8 +25,8 @@ The Reading Order pane shows the reading order in descending order from the top.
 2. Select the **Check reading order** category in the **Warnings** section to open the list. When the reading order of the objects on a slide doesn\'t match one of the common ways objects are spatially ordered, Accessibility Checker lists the slide here.
 3. Point at a slide number in the list, then select the adjoining drop-down arrow. Select the **Verify object order** command. This opens the **Reading Order** pane.
 
-:::image type="content" source="../media/project-status.png" alt-text="An example PowerPoint slide with the title Project status":::
-:::image type="content" source="../media/reading-order.png" alt-text="Screenshot of the Reading Order pane in PowerPoint":::
+:::image type="content" source="../media/project-status.png" alt-text="An example PowerPoint slide with the title Project status.":::
+:::image type="content" source="../media/reading-order.png" alt-text="Screenshot of the Reading Order pane in PowerPoint.":::
 
 The Selection Pane, on the other hand, indicates the order a screen reader will read the elements of a slide from bottom to top. When using the Selection Pane, make sure the slide title is last in the list rather than first (again, disregarding elements marked as decorative).
 
@@ -35,8 +35,8 @@ To set reading order in the Selection Pane:
 1. Select **Home** \> **Arrange** \> **Selection Pane**.
 2. Adjust the reading order by clicking and dragging the items to the correct order or by using the up and down arrow controls.
 
-:::image type="content" source="../media/project-status.png" alt-text="An example PowerPoint slide with the title Project status":::
-:::image type="content" source="../media/selection-pane.png" alt-text="Screenshot of the Selection pane in PowerPoint":::
+:::image type="content" source="../media/project-status.png" alt-text="An example PowerPoint slide with the title Project status.":::
+:::image type="content" source="../media/selection-pane.png" alt-text="Screenshot of the Selection pane in PowerPoint.":::
 
 ## Slide titles
 
@@ -47,7 +47,7 @@ When slides are identified as having missing titles in the Accessibility Checker
 1. Open the drop-down for **Missing slide title**.
 2. Choose an option from the list: "Set as slide title," "Add slide title," or "Add hidden slide title."
 
-:::image type="content" source="../media/missing-slide-title.png" alt-text="Screenshot of the Selection pane in PowerPoint":::
+:::image type="content" source="../media/missing-slide-title.png" alt-text="Screenshot of the Selection pane in PowerPoint.":::
 
 ## Charts and graphs
 
@@ -62,7 +62,7 @@ To create accessible charts:
 3. In the **Format Data Series** panel, select **Fill & Line**, and choose a background pattern.
 4. Within the **Chart Design** tab, select **Add Chart Elements**, and add **Data Labels** and a **Data Table**. Note that you can also use colors that meet color contrast requirements in addition to an alternative such as the data table.
 
-:::image type="content" source="../media/add-chart-element.png" alt-text="Data Labels in Add Chart Element drop down menu highlighted":::
+:::image type="content" source="../media/add-chart-element.png" alt-text="Data Labels in Add Chart Element drop down menu highlighted.":::
 
 ## Layout and design
 
@@ -74,4 +74,4 @@ To create a structured layout:
 - Provide good contrast for foreground and background colors.
 - Use a sans serif font.
 
-:::image type="content" source="../media/smart-art.png" alt-text="SmartArt graphic options in PowerPoint":::
+:::image type="content" source="../media/smart-art.png" alt-text="SmartArt graphic options in PowerPoint.":::

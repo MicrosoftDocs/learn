@@ -69,7 +69,7 @@ Before creating the second route, let's verify that the logging route is working
 
 1. Click **Create**.
 
-    [![Screenshot showing the new job creation button](../media/vibration-hub-new-job-create.png)](../media/vibration-hub-new-job-create.png#lightbox)
+    [![Screenshot showing the new job creation button.](../media/vibration-hub-new-job-create.png)](../media/vibration-hub-new-job-create.png#lightbox)
 
     The **New Stream Analytics job** pane appears.
 

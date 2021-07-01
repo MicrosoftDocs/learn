@@ -73,7 +73,7 @@ IoT DevKit enters AP mode for configuring the Wi-Fi connection. You'll see the s
 
 Use a Web browser on a different Wi-Fi enabled device (computer or mobile phone) to connect to the IoT DevKit SSID displayed in the previous step.
 
-![An illustration is showing how to connect the network](../media/devkit-network.png)
+![An illustration is showing how to connect the network.](../media/devkit-network.png)
 
 Browse **192.168.0.1**. Select the Wi-Fi network that you want the IoT DevKit to connect to, type the Wi-Fi password then click Save.
 

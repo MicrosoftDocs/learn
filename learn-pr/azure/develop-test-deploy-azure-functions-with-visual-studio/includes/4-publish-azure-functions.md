@@ -26,7 +26,7 @@ Continuous deployment is a great option for projects where multiple and frequent
 - OneDrive
 - Azure DevOps
 
-![Screenshot of the Deployment Center page in an Azure Functions app](../media/4-deployment-center.png)
+![Screenshot of the Deployment Center page in an Azure Functions app.](../media/4-deployment-center.png)
 
 You can configure continuous deployment from the Azure portal, using the **Deployment Center** feature of an Azure Functions app. Deployment is configured on a per-function app basis.
 

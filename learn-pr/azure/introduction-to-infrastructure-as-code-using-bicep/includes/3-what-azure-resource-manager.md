@@ -44,7 +44,7 @@ When you send a request from any of the Azure tools, APIs, or SDKs, Resource Man
 
 The following image shows the role Resource Manager plays in handling Azure requests:
 
-![Resource Manager](../media/azure-resource-manager.png)
+![Resource Manager.](../media/azure-resource-manager.png)
 
 All control plane operation requests are sent to a Resource Manager URL. For example, the create or update operation for virtual machines is a control plane operation. Here's the request URL for this operation:
 

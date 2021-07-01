@@ -46,7 +46,7 @@ To save time, let's start by running a script to host our API in Azure. The scri
     - **api/weather/{latitude}/{longitude}**, which returns meteorological data for the current day at the specified latitude and longitude (double values).
     - **api/weather/{date}/{latitude}/{longitude}**, which returns meteorological data for the specified day (date value) at the specified latitude and longitude (double values).
 
-    ![Swagger view](../media/3-swagger.png)
+    ![Swagger view.](../media/3-swagger.png)
 
 1. Finally, copy the last URL from the Cloud Shell output. This location is the Swagger JSON URL. You'll need it later in this exercise.
 
@@ -95,7 +95,7 @@ After deployment has completed, import the Weather API into the API Management g
 
 1. Leave the other settings at their defaults, and then select **Create**.
 
-    ![Importing this API in API Management](../media/3-import-the-api.png)
+    ![Importing this API in API Management.](../media/3-import-the-api.png)
 
 ## Add a subscription key to access the Weather API
 
@@ -103,7 +103,7 @@ The final step is to add a subscription key for the weather API.
 
 1. In the left nav bar, under **APIs**, select **Subscriptions**, and then from the top menu bar, select **Add subscription**.
 
-    ![Screenshot showing how to add a new subscription](../media/3-subscriptions.png)
+    ![Screenshot showing how to add a new subscription.](../media/3-subscriptions.png)
 
 1. In the **New subscription** , enter the following details, and then select **Save**.
 
@@ -115,7 +115,7 @@ The final step is to add a subscription key for the weather API.
     | **Scope** | API |
     | **API** | Select the Weather Data API from the list |
 
-    ![Screenshot showing how to add a new subscription again](../media/3-add-subscription.png)
+    ![Screenshot showing how to add a new subscription again.](../media/3-add-subscription.png)
 
 1. Select **Save**.
 

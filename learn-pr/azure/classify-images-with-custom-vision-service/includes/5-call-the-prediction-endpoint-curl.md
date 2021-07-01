@@ -41,15 +41,15 @@ In the last exercise, we tested our trained model using the **Quick Test** featu
 
     :::image type="content" source="../media/5-prediction-json.png" alt-text="Screenshot of a JSON response showing probability for each tag." loc-scope="other"::: <!-- "Custom vision", no-loc -->
 
-    ![Screenshot of a JSON response showing probability for each tag](../media/5-prediction-json.png) 
+    ![Screenshot of a JSON response showing probability for each tag.](../media/5-prediction-json.png) 
 
 3. Try more predictions by replacing the URL in the request body above, with the URLs in the following table. 
 
     |Image  | URL  |
     |---------|---------|
-    |![Thumbnail of test picasso image](../media/picasso-test-02-thumb.jpg)     | `https://raw.githubusercontent.com/MicrosoftDocs/mslearn-classify-images-with-the-custom-vision-service/master/test-images/PicassoTest_02.jpg`        |
-    |![Thumbnail of test rembrandt image](../media/rembrandt-test-01-thumb.jpg)     |  `https://raw.githubusercontent.com/MicrosoftDocs/mslearn-classify-images-with-the-custom-vision-service/master/test-images/RembrandtTest_01.jpg`       |
-    |![Thumbnail of test pollock image](../media/pollock-test-01-thumb.jpg)  |   `https://raw.githubusercontent.com/MicrosoftDocs/mslearn-classify-images-with-the-custom-vision-service/master/test-images/PollockTest_01.jpg`     |
+    |![Thumbnail of test picasso image.](../media/picasso-test-02-thumb.jpg)     | `https://raw.githubusercontent.com/MicrosoftDocs/mslearn-classify-images-with-the-custom-vision-service/master/test-images/PicassoTest_02.jpg`        |
+    |![Thumbnail of test rembrandt image.](../media/rembrandt-test-01-thumb.jpg)     |  `https://raw.githubusercontent.com/MicrosoftDocs/mslearn-classify-images-with-the-custom-vision-service/master/test-images/RembrandtTest_01.jpg`       |
+    |![Thumbnail of test pollock image.](../media/pollock-test-01-thumb.jpg)  |   `https://raw.githubusercontent.com/MicrosoftDocs/mslearn-classify-images-with-the-custom-vision-service/master/test-images/PollockTest_01.jpg`     |
    
 
 Our prediction endpoint is working as expected. Calling the API is as simple as making a HTTP request to the endpoint with a Prediction-Key and an image URL.

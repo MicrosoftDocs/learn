@@ -212,4 +212,4 @@ Let's confirm that the VPN tunnels are connected.
 
 The site-to-site configuration is now complete. Your final topology, including the subnets, and connections, with logical connection points, appears in the following diagram. Virtual machines deployed in the **Services** and **Applications** subnets can now communicate with each other, now that the VPN connections have been successfully established.
 
-![Resources deployed during unit 4 exercise](../media/4-resources-deployed-during-exercise-final.svg)
+![Resources deployed during unit 4 exercise.](../media/4-resources-deployed-during-exercise-final.svg)
