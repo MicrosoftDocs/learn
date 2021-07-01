@@ -34,13 +34,13 @@ In this task, you'll configure a sample Next.js application that retrieves data 
 1. From the Bash session in the **Cloud Shell** pane, run the following command to clone the GitHub repo containing the sample Next.js application code you'll use in this exercise:
 
    ```bash
-   git clone https://github.com/polichtm/wp2104-m05u08.git
+   git clone https://github.com/MicrosoftDocs/mslearn-cloud-native-apps.git
    ```
    
 1. From the Bash session in the **Cloud Shell** pane, run the following command to switch to the directory containing the clone of the GitHub repo:
   
    ```bash
-   cd wp2104-m05u08/
+   cd ./mslearn-cloud-native-apps/m05u08/
    ```
    
 1. From the Bash session in the **Cloud Shell** pane, run the following command to display the content of the **index.js** file containing the Next.js script that establishes a connection to the Cosmos DB account you created in the first exercise of this module and queries the content of the **iotcollection** in the **iotdb** database, which you created in the second exercise of this module:
