@@ -9,9 +9,9 @@ We covered how the Azure Purview Studio is used to register data sources and cre
 
 The criteria help you evaluate how Azure Purview can help your business catalog data for users and data producers. It also showed how Azure Purview can help your company meet its data governance needs through the use of the metadata and classification features.
 
-## References for mor information
+## References for more information
 
-[Introduction to Azure Purview (preview) - Azure Purview | Microsoft Docs](https://docs.microsoft.com/azure/purview/overview)
+[Introduction to Azure Purview - Azure Purview | Microsoft Docs](https://docs.microsoft.com/azure/purview/overview)
 
 [Map your data estate with Azure Purview - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/azure-purview/map-your-data-estate-with-azure-purview/ba-p/1958197)
 
