@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 25
 sandbox: true
-notebook: https://review.docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models/notebooks/01-deep-neural-networks.ipynb?branch=pr-en-us-18577
+notebook: /notebooks/01-deep-neural-networks.ipynb

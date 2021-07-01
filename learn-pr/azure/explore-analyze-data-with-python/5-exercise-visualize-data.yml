@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 sandbox: true
-notebook: https://review.docs.microsoft.com/learn/modules/explore-analyze-data-with-python/notebooks/02-visualize-data.ipynb?branch=pr-en-us-18577
+notebook: /notebooks/02-visualize-data.ipynb
