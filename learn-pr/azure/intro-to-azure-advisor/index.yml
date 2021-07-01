@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: intro to azure advisor
-summary: "This introduces you to Azure Advisor and describes its characteristics, capabilities, and use cases."
+summary: "This module introduces you to Azure Advisor and describes its characteristics, capabilities, and use cases."
 abstract: |
   By the end of this module, you'll be able to:
     - Evaluate whether Azure Advisor is appropriate to give recommendations from your Azure environment.
@@ -22,7 +22,10 @@ iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
-  - "developer", "administrator", "solution-architect", "technology-manager"
+  - developer
+  - administrator
+  - solution-architect
+  - technology-manager
 products:
 - azure
 units:
