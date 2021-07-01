@@ -40,7 +40,7 @@ products:
   - azure-resource-manager
 units:
 - learn.azure.collaborate-infrastructure-code-bicep.introduction
-- learn.azure.collaborate-infrastructure-code-bicep.review-existing-template
+- learn.azure.collaborate-infrastructure-code-bicep.exercise-review-existing-template
 - learn.azure.collaborate-infrastructure-code-bicep.template-structure
 - learn.azure.collaborate-infrastructure-code-bicep.exercise-refactor-existing-template
 - learn.azure.collaborate-infrastructure-code-bicep.modules

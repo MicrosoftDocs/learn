@@ -116,6 +116,18 @@ resource roleassignment 'Microsoft.Authorization/roleAssignments@2020-04-01-prev
   }
 }
 
+//resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
+//  name: 'mystorageaccount'
+//  location: 'eastus'
+//  sku: {
+//    name: 'Standard_LRS'
+//  }
+//  kind: 'StorageV2'
+//  properties: {
+//    accessTier: 'Hot'
+//  }
+//}
+
 resource AppInsights_webSiteName 'Microsoft.Insights/components@2018-05-01-preview' = {
   name: 'AppInsights${webSite.name}'
   location: location

@@ -1,55 +1,50 @@
 Bicep gives you a lot of flexibility to decide how you structure your code. You can organize your template in the way you like and apply your own style.
 
-In this unit, you'll learn about the standard style for Bicep code, and the options you have to customize and use your own style. You'll also look at the Bicep template you saw earlier, and you'll start to think about how to improve it.
-
-
+In this unit, you'll learn about the way you style your Bicep code, and the importance of a consistent style and clear, understandable Bicep code. You'll also start to think about how to improve the Bicep file that you saw earlier.
 
 ## How are your resources named?
-
-There's an old saying in the tech community that naming conventions are one of the hardest problems to solve in the industry. Whatever language you use, you should define one convention and then use it consistently.
 
 In Bicep, it's important that you give your resources meaningful names. Resources in Bicep have two names:
 
 - The symbolic name is only used within the Bicep file and doesn't appear in Azure. This helps anyone who reads or modifies your template to understand the purpose of the resource and its configuration, so they can make an informed decision about whether to change it.
 - The resource name is the name of the resource that's created in Azure. Many resources have constraints on their names, and may require unique names.
 
-In the Bicep template above, your template resources have symbolic names with several different naming styles, such as:
+### Symbolic names
 
-- `webSite` and `webSiteConnectionStrings`, which use camel case.
-- `roleassignment` and `sqlserver`, which are all in lowercase.
-- `sqlserverName_databaseName` and `AppInsights_webSiteName`, which use underscores to separate parts of their names, and a mixture of capitalization styles.
+It's important to think about the symbolic names you apply to your resources. Imagine that a colleague will need to modify the template - will they understand what each resource does?
 
-A _naming convention_ is a set of rules for choosing how you represent identifiers in your code. There are many commonly used conventions. For example, imagine you're creating a parameter to collect the name of a SKU. You might use any of these conventions:
+For example, imagine you're defining a storage account. The storage account will contain product manuals for users to download from your website. You could name give the resource a symbolic name of  `storageAccount`, but if it's in a Bicep file that contains lots of other resources - and maybe even other storage accounts - then that name isn't very descriptive. So you could instead give it a symbolic name that includes a bit of information about its purpose - like perhaps `productManualStorageAccount`.
 
-|Name  |Example for 'SKU Name' parameter  |
-|---------|---------|
-| Camel case     | `skuName`        |
-| Pascal case     | `SkuName`        |
-| Snake case     | `sku_name`        |
-| Flat case     | `skuname`        |
-| Train case     | `Sku-Name`        |
+### Capitalization
 
-While choosing a naming convention is a matter of personal preference, it's important to agree on one standard within your team and use it consistently! Also make sure you use **descriptive names** that aren't ambiguous.
-<!-- TODO should we just suggest camelCase? -->
+In Bicep, you typically use camel case for the names of parameters, variables, and resource symbolic names. If you choose to use a different style, it's important to agree on one standard within your team and use it consistently.
 
-When renaming identifiers, you need to make sure you rename them consistently in all parts of your template. Visual Studio Code offers a convenient way to **rename symbols**:
+> [!NOTE]
+> _Camel case_ means that you use a lowercase first letter for the first word, and then capitalize the first letter of subsequent words - like in `productManualStorageAccount`. Other capitalization styles include:
+> - Pascal case (`ProductManualStorageAccount`)
+> - Snake case (`product_manual_storage_account`)
+> - Flat case (`productmanualstorageaccount`)
+> - Train case (`Product-Manual-StorageAccount`)
 
-1. Select the identifier,
-2. Press the F2 key,
-3. Provide a new name,
-4. Confirm the change by pressing Enter
+### Rename identifiers in Visual Studio Code
 
-:::image type="content" source="../media/4-rename-symbol.png" alt-text="Screenshot from VS Code showing how to rename a symbol." border="false":::
+When you rename identifiers, you need to make sure you rename them consistently in all parts of your template. This is especially important for parameters, variables, and resources that you refer to throughout your template.
 
-This action will rename not only the identifier but also all references to it!
+Visual Studio Code offers a convenient way to rename symbols: select the identifier you want to rename, press <kbd>F2</kbd>, enter a new name, and press <kbd>Enter</kbd>:
+
+:::image type="content" source="../media/4-rename-symbol.png" alt-text="Screenshot from Visual Studio Code showing how to rename a symbol." border="true":::
+
+This renames the identifier, and all of the references to it as well.
 
 ### Resource names
 
-In the previous chapter, we addressed the naming convention of identifiers but there's another important area: **naming convention of resources**. Almost every resource type has certain naming [rules and restrictions](/azure/azure-resource-manager/management/resource-name-rules).
+TODO do this section
 
-Many organizations define their own naming convention that works for them. There's a specific [guidance](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging) in the **Cloud Adoption Framework** for Azure (CAF) that can help you define yours.
+Almost every resource type has certain naming [rules and restrictions](/azure/azure-resource-manager/management/resource-name-rules).
 
-Following the naming convention can become a complex problem, especially since you can't rename your resource post deployment. A **well-written Bicep template should hide this complexity** from its users and handle it internally.
+Many organizations define their own naming convention that works for them. There's a specific [guidance](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging) in the Cloud Adoption Framework for Azure that can help you define yours.
+
+Following the naming convention can become a complex problem, especially since you can't rename your resource post deployment. A well-written Bicep template should hide this complexity from its users and determine the names for resources automatically.
 
 There are two common patterns that can be used (or even combined):
 
@@ -82,63 +77,35 @@ param hostingPlanNamePrefix string = 'hostingplan'
 var hostingPlanName = '${hostingPlanNamePrefix}${uniqueString(resourceGroup().id)}'
 ```
 
-> [!NOTE]
-> Currently there isn't a possibility to use regular expressions to validate, if a parameter value only contains allowed characters. That is why it's sometimes better to fully control resource naming within the template.
+TODO END
 
-TODO
+## How understandable are the parameters?
 
----
+Parameters help to make Bicep files reusable and flexible. However, it's important that the purpose of each parameter is clear. Most of the time, when yuo your colleagues work with your template they'll use parameters to change the behavior of their deployment, so it's critical that parameters are clearly named.
 
-### How usable are the parameters?
+Default values are an important way to make your template usable by others. It's important to use default values where they make sense.
 
-Your template has several parameters. Parameters help to make Bicep files reusable and flexible. However, it's important that the purpose of each parameter is clear. There are some parameters here that aren't clear:
+Bicep can also help to validate the input that the user provides when they deploy the template. Your Bicep files use _parameter decorators_ to help Bicep and the user understand what values are permitted for each parameter.
 
-- `skuName` and `skuCapacity`: What sort of SKU do they refer to? What resources are affected by choosing different values for these parameters?
-- `roleDefinitionId`: What role definition are you assigning and why?
-
-Default values are an important way to make your template usable by others. It's important to use default values where they make sense. In your template, the `managedIdentityName` parameter doesn't have a default value - could you change that, or better yet, create the name automatically? And look at the `roleDefinitionId` parameter. Why is there a default value of `b24988ac-6180-42a0-ab88-20f7382dd24c`? What does that big long identifier mean? How would someone else know whether to use the default value or override it? What could you do to help this?
-
-Bicep can also help to validate the input that the user provides when they deploy the template. The template uses a few _parameter decorators_ to help Bicep and the user understand what values are permitted for each parameter, but there's plenty of room for improvement!
-
-### Resource dependencies
+## How do you express dependencies between your resources?
 
 In any complex Bicep template, you need to have _dependencies_ between your resources. When Bicep understands the dependencies between your resources, it deploys them in the correct order.
 
 Bicep allows you to explicitly specify a dependency by using the `dependsOn` property. However, in most cases, it's possible to let Bicep automatically detect dependencies. When you use the symbolic name of one resource within a property of another, Bicep detects the relationship. It's better to let Bicep manage these itself whenever you can. That way, when you change your template, Bicep will make sure the dependencies are always correct, and you won't add unnecessary code that makes your template more cumbersome and harder to read.
 
-Here's one of your resources, which includes a `dependsOn` property - does it really need it?
+## How do you express parent-child relationships?
 
-::: code language="bicep" source="code/2-template.bicep" range="56-65" highlight="7-9" :::
+Azure Resource Manager and Bicep have the concept of _child resources_, which only make sense to deploy within the context of their parent. For example, a SQL database is a child of a SQL server. There are several ways to define child resources, but in most cases, it's a good idea to use the `parent` property. This helps Bicep to understand the relationship, and it makes it clear to anyone else who reads the template too.
 
-### Child resources
+## How are property values determined?
 
-Azure Resource Manager and Bicep have the concept of child resources, which only make sense to deploy within the context of their parent. For example, a SQL database is a child of a SQL server.
+You need to specify the values for resource properties in your Bicep files. It's a good idea to avoid hard-coding values directly, unless you know they won't change. This makes your Bicep template more dynamic and reusable. When you do hard-code values, it's good to make sure the values are understandable to others. For example, if you have to include a specific value for your resource to do what you need, consider creating a well-named variable and assigning the value using that. Or, consider adding a comment - you'll learn more about comments soon.
 
-There are several ways to define child resources, but in most cases, it's a good idea to use the `parent` property. This helps Bicep to understand the relationship, and it makes it clear to anyone else who reads the template too.
+For some resource properties, you need to create complex expressions, and then use functions and string interpolation to construct values automatically. Your Bicep code is usually clearer when you declare variables and reference them in the resource code blocks.
 
-Notice how this child resource was declared in your template:
+## What order should your Bicep code follow?
 
-::: code language="bicep" source="code/2-template.bicep" range="44-54" highlight="2" :::
-
-How could you modify how this resource is declared?
-
-### Property values
-
-You need to specify the values for resource properties in your Bicep files. It's a good idea to avoid hard-coding values directly, unless you know they won't change. This makes your Bicep template more dynamic and reusable. When you do hard-code values, it's good to make sure the values are understandable to others. For example, take a look at the properties of the SQL database resource:
-
-::: code language="bicep" source="code/2-template.bicep" range="44-54" highlight="5, 8-9" :::
-
-Does the SKU `name` property really make sense to hard-code? And what are those weird-looking values for the `collation` and `maxSizeBytes` properties?
-
-For some resource properties, you need to create complex expressions, and use functions and string interpolation to construct values automatically. Your Bicep code is usually clearer when you declare variables and reference them in the resource code blocks. Can you spot any room for improvement in the following code block from the template?
-
-::: code language="bicep" source="code/2-template.bicep" range="94-102" highlight="98" :::
-
-
----
-
-
-## Choose your authoring style
+TODO
 
 Your Bicep templates can contain many **elements**:
 
@@ -169,13 +136,13 @@ There are **two authoring styles** used in the community. You and your team shou
 
 In our project, we'll use the first style. *Practically it means we won't need to make many structural changes.*
 
-TODO SECTION 2
+TODO END
 
 ## Choose free-form vs. known configurations
 
-One of the goals is to design and author a reusable and flexible infrastructure code. You don't want to have single-purpose templates with hardcoded configuration. On the other hand, exposing all resource properties as parameters can be problematic too.
+TODO
 
-There are two common approaches you can choose from:
+One of the goals is to design and author a reusable and flexible infrastructure code. You don't want to have single-purpose templates with hardcoded configuration. On the other hand, exposing all resource properties as parameters can be problematic too. There are two common approaches you can choose from:
 
 ### Free-form configuration
 
@@ -237,48 +204,10 @@ resource hostingPlan 'Microsoft.Web/serverfarms@2020-06-01' = {
 }
 ```
 
-TODO SECTION 1 OR 3
+TODO END
 
-## Make your Bicep code dynamic
+## Use version control effectively
 
-Whatever approach you prefer, you still want to **avoid hardcoding values directly** in resources declaration, which would make parts of your code less reusable. *You could still consider it for values that don't change frequently.*
-
-In our template, most of the properties are defined dynamically with the following exception:
-
-::: code language="bicep" source="code/2-template.bicep" range="44-49" :::
-
-Let's quickly fix it by introducing a new parameter and referencing its value:
-
-```bicep
-param sqlSkuName string = 'Basic'
-
-resource sqlserverName_databaseName 'Microsoft.Sql/servers/databases@2020-08-01-preview' = {
-  name: '${sqlserver.name}/${databaseName}'
-  location: location
-  sku: {
-    name: sqlSkuName
-  }
-```
-
-For many properties you'll need to create **complex expressions**, concatenate several values, and use built-in functions. It's a good practice to create these expressions as variables and reference them in other parts of your code like resources and modules.
-
-A good example from our template is the value of `DefaultConnection` property:
-
-::: code language="bicep" source="code/2-template.bicep" range="91-99" :::
-
-Let's look how the code would look like after we refactor it to follow the recommendation:
-
-```bicep
-var dbConnectionString = 'Data Source=tcp:${sqlserver.properties.fullyQualifiedDomainName},1433;Initial Catalog=${databaseName};User Id=${sqlAdministratorLogin}@${sqlserver.properties.fullyQualifiedDomainName};Password=${sqlAdministratorLoginPassword};'
-
-resource webSiteConnectionStrings 'Microsoft.Web/sites/config@2020-06-01' = {
-  name: '${webSite.name}/connectionstrings'
-  properties: {
-    DefaultConnection: {
-      value: dbConnectionString
-      type: 'SQLAzure'
-    }
-  }
-}
-```
-
+Refactoring requires version control
+Commit often so you can go back to an older version if you want
+Remove commented-out code and rely on your version control system instead
