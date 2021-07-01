@@ -18,9 +18,11 @@ Create a virtual network that will acts as the central connectivity point or hub
 
 1. Select the **IP Addresses** tab.
 1. Enter the following IP address space.
+
     |Field |Value |
     |---------|---------|
     |IPv4 address space   |  10.1.0.0/16   |
+
 1. Above **Subnet name**, select **+ Add subnet**.
 1. Enter the following information for the subnet.
 
