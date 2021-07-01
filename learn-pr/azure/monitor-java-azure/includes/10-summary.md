@@ -18,6 +18,15 @@ In the preceding processes, you created Azure resources. If you don't expect to 
 az group delete --name <your Resource Group Name> --yes
 ```
 
+### Delete your log analytics workspace
+
+When you delete your resource group it will soft delete your Log Analytics workspace. When deleting a log analytics workspace, it gets into a soft-delete state to allow its recovery including data and connected agents within 14 days.
+You can override the soft-delete behavior and permanently delete your workspace by running:
+
+```azurecli
+az monitor log-analytics workspace delete --force true --resource-group <your Resource Group Name> --workspace-name <your log analytics workspace name>
+```
+
 ## References
 
 * [Azure monitor](https://docs.microsoft.com/azure/azure-monitor?WT.mc_id=java-00000-ropreddy)
