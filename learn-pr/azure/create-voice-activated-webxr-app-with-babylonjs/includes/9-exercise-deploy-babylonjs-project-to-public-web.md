@@ -67,10 +67,24 @@ Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com
 > It can take a few seconds to get the storage account created and ready for use. A notification will appear after deployment is complete.
 
 ## Enable Static Website Hosting
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+
+1. On the Azure portal menu or from the **Home** page, select **All resources**.
+
+1. Select the storage account from the list.
+
+    :::image type="content" source="../media/all-resources-storage-account.png" alt-text="A screenshot of the list of all resources. There's a red box around the Web X R dash magic dash spell resource.":::
+
+1. In the **Data management** section, select **Static website**.
+
+    :::image type="content" source="../media/select-static-website.png" alt-text="A screenshot of the Speech service resource page. There's a red box around the menu item Keys and Endpoint.":::
+
+1. Toggle the Static website switch to **Enabled**, and put **index.html** as the **Index document name**.
+
+    :::image type="content" source="../media/static-website-settings.PNG" alt-text="Settings page for the static website hosted using Azure Blob Storage":::
+
+1. Select **Save**.
+
+## Upload static source files
 
 <!-- 5. Validation chunk -------------------------------------------------------------------------------------
 
