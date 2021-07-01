@@ -22,7 +22,7 @@ In this example, we'll:
 
 We'll use the following image in this example, but you're free to try the same command with URLs to other images.
 
-![Picture of a handwriting sample on a note](../media/6-handwriting.jpg)
+![Picture of a handwriting sample on a note.](../media/6-handwriting.jpg)
 
 1. Execute the following commands in Azure Cloud Shell. Replace `<region>` in the command with the region of your cognitive services account.
 

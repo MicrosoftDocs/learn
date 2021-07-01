@@ -34,7 +34,7 @@ For **step 2**, return to the browser window that displays QnA Maker and continu
     > Some languages that are available in **Language**  support *chit-chat* functionality, which refers to general conversation functionality. For other languages, only information extraction and basic QnA functionality is available. For the purpose of this module, let's select English as the most supported language.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of the QnA Maker Connect your QnA service to your KB pane that shows options to select](../media/qna-maker-create-2.png)
+> ![Screenshot of the QnA Maker Connect your QnA service to your KB pane that shows options to select.](../media/qna-maker-create-2.png)
 
 For **step 3**, enter a name for your database. Our example is **qnadb**.
 

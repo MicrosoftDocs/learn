@@ -11,7 +11,7 @@ Azure Synapse Analytics supports many loading methods. These methods include non
 
 The following architecture diagram shows how loading is achieved with each Hadoop Distributed File System (HDFS) bridge of the data movement service (DMS) on every compute node that connects to an external resource such as Azure Blob storage. PolyBase then bidirectionally transfers data between Azure Synapse Analytics and the external resource to provide the fast load performance.
 
-![Loading Azure Synapse Analytics via PolyBase](../media/2-load-azure-dw-via-polybase.png)
+![Loading Azure Synapse Analytics via PolyBase.](../media/2-load-azure-dw-via-polybase.png)
 
 ## Use PolyBase to extract, load, and transform data
 

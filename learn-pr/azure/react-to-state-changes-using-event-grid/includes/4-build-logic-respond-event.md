@@ -10,7 +10,7 @@ To run actions in your logic app after events pass a specified condition, you ad
 
 The following image shows an example of a filter that checks whether a filename in a directory has the .pdf extension.
 
-![Condition for a .pdf extension](../media/4-logic-apps-filter-array.png)
+![Condition for a .pdf extension.](../media/4-logic-apps-filter-array.png)
 
 For example, suppose you have a logic app that needs to send an email based on certain fields being found in an Event Grid trigger. You'd create a condition in your logic app that could check the event data, and conditionally call an action.
 
@@ -34,7 +34,7 @@ A logic app has two different views in the Azure portal that are used for develo
 - **Designer view**: User interface that visually maps all triggers, actions, and connectors.
 - **Code view**: JSON configuration that allows any field to be edited in a code editor.
 
-![Choice of two views for a logic app](../media/4-code-designer-view.png)
+![Choice of two views for a logic app.](../media/4-code-designer-view.png)
 
 The following example demonstrates the JSON configuration for an Event Grid trigger. By using your logic app's JSON view, you'll become familiar with the concepts and structure. You'll then be confident to edit the JSON directly.
 

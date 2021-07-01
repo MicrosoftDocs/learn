@@ -45,7 +45,7 @@ It's helpful to know the status of a workflow without having to visit the **Acti
 Below is an example of what needs to be added to a file to see a workflow status badge. 
 
 ```yml
-![example branch parameter](https://github.com/mona/special-octo-eureka/actions/workflows/grading.yml/badge.svg?branch=my-workflow)
+![example branch parameter.](https://github.com/mona/special-octo-eureka/actions/workflows/grading.yml/badge.svg?branch=my-workflow)
 ```
 
 For example, adding the `branch` parameter along with the desired branch name at the end of the URL will show the workflow status badge for that branch instead of the default branch. This makes it easy to create a table-like view within your `README.md` file to display workflow statuses based on branches, events, services, or environments to name a few.

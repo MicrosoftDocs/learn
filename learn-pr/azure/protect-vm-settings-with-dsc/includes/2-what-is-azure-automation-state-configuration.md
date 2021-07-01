@@ -102,13 +102,13 @@ The LCM on each node can operate in two modes.
 
 - **Push mode**: An administrator manually sends, or *pushes*, the configurations toward one or more nodes. The LCM makes sure that the state on each node matches what the configuration specifies.
 
-    ![Diagram showing a push architecture in DSC](../media/2-push.png)
+    ![Diagram showing a push architecture in DSC.](../media/2-push.png)
 
 - **Pull mode**: A *pull server* holds the configuration information. The LCM on each node polls the pull server at regular intervals, by default every 15 minutes, to get the latest configuration details. These requests are denoted as step 1 in the following diagram. In step 2, the pull server sends the details about any configuration changes back to each node.
   
     In pull mode, each node has to be registered with the pull service.
 
-    ![Diagram showing a pull architecture in DSC](../media/2-pull.png)
+    ![Diagram showing a pull architecture in DSC.](../media/2-pull.png)
 
 Both modes have advantages: 
 - Push mode is easy to set up. It doesn't need its own dedicated infrastructure, and it can run on a laptop. Push mode is helpful to test the functionality of DSC. You could also use push mode to get a newly imaged machine to the baseline desired state. 

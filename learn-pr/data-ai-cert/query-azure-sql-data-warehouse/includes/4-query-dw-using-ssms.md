@@ -19,7 +19,7 @@ Compose a T-SQL query step by step against the existing fact table **FactReselle
 
 1. Right-click each of the tables, and select **Select Top 1000 Rows** to view the data in the tables.
 
-    ![How to issue a query](../media/4-query-top-rows.png)
+    ![How to issue a query.](../media/4-query-top-rows.png)
 
     > [!TIP]
     > The column view in Object Explorer provides information about the table structure. For example, from here you can see that the column **ResellerKey** in **FactResellerSales** and the column **ResellerKey** of **DimReseller** are the links on which the two tables can join together.
@@ -42,7 +42,7 @@ Now create a custom query. Start by querying the fact table, which holds the cen
 
 1. Select **Execute** on the toolbar, or select <kbd>F5</kbd>. The query is sent to the Azure SQL Data Warehouse server where it runs. The results are sent back and displayed in the bottom pane of the query window.
 
-    ![Run a query by using the SQL Server Management Studio tool](../media/4-execute-query.png)
+    ![Run a query by using the SQL Server Management Studio tool.](../media/4-execute-query.png)
 
 1. Bring the dimension table in by using the shared column. Enter the following query into the editor:
 
@@ -212,9 +212,9 @@ Paste these results wherever necessary. For example, you can paste results to an
 
 :::row:::
   :::column:::
-![Screenshot of Observing Pie Chart](../media/4-observe-pie-chart.png)
+![Screenshot of Observing Pie Chart.](../media/4-observe-pie-chart.png)
   :::column-end:::
   :::column:::
-![Screenshot of Observing Pie Chart](../media/4-observe-bar-chart.png)
+![Screenshot of Observing Pie Chart.](../media/4-observe-bar-chart.png)
   :::column-end:::
 :::row-end:::

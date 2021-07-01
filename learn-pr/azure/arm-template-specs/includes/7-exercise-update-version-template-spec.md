@@ -1,4 +1,6 @@
-Your Cosmos DB template spec has been used throughout your organization to provision lots of new Cosmos DB accounts, and all of them have been configured to use continuous backup. Your security team has recently reviewed the Cosmos DB security capabilities, and they have decided that new accounts should use Azure AD authentication and Cosmos DB's role-based access control.
+Your Azure Cosmos DB template spec has been used throughout your organization to provision lots of new Azure Cosmos DB accounts. All of them have been configured to use continuous backup. 
+
+Your security team recently reviewed the Azure Cosmos DB security capabilities. It decided that new accounts should use Azure Active Directory (Azure AD) authentication and Azure Cosmos DB role-based access control.
 
 In this exercise, you'll update your template spec with a new version that includes the updated authentication configuration.
 
@@ -7,8 +9,8 @@ During the process, you'll:
 > [!div class="checklist"]
 > * Update your template to reconfigure the backup policy.
 > * Publish a new version of your template spec.
-> * Verify the template spec has been updated.
-> * Test the new version of your template spec by deploying another Cosmos DB account.
+> * Verify that the template spec has been updated.
+> * Test the new version of your template spec by deploying another Azure Cosmos DB account.
 
 ## Update the template
 
@@ -36,7 +38,7 @@ During the process, you'll:
 
 ## Convert the Bicep file to a JSON ARM template
 
-Convert your updated Bicep file to a JSON template before you publish it, using this command:
+Convert your updated Bicep file to a JSON template before you publish it, by using this command:
 
 ::: zone-end
 
@@ -92,7 +94,7 @@ Publish the template spec by using this Azure CLI command in the Visual Studio C
 
 ::: zone pivot="biceppowershell,jsonpowershell"
 
-1. Get the new template spec version's resource ID by executing the following Azure PowerShell command:
+1. Get the new template spec version's resource ID by running the following Azure PowerShell command:
 
    ```azurepowershell
    $templateSpecVersionResourceId = ( `
@@ -103,7 +105,7 @@ Publish the template spec by using this Azure CLI command in the Visual Studio C
       ).Versions[0].Id
    ```
 
-   Notice you use the `Versions` property to get the template spec version's resource ID.
+   Notice that you use the `Versions` property to get the template spec version's resource ID.
 
 1. Your new template spec version has a parameter for the user principal ID. Use the following commands to get your own user account's principal ID:
 
@@ -126,7 +128,7 @@ Publish the template spec by using this Azure CLI command in the Visual Studio C
 
 ::: zone pivot="bicepcli,jsoncli"
 
-1. Get the template spec version's resource ID by executing the following Azure CLI command:
+1. Get the template spec version's resource ID by running the following Azure CLI command:
 
    ```azurecli
    templateSpecVersionResourceId=$(az ts show \
@@ -152,7 +154,7 @@ Publish the template spec by using this Azure CLI command in the Visual Studio C
 
 ::: zone-end
 
-This can take a minute or two to complete, and then you'll see a successful deployment.
+The deployment can take a minute or two to finish.
 
 ## Verify the deployment
 
@@ -166,6 +168,6 @@ This can take a minute or two to complete, and then you'll see a successful depl
 
    :::image type="content" source="../media/7-deployment.png" alt-text="Screenshot of the Azure portal interface for the deployments, with two deployments listed." border="true":::
 
-1. Select **Deployment details** to expand it. Notice that the Cosmos DB role-based access control resources has been deployed.
+1. Select **Deployment details** to expand it. Notice that the resources for Azure Cosmos DB role-based access control have been deployed.
 
-   :::image type="content" source="../media/7-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with the Cosmos DB resources listed." border="true":::
+   :::image type="content" source="../media/7-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with the Azure Cosmos D B resources listed." border="true":::

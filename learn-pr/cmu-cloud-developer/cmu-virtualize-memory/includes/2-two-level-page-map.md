@@ -3,7 +3,7 @@ Contrary to OSs in traditional systems, with system virtualization, the hypervis
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4q0eu]
 
-![Memory virtualization in a native system VM](../media/native-system-vm.png)
+![Memory virtualization in a native system VM.](../media/native-system-vm.png)
 
 _Figure 2: Memory virtualization in a native system VM_
 

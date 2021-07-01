@@ -17,7 +17,7 @@ Diagnostic analytics deals with answering the question “Why is it happening?�
 
 You can use the same SQL serverless capability within Azure Synapse Analytics that enables you to interactively explore data within a data lake. This can quickly enable a user to search for other data that may help them to understand “Why is it happening?”
 
-![Type of analytics](../media/types-of-analytics.png)
+![Type of analytics.](../media/types-of-analytics.png)
 
 ## Predictive analytics
 

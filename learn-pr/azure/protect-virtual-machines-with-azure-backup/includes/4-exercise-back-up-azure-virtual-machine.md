@@ -14,7 +14,7 @@ In this exercise, you'll create a virtual machine, set up a backup, and start a 
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true), and open Azure Cloud Shell.
 
-    ![Open Cloud Shell](../media/4-azure-portal-cloudshell.png)
+    ![Open Cloud Shell.](../media/4-azure-portal-cloudshell.png)
 
 1. Create a resource group to contain all the resources for this exercise.
 
@@ -72,11 +72,11 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
 1. In the Azure portal, search for and select **Virtual machines**.
 
-    ![Screenshot that shows searching for virtual machines](../media/4-portal-vms.png)
+    ![Screenshot that shows searching for virtual machines.](../media/4-portal-vms.png)
 
 1. From the list, select the **NW-RHEL01** virtual machine that you created.
 
-    ![Screenshot that shows selecting a virtual machine](../media/4-portal-select-linux-vm.png)
+    ![Screenshot that shows selecting a virtual machine.](../media/4-portal-select-linux-vm.png)
 
 1. In the left menu pane, scroll down to **Operations**, select **Backup**. The **NW-RHEL01 | Backup** pane appears.
 
@@ -87,11 +87,11 @@ The command can take a few minutes to complete. Wait for it to finish before mov
     | **Recovery services vault** | Enter **azure-backup** for the name. |
     | **Backup policy** | Select **DailyPolicy**, which is a daily backup at 12:00 PM UTC, and a retention range of 180 days. |
 
-    ![Screenshot that shows the backup options](../media/4-portal-azure-backup.png)
+    ![Screenshot that shows the backup options.](../media/4-portal-azure-backup.png)
 
 1. To perform the first backup for this server, in the top menu bar, select **Backup now**.
 
-    ![Screenshot that shows "Backup now"](../media/4-portal-backup-now.png)
+    ![Screenshot that shows "Backup now."](../media/4-portal-backup-now.png)
 
     The **Backup Now** pane appears.
 
@@ -154,7 +154,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
 1. In the left menu pane, under **Operations**, select **Backup**.
 
-    ![Screenshot of the Backup page after it has been set up](../media/4-portal-backup-setup.png)
+    ![Screenshot of the Backup page after it has been set up.](../media/4-portal-backup-setup.png)
 
     **Last backup status** displays the current status of the backup.
 
@@ -168,4 +168,4 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
 1. Select the **Backup** tab on the **Overview** page to see a summary of all the backup items, the storage being used, and the current status of any backup jobs.
 
-    ![Screenshot of the Backup dashboard](../media/4-recovery-services-vault.png)
+    ![Screenshot of the Backup dashboard.](../media/4-recovery-services-vault.png)
