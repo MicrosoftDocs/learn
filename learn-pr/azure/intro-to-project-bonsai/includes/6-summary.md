@@ -9,7 +9,7 @@ To help with your decision, you discovered answers to the following questions:
 - Do you have AI experts in your organization to optimize those systems?
 - Can you use an existing simulation of your automation systems or build a new one?
 
-You applied these criteria to a fictional soap manufacturing company. You should now be able to determine whether Project Bonsai can help accelerate AI-powered automation development.
+You applied these criteria to a fictional soap manufacturing company. You should now be able to determine whether Project Bonsai can help accelerate AI-powered automation development. 
 
 ## References
 
