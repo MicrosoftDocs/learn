@@ -6,7 +6,7 @@ Ideally, the public IP addresses and virtual network gateways should be created 
 
 First, you'll create the VPN gateway for the Azure end of the connection. It can take up to 45 minutes to create a virtual network gateway. To save time, you'll use Azure CLI commands with the `--no-wait` parameter. This parameter lets you create both virtual network gateways simultaneously to minimize the overall time required to create these resources.
 
-1. Run this command in Cloud Shell to create the **PIP-VNG-Azure-VNet-1** public IP address.
+1. Run the following command in Cloud Shell to create the **PIP-VNG-Azure-VNet-1** public IP address.
 
     ```azurecli
     az network public-ip create \
@@ -15,7 +15,7 @@ First, you'll create the VPN gateway for the Azure end of the connection. It can
         --allocation-method Dynamic
     ```
 
-1. Run this command in Cloud Shell to create the **VNG-Azure-VNet-1** virtual network.
+1. Run the following command in Cloud Shell to create the **VNG-Azure-VNet-1** virtual network.
 
     ```azurecli
     az network vnet create \
@@ -24,7 +24,7 @@ First, you'll create the VPN gateway for the Azure end of the connection. It can
         --subnet-name GatewaySubnet 
     ```
 
-1. Run this command in Cloud Shell to create the **VNG-Azure-VNet-1** virtual network gateway. 
+1. Run the following command in Cloud Shell to create the **VNG-Azure-VNet-1** virtual network gateway. 
 
     ```azurecli
     az network vnet-gateway create \
@@ -42,7 +42,7 @@ First, you'll create the VPN gateway for the Azure end of the connection. It can
 
 Next, you'll create a VPN gateway to simulate an on-premises VPN device.
 
-1. Run this command in Cloud Shell to create the **PIP-VNG-HQ-Network** public IP address.
+1. Run the following command in Cloud Shell to create the **PIP-VNG-HQ-Network** public IP address.
 
     ```azurecli
     az network public-ip create \
@@ -51,7 +51,7 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
         --allocation-method Dynamic
     ```
 
-1. Run this command in Cloud Shell to create the **VNG-HQ-Network** virtual network.
+1. Run the following command in Cloud Shell to create the **VNG-HQ-Network** virtual network.
 
     ```azurecli
     az network vnet create \
@@ -60,7 +60,7 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
         --subnet-name GatewaySubnet 
     ```
 
-1. Run this command in Cloud Shell to create the **VNG-HQ-Network** virtual network gateway.
+1. Run the following command in Cloud Shell to create the **VNG-HQ-Network** virtual network gateway.
 
     ```azurecli
     az network vnet-gateway create \
@@ -177,7 +177,7 @@ You'll now complete the configuration by creating the connections from each VPN 
         --local-gateway2 LNG-HQ-Network
     ```
 
-3. Remember that **LNG-Azure-VNet-1** contains a reference to the public IP address associated with the **VNG-Azure-VNet-1** VPN gateway. This connection would normally be created from your on-premises device. Run this command in Cloud Shell to create a connection from **VNG-HQ-Network** to **LNG-Azure-VNet-1**.
+3. Remember that **LNG-Azure-VNet-1** contains a reference to the public IP address associated with the **VNG-Azure-VNet-1** VPN gateway. This connection would normally be created from your on-premises device. Run the following command in Cloud Shell to create a connection from **VNG-HQ-Network** to **LNG-Azure-VNet-1**.
 
     ```azurecli
     az network vpn-connection create \
