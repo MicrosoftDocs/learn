@@ -82,7 +82,7 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
         --output table
     ```
 
-    After each VPN gateway shows a **ProvisioningState** of **Succeeded**, you're ready to continue. Press <kbd>Ctrl+C</kbd> to halt the command after the gateway is created.
+1. After each VPN gateway shows a **ProvisioningState** of **Succeeded**, you're ready to continue. Press <kbd>Ctrl+C</kbd> to halt the command after the gateway is created.
 
     ```output
     ActiveActive    EnableBgp    EnablePrivateIpAddress   GatewayType    Location        Name              ProvisioningState    ResourceGroup                         ResourceGuid                          VpnType
@@ -106,14 +106,14 @@ In this section, you'll update the remote gateway IP address references that are
         --output table
     ```
 
-```output
-Name              Location    GatewayType    VpnType     VpnGatewayGeneration    EnableBgp    EnablePrivateIpAddress    Active    ResourceGuid                        ProvisioningState    ResourceGroup
-----------------  ----------  -------------  ----------  ----------------------  -----------  ------------------------  --------  ------------------------------------  -------------------  ------------------------------------------
-VNG-Azure-VNet-1  westus      Vpn            RouteBased  Generation1         False        False                     False     9a2e60e6-da57-4274-99fd-e1f8b2c0326d  Succeeded            learn-cfbcca66-16fd-423e-b688-66f242d8f09e
-VNG-HQ-Network    westus      Vpn            RouteBased  Generation1         False        False                     False     c36430ed-e6c0-4230-ae40-cf937a102bcd  Succeeded            learn-cfbcca66-16fd-423e-b688-66f242d8f09e
-```
+    ```output
+    Name              Location    GatewayType    VpnType     VpnGatewayGeneration    EnableBgp    EnablePrivateIpAddress    Active    ResourceGuid                        ProvisioningState    ResourceGroup
+    ----------------  ----------  -------------  ----------  ----------------------  -----------  ------------------------  --------  ------------------------------------  -------------------  ------------------------------------------
+    VNG-Azure-VNet-1  westus      Vpn            RouteBased  Generation1         False        False                     False     9a2e60e6-da57-4274-99fd-e1f8b2c0326d  Succeeded            learn-cfbcca66-16fd-423e-b688-66f242d8f09e
+    VNG-HQ-Network    westus      Vpn            RouteBased  Generation1         False        False                     False     c36430ed-e6c0-4230-ae40-cf937a102bcd  Succeeded            learn-cfbcca66-16fd-423e-b688-66f242d8f09e
+    ```
 
-Remember to wait until the lists of gateways are successfully returned. Also, remember that the local network gateway resources define the settings of the *remote* gateway and network that they're named after. For example, the **LNG-Azure-VNet-1** local network gateway contains information like the IP address and networks for **Azure-VNet-1**.
+    Remember to wait until the lists of gateways are successfully returned. Also, remember that the local network gateway resources define the settings of the *remote* gateway and network that they're named after. For example, the **LNG-Azure-VNet-1** local network gateway contains information like the IP address and networks for **Azure-VNet-1**.
 
 1. Run the following command in Cloud Shell to retrieve the IPv4 address assigned to **PIP-VNG-Azure-VNet-1** and store it in a variable.
 
