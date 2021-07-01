@@ -49,7 +49,7 @@ Recommendations to ensure operational excellence on my subscriptions:
 
 Example of a recommendation to assign a policy to restrict the allowed SKUs for virtual machines:
 
-![Recommendation from operational excellence on Azure Advisor.](../media/3-advisor-operational-excellence-policy.png)
+![Example of a recommendation from operational excellence on Azure Advisor.](../media/3-advisor-operational-excellence-policy.png)
 
 ### Performance Recommendations
 
@@ -61,7 +61,7 @@ Recommendations to ensure performance improvements:
 
 Recommendation warning about an unsupported Kubernetes version detected, which can affect the overall performance on the workload:
 
-![Recommendation from operational excellence on Azure Advisor.](../media/3-advisor-performance-aks.png)
+![Example of a recommendation from performance on Azure Advisor.](../media/3-advisor-performance-aks.png)
 
 ## How to configure recommendations
 
@@ -110,7 +110,7 @@ Access the Azure Advisor regularly to check recommendations is a good practice. 
 
 To do that, access Advisor, select **Recommendation digests** under **Monitoring** then select **New Recommendation Digest**:
 
-![Digests on Azure Advisor.](../media/3-advisor-create-digest.png)
+![Create a digests on Azure Advisor.](../media/3-advisor-create-digest.png)
 
 After define the subscription under Scope, you should set the frequency, recommendation category and language:
 

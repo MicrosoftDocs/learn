@@ -22,7 +22,7 @@ iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
-  - developer, administrator, solution-architect, technology-manager
+  - "developer", "administrator", "solution-architect", "technology-manager"
 products:
 - azure
 units:
