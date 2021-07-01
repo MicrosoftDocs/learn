@@ -1,7 +1,7 @@
 ### YamlMime:Module
-uid: {{learnRepo}}.{{moduleName}}
+uid: learn-visualstudio.visual-studio-test-tools
 metadata:
-  moduleType: {{patternType}}
+  moduleType: standard
   title: C# Testing Tutorial
   description: Start testing your C# apps with the testing tools in Visual Studio.
   ms.date: 07/01/2021
@@ -9,7 +9,7 @@ metadata:
   ms.author: kehavens
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio # Edit as appropriate for your portfolio area
-title: C# Testing Tutorial
+title: C# Testing in Visual Studio Tutorial
 summary: Start testing your C# apps with the testing tools in Visual Studio.
 abstract: |
   By the end of this module, you'll be able to: 
@@ -28,9 +28,9 @@ roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/met
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#product
   - vs
 units:
-  - learn.visual-studio-test-tools.introduction
-  - learn.visual-studio-test-tools.what-is-testing
-  - learn.visual-studio-test-tools.why-we-test
+  - learn.visual-studio-test-tools.1-write-a-test
   - learn.visual-studio-test-tools.knowledge-check
+  - learn.visual-studio-test-tools.view-and-run-tests
+  - learn.visual-studio-test-tools.exercise
 badge:
-  uid: {{learnRepo}}.{{moduleName}}.badge
+  uid: learn-visualstudio.visual-studio-test-tools.badge

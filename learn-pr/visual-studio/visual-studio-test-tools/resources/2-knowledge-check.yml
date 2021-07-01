@@ -1,0 +1,67 @@
+### YamlMime:ModuleUnit
+uid: learn.visual-studio-test-concepts.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge on the different schools of testing including TDD, BDD, DRY, and Red/Green/Refactor.
+  ms.date: 6/28/2021
+  author: {{githubUsername}}
+  ms.author: {{msUser}}
+  ms.topic: interactive-tutorial
+  ms.prod: learning-visual-studio # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+###########################################################################
+###
+### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
+###  - Questions are complete sentences ending with a question mark
+###  - No true/false questions
+###  - 3 answers per question
+###  - All answers about the same length
+###  - Numeric answers listed in sorted order
+###  - No "All of the above" and/or "None of the above" as answer choices
+###  - No "Not" or "Except" in questions
+###  - No second person ("you") in the questions or answers
+###  - Provide a meaningful explanation for both correct and incorrect answers
+###
+### Question content requirements:
+###  - Write 5 questions
+###  - Questions 1,2 must test this Learning Objective: "Describe how (attributes) of (product) work to (solve problem)"
+###      Guidance: These two questions can be short, no need for a long scenario to analyze. Test if they understand how the product works.
+###      Example: "What differentiates an action from a control action in an Azure Logic App?"
+###  - Questions 3,4,5 must test this Learning Objective: "Evaluate whether (product) is appropriate to (general product use case)"
+###      Guidance: Use scenario questions that ask the learner to analyze a situation with the "when to use" criteria presented in the module.
+###      Example: "Suppose you work for a financial company. You're building a system to let your brokers trade financial instruments. Your system must monitor market conditions, detect changes, and execute trades. You'll need to handle a large volume of transactions and you'll need to do it quickly. The faster you can complete trades, the more of an advantage you'll have over your competitors. Which requirement of this system would be difficult for Logic Apps to satisfy?"
+###
+###########################################################################
+content: |
+quiz:
+  questions:
+  - content: "What does TDD stand for?"
+    choices:
+    - content: "Test Driven Design"
+      isCorrect: false
+      explanation: "Not quite! Try again."
+    - content: "Testing Data Daily"
+      isCorrect: false
+      explanation: "Not quite! Try again."
+    - content: "Test Driven Development"
+      isCorrect: true
+      explanation: "You are correct, TDD centers around the idea of writing tests first before the code and letting the tests drive development."
+    - content: "Technical Data Development"
+      isCorrect: false
+      explanation: "Not quite! Try again."
+  - content: "What is the best recommended testing approach?"
+    choices:
+    - content: "TDD"
+      isCorrect: false
+      explanation: "While many may prefer TDD over other methods there is no empirical evidence indicating it is the best way for all humans to write code."
+    - content: "DRY"
+      isCorrect: false
+      explanation: "While many may find DRY a necessity, it may be difficult to avoid all repetition, especially for new coders. One certainly can't have perfection slow down getting a prototype working."
+    - content: "It depends on the needs of the repo and the team!"
+      isCorrect: true
+      explanation: "Every developer and team is different. While it's good to keep much of this guidance in mind, at the end of the day the only important thing is choosing what works for you."
+    - content: "BDD"
+      isCorrect: false
+      explanation: "While many may prefer BDD over other methods there is no empirical evidence indicating it is the best way for all humans to write code."
