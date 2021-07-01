@@ -1,5 +1,14 @@
 Consider the details of the types of cyberattacks that the previous unit described.  What are some mitigation strategies and policies to prevent them?
 
+## Use multifactor authentication
+
+Multifactor authentication is the process of using two or more menthods to verify identity. The methods include:
+- Something you know (such as a PIN or a password)
+- Something you have (such as a cell phone or token)
+- Something you are (such as biometric physical characteristics)
+
+The Conditional Access Policy of the social media service enables the enforcement of multifactor authentication.
+
 ## Browser security
 
 ### Securing connections with websites
@@ -34,7 +43,7 @@ Currently, the most successful method for protecting our security depends heavil
 
 Some rules of thumb to help protect yourself and your company from social media hackers.
 
-- Examine all your social network settings. Enable two-factor authentication.
+- Examine all your social network settings. Enable two-factor authentication. Two-factor authentication is the most common form of multifactor authentication.
 - Avoid sharing your work email address.
 - Know that most companies will never send an email to verify your credentials.
 - Hover your pointer or navigate to an email or text link without selecting it to observe the actual URL underneath the words.
