@@ -2,7 +2,7 @@ Consider the details of the types of cyberattacks that the previous unit describ
 
 ## Use multifactor authentication
 
-Multifactor authentication is the process of using two or more menthods to verify identity. The methods include:
+Multifactor authentication is the process of using two or more methods to verify identity. The methods include:
 - Something you know (such as a PIN or a password)
 - Something you have (such as a cell phone or token)
 - Something you are (such as biometric physical characteristics)
