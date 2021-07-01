@@ -15,36 +15,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Azure Machine Learning can analyze and extract data from what type of files?'
+  - content: 'What does creating Custom Roles allow you to do?'
     choices:
-    - content: "PowerPoint files and MP4 videos"
-      isCorrect: false
-      explanation: "Incorrect. Azure Machine Learning can analyze some types of documents, but not PowerPoint files or videos."
-    - content: "JPG and PNG images, and PDF and TIFF documents."
+    - content: "Custom roles allow you to customize what users can and can’t access in a workspace"
       isCorrect: true
-      explanation: "Correct. Azure Machine Learning can analyze and extract data from JPG and PNG images, and PDF and TIFF documents. Including forms, tables, written and typed documents, receipts, invoices, and business cards."
-    - content: "CSV files"
+      explanation: "Correct. By creating custom roles, you can make a role available for specific tasks by using actions and notactions to give and restrict access."
+    - content: "Custom roles allow you to **only** perform read-only actions in a workspace"
       isCorrect: false
-      explanation: "Incorrect. CSV documents aren't able to be parsed by Azure Machine Learning, but images and documents can be."
-  - content: 'What type of data does the prebuilt Invoice Model return?'
+      explanation: "Incorrect. The **reader** role can only perform read-only actions. Using custom roles, you can set restrictions on certain workspaces so a user can be a contributor for one space and a reader for another."
+    - content: "Custom roles allow you to customize the speaking voice used"
+      isCorrect: false
+      explanation: "Incorrect. There's no voice to customize."
+  - content: 'What would you use the Azure Key Vault for?'
     choices:
-    - content: "CSV data, with the extracted information separated by commas."
+    - content: "To keep track of your house, work, and car keys"
       isCorrect: false
-      explanation: "Incorrect. Azure Machine Learning uses standard JSON formatting that programming languages can readily use."
-    - content: "Image data, with the extracted information highlighted by bounding boxes"
+      explanation: "Incorrect. Azure Key Vault isn’t for your literal keys, but for storing and accessing your sensitive computer data."
+    - content: "To hide your training models and data"
       isCorrect: false
-      explanation: "Incorrect. While Azure Machine Learning can return bounding box information, the data is returned in a format that programming languages can readily use."
-    - content: "JSON formatting"
+      explanation: "Incorrect. That is what virtual private network’s (VPN) are used for."
+    - content: "To securely store and access secrets"
       isCorrect: true
-      explanation: "Correct. As programming languages can readily use JSON formatting, Azure Machine Learning returns the extracted information in standard JSON formatting so the data is easier to work with."
-  - content: 'What is a benefit of creating a custom model?'
+      explanation: "Correct. A secret is anything that you want to tightly control access to, such as API keys, passwords, certificates, or cryptographic key."
+  - content: 'Why use a virtual private network (VPN) for machine learning?'
     choices:
-    - content: "Custom models can be tuned to your specific form and data needs, allowing more accurate analysis and extraction of data."
+    - content: "To assign roles"
+      isCorrect: false
+      explanation: "Incorrect. Assigning roles is part of Azure Machine Learning workspaces."
+    - content: "To secure your training models and data from malicious actors by encrypting your IP address"
       isCorrect: true
-      explanation: "Correct. Custom models can be made with as little as five examples, and tuned to your specific needs."
-    - content: "Custom models apply Optical Character Recognition (OCR), but prebuilt models don't."
+      explanation: "Correct. VPNs such as point-to-site, site-to-site, or Azure ExpressRoute encrypt your internet connection or don’t go over the internet at all, limiting access to your resources."
+    - content: "To work offline"
       isCorrect: false
-      explanation: "Incorrect. Both custom models and prebuilt models use OCR."
-    - content: "Custom models can be tuned to specific types of forms, but prebuilt models are generic models, not tuned to a specific type of form."
-      isCorrect: false
-      explanation: "Incorrect. Prebuilt models can be used for invoices, receipts, IDs, and business cards."
+      explanation: "Incorrect. VPNs are used to secure your data and encrypt your IP address—only Azure ExpressRoute doesn’t send your traffic over the internet."

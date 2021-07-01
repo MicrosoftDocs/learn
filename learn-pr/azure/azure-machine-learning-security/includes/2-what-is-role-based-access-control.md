@@ -63,7 +63,7 @@ In general, there are three authentication workflows that you can use when conne
 
 Azure ML provides built-in roles for common management scenarios. An individual who has a profile in Azure AD can assign these roles to users, groups, service principals, or managed identities to grant or deny access to resources and operations on Azure ML resources.
 
-You can use the Identity and Access Management tab for a resource in the Azure portal to configure Azure RBAC and maintain inventory on Azure ML resources. The roles are applied to users, groups, service principals, and managed identities in the Azure AD. You can use built-in roles or custom roles for individuals and groups. In the image below we can see Azure RBAC controls found within the Identity and Access Management tab on the Azure portal:
+You can use the **Identity and Access Management tab** for a resource in the Azure portal to configure Azure RBAC and maintain inventory on Azure ML resources. The roles are applied to users, groups, service principals, and managed identities in the Azure AD. You can use built-in roles or custom roles for individuals and groups. In the image below we can see Azure RBAC controls found within the Identity and Access Management tab on the Azure portal:
 
 ![Screenshot showing the access control interface.](../media/2-access-control.png)
 
