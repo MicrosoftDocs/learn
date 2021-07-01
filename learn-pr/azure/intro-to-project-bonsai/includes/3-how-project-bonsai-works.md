@@ -24,7 +24,7 @@ In a typical scenario, you start by identifying a problem you want to solve by u
 1. Iteratively train and assess the Bonsai brain's performance.
 1. Export the fully trained AI as a Docker container. This occurs only after you determine the brain is trained appropriately.
 1. Run verification against the exported AI.
-1. Deploy the Docker container and integrate it with your real-world control system. This occurs only When you're satisfied with the AI performance.
+1. Deploy the Docker container and integrate it with your real-world control system. This occurs only when you're satisfied with the AI performance.
 
 ## Work with simulations
 
@@ -108,7 +108,7 @@ Based on training curriculum, the Instructor:
 
 The Learner carries out the underlying AI algorithms that the Architect selects. During training, the Learner coordinates with the Instructor to set the learning algorithm's starting parameters, determines a response, and grades its performance.
 
-In a deployed Brain, the Learner must instantiate the trained system and execute its computation when needed.
+In a deployed brain, the Learner must instantiate the trained system and execute its computation when needed.
 
 ### Predictor
 
