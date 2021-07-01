@@ -16,7 +16,7 @@ abstract: |
   - Describe what Azure Machine Learning Role-Based Access Control is
   - Define scenarios where Azure Machine Learning Role-Based Access Control can be applied
 prerequisites: A basic familiarity with Azure
-iconUrl:  /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
