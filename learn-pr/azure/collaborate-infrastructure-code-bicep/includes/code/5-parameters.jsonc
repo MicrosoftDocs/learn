@@ -1,0 +1,9 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "productStockCheckApiUrl": {
+        "value": "https://x73.mytoycompany.com/e4/j7" // This is the URL to the product stock API in the development environment.
+      }
+    }
+  }

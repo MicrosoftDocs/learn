@@ -4,7 +4,7 @@ Good Bicep code is _self-documenting_. This means that it uses clear naming and 
 
 Bicep enables you to add _comments_ to your code. Comments are human-readable text. They help you to document your Bicep code, but they're ignored when the file is deployed to Azure.
 
-Bicep supports two flavors of comments:
+Bicep supports two types of comments:
 
 - **Single-line comments** start with a `//` character sequence, and continue to the end of the line, like this:
   ::: code language="bicep" source="code/4-comments.bicep" range="1-8" highlight="5" :::
@@ -27,7 +27,12 @@ You can also use Bicep comments to add a structured multi-line block at the begi
 
 ### Add comments to parameter files
 
-TODO
+Parameter files enable you to create a file to specify a set of parameters for your deployment. The parameters that you specify in parameter files also often need to be documented, and it's a good practice to add comments to parameter files when you work with parameter values that aren't immediately clear to someone reading the file. For example, your website's Bicep template might include a parameter for the URL to access your product stock API, so your website can display whether your toys are in stock in your warehouse. The URLs to access the stock API for each environment aren't easy to understand, so they're a good candidate for a comment:
+
+::: code language="json" source="code/5-parameters.jsonc" highlight="6" :::
+
+> [!TIP]
+> When you work with parameter files and other JSON files that include comments, you usually need to use the `.jsonc` file extension instead of `.json`. This helps Visual Studio Code and other tools understand that comments are allowed.
 
 ## Apply resource tags
 
