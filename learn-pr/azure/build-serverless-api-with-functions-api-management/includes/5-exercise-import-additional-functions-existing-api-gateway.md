@@ -18,7 +18,7 @@ Before we add the Orders function app to the API, let's test the function it hos
 
 1. On the **Input** tab, in the **HTTP method** dropdown, select **GET**, and then under **Query**, select **Add parameter**.
 
-1. In the **Name** field, enter *name*, and in the **Value** field, enter *Chiba*. The parameter name and value are both case-sensitive.
+1. In the **Name** field, enter *name*, and in the **Value** field, enter *Chiba*. The value is case-sensitive.
 
 1. Select **Run**, examine the results on the **Output** tab, and then select **Close**.
 
