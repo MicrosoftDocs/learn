@@ -34,12 +34,16 @@ Because you're using your own subscription, you might want to walk through the f
 
 1. At the top of the **Access control (IAM)** pane, select **Add**.
 1. Select **Add role assignment**.
-1. In the **Role** drop-down list, select **Owner**.
-1. In the **Select** box, enter the username or email address of the user you want to grant access to. Select that user.
+1. On the **Role** tab, select the **Owner** role.
+1. At the bottom of the page, select **Next**.
+1. On the **Members** tab, select **+ Select members**.
 
-    ![The "Add role assignment" pane for assigning the Owner role to a user](../media/4-add-owner-role.png)
+    :::image type="content" source="../media/4-add-owner-role.png" alt-text="Screenshot of the member tab on the add role assignment page. ":::
 
-1. If you want to complete the Owner role assignment, select **Save**. Otherwise, select **Discard**.
+1. On the **Select members** page, enter the username or email address of the user you want to grant access to and select **Select**.
+1. Select **Next**.
+1. Select **Review + Assign**.
+1. If you want to complete the Owner role assignment, select **Review + Assign**. Otherwise, close the page.
 
 ## Revoke your elevated access
 
