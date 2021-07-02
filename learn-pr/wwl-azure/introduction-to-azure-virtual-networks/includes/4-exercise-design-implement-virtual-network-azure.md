@@ -1,4 +1,3 @@
-# Exercise - Design and implement a Virtual Network in Azure
 
  
 

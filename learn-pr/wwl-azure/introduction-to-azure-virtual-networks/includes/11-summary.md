@@ -1,4 +1,4 @@
-# Summary
+
 
 As your organization moves to Azure, you must design a secure virtual networking environment that provides connectivity and name resolution for both virtual and on-premises resources. Users must be able to access the resources they need smoothly and securely, regardless of where they are accessing the network from.
 
@@ -8,7 +8,7 @@ You now have the fundamental knowledge required to plan and implement virtual ne
 
  
 
-# Summary and Resources
+## Summary and Resources
 
  
 

@@ -1,5 +1,3 @@
-# Enable cross-VNet connectivity with peering
-
 Organizations with large scale operations will often need to create connections between different parts of their virtual network infrastructure. Virtual network peering enables you to seamlessly connect separate VNets with optimal network performance, whether they are in the same Azure region (VNet peering) or in different regions (Global VNet peering). Network traffic between peered virtual networks is private. The virtual networks appear as one for connectivity purposes. The traffic between virtual machines in peered virtual networks uses the Microsoft backbone infrastructure, and no public Internet, gateways, or encryption is required in the communication between the virtual networks.
 
 Virtual network peering enables you to seamlessly connect two Azure virtual networks. Once peered, the virtual networks appear as one, for connectivity purposes. There are two types of VNet peering.
@@ -10,7 +8,6 @@ Virtual network peering enables you to seamlessly connect two Azure virtual netw
 
 ![Illustration showing VNet1 in Region 1, and VNet2 and VNet3 in Region 2. VNet2 and VNet3 are connected with regional VNet peering. VNet1 and VNet2 are connected with a global VNet peering](../media/global-vnet-peering.png)
 
- 
 
 The benefits of using virtual network peering, whether local or global, include:
 
@@ -56,7 +53,6 @@ In these scenarios, gateway transit allows peered virtual networks to share the 
 >
 > Network security groups can be applied in either virtual network to block access to other virtual networks or subnets. When configuring virtual network peering, you can either open or close the network security group rules between the virtual networks.
 
- 
 
 ## Use service chaining to direct traffic to a gateway
 
@@ -71,24 +67,6 @@ The following diagram shows a scenario in which hub VNet hosts a VPN gateway tha
 ![Hub-and-spoke configuration - Contoso and Fabrikam peer to Hub VNet.
 Hub VNet contains NVA, VMs, and a VPN Gateway connected to on-premises network.](../media/service-chaining.png)
 
-## Check your knowledge 
+## Check your knowledge
 
 Choose the best response for each of the questions below. When you're done, select **Check your answers**.
-
-## Multiple Choice
-
-You want the resources in one VNet to communicate with resources in a subnet in a different VNet. Which Azure network feature can you use?
-( ) VNet peering. {{Virtual network peering enables you to seamlessly connect separate VNets with optimal network performance, whether they are in the same Azure region (VNet peering) or in different regions (Global VNet peering).}}
-( ) Internal DNS. {{Internal DNS is a service provided by Azure.}}
-( ) Azure Availability Zones. {{Azure Availability Zones are a high availbility feature. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking.}} 
-
-( ) Resources on Azure VNets can communicate with each other by default, you don't need to perform any further configuration.{{Resources on separate VNets cannot communicate by default.}} 
-
-## Multiple Choice 
-
-When you configure global peering, what changes will you see in the peered VNets?
-( ) A peering entry is added to the routing table in each VNet. {{VNetGlobalPeering entries are added to the routing tables in each VNet to direct traffic to the peered VNet.}}
-( ) A peering entry is added to the routing table in the source VNet only. {{The VNets communicate as peers, so resources in each VNet must be able to communicate with each other. Adding a single peering entry only allows traffic to be routed one way.}}
-( ) All traffic on the Vnet must be routed through a Gateway. {{YResources on each VNet can communicate seamlessly with one another.}}
-
-( ) No changes are made in the peered VNets. {{VNetGlobalPeering entries are added to the routing tables in each VNet to direct traffic to the peered VNet.}} 

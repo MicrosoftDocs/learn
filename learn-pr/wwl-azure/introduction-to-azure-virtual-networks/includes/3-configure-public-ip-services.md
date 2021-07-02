@@ -1,5 +1,3 @@
-# Configure public IP services 
-
 Public networks like the Internet communicate by using public IP addresses. Private networks like your Azure Virtual Network use private IP addresses, which are not routable on public networks. To support a network that exists both in Azure and on-premises, you must configure IP addressing for both types of networks.
 
 Public IP addresses enable Internet resources to communicate with Azure resources and enable Azure resources to communicate outbound with Internet and public-facing Azure services. A public IP address in Azure is dedicated to a specific resource, until it's unassigned by a network engineer. A resource without a public IP assigned can communicate outbound through network address translation services, where Azure dynamically assigns an available IP address that isn't dedicated to the resource. 
@@ -51,7 +49,3 @@ Standard IPs can be assigned to network interfaces, Standard public load balance
 You can't bring your own public IP addresses from on-premises networks into Azure. Instead, an IP address is assigned from a pool of available addresses, based on the location of the resource. Public IP addresses are allocated from a range that's unique to each region in each Azure cloud. Public IP addresses can't be moved between regions; all IP addresses are region-specific. If your business needs to have datacenters in different regions, you will have a different public IP address range for each region. You can use technology like Azure Traffic Manager to balance traffic between region-specific instances.
 
 To ensure a static range of public IP addresses, you can create a public IP address prefix. You can't specify the addresses when you create the prefix, but after the prefix is created, the addresses will be fixed. The IP addresses will be a contiguous range. The advantage of a public IP address prefix is that you can specify firewall rules for these IP addresses with the knowledge that they will not change. You can assign the addresses from a public IP address prefix to any resource in Azure that supports public IP addresses.
-
-## Check your knowledge 
-
-Choose the best response for each of the questions below. When you're done, select **Check your answers**.

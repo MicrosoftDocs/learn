@@ -1,5 +1,3 @@
-# Design name resolution for your virtual network
-
 Depending on how you use Azure to host IaaS, PaaS, and hybrid solutions, you might need to allow the virtual machines (VMs), and other resources deployed in a virtual network to communicate with each other. Although you can enable communication by using IP addresses, it is much simpler to use names that can be easily remembered, and do not change. 
 
 DNS is split into two areas: Public, and Private DNS for resources accessible from your own internal networks.
@@ -34,11 +32,9 @@ DNS servers within a virtual network can forward DNS queries to the recursive re
 
 DNS forwarding also enables DNS resolution between virtual networks and allows your on-premises machines to resolve Azure-provided host names. In order to resolve a VM's host name, the DNS server VM must reside in the same virtual network and be configured to forward host name queries to Azure. Because the DNS suffix is different in each virtual network, you can use conditional forwarding rules to send DNS queries to the correct virtual network for resolution. The following image shows two virtual networks and an on-premises network doing DNS resolution between virtual networks, by using this method.
 
- 
 
 ![image shows two virtual networks and an on-premises network doing DNS resolution between virtual networks, by using this method](../media/inter-vnet-dns.png)
 
- 
 
 ### Azure provided DNS
 
@@ -90,7 +86,6 @@ If necessary, you can override the default configuration by configuring an alter
 
 ![DNS default configuration.](../media/dns_config.png)
 
- 
 
 Two ways to link VNets to a private zone:
 
@@ -100,7 +95,6 @@ Two ways to link VNets to a private zone:
 
 ![VNet is linked to a private DNS zone for registration and up to 100 private DNS zones for resolution.](../media/dns_zones.png)
 
- 
 
 ### Integrating on-premises DNS with Azure VNets
 
@@ -120,33 +114,6 @@ Note that if the DNS server is outside Azure, it doesn't have access to Azure DN
 
 ![On-premises DNS server uses conditional forwarding to forward queries for VNet 1. DNS resolver in VNet 1 sends queries to Azure DNS for resolution. ](../media/external_dns_fwd.png)
 
- 
-
-## Check your knowledge 
+## Check your knowledge
 
 Choose the best response for each of the questions below. When you're done, select **Check your answers**.
-
-## Multiple Choice 
-
-What is the difference between a static public IP address and a dynamic public IP address?
-
-( ) A static IP address remains the same over the lifespan of the resource to which it is assigned. {{A static public IP address is an assigned address that will not change over the lifespan of the Azure resource. To configue a static IP address, set the allocation method explicitly to static.}}
-
-( ) A dynamic IP address remains the same over the lifespan of the resource to which it is assigned.{{A dynamic public IP address is an assigned address that can change over the lifespan of the Azure resource. The dynamic IP address is allocated when you create or start a VM.}} 
-
-( )  A static IP address can use an IPv4 address only.{{Static IP addresses are created with either an IPv4 or an IPv6 address.}}
-
-( ) A dynamic IP address can use an IPv6 address only.{{Dynamic IP addresses are created with either an IPv4 or an IPv6 address.}}
-
-
-
-## Multiple Choice 
-
-You want to use dynamic IP addresses for specific resources on your VNet. Which SKU must you choose?
-
-( ) Basic SKU {{Basic SKU public IPs can be assigned by using static or dynamic allocation methods.}}
-
-( ) Standard SKU{{Standard SKU public IP addresses always use the static allocation method.}} 
-
-( )  Either Basic or Standard SKU{{Standard SKU public IP addresses always use the static allocation method. Basic SKU public IPs can be assigned by using static or dynamic allocation methods.}} 
-

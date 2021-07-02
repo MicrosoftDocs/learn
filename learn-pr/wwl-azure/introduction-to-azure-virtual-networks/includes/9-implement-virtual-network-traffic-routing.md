@@ -1,5 +1,3 @@
-# Implement virtual network traffic routing
-
 Azure automatically creates a route table for each subnet within an Azure virtual network and adds system default routes to the table. You can override some of Azure's system routes with [custom routes](/azure/virtual-network/virtual-networks-udr-overview), and add additional custom routes to route tables. Azure routes outbound traffic from a subnet based on the routes in a subnet's route table.
 
 ## System routes
@@ -11,7 +9,7 @@ Azure automatically creates system routes and assigns the routes to each subnet 
 Each route contains an address prefix and next hop type. When traffic leaving a subnet is sent to an IP address within the address prefix of a route, the route that contains the prefix is the route Azure uses. Whenever a virtual network is created, Azure automatically creates the following default system routes for each subnet within the virtual network:
 
 | **Source** | **Address prefixes**          | **Next hop type** |
-| ---------- | ----------------------------- | ----------------- |
+| - | -- | -- |
 | Default    | Unique to the virtual network | Virtual network   |
 | Default    | 0.0.0.0/0                     | Internet          |
 | Default    | 10.0.0.0/8                    | None              |
@@ -41,7 +39,7 @@ If you assign any of the previous address ranges within the address space of a v
 Azure adds default system routes for any Azure capabilities that you enable. Depending on the capability, Azure adds optional default routes to either specific subnets within the virtual network, or to all subnets within a virtual network. The additional system routes and next hop types that Azure may add when you enable different capabilities are:
 
 | **Source**              | **Address prefixes**                                         | **Next hop type**             | **Subnet within virtual network that route is added to** |
-| ----------------------- | ------------------------------------------------------------ | ----------------------------- | -------------------------------------------------------- |
+| -- |  | -- | -- |
 | Default                 | Unique to the virtual network, for example: 10.1.0.0/16      | VNet peering                  | All                                                      |
 | Virtual network gateway | Prefixes advertised from on-premises via BGP, or configured in the local network gateway | Virtual network gateway       | All                                                      |
 | Default                 | Multiple                                                     | VirtualNetworkServiceEndpoint | Only the subnet a service endpoint is enabled for.       |
@@ -59,7 +57,7 @@ Azure adds default system routes for any Azure capabilities that you enable. Dep
 **VirtualNetworkServiceEndpoint:** Azure adds the public IP addresses for certain services to the route table when you enable a service endpoint to the service. Service endpoints are enabled for individual subnets within a virtual network, so the route is only added to the route table of a subnet a service endpoint is enabled for. The public IP addresses of Azure services change periodically, and Azure manages the updates to the routing tables when necessary.
 
 | ![Icon of lightbulb](../media/lightbulb.png) | The **VNet peering** and **VirtualNetworkServiceEndpoint** next hop types are only added to route tables of subnets within virtual networks created through the Azure Resource Manager deployment model. The next hop types are not added to route tables that are associated to virtual network subnets created through the classic deployment model. |
-| -------------------------------------------- | ------------------------------------------------------------ |
+| -- |  |
 |                                              |                                                              |
 
 
@@ -102,24 +100,18 @@ You can view the effective routes for each network interface by using the Azure 
 1. Log into the Azure portal with an Azure account that has the [necessary permissions](/azure/virtual-network/virtual-network-network-interface).
 2. In the search box, enter the name of the VM that you want to investigate. 
 3. Select the VM from the search results.
-4. Under **Settings**, select **Networking**, and navigate to the network interface resource by selecting its name.
-   ![Azure Portal - select a specific NIC.](../media/view-nics.png)
+4. Under **Settings**, select **Networking**, and navigate to the network interface resource by selecting its name.  ![Azure Portal - select a specific NIC.](../media/view-nics.png)
 
-8. Under **Support + troubleshooting**, select **Effective routes**. The effective routes for a network interface named **myVMNic1** are shown, in the following image:
-   ![Azure Portal - effective routes for a specific NIC.](../media/view-effective-routes.png)
+8. Under **Support + troubleshooting**, select **Effective routes**. The effective routes for a network interface named **myVMNic1** are shown, in the following image:  ![Azure Portal - effective routes for a specific NIC.](../media/view-effective-routes.png)
 
 ### View effective routes by using Azure PowerShell
 
 You can view the effective routes for a network interface with the Get-AzEffectiveRouteTable command. The following example gets the effective routes for a network interface named myVMNic1, that is in a resource group named myResourceGroup:
 
-````Azure PowerShell
- Get-AzEffectiveRouteTable `
-
- -NetworkInterfaceName myVMNic1 `
-
- -ResourceGroupName myResourceGroup `
-
- | Format-Table |
+````Azure PowerShellGet-AzEffectiveRouteTable `
+-NetworkInterfaceName myVMNic1 `
+-ResourceGroupName myResourceGroup `
+| Format-Table |
 ````
 
 
@@ -129,12 +121,9 @@ You can view the effective routes for a network interface with the Get-AzEffecti
 
 You can view the effective routes for a network interface with the az network nic show-effective-route-table command. The following example gets the effective routes for a network interface named myVMNic1 that is in a resource group named myResourceGroup:
 
-```Azure CLI
- az network nic show-effective-route-table 
-
- --name myVMNic1 
-
- --resource-group myResourceGroup 
+```Azure CLIaz network nic show-effective-route-table 
+--name myVMNic1 
+--resource-group myResourceGroup 
 ```
 
 
@@ -152,72 +141,34 @@ Steps you might take to resolve the routing problem might include:
 
 - Ensure that devices such as Azure VPN gateway or network virtual appliances you've deployed are operating as intended. 
 
- 
 
 ## Secure a VNet by using forced tunnelling
 
 Forced tunneling lets you redirect or "force" all Internet-bound traffic back to your on-premises location via a Site-to-Site VPN tunnel for inspection and auditing. This is a critical security requirement for most enterprise IT policies. If you don't configure forced tunneling, Internet-bound traffic from your VMs in Azure always traverses from the Azure network infrastructure directly out to the Internet, without the option to allow you to inspect or audit the traffic. Unauthorized Internet access can potentially lead to information disclosure or other types of security breaches. Forced tunneling can be configured by using Azure PowerShell. It can't be configured using the Azure portal. 
 
 In the following example, the Frontend subnet is not force tunneled. The workloads in the Frontend subnet can continue to accept and respond to customer requests from the Internet directly. The Mid-tier and Backend subnets are forced tunneled. Any outbound connections from these two subnets to the Internet will be forced or redirected back to an on-premises site via one of the Site-to-site (S2S) VPN tunnels.
-
- ![Backend and Mid-tier subnets Forced Tunneled via S2S VPN.Frontend subnets routed directly to Internet.](../media/forced-tunnel.png)
+![Backend and Mid-tier subnets Forced Tunneled via S2S VPN.Frontend subnets routed directly to Internet.](../media/forced-tunnel.png)
 
 ### Configure forced tunnelling
 
 Forced tunneling in Azure is configured using virtual network custom user-defined routes.
 
 - Each virtual network subnet has a built-in, system routing table. The system routing table has the following three groups of routes:
-
-  - Local VNet routes: Route directly to the destination VMs in the same virtual network.
-
-  - On-premises routes: Route to the Azure VPN gateway.
-
-  - Default route: Route directly to the Internet. Packets destined to the private IP addresses not covered by the previous two routes are dropped.
+ - Local VNet routes: Route directly to the destination VMs in the same virtual network.
+ - On-premises routes: Route to the Azure VPN gateway.
+ - Default route: Route directly to the Internet. Packets destined to the private IP addresses not covered by the previous two routes are dropped.
 
 - To configure forced tunnelling, you must:
-
-  - Create a routing table.
-
-  - Add a user-defined default route to the VPN Gateway.
-
-  - Associate the routing table to the appropriate VNet subnet(s).
+ - Create a routing table.
+ - Add a user-defined default route to the VPN Gateway.
+ - Associate the routing table to the appropriate VNet subnet(s).
 
 - Forced tunneling must be associated with a VNet that has a route-based VPN gateway. 
-
-  - You must set a default site connection among the cross-premises local sites connected to the virtual network. 
-
-  - The on-premises VPN device must be configured using 0.0.0.0/0 as traffic selectors.
+ - You must set a default site connection among the cross-premises local sites connected to the virtual network. 
+ - The on-premises VPN device must be configured using 0.0.0.0/0 as traffic selectors.
 
 Using forced tunneling allows you to restrict and inspect Internet access from your VMs and cloud services in Azure, while continuing to enable your multi-tier service architecture the Internet access it requires. 
 
 ## Check your knowledge
 
 Choose the best response for each of the questions below. When you're done, select **Check your answers**.
-
-## Multiple Choice 
-
-What type of routes enable you to override routes that Azure configures?
-
-( ) User-defined routes (UDR){{You can create custom user-defined routes in Azure to override Azure's default system routes, or to add additional routes to a subnet's route table.}} 
-
-( ) System routes{{Azure automatically creates system routes and assigns the routes to each subnet in a virtual network. You can't create system or remove routes.}} 
-
-( )  Default routes{{To enable basic routing functionaltiy, Azure automatically creates default system routes for each subnet within the virtual network.}}
-
-( )  Optional default routes {{Azure creates additional default system routes for any Azure capabilities that you enable.}}
-
-
-
-## Multiple Choice 
-
-Your VNet is experiencing some routing problems. What would you do to begin to diagnose the problem?
-
-( ) View the effective routes for each NIC. (UDR){{You can use Azure Portal, Azure CLI, or Azure PowerShell to view the Effective Routes for each NIC. This tells you the routes that the NIC can use to communicate with other resources.}} 
-
-( ) Configure every resource with a static IP address.{{This would not provide the solution to the existing problems and would be extremely time consuming.}} 
-
-( )  Use forced tunneling to control traffic flow.{{Forced tunneling is used to force all Internet-bound traffic back to your on-premises location via a Site-to-Site VPN tunnel for inspection and auditing. It's not helpful for initial problem diagnosis.}}
-
-( )  Remove any VNet peering configuration. {{Before making changes to your Azure network, use tools like the Azure Portal or Azure CLI to gather information to diagnose the problem. For example, you could view routing tables for problematic NICs.}}
-
- 
