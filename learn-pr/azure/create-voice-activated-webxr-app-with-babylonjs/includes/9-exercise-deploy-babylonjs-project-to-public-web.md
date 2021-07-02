@@ -2,28 +2,7 @@ Azure Blob Storage allows developers to serve static content on the web by stori
 
 Recall that in the scenario of the amusement park application, we need to make the Babylon.js WebXR application available on the public web.
 
-In this exercise, you''ll use Azure Blob Storage to serve the amusement park application as a public static website.
-
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
-
-    Goal: List the steps they'll do to complete the exercise.
-
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
-
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+In this exercise, you''ll use Azure Blob Storage to serve the amusement park application as a public static website. Make sure to select the appropriate WebXR Session Type from the tabs above before proceeding to the exercise.
 
 ## Build the web project
 
@@ -83,7 +62,7 @@ Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com
     :::image type="content" source="../media/static-website-settings.PNG" alt-text="Settings page for the static website hosted using Azure Blob Storage":::
 
 1. Select **Save**.
-1. After the settings are applied, you will see the default URLs provided for your website.
+1. After the settings are applied, you will see the default URLs provided for your website. Copy and save one of the URLs somewhere so that we can access the website later.
 
     :::image type="content" source="../media/static-website-url.png" alt-text="Screenshot of the static website U R L s provided by default.":::
 
@@ -97,7 +76,7 @@ Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com
 
     :::image type="content" source="../media/storage-upload-ui.png" alt-text="Screenshot of the Storage Explorer with $web, Upload, and a folder icon surrounded with a red box.":::
 
-1. Select the **Upload** button to upload the source files within the *dist* folder (excluding the **assets** folder).
+1. Upload the source files within the *dist* folder (excluding the **assets** folder).
 
     :::image type="content" source="../media/source-files-uploaded.PNG" alt-text="Screenshot of the website source files uploaded to blob storage.":::
 
@@ -111,13 +90,44 @@ Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com
 
     :::image type="content" source="../media/uploaded-assets.PNG" alt-text="A screenshot of the Storage Explorer page with the list of assets files uploaded.":::
 
-## Accessing the website from your device
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
+## Access the website from your device
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+The static website for the amusement park application is live on the public web! From the table below, find the appropriate browser for your device to view the WebXR session:
 
-<!-- Do not add a unit summary or references/links -->
+::: zone pivot="vr"
+
+|Device  |Browser  |
+|---------|---------|
+|Windows Mixed Reality Device     |Microsoft Edge        |
+|HoloLens     |Microsoft Edge         |
+|Oculus Quest     |Oculus Browser         |
+
+1. Open the static website on your device's browser using the URL you saved from earlier.
+1. From there, enter the WebXR session by selecting the XR button.
+
+    :::image type="content" source="../media/webxr-button-highlighted.jpg" alt-text="Screenshot of a dark Babylon.js scene with the web X R button surrounded by a red box.":::
+
+1. Say "Go dragon" and watch the dragon appears!
+
+    :::image type="content" source="../media/vr-dragon.PNG" alt-text="A screenshot of the dragon and magic circle rendered in the Virtual Reality Space.":::
+
+::: zone-end
+
+::: zone pivot="ar"
+
+|Device  |Browser  |
+|---------|---------|
+|Android     |Google Chrome         |
+|iOS     |WebXR Viewer (developed by Mozilla)         |
+|HoloLens     |Microsoft Edge         |
+
+1. Open the static website on your device's browser using the URL you saved from earlier.
+1. From there, enter the WebXR session by selecting the XR button.
+
+    :::image type="content" source="../media/webxr-button-highlighted.jpg" alt-text="Screenshot of a dark Babylon.js scene with the web X R button surrounded by a red box.":::
+
+1. Say "Go dragon" and watch the dragon appears!
+
+    :::image type="content" source="../media/ar-dragon.jpg" alt-text="A screenshot of the dragon and magic circle rendered in the Augmented Reality Space.":::
+
+::: zone-end
