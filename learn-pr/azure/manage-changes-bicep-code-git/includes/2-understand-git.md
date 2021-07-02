@@ -20,7 +20,7 @@ Git is an open-source version control system. By using Git, you create _reposito
 Bicep code is maintained in text files, so it's a great fit for many version control systems. Version control helps a lot with some common scenarios you likely face as you write your Bicep code, such as:
 
 - When you make changes to your Bicep files, you often need to undo a change, or view the history of a file to see the changes you've made in the past. You could make copies of each file as you change them, but this quickly gets difficult to manage. Git provides features to keep track of your changes to each file.
-- You need to make a major change to a Bicep file, which takes some time to prepare and test. At the same time, you need to access the current _known good_ version of the Bicep file so you can continue to deploy it. Git provides features for _branching_ and _merging_ so you can have work with multiple versions of a file and quickly switch between them.
+- You need to make a major change to a Bicep file, which takes some time to prepare and test. At the same time, you need to access the current _known good_ version of the Bicep file so you can continue to deploy it. Git provides features for _branching_ and _merging_ so you can work with multiple versions of a file and quickly switch between them.
 - You work with other people on your team who make changes to your Bicep code. You need to track who makes each change, and if two changes conflict with each other, you need to have a process to resolve the conflicts. Git provides powerful collaboration features.
 
 ## Local and remote repositories
