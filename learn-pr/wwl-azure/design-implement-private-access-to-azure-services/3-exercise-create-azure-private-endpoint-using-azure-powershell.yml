@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-private-access-to-azure-services.exercise-create-azure-private-endpoint-using-azure-powershell
+title: Exercise - create an Azure private endpoint using Azure PowerShell
+metadata:
+  title: Exercise - create an Azure private endpoint using Azure PowerShell
+  description: "Exercise - create an Azure private endpoint using Azure PowerShell"
+  ms.date: 07/02/2021
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-exercise-create-azure-private-endpoint-using-azure-powershell.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is true about Azure Virtual Machines which aren't assigned a public IP address?"
+    choices:
+    - content: "Azure provides an ephemeral IP."
+      isCorrect: true
+      explanation: "Correct! Azure provides an ephemeral IP for Azure Virtual Machines which aren't assigned a public IP address, or are in the backend pool of an internal Basic Azure Load Balancer."
+    - content: "Azure creates a Private Endpoint."
+      isCorrect: false
+      explanation: "Incorrect, you must create the Private Endpoint. Azure provides an ephemeral IP for Azure Virtual Machines which aren't assigned a public IP address, or are in the backend pool of an internal Basic Azure Load Balancer."
+    - content: "Azure creates the static public IP address"
+      isCorrect: false
+      explanation: "More ActionsIncorrect. Azure provides an ephemeral IP for Azure Virtual Machines which aren't assigned a public IP address, or are in the backend pool of an internal Basic Azure Load Balancer."
