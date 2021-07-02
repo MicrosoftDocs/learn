@@ -17,7 +17,7 @@ abstract: |
     - Azure Container Instances
     - Azure Kubernetes Service
     - Azure Functions
-    - Windows Virtual Desktop
+    - Azure Virtual Desktop
 prerequisites: |
   - You should be familiar with basic computing concepts and terminology.
   - An understanding of cloud computing is helpful, but isn't necessary.
