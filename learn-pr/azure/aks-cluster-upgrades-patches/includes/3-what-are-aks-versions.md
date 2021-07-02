@@ -1,6 +1,3 @@
-
-<!-- Changes such as updates and upgrades often happen especially in the software development world. The deployment team at Songify decided to set up the Azure Kubernetes Service clusters prior to learning [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/), the language that is used to deploy containers to a Kubernetes cluster. By the time they were ready to deploy the containerized applications to Azure Kubernetes Service clusters, the cluster versions they had set up is now out of support. Azure Kubernetes Services tends to follow the **N-2** rule when it comes to supporting Kubernetes versions.  -->
-
 Changes such as updates and upgrades often happen especially in the software development world. By the time Nod Publishers were ready to deploy the containerized applications to Azure Kubernetes Service clusters, the cluster versions they had set up is now out of support. Azure Kubernetes Services tends to follow the **N-2** rule when it comes to supporting Kubernetes versions. 
 
 ## What is the N-2 rule? 
@@ -44,8 +41,6 @@ Azure Kubernetes Service will also send out email notification and service healt
 Azure Kubernetes Service will also announce to users who are impacted by the latest Kubernetes version updates through Azure Advisor particularly if the AKS cluster versions they are currently running will go out of support. 
 
  :::image type="content" source="../media/3-azure-advisor-announcement.png" border="false" alt-text="An image that shows Azure Kubernetes Services announcing new Kubernetes version releases that could impact existing AKS clusters to AKS users through Azure Advisor.":::
-
-<!-- #### Azure Event Grid -->
 
 #### Preview versions
 Before a new minor version of Kubernetes becomes supported by Azure Kubernetes Service, it often is released as a preview version. A preview version allows you to assess the next version ahead of its release. This gives you time to test your existing AKS cluster workloads with the next release and prepare to upgrade when the version becomes generally available.

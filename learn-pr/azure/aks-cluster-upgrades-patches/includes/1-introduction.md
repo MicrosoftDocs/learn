@@ -7,7 +7,7 @@ Your deployment team ends the week with celebrations or as the CEO of Nod Publis
 
 However, when you get to work on Monday morning, you find the following email in your inbox: 
 
-:::image type="content" source="../media/draft/1-introduction-email.png" border="false" alt-text="An image that shows an alert from Azure about Azure Kubernetes Service (AKS) clusters support for 1.18 going out of support. The email suggests that an immediate upgrade for AKS cluster is recommended.":::
+:::image type="content" source="../media/1-introduction-email.png" border="false" alt-text="An image that shows an alert from Azure about Azure Kubernetes Service (AKS) clusters support for 1.18 going out of support. The email suggests that an immediate upgrade for AKS cluster is recommended.":::
 
 It looks like you have received an email in your inbox from Microsoft Azure notifying you that the current Kubernetes version that your AKS cluster deployments are running will go out of support soon.
 
@@ -18,11 +18,11 @@ By the end of this module, you should be able to upgrade and apply patches to yo
 ## Learning objectives
 
 Upon completing this module, you should be able to: 
- - Understand what [Kubernetes versions](https://docs.microsoft.com/azure/aks/supported-kubernetes-versions) are supported by Azure Kubernetes Services (AKS).
+ - Understand what [Kubernetes versions](docs.microsoft.com/azure/aks/supported-kubernetes-versions) are supported by Azure Kubernetes Services (AKS).
  - Upgrade your existing Azure Kubernetes Services (AKS) clusters components to the latest supported Kubernetes version
  - Understand how to adopt a Blue/Green deployment to upgrade your Azure Kubernetes Services clusters in a production environment
  
 ## Prerequisites
 
-- A basic understanding of [containerization](https://docs.microsoft.com/learn/modules/intro-to-docker-containers/). 
-- A basic understanding of [Azure Kubernetes Service](https://docs.microsoft.com/learn/modules/intro-to-azure-kubernetes-service/).
+- A basic understanding of [containerization](docs.microsoft.com/learn/modules/intro-to-docker-containers/). 
+- A basic understanding of [Azure Kubernetes Service](docs.microsoft.com/learn/modules/intro-to-azure-kubernetes-service/).

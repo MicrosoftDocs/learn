@@ -8,8 +8,8 @@ metadata:
   ms.date: 06/11/2021  
   author: microsoftmichelle 
   ms.author: mixie
-title: aks-cluster-upgrades-patches  
-summary: introductory summary (https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)
+title: Apply cluster upgrades and security patches with Azure Kubernetes Service  
+summary: Learn more about why you need to upgrade your existing Azure Kubernetes Service clusters.
 abstract: |
   By the end of this module, you will be able to: 
   - Understand what versioning is

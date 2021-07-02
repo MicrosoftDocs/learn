@@ -10,16 +10,6 @@ Versioning in software allows for software to evolve in a controlled process ove
 
 A major version is released when software evolves from version 1.0.0 to 2.0.0. A minor version is release when the software evolves from 1.0.0 to 1.1.0. And a patch version is released when the software evolves from version 1.0.0 to 1.0.1.
 
-<!-- The major version tells us that this is the first time we are releasing this type of software. For example, when Songify first launched the music software to the public, version 1.0.0 was released.  
-
-When Songify decided to add new features to the music software to improve the product, a minor version is released. For example, Songify added a new feature that automatically generates lyrical words over the soundtracks. This new version is version 1.1.0 of the music software.
-
-:::image type="content" source="../media/draft/2-minor-version.png" border="false" alt-text="An image that shows that when a new feature is added to an existing software, a new minor version of that software is released.":::
-
-The patch version is typically an indication of bug fixes. When the music software was first launched, users found they could only log into their music application on one device at a time. They filed a complaint and requested the development team to make some changes. Soon, the development team released version 1.0.1 of the software to improve the performance of the music application. Version 1.0.1 now allows users to sign into their music application from multiple devices.
-
-:::image type="content" source="../media/draft/2-patch-version.png" border="false" alt-text="An image that shows that when a bug fix is made to the software, a new patch version of that software is released."::: -->
-
 ## What are Kubernetes versions? 
 Kubernetes follows semantic versioning rules when a new version is released. This means when bug fixes or security fixes are made, a new patch version is released. When Kubernetes decides to roll out new features for cluster components, a new minor version is released. 
 
