@@ -15,7 +15,8 @@ abstract: |
   - Describe the characteristics and functionality of Microsoft Azure Active Directory (Azure AD).
   - Implement Azure AD authentication for cloud-native applications.
 prerequisites: | 
-  - Basic understanding of cloud computing.
+  Before working on this module, it's helpful but not required that you have:
+  - A basic understanding of cloud computing.
   - Basic familiarity with Azure.
   - Basic familiarity with Azure AD.
   - Basic familiarity with programming concepts.
