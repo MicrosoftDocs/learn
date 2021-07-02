@@ -2,7 +2,7 @@ Azure Blob Storage allows developers to serve static content on the web by stori
 
 Recall that in the scenario of the amusement park application, we need to make the Babylon.js WebXR application available on the public web.
 
-In this exercise, you''ll use Azure Blob Storage to serve the amusement park application as a public static website. Make sure to select the appropriate WebXR Session Type from the tabs above before proceeding to the exercise.
+In this exercise, you'll use Azure Blob Storage to serve the amusement park application as a public static website. Make sure to select the appropriate WebXR Session Type from the tabs above before proceeding to the exercise.
 
 ## Build the web project
 
@@ -82,7 +82,7 @@ Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com
 
 1. Next, let's upload the *assets* folder. Select **New Folder** and name the folder **assets**.
 
-    :::image type="content" source="../media/create-assets-folder.png" alt-text="A screenshot of the Storage Explorer preview page with the New Folder button and the assets text input box surrounded with a redbox.":::
+    :::image type="content" source="../media/create-assets-folder.png" alt-text="A screenshot of the Storage Explorer preview page with the New Folder button and the assets text input box surrounded with a red box.":::
 
 1. Select **OK** to create the folder. You should be taken to the newly created directory.
 
