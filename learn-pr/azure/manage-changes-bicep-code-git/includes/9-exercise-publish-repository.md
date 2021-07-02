@@ -8,7 +8,7 @@ During the process, you'll:
 > * Push your changes from your local repository to the remote repository.
 > * Verify that the changes appear in the remote repository.
 
-::: zone pivot="github,macos,windows"
+::: zone pivot="githubwindows,githubmacos"
 
 ## Create a repository in GitHub
 
@@ -37,7 +37,7 @@ During the process, you'll:
 
 ::: zone-end
 
-::: zone pivot="azure-repos,macos,windows"
+::: zone pivot="azurereposwindows,azurereposmacos"
 
 ## Create a repository in Azure Repos
 
@@ -70,7 +70,7 @@ During the process, you'll:
 
 ::: zone-end
 
-::: zone pivot="azure-repos,macos"
+::: zone pivot="azurereposmacos"
 
 ## Generate a Git password
 
@@ -104,7 +104,7 @@ Keep your browser open. You'll check on the repository again later in this exerc
 
 ## Push your changes by using the Git CLI
 
-::: zone pivot="github,macos,windows"
+::: zone pivot="githubwindows,githubmacos"
 
 1. In the Visual Studio Code terminal, enter the following command:
 
@@ -136,7 +136,7 @@ Keep your browser open. You'll check on the repository again later in this exerc
 
 ::: zone-end
 
-::: zone pivot="azure-repos,windows"
+::: zone pivot="azurereposwindows"
 
 1. In the Visual Studio Code terminal, enter the following command:
 
@@ -169,7 +169,7 @@ Keep your browser open. You'll check on the repository again later in this exerc
 
 ::: zone-end
 
-::: zone pivot="azure-repos,macos"
+::: zone pivot="azurereposmacos"
 
 1. In the Visual Studio Code terminal, enter the following command:
 
@@ -243,7 +243,7 @@ Now that you've committed a new file, you need to push your changes again so tha
 
    Notice that you're not prompted to sign in again. Your Git credentials are shared between the Git CLI and Visual Studio Code.
 
-::: zone pivot="github,macos,windows"
+::: zone pivot="githubmacos,githubwindows"
 
 ## Verify the changes in GitHub
 
@@ -259,7 +259,7 @@ Now that you've pushed your changes to your remote repository, you can inspect t
 
 ::: zone-end
 
-::: zone pivot="azure-repos,macos,windows"
+::: zone pivot="azurereposmacos,azurereposwindows"
 
 ## Verify the changes in Azure Repos
 
