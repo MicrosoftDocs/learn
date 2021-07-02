@@ -54,9 +54,9 @@ az vm start \
 
 ## Expanding a disk using the Azure portal
 
-You can also expand a disk through the Azure portal.
+You can also expand a disk through the Azure portal:
 
-1. Stop the VM selecting **Stop** in the toolbar on the **Overview** page for the VM.
+1. To stop the VM, on the **Overview** page for the VM, select **Stop** in the toolbar.
 
 1. In the left menu pane, under **Settings**, select **Disks**.
 
