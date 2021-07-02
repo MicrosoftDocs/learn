@@ -93,4 +93,4 @@ Confusion matrices can also be constructed when there are more labels. For examp
 
 ![Expanded confusion matrix with three labels - person, animal, and tree.](../media/8-2-g.jpg)
 
-When there are three categories, metrics like True Positives no longer apply, but we can still see exactly how often the model made certain kinds of mistakes. For example, we can see that the model predicted that ‘person’ 300 times when the actual correct result was ‘animal’.
+When there are three categories, metrics like True Positives no longer apply, but we can still see exactly how often the model made certain kinds of mistakes. For example, we can see that the model predicted that ‘person’ 200 times when the actual correct result was ‘animal’.
