@@ -26,7 +26,6 @@ After you run the command, you'll see the following messages in the terminal.
 
 ```bash
 $ ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.16.1:config
-Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
 [INFO] Scanning for projects...
 [INFO] 
 [INFO] ---------< com.microsoft.azure.samples:jakartaee-app-on-jboss >---------
@@ -36,9 +35,9 @@ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
 [INFO] --- azure-webapp-maven-plugin:1.16.1:config (default-cli) @ jakartaee-app-on-jboss ---
 [WARNING] The POM for com.microsoft.azure.applicationinsights.v2015_05_01:azure-mgmt-insights:jar:1.0.0-beta is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
 [INFO] Auth type: OAUTH2
-Username: yoterada@microsoft.com
+Username: YOUR_EMAIL_ADDRESS@microsoft.com
 Available subscriptions:
-[INFO] Subscription: Microsoft Azure Internal Billing-CDA(********-****-****-****-************)
+[INFO] Subscription: YOUR_SUBSCRIPTION(********-****-****-****-************)
 [INFO] It may take a few minutes to load all Java Web Apps, please be patient.
 Web Container Web Apps in subscription Microsoft Azure Internal Billing-CDA:
 * 1: <create>
