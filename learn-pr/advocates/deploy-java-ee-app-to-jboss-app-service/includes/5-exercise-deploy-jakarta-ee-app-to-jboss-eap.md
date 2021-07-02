@@ -165,15 +165,15 @@ The resource `<type>startup</type>` will deploy the specified script as `startup
 Now, check the values for the resource group name and application name from the above XML file. Note these names or better assign them to environment variables.
 
 ```xml
-<resourceGroup>jakartaee-app-on-jboss-1623043825268-rg</resourceGroup>
-<appName>jakartaee-app-on-jboss-1623043825268</appName>
+<resourceGroup>jakartaee-app-on-jboss-1625038814881-rg</resourceGroup>
+<appName>jakartaee-app-on-jboss-1625038814881</appName>
 ```
 
 If you are using the bash, configure the environment variables with the following command.
 
 ```bash
-export WEBAPP_NAME=jakartaee-app-on-jboss-1606464084546
-export RESOURCEGROUP_NAME=jakartaee-app-on-jboss-1606464084546-rg
+export WEBAPP_NAME=jakartaee-app-on-jboss-1625038814881
+export RESOURCEGROUP_NAME=jakartaee-app-on-jboss-1625038814881-rg
 ```
 
 ## Compile and build the Java EE app
