@@ -29,18 +29,18 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "Which of the following is a method allows developers to train a speech-to-text model using their own dataset?"
+  - content: "Which of the following is a method that allows developers to train a speech-to-text model using their own dataset?"
     choices:
     - content: "Universal Language Model"
-      isCorrect: true
+      isCorrect: false
       explanation: "Universal Language Model is the default model used by the Azure Speech-to-text service."
     - content: "Custom Speech"
-      isCorrect: false
+      isCorrect: true
       explanation: "The Custom Speech service allows developers to upload their own test data to train a unique transcription model based on the dataset."
     - content: "Phrase list"
       isCorrect: false
       explanation: "Adding phrases to the phrase list helps Azure Speech-to-text to identify those phrases more accurately, but this method does not involve training a new model."
-  - content: "What configuration does the SpeechConfig class hold?"
+  - content: "What kind of configuration does the SpeechConfig class hold?"
     choices:
     - content: "Audio source"
       isCorrect: false
@@ -53,13 +53,13 @@ quiz:
       explanation: "Configuration related to the event triggers of speech recognizer is stored in the SpeechRecognizer instance."
   - content: "Which of the following can the WebXR Session Manager be used for?"
     choices:
-    - content: "Create a 3D object in a Babylon.js scene"
+    - content: "Creating a 3D object in a Babylon.js scene"
       isCorrect: false
       explanation: "The MeshBuilder class in Babylon.js helps to create 3D meshes in a Babylon.js scene."
-    - content: "Start a WebXR session programmatically"
+    - content: "Starting a WebXR session programmatically"
       isCorrect: true
       explanation: "You can use the WebXR session manager to initialize a WebXR session programmatically."
-    - content: "Remove background meshes in the Augmented Reality mode"
+    - content: "Removing background meshes in the Augmented Reality mode"
       isCorrect: false
       explanation: "The background remover feature is directly managed by the WebXR Features Manager. The WebXR Session Manager can be used to access the WebXR Features Manager instance, but it cannot be used to enable background remover directly."
   - content: "Which of the following type of data is Azure Blob Storage most suitable for?"
@@ -72,4 +72,4 @@ quiz:
       explanation: "Azure Blob Storage is designed to store unstructured data that does not conform to any specific type of data model. JSON data can be better stored and organized in Azure CosmosDB."
     - content: "Binary files"
       isCorrect: true
-      explanation: "Azure Blob Storage is designed to store unstructured data that does not conform to any specific type of data model. Data from binary files fit into this description completely."
+      explanation: "Azure Blob Storage is designed to store unstructured data that does not conform to any specific type of data model. Data from binary files fits into this description."
