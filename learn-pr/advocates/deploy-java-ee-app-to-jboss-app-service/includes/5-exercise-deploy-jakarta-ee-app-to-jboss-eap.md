@@ -9,8 +9,8 @@ Let's configure the application by executing the configuration goal in the Maven
 ```
 
 > [!IMPORTANT]  
-> If you change the region of your MySQL server, you should also change to the same region for your Java EE application server to minimize latency delays.
-In the command, select Java 8 for Java version and JBoss EAP 7.2 for runtime stack.
+> If you change the region of your MySQL server, you should also change to the same region for your Java EE application server to minimize latency delays.  
+> In the command, select Java 8 for Java version and JBoss EAP 7.2 for runtime stack.
 
 |  Input element  |  Value  |
 | ---- | ---- |
