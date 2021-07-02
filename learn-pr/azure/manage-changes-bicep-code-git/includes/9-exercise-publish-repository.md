@@ -14,7 +14,7 @@ During the process, you'll:
 
 1. In a browser, navigate to [GitHub](https://www.github.com?azure-portal=true). Sign in using your GitHub account, or create a new account if you don't already have one.
 
-1. Once you're signed in to GitHub, select the + icon in the top right of the window, and select **New repository**.
+1. Once you're signed in to GitHub, select the + icon in the top right of the window, and select **New repository**:
 
    :::image type="content" source="../media/9-github-new-repository-menu.png" alt-text="Screenshot of the GitHub interface showing the menu with the 'New repository' item highlighted." border="true":::
 
