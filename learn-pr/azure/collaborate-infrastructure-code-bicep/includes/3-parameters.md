@@ -24,6 +24,10 @@ When you're planning a template, consider how you'll balance flexibility with si
 
 You might consider creating a set of parameters to control each of the SKUs and instance counts for the resources:
 
+:::image type="content" source="../media/3-free-form-configuration.png" alt-text="TODO" border="false":::
+
+Here's how this looks in Bicep:
+
 ::: code language="bicep" source="code/3-multiple-parameters.bicep" :::
 
 This provides the most flexibility, since anyone who uses the template can specify any combination of parameter values they want. However, as you add more resources, you need more parameters - and your template becomes more complicated as a result. Also, you might need to restrict certain combinations of parameters, or ensure that when a specific resource is deployed using one SKU, another resource needs to be deployed using another specific SKU. It's hard to enforce these rules when you provide so many individual parameters.
@@ -33,7 +37,11 @@ This provides the most flexibility, since anyone who uses the template can speci
 
 ### Use known configuration sets
 
-Alternatively, you could provide a single parameter with a list of allowed values, like a list of environment types. When someone deploys your template, they only need to select a value for this one parameter:
+Alternatively, you could provide a single parameter with a list of allowed values, like a list of environment types. When someone deploys your template, they only need to select a value for this one parameter.
+
+:::image type="content" source="../media/3-configuration-map.png" alt-text="TODO" border="false":::
+
+The parameter definition looks like this:
 
 ::: code language="bicep" source="code/3-configuration-map.bicep" range="4-9" :::
 
