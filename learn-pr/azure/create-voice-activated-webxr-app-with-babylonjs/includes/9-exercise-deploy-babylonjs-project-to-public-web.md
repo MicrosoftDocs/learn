@@ -83,32 +83,35 @@ Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com
     :::image type="content" source="../media/static-website-settings.PNG" alt-text="Settings page for the static website hosted using Azure Blob Storage":::
 
 1. Select **Save**.
+1. After the settings are applied, you will see the default URLs provided for your website.
 
-## Upload static source files
+    :::image type="content" source="../media/static-website-url.png" alt-text="Screenshot of the static website U R L s provided by default.":::
 
-<!-- 5. Validation chunk -------------------------------------------------------------------------------------
+## Upload static source files for the website
 
-    Goal: Helps the learner to evaluate if they completed the exercise correctly.
+1. In the page of your storage account instance, select **Storage Explorer (preview)** from the side menu.
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading of "## Check your work"
-        2. An introductory paragraph describing how they'll validate their work at a high level
-        3. Numbered steps (when the learner needs to perform multiple steps to verify if they were successful)
-        4. Video of an expert performing the exact steps of the exercise (optional)
+    :::image type="content" source="../media/select-storage-explorer.png" alt-text="Screenshot of the side menu of the web X R magic storage account. The Storage Explorer preview tab is surrounded by a red box.":::
 
-    Example:
-        Heading:
-            "Examine the results of your Twitter trigger"
-        Introduction:
-             "At this point, our logic app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-        Steps:
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
+1. Under **BLOB CONTAINERS**, select the **$web** container. Then select the **Upload** button to open the Upload side panel. Select the **folder** icon to choose the files to upload.
 
-## Check your work
+    :::image type="content" source="../media/storage-upload-ui.png" alt-text="Screenshot of the Storage Explorer with $web, Upload, and a folder icon surrounded with a red box.":::
+
+1. Select the **Upload** button to upload the source files within the *dist* folder (excluding the **assets** folder).
+
+    :::image type="content" source="../media/source-files-uploaded.PNG" alt-text="Screenshot of the website source files uploaded to blob storage.":::
+
+1. Next, let's upload the *assets* folder. Select **New Folder** and name the folder **assets**.
+
+    :::image type="content" source="../media/create-assets-folder.png" alt-text="A screenshot of the Storage Explorer preview page with the New Folder button and the assets text input box surrounded with a redbox.":::
+
+1. Select **OK** to create the folder. You should be taken to the newly created directory.
+
+1. In this directory, upload the files from your local *assets* folder.
+
+    :::image type="content" source="../media/uploaded-assets.PNG" alt-text="A screenshot of the Storage Explorer page with the list of assets files uploaded.":::
+
+## Accessing the website from your device
 <!-- Introduction paragraph -->
 1. <!-- Step 1 (if multiple steps are needed) -->
 1. <!-- Step 2 (if multiple steps are needed) -->
