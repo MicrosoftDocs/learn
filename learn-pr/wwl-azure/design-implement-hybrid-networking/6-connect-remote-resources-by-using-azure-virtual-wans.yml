@@ -18,9 +18,9 @@ quiz:
   questions:
   - content: "What is an Azure Virtual WAN?"
     choices:
-    - content: "Azure Virtual WAN is a collection of connectivity resources like VPNs, which enables organizations to use the Microsoft backone."
+    - content: "Azure Virtual WAN is a collection of connectivity resources like VPNs, which enables organizations to use the Microsoft backbone."
       isCorrect: true
-      explanation: "Correct, Azure Virtual WAN is a centrally managed collection of connectivity resources like VPNs, which enables organizations to use the Microsoft backone in a self-contained, security isolated manner."
+      explanation: "Correct, Azure Virtual WAN is a centrally managed collection of connectivity resources like VPNs, which enables organizations to use the Microsoft backbone in a self-contained, security isolated manner."
     - content: "Azure WAN describes two or more VNets connected through peering."
       isCorrect: false
       explanation: "Incorrect, Azure WAN connects VNets,on-premises networks and individual computers to the Microsoft backbone."

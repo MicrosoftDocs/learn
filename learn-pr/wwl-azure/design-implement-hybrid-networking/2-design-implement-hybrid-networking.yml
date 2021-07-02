@@ -34,7 +34,7 @@ quiz:
       explanation: "Correct, Every Azure VPN gateway consists of two instances in an active-standby configuration."
     - content: "Active-active"
       isCorrect: false
-      explanation: "Incorrect, You can create an Azure VPN gateway in an active-active configuration, but this is not the defuault."
+      explanation: "Incorrect, You can create an Azure VPN gateway in an active-active configuration, but this is not the default."
     - content: "Dual-redundancy"
       isCorrect: false
       explanation: "Incorrect, This is the most reliable option, combining the active-active gateways on both your network and Azure, but it is not the default."
