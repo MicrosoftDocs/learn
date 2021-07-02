@@ -34,9 +34,9 @@ Because you're using your own subscription, you might want to walk through the f
 
 1. At the top of the **Access control (IAM)** pane, select **Add**.
 1. Select **Add role assignment**.
-1. Under **Name**, select **Owner**.
+1. On the **Role** tab, select the **Owner** role.
 1. At the bottom of the page, select **Next**.
-1. Next to **Members**, select **+ Select members**.
+1. On the **Members** tab, select **+ Select members**.
 
     :::image type="content" source="../media/4-add-owner-role.png" alt-text="Screenshot of the member tab on the add role assignment page. ":::
 
