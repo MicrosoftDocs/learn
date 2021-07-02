@@ -55,7 +55,7 @@ quiz:
     choices:
     - content: "Create a 3D object in a Babylon.js scene"
       isCorrect: false
-      explanation: "The MeshBuilder class in Babylon.js helps to create 3D meshes in a Babylon.js scenes."
+      explanation: "The MeshBuilder class in Babylon.js helps to create 3D meshes in a Babylon.js scene."
     - content: "Start a WebXR session programmatically"
       isCorrect: true
       explanation: "You can use the WebXR session manager to initialize a WebXR session programmatically."
@@ -66,10 +66,10 @@ quiz:
     choices:
     - content: "SQL tables"
       isCorrect: false
-      explanation: "Azure Blob Storage is designed to store unstructured data which does not conform to any specific type of data model. Data from SQL tables are better suited to be stored in the Azure SQL database."
+      explanation: "Azure Blob Storage is designed to store unstructured data that does not conform to any specific type of data model. Data from SQL tables are better suited to be stored in the Azure SQL database."
     - content: "JSON data"
       isCorrect: false
-      explanation: "Azure Blob Storage is designed to store unstructured data which does not conform to any specific type of data model. JSON data can be better stored and organized in Azure CosmosDB."
+      explanation: "Azure Blob Storage is designed to store unstructured data that does not conform to any specific type of data model. JSON data can be better stored and organized in Azure CosmosDB."
     - content: "Binary files"
       isCorrect: true
-      explanation: "Azure Blob Storage is designed to store unstructured data which does not conform to any specific type of data model. Data from binary files fit into this description completely."
+      explanation: "Azure Blob Storage is designed to store unstructured data that does not conform to any specific type of data model. Data from binary files fit into this description completely."
