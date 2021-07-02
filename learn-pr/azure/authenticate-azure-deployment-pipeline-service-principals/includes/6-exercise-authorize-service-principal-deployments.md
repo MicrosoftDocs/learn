@@ -1,4 +1,4 @@
-In the previous exercise, you created a service principal for your website's deployment pipeline, and you tested that you could sign in using its key. Now you're ready to grant the service principal access to your Azure environment. In this exercise, you'll create a role assignment for the service principal, and then deploy a Bicep file by using the service principal.
+In the previous exercise, you created a service principal for your website's deployment pipeline, and you tested that you could sign in by using its key. Now you're ready to grant the service principal access to your Azure environment. In this exercise, you'll create a role assignment for the service principal, and then deploy a Bicep file by using the service principal.
 
 During the process, you'll:
 
@@ -12,7 +12,7 @@ During the process, you'll:
 
 ## Sign in as your user account
 
-In the previous exercise, you logged in using the service principal and then you logged out. You need to sign in as your own user account again so that you can follow along with the next steps in this exercise.
+In the previous exercise, you signed in by using the service principal and then you signed out. You need to sign in as your own user account again so that you can follow along with the next steps in this exercise.
 
 ::: zone pivot="cli"
 
@@ -70,13 +70,13 @@ Now you'll create a resource group to contain the toy company's website resource
 
 For your website's deployment pipeline, you decide to create a role assignment with the following details:
 
-- **Assignee:** The service principal you created in the previous exercise.
-- **Role:** The **Contributor** built-in role.
-- **Scope:** The resource group created in the previous step.
+- **Assignee**: The service principal that you created in the previous exercise.
+- **Role**: The Contributor built-in role.
+- **Scope**: The resource group that you created in the previous step.
 
 ::: zone pivot="cli"
 
-Run this Azure CLI command in the Visual Studio Code terminal to create the role assignment. Make sure you replace the placeholders with the values you copied earlier:
+Run the following Azure CLI command in the Visual Studio Code terminal to create the role assignment. Replace the placeholders with the values that you copied earlier.
 
 ```azurecli
 az role assignment create \
@@ -90,7 +90,7 @@ az role assignment create \
 
 ::: zone pivot="powershell"
 
-Run this Azure CLI command in the Visual Studio Code terminal to create the role assignment. Make sure you replace the placeholders with the values you copied earlier:
+Run the following Azure CLI command in the Visual Studio Code terminal to create the role assignment. Replace the placeholders with the values that you copied earlier.
 
 ```azurepowershell
 New-AzRoleAssignment `
@@ -104,7 +104,7 @@ New-AzRoleAssignment `
 
 ## Create a Bicep file
 
-You previously created a Bicep file that deploys your website's resources. Here, you save this so that you can test it by using the service principal.
+You previously created a Bicep file that deploys your website's resources. Here, you save this file so that you can test it by using the service principal.
 
 1. Create a new file called *main.bicep*.
 
