@@ -15,7 +15,6 @@ Each route contains an address prefix and next hop type. When traffic leaving a 
 | Default    | 10.0.0.0/8                    | None              |
 | Default    | 192.168.0.0/16                | None              |
 | Default    | 100.64.0.0/10                 | None              |
-|            |                               |                   |
 
 
 
@@ -38,12 +37,14 @@ If you assign any of the previous address ranges within the address space of a v
 
 Azure adds default system routes for any Azure capabilities that you enable. Depending on the capability, Azure adds optional default routes to either specific subnets within the virtual network, or to all subnets within a virtual network. The additional system routes and next hop types that Azure may add when you enable different capabilities are:
 
+
+
 | **Source**              | **Address prefixes**                                         | **Next hop type**             | **Subnet within virtual network that route is added to** |
 | -- |  | -- | -- |
 | Default                 | Unique to the virtual network, for example: 10.1.0.0/16      | VNet peering                  | All                                                      |
 | Virtual network gateway | Prefixes advertised from on-premises via BGP, or configured in the local network gateway | Virtual network gateway       | All                                                      |
 | Default                 | Multiple                                                     | VirtualNetworkServiceEndpoint | Only the subnet a service endpoint is enabled for.       |
-|                         |                                                              |                               |                                                          |
+
 
 
 
@@ -106,7 +107,7 @@ You can view the effective routes for a network interface with the Get-AzEffecti
 ````Azure PowerShellGet-AzEffectiveRouteTable `
 -NetworkInterfaceName myVMNic1 `
 -ResourceGroupName myResourceGroup `
-| Format-Table |
+| Format-Table 
 ````
 
 
