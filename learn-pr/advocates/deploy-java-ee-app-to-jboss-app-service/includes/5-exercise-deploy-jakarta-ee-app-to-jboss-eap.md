@@ -2,29 +2,105 @@ In this exercise, you'll deploy a Java EE (Jakarta EE) application to JBoss EAP 
 
 ## Configure the app with the Maven Plugin for Azure App Service
 
-Please confirmed `pom.xml` file and add the `<plugins>` entries in the `<build>` with following configurable options.
+Let's configure the application by executing the configuration goal in the Maven Plugin for Azure App Service.
 
-|  Configurable element  |  Value  |
+```bash
+./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.16.1:config
+```
+
+> [!IMPORTANT]  
+> If you change the region of your MySQL server, you should also change to the same region for your Java EE application server to minimize latency delays.
+In the command, select Java 8 for Java version and JBoss EAP 7.2 for runtime stack.
+
+|  Input element  |  Value  |
 | ---- | ---- |
-|  `subscriptionId` | `Your appropriate subscription` |
-|  `resourceGroup` |  `Your appropriate resource group name`  |
-|  `appName`  |  `Your Azure App Service Instance Name`  |
-|  `region`  |  `Your appropriate install location`  |
+|  `Available subscriptions:` | `Your appropriate subsctioption` |
+|  `Choose a Web Container Web App [\<create\>]:` |  `1: <create>`  |
+|  `Define value for OS [Linux]:`  |  `Linux`  |
+|  `Define value for javaVersion [Java 8]:`  |  `1: Java 8`  |
+|  `Define value for runtimeStack:`  |  `1: Jbosseap 7.2`  |
+|  `Define value for pricingTier [P1v3]:`  |  `P1v3`  |
+|  `Confirm (Y/N) [Y]:` | `Y` |
+
+After you run the command, you'll see the following messages in the terminal.
+
+```bash
+$ ./mvnw com.microsoft.azure:azure-webapp-maven-plugin:1.16.1:config
+Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------< com.microsoft.azure.samples:jakartaee-app-on-jboss >---------
+[INFO] Building jakartaee-app-on-jboss 1.0-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- azure-webapp-maven-plugin:1.16.1:config (default-cli) @ jakartaee-app-on-jboss ---
+[WARNING] The POM for com.microsoft.azure.applicationinsights.v2015_05_01:azure-mgmt-insights:jar:1.0.0-beta is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+[INFO] Auth type: OAUTH2
+Username: yoterada@microsoft.com
+Available subscriptions:
+[INFO] Subscription: Microsoft Azure Internal Billing-CDA(********-****-****-****-************)
+[INFO] It may take a few minutes to load all Java Web Apps, please be patient.
+Web Container Web Apps in subscription Microsoft Azure Internal Billing-CDA:
+* 1: <create>
+  2: jakartaee-app-on-jboss-yoshio (linux, jbosseap 7.2-java8)
+Please choose a Web Container Web App [<create>]: 
+Define value for OS [Linux]:
+* 1: Linux
+  2: Windows
+  3: Docker
+Enter your choice: 
+Define value for javaVersion [Java 8]:
+* 1: Java 8
+  2: Java 11
+Enter your choice: 
+Define value for runtimeStack:
+  1: Jbosseap 7.2
+  2: Jbosseap 7
+* 3: Tomcat 8.5
+  4: Tomcat 9.0
+Enter your choice: 1
+Define value for pricingTier [P1v3]:
+  1: P3v3
+  2: P2v3
+* 3: P1v3
+Enter your choice: 
+Please confirm webapp properties
+Subscription Id : ********-****-****-****-************
+AppName : jakartaee-app-on-jboss-1625038814881
+ResourceGroup : jakartaee-app-on-jboss-1625038814881-rg
+Region : westeurope
+PricingTier : P1v3
+OS : Linux
+Java : Java 8
+Web server stack: Jbosseap 7.2
+Deploy to slot : false
+Confirm (Y/N) [Y]: 
+[INFO] Saving configuration to pom.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:43 min
+[INFO] Finished at: 2021-06-30T16:40:47+09:00
+[INFO] ------------------------------------------------------------------------
+$ 
+```
+
+After the command finishes, you can see that following entry is added in your Maven `pom.xml` file.
 
 ```xml
-  <build> 
+ <build> 
     <finalName>ROOT</finalName>  
-    <plugins> 
+    <plugins>
       <plugin>
         <groupId>com.microsoft.azure</groupId>
         <artifactId>azure-webapp-maven-plugin</artifactId>
-        <version>1.15.0</version>
+        <version>1.16.1</version>
         <configuration>
           <schemaVersion>v2</schemaVersion>
           <subscriptionId>********-****-****-****-************</subscriptionId>
-          <resourceGroup>jakartaee-app-on-jboss-1623043825268-rg</resourceGroup>
-          <appName>jakartaee-app-on-jboss-1623043825268</appName>
-          <pricingTier>P3v3</pricingTier>
+          <resourceGroup>jakartaee-app-on-jboss-1625038814881-rg</resourceGroup>
+          <appName>jakartaee-app-on-jboss-1625038814881</appName>
+          <pricingTier>P1v3</pricingTier>
           <region>westeurope</region>
           <runtime>
             <os>Linux</os>
@@ -39,20 +115,12 @@ Please confirmed `pom.xml` file and add the `<plugins>` entries in the `<build>`
                   <include>*.war</include>
                 </includes>
               </resource>
-              <resource>
-                <type>startup</type>
-                <directory>${project.basedir}/src/main/webapp/WEB-INF/</directory>
-                <includes>
-                  <include>createMySQLDataSource.sh</include>
-                </includes>
-              </resource>
             </resources>
           </deployment>
         </configuration>
       </plugin>
-    </plugins> 
+    </plugins>
   </build> 
-</project>
 ```
 
 > [!IMPORTANT]
@@ -87,14 +155,14 @@ The following output appears in the terminal:
 [INFO] Assembling webapp [jakartaee-app-on-jboss] in [/private/tmp/mslearn-jakarta-ee-azure/target/ROOT]
 [INFO] Processing war project
 [INFO] Copying webapp resources [/private/tmp/mslearn-jakarta-ee-azure/src/main/webapp]
-[INFO] Webapp assembled in [360 msecs]
+[INFO] Webapp assembled in [369 msecs]
 [INFO] Building war: /private/tmp/mslearn-jakarta-ee-azure/target/ROOT.war
 [INFO] WEB-INF/web.xml already added, skipping
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  5.315 s
-[INFO] Finished at: 2021-06-07T14:52:45+09:00
+[INFO] Total time:  10.616 s
+[INFO] Finished at: 2021-07-02T13:08:15+09:00
 [INFO] ------------------------------------------------------------------------
 ```
 
@@ -109,33 +177,27 @@ After you compile and package the code, deploy the application:
 The following message appears in the terminal:
 
 ```text
-Auth type: AZURE_CLI
-Default subscription: Microsoft Azure Internal Billing-CDA(********-****-****-****-************)
-Username: YOUR_EMAIL_ADDRESS@************.com
-[INFO] Subscription: Microsoft Azure Internal Billing-CDA(********-****-****-****-************)
-[INFO] Creating resource group jakartaee-app-on-jboss-1623043825268-rg in region westeurope...
-[INFO] Successfully created resource group jakartaee-app-on-jboss-1623043825268-rg.
+[INFO] Creating resource group jakartaee-app-on-jboss-1625038814881-rg in region westeurope...
+[INFO] Successfully created resource group jakartaee-app-on-jboss-1625038814881-rg.
 [INFO] Creating app service plan...
-[INFO] Successfully created app service plan asp-jakartaee-app-on-jboss-1623043825268.
-[INFO] Creating web app jakartaee-app-on-jboss-1623043825268...
-[INFO] Successfully created Web App jakartaee-app-on-jboss-1623043825268.
-[INFO] Trying to deploy artifact to jakartaee-app-on-jboss-1623043825268...
+[INFO] Successfully created app service plan asp-jakartaee-app-on-jboss-1625038814881.
+[INFO] Creating web app jakartaee-app-on-jboss-1625038814881...
+[INFO] Successfully created Web App jakartaee-app-on-jboss-1625038814881.
+[INFO] Trying to deploy artifact to jakartaee-app-on-jboss-1625038814881...
 [INFO] Deploying (/private/tmp/mslearn-jakarta-ee-azure/target/ROOT.war)[war]  ...
-[INFO] Deploying (/private/tmp/mslearn-jakarta-ee-azure/src/main/webapp/WEB-INF/createMySQLDataSource.sh)[startup]  ...
-[INFO] Successfully deployed the artifact to https://jakartaee-app-on-jboss-1623043825268.azurewebsites.net
+[INFO] Successfully deployed the artifact to https://jakartaee-app-on-jboss-1625038814881.azurewebsites.net
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  02:20 min
-[INFO] Finished at: 2021-06-07T14:55:16+09:00
+[INFO] Total time:  03:30 min
+[INFO] Finished at: 2021-07-02T13:12:15+09:00
 [INFO] ------------------------------------------------------------------------
 ```
 
 Note down the URL of the deployed application, particularly the following line in the Maven output:
 
 ```text
-[INFO] Successfully deployed the artifact to  
-https://jakartaee-app-on-jboss-1606464084546.azurewebsites.net
+[INFO] Successfully deployed the artifact to https://jakartaee-app-on-jboss-1625038814881.azurewebsites.net
 ```
 
 ## Configure a database connection
