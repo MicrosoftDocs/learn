@@ -17,12 +17,12 @@ Create a virtual network that will acts as the central connectivity point or hub
     |Region     | Same region as your resource group      |
 
 1. Select the **IP Addresses** tab.
-1. Under **Subnet name**, select **default**.
-1. Enter the following information for the subnet.
+1. Under **Subnet name**, select the link labeled **default**.
+1. Replace the subnet name with the following name.
 
     |Field |Value |
     |---------|---------|
-    |Name    |  AzureFirewallSubnet    |
+    |Subnet name    |  AzureFirewallSubnet    |
 
     Leave the rest of the values as they are.
 1. Select **Save**.
@@ -33,7 +33,7 @@ Create a virtual network that will acts as the central connectivity point or hub
 
 Connect the hub virtual network with the virtual network used by the host pool by peering them.
 
-1. In the **firewallVNet**, on the left-hand side, select **Peerings**.
+1. In the **firewallVNet**, on the left-hand side under **Settings**, select **Peerings**.
 1. Select **+ Add**.
 1. Enter the following information.
 
