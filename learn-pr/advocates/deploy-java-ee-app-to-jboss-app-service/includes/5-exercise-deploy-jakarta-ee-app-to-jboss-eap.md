@@ -149,6 +149,19 @@ The resource `<type>startup</type>` will deploy the specified script as `startup
               <!-- Please add following lines -->
 ```
 
+> [!NOTE]  
+> You can specify the following resource to deploy in the XML.  
+> - `type=<war|jar|ear|lib|startup|static|zip>`  
+> 
+>    - `type=war` will deploy the war file to `/home/site/wwwroot/app.war` if `path` is _not_ specified  
+>    - `type=war&path=webapps/<appname>\` will behave exactly like wardeploy by unzipping app to /home/site/wwwroot/webapps/\<appname\>  
+>    - `type=jar` will deploy the war file to `/home/site/wwwroot/app.jar`. `path` parameter will be ignored  
+>    - `type=ear` will deploy the war file to `/home/site/wwwroot/app.ear`. `path` parameter will be ignored  
+>    - `type=lib` will deploy the jar to /home/site/libs. `path` parameter must be specified
+>    - `type=static` will deploy the script to `/home/site/scripts`. `path` parameter must specified  
+>    - `type=startup` will deploy the script as `startup.sh` (Linux) or `startup.cmd` (Windows) to `/home/site/scripts/`. `path` parameter will be ignored  
+>    - `type=zip` will unzip the zip to `/home/site/wwwroot`. `path` parameter is optional.
+
 Now, check the values for the resource group name and application name from the above XML file. Note these names or better assign them to environment variables.
 
 ```xml
