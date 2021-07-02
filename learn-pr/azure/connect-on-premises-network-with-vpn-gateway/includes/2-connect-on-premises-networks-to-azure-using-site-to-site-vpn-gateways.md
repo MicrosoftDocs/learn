@@ -54,7 +54,7 @@ The capabilities of your VPN gateway are determined by the SKU or size that you 
 
 Basic VPN Gateway should only be used for Dev/Test workloads.  In addition, it is unsupported to migrate from Basic to any VpnGw#/Az  sku at a later time without having to remove the gateway and redeploy.
 
-## Deploying VPN gateways
+## Deploy VPN gateways
 
 Before you can deploy a VPN gateway, you'll need some Azure and on-premises resources.
 
