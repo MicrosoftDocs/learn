@@ -37,7 +37,7 @@ To buy an instance:
 
 1. Select the product that you want to purchase reservations for. The **Select the product you want to purchase** pane appears. Azure recommends products and quantities that maximize your savings.
 
-    :::image type="content" source="../media/3-select-product-ri.png" alt-text="Screenshot showing the Select the product you want to purchase window to choose a reservation to buy. " lightbox="../media/3-select-product-ri.png" :::
+    :::image type="content" source="../media/3-select-product-ri.png" alt-text="Screenshot showing the Select the product you want to purchase window to choose a reservation to buy." lightbox="../media/3-select-product-ri.png" :::
 
 1. Select **Add to cart**, and then select **Close**.
 

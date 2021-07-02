@@ -41,7 +41,6 @@ modules:
 - learn.store-and-share-with-azure-files
 - learn.upload-download-and-manage-data-with-azure-storage-explorer
 - learn.azure.export-data-with-azure-import-export
-- learn.azure.move-data-with-azure-data-box
 - learn.azure.extend-share-capacity-with-azure-file-sync
 trophy:
   uid: learn.az-104-manage-storage.trophy

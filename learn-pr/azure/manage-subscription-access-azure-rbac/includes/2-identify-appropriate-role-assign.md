@@ -23,7 +23,7 @@ Here are four examples of built-in roles:
 
 You can apply Azure roles at four levels of scope: management groups, subscriptions, resource groups, and resources. The following diagram illustrates the hierarchy of these four levels.
 
-![Diagram of scope hierarchy](../media/2-scope-levels-example.png)
+![Diagram of scope hierarchy.](../media/2-scope-levels-example.png)
 
 Azure management groups help you manage your Azure subscriptions by grouping them together. If your organization has many subscriptions, you might need a way to efficiently manage access, policies, and compliance for those subscriptions. Azure management groups provide a level of scope above subscriptions.
 
@@ -55,4 +55,4 @@ In our scenario, you need to grant full Azure RBAC management and billing permis
 
 The following diagram shows what resources the Global Administrator can view when their permissions are elevated to User Access Administrator.
 
-![Diagram of User Access Administrator elevated permissions](../media/2-globaladmin-user-access-admin.png)
+![Diagram of User Access Administrator elevated permissions.](../media/2-globaladmin-user-access-admin.png)

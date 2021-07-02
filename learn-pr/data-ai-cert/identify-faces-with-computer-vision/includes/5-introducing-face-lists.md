@@ -9,7 +9,7 @@ A face list relates to several concepts:
 
 Relationships among these terms can get a little fuzzy, so it's helpful to visualize them:
 
-:::image type="content" source="../media/5-face-lists-relationship.png" alt-text="The relationships between person groups and faces":::
+:::image type="content" source="../media/5-face-lists-relationship.png" alt-text="The relationships between person groups and faces.":::
 
 Face lists are useful when you're working on face *identification* and face *similarity*.
 
@@ -17,7 +17,7 @@ Face lists are useful when you're working on face *identification* and face *sim
 
 You can use the Face API to identify people by comparing a detected face to a person group. Remember, a person group is like a database of people. For example, you might create a person group named *myInnerCircle*:  
 
-:::image type="content" source="../media/5-face-lists-group.png" alt-text="An example of a person group":::
+:::image type="content" source="../media/5-face-lists-group.png" alt-text="An example of a person group.":::
 
 You can use a different face to perform identification against the person group. If the face is identified as a person in the group, the person object is returned as a match.
 
@@ -30,7 +30,7 @@ Face lists are a great way to determine _face similarity_. For example, if you c
 
 In the following image, face similarity would find that the first and second faces are the same person. It would find that the third and fourth faces are similar.
 
-:::image type="content" source="../media/5-face-lists-similarity.png" alt-text="Diagram that shows how identification and similarity are determined in a face list":::
+:::image type="content" source="../media/5-face-lists-similarity.png" alt-text="Diagram that shows how identification and similarity are determined in a face list.":::
 
 ## Collection capacity
 

@@ -249,4 +249,4 @@ memory usage: 4.7 KB
 
 You see that you now have only 42 players in the DataFrame. Only three columns are missing some values.
 
-© 2020 Warner Bros. Ent. All Rights Reserved.
+© 2021 Warner Bros. Ent. All Rights Reserved.

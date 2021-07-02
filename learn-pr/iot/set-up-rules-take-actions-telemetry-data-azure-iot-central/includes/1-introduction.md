@@ -28,7 +28,7 @@ In this module you will:
 
  You have already built an IoT Central app to monitor and control a simulated refrigerated truck. You now need to make the process more communicative, which you intend to do by adding IoT Central rules and actions.
 
-[![Image of the finished app, showing a truck en route in the IoT Central dashboard](../media/refrigerated-trucks-intro-map.png)](../media/refrigerated-trucks-intro-map.png#lightbox)
+[![Image of the finished app, showing a truck en route in the IoT Central dashboard.](../media/refrigerated-trucks-intro-map.png)](../media/refrigerated-trucks-intro-map.png#lightbox)
 
 You'll construct the app displayed in the above image, from supplied components. Then, you'll add several rules and corresponding actions, and test that the rules trigger as expected.
 
@@ -44,7 +44,7 @@ You'll construct the app displayed in the above image, from supplied components.
 
 1. Select the free **7 day free trial** option.
 
-    [![Screenshot showing how to create a new IoT Central app, using the IoT Central portal](../media/refrigerated-trucks-new-app.png)](../media/refrigerated-trucks-new-app.png#lightbox)
+    [![Screenshot showing how to create a new IoT Central app, using the IoT Central portal.](../media/refrigerated-trucks-new-app.png)](../media/refrigerated-trucks-new-app.png#lightbox)
 
     > [!NOTE]
     > Click on any image to display a full-sized image.

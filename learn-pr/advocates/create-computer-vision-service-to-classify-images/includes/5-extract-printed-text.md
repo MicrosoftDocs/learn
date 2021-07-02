@@ -17,7 +17,7 @@ As usual, all calls must be made to the region where the account was created. Th
 
 The image we're going to be using for Optical Character Recognition (OCR) is the cover from the book *.NET Microservices: Architecture for Containerized .NET Applications*.
 
-![Picture of the cover of the ebook .NET Microservices: Architecture for containerized .NET Application](../media/5-ebook.png)
+![Picture of the cover of the ebook .NET Microservices: Architecture for containerized .NET Application.](../media/5-ebook.png)
 
 1. Execute the following command in Cloud Shell. Replace `<region>` in the command with the region of your cognitive services account.
 

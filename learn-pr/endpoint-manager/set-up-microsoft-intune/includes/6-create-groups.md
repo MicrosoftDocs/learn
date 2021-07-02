@@ -12,7 +12,7 @@ Use the following steps to create a new group:
 1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Groups** > **New group**:
 
-   [ ![Screenshot of Endpoint Manager with new group selected](../media/sign-up-for-intune-09.png) ](../media/sign-up-for-intune-09.png#lightbox)
+   [ ![Screenshot of Endpoint Manager with new group selected.](../media/sign-up-for-intune-09.png) ](../media/sign-up-for-intune-09.png#lightbox)
 
 3. In **Group type**, choose one of the following options:
 

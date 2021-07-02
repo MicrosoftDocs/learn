@@ -6,7 +6,7 @@ Because you have visibility of all of your customer's resources at the same time
 
 An example of the Azure portal All Resources blade showing network security groups from different customer subscriptions, that have been onboarded with Azure Lighthouse:
 
-:::image type="content" source="../media/7-all-resources.png" alt-text="Depiction of All Resources with customer subscriptions and network security groups ":::
+:::image type="content" source="../media/7-all-resources.png" alt-text="Depiction of All Resources with customer subscriptions and network security groups.":::
 
 ## Hybrid resources with Azure Arc
 Azure Lighthouse also supports resources that are on-premises or in other clouds, using Azure Arc. So, along with your customer's Azure resources, you can also view and manage their Azure Arc enabled servers and Azure Arc enabled Kubernetes. [Learn more about Azure Arc](/azure/azure-arc/).

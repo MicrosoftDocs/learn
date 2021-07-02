@@ -18,7 +18,7 @@ The Mixed Reality Toolkit provides a set of components and features which could 
 
 1. Next, select the **Mixed Reality Toolkit Foundation 2.5x** or newer package within the feature package catalog.  After, select **Get Features**.
 
-    :::image type="content" source="../media/feature-package-catalog.png" alt-text="Screenshot of the Mixed Reality Feature Tool. The Mixed Reality Toolkit Foundation package is highlighted. The Get Features button is also highlighted/":::
+    :::image type="content" source="../media/feature-package-catalog.png" alt-text="Screenshot of the Mixed Reality Feature Tool. The Mixed Reality Toolkit Foundation package is highlighted. The Get Features button is also highlighted.":::
 
 1. On the **Import Features** screen, select **Validate** to ensure the Unity project can successfully import the selected features. If successful, the message **No validation issues were detected** displays in a pop-up.
 

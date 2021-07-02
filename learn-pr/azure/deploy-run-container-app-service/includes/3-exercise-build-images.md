@@ -12,7 +12,7 @@ In this unit, you'll use the Azure portal to create a new registry in Azure Cont
 
 1. Select **Create a resource**, then select **Containers**, and then select **Container Registry**.
 
-   ![Screenshot that shows the New pane in Azure portal showing the Container options available in Azure Marketplace](../media/3-search-container-registry-annotated.png)
+   ![Screenshot that shows the New pane in Azure portal showing the Container options available in Azure Marketplace.](../media/3-search-container-registry-annotated.png)
 
     The **Create container registry** pane appears.
 
@@ -74,6 +74,6 @@ The Docker file contains the step-by-step instructions for building a Docker ima
 
 3. Select the `webimage` repository. It contains an image with the `latest` tag. This is the Docker image for the sample web app.
 
-  ![Screenshot that shows the repositories and images uploaded to Azure Container Registry](../media/3-azure-container-repositories.png)
+  ![Screenshot that shows the repositories and images uploaded to Azure Container Registry.](../media/3-azure-container-repositories.png)
 
  The Docker image that contains your web app is now available in your registry for deployment to App Service.

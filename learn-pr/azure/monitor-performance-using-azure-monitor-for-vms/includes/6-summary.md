@@ -11,4 +11,5 @@ By learning about Azure Monitor Logs and Azure Monitor VM Insights, you now have
 - [Get started with log queries in Azure Monitor](/azure/azure-monitor/log-query/get-started-queries)
 - [Log Analytics overview](/azure/azure-monitor/platform/log-analytics-agent)
 - [What is Azure Monitor VM Insights?](/azure/azure-monitor/insights/vminsights-overview)
+- [End-to-end virtual machine monitoring using Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/vm/monitor-virtual-machine)
 - [Log Analytics demo workspace](https://portal.loganalytics.io/demo)

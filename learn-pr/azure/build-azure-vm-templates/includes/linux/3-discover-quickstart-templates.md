@@ -25,7 +25,7 @@ Let's say you want to find a Resource Manager template that brings up a basic VM
 
 1. Let's say you come across the [Deploy a simple Ubuntu Linux VM](https://azure.microsoft.com/resources/templates/101-vm-simple-linux/?azure-portal=true) template.
 
-    ![The gallery page for an Ubuntu VM template](../../media/3-gallery-page-linux.png)
+    ![The gallery page for an Ubuntu VM template.](../../media/3-gallery-page-linux.png)
 
     The name sounds like exactly what you need. But let's take a closer look to see what this template accomplishes.
 

@@ -89,7 +89,7 @@ components.
 
 Here's an example:
 
-:::image type="content" source="../media/application-map.png" alt-text="Application map panel in Azure portal displaying several components and the stats for traffic between them":::
+:::image type="content" source="../media/application-map.png" alt-text="Application map panel in Azure portal displaying several components and the stats for traffic between them.":::
 
 In this picture, you can see not only the components of the application,
 but also the communication between those components. If we zoom into one of
@@ -123,7 +123,7 @@ running, we could run the following query:
 and we get back a complete detailed list of the VMs being used in our
 subscription:
 
-:::image type="content" source="../media/resource-graph-explorer-results.png" alt-text="Resource graph panel in the Azure portal with results of query showing table of results":::
+:::image type="content" source="../media/resource-graph-explorer-results.png" alt-text="Resource graph panel in the Azure portal with results of query showing table of results.":::
 
 The query language used in this environment is Kusto Query Language (KQL).
 We'll be discussing it in more depth later in this module when we talk
@@ -143,7 +143,7 @@ Instead, let's look at two dashboard features less commonly used that could
 be of real benefit to you. These features can be found at the top of every
 dashboard.
 
-:::image type="content" source="../media/dashboard.png" alt-text="Dashboard panel in the Azure portal with the Upload and Download arrows highlighted":::
+:::image type="content" source="../media/dashboard.png" alt-text="Dashboard panel in the Azure portal with the Upload and Download arrows highlighted.":::
 
 The two highlighted arrows allow you to upload and download JSON
 representations of dashboards.

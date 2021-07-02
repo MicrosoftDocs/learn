@@ -37,4 +37,4 @@ You can enable Security Center on a per-subscription basis. Each subscription ca
 
 Selecting a subscription enables you to control what areas you want Security Center to monitor as shown in the following image.
 
-![Screenshot showing the areas Security Center can cover](../media/2-pricing.png)
+![Screenshot showing the areas Security Center can cover.](../media/2-pricing.png)
