@@ -20,7 +20,7 @@ An Azure VM gives you the flexibility of virtualization without having to buy an
 
   :::column-end:::
   :::column:::
-    :::image type="content" source="../media/azure-vms-0c797f60.png" alt-text="icon.":::
+    :::image type="content" source="../media/azure-vms-0c797f60.png" alt-text="icon":::
 
   :::column-end:::
 :::row-end:::
