@@ -1,0 +1,77 @@
+## Why use API Gateways?
+
+In microservices apps, client apps commonly interact with many services. When architecting a microservices app, you must decide how that interaction occurs. One possible approach is a direct client-to-microservice communication architecture. In this approach, a client app makes requests directly to services, as shown in the following image.
+
+:::image type="content" source="../media/direct-client-microservice-communication.png" alt-text="Client-to-services communication" lightbox="../media/direct-client-microservice-communication.png":::
+
+As illustrated, both mobile and web apps connect to each of the three services. Each service has a public endpoint. Service endpoints can vary by IP address or TCP port. This approach introduces overhead, such as:
+
+- Needing to issue multiple requests for one operation.
+- Aggregating data from different microservices.
+- Dealing with aggregated latency across requests.
+- Handling multiple authorizations.
+- Creating public IP addresses for each service.
+- Managing API versioning across multiple services.
+
+## Introducing API Gateways
+
+An API Gateway alleviates many of the concerns in the previous section, as shown in the following image:
+
+:::image type="content" source="../media/simple-api-gateway.png" alt-text="API Gateway pattern" lightbox="../media/simple-api-gateway.png":::
+
+The above image shows how client apps communicate with a single entry point, the API Gateway. This above configuration has several important advantages, like:
+
+- A single DNS name.
+- Frontend apps and backend services are decoupled.
+- A single metering point.
+
+The decoupling aspect also makes it very easy to route different request versions to different microservice instances. This is useful for progressive deployments and implementing scenarios like [A/B testing](https://en.wikipedia.org/wiki/A/B_testing).
+
+## The Backend-for-Frontends pattern
+
+API Gateway solves several problems, but there is still more to be done. Each client app might have a context that imposes some specific constraints. For example, a mobile phone usually has a more constrained internet connection than a desktop computer, as well as a much smaller screen size. Accordingly, it might be desirable to have a streamlined, low-bandwidth API for mobile use, and a full-featured API for desktop use.
+
+This is where the Backends-for-Frontends (BFF) pattern comes into play. The BFF pattern supplies a per-device-type API customized for the specific context, as shown in the following image.
+
+:::image type="content" source="../media/bff-api-gateways.png" alt-text="BFF Pattern" lightbox="../media/bff-api-gateways.png":::
+
+In the above image, you can see that the mobile app accesses a mobile-specific API Gateway, while the client SPA and MVC web apps use a desktop-specific API Gateway.
+
+## Web aggregators
+
+The BFF is much more than an application gateway, as it usually requires custom logic to achieve the required results. This is where the web aggregator comes into play. The web aggregator works as a broker, and it has a central role in the BFF pattern. It gets a request from the client, makes further requests to some backend services, and then assembles a customized response to send back to the client.
+
+### Explore *Web.Shopping* aggregator implementation in eShopOnContainers
+
+In the `eShop` app, the *Web.Shopping.HttpAggregator* project is a web aggregator. This BFF takes care of all the shopping-related activities for the web client. For example, `AddBasketItemAsync()` method in the `BasketController` class performs the following tasks:
+
+- Fetches an item from the `Catalog.API`.
+- Get a current basket details from the `Basket.API`.
+- Updates the current basket status with the new catalog item.
+- Updates basket of the `Basket.API`.
+
+As shown, merging these operations into a single method hides the complexity from the client SPA. You can review the detailed implementation in the *src\ApiGateways\Aggregators\Web.Shopping.HttpAggregator* folder.
+
+### Implementing *Web.Sales* aggregator in eShopOnContainers
+
+Let's assume you are an admin for the eShop app. At the end of each day, you want to see the aggregated sales data per brand. To implement this new feature, you need information on the brand and orders for each product. Your aggregator needs to retrieve:
+
+- Catalog items and brand-related information from *Catalog.API*
+- Sales of each product from *Ordering.API*.
+
+The aggregator will merge this information into a single response to the client. 
+
+The eShop app with the aggregator implemented as *Web.Sales.HttpAggregator* is illustrated below:
+
+:::image type="content" source="../media/api-gateway-bff-nginx-ingress.png" alt-text="eShopOnContainers architecture with WebSalesAgg" lightbox="../media/api-gateway-bff-nginx-ingress.png":::
+
+> [!NOTE]
+> In this implementation, there isn't a UI to consume the WebSales aggregator. You will use the Swagger UI as an external client to test the functionality.
+
+The *Web.Sales.HttpAggregator* Web API project will have the following components:
+
+- Class `SalesController` annotated with the authorized attribute, requiring the `Admin` role.
+- Method `SalesController.GetSalesOfTodayByBrand()`, which fetches catalog brand information from the *Catalog.API* and sales data from the *Ordering.API*.
+- Method `SalesController.GetSalesData()`, which aggregates the sales based on the brand names.
+
+In the next unit, you'll configure and deploy `Web.Sales.HttpAggregator` to the existing Kubernetes cluster.

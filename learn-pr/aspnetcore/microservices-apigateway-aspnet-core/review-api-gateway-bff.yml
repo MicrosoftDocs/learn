@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.microservices-apigateway-aspnet-core.review-api-gateway-and-bff
 metadata:
-  title: Review the API Gateway and BFF concepts
+  title: Understand API Gateways and Backends-for-Frontends
   description: Review the API Gateway and BFF concepts
   author: camsoper
   ms.author: casoper
   ms.date: 05/12/2021
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial
-title: Review the API Gateway and BFF concepts
+title: Understand API Gateways and Backends-for-Frontends
 durationInMinutes: 10
 content: |
-  [!include[](includes/review-api-gateway-and-bff.md)]
+  [!include[](includes/review-api-gateway-bff.md)]
