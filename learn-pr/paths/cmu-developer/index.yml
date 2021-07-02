@@ -2,7 +2,7 @@
 uid: learn.cmu-cloud-admin.cloud-developer
 metadata:
   title: Cloud developer
-  description: You will learn various important skills you need as a developer using the Cloud. Skills like virtualization, managing cost and cloud storage to more hands on developer skills like message queues, and working with streaming data with spark and map reduce.
+  description: You will learn various important skills you need as a developer using the Cloud. Skills like virtualization, managing cost and cloud storage to more hands-on developer skills like message queues, and working with streaming data with spark and map reduce.
   brand: azure
   ms.date: 07/01/2021
   author: softchris
@@ -15,7 +15,7 @@ summary: |
   Learn to monitor your cloud resources, keep them safe, and protect or recover them in the case of a disaster.
 
   In this learning path, you will:
-    - Leverage virtualization.
+    - Use virtualization.
     - Work with storage.
     - Apply techniques around streaming data, and stream processing using Spark and more. 
 
