@@ -134,7 +134,7 @@ Install the Azure Virtual Desktop agent and boot loader on the VM to register th
 
 In your remote desktop session on the VM, install the  Azure Virtual Desktop agent. You'll need the registration token for the host pool to complete the installation.
 
-1. Copy the link to the [Azure Virtual Desktop agent](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv).
+1. Copy the following link to the Azure Virtual Desktop agent: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv
 1. On the VM, open Microsoft Edge to start a web browser session.
 1. Paste the link into a web browser.
 1. At the bottom of the web browser window, select **Open file** to install the Azure Virtual Desktop agent.
@@ -153,7 +153,7 @@ In your remote desktop session on the VM, install the  Azure Virtual Desktop age
 
 In your remote desktop session on the VM, install the  Azure Virtual Desktop boot loader.
 
-1. Copy the link to the [Azure Virtual Desktop boot loader](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH).
+1. Copy the following link to the Azure Virtual Desktop boot loader: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH
 1. Paste the link into a web browser session in the VM.
 1. At the bottom of the web browser window, select **Open file** to install the Azure Virtual Desktop boot loader.
 1. Complete the installation.
