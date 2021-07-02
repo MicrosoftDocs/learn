@@ -114,6 +114,15 @@ After the command finishes, you can see that following entry is added in your Ma
                   <include>*.war</include>
                 </includes>
               </resource>
+              <!-- Please add following lines -->
+              <resource>
+                <type>startup</type>
+                <directory>${project.basedir}/src/main/webapp/WEB-INF/</directory>
+                <includes>
+                  <include>createMySQLDataSource.sh</include>
+                </includes>
+              </resource>
+              <!-- Please add following lines -->
             </resources>
           </deployment>
         </configuration>
@@ -124,6 +133,21 @@ After the command finishes, you can see that following entry is added in your Ma
 
 > [!IMPORTANT]
 > Check the `<region>` element. If it's not the same installation location as MySQL, change it to the same location.
+
+After adding the above configuration for deploying to the Azure, add the following XML entries to deploy the startup file.  
+The resource `<type>startup</type>` will deploy the specified script as `startup.sh` (Linux) or `startup.cmd` (Windows) to `/home/site/scripts/`. We will configure the startup script in the following step.
+
+```xml
+              <!-- Please add following lines -->
+              <resource>
+                <type>startup</type>
+                <directory>${project.basedir}/src/main/webapp/WEB-INF/</directory>
+                <includes>
+                  <include>createMySQLDataSource.sh</include>
+                </includes>
+              </resource>
+              <!-- Please add following lines -->
+```
 
 Now, check the values for the resource group name and application name from the above XML file. Note these names or better assign them to environment variables.
 
