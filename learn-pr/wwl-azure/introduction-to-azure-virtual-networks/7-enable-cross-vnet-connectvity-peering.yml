@@ -26,7 +26,7 @@ quiz:
       explanation: "that is incorrect, Internal DNS is a service provided by Azure."
     - content: "Azure Availability Zones."
       isCorrect: false
-      explanation: "that is incorrect, Azure Availability Zones are a high availbility feature. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking."
+      explanation: "that is incorrect, Azure Availability Zones are a high availability feature. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking."
   - content: "When you configure global peering, what changes will you see in the peered VNets?"
     choices:
     - content: "A peering entry is added to the routing table in each VNet."

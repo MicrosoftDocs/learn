@@ -20,21 +20,21 @@ quiz:
     choices:
     - content: "A static IP address remains the same over the lifespan of the resource to which it is assigned."
       isCorrect: true
-      explanation: "that is correct, A static public IP address is an assigned address that will not change over the lifespan of the Azure resource. To configue a static IP address, set the allocation method explicitly to static."
+      explanation: "that is correct. A static public IP address is an assigned address that will not change over the lifespan of the Azure resource. To configure a static IP address, set the allocation method explicitly to static."
     - content: "A dynamic IP address remains the same over the lifespan of the resource to which it is assigned."
       isCorrect: false
-      explanation: "that is incorrect, A dynamic public IP address is an assigned address that can change over the lifespan of the Azure resource. The dynamic IP address is allocated when you create or start a VM."
+      explanation: "that is incorrect. A dynamic public IP address is an assigned address that can change over the lifespan of the Azure resource. The dynamic IP address is allocated when you create or start a VM."
     - content: "A static IP address can use an IPv4 address only."
       isCorrect: false
-      explanation: "that is incorrect, Static IP addresses are created with either an IPv4 or an IPv6 address."
+      explanation: "that is incorrect. Static IP addresses are created with either an IPv4 or an IPv6 address."
   - content: "You want to use dynamic IP addresses for specific resources on your VNet. Which SKU must you choose?"
     choices:
     - content: "Basic SKU"
       isCorrect: true
-      explanation: "that is correct, Basic SKU public IPs can be assigned by using static or dynamic allocation methods."
+      explanation: "that is correct. Basic SKU public IPs can be assigned by using static or dynamic allocation methods."
     - content: "Standard SKU"
       isCorrect: false
-      explanation: "that is incorrect, Standard SKU public IP addresses always use the static allocation method."
+      explanation: "that is incorrect. Standard SKU public IP addresses always use the static allocation method."
     - content: "Either Basic or Standard SKU"
       isCorrect: false
-      explanation: "that is incorrect, Standard SKU public IP addresses always use the static allocation method. Basic SKU public IPs can be assigned by using static or dynamic allocation methods."
+      explanation: "that is incorrect. Standard SKU public IP addresses always use the static allocation method. Basic SKU public IPs can be assigned by using static or dynamic allocation methods."
