@@ -101,7 +101,7 @@ In Azure Database for MySQL, the slow query log is available to users. Access to
 In our sample application, your slow query logs are set up to be piped to Azure Monitor Logs through Diagnostic Logs, and you can do further analysis of your slow queries. Below are sample queries to help you get started:
 
 > [!IMPORTANT]
-> The MySQL Log data ingestion time in Azure Monitor can take up to 15 minutes. If data is not found in Log Analytics, it may take additional time to ingest MySQL log data.
+> The MySQL Log data ingestion time in Azure Monitor can take up to 30 minutes. If data is not found in Log Analytics, it may take additional time to ingest MySQL log data and you'll need to try again at a later time.
 
 1. Sign in to the Azure portal.
 1. Select your Azure Database for MySQL server you use for your Azure Spring Cloud
@@ -209,4 +209,4 @@ Application Insights can be used with any web pages - you just add a short piece
 > [!NOTE]
 > For more information on UI monitoring, see the Summary unit at the end of this training.
 
-The next unit is a knowledge check to see what you've learnt in this module.
+The next unit is a knowledge check to see what you've learned in this module.
