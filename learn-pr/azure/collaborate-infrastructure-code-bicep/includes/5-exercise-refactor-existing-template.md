@@ -89,6 +89,12 @@ TODO
 
 Could you provide a configuration set to simplify the parameters?
 
+### Comments
+
+TODO
+ - UAMI weird syntax
+ - roleassignment name generation
+
 ### Commented-out resource
 
 See the commented-out resource, `storageAccount`? Do you think that needs to be in the file?
