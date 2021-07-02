@@ -16,7 +16,7 @@ Before we start, let's check in with Mara and Andy.
 
 ## Create a branch and add starter code
 
-Although you could use the build pipeline you built in the previous module, let's create a new branch, named `code-workflow`, that's based off of `main` so that you can practice the process from the beginning. If you completed the previous module, your branch includes a basic but complete build configuration in your *azure-piplines.yml* file. If you haven't completed the previous module, you will create the file.
+Although you could use the build pipeline you built in the previous module, let's create a new branch, named `code-workflow`, that's based off of `main` so that you can practice the process from the beginning. If you completed the previous module, your branch includes a basic but complete build configuration in your *azure-pipelines.yml* file. If you haven't completed the previous module, you will create the file.
 
 1. In Visual Studio Code, open the integrated terminal.
 1. Switch to the `main` branch.
@@ -62,11 +62,11 @@ Here, you push your `code-workflow` branch to GitHub and watch Azure Pipelines b
     git status
     ```
 
-    You see that *azure-piplines.yml* has been modified. You'll commit that to your branch shortly, but you first need to make sure that Git is tracking this file. This is called _staging_ the file.
+    You see that *azure-pipelines.yml* has been modified. You'll commit that to your branch shortly, but you first need to make sure that Git is tracking this file. This is called _staging_ the file.
 
     Only staged changes are committed when you run `git commit`. Next, you run the `git add` command to add *azure-pipelines.yml* to the staging area, or index.
 
-1. Run the following `git add` command to add *azure-piplines.yml* to the staging area:
+1. Run the following `git add` command to add *azure-pipelines.yml* to the staging area:
 
     ```bash
     git add azure-pipelines.yml
