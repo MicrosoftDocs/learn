@@ -101,7 +101,7 @@ After the command finishes, you can see that following entry is added in your Ma
           <resourceGroup>jakartaee-app-on-jboss-1625038814881-rg</resourceGroup>
           <appName>jakartaee-app-on-jboss-1625038814881</appName>
           <pricingTier>P1v3</pricingTier>
-          <region>westeurope</region>
+          <region>japaneast</region>
           <runtime>
             <os>Linux</os>
             <javaVersion>Java 8</javaVersion>
