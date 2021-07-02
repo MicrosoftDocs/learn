@@ -16,7 +16,7 @@ If you've already created the VM, the easiest way to add the extension is by goi
 
 ![Screenshot of the diagnostic settings pane, showing the enable pane.](../media/5-enable-diagnostics-portal.png)
 
-You can also add the extension by using the Azure CLI or PowerShell. In the Azure CLI, you use the `az vm boot-diagnostics enable` command. In PowerShell, you use the `Set-AzVMBootDiagnostic` command.
+You can also add the extension by using the Azure CLI or PowerShell. In the Azure CLI, you use the `az vm extension set` command. In PowerShell, you use the `Set-AzVMDiagnosticsExtension` command.
 
 You can use the extension to collect data about the CPU, disk, and memory values of the VM.
 
