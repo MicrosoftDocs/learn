@@ -41,6 +41,7 @@ products:
 units:
 - learn.azure.collaborate-infrastructure-code-bicep.introduction
 - learn.azure.collaborate-infrastructure-code-bicep.exercise-review-existing-template
+- learn.azure.collaborate-infrastructure-code-bicep.parameters
 - learn.azure.collaborate-infrastructure-code-bicep.template-structure
 - learn.azure.collaborate-infrastructure-code-bicep.comments-resource-metadata
 - learn.azure.collaborate-infrastructure-code-bicep.exercise-refactor-existing-template

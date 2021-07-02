@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.collaborate-infrastructure-code-bicep.exercise-refactor-existing-template
-title: Exercise - Refactor your Bicep file
+uid: learn.azure.collaborate-infrastructure-code-bicep.exercise-modules
+title: Exercise - Refactor the Bicep file to use modules
 metadata:
   unitType: exercise
-  title: Exercise - Refactor your Bicep file
+  title: Exercise - Refactor the Bicep file to use modules
   description: TODO # user input: a description for site search and SEO
   ms.date: 04/20/2021
   author: pazdedav
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 123 # user input: the estimate time to complete the unit
 content: |
-  [!include[](includes/5-exercise-refactor-existing-template.md)]
+  [!include[](includes/8-exercise-modules.md)]
