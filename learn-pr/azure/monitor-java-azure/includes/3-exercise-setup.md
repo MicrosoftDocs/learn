@@ -54,12 +54,13 @@ The script takes 30-45 minutes to run and includes the creation of an Azure spri
 In the already open Azure Cloud Shell, run the below shell script. Leave the browser window and Azure Cloud Shell open while running. Store the URL when the script completes:
 
 ```bash
-sh deployPetClinicApp.sh
+bash deployPetClinicApp.sh
 ```
 
 > [!IMPORTANT]
-> If you run into issues with the setup script, you may need to delete your resources and try again.
-> The Summary unit has instructions on how do delete your resource group and resources.
+> If you run into errors with the setup script, the script will attempt to delete any resources it creates.
+> You can then try again once the resource group is deleted fully.
+> The Summary unit has instructions on how do delete your resources manually.
 
 ## Test the application
 
