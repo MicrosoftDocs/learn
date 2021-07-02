@@ -27,7 +27,7 @@ To implement a sample Next.js-based application that uses Azure AD authenticatio
 1. On the **Azure Active Directory** blade, in the vertical menu, in the **Manage** section, select **App registrations**.
 1. On the **App registrations** blade, select **+ New registration**.
 1. On the **Register an application** blade, in the **Name** text box, enter **cna-nextjs-app**.
-1. In the **Supported account types** section, ensure that the option **Accounts in this organizational directory only (Default Directory only - Single tenant)** is selected. In the **Redirect URI (optional)** section, set the **Single-page application (SPA)** entry to **http://localhost:3000/**, and then select **Register**.
+1. In the **Supported account types** section, ensure that the option **Accounts in this organizational directory only (Default Directory only - Single tenant)** is selected. In the **Redirect URI (optional)** section, set the **Single-page application (SPA)** entry to **http://localhost:3000**, and then select **Register**.
 
     :::image type="content" source="../media/7-azure-ad-next.js-app-register.png" alt-text="Screenshot of the Register an application blade in the Azure portal.":::
 
@@ -45,7 +45,7 @@ To implement a sample Next.js-based application that uses Azure AD authenticatio
 
     :::image type="content" source="../media/7-azure-ad-next.js-app-configure-api-permissions.png" alt-text="Screenshot of the cna-nextjs-app API permissions blade in the Azure portal.":::
 
-1. On the **cna-nextjs-app \| API permissions** blade, select **+ Add a permission**, on the **Request API permission** blade, select the **API my organization uses** tab, in the search text box, enter **Azure OSSRDBMS Database**, and then in the list of results, select **Azure OSSRDBMS Database**.
+1. On the **cna-nextjs-app \| API permissions** blade, select **+ Add a permission**, on the **Request API permission** blade, select the **APIs my organization uses** tab, in the search text box, enter **Azure OSSRDBMS Database**, and then in the list of results, select **Azure OSSRDBMS Database**.
 
     :::image type="content" source="../media/7-azure-ad-next.js-app-configure-api-permissions-ossrdbms.png" alt-text="Screenshot of the Request API permissions blade in the Azure portal.":::
 
@@ -283,7 +283,7 @@ You're ready to validate the Azure AD integration of the app. You could containe
 
     :::image type="content" source="../media/7-azure-ad-next.js-app-displayed-profile-info.png" alt-text="Screenshot of the Welcome to the Microsoft Authentication Library For Javascript - React Quickstart page with the adatumuser1 profile information.":::
 
-1. Open another browser tab in the same web browser window and navigate to the web application you deployed in the previous exercises.
+1. Open another browser tab in the same web browser window and navigate to the web application you deployed in the previous exercise.
 
     > [!NOTE]
     > The URL should have the following format: `https://<webapp_name>.azurewebsites.net/auth`
@@ -299,7 +299,7 @@ You're ready to validate the Azure AD integration of the app. You could containe
 1. Close the web browser window in the Incognito/InPrivate mode.
 
     > [!NOTE]
-    > Now, you will repeat the same sequence of steps as the **contosuser1** and verify that you also can access the inventory data and display set of records corresponding to the second tenant.
+    > Now, you will repeat the same sequence of steps as the **contosouser1** and verify that you also can access the inventory data and display set of records corresponding to the second tenant.
 
 1. Start another web browser window in the Incognito/InPrivate mode, and navigate to the **http://localhost:3000** URL.
 1. On the **Welcome to the Microsoft Authentication Library For Javascript - React Quickstart** page, select **Sign In**, and then in the expanding menu, select **Sign in using Popup**.
@@ -308,15 +308,15 @@ You're ready to validate the Azure AD integration of the app. You could containe
     > [!NOTE]
     > You created this user account in the first exercise of this module.
 
+    > [!NOTE]
+    > If prompted, accept an access request and change the password of the **contosouser1** account.
+
 1. On the **Welcome to the Microsoft Authentication Library For Javascript - React Quickstart** page, select **Request Profile Information**.
 
     > [!NOTE]
     > Verify that the output includes the Email, Id, and the access token of the **contosouser1** Azure AD user account.
 
-1. Open another browser tab in the same web browser window and navigate to the web application you deployed in the previous exercises.
-
-    > [!NOTE]
-    > If prompted, change the password of the **contosouser1** account.
+1. Open another browser tab in the same web browser window and navigate to the web application you deployed in the previous exercise.
 
     > [!NOTE]
     > Verify that the resulting web page displays the inventory data for the second tenant.
