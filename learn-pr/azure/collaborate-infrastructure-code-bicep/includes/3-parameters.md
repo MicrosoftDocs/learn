@@ -4,9 +4,15 @@ TODO lead-in para
 
 Parameters help to make Bicep files reusable and flexible. However, it's important that the purpose of each parameter is clear. Most of the time, when yuo your colleagues work with your template they'll use parameters to change the behavior of their deployment, so it's critical that parameters are clearly named.
 
+<!-- TODO give example -->
+
 Default values are an important way to make your template usable by others. It's important to use default values where they make sense.
 
+<!-- TODO give example -->
+
 Bicep can also help to validate the input that the user provides when they deploy the template. Your Bicep files use _parameter decorators_ to help Bicep and the user understand what values are permitted for each parameter.
+
+<!-- TODO give example -->
 
 ## How flexible should a Bicep file be?
 
@@ -48,28 +54,18 @@ Your resource definitions then use the configuration map to define the resource 
 
 In Bicep, it's important that you give your resources meaningful names. Resources in Bicep have two names:
 
-- The symbolic name is only used within the Bicep file and doesn't appear in Azure. This helps anyone who reads or modifies your template to understand the purpose of the resource and its configuration, so they can make an informed decision about whether to change it.
-- The resource name is the name of the resource that's created in Azure. Many resources have constraints on their names, and may require unique names.
+- **Symbolic names** are only used within the Bicep file and don't appear in Azure. They helps anyone who reads or modifies your template to understand the purpose of a parameter, variable, or resource, and they help them to make an informed decision about whether to change it.
+- **Resource names** are the names of the resources that are created in Azure. Many resources have constraints on their names, and many require their names to be unique.
 
 ### Symbolic names
 
 It's important to think about the symbolic names you apply to your resources. Imagine that a colleague will need to modify the template - will they understand what each resource does?
 
-For example, imagine you're defining a storage account. The storage account will contain product manuals for users to download from your website. You could name give the resource a symbolic name of  `storageAccount`, but if it's in a Bicep file that contains lots of other resources - and maybe even other storage accounts - then that name isn't very descriptive. So you could instead give it a symbolic name that includes a bit of information about its purpose - like perhaps `productManualStorageAccount`.
+For example, suppose you define a storage that will contain product manuals for users to download from your website. You could name give the resource a symbolic name of  `storageAccount`, but if it's in a Bicep file that contains lots of other resources - and maybe even other storage accounts - then that name isn't very descriptive. So you could instead give it a symbolic name that includes a bit of information about its purpose - like perhaps `productManualStorageAccount`.
 
-### Capitalization
+In Bicep, you typically use _camel case_ for the names of parameters, variables, and resource symbolic names. This means use a lowercase first letter for the first word, and then capitalize the first letter of subsequent words - like in `productManualStorageAccount`. You're not required to use camel case. If you choose to use a different style, it's important to agree on one standard within your team and use it consistently.
 
-In Bicep, you typically use _camel case_ for the names of parameters, variables, and resource symbolic names. This means use a lowercase first letter for the first word, and then capitalize the first letter of subsequent words - like in `productManualStorageAccount`.
-
-You're not required to use camel case. If you choose to use a different style, it's important to agree on one standard within your team and use it consistently.
-
-> [!NOTE]
-> Other capitalization styles include:
-> - Pascal case (`ProductManualStorageAccount`)
-> - Snake case (`product_manual_storage_account`)
-> - Flat case (`productmanualstorageaccount`)
-> - Train case (`Product-Manual-StorageAccount`)
-
+<!-- TODO move to exercise
 ### Change symbolic names in Visual Studio Code
 
 When you rename identifiers, you need to make sure you rename them consistently in all parts of your template. This is especially important for parameters, variables, and resources that you refer to throughout your template.
@@ -79,6 +75,7 @@ Visual Studio Code offers a convenient way to rename symbols: select the identif
 :::image type="content" source="../media/4-rename-symbol.png" alt-text="Screenshot from Visual Studio Code showing how to rename a symbol." border="true":::
 
 This renames the identifier, and all of the references to it as well.
+-->
 
 ### Resource names
 
@@ -95,5 +92,3 @@ It can be complex to follow all of the naming conventions for your organization 
 
 > [!TIP]
 > It's better to use uniqueness suffixes rather than prefixes. This approach makes it easier to sort and to quickly scan your resource names. Also, some Azure resources have restrictions about the first character of the name, and randomly generated names can sometimes violate these restrictions.
-
-<!-- TODO param decorators -->
