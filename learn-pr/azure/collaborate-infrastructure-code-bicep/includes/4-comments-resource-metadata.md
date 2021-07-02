@@ -28,6 +28,7 @@ You can also use Bicep comments to add a structured multi-line block at the begi
 <!--
   TODO mention that you can add comments to param files too - use .jsonc file extension
   TODO mention whitespace
+  TODO param decorators
 -->
 
 ## Apply resource tags
