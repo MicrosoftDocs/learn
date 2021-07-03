@@ -58,17 +58,21 @@ Here's an example showing how you commit the changes you staged above:
 git commit --message "Add Cosmos DB account definition."
 ```
 
-> [!TIP]
-> Make your commit messages short, but make them descriptive. When you, or a team member, reviews the commit history in the future, each commit message should explain what the change was for and why you made it.
-> 
-> There aren't any rules about what commit messages need to contain or how they're formatted, but conventionally they are written in the present tense and in a full sentence, as if you're giving orders to your codebase.
-> 
-> Here are some examples of good commit messages:
-> - _Update App Service configuration to add network configuration._
-> - _Remove storage account since it's been replaced by a Cosmos DB database._
-> - _Add Application Insights resource definition and integrate with function app._
-
 Visual Studio Code can commit to your Git repository too. When you use Visual Studio Code's Git integration, if you haven't already staged the files, Visual Studio Code asks if you want it to stage all of the changed files for you. You can even set this as the default behavior. Or, if you prefer, you can manually stage and unstage files using Visual Studio Code's **Source Control**.
+
+### Commit messages
+
+Make your commit messages short, but make them descriptive. When you, or a team member, reviews the commit history in the future, each commit message should explain what the change was for and why you made it.
+
+There aren't any rules about what commit messages need to contain or how they're formatted, but conventionally they are written in the present tense and in a full sentence, as if you're giving orders to your codebase.
+
+> [!TIP]
+> It's a good practice to write descriptive commit messages even when you're working on your own. Someone else may need to look at your code in the future. Even if they don't, you may need to review your own history, and you want to make your own life easier!
+
+Here are some examples of good commit messages:
+- _Update App Service configuration to add network configuration._
+- _Remove storage account since it's been replaced by a Cosmos DB database._
+- _Add Application Insights resource definition and integrate with function app._
 
 ## View a file's history
 
