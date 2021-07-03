@@ -4,7 +4,9 @@ Now that you've initialized your Git repository, you're ready to start adding fi
 
 When you work with a version control system like Git, it's important to plan how you store your files. It's a good idea to have a clear folder structure. If you're building Bicep code to deploy an application or another solution, it's also a good idea to store your Bicep files in the same repository as the application code and other files. That way, anytime anyone needs to add a new feature that changes both Bicep and application code, they'll be tracked together. It also makes it easier to deploy your solution from a pipeline, which you'll learn about in a future module.
 
-Different teams have different conventions for how they set up their repository folders and files. If your team doesn't already have a preference, here's a suggestion for how you might do it:
+Different teams have different conventions for how they set up their repository folders and files. Even if you aren't working with a team, it's still a good idea to decide on a convention to follow. This will help anyone who has to work with your code in future, or if you eventually work with a team.
+
+If your team doesn't already have a preference, here's a suggestion for how you might do it:
 
 - At the root of your repository, create a _README.md_ file, which is a Markdown (text) file that describes what's in the repository, and any instructions to help team members set things up.
 - At the root of your repository, create a _deploy_ folder. Inside the folder:
@@ -57,7 +59,9 @@ git commit --message "Add Cosmos DB account definition."
 ```
 
 > [!TIP]
-> Make your commit messages descriptive, but fairly short. There aren't any rules about what commit messages need to contain or how they're formatted, but conventionally they are written in the present tense and in a full sentence, as if you're giving orders to your codebase.
+> Make your commit messages short, but make them descriptive. When you, or a team member, reviews the commit history in the future, each commit message should explain what the change was for and why you made it.
+> 
+> There aren't any rules about what commit messages need to contain or how they're formatted, but conventionally they are written in the present tense and in a full sentence, as if you're giving orders to your codebase.
 > 
 > Here are some examples of good commit messages:
 > - _Update App Service configuration to add network configuration._

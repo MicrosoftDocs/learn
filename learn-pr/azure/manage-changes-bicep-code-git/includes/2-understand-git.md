@@ -1,4 +1,4 @@
-Version control tools like Git give you the ability to track and manage changes to your files as you work. You can store multiple versions of the same file, and view the history of the changes you've made. Git is one of the most popular version control tools. In this unit, you'll learn about Git and how it can help when you are writing and working with Bicep code.
+Version control tools like Git give you the ability to track and manage changes to your files as you work. You can store multiple versions of the same file, view the history of the changes you've made, and collaborate with others. Git is one of the most popular version control tools. In this unit, you'll learn about Git and how it can help when you are writing and working with Bicep code.
 
 ## What are version control and Git?
 
@@ -7,6 +7,7 @@ Version control is a practice by which you maintain a history of changes to your
 - Track the changes you make to a file.
 - View the history of a file, and go back to an older version if you need to revert a change you've made.
 - Work with multiple versions of a file at the same time.
+- Collaborate with other team members by sharing your code and changes.
 
 Most version control systems work with all file types, but they're optimized for text files.
 

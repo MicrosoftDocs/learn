@@ -12,7 +12,9 @@ During the process, you'll:
 
 ## Install Git
 
-You need to [install Git](https://git-scm.com/download). Make sure you choose the correct version based on your operating system.
+1. [Install Git](https://git-scm.com/download?azure-portal=true). Make sure you choose the correct version based on your operating system.
+
+1. If you already have Visual Studio Code open, restart it so that it detects your Git installation.
 
 ## Configure Git
 
@@ -36,7 +38,7 @@ You need to run a few commands to configure Git so that it associates your name 
     git config --global user.name "USER_NAME"
     ```
 
-1. Now, use this command to create a `user.email` configuration variable, replacing `USER_EMAIL_ADDRESS` with your email address:
+1. Set your email address by using the following command, replacing `USER_EMAIL_ADDRESS` with your email address:
 
     ```bash
     git config --global user.email "USER_EMAIL_ADDRESS"
