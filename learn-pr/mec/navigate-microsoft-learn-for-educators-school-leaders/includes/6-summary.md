@@ -8,7 +8,14 @@
 
     [Summary unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-module-summary-unit?branch=master)
 -->
-TODO: restate the scenario problem
+
+In this module, you learned about basic functionalities and offerings of Learn for Educators. Now take a course to start your skilling journey!
+
+### Learn more
+1. For more up-to-date information on Learn & Learn for Educators, check out Learn for Educators documentation.
+1. If you have additional questions about your profile, data, or migration from MEC, please contact us here.
+1. As we are still in the process of building the experience, please give us feedback here.
+
 
 <!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
 
