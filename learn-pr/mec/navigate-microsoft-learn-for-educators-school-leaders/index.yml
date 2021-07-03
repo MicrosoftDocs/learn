@@ -25,9 +25,7 @@ abstract: | # user input: learning objectives (https://review.docs.microsoft.com
     - Browse content by your role
     - Provide feedback to improve the experience 
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
-  - None
-  - # prerequisite 2
-  - # prerequisite 3
+  - Familiarity with the Microsoft Educator Center
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
   - beginner
