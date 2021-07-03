@@ -10,9 +10,12 @@ metadata:
   ms.topic: interactive-tutorial 
 title: Navigate Microsoft Learn for Educators and School Leaders
 summary: |
-  "You just got an email telling you that the Microsoft Educator Center is merging with Microsoft Learn to become the single training hub to empower digital classrooms, student-centered learning, and technical skilling for educators, students, institutions, and supporting education audiences. What does that mean for your professional development? What are the benefits of moving to Learn? And how will Learn grow to support education audiences? What happens to my existing progress?
+  The Microsoft Educator Center is merging with Microsoft Learn to become the single training hub to empower digital classrooms, student-centered learning, and technical skilling for educators, students, institutions, and supporting education audiences. 
+  - What does that mean for your professional development? 
+  - What are the benefits of moving to Learn? And how will Learn grow to support education audiences? 
+  - What happens to my existing progress?
 
-  In this module, you will learn the essentials for using Microsoft Learn as well as how Learn is growing to provide you with access to the same awesome professional development content that you love from the Microsoft Educator Center, with even more features to help you on your learning journey." 
+  In this module, you will learn the essentials for using Microsoft Learn as well as how Learn is growing to provide you with access to the same awesome professional development content that you love from the Microsoft Educator Center, with even more features to help you on your learning journey.
 # user input: introductory summary (https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)
 abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
   By the end of this module, you'll be able to:
