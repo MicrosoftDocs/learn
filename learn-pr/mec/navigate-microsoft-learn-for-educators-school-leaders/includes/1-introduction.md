@@ -30,9 +30,10 @@ The Microsoft Educator Center (MEC) is merging with Microsoft Learn to become th
     [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
     [Scenario video guidance](TBD)
  -->
+
 ## Example scenario
 
-As schools around the world respond to COVID-19, the need for remote learning tools has never been more urgent. As an educator, school leader or parent/guardian, we want to ensure that you continue to get access to world class professional development training on the latest educational technologies and best practices.
+You are preparing for the 2021/2022 school year. As schools around the world respond to COVID-19, the need for being confident using remote learning tools has never been more urgent. As an educator, you want to train yourself on the latest educational technologies like Microsoft Teams in order to help support your teaching and ensure the best learning outcomes for your students.
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
@@ -48,7 +49,7 @@ As schools around the world respond to COVID-19, the need for remote learning to
  -->
 ## What will we be doing?
 
-In this *module* (the name for short courses on Microsoft Learn) you will Learn how to navigate Microsoft Learn in order to find professional development training content, as well as how to set-up your profile, find your achievements and activity history, as well as create collections that you can share with others.
+In this *module* (the name for short courses on Microsoft Learn) you'll Learn how to navigate Microsoft Learn in order to find professional development training content on tools like Microsoft Teams. You wil also learn the basics of using Microsoft Learn like how to set up your profile, how to find and share your achievements and how to create collections of training content that you can share with others.
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
