@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.navigate-microsoft-learn-for-educators-school-leaders
+metadata:
+  moduleType: standard
+  title: "Navigate Microsoft Learn for Educators and School Leaders"
+  description: "The Microsoft Educator Center (MEC) is merging with Microsoft Learn to become the single training hub to empower digital classrooms, student-centered learning, and technical skilling for educators, students, institutions, and supporting education audiences. Learn how to navigate Microsoft Learn and get access to professional development training, curriculum, hands-on experiences, and certifications." # user input: a description for site search and SEO
+  ms.date: 7/2/2021
+  author: sadadow
+  ms.author: saadad
+  ms.topic: interactive-tutorial 
+title: Navigate Microsoft Learn for Educators and School Leaders
+summary: "TODO" # user input: introductory summary (https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)
+abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
+  By the end of this module, you'll be able to:
+    - Identify why and how the Microsoft Educator Center is moving to Learn
+    - Set-up your Learn profile
+    - Find your completion history and achievements
+    - Browse content by your role
+    - Provide feedback to improve the experience 
+prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
+  - None
+  - # prerequisite 2
+  - # prerequisite 3
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
+  - beginner
+roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role)
+  - k-12-educator
+  - higher-ed-educator
+  - school-leader
+  - parent-guardian
+products:
+- industry-solutions
+units:
+- learn.navigate-microsoft-learn-for-educators-school-leaders.introduction
+- learn.navigate-microsoft-learn-for-educators-school-leaders.learning-content
+- learn.navigate-microsoft-learn-for-educators-school-leaders.exercise
+- learn.navigate-microsoft-learn-for-educators-school-leaders.knowledge-check
+- learn.navigate-microsoft-learn-for-educators-school-leaders.summary
+badge:
+  uid: learn.navigate-microsoft-learn-for-educators-school-leaders.badge
