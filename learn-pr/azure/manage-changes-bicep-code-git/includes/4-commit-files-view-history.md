@@ -16,7 +16,7 @@ If your team doesn't already have a preference, here's a suggestion for how you 
 - At the root of your repository, create a _src_ folder. Use this to store application code.
 - At the root of your repository, create a _docs_ folder. Use this to store documentation about your solution.
 
-Here's an illustration of how this structure might look for our toy company's website:
+Here's an illustration of how this structure might look for your toy company's website:
 
 :::image type="content" source="../media/4-folder-structure.png" alt-text="Diagram that illustrates the folder hierarchy described in the list above." border="false":::
 
