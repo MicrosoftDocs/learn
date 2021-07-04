@@ -121,12 +121,13 @@ Keep your browser open. You'll check on the repository again later in this exerc
 1. In your terminal window, Git displays output similar to the following:
 
    ```output
-   Enumerating objects: 10, done.
-   Counting objects: 100% (10/10), done.
-   Delta compression using up to 4 threads
-   Compressing objects: 100% (4/4), done.
-   Writing objects: 100% (10/10), 1.01 KiB | 515.00 KiB/s, done.
-   Total 10 (delta 0), reused 0 (delta 0), pack-reused 0
+   Enumerating objects: 16, done.
+   Counting objects: 100% (16/16), done.
+   Delta compression using up to 8 threads
+   Compressing objects: 100% (11/11), done.
+   Writing objects: 100% (16/16), 2.30 KiB | 785.00 KiB/s, done.
+   Total 16 (delta 2), reused 0 (delta 0), pack-reused 0
+   remote: Resolving deltas: 100% (2/2), done.
    To https://github.com/mygithubuser/toy-website.git
     * [new branch]      main -> main
    Branch 'main' set up to track remote branch 'main' from 'origin'.
@@ -151,13 +152,13 @@ Keep your browser open. You'll check on the repository again later in this exerc
 1. In your terminal window, Git displays output similar to the following:
 
    ```output
-   Enumerating objects: 10, done.
-   Counting objects: 100% (10/10), done.
-   Delta compression using up to 4 threads
-   Compressing objects: 100% (4/4), done.
-   Writing objects: 100% (10/10), 1.01 KiB | 343.00 KiB/s, done.
-   Total 10 (delta 0), reused 0 (delta 0), pack-reused 0
-   remote: Analyzing objects... (10/10) (5 ms)
+   Enumerating objects: 16, done.
+   Counting objects: 100% (16/16), done.
+   Delta compression using up to 8 threads
+   Compressing objects: 100% (11/11), done.
+   Writing objects: 100% (16/16), 2.30 KiB | 785.00 KiB/s, done.
+   Total 16 (delta 2), reused 0 (delta 0), pack-reused 0
+   remote: Analyzing objects... (16/16) (5 ms)
    remote: Storing packfile... done (165 ms)
    remote: Storing index... done (75 ms)
    To https://dev.azure.com/myuser/toy-website/_git/toy-website
@@ -241,7 +242,7 @@ Now that you've committed a new file, you need to push your changes again so tha
 
    :::image type="content" source="../media/9-vscode-push.png" alt-text="Screenshot of Visual Studio Code showing the Source Control menu, with the Push menu item highlighted." border="true":::
 
-   Notice that you're not prompted to sign in again. Your Git credentials are shared between the Git CLI and Visual Studio Code.
+   Notice that you're not prompted to sign in again. Your credentials are shared between the Git CLI and Visual Studio Code.
 
 ::: zone pivot="githubmacos,githubwindows"
 
