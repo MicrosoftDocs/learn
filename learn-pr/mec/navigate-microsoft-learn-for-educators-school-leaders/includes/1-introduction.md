@@ -17,7 +17,7 @@ As schools around the world respond to COVID-19, the need for confidence using r
 
 Microsoft Learn is a place where professional development training, curriculum, hands-on experiences, and certifications come together to support technical professionals as well as educators, students, and institutions.  
 
-[!VIDEO INTRO VIDEO] INTRO VIDEO GOES HERE
+[!VIDEO https://microsoft-my.sharepoint-df.com/:v:/p/brhentho/EUV_nAvtzlNHi4zdPzCQQyABVNZSc4_gO-fmfKd7Hbwpbg?e=ahuOdm] 
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
