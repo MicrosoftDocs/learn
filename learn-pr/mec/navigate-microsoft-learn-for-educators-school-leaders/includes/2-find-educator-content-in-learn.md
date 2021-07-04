@@ -12,6 +12,8 @@ On Microsoft Learn, you’ll have access to the same awesome professional develo
 
 In this unit, you will learn about what content Learn offers for educators, how to find this educator content in Learn, and how to share it with your colleagues or students.
 
+[Image]
+
 Offerings in Learn for educators will include:
 
 - Educator professional development training and courses
@@ -39,12 +41,13 @@ Most of our training content is in the form of *modules* which are organized int
 
 On Learn, we have thousands of modules and learning paths to help you get started with any Microsoft products. You can filter for educator-specific content by selecting your role as either a "K-12 Educator", "Higher-ed Educator", "School Leader" or "Parent & Guardian", under the “Role” filter. You can also filter by products as well as search for keywords.
 
+[Image]
+
 ## Create and share collections of content
 
 If you find a module or learning path interesting but don’t want to start it at the moment, you can create a collection to save it to. You have a default collection called “favorites”, and you can also create new collections as you need. You can also share your collections with your peers to learn together, or even your students to help them learn on their own. All your collections can be found in your profile under the 'collections' tab.
 
-Note: We will be publishing Microsoft official curated collections for educator skills like remote teaching and inclusive classroom by September. Stay tuned!
-
+[Image]
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------
 
