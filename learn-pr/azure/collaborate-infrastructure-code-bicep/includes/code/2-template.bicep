@@ -76,10 +76,6 @@ resource hostingPlan 'Microsoft.Web/serverfarms@2020-06-01' = {
 resource webSite 'Microsoft.Web/sites@2020-06-01' = {
   name: webSiteName
   location: location
-  tags: {
-    'hidden-related:${hostingPlan.id}': 'empty'
-    displayName: 'Website'
-  }
   properties: {
     serverFarmId: hostingPlan.id
   }
@@ -131,10 +127,6 @@ resource roleassignment 'Microsoft.Authorization/roleAssignments@2020-04-01-prev
 resource AppInsights_webSiteName 'Microsoft.Insights/components@2018-05-01-preview' = {
   name: 'AppInsights${webSite.name}' // TODO reference cycle
   location: location
-  tags: {
-    'hidden-link:${webSite.id}': 'Resource'
-    displayName: 'AppInsightsComponent'
-  }
   kind: 'web'
   properties: {
     Application_Type: 'web'

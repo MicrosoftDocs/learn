@@ -1,10 +1,10 @@
-TODO scenario
+Your colleague has come back to you with some questions about your template. You decide to refactor the file to make it easier for them to work with. In this exercise, you apply the best practices you learned in the preceding units.
 
 ## Your task
 
 Look at the Bicep template that you saved earlier. Think about the advice you've seen for how to structure your templates. Try to update your template to make it easier for your colleague to understand.
 
-In the sections below, there are some pointers to specific parts of the template and some hints for things you might want to change.
+In the sections below, there are some pointers to specific parts of the template and some hints for things you might want to change. A suggested solution is provided, but your template might look different - that's OK!
 
 <!-- TODO move to exercise
 > [!TIP]
