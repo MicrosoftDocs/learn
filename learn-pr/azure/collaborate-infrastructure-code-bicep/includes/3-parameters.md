@@ -11,10 +11,10 @@ Default values are an important way to make your template usable by others. It's
 
 Bicep can also help to validate the input that the user provides when they deploy the template. Your Bicep files use _parameter decorators_ to help Bicep and the user understand what values are permitted for each parameter. Bicep provides several types of parameter decorators:
 
+- **Descriptions** provide human-readable information about the purpose of the parameter, and the effects of setting its value.
 - **Value constraints** enforce limits on what the user can enter for the parameter's value. You can specify a list of specific values that are permitted by using the `@allowedValues` decorator. You can use the `@minValue` and `@maxValue` decorators to enforce the minimum and maximum values for numeric parameters. And you can use the `@minLength` and `@maxLength` parameters to enforce the length of string and array parameter.
   > [!TIP]
-  > Be careful when you use the `@allowedValues` parameter decorator to specify SKUs. Azure services often add new SKUs, and you don't want your template to unnecessarily prohibit their use. Consider using Azure Policy to enforce the use of specific SKUs, and use the `@allowedValues` decorator with SKUs only when there are functional reasons why your template's users shouldn't select a specific SKU, like if the features your template needs aren't available in that SKU.
-- **Descriptions** provide human-readable information about the purpose of the parameter, and the effects of setting its value.
+  > Be careful when you use the `@allowedValues` parameter decorator to specify SKUs. Azure services often add new SKUs, and you don't want your template to unnecessarily prohibit their use. Consider using Azure Policy to enforce the use of specific SKUs, and use the `@allowedValues` decorator with SKUs only when there are functional reasons why your template's users shouldn't select a specific SKU, like if the features your template needs aren't available in that SKU. Explain this using a `@description` decorator or comment, to make the reasons clear to anyone in future.
 - **Metadata** can be used to provide additional custom metadata about the parameter, although this is less commonly used.
 
 ## How flexible should a Bicep file be?

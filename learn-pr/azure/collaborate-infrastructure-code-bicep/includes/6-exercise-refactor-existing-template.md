@@ -28,7 +28,7 @@ In the sections below, there are some pointers to specific parts of the template
    >
    > :::image type="content" source="../media/4-rename-symbol.png" alt-text="Screenshot from Visual Studio Code showing how to rename a symbol." border="true":::
    >
-   > This renames the identifier, and all of the references to it as well.
+   > This renames the identifier and automatically updates all of the references to it as well.
 
 1. Do you really need to specify a list of allowed values for the `skuName` parameter?
 

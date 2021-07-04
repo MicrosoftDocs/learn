@@ -50,3 +50,22 @@ Resource _tags_ enable you to store important metadata about resources. You defi
 You can query a resource's tags using tools like Azure PowerShell and the Azure CLI, and you can see tags on the Azure portal:
 
 :::image type="content" source="../media/4-tags-portal.png" alt-text="Screenshot of the Azure Portal for a storage account, showing the location of tags." border="true":::
+
+It's common to use the same set of tags for all of your resources, so it's often a good idea to define your tags as a parameter or variable, and then reuse them on each resource:
+
+```bicep
+param tags object = {
+  CostCenter: 'Marketing'
+  DataClassification: 'Public'
+  Owner: 'WebsiteTeam'
+  Environment: 'Production'
+}
+
+resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
+  tags: tags
+}
+
+resource appServiceApp 'Microsoft.Web/sites@2020-06-01' = {
+  tags: tags
+}
+```

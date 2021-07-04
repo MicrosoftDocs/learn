@@ -129,7 +129,7 @@ resource roleassignment 'Microsoft.Authorization/roleAssignments@2020-04-01-prev
 //}
 
 resource AppInsights_webSiteName 'Microsoft.Insights/components@2018-05-01-preview' = {
-  name: 'AppInsights${webSite.name}'
+  name: 'AppInsights${webSite.name}' // TODO reference cycle
   location: location
   tags: {
     'hidden-link:${webSite.id}': 'Resource'
