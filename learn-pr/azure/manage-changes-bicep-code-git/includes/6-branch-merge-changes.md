@@ -5,6 +5,9 @@ When you work on Bicep code, it's common to need to do more than one thing at a 
 
 In this unit, you learn about Git branches.
 
+> [!NOTE]
+> The content in this unit isn't part of the exercise. You'll practice what you learn here on the next page.
+
 ## What are branches?
 
 A _branch_ provides a way to have multiple active copies of your files. You can create and switch between branches whenever you want. When you're done working with a branch, you can either _merge_ it into another branch, or you can delete it - which removes all of the changes.

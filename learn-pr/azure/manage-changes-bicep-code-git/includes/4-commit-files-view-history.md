@@ -1,5 +1,8 @@
 Now that you've initialized your Git repository, you're ready to start adding files. In this unit, you'll learn how to tell Git to track the changes to files in your repository.
 
+> [!NOTE]
+> The content in this unit isn't part of the exercise. You'll practice what you learn here on the next page.
+
 ## Folder structure for your repository
 
 When you work with a version control system like Git, it's important to plan how you store your files. It's a good idea to have a clear folder structure. If you're building Bicep code to deploy an application or another solution, it's also a good idea to store your Bicep files in the same repository as the application code and other files. That way, anytime anyone needs to add a new feature that changes both Bicep and application code, they'll be tracked together. It also makes it easier to deploy your solution from a pipeline, which you'll learn about in a future module.

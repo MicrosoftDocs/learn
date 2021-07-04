@@ -1,5 +1,8 @@
 You've learned about how Git enables you to track the changes to your Bicep code. In this unit, you'll learn how Git also enables collaboration with your team members.
 
+> [!NOTE]
+> The content in this unit isn't part of the exercise. You'll practice what you learn here on the next page.
+
 ## What are GitHub and Azure Repos?
 
 Git is a piece of software that you install and run on your own computer. As you've learned, Git keeps track of the changes you make to your files, and enables powerful features like branching.
