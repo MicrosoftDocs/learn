@@ -1,30 +1,33 @@
-TODO lead-in para
+Parameters are the most common way that your colleagues will interact with your template. Whenever anyone deploys your template, they need to specify values for the parameters. In this unit, you learn about some key considerations when you're planning the parameters for Bicep files.
 
 ## How understandable are the parameters?
 
-Parameters help to make Bicep files reusable and flexible. However, it's important that the purpose of each parameter is clear. Most of the time, when yuo your colleagues work with your template they'll use parameters to change the behavior of their deployment, so it's critical that parameters are clearly named.
+Parameters help to make Bicep files reusable and flexible. However, it's important that the purpose of each parameter is clear. Most of the time, when your colleagues work with your template, they use parameters to change the behavior of their deployment, so it's critical that parameters are clearly named. For example, suppose you need to know the name of the SKU to use when your template deploys a storage account. It's probably better to name the parameter `storageAccountSkuName` than simply `sku` or `skuName`, so that it's clear exactly what the template needs and what the parameter affects.
 
-<!-- TODO give example -->
+Default values are an important way to make your template usable by others. It's important to use default values where they make sense. They help your template's users in two ways:
 
-Default values are an important way to make your template usable by others. It's important to use default values where they make sense.
+1. They simplify the process of deploying your template. If you have a good default value that works for most of your template's users, they can omit the parameter value instead of specifying it on each deployment.
+1. They provide an example of how you expect the parameter value to look. If the template user needs to choose a different value, the default value can provide useful hints about what their value should look like.
 
-<!-- TODO give example -->
+Bicep can also help to validate the input that the user provides when they deploy the template. Your Bicep files use _parameter decorators_ to help Bicep and the user understand what values are permitted for each parameter. Bicep provides several types of parameter decorators:
 
-Bicep can also help to validate the input that the user provides when they deploy the template. Your Bicep files use _parameter decorators_ to help Bicep and the user understand what values are permitted for each parameter.
-
-<!-- TODO give example -->
+- **Value constraints** enforce limits on what the user can enter for the parameter's value. You can specify a list of specific values that are permitted by using the `@allowedValues` decorator. You can use the `@minValue` and `@maxValue` decorators to enforce the minimum and maximum values for numeric parameters. And you can use the `@minLength` and `@maxLength` parameters to enforce the length of string and array parameter.
+  > [!TIP]
+  > Be careful when you use the `@allowedValues` parameter decorator to specify SKUs. Azure services often add new SKUs, and you don't want your template to unnecessarily prohibit their use. Consider using Azure Policy to enforce the use of specific SKUs, and use the `@allowedValues` decorator with SKUs only when there are functional reasons why your template's users shouldn't select a specific SKU, like if the features your template needs aren't available in that SKU.
+- **Descriptions** provide human-readable information about the purpose of the parameter, and the effects of setting its value.
+- **Metadata** can be used to provide additional custom metadata about the parameter, although this is less commonly used.
 
 ## How flexible should a Bicep file be?
 
-One of the goals of defining your infrastructure as code is to make your templates reusable and flexible. You don't want to create single-purpose templates that have hard-coded configuration. On the other hand, it doesn't make sense to expose all resource properties as parameters: you create templates that work for your specific business problem or solution, not generic templates that need to work for every situation. You also don't want to have so many unnecessary parameters that it takes a long time for anyone to deploy your template. This is particularly important when you configure the SKUs and instance counts of resources.
+One of the goals of defining your infrastructure as code is to make your templates reusable and flexible. You don't want to create single-purpose templates that have hard-coded configuration. On the other hand, it doesn't make sense to expose all resource properties as parameters: you create templates that work for your specific business problem or solution, not generic templates that need to work for every situation. You also don't want to have so many unnecessary parameters that it takes a long time for anyone to enter the values so that they can deploy your template. This is particularly important when you configure the SKUs and instance counts of resources.
 
-When you're planning a template, consider how you'll balance flexibility with simplicity. There are two common approaches to providing parameters in templates: providing free-form configuration options, and using known sets of configuration. Let's consider an example Bicep that deploys a storage account and an App Service plan.
+When you're planning a template, consider how you'll balance flexibility with simplicity. There are two common approaches to providing parameters in templates: providing free-form configuration options, and using known sets of configuration. Let's consider a hypothetical Bicep that deploys a storage account and an App Service plan.
 
 ### Provide free-form configuration options
 
 You might consider creating a set of parameters to control each of the SKUs and instance counts for the resources:
 
-:::image type="content" source="../media/3-free-form-configuration.png" alt-text="TODO" border="false":::
+:::image type="content" source="../media/3-free-form-configuration.png" alt-text="Diagram showing a user entering a parameter, which then directly influences the resource definition." border="false":::
 
 Here's how this looks in Bicep:
 
@@ -39,7 +42,7 @@ This provides the most flexibility, since anyone who uses the template can speci
 
 Alternatively, you could provide a single parameter with a list of allowed values, like a list of environment types. When someone deploys your template, they only need to select a value for this one parameter.
 
-:::image type="content" source="../media/3-configuration-map.png" alt-text="TODO" border="false":::
+:::image type="content" source="../media/3-configuration-map.png" alt-text="Diagram showing a user entering a parameter, which then influences the configuration map variable. The resource definition takes its value from the configuration map." border="false":::
 
 The parameter definition looks like this:
 
@@ -72,18 +75,6 @@ It's important to think about the symbolic names you apply to your resources. Im
 For example, suppose you define a storage that will contain product manuals for users to download from your website. You could name give the resource a symbolic name of  `storageAccount`, but if it's in a Bicep file that contains lots of other resources - and maybe even other storage accounts - then that name isn't very descriptive. So you could instead give it a symbolic name that includes a bit of information about its purpose - like perhaps `productManualStorageAccount`.
 
 In Bicep, you typically use _camel case_ for the names of parameters, variables, and resource symbolic names. This means use a lowercase first letter for the first word, and then capitalize the first letter of subsequent words - like in `productManualStorageAccount`. You're not required to use camel case. If you choose to use a different style, it's important to agree on one standard within your team and use it consistently.
-
-<!-- TODO move to exercise
-### Change symbolic names in Visual Studio Code
-
-When you rename identifiers, you need to make sure you rename them consistently in all parts of your template. This is especially important for parameters, variables, and resources that you refer to throughout your template.
-
-Visual Studio Code offers a convenient way to rename symbols: select the identifier you want to rename, press <kbd>F2</kbd>, enter a new name, and press <kbd>Enter</kbd>:
-
-:::image type="content" source="../media/4-rename-symbol.png" alt-text="Screenshot from Visual Studio Code showing how to rename a symbol." border="true":::
-
-This renames the identifier, and all of the references to it as well.
--->
 
 ### Resource names
 

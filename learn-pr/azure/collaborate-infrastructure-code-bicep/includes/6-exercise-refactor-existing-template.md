@@ -2,9 +2,17 @@ TODO scenario
 
 ## Your task
 
-Look at the Bicep template that you saved earlier. Think about the advice you've seen for how to structure your templates. Try to update your template to resolve the issues.
+Look at the Bicep template that you saved earlier. Think about the advice you've seen for how to structure your templates. Try to update your template to make it easier for your colleague to understand.
 
 In the sections below, there are some pointers to specific parts of the template and some hints for things you might want to change.
+
+<!-- TODO move to exercise
+> [!TIP]
+> Consider using Visual Studio Code's features to navigate around your template:
+> - Go to Definition
+> - Find All References
+> - Peek Definition
+-->
 
 ### Parameters
 
@@ -13,6 +21,16 @@ In the sections below, there are some pointers to specific parts of the template
    ::: code language="bicep" source="code/2-template.bicep" range="19-21" :::
 
    What sort of SKU do they refer to? What resources are affected by choosing different values for these parameters? Is there a better name you can give the parameters?
+
+   > [!TIP]
+   > When you rename identifiers, you need to make sure you rename them consistently in all parts of your template. This is especially important for parameters, variables, and resources that you refer to throughout your template.
+   > Visual Studio Code offers a convenient way to rename symbols: select the identifier you want to rename, press <kbd>F2</kbd>, enter a new name, and press <kbd>Enter</kbd>:
+   >
+   > :::image type="content" source="../media/4-rename-symbol.png" alt-text="Screenshot from Visual Studio Code showing how to rename a symbol." border="true":::
+   >
+   > This renames the identifier, and all of the references to it as well.
+
+1. Do you really need to specify a list of allowed values for the `skuName` parameter?
 
 1. The `managedIdentityName` parameter doesn't have a default value - could you change that, or better yet, create the name automatically?
 
