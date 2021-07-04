@@ -11,7 +11,7 @@
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
 -->
 
-As schools around the world respond to COVID-19, the need for being confident using remote learning tools has never been more urgent. As an educator, you want to train yourself on the latest educational technologies like Microsoft Teams in order to help support your teaching and ensure the best learning outcomes for your students. The best place for continuing that training is Microsoft Learn.
+As schools around the world respond to COVID-19, the need for confidence using remote learning technologies has never been more urgent. As an educator, you want to train yourself on the latest educational tools like Microsoft Teams in order to help support your teaching and ensure the best learning outcomes for your students. The best place for that training is Microsoft Learn.
 
 ## What is Microsoft Learn?
 
