@@ -57,7 +57,7 @@ Now that you've created a branch, you will add a new Bicep module for your websi
 
    :::code language="bicep" source="code/7-main.bicep" range="14-15" :::
 
-1. Underneath the current resource declarations, add the following module definition:
+1. Add the following module definition below the `appService` module definition:
 
    :::code language="bicep" source="code/7-main.bicep" range="26-33" :::
 
