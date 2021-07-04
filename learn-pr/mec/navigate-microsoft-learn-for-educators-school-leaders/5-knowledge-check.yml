@@ -28,17 +28,17 @@ durationInMinutes: 10 # user input: the estimate time to complete the unit
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "Under which tab in your profile can you find your badges?"
     choices:
-    - content: ""
+    - content: "achievements"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Yes, this is where you can find both your badges and trophies for completed modules and learning paths respectively"
+    - content: "collections"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Collections is where you can find modules and learning paths that you have saved into organized lists."
+    - content: "activities"
       isCorrect: false
-      explanation: ""
+      explanation: "Activities is where you can find your in-progress and completed modules and learning paths"
   - content: ""
     choices:
     - content: ""
