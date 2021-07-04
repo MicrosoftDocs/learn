@@ -11,11 +11,14 @@
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
 -->
 
-As schools around the world respond to COVID-19, the need for confidence using remote learning technologies has never been more urgent. As an educator, you want to train yourself on the latest educational tools like Microsoft Teams in order to help support your teaching and ensure the best learning outcomes for your students. The best place for that training is Microsoft Learn.
+As schools around the world respond to COVID-19, and increase their use of technology in the classroom, the need for confidence using these technologies has never been more urgent. As an educator, you want to train yourself on the latest educational tools like Microsoft Teams in order to help support your teaching and ensure the best learning outcomes for your students. Microsoft provides an excellent, completely free, platform to help you train to use the classroom tools called Microsoft Learn.
 
 ## What is Microsoft Learn?
 
 Microsoft Learn is a place where professional development training, curriculum, hands-on experiences, and certifications come together to support technical professionals as well as educators, students, and institutions.  
+
+> [!NOTE]
+> The Microsoft Educator Center is merging with Microsoft Learn. On Microsoft Learn, you’ll have access to the same awesome professional development content that you love from the Microsoft Educator Center, with even more features to help you on your learning journey. We'll also bring your learning history and achievements to Microsoft Learn, so you can pick up your learning journey right where you last left off!
 
 [!VIDEO https://microsoft-my.sharepoint-df.com/:v:/p/brhentho/EUV_nAvtzlNHi4zdPzCQQyABVNZSc4_gO-fmfKd7Hbwpbg?e=ahuOdm] 
 
@@ -51,7 +54,7 @@ Microsoft Learn is a place where professional development training, curriculum, 
  -->
 ## How do I get started?
 
-In this *module* (the name for short courses on Microsoft Learn) you'll Learn how to navigate Microsoft Learn in order to find professional development training content on tools like Microsoft Teams. You wil also learn the basics of using Microsoft Learn like how to set up your profile, how to find and share your achievements and how to create collections of training content that you can share with others.
+In this *module* (the name for short courses on Microsoft Learn) you'll Learn how to navigate Microsoft Learn in order to find professional development training content on tools like Microsoft Teams. You wil also learn the basics of using Microsoft Learn, such as, how to set up your profile, how to find and share your achievements and how to create collections of training content that you can share with others.
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 

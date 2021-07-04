@@ -8,8 +8,6 @@
 
     [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-learning-unit-introduction-format)
 -->
-On Microsoft Learn, you’ll have access to the same awesome professional development content that you love from the Microsoft Educator Center, with even more features to help you on your learning journey. We'll also bring your learning history and achievements to Microsoft Learn, so you can pick up your learning journey right where you last left off!
-
 In this unit, you will learn about what content Learn offers for educators, how to find this educator content in Learn, and how to share it with your colleagues or students.
 
 [Image]
@@ -41,7 +39,26 @@ Most of our training content is in the form of *modules* which are organized int
 
 On Learn, we have thousands of modules and learning paths to help you get started with any Microsoft products. You can filter for educator-specific content by selecting your role as either a "K-12 Educator", "Higher-ed Educator", "School Leader" or "Parent & Guardian", under the “Role” filter. You can also filter by products as well as search for keywords.
 
+To browse content go to the Learn "browse all" page at [docs.microsoft.com/learn/browse/](https://docs.microsoft.com/learn/browse/)
+
+To use the filters, select on of the boxes under product, role, level, or type, in order to see the list of content pertaining to that category.
+
+*Product* is where you can find educational tools such as Microsoft Teams, Immersive Reader, Reading Progress, OneNote, Minecraft, Flipgrid, Windows, Powerpoint, Forms, Edge, OneDrive, Sway, and many more.
+
+*Role* is where you can select the category that fits you best as either a *K-12 Educator, Higher-ed Educator, School Leader*, or *Parent & Guardian*.
+
+*Level* is where you can select from the appropriate experience level with the content as either a *beginner*, *intermediate* or *advanced*.
+
+*Type* is where you can select from either Modules or Learning Paths.
+
 [Image]
+
+You can also search by keyword in the search bar displayed on the page.
+
+[Image]
+
+> [!CAUTION]
+> The search bar displayed in the top right of the page header will search all of Docs.microsoft.com which includes more than just Learn. It includes Documentation, Certifications, Q&A, Code Samples and more. To search just Learn modules and learning paths, make sure to use the correct search bar on the "Browse all" page detailed above.
 
 ## Create and share collections of content
 
