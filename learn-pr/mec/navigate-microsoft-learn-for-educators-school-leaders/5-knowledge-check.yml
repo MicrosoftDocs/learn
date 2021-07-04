@@ -32,7 +32,7 @@ quiz:
     choices:
     - content: "achievements"
       isCorrect: true
-      explanation: "Yes, this is where you can find both your badges and trophies for completed modules and learning paths respectively"
+      explanation: "The *achievements* tab is where you can find both your badges and trophies for completed modules and learning paths respectively"
     - content: "collections"
       isCorrect: false
       explanation: "Collections is where you can find modules and learning paths that you have saved into organized lists."
