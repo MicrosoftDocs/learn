@@ -252,7 +252,7 @@ Now that you've pushed your changes to your remote repository, you can inspect t
 
 1. In your browser, refresh the repository's page.
 
-1. Notice the files you created are now listed:
+1. Notice the files you created are now listed, and your _README.md_ file is displayed:
 
    :::image type="content" source="../media/9-github-final.png" alt-text="Screenshot of the GitHub interface showing the repository, including the folder and file structure." border="true":::
 
@@ -268,7 +268,7 @@ Now that you've pushed your changes to your remote repository, you can inspect t
 
 1. In your browser, refresh the **Repos** page.
 
-1. Notice the files you created are now listed:
+1. Notice the files you created are now listed, and your _README.md_ file is displayed:
 
    :::image type="content" source="../media/9-azure-repos-final.png" alt-text="Screenshot of the Azure DevOps interface showing the repository, including the folder and file structure." border="true":::
 
