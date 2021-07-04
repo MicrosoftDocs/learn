@@ -23,6 +23,7 @@ Offerings in Learn for educators will include:
 As the Microsoft Educator center merges with Microsoft Learn it will become the single training hub to empower digital classrooms.
 
 ## Modules and learning paths
+
 Most of our training content is in the form of *modules* which are organized into a series of *learning paths*. Modules are shorter courses, typically 30-60 minutes, that consist of pages called units. Learning paths are a series of modules centered around mastery of a particular topic. If you came from MEC, a module is the equivalent of a course and a learning path is the equivalent of a learning path.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
@@ -33,14 +34,16 @@ Most of our training content is in the form of *modules* which are organized int
 
     Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
 -->
+
 ## Browse and search for educator content
 
 On Learn, we have thousands of modules and learning paths to help you get started with any Microsoft products. You can filter for educator-specific content by selecting your role as either a "K-12 Educator", "Higher-ed Educator", "School Leader" or "Parent & Guardian", under the “Role” filter. You can also filter by products as well as search for keywords.
 
 ## Create and share collections of content
 
-Collections are a powerful tool in Learn. You can create a collection of modules or learning paths to design your own learning journey. You can also share your collections with your peers to learn together, or even your students to help them learn on their own. Your collections can be found in your profile.
+If you find a module or learning path interesting but don’t want to start it at the moment, you can create a collection to save it to. You have a default collection called “favorites”, and you can also create new collections as you need. You can also share your collections with your peers to learn together, or even your students to help them learn on their own. All your collections can be found in your profile under the 'collections' tab.
 
+Note: We will be publishing Microsoft official curated collections for educator skills like remote teaching and inclusive classroom by September. Stay tuned!
 
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------
