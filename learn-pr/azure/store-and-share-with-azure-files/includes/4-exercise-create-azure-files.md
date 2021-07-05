@@ -78,25 +78,25 @@ Next, create a Windows Server VM to simulate an on-premises machine running in t
 
 1. Select **File shares**.
 
-    ![Screenshot of the Azure portal showing the storage account overview](../media/4-select-file-shares.png)
+    :::image type="content" source="../media/4-select-file-shares.png" alt-text="Screenshot of the Azure portal showing the storage account overview." lightbox="../media/4-select-file-shares.png#lightbox":::
 
 1. Select **data**.
 
-    ![Screenshot of the file shares in the storage account](../media/4-select-data.png)
+    :::image type="content" source="../media/4-select-data.png" alt-text="Screenshot of the file shares in the storage account." lightbox="../media/4-select-data.png#lightbox":::
 
 1. Select **Connect**, and in the pop-up window on the right, select the **F** drive letter, ensure **Storage account key** is selected, and then copy the Powershell script that appears in the text box.
 
-    ![Screenshot of the data file share and its connection commands](../media/4-connect-share.png)
+    :::image type="content" source="../media/4-connect-share.png" alt-text="Screenshot of the data file share and its connection commands." lightbox="../media/4-connect-share.png#lightbox":::
 
 
 1. On your virtual machine, right-click **Start** and select **Windows PowerShell (Admin)**.
 
-    ![Screenshot of the Windows virtual machine showing the contextual menu of the Start menu with Windows PowerShell (Admin) highlighted.](../media/4-connect-powershell-admin.png)
+    :::image type="content" source="../media/4-connect-powershell-admin.pngxxx" alt-text="Screenshot of the Windows virtual machine showing the contextual menu of the Start menu with Windows PowerShell (Admin) highlighted." lightbox="../media/4-connect-powershell-admin.png#lightbox":::
 
 1. In the PowerShell window, paste the script you copied.
 1. Return to the Azure portal, go back to the file shares, and select the **reports** file share.
 
-    ![Screenshot of how to go back to the file shares ](../media/4-navigate-back.png)
+    :::image type="content" source="../media/4-navigate-back.png" alt-text="Screenshot of how to go back to the file shares." lightbox="../media/4-navigate-back.png#lightbox":::
 
 1. Select **Connect**, and in the pop-up window on the right, select the **G** drive letter.
 1. Copy the bottom PowerShell command.
@@ -106,7 +106,7 @@ Next, create a Windows Server VM to simulate an on-premises machine running in t
 
 1. In the VM, open File Explorer and select **This PC**.
 
-    ![Explorer showing This PC](../media/4-explorer-mapped-drives.png)
+    :::image type="content" source="../media/4-explorer-mapped-drives.png" alt-text="Explorer showing This PC." lightbox="../media/4-explorer-mapped-drives.png#lightbox":::
 
 1. Select the data drive named drive **F**. 
 1. Right-click the main window, and select **New** > **Text Document**. 
