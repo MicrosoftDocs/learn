@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Refactor the Bicep file to use modules
   description: TODO
-  ms.date: 04/20/2021
+  ms.date: 07/05/2021
   author: pazdedav
   ms.author: dapazd
   ms.topic: interactive-tutorial

@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Structure your Bicep code for collaboration
   description: Learn how to create modular, reusable, and documented infrastructure as code using Bicep and enable team collaboration.
-  ms.date: 04/20/2021
+  ms.date: 07/05/2021
   author: pazdedav
   ms.author: dapazd
   ms.topic: interactive-tutorial
