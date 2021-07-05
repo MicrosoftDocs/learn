@@ -1,6 +1,5 @@
 ## Your profile
-Your profile stores your activities, collections, achievements, and settings. Note that if you came from Microsoft Educator Center, it might take a while to show your Educator Center badges - please still refer to your achievements on Microsoft Educator Center.
-Here are some main items in your profile:
+Your profile stores your activities, collections, achievements, and settings. Here are some main items in your profile:
 
 | Overview | Overview of your recent activity, bookmarks and achievements |
 |----------|--------------------------------------------------------------|
@@ -14,6 +13,9 @@ Here are some main items in your profile:
 To go to your profile, navigate to the avatar image on the upper right hand corner of the browser window and select 'profile' in the pop-up window.
 
 [Image]
+
+> [!NOTE]
+> If you came from Microsoft Educator Center, it might take a while to show your Educator Center badges - please still refer to your achievements on Microsoft Educator Center.
 
 ## Changing your personal info, username and URL
 
@@ -38,6 +40,7 @@ You can also add and remove accounts linked to your Learn profile, for example i
 
 [Image]
  
-Badges and trophies are achievements that you receive after completing training content. You will get a badge after completing a module and a trophy after completing all the modules in a learning path. You can also earn XP points and increase in level as you continue to progress through content. 
-Caution: Reputation points are points received for participation on Q&A, Microsoft’s technical question and answer platform, unless you are a technical educator, this may not be very relevant to you at this time.
+Badges and trophies are achievements that you receive after completing training content. You will get a badge after completing a module and a trophy after completing all the modules in a learning path. You can also earn XP points and increase in level as you continue to progress through content.
 
+> [!CAUTION]
+> Reputation points are points received for participation on Q&A, Microsoft’s technical question and answer platform, unless you are a technical educator, this may not be very relevant to you at this time.
