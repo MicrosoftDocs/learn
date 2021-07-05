@@ -1,13 +1,3 @@
-## Badges, trophies and reputation points
- 
-Badges and trophies are achievements that you receive after completing training content. You will get a badge after completing a module and a trophy after completing all the modules in a learning path. You can also earn XP points and increase in level as you continue to progress through content. 
-Caution: Reputation points are points received for participation on Q&A, Microsoft’s technical question and answer platform, unless you are a technical educator, this may not be very relevant to you at this time.
-
-## Collections and favorites
-
-If you find a module or learning path interesting but don’t want to start it at the moment, you can save it to a collection. You have a default collection called “favorites”, and you can also create new collections as you need. You can even share the collections that you have created with others. All your collections can be found in your profile.
-Note: We will be publishing Microsoft official curated collections for educator skills like remote teaching and inclusive classroom by September. Stay tuned!
-
 ## Your profile
 Your profile stores your activities, collections, achievements, and settings. Note that if you came from Microsoft Educator Center, it might take a while to show your Educator Center badges - please still refer to your achievements on Microsoft Educator Center.
 Here are some main items in your profile:
@@ -20,3 +10,34 @@ Here are some main items in your profile:
 |Collections | Modules or learning paths you have saved to “favorites” and other personal collections you have created |
 |Achievements | Badges and trophies that you have earned in Learn. You can export certificate for each badge and transcript for all your achievements |
 |Settings | Change your display name, manage email preferences and account settings. You can link your work account to your profile and share your learning progress with your school |
+
+To go to your profile, navigate to the avatar image on the upper right hand corner of the browser window and select 'profile' in the pop-up window.
+
+[Image]
+
+## Changing your personal info, username and URL
+
+Select "Settings" in the left hand menu to open your profile settings options.
+[Image]
+
+Here you can change your:
+- Profile picture - the avatar image displayed for your profile 
+- Username/URL - this is the link that you can provide others to access your public profile
+- Display name - This is the name associated with your profile.
+
+> [!IMPORTANT]
+> By default your Learn profile is public but you can use private mode to restrict what others can see. When private mode is on, Learn badges, trophies, and Q&A contributions are hidden on your public profile. 
+>
+> To enable private mode go to Privacy Settings in the Settings area of your profile.
+
+## Adding and removing accounts
+
+You can also add and remove accounts linked to your Learn profile, for example if you have both a personal and work account that you would like to access Learn with. You can have up to five school or work accounts  and one personal account  linked to your profile. Linking a school or work account will allow your organization to see your learning progress data.
+
+## Badges, trophies and reputation points
+
+[Image]
+ 
+Badges and trophies are achievements that you receive after completing training content. You will get a badge after completing a module and a trophy after completing all the modules in a learning path. You can also earn XP points and increase in level as you continue to progress through content. 
+Caution: Reputation points are points received for participation on Q&A, Microsoft’s technical question and answer platform, unless you are a technical educator, this may not be very relevant to you at this time.
+

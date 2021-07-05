@@ -1,3 +1,12 @@
 If you find a module or learning path interesting but don’t want to start it at the moment, you can create a *collection* where you can save it. You have a default collection called “favorites” but you can also create new collections as you need. You can give these collections titles and descriptions as well as share them with others. You can share your collections with your peers to learn together, or even your students to help them learn on their own. All your collections can be found in your profile in the "Collections" section.
 
 [Image]
+
+## Creating a collection
+
+In order to create a collection:
+
+## Sharing a collection
+
+In order to share a collection:
+
