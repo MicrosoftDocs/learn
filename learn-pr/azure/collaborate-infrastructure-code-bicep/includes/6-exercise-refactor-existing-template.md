@@ -113,7 +113,7 @@ Take a look at the symbolic names for the resources in the template. What could 
 
 1. Can you change the way the connection string is set so that the complex expression isn't defined in-line with the resource?
 
-   ::: code language="bicep" source="code/2-template.bicep" range="94-102" highlight="5" :::
+   ::: code language="bicep" source="code/2-template.bicep" range="90-98" highlight="5" :::
 
 ## Order of elements
 
@@ -125,7 +125,7 @@ Are you happy with the order of the elements in the file? Take a look at the `da
 
 See the commented-out resource, `storageAccount`? Do you think that needs to be in the file?
 
-## Add comments
+## Add comments, tags, and other metadata
 
 Think about anything in the template that might not be obvious, or that needs some extra explanation. Can you add comments to make it clearer for someone else who opens the file in the future?
 
@@ -140,6 +140,10 @@ Think about anything in the template that might not be obvious, or that needs so
    ::: code language="bicep" source="code/2-template.bicep" range="105-113" highlight="2" :::
 
    The name of the resource uses the `guid()` function. Would it help to explain why?
+
+1. Can you add a description to the role assignment?
+
+1. Can you add a set of tags to each resource?
 
 ## Suggested solution
 

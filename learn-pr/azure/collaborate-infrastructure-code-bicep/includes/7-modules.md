@@ -1,18 +1,25 @@
-Modules are separate Bicep templates, collections of resources deployed together. Modules can be consumed from any other template. They allow you to decompose your deployment into several templates and give you benefits like better code reuse and readability.
+Modules are separate Bicep templates, collections of resources deployed together. Modules can be consumed from any other template. They allow you to decompose a single template into several files. By using modules, you can reuse your code easily, and you can make your Bicep files more readable and understandable because they're focused on a specific job. Your main templates then compose multiple modules together. In this unit, you learn about some best practices to consider when you work with large Bicep files and want to consider creating modules.
 
-In your toy company project, you've been provisioning cloud resources using a single Bicep template. It's a common practice, especially when you start adopting infrastructure as code practice. Over time, such template can grow significantly. Eventually, could end up having a _monolithic_ code that is:
+## The benefits of modules
 
-- difficult to read and navigate
-- harder to maintain
-- forcing you to duplicate parts of your code, when you want to reuse it in other templates
+In your toy company, you've been provisioning cloud resources using lots of individual Bicep templates. It's common for each deployment to use a single large template, especially when you start adopting infrastructure as code. Over time, single templates can grow significantly. Eventually, you probably end up having _monolithic_ code that is difficult to read and navigate and harder to maintain. Additionally, this approach forces you to duplicate parts of your code when you want to reuse it in other templates, and then changing something requires you to search through multiple template files to find the 
 
-Bicep modules help you address these challenges by **splitting the code into smaller, more manageable files** that could be referenced from multiple templates.
+Bicep modules help you address these challenges by splitting the code into smaller, more manageable files that can be referenced from multiple templates.
 
-You were asked to review an existing Bicep template and identify opportunities to break the code down into more manageable parts.
+## How do you define a module?
 
-This diagram shows what the template deploys:
+TODO
+Module should have a clear purpose/job
+Contract - parameters and outputs
 
-:::image type="content" source="../media/2-environment-diagram.png" alt-text="Architecture diagram that shows a resource group containing several Azure resources." border="false":::
+Overkill to create a module for every resource, but sometimes a complex resource config might justify a module
+More common to create a module that has multiple resources
+
+## How do you identify the resources to split out?
+
+
+
+--- TODO below
 
 ## Visualize your template
 
@@ -27,9 +34,6 @@ You can use **Bicep Visualizer** to get such an overview. It's a integral part o
 You should get a similar view when you open our existing template:
 
 :::image type="content" source="../media/3-visualize-template.png" alt-text="A diagram showing all resources from the Bicep template and their dependencies.":::
-
-> [!NOTE]
-> Bicep Visualizer is available from version 0.4.x. Please make sure you have upgraded your VS Code extension and Bicep CLI.
 
 ## Identify clusters of resources
 
@@ -140,3 +144,13 @@ In our previous example, we used a module to deploy a "firewall rule" for Azure 
 - Ensure unique names for nested deployments (modules) - have a param with utc/utcNow() function and use it as a suffix in all nested deployment names. Also mention how deployment history gets overwritten, if the nested deployment name is "constant"
 
 -->
+
+
+
+--- TODO not used
+
+You were asked to review an existing Bicep template and identify opportunities to break the code down into more manageable parts.
+
+This diagram shows what the template deploys:
+
+:::image type="content" source="../media/2-environment-diagram.png" alt-text="Architecture diagram that shows a resource group containing several Azure resources." border="false":::

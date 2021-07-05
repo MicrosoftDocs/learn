@@ -34,6 +34,14 @@ Parameter files enable you to create a file to specify a set of parameters for y
 > [!TIP]
 > When you work with parameter files and other JSON files that include comments, you usually need to use the `.jsonc` file extension instead of `.json`. This helps Visual Studio Code and other tools understand that comments are allowed.
 
+## Add descriptions to resources
+
+Some resources support adding descriptions or other human-readable information into the resource itself. For example, Azure RBAC role assignments include a `description` property:
+
+::: code language="bicep" source="code/5-role-assignment-description.bicep" highlight="8" :::
+
+It's a good idea to use this property to explain the reason why you create each role assignment. Whenever someone audits the role assignments in Azure RBAC, they'll immediately understand the purpose of the role assignment.
+
 ## Apply resource tags
 
 Comments in your Bicep file don't appear anywhere in your deployed resources - they are just there to help you document your Bicep files. However, there are many situations where you need to track information about your deployed Azure resources, including:
