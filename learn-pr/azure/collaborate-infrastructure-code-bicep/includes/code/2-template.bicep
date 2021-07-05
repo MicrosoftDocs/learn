@@ -40,7 +40,7 @@ resource sqlserver 'Microsoft.Sql/servers@2019-06-01-preview' = {
   }
 }
 
-var databaseName = 'sampledb'
+var databaseName = 'ToyCompanyWebsite'
 resource sqlserverName_databaseName 'Microsoft.Sql/servers/databases@2020-08-01-preview' = {
   name: '${sqlserver.name}/${databaseName}'
   location: location
@@ -125,7 +125,7 @@ resource roleassignment 'Microsoft.Authorization/roleAssignments@2020-04-01-prev
 //}
 
 resource AppInsights_webSiteName 'Microsoft.Insights/components@2018-05-01-preview' = {
-  name: 'AppInsights${webSite.name}' // TODO reference cycle
+  name: 'AppInsights'
   location: location
   kind: 'web'
   properties: {
