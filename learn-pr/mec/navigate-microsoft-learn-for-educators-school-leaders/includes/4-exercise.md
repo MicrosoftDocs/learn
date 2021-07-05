@@ -8,7 +8,7 @@
 
     [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-exercise-unit-introduction-format)
 -->
-TODO: add your topic sentences(s)
+Collections allow you to easily curate and organize sets of content and share them with anyone.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -20,7 +20,8 @@ TODO: add your topic sentences(s)
 
     Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
 -->
-TODO: add your scenario sub-task
+Recall that you can find content about a particular product, topic or for a particular role by using the Learn "Browse all" page.
+
 TODO: add your scenario image
 
 <!-- 3. Task performed in the exercise ---------------------------------------------------------------------
@@ -33,7 +34,7 @@ TODO: add your scenario image
 
     Optional: a video that shows the end-state
 -->
-TODO: describe the end-state
+In this exercise, you will create a collection of professional development content centered around Collaboration that you can share with your peers.
 
 <!-- 4. Chunked steps -------------------------------------------------------------------------------------
 
@@ -56,19 +57,19 @@ TODO: describe the end-state
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
 
-## (Chunk 1 heading)
+## (Find your first module and create your collection)
 <!-- Introduction paragraph -->
 1. <!-- Step 1 -->
 1. <!-- Step 2 -->
 1. <!-- Step n -->
 
-## (Chunk 2 heading)
+## (Find a second module to add to your collection)
 <!-- Introduction paragraph -->
 1. <!-- Step 1 -->
 1. <!-- Step 2 -->
 1. <!-- Step n -->
 
-## (Chunk n heading)
+## (Share your collection)
 <!-- Introduction paragraph -->
 1. <!-- Step 1 -->
 1. <!-- Step 2 -->
