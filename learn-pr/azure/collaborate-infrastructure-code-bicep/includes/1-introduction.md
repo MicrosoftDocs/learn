@@ -21,18 +21,11 @@ By the end of this module, you'll be able to author Bicep templates in a way the
 
 ## Prerequisites
 
-- You should have familiarity with creating and deploying Bicep templates.
-- You should have some familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
-- You should have a basic understanding of Infrastructure as Code (IaC), and its benefits.
-- You should be familiar with basic concepts and commands of using Git as a distributed version control system (VCS).
-- You should have a basic experience with using GitHub.
+You should be familiar with Bicep structure and syntax, including parameters and modules.
 
-To follow along with the exercises in the module, you'll need:
-
-- [Visual Studio Code](https://code.visualstudio.com) installed locally.
-- The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed.
-- GitHub account
-- The [Git client](http://git-scm.com/downloads) installed locally
+To follow along with the exercises in the module, you'll need the following installed locally:
+- [Visual Studio Code](https://code.visualstudio.com)
+- The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
 - Either:
-  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools installed locally.
-  - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps) installed locally.
+  - The latest [Azure CLI](/cli/azure/install-azure-cli)
+  - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps)

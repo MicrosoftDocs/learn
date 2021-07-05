@@ -18,13 +18,14 @@ abstract: |
     - Document your code by using comments and other metadata
     - Convert a single large Bicep template to smaller, reusable modules
 prerequisites: |
-  - Familiarity with Bicep structure and syntax, including parameters and modules.
-  - Familiarity with Azure, including the Azure portal, subscriptions, and resource groups.
-  - [Visual Studio Code](https://code.visualstudio.com) installed locally.
-  - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed.
+  You should be familiar with Bicep structure and syntax, including parameters and modules.
+
+  To follow along with the exercises in the module, you'll need the following installed locally:
+  - [Visual Studio Code](https://code.visualstudio.com)
+  - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
   - Either:
-    - The latest [Azure CLI](/cli/azure/install-azure-cli) installed locally.
-    - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps) installed locally.
+    - The latest [Azure CLI](/cli/azure/install-azure-cli)
+    - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps)
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - intermediate
