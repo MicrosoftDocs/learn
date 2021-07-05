@@ -6,11 +6,11 @@ In this unit, you'll cover some considerations and methods that you can use to p
 
 You can use a framework of Assess, Migrate, Optimize, and Monitor as a path for migration. Each stage focuses on a particular aspect of ensuring the success of a migration.
 
-![Stages of migration, Assess, Migrate, Optimize, and Monitor](../media/2-planning-process.png)
+![Stages of migration, Assess, Migrate, Optimize, and Monitor.](../media/2-planning-process.png)
 
 Let's look at what's involved at each stage.
 
-![Assess stage](../media/2-assess.png)
+![Assess stage.](../media/2-assess.png)
 
 ### Discovery and evaluation
 
@@ -52,7 +52,7 @@ Several tools and services are available to help you plan and complete the four 
 | [Azure Monitor](/azure/azure-monitor/)                             | Monitor  | Enables you to monitor your entire estate's performance. Includes application-health monitoring via enhanced telemetry, and setting up notifications. |
 | [Azure Sentinel](https://azure.microsoft.com/services/azure-sentinel/)                       | Monitor  | Provides intelligent security analytics for your applications. |
 
-![Migrate stage](../media/2-migrate.png)
+![Migrate stage.](../media/2-migrate.png)
 
 ### Deploy cloud infrastructure targets
 
@@ -82,7 +82,7 @@ For the database migrations, the high-level steps are:
 
 After all migrated workloads have been tested and verified as successfully migrated to Azure, you can decommission all your on-premises systems. Even after you decommission them, it can be useful to keep backups and archive data from the migrated systems. This practice gives you a historical archive of data in case it's needed. This data could be stored on-premises, or in a cloud-storage service such as Azure Blob storage.
 
-![Optimize stage](../media/2-optimize.png)
+![Optimize stage.](../media/2-optimize.png)
 
 After your services are migrated, it's important to optimize them to ensure that they're running as efficiently as possible from a cost and performance standpoint.
 
@@ -90,13 +90,13 @@ After your services are migrated, it's important to optimize them to ensure that
 
 Use Azure Cost Management to start analyzing your Azure costs at different management scopes. For example, by choosing a subscription in the portal, you can see a breakdown of all the resources for that subscription. Or, you could view a resource group to see all the costs associated with all the resources in just the selected group:
 
-![Screenshot of the cost analysis section of the Azure portal, showing a resource group](../media/2-cost-analysis.png)
+![Screenshot of the cost analysis section of the Azure portal, showing a resource group.](../media/2-cost-analysis.png)
 
 ### Review opportunities to improve
 
 Azure Cost Management shows you cost-reduction advice from Azure Advisor. The advice includes suggestions like reducing the performance of underused VMs, making use of additional discounts, or reserving resources instead of paying as you go. Azure Advisor also shows you recommendations for network security, high availability, and performance. Review the recommendations that Advisor presents to further optimize your environment.
 
-![Monitor stage](../media/2-monitor.png)
+![Monitor stage.](../media/2-monitor.png)
 
 ### Integrate health and performance monitoring
 

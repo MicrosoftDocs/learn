@@ -64,7 +64,7 @@ To proactively address this, GitHub looks for a `CONTRIBUTING.md` file in the ro
 
 If a `CONTRIBUTING.md` exists, GitHub will present a link to it when users create issues or pull requests to encourage them to follow it.
 
-![Contributing guidelines links](../media/2-contributing-guidelines.png)
+![Contributing guidelines links.](../media/2-contributing-guidelines.png)
 
 Check out some [Awesome CONTRIBUTING.md examples](https://github.com/mntnr/awesome-contributing?azure-portal=true)
 
@@ -74,7 +74,7 @@ GitHub supports starter templates for new issues and pull requests. Use these to
 
 For example, if your project has `.github/ISSUE_TEMPLATE.md`, anytime a user starts the process of creating an issue, they will see this content. Rather than having to constantly reference the required details from a `CONTRIBUTING.md`, they'll be able to just fill out the issue like a form using the template text.
 
-![A new issue using the template](../media/2-new-issue-template.png)
+![A new issue using the template.](../media/2-new-issue-template.png)
 
 It's the same for pull requests, except that the path is `.github/PULL_REQUEST_TEMPLATE.md`.
 

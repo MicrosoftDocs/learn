@@ -1,4 +1,4 @@
-![External Entity Element](../media/external-entity.png)
+![External Entity Element.](../media/external-entity.png)
 
 Depicted by a square, an external entity can be a process, data store, or even a full-fledged system outside of your direct control.
 

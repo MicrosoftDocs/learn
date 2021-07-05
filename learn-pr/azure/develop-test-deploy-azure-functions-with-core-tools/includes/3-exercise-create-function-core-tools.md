@@ -21,11 +21,13 @@ In this exercise, we'll use Cloud Shell to develop our function. Cloud Shell sys
     func init
     ```
 
-1. When prompted to select a worker runtime, choose **node** (enter **2**).
+1. When prompted to select a worker runtime, select **node** (enter **2**).
 
-1. When prompted to select a language, choose **javascript** (enter **1**).
+1. When prompted to select a language, select **javascript** (enter **1**).
 
-    The output from the tool will indicate the files being written to disk. You'll see **host.json** and **local.settings.json**, as well as a few other files. **package.json** is a JavaScript-specific file that keeps track of any packages you install and use within your code. **.gitignore** and **extensions.json** are configuration files that can be used by the Git version control tool and Visual Studio Code, respectively, but you can ignore them for now.
+    The output from the tool will indicate the files being written to disk. You'll see **host.json** and **local.settings.json**, as well as a few other files:
+    - **package.json** is a JavaScript-specific file that keeps track of any packages you install and use within your code.
+    - **.gitignore** and **extensions.json** are configuration files that can be used by the Git version control tool and Visual Studio Code, respectively, but you can ignore them for now.
 
 ## Create an HTTP-triggered function
 
@@ -39,7 +41,7 @@ Let's create our function!
 
     Note that we're running `func new` from inside the `loan-wizard` project folder we just created, which is important.
 
-1. When prompted to select a template, select the **HTTP trigger** (enter **8**) template option.
+1. When prompted to select a template, select **HTTP trigger** (enter **8**).
 
 1. When prompted, enter **simple-interest** as the function name.
 
@@ -49,7 +51,7 @@ Let's create our function!
     code .
     ```
 
-    ![Viewing the simple-interest function in Cloud Shell code editor](../media/3-functions-project-view.png)
+    ![Viewing the simple-interest function in Cloud Shell code editor.](../media/3-functions-project-view.png)
 
     The wizard has created a new folder in our functions project called **simple-interest**, and generated default **index.js** and **function.json** files in it. If you like, take a moment now to explore the project files in the editor.
 
@@ -57,7 +59,7 @@ Let's create our function!
 
 The function implementation that the Core Tools created for us in **index.js** looks for an input called `name` in the query string or the body of the inbound HTTP request and returns the string `Hello {name}`. This is a good illustration about how to use an HTTP trigger, but we want to replace it with our simple interest implementation.
 
-1. In the code editor's Files pane, expand the `simple-interest` folder and select `index.js` to open it in the editor.
+1. In the code editor's **Files** pane, expand the `simple-interest` folder, and select `index.js` to open it in the editor.
 
 2. Replace the full contents of `index.js` with the following code:
 
@@ -101,7 +103,7 @@ To run our new function locally and try it out, we'll use `func start` to start 
 
     This localhost URL is not published to the web, it's only reachable from tools running in Cloud Shell. We're going to use a command-line tool, `curl`, to interact with our function. To do that, we need to restart the Functions host as a background process so we can use the command line while it's running.
 
-    If you were using the Core Tools from your own computer, you probably wouldn't need to do this. You could use `curl` from a second terminal window, and the output produced by the Core Tools would be displayed in real time in the first window. In Cloud Shell, we are limited to a single terminal, so this technique is necessary for this tutorial.
+    If you were using the Core Tools from your own computer, you probably wouldn't need to do this. You could use `curl` from a second terminal window, and the output produced by the Core Tools would appear in real time in the first window. In Cloud Shell, we are limited to a single terminal, so this technique is necessary for this tutorial.
 
 1. Press <kbd>Ctrl+C</kbd> to stop the Functions host.
 
@@ -113,7 +115,7 @@ To run our new function locally and try it out, we'll use `func start` to start 
 
     You can ignore the output of this command. The Functions host is now running exactly as before, but its output is being sent to the file `~/output.txt`, and we can continue to use the command line while it's running.
 
-1. Run this command to send an HTTP GET request to our locally running function.
+1. Run the following command to send an HTTP GET request to our locally running function.
 
     ```bash
     curl "http://localhost:7071/api/simple-interest" -w "\n"

@@ -88,12 +88,12 @@ Next, create a Windows Server VM to simulate an on-premises machine running in t
 
     :::image type="content" source="../media/4-connect-share.png" alt-text="Screenshot of the data file share and its connection commands." lightbox="../media/4-connect-share.png#lightbox":::
 
-
 1. On your virtual machine, right-click **Start** and select **Windows PowerShell (Admin)**.
 
     :::image type="content" source="../media/4-connect-powershell-admin.pngxxx" alt-text="Screenshot of the Windows virtual machine showing the contextual menu of the Start menu with Windows PowerShell (Admin) highlighted." lightbox="../media/4-connect-powershell-admin.png#lightbox":::
 
 1. In the PowerShell window, paste the script you copied.
+
 1. Return to the Azure portal, go back to the file shares, and select the **reports** file share.
 
     :::image type="content" source="../media/4-navigate-back.png" alt-text="Screenshot of how to go back to the file shares." lightbox="../media/4-navigate-back.png#lightbox":::

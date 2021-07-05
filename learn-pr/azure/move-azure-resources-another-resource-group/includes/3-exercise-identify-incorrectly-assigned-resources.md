@@ -37,12 +37,12 @@ Now, use the Azure portal to apply tags to resources so you can identify and loc
 1. Select the **production-learn-rg** resource group.
 1. Select the check box next to the **Name** field for both storage accounts you created.
 
-    ![Screenshot that shows your development resources selected](../media/3-select-dev-resources.png)
+    ![Screenshot that shows your development resources selected.](../media/3-select-dev-resources.png)
 
 1. Select **Assign tags**.
 1. Enter the following values:
 
-    ![Screenshot that shows the Assign tags pane](../media/3-assign-tags.png)
+    ![Screenshot that shows the Assign tags pane.](../media/3-assign-tags.png)
 
     |Field |Value  |
     |---------|---------|
@@ -63,7 +63,7 @@ Now you'll filter your resources and find your development tagged resources.
 
 1. At the top of the Azure portal, search on **tags**.
 
-    ![Screenshot that shows the search for tags](../media/3-search-tags.png)
+    ![Screenshot that shows the search for tags.](../media/3-search-tags.png)
 
 1. Select **Tags**.
 1. Select the **environment:development** tag. 

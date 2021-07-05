@@ -202,11 +202,11 @@ As previously described, even though you were just editing the `app.js` file, to
 
    The webpage opens in your default browser.
 
-   :::image type="content" source="../media/chrome-light-theme-with-button.png" alt-text="Screenshot of website with the button":::
+   :::image type="content" source="../media/chrome-light-theme-with-button.png" alt-text="Screenshot of website with the button.":::
 
 1. Select the new **Dark** button to switch to the dark theme.
 
-   :::image type="content" source="../media/chrome-dark-theme-with-button.png" alt-text="Screenshot of website after switching to dark theme":::
+   :::image type="content" source="../media/chrome-dark-theme-with-button.png" alt-text="Screenshot of website after switching to dark theme.":::
 
 1. Make sure that everything looks correct and behaves as expected. If not, you should review the preceding steps to see if you missed something
 
@@ -228,7 +228,7 @@ As previously described, even though you were just editing the `app.js` file, to
 
 1. Select the **Console** tab to see the `console.log` message, "current class name: light-theme dark-theme".
 
-:::image type="content" source="../media/chrome-console-output.png" alt-text="Screenshot of console message in Chrome":::
+:::image type="content" source="../media/chrome-console-output.png" alt-text="Screenshot of console message in Chrome.":::
 
 Using the console, you get an interesting look at how the CSS theme switching is handled. Both class names are applied to the `<body>` element when you switch to dark theme. However, it is the last class name applied, in this example the the dark theme, which takes precedence.
 

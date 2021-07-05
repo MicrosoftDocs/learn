@@ -10,7 +10,7 @@ In this exercise, you'll see how to restore a successful backup to replace a VM 
 
 1. In the Azure portal, search for and select **Storage accounts**.
 
-    ![Select storage accounts](../media/6-select-storage-accounts.png)
+    ![Select storage accounts.](../media/6-select-storage-accounts.png)
 
 1. Select **+ Add**, and then use the following information to create a storage account:
 
@@ -20,7 +20,7 @@ In this exercise, you'll see how to restore a successful backup to replace a VM 
     | **Storage account name** | Enter a unique name like **restorestagingYYYYMMDD**, where YYYYMMDD is replaced with today's date. |
     | **Location** | Select **(US) West US 2**. |
 
-    ![Specify storage account options](../media/6-specify-storage-account-options.png)
+    ![Specify storage account options.](../media/6-specify-storage-account-options.png)
 
 1. Select **Review + create**.
 
@@ -32,21 +32,21 @@ In this exercise, you'll see how to restore a successful backup to replace a VM 
 
 A backup can't be restored if the VM is allocated and running. If you forget to stop the VM, you'll see an error that's similar to the following example.
 
-![Screenshot that shows the error details when a VM is running](../media/6-restore-error.png)
+![Screenshot that shows the error details when a VM is running.](../media/6-restore-error.png)
 
 To prevent this error, use the following steps:
 
 1. In the Azure portal, search for and select **Virtual machines**, and then select **NW-APP01**.
 
-    ![Screenshot of the VM overview page](../media/6-vm-overview.png)
+    ![Screenshot of the VM overview page.](../media/6-vm-overview.png)
 
 1. Select **Stop** to shut down the VM.
 
-    ![Screenshot of stopping the VM](../media/6-stop-vm.png)
+    ![Screenshot of stopping the VM.](../media/6-stop-vm.png)
 
 1. In the **Stop this virtual machine** dialog box, select **OK**.
 
-    ![Screenshot of the prompt for stopping this VM](../media/6-stop-this-vm.png)
+    ![Screenshot of the prompt for stopping this VM.](../media/6-stop-this-vm.png)
 
 ### Restore the VM
 
@@ -58,11 +58,11 @@ The Recovery Services vaults are accessible at the subscription level. When you'
 
 1. To restore the virtual machine, select **Restore VM**.
 
-    ![Screenshot of "Restore VM"](../media/6-restore-vm.png)
+    ![Screenshot of "Restore VM."](../media/6-restore-vm.png)
 
 1. Select the restore point to use for the recovery, and then select **OK**.
 
-    ![Screenshot of selecting a restore point](../media/6-restore-point.png)
+    ![Screenshot of selecting a restore point.](../media/6-restore-point.png)
 
 1. In the **Restore Configuration** window, select **Replace Existing** and use the following information to configure the restore:
 
@@ -71,7 +71,7 @@ The Recovery Services vaults are accessible at the subscription level. When you'
     | **Restore Type** | Select **Replace Disk(s)**. This is the restore point that will be used to replace the existing VM's disks. |
     | **Staging Location** | Select the storage account that you created previously. |
 
-    ![Screenshot that shows the restore configuration options](../media/6-restore-configuration.png)
+    ![Screenshot that shows the restore configuration options.](../media/6-restore-configuration.png)
 
 1. Select **OK**.
 
@@ -81,7 +81,7 @@ The Recovery Services vaults are accessible at the subscription level. When you'
 
 1. At the top of the page, select **View all Jobs**.
 
-    ![Screenshot of the restore progress](../media/6-restore-progress.png)
+    ![Screenshot of the restore progress.](../media/6-restore-progress.png)
 
 1. Select the restore job. You can now monitor the progress of the VM restore:
     - **Job Progress**: Real-time percentage of the job as a whole.

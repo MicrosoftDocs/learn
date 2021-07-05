@@ -132,7 +132,7 @@ As an admin, you might want to review and audit who is accessing the databases a
 
 1. Select **Add**.  
 
-    :::image type="content" source="../media/9-file-audit-add.png" alt-text="Add a new file":::  
+    :::image type="content" source="../media/9-file-audit-add.png" alt-text="Add a new file.":::  
 
 1. Select **Add from Azure Blob storage**, and then select **Connect**.  
 

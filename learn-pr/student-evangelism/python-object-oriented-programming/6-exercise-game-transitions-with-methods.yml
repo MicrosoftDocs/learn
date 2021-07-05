@@ -5,7 +5,7 @@ metadata:
   title: Exercise - Add behavior to your game
   description: In this exercise, you add behavior to your game project. You add methods to your objects and also implement them to get a fully working rock, paper, scissors game.
   author: softchris
-  ms.author: shanama
+  ms.author: chnoring
   ms.date: 12/01/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

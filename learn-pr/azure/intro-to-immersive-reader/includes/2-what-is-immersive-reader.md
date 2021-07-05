@@ -4,7 +4,7 @@ Immersive Reader embeds text reading and cognition capabilities on top of existi
 
 Immersive Reader helps readers build confidence, by breaking down content into more manageable chunks. Words are broken down into syllables and highlighted as they're read. What's more, you can change the color of words according to their grammar.
 
-![Immersive reader breaking down content into manageable chunks](../media/large-2.jpeg)
+![Immersive reader breaking down content into manageable chunks.](../media/large-2.jpeg)
 
 **For people who struggle with concentration**, Immersive Reader can be put into focus mode or line focus to take away distractions. Background, text color, and font spacing can also be changed to mitigate sensory overload, and increase attention-spans and comprehension.
 
@@ -23,7 +23,7 @@ Immersive reader is also available for anyone who finds math difficult. By combi
 
 :::column-end:::
 :::column span="1":::
-![Math functionality](../media/math.gif)
+![Math functionality.](../media/math.gif)
 :::column-end:::
 :::row-end:::
 
@@ -36,8 +36,8 @@ Immersive Reader is a great tool for new language learners, as it has real-time 
 
 :::column-end:::
 :::column span="1":::
-![Translation options](../media/translate.png)
+![Translation options.](../media/translate.png)
 :::column-end:::
 :::row-end:::
 
-![Immersive reader translation functionality](../media/translate.gif)
+![Immersive reader translation functionality.](../media/translate.gif)

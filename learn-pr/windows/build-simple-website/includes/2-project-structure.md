@@ -8,13 +8,13 @@ In this unit, you'll create a simple project structure using Visual Studio Code 
 
    When you open Visual Studio Code, the **Welcome** page opens. Notice that you can create a new file or open a folder in the **Start** section.
 
-   :::image type="content" source="../media/vs-code-welcome.png" alt-text="Screenshot of Visual Studio Code welcome window":::
+   :::image type="content" source="../media/vs-code-welcome.png" alt-text="Screenshot of Visual Studio Code welcome window.":::
 
    If the **Welcome** page isn't visible, you can display the **Welcome** window by selecting **Help > Welcome** on the VS Code menu. (Alternatively, you can display the **Welcome** window using the VS Code command palette. You can open the command palette by using the keyboard shortcut <kbd>Shift+Ctrl+P</kbd> on a Windows computer or <kbd>Shift+Cmd+P</kbd> on macOS, or by selecting **View > Command Palette** from the VS Code menu. When the command palette is displayed, enter **>Help: Welcome** in the search field to open the **Welcome** window.)
 
 1. Select **Open folder** in the **Start** section of the **Welcome** page, or select **File > Open Folder** from the VS Code menu.
 
-   :::image type="content" source="../media/vs-code-open-folder.png" alt-text="Screenshot of Visual Studio Code open folder":::
+   :::image type="content" source="../media/vs-code-open-folder.png" alt-text="Screenshot of Visual Studio Code open folder.":::
 
    When opening a folder, the operating system provides a button to create a **New Folder**.
 
@@ -38,7 +38,7 @@ In this unit, you'll create a simple project structure using Visual Studio Code 
 
    Under the folder name in the Explorer window, you see the three files that comprise your website.
 
-   :::image type="content" source="../media/vs-code-explorer-view.png" alt-text="Screenshot of your files in VS Code Explorer view":::
+   :::image type="content" source="../media/vs-code-explorer-view.png" alt-text="Screenshot of your files in VS Code Explorer view.":::
 
 You could build a website by including all of your HTML, CSS styles, and JavaScript code within a single file. However, in this exercise you're using an HTML file for your content and page structure, with a CSS file for your presentation and styling, and a JavaScript file for your behaviors and interactivity.
 
@@ -58,7 +58,7 @@ To install this extension, use the following steps:
 
 1. Select **Install**, and VS Code will install the extension.
 
-   :::image type="content" source="../media/vs-code-get-extension.png" alt-text="Screenshot of finding a VS Code extension":::
+   :::image type="content" source="../media/vs-code-get-extension.png" alt-text="Screenshot of finding a VS Code extension.":::
 
 1. Switch back to the **Explorer** window by clicking the top icon in the VS Code **Activity Bar**, or use <kbd>Control+Shift-E</kbd> on Windows or <kbd>Command+Shift-E</kbd> on macOS.
 

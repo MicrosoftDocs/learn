@@ -5,7 +5,7 @@ metadata:
   description: Learn how to set up the built-in Django admin site and configure users for the site.
   ms.date: 2/26/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Work with the Django admin site

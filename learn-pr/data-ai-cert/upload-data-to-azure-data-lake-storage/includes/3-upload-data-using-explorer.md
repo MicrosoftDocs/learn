@@ -22,20 +22,20 @@ To get started using Storage Explorer, first add your Azure account:
 
 1. In Storage Explorer, on the left, select the Account button.
 
-    ![Screenshot showing account management in Storage Explorer](../media/3-account-management.png)
+    ![Screenshot showing account management in Storage Explorer.](../media/3-account-management.png)
 
 1. You can connect your storage account in multiple ways: 
    - Sign in with your Azure account to access all of your subscriptions.
    - Use a connection string to access a specific Azure Storage account.
    - Use a storage account name and access key.
 
-     ![Screenshot showing the ways to connect to Azure Storage](../media/3-connect-to-azure-storage.png)
+     ![Screenshot showing the ways to connect to Azure Storage.](../media/3-connect-to-azure-storage.png)
 
 1. After you sign in, select the subscriptions you want to work with. Make sure to select the subscription in which you created the Azure Storage account.
 
 The app shows a list of storage areas you can work with from your subscriptions. Your Azure Storage account should appear on the list.
 
-![Screenshot showing available storage areas in Storage Explorer](../media/3-main-app-display.png)
+![Screenshot showing available storage areas in Storage Explorer.](../media/3-main-app-display.png)
 
 ## Create a file system in Storage Explorer
 
@@ -59,7 +59,7 @@ A folder helps provide a hierarchical structure for your data. You can create mu
 
 1. On the menu at the top of Storage Explorer, select **New Folder**.
 
-    ![The New Folder button in Storage Explorer](../media/3-create-new-folder.png)
+    ![The New Folder button in Storage Explorer.](../media/3-create-new-folder.png)
 
 1. Name the folder **sample**. Then select **OK** to create the directory. If you get a message that asks if you want to refresh your view, select **Yes**.
 
@@ -94,7 +94,7 @@ You can upload files and folders from your local machine to directories in your 
 1. Select the **sales.txt** file you created earlier.
 1. In the **Upload Files** dialog box, ensure that the destination directory is **sample/data**. Then select **Upload**.
 
-    ![Screenshot of the Upload Files dialog box in Storage Explorer](../media/3-upload-file.png)
+    ![Screenshot of the Upload Files dialog box in Storage Explorer.](../media/3-upload-file.png)
 
 When you finish, the file appears on the list.
 
