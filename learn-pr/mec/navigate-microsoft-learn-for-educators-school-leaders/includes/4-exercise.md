@@ -88,7 +88,7 @@ We will now find a second piece of content that we can add to our collection. Th
 1. A pop-up modal will appear again, this time select the collection that you created "My Classroom Collaboration Training" and then press "Save".
 1. Great job! This module has now been saved to your collection.
 
-## Share your collection
+## Step 3: Share your collection
 Now that we have a collection with some interesting learning paths and modules in it. We can share it with our colleagues.
 
 1. First, go to the "Collections" area of your profile by selecting the avatar image in the top right hand corner of the Learn screen and then selecting "Collections" from the dropdown menu.
