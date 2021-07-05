@@ -129,3 +129,27 @@ You can also create a role assignment at the same time that you create a service
 :::code language="azurepowershell" source="code/5-create-sp-rbac.ps1" highlight="3-4" :::
 
 ::: zone-end
+
+## Grant access using Bicep
+
+You can grant a service principal access to Azure resources by using Bicep, too. You might do this if you initialize your resource groups using Bicep, and then deploy the resources into the resource group using a service principal. Here's an example Bicep definition for the role assignment above:
+
+```bicep
+resource roleAssignment 'Microsoft.Authorization/roleAssignments@2020-04-01-preview' = {
+  name: guid(principalId, roleDefinitionId, resourceGroup().id)
+  properties: {
+    principalType: 'ServicePrincipal'
+    roleDefinitionId: subscriptionResourceId('Microsoft.Authorization/roleDefinitions', roleDefinitionId)
+    principalId: principalId
+    description: 'The deployment pipeline for the company\'s website needs to be able to create resources within the resource group.'
+  }
+}
+```
+
+Let's look at each argument:
+
+- `name` is a unique identifier for the role assignment. This must be in the form of a globally unique identifier (GUID). It's a good practice to use the `guid()` function in Bicep to create a GUID, and to use the principal ID, role definition ID, and scope as the seed arguments for the function to ensure you create a name that's unique for each role assignment.
+- `principalType` should be set to `ServicePrincipal`, which helps Azure RBAC to ensure that the service principal has been fully created in Azure AD before it attempts to assign the role.
+- `roleDefinitionId` is the fully qualified resource ID for the role definition you're assigning. Usually this is a built-in role, and you find the role definition ID in the [Azure built-in roles documentation](/azure/role-based-access-control/built-in-roles). For example, the _Contributor_ role has the role definition ID `b24988ac-6180-42a0-ab88-20f7382dd24c`, and when you specify it in your Bicep file, you express this using a fully qualified resource ID, such as `/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c`.
+- `principalId` is the service principal's object ID. Make sure you don't use the application ID or the application registration's object ID.
+- `description` is a human-readable description of the role assignment.
