@@ -55,7 +55,7 @@ Let's say we want to create a module for our _backend_ and include three resourc
 
 It's a good start but our module won't work yet. Thanks to IntelliSense in VS Code, we can immediately see our module is missing several parameters and variables. As a quick fix, we can copy all highlighted parameters and variables from the snippet below to our module:
 
-::: code language="plaintext" source="code/3-params-vars.bicep" highlight="1,21,23-24,31-32" :::
+::: code language="plaintext" source="code/TODO-params-vars.bicep" highlight="1,21,23-24,31-32" :::
 
 The module now declares its contract with three input parameters. Two of them are mandatory, as they don't have any default value.
 

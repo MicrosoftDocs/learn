@@ -7,9 +7,9 @@ Bicep enables you to add _comments_ to your code. Comments are human-readable te
 Bicep supports two types of comments:
 
 - **Single-line comments** start with a `//` character sequence, and continue to the end of the line, like this:
-  ::: code language="bicep" source="code/4-comments.bicep" range="1-8" highlight="5" :::
+  ::: code language="bicep" source="code/5-comments.bicep" range="1-8" highlight="5" :::
 - **Multi-line comments** use the `/*` and `*/` character sequences to surround your comment, and can span multiple lines, like this:
-  ::: code language="bicep" source="code/4-comments.bicep" range="10-13" :::
+  ::: code language="bicep" source="code/5-comments.bicep" range="10-13" :::
 
 > [!TIP]
 > Avoid using comments for obvious and clear parts of your code. Focus on documenting unique logic and complex expressions. Having too many comments actually reduces your code's readability!
@@ -45,11 +45,11 @@ Comments in your Bicep file don't appear anywhere in your deployed resources - t
 
 Resource _tags_ enable you to store important metadata about resources. You define resource tags in your Bicep code, and Azure stores the information with the resource when it's deployed:
 
-::: code language="bicep" source="code/4-tags.bicep" range="5-21" highlight="4-9" :::
+::: code language="bicep" source="code/5-tags.bicep" range="5-21" highlight="4-9" :::
 
 You can query a resource's tags using tools like Azure PowerShell and the Azure CLI, and you can see tags on the Azure portal:
 
-:::image type="content" source="../media/4-tags-portal.png" alt-text="Screenshot of the Azure Portal for a storage account, showing the location of tags." border="true":::
+:::image type="content" source="../media/5-tags-portal.png" alt-text="Screenshot of the Azure Portal for a storage account, showing the location of tags." border="true":::
 
 It's common to use the same set of tags for all of your resources, so it's often a good idea to define your tags as a parameter or variable, and then reuse them on each resource:
 

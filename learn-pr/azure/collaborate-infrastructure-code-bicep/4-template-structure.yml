@@ -10,6 +10,6 @@ metadata:
   ms.author: dapazd
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
-durationInMinutes: 8 # user input: the estimate time to complete the unit
+durationInMinutes: 6
 content: |
   [!include[](includes/4-template-structure.md)]
