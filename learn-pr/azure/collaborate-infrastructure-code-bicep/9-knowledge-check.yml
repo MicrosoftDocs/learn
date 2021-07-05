@@ -12,16 +12,10 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
+  [!include[](includes/9-knowledge-check.md)]
 quiz:
   questions:
-  - content: |
-      You've been asked to help your colleague with this Bicep template:
-
-      ::: code language="bicep" source="code/9-template.bicep" :::
-
-      You are refactoring the template to make it easier for other people in your organization to use.
-
-      Which of these steps should you take?
+  - content: Which of these steps should you take?
     choices:
     - content: Rename the `number`, `name`, and `name2` parameters.
       isCorrect: true
@@ -32,6 +26,17 @@ quiz:
     - content: "Create a new output to pass the the storage account key back to the user."
       isCorrect: false
       explanation: "Incorrect. You shouldn't emit secrets as outputs. Outputs aren't designed to handle secure data."
+  - content: "How do you ensure that your template's users provide valid inputs for your parameters?"
+    choices:
+    - content: "You apply parameter decorators."
+      isCorrect: true
+      explanation: "Correct. Parameter decorators like `@maxLength` validate the input for each parameter."
+    - content: "You apply Azure RBAC on your deployment scope."
+      isCorrect: false
+      explanation: "Incorrect. Azure RBAC defines the permissions users have on to access a given resource or group of resources. It doesn't validate the parameter values that your template users provide."
+    - content: "You hard-code as many values into templates as possible."
+      isCorrect: false
+      explanation: "Incorrect. While hardcoding values prevent users from providing incorrect input, you can enable your template's users to provide input through parameters, and validate it using parameter decorators."
   - content: "What is one of the benefits of using configuration sets for your Bicep templates?"
     choices:
     - content: "You can expose all of your resources' properties to your template's users as parameters."
@@ -54,16 +59,5 @@ quiz:
     - content: "Parameters for modules are not supported."
       isCorrect: false
       explanation: "Incorrect. Modules can include parameters. Their values are populated by referencing using the `params` property when you declare the module."
-  - content: "How do you ensure that your template's users provide valid parameter inputs?"
-    choices:
-    - content: "You apply parameter decorators."
-      isCorrect: true
-      explanation: "Correct. Parameter decorators like `@maxLength` validate the input for each parameter."
-    - content: "You apply Azure RBAC on your deployment scope."
-      isCorrect: false
-      explanation: "Incorrect. Azure RBAC defines the permissions users have on to access a given resource or group of resources. It doesn't validate the parameter values that your template users provide."
-    - content: "You hard-code as many values into templates as possible."
-      isCorrect: false
-      explanation: "Incorrect. While hardcoding values prevent users from providing incorrect input, you can enable your template's users to provide input through parameters, and validate it using parameter decorators."
 
 # TODO one more question - an applied situation?
