@@ -28,17 +28,17 @@ durationInMinutes: 10 # user input: the estimate time to complete the unit
 content: |
 quiz:
   questions:
-  - content: "Under which tab in your profile can you find your badges?"
+  - content: "Under which area of your profile can you find your badges?"
     choices:
-    - content: "achievements"
+    - content: "Achievements"
       isCorrect: true
-      explanation: "The *achievements* tab is where you can find both your badges and trophies for completed modules and learning paths respectively"
-    - content: "collections"
+      explanation: "The *Achievements* tab is where you can find both your badges and trophies for completed modules and learning paths respectively"
+    - content: "Certifications"
       isCorrect: false
-      explanation: "Collections is where you can find modules and learning paths that you have saved into organized lists."
-    - content: "activities"
+      explanation: "Certifications are where you can find the official Microsoft certifications that you have achieved by passing the required assessments."
+    - content: "Activities"
       isCorrect: false
-      explanation: "Activities is where you can find your in-progress and completed modules and learning paths"
+      explanation: "Activities is where you can find your in-progress and completed modules and learning paths."
   - content: ""
     choices:
     - content: ""
