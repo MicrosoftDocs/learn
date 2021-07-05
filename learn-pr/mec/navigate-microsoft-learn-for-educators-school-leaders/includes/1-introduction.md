@@ -11,7 +11,7 @@
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
 -->
 
-As schools around the world respond to COVID-19, and increase their use of technology in the classroom, the need for confidence using these technologies has never been more urgent. As an educator, you want to train yourself on the latest educational tools like Microsoft Teams in order to help support your teaching and ensure the best learning outcomes for your students. Microsoft provides an excellent, completely free, platform to help you train to use the classroom tools called Microsoft Learn.
+As schools around the world respond to COVID-19 and increase their use of technology in the classroom, the need for confidence using these technologies has never been more urgent. As an educator, you want to train yourself on the latest educational tools like Microsoft Teams in order to help support your teaching and ensure the best learning outcomes for your students. Microsoft provides an excellent, completely free, platform to help you train to use the classroom tools called Microsoft Learn.
 
 ## What is Microsoft Learn?
 

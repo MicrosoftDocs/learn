@@ -43,13 +43,10 @@ To browse content go to the Learn "browse all" page at [docs.microsoft.com/learn
 
 To use the filters, select on of the boxes under product, role, level, or type, in order to see the list of content pertaining to that category.
 
-*Product* is where you can find educational tools such as Microsoft Teams, Immersive Reader, Reading Progress, OneNote, Minecraft, Flipgrid, Windows, Powerpoint, Forms, Edge, OneDrive, Sway, and many more.
-
-*Role* is where you can select the category that fits you best as either a *K-12 Educator, Higher-ed Educator, School Leader*, or *Parent & Guardian*.
-
-*Level* is where you can select from the appropriate experience level with the content as either a *beginner*, *intermediate* or *advanced*.
-
-*Type* is where you can select from either Modules or Learning Paths.
+- *Product* is where you can find educational tools such as Microsoft Teams, Immersive Reader, Reading Progress, OneNote, Minecraft, Flipgrid, Windows, Powerpoint, Forms, Edge, OneDrive, Sway, and many more.
+- *Role* is where you can select the category that fits you best as either a *K-12 Educator, Higher-ed Educator, School Leader*, or *Parent & Guardian*.
+- *Level* is where you can select from the appropriate experience level with the content as either a *beginner*, *intermediate* or *advanced*.
+- *Type* is where you can select from either Modules or Learning Paths.
 
 [Image]
 
@@ -59,12 +56,6 @@ You can also search by keyword in the search bar displayed on the page.
 
 > [!CAUTION]
 > The search bar displayed in the top right of the page header will search all of Docs.microsoft.com which includes more than just Learn. It includes Documentation, Certifications, Q&A, Code Samples and more. To search just Learn modules and learning paths, make sure to use the correct search bar on the "Browse all" page detailed above.
-
-## Create and share collections of content
-
-If you find a module or learning path interesting but don’t want to start it at the moment, you can create a collection to save it to. You have a default collection called “favorites”, and you can also create new collections as you need. You can also share your collections with your peers to learn together, or even your students to help them learn on their own. All your collections can be found in your profile under the 'collections' tab.
-
-[Image]
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------
 
