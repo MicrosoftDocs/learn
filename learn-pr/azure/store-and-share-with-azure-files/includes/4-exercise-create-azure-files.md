@@ -90,7 +90,7 @@ Next, create a Windows Server VM to simulate an on-premises machine running in t
 
 1. On your virtual machine, right-click **Start** and select **Windows PowerShell (Admin)**.
 
-    :::image type="content" source="../media/4-connect-powershell-admin.pngxxx" alt-text="Screenshot of the Windows virtual machine showing the contextual menu of the Start menu with Windows PowerShell (Admin) highlighted." lightbox="../media/4-connect-powershell-admin.png#lightbox":::
+    :::image type="content" source="../media/4-connect-powershell-admin.png" alt-text="Screenshot of the Windows virtual machine showing the contextual menu of the Start menu with Windows PowerShell (Admin) highlighted." lightbox="../media/4-connect-powershell-admin.png#lightbox":::
 
 1. In the PowerShell window, paste the script you copied.
 
