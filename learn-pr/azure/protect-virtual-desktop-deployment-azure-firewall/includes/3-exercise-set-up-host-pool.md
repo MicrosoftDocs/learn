@@ -1,6 +1,6 @@
 In the accounting firm scenario, your organization is using Azure Virtual Desktop to provide your workforce access to virtualized desktops and apps.
 
-So, in this unit, you create a host pool and add a VM that will act as a session host. To avoid having to domain join the VM, you manually install the Azure Virtual Desktop agent and boot loader to register the VM to the host pool. You'll then have a Azure Virtual Desktop deployment that you can use in the rest of the module exercises.
+So, in this unit, you create a host pool and add a VM that will act as a session host. To avoid having to domain join the VM, you manually install the Azure Virtual Desktop agent and boot loader to register the VM to the host pool. You'll then have an Azure Virtual Desktop deployment that you can use in the rest of the module exercises.
 
 [!include[](../../../includes/azure-subscription-prerequisite.md)]
 
@@ -41,6 +41,8 @@ Next, let's create a host pool that will contain the VM you'll create later in t
    |Host pool type     |  Pooled  |
    |Load balancing algorithm    | Breadth-first |
    |Max session limit    |2|
+
+   Leave any other default values as they are.
 1. Select **Review + create** > **Create**.
 
 ## Create a registration token for the host pool
