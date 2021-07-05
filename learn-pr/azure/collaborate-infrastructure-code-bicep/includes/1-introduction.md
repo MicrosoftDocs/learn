@@ -1,5 +1,13 @@
 Bicep enables you to collaborate effectively as a team. You can define a clear structure, ensure your infrastructure code is documented, and share it in a version control system.
 
+<!-- TODO 
+
+Motivation for IaC is that it's shareable
+Part of this is that you need to think about how other people will use your Bicep code
+In this module you'll learn about some ways to think about how you structure and style your Bicep code to make it easy for others to understand, deploy, and modify
+
+-->
+
 ## Example scenario
 
 Imagine you're working as the Azure administrator in a toy company. You've been asked to help out another team, who is building a website for a new toy. You've worked with Bicep a lot already, so you managed to create a Bicep template and use it to provision all of the resources for the team's website.
