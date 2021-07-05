@@ -4,7 +4,7 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: Learn how to create modular, reusable, and documented infrastructure as code using Bicep and enable team collaboration. # copy from the index.yml file's metadata.description
+  description: Learn how to create modular, reusable, and documented infrastructure as code using Bicep and enable team collaboration.
   ms.date: 04/20/2021
   author: pazdedav
   ms.author: dapazd
