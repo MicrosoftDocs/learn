@@ -86,7 +86,7 @@ Additionally, every Azure resource has certain naming [rules and restrictions](/
 
 It can be complex to follow all of the naming conventions for your organization as well as the naming requirements for Azure. A well-written Bicep template should hide this complexity from its users and determine the names for resources automatically. A good approach to follow is:
 
-- Add a parameter that is used to create a _uniqueness suffix_. This helps to ensure that your resources have unique names. It's a good idea to use the `uniqueString()` function to generate a default value. Someone who deploys your template can override this with a specific value if they want to have a meaningful name.
+- Add a parameter that is used to create a _uniqueness suffix_. This helps to ensure that your resources have unique names. It's a good idea to use the `uniqueString()` function to generate a default value. Someone who deploys your template can override this with a specific value if they want to have a meaningful name. Make sure you use the `@maxLength` decorator to limit the length of this suffix so that your resource names won't exceed their maximum lengths.
 - Use variables to construct resource names dynamically. Your Bicep code can ensure the names it generates follow your organization's naming convention as well as Azure's requirements. Include the uniqueness suffix as part of the resource name.
 
 > [!TIP]

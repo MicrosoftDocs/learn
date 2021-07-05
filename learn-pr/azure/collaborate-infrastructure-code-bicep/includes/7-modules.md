@@ -133,3 +133,10 @@ In our previous example, we used a module to deploy a "firewall rule" for Azure 
 
 > [!CAUTION]
 > Remember to make sure your template is valid for both scenarios when the `if` statement is evaluated as `true` or `false`.
+
+<!-- TODO make sure to mention the following:
+
+- Conditional deployment - as part of 'known configuration', I was thinking we could have App Insights deployed only for Prod, but not non-Prod config. Since we planned to have this resource in a module (frontend), we could show how 'module contract' can influence conditional deployment within the module. Another example could be 'diagnostics settings' for PaaS resources for Prod environments. It does get complicated with regards to existing vs. new AzMon workspace though
+- Ensure unique names for nested deployments (modules) - have a param with utc/utcNow() function and use it as a suffix in all nested deployment names. Also mention how deployment history gets overwritten, if the nested deployment name is "constant"
+
+-->
