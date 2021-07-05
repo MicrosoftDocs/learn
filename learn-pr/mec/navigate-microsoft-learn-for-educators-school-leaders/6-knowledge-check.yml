@@ -39,17 +39,17 @@ quiz:
     - content: "Activities"
       isCorrect: false
       explanation: "Activities is where you can find your in-progress and completed modules and learning paths."
-  - content: ""
+  - content: "What is a collection?"
     choices:
-    - content: ""
+    - content: "Collections are a series of modules that you must take in order to earn a Trophy."
+      isCorrect: false
+      explanation: "Learning Paths are a series of modules centered around a specific topic, task or role that you can take in order to earn a Trophy"
+    - content: "Collections are a bunch of badges and trophies that show how much that you've learned."
+      isCorrect: false
+      explanation: "Badges and trophies are achievements that you can collect, but they aren't specifically the Collections feature."
+    - content: "Collections allow you to easily curate and organize sets of content and share them with anyone."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Correct, collections are for organizing and sharing content with others"
   - content: ""
     choices:
     - content: ""
