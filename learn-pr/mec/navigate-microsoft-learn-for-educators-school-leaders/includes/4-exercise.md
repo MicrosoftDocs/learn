@@ -22,7 +22,7 @@ Collections allow you to easily curate and organize sets of content and share th
 -->
 Recall that you can find content about a particular product, topic or for a particular role by using the Learn "Browse all" page.
 
-TODO: add your scenario image
+[Image]
 
 <!-- 3. Task performed in the exercise ---------------------------------------------------------------------
 
@@ -57,19 +57,19 @@ In this exercise, you will create a collection of professional development conte
               4. Scroll down to the Templates section and select Blank Logic App."
 -->
 
-## (Find your first module and create your collection)
+## Find your first module and create your collection
 <!-- Introduction paragraph -->
 1. <!-- Step 1 -->
 1. <!-- Step 2 -->
 1. <!-- Step n -->
 
-## (Find a second module to add to your collection)
+## Find a second module to add to your collection
 <!-- Introduction paragraph -->
 1. <!-- Step 1 -->
 1. <!-- Step 2 -->
 1. <!-- Step n -->
 
-## (Share your collection)
+## Share your collection
 <!-- Introduction paragraph -->
 1. <!-- Step 1 -->
 1. <!-- Step 2 -->
@@ -102,7 +102,8 @@ In this exercise, you will create a collection of professional development conte
 1. <!-- Step 1 (if multiple steps are needed) -->
 1. <!-- Step 2 (if multiple steps are needed) -->
 1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
+
+<!-- Optional "exercise-solution" video -->
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
