@@ -21,7 +21,7 @@ Bicep can also help to validate the input that the user provides when they deplo
 
 One of the goals of defining your infrastructure as code is to make your templates reusable and flexible. You don't want to create single-purpose templates that have hard-coded configuration. On the other hand, it doesn't make sense to expose all resource properties as parameters: you create templates that work for your specific business problem or solution, not generic templates that need to work for every situation. You also don't want to have so many unnecessary parameters that it takes a long time for anyone to enter the values so that they can deploy your template. This is particularly important when you configure the SKUs and instance counts of resources.
 
-When you're planning a template, consider how you'll balance flexibility with simplicity. There are two common approaches to providing parameters in templates: providing free-form configuration options, and using known sets of configuration. Let's consider a hypothetical Bicep that deploys a storage account and an App Service plan.
+When you're planning a template, consider how you'll balance flexibility with simplicity. There are two common approaches to providing parameters in templates: providing free-form configuration options, and using predefined sets of configuration. Let's consider a hypothetical Bicep that deploys a storage account and an App Service plan.
 
 ### Provide free-form configuration options
 
@@ -38,7 +38,7 @@ This provides the most flexibility, since anyone who uses the template can speci
 > [!TIP]
 > Think about anyone who will use or work with your template. If they open it and see dozens of parameters, it could be overwhelming. You might be able to reduce the number of parameters by grouping related parameters together in form of a parameter object. However, this reduces your ability to validate the parameter values.
 
-### Use known configuration sets
+### Use configuration sets
 
 Alternatively, you could provide a single parameter with a list of allowed values, like a list of environment types. When someone deploys your template, they only need to select a value for this one parameter.
 

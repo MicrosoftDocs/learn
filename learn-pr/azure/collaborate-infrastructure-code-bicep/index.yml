@@ -7,15 +7,14 @@ metadata:
   ms.date: 04/20/2021
   author: pazdedav
   ms.author: dapazd
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Structure your Bicep code for collaboration
 summary: Restructure your Bicep templates into reusable modules and add comments to your infrastructure code to document it. TODO
 abstract: |
   After competing this module, you'll be able to:
-    - TODO params
-    - Structure your Bicep code for better team collaboration
-    - Document your code by using comments and other metadata
+    - Structure your Bicep code and parameters to support team collaboration
+    - Document your Bicep code by using comments and resource tags
     - Convert a single large Bicep template to smaller, reusable modules
 prerequisites: |
   You should be familiar with Bicep structure and syntax, including parameters and modules.
