@@ -1,4 +1,4 @@
-Batch Transcription is a Cognitive Service that allows you to transcribe large amounts of audio data from a storage container asynchronously. Batch Transcription is part of Azure’s Speech Service but has its own set of additional features.
+Batch Transcription is a Cognitive Service that allows you to transcribe large amounts of audio data from a storage container asynchronously. Batch Transcription is part of Azure’s *Speech Service* but has its own set of additional features.
 
 ## Efficiently using our audio data
 

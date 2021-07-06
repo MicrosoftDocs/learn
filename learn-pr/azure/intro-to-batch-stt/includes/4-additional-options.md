@@ -20,14 +20,14 @@ Audio analysis often looks for specific phrases or words, such as requests for p
 
 **Code example to go here**
 
-When the number of important specific phrases grows beyond a few hundred words, it can be preferable to customize Batch Transcription to a deeper level. This means building a Custom Speech model, which is something we explore in the next set of exercises. In short, Custom Speech lets you evaluate and improve transcription accuracy for your applications and products by training and testing a model using your own audio files. Custom Speech can help you overcome speech recognition barriers such as industry-specific terminology, or even unusual background noise, to provide accurate audio transcription.
+When the number of important specific phrases grows beyond a few hundred words, it can be preferable to customize Batch Transcription to a deeper level. This means building a *Custom Speech model*, which is something we explore in the next set of exercises. In short, Custom Speech lets you evaluate and improve transcription accuracy for your applications and products by training and testing a model using your own audio files. Custom Speech can help you overcome speech recognition barriers such as industry-specific terminology, or even unusual background noise, to provide accurate audio transcription.
 
 A custom speech model can be made by using the Custom Speech tool in the Speech Studio, which is a customization portal for Azure Speech Service. You’re provided with instructions each step of the way within the portal. By providing audio with human-labeled transcripts, related texts, and pronunciation guidance, you will be able to deploy your own custom model.
 
-In our scenario, a custom model will help you to overcome the problems your office is facing with background noise and the wide variety of accents around the world as the custom model is trained specifically to your environment. You’ve also found that custom models can be trained to your industry-specific vocabulary and the proper pronunciation of your product/service.
+In our scenario, a custom model will help you to overcome the problems your office is facing with background noise and the wide variety of accents around the world as the custom model is trained specifically to your environment. You’ve also found that custom models can be trained to your industry-specific vocabulary and the proper pronunciation of your key terms.
 
 ## Analyzing data deeper
 
-Converting speech to text using Batch Transcription offers additional business opportunities using Azure services. This is because the JSON format produced by Batch Transcription is readily indexable, and is digestable by services such as the Text Analytics Sentiment Analysis or Opinion Mining service, which can identify which aspects of the conversation the speaker felt positively or negatively about.
+Converting speech to text using Batch Transcription offers additional business opportunities using Azure services. This is because the JSON format produced by Batch Transcription is readily indexable, and is digestable by services such as the *Text Analytics Sentiment Analysis or Opinion Mining* service, which can identify which aspects of the conversation the speaker felt positively or negatively about. Allowing you to get further insights from your data to take actions that lead to more positive outcomes.
 
 ![Diagram showing Text Analytics sentiment analysis versus opinion mining.](../media/4-text-analytics-example)
