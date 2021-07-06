@@ -28,7 +28,7 @@ Think about how you would refactor the Bicep template so that the Azure SQL comp
 Try moving the Azure SQL resources and the associated parameters and variables to a new module.
 
 > [!TIP]
-> TODO look at Bicep linter clues, e.g. red squiggles and greyed out elements
+> When you move the elements of your template into the module, look at how Visual Studio Code can help you. It displays red squiggles underneath properties and other code that isn't valid, and it displays unused parameters and variables in a different shade. Use these clues to check what you might need to copy or move as you refactor your template.
 
 ## Move the App Service components into a module
 
@@ -52,6 +52,14 @@ Here's an example of how you might refactor the template into modules. Your Bice
 
 ::: code language="bicep" source="code/8-module-sql.bicep" :::
 
+<!-- TODO things to note:
+
+- Generates connection string dynamically
+- Template maintains config map and just tells modules what to do - this keeps modules reusable
+- Modules define resource names
+
+-->
+
 ## Make the firewall rule optional
 
 Suppose your toy company's security team has come to you and told you they want to only deploy the Azure SQL firewall rule in non-production environments. In production environments, they have a different approach they want to consider, which you'll work on another time.
@@ -60,8 +68,10 @@ How would you modify the module and your parent template to meet this requiremen
 
 ### Suggested solution
 
-TODO
+**main.bicep**:
 
-<!--
-Adjust config map to use different firewall rules for test and prod
--->
+::: code language="bicep" source="code/8-template-sql-condition.bicep" highlight="45-47, 61-63, 73" :::
+
+**modules/sql.bicep**:
+
+::: code language="bicep" source="code/8-module-sql-condition.bicep" highlight="18-19, 47" :::

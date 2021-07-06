@@ -42,6 +42,9 @@ var environmentConfigurationMap = {
         tier: 'Standard'
       }
     }
+    sqlServer: {
+      deployFirewallRule: false
+    }
   }
   Test: {
     appServicePlan: {
@@ -55,6 +58,9 @@ var environmentConfigurationMap = {
         name: 'Basic'
       }
     }
+    sqlServer: {
+      deployFirewallRule: true
+    }
   }
 }
 
@@ -64,6 +70,7 @@ var sqlDatabaseConnectionString = 'Data Source=tcp:${sql.outputs.sqlServerFullyQ
 module sql 'modules/sql.bicep' = {
   name: 'sql'
   params: {
+    deploySqlFirewallRule: environmentConfigurationMap[environmentType].sqlServer.deployFirewallRule
     location: location
     resourceNameSuffix: resourceNameSuffix
     sqlDatabaseSku: environmentConfigurationMap[environmentType].sqlDatabase.sku
