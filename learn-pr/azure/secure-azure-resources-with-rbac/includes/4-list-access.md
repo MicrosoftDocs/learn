@@ -45,8 +45,10 @@ Follow these steps to see what roles are assigned at the resource group scope.
 
 As you learned in the previous unit, a role is a collection of permissions. Azure has over 70 built-in roles that you can use in your role assignments. Follow this step to list the roles.
 
-At the top of the pane, click the **Roles** tab to see a list of all the built-in and custom roles.
+- At the top of the pane, click the **Roles** tab to see a list of all the built-in and custom roles.
 
-   :::image type="content" source="../media/4-roles-list.png" alt-text="Screenshot showing a list of Roles and users and groups assigned to each role.":::
+   You can see the number of users and groups that are assigned to each role.
+
+   ![Screenshot showing a list of Roles and users and groups assigned to each role.](../media/4-roles-list.png)
 
 In this unit, you learned how to list the role assignments for yourself in the Azure portal. You also learned how to list the role assignments for a resource group.
