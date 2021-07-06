@@ -21,12 +21,12 @@ levels:
 - beginner
 roles:
 - ai-engineer
-- data-scientist
 - developer
 - solution-architect
 - student
 products:
 - azure
+- azure-speech-text
 units:
 - learn.azure.intro-to-batch-stt.introduction
 - learn.azure.intro-to-batch-stt.what-is-batch-transcription

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-batch-stt.use-cases
-title: When to use Batch Transcription
+title: Integrate Batch Transcription for deeper insights
 metadata:
-  title: When to user Batch Transcription
-  description: When to use Batch Transcription
+  title: Integrate Batch Transcription for deeper insights
+  description: Integrate Batch Transcription for deeper insights
   ms.date: 03/14/2021
   author: tomreidnz
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 3
 content: |
   [!include[](includes/6-use-cases.md)]
