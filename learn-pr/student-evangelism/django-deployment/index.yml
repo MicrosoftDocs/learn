@@ -2,7 +2,7 @@
 uid: learn.django.deployment
 metadata:
   title: Deploy a Django application to Azure by using PostgreSQL
-  description: Learn how to deploy a Django application.
+  description: Learn how to deploy a application built with the Python framework Django.
   ms.date: 03/01/2021
   author: GeekTrainer
   ms.author: chrhar
