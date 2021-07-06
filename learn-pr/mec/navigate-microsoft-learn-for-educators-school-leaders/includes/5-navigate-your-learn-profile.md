@@ -15,7 +15,7 @@ Here are some main items in your profile:
 |Achievements | Badges and trophies that you have earned in Learn. You can export certificate for each badge and transcript for all your achievements |
 |Settings | Change your display name, manage email preferences and account settings. You can link your work account to your profile and share your learning progress with your school |
 
-:::image type="content" source="../media/Screenshot of learn profile categories.png" alt-text="screenshot of learn profile categories":::
+:::image type="content" source="../media/Screenshot of learn profile categories.png" alt-text="image of the learn profile categories that can be selected from":::
 
 > [!NOTE]
 > If you came from Microsoft Educator Center, we will be moving your full course history and badges to Learn. We will notify you before that takes place, until that time, please still refer to your achievements in your Microsoft Educator Center profile for your full completion history.
