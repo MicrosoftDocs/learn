@@ -1,4 +1,4 @@
-Introduction pagrapraphs
+Introduction paragraphs
 
 ## Heading 1
 
