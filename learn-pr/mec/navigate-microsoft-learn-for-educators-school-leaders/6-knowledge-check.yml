@@ -50,36 +50,25 @@ quiz:
     - content: "Collections allow you to easily curate and organize sets of content and share them with anyone."
       isCorrect: true
       explanation: "Correct, collections are for organizing and sharing content with others"
-  - content: ""
+  - content: "After completing a learning path you will earn a ________."
     choices:
-    - content: ""
+    - content: "Badge"
+      isCorrect: false
+      explanation: "Badges are earned by completing a module."
+    - content: "Trophy"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Yes, a trophy can be earned by completing a learning path."
+    - content: "Certification"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Certifications are earned by completing a Microsoft official assessment exam."
+  - content: "Which of these statements is false?"
     choices:
-    - content: ""
+    - content: "All course history and badges will be migrated from the Microsoft Educator center to Microsoft Learn."
+      isCorrect: false
+      explanation: "This is true. We will be migrating all course history and badges from the Microsoft Educator Center to Learn"
+    - content: "You can share your profile with others by sending them the public URL."
+      isCorrect: false
+      explanation: "This is true. You can share your profile publicly with others by sending them the URL that you create in your profile settings."
+    - content: "You cannot link more than one Microsoft account to your Learn profile"
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "This is false. You can link both personal and work accounts to your Learn profile."

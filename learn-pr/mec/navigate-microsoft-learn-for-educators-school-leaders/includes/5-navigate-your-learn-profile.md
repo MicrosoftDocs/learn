@@ -15,7 +15,7 @@ To go to your profile, navigate to the avatar image on the upper right hand corn
 [Image]
 
 > [!NOTE]
-> If you came from Microsoft Educator Center, it might take a while to show your Educator Center badges - please still refer to your achievements on Microsoft Educator Center.
+> If you came from Microsoft Educator Center, we will be moving your full course history and badges to Learn. We will notify you before that takes place, until that time, please still refer to your achievements in your Microsoft Educator Center profile for your full completion history.
 
 ## Changing your personal info, username and URL
 
