@@ -120,7 +120,7 @@ For the sake of simplicity, you'll implement the Azure IoT Edge CI/CD pipeline b
     :::image type="content" source="../media/7-azure-devops-pipeline-editor-powershell-set.png" alt-text="Screenshot of the PowerShell Script task with the type and script set to the previously mentioned settings." border="false":::
 
 1. In the **cna-devops-07-iothub - CI** pane, in the **Tasks** pane, select **Save & queue**. From the drop-down menu, select **Save**, and then in the **Save build pipeline** pane, select **Save**.
-1. In the menu, in the **Pipelines** section, select **Releases**. Ensure that the **cna-devops-07 - CD** release pipeline is selected, and then select **Edit**.
+1.	In the **cna-devops-07-iothub - CI** pane, in the menu, in the **Pipelines** section, select **Releases**. Ensure that the **cna-devops-07 - CD** release pipeline is selected, and then select **Edit**.
 
     :::image type="content" source="../media/7-azure-devops-release-pipeline-edit-button.png" alt-text="Screenshot of the cna-devops-07-iothub - CD pipeline with the Edit button displaying." border="false":::
 
@@ -188,7 +188,7 @@ For the sake of simplicity, you'll implement the Azure IoT Edge CI/CD pipeline b
 
 Now that the GitHub workflow and the corresponding Azure resources are fully deployed, you'll validate the CI/CD functionality.
 
-1. In the menu, select **Repos**, and then in the repository's folder hierarchy, select **edgeSmokeTest.sh**.
+1. In the **All pipelines > cna-devops-07-iothub - CD** pane, on the menu, select **Repos**, and then in the repository's folder hierarchy, select **edgeSmokeTest.sh**.
 1. In the pane displaying the **edgeSmokeTest.sh** file content, select **Edit**.
 1. Replace both occurrences of `azure-cli-iot-ext` with `azure-iot`. Add the `# ` string to the front of the line **91** --> `validateDevicesModulesRunning`, and then select **Commit**.
 1. In the **Commit** pane, select **Commit** again.
