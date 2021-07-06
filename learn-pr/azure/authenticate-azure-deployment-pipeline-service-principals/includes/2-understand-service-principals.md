@@ -84,6 +84,6 @@ When you create a service principal, most of the tools that you use also create 
 One type of service principal isn't associated with an application registration: a managed identity. As mentioned earlier, Azure manages the configuration and credentials for a managed identity.
 
 > [!NOTE]
-> A service principal is sometimes called an _enterprise application_. Some tools use one name and other tools use the other. You might also see service principals called _managed applications_ in your local directory, but these aren't the same thing as managed identities.
+> A service principal is sometimes called an _enterprise application_. Some tools use one name and other tools use the other. You might also see service principals called _managed applications in your local directory_, but these aren't the same thing as managed identities.
 
 To summarize, when you create a service principal, you first create an application registration, and then you create a service principal for that application registration to use. Most of the tools that you work with will do this for you, so you're not even aware of it. You might not use all of the features of Azure AD applications when you work with deployment pipelines. But because service principals are related to applications, the same Azure AD object structure applies.
