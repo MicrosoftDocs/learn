@@ -1,5 +1,9 @@
 ## Your profile
-Your profile stores your activities, collections, achievements, and settings. Here are some main items in your profile:
+Your profile stores your activities, collections, achievements, and settings. To go to your profile, navigate to the avatar image on the upper right hand corner of the browser window and select 'profile' in the pop-up window.
+
+:::image type="content" source="../media/Screenshot of profile icon.png" alt-text="Screenshot of Learn profile avatar selected so that pop-up displays for profile access.":::
+
+Here are some main items in your profile:
 
 | Overview | Overview of your recent activity, bookmarks and achievements |
 |----------|--------------------------------------------------------------|
@@ -10,9 +14,7 @@ Your profile stores your activities, collections, achievements, and settings. He
 |Achievements | Badges and trophies that you have earned in Learn. You can export certificate for each badge and transcript for all your achievements |
 |Settings | Change your display name, manage email preferences and account settings. You can link your work account to your profile and share your learning progress with your school |
 
-To go to your profile, navigate to the avatar image on the upper right hand corner of the browser window and select 'profile' in the pop-up window.
-
-[Image]
+:::image type="content" source="../media/Screenshot of learn profile categories.png" alt-text="screenshot of learn profile categories":::
 
 > [!NOTE]
 > If you came from Microsoft Educator Center, we will be moving your full course history and badges to Learn. We will notify you before that takes place, until that time, please still refer to your achievements in your Microsoft Educator Center profile for your full completion history.
@@ -20,7 +22,6 @@ To go to your profile, navigate to the avatar image on the upper right hand corn
 ## Changing your personal info, username and URL
 
 Select "Settings" in the left hand menu to open your profile settings options.
-[Image]
 
 Here you can change your:
 - Profile picture - the avatar image displayed for your profile 
@@ -34,11 +35,11 @@ Here you can change your:
 
 ## Adding and removing accounts
 
-You can also add and remove accounts linked to your Learn profile, for example if you have both a personal and work account that you would like to access Learn with. You can have up to five school or work accounts  and one personal account  linked to your profile. Linking a school or work account will allow your organization to see your learning progress data.
+You can also add and remove Microsoft accounts linked to your Learn profile. For example, if you have both a personal and work account that you would like to access Learn with, you can link them to your account. You can have up to five school or work accounts and one personal account linked to your profile. Linking a school or work account will allow your organization to see your learning progress data.
 
 ## Badges, trophies and reputation points
 
-[Image]
+:::image type="content" source="../media/Screenshot of achievements tab.png" alt-text="screenshot of achievements tab selected in Learn profile":::
  
 Badges and trophies are achievements that you receive after completing training content. You will get a badge after completing a module and a trophy after completing all the modules in a learning path. You can also earn XP points and increase in level as you continue to progress through content.
 
