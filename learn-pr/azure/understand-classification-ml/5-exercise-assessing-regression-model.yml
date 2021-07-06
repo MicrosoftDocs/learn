@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 sandbox: true
-notebook: https://review.docs.microsoft.com/learn/modules/understand-classification-ml/notebooks/6-5-exercise-assessing-regression-model.ipynb?branch=pr-en-us-18702
+notebook: notebooks/6-5-exercise-assessing-regression-model.ipynb
