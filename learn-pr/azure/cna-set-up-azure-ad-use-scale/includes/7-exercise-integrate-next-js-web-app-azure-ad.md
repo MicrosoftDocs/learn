@@ -29,7 +29,7 @@ To implement a sample Next.js-based application that uses Azure AD authenticatio
 1. On the **Register an application** blade, in the **Name** text box, enter **cna-nextjs-app**.
 1. In the **Supported account types** section, ensure that the option **Accounts in this organizational directory only (Default Directory only - Single tenant)** is selected. In the **Redirect URI (optional)** section, set the **Single-page application (SPA)** entry to **http://localhost:3000**, and then select **Register**.
 
-    :::image type="content" source="../media/7-azure-ad-next.js-app-register.png" alt-text="Screenshot of the Register an application blade in the Azure portal.":::
+    :::image type="content" source="../media/7-azure-ad-next-js-app-register.png" alt-text="Screenshot of the Register an application blade in the Azure portal.":::
 
     > [!NOTE]
     > You have the option of configuring multitenant support for your Azure AD-registered applications at this point. However, detailed coverage of this approach is outside the scope of this module.
@@ -39,27 +39,27 @@ To implement a sample Next.js-based application that uses Azure AD authenticatio
 
 1. On the **cna-nextjs-app** blade, review the resulting settings and record the values of the **Application (client) ID** and the **Directory (tenant) ID** properties.
 
-    :::image type="content" source="../media/7-azure-ad-next.js-app-registered.png" alt-text="Screenshot of the cna-nextjs-app blade in the Azure portal.":::
+    :::image type="content" source="../media/7-azure-ad-next-js-app-registered.png" alt-text="Screenshot of the cna-nextjs-app blade in the Azure portal.":::
 
 1. On the **cna-nextjs-app** blade, in the vertical menu, in the **Manage** section, select **API permissions**.
 
-    :::image type="content" source="../media/7-azure-ad-next.js-app-configure-api-permissions.png" alt-text="Screenshot of the cna-nextjs-app API permissions blade in the Azure portal.":::
+    :::image type="content" source="../media/7-azure-ad-next-js-app-configure-api-permissions.png" alt-text="Screenshot of the cna-nextjs-app API permissions blade in the Azure portal.":::
 
 1. On the **cna-nextjs-app \| API permissions** blade, select **+ Add a permission**, on the **Request API permission** blade, select the **APIs my organization uses** tab, in the search text box, enter **Azure OSSRDBMS Database**, and then in the list of results, select **Azure OSSRDBMS Database**.
 
-    :::image type="content" source="../media/7-azure-ad-next.js-app-configure-api-permissions-ossrdbms.png" alt-text="Screenshot of the Request API permissions blade in the Azure portal.":::
+    :::image type="content" source="../media/7-azure-ad-next-js-app-configure-api-permissions-ossrdbms.png" alt-text="Screenshot of the Request API permissions blade in the Azure portal.":::
 
 1. On the **Request API permission** blade, select **Delegated permissions**, select the **user_impersonation** checkbox, and then select **Add permission**.
 
-    :::image type="content" source="../media/7-azure-ad-next.js-app-configure-api-permissions-ossrdbms-impersonation.png" alt-text="Screenshot of the Request API permissions blade in the Azure portal, with the Delegated permissions option selected.":::
+    :::image type="content" source="../media/7-azure-ad-next-js-app-configure-api-permissions-ossrdbms-impersonation.png" alt-text="Screenshot of the Request API permissions blade in the Azure portal, with the Delegated permissions option selected.":::
 
 1. Back on the **cna-nextjs-app \| API permissions** blade, select **Grant admin consent for Default Directory**, and when prompted for confirmation, select **Yes**.
 
-    :::image type="content" source="../media/7-azure-ad-next.js-app-configure-api-permissions-full.png" alt-text="Screenshot of the cna-nextjs-app API permissions blade in the Azure portal, with the prompt to confirm granting of the admin consent.":::
+    :::image type="content" source="../media/7-azure-ad-next-js-app-configure-api-permissions-full.png" alt-text="Screenshot of the cna-nextjs-app API permissions blade in the Azure portal, with the prompt to confirm granting of the admin consent.":::
 
 1. On the **cna-nextjs-app \| API permissions** blade, verify that the permissions have been granted.
 
-    :::image type="content" source="../media/7-azure-ad-next.js-app-configure-api-permissions-granted.png" alt-text="Screenshot of the cna-nextjs-app API permissions blade in the Azure portal, with the consent and permissions granted.":::
+    :::image type="content" source="../media/7-azure-ad-next-js-app-configure-api-permissions-granted.png" alt-text="Screenshot of the cna-nextjs-app API permissions blade in the Azure portal, with the consent and permissions granted.":::
 
 ## Implement a simple, Azure AD-integrated Next.js-based application
 
@@ -267,7 +267,7 @@ You're ready to validate the Azure AD integration of the app. You could containe
 1. Close the web browser window displaying **Welcome to the Microsoft Authentication Library For Javascript - React Quickstart** page, start another web browser window in the Incognito/InPrivate mode, and navigate to the **http://localhost:3000** URL.
 1. On the **Welcome to the Microsoft Authentication Library For Javascript - React Quickstart** page, select **Sign In**, and then in the expanding menu, select **Sign in using Popup**.
 
-    :::image type="content" source="../media/7-azure-ad-next.js-app-sign-in-popup.png" alt-text="Screenshot of the Welcome to the Microsoft Authentication Library For Javascript - React Quickstart page with the Sign in using Popup menu option.":::
+    :::image type="content" source="../media/7-azure-ad-next-js-app-sign-in-popup.png" alt-text="Screenshot of the Welcome to the Microsoft Authentication Library For Javascript - React Quickstart page with the Sign in using Popup menu option.":::
 
 1. When prompted to sign in, authenticate by using the **adatumuser1** **userPrincipalName** and its password **Pa55w.rd1234**.
 
@@ -276,12 +276,12 @@ You're ready to validate the Azure AD integration of the app. You could containe
 
 1. On the **Welcome to the Microsoft Authentication Library For Javascript - React Quickstart** page, select **Request Profile Information**.
 
-    :::image type="content" source="../media/7-azure-ad-next.js-app-request-profile-info.png" alt-text="Screenshot of the Welcome to the Microsoft Authentication Library For Javascript - React Quickstart page with the Request Profile Information button.":::
+    :::image type="content" source="../media/7-azure-ad-next-js-app-request-profile-info.png" alt-text="Screenshot of the Welcome to the Microsoft Authentication Library For Javascript - React Quickstart page with the Request Profile Information button.":::
 
     > [!NOTE]
     > Verify that the output includes the Email, Id, and the access token of the **adatumuser1** Azure AD user account.
 
-    :::image type="content" source="../media/7-azure-ad-next.js-app-displayed-profile-info.png" alt-text="Screenshot of the Welcome to the Microsoft Authentication Library For Javascript - React Quickstart page with the adatumuser1 profile information.":::
+    :::image type="content" source="../media/7-azure-ad-next-js-app-displayed-profile-info.png" alt-text="Screenshot of the Welcome to the Microsoft Authentication Library For Javascript - React Quickstart page with the adatumuser1 profile information.":::
 
 1. Open another browser tab in the same web browser window and navigate to the web application you deployed in the previous exercise.
 
@@ -294,7 +294,7 @@ You're ready to validate the Azure AD integration of the app. You could containe
     > [!NOTE]
     > If the initial attempt fails, try again.
 
-    :::image type="content" source="../media/7-azure-ad-next.js-app-displayed-database-inventory.png" alt-text="Screenshot of the page of the Express.js web app displaying the inventory data." lightbox="../media/7-azure-ad-next.js-app-displayed-database-inventory.png":::
+    :::image type="content" source="../media/7-azure-ad-next-js-app-displayed-database-inventory.png" alt-text="Screenshot of the page of the Express.js web app displaying the inventory data." lightbox="../media/7-azure-ad-next-js-app-displayed-database-inventory.png":::
 
 1. Close the web browser window in the Incognito/InPrivate mode.
 

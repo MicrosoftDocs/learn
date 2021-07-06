@@ -245,7 +245,7 @@ To implement a sample Node.js-based application that uses Azure AD authenticatio
 1. On the **App registrations** blade, select **+ New registration**.
 1. On the **Register an application** blade, in the **Name** text box, enter **cna-app**. In the **Supported account types** section, ensure that the option **Accounts in this organizational directory only (Default Directory only - Single tenant)** is selected. In the **Redirect URI (optional)** section, set the **Web** entry to `http://localhost:8080/redirect`, and then select **Register**.
 
-    :::image type="content" source="../media/5-azure-ad-node.js-app-register.png" alt-text="Screenshot of the Register an application blade in the Azure portal.":::
+    :::image type="content" source="../media/5-azure-ad-node-js-app-register.png" alt-text="Screenshot of the Register an application blade in the Azure portal.":::
 
     > [!NOTE]
     > You have the option of configuring multitenant support for your Azure AD registered applications. However, detailed coverage of this approach is outside of the scope of this module.
@@ -255,39 +255,39 @@ To implement a sample Node.js-based application that uses Azure AD authenticatio
 
 1. On the **cna-app** blade, review the resulting settings and record the values of the **Application (client) ID** and the **Directory (tenant) ID** properties.
 
-    :::image type="content" source="../media/5-azure-ad-node.js-app-registered.png" alt-text="Screenshot of the cna-app blade in the Azure portal.":::
+    :::image type="content" source="../media/5-azure-ad-node-js-app-registered.png" alt-text="Screenshot of the cna-app blade in the Azure portal.":::
 
 1. On the **cna-app** blade, in the **Manage** section, select **Certificates & secrets** and select **+ New client secret**.
 1. On the **Add a client secret** blade, in the **Description** text box, enter **cna-secret-0**. Leave the **Expires** drop-down list entry with its default value and select **Add**.
 
-    :::image type="content" source="../media/5-azure-ad-node.js-app-add-secret.png" alt-text="Screenshot of the Add a client secret blade in the Azure portal.":::
+    :::image type="content" source="../media/5-azure-ad-node-js-app-add-secret.png" alt-text="Screenshot of the Add a client secret blade in the Azure portal.":::
 
 1. Back on the **cna-app \| Certificates & secrets** blade, copy the value of the newly generated secret.
 
     > [!NOTE]
     > Make sure to copy the value of the secret before you navigate away from this blade, because at that point, you'll no longer be able to retrieve it. If that happens, create another secret.
 
-    :::image type="content" source="../media/5-azure-ad-node.js-app-added-secret-.png" alt-text="Screenshot of the value of the client secret on the cna-app Certificates & secrets blade in the Azure portal.":::
+    :::image type="content" source="../media/5-azure-ad-node-js-app-added-secret-.png" alt-text="Screenshot of the value of the client secret on the cna-app Certificates & secrets blade in the Azure portal.":::
 
 1. On the **cna-app \| Certificates & secrets** blade, in the vertical menu, in the **Manage** section, select **API permissions**.
 
-    :::image type="content" source="../media/5-azure-ad-node.js-app-configure-api-permissions.png" alt-text="Screenshot of the cna-app API permissions blade in the Azure portal.":::
+    :::image type="content" source="../media/5-azure-ad-node-js-app-configure-api-permissions.png" alt-text="Screenshot of the cna-app API permissions blade in the Azure portal.":::
 
 1. On the **cna-app \| API permissions** blade, select **+ Add a permission**, on the **Request API permission** blade, select the **APIs my organization uses** tab, in the search text box, enter **Azure OSSRDBMS Database**, and then in the list of results, select **Azure OSSRDBMS Database**.
 
-    :::image type="content" source="../media/5-azure-ad-node.js-app-configure-api-permissions-ossrdbms.png" alt-text="Screenshot of the Request API permissions blade in the Azure portal.":::
+    :::image type="content" source="../media/5-azure-ad-node-js-app-configure-api-permissions-ossrdbms.png" alt-text="Screenshot of the Request API permissions blade in the Azure portal.":::
 
 1. On the **Request API permission** blade, select **Delegated permissions**, select the **user_impersonation** checkbox, and then select **Add permission**.
 
-    :::image type="content" source="../media/5-azure-ad-node.js-app-configure-api-permissions-ossrdbms-impersonation.png" alt-text="Screenshot of the Request API permissions blade in the Azure portal, with the Delegated permissions option selected.":::
+    :::image type="content" source="../media/5-azure-ad-node-js-app-configure-api-permissions-ossrdbms-impersonation.png" alt-text="Screenshot of the Request API permissions blade in the Azure portal, with the Delegated permissions option selected.":::
 
 1. Back on the **cna-app \| API permissions** blade, select **Grant admin consent for Default Directory**, and when prompted for confirmation, select **Yes**.
 
-    :::image type="content" source="../media/5-azure-ad-node.js-app-configure-api-permissions-full.png" alt-text="Screenshot of the cna-app API permissions blade in the Azure portal, with the prompt to confirm granting of the admin consent.":::
+    :::image type="content" source="../media/5-azure-ad-node-js-app-configure-api-permissions-full.png" alt-text="Screenshot of the cna-app API permissions blade in the Azure portal, with the prompt to confirm granting of the admin consent.":::
 
 1. On the **cna-app \| API permissions** blade, verify that the permissions have been granted.
 
-    :::image type="content" source="../media/5-azure-ad-node.js-app-configure-api-permissions-granted.png" alt-text="Screenshot of the cna-app API permissions blade in the Azure portal, with the consent and permissions granted.":::
+    :::image type="content" source="../media/5-azure-ad-node-js-app-configure-api-permissions-granted.png" alt-text="Screenshot of the cna-app API permissions blade in the Azure portal, with the consent and permissions granted.":::
 
 ## Implement a simple, Azure AD-integrated Node.js-based application
 
@@ -510,7 +510,7 @@ You're finally ready to test the functionality of your web app. While you could 
 1. On the Azure Active Directory blade, navigate to the **App registrations** blade, select the **cna-app** entry, in the vertical menu, in the **Manage** section, select **Authentication**.
 1. On the **cna-app \| Authentication** blade, modify the value of the **Redirect URI** to match the entry you updated in the **index.js** file and save the change.
 
-    :::image type="content" source="../media/5-azure-ad-node.js-app-redirect-uri-update.png" alt-text="Screenshot of the cna-app Authentication blade in the Azure portal.":::
+    :::image type="content" source="../media/5-azure-ad-node-js-app-redirect-uri-update.png" alt-text="Screenshot of the cna-app Authentication blade in the Azure portal.":::
 
 1. Switch back to the web browser tab displaying the Bash session on the **Cloud Shell** pane and run the following commands to initialize the local Git repository and commit all changes in the main branch:
 
@@ -572,7 +572,7 @@ You're finally ready to test the functionality of your web app. While you could 
 
 1. Verify that the resulting webpage consists of the Azure AD authentication information for the currently signed-in user (the output might differ).
 
-    :::image type="content" source="../media/5-azure-ad-node.js-app-output-page.png" alt-text="Screenshot of the page of the Node.js web app displaying the Azure AD authentication information.":::
+    :::image type="content" source="../media/5-azure-ad-node-js-app-output-page.png" alt-text="Screenshot of the page of the Node.js web app displaying the Azure AD authentication information.":::
 
 
 ## Results
