@@ -2,14 +2,14 @@
 uid: learn.azure.intro-to-batch-stt
 metadata:
   title: Introduction to Batch Transcription
-  description: Batch transcription is an Azure cognitive service that enables you to transcribe audio asynchronously—in non-real-time—from a storage container. Batch transcription is ideal for transcribing large amounts of audio at once. Such as with recorded phone calls with customers to ensure regulations and compliance standards are being met or for transcribing media audio to create subtitles to increase accessibility.
+  description: Batch Transcription is an Azure cognitive service that enables you to transcribe very large amounts of pre-recorded audio data asynchronously. Batch Transcription’s high throughput makes it ideal for call centers that have to transcribe hundreds or thousands of calls every day to ensure they meet regulations and compliance standards. Batch Transcription also enables additional data analyses that can let call centers ensure that customer feedback is taken into account, that staff are treated fairly, and to ensure that problems are dealt with quickly and properly.
   ms.date: 03/14/2021
   author: tomreidnz
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to Batch Transcription 
-summary: Batch transcription is an Azure cognitive service that enables you to transcribe audio asynchronously—in non-real-time—from a storage container. Batch transcription is ideal for transcribing large amounts of audio at once. Such as with recorded phone calls with customers to ensure regulations and compliance standards are being met or for transcribing media audio to create subtitles to increase accessibility.
+title: Introduction to Batch Transcription
+summary: Batch Transcription is an Azure cognitive service that enables you to transcribe very large amounts of pre-recorded audio data asynchronously. Batch Transcription’s high throughput makes it ideal for call centers that have to transcribe hundreds or thousands of calls every day to ensure they meet regulations and compliance standards. Batch Transcription also enables additional data analyses that can let call centers ensure that customer feedback is taken into account, that staff are treated fairly, and to ensure that problems are dealt with quickly and properly.
 abstract: |
   In this module, you will:
   - Assess the benefits of Batch Transcription

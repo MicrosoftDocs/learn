@@ -1,19 +1,31 @@
-Batch transcription is a Speech-to-text cognitive service that uses a set of REST API operations to enable you to transcribe large amounts of audio in storage asynchronously. Batch transcription is available in over 90 languages and can be used with custom models that you create using Speech service.
+Batch Transcription is a Cognitive Service that allows you to transcribe large amounts of audio data from a storage container asynchronously. Batch Transcription is part of Azure’s Speech Service but has its own set of additional features.
 
-## Custom speech
+## Efficiently using our audio data
 
-**Custom speech** can be used with batch transcription. Custom speech lets you evaluate and improve transcription accuracy for your applications and products by training and testing a model using your own audio files. Custom Speech can help you overcome speech recognition barriers such as industry-specific terminology or background noise to provide accurate audio transcription.
+Spoken word will always be our primary means of communication. We can identify ourselves, express ideas, convey sentiment, and make requests. Further, the use of audio is often required for business reasons, such as keeping records of conversations for legal purposes, whether they be in person, or over a video or audio call.
 
-## Additional Features
+While having an audio record of a conversation is nice, searching audio recordings for information can be very inefficient. Transcribing audio into text allows for almost instantaneous searching for key words or phrases, easier documentation, and better record keeping.
 
-**Destination container** can be used to specify a container you want to store your results in. If you don’t specify a container, your results will be automatically stored in a container managed by Microsoft.
+## Batch Transcription is cost effective and powerful
 
-**Diarization** also known as speaker separation, is the process of identifying speakers in your audio, and attributing the sentence to the right speaker. Batch transcription can identify two voices, and requires timestamps to be enabled to be used.
+Manually transcribing audio into text is a labor-intensive process. It requires trained and trust-worthy staff and even then can still be prone to errors, resulting in the need for labour-intensive reviews.
 
-**Profanity filters** are available. This service can be used to mask the profanity with asterisks, remove the profanity completely, or be tagged with “profanity”. The default setting is to mask the profanity.
+Batch Transcription provides automated transcription using Artificial Intelligence (A.I). Batch Transcription is a powerful, high-quality service that can process hundreds or thousands of audio recordings into text, acting like an in-house team of professional transcribers. It also has optional configurations not available with real-time Speech-To-Text such as profanity filters and timestamps, along with standard services like speaker separation.
 
-**Punctuation** allows you to decide on punctuation in your transcription. This service can be enabled for automatic—meaning the AI deals with the punctuation—or dictation mode, meaning you would explicitly state the punctuation: “how are you question mark” is transcribed as “how are you?”. You can use automatic and dictation mode together, or disable punctuation altogether.
+## Our call-center scenario
 
-**Timetolive** is the option to automatically delete transcriptions from Microsoft storage after they have completed the transcription. This service is useful for when you’re mass processing transcriptions, as it ensures they will be deleted without manually having to do so.
+Let’s think back to our call-center scenario. You’ve been looking into Batch Transcription and have found that it might be the solution you need, as it can quickly and accurately transcribe huge amounts of audio data without poor audio quality or the variety of accents and dialects being a problem.
 
-**Word Level Timestamps** can be used to identify the date and time the transcription was created, along with the time a word was spoken and how long it took you to say the word.
+You’ve also found that Batch Transcription can be integrated with other Azure services to enable analysis of your audio data. This information can then be used to improve business practices in a much deeper way than simple transcription is designed to achieve.
+
+## Using Batch Transcription
+
+The Batch Transcription service is implemented as set of REST API operations. A request can be made to transcribe audio files from a storage blob through a POST operation, like so:
+
+**Post Code Example to go here**
+
+Output is saved to a second storage blob. If the input file is in mono, a single JSON file is produced per file. For stereo audio files, the left and right channels are split and a separate JSON result file is created for each channel. An example output is below:
+
+**Code example to go here**
+
+![Diagram showing the architecture of the Batch Transcription API for call centers.](../media/2-batch-transcription-architecture.png)
