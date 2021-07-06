@@ -27,12 +27,15 @@ Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com
 
 1. On the **Basics** tab, enter the following values for each setting.
 
+    ***Project details***
     |Field  |Value  |Details  |
     |---------|---------|---------|
-    | **Project details**| | |
     |**Subscription**    |   Concierge subscription      |    The resource you're creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs or will belong, if you're creating the resource group within the wizard.     |
     |**Resource group**     |   <rgn>[Sandbox resource group]</rgn>      |    The resource group to which the Speech service will belong. All Azure resources must belong to a resource group.     |
-    | **Instance details**| | |
+
+    ***Instance details***
+    |Field  |Value  |Details  |
+    |---------|---------|---------|
     |**Name**     |    Enter a unique name     |   Choose a globally unique name for the resource. For example, you might name the resource *webxrmagicxxx*, where the x's are replaced with your initials or a series of numbers. If the name isn't globally unique, you can try any other combination. Valid characters are a-z and 0-9. The name must be 3 to 24 characters long and will be used to generate the public URL for accessing data in the account.      |
     |**Region**     |    Geographical location near you     |   The geographical location where your app will be used.      |
     |**Performance** | Standard | This option decides the type of disk storage used to hold the data in the Storage account. Standard uses traditional hard disks, and Premium uses solid-state drives (SSD) for faster access. |
