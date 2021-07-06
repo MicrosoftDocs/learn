@@ -10,7 +10,7 @@
 -->
 In this unit, you will learn about what content Learn offers for educators, how to find this educator content in Learn, and how to share it with your colleagues or students.
 
-[Image]
+:::image type="content" source="../media/Screenshot-educator-content.png" alt-text="Screenshot of the Learn browswer window with Roles selected and Educator and Student roles highlighted.":::
 
 Offerings in Learn for educators will include:
 
@@ -48,11 +48,9 @@ To use the filters, select on of the boxes under product, role, level, or type, 
 - *Level* is where you can select from the appropriate experience level with the content as either a *beginner*, *intermediate* or *advanced*.
 - *Type* is where you can select from either Modules or Learning Paths.
 
-[Image]
-
 You can also search by keyword in the search bar displayed on the page.
 
-[Image]
+:::image type="content" source="../media/Screenshot of browse all page.png" alt-text="Screenshot of the Learn browse page with the search bar and filters highlighted":::
 
 > [!CAUTION]
 > The search bar displayed in the top right of the page header will search all of Docs.microsoft.com which includes more than just Learn. It includes Documentation, Certifications, Q&A, Code Samples and more. To search just Learn modules and learning paths, make sure to use the correct search bar on the "Browse all" page detailed above.
