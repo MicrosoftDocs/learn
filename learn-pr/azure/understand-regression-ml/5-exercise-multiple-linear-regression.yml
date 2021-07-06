@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 sandbox: true
-notebook: https://review.docs.microsoft.com/learn/modules/understand-regression-ml/notebooks/4-5-exercise-multiple-linear-regression.ipynb?branch=pr-en-us-18700
+notebook: notebooks/4-5-exercise-multiple-linear-regression.ipynb
