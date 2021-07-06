@@ -55,11 +55,6 @@ You can even refer to resources within a different Azure subscription, as long a
 
 Notice that the `scope` uses the `resourceGroup()` keyword to refer to the Azure subscription ID (`f0750bbe-ea75-4ae5-b24d-a92ca601da2c`) and resource group name that contains the virtual network.
 
-<!-- Commenting this out until Bicep v0.4 is released :)
-> [!TIP]
-> If you have the resource ID of another resource you want to reference, you can specify the `id` property instead of `name`.
--->
-
 Now that you understand how to refer to existing resources, let's look at how you can use this capability in your templates.
 
 ## Add child and extension resources to an existing resource

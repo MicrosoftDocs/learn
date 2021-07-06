@@ -72,10 +72,10 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. Select **Review + create** to review the settings. This will do a quick validation of your options to make sure all the required fields are selected. If there are issues, they'll be reported here.
 
-1. After validation passes, select **Create** to provision the storage account.
+1. If validation passed, select **Create** to provision the storage account.
 
-   It may take two minutes to deploy the account.
+   It may take up to two minutes to deploy the account.
 
-1. After validation succeeds, select **Go to resource** to view your newly-created storage account.
+1. When deployment is complete, select **Go to resource** to view your newly-created storage account.
 
 You created a storage account with settings driven by your business requirements. For example, you might have selected a West US datacenter because your customers were primarily located in southern California. This is a typical flow: first analyze your data and goals, and then configure the storage account options to match.
