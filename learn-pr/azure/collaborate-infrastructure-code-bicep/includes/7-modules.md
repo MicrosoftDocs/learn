@@ -29,6 +29,18 @@ Once you've decided on the resources to extract, move them into a new Bicep file
 > [!TIP]
 > Once you've copied your Bicep code into a module, it's a good practice to review the new module file to confirm it still fits with your chosen template style, and that it has a clear set of parameters and outputs.
 
+## Module parameters
+
+Think about the parameters your module accepts, and whether each parameter should be optional or required.
+
+When you create parameters for templates, it's a good practice to add default parameters where you can. In modules, it's not always as important to do this since your module will be used by a parent template, which might have its own default parameters it uses. If you have similar parameters in both locations, both with default values, it can be hard for your template's users to reason about which default value will be applied, and to enforce consistency. It's often better to leave the default value on the parent template and remove it from the module.
+
+Similarly, think about how you manage parameters that control the SKUs for your resources and other important configuration. You learned in a previous unit about how a _configuration map_ can help you to embed business rules into your template and simplify your parameter list. Modules present different concerns, though. If a module is reused across multiple deployments, the business rules for each parent template might be different. So, it often doesn't make as much sense to embed configuration maps into modules. Consider using configuration maps in your parent template, and then explicitly pass module configuration through parameters.
+
+## Filenames
+
+Make sure you use a descriptive filename for each module. The filename effectively becomes the identifier for the module, so it's important that your colleagues can understand what the purpose of the module is just by looking at the filename.
+
 ## Use the module in your Bicep template
 
 You use a module within your main Bicep template by using the `module` keyword.
@@ -55,6 +67,3 @@ When you include this module in a Bicep template, you can easily configure it to
 
 > [!NOTE]
 > Remember to make sure your template is valid for both scenarios - when the `if` statement is evaluated as either `true` or `false`.
-
-<!-- TODO omit default params on modules -->
-<!-- TODO should your module be aware of environments and config maps? -->
