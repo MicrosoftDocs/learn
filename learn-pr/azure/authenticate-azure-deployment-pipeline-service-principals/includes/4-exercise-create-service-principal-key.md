@@ -118,7 +118,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 ::: zone-end
 
 > [!WARNING]
-> The outputs from the preceding commands contain the key for your service principal. Make sure you're careful about where you run these commands. For example, don't run them in an environment where someone might be able to view them.
+> The outputs from the preceding commands contain the key for your service principal. Be careful about where you run these commands. For example, don't run them in an environment where someone might be able to view them.
 
 ## Test the service principal
 
@@ -138,7 +138,7 @@ Now that the service principal has been created, you sign in by using its creden
 
    Notice that you include the `--allow-no-subscriptions` argument. Normally when you run the `az login` command, the Azure CLI looks for the Azure subscriptions that you can access. The service principal hasn't been granted access to anything yet, so you use the `--allow-no-subscriptions` argument to prevent the Azure CLI from checking the subscription list and showing an error.
 
-1. Check that the output from the previous command is a JSON object, which includes a `user` property with the service principal's application ID. This indicates that the service principal signed in successfully.
+1. Check that the output from the previous command is a JSON object, which includes a `user` property with the service principal's application ID. This information indicates that the service principal signed in successfully.
 
 1. Sign out of the service principal's account by using the following command:
 
@@ -164,7 +164,7 @@ Now that the service principal has been created, you sign in by using its creden
      -Tenant TENANT_ID
    ```
 
-1. Check that the output from the previous command includes an `Account` property with the service principal's application ID, and a blank `SubscriptionName` value. This indicates that the service principal signed in successfully.
+1. Check that the output from the previous command includes an `Account` property with the service principal's application ID, and a blank `SubscriptionName` value. This information indicates that the service principal signed in successfully.
 
 1. Sign out of the service principal's account by using the following command:
 

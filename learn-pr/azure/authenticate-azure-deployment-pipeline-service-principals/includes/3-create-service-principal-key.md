@@ -4,7 +4,7 @@ Now that you understand the concept of a service principal, you might wonder how
 
 When a service principal needs to communicate with Azure, it signs in to Azure AD. After Azure AD verifies the service principal's identity, it issues a _token_ that the client application stores and uses when it makes any requests to Azure. 
 
-Broadly speaking, this process is similar to how things work when you sign in to Azure yourself as a user. However, compared to users, service principals have a slightly different type of credential to prove their identity. There are two main credentials that service principals use: keys and certificates.
+Broadly speaking, this process is similar to how things work when you sign in to Azure yourself as a user. However, compared to users, service principals have a slightly different type of credential to prove their identity. Service principals use two main credentials: keys and certificates.
 
 > [!NOTE]
 > Remember that managed identities are special service principals that work within Azure. They have a different type of authentication process that doesn't require that you know or handle credentials at all.

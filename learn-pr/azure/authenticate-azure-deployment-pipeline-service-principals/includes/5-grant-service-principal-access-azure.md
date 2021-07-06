@@ -15,7 +15,7 @@ A role assignment has three key parts: who the role is assigned to (the *assigne
 
 ### Assignee
 
-When you work with a service principal, you assign roles for that service principal. Sometimes this is called the _assignee_. You use the service principal's application ID to identify the right service principal.
+When you work with a service principal, you assign roles for that service principal. You use the service principal's application ID to identify the right service principal for that assignee.
 
 ### Role
 
@@ -110,14 +110,14 @@ Let's look at each argument:
 ::: zone-end
 
 > [!TIP]
-> It's a good practice to provide a justification for your role assignments by specifying a description. This helps anyone who reviews them later to understand the purpose of the role assignment, and to understand how you decided on the assignee, role, and scope.
+> It's a good practice to provide a justification for your role assignments by specifying a description. A description helps anyone who reviews the role assignments later to understand their purpose, and to understand how you decided on the assignee, role, and scope.
 
 > [!NOTE]
 > Role assignments can take a few minutes to become active.
 
 ## Create a service principal and role assignment in one operation
 
-You can also create a role assignment at the same time that you create a service principal. This is similar to the command that you used to create a service principal in the previous units, but with some additional arguments:
+You can also create a role assignment at the same time that you create a service principal. The code is similar to the command that you used to create a service principal in the previous units, but with some additional arguments:
 
 ::: zone pivot="cli"
 

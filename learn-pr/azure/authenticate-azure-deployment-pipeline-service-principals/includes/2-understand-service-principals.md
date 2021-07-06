@@ -29,7 +29,7 @@ Azure Active Directory (Azure AD) is the service that manages identities for Azu
 
 ### Service principals
 
-A service principal is a type of account. It can sign in to Azure AD, but there's no human to sign in and interact with the authentication process. This means that service principals don't have multifactor authentication or similar protections, because those require a person to do something to prove their identity.
+A service principal is a type of account. It can sign in to Azure AD, but there's no human to sign in and interact with the authentication process. Service principals don't have MFA or similar protections, because those require a person to do something to prove their identity.
 
 In Azure AD, a service principal is identified by an _application ID_ and a credential. The application ID is a globally unique ID (GUID). For pipelines, the credential is usually a strong password called a _key_. Alternatively, you can use a _certificate_ as a credential.
 
@@ -39,7 +39,7 @@ Unlike a normal service principal, a managed identity doesn't require that you k
 
 Managed identities are available for Azure-hosted resources like virtual machines and App Service apps. They're a great way for Azure resources to authenticate themselves for situations like automating your Azure management, connecting to databases, and reading secret data from Azure Key Vault.
 
-When you work with pipelines, you usually can't use managed identities. This is because managed identities require that you own and manage the Azure resources. When you work with Azure Pipelines and GitHub Actions, you usually rely on shared infrastructure provided by Microsoft or GitHub.
+When you work with pipelines, you usually can't use managed identities. The reason is that managed identities require you to own and manage the Azure resources. When you work with Azure Pipelines and GitHub Actions, you usually rely on shared infrastructure provided by Microsoft or GitHub.
 
 > [!NOTE]
 > There are some situations where pipelines can use managed identities. In Azure Pipelines, you can create a _self-hosted agent_ to run your pipeline's scripts and code by using on your own Azure-based virtual machine. Because you own the virtual machine, you can assign it a managed identity and use it from your pipeline. 
@@ -60,12 +60,12 @@ You might wonder why you need to create this whole new type of object just to au
 
 User accounts aren't designed for unattended use. The authentication process for a user account often checks that a human is the entity that's trying to sign in. Increasingly, organizations use additional security checks during authentication. These checks include MFA, CAPTCHA checks, and inspecting the device and network that the user is using so that they can verify the legitimacy of a request to sign in.
 
-Pipelines are designed to run your deployments even when nobody is sitting there actively running them. In fact, most of the benefits of pipelines come from the fact that they are completely automated and don't require human interaction. If you store your username and password in a pipeline and try to use it to sign in, it probably won't work. Even if it does seem to work, it could easily break in the future if Azure AD or your organizational administrator adds more security checks to your user authentication process.
+Pipelines are designed to run your deployments even when nobody is sitting there actively running them. In fact, most of the benefits of pipelines come from the fact that they are completely automated and don't require human interaction. If you store your username and password in a pipeline and try to use them to sign in, they probably won't work. Even if they do seem to work, they can easily break in the future if Azure AD or your organizational administrator adds more security checks to your user authentication process.
 
 > [!WARNING]
-> It's also a bad idea to save your username and password anywhere, since someone else might get access to it and then use it to impersonate you.
+> It's also a bad idea to save your username and password anywhere, because someone else might get access to them and then use them to impersonate you.
 
-For these reasons, the built-in pipeline tasks that interact with Azure don't even let you provide a user account's credentials. They require that you use a service principal.
+For these reasons, the built-in pipeline tasks that interact with Azure don't let you provide a user account's credentials. They require that you use a service principal.
 
 ## How do service principals work?
 
