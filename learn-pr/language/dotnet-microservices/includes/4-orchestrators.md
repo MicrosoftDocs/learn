@@ -8,7 +8,7 @@ Using orchestrators for production-ready applications is essential if your appli
 
 The image below illustrates deployment into a cluster of an application composed of multiple microservices (clusters).
 
-:::image type="complex" source="../media/composed-docker-applications-cluster.png" alt-text="diagram showing docker applications in a cluster":::
+:::image type="complex" source="../media/composed-docker-applications-cluster.png" alt-text="diagram showing docker applications in a cluster.":::
 This diagram shows 6 docker images deployed as 2 applications. The applications are then deployed as several clusters. The diagram is meant to show how difficult it would be to perform the deployment without a tool to help.
 :::image-end:::
 

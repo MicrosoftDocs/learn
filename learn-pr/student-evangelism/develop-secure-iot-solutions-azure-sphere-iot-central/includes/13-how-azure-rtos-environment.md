@@ -8,7 +8,7 @@ The Azure Sphere microcontroller unit (MCU) has three developer-accessible cores
 
 High-level applications running on the Cortex-A7 Linux kernel are used for less timing-sensitive tasks such as establishing network connections, negotiating security, updating device state, communicating with real-time core applications, and sending telemetry messages to cloud gateways such as IoT Hub.
 
-![Azure Sphere architecture](../media/azure-sphere-architecture.png)
+![Azure Sphere architecture.](../media/azure-sphere-architecture.png)
 
 ## What is an RTOS (Real-Time Operating System)
 
@@ -61,7 +61,7 @@ typedef struct
 
 ## Solution architecture
 
-![Inter-core communications architecture](../media/intercore-coms.png)
+![Inter-core communications architecture.](../media/intercore-coms.png)
 
 The solution architecture is as follows:
 

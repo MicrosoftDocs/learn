@@ -124,7 +124,7 @@ Azure also provides some existing templates to help you get started
 authoring your own documents. Here's a screenshot of some of the pre-made
 templates you may be offered:
 
-:::image type="content" source="../media/troubleshooting-guide-samples.png" alt-text="Screenshot of default example troubleshooting guides as found in the Azure portal":::
+:::image type="content" source="../media/troubleshooting-guide-samples.png" alt-text="Screenshot of default example troubleshooting guides as found in the Azure portal.":::
 
 There is an "advanced editor" feature for Workbooks and troubleshooting
 guides that allow you to access and insert either a JSON or an Azure

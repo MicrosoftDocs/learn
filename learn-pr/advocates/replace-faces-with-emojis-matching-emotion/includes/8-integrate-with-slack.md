@@ -21,7 +21,7 @@ A slash command exists as part of a Slack app, also known as a Slack bot.
 
     Select **Save**.
 
-    ![slash Command](../media/8.create-slash-command.png)
+    ![slash Command.](../media/8.create-slash-command.png)
 
 5. If successful, you should see the slash command appear in your list of **Slash Commands**.
 

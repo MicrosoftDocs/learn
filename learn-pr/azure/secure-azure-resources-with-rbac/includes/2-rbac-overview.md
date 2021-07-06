@@ -42,7 +42,7 @@ In several areas in the Azure portal, you'll see a pane named **Access control (
 
 The following shows an example of the Access control (IAM) pane for a resource group. In this example, Alain Charon has been assigned the Backup Operator role for this resource group.
 
-![Screenshot of the Azure portal showing the Access control-Role assignment pane with the Backup operator section highlighted](../media/2-resource-group-access-control.png)
+![Screenshot of the Azure portal showing the Access control-Role assignment pane with the Backup operator section highlighted.](../media/2-resource-group-access-control.png)
 
 ## How does Azure RBAC work?
 

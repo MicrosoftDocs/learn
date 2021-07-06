@@ -141,4 +141,4 @@ player_df.loc[player_df['ID'] == 34]
 
 The PER for player 34 is `NaN`. You haven't imputed any data yet, so that value makes sense.
 
-© 2020 Warner Bros. Ent. All Rights Reserved.
+© 2021 Warner Bros. Ent. All Rights Reserved.

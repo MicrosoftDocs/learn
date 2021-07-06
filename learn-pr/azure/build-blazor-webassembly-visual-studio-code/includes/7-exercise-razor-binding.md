@@ -51,7 +51,7 @@ In `Shared/NavMenu.razor`:
 
 Save the `Shared/NavMenu.razor` file.  The browser should refresh automatically and now have the Todo entry on the navigation bar:
 
-![Added Todo navigation element](../media/todo-nav.png)
+![Added Todo navigation element.](../media/todo-nav.png)
 
 ## Create a Todo Item
 
@@ -208,4 +208,4 @@ You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor.  
 
 1. Add items, edit items, and mark todo items done to test the component.
 
-![Completed Todo Page](../media/todo-complete.png)
+![Completed Todo Page.](../media/todo-complete.png)

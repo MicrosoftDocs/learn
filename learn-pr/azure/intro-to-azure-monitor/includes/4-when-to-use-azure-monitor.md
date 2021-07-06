@@ -33,7 +33,7 @@ Log data collected by Azure Monitor can be analyzed with queries to quickly retr
 
 Azure Monitor uses a version of the Kusto query language that is suitable for simple log queries but also includes advanced functionality such as aggregations, joins, and smart analytics.
 
-:::image type="content" source="../media/logs.png" alt-text="Depiction of log data feeding into a table display in Log Analytics":::
+:::image type="content" source="../media/logs.png" alt-text="Depiction of log data feeding into a table display in Log Analytics.":::
 
 ### Visualizations
 Many times, you may find the need to report on the specific metrics that are measured. Azure Monitor provides two main visualizations in the form of Azure dashboards and workbooks. You can make use of these two features to present a visual report to management or other interested parties, for ease of consuming the monitored data.

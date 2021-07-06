@@ -45,7 +45,7 @@ Because you are using the Consumption tier for API Management, you must configur
 
 1. For the **Request client certificates** option, select **Yes**, and then select **Save**.
 
-    ![Configure the gateway to request certificates](../media/5-config-request-certificates.png)
+    ![Configure the gateway to request certificates.](../media/5-config-request-certificates.png)
 
 ## Get the thumbprint for the certificate
 
@@ -69,7 +69,7 @@ Now, create the authentication policy within the API Management gateway.
 
 1. Select **APIs**, then select **Weather Data**, and then select the **Inbound processing** policies button.
 
-    ![Inbound processing policy button](../media/5-inbound-policy.png)
+    ![Inbound processing policy button.](../media/5-inbound-policy.png)
 
 1. Replace the `<inbound>` node of the policy file with the following XML, substituting the thumbprint you copied earlier for `desired-thumbprint`:
 

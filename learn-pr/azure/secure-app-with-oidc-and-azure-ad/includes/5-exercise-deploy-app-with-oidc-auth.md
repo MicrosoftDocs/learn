@@ -88,7 +88,7 @@ Now let's configure the app registration to authorize the URL of the web service
 
 1. Select **Save**.
 
-    ![Screenshot of an app registration](../media/5-update-registration.png)
+    ![Screenshot of an app registration.](../media/5-update-registration.png)
 
 ## Test the application
 
@@ -96,7 +96,7 @@ Now let's configure the app registration to authorize the URL of the web service
 
 1. When you're prompted, sign in. You'll be authenticated against your Azure AD tenant. The web app also requests some permissions, and you'll be prompted for your consent.
 
-    ![Screenshot of the dialog box that requests consent](../media/5-request-consent.png)
+    ![Screenshot of the dialog box that requests consent.](../media/5-request-consent.png)
 
 1. Select **Accept**. The web app then appears. The title bar includes your authenticated username, indicating that you've been successfully logged in with the identity in the Learn Module AAD Tenant directory.
 

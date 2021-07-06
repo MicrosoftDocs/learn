@@ -1,6 +1,6 @@
 Now that Fabrikam has analyzed their application, they're ready to start the refactoring process to move services out of their monolithic architecture into microservices. Let's modify the application to move the package processing service into a microservice.
 
-![Visualization of the resources for the Drone Delivery application](../media/6-drone-delivery-microservices.svg)
+![Visualization of the resources for the Drone Delivery application.](../media/6-drone-delivery-microservices.svg)
 
 ## Refactor the application
 

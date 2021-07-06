@@ -2,7 +2,7 @@ As you have already seen, different types of storage systems can be deployed bas
 
 Recall that in clouds, physical compute resources are shared among multiple tenants through virtualized servers. This approach could also apply to storage resources. Storage resources can be shared among multiple tenants, lowering cost and improving overall utilization of these resources. However, a form of isolation should be provided along with fault tolerance and other technologies to meet a specific application's SLOs. This enables clients to have predictable behavior for their applications, while sharing storage resources with other tenants. Providing end-to-end SLOs would translate into requirements for bandwidth, input/output operations per second (IOPS), priority, or control over the entire I/O path, as shown in the following figure. 
 
-![An example I/O path](../media/input-output-path.png)
+![An example I/O path.](../media/input-output-path.png)
 
 _Figure 7: An example I/O path_
 
@@ -23,7 +23,7 @@ IO­Flow is a software-defined storage architecture, designed by Microsoft, to m
 
 An example of a typical I/O path from VM to storage server is presented in Figure 8. A compute server, which consists of a number of VMs running simultaneously, interacts with a storage server. Thus, the application interaction with a file system within a VM becomes block device requests at the virtual hard disk (VHD). In this specific example, the virtual hard disk is actually a remote storage server serving files by using Microsoft's SMB protocol. Therefore, I/O requests further get translated into a network packet at the hypervisor's network driver and sent across to the remote storage server through the network. In the storage server, the network packet is unwrapped at each layer, transforming into an SMB request, which in turn translates into a file system request at the storage server. At each layer in this I/O path, IOFlow adds a queuing abstraction, which is then exposed to the IOFlow controller. The controller can translate these policies into lower-level queuing rules at each stage. 
 
-![IOFlow example](../media/input-output-flow.jpg)
+![IOFlow example.](../media/input-output-flow.jpg)
 
 _Figure 8: IOFlow example_ ([Source][^1])
 

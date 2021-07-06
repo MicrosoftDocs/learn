@@ -6,7 +6,7 @@ metadata:
   description: Create views to list the shelters in our database.
   ms.date: 3/2/2021  
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8

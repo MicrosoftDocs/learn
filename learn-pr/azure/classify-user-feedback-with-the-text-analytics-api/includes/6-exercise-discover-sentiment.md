@@ -52,7 +52,7 @@ Let's repeat the test. This time, instead of using the Test window of the portal
 
 1. In the **Resource group** panel that appears, locate the Storage Account entry, and select it.
 
-    ![Screenshot storage account selected in the Resource Group window](../media/select-storage-account.png)
+    ![Screenshot storage account selected in the Resource Group window.](../media/select-storage-account.png)
 
 1. Select **Storage Explorer (preview)** from the left menu of the Storage Account main window. This action opens the Azure Storage Explorer inside the portal.
 
