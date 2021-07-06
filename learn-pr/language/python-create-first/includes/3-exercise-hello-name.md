@@ -30,7 +30,7 @@ print("What is your name?")
 
 At this point, your code is able to output to the console, but you want this program to be able to collect input from the user, so you'll be looking at using the `input()` function next.
 
-### Step 3 - collect user input
+### Step 3 - Collect user input
 
 To collect user input, use the `input()` function by adding this line at the bottom:
 
@@ -40,7 +40,7 @@ name = input()
 
 Now the program will halt, waiting for the user to input some characters. Once the user has input some characters, followed by Enter, the program will continue on the next line.
 
-### Step 4 - output the user's input
+### Step 4 - Output the user's input
 
 You now have a program capable of collecting user input but no way of verifying that it works.
 
@@ -52,7 +52,7 @@ print("Hello" + name)
 
 The preceding line will concatenate the string "Hello" with the value of the `name` variable.
 
-### Step 5 - test your program
+### Step 5 - Test your program
 
 An important part of writing programs is running them to ensure everything works as intended.
 

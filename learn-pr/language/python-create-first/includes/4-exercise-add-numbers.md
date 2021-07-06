@@ -67,7 +67,7 @@ Second Number:
 
 The preceding output is not the desired one. You want your program to add two numbers to create a sum, but it appears that your program has concatenated two strings instead.
 
-### Step 4 - identifying the problem
+### Step 4 - Identifying the problem
 
 The problem is that the `input()` function returns data represented as strings, not numbers.  
 
