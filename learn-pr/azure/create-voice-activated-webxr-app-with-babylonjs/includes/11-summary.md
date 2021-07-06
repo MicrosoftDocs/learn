@@ -1,4 +1,4 @@
-The amusement park company you worked for needed a Virtual Reality/Augmented Reality application that showcases the interactivity of an incoming park experience. The application needs to simulate the experience of summoning a dragon in a virtual space, and it needs to be easily accessible via the web.
+The amusement park company you work for needed a Virtual Reality/Augmented Reality application that showcases the interactivity of a new park attraction. The application needs to simulate the experience of summoning a dragon in a virtual space, and it needs to be easily accessible via the web.
 
 You and your team decided to fulfill these requirements by using Azure Speech-to-text, Babylon.js, and Azure Blob Storage to implement the application. Specifically, you:
 
