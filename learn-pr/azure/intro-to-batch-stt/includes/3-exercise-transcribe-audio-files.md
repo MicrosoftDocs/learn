@@ -64,4 +64,15 @@ Let's start by preparing our environment. The following script creates our cogni
     ```bash
     storageKey=$(az storage account keys list -g $resourceGroupName -n $blobName --query [0].value)
     end=`date -u -d "120 minutes" '+%Y-%m-%dT%H:%MZ'`
-    sasKey=$(az storage blob generate-sas -c $blobContainerName -n $blobName --connection-string $blobConnectionString --permissions w --expiry $end --https-only)
+    sasToken=$(az storage blob generate-sas -c $blobContainerName -n $blobName --connection-string $blobConnectionString --permissions w --expiry $end --https-only)
+
+1. Run the following command use the .NET application to transcribe your audio files
+
+    ```dotnet
+    cd mslearn-batch-stt
+    dotnet user-secrets set CognitiveServices:BatchSTT:key $apiKeySpeech
+    dotnet user-secrets set CognitiveServices:BatchSTT:endpoint $endpointSpeech
+    dotnet user-secrets set CognitiveServices:BatchSTT:sasToken $sasToken
+    dotnet restore
+    dotnet run
+    ```

@@ -1,8 +1,6 @@
+The first step to train a model is to upload training data. See [Prepare and test your data](./how-to-custom-speech-test-and-train.md) for step-by-step instructions to prepare human-labeled transcriptions and related text (utterances and pronunciations).
+
 ## Train and evaluate a model
-
-The first step to train a model is to upload training data. See [Prepare and test your data](./how-to-custom-speech-test-and-train.md) for step-by-step instructions to prepare human-labeled transcriptions and related text (utterances and pronunciations). After you upload training data, follow these instructions to start training your model:
-
-learn.docs.microsoft.com?azure-portal=true
 
 1. Sign in to the [Custom Speech portal](https://speech.microsoft.com/customspeech)
 1. Go to **Speech-to-text** > **Custom Speech**
@@ -49,9 +47,30 @@ It might take a minute for your endpoint to be created.
 
 ## Use your custom model
 
+Now, we need to transfer the details for the endpoint over to the Cloud Shell.
+
 1. Select your newly created endpoint
 
     Notice how Speech Studio provides code to connect to your custom model in multiple programming languages via the SDK, REST API, and WebSocket.
+1. Return to the Cloud Shell and paste in the following command
 
+    ```
+    subKey=<Paste key here>
+    ```
 
-After your endpoint is deployed, the endpoint name appears as a link. Select the link to see information specific to your endpoint, like the endpoint key, endpoint URL, and sample code. Take a note of the expiration date and update the endpoint's model before that date to ensure uninterrupted service.
+1. Return to the Custom Speech portal, copy your subscription key
+1. Return to the Cloud Shell and replace the `<Paste key here>` in the command with your Subscription key from the Custom Speech portal
+1. Select <kbd>Enter</kbd>
+1. Run the following command to set the environment variable for your .NET application, allowing it to access your newly created endpoint.
+
+    ```
+    cd mslearn-batch-stt
+    dotnet user-secrets set CognitiveServices:BatchSTT:customKey $subKey
+    ```
+
+1. Run the following command in the Cloud Shell to use your custom model
+
+    ```dotnet
+    dotnet restore
+    dotnet run
+    ```
