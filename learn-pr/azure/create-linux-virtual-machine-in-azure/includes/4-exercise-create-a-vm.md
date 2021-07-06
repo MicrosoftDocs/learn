@@ -14,7 +14,7 @@ We can create Linux VMs with the Azure portal, the Azure CLI, or Azure PowerShel
 
 The VM creation experience in the portal is presented in a wizard format to walk you through all the configuration areas for the VM. Selecting **Next** takes you to the next configurable tab. However, you can move between the tabs at will by selecting them in the sub menu.
 
-:::image type="content" source="xxx" alt-text="Screenshot of the Azure portal showing Create a virtual machine pane for an Ubuntu Server machine." lightbox="xxx#lightbox":::![](../media/3-azure-portal-create-vm.png)
+:::image type="content" source="../media/3-azure-portal-create-vm.png" alt-text="Screenshot of the Azure portal showing Create a virtual machine pane for an Ubuntu Server machine." lightbox="../media/3-azure-portal-create-vm.png#lightbox":::
 
 After you complete all the required options (identified with red asterisks), you can skip the remainder of the wizard experience, and start creating the VM by selecting **Review + create** at the bottom of the wizard.
 
@@ -76,4 +76,4 @@ We'll start with the **Basics** tab. Remember that these instructions use the sa
 
 1. After the system validates your options, and gives you details about the VM being created, select **Create** to create and deploy the VM. The Azure dashboard will show the VM that's being deployed. This may take several minutes.
 
-While that's deploying, let's look at what we can do with this VM.
+While it's deploying, let's consider what we can do with this VM.
