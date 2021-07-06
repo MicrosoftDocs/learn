@@ -76,7 +76,7 @@ At this point, you have a Firewall deployed within its own virtual network and y
 
 1. After the deployment is complete, select **Go to resource**.
 1. In the center pane, you see **Provisioning state: Succeeded**.
-:::image type="content" source="../media/5-firewall-overview-page.png" alt-text="Screenshot that shows the status and ip addresses for the firewall.":::
+:::image type="content" source="../media/5-firewall-overview-page.png" alt-text="Screenshot that shows the status and ip addresses for the firewall." lightbox="../media/5-firewall-overview-page.png":::
 1. From the right-hand side of the center pane, copy the **Firewall private IP** address.
 1. Next to **Firewall public IP**, select **fw-pip**.
 1. Copy the **IP address**.
