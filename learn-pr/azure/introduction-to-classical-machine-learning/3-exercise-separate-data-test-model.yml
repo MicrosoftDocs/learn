@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 8
 sandbox: true
-notebook: https://review.docs.microsoft.com/learn/modules/introduction-to-classical-machine-learning/notebooks/2-3-exercise-separate-data-test-model.ipynb?branch=pr-en-us-18698
+notebook: notebooks/2-3-exercise-separate-data-test-model.ipynb
