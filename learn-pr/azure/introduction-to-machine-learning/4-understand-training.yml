@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.machinelearning.introduction-to-machine-learning.what-is-error
+uid: learn.machinelearning.introduction-to-machine-learning.understand-training
 title: What are inputs and outputs?
 metadata:
   title: What are inputs and outputs?
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-understanding-training.md)]
+  [!include[](includes/4-understand-training.md)]

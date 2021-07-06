@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.machinelearning.introduction-to-machine-learning.testing-models
+uid: learn.machinelearning.introduction-to-machine-learning.test-models
 title: How to use a model
 metadata:
   title: How to use a model
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-testing-models.md)] 
+  [!include[](includes/6-test-models.md)] 

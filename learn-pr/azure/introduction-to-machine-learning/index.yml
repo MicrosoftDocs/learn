@@ -25,13 +25,13 @@ roles:
 - student
 products: 
 - azure
-units: 
+units:
 - learn.machinelearning.introduction-to-machine-learning.introduction
 - learn.machinelearning.introduction-to-machine-learning.creating-ml-models
 - learn.machinelearning.introduction-to-machine-learning.exercise-create-ml-model
-- learn.machinelearning.introduction-to-machine-learning.what-is-error
+- learn.machinelearning.introduction-to-machine-learning.understand-training
 - learn.machinelearning.introduction-to-machine-learning.exercise-improve-models
-- learn.machinelearning.introduction-to-machine-learning.testing-models
+- learn.machinelearning.introduction-to-machine-learning.test-models
 - learn.machinelearning.introduction-to-machine-learning.exercise-test-ml-models
 - learn.machinelearning.introduction-to-machine-learning.knowledge-check
 - learn.machinelearning.introduction-to-machine-learning.summary
