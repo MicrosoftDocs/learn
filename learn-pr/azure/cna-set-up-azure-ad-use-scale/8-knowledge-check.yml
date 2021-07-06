@@ -47,4 +47,4 @@ quiz:
       explanation: "Incorrect. This is the endpoint for a single-tenant app."
     - content: 'login.microsoftonline.com/common'
       isCorrect: true
-      explanation: "Correct. With a multitenant app, you can't determine ahead of time which tenant will be used, so you need to use the 'https://login.microsoftonline.com/common` endpoint, which serves all Azure AD tenants."
+      explanation: "Correct. With a multitenant app, you can't determine ahead of time which tenant will be used, so you need to use the 'https://login.microsoftonline.com/common' endpoint, which serves all Azure AD tenants."
