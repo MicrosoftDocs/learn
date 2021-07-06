@@ -30,4 +30,4 @@ In our scenario, a custom model will help you to overcome the problems your offi
 
 Converting speech to text using Batch Transcription offers additional business opportunities using Azure services. This is because the JSON format produced by Batch Transcription is readily indexable, and is digestable by services such as the *Text Analytics Sentiment Analysis or Opinion Mining* service, which can identify which aspects of the conversation the speaker felt positively or negatively about. Allowing you to get further insights from your data to take actions that lead to more positive outcomes.
 
-![Diagram showing Text Analytics sentiment analysis versus opinion mining.](../media/4-text-analytics-example)
+![Diagram showing Text Analytics sentiment analysis versus opinion mining.](../media/4-text-analytics-example.png)
