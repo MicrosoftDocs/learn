@@ -40,17 +40,17 @@ quiz:
     - content: "Phrase list"
       isCorrect: false
       explanation: "Adding phrases to the phrase list helps Azure Speech-to-text to identify those phrases more accurately, but this method does not involve training a new model."
-  - content: "What kind of configuration does the SpeechConfig class hold?"
+  - content: "What kind of configuration data does the SpeechConfig class contain?"
     choices:
     - content: "Audio source"
       isCorrect: false
-      explanation: "Configuration related to audio source is held in the AudioConfig class."
+      explanation: "Configuration related to the audio source is held in the AudioConfig class."
     - content: "Azure Speech instance"
       isCorrect: true
       explanation: "Configuration related to the Azure Speech instance is held in the SpeechConfig class."
     - content: "Speech recognizer events"
       isCorrect: false
-      explanation: "Configuration related to the event triggers of speech recognizer is stored in the SpeechRecognizer instance."
+      explanation: "Handlers for speech recognizer-related events are stored in the SpeechRecognizer instance."
   - content: "Which of the following can the WebXR Session Manager be used for?"
     choices:
     - content: "Creating a 3D object in a Babylon.js scene"
