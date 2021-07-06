@@ -5,8 +5,9 @@ Your profile stores your activities, collections, achievements, and settings. To
 
 Here are some main items in your profile:
 
-| Overview | Overview of your recent activity, bookmarks and achievements |
+|          |                                                              |
 |----------|--------------------------------------------------------------|
+| Overview | Overview of your recent activity, bookmarks and achievements |
 |Activity | All your activities - check here for your in-progress and completed modules and learning paths |
 |Challenges | Tracks participation in the Cloud Skills Challenge (CSC), a gamified experience using Microsoft Learn content that encourages rapid learning of Microsoft technologies |
 |Bookmarks | Modules or learning paths you have bookmarked |
