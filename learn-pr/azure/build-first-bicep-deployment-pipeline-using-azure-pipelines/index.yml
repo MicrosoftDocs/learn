@@ -3,14 +3,14 @@ uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines
 metadata:
   moduleType: standard
   title: Build your first Bicep deployment pipeline by using Azure Pipelines
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  description: TODO
   ms.date: 07/05/2021
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build your first Bicep deployment pipeline by using Azure Pipelines
-summary: "TODO: 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master"
+summary: TODO
 abstract: |
   After completing this module, you'll be able to:
     - Automate Bicep deployments by using a pipeline in Azure Pipelines
