@@ -35,6 +35,7 @@ units:
 - learn.protect-virtual-desktop-deployment-azure-firewall.exercise-deploy-azure-firewall
 - learn.protect-virtual-desktop-deployment-azure-firewall.allow-outbound-network-access
 - learn.protect-virtual-desktop-deployment-azure-firewall.exercise-route-network-traffic
+- learn.protect-virtual-desktop-deployment-azure-firewall.knowledge-check
 - learn.protect-virtual-desktop-deployment-azure-firewall.summary
 badge:
   uid: learn.protect-virtual-desktop-deployment-azure-firewall.badge
