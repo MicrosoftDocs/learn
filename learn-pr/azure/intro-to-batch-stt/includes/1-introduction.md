@@ -8,7 +8,7 @@ Throughout this module, we’ll be using an example scenario to illustrate key B
 
 In this scenario, you’re a customer service call center manager needing to ensure compliance standards when interacting with customers. For example, you may need to ensure that correct language has been used to obtain express consent for certain transactions to be executed. While this can be audited manually, listening to hundreds of phone calls a day to take note of any breaches requires a lot of manual labor and is prone to errors due to the variable quality of audio recordings.  
 
-You have been tasked with identifying how to speed up this process, and ensure your company is meeting standards with as few errors as possible. In this module, we’ll go through the features and benefits of Batch Transcription to decide if it’s the right service for your needs. 
+You have been tasked with identifying how to speed up this process, and ensure your company is meeting standards with as few errors as possible. In this module, we’ll go through the features and benefits of Batch Transcription to decide if it’s the right service for your needs.
 
 ## Prerequisites
 
