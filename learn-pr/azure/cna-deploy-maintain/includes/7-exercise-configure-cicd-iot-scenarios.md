@@ -124,7 +124,7 @@ For the sake of simplicity, you'll implement the Azure IoT Edge CI/CD pipeline b
 
     :::image type="content" source="../media/7-azure-devops-release-pipeline-edit-button.png" alt-text="Screenshot of the cna-devops-07-iothub - CD pipeline with the Edit button displaying." border="false":::
 
-1. In the **All pipelines > cna-devops-07-iothub - CD** pane, on the **Pipeline** tab, representing the **qa** stage, select the pre-deployment conditions applicable to this stage.
+1. In the **All pipelines > cna-devops-07-iothub - CD** pane, on the **Pipeline** tab, from the **qa** stage, select the pre-deployment conditions applicable to this stage.
 
     :::image type="content" source="../media/7-azure-devops-release-pipeline-qa-pre-deployment-conditions.png" alt-text="Screenshot of the cna-devops-07-iothub - CD pipeline with the pre-deployment conditions of the qa stage." border="false":::
 
