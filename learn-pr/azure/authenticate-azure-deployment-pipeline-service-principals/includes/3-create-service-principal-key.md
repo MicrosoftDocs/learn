@@ -152,7 +152,7 @@ It's a good practice to document your service principals in a place that you and
 > [!div class="checklist"]
 > * Key identifying information, like its name and application ID.
 > * The purpose of the service principal.
-> * Who created it, who's responsible for managing it and its keys, and who might have answers for you if there's a problem.
+> * Who created it, who's responsible for managing it and its keys, and who might have answers if there's a problem.
 > * The permissions that it needs, and a clear justification for why it needs them.
 > * What its expected lifetime is.
 
