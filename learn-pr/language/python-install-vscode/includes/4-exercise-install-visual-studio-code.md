@@ -47,8 +47,8 @@ For instructions on using a package manager like APT or YUM to install Visual St
 
 1. Under the Linux logo, select either the **.deb** installer (for .deb-based package managers) or the **.rpm** installer (for .rpm-based package managers).
 
-> [NOTE!]
-> If you downloaded the installer, you might need to open your file explorer and go to your Downloads folder, or wherever your web browser saved the installer file.
+    > [!NOTE]
+    > If you downloaded the installer, you might need to open your file explorer and go to your Downloads folder, or wherever your web browser saved the installer file.
 
 1. Double-click the installer file to start the installation. On Ubuntu and Fedora, double-clicking the installer opens the Software application. This application provides a convenient way to view details about the application you're about to install. In this case, select **Install**.
 
@@ -56,10 +56,10 @@ For instructions on using a package manager like APT or YUM to install Visual St
 
     After a moment, Visual Studio Code should be installed.
 
-> [NOTE!]
-> The instructions for installing Visual Studio Code differ, depending on which desktop environment your distribution of Linux uses. You'll need to search through the list of applications installed on your computer.
-> For example, if your distribution uses the GNOME desktop, you should be able to locate the Show Applications icon (a grid of dots) docked on the left side of the screen, usually near the bottom. This icon will open a full-screen listing of all applications installed on your system. The Visual Studio Code icon should be included in the list.
-
+    > [!NOTE]
+    > The instructions for installing Visual Studio Code differ, depending on which desktop environment your distribution of Linux uses. You'll need to search through the list of applications installed on your computer.
+    > For example, if your distribution uses the GNOME desktop, you should be able to locate the Show Applications icon (a grid of dots) docked on the left side of the screen, usually near the bottom. This icon will open a full-screen listing of all applications installed on your system. The Visual Studio Code icon should be included in the list.
+    
 1. Select the Visual Studio Code icon to start the application.
 
 ::: zone-end
