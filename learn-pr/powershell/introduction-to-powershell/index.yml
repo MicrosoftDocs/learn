@@ -15,7 +15,6 @@ abstract: |
   After completing this module, you'll be able to:
   - Understand what PowerShell is and what you can use it for.
   - Use commands to automate tasks.
-  - Leverage the _core_ cmdlets to discover commands and learn how they work. 
 iconUrl: /learn/achievements/powershell/introduction-to-powershell.svg
 levels:
   - beginner
