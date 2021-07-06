@@ -6,7 +6,7 @@ Recall that Azure Firewall is a cloud-based security service that protects your 
 
 All traffic to and from the internet is denied by default. Traffic is only allowed if it passes various tests, such as the configured firewall rules.
 
-:::image type="content" source="../media/2-firewall-description.png" alt-text="Diagram of Azure Firewall in a hub virtual network with traffic to and from the internet passing through the hub network to spoke virtual networks, and an on-premises network." border="false":::
+:::image type="content" source="../media/2-firewall-description.png" alt-text="Diagram of Azure Firewall in a hub virtual network with traffic passing through the hub to spoke virtual networks, and an on-premises network." border="false":::
 
 Azure Firewall works not only for traffic to and from the internet, but also internally. Internal traffic filtering includes spoke-to-spoke traffic and hybrid cloud traffic between your on-premises network and your Azure virtual network.
 
