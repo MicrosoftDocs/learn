@@ -13,8 +13,8 @@ summary: Batch Transcription is an Azure cognitive service that enables you to t
 abstract: |
   In this module, you will:
   - Assess the benefits of Batch Transcription
-  - Describe what Batch Transcription is
-  - Define scenarios where Batch Transcription can be applied
+  - Transcribe a batch of audio files
+  - Create a specialized customer service model to transcribe call center recordings
 prerequisites: A basic familiarity with Azure
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
