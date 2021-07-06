@@ -101,6 +101,7 @@ Now that we have a collection with some interesting learning paths and modules i
 1. Great job! You haven now learned how to create collections and share them on Learn.
 
 [Image]
+
 <!-- 5. Validation chunk -------------------------------------------------------------------------------------
 
     Goal: Helps the learner to evaluate if they completed the exercise correctly.
