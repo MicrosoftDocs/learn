@@ -187,7 +187,7 @@ Follow these steps to download the Python installer from the Python website.
 
     After a moment, a file named _python-3.9.0-mascosx10.9.pkg_ should download to the Downloads stack in your Dock.
 
-    > [NOTE!]
+    > [!NOTE]
     > the name of the downloaded file varies depending on what's the latest version of Python.
 
 1. Double-click the _.pkg_ file that you downloaded to start the installer. The Python installer will prompt you to install, verify, and accept various options and license agreements. Take the time to read through these prompts to understand what the installer will do to your computer.
