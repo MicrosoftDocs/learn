@@ -43,7 +43,7 @@ To set up a new user, perform the following steps:
 To determine the appropriate process, perform the following steps:
 
 1. Review the DSR:
-In this task we will step through a scenario where we receive a DSR from a user, then identify the steps we need to perform in order to fulfill that request. There are no actual tasks to complete other than become familiar with the processes and steps involved 
+In this task we will step through a scenario where we receive a DSR from a user, then identify the steps we need to perform in order to fulfill that request. There are no actual tasks to complete other than become familiar with the processes and steps involved.
 
    - DSR form received today
    - Identity verified today, as follows
@@ -85,7 +85,7 @@ You'll now use the Azure Active Directory admin center to find personal informat
 
 You'll now respond to  the DSR by deleting the data subject's user account:
 
-1. In the All users blade, select the check box for the data subject's user account (Avery Howard).  
+1. In the **All users** blade, select the check box for the data subject's user account (Avery Howard).  
 1. Select **Delete user**, and then select **OK** to confirm.
 1. Select **Deleted users**.
 1. In the **Deleted users** blade, select the data subject's user account check box.
