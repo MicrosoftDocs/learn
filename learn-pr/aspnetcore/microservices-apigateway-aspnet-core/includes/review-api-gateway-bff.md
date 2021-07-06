@@ -66,7 +66,7 @@ The eShop app with the aggregator implemented as *Web.Sales.HttpAggregator* is i
 :::image type="content" source="../media/api-gateway-bff-nginx-ingress.png" alt-text="eShopOnContainers architecture with WebSalesAgg" lightbox="../media/api-gateway-bff-nginx-ingress.png":::
 
 > [!NOTE]
-> In this implementation, there isn't a UI to consume the WebSales aggregator. You will use the Swagger UI as an external client to test the functionality.
+> In this implementation, there isn't a UI to consume the WebSales aggregator. You will use the Swagger UI as a client for testing.
 
 The *Web.Sales.HttpAggregator* Web API project will have the following components:
 
