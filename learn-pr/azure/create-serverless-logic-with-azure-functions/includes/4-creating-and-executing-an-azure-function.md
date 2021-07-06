@@ -84,7 +84,7 @@ The functions you create in a function app appear by selecting **Functions** und
 
 When you select a function in your function app, your function pane appears. To display and edit your code for your function, in the left menu pane, under **Developer**, select **Code + Test**. In the function's path above the code box, select *function.json* from the dropdown list, and then select **Test/Run** from the top menu bar for the Input/Output pane to appear. See the following screenshot.
 
-:::image type="content" source="../media/4-file-navigation.png" alt-text="Screenshot of the function editor pane showing the expanded Test/Run menu, with "HttpTrigger1" function selected in app service navigation and Input tab highlighted." lightbox="../media/4-file-navigation.png#lightbox":::
+:::image type="content" source="../media/4-file-navigation.png" alt-text="Screenshot of the function editor pane showing the expanded Test/Run menu, with HttpTrigger1 function selected in app service navigation and Input tab highlighted." lightbox="../media/4-file-navigation.png":::
 
 As you can see, the pane on the right has tabs for **Input** and **Output**. Selecting the **Input** tab provides parameters to test the HTTP request for your function.
 
