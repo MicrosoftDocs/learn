@@ -120,7 +120,7 @@ For the sake of simplicity, you'll implement the Azure IoT Edge CI/CD pipeline b
     :::image type="content" source="../media/7-azure-devops-pipeline-editor-powershell-set.png" alt-text="Screenshot of the PowerShell Script task with the type and script set to the previously mentioned settings." border="false":::
 
 1. In the **cna-devops-07-iothub - CI** pane, in the **Tasks** pane, select **Save & queue**. From the drop-down menu, select **Save**, and then in the **Save build pipeline** pane, select **Save**.
-1.	In the **cna-devops-07-iothub - CI** pane, in the menu, in the **Pipelines** section, select **Releases**. Ensure that the **cna-devops-07 - CD** release pipeline is selected, and then select **Edit**.
+1. In the **cna-devops-07-iothub - CI** pane, in the menu, in the **Pipelines** section, select **Releases**. Ensure that the **cna-devops-07 - CD** release pipeline is selected, and then select **Edit**.
 
     :::image type="content" source="../media/7-azure-devops-release-pipeline-edit-button.png" alt-text="Screenshot of the cna-devops-07-iothub - CD pipeline with the Edit button displaying." border="false":::
 
