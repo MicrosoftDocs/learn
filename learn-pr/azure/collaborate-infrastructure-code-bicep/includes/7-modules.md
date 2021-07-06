@@ -55,3 +55,6 @@ When you include this module in a Bicep template, you can easily configure it to
 
 > [!NOTE]
 > Remember to make sure your template is valid for both scenarios - when the `if` statement is evaluated as either `true` or `false`.
+
+<!-- TODO omit default params on modules -->
+<!-- TODO should your module be aware of environments and config maps? -->

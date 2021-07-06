@@ -1,106 +1,32 @@
 @description('The location into which your Azure resources should be deployed.')
-param location string = resourceGroup().location
-
-@description('Select the type of environment you want to provision. Allowed values are Production and Test.')
-@allowed([
-  'Production'
-  'Test'
-])
-param environmentType string
+param location string
 
 @description('A unique suffix to add to resource names that need to be globally unique.')
 @maxLength(13)
-param resourceNameSuffix string = uniqueString(resourceGroup().id)
-
-@description('The administrator login username for the SQL server.')
-param sqlServerAdministratorLogin string
+param resourceNameSuffix string
 
 @secure()
-@description('The administrator login password for the SQL server.')
-param sqlServerAdministratorLoginPassword string
+@description('The connection string to use to access the Azure SQL database.')
+param sqlDatabaseConnectionString string
+
+@description('The SKU to use for the App Service plan.')
+param appServicePlanSku object
 
 @description('The tags to apply to each resource.')
-param tags object = {
-  CostCenter: 'Marketing'
-  DataClassification: 'Public'
-  Owner: 'WebsiteTeam'
-  Environment: 'Production'
-}
+param tags object
 
 // Define the names for resources.
 var appServiceAppName = 'webSite${resourceNameSuffix}'
 var appServicePlanName = 'AppServicePLan'
-var sqlServerName = 'sqlserver${resourceNameSuffix}'
-var sqlDatabaseName = 'ToyCompanyWebsite'
 var managedIdentityName = 'WebSite'
 var applicationInsightsName = 'AppInsights'
 
-// Define the SKUs for each component based on the environment type.
-var environmentConfigurationMap = {
-  Production: {
-    appServicePlan: {
-      sku: {
-        name: 'S1'
-        capacity: 2
-      }
-    }
-    sqlDatabase: {
-      sku: {
-        name: 'S1'
-        tier: 'Standard'
-      }
-    }
-  }
-  Test: {
-    appServicePlan: {
-      sku: {
-        name: 'F1'
-        capacity: 1
-      }
-    }
-    sqlDatabase: {
-      sku: {
-        name: 'Basic'
-      }
-    }
-  }
-}
-
 var contributorRoleDefinitionId = 'b24988ac-6180-42a0-ab88-20f7382dd24c' // This is the built-in Azure 'Contributor' role.
-var sqlDatabaseConnectionString = 'Data Source=tcp:${sqlServer.properties.fullyQualifiedDomainName},1433;Initial Catalog=${sqlDatabaseName};User Id=${sqlServerAdministratorLogin}@${sqlServer.properties.fullyQualifiedDomainName};Password=${sqlServerAdministratorLoginPassword};'
-
-resource sqlServer 'Microsoft.Sql/servers@2019-06-01-preview' = {
-  name: sqlServerName
-  location: location
-  tags: tags
-  properties: {
-    administratorLogin: sqlServerAdministratorLogin
-    administratorLoginPassword: sqlServerAdministratorLoginPassword
-    version: '12.0'
-  }
-}
-
-resource sqlDatabase 'Microsoft.Sql/servers/databases@2020-08-01-preview' = {
-  parent: sqlServer
-  name: sqlDatabaseName
-  location: location
-  sku: environmentConfigurationMap[environmentType].sqlDatabase.sku
-  tags: tags
-}
-
-resource sqlFirewallRule 'Microsoft.Sql/servers/firewallRules@2014-04-01' = {
-  parent: sqlServer
-  name: 'AllowAllWindowsAzureIps'
-  properties: {
-    endIpAddress: '0.0.0.0'
-    startIpAddress: '0.0.0.0'
-  }
-}
 
 resource appServicePlan 'Microsoft.Web/serverfarms@2020-06-01' = {
   name: appServicePlanName
   location: location
-  sku: environmentConfigurationMap[environmentType].appServicePlan.sku
+  sku: appServicePlanSku
   tags: tags
 }
 
