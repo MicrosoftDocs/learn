@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 12
 sandbox: true
-notebook: https://review.docs.microsoft.com/learn/modules/machine-learning-confusion-matrix/notebooks/8-7-exercise-metrics-and-curves.ipynb?branch=pr-en-us-18704
+notebook: notebooks/8-7-exercise-metrics-and-curves.ipynb
