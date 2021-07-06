@@ -59,5 +59,3 @@ quiz:
     - content: "Parameters for modules are not supported."
       isCorrect: false
       explanation: "Incorrect. Modules can include parameters. Their values are populated by referencing using the `params` property when you declare the module."
-
-# TODO one more question - an applied situation?
