@@ -1,5 +1,5 @@
 ﻿### YamlMime:ModuleUnit
-uid: learn.azure.cna-build-basic-service.7-exercise-set-up-next.js-app
+uid: learn.azure.cna-build-basic-service.exercise-set-up-next-js-app.yml
 title: Exercise - Set up a Next.js management web app
 metadata:
   title: Exercise - Set up a Next.js management web app
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 20
 content: |
-  [!include[](includes/7-exercise-set-up-next.js-app.md)]
+  [!include[](includes/7-exercise-set-up-next-js-app.yml.md)]

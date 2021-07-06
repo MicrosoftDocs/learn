@@ -1,5 +1,5 @@
 ﻿### YamlMime:ModuleUnit
-uid: learn.azure.cna-build-basic-service.5-exercise-connect-express.js-postgresql
+uid: learn.azure.cna-build-basic-service.exercise-connect-express-js-postgresql
 title: Exercise - Connect Express.js to Azure Database for PostgreSQL
 metadata:
   title: Exercise - Connect Express.js to Azure Database for PostgreSQL
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 25
 content: |
-  [!include[](includes/5-exercise-connect-express.js-postgresql.md)]
+  [!include[](includes/5-exercise-connect-express-js-postgresql.md)]
