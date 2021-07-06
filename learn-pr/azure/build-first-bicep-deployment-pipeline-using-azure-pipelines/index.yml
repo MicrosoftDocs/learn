@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines
+metadata:
+  moduleType: standard
+  title: Build your first Bicep deployment pipeline by using Azure Pipelines
+  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  ms.date: 07/05/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build your first Bicep deployment pipeline by using Azure Pipelines
+summary: "TODO: 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master"
+abstract: |
+  After completing this module, you'll be able to:
+    - Automate Bicep deployments by using a pipeline in Azure Pipelines
+    - Configure a service connection to authenticate a pipeline to Azure
+    - Select an appropriate pipeline trigger and set of tasks for a Bicep deployment
+prerequisites: |
+  You should be familiar with:
+  - Deploying basic Bicep templates.
+  - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+
+  To follow along with the exercises in the module, you'll need the following:
+  - An Azure subscription and resource group.
+  - [Visual Studio Code](https://code.visualstudio.com), installed locally.
+  - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - developer
+  - administrator
+products:
+  - azure-resource-manager
+units:
+- learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.introduction
+- learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.understand-azure-pipelines
+- learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.exercise-create-run-basic-pipeline
+- learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.deploy-bicep-files-pipeline
+- learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.exercise-add-bicep-deployment-task-pipeline
+- learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.control-pipeline-executes-triggers
+- learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.exercise-update-pipeline-trigger
+- learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.knowledge-check
+- learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.summary
+badge:
+  uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.badge
