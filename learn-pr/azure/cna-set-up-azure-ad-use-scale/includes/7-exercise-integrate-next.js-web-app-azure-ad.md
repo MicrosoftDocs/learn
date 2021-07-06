@@ -294,7 +294,7 @@ You're ready to validate the Azure AD integration of the app. You could containe
     > [!NOTE]
     > If the initial attempt fails, try again.
 
-    :::image type="content" source="../media/7-azure-ad-next.js-app-displayed-database-inventory.png" alt-text="Screenshot of the page of the Express.js web app displaying the inventory data.":::
+    :::image type="content" source="../media/7-azure-ad-next.js-app-displayed-database-inventory.png" alt-text="Screenshot of the page of the Express.js web app displaying the inventory data." lightbox="7-azure-ad-next.js-app-displayed-database-inventory.png":::
 
 1. Close the web browser window in the Incognito/InPrivate mode.
 
