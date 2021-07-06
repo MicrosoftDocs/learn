@@ -17,7 +17,7 @@ abstract: |
     - Document your Bicep code by using comments and resource tags
     - Convert a single large Bicep template to smaller, reusable modules
 prerequisites: |
-  You should be familiar with Bicep structure and syntax, including parameters and modules.
+  You should be familiar with Bicep structure and syntax, including parameters, modules, and conditions.
 
   To follow along with the exercises in the module, you'll need the following installed locally:
   - [Visual Studio Code](https://code.visualstudio.com)

@@ -29,7 +29,7 @@ By the end of this module, you'll be able to author Bicep templates in a way the
 
 ## Prerequisites
 
-You should be familiar with Bicep structure and syntax, including parameters and modules.
+You should be familiar with Bicep structure and syntax, including parameters, modules, and conditions.
 
 To follow along with the exercises in the module, you'll need the following installed locally:
 - [Visual Studio Code](https://code.visualstudio.com)
