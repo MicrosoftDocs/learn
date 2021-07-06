@@ -37,7 +37,7 @@ units:
 - learn.azure.cna-set-up-apps-use-scale.4-azure-ad-app-development
 - learn.azure.cna-set-up-apps-use-scale.5-exercise-implement-multitenant-data
 - learn.azure.cna-set-up-apps-use-scale.6-manage-monitor-azure-ad-apps
-- learn.azure.cna-set-up-apps-use-scale.7-exercise-integrate-next.js-web-app-azure-ad
+- learn.azure.cna-set-up-apps-use-scale.7-exercise-integrate-next-js-web-app-azure-ad
 - learn.azure.cna-set-up-apps-use-scale.8-knowledge-check
 - learn.azure.cna-set-up-apps-use-scale.9-summary
 badge:
