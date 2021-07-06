@@ -1,23 +1,23 @@
-In the previous unit, you developed and deployed a newly created BFF to the kubernetes cluster. In this exercise, you'll learn the different ways to make the Sales BFF available outside the cluster for the client to consume.
+In the previous unit, you developed and deployed a newly created BFF to the kubernetes cluster. In this exercise, you'll learn the different ways to make the Web Sales BFF available outside the cluster for the client to consume.
 
 ## Route External Traffic using Ingress
 
-Until now, you understood that how the API Gateway pattern can be helpful for your microservices architecture. But you still need a mechanism for external traffic to talk to the services deployed within the Kubernetes cluster. For that, in the `eShopOnContainers` reference application, you'll use *NGINX Ingress Controller*. You'll also explore the *Azure Application Gateway Ingress Controller* instead of the *NGINX Ingress Controller* to route HTTP traffic in the cluster.
+You've seen how the API Gateway pattern can be helpful for your microservices architecture. However, you still need a mechanism for external traffic to talk to the services deployed within the Kubernetes cluster. For that, you'll use NGINX Ingress Controller. You'll also explore using Azure Application Gateway Ingress Controller instead of the NGINX Ingress Controller to route HTTP traffic in the cluster.
 
 ## Kubernetes Ingress Controller
 
-The Kubernetes ingress is basically an HTTP traffic router, that's usually used to expose HTTP and HTTPS endpoints outside of a Kubernetes cluster through a single base url, typically with the help of a Load Balancer. It helps to route the traffic from outside to inside the Kubernetes cluster.
+The Kubernetes ingress is basically an HTTP traffic router. It's typically used to expose HTTP and HTTPS endpoints outside of a Kubernetes cluster through a single base URL, often with the help of a load balancer.
 
 To implement an ingress in a Kubernetes cluster you need:
 
-- Al least one **ingress controller**.
-- Usually, several **ingress resources**, typically one per exposed service.
+- At least one **ingress controller**.
+- One or more **ingress resources**, typically one per exposed service.
 
-The ingress controller has the responsibility to do the routing, and the ingress resources are just the configuration for the controller.
+The ingress controller is responsible for routing requests, and the ingress resources are configuration for the controller.
 
 In a typical Kubernetes cluster the pods and services are not accessible outside the cluster.
 
-The [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/) is probably the most widely used open-source ingress controller, and the one currently used in initial eShopOnContainers deployment.
+The [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/) is arguably the most widely used open-source ingress controller, and the one used in eShopOnContainers by default.
 
 ### Routes configuration
 
@@ -82,9 +82,9 @@ The section delimited between `{{- if .Values.useHostName }}` and `{{- end }}` h
 
 ### Azure Application Gateway
 
-The API Gateway used in eShopOnContainers is fine as a learning resource and many real-world scenarios, but for large-scale scenarios you need a more robust solution that takes care of common, general requirements, so you can focus on the value-adding features of your application.
+The API Gateway used in eShopOnContainers is fine as a learning resource and many real-world scenarios, but for large-scale scenarios you need a more robust solution that takes care of common, general requirements. This enables you to focus on value-adding features of your application.
 
-Azure Application Gateway is a managed solution that allows you to handle any-size scenarios that can scale to world-wide level if necessary. Azure Application Gateway has several [key features](/azure/application-gateway/features) that help you tackle real-world scenarios, like the following:
+Azure Application Gateway is a managed solution that allows you to handle any-size scenarios that can scale to world-wide level if necessary. Azure Application Gateway has several [key features](/azure/application-gateway/features) that help you tackle real-world scenarios, including the following:
 
 - Secure Sockets Layer (SSL/TLS) termination.
 - Auto-scaling.
@@ -95,7 +95,7 @@ Azure Application Gateway is a managed solution that allows you to handle any-si
 
 The Application Gateway Ingress Controller (AGIC) makes it easy to integrate the Application Gateway with your Kubernetes cluster. The next image shows the general architecture of the solution.
 
-![AGIC overview](../media/azure-application-gateway-ingress-controller-overview.png)
+:::image type="content" source="../media/azure-application-gateway-ingress-controller-overview.png" alt-text="AGIC overview" lightbox="../media/azure-application-gateway-ingress-controller-overview.png":::
 
 In the image above, you can see that the AGIC lives inside the AKS cluster as an Ingress Controller, although it isn't really routing any traffic. The AGIC monitors the cluster state using the Kubernetes API and applies the required configuration to the Application Gateway, so it can route traffic directly to the pods.
 
@@ -110,8 +110,8 @@ AGIC ingress controller has many advantages over in-cluster ingress controller.
 - AGIC doesn't take any resource of the Kubernetes cluster as it runs outside of the cluster.
 - External traffics doesn't go through the extra hop of the ingress controller pod, which eventually reduces latency.
 
-![in-cluster-vs-agic](../media/incluster-vs-agic.png)
+:::image type="content" source="../media/incluster-vs-agic.png" alt-text="in-cluster-vs-agic" lightbox="../media/incluster-vs-agic.png":::
 
-Now, you can review the modified solution architecture of the eShop app that you'll deploy in the next unit.
+Below is the modified solution architecture of the eShop app that you'll deploy in the next unit.
 
-![Azure App Gateway Solution Architecture](../media/app-gateway-ingress.png)
+:::image type="content" source="../media/app-gateway-ingress.png" alt-text="Azure App Gateway Solution Architecture" lightbox="../media/app-gateway-ingress.png":::

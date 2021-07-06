@@ -1,27 +1,16 @@
 In this module you:
 
-- Created an AKS cluster with an initial e-commerce application.
-- Reviewed the Application Gateway and Backend for Frontend(BFF) concepts.
-- Implemented a new Web Sales Aggregator BFF to fetch the Sales data based on the Catalog Brand name.
-- Reviewed the key concepts of Kubernetes Ingress and load balance with Azure Application Gateway along with Azure Application Gateway Ingress Controller(AGIC).
-- Deployed the Web Sales Aggregator BFF to the existing AKS cluster and expose the API to the external client using AGIC.
+- Deployed an existing ASP.NET Core microservices e-commerce app to Azure Kubernetes Services.
+- Implemented a BFF pattern using .NET.
+- Redeployed the app to an instance of AKS configured to use [Azure Application Gateway](/azure/application-gateway/overview).
+- Exposed a BFF API outside the Kubernetes cluster outside using [Application Gateway Ingress Controller](/azure/application-gateway/ingress-controller-overview).
 
-## Clean up Azure resources
+[!INCLUDE[de-provision your Azure resources](../../includes/microservices/remove-az-resources.md)]
 
-> **IMPORTANT**
->
-> It's very important you deallocate the Azure resources used in this module so that you don't get billed or spend your free account with unwanted charges.
+[!INCLUDE[revert the .NET Core SDK changes](../../includes/microservices/revert-dotnet-sdk-changes.md)]
 
-You have to:
+[!INCLUDE[download files](../../includes/summary-download-cloud-drive.md)]
 
-### 1. - De-provision all the resources created in this module
+[!INCLUDE[reset the Azure Cloud Shell](../../includes/microservices/reset-az-cloud-shell.md)]
 
-Use the following command:
-
-```bash
-az group delete --name eshop-learn-rg --yes
-```
-
-### 2. - De-provision the storage account used by the Cloud Shell
-
-If you let the Cloud Shell create the storage using the default options, you should have a resource group named `cloud-shell-storage-{region}`. To delete the storage account you can delete the resource group from the Azure portal. You won't be able to delete the storage account from **az cli**.
+[!INCLUDE[learn more with these resources](../../includes/microservices/learn-more.md)]
