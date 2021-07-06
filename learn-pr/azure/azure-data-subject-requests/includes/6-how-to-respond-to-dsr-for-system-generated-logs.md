@@ -12,7 +12,7 @@ Data that can be derived from system-generated logs includes:
 
 - Product and service usage data (user activity logs).
 - User search requests and query data.
-- •	Data that products and services generate when a user interacts with system functionality.
+- Data that products and services generate when a user interacts with system functionality.
 
 ### Example 1: Responding to a DSR for Azure-based system-generated logs
 
