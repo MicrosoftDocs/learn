@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 8
 sandbox: true
-notebook: https://review.docs.microsoft.com/learn/modules/test-machine-learning-models/notebooks/5-3-exercise-feature-normalization.ipynb?branch=pr-en-us-18701 
+notebook: notebooks/5-3-exercise-feature-normalization.ipynb
