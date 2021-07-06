@@ -1,1 +1,5 @@
-The introduction content goes here.
+Introduction paragraphs go here
+
+## Learning objectives
+
+## Prerequisites
