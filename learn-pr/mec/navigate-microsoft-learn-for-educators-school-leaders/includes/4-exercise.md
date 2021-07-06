@@ -22,8 +22,6 @@ Collections allow you to easily curate and organize sets of content and share th
 -->
 Recall that you can find content about a particular product, topic or for a particular role by using the Learn "Browse all" page.
 
-[Image]
-
 <!-- 3. Task performed in the exercise ---------------------------------------------------------------------
 
     Goal: State concisely what they'll implement here; that is, describe the end-state after completion
@@ -75,6 +73,8 @@ Our goal is to find some training content centered around fostering collaboratio
     1. For the "Description", you can either enter a description of your choosing or leave this blank.
 1. Click "Submit" and "Save". You should now have a new collection saved. You can find this collection by going to the "Collections" area of your profile.
 
+[Image]
+
 ## Step 2: Add another module to add to your collection
 We will now find a second piece of content that we can add to our collection. This time we will select a module.
 1. Return to the Learn browse page at : https://docs.microsoft.com/learn/browse/
@@ -88,6 +88,8 @@ We will now find a second piece of content that we can add to our collection. Th
 1. A pop-up modal will appear again, this time select the collection that you created "My Classroom Collaboration Training" and then press "Save".
 1. Great job! This module has now been saved to your collection.
 
+[Image]
+
 ## Step 3: Share your collection
 Now that we have a collection with some interesting learning paths and modules in it. We can share it with our colleagues.
 
@@ -98,7 +100,7 @@ Now that we have a collection with some interesting learning paths and modules i
 1. Find a method that suits your choosing and send the collection to one of your friends/colleagues.
 1. Great job! You haven now learned how to create collections and share them on Learn.
 
-
+[Image]
 <!-- 5. Validation chunk -------------------------------------------------------------------------------------
 
     Goal: Helps the learner to evaluate if they completed the exercise correctly.
