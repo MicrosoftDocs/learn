@@ -1,17 +1,14 @@
-In this exercise you'll deploy the newly created Web Sales BFF to the existing Kubernetes cluster.
-
-In this exercise you will:
+In this exercise, you'll deploy the newly created Web Sales BFF to the existing Kubernetes cluster. To do this, you will:
 
 - Enable the Web Sales Aggregator BFF.
-- Review the necessary configuration.
-- Create an instance of Azure Container Registry(ACR).
-- Build the local images and push the changes in the container registry.
+- Configure the BFF.
+- Publish the affected containers to Azure Container Registry.
 - Deploy the affected apps to the cluster.
 - Verify the deployed sales aggregator.
 
 ## Enable the Web Sales Aggregator BFF
 
-### Web.Sales.HttpAggregator - project related changes
+### Web.Sales.HttpAggregator
 
 You can find an ASP.NET Core project for the `Web.Sales` BFF in the *src/ApiGateways/Aggregators/Web.Sales.HttpAggregator* directory. Locate that directory in the Cloud Shell editor. Apply the following changes to the service:
 
