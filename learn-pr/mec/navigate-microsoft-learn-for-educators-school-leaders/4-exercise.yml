@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.navigate-microsoft-learn-for-educators-school-leaders.exercise
-title: Excercise - Build and share a collection
+title: Exercise - Build and share a collection
 metadata:
   unitType: exercise
-  title: "Excercise - Build and share a collection" # user input: module title for browser tab and search results
-  description: "In this excercise, we will be building a collection on Microsoft Learn that we can share with our peers and students." # user input: a description for site search and SEO
+  title: "Exercise - Build and share a collection" # user input: module title for browser tab and search results
+  description: "In this exercise, we'll be building a collection on Microsoft Learn that we can share with our peers and students." # user input: a description for site search and SEO
   ms.date: 7/2/2021
   author: sadadow
   ms.author: saadad
