@@ -20,7 +20,7 @@ You can create Azure shared disks by using a variety of tools.
     | Size | Choose the supported size for the shared disk, such as 1024 gibibytes (GiB), P30. |
     | | |
 
-1. On the **Encryption** tab, encrypt the disk with a platform-managed key, or provide your own disk-encryption set that's stored in Azure Key Vault.
+1. On the **Encryption** tab, encrypt the disk with a platform-managed key, or provide your own disk-encryption set that's stored in an Azure key vault.
 1. On the **Networking** tab, provide a connectivity method for your Azure shared disk.
 1. On the **Advanced** tab, select the **Yes** checkbox for **Enable shared disk**, and then choose the number of **Max shares**.
 1. On the **Tags** tab, provide resource categorization by using name/value parameters. These parameters help you track costs associated with similar resources that have the same applied tag.
@@ -132,8 +132,8 @@ Failover clusters depend on infrastructure services. Windows Server supports mul
 
 | Element | Description |
 | --- | --- |
-| DNS | The servers in the cluster use Domain Name System (DNS) for name resolution. Use a custom DNS role installed in Azure VM. |
-| Active Directory | SQL Server failover cluster instance (FCI) requires that both VMs are members of Azure Active Directory Domain Services (Azure AD DS). |
+| DNS | The servers in the cluster use Domain Name System (DNS) for name resolution. Use a custom DNS role installed in an Azure VM. |
+| Active Directory | A SQL Server failover cluster instance (FCI) requires that both VMs are members of Azure Active Directory Domain Services (Azure AD DS). |
 | An administrative account | An account that has administrative privileges on all of the cluster's servers. |
 | | |
 
@@ -141,7 +141,7 @@ Failover clusters depend on infrastructure services. Windows Server supports mul
 
 Initialize the attached disk on all VMs that share access using the master boot record (MBR) or GUID partition table (GPT) partition style. You should also format the disk by using the NTFS file format.
 
-To begin cluster creation, you must install the Failover Clustering feature on all VMs that will participate in the cluster. Use the following command to install Windows failover clustering service:
+To begin creating a cluster, you must install the Failover Clustering feature on all VMs that will participate in the cluster. Use the following command to install Windows failover clustering service:
 
 ```azurepowershell
 Install-WindowsFeature -Name Failover-Clustering –IncludeManagementTools
@@ -149,7 +149,7 @@ Install-WindowsFeature -Name Failover-Clustering –IncludeManagementTools
 
 ### Failover cluster validation
 
-Cluster validation is a critical component of the failover-clustering lifecycle. You use it before the initial deployment and following a range of configuration changes, such as modifying the quorum settings. It's also helpful when you're troubleshooting performance and stability issues. Use Failover Cluster Manager or Windows PowerShell to run validation. Both run several tests to ensure that you configured cluster components in the supported manner.
+Cluster validation is a critical component of the failover-clustering lifecycle. You use it before the initial deployment and after a range of configuration changes, such as modifying the quorum settings. It's also helpful when you're troubleshooting performance and stability issues. Use Failover Cluster Manager or Windows PowerShell to run the validation. Both programs run several tests to ensure that you configured cluster components in the supported manner.
 
 Use Failover Cluster Manager or PowerShell to validate prerequisites for cluster creation. The following example runs all cluster tests on computers that are named node1 and node2:
 
