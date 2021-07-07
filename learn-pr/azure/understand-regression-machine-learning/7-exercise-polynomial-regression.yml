@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.machinelearning.understand-regression-machine-learning.exercise-polynomial-regression
-title: Exercise - Polynomial Regression
+title: Exercise - Polynomial regression
 metadata:
-  title: Exercise - Polynomial Regression
+  title: Exercise - Polynomial regression
   description: Exercise unit learning about polynomial regression in machine learning
   ms.date: 05/25/2021
   author: TomReidNZ

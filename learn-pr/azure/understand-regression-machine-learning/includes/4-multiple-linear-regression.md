@@ -17,7 +17,7 @@ The fact that the model expects features to be _independent_ is called a model a
 
 For example, age probably predicts how sick dogs become, as older dogs get more sick, along with whether dogs have been taught how to play frisbee: older dogs probably all know how to play frisbee. If we included age and knows_frisbee to our model as features, it would likely tell us knows_frisbee is a good predictor of an illness and underestimate the importance of age. This is a tad absurd because knowing frisbee isn't likely to cause disease. By contrast, dog_breed might also be a good predictor of illness but there's no reason to believe age predicts dog_breed, so it would be safe to include both in a model.
 
-## Goodness of Fit: R<sup>2</sup>
+## Goodness of fit: R<sup>2</sup>
 
 We know that cost functions can be used to assess how well a model fits the data it's trained on. Linear regression models have a special related measure called R<sup>2</sup> (“R-squared”). R<sup>2</sup> is a value between 0 and 1 that tells us how well a linear regression model fits the data. When people talk about correlations being strong, they often mean that the R<sup>2</sup> value was large.
 
@@ -31,8 +31,8 @@ R<sup>2</sup> is only half the story
 
 R<sup>2</sup> values are widely accepted but aren't a perfect measure we can use in isolation. They suffer four limitations:
 
-1. Because of how R<sup>2</sup> is calculated, the more samples we have, the higher the R<sup>2</sup>. This can lead us to thinking that one model is better than another (identical) model, simply because R<sup>2</sup> values were calculated using different amounts of data.
-2. R<sup>2</sup> values don't tell us how well a model will work with new, previously unseen data. Statisticians overcome this by calculating a supplementary measure, called a p-value, which we'll not cover here. In machine learning, we often explicitly test our model on another dataset instead.
-3. R<sup>2</sup> values don't tell us the direction of the relationship. For example, an R<sup>2</sup> value of 0.8 doesn't tell us whether the line is sloped upwards or downwards. It also doesn’t tell us how sloped the line is.
+- Because of how R<sup>2</sup> is calculated, the more samples we have, the higher the R<sup>2</sup>. This can lead us to thinking that one model is better than another (identical) model, simply because R<sup>2</sup> values were calculated using different amounts of data.
+- R<sup>2</sup> values don't tell us how well a model will work with new, previously unseen data. Statisticians overcome this by calculating a supplementary measure, called a p-value, which we'll not cover here. In machine learning, we often explicitly test our model on another dataset instead.
+- R<sup>2</sup> values don't tell us the direction of the relationship. For example, an R<sup>2</sup> value of 0.8 doesn't tell us whether the line is sloped upwards or downwards. It also doesn’t tell us how sloped the line is.
 
 It's also worth keeping in mind that there’s no universal criteria for what makes an R<sup>2</sup> value “good enough”. For example, in most of physics, correlations that aren't very close to 1 are unlikely to be considered useful, but when modeling complex systems R<sup>2</sup> values as low as 0.3 might be considered to be excellent.
