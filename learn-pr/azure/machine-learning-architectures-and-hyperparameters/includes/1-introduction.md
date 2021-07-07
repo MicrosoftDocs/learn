@@ -1,6 +1,6 @@
 Not all models are simple mathematical equations that can be plotted as a line. Instead, some complex models are easier thought of more like flow charts or traditional programming structures. Such models usually have extra levels of customization available, which can make them more powerful, though also trickier to work with. Throughout these exercises, we'll explore this by manipulating how models work and are trained. Although we'll focus on one type of model, the general principles taught here apply to many other model types as well.
 
-## Scenario: Predicting olympic results using machine learning
+## Scenario: Predicting Olympic results using machine learning
 
 Throughout this module, we’ll refer to the following example scenario as we explain concepts surrounding model architecture and hyperparameters. This scenario is designed to appear complex at first but as the exercises progress we'll see how it can be tackled using a little critical thinking and experimentation.
 
