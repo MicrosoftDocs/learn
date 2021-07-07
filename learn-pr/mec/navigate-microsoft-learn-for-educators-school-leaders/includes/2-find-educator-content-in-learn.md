@@ -10,21 +10,21 @@
 -->
 In this unit, you will learn about what content Learn offers for educators, how to find this educator content in Learn, and how to share it with your colleagues or students.
 
-:::image type="content" source="../media/Screenshot-educator-content.png" alt-text="Screenshot of the Learn browswer window with Roles selected and Educator and Student roles highlighted.":::
+:::image type="content" source="../media/Screenshot-educator-content.png" alt-text="Screenshot of the Learn browser window with Roles selected and Educator and Student roles highlighted.":::
 
 Offerings in Learn for educators will include:
 
 - Educator professional development training and courses
 - Educator skilling on Microsoft products
 - Educator teaching materials (coming soon to Learn)
-- Programs for institutions, educators and students (coming soon to Learn)
+- Programs for institutions, educators, and students (coming soon to Learn)
 - Technical skilling courses for students
 
 As the Microsoft Educator center merges with Microsoft Learn it will become the single training hub to empower digital classrooms.
 
 ## Modules and learning paths
 
-Most of our training content is in the form of *modules* which are organized into a series of *learning paths*. Modules are shorter courses, typically 30-60 minutes, that consist of pages called units. Learning paths are a series of modules centered around mastery of a particular topic. If you came from MEC, a module is the equivalent of a course and a learning path is the equivalent of a learning path.
+Most of our training content is in the form of *modules*, which are organized into a series of *learning paths*. Modules are shorter courses, typically 30-60 minutes, that consist of pages called units. Learning paths are a series of modules centered around mastery of a particular topic. If you came from MEC, a module is the equivalent of a course and a learning path is the equivalent of a learning path.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -37,15 +37,15 @@ Most of our training content is in the form of *modules* which are organized int
 
 ## Browse and search for educator content
 
-On Learn, we have thousands of modules and learning paths to help you get started with any Microsoft products. You can filter for educator-specific content by selecting your role as either a "K-12 Educator", "Higher-ed Educator", "School Leader" or "Parent & Guardian", under the “Role” filter. You can also filter by products as well as search for keywords.
+On Learn, we have thousands of modules and learning paths to help you get started with any Microsoft products. You can filter for educator-specific content by selecting your role as either a "K-12 Educator", "Higher-ed Educator", "School Leader" or "Parent & Guardian", under the “Role” filter. You can also filter by products or search for keywords.
 
-To browse content go to the Learn "browse all" page at [docs.microsoft.com/learn/browse/](https://docs.microsoft.com/learn/browse/)
+To browse content, go to the Learn "browse all" page at [docs.microsoft.com/learn/browse/](https://docs.microsoft.com/learn/browse/)
 
 To use the filters, select on of the boxes under product, role, level, or type, in order to see the list of content pertaining to that category.
 
-- *Product* is where you can find educational tools such as Microsoft Teams, Immersive Reader, Reading Progress, OneNote, Minecraft, Flipgrid, Windows, Powerpoint, Forms, Edge, OneDrive, Sway, and many more.
+- *Product* is where you can find educational tools such as Microsoft Teams, Immersive Reader, Reading Progress, OneNote, Minecraft, Flipgrid, Windows, PowerPoint, Forms, Edge, OneDrive, Sway, and many more.
 - *Role* is where you can select the category that fits you best as either a *K-12 Educator, Higher-ed Educator, School Leader*, or *Parent & Guardian*.
-- *Level* is where you can select from the appropriate experience level with the content as either a *beginner*, *intermediate* or *advanced*.
+- *Level* is where you can select from the appropriate experience level with the content as either a *beginner*, *intermediate*, or *advanced*.
 - *Type* is where you can select from either Modules or Learning Paths.
 
 You can also search by keyword in the search bar displayed on the page.
