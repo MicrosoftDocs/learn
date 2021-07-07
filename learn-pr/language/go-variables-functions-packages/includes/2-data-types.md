@@ -13,7 +13,7 @@ Let's start by exploring the numeric data types.
 
 ## Integer numbers
 
-In general terms, the keyword to define an integer type is `int`. But Go also provides the `int8`, `int16`, `int32`, and `int64` types, which are ints with a size of 8, 16, 32, or 64 bits, respectively. When you're using a 32-bit operating system, if you just use `int`, the size is usually 32 bits. On 64-bit systems, the `int` size is usually 64 bits. But this behavior can differ from one computer to another. You can use `unit`. But only use this type if you need to represent a value as an unsigned number for a certain reason. Go also provides `uint8`, `uint16`, `uint32`, and `uint64` types.
+In general terms, the keyword to define an integer type is `int`. But Go also provides the `int8`, `int16`, `int32`, and `int64` types, which are ints with a size of 8, 16, 32, or 64 bits, respectively. When you're using a 32-bit operating system, if you just use `int`, the size is usually 32 bits. On 64-bit systems, the `int` size is usually 64 bits. But this behavior can differ from one computer to another. You can use `uint`. But only use this type if you need to represent a value as an unsigned number for a certain reason. Go also provides `uint8`, `uint16`, `uint32`, and `uint64` types.
 
 Here's an example of how to use the various integer types in Go:
 
