@@ -112,6 +112,6 @@ The restored database should contain the **Person** table. You can check that in
 
     You should see the data that you entered previously.
 
-    ![Screenshot of results after querying for the tables in the database.](../media/7-query-after-restore-2.png)
+    ![Screenshot of confirmed results after querying for the tables in the database.](../media/7-query-after-restore-2.png)
 
 You've now seen how you can restore a database if something unintended happens to the data. You've familiarized yourself with the restore process. You can now assure your organization that your backup and restore procedures are properly defined.
