@@ -1,13 +1,13 @@
 ## Your profile
-Your profile stores your activities, collections, achievements, and settings. To go to your profile, navigate to the avatar image on the upper right hand corner of the browser window and select 'profile' in the pop-up window.
+Your profile stores your activities, collections, achievements, and settings. To go to your profile, navigate to the avatar image on the upper right-hand corner of the browser window and select 'profile' in the pop-up window.
 
-:::image type="content" source="../media/Screenshot of profile icon.png" alt-text="Screenshot of Learn profile avatar selected so that pop-up displays for profile access.":::
+:::image type="content" source="../media/Screenshot of profile icon.png" alt-text="Screenshot of Learn profile avatar selected so that pop up displays for profile access.":::
 
 Here are some main items in your profile:
 
 |          |                                                              |
 |----------|--------------------------------------------------------------|
-| Overview | Overview of your recent activity, bookmarks and achievements |
+| Overview | Overview of your recent activity, bookmarks, and achievements |
 |Activity | All your activities - check here for your in-progress and completed modules and learning paths |
 |Challenges | Tracks participation in the Cloud Skills Challenge (CSC), a gamified experience using Microsoft Learn content that encourages rapid learning of Microsoft technologies |
 |Bookmarks | Modules or learning paths you have bookmarked |
@@ -22,12 +22,12 @@ Here are some main items in your profile:
 
 ## Changing your personal info, username and URL
 
-Select "Settings" in the left hand menu to open your profile settings options.
+Select "Settings" in the left-hand menu to open your profile settings options.
 
 Here you can change your:
-- Profile picture - the avatar image displayed for your profile 
-- Username/URL - this is the link that you can provide others to access your public profile
-- Display name - This is the name associated with your profile.
+- Profile picture - The avatar image displayed for your profile 
+- Username/URL - The link that you can provide others to access your public profile
+- Display name - The name associated with your profile.
 
 > [!IMPORTANT]
 > By default your Learn profile is public but you can use private mode to restrict what others can see. When private mode is on, Learn badges, trophies, and Q&A contributions are hidden on your public profile. 
