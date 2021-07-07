@@ -36,7 +36,7 @@ It can take up to 15 minutes for the first successful backup to finish. We need 
 
 Let's start by simulating a mistaken database modification.
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true)menu or from the **Home** page, select **All resources**, and then select the **sql-erp-db** database.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the **sql-erp-db** database.
 
 1. Select **Query editor**, and then sign in with the **dbadmin** user and the password that you specified for this account.
 
