@@ -85,6 +85,7 @@ modules:
 - learn.connect-vm-with-azure-bastion
 - learn.azure.host-domain-azure-dns
 - learn.control-network-traffic-flow-with-routes
+- learn.protect-virtual-desktop-deployment-azure-firewall
 - learn.connect-on-premises-network-with-vpn-gateway
 - learn.connect-on-premises-network-with-expressroute
 - learn.improve-app-scalability-resiliency-with-load-balancer
