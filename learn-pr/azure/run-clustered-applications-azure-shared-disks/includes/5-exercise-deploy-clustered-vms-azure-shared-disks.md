@@ -8,7 +8,7 @@ Your company's CTO needs to provide proof of concept for using Azure shared disk
 
 ::: zone pivot="linux-cloud"
 
-## Use Linux VMs with Azure shared disks
+## Deploy Linux VMs by using Azure shared disks
 
 To provide proof of concept, you'll deploy two Linux VMs that are running the Ubuntu Server OS. You'll also test the SCSI Persistent Reservations (PR) commands on the Azure shared disk.
 
@@ -31,24 +31,24 @@ az disk create -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --siz
 
 Run the following command to create an availability set:
 
-    ```azurecli
-    az vm availability-set create \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --name myAvailabilitySet \
-      --platform-fault-domain-count 2 \
-      --platform-update-domain-count 2
-    ```
+```azurecli
+az vm availability-set create \
+  --resource-group <rgn>[sandbox resource group name]</rgn> \
+  --name myAvailabilitySet \
+  --platform-fault-domain-count 2 \
+  --platform-update-domain-count 2
+```
 
 ### Create two VMs that run Ubuntu Server
 
-While you're still in Cloud Shell, run the following commands to create two VMs running Ubuntu OS:
+While you're still in Cloud Shell, run the following commands to create two VMs that run Ubuntu OS:
 
-    ```azurecli
-    for i in `seq 1 2`; 
-    do
-        az vm create --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM$i --availability-set myAvailabilitySet --size Standard_DS1_v2 --vnet-name myVnet --subnet mySubnet --image UbuntuLTS --admin-username azureuser --generate-ssh-keys
-    done
-    ```
+```azurecli
+for i in `seq 1 2`; 
+do
+   az vm create --resource-group <rgn>[sandbox resource group name]</rgn> --name myVM$i --availability-set myAvailabilitySet --size Standard_DS1_v2 --vnet-name myVnet --subnet mySubnet --image UbuntuLTS --admin-username azureuser --generate-ssh-keys
+done
+```
 
 ### Attach an Azure shared disk on both VMs
 
@@ -56,10 +56,10 @@ While you're still in Cloud Shell, attach the Azure shared disk to both VMs by u
 
 ```azurecli
 diskId=$(az disk show -g <rgn>[sandbox resource group name]</rgn> -n mySharedDisk --query 'id' -o tsv)
-    
+
 # attach the shared disk to the first VM.
 az vm disk attach -g <rgn>[sandbox resource group name]</rgn> --vm-name myVM1 --name $diskId
-    
+
 # attach the shared disk to the second VM.
 az vm disk attach -g <rgn>[sandbox resource group name]</rgn> --vm-name myVM2 --name $diskId
 ```
@@ -156,7 +156,7 @@ When you've finished this task, the shared disk is attached to two VMs at the sa
 
     :::image type="content" source="../media/05-disk-status-with-vm1-and-vm2-registrations.png" alt-text="Disk status with VM1 and VM2 registrations." border="true":::
 
-1. Connect to **myVM1** using SSH:
+1. Connect to **myVM1** by using SSH:
 
     ```bash
     ssh azureuser@$myPublicIP1
@@ -200,9 +200,9 @@ When you've finished this task, the shared disk is attached to two VMs at the sa
 
 ::: zone pivot="windows-cloud"
 
-## Use Windows VMs by using Azure shared disks
+## Deploy Windows VMs by using Azure shared disks
 
-To further demonstrate Azure shared disk functionality, you'll deploy two Windows VMs running the Windows server operating system (OS). You'll then test SCSI PR commands on the Azure shared disk.
+To further demonstrate Azure shared disk functionality, you'll deploy two Windows VMs running the Windows server operating system (OS). You'll then test the SCSI Persistent Reservations (PR) commands on the Azure shared disk.
 
 In this exercise, you'll explore Azure shared disk deployment and perform the following tasks:
 
@@ -213,7 +213,7 @@ In this exercise, you'll explore Azure shared disk deployment and perform the fo
 
 ### Create an Azure shared disk
 
-1. Use the Cloud Shell on the right. You can switch from Azure CLI to Azure PowerShell by typing pwsh.
+1. In Cloud Shell, you can switch from the Azure CLI to Azure PowerShell by running the following command:
 
     ```azurepowershell
     # Switch to PowerShell
