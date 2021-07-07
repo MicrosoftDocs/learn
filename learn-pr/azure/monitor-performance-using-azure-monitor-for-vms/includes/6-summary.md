@@ -10,7 +10,7 @@ By learning about Azure Monitor Logs and Azure Monitor VM Insights, you now have
 - [Monitoring virtual machines with Azure Monitor](/azure/azure-monitor/vm/monitor-virtual-machine)
 - [What is Azure Monitor VM Insights?](/azure/azure-monitor/vm/vminsights-overview)
 
-**Monitor virtual machines**
+**Getting started with monitoring in Azure**
 - [Azure Monitor overview](/azure/azure-monitor/overview)
 - [Azure Monitor Logs overview](/azure/azure-monitor/platform/data-platform-logs)
 - [Log Analytics overview](/azure/azure-monitor/logs/log-analytics-overview)
