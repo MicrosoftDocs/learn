@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.machinelearning.understand-classification-machine-learning.exercise-assessing-regression-model
+uid: learn.machinelearning.understand-classification-machine-learning.exercise-assess-regression-model
 title: Exercise - Assessing a logistic regression model
 metadata:
   title: Exercise - Assessing a logistic regression model
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 sandbox: true
-notebook: notebooks/6-5-exercise-assessing-regression-model.ipynb
+notebook: notebooks/6-5-exercise-assess-regression-model.ipynb

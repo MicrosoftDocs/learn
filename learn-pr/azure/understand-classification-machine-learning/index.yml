@@ -25,14 +25,14 @@ roles:
 - student
 products: 
 - azure
-units: 
+units:
 - learn.machinelearning.understand-classification-machine-learning.introduction
 - learn.machinelearning.understand-classification-machine-learning.what-is-classification
 - learn.machinelearning.understand-classification-machine-learning.exercise-build-regression-model
-- learn.machinelearning.understand-classification-machine-learning.assessing-classification
-- learn.machinelearning.understand-classification-machine-learning.exercise-assessing-regression-model
-- learn.machinelearning.understand-classification-machine-learning.improving-classification
-- learn.machinelearning.understand-classification-machine-learning.exercise-improving-classification
+- learn.machinelearning.understand-classification-machine-learning.assess-classification
+- learn.machinelearning.understand-classification-machine-learning.exercise-assess-regression-model
+- learn.machinelearning.understand-classification-machine-learning.improve-classification
+- learn.machinelearning.understand-classification-machine-learning.exercise-improve-classification
 - learn.machinelearning.understand-classification-machine-learning.knowledge-check
 - learn.machinelearning.understand-classification-machine-learning.summary
 badge: 

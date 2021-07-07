@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.machinelearning.understand-classification-machine-learning.assessing-classification
+uid: learn.machinelearning.understand-classification-machine-learning.assess-classification
 title: Assessing a classification model
 metadata:
   title: Assessing a classification model
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-assessing-classification.md)]
+  [!include[](includes/4-assess-classification.md)]
