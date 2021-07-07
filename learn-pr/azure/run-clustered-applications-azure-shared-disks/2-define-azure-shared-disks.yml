@@ -3,7 +3,7 @@ uid: learn.azure.run-clustered-applications-azure-shared-disks.define-azure-shar
 title: Define Azure shared disks
 metadata:
   title: Define Azure shared disks
-  description: Describe the features of Azure shared disks and usage scenarios.
+  description: In this unit, you describe the features of Azure shared disks and usage scenarios.
   ms.date: 06/23/2021
   author: ndelgado
   ms.author: nedelgad
