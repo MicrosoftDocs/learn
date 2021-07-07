@@ -1,4 +1,4 @@
-Parameters are the most common way that your colleagues will interact with your template. Whenever anyone deploys your template, they need to specify values for the parameters. In this unit, you learn about some key considerations when you're planning the parameters for Bicep files.
+Parameters are the most common way that your colleagues will interact with your template. Whenever anyone deploys your template, they need to specify values for the parameters. Once resources are created, their names give important information to anyone who looks at your Azure environment. In this unit, you learn about some key considerations when you're planning the parameters for Bicep files, and the names you give your resources.
 
 ## How understandable are the parameters?
 

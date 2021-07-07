@@ -28,7 +28,7 @@ param roleDefinitionId string = 'b24988ac-6180-42a0-ab88-20f7382dd24c'
 param webSiteName string = 'webSite${uniqueString(resourceGroup().id)}'
 
 var hostingPlanName = 'hostingplan${uniqueString(resourceGroup().id)}'
-var sqlserverName = 'sqlserver${uniqueString(resourceGroup().id)}'
+var sqlserverName = 'toywebsite${uniqueString(resourceGroup().id)}'
 
 resource sqlserver 'Microsoft.Sql/servers@2019-06-01-preview' = {
   name: sqlserverName
