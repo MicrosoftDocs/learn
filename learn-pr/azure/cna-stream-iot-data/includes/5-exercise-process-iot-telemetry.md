@@ -118,8 +118,6 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
 1. On the **Rules** page, select **Done**, and then select **Save**.
 1. Switch to the browser window displaying the **Raspberry Pi Azure IoT Online Simulator** page you used in the previous exercise of this module. On this page, verify that the simulated device is sending messages to the Azure IoT Central application. If the simulator has stopped, select **Run** directly after the code pane.
 
-   :::image type="content" source="../media/5-iot-raspberry-pi-messages-sent.png" alt-text="Screenshot of the Raspberry Pi Azure IoT Online Simulator page depicting the messages being sent to the IoT Central application.":::
-
 1. Switch back to the web browser window displaying the **HttpTrigger1 \| Code + Test** blade in the Azure portal. In the vertical menu, in the **Developer** section, select the **Monitor** entry, and on the **HttpTrigger1 \| Code + Test** blade, select the **Logs** tab.
 1. Verify that the logs pane displays the messages generated in response to the HTTP trigger originating from the Azure IoT Central application webhook you configured earlier in this task.
 
