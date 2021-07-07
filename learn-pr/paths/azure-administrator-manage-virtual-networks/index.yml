@@ -78,7 +78,7 @@ products:
 - azure-traffic-manager
 - azure-bastion
 - azure-firewall
-- windows-virtual-desktop
+- azure-virtual-desktop
 modules:
 - learn.configure-the-network-for-your-virtual-machines
 - learn.design-ip-addressing-for-azure
