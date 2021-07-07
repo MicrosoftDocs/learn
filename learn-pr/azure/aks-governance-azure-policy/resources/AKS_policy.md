@@ -23,7 +23,7 @@
 In this module, you learned to:
 
 - Understand how Azure Policy integrates with Azure Kubernetes Service
-- Deploy the Azure policy add-on for Azure Kubernetes Service
+- Deploy the Azure policy and Azure Monitor add-on for Azure Kubernetes Service
 - Configure policies to manage compliance state of an Azure Kubernetes Service cluster
 - Monitor cluster compliance status using Azure policy
 
@@ -83,7 +83,7 @@ Identify the subtasks of **Cluster governance using Azure Policy**
 
 1. **Exercise - enabling Azure Policy for Azure Kubernetes Service**
 
-    1. Create a new AKS cluster with policy add-on enabled. If learner has an existing cluster, show how to enable the add-on on existing cluster.
+    1. Create a new AKS cluster with policy and monitor add-on enabled. If learner has an existing cluster, show how to enable the add-on on existing cluster.
     1. Enabling Azure Policy for AKS for a specific resource group
     1. How to automatically enable Azure Policy for AKS
     1. How to monitor which clusters have the add-on installed
@@ -100,17 +100,34 @@ Identify the subtasks of **Cluster governance using Azure Policy**
     1. Ensure the learner has an AKS cluster with policy enabled
     1. (using kubectl) Deploy a non-compliant pod before the policy is applied
     1. (using Azure portal) Apply the "only trusted registry policy". Use dockerhub vs mcr.microsoft.com
+    1. (using Azure portal) Apply the "[Kubernetes cluster pod security restricted standards for Linux-based workloads](https://docs.microsoft.com/en-us/azure/aks/policy-reference#initiatives) initiative". 
     1. (using kubectl) Deploy a non-compliant pod and see effect
     1. (using kubectl) Deploy a compliant pod and see effect
     1. (using kubectl) Deploy a non-compliant deployment and see effect (the deployment and replicaset will be created, but pods will fail. Show troubleshooting steps to do kubectl describe replicaset which shows why pods are not getting created)
-    1. (using Azure portal) See compliance status of cluster and see non-compliant pod highlighted
+
+1. **Checking compliance status using Azure Portal**
+    - How to use Azure monitor to see runtime operation of policy
+        - Explain how Azure monitor can be used to run queries and see runtime operation of policy in AKS clusters
+    - How to use Azure portal to see compliance status of cluster 
+        - Explain how to use Azure portal to check compliance status and see non-compliant pods highlighted
+        - Explain how it can take over 30 minutes for these non compliant pods to show up
+
+    **Knowledge check**
+
+    - A question about what happens to the non compliant pods after the policy is activated
+    - A question about what happens when you have two contradicting workload policies at different scopes
+    - A question about how to make exceptions to policies
 
 1. **Summary**
 In this module, you learned to:
 
-- Understand how Azure Policy integrates with Azure Kubernetes Service
-- Deploy the Azure policy add-on for Azure Kubernetes Service
-- Configure policies to manage and report on the compliance state of an Azure Kubernetes Service cluster
-- Monitor cluster compliance status using Azure policy
+    - Understand how Azure Policy integrates with Azure Kubernetes Service
+    - Deploy the Azure policy add-on for Azure Kubernetes Service
+    - Configure policies to manage and report on the compliance state of an Azure Kubernetes Service cluster
+    - Monitor cluster compliance status using Azure portal
+
+    Learn more
+    - [AKS Secure baseline](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks)
+    - [Enterprise Scale for AKS](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/aks/enterprise-scale-landing-zone#:~:text=Enterprise-scale%20for%20AKS%20represents%20the%20strategic%20design%20path,for%20a%20scalable%20Azure%20Kubernetes%20Service%20%28AKS%29%20cluster.)
 
 ## Notes
