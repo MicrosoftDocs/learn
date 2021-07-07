@@ -24,7 +24,7 @@ In the sections below, there are some pointers to specific parts of the template
    >
    > Visual Studio Code offers a convenient way to rename symbols: select the identifier you want to rename, press <kbd>F2</kbd>, enter a new name, and press <kbd>Enter</kbd>:
    >
-   > :::image type="content" source="../media/4-rename-symbol.png" alt-text="Screenshot from Visual Studio Code showing how to rename a symbol." border="true":::
+   > :::image type="content" source="../media/6-rename-symbol.png" alt-text="Screenshot from Visual Studio Code showing how to rename a symbol." border="true":::
    >
    > This renames the identifier and automatically updates all of the references to it as well.
 

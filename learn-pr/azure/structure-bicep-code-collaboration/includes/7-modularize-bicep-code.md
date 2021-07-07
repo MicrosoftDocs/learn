@@ -18,7 +18,7 @@ Sometimes it's obvious how you should split a large Bicep file - you might have 
 
 The Bicep visualizer can help you to put your whole Bicep file in perspective. The visualizer is included in the Bicep extension for Visual Studio Code. To view the visualizer, open the Visual Studio Code **Explorer**, then select and hold (or right-click) the Bicep file and select **Open Visualizer**. The visualizer shows a graphical representation of the resources in your Bicep file, and it includes lines between resources to show the dependencies that Bicep detects:
 
-:::image type="content" source="../media/3-visualize-template.png" alt-text="A diagram showing all resources from the Bicep template and their dependencies.":::
+:::image type="content" source="../media/7-visualize-template.png" alt-text="A diagram showing all resources from the Bicep template and their dependencies.":::
 
 Consider whether the visualization illustrates any clusters of resources.
 
@@ -47,11 +47,11 @@ You use a module within your main Bicep template by using the `module` keyword.
 
 The Bicep extension for Visual Studio Code helps you to _scaffold_ the module declaration, and to enter all of the mandatory parameters that the module expects. When you add a path to your module and continue with `=` sign, a window with several options will appear. Select the **Required properties** option:
 
-:::image type="content" source="../media/3-module-scaffold.png" alt-text="Shows an IntelliSense option to scaffold a module with required properties.":::
+:::image type="content" source="../media/7-module-scaffold.png" alt-text="Shows an IntelliSense option to scaffold a module with required properties.":::
 
 Visual Studio Code validates your module's parameter values. If you forget to set a mandatory parameter, it will warn you:
 
-:::image type="content" source="../media/3-module-validation.png" alt-text="Shows a validation of Bicep code section when a mandatory parameter is missing.":::
+:::image type="content" source="../media/7-module-validation.png" alt-text="Shows a validation of Bicep code section when a mandatory parameter is missing.":::
 
 Remember you can use the outputs that a module exposes within your parent template, too. You can use module outputs in variables, properties for other resource definitions, or even expose them as outputs from your parent template. By exposing and using outputs throughout your Bicep files, you can create reusable sets of Bicep modules that can be shared with your team and reused across multiple deployments.
 

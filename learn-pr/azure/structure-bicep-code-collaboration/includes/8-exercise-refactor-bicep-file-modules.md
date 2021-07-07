@@ -21,7 +21,7 @@ Let's divide the template into two modules:
 - a _web_ module, with the Azure App Service components that host your application.
 - a _database_ module, with Azure SQL components, where you store your data.
 
-:::image type="content" source="../media/3-visualize-parts.png" alt-text="A diagram showing two clusters of resources in the Bicep visualizer.":::
+:::image type="content" source="../media/8-visualize-parts.png" alt-text="A diagram showing two clusters of resources in the Bicep visualizer.":::
 
 ## Move the SQL components into a module
 
