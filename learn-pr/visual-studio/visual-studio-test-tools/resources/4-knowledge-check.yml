@@ -37,31 +37,25 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: If you have one method that you'd like to test with multiple different inputs, what testing tool could help you?
+  - content: I can only run tests from the Test Explorer.
     choices:
-    - content: Fluent Assertions
+    - content: "True"
       isCorrect: false
-      explanation: "Not quite! Try again."
-    - content: "Data driven tests"
+      explanation: "Incorrect, you can run tests with the right-click menu, keyboard shortcuts, or the CodeLens icons. Whatever feels natural to you and helps you get into your most productive coding flow.."
+    - content: "False"
       isCorrect: true
-      explanation: "You are correct! Data driven tests can reduce repetition in your code by letting you run a test with multiple different inputs."
-    - content: "Mocking"
-      isCorrect: false
-      explanation: "Not quite! Try again."
-    - content: "No framework is needed, you should simply copy and paste the test multiple times and only change the parameters."
-      isCorrect: false
-      explanation: "Not quite! Try again."
-  - content: Stubs and shims are found in what testing tool?
+      explanation: "Correct! You can run tests with the right-click menu, keyboard shortcuts, or the CodeLens icons. Whatever feels natural to you and helps you get into your most productive coding flow."
+  - content: The Test Explorer group by allows me to view tests groupings according to (Check all that apply)
     choices:
-    - content: "Fluent Assertions"
+    - content: "by Project"
       isCorrect: false
       explanation: "Not quite! Try again."
-    - content: "Data driven tests"
+    - content: "by Class"
       isCorrect: false
       explanation: "Not quite! Try again."
-    - content: "Mocking"
+    - content: "by Project, Namespace, and then Class"
+      isCorrect: false
+      explanation: "Not quite! Try again."
+    - content: "All of the above"
       isCorrect: true
-      explanation: "Correct! Mocking uses stubs and shims to isolate code so you are only testing one specific piece of your project at a time."
-    - content: "Behavior driven tests"
-      isCorrect: false
-      explanation: "Not quite! Try again."
+      explanation: "Correct, the Test Explorer group by is customizable and can help you organize viewing your tests with any of the above combinations and more!"

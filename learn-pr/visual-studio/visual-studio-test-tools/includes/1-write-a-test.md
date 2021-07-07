@@ -1,10 +1,10 @@
 # Write a Test
 
-Writing tests have a few basic steps:
+Write tests with a few basic steps:
 
 * Create a test project
 * Add a reference to the product code from the test project
-* Write a test
+* Add assert statements
 
 ## Create a test project
 
@@ -15,8 +15,6 @@ Writing tests have a few basic steps:
 * You can add test project templates to your solution by right-clicking on the solution in the Solution Explorer and selecting 'Add project.' Select a MSTest project template from the list. There are multiple popular test frameworks in .NET. MSTest is the built-in option for .NET produced by the .NET team.
 * There are many naming conventions that different code bases may use to indicate how the test suite is organized. Commonly, you may find names similar to \<MyAppProjectName\>.Tests for test projects.
 
-
-
 ## Add a reference to the product code from the test project
 
 * Now that you have a test project, it needs to reference the code you would like to test so you can make calls to your app from within your tests. Right-click on the test project in the Solution Explorer and select 'Add Reference.' Select the project you would like to test.
@@ -25,7 +23,7 @@ Writing tests have a few basic steps:
 
 * Make sure to add an import statement to the top of your C# test files so that references to any types in your product code's namespaces are resolved.
 
-## Write a test
+## Add assert statements
 
 * The templates come with a pre-written test. Note the 'Assert' line. Assert statements are what decide if your test passes or fails. You can add multiple asserts to any given test. If one assert fails, then the test will fail.
 * Add an assert statement to check if a type in your product code is null.

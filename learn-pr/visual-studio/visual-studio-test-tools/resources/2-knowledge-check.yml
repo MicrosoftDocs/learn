@@ -37,31 +37,19 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: If you have one method that you'd like to test with multiple different inputs, what testing tool could help you?
+  - content: You don't need to import the namespace of your product code if your test project already references the target project.
     choices:
-    - content: Fluent Assertions
+    - content: "True"
       isCorrect: false
-      explanation: "Not quite! Try again."
-    - content: "Data driven tests"
+      explanation: "Incorrect, you need to both importing the namespace and add a reference to the project you'd like to test."
+    - content: "False"
       isCorrect: true
-      explanation: "You are correct! Data driven tests can reduce repetition in your code by letting you run a test with multiple different inputs."
-    - content: "Mocking"
-      isCorrect: false
-      explanation: "Not quite! Try again."
-    - content: "No framework is needed, you should simply copy and paste the test multiple times and only change the parameters."
-      isCorrect: false
-      explanation: "Not quite! Try again."
-  - content: Stubs and shims are found in what testing tool?
+      explanation: "Correct! You need to both importing the namespace and add a reference to the project you'd like to test."
+  - content: If one assert statement fails the test will fail.
     choices:
-    - content: "Fluent Assertions"
-      isCorrect: false
-      explanation: "Not quite! Try again."
-    - content: "Data driven tests"
-      isCorrect: false
-      explanation: "Not quite! Try again."
-    - content: "Mocking"
+    - content: "True"
       isCorrect: true
-      explanation: "Correct! Mocking uses stubs and shims to isolate code so you are only testing one specific piece of your project at a time."
-    - content: "Behavior driven tests"
+      explanation: "Correct! Even when there are multiple assert statements, if one fails, the test will fail."
+    - content: "False"
       isCorrect: false
-      explanation: "Not quite! Try again."
+      explanation: "Incorrect, the test will fail even if only one assert statement fails."
