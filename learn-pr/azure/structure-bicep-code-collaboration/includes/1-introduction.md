@@ -1,12 +1,4 @@
-Bicep enables you to collaborate effectively as a team. You can define a clear structure, ensure your infrastructure code is documented, and share it in a version control system.
-
-<!-- TODO 
-
-Motivation for IaC is that it's shareable
-Part of this is that you need to think about how other people will use your Bicep code
-In this module you'll learn about some ways to think about how you structure and style your Bicep code to make it easy for others to understand, deploy, and modify
-
--->
+One of the biggest benefits of deploying your infrastructure as code is that your templates are shareable, and you can collaborate on your Bicep code with team members. It's important to consider how others can read and work with your Bicep code so that they can quickly and easily make use of your work. In this module, you'll learn some ways to structure and style your Bicep code to make it easy for others to understand, deploy, and modify. You'll also learn how to design your Bicep modules to support reuse and flexibility.
 
 ## Example scenario
 
@@ -21,11 +13,10 @@ In this module, you'll be provided with an existing Bicep template that you need
 - Break down your Bicep code into reusable modules.
 - Define your template structure and authoring style.
 - Use comments and other metadata to document your code.
-- Enable version control and publish your Bicep code on GitHub.
 
 ## What is the main goal?
 
-By the end of this module, you'll be able to author Bicep templates in a way they're modular, reusable, and well documented. You'll also be able to publish your templates on GitHub and enable better collaboration through standard Git-based workflows.
+By the end of this module, you'll be able to author Bicep templates that are modular, reusable, and well documented.
 
 ## Prerequisites
 
