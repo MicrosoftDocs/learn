@@ -28,21 +28,21 @@ On the left, navigate to **Performance** where you can see response times and re
 Next, on the right, navigate to **Dependencies** where you can see all your dependencies and their response times and request counts.
 You can see the performance number for dependencies, particularly SQL calls:
 
-:::image type="content" source="../media/4-petclinic-microservices-insights-on-dependencies.jpg" alt-text="Screenshot showing dependency performance view for your Azure Spring Cloud instance":::
+:::image type="content" source="../media/4-petclinic-microservices-insights-on-dependencies.jpg" alt-text="Screenshot showing dependency performance view":::
 
 You can select a SQL call or a dependency to see the transaction in context:
 
 1. Select a SQL statement in the "Select operation tab":
 
-:::image type="content" source="../media/4-performance-sql.jpg" alt-text="Screenshot showing single transaction for your Azure Spring Cloud instance":::
+:::image type="content" source="../media/4-performance-sql.jpg" alt-text="Screenshot showing SQL transaction":::
 
 2. Next, on the Right tab, select "Drill into" and on the far right tab, and then select a SQL sample to open the transaction detail window:
 
-:::image type="content" source="../media/4-performance-sql-details.jpg" alt-text="Screenshot showing single transaction for your Azure Spring Cloud instance":::
+:::image type="content" source="../media/4-performance-sql-details.jpg" alt-text="Screenshot showing SQL sample transaction":::
 
 3. Finally, in the transaction details view, view the sample sql statement transaction by selecting the sql statement:
 
-:::image type="content" source="../media/4-performance-sql-stack.jpg" alt-text="Screenshot showing single transaction for your Azure Spring Cloud instance":::
+:::image type="content" source="../media/4-performance-sql-stack.jpg" alt-text="Screenshot showing SQL transaction detail":::
 
 ### Failures/Exceptions
 
@@ -93,7 +93,7 @@ To create a standard metric chart, under the Monitoring section, open the Metric
 
 5. Next, save the second metric by selecting the "Tick" icon on the right-hand metric bar.
 
-:::image type="content" source="../media/4-metrics-add.jpg" alt-text="Screenshot showing adding system cpu metrics":::
+:::image type="content" source="../media/4-metrics-add.jpg" alt-text="Screenshot showing saving system cpu metrics":::
 
 6. Finally, inspect your metrics graph with both the App and System CPU metrics
 :::image type="content" source="../media/4-metrics-cpu-both.jpg" alt-text="Screenshot showing system and app cpu metrics":::
