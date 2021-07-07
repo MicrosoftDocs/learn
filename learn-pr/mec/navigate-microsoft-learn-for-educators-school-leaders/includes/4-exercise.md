@@ -57,9 +57,9 @@ In this exercise, you will create a collection of professional development conte
 
 ## Step 1: Find your first learning path and create your collection
 
-Our goal is to find some training content centered around fostering collaboration in the classroom that we can share with our colleagues. In order to do this we will first find a Learning Path that meets our criteria and then create a collection for it, where we can add additional modules and learning paths that we find.
+Our goal is to find some training content centered around fostering collaboration in the classroom that we can share with our colleagues. In order to do this, we will first find a Learning Path that meets our criteria and then create a collection for it, where we can add more modules and learning paths that we find.
 
-1. To start, we will go to the Learn browse page at : https://docs.microsoft.com/learn/browse/ . Copy and paste this URL into a new tab in your browser window in order to go to this page.
+1. To start, we will go to the Learn browse page at: `https://docs.microsoft.com/learn/browse/`. Copy and paste this URL into a new tab in your browser window in order to go to this page.
 1. Second, we will select some information that will help us to narrow down and find the specific Learning Path that we are looking for.
     1. In the "Types" category, select "Learning Path"
     1. In the "Role" category, select "K-12 Educator"
@@ -77,8 +77,8 @@ Our goal is to find some training content centered around fostering collaboratio
 
 ## Step 2: Add another module to add to your collection
 We will now find a second piece of content that we can add to our collection. This time we will select a module.
-1. Return to the Learn browse page at : https://docs.microsoft.com/learn/browse/
-1. Enter some filters and search paramaters that will help us to find this module. 
+1. Return to the Learn browse page at: https://docs.microsoft.com/learn/browse/
+1. Enter some filters and search parameters that will help us to find this module. 
     1. In the "Types" category, select "Learning Path"
     2. In the "Roles" category, select "K-12 Educator"
     3. In the "Product" category, select "OneNote"
@@ -93,12 +93,12 @@ We will now find a second piece of content that we can add to our collection. Th
 ## Step 3: Share your collection
 Now that we have a collection with some interesting learning paths and modules in it. We can share it with our colleagues.
 
-1. First, go to the "Collections" area of your profile by selecting the avatar image in the top right hand corner of the Learn screen and then selecting "Collections" from the dropdown menu.
+1. First, go to the "Collections" area of your profile by selecting the avatar image in the top right-hand corner of the Learn screen and then selecting "Collections" from the dropdown menu.
 1. You should now see all of the collections that are saved to your profile. Select the collection "My Classroom Collaboration Training" to navigate to its dedicated page.
 1. You should now see the page that displays your "My Classroom Collaboration Training" collection along with the module and learning path that we added to it in the previous steps.
-1. To share the collection you can copy and paste the URL. You can also share via email, LinkedIn, Facebook or Twitter, by selecting the "Share" icon and choosing from the dropdown list of items.
+1. To share the collection, you can copy and paste the URL. You can also share via email, LinkedIn, Facebook, or Twitter, by selecting the "Share" icon and choosing from the dropdown list of items.
 1. Find a method that suits your choosing and send the collection to one of your friends/colleagues.
-1. Great job! You haven now learned how to create collections and share them on Learn.
+1. Great job! You have now learned how to create collections and share them on Learn.
 
 [Image]
 
