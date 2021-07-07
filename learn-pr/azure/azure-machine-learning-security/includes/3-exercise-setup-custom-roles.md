@@ -72,7 +72,74 @@ To create a ML Workspace, follow these steps:
 >   - An [Azure Key Vault instance](https://azure.microsoft.com/services/key-vault/), used to manage secrets such as authentication keys and credentials used by the Workspace.
 >   - A [container registry](https://azure.microsoft.com/services/container-registry/), created as-needed to manage containers for deployed models.
 
-### Summary
+## Create a Custom Role and Assign it to the Workspace
+
+1. Open Azure Cloud Shell
+
+   Click on the Cloud Shell Icon:
+   ![Azure Portal: Powershell](./media/powershell1.png) or use the direct URL in your browser:
+   https://shell.azure.com.
+
+1. Select Bash or Powershell (we will use `bash`):
+
+   ![Azure Portal: Select Bash](./media/powershell2.png)
+
+## Define a Custom Role:
+
+1. Using a text editor of your choice, create a file called `data_scientist_custom_role.json`, replacing the information below:
+
+   | Variable              | Value                |
+   | --------------------- | -------------------- |
+   | <subscription_id>     | Your subscription ID |
+   | <resource_group_name> | AI-Resource          |
+   | <workspace_name>      | ml-workspace         |
+   ```json
+   {
+     "Name": "Data Scientist Custom",
+     "IsCustom": true,
+     "Description": "Can run experiment but can't create or delete compute.",
+     "Actions": ["*"],
+     "NotActions": [
+       "Microsoft.MachineLearningServices/workspaces/*/delete",
+       "Microsoft.MachineLearningServices/workspaces/write",
+       "Microsoft.MachineLearningServices/workspaces/computes/*/write",
+       "Microsoft.MachineLearningServices/workspaces/computes/*/delete",
+       "Microsoft.Authorization/*/write"
+     ],
+     "AssignableScopes": [
+       "/subscriptions/<subscription_id>/resourceGroups/<resource_group_name>/providers/Microsoft.MachineLearningServices/workspaces/<workspace_name>"
+     ]
+   }
+   ```
+1. Upload the role definition file:
+
+   - Click on the **upload/Download files** icon
+   - Select **Upload**
+   - Select the `data_scientist_custom_role.json` file you created above:
+
+   ![Cloud Shell Upload](./media/upload.png)
+
+1. Create a role definition using the `az role definition create` CLI command (notice that the last argument is the file we just uploaded):
+   ```sh
+   az role definition create --role-definition data_scientist_custom_role.json
+   ```
+
+This adds the "Data Scientist Custom" role which is limited to running experiments in the `ml-workspace`.
+
+To verify and list existing roles using the Azure Portal, select the option **Access Control (IAM)** on your `ml-workspace` then select the **Roles** tab:
+
+![Roles assigned to a workspace](./media/custom_role.png)
+
+<!-- ## Assign Custom Role to an User
+Finally, to assign this role to an user, use the CLI commans below:
+```sh
+# Add machine learning extension
+az extension add --name ml
+# Assing custom role to user
+az ml workspace share -w ml-workspace -g AI-Resource --role "Data Scientist Custom" --user user@your-domain.com
+```
+ -->
+## Summary
 
 Congratulations!
 
@@ -80,10 +147,15 @@ In this unit you've covered the following topics:
 
 - Creating a Resource group
 - Creating a Machine Learning Workspace
+- Using the Cloud Shell to run commands and uploading files to your account
+- Defining a Custom Role for Machine Learning with access to your workspace
 
-### More Resources
+<!-- - Assigning roles to an user -->
 
-To read more about Custom Roles visit:
+## More Resources
 
-- [What is an Azure Machine Learning workspace?](https://docs.microsoft.com/azure/machine-learning/concept-workspace)
-- [Manage Azure Resource Manager resource groups by using the Azure portal](https://docs.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal#what-is-a-resource-group)
+To read more about Workspaces and Custom Roles visit:
+
+- [What is an Azure Machine Learning workspace?](/azure/machine-learning/concept-workspace)
+- [Manage Azure Resource Manager resource groups by using the Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal#what-is-a-resource-group)
+- [Manage access to an Azure Machine Learning workspace](/azure/machine-learning/how-to-assign-roles)
