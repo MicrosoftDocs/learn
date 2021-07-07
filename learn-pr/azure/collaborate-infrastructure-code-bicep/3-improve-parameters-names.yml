@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.collaborate-infrastructure-code-bicep.parameters
+uid: learn.azure.collaborate-infrastructure-code-bicep.improve-parameters-names
 title: Improve parameters and names
 metadata:
   unitType: learning-content
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 8
 content: |
-  [!include[](includes/3-parameters.md)]
+  [!include[](includes/3-improve-parameters-names.md)]

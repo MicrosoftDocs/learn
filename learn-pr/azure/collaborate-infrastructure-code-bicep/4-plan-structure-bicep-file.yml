@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.collaborate-infrastructure-code-bicep.template-structure
+uid: learn.azure.collaborate-infrastructure-code-bicep.plan-structure-bicep-file
 title: Plan the structure of your Bicep file
 metadata:
   unitType: learning-content
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-template-structure.md)]
+  [!include[](includes/4-plan-structure-bicep-file.md)]

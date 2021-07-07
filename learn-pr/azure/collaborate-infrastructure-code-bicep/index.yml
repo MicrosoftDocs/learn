@@ -35,12 +35,12 @@ products:
 units:
 - learn.azure.collaborate-infrastructure-code-bicep.introduction
 - learn.azure.collaborate-infrastructure-code-bicep.exercise-review-existing-template
-- learn.azure.collaborate-infrastructure-code-bicep.parameters
-- learn.azure.collaborate-infrastructure-code-bicep.template-structure
-- learn.azure.collaborate-infrastructure-code-bicep.comments-resource-metadata
-- learn.azure.collaborate-infrastructure-code-bicep.exercise-refactor-existing-template
-- learn.azure.collaborate-infrastructure-code-bicep.modules
-- learn.azure.collaborate-infrastructure-code-bicep.exercise-modules
+- learn.azure.collaborate-infrastructure-code-bicep.improve-parameters-names
+- learn.azure.collaborate-infrastructure-code-bicep.plan-structure-bicep-file
+- learn.azure.collaborate-infrastructure-code-bicep.document-code-comments-metadata
+- learn.azure.collaborate-infrastructure-code-bicep.exercise-refactor-bicep-file
+- learn.azure.collaborate-infrastructure-code-bicep.modularize-bicep-code
+- learn.azure.collaborate-infrastructure-code-bicep.exercise-refactor-bicep-file-modules
 - learn.azure.collaborate-infrastructure-code-bicep.knowledge-check
 - learn.azure.collaborate-infrastructure-code-bicep.summary
 badge:
