@@ -16,7 +16,7 @@
 
 ## Prerequisites
 
-- A basic understanding of Azure Kubernetes Service concepts such as Kubernetes API, cluster and pod
+- A basic understanding of Azure Kubernetes Service concepts such as Kubernetes API, cluster, and pod
 - Deployed a fully running instance of an AKS cluster
 
 ## Summary
@@ -54,11 +54,11 @@ Identify the subtasks of **Cluster governance using Azure Policy**
 
     Provide a scenario of a real-world job-task that shows how the technology is used in practice:
 
-    Your team has been working on deploying a new application on top of the Azure Kubernetes Service. You just came out of a review with the security and compliance teams. They expressed concerns about the compliance status of your cluster. For example, they only want you to deploy images from trusted registries. They need you to be able to block new deployments from untrusted registries, and they need to you to be able to present a report of the status of your cluster against that policy. It's now up to you to find out how you can meet this requirement and present a solution to the security and compliance teams. 
+    Your team has been working on deploying a new application on top of the Azure Kubernetes Service. You just came out of a review with the security and compliance teams. They expressed concerns about the compliance status of your cluster. For example, they only want you to deploy images from trusted registries. They need you to be able to block new deployments from untrusted registries, and present a report of the status of your cluster against that policy. It's up to you to find out how you can meet this requirement and present a solution to the security and compliance teams. 
 
     *Add your scenario [(Scenario guidance)](/help/learn/id-guidance-scenarios)*
 
-1. **Azure Policy and how it integrates with the Azure Kubernetes Servcie**
+1. **Azure Policy and how it integrates with the Azure Kubernetes Service**
 
     - What is Azure policy
         - Azure Policy
@@ -67,7 +67,7 @@ Identify the subtasks of **Cluster governance using Azure Policy**
         - Policy scopes
         - links for more info
     - How does Azure policy integrate with AKS
-        - explain azure control plane vs kubernetes control plane
+        - explain Azure control plane vs kubernetes control plane
         - examples of policies
     - Under the cover
         - admission webhooks in kubernetes
@@ -79,7 +79,7 @@ Identify the subtasks of **Cluster governance using Azure Policy**
 
     - A question about Azure policy itself
     - A scenario-based question about Azure policy for AKS (you want to achieve this, how...)
-    - A implementation-based question about Azure policy for AKS (you have this configures, how will...)
+    - An implementation-based question about Azure policy for AKS (you have this configure, how will...)
 
 1. **Exercise - enabling Azure Policy for Azure Kubernetes Service**
 
@@ -88,7 +88,7 @@ Identify the subtasks of **Cluster governance using Azure Policy**
     1. How to automatically enable Azure Policy for AKS
     1. How to monitor which clusters have the add-on installed
 
-1. **Built-in policies for Azure Kubernetes Servcice**
+1. **Built-in policies for Azure Kubernetes Service**
 
     - How to find built-in policies for AKS, and provide links to documentation
         - Explain cluster policy, like authorized ip ranges for example.
@@ -103,18 +103,18 @@ Identify the subtasks of **Cluster governance using Azure Policy**
     1. (using Azure portal) Apply the "[Kubernetes cluster pod security restricted standards for Linux-based workloads](https://docs.microsoft.com/en-us/azure/aks/policy-reference#initiatives) initiative". 
     1. (using kubectl) Deploy a non-compliant pod and see effect
     1. (using kubectl) Deploy a compliant pod and see effect
-    1. (using kubectl) Deploy a non-compliant deployment and see effect (the deployment and replicaset will be created, but pods will fail. Show troubleshooting steps to do kubectl describe replicaset which shows why pods are not getting created)
+    1. (using kubectl) Deploy a non-compliant deployment and see effect (the deployment and replicaset will be created, but pods will fail. Show troubleshooting steps to do kubectl describe replicaset, which shows why pods aren't getting created)
 
 1. **Checking compliance status using Azure Portal**
     - How to use Azure monitor to see runtime operation of policy
         - Explain how Azure monitor can be used to run queries and see runtime operation of policy in AKS clusters
     - How to use Azure portal to see compliance status of cluster 
         - Explain how to use Azure portal to check compliance status and see non-compliant pods highlighted
-        - Explain how it can take over 30 minutes for these non compliant pods to show up
+        - Explain how it can take over 30 minutes for these non-compliant pods to show up
 
-    **Knowledge check**
+1. **Knowledge check**
 
-    - A question about what happens to the non compliant pods after the policy is activated
+    - A question about what happens to the non-compliant pods after the policy is activated
     - A question about what happens when you have two contradicting workload policies at different scopes
     - A question about how to make exceptions to policies
 
