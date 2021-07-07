@@ -55,11 +55,11 @@ Configuration sets offer lower flexibility, since anyone who deploys your templa
 
 When you work with configuration sets, it's often useful to create a _map_ variable, which you use to determine the specific properties you set on different resources based on the parameter:
 
-::: code language="bicep" source="code/3-configuration-map.bicep" range="13-36" :::
+::: code language="bicep" source="code/3-configuration-map.bicep" range="13-40" :::
 
 Your resource definitions then use the configuration map to define the resource properties:
 
-::: code language="bicep" source="code/3-configuration-map.bicep" range="38-42" highlight="4" :::
+::: code language="bicep" source="code/3-configuration-map.bicep" range="42-46" highlight="4" :::
 
 ## How are your resources named?
 

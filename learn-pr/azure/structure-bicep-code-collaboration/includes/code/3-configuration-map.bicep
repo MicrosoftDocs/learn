@@ -13,11 +13,15 @@ var appServicePlanName = 'MyAppServicePlan'
 var environmentConfigurationMap = {
   Production: {
     appServicePlan: {
-      name: 'P2V3'
-      capacity: 3
+      sku: {
+        name: 'P2V3'
+        capacity: 3
+      }
     }
     storageAccount: {
-      name: 'ZRS'
+      sku: {
+        name: 'ZRS'
+      }
     }
   }
   Test: {
