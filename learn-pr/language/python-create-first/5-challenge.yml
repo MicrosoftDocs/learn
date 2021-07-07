@@ -4,12 +4,12 @@ title: Challenge
 metadata:
   title: Challenge
   description: Test your understanding of the content in the module with a code challenge.
-  ms.date: 1/7/2020
+  ms.date: 07/06/2021
   author: bobtabor-msft
-  ms.author: rotabor
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 2
 azureSandbox: false
 content: |
   [!include[](includes/5-challenge.md)]

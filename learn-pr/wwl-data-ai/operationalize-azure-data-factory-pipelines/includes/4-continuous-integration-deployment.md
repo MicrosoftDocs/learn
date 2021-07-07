@@ -65,7 +65,7 @@ The following is a guide for setting up an Azure Pipelines release that automate
 
     a.  In the stage view, select **View stage tasks**.
 
-         ![Stage view](../media/continuous-integration-image-14.png)
+    ![Stage view](../media/continuous-integration-image-14.png)
 
     b.  Create a new task. Search for **ARM Template Deployment**, and then select **Add**.
 
