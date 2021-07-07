@@ -73,7 +73,7 @@ Our goal is to find some training content centered around fostering collaboratio
     1. For the "Description", you can either enter a description of your choosing or leave this blank.
 1. Click "Submit" and "Save". You should now have a new collection saved. You can find this collection by going to the "Collections" area of your profile.
 
-[Image]
+[Image to go here. Awaiting content migration for screenshots]
 
 ## Step 2: Add another module to add to your collection
 We will now find a second piece of content that we can add to our collection. This time we will select a module.
@@ -88,7 +88,7 @@ We will now find a second piece of content that we can add to our collection. Th
 1. A pop-up modal will appear again, this time select the collection that you created "My Classroom Collaboration Training" and then press "Save".
 1. Great job! This module has now been saved to your collection.
 
-[Image]
+[Image to go here. Awaiting content migration for screenshots]
 
 ## Step 3: Share your collection
 Now that we have a collection with some interesting learning paths and modules in it. We can share it with our colleagues.
@@ -100,7 +100,7 @@ Now that we have a collection with some interesting learning paths and modules i
 1. Find a method that suits your choosing and send the collection to one of your friends/colleagues.
 1. Great job! You have now learned how to create collections and share them on Learn.
 
-[Image]
+[Image to go here. Awaiting content migration for screenshots]
 
 <!-- 5. Validation chunk -------------------------------------------------------------------------------------
 

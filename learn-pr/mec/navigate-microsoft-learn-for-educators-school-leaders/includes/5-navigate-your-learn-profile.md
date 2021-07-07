@@ -1,7 +1,7 @@
 ## Your profile
 Your profile stores your activities, collections, achievements, and settings. To go to your profile, navigate to the avatar image on the upper right-hand corner of the browser window and select 'profile' in the pop-up window.
 
-:::image type="content" source="../media/Screenshot of profile icon.png" alt-text="Screenshot of Learn profile avatar selected so that pop up displays for profile access.":::
+:::image type="icon" source="../media/Screenshot of profile icon.png" border="false":::
 
 Here are some main items in your profile:
 
