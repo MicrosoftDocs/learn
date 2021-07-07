@@ -54,10 +54,10 @@ To validate an application's availability, you can use Azure Monitor or Azure Ap
 
 To implement Continuous Integration, you can associate the workflow event with a push to the master branch by adding the following section to the beginning of the YAML file:
 
-    ```yaml
-    name: Build and Deploy to AKS
-    on:
-      push:
-        branches:
-          - master
-    ```
+```yml
+name: Build and Deploy to AKS
+on:
+  push:
+    branches:
+      - master
+```
