@@ -2,9 +2,9 @@ Machine learning’s predictive power comes from the fact that it's shaped by da
 
 But it’s not all about quantity. It can be equally important that data:
 
-1. Aren't just large, but representative
-2. Don't contain errors
-3. Aren't missing key information
+- Aren't just large, but representative
+- Don't contain errors
+- Aren't missing key information
 
 Here we’ll cover these topics before moving on to a practical exercise working with our Titanic dataset.
 
@@ -37,13 +37,13 @@ A dataset that is complete has no missing data. Data can be missing in two ways.
 |Dylan|1.8|75|
 |Reece| |82|
 
-Our data are incomplete because we have a sample missing: Louie is missing entirely, while Tom's height is missing.
+Our data are incomplete because we have a sample missing: Tom is missing entirely, while Reece's height is missing.
 
 Ideally, we always work with complete data, but this practice isn’t always realistic. When we have incomplete data, we can:
 
-* Choose a model that can work with incomplete data, or
-* Remove samples (rows) that have incomplete data, and work with what remains, or
-* Artificially add values that are missing with reasonable substitutes.
+- Choose a model that can work with incomplete data, or
+- Remove samples (rows) that have incomplete data, and work with what remains, or
+- Artificially add values that are missing with reasonable substitutes.
 
 In most circumstances, picking a model that can handle missing data is best, though not always possible. Removing data is the easiest and usually a valid solution, though care needs to be taken that removing data doesn't cause a sample to misrepresent the population. Adding data in artificially is usually a method of last resort.
 
