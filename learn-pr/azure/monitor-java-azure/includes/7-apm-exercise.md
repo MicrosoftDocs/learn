@@ -73,15 +73,13 @@ Select an exception and drill in for meaningful insights and actionable stack tr
 Spring Boot registers many core metrics: JVM, CPU, Tomcat, Logback...
 You can see metrics contributed by Spring Boot apps, Spring Cloud modules, and dependencies.
 
-Next, under the Monitoring section, select **Metrics** in the Application Insights resource menu.
-
 To create a standard metric chart, under the Monitoring section, open the Metrics tab and follow these steps:
 
-1. Ensure your Azure Spring Cloud is selected under **Scope** and **Azure Spring Cloud** under **namespaces**. Both will already be populated if you opened metrics explorer from the resource's menu.
+1. Ensure your Azure Spring Cloud is selected under **Scope** and **Azure Spring Cloud** under **Metric Namespace**. Both will already be populated if you opened metrics explorer from the resource's menu.
 
 :::image type="content" source="../media/4-metrics.jpg" alt-text="Screenshot showing metrics":::
 
-2. Next, under metrics, add the **App CPU Usage** and **Avg** aggregation:
+2. Next, under metrics, select **App CPU Usage** and under aggregation, select **Avg**:
 
 :::image type="content" source="../media/4-metrics-cpu-first-add.jpg" alt-text="Screenshot showing adding app cpu metrics":::
 
@@ -89,7 +87,7 @@ To create a standard metric chart, under the Monitoring section, open the Metric
 
 :::image type="content" source="../media/4-metrics-cpu-first.jpg" alt-text="Screenshot showing metrics selection":::
 
-4. Next, add another metric by selecting the "Add metric" action on the top left-hand toolbar" and add the "system.cpu.usage" metric
+4. Next, add another metric by selecting the "Add metric" action on the top left-hand toolbar and add **system.cpu.usage** under Metric and **Avg** under Aggregation.
 
 :::image type="content" source="../media/4-metrics-add-second.jpg" alt-text="Screenshot showing adding system cpu metrics":::
 
@@ -105,7 +103,7 @@ To create a standard metric chart, under the Monitoring section, open the Metric
 As you deploy resources and applications in Azure, you'll want to start collecting telemetry to gain insights into their performance and health. Azure makes some metrics available to you out of the box. These metrics are called standard or platform. However, they're limited in nature.
 You might want to collect some custom performance indicators or business-specific metrics to provide deeper insights.
 
-Similarly to standard metrics, to create a custom metric chart, under the Monitoring section, open the Metrics tab and follow these steps:
+Similarly to standard metric chart, to create a custom metric chart, under the Monitoring section, open the Metrics tab and follow these steps:
 
 1. Ensure your Azure Spring Cloud is selected in the resource scope picker. It will already be populated if you opened metrics explorer from the resource's menu.
 
