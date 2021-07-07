@@ -46,7 +46,7 @@ Alternatively, you could provide a single parameter with a list of allowed value
 
 The parameter definition looks like this:
 
-::: code language="bicep" source="code/3-configuration-map.bicep" range="4-9" :::
+::: code language="bicep" source="code/3-configuration-map.bicep" range="5-9" :::
 
 > [!NOTE]
 > This approach is sometimes called _t-shirt sizing_. When you buy a t-shirt, you don't get lots of options for its length, width, sleeves, and so forth - you simply choose between small, medium, and large sizes.
