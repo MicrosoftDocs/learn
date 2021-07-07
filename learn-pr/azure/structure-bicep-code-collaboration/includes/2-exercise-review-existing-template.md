@@ -1,6 +1,6 @@
-You have an existing template that has been working for you so far. It deploys correctly all resources the project needs. You sit down with another team member to talk over the template and some planned changes for the next phase of the project.
+You sit down with your colleague in the quality control team, and open up your template. You start to talk through it with them.
 
-As you work your way through the template, your colleague starts to get confused. Maybe your template needs some improvement to help them understand what's happening.
+But as you work your way through the template, your colleague starts to get confused. Maybe your template needs some improvement to help them understand what's happening?
 
 Take a look at the template. How many issues can you find? You're seeing the template for the first time - do you understand what everything in the template is doing? What could you do to improve the template?
 
@@ -8,7 +8,7 @@ Take a look at the template. How many issues can you find? You're seeing the tem
 
 ## Save the Bicep file
 
-Throughout this module, you'll improve the template to follow best practices and to make it clearer, more understandable, and easier for your colleagues to work with. First, you need to download the template and save it locally so you can work with it.
+Throughout this module, you'll improve the template to follow best practices and to make it clearer, more understandable, and easier for your colleague to work with. First, you need to download the template and save it locally so you can work with it.
 
 1. Open Visual Studio Code.
 

@@ -2,21 +2,19 @@ One of the biggest benefits of deploying your infrastructure as code is that you
 
 ## Example scenario
 
-Imagine you're working as the Azure administrator in a toy company. You've been asked to help out another team, who is building a website for a new toy. You've worked with Bicep a lot already, so you managed to create a Bicep template and use it to provision all of the resources for the team's website.
+Imagine you're working as the Azure administrator in a toy company. You've built up lots of Bicep files for all sorts of projects that your company has run.
 
-So far, you've been working alone, but the project team is growing, and the website is a key part of the team's strategy. You want to ensure new team members can be easily onboarded and can contribute to the project, and even reuse the code for other projects. You've decided to rethink the way you designed, structured, and authored your Bicep code, since you want to enable team collaboration and improve the efficiency of working with the Bicep files.
+A colleague from your quality control team just emailed you. They've been asked to run a customer survey and they need to deploy a new website and database. They're on a tight deadline so they don't want to build a whole new template if they don't have to. You have a call with them and, after speaking with them about their requirements, you remember you have a template that is close to what they need.
+
+It's one of the first Bicep files you wrote, so you're a little worried that it might not be ready for them to use. Nevertheless, you agree to share your template and collaborate with them to share the work you've done and improve it. 
 
 ## What will we be doing?
 
-In this module, you'll be provided with an existing Bicep template that you need to refactor and optimize for team collaboration. You will:
-
-- Break down your Bicep code into reusable modules.
-- Define your template structure and authoring style.
-- Use comments and other metadata to document your code.
+In this module, you'll learn how to improve and refactor Bicep files to make your code easier for others to understand and work with. You'll learn how parameters and names are an important part of making your Bicep code and Azure deployments useful to others, and you'll learn how to define your template structure and follow a consistent style so that your colleagues will be able to understand how your template works. You'll also learn how comments and other metadata can be used to document your code and resources, and you'll break down Bicep code into reusable modules.
 
 ## What is the main goal?
 
-By the end of this module, you'll be able to author Bicep templates that are modular, reusable, and well documented.
+By the end of this module, you'll be able to author Bicep templates that are modular, reusable, and well-documented.
 
 ## Prerequisites
 

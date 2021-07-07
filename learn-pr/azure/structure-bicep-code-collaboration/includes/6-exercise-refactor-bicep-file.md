@@ -1,4 +1,4 @@
-Your colleague has come back to you with some questions about your template. You decide to refactor the file to make it easier for them to work with. In this exercise, you apply the best practices you learned in the preceding units.
+After reviewing your template with your colleague, you decide to refactor the file to make it easier for them to work with. In this exercise, you apply the best practices you learned in the preceding units.
 
 ## Your task
 
@@ -150,3 +150,6 @@ Think about anything in the template that might not be obvious, or that needs so
 Here's an example of how you might refactor the template. Your template might not look exactly like this, since you may have a different style.
 
 ::: code language="bicep" source="code/6-template.bicep" :::
+
+> [!TIP]
+> If you're working with your colleague using GitHub or Azure Repos, this would be a great time to submit a _pull request_ to integrate your changes into the main branch. It's a good idea to submit pull requests after you do a piece of refactoring work.
