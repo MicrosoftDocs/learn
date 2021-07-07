@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.visual-studio-test-tools.view-and-run-tests
-title: Write a test
+title: View, Run, and Debug tests in Visual Studio
 metadata:
   unitType: learning-content
-  title: write-a-test
+  title: view-and-run-tests
   description: View, run, and debug tests in Visual Studio.
-  ms.date: 7/01/2021
+  ms.date: 7/07/2021
   author: {{githubUsername}}
   ms.author: {{msUser}}
   ms.topic: interactive-tutorial

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: Check your knowledge on the different schools of testing including TDD, BDD, DRY, and Red/Green/Refactor.
+  description: Check your knowledge on the basics of writing a test.
   ms.date: 6/28/2021
   author: {{githubUsername}}
   ms.author: {{msUser}}
@@ -37,31 +37,31 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: "What does TDD stand for?"
+  - content: If you have one method that you'd like to test with multiple different inputs, what testing tool could help you?
     choices:
-    - content: "Test Driven Design"
+    - content: Fluent Assertions
       isCorrect: false
       explanation: "Not quite! Try again."
-    - content: "Testing Data Daily"
-      isCorrect: false
-      explanation: "Not quite! Try again."
-    - content: "Test Driven Development"
+    - content: "Data driven tests"
       isCorrect: true
-      explanation: "You are correct, TDD centers around the idea of writing tests first before the code and letting the tests drive development."
-    - content: "Technical Data Development"
+      explanation: "You are correct! Data driven tests can reduce repetition in your code by letting you run a test with multiple different inputs."
+    - content: "Mocking"
       isCorrect: false
       explanation: "Not quite! Try again."
-  - content: "What is the best recommended testing approach?"
+    - content: "No framework is needed, you should simply copy and paste the test multiple times and only change the parameters."
+      isCorrect: false
+      explanation: "Not quite! Try again."
+  - content: Stubs and shims are found in what testing tool?
     choices:
-    - content: "TDD"
+    - content: "Fluent Assertions"
       isCorrect: false
-      explanation: "While many may prefer TDD over other methods there is no empirical evidence indicating it is the best way for all humans to write code."
-    - content: "DRY"
+      explanation: "Not quite! Try again."
+    - content: "Data driven tests"
       isCorrect: false
-      explanation: "While many may find DRY a necessity, it may be difficult to avoid all repetition, especially for new coders. One certainly can't have perfection slow down getting a prototype working."
-    - content: "It depends on the needs of the repo and the team!"
+      explanation: "Not quite! Try again."
+    - content: "Mocking"
       isCorrect: true
-      explanation: "Every developer and team is different. While it's good to keep much of this guidance in mind, at the end of the day the only important thing is choosing what works for you."
-    - content: "BDD"
+      explanation: "Correct! Mocking uses stubs and shims to isolate code so you are only testing one specific piece of your project at a time."
+    - content: "Behavior driven tests"
       isCorrect: false
-      explanation: "While many may prefer BDD over other methods there is no empirical evidence indicating it is the best way for all humans to write code."
+      explanation: "Not quite! Try again."

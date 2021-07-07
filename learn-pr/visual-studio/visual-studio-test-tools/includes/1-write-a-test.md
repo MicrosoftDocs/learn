@@ -1,51 +1,42 @@
 # Write a Test
 
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Writing tests have a few basic steps:
 
-    Goal: state what's in this unit and how it aligns to the 'describe' learning objective.
+* Create a test project
+* Add a reference to the product code from the test project
+* Write a test
 
-    Pattern:
-        One paragraph of 2-3 sentences:
-            Sentence 1: State that this unit addresses ("how it works").
-            Sentence 2: State that this unit targets this learning objective: "Describe how (features) of (product) work to (solve problem)."
-            Sentence 3-4 (optional): Give the rationale ("helps you decide if it will meet your needs").
-        Table-of-contents as a bulleted list (do not simply list every heading you'll have on the page, group them into about 3 high-level areas).
+## Create a test project
 
-    Heading: none
+* The easiest way to add a test project for testing a specific method in your code is to right-click in that method and select 'Create unit tests.' This option to auto-generate test methods is available for most .NET projects, but let's describe how to manually set up test projects as well.
 
-    Example: "Here, we'll discuss how Logic Apps works behind the scenes. You'll learn about all the pieces of Logic apps and see how they fit together into an app. This knowledge will help you decide whether Logic Apps will work for you without any customization. In cases where you do need to create custom components, you'll be able to determine how difficult it will be.
-        * Connectors, triggers, actions
-        * Control actions
-        * Logic Apps Designer"
--->
-Testing 
+![image](../media/create-unit-tests-generation.png)
 
-* 
+* You can add test project templates to your solution by right-clicking on the solution in the Solution Explorer and selecting 'Add project.' Select a MSTest project template from the list. There are multiple popular test frameworks in .NET. MSTest is the built-in option for .NET produced by the .NET team.
+* There are many naming conventions that different code bases may use to indicate how the test suite is organized. Commonly, you may find names similar to \<MyAppProjectName\>.Tests for test projects.
 
-## Val
 
-Any 
 
-![image](../media/test)
+## Add a reference to the product code from the test project
 
-Tests 
+* Now that you have a test project, it needs to reference the code you would like to test so you can make calls to your app from within your tests. Right-click on the test project in the Solution Explorer and select 'Add Reference.' Select the project you would like to test.
 
-## In
+![image](../media/add-project-reference.png)
 
-A 
+* Make sure to add an import statement to the top of your C# test files so that references to any types in your product code's namespaces are resolved.
 
-## Test
+## Write a test
 
-Testing 
+* The templates come with a pre-written test. Note the 'Assert' line. Assert statements are what decide if your test passes or fails. You can add multiple asserts to any given test. If one assert fails, then the test will fail.
+* Add an assert statement to check if a type in your product code is null.
+* Add an assert statement that causes your test to fail. An example of a failing assert would be asserting IsTrue on a false boolean.
+* Writing good tests can take a while to learn, just like writing good code. If you would like to learn more about writing good tests, see the [conceptual guidance](../../visual-studio-test-concepts/resources/design-doc.md).
 
-## Co
-
-Code 
+```csharp
+Assert.IsTrue(false); // Will fail the test
+```
 
 ![image](../media/)
-
-Tra
-
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 <!-- Do not add a unit summary or references/links -->
