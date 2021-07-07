@@ -12,10 +12,10 @@ The potential security problem with using these protocols over the Internet is t
 
 It's recommended that you disable direct RDP and SSH access to your Azure VMs from the Internet. After direct RDP and SSH access from the Internet is disabled, you have other options that you can use to access these VMs for remote management:
 
-    - Point-to-site VPN
-    - Site-to-site VPN
-    - Azure ExpressRoute
-    - Azure Bastion Host
+- Point-to-site VPN
+- Site-to-site VPN
+- Azure ExpressRoute
+- Azure Bastion Host
 
 1. Sign in to the Azure portal.
 
@@ -79,7 +79,7 @@ Network security group (NSG) flow logs are a feature of Network Watcher that all
 
 1. Select **Enable Network Watcher**.
 
-:::image type="content" source="../media/7-network-watcher.png" alt-text="Screenshot of the Network Watcher service pane." lightbox="../media/7-network-watcher.png":::
+    :::image type="content" source="../media/7-network-watcher.png" alt-text="Screenshot of the Network Watcher service pane." lightbox="../media/7-network-watcher.png":::
 
 > [!TIP]
 > Remember to select **Save** if you make changes to any of the settings.
