@@ -1,6 +1,4 @@
-Suppose you want to migrate many servers that are running clustered workloads in your on-premises network to Azure. You can create Azure shared disks and attach them to multiple virtual machines (VMs) simultaneously.
-
-## What are Azure shared disks?
+Suppose you want to migrate many servers that are running clustered workloads from your on-premises network to Azure. You can create Azure shared disks and attach them to multiple virtual machines (VMs) simultaneously.
 
 Azure shared disks offer shared cloud-based block storage. This shared storage supports both Windows-based and Linux-based clustered applications.
 
@@ -40,17 +38,17 @@ In a failover cluster scenario, you use multiple VMs to access an Azure shared d
 To help you understand how shared disks work, let's examine the following step-by-step example:
 
 1. The clustered application that runs on the VMs uses the SCSI PR protocol to register its intent to read or write to disk. In this step, each VM reads information on the target about existing reservations and registrations.
-1. One application instance on VM&nbsp;1 takes an exclusive reservation to write to the disk.
-1. After that reservation is enforced, only VM&nbsp;1 can write to the disk. This action prevents other VMs from writing to the disk at the same time.
-1. If the application instance on VM&nbsp;1 goes down, VM&nbsp;2 issues a *preempt and abort* command and assumes disk control.
-1. The reservation to write is now enforced on the VM&nbsp;2, and other VMs can't write to the disk.
-1. The applications that were running on VM&nbsp;1 now fail over to VM&nbsp;2.
+1. One application instance on VM1 takes an exclusive reservation to write to the disk.
+1. After that reservation is enforced, only VM1 can write to the disk. This action prevents other VMs from writing to the disk at the same time.
+1. If the application instance on VM1 goes down, VM2 issues a *preempt and abort* command and assumes disk control.
+1. The reservation to write is now enforced on the VM2, and other VMs can't write to the disk.
+1. The applications that were running on VM1 now fail over to VM2.
 
 :::image type="content" source="../media/02-diagram-for-failover-clustering-using-shared-disk.png" alt-text="Diagram that shows how failover clustering works with shared disks on Azure." border="true":::
 
 ### SQL Server failover cluster instance
 
-You can create a SQL Server FCI by using two or more Windows Azure VMs. To achieve high availability, use Premium SSDs that support availability sets and proximity placement groups. Alternatively, you can use Ultra Disks that include support for availability zones. You should use Azure shared disks to store FCI data directories. You can also implement striping across multiple shared disks if you create a shared storage pool. 
+You can create a SQL Server FCI by using two or more Windows Azure VMs. To achieve high availability, use Premium SSDs that support availability sets and proximity placement groups. Alternatively, you can use Ultra Disks that include support for availability zones. You should use Azure shared disks to store SQL Server FCI data directories. You can also implement striping across multiple shared disks if you create a shared storage pool. 
 
 > [!Note]
 > Availability sets and proximity placement groups aren't required to implement a SQL Server FCI with a shared disk. They're used to increase the availability and performance of the SQL Server FCI.
@@ -63,7 +61,7 @@ Windows Server failover clustering with Azure VMs requires additional configurat
 
 ### File servers
 
-File servers for general use can use the shared disk to enable high availability for the file service role. You can also use Scale-Out File Server deployed on a Windows Server failover cluster, which uses Azure shared disks in active-active mode. Cluster witness resources are stored on Azure shared disks. All file shares are simultaneously online on all nodes.
+File servers for general use can use the shared disk to enable high availability for the file service role. You can also use the Scale-Out File Server features deployed on a Windows Server failover cluster, which uses Azure shared disks in active-active mode. Cluster witness resources are stored on Azure shared disks. All file shares are simultaneously online on all nodes.
 
 Use an Azure Resource Manager template (ARM template) to deploy a [Windows Server 2019 Scale-Out File Server cluster with Azure shared disks](https://github.com/robotechredmond/301-shared-disk-sofs).
 
