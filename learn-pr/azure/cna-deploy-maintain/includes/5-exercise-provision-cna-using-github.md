@@ -50,11 +50,11 @@ Now you're ready to proceed with implementing a CI/CD pipeline by using Azure De
 1. On the **Start fresh with a new application** tab, verify the presence of the **Setting up DevOps starter with GitHub** label. If the label states **Setting up DevOps starter with Azure DevOps**, select the **here** link, select **GitHub**, and then select **Done**.
 1. On the **Start fresh with a new application** page, select the **Node.js** tile, and then select **Next: Framework >**.
 
-    :::image type="content" source="../media/5-azure-devops-starter-node.js-app.png" alt-text="Screenshot of the DevOps Starter blade, Start fresh with a new application page, with the Node.js tile selected." border="false":::
+    :::image type="content" source="../media/5-azure-devops-starter-node-js-app.png" alt-text="Screenshot of the DevOps Starter blade, Start fresh with a new application page, with the Node.js tile selected." border="false":::
 
 1. On the **Choose an application framework** page, select the **Express.js** tile, and then select **Next: Service >**.
 
-    :::image type="content" source="../media/5-azure-devops-starter-express.js-framework.png" alt-text="Screenshot of the  DevOps Starter blade, Choose an application framework page, with the Choose.js tile selected.." border="false":::
+    :::image type="content" source="../media/5-azure-devops-starter-express-js-framework.png" alt-text="Screenshot of the  DevOps Starter blade, Choose an application framework page, with the Choose.js tile selected.." border="false":::
 
 1. On the **Select an Azure service to deploy the application** page, select the **Kubernetes Service** tile, and then select **Next: Create >**.
 
