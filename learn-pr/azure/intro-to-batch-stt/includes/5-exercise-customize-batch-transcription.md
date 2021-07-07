@@ -1,4 +1,4 @@
-The first step to train a model is to upload training data. See [Prepare and test your data](./how-to-custom-speech-test-and-train.md) for step-by-step instructions to prepare human-labeled transcriptions and related text (utterances and pronunciations).
+The first step to train a model is to upload training data. See [Prepare and test your data](./azure/cognitive-services/speech-service/how-to-custom-speech-test-and-train) for step-by-step instructions to prepare human-labeled transcriptions and related text (utterances and pronunciations).
 
 ## Train and evaluate a model
 
