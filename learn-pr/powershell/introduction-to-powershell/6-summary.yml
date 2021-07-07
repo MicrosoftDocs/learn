@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.powershell.intro-to-powershell.9-summary
+uid: learn.powershell.intro-to-powershell.6-summary
 title: Summary
 metadata:
   title: Summary
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/6-summary.md)]

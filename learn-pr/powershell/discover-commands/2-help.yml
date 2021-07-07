@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.powershell.discover-commands.2-help
-title: Unit
+title: Discover a command using the help system
 metadata:
-  title: Unit
-  description: Describe unit
-  author: undefined
-  ms.author: undefined
-  ms.date: 04/14/2020
+  title: Discover a command using the help system
+  description: PowerShell ships with a built-in help system. With the help system you can discover how to call the command.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 07/07/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

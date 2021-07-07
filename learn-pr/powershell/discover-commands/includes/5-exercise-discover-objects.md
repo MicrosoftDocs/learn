@@ -17,7 +17,7 @@ In this scenario, you'll use the `Get-Member` cmdlet.
 1. Run `Get-Process` again. This time, use the process name and pipe `Get-Member`.
 
    ```powershell
-   Get-Process -Name {selected process name} | Get-Member
+   Get-Process -Name 'selected process name' | Get-Member
    ```
 
    This command produces a long response that consists of all of the members, events, and methods. At this point, focus on the first line, which lists the following information:

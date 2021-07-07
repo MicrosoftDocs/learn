@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.powershell.discover-commands.3-exercise-help
-title: Unit
+title: Exercise - using help
 metadata:
-  title: Unit
-  description: Describe unit
-  author: undefined
-  ms.author: undefined
-  ms.date: 04/14/2020
+  title: Exercise - using help
+  description: In this exercise, you'll learn to use the help system to learn more about a command.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 07/07/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
