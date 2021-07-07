@@ -31,7 +31,7 @@ az monitor log-analytics workspace delete --force true --resource-group <your Re
 
 * [Azure monitor](https://docs.microsoft.com/azure/azure-monitor?WT.mc_id=java-00000-ropreddy)
 
-* [Azure Spring Cloud homepage](https://azure.microsoft.com/services/spring-cloud?WT.mc_id=java-00000-ropreddy).
+* [Azure Spring Cloud Availability by Region](https://azure.microsoft.com/global-infrastructure/services/?products=spring-cloud?WT.mc_id=java-00000-ropreddy).
 
 * [Azure Spring Cloud locations and pricing](https://azure.microsoft.com/pricing/details/spring-cloud?WT.mc_id=java-00000-ropreddy)
 

@@ -32,7 +32,17 @@ You can see the performance number for dependencies, particularly SQL calls:
 
 You can select a SQL call or a dependency to see the transaction in context:
 
-:::image type="content" source="../media/4-petclinic-microservices-end-to-end-transaction-details.jpg" alt-text="Screenshot showing single transaction for your Azure Spring Cloud instance":::
+1. Select a SQL statement in the "Select operation tab":
+
+:::image type="content" source="../media/4-performance-sql.jpg" alt-text="Screenshot showing single transaction for your Azure Spring Cloud instance":::
+
+2. Next, on the Right tab, select "Drill into" and on the far right tab, and then select a SQL sample to open the transaction detail window:
+
+:::image type="content" source="../media/4-performance-sql-details.jpg" alt-text="Screenshot showing single transaction for your Azure Spring Cloud instance":::
+
+3. Finally, in the transaction details view, view the sample sql statement transaction by selecting the sql statement:
+
+:::image type="content" source="../media/4-performance-sql-stack.jpg" alt-text="Screenshot showing single transaction for your Azure Spring Cloud instance":::
 
 ### Failures/Exceptions
 
@@ -42,23 +52,60 @@ Next, select **Failures** in the Application Insights resource menu located in t
 
 Select an exception and drill in for meaningful insights and actionable stack trace:
 
-:::image type="content" source="../media/4-end-to-end-exception-details.jpg" alt-text="Screenshot showing end-to-end transaction and stacktrace in context":::
+1. On the right-hand side, select an exception in the "Top 3 exception types":
+
+:::image type="content" source="../media/4-exception.jpg" alt-text="Screenshot showing the exception screen":::
+
+2. Next, on the Right tab, select the "Suggested" exception sample to open the transaction detail window:
+
+:::image type="content" source="../media/4-exception-drill.jpg" alt-text="Screenshot showing the exception detail screen":::
+
+3. Next, view the exception properties in the transaction detail window:
+
+:::image type="content" source="../media/4-exception-details.jpg" alt-text="Screenshot showing the exception details screen":::
+
+4. Finally, in the middle of the screen, in the end-to-end transaction tab, select an exception to view its details and stacktrace:
+
+:::image type="content" source="../media/4-exception-stack.jpg" alt-text="Screenshot showing the exception stacktrace screen":::
 
 ### Metrics
 
-Next, under the Monitoring section, select **Metrics** in the Application Insights resource menu.
 Spring Boot registers many core metrics: JVM, CPU, Tomcat, Logback...
 You can see metrics contributed by Spring Boot apps, Spring Cloud modules, and dependencies.
-The chart below shows `gateway-requests` (Spring Cloud Gateway), `hikaricp_connections` (JDBC Connections), and `http_client_requests`.
 
-:::image type="content" source="../media/4-petclinic-microservices-metrics.jpg" alt-text="Screenshot showing metrics view for your Azure Spring Cloud instance":::
+Next, under the Monitoring section, select **Metrics** in the Application Insights resource menu.
+
+To create a standard metric chart, under the Monitoring section, open the Metrics tab and follow these steps:
+
+1. Ensure your Azure Spring Cloud is selected under **Scope** and **Azure Spring Cloud** under **namespaces**. Both will already be populated if you opened metrics explorer from the resource's menu.
+
+:::image type="content" source="../media/4-metrics.jpg" alt-text="Screenshot showing metrics":::
+
+2. Next, under metrics, add the **App CPU Usage** and **Avg** aggregation:
+
+:::image type="content" source="../media/4-metrics-cpu-first-add.jpg" alt-text="Screenshot showing adding app cpu metrics":::
+
+3. Next, save the first metric by selecting the "Tick" icon on the right-hand metric bar.
+
+:::image type="content" source="../media/4-metrics-cpu-first.jpg" alt-text="Screenshot showing metrics selection":::
+
+4. Next, add another metric by selecting the "Add metric" action on the top left-hand toolbar" and add the "system.cpu.usage" metric
+
+:::image type="content" source="../media/4-metrics-add-second.jpg" alt-text="Screenshot showing adding system cpu metrics":::
+
+5. Next, save the second metric by selecting the "Tick" icon on the right-hand metric bar.
+
+:::image type="content" source="../media/4-metrics-add.jpg" alt-text="Screenshot showing adding system cpu metrics":::
+
+6. Finally, inspect your metrics graph with both the App and System CPU metrics
+:::image type="content" source="../media/4-metrics-cpu-both.jpg" alt-text="Screenshot showing system and app cpu metrics":::
 
 ### Custom Metrics
 
 As you deploy resources and applications in Azure, you'll want to start collecting telemetry to gain insights into their performance and health. Azure makes some metrics available to you out of the box. These metrics are called standard or platform. However, they're limited in nature.
 You might want to collect some custom performance indicators or business-specific metrics to provide deeper insights.
 
-To create a custom metric chart, under the Monitoring section, open the Metrics tab and follow these steps:
+Similarly to standard metrics, to create a custom metric chart, under the Monitoring section, open the Metrics tab and follow these steps:
 
 1. Ensure your Azure Spring Cloud is selected in the resource scope picker. It will already be populated if you opened metrics explorer from the resource's menu.
 
@@ -86,15 +133,6 @@ To create a custom metric chart, under the Monitoring section, open the Metrics 
 6. Your final graph will show the counts in the last 24 hours for each of the pet, vet, and owner microservices:
 
 :::image type="content" source="../media/7-custom.jpg" alt-text="Screenshot showing final custom metrics view":::
-
-### Availability
-
-Next, on the left, under the Investigate section, select **Availability**.
-
-:::image type="content" source="../media/4-petclinic-microservices-availability.jpg" alt-text="Screenshot showing availability tab for your Azure Spring Cloud":::
-
-Azure Application Insights sends requests to your application at regular intervals. It can alert you if your application isn't responding, or if it responds too slowly.
-You can use the Availability Test feature in Application Insights to monitor the availability of applications in Azure Spring Cloud. This feature is a recurring test to monitor the availability and responsiveness of your micro-services at regular intervals. It can proactively alert you if your services aren't responding or if they respond too slowly.
 
 ### Live Metrics
 
