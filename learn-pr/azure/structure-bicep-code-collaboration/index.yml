@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.collaborate-infrastructure-code-bicep
+uid: learn.azure.structure-bicep-code-collaboration
 metadata:
   moduleType: standard
   title: Structure your Bicep code for collaboration
@@ -33,15 +33,15 @@ roles:
 products:
   - azure-resource-manager
 units:
-- learn.azure.collaborate-infrastructure-code-bicep.introduction
-- learn.azure.collaborate-infrastructure-code-bicep.exercise-review-existing-template
-- learn.azure.collaborate-infrastructure-code-bicep.improve-parameters-names
-- learn.azure.collaborate-infrastructure-code-bicep.plan-structure-bicep-file
-- learn.azure.collaborate-infrastructure-code-bicep.document-code-comments-metadata
-- learn.azure.collaborate-infrastructure-code-bicep.exercise-refactor-bicep-file
-- learn.azure.collaborate-infrastructure-code-bicep.modularize-bicep-code
-- learn.azure.collaborate-infrastructure-code-bicep.exercise-refactor-bicep-file-modules
-- learn.azure.collaborate-infrastructure-code-bicep.knowledge-check
-- learn.azure.collaborate-infrastructure-code-bicep.summary
+- learn.azure.structure-bicep-code-collaboration.introduction
+- learn.azure.structure-bicep-code-collaboration.exercise-review-existing-template
+- learn.azure.structure-bicep-code-collaboration.improve-parameters-names
+- learn.azure.structure-bicep-code-collaboration.plan-structure-bicep-file
+- learn.azure.structure-bicep-code-collaboration.document-code-comments-metadata
+- learn.azure.structure-bicep-code-collaboration.exercise-refactor-bicep-file
+- learn.azure.structure-bicep-code-collaboration.modularize-bicep-code
+- learn.azure.structure-bicep-code-collaboration.exercise-refactor-bicep-file-modules
+- learn.azure.structure-bicep-code-collaboration.knowledge-check
+- learn.azure.structure-bicep-code-collaboration.summary
 badge:
-  uid: learn.azure.collaborate-infrastructure-code-bicep.badge
+  uid: learn.azure.structure-bicep-code-collaboration.badge

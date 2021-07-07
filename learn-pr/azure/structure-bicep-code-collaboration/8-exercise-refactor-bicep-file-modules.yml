@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.collaborate-infrastructure-code-bicep.exercise-refactor-bicep-file-modules
+uid: learn.azure.structure-bicep-code-collaboration.exercise-refactor-bicep-file-modules
 title: Exercise - Refactor the Bicep file to use modules
 metadata:
   unitType: exercise

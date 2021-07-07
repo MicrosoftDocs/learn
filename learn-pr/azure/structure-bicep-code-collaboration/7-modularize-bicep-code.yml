@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.collaborate-infrastructure-code-bicep.modularize-bicep-code
+uid: learn.azure.structure-bicep-code-collaboration.modularize-bicep-code
 title: Modularize your Bicep code
 metadata:
   unitType: learning-content

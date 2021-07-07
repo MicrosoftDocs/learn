@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.collaborate-infrastructure-code-bicep.document-code-comments-metadata
+uid: learn.azure.structure-bicep-code-collaboration.document-code-comments-metadata
 title: Document your code using comments and add resource metadata
 metadata:
   unitType: learning-content
