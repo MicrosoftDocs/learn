@@ -1,4 +1,4 @@
-In this module, you learned about Event Hubs, a cognitive service available on Azure. You learned about the different types of forms that prebuilt models can analyze and extract data from, how Layout API can extract document structures, and how prebuilt models can extract data tailored specifically to your forms.
+In this module, you learned about Event Hubs, a service available on Azure. You learned about the different features of Event Hubs, along with the various services available. You also learned about the other Azure services you can integrate Event Hubs with to get the most out of your data pipeline.
 
 Now that you've reviewed this module, you should be able to:
 
@@ -11,5 +11,5 @@ Now that you've reviewed this module, you should be able to:
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
 * [Event Hubs documentation](/azure/cognitive-services/event-hubs/)
-* [Microsoft Learn - Analyze receipts with the Event Hubs service](/learn/modules/analyze-receipts-event-hubs/)
-* [Microsoft Learn - Implement knowledge mining with Azure Cognitive Search](/learn/paths/implement-knowledge-mining-azure-cognitive-search/)
+* [Creating an Event hub documentation](/azure/event-hubs/event-hubs-create)
+* [Event Hubs premium documentation](/azure/event-hubs/event-hubs-premium-overview)

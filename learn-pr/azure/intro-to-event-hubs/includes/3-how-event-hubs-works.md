@@ -1,14 +1,59 @@
-To use Event hubs, you need an Azure subscription, which you can create for free. Event hubs is available in basic, standard, premium, or dedicated pricing tiers, depending on your needs. 
+At its core, Event Hubs can be thought of as a message or event log. We use the term event and message here to mean a small packet of information, or a datagram, that contains some kind of notification. For example, in our security system scenario the event may be a notification that a motion sensor has been tripped. When an event producer, such as the motion sensor, sends data to Event Hubs, that event is saved to Event Hubs’ specialized cache. The event consumer – such as a custom application – pulls events from Event Hubs, reads them, and processes them at a rate it sees fit.
 
-Event hubs is available in these languages:
-* .NET Core
+## Language and framework integration
+
+Event Hubs is available in the following languages:
+
+* .NET Core supported languages such as C# and F#
 * Java
 * Python
 * JavaScript
 * Go
 * C (send only)
-* Apache storm
 
-Unlike some messaging services, like Azure Service Bus Queues for example, Event Hubs does not use a 'push' model. Instead, Event Hubs holds the message in its cache for it to be read. When a message is read form the EventHub, it is not deleted—messages are only deleted once the retention time has passed.
+Messages can also be received from Event Hubs using Apache Storm.
 
-This service is scalable up to terabytes of data and millions of events per second, and can process from a number of data sources, such as telemetry, iOT devices, web and phone apps, sensors, metrics, and more.
+## Choosing a tier and throughput
+
+Event Hubs is a platform-as-a-service that runs on Azure. As such, you need an Azure subscription, which you can create for free.
+
+Scaling of Event Hubs is controlled by how many throughput units or processing units you purchase. A single throughput unit equates to:
+
+* Ingress: Up to 1 MB per second or 1000 events per second (whichever comes first).
+* Egress: Up to 2 MB per second or 4096 events per second.
+
+Other performance aspects depend on the pricing tier chosen, with basic, standard, premium, and dedicated pricing tiers being available.
+
+Each plan supports different maximum event retention periods – ranging from 24 hours with the basic tier to up to at least 90 days with premium and dedicated tiers. Higher tiers also offer larger storage volumes, up to 10 TB per capacity unit, and different pricing structures for different levels of throughput, numbers of events, and Capture functionality. Notably, non-basic tiers provide integration with Apache Kafka and a Schema Registry which can be used by senders and receivers of data to validate data integrity.
+
+## Loose coupling and data expiry
+
+The pull model used by Event Hubs differentiates it from some other messaging services, such as Azure Service Bus Queues. The pull model means that Event Hubs simply holds the message in its cache and allows it to be read. When a message is read from Event Hubs, it is not deleted but is left to be read, as needed, by more consumers. Messages are deleted from Event Hubs automatically once they have existed in cache for more than their expiry period (called time-to-live) which is customizable but 24 hours by default.
+
+This loose coupling means that Event Hubs is not opinionated about which consumers read its messages, so long as security requirements are met (Azure Active Directory and network configurations being supported). This lack of opinionated treatment can mean less time is spent configuring pipelines, but also means that there is no built-in mechanism to handle messages that aren't processed as you expect them.
+
+For example, imagine that an event is processed but is provided with invalid formatting that causes your consumer function to malfunction. Since Event Hubs is simply acting as a data provider, it does not have a built-in mechanism to detect or handle this downstream error and will still delete the message once its time-to-live has expired. If processing these data were mission critical, you'd need to make sure you handled the failure some other way, such as exception handling code within the consuming function.
+
+### Partitioning data automatically
+
+Events received by Event Hubs are appended to its data stream. This data stream orders events by the time they are received, and consumers can seek along this stream using time offsets.
+
+Event Hubs can optionally partition events based on attributes to form multiple data streams. For example, in our security scenario motion sensor data might be sent to one stream and door-opening sensor data sent to another. Event Hubs uses partition keys – which are sender supplied values – to identify which data should be allocated to which partition. Partitions can be used to divide or prioritise work, as well as ensure that certain types of data are physically stored together for ease of processing and backup.
+
+![Diagram showing how partitions are separated in event hubs.](../media/3-partitions.png)
+
+## Consumer groups
+
+All consumers of data stored in Event Hubs are assigned to one consumer group and one partition. Whereas each partition has a separate data stream, each consumer groups has their own view (stream offset) of each partition stream. In other words, each consumer group can independently seek and read data, from each partition, at their own pace.
+
+![Diagram showing event hubs architecture.](../media/3-event-hubs-architecture.png)
+
+Multiple consumers can be assigned to the same consumer group but it is recommended that, within a consumer group, only one consumer is allocated to each partition. Duplicates in this regard will mean that multiple consumers will receive identical information, potentially leading to a duplication of work.
+
+## Checkpointing
+
+Checkpointing is built-in functionality that allows each consumer group to formally ‘bookmark’ a location each partition. Typically, this allows keeping track of which messages have been processed but can alternatively be used to simply mark the last reader position in case of a network disconnect. Checkpointing is the responsibility of the consumer group to manually perform, and has no pre-determined interpretation by Event Hubs.
+
+## Security and privacy
+
+By default, all Event Hubs resources are secure and can only be accessed by the account owner. To grant access you can offer authorized access using Azure Active Directory or Shared Access Signatures (SAS) for whenever a client tries to access an Event Hubs resource. Azure Active Directory provides role-based access control, so you can grant permissions to a security principal, such as a user or a group, using a token. You can also utilize SAS to provide limited and delegated access to Event Hubs resources using time or valid use constraints. Microsoft recommends using Azure Active Directory for maximum security, as you don’t need to store the access tokens, which reduces potential security risks of a compromised SAS.
