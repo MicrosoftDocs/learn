@@ -77,6 +77,8 @@ products:
 - azure-application-gateway
 - azure-load-balancer
 - azure-bastion
+- azure-firewall
+- windows-virtual-desktop
 modules:
 - learn.configure-the-network-for-your-virtual-machines
 - learn.design-ip-addressing-for-azure
