@@ -34,6 +34,3 @@ You should be familiar with Bicep structure and syntax, including parameters, mo
 To follow along with the exercises in the module, you'll need the following installed locally:
 - [Visual Studio Code](https://code.visualstudio.com)
 - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
-- Either:
-  - The latest [Azure CLI](/cli/azure/install-azure-cli)
-  - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps)

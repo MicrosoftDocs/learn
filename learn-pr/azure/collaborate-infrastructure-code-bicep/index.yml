@@ -10,7 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Structure your Bicep code for collaboration
-summary: Restructure your Bicep templates into reusable modules and add comments to your infrastructure code to document it. TODO
+summary: |
+  Build Bicep files that support collaborative development. Use a consistent style and clear structure to make your Bicep code easy to understand, use, and modify. Add comments and metadata to your code to document it, and create modules to simplify your templates and support reusability.
 abstract: |
   After competing this module, you'll be able to:
     - Structure your Bicep code and parameters to support team collaboration
@@ -22,9 +23,6 @@ prerequisites: |
   To follow along with the exercises in the module, you'll need the following installed locally:
   - [Visual Studio Code](https://code.visualstudio.com)
   - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
-  - Either:
-    - The latest [Azure CLI](/cli/azure/install-azure-cli)
-    - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps)
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - intermediate
