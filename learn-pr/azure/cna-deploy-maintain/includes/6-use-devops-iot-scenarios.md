@@ -1,4 +1,4 @@
-﻿Now that you've implemented a fully functional CI/CD pipeline that deploys a cloud-native application to an AKS cluster, you want to explore the use of DevOps principles in IoT scenarios. To accomplish this, you decide to test Azure Pipelines, which offers tight integration with Azure IoT Edge.
+Now that you've implemented a fully functional CI/CD pipeline that deploys a cloud-native application to an AKS cluster, you want to explore the use of DevOps principles in IoT scenarios. To accomplish this, you decide to test Azure Pipelines, which offers tight integration with Azure IoT Edge.
 
 ## What is IoT Edge?
 
@@ -57,4 +57,4 @@ The delivery pipeline for each stage will perform the following sequence of acti
 
 The delivery to the dev stage will include provisioning of an IoT hub. You have the option of using the same hub for subsequent deployments or creating one for each stage. Optionally, you could also implement Azure Application Insights to monitor status and performance of the deployed module.
 
-    :::image type="content" source="../media/6-azure-devops-iot-pipeline.png" alt-text="Image illustrating an Azure DevOps pipeline that deploys Azure IoT Edge modules." border="false":::
+:::image type="content" source="../media/6-azure-devops-iot-pipeline.png" alt-text="Image illustrating an Azure DevOps pipeline that deploys Azure IoT Edge modules." border="false":::
