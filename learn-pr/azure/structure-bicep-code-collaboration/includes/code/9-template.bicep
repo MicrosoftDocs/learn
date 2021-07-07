@@ -1,4 +1,4 @@
-param number int = -1
+param number int
 param name string
 param name2 string
 
@@ -22,7 +22,7 @@ resource virtualNetworks 'Microsoft.Network/virtualNetworks@2020-11-01' = {
   }
 }
 
-resource storageAccounts 'Microsoft.Storage/storageAccounts@2021-01-01' = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2021-01-01' = {
   name: name2
   location: location
   kind: 'StorageV2'

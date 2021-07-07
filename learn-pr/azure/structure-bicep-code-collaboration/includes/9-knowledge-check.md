@@ -1,4 +1,4 @@
-You've been asked to help your colleague with this Bicep template:
+Your colleague has asked you to help them work with this template:
 
 ::: code language="bicep" source="code/9-template.bicep" :::
 

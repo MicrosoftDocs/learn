@@ -82,6 +82,11 @@ Take a look at the symbolic names for the resources in the template. What could 
 
    Is there another way you could do this?
 
+   > [!CAUTION]
+   > Remember that resources can't be renamed. When you modify templates that are already in use, be careful when you change the way the template create resource names. If the template is redeployed and the resource has a new name, Azure will create another resource - and it might even delete the old resource if you deploy in _Complete_ mode.
+   >
+   > You don't need to worry about this here, since this is just an example.
+
 1. Your SQL logical server's resource name is set using a variable, even though it needs a globally unique names:
 
    ::: code language="bicep" source="code/2-template.bicep" range="31" :::
