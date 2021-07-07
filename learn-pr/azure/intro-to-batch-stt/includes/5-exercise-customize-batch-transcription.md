@@ -1,4 +1,4 @@
-The first step to train a model is to upload training data. For more information, see [Prepare and test your data](./azure/cognitive-services/speech-service/how-to-custom-speech-test-and-train) for step-by-step instructions to prepare human-labeled transcriptions and related text (utterances and pronunciations).
+The first step to train a model is to upload training data. For more information, see [Prepare and test your data](/azure/cognitive-services/speech-service/how-to-custom-speech-test-and-train) for step-by-step instructions to prepare human-labeled transcriptions and related text (utterances and pronunciations).
 
 ## Train and evaluate a model
 
@@ -6,7 +6,7 @@ The first step to train a model is to upload training data. For more information
 
 1. Go to **Speech-to-text** > **Custom Speech**
 
-    :::image type="content" source="../media/5-azure-speech-portal.png" alt-text="Screenshot showing the home page of the speech portal with a red line around custom models.”:::
+    :::image type="content" source="../media/5-azure-speech-portal.png" alt-text="Screenshot showing the home page of the speech portal with a red line around custom models.":::
     
 1. Select **Resource** then **select your new Speech Services resource**
 1. Select **Use resource**
@@ -27,7 +27,7 @@ The first step to train a model is to upload training data. For more information
     https://github.com/Azure-Samples/cognitive-services-speech-sdk/raw/master/sampledata/customspeech/en-US/training/audio-and-trans.zip
     ```
 
-    :::image type="content" source="../media/5-azure-blob-link.png" alt-text="Screenshot showing an example of steps four and five in the speech portal.”:::
+    :::image type="content" source="../media/5-azure-blob-link.png" alt-text="Screenshot showing an example of steps four and five in the speech portal.":::
 
 1. Select **Next**
 1. Choose a name for your dataset, and select **Next**
@@ -39,7 +39,7 @@ After a few seconds, you will see a message saying your files have successfully 
 
 1. Select the dataset, then select **Train**
 
-    :::image type="content" source="../media/5-training-a-model.png" alt-text="Screenshot showing the example model selected and train outlined in the portal.”:::
+    :::image type="content" source="../media/5-training-a-model.png" alt-text="Screenshot showing the example model selected and train outlined in the portal.":::
 
 1. Select **Next**
 1. Select **Next**
@@ -53,11 +53,11 @@ While your model trains, let's create and endpoint so your model can be used in 
 1. On the left-hand menu, select **Deploy models**
 1. Select **Deploy model**
 
-    :::image type="content" source="../media/5-deploy-a-model.png" alt-text="Screenshot showing red boxes around the buttons needed to click to complete steps 1 and 2.”:::
+    :::image type="content" source="../media/5-deploy-a-model.png" alt-text="Screenshot showing red boxes around the buttons needed to click to complete steps 1 and 2.":::
 
 1. Choose a name for your model, accept the terms of use, and select **Add**
 
-:::image type="content" source="../media/5-new-endpoint.png" alt-text="Screenshot showing an example of creating an endpoint in the azure portal.”:::
+:::image type="content" source="../media/5-new-endpoint.png" alt-text="Screenshot showing an example of creating an endpoint in the azure portal.":::
 
 It might take a minute for your endpoint to be created.
 
@@ -67,7 +67,7 @@ Now, we need to transfer the details for the endpoint over to the Cloud Shell.
 
 1. Select your newly created endpoint
 
-    :::image type="content" source="../media/5-select-endpoint.png" alt-text="Screenshot showing red boxes around the buttons needed to click to select endpoint.”:::
+    :::image type="content" source="../media/5-select-endpoint.png" alt-text="Screenshot showing red boxes around the buttons needed to click to select endpoint.":::
 
     Notice how Speech Studio provides code to connect to your custom model in multiple programming languages via the SDK, REST API, and WebSocket.
 1. Return to the Cloud Shell and paste in the following command—taking care not to hit enter
