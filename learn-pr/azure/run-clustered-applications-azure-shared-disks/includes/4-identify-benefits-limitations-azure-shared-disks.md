@@ -7,7 +7,7 @@ The benefits of shared disks include:
 - **Simplified lift and shift**. You can move your existing clustered or distributed solutions to Azure without changes to your architecture.
 - **High availability**. Using HA configurations gives you better control over application uptime for planned and unplanned failovers. If there's a failure in one VM, the other VMs can maintain full access to the disk.
 - **Familiar tools**. You can use familiar tools for creating clustered solutions. The tools include Windows Server Failover Cluster Manager, and Linux Clustering with SBD.
-- **Support for SCSI Persistent Reservations**. After you mount the shared disk to your cluster's VMs, you can establish quorum and read/write access to the disk by using the SCSI Persistent Reservations (PR) feature, which is an industry standard specification.
+- **Support for SCSI Persistent Reservations**. After you mount the shared disk to your cluster's VMs, you can establish quorum and read/write access to the disk by using the SCSI Persistent Reservations (SCSI PR) feature, which is an industry standard specification.
 - **Support for Azure Backup**. Azure Backup natively supports managed disks, including shared disks. It supports backup and restore of both operating system and data disks, including shared disks. This support is available whether or not they're currently attached to a running Azure VM.
 
 ## Limitations of Azure shared disks
