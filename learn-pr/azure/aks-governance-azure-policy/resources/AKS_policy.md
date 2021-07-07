@@ -127,7 +127,7 @@ In this module, you learned to:
     - Monitor cluster compliance status using Azure portal
 
     Learn more
-    - [AKS Secure baseline](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks)
-    - [Enterprise Scale for AKS](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/aks/enterprise-scale-landing-zone#:~:text=Enterprise-scale%20for%20AKS%20represents%20the%20strategic%20design%20path,for%20a%20scalable%20Azure%20Kubernetes%20Service%20%28AKS%29%20cluster.)
+    - [AKS Secure baseline](https://docs.microsoft.com/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks)
+    - [Enterprise Scale for AKS](https://docs.microsoft.com/azure/cloud-adoption-framework/scenarios/aks/enterprise-scale-landing-zone)
 
 ## Notes
