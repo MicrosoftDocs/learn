@@ -33,7 +33,7 @@ quiz:
       explanation: "Shared managed disks don't natively offer a fully managed file system that can be accessed by using SMB/NFS. You need to use a cluster manager, such as Windows Server Failover Cluster (WSFC) or Pacemaker, that handles cluster node communication and write locking."
     - content: "I can use a shared disk as an OS disk."
       isCorrect: false
-      explanation: "You can only use Azure shared disks as data disks."
+      explanation: "You can use Azure shared disks only as data disks."
     - content: "You can use SCSI PR commands to enable failover from one node to another when you use Azure shared disks."
       isCorrect: true
       explanation: "Azure shared disks support SCSI PR standards. After you've mounted the shared disk to the VMs in your cluster, you can establish a quorum and read/write access to the disk by using SCSI PR."
@@ -42,13 +42,13 @@ quiz:
     choices:
     - content: "Data disk"
       isCorrect: true
-      explanation: "The Azure shared disks can be shared only as data disks."
+      explanation: "Azure shared disks can be shared only as data disks."
     - content: "OS disk"
       isCorrect: false
-      explanation: "The Azure shared disks can be shared only as data disks."
+      explanation: "Azure shared disks can be shared only as data disks."
     - content: "Temporary disk"
       isCorrect: false
-      explanation: "The Azure shared disks can be shared only as data disks."
+      explanation: "Azure shared disks can be shared only as data disks."
 
 content: |
   [!include[](includes/6-knowledge-check.md)]
