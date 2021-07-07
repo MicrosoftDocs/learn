@@ -16,8 +16,9 @@ The PetClinic application is decomposed into four core microservices. All of the
 
 ## Set up the sample microservice application
 
-In a web browser, open https://shell.azure.com and select "Bash" mode in the top right-hand side.
-Next, run the following command to clone the sample repository and open the built-in the Azure editor:
+In a web browser, open https://shell.azure.com in a new browser windows.
+Select "Bash" mode in the top right-hand side.
+Next, in the bash window, run the following commands to clone the sample repository and open the built-in Azure editor:
 
    ```bash
    git clone https://github.com/MicrosoftDocs/mslearn-monitoring-java
@@ -29,7 +30,7 @@ Next, run the following command to clone the sample repository and open the buil
 
 When you run the above command, a window will pop up with the file 'deployPetClinicApp.sh' ready to be edited in the built-in Azure editor.
 
-1. Edit the variables in the `deployPetClinicApp.sh` and customize the following parameters for your environment:
+1. At the top of the `deployPetClinicApp.sh` file, edit the following variables to customize the scripts parameters for your environment:
 
 | Variable | Description |
 |-|-|
@@ -59,8 +60,8 @@ bash deployPetClinicApp.sh
 
 > [!IMPORTANT]
 > If you run into errors with the setup script, the script will attempt to delete any resources it creates.
-> You can then try again once the resource group is deleted fully.
-> The Summary unit has instructions on how do delete your resources manually.
+> You can then try again once the resource group is fully deleted.
+> The Summary unit has instructions on how do also delete your resources manually.
 
 ## Test the application
 
@@ -84,7 +85,7 @@ In a web browser, navigate to the URL of your api-gateway to open the Pet Clinic
 Next, navigate to the "Owners" tab and select "Find all owners".
 Confirm your sample application is up and running, populated with data and now ready for you to explore.
 
-:::image type="content" source="../media/4-petclinic.jpg" alt-text="screenshot real-time metrics for the Spring Cloud":::
+:::image type="content" source="../media/4-petclinic.jpg" alt-text="screenshot of your Spring Cloud application":::
 
 ## Next steps
 

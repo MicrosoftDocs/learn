@@ -12,9 +12,9 @@ az spring-cloud app logs --name customers-service
 
 > [!IMPORTANT]
 > If you closed the original Azure Cloud Shell window, or want to run the commands in your local development environment, you must specify your resource group and Azure Spring Cloud service name:
-```azurecli
-az spring-cloud app logs --name customers-service --resource-group <resource group name> --service <service instance name>
-```
+>```azurecli
+>az spring-cloud app logs --name customers-service --resource-group <resource group name> --service <service >instance name>
+>```
 
 This command will return logs:
 
@@ -45,14 +45,14 @@ Next, we'll create an error, to show the value of how you can quickly debug and 
 az spring-cloud app logs --name customers-service -f
 ```
 
-2. Next, in a web browser, trigger a warning with the following command:
+2. Next, in a web browser, open a new window and trigger a warning with the following command:
 (Replace the "<spring-cloud-name"> with the name of your spring cloud instance)
 
 ```html
 https://<spring-cloud-name>-api-gateway.azuremicroservices.io/api/customer/owners/George
 ```
 
-Accessing the URL triggers a warning, as the variable "George" cannot be cast into a number to search for a customer.
+Accessing the above URL triggers a warning, as the variable "George" cannot be cast into a number to search for a customer.
 You now can see a warning similar to the below screen:
 
 :::image type="content" source="../media/5-warning.jpg" alt-text="screenshot of Azure Cloud Shell with log warning":::

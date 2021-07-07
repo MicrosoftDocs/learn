@@ -2,7 +2,8 @@ In this unit, we'll look at logging concepts and commands, and then in the next 
 
 ## Types of Logging
 
-With the sample application, there are two ways to see logs: **Log streaming** of real-time logs per application instance, or **Log Analytics** for aggregated logs with advanced query capability. In this unit, we'll explore log streaming via the Azure CLI.
+With the sample application, there are two ways to see logs: **Log streaming** of real-time logs per application instance, or **Log Analytics** for aggregated logs with advanced query capability.
+In this unit, we'll explore log streaming via the Azure CLI.
 
 ### Log streaming
 
@@ -15,8 +16,6 @@ az spring-cloud app logs --name <application> --resource-group <resource group n
 ```
 
 ### Tail log for application with multiple instances
-
-If multiple instances exist for the application named `app`, you can view the instance log by using the `-i/--instance` option.
 
 First, you can get the application instance names with following command.
 
@@ -34,7 +33,7 @@ customers-service-default-17-7bc5f9dd79-pf69h
 Please use '-i/--instance' parameter to specify the instance name
 ```
 
-Then, you can stream logs of an application instance with the option `-i/--instance` option:
+If multiple instances exist for the application named `app`, you can view the instance log by using the `-i/--instance` option.
 
 ```azurecli
 az spring-cloud app logs -f --name customers-service --instance customers-service-default-17-7bc5f9dd79-fshb9
