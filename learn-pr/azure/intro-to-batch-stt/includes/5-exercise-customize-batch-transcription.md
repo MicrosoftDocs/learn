@@ -1,13 +1,19 @@
-The first step to train a model is to upload training data. See [Prepare and test your data](./azure/cognitive-services/speech-service/how-to-custom-speech-test-and-train) for step-by-step instructions to prepare human-labeled transcriptions and related text (utterances and pronunciations).
+The first step to train a model is to upload training data. For more information, see [Prepare and test your data](./azure/cognitive-services/speech-service/how-to-custom-speech-test-and-train) for step-by-step instructions to prepare human-labeled transcriptions and related text (utterances and pronunciations).
 
 ## Train and evaluate a model
 
 1. Sign in to the [Custom Speech portal](https://speech.microsoft.com/customspeech)
+
 1. Go to **Speech-to-text** > **Custom Speech**
+
+![Screenshot showing the ]
+
 1. Select **Resource** then **select your new Speech Services resource**
 1. Select **Use resource**
 1. Select **Create a new project**
 1. Name your project, and select **Create**
+
+:::image type="content" source="../media/5-new-project.png" alt-text="Screenshot showing the create a new project window with an example name.":::
 
 ## Use audio data to create a custom speech model
 
@@ -21,6 +27,8 @@ The first step to train a model is to upload training data. See [Prepare and tes
     https://github.com/Azure-Samples/cognitive-services-speech-sdk/raw/master/sampledata/customspeech/en-US/training/audio-and-trans.zip
     ```
 
+![Screenshot showing an example of steps four and five in the speech portal.](../media/5-azure-blob-link.png)
+
 1. Select **Next**
 1. Choose a name for your dataset, and select **Next**
 1. Select **Save and close**
@@ -30,6 +38,9 @@ The first step to train a model is to upload training data. See [Prepare and tes
 After a few seconds, you will see a message saying your files have successfully processed. Next, let's train a custom model using the data.
 
 1. Select the dataset, then select **Train**
+
+![Screenshot showing the example model selected and train outlined in the portal.](../media/5-training-a-model.png)
+
 1. Select **Next**
 1. Select **Next**
 1. Choose a name for your model, and select **Next**
@@ -43,6 +54,8 @@ While your model trains, let's create and endpoint so your model can be used in 
 1. Select **Deploy model**
 1. Choose a name for your model, accept the terms of use, and select **Add**
 
+![Screenshot showing an example of creating an endpoint in the azure portal.](../media/5-new-endpoint.png)
+
 It might take a minute for your endpoint to be created.
 
 ## Use your custom model
@@ -52,13 +65,13 @@ Now, we need to transfer the details for the endpoint over to the Cloud Shell.
 1. Select your newly created endpoint
 
     Notice how Speech Studio provides code to connect to your custom model in multiple programming languages via the SDK, REST API, and WebSocket.
-1. Return to the Cloud Shell and paste in the following command
+1. Return to the Cloud Shell and paste in the following command—taking care not to hit enter
 
     ```
     subKey=<Paste key here>
     ```
 
-1. Return to the Custom Speech portal, copy your subscription key
+1. Return to the Custom Speech portal, show and copy your subscription key
 1. Return to the Cloud Shell and replace the `<Paste key here>` in the command with your Subscription key from the Custom Speech portal
 1. Select <kbd>Enter</kbd>
 1. Run the following command to set the environment variable for your .NET application, allowing it to access your newly created endpoint.

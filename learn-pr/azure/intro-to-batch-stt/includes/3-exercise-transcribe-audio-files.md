@@ -59,12 +59,16 @@ Let's start by preparing our environment. The following script creates our cogni
     az storage azcopy blob upload -c $blobContainerName --account-name $blobName -s "mslearn-batch-stt/audiofiles/*" --recursive
     ```
 
+![Screenshot showing file transfer complete for step two in the sandbox.](../media/3-file-transfer-step-2.png)
+
 1. Run the following command to generate the SAS token
 
     ```bash
     storageKey=$(az storage account keys list -g $resourceGroupName -n $blobName --query [0].value)
     end=`date -u -d "120 minutes" '+%Y-%m-%dT%H:%MZ'`
     sasToken=$(az storage blob generate-sas -c $blobContainerName -n $blobName --connection-string $blobConnectionString --permissions w --expiry $end --https-only)
+
+![Screenshot showing the SAS token creation from step three in the sandbox.](../media/3-SAS-tokens-step-3.png)
 
 1. Run the following command use the .NET application to transcribe your audio files
 
