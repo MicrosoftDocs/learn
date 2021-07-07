@@ -4,7 +4,7 @@ param name2 string
 
 var location = 'australiaeast'
 
-resource virtualNetworks 'Microsoft.Network/virtualNetworks@2020-11-01' = {
+resource virtualNetwork 'Microsoft.Network/virtualNetworks@2020-11-01' = {
   name: name
   location: location
   properties: {
