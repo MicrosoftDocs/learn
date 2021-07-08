@@ -11,15 +11,9 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
 1. Review the selections you've made for your Azure SQL Database logical server. On the same pane is information about Vulnerability Assessment and Advanced Threat Protection.  
 
-    This storage account was deployed as part of the deployment script for your Azure SQL Database instance. Review the options, and add your email address if you want to receive the results of the weekly recurring scan.  
+    This storage account was deployed as part of the deployment script for your Azure SQL Database instance. Review the options, and add your email address if you want to receive the results of the weekly recurring scan. Uncheck **Also send email notification to admins and subscription owners**.  
 
-1. You can also configure your Advanced Threat Protection settings. To view the available Advanced Threat Protection alert types, select **All** under **Advanced Threat Protection types**.  
-
-    :::image type="content" source="../media/8-advanced-threat-protection-types.png" alt-text="Screenshot of the types of protection in Advanced Threat Protection.":::
-
-1. Just as you can configure who receives Vulnerability Assessment scans, you can configure who receives Advanced Threat Protection alerts. Review the options and, in the **Send alerts to** box, add your personal email address so that you can view the alerts in a later step of this exercise.  
-
-    :::image type="content" source="../media/8-advanced-threat-protection-settings.png" alt-text="Screenshot of Advanced Threat Protection settings information.":::
+1. Just as you can configure who receives Vulnerability Assessment scans, you can configure who receives Advanced Threat Protection alerts. In your sandbox subscription, you don't have access to set the subscription-level email settings, so leave **Add your contact details to the subsription's email settings in Azure Security Center** blank.  
 
 1. After you've updated all your settings, select **Save**.  
 
@@ -47,7 +41,7 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
 ## Vulnerability Assessment
 
-1. Select the **X** at the upper right of the **Data Discovery & Classification** pane, then select the **Security Center** tab under Security to view the **Security Center** dashboard for your SQL Database. 
+1. Select the **Security Center** tab under Security to view the **Security Center** dashboard for your SQL Database. 
 
 1. To begin reviewing the Vulnerability Assessment capabilities, under **Vulnerability assessment findings**, select **View additional findings in Vulnerability Assessment**.  
 
@@ -117,7 +111,7 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
     SELECT * FROM sys.databases WHERE database_id like '' or 1 = 1 --' and family = 'test1';
     ```
 
-    Within a few minutes, you should receive an email message that's similar to the following:  
+    Within a few minutes, if you were able to configure the email settings (which you can't in the sandbox), you would receive an email message that's similar to the following:  
 
     :::image type="content" source="../media/8-advanced-threat-protection-email.png" alt-text="Screenshot of an Advanced Threat Protection threat detected email.":::
 

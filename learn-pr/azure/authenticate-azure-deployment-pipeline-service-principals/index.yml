@@ -25,7 +25,7 @@ prerequisites: |
   - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
   To follow along with the exercises in the module, you'll need:
-  - An Azure account, with the ability to create resource groups, and to create Azure AD applications and service principals.
+  - An Azure account, with the ability to create resource groups and to create Azure Active Directory applications and service principals.
   - [Visual Studio Code](https://code.visualstudio.com), installed locally.  
   - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally.  
   - Either:
