@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.github.manage-github-actions-in-the-enterprise
+uid: learn.github.manage-github-actions-enterprise
 metadata:
   title: Manage GitHub Actions in the enterprise 
   description: Learn how to manage GitHub Actions in the enterprise.
@@ -29,13 +29,13 @@ prerequisites: |
   - A GitHub Enterprise Cloud or Enterprise Server account
   - Working knowledge of GitHub Actions and workflows
 units:
-  - learn.github.manage-github-actions-in-the-enterprise.introduction
-  - learn.github.manage-github-actions-in-the-enterprise.manage-actions-and-workflows
-  - learn.github.manage-github-actions-in-the-enterprise.manage-runners
-  - learn.github.manage-github-actions-in-the-enterprise.manage-encrypted-secrets
-  - learn.github.manage-github-actions-in-the-enterprise.exercise
-  - learn.github.manage-github-actions-in-the-enterprise.knowledge-check
-  - learn.github.manage-github-actions-in-the-enterprise.summary
-iconUrl: /learn/achievements/github/manage-github-actions-in-the-enterprise.svg
+  - learn.github.manage-github-actions-enterprise.introduction
+  - learn.github.manage-github-actions-enterprise.manage-actions-and-workflows
+  - learn.github.manage-github-actions-enterprise.manage-runners
+  - learn.github.manage-github-actions-enterprise.manage-encrypted-secrets
+  - learn.github.manage-github-actions-enterprise.exercise
+  - learn.github.manage-github-actions-enterprise.knowledge-check
+  - learn.github.manage-github-actions-enterprise.summary
+iconUrl: /learn/achievements/github/manage-github-actions-enterprise.svg
 badge:
-  uid: learn.github.manage-github-actions-in-the-enterprise.badge
+  uid: learn.github.manage-github-actions-enterprise.badge
