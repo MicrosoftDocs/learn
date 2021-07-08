@@ -4,7 +4,7 @@ VNets enable your resources, such as virtual machines (VMs) and ML workspaces, t
 
 A Machine Learning engineer can use them in a variety of scenarios, such as linking a VM to data stored on-premises, restricting access to a training API so that only personnel from their lab can see it, or exposing an inference endpoint to the internet.
 
-In this exercise we will create a VNet and use it to secure access to our existing [ML Workspace](http://URL_FOR_EX1).
+In this exercise, we'll create a VNet and use it to secure access to our existing [ML Workspace](http://URL_FOR_EX1).
 
 ## Prerequisites
 
@@ -20,7 +20,7 @@ Sign in to the [Azure portal](https://portal.azure.com).
 
 Let's create a VNet for this exercise:
 
-1. In the Azure Portal, select **Create Resource**:
+1. In the Azure portal, select **Create Resource**:
     
     ![Azure Portal](./media/resource_group_1.png)
 
@@ -37,6 +37,7 @@ Let's create a VNet for this exercise:
     <!-- :::image type="content" source="./media/quick-create-portal/create-virtual-network.png" alt-text="Create virtual network Azure portal" border="true"::: -->
 
    ![Azure Virtual Network form](./media/vnet_form1.png)
+
    | Setting              | Value                                                                                                 |
    | -------------------- | ----------------------------------------------------------------------------------------------------- |
    | **Project details**  |                                                                                                       |
@@ -46,7 +47,7 @@ Let's create a VNet for this exercise:
    | Name                 | Enter **MLVNet**.                                                                                     |
    | Region               | Select **(US) East US**.                                                                              |
 
-6. Click on the **IP Addresses** tab, or select the **Next: IP Addresses** button at the bottom of the page.
+6. Select the **IP Addresses** tab, or select the **Next: IP Addresses** button at the bottom of the page.
 
    > [!TIP]
    > If your screen comes with the IPv4 address space and _default_ subnet setup like in the image below, skip to step 10.
@@ -61,7 +62,7 @@ Let's create a VNet for this exercise:
 
 10. Select the **Review + create** tab or select the **Review + create** button.
 
-11. Click **Create** and wait a few moments for the deployment to finish:
+11. Select **Create** and wait a few moments for the deployment to finish:
 
     ![Azure Virtual Network deployment](./media/vnet_deployment.png)
 
@@ -73,21 +74,22 @@ Let's create a VNet for this exercise:
 ## Testing workspace access
 
 We just added a VNet to our resource group, but is it restricting access to our __ml-workspace__?
-<a name="studio"></a>We can test that using [Azure Machine Learning Studio](https://docs.microsoft.com/en-us/azure/machine-learning/overview-what-is-machine-learning-studio) to access the contents of the workspace.
+
+<a name="studio"></a>We can test that using [Azure Machine Learning Studio](/azure/machine-learning/overview-what-is-machine-learning-studio) to access the contents of the workspace.
 
 > [!TIP]
 > The Azure Machine Learning Workspace is a web portal with high-level
 > tools for model training, deployment, and asset management.
 
-1. Select the __ml-workspace__ in the list of recent recources:
+1. Select the __ml-workspace__ in the list of recent resources:
 
    ![Finding ml-workspace](./media/workspace1.png)
 
-2. Click on the __Studio web URL__ for your workspace:
+2. Select the __Studio web URL__ for your workspace:
 
    ![Studio web URL](./media/workspace2.png)
 
-3. Azure Machine Learning Studio should open in a new tab or window. Scroll down until you can see the tabs below (Runs, Compute, Models and Datasets):
+3. Azure Machine Learning Studio should open in a new tab or window. Scroll down until you can see the tabs below (Runs, Compute, Models, and Datasets):
 
    ![ML Studio](./media/workspace-no-warnings.png)
 
@@ -97,31 +99,31 @@ Although you probably don't have any objects there yet, like in the image above,
 
 ## Secure network access to the ML Workspace
 
-So far we have created two independent resources:
+So far we've created two independent resources:
 
-- A ML workspace (**ml-workspace**)
+- An ML workspace (**ml-workspace**)
 - A VNet (**MLVNet**)
 
 We now have to connect these two so that the workspace network traffic has to go through our VNet. In other words, we want our workspace available **only** to resources that are connected to the **MLVNet** virtual network.
 
-To accomplish that, we need to define a [Private Endpoint](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-overview) for the _ml-workspace_ resource.
+To accomplish that, we need to define a [Private Endpoint](/azure/private-link/private-endpoint-overview) for the _ml-workspace_ resource.
 
 > [!TIP]
 > A Private Endpoint is a network interface that uses a private IP Address from your VNet to create secure and private connections to a resource.
 
 ## Create a Private Endpoint
 
-1. Go to "Home", click on **Resource Groups**, click on the **MLResourceGroup** resource group and the select your **ml_workspace** workspace:
+1. Go to "Home", select **Resource Groups**, select the **MLResourceGroup** resource group, and then select your **ml_workspace** workspace:
 
    ![Azure Virtual Network deployment](./media/ml_workspace_home.png)
 
-2. On the left hand menu, click on **Private endpoint connections**:
+2. In the left-hand menu, select **Private endpoint connections**:
 
    ![Azure Virtual Private Endpoints](./media/pvt1.png)
 
-3. Click on **Private Endpoint** and fill the form with the following values:
+3. Select **Private Endpoint** and fill the form with the following values:
 
-   ![Azure Virtual Network deployment](./media/pvt2.png)
+   ![Azure Virtual Network deployment.](./media/pvt2.png)
 
    | Setting              | Value                                                                                                 |
    | -------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -132,7 +134,7 @@ To accomplish that, we need to define a [Private Endpoint](https://docs.microsof
    | Name                 | Enter **MLPrivateEndpoint**.                                                                          |
    | Region               | Select **(US) East US**.                                                                              |
 
-4. Click on the **Next: Resource >** button.
+4. Select the **Next: Resource >** button.
 
 5. In the **Resource** tab, use the values below
 
@@ -145,17 +147,21 @@ To accomplish that, we need to define a [Private Endpoint](https://docs.microsof
    | Resource type        | Enter <b>Microsoft.MachineLearninService/workspaces</b> |
    | **Instance details** |                                                         |
    | Resource \*          | Select **ml-workspace**.                                |
-   | Target sub-resource  | Select **amlworkspace**.                                |
-6. Click on the **Next: Configuration >** button.
+   | Target subresource  | Select **amlworkspace**.                                |
+
+6. Select the **Next: Configuration >** button.
+
    Leave the suggested defaults:
+
    ![Azure Virtual Network deployment](./media/pvt4.png)
+
    | Setting                         | Value                     |
    | ------------------------------- | ------------------------- |
    | Virtual Network \*              | **MLVNet**                |
    | Subnet \*                       | **default (10.1.0.0/24)** |
    | Integrate with private DNS zone | **Yes**                   |
 
-7. Click on **Review + Create** to validate this deployment, then click on **Create** to deploy the endpoint (this can take a few moments):
+7. Select **Review + Create** to validate the deployment, then select **Create** to deploy the endpoint (this can take a few moments):
 
    ![Azure Virtual Network deployment](./media/pvt_final.png)
 
@@ -163,11 +169,11 @@ To accomplish that, we need to define a [Private Endpoint](https://docs.microsof
 
 We can make sure our workspace is inside the VNet now by testing if we still have access to its resources:
 
-1. Reload the Azure Machine Learning Studio window (click [here](#studio) to see instructions again):
+1. Reload the Azure Machine Learning Studio window (you can select the following link to see the instructions again [here](#studio)):
 
    ![ML Studio warnings](./media/workspace-with-warnings.png)
 
-2. As the warning shows, access to those resources is now blocked. That happens because your workspace is now inside the VNet, and it is configure to block all requests that don't originate from within the *default* subnet we created (remember we are trying to access it from the __outside__ of the network perimeter).
+2. As the warning shows, access to those resources is now blocked. That happens because your workspace is now inside the VNet, and it's configured to block all requests that don't originate from within the *default* subnet we created (remember we're trying to access it from the __outside__ of the network perimeter).
 
 ### Congratulations!
 
@@ -177,7 +183,7 @@ Notice that in the same way you can't access it, neither can other resources in 
 
 Opening things up so that resources can connect requires some strategical planning!
 
-We recommend reading our [https://docs.microsoft.com/en-us/azure/machine-learning/how-to-secure-workspace-vnet](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-secure-workspace-vnet) guide for more in-depth reference.
+We recommend reading our [how to secure a workspace using a vnet](/azure/machine-learning/how-to-secure-workspace-vnet) guide for more in-depth reference.
 
 ## Summary
 
@@ -193,7 +199,7 @@ In this unit you've covered the following topics:
 
 To read more about Azure networking visit:
 
-- [What is Azure Virtual Network?](https://docs.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview)
-- [Azure Virtual Network concepts and best practices](https://docs.microsoft.com/en-us/azure/virtual-network/concepts-and-best-practices)
-- [Secure Azure Machine Learning workspace resources using virtual networks (VNets)](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-network-security-overview)
-- [What is Azure Private Endpoint?](https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-overview)
+- [What is Azure Virtual Network?](/azure/virtual-network/virtual-networks-overview)
+- [Azure Virtual Network concepts and best practices](/azure/virtual-network/concepts-and-best-practices)
+- [Secure Azure Machine Learning workspace resources using virtual networks (VNets)](/azure/machine-learning/how-to-network-security-overview)
+- [What is Azure Private Endpoint?](/azure/private-link/private-endpoint-overview)
