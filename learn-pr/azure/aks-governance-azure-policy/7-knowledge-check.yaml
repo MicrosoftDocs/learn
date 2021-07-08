@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-governance-azure-policy.check-your-knowledge
+title: Check your knowledge
+metadata:
+  title: Check your knowledge
+  description: Knowledge Check of Azure policy concepts
+  ms.date: 07/07/2021
+  author: NillsF, mosabami
+  ms.author: nilfran, aayodeji
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+
+quiz:
+  questions:
+    - content: "A question about what happens to the non-compliant pods after the policy is activated"
+      choices:
+        - content: "IaaS, PaaS, and SaaS are examples of cloud computing service models."
+          isCorrect: false
+          explanation: "IaaS, PaaS, and SaaS are common cloud computing service models and are respectively infrastructure as a service, platform as a service, and software as a service."
+        - content: "Cloud computing resources are usually limited to specific geographic regions."
+          isCorrect: true
+          explanation: "Most cloud computing resources can be distributed to global datacenters."
+        - content: "Cloud computing typically decreases your operating expenses."
+          isCorrect: false
+          explanation: "Cloud computing typically decreases your operating expenses."
+        - content: "Three cloud computing deployment models are public cloud, private cloud, and hybrid cloud."
+          isCorrect: false
+          explanation: "Public cloud, private cloud, and hybrid cloud are common cloud computing deployment models."
+    
+    - content: "A question about what happens when you have two contradicting workload policies at different scopes"
+      choices:
+        - content: "IaaS, PaaS, and SaaS are examples of cloud computing service models."
+          isCorrect: false
+          explanation: "IaaS, PaaS, and SaaS are common cloud computing service models and are respectively infrastructure as a service, platform as a service, and software as a service."
+        - content: "Cloud computing resources are usually limited to specific geographic regions."
+          isCorrect: true
+          explanation: "Most cloud computing resources can be distributed to global datacenters."
+        - content: "Cloud computing typically decreases your operating expenses."
+          isCorrect: false
+          explanation: "Cloud computing typically decreases your operating expenses."
+        - content: "Three cloud computing deployment models are public cloud, private cloud, and hybrid cloud."
+          isCorrect: false
+          explanation: "Public cloud, private cloud, and hybrid cloud are common cloud computing deployment models."
+
+    - content: "A question about how to make exceptions to policies"
+      choices:
+        - content: "IaaS, PaaS, and SaaS are examples of cloud computing service models."
+          isCorrect: false
+          explanation: "IaaS, PaaS, and SaaS are common cloud computing service models and are respectively infrastructure as a service, platform as a service, and software as a service."
+        - content: "Cloud computing resources are usually limited to specific geographic regions."
+          isCorrect: true
+          explanation: "Most cloud computing resources can be distributed to global datacenters."
+        - content: "Cloud computing typically decreases your operating expenses."
+          isCorrect: false
+          explanation: "Cloud computing typically decreases your operating expenses."
+        - content: "Three cloud computing deployment models are public cloud, private cloud, and hybrid cloud."
+          isCorrect: false
+          explanation: "Public cloud, private cloud, and hybrid cloud are common cloud computing deployment models."
