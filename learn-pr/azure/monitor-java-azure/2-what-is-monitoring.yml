@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-java-azure.learning-content
-title: Introduction to monitoring Java applications
+title: Introduction
 metadata:
   unitType: learning-content
-  title: Introduction to monitoring Java applications
+  title: Introduction
   description: You'll learn about the different forms of monitoring, and what monitoring solution is available on Azure
   ms.date: 07/07/2021
   author: roryp
