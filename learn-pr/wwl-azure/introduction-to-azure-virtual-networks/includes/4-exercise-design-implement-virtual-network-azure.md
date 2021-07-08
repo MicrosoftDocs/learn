@@ -1,6 +1,3 @@
-
- 
-
 Now you're ready to deploy virtual networks in the Azure portal.
 
 Consider the fictional organization Contoso Ltd, which is in the process of migrating infrastructure and applications to Azure. In your role as network engineer, you must plan and implement three virtual networks and subnets to support resources in those virtual networks.
@@ -18,8 +15,8 @@ CoreServicesVNet West US 10.20.0.0/16
 ManufacturingVNet North Europe 10.30.0.0/16
 ](../media/design-implement-vnet-peering.png)
 
-You will create the following resources:
 
+You will create the following resources:
  
 
 | **Virtual Network** | **Region**   | **Virtual network address space** | **Subnet**                | **Subnet**    |
@@ -34,13 +31,21 @@ You will create the following resources:
 |                     |              |                                   | SensorSubnet1             | 10.30.20.0/24 |
 |                     |              |                                   | SensorSubnet2             | 10.30.21.0/24 |
 |                     |              |                                   | SensorSubnet3             | 10.30.22.0/24 |
-| ResearchVnet        | West India   | 10.40.0.0/16                     |                           |               |
-|                     |              |                                   | ResearchSystemSubnet      | 10.40.40.0/24 |
+| ResearchVnet        | West India   | 10.40.0.0/16                      |                           |               |
+|                     |              |                                   | ResearchSystemSubnet      | 10.40.0.0/24  |
 
 
 These virtual networks and subnets are structured in a way that accommodates existing resources yet allows for projected growth. Let's create these virtual networks and subnets to lay the foundation for our networking infrastructure.
 
-## Create the Contoso resource group
+In this exercise, you will:
+
++ Task 1: Create the Contoso resource group
++ Task 2: Create the CoreServicesVnet virtual network and subnets
++ Task 3: Create the ManufacturingVnet virtual network and subnets
++ Task 4: Create the ResearchVnet virtual network and subnets
++ Task 5: Verify the creation of VNets and Subnets
+
+## Task 1: Create the Contoso resource group
 
 1. Go to [Azure Portal](https://portal.azure.com/).
 
@@ -63,7 +68,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
  
 
-## Create the CoreServicesVnet virtual network and subnets
+## Task 2: Create the CoreServicesVnet virtual network and subnets
 
 1. On the Azure Portal home page, select **Create a resource**.
 2. In **Search services and marketplace**, enter virtual network.  
@@ -82,11 +87,9 @@ These virtual networks and subnets are structured in a way that accommodates exi
 |              | Region             | (US) West US         |
 | IP Addresses | IPv4 address space | 10.20.0.0/16         |
 
-
  5.Use the information in the following table to create the CoreServicesVnet subnets.
 
  6.To begin creating each subnet, select **+ Add subnet**. To finish creating each subnet, select **Add**.
-
 
 | **Subnet**             | **Option**           | **Value**              |
 | ---------------------- | -------------------- | ---------------------- |
@@ -99,14 +102,13 @@ These virtual networks and subnets are structured in a way that accommodates exi
 | PublicWebServiceSubnet | Subnet name          | PublicWebServiceSubnet |
 |                        | Subnet address range | 10.20.30.0/24          |
 
-
  7.To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**.
 
  8.Verify your configuration passed validation, and then select **Create**.
-
+ 
  9. Repeat steps 1 -8 for each VNet based on the tables below  
 
-## Create the ManufacturingVnet virtual network and subnets
+## Task 3: Create the ManufacturingVnet virtual network and subnets
 
 
 | **Tab**      | **Option**         | **Value**             |
@@ -130,7 +132,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
 |                           | Subnet address range | 10.30.22.0/24             |
  
 
-## Create the ResearchVnet virtual network and subnets
+## Task 4: Create the ResearchVnet virtual network and subnets
 
 
 | **Tab**      | **Option**         | **Value**            |
@@ -143,10 +145,10 @@ These virtual networks and subnets are structured in a way that accommodates exi
 | **Subnet**           | **Option**           | **Value**            |
 | -------------------- | -------------------- | -------------------- |
 | ResearchSystemSubnet | Subnet name          | ResearchSystemSubnet |
-|                      | Subnet address range | 10.40.0.0/24        |
+|                      | Subnet address range | 10.40.0.0/24         |
  
 
-## Verify the creation of VNets and Subnets
+## Task 5: Verify the creation of VNets and Subnets
 
 1. On the Azure Portal home page, select **All resources**.
 
