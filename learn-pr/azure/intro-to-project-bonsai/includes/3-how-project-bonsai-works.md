@@ -62,7 +62,9 @@ When considering your simulation approach, it might be helpful to enlist people 
 
 ## Work with the training engine
 
-As discussed, the training engine manages AI learning. It has four components:
+The training engine manages AI learning for Bonsai brains based on the training
+curriculum you define in your Inkling code. The training engine has four
+components:
 
 - Architect
 - Instructor
