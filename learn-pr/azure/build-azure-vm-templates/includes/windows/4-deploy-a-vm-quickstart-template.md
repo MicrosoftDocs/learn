@@ -146,7 +146,7 @@ As a final verification step, you'll begin by validating that the template is sy
 
     This command resembles the previous command, but also includes the `--name` argument to give your deployment a name.
 
-    This command takes 4-5 minutes to complete. While you wait, now's a great time to take a [closer look at the source code](https://github.com/Azure/azure-quickstart-templates/blob/master/101-vm-simple-windows/azuredeploy.json?azure-portal=true) for this template. Remember, the contents of a Resource Manager template will become more familiar to you as you read existing templates and create your own.
+    This command takes 4-5 minutes to complete. While you wait, now's a great time to take a [closer look at the source code](https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.compute/vm-simple-windows) for this template. Remember, the contents of a Resource Manager template will become more familiar to you as you read existing templates and create your own.
 
     When the deployment completes, you see another large JSON block as output that describes the deployment.
 
