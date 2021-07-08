@@ -7981,6 +7981,51 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure-devops/configure-infrastructure-azure-pipelines/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/developer/ansible/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/manage-database-changes-in-azure-pipelines/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-foundation-modern-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/provision-database-azure-pipelines/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-foundation-modern-apps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/provision-infrastructure-azure-pipelines/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/developer/terraform/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/recommend-system-feedback-mechanisms/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/route-system-feedback/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/scan-for-vulnerabilities/index.md",
+      "redirect_url": "https://docs.microsoft.com/labs/devops/sonarcloudlab/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-devops/scan-open-source/index.md",
+      "redirect_url": "https://docs.microsoft.com/azure/active-directory/saas-apps/whitesource-tutorial/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/automate-deployments-azure-devops/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/deploy-nodejs/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/capture-feedback-monitoring/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/route-system-feedback/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/secure-cognitive-services/2-keys.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/secure-cognitive-services/2-authentication",
       "redirect_document_id": false
