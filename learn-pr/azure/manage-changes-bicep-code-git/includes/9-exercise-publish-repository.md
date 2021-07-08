@@ -195,7 +195,7 @@ Now that your repository will be used by your colleagues, it's important to crea
    To deploy the website's Azure resources, use the *deploy/main.bicep* file.
    ```
 
-   > [!NOTE]
+   > [!TIP]
    > This is a placeholder README file, so it doesn't have a lot of useful content. When you work with your own Git repositories, create a README file that helps someone understand how to get started with your code. Think of it as a lightweight manual for your project.
 
 1. Save the file.
