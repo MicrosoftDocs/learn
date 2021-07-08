@@ -18,12 +18,12 @@ quiz:
 
   - content: "Which component in Bonsai is responsible for generating learning models based on a training curriculum?"
     choices:
-    - content: "The simulation engine"
+   - content: "The simulation engine"
       isCorrect: false
-      explanation: "Incorrect. This component enables you to create realistic training environments for your simulated system."
+      explanation: "Incorrect. The simulation engine lets your Bonsai brain interact with a realistic training environments based on your simulated system."
     - content: "The training curriculum"
       isCorrect: false
-      explanation: "Incorrect. This component enables you to create goals and define objectives."
+      explanation: "Incorrect. The training curriculum defines the goals and objectives your Bonsai brain will learn."
     - content: "The training engine"
       isCorrect: true
       explanation: "Correct. The architect component of the training engine generates learning models."
@@ -71,4 +71,3 @@ quiz:
     - content: "When you're happy with your Bonsai brain, you can export only the latest version."
       isCorrect: false
       explanation: "Incorrect. You can export any version of the brain."
-
