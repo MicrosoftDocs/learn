@@ -24,7 +24,7 @@ Let's create a Resource Group for this exercise:
 
 1. In the Azure portal, select **Resource Groups**:
 
-   ![Azure Portal.](../media/resource_group_1.png)
+    :::image type="content" source="../media/resource_group_1.png" alt-text="Screenshot showing the Azure portal with a red box around resource groups.":::
 
 2. Select **New** in the resource groups list:
 
@@ -44,7 +44,7 @@ To create an ML Workspace, follow these steps:
 
 1. Select **Create a resource** in the Azure portal:
 
-   ![Azure Portal.](../media/ws1.png)
+    :::image type="content" source="../media/ws1.png" alt-text="Screenshot showing the Azure portal with a red box around create a resource.":::
 
 2. Select **See all**.
 
