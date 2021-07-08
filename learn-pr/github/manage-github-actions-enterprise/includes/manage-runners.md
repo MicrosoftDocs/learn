@@ -7,7 +7,7 @@ GitHub Actions workflows can be executed by two types of runners: GitHub-hosted 
 > [!Note]
 > GitHub-hosted runners are only available for Enterprise Cloud. If you have an Enterprise Server instance, this section does not apply to you.
 
-GitHub-hosted runners offer a quicker, simpler way to run your workflows, while self-hosted runners are a highly configurable way to run workflows in your own custom environment. For example, if you need to use an IP address allow list for your organization or a specialized hardware configuration for running your workflows, you would use a self-hosted runner.
+GitHub-hosted runners offer a quicker, simpler way to run your workflows, while self-hosted runners are a highly configurable way to run workflows in your own custom environment. For example, if you need to use an IP address allowlist for your organization or a specialized hardware configuration for running your workflows, you would use a self-hosted runner.
 
 The table below compares GitHub-hosted runners versus self-hosted runners. Use it to choose the appropriate runner for your workload.
 
@@ -24,7 +24,7 @@ In Enterprise Cloud and Enterprise Server, self-hosted runner groups enable you 
 
 Let's say you want to authorize only specific organizations in your enterprise instance to deploy code to your production environment. In order to achieve this, you could create a group containing all the runners deploying code into production at enterprise level and restrict the access to the group to the specific organizations authorized to deploy code.
 
-To create groups at enterprise level, navigate to your enterprise account and then to **Policies > Actions** in the sidebar. In the **Self-hosted runners** tab, select **Add new > New group**. The screen that appears enables you to specify a group name and an access policy for organizations.
+To create groups at enterprise level, navigate to your enterprise account and then to **Policies > Actions** in the sidebar. In the **Self-hosted runners** tab, select **Add new > New group**. The screen that appears will enable you to specify a group name and an access policy for organizations.
 
 :::image type="content" source="../media/create-group.png" alt-text="New group screen with group name example for all organizations.":::
 
@@ -32,11 +32,11 @@ To create groups at organization level, navigate to your organization **Settings
 
 :::image type="content" source="../media/create-group-2.png" alt-text="New group screen with group name example for all repositories.":::
 
-Note that when new runners are created, they are automatically assigned to the default group within the enterprise or organization. Runners can only be in one group at a time, however, both Enterprise Cloud and Enterprise Server give you the possibility to move runners from the default group to another group.
+When new runners are created, they are automatically assigned to the default group within the enterprise or organization. Runners can only be in one group at a time, however, both Enterprise Cloud and Enterprise Server give you the possibility to move runners from the default group to another group.
 
 ## Configure self-hosted runners for enterprise use
 
-Enterprise Cloud and Enterprise Server offer multiple features enabling you to customize your self-hosted runners for your enterprise use. Some of these features include _labels, proxy servers, and IP allow lists_.
+Enterprise Cloud and Enterprise Server offer multiple features enabling you to customize your self-hosted runners for your enterprise use. Some of these features include _labels, proxy servers, and IP allowlists_.
 
 ### Labels
 
@@ -45,8 +45,8 @@ Self-hosted runners automatically receive default labels when they are added to 
 |       **Default label**        |                    **Description**                    |
 |--------------------------------|-------------------------------------------------------|
 |         `self-hosted`          |   Default label applied to all self-hosted runners    |
-| `linux`, `windows`, or `macOS` |   Applied depending the runner's operating system.    |
-|   `x64` , `ARM`, or `ARM64`    | Applied depending the runner's hardware architecture. |
+| `linux`, `windows`, or `macOS` |   Applied depending on the runner's operating system.    |
+|   `x64` , `ARM`, or `ARM64`    | Applied depending on the runner's hardware architecture. |
 
 On top of these default labels, Enterprise Cloud and Enterprise Server offer you the possibility to create and add custom labels to your runners. Custom labels can come in handy when you need to run jobs on runners that have specific capabilities. For example, if a job in one of your workflows requires a specific type of graphics hardware, you could create a `gpu` custom label and assign it to the runners that have the hardware installed. All runners with the `gpu` label would then be eligible to run the job.
 
@@ -68,8 +68,8 @@ If you need a self-hosted runner to communicate with GitHub via a proxy server, 
 
 | **Environment variable** |                                                                                                   **Description**                                                                                                   |
 |--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|      `https_proxy`       | Proxy URL for HTTPS traffic. You can also include basic authentication credentials, if required. For example: <br> `http://proxy.local` <br> `http://192.168.1.1:8080` <br> `http://username:password@proxy.local`  |
-|       `http_proxy`       |  Proxy URL for HTTP traffic. You can also include basic authentication credentials, if required. For example: <br> `http://proxy.local` <br> `http://192.168.1.1:8080` <br> `http://username:password@proxy.local`  |
+|      `https_proxy`       | Proxy URL for HTTPS traffic. You can also include basic authentication credentials, if necessary. For example: <br> `http://proxy.local` <br> `http://192.168.1.1:8080` <br> `http://username:password@proxy.local`  |
+|       `http_proxy`       |  Proxy URL for HTTP traffic. You can also include basic authentication credentials, if necessary. For example: <br> `http://proxy.local` <br> `http://192.168.1.1:8080` <br> `http://username:password@proxy.local`  |
 |        `no_proxy`        | Comma-separated list of hosts that should not use a proxy. Only hostnames are allowed in `no_proxy`, you cannot use IP addresses. For example: <br> `example.com` <br> `example.com,myserver.local:443,example.org` |
 
 > [!Note]
@@ -77,23 +77,23 @@ If you need a self-hosted runner to communicate with GitHub via a proxy server, 
 
 On Windows, the proxy environment variable names are not case-sensitive. On Linux and macOS, we recommend that you use all lowercase environment variables. If you have an environment variable in both lowercase and uppercase on Linux or macOS, for example `https_proxy` and `HTTPS_PROXY`, the self-hosted runner application uses the lowercase environment variable.
 
-### IP allow lists
+### IP allowlists
 
-If your Enterprise Cloud or Enterprise Server organization has configured IP allow lists, you must add the IP address or IP address range of your self-hosted runners to the IP allow list in order for your self-hosted runners to communicate with GitHub.
+If your Enterprise Cloud or Enterprise Server organization has configured IP allowlists, you must add the IP address or IP address range of your self-hosted runners to the IP allowlist in order for your self-hosted runners to communicate with GitHub.
 
-To add the IP address or IP address range of your self-hosted runners to an organization IP allow list, navigate to your organization **Settings** and select **Organization security** in the sidebar. Under **IP Address**, add the IP address or IP address range of your self-hosted runners in CIDR notation and select **+ Add**.
+To add the IP address or IP address range of your self-hosted runners to an organization IP allowlist, navigate to your organization **Settings** and select **Organization security** in the sidebar. Under **IP Address**, add the IP address or IP address range of your self-hosted runners in CIDR notation and select **+ Add**.
 
 ## Monitor and troubleshoot self-hosted runners
 
-Both Enterprise Cloud and Enterprise Server offer tools enabling you to monitor, troubleshoot and update your self-hosted runners. If your builds start to fail, some files in your repository get locked, or your workflow runs are simply stuck, troubleshooting the runner executing your workflow can help solve the issue.
+Both Enterprise Cloud and Enterprise Server offer tools enabling you to monitor, troubleshoot and update your self-hosted runners. If your builds start to fail, some files in your repository get locked, or your workflow runs are stuck, troubleshooting the runner executing your workflow can help solve the issue.
 
 The main steps you can take when troubleshooting a self-hosted runner are:
 
-1. Check the status of the runner in the GitHub Actions settings of the organization, repository or enterprise where your self-hosted runner is registered (under **Actions** for an organization or repository, under **Policies > Actions** for an enterprise).
+1. Check the status of the runner in the GitHub Actions settings of the organization, repository, or enterprise where your self-hosted runner is registered (under **Actions** for an organization or repository, under **Policies > Actions** for an enterprise).
 1. Review the activities and automatic updates of the runner in the `Runner_` files in the `_diag` folder.
 1. Review the status of the jobs the runner executed in the `Worker_` files in the `_diag` folder.
 
-According to the operating system of your runner, you can take additional steps as shown in the table below:
+According to the operating system of your runner, you can take extra steps as shown in the table below:
 
 |                             **Mac**                              |                            **Windows**                            |                              **Linux**                              |
 |----------------------------------------------------------------|-----------------------------------------------------------------|-------------------------------------------------------------------|
