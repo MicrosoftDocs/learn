@@ -63,7 +63,7 @@ You may see a prompt you to install [Pylint](https://pylint.org/), which you can
 
 ## Step 3 - Run your application
 
-With the code now created, you can run your application. You can actually do run it from inside Visual Studio Code.
+With the code now created, you can run your application. You can actually run it from inside Visual Studio Code.
 
 1. Open the built-in terminal inside Visual Studio Code by selecting **View** and **Terminal**.
 
