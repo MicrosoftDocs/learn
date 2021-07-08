@@ -14,7 +14,7 @@ durationInMinutes: 8
 content: |
   [!include[](includes/3-configure-public-ip-services.md)]
 quiz:
-  title: "Check your knowledgeChoose the best response for each of the questions below. When you're done, select **Check your answers**."
+  title: ""
   questions:
   - content: "Which of the following statements about Azure VNets is correct?"
     choices:

@@ -3,7 +3,7 @@ In this unit, you will configure connectivity between the CoreServicesVnet and t
 
 ## Create a Virtual Machine to test the configuration
 
-In this section, you will create a test VM on the Manufacturing VNet to test if you can access resroues inside another Azure virtual network from your ManufacturingVnet.
+In this section, you will create a test VM on the Manufacturing VNet to test if you can access resources inside another Azure virtual network from your ManufacturingVnet.
 
 ### Create ManufacturingVM
 
@@ -43,7 +43,6 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 | Advanced        | No changes required                                          |                                       |
 | Tags            | No changes required                                          |                                       |
 | Review + create | Review your settings and select Create                       |                                       |
-|                 |                                                              |                                       |
 
 
 6. When the deployment is complete, select **Go to resource**.
