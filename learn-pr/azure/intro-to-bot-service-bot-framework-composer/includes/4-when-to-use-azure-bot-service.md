@@ -49,7 +49,7 @@ QnA Maker does not support direct customization of conversation flow and logic, 
 Bot Framework Composer is an open-source, visual IDE for developers to author, test, provision, and manage conversational experiences. You can use the Azure Bot Service to host bots created in Bot Framework Composer.
 
 >[!TIP]
-> More complex activities such as integrating with dependencies such as REST API can be accomplished by directly modifying the code of the bot using the Bot Framework SDK and Visual Studio Code or another IDE.
+> You can perform more complex activities such as integrate with dependencies (for instance, REST API) by directly modifying the code of the bot. You can do this by using the Bot Framework SDK and Visual Studio Code or other IDE.
 
 ## Choosing a bot-building tool
 
