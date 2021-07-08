@@ -6,7 +6,7 @@ As part of the migration strategy, you propose the Azure Disk Storage solution t
 
 Of the various disks available in Azure, Azure Ultra Disk Storage provides the highest disk performance. Choose this option when you need the fastest storage performance in addition to high throughput, high input/output operations per second (IOPS), and low latency.
 
-The performance you'll get with Ultra Disk Storage depends on the size of the disk you choose. The following table provides examples. The table shows disk size in gitabytes (GB) and throughput in megabytes per second (MBps).
+The performance you'll get with Ultra Disk Storage depends on the size of the disk you choose. The following table provides examples. The table shows disk size in gigabytes (GB) and throughput in megabytes per second (MBps).
 
 | Disk size (GB) | IOPS | Throughput (MBps) |
 | --- | --- |--- |

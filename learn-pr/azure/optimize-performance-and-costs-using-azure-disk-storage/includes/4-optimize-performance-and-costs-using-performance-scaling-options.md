@@ -47,14 +47,14 @@ Azure provides this functionality both for VMs and for disks, and you can use it
 
 ### VM bursting
 
-VM bursting supports only the credit-based model for bursting, which doesn't require any configuration. While a VM is used, it accumulates credits when the resource's IOPS or throughputs are less than the resource's performance target. You can use these credits to burst performance for up to 30 minutes at the maximum burst rate.
+VM bursting supports only the credit-based model for bursting, which doesn't require any configuration. While a VM is used, it accumulates credits when the resource's IOPS or throughput are less than the resource's performance target. You can use these credits to burst performance for up to 30 minutes at the maximum burst rate.
 
 ### Disk bursting
 
 Azure Premium SSD disks offer two models of bursting:
 
-- **Credit-based bursting model**. You can use this model for short-term performance scaling. This model is free and enabled by default on Premium SSD 512-GiB disks and smaller disks, and on Standard SSD 1-tebibyte (TiB) disks and smaller disks. It uses accumulated credit to burst up to 30 minutes at the maximum burst rate.
-- **On-demand bursting model (preview)**. This is configurable bursting for Premium SSD disks that are larger than 512 GiB. It comes with an additional cost. To configure on-demand bursting, you must detach the disk from the VM.
+- **Credit-based bursting model**. You can use this model for short-term performance scaling. This model is free and enabled by default on Premium SSD 512-GiB disks and smaller disks, and on Standard SSD 1-TiB disks and smaller disks. It uses accumulated credit to burst up to 30 minutes at the maximum burst rate.
+- **On-demand bursting model (preview)**. This option is configurable bursting for Premium SSD disks that are larger than 512 GiB. It comes with an additional cost. To configure on-demand bursting, you must detach the disk from the VM.
 
 You can enable on-demand bursting by using Azure PowerShell, the Azure CLI, or an ARM template. You can enable this functionality on new and existing disks.
 
@@ -67,18 +67,18 @@ $dataDisk = New-AzDisk -ResourceGroupName "myResourceGroupDisk" -DiskName "myDat
 ```
 
 > [!NOTE]
-> For applications when you need higher sustained performance, use the functionality to change the performance tier instead of disk bursting. This option is more cost-effective than disk bursting.
+> When you need higher sustained performance in your application, use the functionality to change the performance tier instead of disk bursting. This option is more cost-effective than disk bursting.
 
 ## Optimize performance and costs with the optimal option
 
 Now that you understand how different performance indicators define the overall performance of an Azure disk, let's examine some use-case scenarios:
 
-- **Planned versus unplanned performance scaling**: If you have a planned event, like a marketing campaign, that requires a sustained increase in disk performance, use performance tiers to better accommodate the increased load. However, if you can't plan ahead or can't accurately predict the performance pattern of your workloads, disk bursting would be a better choice because it provides you with a higher allowance beyond your provisioned target.
-- **Duration**: For scenarios in which high demand results from short-running jobs or jitters in I/O scheduling, on-demand disk bursting will be more cost-efficient because you will pay only for the burst transactions. If your workload doesn't exceed the provisioned target, you pay only for the burst enablement fee, which is a small fraction of the disk cost. In contrast, if you expect your workload to burst for days or even longer, performance tiers will be the better option.
+- **Planned versus unplanned performance scaling**. If you have a planned event, like a marketing campaign, that requires a sustained increase in disk performance, use performance tiers to better accommodate the increased load. However, if you can't plan ahead or can't accurately predict the performance pattern of your workloads, disk bursting would be a better choice because it provides you with a higher allowance beyond your provisioned target.
+- **Duration**. For scenarios in which high demand results from short-running jobs or jitters in I/O scheduling, on-demand disk bursting will be more cost-efficient because you will pay only for the burst transactions. If your workload doesn't exceed the provisioned target, you pay only for the burst enablement fee, which is a small fraction of the disk cost. In contrast, if you expect your workload to burst for days or even longer, performance tiers will be the better option.
 
 |&nbsp;              | Credit-based bursting                               | On-demand bursting                                  | Changing performance tier |
 | ------------ | --------------------------------------------------- | --------------------------------------------------- | ---------------------------------------------------------------------- |
 | Scenario     | Ideal for short-term scaling (30 minutes or less).   | Ideal for short-term scaling (not time restricted).  | Ideal if your workload would otherwise continually be running in burst. |
-| Cost         | Free                                                | Cost is variable, see [Billing](/azure/virtual-machines/disk-bursting#billing) for details.                                                                                      | The cost of each performance tier is fixed. See [Managed Disks pricing](https://azure.microsoft.com/pricing/details/managed-disks/) for details. |
-| Availability | Only available for Premium SSD disks and Standard SSD disks 512 GiB and smaller. | Only available for Premium SSD disks larger than 512 GiB. | Available to all Premium SSD disk sizes.     |
+| Cost         | Free.                                                | Cost is variable. See [Billing](/azure/virtual-machines/disk-bursting#billing) for details.                                                                                      | The cost of each performance tier is fixed. See [Managed Disks pricing](https://azure.microsoft.com/pricing/details/managed-disks/) for details. |
+| Availability | Only available for Premium SSD disks and Standard SSD disks 512 GiB and smaller. | Only available for Premium SSD disks larger than 512 GiB. | Available for all Premium SSD disk sizes.     |
 | Enablement   | Enabled by default on eligible disks.                | Must be enabled by user.                             | User must manually change the tier.                                  |
