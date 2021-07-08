@@ -108,7 +108,6 @@ To accomplish that, we need to define a [Private Endpoint](/azure/private-link/p
 
 5. In the **Resource** tab, fill in using the values below:
 
-   ![Azure Virtual Network deployment.](./raw_images/ex2/pvt3.png)
     :::image type="content" source="../media/pvt3.png" alt-text="Screenshot showing an example of the form to fill in from step 5.":::
 
    | Setting              | Value                                                   |
@@ -134,7 +133,6 @@ To accomplish that, we need to define a [Private Endpoint](/azure/private-link/p
 
 7. Select **Review + Create** to validate this deployment, then select **Create** to deploy the endpoint (this may take a few moments):
 
-   ![Azure Virtual Network deployment.](./raw_images/ex2/pvt_final.png)
     :::image type="content" source="../media/pvt_final.png" alt-text="Screenshot showing the your deployment is complete message.":::
 
 Congratulations!
