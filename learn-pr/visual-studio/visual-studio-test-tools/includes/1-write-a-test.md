@@ -37,7 +37,7 @@ Write tests with a few basic steps:
 ## Add assert statements
 
 * The templates come with a pre-written test. Note the 'Assert' line. Assert statements are what decide if your test passes or fails. You can add multiple asserts to any given test. If one assert fails, then the test will fail.
-* Add an assert statement to check if a type in your product code is null.
+* Add an assert statement to check if a type in your product code is null. See the example below is testing if the calculator variable is null.
 
     ```csharp
     [TestMethod]
@@ -50,9 +50,9 @@ Write tests with a few basic steps:
 
 * Add an assert statement that causes your test to fail. An example of a failing assert would be asserting IsTrue on a false boolean.
 
-```csharp
-Assert.IsTrue(false); // Will fail the test
-```
+    ```csharp
+    Assert.IsTrue(false); // Will fail the test
+    ```
 
 * Writing good tests can take a while to learn, just like writing good code. If you would like to learn more about writing good tests, see the [conceptual guidance](../../visual-studio-test-concepts/resources/design-doc.md).
 

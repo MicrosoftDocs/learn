@@ -48,7 +48,7 @@ public void AddDataTests(int x, int y, int expected)
 * Sometimes the architecture of your code is not as modular as you may want in order to unit test it well. In order to isolate the parts of your code that you are testing without re-writing it you may want to use a mocking framework. Mocking helps you isolate the code you are trying to test by creating stubs or shims of that code's dependencies. This allows the code you are testing to make the required calls to its dependencies without actually testing the dependencies. This helps you focus a unit test down to precisely the behavior you want to test. There are many popular mocking frameworks available including [MOQ](https://github.com/Moq/moq4/wiki/Quickstart) and [Microsoft Fakes](https://docs.microsoft.com/visualstudio/test/isolating-code-under-test-with-microsoft-fakes).
 * You can find a [full tutorial for Microsoft Fakes here](https://docs.microsoft.com/visualstudio/test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing), but let's explore a short overview.
   * Note that Microsoft Fakes is only available with Visual Studio Enterprise.
-  * Navigate to the test project you want to isolate in the Solution Explorer, right-click on the project that you want to mock under the Project node, and select 'Add Fakes Assembly'
+  * Navigate to the test project you want to isolate in the Solution Explorer, right-click on the project under the Project node that you want to mock, and select 'Add Fakes Assembly'.
 
   ![image](../media/test-add-fakes.png)
 
@@ -76,7 +76,7 @@ public void AddDataTests(int x, int y, int expected)
             // defined above to always return 1
             // instead of actually calling Divide
             var actual = calculator.Divide(1, 0); 
-            Assert.AreEqual(1, actual);
+            Assert.AreEqual(1, actual); // This assert will pass since the Divide method above is a shim that will return 1
         }
     }
     
