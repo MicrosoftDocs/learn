@@ -54,13 +54,13 @@ To add a label to a self-hosted runner, navigate to the GitHub Actions settings 
 
 1. Locate the list of runners under **Self-hosted runners**. If your runner is in a group, locate the runner group and select the runner dropdown to view the list of runners.
 
-:::image type="content" source="../media/locate-runner.png" alt-text="Example runner group with dropdown highlighted.":::
+    :::image type="content" source="../media/locate-runner.png" alt-text="Example runner group with dropdown highlighted.":::
 
-2. Locate the runner you want to update and select the label dropdown to view the label selection menu. This menu displays all the custom labels available to your self-hosted runner. Labels already assigned to your self-hosted runner have a tick next to them.
+1. Locate the runner you want to update and select the label dropdown to view the label selection menu. This menu displays all the custom labels available to your self-hosted runner. Labels already assigned to your self-hosted runner have a tick next to them.
 
-:::image type="content" source="../media/show-labels.png" alt-text="Example runner with label menu displayed.":::
+    :::image type="content" source="../media/show-labels.png" alt-text="Example runner with label menu displayed.":::
 
-3. Click an existing label to add it to your runner or type the name of your new label in the **Filter labels** field and select **Create new label**. The label is automatically added to your runner when you create it.
+1. Click an existing label to add it to your runner or type the name of your new label in the **Filter labels** field and select **Create new label**. The label is automatically added to your runner when you create it.
 
 ### Proxy servers
 
