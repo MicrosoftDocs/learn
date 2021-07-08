@@ -73,22 +73,26 @@ components:
 
 ### Architect
 
-Based on the training curriculum that you define using Inkling code, the Architect:
+The Architect defines a training process for the Bonsai brain that will give it
+the best chance at learning the requested concepts. The Architect:
 
-- Creates and optimizes learning topologies (neural networks).
-- Proposes the configuration of learning algorithms and topologies that have the best chance at learning the model's concepts.
+- creates a starting learning topology (neural networks).
+- proposes an optimal configuration for the associated learning algorithms.
+- optimizes the topology and algorithm configuration as the brain trains.
 
-> [!TIP]
-> Essentially, the Architect does what a data scientist would do when evaluating a neural network's effectiveness.
+Essentially, the Architect does what a data scientist would do when evaluating
+the effectiveness of a neural network for training.
 
-The Architect supports the following learning algorithms:
+The Bonsai Architect currently supports the following learning algorithms
+(heuristics):
 
 - Distributed Deep Q Network (APEX).
 - Proximal Policy Optimization (PPO).
 - Soft Actor Critic (SAC).
 
 > [!NOTE]
-> The set of heuristics that the Architect uses is based on the heuristics that data-science and machine-learning experts use when they work on the Architect codebase.
+> The current set of supported heuristics is based on heuristics used by the
+> data-science and machine-learning experts who work on the Architect codebase.
 
 ### Instructor
 
