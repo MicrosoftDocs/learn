@@ -42,11 +42,11 @@ To perform this exercise, you need:
 1. On the **Devices** page, in the **Thermostat** section, select **Thermostat-Zone1**.
 1. On the **Devices** page, on the **Thermostat-Zone1** pane, review the content of the **Dashboard** tab.
 
-   :::image type="content" source="../media/6-iot-device-thermostat-zone1-dashboard.png" alt-text="Screenshot of the Dashboard tab of the Thermostat-Zone1 device pane in the IoT Central Application portal.":::
+   :::image type="content" source="../media/6-iot-device-thermostat-zone-1-dashboard.png" alt-text="Screenshot of the Dashboard tab of the Thermostat-Zone1 device pane in the IoT Central Application portal.":::
 
 1. On the **Devices** page, on the **Thermostat-Zone1** pane, select the **Raw data** tab header, and review the content of the **Raw data** tab.
 
-   :::image type="content" source="../media/6-iot-device-thermostat-zone1-raw-data.png" alt-text="Screenshot of the Raw data tab of the Thermostat-Zone1 device pane in the IoT Central Application portal.":::
+   :::image type="content" source="../media/6-iot-device-thermostat-zone-1-raw-data.png" alt-text="Screenshot of the Raw data tab of the Thermostat-Zone1 device pane in the IoT Central Application portal.":::
 
 ## Create an Azure function that logs an HTTP request payload
 
