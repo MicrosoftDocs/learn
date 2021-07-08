@@ -4,10 +4,11 @@ metadata:
   moduleType: standard
   title: Monitoring Java applications on Azure
   description: Monitoring Java applications on Azure
-  ms.date: 4/8/2021
+  ms.date: 07/07/2021
   author: roryp
   ms.author: ropreddy
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: Monitoring Java applications on Azure
 summary: Monitoring Java applications on Azure
 abstract: |
