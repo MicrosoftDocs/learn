@@ -26,10 +26,10 @@ az cognitiveservices account create \
 	--kind SpeechServices \
 	--sku S0 \
 	--location $location \
-	--subscription $subscription\
+	--subscription $subscription \
 	--yes
 ​
-​
+
 # Create a blob and container to hold our audio files
 # Create blob
 blobName=blobstt$RANDOM
