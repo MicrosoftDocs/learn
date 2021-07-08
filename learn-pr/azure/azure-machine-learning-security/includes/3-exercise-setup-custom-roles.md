@@ -28,15 +28,16 @@ Let's create a Resource Group for this exercise:
 
 2. Select **New** in the resource groups list:
 
-   ![Azure Portal: Resource Groups.](../media/resource_group_2.png)
+    :::image type="content" source="../media/resource_group_2.png" alt-text="Screenshot showing the resource groups window with a red box around new.":::
 
 3. Fill in the form to add a new Resource Group
 
    - Select your previously created subscription.
    - Use **AI-Resource** as the Resource group's name.
    - Select your preferred region.
+   - Select **Review and create**.
 
-   ![Azure Portal: New resource Groups.](../media/resource_group_3.png)
+    :::image type="content" source="../media/resource_group_3.png" alt-text="Screenshot showing the form to fill in to add a new resource group.":::
 
 ## Create ML Workspace
 
@@ -48,19 +49,19 @@ To create an ML Workspace, follow these steps:
 
 2. Select **See all**.
 
-   ![Azure Portal: Create a Resource.](../media/ws2.png)
+    :::image type="content" source="../media/ws2.png" alt-text="Screenshot showing the create a resource page with a red box around see all.":::
 
 3. Scroll down until the **AI + Machine Learning** option is visible and select **create**.
 
-   ![Azure Portal: Selecting AI + Machine Learning.](../media/ws3.png)
+    :::image type="content" source="../media/ws3.png" alt-text="Screenshot showing the AI and machine learning option.":::
 
 4. Fill in the form, selecting your current subscription and the resource group we had previously created (**AI-Resource**). Use **ml-workspace** as the workspace name:
 
-   ![Azure Portal: Create new Workspace.](../media/ws4.png)
+    :::image type="content" source="../media/ws4.png" alt-text="Screenshot showing the form from step 4 and how to fill it in.":::
 
 5. Select the **Review + create** button to load a review confirmation screen:
 
-   ![Azure Portal: Review Workspace.](../media/ws5.png)
+    :::image type="content" source="../media/ws5.png" alt-text="Screenshot showing the confirmation screen from step 5.":::
 
 6. Select **Create** to start deploying your new workspace (this may take a few minutes).
 
@@ -78,12 +79,12 @@ To create an ML Workspace, follow these steps:
 
    Select the Cloud Shell Icon:
 
-   ![Azure Portal: Powershell](../media/powershell1.png) or use the direct URL in your browser:
+    :::image type="content" source="../media/powershell1.png" alt-text="Screenshot showing where to select the cloud shell icon."::: or use the direct URL in your browser:
    https://shell.azure.com.
 
 1. Select Bash or PowerShell (we will use `bash`):
 
-   ![Azure Portal: Select Bash](../media/powershell2.png)
+    :::image type="content" source="../media/powershell2.png" alt-text="Screenshot showing where to select bash.":::
 
 ## Define a Custom Role:
 
@@ -118,7 +119,7 @@ To create an ML Workspace, follow these steps:
    - Select **Upload**
    - Select the `data_scientist_custom_role.json` file you created above:
 
-   ![Cloud Shell Upload](../media/upload.png)
+    :::image type="content" source="../media/upload.png" alt-text="Screenshot showing where to select upload.":::
 
 1. Create a role definition using the `az role definition create` CLI command (notice that the last argument is the file we just uploaded):
    ```sh
@@ -129,17 +130,17 @@ This adds the "Data Scientist Custom" role, which is limited to running experime
 
 To verify and list existing roles using the Azure portal, select the option **Access Control (IAM)** on your `ml-workspace` then select the **Roles** tab:
 
-![Roles assigned to a workspace](../media/custom_role.png)
+:::image type="content" source="../media/custom_role.png" alt-text="Screenshot showing roles defined to the workspace example.":::
 
-<!-- ## Assign Custom Role to an User
-Finally, to assign this role to an user, use the CLI commands below:
-```sh
-# Add machine learning extension
-az extension add --name ml
-# Assigning custom role to user
-az ml workspace share -w ml-workspace -g AI-Resource --role "Data Scientist Custom" --user user@your-domain.com
-```
- -->
+><!-- ## Assign Custom Role to a User
+>Finally, to assign this role to a user, use the CLI commands below:
+>```sh
+># Add machine learning extension
+>az extension add --name ml
+># Assigning custom role to user
+>az ml workspace share -w ml-workspace -g AI-Resource --role "Data Scientist Custom" --user user@your-domain.com
+>```-->
+
 ## Summary
 
 Congratulations!
@@ -151,7 +152,7 @@ In this unit you've covered the following topics:
 - Using the Cloud Shell to run commands and uploading files to your account
 - Defining a Custom Role for Machine Learning with access to your workspace
 
-<!-- - Assigning roles to an user -->
+<!-- - Assigning roles to a user -->
 
 ## More Resources
 
