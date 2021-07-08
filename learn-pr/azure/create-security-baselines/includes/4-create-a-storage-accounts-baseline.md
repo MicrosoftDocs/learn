@@ -14,9 +14,9 @@ Another step you should take to ensure the security of your Azure Storage data i
 
 1. Select an existing account.
 
-1. Under Setting, select **Configuration**.
+1. Under Settings, select **Configuration**.
 
-1. Set **Secure Transfer required** to **Enabled**.
+1. Set **Secure transfer required** to **Enabled**.
 
     ![Screenshot the storage setting pane.](../media/4-storage-secure-transfer.png)
 
@@ -30,7 +30,7 @@ Azure Blob storage is Microsoft's object storage solution for the cloud. Blob st
 
 1. Select an existing account.
 
-1. Under Setting, select **Encryption**.
+1. Under Security + networking, select **Encryption**.
 
 1. Azure Storage encryption is enabled for all new and existing storage accounts and cannot be disabled.
 
