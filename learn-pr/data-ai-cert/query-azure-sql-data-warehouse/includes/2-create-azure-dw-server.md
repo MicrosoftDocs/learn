@@ -9,7 +9,7 @@ Let's create a sample data warehouse in Azure Synapse Analytics with sample data
 
 1. Select **Databases**, search for and select **Azure Synapse Analytics** to start the creation process.
 
-    ![Creating a data warehouse in Azure Synapse Analytics](../media/2-create-sql-dw.png)
+    ![Creating a data warehouse in Azure Synapse Analytics.](../media/2-create-sql-dw.png)
 
     The **Azure Synapse Analytics** pane appears.
 
@@ -53,7 +53,7 @@ Deployment takes a few minutes while Azure:
 
 Select the **Notification** icon on the toolbar to see the progress of the creation. After it deploys, you get a popup notification. Use it to go to the new resource or pin the resource to your dashboard.
 
-![Notification pane](../media/2-click-notification.png)
+![Notification pane.](../media/2-click-notification.png)
 
 Select **Go to resource** to open the **Overview** page for your new database.
 
@@ -65,4 +65,4 @@ Here, you can see the traffic that's processing. You also can access various fea
 
 As an example, the **Server name** and **Connection strings** are two useful items of information you can access on this view.
 
-![Showing the SQL database](../media/2-explore-sql-db.png)
+![Showing the SQL database.](../media/2-explore-sql-db.png)

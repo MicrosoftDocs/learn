@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-nodejs
 metadata:
-  title: Introduction to Node.js
-  description: "Learn about Node.js: what it is, how it works, and when to use it. Create Node.js applications using JavaScript/TypeScript using Visual Studio Code."
+  title: Introduction to Node.js with JavaScript
+  description: "Learn about Node.js: what it is, how it works, and when to use it. Create a Node.js application with JavaScript using Visual Studio Code."
   ms.date: 02/25/2020
   author: manekinekko
   ms.author: wachegha

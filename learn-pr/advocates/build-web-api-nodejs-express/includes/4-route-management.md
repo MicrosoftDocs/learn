@@ -41,7 +41,7 @@ You learned in the previous unit how Express lets you associate an HTTP verb wit
 - **Routing parameters**: A routing parameter in a URL expresses that you want to access a specific resource. Looking at the route **/orders/1/items/2**, the routing parameters are **1** and **2**. The **1** signals we want a specific order with the unique key **1**. The **2** asks for a specific order item with the unique key **2**. These routing parameters return a specific resource rather than all resources of a specific type.
 - **Query parameters**: The query part of the URL is a set of key-value pairs that exist after the **?** character. The route example, **/products?page=1&pageSize=20**, shows the query parameters **page** and **pageSize**. These two parameters work in tandem to help you filter down the size of a returned response. Imagine if the route **/products** returned 2 million records from a database. That answer would be huge and it would also take a long time for the user to see the rendered response. That's a poor user experience and a strain on the app. A better approach is to use query parameters to limit the size of the response.
 - **General pattern management**: So far you've seen simple routes like **/products** and **/orders/1/items/2**. There are other patterns like  **`**`**, which could mean *catch-all*. You would normally define such a route to make sure that unexpected requests, like typos, are handled in a graceful way. This helps the user have a good experience.
-- **Read and write**: HTTP verbs like, *get* and *post*, represent different intentions. For example, to read or write data. Express has specific methods that let's you associate code to a specific URL fragment and HTTP verb.
+- **Read and write**: HTTP verbs like, *get* and *post*, represent different intentions. For example, to read or write data. Express has specific methods that let you associate code to a specific URL fragment and HTTP verb.
 
 ### Routing parameters
 
@@ -62,7 +62,7 @@ app.get('/products/:id', (req, res) => {
 })
 ```
 
-Route parameters are written to a **params** property on the request object **res**. A request of **/products/114** would have **req.params.id** contain **114**.
+Route parameters are written to a **params** property on the request object **req**. A request of **/products/114** would have **req.params.id** that contains **114**.
 
 ### Query parameters
 

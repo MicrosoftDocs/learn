@@ -37,7 +37,7 @@ Let's create a function app that we'll use throughout this module. A function ap
     | Function App name | Enter a *globally unique name* | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
     | Publish | Code | Option to publish code files or a Docker container. |
     | Runtime stack | Node.js | The sample code in this module is written in JavaScript. |
-    | Version | Leave *default* |
+    | Version | Accept *default* |
     | Region | *Central US* | Choose the region nearest you. |
 
 1. Select **Review + create** > **Create** to provision and deploy the function app.
@@ -76,7 +76,7 @@ Let's create a function app that we'll use throughout this module. A function ap
     | Function App name | Enter a *globally unique name* | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
     | Publish | Code | Option to publish code files or a Docker container. |
     | Runtime stack | Node.js | The sample code in this module is written in JavaScript. |
-    | Version | Leave *default* |
+    | Version | Accept *default* |
     | Region | *Central US* | Choose the region nearest you. |
 
 1. Select **Review + create** > **Create** to provision and deploy the function app.

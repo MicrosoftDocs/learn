@@ -10,7 +10,7 @@ When you list your company’s products and services in the commercial marketpla
 
 Now we'll share some things you can consider as you prepare to sell your products and services through each channel.
 
-:::image type="complex" source="../media/1-marketplace-sales-channels.png" alt-text="A diagram depicting the commercial marketplace sales channels" lightbox="../media/1-marketplace-sales-channels.png":::
+:::image type="complex" source="../media/1-marketplace-sales-channels.png" alt-text="A diagram depicting the commercial marketplace sales channels." lightbox="../media/1-marketplace-sales-channels.png":::
    The left side of the diagram represents that sellers list their solution through Partner Center. The right side of the diagram depicts the three commercial marketplace sales channels where customers can find your products and services. Going clockwise, the first channel is direct, which includes the online stores and in-product experiences. Second is Microsoft sales, which represents the Co-sell program. Third is the Cloud Solution Provider program, which lets resellers sell your solution to their customers. At the center of the diagram is the Microsoft commerce platform, which facilitates the commercial marketplace.
 :::image-end:::
 

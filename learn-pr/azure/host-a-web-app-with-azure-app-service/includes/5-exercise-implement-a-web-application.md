@@ -8,7 +8,7 @@ The heart of the .NET CLI tools is the `dotnet` command-line tool. Using this co
 
 First, let's install the appropriate version of `dotnet` into the Cloud Shell. For this exercise, we'll be using SDK version 3.1.102.
 
-1. Run the following commands in the Cloud Shell panel on the right to install it.
+1. Run the following commands in Azure Cloud Shell on the right to install it.
 
     ```bash
     wget -q -O - https://dot.net/v1/dotnet-install.sh | bash -s -- --version 3.1.102
@@ -68,7 +68,7 @@ If you open a second command shell session, for example by browsing to <https://
 
 To create a starter web application, we'll use Maven, a commonly used project management and build tool for Java apps. We'll use the `maven-archetype-webapp` template to generate the code for our web application.
 
-1. Run the following commands in the Cloud Shell now to create a new web app.
+1. Run the following commands in Azure Cloud Shell now to create a new web app.
 
     ```bash
     cd ~
@@ -82,7 +82,7 @@ To create a starter web application, we'll use Maven, a commonly used project ma
     mvn package
     ```
 
-1. When the command finishes running, enter these commands to open the "target" directory and list its content.
+1. When the command finishes running, run these commands to open the "target" directory and list its content.
 
     ```bash
     cd target
@@ -97,7 +97,7 @@ You'll see a file listed called `helloworld.war`. This is the web application pa
 
 To create a starter Node.js web application, we'll use Node Package Manager (`npm`) along with some JavaScript code to run the actual web page processing.
 
-1. Run the following commands in the Cloud Shell to create a new `package.json` that will describe our Node.js application.
+1. Run the following commands in Azure Cloud Shell to create a new `package.json` that will describe our Node.js application.
 
     ```bash
     cd ~
@@ -114,13 +114,13 @@ This will create a new `package.json` file in the current folder. You should see
     touch index.js
     ```
 
-1. Now we have to make a few edits to both of our files. Enter the following command into the terminal to open an interactive editor.
+1. Now we have to make a few edits to both of our files. Run the following command in the terminal to open an interactive editor.
 
     ```bash
     code .
     ```
 
-1. Select the `package.json` file and make the following edits to the `scripts` section to use Node.js to launch the web app.
+1. Select the `package.json` file, and make the following edits to the `scripts` section to use Node.js to launch the web app.
 
     ```json
     {
@@ -133,10 +133,10 @@ This will create a new `package.json` file in the current folder. You should see
     }
     ```
 
-1. Save the file by selecting the **...** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Command+S</kbd> on macOS).
+1. Save the file by selecting the **...** menu, or press (<kbd>Ctrl+S</kbd> on Windows and Linux, and <kbd>Command+S</kbd> on macOS).
 
 > [!IMPORTANT]
-> Whenever you paste or change code into a file in the editor, make sure to save afterwards by selecting the **...** menu, or the accelerator key (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Command+S</kbd> on macOS).
+> Whenever you paste or change code into a file in the editor, make sure to save afterwards by selecting the **...** menu, or pressing (<kbd>Ctrl+S</kbd> on Windows and Linux; <kbd>Command+S</kbd> on macOS). To exit the editor, press <kbd>Ctrl+Q</kbd> on Windows and Linux; <kbd>Command+Q</kbd> on macOS.
 
 1. Switch to the `index.js` file, and add the following contents to it. This is a small Node.js program that always responds with "Hello World!" when any GET request is made to the server.
 
@@ -154,7 +154,7 @@ This will create a new `package.json` file in the current folder. You should see
     console.log(`Server running at http://localhost:${port}`);
     ```
 
-1. Save the file and exit the editor. Exit the editor by selecting the **...** menu on the top right, or by pressing <kbd>Ctrl+Q</kbd>.
+1. Save the file and exit the editor. Save your file and exit the editor by selecting the **...** menu on the top right, and then selecting **Save** > **Close Editor**, or by pressing <kbd>Ctrl+S</kbd> and <kbd>Ctrl+Q</kbd> on Windows and Linux; <kbd>Command+S</kbd> and <kbd>Command+Q</kbd> on macOS.
 
 ### Optionally test your web app
 
@@ -195,7 +195,7 @@ To create a starter web application, we'll use the web application framework Fla
     pip install flask
     ```
 
-1. Run these commands in the Cloud Shell to create the directory for your new web app.
+1. Run these commands in Azure Cloud Shell to create the directory for your new web app.
 
     ```bash
     mkdir ~/BestBikeApp
@@ -219,7 +219,7 @@ To create a starter web application, we'll use the web application framework Fla
         return "<html><body><h1>Hello Best Bike App!</h1></body></html>\n"
     ```
 
-1. Save the file and exit the editor. You can save the file and exit the editor by selecting the **...** menu on the top right, or use shortcuts (<kbd>Ctrl+S</kbd> on Windows and Linux, <kbd>Command+S</kbd> on macOS).
+1. Save the file and exit the editor. Save your file and exit the editor by selecting the **...** menu on the top right, and then selecting **Save** > **Close Editor**, or by pressing <kbd>Ctrl+S</kbd> and <kbd>Ctrl+Q</kbd> on Windows and Linux; <kbd>Command+S</kbd> and <kbd>Command+Q</kbd> on macOS.
 
 1. To deploy your application to Azure, you will need to save your list of application requirements in a *requirements.txt* file. To do so, run the following command.
 
@@ -242,7 +242,7 @@ If you open a second command shell session, for example by browsing to <https://
 1. From your second command shell session, run the following command to browse to your web application.
 
     ```bash
-    curl https://127.0.0.1:5000/
+    curl http://127.0.0.1:5000/
     ```
 
     You should see the following line appear.

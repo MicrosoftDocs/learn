@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.debug-nodejs
 metadata:
-  title: Interactively debug Node.js apps with the built-in and Visual Studio Code debuggers
-  description: Learn how to efficiently debug your Node.js app by using Visual Studio Code to fix your bugs quickly. Use the interactive debugger within Visual Studio Code to analyze and fix your JavaScript/TypeScript applications.
+  title: Interactively debug Node.js JavaScript apps with the built-in and Visual Studio Code debuggers
+  description: Learn how to efficiently debug your Node.js JavaScript app by using Visual Studio Code to fix your bugs quickly. Use the interactive debugger within Visual Studio Code to analyze and fix your JavaScript applications.
   ms.date: 06/04/2020
   author: sinedied
   ms.author: yolasors

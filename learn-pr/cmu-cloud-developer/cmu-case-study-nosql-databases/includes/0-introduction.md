@@ -8,7 +8,7 @@ NoSQL databases are not a good fit in situations in which the data is fairly wel
 
 A good example of a nonrelational database that is a good fit for NoSQL databases is a webtable,as shown in the following figure. A we table is a data structure that holds results of a web crawl. A web crawl is the process of visiting a list of web pages and following the links in them in order to catalog and index the information that is contained in a web site. 
 
-![NoSQL webtable](../media/nosql-web-table.png)
+![NoSQL webtable.](../media/nosql-web-table.png)
 
 _Figure 1: NoSQL webtable_
 

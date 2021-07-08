@@ -121,7 +121,7 @@ To use git to deploy the source code to the web app's production slot, set up yo
 
 1. When the deployment finishes, in the Azure portal, go to the web app's **Overview** page, and then select **URL**. You can double-click to copy and paste.
 
-    ![The web app in the production slot](../media/3-web-app-production-slot.png)
+    ![The web app in the production slot.](../media/3-web-app-production-slot.png)
 
 1. Close the browser tab that displays the web app.
 
@@ -135,7 +135,7 @@ Next, you'll create a deployment slot where you can stage new versions of the we
 
 1. Under **Deployment**, select **Deployment slots**. The **Deployment slots** pane appears.
 
-    ![Access deployment slots](../media/3-access-deployment-slots.png)
+    ![Access deployment slots.](../media/3-access-deployment-slots.png)
 
 1. From the top menu bar, select **Add Slot**. The **Add a slot** pane appears.
 
@@ -214,6 +214,6 @@ Now you can view the new version of the web app by browsing to the staging deplo
 
 In the Azure portal, go to the **Overview** page for the staging slot. Near the top of the page, select **Browse**. The new version of the web app appears in a browser tab.
 
-![The updated web app in the staging slot](../media/3-web-app-staging-slot.png)
+![The updated web app in the staging slot.](../media/3-web-app-staging-slot.png)
 
 At this point, the staging slot has the new version of the code, and you can run tests on it. Remember that the production slot has the previous web app version, and users can't yet see your new code.

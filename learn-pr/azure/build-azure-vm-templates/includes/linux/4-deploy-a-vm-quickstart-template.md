@@ -61,7 +61,7 @@ Near the start of the template, you see a section named `parameters`. This secti
 
 This image highlights the first few parameters.
 
-![The source code for the template's parameters section, highlighting each parameter name](../../media/4-armviz-params-linux.png)
+![The source code for the template's parameters section, highlighting each parameter name.](../../media/4-armviz-params-linux.png)
 
 The `authenticationType` parameter specifies whether to use password authentication or key-based authentication to connect to the virtual machine. The `adminPasswordOrKey` parameter specifies the password or SSH key. Although key-based authentication is typically more secure than password authentication, here you'll use password authentication for learning purposes.
 
@@ -69,13 +69,15 @@ Some parameters, such as `ubuntuOSVersion` and `location`, have default values. 
 
 Let's keep these parameters at their default values. For the remaining parameters, you have two options:
 
-1. Provide the values in a JSON file.
-1. Provide the values as command-line arguments.
+- Provide the values in a JSON file.
+- Provide the values as command-line arguments.
 
 For learning purposes, here you'll provide the values as command-line arguments. To make the template easy to deploy, you'll start by storing these values as Bash variables.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
+
 1. From the menu bar on the top right-hand side, open **Cloud Shell**.
+
 1. From Cloud Shell, create a username. For this example, let's use **azureuser**.
 
     ```bash
@@ -141,7 +143,7 @@ As a final verification step, you'll begin by validating that the template is sy
 
     This command resembles the previous command, but also includes the `--name` argument to give your deployment a name.
 
-    This command takes 2-3 minutes to complete. While you wait, now's a great time to take a [closer look at the source code](https://github.com/Azure/azure-quickstart-templates/blob/master/101-vm-simple-linux/azuredeploy.json?azure-portal=true) for this template. Remember, the contents of a Resource Manager template will become more familiar to you as you read existing templates and create your own.
+    This command takes 2-3 minutes to complete. While you wait, now's a great time to take a [closer look at the source code](https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.compute/vm-simple-linux) for this template. Remember, the contents of a Resource Manager template will become more familiar to you as you read existing templates and create your own.
 
     When the deployment completes, you see another large JSON block as output that describes the deployment.
 

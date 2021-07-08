@@ -23,6 +23,6 @@ Azure IoT Hub offers advanced support for implementing device management operati
 
 In the following exercise, you will create a device simulator that will manage the device twin desired properties changes and will trigger a local process simulating a firmware update. The overall process would be exactly the same for a real device with the exception of the actual steps for the local firmware update. You will then use the Azure portal to configure and execute a firmware update for a single device. IoT Hub will use the device twin properties to transfer the configuration change request to the device and monitor the progress as shown in the following diagram:
 
-:::image type="content" source="../media/firmware-update-diagram.png" alt-text="Firmware Update Configuration":::
+:::image type="content" source="../media/firmware-update-diagram.png" alt-text="Firmware Update Configuration.":::
 
 Ready to get started? Let's start with some coding.
