@@ -58,7 +58,7 @@ Select an exception and drill in for meaningful insights and actionable stack tr
 
 - Next, on the Right tab, select the "Suggested" exception sample to open the transaction detail window:
 
-:::image type="content" source="../media/4-exception-drill.jpg" alt-text="Screenshot showing the exception detail screen" lightbox=source="../media/4-exception-drill.jpg":::
+:::image type="content" source="../media/4-exception-drill.jpg" alt-text="Screenshot showing the exception detail screen" lightbox="../media/4-exception-drill.jpg":::
 
 - Next, view the exception properties in the transaction detail window:
 
@@ -130,7 +130,7 @@ Similarly to standard metric chart, to create a custom metric chart, under the M
 
 - Your final graph will show the counts in the last 24 hours for each of the pet, vet, and owner microservices:
 
-:::image type="content" source="../media/7-custom.jpg" alt-text="Screenshot showing final custom metrics view" lightbox=../media/7-custom.jpg":::
+:::image type="content" source="../media/7-custom.jpg" alt-text="Screenshot showing final custom metrics view" lightbox="../media/7-custom.jpg":::
 
 ### Live Metrics
 
