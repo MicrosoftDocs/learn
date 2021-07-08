@@ -17,13 +17,13 @@ quiz:
   questions:
   - content: 'Which of the following are true about Event Hubs?'
     choices:
-    - content: "Event Hubs provide an absolute guarantee of message delivery"
+    - content: "Event Hubs provides an absolute guarantee of message delivery"
       isCorrect: false
-      explanation: "Incorrect. Event Hubs guarantee message caching, but responsibility to reading that cache falls to the consumer application."
+      explanation: "Incorrect. Event Hubs guarantees message caching, but responsibility to reading that cache falls to the consumer application."
     - content: "Event Hubs is well suited to situations where thousands of data sources submit information concurrently."
       isCorrect: true
       explanation: "Correct."
-    - content: "Event Hubs is not suitable for load balancing"
+    - content: "Event Hubs isn't suitable for load balancing"
       isCorrect: false
       explanation: "Incorrect. As cached messages can be pulled by multiple consumers, Event Hubs can help with load balancing."
   - content: 'What are consumer groups?'
