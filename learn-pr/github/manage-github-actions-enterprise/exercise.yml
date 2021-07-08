@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.manage-github-actions-in-the-enterprise.exercise
+uid: learn.github.manage-github-actions-enterprise.exercise
 title: Exercise - Use a repository secret in a GitHub Actions workflow
 metadata:
   title: Exercise - Use a repository secret in a GitHub Actions workflow
