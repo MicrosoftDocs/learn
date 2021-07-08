@@ -61,7 +61,7 @@ If you need higher performance than what Standard SSD disks provide, or if you c
 Azure Premium SSD disks support disk bursting, with which you can achieve higher IOPS and throughput than with your provisioned performance. For P20 disks and smaller disks, bursting is enabled by default with no additional costs.
 
 > [!NOTE]
-> You'll learn more about the Azure disk bursting functionality in [Optimize performance and costs using performance-scaling options](4-optimize-performance-and-costs-using-performance-scaling-options).
+> You'll learn more about the Azure disk bursting functionality in [Optimize performance and costs using performance-scaling options](4-optimize-performance-and-costs-using-performance-scaling-options.md).
 
 ## Standard SSD managed disks
 
