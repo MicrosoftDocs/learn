@@ -1,6 +1,6 @@
 Although you can often create an effective knowledge base that consists of individual question and answer pairs, sometimes you might need to ask follow-up questions to elicit more information from a user before presenting a definitive answer. This kind of interaction is referred to as a *multi-turn* conversation.
 
-![A multiturn conversation](../media/multiturn-conversation.png)
+![A multi-turn conversation](../media/multi-turn-conversation.png)
 
 You can enable multi-turn responses when importing questions and answers from an existing web page or document based on its structure, or you can explicitly define follow-up prompts and responses for existing question and answer pairs in the QnA Maker portal.
 
