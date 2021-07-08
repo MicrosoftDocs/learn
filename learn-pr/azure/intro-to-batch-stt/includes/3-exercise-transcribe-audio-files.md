@@ -1,88 +1,86 @@
 Batch Transcription can process WAV (PCM Codec), MP3 (PCM Codec), and OGG (Opus Codec) files sampled at 8 kHz or 16 kHz. These must be at a publicly accessible or shared access signature (SAS) URI.  It can process one or more files per batch. If more than one file is provided, the system attempts to process these in parallel, minimizing turn-around time.
 ​
 We will prepare an environment, submit our jobs, check the job status, then view the results. We will work in Bash here, though note most commands can be executed through languages such as C#. 
-​
-As you come to code below:
-1. Select **Copy**
-2. Paste the code into the Cloud Shell session by selecting Ctrl+Shift+V on Windows and Linux, or Cmd+Shift+V on macOS.
-3. Press <kbd>Enter</kbd> to run the command.
-​
+​​
 ## Preparing the environment
 ​
-Let's start by preparing our environment. The following script creates our cognitive services account and storage container. 
-​
+Let's start by preparing our environment. The following script creates our cognitive services account and storage container.
+
+As you come to code below:
+1. Select **Copy**
+
 ```bash
+
 # Get and set the subscription and Resource Group
 subscription=$(az account list --query [0].id -o tsv)
 resourceGroupName=$(az group list --query "[0] | name" -o tsv)
-​
-# We will keep our location as eastus
-location=eastus
-​
+​​
 # Create the cognitive services account
 az cognitiveservices account create \
-	--name cognitive-services-account-batch-stt \
-	--resource-group $resourceGroupName \
-	--kind SpeechServices \
-	--sku S0 \
-	--location $location \
-	--subscription $subscription \
-	--yes
+    --name cognitive-services-account-resource-speech \
+    --resource-group $resourceGroupName \
+    --kind SpeechServices \
+    --sku S0 \
+    --location westus2 \
+    --subscription $subscription \
+    --yes
 ​
 
 # Create a blob and container to hold our audio files
 # Create blob
-blobName=blobstt$RANDOM
+blobName=sttblob$RANDOM
 az storage account create \
-	--name $blobName \
-	--resource-group $resourceGroupName \
-	--location $location \
-	--sku Standard_ZRS \
+    --name $blobName \
+    --resource-group $resourceGroupName \
+    --location westus2 \
+    --sku Standard_ZRS
 ​
 # Create container
-blobContainerName=sttblob$RANDOM
+blobContainerName=sttcontainer$RANDOM
 blobConnectionString=$(az storage account show-connection-string -g $resourceGroupName -n $blobName --query "connectionString" -o tsv)
 az storage container create \
-	--name $blobContainerName \
-	--public-access blob \
-	--connection-string $blobConnectionString
-​
+    --name $blobContainerName \
+    --public-access blob \
+    --connection-string $blobConnectionString
+
 ```
+
+1. Paste the code into the Cloud Shell session by selecting Ctrl+Shift+V on Windows and Linux, or Cmd+Shift+V on macOS.
+1. Press <kbd>Enter</kbd> to run the command.
+
+​## Load audio files into the storage container
 ​
+1. Run the following command to download the audio files.
 ​
-## Load  audio files into the storage container
+    ```bash
+    git clone https://github.com/MicrosoftDocs/mslearn-batch-stt.git
+    ```
 ​
-Run the following command to download the audio files.
+1. Now run the following command to copy the audio files into our storage container
 ​
-```bash
-git clone https://github.com/MicrosoftDocs/mslearn-batch-stt.git
-```
-​
-Now copy the audio files into our storage container
-​
-```bash
-az config set extension.use_dynamic_install=yes_without_prompt
-az storage azcopy blob upload -c $blobContainerName --account-name $blobName -s "mslearn-batch-stt/audiofiles/*" --recursive
-```
+    ```bash
+    az config set extension.use_dynamic_install=yes_without_prompt
+    az storage azcopy blob upload -c $blobContainerName --account-name $blobName -s "mslearn-batch-stt/audiofiles/*" --recursive
+    ```
 ​
 ## Set up access keys and tokens
 ​
-To produce and use transcriptions, we need tokens and access keys. 
+To produce and use transcriptions, we need tokens and access keys.
 ​
 Firstly, the transcription service will need to be passed a URI that allows it to read our data. As we have security preventing public access we will need to generate an access token that can be appended to the URL. Run the following command to generate this token.
 ​
-```bash
-# We will make a key that expires in just under an hour's time
-end=`date -u -d "59 minutes" '+%Y-%m-%dT%H:%MZ'`
-sasToken=$(az storage container generate-sas -n $blobContainerName --permissions rwl --expiry $end --connection-string $blobConnectionString -o tsv)
-echo "Our token is:" $sasToken
-```
+    ```bash
+    # We will make a key that expires in just under an hour's time
+    end=`date -u -d "59 minutes" '+%Y-%m-%dT%H:%MZ'`
+    sasToken=$(az storage container generate-sas -n $blobContainerName --permissions rwl --expiry $end --connection-string $blobConnectionString -o tsv)
+    echo "Our token is:" $sasToken
+    ```
 ​
 2. We also need a key for the API so that we can access the results. Run the following command to generate this
 ​
 ​
 ```bash
-apiKeySpeech=$(az cognitiveservices account keys list -g $resourceGroupName -n cognitive-services-account-batch-stt --query [key1] -o tsv)
+apiKeySpeech=$(az cognitiveservices account keys list -g $resourceGroupName -n cognitive-services-account-resource-speech --query [key1] -o tsv)
 echo "Our Key Is:" $apiKeySpeech
 ```
 ​
@@ -111,7 +109,7 @@ json='{
 }'
 ​
 # Submit the job
-response=$(curl -X POST https://$location.api.cognitive.microsoft.com/speechtotext/v3.0/transcriptions  \
+response=$(curl -X POST https://westus2.api.cognitive.microsoft.com/speechtotext/v3.0/transcriptions  \
 -H "Content-Type:application/json" \
 -H "Ocp-Apim-Subscription-Key:$apiKeySpeech" \
 --data "$json")
