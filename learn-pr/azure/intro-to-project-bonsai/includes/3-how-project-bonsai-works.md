@@ -52,13 +52,13 @@ Simulations replicate your real-world systems. This enables you to provide a val
 When considering your simulation approach, it might be helpful to enlist people in your organization who've worked with simulation software before.
 
 > [!TIP]
-> You can often repurpose and enhance simulations originally created for other purposes so they work with the Bonsai training engine.
-
-Try to locate simulations that:
-
-- Are used to train human operators.
-- Are used in conjunction with production systems.
-- Have well-defined benchmarks for accuracy and desired outcomes.
+>
+> You can often repurpose and enhance existing simulations so they work with the
+> Bonsai training engine. Try to locate simulations that:
+> 
+> - Are used to train human operators.
+> - Are used in conjunction with production systems.
+> - Have well-defined benchmarks for accuracy and desired outcomes.
 
 ## Work with the training engine
 
