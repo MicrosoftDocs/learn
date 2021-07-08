@@ -112,10 +112,14 @@ In a deployed brain, the Learner must instantiate the trained system and execute
 
 ### Predictor
 
-The Predictor is essentially a trained brain. After the brain is trained, Bonsai hosts the AI algorithm in prediction mode.
+The Predictor is the part of a trained brain that computes responses. It is
+called a predictor because it essentially "predicts" the right course of action
+based on past training.
 
 > [!NOTE]
-> Prediction mode holds a brain for use as an HTTP API endpoint. This enables programmers to send input data to the brain to receive a prediction.
+> An exported brain is a trained Bonsai brain running in prediction mode.
+> Prediction mode tells the brain to act as an HTTP API endpoint so enables
+> programmers can send input data to the brain and receive a prediction.
 
 ## Work with the training curriculum
 
