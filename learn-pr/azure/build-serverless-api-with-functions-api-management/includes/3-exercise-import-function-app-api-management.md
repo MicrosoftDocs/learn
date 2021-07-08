@@ -37,7 +37,7 @@ Now, let's test the ProductDetails function to see how it behaves before we add 
 
 1. In the middle menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your Function App.
 
-1. From the list, select **ProductDetails**. The **Function** pane appears.
+1. From the list, select **ProductDetails**. The **Function** pane appears for ProductDetails.
 
     ![Screenshot of selecting the ProductDetails function.](../media/3-select-function.png)
 
@@ -61,7 +61,7 @@ Now, let's test the ProductDetails function to see how it behaves before we add 
 
     The output pane displays the details of a product in JSON format. You can also test the function with IDs 1 and 2 for different products.
 
-1. At the top of the Function pane, select **Get function URL**. Notice that the URL is the name of the function within the **azurewebsites.net** domain. Copy this URL for later comparison.
+1. On the top menu bar of the Function pane for *ProductDetails*, select **Get function URL**. Notice that the URL is the name of the function within the **azurewebsites.net** domain. Copy this URL for later comparison.
 
 > [!NOTE]
 > You can use this URL to test the function in your browser. Append the query string `&id=1` to request a product.
@@ -70,7 +70,9 @@ Now, let's test the ProductDetails function to see how it behaves before we add 
 
 Now that we have our function app deployed and tested, we'll expose the functionality as an API using Azure API Management so that the function can be called from other apps and services.
 
-1. On the Azure portal menu, or from the **Home** page, select **All resources**, and select the Function App whose name begins with **ProductFunction**.
+1. On the Azure portal menu, or from the **Home** page, select **All resources**. The **All resources** pane appears.
+
+1. Select the Function App whose name begins with **ProductFunction**.
 
 1. In the middle menu pane, under **API**, select **API Management**. The **API Management** pane appears for your Function App.
 
@@ -89,7 +91,7 @@ Now that we have our function app deployed and tested, we'll expose the function
     | Resource group | <rgn>[sandbox resource group name]</rgn> |
     | Location | Choose one of the following locations that supports the Consumption Plan: **West US**, **North Central US**, **West Europe**, **North Europe**, **Southeast Asia**, **Australia East**  | 
     | Organization name | OnlineStore |
-    | Administrator email | Use the default value |
+    | Administrator email | Accept the default value |
     | Pricing tier | Consumption |
 
     ![Screenshot showing the new API settings.](../media/3-api-details.png)
