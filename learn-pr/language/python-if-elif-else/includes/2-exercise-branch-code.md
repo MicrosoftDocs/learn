@@ -97,8 +97,8 @@ if value == '7':
 And then attempt to run the code again, you'll see the following error.
 
 ```output
-    File "exercise1.py", line 6
-   print('Finished!') # Intentional difference in indent
+  File "exercise1.py", line 6
+    print('Finished!') # Intentional difference in indent
                                                        ^
 IndentationError: unindent does not match any outer indentation level
 ```
@@ -241,15 +241,15 @@ first_value = True
 second_value = '6'
     
 if first_value:
-if second_value == '6':
+if second_value == '6': # Intentionally not enough indentation
     print('Got here!')
 ```
 
 ...it's likely you would see the following error message.
 
 ```output
-    File "c:/python/numeric-operations-decisions/exercise2.py", line 65
-    if second_value == '6':
+  File "c:/python/numeric-operations-decisions/exercise2.py", line 65
+    if second_value == '6': # Intentionally not enough indentation
     ^
 IndentationError: expected an indented block
 ```
