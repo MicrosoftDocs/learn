@@ -96,19 +96,13 @@ The Bonsai Architect currently supports the following learning algorithms
 
 ### Instructor
 
-Based on training curriculum, the Instructor:
+The Instructor directs the learning process for the Bonsai brain during
+training. The Instructor:
 
-- Carries out the training plan by configuring:
-
-  - The Learner.
-  - Any required data sources.
-
-- Works interactively, and responds in real time as the Learner proceeds through:
-
-  - Receiving data.
-  - Computing a response.
-  - Being assessed.
-  - Learning from the result.
+- Configures the Learner
+- Configures any required data sources.
+- Works interactively with the Learner and responds in real time as training
+  progresses.
 
 ### Learner
 
