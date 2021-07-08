@@ -1,4 +1,4 @@
-:::image type="content" source="../media/github-enterprise-logo.png" alt-text="REPLACE-ME":::
+:::image type="content" source="../media/github-enterprise-logo.png" alt-text="The GitHub Enterprise logo.":::
 
 GitHub Actions are quickly becoming a core feature to DevOps in many organizations. This enables developers to automate, customize, and execute their software development workflows right within their GitHub repository.
 

@@ -12,13 +12,13 @@ Several options are available to you in Enterprise Cloud to configure a policy, 
 
 To configure a GitHub Actions use policy for your enterprise, navigate to your enterprise account and then to **Policies > Actions** in the sidebar. The options presented below should appear.
 
-:::image type="content" source="../media/policies.png" alt-text="Actions screen with default options selected":::
+:::image type="content" source="../media/policies.png" alt-text="Actions screen with default options selected.":::
 
 The dropdown at the top labeled **Enable for all organizations** enables you to decide which organizations in your enterprise can use GitHub Actions (all of them, some of them or none of them), while the three options underneath enable you to define the restriction level of GitHub Actions within these organizations.
 
 If you want to enable only specific actions to be used within your enterprise, select **Allow select actions** and choose the option corresponding to your use case, as shown below.
 
-:::image type="content" source="../media/policies-2.png" alt-text="Actions screen with Allow select actions option selected":::
+:::image type="content" source="../media/policies-2.png" alt-text="Actions screen with Allow select actions option selected.":::
 
 ### Manually sync public actions for Enterprise Server
 
@@ -108,4 +108,4 @@ Metadata files use the following parameters:
 
 Once a workflow template is created, users in your organization can find it under **Actions > New workflow > Workflows created by _your_organization_name**.
 
-:::image type="content" source="../media/workflow-template.png" alt-text="Workflow template example" border="false":::
+:::image type="content" source="../media/workflow-template.png" alt-text="Workflow template example." border="false":::

@@ -10,11 +10,11 @@ Let's say some developers writing workflows in your GitHub organization need the
 
 To create a secret at organization level, go to your organization **Settings** and select **Secrets > New organization secret** in the left sidebar. In the screen that appears, enter a name and a value and choose a repository access policy for your secret:
 
-:::image type="content" source="../media/add-org-secret.png" alt-text="New secret screen for organizations":::
+:::image type="content" source="../media/add-org-secret.png" alt-text="New secret screen for organizations.":::
 
 The access policy appears underneath the secret in the secret list once it is saved:
 
-:::image type="content" source="../media/secret-access-policy.png" alt-text="Encrypted secrets example with access policy displayed":::
+:::image type="content" source="../media/secret-access-policy.png" alt-text="Encrypted secrets example with access policy displayed.":::
 
 You can select **Update** for more details on the configured permissions for your secret.
 
@@ -24,7 +24,7 @@ If you need an encrypted secret to be scoped to a specific repository, GitHub En
 
 To create a secret at repository level, go to your repository **Settings** and select **Secrets > New repository secret** in the left sidebar. In the screen that appears, enter a name and a value for your secret:
 
-:::image type="content" source="../media/secret-repo.png" alt-text="New secret screen for repositories":::
+:::image type="content" source="../media/secret-repo.png" alt-text="New secret screen for repositories.":::
 
 ## Access encrypted secrets within actions and workflows
 
