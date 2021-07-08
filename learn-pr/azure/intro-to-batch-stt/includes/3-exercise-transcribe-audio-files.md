@@ -8,59 +8,59 @@ Let's start by preparing our environment. The following script creates our cogni
 
 1. Select **Copy**
 
-```bash
-
-# Get and set the subscription and Resource Group
-subscription=$(az account list --query [0].id -o tsv)
-resourceGroupName=$(az group list --query "[0] | name" -o tsv)
-​​
-# Create the cognitive services account
-az cognitiveservices account create \
-    --name cognitive-services-account-resource-speech \
-    --resource-group $resourceGroupName \
-    --kind SpeechServices \
-    --sku S0 \
-    --location westus2 \
-    --subscription $subscription \
-    --yes
-
-# Create a blob and container to hold our audio files
-# Create blob
-blobName=sttblob$RANDOM
-az storage account create \
-    --name $blobName \
-    --resource-group $resourceGroupName \
-    --location westus2 \
-    --sku Standard_ZRS
-​
-# Create container
-blobContainerName=sttcontainer$RANDOM
-blobConnectionString=$(az storage account show-connection-string -g $resourceGroupName -n $blobName --query "connectionString" -o tsv)
-az storage container create \
-    --name $blobContainerName \
-    --public-access blob \
-    --connection-string $blobConnectionString
-
-```
-
+    ```bash
+    
+    # Get and set the subscription and Resource Group
+    subscription=$(az account list --query [0].id -o tsv)
+    resourceGroupName=$(az group list --query "[0] | name" -o tsv)
+    ​​
+    # Create the cognitive services account
+    az cognitiveservices account create \
+        --name cognitive-services-account-resource-speech \
+        --resource-group $resourceGroupName \
+        --kind SpeechServices \
+        --sku S0 \
+        --location westus2 \
+        --subscription $subscription \
+        --yes
+    
+    # Create a blob and container to hold our audio files
+    # Create blob
+    blobName=sttblob$RANDOM
+    az storage account create \
+        --name $blobName \
+        --resource-group $resourceGroupName \
+        --location westus2 \
+        --sku Standard_ZRS
+    
+    # Create container
+    blobContainerName=sttcontainer$RANDOM
+    blobConnectionString=$(az storage account show-connection-string -g $resourceGroupName -n $blobName --query "connectionString" -o tsv)
+    az storage container create \
+        --name $blobContainerName \
+        --public-access blob \
+        --connection-string $blobConnectionString
+    
+    ```
+    
 1. Paste the code into the Cloud Shell session by selecting Ctrl+Shift+V on Windows and Linux, or Cmd+Shift+V on macOS
 1. Press <kbd>Enter</kbd> to run the command
 
-​## Load audio files into the storage container
+## Load audio files into the storage container
 ​
 1. Run the following command to download the audio files
-​
+
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-batch-stt.git
     ```
-​
+
 1. Now run the following command to copy the audio files into our storage container
 ​
     ```bash
     az config set extension.use_dynamic_install=yes_without_prompt
     az storage azcopy blob upload -c $blobContainerName --account-name $blobName -s "mslearn-batch-stt/audiofiles/*" --recursive
     ```
-​
+
 ## Set up access keys and tokens
 ​
 To produce and use transcriptions, we need tokens and access keys.
@@ -82,13 +82,12 @@ First, the transcription service will need to be passed a URI that allows it to 
     apiKeySpeech=$(az cognitiveservices account keys list -g $resourceGroupName -n cognitive-services-account-resource-speech --query [key1] -o tsv)
     echo "Our Key Is:" $apiKeySpeech
     ```
-​
-​
-## Submitting the job
-​
-To submit the transcription job, we need to create some simple JSON stating where our container is and the transcription options.
 
-1. Run the following code to create the JSON body for your request, and submit the job
+## Submitting the job
+
+Now all the services are set up, you are going to submit the transcription job. We need to create a JSON body for the request, stating where our container is and the transcription options.
+
+1. Run the following command to create the JSON body for your request, and submit the job
 ​
     ```bash
     # Create the JSON  
@@ -108,7 +107,11 @@ To submit the transcription job, we need to create some simple JSON stating wher
       "createdDateTime": "0001-01-01T00:00:00Z",
       "lastActionDateTime": "0001-01-01T00:00:00Z"
     }'
+    ```
 
+1. Now, we're going to use cURL to submit the transcription job with a POST request. Notice we have the URL, and out Speech API key as a header. The `--data "$json"` is the request body, which is the JSON created in the previous step. Run the following command to submit your Batch Transcription job
+
+    ```bash
     # Submit the job
     response=$(curl -X POST https://westus2.api.cognitive.microsoft.com/speechtotext/v3.0/transcriptions  \
     -H "Content-Type:application/json" \
@@ -133,7 +136,7 @@ To submit the transcription job, we need to create some simple JSON stating wher
     echo "$job_information"
     ```
 ​
-    Take note of the status. It it states 'Succeeded', then move on. If it states the job is still running, wait 20 seconds and run the code again. Repeat this until the job is complete!
+    Take note of the status. It it states 'Succeeded', then move on. If it states the job is still running, wait 20 seconds, then paste the command above into the terminal and run it again. Repeat this until the status is 'Succeeded'!
 ​
 ## Viewing the results
 ​
@@ -146,8 +149,12 @@ To view our results, we need to see where they are saved to in general. We can e
     transcription_information=$(curl -X GET $result_info_uri -H "Ocp-Apim-Subscription-Key:$apiKeySpeech")
     echo "Information on our transcriptions:\n$transcription_information"
     ```
-​
-1. Let's now loop through these files, download them, and view the first transcript. Run the following command to extract the URLs with Regex, and download each transcript.
+
+    > [!TIP]
+    >  
+    > You can select any of the contentUrl's to view the raw output of each transcription.
+
+1. Let's now loop through these files, download them, and view the first transcript. Run the following command to extract the URLs with Regex, and download each transcript
 ​
     ```bash
     # Extract the URLs using Regex
