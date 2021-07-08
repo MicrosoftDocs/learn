@@ -1,4 +1,4 @@
-# Exercise - Create and configure a virtual network gateway
+
 
 In this exercise you will configure a virtual network gateway to connect the Contoso Core Services VNet and Manufacturing VNet. 
 
@@ -41,6 +41,7 @@ In this exercise you will configure a virtual network gateway to connect the Con
    | Advanced        | No changes required                                          |                                       |
    | Tags            | No changes required                                          |                                       |
    | Review + create | Review your settings and select Create                       |                                       |
+
 
 6. When the deployment is complete, select **Go to resource**.
 

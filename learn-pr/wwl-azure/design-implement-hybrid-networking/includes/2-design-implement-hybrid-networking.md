@@ -1,5 +1,3 @@
-# Design and implement Azure VPN Gateway
-
 Networks that connect on-premises resources and virtual resources are known as hybrid networks. One option for connecting an on-premises network to an Azure VNET is a VPN connection. A virtual private network (VPN) is a type of private interconnected network. VPNs use an encrypted tunnel within another network. They are typically deployed to connect two or more trusted private networks to one another over an untrusted network, usually the public Internet. Traffic is encrypted while traveling over the untrusted network to prevent eavesdropping or other attacks.
 
 To integrate your on-premises environment with Azure, you need the ability to create an encrypted connection. You can connect over the internet, or over a dedicated link. Here, we'll look at Azure VPN Gateway, which provides an endpoint for incoming connections from on-premises environments. 

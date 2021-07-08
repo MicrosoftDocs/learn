@@ -4,7 +4,7 @@ title: Connect devices to networks with Point-to-site VPN connections
 metadata:
   title: Connect devices to networks with Point-to-site VPN connections
   description: "Connect devices to networks with Point-to-site VPN connections"
-  ms.date: 07/02/2021
+  ms.date: 07/08/2021
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -31,7 +31,7 @@ quiz:
     choices:
     - content: "RADIUS"
       isCorrect: true
-      explanation: "Correct,AD Domain authentication allows users to connect to Azure using their organization domain credentials. It requires a RADIUS server that integrates with the AD server."
+      explanation: "Correct, AD Domain authentication allows users to connect to Azure using their organization domain credentials. It requires a RADIUS server that integrates with the AD server."
     - content: "Active Directory Domain Controller only"
       isCorrect: false
       explanation: "Incorrect, An Active Directory Domain Controller alone is not sufficient. Another type of server is required."
