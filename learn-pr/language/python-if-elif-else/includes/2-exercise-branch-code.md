@@ -89,15 +89,17 @@ value = '6'
 if value == '7':
     print('The value is 7')
     
-    print('Finished!')
+   print('Finished!') # Intentional difference in indent
 ```
+
+[//]: # (Note: This indent error is intentional for the user to see a whitespace error. Be careful when adjusting tabbing as it may be automatically corrected in a way that will break unit functionality.)
 
 And then attempt to run the code again, you'll see the following error.
 
 ```output
     File "exercise1.py", line 6
-    print('Finished!')
-                         ^
+   print('Finished!') # Intentional difference in indent
+                                                       ^
 IndentationError: unindent does not match any outer indentation level
 ```
 
