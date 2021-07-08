@@ -41,10 +41,10 @@ Azure adds default system routes for any Azure capabilities that you enable. Dep
 
 
 | **Source**              | **Address prefixes**                                                                      | **Next hop type**             | **Subnet within virtual network that route is added to** |
-| -- | | -- | -- |
+| -- | -- | -- | -- |
 | Default                 | Unique to the virtual network, for example: 10.1.0.0/16                                   | VNet peering                  | All                                                      |
 | Virtual network gateway | Prefixes advertised from on-premises via BGP, or configured in the local network gateway  | Virtual network gateway       | All                                                      |
-| Default                 | Multiple                                                                                  | VirtualNetworkServiceEndpoint | Only the subnet a service endpoint is enabled for.       |
+| Default                 | Multiple                                                                                  | VirtualNetworkServiceEndpoint | Only the subnet a service endpoint is enabled for        |
 
 
 
