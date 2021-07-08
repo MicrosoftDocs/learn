@@ -29,7 +29,7 @@ az monitor log-analytics workspace delete --force true --resource-group <your Re
 
 ## References
 
-- [Azure monitor](https://docs.microsoft.com/azure/azure-monitor?WT.mc_id=java-00000-ropreddy)
+- [Azure monitor](/azure/azure-monitor?WT.mc_id=java-00000-ropreddy)
 
 - [Azure Spring Cloud Availability by Region](https://azure.microsoft.com/global-infrastructure/services/?products=spring-cloud?WT.mc_id=java-00000-ropreddy).
 
@@ -37,10 +37,10 @@ az monitor log-analytics workspace delete --force true --resource-group <your Re
 
 - [Azure Database for MySQL pricing](https://azure.microsoft.com/pricing/details/mysql/server?WT.mc_id=java-00000-ropreddy)
 
-- [Monitoring in Azure Database for MySQL](https://docs.microsoft.com/azure/mysql/concepts-monitoring?WT.mc_id=java-00000-ropreddy).
+- [Monitoring in Azure Database for MySQL](/azure/mysql/concepts-monitoring?WT.mc_id=java-00000-ropreddy).
 
-- [Application Insights for web pages](https://docs.microsoft.com/azure/azure-monitor/app/javascript?WT.mc_id=java-00000-ropreddy)
+- [Application Insights for web pages](/azure/azure-monitor/app/javascript?WT.mc_id=java-00000-ropreddy)
 
-- [KQL syntax](https://docs.microsoft.com/azure/data-explorer/kql-quick-reference?WT.mc_id=java-00000-ropreddy)
+- [KQL syntax](/azure/data-explorer/kql-quick-reference?WT.mc_id=java-00000-ropreddy)
 
-- [Azure for Java developers](https://docs.microsoft.com/azure/developer/java?WT.mc_id=java-00000-ropreddy).
+- [Azure for Java developers](/azure/developer/java?WT.mc_id=java-00000-ropreddy).

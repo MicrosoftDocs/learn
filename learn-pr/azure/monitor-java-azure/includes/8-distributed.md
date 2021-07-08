@@ -105,7 +105,7 @@ In our sample application, your slow query logs are set up to be piped to Azure 
 - Select your Azure Database for MySQL server you use for your Azure Spring Cloud
 - Next, under the Monitoring section, select **Logs**.
 
-:::image type="content" source="../media/8-MYSQL-logs.jpg" alt-text="Screenshot showing query for queries longer than 1 second" lightbox="../media/8-MYSQL-logs.jpg":::
+:::image type="content" source="../media/8-mysql-logs.jpg" alt-text="Screenshot showing query for queries longer than 1 second" lightbox="../media/8-mysql-logs.jpg":::
 
 - In the **Query** search box,
 
