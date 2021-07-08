@@ -43,11 +43,11 @@ If we do this for thresholds between 0% - 100%, we might get a graph like this:
 
 Which we usually display as a line, instead:
 
-![Receiver operator characteristic curve graph with a line in place of plot points.](../media/2-ROC-graph-4.png)
+![Receiver operator characteristic curve graph with a line in place of plot points for false positives.](../media/2-ROC-graph-4.png)
 
 The second reason these graphs can be confusing is the jargon involved. Remember that we want a high true positive rate (identifying hikers as such) and a low false positive rate (not identifying trees as hikers).
 
-![Receiver operator characteristic curve graph with a line in place of plot points.](../media/2-ROC-graph-5.png)
+![Receiver operator characteristic curve graph with a line in place of plot points for the rate of identifying trees as hikers.](../media/2-ROC-graph-5.png)
 
 ## Good ROC, bad ROC
 
