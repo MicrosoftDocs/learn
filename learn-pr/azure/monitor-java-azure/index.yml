@@ -23,7 +23,7 @@ prerequisites: |
   - Basic knowledge of [Azure Spring Cloud](https://docs.microsoft.com/learn/modules/azure-spring-cloud-workshop/?WT.mc_id=java-00000-ropreddy)
   - Basic knowledge of the [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview/?WT.mc_id=java-00000-ropreddy)
   - Basic knowledge in [editing files in Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor/?WT.mc_id=java-00000-ropreddy) in the Azure Cloud Shell
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - intermediate
 roles:
