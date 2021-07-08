@@ -1,4 +1,4 @@
-# Explain Virtual Network Service Endpoints
+
 
 Use virtual network Service Endpoints to extend your private address space in Azure by providing a direct connection to your Azure services. Service Endpoints let you secure your Azure resources to only your virtual network. Service traffic will remain on the Azure backbone and doesn't go out to the internet.
 

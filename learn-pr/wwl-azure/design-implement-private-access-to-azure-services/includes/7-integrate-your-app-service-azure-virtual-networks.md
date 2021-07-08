@@ -1,4 +1,4 @@
-# Integrate your App Service with Azure Virtual Networks 
+
 
 ## **Virtual network integration for Azure services**
 

@@ -1,5 +1,3 @@
-# Define Private Link Services and Private Endpoints
-
 ## What is Azure Private Link?
 
 Azure Private Link enables you to access Azure PaaS Services (for example, Azure Storage and SQL Database) and Azure hosted customer-owned/partner services over a Private Endpoint in your virtual network.
