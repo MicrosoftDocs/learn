@@ -89,7 +89,7 @@ Let's start by preparing our environment. The following script creates our cogni
 1. On the left-hand menu, **select src** then **select appsettings.json**
 1. In between the empty quotation marks following **"AudioBlobContainer"**, paste your Blob SAS URL
 
-    :::image type="content" source="../media/3-app-settings-sas-container.png" alt-text="Screenshot of the code editor showing src, appsettings.json, and the empty quotation marks following "AudioBlobContainer".":::
+    :::image type="content" source="../media/3-app-settings-sas-container.png" alt-text="Screenshot of the code editor showing src, appsettings.json, and the empty quotation marks following AudioBlobContainer.":::
 
 1. Keep the code editor open, and in the Cloud shell below paste in the following command:
 
