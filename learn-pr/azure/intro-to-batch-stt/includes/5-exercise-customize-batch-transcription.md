@@ -37,12 +37,11 @@ The first step to train a model is to upload training data. For more information
 
 After a few seconds, you will see a message saying your files have successfully processed. Next, let's train a custom model using the data.
 
-1. Select the dataset, then select **Train**
+1. On the left-hand side, select the check box for the dataset, then select **Train**
 
     :::image type="content" source="../media/5-training-a-model.png" alt-text="Screenshot showing the example model selected and train outlined in the portal.":::
 
-1. Select **Next**
-1. Select **Next**
+1. Select **Next**, then select **Next** again
 1. Choose a name for your model, and select **Next**
 1. Select **Save and close**
 
@@ -57,38 +56,31 @@ While your model trains, let's create and endpoint so your model can be used in 
 
 1. Choose a name for your model, accept the terms of use, and select **Add**
 
-:::image type="content" source="../media/5-new-endpoint.png" alt-text="Screenshot showing an example of creating an endpoint in the Azure portal.":::
+    :::image type="content" source="../media/5-new-endpoint.png" alt-text="Screenshot showing an example of creating an endpoint in the Azure portal.":::
 
 It might take a minute for your endpoint to be created.
 
 ## Use your custom model
 
-Now, we need to transfer the details for the endpoint over to the Cloud Shell.
+Now, we need to transfer the details for the endpoint over to the Cloud Shell. It may take a minute or two for everything to finish processing.
 
 1. Select your newly created endpoint
 
-    :::image type="content" source="../media/5-select-endpoint.png" alt-text="Screenshot showing red boxes around the buttons to select the endpoint.":::
-
     Notice how Speech Studio provides code to connect to your custom model in multiple programming languages via the SDK, REST API, and WebSocket.
-1. Return to the Cloud Shell and paste in the following command—taking care not to hit Enter
 
-    ```
-    subKey=<Paste key here>
-    ```
+    **LEE**: Add this into the .NET, not the user secrets https://westus2.api.cognitive.microsoft.com/speechtotext/v3.0/models/<id will go here>
 
-1. Return to the Custom Speech portal, show, and copy your subscription key
-1. Return to the Cloud Shell and replace the `<Paste key here>` in the command with your Subscription key from the Custom Speech portal
-1. Select <kbd>Enter</kbd>
-1. Run the following command to set the environment variable for your .NET application, allowing it to access your newly created endpoint.
+1. **Copy your Endpoint ID**
 
-    ```
-    cd mslearn-batch-stt
-    dotnet user-secrets set CognitiveServices:BatchSTT:customKey $subKey
-    ```
-
-1. Run the following command in the Cloud Shell to use your custom model
+1. Return to the Cloud Shell and type in `code .`
+1. **Select mslearn-batch-stt** folder, then the **src** folder, then the **select appsettings.json** file
+1. In between the empty quotation marks following **"CustomModel"**, paste your endpoint id
+1. Select the three dots in the top left-hand corner of the code editor, save the file, and exit the code editor.
+1. In the Cloud Shell, run the following command:
 
     ```dotnet
     dotnet restore
     dotnet run
     ```
+
+Congratulations, you're now transcribing your entire storage container of audio files with your Custom Speech model.

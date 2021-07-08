@@ -50,18 +50,70 @@ Let's start by preparing our environment. The following script creates our cogni
 
     ```
     git clone https://github.com/MicrosoftDocs/mslearn-batch-stt.git
+    cd mslearn-batch-stt
     ```
 
 1. Run the following command to copy the audio files to the storage container
 
     ```
     az config set extension.use_dynamic_install=yes_without_prompt
-    az storage azcopy blob upload -c $blobContainerName --account-name $blobName -s "mslearn-batch-stt/audiofiles/*" --recursive
+    az storage azcopy blob upload -c $blobContainerName --account-name $blobName -s "audiofiles/*" --recursive
     ```
 
-![Screenshot showing file transfer complete for step two in the sandbox.](../media/3-file-transfer-step-2.png)
+## Generate a SAS URL
 
-1. Run the following command to generate the SAS token
+1. Sign in to the Azure portal.
+    > [!div class="nextstepaction"]
+    > [Azure portal](https://portal.azure.com/?azure-portal=true)
+
+1. On the Azure portal menu or from the **Home** page, select **All resources**, and then go to your App Service plan.
+
+    :::image type="content" source="../media/3-portal-resources.png" alt-text="Screenshot showing the Azure portal menu with the All resources option highlighted.":::
+
+1. **Select your 'blobstt'** storage account.
+1. On the left-hand menu, under Data storage, **select Containers**
+1. **Select your 'containerstt'** storage container
+1. On the left-hand menu, under Settings, **select Shared access tokens**
+1. **Select the Permissions drop down menu**
+1. **Select List**, and ensure Read is still selected
+1. Select the blue **Generate SAS token and URL** button
+1. **Select the copy icon for the SAS URL**
+
+    :::image type="content" source="../media/3-copy-sas-url.png" alt-text="Screenshot showing the copy Blob SAS URL icon highlighted.":::
+
+1. Return to the Cloud shell
+
+## Add in connection information
+
+1. Type in `code .`, careful not to copy anything so you keep your SAS URL!
+1. On the left-hand menu, **select src** then **select appsettings.json**
+1. In between the empty quotation marks following **"AudioBlobContainer"**, paste your Blob SAS URL
+
+    :::image type="content" source="../media/3-app-settings-sas-container.png" alt-text="Screenshot of the code editor showing src, appsettings.json, and the empty quotation marks following "AudioBlobContainer".":::
+
+1. Keep the code editor open, and in the Cloud shell below paste in the following command:
+
+    ```bash
+    echo $apiKeySpeech
+    ```
+
+1. Copy the key that was output
+1. In between the empty quotation marks following **"ApiKey"**, paste your key
+1. Select the three dots in the top left-hand corner of the code editor, save the file, and exit the code editor.
+
+## Transcribe your audio files
+
+1. In the Cloud Shell, run the following command:
+
+    ```dotnet
+    dotnet restore
+    dotnet run
+    ```
+
+Congratulations, you're now transcribing your entire storage container of audio files.
+
+--- old below here
+1. Run the following command to generate the SAS token and URL
 
     ```bash
     storageKey=$(az storage account keys list -g $resourceGroupName -n $blobName --query [0].value)
