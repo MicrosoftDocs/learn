@@ -3,7 +3,7 @@ uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout.introducti
 title: Introduction
 metadata:
   title: Introduction
-  description: Introduction to the introduction to regression module.
+  description: Introduction to the ROC AUC module.
   ms.date: 05/25/2021
   author: TomReidNZ
   ms.author: jasdeb

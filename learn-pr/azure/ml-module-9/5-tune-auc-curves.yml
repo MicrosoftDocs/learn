@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout.exercise-tuning-under-the-curve
+uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout.exercise-tune-auc-curves
 title: Exercise - Tuning and area under the curve
 metadata:
   title: Exercise - Tuning and area under the curve
@@ -9,6 +9,6 @@ metadata:
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 12
 sandbox: true
-notebook: https://review.docs.microsoft.com/learn/modules/introduction-to-machine-learning/notebooks/5-exercise-improve-models.ipynb?branch=pr-en-us-17743 
+notebook: notebooks/9-5-tune-auc-curves.ipynb
