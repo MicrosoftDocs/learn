@@ -1,8 +1,9 @@
-In this unit, you'll evaluate whether Project Bonsai can help you build machine-teaching simulations. You'll decide whether Bonsai enables you to more quickly and easily implement AI-powered automation development. The criteria you'll consider are:
+In this unit, you'll learn how to determine whether Project Bonsai is a good fit
+for your AI-powered control problem. The criteria to consider are:
 
-- Is there value in optimizing any of your automation systems?
-- Does your organization have AI experts who can optimize those systems?
-- Can you use an existing simulation of your automation systems or build a new one?
+- Business value
+- Available expertise
+- Simulation overhead
 
 ## Decision criteria
 
