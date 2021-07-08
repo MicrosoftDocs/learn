@@ -1,9 +1,9 @@
 Batch Transcription can process WAV (PCM Codec), MP3 (PCM Codec), and OGG (Opus Codec) files sampled at 8 kHz or 16 kHz. These must be at a publicly accessible or shared access signature (SAS) URI.  It can process one or more files per batch. If more than one file is provided, the system attempts to process these in parallel, minimizing turn-around time.
+
+We will prepare an environment, submit our jobs, check the job status, then view the results. We will work in Bash here, though note most commands can be executed through languages such as C#.
 ​
-We will prepare an environment, submit our jobs, check the job status, then view the results. We will work in Bash here, though note most commands can be executed through languages such as C#. 
-​​
 ## Preparing the environment
-​
+
 Let's start by preparing our environment. The following script creates our cognitive services account and storage container.
 
 1. Select **Copy**
@@ -13,7 +13,7 @@ Let's start by preparing our environment. The following script creates our cogni
     # Get and set the subscription and Resource Group
     subscription=$(az account list --query [0].id -o tsv)
     resourceGroupName=$(az group list --query "[0] | name" -o tsv)
-    ​​
+    ​
     # Create the cognitive services account
     az cognitiveservices account create \
         --name cognitive-services-account-resource-speech \
@@ -47,7 +47,7 @@ Let's start by preparing our environment. The following script creates our cogni
 1. Press <kbd>Enter</kbd> to run the command
 
 ## Load audio files into the storage container
-​
+
 1. Run the following command to download the audio files
 
     ```bash
@@ -55,20 +55,20 @@ Let's start by preparing our environment. The following script creates our cogni
     ```
 
 1. Now run the following command to copy the audio files into our storage container
-​
+
     ```bash
     az config set extension.use_dynamic_install=yes_without_prompt
     az storage azcopy blob upload -c $blobContainerName --account-name $blobName -s "mslearn-batch-stt/audiofiles/*" --recursive
     ```
 
 ## Set up access keys and tokens
-​
+
 To produce and use transcriptions, we need tokens and access keys.
-​
+
 First, the transcription service will need to be passed a URI that allows it to read our data. As we have security preventing public access we will need to generate an access token that can be appended to the URL.
 
 1. Run the following command to generate the SAS token
-​
+
     ```bash
     # We will make a key that expires in just under an hour's time
     end=`date -u -d "59 minutes" '+%Y-%m-%dT%H:%MZ'`
@@ -77,7 +77,7 @@ First, the transcription service will need to be passed a URI that allows it to 
     ```
 
 1. We also need a key for the API so that we can access the results. Run the following command to generate this
-​
+
     ```bash
     apiKeySpeech=$(az cognitiveservices account keys list -g $resourceGroupName -n cognitive-services-account-resource-speech --query [key1] -o tsv)
     echo "Our Key Is:" $apiKeySpeech
@@ -88,7 +88,7 @@ First, the transcription service will need to be passed a URI that allows it to 
 Now all the services are set up, you are going to submit the transcription job. We need to create a JSON body for the request, stating where our container is and the transcription options.
 
 1. Run the following command to create the JSON body for your request, and submit the job
-​
+
     ```bash
     # Create the JSON  
     contentContainerUrl="https://$blobName.blob.core.windows.net/$blobContainerName/?$sasToken"
@@ -118,15 +118,15 @@ Now all the services are set up, you are going to submit the transcription job. 
     -H "Ocp-Apim-Subscription-Key:$apiKeySpeech" \
     --data "$json")
     ```
-    ​
+    
 1. Our captured `response` provides some information about where our results will be stored. To view it, past the following echo command into the terminal
-    ​
+    
     ```bash
     echo "$response"
     ```
 
 1. Run the following query again to see the status of the transcriptions:
-​
+
     ```bash
     # Find the URI that will tell us the status. This is found in the original submission response
     info_uri=$(echo "$response" | grep -oP -m 1 "(\s*\"self\":\s*\"\K)([^\"]*)")
@@ -135,15 +135,15 @@ Now all the services are set up, you are going to submit the transcription job. 
     job_information=$(curl -X GET $info_uri -H "Ocp-Apim-Subscription-Key:$apiKeySpeech")
     echo "$job_information"
     ```
-​
+
     Take note of the status. It it states 'Succeeded', then move on. If it states the job is still running, wait 20 seconds, then paste the command above into the terminal and run it again. Repeat this until the status is 'Succeeded'!
-​
+
 ## Viewing the results
-​
+
 To view our results, we need to see where they are saved to in general. We can extract this information from results we previously looked at. Next, we'll use Regex to do this.
 
 1. Run the following command to retrieve the uri for the transcription information, and create a list of the individual transcription files
-​
+
     ```bash
     result_info_uri=$(echo $job_information | grep -oP -m 1 "(\s*\"files\":\s*\"\K)([^\"]*)")
     transcription_information=$(curl -X GET $result_info_uri -H "Ocp-Apim-Subscription-Key:$apiKeySpeech")
@@ -155,7 +155,7 @@ To view our results, we need to see where they are saved to in general. We can e
     > You can select any of the contentUrl's to view the raw output of each transcription.
 
 1. Let's now loop through these files, download them, and view the first transcript. Run the following command to extract the URLs with Regex, and download each transcript
-​
+
     ```bash
     # Extract the URLs using Regex
     # Note that this also collected the URL pointing to
@@ -172,13 +172,13 @@ To view our results, we need to see where they are saved to in general. We can e
 
     echo "Files Available: "$(ls transcript_*.json)
     ```
-​
+
 1. Run the following command to take a look at the first transcript
-​
+
     ```bash
     # View the first transcript in nano
     # Note that the transcript_0.json is meta information
     nano transcript_1.json
     ```
-​
-That's it! You can press <kbd>Ctrl+X</kdb> to exit the nano text editor.
+
+That's it! You can press <kbd>Ctrl+X</kbd> to exit the nano text editor.
