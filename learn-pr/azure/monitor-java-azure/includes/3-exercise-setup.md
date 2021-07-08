@@ -16,7 +16,7 @@ The PetClinic application is decomposed into four core microservices. All of the
 
 ## Set up the sample microservice application
 
-In a web browser, open https://shell.azure.com in a new browser windows.
+In a web browser, open https://shell.azure.com in a new browser window.
 Select "Bash" mode in the top right-hand side.
 Next, in the bash window, run the following commands to clone the sample repository and open the built-in Azure editor:
 
