@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-azure-expressroute.exercise-provision-expressroute-circuit
+title: 'Exercise: provision an ExpressRoute circuit'
+metadata:
+  title: 'Exercise: provision an ExpressRoute circuit'
+  description: "Exercise: provision an ExpressRoute circuit"
+  ms.date: 07/08/2021
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-exercise-provision-expressroute-circuit.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following steps is part of provisioning an ExpressRoute circuit?"
+    choices:
+    - content: "Send the ExpressRoute circuit service key to the service provider."
+      isCorrect: true
+      explanation: "Correct. To complete the provisioning of the ExpressRoute circuit, the service provider must enable the circuit. This requires the service key."
+    - content: "Get the ExpressRoute circuit key from the service provider."
+      isCorrect: false
+      explanation: "Incorrect. The service provider does not provide the ExpressRoute circuit service key."
+    - content: "Add the ExpressRoute circuit service key to the ExpressRoute Gateway key property."
+      isCorrect: false
+      explanation: "Incorrect. The circuit service key does not have to be configured in the ExpressRoute Gateway key property."
+  - content: "You need access to regions in or near the same metropolitan area. Which SKU should you select?"
+    choices:
+    - content: "Local SKU."
+      isCorrect: true
+      explanation: "Correct. Local SKU gives you access only to one or two Azure regions in or near the same metropolitan area."
+    - content: "Premium."
+      isCorrect: false
+      explanation: "Incorrect. Premium SKU will give you more functionality than you require in this case."
+    - content: "Standard."
+      isCorrect: false
+      explanation: "Incorrect. Standard SKU will give you more functionality than you require in this case."
+  - content: "When does billing begin for an ExpressRoute circuit?"
+    choices:
+    - content: "Billing begins the moment a service key is used."
+      isCorrect: true
+      explanation: "Correct. Billing begins the moment a service key is used."
+    - content: "When data starts flowing between circuits."
+      isCorrect: false
+      explanation: "Incorrect. Data flowing between circuits does not trigger the start of billing."
+    - content: "When the SKU is selected."
+      isCorrect: false
+      explanation: "Incorrect. The SKU being selected does not trigger the start of billing."
