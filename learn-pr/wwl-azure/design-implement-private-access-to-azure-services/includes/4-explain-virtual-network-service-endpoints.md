@@ -353,7 +353,7 @@ By using the storage Service Endpoint on the **Databases** subnet, you've now ve
 
 When you enable a Service Endpoint, you
 
-( ) Enable your Azure VMs to access the service directly from your private address space. {{Correct. When you enable a Service Endpoint, you restrict the flow of traffic, and enable your Azure VMs to access the service directly from your private address space.}}
+(X) Enable your Azure VMs to access the service directly from your private address space. {{Correct. When you enable a Service Endpoint, you restrict the flow of traffic, and enable your Azure VMs to access the service directly from your private address space.}}
 
 ( ) Allow devices access the service from a public network. {{Incorrect, access from public networks are denied. When you enable a Service Endpoint, you restrict the flow of traffic, and enable your Azure VMs to access the service directly from your private address space. Devices cannot access the service from a public network.}}
 
