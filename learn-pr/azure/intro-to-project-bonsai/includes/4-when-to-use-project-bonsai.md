@@ -60,18 +60,22 @@ Consider using Project Bonsai when you meet the following criteria:
 As mentioned, it is  also ideal, but not essential, that you have AI experts in
 your organization who have experience optimizing your automation systems.
 
-### Example of when to use
+### Example of when to use Project Bonsai
 
-Let's consider our earlier example of making soap. Manufacturing soap is complex and many variables affect it, including:
+Consider our earlier example of making soap. Manufacturing soap is complex and
+many variables affect the quality of the finished product. Some of the key
+manufacturing challenges include:
 
-- The chemical process, which can be hard to control.
-- Predicting the behavior of the machinery (an extruder) can be difficult.
+- Controlling the vigorousness of the chemical process.
+- Predicting the behavior of the machinery (an extruder) in response to changing
+  inputs and normal wear-and-tear.
 
-Because of these challenges, it can be hard to optimize the system. Bonsai brains would provide this organization with improved control over their automation systems. The organization's engineers want a brain that:
+Because of these challenges, it can be hard to optimize the system. Bonsai
+brains could provide this organization with improved control over their
+automation systems by:
 
-- Automatically signals their advanced process-control system.
-- Adapts quickly to production changeovers.
-- Applies short-term process changes when the extruder becomes coated with soap over multiple runs.
-- Applies long-term process changes as extruder equipment wears.
-
-Bonsai will enable them to achieve their goals.
+- Automatically signaling their advanced process-control system.
+- Adapting quickly to production changeovers.
+- Applying short-term process changes when the extruder becomes coated with soap
+  over multiple runs.
+- Applying long-term process changes as extruder equipment wears.
