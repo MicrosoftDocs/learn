@@ -22,7 +22,7 @@ quiz:
       explanation: "Incorrect. Live transcription is available through Azure service."
     - content: "It can process large numbers of audio recordings and is robust to background noise and poor audio quality."
       isCorrect: true
-      explanation: "Correct. Batch Transcription is ideal for call centers and similiar scenarios."
+      explanation: "Correct. Batch Transcription is ideal for call centers and similar scenarios."
     - content: "It runs on powerful in-house servers, which only large commercial operations have access to."
       isCorrect: false
       explanation: "Incorrect. Batch Transcription runs on Azure, which is accessible to small and large operations alike."

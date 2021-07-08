@@ -13,7 +13,7 @@ The first step to train a model is to upload training data. For more information
 1. Select **Create a new project**
 1. Name your project, and select **Create**
 
-    :::image type="content" source="../media/5-new-project.png" alt-text="Screenshot showing the create a new project window with an example name.":::
+    :::image type="content" source="../media/5-new-project.png" alt-text="Screenshot showing the Create a New Project window with an example name.":::
 
 ## Use audio data to create a custom speech model
 
@@ -27,7 +27,7 @@ The first step to train a model is to upload training data. For more information
     https://github.com/Azure-Samples/cognitive-services-speech-sdk/raw/master/sampledata/customspeech/en-US/training/audio-and-trans.zip
     ```
 
-    :::image type="content" source="../media/5-azure-blob-link.png" alt-text="Screenshot showing an example of steps four and five in the speech portal.":::
+    :::image type="content" source="../media/5-azure-blob-link.png" alt-text="Screenshot showing an example of steps 4 and 5 in the speech portal.":::
 
 1. Select **Next**
 1. Choose a name for your dataset, and select **Next**
@@ -53,11 +53,11 @@ While your model trains, let's create and endpoint so your model can be used in 
 1. On the left-hand menu, select **Deploy models**
 1. Select **Deploy model**
 
-    :::image type="content" source="../media/5-deploy-a-model.png" alt-text="Screenshot showing red boxes around the buttons needed to click to complete steps 1 and 2.":::
+    :::image type="content" source="../media/5-deploy-a-model.png" alt-text="Screenshot showing red boxes around the buttons needed to select to complete steps 1 and 2.":::
 
 1. Choose a name for your model, accept the terms of use, and select **Add**
 
-:::image type="content" source="../media/5-new-endpoint.png" alt-text="Screenshot showing an example of creating an endpoint in the azure portal.":::
+:::image type="content" source="../media/5-new-endpoint.png" alt-text="Screenshot showing an example of creating an endpoint in the Azure portal.":::
 
 It might take a minute for your endpoint to be created.
 
@@ -67,16 +67,16 @@ Now, we need to transfer the details for the endpoint over to the Cloud Shell.
 
 1. Select your newly created endpoint
 
-    :::image type="content" source="../media/5-select-endpoint.png" alt-text="Screenshot showing red boxes around the buttons needed to click to select endpoint.":::
+    :::image type="content" source="../media/5-select-endpoint.png" alt-text="Screenshot showing red boxes around the buttons to select the endpoint.":::
 
     Notice how Speech Studio provides code to connect to your custom model in multiple programming languages via the SDK, REST API, and WebSocket.
-1. Return to the Cloud Shell and paste in the following command—taking care not to hit enter
+1. Return to the Cloud Shell and paste in the following command—taking care not to hit Enter
 
     ```
     subKey=<Paste key here>
     ```
 
-1. Return to the Custom Speech portal, show and copy your subscription key
+1. Return to the Custom Speech portal, show, and copy your subscription key
 1. Return to the Cloud Shell and replace the `<Paste key here>` in the command with your Subscription key from the Custom Speech portal
 1. Select <kbd>Enter</kbd>
 1. Run the following command to set the environment variable for your .NET application, allowing it to access your newly created endpoint.

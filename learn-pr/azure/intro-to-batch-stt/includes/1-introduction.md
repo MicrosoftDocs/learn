@@ -1,14 +1,14 @@
 Batch Transcription is part of the Speech service suite of Azure Cognitive Services. This service allows you to transcribe large amounts of audio into text quickly and accurately. Batch Transcription is particularly useful for transcribing large volumes of call center audio data that is time-consuming and costly to perform manually. Batch Transcription can also increase accessibility in the workplace, in classrooms, and in the media given its ability to create subtitles.
 
-Batch Transcription is available in over 90 languages and dialects and can be customized to overcome speech recognition barriers such as background noise, accents, and industry-specific terminology. These features make Batch Transcription ideal for organizations that serve multilingual markets or have worldwide workforces—audio can be transcribed and translated from one language to another, making communication and understanding easier.
+Batch Transcription is available in over 90 languages and dialects and can be customized to overcome speech recognition barriers such as background noise, accents, and industry-specific terminology. These features make Batch Transcription ideal for organizations that serve multilingual markets or have worldwide workforces. Audio can be transcribed and translated from one language to another, making communication and understanding easier.
 
-## Call center compliance
+## Scenario - Managing a Call Center
 
-Throughout this module, we’ll be using an example scenario to illustrate key Batch Transcription concepts and customizations.
+Throughout this learning material, we'll be referring to the following scenario to help illustrate the utility of Batch Transcription. The scenario is a typical use case but isn't intended to exhaustively cover all possible uses of Batch Transcription; we cover more use cases toward the end of this learning module.
 
-In this scenario, you’re a customer service call center manager needing to ensure compliance standards when interacting with customers. For example, you may need to ensure that correct language has been used to obtain express consent for certain transactions to be executed. While this can be audited manually, listening to hundreds of phone calls a day to take note of any breaches requires a lot of manual labor and is prone to errors due to the variable quality of audio recordings.  
+Let’s pretend you're a customer service call center manager. You're in charge of ensuring the company you work for is meeting compliance standards when interacting with customers. For example, you may need to ensure correct language has been used to obtain express consent for certain transactions to be undertaken. This can be audited manually, but listening to hundreds of phone calls a day to take note of any breaches requires a lot of manual labor and is prone to errors due to the difficult nature of telephone data.
 
-You have been tasked with identifying how to speed up this process, and ensure your company is meeting standards with as few errors as possible. In this module, we’ll go through the features and benefits of Batch Transcription to decide if it’s the right service for your needs.
+You've been tasked with identifying a solution to speed up this process and ensure your company is meeting standards with as few errors as possible. In this module, we’ll go through the features and benefits of Batch Transcription to decide if it’s the right service for your needs.
 
 ## Prerequisites
 
