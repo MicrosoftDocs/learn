@@ -8,7 +8,7 @@ Bicep modules help you address these challenges by splitting the code into small
 
 ## How do you define a module?
 
-Each module you create should have a clear purpose. Think of a module as having a _contract_ - it accepts a set of parameters, creates a set of resources, and might provide some outputs back to the parent template. Whoever deploys the template shouldn't need to worry about _how_ your module works - just that it does what they expect. So, when you plan a module, consider both what you need to know to be able to fulfil the module's purpose, and what anyone who consumes your module will expect to provide and see as outputs.
+Each module you create should have a clear purpose. Think of a module as having a _contract_ - it accepts a set of parameters, creates a set of resources, and might provide some outputs back to the parent template. Whoever deploys the template shouldn't need to worry about _how_ your module works - just that it does what they expect. So, when you plan a module, consider both what you need to know to be able to fulfill the module's purpose, and what anyone who consumes your module will expect to provide and see as outputs.
 
 Generally it's not a good practice to create a module for every resource in your Bicep file. Normally a good Bicep module would define multiple related resources. However, if you have a particularly complex resource with a lot of configuration, it might make sense to create a single module to encapsulate the complexity.
 
