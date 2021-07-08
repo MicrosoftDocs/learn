@@ -39,7 +39,7 @@ Unlike a normal service principal, a managed identity doesn't require that you k
 
 Managed identities are available for Azure-hosted resources like virtual machines and App Service apps. They're a great way for Azure resources to authenticate themselves for situations like automating your Azure management, connecting to databases, and reading secret data from Azure Key Vault.
 
-When you work with pipelines, you usually can't use managed identities. The reason is that managed identities require you to own and manage the Azure resources. When you work with Azure Pipelines and GitHub Actions, you usually rely on shared infrastructure provided by Microsoft or GitHub.
+When you work with pipelines, you usually can't use managed identities. This is because managed identities require that you own and manage the Azure resources that run your deployments. When you work with Azure Pipelines and GitHub Actions, you usually rely on shared infrastructure provided by Microsoft or GitHub.
 
 > [!NOTE]
 > There are some situations where pipelines can use managed identities. In Azure Pipelines, you can create a _self-hosted agent_ to run your pipeline's scripts and code by using on your own Azure-based virtual machine. Because you own the virtual machine, you can assign it a managed identity and use it from your pipeline. 
