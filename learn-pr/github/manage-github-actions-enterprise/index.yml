@@ -30,7 +30,7 @@ prerequisites: |
   - Working knowledge of GitHub Actions and workflows
 units:
   - learn.github.manage-github-actions-enterprise.introduction
-  - learn.github.manage-github-actions-enterprise.manage-actions-and-workflows
+  - learn.github.manage-github-actions-enterprise.manage-actions-workflows
   - learn.github.manage-github-actions-enterprise.manage-runners
   - learn.github.manage-github-actions-enterprise.manage-encrypted-secrets
   - learn.github.manage-github-actions-enterprise.exercise
