@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout.exercise-tune-auc-curves
-title: Exercise - Tuning and area under the curve
+title: Exercise - Tune the area under the curve
 metadata:
-  title: Exercise - Tuning and area under the curve
+  title: Exercise - Tune the area under the curve
   description: Exercise unit about tuning under the curve in machine learning
   ms.date: 05/25/2021
   author: TomReidNZ
