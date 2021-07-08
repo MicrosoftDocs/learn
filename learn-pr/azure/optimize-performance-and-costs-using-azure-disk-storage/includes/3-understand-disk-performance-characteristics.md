@@ -81,7 +81,7 @@ The performance of the VM depends on the IOPS and throughput limits that are imp
 
 The following table lists examples that illustrate the difference in performance for cached and uncached disk throughput and bandwidth.
 
-| VM size name |  Max cached and temp storage throughput: IOPS/MBps (cache size in gibabytes (GiB)) | Max uncached disk throughput IOPS/MBps |
+| VM size name |  Max cached and temp storage throughput: IOPS/MBps (cache size in gibibytes (GiB)) | Max uncached disk throughput IOPS/MBps |
 | --- | --- | --- |
 | Standard_D2s_v3 | 4,000/32 (50) | 3,200/48 |
 | Standard_D4s_v3 | 8,000/64 (100) | 6,400/96 |

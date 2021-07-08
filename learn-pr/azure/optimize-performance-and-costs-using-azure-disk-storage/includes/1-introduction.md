@@ -15,5 +15,5 @@ In this module, you'll learn more about:
 ## Prerequisites
 
 - Basic knowledge of Azure Disk Storage
-- Basic knowledge of Azure virtual machines (VMs)
+- Basic knowledge of Azure virtual machines
 - Experience using the Azure portal
