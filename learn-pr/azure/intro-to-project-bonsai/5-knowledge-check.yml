@@ -65,9 +65,9 @@ quiz:
     - content: "Your Bonsai brain can contain only one version."
       isCorrect: false
       explanation: "Incorrect. Your Bonsai brain can contain multiple versions."
-    - content: "You create Bonsai brains through training in the training engine and using the training curriculum."
+    - content: "Bonsai brains learn a given curriculum through iterative training with the training engine."
       isCorrect: true
-      explanation: "Correct. Also, when you make significant changes to your curriculum, Bonsai creates a new brain."
+      explanation: "Correct. Also, when you make significant changes to your curriculum, Bonsai creates a new brain version automatically."
     - content: "When you're happy with your Bonsai brain, you can export only the latest version."
       isCorrect: false
       explanation: "Incorrect. You can export any version of the brain."
