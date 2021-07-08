@@ -39,13 +39,13 @@ az spring-cloud app logs --name customers-service -f
 
 Next, we'll create an error, to show the value of how you can quickly debug and find its root cause.
 
-1. Open the customers-service and follow the logs:
+- Open the customers-service and follow the logs:
 
 ```azurecli
 az spring-cloud app logs --name customers-service -f
 ```
 
-2. Next, in a web browser, open a new window and trigger a warning with the following command:
+- Next, in a web browser, open a new window and trigger a warning with the following command:
 (Replace the "<spring-cloud-name"> with the name of your spring cloud instance)
 
 ```html
@@ -57,7 +57,7 @@ You now can see a warning similar to the below screen:
 
 :::image type="content" source="../media/5-warning.jpg" alt-text="screenshot of Azure Cloud Shell with log warning":::
 
-3. To resolve this warning, in a web browser, rather search for the customer using the customer ID:
+- To resolve this warning, in a web browser, rather search for the customer using the customer ID:
 
 ```html
 https://<spring-cloud-name>-api-gateway.azuremicroservices.io/api/customer/owners/1

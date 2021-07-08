@@ -30,7 +30,7 @@ Next, in the bash window, run the following commands to clone the sample reposit
 
 When you run the above command, a window will pop up with the file 'deployPetClinicApp.sh' ready to be edited in the built-in Azure editor.
 
-1. At the top of the `deployPetClinicApp.sh` file, edit the following variables to customize the scripts parameters for your environment:
+- At the top of the `deployPetClinicApp.sh` file, edit the following variables to customize the scripts parameters for your environment:
 
 | Variable | Description |
 |-|-|
@@ -42,11 +42,11 @@ When you run the above command, a window will pop up with the file 'deployPetCli
 | mysql_server_admin_password | A new password for the server admin user. The password must be 8 to 128 characters long and contain a combination of uppercase or lowercase letters, numbers, and non-alphanumeric characters (!, $, #, %, and so on).|
 | log_analytics | Name of your Azure Log Analytics workspace |
 
-2. Save the file by selecting the ... action panel in the top right of the editor and select "Save".
+- Save the file by selecting the ... action panel in the top right of the editor and select "Save".
 
-3. Close the editor - open the ... action panel in the top right of the editor and select "Close Editor".
+- Close the editor - open the ... action panel in the top right of the editor and select "Close Editor".
 
-4. Don't close the Azure Cloud Shell, as next, we'll run the setup script.
+- Don't close the Azure Cloud Shell, as next, we'll run the setup script.
 
 ## Run the setup script
 

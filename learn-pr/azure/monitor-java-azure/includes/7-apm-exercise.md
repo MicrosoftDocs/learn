@@ -4,14 +4,14 @@ In this exercise, with zero configuration, you'll effortlessly monitor data flow
 
 Application Map helps you spot performance bottlenecks or failure hot-spots across all components of your distributed application.
 
-1. Open the Azure portal
-1. Select "Azure Spring Cloud" from the list of Azure services
-1. Select your Azure Spring Cloud instance
-1. Select **Application Insights** to jump to the Overview page of Application Insights.
+- Open the Azure portal
+- Select "Azure Spring Cloud" from the list of Azure services
+- Select your Azure Spring Cloud instance
+- Select **Application Insights** to jump to the Overview page of Application Insights.
 
 :::image type="content" source="../media/7-insights-start.jpg" alt-text="screenshot showing Application insights for your spring cloud":::
 
-5. On the left, navigate to **Application Map** where you can see a view of your Azure Spring Cloud microservices:
+- On the left, navigate to **Application Map** where you can see a view of your Azure Spring Cloud microservices:
 
 :::image type="content" source="../media/4-distributed-tracking-new-ai-agent.jpg" alt-text="Screenshot showing Application map with microservices":::
 
@@ -32,15 +32,15 @@ You can see the performance number for dependencies, particularly SQL calls:
 
 You can select a SQL call or a dependency to see the transaction in context:
 
-1. Select a SQL statement in the "Select operation tab":
+- Select a SQL statement in the "Select operation tab":
 
 :::image type="content" source="../media/4-performance-sql.jpg" alt-text="Screenshot showing SQL transaction":::
 
-2. Next, on the Right tab, select "Drill into" and on the far right tab, and then select a SQL sample to open the transaction detail window:
+- Next, on the Right tab, select "Drill into" and on the far right tab, and then select a SQL sample to open the transaction detail window:
 
 :::image type="content" source="../media/4-performance-sql-details.jpg" alt-text="Screenshot showing SQL sample transaction":::
 
-3. Finally, in the transaction details view, view the sample sql statement transaction by selecting the sql statement:
+- Finally, in the transaction details view, view the sample sql statement transaction by selecting the sql statement:
 
 :::image type="content" source="../media/4-performance-sql-stack.jpg" alt-text="Screenshot showing SQL transaction detail":::
 
@@ -52,19 +52,19 @@ Next, select **Failures** in the Application Insights resource menu located in t
 
 Select an exception and drill in for meaningful insights and actionable stack trace:
 
-1. On the right-hand side, select an exception in the "Top 3 exception types":
+- On the right-hand side, select an exception in the "Top 3 exception types":
 
 :::image type="content" source="../media/4-exception.jpg" alt-text="Screenshot showing the exception screen":::
 
-2. Next, on the Right tab, select the "Suggested" exception sample to open the transaction detail window:
+- Next, on the Right tab, select the "Suggested" exception sample to open the transaction detail window:
 
 :::image type="content" source="../media/4-exception-drill.jpg" alt-text="Screenshot showing the exception detail screen":::
 
-3. Next, view the exception properties in the transaction detail window:
+- Next, view the exception properties in the transaction detail window:
 
 :::image type="content" source="../media/4-exception-details.jpg" alt-text="Screenshot showing the exception details screen":::
 
-4. Finally, in the middle of the screen, in the end-to-end transaction tab, select an exception to view its details and stacktrace:
+- Finally, in the middle of the screen, in the end-to-end transaction tab, select an exception to view its details and stacktrace:
 
 :::image type="content" source="../media/4-exception-stack.jpg" alt-text="Screenshot showing the exception stacktrace screen":::
 
@@ -75,27 +75,27 @@ You can see metrics contributed by Spring Boot apps, Spring Cloud modules, and d
 
 To create a standard metric chart, under the Monitoring section, open the Metrics tab and follow these steps:
 
-1. Ensure your Azure Spring Cloud is selected under **Scope** and **Azure Spring Cloud** under **Metric Namespace**. Both will already be populated if you opened metrics explorer from the resource's menu.
+- Ensure your Azure Spring Cloud is selected under **Scope** and **Azure Spring Cloud** under **Metric Namespace**. Both will already be populated if you opened metrics explorer from the resource's menu.
 
 :::image type="content" source="../media/4-metrics.jpg" alt-text="Screenshot showing metrics":::
 
-2. Next, under metrics, select **App CPU Usage** and under aggregation, select **Avg**:
+- Next, under metrics, select **App CPU Usage** and under aggregation, select **Avg**:
 
 :::image type="content" source="../media/4-metrics-cpu-first-add.jpg" alt-text="Screenshot showing adding app cpu metrics":::
 
-3. Next, save the first metric by selecting the "Tick" icon on the right-hand metric bar.
+- Next, save the first metric by selecting the "Tick" icon on the right-hand metric bar.
 
 :::image type="content" source="../media/4-metrics-cpu-first.jpg" alt-text="Screenshot showing metrics selection":::
 
-4. Next, add another metric by selecting the "Add metric" action on the top left-hand toolbar and add **system.cpu.usage** under Metric and **Avg** under Aggregation.
+- Next, add another metric by selecting the "Add metric" action on the top left-hand toolbar and add **system.cpu.usage** under Metric and **Avg** under Aggregation.
 
 :::image type="content" source="../media/4-metrics-add-second.jpg" alt-text="Screenshot showing adding system cpu metrics":::
 
-5. Next, save the second metric by selecting the "Tick" icon on the right-hand metric bar.
+- Next, save the second metric by selecting the "Tick" icon on the right-hand metric bar.
 
 :::image type="content" source="../media/4-metrics-add.jpg" alt-text="Screenshot showing saving system cpu metrics":::
 
-6. Finally, inspect your metrics graph with both the App and System CPU metrics
+- Finally, inspect your metrics graph with both the App and System CPU metrics
 :::image type="content" source="../media/4-metrics-cpu-both.jpg" alt-text="Screenshot showing system and app cpu metrics":::
 
 ### Custom Metrics
@@ -105,30 +105,30 @@ You might want to collect some custom performance indicators or business-specifi
 
 Similarly to standard metric chart, to create a custom metric chart, under the Monitoring section, open the Metrics tab and follow these steps:
 
-1. Ensure your Azure Spring Cloud is selected in the resource scope picker. It will already be populated if you opened metrics explorer from the resource's menu.
+- Ensure your Azure Spring Cloud is selected in the resource scope picker. It will already be populated if you opened metrics explorer from the resource's menu.
 
-2. Next, under **namespaces**, select the **azure.applicationinsights** namespace. The namespace is just a way to organize metrics so that you can easily find them.
+- Next, under **namespaces**, select the **azure.applicationinsights** namespace. The namespace is just a way to organize metrics so that you can easily find them.
 
 :::image type="content" source="../media/7-custom-namespace.jpg" alt-text="Screenshot showing namespace selection for custom metrics":::
 
-3. Next, under metrics, add the following custom metrics and aggregation:
+- Next, under metrics, add the following custom metrics and aggregation:
 
-* Metric `petclinic_pet`, Aggregation: `count`
+  - Metric `petclinic_pet`, Aggregation: `count`
 
 :::image type="content" source="../media/7-custom-metrics.jpg" alt-text="Screenshot showing metric and aggregate selection for custom metrics":::
 
-4. Add the metrics for the `owner` and `visit` services:
+- Add the metrics for the `owner` and `visit` services:
 
-* Metric `petclinic_owner`, Aggregation: `count`
-* Metric `petclinic_visit`, Aggregation: `count`
+  - Metric `petclinic_owner`, Aggregation: `count`
+  - Metric `petclinic_visit`, Aggregation: `count`
 
 :::image type="content" source="../media/7-custom-third.jpg" alt-text="Screenshot showing finished custom metrics view":::
 
-5. Next, on the top right-hand side, change the graph type to **Area Chart**
+- Next, on the top right-hand side, change the graph type to **Area Chart**
 
 :::image type="content" source="../media/7-custom-area.jpg" alt-text="Screenshot showing graph type selection for custom metrics view":::
 
-6. Your final graph will show the counts in the last 24 hours for each of the pet, vet, and owner microservices:
+- Your final graph will show the counts in the last 24 hours for each of the pet, vet, and owner microservices:
 
 :::image type="content" source="../media/7-custom.jpg" alt-text="Screenshot showing final custom metrics view":::
 
