@@ -8,24 +8,48 @@ Here, you will use the Azure Speech JavaScript SDK to integrate the Azure Speech
 
 Recall that your teammate has already set up a Babylon.js project with all of the necessary assets imported into the Babylon.js scene. Let's clone the repository that contains their work so far.
 
-1. Go to [this GitHub repository](https://github.com/JING1201/learn-magic-template) and select the **Code** dropdown.
+1. Go to [this GitHub repository](https://github.com/MicrosoftDocs/mslearn-create-voice-activated-webxr-app) and select the **Code** dropdown.
 
-    (screenshot)
+    :::image type="content" source="../media/github-repo.png" alt-text="Screenshot of the Learn module GitHub repository, with the Code dropdown button surrounded by a red box.":::
+
 1. Copy the **URL of the repository** under the **HTTPS** tab.
+
+    :::image type="content" source="../media/github-repo-url.png" alt-text="Screenshot of the dropdown view under the Code button, with the U R L copy button surrounded by a red box.":::
+
 1. Open Visual Studio Code.
 1. Select the Settings button in the bottom left of the window, and then select **Command Palette** from the options (or Ctrl+Shift+P/Cmd+Shift+P).
+
+    :::image type="content" source="../media/vscode-settings-menu.png" alt-text="Screenshot of the settings menu in Visual Studio Code, with the settings button and the Command Palette selection surrounded by a red box respectively.":::
+
 1. After the Command Palette pops up, type in "git" and select the **Git: Clone** command.
-1. Paste the URL of the GitHub repository.
+
+    :::image type="content" source="../media/command-palette-git.png" alt-text="Screenshot of the command palette with git in the input text box and the Git Clone option surrounded by a red box.":::
+
+1. Paste the URL of the GitHub repository, then select **Clone from URL**.
+
+    :::image type="content" source="../media/clone-learn-module-repo.png" alt-text="Screenshot of the command palette with the Learn module U R L in the input text box and the option Clone from URL surrounded by a red box.":::
+
 1. Select the folder where you would like to save the repository. The root folder of the repository becomes a subdirectory in the folder you select.
-1. Select **Open the repository** after cloning finishes.
+1. Select **Open** from the popup window after cloning finishes.
+
+    :::image type="content" source="../media/open-cloned-repository.png" alt-text="Screenshot of a popup window which asks if the user wants to open the cloned repository. ":::
 
 ## Install dependencies
 
 Since we are using Node.js, all of the required dependencies are listed in the *package.json* file. Let's use *npm* to install all of them.
 
 1. Select **Terminal** in the menu of Visual Studio Code, and then select **New Terminal** to create a new terminal.
-1. Within the terminal, make sure that you are in the root folder of the repository.
+
+    :::image type="content" source="../media/select-new-terminal.png" alt-text="Screenshot of the Terminal dropdown menu in Visual Studio Code. The New Terminal option is surrounded by a red box.":::
+
+1. Within the terminal, run `cd starter-code` to change the directory into the **starter-code** folder.
+
+    :::image type="content" source="../media/terminal-change-directory.PNG" alt-text="Screenshot of the terminal with the C D starter code command.":::
+
 1. Run `npm install` in the terminal to install all dependencies for the project.
+
+    :::image type="content" source="../media/terminal-npm-install.PNG" alt-text="Screenshot of the terminal with the N P M install command.":::
+
 1. After the command finishes running, you should see a folder named *node_modules* created in the repository folder.
 
 ## Import dependencies
