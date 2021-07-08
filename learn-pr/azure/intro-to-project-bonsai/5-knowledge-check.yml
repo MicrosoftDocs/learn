@@ -38,17 +38,17 @@ quiz:
     - content: "An organization has no simulations, and no experts skilled in working with simulations."
       isCorrect: false
       explanation: "Incorrect. Bonsai works with simulations to optimize an automation system."
-  - content: "When implementing Bonsai, what's the purpose of having a customizable start state in a simulation?"
+  - content: "When designing your simulation model for a Bonsai brain, what's the purpose of having a customizable start state?"
     choices:
     - content: "It helps ensure meaningful real-time assessment during training."
       isCorrect: false
-      explanation: "Incorrect. That's provided by having useful visualization and data output in your simulation."
+      explanation: "Incorrect. Real-time assessment during training is provided by having useful visualization and data output in your simulation."
     - content: "It helps ensure that the Bonsai brain learns from various conditions."
       isCorrect: true
-      explanation: "Correct. This means you can adjust the start conditions to test the brain's responses."
+      explanation: "Correct. A customizable start state means you can adjust the start conditions to test the brain's responses to new scenarios."
     - content: "It helps identify when a system gets into a state where further progress is impossible."
       isCorrect: false
-      explanation: "Incorrect. That's provided by having an ability to identify system failure."
+      explanation: "Incorrect. It is important that your simulation be able to determining system failure, but that behavior is independent from the start state."
   - content: "Which of the following statements about working with the training engine in Bonsai is true?"
     choices:
     - content: "The Instructor carries out the underlying AI algorithms selected by the Architect."
