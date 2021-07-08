@@ -8,7 +8,7 @@ During the process, you'll:
 > * Push your changes from your local repository to the remote repository.
 > * Verify that the changes appear in the remote repository.
 
-::: zone pivot="githubwindows,githubmacos"
+::: zone pivot="github"
 
 ## Create a repository in GitHub
 
@@ -37,7 +37,7 @@ During the process, you'll:
 
 ::: zone-end
 
-::: zone pivot="azurereposwindows,azurereposmacos"
+::: zone pivot="azurerepos"
 
 ## Create a repository in Azure Repos
 
@@ -68,13 +68,12 @@ During the process, you'll:
 
    :::image type="content" source="../media/9-azure-devops-repo-details.png" alt-text="Screenshot of the Azure Repos interface showing the repository's details, with the repository's URL highlighted." border="true":::
 
-::: zone-end
-
-::: zone pivot="azurereposmacos"
-
 ## Generate a Git password
 
-When you work with Azure Repos from macOS, you need to use a special password that's different from the password you use to sign in.
+When you work with Azure Repos from Visual Studio Code on macOS, you need to use a special password that's different from the password you use to sign in.
+
+> [!NOTE]
+> If you're using Windows, skip to the next section, _Configure your local Git repository_.
 
 1. Select the **Generate Git credentials** button.
 
@@ -104,7 +103,7 @@ Keep your browser open. You'll check on the repository again later in this exerc
 
 ## Push your changes by using the Git CLI
 
-::: zone pivot="githubwindows,githubmacos"
+::: zone pivot="github"
 
 1. In the Visual Studio Code terminal, enter the following command:
 
@@ -137,7 +136,7 @@ Keep your browser open. You'll check on the repository again later in this exerc
 
 ::: zone-end
 
-::: zone pivot="azurereposwindows"
+::: zone pivot="azurerepos"
 
 1. In the Visual Studio Code terminal, enter the following command:
 
@@ -147,7 +146,11 @@ Keep your browser open. You'll check on the repository again later in this exerc
 
    Since your current local branch is **main**, this command tells Git that your local **main** branch _tracks_ the **main** branch in your remote repository. It also _pushes_ the commits from your local repository to the remote.
 
-1. This is the first time you've used this repository, so you are prompted to sign in. Enter the same credentials you used to sign in to Azure DevOps earlier in this exercise.
+1. This is the first time you've used this repository, so you are prompted to sign in.
+
+   If you're using Windows, enter the same credentials you used to sign in to Azure DevOps earlier in this exercise.
+
+   If you're using macOS, paste the password that you generated earlier in this exercise.
 
 1. In your terminal window, Git displays output similar to the following:
 
@@ -159,39 +162,6 @@ Keep your browser open. You'll check on the repository again later in this exerc
    Writing objects: 100% (16/16), 2.30 KiB | 785.00 KiB/s, done.
    Total 16 (delta 2), reused 0 (delta 0), pack-reused 0
    remote: Analyzing objects... (16/16) (5 ms)
-   remote: Storing packfile... done (165 ms)
-   remote: Storing index... done (75 ms)
-   To https://dev.azure.com/myuser/toy-website/_git/toy-website
-    * [new branch]      main -> main
-   Branch 'main' set up to track remote branch 'main' from 'origin'.
-   ```
-
-   This indicates that Git successfully pushed the contents of your repository to the remote.
-
-::: zone-end
-
-::: zone pivot="azurereposmacos"
-
-1. In the Visual Studio Code terminal, enter the following command:
-
-   ```bash
-   git push -u origin main
-   ```
-
-   Since your current local branch is **main**, this command tells Git that your local **main** branch _tracks_ the **main** branch in your remote repository. It also _pushes_ the commits from your local repository to the remote.
-
-1. This is the first time you've used this repository, so you are prompted to enter a password. Paste the password that you generated earlier in this exercise.
-
-1. In your terminal window, Git displays output similar to the following:
-
-   ```output
-   Enumerating objects: 10, done.
-   Counting objects: 100% (10/10), done.
-   Delta compression using up to 4 threads
-   Compressing objects: 100% (4/4), done.
-   Writing objects: 100% (10/10), 1.01 KiB | 343.00 KiB/s, done.
-   Total 10 (delta 0), reused 0 (delta 0), pack-reused 0
-   remote: Analyzing objects... (10/10) (5 ms)
    remote: Storing packfile... done (165 ms)
    remote: Storing index... done (75 ms)
    To https://dev.azure.com/myuser/toy-website/_git/toy-website
@@ -244,7 +214,7 @@ Now that you've committed a new file, you need to push your changes again so tha
 
    Notice that you're not prompted to sign in again. Your credentials are shared between the Git CLI and Visual Studio Code.
 
-::: zone pivot="githubmacos,githubwindows"
+::: zone pivot="github"
 
 ## Verify the changes in GitHub
 
@@ -260,7 +230,7 @@ Now that you've pushed your changes to your remote repository, you can inspect t
 
 ::: zone-end
 
-::: zone pivot="azurereposmacos,azurereposwindows"
+::: zone pivot="azurerepos"
 
 ## Verify the changes in Azure Repos
 
