@@ -52,10 +52,13 @@ new one from scratch.
 
 Consider using Project Bonsai when you meet the following criteria:
 
-- There's value in optimizing your automation systems.
-- You have a simulation of your automation systems or you're able to build one.
+- There is business value in optimizing your existing automation systems.
+- You have an appropriate simulation of your automation systems or you are able
+  to build one.
+- You have access to subject matter experts who understand the control system.
 
-It's also ideal, but not essential, that you have AI experts in your organization who have experience optimizing your automation systems.
+As mentioned, it is  also ideal, but not essential, that you have AI experts in
+your organization who have experience optimizing your automation systems.
 
 ### Example of when to use
 
