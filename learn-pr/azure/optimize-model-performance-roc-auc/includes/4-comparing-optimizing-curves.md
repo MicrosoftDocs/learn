@@ -20,10 +20,10 @@ Secondly, the ROC curve shows, to some degree, how reliant the model is on havin
 
 The easiest way to compare ROCs numerically is using the area under the curve (AUC). Literally, this is the area of the graph that is below the curve. For example, our perfect model from the last exercise has an AUC of 1:
 
-![Diagram showing a receiver operator characteristic curve graph using area under the curve.](../media/4-ROC-AUC-graph.png)
+![Diagram showing a receiver operator characteristic curve graph using area under the curve.](../media/4-roc-auc-graph.png)
 
 While our model that did not better than chance has an area of about 0.5:
 
-![Diagram showing a receiver operator characteristic curve graph with area under the curve at a sharp angle.](../media/4-ROC-AUC-graph-2.png)
+![Diagram showing a receiver operator characteristic curve graph with area under the curve at a sharp angle.](../media/4-roc-auc-graph-2.png)
 
 The more perfect a model is, the larger this area becomes. If we have a model with a large AUC, we know it works well for a variety of thresholds, and so it probably has good architecture and has been trained well. By contrast, a model with a small AUC (closer to 0.5) isn't working well.
