@@ -6,7 +6,7 @@ In this unit, you'll learn about the tools available with Visual Studio for buil
 
 ## Modify Visual Studio Install
 
-Upon loading Visual Studio 2019, go to **Visual Studio Installer**, and select **Modify.** The **Modifying - Visual Studio** page appears.
+Upon loading Visual Studio 2019, go to **Visual Studio Installer**, and select **Modify.**
 
 :::image type="content" source="../media/2-visual-studio-installer-modify.png" alt-text="Screenshot of the Visual Studio Installer page with Modify button." loc-scope="vs":::
 
