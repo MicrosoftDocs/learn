@@ -26,11 +26,11 @@ Let's say you want to authorize only specific organizations in your enterprise i
 
 To create groups at enterprise level, navigate to your enterprise account and then to **Policies > Actions** in the sidebar. In the **Self-hosted runners** tab, select **Add new > New group**. The screen that appears enables you to specify a group name and an access policy for organizations.
 
-:::image type="content" source="../media/create_group.png" alt-text="New group screen with group name example for all organizations":::
+:::image type="content" source="../media/create-group.png" alt-text="New group screen with group name example for all organizations":::
 
 To create groups at organization level, navigate to your organization **Settings** and then to **Actions** in the sidebar. In the **Self-hosted runners** section, select **Add new > New group**. The screen that appears enables you to specify a group name and an access policy for repositories.
 
-:::image type="content" source="../media/create_group_2.png" alt-text="New group screen with group name example for all repositories":::
+:::image type="content" source="../media/create-group-2.png" alt-text="New group screen with group name example for all repositories":::
 
 Note that when new runners are created, they are automatically assigned to the default group within the enterprise or organization. Runners can only be in one group at a time, however, both Enterprise Cloud and Enterprise Server give you the possibility to move runners from the default group to another group.
 
@@ -54,11 +54,11 @@ To add a label to a self-hosted runner, navigate to the GitHub Actions settings 
 
 1. Locate the list of runners under **Self-hosted runners**. If your runner is in a group, locate the runner group and select the runner dropdown to view the list of runners.
 
-:::image type="content" source="../media/locate_runner.png" alt-text="Example runner group with dropdown highlighted":::
+:::image type="content" source="../media/locate-runner.png" alt-text="Example runner group with dropdown highlighted":::
 
 2. Locate the runner you want to update and select the label dropdown to view the label selection menu. This menu displays all the custom labels available to your self-hosted runner. Labels already assigned to your self-hosted runner have a tick next to them.
 
-:::image type="content" source="../media/show_labels.png" alt-text="Example runner with label menu displayed":::
+:::image type="content" source="../media/show-labels.png" alt-text="Example runner with label menu displayed":::
 
 3. Click an existing label to add it to your runner or type the name of your new label in the **Filter labels** field and select **Create new label**. The label is automatically added to your runner when you create it.
 
