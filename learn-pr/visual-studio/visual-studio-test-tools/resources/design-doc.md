@@ -52,7 +52,7 @@ Identify the subtasks of C# Testing Tutorial
 
 Suppose you are creating a calculator app for school and you've been able to successfully debug, enter numbers as input, and get the expected results. You have a list of calculations you check each time you make code changes, to make sure that you haven't altered existing behavior as you add methods. As you make changes to your logic, you notice it takes longer and longer to manually make sure all your test inputs still get the correct results as you add more cases. With testing, you can automatically run your app with many different inputs and assert the expected results. This eliminates the need to manually enter your test data into your app as you debug because testing can put your app through its paces with the click of a button. This automated ability to check functionality is the purpose of testing.
 
-1. Create a test project
+1. Write a Test
 
     - Create a test project
         - The easiest way to add a test project for testing a specific method in your code is to right-click in that method and select 'Create unit tests.' This option to auto-generate test methods is available for most .NET projects, but let's describe how to manually set up test projects as well.
@@ -93,7 +93,7 @@ Suppose you are creating a calculator app for school and you've been able to suc
     1. **Knowledge check**
 
     - I can only run tests from the Test Explorer. True/**False** You can run tests with the right-click menu, keyboard shortcuts, or the CodeLens icons. Whatever feels natural to you and helps you get into your most productive coding flow.
-    - The Test Explorer group by allows me to view tests groupings according to: (Check all that apply)
+    - The Test Explorer group by allows me to view tests groupings according to:
         - Project
         - Namespace
         - Class

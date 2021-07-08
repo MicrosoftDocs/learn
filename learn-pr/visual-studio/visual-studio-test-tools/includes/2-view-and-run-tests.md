@@ -1,15 +1,26 @@
 # View, Run, and Debug tests
 
-There are many tools to help you get the most out of your tests. Let's go over a few built-in to Visual Studio. 
+There are many tools to help you get the most out of your tests. Let's go over a few built-in to Visual Studio.
 
 ## View your tests in the Test Explorer
 
 * You can view your list of tests in the Test Explorer in Visual Studio. To open this window use the top-level "Test" menu and select "Test Explorer."
+
+  ![image](../media/test-menu-test-explorer.png)
+  ![image](../media/test-explorer.png)
+
 * The name of each of your tests appear in an easily navigable list. Note you can use the search box to search for a specific test or substring.
+
+  ![image](../media/test-explorer-search.png)
+
 * The view of tests is highly customizable to better handle navigating huge code bases with hundreds of thousands of tests. You can use buttons to filter the view to by state. Try filtering to show only failed tests.
 * The "Group by" button lets you customize how the test groupings appear in the hierarchy. Try a new grouping by de-selecting the presets and only grouping by Project and Namespace. You can control what levels appear in the hierarchy and how many.
 
-![image](../media/test)
+  ![image](../media/test-explorer-groupby.png)
+
+  * View of the Project and Namespace group by setting.
+
+  ![image](../media/test-explorer-customized-groupby.png)
 
 ## Run your tests
 

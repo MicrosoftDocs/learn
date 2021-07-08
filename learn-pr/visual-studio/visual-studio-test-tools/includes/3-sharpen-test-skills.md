@@ -8,14 +8,20 @@
 [Fluent assertions](https://fluentassertions.com/) is a popular set of extension methods provided by the .NET community that can help you clearly identify your assertion methods. It uses more human-readable language making it easier to write and read tests.
 
 ```csharp
-    using FluentAssertions;
+using FluentAssertions;
+...
+[TestMethod]
+public void AddTest()
+{
+    var calculator = new Calculator();
+    var actual = calculator.Add(1, 1);
 
-    // Check if a string begins, ends, or contains a particular phrase
-    string actual = "ABCDEFGHI";
-    actual.Should().StartWith("AB").And.EndWith("HI").And.Contain("EF").And.HaveLength(9);
+    // Fluent assertion
+    actual.Should().Be(2).And.NotBe(1);
+}
 ```
 
-![image](../media/test)
+  ![image](../media/test-fluent-assertion.png)
 
 ## Data driven tests
 
@@ -29,15 +35,52 @@
 [DataRow(0, 0, 1)] // The test run with this row fails
 public void AddDataTests(int x, int y, int expected)
 {
-    Assert.AreEqual(expected, x + y);
+    var calculator = new Calculator();
+    var actual = calculator.Add(x, y);
+    Assert.AreEqual(expected, actual);
 }
 ```
 
+  ![image](../media/data-driven-test.png)
+
 ## Mocking
 
-Sometimes the architecture of your code is not as modular as you may want in order to unit test it well. In order to isolate the parts of your code that you are testing without re-writing it you may want to use a mocking framework. Mocking helps you isolate the code you are trying to test by creating stubs or shims of that code dependencies. This allows the code you are testing to make the required calls to its dependencies without actually testing the dependencies. This helps you focus a unit test down to precisely the behavior you want to test. There are many popular mocking frameworks available including [MOQ](https://github.com/Moq/moq4/wiki/Quickstart) and [Microsoft Fakes](https://docs.microsoft.com/visualstudio/test/isolating-code-under-test-with-microsoft-fakes).
+* Sometimes the architecture of your code is not as modular as you may want in order to unit test it well. In order to isolate the parts of your code that you are testing without re-writing it you may want to use a mocking framework. Mocking helps you isolate the code you are trying to test by creating stubs or shims of that code's dependencies. This allows the code you are testing to make the required calls to its dependencies without actually testing the dependencies. This helps you focus a unit test down to precisely the behavior you want to test. There are many popular mocking frameworks available including [MOQ](https://github.com/Moq/moq4/wiki/Quickstart) and [Microsoft Fakes](https://docs.microsoft.com/visualstudio/test/isolating-code-under-test-with-microsoft-fakes).
+* You can find a [full tutorial for Microsoft Fakes here](https://docs.microsoft.com/visualstudio/test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing), but let's explore a short overview.
+  * Note that Microsoft Fakes is only available with Visual Studio Enterprise.
+  * Navigate to the test project you want to isolate in the Solution Explorer, right-click on the project that you want to mock under the Project node, and select 'Add Fakes Assembly'
 
-![image](../media/)
+  ![image](../media/test-add-fakes.png)
+
+  * Add the using statements to the test file in which you'd like to use shims and stubs.
+
+    ```csharp
+    using LearnMyCalculatorApp.Fakes;
+    using Microsoft.QualityTools.Testing.Fakes;
+    ```
+
+  * Now you can create stubs or shims for different parts of your code like the example below. In the below test I don't want to really call the Calculator's `Divide` method, I just want to pretend for now that it always returns `1` so I can focus on testing other parts of my code. The shim allows me to do that.
+
+    ```csharp
+    [TestMethod]
+    public void DivideByZeroWithFakesShim()
+    {
+        using (ShimsContext.Create())
+        {
+            // Define what the Divide shim should return
+            ShimCalculator.AllInstances.DivideInt32Int32 = (x, y, z) => { return 1; };
+    
+            var calculator = new Calculator();
+            
+            // This really calls the DivideInt32Int32
+            // defined above to always return 1
+            // instead of actually calling Divide
+            var actual = calculator.Divide(1, 0); 
+            Assert.AreEqual(1, actual);
+        }
+    }
+    
+    ```
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
