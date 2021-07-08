@@ -16,7 +16,7 @@ Using the techniques you learned in previous modules, create a new folder for yo
 
 Inside that folder, create a file for this exercise. For example, you might create a file named `exercise1.py`.
 
-When it's time to run your code, to use the Python Tools for Visual Studio Code integration, select the green arrow. Or, you can use a command in the integrated terminal by using techniques you learned about in previous modules.
+When it's time to run your code, use the Python Tools for Visual Studio Code integration, select the green arrow. Or, you can use a command in the integrated terminal by using techniques you learned about in previous modules.
 
 ### Step 2: Add an `if` statement to the new code file
 
@@ -234,7 +234,7 @@ Secondly, and more pertinent to this code example, is the nesting of the second 
 
 This nesting structure is common when you need to test several related (but different) data values before you perform some operation.
 
-If you remove the proper indentation.
+If you remove the proper indentation...
 
 ```python
 first_value = True
@@ -245,7 +245,7 @@ if second_value == '6':
     print('Got here!')
 ```
 
-... it's likely you would see the following error message.
+...it's likely you would see the following error message.
 
 ```output
     File "c:/python/numeric-operations-decisions/exercise2.py", line 65
