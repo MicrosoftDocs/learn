@@ -4,11 +4,11 @@ As part of the migration strategy, you propose the Azure Disk Storage solution t
 
 ## Ultra Disk Storage
 
-Of the various disks available in Azure, Azure Ultra Disk Storage provides the highest disk performance. Choose this option when you need the fastest storage performance in addition to high throughput, high I/O operations per second (IOPS), and low latency.
+Of the various disks available in Azure, Azure Ultra Disk Storage provides the highest disk performance. Choose this option when you need the fastest storage performance in addition to high throughput, high input/output operations per second (IOPS), and low latency.
 
 The performance of Ultra Disk Storage depends on the size of the disk you select. The following table provides examples:
 
-| Disk size (GB) | IOPS | Throughput (mbps) |
+| Disk size (GB) | IOPS | Throughput (MBps) |
 | --- | --- |--- |
 | 4 | 1,200 | 300 |
 | 16 | 4,800 | 1,200 |
@@ -47,7 +47,7 @@ You can adjust the performance of Premium SSD disks by first detaching the disks
 
 The following table provides examples that illustrate the high performance of Premium SSD disks:
 
-| Disk size name | Disk size | IOPS | Throughput (mbps) |
+| Disk size name | Disk size | IOPS | Throughput (MBps) |
 | --- | --- |--- | --- |
 | P4 | 32 GiB | 120 | 25 |
 | P15 | 256 GiB | 1,100 | 125 |
@@ -61,15 +61,15 @@ If you need higher performance than what Standard SSD disks provide, or if you c
 Azure Premium SSD disks support disk bursting, with which you can achieve higher IOPS and throughput than with your provisioned performance. For P20 disks and smaller disks, bursting is enabled by default with no additional costs.
 
 > [!NOTE]
-> You'll learn more about the Azure disk bursting functionality in the **Select a disk type for your workload** unit.
+> You'll learn more about the Azure disk bursting functionality in [Optimize performance and costs using performance-scaling options](https://docs.microsoft.com/learn/modules/optimize-performance-and-costs-using-azure-disk-storage/4-optimize-performance-and-costs-using-performance-scaling-options).
 
 ## Standard SSD managed disks
 
-Azure Standard SSD managed disks are a cost-effective storage option for VMs that need consistent performance at lower speeds. Standard SSD disks aren't as fast as Premium SSD disks  or Ultra Disk Storage, but they still provide single-digit millisecond latencies and up to 6,000 IOPS and 750 MBps of throughput. You can attach Standard SSD disks to any VM, regardless of its size.
+Azure Standard SSD managed disks are a cost-effective storage option for VMs that need consistent performance at lower speeds. Standard SSD disks aren't as fast as Premium SSD disks or Ultra Disk Storage, but they still provide single-digit millisecond (ms) latencies and up to 6,000 IOPS and 750 megabytes per second (MBps) of throughput. You can attach Standard SSD disks to any VM, regardless of its size.
 
 The following table provides the performance characteristics of Standard SSD disks in several sizes:
 
-| Disk size name | Disk size (GB) | IOPS | Throughput (mbps) |
+| Disk size name | Disk size (GB) | IOPS | Throughput (MBps) |
 | --- | --- |--- | --- |
 | E4 | 32 | 500 | 60 |
 | E15 | 256 | 500 | 60 |
@@ -82,7 +82,7 @@ Use Standard SSD disks when you have budgetary constraints and a workload that i
 
 In Azure Standard HDD managed disks, data is stored on conventional magnetic disk drives with moving spindles. Disks are slower and the variation in speeds is higher compared to solid-state drives (SSDs). Standard SSD disks are designed to deliver write latencies under 10 ms and read latencies under 20 ms for most operations. Like Standard SSD disks, you can use Standard HDD disks for any VM.
 
-The following table provides the performance characteristics of standard HDD disks in several sizes:
+The following table provides the performance characteristics of Azure Standard HDD disks in several sizes:
 
 | Disk size name | Disk size (GB) | IOPS | Throughput (MBps) |
 | --- | --- |--- | --- |
