@@ -35,6 +35,22 @@ The following routing table shows the routes known to Fabrikam. Again, the final
 
 ![Fabrikam routing table showing Global VNet peering entry 10.17.26.0/24.](../media/fabrikamvm-routes-peering-annotated.png)
 
+## Configure VNet Peering
+
+Here are the steps to configure VNet peering. Notice you will need two virtual networks. To test the peering, you will need a virtual machine in each network. Initially, the VMs will not be able to communicate, but after configuration the communication will work. The step that is new is configuring the peering of the virtual networks.
+
+1.  Create two virtual networks.
+2.  **Peer the virtual networks**.
+3.  Create virtual machines in each virtual network.
+4.  Test the communication between the virtual machines.
+
+To configure the peering use the **Add peering** page. There are only a few optional configuration parameters to consider.
+
+![Image](../media/Conf_VNet_Peering.png)
+
+**Note:** When you add a peering on one virtual network, the second virtual network configuration is automatically added.
+
+
 ## Gateway Transit and Connectivity
 
 When virtual networks are peered, you configure a VPN gateway in the peered virtual network as a transit point. In this case, a peered virtual network uses the remote gateway to gain access to other resources. A virtual network can have only one gateway. Gateway transit is supported for both VNet Peering and Global VNet Peering.

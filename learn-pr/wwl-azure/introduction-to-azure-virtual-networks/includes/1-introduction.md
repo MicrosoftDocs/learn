@@ -1,7 +1,6 @@
 
 
 Imagine yourself in the role of a network engineer at an organization that is in the process of migrating infrastructure and applications to Azure. As the network engineer you need users to be able to access resources such as file storage, databases, and applications on-premises and in Azure. Azure virtual networks enable you to provide secure, reliable access to your Azure infrastructure and resources, and on-premises resources.
-
  
 
 ## Learning objectives
@@ -22,6 +21,12 @@ In this module, you will:
 
 ## Prerequisites
 
-- You should be familiar with basic networking concepts and terminology.
+- You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS) and routing
 
-- You should be familiar with Azure infrastructure concepts and terminology.
+- You should have experience with network connectivity methods, such as VPN or WAN
+
+- You should be able to navigate the Azure portal
+
+- You should have experience with the Azure portal and Azure PowerShell
+
+
