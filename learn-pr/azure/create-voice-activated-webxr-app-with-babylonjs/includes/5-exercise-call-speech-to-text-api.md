@@ -216,7 +216,10 @@ Let's create a Speech Recognizer using the Azure Speech JavaScript SDK.
 
 Now that the code is ready, it is time to verify that the web application works as intended. We will need to make sure that the dragon and magic circle models fade in when users say "go dragon" to the application.
 
-1. In your VSCode terminal, make sure you are in the root folder of the web project, and run `npm start`.
+1. In your VSCode terminal, run `npm start`.
+
+    :::image type="content" source="../media/terminal-npm-start.PNG" alt-text="Screenshot of the N P M start command in a Visual Studio Code terminal.":::
+
 1. Once the application finishes compiling, open your browser and head to **localhost:8080**.
 1. If the app loads successfully, you will see an empty scene with a dark background.
 
