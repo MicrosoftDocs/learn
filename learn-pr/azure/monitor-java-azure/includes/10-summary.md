@@ -1,4 +1,4 @@
-Congratulations! You've learned how to use monitoring to for your Java applications on Azure.
+Congratulations! You've learned how to use monitoring for your Java applications on Azure.
 
 To that end, you've done the following actions:
 
