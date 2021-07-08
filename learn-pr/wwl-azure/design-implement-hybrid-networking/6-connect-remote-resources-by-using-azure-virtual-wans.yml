@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 13
 content: |
   [!include[](includes/6-connect-remote-resources-by-using-azure-virtual-wans.md)]
 quiz:

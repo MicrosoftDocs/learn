@@ -4,9 +4,9 @@ To integrate your on-premises environment with Azure, you need the ability to cr
 
 When you're working toward integrating your on-premises network with Azure, there needs to be a bridge between them. VPN Gateway is an Azure service that provides this functionality. A VPN gateway can send encrypted traffic between the two networks. VPN gateways support multiple connections, which enable them to route VPN tunnels that use any available bandwidth. Each virtual network can have only one VPN gateway. All connections to that VPN gateway share the available network bandwidth. VPN gateways can also be used for connections between virtual networks in Azure.
 
-Within each virtual network gateway there are two or more virtual machines (VMs). These VMs have been deployed to a special subnet that you specify, called the gateway subnet. They contain routing tables for connections to other networks, along with specific gateway services. These VMs and the gateway subnet are similar to a hardened network device. You don't need to configure these VMs directly and should not deploy any additional resources into the gateway subnet.
+## Azure VPN Gateways 
 
-When you configure a virtual network gateway in Azure, you configure a setting that specifies the gateway type. The gateway type determines how the virtual network gateway will be used and the actions that the gateway takes. The gateway type 'Vpn' specifies that the type of virtual network gateway created is a 'VPN gateway'.
+Within each virtual network gateway there are two or more virtual machines (VMs). These VMs have been deployed to a special subnet that you specify, called the gateway subnet. They contain routing tables for connections to other networks, along with specific gateway services. These VMs and the gateway subnet are similar to a hardened network device. You don't need to configure these VMs directly and should not deploy any additional resources into the gateway subnet.
 
 Creating a virtual network gateway can take some time to complete, so it's vital that you plan appropriately. When you create a virtual network gateway, the provisioning process generates the gateway VMs and deploys them to the gateway subnet. These VMs will have the settings that you configure on the gateway.
 
@@ -98,14 +98,14 @@ RouteBased VPNs were previously called dynamic routing gateways in the classic d
 
 The following table lists the requirements for PolicyBased and RouteBased VPN gateways. This table applies to both the Resource Manager and classic deployment models. For the classic model, PolicyBased VPN gateways are the same as Static gateways, and Route-based gateways are the same as Dynamic gateways.
 
-|                                       | ‎**PolicyBased Basic VPN Gateway** | **RouteBased Basic VPN Gateway**                             | **RouteBased Standard VPN Gateway**                          | **RouteBased High Performance VPN Gateway**                  |
-| - |  |  |  |  |
-| **Site-to-Site connectivity (S2S)**   | PolicyBased VPN configuration     | RouteBased VPN configuration                                 | RouteBased VPN configuration                                 | RouteBased VPN configuration                                 |
-| **Point-to-Site connectivity (P2S**)  | Not supported                     | Supported (Can coexist with S2S)                             | Supported (Can coexist with S2S)                             | Supported (Can coexist with S2S)                             |
+|                                       | ‎**PolicyBased Basic VPN Gateway** | **RouteBased Basic VPN Gateway**                                       | **RouteBased Standard VPN Gateway**                                    | **RouteBased High Performance VPN Gateway**                            |
+| - |  | --| --| --|
+| **Site-to-Site connectivity (S2S)**   | PolicyBased VPN configuration     | RouteBased VPN configuration                                           | RouteBased VPN configuration                                           | RouteBased VPN configuration                                           |
+| **Point-to-Site connectivity (P2S**)  | Not supported                     | Supported (Can coexist with S2S)                                       | Supported (Can coexist with S2S)                                       | Supported (Can coexist with S2S)                                       |
 | **Authentication method**             | Pre-shared key                    | Pre-shared key for S2S connectivity, Certificates for P2S connectivity | Pre-shared key for S2S connectivity, Certificates for P2S connectivity | Pre-shared key for S2S connectivity, Certificates for P2S connectivity |
-| **Maximum number of S2S connections** | 1                                 | 10                                                           | 10                                                           | 30                                                           |
-| **Maximum number of P2S connections** | Not supported                     | 128                                                          | 128                                                          | 128                                                          |
-| **Active routing support (BGP)** (*)  | Not supported                     | Not supported                                                | Supported                                                    | Supported                                                    |
+| **Maximum number of S2S connections** | 1                                 | 10                                                                     | 10                                                                     | 30                                                                     |
+| **Maximum number of P2S connections** | Not supported                     | 128                                                                    | 128                                                                    | 128                                                                    |
+| **Active routing support (BGP)** (*)  | Not supported                     | Not supported                                                          | Supported                                                              | Supported                                                              |
 
 
 (*) BGP is not supported for the classic deployment model.
