@@ -26,5 +26,3 @@ We've already, activated APM on creation of our Azure Spring Cloud instance with
 > [!TIP]
 > In the future, we will advance the Application Insights + Azure Spring Cloud integration to general
 > availability. Then, by default without any activation, Application Insights monitoring will be enabled by default.
-
-In the next exercise, we'll explore Application Performance Monitoring for your sample Spring application.

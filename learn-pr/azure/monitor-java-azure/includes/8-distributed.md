@@ -206,5 +206,3 @@ Application Insights can be used with any web pages - you just add a short piece
 
 > [!NOTE]
 > For more information on UI monitoring, see the Summary unit at the end of this training.
-
-The next unit is a knowledge check to see what you've learned in this module.

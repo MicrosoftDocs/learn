@@ -63,4 +63,3 @@ You now can see a warning similar to the below screen:
 https://<spring-cloud-name>-api-gateway.azuremicroservices.io/api/customer/owners/1
 ```
 
-In the next unit, we'll discuss Application Performance Monitoring (APM).

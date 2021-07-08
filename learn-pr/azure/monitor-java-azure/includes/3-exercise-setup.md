@@ -86,7 +86,3 @@ Next, navigate to the "Owners" tab and select "Find all owners".
 Confirm your sample application is up and running, populated with data and now ready for you to explore.
 
 :::image type="content" source="../media/4-petclinic.jpg" alt-text="screenshot of your Spring Cloud application" lightbox="../media/4-petclinic.jpg":::
-
-## Next steps
-
-In the next unit, you'll explore logging for your sample application.

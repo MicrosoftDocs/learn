@@ -145,6 +145,3 @@ Scroll down the metrics to see the metrics for each microservice:
 
 :::image type="content" source="../media/7-live-metrics-servers.jpg" alt-text="Screenshot showing Service live metrics view for your Azure Spring Cloud" lightbox="../media/7-live-metrics-servers.jpg":::
 
-## Next steps
-
-In the next unit, we'll discuss monitoring your entire solution.
