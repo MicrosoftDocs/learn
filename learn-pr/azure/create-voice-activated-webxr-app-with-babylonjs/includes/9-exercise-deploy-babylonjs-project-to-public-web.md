@@ -9,6 +9,9 @@ In this exercise, you'll use Azure Blob Storage to serve the amusement park appl
 Before jumping into hosting the website, we must first package our Node.js web project into a folder of static files.
 
 1. If you don't already have a terminal open in VSCode, select **Terminal** in the menu of Visual Studio Code, and then select **New Terminal** to create a new terminal.
+
+    :::image type="content" source="../media/select-new-terminal.png" alt-text="Screenshot of the Terminal dropdown menu in Visual Studio Code. The New Terminal option is surrounded by a red box.":::
+
 1. Within the terminal, make sure that you are in the **starter-code** folder, which should be the folder that you edited.
 1. Run `npm run-script build` in the terminal to package the project into static files.
 
