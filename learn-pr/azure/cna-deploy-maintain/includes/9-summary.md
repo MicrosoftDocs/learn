@@ -12,6 +12,7 @@ Now that you've completed this module, you should be able to:
 
 You can learn more by reviewing the following articles:
 
+* [Create an organization or project collection](https://docs.microsoft.com/azure/devops/organizations/accounts/create-organization?view=azure-devops)
 * [Defining cloud native](/dotnet/architecture/cloud-native/definition)
 * [DevOps](/dotnet/architecture/cloud-native/devops)
 * [What is GitHub Actions for Azure](/azure/developer/github/github-actions)
