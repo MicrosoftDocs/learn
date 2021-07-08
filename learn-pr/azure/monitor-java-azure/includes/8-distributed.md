@@ -27,7 +27,7 @@ There are actually three ways to access your application's logs: Azure Storage, 
 - Select "Azure Spring Cloud" from the list of Azure services
 - Select your Azure Spring Cloud instance
 - Next, under the Monitoring section, select **Logs**.
-- In the **Query** search box, :::image type="content" source="../media/8-cloud-logs.jpg" alt-text="Screenshot showing query for Azure spring cloud logs":::
+- In the **Query** search box, :::image type="content" source="../media/8-cloud-logs.jpg" alt-text="Screenshot showing query for Azure spring cloud logs" lightbox="../media/8-cloud-logs.jpg":::
 
   - to view logs, run a query such as:
 
@@ -105,7 +105,7 @@ In our sample application, your slow query logs are set up to be piped to Azure 
 - Select your Azure Database for MySQL server you use for your Azure Spring Cloud
 - Next, under the Monitoring section, select **Logs**.
 
-:::image type="content" source="../media/8-MYSQL-logs.jpg" alt-text="Screenshot showing query for queries longer than 1 second":::
+:::image type="content" source="../media/8-MYSQL-logs.jpg" alt-text="Screenshot showing query for queries longer than 1 second" lightbox="../media/8-MYSQL-logs.jpg":::
 
 - In the **Query** search box,
 
@@ -181,7 +181,7 @@ The **Long running queries tab** shows the top 5 queries by average duration per
 > As part of the setup script, your Azure Spring Cloud sample application activated Query Performance Insights for Long running queries for your MySQL instance.
 > For Query Performance Insight to function, data must exist in the Query Store and can take a few minutes to reflect.
 
-:::image type="content" source="../media/8-query-performance.jpg" alt-text="Screenshot showing Long running queries view for MySQL server":::
+:::image type="content" source="../media/8-query-performance.jpg" alt-text="Screenshot showing Long running queries view for MySQL server" lightbox="../media/8-query-performance.jpg":::
 
 ### Wait statistics
 
