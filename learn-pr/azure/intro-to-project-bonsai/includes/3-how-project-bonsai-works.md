@@ -123,18 +123,15 @@ based on past training.
 
 ## Work with the training curriculum
 
-The training engine uses your training curriculum (your goals) to:
+You specify instruction for the training engine as Inkling goals. Goals let you
+define your training curriculum with intuitive objectives instead of detailed
+reward and terminal functions. Available goal objectives include:
 
-- Select the best learning algorithm for your brain.
-- Report on training progress based on the goals you specify.
-
-Available goal objectives include:
-
-- Avoid. Avoid a defined region.
-- Drive. Get to a target as quickly as possible and stay near it.
-- Maximize. Push a target value as high as possible within a given range.
-- Minimize. Push a target value as low as possible within a given range.
-- Reach. Get to a target as quickly as possible.
+- **Avoid**. Do not enter a defined region.
+- **Drive**. Get to a target as quickly as possible and stay near it.
+- **Maximize**. Push a target value as high as possible within a given range.
+- **Minimize**. Push a target value as low as possible within a given range.
+- **Reach**. Get to a target as quickly as possible.
 
 > [!TIP]
 > You can define any number of goals. The training engine attempts to satisfy them all.
