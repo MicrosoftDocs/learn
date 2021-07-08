@@ -1,6 +1,9 @@
-Batch Transcription can process WAV (PCM Codec), MP3 (PCM Codec), and OGG (Opus Codec) files sampled at 8 kHz or 16 kHz. These must be at a publicly accessible or shared access signature (SAS) URI.  It can process one or more files per batch. If more than one file is provided, the system attempts to process these in parallel, minimizing turn-around time.
+Batch Transcription can transcribe entire storage containers with a single POST request. While you can also use the SDK to integrate transcription into your existing applications, in this exercise we'll use a POST request to closely examine the entire end-to-end process.
 
-We will prepare an environment, submit our jobs, check the job status, then view the results. We will work in Bash here, though note most commands can be executed through languages such as C#.
+We'll prepare an environment, submit our jobs, check the job status, then view the results. We'll work in Bash here, though note most commands can be executed through languages such as C# and Python. If you want to dive deeper, we have a [GitHub repository](https://github.com/MicrosoftDocs/mslearn-batch-stt) available.
+
+
+Batch Transcription can process WAV (PCM Codec), MP3 (PCM Codec), and OGG (Opus Codec) files sampled at 8 kHz or 16 kHz. These must be at a publicly accessible or shared access signature (SAS) URI.  It can process one or more files per batch. If more than one file is provided, the system attempts to process these in parallel, minimizing turn-around time.
 ​
 ## Preparing the environment
 
@@ -42,11 +45,13 @@ Let's start by preparing our environment. The following script creates our cogni
         --connection-string $blobConnectionString
     
     ```
-    
+
 1. Paste the code into the Cloud Shell session by selecting Ctrl+Shift+V on Windows and Linux, or Cmd+Shift+V on macOS
 1. Press <kbd>Enter</kbd> to run the command
 
 ## Load audio files into the storage container
+
+Batch Transcription can process WAV (PCM Codec), MP3 (PCM Codec), and OGG (Opus Codec) files sampled at 8 kHz or 16 kHz. These must be at a publicly accessible or shared access signature (SAS) URI. Next, you'll copy the example audio files from GitHub into the storage container you just created.
 
 1. Run the following command to download the audio files
 
@@ -63,9 +68,9 @@ Let's start by preparing our environment. The following script creates our cogni
 
 ## Set up access keys and tokens
 
-To produce and use transcriptions, we need tokens and access keys.
+To produce and use transcriptions, we need tokens and access keys. Next, you'll  generate a SAS URI that will allow the Batch Transcription service to securely access the audio files in your storage container.
 
-First, the transcription service will need to be passed a URI that allows it to read our data. As we have security preventing public access we will need to generate an access token that can be appended to the URL.
+First, the transcription service will need to be passed the URI that allows it to know where the files are kept, and give the service access to list and read our data. As Azure provides security by default, preventing public access to your files, we'll generate an access token that can be appended to the URL for the container.
 
 1. Run the following command to generate the SAS token
 
@@ -85,7 +90,14 @@ First, the transcription service will need to be passed a URI that allows it to 
 
 ## Submitting the job
 
-Now all the services are set up, you are going to submit the transcription job. We need to create a JSON body for the request, stating where our container is and the transcription options.
+Now all the services are set up, you are going to submit the transcription job. We need to create a JSON body for the request, stating where our container is and the transcription options. First, the command will create the secure URL for the container where the audio files are kept, using the names of the blob and container, and appending the SAS token you just generated to the end of the URL.
+
+Then, the command will create a JSON object, that contains the optional settings and locale for the transcription, along with the secure URL for the audio files.
+
+> [!TIP]
+>  
+> You can also include the URL of a container to save the transcription results directly by using `"destinationContainerUrl": "<URL for destination container>"`.
+> When not specified, Microsoft stores the results in a storage container managed by Microsoft.
 
 1. Run the following command to create the JSON body for your request, and submit the job
 
