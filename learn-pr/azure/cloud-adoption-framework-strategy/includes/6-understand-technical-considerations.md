@@ -43,7 +43,7 @@ Understand and forecast your costs: Monitor your bill, set budgets, and allocate
 Learn more:
 
 * [Optimize costs from recommendations](/azure/cost-management-billing/costs/tutorial-acm-opt-recommendations?azure-portal=true).
-* [Prevent unexpected charges](/azure/cost-management-billing-overview?azure-portal=true).
+* [Prevent unexpected charges](/azure/cost-management-billing/cost-management-billing-overview).
 * Cost-optimize your workloads: Optimize your resources and architecture with Azure best practices from Azure Advisor and the Microsoft Azure Well-Architected Framework.
 
 Learn more:
