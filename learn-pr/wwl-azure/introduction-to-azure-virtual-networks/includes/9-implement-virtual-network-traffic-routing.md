@@ -129,9 +129,9 @@ The last step in our example is to associate the Public subnet with the new rout
 
 Imagine your attempts to connect to a specific virtual machine (VM) in your Azure virtual network fail persistently. You can diagnose a routing problem by viewing the routes that are effective for a network interface in a VM. The effective routes for all network interfaces in a subnet are the combination of routes you create, Azure's default routes, and any routes propagated from your on-premises network through an Azure VPN gateway via the border gateway protocol (BGP). 
 
-You can view the effective routes for each network interface by using the Azure Portal, Azure PowerShell, or Azure CLI. The following steps show examples of each technique. In each case, output is only returned if the VM is in the running state. If there are multiple network interfaces attached to the VM, you can review the effective routes for each network interface. Since each network interface can be in a different subnet, each network interface can have different effective routes.
+You can view the effective routes for each network interface by using the Azure portal, Azure PowerShell, or Azure CLI. The following steps show examples of each technique. In each case, output is only returned if the VM is in the running state. If there are multiple network interfaces attached to the VM, you can review the effective routes for each network interface. Since each network interface can be in a different subnet, each network interface can have different effective routes.
 
-### View effective routes in Azure Portal
+### View effective routes in Azure portal
 
 1. Log into the Azure portal with an Azure account that has the [necessary permissions](/azure/virtual-network/virtual-network-network-interface).
 2. In the search box, enter the name of the VM that you want to investigate. 
@@ -163,14 +163,14 @@ Steps you might take to resolve the routing problem might include:
 - Ensure that devices such as Azure VPN gateway or network virtual appliances you've deployed are operating as intended. 
 
 
-## Secure a VNet by using forced tunnelling
+## Secure a VNet by using forced tunneling
 
 Forced tunneling lets you redirect or "force" all Internet-bound traffic back to your on-premises location via a Site-to-Site VPN tunnel for inspection and auditing. This is a critical security requirement for most enterprise IT policies. If you don't configure forced tunneling, Internet-bound traffic from your VMs in Azure always traverses from the Azure network infrastructure directly out to the Internet, without the option to allow you to inspect or audit the traffic. Unauthorized Internet access can potentially lead to information disclosure or other types of security breaches. Forced tunneling can be configured by using Azure PowerShell. It can't be configured using the Azure portal. 
 
 In the following example, the Frontend subnet is not force tunneled. The workloads in the Frontend subnet can continue to accept and respond to customer requests from the Internet directly. The Mid-tier and Backend subnets are forced tunneled. Any outbound connections from these two subnets to the Internet will be forced or redirected back to an on-premises site via one of the Site-to-site (S2S) VPN tunnels.
 ![Backend and Mid-tier subnets Forced Tunneled via S2S VPN.Frontend subnets routed directly to Internet.](../media/forced-tunnel.png)
 
-### Configure forced tunnelling
+### Configure forced tunneling
 
 Forced tunneling in Azure is configured using virtual network custom user-defined routes.
 
@@ -179,7 +179,7 @@ Forced tunneling in Azure is configured using virtual network custom user-define
  - On-premises routes: Route to the Azure VPN gateway.
  - Default route: Route directly to the Internet. Packets destined to the private IP addresses not covered by the previous two routes are dropped.
 
-- To configure forced tunnelling, you must:
+- To configure forced tunneling, you must:
  - Create a routing table.
  - Add a user-defined default route to the VPN Gateway.
  - Associate the routing table to the appropriate VNet subnet(s).
