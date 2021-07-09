@@ -26,27 +26,27 @@ Next, in the bash window, run the following commands to clone the sample reposit
    code deployPetClinicApp.sh
    ```
 
-## Setup and run the Setup script
+## Set up and run the Setup script
 
-When you run the above command, a window will pop up with the file 'deployPetClinicApp.sh' ready to be edited in the built-in Azure editor.
+When you run the above command, a window will pop up with the file `deployPetClinicApp.sh` ready to be edited in the built-in Azure editor.
 
-- At the top of the `deployPetClinicApp.sh` file, edit the following variables to customize the scripts parameters for your environment:
+1. At the top of the `deployPetClinicApp.sh` file, edit the following variables to customize the scripts parameters for your environment:
 
-| Variable | Description |
-|-|-|
-| resource_group | Provide a new or existing resource group name |
-| region | The Azure region you'll use. You can use `westeurope` by default, but we recommend that you use a region close to where you live and that also support Azure Spring Cloud. To see the full list of available regions, visit the **Azure Spring Cloud Availability by Region** in the Summary unit at the end of this module |
-| spring_cloud_service | Name of your Azure Spring Cloud instance |
-| mysql_server_name | The name of your MySQL server. It should be unique across Azure |
-| mysql_server_admin_name | Username for the MySQL Administrator. The admin name can't be "azure_superuser", "admin", "administrator", "root", "guest, or "public" |
-| mysql_server_admin_password | A new password for the server admin user. The password must be 8 to 128 characters long and contain a combination of uppercase or lowercase letters, numbers, and non-alphanumeric characters (!, $, #, %, and so on).|
-| log_analytics | Name of your Azure Log Analytics workspace |
+   | Variable | Description |
+   |-|-|
+   | resource_group | Provide a new or existing resource group name |
+   | region | The Azure region you'll use. You can use `westeurope` by default, but we recommend that you use a region close to where you live and that also support Azure Spring Cloud. To see the full list of available regions, visit the **Azure Spring Cloud Availability by Region** in the Summary unit at the end of this module |
+   | spring_cloud_service | Name of your Azure Spring Cloud instance |
+   | mysql_server_name | The name of your MySQL server. It should be unique across Azure |
+   | mysql_server_admin_name | Username for the MySQL Administrator. The admin name can't be "azure_superuser", "admin", "administrator", "root", "guest, or "public" |
+   | mysql_server_admin_password | A new password for the server admin user. The password must be 8 to 128 characters long and contain a combination of uppercase or lowercase letters, numbers, and non-alphanumeric characters (!, $, #, %, and so on).|
+   | log_analytics | Name of your Azure Log Analytics workspace |
 
-- Save the file by selecting the ... action panel in the top right of the editor and select "Save".
+2. Save the file by selecting the ... action panel in the top right of the editor and select "Save".
 
-- Close the editor - open the ... action panel in the top right of the editor and select "Close Editor".
+3. Close the editor - open the ... action panel in the top right of the editor and select "Close Editor".
 
-- Don't close the Azure Cloud Shell, as next, we'll run the setup script.
+4. Don't close the Azure Cloud Shell, as next, we'll run the setup script.
 
 ## Run the setup script
 
@@ -67,18 +67,22 @@ bash deployPetClinicApp.sh
 
 Next, we'll verify your environment via the Azure portal.
 
-- Open the Azure portal
-- Select "Azure Spring Cloud" from the list of Azure services
-- Select your Azure Spring Cloud instance
-- On the right-hand side, select "Apps" under settings
-- Verify all the applications are running and registered
+1. Open the Azure portal
 
-:::image type="content" source="../media/3-app-selection.jpg" alt-text="screenshot showing applications under your spring cloud" lightbox="../media/3-app-selection.jpg":::
+2. Select "Azure Spring Cloud" from the list of Azure services
+3. Select your Azure Spring Cloud instance
 
-- On the left-hand side, select the "api-gateway" application
-- The URL for your application is listed on the left-hand side properties as "URL"
+4. On the right-hand side, select "Apps" under settings
 
-:::image type="content" source="../media/3-gateway-url.jpg" alt-text="screenshot showing the Spring Cloud gateway url" lightbox="../media/3-gateway-url.jpg":::
+5. Verify all the applications are running and registered
+
+   :::image type="content" source="../media/3-app-selection.jpg" alt-text="screenshot showing applications under your spring cloud" lightbox="../media/3-app-selection.jpg":::
+
+6. On the left-hand side, select the "api-gateway" application
+
+7. The URL for your application is listed on the left-hand side properties as "URL"
+
+   :::image type="content" source="../media/3-gateway-url.jpg" alt-text="screenshot showing the Spring Cloud gateway url" lightbox="../media/3-gateway-url.jpg":::
 
 In a web browser, navigate to the URL of your api-gateway to open the Pet Clinic microservice application.
 

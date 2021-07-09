@@ -35,31 +35,29 @@ By default, `az spring-cloud app log tail` prints only existing logs streamed to
 az spring-cloud app logs --name customers-service -f
 ```
 
-## Errors and Warnings exercise
+## Errors and warnings exercise
 
 Next, we'll create an error, to show the value of how you can quickly debug and find its root cause.
 
-- Open the customers-service and follow the logs:
+1. Open the customers-service and follow the logs:
 
-```azurecli
-az spring-cloud app logs --name customers-service -f
-```
+    ```azurecli
+    az spring-cloud app logs --name customers-service -f
+    ```
 
-- Next, in a web browser, open a new window and trigger a warning with the following command:
-(Replace the "<spring-cloud-name"> with the name of your spring cloud instance)
+2. Next, in a web browser, open a new window and trigger a warning with the following command: (Replace the "<spring-cloud-name>" with the name of your spring cloud instance)
 
-```html
-https://<spring-cloud-name>-api-gateway.azuremicroservices.io/api/customer/owners/George
-```
+    ```html
+    https://<spring-cloud-name>-api-gateway.azuremicroservices.io/api/customer/owners/George
+    ```
 
-Accessing the above URL triggers a warning, as the variable "George" cannot be cast into a number to search for a customer.
+3. Accessing the above URL triggers a warning, as the variable "George" cannot be cast into a number to search for a customer.
 You now can see a warning similar to the below screen:
 
-:::image type="content" source="../media/5-warning.jpg" alt-text="screenshot of Azure Cloud Shell with log warning" lightbox="../media/5-warning.jpg":::
+   :::image type="content" source="../media/5-warning.jpg" alt-text="screenshot of Azure Cloud Shell with log warning" lightbox="../media/5-warning.jpg":::
 
-- To resolve this warning, in a web browser, rather search for the customer using the customer ID:
+4. To resolve this warning, in a web browser, rather search for the customer using the customer ID:
 
-```html
-https://<spring-cloud-name>-api-gateway.azuremicroservices.io/api/customer/owners/1
-```
-
+    ```html
+    https://<spring-cloud-name>-api-gateway.azuremicroservices.io/api/customer/owners/1
+    ```

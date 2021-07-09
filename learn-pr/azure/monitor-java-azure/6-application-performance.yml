@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.monitor-java-azure.application-performance
-title: Application Performance Monitoring
+title: Application performance monitoring
 metadata:
   unitType: learning-content
-  title: Application Performance Monitoring
-  description: We discuss Application Performance Monitoring (APM) concepts
+  title: Application performance monitoring
+  description: We discuss application performance monitoring (APM) concepts
   ms.date: 07/07/2021
   author: roryp
   ms.author: ropreddy

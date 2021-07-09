@@ -2,9 +2,9 @@ Congratulations! You've learned how to use monitoring for your Java applications
 
 To that end, you've done the following actions:
 
-- Learned about the different forms of Monitoring on Azure.
+- Learned about the different forms of monitoring on Azure.
 
-- Build and deploy a Sample Microservices Application and configured it for Azure Application Performance Monitoring (APM).
+- Build and deploy a sample microservices application and configured it for application performance monitoring (APM).
 
 - Monitored the application with Azure Application Insights.
 
@@ -20,8 +20,8 @@ az group delete --name <your Resource Group Name> --yes
 
 ### Delete your log analytics workspace
 
-Deleting your resource group, will soft delete your Log Analytics workspace. When soft deleting a log analytics workspace, it gets into a soft-delete state to allow its recovery including data and connected agents within 14 days.
-If you wish to rerun the setup script, and re-create your resources, either create a new log analytics workspace with a new name, or use the below command to permanently delete the old log analytics workspace:
+Deleting your resource group, will soft delete your Azure Log Analytics workspace. When soft deleting an Azure Log Analytics workspace, it gets into a soft-delete state to allow its recovery including data and connected agents within 14 days.
+If you wish to rerun the setup script, and re-create your resources, either create a new workspace with a new name, or use the below command to permanently delete the old workspace:
 
 ```azurecli
 az monitor log-analytics workspace delete --force true --resource-group <your Resource Group Name> --workspace-name <your log analytics workspace name>

@@ -3,7 +3,7 @@ uid: learn.monitor-java-azure.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Knowledge check of what your learned
+  description: Knowledge check of what you've learned
   ms.date: 07/07/2021
   author: roryp
   ms.author: ropreddy
@@ -23,7 +23,7 @@ quiz:
     - content: "Metrics"
       isCorrect: false
       explanation: "Incorrect. Metrics are values that represent the relative health, stability, and availability of resources."    
-  - content: "Which feature of Application insights allow you to view your application's performance in real time?"
+  - content: "Which feature of Application Insights allow you to view your application's performance in real time?"
     choices:
     - content: Availability.
       isCorrect: false

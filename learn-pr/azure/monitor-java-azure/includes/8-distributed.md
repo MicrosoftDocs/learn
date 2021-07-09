@@ -23,33 +23,39 @@ There are actually three ways to access your application's logs: Azure Storage, 
 > [!IMPORTANT]
 > The Log data ingestion time in Azure Monitor can take up to 15 minutes. If data is not found in Log Analytics, it may take additional time to ingest Azure Spring Cloud log data.
 
-- Open the Azure portal
-- Select "Azure Spring Cloud" from the list of Azure services
-- Select your Azure Spring Cloud instance
-- Next, under the Monitoring section, select **Logs**.
-- In the **Query** search box, :::image type="content" source="../media/8-cloud-logs.jpg" alt-text="Screenshot showing query for Azure spring cloud logs" lightbox="../media/8-cloud-logs.jpg":::
+1. Open the Azure portal
 
-  - to view logs, run a query such as:
+2. Select "Azure Spring Cloud" from the list of Azure services
 
-    ```sql
-    AppPlatformLogsforSpring
-    | limit 50
-    ```
+3. Select your Azure Spring Cloud instance
 
-  - to view metrics, enter a query such as:
+4. Next, under the Monitoring section, select **Logs**.
 
-    ```sql
-    AzureMetrics
-    | limit 50
-    ```
+5. In the **Query** search box:
 
-  - You can search the logs of the specific application or instance by setting a filter condition:
+   :::image type="content" source="../media/8-cloud-logs.jpg" alt-text="Screenshot showing query for Azure spring cloud logs" lightbox="../media/8-cloud-logs.jpg":::
 
-    ```sql
-    AppPlatformLogsforSpring
-    | where ServiceName == "YourServiceName" and AppName == "YourAppName" and InstanceName == "YourInstanceName"
-    | limit 50
-    ```
+   - to view logs, run a query such as:
+
+     ```sql
+     AppPlatformLogsforSpring
+     | limit 50
+     ```
+
+   - to view metrics, enter a query such as:
+
+     ```sql
+     AzureMetrics
+     | limit 50
+     ```
+
+   - You can search the logs of the specific application or instance by setting a filter condition:
+
+     ```sql
+     AppPlatformLogsforSpring
+     | where ServiceName == "YourServiceName" and AppName == "YourAppName" and InstanceName == "YourInstanceName"
+     | limit 50
+     ```
 
 ### Analyze the Application logs
 
@@ -57,38 +63,42 @@ Application logs provide critical information and verbose logs about your applic
 
 ### Show application logs from Azure Spring Cloud
 
-- Open the Azure portal
-- Select "Azure Spring Cloud" from the list of Azure services
-- Select your Azure Spring Cloud instance
-- Next, under the Monitoring section, select **Logs**.
-- In the **Query** search box,
+1. Open the Azure portal
 
-  - To review a list of application logs from Azure Spring Cloud, sorted by time with the most recent logs shown first, run the following query:
+2. Select "Azure Spring Cloud" from the list of Azure services
 
-    ```sql
-    AppPlatformLogsforSpring
-    | project TimeGenerated , ServiceName , AppName , InstanceName , Log
-    | sort by TimeGenerated desc
-    ```
+3. Select your Azure Spring Cloud instance
 
-  - To review unsorted log entries that mention an error or exception, run the following query:
+4. Next, under the Monitoring section, select **Logs**.
 
-    ```sql
-    AppPlatformLogsforSpring
-    | project TimeGenerated , ServiceName , AppName , InstanceName , Log
-    | where Log contains "error" or Log contains "exception"
-    ```
+5. In the **Query** search box:
 
-  - To create a pie chart that displays the number of errors and exceptions logged by your application, run the following query:
+   - To review a list of application logs from Azure Spring Cloud, sorted by time with the most recent logs shown first, run the following query:
 
-    ```sql
-    AppPlatformLogsforSpring
-    | where TimeGenerated > ago(1h)
-    | where Log contains "error" or Log contains "exception"
-    | summarize count_per_app = count() by AppName
-    | sort by count_per_app desc
-    | render piechart
-    ```
+     ```sql
+     AppPlatformLogsforSpring
+     | project TimeGenerated , ServiceName , AppName , InstanceName , Log
+     | sort by TimeGenerated desc
+     ```
+
+   - To review unsorted log entries that mention an error or exception, run the following query:
+
+     ```sql
+     AppPlatformLogsforSpring
+     | project TimeGenerated , ServiceName , AppName , InstanceName , Log
+     | where Log contains "error" or Log contains "exception"
+     ```
+
+    - To create a pie chart that displays the number of errors and exceptions logged by your application, run the following query:
+
+       ```sql
+       AppPlatformLogsforSpring
+       | where TimeGenerated > ago(1h)
+       | where Log contains "error" or Log contains "exception"
+       | summarize count_per_app = count() by AppName
+       | sort by count_per_app desc
+       | render piechart
+       ```
 
 ## Database Monitoring
 
@@ -101,61 +111,63 @@ In our sample application, your slow query logs are set up to be piped to Azure 
 > [!IMPORTANT]
 > The MySQL Log data ingestion time in Azure Monitor can take up to 30 minutes. If data is not found in Log Analytics, it may take additional time to ingest MySQL log data.
 
-- Sign in to the Azure portal.
-- Select your Azure Database for MySQL server you use for your Azure Spring Cloud
-- Next, under the Monitoring section, select **Logs**.
+1. Sign in to the Azure portal.
 
-:::image type="content" source="../media/8-MYSQL-logs.jpg" alt-text="Screenshot showing query for queries longer than 1 second" lightbox="../media/8-MYSQL-logs.jpg":::
+2. Select your Azure Database for MySQL server you use for your Azure Spring Cloud
 
-- In the **Query** search box,
+3. Next, under the Monitoring section, select **Logs**.
 
-  - Retrieve all Queries longer than 1-second
+   :::image type="content" source="../media/8-mysql-logs.jpg" alt-text="Screenshot showing query for queries longer than 1 second" lightbox="../media/8-mysql-logs.jpg":::
 
-    ```sql
-    AzureDiagnostics
-    | where Category == 'MySqlSlowLogs'
-    | project TimeGenerated, LogicalServerName_s, event_class_s, start_time_t , query_time_d, sql_text_s 
-    ```
+4. In the **Query** search box,
 
-  - List top five longest queries
+   - Retrieve all Queries longer than 1-second
 
-    ```sql
-    AzureDiagnostics
-    | where Category == 'MySqlSlowLogs'
-    | project TimeGenerated, LogicalServerName_s, event_class_s, start_time_t , query_time_d, sql_text_s 
-    | order by query_time_d desc
-    | take 5
-    ```
+     ```sql
+     AzureDiagnostics
+     | where Category == 'MySqlSlowLogs'
+     | project TimeGenerated, LogicalServerName_s, event_class_s, start_time_t , query_time_d, sql_text_s 
+     ```
 
-  - Summarize slow queries by minimum, maximum, average, and standard deviation query time
+   - List top five longest queries
 
-    ```sql
-    AzureDiagnostics
-    | where Category == 'MySqlSlowLogs'
-    | project TimeGenerated, LogicalServerName_s, event_class_s, start_time_t , query_time_d, sql_text_s 
-    | summarize count(), min(query_time_d), max(query_time_d), avg(query_time_d), stdev(query_time_d), percentile(query_time_d, 95) by LogicalServerName_s
-    ```
+     ```sql
+     AzureDiagnostics
+     | where Category == 'MySqlSlowLogs'
+     | project TimeGenerated, LogicalServerName_s, event_class_s, start_time_t , query_time_d, sql_text_s 
+     | order by query_time_d desc
+     | take 5
+     ```
 
-  - Graph the slow query distribution on a particular server
+   - Summarize slow queries by minimum, maximum, average, and standard deviation query time
 
-    ```sql
-    AzureDiagnostics
-    | where Category == 'MySqlSlowLogs'
-    | project TimeGenerated, LogicalServerName_s, event_class_s, start_time_t , query_time_d, sql_text_s 
-    | summarize count() by LogicalServerName_s, bin(TimeGenerated, 5m)
-    | render timechart
-    ```
-  
-The audit log can also be used to track database-level activity and is commonly used for compliance. Audit logs are integrated with Azure Monitor Diagnostic Logs. In your sample, we've enabled audit logs on your MySQL server so you can do further analysis of your audited events.
+     ```sql
+     AzureDiagnostics
+     | where Category == 'MySqlSlowLogs'
+     | project TimeGenerated, LogicalServerName_s, event_class_s, start_time_t , query_time_d, sql_text_s 
+     | summarize count(), min(query_time_d), max(query_time_d), avg(query_time_d), stdev(query_time_d), percentile(query_time_d, 95) by LogicalServerName_s
+     ```
 
-- Below is a sample query, that retrieves the general MySQL log:
+   - Graph the slow query distribution on a particular server
 
-    ```sql
-    AzureDiagnostics
-    | where Category == 'MySqlAuditLogs' and event_class_s == "general_log"
-    | project TimeGenerated, LogicalServerName_s, event_class_s, event_subclass_s, event_time_t, user_s , ip_s , sql_text_s 
-    | order by TimeGenerated desc
-    ```
+     ```sql
+     AzureDiagnostics
+     | where Category == 'MySqlSlowLogs'
+     | project TimeGenerated, LogicalServerName_s, event_class_s, start_time_t , query_time_d, sql_text_s 
+     | summarize count() by LogicalServerName_s, bin(TimeGenerated, 5m)
+     | render timechart
+     ```
+
+5. The audit log can also be used to track database-level activity and is commonly used for compliance. Audit logs are integrated with Azure Monitor Diagnostic Logs. In your sample, we've enabled audit logs on your MySQL server so you can do further analysis of your audited events.
+
+   - Below is a sample query, that retrieves the general MySQL log:
+
+      ```sql
+      AzureDiagnostics
+      | where Category == 'MySqlAuditLogs' and event_class_s == "general_log"
+      | project TimeGenerated, LogicalServerName_s, event_class_s, event_subclass_s, event_time_t, user_s , ip_s , sql_text_s 
+      | order by TimeGenerated desc
+      ```
 
 ## Query Store and Performance Insights
 
@@ -169,9 +181,9 @@ Query Performance Insight helps you to quickly identify what your longest runnin
 
 The Query Performance Insight view in the Azure portal will surface visualizations on key information from Query Store.
 
-- Sign in to the Azure portal.
-- Select your Azure Database for MySQL server you use for your Azure Spring Cloud
-- In the portal page of your Azure Database for MySQL server, select **Query Performance Insight** under the **Intelligent Performance** section of the menu bar.
+1. Sign in to the Azure portal.
+2. Select your Azure Database for MySQL server you use for your Azure Spring Cloud
+3. In the portal page of your Azure Database for MySQL server, select **Query Performance Insight** under the **Intelligent Performance** section of the menu bar.
 
 ### Long running queries
 

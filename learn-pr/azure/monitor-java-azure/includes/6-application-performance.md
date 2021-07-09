@@ -1,8 +1,8 @@
-In this unit, we look at Application Performance Monitoring (APM) concepts.
+In this unit, we look at application performance monitoring (APM) concepts.
 
 ## Continuous Monitoring
 
-Application Performance Management (APM) solutions enable you to monitor your users' experience and improve the stability of your application infrastructure. It helps identify the root cause of issues quickly to proactively prevent outages and keep users satisfied.
+Application performance management (APM) solutions enable you to monitor your users' experience and improve the stability of your application infrastructure. It helps identify the root cause of issues quickly to proactively prevent outages and keep users satisfied.
 
 APM in Azure Spring Cloud offers in-depth performance monitoring for your Spring applications without requiring ANY code changes, recompiling, retesting, or redeployment. You don't have to do ANYTHING – just deploy your applications and the monitoring data starts flowing. The benefits you get with application monitoring are:
 
@@ -15,7 +15,7 @@ APM in Azure Spring Cloud offers in-depth performance monitoring for your Spring
 
 ## Application insights
 
-Application Insights, a feature of Azure Monitor, is an extensible Application Performance Management (APM) service to monitor your live applications.
+Application Insights, a feature of Azure Monitor, is an extensible application performance management (APM) service to monitor your live applications.
 You can instrument your applications with Azure Application Insights to generate custom telemetry. This telemetry provides an extra layer of monitoring that can be beneficial in diagnosing errors and their root causes - often without having to dive into the source code.
 
 ## Enable the Java in-process monitoring agent with Azure Spring Cloud
