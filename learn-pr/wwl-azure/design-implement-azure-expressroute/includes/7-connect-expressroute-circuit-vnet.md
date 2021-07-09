@@ -4,7 +4,7 @@ An ExpressRoute circuit represents a logical connection between your on-premises
 
 In the previous exercises you created an ExpressRoute Gateway and an ExpressRoute circuit. You then learned how to configure peering for an express route circuit. You will now learn how to create a connection between your ExpressRoute circuit and Azure virtual network. 
 
-**Connect a virtual network to an ExpressRoute circuit** 
+##Connect a virtual network to an ExpressRoute circuit
 
 - You must have an active ExpressRoute circuit.
 

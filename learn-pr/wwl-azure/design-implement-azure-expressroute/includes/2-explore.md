@@ -102,7 +102,7 @@ You can enable ExpressRoute circuit either by Layer 2 connections or managed Lay
 
 On the MSEE devices, BGP keep-alive and hold-time are typically configured as 60 and 180 seconds, respectively. For that reason, when a link failure happens it can take up to three minutes to detect any link failure and switch traffic to alternate connection.
 
-You can control the BGP timers by configuring a lower BGP keep-alive and hold-time on your edge peering device. If the BGP timers are not the same between the two peering devices, the BGP session will establish using the lower time value. The BGP keep-alive can be set as low as three seconds, and the hold-time as low as 10 seconds. However, setting a very aggressive BGP timer is not recommended because the protocol is process intensive.
+You can control the BGP timers by configuring a lower BGP keep-alive and hold-time on your edge peering device. If the BGP timers are not the same between the two peering devices, the BGP session will establish using the lower time value. The BGP keep-alive can be set as low as three seconds, and the hold-time as low as 10 seconds. However, setting a very aggressive BGP timer isn't recommended because the protocol is process intensive.
 
 In this scenario, BFD can help. BFD provides low-overhead link failure detection in a sub second time interval.
 
@@ -168,192 +168,6 @@ In both examples, Azure will send traffic to 10.0.1.0/24 over the VPN connection
 > [!Warning] 
 >
 > If you advertise the same prefixes over both ExpressRoute and VPN connections, Azure will use the ExpressRoute path directly without VPN protection.
-
-Before you start your configuration, verify that you meet the following criteria:
-
-If you already have virtual network that you want to connect to, verify that none of the subnets of your on-premises network overlap with it. Your virtual network does not require a gateway subnet and cannot have any virtual network gateways.
-
-Obtain an IP address range for your hub region. The hub is a virtual network, and the address range that you specify for the hub region cannot overlap with an existing virtual network that you connect to. It also cannot overlap with the address ranges that you connect to on-premises. If you are unfamiliar with the IP address ranges located in your on-premises network configuration, coordinate with someone who can provide those details for you.
-
-**Create a virtual WAN and hub with gateways**
-
-The following Azure resources and the corresponding on-premises configurations must be in place before you proceed:
-
-- An Azure virtual WAN
-- A virtual WAN hub with an ExpressRoute gateway and a VPN gateway
-
-**Create a site for the on-premises network**
-
-The site resource is the same as the non-ExpressRoute VPN sites for a virtual WAN. The IP address of the on-premises VPN device can now be either a private IP address, or a public IP address in the on-premises network reachable via ExpressRoute private peering created in step 1.
-
-> [!Note] 
->
-> The IP address for the on-premises VPN device must be part of the address prefixes advertised to the virtual WAN hub via Azure ExpressRoute private peering.
-
-- Go to the Azure portal in your browser.
-- Select the hub that you created. On the virtual WAN hub page, under **Connectivity**, select **VPN sites**.
-- On the **VPN sites** page, select **+Create site**.
-- On the **Create site** page, fill in the following fields:
-  - **Subscription**: Verify the subscription.
-  - **Resource Group**: Select or create the resource group that you want to use.
-  - **Region**: Enter the Azure region for the VPN site resource.
-  - **Name**: Enter the name by which you want to refer to your on-premises site.
-  - **Device vendor**: Enter the vendor of the on-premises VPN device.
-  - **Border Gateway Protocol**: Select "Enable" if your on-premises network uses BGP.
-  - **Private address space**: Enter the IP address space that is located on your on-premises site. Traffic destined for this address space is routed to the on-premises network via the VPN gateway.
-  - **Hubs**: Select one or more hubs to connect this VPN site. The selected hubs must have VPN gateways already created.
-- Select **Next: Links &gt;** for the VPN link settings:
-  - **Link Name**: The name by which you want to refer to this connection.
-  - **Provider Name**: The name of the internet service provider for this site. For an ExpressRoute on-premises network, it is the name of the ExpressRoute service provider.
-  - **Speed**: The speed of the internet service link or ExpressRoute circuit.
-  - **IP address**: The public IP address of the VPN device that resides on your on-premises site. Or, for ExpressRoute on-premises, it is the private IP address of the VPN device via ExpressRoute.
-
-If BGP is enabled, it will apply to all connections created for this site in Azure. Configuring BGP on a virtual WAN is equivalent to configuring BGP on an Azure VPN gateway.
-
-Your on-premises BGP peer address must not be the same as the IP address of your VPN to the device or the virtual network address space of the VPN site. Use a different IP address on the VPN device for your BGP peer IP. It can be an address assigned to the loopback interface on the device. However, it cannot be an APIPA (169.254.x.x) address. Specify this address in the corresponding VPN site that represents the location. 
-
-- Select **Next: Review + create &gt;** to check the setting values and create the VPN site. If you selected **Hubs** to connect, the connection will be established between the on-premises network and the hub VPN gateway.
-
-**Update the VPN connection setting to use ExpressRoute**
-
-After you create the VPN site and connect to the hub, use the following steps to configure the connection to use ExpressRoute private peering:
-
-- Go back to the virtual WAN resource page and select the hub resource. Or navigate from the VPN site to the connected hub.
-
-![Azure portal - Virtual WAN page](../media/hub-selection.png)
-
-- Under **Connectivity**, select **VPN (Site-to-Site)**.
-
-![Azure portal - site-to-site VPN configuration](../media/vpn-select.png)
-
- 
-
-- Select the ellipsis (**...**) on the VPN site over ExpressRoute and select **Edit VPN connection to this hub**.
-
-![Azure portal - edit VPN to hub connection](../media/config-menu.png)
-
-- For **Use Azure Private IP Address**, select **Yes**. The setting configures the hub VPN gateway to use private IP addresses within the hub address range on the gateway for this connection, instead of the public IP addresses. This will ensure that the traffic from the on-premises network traverses the ExpressRoute private peering paths rather than using the public internet for this VPN connection. The following screenshot shows the setting:
-
-![Azure portal - VPN link configuration](../media/vpn-link-configuration.png)
-
-- Select **Save**.
-
-After you save your changes, the hub VPN gateway will use the private IP addresses on the VPN gateway to establish the IPsec/IKE connections with the on-premises VPN device over ExpressRoute.
-
-**Get the private IP addresses for the hub VPN gateway**
-
-Download the VPN device configuration to get the private IP addresses of the hub VPN gateway. You need these addresses to configure the on-premises VPN device.
-
-- On the page for your hub, select **VPN (Site-to-Site)** under **Connectivity**.
-- At the top of the **Overview** page, select **Download VPN Config**.
-- Azure creates a storage account in the resource group "microsoft-network-[location]," where location is the location of the WAN. After you apply the configuration to your VPN devices, you can delete this storage account.
-- After the file is created, select the link to download it.
-- Apply the configuration to your VPN device.
-
-**VPN device configuration file**
-
-The device configuration file contains the settings to use when you are configuring your on-premises VPN device. When you view this file, notice the following information:
-
-- **vpnSiteConfiguration**: This section denotes the device details set up as a site that is connecting to the virtual WAN. It includes the name and public IP address of the branch device.
-- **vpnSiteConnections**: This section provides information about the following settings:
-  - Address space of the virtual hub's virtual network.  
-    ‎Example: "AddressSpace":"10.51.230.0/24"
-  - Address space of the virtual networks that are connected to the hub.  
-    ‎Example: "ConnectedSubnets": ["10.51.231.0/24"]
-  - IP addresses of the virtual hub's VPN gateway. Because each connection of the VPN gateway is composed of two tunnels in active-active configuration, you will see both IP addresses listed in this file. In this example, you see Instance0 and Instance1 for each site, and they are private IP addresses instead of public IP addresses.  
-    ‎Example: "Instance0":"10.51.230.4" "Instance1":"10.51.230.5"
-  - Configuration details for the VPN gateway connection, such as BGP and pre-shared key. The pre-shared key is automatically generated for you. You can always edit the connection on the **Overview** page for a custom pre-shared key.
-
-**Example device configuration file**
-
-```JSON
-
-[{
-      "configurationVersion":{
-        "LastUpdatedTime":"2019-10-11T05:57:35.1803187Z",
-        "Version":"5b096293-edc3-42f1-8f73-68c14a7c4db3"
-      },
-      "vpnSiteConfiguration":{
-        "Name":"VPN-over-ER-site",
-        "IPAddress":"172.24.127.211",
-        "LinkName":"VPN-over-ER"
-      },
-      "vpnSiteConnections":[{
-        "hubConfiguration":{
-          "AddressSpace":"10.51.230.0/24",
-          "Region":"West US 2",
-          "ConnectedSubnets":["10.51.231.0/24"]
-        },
-        "gatewayConfiguration":{
-          "IpAddresses":{
-            "Instance0":"10.51.230.4",
-            "Instance1":"10.51.230.5"
-          }
-        },
-        "connectionConfiguration":{
-          "IsBgpEnabled":false,
-          "PSK":"abc123",
-          "IPsecParameters":{"SADataSizeInKilobytes":102400000,"SALifeTimeInSeconds":3600}
-        }
-      }]
-    },
-    {
-      "configurationVersion":{
-        "LastUpdatedTime":"2019-10-11T05:57:35.1803187Z",
-        "Version":"fbdb34ea-45f8-425b-9bc2-4751c2c4fee0"
-      },
-      "vpnSiteConfiguration":{
-        "Name":"VPN-over-INet-site",
-        "IPAddress":"13.75.195.234",
-        "LinkName":"VPN-over-INet"
-      },
-      "vpnSiteConnections":[{
-        "hubConfiguration":{
-          "AddressSpace":"10.51.230.0/24",
-          "Region":"West US 2",
-          "ConnectedSubnets":["10.51.231.0/24"]
-        },
-        "gatewayConfiguration":{
-          "IpAddresses":{
-            "Instance0":"51.143.63.104",
-            "Instance1":"52.137.90.89"
-          }
-        },
-        "connectionConfiguration":{
-          "IsBgpEnabled":false,
-          "PSK":"abc123",
-          "IPsecParameters":{"SADataSizeInKilobytes":102400000,"SALifeTimeInSeconds":3600}
-        }
-      }]
-}]
-```
-**Configuring your VPN device**
-
-If you need instructions to configure your device, you can use the instructions on the [VPN device configuration scripts page](/azure/vpn-gateway/vpn-gateway-about-vpn-devices) with the following caveats:
-
-- The instructions on the VPN device page are not written for a virtual WAN. But you can use the virtual WAN values from the configuration file to manually configure your VPN device.
-- The downloadable device configuration scripts that are for the VPN gateway do not work for the virtual WAN, because the configuration is different.
-- A new virtual WAN can support both IKEv1 and IKEv2.
-- A virtual WAN can use only route-based VPN devices and device instructions.
-
-**View your virtual WAN**
-
-- Go to the virtual WAN.
-- On the **Overview** page, each point on the map represents a hub.
-- In the **Hubs and connections** section, you can view hub, site, region, and VPN connection status. You can also view bytes in and out.
-
-**Monitor a connection**
-
-Create a connection to monitor communication between an Azure virtual machine (VM) and a remote site. The source field is the VM IP in Azure, and the destination IP is the site IP.
-
-**Clean up resources**
-
-When you no longer need these resources, you can use Remove-AzResourceGroup to remove the resource group and all the resources that it contains. Run the following PowerShell command, and replace myResourceGroup with the name of your resource group:
-
-| PowerShell                               |
-| - |
-| Remove-AzResourceGroup -Name myResourceGroup -Force |
-
 
 
 ## Design redundancy for an ExpressRoute deployment
@@ -426,12 +240,7 @@ Regional gateways
 When you create a public IP address using the **Basic** public IP SKU, the gateway is deployed as a regional gateway and does not have any zone-redundancy built into the gateway.
 
  
-
-## Configuration designs
-
-When you are designing an ExpressRoute deployment, you have several design options to choose from, depending on the specific needs of your organization.
-
-### Configure a Site-to-Site VPN as a failover path for ExpressRoute
+## Configure a Site-to-Site VPN as a failover path for ExpressRoute
 
 You can configure a Site-to-Site VPN connection as a backup for ExpressRoute. This connection applies only to virtual networks linked to the Azure private peering path. There is no VPN-based failover solution for services accessible through Azure Microsoft peering. The ExpressRoute circuit is always the primary link. Data flows through the Site-to-Site VPN path only if the ExpressRoute circuit fails. To avoid asymmetrical routing, your local network configuration should also prefer the ExpressRoute circuit over the Site-to-Site VPN. You can prefer the ExpressRoute path by setting higher local preference for the routes received the ExpressRoute.
 
@@ -443,17 +252,6 @@ You can configure a Site-to-Site VPN connection as a backup for ExpressRoute. Th
 >
 > While ExpressRoute circuit is preferred over Site-to-Site VPN when both routes are the same, Azure will use the longest prefix match to choose the route towards the packet's destination.
 
-### Selecting the steps to use
-
-There are two different sets of procedures to choose from. The configuration procedure that you select depends on whether you have an existing virtual network that you want to connect to, or you want to create a new virtual network.
-
-Need to create a new VNet 
-
-If you do not already have a virtual network, this procedure walks you through creating a new virtual network using Resource Manager deployment model and creating new ExpressRoute and Site-to-Site VPN connections. 
-
-Resource Manager deployment model VNet exists
-
-You may already have a virtual network in place with an existing Site-to-Site VPN connection or ExpressRoute connection. In this scenario if the gateway subnet mask is /28 or smaller (/28, /29, etc.), you must delete the existing gateway. If you delete and recreate your gateway, you will have downtime for your cross-premises connections. However, your VMs and services will still be able to communicate out through the load balancer while you configure your gateway if they are configured to do so.
 
 ## Use cross-region connectivity to link multiple ExpressRoute locations
 

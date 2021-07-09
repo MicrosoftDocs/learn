@@ -1,6 +1,6 @@
-ExpressRoute enables us to connect on Premises to Azure services seamlessly. Before you learn about SKU's, let's explore the various connectivity models in ExpressRoute.
+ExpressRoute enables us to connect on Premises to Azure services seamlessly. lets review some design decisions you will make before deploying an ExpressRoute circuit.
 
-## **ExpressRoute SKUs and Tiers**
+## **ExpressRoute circuit SKUs**
 
 Azure ExpressRoute has three different circuit SKUs: [Local](/azure/expressroute/expressroute-faqs), Standard, and [Premium](/azure/expressroute/expressroute-faqs). The way you are charged for your ExpressRoute usage varies between these three SKU types. 
 
@@ -11,9 +11,9 @@ Azure ExpressRoute has three different circuit SKUs: [Local](/azure/expressroute
 >
 > Based on requirements of workloads and data plan, selection of SKU types can help optimize cost and budget.
 
-### Choose a SKU model
+### Explore pricing based on ExpressRoute SKU  
 
-SKU models have been discussed previously as Local, Standard and Premium. It is a good practice to estimate costs before using Azure ExpressRoute.
+SKU models have been discussed previously as Local, Standard and Premium. It is a good practice to estimate costs before using Azure ExpressRoute as the price might affect your design decisions.
 
 Use the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/) to estimate costs before you create an Azure ExpressRoute circuit.
 
@@ -102,24 +102,11 @@ you can purchase ExpressRoute circuits for a wide range of bandwidths. The suppo
 
 ### Choose a billing model
 
-Azure ExpressRoute runs on Azure infrastructure that accrues costs along with ExpressRoute when you deploy the new resource. It is important to understand that additional infrastructure might accrue cost. You need to manage that cost when you make changes to deployed resources.
+You can pick a billing model that works best for you. Choose between the billing models listed as followed.
 
-Costs that typically accrue with ExpressRoute:-
-
-**ExpressRoute**
-
-When you create an ExpressRoute circuit, you might choose to create an ExpressRoute gateway to link your virtual networks to the circuit. ExpressRoute Gateways are charged at an hourly rate plus the cost of an ExpressRoute circuit. See [ExpressRoute pricing](https://azure.microsoft.com/pricing/details/expressroute) and select ExpressRoute Gateways to see rates for different gateway SKUs.
-
-Inbound data transfer is included in the monthly cost of the ExpressRoute circuit for all three SKUs. Outbound data transfer is only included for an unlimited data plan. For a Metered data plan, outbound data transfer is charged per GB used based on the zone number of the [peering location](/azure/expressroute/expressroute-locations-providers).
-
-**ExpressRoute Direct**
-
-ExpressRoute Direct has a monthly port fee that includes the circuit fee for Local and Standard SKU ExpressRoute circuits. For Premium SKU circuits, there is an extra circuit fee. Outbound data transfer is charged per GB used depending on the zone number of the peering location. The outbound data charge only applies to Standard and Premium SKUs.
-
-**ExpressRoute Global Reach**
-
-ExpressRoute Global Reach is an add-on you can enable for ExpressRoute and ExpressRoute Direct to link ExpressRoute circuits together. Inbound and outbound data transfer is charged per GB used depending on the zone number of the peering location.
-
-### Evaluate implications of changing SKUs after deployment
-
-If you have an ExpressRoute gateway after deleting the ExpressRoute circuit, you will still be charged for the cost until you delete it.
+- **Unlimited data**. Billing is based on a monthly fee; all inbound and outbound data transfer is included free of charge.
+- **Metered data**. Billing is based on a monthly fee; all inbound data transfer is free of charge. Outbound data transfer is charged per GB of data transfer. Data transfer rates vary by region.
+- **ExpressRoute premium add-on**. ExpressRoute premium is an add-on to the ExpressRoute circuit. The ExpressRoute premium add-on provides the following capabilities:
+    - Increased route limits for Azure public and Azure private peering from 4,000 routes to 10,000 routes.
+    - Global connectivity for services. An ExpressRoute circuit created in any region (excluding national clouds) will have access to resources across every other region in the world. For example, a virtual network created in West Europe can be accessed through an ExpressRoute circuit provisioned in Silicon Valley.
+    - Increased number of VNet links per ExpressRoute circuit from 10 to a larger limit, depending on the bandwidth of the circuit.
