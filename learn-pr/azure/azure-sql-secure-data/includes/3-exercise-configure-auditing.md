@@ -112,7 +112,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. Pick the region closest to where you are located and select **Review + Create** > **Create**. 
 
-1. In the Azure portal, go to your Azure SQL Database logical server to enable auditing on the logical server (not database).
+1. In the Azure portal, go to your Azure SQL Database to enable auditing on the database (not logical server).
 
 1. On the left pane, under **Security**, select **Auditing**. Review the options.
 
