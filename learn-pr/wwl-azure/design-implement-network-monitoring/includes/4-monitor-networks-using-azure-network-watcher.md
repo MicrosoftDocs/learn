@@ -204,15 +204,12 @@ On the **Create alert** tab, you can set up alerts on tests that are failing bas
 
 You need to enter the following information for your alert:
 
-| **Field**                  | **Information**                                              |
-| -- |  |
-| Create alert (check box)   | You can select this check box to create a metric alert in Azure Monitor. When you select this check box, the other fields will be enabled for editing. (Note: Additional charges for the alert will be applicable.) |
-| Scope (Resource/Hierarchy) | The values here are automatically filled in for you, based on the values you specified on the **Basics** tab. |
-| Condition                  | The alert is created on the Test Result(preview) metric. When the result of the connection monitor test is a failing result, the alert rule will fire. |
-| Action group               | You can enter your email directly or you can create alerts via action groups. If you enter your email directly, an action group with the name NPM Email ActionGroup is created. The email ID is added to that action group. If you choose to use action groups, you need to select a previously created action group. |
-| Alert rule name            | This is the name of the connection monitor and is already filled in for you. |
-| Enable rule upon creation  | Select this check box to enable the alert rule based on the condition (default setting).<br /><br />Disable this check box if you want to create the rule without enabling it - perhaps for evaluation and testing purposes, or because you are just not ready to deploy it yet. |
-
+- Create alert (check box): You can select this check box to create a metric alert in Azure Monitor. When you select this check box, the other fields will be enabled for editing. (Note: Additional charges for the alert will be applicable.) 
+- Scope (Resource/Hierarchy): The values here are automatically filled in for you, based on the values you specified on the **Basics** tab.
+- Condition: The alert is created on the Test Result(preview) metric. When the result of the connection monitor test is a failing result, the alert rule will fire.
+- Action group: You can enter your email directly or you can create alerts via action groups. If you enter your email directly, an action group with the name NPM Email ActionGroup is created. The email ID is added to that action group. If you choose to use action groups, you need to select a previously created action group.
+- Alert rule name: This is the name of the connection monitor and is already filled in for you. 
+- Enable rule upon creation:  Select this check box to enable the alert rule based on the condition (default setting). Disable this check box if you want to create the rule without enabling it - perhaps for evaluation and testing purposes, or because you are just not ready to deploy it yet.
 
 
 
