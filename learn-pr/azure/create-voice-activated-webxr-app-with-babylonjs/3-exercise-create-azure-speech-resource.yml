@@ -11,6 +11,6 @@ metadata:
   ms.author: t-jinglow
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 8
+durationInMinutes: 5
 content: |
   [!include[](includes/3-exercise-create-azure-speech-resource.md)]
