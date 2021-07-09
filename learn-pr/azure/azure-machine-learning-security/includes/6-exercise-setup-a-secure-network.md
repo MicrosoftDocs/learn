@@ -64,7 +64,7 @@ Let's create a VNet for this exercise:
 
 11. Select **Create** and wait a few moments for the deployment to finish:
 
-    :::image type="content" source="../media/vnet_deployment.png" alt-text="Screenshot showing the deployment complete page.":::
+    :::image type="content" source="../media/vnet_deployment.png" alt-text="Screenshot showing the deployment complete page from step 11.":::
 
 > [!IMPORTANT]
 > For simplicity, we are creating a single subnet for our Virtual Network.
@@ -83,7 +83,7 @@ We just added a VNet to our resource group, but is it restricting access to our 
 
 1. Select the __ml-workspace__ in the list of recent resources:
 
-   ![Finding ml-workspace](../media/workspace1.png)
+    :::image type="content" source="../media/workspace1.png" alt-text="Screenshot showing the Azure portal with a red box around ml-workspace.":::
 
 2. Select the __Studio web URL__ for your workspace:
 
@@ -91,7 +91,7 @@ We just added a VNet to our resource group, but is it restricting access to our 
 
 3. Azure Machine Learning Studio should open in a new tab or window. Scroll down until you can see the tabs below (Runs, Compute, Models, and Datasets):
 
-   ![ML Studio](./media/workspace-no-warnings.png)
+    :::image type="content" source="../media/workspace-no-warnings.png" alt-text="Screenshot showing the workspace with no warnings.":::
 
 Each tab above represents a "folder" that stores the resources you and your team would use in Machine Learning.
 
@@ -138,7 +138,6 @@ To accomplish that, we need to define a [Private Endpoint](/azure/private-link/p
 
 5. In the **Resource** tab, use the values below
 
-   ![Azure Virtual Network deployment](../media/pvt3.png)
     :::image type="content" source="../media/pvt3.png" alt-text="Screenshot showing how to fill in the resources form.":::
 
    | Setting              | Value                                                   |
@@ -154,7 +153,7 @@ To accomplish that, we need to define a [Private Endpoint](/azure/private-link/p
 
    Leave the suggested defaults:
 
-   ![Azure Virtual Network deployment](./media/pvt4.png)
+    :::image type="content" source="../media/pvt4.png" alt-text="Screenshot showing how to fill in the configuration form.":::
 
    | Setting                         | Value                     |
    | ------------------------------- | ------------------------- |
@@ -172,7 +171,7 @@ We can make sure our workspace is inside the VNet now by testing if we still hav
 
 1. Reload the Azure Machine Learning Studio window (you can select the following link to see the instructions again [here](#studio)):
 
-   ![ML Studio warnings](../media/workspace-with-warnings.png)
+    :::image type="content" source="../media/workspace-with-warnings.png" alt-text="Screenshot showing the workspace with warnings on the page.":::
 
 2. As the warning shows, access to those resources is now blocked. That happens because your workspace is now inside the VNet, and it's configured to block all requests that don't originate from within the *default* subnet we created (remember we're trying to access it from the __outside__ of the network perimeter).
 
