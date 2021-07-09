@@ -7,7 +7,7 @@ Many projects start with an empty directory, which is how you'll start yours.
 1. Open a terminal or command window (or return to the one you had open previously). 
 1. Create a new directory, and open it in Visual Studio Code by running the following commands:
 
-::: zone pivot="windows"
+    ::: zone pivot="windows"
 
     ```bash
     md hello-world
@@ -15,19 +15,9 @@ Many projects start with an empty directory, which is how you'll start yours.
     code .
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="linux"
-
-    ```bash
-    mkdir hello-world
-    cd hello-world
-    code .
-    ```
-
-::: zone-end
-
-::: zone pivot="macos"
+    ::: zone pivot="linux"
 
     ```bash
     mkdir hello-world
@@ -35,7 +25,17 @@ Many projects start with an empty directory, which is how you'll start yours.
     code .
     ```
 
-::: zone-end
+    ::: zone-end
+
+    ::: zone pivot="macos"
+
+    ```bash
+    mkdir hello-world
+    cd hello-world
+    code .
+    ```
+
+    ::: zone-end
 
 ## Step 2 - Create a new Python file and add code
 
@@ -63,7 +63,7 @@ You may see a prompt you to install [Pylint](https://pylint.org/), which you can
 
 ## Step 3 - Run your application
 
-With the code now created, you can run your application. You can actually do run it from inside Visual Studio Code.
+With the code now created, you can run your application. You can actually run it from inside Visual Studio Code.
 
 1. Open the built-in terminal inside Visual Studio Code by selecting **View** and **Terminal**.
 
@@ -71,28 +71,28 @@ With the code now created, you can run your application. You can actually do run
 
 1. In the new terminal window, run the following command to run your Python code.
 
-::: zone pivot="windows"
+    ::: zone pivot="windows"
 
     ```bash
     python hello.py
     ```
 
-::: zone-end
+    ::: zone-end
 
-::: zone pivot="linux"
-
-    ```bash
-    python3 hello.py
-    ```
-
-::: zone-end
-
-::: zone pivot="macos"
+    ::: zone pivot="linux"
 
     ```bash
     python3 hello.py
     ```
 
-::: zone-end
+    ::: zone-end
+
+    ::: zone pivot="macos"
+
+    ```bash
+    python3 hello.py
+    ```
+
+    ::: zone-end
 
     *Hello, World!* appears in the terminal window. Congratulations! You've created a Python application!

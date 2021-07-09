@@ -1,4 +1,4 @@
-Here you'll deploy the Quickstart template you explored in the previous part. The Quickstart template brings up a basic virtual machine configuration.
+Here, you'll deploy the Quickstart template you explored in the previous part. The Quickstart template brings up a basic virtual machine configuration.
 
 [!include[](../../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -8,7 +8,7 @@ Before you do that, let's briefly review the deployment process.
 
 You can use automation scripting tools such as the Azure CLI, Azure PowerShell, or even the Azure REST APIs with your favorite programming language to deploy resources from templates. You can also deploy your templates through Visual Studio, Visual Studio Code, and the Azure portal. Shortly, you'll deploy a Resource Manager template using the Azure CLI from Cloud Shell.
 
-### Verifying a template
+### Verify a template
 
 Before you run your template, you might want to verify it first.
 
@@ -28,19 +28,27 @@ First, we'll create a _resource group_ to hold all the things that we need to cr
 <!--Since we are in the free Azure sandbox environment, you don't need to do this step, instead, you will use the pre-created resource group **<rgn>[Resource Group Name]</rgn>**. --->
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
+
 1. From the menu bar on the top right-hand side, open **Cloud Shell**.
+
 1. Set the resource group name.
+
     ```bash
     RESOURCEGROUP=learn-quickstart-vm-rg
     ```
+
 1. Set the location. Replace the eastus value with a location near you.
+
     ```bash
     LOCATION=eastus
     ```
+
     The following list has some location values you can use.
 
     [!include[](../../../../includes/azure-sandbox-regions-note.md)]
+
 1. Run the following command to create a resource group.
+
     ```bash
     az group create --name $RESOURCEGROUP --location $LOCATION
     ```
@@ -60,21 +68,21 @@ Near the start of the template, you see a section named `parameters`. This secti
 
 :::image type="content" source="../../media/4-armviz-params-windows.png" alt-text="Screenshot of the source code for part of the template's parameters section." loc-scope="other"::: <!-- Azure Resource Manager Visualizer, no-loc -->
 
-Some of the parameters in the template, like `OSVersion`, `vmSize` and `location`,  have default values. The following screenshot shows that the default value for `OSVersion` is "2019-Datacenter" and `location` is the parent resource group's location.
+Some of the parameters in the template, like `OSVersion`, `vmSize`, and `location` have default values. The following screenshot shows that the default value for `OSVersion` is "2019-Datacenter" and `location` is the parent resource group's location.
 
 :::image type="content" source="../../media/4-armviz-params-defaults-windows.png" alt-text="Screenshot of that shows the code for OSVersion, vmSize, and location in the parameter section of the template." loc-scope="other"::: <!-- Azure Resource Manager Visualizer, no-loc -->
 
-
-
 Let's keep the parameters at their default values. For the other parameters, you have two options:
 
-1. Provide the values in a JSON file.
-1. Provide the values as command-line arguments.
+- Provide the values in a JSON file.
+- Provide the values as command-line arguments.
 
 For learning purposes, here you'll provide the values as command-line arguments. To make the template easy to deploy, you'll start by storing these values as Bash variables.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
+
 1. From the menu bar on the top right-hand side, open **Cloud Shell**.
+
 1. From Cloud Shell, create a username. For this example, let's use **azureuser**.
 
     ```bash
@@ -110,7 +118,7 @@ As a final verification step, you'll begin by validating that the template is sy
     ```azurecli
     az deployment group validate \
       --resource-group $RESOURCEGROUP \
-      --template-uri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json" \
+      --template-uri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.compute/vm-simple-windows/azuredeploy.json" \
       --parameters adminUsername=$USERNAME \
       --parameters adminPassword=$PASSWORD \
       --parameters dnsLabelPrefix=$DNS_LABEL_PREFIX
@@ -130,7 +138,7 @@ As a final verification step, you'll begin by validating that the template is sy
     az deployment group create \
       --name MyDeployment \
       --resource-group $RESOURCEGROUP \
-      --template-uri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json" \
+      --template-uri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.compute/vm-simple-windows/azuredeploy.json" \
       --parameters adminUsername=$USERNAME \
       --parameters adminPassword=$PASSWORD \
       --parameters dnsLabelPrefix=$DNS_LABEL_PREFIX
@@ -138,7 +146,7 @@ As a final verification step, you'll begin by validating that the template is sy
 
     This command resembles the previous command, but also includes the `--name` argument to give your deployment a name.
 
-    This command takes 4-5 minutes to complete. While you wait, now's a great time to take a [closer look at the source code](https://github.com/Azure/azure-quickstart-templates/blob/master/101-vm-simple-windows/azuredeploy.json?azure-portal=true) for this template. Remember, the contents of a Resource Manager template will become more familiar to you as you read existing templates and create your own.
+    This command takes 4-5 minutes to complete. While you wait, now's a great time to take a [closer look at the source code](https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.compute/vm-simple-windows) for this template. Remember, the contents of a Resource Manager template will become more familiar to you as you read existing templates and create your own.
 
     When the deployment completes, you see another large JSON block as output that describes the deployment.
 
