@@ -114,7 +114,7 @@ The static website for the amusement park application is live on the public web!
 |Device  |Browser  |
 |---------|---------|
 |Windows Mixed Reality Device     |Microsoft Edge        |
-|HoloLens     |Microsoft Edge         |
+|HoloLens 2 (requires Windows Insider Build)     |Microsoft Edge         |
 |Oculus Quest     |Oculus Browser         |
 
 1. Open the static website on your device's browser using the URL you saved from earlier.
@@ -134,7 +134,7 @@ The static website for the amusement park application is live on the public web!
 |---------|---------|
 |Android     |Google Chrome         |
 |iOS     |WebXR Viewer (developed by Mozilla)         |
-|HoloLens     |Microsoft Edge         |
+|HoloLens 2 (requires Windows Insider Build)     |Microsoft Edge         |
 
 1. Open the static website on your device's browser using the URL you saved from earlier.
 1. From there, enter the WebXR session by selecting the XR button.
