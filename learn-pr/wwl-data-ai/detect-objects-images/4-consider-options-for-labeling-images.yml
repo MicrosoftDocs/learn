@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.detect-objects-images.consider-options-for-labelling-images
+uid: learn.wwl.detect-objects-images.consider-options-for-labeling-images
 title: Consider options for labeling images
 metadata:
   title: Consider options for labeling images
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/4-consider-options-for-labelling-images.md)]
+  [!include[](includes/4-consider-options-for-labeling-images.md)]
