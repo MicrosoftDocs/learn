@@ -70,8 +70,8 @@ These scripts should take 3-5 minutes to complete. Make sure to note your passwo
         -DatabaseName $databaseName `
         -SampleName "AdventureWorksLT" `
         -Edition "GeneralPurpose" -Vcore 2 -ComputeGeneration "Gen5"
-    # Enable Advanced Data Security
-    $advancedDataSecurity = Enable-AzSqlServerAdvancedDataSecurity `
+    # Enable Azure Defender
+    $azureDefender = Enable-AzSqlServerAdvancedDataSecurity `
         -ResourceGroupName $resourceGroupName `
         -ServerName $serverName
     # Create a storage account
@@ -101,23 +101,20 @@ These scripts should take 3-5 minutes to complete. Make sure to note your passwo
 
 In this exercise, you'll learn how to use auditing through Log Analytics to determine when DROP statements have occurred. To use auditing in this way, you must first configure auditing.
 
-1. Run the following to create a Log Analytics Workspace.
-
-    ```powershell
-    $WorkspaceName = "azuresql$($uniqueID)-la"
-    New-AzOperationalInsightsWorkspace -Location $Location -Name $WorkspaceName -Sku Standard -ResourceGroupName $ResourceGroupName
-    ```
-
-1. In the Azure portal, go to your Azure SQL Database instance to enable auditing on the logical server.
+1. In the Azure portal, in the search bar type **Log analytics**, and under *Marketplace* select **Log Analytics Workspace**. Select your subscription, resource group, and provide a name like **azuresql-la**. 
 
     > [!div class="nextstepaction"]
     > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-1. On the left pane, under **Security**, select **Auditing**. Review the options, and then select **View server settings**.
+1. Pick the region closest to where you are located and select **Review + Create** > **Create**. 
+
+1. In the Azure portal, go to your Azure SQL Database logical server to enable auditing on the logical server (not database).
+
+1. On the left pane, under **Security**, select **Auditing**.
 
 1. Select **Enable Azure SQL Auditing**.  
 
-1. Select **Log Analytics** and under Log Analytics, select the workspace you created in step 1 of this section.
+1. Select **Log Analytics** and under Log Analytics, select the workspace you created.
 
 1. Select **Save**.  
 
