@@ -30,4 +30,5 @@ modules:
 - learn.go-to-market-commercial-marketplace
 - learn.create-saas-offer-commercial-marketplace
 - learn.create-vm-offer-commercial-marketplace
-achievement: learn.sell-through-commercial-marketplace.trophy
+trophy:
+  uid: learn.sell-through-commercial-marketplace.trophy
