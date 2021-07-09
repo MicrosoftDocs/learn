@@ -18,14 +18,14 @@ Now that you have reviewed this module, you should be able to:
 
 Use these resources to discover more.
 
-[https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-overview](/azure/private-link/private-endpoint-overview)
+[https://docs.microsoft.com/azure/private-link/private-endpoint-overview](/azure/private-link/private-endpoint-overview)
 
-[https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview](/azure/virtual-network/virtual-network-service-endpoints-overview)
+[https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview](/azure/virtual-network/virtual-network-service-endpoints-overview)
 
-[https://docs.microsoft.com/en-us/learn/modules/design-ip-addressing-for-azure](/learn/modules/design-ip-addressing-for-azure)
+[https://docs.microsoft.com/learn/modules/design-ip-addressing-for-azure](/learn/modules/design-ip-addressing-for-azure)
 
-[https://docs.microsoft.com/en-us/learn/modules/secure-and-isolate-with-nsg-and-service-endpoints](/learn/modules/secure-and-isolate-with-nsg-and-service-endpoints)
+[https://docs.microsoft.com/learn/modules/secure-and-isolate-with-nsg-and-service-endpoints](/learn/modules/secure-and-isolate-with-nsg-and-service-endpoints)
 
-[https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/private-link-and-dns-integration-at-scale](/azure/cloud-adoption-framework/ready/azure-best-practices/private-link-and-dns-integration-at-scale)
+[https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/private-link-and-dns-integration-at-scale](/azure/cloud-adoption-framework/ready/azure-best-practices/private-link-and-dns-integration-at-scale)
 
-[https://docs.microsoft.com/en-us/azure/app-service/overview](
+[https://docs.microsoft.com/azure/app-service/overview](/azure/app-service/overview) 
