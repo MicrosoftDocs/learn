@@ -111,7 +111,7 @@ Now, we need to transfer the details for the endpoint over to the Cloud Shell. R
     	"timeToLive": "P1D"
       },
         "model": {
-            "self": "https://westus.api.cognitive.microsoft.com/speechtotext/v3.0/models/$model_id"
+            "self": "https://westus2.api.cognitive.microsoft.com/speechtotext/v3.0/models/$model_id"
         },
       "locale": "en-US",
       "displayName": "Batch transcription",
@@ -124,7 +124,7 @@ Now, we need to transfer the details for the endpoint over to the Cloud Shell. R
 
     ```bash
     # Submit the job
-    response=$(curl -X POST https://westus.api.cognitive.microsoft.com/speechtotext/v3.0/transcriptions  \
+    response=$(curl -X POST https://westus2.api.cognitive.microsoft.com/speechtotext/v3.0/transcriptions  \
     -H "Content-Type:application/json" \
     -H "Ocp-Apim-Subscription-Key:$apiKeySpeech" \
     --data "$json")

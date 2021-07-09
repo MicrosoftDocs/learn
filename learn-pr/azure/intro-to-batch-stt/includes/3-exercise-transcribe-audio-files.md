@@ -19,7 +19,7 @@ Let's start by preparing our environment. The following script creates our cogni
         --resource-group $resourceGroupName \
         --kind SpeechServices \
         --sku S0 \
-        --location westus \
+        --location westus2 \
         --subscription $subscription \
         --yes
     
@@ -30,7 +30,7 @@ Let's start by preparing our environment. The following script creates our cogni
     az storage account create \
         --name $blobName \
         --resource-group $resourceGroupName \
-        --location westus \
+        --location westus2 \
         --sku Standard_ZRS
     
     # Create container
@@ -121,7 +121,7 @@ First, the command will create the secure URL for the container where the audio 
 
     ```bash
     # Submit the job
-    response=$(curl -X POST https://westus.api.cognitive.microsoft.com/speechtotext/v3.0/transcriptions  \
+    response=$(curl -X POST https://westus2.api.cognitive.microsoft.com/speechtotext/v3.0/transcriptions  \
     -H "Content-Type:application/json" \
     -H "Ocp-Apim-Subscription-Key:$apiKeySpeech" \
     --data "$json")
