@@ -1,3 +1,4 @@
+In the previous exercise, we used the standard en-us model. For the customer service scenario, you need to investigate if it's possible to create a custom model from existing call center data. To do this, you'll use the Custom Speech portal.
 
 The first step to train a model is to upload training data. For more information, see [Prepare and test your data](/azure/cognitive-services/speech-service/how-to-custom-speech-test-and-train) for step-by-step instructions to prepare human-labeled transcriptions and related text (utterances and pronunciations).
 
@@ -18,6 +19,8 @@ The first step to train a model is to upload training data. For more information
 
 ## Use audio data to create a custom speech model
 
+Now you've created a project, it's time to upload some training data. Here, you'll use the sample data from Azure Samples to reduce processing time. However, you can provide your own data if you wish.
+
 1. Select your new project by clicking on its name
 1. Select **Upload data**
 1. Make sure 'Audio + human-labeled transcript' is highlighted, and select **Next**
@@ -35,7 +38,7 @@ The first step to train a model is to upload training data. For more information
 
 ## Train a custom model
 
-After a few seconds, you'll see a message saying your files have successfully processed. Next, let's train a custom model using the data.
+After a few seconds, you'll see a message saying your files have successfully processed. Next, let's train a custom model using the sample data.
 
 1. On the left-hand side, select the check box for the dataset, then select **Train**
 
@@ -45,7 +48,7 @@ After a few seconds, you'll see a message saying your files have successfully pr
 1. Choose a name for your model, and select **Next**
 1. Select **Save and close**
 
-It might take several minutes for your model to complete training. In the mean time, lets set things up to use it.
+It might take several minutes for your model to complete training. In the meantime, lets set things up to use it.
 
 ## Set up your custom transcription
 
@@ -70,19 +73,19 @@ It might take several minutes for your model to complete training. In the mean t
 
 ## Use your custom model
 
-Now, to use the model we need to refer to it in the Cloud Shell. 
+Now, to use the model we need to refer to it in the Cloud Shell.
 
 We can do this using an endpoint, or linking directly to the model. Here we will link directly to the model.
 
-Return to the Custom Speech portal, and navigate to the **Train custom models** section of the website if you exited the page.
+1. **Return to the Custom Speech portal**, and navigate to the **Train custom models section** on the far left-hand menu of the website.
 
 1. If your model has completed training, it will be listed with its name in blue. If it is not ready, wait a few minutes for training to complete. Once it is ready, click on your model's name.
 
-2. **Copy your Model ID** from the top of the page. It will be listed as a GUID such as 0000000-1234-5678-9abc-def012345678
+1. **Copy your Model ID** from the top of the page. It will be listed as a GUID such as 0000000-1234-5678-9abc-def012345678
 
-4. Return to the sandbox terminal, and type `model_id=<your-model-id>`, replacing \<your-model-id\> with the model id you just copied, then press <kbd>Enter</kbd>
+1. Return to the sandbox terminal, and type `model_id=<your-model-id>`, replacing \<your-model-id\> with the model id you just copied, then press <kbd>Enter</kbd>
 
-5. Next, we'll follow the same steps as we did in the first exercise to create a new batch of transcriptions using the custom model. This time, you'll specify for Batch Transcription to use your newly created Custom Model in the JSON. Notice how we specify the endpoint with the cognitive services URL, and the custom model ID. Run the following command to create the JSON 
+1. Next, we'll follow the same steps as we did in the first exercise to create a new batch of transcriptions using the custom model. This time, you'll specify for Batch Transcription to use your newly created Custom Model in the JSON. Notice how we specify the endpoint with the cognitive services URL, and the custom model ID. Run the following command to create the JSON 
 
     ```bash
     # Create the JSON  
@@ -105,7 +108,7 @@ Return to the Custom Speech portal, and navigate to the **Train custom models** 
 
     ```
 
-6. Now, we're going to use cURL to submit the transcription job with a POST request. Run the following command to submit your next Batch Transcription job
+1. Now, we're going to use cURL to submit the transcription job with a POST request. Run the following command to submit your next Batch Transcription job
 
     ```bash
     # Submit the job
@@ -116,7 +119,7 @@ Return to the Custom Speech portal, and navigate to the **Train custom models** 
 
     ```
     
-7. Run the following query again to see the status of the new transcriptions:
+1. Run the following query again to see the status of the new transcriptions:
 
     ```bash
     # Find the URI that will tell us the status. This is found in the original submission response
@@ -128,9 +131,9 @@ Return to the Custom Speech portal, and navigate to the **Train custom models** 
 
     ```
 
-    Take note of the status. Once it states 'Succeeded', then move on. If it states the job is still running, wait 20 seconds, then paste the command above into the terminal and run it again. Repeat this until the status is 'Succeeded'
+    Take note of the status. **Once it states 'Succeeded', then move on.** It might take a minute or two to run. If it states the job is still running, wait 20 seconds, then paste the command above into the terminal and run it again. **Repeat this until the status is 'Succeeded'**
 
-8. Run the following command to retrieve the uri for the transcription information and download the individual transcription files.
+1. Run the following command to retrieve the uri for the transcription information and download the individual transcription files.
 
     ```bash
     result_info_uri=$(echo $job_information | grep -oP -m 1 "(\s*\"files\":\s*\"\K)([^\"]*)")
@@ -145,20 +148,20 @@ Return to the Custom Speech portal, and navigate to the **Train custom models** 
     i=0
     for uri in $transcript_uris; do 
     	echo "Downloading transcript" $i
-    	curl -X GET $uri -s -H "Ocp-Apim-Subscription-Key:$apiKeySpeech" > transcript_$i.json
+    	curl -X GET $uri -s -H "Ocp-Apim-Subscription-Key:$apiKeySpeech" > custom_transcript_$i.json
     	let "i++"
     done
 
-    echo "Files Available: "$(ls transcript_*.json)
+    echo "Files Available: "$(ls custom_transcript_*.json)
 
     ```
 
-9. Run the following command to take a look at the first transcript
+1. Run the following command to take a look at the first transcript
 
     ```bash
     # View the first transcript in nano
     # Note that the transcript_0.json is meta information
-    nano transcript_1.json
+    nano custom_transcript_1.json
 
     ```
 
