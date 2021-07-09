@@ -15,7 +15,7 @@ Create a resource group to act as the production resource group.
 1. Use the following quickstart template to create a virtual machine (VM) in your production resource group: [Deploy a simple Windows VM](https://azure.microsoft.com/resources/templates/vm-simple-windows/).  
 1. Select **Deploy to Azure** on the template page.
 1. For **Resource group**, select **production-learn-rg**.
-1. Enter a username, password, and **DNS Label Prefix**.
+1. Enter a username and password.
 1. Select **Review + create** > **Create**.
 
 Now you need to create some additional resources that you'll eventually move to a development resource group.
