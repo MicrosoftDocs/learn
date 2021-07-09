@@ -58,5 +58,6 @@ modules:
 - learn.azure.publish-azure-web-app-with-azure-toolkit-intellij
 - learn.azure.publish-app-with-maven-plugin-for-azure-web-apps
 - learn.develop-azure-functions-app-with-maven-plugin
+- learn.monitor-java-azure
 trophy:
   uid: learn.java-on-azure.trophy
