@@ -1,10 +1,10 @@
 The **Custom Vision** service enables you to build your own computer vision models for *image classification* or *object detection*.
 
-Creating a vustom vision solution involves two tasks:
+Creating a custom vision solution involves two tasks:
 
 ![A Custom Vision service model being trained from existing images, and predicting classes for new images](../media/image-classification.png)
 
-1. Use existing (labelled) images to train a Custom Vision model.
+1. Use existing (labeled) images to train a Custom Vision model.
 2. Create a client application that submits new images to your model to generate predictions.
 
 To use the Custom Vision service, you must provision two kinds of Azure resource:

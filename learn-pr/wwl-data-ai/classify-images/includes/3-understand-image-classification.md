@@ -1,4 +1,4 @@
-*Image classification* is a computer vision technique in which a model is trained to predict a class label for an image based on its contents. Usually, the class label relates to the main *subject* of the image (in other words, it indicates what this is an image of).
+*Image classification* is a computer vision technique in which a model is trained to predict a class label for an image based on its contents. Usually, the class label relates to the main *subject* of the image.
 
 For example, the following images have been classified based on the type of fruit they contain.
 
