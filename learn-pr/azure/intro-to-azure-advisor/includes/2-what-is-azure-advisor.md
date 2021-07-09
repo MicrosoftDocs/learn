@@ -8,10 +8,6 @@ The Advisor dashboard displays personalized recommendations for all your subscri
 * Operational Excellence: To help you achieve process and workflow efficiency, resource manageability and deployment best practices.
 * Performance: To improve the speed of your applications.
 
-The scan is done when Azure Advisor analyzes your resource configuration and usage telemetry. Then you will see the recommendations with proposed actions inline.
-
-To access Azure Advisor, you need the permissions of Owner, Contributor or Reader of a subscription, Resource group or Resource. For all recommendations given, you have options to postpone for a specific time period (one day, one week, one month, three months) or indefinitely besides the option to dismiss.
-
 Actually Azure Advisor provides recommendations for the following resources:
 
 * Application Gateway
