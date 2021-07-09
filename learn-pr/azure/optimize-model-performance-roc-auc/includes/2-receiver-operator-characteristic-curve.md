@@ -31,23 +31,23 @@ Receiver Operator Characteristic (ROC) curves are a graph where we plot true pos
 
 ROC curves can be confusing for beginners for two main reasons. The first reason is that, beginners know that a model only has one value for true positive and true negative rates. So an ROC plot must look like this:
 
-![Receiver operator characteristic curve graph with one plot point.](../media/2-roc-graph.png)
+![Receiver operator characteristic curve graph with one plot point.](../media/roc-graph.png)
 
 If you’re also thinking this, you’re right. A trained model only produces one point. However, remember that our models have a threshold—normally 50%—that is used to decide whether the true (hiker) or false (tree) label should be used. If we change this threshold to 30% and recalculate true positive and false positive rates, we get another point:
 
-![Receiver operator characteristic curve graph with two plot points.](../media/2-roc-graph-2.png)
+![Receiver operator characteristic curve graph with two plot points.](../media/roc-graph-2.png)
 
 If we do this for thresholds between 0% - 100%, we might get a graph like this:
 
-![Receiver operator characteristic curve graph with a line of plot points.](../media/2-roc-graph-3.png)
+![Receiver operator characteristic curve graph with a line of plot points.](../media/roc-graph-3.png)
 
 Which we usually display as a line, instead:
 
-![Receiver operator characteristic curve graph with a line in place of plot points for false positives.](../media/2-roc-graph-4.png)
+![Receiver operator characteristic curve graph with a line in place of plot points for false positives.](../media/roc-graph-4.png)
 
 The second reason these graphs can be confusing is the jargon involved. Remember that we want a high true positive rate (identifying hikers as such) and a low false positive rate (not identifying trees as hikers).
 
-![Receiver operator characteristic curve graph with a line in place of plot points for the rate of identifying trees as hikers.](../media/2-roc-graph-5.png)
+![Receiver operator characteristic curve graph with a line in place of plot points for the rate of identifying trees as hikers.](../media/roc-graph-5.png)
 
 ## Good ROC, bad ROC
 
