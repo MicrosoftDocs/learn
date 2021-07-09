@@ -1,8 +1,8 @@
-In this module, you looked at inspecting a command you mean to use. The reason for doing so is to call the command corectly but also realize that there might be more than one way to call a command. 
+In this module, you learned how to inspect a command that you intend to use. Looking at a command before you use it helps you call the command correctly and learn the different ways you can call the command. 
 
-Additionally you looked at inspecting what a command returned. PowerShell commands return objects. By calling `Get-Member` you learn what type of object that is and what properties it has. Knowing that information you can then search for other commands to learn what commands are related, that is that operates on that same object type.
+You also looked at inspecting what a command returns. PowerShell commands return objects. By calling `Get-Member`, you learn what type of object will be returned and its properties. With that information, you can for related commands that operate on same object type.
 
-You will learn how to leverage this object type information in other modules as we will be looking at pipelines, combining many commands in one.
+You'll learn how to leverage this object type information in other modules when we look at pipelines and combining many commands in one.
 
 ## Resources
 

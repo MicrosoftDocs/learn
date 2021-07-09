@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.powershell.discover-commands
 metadata:
-  title: Discover commands
-  description: In this module you'll learn how to discover commands by using the help system among other things, to deepen your knowledge on PowerShell.
-  ms.date: 06/04/2020
+  title: Discover commands in PowerShell
+  description: In this module, you'll learn how to discover commands by using the help system among other things, to deepen your knowledge of PowerShell.
+  ms.date: 07/09/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Discover commands
-summary: PowerShell comes with a built-in help system. By using the help you can read more about a command, what it does and how to call it. Additionally you want to want to inspect what a command returns, you can use that information to customize the output but also determine what commands are logically grouped and how to use said commands together. 
+title: Discover commands in PowerShell
+summary: PowerShell comes with a built-in help system. By using the help, you can read more about a command, what it does, and how to call it. Additionally, you want to inspect what a command returns, you can use that information to customize the output but also determine what commands are logically grouped and how to use said commands together. 
 abstract: |
   After completing this module, you'll be able to:
   - Inspect commands to understand how to call them.
   - Understand what a command returns and to customize what it returns. 
-iconUrl: /learn/achievements/discover-commands.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
 roles:

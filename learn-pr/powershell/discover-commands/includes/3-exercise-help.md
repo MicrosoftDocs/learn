@@ -1,10 +1,10 @@
-After you find a cmdlet you want to use, you can learn more about it. For example, you can learn about the different ways to call it, what parameters you can use, or some example use cases. 
+After you find a cmdlet you want to use, you can learn more about it. For example, you can learn about the different ways to call it, what parameters you can use, and example use cases. 
 
 ## Use Get-Help to discover commands
 
 Use the `Get-Help` cmdlet to learn about cmdlets.
 
-1. Run the command `Get-Help`.
+1. Run the command `Get-Help`:
 
    ```powershell
    Get-Help -Name Get-FileHash
@@ -37,7 +37,7 @@ Use the `Get-Help` cmdlet to learn about cmdlets.
 
    Because this output is difficult to read, you decide to use a less verbose alternative. That is, you use the `help` alias.
 
-1. Enter the `help` command.
+1. Enter the `help` command:
 
    ```powershell
    help Get-FileHash
@@ -63,7 +63,7 @@ Use the `Get-Help` cmdlet to learn about cmdlets.
 
    You can move through the results vertically, row by row, by using the arrow keys. To view the results page by page, use the Spacebar.
 
-1. Run `help Get-FileHash -Examples`.
+1. Run `help Get-FileHash -Examples`:
 
    ```powershell
    help Get-FileHash -Examples
@@ -88,7 +88,7 @@ Use the `Get-Help` cmdlet to learn about cmdlets.
         Path      : /etc/apt/sources.list
    ```
 
-   This output contains a list of examples that use the cmdlet. Locate the part of the response that contains the text `Example 1`. This portion of the text shows how you can use `Get-FileHash` with a file path, piping it to the cmdlet `Format-List`.
+   This output contains a list of examples that use the cmdlet. Locate the part of the response that contains the text `Example 1`. This portion of the text shows how you can use `Get-FileHash` with a file path by piping it to the cmdlet `Format-List`.
 
    > [!TIP]
    > To quickly see an example, add the flag `-Examples` when you search for help.
