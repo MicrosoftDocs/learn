@@ -68,19 +68,13 @@ Now, we need to transfer the details for the endpoint over to the Cloud Shell. I
 
     Notice how Speech Studio provides code to connect to your custom model in multiple programming languages via the SDK, REST API, and WebSocket.
 
-    **LEE**: Add this into the .NET, not the user secrets https://westus2.api.cognitive.microsoft.com/speechtotext/v3.0/models/<id will go here>
-
 1. **Copy your Endpoint ID**
 
-1. Return to the Cloud Shell and type in `code .`
-1. **Select mslearn-batch-stt** folder, then the **src** folder, then the **select appsettings.json** file
-1. In between the empty quotation marks following **"CustomModel"**, paste your endpoint id
-1. Select the three dots in the top left-hand corner of the code editor, save the file, and exit the code editor.
-1. In the Cloud Shell, run the following command:
 
-    ```dotnet
-    dotnet restore
-    dotnet run
-    ```
 
 Congratulations, you're now transcribing your entire storage container of audio files with your Custom Speech model.
+
+
+
+
+    **LEE**: Add this into the .NET, not the user secrets https://westus2.api.cognitive.microsoft.com/speechtotext/v3.0/models/<id will go here>

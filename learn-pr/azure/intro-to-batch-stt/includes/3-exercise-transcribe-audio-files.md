@@ -26,7 +26,7 @@ Let's start by preparing our environment. The following script creates our cogni
     
     # Create a blob and container to hold our audio files
     # Create blob
-    blobName=sttblob$RANDOM
+    blobName=sttblob<rgn>[sandboxName]</rgn>
     az storage account create \
         --name $blobName \
         --resource-group $resourceGroupName \
