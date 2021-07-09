@@ -26,7 +26,7 @@ Let's start by preparing our environment. The following script creates our cogni
     
     # Create a blob and container to hold our audio files
     # Create blob
-    blobName=sttblob<rgn>[sandboxName]</rgn>
+    blobName=sttblob$resourceGroupName
     az storage account create \
         --name $blobName \
         --resource-group $resourceGroupName \
@@ -34,7 +34,7 @@ Let's start by preparing our environment. The following script creates our cogni
         --sku Standard_ZRS
     
     # Create container
-    blobContainerName=sttcontainer$RANDOM
+    blobContainerName=sttcontainer$resourceGroupName
     blobConnectionString=$(az storage account show-connection-string -g $resourceGroupName -n $blobName --query "connectionString" -o tsv)
     az storage container create \
         --name $blobContainerName \
@@ -134,7 +134,7 @@ First, the command will create the secure URL for the container where the audio 
     echo "$response"
     ```
 
-1. Run the following query again to see the status of the transcriptions:
+1. Run the following query to see the status of the transcriptions:
 
     ```bash
     # Find the URI that will tell us the status. This is found in the original submission response
@@ -145,7 +145,7 @@ First, the command will create the secure URL for the container where the audio 
     echo "$job_information"
     ```
 
-    Take note of the status. It it states 'Succeeded', then move on. If it states the job is still running, wait 20 seconds, then paste the command above into the terminal and run it again. Repeat this until the status is 'Succeeded'!
+    Take note of the status. When it states 'Succeeded', then move on. If it states the job is still running, wait 20 seconds, then paste the command above into the terminal and run it again. Repeat this until the status is 'Succeeded'!
 
 ## Viewing the results
 
