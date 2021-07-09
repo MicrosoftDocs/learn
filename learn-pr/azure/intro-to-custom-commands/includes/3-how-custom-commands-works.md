@@ -6,11 +6,13 @@ Creating a new Custom Command Voice Assistant app takes less than 10 minutes wit
 
 The link to the Speech Studio Portal can be found in the Unit 6 – Summary. Below we see the Speech Studio WebUI:
 
-![Screenshot showing the web user interface for the Azure speech studio for custom commands.](../media/3-speech-studio.png)
+:::image type="content" source="../media/2-custom-commands-example.png" alt-text="Screenshot of an example of a custom command to increase the temperature.":::
+
+:::image type="content" source="../media/3-speech-studio.png" alt-text="Screenshot showing the web user interface for the Azure speech studio for custom commands." lightbox="../media/3-speech-studio.png":::
 
 A **LUIS** authoring service is required for the app to understand the queries and commands sent to the assistant. The LUIS model has multiple pricing tiers but requires a standard tier prediction resource to process speech inputs in your final published app. If you only want to train and test your app, then the free LUIS authoring resource is sufficient.
 
-![Screenshot showing how to select prediction resource in the Azure speech studio.](../media/3-speech-studio-2.png)
+:::image type="content" source="../media/3-speech-studio-2.png" alt-text="Screenshot showing how to select prediction resource in the Azure speech studio." lightbox="../media/3-speech-studio-2.png":::
 
 ### Creating commands
 
@@ -29,7 +31,7 @@ To create a custom command, you’ll need to provide:
 
 To get started, select **New command** in the top-left pane. You will then be required to add example sentences and phrases to activate the command. In the example below, we have created turn on/off commands and added example sentences used to train the LUIS model for your project, and eventually trigger actions you specify.
 
-![Screenshot showing example sentences for custom commands in the Azure speech studio.](../media/3-creating-commands.png)
+:::image type="content" source="../media/3-creating-commands.png" alt-text="Screenshot showing example sentences for custom commands in the Azure speech studio." lightbox="../media/3-speech-studio-2.png":::
 
 ### Configuring commands
 
@@ -37,7 +39,7 @@ Once you have created your example sentences, you'll need to set up your paramet
 
 Here, we’ve set parameters to define the function of turning on and off the lights, which devices are selected with *SubjectDevice*, and what parts of the device or system are controlled with the *SubjectContext* parameter. The image below shows the SubjectContext parameters with different rooms around the house as predefined input values.
 
-![Screenshot showing parameter examples for custom commands in the Azure speech studio.](../media/3-configuring-commands.png)
+:::image type="content" source="../media/3-configuring-commands.png" alt-text="Screenshot showing parameter examples for custom commands in the Azure speech studio." lightbox="../media/3-configuring-commands.png":::
 
 In addition to parameters, you can also set *conditions.* **Conditions are the requirements that must be met for a rule to execute.** In the example below, we can see the conditions are:
 
@@ -47,7 +49,7 @@ In addition to parameters, you can also set *conditions.* **Conditions are the r
 
 If we wanted to add more smart devices from the house to our Custom Commands, we could add new SubjectDevice parameters to specify the conditions.
 
-![Screenshot showing completion rules for custom commands in the Azure speech studio.](../media/3-configuring-commands-2.png)
+:::image type="content" source="../media/3-configuring-commands-2.png" alt-text="Screenshot showing completion rules for custom commands in the Azure speech studio." lightbox="../media/3-configuring-commands-2.png":::
 
 As previously mentioned, you can also create completion rules.
 
@@ -57,13 +59,13 @@ So if a user requested, “turn **on all** the **lights**,” we would see the c
 
 This would trigger the specified actions—in this case, the system would send a speech response action, “OK, turning all the lights on,” and then turn on all the lights in the house.
 
-![Screenshot showing completion rules for custom commands in the Azure speech studio.](../media/3-completion-rules.png)
+:::image type="content" source="../media/3-completion-rules.png" alt-text="Screenshot showing completion rules for custom commands in the Azure Speech Studio." lightbox="../media/3-completion-rules.png":::
 
 ### Testing your commands
 
 Once you have created your command, you can **train and test** the behavior of your application in the Studio to see if it works as intended. If you require more detail, you can select **turn details** for more information on how the voice input was processed.
 
-![Screenshot showing an example of testing your custom commands application in the Azure speech studio.](../media/3-testing-commands.png)
+:::image type="content" source="../media/3-testing-commands.png" alt-text="Screenshot showing an example of testing your custom commands application in the Azure speech studio." lightbox="../media/3-testing-commands.png":::
 
 While the commands or functions given to the voice assistant can be complex, one of the major strengths of Custom Commands is the sequential and straightforward nature of the development process. Users can test the voice assistant functionality quickly, and incrementally add further control to their smart devices as the need arises.
 
@@ -81,7 +83,7 @@ The voice assistants can be exposed via Web endpoints to send custom activities 
 
 Below is an overview of the workflow to integrate your Custom Commands app into a client application:
 
-![Diagram showing the workflow of the custom commands application.](../media/3-custom-commands-workflow.png)
+:::image type="content" source="../media/3-custom-commands-workflow.png" alt-text="Diagram showing the workflow of the custom commands application." lightbox="../media/3-custom-commands-workflow.png":::
 
 ## Custom voice
 
