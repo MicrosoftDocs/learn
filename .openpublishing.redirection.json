@@ -5171,13 +5171,23 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/powershell/introduction-to-powershell/6-knowledge-check.md",
+      "redirect_url": "/learn/modules/introduction-to-powershell/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/powershell/introduction-to-powershell/8-knowledge-check.md",
-      "redirect_url": "/learn/modules/introduction-to-powershell/6-knowledge-check",
+      "redirect_url": "/learn/modules/introduction-to-powershell/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/powershell/introduction-to-powershell/9-summary.md",
-      "redirect_url": "/learn/modules/introduction-to-powershell/7-summary",
+      "redirect_url": "/learn/modules/introduction-to-powershell/6-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/powershell/introduction-to-powershell/7-summary.md",
+      "redirect_url": "/learn/modules/introduction-to-powershell/6-summary",
       "redirect_document_id": false
     },
     {
