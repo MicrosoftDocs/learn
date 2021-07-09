@@ -50,7 +50,7 @@ Since we are using Node.js, all of the required dependencies are listed in the *
 
     :::image type="content" source="../media/terminal-npm-install.PNG" alt-text="Screenshot of the terminal with the N P M install command.":::
 
-1. After the command finishes running, you should see a folder named *node_modules* created in the repository folder.
+1. After the command finishes running, you should see a folder named *node_modules* created within the *starter-code* folder.
 
 ## Import dependencies
 
