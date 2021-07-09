@@ -50,7 +50,7 @@ There are some things that VNet Integration does not support, like:
 
 Gateway-required VNet Integration provides access to resources only in the target VNet or in networks connected to the target VNet with peering or VPNs. Gateway-required VNet Integration doesn't enable access to resources available across Azure ExpressRoute connections or work with Service Endpoints.
 
-Regardless of the version used, VNet Integration gives your app access to resources in your VNet, but it doesn't grant inbound private access to your app from the VNet. Private site access refers to making your app accessible only from a private network, such as from within an Azure VNet. VNet Integration is only for making outbound calls from your app into your VNet.
+Regardless of the version used, VNet Integration gives your app access to resources in your VNet, but it doesn't grant inbound private access to your app from the VNet. Private site access refers to making your app accessible only from a private network, such as from within an Azure VNet. VNet Integration is only for making outbound calls from your app into your VNet. Follow the stpes below to learn how VNet intergration is enabled. For more information on this topic see [https://docs.microsoft.com/azure/app-service/web-sites-integrate-with-vnet](/azure/app-service/web-sites-integrate-with-vnet)
 
 ## Configure the virtual network for integration with App Service
 
