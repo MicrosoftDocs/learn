@@ -47,7 +47,7 @@ You now have a program capable of collecting user input but no way of verifying 
 Add the following to output the user's input:
 
 ```python
-print("Hello" + name)
+print("Hello, " + name)
 ```
 
 The preceding line will concatenate the string "Hello" with the value of the `name` variable.
