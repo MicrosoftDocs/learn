@@ -28,39 +28,39 @@ Before you start configuration, confirm the following criteria:
 
 **Identify circuits**
 
-- Identify the ExpressRoute circuits that you want use. You can enable ExpressRoute Global Reach between the private peering of any two ExpressRoute circuits, if they are in the supported countries/regions. The circuits are required to be created at different peering locations.
+1. Identify the ExpressRoute circuits that you want use. You can enable ExpressRoute Global Reach between the private peering of any two ExpressRoute circuits, if they are in the supported countries/regions. The circuits are required to be created at different peering locations.
 
-  - If your subscription owns both circuits, you can choose either circuit to run the configuration in the following sections.
+  1. If your subscription owns both circuits, you can choose either circuit to run the configuration in the following sections.
 
-  - If the two circuits are in different Azure subscriptions, you need authorization from one Azure subscription. Then you pass in the authorization key when you run the configuration command in the other Azure subscription.
+  1. If the two circuits are in different Azure subscriptions, you need authorization from one Azure subscription. Then you pass in the authorization key when you run the configuration command in the other Azure subscription.
 
   ![Azure portal - view ExpressRoute circuits](../media/expressroute-circuit-global-reach-list.png)
 
 **Enable connectivity**
 
-- Enable connectivity between your on-premises networks. There are separate sets of instructions for circuits that are in the same Azure subscription, and circuits that are different subscriptions.
+1. Enable connectivity between your on-premises networks. There are separate sets of instructions for circuits that are in the same Azure subscription, and circuits that are different subscriptions.
 
 **ExpressRoute circuits in the same Azure subscription**
 
-- Select the **Azure private** peering configuration.
+1. Select the **Azure private** peering configuration.
 
   ![Azure portal - check that the ExpressRoute circuit is provisioned for private peering](../media/expressroute-circuit-private-peering.png)
 
-- Select **Add Global Reach** to open the Add Global Reach configuration page.
+1. Select **Add Global Reach** to open the Add Global Reach configuration page.
 
   ![Azure portal - add circuit to GlobalReach](../media/private-peering-enable-global-reach.png)
 
-- On the Add Global Reach configuration page, give a name to this configuration. Select the ExpressRoute circuit you want to connect this circuit to and enter in a **/29 IPv4** for the Global Reach subnet. Azure uses IP addresses in this subnet to establish connectivity between the two ExpressRoute circuits. Do not use the addresses in this subnet in your Azure virtual networks, or in your on-premises network. Select **Add** to add the circuit to the private peering configuration.
+1. On the Add Global Reach configuration page, give a name to this configuration. Select the ExpressRoute circuit you want to connect this circuit to and enter in a **/29 IPv4** for the Global Reach subnet. Azure uses IP addresses in this subnet to establish connectivity between the two ExpressRoute circuits. Do not use the addresses in this subnet in your Azure virtual networks, or in your on-premises network. Select **Add** to add the circuit to the private peering configuration.
 
   ![Azure portal - Add GlobalReach details](../media/add-global-reach-configuration.png)
 
-- Select **Save** to complete the Global Reach configuration. When the operation completes, you will have connectivity between your two on-premises networks through both ExpressRoute circuits.
+1. Select **Save** to complete the Global Reach configuration. When the operation completes, you will have connectivity between your two on-premises networks through both ExpressRoute circuits.
 
   ![Azure portal - save GlobalReach configuration](../media/save-private-peering-configuration.png)
 
 **Verify the configuration**
 
-- Verify the Global Reach configuration by selecting Private peering under the ExpressRoute circuit configuration. When configured correctly your configuration should look as followed:
+1. Verify the Global Reach configuration by selecting Private peering under the ExpressRoute circuit configuration. When configured correctly your configuration should look as followed:
 
   ![Azure portal - Verify GlobalReach configuration](../media/verify-global-reach-configuration.png)
 
@@ -68,6 +68,6 @@ Before you start configuration, confirm the following criteria:
 
 **Disable connectivity**
 
-- To disable connectivity between an individual circuit, select the delete button next to the Global Reach name to remove connectivity between them. Then select **Save** to complete the operation.
+1. To disable connectivity between an individual circuit, select the delete button next to the Global Reach name to remove connectivity between them. Then select **Save** to complete the operation.
 
   ![Azure portal - disable GlobalReach configuration](../media/disable-global-reach-configuration.png)

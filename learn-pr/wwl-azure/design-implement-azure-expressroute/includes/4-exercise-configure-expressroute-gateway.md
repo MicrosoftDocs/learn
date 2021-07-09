@@ -4,6 +4,10 @@
 
 To connect your Azure virtual network and your on-premises network via ExpressRoute, you must create a virtual network gateway first. A virtual network gateway serves two purposes: to exchange IP routes between the networks and to route network traffic. 
 
+> [!Note] 
+>
+> it can take up to 45 minutes to deploy a Gateway.
+
 **Gateway types**
 
 When you create a virtual network gateway, you need to specify several settings. One of the required settings, '-GatewayType', specifies whether the gateway is used for ExpressRoute, or VPN traffic. The two gateway types are:
@@ -88,8 +92,5 @@ In this exercise, you learn how to:
 
 5. When the deployment is complete, select **Go to Resource**.
 
-> [!Note] 
->
-> it can take up to 45 minutes to deploy a Gateway.
 
 Congratulations! You have successfully created a Virtual network, a gateway subnet, and an ExpressRoute Gateway.

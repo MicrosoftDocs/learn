@@ -75,14 +75,13 @@ Key features that ExpressRoute Direct provides includes:
 
 
 
-### Recommend a route advertisement configuration
+##Route advertisement 
 
 When Microsoft peering gets configured on your ExpressRoute circuit, the Microsoft edge routers establish a pair of Border Gateway Protocol (BGP) sessions with your edge routers through your connectivity provider. No routes are advertised to your network. To enable route advertisements to your network, you must associate a route filter.
 
-**Prerequisites**
+In order to associate a route filter: 
 
-- Review the prerequisites and workflows before you begin configuration.
-- You must have an active ExpressRoute circuit that has Microsoft peering provisioned. You can use the following instructions to accomplish these tasks:
+- You must have an active ExpressRoute circuit that has Microsoft peering provisioned. 
 - Create an ExpressRoute circuit and have the circuit enabled by your connectivity provider before you continue. The ExpressRoute circuit must be in a provisioned and enabled state.
 - Create Microsoft peering if you manage the BGP session directly. Or, have your connectivity provider provision Microsoft peering for your circuit.
 

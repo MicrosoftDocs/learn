@@ -16,7 +16,7 @@ To configure FastPath, the virtual network gateway must be either:
 
 - ErGw3AZ
 
-> [!Important] If you plan to use FastPath with IPv6-based private peering over ExpressRoute, make sure to select ErGw3AZ for SKU. Note that this is only available for circuits using ExpressRoute Direct.
+> [!IMPORTANT] If you plan to use FastPath with IPv6-based private peering over ExpressRoute, make sure to select ErGw3AZ for SKU. Note that this is only available for circuits using ExpressRoute Direct.
 
 **Limitations**
 
@@ -64,27 +64,25 @@ This section shows you how to create a connection to link a virtual network to a
 
 **Connect a VNet to a circuit - same subscription**
 
-> [!Note] BGP configuration information will not appear if the layer 3 provider configured your peering. If your circuit is in a provisioned state, you should be able to create connections.
+> [!NOTE] BGP configuration information will not appear if the layer 3 provider configured your peering. If your circuit is in a provisioned state, you should be able to create connections.
 
-- To create a connection
-
-Ensure that your ExpressRoute circuit and Azure private peering have been configured successfully. Your ExpressRoute circuit should look like the following image:
+1. To create a connection Ensure that your ExpressRoute circuit and Azure private peering have been configured successfully. Your ExpressRoute circuit should look like the following image:
 
 ​	![Azure portal - ExpressRoute circuit provisioned for private peering](../media/express-route-circuit.png)
 
-- You can now start provisioning a connection to link your virtual network gateway to your ExpressRoute circuit. Select **Connection** > **Add** to open the **Add connection** page.
+1. You can now start provisioning a connection to link your virtual network gateway to your ExpressRoute circuit. Select **Connection** > **Add** to open the **Add connection** page.
 
   ![Azure portal - Add a connection](../media/add-connection.png)
 
-- Enter a name for the connection and then select **Next: Settings &gt;**.
+1. Enter a name for the connection and then select **Next: Settings &gt;**.
 
   ![Azure portal - Create connection basics tab](../media/create-connection-basic.png)
 
-- Select the gateway that belongs to the virtual network that you want to link to the circuit and select **Review + create**. Then select **Create** after validation completes.
+1. Select the gateway that belongs to the virtual network that you want to link to the circuit and select **Review + create**. Then select **Create** after validation completes.
 
   ![Azure portal - Create connection settings tab - specify ERGW virtual network gateway](../media/create-connection-settings.png)
 
-- After your connection has been successfully configured, your connection object will show the information for the connection.
+1. After your connection has been successfully configured, your connection object will show the information for the connection.
 
   ![Azure portal - verify connection i successful](../media/connection-object.png)
 
@@ -102,17 +100,17 @@ The circuit owner has the power to modify and revoke authorizations at any time.
 
 The circuit owner creates an authorization, which creates an authorization key to be used by a circuit user to connect their virtual network gateways to the ExpressRoute circuit. An authorization is valid for only one connection.
 
-> [!Note] Each connection requires a separate authorization.
+> [!NOTE] Each connection requires a separate authorization.
 
-- In the ExpressRoute page, select **Authorizations** and then type a **name** for the authorization and select **Save**.
+1. In the ExpressRoute page, select **Authorizations** and then type a **name** for the authorization and select **Save**.
 
   ![Azure portal - configure authorization](../media/authorization.png)
 
-- Once the configuration is saved, copy the **Resource ID** and the **Authorization Key**.
+1. Once the configuration is saved, copy the **Resource ID** and the **Authorization Key**.
 
   ![Azure portal - configure authorization showing resource Id and Authorization key](../media/authorization-key.png)
 
-- To delete a connection authorization
+1. To delete a connection authorization
 
 You can delete a connection by selecting the Delete icon for the authorization key for your connection.
 
@@ -128,23 +126,23 @@ The circuit user needs the resource ID and an authorization key from the circuit
 
 To redeem a connection authorization
 
-- Select the + Create a resource button. Search for Connection and select Create.
+1. Select the + Create a resource button. Search for Connection and select Create.
 
   ![Azure portal - create new connection](../media/create-new-resources.png)
 
-- Make sure the Connection type is set to **ExpressRoute**. Select the Resource group and Location, then select **OK** in the Basics page.
+1. Make sure the Connection type is set to **ExpressRoute**. Select the Resource group and Location, then select **OK** in the Basics page.
 
   > [!Note] The location must match the virtual network gateway location you are creating the connection for.
 
   ​	![Azure portal - create connection basics tab](../media/connection-basics.png)
 
-- In the **Settings** page, Select the Virtual network gateway and check the **Redeem authorization** check box. Enter the Authorization key and the Peer circuit URI and give the connection a name. Select **OK**.
+1. In the **Settings** page, Select the Virtual network gateway and check the **Redeem authorization** check box. Enter the Authorization key and the Peer circuit URI and give the connection a name. Select **OK**.
 
   > [!Note] The Peer Circuit URI is the Resource ID of the ExpressRoute circuit (which you can find under the Properties Setting pane of the ExpressRoute Circuit).
 
   ![Azure portal - create connection settings tab](../media/connection-settings.png)
 
-- Review the information in the **Summary** page and select **OK**.
+1. Review the information in the **Summary** page and select **OK**.
 
   ![Azure portal - create connection summary](../media/connection-summary.png)
 

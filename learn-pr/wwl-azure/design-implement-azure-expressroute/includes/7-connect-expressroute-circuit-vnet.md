@@ -4,7 +4,7 @@ An ExpressRoute circuit represents a logical connection between your on-premises
 
 In the previous exercises you created an ExpressRoute Gateway and an ExpressRoute circuit. You then learned how to configure peering for an express route circuit. You will now learn how to create a connection between your ExpressRoute circuit and Azure virtual network. 
 
-##Connect a virtual network to an ExpressRoute circuit
+## Connect a virtual network to an ExpressRoute circuit
 
 - You must have an active ExpressRoute circuit.
 
@@ -30,13 +30,14 @@ To watch a demonstration of how to create an ExpressRoute circuit, see [Azure Ex
 
 This section helps you configure secure encrypted connectivity between your on-premises network and your Azure virtual networks (VNets) over an ExpressRoute private connection. You can use Microsoft peering to establish a site-to-site IPsec/IKE VPN tunnel between your selected on-premises networks and Azure VNets. Configuring a secure tunnel over ExpressRoute allows for data exchange with confidentiality, anti-replay, authenticity, and integrity.
 
-> [!Note] When you set up site-to-site VPN over Microsoft peering, you are charged for the VPN gateway and VPN egress. 
+> [!NOTE]
+> When you set up site-to-site VPN over Microsoft peering, you are charged for the VPN gateway and VPN egress. 
 
 For high availability and redundancy, you can configure multiple tunnels over the two MSEE-PE pairs of an ExpressRoute circuit and enable load balancing between the tunnels.
 
 VPN tunnels over Microsoft peering can be terminated either using VPN gateway or using an appropriate Network Virtual Appliance (NVA) available through Azure Marketplace. You can exchange routes statically or dynamically over the encrypted tunnels without exposing the route exchange to the underlying Microsoft peering. In this section, BGP (different from the BGP session used to create the Microsoft peering) is used to dynamically exchange prefixes over the encrypted tunnels.
 
-> [!Important] For the on-premises side, typically Microsoft peering is terminated on the DMZ and private peering is terminated on the core network zone. The two zones would be segregated using firewalls. If you are configuring Microsoft peering exclusively for enabling secure tunneling over ExpressRoute, remember to filter through only the public IPs of interest that are getting advertised via Microsoft peering.
+> [!IMPORTANT] For the on-premises side, typically Microsoft peering is terminated on the DMZ and private peering is terminated on the core network zone. The two zones would be segregated using firewalls. If you are configuring Microsoft peering exclusively for enabling secure tunneling over ExpressRoute, remember to filter through only the public IPs of interest that are getting advertised via Microsoft peering.
 
 **Steps** 
 
