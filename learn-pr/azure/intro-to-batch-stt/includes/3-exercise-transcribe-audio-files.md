@@ -8,8 +8,7 @@ Let's start by preparing our environment. The following script creates our cogni
 
 1. Select **Copy**
 
-    ```bash
-    
+    ```bash 
     # Get and set the subscription and Resource Group
     subscription=$(az account list --query [0].id -o tsv)
     resourceGroupName=$(az group list --query "[0] | name" -o tsv)
@@ -20,27 +19,27 @@ Let's start by preparing our environment. The following script creates our cogni
         --resource-group $resourceGroupName \
         --kind SpeechServices \
         --sku S0 \
-        --location westus2 \
+        --location westus \
         --subscription $subscription \
         --yes
     
     # Create a blob and container to hold our audio files
     # Create blob
-    blobName=sttblob$resourceGroupName
+    lastchars=${resourceGroupName: -10}
+    blobName=blob$lastchars
     az storage account create \
         --name $blobName \
         --resource-group $resourceGroupName \
-        --location westus2 \
+        --location westus \
         --sku Standard_ZRS
     
     # Create container
-    blobContainerName=sttcontainer$resourceGroupName
+    blobContainerName=container$lastchars
     blobConnectionString=$(az storage account show-connection-string -g $resourceGroupName -n $blobName --query "connectionString" -o tsv)
     az storage container create \
         --name $blobContainerName \
         --public-access blob \
         --connection-string $blobConnectionString
-    
     ```
 
 1. Paste the code into the Cloud Shell session by selecting Ctrl+Shift+V on Windows and Linux, or Cmd+Shift+V on macOS
@@ -122,7 +121,7 @@ First, the command will create the secure URL for the container where the audio 
 
     ```bash
     # Submit the job
-    response=$(curl -X POST https://westus2.api.cognitive.microsoft.com/speechtotext/v3.0/transcriptions  \
+    response=$(curl -X POST https://westus.api.cognitive.microsoft.com/speechtotext/v3.0/transcriptions  \
     -H "Content-Type:application/json" \
     -H "Ocp-Apim-Subscription-Key:$apiKeySpeech" \
     --data "$json")

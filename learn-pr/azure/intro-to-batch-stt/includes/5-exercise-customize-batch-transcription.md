@@ -21,7 +21,7 @@ The first step to train a model is to upload training data. For more information
 1. Select **Upload data**
 1. Make sure 'Audio + human-labeled transcript' is highlighted, and select **Next**
 1. Select **Azure Blob or shared location**
-1. Copy the following URL, and paste it into the 'Audio + transcript' box
+1. Copy the following URL, and paste it into the 'Audio + transcript' box, then select **Next**
 
     ```
     https://github.com/Azure-Samples/cognitive-services-speech-sdk/raw/master/sampledata/customspeech/en-US/training/audio-and-trans.zip
@@ -29,13 +29,12 @@ The first step to train a model is to upload training data. For more information
 
     :::image type="content" source="../media/5-azure-blob-link.png" alt-text="Screenshot showing an example of steps 4 and 5 in the speech portal.":::
 
-1. Select **Next**
 1. Choose a name for your dataset, and select **Next**
 1. Select **Save and close**
 
 ## Train a custom model
 
-After a few seconds, you will see a message saying your files have successfully processed. Next, let's train a custom model using the data.
+After a few seconds, you'll see a message saying your files have successfully processed. Next, let's train a custom model using the data.
 
 1. On the left-hand side, select the check box for the dataset, then select **Train**
 
@@ -68,8 +67,9 @@ It might take a minute for your endpoint to be created. While the model is being
     # Get and set the names from the previous exercise
     subscription=$(az account list --query [0].id -o tsv)
     resourceGroupName=$(az group list --query "[0] | name" -o tsv)
-    blobName=sttblob$resourceGroupName
-    blobContainerName=sttcontainer$resourceGroupName
+    lastchars=${resourceGroupName: -10}
+    blobName=blob$lastchars
+    blobContainerName=container$lastchars
     blobConnectionString=$(az storage account show-connection-string -g $resourceGroupName -n $blobName --query "connectionString" -o tsv)
     apiKeySpeech=$(az cognitiveservices account keys list -g $resourceGroupName -n cognitive-services-account-resource-speech --query [key1] -o tsv)
     # Create a new SAS Token
@@ -79,7 +79,7 @@ It might take a minute for your endpoint to be created. While the model is being
     contentContainerUrl="https://$blobName.blob.core.windows.net/$blobContainerName/?$sasToken"
     ```
 
-1. Paste the following command into the sandbox terminal, but take care not to press enter. You need to replace <endpointID> with the ID for your model from the Custom Speech portal
+1. Paste the following command into the sandbox terminal, but **take care not to press enter**. You need to replace <endpointID> with the ID for your model from the Custom Speech portal
 
     ```
     model_id="<endpointID>"
@@ -110,10 +110,9 @@ Now, we need to transfer the details for the endpoint over to the Cloud Shell. R
     	"duration": "PT0S",
     	"timeToLive": "P1D"
       },
-        "model":
-            {
-            "self":"https://westus2.api.cognitive.microsoft.com/speechtotext/v3.0/transcriptions/models/'$model_id'"
-            },
+        "model": {
+            "self": "https://westus.api.cognitive.microsoft.com/speechtotext/v3.0/models/$model_id"
+        },
       "locale": "en-US",
       "displayName": "Batch transcription",
       "createdDateTime": "0001-01-01T00:00:00Z",
@@ -125,7 +124,7 @@ Now, we need to transfer the details for the endpoint over to the Cloud Shell. R
 
     ```bash
     # Submit the job
-    response=$(curl -X POST https://westus2.api.cognitive.microsoft.com/speechtotext/v3.0/transcriptions  \
+    response=$(curl -X POST https://westus.api.cognitive.microsoft.com/speechtotext/v3.0/transcriptions  \
     -H "Content-Type:application/json" \
     -H "Ocp-Apim-Subscription-Key:$apiKeySpeech" \
     --data "$json")
