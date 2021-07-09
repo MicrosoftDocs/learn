@@ -27,6 +27,7 @@ roles:
 - student
 products:
 - azure
+- azure-cognitive-services
 units:
 - learn.azure.intro-to-custom-commands.introduction
 - learn.azure.intro-to-custom-commands.what-is-custom-commands
