@@ -26,7 +26,7 @@ Let's create a Resource Group for this exercise:
 
     :::image type="content" source="../media/resource_group_1.png" alt-text="Screenshot showing the Azure portal with a red box around resource groups.":::
 
-2. Select **New** in the resource groups list:
+2. Select **New** or **Create** in the resource groups list:
 
     :::image type="content" source="../media/resource_group_2.png" alt-text="Screenshot showing the resource groups window with a red box around new.":::
 
@@ -35,7 +35,7 @@ Let's create a Resource Group for this exercise:
    - Select your previously created subscription.
    - Use **AI-Resource** as the Resource group's name.
    - Select your preferred region.
-   - Select **Review and create**.
+   - Select **Review and create**, then select **Create**.
 
     :::image type="content" source="../media/resource_group_3.png" alt-text="Screenshot showing the form to fill in to add a new resource group.":::
 
@@ -43,27 +43,29 @@ Let's create a Resource Group for this exercise:
 
 To create an ML Workspace, follow these steps:
 
-1. Select **Create a resource** in the Azure portal:
+1. Select **Home** to go back to the home page
+
+2. Select **Create a resource** in the Azure portal:
 
     :::image type="content" source="../media/ws1.png" alt-text="Screenshot showing the Azure portal with a red box around create a resource.":::
 
-2. Select **See all**.
+3. Select **See all**.
 
     :::image type="content" source="../media/ws2.png" alt-text="Screenshot showing the create a resource page with a red box around see all.":::
 
-3. Scroll down until the **AI + Machine Learning** option is visible and select **create**.
+4. Scroll down until the **AI + Machine Learning** option is visible and select **create**.
 
     :::image type="content" source="../media/ws3.png" alt-text="Screenshot showing the AI and machine learning option.":::
 
-4. Fill in the form, selecting your current subscription and the resource group we had previously created (**AI-Resource**). Use **ml-workspace** as the workspace name:
+5. Fill in the form, selecting your current subscription and the resource group we had previously created (**AI-Resource**). Use **ml-workspace** as the workspace name:
 
     :::image type="content" source="../media/ws4.png" alt-text="Screenshot showing the form from step 4 and how to fill it in.":::
 
-5. Select the **Review + create** button to load a review confirmation screen:
+6. Select the **Review + create** button to load a review confirmation screen:
 
     :::image type="content" source="../media/ws5.png" alt-text="Screenshot showing the confirmation screen from step 5.":::
 
-6. Select **Create** to start deploying your new workspace (this may take a few minutes).
+7. Select **Create** to start deploying your new workspace (this may take a few minutes).
 
 > [!IMPORTANT]
 > Notice that the deployment above created other resources:  
@@ -75,14 +77,16 @@ To create an ML Workspace, follow these steps:
 
 ## Create a Custom Role and Assign it to the Workspace
 
-1. Open Azure Cloud Shell
+1. Select **Home** to go back to the home page
+
+1. Open **Azure Cloud Shell**
 
    Select the Cloud Shell Icon:
 
     :::image type="content" source="../media/powershell1.png" alt-text="Screenshot showing where to select the cloud shell icon."::: or use the direct URL in your browser:
    https://shell.azure.com.
 
-1. Select Bash or PowerShell (we will use `bash`):
+1. Select **Bash** or **PowerShell** (we will use `bash`):
 
     :::image type="content" source="../media/powershell2.png" alt-text="Screenshot showing where to select bash.":::
 
