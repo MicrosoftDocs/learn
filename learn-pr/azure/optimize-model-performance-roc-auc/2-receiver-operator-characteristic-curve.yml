@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout.receiver-operator-characteristic-curve
-title: Receiver Operator Characteristic Curve
+title: Analyze classification with receiver operator characteristic curves
 metadata:
-  title: Receiver Operator Characteristic Curve
+  title: Analyze classification with receiver operator characteristic curves
   description: Conceptual unit introducing ROC curves in machine learning
   ms.date: 05/25/2021
   author: TomReidNZ
