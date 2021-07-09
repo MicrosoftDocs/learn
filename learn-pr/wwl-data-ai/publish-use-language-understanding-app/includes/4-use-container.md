@@ -60,5 +60,5 @@ Note the following options when using docker run:
 - The **mount** parameters enable the container to access local folders. Specifically, the **input** mount must reference the folder containing your exported Language Understanding app package, and the **output** folder is where the service will write logs (including Language Understanding query logs that you can use for active learning).
 - The **Eula**, **Billing**, and **ApiKey** parameters are used the same way they are for any Cognitive Services container - specifying acceptance of the license agreement, the prediction endpoint to which usage data should be sent for billing, and a valid subscription key for your prediction resource.
 
-> [NOTE]
+> [!NOTE]
 > To learn more about using a Language Understanding container, see the [Language Understanding documentation](/azure/cognitive-services/luis/luis-container-howto).
