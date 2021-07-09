@@ -1,5 +1,3 @@
-# Introduction
-
 In a cloud environment is easy to create resources, explore features and try everything. In the same way becomes easy to create environments without taking consideration of some important best practices.
 
 So how to track your environment and ensure cloud usage with correct approach over some pillars like cost effectiveness, security, reliability, operational excellence, and performance?

@@ -1,5 +1,3 @@
-# What is Azure Advisor
-
 Azure Advisor is like a cloud consultant working to you. It scans your Azure configuration and recommends changes to optimize deployments, increase security, and save you money.
 
 The Advisor dashboard displays personalized recommendations for all your subscriptions. You can apply filters to display recommendations for specific subscriptions and resource types. The recommendations are divided into five categories:

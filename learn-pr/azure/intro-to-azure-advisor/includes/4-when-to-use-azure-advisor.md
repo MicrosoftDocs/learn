@@ -1,5 +1,3 @@
-# When to use Azure Advisor
-
 Azure Advisor takes the ownership of optimizing your Azure deployments in three approaches:
 
 * Provide highly personalized recommendations and best practices, which are both actionable and proactive;

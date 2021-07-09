@@ -1,5 +1,3 @@
-# How Azure Advisor works?
-
 ## How access the recommendations?
 
 You can access Advisor through the Azure portal. Sign in to the portal, locate Advisor in the navigation menu, or search for it in the All services menu. Then you will be able to see the recommendations divided into five categories: Cost, Security, Reliability, Operational excellence and Performance.
