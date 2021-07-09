@@ -1,9 +1,6 @@
 Batch Transcription can transcribe entire storage containers with a single POST request. While you can also use the SDK to integrate transcription into your existing applications, in this exercise we'll use a POST request to closely examine the entire end-to-end process.
 
 We'll prepare an environment, submit our jobs, check the job status, then view the results. We'll work in Bash here, though note most commands can be executed through languages such as C# and Python. If you want to dive deeper, we have a [GitHub repository](https://github.com/MicrosoftDocs/mslearn-batch-stt) available.
-
-
-Batch Transcription can process WAV (PCM Codec), MP3 (PCM Codec), and OGG (Opus Codec) files sampled at 8 kHz or 16 kHz. These must be at a publicly accessible or shared access signature (SAS) URI.  It can process one or more files per batch. If more than one file is provided, the system attempts to process these in parallel, minimizing turn-around time.
 ​
 ## Preparing the environment
 
@@ -90,9 +87,9 @@ First, the transcription service will need to be passed the URI that allows it t
 
 ## Submitting the job
 
-Now all the services are set up, you are going to submit the transcription job. We need to create a JSON body for the request, stating where our container is and the transcription options. First, the command will create the secure URL for the container where the audio files are kept, using the names of the blob and container, and appending the SAS token you just generated to the end of the URL.
+Now all the services are set up, you are going to submit the transcription job. We need to create a JSON body for the request, stating where our container is and the transcription options. Batch Transcription can process one or more files per batch. If more than one file is provided, the system attempts to process these in parallel, minimizing turn-around time.
 
-Then, the command will create a JSON object, that contains the optional settings and locale for the transcription, along with the secure URL for the audio files.
+First, the command will create the secure URL for the container where the audio files are kept, using the names of the blob and container, and appending the SAS token you just generated to the end of the URL. Then, the command will create a JSON object, that contains the optional settings and locale for the transcription, along with the secure URL for the audio files.
 
 > [!TIP]
 >  
