@@ -20,7 +20,7 @@
            },
            "properties": {
               "arguments": "-Name Learner",
-              "environmentVariables:":[
+              "environmentVariables:": [
                   {
                     "name": "Subject",
                     "value": "Deployment Scripts"
