@@ -16,7 +16,7 @@ To perform this exercise, you need:
 
 * An Azure subscription.
 * A Microsoft account, or an Azure AD account with the Global Administrator role in the Azure AD tenant associated with the Azure subscription and with the Owner or Contributor role in the Azure subscription.
-* An Azure DevOps organization associated with the Microsoft account or the Azure AD account referenced in the previous prerequisite. To create an Azure DevOps organization, follow the instructions available at [Create an organization or project collection](/azure/devops/organizations/accounts/create-organization?view=azure-devops&preserve-view=true).
+* An Azure DevOps organization associated with the Microsoft account or the Azure AD account referenced in the previous prerequisite. To create an Azure DevOps organization, refer to the link provided at the end of the module.
 * A GitHub account associated with the Microsoft account or the Azure AD account referenced in the previous prerequisite. To create a GitHub account, follow the instructions available at [Signing up for a new GitHub account](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/signing-up-for-a-new-github-account).
 
 ## Prepare for deploying Azure resources
@@ -192,6 +192,7 @@ Your testing of CI/CD by using GitHub workflows is complete. To avoid unnecessar
 
 1. In the web browser displaying the Azure portal, on the **cna-devops-05-rg** resource group blade, on the toolbar, select **Delete resource group**.
 1. In the **TYPE THE RESOURCE GROUP NAME** text box, enter the name of the resource group, and then select **Delete**.
+1. Repeat the previous two steps for any other resource groups created during this exercise.
 
 ## Results
 

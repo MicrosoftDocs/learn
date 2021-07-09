@@ -140,13 +140,13 @@ For the sake of simplicity, you'll implement the Azure IoT Edge CI/CD pipeline b
 
 1. From the list of tasks, select the **Azure Deployment: Create Azure IoT Hub** task, and then select the **+** sign (**Add** sign) for the **Create Device and Deploy** entry.
 1. In the **Add tasks** pane, in the **Search** text box, enter **Azure CLI**.
-1. From the list of results, select **Azure CLI**, and then select **Add** to add the **Azure CLI** task directly above the **Azure Deployment: Create Azure IoT Hub** task.
+1. From the list of results, select **Azure CLI**, and then select **Add** to add the **Azure CLI**  task directly below the **Azure Deployment: Create Azure IoT Hub** task.
 1. Select the newly added **Azure CLI** task.
 1. In the task details pane, configure the following settings:
 
     | Setting | Configuration |
     | --- | --- |
-    | Azure Resource Manager connection | From the drop-down list, select the **cna-devops_07_iothub = Azure** entry representing the existing service connection to the Azure subscription you're using in this exercise. |
+    | Azure Resource Manager connection | From the drop-down list, select the entry representing the existing service connection to the Azure subscription you're using in this exercise. |
     | Script Type | From the drop-down list, select **Shell**. |
     | Script Location | **Inline script** |
     | Inline Script | Enter the script following this table. |
@@ -230,6 +230,7 @@ Your testing of CI/CD by using GitHub workflows is complete. To avoid unnecessar
 
 1. In the web browser displaying the Azure portal, on the **cna-devops-07-rg** resource group blade, from the toolbar, select **Delete resource group**.
 1. In the **TYPE THE RESOURCE GROUP NAME** text box, enter the name of the resource group, and then select **Delete**.
+1. Repeat the previous two steps for any other resource groups created during this exercise.
 
 ## Results
 
