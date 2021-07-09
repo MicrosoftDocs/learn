@@ -49,7 +49,7 @@ In this section, you will create a virtual network and a subnet.
     | **Setting**                       | **Value**                                     |
     | --------------------------------- | --------------------------------------------- |
     | Bastion name                      | **myBastionHost**                             |
-    | AzureBastionSubnet addresss space | **10.1.1.0/24**                               |
+    | AzureBastionSubnet address space  | **10.1.1.0/24**                               |
     | Public IP address                 | Select **Create  new**  Name: **myBastionIP** |
 
 
@@ -187,7 +187,7 @@ In this section, you will create three VMs (myVM1, myVM2, myVM3). When creating 
    | Availability options | **Availability Set**                                 |
    | Availability set     | Select **Create  new**  Name:  **myAvailabilitySet** |
    | Image                | **Windows Server 2019 Datacenter - Gen 1**           |
-   | Size                 | **Standard_DS1_v2 - 1 vcpu, 3.5 GiB  memory**        |
+   | Size                 | **Standard_DS1_v2 - 1 vCPU, 3.5 GiB  memory**        |
    | Username             | **TestUser**                                         |
    | Password             | **TestPa$$w0rd!**                                    |
    | Confirm password     | **TestPa$$w0rd!**                                    |
@@ -258,7 +258,7 @@ In this section, you will create three VMs (myVM1, myVM2, myVM3). When creating 
 
 3. Click **Use Bastion**.
 
-4. In the **U****sername** box, type **TestUser** and in the **P****assword** box, type **TestPa$$w0rd!**, then click **Connect**.
+4. In the **Username** box, type **TestUser** and in the **Password** box, type **TestPa$$w0rd!**, then click **Connect**.
 
 5. The **myVM1** window will open in another browser tab.
 
@@ -296,7 +296,7 @@ In this section, you will create a test VM, and then test the load balancer.
    | Region               | **(US) West US**                             |
    | Availability options | **No infrastructure redundancy required**    |
    | Image                | **Windows Server 2019 Datacenter - Gen 1**   |
-   | Size                 | **Standard_DS1_v2 - 1 vcpu, 3.5 GiB memory** |
+   | Size                 | **Standard_DS1_v2 - 1 vCPU, 3.5 GiB memory** |
    | Username             | **TestUser**                                 |
    | Password             | **TestPa$$w0rd!**                            |
    | Confirm password     | **TestPa$$w0rd!**                            |
@@ -334,7 +334,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
 5. Click **Use Bastion**.
 
-6. In the **U****sername** box, type **TestUser** and in the **P****assword** box, type **TestPa$$w0rd!**, then click **Connect**.
+6. In the **Username** box, type **TestUser** and in the **Password** box, type **TestPa$$w0rd!**, then click **Connect**.
 
 7. The **myTestVM** window will open in another browser tab.
 
