@@ -44,7 +44,7 @@ Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com
 
     |Field  |Value  |Details  |
     |---------|---------|---------|
-    |**Name**     |    Enter a unique name     |   Choose a globally unique name for the resource. For example, you might name the resource *webxrmagicxxx*, where the x's are replaced with your initials or a series of numbers. If the name isn't globally unique, you can try any other combination. Valid characters are a-z and 0-9. The name must be 3 to 24 characters long and will be used to generate the public URL for accessing data in the account.      |
+    |**Storage account name**     |    Enter a unique name     |   Choose a globally unique name for the resource. For example, you might name the resource *webxrmagicxxx*, where the x's are replaced with your initials or a series of numbers. If the name isn't globally unique, you can try any other combination. Valid characters are a-z and 0-9. The name must be 3 to 24 characters long and will be used to generate the public URL for accessing data in the account.      |
     |**Region**     |    Geographical location near you     |   The geographical location where your app will be used.      |
     |**Performance** | Standard | This option decides the type of disk storage used to hold the data in the Storage account. Standard uses traditional hard disks, and Premium uses solid-state drives (SSD) for faster access. |
     |**Redundancy** | Geo-redundant storage (GRS) | In the case of a regional unavailability, the data in the storage account will still be present and accessible thanks to redundancy in other regions. Keep "Make read access to data available in the event of regional unavailability" checked. |
