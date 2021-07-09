@@ -56,7 +56,10 @@ Azure adds default system routes for any Azure capabilities that you enable. Dep
 
 - If your on-premises network gateway exchanges border gateway protocol ([BGP](/azure/virtual-network/virtual-networks-udr-overview)) routes with an Azure virtual network gateway, a route is added for each route propagated from the on-premises network gateway. There are limits to the number of routes you can propagate to an Azure virtual network gateway, so you should summarize on-premises routes to the largest address ranges possible. For more information on the number of routes you can propagate, see [Networking limits](/azure/azure-resource-manager/management/azure-subscription-service-limits).
 
+
 **VirtualNetworkServiceEndpoint:** Azure adds the public IP addresses for certain services to the route table when you enable a service endpoint to the service. Service endpoints are enabled for individual subnets within a virtual network, so the route is only added to the route table of a subnet a service endpoint is enabled for. The public IP addresses of Azure services change periodically, and Azure manages the updates to the routing tables when necessary.
+
+
 The **VNet peering** and **VirtualNetworkServiceEndpoint** next hop types are only added to route tables of subnets within virtual networks created through the Azure Resource Manager deployment model. The next hop types are not added to route tables that are associated to virtual network subnets created through the classic deployment model.
 
 
@@ -137,29 +140,14 @@ You can view the effective routes for each network interface by using the Azure 
 
 8. Under **Support + troubleshooting**, select **Effective routes**. The effective routes for a network interface named **myVMNic1** are shown, in the following image:  ![Azure Portal - effective routes for a specific NIC.](../media/view-effective-routes.png)
 
+
 ### View effective routes by using Azure PowerShell
 
 You can view the effective routes for a network interface with the Get-AzEffectiveRouteTable command. The following example gets the effective routes for a network interface named myVMNic1, that is in a resource group named myResourceGroup:
-
-````Azure PowerShellGet-AzEffectiveRouteTable `
+```powershell    Get-AzEffectiveRouteTable `
 -NetworkInterfaceName myVMNic1 `
 -ResourceGroupName myResourceGroup `
-| Format-Table 
-````
-
-
-
-
-### View effective routes by using Azure CLI
-
-You can view the effective routes for a network interface with the az network nic show-effective-route-table command. The following example gets the effective routes for a network interface named myVMNic1 that is in a resource group named myResourceGroup:
-
-```Azure CLIaz network nic show-effective-route-table 
---name myVMNic1 
---resource-group myResourceGroup 
-```
-
-
+| Format-Table    ```
 
 
 ### Resolve the routing issue
@@ -201,6 +189,7 @@ Forced tunneling in Azure is configured using virtual network custom user-define
  - The on-premises VPN device must be configured using 0.0.0.0/0 as traffic selectors.
 
 Using forced tunneling allows you to restrict and inspect Internet access from your VMs and cloud services in Azure, while continuing to enable your multi-tier service architecture the Internet access it requires. 
+
 
 ## Check your knowledge
 
