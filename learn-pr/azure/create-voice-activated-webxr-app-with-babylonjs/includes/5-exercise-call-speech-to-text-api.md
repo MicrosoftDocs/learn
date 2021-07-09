@@ -238,3 +238,5 @@ Now that the code is ready, it is time to verify that the web application works 
 1. After that, the speech recognition session starts. Say "go dragon" to your microphone and wait for the 3D models to fade in.
 
     :::image type="content" source="../media/dragon-magic-circle-fade-in.gif" alt-text="The dragon model and the magic circle model fades into an empty Babylon J S scene.":::
+
+1. To stop the application, go back to the terminal where you ran `npm start` and type Ctrl+C. When prompted with whether or not to terminate batch jobs, make sure to respond with `Y`.

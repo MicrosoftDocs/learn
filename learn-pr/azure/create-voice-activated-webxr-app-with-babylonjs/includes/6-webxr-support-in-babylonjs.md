@@ -36,7 +36,7 @@ The WebXR Session Manager serves as the interface for us to interact with the We
 
 When we use `scene.createDefaultXRExperienceAsync()` to enable the WebXR support, the session manager is created automatically and can be accessed through `xr.baseExperience.sessionManager`.
 
-The WebXR Session Manager provides a set of observables, which events that we can subscribe to and take action on. For example, the *onXRSessionInit* observable is triggered when a new WebXR session is created, and the *onXRSessionEnded* observable is triggered when a WebXR session ended. These observables are useful for recognizing when users are entering the WebXR session through the button selection.
+The WebXR Session Manager provides a set of observables, which are events that we can subscribe to and take action on. For example, the *onXRSessionInit* observable is triggered when a new WebXR session is created, and the *onXRSessionEnded* observable is triggered when a WebXR session ended. These observables are useful for recognizing when users are entering the WebXR session through the button selection.
 
 The WebXR Session Manager can also be used to initialize or end a WebXR session programmatically, as well as specifying the type of the session (Virtual Reality or Augmented Reality) when creating the session programmatically.
 
