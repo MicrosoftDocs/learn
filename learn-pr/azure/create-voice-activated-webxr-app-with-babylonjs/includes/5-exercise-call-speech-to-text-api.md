@@ -8,7 +8,7 @@ Here, you will use the Azure Speech JavaScript SDK to integrate the Azure Speech
 
 Recall that your teammate has already set up a Babylon.js project with all of the necessary assets imported into the Babylon.js scene. Let's clone the repository that contains their work so far.
 
-1. Go to [this GitHub repository](https://github.com/MicrosoftDocs/mslearn-create-voice-activated-webxr-app) and select the **Code** dropdown.
+1. Go to [this GitHub repository](https://github.com/MicrosoftDocs/mslearn-create-voice-activated-webxr-app?azure-portal=true) and select the **Code** dropdown.
 
     :::image type="content" source="../media/github-repo.png" alt-text="Screenshot of the Learn module GitHub repository, with the Code dropdown button surrounded by a red box.":::
 
@@ -50,11 +50,11 @@ Since we are using Node.js, all of the required dependencies are listed in the *
 
     :::image type="content" source="../media/terminal-npm-install.PNG" alt-text="Screenshot of the terminal with the N P M install command.":::
 
-1. After the command finishes running, you should see a folder named *node_modules* created in the repository folder.
+1. After the command finishes running, you should see a folder named *node_modules* created within the *starter-code* folder.
 
 ## Import dependencies
 
-You might have noticed that the source files in this repository have the *.ts* extension, which means that the files are written in TypeScript instead of JavaScript. While TypeScript and JavaScript are similar in nature, TypeScript requires types to be clearly defined for function parameters.
+The source files in the *src* folder have the *.ts* extension, which means that the files are written in TypeScript instead of JavaScript. While TypeScript and JavaScript are similar in nature, TypeScript requires types to be clearly defined for function parameters.
 
 As a result, you'll need to import every class that will be used in a variable or a function parameter. In VSCode, navigate to *src/index.ts* and add the following import statement at the top of the file:
 
