@@ -3,7 +3,7 @@ uid: learn.wwl.design-implement-network-security-monitoring
 metadata:
   title: Design and implement network security
   description: "You will learn to design and imponent network security solutions such as Azure DDoS, Azure Firewalls, Network Security Groups, and Web Application Firewall. As well as networking monitoring solutions such as Azure Monitor and Network watcher."
-  ms.date: 07/08/2021
+  ms.date: 07/09/2021
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -42,11 +42,11 @@ units:
 - learn.wwl.design-implement-network-security-monitoring.secure-your-virtual-networks-azure-portal
 - learn.wwl.design-implement-network-security-monitoring.deploy-azure-ddos-protection-by-using-azure-portal
 - learn.wwl.design-implement-network-security-monitoring.exercise-configure-ddos-protection-virtual-network-using-azure-portal
+- learn.wwl.design-implement-network-security-monitoring.deploy-network-security-groups-by-using-the-azure-portal
 - learn.wwl.design-implement-network-security-monitoring.azure-firewall
 - learn.wwl.design-implement-network-security-monitoring.exercise-deploy-configure-azure-firewall-using-azure-portal
 - learn.wwl.design-implement-network-security-monitoring.secure-networks-with-azure-firewall-manager
 - learn.wwl.design-implement-network-security-monitoring.exercise-secure-your-virtual-hub-using-azure-firewall-manager
-- learn.wwl.design-implement-network-security-monitoring.deploy-network-security-groups-by-using-the-azure-portal
 - learn.wwl.design-implement-network-security-monitoring.implement-web-application-firewall-on-azure-front-door
 - learn.wwl.design-implement-network-security-monitoring.summary-resources
 badge:
