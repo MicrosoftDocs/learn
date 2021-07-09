@@ -27,6 +27,8 @@ roles:
   - administrator
   - ai-edge-engineer
   - ai-engineer
+  - data-scientist
+  - solution-architect
 products:
   - bonsai
 units:
