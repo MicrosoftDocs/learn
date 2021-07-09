@@ -87,7 +87,7 @@ We just added a VNet to our resource group, but is it restricting access to our 
 
 2. Select the __Studio web URL__ for your workspace:
 
-   ![Studio web URL](./media/workspace2.png)
+    :::image type="content" source="../media/workspace2.png" alt-text="Screenshot showing the studio web url to select.":::
 
 3. Azure Machine Learning Studio should open in a new tab or window. Scroll down until you can see the tabs below (Runs, Compute, Models, and Datasets):
 
