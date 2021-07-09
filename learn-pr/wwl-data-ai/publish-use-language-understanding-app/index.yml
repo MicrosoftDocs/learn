@@ -3,7 +3,7 @@ uid: learn.wwl.publish-use-language-understanding-app
 metadata:
   title: Publish and use a Language Understanding app
   description: "Publish and use a Language Understanding app"
-  ms.date: 07/08/2021
+  ms.date: 07/09/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -12,10 +12,9 @@ title: Publish and use a Language Understanding app
 summary: After creating a Language Understanding app, you can publish it and consume it from client applications.
 abstract: |
   After completing this module, you will be able to:
-  - Set publishing configuration options
-  - Process predictions
-  - Use a container
-  - Use multiple language models
+  - Set publishing configuration options for a Language Understanding app
+  - Process predictions from a Language Understanding app
+  - Deploy a language understanding app in a container
 prerequisites: |
   Before starting this module, you should already have:
   - Familiarity with Azure and the Azure portal.
