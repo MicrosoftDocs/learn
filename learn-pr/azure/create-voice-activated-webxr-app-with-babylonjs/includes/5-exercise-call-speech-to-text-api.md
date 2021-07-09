@@ -212,6 +212,10 @@ Let's create a Speech Recognizer using the Azure Speech JavaScript SDK.
     }
     ```
 
+1. Make sure to save your edits so far by selecting **Save** under the **File** menu, or by using Ctrl+S/Cmd+S.
+
+    :::image type="content" source="../media/save-file.png" alt-text="Screenshot of the Visual Studio Code File menu with the Save button surrounded by a red box.":::
+
 ## Check the app in the browser
 
 Now that the code is ready, it is time to verify that the web application works as intended. We will need to make sure that the dragon and magic circle models fade in when users say "go dragon" to the application.

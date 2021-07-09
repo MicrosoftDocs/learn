@@ -128,6 +128,10 @@ Currently, the dragon and the magic circle always fade in at the same position. 
 
 1. Move the *recognizer.recognized* event handler code to after the `scene.createDefaultXRExperienceAsync()` function call since we need to use the *xr* object to retrieve the camera.
 
+1. Make sure to save your edits so far by selecting **Save** under the **File** menu, or by using Ctrl+S/Cmd+S.
+
+    :::image type="content" source="../media/save-file.png" alt-text="Screenshot of the Visual Studio Code File menu with the Save button surrounded by a red box.":::
+
 ## Check your work
 
 At this point, the createScene() function should look like this:
