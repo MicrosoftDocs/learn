@@ -1,3 +1,4 @@
+
 Batch Transcription can transcribe entire storage containers with a single POST request. While you can also use the SDK to integrate transcription into your existing applications, in this exercise we'll use a POST request to closely examine the entire end-to-end process.
 
 We'll prepare an environment, submit our jobs, check the job status, then view the results. We'll work in Bash here, though note most commands can be executed through languages such as C# and Python. If you want to dive deeper, we have a [GitHub repository](https://github.com/MicrosoftDocs/mslearn-batch-stt) available.
@@ -99,7 +100,7 @@ First, the command will create the secure URL for the container where the audio 
 > You can also include the URL of a container to save the transcription results directly by using `"destinationContainerUrl": "<URL for destination container>"`.
 > When not specified, Microsoft stores the results in a storage container managed by Microsoft.
 
-1. Run the following command to create the JSON body for your request, and submit the job
+1. Run the following command to create the JSON body for your request
 
     ```bash
     # Create the JSON  
@@ -115,9 +116,7 @@ First, the command will create the secure URL for the container where the audio 
     	"timeToLive": "P1D"
       },
       "locale": "en-US",
-      "displayName": "Batch transcription",
-      "createdDateTime": "0001-01-01T00:00:00Z",
-      "lastActionDateTime": "0001-01-01T00:00:00Z"
+      "displayName": "Batch transcription"
     }'
 
     ```

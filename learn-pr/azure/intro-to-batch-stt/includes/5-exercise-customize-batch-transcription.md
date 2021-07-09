@@ -1,3 +1,4 @@
+
 The first step to train a model is to upload training data. For more information, see [Prepare and test your data](/azure/cognitive-services/speech-service/how-to-custom-speech-test-and-train) for step-by-step instructions to prepare human-labeled transcriptions and related text (utterances and pronunciations).
 
 ## Train and evaluate a model
@@ -17,7 +18,7 @@ The first step to train a model is to upload training data. For more information
 
 ## Use audio data to create a custom speech model
 
-1. Select your new project
+1. Select your new project by clicking on its name
 1. Select **Upload data**
 1. Make sure 'Audio + human-labeled transcript' is highlighted, and select **Next**
 1. Select **Azure Blob or shared location**
@@ -44,24 +45,11 @@ After a few seconds, you'll see a message saying your files have successfully pr
 1. Choose a name for your model, and select **Next**
 1. Select **Save and close**
 
-## Create an endpoint for your model
-
-While your model trains, let's create and endpoint so your model can be used in applications.
-
-1. On the left-hand menu, select **Deploy models**
-1. Select **Deploy model**
-
-    :::image type="content" source="../media/5-deploy-a-model.png" alt-text="Screenshot showing red boxes around the buttons needed to select to complete steps 1 and 2.":::
-
-1. Choose a name for your model, accept the terms of use, and select **Add**
-
-    :::image type="content" source="../media/5-new-endpoint.png" alt-text="Screenshot showing an example of creating an endpoint in the Azure portal.":::
-
-It might take a minute for your endpoint to be created. While the model is being trained, and the endpoint is being created, return to get the next transcription ready.
+It might take several minutes for your model to complete training. In the mean time, lets set things up to use it.
 
 ## Set up your custom transcription
 
-1. In the exercise sandbox, paste in the following command to get our environment variables ready for the next transcription
+1. In the exercise sandbox, paste in the following command to get our environment variables ready for the next transcription. These use the same resources as we set up in the last exercise.
 
     ```bash
     # Get and set the names from the previous exercise
@@ -80,24 +68,21 @@ It might take a minute for your endpoint to be created. While the model is being
 
     ```
 
-1. Paste the following command into the sandbox terminal, but **take care not to press enter**. You need to replace <endpointID> with the ID for your model from the Custom Speech portal
-
-    ```
-    model_id="<endpointID>"
-    ```
-
 ## Use your custom model
 
-Now, we need to transfer the details for the endpoint over to the Cloud Shell. Return to the Custom Speech portal, and navigate to the **Deploy models** section of the website if you exited the page.
+Now, to use the model we need to refer to it in the Cloud Shell. 
 
-1. Select your newly created endpoint
+We can do this using an endpoint, or linking directly to the model. Here we will link directly to the model.
 
-    Notice how Speech Studio provides code to connect to your custom model in multiple programming languages via the SDK, REST API, and WebSocket.
+Return to the Custom Speech portal, and navigate to the **Train custom models** section of the website if you exited the page.
 
-1. **Copy your Endpoint ID**
-1. Return to the sandbox terminal, and **replace <endpointID>** with your Endpoint ID. Take care to leave the quotation marks around the Endpoint ID, and select <kbd>Enter</kbd>
+1. If your model has completed training, it will be listed with its name in blue. If it is not ready, wait a few minutes for training to complete. Once it is ready, click on your model's name.
 
-1. Next, we'll follow the same steps as we did in the first exercise to create a new batch of transcriptions using the custom model. This time, you'll specify for Batch Transcription to use your newly created Custom Model in the JSON. Notice how we specify the endpoint with the cognitive services URL, and the custom model ID. Run the following command to create the JSON 
+2. **Copy your Model ID** from the top of the page. It will be listed as a GUID such as 0000000-1234-5678-9abc-def012345678
+
+4. Return to the sandbox terminal, and type `model_id=<your-model-id>`, replacing \<your-model-id\> with the model id you just copied, then press <kbd>Enter</kbd>
+
+5. Next, we'll follow the same steps as we did in the first exercise to create a new batch of transcriptions using the custom model. This time, you'll specify for Batch Transcription to use your newly created Custom Model in the JSON. Notice how we specify the endpoint with the cognitive services URL, and the custom model ID. Run the following command to create the JSON 
 
     ```bash
     # Create the JSON  
@@ -112,17 +97,15 @@ Now, we need to transfer the details for the endpoint over to the Cloud Shell. R
     	"timeToLive": "P1D"
       },
         "model": {
-            "self": "https://westus2.api.cognitive.microsoft.com/speechtotext/v3.0/models/$model_id"
+            "self": "https://westus2.api.cognitive.microsoft.com/speechtotext/v3.0/models/'$model_id'"
         },
       "locale": "en-US",
-      "displayName": "Batch transcription",
-      "createdDateTime": "0001-01-01T00:00:00Z",
-      "lastActionDateTime": "0001-01-01T00:00:00Z"
+      "displayName": "Batch transcription"
     }'
 
     ```
 
-1. Now, we're going to use cURL to submit the transcription job with a POST request. Run the following command to submit your next Batch Transcription job
+6. Now, we're going to use cURL to submit the transcription job with a POST request. Run the following command to submit your next Batch Transcription job
 
     ```bash
     # Submit the job
@@ -133,7 +116,7 @@ Now, we need to transfer the details for the endpoint over to the Cloud Shell. R
 
     ```
     
-1. Run the following query again to see the status of the new transcriptions:
+7. Run the following query again to see the status of the new transcriptions:
 
     ```bash
     # Find the URI that will tell us the status. This is found in the original submission response
@@ -147,7 +130,7 @@ Now, we need to transfer the details for the endpoint over to the Cloud Shell. R
 
     Take note of the status. Once it states 'Succeeded', then move on. If it states the job is still running, wait 20 seconds, then paste the command above into the terminal and run it again. Repeat this until the status is 'Succeeded'
 
-1. Run the following command to retrieve the uri for the transcription information and download the individual transcription files.
+8. Run the following command to retrieve the uri for the transcription information and download the individual transcription files.
 
     ```bash
     result_info_uri=$(echo $job_information | grep -oP -m 1 "(\s*\"files\":\s*\"\K)([^\"]*)")
@@ -170,7 +153,7 @@ Now, we need to transfer the details for the endpoint over to the Cloud Shell. R
 
     ```
 
-1. Run the following command to take a look at the first transcript
+9. Run the following command to take a look at the first transcript
 
     ```bash
     # View the first transcript in nano
