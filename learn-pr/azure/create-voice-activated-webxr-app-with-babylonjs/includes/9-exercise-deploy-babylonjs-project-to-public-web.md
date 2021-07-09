@@ -53,6 +53,8 @@ Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com
 
 1. Select **Review + Create**.
 
+1. Once the validation completes, select **Create** to create the storage account.
+
 > [!NOTE]
 > It can take a few seconds to get the storage account created and ready for use. A notification will appear after deployment is complete.
 

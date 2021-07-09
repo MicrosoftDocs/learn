@@ -76,7 +76,7 @@ import {
 
 Let's create a Speech Recognizer using the Azure Speech JavaScript SDK.
 
-1. Find the createScene() function in *index.ts*.
+1. Find the `createScene()` function in *index.ts*.
 
     ```typescript
     const createScene = async function () {
@@ -165,7 +165,7 @@ Let's create a Speech Recognizer using the Azure Speech JavaScript SDK.
     };
     ```
 
-1. Finally, call recognizer.startContinuousRecognitionAsync() to start the speech recognition session. Here is what the entire createScene() function looks like at this step:
+1. Finally, call recognizer.startContinuousRecognitionAsync() to start the speech recognition session. Here is what the entire `createScene()` function looks like at this step:
 
     ```typescript
     const createScene = async function () {

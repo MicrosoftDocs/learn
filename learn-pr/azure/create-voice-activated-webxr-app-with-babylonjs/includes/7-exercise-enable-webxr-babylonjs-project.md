@@ -12,7 +12,7 @@ Let's enable WebXR support for the immersive Virtual Reality mode in the amuseme
 
 1. If you have closed it, open your project folder from the previous exercise in Visual Studio Code.
 1. Navigate to *src/index.ts* in your project folder.
-1. In the createScene() function, add the following code before the function's return statement:
+1. In the `createScene()` function, add the following code before the function's return statement:
 
     ```typescript
     const xr = await scene.createDefaultXRExperienceAsync({});
@@ -26,7 +26,7 @@ Let's enable WebXR support for the immersive Augmented Reality mode in the amuse
 
 1. Open your project folder from the previous exercise in Visual Studio Code.
 1. Navigate to *src/index.ts* in your project folder.
-1. In the createScene() function, add the following code before the function's return statement:
+1. In the `createScene()` function, add the following code before the function's return statement:
 
     ```typescript
     const xr = await scene.createDefaultXRExperienceAsync({
@@ -40,7 +40,7 @@ Let's enable WebXR support for the immersive Augmented Reality mode in the amuse
 
 When users enter the Augmented Reality session, we want them to use their own surroundings as the background for the dragon-summoning activity. Let's enable the background remover feature to remove the ground and sky meshes only during an Augmented Reality session.
 
-Below the scene.createDefaultXRExperienceAsync() function call, add this line to enable the background remover feature:
+Below the `scene.createDefaultXRExperienceAsync()` function call, add this line to enable the background remover feature:
 
 ```typescript
 xr.baseExperience.featuresManager.enableFeature(BABYLON.WebXRBackgroundRemover, 'latest', {
@@ -56,7 +56,7 @@ Currently, users can summon the dragon without entering a WebXR session. However
 
 Let's restrict the summoning activity to only the Virtual Reality/Augmented Reality mode. To do so, we will start the speech recognition session after users enter a WebXR session.
 
-1. In the createScene() function, find and delete the `recognizer.startContinuousRecognitionAsync();` line.
+1. In the `createScene()` function, find and delete the `recognizer.startContinuousRecognitionAsync();` line.
 1. Right before the createScene() function's return statement, add this line of code:
 
     ```typescript
@@ -65,7 +65,7 @@ Let's restrict the summoning activity to only the Virtual Reality/Augmented Real
     });
     ```
 
-1. Let's also stop the recognition when the users exit the session, just in case they leave without summoning the dragon. Add the code below right before createScene() function's return statement:
+1. Let's also stop the recognition when the users exit the session, just in case they leave without summoning the dragon. Add the code below right before `createScene()` function's return statement:
 
     ```typescript
     xr.baseExperience.sessionManager.onXRSessionEnded.add((eventData: XRSession, eventState: BABYLON.EventState) => {
@@ -134,7 +134,7 @@ Currently, the dragon and the magic circle always fade in at the same position. 
 
 ## Check your work
 
-At this point, the createScene() function should look like this:
+At this point, the `createScene()` function should look like this:
 
 ::: zone pivot="vr"
 
