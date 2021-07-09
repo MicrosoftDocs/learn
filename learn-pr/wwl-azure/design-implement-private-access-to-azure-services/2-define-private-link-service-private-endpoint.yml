@@ -29,10 +29,10 @@ quiz:
       explanation: "Incorrect. Though Private Endpoint must be deployed in the same region and subscription as the virtual network, Private Links are dependent on Private Endpoints."
   - content: "What is the difference between a Service Endpoint and a Private Endpoint?"
     choices:
-    - content: "A Service Endpoint connects to extenal systems and services."
+    - content: "A Service Endpoint connects to external systems and services."
       isCorrect: true
       explanation: "Correct! A Service Endpoint connects to external resources. A Private Endpoint enables a private and secure connection between your virtual network and Azure."
-    - content: "A Private Endpoint connects to extenal systems and services."
+    - content: "A Private Endpoint connects to external systems and services."
       isCorrect: false
       explanation: "Incorrect, a Private Endpoint enables a private and secure connection between your virtual network and Azure. A Service Endpoint connects to external resources."
     - content: "Insert the second incorrect answer text in this cell."
