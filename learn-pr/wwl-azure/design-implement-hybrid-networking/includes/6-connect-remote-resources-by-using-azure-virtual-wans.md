@@ -27,6 +27,12 @@ There are two types of Virtual WANs: Basic and Standard. The following table sho
 | Basic                | Basic        | Site-to-site VPN only                                        |
 | Standard             | Standard     | ExpressRoute<br/> User VPN (P2S)<br/> VPN (site-to-site)<br/> Inter-hub and VNet-to-VNet transiting through the virtual hub |
 
+
+| Virtual WAN type | Hub type | Available configurations                                                                                              |
+| - | -- |  |
+| Basic            | Basic    | Site-to-site VPN only                                                                                                 |
+| Standard         | Standard | ExpressRoute<br>User VPN (P2S)<br>VPN (site-to-site)<br>Inter-hub and VNet-to-VNet transiting through the virtual hub |
+
 ## Hub private address space
 
 The minimum address space is /24 to create a hub. If you use anything in the range from /25 to /32, it will produce an error during creation. You don't need to explicitly plan the subnet address space for the services in the virtual hub. Because Azure Virtual WAN is a managed service, it creates the appropriate subnets in the virtual hub for the different gateways/services (for example, VPN gateways, ExpressRoute gateways, User VPN point-to-site gateways, Firewall, routing, etc.).
