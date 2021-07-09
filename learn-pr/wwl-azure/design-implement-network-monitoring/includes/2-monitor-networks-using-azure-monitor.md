@@ -217,7 +217,7 @@ If you select any region tile, a grid view will appear which shows NSG flow logs
 
 ![Azure Monitor Network Insights - Traffic tab - detailed NSG pane](../media/network-insights-traffic-2.png)
 
-In this grid view you can select an icon in the **Flowlog Configuration Status** column to edit the NSG flow log and Traffic Analytics configuration. Or you can select a value in the **Alert** column to go to the traffic alerts configured for that NSG, and you can navigate to the Traffic Analytics view by selecting the **Traffic Analytics Workspace**.
+In this grid view you can select an icon in the **Flow log Configuration Status** column to edit the NSG flow log and Traffic Analytics configuration. Or you can select a value in the **Alert** column to go to the traffic alerts configured for that NSG, and you can navigate to the Traffic Analytics view by selecting the **Traffic Analytics Workspace**.
 
 ### Diagnostic Toolkit
 

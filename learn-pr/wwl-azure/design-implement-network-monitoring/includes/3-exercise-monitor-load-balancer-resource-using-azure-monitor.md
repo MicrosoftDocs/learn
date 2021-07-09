@@ -46,7 +46,7 @@ In this section, you will create a virtual network and a subnet.
     | **Setting**                       | **Value**                                              |
     | --------------------------------- | ------------------------------------------------------ |
     | Bastion name                      | **myBastionHost**                                      |
-    | AzureBastionSubnet addresss space | **10.1.1.0/24**                                        |
+    | AzureBastionSubnet address  space | **10.1.1.0/24**                                        |
     | Public IP address                 | Select **Create new**<br /><br />Name: **myBastionIP** |
 
 12. Click **Review + create**.
@@ -181,7 +181,7 @@ In this section, you will create three VMs (myVM1, myVM2, myVM3). When creating 
    | Availability options | **Availability Set**                                         |
    | Availability set     | Select **Create new**<br /><br />Name: **myAvailabilitySet** |
    | Image                | **Windows Server 2019 Datacenter - Gen 1**                   |
-   | Size                 | **Standard_DS1_v2 - 1 vcpu, 3.5 GiB memory**                 |
+   | Size                 | **Standard_DS1_v2 - 1 vCPU, 3.5 GiB memory**                 |
    | Username             | **TestUser**                                                 |
    | Password             | **TestPa$$w0rd!**                                            |
    | Confirm password     | **TestPa$$w0rd!**                                            |
@@ -277,7 +277,7 @@ In this section, you will create a test VM, and then test the load balancer.
    | Region               | **(US) West US**                             |
    | Availability options | **No infrastructure redundancy required**    |
    | Image                | **Windows Server 2019 Datacenter - Gen 1**   |
-   | Size                 | **Standard_DS1_v2 - 1 vcpu, 3.5 GiB memory** |
+   | Size                 | **Standard_DS1_v2 - 1 vCPU, 3.5 GiB memory** |
    | Username             | **TestUser**                                 |
    | Password             | **TestPa$$w0rd!**                            |
    | Confirm password     | **TestPa$$w0rd!**                            |
