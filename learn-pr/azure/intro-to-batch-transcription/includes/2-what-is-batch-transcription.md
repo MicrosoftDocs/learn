@@ -40,6 +40,4 @@ Content-Type: application/json
 }
 ```
 
-The output is saved, and can be saved to a second storage blob or retrieved with a GET operation. If the input file is in mono, a single JSON file is produced per file. For stereo audio files, the left and right channels are split and a separate JSON result file is created for each channel. An example output is below:
-
-**Code example to go here**
+The output is saved, and can be saved to a second storage blob or retrieved with a GET operation. If the input file is in mono, a single JSON file is produced per file. For stereo audio files, the left and right channels are split and a separate JSON result file is created for each channel.

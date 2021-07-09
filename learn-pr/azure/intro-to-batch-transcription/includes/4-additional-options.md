@@ -12,13 +12,9 @@ One of the main problems your office is facing are the wide variety of languages
 
 Locale-aware Batch Transcription can be used to transcribe audio data from different sources, taking into account not just language, but dialects and local pronunciations.
 
-**Code example to go here**
-
 ### Custom models
 
 Audio analysis often looks for specific phrases or words, such as requests for particular actions to be undertaken, or for product names. This can be complicated when servicing many areas of the globe. For example, your call center might be responsible for products or services that differ by region and using brand names that can’t be found in the dictionary and easily misheard. There may also be different regulatory requirements for each region you're servicing and need to identify different phrases with high degrees of accuracy.
-
-**Code example to go here**
 
 When the number of important specific phrases grows beyond a few hundred words, it can be preferable to customize Batch Transcription to a deeper level. This means building a *Custom Speech model*, which is something we explore in the next set of exercises. In short, Custom Speech lets you evaluate and improve transcription accuracy for your applications and products by training and testing a model using your own audio files. Custom Speech can help you overcome speech recognition barriers such as industry-specific terminology, or even unusual background noise, to provide accurate audio transcription.
 
