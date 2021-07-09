@@ -9,17 +9,16 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Load balancing non-HTTP(S) traffic in Azure
-summary: You will learn how to design and implement load balancing solutions for non-HTTP(S) traffic in Azure with Azure Load balancer and Traffic Manager.
+summary: You will learn how to design load balancing solutions for non-HTTP(S) traffic. As well as, implement Azure Load balancer and Traffic Manager.
 abstract: |
   At the end of this module, you will be able to:
   •	Explain load balancing options in Azure
   •	Design and implement an Azure Load Balancer
   •	Implement a Traffic Manager profile
 prerequisites: |
-  • You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing
-  •You should have experience with network connectivity methods, such as VPN or WAN
-  • You should be able to navigate the Azure portal
-  • You should have experience with the Azure portal and Azure PowerShell
+  - You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing
+  - You should have experience with network connectivity methods, such as VPN or WAN
+  - You should have experience with the Azure portal and Azure PowerShell
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate
