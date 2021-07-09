@@ -14,7 +14,7 @@ The 50% threshold is logical – it means that the most likely label according t
 
 Decision matrices are a great way to assess the kinds of mistakes a model is making. This gives us the rates of True Positives (TP), True Negatives (TN), False Positives (FP), and False Negatives (FN)
 
-!(Screenshot showing a confusion matrix of true positives, true negatives, false positives, and false negatives.)(../media/2-decision-matrices.png)
+![Screenshot showing a confusion matrix of true positives, true negatives, false positives, and false negatives.](../media/2-decision-matrices.png)
 
 We can calculate some handy characteristics from the confusion matrix. Two popular characteristics are:
 
@@ -27,7 +27,7 @@ Consider our hiker example. Ideally, the true positive rate is very high, and th
 
 ## ROC curves
 
-Receiver Operator Characteristic (ROC) curves are a graph where we plot true positive rate versus false positive rate.
+Receiver operator characteristic (ROC) curves are a graph where we plot true positive rate versus false positive rate.
 
 ROC curves can be confusing for beginners for two main reasons. The first reason is that, beginners know that a model only has one value for true positive and true negative rates. So an ROC plot must look like this:
 
