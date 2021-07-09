@@ -6,7 +6,7 @@ Imagine you're working as the Azure administrator in a toy company. You've built
 
 A colleague from your quality control team just emailed you. They've been asked to run a customer survey and they need to deploy a new website and database. They're on a tight deadline so they don't want to build a whole new template if they don't have to. You have a call with them and, after speaking with them about their requirements, you remember you have a template that is close to what they need.
 
-It's one of the first Bicep files you wrote, so you're a little worried that it might not be ready for them to use. Nevertheless, you agree to share your template and collaborate with them to share the work you've done and improve it. 
+It's one of the first Bicep files you wrote, so you're a little worried that it might not be ready for them to use. How can you revise your template to ensure that its purpose is clear, and that it's readable and easy to maintain?
 
 ## What will we be doing?
 

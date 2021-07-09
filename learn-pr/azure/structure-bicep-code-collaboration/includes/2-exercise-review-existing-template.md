@@ -21,4 +21,4 @@ Throughout this module, you'll improve the template to follow best practices and
 > [!IMPORTANT]
 > The process of improving code by reorganizing and renaming it is called _refactoring_. When you refactor code, it's a good idea to use a version control system like Git. That way, you can make experimental changes and easily undo them or return to a previous version.
 >
-> In this module, we don't require that you use Git to save your file - but it's a good idea to do so, so consider it an optional extra.
+> In this module, we don't require that you use Git to track your file - but it's a good idea to do so, so consider it an optional extra.
