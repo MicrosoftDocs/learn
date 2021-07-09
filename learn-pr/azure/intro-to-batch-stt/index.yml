@@ -33,7 +33,6 @@ units:
 - learn.azure.intro-to-batch-stt.exercise-transcribe-audio-files
 - learn.azure.intro-to-batch-stt.additional-options
 - learn.azure.intro-to-batch-stt.exercise-customize-batch-transcription
-- learn.azure.intro-to-batch-stt.use-cases
 - learn.azure.intro-to-batch-stt.knowledge-check
 - learn.azure.intro-to-batch-stt.summary
 badge:

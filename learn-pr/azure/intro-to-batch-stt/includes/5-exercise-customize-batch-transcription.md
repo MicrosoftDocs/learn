@@ -77,6 +77,7 @@ It might take a minute for your endpoint to be created. While the model is being
     sasToken=$(az storage container generate-sas -n $blobContainerName --permissions rwl --expiry $end --connection-string $blobConnectionString -o tsv)
     # Create the new URI for the storage container
     contentContainerUrl="https://$blobName.blob.core.windows.net/$blobContainerName/?$sasToken"
+
     ```
 
 1. Paste the following command into the sandbox terminal, but **take care not to press enter**. You need to replace <endpointID> with the ID for your model from the Custom Speech portal
@@ -118,6 +119,7 @@ Now, we need to transfer the details for the endpoint over to the Cloud Shell. R
       "createdDateTime": "0001-01-01T00:00:00Z",
       "lastActionDateTime": "0001-01-01T00:00:00Z"
     }'
+
     ```
 
 1. Now, we're going to use cURL to submit the transcription job with a POST request. Run the following command to submit your next Batch Transcription job
@@ -128,6 +130,7 @@ Now, we need to transfer the details for the endpoint over to the Cloud Shell. R
     -H "Content-Type:application/json" \
     -H "Ocp-Apim-Subscription-Key:$apiKeySpeech" \
     --data "$json")
+
     ```
     
 1. Run the following query again to see the status of the new transcriptions:
@@ -139,6 +142,7 @@ Now, we need to transfer the details for the endpoint over to the Cloud Shell. R
     # Check the status with a simple GET request
     job_information=$(curl -X GET $info_uri -H "Ocp-Apim-Subscription-Key:$apiKeySpeech")
     echo "$job_information"
+
     ```
 
     Take note of the status. Once it states 'Succeeded', then move on. If it states the job is still running, wait 20 seconds, then paste the command above into the terminal and run it again. Repeat this until the status is 'Succeeded'
@@ -163,6 +167,7 @@ Now, we need to transfer the details for the endpoint over to the Cloud Shell. R
     done
 
     echo "Files Available: "$(ls transcript_*.json)
+
     ```
 
 1. Run the following command to take a look at the first transcript
@@ -171,6 +176,7 @@ Now, we need to transfer the details for the endpoint over to the Cloud Shell. R
     # View the first transcript in nano
     # Note that the transcript_0.json is meta information
     nano transcript_1.json
+
     ```
 
 That's it! You can press <kbd>Ctrl+X</kbd> to exit the nano text editor.

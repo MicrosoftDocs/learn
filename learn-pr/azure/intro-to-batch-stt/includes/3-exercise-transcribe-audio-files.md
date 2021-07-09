@@ -8,7 +8,7 @@ Let's start by preparing our environment. The following script creates our cogni
 
 1. Select **Copy**
 
-    ```bash 
+    ```bash
     # Get and set the subscription and Resource Group
     subscription=$(az account list --query [0].id -o tsv)
     resourceGroupName=$(az group list --query "[0] | name" -o tsv)
@@ -40,6 +40,7 @@ Let's start by preparing our environment. The following script creates our cogni
         --name $blobContainerName \
         --public-access blob \
         --connection-string $blobConnectionString
+
     ```
 
 1. Paste the code into the Cloud Shell session by selecting Ctrl+Shift+V on Windows and Linux, or Cmd+Shift+V on macOS
@@ -60,6 +61,7 @@ Batch Transcription can process WAV (PCM Codec), MP3 (PCM Codec), and OGG (Opus 
     ```bash
     az config set extension.use_dynamic_install=yes_without_prompt
     az storage azcopy blob upload -c $blobContainerName --account-name $blobName -s "mslearn-batch-stt/audiofiles/*" --recursive
+
     ```
 
 ## Set up access keys and tokens
@@ -75,6 +77,7 @@ First, the transcription service will need to be passed the URI that allows it t
     end=`date -u -d "59 minutes" '+%Y-%m-%dT%H:%MZ'`
     sasToken=$(az storage container generate-sas -n $blobContainerName --permissions rwl --expiry $end --connection-string $blobConnectionString -o tsv)
     echo "Our token is:" $sasToken
+
     ```
 
 1. We also need a key for the API so that we can access the results. Run the following command to generate this
@@ -82,6 +85,7 @@ First, the transcription service will need to be passed the URI that allows it t
     ```bash
     apiKeySpeech=$(az cognitiveservices account keys list -g $resourceGroupName -n cognitive-services-account-resource-speech --query [key1] -o tsv)
     echo "Our Key Is:" $apiKeySpeech
+
     ```
 
 ## Submitting the job
@@ -115,6 +119,7 @@ First, the command will create the secure URL for the container where the audio 
       "createdDateTime": "0001-01-01T00:00:00Z",
       "lastActionDateTime": "0001-01-01T00:00:00Z"
     }'
+
     ```
 
 1. Now, we're going to use cURL to submit the transcription job with a POST request. Notice we have the URL, and out Speech API key as a header. The `--data "$json"` is the request body, which is the JSON created in the previous step. Run the following command to submit your Batch Transcription job
@@ -125,6 +130,7 @@ First, the command will create the secure URL for the container where the audio 
     -H "Content-Type:application/json" \
     -H "Ocp-Apim-Subscription-Key:$apiKeySpeech" \
     --data "$json")
+
     ```
     
 1. Our captured `response` provides some information about where our results will be stored. To view it, past the following echo command into the terminal
@@ -142,6 +148,7 @@ First, the command will create the secure URL for the container where the audio 
     # Check the status with a simple GET request
     job_information=$(curl -X GET $info_uri -H "Ocp-Apim-Subscription-Key:$apiKeySpeech")
     echo "$job_information"
+
     ```
 
     Take note of the status. When it states 'Succeeded', then move on. If it states the job is still running, wait 20 seconds, then paste the command above into the terminal and run it again. Repeat this until the status is 'Succeeded'!
@@ -156,6 +163,7 @@ To view our results, we need to see where they are saved to in general. We can e
     result_info_uri=$(echo $job_information | grep -oP -m 1 "(\s*\"files\":\s*\"\K)([^\"]*)")
     transcription_information=$(curl -X GET $result_info_uri -H "Ocp-Apim-Subscription-Key:$apiKeySpeech")
     echo "Information on our transcriptions:\n$transcription_information"
+
     ```
 
     > [!TIP]
@@ -179,6 +187,7 @@ To view our results, we need to see where they are saved to in general. We can e
     done
 
     echo "Files Available: "$(ls transcript_*.json)
+
     ```
 
 1. Run the following command to take a look at the first transcript
@@ -187,6 +196,7 @@ To view our results, we need to see where they are saved to in general. We can e
     # View the first transcript in nano
     # Note that the transcript_0.json is meta information
     nano transcript_1.json
+
     ```
 
 That's it! You can press <kbd>Ctrl+X</kbd> to exit the nano text editor.
