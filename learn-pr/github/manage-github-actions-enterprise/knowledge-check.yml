@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.github.manage-github-actions-enterprise.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check what you've learned.
+  ms.date: 06/11/2021
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What actions can you take at enterprise level to manage the use of GitHub Actions in your enterprise instance?"
+    choices:
+    - content: "Create workflow templates"
+      isCorrect: false
+      explanation: "Incorrect. Workflow templates are created at organizational level."
+    - content: "Configure a GitHub Actions use policy"
+      isCorrect: true
+      explanation: "Correct. GitHub Actions use policies enable you to restrict access to GitHub Actions to specific organizations in your instance."
+    - content: "Manually sync public actions in Enterprise Cloud"
+      isCorrect: false
+      explanation: "Incorrect. Public actions are automatically synced in Enterprise Cloud. Only with Enterprise Server do you have the possibility to manually sync public actions instead of automatically."
+  - content: "What actions can you take to configure self-hosted runners for your enterprise use?"
+    choices:
+    - content: "Create and add custom labels to your runners"
+      isCorrect: true
+      explanation: "Correct. Custom labels can be used when you need to run jobs on runners that have specific capabilities."
+    - content: "Add proxy configurations to your runners after they start."
+      isCorrect: false
+      explanation: "Incorrect. If you need a self-hosted runner to communicate with GitHub via a proxy server, you must add all proxy configurations to your runner before starting it."
+    - content: "Add the IP address or IP address range of your runners at repository level."
+      isCorrect: false
+      explanation: "Incorrect. If your organization has configured an IP allowlist, you must add the IP address or IP address range of your self-hosted runners to the IP allowlist. IP allowlists are found in an organization's Settings."
+  - content: "What are encrypted secrets?"
+    choices:
+    - content: "Encrypted secrets are authentication tokens you can generate in your account settings."
+      isCorrect: false
+      explanation: "Incorrect. The authentication tokens you can create in your account settings are personal access tokens (PATs)."
+    - content: "Encrypted secrets are the equivalent of SSH keys in GitHub."
+      isCorrect: false
+      explanation: "Incorrect. SSH keys are also called SSH keys in GitHub."
+    - content: "Encrypted secrets are encrypted environment variables you can create to store sensitive information."
+      isCorrect: true
+      explanation: "Correct. Once created, encrypted secrets become available for use in your workflows and actions at the level at which they were created (organization or repository)."
