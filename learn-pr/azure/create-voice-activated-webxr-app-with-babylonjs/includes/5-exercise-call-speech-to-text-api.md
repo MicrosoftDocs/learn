@@ -8,7 +8,7 @@ Here, you will use the Azure Speech JavaScript SDK to integrate the Azure Speech
 
 Recall that your teammate has already set up a Babylon.js project with all of the necessary assets imported into the Babylon.js scene. Let's clone the repository that contains their work so far.
 
-1. Go to [this GitHub repository](https://github.com/MicrosoftDocs/mslearn-create-voice-activated-webxr-app) and select the **Code** dropdown.
+1. Go to [this GitHub repository](https://github.com/MicrosoftDocs/mslearn-create-voice-activated-webxr-app?azure-portal=true) and select the **Code** dropdown.
 
     :::image type="content" source="../media/github-repo.png" alt-text="Screenshot of the Learn module GitHub repository, with the Code dropdown button surrounded by a red box.":::
 
