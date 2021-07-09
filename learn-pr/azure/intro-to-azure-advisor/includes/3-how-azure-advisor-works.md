@@ -1,10 +1,14 @@
+As mentioned, Azure Advisor scans your Azure configuration through analysis of your resource configuration and usage telemetry. Then you get the recommendations with proposed actions inline.
+
 ## How access the recommendations?
 
 You can access Advisor through the Azure portal. Sign in to the portal, locate Advisor in the navigation menu, or search for it in the All services menu. Then you will be able to see the recommendations divided into five categories: Cost, Security, Reliability, Operational excellence and Performance.
 
+To access Azure Advisor, you need the permissions of Owner, Contributor or Reader of a subscription, Resource group or Resource. For all recommendations given, you have options to postpone for a specific time period (one day, one week, one month, three months) or indefinitely besides the option to dismiss.
+
 ### Costs Recommendations
 
-Azure Advisor help to identify idle and underutilized resources. You can get cost recommendations from the Cost tab on the Advisor dashboard. Here you can see a list of recommendations to reduce costs:
+Azure Advisor helps to identify idle and underutilized resources. You can get cost recommendations from the Cost tab on the Advisor dashboard. Here you can see a list of recommendations to reduce costs:
 
 ![Costs on Azure Advisor.](../media/3-advisor-cost.png)
 
