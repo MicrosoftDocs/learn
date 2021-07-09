@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-project-bonsai.4-when-to-use-project-bonsai  
+uid: learn.autonomous-systems.intro-to-project-bonsai.4-when-to-use-project-bonsai  
 title: When to use Microsoft Project Bonsai  
 metadata:
   unitType: learning-content  
@@ -9,7 +9,7 @@ metadata:
   author: warrenaj
   ms.author: v-anwarr  
   ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  ms.prod: learning-bonsai
 durationInMinutes: 4
 content: |
   [!include[](includes/4-when-to-use-project-bonsai.md)]

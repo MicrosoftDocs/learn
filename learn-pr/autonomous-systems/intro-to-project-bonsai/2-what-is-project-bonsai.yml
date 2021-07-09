@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-project-bonsai.2-what-is-project-bonsai  
+uid: learn.autonomous-systems.intro-to-project-bonsai.2-what-is-project-bonsai  
 title: What is Microsoft Project Bonsai?  
 metadata:
   unitType: learning-content  
@@ -9,7 +9,7 @@ metadata:
   author: warrenaj
   ms.author: v-anwarr  
   ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  ms.prod: learning-bonsai
 durationInMinutes: 8
 content: |
   [!include[](includes/2-what-is-project-bonsai.md)]

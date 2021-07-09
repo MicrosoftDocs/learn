@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-project-bonsai.6-summary  
+uid: learn.autonomous-systems.intro-to-project-bonsai.6-summary  
 title: Summary  
 metadata:
   unitType: summary  
@@ -9,7 +9,7 @@ metadata:
   author: warrenaj
   ms.author: v-anwarr  
   ms.topic: interactive-tutorial 
-  ms.prod: learning-azure
+  ms.prod: learning-bonsai
 durationInMinutes: 3
 content: |
   [!include[](includes/6-summary.md)]
