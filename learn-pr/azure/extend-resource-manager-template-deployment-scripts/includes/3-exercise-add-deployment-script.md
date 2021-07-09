@@ -76,7 +76,7 @@ Next, you need to create a user-assigned managed identity. Given the infrastruct
 
 1. Edit the `resources` section of *azuredeploy.json* to include:
 
-    :::code language="json" source="code/3-template-with-deploymentscript.json" range="61-65,107" :::
+    :::code language="json" source="code/3-template-with-deploymentscript.json" range="61-65,100" :::
 
 1. Save the template.
 
@@ -110,7 +110,7 @@ The role assignment also needs a GUID name. You can use the [`guid`](/azure/azur
 
 1. Edit the `resources` section of *azuredeploy.json* to include:
 
-    :::code language="json" source="code/3-template-with-deploymentscript.json" range="67-77,107" :::
+    :::code language="json" source="code/3-template-with-deploymentscript.json" range="67-77,100" :::
 
 1. Save the template.
 
@@ -142,7 +142,7 @@ Now, you have all the prerequisites for the deployment script. You'll start with
 
 1. Edit the `resources` section of *azuredeploy.json* to include:
 
-    :::code language="json" source="code/3-template-with-deploymentscript.json" range="79-93,106-107" :::
+    :::code language="json" source="code/3-template-with-deploymentscript.json" range="79-93,99-100" :::
 
 1. Add a `properties` section to the resource to define the script and the other required values.
 
