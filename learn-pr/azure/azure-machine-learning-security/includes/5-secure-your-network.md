@@ -31,7 +31,7 @@ Once you've connected your workspace to a private endpoint, you may connect othe
 
 ### ExpressRoute?
 
-ExpressRoute can be used if you wish to speed up the creation and of private connections to Azure services. The service allows to you create private connections between Microsoft datacenters and infrastructure that’s on your premises or in another facility. ExpressRoute connections are separate from the public internet and offer high security, reliability, and speeds with lower latency that typical connections over the internet. ExpressRoute has a range of pricing options depending on your estimated bandwidth requirements.
+ExpressRoute can be used if you wish to speed up the creation of private connections to Azure services. The service allows to you create private connections between Microsoft datacenters and infrastructure that’s on your premises or in another facility. ExpressRoute connections are separate from the public internet and offer high security, reliability, and speeds with lower latency that typical connections over the internet. ExpressRoute has a range of pricing options depending on your estimated bandwidth requirements.
 
 ## Private endpoints & Private Link
 

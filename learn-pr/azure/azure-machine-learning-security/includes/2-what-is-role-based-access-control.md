@@ -44,7 +44,7 @@ Custom roles can be created by defining possible actions permitted and NotAction
 }
 
 ````
-Note the Actions and NotActions above which define the permissions for the custom role and the assigned scope that is at the specific workspace level. In this example, the data scientist’s actions are defined through a wildcard (*) which extends a permission to everything that matches the action string you provide. So, in the above example the wildcard (*) string adds all permissions related to any read, write, action, or deletion within the workspace.
+Note the Actions and NotActions above which define the permissions for the custom role and the assigned scope that is at the specific workspace level. In this example, the data scientist’s actions are defined through a wildcard (represented by the * sign) which extends a permission to everything that matches the action string you provide. So, in the above example the wildcard (represented by the * sign) string adds all permissions related to any read, write, action, or deletion within the workspace.
 
 However, if we then look at the NotActions above, we can see restrictions on the deletion or creation of workspaces or new compute resources among others. Azure RBAC is an additive model, so the final permissions given to the custom role are the sum of these permissions and restrictions.
 

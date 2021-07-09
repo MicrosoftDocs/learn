@@ -92,9 +92,9 @@ To create an ML Workspace, follow these steps:
 
    | Variable              | Value                |
    | --------------------- | -------------------- |
-   | <subscription_id>     | Your subscription ID |
-   | <resource_group_name> | AI-Resource          |
-   | <workspace_name>      | ml-workspace         |
+   |  subscription_id      | Your subscription ID |
+   | resource_group_name   | AI-Resource          |
+   | workspace_name        | ml-workspace         |
    ```json
    {
      "Name": "Data Scientist Custom",
