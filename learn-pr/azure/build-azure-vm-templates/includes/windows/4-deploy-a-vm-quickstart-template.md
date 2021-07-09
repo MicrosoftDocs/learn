@@ -118,7 +118,7 @@ As a final verification step, you'll begin by validating that the template is sy
     ```azurecli
     az deployment group validate \
       --resource-group $RESOURCEGROUP \
-      --template-uri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-windows/azuredeploy.json" \
+      --template-uri "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.compute/vm-simple-linux/azuredeploy.json" \
       --parameters adminUsername=$USERNAME \
       --parameters adminPassword=$PASSWORD \
       --parameters dnsLabelPrefix=$DNS_LABEL_PREFIX
