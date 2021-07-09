@@ -20,19 +20,15 @@ Sign in to the [Azure portal](https://portal.azure.com).
 
 Let's create a VNet for this exercise:
 
-1. In the Azure portal, select **Create Resource**:
-    
-    :::image type="content" source="../media/resource_group_1.png" alt-text="Screenshot showing the Azure portal with a red box around resource groups.":::
+1. In the Azure portal, Select **Create a resource** in the upper left-hand corner of the portal.
 
-2. Select **Create a resource** in the upper left-hand corner of the portal.
+2. In the search box, enter **Virtual Network**. Select **Virtual Network** in the search results.
 
-3. In the search box, enter **Virtual Network**. Select **Virtual Network** in the search results.
-
-4. In the **Virtual Network** page, select **Create**.
+3. In the **Virtual Network** page, select **Create**.
 
     :::image type="content" source="../media/create_vnet.png" alt-text="Screenshot showing the virtual network page with a red box around create.":::
 
-5. In **Create virtual network**, enter or select this information in the **Basics** tab:
+4. In **Create virtual network**, enter or select this information in the **Basics** tab:
 
     <!-- :::image type="content" source="./media/quick-create-portal/create-virtual-network.png" alt-text="Create virtual network Azure portal" border="true"::: -->
 
@@ -47,22 +43,22 @@ Let's create a VNet for this exercise:
    | Name                 | Enter **MLVNet**.                                                                                     |
    | Region               | Select **(US) East US**.                                                                              |
 
-6. Select the **IP Addresses** tab, or select the **Next: IP Addresses** button at the bottom of the page.
+5. Select the **IP Addresses** tab, or select the **Next: IP Addresses** button at the bottom of the page.
 
    > [!TIP]
-   > If your screen comes with the IPv4 address space and _default_ subnet setup like in the image below, skip to step 10.
+   > If your screen comes with the IPv4 address space and _default_ subnet setup like in the image below, skip to step 9.
 
     :::image type="content" source="../media/vnet_form2.png" alt-text="Screenshot showing Azure Virtual Network IP Addresses page.":::
 
-7. In **IPv4 address space**, select the existing address space and change it to **10.1.0.0/16**.
+6. In **IPv4 address space**, select the existing address space and change it to **10.1.0.0/16**.
 
-8. Select **+ Add subnet**, then enter **default** for **Subnet name** and **10.1.0.0/24** for **Subnet address range**.
+7. Select **+ Add subnet**, then enter **default** for **Subnet name** and **10.1.0.0/24** for **Subnet address range**.
 
-9. Select **Add**.
+8. Select **Add**.
 
-10. Select the **Review + create** tab or select the **Review + create** button.
+9. Select the **Review + create** tab or select the **Review + create** button.
 
-11. Select **Create** and wait a few moments for the deployment to finish:
+10. Select **Create** and wait a few moments for the deployment to finish:
 
     :::image type="content" source="../media/vnet_deployment.png" alt-text="Screenshot showing the deployment complete page from step 11.":::
 
@@ -81,15 +77,17 @@ We just added a VNet to our resource group, but is it restricting access to our 
 > The Azure Machine Learning Workspace is a web portal with high-level
 > tools for model training, deployment, and asset management.
 
-1. Select the __ml-workspace__ in the list of recent resources:
+1. Select **Home** to go back to the home page
+
+2. Select the __ml-workspace__ in the list of recent resources:
 
     :::image type="content" source="../media/workspace1.png" alt-text="Screenshot showing the Azure portal with a red box around ml-workspace.":::
 
-2. Select the __Studio web URL__ for your workspace:
+3. Select the __Studio web URL__ for your workspace:
 
     :::image type="content" source="../media/workspace2.png" alt-text="Screenshot showing the studio web url to select.":::
 
-3. Azure Machine Learning Studio should open in a new tab or window. Scroll down until you can see the tabs below (Runs, Compute, Models, and Datasets):
+4. Azure Machine Learning Studio should open in a new tab or window. Scroll down until you can see the tabs below (Runs, Compute, Models, and Datasets):
 
     :::image type="content" source="../media/workspace-no-warnings.png" alt-text="Screenshot showing the workspace with no warnings.":::
 
@@ -144,7 +142,7 @@ To accomplish that, we need to define a [Private Endpoint](/azure/private-link/p
    | -------------------- | ------------------------------------------------------- |
    | **Project details**  |                                                         |
    | Subscription         | Select your subscription.                               |
-   | Resource type        | Enter <b>Microsoft.MachineLearninService/workspaces</b> |
+   | Resource type        | Enter <b>Microsoft.MachineLearningService/workspaces</b> |
    | **Instance details** |                                                         |
    | Resource \*          | Select **ml-workspace**.                                |
    | Target subresource  | Select **amlworkspace**.                                |
