@@ -6,8 +6,6 @@ Creating a new Custom Command Voice Assistant app takes less than 10 minutes wit
 
 The link to the Speech Studio Portal can be found in the Unit 6 – Summary. Below we see the Speech Studio WebUI:
 
-:::image type="content" source="../media/2-custom-commands-example.png" alt-text="Screenshot of an example of a custom command to increase the temperature.":::
-
 :::image type="content" source="../media/3-speech-studio.png" alt-text="Screenshot showing the web user interface for the Azure speech studio for custom commands." lightbox="../media/3-speech-studio.png":::
 
 A **LUIS** authoring service is required for the app to understand the queries and commands sent to the assistant. The LUIS model has multiple pricing tiers but requires a standard tier prediction resource to process speech inputs in your final published app. If you only want to train and test your app, then the free LUIS authoring resource is sufficient.
@@ -31,7 +29,7 @@ To create a custom command, you’ll need to provide:
 
 To get started, select **New command** in the top-left pane. You will then be required to add example sentences and phrases to activate the command. In the example below, we have created turn on/off commands and added example sentences used to train the LUIS model for your project, and eventually trigger actions you specify.
 
-:::image type="content" source="../media/3-creating-commands.png" alt-text="Screenshot showing example sentences for custom commands in the Azure speech studio." lightbox="../media/3-speech-studio-2.png":::
+:::image type="content" source="../media/3-creating-commands.png" alt-text="Screenshot showing example sentences for custom commands in the Azure speech studio." lightbox="../media/3-creating-commands.png":::
 
 ### Configuring commands
 
@@ -65,7 +63,7 @@ This would trigger the specified actions—in this case, the system would send a
 
 Once you have created your command, you can **train and test** the behavior of your application in the Studio to see if it works as intended. If you require more detail, you can select **turn details** for more information on how the voice input was processed.
 
-:::image type="content" source="../media/3-testing-commands.png" alt-text="Screenshot showing an example of testing your custom commands application in the Azure speech studio." lightbox="../media/3-testing-commands.png":::
+![Screenshot showing an example of testing your custom commands application in the Azure speech studio.](../media/3-testing-commands.png)
 
 While the commands or functions given to the voice assistant can be complex, one of the major strengths of Custom Commands is the sequential and straightforward nature of the development process. Users can test the voice assistant functionality quickly, and incrementally add further control to their smart devices as the need arises.
 
