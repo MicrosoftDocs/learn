@@ -353,4 +353,4 @@ Here you update the Kubernetes *deployment.yml* manifest to point to the contain
 
     [!code-yml[](code/3-1-deployment.yml?highlight=17,37)]
 
-1. Commit the changes to the `master` branch.
+1. Commit the changes to the `main` branch.

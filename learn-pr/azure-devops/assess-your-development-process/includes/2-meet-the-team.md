@@ -4,7 +4,7 @@ Tailspin Toys, or Tailspin for short, is a video game company. Tailspin hosts it
 
 The team that you'll be working with builds websites to support new game titles. These websites provide information about the game, ways to get it, and leaderboards that show top scores. Each website must go live the same day the game is released, which requires coordination among the teams and puts some extra pressure on the web team.
 
-The _Space Game_ website is a .NET Core app written in C# that's deployed to Linux. The website isn't finished yet, but here's what it looks like right now:
+The _Space Game_ website is a .NET app written in C# that's deployed to Linux. The website isn't finished yet, but here's what it looks like right now:
 
 <!-- TODO: Host this under our team account. -->
 <!-- TODO: Throw a fake DNS name in front of this to hide the fact we're hosting it on Azure - the fictitious team isn't there yet. -->

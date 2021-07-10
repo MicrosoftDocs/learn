@@ -6,7 +6,7 @@ metadata:
   description: Set up a new TypeScript project in Visual Studio Code, generate a tsconfig.json file, compile TypeScript to JavaScript, and add an HTML file to test the JavaScript code.
   ms.date: 02/10/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

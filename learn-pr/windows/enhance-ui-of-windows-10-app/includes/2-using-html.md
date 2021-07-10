@@ -1,4 +1,4 @@
-![UWP and WPF logos](../media/tech-all.png)
+![UWP and WPF logos.](../media/tech-all.png)
 
 HTML is a web markup syntax, but you can use it in Windows 10 desktop applications if you add a web control. This control gives you the ability to include a view in your app that loads a webpage from the internet or static HTML.
 
@@ -15,13 +15,13 @@ Let's get started!
 
 ::: zone pivot="uwp"
 
-![Technology logos with UWP highlighted](../media/tech-uwp.png)
+![Technology logos with UWP highlighted.](../media/tech-uwp.png)
 
 #### 1. Create a project
 
 In Visual Studio, create a Universal Windows Platform (UWP) C# project. Give the project a meaningful name that's based on this lesson, like **UsingHtmlApp.Uwp**.
 
-![Create the project](../media/new-project-uwp.png)
+![Create the project.](../media/new-project-uwp.png)
 
 #### 2. The `WebView` control
 
@@ -48,7 +48,7 @@ Open **MainPage.xaml** and add a `WebView` control to the page:
 
 That's it. Your application will now display a website, and you can navigate around the website by using links in the site's content.
 
-![WebView](../media/uwp-usinghtml-webview.png)
+![WebView.](../media/uwp-usinghtml-webview.png)
 
 In most cases, you'll even see the website load in the XAML designer!
 
@@ -122,11 +122,11 @@ Notice that the **Navigate** method uses a `Uri` instead of a `string`.
 
 You'll see that the `WebView` isn't showing any content when the app first starts. Select the `Button` to load the website:
 
-![Select the button](../media/uwp-usinghtml-loadonlinepage-before.png)
+![Select the button.](../media/uwp-usinghtml-loadonlinepage-before.png)
 
 Here's the result of selecting the button:
 
-![Loaded website](../media/uwp-usinghtml-loadonlinepage-after.png)
+![Loaded website.](../media/uwp-usinghtml-loadonlinepage-after.png)
 
 #### 4. Back and forward buttons
 
@@ -255,7 +255,7 @@ Right-click the **Assets** folder in **Solution Explorer**, expand **Add**, and 
 
 Filter by **text**, select **Text File**, and then name the file **LocalContent.html**.
 
-![Add a text file](../media/uwp-usinghtml-add-new-htmlfile.png)
+![Add a text file.](../media/uwp-usinghtml-add-new-htmlfile.png)
 
 After the file is added, open it and add this HTML content:
 
@@ -285,7 +285,7 @@ After the file is added, open it and add this HTML content:
 
 You should see the following result:
 
-![Completed file](../media/uwp-usinghtml-localhtmlfile-complete.png)
+![Completed file.](../media/uwp-usinghtml-localhtmlfile-complete.png)
 
 Open **MainPage.xaml** and add a **Load local HTML file** `Button` to the top of the page:
 
@@ -403,15 +403,15 @@ The key takeaway here is that there's no difference between using the **Navigate
 
 When the application opens, select **Load local HTML file**:
 
-![Select Load local HTML file](../media/uwp-usinghtml-loadofflinepage-before.png)
+![Select Load local HTML file.](../media/uwp-usinghtml-loadofflinepage-before.png)
 
 You should see the rendered HTML:
 
-![Rendered HTML](../media/uwp-usinghtml-loadofflinepage-after.png)
+![Rendered HTML.](../media/uwp-usinghtml-loadofflinepage-after.png)
 
 Now select **click me!** to run the JavaScript. This button updates the subtitle text on the web page.
 
-![HTML after JavaScript runs](../media/uwp-usinghtml-loadofflinepage-after2.png)
+![HTML after JavaScript runs.](../media/uwp-usinghtml-loadofflinepage-after2.png)
 
 
 That brings us to the end of this introduction to using HTML in a UWP Windows application.
@@ -420,13 +420,13 @@ That brings us to the end of this introduction to using HTML in a UWP Windows ap
 
 ::: zone pivot="wpf"
 
-![Technology logos with WPF highlighted](../media/tech-wpf.png)
+![Technology logos with WPF highlighted.](../media/tech-wpf.png)
 
 #### 1. Create a project
 
 In Visual Studio, create a WPF C# project. Give the project a meaningful name that's based on this lesson, like **UsingHtmlApp.Wpf**.
 
-![Create the project](../media/new-project-wpf.png)
+![Create the project.](../media/new-project-wpf.png)
 
 #### 2. The `WebBrowser` control
 
@@ -454,7 +454,7 @@ Open **MainWindow.xaml** and add a `WebBrowser` control to the page:
 
 That's it! Your application will now display a website, and you can navigate around the website by using links in the site's content.
 
-![WebBrowser](../media/wpf-usinghtml-webview.png)
+![WebBrowser.](../media/wpf-usinghtml-webview.png)
 
 That functionality doesn't make an application very useful by itself, because you can't change the website programmatically. The user needs to use the links on the web page to navigate anywhere.
 
@@ -527,11 +527,11 @@ Notice that the **Navigate** method uses a `Uri` instead of a `string`. `UriKind
 
 You'll see that the `WebBrowser` isn't showing any content when the app first starts. Select the `Button` to load the website:
 
-![Select the button](../media/wpf-usinghtml-loadonlinepage-before.png)
+![Select the button.](../media/wpf-usinghtml-loadonlinepage-before.png)
 
 Here's the result of selecting the button:
 
-![Loaded website](../media/wpf-usinghtml-loadonlinepage-after.png)
+![Loaded website.](../media/wpf-usinghtml-loadonlinepage-after.png)
 
 #### 4. Back and forward buttons
 
@@ -660,7 +660,7 @@ Right-click the project in **Solution Explorer**, expand **Add**, and then selec
 
 Filter by **text**, select **Text File**, and then name the file **LocalContent.html**.
 
-![Add a text file](../media/wpf-usinghtml-add-new-htmlfile.png)
+![Add a text file.](../media/wpf-usinghtml-add-new-htmlfile.png)
 
 After the file is added, open it and add this HTML content:
 
@@ -690,7 +690,7 @@ After the file is added, open it and add this HTML content:
 
 You should see the following result:
 
-![Completed file](../media/wpf-usinghtml-localhtmlfile-complete.png)
+![Completed file.](../media/wpf-usinghtml-localhtmlfile-complete.png)
 
 Open **MainWindow.xaml** and add a **Load local HTML file** `Button` to the top of the page:
 
@@ -814,19 +814,19 @@ The key takeaway here is that there's no difference between using the **Navigate
 
 When the application opens, select **Load local HTML file**:
 
-![Select Load local HTML file](../media/wpf-usinghtml-loadofflinepage-before.png)
+![Select Load local HTML file.](../media/wpf-usinghtml-loadofflinepage-before.png)
 
 You should see the rendered HTML. Notice that the `WebBrowser` control will protect the user by disabling any embedded JavaScript:
 
-![Rendered HTML](../media/wpf-usinghtml-loadofflinepage-after.png)
+![Rendered HTML.](../media/wpf-usinghtml-loadofflinepage-after.png)
 
 If you select the banner, you'll see a context menu. Select **Allow blocked content** to enable JavaScript:
 
-![Allow blocked content](../media/wpf-usinghtml-loadofflinepage-after2.png)
+![Allow blocked content.](../media/wpf-usinghtml-loadofflinepage-after2.png)
 
 Now you can select **click me!** to run the JavaScript. This button updates the subtitle text on the web page:
 
-![HTML after JavaScript runs](../media/wpf-usinghtml-loadofflinepage-after3.png)
+![HTML after JavaScript runs.](../media/wpf-usinghtml-loadofflinepage-after3.png)
 
 
 That brings us to the end of this introduction to using HTML in a WPF Windows application.

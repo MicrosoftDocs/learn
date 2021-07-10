@@ -14,7 +14,7 @@ Visual Studio Code contains a built-in command line that integrates with your WS
 
 In Visual Studio Code, open the Extensions view (select **View** > **Extensions** or Ctrl+Shift+X) and search for "wsl". Choose the **Remote – WSL** extension as seen below (it should be at the top of the list) and press **Install**.
 
-![Remote - WSL extension](../media/remote-wsl-extension.png)
+![Remote - WSL extension.](../media/remote-wsl-extension.png)
 
 The Remote - WSL extension lets you use the Visual Studio Code editor in the context of WSL with full support for language features such as IntelliSense, code navigation, debugging, and more. You can also choose to install the [Remote Development extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack), which bundles all three Visual Studio Code remote extensions to support working over SSH and inside Docker containers in addition to WSL.
 
@@ -24,7 +24,7 @@ In Visual Studio Code, select **View** > **Terminal** (or select Ctrl+`, using t
 
 To change the default Visual Studio Code terminal shell, open the terminal dropdown and pick **Select Default Shell**. A settings window with a list of available shells will open. Select **WSL Bash** in the list. *(You can also open the default terminal picker from the Command Palette, select the F1 key and enter **Terminal: Select Default Shell**.)*
 
-![Screenshot of customizing the shell in Visual Studio Code](../media/customize-terminal-vscode.png)
+![Screenshot of customizing the shell in Visual Studio Code.](../media/customize-terminal-vscode.png)
 
 ## Where to store project files
 
@@ -58,11 +58,11 @@ Git is an open-source distributed control system. Basically a tool for storing f
 
 5) With initial Git configuration done, reopen the folder in WSL using the Visual Studio Code Remote - WSL extension by running **Remote-WSL: Reopen Folder in WSL** from the Command Palette (F1). This will restart Visual Studio Code connected to WSL as indicated in the Status Bar.
 
-   ![Remote WSL Status Bar indicator](../media/remote-wsl-status-bar.png)
+   ![Remote WSL Status Bar indicator.](../media/remote-wsl-status-bar.png)
 
    If you click on the Remote - WSL Status Bar indicator, it brings up a list of the **Remote-WSL** commands.
 
-   ![Remote WSL commands](../media/remote-wsl-commands.png)
+   ![Remote WSL commands.](../media/remote-wsl-commands.png)
 
 6) Open a new terminal in Visual Studio Code (**View** > **Terminal** Ctrl+`). Now that Visual Studio Code is running in the context of WSL, you'll see the terminal is using bash or your default Linux shell.
 

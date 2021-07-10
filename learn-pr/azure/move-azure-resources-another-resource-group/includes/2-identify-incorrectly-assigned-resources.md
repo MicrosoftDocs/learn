@@ -22,7 +22,7 @@ To help identify and organize your resource groups, use a consistent naming conv
 
 Find resource groups in the Azure portal by selecting **Resource Groups** from the left-hand side. You'll see a list of all your resource groups.
 
-![Screenshot that shows the Resource groups page](../media/2-view-resource-groups.png)
+![Screenshot that shows the Resource groups page.](../media/2-view-resource-groups.png)
 
 When you select a resource group, you see all the resources in it. Within the resource group, you can:
 
@@ -37,11 +37,11 @@ Tags are name and value pairs that you apply to resources. For example, you can 
 
 Many resource types have a **Tags** page in the portal that you can use to add tags.
 
-![Screenshot that shows the Assign tags pane](../media/2-add-tags.png)
+![Screenshot that shows the Assign tags pane.](../media/2-add-tags.png)
 
 Both users and custom code can use tags to find resources. In the portal, to see a list of all the tags that have been assigned, search on "Tags".
 
-![Screenshot that shows the list of all tags](../media/2-list-of-tags.png)
+![Screenshot that shows the list of all tags.](../media/2-list-of-tags.png)
 
 If you select a tag in the list, you see a list of all the resources with that tag. Or, on the **All resources** page, you can filter the resources by tags.
 

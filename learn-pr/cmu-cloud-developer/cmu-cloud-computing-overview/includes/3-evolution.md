@@ -4,7 +4,7 @@ Let's look at the evolution of cloud computing.
 
 The concept of cloud computing first appeared during the early 1950s, when several academics, including Herb Grosch, John McCarthy, and Douglas Parkhill, envisioned computing as a utility similar to electric power.<sup>[1][^1], [2][^2]</sup> Over the next few decades, several emerging technologies laid the foundations for cloud computing. More recently, rapid growth of the World Wide Web and the advent of large internet giants, such as Google and Amazon, finally led to the creation of an economic and business environment that allowed the cloud computing model to flourish.
 
-![Evolution of cloud computing](../media/table.png)
+![Evolution of cloud computing.](../media/table.png)
 
 _Figure 5: Evolution of cloud computing_
 
@@ -32,7 +32,7 @@ The development of these technologies, coupled with the economic model of utilit
 
 Cloud computing has various enabling technologies, which include networking, virtualization and resource management, utility computing, programming models, parallel and distributed computing, and storage technologies.
 
-![Enabling technologies in cloud computing](../media/enabling-technologies.png)
+![Enabling technologies in cloud computing.](../media/enabling-technologies.png)
 
 _Figure 6: Enabling technologies in cloud computing_
 

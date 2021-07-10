@@ -8,7 +8,7 @@ In this module, you learned how to:
 
 On a less serious note, you've learned more about hazardous materials than probably you ever thought you'd need, and you learned that if you ever wanted to bicycle from Seattle to New York, that Azure Maps is there for you!
 
-  [![Screenshot showing map section of bike, car, and truck, routes from Seattle to New York](../media/maps-seattle-newyork.png)](../media/maps-seattle-newyork.png#lightbox)
+  [![Screenshot showing map section of bike, car, and truck, routes from Seattle to New York.](../media/maps-seattle-newyork.png)](../media/maps-seattle-newyork.png#lightbox)
 
 ## Next steps
 

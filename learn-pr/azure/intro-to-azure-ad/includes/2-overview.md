@@ -13,7 +13,7 @@ Azure AD is a cloud-based identity management solution. It helps your company's 
 
 Azure AD also helps you keep user identities and applications secure through features like conditional access and identity protection.
 
-![Azure AD](../media/2-azure-ad.svg)
+![Azure AD.](../media/2-azure-ad.svg)
 
 Azure AD stores your users in a tenant that represents an organization. For example, say you have a company tenant where all of your employee user accounts are stored. Users in this tenant can be added to groups so they have a common shared-access level. You could have one group for developers and another group for application testers. These groups would have different access levels for applications. Each tenant can have multiple groups that hold multiple users.
 
@@ -31,7 +31,7 @@ If you're an administrator, you need to know how secure your Azure AD tenant is.
 
 You can find your tenant's identity secure score in the Azure portal. Go to your Azure AD tenant, select **Security**, and then select the **Identity Secure Score** dashboard.
 
-![Secure identity score](../media/2-secure-identity-score.png)
+![Secure identity score.](../media/2-secure-identity-score.png)
 
 The dashboard shows information such as how you compare with the industry average and with tenants of the same size as yours. The dashboard also provides a graph that shows how your score has changed over time. You see what you can do to improve your score and how much impact each improvement will have.
 
@@ -48,7 +48,7 @@ Azure AD is a cloud-based identity solution that helps you manage users and appl
 |Active Directory     |Kerberos, NTLM| Forests, domains,  organizational  units | Authentication and authorization for on-premises printers, applications, file services, and more
 |Azure Active Directory     |Includes SAML, OAuth, WS-Federation|Tenants|Internet-based services and applications like Microsoft 365, Azure services, and third-party SaaS applications
 
-![A comparison between Active Directory and Azure AD](../media/2-azure-ad-compared-active-directory.svg)
+![A comparison between Active Directory and Azure AD.](../media/2-azure-ad-compared-active-directory.svg)
 
 Azure AD doesn't replace Active Directory. The service you use depends on your organization's needs. The two services can be used together, so you can take advantage of their combined features and capabilities.
 

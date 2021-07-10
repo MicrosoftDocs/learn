@@ -13,7 +13,7 @@ You'll now have to specify necessary information for creating a new information:
 1. In the **Environment name** field, specify a unique name.
 1. In the **Location** dropdown, select the location closest to you.
 1. In the **Tier** dropdown, select **Gen 2** to use Time Series Insights V2.
-![Azure Portal screenshot](../media/explore-6.png)
+![Azure Portal screenshot.](../media/explore-6.png)
 
 ## Configure Storage options
 
@@ -37,7 +37,7 @@ For this module, we'll enable both. Let's start with configuring the cold store.
 1. In the **Enable warm store** selector, select _Yes_. Leave the default **data retention time** as is.
 1. Click on **Next: Event Source >>** button.
 
-![Azure Portal screenshot](../media/explore-7.png)
+![Azure Portal screenshot.](../media/explore-7.png)
 
 ## Setup event source
 
@@ -61,7 +61,7 @@ We'll now create a dedicated consumer group for the IoT Hub. It allows you to ha
 1. Click on the **Review + create** button at the bottom-left of the page.
 1. Click on **Create** button.
 
-![Azure Portal screenshot](../media/explore-8.png)
+![Azure Portal screenshot.](../media/explore-8.png)
 
 Deployment of Time Series Insights will take a couple of minutes to complete. Once your Time Series Insights deployment is complete, you've completed this unit.
 

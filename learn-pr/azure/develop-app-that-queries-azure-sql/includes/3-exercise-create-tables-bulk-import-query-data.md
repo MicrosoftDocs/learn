@@ -160,7 +160,7 @@ You can now create the tables to store the data from the .csv files.
 
 1. On the **coursedatabase<em>NNN</em>** page, from the nav bar, select **Query editor (preview)**.
 
-    ![The database page in the Azure portal with the query editor option highlighted](../media/3-query-editor-annotated.png)
+    ![The database page in the Azure portal with the query editor option highlighted.](../media/3-query-editor-annotated.png)
 
 1. On the **coursedatabase<em>NNN</em> - Query editor** page, enter the following details, and then select **OK** to connect to the database service.
 
@@ -183,7 +183,7 @@ You can now create the tables to store the data from the .csv files.
     )
     ```
 
-    ![The Query editor window in the Azure portal. The user has entered a statement to create the Courses table](../media/3-create-table-courses-annotated.png)
+    ![The Query editor window in the Azure portal. The user has entered a statement to create the Courses table.](../media/3-create-table-courses-annotated.png)
 
 1. Overwrite the existing statement with the following statement that creates a table to hold the modules. Select **Run**, and then verify that the statement runs without any errors.
 
@@ -212,7 +212,7 @@ You can now create the tables to store the data from the .csv files.
     > [!NOTE]
     > *dbo* stands for *database owner*. It's the default schema in the database. All three tables were created in this schema.
 
-    ![The database window in the Azure portal, showing the tables and columns](../media/3-tables-and-columns-annotated.png)
+    ![The database window in the Azure portal, showing the tables and columns.](../media/3-tables-and-columns-annotated.png)
 
 ## Import the data
 
@@ -320,7 +320,7 @@ You can now create the tables to store the data from the .csv files.
 
     This statement retrieves the data from the **Courses** table. The results window should display nine rows.
 
-    ![Screenshot of the query editor in the Azure portal, showing the data retrieved from the Courses table](../media/3-query-results-annotated.png)
+    ![Screenshot of the query editor in the Azure portal, showing the data retrieved from the Courses table.](../media/3-query-results-annotated.png)
 
 1. Change the query as follows, and then select **Run**.
 
