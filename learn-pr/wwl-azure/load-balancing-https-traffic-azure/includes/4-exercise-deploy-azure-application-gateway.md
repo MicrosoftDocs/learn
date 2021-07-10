@@ -181,7 +181,7 @@ Set-AzVMExtension `
  -Location WestUS
 ```
 
-4. Create a second virtual machine and install IIS by using the Create virtual machines and Install IIS for testing steps that you previously completed. Use BackendVM2 for the virtual machine name and for the **VMName** setting of the **Set-AzVMExtension** cmdlet.
+4. Create a second virtual machine and install IIS by using the Create virtual machines and Install IIS for testing steps that you previously completed. Use BackendVM2 for the virtual machine name and for the **VM Name** setting of the **Set-AzVMExtension** cmdlet.
 
 ### Add backend servers to backend pool
 
