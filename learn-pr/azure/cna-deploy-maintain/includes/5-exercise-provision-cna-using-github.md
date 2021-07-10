@@ -54,7 +54,7 @@ Now you're ready to proceed with implementing a CI/CD pipeline by using Azure De
 
 1. On the **Choose an application framework** page, select the **Express.js** tile, and then select **Next: Service >**.
 
-    :::image type="content" source="../media/5-azure-devops-starter-express-js-framework.png" alt-text="Screenshot of the  DevOps Starter blade, Choose an application framework page, with the Choose.js tile selected.." border="false":::
+    :::image type="content" source="../media/5-azure-devops-starter-express-js-framework.png" alt-text="Screenshot of the  DevOps Starter blade, Choose an application framework page, with the Choose.js tile selected." border="false":::
 
 1. On the **Select an Azure service to deploy the application** page, select the **Kubernetes Service** tile, and then select **Next: Create >**.
 
@@ -112,7 +112,7 @@ Now you're ready to proceed with implementing a CI/CD pipeline by using Azure De
 1. In the listing of the content of the **.github/workflows** folder, select the **devops-starter-workflow.yml** entry.
 1. On the page displaying the content of the **devops-starter-workflow.yml** file, select the **Edit this file** (pencil) icon.
 
-    :::image type="content" source="../media/5-github-edit-workflow-file.png" alt-text="Screenshot of the the Edit this file menu option of the workflow file in GitHub." border="false":::
+    :::image type="content" source="../media/5-github-edit-workflow-file.png" alt-text="Screenshot of the Edit this file menu option of the workflow file in GitHub." border="false":::
 
 1. In the **Edit file** pane, scroll down to the following entry, and replace `uses: azure/arm-deploy@v1` with `uses: azure/arm-deploy@main`:
 
