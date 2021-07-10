@@ -27,7 +27,7 @@ Azure Load Balancer supports availability zones scenarios. You can use Standard 
 
 A Load Balancer can either be zone redundant, zonal, or non-zonal. To configure the zone related properties (mentioned above) for your load balancer, select the appropriate type of frontend needed.
 
-###Zone redundant
+### Zone redundant
 ![Diagram illustrating Zone redundant load balancers in Azure](../media/zone-redundant.png)
 
 In a region with Availability Zones, a Standard Load Balancer can be zone-redundant. This traffic is served by a single IP address.
@@ -36,7 +36,7 @@ A single frontend IP address will survive zone failure. The frontend IP may be u
 
 The frontend's IP address is served simultaneously by multiple independent infrastructure deployments in multiple availability zones. Any retries or reestablishment will succeed in other zones not affected by the zone failure.
 
-###Zonal
+### Zonal
 
 You can choose to have a frontend guaranteed to a single zone, which is known as a zonal. This scenario means any inbound or outbound flow is served by a single zone in a region. Your frontend shares fate with the health of the zone. The data path is unaffected by failures in zones other than where it was guaranteed. You can use zonal frontends to expose an IP address per Availability Zone.
 
@@ -54,24 +54,9 @@ Two SKUs are available when you create a load balancer in Azure: Basic load bala
 
 To compare and understand the differences, review the table below.
 
-| *Features*                     | **Basic Load Balancer SKU**                                  | **Standard Load Balancer SKU**                               |
-|  |  |  |
-| **Backend pool size**          | Supports up to 300 instances                                 | Supports up to 1,000 instances                               |
-| **Backend pool endpoints**     | Virtual machines in a single availability  set or virtual machine scale set | Any virtual machines or virtual machine  scale sets in a single virtual network |
-| **Health probes**              | TCP, HTTP  Does not support secure HTTP (HTTPS)              | TCP, HTTP, HTTPS                                             |
-| **Health probe down behavior** | TCP connections stay alive on an instance  probe down. All TCP connections end when all probes are down | TCP connections stay alive on an instance  probe down **and** on all probes  down |
-| **Availability Sets**          | Supported                                                    | Supported                                                    |
-| **Availability Zones**         | N/A                                                          | Zone-redundant and zonal frontends for  inbound and outbound traffic |
-| **Diagnostics**                | Azure Monitor logs                                           | Azure Monitor multi-dimensional metrics                      |
-| **HA ports**                   | N/A                                                          | Available for Internal Load Balancer                         |
-| **Secure by default**          | Open by default. Network security group  optional            | Closed to inbound flows unless allowed by  a network security group. Internal traffic from the virtual network to the  internal load balancer is allowed |
-| **Outbound Rules**             | N/A                                                          | Declarative outbound NAT configuration                       |
-| **TCP Reset on Idle**          | N/A                                                          | Available on any rule                                        |
-| **Multiple front ends**        | Inbound only                                                 | Inbound and outbound                                         |
-| **Management Operations**      | 60-90+ seconds typical                                       | Most operations < 30 seconds                                 |
-| **Service Level Agreement**    | N/A                                                          | 99.99% for 2 or more VMs                                     |
 
-|                                                                                                                                               | Standard Load Balancer                                                                                                                                  | Basic Load Balancer                                                                                     |
+
+| *Features*                                                                                                                                    | Standard Load Balancer                                                                                                                                  | Basic Load Balancer                                                                                     |
 |  | - | - |
 | [Backend pool size](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#load-balancer)       | Supports up to 1000 instances.                                                                                                                          | Supports up to 300 instances.                                                                           |
 | Backend pool endpoints                                                                                                                        | Any virtual machines or virtual machine scale sets in a single virtual network.                                                                         | Virtual machines in a single availability set or virtual machine scale set.                             |
@@ -168,14 +153,10 @@ Under the **Settings** section choose **Backend pools**, and then **Add** to add
 
 You need to enter the following information on the **Add backend pool** page.
 
-| **Field**       | **Information**                                              |
-|  |  |
-| Name            | Enter a unique name for the backend pool.                    |
-| Virtual network | Specify the name of the virtual network where the resources are located that you will be adding to the backend pool. |
-| Associated to   | You need to associate the backend pool with one or more virtual machines, or to a virtual machine scale set. |
-| IP Version      | Select either **IPv4** or **IPv6**.                          |
-
-
+- **Name**: Enter a unique name for the backend pool
+- **Virtual network**: Specify the name of the virtual network where the resources are located that you will be adding to the backend pool
+- **Associated to**: You need to associate the backend pool with one or more virtual machines, or to a virtual machine scale set
+- **IP Version**: Select either **IPv4** or **IPv6**
 
 
 You could add existing virtual machines to the backend pool at this point, or you can create and add them later. You then click **Add** to add the backend pool.
@@ -192,13 +173,9 @@ On the **Backend pools** page, select the backend pool from the list.
 
 You need to enter the following information to add the virtual machine to the backend pool.
 
-| **Field**       | **Information**                                              |
-|  |  |
-| Virtual network | Specify the name of the virtual network where the resources are located that you will be adding to the backend pool. |
-| Associated to   | You need to associate the backend pool with one or more virtual machines, or to a virtual machine scale set. |
-| IP Version      | Select either **IPv4** or **IPv6**.                          |
-
-
+- **Virtual network**: Specify the name of the virtual network where the resources are located that you will be adding to the backend pool
+- **Associated to**: You need to associate the backend pool with one or more virtual machines, or to a virtual machine scale set
+- **IP Version**: Select either **IPv4** or **IPv6**
 
 
 Then under the **Virtual machines** section, click **Add**.
@@ -227,15 +204,12 @@ On the **Backend pools** page of the load balancer, under **Settings**, select *
 
 You need to enter the following information on the **Add health probe** page.
 
-| **Field**           | **Information**                                              |
-| - |  |
-| Name                | Enter a unique name for the health probe.                    |
-| Protocol            | Select either **TCP** or **HTTP**.                           |
-| Port                | Specify the destination port number for the health signal. The default is port **80**. |
-| Interval            | Specify the interval time in seconds between probe attempts. The default is **5** seconds. |
-| Unhealthy threshold | Specify the number of consecutive probe failures that must occur before a virtual machine is considered to be in an unhealthy state. The default is **2** failures. |
 
-
+- **Name**: Enter a unique name for the health probe
+- **Protocol**: Select either **TCP** or **HTTP**
+- **Port**: Specify the destination port number for the health signal. The default is port **80**
+- **Interval**: Specify the interval time in seconds between probe attempts. The default is **5** seconds
+- **Unhealthy threshold**: Specify the number of consecutive probe failures that must occur before a virtual machine is considered to be in an unhealthy state. The default is **2** failures
 
 
 You then click **Add** to add the health probe.
@@ -256,19 +230,17 @@ On the **Health probes** page of the load balancer, under **Settings**, select *
 
 You need to enter the following information on the **Add load balancing rule** page.
 
-| **Field**              | **Information**                                              |
-| - |  |
-| Name                   | Enter a unique name for the load  balancing rule.            |
-| IP Version             | Select either **IPv4** or **IPv6**.                          |
-| Frontend IP address    | Select the existing public-facing IP  address of the load balancer. |
-| Protocol               | Select either the **TCP** or **UDP** protocol.               |
-| Port                   | Specify the port number for the load  balancing rule. The default is port **80**. |
-| Backend port           | You can choose to route traffic to the  virtual machine in the backend pool using a different port than the one that  clients use by default to communicate with the load balancer (port 80). |
-| Backend pool           | Select an existing backend pool.  The virtual machines in this backend pool  will be the target for the load balanced traffic of this rule. |
-| Health probe           | Select an existing health probe or create  a new one.   The load balancing rule uses the health  probe to determine which virtual machines in the backend pool are healthy and  therefore can receive load balanced traffic. |
-| Session persistence    | You can choose **None**, or **Client IP**, or **Client IP and protocol**.   Session persistence specifies that  traffic from a client should be handled by the same virtual machine in the  backend pool for the duration of a session. **None**  specifies that successive requests from the same client may be handled by any  virtual machine. **Client IP** specifies  that successive requests from the same client IP address will be handled by  the same virtual machine. **Client IP and protocol**  specifies that successive requests from the same client IP address and  protocol combination will be handled by the same virtual machine. |
-| Idle timeout (minutes) | Specify the time to keep a TCP or HTTP  connection open without relying on clients to send *keep-alive* messages.   The default idle timeout is **4** minutes, which is also the minimum setting. The  maximum setting is 30 minutes. |
-| Floating IP            | Choose between **Disabled** or **Enabled**.  With Floating IP set to **Disabled**, Azure exposes a traditional load  balancing IP address mapping scheme for ease of use (the VM instances' IP).   With Floating IP set to **Enabled**, it changes the IP address mapping to the  Frontend IP of the load balancer to allow for additional flexibility. |
+- **Name**: Enter a unique name for the load  balancing rule
+- **IP Version**: Select either **IPv4** or **IPv6**
+- **Frontend IP address**: Select the existing public-facing IP  address of the load balancer
+- **Protocol**: Select either the **TCP** or **UDP** protocol
+- **Port**: Specify the port number for the load  balancing rule. The default is port **80**
+- **Backend port**: You can choose to route traffic to the  virtual machine in the backend pool using a different port than the one that  clients use by default to communicate with the load balancer (port 80)
+- **Backend pool**: Select an existing backend pool.  The virtual machines in this backend pool  will be the target for the load balanced traffic of this rule.
+- **Health probe**: Select an existing health probe or create  a new one.   The load balancing rule uses the health  probe to determine which virtual machines in the backend pool are healthy and  therefore can receive load balanced traffic.
+- **Session persistence**: You can choose **None**, or **Client IP**, or **Client IP and protocol**.   Session persistence specifies that  traffic from a client should be handled by the same virtual machine in the  backend pool for the duration of a session. **None**  specifies that successive requests from the same client may be handled by any  virtual machine. **Client IP** specifies  that successive requests from the same client IP address will be handled by  the same virtual machine. **Client IP and protocol**  specifies that successive requests from the same client IP address and  protocol combination will be handled by the same virtual machine.
+- **Idle timeout(minutes)**: Specify the time to keep a TCP or HTTP  connection open without relying on clients to send *keep-alive* messages.   The default idle timeout is **4** minutes, which is also the minimum setting. The  maximum setting is 30 minutes.
+- **Floating IP**: Choose between **Disabled** or **Enabled**.  With Floating IP set to **Disabled**, Azure exposes a traditional load  balancing IP address mapping scheme for ease of use (the VM instances' IP).   With Floating IP set to **Enabled**, it changes the IP address mapping to the  Frontend IP of the load balancer to allow for additional flexibility.
 
 
 You then click **Add** to add the load balancing rule.
