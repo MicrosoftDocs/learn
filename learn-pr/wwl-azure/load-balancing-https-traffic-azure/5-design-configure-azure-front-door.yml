@@ -26,7 +26,7 @@ quiz:
       explanation: "Incorrect, Front Door and Application Gateway are layer 7 (HTTP/HTTPS) load balancers, Front Door is a global service whereas Application Gateway is a regional service."
     - content: "Front Door uses health probes to monitor the health of backends, Application Gateway does not."
       isCorrect: false
-      explanation: "Incorrect, Both Front Door and Application gateweay use health probes to monitor the health of backends."
+      explanation: "Incorrect, Both Front Door and Application gateway use health probes to monitor the health of backends."
   - content: "Front Door route rules determine whether the incoming request matches the routing rule and route traffic accordingly. What properties are matched?"
     choices:
     - content: "HTTP protocols (HTTP/HTTPS), Hosts, and Paths."
