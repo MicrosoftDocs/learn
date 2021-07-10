@@ -46,8 +46,6 @@ When you create a virtual network gateway, you need to specify the gateway SKU t
 
 | VPN Gateway Generation | SKU      | S2S/VNet-to-Vnet Tunnels | P2S SSTP Connections | P2S IKEv2/OpenVPN Connections | Aggregate Throughput Benchmark | BGP           | Zone-redundant |
 | - | -- |  | -- | -- |  | - | -- |
-|  |
-|  |
 | Generation1            | Basic    | Max. 10                  | Max. 128             | Not Supported                 | 100 Mbps                       | Not Supported | No             |
 | Generation1            | VpnGw1   | Max. 30\*                | Max. 128             | Max. 250                      | 650 Mbps                       | Supported     | No             |
 | Generation1            | VpnGw2   | Max. 30\*                | Max. 128             | Max. 500                      | 1 Gbps                         | Supported     | No             |
@@ -101,15 +99,14 @@ RouteBased VPNs were previously called dynamic routing gateways in the classic d
 The following table lists the requirements for PolicyBased and RouteBased VPN gateways. This table applies to both the Resource Manager and classic deployment models. For the classic model, PolicyBased VPN gateways are the same as Static gateways, and Route-based gateways are the same as Dynamic gateways.
 
 
-|  **Feature**                          | ‎**PolicyBased Basic VPN Gateway** | **RouteBased Basic VPN Gateway**                                       | **RouteBased Standard VPN Gateway**                                    | **RouteBased High Performance VPN Gateway**                            |
-| - |  | --| --| --|
-| **Site-to-Site connectivity (S2S)**   | PolicyBased VPN configuration     | RouteBased VPN configuration                                           | RouteBased VPN configuration                                           | RouteBased VPN configuration                                           |
-| **Point-to-Site connectivity (P2S)**  | Not supported                     | Supported (Can coexist with S2S)                                       | Supported (Can coexist with S2S)                                       | Supported (Can coexist with S2S)                                       |
-| **Authentication method**             | Pre-shared key                    | Pre-shared key for S2S connectivity, Certificates for P2S connectivity | Pre-shared key for S2S connectivity, Certificates for P2S connectivity | Pre-shared key for S2S connectivity, Certificates for P2S connectivity |
-| **Maximum number of S2S connections** | 1                                 | 10                                                                     | 10                                                                     | 30                                                                     |
-| **Maximum number of P2S connections** | Not supported                     | 128                                                                    | 128                                                                    | 128                                                                    |
-| **Active routing support (BGP)** (*)  | Not supported                     | Not supported                                                          | Supported                                                              | Supported                                                              |
-
+| Features                          | PolicyBased Basic VPN Gateway | RouteBased Basic VPN Gateway                                           | RouteBased Standard VPN Gateway                                        | RouteBased High Performance VPN Gateway                                |
+|  | -- | - | - | - |
+| Site-to-Site connectivity (S2S)   | PolicyBased VPN configuration | RouteBased VPN configuration                                           | RouteBased VPN configuration                                           | RouteBased VPN configuration                                           |
+| Point-to-Site connectivity (P2S)  | Not supported                 | Supported (Can coexist with S2S)                                       | Supported (Can coexist with S2S)                                       | Supported (Can coexist with S2S)                                       |
+| Authentication method             | Pre-shared key                | Pre-shared key for S2S connectivity, Certificates for P2S connectivity | Pre-shared key for S2S connectivity, Certificates for P2S connectivity | Pre-shared key for S2S connectivity, Certificates for P2S connectivity |
+| Maximum number of S2S connections | 1                             | 10                                                                     | 10                                                                     | 30                                                                     |
+| Maximum number of P2S connections | Not supported                 | 128                                                                    | 128                                                                    | 128                                                                    |
+| Active routing support (BGP) (\*) | Not supported                 | Not supported                                                          | Supported                                                              | Supported                                                              |
 
 (*) BGP is not supported for the classic deployment model.
 
