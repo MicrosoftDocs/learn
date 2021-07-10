@@ -51,7 +51,7 @@ For the sake of simplicity, you'll implement the Azure IoT Edge CI/CD pipeline b
     | Azure DevOps Organization | The name of the Azure DevOps organization you'll be using in this exercise. |
     | Subscription | The name of the Azure subscription you'll be using in this exercise. |
     | IoT Hub name | The unique name of the Azure IoT Hub you'll be using in this exercise. |
-    | Location | The name of the Azure region you you'll be using in this exercise. |
+    | Location | The name of the Azure region you'll be using in this exercise. |
 
     :::image type="content" source="../media/7-azure-devops-starter-almost-there.png" alt-text="Screenshot of the Almost there page." border="false":::
 
@@ -62,7 +62,7 @@ For the sake of simplicity, you'll implement the Azure IoT Edge CI/CD pipeline b
     | --- | --- |
     | Container Registry name | Change the value to a globally unique name consisting of between 5 and 50 alphanumeric characters starting with a letter. |
     | Container Registry SKU | Select the **Basic** entry from the drop-down list. |
-    | Container Registry Location | Select the name of the Azure region you you'll be using in this exercise.|
+    | Container Registry Location | Select the name of the Azure region you'll be using in this exercise.|
 
     > [!NOTE]
     > The Container Registry name check mark indicates its global uniqueness.
