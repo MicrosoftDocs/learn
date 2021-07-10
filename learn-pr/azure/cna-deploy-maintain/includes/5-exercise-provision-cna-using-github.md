@@ -84,7 +84,7 @@ Now you're ready to proceed with implementing a CI/CD pipeline by using Azure De
     :::image type="content" source="../media/5-azure-devops-starter-select-repo-sub-settings.png" alt-text="Screenshot of the Select Repository and Subscription page with the previously mentioned values selected." border="false":::
 
 1. On the **Select Repository and Subscription** page, select **Additional settings**.
-1. On the **Additional settings** blade, review the **Kubernetes Service** and **Container Registry** sections. If you encounter an error message indicating that the Contaienr Registry name is already in use, change the name to another value until the message no longer appears, save the change, and close the blade. Otherwise, select **OK** without making any changes.
+1. On the **Additional settings** blade, review the **Kubernetes Service** and **Container Registry** sections. If you encounter an error message indicating that the Container Registry name is already in use, change the name to another value until the message no longer appears, save the change, and close the blade. Otherwise, select **OK** without making any changes.
 
     :::image type="content" source="../media/5-azure-devops-starter-select-repo-sub-additional-settings.png" alt-text="Screenshot of the Additional settings blade." border="false":::
 
