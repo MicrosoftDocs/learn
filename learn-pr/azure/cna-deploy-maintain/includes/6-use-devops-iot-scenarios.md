@@ -6,7 +6,7 @@ Azure IoT Edge is a managed service that provides the ability to deploy and mana
 
 ## How to apply DevOps principles in IoT Edge scenarios
 
-The same rationale that favors the use of DevOps in regard to cloud-native applications applies to IoT apps. While the choice of the DevOps solution is mainly a matter of preference, Azure Pipelines simplify the task of authoring CI/CD pipelines by providing the built-in Azure Iot Edge task, which includes support for building and deploying Azure IoT Edge images.
+The same rationale that favors the use of DevOps in regard to cloud-native applications applies to IoT apps. While the choice of the DevOps solution is mainly a matter of preference, Azure Pipelines simplify the task of authoring CI/CD pipelines by providing the built-in Azure IoT Edge task, which includes support for building and deploying Azure IoT Edge images.
 
 When authoring Azure Pipelines, you have a choice between using the classic or YAML-based approach:
 
