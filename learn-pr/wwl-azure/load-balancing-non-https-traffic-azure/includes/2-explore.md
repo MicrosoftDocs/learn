@@ -1,5 +1,3 @@
-
-
 The term load balancing refers to the even distribution of workloads (that is, incoming network traffic), across a group of backend computing resources or servers. Load balancing aims to optimize resource use, maximize throughput, minimize response time, and avoid overloading any single resource. It can also improve availability by sharing a workload across redundant computing resources.
 
 ## Load Balancing Options for Azure
@@ -33,7 +31,7 @@ In contrast, **non-HTTP(S)** load-balancing services can handle non-HTTP(S) traf
 The table below summarizes these categorizations for each Azure load balancing service. 
 
 | **Service**               | **Global or Regional** | **Recommended Traffic** |
-| ------------------------- | ---------------------- | ----------------------- |
+| - | - | -- |
 | Azure Load Balancer       | Global                 | Non-HTTP(S)             |
 | Azure Application Gateway | Regional               | HTTP(S)                 |
 | Azure Front Door          | Global                 | HTTP(S)                 |
@@ -82,29 +80,3 @@ You can use the **Azure Load Balancing** page in the Azure portal to help you gu
 - Optionally, you can also click the **Service comparison** or **Tutorial** tabs for more information and training on the different load balancing services.
 
 Now let's look at each of the main Azure load balancing services in more detail.
-
- 
-
-## Check your knowledge 
-
-
-
-## Multiple Choice 
-
-You have a secure web application that experiences high traffic, and you want to use a load balancer to distribute the workload. Which load balancers will support this type of traffic?
-
-(x) Azure Application Gateway and Azure Front Door.{{Correct, Secure web applications use HTTPS traffic. Azure Application Gateway and Azure Front Door support HTTPS traffic.}} 
-
-( ) Azure Load Balancer and Traffic Manager.{{Incorrect, Secure web applications use HTTPS traffic. Azure Load Balancer and Traffic Manager support non-HTTPS traffic.}} 
-
-( ) Azure Application Gateway only.{{Incorrect, Secure web applications use HTTPS traffic. Azure Application Gateway does support HTTPS traffic, but it's not the only load balancer that does.}}
-
-## Multiple Choice 
-
-Which type of load balancing services distribute traffic within virtual networks across virtual machines?
-
-(x) Regional.{{Correct, **Regional** load-balancing services distribute traffic within virtual networks across virtual machines (VMs) or zonal and zone-redundant service endpoints within a region.}} 
-
-( ) Global.{{Incorrect, **Global** load-balancing services distribute traffic across regional backends, clouds, or hybrid on-premises services.}} 
-
-( ) Regional and Global.{{Incorrect, **Regional** load-balancing services distribute traffic within virtual networks across virtual machines (VMs) or zonal and zone-redundant service endpoints within a region, whereas **Global** load-balancing services distribute traffic across regional backends, clouds, or hybrid on-premises services.}}
