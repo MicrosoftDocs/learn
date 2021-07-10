@@ -36,19 +36,16 @@ Azure Monitor Metrics is a feature of Azure Monitor that collects numeric data f
 
 The table below provides a summary of the various types of tasks you can perform by utilizing metrics in Azure Monitor:
 
-|  Task     | Description                                                                                                                                                                                 |
+|  Task     | Description                                                                                                                                                                                                                                             |
 |  | - |
-| Analyze   | Use metrics explorer to analyze collected metrics on a chart and compare metrics from different resources.                                                                                  |
-| Alert     | Configure a metric alert rule that sends a notification or takes automated action when the metric value crosses a threshold.                                                                |
-| Visualize | Pin a chart from metrics explorer to an Azure dashboard.                                                                                                                                    |
-|           | Create a workbook to combine with multiple sets of data in an interactive report.Export the results of a query to Grafana to leverage its dashboarding and combine with other data sources. |
-| Automate  | Use Autoscale to increase or decrease resources based on a metric value crossing a threshold.                                                                                               |
-| Retrieve  | Access metric values from a command line using PowerShell cmdlets                                                                                                                           |
-|           | Access metric values from custom application using REST API.                                                                                                                                |
-|           | Access metric values from a command line using CLI.                                                                                                                                         |
-| Export    | Route Metrics to Logs to analyze data in Azure Monitor Metrics together with data in Azure Monitor Logs and to store metric values for longer than 93 days.                                 |
-|           | Stream Metrics to an Event Hub to route them to external systems.                                                                                                                           |
-| Archive   | Archive the performance or health history of your resource for compliance, auditing, or offline reporting purposes.                                                                         |
+| Analyze   | Use metrics explorer to analyze collected metrics on a chart and compare metrics from different resources.                                                                                                                                              |
+| Alert     | Configure a metric alert rule that sends a notification or takes automated action when the metric value crosses a threshold.                                                                                                                            |
+| Visualize | Pin a chart from metrics explorer to an Azure dashboard.<br>Create a workbook to combine with multiple sets of data in an interactive report.Export the results of a query to Grafana to leverage its dashboarding and combine with other data sources. |
+|           | Create a workbook to combine with multiple sets of data in an interactive report.Export the results of a query to Grafana to leverage its dashboarding and combine with other data sources.                                                             |
+| Automate  | Use Autoscale to increase or decrease resources based on a metric value crossing a threshold.                                                                                                                                                           |
+| Retrieve  | Access metric values from a command line using PowerShell cmdlets.<br>Access metric values from custom application using REST API.<br>Access metric values from a command line using CLI.                                                               |
+| Export    | Route Metrics to Logs to analyze data in Azure Monitor Metrics together with data in Azure Monitor Logs and to store metric values for longer than 93 days<br>Stream Metrics to an Event Hub to route them to external systems.                         |
+| Archive   | Archive the performance or health history of your resource for compliance, auditing, or offline reporting purposes.                                                                                                                                     |
 
 
 ![Diagram illustrating a high-level view of Azure Monitor metrics](../media/azure-monitor-metrics-overview.png)
