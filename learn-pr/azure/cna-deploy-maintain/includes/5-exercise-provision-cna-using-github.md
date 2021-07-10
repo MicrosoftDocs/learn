@@ -124,7 +124,7 @@ Now you're ready to proceed with implementing a CI/CD pipeline by using Azure De
 1. At the beginning of the page, select **Start commit**.
 1. In the **Commit changes** pop-up window, select **Commit changes**.
 
-    :::image type="content" source="../media/5-github-edit-start-commit.png" alt-text="Screenshot of the Edit this file menu option of the workflow file in GitHub." border="false":::
+    :::image type="content" source="../media/5-github-edit-start-commit.png" alt-text="Screenshot of the Commit menu option of the workflow file in GitHub." border="false":::
 
 1. Switch back to the web browser tab displaying the Azure portal and on the deployment blade, select **Go to resource**.
 1. On the **cna-devops-05** blade, in the **GitHub Workflow** section, select **Authorize**.
