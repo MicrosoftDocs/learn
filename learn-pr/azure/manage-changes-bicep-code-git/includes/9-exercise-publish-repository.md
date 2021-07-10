@@ -113,7 +113,7 @@ Keep your browser open. You'll check on the repository again later in this exerc
 
    Since your current local branch is **main**, this command tells Git that your local **main** branch _tracks_ the **main** branch in your remote repository. It also _pushes_ the commits from your local repository to the remote.
 
-1. This is the first time you've used this repository, so the terminal prompts you to select how to authenticate. Choose the option to use the browser.
+1. This is the first time you've used this remote repository, so the terminal prompts you to select how to authenticate. Choose the option to use the browser.
 
 1. Follow the instructions in the browser to sign in and authorize Visual Studio Code to access your GitHub repository.
 
@@ -175,11 +175,11 @@ Keep your browser open. You'll check on the repository again later in this exerc
 
 ## Add a README file
 
-Now that your repository will be used by your colleagues, it's important to create a **README.md** file to help them understand what your repository is for and how they can get started.
+Now that your repository will be used by your colleagues, it's important to create a _README.md_ file to help them understand what your repository is for and how they can get started.
 
 1. Open **Explorer** in Visual Studio Code.
 
-1. Add a new file at the root of your current folder structure, and name it **README.md**.
+1. Add a new file at the root of your current folder structure, and name it _README.md_.
 
 1. Copy the following text into the file:
 

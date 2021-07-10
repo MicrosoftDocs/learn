@@ -6,7 +6,7 @@ When you work on Bicep code, it's common to need to do more than one thing at a 
 In this unit, you learn about Git branches.
 
 > [!NOTE]
-> The content in this unit isn't part of the exercise. You'll practice what you learn here on the next page.
+> The commands you see on this page are shown to illustrate the concepts. Don't run them just yet. You'll practice what you learn here in the next part.
 
 ## What are branches?
 

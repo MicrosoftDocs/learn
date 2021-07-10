@@ -1,7 +1,7 @@
 Now that you've initialized your Git repository, you're ready to start adding files. In this unit, you'll learn how to tell Git to track the changes to files in your repository.
 
 > [!NOTE]
-> The content in this unit isn't part of the exercise. You'll practice what you learn here on the next page.
+> The commands you see on this page are shown to illustrate the concepts. Don't run them just yet. You'll practice what you learn here in the next part.
 
 ## Folder structure for your repository
 
