@@ -1,4 +1,4 @@
-##Distributed Denial of Service (DDoS)
+## Distributed Denial of Service (DDoS)
 
 A denial of service attack (DoS) is an attack that has the goal of preventing access to services or systems. If the attack originates from one location, it is called a DoS. If the attack originates from multiple networks and systems, it is called distributed denial of service (DDoS).
 

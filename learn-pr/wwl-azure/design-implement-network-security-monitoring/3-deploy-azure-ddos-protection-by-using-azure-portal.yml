@@ -4,7 +4,7 @@ title: Deploy Azure DDoS Protection by using the Azure portal
 metadata:
   title: Deploy Azure DDoS Protection by using the Azure portal
   description: "Deploy Azure DDoS Protection by using the Azure portal"
-  ms.date: 07/09/2021
+  ms.date: 07/10/2021
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -23,7 +23,7 @@ quiz:
       explanation: "Correct. You are not expecting that many concurrent requests that they start to overwhelm your resources."
     - content: "Application running slowly."
       isCorrect: false
-      explanation: "Incorrect. This could just be other performance related issues in your application/connectivity."
+      explanation: "Incorrect. This could just be other performance-related issues in your application/connectivity."
     - content: "HTTP 400 Bad Request"
       isCorrect: false
       explanation: "Incorrect. HTTP 400 Bad Request response status code indicates that the server cannot or will not process the request due to something that is perceived to be a client error"
