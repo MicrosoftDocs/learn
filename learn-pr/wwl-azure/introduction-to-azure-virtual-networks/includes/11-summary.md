@@ -25,3 +25,7 @@ Now that you have reviewed this module, you should be able to:
 ## Resources
 
 Use these resources to discover more.
+
+- [What is Azure Virtual Network?](/azure/virtual-network/virtual-networks-overview)
+- [Azure networking services overview](/azure/networking/fundamentals/networking-overview)
+- [Azure for network engineers](/azure/networking/azure-for-network-engineers)
