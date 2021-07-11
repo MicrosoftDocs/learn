@@ -22,11 +22,11 @@ Gateway scale units allow you pick the aggregate throughput of the VPN gateway b
 
 There are two types of Virtual WANs: Basic and Standard. The following table shows the available configurations for each type.
 
-
-| Virtual WAN type | Hub type | Available configurations                                                                                              |
-| - | -- |  |
-| Basic            | Basic    | Site-to-site VPN only                                                                                                 |
-| Standard         | Standard | ExpressRoute<br>User VPN (P2S)<br>VPN (site-to-site)<br>Inter-hub and VNet-to-VNet transiting through the virtual hub |
+> [!div class="mx-tdBreakAll"]
+>| Virtual WAN type | Hub type | Available configurations                                                                                              |
+>| - | -- |  |
+>| Basic            | Basic    | Site-to-site VPN only                                                                                                 |
+>| Standard         | Standard | ExpressRoute<br>User VPN (P2S)<br>VPN (site-to-site)<br>Inter-hub and VNet-to-VNet transiting through the virtual hub |
 
 
 ## Hub private address space
