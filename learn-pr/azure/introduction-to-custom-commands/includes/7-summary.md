@@ -10,5 +10,5 @@ Now that you've reviewed this module, you should be able to:
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-* [Custom Commands documentation](/azure/cognitive-services/custom-commands/)
-* [Speech Studio Portal] (speech.microsoft.com)
+* [Custom Commands documentation](/azure/cognitive-services/speech-service/custom-commands)
+* [Speech Studio Portal](speech.microsoft.com)
