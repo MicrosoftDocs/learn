@@ -351,14 +351,6 @@ In this step, you'll connect to both of your servers, and verify that only DataS
 
 By using the storage Service Endpoint on the **Databases** subnet, you've now verified that **DataServer** can access storage. You've also verified that **AppServer** can't access storage. This is because this server is on a different subnet and doesn't have access to the virtual network Service Endpoint.
 
-When you enable a Service Endpoint, you
-
-(X) Enable your Azure VMs to access the service directly from your private address space. {{Correct. When you enable a Service Endpoint, you restrict the flow of traffic, and enable your Azure VMs to access the service directly from your private address space.}}
-
-( ) Allow devices access the service from a public network. {{Incorrect, access from public networks are denied. When you enable a Service Endpoint, you restrict the flow of traffic, and enable your Azure VMs to access the service directly from your private address space. Devices cannot access the service from a public network.}}
-
-( ) Insert the second incorrect answer text in this cell. {{Insert the second incorrect answer feedback in this cell.}} 
-
 
 ## Configure service tags
 
