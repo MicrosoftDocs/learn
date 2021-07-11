@@ -58,6 +58,7 @@ Azure Front Door redirects traffic at each of the following levels: protocol, ho
 
 A redirect type sets the response status code for the clients to understand the purpose of the redirect. The following types of redirection are supported:
 
+[!div class="mx-tdBreakAll"]
 | **Redirection type** | **Action**         | **Description**                                              |
 | -- |  |  |
 | 301                  | Moved permanently  | Indicates that the target resource has been assigned a new permanent URI. Any future references to this resource will use one of the enclosed URIs. Use 301 status code for HTTP to HTTPS redirection. |
@@ -122,11 +123,11 @@ Front Door supports the following HTTP methods for sending the health probes:
 
 The following table describes responses to the health probe:
 
+[!div class="mx-tdBreakAll"]
 | **Response**       | **Description**                                              |
 |  |  |
 | Determining Health | A 200 OK status code indicates the backend is healthy. Everything else is considered a failure. If for any reason (including network failure) a valid HTTP response isn't received for a probe, the probe is counted as a failure. |
 | Measuring Latency  | Latency is the wall-clock time measured from the moment immediately before the probe request is sent to the moment the last byte of the response is received. A new TCP connection is used for each request, so this measurement isn't biased towards backends with existing warm connections. |
-
 
 
 
