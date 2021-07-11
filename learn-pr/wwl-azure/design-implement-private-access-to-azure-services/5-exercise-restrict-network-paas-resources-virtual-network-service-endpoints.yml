@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 13
+durationInMinutes: 20
 content: |
   [!include[](includes/5-exercise-restrict-network-paas-resources-virtual-network-service-endpoints.md)]
