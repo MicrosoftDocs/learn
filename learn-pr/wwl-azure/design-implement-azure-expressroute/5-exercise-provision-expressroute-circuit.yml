@@ -4,7 +4,7 @@ title: 'Exercise: provision an ExpressRoute circuit'
 metadata:
   title: 'Exercise: provision an ExpressRoute circuit'
   description: "Exercise: provision an ExpressRoute circuit"
-  ms.date: 07/09/2021
+  ms.date: 07/11/2021
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -38,14 +38,3 @@ quiz:
     - content: "Standard."
       isCorrect: false
       explanation: "Incorrect. Standard SKU will give you more functionality than you require in this case."
-  - content: "When does billing begin for an ExpressRoute circuit?"
-    choices:
-    - content: "Billing begins the moment a service key is used."
-      isCorrect: true
-      explanation: "Correct. Billing begins the moment a service key is used."
-    - content: "When data starts flowing between circuits."
-      isCorrect: false
-      explanation: "Incorrect. Data flowing between circuits does not trigger the start of billing."
-    - content: "When the SKU is selected."
-      isCorrect: false
-      explanation: "Incorrect. The SKU being selected does not trigger the start of billing."

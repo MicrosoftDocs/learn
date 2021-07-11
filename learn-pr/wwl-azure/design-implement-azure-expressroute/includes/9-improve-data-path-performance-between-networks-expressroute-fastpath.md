@@ -16,7 +16,8 @@ To configure FastPath, the virtual network gateway must be either:
 
 - ErGw3AZ
 
-> [!IMPORTANT] If you plan to use FastPath with IPv6-based private peering over ExpressRoute, make sure to select ErGw3AZ for SKU. Note that this is only available for circuits using ExpressRoute Direct.
+ > [!IMPORTANT] 
+ > If you plan to use FastPath with IPv6-based private peering over ExpressRoute, make sure to select ErGw3AZ for SKU. Note that this is only available for circuits using ExpressRoute Direct.
 
 **Limitations**
 
@@ -64,7 +65,8 @@ This section shows you how to create a connection to link a virtual network to a
 
 **Connect a VNet to a circuit - same subscription**
 
-> [!NOTE] BGP configuration information will not appear if the layer 3 provider configured your peering. If your circuit is in a provisioned state, you should be able to create connections.
+> [!NOTE] 
+> BGP configuration information will not appear if the layer 3 provider configured your peering. If your circuit is in a provisioned state, you should be able to create connections.
 
 1. To create a connection Ensure that your ExpressRoute circuit and Azure private peering have been configured successfully. Your ExpressRoute circuit should look like the following image:
 
@@ -100,7 +102,8 @@ The circuit owner has the power to modify and revoke authorizations at any time.
 
 The circuit owner creates an authorization, which creates an authorization key to be used by a circuit user to connect their virtual network gateways to the ExpressRoute circuit. An authorization is valid for only one connection.
 
-> [!NOTE] Each connection requires a separate authorization.
+> [!NOTE] 
+> Each connection requires a separate authorization.
 
 1. In the ExpressRoute page, select **Authorizations** and then type a **name** for the authorization and select **Save**.
 
@@ -132,13 +135,15 @@ To redeem a connection authorization
 
 1. Make sure the Connection type is set to **ExpressRoute**. Select the Resource group and Location, then select **OK** in the Basics page.
 
-  > [!Note] The location must match the virtual network gateway location you are creating the connection for.
+  > [!Note] 
+  > The location must match the virtual network gateway location you are creating the connection for.
 
   ​	![Azure portal - create connection basics tab](../media/connection-basics.png)
 
 1. In the **Settings** page, Select the Virtual network gateway and check the **Redeem authorization** check box. Enter the Authorization key and the Peer circuit URI and give the connection a name. Select **OK**.
 
-  > [!Note] The Peer Circuit URI is the Resource ID of the ExpressRoute circuit (which you can find under the Properties Setting pane of the ExpressRoute Circuit).
+  > [!Note] 
+  > The Peer Circuit URI is the Resource ID of the ExpressRoute circuit (which you can find under the Properties Setting pane of the ExpressRoute Circuit).
 
   ![Azure portal - create connection settings tab](../media/connection-settings.png)
 

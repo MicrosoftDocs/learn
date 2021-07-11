@@ -75,7 +75,7 @@ Key features that ExpressRoute Direct provides includes:
 
 
 
-##Route advertisement 
+## Route advertisement 
 
 When Microsoft peering gets configured on your ExpressRoute circuit, the Microsoft edge routers establish a pair of Border Gateway Protocol (BGP) sessions with your edge routers through your connectivity provider. No routes are advertised to your network. To enable route advertisements to your network, you must associate a route filter.
 
@@ -196,11 +196,9 @@ Network Limits and limitations
 
 ### Create a zone redundant VNET gateway in Azure Availability zones
 
-You can deploy VPN and ExpressRoute gateways in Azure Availability Zones. This brings resiliency, scalability, and higher availability to virtual network gateways. Deploying gateways in Azure Availability Zones physically and logically separates gateways within a region, while protecting your on-premises network connectivity to Azure from zone-level failures.
-
 You can deploy VPN and ExpressRoute gateways in [Azure Availability Zones](/azure/availability-zones/az-overview). This brings resiliency, scalability, and higher availability to virtual network gateways. Deploying gateways in Azure Availability Zones physically and logically separates gateways within a region, while protecting your on-premises network connectivity to Azure from zone-level failures.
 
-Zone-redundant gateways
+**Zone-redundant gateways**
 
 To automatically deploy your virtual network gateways across availability zones, you can use zone-redundant virtual network gateways. With zone-redundant gateways, you can benefit from zone-resiliency to access your mission-critical, scalable services on Azure.
 
@@ -214,29 +212,24 @@ To deploy gateways in a specific zone, you can use zonal gateways. When you depl
 
 ![Zonal gateways layout](../media/zonal.png)
 
-Gateway SKUs
+**Gateway SKUs**
 
 Zone-redundant and zonal gateways are available as gateway SKUs. There is a new virtual network gateway SKUs in Azure AZ regions. These SKUs are like the corresponding existing SKUs for ExpressRoute and VPN Gateway, except that they are specific to zone-redundant and zonal gateways. You can identify these SKUs by the "AZ" in the SKU name.
 
-Public IP SKUs
+**Public IP SKUs**
 
 Zone-redundant gateways and zonal gateways both rely on the Azure public IP resource Standard SKU. The configuration of the Azure public IP resource determines whether the gateway that you deploy is zone-redundant, or zonal. If you create a public IP resource with a Basic SKU, the gateway will not have any zone redundancy, and the gateway resources will be regional.
 
-Zone-redundant gateways
+- Zone-redundant gateways
+    - When you create a public IP address using the **Standard** public IP SKU without specifying a zone, the behavior differs depending on whether the gateway is a VPN gateway, or an ExpressRoute gateway.
+    - For a VPN gateway, the two gateway instances will be deployed in any 2 out of these three zones to provide zone-redundancy.
+    - For an ExpressRoute gateway, since there can be more than two instances, the gateway can span across all the three zones.
 
-When you create a public IP address using the **Standard** public IP SKU without specifying a zone, the behavior differs depending on whether the gateway is a VPN gateway, or an ExpressRoute gateway.
+- Zonal gateways
+    - When you create a public IP address using the **Standard** public IP SKU and specify the Zone (1, 2, or 3), all the gateway instances will be deployed in the same zone.
 
-For a VPN gateway, the two gateway instances will be deployed in any 2 out of these three zones to provide zone-redundancy.
-
-For an ExpressRoute gateway, since there can be more than two instances, the gateway can span across all the three zones.
-
-Zonal gateways
-
-When you create a public IP address using the **Standard** public IP SKU and specify the Zone (1, 2, or 3), all the gateway instances will be deployed in the same zone.
-
-Regional gateways
-
-When you create a public IP address using the **Basic** public IP SKU, the gateway is deployed as a regional gateway and does not have any zone-redundancy built into the gateway.
+- Regional gateways
+    - When you create a public IP address using the **Basic** public IP SKU, the gateway is deployed as a regional gateway and does not have any zone-redundancy built into the gateway.
 
  
 ## Configure a Site-to-Site VPN as a failover path for ExpressRoute
