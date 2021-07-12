@@ -1,12 +1,9 @@
-
+> [!NOTE] 
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
 
 ## Deploy ExpressRoute gateways
 
 To connect your Azure virtual network and your on-premises network via ExpressRoute, you must create a virtual network gateway first. A virtual network gateway serves two purposes: to exchange IP routes between the networks and to route network traffic. 
-
-> [!Note] 
->
-> it can take up to 45 minutes to deploy a Gateway.
 
 **Gateway types**
 
@@ -17,12 +14,15 @@ When you create a virtual network gateway, you need to specify several settings.
 
 Each virtual network can have only one virtual network gateway per gateway type. For example, you can have one virtual network gateway that uses -GatewayType VPN, and one that uses -GatewayType ExpressRoute.
 
-In this exercise, you learn how to:
 
-- Create a VNet and a gateway subnet.
-- Create Virtual Network gateway.
+In this exercise, you will:
 
-## **Create the VNet and gateway subnet**
++ Task 1: Create the VNet and gateway subnet
++ Task 2: Create the virtual network gateway
+
+
+
+## Task 1: Create the VNet and gateway subnet
 
 1. On any Azure Portal page, in **Search resources, services and docs**, enter virtual network, and then select **Virtual networks** from the results.
 
@@ -55,11 +55,11 @@ In this exercise, you learn how to:
 
 9. Confirm that the VNet passes the validation and then select **Create**.
 
-> [!Note]  
+> [!NOTE]  
 >
 > If you are using a dual stack virtual network and plan to use IPv6-based private peering over ExpressRoute, click Add IP6 address space and input IPv6 address range values.
 
-## **Create the virtual network gateway**
+## Task 2: Create the virtual network gateway
 
 1. On any Azure Portal page, in **Search resources, services and docs (G+/)**, enter virtual network gateway, and then select **Virtual network gateways** from the results.
 
@@ -92,5 +92,9 @@ In this exercise, you learn how to:
 
 5. When the deployment is complete, select **Go to Resource**.
 
+> [!NOTE] 
+>
+> it can take up to 45 minutes to deploy a Gateway.
 
 Congratulations! You have successfully created a Virtual network, a gateway subnet, and an ExpressRoute Gateway.
+

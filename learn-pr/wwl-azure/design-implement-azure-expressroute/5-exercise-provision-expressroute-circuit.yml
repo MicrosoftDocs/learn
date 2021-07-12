@@ -13,28 +13,3 @@ azureSandbox: false
 durationInMinutes: 5
 content: |
   [!include[](includes/5-exercise-provision-expressroute-circuit.md)]
-quiz:
-  title: "Check your knowledge"
-  questions:
-  - content: "Which of the following steps is part of provisioning an ExpressRoute circuit?"
-    choices:
-    - content: "Send the ExpressRoute circuit service key to the service provider."
-      isCorrect: true
-      explanation: "Correct. To complete the provisioning of the ExpressRoute circuit, the service provider must enable the circuit. This requires the service key."
-    - content: "Get the ExpressRoute circuit key from the service provider."
-      isCorrect: false
-      explanation: "Incorrect. The service provider does not provide the ExpressRoute circuit service key."
-    - content: "Add the ExpressRoute circuit service key to the ExpressRoute Gateway key property."
-      isCorrect: false
-      explanation: "Incorrect. The circuit service key does not have to be configured in the ExpressRoute Gateway key property."
-  - content: "You need access to regions in or near the same metropolitan area. Which SKU should you select?"
-    choices:
-    - content: "Local SKU."
-      isCorrect: true
-      explanation: "Correct. Local SKU gives you access only to one or two Azure regions in or near the same metropolitan area."
-    - content: "Premium."
-      isCorrect: false
-      explanation: "Incorrect. Premium SKU will give you more functionality than you require in this case."
-    - content: "Standard."
-      isCorrect: false
-      explanation: "Incorrect. Standard SKU will give you more functionality than you require in this case."

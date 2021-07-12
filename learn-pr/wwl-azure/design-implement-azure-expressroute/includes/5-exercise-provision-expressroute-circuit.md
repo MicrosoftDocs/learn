@@ -1,10 +1,24 @@
+> [!NOTE] 
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
+
+
+
 In this exercise, you will create an ExpressRoute circuit using the Azure portal and the Azure Resource Manager deployment model. 
 
 ![Diagram ExpressRoute circuit layout for exercise](../media/environment-diagram.png)
 
 To watch a demonstration of how to create an ExpressRoute circuit, see [Azure ExpressRoute - How to create an ExpressRoute circuit | Azure | Channel 9 (msdn.com)](https://channel9.msdn.com/Blogs/Azure/Azure-ExpressRoute-How-to-create-an-ExpressRoute-circuit?term=ExpressRoute&lang-en=true&pageSize=15&skip=15).
 
-## **Create and provision an ExpressRoute circuit**
+
+In this exercise, you will:
+
++ Task 1: Create and provision an ExpressRoute circuit
++ Task 2: Retrieve your Service key
++ Task 3: Deprovisioning an ExpressRoute circuit
++ Task 4: Clean up resources
+
+
+## Task 1: Create and provision an ExpressRoute circuit
 
  
 
@@ -51,8 +65,7 @@ To watch a demonstration of how to create an ExpressRoute circuit, see [Azure Ex
 
 - **Allow classic operation** will allow classic virtual networks to be link to the circuit.
 
-## **Retrieve your Service key**
-
+## Task 2: Retrieve your Service key
  
 
 1. You can view all the circuits that you created by selecting **All services &gt; Networking &gt; ExpressRoute circuits**.
@@ -89,8 +102,11 @@ To watch a demonstration of how to create an ExpressRoute circuit, see [Azure Ex
 ![Azure portal - ExpressRoute circuit properties showing status is now provisioned](../media/provisioned.png)
 
  
+1. Watch this demonstration of how to create and provision an ExpressRoute circuit: [Azure ExpressRoute - How to create an ExpressRoute circuit | Azure | Channel 9 (msdn.com)](https://channel9.msdn.com/Blogs/Azure/Azure-ExpressRoute-How-to-create-an-ExpressRoute-circuit?term=ExpressRoute&lang-en=true&pageSize=15&skip=15). 
 
-## Deprovisioning an ExpressRoute circuit
+Congratulations! You have created an ExpressRoute circuit and located the Service key, which you would need to complete the provisioning of the circuit.
+
+## Task 3: Deprovisioning an ExpressRoute circuit
 
 If the ExpressRoute circuit service provider provisioning state is **Provisioning** or **Provisioned,** you must work with your service provider to deprovision the circuit on their side. Microsoft can continue to reserve resources and bill you until the service provider completes deprovisioning the circuit and notifies us.
 
@@ -100,12 +116,22 @@ If the ExpressRoute circuit service provider provisioning state is **Provisionin
 >
 > If the service provider has deprovisioned the circuit (the service provider provisioning state is set to Not provisioned), you can delete the circuit. This stops billing for the circuit.
 
-## Clean up resources
+## Task 4: Clean up resources
 
 You can delete your ExpressRoute circuit by selecting the **Delete** icon. Ensure the provider status is Not provisioned before proceeding.
 
 ![Azure portal - delete an ExpressRoute circuit](../media/expressroute-circuit-delete.png)
 
-1. Watch this demonstration of how to create and provision an ExpressRoute circuit: [Azure ExpressRoute - How to create an ExpressRoute circuit | Azure | Channel 9 (msdn.com)](https://channel9.msdn.com/Blogs/Azure/Azure-ExpressRoute-How-to-create-an-ExpressRoute-circuit?term=ExpressRoute&lang-en=true&pageSize=15&skip=15). 
 
-Congratulations! You have created an ExpressRoute circuit and located the Service key, which you would need to complete the provisioning of the circuit.
+   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+
+1. Delete all resource groups you created throughout the labs of this module by running the following command:
+
+   ```powershell
+   Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+   ```
+   >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+
+
