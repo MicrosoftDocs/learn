@@ -133,7 +133,7 @@ The VPN gateway settings that you chose are critical to creating a successful co
 
 - Virtual Networks. The virtual network that will be able to send and receive traffic through the virtual network gateway. A virtual network cannot be associated with more than one gateway.
 
-> [!Note:]
+> [!NOTE:]
 >
 >  You can view the IP address assigned to the gateway. The gateway should appear as a connected device.
 
@@ -171,7 +171,7 @@ To configure your VPN device, you will need:
 
 **The public IP address of your VPN gateway**. The IP address can be new or existing.
 
-> [!Note]
+> [!NOTE]
 >
 >  Depending on the VPN device that you have, you may be able to [download a VPN device configuration script](/azure/vpn-gateway/vpn-gateway-download-vpndevicescript) .
 
