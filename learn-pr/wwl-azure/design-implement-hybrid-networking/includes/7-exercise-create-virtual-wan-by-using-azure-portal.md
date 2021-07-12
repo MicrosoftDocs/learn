@@ -1,8 +1,19 @@
+> [!NOTE] 
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
 
 
 In this exercise, you will create a Virtual WAN for Contoso.
 
-## Create a Virtual WAN
+In this exercise, you will:
+
++ Task 1: Create a Virtual WAN
++ Task 2: Create a hub by using Azure Portal
++ Task 3: Connect a VNet to the Virtual Hub
++ Task 4: Clean up resources
+
+
+
+## Task 1: Create a Virtual WAN
 
 1. From a browser, navigate to the Azure portal and sign in with your Azure account.
 
@@ -30,7 +41,7 @@ In this exercise, you will create a Virtual WAN for Contoso.
 
 6. Once validation passes, select **Create** to create the Virtual WAN.
 
-## Create a hub by using Azure Portal
+## Task 2: Create a hub by using Azure Portal
 
 A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functionality. It takes 30 minutes to create the site-to-site VPN gateway in the virtual hub. You must create a Virtual WAN before you can create a hub.
 
@@ -51,7 +62,7 @@ A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functio
 8. Select **Create** to create the hub. 
 9. After 30 minutes, **Refresh** to view the hub on the Hubs page. 
 
-## Connect a VNet to the Virtual Hub
+## Task 3: Connect a VNet to the Virtual Hub
 
 1. Locate the Virtual WAN that you created. 
 
@@ -82,3 +93,17 @@ A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functio
  
 
 Congratulations! You have created a Virtual WAN and a Virtual WAN Hub and connected the ResearchVNet to the hub.
+
+## Task 4: Clean up resources
+
+   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+
+1. Delete all resource groups you created throughout the labs of this module by running the following command:
+
+   ```powershell
+   Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+   ```
+
+    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.

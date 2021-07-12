@@ -1,8 +1,37 @@
-
+> [!NOTE] 
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
 
 In this exercise you will configure a virtual network gateway to connect the Contoso Core Services VNet and Manufacturing VNet. 
 
-## Create CoreServicesTestVM
+In this exercise, you will:
+
++ Task 1: Create CoreServicesVnet and ManufacturingVnet
++ Task 2: Create CoreServicesTestVM
++ Task 3: Create ManufacturingTestVM
++ Task 4: Connect to the Test VMs using RDP
++ Task 5: Test the connection between the VMs
++ Task 6: Create CoreServicesVnet Gateway
++ Task 7: Create ManufacturingVnet Gateway
++ Task 8: CoreServicesVnet to ManufacturingVnet 
++ Task 9: Connect ManufacturingVnet to CoreServicesVnet
++ Task 10: Verify that the connections connect 
++ Task 11: Test the connection between the VMs
+
+## Task 1: Create CoreServicesVnet and ManufacturingVnet
+
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+
+2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files azuredeploy.json and azuredeploy.parameters.json into the Cloud Shell home directory.
+[ARM Templates for creating VNets](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M02)
+3. Deploy the following ARM templates to create the virtual network and subnets needed for this exercise:
+
+   ```powershell
+   $RGName = "ContosoResourceGroup"
+   
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.json
+   ```
+
+## Task 2: Create CoreServicesTestVM
 
 1. On the Azure home page, select **Virtual Machines**.
 
@@ -42,10 +71,9 @@ In this exercise you will configure a virtual network gateway to connect the Con
    | Tags            | No changes required                                          |                                       |
    | Review + create | Review your settings and select Create                       |                                       |
 
-
 6. When the deployment is complete, select **Go to resource**.
 
-## Create ManufacturingTestVM
+## Task 3: Create ManufacturingTestVM
 
 1. On the Azure home page, select **Virtual Machines**.
 
@@ -87,43 +115,28 @@ In this exercise you will configure a virtual network gateway to connect the Con
 
 6. When the deployment is complete, select **Go to resource**.
 
-## Connect to the Test VMs using RDP
+## Task 4: Connect to the Test VMs using RDP
 
 1. On the Azure Portal home page, select **Virtual Machines**.
-
 2. Select **ManufacturingTestVM**.
-
 3. In **ManufacturingTestVM**, select **Connect &gt; RDP**.
-
 4. In **ManufacturingTestVM | Connect**, select **Download RDP file**.
-
 5. Save the RDP file to your desktop.
-
 6. Connect to ManufacturingTestVM using the RDP file, and the username and password you specified when you created the VM.
-
 7. On the Azure Portal home page, select **Virtual Machines**.
-
 8. Select **CoreServicesTestVM**.
-
 9. In **CoreServicesTestVM**, select **Connect &gt; RDP**.
-
 10. In **CoreServicesTestVM | Connect**, select **Download RDP file**.
-
 11. Save the RDP file to your desktop.
-
 12. Connect to CoreServicesTestVM using the RDP file, and the username and password you specified when you created the VM.
-
 13. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
-
 14. On both VMs, in **Networks**, select **Yes**.
-
 15. On CoreServicesTestVM, open PowerShell, and run the following command: ipconfig
-
 16. Note the IPv4 address. 
 
  
 
-## Test the connection between the VMs
+## Task 5: Test the connection between the VMs
 
 1. On the **ManufacturingTestVM**, open PowerShell.
 
@@ -139,7 +152,7 @@ In this exercise you will configure a virtual network gateway to connect the Con
 
  
 
-## Create CoreServicesVnet Gateway
+##  Task 6: Create CoreServicesVnet Gateway
 
 1. In **Search resources, services, and docs (G+/)**, enter **Virtual network gateway**, and then select **Virtual network gateways** from the results.
    ![Search for virtual network gateway on Azure Portal.](../media/virtual-network-gateway-search.png)
@@ -167,11 +180,11 @@ In this exercise you will configure a virtual network gateway to connect the Con
    |                 |                   | Configure BGP                               | Disabled                     |
    | Review + create |                   | Review your settings and select **Create**. |                              |
 
-   > [!Note] 
+   > [!NOTE] 
    >
    > It can take up to 45 minutes to create a virtual network gateway. 
 
-## Create ManufacturingVnet Gateway
+## Task 7: Create ManufacturingVnet Gateway
 
 1. In **Search resources, services, and docs (G+/)**, enter **Virtual network gateway**, and then select **Virtual network gateways** from the results.
 
@@ -198,13 +211,13 @@ In this exercise you will configure a virtual network gateway to connect the Con
    |                 |                   | Configure BGP                               | Disabled                     |
    | Review + create |                   | Review your settings and select **Create**. |                              |
    
-   > [!Note]
+   > [!NOTE]
    >
    > It can take up to 45 minutes to create a virtual network gateway. 
 
  
 
-## Connect CoreServicesVnet to ManufacturingVnet 
+## Task 8: Connect CoreServicesVnet to ManufacturingVnet 
 
 1. In **Search resources, services, and docs (G+/)**, enter **Virtual network gateway**, and then select **Virtual network gateways** from the results.
 
@@ -212,7 +225,7 @@ In this exercise you will configure a virtual network gateway to connect the Con
 
 3. In CoreServicesGateway, select **Connections**, and then select **+ Add**.
 
-   > [!Note]
+   > [!NOTE]
    >
    >  You will not be able to complete this configuration until the virtual network gateways are fully deployed.
 
@@ -235,7 +248,7 @@ In this exercise you will configure a virtual network gateway to connect the Con
 5. To create the connection, select **Create**.
    
 
-## Connect ManufacturingVnet to CoreServicesVnet
+## Task 9: Connect ManufacturingVnet to CoreServicesVnet
 
 1. In **Search resources, services, and docs (G+/)**, enter **Virtual network gateway**, and then select **Virtual network gateways** from the results.
 
@@ -262,7 +275,7 @@ In this exercise you will configure a virtual network gateway to connect the Con
 
 5. To create the connection, select **Create**.
 
-## Verify that the connections connect 
+## Task 10: Verify that the connections connect 
 
 1. In **Search resources, services, and docs (G+/)**, enter **connections**, and then select **connections** from the results.
 
@@ -272,7 +285,7 @@ In this exercise you will configure a virtual network gateway to connect the Con
 
  
 
-## Test the connection between the VMs
+## Task 11: Test the connection between the VMs
 
 1. On the **ManufacturingTestVM**, open PowerShell.
 
