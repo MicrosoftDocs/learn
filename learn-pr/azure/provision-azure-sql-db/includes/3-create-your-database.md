@@ -46,7 +46,7 @@ For your prototype, you won't need a SQL elastic pool because you need only one 
 
 ## What is collation?
 
-Collation refers to the rules that sort and compare data. Collation helps you define sorting rules when case sensitivity, accent marks, and other language characteristics are important.
+Collation refers to the rules that sort and compare data. Collation helps you define *sorting rules* when case sensitivity, accent marks, and other language characteristics are important. Sorting rules enable you to arrange data in an ordered sequence.
 
 Let's take a moment to consider what the default collation, **SQL_Latin1_General_CP1_CI_AS**, means:
 

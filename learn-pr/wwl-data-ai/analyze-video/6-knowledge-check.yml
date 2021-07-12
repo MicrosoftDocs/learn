@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-video.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/12/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You want Video Analyzer for Media to analyze a video. What must you do first?"
+    choices:
+    - content: "Use the Computer Vision service to extract key frames from the video."
+      isCorrect: false
+      explanation: "That's incorrect. You do not need to extract frames from the video before analyzing it."
+    - content: "Upload the video to Video Analyzer for Media and index it."
+      isCorrect: true
+      explanation: "That's correct. You need to index a video before analyzing it."
+    - content: "Store the video file in an Azure blob store container."
+      isCorrect: false
+      explanation: "That's incorrect. You can upload the video file directly to the Video Analyzer portal."
+  - content: "You want Video Analyzer for Media to recognize colleagues in videos recorded from conference calls. What should you do?"
+    choices:
+    - content: "Create a custom model containing a Person for each colleague, with example images of their faces."
+      isCorrect: true
+      explanation: "That's correct. You can create a model of Person records with sample face images so that Video Analyzer for Media will recognize those people in your videos."
+    - content: "Edit the conference call videos to include a caption of each person's name on their first appearance."
+      isCorrect: false
+      explanation: "That's incorrect. You can create a model of Person records with sample face images so that Video Analyzer for Media will recognize those people in your videos."
+    - content: "Embed the Video Analyzer for Media widgets in a custom web site that employees access using their own user credentials."
+      isCorrect: false
+      explanation: "That's incorrect. You can create a model of Person records with sample face images so that Video Analyzer for Media will recognize those people in your videos."

@@ -1,4 +1,4 @@
-Code challenges throughout these modules will reinforce what you've learned and help you gain some confidence before continuing on.
+Code challenges throughout this module will reinforce what you've learned and help you gain some confidence before continuing on.
 
 ## What you'll build
 
@@ -34,13 +34,16 @@ To solve the challenge, you need to perform the following tasks:
 
 ### Task 1 - Create a new file for your challenge
 
-You can call your new file anything you want.  Just make sure that you're comfortable creating a new *.py* file and adding code to it.
+Create new file ending with _.py_, you can call your new file anything you want. Just make sure that you're comfortable creating a new *.py* file and adding code to it.
 
 ### Task 2 - Write the necessary Python code to duplicate the example output
 
-To build the program, use the techniques that you learned earlier.  If you get stuck, focus on just one part at a time.  For example, first collect and display only the date information.  Then move on to the next tiny step, collecting the breakfast calories information and displaying that.  By breaking up one large problem into many smaller programs and testing your work along the way to make sure that it still works, your approach to problem solving will match that of most software developers.
+> [!TIP]
+> To build the program, use the techniques that you learned earlier.  If you get stuck, focus on just one part at a time.  For example, first collect and display only the date information.  Then move on to the next tiny step, collecting the breakfast calories information and displaying that.  
 
-No matter how you approach writing your code, it should produce the following output, depending on the values you enter when you're prompted:
+By breaking up one large problem into many smaller programs and testing your work along the way to make sure that it still works, your approach to problem solving will match that of most software developers.
+
+Here's an example output the program should produce ( depending on the values you enter when you're prompted ):
 
 ```output
 Today's date?

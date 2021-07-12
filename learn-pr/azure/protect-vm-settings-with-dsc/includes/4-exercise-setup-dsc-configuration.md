@@ -2,7 +2,7 @@ In this exercise, you'll create an Azure Automation account and upload a PowerSh
 
 ## Create a VM
 
-Start by deploying a new VM from a Windows Server 2019 image.
+Start by deploying a new VM from a Windows Server 2016 image.
 
 1. In Azure Cloud Shell, run the following commands to create a username and generate a random password.
 
@@ -69,7 +69,7 @@ Start by deploying a new VM from a Windows Server 2019 image.
     | Name | *\[your-automation-account-name\]* |
     | Subscription | Concierge Subscription  |
     | Resource group | Select existing resource group associated with Concierge Subscription |
-    | Location | Default location |
+    | Location | Accept default location |
 
 1. Ignore the message about permissions for the **Create Azure Run As account**. You don't need it to be created as a Run As account in Azure Active Directory.
 
@@ -85,7 +85,7 @@ Start by deploying a new VM from a Windows Server 2019 image.
     pwsh
     ```
 
-1. At the PowerShell prompt, start the code editor and create a file named *MyDscConfiguration.ps1* in your home directory.
+1. At the PowerShell prompt, start the code editor and run the following command to create a file named *MyDscConfiguration.ps1* in your home directory.
 
     ```powershell
     code $HOME/MyDscConfiguration.ps1

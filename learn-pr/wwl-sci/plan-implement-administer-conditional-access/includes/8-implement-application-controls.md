@@ -81,7 +81,7 @@ Organizations must complete the following three steps in order to require the us
 
 **Step 3: Configure Intune app protection policy for iOS and Android client applications.**
 
-Review the article [How to create and assign app protection policies](https://docs.microsoft.com/intune/apps/app-protection-policies) for steps to create app protection policies for Android and iOS.
+Review the article [How to create and assign app protection policies](/intune/apps/app-protection-policies) for steps to create app protection policies for Android and iOS.
 
 ### Scenario 2: Exchange Online and SharePoint Online require an approved client app
 
@@ -157,7 +157,7 @@ Organizations must complete the following three steps in order to require the us
 
 **Step 3: Configure Intune app protection policy for iOS and Android client applications.**
 
-Review the article [How to create and assign app protection policies](https://docs.microsoft.com/intune/apps/app-protection-policies) for steps to create app protection policies for Android and iOS.
+Review the article [How to create and assign app protection policies](/intune/apps/app-protection-policies) for steps to create app protection policies for Android and iOS.
 
 ## App protection policies overview
 
