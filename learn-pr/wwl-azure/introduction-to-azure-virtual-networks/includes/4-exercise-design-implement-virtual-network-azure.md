@@ -1,3 +1,8 @@
+> [!NOTE] 
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
+
+## Exercise scenario 
+
 Now you're ready to deploy virtual networks in the Azure portal.
 
 Consider the fictional organization Contoso Ltd, which is in the process of migrating infrastructure and applications to Azure. In your role as network engineer, you must plan and implement three virtual networks and subnets to support resources in those virtual networks.
@@ -10,7 +15,7 @@ The **ResearchVnet** virtual network is deployed in the **West India** region, n
 
 ![Network layout for Contoso. 
 On-premises 10.10.0.0/16
-ResearchVNet West India 10.40.0.0/16
+ResearchVNet West India 10.40.40.0/24
 CoreServicesVNet West US 10.20.0.0/16
 ManufacturingVNet North Europe 10.30.0.0/16
 ](../media/design-implement-vnet-peering.png)
@@ -87,9 +92,9 @@ In this exercise, you will:
 |              | Region             | (US) West US         |
 | IP Addresses | IPv4 address space | 10.20.0.0/16         |
 
- 5.Use the information in the following table to create the CoreServicesVnet subnets.
+ 5. Use the information in the following table to create the CoreServicesVnet subnets.
 
- 6.To begin creating each subnet, select **+ Add subnet**. To finish creating each subnet, select **Add**.
+ 6. To begin creating each subnet, select **+ Add subnet**. To finish creating each subnet, select **Add**.
 
 | **Subnet**             | **Option**           | **Value**              |
 | ---------------------- | -------------------- | ---------------------- |
@@ -102,9 +107,9 @@ In this exercise, you will:
 | PublicWebServiceSubnet | Subnet name          | PublicWebServiceSubnet |
 |                        | Subnet address range | 10.20.30.0/24          |
 
- 7.To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**.
+ 7. To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**.
 
- 8.Verify your configuration passed validation, and then select **Create**.
+ 8. Verify your configuration passed validation, and then select **Create**.
  
  9. Repeat steps 1 -8 for each VNet based on the tables below  
 

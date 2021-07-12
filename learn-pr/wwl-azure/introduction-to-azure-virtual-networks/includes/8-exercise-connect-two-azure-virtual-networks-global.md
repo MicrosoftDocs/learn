@@ -1,9 +1,21 @@
+> [!NOTE] 
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
 
+## Exercise scenario 
 In this unit, you will configure connectivity between the CoreServicesVnet and the ManufacturingVnet by adding peerings to allow traffic flow. 
 
-## Create a Virtual Machine to test the configuration
+In this unit, you will:
 
-In this section, you will create a test VM on the Manufacturing VNet to test if you can access resources inside another Azure virtual network from your ManufacturingVnet.
++ Task 1: Create a Virtual Machine to test the configuration
++ Task 2: Connect to the Test VMs using RDP
++ Task 3: Test the connection between the VMs
++ Task 4: Create VNet peerings between CoreServicesVnet and ManufacturingVnet
++ Task 5: Test the connection between the VMs
++ Task 6: Clean up resources
+
+## Task 1: Create a Virtual Machine to test the configuration
+
+In this section, you will create a test VM on the Manufacturing VNet to test if you can access resroues inside another Azure virtual network from your ManufacturingVnet.
 
 ### Create ManufacturingVM
 
@@ -47,7 +59,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 6. When the deployment is complete, select **Go to resource**.
 
-## Connect to the Test VMs using RDP
+## Task 2: Connect to the Test VMs using RDP
 
 1. On the Azure Portal home page, select **Virtual Machines**.
 
@@ -83,7 +95,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
  
 
-## Test the connection between the VMs
+## Task 3: Test the connection between the VMs
 
 1. On the ManufacturingVM, open a PowerShell prompt.
 
@@ -99,7 +111,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
  
 
-## Create VNet peerings between CoreServicesVnet and ManufacturingVnet
+## Task 4: Create VNet peerings between CoreServicesVnet and ManufacturingVnet
 
 1. On the Azure home page, select **Virtual Networks**, and then select **CoreServicesVnet**.
 
@@ -136,7 +148,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
  
 
-## Test the connection between the VMs
+## Task 5: Test the connection between the VMs
 
 1. On the ManufacturingVM, open a PowerShell prompt.
 
@@ -153,3 +165,17 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
  
 
 Congratulations! You have successful configured connectivity between VNets by adding peerings. 
+
+## Task 6: Clean up resources
+
+   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+
+1. Delete all resource groups you created throughout the labs of this module by running the following command:
+
+   ```powershell
+   Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+   ```
+
+    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
