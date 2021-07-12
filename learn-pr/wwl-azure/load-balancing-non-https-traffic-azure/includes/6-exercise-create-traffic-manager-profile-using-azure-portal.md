@@ -1,18 +1,27 @@
+> [!NOTE] 
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
 
 
 In this exercise, you will create a Traffic Manager profile to deliver high availability for the fictional Contoso Ltd organization's web application. 
 
-In this exercise you will create two instances of a web application deployed in two different regions (East US and West Europe). The East US region will act as a primary endpoint for Traffic Manager, and the West Europe region will act as a failover endpoint.
+You will create two instances of a web application deployed in two different regions (East US and West Europe). The East US region will act as a primary endpoint for Traffic Manager, and the West Europe region will act as a failover endpoint.
 
 You will then create a Traffic Manager profile based on endpoint priority. This profile will direct user traffic to the primary site running the web application. Traffic Manager will continuously monitor the web application, and if the primary site in East US is unavailable, it will provide automatic failover to the backup site in West Europe.
 
 The diagram below approximately illustrates the environment you will be deploying in this exercise.
 
-​	![Diagram illustrating the Traffic Manager profile architecture that will be created in the exercise](../media/exercise-traffic-manager-environment-diagram.png)
+​	![Picture 14](../media/exercise-traffic-manager-environment-diagram.png)
 
- 
+ In this exercise, you will:
 
-## Create the web apps
++ Task 1: Create the web apps
++ Task 2: Create a Traffic Manager profile
++ Task 3: Add Traffic Manager endpoints
++ Task 4: Test the Traffic Manager profile
++ Task 5: Clean up resources
+
+
+## Task 1: Create the web apps
 
 In this section, you will create two instances of a web application deployed in the two different Azure regions.
 
@@ -39,7 +48,7 @@ In this section, you will create two instances of a web application deployed in 
 
 5. Click **Review + create**.
 
-   ![Create Web App - Review + create tab](../media/create-web-app-1.png)
+   ![Picture 18](../media/create-web-app-1.png)
 
 6. Click **Create**. When the Web App successfully deploys, it creates a default web site.
 
@@ -57,11 +66,11 @@ In this section, you will create two instances of a web application deployed in 
 
 9. You should see the two new web apps listed.
 
-   ![View two running web apps listed in 'App Services'](../media/create-web-app-2.png)
+   ![Picture 19](../media/create-web-app-2.png)
 
  
 
-## Create a Traffic Manager profile
+## Task 2: Create a Traffic Manager profile
 
 Now you will create a Traffic Manager profile that directs user traffic based on endpoint priority.
 
@@ -69,7 +78,7 @@ Now you will create a Traffic Manager profile that directs user traffic based on
 
 2. In the search box at the top of the page, type **Traffic Manager profile**, and then select it from the pop-up list.
 
-   ![Traffic Manager profile - Create](../media/create-tmprofile-1.png)
+   ![Picture 20](../media/create-tmprofile-1.png)
 
 3. Click **Create**.
 
@@ -88,7 +97,7 @@ Now you will create a Traffic Manager profile that directs user traffic based on
 
  
 
-## Add Traffic Manager endpoints
+## Task 3: Add Traffic Manager endpoints
 
 In this section, you will add the website in the East US as the primary endpoint to route all the user traffic. You will then add the website in West Europe as a failover endpoint. If the primary endpoint becomes unavailable, then traffic will automatically be routed to the failover endpoint.
 
@@ -96,7 +105,7 @@ In this section, you will add the website in the East US as the primary endpoint
 
 2. Under **Settings**, select **Endpoints**, and then click **Add**.
 
-   ![Traffic Manager profile - Add endpoint](../media/create-tmendpoints-1.png)
+   ![Picture 21](../media/create-tmendpoints-1.png)
 
 3. On the **Add endpoint** page, enter the information from the table below.
 
@@ -124,11 +133,11 @@ In this section, you will add the website in the East US as the primary endpoint
 
 7. The two new endpoints are displayed in the Traffic Manager profile. Notice that after a few minutes the **Monitoring status** should change to **Online**.
 
-   ![Traffic Manager profile - show list of endpoints - 'Monitor status' highlighted](../media/create-tmendpoints-2.png)
+   ![Picture 22](../media/create-tmendpoints-2.png)
 
  
 
-## Test the Traffic Manager profile
+## Task 4: Test the Traffic Manager profile
 
 In this section, you will check the DNS name of your Traffic Manager profile, and then you will configure the primary endpoint so that it is unavailable. You will then verify that the web app is still available, to test that the Traffic Manager profile is successfully sending traffic to the failover endpoint.
 
@@ -136,13 +145,13 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
 
 2. On the **Overview** screen, copy the **DNS name** entry to the clipboard (or take note of it somewhere).
 
-   ![Traffic Manager profile - copy/note DNS name](../media/check-dnsname-1.png)
+   ![Picture 23](../media/check-dnsname-1.png)
 
 3. Open a web browser tab, and paste (or enter) the **DNS name** entry (contoso-tmprofile.trafficmanager.net) into the address bar, and press Enter.
 
 4. The web app's default web site should be displayed.
 
-   ![Web browser displaying web app's default web page during test](../media/tm-webapp-test-1a.png)
+   ![Picture 24](../media/tm-webapp-test-1a.png)
 
 5. Currently all traffic is being sent to the primary endpoint as you set its **Priority** to **1**.
 
@@ -152,7 +161,7 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
 
 8. On the **myPrimaryEndpoint** page, under **Status**, click **Disabled**, and then click **Save**.
 
-   ![Traffic Manager profile - Disable primary endpoint](../media/disable-primary-endpoint-1.png)
+   ![Picture 25](../media/disable-primary-endpoint-1.png)
 
 9. Close the **myPrimaryEndpoint** page (click the **X** in the top right corner of the page).
 
@@ -163,21 +172,18 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
 12. Verify that the web app is still responding. As the primary endpoint was not available, the traffic was instead routed to the failover endpoint to allow the web site to still function.
 
  
+ ## Task 5: Clean up resources
 
-### Clean up the Azure exercise environment
+   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
-After you complete this exercise, and if you no longer need the resources, delete the resource group and all its related resources. The easiest way to do this is to delete the resource group, which deletes all its resources too.
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-1. On the Azure portal home page, click **Resource groups**.
+1. Delete all resource groups you created throughout the labs of this module by running the following command:
 
-   ![Select 'Resource groups' tile from the Azure portal home page](../media/delete-resource-group-1.png)
+   ```powershell
+   Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+   ```
 
-2. In the list of resource groups, click on the name of the **Contoso-RG-TM1** resource group.
+    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+ 
 
-3. On the **Contoso-RG-TM1** resource group page, in the menu, click **Delete resource group**.
-
-   ![Traffic Manager resource group's Overview page - 'Delete resource group' highlighted](../media/delete-tm-resource-group-1.png)
-
-4. In the warning pane that opens, type the name of the resource group into the text box, and then click **Delete**. (The delete button will only become available once you have successfully typed in the full name of the resource group.)
-
-5. Once the first resource group has been successfully deleted, repeat steps 1-4 to delete the **Contoso-RG-TM2** resource group as well.

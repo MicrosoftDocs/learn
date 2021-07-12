@@ -1,16 +1,25 @@
+> [!NOTE] 
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
 
 
 In this exercise, you will create an internal load balancer for the fictional Contoso Ltd organization. 
 
-The steps to create an internal load balancer, are very similar to those you have already learnt about in this module, to create a public load balancer. The key difference is that with a public load balancer the front end is accessed via a public IP address, and you test connectivity from a host which is located outside your virtual network; whereas, with an internal load balancer, the front end is a private IP address inside your virtual network, and you test connectivity from a host inside the same network.
+The steps to create an internal load balancer, are very similar to those you have already learned about in this module, to create a public load balancer. The key difference is that with a public load balancer the front end is accessed via a public IP address, and you test connectivity from a host which is located outside your virtual network; whereas, with an internal load balancer, the front end is a private IP address inside your virtual network, and you test connectivity from a host inside the same network.
 
 The diagram below illustrates the environment you will be deploying in this exercise.
 
-![Diagram illustrating the load balancer architecture that will be created in the exercise - includes load balancer, VNet, subnet, Bastionsubnet, and VMs](../media/exercise-internal-standard-load-balancer-environment-diagram.png)
+![Picture 15](../media/exercise-internal-standard-load-balancer-environment-diagram.png)
 
  
+In this exercise, you will:
 
-## Create the virtual network
++ Task 1: Create the virtual network
++ Task 2: Create the load balancer
++ Task 3: Create load balancer resources
++ Task 4: Create backend servers
++ Task 5: Test the load balancer
+
+## Task 1: Create the virtual network
 
 In this section, you will create a virtual network and a subnet.
 
@@ -20,7 +29,7 @@ In this section, you will create a virtual network and a subnet.
 
 3. Click **Create**.
 
-![Create virtual network](../media/create-virtual-network-1.png)
+![Picture 2](../media/create-virtual-network-1.png)
 
 4. On the **Basics** tab, use the information in the table below to create the virtual network.
 
@@ -49,7 +58,7 @@ In this section, you will create a virtual network and a subnet.
     | **Setting**                       | **Value**                                     |
     | --------------------------------- | --------------------------------------------- |
     | Bastion name                      | **myBastionHost**                             |
-    | AzureBastionSubnet address space  | **10.1.1.0/24**                               |
+    | AzureBastionSubnet addresss space | **10.1.1.0/24**                               |
     | Public IP address                 | Select **Create  new**  Name: **myBastionIP** |
 
 
@@ -57,7 +66,7 @@ In this section, you will create a virtual network and a subnet.
 
 13. Click **Create**.
 
-## Create the load balancer
+## Task 2: Create the load balancer
 
 In this section, you will create an internal Standard SKU load balancer. The reason we are creating a Standard SKU load balancer here in the exercise, instead of a Basic SKU load balance, is for later exercises that require a Standard SKU version of the load balancer.
 
@@ -68,7 +77,7 @@ In this section, you will create an internal Standard SKU load balancer. The rea
 3. Scroll down to the bottom of the page and select **Load Balancer** (the one that says 'Microsoft' and 'Azure Service' under the name).
 
 4. Click **Create**.
-   ![Create Load Balancer](../media/create-load-balancer-4.png)
+   ![Picture 3](../media/create-load-balancer-4.png)
 
 5. On the **Basics** tab, use the information in the table below to create the load balancer.
 
@@ -89,7 +98,7 @@ In this section, you will create an internal Standard SKU load balancer. The rea
 
 7. Click **Create**.
 
-## Create load balancer resources
+## Task 3: Create load balancer resources
 
 In this section, you will configure load balancer settings for a backend address pool, then create a health probe and a load balancer rule.
 
@@ -111,7 +120,7 @@ The backend address pool contains the IP addresses of the virtual NICs connected
 
 
 4. Click **Add**.
-   ![Show backend pool created in load balancer](../media/create-backendpool.png)
+   ![Picture 4](../media/create-backendpool.png)
 
  
 
@@ -134,7 +143,7 @@ The load balancer monitors the status of your app with a health probe. The healt
 
 
 3. Click **Add**.
-   ![Show health probe created in load balancer](../media/create-healthprobe.png)
+   ![Picture 5](../media/create-healthprobe.png)
 
  
 
@@ -162,76 +171,28 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
 
 
 3. Click **Add**.
-   ![Show load balancing rule created in load balancer](../media/create-loadbalancerrule.png)
+   ![Picture 6](../media/create-loadbalancerrule.png)
 
  
 
-## Create backend servers
+## Task 4: Create backend servers
 
 In this section, you will create three VMs, that will be in the same availability set, for the backend pool of the load balancer, add the VMs to the backend pool, and then install IIS on the three VMs to test the load balancer.
 
-### Create VMs
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-In this section, you will create three VMs (myVM1, myVM2, myVM3). When creating the first VM you will also create a new Availability Set, and then as you create the next two VMs, they will be added to the Availability Set. You will then add these VMs to the backend pool of the load balancer that you created previously.
+2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files azuredeploy.json, azuredeploy.parameters.vm1.json, azuredeploy.parameters.vm2.json and azuredeploy.parameters.vm3.json into the Cloud Shell home directory.
+[ARM Templates for this task](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M04)
 
-1. On the Azure portal home page, click **Create a resource**, then **Compute**, then select **Virtual machine** (if this resource type is not listed on the page, use the search box at the top of the page to search for it and select it).
+3. Deploy the following ARM templates to create the virtual network, subnets, and VMs needed for this exercise:
 
-2. On the **Create a virtual machine** page, on the **Basics** tab, use the information in the table below to create the first VM.
-
-   | **Setting**          | **Value**                                            |
-   | -------------------- | ---------------------------------------------------- |
-   | Subscription         | Select your subscription                             |
-   | Resource group       | **IntLB-RG**                                         |
-   | Virtual machine name | **myVM1**                                            |
-   | Region               | **(US) West US**                                     |
-   | Availability options | **Availability Set**                                 |
-   | Availability set     | Select **Create  new**  Name:  **myAvailabilitySet** |
-   | Image                | **Windows Server 2019 Datacenter - Gen 1**           |
-   | Size                 | **Standard_DS1_v2 - 1 vCPU, 3.5 GiB  memory**        |
-   | Username             | **TestUser**                                         |
-   | Password             | **TestPa$$w0rd!**                                    |
-   | Confirm password     | **TestPa$$w0rd!**                                    |
-
-
-3. Click **Next : Disks**, then click **Next : Networking**. 
-
-4. On the **Networking** tab, use the information in the table below to configure networking settings.
-
-   | **Setting**                                                  | **Value**                               |
-   | ------------------------------------------------------------ | --------------------------------------- |
-   | Virtual network                                              | **IntLB-VNet**                          |
-   | Subnet                                                       | **myBackendSubnet**                     |
-   | Public IP                                                    | Change to **None**                      |
-   | NIC network security group                                   | **Advanced**                            |
-   | Configure network security group                             | Select **Create  new**  Name: **myNSG** |
-   | Place this virtual machine behind an  existing load balancing solution? | **Off** (unchecked)                     |
-
-
-5. Click **Review + create**.
-
-6. Click **Create**.
-
-7. When the deployment of the first VM is complete, click **Create another VM**.
-
-8. On the **Create a virtual machine** page, repeat steps 2-6 above to create a second VM. Use the same settings as before except for the information in the table below. 
-
-   | **Setting**                      | **Value**                                 |
-   | -------------------------------- | ----------------------------------------- |
-   | Virtual machine name             | **myVM2**                                 |
-   | Availability set                 | Select the existing **myAvailabilitySet** |
-   | Configure network security group | Select the existing **myNSG**             |
-
-
-9. When the deployment of the second VM is complete, click **Create another VM**.
-
-10. On the **Create a virtual machine** page, repeat steps 2-6 above to create a third VM. Use the same settings as before except for the information in the table below. 
-
-    | **Setting**                      | **Value**                                 |
-    | -------------------------------- | ----------------------------------------- |
-    | Virtual machine name             | **myVM3**                                 |
-    | Availability set                 | Select the existing **myAvailabilitySet** |
-    | Configure network security group | Select the existing **myNSG**             |
-
+   ```powershell
+   $RGName = "IntLB-RG"
+   
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm1.json
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm2.json
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm3.json
+   ```
 
 ### Add VMs to the backend pool
 
@@ -246,39 +207,13 @@ In this section, you will create three VMs (myVM1, myVM2, myVM3). When creating 
 5. Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**), then click **Add**.
 
 6. On the **myBackendPool** page, click **Save**.
-   ![Show VMs added to backend pool in load balancer](../media/add-vms-backendpool.png)
+   ![Picture 7](../media/add-vms-backendpool.png)
 
  
 
-### Install IIS on the VMs
-
-1. On the Azure portal home page, click **All resources**, then click on **myVM1** from the resources list.
-
-2. On the **Overview** page, select **Connect**, then **Bastion**.
-
-3. Click **Use Bastion**.
-
-4. In the **Username** box, type **TestUser** and in the **Password** box, type **TestPa$$w0rd!**, then click **Connect**.
-
-5. The **myVM1** window will open in another browser tab.
-
-6. If a **Networks** pane appears, click **Yes**.
-
-7. Click the **Windows Start icon** in the bottom left corner of the window, then click the **Windows PowerShell** tile.
-
-8. To install IIS, run the following command in PowerShell: ```Install-WindowsFeature -name Web-Server -IncludeManagementTools```
-
-9. To remove the existing default web home page, run the following command in PowerShell: ```Remove-Item C:\inetpub\wwwroot\iisstart.htm```
-
-10. To add a new default web home page and add content to it, run the following command in PowerShell: ```Add-Content -Path "C:\inetpub\wwwroot\iisstart.htm" -Value $("Hello World from " + $env:computername)```
-
-11. Close the Bastion session to **myVM1** by closing the browser tab.
-
-12. Repeat steps 1-11 above twice more to install IIS and the updated default home page on the **myVM2** and **myVM3** virtual machines.
-
  
 
-## Test the load balancer
+## Task 5: Test the load balancer
 
 In this section, you will create a test VM, and then test the load balancer.
 
@@ -296,7 +231,7 @@ In this section, you will create a test VM, and then test the load balancer.
    | Region               | **(US) West US**                             |
    | Availability options | **No infrastructure redundancy required**    |
    | Image                | **Windows Server 2019 Datacenter - Gen 1**   |
-   | Size                 | **Standard_DS1_v2 - 1 vCPU, 3.5 GiB memory** |
+   | Size                 | **Standard_DS1_v2 - 1 vcpu, 3.5 GiB memory** |
    | Username             | **TestUser**                                 |
    | Password             | **TestPa$$w0rd!**                            |
    | Confirm password     | **TestPa$$w0rd!**                            |
@@ -334,7 +269,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
 5. Click **Use Bastion**.
 
-6. In the **Username** box, type **TestUser** and in the **Password** box, type **TestPa$$w0rd!**, then click **Connect**.
+6. In the **U****sername** box, type **TestUser** and in the **P****assword** box, type **TestPa$$w0rd!**, then click **Connect**.
 
 7. The **myTestVM** window will open in another browser tab.
 
@@ -347,25 +282,21 @@ In this section, you will create a test VM, and then test the load balancer.
 11. Enter (or paste) the **Private IP address** (e.g. 10.1.0.4) from the previous step into the address bar of the browser and press Enter.
 
 12. The default web home page of the IIS Web server is displayed in the browser window. One of the three virtual machines in the backend pool will respond.
-    ![Browser window showing Hello World response from VM1](../media/load-balancer-web-test-1.png)
+    ![Picture 8](../media/load-balancer-web-test-1.png)
 
 13. If you click the refresh button in the browser a few times, you will see that the response comes randomly from the different VMs in the backend pool of the internal load balancer.
-    !Browser window showing Hello World response from VM3](../media/load-balancer-web-test-2.png)
+    ![Picture 9](../media/load-balancer-web-test-2.png)
 
-### Clean up the Azure exercise environment
+## Clean up resources
 
-After you complete this exercise, and if you no longer need the resources, delete the resource group, load balancer, and all their related resources. The easiest way to do this is to delete the resource group, which deletes all its resources too.
+   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
-1. On the Azure portal home page, click **Resource groups**.
-   ![Select 'Resource groups' tile in Azure portal home page](../media/delete-resource-group-1.png)
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In the list of resource groups, click on the name of the **IntLB-RG** resource group.
-   ![Select the load balancer resource group from the list of resource groups](../media/delete-resource-group-2.png)
+1. Delete all resource groups you created throughout the labs of this module by running the following command:
 
-3. On the **IntLB-RG** resource group page, in the menu, click **Delete resource group**.
+   ```powershell
+   Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+   ```
 
-   ![On the load balancer resource group page, with 'Delete resource group' highlighted](../media/delete-resource-group-3.png)
-
-4. In the warning pane that opens, type the name of the resource group into the text box, and then click **Delete**. (The delete button will only become available once you have successfully typed in the full name of the resource group.)
-
-   ![Confirmation pane for deleting a resource group](../media/delete-resource-group-4.png)
+    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
