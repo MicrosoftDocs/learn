@@ -4,39 +4,20 @@ So, in this unit, you create a host pool and add a VM that will act as a session
 
 [!include[](../../../includes/azure-subscription-prerequisite.md)]
 
-## Create a resource group
-
-First, create a resource group to contain all the resources you'll create in this module.
-
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
-1. From the top right-hand side of the Azure portal, select **Cloud Shell**.
-1. Select **PowerShell**.
-1. In Azure Cloud Shell, run the following command to create a resource group. Replace `EastUS` with the value of a location near you.
-
-   ```powershell
-    $resourceGroup = 'learn-firewall-rg'
-    $location = 'EastUS'
-    New-AzResourceGroup -Name $resourceGroup -Location $location
-   ```
-
-   This list shows some location values you can use:
-
-   [!include[](../../../includes/azure-sandbox-regions-note.md)]
-
-
 ## Create a host pool for Azure Virtual Desktop
 
 Next, let's create a host pool that will contain the VM you'll create later in this exercise.
 
-1. In the Azure portal, search for and select **Azure Virtual Desktop**.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. Search for and select **Azure Virtual Desktop**.
 1. Select **Create a host pool**.
 1. Enter the following information into the **Basics** tab.
 
    |Field  |Value  |
    |---------|---------|
    |Subscription     |  Your subscription      |
-   |Resource group     | learn-firewall-rg    |
-   |Host pool name     |  learn-host-pool      |
+   |Resource group     | Create a new resource group named learn-firewall-rg    |
+   |Host pool name     | learn-host-pool      |
    |Location    | Region near you       |
    |Host pool type     |  Pooled  |
    |Load balancing algorithm    | Breadth-first |
@@ -52,6 +33,7 @@ Create a registration token to authorize a session host to join the host pool.
 1. In Cloud Shell, run the following command to create a registration token that will expire in 4 hours.
 
    ```powershell
+    $resourceGroup = 'learn-firewall-rg'
     $hostPoolName = 'learn-host-pool' 
     $regToken = New-AzWvdRegistrationInfo `
     -ResourceGroupName $resourceGroup `
@@ -76,14 +58,20 @@ In Cloud Shell, run the following command to create a subnet and virtual network
    -Name hostSubnet `
    -AddressPrefix 10.0.0.0/24
 
+   $location = Get-AzResourceGroup -Name learn-firewall-rg
+
    $virtualNetwork = New-AzVirtualNetwork `
    -Name hostVNet `
    -AddressPrefix 10.0.0.0/16 `
-   -Location $location `
+   -Location $location.Location `
    -ResourceGroupName $resourceGroup `
    -Subnet $subnetConfig
 
    ```
+
+   This list shows some location values you can use:
+
+   [!include[](../../../includes/azure-sandbox-regions-note.md)]
 
 Ignore the warning message about upcoming breaking changes. It doesn't apply to the command you're running.
 
