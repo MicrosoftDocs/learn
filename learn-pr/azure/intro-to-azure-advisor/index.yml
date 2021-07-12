@@ -2,7 +2,7 @@
 uid: learn.intro-to-azure-advisor
 metadata:
   moduleType: introduction
-  title: Intro to Azure Advisor
+  title: Introduction to Azure Advisor
   description: Introduction to Azure Advisor and how to get recommendations for Azure Services.
   ms.date: 6/30/2021
   author: ricmmartins
@@ -13,7 +13,7 @@ title: Intro to Azure Advisor
 summary: "This module introduces you to Azure Advisor and describes its characteristics, capabilities, and use cases."
 abstract: |
   By the end of this module, you'll be able to:
-    - Evaluate whether Azure Advisor is appropriate to give recommendations from your Azure environment.
+    - Evaluate whether Azure Advisor can provide appropriate recommendations related to your Azure environment.
     - Describe how features of Azure Advisor work to provide personalized recommendations.
 prerequisites: |
   - Basic knowledge of navigating the Azure portal
