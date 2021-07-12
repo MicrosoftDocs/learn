@@ -146,8 +146,7 @@ You can view the effective routes for each network interface by using the Azure 
 You can view the effective routes for a network interface with the Get-AzEffectiveRouteTable command. The following example gets the effective routes for a network interface named myVMNic1, that is in a resource group named myResourceGroup:
 ```powershell    Get-AzEffectiveRouteTable `
 -NetworkInterfaceName myVMNic1 `
--ResourceGroupName myResourceGroup `
-| Format-Table    ```
+-ResourceGroupName myResourceGroup ` ```
 
 
 ### Resolve the routing issue
