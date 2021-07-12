@@ -10,7 +10,7 @@ The **ResearchVnet** virtual network is deployed in the **West India** region, n
 
 ![Network layout for Contoso. 
 On-premises 10.10.0.0/16
-ResearchVNet West India 10.40.40.0/24
+ResearchVNet West India 10.40.0.0/16
 CoreServicesVNet West US 10.20.0.0/16
 ManufacturingVNet North Europe 10.30.0.0/16
 ](../media/design-implement-vnet-peering.png)
