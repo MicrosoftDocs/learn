@@ -24,7 +24,7 @@ The following steps associate the free Azure subscription created for you with V
 
 1. Enter the tenant in the **Azure: Tenant** textbox.
 
-![Add tenant ID to Visual Studio Code Azure extension configuration](../media/serverless-app-vs-code-tenant.png)
+![Add tenant ID to Visual Studio Code Azure extension configuration.](../media/serverless-app-vs-code-tenant.png)
 
 ### Sign out and back in
 
@@ -42,15 +42,15 @@ Now that you've made these changes, you need to sign out and back into the Azure
 
 1. Click on the Azure extension icon.
 
-    ![Visual Studio Code Azure extension icon](../media/serverless-app-azure-extension-icon.png)
+    ![Visual Studio Code Azure extension icon.](../media/serverless-app-azure-extension-icon.png)
 
 1. Under the *Functions* heading, click on **Select Subscriptions**.
 
-    ![Visual Studio Code Azure extension: Functions section](../media/serverless-app-select-subscriptions.png)
+    ![Visual Studio Code Azure extension: Functions section.](../media/serverless-app-select-subscriptions.png)
 
 1. Next, the command palette appears. Select **Concierge Subscription** and click **OK**.
 
-    ![Visual Studio Code Azure extension: Select concierge subscription](../media/serverless-app-select-concierge.png)
+    ![Visual Studio Code Azure extension: Select concierge subscription.](../media/serverless-app-select-concierge.png)
 
 Now Visual Studio Code is configured to use the sandbox resources and avoid any billing against your account.
 
@@ -77,7 +77,7 @@ Now Visual Studio Code is configured to use the sandbox resources and avoid any 
 
     Once complete, the Azure Functions extension reports the primary endpoint of the function in a message box as shown by this screenshot.
 
-    ![New function app](../media/serverless-app-new-function-app.png)
+    ![New function app.](../media/serverless-app-new-function-app.png)
 
     The functions app name (labeled as **1** in the image) is the unique name you provided as you created the app. The app end point (labeled as **2**) is the function app name followed by *azurewebsites.net*.
 
@@ -136,7 +136,7 @@ Keep this browser window open. You will return refresh this window once the CORS
 
 1. Click **Save** to persist the CORS settings.
 
-    ![Enable CORS support for Azure Functions app](../media/serverless-app-function-cors.png)
+    ![Enable CORS support for Azure Functions app.](../media/serverless-app-function-cors.png)
 
 ## Run the deployed application
 
@@ -152,4 +152,4 @@ Now you can make change to the application's data and observe how to the data is
     npm run update-data
     ```
 
-    ![End state of serverless web app](../media/serverless-app-deployed.png)
+    ![End state of serverless web app.](../media/serverless-app-deployed.png)

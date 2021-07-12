@@ -32,15 +32,15 @@ When you first open Storage Explorer, it displays the **Connect to Azure Storage
 
 1. First, connect to Azure. There are several **Azure environment** options to select from. Select **Azure**, and then select **Next**.
 
-    ![Screenshot that shows the Connect to Azure Storage wizard](../media/3-storage-explorer-connect.png)
+    ![Screenshot that shows the Connect to Azure Storage wizard.](../media/3-storage-explorer-connect.png)
 
 1. An Azure sign-in page appears. Use your Azure credentials to sign in.
 
-    ![Screenshot that shows the Azure sign-in page](../media/3-storage-explorer-azure-sign-in.png)
+    ![Screenshot that shows the Azure sign-in page.](../media/3-storage-explorer-azure-sign-in.png)
 
 1. When you've signed in to your Azure instance, the associated Azure account and Azure subscription appear in the **Account Management** section.
 
-    ![Screenshot that shows the account management panel after signing in to an Azure account](../media/3-account-panel-subscriptions-apply.png)
+    ![Screenshot that shows the account management panel after signing in to an Azure account.](../media/3-account-panel-subscriptions-apply.png)
 
    Confirm that the **Concierge Subscription** subscription is selected and account details are correct, and then select **Apply**.
 
@@ -64,29 +64,29 @@ You've now connected Storage Explorer to your Azure subscription. Leave Storage 
 
 1. In the **EXPLORER** pane, select **Refresh All**, then locate and expand **Concierge Subscription**.
 
-    ![Screenshot that shows the expansion of Concierge Subscription](../media/3-storage-explorer-create-blob-1.png)
+    ![Screenshot that shows the expansion of Concierge Subscription.](../media/3-storage-explorer-create-blob-1.png)
 
 1. Locate and expand the storage account that you created earlier. It should be named something similar to **mslearn12345** and ends with a different set of numbers. It has four virtual folders: **Blob Containers**, **File Shares**, **Queues**, and **Tables**.
 
 1. Right-click the **Blob Containers** virtual folder to access the shortcut menu, and then select **Create Blob Container**.
 
-    ![Screenshot that shows the shortcut menu options for the Blob Containers folder](../media/3-storage-explorer-create-blob-context-menu.png)
+    ![Screenshot that shows the shortcut menu options for the Blob Containers folder.](../media/3-storage-explorer-create-blob-context-menu.png)
 
 1. Name the container **myblobcontainer**, and press <kbd>Enter</kbd>.
 
     Each created container appears in a tab to the right of the resource tree.
 
-   ![Screenshot that shows the content and details of the new myblobcontainer blob container](../media/3-storage-explorer-create-blob-view.png)
+   ![Screenshot that shows the content and details of the new myblobcontainer blob container.](../media/3-storage-explorer-create-blob-view.png)
 
 1. Upload a blob to the container. In the **myblobcontainer** pane, select **Upload**, and then select **Upload Files**. The **Upload Files** dialog box appears.
 
 1. For **Selected files**, select the ellipsis (**...**). Browse to a small file on your device, and select **Open**. Then, select **Upload** to upload the file.
 
-    ![Screenshot that shows the Upload Files dialog box](../media/3-upload-blob.png)
+    ![Screenshot that shows the Upload Files dialog box.](../media/3-upload-blob.png)
 
     You should now see your file stored in your storage account.
 
-    ![Screenshot that shows the file in the storage account](../media/3-upload-blob-complete.png)
+    ![Screenshot that shows the file in the storage account.](../media/3-upload-blob-complete.png)
 
 From here, you can upload additional files, download files, make copies, and do other administrative tasks.
 
@@ -107,6 +107,6 @@ To create a queue in your storage account:
 
     Name this new queue **myqueue**, and press <kbd>Enter</kbd> to create the queue. Each created queue appears on a tab to the right of the resource tree.
 
-    ![Screenshot that shows the content and details of the new myblob blob container](../media/3-storage-explorer-create-queue-view.png)
+    ![Screenshot that shows the content and details of the new myblob blob container.](../media/3-storage-explorer-create-queue-view.png)
 
     From this view, you can manage the content of the queue. If our application used this queue and experienced an issue with processing a message, you could connect to the queue, and view the contents of a message to determine the issue.

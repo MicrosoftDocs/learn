@@ -11,7 +11,7 @@ Let's start by creating a new Azure Stream Analytics job in the Azure portal.
 
 1. On the **Stream Analytics jobs** page, select **+ New**.
 
-    ![Screenshot showing the Stream Analytics jobs page in the Azure portal](../media/3-add-jobs.png)
+    ![Screenshot showing the Stream Analytics jobs page in the Azure portal.](../media/3-add-jobs.png)
 
     The **New Stream Analytics job** page appears.
 
@@ -27,10 +27,10 @@ Let's start by creating a new Azure Stream Analytics job in the Azure portal.
 
 1. Select **Create** to create the new job. Your job will go through validation.
 
-    ![Screenshot of the new Stream Analytics job](../media/3-create-new-job.png)
+    ![Screenshot of the new Stream Analytics job.](../media/3-create-new-job.png)
 
 1. After a few moments, select **Refresh** to see your new Stream Analytics job.
 
-    ![Screenshot of a newly created Stream Analytics job on the Stream Analytics jobs page](../media/3-created-jobs.png)
+    ![Screenshot of a newly created Stream Analytics job on the Stream Analytics jobs page.](../media/3-created-jobs.png)
 
 Now that we have a Stream Analytics job, we're ready to set up the job to serve a streaming workload. We'll start with the input.

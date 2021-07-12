@@ -45,14 +45,14 @@ Azure Government serves thousands of government customers within Federal, state 
 :::row-end:::
 :::row:::
   :::column:::
-    ![An icon representing a clipboard with a checklist](../media/clipboard-icon.png)
+    ![An icon representing a clipboard with a checklist.](../media/clipboard-icon.png)
   :::column-end:::
 	:::column span="3":::
 Meets the most complex **compliance standards**.
 
 Azure has the deepest and most comprehensive compliance coverage in the industry. 
 
-![An icon representing a secure computer screen](../media/compliance-matrix.png)
+![An icon representing a secure computer screen.](../media/compliance-matrix.png)
 
 
   :::column-end:::
@@ -60,7 +60,7 @@ Azure has the deepest and most comprehensive compliance coverage in the industry
 
 :::row:::
   :::column:::
-    ![An icon representing a secure computer screen](../media/secure-screen-icon.png)
+    ![An icon representing a secure computer screen.](../media/secure-screen-icon.png)
   :::column-end:::
 	:::column span="3":::
 Designed to **exceed U.S. government requirements**.

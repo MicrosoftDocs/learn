@@ -46,7 +46,7 @@ In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After th
 
 1. Select the following values:
 
-    ![Screenshot of the metrics page for a VM](../media/3-view-host-level-metrics.png)
+    ![Screenshot of the metrics page for a VM.](../media/3-view-host-level-metrics.png)
 
    |Field     |Value |
    |---------|---------|
@@ -68,7 +68,7 @@ In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After th
 
 1. You should now have a graph that looks something like the following:
 
-    ![Screenshot that shows a graph of CPU usage and inbound traffic](../media/3-metric-graph.png)
+    ![Screenshot that shows a graph of CPU usage and inbound traffic.](../media/3-metric-graph.png)
 
 Azure collects this data without requiring you to install anything extra on Ubuntu or Windows VMs.
 
@@ -82,6 +82,6 @@ Azure collects this data without requiring you to install anything extra on Ubun
 
 1. After boot diagnostics successfully deploys, scroll to your left, and on the **Boot diagnostics** pane for your virtual machine, review the screenshot to verify that your virtual machine started correctly.
 
-    ![Screenshot that shows the boot diagnostic image captured](../media/3-boot-diagnostics.png)
+    ![Screenshot that shows the boot diagnostic image captured.](../media/3-boot-diagnostics.png)
 
 You can also select **Serial log** to view log messages created when the VM started.

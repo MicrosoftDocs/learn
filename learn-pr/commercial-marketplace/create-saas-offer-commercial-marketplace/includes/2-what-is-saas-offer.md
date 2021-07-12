@@ -25,7 +25,7 @@ When asked if you'd like to sell through Microsoft, you’ll have the following 
 
 If you decide not to sell through Microsoft, you’ll have three options to list your application in the online stores—[**Azure Marketplace**](https://azuremarketplace.microsoft.com/) and [**Microsoft AppSource**](https://appsource.microsoft.com/). Your choice will determine how customers can learn more about your offer and engage with you to purchase a subscription. The option you choose will be indicated to customers with a call-to-action (CTA), which is the blue button that customers will click on your product’s page in the online stores.
 
-:::image type="content" source="../media/3-marketplace-cta.png" alt-text="Screenshot of a product listing from Azure Marketplace with emphasis on the free trial button":::
+:::image type="content" source="../media/3-marketplace-cta.png" alt-text="Screenshot of a product listing from Azure Marketplace with emphasis on the free trial button.":::
 
 You'll have a few options to choose from for your listing type:
 

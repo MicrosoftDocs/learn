@@ -35,11 +35,11 @@ Now that you've tested version 2 of the web app in the staging slot, you can dep
 
 1. In the left menu pane, under **Deployment**, select **Deployment slots** > **Swap**.
 
-    ![Start a swap](../media/5-swap-staging-slot.png)
+    ![Start a swap.](../media/5-swap-staging-slot.png)
 
 1. Make sure you're about to swap the staging and production slots. Notice how the swap will affect settings. The value of the APP_VERSION setting will be exchanged between the slots, but the value of the ENVIRONMENT slot setting won't be swapped. Select **Swap**.
 
-    ![Complete a swap](../media/5-simple-swap.png)
+    ![Complete a swap.](../media/5-simple-swap.png)
 
 1. When the swap is complete, go to the **Overview** page of the production slot's web app, and select **Browse**. The web app appears on a new browser tab. Notice that version 2 of the web app is now in production.
 
@@ -55,7 +55,7 @@ Suppose that now that you're using deployment slots, you want to enable continuo
 
 1. In the **Auto swap deployment slot** list, select **production**, and then select **Save**.
 
-    ![Configure auto swap](../media/5-configure-auto-swap.png)
+    ![Configure auto swap.](../media/5-configure-auto-swap.png)
 
 ## Deploy new code and auto swap it into production
 

@@ -6,7 +6,7 @@ metadata:
   description: The Django admin site is a powerful utility for allowing business users to modify data. Django includes all the necessary tools for creating users and managing permissions.
   ms.date: 2/26/2021  
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

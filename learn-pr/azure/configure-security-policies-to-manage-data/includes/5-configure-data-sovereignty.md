@@ -11,7 +11,7 @@ Azure operates in multiple geographies around the world. Azure geography is a de
 
 Each Azure region is paired with another region within the same geography, forming a _region pair_. The exception is Brazil South, which is paired with a region outside its geography. Across the region pairs, Azure serializes platform updates (or planned maintenance) so that only one region is updated at a time. If an outage affecting multiple regions occurs, one region in each pair will be prioritized for recovery.
 
-![A Geography box contains a regional pair box, which in turn contains two region boxes, each with a box in it labeled datacenter. ](../media/M4_01_04_01.png)
+![A Geography box contains a regional pair box, which in turn contains two region boxes, each with a box in it labeled datacenter.](../media/M4_01_04_01.png)
 
 It's recommended that you configure business continuity and disaster recovery (BCDR) across regional pairs to benefit from Azure's isolation and VM policies. For apps that support multiple active regions, we recommend using both regions in a region pair, where possible. This approach will ensure optimal availability for apps and minimized recovery time in the event of a disaster.
 

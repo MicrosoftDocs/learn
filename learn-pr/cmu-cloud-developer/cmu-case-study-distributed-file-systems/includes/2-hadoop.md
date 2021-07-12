@@ -21,7 +21,7 @@ As described earlier, HDFS is a DFS that is designed to run on a cluster of node
 
 An HDFS cluster is illustrated in the following figure:
 
-![HDFS architecture](../media/hadoop-architecture.png)
+![HDFS architecture.](../media/hadoop-architecture.png)
 
 _Figure 1: HDFS architecture_
 
@@ -37,7 +37,7 @@ In addition, because HDFS is designed to tolerate failures of individual nodes, 
 
 Hadoop clusters are typically deployed in a data center that consists of multiple racks of servers connected using a fat-tree topology as discussed in an earlier module. To this end, HDFS has been designed with cluster-topology awareness, which aids in making block-placement decisions to influence performance and fault tolerance. Common Hadoop clusters have about 30 to 40 servers per rack, with a gigabit switch dedicated to the rack and an uplink to a core switch or router, which has bandwidth that is shared among many racks in the data center, as shown in the following figure: 
 
-![HDFS cluster topology](../media/hadoop-cluster-topology.png)
+![HDFS cluster topology.](../media/hadoop-cluster-topology.png)
 
 _Figure 2: HDFS cluster topology_
 
@@ -52,7 +52,7 @@ The following video walks through file read and write operations in HDFS.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pSF7]
 
-![File reads in HDFS](../media/file-reads-hadoop-1.png)
+![File reads in HDFS.](../media/file-reads-hadoop-1.png)
 
 _Figure 3: File reads in HDFS_
 
@@ -64,7 +64,7 @@ It is important to note that clients contact the DataNode directly to retrieve d
 
 File writes are different from file reads in HDFS (Figure 4). A client that needs to write data to HDFS first contacts the NameNode and then notifies it of a file creation. The NameNode checks whether the file already exists and verifies whether the client has permission to create a file. If the checks pass, the NameNode then makes a record of a new file.
 
-![File writes in HDFS](../media/file-reads-hadoop-2.png)
+![File writes in HDFS.](../media/file-reads-hadoop-2.png)
 
 _Figure 4: File writes in HDFS_
 
@@ -72,7 +72,7 @@ The client then proceeds to write the file to an internal data queue and request
 
 Hadoop also uses the notion of rack locality during replica placement. Data blocks are triple replicated in HDFS by default. HDFS attempts to place the first replica on the same node as the client that is writing the block. In case a client process is not running in the HDFS cluster, a node is chosen at random. The second replica is written to a node that is on a different rack from the first (off rack). The third replica of the block is then written to another random node on the same rack as the second. Further replicas are written to random nodes in the cluster, but the system tries to avoid placing too many replicas on the same rack. Figure 5 illustrates the replica placement for a triple-replicated block in HDFS. The idea behind HDFS's replica placement is to be able to tolerate node and rack failures. For example, when an entire rack goes offline due to power or networking problems, the requested block can still be located at a different rack.
 
-![Replica placement for a triple-replicated block in HDFS](../media/hadoop-file.png)
+![Replica placement for a triple-replicated block in HDFS.](../media/hadoop-file.png)
 
 _Figure 5: Replica placement for a triple-replicated block in HDFS_
 

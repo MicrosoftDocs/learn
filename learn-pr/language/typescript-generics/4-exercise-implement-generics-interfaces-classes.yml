@@ -6,7 +6,7 @@ metadata:
   description: Learn how to declare a generic interface, declare a generic interface as a function type and as a class type, and define a generic class.
   ms.date: 02/11/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

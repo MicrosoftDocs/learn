@@ -4,13 +4,13 @@ Previously, we looked at message queue systems in general. We saw that general-p
 
 Kafka is responsible for handling messages originating from a set of programs (known as producers), and sending them to a set of machines that may be interested in the messages (known as consumers). The messages are published by the producers into a Kafka topic. Consumers can listen to specific topics by subscribing to them, and messages will be delivered to the consumers by Kafka. Hence, Apache Kafka can be described as an open-source distributed publish-subscribe messaging system. 
 
-![A Kafka cluster](../media/kafka-1.png)
+![A Kafka cluster.](../media/kafka-1.png)
 
 _Figure 3: A Kafka cluster_
 
 Topics represent a user-defined category to which messages are published. An example topic one might find at an advertising company could be AdClickEvents. All consumers of data can read from one or more topics. Internally, each topic is maintained as a partitioned commit log, as illustrated in Figure 4. It is important to note that a topic can consist of multiple partitions, and a Kafka cluster can handle multiple topics.
 
-![Message queuing in Kafka](../media/kafka-2.png)
+![Message queuing in Kafka.](../media/kafka-2.png)
 
 _Figure 4: Message queuing in Kafka_
 
@@ -36,7 +36,7 @@ Notice that the delivery guarantees are not very strict. This includes the fact 
 
 ## Architecture of Apache Kafka
 
-![Kafka architecture](../media/kafka-3.png)
+![Kafka architecture.](../media/kafka-3.png)
 
 _Figure 5: Kafka architecture_
 

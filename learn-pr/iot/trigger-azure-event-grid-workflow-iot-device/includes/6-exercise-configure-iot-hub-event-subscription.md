@@ -14,13 +14,13 @@ In this unit, you'll create an event subscription within Azure IoT Hub to set up
 
    * **Event Types**: In **Filter to Event Types**, clear all of the choices except **Device Created**.
 
-     [![Subscription event types](../media/subscription-event-types.png)](../media/subscription-event-types.png#lightbox)
+     [![Subscription event types.](../media/subscription-event-types.png)](../media/subscription-event-types.png#lightbox)
 
    * **Endpoint Details**: Select **Endpoint Type** as **Web Hook**, choose **Select an endpoint**, and paste the URL that you copied from your logic app. Confirm the selection.
 
    When you're done, the pane should look like the following example:
 
-   [![Sample event subscription form](../media/subscription-form.png)](../media/subscription-form.png#lightbox)
+   [![Sample event subscription form.](../media/subscription-form.png)](../media/subscription-form.png#lightbox)
 
 ## Configure the event filter
 

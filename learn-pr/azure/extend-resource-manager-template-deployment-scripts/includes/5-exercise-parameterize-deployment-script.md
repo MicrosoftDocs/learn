@@ -35,7 +35,7 @@ You start with the template that you created in the last exercise.
 
 1. Copy the following starting template into *main.bicep*.
 
-    :::code language="plaintext" source="code/3-template-with-deploymentscript.bicep" :::
+    :::code language="bicep" source="code/3-template-with-deploymentscript.bicep" :::
 
 1. Save the template.
 
@@ -92,19 +92,19 @@ The script you've adopted requires some environment variables. You can specify t
 
 1. Add an `environmentVariables` property to the `properties` section of the deployment script.
 
-    :::code language="plaintext" source="code/5-template-with-deploymentscript-parameters.bicep" range="75, 88" :::
+    :::code language="bicep" source="code/5-template-with-deploymentscript-parameters.bicep" range="75, 88" :::
 
 1. Add an environment variable for `ResourceGroupName`.
 
-    :::code language="plaintext" source="code/5-template-with-deploymentscript-parameters.bicep" range="75-79, 88" highlight="2-5" :::
+    :::code language="bicep" source="code/5-template-with-deploymentscript-parameters.bicep" range="75-79, 88" highlight="2-5" :::
 
 1. Add an environment variable for `StorageAccountName`.
 
-    :::code language="plaintext" source="code/5-template-with-deploymentscript-parameters.bicep" range="75-83, 88" highlight="6-9":::
+    :::code language="bicep" source="code/5-template-with-deploymentscript-parameters.bicep" range="75-83, 88" highlight="6-9":::
 
 1. Add an environment variable for `StorageContainerName`.
 
-    :::code language="plaintext" source="code/5-template-with-deploymentscript-parameters.bicep" range="75-88" highlight="10-13":::
+    :::code language="bicep" source="code/5-template-with-deploymentscript-parameters.bicep" range="75-88" highlight="10-13":::
 
 ::: zone-end
 
@@ -126,7 +126,7 @@ To make your template easier for the two teams to use, you can add a parameter t
 
 1. Add a parameter to the template to take an array of file names.
 
-    ```plaintext
+    ```bicep
     @description('List of files to copy to application storage account.')
     param filesToCopy array
     ```
@@ -172,7 +172,7 @@ Next, you can take the parameter that you just defined and pass it in to the dep
 
 Add an `arguments` property to the deployment script. The PowerShell script takes a parameter named `File`, which is a string of file names that should come from the `filesToCopy` template parameter. 
 
-:::code language="plaintext" source="code/5-template-with-deploymentscript-parameters.bicep" range="74" :::
+:::code language="bicep" source="code/5-template-with-deploymentscript-parameters.bicep" range="74" :::
 
 Notice this uses several Bicep features:
 
@@ -190,11 +190,11 @@ Because you're changing the deployment script to deploy one or more files, you n
 
 1. Update the `outputs` in the template to return the whole object, which will have a URI per file.
 
-    :::code language="json" source="code/5-template-with-deploymentscript-parameters.json" range="142-151" highlight="3-4" :::
+    :::code language="json" source="code/5-template-with-deploymentscript-parameters.json" range="126-135" highlight="3-4" :::
 
 1. Add another output with the storage account name (which has a random identifier). You'll use this later to validate that the deployment script did what you expected.
 
-    :::code language="json" source="code/5-template-with-deploymentscript-parameters.json" range="142-151" highlight="6-9" :::
+    :::code language="json" source="code/5-template-with-deploymentscript-parameters.json" range="126-135" highlight="6-9" :::
 
 ::: zone-end
 
@@ -202,11 +202,11 @@ Because you're changing the deployment script to deploy one or more files, you n
 
 1. Update the outputs in the template to return the whole object, which will have a URI per file.
 
-    :::code language="plaintext" source="code/5-template-with-deploymentscript-parameters.bicep" range="115" :::
+    :::code language="bicep" source="code/5-template-with-deploymentscript-parameters.bicep" range="115" :::
 
 1. Add another output with the storage account name (which has a random identifier). You'll use this later to validate that the deployment script did what you expected.
 
-    :::code language="plaintext" source="code/5-template-with-deploymentscript-parameters.bicep" range="116" :::
+    :::code language="bicep" source="code/5-template-with-deploymentscript-parameters.bicep" range="116" :::
 
 ::: zone-end
 
@@ -222,7 +222,7 @@ Your template should look similar to:
 
 ::: zone pivot="bicepcli,biceppowershell"
 
-:::code language="plaintext" source="code/5-template-with-deploymentscript-parameters.bicep" highlight="1-4, 74-88, 91-105, 115-116" :::
+:::code language="bicep" source="code/5-template-with-deploymentscript-parameters.bicep" highlight="1-4, 74-88, 91-105, 115-116" :::
 
 ::: zone-end
 
