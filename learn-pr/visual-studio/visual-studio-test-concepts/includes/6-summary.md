@@ -17,10 +17,10 @@
 -->
 Our goal was to help you understand the purpose, concepts, and schools of thought behind testing and how they can help you improve your code quality.
 
-* We explained what testing is and how it can help catch bugs before release
-* We explained how testing helps validate code changes, improve architecture, and improve code health.
-* We explained how the different types of testing can address different needs in a code base.
-* We explained the testing schools of thought that help guide good practices across teams.
+* **Explored concepts**: We explored the concept of testing is and how it can help catch bugs before release.
+* **Explained benefits of testing**. Testing helps validate code changes, improve architecture, and improve code health.
+- **Learned about different types of testing**.  Different types of testing can address different needs in a code base.
+- **Discovered different schools of thought**. We explained the testing schools of thought that help guide good practices across teams.
 
 <!-- 2. Show how you solved the scenario problem(s)---------------------------------------------------
 
