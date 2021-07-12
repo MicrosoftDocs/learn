@@ -1,7 +1,7 @@
 Azure Advisor takes the ownership of optimizing your Azure deployments in three approaches:
 
-* Provide highly personalized recommendations and best practices, which are both actionable and proactive;
-* Help you find ways to reduce costs related to your Azure service subscriptions; and
-* Improve the security, reliability, operational excellence, and performance of resources you use.
+* Provide highly personalized recommendations and best practices, which are both actionable and proactive: Microsoft provides a lot of best practices through Cloud Adoption Framework and Well Architected Framework. Due the complexity of scenarios and the mix of different components you can have, for a person can be impossible be aware about all details for each one. So receive those personalized guidance from Azure Advisor can make this challenge less complex for you.
+* Help you find ways to reduce costs related to your Azure service subscriptions: Azure have dozens of services which different charge models for each one. In other hand, cost control is one of the most important disciplines on cloud governance. To help you keep your budget on track, the cost recommendations will be fundamental to help you be aware of where are your costs and where you have opportunities to save money.
+* Improve the security, reliability, operational excellence, and performance of resources you use: In a cloud environment you have changes happening every day. You have automated processes handling the continuous integration of your environments, continuous delivery of your projects and continuous deployment of your applications. So why not have something to help with your continuous improvements? Here is where the recommendations from Azure Advisor can help you to keep improving the security, reliability, operational excellence and performance for your environments.
 
 The usage of Azure Advisor doesn't have costs, it's free. Carefully consider about apply or not those recommendations that make sense in your environment, but definitively is something you should use in all your Azure subscriptions.
