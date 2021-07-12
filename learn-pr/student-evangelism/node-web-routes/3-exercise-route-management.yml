@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-web-api-nodejs-express.5-exercise-route-management
+uid: learn.student-evangelism.node-web-routes.exercise-route-management
 title: Exercise - Route management
 metadata:
   title: Exercise - Route management
   description: Exercise in how to configure routes for your API using different HTTP Verbs. It also covers how to filter a response using query parameters.
-  author: softchris
-  ms.author: chnoring
-  ms.date: 06/16/2020
+  author: clarkio
+  ms.author: brcl
+  ms.date: 07/12/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-exercise-route-management.md)]
+  [!include[](includes/3-exercise-route-management.md)]

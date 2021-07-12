@@ -10,8 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
-content: |
-  [!include[](includes/8-knowledge-check.md)]
+content: Choose the best response for each question. Then select **Check your answers**.
 quiz:
   title: Check your knowledge
   questions:
