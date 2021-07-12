@@ -44,7 +44,7 @@ Factors that you need to cover during your planning process include:
 
 When you create a virtual network gateway, you need to specify the gateway SKU that you want to use. Select the SKU that satisfies your requirements based on the types of workloads, throughputs, features, and SLAs. The table below shows the available SKUs and what S2S and P2S configurations they support.
 
-| VPN Gateway Generation | SKU      | S2S/VNet-to-Vnet Tunnels | P2S SSTP Connections | P2S IKEv2/OpenVPN Connections | Aggregate Throughput Benchmark | BGP           | Zone-redundant |
+| **VPN Gateway Generation** | **SKU**      | **S2S/VNet-to-Vnet Tunnels** | **P2S SSTP Connections** | **P2S IKEv2/OpenVPN Connections** | **Aggregate Throughput Benchmark** | **BGP**           | **Zone-redundant** |
 | - | -- |  | -- | -- |  | - | -- |
 | Generation1            | Basic    | Max. 10                  | Max. 128             | Not Supported                 | 100 Mbps                       | Not Supported | No             |
 | Generation1            | VpnGw1   | Max. 30\*                | Max. 128             | Max. 250                      | 650 Mbps                       | Supported     | No             |
@@ -96,7 +96,7 @@ RouteBased VPNs were previously called dynamic routing gateways in the classic d
 
 The following table lists the requirements for PolicyBased and RouteBased VPN gateways. This table applies to both the Resource Manager and classic deployment models. For the classic model, PolicyBased VPN gateways are the same as Static gateways, and Route-based gateways are the same as Dynamic gateways.
 
-| Features                          | PolicyBased Basic VPN Gateway | RouteBased Basic VPN Gateway                                           | RouteBased Standard VPN Gateway                                        | RouteBased High Performance VPN Gateway                                |
+| **Features**                          | **PolicyBased Basic VPN Gateway** | **RouteBased Basic VPN Gateway**                                           | RouteBased Standard VPN Gateway                                        | RouteBased High Performance VPN Gateway                                |
 |  | -- | - | - | - |
 | Site-to-Site connectivity (S2S)   | PolicyBased VPN configuration | RouteBased VPN configuration                                           | RouteBased VPN configuration                                           | RouteBased VPN configuration                                           |
 | Point-to-Site connectivity (P2S)  | Not supported                 | Supported (Can coexist with S2S)                                       | Supported (Can coexist with S2S)                                       | Supported (Can coexist with S2S)                                       |
