@@ -1,10 +1,19 @@
-
+> [!NOTE] 
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
 
 In this exercise, you will set up an Azure Front Door configuration that pools two instances of a web application that runs in different Azure regions. This configuration directs traffic to the nearest site that runs the application. Azure Front Door continuously monitors the web application. You will demonstrate automatic failover to the next available site when the nearest site is unavailable. The network configuration is shown in the following diagram:
 
 ![Network configuration for Azure Front Door.](../media/front-door-environment-diagram.png)
 
-## Create two instances of a web app
+In this exercise, you will:
+
++ Task 1: Create two instances of a web app
++ Task 2: Create a Front Door for your application
++ Task 3: View Azure Front Door in action
++ Task 4: Clean up resources
+
+
+## Task 1: Create two instances of a web app
 
 This exercise requires two instances of a web application that run in different Azure regions. Both the web application instances run in Active/Active mode, so either one can take traffic. This configuration differs from an Active/Stand-By configuration, where one acts as a failover.
 
@@ -53,7 +62,7 @@ This exercise requires two instances of a web application that run in different 
 9. Select **Review + create**, review the Summary, and then select **Create**.   
    ‎It might take several minutes for the deployment to complete.
 
-## Create a Front Door for your application
+## Task 2: Create a Front Door for your application
 
 Configure Azure Front Door to direct user traffic based on lowest latency between the two web apps servers. To begin, add a frontend host for Azure Front Door.
 
@@ -126,7 +135,7 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
 
  
 
-## View Azure Front Door in action
+## Task 3: View Azure Front Door in action
 
 Once you create a Front Door, it takes a few minutes for the configuration to be deployed globally. Once complete, access the frontend host you created. 
 
@@ -161,3 +170,19 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
    ![Browser showing App Service error page](../media/web-apps-both-stopped.png)
 
    Congratulations! You have configured and tested an Azure Front Door.
+   
+  
+   
+   ## Task 4: Clean up resources
+   
+   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+
+1. Delete all resource groups you created throughout the labs of this module by running the following command:
+
+   ```powershell
+   Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+   ```
+
+    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.

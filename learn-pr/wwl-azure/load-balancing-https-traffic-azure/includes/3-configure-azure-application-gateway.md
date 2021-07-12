@@ -43,7 +43,7 @@ If the default probe check fails for server A, the application gateway stops for
 The following table lists the default health probe settings:
 
 
-[!div class="mx-tdBreakAll"]
+
 | **Probe property**  | **Value**                      | **Description**                                              |
 | - |  |  |
 | Probe URL           | <protocol>://127.0.0.1:<port>/ | The protocol and port are inherited from the backend HTTP settings to which the probe is associated |
@@ -69,7 +69,6 @@ Custom probes give you more granular control over the health monitoring. When us
 The following table provides definitions for the properties of a custom health probe.
 
 
-[!div class="mx-tdBreakAll"]
 | **Probe property**  | **Description**                                              |
 | - |  |
 | Name                | Name of the probe. This name is used to identify and refer to the probe in back-end HTTP settings. |
