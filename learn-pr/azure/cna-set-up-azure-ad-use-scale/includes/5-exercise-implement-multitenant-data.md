@@ -572,8 +572,7 @@ You're finally ready to test the functionality of your web app. While you could 
 
 1. Verify that the resulting webpage consists of the Azure AD authentication information for the currently signed-in user (the output might differ).
 
-    :::image type="content" source="../media/5-azure-ad-node-js-app-output-page.png" alt-text="Screenshot of the page of the Node.js web app displaying the Azure AD authentication information.":::
-
+    :::image type="content" source="../media/5-azure-ad-node-js-app-output-page.png" alt-text="Screenshot of the page of the Node.js web app displaying the Azure AD authentication information." lightbox="../media/5-azure-ad-node-js-app-output-page.png":::
 
 ## Results
 
