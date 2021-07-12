@@ -47,7 +47,7 @@ Finally, we'll create a *home.html* file to show results.
 
 1. Close the terminal by selecting the trash can icon.
 
-    ![The kill terminal button](../media/kill-terminal.png)
+    ![The kill terminal button.](../media/kill-terminal.png)
 
 1. Select **Terminal** > **New terminal** to reopen the terminal in the virtual environment.
 

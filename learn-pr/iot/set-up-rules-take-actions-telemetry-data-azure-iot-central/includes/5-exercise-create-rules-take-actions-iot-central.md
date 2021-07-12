@@ -7,7 +7,7 @@ In this example, we'll create a rule with a single condition. Let's fire off an 
 
 1. In the IoT portal, select **Rules** in the left-hand menu, then **+ New**. Enter a meaningful name for the rule, such as "Cooling system failed". Press Enter.
 
-    [![Screenshot showing how to create a new rule](../media/rules-actions-new-rule.png)](../media/rules-actions-new-rule.png#lightbox)
+    [![Screenshot showing how to create a new rule.](../media/rules-actions-new-rule.png)](../media/rules-actions-new-rule.png#lightbox)
 
 1. Select **RefrigeratedTruck** for the device template.
 
@@ -54,7 +54,7 @@ In this section, we'll look at the time aggregation feature.
 
 1. For **Operator**. select **Is greater than or equal to**. Then enter "0" for the value, and select that as the value.
 
-    [![Screenshot showing a rule to trigger when the contents temperature spikes](../media/rules-actions-spiking-rule.png)](../media/rules-actions-spiking-rule.png#lightbox)
+    [![Screenshot showing a rule to trigger when the contents temperature spikes.](../media/rules-actions-spiking-rule.png)](../media/rules-actions-spiking-rule.png#lightbox)
 
 1. For **Actions**, fire off another email. Give the email an appropriate title and note.
 
@@ -81,7 +81,7 @@ In this rule, we're going to investigate the use of multiple conditions to fire 
     >[!NOTE]
     >If we did not add the state that the truck is _enroute_, the rule would fire all the time the truck is at base. As it is, the rule will fire at least once, though maybe a few times, before the truck leaves the specified latitude/longitude area.
 
-    [![Screenshot showing the creation of a rule to trigger when the truck leaves the base](../media/rules-actions-leaving-base.png)](../media/rules-actions-leaving-base.png#lightbox)
+    [![Screenshot showing the creation of a rule to trigger when the truck leaves the base.](../media/rules-actions-leaving-base.png)](../media/rules-actions-leaving-base.png#lightbox)
 
 1. Again, enter your email as an action, giving it an appropriate title and note.
 
@@ -99,6 +99,6 @@ An alternative way of looking at rules is to trigger them when everything is OK.
 
 1. Again, enter an appropriate email action, and click **Save**.
 
-    [![Screenshot showing the summary of the four rules](../media/rules-actions-four-rules.png)](../media/rules-actions-four-rules.png#lightbox)
+    [![Screenshot showing the summary of the four rules.](../media/rules-actions-four-rules.png)](../media/rules-actions-four-rules.png#lightbox)
 
 These rules are enough for now! Let's get the app running, and test the rules out.

@@ -23,4 +23,4 @@ When you enroll existing Configuration Manager clients in co-management, you gai
 
 In the following diagram, you can see how Windows 10 devices can be manged with both Configuration Manager and Microsoft Intune:
 
-[ ![Diagram of cloud and on-premises infrastructure](../media/intro-to-endpoint-manager-09.png) ](../media/intro-to-endpoint-manager-09.png#lightbox)
+[ ![Diagram of cloud and on-premises infrastructure.](../media/intro-to-endpoint-manager-09.png) ](../media/intro-to-endpoint-manager-09.png#lightbox)

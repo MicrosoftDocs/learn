@@ -2,13 +2,13 @@ What we have discussed so far has to do with sharing a single system component (
 
 Clearly, sharing in space allows a partition to own its resources physically. Hence, the number of partitions that can be supported in a multiprocessor system shared in space is limited to the number of available physical processors. In addition, it is often the case that each of the physical partitions is underutilized. Thus, sharing multiprocessor systems in space usually is a suboptimal solution for system utilization. Nonetheless, sharing multiprocessor systems in space has its own advantages. First, it protects each partition from the possibility of intentional or unintentional denial-of-service attacks by other partitions. Second, it does not require sophisticated algorithms for scheduling and management of resources.
 
-![A multiprocessor system shared in space](../media/sharing-in-space-multiprocessor.png)
+![A multiprocessor system shared in space.](../media/sharing-in-space-multiprocessor.png)
 
 _Figure 8: Sharing in space of a multiprocessor system_
 
 Compared to sharing in space, sharing multiprocessor systems in time makes it possible to partition an _n_-way system into a system with more than _n_ partitions (i.e., we are no longer limited by the number of available physical processors). Figure 9 demonstrates a multiprocessor system with physical resources being shared in a time-multiplexed manner. Clearly, sharing in time allows better system utilization because it is permissible for two partitions to share the resources of a single system board. This, however, comes at the cost of requiring mechanisms to provide safe and efficient ways of sharing resources. 
 
-![A multiprocessor system shared in time](../media/sharing-in-time-multiprocessor.png)
+![A multiprocessor system shared in time.](../media/sharing-in-time-multiprocessor.png)
 
 _Figure 9: Sharing in time of a multiprocessor system_
 

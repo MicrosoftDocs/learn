@@ -7,4 +7,4 @@ In this module, you learned how to:
 - Work with data types
 - Handle NULLs
 
-For more detailed information about Transact-SQL syntax, refer to the [Transact-SQL reference documentation](https://docs.microsoft.com/sql/t-sql/language-reference).
+For more detailed information about Transact-SQL syntax, refer to the [Transact-SQL reference documentation](/sql/t-sql/language-reference).

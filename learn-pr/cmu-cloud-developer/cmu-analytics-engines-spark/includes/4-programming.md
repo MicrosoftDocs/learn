@@ -61,7 +61,7 @@ for (i &lt;- 1 to ITERATIONS)
 
 In this Spark implementation of PageRank, our input dataset consists of a text file of the format `(URL, rank)`. For each iteration, a join operation on `links` and `ranks` is used to aggregate the contribution for each URL. The `contribs` RDD represents the contribution sent by each URL. These are summed up over each key (using a reduce), and this value is then updated using the PageRank formula $\frac{a}{N} + (1 - a) \sum c_{i}$. After the `ranks` RDD is updated, the process repeats again for the number of iterations specified. 
 
-![Lineage graph for the Spark PageRank example](../media/pagerank.png)
+![Lineage graph for the Spark PageRank example.](../media/pagerank.png)
 
 _Figure 6: Lineage graph for the Spark PageRank example_
 

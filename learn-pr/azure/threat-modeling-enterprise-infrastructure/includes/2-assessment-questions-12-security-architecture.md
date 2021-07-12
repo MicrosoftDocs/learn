@@ -1,6 +1,6 @@
 ## Security architecture
 
-![Security architecture category](../media/policies/security-architecture.png)
+![Security architecture category.](../media/policies/security-architecture.png)
 
 ### Why ask these questions
 

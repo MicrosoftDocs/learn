@@ -116,4 +116,4 @@ player_df.head()
 
 Now the DataFrame contains all of the player data, with a new player column that indicates whether the row of stats is for a human player or a Tune Squad player. But as you can see, you still need to impute some missing values.
 
-© 2020 Warner Bros. Ent. All Rights Reserved.
+© 2021 Warner Bros. Ent. All Rights Reserved.

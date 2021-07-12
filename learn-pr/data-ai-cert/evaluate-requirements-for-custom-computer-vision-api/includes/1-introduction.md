@@ -4,7 +4,7 @@ The Azure Custom Vision cognitive service combines artificial intelligence and m
 
 <!-- should we try to create an image that matches our scenario? -->
 
-![Screenshot showing how Custom Vision takes raw data, identifies shapes, and correlates to a specific classification](../media/1-api-header.png)
+![Screenshot showing how Custom Vision takes raw data, identifies shapes, and correlates to a specific classification.](../media/1-api-header.png)
 
 You can use these capabilities directly through the Custom Vision service web portal to create and train a model, test it for accuracy, and then use it to evaluate and apply labels to images. But this process isn't sufficient for your use case.
 

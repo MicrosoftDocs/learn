@@ -360,4 +360,4 @@ In this case, we're going to use the **Test** pane in the portal to test our fun
 
     To see that the request has been logged to Application Insights, in the left menu pane, under **Monitoring**, select **Insights**. The **Insights** pane appears for your trigger function.
 
-    ![Screenshot of the Monitor dashboard showing logging to Application Insights](../media/5-app-insights.png)
+    ![Screenshot of the Monitor dashboard showing logging to Application Insights.](../media/5-app-insights.png)

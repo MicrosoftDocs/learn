@@ -7,7 +7,7 @@ Azure Synapse SQL is a distributed query system that enables you to implement da
 
 Synapse SQL offers both serverless and dedicated resource models to work with both descriptive and diagnostic analytical scenarios. For predictable performance and cost, you can create dedicated SQL pools to reserve processing power for data stored in SQL tables. For unplanned or ad hoc workloads, you can use the always-available, serverless SQL endpoint.
  
-![Azure Synapse Analytics process](../media/azure-synapse-overview.png)
+![Azure Synapse Analytics process.](../media/azure-synapse-overview.png)
 
 ## Apache Spark pool with full support for Scala, Python, SparkSQL, and C#
 
@@ -31,7 +31,7 @@ In the case of Azure Cosmos DB, this will create an analytical data store. As da
 
 While the Azure portal will enable you to manage some aspects of the product, Azure Synapse Studio is the best place to centrally work with all the capabilities.
 
-![Azure Synapse Studio](../media/azure-synpase-studio.png)
+![Azure Synapse Studio.](../media/azure-synpase-studio.png)
 
 Azure Synapse Studio is a single web UI that enables you to:
 

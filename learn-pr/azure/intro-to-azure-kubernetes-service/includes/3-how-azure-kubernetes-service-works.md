@@ -20,7 +20,7 @@ Unless specified, the Azure service creation workflow creates a Kubernetes clust
 
 ## How workloads are developed and deployed to AKS
 
-![Image showing combined services used to accelerate development and deployment](../media/3-development-accelerate.png)
+![Image showing combined services used to accelerate development and deployment.](../media/3-development-accelerate.png)
 
 AKS supports the Docker image format that means that you can use any development environment to create a workload, package the workload as a container and deploy the container as a Kubernetes pod.
 
