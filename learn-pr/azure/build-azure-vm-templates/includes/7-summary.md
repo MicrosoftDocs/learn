@@ -25,8 +25,8 @@ Here are some resources that go into more detail on what you learned in this mod
 
 * [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates?azure-portal=true)
 * [Azure Resource Manager Visualizer](http://armviz.io?azure-portal=true)
-* [Deploy a simple Windows VM](https://azure.microsoft.com/resources/templates/101-vm-simple-windows?azure-portal=true)
-* [Deploy a simple Ubuntu Linux VM](https://azure.microsoft.com/resources/templates/101-vm-simple-linux?azure-portal=true)
+* [Deploy a simple Windows VM](https://azure.microsoft.com/resources/templates/vm-simple-windows?azure-portal=true)
+* [Deploy a simple Ubuntu Linux VM](https://azure.microsoft.com/resources/templates/vm-simple-linux?azure-portal=true)
 
 Here are some topics that we did not discuss here, but you might be interested in as you explore and build your own templates.
 
