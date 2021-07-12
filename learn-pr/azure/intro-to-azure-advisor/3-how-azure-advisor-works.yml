@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-advisor.how-azure-advisor-works
+title: How Azure Advisor works
+metadata:
+  unitType: learning-content
+  title: How Azure Advisor works
+  description: How to get proactive, actionable, personalized recommendations from Azure Advisor to help follow best practices in a cloud environment.
+  ms.date: 6/30/2021
+  author: ricmmartins
+  ms.author: ricmart
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-how-azure-advisor-works.md)]
