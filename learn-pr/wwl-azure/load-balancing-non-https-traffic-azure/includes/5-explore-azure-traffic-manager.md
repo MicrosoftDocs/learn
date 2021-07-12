@@ -47,7 +47,7 @@ To achieve this configuration, they complete the following steps:
 
 3. Configure their vanity domain name, partners.contoso.com, to point to contoso.trafficmanager.net, using a DNS CNAME record.
 
-   ![Picture 39](../media/traffic-manager-dns-configuration.png)
+   ![Diagram illustrating Contoso's DNS configuration of Traffic Manager](../media/traffic-manager-dns-configuration.png)
 
 ### Traffic Manager example client usage
 
@@ -101,25 +101,25 @@ The following traffic routing methods are available in Traffic Manager:
 
 This is an example of the **Priority** routing method.
 
-​	![Picture 52](../media/routingmethod-priority.png)
+​	![Diagram illustrating the 'Priority' routing method](../media/routingmethod-priority.png)
 
 For more information, see [Priority traffic-routing method](/azure/traffic-manager/traffic-manager-routing-methods). 
 
 This is an example of the **Weighted** routing method.
 
-​	![Picture 43](../media/routingmethod-weighted.png)
+​	![Diagram illustrating the 'Weighted' routing method](../media/routingmethod-weighted.png)
 
 For more information, see [Weighted traffic-routing method](/azure/traffic-manager/traffic-manager-routing-methods).
 
 This is an example of the **Performance** routing method.
 
-​	![Picture 44](../media/routingmethod-performance.png)
+​	![Diagram illustrating the 'Performance' routing method](../media/routingmethod-performance.png)
 
 For more information, see [Performance traffic-routing method](/azure/traffic-manager/traffic-manager-routing-methods).
 
 This is an example of the **Geographic** routing method.
 
-​	![Picture 45](../media/routingmethod-geographic.png)
+​	![Diagram illustrating the 'Geographic' routing method](../media/routingmethod-geographic.png)
 
 For more information, see [Geographic traffic-routing method](/azure/traffic-manager/traffic-manager-routing-methods).
 
@@ -139,7 +139,7 @@ The example and diagrams below illustrate the combining of the **Performance** a
 
 Suppose that you deployed an application in the following Azure regions: West US, West Europe, and East Asia. You use the **Performance** traffic-routing method to distribute traffic to the region closest to the user.
 
-​	![Picture 46](../media/nested-traffic-manager-profiles-1.png)
+​	![Diagram illustrating nested Traffic Manager profiles using the Performance routing method](../media/nested-traffic-manager-profiles-1.png)
 
 But what if you wanted to test an update to your service before rolling it out more widely, and you wanted to use the **Weighted** traffic-routing method to direct a small percentage of traffic to your test deployment? 
 
@@ -149,7 +149,7 @@ As you just learned, you cannot combine both the **Weighted** and **Performance*
 
 The diagram below illustrates this example scenario:
 
-​	![Picture 47](../media/nested-traffic-manager-profiles-2.png)
+​	![Diagram illustrating nested Traffic Manager profiles using both the Performance and Weighted routing methods](../media/nested-traffic-manager-profiles-2.png)
 
 With the above configuration, traffic directed via the parent profile (using the **Performance** routing method) distributes traffic across regions normally. While, within West Europe, the nested child profile (using the **Weighted** routing method) distributes traffic to the production and test endpoints according to the weights assigned.
 
@@ -181,11 +181,11 @@ This example shows how to create and configure a new Traffic Manager profile to 
 
 From the Azure portal home page, select **Create a resource**. In the search box, query for 'Traffic Manager profile', and then click **Traffic Manager profile**.
 
-​	![Picture 48](../media/create-traffic-manager-profile-1.png)
+​	![Selecting 'Traffic Manager profile' from the 'Create a resource' page](../media/create-traffic-manager-profile-1.png)
 
 Click **Create**.
 
-​	![Picture 49](../media/create-traffic-manager-profile-2.png)
+​	![Create Traffic Manager profile](../media/create-traffic-manager-profile-2.png)
 
 You need to enter the following information on the **Create Traffic Manager profile** page.
 
@@ -202,17 +202,17 @@ You need to enter the following information on the **Create Traffic Manager prof
 
 Click **Create** to create the profile.
 
-​	![Picture 50](../media/create-traffic-manager-profile-3.png)
+​	![Create Traffic Manager profile - Create](../media/create-traffic-manager-profile-3.png)
 
 The next step is to add endpoints to the Traffic Manager profile.
 
 From the Azure portal home page, select **All resources**, then select the Traffic Manager profile from the list.
 
-​	![Picture 51](../media/add-traffic-manager-endpoints-1.png)
+​	![Select the Traffic Manager profile from the list of resources](../media/add-traffic-manager-endpoints-1.png)
 
 On the Traffic manager profile page, under **Settings**, select **Endpoints**, then click **Add**.
 
-​	![Picture 53](E:/July 21/01-07/Mod 04/Converted_Output/media/add-traffic-manager-endpoints-2.png)
+​	![Traffic Manager profile - Endpoints - Add](E:/July 21/01-07/Mod 04/Converted_Output/media/add-traffic-manager-endpoints-2.png)
 
 You then enter the required information on the **Add endpoint** page.
 
@@ -231,19 +231,19 @@ You then enter the required information on the **Add endpoint** page.
 
 Click **Add** to add the endpoint to the Traffic Manager profile.
 
-​	![Picture 54](../media/add-traffic-manager-endpoints-3.png)
+​	![Add endpoint - Add](../media/add-traffic-manager-endpoints-3.png)
 
 If you are adding a failover endpoint for another Azure region, then you would add another endpoint for that region. This would point to the application target resource in the other region and would have a priority setting of **2**.
 
-​	![Picture 55](../media/add-traffic-manager-endpoints-4.png)
+​	![Add failover endpoint - Add](../media/add-traffic-manager-endpoints-4.png)
 
 When you add endpoints to a Traffic Manager profile, their status will be checked. 
 
-​	![Picture 56](../media/add-traffic-manager-endpoints-5.png)
+​	![View list of endpoints in Traffic Manager profile](../media/add-traffic-manager-endpoints-5.png)
 
 Once they have been checked their **Monitor status** changes to Online.
 
-​	![Picture 57](../media/add-traffic-manager-endpoints-6.png)
+​	![View list of endpoints in Traffic Manager profile - 'Monitoring status' highlighted](../media/add-traffic-manager-endpoints-6.png)
 
 ## Configuring Endpoint Monitoring
 
@@ -269,7 +269,7 @@ Then, under the **Endpoint monitor settings** section, you specify the following
 
 Click **Save** when you have finished endpoint monitor configuration.
 
-​	![Picture 58](../media/configure-endpoint-monitoring-1.png)
+​	![Traffic Manager - Endpoint configuration - Save](../media/configure-endpoint-monitoring-1.png)
 
 ### How endpoint monitoring works
 

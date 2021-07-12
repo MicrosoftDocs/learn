@@ -56,7 +56,7 @@ When choosing an appropriate load balancing option, there are some key factors t
 
 The flowchart below will help you to select the most appropriate load-balancing solution for your application, by guiding you through a set of key decision criteria in order to reach a recommendation.
 
-![Picture 2](../media/load-balancing-decision-tree.png)
+![flow chart to help select a load-balancing solution for your application](../media/load-balancing-decision-tree.png)
 
 **As every application will have its own unique requirements, you should only use this flowchart and the suggested recommendation as a starting point, and then perform a more detailed evaluation yourself in order to select the best option for your environment.**
 
@@ -69,13 +69,13 @@ You can use the **Azure Load Balancing** page in the Azure portal to help you gu
 - Sign into the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
 
 - In the search box at the top of the page, type load balancing. When **Load balancing - help me choose (Preview)** appears in the search results, click it.
-  ![Picture 5](../media/choosing-load-balancing-service-1.png)
+  ![Azure portal screenshot of Load balancing - help me choose](../media/choosing-load-balancing-service-1.png)
 
 - Answer the Yes or No questions on this page to get a recommended solution. Note, that the final recommended solution may be a combination of multiple load balancing services.
-  ![Picture 6](../media/choosing-load-balancing-service-2.png)
+  ![Azure portal screenshot load balancing help me choose](../media/choosing-load-balancing-service-2.png)
 
 - Depending on what answers you give, the list of potential load balancing services will change.
-  ![Picture 7](../media/choosing-load-balancing-service-3.png)
+  ![Azure portal screenshot Load balancing help me choose](../media/choosing-load-balancing-service-3.png)
 
 - Optionally, you can also click the **Service comparison** or **Tutorial** tabs for more information and training on the different load balancing services.
 

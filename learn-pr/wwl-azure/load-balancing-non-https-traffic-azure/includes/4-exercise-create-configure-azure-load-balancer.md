@@ -6,7 +6,7 @@ The steps to create an internal load balancer, are very similar to those you hav
 
 The diagram below illustrates the environment you will be deploying in this exercise.
 
-![Picture 15](../media/exercise-internal-standard-load-balancer-environment-diagram.png)
+![Diagram illustrating the load balancer architecture that will be created in the exercise - includes load balancer, VNet, subnet, Bastionsubnet, and VMs](../media/exercise-internal-standard-load-balancer-environment-diagram.png)
 
  
 
@@ -20,7 +20,7 @@ In this section, you will create a virtual network and a subnet.
 
 3. Click **Create**.
 
-![Picture 2](../media/create-virtual-network-1.png)
+![Create virtual network](../media/create-virtual-network-1.png)
 
 4. On the **Basics** tab, use the information in the table below to create the virtual network.
 
@@ -68,7 +68,7 @@ In this section, you will create an internal Standard SKU load balancer. The rea
 3. Scroll down to the bottom of the page and select **Load Balancer** (the one that says 'Microsoft' and 'Azure Service' under the name).
 
 4. Click **Create**.
-   ![Picture 3](../media/create-load-balancer-4.png)
+   ![Create Load Balancer](../media/create-load-balancer-4.png)
 
 5. On the **Basics** tab, use the information in the table below to create the load balancer.
 
@@ -111,7 +111,7 @@ The backend address pool contains the IP addresses of the virtual NICs connected
 
 
 4. Click **Add**.
-   ![Picture 4](../media/create-backendpool.png)
+   ![Show backend pool created in load balancer](../media/create-backendpool.png)
 
  
 
@@ -134,7 +134,7 @@ The load balancer monitors the status of your app with a health probe. The healt
 
 
 3. Click **Add**.
-   ![Picture 5](../media/create-healthprobe.png)
+   ![Show health probe created in load balancer](../media/create-healthprobe.png)
 
  
 
@@ -162,7 +162,7 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
 
 
 3. Click **Add**.
-   ![Picture 6](../media/create-loadbalancerrule.png)
+   ![Show load balancing rule created in load balancer](../media/create-loadbalancerrule.png)
 
  
 
@@ -246,7 +246,7 @@ In this section, you will create three VMs (myVM1, myVM2, myVM3). When creating 
 5. Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**), then click **Add**.
 
 6. On the **myBackendPool** page, click **Save**.
-   ![Picture 7](../media/add-vms-backendpool.png)
+   ![Show VMs added to backend pool in load balancer](../media/add-vms-backendpool.png)
 
  
 
@@ -347,25 +347,25 @@ In this section, you will create a test VM, and then test the load balancer.
 11. Enter (or paste) the **Private IP address** (e.g. 10.1.0.4) from the previous step into the address bar of the browser and press Enter.
 
 12. The default web home page of the IIS Web server is displayed in the browser window. One of the three virtual machines in the backend pool will respond.
-    ![Picture 8](../media/load-balancer-web-test-1.png)
+    ![Browser window showing Hello World response from VM1](../media/load-balancer-web-test-1.png)
 
 13. If you click the refresh button in the browser a few times, you will see that the response comes randomly from the different VMs in the backend pool of the internal load balancer.
-    ![Picture 9](../media/load-balancer-web-test-2.png)
+    !Browser window showing Hello World response from VM3](../media/load-balancer-web-test-2.png)
 
 ### Clean up the Azure exercise environment
 
 After you complete this exercise, and if you no longer need the resources, delete the resource group, load balancer, and all their related resources. The easiest way to do this is to delete the resource group, which deletes all its resources too.
 
 1. On the Azure portal home page, click **Resource groups**.
-   ![Picture 10](../media/delete-resource-group-1.png)
+   ![Select 'Resource groups' tile in Azure portal home page](../media/delete-resource-group-1.png)
 
 2. In the list of resource groups, click on the name of the **IntLB-RG** resource group.
-   ![Picture 11](../media/delete-resource-group-2.png)
+   ![Select the load balancer resource group from the list of resource groups](../media/delete-resource-group-2.png)
 
 3. On the **IntLB-RG** resource group page, in the menu, click **Delete resource group**.
 
-   ![Picture 12](../media/delete-resource-group-3.png)
+   ![On the load balancer resource group page, with 'Delete resource group' highlighted](../media/delete-resource-group-3.png)
 
 4. In the warning pane that opens, type the name of the resource group into the text box, and then click **Delete**. (The delete button will only become available once you have successfully typed in the full name of the resource group.)
 
-   ![Picture 13](../media/delete-resource-group-4.png)
+   ![Confirmation pane for deleting a resource group](../media/delete-resource-group-4.png)
