@@ -12,7 +12,7 @@ Microsoft gives you the ability to manage purchases by your users through your b
 
 - **No**: users won’t be able to deploy software from Azure Marketplace
 
-:::image type="content" source="../media/15-on-off-big.png" alt-text="Screenshot of Azure Marketplace on/off/free toggle in the Azure portal":::
+:::image type="content" source="../media/15-on-off-big.png" alt-text="Screenshot of Azure Marketplace on/off/free toggle in the Azure portal.":::
 
 These settings apply to all users with access to your Azure subscription, giving you the capability to control software procurement through the Azure portal.
 
@@ -39,7 +39,7 @@ As you purchase products from Azure Marketplace, you want to get insights that w
 
 You can view your Azure Marketplace charges and invoices on the cost analysis tool under Azure Cost Management.
 
-:::image type="content" source="../media/16-cost-management-big.png" alt-text="Screenshot of Azure Cost Management with Azure Marketplace invoice from the Azure portal":::
+:::image type="content" source="../media/16-cost-management-big.png" alt-text="Screenshot of Azure Cost Management with Azure Marketplace invoice from the Azure portal.":::
 
 ## Private Azure Marketplace
 
@@ -53,11 +53,11 @@ With Private Azure Marketplace, you can create a catalog of products from approv
 
 Click on the Private Marketplace link in Azure Marketplace inside the Azure portal to begin the configuration process. The Private Azure Marketplace admin must be assigned the Marketplace Admin role by the tenant global admin.
 
-:::image type="content" source="../media/22-azure-private-marketplace-home.png" alt-text="Screenshot of the Private Azure Marketplace homepage in the Azure portal":::
+:::image type="content" source="../media/22-azure-private-marketplace-home.png" alt-text="Screenshot of the Private Azure Marketplace homepage in the Azure portal.":::
 
 To add approved products to your Private Azure Marketplace, browse the product catalog by using the product filters at the top of the page. You can also use the search field to find the product you want to add to your approved catalog. To add a product, check the box on the top-right corner of the product tile. When finished, click ‘done’.
 
-:::image type="content" source="../media/17-private-marketplace-build.png" alt-text="Screenshot of the Private Azure Marketplace product selection in the Azure portal":::
+:::image type="content" source="../media/17-private-marketplace-build.png" alt-text="Screenshot of the Private Azure Marketplace product selection in the Azure portal.":::
 
 ### Managing purchases for specific product plans
 
@@ -73,7 +73,7 @@ As you add products to your catalog, you can select the approved plans under eac
 
 - **Select specific plans:** choose the specific plan or subset of plans you want users to purchase.
 
-:::image type="content" source="../media/18-private-marketplace-build-detail.png" alt-text="Screenshot of the Private Azure Marketplace selection process in the Azure portal":::
+:::image type="content" source="../media/18-private-marketplace-build-detail.png" alt-text="Screenshot of the Private Azure Marketplace selection process in the Azure portal.":::
 
 ### Purchasing approved products
 
@@ -81,11 +81,11 @@ When you access your Private Azure Marketplace, users are alerted that a Private
 
 Once you have selected the set of products from your company’s approved software vendors, all users browsing in the Private Marketplace experience will see whether a product is approved for purchase. Approved products are marked with the ‘approved’ badge on the product tile card. Microsoft products will always be approved for purchase.
 
-:::image type="content" source="../media/19-private-marketplace-approved-big.png" alt-text="Screenshot of approved products and services in the Azure portal":::
+:::image type="content" source="../media/19-private-marketplace-approved-big.png" alt-text="Screenshot of approved products and services in the Azure portal.":::
 
 The administrator of your Private Azure Marketplace will have the flexibility to select the products and associated plans that users can purchase. When a user tries to purchase an approved product, they'll see the plans the administrator has made available when viewing the plans and pricing for the product.
 
-:::image type="content" source="../media/20-approved-plan-detail.png" alt-text="Screenshot of product plans on the plans and pricing page of a product in the Azure Marketplace experience in the Azure portal":::
+:::image type="content" source="../media/20-approved-plan-detail.png" alt-text="Screenshot of product plans on the plans and pricing page of a product in the Azure Marketplace experience in the Azure portal.":::
 
 Users won't be able to purchase a plan that has not been approved by their Private Azure Marketplace administrator.
 

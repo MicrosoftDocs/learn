@@ -4,7 +4,7 @@ Here, you'll discover why you should use Azure Active Directory B2C (Azure AD B2
 
 ## Why should you use Azure Active Directory B2C?
 
-![Azure AD B2C overview](../media/2-azureadb2c-overview.png)
+![Azure AD B2C overview.](../media/2-azureadb2c-overview.png)
 
 Azure AD B2C is a service that you use to manage customer identities and their access to your applications. The service can support millions of users. Use Azure AD B2C to securely authenticate your customers by using their preferred identity providers. Azure AD B2C can handle billions of authentications per day. Use the service to monitor for, and automatically take care of, threats like brute-force and denial-of-service attacks. Azure AD B2C integrates with other services, such as Application Insights. Use this integration to improve your application's security and user experience.
 
@@ -22,11 +22,11 @@ You can reuse the same user flows across different applications. Then you'll hav
 
 Here's where you create a user flow:
 
-![Create a user flow](../media/2-userflow.png)
+![Create a user flow.](../media/2-userflow.png)
 
 There are different types of user flows, such as for profile editing or password reset. For example, a sign-up and sign-in user flow defines the steps and pages required to access your application. The user flow might have steps like this:
 
-![Sign-in user flow](../media/2-signin-user-flow.png)
+![Sign-in user flow.](../media/2-signin-user-flow.png)
 
 First, the user goes to your application, perhaps on their computer's internet browser or their mobile device. The user is presented with a sign-in form for authentication, and enters their account credentials in the form. If you've enabled multi-factor authentication for your user flow, the user is then prompted to enter a code that they receive on their mobile device. The code is verified and, if it succeeds, the user is forwarded to your application.
 
@@ -38,7 +38,7 @@ Use identity providers to let users sign in by using their social identities, su
 
 You'll need to choose the identity providers that you want for your application. You can create your own identity provider, or choose from the list.
 
-![List of identity providers](../media/2-identity-providers.png)
+![List of identity providers.](../media/2-identity-providers.png)
 
 ### Customize your user interface
 
@@ -46,7 +46,7 @@ You can change the look of the pages in your user flow. Write your own HTML and 
 
 You enable different page layout templates in the Azure portal. Go to your user flow and select the template you want, as shown in the following screenshot. The template will be applied automatically.
 
-![Set a page-layout template](../media/2-set-template.png)
+![Set a page-layout template.](../media/2-set-template.png)
 
 For example, if you choose **Ocean Blue**, that template will be applied to your user flow. When a user goes to your application, they'll see that the layout has changed as shown in the following example. Take advantage of templates to customize the user experience.
 

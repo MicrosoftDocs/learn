@@ -2,7 +2,7 @@ OpenStack Swift is an object storage service that is part of the OpenStack cloud
 
 ### Swift data model and APIs
 
-![Swift data model](../media/swift-api.png)
+![Swift data model.](../media/swift-api.png)
 
 _Figure 11: Swift data model_
 
@@ -22,7 +22,7 @@ Swift uses a multi-tiered architecture in the interest of performance, fault-tol
 
 The different components of the Swift architecture are as follows:
 
-![Swift cluster architecture](../media/swift-architecture.png)
+![Swift cluster architecture.](../media/swift-architecture.png)
 
 _Figure 12: Swift cluster architecture_
 

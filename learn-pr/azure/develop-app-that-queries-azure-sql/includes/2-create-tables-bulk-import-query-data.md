@@ -62,11 +62,11 @@ CREATE INDEX cci ON MyTable2(AnotherColumn3);
 
 To access the query editor in the Azure portal, go to the page for your database and select **Query editor**. You'll be prompted for credentials. You can set the **Authorization type** to **SQL Server authentication** and enter the user name and password that you set up when you created the database. Or you can select **Active Directory password authentication** and provide the credentials of an authorized user in Azure AD. If Active Directory single sign-on is enabled, you can connect by using your Azure identity.
 
-![The SQL Database sign-in page in the Azure portal](../media/2-sign-in-annotated.png)
+![The SQL Database sign-in page in the Azure portal.](../media/2-sign-in-annotated.png)
 
 You enter your SQL code in the query pane and then click **Run** to execute it. If the SQL statement is a query, any rows that are returned appear in the **Results** pane. The **Messages** pane displays information like the number of rows returned or any errors that occurred:
 
-![The query editor in the Azure portal with the various panes highlighted](../media/2-query-editor-annotated.png)
+![The query editor in the Azure portal with the various panes highlighted.](../media/2-query-editor-annotated.png)
 
 To use the `sqlcmd` utility, go to Cloud Shell and run the following command. Replace `<server>` with the name of the database server that you created, `<database>` with the name of your database, and `<user name>` and `<password>` with your credentials.
 

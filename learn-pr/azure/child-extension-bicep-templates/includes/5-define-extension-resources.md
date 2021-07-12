@@ -28,7 +28,7 @@ resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2020-04-01' = {
 
 Let's add a resource lock, which will prevent anybody from deleting the Azure Cosmos DB account:
 
-:::code language="plaintext" source="code/5-scope.bicep" highlight="2":::
+:::code language="bicep" source="code/5-scope.bicep" highlight="2":::
 
 Notice that the example uses the `scope` property with the Azure Cosmos DB account's symbolic name. This tells Bicep to deploy the resource lock onto the Azure Cosmos DB account, which means that it can no longer be deleted.
 

@@ -20,7 +20,7 @@ At compile time, each Razor component is built into a .NET class. The class incl
 
 In the running app, navigate to the Counter page by clicking the Counter tab in the sidebar on the left. The following page should then be displayed. 
 
-![Counter Screenshot](../media/counter.png)
+![Counter Screenshot.](../media/counter.png)
 
 Select the **Click me** button to increment the count without a page refresh. Incrementing a counter in a webpage normally requires writing JavaScript, but with Blazor you can use C#.
 

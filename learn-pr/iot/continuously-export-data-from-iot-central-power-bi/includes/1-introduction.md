@@ -33,11 +33,11 @@ In this module you will:
 
 You've already built an Azure IoT Central app to monitor and control a simulated refrigerated truck. In this module, you make the process more realistic by archiving the telemetry data and enabling remote viewing of the data.
 
-[![Image of the finished app, showing a truck en route in the Azure IoT Central dashboard](../media/refrigerated-trucks-intro-map.png)](../media/refrigerated-trucks-intro-map.png#lightbox)
+[![Image of the finished app, showing a truck en route in the Azure IoT Central dashboard.](../media/refrigerated-trucks-intro-map.png)](../media/refrigerated-trucks-intro-map.png#lightbox)
 
 In this module, you use supplied components to construct the app that displays the data in the preceding image. You then add data export, so that the temperature of the truck contents is archived and viewable on your mobile device, as shown here:
 
-[![Image of a Power BI dashboard on a mobile phone](../media/continuous-data-phone-view-1.png)](../media/continuous-data-phone-view-1.png#lightbox)
+[![Image of a Power BI dashboard on a mobile phone.](../media/continuous-data-phone-view-1.png)](../media/continuous-data-phone-view-1.png#lightbox)
 
 ## Create a custom Azure IoT Central app
 
@@ -48,7 +48,7 @@ In this module, you use supplied components to construct the app that displays t
 
 1. Select **Custom application**, and then configure the app as shown in the following image:
 
-    [![Screenshot showing how to configure the new Azure IoT Central app](../media/refrigerated-trucks-new-app.png)](../media/refrigerated-trucks-new-app.png#lightbox)
+    [![Screenshot showing how to configure the new Azure IoT Central app.](../media/refrigerated-trucks-new-app.png)](../media/refrigerated-trucks-new-app.png#lightbox)
  
     a. In the **Application name** box, enter a friendly name for the app.  
     b. In the **URL** box, enter a few words to include in the URL that describe the app.

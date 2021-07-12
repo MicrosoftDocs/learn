@@ -18,7 +18,7 @@ There's both a UWP and WPF version of Adaptive Cards, so select your preference.
 
 With Visual Studio 17 open, create a WPF C# project. Give the project a meaningful name, like **AdaptiveCards_WPF**.
 
-![Creating the project](../media/wpf-cards-create-the-project.png)
+![Creating the project.](../media/wpf-cards-create-the-project.png)
 
 ### Install the required packages
 
@@ -32,21 +32,21 @@ With Visual Studio 17 open, create a WPF C# project. Give the project a meaningf
    - `AdaptiveCards.Rendering.Wpf`
    - `AdaptiveCards.Rendering.Wpf.Xceed`
 
-   ![Bringing up the NuGet manager](../media/wpf-cards-nuget.png)
+   ![Bringing up the NuGet manager.](../media/wpf-cards-nuget.png)
 
 1. Validate the installation by checking the **Installed** page. You should see the three packages listed, as shown in the following image:
 
-   ![The installed packages](../media/wpf-cards-packages.png)
+   ![The installed packages.](../media/wpf-cards-packages.png)
 
 ### Build the UI
 
 The UI for this sample is simple: one `Frame` and one `TextBox`. This section shows how to add these two components to our XAML definition. A layout with a frame above a text box is what we want, like the one shown in the following image:
 
-![Laying out the UI](../media/wpf-cards-layout.png)
+![Laying out the UI.](../media/wpf-cards-layout.png)
 
 1. Open the *MainWindow.xaml* file and then open **All WPF Controls**. Before dragging over any UI elements, expand the size of the main window by editing the XAML itself. Search for `Title="MainWindow"`, and then give the window a width of 1200 and a height of 750.
 
-   ![Sizing the main window](../media/wpf-cards-xaml1.png)
+   ![Sizing the main window.](../media/wpf-cards-xaml1.png)
 
 1. Now we'll place a `Frame` element at the top of the window. In the **Properties** pane for the frame:
 
@@ -54,7 +54,7 @@ The UI for this sample is simple: one `Frame` and one `TextBox`. This section sh
    1. Open the **Brush** category, and set **BorderBrush** to a solid color.
    1. In the **Appearance** category, set **BorderThickness** to **1**.
 
-   ![Setting the Frame element's border](../media/wpf-cards-frame-properties1.png)
+   ![Setting the Frame element's border.](../media/wpf-cards-frame-properties1.png)
 
 1. In the **Layout** category, set **Width** to **1100** and **Height** to **500**.
 
@@ -65,11 +65,11 @@ The UI for this sample is simple: one `Frame` and one `TextBox`. This section sh
     1. Set the **Width** property of the text box to **1100** to match the frame width.
     1. Set **Height** to **140** to accommodate at least 7 lines of text.
 
-   ![Setting the TextBox element's appearance](../media/wpf-cards-textbox-properties1.png)
+   ![Setting the TextBox element's appearance.](../media/wpf-cards-textbox-properties1.png)
 
 1. In the **Text** category, set the font to a monospaced font, like **Courier New**, and set the size to **14 px**. Because the text box is for output only, select the **IsReadOnly** check box. A monospaced font makes it easy to align columns of text in a table format.
 
-   ![Setting the TextBox font](../media/wpf-cards-textbox-properties2.png)
+   ![Setting the TextBox font.](../media/wpf-cards-textbox-properties2.png)
 
 1. As a first test of the app, go to the **Debug** menu and select **Start Without Debugging**. Do you get an aligned layout with the frame above the text box, like the one shown at the start of this section? If not, align the elements as needed.
 
@@ -185,7 +185,7 @@ We'll build and test our Adaptive Card in stages. Our card will have four column
 
 1. Many of the critical elements of Adaptive Cards are now in place, so let's test what we have so far. On the **Debug** menu, select **Start Without Debugging** and examine the output. Does your running app look like the following image?
 
-   ![First test of the main card](../media/wpf-cards-test1.png)
+   ![First test of the main card.](../media/wpf-cards-test1.png)
 
 1. If the card doesn't render correctly, go back and check the code and UI steps carefully. If all is good, close the app, and let's write some more code.
 
@@ -311,7 +311,7 @@ Our card will have four columns. The first one will demonstrate all the options 
 
    Note how you get a calendar for setting the date and can select times from a list. These friendlier user-input options are available because we added the `Xceed` package during the setup of this project. Without this package, the date and time input options are regular text boxes.
 
-   ![First test of the input column](../media/wpf-cards-test-inputs.png)
+   ![First test of the input column.](../media/wpf-cards-test-inputs.png)
 
    Also observe how the input column expands to fill the whole card. This behavior will change when we add our image-action columns.
 
@@ -460,7 +460,7 @@ Three actions are available to Adaptive Cards: an action that opens a URL, a sub
 
 1. If you run the program now, you should see the four columns nicely rendered, and the images should be highlighted if you move the cursor over them. However, nothing will happen when you click the images. We still need to add that event handler.
 
-    ![First test of the actions](../media/wpf-cards-test-images.png)
+    ![First test of the actions.](../media/wpf-cards-test-images.png)
 
 1. Add the following `CardActionHandler` method to handle the three actions. The *Open URL* action does just that; it opens the URL provided by the action as a separate process. The *Submit* action lists the selected user input as a table in the text box, and the *Show Card* action renders the card referenced in that action.
 
@@ -515,7 +515,7 @@ Three actions are available to Adaptive Cards: an action that opens a URL, a sub
 
 1. Set some dates, times, and other inputs, and then click the *Submit* action each time. Note how the input is picked up in our table.
 
-   ![Test of the Submit action](../media/wpf-cards-test-submit.png)
+   ![Test of the Submit action.](../media/wpf-cards-test-submit.png)
 
    Navigation between the two cards is also now available through the arrows shown in the upper-left corner of the `Frame` element.
 
@@ -527,7 +527,7 @@ Three actions are available to Adaptive Cards: an action that opens a URL, a sub
 
 With Visual Studio 17 open, create a UWP C# project. Give the project a meaningful name, like **AdaptiveCards_UWP**.
 
-![Creating the project](../media/uwp-cards-create-the-project.png)
+![Creating the project.](../media/uwp-cards-create-the-project.png)
 
 ### Install the required packages
 
@@ -535,13 +535,13 @@ With Visual Studio 17 open, create a UWP C# project. Give the project a meaningf
 1. Select **Browse** to open the list of available packages.
 1. In the search box, type **AdaptiveCards**, and then go through the process of installing the one package: `AdaptiveCards.Rendering.Uwp`. 
 
-   ![Bringing up the NuGet manager](../media/uwp-cards-nuget.png)
+   ![Bringing up the NuGet manager.](../media/uwp-cards-nuget.png)
 
 ### Build the UI
 
 The UI for this sample is simple: one `Frame` and one `TextBox`. In this section, we'll add these two components to our XAML definition. A layout like the following is what we want:
 
-![Laying out the UI](../media/uwp-cards-layout.png)
+![Laying out the UI.](../media/uwp-cards-layout.png)
 
 1. Open the *MainWPage.xaml* file, and then open **All XAML Controls**. Place a `Frame` element at the top of the window. In the **Properties** pane for the frame:
 
@@ -549,7 +549,7 @@ The UI for this sample is simple: one `Frame` and one `TextBox`. In this section
     2. Open the **Brush** category, and set **BorderBrush** to a solid color.
     3. In the **Appearance** category, set **BorderThickness** to **1**.
 
-   ![Setting the Frame border](../media/uwp-cards-frame-properties1.png)
+   ![Setting the Frame border.](../media/uwp-cards-frame-properties1.png)
 
 1. In the **Layout** category, set **Width** to **1350** and **Height** to **500**.
 
@@ -560,11 +560,11 @@ The UI for this sample is simple: one `Frame` and one `TextBox`. In this section
    1. Set **Width** to **1350** to match the frame width.
    1. Set **Height** to **140** to accommodate at least 7 lines of text.
 
-   ![Setting the TextBox appearance](../media/uwp-cards-textbox-properties1.png)
+   ![Setting the TextBox appearance.](../media/uwp-cards-textbox-properties1.png)
 
 1. In the **Text** category, set the font to a monospaced font, like **Courier New**, and set the size to **14 px**. Because the text box is for output only, select the **IsReadOnly** check box. A monospaced font makes it easy to align columns of text in a table format.
 
-   ![Setting the TextBox font](../media/uwp-cards-textbox-properties2.png)
+   ![Setting the TextBox font.](../media/uwp-cards-textbox-properties2.png)
 
 1. As a first test of the app, go to the **Debug** menu and select **Start Without Debugging**. Do you get an aligned layout with the frame above the text box, like the one shown at the start of this section? If not, align the elements as needed.
 
@@ -690,7 +690,7 @@ We'll build and test our Adaptive Card in stages. Our card will have four column
 
 1. Many of the critical elements of Adaptive Cards are now in place, so let's test what we have so far. On the **Debug** menu, select **Start Without Debugging** and examine the output. Does your running app look like the following image?
 
-    ![First test of the main card](../media/uwp-cards-test1.png)
+    ![First test of the main card.](../media/uwp-cards-test1.png)
 
 1. If the card doesn't render correctly, go back and check the code and UI steps carefully. If all is good, close the app, and let's write some more code.
 
@@ -803,7 +803,7 @@ Our card will have four columns. The first one will demonstrate all the options 
 
 1. Run the program again. If all goes well, you should be able to select a date, enter a number, enter some text, choose a time, and select some check boxes. When you set these inputs, nothing happens beyond the changes in the UI because we haven't yet added any actions.
 
-   ![First test of the input column](../media/uwp-cards-test-inputs.png)
+   ![First test of the input column.](../media/uwp-cards-test-inputs.png)
 
 ### Add code to render the image columns
 
@@ -943,7 +943,7 @@ Three actions are available to Adaptive Cards: an action that opens a URL, a sub
 
 1. If you run the program now, you should see the four columns nicely rendered, and the images should be highlighted if you move the cursor over them. However, nothing will happen when you click the images. We still need to add that event handler.
 
-   ![First test of the actions](../media/uwp-cards-test-images.png)
+   ![First test of the actions.](../media/uwp-cards-test-images.png)
 
 1. Add the following `CardActionHandler` method to handle the three actions. The *Open URL* action does just that; it opens the URL provided by the action as a separate process. The *Submit* action lists the selected user input as a table in the text box, and the *Show Card* action renders the card referenced in that action.
 
@@ -998,7 +998,7 @@ Three actions are available to Adaptive Cards: an action that opens a URL, a sub
 
 1. Set some dates, times, and other inputs, and then click the *Submit* action each time. Note how the input is picked up in our table.
 
-   ![Test of the submit action](../media/uwp-cards-test-submit.png)
+   ![Test of the submit action.](../media/uwp-cards-test-submit.png)
 
 ::: zone-end
 

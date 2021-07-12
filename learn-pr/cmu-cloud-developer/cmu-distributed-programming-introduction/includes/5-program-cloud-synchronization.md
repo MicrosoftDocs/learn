@@ -1,6 +1,6 @@
 The following figure shows the bulk synchronous parallel (BSP) model:
 
-![The bulk synchronous parallel (BSP) model](../media/bulk-synchronous-parallel-model.png)
+![The bulk synchronous parallel (BSP) model.](../media/bulk-synchronous-parallel-model.png)
 
 _Figure 8: The bulk synchronous parallel model_
 

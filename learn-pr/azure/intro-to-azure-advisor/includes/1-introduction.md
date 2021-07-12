@@ -1,23 +1,23 @@
-In a cloud environment is easy to create resources, explore features and try everything. In the same way becomes easy to create environments without taking consideration of some important best practices.
+In a cloud environment, it is easy to create resources, explore features and try everything that is offered. In the same way, it becomes easy to create these environments without taking into consideration some important best practices.
 
-So how to track your environment and ensure cloud usage with correct approach over some pillars like cost effectiveness, security, reliability, operational excellence, and performance?
+So how can you track your environment and ensure your cloud usage employs a correct approach over major pillars like cost effectiveness, security, reliability, operational excellence, and performance?
 
-To address this, Azure Advisor will give to you proactive, actionable, personalized recommendations to help you follow best practices over those five pillars of cloud usage.
+To address this, Azure Advisor is a tool that can give you proactive, actionable, personalized recommendations that help you follow best practices over the previously listed pillars of cloud usage.
 
-![A screenshot of the Azure portal displaying the entry representing Azure Advisor.](../media/1-intro-advisor.png)
+:::image type="content" source="../media/1-intro-advisor.png" alt-text="A screenshot of the Azure portal displaying the entry representing Azure Advisor.":::
 
 ## Example scenario
 
-You are running a critical workload composed by different types of IaaS resources such as virtual machines and database servers plus PaaS resources like storage account, bastion host, dns, application gateway. The following illustration shows this architecture:
+Assume that you are running a critical workload composed by different types of Infrastructure as a Service (IaaS) resources. The resources may include virtual machines and/or database servers. You may also have Platform as a Service (PaaS) resources like storage accounts, bastion hosts, DNS, or application gateways. The following illustration shows an example of this architecture:
 
-![A draw of an Azure reference architecture.](../media/1-arch-iaas.png)
+:::image type="content" source="../media/1-arch-iaas.png" alt-text="A graphic representing an Azure reference architecture that includes DNS, a virtual network hosting a web tier, application gateway, and data tier, along with a storage account.":::
 
 ## What will we be doing?
 
-As you are running a workload running a mixed set of resources, ensure you are using the best approach of usage for each one isn't an easy task. It will require deep knowledge on the most diverse type of resources, besides a good cloud skills expertise in order to have it done by a person.
+As you are running a workload consisting of a mixed set of resources, you want to ensure that you are using the best approach around performance and cost. The tasks aren't always easy. It will require deep knowledge on the most diverse type of resources, coupled with good cloud skills expertise.
 
-Then here we will be learning how we can use a tool called Azure Advisor to accomplish it in a smart and fashioned way.
+Here we will learn how a tool, called Azure Advisor, can help accomplish the management tasks in a smart and efficient way.
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to check and validate the recommendations besides to act, customize how to receive and create alerts for them.
+By the end of this session, you'll be able to check and validate the recommendations and understand how to customize alerts around these actions and recommendations.

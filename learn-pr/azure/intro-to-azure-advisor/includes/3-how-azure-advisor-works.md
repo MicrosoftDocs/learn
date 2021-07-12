@@ -1,109 +1,95 @@
-As mentioned, Azure Advisor scans your Azure configuration through analysis of your resource configuration and usage telemetry. Then you get the recommendations with proposed actions inline.
+Azure Advisor scans your Azure configuration, through analysis of your resource configuration and usage telemetry. Advisor will then provide recommendations and proposed actions.
 
 ## Access recommendations
 
-You can access Advisor through the Azure portal. Sign in to the portal, locate Advisor in the navigation menu, or search for it in the All services menu. Then you will be able to see the recommendations divided into five categories: Cost, Security, Reliability, Operational excellence and Performance.
+You can access Advisor through the Azure portal. Sign in to the portal and locate Advisor in the navigation menu. You can also search for it in the **All services** menu. Once you open Advisor, you will be able to see the recommendations. Advisor divides the recommendations into five categories: **cost**, **security**, **reliability**, **operational excellence**, and **performance**.
 
-To access Azure Advisor, you need the permissions of Owner, Contributor or Reader of a subscription, Resource group or Resource. For all recommendations given, you have options to postpone for a specific time period (one day, one week, one month, three months) or indefinitely besides the option to dismiss.
+For all recommendations provided, you can postpone the display, for a specific time period (one day, one week, one month, three months), or indefinitely. You also can choose to dismiss the recommendation.
+
+Azure Advisor is only available through the proper permissions when being a member of Owner, Contributor, or Reader for the subscription, Resource group, or Resource.
 
 ## Configure recommendations
 
-It's possible to choose for which Subscriptions and Resource Groups you want receive recommendations from Azure Advisor. To do this, open Advisor then select on **Configuration** under **Settings** and apply.
+It's possible to choose which Subscriptions and Resource Groups you want to receive recommendations on. Advisor provides this functionality through the **Configuration** option, under **Settings**.
 
-![Configuration of Azure Advisor.](../media/3-advisor-configuration.png)
+:::image type="content" source="../media/3-advisor-configuration.png" alt-text=" A screen shot depicting the Configuration pane of Azure Advisor.":::
 
-Under "Rules" is possible configure the average CPU utilization rule for the low usage virtual machine recommendation. The CPU utilization rule can be set to 5%, 10%, 15%, or 20%.
+Under  the **Rules** option, it is possible to configure the average CPU utilization rule for the low usage virtual machine recommendation. The CPU utilization rule can be set to 5%, 10%, 15%, or 20%.
 
-> Please note that to adjust the average CPU utilization rule for identifying low usage virtual machines, you must be a subscription Owner. If you do not have the required permissions for a subscription or resource group, the option to include or exclude it will be disabled in the user interface.
-
-<!--- ![Configuration of Rules on Azure Advisor.](../media/3-advisor-rules.png) --->
+>[!Note] To adjust the average CPU utilization rule for identifying low usage virtual machines, you must be a subscription Owner. If you do not have the required permissions for a subscription or resource group, the option to include or exclude it will be disabled in the user interface.
 
 ## Download recommendations
 
-You can download a summary of the recommendations from Advisor in a CSV or PDF format. This makes easy share with your coworkers or perform your own analysis
+You can download a summary of the recommendations from Advisor in a CSV or PDF format. Downloading the file, makes easy to share with your coworkers, or perform your own analysis. You can choose to download only data for specific recommendations or categories that you are viewing. It can help you target actions that may be necessary on specific areas of your subscription.
 
-![Download recommendations.](../media/3-advisor-download-recommendations.png)
+:::image type="content" source="../media/3-advisor-download-recommendations.png" alt-text="A screenshot depicting the location of the download buttons for the .csv or PDF options.":::
 
-<!---
-Example of a PDF file generated:
+## Alerts based on recommendations
 
-![PDF recommendations.](../media/3-summary-recommendations.png)
---->
+You can choose to receive alerts from Advisor. When a new recommendation is detected by Advisor, it will be store in the Azure Activity Log. You are then able to set up alerts for the stored events. To create alerts for recommendations, you would open Azure Advisor and go to **Alerts** under **Monitoring**. Selecting the **New Advisor Alert** button at the top of that pane, allows you to configure the advisor alert.
 
-## Create alerts for recommendations
+:::image type="content" source="../media/3-advisor-alert.png" alt-text="Screenshot depicting where the Alerts option is, and where the New Advisor Alert button is located.":::
 
-To create alerts for recommendations, you should open Azure Advisor and go to **Alerts**Alerts under **Monitoring**. Then select **New Advisor Alert**
+Configuring the alert requires that you define a scope by selecting a subscription and, optionally, a resource group.
 
-![Create alerts on Azure Advisor.](../media/3-advisor-alert.png)
+Alerts ar driven by conditions. Here you have two mutually exclusive options:
 
-The first step is to define a scope. Then select the subscription and optionally an resource group.
+* Category and impact level: In this option, you could select one of the categories (Cost, Performance, Reliability, and Operational excellence) and an impact level (Low, Medium, and High). Both of these are optional configurations.
+* Recommendation Type: If you choose by recommendation type, you would select the recommendation type that is most appropriate for your needs. You can view the available selections from the dropdown list.
 
-The second step is to define the conditions for the alert. Here you have two options:
+You can also configure **action groups**.  An action group is a collection of notification preferences defined by the owner of an Azure subscription. The Azure Monitor, Service Health and Azure Advisor use action groups to notify users that an alert has been triggered.
 
-* Category and impact level: In this option, optionally you could select one of the categories (Cost, Performance, Reliability, and Operational excellence) and a impact level (Low, Medium, and High)
-* Recommendation Type: If you choose by recommendation type, you should select the recommendation type that have more fit with your needs from a full  dropdown list.
+Finally, you can also specify some important alert details such as an alert rule name, description (optional), choose whether the alert is enabled or not upon creation, and specify a resource group where the alert will be saved.
 
-The third step is to select an existing action group or create a new one. An action group is a collection of notification preferences defined by the owner of an Azure subscription. The Azure Monitor, Service Health and Azure Advisor use action groups to notify users that an alert has been triggered.
+:::image type="content" source="../media/3-create-alert.png" alt-text="Screenshot depicting the dialog for creating an Advisor alert as described in the preceding paragraphs.":::
 
-The fourth and final step is to specify an alert rule name, description (optional), choose to be enabled or not upon creation and a resource group where to save.
+## Configuration of the recommendations summary
 
-![Alerts on Azure Advisor.](../media/3-create-alert.png)
+Accessing the Azure Advisor regularly to check recommendations is a good practice. Receiving an alert when some recommendation is triggered is a good practice. You might also consider the use of a weekly digest, by e-mail, that lists a summarization of the recommendations.
 
-## Configure recommendations summary
+Azure Advisor can send recommendation summaries through the **Recommendation digests** option, under the **Monitoring** section. If there are no existing digests configured, you get started by selecting the **New Recommendation Digest** button.
 
-Access the Azure Advisor regularly to check recommendations is a good practice. Receive an alert when some recommendation is triggered also is great. But what about receive a weekly digest by e-mail with all of them?
+:::image type="content" source="../media/3-advisor-create-digest.png" alt-text="Screenshot depicting the configuration options for creating an Advisor recommendation digest.":::
 
-To do that, access Advisor, select **Recommendation digests** under **Monitoring** then select **New Recommendation Digest**:
+After selecting the subscription, under Scope, you would configure the frequency, recommendation category, and language options.
 
-![Create a digests on Azure Advisor.](../media/3-advisor-create-digest.png)
+* Frequency: Options include weekly, bi-weekly, or monthly.
+* Recommendation category: A multiple selection option where you can choose the main categories of Reliability, Security, Performance, Operational Excellence, and Cost.
+* Language: You can select a language you prefer to receive the digest text in. The available languages are displayed in the language dropdown list.
 
-After define the subscription under Scope, you should set the frequency, recommendation category and language:
+You can also select an existing action group, or create a new one, in which the recommendations will be received. The last option allows you to name your digest and determine whether it is enabled or not. You can disable a recommendation digest if you want to pause the summaries.
 
-* Frequency: Choose between Weekly, Bi-weekly, or Monthly
-* Recommendation category: You can pick all options that make sense for you between Reliability, Security, Performance, Operational Excellence, and Cost
-* Language: You can select a language you prefer receive the digest from a dropdown list.
-
-Then select an existing or create e new action group then give a name for your digest and create!
-
-![Digests on Azure Advisor.](../media/3-advisor-digest.png)
+:::image type="content" source="../media/3-advisor-digest.png" alt-text="Screenshot depicting the available options for configuring a recommendation digest.":::
 
 ## Recommendation types
 
+Let's explore the recommendation types in a little more detail.
+
 ### Costs Recommendations
 
-Azure Advisor helps to identify idle and underutilized resources. You can get cost recommendations from the Cost tab on the Advisor dashboard. Here you can see a list of recommendations to reduce costs:
+Azure Advisor helps to identify idle and underutilized resources. You can get cost recommendations from the Cost tab on the Advisor dashboard. As an example, consider usage surrounding virtual machines. Advisor can make recommendations such as:
 
-![Costs on Azure Advisor.](../media/3-advisor-cost.png)
+* Shut down of a virtual machine (VM) if it is not being utilized. Advisor can make this recommendation if it detects network utilization less than 2% over a seven-day period or a P95th of the maximum value of CPU utilization less than 3%.
+* Resize the VM to save resource utilization. Advisor will recommend a resize if the current load doesn't go above 80% utilization for non-user facing workloads. For user-facing workloads, the threshold is measured at above 40%.
 
-<!---
-In this case I chosen the recommendation to shut down or resize my virtual machine. I can have more details regarding the recommendation, rules used, another details over the potential savings, related subscription, and options to take an action.
-
-![Recommendation from costs on Azure Advisor.](../media/3-advisor-cost-shutdown-vm.png)
---->
+The estimate cost savings will be displayed for the recommended actions to help you make a decision on the recommended action.
 
 ### Security Recommendations
 
-Security recommendations are integrated with Azure Security Center. You can get security recommendations from the Security tab on the Advisor dashboard. Full list of security recommendations to selected subscriptions:
+Security recommendations are integrated with Azure Security Center. You can get security recommendations from the Security tab on the Advisor dashboard.
 
-![Security on Azure Advisor.](../media/3-advisor-security.png)
-
-<!---
-Example of a recommendation about system updates available for my virtual machines, affected resources, and more:
-
-![Recommendation from security on Azure Advisor.](../media/3-advisor-security-updates.png)
---->
+:::image type="content" source="../media/3-advisor-security.png" alt-text="A screenshot depicting some security recommendations for a subscription. Displayed information indicates impact (high, medium, or low), a description of the recommendation, the impacted resource, and a date-time stamp for when the recommendation was last updated.":::
 
 ### Reliability Recommendations
 
-Azure Advisor helps you ensure and improve the continuity of your business-critical applications. You can get reliability recommendations from Advisor on the Reliability tab of the Advisor dashboard. List of recommendations to my subscriptions:
+Azure Advisor helps you ensure and improve the continuity of your business-critical applications. You can get reliability recommendations from Advisor on the **Reliability** tab of the Advisor dashboard. Some of the reliability recommendations available with Advisor are:
 
-![Reliability on Azure Advisor.](../media/3-advisor-reliability.png)
-
-<!---
-Example of a recommendation suggesting upgrade virtual machines to Managed Disks in order to improve the reliability of my virtual machines:
-
-![Recommendation from reliability on Azure Advisor.](../media/3-advisor-reliability-upgradedisks.png)
---->
+* Check Point virtual network appliance - Advisor can check if your VM is running this image.
+* Ensuring application gateway fault tolerance.
+* Protection from accidental VM deletion.
+* Create Azure Service Health alerts.
+* Configure Traffic Manager endpoints for resiliency.
+* See the full list on the [Reliability Guide](https://docs.microsoft.com/azure/advisor/advisor-high-availability-recommendations)
 
 ### Operational excellence Recommendations
 
@@ -116,24 +102,10 @@ Operational excellence recommendations in Azure Advisor can help you with:
 
 Recommendations to ensure operational excellence on my subscriptions:
 
-![Operational excellence on Azure Advisor.](../media/3-advisor-operational-excellence.png)
-
-<!---
-Example of a recommendation to assign a policy to restrict the allowed SKUs for virtual machines:
-
-![Example of a recommendation from operational excellence on Azure Advisor.](../media/3-advisor-operational-excellence-policy.png)
---->
+:::image type="content" source="../media/3-advisor-operational-excellence.png" alt-text="Screenshot depicting some operational excellence recommendations. These recommendations include the impact level, a description, the benefit of choosing the recommendation, and the impacted resources.":::
 
 ### Performance Recommendations
 
 The performance recommendations in Azure Advisor can help improve the speed and responsiveness of your business-critical applications. You can get performance recommendations from Advisor on the Performance tab of the Advisor dashboard.
 
-Recommendations to ensure performance improvements:
-
-![Performance on Azure Advisor.](../media/3-advisor-performance.png)
-
-<!---
-Recommendation warning about an unsupported Kubernetes version detected, which can affect the overall performance on the workload:
-
-![Example of a recommendation from performance on Azure Advisor.](../media/3-advisor-performance-aks.png)
---->
+Many of these recommendations are concerned with Traffic Manager performance, database performance for SQL Database, app service performance reliability, and managed disk I/O throttling, among many others. The entire list is available on the [Performance efficiency recommendation page](https://docs.microsoft.com/azure/advisor/advisor-performance-recommendations).
