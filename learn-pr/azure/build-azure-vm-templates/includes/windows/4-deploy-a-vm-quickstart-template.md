@@ -79,7 +79,7 @@ Let's keep the parameters at their default values. For the other parameters, you
 
 For learning purposes, here you'll provide the values as command-line arguments. To make the template easy to deploy, you'll start by storing these values as Bash variables.
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
 1. From the menu bar on the top right-hand side, open **Cloud Shell**.
 
