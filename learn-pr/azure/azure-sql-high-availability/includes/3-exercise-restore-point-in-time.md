@@ -40,7 +40,7 @@ These scripts should take 3-5 minutes to complete. Make sure to note your passwo
    > [!IMPORTANT]
    > Don't forget to note your password, unique ID, and region. You'll need this information throughout the module.
 
-1. Run the following script to deploy an Azure SQL database and logical server with the AdventureWorks sample. This script will also add your IP address as a firewall rule, enable Advanced Data Security, and create a storage account for use in upcoming units.
+1. Run the following script to deploy an Azure SQL database and logical server with the AdventureWorks sample. This script will also add your IP address as a firewall rule, enable Azure Defender, and create a storage account for use in upcoming units.
 
     ```powershell
     # The logical server name has to be unique in the system
@@ -70,8 +70,8 @@ These scripts should take 3-5 minutes to complete. Make sure to note your passwo
         -DatabaseName $databaseName `
         -SampleName "AdventureWorksLT" `
         -Edition "GeneralPurpose" -Vcore 2 -ComputeGeneration "Gen5"
-    # Enable Advanced Data Security
-    $advancedDataSecurity = Enable-AzSqlServerAdvancedDataSecurity `
+    # Enable Azure Defender
+    $azureDefender = Enable-AzSqlServerAdvancedDataSecurity `
         -ResourceGroupName $resourceGroupName `
         -ServerName $serverName
     # Create a storage account
@@ -96,33 +96,6 @@ These scripts should take 3-5 minutes to complete. Make sure to note your passwo
 
     > [!NOTE]
     > Depending on your local configuration (for example, VPN), your client IP address might differ from the IP address the Azure portal used during deployment. If it does, you'll see a message that says "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign in with the account you're using for the sandbox and add a firewall rule for your client IP address. You can complete these steps by using the pop-up wizard in SSMS.  
-
-## Setup: Configure auditing by using Log Analytics
-
-In this exercise, you'll learn how to use auditing through Log Analytics to determine when DROP statements have occurred. To use auditing in this way, you must first configure auditing.
-
-1. Run the following to create a Log Analytics Workspace.
-
-    ```powershell
-    $WorkspaceName = "azuresql$($uniqueID)-la"
-    New-AzOperationalInsightsWorkspace -Location $Location -Name $WorkspaceName -Sku Standard -ResourceGroupName $ResourceGroupName
-    ```
-
-1. In the Azure portal, go to your Azure SQL Database instance to enable auditing on the logical server.
-
-    > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
-
-1. On the left pane, under **Security**, select **Auditing**. Review the options, and then select **View server settings**.
-
-1. Select **Enable Azure SQL Auditing**.  
-
-1. Select **Log Analytics** and under Log Analytics, select the workspace you created in step 1 of this section.
-
-1. Select **Save**.  
-
-   > [!IMPORTANT]
-   > Be sure to select **Save**. If you don't, Log Analytics won't collect logs.
 
 ## Complete PITR
 
@@ -163,7 +136,7 @@ First, let's confirm that the table we'll *accidentally* delete exists and has d
     ```
 
     > [!IMPORTANT]
-    > Save the completion time. You might need it later. Here's an example: `Completion time: 2020-06-22T09:20:27.1859237-07:00`.
+    > Save the completion time. You will need it later. Here's an example: `Completion time: 2020-06-22T09:20:27.1859237-07:00`.
 
 1. Finally, before you start the steps to restore the database, run the following code in Azure Cloud Shell on the right side of this page to configure your environment in Azure Cloud Shell: 
 
@@ -188,13 +161,9 @@ The first step is to figure out the time to restore the database to. You need to
 
 1. One way to determine the drop time is by looking at the completion time of the DROP statement, which you noted in the previous step.  
 
-    A new way is to use the Audit logs in the Azure portal. Go to your Azure SQL database in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). For example, AdventureWorks. In the left pane, under **Security**, select **Auditing** and then select **View audit logs**.  
+    An alternative way is to use the Audit logs in the Azure portal. In this exercise, you didn't configure auditing to Log Analytics, but let's explore what you could do if you  had. You could go to your Azure SQL database in the Azure portal. In the left pane, under **Security**, you could select **Auditing** and then you could select **View audit logs**. By then selecting **Log Analytics**, you are brought to a query editor that allows you to query logs by using Kusto Query Language (KQL). SQL professionals can use this query language to easily query logs.  
 
-1. Select **Log Analytics**. If you see a **Get Started** screen, select **OK**. This action takes you to a query editor that allows you to query logs by using Kusto Query Language (KQL). SQL professionals can use this query language to easily query logs.  
-
-    :::image type="content" source="../media/3-log-analytics.png" alt-text="Screenshot that shows the Log Analytics button.":::  
-
-1. Paste the following KQL query into the query editor in the Log Analytics view in the Azure portal. (Replace the existing query.)
+    You could then run the following KQL query.
 
     ```kql
     search database_name_s == "AdventureWorks"
@@ -203,17 +172,16 @@ The first step is to figure out the time to restore the database to. You need to
     | sort by event_time_t desc
     ```
 
-1. Select **Run** and review the results. The results should be similar to the following results, but with a different date and time.
-
-    If you see other DROPs, select the one related to the table you just dropped.  
+    The results should be similar to the following results, but with a different date and time.
 
     :::image type="content" source="../media/3-log-analytics-results.png" alt-text="Screenshot that shows Log Analytics results.":::
 
     > [!NOTE]
-    > It can take 5-10 minutes for the logs to appear. If you're waiting for more than 3-5 minutes, you can use the completion time you noted in the previous step. (You need to convert it to GMT.) In a real-world situation, you're not likely to be able to get to the window with the completion time, so auditing can be a great help.  
+    > It can take 5-10 minutes for the logs to appear here, so for the purposes of this exercise it has been left out. You will instead use the completion time you noted in the previous step. (You need to convert it to GMT.) In a real-world situation, you're not likely to be able to get to the window with the completion time, so auditing can be a great help.  
 
-1. In this example, the date/time is `2020-07-24 08:06:24.386`. The required format is slightly different. Use the following example to determine the correct format. You might also want to subtract 0.001 seconds to ensure you restore to a time *before* the error occurred:
+1. In this example, the date/time is `2020-07-24 08:06:24.386` from Log Analytics and `2020-07-24T13:06:24.386-07:00` from SSMS. The required format is slightly different. Use the following example to determine the correct format. You might also want to subtract 0.001 seconds to ensure you restore to a time *before* the error occurred:
     * Log Analytics format: `2020-07-24 08:06:24.386`
+    * SSMS format: `2020-07-24T13:06:24.386-07:00`
     * Required format: `2020-07-24T20:06:24.385` 
  
 1. Set `$before_error_time` to the resulting value:
