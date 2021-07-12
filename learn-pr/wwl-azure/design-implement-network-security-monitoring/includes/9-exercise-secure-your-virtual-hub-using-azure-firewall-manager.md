@@ -1,3 +1,6 @@
+> [!NOTE] 
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
+
 
 
 In this exercise, you will create the spoke virtual network and create a secured virtual hub, then you will connect the hub and spoke virtual networks and route traffic to your hub. Next you will deploy the workload servers, then create a firewall policy and secure your hub, and finally you will test the firewall.
@@ -6,7 +9,20 @@ In this exercise, you will create the spoke virtual network and create a secured
 
 In this part of the exercise, you will create the spoke virtual networks and subnets where you will place the workload servers. Then you will create the secured virtual hub and connect the hub and spoke virtual networks.
 
-### Create two spoke virtual networks and subnets
+In this exercise, you will:
+
++ Task 1: Create two spoke virtual networks and subnets
++ Task 2: Create the secured virtual hub
++ Task 3: Connect the hub and spoke virtual networks
++ Task 4: Deploy the servers
++ Task 5: Create a firewall policy and secure your hub
++ Task 6: Associate the firewall policy
++ Task 7: Route traffic to your hub
++ Task 8: Test the application rule
++ Task 9: Test the network rule
++ Task 10: Clean up resrources 
+
+## Task 1: Create two spoke virtual networks and subnets
 
 In this task, you will create the two spoke virtual networks each containing a subnet that will host your workload servers. 
 
@@ -33,7 +49,7 @@ Repeat steps 1 to 14 above to create another similar virtual network and subnet 
 - Subnet name: **Workload-02-SN**
 - Subnet address range: **10.1.1.0/24**
 
-### Create the secured virtual hub
+## Task 2: Create the secured virtual hub
 
 In this task you will create your secured virtual hub using Firewall Manager.
 
@@ -49,7 +65,7 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 6. For **Region**, select your region.
 
-7. For the **Secured virtual hub name**, enter **Hub-01**.
+7. For the **S** **ecured virtual hub name**, enter **Hub-01**.
 
 8. For **Hub address space**, enter **10.2.0.0/16**.
 
@@ -86,7 +102,7 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 20. Note down the public IP address (e.g., **51.143.226.18**), which you will use later.
 
-### Connect the hub and spoke virtual networks
+## Task 3: Connect the hub and spoke virtual networks
 
 In this task you will connect the hub and spoke virtual networks. This is commonly known as peering.
 
@@ -106,7 +122,7 @@ In this task you will connect the hub and spoke virtual networks. This is common
 
  
 
-### Deploy the servers
+## Task 4: Deploy the servers
 
 In this task you will deploy the two workload servers.
 
@@ -166,7 +182,8 @@ In this task you will deploy the two workload servers.
 
 20. On the **Overview** page of **Srv-workload-01**, in the right-hand pane, under the **Networking** section, note down the **Private IP address** (e.g., **10.0.1.4**).
 
-### Create a firewall policy and secure your hub
+
+## Task 5: Create a firewall policy and secure your hub
 
 In this task you will first create your firewall policy, then secure your hub. The firewall policy will define collections of rules to direct traffic on one or more Secured virtual hubs.
 
@@ -277,7 +294,7 @@ In this task you will first create your firewall policy, then secure your hub. T
 
 51. Click **Create**.
 
-### Associate the firewall policy
+## Task 6: Associate the firewall policy
 
 In this task you will associate the firewall policy with the virtual hub.
 
@@ -294,7 +311,7 @@ In this task you will associate the firewall policy with the virtual hub.
 
  
 
-### Route traffic to your hub
+## Task 7: Route traffic to your hub
 
 In this task you will ensure that network traffic gets routed through your firewall.
 
@@ -307,11 +324,10 @@ In this task you will ensure that network traffic gets routed through your firew
 7. This will take a few minutes to complete.
 8. Once configuration has completed, ensure that under **INTERNET TRAFFIC** and **PRIVATE TRAFFIC**, it says **Secured by Azure Firewall** for both hub-spoke connections.
 
-## Test the firewall
+
+## Task 8: Test the application rule
 
 In this part of the exercise, you will connect a remote desktop to the firewall public IP address, which is NATed to Srv-Workload-01. You will then use a web browser to test the application rule and connect a remote desktop to Srv-Workload-02 to test the network rule.
-
-### Test the application rule
 
 In this task you will test the application rule to confirm that it works as expected.
 
@@ -353,7 +369,7 @@ In this task you will test the application rule to confirm that it works as expe
 
 16. So, you have verified that you can connect to the one allowed FQDN but are blocked from all others.
 
-### Test the network rule
+## Task 9: Test the network rule
 
 In this task you will test the network rule to confirm that it works as expected.
 
@@ -372,3 +388,18 @@ In this task you will test the network rule to confirm that it works as expected
 6. So, now you have verified that the firewall network rule is working, as you have connected a remote desktop from one server to another server located in another virtual network.
 
 7. Close both RDP sessions to disconnect them.
+
+
+## Task 10: Clean up resrources 
+
+>**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+
+1. Delete all resource groups you created throughout the labs of this module by running the following command:
+
+   ```powershell
+   Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+   ```
+
+    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
