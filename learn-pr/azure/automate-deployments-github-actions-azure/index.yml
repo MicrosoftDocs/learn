@@ -20,7 +20,7 @@ prerequisites: |
   - Familiarity with Visual Studio Code
   - Familiarity with GitHub
   - Familiarity with CI/CD concepts
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/automate-deployments-github-actions-azure.svg
 levels:
   - intermediate
 roles:
