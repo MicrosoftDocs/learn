@@ -1,4 +1,5 @@
-
+> [!NOTE] 
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
 
 In this exercise, you will create an internal load balancer for the fictional Contoso Ltd organization. Then you will create a Log Analytics workspace, and use Azure Monitor Insights to view information about your internal load balancer. You will view the Functional Dependency View, then view detailed metrics for the load balancer resource, and view resource health information for the load balancer. Finally, you will configure the load balancer's diagnostic settings to send metrics to the Log Analytics workspace you created. 
 
@@ -6,9 +7,27 @@ The diagram below illustrates the environment you will be deploying in this exer
 
 ![Diagram illustrating the load balancer architecture that will be created in the exercise - includes load balancer, VNet, subnet, Bastionsubnet, and VMs](../media/exercise-internal-standard-load-balancer-environment-diagram.png)
 
- 
+ In this exercise, you will:
 
-## Create the virtual network
++ Task 1: Create the virtual network
++ Task 2: Create the load balancer
++ Task 3: Create a backend pool
++ Task 4: Create a health probe
++ Task 5: Create a load balancer rule
++ Task 6: Create backend servers
++ Task 7: Add VMs to the backend pool
++ Task 8: Install IIS on the VMs
++ Task 9: Test the load balancer
++ Task 10: Create a Log Analytics Workspace
++ Task 11: Use Functional Dependency View
++ Task 12: View detailed metrics
++ Task 13: View resource health
++ Task 14: Configure diagnostic settings
++ Task 15: Clean up resources
+
+
+
+## Task 1: Create the virtual network
 
 In this section, you will create a virtual network and a subnet.
 
@@ -46,14 +65,14 @@ In this section, you will create a virtual network and a subnet.
     | **Setting**                       | **Value**                                              |
     | --------------------------------- | ------------------------------------------------------ |
     | Bastion name                      | **myBastionHost**                                      |
-    | AzureBastionSubnet address  space | **10.1.1.0/24**                                        |
+    | AzureBastionSubnet address space  | **10.1.1.0/24**                                        |
     | Public IP address                 | Select **Create new**<br /><br />Name: **myBastionIP** |
 
 12. Click **Review + create**.
 
 13. Click **Create**.
 
-## Create the load balancer
+## Task 2: Create the load balancer
 
 In this section, you will create an internal Standard SKU load balancer. The reason we are creating a Standard SKU load balancer here in the exercise, instead of a Basic SKU load balance, is for later exercises that require a Standard SKU version of the load balancer.
 
@@ -85,11 +104,8 @@ In this section, you will create an internal Standard SKU load balancer. The rea
 
 7. Click **Create**.
 
-## Configure the load balancer 
 
-In this section, you will configure load balancer settings for a backend address pool, then create a health probe and a load balancer rule.
-
-### Create a backend pool
+## Task 3: Create a backend pool
 
 The backend address pool contains the IP addresses of the virtual NICs connected to the load balancer.
 
@@ -111,7 +127,7 @@ The backend address pool contains the IP addresses of the virtual NICs connected
 
    
 
-### Create a health probe
+## Task 4: Create a health probe
 
 The load balancer monitors the status of your app with a health probe. The health probe adds or removes VMs from the load balancer based on their response to health checks. Here you will create a health probe to monitor the health of the VMs.
 
@@ -134,7 +150,7 @@ The load balancer monitors the status of your app with a health probe. The healt
 
 
 
-### Create a load balancer rule
+## Task 5: Create a load balancer rule
 
 A load balancer rule is used to define how traffic is distributed to the VMs. You define the frontend IP configuration for the incoming traffic and the backend IP pool to receive the traffic. The source and destination port are defined in the rule. Here you will create a load balancer rule.
 
@@ -160,71 +176,26 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
 
    ![Show load balancing rule created in load balancer](../media/create-loadbalancerrule.png)
 
-## Create backend servers
+## Task 6: Create backend servers
 
 In this section, you will create three VMs, that will be in the same availability set, for the backend pool of the load balancer, add the VMs to the backend pool, and then install IIS on the three VMs to test the load balancer.
 
-### Create VMs
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-In this section, you will create three VMs (myVM1, myVM2, myVM3). When creating the first VM you will also create a new Availability Set, and then as you create the next two VMs, they will be added to the Availability Set. You will then add these VMs to the backend pool of the load balancer that you created previously.
+2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files azuredeploy.json, azuredeploy.parameters.vm1.json, azuredeploy.parameters.vm2.json and azuredeploy.parameters.vm3.json into the Cloud Shell home directory.
+[ARM Templates for this task](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M04)
 
-1. On the Azure portal home page, click **Create a resource**, then **Compute**, then select **Virtual machine** (if this resource type is not listed on the page, use the search box at the top of the page to search for it and select it).
+3. Deploy the following ARM templates to create the virtual network, subnets, and VMs needed for this exercise:
 
-2. On the **Create a virtual machine** page, on the **Basics** tab, use the information in the table below to create the first VM.
+   ```powershell
+   $RGName = "IntLB-RG"
+   
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm1.json
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm2.json
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm3.json
+   ```
 
-   | **Setting**          | **Value**                                                    |
-   | -------------------- | ------------------------------------------------------------ |
-   | Subscription         | Select your subscription                                     |
-   | Resource group       | **IntLB-RG**                                                 |
-   | Virtual machine name | **myVM1**                                                    |
-   | Region               | **(US) West US**                                             |
-   | Availability options | **Availability Set**                                         |
-   | Availability set     | Select **Create new**<br /><br />Name: **myAvailabilitySet** |
-   | Image                | **Windows Server 2019 Datacenter - Gen 1**                   |
-   | Size                 | **Standard_DS1_v2 - 1 vCPU, 3.5 GiB memory**                 |
-   | Username             | **TestUser**                                                 |
-   | Password             | **TestPa$$w0rd!**                                            |
-   | Confirm password     | **TestPa$$w0rd!**                                            |
-
-3. Click **Next : Disks**, then click **Next : Networking**. 
-
-4. On the **Networking** tab, use the information in the table below to configure networking settings.
-
-   | **Setting**                                                  | **Value**                                        |
-   | ------------------------------------------------------------ | ------------------------------------------------ |
-   | Virtual network                                              | **IntLB-VNet**                                   |
-   | Subnet                                                       | **myBackendSubnet**                              |
-   | Public IP                                                    | Change to **None**                               |
-   | NIC network security group                                   | **Advanced**                                     |
-   | Configure network security group                             | Select **Create new**<br /><br />Name: **myNSG** |
-   | Place this virtual machine behind an existing load balancing solution? | **Off** (unchecked)                              |
-
-5. Click **Review + create**.
-
-6. Click **Create**.
-
-7. When the deployment of the first VM is complete, click **Create another VM**.
-
-8. On the **Create a virtual machine** page, repeat steps 2-6 above to create a second VM. Use the same settings as before except for the information in the table below. 
-
-   | **Setting**                      | **Value**                                 |
-   | -------------------------------- | ----------------------------------------- |
-   | Virtual machine name             | **myVM2**                                 |
-   | Availability set                 | Select the existing **myAvailabilitySet** |
-   | Configure network security group | Select the existing **myNSG**             |
-
-9. When the deployment of the second VM is complete, click **Create another VM**.
-
-10. On the **Create a virtual machine** page, repeat steps 2-6 above to create a third VM. Use the same settings as before except for the information in the table below. 
-
-    | **Setting**                      | **Value**                                 |
-    | -------------------------------- | ----------------------------------------- |
-    | Virtual machine name             | **myVM3**                                 |
-    | Availability set                 | Select the existing **myAvailabilitySet** |
-    | Configure network security group | Select the existing **myNSG**             |
-
-
-### Add VMs to the backend pool
+## Task 7: Add VMs to the backend pool
 
 1. On the Azure portal home page, click **All resources**, then click on **myIntLoadBalancer** from the resources list.
 
@@ -242,7 +213,7 @@ In this section, you will create three VMs (myVM1, myVM2, myVM3). When creating 
 
  
 
-### Install IIS on the VMs
+## Task 8: Install IIS on the VMs
 
 1. On the Azure portal home page, click **All resources**, then click on **myVM1** from the resources list.
 2. On the **Overview** page, select **Connect**, then **Bastion**.
@@ -259,7 +230,7 @@ In this section, you will create three VMs (myVM1, myVM2, myVM3). When creating 
 
  
 
-## Test the load balancer
+## Task 9: Test the load balancer
 
 In this section, you will create a test VM, and then test the load balancer.
 
@@ -277,7 +248,7 @@ In this section, you will create a test VM, and then test the load balancer.
    | Region               | **(US) West US**                             |
    | Availability options | **No infrastructure redundancy required**    |
    | Image                | **Windows Server 2019 Datacenter - Gen 1**   |
-   | Size                 | **Standard_DS1_v2 - 1 vCPU, 3.5 GiB memory** |
+   | Size                 | **Standard_DS1_v2 - 1 vcpu, 3.5 GiB memory** |
    | Username             | **TestUser**                                 |
    | Password             | **TestPa$$w0rd!**                            |
    | Confirm password     | **TestPa$$w0rd!**                            |
@@ -332,7 +303,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
     ![Browser window showing Hello World response from VM3](../media/load-balancer-web-test-2.png)
 
-## Create a Log Analytics Workspace
+## Task 10: Create a Log Analytics Workspace
 
 1. On the Azure portal home page, click **All services**, then in the search box at the top of the page type **Log Analytics**, and select **Log Analytics workspaces** from the filtered list.
 
@@ -355,7 +326,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
 
 
-## Use Functional Dependency View
+## Task 11: Use Functional Dependency View
 
 1. On the Azure portal home page, click **All resources**, then in the resources list, select **myIntLoadBalancer**.
 
@@ -387,7 +358,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
  
 
-## View detailed metrics
+## Task 12: View detailed metrics
 
 1. To view more comprehensive metrics for this network resource, click **View detailed metrics**.
    ![Azure Monitor Network Insights - View detailed metrics button highlighted](../media/network-insights-detailedmetrics-1.png)
@@ -409,7 +380,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
  
 
-## View resource health
+## Task 13: View resource health
 
 1. To view the health of your Load Balancer resources, on the Azure portal home page, click **All services**, then select **Monitor**.
 
@@ -429,7 +400,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
  
 
-## Configure diagnostic settings
+## Task 14: Configure diagnostic settings
 
 1. On the Azure portal home page, click **Resource groups**, then select the **IntLB-RG** resource group from the list.
 
@@ -453,22 +424,16 @@ In this section, you will create a test VM, and then test the load balancer.
 
  
 
-## Clean up the Azure exercise environment
+## Task 15: Clean up resources
 
-After you complete this exercise, and if you no longer need the resources, delete the resource group, load balancer, and all their related resources. The easiest way to do this is to delete the resource group, which deletes all its resources too.
+   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
-1. On the Azure portal home page, click **Resource groups**.
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-   ![Select 'Resource groups' tile in Azure portal home page](../media/delete-resource-group-1.png)
+1. Delete all resource groups you created throughout the labs of this module by running the following command:
 
-2. In the list of resource groups, click on the name of the **IntLB-RG** resource group.
+   ```powershell
+   Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+   ```
 
-   ![Select the load balancer resource group from the list of resource groups](../media/delete-resource-group-2.png)
-
-3. On the **IntLB-RG** resource group page, in the menu, click **Delete resource group**.
-
-   ![On the load balancer resource group page, with 'Delete resource group' highlighted](../media/delete-resource-group-3.png)
-
-4. In the warning pane that opens, type the name of the resource group into the text box, and then click **Delete**. (The delete button will only become available once you have successfully typed in the full name of the resource group.)
-
-   ![Confirmation pane for deleting a resource group](../media/delete-resource-group-4.png)
+    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
