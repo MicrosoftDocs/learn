@@ -39,8 +39,6 @@ products:
 - azure-rbac
 units:
 - learn.azure.build-cloud-governance-strategy-azure.1-introduction
-- learn.azure.build-cloud-governance-strategy-azure.2-accelerate-cloud-adoption-framework
-- learn.azure.build-cloud-governance-strategy-azure.3-create-subscription-governance-strategy
 - learn.azure.build-cloud-governance-strategy-azure.4-control-access-azure-rbac
 - learn.azure.build-cloud-governance-strategy-azure.5-prevent-changes-resource-locks
 - learn.azure.build-cloud-governance-strategy-azure.6-protect-storage-account-resource-lock
@@ -48,6 +46,8 @@ units:
 - learn.azure.build-cloud-governance-strategy-azure.8-control-audit-resources-azure-policy
 - learn.azure.build-cloud-governance-strategy-azure.9-restrict-location-azure-policy
 - learn.azure.build-cloud-governance-strategy-azure.10-govern-subscriptions-azure-blueprints
+- learn.azure.build-cloud-governance-strategy-azure.2-accelerate-cloud-adoption-framework
+- learn.azure.build-cloud-governance-strategy-azure.3-create-subscription-governance-strategy
 - learn.azure.build-cloud-governance-strategy-azure.11-knowledge-check
 - learn.azure.build-cloud-governance-strategy-azure.12-summary
 badge:
