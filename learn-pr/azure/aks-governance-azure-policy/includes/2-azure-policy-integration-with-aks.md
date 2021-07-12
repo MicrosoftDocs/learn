@@ -1,60 +1,22 @@
-With a good understanding of the concepts behind CI and CD, let's plan our pipeline based on the needs of our project.
+Azure Policy is an Azure service that helps you manage your compliance state across different Azure service. Azure Policy for Kubernetes enables you to use the same Azure policies in your Kubernetes clusters as well. This allows you to manage the compliance state of Kubernetes resources like pods, deployments and services as if they were an Azure resource.
 
-To support a CI pipeline, Contoso wants a website to be published in AKS after a successful tagged push to the main branch. This design makes it easier to check the version of each deployment that went to production. You use tags for routing when you push container images to an image registry.
+In this unit, you'll learn about Azure Policy and Azure Policy for Kubernetes.
 
-The project leads also want to test the website in a staging environment at every successful push to the main branch, regardless of whether the push is tagged. Let's design this pipeline.
+## Introducing Azure Policy
 
-## Design the pipeline
+Azure policy allows you to manage the compliance state of your Azure services. It does this by comparing the state of your Azure resources to business rules you define. Common rules are the limitation of certain regions, the requirement for resource tags or limiting which Azure services can be used.
 
-To begin designing the pipeline, think about tasks and triggers. Ask the question, "What will trigger this pipeline?" In our case, the pipeline is triggered by two different events:
+The way you define these business rules in Azure policy is by using policy definitions. There are many built-in policies that cover a range of common scenarios. If one of the built-in policies doesn't meet your needs, you can also define a custom policy using a JSON-based language. You can also group multiple policy definitions togethers into an initiative. 
 
-- A tagged push to the main branch
-- A non-tagged push to the main branch
+In a policy definition you define a resource compliance condition and the effect that should be taken if that condition is met. A condition compares a resource's properties to a required value. An example of a condition could be comparing the location of a resource versus a predefined list of allowed locations. The effect of a policy can be auditing the condition, denying the resource's creation or modifying the created resource. In the example of the location of a resource, you could for example deny the creation of resources not in the list of allowed loations. For a more detailed explanation of policy definitions, please refer to the [documetation](https://docs.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure).
 
-Even though it might seem redundant, we need to split those two events into two separate triggers. We could say that in one trigger, the pipeline is triggered by a tagged *or* a non-tagged push to main. But if we used this design, our pipeline wouldn't differentiate a tagged push from a non-tagged push. The goal is to have two separate triggers. One of the triggers deploys the application to production and the other trigger deploys to the staging environment.
+Azure Policy works by assigning a policy definition or an iniative to a scope by making policy assignments. A scope can be either a management group, a subscription or a resource group. Policy assignments are automatically inherited to all scopes underneath the assignment, unless you make an exclusion. Multiple policy definitions can apply to a certain scope. The net result of layering policy definitions is considered to be _cumulative most restrictive_. This means that if multiple policies apply to a certain resource, that resource will only be compliant if all policy definitions applying to it are compliant.
 
-At this point, here's what our pipeline looks like:
+Policy assignments get evaluated during the creation or update of Azure resources, if the definition or scope is changed and periodically (every 24 hours) for continuous monitoring. Practically, this means that when you create new resources the policy will immediately take effect. Any historical resources will also be scanned, so you get a continuous view on the compliance of all your resources.
 
-:::image type="content" source="../media/3-pipeline-1-trigger.png" alt-text="Diagram that shows two types of pipeline triggers.":::
+### Integration of Azure Policy with AKS
 
-After the triggers are defined, we need to think about the pipeline flow itself to answer the question, "What will happen after one of the triggers is executed?" Generally, the first steps are the same for both triggers.
 
-### Clone the repo
 
-The website must be a Docker image to run in the AKS environment. That means that we'll probably need to build the new image by using a Dockerfile that's present in the root of the repository.
+### Understanding how Azure Policy for AKS works under the covers
 
-The first step after creating the trigger is to clone the repository, so we have all the files to work with:
-
-:::image type="content" source="../media/3-pipeline-2-build.png" alt-text="Diagram that shows the procession from triggers to the first build step in a pipeline.":::
-
-We'll call these first steps the *build steps* because we have to prepare some configuration and build the image before we push it to the AKS instance. The build part is where we set up all the information that's needed for the deploy step.
-
-The next logical step is to build an image by using a Dockerfile that's in the root of the repository. But here's where the triggers become different.
-
-### Build the image
-
-If the pipeline is triggered by the *tagged* commit, we'll build the image and tag it by using the *same tag as the push*. For example, if the commit is tagged with `v1.0.0`, we'll build the image `contoso/website:v1.0.0`.
-
-Otherwise, if we have a commit that isn't a tagged commit in the main branch, we'll build the image that has the `latest` tag.
-
-:::image type="content" source="../media/3-pipeline-3-build-docker.png" alt-text="Diagram that shows the procession from triggers to the first and second build steps in a pipeline.":::
-
-After the image is built, we need to push it to the Contoso Azure Container Registry instance, which the AKS cluster is set up to access. The cluster can download the images and run them via Container Registry.
-
-### Push the image to a container registry
-
-At this point, the pipeline converges into a single step. Because the Container Registry instance doesn't have internal divisions, we'll push both images to the same place.
-
-:::image type="content" source="../media/3-pipeline-4-docker-push.png" alt-text="Diagram that shows the procession from triggers to the first, second, and third build steps in the pipeline.":::
-
-### Deploy the application
-
-For the *deploy steps*, the final step is to deploy the website to the correct location. 
-
-If the tagged commit triggered the pipeline, we'll deploy the website to production, in the `production` namespace of the AKS cluster.
-
-If the pipeline didn't trigger a tagged commit, we'll push to the `staging` namespace of the same cluster.
-
-:::image type="content" source="../media/3-pipeline-5-deploy.png" alt-text="Diagram that shows the procession from triggers, through three build steps, to the deploy steps in a pipeline.":::
-
-Now, we've summarized all the tasks we have to execute to successfully deploy the website to the correct environments. The next step is to create the deploy environment.
