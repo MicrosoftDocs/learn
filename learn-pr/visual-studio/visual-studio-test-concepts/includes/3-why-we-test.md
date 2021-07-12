@@ -1,5 +1,3 @@
-# Why We Test
-
 <!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
 
     Goal: state what's in this unit and how it aligns to the 'describe' learning objective.
@@ -20,20 +18,20 @@
 -->
 Testing can be a powerful tool to improve the quality, architecture, and overall health of a code base. You'll find many strong examples of the positive impact of testing across the software industry.
 
-- **Validating code changes and quality**. Software grows over time by a change in requirements that leads to more and/or altered features. To ensure you still have a working software with all these changes, you need tests to validate and to maintain quality. 
+- **Validating code changes and quality**. Software grows over time by a change in requirements that leads to more and/or altered features. To ensure you still have a working software with all these changes, you need tests to validate and to maintain quality.
 - **Industry examples**. There are many large pieces of software out there like compilers or tools like Visual Studio that are large pieces of software running many tests and test scenarios. To ensure reliability, having and supporting tests is crucial.
 - **Testing effects on architecture**. Testing is an important forcing function on architecture. It makes you consider things such as duplication or whether a piece of code can be tested with its current architecture.
 - **Code coverage and code health**. Many programs run business critical scenarios. By looking at code coverage you have a sense of how well various parts of your code is covered by testing. You want a good coverage on the most important scenarios.
 
 ## Validating code changes and quality
 
-Any successful software tends to grow in functionality and behavior. Sometimes it can grow beyond what the first creators ever imagined in order to support more scenarios and customer requests. As functionality grows, it can become more and more difficult for a single developer to remember all the functionality it contains or keep track of how to preserve that functionality. 
+Any successful software tends to grow in functionality and behavior. Sometimes it can grow beyond what the first creators ever imagined in order to support more scenarios and customer requests. As functionality grows, it can become more and more difficult for a single developer to remember all the functionality it contains or keep track of how to preserve that functionality.
 
 Tests not only keep track of the different capabilities of a program, but tests can also continue to check the old functionality did not break as new code is added. A fundamental purpose of testing is validating that code changes don't break existing functionality and provide a way of ensuring that newly added code will continue to work as expected even with future changes.
 
 ![image](../media/test-quality-cycle.png)
 
-Tests can help catch bugs before you even check-in your code changes. It's best practice to run tests before major steps in your development cycle. This final check allows you to improve your code quality so your users don't have to report that something broke in your latest update. It's much nicer to catch bugs while you are still developing the code rather than a when you are in the middle of deploying your app or when the app is in production with customers using it!
+Tests can help catch bugs before you even check-in your code changes. It's best practice to run tests before major steps in your development cycle. This final check allows you to improve your code quality so your users don't have to report that something broke in your latest update. It's much nicer to catch bugs while you are still developing the code rather than a when you are in the middle of deploying your app or when the app is in production with customers using it! Catching bugs early in the development cycle saves time and money.
 
 ## Industry examples
 

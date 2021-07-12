@@ -48,9 +48,6 @@ quiz:
     - content: "Tests help keep track of the different capabilities of a program."
       isCorrect: false
       explanation: "Tests can help keep track of different capabilities by checking all functionality regularly even as new code is added."
-    - content: "Tests help large repositories built by a community avoid bugs by providing checks for both old and new behavior."
-      isCorrect: false
-      explanation: "Tests do help maintain large repositories by providing a way to check functionality that does not depend on a single person understanding the full system, but rather by checking behaviors programmatically."
   - content: "The correct code coverage goal in a repo is"
     choices:
     - content: "100%"

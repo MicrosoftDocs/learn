@@ -3,7 +3,7 @@ uid: learn-visualstudio.introduction-to-testing-concepts
 metadata:
   moduleType: introduction                                        # Do not edit: type must be 'introduction'
   title: Introduction to testing concepts                         # Do not edit: title must be "Introduction to (product)"
-  description: "Evaluate if testing is right for your scenarios." # Copy your 'evaluate' Learning Objective here (see below)
+  description: "Evaluate if testing is right for your scenarios and familiarize yourself with basic testing concepts such as TDD, BDD, unit testing, UI testing, the test pyramid and more." # Copy your 'evaluate' Learning Objective here (see below)
   ms.date: 06/24/2021                                             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: kendrahavens                                            # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: kehavens                                             # Alias of the Microsoft employee either authoring or project-managing this content
@@ -65,7 +65,7 @@ summary: "Describe the common best practices, theory, and anti-patterns of writi
 abstract: |
   By the end of this module, you'll be able to: 
   - Evaluate if testing is right for your scenarios.
-  - Describe how different types of testing, the testing pyramid, and different testing schools of though answer the demands of modern development.
+  - Describe how different types of testing, the testing pyramid, and different testing schools of thought answer the demands of modern development.
 ###########################################################################
 ###
 ### Prerequisites
