@@ -1,4 +1,4 @@
-    In this exercise, you'll create your Azure for MySQL Database instance and load it with sample data.
+In this exercise, you'll create your Azure for MySQL Database instance and load it with sample data.
 
 ## Get the sample application and script
 
