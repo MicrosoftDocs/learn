@@ -117,7 +117,7 @@ BFD is configured by default under all the newly created ExpressRoute private pe
 
 When you disable a peering, the Border Gateway Protocol (BGP) session for both the primary and the secondary connection of your ExpressRoute circuit is shut down. When you enable a peering, the BGP session on both the primary and the secondary connection of your ExpressRoute circuit is restored.
 
-> [!Note] 
+> [!NOTE] 
 >
 > The first time you configure the peering on your ExpressRoute circuit, the Peerings are enabled by default.
 
@@ -164,7 +164,7 @@ The same requirement applies to the traffic from Azure to on-premises networks. 
 
 In both examples, Azure will send traffic to 10.0.1.0/24 over the VPN connection rather than directly over ExpressRoute without VPN protection.
 
-> [!Warning] 
+> [!WARNING] 
 >
 > If you advertise the same prefixes over both ExpressRoute and VPN connections, Azure will use the ExpressRoute path directly without VPN protection.
 
