@@ -11,7 +11,7 @@ Remember, these upgrades are for updating the components within the AKS cluster 
 
 ## References
 
-* [Upgrade AKS cluster tutorial](https://docs.microsoft.com/en-us/azure/aks/tutorial-kubernetes-upgrade-cluster?tabs=azure-cli)
+* [Upgrade AKS cluster tutorial](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-upgrade-cluster?tabs=azure-cli)
 * [Best practices for AKS cluster security upgrades](https://docs.microsoft.com/azure/aks/operator-best-practices-cluster-security)
 * [Kubernetes versions supported in AKS](https://docs.microsoft.com/azure/aks/supported-kubernetes-versions)
 * [Blue/Green Deployment with Azure Front Door](https://techcommunity.microsoft.com/t5/azure-architecture-blog/blue-green-deployment-with-azure-front-door/ba-p/1609178)
