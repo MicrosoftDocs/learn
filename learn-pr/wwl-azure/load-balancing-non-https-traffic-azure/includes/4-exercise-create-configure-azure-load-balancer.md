@@ -8,7 +8,7 @@ The steps to create an internal load balancer, are very similar to those you hav
 
 The diagram below illustrates the environment you will be deploying in this exercise.
 
-![Picture 15](../media/exercise-internal-standard-load-balancer-environment-diagram.png)
+![internal standard loadbalancer diagram](../media/exercise-internal-standard-load-balancer-environment-diagram.png)
 
  
 In this exercise, you will:
@@ -29,7 +29,7 @@ In this section, you will create a virtual network and a subnet.
 
 3. Click **Create**.
 
-![Picture 2](../media/create-virtual-network-1.png)
+![create a virtual network from the Azure portal](../media/create-virtual-network-1.png)
 
 4. On the **Basics** tab, use the information in the table below to create the virtual network.
 
@@ -72,12 +72,13 @@ In this section, you will create an internal Standard SKU load balancer. The rea
 
 1. On the Azure portal home page, click **Create a resource**.
 
-2. In the search box at the top of the page, type **Load Balancer**, then press **Enter** (**Note:** do not select one from the list).
+2. In the search box at the top of the page, type **Load Balancer**, then press **Enter** 
+> [!NOTE]  do not select one from the list
 
 3. Scroll down to the bottom of the page and select **Load Balancer** (the one that says 'Microsoft' and 'Azure Service' under the name).
 
 4. Click **Create**.
-   ![Picture 3](../media/create-load-balancer-4.png)
+![create a load balancer](../media/create-load-balancer-4.png)
 
 5. On the **Basics** tab, use the information in the table below to create the load balancer.
 
@@ -120,7 +121,7 @@ The backend address pool contains the IP addresses of the virtual NICs connected
 
 
 4. Click **Add**.
-   ![Picture 4](../media/create-backendpool.png)
+![create a backend pool](../media/create-backendpool.png)
 
  
 
@@ -143,7 +144,7 @@ The load balancer monitors the status of your app with a health probe. The healt
 
 
 3. Click **Add**.
-   ![Picture 5](../media/create-healthprobe.png)
+![create a health probe](../media/create-healthprobe.png)
 
  
 
@@ -171,7 +172,7 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
 
 
 3. Click **Add**.
-   ![Picture 6](../media/create-loadbalancerrule.png)
+![create a load balancer rule](../media/create-loadbalancer-rule.png)
 
  
 
@@ -182,9 +183,9 @@ In this section, you will create three VMs, that will be in the same availabilit
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
 2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files azuredeploy.json, azuredeploy.parameters.vm1.json, azuredeploy.parameters.vm2.json and azuredeploy.parameters.vm3.json into the Cloud Shell home directory.
-[ARM Templates for this task](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M04)
+[Azure Resource Manager Templates for this task](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M04)
 
-3. Deploy the following ARM templates to create the virtual network, subnets, and VMs needed for this exercise:
+3. Deploy the following Azure Resource Manager templates to create the virtual network, subnets, and VMs needed for this exercise:
 
    ```powershell
    $RGName = "IntLB-RG"
@@ -207,7 +208,7 @@ In this section, you will create three VMs, that will be in the same availabilit
 5. Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**), then click **Add**.
 
 6. On the **myBackendPool** page, click **Save**.
-   ![Picture 7](../media/add-vms-backendpool.png)
+![add vms to backend pool](../media/add-vms-backendpool.png)
 
  
 
@@ -282,14 +283,14 @@ In this section, you will create a test VM, and then test the load balancer.
 11. Enter (or paste) the **Private IP address** (e.g. 10.1.0.4) from the previous step into the address bar of the browser and press Enter.
 
 12. The default web home page of the IIS Web server is displayed in the browser window. One of the three virtual machines in the backend pool will respond.
-    ![Picture 8](../media/load-balancer-web-test-1.png)
+![webpage showing myVM1](../media/load-balancer-web-test-1.png)
 
 13. If you click the refresh button in the browser a few times, you will see that the response comes randomly from the different VMs in the backend pool of the internal load balancer.
-    ![Picture 9](../media/load-balancer-web-test-2.png)
+![webpage showing myVM3](../media/load-balancer-web-test-2.png)
 
 ## Clean up resources
 
-   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+   > [!NOTE]  Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
@@ -299,4 +300,4 @@ In this section, you will create a test VM, and then test the load balancer.
    Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
    ```
 
-    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+    > [!NOTE]  The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.

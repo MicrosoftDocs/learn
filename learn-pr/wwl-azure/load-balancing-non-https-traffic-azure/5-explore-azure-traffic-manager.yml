@@ -27,7 +27,7 @@ quiz:
     - content: "Supports one traffic-routing method and integrates with DNS."
       isCorrect: false
       explanation: "Incorrect, Azure Traffic Manager supports six traffic-routing methods. The traffic-routing method determines which endpoint is returned in the DNS response."
-  - content: "Which traffic-routing method should you use when you want end users to use the \"closest\" endpoint for the lowest network latency?"
+  - content: "Which traffic-routing method should be use when end users need to use the \"closest\" endpoint for the lowest network latency?"
     choices:
     - content: "Performance"
       isCorrect: true

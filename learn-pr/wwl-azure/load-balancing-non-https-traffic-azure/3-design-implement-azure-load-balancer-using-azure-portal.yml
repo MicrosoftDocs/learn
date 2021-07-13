@@ -27,7 +27,7 @@ quiz:
     - content: "They have a private, front-facing IP address."
       isCorrect: false
       explanation: "Incorrect, External load balancers have public IP addresses."
-  - content: "You are deploying a new Azure Load Balancer that must support outbound traffic rules. Which SKU should you choose?"
+  - content: "When deploying a new Azure Load Balancer that must support outbound traffic rules. Which SKU should be selected?"
     choices:
     - content: "Standard"
       isCorrect: true

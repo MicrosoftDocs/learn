@@ -1,8 +1,8 @@
 **Azure Load Balancer** operates at layer 4 of the Open Systems Interconnection (OSI) model. It's the single point of contact for clients. Azure Load Balancer distributes inbound flows that arrive at the load balancer's front end to backend pool instances. These flows are according to configured load-balancing rules and health probes. The backend pool instances can be Azure Virtual Machines or instances in a virtual machine scale set.
 
-## Choosing a Load Balancer Type
+## Choosing a load balancer type
 
-Load balancers can be public (a.k.a. external) or internal (a.k.a. private).
+Load balancers can be public (also known as external) or internal (also known as private).
 
 A [**public load balancer**](/azure/load-balancer/components) can provide outbound connections for virtual machines (VMs) inside your virtual network. These connections are accomplished by translating their private IP addresses to public IP addresses. External load balancers are used to distribute client traffic from the internet across your VMs. That internet traffic might come from web browsers, module apps, or other sources.
 
@@ -12,7 +12,7 @@ An [**internal load balancer**](/azure/load-balancer/components) is used where p
 
  
 
-## Azure Load Balancer and availability zones 
+## Azure load balancer and availability zones 
 
 Azure services that support availability zones fall into three categories:
 
@@ -48,7 +48,7 @@ For a public load balancer frontend, you add a zones parameter to the public IP.
 
 For an internal load balancer frontend, add a zones parameter to the internal load balancer frontend IP configuration. A zonal frontend guarantees an IP address in a subnet to a specific zone.
 
-## Selecting an Azure Load Balancer SKU
+## Selecting an Azure load balancer SKU
 
 Two SKUs are available when you create a load balancer in Azure: Basic load balancers and Standard load balancers. These SKUs differ in terms of their scenario scope and scale, features, and cost. Any scenario that is possible with the Basic load balancer can also be created with the Standard load balancer.
 
@@ -58,17 +58,17 @@ To compare and understand the differences, review the table below.
 
 | *Features*                                                                                                                                    | Standard Load Balancer                                                                                                                                  | Basic Load Balancer                                                                                     |
 |:-:|:-:|:-:|
-| [Backend pool size](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits#load-balancer)       | Supports up to 1000 instances.                                                                                                                          | Supports up to 300 instances.                                                                           |
+| [Backend pool size](/azure/azure-resource-manager/management/azure-subscription-service-limits#load-balancer)                                 | Supports up to 1000 instances.                                                                                                                          | Supports up to 300 instances.                                                                           |
 | Backend pool endpoints                                                                                                                        | Any virtual machines or virtual machine scale sets in a single virtual network.                                                                         | Virtual machines in a single availability set or virtual machine scale set.                             |
-| [Health probes](https://docs.microsoft.com/azure/load-balancer/load-balancer-custom-probe-overview#types)                                     | TCP, HTTP, HTTPS                                                                                                                                        | TCP, HTTP                                                                                               |
-| [Health probe down behavior](https://docs.microsoft.com/azure/load-balancer/load-balancer-custom-probe-overview#probedown)                    | TCP connections stay alive on an instance probe down and on all probes down.                                                                            | TCP connections stay alive on an instance probe down. All TCP connections end when all probes are down. |
+| [Health probes](/azure/load-balancer/load-balancer-custom-probe-overview#types)                                                               | TCP, HTTP, HTTPS                                                                                                                                        | TCP, HTTP                                                                                               |
+| [Health probe down behavior](/azure/load-balancer/load-balancer-custom-probe-overview#probedown)                                              | TCP connections stay alive on an instance probe down and on all probes down.                                                                            | TCP connections stay alive on an instance probe down. All TCP connections end when all probes are down. |
 | Availability Zones                                                                                                                            | Zone-redundant and zonal frontends for inbound and outbound traffic.                                                                                    | Not available                                                                                           |
-| Diagnostics                                                                                                                                   | [Azure Monitor multi-dimensional metrics](/azure/load-balancer/load-balancer-standard-diagnostics)                            | [Azure Monitor logs](/azure/load-balancer/load-balancer-monitor-log)          |
-| HA Ports                                                                                                                                      | [Available for Internal Load Balancer](/azure/load-balancer/load-balancer-ha-ports-overview)                                  | Not available                                                                                           |
+| Diagnostics                                                                                                                                   | [Azure Monitor multi-dimensional metrics](/azure/load-balancer/load-balancer-standard-diagnostics)                                                      | [Azure Monitor logs](https://docs.microsoft.com/azure/load-balancer/load-balancer-monitor-log)          |
+| HA Ports                                                                                                                                      | [Available for Internal Load Balancer](/azure/load-balancer/load-balancer-ha-ports-overview)                                                            | Not available                                                                                           |
 | Secure by default                                                                                                                             | Closed to inbound flows unless allowed by a network security group. Internal traffic from the virtual network to the internal load balancer is allowed. | Open by default. Network security group optional.                                                       |
-| Outbound Rules                                                                                                                                | [Declarative outbound NAT configuration](https://docs.microsoft.com/azure/load-balancer/load-balancer-outbound-connections#outboundrules)               | Not available                                                                                           |
-| TCP Reset on Idle                                                                                                                             | [Available on any rule](/azure/load-balancer/load-balancer-tcp-reset)                                                         | Not available                                                                                           |
-| [Multiple front ends](/azure/load-balancer/load-balancer-multivip-overview)                                         | [Inbound and outbound](/azure/load-balancer/load-balancer-outbound-connections)                                               | Inbound only                                                                                            |
+| Outbound Rules                                                                                                                                | [Declarative outbound NAT configuration](/azure/load-balancer/load-balancer-outbound-connections#outboundrules)                                         | Not available                                                                                           |
+| TCP Reset on Idle                                                                                                                             | [Available on any rule](/azure/load-balancer/load-balancer-tcp-reset)                                                                                   | Not available                                                                                           |
+| [Multiple front ends](/azure/load-balancer/load-balancer-multivip-overview)                                                                   | [Inbound and outbound](/azure/load-balancer/load-balancer-outbound-connections)                                                                         | Inbound only                                                                                            |
 | Management Operations                                                                                                                         | Most operations < 30 seconds                                                                                                                            | 60-90+ seconds typical                                                                                  |
 | SLA                                                                                                                                           | [99.99%](https://azure.microsoft.com/support/legal/sla/load-balancer/v1_0/)                                                                             | Not available                                                                                           |
 
@@ -81,7 +81,7 @@ To compare and understand the differences, review the table below.
 
 
 
-## Creating and Configuring an Azure Load Balancer
+## Creating and configuring an Azure load balancer
 
 There are several tasks you need to perform to successfully create and configure an Azure Load Balancer. 
 
@@ -214,7 +214,7 @@ You need to enter the following information on the **Add health probe** page.
 
 You then click **Add** to add the health probe.
 
-![Add health probes](../media/create-healthprobe-2.png)
+![configure health probe settings](../media/create-healthprobe-2.png)
 
 ![View list of added health probes in load balancer](../media/create-healthprobe-3.png)
 

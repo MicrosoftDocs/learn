@@ -10,7 +10,7 @@ You will then create a Traffic Manager profile based on endpoint priority. This 
 
 The diagram below approximately illustrates the environment you will be deploying in this exercise.
 
-​	![Picture 14](../media/exercise-traffic-manager-environment-diagram.png)
+![Traffic manager profile pointed to two app service plans](../media/exercise-traffic-manager-environment-diagram.png)
 
  In this exercise, you will:
 
@@ -48,7 +48,7 @@ In this section, you will create two instances of a web application deployed in 
 
 5. Click **Review + create**.
 
-   ![Picture 18](../media/create-web-app-1.png)
+![create a web app](../media/create-web-app-1.png)
 
 6. Click **Create**. When the Web App successfully deploys, it creates a default web site.
 
@@ -66,7 +66,7 @@ In this section, you will create two instances of a web application deployed in 
 
 9. You should see the two new web apps listed.
 
-   ![Picture 19](../media/create-web-app-2.png)
+![showing two web apps listed in the Azure portal](../media/create-web-app-2.png)
 
  
 
@@ -78,7 +78,7 @@ Now you will create a Traffic Manager profile that directs user traffic based on
 
 2. In the search box at the top of the page, type **Traffic Manager profile**, and then select it from the pop-up list.
 
-   ![Picture 20](../media/create-tmprofile-1.png)
+![search results for traffic manager profile](../media/create-traffic-manager-profile-1.png)
 
 3. Click **Create**.
 
@@ -105,7 +105,7 @@ In this section, you will add the website in the East US as the primary endpoint
 
 2. Under **Settings**, select **Endpoints**, and then click **Add**.
 
-   ![Picture 21](../media/create-tmendpoints-1.png)
+![add endpoints](../media/create-traffic-manager-endpoints-1.png)
 
 3. On the **Add endpoint** page, enter the information from the table below.
 
@@ -133,8 +133,7 @@ In this section, you will add the website in the East US as the primary endpoint
 
 7. The two new endpoints are displayed in the Traffic Manager profile. Notice that after a few minutes the **Monitoring status** should change to **Online**.
 
-   ![Picture 22](../media/create-tmendpoints-2.png)
-
+![two traffic manager endpoints](../media/create-traffic-manager-endpoints-2.png)
  
 
 ## Task 4: Test the Traffic Manager profile
@@ -145,13 +144,13 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
 
 2. On the **Overview** screen, copy the **DNS name** entry to the clipboard (or take note of it somewhere).
 
-   ![Picture 23](../media/check-dnsname-1.png)
+![traffic manager DNS name](../media/check-dnsname-1.png)
 
 3. Open a web browser tab, and paste (or enter) the **DNS name** entry (contoso-tmprofile.trafficmanager.net) into the address bar, and press Enter.
 
 4. The web app's default web site should be displayed.
 
-   ![Picture 24](../media/tm-webapp-test-1a.png)
+![web apps default webpage](../media/traffic-manager-webapp-test-1a.png)
 
 5. Currently all traffic is being sent to the primary endpoint as you set its **Priority** to **1**.
 
@@ -161,7 +160,7 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
 
 8. On the **myPrimaryEndpoint** page, under **Status**, click **Disabled**, and then click **Save**.
 
-   ![Picture 25](../media/disable-primary-endpoint-1.png)
+![disable primary endpoint](../media/disable-primary-endpoint-1.png)
 
 9. Close the **myPrimaryEndpoint** page (click the **X** in the top right corner of the page).
 
@@ -174,7 +173,7 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
  
  ## Task 5: Clean up resources
 
-   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+   > [!NOTE] Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
@@ -184,6 +183,6 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
    Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
    ```
 
-    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+    > [!NOTE] The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
  
 

@@ -2,7 +2,7 @@ Azure Traffic Manager is a DNS-based traffic load balancer. This service allows 
 
 Traffic Manager uses DNS to direct the client requests to the appropriate service endpoint based on a traffic-routing method. Traffic manager also provides health monitoring for every endpoint. The endpoint can be any Internet-facing service hosted inside or outside of Azure. Traffic Manager provides a range of traffic-routing methods and endpoint monitoring options to suit different application needs and automatic failover models. Traffic Manager is resilient to failure, including the failure of an entire Azure region.
 
-## Key Features of Traffic Manager
+## Key features of Traffic Manager
 
 Traffic Manager offers the several key features.
 
@@ -17,7 +17,7 @@ Traffic Manager offers the several key features.
 
 
 
-## How Traffic Manager Works
+## How Traffic Manager works
 
 Azure Traffic Manager enables you to control the distribution of traffic across your application endpoints. An endpoint is any Internet-facing service hosted inside or outside of Azure.
 
@@ -65,9 +65,9 @@ Following on from the deployment example above; when a client requests the page 
 
    - The configured state of each endpoint (disabled endpoints are not returned)
 
-   - The current health of each endpoint, as determined by the Traffic Manager health checks. (see [Endpoint Monitoring Options](#_Endpoint_Monitoring_Options))
+   - The current health of each endpoint, as determined by the Traffic Manager health checks. 
 
-   - The chosen traffic-routing method. (see [Traffic Routing Methods](#_Traffic_Routing_Methods))
+   - The chosen traffic-routing method. 
 
 5. The chosen endpoint is returned as another DNS CNAME record. In this case, let us suppose contoso-eu.cloudapp.net is returned.
 
@@ -79,7 +79,7 @@ Following on from the deployment example above; when a client requests the page 
 
 The recursive DNS service caches the DNS responses it receives. The DNS resolver on the client device also caches the result. Caching enables subsequent DNS queries to be answered more quickly by using data from the cache rather than querying other name servers. The duration of the cache is determined by the 'time-to-live' (TTL) property of each DNS record. Shorter values result in faster cache expiry and thus more round-trips to the Traffic Manager name servers. Longer values mean that it can take longer to direct traffic away from a failed endpoint. Traffic Manager allows you to configure the TTL used in Traffic Manager DNS responses to be as low as 0 seconds and as high as 2,147,483,647 seconds (the maximum range compliant with RFC-1035), enabling you to choose the value that best balances the needs of your application.
 
-## Traffic Routing Methods
+## Traffic routing methods
 
 Azure Traffic Manager supports six traffic-routing methods to determine how to route network traffic to the various service endpoints. For any profile, Traffic Manager applies the traffic-routing method associated to it to each DNS query it receives. The traffic-routing method determines which endpoint is returned in the DNS response.
 
@@ -135,7 +135,7 @@ As mentioned earlier, each Traffic Manager profile can only specify one traffic-
 
 The example and diagrams below illustrate the combining of the **Performance** and **Weighted** traffic-routing methods in nested profiles. 
 
-### Example: Combining 'Performance' and 'Weighted' traffic routing methods using nested profiles
+### Example: combining 'performance' and 'weighted' traffic routing methods using nested profiles
 
 Suppose that you deployed an application in the following Azure regions: West US, West Europe, and East Asia. You use the **Performance** traffic-routing method to distribute traffic to the region closest to the user.
 
@@ -157,7 +157,7 @@ When the parent profile uses the **Performance** traffic-routing method, each en
 
 For more information, and for more example scenarios, see [Nested Traffic Manager profiles](/azure/traffic-manager/traffic-manager-nested-profiles).
 
-## Traffic Manager Endpoints
+## Traffic Manager endpoints
 
 Azure Traffic Manager enables you to control how network traffic is distributed to application deployments running in your different datacenters. You configure each application deployment as an endpoint in Traffic Manager. When Traffic Manager receives a DNS request, it chooses an available endpoint to return in the DNS response. Traffic manager bases the choice on the current endpoint status and the traffic-routing method.
 
@@ -175,7 +175,7 @@ You add endpoints to existing Traffic Manager profiles from the **Endpoints** pa
 
 For more information, visit [Traffic Manager endpoints](/azure/traffic-manager/traffic-manager-endpoint-types).
 
-## Configuring Traffic Manager Profiles
+## Configuring Traffic Manager profiles
 
 This example shows how to create and configure a new Traffic Manager profile to direct client traffic based on endpoint priority.
 
@@ -245,7 +245,7 @@ Once they have been checked their **Monitor status** changes to Online.
 
 ​	![View list of endpoints in Traffic Manager profile - 'Monitoring status' highlighted](../media/add-traffic-manager-endpoints-6.png)
 
-## Configuring Endpoint Monitoring
+## Configuring endpoint monitoring
 
 Azure Traffic Manager includes built-in endpoint monitoring and automatic endpoint failover. This feature helps you deliver high-availability applications that are resilient to endpoint failure, including Azure region failures.
 
