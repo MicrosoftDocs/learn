@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-resources-tools.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/13/2021
+  author: wwlpublish
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Suppose you are building a video-editing application that will offer online storage for user-generated video content. You will store the videos in Azure Blobs, so you need to create an Azure storage account to contain the blobs. Once the storage account is in place, it is unlikely you would remove and recreate it because this would delete all the user videos. Which tool is likely to offer the quickest and easiest way to create the storage account?"
+    choices:
+    - content: "Azure portal"
+      isCorrect: true
+      explanation: "That's correct. The portal is a good choice for one-off operations like creating a long-lived storage account. The portal gives you a GUI containing all the storage-account properties and provides tool tips to help you select the right options for your needs."
+    - content: "Azure CLI"
+      isCorrect: false
+      explanation: "That's incorrect. To use the CLI, you would need to research the command used to create a storage account. You would also need to either install the CLI locally or login to the cloud shell. For a one-off operation like creating a storage account, this is likely to take longer than using the Azure portal."
+    - content: "Azure PowerShell"
+      isCorrect: false
+      explanation: "That's incorrect. To use Azure PowerShell, you would need to research the command used to create a storage account. You would also need to either install PowerShell and Azure PowerShell locally or login to the cloud shell. For a one-off operation like creating a storage account, this is likely to take longer than using the Azure portal."
+  - content: "The Azure CLI can be installed on ..."
+    choices:
+    - content: "Linux"
+      isCorrect: false
+      explanation: "That's incorrect, other platforms are available."
+    - content: "Windows"
+      isCorrect: false
+      explanation: "That's incorrect, other platforms are available."
+    - content: "Both Linux and Windows"
+      isCorrect: true
+      explanation: "That's correct. The CLI is cross-platform and can be installed on Linux, macOS, and Windows. After installation, the CLI commands that you run are the same everywhere. This means you can learn the commands once and use them with any local installation or in the Azure Cloud Shell."
+  - content: "You are managing Azure locally using PowerShell. You have launched the app as an Administrator. Which of the following commands would you do first?"
+    choices:
+    - content: "Connect-AzAccount"
+      isCorrect: true
+      explanation: "That's correct. When you are working locally you are not automatically logged in to Azure. So, the first thing you should do is to connect to Azure and provide your credentials."
+    - content: "Get-AzResourceGroup"
+      isCorrect: false
+      explanation: "That's incorrect. This would not be the first command. The Get-AzResourceGroup cmdlet gets Azure resource groups in the current subscription."
+    - content: "Get-AzSubscription"
+      isCorrect: false
+      explanation: "That's incorrect. This would not be the first command. The Get-AzSubscription cmdlet gets the subscription ID, subscription name, and home tenant for subscriptions that the current account can access."
