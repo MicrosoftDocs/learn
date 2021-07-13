@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.microservices-apigateway-aspnet-core.review-kubernetes-ingress-controller-concepts
 metadata:
-  title: Review Kubernetes Ingress Controller
-  description: Review Kubernetes Ingress Controller
+  title: Understand Kubernetes ingress controller concepts
+  description: Understand how ingress controllers work in a k8s cluster.
   author: camsoper
   ms.author: casoper
   ms.date: 05/12/2021
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial
-title: Review Kubernetes Ingress Controller
-durationInMinutes: 10
+title: Understand Kubernetes ingress controller concepts
+durationInMinutes: 5
 content: |
   [!include[](includes/review-kubernetes-ingress-controller-concepts.md)]

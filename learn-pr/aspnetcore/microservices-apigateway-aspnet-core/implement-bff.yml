@@ -9,6 +9,6 @@ metadata:
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial
 title: Implement a new Backend for Frontend
-durationInMinutes: 10
+durationInMinutes: 15
 content: |
   [!include[](includes/implement-bff.md)]

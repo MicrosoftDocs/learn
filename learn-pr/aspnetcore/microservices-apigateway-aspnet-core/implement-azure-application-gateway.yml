@@ -9,6 +9,6 @@ metadata:
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial
 title: Exercise - Implement load balancer with Azure Application Gateway
-durationInMinutes: 10
+durationInMinutes: 18
 content: |
   [!include[](includes/implement-azure-application-gateway.md)]
