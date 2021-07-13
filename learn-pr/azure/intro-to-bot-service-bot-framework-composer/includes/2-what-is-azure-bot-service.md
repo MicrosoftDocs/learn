@@ -2,18 +2,23 @@ You need to begin exploring methods to provide chat support to your company's cu
 
 ## What is a bot and what does it do?
 
-A *bot* is an app that users interact with in a conversational way using text, graphics (such as cards or images), or speech. Bots provide a conversational experience that you can use to automate simple, repetitive tasks that don't necessarily require human interaction. These tasks might include taking a dinner reservation or gathering profile information. A bot essentially is a web application that has a conversational interface.
+A *bot* is an app that users interact with in a conversational way using text, graphics (such as cards or images), or speech. Bots provide a conversational experience that you can use to automate simple, repetitive tasks that don't necessarily require human interaction. These tasks might include taking a dinner reservation or gathering profile information. When you interact with an account on Microsoft Teams that has automated responses, or when you 'chat' with an AI assistant on a retailer's web site, these are examples of bots.
 
 > [!NOTE]
 > A bot interaction can be a quick question and answer, or it can be a sophisticated conversation that intelligently provides access to services.
 
 ## What is Azure Bot Service?
 
-*Azure Bot Service* is a collection of tools that you can use to create enterprise-grade conversational AI experiences. Use it to create conversational bots that interact with customers and provide them with an enriched, interactive chat experience. Bots can also solve business problems using AI and other cognition capabilities. You can use Azure Bot Service components to design, build, test, and deploy bot functionality. These components include Bot Framework Composer, or Composer, and the Bot Framework SDK.
+*Azure Bot Service* is a collection of services for hosting a conversational bot. It has turn-key solutions for infrastructure like authentication, scale-out and integration to enterprise services. It also provides built-in endpoints (called channels) that expose bot logic to text clients like SMS messages, mixed visual and text clients like Microsoft Teams, and voice clients like telephony. The bots might be stand-alone with all the logic built-in, or they might integrate as part of large cloud or hybrid architecture.
 
 ### Azure Bot
 
 The *Azure Bot* resource enables you to register your Composer or SDK bot in the Azure Bot Service. You can build, connect, and manage bots to interact with your users wherever they are, from your app or website to Teams, Messenger, and many other channels.
+
+It is the main resource type to be concerned with when dealing with Azure Bot Service.
+
+> [!NOTE]
+> The Azure Bot resource type simplifies the Azure Bot Service landscape. This combined resource type takes the place of both the Web App Bot resource and Bot Channels resource types.
 
 ### Core bot functionality
 
@@ -32,11 +37,13 @@ Bots created using Azure Bot Service have the following core functionalities:
 
 ## What is the Microsoft Bot Framework?
 
-*The Microsoft Bot Framework* is a collection of tools that you can use to create enterprise-grade conversational AI experiences. Use the framework tools to create conversational bots that interact with customers and provide them with an enriched, interactive chat experience. Bots can also solve business problems using AI and other cognition capabilities. You can use Bot Framework components to design, build, test, and deploy bot functionality. These components include Bot Framework Composer, the Bot Framework SDK, and the Bot Framework Emulator.
+*The Microsoft Bot Framework* is a collection of tools that you can use to create conversational AI experiences. Whereas the Azure Bot provides hosting and 'run time' services, the Bot Framework provides the visual tools, designers, and SDK for the development experience.
+
+Use the framework tools to create conversational bots that interact with customers and provide them with an enriched, interactive chat experience. Bots can also solve business problems using AI and other cognition capabilities. You can use Bot Framework components to design, build, test, and deploy bot functionality. These components include Bot Framework Composer, the Bot Framework SDK, and the Bot Framework Emulator.
 
 ### Bot Framework Composer
 
-*Bot Framework Composer*, built on the Bot Framework SDK, is an open-source IDE for developers to author, test, provision, and manage conversational experiences. It provides a powerful visual-authoring canvas. This canvas enables you to create dialogs, language-understanding models, knowledge bases and language generation responses from a single design canvas. Extend bots with code for more complex tasks such as integration with external services and apps. These bots can then be tested within Composer and provisioned into Azure as a Bot Service instance, along with any dependent resources.
+*Bot Framework Composer*, built on the Bot Framework SDK, is an open-source IDE for developers to author, test, and manage conversational experiences as well  provision Azure resources like the Azure Bot and cognitive services. It provides a powerful visual-authoring canvas. This canvas enables you to create dialogs, language-understanding models, knowledge bases and language generation responses from a single design canvas. Extend bots with code for more complex tasks such as integration with external services and apps. These bots can then be tested within Composer and provisioned into Azure as a Bot Service instance, along with any dependent resources.
 
 > [!NOTE]
 > Bot Framework Composer is available as a desktop application for Windows, macOS and Linux. It's also available as a web-based component that you can customize and extend.
