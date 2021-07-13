@@ -65,7 +65,7 @@ In this exercise, you will:
 
 - **Allow classic operation** will allow classic virtual networks to be link to the circuit.
 
-## Task 2: Retrieve your Service key
+## Task 2: Retrieve your service key
  
 
 1. You can view all the circuits that you created by selecting **All services &gt; Networking &gt; ExpressRoute circuits**.
@@ -101,8 +101,8 @@ In this exercise, you will:
 
 ![Azure portal - ExpressRoute circuit properties showing status is now provisioned](../media/provisioned.png)
 
- 
-1. Watch this demonstration of how to create and provision an ExpressRoute circuit: [Azure ExpressRoute - How to create an ExpressRoute circuit | Azure | Channel 9 (msdn.com)](https://channel9.msdn.com/Blogs/Azure/Azure-ExpressRoute-How-to-create-an-ExpressRoute-circuit?term=ExpressRoute&lang-en=true&pageSize=15&skip=15). 
+
+Watch this demonstration of how to create and provision an ExpressRoute circuit: [Azure ExpressRoute - How to create an ExpressRoute circuit | Azure | Channel 9 (msdn.com)](https://channel9.msdn.com/Blogs/Azure/Azure-ExpressRoute-How-to-create-an-ExpressRoute-circuit?term=ExpressRoute&lang-en=true&pageSize=15&skip=15). 
 
 Congratulations! You have created an ExpressRoute circuit and located the Service key, which you would need to complete the provisioning of the circuit.
 
@@ -123,15 +123,15 @@ You can delete your ExpressRoute circuit by selecting the **Delete** icon. Ensur
 ![Azure portal - delete an ExpressRoute circuit](../media/expressroute-circuit-delete.png)
 
 
-   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+   > [!NOTE] Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-1. Delete all resource groups you created throughout the labs of this module by running the following command:
+2. Delete all resource groups you created throughout the labs of this module by running the following command:
 
    ```powershell
    Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
    ```
-   >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+   > [!NOTE] The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
 
 

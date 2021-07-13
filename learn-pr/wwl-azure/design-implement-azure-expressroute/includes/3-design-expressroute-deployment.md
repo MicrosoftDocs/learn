@@ -68,7 +68,7 @@ Additional Connectivity options:
 - National Research and Education networks (NERN)
 - System integrators
 
-## Choose the right ExpressRoute Circuit and billing model
+## Choose the right ExpressRoute circuit and billing model
 
 Microsoft offers various Express Route options depending on the desired bandwidth of this private connection between the customer on premises network and the selected Azure region. Typically, enterprises need to evaluate their current usage and determine how much data they use monthly to start with. 
 
@@ -76,7 +76,7 @@ The next step is to figure out which of the available ExpressRoute is the best c
 
 When you deploy ExpressRoute, you must choose between the Local, Standard and Premium SKUs. All these options are available in a metered version, where you pay per used GB and an unlimited option.
 
-The other option is the ExpressRoute Direct, connecting your network to the closest Microsoft edge node which then connects to the Microsoft Global Network, to connect to other customers offices or factories and any Azure Region. The usage of the Microsoft Global Network is charged on top of the of the ExpressRoute Direct.
+The other option is the ExpressRoute Direct, connecting your network to the closest Microsoft Edge node which then connects to the Microsoft Global Network, to connect to other customers offices or factories and any Azure Region. The usage of the Microsoft Global Network is charged on top of the of the ExpressRoute Direct.
 
 Please refer to the [Express Route pricing](https://azure.microsoft.com/pricing/details/expressroute/) for details on metered and unlimited data plan based on the bandwidth.
 

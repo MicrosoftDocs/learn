@@ -31,7 +31,7 @@ Each peering requires separate BGP sessions (one pair for each peering type). Th
 > IPv6 support for private peering is currently in Public Preview. If you would like to connect your virtual network to an ExpressRoute circuit with IPv6-based private peering configured, please make sure that your virtual network is dual stack and follows the guidelines for [IPv6 for Azure VNet](/azure/virtual-network/ipv6-overview).
 
 
-## Configure Private peering
+## Configure private peering
 
 Azure compute services, namely virtual machines (IaaS) and cloud services (PaaS), that are deployed within a virtual network can be connected through the private peering domain. The private peering domain is a trusted extension of your core network into Microsoft Azure. You can set up bi-directional connectivity between your core network and Azure virtual networks (VNets). This peering lets you connect to virtual machines and cloud services directly on their private IP addresses.
 
@@ -61,7 +61,7 @@ Connectivity to all Azure and Microsoft 365 services causes many prefixes gets a
 
 **About route filters**
 
-When Microsoft peering gets configured on your ExpressRoute circuit, the Microsoft edge routers establish a pair of BGP sessions with your edge routers through your connectivity provider. No routes are advertised to your network. To enable route advertisements to your network, you must associate a route filter.
+When Microsoft peering gets configured on your ExpressRoute circuit, the Microsoft Edge routers establish a pair of BGP sessions with your edge routers through your connectivity provider. No routes are advertised to your network. To enable route advertisements to your network, you must associate a route filter.
 
 A route filter lets you identify services you want to consume through your ExpressRoute circuit's Microsoft peering. It is essentially an allowed list of all the BGP community values. Once a route filter resource gets defined and attached to an ExpressRoute circuit, all prefixes that map to the BGP community values gets advertised to your network.
 
@@ -85,7 +85,7 @@ A route filter can have only one rule, and the rule must be of type 'Allow'. Thi
 
 To add and update rules, select the manage rule tab for your route filter.
 
-![Azure portal - Route filter properties](../media/manage-route-filter.png)
+![Azure portal - manage route filter properties](../media/manage-route-filter.png)
 
 - Select the services you want to connect to from the drop-down list and save the rule when done.
 
@@ -111,7 +111,7 @@ To add and update rules, select the manage rule tab for your route filter.
 
 - You can view properties of a route filter when you open the resource in the portal.
 
-![Azure portal - Route filter properties](../media/view-route-filter.png)
+![Azure portal - View Route filter properties](../media/view-route-filter.png)
 
  
 
@@ -127,7 +127,7 @@ You can update the list of BGP community values attached to a circuit by selecti
 
 - Select the service communities you want and then select **Save**.
 
-![Azure portal - Add another rule](../media/add-route-filter-rule_s.png)
+![Azure portal - Add another rule](../media/add-route-filter-rules.png)
 
  
 
@@ -157,13 +157,13 @@ You can reset the Microsoft peering and the Azure private peering on an ExpressR
 
 - Choose the circuit that you want to change.
 
-![Azure portal - select ExpressRoute circuit](../media/expressroute-circuit-list_s.png)
+![Azure portal - select ExpressRoute circuit](../media/expressroute-circuit-lists.png)
 
  
 
 - Choose the peering configuration that you want to reset.
 
-![Azure portal - select peering to reset](../media/expressroute-circuit.png?)
+![Azure portal - select peering to reset](../media/expressroute-circuit.png)
 
 - Clear the **Enable Peering** check box, and then select **Save** to disable the peering configuration.
 

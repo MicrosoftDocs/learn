@@ -30,7 +30,7 @@ For an ExpressRoute circuit to be operational, the Circuit status must be Enable
 > [!NOTE] 
 > After configuring an ExpressRoute circuit, if the Circuit status is stuck in not enabled status, contact [Microsoft Support](https://portal.azure.com/?). On the other hand, if the Provider status is stuck in not provisioned status, contact your service provider.
 
-## **Validate Peering Configuration**
+## **Validate peering configuration**
 
 After the service provider has completed the provisioning the ExpressRoute circuit, multiple eBGP based routing configurations can be created over the ExpressRoute circuit between CEs/MSEE-PEs (2)/ (4) and MSEEs (5). Each ExpressRoute circuit can have: Azure private peering (traffic to private virtual networks in Azure), and/or Microsoft peering (traffic to public endpoints of PaaS and SaaS). 
 
@@ -74,7 +74,7 @@ The ARP table provides a mapping of the IP address and MAC address for a particu
 - Validate data transfer by reviewing bytes in / out.
 - Open a support ticket with Microsoft support if you're still experiencing issues.
 
-##**ExpressRoute monitoring tools**
+## **ExpressRoute monitoring tools**
 
 ExpressRoute uses Network insights to provide a detailed topology mapping of all ExpressRoute components (peerings, connections, gateways) in relation with one another. Network insights for ExpressRoute also have preloaded metrics dashboard for availability, throughput, packet drops, and gateway metrics.
 

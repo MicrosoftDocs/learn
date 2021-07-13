@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following can you connect with ExpressRoute Premium?"
+  - content: "Which of the following can be connected with ExpressRoute Premium?"
     choices:
     - content: "Resources in different Geopolitical regions."
       isCorrect: true
@@ -27,7 +27,7 @@ quiz:
     - content: "Resources within a single metropolitan area only."
       isCorrect: false
       explanation: "Incorrect. Azure Premium can connect more than resources within a single metropolitan area."
-  - content: "How can you provide a failover path for ExpressRoute?"
+  - content: "How can one provide a failover path for ExpressRoute?"
     choices:
     - content: "Configure a Site-to-Site VPN connection as a backup for ExpressRoute."
       isCorrect: true

@@ -27,7 +27,7 @@ quiz:
     - content: "Circuit number."
       isCorrect: false
       explanation: "Incorrect. There is no circuit number property."
-  - content: "You want to know if your service provider has made any changes that affect your circuit. Where can you check for this information?"
+  - content: "An engineer wants to know if their service provider has made any changes that affect their circuit. Where can they check for this information?"
     choices:
     - content: "Check the **Last modified by** property of the relevant peering."
       isCorrect: true

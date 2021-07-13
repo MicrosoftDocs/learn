@@ -27,7 +27,7 @@ quiz:
     - content: "Connect a local service provider to a data center."
       isCorrect: false
       explanation: "Incorrect. ExpressRoute Global Reach was not primarily designed to connect a local service provider to a data center."
-  - content: "You are a network engineer for a company with offices in London and Tokyo. How can you configure communications between the two offices?"
+  - content: "How can a network engineer for a company with offices in London and Tokyo configure communications between the two offices?"
     choices:
     - content: "Use a local service provider in London and a different local service provider in Tokyo. GlobalReach connects the branches using ExpressRoute and the Microsoft global network."
       isCorrect: true

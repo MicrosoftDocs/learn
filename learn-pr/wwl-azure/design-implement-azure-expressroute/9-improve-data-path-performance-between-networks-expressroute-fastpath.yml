@@ -27,7 +27,7 @@ quiz:
     - content: "Through the public internet."
       isCorrect: false
       explanation: "Incorrect. ExpressRoute FastPath does not send traffic through the public internet."
-  - content: "Your network has multiple VNets peered with the VNet that is connected to ExpressRoute. How should you modify your ExpressRoute FastPath deployment?"
+  - content: "A network has multiple VNets peered with the VNet that is connected to ExpressRoute. How should the ExpressRoute FastPath deployment be modified?"
     choices:
     - content: "Connect all the virtual networks to the ExpressRoute FastPath circuit directly."
       isCorrect: true
