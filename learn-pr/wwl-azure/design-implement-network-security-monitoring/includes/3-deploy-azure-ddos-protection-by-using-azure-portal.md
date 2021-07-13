@@ -4,7 +4,7 @@ A denial of service attack (DoS) is an attack that has the goal of preventing ac
 
 Distributed Denial of Service (DDoS) attacks are some of the largest availability and security concerns facing customers that are moving their applications to the cloud. A DDoS attack tries to drain an API's or application's resources, making that application unavailable to legitimate users. DDoS attacks can be targeted at any endpoint that is publicly reachable through the internet.
 
-## DDoS Implementation
+## DDoS implementation
 
 Azure DDoS protection, combined with application design best practices, provide defense against DDoS attacks. Azure DDoS protection provides the following service tiers:
 * **Basic**: Automatically enabled as part of the Azure platform. Always-on traffic monitoring, and real-time mitigation of common network-level attacks, provide the same defenses utilized by Microsoft's online services. The entire scale of Azure's global network can be used to distribute and mitigate attack traffic across regions. Protection is provided for IPv4 and IPv6 Azure public IP addresses.
@@ -100,7 +100,7 @@ Specific to resource attacks at the application layer, you should configure a we
 
 Even web application firewalls are susceptible to volumetric and state exhaustion attacks. Therefore, it is firmly recommended to enable DDoS Protection Standard on the WAF virtual network to help protect from volumetric and protocol attacks.
 
-## Deploying a DDoS Protection Plan
+## Deploying a DDoS protection plan
 
 The key stages of deploying as DDoS Protection plan are as follows:
 

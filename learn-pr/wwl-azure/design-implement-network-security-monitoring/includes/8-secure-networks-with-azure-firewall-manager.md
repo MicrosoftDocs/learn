@@ -64,8 +64,10 @@ The recommended process to deploy Azure Firewall Manager for Secured Virtual Hub
 
 4. **Configure route settings to route traffic to your Secured Virtual Hub.** You can easily route traffic to your secured hub for filtering and logging without User Defined Routes (UDR) on spoke Virtual Networks by using the Secured Virtual Hub Route Setting page.
 
-**You cannot have more than one hub per virtual WAN per region, however you can add multiple virtual WANs in the region to achieve this**.
+You cannot have more than one hub per virtual WAN per region, however you can add multiple virtual WANs in the region to achieve this.
 
-**You cannot have overlapping IP spaces for hubs in a vWAN**.
+You cannot have overlapping IP spaces for hubs in a vWAN.
 
-**Your hub VNet connections must be in the same region as the hub**.
+Your hub VNet connections must be in the same region as the hub.
+
+

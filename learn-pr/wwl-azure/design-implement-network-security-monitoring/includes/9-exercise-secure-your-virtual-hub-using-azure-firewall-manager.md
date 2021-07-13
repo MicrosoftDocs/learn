@@ -351,7 +351,7 @@ In this task you will test the application rule to confirm that it works as expe
 
 9. Open Internet Explorer and click **OK** in the **Set up Internet Explorer 11** dialog box.
 
-10. Browse to **https://** **www.microsoft.com**.
+10. Browse to **https://www.microsoft.com**.
 
 11. In the **Security Alert** dialog box, click **OK**.
 
@@ -361,7 +361,7 @@ In this task you will test the application rule to confirm that it works as expe
 
     ![RDP session browsing microsoft.com](../media/microsoft-home-page.png)
 
-14. Browse to **https://** **www.google.com**.
+14. Browse to **https://www.google.com**.
 
 15. You should be blocked by the firewall.
 
@@ -392,7 +392,7 @@ In this task you will test the network rule to confirm that it works as expected
 
 ## Task 10: Clean up resources 
 
->**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+> [!NOTE]  Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
@@ -402,4 +402,4 @@ In this task you will test the network rule to confirm that it works as expected
    Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
    ```
 
-    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+> [!NOTE]  The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.

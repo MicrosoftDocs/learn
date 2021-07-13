@@ -136,4 +136,4 @@ You can use several methods for deploying your Azure Firewall using Availability
 
 - Azure PowerShell - see [Deploy an Azure Firewall with Availability Zones using Azure PowerShell](/azure/firewall/deploy-availability-zone-powershell)
 
-- ARM template - see [Quickstart: Deploy Azure Firewall with Availability Zones - ARM template](/azure/firewall/deploy-template)
+- Azure Resource Manager template - see [Quickstart: Deploy Azure Firewall with Availability Zones - Azure Resource Manager template](/azure/firewall/deploy-template)

@@ -2,7 +2,7 @@ As your organization moves to Azure, you must design your network to protect res
 
 You now have the fundamental knowledge required to design and implement network security in Azure. 
 
-## Summary and Resources
+## Summary
 
 Now that you have reviewed this module, you should be able to:
 

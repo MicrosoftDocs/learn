@@ -1,6 +1,6 @@
 A Network Security Group (NSG) in Azure allows you to filter network traffic to and from Azure resources in an Azure virtual network. A network security group contains security rules that allow or deny inbound network traffic to, or outbound network traffic from, several types of Azure resources. For each rule, you can specify source and destination, port, and protocol.
 
-## NSG Security Rules
+## NSG security rules
 
 A network security group contains zero, or as many rules as desired, within Azure subscription limits. Each rule specifies the following properties:
 
