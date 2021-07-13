@@ -20,7 +20,7 @@ In this exercise, you will:
 + Task 7: Route traffic to your hub
 + Task 8: Test the application rule
 + Task 9: Test the network rule
-+ Task 10: Clean up resrources 
++ Task 10: Clean up resources
 
 ## Task 1: Create two spoke virtual networks and subnets
 
@@ -65,7 +65,7 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 6. For **Region**, select your region.
 
-7. For the **S** **ecured virtual hub name**, enter **Hub-01**.
+7. For the **secured virtual hub name**, enter **Hub-01**.
 
 8. For **Hub address space**, enter **10.2.0.0/16**.
 
@@ -390,7 +390,7 @@ In this task you will test the network rule to confirm that it works as expected
 7. Close both RDP sessions to disconnect them.
 
 
-## Task 10: Clean up resrources 
+## Task 10: Clean up resources 
 
 >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
