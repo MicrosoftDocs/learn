@@ -26,7 +26,7 @@ In this module you will:
 
 Suppose you manage a gourmet cheese making company in a southern location. The company is proud of its cheese, and is careful to maintain the perfect temperature and humidity of a natural cave that is used to age the cheese. There are sensors in the cave that report on the temperature and humidity. A remote operator can set a fan to new settings if needed, to maintain the perfect environment for the aging cheese. The fan can heat and cool, and humidify and de-humidify.
 
-  [![Close up photograph of matured cheese](../media/cheese-rect8.png)](../media/cheese-rect8.png#lightbox)
+  [![Close up photograph of matured cheese.](../media/cheese-rect8.png)](../media/cheese-rect8.png#lightbox)
 
 Caves are used to mature cheese, their constant temperature, humidity, and air flow make them nearly ideal for the process. Not to mention the cachet of having your cheese products mature in a natural cave, instead of a constructed cellar. Something to put on your product labels!
 
@@ -34,7 +34,7 @@ The accepted ideal temperature for aging cheese is 50 degrees fahrenheit (10 deg
 
 In a southern location, a natural cave near the surface might have an ambient temperature of around 70 degrees. The cave might also have a relative humidity of close to 100 percent, because of water seeping through the roof. These high numbers aren't perfect conditions for aging cheese. At a more northerly location, the ambient temperature of a natural cave can be the ideal of 50 degrees. Because of our location, we need some Azure IoT intervention!
 
-  [![Photograph of matured blue cheese](../media/cheese-circle1.png)](../media/cheese-circle1.png#lightbox)
+  [![Photograph of matured blue cheese.](../media/cheese-circle1.png)](../media/cheese-circle1.png#lightbox)
 
 ## The first step
 

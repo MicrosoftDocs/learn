@@ -12,10 +12,10 @@ Create a resource group to act as the production resource group.
 1. Select **Resource groups** > **New**.
 1. Enter **production-learn-rg** as the name for the resource group.
 1. Select **Review + create** > **Create**.
-1. Use the following quickstart template to create a virtual machine (VM) in your production resource group: [Deploy a simple Windows VM](https://azure.microsoft.com/resources/templates/101-vm-simple-windows/).  
+1. Use the following quickstart template to create a virtual machine (VM) in your production resource group: [Deploy a simple Windows VM](https://azure.microsoft.com/resources/templates/vm-simple-windows/).  
 1. Select **Deploy to Azure** on the template page.
 1. For **Resource group**, select **production-learn-rg**.
-1. Enter a username, password, and **DNS Label Prefix**.
+1. Enter a username and password.
 1. Select **Review + create** > **Create**.
 
 Now you need to create some additional resources that you'll eventually move to a development resource group.
@@ -37,12 +37,12 @@ Now, use the Azure portal to apply tags to resources so you can identify and loc
 1. Select the **production-learn-rg** resource group.
 1. Select the check box next to the **Name** field for both storage accounts you created.
 
-    ![Screenshot that shows your development resources selected](../media/3-select-dev-resources.png)
+    ![Screenshot that shows your development resources selected.](../media/3-select-dev-resources.png)
 
 1. Select **Assign tags**.
 1. Enter the following values:
 
-    ![Screenshot that shows the Assign tags pane](../media/3-assign-tags.png)
+    ![Screenshot that shows the Assign tags pane.](../media/3-assign-tags.png)
 
     |Field |Value  |
     |---------|---------|
@@ -63,7 +63,7 @@ Now you'll filter your resources and find your development tagged resources.
 
 1. At the top of the Azure portal, search on **tags**.
 
-    ![Screenshot that shows the search for tags](../media/3-search-tags.png)
+    ![Screenshot that shows the search for tags.](../media/3-search-tags.png)
 
 1. Select **Tags**.
 1. Select the **environment:development** tag. 

@@ -37,7 +37,7 @@ Identify key access patterns for a sample e-commerce application. Define the dat
 
     This is the model you will be starting from. The relational model has nine entities each in their own table.
 
-    :::image type="content" source="../media/1-full-relational-model.png" alt-text="relational model for our application":::
+    :::image type="content" source="../media/1-full-relational-model.png" alt-text="relational model for our application.":::
 
 1. **What's the difference between NoSQL and relational databases?**
 
@@ -49,7 +49,7 @@ Identify key access patterns for a sample e-commerce application. Define the dat
 
     The second defining characteristic of a NoSQL database is there are no foreign keys, constraints, joins or enforced relationships of any kind between data that spans partitions. Since data in a NoSQL database is stored on different physical servers, enforcing constraints or relationships by placing locks on data could result in negative or unpredictable performance. Azure Cosmos DB is designed to provide high and predictable performance so does not put any locks on data. However, you can manage relational data and relationships in Azure Cosmos DB. It just uses different mechanisms to do it.
 
-    :::image type="content" source="../media/2-horizontal-scale-non-relational.png" alt-text="horizontal scale and non-relational":::
+    :::image type="content" source="../media/2-horizontal-scale-non-relational.png" alt-text="horizontal scale and non-relational.":::
 
     Understanding how the economics of computing has changed since relational databases were first introduced to today can help explain why these two types of databases are so different.
 
@@ -71,7 +71,7 @@ Identify key access patterns for a sample e-commerce application. Define the dat
 
     Let's start with the customer entities in our e-commerce database. Below there are three different entities and the relationships between them. The three entities are, Customer, CustomerAddress and CustomerPassword. Our Customer entity has a 1:Many  relationship to CustomerAddress and Customer has a 1:1 relationship to CustomerPassword.
 
-    :::image type="content" source="../media/3-customer-relational-model.png" alt-text="relational model for customer entities":::
+    :::image type="content" source="../media/3-customer-relational-model.png" alt-text="relational model for customer entities.":::
 
     In our application, there are three operations we will perform on the Customer entities.
     - **Create a customer**: When a new user first visits the e-commerce site a new customer will be created.
@@ -82,7 +82,7 @@ Identify key access patterns for a sample e-commerce application. Define the dat
 
     Azure Cosmos DB stores data as JSON, so we can model the 1:Many relationship between customer and customerAddress and embed the customer address data as an array. For the 1:1 relationship between customer and customerPassword, we can embed that as an object into our new single customer document. This will allow the e-commerce application to create, edit or retrieve customer data in a single request. Below is what our customer entity looks like.
 
-    :::image type="content" source="../media/3-modeled-customer-document.png" alt-text="modeled customer document":::
+    :::image type="content" source="../media/3-modeled-customer-document.png" alt-text="modeled customer document.":::
 
 1. **When to embed or reference data in a document**
 
@@ -114,7 +114,7 @@ Identify key access patterns for a sample e-commerce application. Define the dat
     - customerAddress: `SELECT * FROM c WHERE c.customerId = "FFD0DD37-1F0E-4E2E-8FAC-EAF45B0E9447"`
     - customerPassword: `SELECT * FROM c WHERE c.id = "FFD0DD37-1F0E-4E2E-8FAC-EAF45B0E9447"`
 
-    :::image type="content" source="../media/5-customer-query-v1.png" alt-text="query stats for customer v1 query":::
+    :::image type="content" source="../media/5-customer-query-v1.png" alt-text="query stats for customer v1 query.":::
 
     Next navigate to the **Database-v2** database and in the customer container, run the following query.
 
@@ -122,7 +122,7 @@ Identify key access patterns for a sample e-commerce application. Define the dat
 
     First observe the data coming back is now a hierarchy of customer, address and password data. Next click on query stats and view the RU/s consumed to retrieve this data.
 
-    :::image type="content" source="../media/5-customer-query-v2.png" alt-text="query results for customer v2 query":::
+    :::image type="content" source="../media/5-customer-query-v2.png" alt-text="query results for customer v2 query.":::
 
     As you can observe, the cost for this second query is much less expensive than the combined cost for running three queries independently. In addition, because this data is returned in a single operation, the latency for returning this data is also lower.
 
@@ -130,15 +130,15 @@ Identify key access patterns for a sample e-commerce application. Define the dat
 
     Azure Cosmos DB is a horizontally scalable database. Storage and throughput are increased by adding more physical servers (or partitions) to access and store data. The maximum storage size of a physical partition is 50 GB and the maximum throughput is 10,000 RU/s.
 
-    :::image type="content" source="../media/6-physical-partitions.png" alt-text="physical partitions in Cosmos DB":::
+    :::image type="content" source="../media/6-physical-partitions.png" alt-text="physical partitions in Cosmos DB.":::
 
     However, Cosmos DB abstracts this physical layer and introduces the concept of a logical partition that provides a uniform way to allow data from multiple partitions to be stored on the same physical server, as well as be moved around between servers or to new servers, as data grows. The maximum size for a logical partition is 20 GB.
 
-    :::image type="content" source="../media/6-logical-partitions.png" alt-text="logical partitions":::
+    :::image type="content" source="../media/6-logical-partitions.png" alt-text="logical partitions.":::
 
     A partition key provides a way to route data for a logical partition and is a property that exists within every document in your container that routes your data. A container is another abstraction and for all data stored with the same partition key. The partition key is defined when you create a container. In this example below the container has a partition key of `/username` so properties with the same value are stored in the same logical partition.
 
-    :::image type="content" source="../media/6-container-partition-key.png" alt-text="create new container with partition key":::
+    :::image type="content" source="../media/6-container-partition-key.png" alt-text="create new container with partition key.":::
 
    **Avoiding hot partitions**
 
@@ -150,7 +150,7 @@ Identify key access patterns for a sample e-commerce application. Define the dat
 
     A hot partition on storage occurs when you have a partition key that results in highly asymmetric storage patterns. As an example, consider a multi-tenant application that uses tenantId as it's partition key with three tenants, A, B and B. Tenants A and B are very small. Tenant C is massive and quickly hits the 20 GB limit for it's partition. In this scenario we need a different partition key that will spread the storage across more logical partitions.
 
-    :::image type="content" source="../media/6-hot-partition-storage.png" alt-text="storage hot partition":::
+    :::image type="content" source="../media/6-hot-partition-storage.png" alt-text="storage hot partition.":::
 
     **Throughput**
 
@@ -160,11 +160,11 @@ Identify key access patterns for a sample e-commerce application. Define the dat
 
     As an example, if you have a container with 30K RU/s, this would be spread across the 3 physical partitions for the same three tenants above. So each tenant gets 10K RU/s. If tenant C consumes all of it’s 10K RU/s it will be rate limited as it cannot consume the throughput allocated to the other partitions. This results in poor performance for tenant C and unused compute capacity for the other tenants. Ultimately, this partition key results in a database design that cannot scale.
 
-    :::image type="content" source="../media/6-hot-partition-throughput.png" alt-text="throughput hot partition":::
+    :::image type="content" source="../media/6-hot-partition-throughput.png" alt-text="throughput hot partition.":::
 
     When data and requests are spread evenly, this ensures that as the database grows, it will do so in a way that best utilizes both the storage and throughput fully. This will result in the best possible performance and highest efficiency. In short, the database design will scale.
 
-    :::image type="content" source="../media/6-partitions-even.png" alt-text="partitions even":::
+    :::image type="content" source="../media/6-partitions-even.png" alt-text="partitions even.":::
 
     **Considerations for reads versus writes**
 
@@ -172,23 +172,23 @@ Identify key access patterns for a sample e-commerce application. Define the dat
 
     In a read heavy workload, the way to ensure you read data from a single partition is to use the partition key property in an equality filter on the WHERE clause for your queries. In this illustration below we have a container that is partitioned by username. With a query like the one below, we are assured this query will only hit a single logical partition so it's performance will always be good.
 
-    :::image type="content" source="../media/6-in-partition-query.png" alt-text="in partition query":::
+    :::image type="content" source="../media/6-in-partition-query.png" alt-text="in partition query.":::
 
     However a query that filtered on a different property, such as favoriteColor would "fan out" to all partitions in the container. This is also known as a cross-partition query. Such a query will work fine when the container is small and only occupies a single partition. However, as the container grows larger with more and more physical partitions, this query will become slower and more expensive because it will need to check more and more partitions to get the results.
 
-    :::image type="content" source="../media/6-cross-partition-query.png" alt-text="cross partition query":::
+    :::image type="content" source="../media/6-cross-partition-query.png" alt-text="cross partition query.":::
 
     **Choosing partition key for customers**
 
     Now that we have all this new knowledge about partitioning in Azure Cosmos DB we can now decide on a partition key for our customer data. As we covered earlier there are three operations we perform on customers: create a customer, update a customer, and retrieve a customer. In this case we will retrieve the customer by it's *id* and since that operation will be called the most, it makes sense to make the customer's id the partition key for the container.
 
-    :::image type="content" source="../media/6-customer-partition-key.png" alt-text="customer partition key":::
+    :::image type="content" source="../media/6-customer-partition-key.png" alt-text="customer partition key.":::
 
     You may worry here that making the id the partition key means that we will have as many logical partitions as there are customers with each logical partition containing only a single document. Millions of customers, would result in millions of logical partitions.
 
     But this is perfectly fine! Logical partitions are a virtual concept and there is no upper limit to have many logical partitions you can have. Azure Cosmos DB will co-locate multiple logical partitions on the same physical partition. As logical partitions grow in size, Cosmos DB will move them to different physical partitions when needed.
 
-    :::image type="content" source="../media/6-single-document-per-partition.png" alt-text="single document per partition":::
+    :::image type="content" source="../media/6-single-document-per-partition.png" alt-text="single document per partition.":::
 
     **Knowledge check**
 
@@ -201,15 +201,15 @@ Identify key access patterns for a sample e-commerce application. Define the dat
 
     The query for this last operation will look like this one below. Even though we want to try to optimize read-heavy operations to be single-partition this one is cross-partition. The data for product category will never grow near 20 GB in size. However, we are going to model this data in a way that will result in a single partition query to list all product categories. But we are doing this for a different reason which will be explained a bit later.
 
-    :::image type="content" source="../media/7-product-category-model.png" alt-text="product category model":::
+    :::image type="content" source="../media/7-product-category-model.png" alt-text="product category model.":::
 
     The technique we are going to apply here is to add a *discriminator property* to our schema and give it a constant value for every document in our container. The name for our new property will be called, `type` and  the value set to "category" for each document. The container can now be created with a partition key of `type`.
 
-    :::image type="content" source="../media/7-product-category-model-type.png" alt-text="product category model type":::
+    :::image type="content" source="../media/7-product-category-model-type.png" alt-text="product category model type.":::
 
     Next up in our relational model is ProductTag. This table is nearly identical in function to product category. We will take the same approach here and model the id, name properties as well as create a discriminator property called `type` with a constant value of "tag". We will create a new container called, `productTag` and make `type` the new partition key.
 
-    :::image type="content" source="../media/7-product-tag-model.png" alt-text="product tag model":::
+    :::image type="content" source="../media/7-product-tag-model.png" alt-text="product tag model.":::
 
     Most people find this technique for modeling small lookup tables strange. However, by modeling our data this way, it gives us an opportunity to make a further optimization which we will do in the next module.
 

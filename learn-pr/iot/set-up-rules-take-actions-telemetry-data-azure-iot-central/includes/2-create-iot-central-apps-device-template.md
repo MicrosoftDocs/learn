@@ -20,7 +20,7 @@ A _capability model_ contains a definition of a device template. A device templa
 
 1. Click **IoT device**.
 
-    [![Screenshot showing the icon to create a custom IoT device template](../media/rules-actions-new-template.png)](../media/rules-actions-new-template.png#lightbox)
+    [![Screenshot showing the icon to create a custom IoT device template.](../media/rules-actions-new-template.png)](../media/rules-actions-new-template.png#lightbox)
 
 1. Click **Next: Customize**.
 
@@ -30,11 +30,11 @@ A _capability model_ contains a definition of a device template. A device templa
 
 1. Select **Import capability model**.
 
-    [![Screenshot showing the icon to import a capability model](../media/rules-actions-import-model.png)](../media/rules-actions-import-model.png#lightbox)
+    [![Screenshot showing the icon to import a capability model.](../media/rules-actions-import-model.png)](../media/rules-actions-import-model.png#lightbox)
 
 1. Navigate to where you downloaded the JSON file containing the capability model, and open that file. You should now see a **Summary** page of all the elements of the capability model.
 
-    [![Screenshot showing the summary of the capability model](../media/rules-actions-model-summary.png)](../media/rules-actions-model-summary.png#lightbox)
+    [![Screenshot showing the summary of the capability model.](../media/rules-actions-model-summary.png)](../media/rules-actions-model-summary.png#lightbox)
 
 1. Click **Publish**, in the top-right menu bar, and then **Publish** again in the dialog that follows, to publish the capability model. Only a published model is available for your app to use.
 
@@ -44,7 +44,7 @@ To visualize the movements and state of the refrigerated truck, we need to creat
 
 1. Click on the **Views** menu option, then on **Visualizing the device**.
 
-    [![Screenshot showing how to create a new view](../media/refrigerated-trucks-add-view.png)](../media/refrigerated-trucks-add-view.png#lightbox)
+    [![Screenshot showing how to create a new view.](../media/refrigerated-trucks-add-view.png)](../media/refrigerated-trucks-add-view.png#lightbox)
 
 1. You should now see a list with titles **Telemetry**, **Property**, and some other entries, of the capability model, each with a check box.
 
@@ -56,7 +56,7 @@ To visualize the movements and state of the refrigerated truck, we need to creat
 
 1. When you've added all the tiles, scroll around a bit on your dashboard, and check out the wording in the tiles. You can drag tiles around, and the portal will try to rearrange them neatly.
 
-    [![Screenshot showing some sample dashboard tiles](../media/refrigerated-trucks-sample-tiles.png)](../media/refrigerated-trucks-sample-tiles.png#lightbox)
+    [![Screenshot showing some sample dashboard tiles.](../media/refrigerated-trucks-sample-tiles.png)](../media/refrigerated-trucks-sample-tiles.png#lightbox)
 
 1. When you are satisfied with your dashboard, click **Save**, then click **Publish**. You'll now notice that in the dialog that appears, that the **Views** entry is **Yes**. Click **Publish** in the dialog.
 
@@ -74,7 +74,7 @@ By "real" device, we mean IoT Central understands that there's a remote app runn
 
 1. Click **+ New**. Verify in the **Create a new device** dialog that the device template is **RefrigeratedTruck**.
 
-    [![Screenshot showing the dialog to create a device](../media/refrigerated-trucks-create-new-device.png)](../media/refrigerated-trucks-create-new-device.png#lightbox)
+    [![Screenshot showing the dialog to create a device.](../media/refrigerated-trucks-create-new-device.png)](../media/refrigerated-trucks-create-new-device.png#lightbox)
 
 1. Change the **Device name** to a friendlier name, say "RefrigeratedTruck - 1".
 
@@ -152,7 +152,7 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
 
 1. Use the **{ }** icon in Azure Cloud Shell to navigate to the connection1.txt file. You'll probably have to expand the **refrigerated-truck** node to locate it. Double-click on connection1.txt to open the file. Carefully copy all the contents to your text tool.
 
-    [![Screenshot showing how to locate the connection1.txt file in the Azure Cloud Shell](../media/refrigerated-trucks-connection1.png)](../media/refrigerated-trucks-connection1.png#lightbox)
+    [![Screenshot showing how to locate the connection1.txt file in the Azure Cloud Shell.](../media/refrigerated-trucks-connection1.png)](../media/refrigerated-trucks-connection1.png#lightbox)
 
     > [!IMPORTANT]
     > The last element of the connection string is the Primary Key. Verify that the connection string in your text file ends with an exact copy of the Primary Key, and if not, correct the copy you've made of the correction string in your text document.

@@ -40,7 +40,6 @@ You'll perform this exercise using the Azure portal.
     | Subscription | Concierge Subscription |
     | Resource Group | <rgn>[sandbox resource group]</rgn> (This resource group will have been created for you in the sandbox. Click on the Resource Group field's drop-down arrow to select.) |
     | Account Name | Enter a unique name, such as your initials, the date (in numeric format), and the text *cosmosdbaccount*. For example, *jpws01012020cosmosdbaccount* |
-    | API | Core (SQL) |
     | Location | Accept the default location |
     | Capacity mode | Provisioned throughput |
     | Apply Free Tier Discount | Do Not Apply |
@@ -119,7 +118,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
 
 1. On the left-hand navigation menu in the Azure portal, select **Create a resource**.
 
-2. On the **New** page, select **Storage account - blob, file, table, queue**.
+2. On the **New** page, select **Storage account**.
 
     > [!div class="mx-imgBorder"]
     > ![Image of the **New** page in the Azure portal. The user has selected **Storage account - blob, file, table, queue**](../media/7-new-page-2.png)

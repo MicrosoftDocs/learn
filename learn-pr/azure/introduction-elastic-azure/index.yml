@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.azure.introduction-elastic-azure
+metadata:
+  moduleType: introduction
+  title: Introduction to Elastic on Azure
+  description: Evaluate whether Elastic on Azure is appropriate for your Linux workload.
+  ms.date: 06/15/2021
+  author: yenchiho
+  ms.author: yenchiho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Elastic on Azure
+summary: Discover the unique benefits of running Elastic on Azure and the different deployment options that support your Linux workloads.
+abstract: |
+  By the end of this module, you'll be able to:
+
+  - Evaluate whether Elastic on Azure is appropriate for your Linux workload
+  - Describe how the three different deployment options for Elastic on Azure ease your migration to the cloud
+prerequisites: |
+  - Beginner level understanding of running Linux on Azure 
+  - Awareness of Elastic and the Elastic Stack (“ELK Stack”)  
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - database-administrator
+products:
+  - azure
+  - azure-linux-vm
+  - azure-virtual-machines
+  - azure-kubernetes-service
+units:
+- learn.azure.introduction-elastic-azure.introduction
+- learn.azure.introduction-elastic-azure.what
+- learn.azure.introduction-elastic-azure.how
+- learn.azure.introduction-elastic-azure.when
+- learn.azure.introduction-elastic-azure.knowledge-check
+- learn.azure.introduction-elastic-azure.summary
+badge:
+  uid: learn.azure.introduction-elastic-azure.badge

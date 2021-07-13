@@ -79,7 +79,7 @@ In the preceding JSON:
 
 Because the logs are being generated in a structured format, they can be visualized in a centralized logging system like Seq. Seq enables filtering based on the structured format, as shown:
 
-:::image type="content" source="../media/3-logging-monitoring/structured-logging-visualization.png" alt-text="structured logging visualization" border="true" lightbox="../media/3-logging-monitoring/structured-logging-visualization.png":::
+:::image type="content" source="../media/3-logging-monitoring/structured-logging-visualization.png" alt-text="structured logging visualization." border="true" lightbox="../media/3-logging-monitoring/structured-logging-visualization.png":::
 
 ## Logging contexts and correlation IDs
 
@@ -200,7 +200,7 @@ Later in this module, you'll learn to configure the Serilog sink to Application 
 
 Azure Monitor helps you understand how your cloud-native services are performing and proactively identifies issues affecting them. The following diagram provides a high-level view of Azure Monitor:
 
-:::image type="content" source="../media/3-logging-monitoring/azure-monitor.png" alt-text="Azure Monitor visualization" border="true" lightbox="../media/3-logging-monitoring/azure-monitor.png":::
+:::image type="content" source="../media/3-logging-monitoring/azure-monitor.png" alt-text="Azure Monitor visualization." border="true" lightbox="../media/3-logging-monitoring/azure-monitor.png":::
 
 In the preceding diagram:
 
@@ -216,7 +216,7 @@ Application Insights is an extensible Application Performance Management (APM) s
 
 The following diagram depicts the ingestion and consumption of telemetry as related to Application Insights:
 
-:::image type="content" source="../media/3-logging-monitoring/ai-diagram.png" alt-text="Application Insights diagram" border="true" lightbox="../media/3-logging-monitoring/ai-diagram.png":::
+:::image type="content" source="../media/3-logging-monitoring/ai-diagram.png" alt-text="Application Insights diagram." border="true" lightbox="../media/3-logging-monitoring/ai-diagram.png":::
 
 Additionally, you can pull in telemetry from the host environments such as performance counters, Azure diagnostics, or Docker logs. All these telemetry streams are integrated into Azure Monitor. In the Azure portal, you can apply powerful analytic and search tools to the raw data.
 

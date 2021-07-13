@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.analyze-images.analyze-image
+title: Analyze an image
+metadata:
+  title: Analyze an image
+  description: "Analyze an image"
+  ms.date: 07/09/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-analyze-image.md)]
