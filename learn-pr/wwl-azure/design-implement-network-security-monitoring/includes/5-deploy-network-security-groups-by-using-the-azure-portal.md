@@ -20,7 +20,7 @@ Azure creates the following default rules in each network security group that yo
 
 
 | Direction | Name                          | Priority | Source            | Source Ports | Destination    | Destination Ports | Protocol | Access |
-|  | -- | -- | -- |  | -- | -- | -- |  |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | Inbound   | AllowVNetInBound              | 65000    | VirtualNetwork    | 0-65535      | VirtualNetwork | 0-65535           | Any      | Allow  |
 | Inbound   | AllowAzureLoadBalancerInBound | 65001    | AzureLoadBalancer | 0-65535      | 0.0.0.0/0      | 0-65535           | Any      | Allow  |
 | Inbound   | DenyAllInbound                | 65500    | 0.0.0.0/0         | 0-65535      | 0.0.0.0/0      | 0-65535           | Any      | Deny   |
