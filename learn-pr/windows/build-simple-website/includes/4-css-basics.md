@@ -82,7 +82,7 @@ What you're selecting is an existing element that you previously defined in HTML
 
    The webpage opens in your default browser.
 
-   :::image type="content" source="../media/chrome-applied-font-styles.png" alt-text="Screenshot of website with font styles applied":::
+   :::image type="content" source="../media/chrome-applied-font-styles.png" alt-text="Screenshot of website with font styles applied.":::
 
 Are the font styles what you expected to see? It's interesting how styles cascade from `body` to `h1`. We didn't define anything for `h1`, so it inherits styling from the `body`. However, `li` takes precedence over the `body` tag because you specifically defined a style for it.
 
@@ -113,7 +113,7 @@ Next, you'll add support for a color theme for your website. Begin by defining a
 
   The webpage opens in your default browser. Notice that the light theme using a green background appears.
 
-  :::image type="content" source="../media/chrome-light-theme.png" alt-text="Screenshot of website with light theme applied":::
+  :::image type="content" source="../media/chrome-light-theme.png" alt-text="Screenshot of website with light theme applied.":::
 
 ## View applied CSS
 
@@ -133,7 +133,7 @@ Next, you'll add support for a color theme for your website. Begin by defining a
 
 1. Expand the unordered list and select a `<li>` element. Note the custom style `font-family: helvetica;`, which overrides the style for the `<body>` element.
 
-:::image type="content" source="../media/chrome-light-theme-in-dev-tools.png" alt-text="Screenshot of website in dev tools with light theme applied":::
+:::image type="content" source="../media/chrome-light-theme-in-dev-tools.png" alt-text="Screenshot of website in dev tools with light theme applied.":::
 
 ## Add a dark theme
 
@@ -188,7 +188,7 @@ To add support for a dark theme to your CSS, use the following steps.
 
 1. To view the dark theme, open the file `index.html` and manually edit the default theme in the `<body>` element to dark theme (`dark-theme`), and then view the page in the browser.
 
-   :::image type="content" source="../media/chrome-dark-theme.png" alt-text="Screenshot of website with dark theme applied":::
+   :::image type="content" source="../media/chrome-dark-theme.png" alt-text="Screenshot of website with dark theme applied.":::
 
 1. Edit the `<body>` element to switch the default back to light theme.
 

@@ -10,7 +10,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 
 1. Select **Azure Active Directory** > **Properties**.
 
-    ![The Azure AD Properties pane](../media/4-azure-ad-properties.png)
+    ![The Azure AD Properties pane.](../media/4-azure-ad-properties.png)
 
 1. Under **Access management for Azure resources**, select **Yes**.
 
@@ -26,7 +26,7 @@ This exercise is optional. To complete it, you need access to an Azure subscript
 1. Select **Access control (IAM)** > **Role assignments**.
 1. Under **User Access Administrator**, ensure that you have the **Root (inherited)** scope.
 
-    ![Screenshot displaying the User Access Administrator role assigned](../media/4-check-role.png)
+    ![Screenshot displaying the User Access Administrator role assigned.](../media/4-check-role.png)
 
 ## Assign a user as an administrator of a subscription
 

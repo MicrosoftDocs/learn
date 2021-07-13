@@ -80,12 +80,12 @@ You are going to create a new secret key in GitHub to create a handshake between
 
 Go to the Azure portal where your web app is hosted. Select **Get Publish Profile** to download a file.
 
-![your profile](../media/profile.png)
+![your profile.](../media/profile.png)
 
 In your GitHub repo, go to **Settings > Secrets**. Copy and paste the contents of that file into a new Secret with the name PORTAL_PUBLISH_PROFILE, and save it.
 
 Now, when you push new code to your repo, your GitHub action will build and publish the new codebase and your web app will be refreshed.
 
-![Publishing changes](../media/github-actions.png)
+![Publishing changes.](../media/github-actions.png)
 
 Try it with a new model to watch the changes happen automatically.

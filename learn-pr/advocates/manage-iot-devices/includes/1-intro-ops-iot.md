@@ -18,7 +18,7 @@ Imagine a scenario where there are many sensor devices. For example, devices rec
 
 In this module, you'll learn the basics of hub administration.
 
-[![Photograph of a Raspberry Pi device](../media/iot-admin-raspberry-pi.png)](../media/iot-admin-raspberry-pi.png#lightbox)
+[![Photograph of a Raspberry Pi device.](../media/iot-admin-raspberry-pi.png)](../media/iot-admin-raspberry-pi.png#lightbox)
 
 A popular device for getting experience with IoT is the Raspberry Pi device. This device is a small circuit board with some LED lights, some sensors (including for temperature), and the ability to communicate with an IoT hub. Some developers will want to physically connect the device and gain experience that way. A simpler alternative is to use Microsoft's Raspberry Pi simulator and do everything in software on your computer. This process is the approach we take in this module: you'll set up an IoT hub, define a single device, and then use the simulator to send telemetry to the hub.
 

@@ -27,7 +27,7 @@ Now we need to create a single device identity, the sensor monitoring the cheese
 1. Click **+ New**.
 1. In the **Create a device** screen that follows, enter a **Device ID**, such as "CheeseCaveID". Ensure **Auto-generate keys** is enabled, as is **Connect this device to an IoT Hub**, and click **Save**.
 
-    [![Screenshot showing the creation of an IoT Hub device identity](../media/cheesecave-device-create.png)](../media/cheesecave-device-create.png#lightbox)
+    [![Screenshot showing the creation of an IoT Hub device identity.](../media/cheesecave-device-create.png)](../media/cheesecave-device-create.png#lightbox)
 
 1. You should now see your device in the list of devices for the IoT Hub. Click on the device name. Copy your **Device ID**, and the **Primary Connection String** to a text file (using Notepad, or similar text editor).
 

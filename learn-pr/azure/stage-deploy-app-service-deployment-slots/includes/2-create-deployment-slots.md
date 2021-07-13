@@ -53,20 +53,20 @@ Before you create a slot, make sure your web app is running in the Standard, Pre
 
 1. Choose whether to clone settings from another slot. If you choose to clone, settings are copied to your new slot from the slot you specify.
 
-    ![Name a new deployment slot and choose whether to clone settings](../media/2-add-a-slot.png)
+    ![Name a new deployment slot and choose whether to clone settings.](../media/2-add-a-slot.png)
 
 > [!NOTE]
 > Although you can clone settings to a new slot, you can't clone content. New slots always begin with no content. You must deploy content by using git or another deployment strategy. The clone operation copies the configuration to the new slot. After you clone the settings, the configuration of the two slots can be changed independently.
 
 Select **Add** to create the new slot. You now see the new slot in the list on the **Deployment Slots** page. Select the slot to view its management page.
 
-![The list of deployment slots for a web app](../media/2-list-of-slots.png)
+![The list of deployment slots for a web app.](../media/2-list-of-slots.png)
 
 ## Access a slot
 
 The new slot's hostname is derived from the web app name and the name of the slot. You see this hostname when you select the slot on the **Deployment Slots** page:
 
-![Finding the URL for a new slot](../media/2-finding-slot-url.png)
+![Finding the URL for a new slot.](../media/2-finding-slot-url.png)
 
 You can deploy your code to the new slot the same way you deploy it for the production slot. Just substitute the new slot's name or URL in the configuration of the deployment tool you use. If you use FTP to deploy, you'll see the FTP hostname and username just under the slot's URL.
 

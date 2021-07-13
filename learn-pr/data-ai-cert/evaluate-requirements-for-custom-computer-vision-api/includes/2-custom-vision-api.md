@@ -2,7 +2,7 @@ The Custom Vision APIs use built-in algorithms that provide the services with "i
 
 The Custom Vision API algorithms are exposed as simple REST-based service calls. Developers can use the REST calls to create projects (classifiers), upload and tag images, perform training, manage model iterations, and even make predictions.
 
-![Custom Vision API](../media/2-api-introduction.png)
+![Custom Vision API.](../media/2-api-introduction.png)
 
 > [!TIP]
 > This module focuses on the REST services that can be used by any language. Microsoft also publishes open-source SDKs for .NET, Python, Java, Node.js, and Go that wrap the underlying REST APIs into framework-specific objects and methods. Check out the documentation for more information on the available SDKs.

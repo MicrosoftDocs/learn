@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "At a minimum, how many IPs does Sonila need to identify on-premises for a network segment to use with VMware HCX?"
+  - content: "At a minimum, how many IPs does Mariana need to identify on-premises for a network segment to use with VMware HCX?"
     choices:
     - content: "3 IPs"
       isCorrect: false
@@ -26,7 +26,7 @@ quiz:
       explanation: "For a minimum deployment, 10 IPs is too many to assign to the HCX Connector on-premises."
     - content: "2 IPs"
       isCorrect: true
-      explanation: "At a minimum, identify two IPs in the on-premises network segment for the VMware HCX Connector deployment. Sonila might need a bigger number of IPs, depending on the scale of the deployment."
+      explanation: "At a minimum, identify 2 IPs in the on-premises network segment for the VMware HCX Connector deployment. Sonila might need a bigger number of IPs, depending on the scale of the deployment."
   - content: "What version of vSphere on-premises is compatible with HCX 4.0 without needing extra configuration changes?"
     choices:
     - content: "vSphere 6.0"
@@ -42,10 +42,10 @@ quiz:
     choices:
     - content: "4"
       isCorrect: false
-      explanation: "The VMware HCX Advanced Connector doesn't support four site connections."
+      explanation: "The VMware HCX Advanced Connector doesn't support 4 site connections."
     - content: "3"
       isCorrect: true
-      explanation: "The VMware HCX Advanced Connector supports up to three site connections."
+      explanation: "The VMware HCX Advanced Connector supports up to 3 site connections."
     - content: "8"
       isCorrect: false
-      explanation: "The VMware HCX Advanced Connector doesn't support eight site connections."
+      explanation: "The VMware HCX Advanced Connector doesn't support 8 site connections."

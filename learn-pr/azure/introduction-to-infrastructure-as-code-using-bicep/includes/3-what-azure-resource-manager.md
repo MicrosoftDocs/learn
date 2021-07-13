@@ -44,7 +44,7 @@ When you send a request from any of the Azure tools, APIs, or SDKs, Resource Man
 
 The following image shows the role Resource Manager plays in handling Azure requests:
 
-![Resource Manager](../media/azure-resource-manager.png)
+![Resource Manager.](../media/azure-resource-manager.png)
 
 All control plane operation requests are sent to a Resource Manager URL. For example, the create or update operation for virtual machines is a control plane operation. Here's the request URL for this operation:
 
@@ -78,7 +78,7 @@ There are many benefits to using ARM templates, both JSON and Bicep, for your re
 
 - **Preview**:  The what-if tool, available in PowerShell and Azure CLI, allows you to preview changes to your environment before template deployment. This tool will detail any creations, modification, and deletions that will be made by your template.
 
-- **Testing and Validation**:  You can use tools like the ARM Template Tool Kit (arm-ttk) to test your ARM templates before deployment. ARM templates submitted to Resource Manager are validated before the deployment process. This validation alerts you to any errors in your template before resource provisioning.
+- **Testing and Validation**:  You can use tools like the Bicep linter to check the quality of your templates before deployment. ARM templates submitted to Resource Manager are validated before the deployment process. This validation alerts you to any errors in your template before resource provisioning.
 
 - **Modularity**:  You can break up your templates into smaller components and link them together at deployment.
 

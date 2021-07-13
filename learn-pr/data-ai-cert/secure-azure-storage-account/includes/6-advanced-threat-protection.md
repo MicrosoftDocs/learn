@@ -14,7 +14,7 @@ You can turn on Azure Defender for Storage in the Azure portal through the confi
 
 1. Select **Enable Azure Defender for Storage**.
 
-    ![Screenshot of Azure Defender for Storage](../media/azure-defender-for-storage.png)
+    ![Screenshot of Azure Defender for Storage.](../media/azure-defender-for-storage.png)
 
 ## Explore security anomalies
 
@@ -29,8 +29,8 @@ When storage activity anomalies occur, you receive an email notification with in
 - Remediation steps
 - Email also includes details about possible causes and recommended actions to investigate and mitigate the potential threat
 
-    ![Viewing security anomolies in Azure Defender for Security](../media/view-security-anomolies-in-azure-defender-for-security.png)
+    ![Viewing security anomolies in Azure Defender for Security.](../media/view-security-anomolies-in-azure-defender-for-security.png)
 
 You can review and manage your current security alerts from Azure Security Center's Security alerts tile. Selecting a specific alert provides details and actions for investigating the current threat and addressing future threats.
 
-![Viewing security anomolies details in Azure Defender for Security](../media/view-security-anomolies-details-in-azure-defender-for-security.png)
+![Viewing security anomolies details in Azure Defender for Security.](../media/view-security-anomolies-details-in-azure-defender-for-security.png)

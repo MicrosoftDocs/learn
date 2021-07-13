@@ -20,7 +20,7 @@ By default, all Azure resources within a virtual network have outbound connectiv
 
 A virtual network is composed of many elements including, but not limited to, network interfaces, load balancers, subnets, network security groups, and public IP addresses. These elements work together and enable secure, reliable network communication between your Azure resources, the internet, and on-premises networks.
 
-  ![Azure virtual network component architecture](../media/2-azure-vnet-vm-arch.svg)
+  ![Azure virtual network component architecture.](../media/2-azure-vnet-vm-arch.svg)
 
 ## Traffic routing on an Azure virtual network
 
@@ -108,7 +108,7 @@ ExpressRoute creates a direct connection between your on-premises network and th
 - Point-to-point Ethernet connection
 - Any-to-any (IPVPN) connection
 
-![An ExpressRoute connection](../media/2-expressroute-connection.svg)
+![An ExpressRoute connection.](../media/2-expressroute-connection.svg)
 
 ### Peering
 
@@ -118,7 +118,7 @@ Virtual networks can peer across subscriptions and Azure regions. After the virt
 
 Although many reference architectures are available when you design a hybrid network, one popular architecture is the site-to-site configuration. The simplified reference architecture shown in the following diagram illustrates how you would connect an on-premises network to the Azure platform. The internet connection uses an IPsec VPN tunnel.
 
-![Azure VPN reference architecture](../media/2-vpn-architecture.svg)
+![Azure VPN reference architecture.](../media/2-vpn-architecture.svg)
 
 The architecture features several components:
 

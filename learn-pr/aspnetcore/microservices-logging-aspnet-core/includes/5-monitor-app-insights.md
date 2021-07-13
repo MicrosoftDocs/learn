@@ -11,7 +11,7 @@ The four services instrumented for Application Insights send telemetry to Applic
 
 A view similar to the following appears:
 
-:::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-live-metrics.png" alt-text="Azure portal showing the live metrics dashboard for the webshoppingagg-appinsights resource" border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-live-metrics.png":::
+:::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-live-metrics.png" alt-text="Azure portal showing the live metrics dashboard for the webshoppingagg-appinsights resource." border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-live-metrics.png":::
 
 In the preceding image, notice the following things:
 
@@ -35,7 +35,7 @@ Use the app to generate some telemetry data to examine. Open another browser tab
 
 1. Select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
-    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app" border="true" lightbox="../../media/microservices/eshop-spa.png":::
+    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app." border="true" lightbox="../../media/microservices/eshop-spa.png":::
 
 1. Complete a purchase as follows:
     1. Select the **:::no-loc text="LOGIN":::** link in the upper right to sign into the app. Sign in using the credentials provided on the page.
@@ -61,7 +61,7 @@ Investigate the earlier failed coupon service request with the following steps:
 
 1. In the Azure portal, select **Application Map** from the **Investigate** section.
 
-    :::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-initial-app-map.png" alt-text="The initial view of the webshoppingagg Application Map" border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-initial-app-map.png":::
+    :::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-initial-app-map.png" alt-text="The initial view of the webshoppingagg Application Map." border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-initial-app-map.png":::
 
     A view similar to the preceding screenshot appears. The Application Map initially displays a simplified representation of the *:::no-loc text="webshoppingagg":::* app. This view doesn't list individual dependencies.
 
@@ -70,7 +70,7 @@ Investigate the earlier failed coupon service request with the following steps:
 
 1. Select the **Update map components** button to load a detailed view of the entire *:::no-loc text="eShopOnContainers":::* solution.
 
-    :::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-detail-app-map.png" alt-text="The detailed Application Map" border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-detail-app-map.png":::
+    :::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-detail-app-map.png" alt-text="The detailed Application Map." border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-detail-app-map.png":::
 
     A view similar to the preceding screenshot appears. The services that are instrumented in Application Insights are represented by green circles.
 
@@ -78,7 +78,7 @@ Investigate the earlier failed coupon service request with the following steps:
 
     A **:::no-loc text="webshoppingagg":::** panel appears. The panel provides a quick view of the service's top failing requests and slowest requests. It also displays common properties that may provide insights into the health of the service. For each category, more detailed information is available by selecting the button.
 
-    :::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-request-summary.png" alt-text="A summary of failing requests and performance" border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-request-summary.png":::
+    :::image type="content" source="../media/5-monitor-app-insights/webshoppingagg-request-summary.png" alt-text="A summary of failing requests and performance." border="true" lightbox="../media/5-monitor-app-insights/webshoppingagg-request-summary.png":::
 
 ## Investigate an end-to-end transaction
 
@@ -93,7 +93,7 @@ The Application Map provides one way of exploring captured telemetry. You can al
 
 1. Select the **Event types** button. Unselect all options except for *Trace*.
 
-    :::image type="content" source="../media/5-monitor-app-insights/event-types-trace.png" alt-text="Event types Trace option" border="true" lightbox="../media/5-monitor-app-insights/event-types-trace.png":::
+    :::image type="content" source="../media/5-monitor-app-insights/event-types-trace.png" alt-text="Event types Trace option." border="true" lightbox="../media/5-monitor-app-insights/event-types-trace.png":::
 
     The *:::no-loc text="webshoppingagg":::* search results page refreshes to only show *TRACE* events:
 
@@ -101,7 +101,7 @@ The Application Map provides one way of exploring captured telemetry. You can al
 
 1. In the result set, select a **TRACE** item with the description `----- Coupon not found: 404 - Content: "ERROR: The coupon doesn't exist"`. An end-to-end transaction trace appears.
 
-    :::image type="content" source="../media/5-monitor-app-insights/end-to-end-transaction-details.png" alt-text="end-to-end transaction details for a TRACE event" border="true" lightbox="../media/5-monitor-app-insights/end-to-end-transaction-details.png":::
+    :::image type="content" source="../media/5-monitor-app-insights/end-to-end-transaction-details.png" alt-text="end-to-end transaction details for a TRACE event." border="true" lightbox="../media/5-monitor-app-insights/end-to-end-transaction-details.png":::
 
 1. Notice the trace includes each step of the request:
     1. The initial request is received by the HTTP aggregator:
@@ -127,7 +127,7 @@ The Application Map provides one way of exploring captured telemetry. You can al
 
 1. Select the **View timeline** button. A graphical representation of the request and dependency timing is displayed.
 
-    :::image type="content" source="../media/5-monitor-app-insights/end-to-end-transaction-timeline.png" alt-text="end-to-end transaction timeline" border="true" lightbox="../media/5-monitor-app-insights/end-to-end-transaction-timeline.png":::
+    :::image type="content" source="../media/5-monitor-app-insights/end-to-end-transaction-timeline.png" alt-text="end-to-end transaction timeline." border="true" lightbox="../media/5-monitor-app-insights/end-to-end-transaction-timeline.png":::
 
     In the preceding screenshot, notice the following details:
 
