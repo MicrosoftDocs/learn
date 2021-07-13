@@ -113,7 +113,7 @@ You can find an ASP.NET Core project for the `Web.Sales` BFF in the *src/ApiGate
 
     The preceding action method:
 
-    - Filters the orders in `listOfOrders` to those from today's date with status `Paid`.
+    - Filters the orders in `listOfOrders` to only the orders with today's date and status `Paid`.
     - Fetches order details and calculates the sales of each product.
     - Retrieves catalog item and brand information
     - Aggregates the data based by brand.
@@ -139,8 +139,8 @@ You can find an ASP.NET Core project for the `Web.Sales` BFF in the *src/ApiGate
 
         In the preceding code:
 
-        - ASP.NET Core's health check service is registered in the web sales aggregator dependency injection container.
-        - As the functionality of web sales aggregator also depends Ordering and Catalog API, it's important to add those necessary configuration in the `AddUrlGroup()` method.
+        - Health check services are registered in the dependency injection container.
+        - As the functionality of web sales aggregator also depends Ordering and Catalog API, it's a good idea to add them too.
 
     1. Also in *Startup.cs*, note the JWT authentication code in the `AddCustomAuthentication` method:
 
@@ -159,7 +159,7 @@ You can find an ASP.NET Core project for the `Web.Sales` BFF in the *src/ApiGate
         });    
         ```
 
-    1. Finally, in the `Configure` method, note the Swagger configuration. This will provide the UI we use for testing.
+    1. Finally, in the `Configure` method, note the Swagger configuration. Swagger provides the UI you'll use for testing.
 
         ```csharp
         app.UseSwagger().UseSwaggerUI(c =>
@@ -210,7 +210,7 @@ Some changes have been made to the *src/Services/Identity/Identity.API* project 
 Make the following configuration changes to support the web sales aggregator code.
 ### WebStatus configuration
 
-Earlier, you added health checks in the web sales aggregator's *Startup.cs*. You'll also need to configure the Web Status app to ping that health check. Uncomment the following in *deploy/k8s/helm-simple/webstatus/templates/configmap.yaml*:
+Earlier, you added health checks in the web sales aggregator's *Startup.cs*. You'll also need to configure the Web Status app to ping that health check. Uncomment the following YAML in *deploy/k8s/helm-simple/webstatus/templates/configmap.yaml*:
 
 ```yaml
 HealthChecksUI__HealthChecks__10__Name: Web Sales Aggregator GW HTTP Check
@@ -219,7 +219,7 @@ HealthChecksUI__HealthChecks__10__Uri: http://websalesagg/hc
 
 ### Identity.API configuration
 
-*Identity.API* needs to be made aware of the web sales aggregator URL. Uncomment the following in *deploy/k8s/helm-simple/identity/templates/configmap.yaml*:
+Configure *Identity.API*  with the web sales aggregator URL. Uncomment the following YAML in *deploy/k8s/helm-simple/identity/templates/configmap.yaml*:
 
 ```yaml
 WebSalesAggClient: {{ .Values.protocol }}://{{ .Values.host }}/websalesagg
@@ -248,7 +248,7 @@ The setup script created an Azure Container Registry (ACR) instance for you. Pus
     ```bash
     ./deploy/k8s/build-to-acr.sh --services websalesagg
     ```
-    
+
     As with the previous step, an ACR quick task builds the *:::no-loc text="websalesagg":::* image.
 
 ## Deploy the affected containers to the cluster
@@ -282,7 +282,7 @@ Now that your modified images are published, you can deploy the affected contain
 
 ## Verify the deployed sales aggregator
 
-After deploying the changes, the *:::no-loc text="WebStatus":::* dashboard eventually shows that all the services are healthy. This includes the new *:::no-loc text="websalesagg":::* service, as denoted by the health check titled *:::no-loc text="Web Shopping Aggregator GW HTTP Check":::*. While the *:::no-loc text="websalesagg":::* service is healthy, it can't yet be accessed from outside the cluster.
+After deploying the changes and waiting a while, the *:::no-loc text="WebStatus":::* dashboard shows all the services are healthy. There's a new *:::no-loc text="websalesagg":::* service, as denoted by the health check titled *Web Shopping Aggregator GW HTTP Check*. While the *:::no-loc text="websalesagg":::* service is healthy, it can't yet be accessed from outside the cluster.
 
 To verify the *:::no-loc text="websalesagg":::* service from within the cluster, complete the following steps:
 

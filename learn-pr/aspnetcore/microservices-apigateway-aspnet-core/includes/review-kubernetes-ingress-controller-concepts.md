@@ -11,7 +11,7 @@ Kubernetes services are typically not accessible from outside the cluster. To im
 
 The ingress controller is responsible for routing requests, and the ingress resources represent configuration for the controller.
 
-The [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/) is the most widely used open-source ingress controller. This is the one used in eShopOnContainers by default.
+The [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/) is the most widely used open-source ingress controller. NGINX is used in eShopOnContainers by default.
 
 ### Routes configuration
 
@@ -34,7 +34,7 @@ The `/apigateway` route needs another path segment (`c`, `cp`, and `o`) so it ca
 
 The ingress for the `identity` service is kept in the *deploy/k8s/helm-simple/identity/templates/ingress.yaml* file, as part of the **identity** Helm chart.
 
-You can see the routes configuration for the API Gateway in *deploy/k8s/helm-simple/apigateway/templates/ingress-gateway.yaml*. In this case, the file contains several ingresses that look like this:
+You can see the routes configuration for the API Gateway in *deploy/k8s/helm-simple/apigateway/templates/ingress-gateway.yaml*. The file contains several ingresses that look like this:
 
 ```yaml
 apiVersion: extensions/v1beta1
@@ -91,7 +91,7 @@ The Application Gateway Ingress Controller (AGIC) integrates the Application Gat
 
 You can see that the AGIC lives inside the AKS cluster as an ingress controller, although it isn't really routing any traffic. The AGIC monitors the cluster state using the Kubernetes API. It applies the required configuration to the Application Gateway, so it can route traffic directly to the pods.
 
-Since the Azure Application Gateway is a managed service outside the AKS cluster, and can't usually access the pods directly, the AKS has to be created with the "advanced networking" option. This setting makes the pods connect through a subnet that's accessible by the Application Gateway.
+The Azure Application Gateway is a managed service outside the AKS cluster and can't usually access the pods directly. The AKS instance must be created with the *advanced networking* option. This setting makes the pods connect through a subnet that's accessible by the Application Gateway.
 
 For more information, see the [Application Gateway Ingress Controller overview page](/azure/application-gateway/ingress-controller-overview)
 

@@ -18,7 +18,7 @@ To create a new instance of Azure Application Gateway, run the below command.
 ./deploy/k8s/create-application-gateway.sh
 ```
 
-The script performs the following tasks:
+The script does the following tasks:
 
 - Creates a VNET for the Application Gateway.
 - Creates a subnet in the VNET created in the previous step.
@@ -45,10 +45,10 @@ You've created the Azure Application Gateway service. Now enable the AGIC in the
 The script does the following tasks:
 
 - Enables the AGIC as an add-on feature in the existing Kubernetes cluster.
-- Enables bi-directional peering. This connects the existing VNET network of the AKS cluster and the newly created VNET of the Application Gateway cluster.
+- Enables bi-directional peering. This peering connects the existing VNET network of the AKS cluster and the newly created VNET of the Application Gateway cluster.
 ## Configure the ingresses to use the AGIC
 
-The `kubernetes.io/ingress.class: azure/application-gateway` annotation must be included in your ingress manifest YAML files before the AGIC can use them. In some scenarios, if the ingress needs to perform URL rewriting, you must include the `appgw.ingress.kubernetes.io/backend-path-prefix` annotation.
+The `kubernetes.io/ingress.class: azure/application-gateway` annotation must be included in your ingress manifest YAML files before the AGIC can use them. In some scenarios, if the ingress needs to do URL rewriting, you must include the `appgw.ingress.kubernetes.io/backend-path-prefix` annotation.
 
 >[!TIP]
 > The ingress YAML for the `Seq` app is a good example of this. It's available under `/deploy/k8s/helm-ingress/seq/templates` directory.
@@ -80,7 +80,7 @@ spec:
           servicePort: 80
 ```
 
-Along with the *websalesagg* service, you'll need to update the NGINX configuration for each service to make it available for the AGIC. This requires changes to all of the service configurations in the  `helm-simple` directory. For simplicity, you will copy files from the `helm-ingress` folder. These files have been preconfigured for you. Run the following command:
+Along with the *websalesagg* service, you'll need to update the NGINX configuration for each service to make it available for the AGIC. All of the service configurations in the  `helm-simple` directory require changes. For simplicity, you'll copy files from the `helm-ingress` folder. These files have been preconfigured for you. Run the following command:
 
 ```bash
 cp -r deploy/k8s/helm-ingress/* deploy/k8s/helm-simple
@@ -118,7 +118,7 @@ deploy/k8s/deploy-application.sh --registry eshopdev --hostip {appgw-public-ip}
 
 :::image type="content" source="../media/eshop-app-gateway-public-ip.png" alt-text="Fetch app gateway public ip" lightbox="../media/eshop-app-gateway-public-ip.png":::
 
-The pods are all redeployed from the public container registry used in the beginning of this module. The following output appears:
+The pods redeploy from the public container registry used in the beginning of this module. The following output appears:
 
 :::image type="content" source="../media/deployed-eshop-app-app-gateway.png" alt-text="Deployed websalesagg to app gateway" lightbox="../media/deployed-eshop-app-app-gateway.png":::
 
@@ -143,7 +143,7 @@ The script redeploys the following services from your private ACR:
 
 ## Add the *websalesagg* client redirect URIs to IdentityDb
 
-The existing `[Microsoft.eShopOnContainers.Service.IdentityDb]` database in the `sqldata-*` pod will not have the necessary configuration for the `websalesagg` authorize. Accordingly, you'll need to repopulate the data in `IdentityDb`. Perform the following steps:
+The existing `[Microsoft.eShopOnContainers.Service.IdentityDb]` database in the `sqldata-*` pod won't have the necessary configuration for the `websalesagg` authorize. You'll need to repopulate the data in `IdentityDb`. Do the following steps:
 
 1. Delete the SQL pod with the following command:
 
@@ -170,7 +170,7 @@ The existing `[Microsoft.eShopOnContainers.Service.IdentityDb]` database in the 
 
 ### Create an order
 
-Log in to the `WebSPA` app using `http://{appgw-public-ip}/` and create an order to create data for the Sales API.
+Sign in to the `WebSPA` app using `http://{appgw-public-ip}/` and create an order to create data for the Sales API.
 
 :::image type="content" source="../media/list-of-orders.png" alt-text="List of orders" lightbox="../media/list-of-orders.png":::
 

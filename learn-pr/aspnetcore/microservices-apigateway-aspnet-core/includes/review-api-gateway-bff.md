@@ -25,13 +25,13 @@ The above image shows how client apps communicate with a single entry point, the
 - Frontend apps and backend services are decoupled.
 - A single metering point.
 
-The decoupling aspect also makes it easy to route different request versions to different microservice instances. This is useful for progressive deployments and implementing scenarios like [A/B testing](https://en.wikipedia.org/wiki/A/B_testing).
+The decoupling aspect also makes it easy to route different request versions to different microservice instances.  is useful for progressive deployments and implementing scenarios like [A/B testing](https://en.wikipedia.org/wiki/A/B_testing).
 
 ## The Backend-for-Frontends pattern
 
-API Gateway solves several problems, but there's still more to be done. Each client app might have a context that imposes some specific constraints. For example, a mobile phone usually has a more constrained internet connection than a desktop computer and a much smaller screen size. It might be desirable to have a streamlined, low-bandwidth API for mobile use, and a full-featured API for desktop use.
+API Gateway solves several problems, but there's still more to be done. Each client app might have a context that imposes some specific constraints. For example, a mobile phone has a more constrained internet connection than a desktop computer. The phone also has a much smaller screen size. It might be desirable to have a streamlined, low-bandwidth API for mobile use, and a full-featured API for desktop use.
 
-This is where the Backends-for-Frontends (BFF) pattern can help. The BFF pattern supplies a per-device-type API customized for the specific context, as shown in the following image.
+This problem is where the Backends-for-Frontends (BFF) pattern can help. The BFF pattern supplies a per-device-type API customized for the specific context, as shown in the following image.
 
 :::image type="content" source="../media/bff-api-gateways.png" alt-text="BFF Pattern" lightbox="../media/bff-api-gateways.png":::
 
@@ -39,11 +39,11 @@ In the above image, you can see that the mobile app accesses a mobile-specific A
 
 ## Web aggregators
 
-The BFF is much more than an application gateway, as it usually requires custom logic to achieve the required results. The web aggregator is the part of the BFF pattern that addresses that problem. The web aggregator works as a broker, and it has a central role in the BFF pattern. It gets a request from the client, makes further requests to some backend services, and then assembles a customized response to send back to the client.
+The BFF is much more than an application gateway. BFFs usually require custom logic to achieve the required results. The web aggregator is the part of the BFF pattern that addresses that problem. The web aggregator works as a broker, and it has a central role in the BFF pattern. It gets a request from the client, makes further requests to some backend services, and then assembles an aggregated response to send back to the client.
 
-### Explore *Web.Shopping* aggregator implementation in eShopOnContainers
+### Explore an aggregator implementation in eShopOnContainers
 
-In the `eShop` app, the *Web.Shopping.HttpAggregator* project is a web aggregator. This BFF takes care of all the shopping-related activities for the web client. For example, `AddBasketItemAsync()` method in the `BasketController` class performs the following tasks:
+In the `eShop` app, the *Web.Shopping.HttpAggregator* project is a web aggregator. The BFF takes care of all the shopping-related activities for the web client. For example, `AddBasketItemAsync()` method in the `BasketController` class does the following tasks:
 
 - Fetches an item from the `Catalog.API`.
 - Gets current basket details from the `Basket.API`.
@@ -52,9 +52,9 @@ In the `eShop` app, the *Web.Shopping.HttpAggregator* project is a web aggregato
 
 As shown, merging these operations into a single method hides the complexity from the client SPA. You can review the detailed implementation in the *src\ApiGateways\Aggregators\Web.Shopping.HttpAggregator* folder.
 
-### Implementing *Web.Sales* aggregator in eShopOnContainers
+### Implementing an aggregator in eShopOnContainers
 
-Let's assume you are an admin for the eShop app. At the end of each day, you want to see the aggregated sales data per brand. To implement this new feature, you need information on the brand and orders for each product. Your aggregator needs to retrieve:
+Let's assume you're an admin for the eShop app. At the end of each day, you want to see the aggregated sales data per brand. To implement the new feature, you need information on the brand and orders for each product. Your aggregator needs to retrieve:
 
 - Catalog items and brand-related information from *Catalog.API*
 - Sales of each product from *Ordering.API*.
