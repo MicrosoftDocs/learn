@@ -102,7 +102,7 @@ To decide how to apply monitoring and troubleshooting performance tools and capa
 
 ### Common performance scenarios
 
-A common technique for SQL Server performance troubleshooting is to examine if a performance problem is **Running** (high CPU) or **Waiting** (waiting on a resource). The following diagram shows a decision tree to determine if a SQL Server performance issue is running or waiting, and how to use performance tools to determine the cause and solution.
+A common technique for SQL Server performance troubleshooting is to examine whether a performance problem is **Running** (high CPU) or **Waiting** (waiting on a resource). The following diagram shows a decision tree to determine if a SQL Server performance issue is running or waiting, and how to use performance tools to determine the cause and solution.
 
 :::image type="content" source="../media/4-running-vs-waiting-january-21.svg" alt-text="Diagram of running versus waiting." border="false":::
 
