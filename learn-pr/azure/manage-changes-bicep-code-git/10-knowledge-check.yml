@@ -25,7 +25,7 @@ quiz:
     - content: You can create smaller reusable Bicep files.
       isCorrect: false
       explanation: Incorrect. Bicep modules provide a way to create small, reusable Bicep files for specific purposes. You can then store these in a version control system like Git.
-  - content: You've been asked to try out a new Azure service, and you're going to temporarily add it to a Bicep file that you've already created and added to your Git repository. What should you do?
+  - content: You've been asked to try out a new Azure service. You're going to temporarily add it to a Bicep file that you've already created and added to your Git repository. What should you do?
     choices:
     - content: Create a new branch in your existing repository and make your changes on the branch.
       isCorrect: true

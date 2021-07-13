@@ -23,8 +23,8 @@ The following features of Git are particularly useful when you work with infrast
 - [Rewriting history](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History), including amending commit messages and removing information from your commit history, and squashing changes.
 - [Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
-Much of the power of Git comes from its use in team environments. Some specific features you'll likely work with include:
+Much of the power of Git comes from its use in team environments. Specific features you'll likely work with include:
 
-- Cloning repositories ([GitHub](https://docs.github.com/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository), [Azure Repos](/azure/devops/repos/git/clone))
-- Pull requests ([GitHub](https://docs.github.com/github/collaborating-with-pull-requests/), [Azure Repos](/azure/devops/repos/git/pull-requests))
-- Forking repositories ([GitHub](https://docs.github.com/get-started/quickstart/fork-a-repo), [Azure Repos](/azure/devops/repos/git/forks))
+- Cloning repositories ([GitHub](https://docs.github.com/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository), [Azure Repos](/azure/devops/repos/git/clone)).
+- Pull requests ([GitHub](https://docs.github.com/github/collaborating-with-pull-requests/), [Azure Repos](/azure/devops/repos/git/pull-requests)).
+- Forking repositories ([GitHub](https://docs.github.com/get-started/quickstart/fork-a-repo), [Azure Repos](/azure/devops/repos/git/forks)).

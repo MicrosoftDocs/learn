@@ -33,7 +33,7 @@ In this exercise, you'll add a new Bicep module on a branch of your repository. 
 
 1. In Visual Studio Code, look at the status bar at the bottom of the window. Notice that the branch name on the left has changed to **add-database**.
 
-   Like with the other Git commands you've run, Visual Studio Code stays up to date with the changes in your Git repository, including when you check out a branch.
+   As with the other Git commands you've run, Visual Studio Code stays up to date with the changes in your Git repository, including when you check out a branch.
 
 ## Update a file on your branch
 

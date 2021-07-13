@@ -1,12 +1,12 @@
 When you work on Bicep code, it's common to need to do more than one thing at a time. For example, here are two scenarios for working with your toy company's website:
 
-- Your website's development team wants your help in updating Bicep files with significant changes. However, the team doesn't want those changes to go live just yet. You need to be able to make minor tweaks to the current live version of the website in parallel with the work on the new version.
+- Your website's development team wants your help in updating Bicep files with significant changes. However, the team doesn't want those changes to go live yet. You need to be able to make minor tweaks to the current live version of the website in parallel with the work on the new version.
 - You're working on experimental changes that you think will help to improve the performance of the website. However, these changes are preliminary. You don't want to apply them to the live version of the website until you're ready.
 
 In this unit, you learn about Git branches.
 
 > [!NOTE]
-> The commands in this unit are shown to illustrate the concepts. Don't run them just yet. You'll practice what you learn here in the next unit.
+> The commands in this unit are shown to illustrate the concepts. Don't run them yet. You'll practice what you learn here in the next unit.
 
 ## What are branches?
 

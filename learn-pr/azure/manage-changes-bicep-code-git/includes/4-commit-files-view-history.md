@@ -1,13 +1,13 @@
 Now that you've initialized your Git repository, you're ready to start adding files. In this unit, you'll learn how to tell Git to track the changes to files in your repository.
 
 > [!NOTE]
-> The commands in this unit are shown to illustrate the concepts. Don't run them just yet. You'll practice what you learn here in the next unit.
+> The commands in this unit are shown to illustrate the concepts. Don't run them yet. You'll practice what you learn here in the next unit.
 
 ## Folder structure for your repository
 
 When you work with a version control system like Git, it's important to plan how you store your files. It's a good idea to have a clear folder structure. 
 
-If you're building Bicep code to deploy an application or another solution, it's also a good idea to store your Bicep files in the same repository as the application code and other files. That way, anytime anyone needs to add a new feature that changes both Bicep and application code, they'll be tracked together. 
+If you're building Bicep code to deploy an application or another solution, it's also a good idea to store your Bicep files in the same repository as the application code and other files. That way, anytime someone needs to add a new feature that changes both Bicep and application code, they'll be tracked together. 
 
 Deploying your solution from a pipeline also makes the process easier. You'll learn about that in a future module.
 
@@ -15,7 +15,7 @@ Different teams have different conventions for how they set up their repository 
 
 If your team doesn't already have a preference, here's a suggestion for how you might do it:
 
-- At the root of your repository, create a _README.md_ file, which is a Markdown (text) file that describes what's in the repository and gives instructions to help team members set things up.
+- At the root of your repository, create a _README.md_ file. This Markdown (text) file describes what's in the repository and gives instructions to help team members set things up.
 - At the root of your repository, create a _deploy_ folder. Inside the folder:
   - Store your main Bicep template, named _main.bicep_.
   - Create a _modules_ subfolder, to store your Bicep modules.

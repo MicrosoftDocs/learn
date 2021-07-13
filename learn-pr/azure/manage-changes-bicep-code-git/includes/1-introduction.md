@@ -24,4 +24,4 @@ By the end of this module, you'll have an understanding of what version control 
 
 You should be familiar with creating basic Bicep templates, including modules.
 
-To follow along with the exercises in the module, you'll need [Visual Studio Code](https://code.visualstudio.com), installed locally.
+To follow along with the exercises in the module, you'll need [Visual Studio Code](https://code.visualstudio.com) installed locally.

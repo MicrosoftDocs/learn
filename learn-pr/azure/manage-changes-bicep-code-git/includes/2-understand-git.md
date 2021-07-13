@@ -50,7 +50,7 @@ You can write Bicep code by using another text editor if you want, but Visual St
 
 ### Git
 
-Git is based on a command-line tool, and most of the documentation and examples you'll find online use the Git command-line interface (CLI). In this module, we'll use a mixture of CLI commands and Visual Studio Code to work with Git. Whichever tool you use, you work with the same underlying Git repository. You can even mix and match your tools.
+Git is based on a command-line tool, and most of the documentation and examples you'll find online use the Git command-line interface (CLI). In this module, we'll use a mixture of CLI commands and Visual Studio Code to work with Git. Whichever tool you use, you work with the same underlying Git repository.
 
 > [!TIP]
 > As your use of Git matures, you'll need to learn some more advanced Git CLI commands. Later in this module, we link to some resources to continue your exploration of Git and its many advanced features.

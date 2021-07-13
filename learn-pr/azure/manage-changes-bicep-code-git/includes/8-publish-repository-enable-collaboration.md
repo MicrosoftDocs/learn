@@ -1,13 +1,13 @@
 You've learned how Git enables you to track the changes to your Bicep code. In this unit, you'll learn how Git also enables collaboration with your team members.
 
 > [!NOTE]
-> The commands in this unit are shown to illustrate the concepts. Don't run them just yet. You'll practice what you learn here in the next unit.
+> The commands in this unit are shown to illustrate the concepts. Don't run them yet. You'll practice what you learn here in the next unit.
 
 ## What are GitHub and Azure Repos?
 
-Git is a piece of software that you install and run on your own computer. As you've learned, Git keeps track of the changes you make to your files. It enables features like branching.
+Git is software that you install and run on your own computer. As you've learned, Git keeps track of the changes you make to your files. It enables features like branching.
 
-GitHub and Azure Repos are online services that keep copies of your Git repository and enable collaborative development. After you sign up for GitHub or Azure Repos, you continue to work with Git by using the same commands you've already been using, and you continue working against your local Git repository. The difference is that you can also synchronize your local Git repository with an online repository. You can also grant access to the online repository to other people, and you can control whether they can read or modify your code.
+GitHub and Azure Repos are online services that keep copies of your Git repository and enable collaborative development. After you sign up for GitHub or Azure Repos, you continue to work with Git by using the same commands you've already been using. You also continue working against your local Git repository. The difference is that you can synchronize your local Git repository with an online repository. You can also grant access to the online repository to other people, and you can control whether they can read or modify your code.
 
 > [!NOTE]
 > Azure Repos is a feature of Azure DevOps. When you work with Azure Repos, you use the Azure DevOps website.
@@ -47,6 +47,6 @@ After you set up your Git repository on GitHub or Azure Repos, you're ready to c
 
 A pull request is effectively a controlled merge of two branches. GitHub or Azure Repos can enforce policies about who can merge and what kinds of changes can be merged. 
 
-A typical team workflow would involve a team member making changes to their code on a branch, and then creating a pull request to ask someone else to merge their changes into the **main** branch. Other team members can see the list of changes in the PR, and they can even provide feedback on the changes or ask for revisions before they accept them. PRs provide a way to provide quality control around your team's code.
+A typical team workflow would involve a team member making changes to their code on a branch, and then creating a pull request to ask someone else to merge their changes into the **main** branch. Other team members can see the list of changes in the PR. Those team members can even provide feedback on the changes or ask for revisions before they accept them. PRs provide a way to provide quality control around your team's code.
 
 PRs and other collaboration features are outside the scope of this module, but we provide links to information about these features in the summary.
