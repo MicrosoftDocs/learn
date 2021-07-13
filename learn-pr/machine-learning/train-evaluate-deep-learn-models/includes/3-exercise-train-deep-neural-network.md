@@ -9,9 +9,6 @@ To complete the exercise, you'll need:
 - A Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com/free](https://azure.microsoft.com/free?azure-portal=true).
 - An Azure Machine Learning workspace with a compute instance and the **ml-basics** repository cloned.
 
-> [!NOTE]
-> This module is one of many that make use of an Azure Machine Learning workspace. If you are completing this module as part of the [Create machine learning models](https://docs.microsoft.com/learn/paths/create-machine-learn-models?azure-portal=true) learning path or in preparation for the [Azure Data Scientist](https://docs.microsoft.com/learn/certifications/azure-data-scientist?azure-portal=true) certification, consider creating the workspace once and reusing it in other modules. After completing the exercise, be sure to follow the **Clean Up** instructions to stop compute resources, and retain the workspace if you plan to reuse it.
-
 ### Create an Azure Machine Learning workspace
 
 If you don't already have an Azure Machine Learning workspace in your Azure subscription, follow these steps to create one:
