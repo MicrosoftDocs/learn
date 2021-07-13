@@ -123,7 +123,7 @@ The backend address pool contains the IP addresses of the virtual NICs connected
 
 4. Click **Add**.
 
-   ![Show backend pool created in load balancer](../media/create-backendpool.png)
+   ![Show backend pool created in load balancer](../media/create-backend-pool.png)
 
    
 
@@ -183,9 +183,9 @@ In this section, you will create three VMs, that will be in the same availabilit
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
 2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files azuredeploy.json, azuredeploy.parameters.vm1.json, azuredeploy.parameters.vm2.json and azuredeploy.parameters.vm3.json into the Cloud Shell home directory.
-[ARM Templates for this task](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M04)
+[Azure Resource Manager Templates for this task](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M04)
 
-3. Deploy the following ARM templates to create the virtual network, subnets, and VMs needed for this exercise:
+3. Deploy the following Azure Resource Manager templates to create the virtual network, subnets, and VMs needed for this exercise:
 
    ```powershell
    $RGName = "IntLB-RG"
@@ -209,7 +209,7 @@ In this section, you will create three VMs, that will be in the same availabilit
 
 6. On the **myBackendPool** page, click **Save**.
 
-   ![Show VMs added to backend pool in load balancer](../media/add-vms-backendpool.png)
+   ![Show VMs added to backend pool in load balancer](../media/add-vms-backend-pool.png)
 
  
 
@@ -426,7 +426,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
 ## Task 15: Clean up resources
 
-   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+> [!NOTE] Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
@@ -436,4 +436,4 @@ In this section, you will create a test VM, and then test the load balancer.
    Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
    ```
 
-    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+> [!NOTE] The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
