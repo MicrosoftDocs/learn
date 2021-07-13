@@ -1,29 +1,25 @@
-In the previous unit, you developed and deployed a newly created BFF to the kubernetes cluster. In this exercise, you'll learn the different ways to make the Web Sales BFF available outside the cluster for the client to consume.
+In the previous unit, you deployed a new BFF to the cluster. In this unit, you'll learn how to make the Web Sales BFF available for clients outside the cluster.
 
-## Route External Traffic using Ingress
+## Routing external traffic using ingress
 
-You've seen how the API Gateway pattern can be helpful for your microservices architecture. However, you still need a mechanism for external traffic to talk to the services deployed within the Kubernetes cluster. For that, you'll use NGINX Ingress Controller. You'll also explore using Azure Application Gateway Ingress Controller instead of the NGINX Ingress Controller to route HTTP traffic in the cluster.
+In previous units, you've seen how the API Gateway and BFF patterns route requests and aggregate responses. This implementation still requires access from outside the cluster. For that, we'll discuss how you could use NGINX Ingress Controller. After that, you'll reconfigure the cluster to use Azure Application Gateway Ingress Controller instead of the NGINX Ingress Controller.
 
-## Kubernetes Ingress Controller
+## Kubernetes ingress controllers
 
-The Kubernetes ingress is basically an HTTP traffic router. It's typically used to expose HTTP and HTTPS endpoints outside of a Kubernetes cluster through a single base URL, often with the help of a load balancer.
-
-To implement an ingress in a Kubernetes cluster you need:
+In a typical Kubernetes cluster, the services are not accessible from outside the cluster. To implement an ingress in a Kubernetes cluster you need:
 
 - At least one **ingress controller**.
 - One or more **ingress resources**, typically one per exposed service.
 
-The ingress controller is responsible for routing requests, and the ingress resources are configuration for the controller.
+The ingress controller is responsible for routing requests, and the ingress resources represent configuration for the controller.
 
-In a typical Kubernetes cluster the pods and services are not accessible outside the cluster.
-
-The [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/) is arguably the most widely used open-source ingress controller, and the one used in eShopOnContainers by default.
+The [NGINX Ingress Controller](https://kubernetes.github.io/ingress-nginx/) is the most widely used open-source ingress controller. This is the one used in eShopOnContainers by default.
 
 ### Routes configuration
 
-Since the API Gateway has a single entry point, each microservice has to be differentiated by adding a path element.
+Since the API Gateway has a single entry point, each service is differentiated by adding a path element.
 
-In the sample app, you'll find that the routes are configured like this:
+In the sample app, the routes are configured like this:
 
 | External path                         | Destination                          |
 |---------------------------------------|--------------------------------------|
@@ -32,15 +28,15 @@ In the sample app, you'll find that the routes are configured like this:
 | `https://<host-name>/apigateway/cp/*` | `http://coupon-api/coupon-api/*`     |
 | `https://<host-name>/apigateway/o/*`  | `http://ordering-api/ordering-api/*` |
 
-The configuration table above shows we have two main entry routes to the cluster, `/identity` and `/apigateway`.
+The table above depicts two main entry routes to the cluster, `/identity` and `/apigateway`.
 
-The `/identity` route is handled internally by the `identity` microservice, using a simple `http` termination and using the internal service name.
+The `/identity` route is handled internally by the `identity` service, using a simple `http` termination and using the internal service name.
 
-The `/apigateway` route needs another path segment (`c`, `cp`, and `o`) so it can route the requests to the receiving microservice.
+The `/apigateway` route needs another path segment (`c`, `cp`, and `o`) so it can route the requests to the receiving service.
 
-The ingress for the `identity` service is kept in the `deploy/k8s/helm-simple/identity/templates/ingress.yaml` file, as part of the **identity** Helm chart.
+The ingress for the `identity` service is kept in the *deploy/k8s/helm-simple/identity/templates/ingress.yaml* file, as part of the **identity** Helm chart.
 
-You can see the routes configuration for the API Gateway in the `deploy/k8s/helm-simple/apigateway/templates/ingress-gateway.yaml` file. In this case the file contains several ingresses that look like this:
+You can see the routes configuration for the API Gateway in *deploy/k8s/helm-simple/apigateway/templates/ingress-gateway.yaml*. In this case, the file contains several ingresses that look like this:
 
 ```yaml
 apiVersion: extensions/v1beta1
@@ -76,15 +72,13 @@ metadata:
 ...
 ```
 
-The section delimited between `{{- if .Values.useHostName }}` and `{{- end }}` handles the option to deploy to an IP address, because an IP address is not valid as a host name for Kubernetes. If you want to know more about different component of the above manifest yaml, then refer [Kubernetes Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+The section delimited between `{{- if .Values.useHostName }}` and `{{- end }}` handles the option to deploy to an IP address, as IP addresses are not valid host names in Kubernetes. For more about the manifest yaml, see [Kubernetes Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/).
 
-## Cloud managed load balancer
+## Cloud-managed load balancer
 
 ### Azure Application Gateway
 
-The API Gateway used in eShopOnContainers is fine as a learning resource and many real-world scenarios, but for large-scale scenarios you need a more robust solution that takes care of common, general requirements. This enables you to focus on value-adding features of your application.
-
-Azure Application Gateway is a managed solution that allows you to handle any-size scenarios that can scale to world-wide level if necessary. Azure Application Gateway has several [key features](/azure/application-gateway/features) that help you tackle real-world scenarios, including the following:
+The API Gateway used in eShopOnContainers is typical of many real-world scenarios, but for some large-scale scenarios you may need a more robust, full-featured solution. Azure Application Gateway is a managed solution that allows you to handle loads of any scale. Azure Application Gateway has several [key features](/azure/application-gateway/features) that help you tackle real-world scenarios, including:
 
 - Secure Sockets Layer (SSL/TLS) termination.
 - Auto-scaling.
@@ -93,25 +87,29 @@ Azure Application Gateway is a managed solution that allows you to handle any-si
 
 #### Azure Application Gateway Ingress Controller (AGIC)
 
-The Application Gateway Ingress Controller (AGIC) makes it easy to integrate the Application Gateway with your Kubernetes cluster. The next image shows the general architecture of the solution.
+The Application Gateway Ingress Controller (AGIC) integrates the Application Gateway with your Kubernetes cluster. The following image shows the general architecture of the solution.
 
 :::image type="content" source="../media/azure-application-gateway-ingress-controller-overview.png" alt-text="AGIC overview" lightbox="../media/azure-application-gateway-ingress-controller-overview.png":::
 
-In the image above, you can see that the AGIC lives inside the AKS cluster as an Ingress Controller, although it isn't really routing any traffic. The AGIC monitors the cluster state using the Kubernetes API and applies the required configuration to the Application Gateway, so it can route traffic directly to the pods.
+You can see that the AGIC lives inside the AKS cluster as an ingress controller, although it isn't really routing any traffic. The AGIC monitors the cluster state using the Kubernetes API and applies the required configuration to the Application Gateway, so it can route traffic directly to the pods.
 
-Since the Azure Application Gateway is a managed service outside the AKS cluster, that can't usually access the pods directly, the AKS has to be created with the "advanced networking option". This advanced networking option makes the pods connect through a subnet that's accesible by the Application Gateway.
+Since the Azure Application Gateway is a managed service outside the AKS cluster, and can't usually access the pods directly, the AKS has to be created with the "advanced networking" option. This setting makes the pods connect through a subnet that's accessible by the Application Gateway.
 
 For further information, see the [Application Gateway Ingress Controller overview page](/azure/application-gateway/ingress-controller-overview)
 
 #### Difference between In-Cluster Ingress Controller and AGIC
 
-AGIC ingress controller has many advantages over in-cluster ingress controller.
+An AGIC ingress controller has many advantages over an in-cluster ingress controller.
 
-- AGIC doesn't take any resource of the Kubernetes cluster as it runs outside of the cluster.
-- External traffics doesn't go through the extra hop of the ingress controller pod, which eventually reduces latency.
+- AGIC doesn't take any resources of the from Kubernetes cluster, as it runs outside of the cluster.
+- External traffic doesn't go through the extra hop of an ingress controller pod, which reduces latency.
+
+The following image compares the two approaches.
 
 :::image type="content" source="../media/incluster-vs-agic.png" alt-text="in-cluster-vs-agic" lightbox="../media/incluster-vs-agic.png":::
 
-Below is the modified solution architecture of the eShop app that you'll deploy in the next unit.
+## The proposed solution
+
+The following image depicts the solution architecture of the eShop app that you'll deploy in the next unit.
 
 :::image type="content" source="../media/app-gateway-ingress.png" alt-text="Azure App Gateway Solution Architecture" lightbox="../media/app-gateway-ingress.png":::

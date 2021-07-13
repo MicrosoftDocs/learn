@@ -125,18 +125,16 @@ You can find an ASP.NET Core project for the `Web.Sales` BFF in the *src/ApiGate
     1. In *Startup.cs*, note how real-time HTTP health checking is configured in `ConfigureServices`.
 
         ```csharp
-    
-            public void ConfigureServices(IServiceCollection services)
-            {
-                var healthCheckBuilder = services.AddHealthChecks()
-                    .AddCheck("self", () => HealthCheckResult.Healthy())
-                    .AddUrlGroup(new Uri(Configuration["CatalogUrlHC"]), name: "catalogapi-check", tags: new string[] { "catalogapi" })
-                    .AddUrlGroup(new Uri(Configuration["OrderingUrlHC"]), name: "orderingapi-check", tags: new string[] { "orderingapi" })
-                    .AddUrlGroup(new Uri(Configuration["IdentityUrlHC"]), name: "identityapi-check", tags: new string[] { "identityapi" });            
-    
-                    // Content removed for brevity
-            }
-        
+        public void ConfigureServices(IServiceCollection services)
+        {
+            var healthCheckBuilder = services.AddHealthChecks()
+                .AddCheck("self", () => HealthCheckResult.Healthy())
+                .AddUrlGroup(new Uri(Configuration["CatalogUrlHC"]), name: "catalogapi-check", tags: new string[] { "catalogapi" })
+                .AddUrlGroup(new Uri(Configuration["OrderingUrlHC"]), name: "orderingapi-check", tags: new string[] { "orderingapi" })
+                .AddUrlGroup(new Uri(Configuration["IdentityUrlHC"]), name: "identityapi-check", tags: new string[] { "identityapi" });            
+
+                // Content removed for brevity
+        }
         ```
 
         In the preceding code:
@@ -147,18 +145,18 @@ You can find an ASP.NET Core project for the `Web.Sales` BFF in the *src/ApiGate
     1. Also in *Startup.cs*, note the JWT authentication code in the `AddCustomAuthentication` method:
 
         ```csharp
-            services.AddAuthentication(options =>
-                {
-                    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-        
-                })
-                .AddJwtBearer(options =>
-                {
-                    options.Authority = identityUrl;
-                    options.RequireHttpsMetadata = false;
-                    options.Audience = "websalesagg";                
-                });    
+        services.AddAuthentication(options =>
+        {
+            options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+
+        })
+        .AddJwtBearer(options =>
+        {
+            options.Authority = identityUrl;
+            options.RequireHttpsMetadata = false;
+            options.Audience = "websalesagg";                
+        });    
         ```
 
     1. Finally, in the `Configure` method, note the Swagger configuration. This will provide the UI we use for testing.
@@ -177,7 +175,7 @@ You can find an ASP.NET Core project for the `Web.Sales` BFF in the *src/ApiGate
 
 ### Identity.API
 
-Some changes have been made to the *Identity.API* project to support the Web Sales Aggregator. Review them below:
+Some changes have been made to the *src/Services/Identity/Identity.API* project to support the Web Sales Aggregator. Review them below:
 
 1. The web sales aggregator project has been configured as `websalesaggswaggerui` client in the *Config.cs* file of the *Identity.API* project.
 
@@ -207,7 +205,7 @@ Some changes have been made to the *Identity.API* project to support the Web Sal
     Password : `Pass@word1`
     ```
 
-## Review the necessary configuration
+## Configuration changes
 
 Make the following configuration changes to support the web sales aggregator code.
 ### WebStatus configuration
@@ -236,11 +234,22 @@ The setup script created an Azure Container Registry (ACR) instance for you. Pus
     ./deploy/k8s/build-to-acr.sh --services identity-api
     ```
 
+    The script starts an [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) for the *:::no-loc text="Identity":::* app. A variation of the following line confirms the Docker image was pushed to ACR:
+
+    ```console
+    2020/10/26 21:57:23 Successfully pushed image: eshoplearn202109999999999.azurecr.io/identity.api:linux-latest
+    ```
+
+    > [!IMPORTANT]
+    > The *:::no-loc text="WebSPA":::* project is built in ACR, rather than local to Cloud Shell, to take advantage of robust build hosts in ACR. If the ACR quick task fails, inspect the output for troubleshooting information. Run the above script again to attempt additional builds.
+
 1. Push and build the `websalesagg` image.
 
     ```bash
     ./deploy/k8s/build-to-acr.sh --services websalesagg
     ```
+    
+    As with the previous step, an ACR quick task builds the *:::no-loc text="websalesagg":::* image.
 
 ## Deploy the affected containers to the cluster
 
@@ -252,20 +261,20 @@ Now that your modified images are published, you can deploy the affected contain
     kubectl get svc -n ingress-nginx 
     ```
 
-    Refer to the following image.
+    Refer to the following image for an example.
 
     :::image type="content" source="../media/nginx-ingress-external-ip.png" alt-text="Nginx ingress external load balancer" lightbox="../media/nginx-ingress-external-ip.png":::
 
     > [!NOTE]
-    > In the next unit, you'll learn more about the Kubernetes ingress controller.
+    > In the next unit, you'll learn more about the ingress controllers in Kubernetes.
 
 1. Replace `{nginx-ingress-ip-address}` with the external IP address of the nginx ingress controller and then run the below command to deploy the affected services to the cluster.
 
     ```bash
-    ./deploy-affected-services.sh --ipAddress {nginx-ingress-ip-address}
+    ./deploy/k8s/deploy-affected-services.sh --ipAddress {nginx-ingress-ip-address}
     ```
 
-    The above script will deploy the following services :
+    The preceding script redeploys the following services:
 
     - `WebStatus`
     - `Identity.API`
@@ -273,38 +282,54 @@ Now that your modified images are published, you can deploy the affected contain
 
 ## Verify the deployed sales aggregator
 
-Wait till the `websalesagg` pod is up and running. Then you'll be able to access the `websalesagg` API. But at this point, `websalesagg` is only available for the internal resources to consume and you'll not be able to access the `websalesagg` outside the Kubernetes cluster yet. For that, you'll have to configure the ingress object for that and you'll explore those concepts in the next unit. As of now, to access the `websalesagg` API, you can use the cluster IP. You can follow the below steps :
+After deploying the changes, the *:::no-loc text="WebStatus":::* dashboard eventually shows that all the services are healthy. This includes the new *:::no-loc text="websalesagg":::* service, as denoted by the health check titled *:::no-loc text="Web Shopping Aggregator GW HTTP Check":::*. While the *:::no-loc text="websalesagg":::* service is healthy, it can't yet be accessed from outside the cluster.
 
-1. Run the below command to fetch the pod name of the `WebSPA` app. Take a note of that.
+To verify the *:::no-loc text="websalesagg":::* service from within the cluster, complete the following steps:
+
+1. Retrieve the pod name of the *:::no-loc text="WebSPA":::* app:
 
     ```bash
-    kubectl get svc --selector service=webspa
+    kubectl get pods --selector service=webspa
     ```
+
+    The pod name is highlighted in the example below.
 
     :::image type="content" source="../media/web-spa-pod-name.png" alt-text="Pod name of WebSPA" lightbox="../media/web-spa-pod-name.png":::
 
-1. And also take a note of the cluster ip of the `websalesagg` pod by using the below command. Make a note of that IP address.
+1. Retrieve the cluster IP address of the *:::no-loc text="websalesagg":::* pod:
 
     ```bash
     kubectl get svc --selector service=websalesagg
     ```
 
+    The cluster IP address is highlighted in the example below.
+
     :::image type="content" source="../media/websalesagg-cluster-ip.png" alt-text="Cluster IP of WebSalesAgg" lightbox="../media/websalesagg-cluster-ip.png":::
 
-1. Then run the below command to get into the pod. Make sure you replace `{webspa-pod-name}` with the pod name which you have noted in the previous step.
+1. Launch a shell inside the pod. Replace `{webspa-pod-name}` with the pod name you retrieved earlier.
 
     ```bash
     kubectl exec -it {webspa-pod-name} /bin/bash
     ```
 
+    See the example below.
+
     :::image type="content" source="../media/webspa-container-pod-bash.png" alt-text="WebSPA inside container pod" lightbox="../media/webspa-container-pod-bash.png":::
 
-1. Within the pod, you run the below CURL command to see if it's accessible.
+1. Within the pod, use cURL to verify the service is listening. Use the IP address you retrieved earlier.
 
     ```bash
     curl http://<clusterip-of-websalesagg-pod>/websalesagg/swagger/index.html
     ```
 
+    We don't care about the contents of the response. We only care that the service is listening on port 80.
+
     :::image type="content" source="../media/curl-of-internal-pod-request.png" alt-text="Curl of internal websaleagg pod request" lightbox="../media/curl-of-internal-pod-request.png":::
 
-In the next unit, you'll configure the ingress object to access the API outside of the Kubernetes cluster.
+1. Use the following command to exit the shell:
+
+    ```bash
+    exit
+    ```
+
+In the next unit, you'll learn about configuring ingress into the Kubernetes cluster.

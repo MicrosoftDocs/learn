@@ -1,6 +1,6 @@
-In a microservices architecture, each microservice typically exposes a set of fine-grained endpoints. This can impact the client-to-microservice communication due to sheer endpoint count, so it's important to develop a sound strategy to manage app endpoints.
+Imagine you're a software developer for an online retailer. Your company uses an app named *:::no-loc text="eShopOnContainers":::* as its online storefront. The storefront is a cloud-native, microservices-based ASP.NET Core app. The product owner has requested you migrate some data services from your AKS cluster to managed services to reduce operational costs.
 
-In this module, you'll learn about exposing a microservices application to the outside world. You'll explore ingress, API Gateways, and the [Backends For Frontends](https://samnewman.io/patterns/architectural/bff/) (BFF) pattern.
+In a microservices architecture, each service typically exposes a set of fine-grained endpoints. Since this leads to a large number of endpoints to manage, it's important to develop a sound strategy. In this module, you'll learn about exposing a microservices application to the outside world. You'll explore ingress, API Gateways, and the [Backends For Frontends](https://samnewman.io/patterns/architectural/bff/) (BFF) pattern.
 
 In this module you will:
 

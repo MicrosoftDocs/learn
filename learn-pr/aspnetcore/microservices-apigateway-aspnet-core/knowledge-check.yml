@@ -2,7 +2,7 @@
 uid: learn.microservices-apigateway-aspnet-core.knowledge-check
 metadata:
   title: Knowledge check
-  description: Check your knowledge.
+  description: Check your understanding of this module.
   author: camsoper
   ms.author: casoper
   ms.date: 05/12/2021
@@ -14,15 +14,21 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: The BFF pattern is an extension of the API Gateway pattern
+    - content: The BFF pattern is an extension what pattern?
       choices:
-        - content: "True"
+        - content: "API Gateway"
           isCorrect: true
           explanation: This is correct. In few scenarios, API Gateway pattern is not sufficient to solve client specific problem. BFF can he helpful in such scenarios.
-        - content: "False"
+        - content: "Dependency Injection"
           isCorrect: false
-          explanation: This is not correct. Sometimes, BFF is needed along with API Gateway pattern to solve client specific problem.    
-    - content: Mark the correct answer about the Kubernetes ingress object.
+          explanation: Dependency Injection is not related to the BFF pattern.
+        - content: "Model View Controller"
+          isCorrect: true
+          explanation: MVC is not related to the BFF pattern.
+        - content: "Event Bus"
+          isCorrect: false
+          explanation: Event Bus is not related to the BFF pattern.
+    - content: Which is a correct statment regarding the Kubernetes ingress object?
       choices:
         - content: Kubernetes ingress object helps to set up the communication among pods.
           isCorrect: false
@@ -36,7 +42,7 @@ quiz:
         - content: Ingress object can route the traffic of it's own. You don't need any ingress controller.
           isCorrect: false
           explanation: This is not correct. You'll need to have an ingress controller for ingress object to work. It can be NGINX ingress controller or Azure Application Gateway ingress controller.
-    - content: Mark the correct answer about the Azure Application Gateway.
+    - content: Which of the following is a correct statement about Azure Application Gateway?
       choices:
         - content: The Application Gateway "lives" inside the AKS cluster to route traffic to the pods.
           isCorrect: false
