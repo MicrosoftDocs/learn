@@ -18,7 +18,7 @@ quiz:
       choices:
         - content: "API Gateway"
           isCorrect: true
-          explanation: This is correct. In few scenarios, API Gateway pattern is not sufficient to solve client specific problem. BFF can he helpful in such scenarios.
+          explanation: This is correct. In few scenarios, API Gateway pattern is not sufficient to solve a client-specific problem. BFF can be helpful in such scenarios.
         - content: "Dependency Injection"
           isCorrect: false
           explanation: Dependency Injection is not related to the BFF pattern.
@@ -28,7 +28,7 @@ quiz:
         - content: "Event Bus"
           isCorrect: false
           explanation: Event Bus is not related to the BFF pattern.
-    - content: Which is a correct statment regarding the Kubernetes ingress object?
+    - content: Which is a correct statement regarding the Kubernetes ingress object?
       choices:
         - content: Kubernetes ingress object helps to set up the communication among pods.
           isCorrect: false
@@ -39,7 +39,7 @@ quiz:
         - content: Kubernetes ingress object is usually used to expose HTTP endpoints outside of the Kubernetes cluster.
           isCorrect: true
           explanation: This is correct.
-        - content: Ingress object can route the traffic of it's own. You don't need any ingress controller.
+        - content: Ingress object can route its own traffic. You don't need any ingress controller.
           isCorrect: false
           explanation: This is not correct. You'll need to have an ingress controller for ingress object to work. It can be NGINX ingress controller or Azure Application Gateway ingress controller.
     - content: Which of the following is a correct statement about Azure Application Gateway?
@@ -55,4 +55,4 @@ quiz:
           explanation: This is not correct. Only Application Gateway ingress controller can read ingress configuration based on the `application-gateway` annotation.
         - content: All ingresses need the `appgw.ingress.kubernetes.io/backend-path-prefix` annotation to use the Application Gateway
           isCorrect: false
-          explanation: This statement is not entirely correct. `backend-path-prefix` annotation is not a mandatory configuration. It's need to implement URL rewriting.
+          explanation: This statement is not entirely correct. `backend-path-prefix` annotation is not a mandatory configuration. It needs to implement URL rewriting.
