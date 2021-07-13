@@ -8,7 +8,7 @@ In this unit, you will:
 
 ## Verify the deployment to AKS
 
-When the finishes, *:::no-loc text="eShopOnContainers":::* is fully deployed. Even though the app has been deployed, it might take a few minutes to come online. Verify that the app is deployed and online with the following steps:
+When the script finishes, *:::no-loc text="eShopOnContainers":::* is fully deployed. Even though the app has been deployed, it might take a few minutes to come online. Verify that the app is deployed and online with the following steps:
 
 1. Run the following command to display the various app URLs:
 
