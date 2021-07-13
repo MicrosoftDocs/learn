@@ -26,7 +26,7 @@ The source IP address Application Gateway uses for health probes depends on the 
 
 - If the server address in the backend pool is a private endpoint, then the source IP address is from the application gateway subnet's private IP address space.
 
-  ![example heath probe for Azure App Gateway ](../media/appgatewayprobe.png)
+  ![example heath probe for Azure App Gateway ](../media/app-gateway-probe.png)
 
  
 
@@ -89,9 +89,9 @@ By default, an HTTP(S) response with status code between 200 and 399 is consider
 
 The following are matching criteria:
 
-1. HTTP response status code match - Probe matching criterion for accepting user specified http response code or response code ranges. Individual comma-separated response status codes or a range of status code is supported.
+- HTTP response status code match - Probe matching criterion for accepting user specified http response code or response code ranges. Individual comma-separated response status codes or a range of status code is supported.
 
-2. HTTP response body match - Probe matching criterion that looks at HTTP response body and matches with a user specified string. The match only looks for presence of user specified string in response body and isn't a full regular expression match.
+- HTTP response body match - Probe matching criterion that looks at HTTP response body and matches with a user specified string. The match only looks for presence of user specified string in response body and isn't a full regular expression match.
 
 Match criteria can be specified using the New-AzApplicationGatewayProbeHealthResponseMatch cmdlet.
 
@@ -101,7 +101,7 @@ A listener is a logical entity that checks for incoming connection requests by u
 
 When you create an application gateway by using the Azure portal, you also create a default listener by choosing the protocol and port for the listener. You can choose whether to enable HTTP2 support on the listener. After you create the application gateway, you can edit the settings of that default listener (appGatewayHttpListener) or create new listeners.
 
-![app gateway listener configuration ](../media/appgateway-error-codes.png)
+![app gateway listener configuration ](../media/app-gateway-error-codes.png)
 
  
 
@@ -137,7 +137,7 @@ Choose HTTP or HTTPS:
 
 To configure TLS termination and end-to-end TLS encryption, you must add a certificate to the listener to enable the application gateway to derive a symmetric key. This is dictated by the TLS protocol specification. The symmetric key is used to encrypt and decrypt the traffic that's sent to the gateway. The gateway certificate must be in Personal Information Exchange (PFX) format. This format lets you export the private key that the gateway uses to encrypt and decrypt traffic.
 
-## Redirection Overview 
+## Redirection overview 
 
 You can use application gateway to redirect traffic. It has a generic redirection mechanism which allows for redirecting traffic received at one listener to another listener or to an external site. This simplifies application configuration, optimizes the resource usage, and supports new redirection scenarios including global and path-based redirection.
 
@@ -244,7 +244,7 @@ The urlPathMap element is used to specify Path patterns to back-end server pool 
 
  "defaultBackendAddressPool": {
 
- "id": "/subscriptions/ {subscriptionId}/../microsoft.network/applicationGateways/{gatewayName}/backendAddressPools/{poolName1}"
+ "id": "/subscriptions/{subscriptionId}/../microsoft.network/applicationGateways/{gatewayName}/backendAddressPools/{poolName1}"
 
  },
 

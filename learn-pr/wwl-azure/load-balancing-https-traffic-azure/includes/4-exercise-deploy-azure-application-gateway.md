@@ -20,8 +20,8 @@ In this exercise, you will:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) with your Azure account.
 
-2. On any Azure Portal page, in **Search resources, services and docs (G+/)**, enter application gateway, and then select **Application gateways** from the results.
-    ![Azure Portal search for application gateway](../media/search-application-gateway.png)    
+2. On any Azure portal page, in **Search resources, services and docs (G+/)**, enter application gateway, and then select **Application gateways** from the results.
+    ![Azure portal search for application gateway](../media/search-application-gateway.png)    
 
 3. On the Application gateways page, select **+ Create**.
 
@@ -86,7 +86,7 @@ In this exercise, you will:
 
 19. Accept the default values for the other settings on the **Listener** tab.
 
-    ![Azure Portal add an Application Gateway routing rule](../media/routing-rule-listener-tab.png)
+    ![Azure portal add an Application Gateway routing rule](../media/routing-rule-listener-tab.png)
 
 20. Select the **Backend targets** tab to configure the rest of the routing rule.
 
@@ -130,7 +130,7 @@ To do this, you'll:
 
 ### Create virtual machines
 
-1. On any Azure Portal page, in **Search resources, services and docs (G+/)**, enter virtual machine, and then select **Virtual machines** from the results. 
+1. On any Azure portal page, in **Search resources, services and docs (G+/)**, enter virtual machine, and then select **Virtual machines** from the results. 
 
 2. On the Virtual machines page, select **+ Create** > **+ Virtual machine**.
 
@@ -166,7 +166,7 @@ In this example, you install IIS on the virtual machines to verify Azure created
 
 2. Select **Cloud Shell** from the top navigation bar of the Azure portal and then select **PowerShell** from the drop-down list.
 
-   ![Azure Portal and Azure PowerShell Install IIS on backends](../media/application-gateway-extension.png)
+   ![Azure portal and Azure PowerShell Install IIS on backends](../media/application-gateway-extension.png)
 
 3. Run the following command to install IIS on the virtual machine. Change the Location parameter if necessary:
 
@@ -208,7 +208,7 @@ Set-AzVMExtension `
 
 7. Under **Target**, select **BackendVM2.** 
 
-   ![Azure Portal add target backends to backend pool](../media/edit-backend-pool.png)
+   ![Azure portal add target backends to backend pool](../media/edit-backend-pool.png)
 
 8. Select **Save**.
 
@@ -222,7 +222,7 @@ Although IIS isn't required to create the application gateway, you installed it 
 
 1. Find the public IP address for the application gateway on its **Overview** page. 
 
-   ![Azure Portal look up Frontend Public IP address ](../media/app-gw-public-ip.png)
+   ![Azure portal look up Frontend Public IP address ](../media/app-gateway-public-ip.png)
 
 2. Copy the public IP address, and then paste it into the address bar of your browser to browse that IP address.
 
