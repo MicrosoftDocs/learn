@@ -1,4 +1,4 @@
-Since we created a bot with scenarios in our previous module, we will now be working on implementing advanced features like LUIS, data connect, connecting our bot to channels such as Teams, WhatsApp, etc. Let's first connect the bot we built to the Teams channel. Get along with the steps below to connect your bot with Teams channel. 
+You created a bot in the previous module. You'll now implement advanced features like LUIS, data connect, and connecting the bot to channels like Teams and WhatsApp. Let's first connect the bot we built to the Teams channel. Get along with the steps below to connect your bot with Teams channel. 
 
 ## Launching the bot on channels
 
