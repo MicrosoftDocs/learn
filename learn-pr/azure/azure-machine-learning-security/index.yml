@@ -8,7 +8,7 @@ metadata:
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to Azure Machine Learning Role-Based Access Control Security
+title: Introduction to Security Concepts in Azure Machine Learning
 summary: Azure Machine Learning provides several mechanisms to secure your data and training environment.
 abstract: |
   In this module, you will:
