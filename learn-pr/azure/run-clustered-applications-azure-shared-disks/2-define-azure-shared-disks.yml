@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.run-clustered-applications-azure-shared-disks.define-azure-shared-disks
-title: What are Azure shared disks?
+title: About Azure shared disks
 metadata:
-  title: What are Azure shared disks?
+  title: About Azure shared disks
   description: This unit describes the features of Azure shared disks and their usage scenarios.
   ms.date: 06/23/2021
   author: ndelgado
