@@ -9,7 +9,7 @@ So, in this unit, you create a host pool and add a VM that will act as a session
 First, create a resource group to contain all the resources you'll create in this module.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
-1. From the upper-right of the Azure portal, select **Cloud Shell**.
+1. From the upper right of the Azure portal, select **Cloud Shell**.
 1. Select **PowerShell**.
 1. In Azure Cloud Shell, run the following command to create a resource group. Replace `EastUS` with the value of a location near you.
 

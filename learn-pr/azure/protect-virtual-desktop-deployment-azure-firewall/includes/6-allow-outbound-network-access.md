@@ -48,7 +48,7 @@ Create a network rule collection, and add the following rules:
 
 |Rule  |Description  |
 |---------|---------|
-|Allow DNS    |Allow traffic from your Active Directory Domain Server private IP address to * for TCP and UDP ports 53. Some deployments might not need DNS rules.For example, Azure Active Directory Domain Services forwards DNS queries to Azure DNS at 168.63.129.16. |
+|Allow DNS    |Allow traffic from your Active Directory Domain Server private IP address to * for TCP and UDP ports 53. Some deployments might not need DNS rules. For example, Azure Active Directory Domain Services forwards DNS queries to Azure DNS at 168.63.129.16. |
 |Allow KMS    |  Allow traffic from your Azure Virtual Desktop VMs to the Windows activation service TCP port 1688.|
 
 When you add both network rules, your rule collection will look similar to the following screenshot:

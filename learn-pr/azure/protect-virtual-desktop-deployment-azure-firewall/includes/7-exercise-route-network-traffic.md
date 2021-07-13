@@ -5,7 +5,7 @@ In the previous exercise, you deployed Azure Firewall. Now you need to route all
 For the subnet used by the host pool, configure the outbound default route to go through the firewall. You'll complete the following three steps:
 
 1. Create a route table in the same resource group as your host pool VMs and firewall.
-1. Associate the route table to the subnet that your host pool VMs uses.
+1. Associate the route table to the subnet that your host pool VMs use.
 1. On the route table, add the route to the firewall.
 
 After you complete those steps, all traffic will route to Azure Firewall.
