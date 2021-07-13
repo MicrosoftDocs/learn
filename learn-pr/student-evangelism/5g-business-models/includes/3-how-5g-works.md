@@ -13,10 +13,10 @@ Sensors from three types of sensors can capture data:
 
 - Medical sensors ex: heart rate monitors
 - Proximity sensors for maintaining social distancing
-- Environmental sensors ex: air quality etc
+- Environmental sensors ex: air quality etc.
 
 Data from these sensors is sent to either LTE or 5G Radio Access Network (RAN) devices. From the 5G or LTE radios located in the hospitals, the data is sent to the 5G or LTE packet cores running on the edge servers. You can implement edge servers using either Azure Stack Edge or Azure Arc-enabled servers. You can also pre-process data on the edge servers before sending it to the Azure cloud for further analysis.
 
-Once the data reaches the cloud, it is ingested by Azure IoT Hub and sent further to Azure Machine Learning and Azure Time Series to gain insights. You could simulate the interaction between the entities in the facility using Azure Digital Twins. Finally, data is stored using Azure Data Lake Storage. Using a dashboard, you can get visual insights for rapid action. This interaction is shown below.
+Once the data reaches the cloud, it's ingested by Azure IoT Hub and sent further to Azure Machine Learning and Azure Time Series to gain insights. You could simulate the interaction between the entities in the facility using Azure Digital Twins. Finally, data is stored using Azure Data Lake Storage. Using a dashboard, you can get visual insights for rapid action. This interaction is shown below.
 
-![The illustration shows interaction between Azure services.](../media/interaction.jpg)
+[![The illustration shows interaction between Azure services.](../media/interaction.jpg)](../media/interaction.jpg#lightbox)

@@ -13,7 +13,7 @@
 There are three possibilities for 5G and Azure deployments
 
 - Azure for Operators
-- Azure private multi-access edge compute (MEC), implemented over Azure stack Edge• Azure stack HCI (for data centers)
+- Azure private multi-access edge compute (MEC), implemented over Azure Stack Edge - Azure Stack HCI (for data centers)
 
 We focus on Azure private MEC because this module is targeted to enterprise developers using Azure technologies. Also, in this module, we focus on low latency-based IoT services, but similar considerations could also apply to a live video analytics service based on Azure private MEC and 5G. 
 
@@ -29,7 +29,7 @@ Typically, you deploy new 5G based services as a partnership between an enterpri
 
 - Ensuring forward compatibility with cellular connectivity options, i.e., the ability to evolve from 4G LTE networks available today to 5G in the future
 
-- Ability to deploy services in areas where there is no Wi-Fi coverage
+- Ability to deploy services in areas where there's no Wi-Fi coverage
 
 - M2M connectivity: local connectivity within offices, factories, farms, or warehouses where machines communicate with each other or with the cloud
 
@@ -42,7 +42,7 @@ Typically, you deploy new 5G based services as a partnership between an enterpri
 
 ## Security
 
-- Ability to run a private network for critical areas such as smart grids or hospitals where devices will not be exposed to the open internet
+- Ability to run a private network for critical areas such as smart grids or hospitals where devices won't be exposed to the open internet
 - Improved end to end security through the use of Azure Sphere
 
 ## Enhanced Services
@@ -64,4 +64,4 @@ Typically, you deploy new 5G based services as a partnership between an enterpri
 
 To summarize, 5G networking technologies are designed for high bandwidth and low latency enterprise applications. Data captured through sensors via Azure private MEC is processed through a set of supporting technologies either in the cloud or on edge devices. Hence, to design a new service or a business model, we need to consider low latency and edge are the primary considerations. The supporting set of Azure technologies then complement Azure private MEC to create the service. In this module, we illustrate these principles by considering a use case based on low latency IoT applications. The solution uses the following Azure components. These combine functions on the cloud and the edge. 
 
-On the Edge side, Azure Stack Edge functions as a cloud storage gateway providing access to local files. Combined with Azure IoT Edge and Azure IoT Hub, a bidirectional service is provided between IoT devices and Azure. Azure Sphere provides additional security for devices where needed. On the Cloud side, data is stored in Azure data lake storage and analysed through azure machine learning and azure time series insights. Finally, Azure digital twins provide a cloud-based representation of the data, and Azure Arc enabled Kubernetes manages Kubernetes clusters. 
+On the Edge side, Azure Stack Edge functions as a cloud storage gateway providing access to local files. Combined with Azure IoT Edge and Azure IoT Hub, a bidirectional service is provided between IoT devices and Azure. Azure Sphere provides additional security for devices where needed. On the Cloud side, data is stored in Azure data lake storage and analyzed through Azure machine learning and Azure time series insights. Finally, Azure digital twins provide a cloud-based representation of the data, and Azure Arc enabled Kubernetes manages Kubernetes clusters. 
