@@ -223,4 +223,7 @@ The final step is to load in the route reference data and identify a bus route t
     GO
     ```
 
+    > [!NOTE]
+    > If you get errors that some artifacts are not found (for example, RouteData or web.AddBusData), be sure to confirm that the build successfully occurred in the previous section, *Configure database schema using GitHub Actions*.
+
 1. Finally, press <kbd>Ctrl+C</kbd> to exit sqlcmd, and run **`pwsh`** to switch back to PowerShell.

@@ -20,7 +20,7 @@ prerequisites: |
   - Ability to navigate the Azure portal
   - Familiarity with Visual Studio Code
   - Familiarity with CI/CD concepts
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/build-full-stack-apps.svg
 hidden: true
 levels:
   - intermediate
