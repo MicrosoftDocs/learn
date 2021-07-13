@@ -18,13 +18,13 @@
 -->
 Here, we'll go over the testing pyramid and the many types of tests. Knowing how different types of tests can help address different vulnerabilities in your code will make sure you are spending your test investment in the most impactful way.
 
-* The Testing pyramid
-* Unit Tests
-* Integration Tests
-* Performance Tests
-* Load Tests
-* Acceptance Tests
-* UI Tests
+* **The Testing pyramid** The testing pyramid helps us organize the types of tests by how expensive they are to write, maintain, and run as well as the rarity of those types of tests.
+* **Unit Tests** Unit tests test the smallest testable unit of code, make up the base of the Testing pyramid, are the most common, and are the least expensive tests to write, maintain, and run.
+* **Integration Tests** Integration tests are the next level up and test more than the smallest testable unit of code and often test how multiple behaviors integrate with each other.
+* **Performance Tests** Performance tests measure how long it takes certain parts of your program to execute.
+* **Load Tests** Load tests stress your app to its limits by mimicking multiple users and processes using your app at once.
+* **Acceptance Tests** Acceptance tests are tests that define business desired outcome and may take on the role of testing if your app has the customer criteria it needs.
+* **UI Tests** UI Tests mimic actual users using the app and interacting with the UI as an end customer would to complete an action.
 
 <!-- 2. Decision criteria introduction --------------------------------------------------------------------------------
 
