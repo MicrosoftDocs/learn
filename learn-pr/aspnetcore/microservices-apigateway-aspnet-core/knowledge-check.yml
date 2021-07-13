@@ -23,7 +23,7 @@ quiz:
           isCorrect: false
           explanation: Dependency Injection is not related to the BFF pattern.
         - content: "Model View Controller"
-          isCorrect: true
+          isCorrect: false
           explanation: MVC is not related to the BFF pattern.
         - content: "Event Bus"
           isCorrect: false
