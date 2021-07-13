@@ -11,7 +11,7 @@ You decide to start the training lesson by defining vocabulary used to discuss c
 - _Trojan Horse_: Named after the Greeks hollow horse to gain entrance into the city of Troy and win the war. A form of malware software that appears to be something it isn’t. Functions as a hacker’s back door into an organization’s system.
 - _Phishing_: An attempt to trick someone into sharing personal information or sending money to them. The most common method is using email messages that appear to be legitimate.
 - _Spear-Phishing_: A targeted phishing attack. It targets specific organizations, businesses, or individuals.
-- _Data Breach_: Successful illegal access of data stored on an internal company system. Malicious users typically accomplish a data breach by using stolen credentials, personal information of customers, credit card numbers, bank account numbers, and more.
+- _Data Breach_: A data breach is the release of secure or confidential information to an untrusted environment.
 - _Kill chain_: Framework for a cyberattack. Typically, it consists of:
 1. Reconnaissance of target.
 1. Determination of the best attack methods.
@@ -21,12 +21,12 @@ You decide to start the training lesson by defining vocabulary used to discuss c
 1. The intruder starting the end goal of intrusion.
 
 - _Botnet_: A collection of compromised internet devices under third-party control. Each device is known as a bot. A botnet distributes malware or performs other functions decided by the third party.
-- _Zero-day vulnerability_: A software or hardware flaw for which there isn't an existing patch. Named after the medical term Patient Zero. When a zero-day vulnerability is discovered, the software or hardware vendor has no days to fix the flaw. Zero-days are a hacker’s most dangerous exploit.
+- _Zero-day vulnerability_: The term "Zero-day" is a security flaw n software, hardware or firmware that is unknown to the party or parties responsible for patching or otherwise fixing the flaw. The term zero day may refer to the vulnerability itself, or an attack that has zero days between the time the vulnerability is discovered and the first attack. 
 - _Computer worm_: A harmful software code that can replicate and search for new hosts to infect. Once infected, it can destroy data and/or corrupt the system.
 - _Computer virus_: This malware can replicate itself by modifying other computer applications. It’s malicious software that interferes with a computer’s operations.
 - _Cryptography_: A field of mathematics that is used to protect data and communications with encryption. The unencrypted data is *plaintext,* and the encrypted information is a *cipher*. A cryptographic key is often a large number and is "seeded" into the encryption algorithm to scramble the data.
 - _Encryption_: is the process of encoding data to keep the contents secret.
-  - _Public key encryption_: This method of encryption uses a private key and a public key. These two different keys are a *keypair* and they mathematically relate to each other. Data encryption uses different keys or *asymmetric encryption*.
+  - _Public key encryption_: This method of encryption uses a private key and a public key. These two different keys are a *keypair* and they mathematically relate to each other. Public key encryption is a form of asymmetric encryption. Which is often used to encrypt data in transit. For example when using TLS/HTTPS to secure web traffic.
 
 Now that we have a shared vocabulary, lets investigate an example illustrating the use of the encryption process for sending an encrypted message.
 
