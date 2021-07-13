@@ -28,7 +28,7 @@ quiz:
           isCorrect: true
           explanation: Correct. Health Bot doesn’t currently support Signal.
     
-    - content: "How can we channelize the health bot on Microsoft Teams?"
+    - content: "How can we connect the health bot to Microsoft Teams?"
       choices:
         - content: "APIs"
           isCorrect: false

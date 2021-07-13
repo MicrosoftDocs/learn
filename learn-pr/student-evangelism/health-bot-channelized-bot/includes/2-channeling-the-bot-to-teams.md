@@ -1,8 +1,8 @@
-You created a bot in the previous module. You'll now implement advanced features like LUIS, data connect, and connecting the bot to channels like Teams and WhatsApp. Let's first connect the bot we built to the Teams channel. Get along with the steps below to connect your bot with Teams channel. 
+You created a bot in the previous module. You'll now implement advanced features like LUIS, connecting data, and connecting the bot to channels like Teams and WhatsApp. Let's first connect the bot to Teams.  
 
-## Launching the bot on channels
+## Connecting the bot to channels 
 
-1. Click on **Models** under the Language tab in the left menu bar.
+1. Select **Models** under **Language** in the left pane.
 
 2. Click on edit for the **Greetings** model.
 
