@@ -45,7 +45,7 @@ The following table lists the default health probe settings:
 
 
 | **Probe property**  | **Value**                      | **Description**                                              |
-| - |  |  |
+|:-:|:-:|:-:|
 | Probe URL           | <protocol>://127.0.0.1:<port>/ | The protocol and port are inherited from the backend HTTP settings to which the probe is associated |
 | Interval            | 30                             | The amount of time in seconds to wait before the next health probe is sent. |
 | Time-out            | 30                             | The amount of time in seconds the application gateway waits for a probe response before marking the probe as unhealthy. If a probe returns as healthy, the corresponding backend is immediately marked as healthy. |
