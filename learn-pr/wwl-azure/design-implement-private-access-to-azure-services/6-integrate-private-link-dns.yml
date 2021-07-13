@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "To ensure that communications with Azure Storage pass through the Service Endpoint, you"
+  - content: "How can one ensure that communications with Azure Storage pass through the Service Endpoint?"
     choices:
     - content: "Add an outbound rule to allow access to storage."
       isCorrect: true

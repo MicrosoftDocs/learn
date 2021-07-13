@@ -10,7 +10,7 @@ Integrating Azure services to an Azure virtual network enables private access to
 
 - You can also access the service using public endpoints by extending a virtual network to the service, through Service Endpoints. Service Endpoints allow service resources to be secured to the virtual network.
 
-Azure VNet Limits
+### Azure VNet Limits
 
 There are certain limits around the number of Azure resources you can deploy. Most Azure networking limits are at the maximum values. However, you can increase certain networking limits as specified on the [VNet limits page](/azure/azure-resource-manager/management/azure-subscription-service-limits).
 
@@ -62,7 +62,7 @@ Select **Add VNet**.
 
 The drop-down list contains all of the Azure Resource Manager virtual networks in your subscription in the same region. Underneath that is a list of the Resource Manager virtual networks in all other regions. Select the VNet you want to integrate with.
 
-![Select the VNet](../media/vnet-config.png)
+![Select the VNet](../media/vnet-integration-configuration.png)
 
 If the VNet is in the same region, either create a new subnet or select an empty preexisting subnet.
 
@@ -100,15 +100,15 @@ Route tables (UDRs): You can place a route table on the integration subnet to se
 
 By default, your app routes only RFC1918 traffic into your VNet. If you want to route all your outbound traffic into your VNet, use the following steps to add the WEBSITE_VNET_ROUTE_ALL setting in your app:
 
-- Go to the Configuration UI in your app portal. Select New application setting.
+1. Go to the Configuration UI in your app portal. Select New application setting.
 
-- Enter WEBSITE_VNET_ROUTE_ALL in the Name box and enter 1 in the Value box.
+2. Enter WEBSITE_VNET_ROUTE_ALL in the Name box and enter 1 in the Value box.
 
-  ![Provide application setting](../media/vnet-app-setting.png)
+  ![Provide application setting](../media/vnet-integration-app-setting.png)
 
-- Select OK.
+3. Select OK.
 
-- Select Save.
+4. Select Save.
 
 When you route all your outbound traffic into your VNet, it's subject to the NSGs and UDRs that are applied to your integration subnet. When WEBSITE_VNET_ROUTE_ALL is set to 1, outbound traffic is still sent from the addresses that are listed in your app properties, unless you provide routes that direct the traffic elsewhere.
 
