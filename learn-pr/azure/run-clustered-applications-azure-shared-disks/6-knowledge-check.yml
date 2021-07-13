@@ -31,7 +31,7 @@ quiz:
     - content: "Shared managed disks offer a fully managed file system that can be accessed by using SMB/NFS."
       isCorrect: false
       explanation: "Shared managed disks don't natively offer a fully managed file system that can be accessed by using SMB/NFS. You need to use a cluster manager, such as Windows Server Failover Cluster (WSFC) or Pacemaker, that handles cluster node communication and write locking."
-    - content: "I can use a shared disk as an OS disk."
+    - content: "I can use a shared disk as an OS Disk."
       isCorrect: false
       explanation: "You can use Azure shared disks only as data disks."
     - content: "You can use SCSI PR commands to enable failover from one node to another when you use Azure shared disks."
