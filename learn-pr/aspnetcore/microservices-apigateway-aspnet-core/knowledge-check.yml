@@ -18,7 +18,7 @@ quiz:
       choices:
         - content: "API Gateway"
           isCorrect: true
-          explanation: This is correct. In few scenarios, API Gateway pattern is not sufficient to solve a client-specific problem. BFF can be helpful in such scenarios.
+          explanation: Correct. In few scenarios, API Gateway pattern isn't sufficient to solve a client-specific problem. BFF can be helpful in such scenarios.
         - content: "Dependency Injection"
           isCorrect: false
           explanation: Dependency Injection is not related to the BFF pattern.
@@ -32,27 +32,27 @@ quiz:
       choices:
         - content: Kubernetes ingress object helps to set up the communication among pods.
           isCorrect: false
-          explanation: This is not correct. Ingress object is usually used to expose HTTP endpoints outside of the Kubernetes cluster.
+          explanation: Incorrect. Ingress objects are used to expose HTTP endpoints outside of the Kubernetes cluster.
         - content: Kubernetes ingress object gets created automatically when you set up a Kubernetes cluster.
           isCorrect: false
-          explanation: This is not correct. You'll need to separate create and configure the ingress object route for each of your service, which you want to expose outside.
-        - content: Kubernetes ingress object is usually used to expose HTTP endpoints outside of the Kubernetes cluster.
+          explanation: Incorrect. You'll need to separate create and configure the ingress object route for each of your service, which you want to expose outside.
+        - content: Kubernetes ingress object is used to expose HTTP endpoints outside of the Kubernetes cluster.
           isCorrect: true
-          explanation: This is correct.
+          explanation: Correct.
         - content: Ingress object can route its own traffic. You don't need any ingress controller.
           isCorrect: false
-          explanation: This is not correct. You'll need to have an ingress controller for ingress object to work. It can be NGINX ingress controller or Azure Application Gateway ingress controller.
+          explanation: Incorrect. You'll need to have an ingress controller for ingress object to work. It can be NGINX ingress controller or Azure Application Gateway ingress controller.
     - content: Which of the following is a correct statement about Azure Application Gateway?
       choices:
         - content: The Application Gateway "lives" inside the AKS cluster to route traffic to the pods.
           isCorrect: false
-          explanation: This is not correct. Application Gateway runs outside of the Kubernetes cluster.
+          explanation: Incorrect. Application Gateway runs outside of the Kubernetes cluster.
         - content: The Application Gateway uses a special network configuration to access the pods directly.
           isCorrect: true
-          explanation: This is correct. 
+          explanation: Correct. 
         - content: The NGINX ingress controller can use the Application Gateway if the ingresses have the `kubernetes.io/ingress.class:azure/application-gateway` annotation
           isCorrect: false
-          explanation: This is not correct. Only Application Gateway ingress controller can read ingress configuration based on the `application-gateway` annotation.
+          explanation: Incorrect. Only Application Gateway ingress controller can read ingress configuration based on the `application-gateway` annotation.
         - content: All ingresses need the `appgw.ingress.kubernetes.io/backend-path-prefix` annotation to use the Application Gateway
           isCorrect: false
           explanation: This statement is not entirely correct. `backend-path-prefix` annotation is not a mandatory configuration. It needs to implement URL rewriting.
