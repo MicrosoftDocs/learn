@@ -10,8 +10,6 @@ Four situations were identified. In all cases, you should be able to respond rap
 
 You want to combine data from various sensors and process the data either on the cloud or the edge. Use of new networking technologies like 5G help to ensure low latency. You also want to create a consistent interface through the use of Azure private MEC. 
 
-[![The illustration shows the scenario image.](../media/scenario.png)(../media/scenario.png#lightbox)](../media/scenario.png#lightbox)
-
 ## Learning objectives
 
 In this module, you will:
