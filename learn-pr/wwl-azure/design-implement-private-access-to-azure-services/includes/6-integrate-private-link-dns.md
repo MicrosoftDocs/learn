@@ -71,7 +71,7 @@ Private networks already using the private DNS zone for a given type, can only c
 For Azure services, use the recommended zone names as described in the following table:
 
 | **Private Link resource type / Subresource**                 | **Private DNS zone name**                          | **Public DNS zone forwarders**                  |
-|  | -- | -- |
+|:-:|:-:|:-:|
 | Azure  Automation / (Microsoft.Automation/automationAccounts) / Webhook,  DSCAndHybridWorker | privatelink.azure-automation.net                   | azure-automation.net                            |
 | Azure  SQL Database (Microsoft.Sql/servers) / sqlServer      | privatelink.database.windows.net                   | database.windows.net                            |
 | Azure  Synapse Analytics (Microsoft.Sql/servers) / sqlServer | privatelink.database.windows.net                   | database.windows.net                            |
