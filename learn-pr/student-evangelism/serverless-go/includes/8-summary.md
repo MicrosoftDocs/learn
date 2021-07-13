@@ -6,5 +6,5 @@ You looked into how to develop Azure Functions supporting both HTTP triggers and
 
 ## Further learning
 
-- [Custom handlers](azure/azure-functions/functions-custom-handlers?azure-portal=true)
+- [Custom handlers](/azure/azure-functions/functions-custom-handlers?azure-portal=true)
 - [Learn Go](/learn/paths/go-first-steps/?azure-portal=true)
