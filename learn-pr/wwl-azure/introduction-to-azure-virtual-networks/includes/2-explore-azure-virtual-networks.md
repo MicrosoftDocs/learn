@@ -8,7 +8,7 @@ Azure VNets enable resources in Azure to securely communicate with each other, t
 
 - **Communication with the internet.** All resources in a VNet can communicate outbound to the internet, by default. You can communicate inbound to a resource by assigning a public IP address or a public Load Balancer. You can also use public IP or public Load Balancer to manage your outbound connections.
 
-- **Communication between Azure resources.** There are three key mechanisms through which Azure resource can communicate: VNets, VNet service endpoints and VNet peering. Virtual Networks can connect not only VMs, but other Azure Resources, such as the App Service Environment, Azure Kubernetes Service, and Azure VM Scale sets. You can use service endpoints to connect to other Azure resource types, such as Azure SQL databases and storage accounts. When you create a VNet, your services and VMs within your VNet can communication directly and securely with each other in the cloud.
+- **Communication between Azure resources.** There are three key mechanisms through which Azure resource can communicate: VNets, VNet service endpoints and VNet peering. Virtual Networks can connect not only VMs, but other Azure Resources, such as the App Service Environment, Azure Kubernetes Service, and Azure virtual machine scale sets. You can use service endpoints to connect to other Azure resource types, such as Azure SQL databases and storage accounts. When you create a VNet, your services and VMs within your VNet can communication directly and securely with each other in the cloud.
 
 - **Communication between on-premises resources.** Securely extend your data center. You can connect your on-premises computers and networks to a virtual network using any of the following options: Point-to-site virtual private network (VPN), Site-to-site VPN, Azure ExpressRoute. 
 
@@ -103,6 +103,7 @@ For example, a virtual network has a resource group scope, which means that ther
 All Azure resources are created in an Azure region and subscription. A resource can only be created in a virtual network that exists in the same region and subscription as the resource. You can, however, connect virtual networks that exist in different subscriptions and regions. Azure regions are important to consider as you design your Azure network in relation to your infrastructure, data, applications, and end users. 
 
 You can deploy as many virtual networks as you need within each subscription, up to the subscription limit. Some larger organizations with global deployments have multiple virtual networks that are connected between regions, for example.
+
 ![World map showing Azure global network.](../media/microsoft-global-wan.png)
 
 ### Azure Availability Zones
@@ -125,15 +126,15 @@ Azure services that support Availability Zones fall into three categories:
 
 ## Create a Virtual Network in Azure
 
-You can create an Azure VNet directly through the Azure Portal, by using PowerShell, or the Azure CLI.
+You can create an Azure VNet directly through the Azure portal, by using PowerShell, or the Azure CLI.
 
 Before you can create a VNet, you must create a resource group. A resource group is a container that holds related resources for an Azure solution. The resource group can include all the resources for the solution, or only those resources that you want to manage as a group.
 
 ### Create a Virtual Network by using the portal
 
-Log in to the Azure Portal, and then click **Create a resource**: 
+Log in to the Azure portal, and then click **Create a resource**: 
 
-![Azure Portal with Create a resource highlighted.](../media/create-resource.png)
+![Azure portal with Create a resource highlighted.](../media/create-resource.png)
 
 In the search box, enter **Virtual Network**. Select Virtual Network in the search results.
 

@@ -120,9 +120,9 @@ The last step in our example is to associate the Public subnet with the new rout
 
 ![Screenshot of a route table being assocated with a virtual network.](../media/associate_a_route.png)
 
-**Note:** By default, using system routes traffic would go directly to the private subnet. However, with a user-defined route you can force the traffic through the virtual appliance.
+> [!NOTE] By default, using system routes traffic would go directly to the private subnet. However, with a user-defined route you can force the traffic through the virtual appliance.
 
-**Note:** In this example, the virtual appliance shouldn't have a public IP address and IP forwarding should be enabled.
+> [!NOTE] In this example, the virtual appliance shouldn't have a public IP address and IP forwarding should be enabled.
 
 
 ## Diagnose a routing problem

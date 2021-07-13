@@ -61,7 +61,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 ## Task 2: Connect to the Test VMs using RDP
 
-1. On the Azure Portal home page, select **Virtual Machines**.
+1. On the Azure portal home page, select **Virtual Machines**.
 
 2. Select **ManufacturingVM**.
 
@@ -73,7 +73,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 6. Connect to ManufacturingVM using the RDP file, and the username and password you specified when you created the VM.
 
-7. On the Azure Portal home page, select **Virtual Machines**.
+7. On the Azure portal home page, select **Virtual Machines**.
 
 8. Select **TestVM1**.
 
@@ -131,7 +131,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 |                                      | Virtual network gateway or Route Server       | None (default)                        |
 | Remote virtual network               |                                               |                                       |
 |                                      | Peering link name                             | ManufacturingVnet-to-CoreServicesVnet |
-|                                      | Virtual network deployment model              | Resource manager                      |
+|                                      | Virtual network deployment model              | Resource Manager                      |
 |                                      | I know my resource ID                         | Not selected                          |
 |                                      | Subscription                                  | MOC Subscription-lodxxxxxxxx          |
 |                                      | Virtual network                               | ManufacturingVnet                     |
@@ -168,7 +168,7 @@ Congratulations! You have successful configured connectivity between VNets by ad
 
 ## Task 6: Clean up resources
 
-   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+> [!NOTE] Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
@@ -178,4 +178,4 @@ Congratulations! You have successful configured connectivity between VNets by ad
    Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
    ```
 
-    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+> [!NOTE] The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.

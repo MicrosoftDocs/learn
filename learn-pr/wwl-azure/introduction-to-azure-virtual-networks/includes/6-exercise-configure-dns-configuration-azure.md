@@ -14,10 +14,10 @@ In this exercise, you will:
 
 ## Task 1: Create a private DNS Zone
 
-1. Go to [Azure Portal](https://portal.azure.com/).
+1. Go to [Azure portal](https://portal.azure.com/).
 
 2. On the Azure home page, in the search bar, type dns, and then select **Private DNS zones**.  
-   ‎![Azure Portal home page with dns search.](../media/create-private-dns-zone.png)
+   ‎![Azure portal home page with dns search.](../media/create-private-dns-zone.png)
 
 3. In Private DNS zones, select **+ Create**.
 
@@ -188,7 +188,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 ## Task 4: Verify records are present in the DNS zone
 
-1. On the Azure Portal home page, select **Private DNS zones**.
+1. On the Azure portal home page, select **Private DNS zones**.
 
 2. In Private DNS zones, select **contoso.com**.
 
@@ -204,7 +204,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 ### Connect to the Test VMs using RDP
 
-1. On the Azure Portal home page, select **Virtual Machines**.
+1. On the Azure portal home page, select **Virtual Machines**.
 
 2. Select **TestVM1**.
 
@@ -216,7 +216,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 5. Save the RDP file to your desktop.
 
-6. On the Azure Portal home page, select **Virtual Machines**.
+6. On the Azure portal home page, select **Virtual Machines**.
 
 7. Select **TestVM2**.
 

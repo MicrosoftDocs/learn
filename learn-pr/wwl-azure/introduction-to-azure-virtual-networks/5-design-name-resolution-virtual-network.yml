@@ -27,7 +27,7 @@ quiz:
     - content: "A static IP address can use an IPv4 address only."
       isCorrect: false
       explanation: "that is incorrect. Static IP addresses are created with either an IPv4 or an IPv6 address."
-  - content: "You want to use dynamic IP addresses for specific resources on your VNet. Which SKU must you choose?"
+  - content: "Application owners need to use dynamic IP addresses for specific resources on their VNet. Which SKU must they choose?"
     choices:
     - content: "Basic SKU"
       isCorrect: true

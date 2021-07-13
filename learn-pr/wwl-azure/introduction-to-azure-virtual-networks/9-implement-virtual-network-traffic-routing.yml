@@ -16,7 +16,7 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "What type of routes enable you to override routes that Azure configures?"
+  - content: "What type of routes enable traffic to override routes that Azure configures?"
     choices:
     - content: "User-defined routes (UDR)"
       isCorrect: true
@@ -27,7 +27,7 @@ quiz:
     - content: "Default routes"
       isCorrect: false
       explanation: "incorrect, To enable basic routing functionality, Azure automatically creates default system routes for each subnet within the virtual network."
-  - content: "Your VNet is experiencing some routing problems. What would you do to begin to diagnose the problem?"
+  - content: "A VNet is experiencing some routing problems. What would an engnieer do to begin to diagnose the problem?"
     choices:
     - content: "View the effective routes for each NIC. (UDR)"
       isCorrect: true
