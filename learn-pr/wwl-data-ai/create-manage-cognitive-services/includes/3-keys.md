@@ -1,47 +1,7 @@
-Every web API call to your Cognitive Service resources requires a subscription key.  Even though the term **subscription key** is used, the key actually applies to the resources you create.  From within the Azure portal, you can find these keys on the Keys and Endpoint page.
+When you provision a cognitive service resource in your Azure subscription, you are defining an endpoint through which the service can be consumed by an application.
 
-![image showing the keys and endpoints page in the Cognitive Service](../media/keys-endpoints.png)
+To consume the service through the endpoint, applications require the following information:
 
-There are two keys available and either key will provide access to the web API endpoint for your service. Manage these keys carefully, to prevent unauthorized access to your service.  Only provide the keys to developers or others who require access and ensure they provide security mechanisms to protect them  as well. If you are creating software applications that access your services, consider using environment variables to discourage the use of hard coding these keys into the source code for your application.
-
-If one or both keys become compromised, you can generate new keys in the portal by selecting the Regenerate buttons at the top of the **Keys and Endpoint** page.  You can also manage the keys in code through the Azure CLI.  The following examples show how to use the Azure CLI to manage your access keys.
-
-## Get key list
-
-1. To retrieve your list of keys, sign in using the Azure CLI and provide the credentials when prompted.
-
-    ```azurecli
-    az login
-    ```
-
-1. Ensure you are in the correct Azure subscription that contains the service you want to manage.  Use this command to determine what your current subscription is set to.
-
-    ```azurecli
-    az account show
-    ```
-
-1. If you need to change the subscription, execute this command. Remember to replace &lt;subscriptionName&gt; with the proper subscription name.
-
-    ```azurecli
-    az account set --subscription <subscripionName>
-    ```
-
-1. Now get the list of keys.
-
-    ```azurecli
-    az cognitiveservices account keys list --name myMultiCogService --resource-group cog-services-staging
-    ```
-
-## Regenerate a key
-
-1. If you need to regenerate a key, you can access the proper Azure subscription and cognitive service by following steps 1 and 2 in the **Get Key List** section.
-1. To regenerate Key 1, you would use the command
-
-    ```azurecli
-    az cognitiveservices account keys regenerate --name myMultiCogService --resource-group cog-services-staging --key-name key1
-    ```
-
-1. You can regenerate Key 2 by changing the **--key-name** parameter to **key2**
-
-    >[!TIP]
-    >Many of the Azure CLI command parameters can be used in one of two ways.  In the previous command examples, we have used the full name of the parameter such as ``` --resource-group ```.  You can use a shorter version of ``` -g ``` to keep your commands shorter.  The [Cognitive Services CLI command reference](https://docs.microsoft.com/cli/azure/cognitiveservices?view=azure-cli-latest) lists the parameter options for each of the CLI areas of focus.
+- **The endpoint URI**. This is the HTTP address at which the REST interface for the service can be accessed. Most cognitive services software development kits (SDKs) use the endpoint URI to initiate a connection to the endpoint.
+- **An subscription key**. Access to the endpoint is restricted based on a subscription key. Client applications must provide a valid key to consume the service. When you provision a cognitive services resource, two keys are created - applications can use either key. You can also regenerate the keys as required to control access to your resource.
+- **The resource location**. When you provision a resource in Azure, you generally assign it to a location, which determines the Azure data center in which the resource is defined. While most SDKs use the endpoint URI to connect to the service, some require the location.

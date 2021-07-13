@@ -25,7 +25,7 @@ In this exercise, you migrate the data in your database by using Azure Database 
 
 1. Wait for the deployment to finish. It might take 15 minutes. Then, select **Go to resource**.
 
-    ![The overview pane for Database Migration Service](../media/7-migration-service-overview.png)
+    ![The overview pane for Database Migration Service.](../media/7-migration-service-overview.png)
 
 ## Create a migration project
 
@@ -43,7 +43,7 @@ After the service instance is created, you create a project to migrate the datab
     | **Choose type of activity**     | Offline data migration |
     |||
 
-    ![Selections for project, servers, and activity type](../media/7-07-new-project.png)
+    ![Selections for project, servers, and activity type.](../media/7-07-new-project.png)
 
 1. Select **Create and run activity**.
 
@@ -59,7 +59,7 @@ After the service instance is created, you create a project to migrate the datab
     | **Trust server certificate** | Selected |
     | | |
 
-    ![Source details](../media/7-08-source-details.png)
+    ![Source details.](../media/7-08-source-details.png)
 
 Select **Next : Select target**.
 
@@ -74,7 +74,7 @@ Select **Next : Select target**.
     | **Encrypt connection** | Selected |
     | | |
 
-    ![Target details](../media/7-09-target-details.png)
+    ![Target details.](../media/7-09-target-details.png)
 
 1. Select **Next : Map to target databases**.
 
@@ -82,13 +82,13 @@ Select **Next : Select target**.
 
     Make sure you're not logged in to the database elsewhere, such as from SQL Server Management Studio in the virtual machine. If you are, the migration will fail.
 
-    ![Selections for mapping to a target database](../media/7-10-map-database.png)
+    ![Selections for mapping to a target database.](../media/7-10-map-database.png)
 
 1. Select **Next : Configure migration settings**.
 
 1. To see the list of tables, next to **Social 1 of 1**, select the arrow.
 
-    ![List of tables](../media/7-11-select-tables.png)
+    ![List of tables.](../media/7-11-select-tables.png)
 
 1. Make sure the `dbo.Twitters` table is selected.
 
@@ -96,13 +96,13 @@ Select **Next : Select target**.
 
 1. In the **Activity name** box, enter **MigrateSocialDatabase**.
 
-    ![Migration summary](../media/7-12-run-migration.png)
+    ![Migration summary.](../media/7-12-run-migration.png)
 
 1. To start the migration, select **Start migration**.
 
 1. A new pane appears with the status of the migration. To update the status until it shows that the process is finished, at the top, select **Refresh**.
 
-    ![Refresh button](../media/7-13-completed.png)
+    ![Refresh button.](../media/7-13-completed.png)
 
 ## View data in the new database
 
@@ -110,13 +110,13 @@ You can now go to the Azure SQL database and view your migrated data.
 
 1. Go back to your **admsdemorg** resource group, and select the **Social (admsdemosqlv2v2s22x.../Social)** SQL database.
 
-    ![Overview pane](../media/7-sql-database.png)
+    ![Overview pane.](../media/7-sql-database.png)
 
 1. Select **Set server firewall**.
 
 1. On the **Firewall settings** pane, select **+ Add client IP**, and then select **Save**.
 
-    ![Firewall pane](../media/7-sql-firewall.png)
+    ![Firewall pane.](../media/7-sql-firewall.png)
 
 1. To return to the overview for your database, close the **Firewall settings** pane.
 
@@ -130,6 +130,6 @@ You can now go to the Azure SQL database and view your migrated data.
     SELECT * FROM [dbo].[Twitters];
     ```
 
-    ![Select pane](../media/7-sql-select.png)
+    ![Select pane.](../media/7-sql-select.png)
 
     You should see data from your database, which indicates a successful migration.

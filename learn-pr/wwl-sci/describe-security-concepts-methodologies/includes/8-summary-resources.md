@@ -15,7 +15,7 @@ Now that you've reviewed this module, you can:
 
 To learn more about the topics discussed in this module, see:
 
-- [Zero Trust Resource Center](https://docs.microsoft.com/security/zero-trust/)
-- [Shared responsibility in the cloud](https://docs.microsoft.com/azure/security/fundamentals/shared-responsibility)
+- [Zero Trust Resource Center](/security/zero-trust/)
+- [Shared responsibility in the cloud](/azure/security/fundamentals/shared-responsibility)
 - [Azure defense in depth](https://azure.microsoft.com/resources/videos/defense-in-depth-security-in-azure/)
-- [What is the Microsoft Cloud Adoption Framework for Azure?](https://docs.microsoft.com/azure/cloud-adoption-framework/overview)
+- [What is the Microsoft Cloud Adoption Framework for Azure?](/azure/cloud-adoption-framework/overview)

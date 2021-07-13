@@ -45,11 +45,11 @@ These alerts are triggered when either a threat or suspicious activity takes pla
 
 You can view collected security alerts directly in Azure Security Center on the **Overview** page, through command-line tools, or using the REST API. The portal is the easiest way to view alerts - it displays a graph of your current alerts, colored by the severity level (high, medium, or low). Here's an example of a subscription with running resources being monitored.
 
-![Screenshot of the threat-protection area of Security Center](../media/6-security-center-dashboard-alert.png)
+![Screenshot of the threat-protection area of Security Center.](../media/6-security-center-dashboard-alert.png)
 
 Selecting the **Threat protection** tile presents more detailed information, as shown in the following image:
 
-![Screenshot of the Security alerts panel](../media/6-security-center-manage-alerts.png)
+![Screenshot of the Security alerts panel.](../media/6-security-center-manage-alerts.png)
 
 You can filter alerts based on the date, state, and severity. Filtering alerts might be useful for scenarios where you need to narrow the scope of the security alerts. For example, you might want to address security alerts that occurred in the last 24 hours if you’re investigating a potential breach in the system.
 

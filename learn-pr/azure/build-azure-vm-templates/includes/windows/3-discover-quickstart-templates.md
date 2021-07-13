@@ -23,7 +23,7 @@ Let's say you want to find a Resource Manager template that brings up a basic VM
 
     ![Screenshot of a portion of the Azure Quickstart template gallery web page.](../../media/3-gallery-homepage.png)
 
-1. Let's say you come across the [Deploy a simple Windows VM](https://azure.microsoft.com/resources/templates/101-vm-simple-windows?azure-portal=true) template.
+1. Let's say you come across the [Deploy a simple Windows VM](https://azure.microsoft.com/resources/templates/vm-simple-windows?azure-portal=true) template.
 
     ![Screenshot of the gallery page for a Windows VM template.](../../media/3-gallery-page-windows.png)
 
@@ -31,7 +31,7 @@ Let's say you want to find a Resource Manager template that brings up a basic VM
 
     The **Deploy to Azure** button enables you to deploy the template directly through the Azure portal. But you won't do that here. Rather, you'll use the Azure CLI to deploy the template from Cloud Shell.
 
-1. Click **Browse on GitHub** to navigate to the template's source code on GitHub.
+1. Select **Browse on GitHub** to navigate to the template's source code on GitHub.
 
     You see this.
 
@@ -39,15 +39,13 @@ Let's say you want to find a Resource Manager template that brings up a basic VM
 
     The **Deploy to Azure** button enables you to deploy the template directly through the Azure portal, just like you saw on the gallery page.
 
-1. Click **Visualize** to navigate to the Azure Resource Manager Visualizer.
+1. Select **Visualize** to navigate to the Azure Resource Manager Visualizer.
 
     You see the resources that make up the deployment, including a VM, a storage account, and network resources.
 
     You can use your mouse to arrange the resources. You can also use your mouse's scroll wheel to zoom in and out.
 
-    :::image type="content" source="../../media/3-armviz-windows.png" alt-text="Screenshot of the Azure Resource Manager Visualizer that shows Azure resources visually." loc-scope="third-party"::: <!-- product is Azure Resource Manager Visualizer, no-loc -->
-
-1. Click on the **Virtual Machine** resource labeled **simple-vm**.
+1. Select the **Virtual Machine** resource labeled **simple-vm**.
 
     You see the source code that defines the VM resource.
 
@@ -58,9 +56,10 @@ Let's say you want to find a Resource Manager template that brings up a basic VM
     You see that:
 
     * The resource's type is `Microsoft.Compute/virtualMachines`.
+    * The computer name comes from the template parameter named `vmName`.
     * Its location, or Azure region, comes from the template parameter named `location`.
-    * The VM's size comes from the template variable `vmSize`.
-    * The computer name, username, and password for the VM are read from template parameters.
+    * The VM's size comes from the template parameter `vmSize`.
+    * The username and password for the VM are read from template parameters.
 
 In practice, you might review the **README.md** file on GitHub and further inspect the source code to see whether this template suits your needs.
 

@@ -16,7 +16,7 @@ For example, let's say your configured throughput is 500 RUs per second (RU/s), 
 
 1. Search for and select **Azure Cosmos DB**.
 
-   ![Screenshot that shows search in the Azure portal](../media/4-search-cosmos-db.png)
+   ![Screenshot that shows search in the Azure portal.](../media/4-search-cosmos-db.png)
 
 1. Select your Azure Cosmos DB account.
 
@@ -30,7 +30,7 @@ For example, let's say your configured throughput is 500 RUs per second (RU/s), 
 
 1. Review the chart **Number of request exceeded capacity**. We deliberately overloaded the **Small** collection. So you see that some of the requests exceeded capacity.
 
-   ![Chart of Azure Cosmos DB requests exceeding capacity](../media/4-requests-exceeding-capacity.png)
+   ![Chart of Azure Cosmos DB requests exceeding capacity.](../media/4-requests-exceeding-capacity.png)
 
    The HTTP 429 error code indicates that there are too many requests. Future requests will be rate-limited. When you see HTTP 429 responses from Azure Cosmos DB, that means you've exceeded the allocated capacity.
 
@@ -71,7 +71,7 @@ We're going to use the **Orders** collection, where the partition key is set to 
 
     `"Item": { "id": "..."}`
 
-    ![Selecting the item ID value from an Azure Cosmos DB collection document](../media/4-select-item-id.png)
+    ![Selecting the item ID value from an Azure Cosmos DB collection document.](../media/4-select-item-id.png)
 
 1. From the top menu bar, select the **New SQL Query** icon.
 
@@ -81,13 +81,13 @@ We're going to use the **Orders** collection, where the partition key is set to 
     SELECT TOP 1 * FROM c WHERE c.Item.id='<Copied Item id value>'
     ```
 
-    ![Screenshot that shows Azure Cosmos DB creating a SQL query in the portal](../media/4-query.png)
+    ![Screenshot that shows Azure Cosmos DB creating a SQL query in the portal.](../media/4-query.png)
 
 1. From the top menu bar, select **Execute Query**.
 
 1. In the code block, select the **Query Stats** tab.
 
-    ![Screenshot that shows the Query Stats tab](../media/4-querystats-tab.png)
+    ![Screenshot that shows the Query Stats tab.](../media/4-querystats-tab.png)
 
 Notice how many RUs the operation took. The **Request Charge** value shown should be between 2.5 and 3.5 RUs. That's the performance cost of querying for a 1-KB document that uses the partition key `/Item/id`.
 

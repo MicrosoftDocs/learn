@@ -6,7 +6,7 @@ In this unit, you'll familiarize yourself with the available consistency levels 
 
 Each database account has a default consistency level, which determines the consistency of data within the account. At one end of the spectrum is Strong consistency, which offers a linearizability guarantee with the reads guaranteed to return the most recent version of an item. At the other end of the spectrum is Eventual consistency, which guarantees that in absence of any further writes, the replicas within the group eventually converge. In the middle is Session consistency, which is the most popular because it guarantees monotonic reads, monotonic writes, and read your own writes (RYW) guarantees.
 
-![The five consistency levels in Azure Cosmos DB](../media/5-change-consistency/five-consistency-levels.png)
+![The five consistency levels in Azure Cosmos DB.](../media/5-change-consistency/five-consistency-levels.png)
 
 Guarantees about each consistency level are listed in the following table.
  
@@ -35,7 +35,7 @@ To learn more about the consistency levels, review the music-note based consiste
 1. In the Azure portal, click **Default consistency**.
 2. Click through each of the different consistency models and watch the musical examples. See how data is written to the different regions and how the choice of consistency impacts how the note data is written. Note that Strong is grayed out as it is only available for data written to a single region.
 
-    ![Learn about consistency settings in the portal](../media/5-change-consistency/consistency.gif)
+    ![Learn about consistency settings in the portal.](../media/5-change-consistency/consistency.gif)
 
 Let's learn more about the consistency levels. Think about how each of these consistency levels could work for your product and user data for your clothing retail site.
 

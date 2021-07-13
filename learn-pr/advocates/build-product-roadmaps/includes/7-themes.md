@@ -1,6 +1,6 @@
 :::row:::
   :::column:::
-    ![Product road map themes](../media/themes.png)
+    ![Product road map themes.](../media/themes.png)
   :::column-end:::
         :::column span="3":::
 

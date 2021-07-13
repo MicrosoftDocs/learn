@@ -301,7 +301,9 @@
                 "exclude": [
                     "**/includes/**",
                     "**/design/**",
-                    "**/resources/**"
+                    "**/resources/**",
+                    "predict-basketball-player-efficiency-ratings/**",
+                    "optimize-basketball-player-rest-breaks/**"
                 ],
                 "dest": "modules"
             },

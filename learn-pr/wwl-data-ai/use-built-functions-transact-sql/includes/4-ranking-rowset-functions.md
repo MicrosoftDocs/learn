@@ -327,4 +327,4 @@ To use remote servers, you must enable some advanced options in the SQL Server i
 
 The OPENXML and OPENJSON functions enable you to query structured data in XML or JSON format and extract values into a tabular rowset.
 
-A detailed exploration of rowset functions is beyond the scope of this module. See the [Transact-SQL reference documentation](https://docs.microsoft.com/sql/t-sql/functions/functions) for more information.
+A detailed exploration of rowset functions is beyond the scope of this module. See the [Transact-SQL reference documentation](/sql/t-sql/functions/functions) for more information.
