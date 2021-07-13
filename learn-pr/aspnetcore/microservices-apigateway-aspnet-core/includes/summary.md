@@ -1,6 +1,6 @@
 Congratulations! You've learned about API gateways in .NET microservices apps!
 
-In this module you:
+In this module, you:
 
 - Deployed an existing ASP.NET Core microservices e-commerce app to Azure Kubernetes Services.
 - Implemented a BFF pattern using .NET.

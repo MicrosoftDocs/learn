@@ -1,4 +1,4 @@
-In this exercise, you'll deploy the newly created Web Sales BFF to the existing Kubernetes cluster. To do this, you will:
+In this exercise, you'll deploy the newly created Web Sales BFF to the existing Kubernetes cluster. You will:
 
 - Enable the Web Sales Aggregator BFF.
 - Configure the BFF.
@@ -55,7 +55,7 @@ You can find an ASP.NET Core project for the `Web.Sales` BFF in the *src/ApiGate
     > You can review the implementation of `CatalogService` and `OrderingService` under the *Service* directory.
 
 
-1. In *Controllers/SalesController.cs*, replace `// Add the GetSalesData code` ith the following code: 
+1. In *Controllers/SalesController.cs*, replace `// Add the GetSalesData code` with the following code: 
 
     ```csharp
     

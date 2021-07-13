@@ -1,12 +1,10 @@
-In the previous unit, you deployed a new BFF to the cluster. In this unit, you'll learn how to make the Web Sales BFF available for clients outside the cluster.
+You just deployed a new BFF to the cluster. Now you'll learn how to make the Web Sales BFF available for clients outside the cluster.
 
-## Routing external traffic using ingress
-
-In previous units, you've seen how the API Gateway and BFF patterns route requests and aggregate responses. This implementation still requires access from outside the cluster. For that, we'll discuss how you could use NGINX Ingress Controller. After that, you'll reconfigure the cluster to use Azure Application Gateway Ingress Controller instead of the NGINX Ingress Controller.
+You've seen how the API Gateway and BFF patterns route requests and aggregate responses. This implementation still requires access from outside the cluster. You'll learn how you might use NGINX Ingress Controller. Then you'll reconfigure the cluster to use Azure Application Gateway Ingress Controller instead of the NGINX Ingress Controller.
 
 ## Kubernetes ingress controllers
 
-In a typical Kubernetes cluster, the services are not accessible from outside the cluster. To implement an ingress in a Kubernetes cluster you need:
+Kubernetes services are typically not accessible from outside the cluster. To implement an ingress, you need:
 
 - At least one **ingress controller**.
 - One or more **ingress resources**, typically one per exposed service.
@@ -28,7 +26,7 @@ In the sample app, the routes are configured like this:
 | `https://<host-name>/apigateway/cp/*` | `http://coupon-api/coupon-api/*`     |
 | `https://<host-name>/apigateway/o/*`  | `http://ordering-api/ordering-api/*` |
 
-The table above depicts two main entry routes to the cluster, `/identity` and `/apigateway`.
+The table above shows two main entry routes to the cluster, `/identity` and `/apigateway`.
 
 The `/identity` route is handled internally by the `identity` service, using a simple `http` termination and using the internal service name.
 
@@ -72,7 +70,7 @@ metadata:
 ...
 ```
 
-The section delimited between `{{- if .Values.useHostName }}` and `{{- end }}` handles the option to deploy to an IP address, as IP addresses are not valid host names in Kubernetes. For more about the manifest yaml, see [Kubernetes Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/).
+The section delimited between `{{- if .Values.useHostName }}` and `{{- end }}` handles the option to deploy to an IP address, as IP addresses aren't valid host names in Kubernetes. For more about the manifest yaml, see [Kubernetes Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/).
 
 ## Cloud-managed load balancer
 
@@ -81,7 +79,7 @@ The section delimited between `{{- if .Values.useHostName }}` and `{{- end }}` h
 The API Gateway used in eShopOnContainers is typical of many real-world scenarios, but for some large-scale scenarios you may need a more robust, full-featured solution. Azure Application Gateway is a managed solution that allows you to handle loads of any scale. Azure Application Gateway has several [key features](/azure/application-gateway/features) that help you tackle real-world scenarios, including:
 
 - Secure Sockets Layer (SSL/TLS) termination.
-- Auto-scaling.
+- Autoscaling.
 - Web Application Firewall.
 - HTTP headers rewriting, to name just a few.
 
@@ -91,17 +89,17 @@ The Application Gateway Ingress Controller (AGIC) integrates the Application Gat
 
 :::image type="content" source="../media/azure-application-gateway-ingress-controller-overview.png" alt-text="AGIC overview" lightbox="../media/azure-application-gateway-ingress-controller-overview.png":::
 
-You can see that the AGIC lives inside the AKS cluster as an ingress controller, although it isn't really routing any traffic. The AGIC monitors the cluster state using the Kubernetes API and applies the required configuration to the Application Gateway, so it can route traffic directly to the pods.
+You can see that the AGIC lives inside the AKS cluster as an ingress controller, although it isn't really routing any traffic. The AGIC monitors the cluster state using the Kubernetes API. It applies the required configuration to the Application Gateway, so it can route traffic directly to the pods.
 
 Since the Azure Application Gateway is a managed service outside the AKS cluster, and can't usually access the pods directly, the AKS has to be created with the "advanced networking" option. This setting makes the pods connect through a subnet that's accessible by the Application Gateway.
 
-For further information, see the [Application Gateway Ingress Controller overview page](/azure/application-gateway/ingress-controller-overview)
+For more information, see the [Application Gateway Ingress Controller overview page](/azure/application-gateway/ingress-controller-overview)
 
 #### Difference between In-Cluster Ingress Controller and AGIC
 
 An AGIC ingress controller has many advantages over an in-cluster ingress controller.
 
-- AGIC doesn't take any resources of the from Kubernetes cluster, as it runs outside of the cluster.
+- AGIC doesn't take any resources of from the Kubernetes cluster, as it runs outside of the cluster.
 - External traffic doesn't go through the extra hop of an ingress controller pod, which reduces latency.
 
 The following image compares the two approaches.
@@ -110,6 +108,6 @@ The following image compares the two approaches.
 
 ## The proposed solution
 
-The following image depicts the solution architecture of the eShop app that you'll deploy in the next unit.
+The following image shows the solution architecture of the eShop app that you'll deploy in the next unit.
 
 :::image type="content" source="../media/app-gateway-ingress.png" alt-text="Azure App Gateway Solution Architecture" lightbox="../media/app-gateway-ingress.png":::

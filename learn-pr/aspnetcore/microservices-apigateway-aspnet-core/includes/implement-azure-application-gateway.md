@@ -42,13 +42,13 @@ You've created the Azure Application Gateway service. Now enable the AGIC in the
 ./deploy/k8s/enable-agic-adon.sh
 ```
 
-The script performs the following tasks:
+The script does the following tasks:
 
 - Enables the AGIC as an add-on feature in the existing Kubernetes cluster.
-- Enables bi-directional peering between the existing VNET network of the AKS cluster and the newly created VNET of the Application Gateway cluster.
+- Enables bi-directional peering. This connects the existing VNET network of the AKS cluster and the newly created VNET of the Application Gateway cluster.
 ## Configure the ingresses to use the AGIC
 
-You need to include the `kubernetes.io/ingress.class: azure/application-gateway` annotation in your ingress manifest YAML files before the AGIC can use them. In some scenarios, if the ingress needs to perform URL rewriting, you must include the `appgw.ingress.kubernetes.io/backend-path-prefix` annotation.
+The `kubernetes.io/ingress.class: azure/application-gateway` annotation must be included in your ingress manifest YAML files before the AGIC can use them. In some scenarios, if the ingress needs to perform URL rewriting, you must include the `appgw.ingress.kubernetes.io/backend-path-prefix` annotation.
 
 >[!TIP]
 > The ingress YAML for the `Seq` app is a good example of this. It's available under `/deploy/k8s/helm-ingress/seq/templates` directory.
@@ -80,7 +80,7 @@ spec:
           servicePort: 80
 ```
 
-In addition to the *websalesagg* service, you'll need to update the NGINX configuration for each service to make it available for the AGIC. You could update those files within the `helm-simple` directory one at a time. For simplicity, you will instead copy all files from the `helm-ingress` folder. These files have been preconfigured for you. Run the following command:
+Along with the *websalesagg* service, you'll need to update the NGINX configuration for each service to make it available for the AGIC. This requires changes to all of the service configurations in the  `helm-simple` directory. For simplicity, you will copy files from the `helm-ingress` folder. These files have been preconfigured for you. Run the following command:
 
 ```bash
 cp -r deploy/k8s/helm-ingress/* deploy/k8s/helm-simple
@@ -159,7 +159,7 @@ The existing `[Microsoft.eShopOnContainers.Service.IdentityDb]` database in the 
 
     :::image type="content" source="../media/delete-all-pods-apart-from-sql.png" alt-text="Delete all pods" lightbox="../media/delete-all-pods-apart-from-sql.png":::
 
-1. Check the *WebStatus* app using `http://{appgw-public-ip}/webstatus/hc-ui#/healthchecks` and verify *websalesagg* is healthy. Note that this address uses the **new** IP address.
+1. Check the *WebStatus* app using `http://{appgw-public-ip}/webstatus/hc-ui#/healthchecks` and verify *websalesagg* is healthy. This address uses the **new** IP address.
 
     > [!NOTE]
     > As with the initial deployment, it may take a few minutes for the health check dashboard to come up.
@@ -179,6 +179,6 @@ Log in to the `WebSPA` app using `http://{appgw-public-ip}/` and create an order
 - Authorize the request with the `adminuser@microsoft.com` user.
 - Select the *Sales API* to fetch the API data.
 
-Output similar to the following appears. Note the aggregated sales unit per brand has been shown for those orders created today.
+Output similar to the following text appears. Note the aggregated sales unit per brand has been shown for those orders created today.
 
 :::image type="content" source="../media/websales-agg-sales-api-data.png" alt-text="Sales API data" lightbox="../media/websales-agg-sales-api-data.png":::
