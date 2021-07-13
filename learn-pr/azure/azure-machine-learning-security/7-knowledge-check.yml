@@ -42,7 +42,7 @@ quiz:
     - content: "To assign roles"
       isCorrect: false
       explanation: "Incorrect. Assigning roles is part of Azure Machine Learning workspaces."
-    - content: "To secure your training models and data from malicious actors by encrypting your IP address"
+    - content: "To secure your training models and data from malicious actors by encrypting your connection"
       isCorrect: true
       explanation: "Correct. VPNs such as point-to-site, site-to-site, or Azure ExpressRoute encrypt your internet connection or don’t go over the internet at all, limiting access to your resources."
     - content: "To work offline"

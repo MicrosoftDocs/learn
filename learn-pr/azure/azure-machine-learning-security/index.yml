@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.azure.azure-machine-learning-security
 metadata:
-  title: Introduction to Azure Machine Learning Role-Based Access Control Security
-  description: Azure Machine Learning Role-Based Access Control provides you with resources to keep your data and machine learning models secure and private.
+  title: Introduction to Security Concepts in Azure Machine Learning
+  description: Azure Machine Learning provides several mechanisms to secure your data and training environment.
   ms.date: 03/14/2021
   author: tomreidnz
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Machine Learning Role-Based Access Control Security
-summary: Azure Machine Learning Role-Based Access Control provides you with resources to keep your data and machine learning models secure and private.
+summary: Azure Machine Learning provides several mechanisms to secure your data and training environment.
 abstract: |
   In this module, you will:
-  - Assess the benefits of Azure Machine Learning Role-Based Access Control
-  - Describe what Azure Machine Learning Role-Based Access Control is
-  - Define scenarios where Azure Machine Learning Role-Based Access Control can be applied
+  - Apply and understand Role-Based Access Control in Azure Machine Learning
+  - Describe how secrets are managed in Azure Machine Learning
+  - Put an Azure Machine Learning workspace in Azure Virtual Network 
 prerequisites: A basic familiarity with Azure
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
@@ -27,6 +27,7 @@ roles:
 - student
 products:
 - azure
+- azure-machine-learning
 units:
 - learn.azure.azure-machine-learning-security.introduction
 - learn.azure.azure-machine-learning-security.what-is-role-based-access-control
