@@ -2,7 +2,7 @@
 uid: learn.machinelearning.machine-learning-architectures-and-hyperparameters
 metadata:
   title: Select and customize architectures and hyperparameters using random forest
-  description: 
+  description: Explore how altering the architecture of more complex models can bring about more effective results.
   ms.date: 05/25/2021
   author: TomReidNZ
   ms.author: jasdeb
