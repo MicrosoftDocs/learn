@@ -46,7 +46,7 @@ Here are the steps to configure VNet peering. Notice you will need two virtual n
 
 To configure the peering use the **Add peering** page. There are only a few optional configuration parameters to consider.
 
-![configure virtual network peering](../media/Conf_VNet_Peering.png)
+![configure virtual network peering](../media/configure-vnet-peering.png)
 
 > [!NOTE]  When you add a peering on one virtual network, the second virtual network configuration is automatically added.
 

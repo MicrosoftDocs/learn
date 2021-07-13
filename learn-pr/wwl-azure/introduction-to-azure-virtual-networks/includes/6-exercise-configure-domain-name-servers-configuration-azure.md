@@ -194,7 +194,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 3. Verify that host (A) records are listed for both VMs, as shown:
 
-![Contoso.com DNS zone showing auto-registered host A records.](../media/contoso_com-dns-zone.png)
+![Contoso.com DNS zone showing auto-registered host A records.](../media/contoso-com-dns-zone.png)
 
  
 

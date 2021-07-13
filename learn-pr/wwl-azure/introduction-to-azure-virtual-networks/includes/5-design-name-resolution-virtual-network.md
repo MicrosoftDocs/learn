@@ -39,13 +39,13 @@ Setting up a subdomain follows the same process as typical delegation. The only 
 
 It's important to understand the difference between DNS record sets and individual DNS records. A record set is a collection of records in a zone that have the same name and are the same type.
 
-![Screenshot of the Add a record set page.](../media/DNS_Record_Set1.png)
+![Screenshot of the Add a record set page.](../media/dns-record-set1.png)
 
 A record set cannot contain two identical records. Empty record sets (with zero records) can be created, but do not appear on the Azure DNS name servers. Record sets of type CNAME can contain one record at most.
 
 The **Add record set** page will change depending on the type of record you select. For an A record, you will need the TTL (Time to Live) and IP address. The time to live, or TTL, specifies how long each record is cached by clients before being requeried.
 
-![Screenshot of the Add a record page.](../media/DNS_Record_Set2.png)
+![Screenshot of the Add a record page.](../media/dns-record-set2.png)
 
 
 ## Private DNS services
@@ -120,7 +120,7 @@ At the VNet level, default DNS configuration is part of the DHCP assignments mad
 
 If necessary, you can override the default configuration by configuring an alternate DNS server at the VM NIC.
 
-![DNS default configuration.](../media/dns_config.png)
+![DNS default configuration.](../media/dns-config.png)
 
 
 Two ways to link VNets to a private zone:
@@ -129,7 +129,7 @@ Two ways to link VNets to a private zone:
 
 - **Resolution:** There may be many other private DNS zones for different namespaces. You can link a VNet to each of those zones for name resolution. Each VNet can link to up to 1000 private DNS Zones for name resolution. 
 
-![VNet is linked to a private DNS zone for registration and up to 100 private DNS zones for resolution.](../media/dns_zones.png)
+![VNet is linked to a private DNS zone for registration and up to 100 private DNS zones for resolution.](../media/dns-zones.png)
 
 
 ### Integrating on-premises DNS with Azure VNets
@@ -148,7 +148,7 @@ Forwarding takes two forms:
 
 > [!NOTE] If the DNS server is outside Azure, it doesn't have access to Azure DNS on 168.63.129.16. In this scenario, setup a DNS resolver inside your VNet, forward queries for to it, and then have it forward queries to 168.63.129.16 (Azure DNS). Essentially, you're using forwarding because 168.63.129.16 is not routable, and therefore not accessible to external clients.
 
-![On-premises DNS server uses conditional forwarding to forward queries for VNet 1. DNS resolver in VNet 1 sends queries to Azure DNS for resolution. ](../media/external_dns_fwd.png)
+![On-premises DNS server uses conditional forwarding to forward queries for VNet 1. DNS resolver in VNet 1 sends queries to Azure DNS for resolution. ](../media/external-dns-fwd.png)
 
 ## Check your knowledge
 

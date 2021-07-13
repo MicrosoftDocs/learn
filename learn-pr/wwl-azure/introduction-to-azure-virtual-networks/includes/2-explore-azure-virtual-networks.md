@@ -138,11 +138,11 @@ Log in to the Azure portal, and then click **Create a resource**:
 
 In the search box, enter **Virtual Network**. Select Virtual Network in the search results.
 
-![Search results showing Virtual Network resource.](../media/virtual_network_in_azure_marketplace.png)
+![Search results showing Virtual Network resource.](../media/virtual-network-in-azure-marketplace.png)
 
 On the Virtual Network page, select **Create**. 
 
-![Create virtual network - Basics tab.](../media/create_vnet.png)
+![Create virtual network - Basics tab.](../media/create-vnet.png)
 
 In Create virtual network, enter or select this information in the **Basics** tab:
 
@@ -178,7 +178,7 @@ Within each virtual network address range, you can create one or more subnets th
 >
 > Subnet names must begin with a letter or number, end with a letter, number or underscore, and may contain only letters, numbers, underscores, periods, or hyphens.
 
-![Create virtual network - IP Addresses tab.](../media/ip_addresses-vnet-configuration.png)
+![Create virtual network - IP Addresses tab.](../media/ip-addresses-vnet-configuration.png)
 
 In the Create virtual network tab, you can enable security features like BastionHost, DDoS Protection Standard, and Firewall.
 
@@ -193,11 +193,11 @@ You can select to enable Standard DDoS protection. Standard DDoS Protection is a
 
 Azure Firewall is a managed cloud-based network security service that protects your Azure Virtual Network resources.
 
-![Create virtual network - Security tab.](../media/vnet_security.png)
+![Create virtual network - Security tab.](../media/vnet-security.png)
 
 In the **Review + create** tab, you can define tags, which can help you to organize and manage your Azure resources.
 
-![Create virtual network - Review + create tab.](../media/review_create_vnet.png)
+![Create virtual network - Review + create tab.](../media/review-create-vnet.png)
 
 Click **Create** to create your virtual network.
 
