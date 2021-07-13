@@ -4,7 +4,7 @@ A site-to-site (S2S) VPN gateway connection lets you create a secure connection 
 
 ![Site-to-site VPN Gateway architecture.](../media/site-to-site-vpn-architecture.png)
 
-In the diagram:
+## In the diagram:
 
 - The on-premises network represents your on-premises Active Directory and any data or resources.
 

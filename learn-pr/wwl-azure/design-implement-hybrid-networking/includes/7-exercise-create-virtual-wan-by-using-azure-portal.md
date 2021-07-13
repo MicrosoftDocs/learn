@@ -7,7 +7,7 @@ In this exercise, you will create a Virtual WAN for Contoso.
 In this exercise, you will:
 
 + Task 1: Create a Virtual WAN
-+ Task 2: Create a hub by using Azure Portal
++ Task 2: Create a hub by using Azure portal
 + Task 3: Connect a VNet to the Virtual Hub
 + Task 4: Clean up resources
 
@@ -19,7 +19,7 @@ In this exercise, you will:
 
 2. In the portal, type Virtual WAN into the search box and select **Virtual WANs** from the results list.
 
-   ![Search for Virtual WAN in Azure Portal.](../media/search-for-virtual-wan.png)
+   ![Search for Virtual WAN in Azure portal.](../media/search-for-virtual-wan.png)
 
  
 
@@ -41,7 +41,7 @@ In this exercise, you will:
 
 6. Once validation passes, select **Create** to create the Virtual WAN.
 
-## Task 2: Create a hub by using Azure Portal
+## Task 2: Create a hub by using Azure portal
 
 A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functionality. It takes 30 minutes to create the site-to-site VPN gateway in the virtual hub. You must create a Virtual WAN before you can create a hub.
 
@@ -96,7 +96,7 @@ Congratulations! You have created a Virtual WAN and a Virtual WAN Hub and connec
 
 ## Task 4: Clean up resources
 
-   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+> [!NOTE] Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
@@ -106,4 +106,4 @@ Congratulations! You have created a Virtual WAN and a Virtual WAN Hub and connec
    Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
    ```
 
-    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+    > [!NOTE] The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.

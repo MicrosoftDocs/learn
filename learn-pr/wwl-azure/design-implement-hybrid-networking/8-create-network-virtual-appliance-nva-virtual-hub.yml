@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You want to provide a VMware SD-WAN connectivity for your clients. Which Azure resource should you deploy?"
+  - content: "A network engineer wants to provide VMware SD-WAN connectivity for their clients. Which Azure resource should they deploy?"
     choices:
     - content: "Network Virtual Appliance (NVA)."
       isCorrect: true
@@ -27,7 +27,7 @@ quiz:
     - content: "Local network gateway"
       isCorrect: false
       explanation: "Incorrect, A local network gateway represents the on-premises network."
-  - content: "Where can you deploy an NVA?"
+  - content: "Where can an NVA be deployed?"
     choices:
     - content: "NVAs are deployed directly into a Virtual WAN hub."
       isCorrect: true

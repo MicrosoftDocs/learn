@@ -125,8 +125,7 @@ The VPN gateway settings that you chose are critical to creating a successful co
 
 - Virtual Networks. The virtual network that will be able to send and receive traffic through the virtual network gateway. A virtual network cannot be associated with more than one gateway.
 
-> [!NOTE:]
->
+> [!NOTE]
 >  You can view the IP address assigned to the gateway. The gateway should appear as a connected device.
 
 ### Gateway subnet

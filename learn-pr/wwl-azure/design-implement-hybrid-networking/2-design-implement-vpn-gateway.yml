@@ -12,7 +12,7 @@ metadata:
 azureSandbox: false
 durationInMinutes: 24
 content: |
-  [!include[](includes/2-design-implement-hybrid-networking.md)]
+  [!include[](includes/2-design-implement-vpn-gateway.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -27,7 +27,7 @@ quiz:
     - content: "RouteBased and dynamic."
       isCorrect: false
       explanation: "Incorrect, VPNs can be RouteBased. Dynamic is the name used for RouteBased VPNs in the classic deployment model."
-  - content: "What is the default high availability configuration for VPN gateways."
+  - content: "What is the default high availability configuration for VPN gateways?"
     choices:
     - content: "Active-standby"
       isCorrect: true
