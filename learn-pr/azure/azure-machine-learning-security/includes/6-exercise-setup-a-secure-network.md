@@ -4,13 +4,19 @@ VNets enable your resources, such as virtual machines (VMs) and ML workspaces, t
 
 A Machine Learning engineer can use them in a variety of scenarios, such as linking a VM to data stored on-premises, restricting access to a training API so that only personnel from their lab can see it, or exposing an inference endpoint to the internet.
 
-In this exercise, we'll create a VNet and use it to secure access to our existing [ML Workspace](http://URL_FOR_EX1).
+In this exercise, we'll create a VNet and use it to secure access the workspace we created in the previous exercise. While this exercise gives an intuition about the mechanics of securing a workspace, this is not a complete solution. Refer to the documentation linked at the end of the exercise for complete instructions.
+
+> [!WARNING]
+> This exercise will only give a basic intuition as to the process involved in securing an ML workspace's network environment. For complete step-by-step process for a production environment, follow the link at the end of this exercise.
+
+> [!WARNING]
+> This exercise will block access to the affected workspace and should not be performed on a production workspace.
 
 ## Prerequisites
 
 - Basic knowledge of networking concepts.
 - An Azure account and a subscription.
-- A resource group Azure Machine Learning Workspace as created in the [previous exercise](http://URL_FOR_EX1).
+- A resource group Azure Machine Learning Workspace as created in the previous exercise.
 
 ## Sign in to Azure
 
@@ -173,11 +179,11 @@ We can make sure our workspace is inside the VNet now by testing if we still hav
 
 2. As the warning shows, access to those resources is now blocked. That happens because your workspace is now inside the VNet, and it's configured to block all requests that don't originate from within the *default* subnet we created (remember we're trying to access it from the __outside__ of the network perimeter).
 
-### Congratulations!
+### Secured but inaccessible
 
 You've just secured the network access to your ML workspace.
 
-Notice that in the same way you can't access it, neither can other resources in your organization.
+Notice that in the same way you can't access it, neither can any other resources in your organization that aren't part of the subnet.
 
 Opening things up so that resources can connect requires some strategical planning!
 
@@ -193,11 +199,3 @@ In this unit you've covered the following topics:
 - How to use Private Endpoints to secure network access to you Machine Learning workspaces
 - Accessing a workspace using Azure Machine Learning Studio and check if resources are blocked
 
-## More Resources
-
-To read more about Azure networking visit:
-
-- [What is Azure Virtual Network?](/azure/virtual-network/virtual-networks-overview)
-- [Azure Virtual Network concepts and best practices](/azure/virtual-network/concepts-and-best-practices)
-- [Secure Azure Machine Learning workspace resources using virtual networks (VNets)](/azure/machine-learning/how-to-network-security-overview)
-- [What is Azure Private Endpoint?](/azure/private-link/private-endpoint-overview)
