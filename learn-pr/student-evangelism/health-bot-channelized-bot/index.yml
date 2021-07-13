@@ -2,18 +2,18 @@
 uid: learn.health-bot-channelized-bot
 metadata:
   title: Channelized HealthBot
-  description: Learn how to channelize the bot to teams and build a basic app.
+  description: Learn how to channelize the bot to Teams and build a basic app.
   ms.date: 05/21/2021
   author: shreyan1999
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Channelized HealthBot 
-summary: In the previous module, you integrated the bot the database hosted on Microsoft Azure Cloud. This module shows you how to channelise the bot to teams and build a basic app.
+summary: In the previous module, you integrated the bot the database hosted on Microsoft Azure Cloud. This module shows you how to channelize the bot to Teams and build a basic app.
 abstract: |
   In this module, you will:
   - Learn about the channels available on Microsoft Azure Health Bot Platform
-  - Learn to channel the bot to teams
+  - Learn to channel the bot to Teams
   - Build a basic Teams app for the Healthcare Bot
   
 iconUrl: /learn/achievements/generic-badge.svg

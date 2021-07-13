@@ -1,22 +1,22 @@
-In the previous unit we did go through the steps to channelize the bot to Microsoft teams using the ID that we obtained from the Health Bot platform. Now lets further see how to wrap up this bot into a Teams App using Microsoft Teams App Studio.
+In the previous unit we did go through the steps to channelize the bot to Microsoft Teams using the ID that we obtained from the Health Bot platform. Now lets further see how to wrap up this bot into a Teams App using Microsoft Teams App Studio.
 
-## Creating basic app Microsoft teams App Studio
+## Creating basic app Microsoft Teams App Studio
 
-App Studio makes it easy to start creating or integrating your own Microsoft Teams apps, whether you develop custom apps for your enterprise or SaaS applications for teams around the world by streamlining the creation of the manifest and package for your app and providing useful tools like the Card Editor and a React control library. To know more [click here](/microsoftteams/platform/concepts/build-and-test/app-studio-overview).
+App Studio makes it easy to start creating or integrating your own Microsoft Teams apps, whether you develop custom apps for your enterprise or SaaS applications for Teams around the world by streamlining the creation of the manifest and package for your app and providing useful tools like the Card Editor and a React control library. For more information, see [Manage your apps with App Studio for Microsoft Teams](/microsoftteams/platform/concepts/build-and-test/app-studio-overview).
 
 Firstly, open the Microsoft Teams App.
 
-If it's not installed on the PC, [click here](https://www.microsoft.com/microsoft-teams/group-chat-software) to download and install.
+If it's not installed on the PC, [download and install Teams](https://www.microsoft.com/microsoft-teams/group-chat-software).
 
-:::image type="content" source="../media/3-teams-app-studio.png" alt-text="Screenshot of teams app studio.":::
+:::image type="content" source="../media/3-teams-app-studio.png" alt-text="Screenshot of Teams app studio.":::
 
-- Once the app is launched, click the "Apps" on the bottom left corner of the screen. Here all published applications can be seen. Note that Microsoft teams is Organization specific platform. Now to create health bot app, search for the "App Studio" in the search bar.
+- Once the app is launched, click the "Apps" on the bottom left corner of the screen. Here all published applications can be seen. Note that Microsoft Teams is Organization specific platform. Now to create health bot app, search for the "App Studio" in the search bar.
 
-   :::image type="content" source="../media/3-app-studio-search.png" alt-text="Screenshot of teams app search for app studio.":::
+   :::image type="content" source="../media/3-app-studio-search.png" alt-text="Screenshot of Teams app search for app studio.":::
 
 - Select the App Studio from the dropdown.
 
-   :::image type="content" source="../media/3-app-studio-add.png" alt-text="Screenshot of teams app studio add button.":::
+   :::image type="content" source="../media/3-app-studio-add.png" alt-text="Screenshot of Teams app studio add button.":::
 
 - Upon clicking on the App studio, a dialog popup appears on the screen. Click on the "Add" button.
 
@@ -24,7 +24,7 @@ If it's not installed on the PC, [click here](https://www.microsoft.com/microsof
 
 - This redirects to a new page, On the top there is **Manifest Editor, Validation, Card editor, UI tools ,Chat and About section**. Click on the Manifest Editor and then select **Create a new app**
 
-   :::image type="content" source="../media/3-app-id-generation.png" alt-text="Screenshot of generating new app id.":::
+   :::image type="content" source="../media/3-app-id-generation.png" alt-text="Screenshot of generating new app ID.":::
 
 There are 3 main sections in creating a new app.
 
@@ -38,7 +38,7 @@ Firstly, in the Details section there is "App Details". This is where all the Ap
 
 - **Full name:** Enter the full name of the app. In this scenario, enter "Paramedic bot built on Azure Health Bot".
 
-The next section here is identification, this is where we enter the app id. Since we do not have one, click on "Generate" and this will generate a new id.
+The next section here is identification, this is where we enter the app ID. Since we do not have one, click on "Generate" and this will generate a new ID.
 
 - **Package name:** Enter **para.app** in this field for this particular bot.
 
@@ -80,7 +80,7 @@ Finally, tick the Loading Indicator and Fullscreen Mode check boxes.
 
 Now the second main section is **Capabilities**.
 
-This is where the Bot is being integrated to the teams app platform.
+This is where the Bot is being integrated to the Teams app platform.
 
 Click on **Bots**.
 
@@ -107,7 +107,7 @@ In the Finish section, we have 4 sub sections:
 - App manifesto
 - Test and Distribute
 
-In the Domains and Permissions section, we can provide Azure Active Directory App ID. To know how generate one, [click here](/azure/active-directory/develop/howto-create-service-principal-portal). This step is optional.
+In the Domains and Permissions section, we can provide Azure Active Directory App ID. To learn how generate one, see [create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal). This step is optional.
 
 :::image type="content" source="../media/3-test-and-distribute.png" alt-text="Screenshot of test and distribute":::
 
