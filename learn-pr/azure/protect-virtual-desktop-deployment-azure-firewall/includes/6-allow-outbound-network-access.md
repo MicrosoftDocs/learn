@@ -10,7 +10,7 @@ To allow the appropriate network traffic for Azure Virtual Desktop, you'll need 
 
 ## Configure application rules
 
-To allow the host pool outbound network access to Azure Virtual Desktop, create an application rule collection with the following two rules.
+To allow the host pool outbound network access to Azure Virtual Desktop, create an application rule collection with the following two rules:
 
 
 |Rule  |Description |
@@ -18,7 +18,7 @@ To allow the host pool outbound network access to Azure Virtual Desktop, create 
 |Allow Azure Virtual Desktop    |  Use FQDN tag *WindowsVirtualDesktop* to allow traffic from the host pool virtual network. |
 |Allow storage and service bus accounts    |  Use target FQDNs to allow access from the host pool virtual network to the set of storage and service bus accounts used by the host pool. Use either wildcard FQDNs to enable the required access, or, to be more restrictive, add the exact FQDNs.       |
 
-The following table shows the target options you can use to create a rule that allows storage and service bus accounts.
+The following table shows the target options you can use to create a rule that allows storage and service bus accounts:
 
 |Options |FQDNs to use|
 |---------|---------|
@@ -35,7 +35,7 @@ The following table shows the target options you can use to create a rule that a
   ```
 
 
-When you add both rules, your rule collection will look similar to the following screenshot.
+When you add both rules, your rule collection will look similar to the following screenshot:
 
 :::image type="content" source="../media/6-firewall-rules-classic-application-rule-collection-form.png" alt-text="Screenshot that shows an example application rule collection form filled out." lightbox="../media/6-firewall-rules-classic-application-rule-collection-form.png":::
 
@@ -51,7 +51,7 @@ Create a network rule collection, and add the following rules:
 |Allow DNS    |Allow traffic from your Active Directory Domain Server private IP address to * for TCP and UDP ports 53. Some deployments might not need DNS rules.For example, Azure Active Directory Domain Services forwards DNS queries to Azure DNS at 168.63.129.16. |
 |Allow KMS    |  Allow traffic from your Azure Virtual Desktop VMs to the Windows activation service TCP port 1688.|
 
-When you add both network rules, your rule collection will look similar to the following screenshot.
+When you add both network rules, your rule collection will look similar to the following screenshot:
 
 :::image type="content" source="../media/6-network-collection-example.png" alt-text="Screenshot that shows a network collection with rules added to allow DNS and KMS traffic." lightbox="../media/6-network-collection-example.png":::
 

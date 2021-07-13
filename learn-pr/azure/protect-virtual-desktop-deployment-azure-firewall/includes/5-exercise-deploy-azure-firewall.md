@@ -7,7 +7,7 @@ Create a virtual network that acts as the central connectivity point or hub for 
 
 1. In the [Azure portal](https://portal.azure.com?azure-portal=true), search for and select **Virtual networks**.
 1. Select **+ Create**.
-1. Enter the following information.
+1. Enter the following information:
 
     |Field |Value  |
     |---------|---------|
@@ -18,7 +18,7 @@ Create a virtual network that acts as the central connectivity point or hub for 
 
 1. Select the **IP Addresses** tab.
 1. Under **Subnet name**, select the link labeled **default**.
-1. Replace the subnet name with the following name.
+1. Replace the subnet name with the following name:
 
     |Field |Value |
     |---------|---------|
@@ -35,7 +35,7 @@ Connect the hub virtual network with the virtual network used by the host pool b
 
 1. In **firewallVNet**, under **Settings**, select **Peerings**.
 1. Select **+ Add**.
-1. Enter the following information.
+1. Enter the following information:
 
     |Field |Value |
     |---------|---------|
@@ -53,7 +53,7 @@ Now that you have the virtual networks created and peered, deploy Azure Firewall
 
 1. In the Azure portal, search for and select **Firewalls**.
 1. Select **+ Create** to create a firewall.
-1. Enter the following information to configure the firewall.
+1. Enter the following information to configure the firewall:
 
    |Field |Value  |
    |---------|---------|

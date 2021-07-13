@@ -30,7 +30,7 @@ Next, let's create a host pool that will contain the VM you'll create later in t
 
 1. In the Azure portal, search for and select **Azure Virtual Desktop**.
 1. Select **Create a host pool**.
-1. Enter the following information into the **Basics** tab.
+1. Enter the following information into the **Basics** tab:
 
    |Field  |Value  |
    |---------|---------|
@@ -59,7 +59,7 @@ Create a registration token to authorize a session host to join the host pool.
     -ExpirationTime $((get-date).ToUniversalTime().AddHours(4).ToString('yyyy-MM-ddTHH:mm:ss.fffffffZ'))
    ```
 
-1. Run the following command to get the registration token.
+1. Run the following command to get the registration token:
 
    ```powershell
     $regToken.Token
@@ -69,7 +69,7 @@ Create a registration token to authorize a session host to join the host pool.
 
 ## Create a subnet and virtual network for the host pool
 
-In Cloud Shell, run the following command to create a subnet and virtual network in the same location as the resource group.
+In Cloud Shell, run the following command to create a subnet and virtual network in the same location as the resource group:
 
    ```powershell
    $subnetConfig = New-AzVirtualNetworkSubnetConfig `
@@ -98,7 +98,7 @@ Create an Azure VM to act as a session host for the host pool.
 
     ```
 
-1. Run the following command to create the VM by using a Windows 10 Enterprise multiple session image.
+1. Run the following command to create the VM by using a Windows 10 Enterprise multiple session image:
 
     ```powershell
     New-Azvm `
@@ -112,7 +112,7 @@ Create an Azure VM to act as a session host for the host pool.
 
     ```
 
-   Ignore the message "No size value has been provided..." The VM will be created with the size you specified in the command above.
+   Ignore the message "No size value has been provided..." The VM will be created with the size you specified in the preceding command.
 
 1. Wait a couple of minutes for the VM to be created.
 
@@ -136,12 +136,12 @@ Install the Azure Virtual Desktop agent and boot loader on the VM to register th
 
 In your remote desktop session on the VM, install the Azure Virtual Desktop agent. You'll need the registration token for the host pool to complete the installation.
 
-1. Copy the following link to the Azure Virtual Desktop agent: `https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv`
+1. Copy the following link to the Azure Virtual Desktop agent: `https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv`.
 1. On the VM, open Microsoft Edge to start a web browser session.
 1. Paste the link into a web browser.
 1. At the bottom of the web browser window, select **Open file** to install the Azure Virtual Desktop agent.
 1. When the installer asks you for the registration token, paste in the value you got after you created the token.
-1. If you no longer have the token value, go back to your Cloud Shell session and run the following command.
+1. If you no longer have the token value, go back to your Cloud Shell session and run the following command:
 
    ```powershell
     (Get-AzWvdRegistrationInfo `
@@ -155,7 +155,7 @@ In your remote desktop session on the VM, install the Azure Virtual Desktop agen
 
 In your remote desktop session on the VM, install the Azure Virtual Desktop boot loader.
 
-1. Copy the following link to the Azure Virtual Desktop boot loader: `https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH`
+1. Copy the following link to the Azure Virtual Desktop boot loader: `https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH`.
 1. Paste the link into a web browser session in the VM.
 1. At the bottom of the web browser window, select **Open file** to install the Azure Virtual Desktop boot loader.
 1. Complete the installation.

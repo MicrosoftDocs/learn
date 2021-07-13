@@ -1,6 +1,6 @@
 Your organization is using Azure Virtual Desktop to provide your workforce access to virtualized desktops and apps. Because of the sensitive data your organization works with and your organization's network security requirements, you can't have any unauthorized network traffic in your Azure Virtual Desktop environment. You decided to deploy Azure Firewall to limit outbound network traffic for Azure Virtual Desktop.
 
-You completed the following steps to deploy Azure Firewall to protect an Azure Virtual Desktop host pool.
+You completed the following steps to deploy Azure Firewall to protect an Azure Virtual Desktop host pool:
 
 1. Set up the network.
 
