@@ -99,6 +99,6 @@ The following pods listed below are used for the datastores by different microse
 - `nosqldata-<random-guid>` pod as MongoDB instance.
 - `basketdata-<random-guid>` pod as Redis instance.
 
-This is an appropriate configuration for a development scenario because all the services are in a single cluster. However, in a production scenario, it's recommended to use managed data services instead of running databases as containers within your Kubernetes cluster.
+This configuration is appropriate for development since the services are in a single cluster. For production, it's recommended to use managed data services instead of running databases as containers.
 
 In the next unit, you'll implement Azure Cache for Redis for the basket service.
