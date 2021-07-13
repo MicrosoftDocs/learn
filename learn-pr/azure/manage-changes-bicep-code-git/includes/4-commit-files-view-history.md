@@ -1,7 +1,7 @@
 Now that you've initialized your Git repository, you're ready to start adding files. In this unit, you'll learn how to tell Git to track the changes to files in your repository.
 
 > [!NOTE]
-> The commands in this unit are shown to illustrate the concepts. Don't run them just yet. You'll practice what you learn here in the next part.
+> The commands in this unit are shown to illustrate the concepts. Don't run them just yet. You'll practice what you learn here in the next unit.
 
 ## Folder structure for your repository
 
@@ -50,7 +50,7 @@ git add .
 
 ## Commit the staged changes
 
-A _commit_ represents a set of changes to one or more files in your repository. When you're ready to send the changes that you staged to GitHub, you use the `git commit` command. Your commit includes a _commit message_, which is a human-readable description of the changes.
+A _commit_ represents a set of changes to one or more files in your repository. When you're ready to commit the changes you've staged, you use the `git commit` command. Your commit includes a _commit message_, which is a human-readable description of the changes.
 
 Here's an example that shows how you commit the staged changes shown earlier:
 
@@ -59,7 +59,7 @@ git commit --message "Add Cosmos DB account definition."
 ```
 
 > [!NOTE]
-> Visual Studio Code can commit to your Git repository too. When you use Git integration in Visual Studio Code, if you haven't already staged the files, Visual Studio Code asks if you want it to stage all of the changed files for you. You can even set this as the default behavior. Or, if you prefer, you can manually stage and unstage files using **Source Control** in Visual Studio Code.
+> Visual Studio Code can commit to your Git repository too. When you use Git integration in Visual Studio Code, if you haven't already staged the files, Visual Studio Code asks if you want it to stage all of the changed files for you. You can even set this as the default behavior. Or, if you prefer, you can manually stage and unstage files by using **Source Control** in Visual Studio Code.
 
 Make your commit messages short, but make them descriptive. When you or a team member reviews the commit history in the future, each commit message should explain what the change was and why you made it.
 

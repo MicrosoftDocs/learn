@@ -154,13 +154,13 @@ Visual Studio Code shows the same information that the `git status` command prov
 
    **Source Control** opens.
 
-   :::image type="content" source="../media/3-vscode-source-control.png" alt-text="Screenshot of Visual Studio Code showing Source Control, with one change on the icon badge and the main.bicep file listed as a changed file." border="true":::
+   :::image type="content" source="../media/3-vscode-source-control.png" alt-text="Screenshot of Visual Studio Code that shows Source Control, with one change on the icon badge and the main.bicep file listed as a changed file." border="true":::
 
    Visual Studio Code shows that the _main.bicep_ file in the *deploy* folder has changed. Additionally, the **Source Control** icon has a badge that shows the number **1**, which indicates one untracked file.
 
 1. The status bar appears at the bottom of Visual Studio Code. It provides useful information and functionality. Toward the left side, the status bar shows the word **main**:
 
-   :::image type="content" source="../media/3-vscode-status-bar.png" alt-text="Screenshot of the Visual Studio Code status bar, showing the branch name as main." border="true":::
+   :::image type="content" source="../media/3-vscode-status-bar.png" alt-text="Screenshot of the Visual Studio Code status bar that shows the branch name as main." border="true":::
 
    This word indicates that you're currently on the **main** branch. You'll learn about branches shortly.
 

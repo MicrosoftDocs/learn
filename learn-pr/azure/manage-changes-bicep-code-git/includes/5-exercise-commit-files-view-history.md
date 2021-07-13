@@ -58,9 +58,9 @@ Now that you've made a change to the _main.bicep_ file, let's inspect the differ
 
    A view of file differences opens.
 
-   :::image type="content" source="../media/5-vscode-diff.png" alt-text="Screenshot of Visual Studio Code showing the differences between the current main.bicep file and the modified version." border="true":::
+   :::image type="content" source="../media/5-vscode-diff.png" alt-text="Screenshot of Visual Studio Code that shows the differences between the current main.bicep file and the modified version." border="true":::
 
-   Notice that Visual Studio Code shows you the changes you've made. The original file is on the left, and the changed file is on the right. Additions to the file are displayed in green, and anything you've removed from the file is displayed in red.
+   Notice that Visual Studio Code shows you the changes you've made. The original file is on the left, and the changed file is on the right. Additions to the file are displayed in green. Anything you've removed from the file is displayed in red.
 
 1. Open the differences for the _app-service.bicep_ file.
 
@@ -68,17 +68,17 @@ Now that you've made a change to the _main.bicep_ file, let's inspect the differ
 
 ## Commit the updated Bicep code by using Visual Studio Code
 
-Now that you've reviewed the changes and are satisfied with it, you commit the update to the file. This time, you commit by using Visual Studio Code.
+Now that you've reviewed the changes and are satisfied with it, you commit the update to the file. This time, you use Visual Studio Code.
 
 1. Open **Source Control**.
 
-   Two changed files should appear. If you don't see changed files, select the refresh button so that Visual Studio Code scans for changes.
+   Two changed files should appear. If you don't see them, select the refresh button so that Visual Studio Code scans for changes.
 
-   :::image type="content" source="../media/5-vscode-refresh.png" alt-text="Screenshot of Visual Studio Code showing Source Control, with the Refresh toolbar icon highlighted." border="true":::
+   :::image type="content" source="../media/5-vscode-refresh.png" alt-text="Screenshot of Visual Studio Code that shows Source Control, with the Refresh toolbar icon highlighted." border="true":::
 
 1. Select each of the two changed files and stage them. You can select the plus (**+**) icon on each file, or you can select and hold (or right-click) each file and select **Stage Changes**.
 
-   :::image type="content" source="../media/5-vscode-stage.png" alt-text="Screenshot of Visual Studio Code showing Source Control, with the main.bicep context menu displayed, and the Stage Changes menu item highlighted." border="true":::
+   :::image type="content" source="../media/5-vscode-stage.png" alt-text="Screenshot of Visual Studio Code that shows Source Control, with the main.bicep context menu displayed and the Stage Changes menu item highlighted." border="true":::
 
 1. At the top of **Source Control**, enter a descriptive commit message, like:
 
@@ -88,7 +88,7 @@ Now that you've reviewed the changes and are satisfied with it, you commit the u
 
 1. Select the check-mark icon above the text box for the commit message.
 
-   :::image type="content" source="../media/5-vscode-commit.png" alt-text="Screenshot of Visual Studio Code showing Source Control, with the commit icon highlighted." border="true":::
+   :::image type="content" source="../media/5-vscode-commit.png" alt-text="Screenshot of Visual Studio Code that shows Source Control, with the commit icon highlighted." border="true":::
 
    Visual Studio Code commits the two changes.
 
@@ -117,10 +117,10 @@ You can also view the history of a single file, the state of the file from that 
 
 1. Select and hold (or right-click) the _main.bicep_ file, and then select **Open Timeline**.
 
-   :::image type="content" source="../media/5-vscode-timeline-menu.png" alt-text="Screenshot of Visual Studio Code showing the Explorer panel, with the shortcut menu displayed for the main.bicep file and the Timeline menu item highlighted." border="true":::
+   :::image type="content" source="../media/5-vscode-timeline-menu.png" alt-text="Screenshot of Visual Studio Code that shows the Explorer panel, with the shortcut menu displayed for the main.bicep file and the Timeline menu item highlighted." border="true":::
 
-   The timeline opens, showing both commits.
+   The timeline opens and shows both commits.
 
-   :::image type="content" source="../media/5-vscode-timeline.png" alt-text="Screenshot of Visual Studio Code showing the timeline for the main.bicep file, with two commits listed." border="true":::
+   :::image type="content" source="../media/5-vscode-timeline.png" alt-text="Screenshot of Visual Studio Code that shows the timeline for the main.bicep file, with two commits listed." border="true":::
 
 1. Select each commit in the list to view the state of the file at that point in time.
