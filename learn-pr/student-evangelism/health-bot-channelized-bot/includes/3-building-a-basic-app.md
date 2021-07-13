@@ -58,7 +58,7 @@ The next section is **Developer Information** section. Here we are supposed to p
 
 **Developer/Company name:** Enter "Contoso".
 
-**Website:** This refers to the website of the developer. Since this is a demo we are giving the web-address of [Github](https://github.com/).
+**Website:** This refers to the website of the developer. Since this is a demo we are giving the web-address of [GitHub](https://github.com/).
 
 :::image type="content" source="../media/3-branding.png" alt-text="Screenshot of Branding.":::
 
@@ -94,11 +94,11 @@ Since we have the bot already configured on the Azure Health Bot platform, we wi
 
 :::image type="content" source="../media/3-existing-bot-setup.png" alt-text="Screenshot of Existing Bots section setup.":::
 
-Upon clicking the Existing Bot section, Select the **Connect to a different bot id**. The Bot ID can be obtained from the Azure health bot platform. This is the same id we used in the previous unit. This is a unique id and varies from user to user.
+Upon clicking the Existing Bot section, Select the **Connect to a different bot id**. The Bot ID can be obtained from the Azure health bot platform. This is the same ID we used in the previous unit. This is a unique ID and varies from user to user.
 
 In the scope section, click on Select **Personal** and **Team**.
 
-:::image type="content" source="../media/3-azure-ad-app-id.png" alt-text="Screenshot of Azure AD app id":::
+:::image type="content" source="../media/3-azure-ad-app-id.png" alt-text="Screenshot of Azure AD app ID":::
 
 In the Finish section, we have 4 sub sections:
 
