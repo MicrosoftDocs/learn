@@ -1,0 +1,66 @@
+### YamlMime:ModuleUnit
+uid: learn.health-bot-channelized-bot.4-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Four multiple-choice questions
+  ms.date: 05/21/2021
+  author: shreyan1999
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  
+  questions:
+    
+    - content: "In which one of the following channels can we not make the Health Bot available? "
+      choices:
+        - content: "Telegram"
+          isCorrect: false
+          explanation: Yes, The Health Bot can be directed to Telegram.
+        - content: "WhatsApp"
+          isCorrect: false
+          explanation: The Health Bot supports WhatsApp channeling.
+        - content: "Signal"
+          isCorrect: true
+          explanation: Currently Health Bot Doesn’t support signal.
+    
+    - content: "How can we channel the Azure Health bot to Microsoft Teams ?"
+      choices:
+        - content: "APIs"
+          isCorrect: false
+          explanation: "No, we can’t use APIs."
+        - content: "Bot ID"
+          isCorrect: true
+          explanation: "Yes, we use the Bot ID to connect. It is a unique to every user."
+        - content: "Login Credentials."
+          isCorrect: false
+          explanation: "This isn’t a valid way."
+        
+
+    - content: "In which section do we upload an icon picture for the bot?"
+      choices:
+        - content: "Finish"
+          isCorrect: false
+          explanation: "Finish section is for final touches."
+        - content: "Capabilities"
+          isCorrect: false
+          explanation: "No capabilities don’t have an option for this."
+        - content: "Details"
+          isCorrect: true
+          explanation: "Yes, we upload it in the details section under the branding Subsection. The dimension is 192x192."
+
+    - content: "Which one is not one of the options we see in Test and distribute subsection? "
+      choices:
+        - content: "Install"
+          isCorrect: false
+          explanation: Yes, this option is present and is used to install your app in Teams for testing.
+        - content: "Publish"
+          isCorrect: false
+          explanation: Yes, this option is present and is used to Publish your app to your tenant's app catalog or the Teams app store.
+        - content: "Delete"
+          isCorrect: true
+          explanation: This is available in the main section and not in in Test and distribute sub-section.
