@@ -1,6 +1,6 @@
 You can protect your data by taking backups at regular intervals. There are several backup options available for VMs, depending on your use-case.
 
-:::image type="content" source="../media/AZ104_VM_Data_Protection-3d4b02d4.png":::
+:::image type="content" source="../media/AZ104_VM_Data_Protection-3d4b02d4.png" alt-text="Snapshots, azure backup, and azure site recovery.":::
 
 
 ## Azure Backup
