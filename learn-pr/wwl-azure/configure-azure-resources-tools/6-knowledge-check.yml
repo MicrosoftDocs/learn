@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/13/2021
+  ms.date: 07/14/2021
   author: wwlpublish
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -15,7 +15,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Suppose you are building a video-editing application that will offer online storage for user-generated video content. You will store the videos in Azure Blobs, so you need to create an Azure storage account to contain the blobs. Once the storage account is in place, it is unlikely you would remove and recreate it because this would delete all the user videos. Which tool is likely to offer the quickest and easiest way to create the storage account?"
+  - content: "Your company is building a video-editing application that will offer online storage for user-generated video content. The videos will be stored in Azure Blobs. An Azure storage account will contain the blobs. It is unlikely the storage account would ever need to be removed and recreated because this would delete all the user videos. Which tool is likely to offer the quickest and easiest way to create the storage account?"
     choices:
     - content: "Azure portal"
       isCorrect: true
@@ -37,7 +37,7 @@ quiz:
     - content: "Both Linux and Windows"
       isCorrect: true
       explanation: "That's correct. The CLI is cross-platform and can be installed on Linux, macOS, and Windows. After installation, the CLI commands that you run are the same everywhere. This means you can learn the commands once and use them with any local installation or in the Azure Cloud Shell."
-  - content: "You are managing Azure locally using PowerShell. You have launched the app as an Administrator. Which of the following commands would you do first?"
+  - content: "Another Administrator is managing Azure locally using PowerShell. They have launched PowerShell as an Administrator. Which of the following commands should be executed first?"
     choices:
     - content: "Connect-AzAccount"
       isCorrect: true
