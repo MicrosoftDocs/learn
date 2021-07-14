@@ -16,7 +16,7 @@ The first step is to provision a data factory in the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. On the left sidebar, select **+ Create Resource** > **Analytics** > **Data Factory**.
+1. On the left sidebar, select **+ Create Resource** > **Integration** > **Data Factory**.
 
     ![Screenshot showing where to select Data Factory.](../media/6-select-data-factory.png)
 
@@ -97,11 +97,11 @@ Set permissions to allow the data factory to access the data in your Data Lake S
 
     ![Screenshot showing the Data factory home page, where Author & Monitor is selected.](../media/6-generated-data-factory.png)
 
-1. Select **Copy Data** to open the Copy Data tool.
+1. Select **Ingest** to open the Copy Data tool.
 
     ![Screenshot showing how to open the Copy Data tool.](../media/6-copy-data.png)
 
-1. On the **Properties** page, under **Task name**, specify **CopyFromADLSGen1ToGen2**. Then set the task cadence to **Run once now**, and select **Next**.
+1. On the **Properties** page, under **Task type**, click **Built-in copy task**. Then set the task cadence to **Run once now**, and select **Next**.
 
     ![Screenshot showing the Properties page of the Copy Data tool.](../media/6-copy-data-property.png)
 
@@ -113,8 +113,8 @@ Set permissions to allow the data factory to access the data in your Data Lake S
 
     ![Screenshot showing selections in the connector gallery.](../media/6-create-gen1.png)
 
-1. On the **Specify Azure Data Lake Storage Gen1 connection** page:
-    - Under **Data Lake Store account name**, select your account name.
+1. On the **New Connection (Azure Data Lake Storage Gen1)** page:
+    - Under **Data Lake Store Selection method**, select your Azure subscription.
     - Under **Tenant**, specify or validate the tenant.
     - To validate the settings, select **Test connection** > **Finish**.
     - When you see that the new connection is created, select **Next**.
