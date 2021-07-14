@@ -9,7 +9,7 @@ Azure automatically creates system routes and assigns the routes to each subnet 
 Each route contains an address prefix and next hop type. When traffic leaving a subnet is sent to an IP address within the address prefix of a route, the route that contains the prefix is the route Azure uses. Whenever a virtual network is created, Azure automatically creates the following default system routes for each subnet within the virtual network:
 
 | **Source** | **Address prefixes**          | **Next hop type** |
-| - | -- | -- |
+|:-:|:-:|:-:|
 | Default    | Unique to the virtual network | Virtual network   |
 | Default    | 0.0.0.0/0                     | Internet          |
 | Default    | 10.0.0.0/8                    | None              |
@@ -41,7 +41,7 @@ Azure adds default system routes for any Azure capabilities that you enable. Dep
 
 
 | **Source**              | **Address prefixes**                                                                      | **Next hop type**             | **Subnet within virtual network that route is added to** |
-| -- | -- | -- | -- |
+|:-:|:-:|:-:|:-:|
 | Default                 | Unique to the virtual network, for example: 10.1.0.0/16                                   | VNet peering                  | All                                                      |
 | Virtual network gateway | Prefixes advertised from on-premises via BGP, or configured in the local network gateway  | Virtual network gateway       | All                                                      |
 | Default                 | Multiple                                                                                  | VirtualNetworkServiceEndpoint | Only the subnet a service endpoint is enabled for        |
@@ -101,7 +101,8 @@ Here is an example where you have a virtual network that includes three subnets.
 
 Creating a routing table is straightforward. You provide **Name**, **Subscription**, **Resource Group**, and **Location**. You also decide to use **Virtual network gateway route propagation**.
 
-![Screenshot of the Create route table page. BGP route propagation is Enabled.](../media/creating-a-routing-table.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the Create route table page. BGP route propagation is Enabled.](../media/creating-routing-table.png)
 
 Routes are automatically added to the route table for all subnets with Virtual network gateway propagation enabled. When you are using ExpressRoute, propagation ensures all subnets get the routing information.
 
@@ -110,7 +111,8 @@ Routes are automatically added to the route table for all subnets with Virtual n
 For our example,
 -  The new route is named *ToPrivateSubnet*.-  The Private subnet is at 10.0.1.0/24.-  The route uses a virtual appliance. Notice the other choices for *Next hop type*: virtual network gateway, virtual network, internet, and none.-  The virtual appliance is located at 10.0.2.4.
 
-![Screenshot of the Add route page. The Next hop type drop-down is highlighted. Virtual appliance is selected.](../media/create-a-custom-route.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the Add route page. The Next hop type drop-down is highlighted. Virtual appliance is selected.](../media/create-custom-route.png)
 
 In summary, this route applies to any address prefixes in 10.0.1.0/24 (private subnet). Traffic headed to these addresses will be sent to the virtual appliance with a 10.0.2.4 address.
 
@@ -118,11 +120,14 @@ In summary, this route applies to any address prefixes in 10.0.1.0/24 (private s
 
 The last step in our example is to associate the Public subnet with the new routing table. Each subnet can have zero or one route table associated to it.
 
-![Screenshot of a route table being assocated with a virtual network.](../media/associate-a-route.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of a route table being assocated with a virtual network.](../media/associate-route.png)
 
-> [!NOTE] By default, using system routes traffic would go directly to the private subnet. However, with a user-defined route you can force the traffic through the virtual appliance.
+> [!NOTE] 
+> By default, using system routes traffic would go directly to the private subnet. However, with a user-defined route you can force the traffic through the virtual appliance.
 
-> [!NOTE] In this example, the virtual appliance shouldn't have a public IP address and IP forwarding should be enabled.
+> [!NOTE] 
+> In this example, the virtual appliance shouldn't have a public IP address and IP forwarding should be enabled.
 
 
 ## Diagnose a routing problem
@@ -138,7 +143,7 @@ You can view the effective routes for each network interface by using the Azure 
 3. Select the VM from the search results.
 4. Under **Settings**, select **Networking**, and navigate to the network interface resource by selecting its name.  ![Azure Portal - select a specific NIC.](../media/view-nics.png)
 
-8. Under **Support + troubleshooting**, select **Effective routes**. The effective routes for a network interface named **myVMNic1** are shown, in the following image:  ![Azure Portal - effective routes for a specific NIC.](../media/view-effective-routes.png)
+5. Under **Support + troubleshooting**, select **Effective routes**. The effective routes for a network interface named **myVMNic1** are shown, in the following image:  ![Azure Portal - effective routes for a specific NIC.](../media/view-effective-routes.png)
 
 
 ### View effective routes by using Azure PowerShell
@@ -167,7 +172,7 @@ Steps you might take to resolve the routing problem might include:
 Forced tunneling lets you redirect or "force" all Internet-bound traffic back to your on-premises location via a Site-to-Site VPN tunnel for inspection and auditing. This is a critical security requirement for most enterprise IT policies. If you don't configure forced tunneling, Internet-bound traffic from your VMs in Azure always traverses from the Azure network infrastructure directly out to the Internet, without the option to allow you to inspect or audit the traffic. Unauthorized Internet access can potentially lead to information disclosure or other types of security breaches. Forced tunneling can be configured by using Azure PowerShell. It can't be configured using the Azure portal. 
 
 In the following example, the Frontend subnet is not force tunneled. The workloads in the Frontend subnet can continue to accept and respond to customer requests from the Internet directly. The Mid-tier and Backend subnets are forced tunneled. Any outbound connections from these two subnets to the Internet will be forced or redirected back to an on-premises site via one of the Site-to-site (S2S) VPN tunnels.
-![Backend and Mid-tier subnets Forced Tunneled via S2S VPN.Frontend subnets routed directly to Internet.](../media/forced-tunnel.png)
+> [!div class="mx-imgBorder"]> ![Backend and Mid-tier subnets Forced Tunneled via S2S VPN.Frontend subnets routed directly to Internet.](../media/forced-tunnel.png)
 
 ### Configure forced tunneling
 

@@ -21,7 +21,8 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 1. On the Azure home page, select Virtual Machines.
 2. In Virtual Machines, select **+ Add &gt; + Start with a preset configuration**.
-   ![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
+    > [!div class="mx-imgBorder"]
+    > ![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
 
 3. In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
 
@@ -29,32 +30,32 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 5. Use the information in the following table to create your VM.
 
-| **Tab**         | **Option**                                                   | **Value**                             |
-| --------------- | ------------------------------------------------------------ | ------------------------------------- |
-| Basics          | Resource group                                               | ContosoResourceGroup                  |
-|                 | Virtual machine name                                         | ManufacturingVM                       |
-|                 | Region                                                       | (Europe) North Europe                 |
-|                 | Availability options                                         | No infrastructure redundancy required |
-|                 | Image                                                        | Windows 10 Pro, Version 20H2 - Gen 1  |
-|                 | Azure Spot instance                                          | Not selected                          |
-|                 | Size                                                         | Standard_D2_v3 - 2vcpus, 8GiB memory  |
-|                 | Username                                                     | TestUser                              |
-|                 | Password                                                     | TestPa$$w0rd!                         |
-|                 | Public inbound ports                                         | Allow selected ports                  |
-|                 | Select inbound ports                                         | RDP (3389)                            |
-|                 | I confirm I have an eligible Windows 10 license with multi-tenant hosting rights. | Selected                              |
-| Disks           | No changes required                                          |                                       |
-| Networking      | Virtual network                                              | ManufacturingVnet                     |
-|                 | Subnet                                                       | DatabaseSubnet (10.30.10.0/24)        |
-|                 | Public IP                                                    | (new) ManufacturingVM-ip              |
-|                 | NIC network security group                                   | Basic                                 |
-|                 | Public inbound ports                                         | Allow selected ports                  |
-|                 | Select inbound ports                                         | RDP (3389)                            |
-|                 | Load balancing                                               | Not selected                          |
-| Management      | No changes required                                          |                                       |
-| Advanced        | No changes required                                          |                                       |
-| Tags            | No changes required                                          |                                       |
-| Review + create | Review your settings and select Create                       |                                       |
+    | **Tab**         | **Option**                                                   | **Value**                             |
+    |:-:|:-:|:-:|
+    | Basics          | Resource group                                               | ContosoResourceGroup                  |
+    |                 | Virtual machine name                                         | ManufacturingVM                       |
+    |                 | Region                                                       | (Europe) North Europe                 |
+    |                 | Availability options                                         | No infrastructure redundancy required |
+    |                 | Image                                                        | Windows 10 Pro, Version 20H2 - Gen 1  |
+    |                 | Azure Spot instance                                          | Not selected                          |
+    |                 | Size                                                         | Standard_D2_v3 - 2vcpus, 8GiB memory  |
+    |                 | Username                                                     | TestUser                              |
+    |                 | Password                                                     | TestPa$$w0rd!                         |
+    |                 | Public inbound ports                                         | Allow selected ports                  |
+    |                 | Select inbound ports                                         | RDP (3389)                            |
+    |                 | I confirm I have an eligible Windows 10 license with multi-tenant hosting rights. | Selected                              |
+    | Disks           | No changes required                                          |                                       |
+    | Networking      | Virtual network                                              | ManufacturingVnet                     |
+    |                 | Subnet                                                       | DatabaseSubnet (10.30.10.0/24)        |
+    |                 | Public IP                                                    | (new) ManufacturingVM-ip              |
+    |                 | NIC network security group                                   | Basic                                 |
+    |                 | Public inbound ports                                         | Allow selected ports                  |
+    |                 | Select inbound ports                                         | RDP (3389)                            |
+    |                 | Load balancing                                               | Not selected                          |
+    | Management      | No changes required                                          |                                       |
+    | Advanced        | No changes required                                          |                                       |
+    | Tags            | No changes required                                          |                                       |
+    | Review + create | Review your settings and select Create                       |                                       |
 
 
 6. When the deployment is complete, select **Go to resource**.
@@ -101,13 +102,13 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 2. Use the following command to verify that there is no connection to TestVM1 on CoreServicesVnet. Be sure to use the IPv4 address for TestVM1.
 
-| PowerShell                               |
-| ---------------------------------------- |
-| Test-NetConnection 10.20.20.4 -port 3389 |
+    | PowerShell                               |
+    |:-:|
+    | Test-NetConnection 10.20.20.4 -port 3389 |
 
 
 3. The test connection should fail, and you will see a result similar to the following:
-   ![PowerShell window with Test-NetConnection 10.20.20.4 -port 3389 showing failed ](../media/test-netconnection-fail.png)
+    ![PowerShell window with Test-NetConnection 10.20.20.4 -port 3389 showing failed ](../media/test-netconnection-fail.png)
 
  
 
@@ -116,30 +117,31 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 1. On the Azure home page, select **Virtual Networks**, and then select **CoreServicesVnet**.
 
 2. In CoreServicesVnet, under **Settings**, select **Peerings**.
-   ![screen shot of core services VNet Peering settings ](../media/create-peering-on-coreservicesvnet.png)
+    > [!div class="mx-imgBorder"]
+    > ![screen shot of core services VNet Peering settings ](../media/create-peering-coreservicesvnet.png)
 
 3. On CoreServicesVnet | Peerings, select **+ Add**.
 
 4. Use the information in the following table to create the peering.
 
-| **Section**                          | **Option**                                    | **Value**                             |
-| ------------------------------------ | --------------------------------------------- | ------------------------------------- |
-| This virtual network                 |                                               |                                       |
-|                                      | Peering link name                             | CoreServicesVnet-to-ManufacturingVnet |
-|                                      | Traffic to remote virtual network             | Allow (default)                       |
-|                                      | Traffic forwarded from remote virtual network | Allow (default)                       |
-|                                      | Virtual network gateway or Route Server       | None (default)                        |
-| Remote virtual network               |                                               |                                       |
-|                                      | Peering link name                             | ManufacturingVnet-to-CoreServicesVnet |
-|                                      | Virtual network deployment model              | Resource Manager                      |
-|                                      | I know my resource ID                         | Not selected                          |
-|                                      | Subscription                                  | MOC Subscription-lodxxxxxxxx          |
-|                                      | Virtual network                               | ManufacturingVnet                     |
-|                                      | Traffic to remote virtual network             | Allow (default)                       |
-|                                      | Traffic forwarded from remote virtual network | Allow (default)                       |
-|                                      | Virtual network gateway or Route Server       | None (default)                        |
-| Review your settings and select Add. |                                               |                                       |
-|                                      |                                               |                                       |
+    | **Section**                          | **Option**                                    | **Value**                             |
+    |:-:|:-:|:-:|
+    | This virtual network                 |                                               |                                       |
+    |                                      | Peering link name                             | CoreServicesVnet-to-ManufacturingVnet |
+    |                                      | Traffic to remote virtual network             | Allow (default)                       |
+    |                                      | Traffic forwarded from remote virtual network | Allow (default)                       |
+    |                                      | Virtual network gateway or Route Server       | None (default)                        |
+    | Remote virtual network               |                                               |                                       |
+    |                                      | Peering link name                             | ManufacturingVnet-to-CoreServicesVnet |
+    |                                      | Virtual network deployment model              | Resource Manager                      |
+    |                                      | I know my resource ID                         | Not selected                          |
+    |                                      | Subscription                                  | MOC Subscription-lodxxxxxxxx          |
+    |                                      | Virtual network                               | ManufacturingVnet                     |
+    |                                      | Traffic to remote virtual network             | Allow (default)                       |
+    |                                      | Traffic forwarded from remote virtual network | Allow (default)                       |
+    |                                      | Virtual network gateway or Route Server       | None (default)                        |
+    | Review your settings and select Add. |                                               |                                       |
+    |                                      |                                               |                                       |
 
 
 5. In CoreServicesVnet | Peerings, verify that the **CoreServicesVnet-to-ManufacturingVnet** peering is listed.
@@ -154,13 +156,13 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 2. Use the following command to verify that there is now a connection to TestVM1 on CoreServicesVnet. 
 
-| PowerShell                               |
-| ---------------------------------------- |
-| Test-NetConnection 10.20.20.4 -port 3389 |
+    | PowerShell                               |
+    |:-:|
+    | Test-NetConnection 10.20.20.4 -port 3389 |
 
 
 3. The test connection should succeed, and you will see a result similar to the following:
-   ![Powershell window with Test-NetConnection 10.20.20.4 -port 3389 showing TCP test succeeded: true](../media/test-connection-succeeded.png)
+    ![Powershell window with Test-NetConnection 10.20.20.4 -port 3389 showing TCP test succeeded: true](../media/test-connection-succeeded.png)
 
  
 
@@ -168,7 +170,8 @@ Congratulations! You have successful configured connectivity between VNets by ad
 
 ## Task 6: Clean up resources
 
-> [!NOTE] Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+> [!NOTE] 
+> Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
@@ -178,4 +181,5 @@ Congratulations! You have successful configured connectivity between VNets by ad
    Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
    ```
 
-> [!NOTE] The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+> [!NOTE] 
+> The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.

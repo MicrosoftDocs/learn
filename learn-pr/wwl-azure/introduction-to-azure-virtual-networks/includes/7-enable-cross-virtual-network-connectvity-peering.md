@@ -6,7 +6,8 @@ Virtual network peering enables you to seamlessly connect two Azure virtual netw
 
 - **Global VNet peering** connects Azure virtual networks in different regions. When creating a global peering, the peered virtual networks can exist in any Azure public cloud region or China cloud regions, but not in Government cloud regions. You can only peer virtual networks in the same region in Azure Government cloud regions.
 
-![Illustration showing VNet1 in Region 1, and VNet2 and VNet3 in Region 2. VNet2 and VNet3 are connected with regional VNet peering. VNet1 and VNet2 are connected with a global VNet peering](../media/global-vnet-peering.png)
+> [!div class="mx-imgBorder"]
+> ![Illustration showing VNet1 in Region 1, and VNet2 and VNet3 in Region 2. VNet2 and VNet3 are connected with regional VNet peering. VNet1 and VNet2 are connected with a global VNet peering](../media/global-vnet-peering.png)
 
 
 The benefits of using virtual network peering, whether local or global, include:
@@ -25,15 +26,18 @@ The benefits of using virtual network peering, whether local or global, include:
 
 The following diagram shows a scenario where resources on the Contoso VNet and resources on the Fabrikam VNet need to communicate. The Contoso subscription in the US West region, is connected to the Fabrikam subscription in the US West region.
 
-![Scenario requiring cross-VNet connectivity from Contoso subscription (../media/az-700-azure-networking-solutions-module-1-34.png) in US West region to Fabrikam (10.10.26.0/24) subscription in US East region.](../media/vnet-peering.png)
+> [!div class="mx-imgBorder"]
+> ![Scenario requiring cross-VNet connectivity from Contoso subscription (../media/az-700-azure-networking-solutions-module-1-34.png) in US West region to Fabrikam (10.10.26.0/24) subscription in US East region.](../media/vnet-peering.png)
 
 The routing tables show the routes known to the resources in each subscription. The following routing table shows the routes known to Contoso, with the final entry being the Global VNet peering entry to the Fabrikam 10.10.26.0/24 subnet.
 
-![Contoso routing table showing Global VNet peering entry 10.10.26.0/24.](../media/contosovm-routes-peering-annotated.png)
+> [!div class="mx-imgBorder"]
+> ![Contoso routing table showing Global VNet peering entry 10.10.26.0/24.](../media/contosovm-routes-peering-annotated.png)
 
 The following routing table shows the routes known to Fabrikam. Again, the final entry is the Global VNet peering entry, this time to the Contoso 10.1.26.0/25 subnet.
 
-![Fabrikam routing table showing Global VNet peering entry 10.17.26.0/24.](../media/fabrikamvm-routes-peering-annotated.png)
+> [!div class="mx-imgBorder"]
+> ![Fabrikam routing table showing Global VNet peering entry 10.17.26.0/24.](../media/fabrikamvm-routes-peering-annotated.png)
 
 ## Configure VNet Peering
 
@@ -46,9 +50,11 @@ Here are the steps to configure VNet peering. Notice you will need two virtual n
 
 To configure the peering use the **Add peering** page. There are only a few optional configuration parameters to consider.
 
-![configure virtual network peering](../media/configure-vnet-peering.png)
+> [!div class="mx-imgBorder"]
+> ![configure virtual network peering](../media/configure-vnet-peering.png)
 
-> [!NOTE]  When you add a peering on one virtual network, the second virtual network configuration is automatically added.
+> [!NOTE]  
+> When you add a peering on one virtual network, the second virtual network configuration is automatically added.
 
 
 ## Gateway Transit and Connectivity
@@ -80,8 +86,8 @@ Azure virtual networks can be deployed in a hub-and-spoke topology, with the hub
 
 The following diagram shows a scenario in which hub VNet hosts a VPN gateway that manages traffic to the on-premises network, enabling controlled communication between the on-premises network and the peered Azure VNets.
 
-![Hub-and-spoke configuration - Contoso and Fabrikam peer to Hub VNet.
-Hub VNet contains NVA, VMs, and a VPN Gateway connected to on-premises network.](../media/service-chaining.png)
+> [!div class="mx-imgBorder"]
+> ![Hub-and-spoke configuration - Contoso and Fabrikam peer to Hub VNet. Hub VNet contains NVA, VMs, and a VPN Gateway connected to on-premises network.](../media/service-chaining.png)
 
 ## Check your knowledge
 

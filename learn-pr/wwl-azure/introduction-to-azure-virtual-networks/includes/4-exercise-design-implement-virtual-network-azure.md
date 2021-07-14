@@ -13,19 +13,15 @@ The **ManufacturingVnet** virtual network is deployed in the **North Europe** re
 
 The **ResearchVnet** virtual network is deployed in the **West India** region, near the location of the organization's research and development team. The research and development team uses this virtual network. The team has a small, stable set of resources that is not expected to grow. The team needs a small number of IP addresses for a few virtual machines for their work.
 
-![Network layout for Contoso. 
-On-premises 10.10.0.0/16
-ResearchVNet West India 10.40.40.0/24
-CoreServicesVNet West US 10.20.0.0/16
-ManufacturingVNet North Europe 10.30.0.0/16
-](../media/design-implement-vnet-peering.png)
+> [!div class="mx-imgBorder"]
+> ![Network layout for Contoso. On-premises 10.10.0.0/16. ResearchVNet West India 10.40.40.0/24. CoreServicesVNet West US 10.20.0.0/16. ManufacturingVNet North Europe 10.30.0.0/16](../media/design-implement-vnet-peering.png)
 
 
 You will create the following resources:
  
 
 | **Virtual Network** | **Region**   | **Virtual network address space** | **Subnet**                | **Subnet**    |
-| ------------------- | ------------ | --------------------------------- | ------------------------- | ------------- |
+|:-:|:-:|:-:|:-:|:-:|
 | CoreServicesVnet    | West US      | 10.20.0.0/16                      |                           |               |
 |                     |              |                                   | GatewaySubnet             | 10.20.0.0/27  |
 |                     |              |                                   | SharedServicesSubnet      | 10.20.10.0/24 |
@@ -55,18 +51,19 @@ In this exercise, you will:
 1. Go to [Azure portal](https://portal.azure.com/).
 
 2. On the home page, under **Azure services**, select **Resource groups**.  
-   ‎![Azure portal home page with Resource groups highlighted.](../media/azure-portal-home-page-annotated.png)
+   ‎> [!div class="mx-imgBorder"]
+   > ![Azure portal home page with Resource groups highlighted.](../media/azure-portal-home-page-annotated.png)
 
 3. In Resource groups, select **+ Create**.
 
 4. Use the information in the following table to create the resource group.
 
-| **Tab**         | **Option**                                 | **Value**            |
-| --------------- | ------------------------------------------ | -------------------- |
-| Basics          | Resource group                             | ContosoResourceGroup |
-|                 | Region                                     | (US) West US         |
-| Tags            | No changes required                        |                      |
-| Review + create | Review your settings and select **Create** |                      |
+    | **Tab**         | **Option**                                 | **Value**            |
+    |:-:|:-:|:-:|
+    | Basics          | Resource group                             | ContosoResourceGroup |
+    |                 | Region                                     | (US) West US         |
+    | Tags            | No changes required                        |                      |
+    | Review + create | Review your settings and select **Create** |                      |
 
 
 5. In Resource groups, verify that **ContosoResourceGroup** appears in the list.
@@ -77,35 +74,35 @@ In this exercise, you will:
 
 1. On the Azure portal home page, select **Create a resource**.
 2. In **Search services and marketplace**, enter virtual network.  
-   ‎![Azure portal Create a resource page with Search services and marketplace box highlighted.](../media/create-resource-search-virtual-network-annotated.png)
+   ‎> [!div class="mx-imgBorder"]
+   > ![Azure portal Create a resource page with Search services and marketplace box highlighted.](../media/create-resource-search-virtual-network-annotated.png)
 3. In Marketplace, in Virtual Network, select **Create &gt; Virtual network**.  
-   ‎![Virtual Network tile with Create Virtual network highlighted.](../media/virtual-network-service-annotated.png)
+   ‎> [!div class="mx-imgBorder"]
+   > ![Virtual Network tile with Create Virtual network highlighted.](../media/virtual-network-service-annotated.png)
 4. Use the information in the following table to create the CoreServicesVnet virtual network.  
    ‎Remove or overwrite the default IP Address space![ip address configuration for azure virtual network deployment ](../media/default-vnet-ip-address-range-annotated.png)
 
- 
-
-| **Tab**      | **Option**         | **Value**            |
-| ------------ | ------------------ | -------------------- |
-| Basics       | Resource Group     | ContosoResourceGroup |
-|              | Name               | CoreServicesVnet     |
-|              | Region             | (US) West US         |
-| IP Addresses | IPv4 address space | 10.20.0.0/16         |
+    | **Tab**      | **Option**         | **Value**            |
+    |:-:|:-:|:-:|
+    | Basics       | Resource Group     | ContosoResourceGroup |
+    |              | Name               | CoreServicesVnet     |
+    |              | Region             | (US) West US         |
+    | IP Addresses | IPv4 address space | 10.20.0.0/16         |
 
  5. Use the information in the following table to create the CoreServicesVnet subnets.
 
  6. To begin creating each subnet, select **+ Add subnet**. To finish creating each subnet, select **Add**.
 
-| **Subnet**             | **Option**           | **Value**              |
-| ---------------------- | -------------------- | ---------------------- |
-| GatewaySubnet          | Subnet name          | GatewaySubnet          |
-|                        | Subnet address range | 10.20.0.0/27           |
-| SharedServicesSubnet   | Subnet name          | SharedServicesSubnet   |
-|                        | Subnet address range | 10.20.10.0/24          |
-| DatabaseSubnet         | Subnet name          | DatabaseSubnet         |
-|                        | Subnet address range | 10.20.20.0/24          |
-| PublicWebServiceSubnet | Subnet name          | PublicWebServiceSubnet |
-|                        | Subnet address range | 10.20.30.0/24          |
+    | **Subnet**             | **Option**           | **Value**              |
+    |:-:|:-:|:-:|
+    | GatewaySubnet          | Subnet name          | GatewaySubnet          |
+    |                        | Subnet address range | 10.20.0.0/27           |
+    | SharedServicesSubnet   | Subnet name          | SharedServicesSubnet   |
+    |                        | Subnet address range | 10.20.10.0/24          |
+    | DatabaseSubnet         | Subnet name          | DatabaseSubnet         |
+    |                        | Subnet address range | 10.20.20.0/24          |
+    | PublicWebServiceSubnet | Subnet name          | PublicWebServiceSubnet |
+    |                        | Subnet address range | 10.20.30.0/24          |
 
  7. To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**.
 
@@ -117,7 +114,7 @@ In this exercise, you will:
 
 
 | **Tab**      | **Option**         | **Value**             |
-| ------------ | ------------------ | --------------------- |
+|:-:|:-:|:-:|
 | Basics       | Resource Group     | ContosoResourceGroup  |
 |              | Name               | ManufacturingVnet     |
 |              | Region             | (Europe) North Europe |
@@ -126,7 +123,7 @@ In this exercise, you will:
 
 
 | **Subnet**                | **Option**           | **Value**                 |
-| ------------------------- | -------------------- | ------------------------- |
+|:-:|:-:|:-:|
 | ManufacturingSystemSubnet | Subnet name          | ManufacturingSystemSubnet |
 |                           | Subnet address range | 10.30.10.0/24             |
 | SensorSubnet1             | Subnet name          | SensorSubnet1             |
@@ -141,14 +138,14 @@ In this exercise, you will:
 
 
 | **Tab**      | **Option**         | **Value**            |
-| ------------ | ------------------ | -------------------- |
+|:-:|:-:|:-:|
 | Basics       | Resource Group     | ContosoResourceGroup |
 |              | Name               | ResearchVnet         |
 |              | Region             | West India           |
 | IP Addresses | IPv4 address space | 10.40.0.0/16         |
 
 | **Subnet**           | **Option**           | **Value**            |
-| -------------------- | -------------------- | -------------------- |
+|:-:|:-:|:-:|
 | ResearchSystemSubnet | Subnet name          | ResearchSystemSubnet |
 |                      | Subnet address range | 10.40.0.0/24         |
  
@@ -157,11 +154,13 @@ In this exercise, you will:
 
 1. On the Azure portal home page, select **All resources**.
 
-   ![Azure portal home page with All resources highlighted.](../media/azure-portal-home-page-all-resources-annotated.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure portal home page with All resources highlighted.](../media/azure-portal-home-page-all-resources-annotated.png)
 
 2. Verify that the CoreServicesVnet, ManufacturingVnet, and ResearchVnet are listed. Your list should look like this:
 
-   ![All resources list with CoreServicesVnet, ManufacturingVnet, and ResearchVnet highlighted.](../media/all-resources-list-annotated.png)
+    > [!div class="mx-imgBorder"]
+    > ![All resources list with CoreServicesVnet, ManufacturingVnet, and ResearchVnet highlighted.](../media/all-resources-list-annotated.png)
 
 3. Note that Azure creates NetworkWatchers for each region that you use.
 
@@ -171,7 +170,8 @@ In this exercise, you will:
 
 6. In CoreServicesVnet | Subnets, verify that the subnets you created are listed, and that the IP address ranges are correct.
 
-   ![List of subnets in CoreServicesVnet.](../media/verify-subnets-annotated.png)
+    > [!div class="mx-imgBorder"]
+    > ![List of subnets in CoreServicesVnet.](../media/verify-subnets-annotated.png)
 
 7. Repeat steps 4 -6 for each VNet.
 
