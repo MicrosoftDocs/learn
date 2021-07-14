@@ -38,29 +38,35 @@ To create a Network Watcher in the Azure portal:
 
 Navigate to **All services&gt; Networking&gt;Network Watcher**.
 
-![Opening Network Watcher from the Azure portal home page](../media/network-watcher-enable-0.png)
+> [!div class="mx-imgBorder"]
+> ![Opening Network Watcher from the Azure portal home page](../media/network-watcher-enable-0.png)
 
 Right-click your subscription and choose **Enable network watcher in all regions**.
 
-![Network Watcher - Overview page - enable network watcher highlighted](../media/network-watcher-enable-1.png)
+> [!div class="mx-imgBorder"]
+> ![Network Watcher - Overview page - enable network watcher highlighted](../media/network-watcher-enable-1.png)
 
 Note that the status is now showing as **Enabled**.
 
-![Network Watcher - Overview page - showing network watcher enabled](../media/network-watcher-enable-2.png)
+> [!div class="mx-imgBorder"]
+> ![Network Watcher - Overview page - showing network watcher enabled](../media/network-watcher-enable-2.png)
 
 If you expand the regions, you will see that all regions within this subscription are enabled.
 
-![Network Watcher - Overview page - showing network watcher enabled on all regions](../media/network-watcher-enable-3.png)
+> [!div class="mx-imgBorder"]
+> ![Network Watcher - Overview page - showing network watcher enabled on all regions](../media/network-watcher-enable-3.png)
 
 When you enable Network Watcher using the portal, the name of the Network Watcher instance is automatically set to NetworkWatcher_region_name where region_name corresponds to the Azure region where the instance is enabled. For example, a Network Watcher enabled in the West US region is named **NetworkWatcher_westus**.
 
 The Network Watcher instance is automatically created in a resource group named **NetworkWatcherRG**. The resource group is created if it does not already exist.
 
-![Resource Groups list- Network Watcher resource group highlighted](../media/network-watcher-enable-4.png)
+> [!div class="mx-imgBorder"]
+> ![Resource Groups list- Network Watcher resource group highlighted](../media/network-watcher-enable-4.png)
 
 To disable a Network Watcher for a region in the Azure portal, expand the regions section, right click the name of the region you wish to disable the Network Watcher on, and click **Disable network watcher**.
 
-![Network Watcher - Overview page - Disable network watcher highlighted](../media/network-watcher-enable-5.png)
+> [!div class="mx-imgBorder"]
+> ![Network Watcher - Overview page - Disable network watcher highlighted](../media/network-watcher-enable-5.png)
 
  
 
@@ -96,7 +102,8 @@ To configure the parameters of NSG flow logs in the Azure portal, navigate to th
 
 Click the name of the NSG to bring up the **Settings** pane for the Flow log. 
 
-![Network Watcher - Flow logs settings page](../media/nsg-flowlogs-1.png)
+> [!div class="mx-imgBorder"]
+> ![Network Watcher - Flow logs settings page](../media/nsg-flowlogs-1.png)
 
 Change the parameters you want and click **Save** to deploy the changes.
 
@@ -106,7 +113,8 @@ Change the parameters you want and click **Save** to deploy the changes.
 
 Connection Monitor provides unified end-to-end connection monitoring in Azure Network Watcher. The Connection Monitor feature supports hybrid and Azure cloud deployments. Network Watcher provides tools to monitor, diagnose, and view connectivity-related metrics for your Azure deployments.
 
-![Diagram illustrating a high-level view of Connection Monitor](../media/connection-monitor-overview-1.png)
+> [!div class="mx-imgBorder"]
+> ![Diagram illustrating a high-level view of Connection Monitor](../media/connection-monitor-overview-1.png)
 
 Here are some use cases for Connection Monitor:
 
@@ -162,7 +170,8 @@ Connection Monitor includes the following entities:
 
 - **Test** – The combination of a source endpoint, destination endpoint, and test configuration. A test is the most granular level at which monitoring data is available. The monitoring data includes the percentage of checks that failed and the round-trip time (RTT).
 
-  ![Diagram illustrating the key components of Connection Monitor](../media/create-connection-monitor-0.png)
+  > [!div class="mx-imgBorder"]
+  > ![Diagram illustrating the key components of Connection Monitor](../media/create-connection-monitor-0.png)
 
 You can create a connection monitor using Azure portal, ARMClient or PowerShell.
 
@@ -170,33 +179,38 @@ To create a monitor in **Connection Monitor** by using the **Azure portal**:
 
 On the Azure portal home page, go to **Network Watcher**.
 
-![Opening Network Watcher from the Azure portal home page using the Network Watcher tile](../media/create-connection-monitor-1.png)
+> [!div class="mx-imgBorder"]
+> ![Opening Network Watcher from the Azure portal home page using the Network Watcher tile](../media/create-connection-monitor-1.png)
 
 In the left pane, under **Monitoring**, select **Connection monitor**, and then click **Create**.
 
-![Network Watcher>Create Connection Monitor](../media/create-connection-monitor-2.png)
+> [!div class="mx-imgBorder"]
+> ![Network Watcher>Create Connection Monitor](../media/create-connection-monitor-2.png)
 
 On the **Basics** tab of the **Create Connection Monitor** page, you need to enter the following information for your new connection monitor:
 
 | **Field**               | **Information**                                              |
-| -- |  |
+|:-:|:-:|
 | Connection Monitor Name | Enter a name for your connection monitor. Use the standard naming rules for Azure resources. |
 | Subscription            | Select your Azure subscription from the list.                |
 | Region                  | Select a region for your connection monitor. You can select only the source VMs that are created in this region. |
 | Workspace configuration | Choose a custom workspace or the default workspace. Your workspace holds your monitoring data.<br /><br />To use the default workspace, select the check box.<br /><br />To choose a custom workspace, clear the check box. Then select the subscription and region for your custom workspace. |
 
 
-![Create Connection Monitor - Basics tab](../media/create-connection-monitor-3.png)
+> [!div class="mx-imgBorder"]
+> ![Create Connection Monitor - Basics tab](../media/create-connection-monitor-3.png)
 
 Click **Next: Test groups &gt;&gt;**.
 
 On the next page, you can add sources, test configurations, and destinations in your test groups. Each test group in a connection monitor includes sources and destinations that get tested on network parameters. They are tested for the percentage of checks that fail and the round-trip-time (RTT) over test configurations.
 
-![Create Connection Monitor - Test groups tab - Add test group](../media/create-connection-monitor-4.png)
+> [!div class="mx-imgBorder"]
+> ![Create Connection Monitor - Test groups tab - Add test group](../media/create-connection-monitor-4.png)
 
 Click **Add Test Group**.
 
-![Create Connection Monitor - Test groups tab - New test group listed](../media/create-connection-monitor-5.png)
+> [!div class="mx-imgBorder"]
+> ![Create Connection Monitor - Test groups tab - New test group listed](../media/create-connection-monitor-5.png)
 
 Click **Next: Create Alerts &gt;&gt;**.
 
@@ -213,11 +227,13 @@ You need to enter the following information for your alert:
 
 
 
-![Create Connection Monitor - Create Alerts tab](../media/create-connection-monitor-6.png)
+> [!div class="mx-imgBorder"]
+> ![Create Connection Monitor - Create Alerts tab](../media/create-connection-monitor-6.png)
 
 Click **Next: Review + create &gt;&gt;**.
 
-![Create Connection Monitor - Review + create tab](../media/create-connection-monitor-7.png)
+> [!div class="mx-imgBorder"]
+> ![Create Connection Monitor - Review + create tab](../media/create-connection-monitor-7.png)
 
 Review your information, and then click **Create**.
 
@@ -263,4 +279,5 @@ To view Traffic Analytics, search for **Network Watcher** in the portal search b
 
 The example screenshot below shows the Traffic Analytics dashboard.
 
-![Network Watcher - Traffic Analytics dashboard](../media/traffic-analytics-dashboard.png)
+> [!div class="mx-imgBorder"]
+> ![Network Watcher - Traffic Analytics dashboard](../media/traffic-analytics-dashboard.png)
