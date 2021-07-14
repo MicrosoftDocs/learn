@@ -34,7 +34,7 @@ In this section, you will create a virtual network and a subnet.
 4. On the **Basics** tab, use the information in the table below to create the virtual network.
 
    | **Setting**    | **Value**                                  |
-   | -------------- | ------------------------------------------ |
+   |:-:|:-:|
    | Subscription   | Select your subscription                   |
    | Resource group | Select **Create  new**  Name: **IntLB-RG** |
    | Name           | **IntLB-VNet**                             |
@@ -56,7 +56,7 @@ In this section, you will create a virtual network and a subnet.
 11. Under **BastionHost** select **Enable**, then enter the information from the table below.
 
     | **Setting**                       | **Value**                                     |
-    | --------------------------------- | --------------------------------------------- |
+    |:-:|:-:|
     | Bastion name                      | **myBastionHost**                             |
     | AzureBastionSubnet address  space | **10.1.1.0/24**                               |
     | Public IP address                 | Select **Create  new**  Name: **myBastionIP** |
@@ -73,17 +73,19 @@ In this section, you will create an internal Standard SKU load balancer. The rea
 1. On the Azure portal home page, click **Create a resource**.
 
 2. In the search box at the top of the page, type **Load Balancer**, then press **Enter** 
-> [!NOTE]  do not select one from the list
+   
+   > [!NOTE]  
+   > do not select one from the list
 
 3. Scroll down to the bottom of the page and select **Load Balancer** (the one that says 'Microsoft' and 'Azure Service' under the name).
 
 4. Click **Create**.
-![create a load balancer](../media/create-load-balancer-4.png)
+    ![create a load balancer](../media/create-load-balancer-4.png)
 
 5. On the **Basics** tab, use the information in the table below to create the load balancer.
 
    | **Setting**           | **Value**                |
-   | --------------------- | ------------------------ |
+   |:-:|:-:|
    | Subscription          | Select your subscription |
    | Resource group        | **IntLB-RG**             |
    | Name                  | **myIntLoadBalancer**    |
@@ -114,14 +116,14 @@ The backend address pool contains the IP addresses of the virtual NICs connected
 3. On the **Add backend pool** page, enter the information from the table below.
 
    | **Setting**     | **Value**            |
-   | --------------- | -------------------- |
+   |:-:|:-:|
    | Name            | **myBackendPool**    |
    | Virtual network | **IntLB-VNet**       |
    | Associated to   | **Virtual machines** |
 
 
 4. Click **Add**.
-![create a backend pool](../media/create-backendpool.png)
+    ![create a backend pool](../media/create-backendpool.png)
 
  
 
@@ -134,7 +136,7 @@ The load balancer monitors the status of your app with a health probe. The healt
 2. On the **Add health probe** page, enter the information from the table below.
 
    | **Setting**         | **Value**         |
-   | ------------------- | ----------------- |
+   |:-:|:-:|
    | Name                | **myHealthProbe** |
    | Protocol            | **HTTP**          |
    | Port                | **80**            |
@@ -144,7 +146,7 @@ The load balancer monitors the status of your app with a health probe. The healt
 
 
 3. Click **Add**.
-![create a health probe](../media/create-healthprobe.png)
+    ![create a health probe](../media/create-healthprobe.png)
 
  
 
@@ -157,7 +159,7 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
 2. On the **Add load balancing rule** page, enter the information from the table below.
 
    | **Setting**            | **Value**                |
-   | ---------------------- | ------------------------ |
+   |:-:|:-:|
    | Name                   | **myHTTPRule**           |
    | IP Version             | **IPv4**                 |
    | Frontend IP address    | **LoadBalancerFrontEnd** |
@@ -172,7 +174,7 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
 
 
 3. Click **Add**.
-![create a load balancer rule](../media/create-loadbalancer-rule.png)
+    ![create a load balancer rule](../media/create-loadbalancer-rule.png)
 
  
 
@@ -183,7 +185,7 @@ In this section, you will create three VMs, that will be in the same availabilit
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
 2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files azuredeploy.json, azuredeploy.parameters.vm1.json, azuredeploy.parameters.vm2.json and azuredeploy.parameters.vm3.json into the Cloud Shell home directory.
-[Azure Resource Manager Templates for this task](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M04)
+    [Azure Resource Manager Templates for this task](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M04)
 
 3. Deploy the following Azure Resource Manager templates to create the virtual network, subnets, and VMs needed for this exercise:
 
@@ -208,7 +210,7 @@ In this section, you will create three VMs, that will be in the same availabilit
 5. Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**), then click **Add**.
 
 6. On the **myBackendPool** page, click **Save**.
-![add vms to backend pool](../media/add-vms-backendpool.png)
+    ![add vms to backend pool](../media/add-vms-backendpool.png)
 
  
 
@@ -225,7 +227,7 @@ In this section, you will create a test VM, and then test the load balancer.
 2. On the **Create a virtual machine** page, on the **Basics** tab, use the information in the table below to create the first VM.
 
    | **Setting**          | **Value**                                    |
-   | -------------------- | -------------------------------------------- |
+   |:-:|:-:|
    | Subscription         | Select your subscription                     |
    | Resource group       | **IntLB-RG**                                 |
    | Virtual machine name | **myTestVM**                                 |
@@ -243,7 +245,7 @@ In this section, you will create a test VM, and then test the load balancer.
 4. On the **Networking** tab, use the information in the table below to configure networking settings.
 
    | **Setting**                                                  | **Value**                     |
-   | ------------------------------------------------------------ | ----------------------------- |
+   |:-:|:-:|
    | Virtual network                                              | **IntLB-VNet**                |
    | Subnet                                                       | **myBackendSubnet**           |
    | Public IP                                                    | Change to **None**            |
@@ -283,14 +285,15 @@ In this section, you will create a test VM, and then test the load balancer.
 11. Enter (or paste) the **Private IP address** (e.g. 10.1.0.4) from the previous step into the address bar of the browser and press Enter.
 
 12. The default web home page of the IIS Web server is displayed in the browser window. One of the three virtual machines in the backend pool will respond.
-![webpage showing myVM1](../media/load-balancer-web-test-1.png)
+    ![webpage showing myVM1](../media/load-balancer-web-test-1.png)
 
 13. If you click the refresh button in the browser a few times, you will see that the response comes randomly from the different VMs in the backend pool of the internal load balancer.
-![webpage showing myVM3](../media/load-balancer-web-test-2.png)
+    ![webpage showing myVM3](../media/load-balancer-web-test-2.png)
 
 ## Clean up resources
 
-   > [!NOTE]  Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+   > [!NOTE]  
+   > Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
@@ -300,4 +303,5 @@ In this section, you will create a test VM, and then test the load balancer.
    Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
    ```
 
-    > [!NOTE]  The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+    > [!NOTE]  
+    > The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
