@@ -2,7 +2,7 @@
 
 Azure Administrators use the Log Analytics tool to run log queries on data in Azure Monitor Logs.
 
-You should now be ablet to: In this module, you learned about Log Analytics including:
+You should now be able to: In this module, you learned about Log Analytics including:
 
  -  Identify the features and usage cases for Log Analytics.
  -  Create a Log Analytics workspace and configure connected and data sources.
