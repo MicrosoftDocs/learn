@@ -3,14 +3,15 @@ uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines
 metadata:
   moduleType: standard
   title: Build your first Bicep deployment pipeline by using Azure Pipelines
-  description: TODO
+  description: Build a basic deployment pipeline for Bicep infrastructure as code templates by using Azure DevOps and Azure Pipelines. Learn how to use service connections to authenticate your deployment pipeline to Azure. Add triggers to configure the Bicep deployment pipeline to run whenever your main branch is updated.
   ms.date: 07/05/2021
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build your first Bicep deployment pipeline by using Azure Pipelines
-summary: TODO
+summary: |
+  Build a basic deployment pipeline for Bicep code. Use a service connection to securely identify your pipeline to Azure. Configure when the pipeline runs by using triggers.
 abstract: |
   After completing this module, you'll be able to:
     - Automate Bicep deployments by using a pipeline in Azure Pipelines
@@ -18,13 +19,17 @@ abstract: |
     - Select an appropriate pipeline trigger and set of tasks for a Bicep deployment
 prerequisites: |
   You should be familiar with:
-  - Deploying basic Bicep templates.
-  - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
-  To follow along with the exercises in the module, you'll need the following:
-  - An Azure subscription and resource group.
-  - [Visual Studio Code](https://code.visualstudio.com), installed locally.
-  - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed.
+  - Creating and deploying basic Bicep files.
+  - Azure, including the Azure portal, subscriptions, resource groups, and resources.
+  - Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
+  
+  To follow along with the exercises in the module, you'll need the following installed locally:
+  
+  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
+  - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
+  - The [Azure Pipelines extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines&azure-portal=true).
+  - [Git](https://git-scm.com/download?azure-portal=true)
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - intermediate

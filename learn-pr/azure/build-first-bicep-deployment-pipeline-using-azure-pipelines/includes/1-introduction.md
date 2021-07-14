@@ -1,5 +1,4 @@
-By automating Bicep deployments through Azure pipelines you can create a flexible and reusable process for propagating your Infrastructure as Code changes to your Azure environment. Your pipeline will enforce the process that is needed when a Bicep template needs to be deployed to Azure. It will also make sure this same process is used by all people collaborating on your Bicep templates. In this module, you'll learn how to define and configure an Azure DevOps pipeline, and how you can give it access to a specific resource group in Azure to deploy your Bicep templates. 
-
+By automating Bicep deployments through Azure Pipelines, you can create a flexible and reusable process for propagating your changes to your Azure environment. Your pipeline will enforce the process you specify to ensure the quality of your deployments and environment. A deployment pipeline also ensures the same process is used by everyone who collaborates on your Bicep files. In this module, you'll learn how to define an Azure DevOps pipeline, and how to deploy your Bicep code by using the pipeline.
 
 ## Example scenario
 
@@ -9,26 +8,23 @@ You also want to enable your colleagues to make changes to the Bicep templates a
 
 ## What will you be doing?
 
-In this module, you'll learn how you can automate the deployment of Bicep templates with Azure DevOps. You'll understand the purpose of Azure DevOps as part of the automation process. You'll find answers to these questions: 
-
-- How can pipelines help in automating deployments to Azure.
-- How can pipelines be build by using different types of task steps. 
-- How can we securely give an Azure DevOps pipeline task access to a resource group in Azure.
-- How can we automatically trigger deployment when there are changes to a Bicep file.
-
+In this module, you'll learn how you can automate the deployment of Bicep templates with Azure Pipelines. You'll understand the benefits of using pipelines to deploy your code, and you'll learn how to build a basic pipeline that deploys a Bicep file. Along the way, you'll learn how to securely give your pipeline the necessary authorization to deploy to an Azure resource group, and how to configure when the pipeline runs.
 
 ## What is the main goal?
 
-After completing this module, you'll be able to create a first pipeline in Azure DevOps that deploys a basic Bicep template to an Azure resource group.
+After completing this module, you'll be able to create a pipeline in Azure Pipelines that deploys a basic Bicep file to an Azure resource group.
 
 ## Prerequisites
 
-You should have:
+You should be familiar with:
 
-  - Familiarity with basic Bicep template deployments.
-  - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resources.
+- Creating and deploying basic Bicep files.
+- Azure, including the Azure portal, subscriptions, resource groups, and resources.
+- Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
 
-To follow along with the exercises in the module, you'll need:
+To follow along with the exercises in the module, you'll need the following installed locally:
 
-- [Visual Studio Code](https://code.visualstudio.com) installed locally.
-- The [Azure Pipelines extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines) installed
+- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
+- The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
+- The [Azure Pipelines extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines&azure-portal=true).
+- [Git](https://git-scm.com/download?azure-portal=true)
