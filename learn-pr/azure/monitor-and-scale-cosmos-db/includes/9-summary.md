@@ -18,7 +18,7 @@ It's important that you clean up any unused collections. You're charged for the 
 
 1. Select **Delete Database**. The **Delete Database** pane appears.
 
-1. Enter the name of the database id that you want to delete.
+1. Enter the name of the database ID that you want to delete.
 
 If you want to delete each collection individually, select the ellipsis (**...**) next to the collection and select **Delete**.
 
