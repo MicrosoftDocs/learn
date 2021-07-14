@@ -13,5 +13,5 @@ You should now be able to:
 
 You can learn more by reviewing the following.
 
- -  [Virtual network traffic routing documenation](/azure/virtual-network/virtual-networks-udr-overview)
+ -  [Virtual network traffic routing documentation](/azure/virtual-network/virtual-networks-udr-overview)
  -  [Learn - Manage and control traffic flow in your Azure deployment with routes](/learn/modules/control-network-traffic-flow-with-routes/)

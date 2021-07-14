@@ -3,7 +3,7 @@ Let’s review a specific network routing example. In this example, you have a v
  -  The subnets are Private, DMZ, and Public. In the DMZ subnet, there is a network virtual appliance (NVA). NVAs are VMs that help with network functions like routing and firewall optimization.
  -  You want to ensure all traffic from the Public subnet goes through the NVA to the Private subnet.
 
-:::image type="content" source="../media/AZ104_Routing_Example-0310ef85.png":::
+:::image type="content" source="../media/AZ104_Routing_Example-0310ef85.png" alt-text="A public subnet uses a routing table to access the private subnet.":::
 
 
 ## Create a Routing Table
