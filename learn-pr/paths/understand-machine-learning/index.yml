@@ -17,16 +17,16 @@ summary: |
 
   Choose your own path depending on your educational background and interests.
   
-  ## Option 1: The complete data science for classic machine learning course 
-  This is the generally recommended option. It has all the same content as the other two learning paths with a custom flow that maximizes reinforcement of concepts. If you want to learn about both the underlying concepts as well as how to get into building models with the most common machine learning tools this is the path for you. It's also the best path if you plan to move beyond classic machine learning, and get an education in deep learning and neural networks, which we only introduce here.
+  ### Option 1: The complete data science for classic machine learning course 
+  This is the recommended option for most people. It has all the same modules as the other two learning paths with a custom flow that maximizes reinforcement of concepts. If you want to learn about both the underlying concepts as well as how to get into building models with the most common machine learning tools this is the path for you. It's also the best path if you plan to move beyond classic machine learning, and get an education in deep learning and neural networks, which we only introduce here.
 
-  ## Option 2: ✔ The _Understand_ Learning Path
-  If you are looking to understand how machine learning works and have little mathematical background this is the path for you. It makes no assumptions about previous education (other than a very light familiarity with coding concepts) and teaches with code, metaphor and visual that give you the ah ha moment. It's completely hands-on, but focuses more on understanding fundamentals and less on the power of the tools and libraries available.
+  ### Option 2: The _Understand data science for machine learning_ learning path
+  If you are looking to understand how machine learning works and have little mathematical background then this path is for you. It makes no assumptions about previous education (other than a very light familiarity with coding concepts) and teaches with code, metaphor, and visual that give you the ah ha moment. It's hands-on, but focuses more on understanding fundamentals and less on the power of the tools and libraries available.
 
-  This is the path your are currently on, scroll down to begin.
+  ✔ You are currently on this path, scroll down to begin.
 
-  ## Option 3: The _Create_ Learn Path
-  If you already have some idea what machine learning is about or you have a strong mathematical background you may best enjoy jumping right in to the _Create Machine Learning Models_ Learning Path. This teaches some machine learning concepts, but it moves fast so it can get to the power of using tools like scikit-learn, TensorFlow, and PyTorch. This is also the best learning path for you if your looking for just enough familiarity to understand machine learning examples for products like Azure ML or Azure Databricks
+  ### Option 3: The _Create machine learning models_ learning path
+  If you already have some idea what machine learning is about or you have a strong mathematical background you may best enjoy jumping right in to the _Create Machine Learning Models_ learning path. These modules teach some machine learning concepts, but move fast so they can get to the power of using tools like scikit-learn, TensorFlow, and PyTorch. This is also the best learning path for you if your looking for just enough familiarity to understand machine learning examples for products like Azure ML or Azure Databricks
 
 prerequisites: None
 iconUrl: /learn/achievements/machine-learning-essentials.svg
