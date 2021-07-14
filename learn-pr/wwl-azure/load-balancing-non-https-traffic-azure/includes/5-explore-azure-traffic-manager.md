@@ -225,7 +225,7 @@ From the Azure portal home page, select **All resources**, then select the Traff
 On the Traffic manager profile page, under **Settings**, select **Endpoints**, then click **Add**.
 
 > [!div class="mx-imgBorder"]
-> ![Traffic Manager profile - Endpoints - Add](E:/July 21/01-07/Mod 04/Converted_Output/media/add-traffic-manager-endpoints-2.png)
+> ![Traffic Manager profile - Endpoints - Add](../media/add-traffic-manager-endpoints-2.png)
 
 You then enter the required information on the **Add endpoint** page.
 

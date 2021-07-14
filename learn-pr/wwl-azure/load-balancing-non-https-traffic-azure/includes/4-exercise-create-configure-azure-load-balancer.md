@@ -180,7 +180,7 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
 
 3. Click **Add**.
     > [!div class="mx-imgBorder"]
-    > ![create a load balancer rule](../media/create-loadbalancerrule.png)
+    > ![create a load balancer rule](../media/create-loadbalancer-rule.png)
 
  
 
