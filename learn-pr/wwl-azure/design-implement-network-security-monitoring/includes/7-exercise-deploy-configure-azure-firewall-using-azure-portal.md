@@ -303,8 +303,8 @@ In this task, you will add a network rule that allows outbound access to two IP 
    | Destination            | **209.244.0.3, 209.244.0.4**<br />These are public DNS servers operated by Century Link |
 
 
-   ​	> [!div class="mx-imgBorder"]
-     >![Add a network rule collection](../media/add-network-rule-for-firewall.png)
+    > [!div class="mx-imgBorder"]
+    > ![Add a network rule collection](../media/add-network-rule-for-firewall.png)
 
 4. Click **Add**.
 
