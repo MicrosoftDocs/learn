@@ -26,14 +26,17 @@ quiz:
     - content: "Create the recovery services vault."
       isCorrect: true
       explanation: "That's correct. First, create a recovery services vault."
-  - content: "Does Azure Backup require a dedicated backup server?"
+  - content: "Azure Backup requirea ..."
     choices:
-    - content: "Yes"
+    - content: "a dedicated backup server."
       isCorrect: false
-      explanation: "That's incorrect. Azure Backup does not require a dedicated backup server. Instead, a recovery services vault is used."
-    - content: "No"
+      explanation: "That's incorrect. Azure Backup does not require a dedicated backup server."
+    - content: "a recovery service vault."
       isCorrect: true
-      explanation: "That's correct. Azure Backup does not require a dedicated backup server. Instead, a recovery services vault is used."
+      explanation: "That's correct. Azure Backup requires a recovery services vault."
+    - content: "an Azure blob storage container."
+      isCorrect: false
+      explanation: "That's incorrect. Azure Backup does not require a blob storage container."
   - content: "The infrastructure manager wants to know more about Azure Backup. The discussion includes all of the following information, except:"
     choices:
     - content: "Azure Backup doesn't provide data encryption."
