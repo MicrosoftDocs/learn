@@ -5,7 +5,7 @@ Azure Network Watcher provides the tools you need to monitor, troubleshoot, and 
 You should now be able to:
 
  -  Identify the features and usage cases for Azure Network Watcher.
- -  Configure diagnostic capabilties like IP Flow Verify, Next Hop, and Effective Security Rules.
+ -  Configure diagnostic capabilities like IP Flow Verify, Next Hop, and Effective Security Rules.
 
 ## Learn more
 
