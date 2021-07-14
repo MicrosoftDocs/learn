@@ -2,5 +2,5 @@
 
  -  The Recovery Services vault can be used to backup Azure machines.<br>:::image type="content" source="../media/AZ104_RSV_VM_Backup1-cdc875c3.png" alt-text="Screenshot of the ASV page. Azure and virtual machines are selected.":::
     
- -  The Recovery Services vault can be used to backup on-premises virtual machines including: Hyper-V, VMware, System State, and Bare Metal Recovery. :::image type="content" source="../media/AZ104_RSV_VM_Backup2-6f96a487.png" alt-text="Screenshot of the ASV page. On-premises and virtual machines are selected.":::
+ -  The Recovery Services vault can be used to backup on-premises virtual machines including: Hyper-V, VMware, System State, and Bare Metal Recovery.<br><br>:::image type="content" source="../media/AZ104_RSV_VM_Backup2-6f96a487.png" alt-text="Screenshot of the backup page.":::
     
