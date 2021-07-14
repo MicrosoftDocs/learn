@@ -26,7 +26,7 @@ An activity occurs within the context of a *turn*, which represents a single two
 
 ### More Information
 
-For more information about activity handlers, see the [Bot Framework SDK documentation](https://docs.microsoft.com/azure/bot-service/bot-activity-handler-concept).
+For more information about activity handlers, see the [Bot Framework SDK documentation](/azure/bot-service/bot-activity-handler-concept).
 
 ## Dialogs
 
@@ -51,4 +51,4 @@ For example, the pizza ordering bot might start with a root dialog that simply w
 ![An adaptive dialog for ordering a pizza](../media/adaptive-dialog.png)
 
 > [!NOTE]
-> Using dialogs offers greater flexibility than is possible with a bot based purely on activity handlers, but can be more complex to program. While you can use the Bot Framework SDK to implement dialogs in code, you may want to consider using the [Bot Framework Composer](https://docs.microsoft.com/composer/) to build bots with complex dialogs, taking advantage of its visual design interface.
+> Using dialogs offers greater flexibility than is possible with a bot based purely on activity handlers, but can be more complex to program. While you can use the Bot Framework SDK to implement dialogs in code, you may want to consider using the [Bot Framework Composer](/composer/) to build bots with complex dialogs, taking advantage of its visual design interface.

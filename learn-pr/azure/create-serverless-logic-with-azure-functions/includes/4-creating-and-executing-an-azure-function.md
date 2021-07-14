@@ -25,7 +25,7 @@ Bindings are a declarative way to connect data and services to your function. Bi
 
 A trigger is a special type of input binding that has the additional capability of initiating execution.
 
-Azure provides a [large number of bindings](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings#supported-bindings) to connect to different storage and messaging services.
+Azure provides a [large number of bindings](/azure/azure-functions/functions-triggers-bindings#supported-bindings) to connect to different storage and messaging services.
 
 ### Define a sample binding
 
@@ -56,7 +56,7 @@ The following snippet is the _function.json_ file for this scenario.
 
 Our JSON configuration specifies that our function will be triggered when a message is added to a queue named **myqueue-items**. The return value of our function is then written to the **outTable** table in Azure Table storage. For PowerShell functions, output bindings are explicitly written to with the `Push-OutputBinding` cmdlet.
 
-This example is a simple illustration about how we configure bindings for a function. We could change the output to be an email using a SendGrid binding, or put an event onto a Service Bus to notify some other component in our architecture, or even have multiple output bindings to push data to various services.
+This example is a simple illustration of how we configure bindings for a function. We could change the output to be an email using a SendGrid binding, or put an event onto a Service Bus to notify some other component in our architecture, or even have multiple output bindings to push data to various services.
 
 > [!TIP]
 > To view and edit the contents of _function.json_ in the Azure portal, in the left menu pane of your function, under **Developer**, select **Code + Test**. In the function's path above the code box, select *function.json* from the dropdown list.
@@ -84,20 +84,20 @@ The functions you create in a function app appear by selecting **Functions** und
 
 When you select a function in your function app, your function pane appears. To display and edit your code for your function, in the left menu pane, under **Developer**, select **Code + Test**. In the function's path above the code box, select *function.json* from the dropdown list, and then select **Test/Run** from the top menu bar for the Input/Output pane to appear. See the following screenshot.
 
-![Screenshot of the Azure portal showing the function editor pane, including the expanded Test/Run menu, with the selected "HttpTrigger1" function in our app service navigation and the Input tab highlighted.](../media/4-file-navigation.png)
+:::image type="content" source="../media/4-file-navigation.png" alt-text="Screenshot of the function editor pane showing the expanded Test/Run menu, with HttpTrigger1 function selected in app service navigation and Input tab highlighted." lightbox="../media/4-file-navigation.png":::
 
-As you can see, there's a pane on the right that includes tabs for **Input** and **Output**. Selecting the **Input** tab provides parameters to test the HTTP request for your function.
+As you can see, the pane on the right has tabs for **Input** and **Output**. Selecting the **Input** tab provides parameters to test the HTTP request for your function.
 
 ## Test your Azure function
 
-After you've created a function, you'll want to test it. There are a couple of approaches:
+After you've created a function, you'll want to test it. There are two approaches:
 
 - Manual execution
 - Testing from within the Azure portal itself
 
 ### Manual execution
 
-You can start a function by manually triggering the configured trigger. For instance, if you are using an HTTP trigger, you can use a tool, such as Postman or cURL, to initiate an HTTP request to your function endpoint URL, which is available from the HTTP trigger definition (**Get function URL**).
+You can start a function by manually triggering the configured trigger. For instance, if you are using an HTTP trigger, you can use a tool, such as Postman or cURL, to initiate an HTTP request to your function endpoint URL, which is available from the function definition (**Get function URL**).
 
 ### Test in the Azure portal
 
@@ -107,7 +107,7 @@ The portal also provides a convenient way to test your functions. As previously 
 
 The ability to monitor your functions is critical during development and in production. The Azure portal provides a monitoring dashboard if you turn on the Application Insights integration. In the left menu pane of your function app, under **Monitoring**, select **Logs** and open **Application Insights**. This Application Insights dashboard provides a quick way to view the history of function executions, and displays the timestamp, result code, duration, and operation ID populated by Application Insights.
 
-![Screenshot of the Azure portal showing an HTTP function Application Insights dashboard with several function results and their corresponding HTTP status codes, with the Monitoring menu item of the function highlighted.](../media/4-monitor-function.png)
+:::image type="content" source="../media/4-monitor-function.png" alt-text="Screenshot showing the HTTP function Application Insights dashboard with several function results, their corresponding HTTP status codes, and the Monitoring menu item of the function highlighted." lightbox="../media/4-monitor-function.png#lightbox":::]()
 
 ## Streaming logs pane
 
@@ -119,10 +119,10 @@ The following JavaScript code snippet shows how to log a message using the `cont
 context.log('Enter your logging statement here');
 ```
 
-We could do the same thing in C# using the `log.Info` method. In this case, the `log` object is passed to the C# method processing the function.
+We could do the same thing in C# using the `log.LogInformation` method. In this case, the `log` object is passed to the C# method processing the function.
 
 ```csharp
-log.Info("Enter your logging statement here");
+log.LogInformation("Enter your logging statement here");
 ```
 
 In PowerShell, use `Write-Host` to write to the log:
@@ -133,4 +133,4 @@ Write-Host "Enter your logging statement here"
 
 ### Errors and warnings in the logs pane
 
-You can locate the errors and warnings in the Logs pane as well. This pane shows compilation errors and warnings within your code.
+You can locate the errors and warnings window tab in the same flyout menu as the log window. This window shows compilation errors and warnings within your code.

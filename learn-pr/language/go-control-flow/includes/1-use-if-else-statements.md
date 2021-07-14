@@ -77,4 +77,4 @@ When you run the program, the error output looks like this:
 ./main.go:17:14: undefined: num
 ```
 
-In Go, declaring variables within `if` blocks is idiomatic, meaning that it is a way to program effectively using a convention that is common in Go.
+In Go, declaring variables within `if` blocks is idiomatic. It's a way to program effectively by using a convention that's common in Go.

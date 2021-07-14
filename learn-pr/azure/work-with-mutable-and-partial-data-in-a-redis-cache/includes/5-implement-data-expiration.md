@@ -60,4 +60,4 @@ Now that we added the code to expire our data, let's run the program and check t
 
 1. After 15 seconds, run the command again. You should see that the data is no longer there.
 
-    ![Screenshot of the Azure Cache for Redis console showing the value of MyKey1 being nil](../media/6-redis-console-data-expiration.png)
+    ![Screenshot of the Azure Cache for Redis console showing the value of MyKey1 being nil.](../media/6-redis-console-data-expiration.png)

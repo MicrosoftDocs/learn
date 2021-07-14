@@ -71,10 +71,10 @@ Replace the entire **Deploy** stage with the code below.
 1. In Azure Pipelines, go to the build. Trace the build as it runs.
 1. After the build has succeeded, select the web app container's deploy task and select the URL to view the deployed site.
 
-    ![Locating the web site URL](../media/4-deploy-url.png)
+    :::image type="content" source="../media/4-deploy-url.png" alt-text="A screenshot of Azure Pipelines showing the location of the web site URL.":::
 
 1. You see the site running on App Service.
 
-    ![Reviewing Space Game](../media/4-space-game.png)
+    :::image type="content" source="../media/4-space-game.png" alt-text="A screenshot of the Space Game web site.":::
 
 **Andy:** This turned out great! I think adopting containers could be a huge win for everyone.

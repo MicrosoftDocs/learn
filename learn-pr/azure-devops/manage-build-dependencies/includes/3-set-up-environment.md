@@ -18,7 +18,7 @@ The modules in this learning path form a progression, where you follow the Tails
 To set up everything for you in your Azure DevOps organization, run a template.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator-core.azurewebsites.net/?name=manage-build-dependencies&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=manage-build-dependencies&azure-portal=true)
 
 From the Azure DevOps demo generator site, to run the template, perform these steps.
 
@@ -31,7 +31,7 @@ From the Azure DevOps demo generator site, to run the template, perform these st
 
 1. Select **Create Project**.
 
-    ![Screenshot of Create New Project page](../media/3-create-new-project.png)
+    :::image type="content" source="../media/3-create-new-project.png" alt-text="A screenshot of the Azure DevOps Demo Generator showing how to create a new project.":::
 
     It takes a few moments for the template to run.
 1. To go to your project in Azure DevOps, select **Navigate to project**.
@@ -49,7 +49,7 @@ Assigning work in this way gives you a checklist to work from. It gives others o
 
 Recall that the team settled on these seven top issues:
 
-![Backlog of tasks](../../shared/media/build-all-tasks.png)
+:::image type="content" source="../../shared/media/build-all-tasks.png" alt-text="A screenshot of Azure Boards showing a backlog of issues.":::
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
@@ -58,21 +58,21 @@ Here, you move the sixth item, **Move model data to its own package** to the **D
 
 Recall that **Move model data to its own package** relates to moving reusable code to its own NuGet package, so that package can be shared among multiple apps.
 
-![Screenshot of work item details](../media/3-work-item-details.png)
+:::image type="content" source="../media/3-work-item-details.png" alt-text="A screenshot of Azure Boards showing work item details for the Move model data to its own package issue.":::
 
 To set up the work item:
 
 1. From Azure DevOps, go to **Boards**, and from the menu, select **Boards**.
 
-    ![Screenshot of Azure DevOps, showing the Azure Boards menu](../../shared/media/azure-devops-boards-menu.png)
+    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
 
 1. From the **Move model data to its own package** work item, at the bottom of the card, select the down arrow. Then, assign the work item to yourself.
 
-    ![Screenshot of Azure Boards, showing assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 
 1. Move the work item from the **To Do** to the **Doing** column.
 
-    ![Screenshot of Azure Boards, showing the card in the Doing column](../media/3-azure-boards-wi6-doing.png)
+    :::image type="content" source="../media/3-azure-boards-wi6-doing.png" alt-text="A screenshot of Azure Boards, showing the card in the Doing column.":::
 
 At the end of this module, after you've completed the task, you'll move the card to the **Done** column.
 

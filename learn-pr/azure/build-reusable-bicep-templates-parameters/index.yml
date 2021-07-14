@@ -1,0 +1,52 @@
+### YamlMime:Module
+uid: learn.azure.build-reusable-bicep-templates-parameters
+metadata:
+  moduleType: standard  
+  title: Build reusable Bicep templates by using parameters
+  description: Control and apply parameters to a Bicep template while protecting sensitive inputs. 
+  ms.date: 05/25/2021
+  author: wviriya
+  ms.author: wviriya
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-azure
+title: Build reusable Bicep templates by using parameters  
+summary: |
+    This module describes how you can use Bicep parameters to provide information for your template during each deployment.
+    You'll learn about parameter decorators, which make your parameters easy to understand and work with.
+    You'll also learn about the different ways that you can provide parameter values,
+    and how to protect these values when you're working with secure information.
+abstract: |
+  After completing this module, you'll be able to:
+    - Customize parameters and limit the values that can be used by each parameter
+    - Understand the ways that parameters can be supplied to a Bicep template deployment
+    - Work with secure parameters
+prerequisites: |
+  You should be familiar with:
+  - Creating and deploying basic Bicep templates.
+  - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+
+  To follow along with the exercises in the module, you'll need:
+  - [Visual Studio Code](https://code.visualstudio.com) installed locally.
+  - Either:
+    - The latest [Azure CLI](/cli/azure/install-azure-cli) tools installed locally.
+    - The latest [Azure PowerShell](/powershell/azure/install-az-ps) installed locally.
+iconUrl: /learn/achievements/bicep/build-reusable-bicep-templates-parameters.svg
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - developer
+  - administrator
+products:  
+  - azure-resource-manager
+units:  
+- learn.azure.build-reusable-bicep-templates-parameters.introduction
+- learn.azure.build-reusable-bicep-templates-parameters.understand-parameters
+- learn.azure.build-reusable-bicep-templates-parameters.exercise-add-parameters-with-decorators
+- learn.azure.build-reusable-bicep-templates-parameters.how-use-parameter-file-with-bicep
+- learn.azure.build-reusable-bicep-templates-parameters.how-secure-parameter
+- learn.azure.build-reusable-bicep-templates-parameters.exercise-create-use-parameter-files
+- learn.azure.build-reusable-bicep-templates-parameters.knowledge-check
+- learn.azure.build-reusable-bicep-templates-parameters.summary
+badge:                 
+  uid: learn.azure.build-reusable-bicep-templates-parameters.badge

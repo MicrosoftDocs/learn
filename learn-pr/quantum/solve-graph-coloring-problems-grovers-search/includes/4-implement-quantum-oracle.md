@@ -4,11 +4,11 @@ In this part, you'll implement a quantum oracle for the graph coloring problem.
 
 > [!NOTE]
 > In this module we'll focus on high-level behavior of quantum oracles and (in the following units) Grover's search algorithm. 
-> We encourage you to dig deeper into the code on your own, in particular, to look up any unfamiliar operations and language constructs in the [Q# documentation](https://docs.microsoft.com/quantum).
+> We encourage you to dig deeper into the code on your own, in particular, to look up any unfamiliar operations and language constructs in the [Q# documentation](/azure/quantum).
 
 ## Create the project
 
-Start by creating a Q# project as described in the module [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true). To do so:
+Start by creating a Q# project as described in the module [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true). To do so:
 
 1. On the **View** menu, select **Command Palette**.
 1. Enter **Q#: Create New Project**.
@@ -161,6 +161,11 @@ Here's the Q# code that validates that the vertex coloring is valid.
 
 :::code language="qsharp" source="code/4-program-4.qs":::
 
+> [!NOTE]
+> This code snippet does not currently run on any available Azure Quantum hardware targets, as general measurement result comparisons (`let isColoringValid = M(target) == One;`) require a QPU with [full computation profile](/azure/quantum/concepts-targets-in-azure-quantum#quantum-processing-units-qpu-different-profiles).
+>
+> Learn module code that does not feature such a notice is executable on current hardware targets.
+
 Here's the output of this code:
 
 ```output
@@ -212,4 +217,4 @@ You can see that indeed, the amplitude of the $|00\rangle$ state changed to $-0.
 
 Congrats, space explorer! Now you know how to build a complete quantum oracle for a graph coloring problem! 
 
-In the next unit, you finally put into practice your skills to implement Grover's search algorithm to determine the minimum number of bandwidths we need to assign. 
+In the next unit, you finally put into practice your skills to implement Grover's search algorithm to determine the minimum number of bandwidths we need to assign.

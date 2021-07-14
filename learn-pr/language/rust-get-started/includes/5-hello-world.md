@@ -1,4 +1,4 @@
-Now that you've installed Rust, let's write your first Rust program. You'll print the message "Hello, world!" to the console.
+With Rust installed, you're ready to start coding. Let's write a program that prints "Hello, world!" to the console.
 
 ## Create a new directory to organize your code
 

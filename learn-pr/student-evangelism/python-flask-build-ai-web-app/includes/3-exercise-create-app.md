@@ -93,7 +93,7 @@ Templates for Flask need to be created in a folder named **templates**, which is
     </html>
     ```
 
-The core components in the HTML above are the `textarea` for the text the user wishes to translate, and the dropdown list (`select`), which the user will use to indicate the target language. If you want to add more languages, you can consult the [list of supported languages](https://docs.microsoft.com/azure/cognitive-services/Translator/language-support?WT.mc_id=python-11210-chrhar&azure-portal=true) for other options. Set the `value` attribute to the language code, for example, **pl** for Polish.
+The core components in the HTML above are the `textarea` for the text the user wishes to translate, and the dropdown list (`select`), which the user will use to indicate the target language. If you want to add more languages, you can consult the [list of supported languages](/azure/cognitive-services/Translator/language-support?azure-portal=true&WT.mc_id=python-11210-chrhar) for other options. Set the `value` attribute to the language code, for example, **pl** for Polish.
 
 ## Test the application
 

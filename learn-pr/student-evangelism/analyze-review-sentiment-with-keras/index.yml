@@ -5,7 +5,7 @@ metadata:
   description: Learn about Keras, a high-level deep learning API in Python, to build a neural network that scores text, such as user reviews, for sentiment.
   ms.date: 02/24/2019
   author: JeffProsise
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Analyze the sentiment of reviews with Keras

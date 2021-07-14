@@ -18,7 +18,7 @@ The first step is to provision a data factory in the Azure portal.
 
 1. On the left sidebar, select **+ Create Resource** > **Integration** > **Data Factory**.
 
-    ![Screenshot showing where to select Data Factory](../media/6-select-data-factory.png)
+    ![Screenshot showing where to select Data Factory.](../media/6-select-data-factory.png)
 
 1. On the **New data factory** page, provide values for each of the required fields:
     - **Subscription**: The subscription in which the ADF instance is created
@@ -27,7 +27,7 @@ The first step is to provision a data factory in the Azure portal.
     - **Name**: The name of the Azure Data Factory instance
     - **Version**: select V2 for the latest features
 
-      ![Screenshot showing how to set up a data factory](../media/6-create-data-factory.png)
+      ![Screenshot showing how to set up a data factory.](../media/6-create-data-factory.png)
 
 1. Click on the **Git configuration** tab, and choose to set it up later. 
 
@@ -35,7 +35,7 @@ The first step is to provision a data factory in the Azure portal.
 
 Now go to the newly created data factory. You should see the **Data factory** home page.
 
-![Screenshot of the new data factory](../media/6-generated-data-factory.png)
+![Screenshot of the new data factory.](../media/6-generated-data-factory.png)
 
 > [!IMPORTANT]
 > You will need a Data Lake Storage Gen1 account that contains data. If you don't have this, follow the steps in the next sections.
@@ -95,23 +95,23 @@ Set permissions to allow the data factory to access the data in your Data Lake S
 1. Select **Author & Monitor** to open the Data Integration application in a separate tab.
 
 
-    ![Screenshot showing the Data factory home page, where Author & Monitor is selected](../media/6-generated-data-factory.png)
+    ![Screenshot showing the Data factory home page, where Author & Monitor is selected.](../media/6-generated-data-factory.png)
 
 1. Select **Ingest** to open the Copy Data tool.
 
-    ![Screenshot showing how to open the Copy Data tool](../media/6-copy-data.png)
+    ![Screenshot showing how to open the Copy Data tool.](../media/6-copy-data.png)
 
 1. On the **Properties** page, under **Task type**, click **Built-in copy task**. Then set the task cadence to **Run once now**, and select **Next**.
 
-    ![Screenshot showing the Properties page of the Copy Data tool](../media/6-copy-data-property.png)
+    ![Screenshot showing the Properties page of the Copy Data tool.](../media/6-copy-data-property.png)
 
 1. On the **Source data store** page, select **Create new connection**.
 
-    ![Screenshot showing the Source data store page, where Create new connection is selected](../media/6-create-new-connection.png)
+    ![Screenshot showing the Source data store page, where Create new connection is selected.](../media/6-create-new-connection.png)
 
 1. In the connector gallery, select **Azure Data Lake Storage Gen1** > **Continue**.
 
-    ![Screenshot showing selections in the connector gallery](../media/6-create-gen1.png)
+    ![Screenshot showing selections in the connector gallery.](../media/6-create-gen1.png)
 
 1. On the **New Connection (Azure Data Lake Storage Gen1)** page:
     - Under **Data Lake Store Selection method**, select your Azure subscription.
@@ -119,19 +119,19 @@ Set permissions to allow the data factory to access the data in your Data Lake S
     - To validate the settings, select **Test connection** > **Finish**.
     - When you see that the new connection is created, select **Next**.
 
-    ![Screenshot showing how to create a linked service](../media/6-create-new-linked-service.png)
+    ![Screenshot showing how to create a linked service.](../media/6-create-new-linked-service.png)
 
 1. On the **Choose the input file or folder** page, go to the folder and file that you want to copy over. Select the folder or file, and then select **Choose**.
 
-    ![Screenshot showing how to select the input file or folder](../media/6-choose-file-or-folder.png)
+    ![Screenshot showing how to select the input file or folder.](../media/6-choose-file-or-folder.png)
 
 1. Specify the copy behavior by selecting **Copy files recursively** and **Binary Copy**. Then select **Next**.
 
-    ![Screenshot showing the two copy options on the Choose the input file or folder page](../media/6-two-copy-options.png)
+    ![Screenshot showing the two copy options on the Choose the input file or folder page.](../media/6-two-copy-options.png)
 
 1. On the **Destination data store** page, select **Create new connection** > **Azure Data Lake Storage Gen2 (Preview)** > **Continue**.
 
-    ![Screenshot showing how to select the destination](../media/6-select-destination.png)
+    ![Screenshot showing how to select the destination.](../media/6-select-destination.png)
 
 1. On the **Specify Azure Data Lake Storage Gen2 connection** page:
     - In the **Storage account name** list, select your Data Lake Storage Gen2 account, this will automatically populate the access key.
@@ -139,19 +139,19 @@ Set permissions to allow the data factory to access the data in your Data Lake S
 
 1. On the **Choose the output file or folder** page, next to **Folder path**, enter **copyfromadlsgen1**. Then select **Next**.
 
-    ![Screenshot showing where to enter the output folder path](../media/6-choose-output-folder-path.png)
+    ![Screenshot showing where to enter the output folder path.](../media/6-choose-output-folder-path.png)
 
 1. On the **Settings** page, select **Next** to use the default settings.
 1. Review the settings on the **Summary** page, and select **Next**.
 
-    ![Screenshot of the Summary page](../media/6-summary-page.png)
+    ![Screenshot of the Summary page.](../media/6-summary-page.png)
 
 1. To monitor the pipeline, on the deployment page, select **Monitor**.
 
-    ![Screenshot of the deployment page](../media/6-deployment-page.png)
+    ![Screenshot of the deployment page.](../media/6-deployment-page.png)
 
     You can monitor details like how much data is copied from the source to the sink, data throughput, execution steps and their duration, and configurations.
 
-    ![Screenshot of the Details page](../media/6-details-page.png)
+    ![Screenshot of the Details page.](../media/6-details-page.png)
 
 After the transfer is complete, you can use Azure Storage Explorer to verify that the data has been copied into your Data Lake Storage Gen2 account.

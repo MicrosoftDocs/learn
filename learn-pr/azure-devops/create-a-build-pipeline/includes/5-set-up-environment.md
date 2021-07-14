@@ -15,14 +15,14 @@ The modules in this learning path form a progression, where you follow the Tails
 To set up everything in your Azure DevOps organization, run a template.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator-core.azurewebsites.net/?name=create-build-pipeline&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=create-build-pipeline&azure-portal=true)
 
 On the Azure DevOps Demo Generator site, to run the template, perform these steps.
 
 1. Select **Sign In**, and accept the usage terms.
 1. On the **Create New Project** page, select your Azure DevOps organization, and enter a project name, like *Space Game - web - Pipeline*. Next, select **Create Project**.
 
-    ![Creating a project through the Azure DevOps Demo Generator](../media/5-create-new-project.png)
+    :::image type="content" source="../media/5-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator.":::
 
     It takes a moment for the template to run.
 1. To go to your project in Azure DevOps, select **Navigate to project**.
@@ -40,7 +40,7 @@ Assigning work in this way gives you a checklist to work from. It gives others o
 
 Recall that the team settled on these seven top issues:
 
-![Backlog of tasks](../../shared/media/build-all-tasks.png)
+:::image type="content" source="../../shared/media/build-all-tasks.png" alt-text="Azure Boards showing a backlog of tasks.":::
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
@@ -49,19 +49,20 @@ You'll now move the first item, **Stabilize the build server** to the **Doing** 
 
 Recall that **Stabilize the build server** relates to fixing the team's existing build server, which runs on spare hardware in the office. The goal is to see if build services on Azure Pipelines can simplify build server maintenance.
 
-![Work item details](../media/5-work-item-details.png)
+:::image type="content" source="../media/5-work-item-details.png" alt-text="Azure Boards showing work item details. Details include the state, area, and a description.":::
 
 To set up the work item:
 
 1. In Azure DevOps, navigate to **Boards**, and from the menu, select **Boards**.
 
-    ![Azure DevOps showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
+    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="Azure DevOps showing the location of the Boards menu.":::
 
 1. In the **Stabilize the build server** work item, at the bottom of the card, select the down arrow. Then assign the work item to yourself.
 
-    ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="Azure Boards showing the location of the down arrow.":::
+
 1. Move the work item from the **To Do** column to the **Doing** column:
 
-    ![Azure Boards showing the card in the Doing column](../media/5-azure-boards-wi1-doing.png)
+    :::image type="content" source="../media/5-azure-boards-wi1-doing.png" alt-text="Azure Boards showing the work item in the Doing column.":::
 
 At the end of this module, you'll move the card to the **Done** column after you've completed the task.

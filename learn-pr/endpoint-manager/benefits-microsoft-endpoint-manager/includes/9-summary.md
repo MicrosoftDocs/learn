@@ -22,4 +22,4 @@ To determine your mobile device management and mobile application management nex
 For more information about Microsoft Endpoint Manager, see the following resources:
 
 - [Modern management and security principles driving our Microsoft Endpoint Manager vision](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/modern-management-and-security-principles-driving-our-microsoft/ba-p/946797?azure-portal=true)
-- [Microsoft Endpoint Manager documentation](https://docs.microsoft.com/mem/?azure-portal=true)
+- [Microsoft Endpoint Manager documentation](/mem/?azure-portal=true)

@@ -59,4 +59,4 @@ This list of assessment questions is a great starting point. You may add more qu
 [!INCLUDE [Supplier category](../includes/2-assessment-questions-13-supplier.md)]
 
 > [!IMPORTANT]
-> Visit [Azure security benchmark](https://docs.microsoft.com/azure/security/benchmarks/overview) to learn about each security category and associated requirements in Azure.
+> Visit [Azure security benchmark](/azure/security/benchmarks/overview) to learn about each security category and associated requirements in Azure.

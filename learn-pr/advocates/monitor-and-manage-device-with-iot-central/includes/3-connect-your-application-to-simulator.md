@@ -24,7 +24,7 @@ Your real device needs some connection information to connect securely to your I
 
 1. Either keep this page open, or make a note of the **ID scope**, **Device ID**, and **Primary key** values. You need these values later:
 
-    ![Device connection information](../media/3-device-connection.png)
+    ![Device connection information.](../media/3-device-connection.png)
 
 ## Create a Node.js application
 

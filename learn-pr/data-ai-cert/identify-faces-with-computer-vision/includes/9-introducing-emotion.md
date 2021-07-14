@@ -13,6 +13,6 @@ As in the Face API, the Emotion API associates detected faces with face *locatio
 - **Score**: The likelihood or level of confidence that a face displays a specific emotion
 - **Location**: The top, left, height, and width of a region in the image that displays a face
 
-:::image type="content" source="../media/8-introducing-emotion-score-location.png" alt-text="A group of faces are analyzed by the Emotion API. JSON code shows the scores and locations of the faces":::
+:::image type="content" source="../media/8-introducing-emotion-score-location.png" alt-text="A group of faces are analyzed by the Emotion API. JSON code shows the scores and locations of the faces.":::
 
 Scores, just like confidence levels, are similar to percentages. Their range is 0.0 to 1.0. The higher the value, the more certain the service is that the emotion is accurate.

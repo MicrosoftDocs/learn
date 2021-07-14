@@ -6,7 +6,7 @@ Mara has called a short meeting with her teammates. Everyone has shown up but no
 
 Mara's value stream map is still on the whiteboard from their previous meeting:
 
-![A whiteboard showing the value stream map.](../media/2-vsm-whiteboard1.png)
+:::image type="content" source="../media/2-vsm-whiteboard1.png" alt-text="A whiteboard showing the value stream map.":::
 
 **Mara:** Our value stream map shows where we lose efficiency in delivering value to our end users. Just like everyone else, we can improve. And we can decide which areas to tackle first.
 

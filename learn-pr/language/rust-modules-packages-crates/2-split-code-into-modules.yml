@@ -5,7 +5,7 @@ metadata:
   description: Organize your code better by splitting code into modules.
   ms.date: 01/20/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Split code into modules

@@ -8,7 +8,7 @@ Using orchestrators for production-ready applications is essential if your appli
 
 The image below illustrates deployment into a cluster of an application composed of multiple microservices (clusters).
 
-:::image type="complex" source="../media/composed-docker-applications-cluster.png" alt-text="diagram showing docker applications in a cluster":::
+:::image type="complex" source="../media/composed-docker-applications-cluster.png" alt-text="diagram showing docker applications in a cluster.":::
 This diagram shows 6 docker images deployed as 2 applications. The applications are then deployed as several clusters. The diagram is meant to show how difficult it would be to perform the deployment without a tool to help.
 :::image-end:::
 
@@ -26,7 +26,7 @@ Orchestrators can perform tasks such as load-balancing and routing in scenarios 
 
 ## Docker Compose
 
-A full-featured container might be too much for the simple website that the Contoso Pizza is dealing with. What they need is a tool that lets them build multiple Docker images together as a single unit and then deploy that unit.
+A full-featured orchestrator might be too much for the simple website that the Contoso Pizza is dealing with. What they need is a tool that lets them build multiple Docker images together as a single unit and then deploy that unit.
 
 Docker Compose is a great tool for their needs.
 

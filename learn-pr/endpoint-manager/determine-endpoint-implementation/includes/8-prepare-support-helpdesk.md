@@ -13,7 +13,7 @@ Determine who will support end users. Organizations may have different tiers or 
 
 Tier 1 is normally the first level of support and typically the first tier to be contacted by the user for support requests. If tier 1 is unable to resolve the end user's issue, they escalate it to tier 2. Tier 2 escalates it to tier 3 if needed. In addition, Microsoft support may be considered as tier 4.
 
-For more information about Intune and Configuration Manager support, see [How to get support in Microsoft Endpoint Manager admin center](https://docs.microsoft.com/mem/intune/fundamentals/get-support?azure-portal=true).
+For more information about Intune and Configuration Manager support, see [How to get support in Microsoft Endpoint Manager admin center](/mem/intune/fundamentals/get-support?azure-portal=true).
 
 ## What is the support process?
 
@@ -31,7 +31,7 @@ An example of an Endpoint Manager support training agenda is provided below.
 - Tools and resources
 - Q & A
 
-The [Microsoft Endpoint Manager documentation](https://docs.microsoft.com/mem?azure-portal=true) provides overviews, detailed feature descriptions, and troubleshooting information. In addition, both Intune and Configuration Manager documentation contain links to community-based resource for questions and topics not covered in the documentation.
+The [Microsoft Endpoint Manager documentation](/mem?azure-portal=true) provides overviews, detailed feature descriptions, and troubleshooting information. In addition, both Intune and Configuration Manager documentation contain links to community-based resource for questions and topics not covered in the documentation.
 
 ## What opportunities are there to involve the support team earlier?
 
@@ -40,4 +40,4 @@ Involving your IT support/helpdesk staff in early stages of Microsoft Endpoint M
 ## Additional information
 
 For more information about determining and creating a rollout plan, see the following resources:
-- [Microsoft Intune planning guide - Support help desk and end users](https://docs.microsoft.com/mem/intune/fundamentals/intune-planning-guide?azure-portal=true#task-7-support-help-desk-and-end-users)
+- [Microsoft Intune planning guide - Support help desk and end users](/mem/intune/fundamentals/intune-planning-guide?azure-portal=true#task-7-support-help-desk-and-end-users)

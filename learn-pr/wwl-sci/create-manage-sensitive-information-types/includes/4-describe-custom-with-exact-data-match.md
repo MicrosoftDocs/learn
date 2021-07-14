@@ -8,4 +8,4 @@ Creating a new custom sensitive information type with EDM-based classification i
 
 1. Use EDM-based classification with your Microsoft cloud services.
 
-For detailed instructions see [Create custom sensitive information types with Exact Data Match based classification](https://docs.microsoft.com/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification?view=o365-worldwide?azure-portal=true).
+For detailed instructions see [Create custom sensitive information types with Exact Data Match based classification](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification).

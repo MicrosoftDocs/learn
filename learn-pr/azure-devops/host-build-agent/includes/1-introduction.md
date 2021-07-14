@@ -6,12 +6,12 @@ However, you occasionally need additional processing power, disk space, or time 
 
 ## Learning objectives
 
-In this module, you will:
+After completing this module, you'll be able to:
 
-- Choose when to use Microsoft-hosted build agents and when to host your own.
-- Describe your options for managing your own build agents.
-- Bring up and configure your own agent to work with Azure Pipelines.
-- Connect your agent to a pipeline and build your application.
+- Choose when to use Microsoft-hosted build agents and when to host your own
+- Describe the options you have when you're managing your own build agents
+- Bring up and configure your own agent to work with Azure Pipelines
+- Connect your agent to a pipeline and build your application
 
 ## Prerequisites
 
@@ -23,11 +23,11 @@ We also recommend you start at the beginning of this learning path, [Build appli
 
 If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
 
-* An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
-* A [GitHub](https://github.com/join?azure-portal=true) account
-* [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1?azure-portal=true)
-* [Git](https://git-scm.com/downloads?azure-portal=true)
+- An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
+- A [GitHub](https://github.com/join?azure-portal=true) account
+- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+- [.NET 5.0 SDK](https://dotnet.microsoft.com/download/dotnet/5.0?azure-portal=true)
+- [Git](https://git-scm.com/downloads?azure-portal=true)
 
 You can get started with Azure DevOps for free.
 

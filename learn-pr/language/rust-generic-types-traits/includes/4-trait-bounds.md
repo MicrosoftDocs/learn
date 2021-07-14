@@ -1,4 +1,4 @@
-Traits let us define functions that accept many different types, because when a type implements a trait it can be treated abstractly as that trait.
+Traits let us accept different types by how we define our functions, because when a type implements a trait it can be treated abstractly as that trait.
 
 We can declare function arguments to be an anonymous type parameter where the callee must provide a type that has the bounds declared by the anonymous type parameter.
 
@@ -21,7 +21,7 @@ fn send_data_as_json(value: &impl AsJson) {
 }
 ```
 
-Instead of a concrete type for the `value` parameter, we specify the `impl` keyword and the trait name. This parameter accepts any type that implements the specified trait. Because the function doesn't know anything about the concrete type it will receive, it can only use the methods available by the trait bounds of the anonymous type parameter.
+Here, we specify the trait name and the `impl` keyword. We specify with these values instead of using a concrete type for the `value` parameter. The `value` parameter accepts all types that use the defined trait. Because the function doesn't know anything about the concrete type it will receive, it can only use the methods available by the trait bounds of the anonymous type parameter.
 
 Another way to write the same function, but with a little different syntax, explicitly tells that T is a generic type that must implement the `AsJson` trait:
 

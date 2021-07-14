@@ -50,7 +50,7 @@ Azure Cosmos DB SQL API is a fast NoSQL database service that offers rich queryi
 <!-- Source for the following diagram is at https://commons.wikimedia.org/wiki/File:Simplified_blank_world_map_without_Antartica_(no_borders).svg -->
 :::image type="content" source="../media/2-azure-cosmos-db.svg" alt-text="Illustration of a world map with four globally distributed nodes that are connected via lines." border="false":::
 
-The SQL API is the core or native API for working with documents. The SQL API supports fast, flexible development utilizing JSON documents, the familiar SQL query language, and client libraries for popular programming languages. Azure Cosmos DB provides other APIs, such as Mongo, Gremlin, and Cassandra, that offer compatibility with each database ecosystem while still mapping to the same underlying infrastructure of the native SQL API.
+The SQL API is the core or native API for working with documents. The SQL API supports fast, flexible development utilizing JSON documents, a query language with a familiar syntax, and client libraries for popular programming languages. Azure Cosmos DB provides other APIs, such as Mongo, Gremlin, and Cassandra, that offer compatibility with each database ecosystem while still mapping to the same underlying infrastructure of the native SQL API.
 
 Azure Cosmos DB SQL API has a few advantages such as:
 
@@ -66,4 +66,4 @@ These capabilities make Azure Cosmos DB ideally suited for modern application de
 - Need to deliver real-time user experiences
 - Are depended upon for business continuity
 
-The Azure Cosmos DB SQL API can arbitrarily store native JSON documents with flexible schema. Data is indexed automatically and is available for query using a flavor of the SQL query language designed for JSON data. The SQL API can be accessed using SDKs for popular frameworks such as [.NET](/azure/cosmos-db/sql-api-sdk-dotnet-standard), [Python](/azure/cosmos-db/sql-api-sdk-python), [Java](/azure/cosmos-db/sql-api-sdk-java-v4), and [Node.js](/azure/cosmos-db/sql-api-sdk-node). The SQL API can also be accessed using a [RESTful HTTP API](/rest/api/cosmos-db/) endpoint.
+The Azure Cosmos DB SQL API can arbitrarily store native JSON documents with flexible schema. Data is indexed automatically and is available for query using a flavor of the SQL query language designed for JSON data. The SQL API can be accessed using SDKs for popular frameworks such as [.NET](/azure/cosmos-db/sql-api-sdk-dotnet-standard), [Python](/azure/cosmos-db/sql-api-sdk-python), [Java](/azure/cosmos-db/sql-api-sdk-java-v4), and [Node.js](/azure/cosmos-db/sql-api-sdk-node).

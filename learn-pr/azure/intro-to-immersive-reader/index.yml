@@ -27,6 +27,8 @@ roles:
 - student
 products:
 - azure
+- azure-immersive-reader
+- azure-cognitive-services
 units:
 - learn.azure.intro-to-immersive-reader.introduction
 - learn.azure.intro-to-immersive-reader.what-is-immersive-reader

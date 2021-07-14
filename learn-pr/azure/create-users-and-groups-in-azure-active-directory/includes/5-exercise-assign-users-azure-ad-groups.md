@@ -1,12 +1,15 @@
 In this exercise, you'll create an Azure Active Directory (Azure AD) group to manage the developer team's access. You'll also add a rule for the group to manage the membership automatically.
 
+> [!NOTE]
+> This exercise depends on having completed prior exercises in this module. If you have not done so, please complete [exercise 3](../3-exercise-add-delete-users-azure-ad.yml) before you begin.
+
 ## Add a new group
 
 1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>).
 
 1. On the home page, under **Azure services**, select **Azure Active Directory**.
 
-1. In the left menu pane, under **Manage**, select **Groups**. The **All Groups** pane appears for your Azure AD.
+1. In the left menu pane, under **Manage**, select **Groups**. The **All groups** pane appears for your Azure AD.
 
 1. On the top menu bar, select **New group**. The **New Group** pane appears.
 

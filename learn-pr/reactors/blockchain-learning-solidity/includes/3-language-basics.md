@@ -23,7 +23,7 @@ This line means that the source file will compile with a compiler greater than t
 
 ## State variables
 
-State variables are key to any Solidity source file. They're variables whose values are permanently stored in contract storage.
+State variables are key to any Solidity source file. State variable values are stored in contract storage permanently.
 
 ```solidity
 pragma solidity >0.7.0 <0.8.0;
@@ -47,7 +47,7 @@ Additionally, you can specify the visibility of a state variable as:
 
 ## Functions
 
-Functions are executable units of code within a contract. Functions describe a single action for achieving one task. They're reusable and can also be called from other source files like libraries. Functions in Solidity behave similarly to functions in other programming languages.
+Within a contract, executable units of code are known as functions. Functions describe a single action for achieving one task. They're reusable and can also be called from other source files like libraries. Functions in Solidity behave similarly to functions in other programming languages.
 
 Here's a simple example of defining a function:
 
@@ -103,12 +103,12 @@ contract Marketplace {
 
 This example introduces the following items:
 
-- A variable with a type **address** which will store the 20 byte Ethereum address of the seller user. You'll learn more about these variables later in this module.
+- A variable with a type **address** that stores the 20-byte Ethereum address of the seller user. You'll learn more about these variables later in this module.
 - A modifier called `onlySeller` that describes that only a seller can list an item.
 - A special symbol `_;` to indicate where the function body gets inserted.
 - A function definition that uses the modifier `onlySeller`.
 
-Additional function modifiers that can be used in the function definition are:
+Other function modifiers that can be used in the function definition are:
 
 - **pure** to describe functions that don't allow modifications or access of state.
 - **view** to describe functions that don't allow modifications of state.

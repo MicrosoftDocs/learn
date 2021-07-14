@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.monitor-java-azure
+metadata:
+  moduleType: standard
+  title: Monitoring Java applications on Azure
+  description: Learn how to use monitoring for your Java applications on Azure
+  ms.date: 07/07/2021
+  author: roryp
+  ms.author: ropreddy
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Monitoring Java applications on Azure
+summary: Learn how to use monitoring for your Java applications on Azure
+abstract: |
+  By the end of this module, you will be able to:
+  - Understand monitoring Java applications on Azure.
+  - Build and deploy a sample microservice application and configure it for application performance monitoring (APM).
+  - Debug using application log streams on development machines.
+  - Troubleshoot using incredible views, meaningful insights, and actionable logs and metrics.
+  - Monitor the entire solution - applications, databases, and any other backend services.
+prerequisites: |
+  - Azure subscription
+  - Basic knowledge of [Azure Spring Cloud](/learn/modules/azure-spring-cloud-workshop/?WT.mc_id=java-00000-ropreddy)
+  - Basic knowledge of the [Azure Cloud Shell](/azure/cloud-shell/overview/?WT.mc_id=java-00000-ropreddy)
+  - Basic knowledge in [editing files in Azure Cloud Shell](/azure/cloud-shell/using-cloud-shell-editor/?WT.mc_id=java-00000-ropreddy) in the Azure Cloud Shell
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles:
+  - developer
+  - devops-engineer
+  - administrator
+products:
+- azure
+- azure-database-mysql
+- azure-spring-cloud
+units:
+- learn.monitor-java-azure.learning-content
+- learn.monitor-java-azure.exercise-setup
+- learn.monitor-java-azure.logging
+- learn.monitor-java-azure.logging-exercise
+- learn.monitor-java-azure.application-performance
+- learn.monitor-java-azure.exercise-monitor
+- learn.monitor-java-azure.distributed
+- learn.monitor-java-azure.knowledge-check
+- learn.monitor-java-azure.summary
+badge:
+  uid: learn.monitor-java-azure.badge

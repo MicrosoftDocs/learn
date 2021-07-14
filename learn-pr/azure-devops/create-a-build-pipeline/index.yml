@@ -3,24 +3,23 @@ uid: learn.azdo.create-a-build-pipeline
 metadata:
   title: Create a build pipeline with Azure Pipelines
   description: Set up a continuous integration (CI) pipeline that automates the process of building your application.
-  ms.date: 01/21/2020
+  ms.date: 05/24/2021
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
-  #ms.learn-contact: thpetche
   ms.prod: learning-azure
 title: Create a build pipeline with Azure Pipelines
 summary: Set up a continuous integration (CI) pipeline that automates the process of building your application.
 abstract: |
-  In this module, you will:
+  After completing this module, you'll be able to:
   - Create a build pipeline in Azure Pipelines
-  - Map the manual build steps to automated build tasks
+  - Map manual build steps to automated build tasks
   - Publish your builds so others can access them
   - Use templates to build multiple configurations
 prerequisites: |
   - An Azure DevOps organization
   - Visual Studio Code
-  - .NET Core 3.1
+  - .NET 5.0 SDK
   - Git
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/create-a-build-pipeline-azure-pipelines.svg

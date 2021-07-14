@@ -21,5 +21,5 @@ In this module, you'll begin to discover:
 
 ## Prerequisites
 
-- [Predict rocket launch delays with machine learning](/learn/paths/machine-learning-predict-launch-delay-nasa)
+- [Predict rocket launch delays with machine learning](../../../paths/machine-learning-predict-launch-delay-nasa/index.yml?azure-portal=true)
 - [Visual Studio Code with Python installed](https://aka.ms/LearnOnVSCode?azure-portal=true)

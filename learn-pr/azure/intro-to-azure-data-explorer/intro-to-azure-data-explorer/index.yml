@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Familiarity with challenges of Big Data, such as velocity, variety, and volume.
   - Basic knowledge of query language concepts such as filters and aggregates.
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/intro-to-azure-data-explorer.svg
 levels:
   - beginner
 roles:
