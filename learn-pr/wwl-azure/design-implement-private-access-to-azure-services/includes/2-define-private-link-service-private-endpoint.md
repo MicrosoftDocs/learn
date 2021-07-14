@@ -45,7 +45,7 @@ Yes, by using Azure Private Link Service. This service lets you offer Private Li
 
 Azure Private Link service is the reference to your own service that is powered by Azure Private Link. Your service that is running behind Azure standard load balancer can be enabled for Private Link access so that consumers to your service can access it privately from their own VNets. Your customers can create a private endpoint inside their VNet and map it to this service. A Private Link service receives connections from multiple private endpoints. A private endpoint connects to one Private Link service.
 
-​> [!div class="mx-imgBorder"]
+> [!div class="mx-imgBorder"]
 > ![Private link service workflow](../media/consumer-provider-endpoint.png)
 
  
