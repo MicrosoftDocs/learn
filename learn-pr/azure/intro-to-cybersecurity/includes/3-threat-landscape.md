@@ -58,7 +58,7 @@ Browser *modifiers* are hacks designed to change a browser's security setting wi
 
 Another browser attack is known as *cross-site scripting (XSS)*. In XSS attacks, malicious code, typically JavaScript, is placed within a trusted website. The goal of this kind of attack is that the code is executed within the site visitor's browser. Modern browsers now use a Content Security Policy (CSP) to detect and mitigate XSS attacks.
 
-#### Data Breach
+#### Data breach
 
 A 2021 investigation report details how more than 90 percent of companies that acknowledge they've been hacked were alerted to the hack from entities outside their organizations. A recent data breach involved *shadow IT*. Some employees were using a not approved off-site storage solution. The users received what seemed to be a valid email. It asked them to visit the link and change their passwords because a hack had compromised their user-account information. Some users responded that they thought they were changing their password. Instead, they gave their account information to hackers. With that information, the hackers were able to steal data from the cloud storage vendor. they then used that account information to move into the company’s networked computers. The term for unauthorized removal of data is *Data Exfiltration*.
 
