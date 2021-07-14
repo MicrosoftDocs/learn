@@ -6,7 +6,7 @@ You know that the cmdlet `Get-Process` lists information about processes. Now yo
 
 In this scenario, you'll use the `Get-Member` cmdlet.
 
-1. Run `Get-Process`.
+1. Run `Get-Process`:
 
    ```powershell
    Get-Process
@@ -28,7 +28,7 @@ In this scenario, you'll use the `Get-Member` cmdlet.
 
    Now you know the type is `Process`, so you can learn more about what other cmdlets use this type. Next, use `Get-Command` and add the type as a parameter.
 
-1. Run `Get-Command`.
+1. Run `Get-Command`:
 
    ```powershell
    Get-Command -ParameterType Process

@@ -1,4 +1,4 @@
-When a cmdlet runs, it returns an object. When you invoke a cmdlet, the response you see has been formatted and might not necessarily represent all of the available information for the response. To know more about what's being returned and how you can tweak what's being returned, you can use the command `Get-Member`.
+When a cmdlet runs, it returns an object. When you invoke a cmdlet, the response you see has been formatted and might not necessarily represent all the available information for the response. To know more about what's being returned and how you can tweak what's being returned, you can use the command `Get-Member`.
 
 ## Discover objects by using Get-Member
 

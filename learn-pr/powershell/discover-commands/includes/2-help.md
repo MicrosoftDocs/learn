@@ -1,4 +1,4 @@
-You use `Get-Command` to locate a command that you need. Once you've located the command you need, you might want to know more about what the command does and various ways to call it. By using the built-in help system you can find out more about a specific command.
+You use `Get-Command` to locate a command that you need. After you've located the command you need, you might want to know more about what the command does and various ways to call it. By using the built-in help system, you can find out more about a specific command.
 
 ## Discover cmdlets by using the help system and Get-Help
 

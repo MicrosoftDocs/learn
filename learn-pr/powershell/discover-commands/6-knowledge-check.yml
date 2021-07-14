@@ -3,8 +3,8 @@ uid: learn.powershell.discover-commands.6-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Four multiple-choice questions
-  ms.date: 04/27/2020
+  description: Knowledge check
+  ms.date: 07/09/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -14,16 +14,16 @@ content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   questions:
-    - content: Using the help system, what command, or function, helps you paginate the response?
+    - content: Using the help system, what command or function helps you paginate the response?
       choices:
         - content: "`command --help`"
           explanation: Incorrect.
           isCorrect: false
         - content: "`Get-Help command`"
-          explanation: The command `Get-Help` is what you use to find out more about a command. However, the function `help` offers a better experience because it paginates the response and lets you traverse it row by row.
+          explanation: Incorrect. The command `Get-Help` is what you use to find out more about a command. However, the function `help` offers a better experience because it paginates the response and lets you traverse it row by row.
           isCorrect: false
         - content: "`help command`"
-          explanation: Correct. By using `help`, you pipe `Get-Help` into a function so that you can see the help page. You can see it row by row and line by line if you want.
+          explanation: Correct. By using `help`, you pipe `Get-Help` into a function so that you can see the help page. You can see it row by row and line by line, if you want.
           isCorrect: true
     - content: Which statement will most efficiently find the returned type from a command?
       choices:
