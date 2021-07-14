@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.configure-role-based-access-control
+metadata:
+  title: Configure Role-Based Access Control
+  description: "Configure Role-Based Access Control"
+  ms.date: 07/14/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure Role-Based Access Control
+summary: You will learn how to use role-based access control to ensure resources are protected, but users can still access the resources they need.
+abstract: |
+  - Identify the features and usage cases for role-based access control.
+  - List and create role definitions.
+  - Create role assignments.
+  - Identify the differences between Azure role-based access control and Azure Active Directory roles.
+  - Manage access to subscriptions using role-based access control.
+  - Review the built-in Azure role-based access control roles.
+prerequisites: ""
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.wwl.configure-role-based-access-control.introduction
+- learn.wwl.configure-role-based-access-control.implement
+- learn.wwl.configure-role-based-access-control.create-role-definition
+- learn.wwl.configure-role-based-access-control.create-role-assignment
+- learn.wwl.configure-role-based-access-control.compare-azure-rbac-roles-to-azure-ad-roles
+- learn.wwl.configure-role-based-access-control.apply-rbac-authentication
+- learn.wwl.configure-role-based-access-control.determine-rbac-roles
+- learn.wwl.configure-role-based-access-control.knowledge-check
+- learn.wwl.configure-role-based-access-control.summary-resources
+badge:
+  uid: learn.wwl.configure-role-based-access-control.badge
