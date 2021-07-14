@@ -92,7 +92,8 @@ You can associate zero or one NSG to each subnet in a virtual network. You can a
 
 As part of your Azure network design, it is important to plan your naming convention for your resources. An effective naming convention composes resource names from important information about each resource. A well-chosen name helps you quickly identify the resource's type, its associated workload, its deployment environment, and the Azure region hosting it. For example, a public IP resource for a production SharePoint workload residing in the West US region might be pip-sharepoint-prod-westus-001
 
-![azure public ip naming convetion example "pip-sharepoint-prod-westus-001"](../media/components-of-azure-resource-name.png)
+> [!div class="mx-imgBorder"]
+>![azure public ip naming convetion example "pip-sharepoint-prod-westus-001"](../media/components-azure-resource-name.png)
 
 All Azure resource types have a scope that defines the level that resource names must be unique. A resource must have a unique name within its scope. There are four levels you can specify a scope: [management group](/azure/governance/management-groups/overview), subscription, [resource group](/azure/azure-resource-manager/management/overview), and resource. Scopes are hierarchical, with each level of hierarchy making the scope more specific. 
 
@@ -104,13 +105,15 @@ All Azure resources are created in an Azure region and subscription. A resource 
 
 You can deploy as many virtual networks as you need within each subscription, up to the subscription limit. Some larger organizations with global deployments have multiple virtual networks that are connected between regions, for example.
 
-![World map showing Azure global network.](../media/microsoft-global-wan.png)
+> [!div class="mx-imgBorder"]
+>![World map showing Azure global network.](../media/microsoft-global-wan.png)
 
 ### Azure Availability Zones
 
 An Azure Availability Zone enables you to define unique physical locations within a region. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking. Designed to ensure high-availability of your Azure services, the physical separation of Availability Zones within a region protects applications and data from datacenter failures.
 
-![Azure region showing three availability zones.](../media/availability-zone.png)
+> [!div class="mx-imgBorder"]
+>![Azure region showing three availability zones.](../media/availability-zone.png)
 
 You should consider availability zones when designing your Azure network, and plan for services that support availability zones.
 
