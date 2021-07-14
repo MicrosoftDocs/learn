@@ -46,6 +46,6 @@ quiz:
         - content: Use the `post()` method, a route and a callback function.
           isCorrect: false
           explanation: You can theoretically use the `post()` to handle updates but it’s better to be specific and use a `put()` method as this is what’s expected of put.
-        - content: Use `get()` methhod and setup a route and a callback function.
+        - content: Use `get()` method and setup a route and a callback function.
           isCorrect: false
           explanation: The `get()` method is what you would use to read data not write it. 
