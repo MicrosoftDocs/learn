@@ -14,7 +14,7 @@ durationInMinutes: 6
 content: |
   [!include[](includes/10-configure-internet-access-azure-virtual-nat.md)]
 quiz:
-  title: ""
+  title: "Check your knowledgeChoose the best response for each of the questions below. When you're done, select **Check your answers**."
   questions:
   - content: "What is the purpose of NAT?"
     choices:

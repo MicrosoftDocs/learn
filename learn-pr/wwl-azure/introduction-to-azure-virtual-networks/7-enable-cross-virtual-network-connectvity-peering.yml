@@ -16,7 +16,7 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "You want the resources in one VNet to communicate with resources in a subnet in a different VNet. Which Azure network feature can you use?"
+  - content: "want the resources in one VNet to communicate with resources in a subnet in a different VNet. Which Azure network feature can use?"
     choices:
     - content: "VNet peering."
       isCorrect: true
@@ -27,7 +27,7 @@ quiz:
     - content: "Azure Availability Zones."
       isCorrect: false
       explanation: "that is incorrect, Azure Availability Zones are a high availability feature. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking."
-  - content: "When you configure global peering, what changes will you see in the peered VNets?"
+  - content: "When configure global peering, what changes will see in the peered VNets?"
     choices:
     - content: "A peering entry is added to the routing table in each VNet."
       isCorrect: true

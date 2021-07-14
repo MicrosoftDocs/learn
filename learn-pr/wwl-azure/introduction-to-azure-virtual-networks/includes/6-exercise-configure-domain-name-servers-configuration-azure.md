@@ -16,10 +16,9 @@ In this exercise, you will:
 
 1. Go to [Azure portal](https://portal.azure.com/).
 
-2. On the Azure home page, in the search bar, type dns, and then select **Private DNS zones**.  
-    ‎> [!div class="mx-imgBorder"]
-    > ![Azure portal home page with dns search.](../media/create-private-dns-zone.png)
-
+2. On the Azure home page, in the search bar, type dns, and then select **Private DNS zones**.
+    > [!div class="mx-imgBorder"]
+    >![Azure portal home page with dns search.](../media/create-private-dns-zone.png)
 3. In Private DNS zones, select **+ Create**.
 
 4. Use the information in the following table to create the private DNS zone.
@@ -216,7 +215,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 3. In TestVM1, select **Connect &gt; RDP**.
 
     > [!div class="mx-imgBorder"]
-    > ![TestVM1 with Connect and RDP highlighted.](../media/connect-to-am.png)
+    > ![TestVM1 with Connect and RDP highlighted.](../media/connect-vm.png)
 
 4. In TestVM1 | Connect, select **Download RDP file**.
 

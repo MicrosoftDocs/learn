@@ -20,6 +20,7 @@ A DNS zone hosts the DNS records for a domain. So, to start hosting your domain 
 -  The name of the zone must be unique within the resource group, and the zone must not exist already.-  The same zone name can be reused in a different resource group or a different Azure subscription.-  Where multiple zones share the same name, each instance is assigned different name server addresses.-  Root/Parent domain is registered at the registrar and pointed to Azure NS.-  Child domains are registered in AzureDNS directly.
 
 > [!NOTE] 
+>
 > You do not have to own a domain name to create a DNS zone with that domain name in Azure DNS. However, you do need to own the domain to configure the domain.
 
 ## Delegate DNS Domains
@@ -29,6 +30,7 @@ To delegate your domain to Azure DNS, you first need to know the name server nam
 Once the DNS zone is created, and you have the name servers, you need to update the parent domain. Each registrar has their own DNS management tools to change the name server records for a domain. In the registrar’s DNS management page, edit the NS records and replace the NS records with the ones Azure DNS created.
 
 > [!NOTE] 
+>
 > When delegating a domain to Azure DNS, you must use the name server names provided by Azure DNS. You should always use all four name server names, regardless of the name of your domain.
 
 ## Child Domains
@@ -38,6 +40,7 @@ If you want to set up a separate child zone, you can delegate a subdomain in Azu
 Setting up a subdomain follows the same process as typical delegation. The only difference is that NS records must be created in the parent zone contoso.com in Azure DNS, rather than in the domain registrar.
 
 > [!NOTE] 
+>
 > The parent and child zones can be in the same or different resource group. Notice that the record set name in the parent zone matches the child zone name, in this case *partners*.
 
 It's important to understand the difference between DNS record sets and individual DNS records. A record set is a collection of records in a zone that have the same name and are the same type.
@@ -48,8 +51,8 @@ It's important to understand the difference between DNS record sets and individu
 A record set cannot contain two identical records. Empty record sets (with zero records) can be created, but do not appear on the Azure DNS name servers. Record sets of type CNAME can contain one record at most.
 
 The **Add record set** page will change depending on the type of record you select. For an A record, you will need the TTL (Time to Live) and IP address. The time to live, or TTL, specifies how long each record is cached by clients before being requeried.
-
-![Screenshot of the Add a record page.](../media/dns-record-set2.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the Add a record page.](../media/dns-record-set2.png)
 
 
 ## Private DNS services
@@ -110,8 +113,8 @@ For scenarios which require more flexibility than Internal DNS allows, you can c
 ### Create a private DNS zone by using the portal
 
 You can create a private DNS zone using the Azure portal, Azure PowerShell, or Azure CLI.
-
-![Azure portal - creata private DNS zone.](../media/search-private-dns.png)
+> [!div class="mx-imgBorder"]
+> ![Azure portal - creata private DNS zone.](../media/search-private-dns.png)
 
 When the new DNS zone is deployed, you can manually create resource records, or use auto-registration, which will create resource records based on the Azure resource name.
 

@@ -143,7 +143,7 @@ Log in to the Azure portal, and then click **Create a resource**:
 In the search box, enter **Virtual Network**. Select Virtual Network in the search results.
 
 > [!div class="mx-imgBorder"]
-> ![Search results showing Virtual Network resource.](../media/virtual-network-in-azure-marketplace.png)
+> ![Search results showing Virtual Network resource.](../media/virtual-network-azure-marketplace.png)
 
 On the Virtual Network page, select **Create**. 
 
