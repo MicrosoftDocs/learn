@@ -8,5 +8,5 @@ In addition to basic text-based indexing, Azure Cognitive Search enables you to 
 
 Not only does this AI enrichment produce a more useful search experience, the insights extracted by your enrichment pipeline can be persisted in a *knowledge store* for further analysis or integration into a data pipeline for a business intelligence solution.
 
-> [NOTE]
+> [!NOTE]
 > To learn more, see the [Azure Cognitive Search page](https://azure.microsoft.com/services/search/).
