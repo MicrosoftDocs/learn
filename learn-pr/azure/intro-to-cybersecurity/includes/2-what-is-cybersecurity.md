@@ -13,12 +13,12 @@ You decide to start the training lesson by defining vocabulary used to discuss c
 - _Spear-Phishing_: A targeted phishing attack. It targets specific organizations, businesses, or individuals.
 - _Data Breach_: A data breach is the release of secure or confidential information to an untrusted environment.
 - _Kill chain_: Framework for a cyberattack. Typically, it consists of:
-1. Reconnaissance of target.
-1. Determination of the best attack methods.
-1. Delivery of the malware.
-1. The exploitation of malware on the target.
-1. Attacker gaining persistence access to the target.
-1. The intruder starting the end goal of intrusion.
+  - Reconnaissance of target.
+  - Determination of the best attack methods.
+  - Delivery of the malware.
+  - The exploitation of malware on the target.
+  - Attacker gaining persistence access to the target.
+  - The intruder starting the end goal of intrusion.
 
 - _Botnet_: A collection of compromised internet devices under third-party control. Each device is known as a bot. A botnet distributes malware or performs other functions decided by the third party.
 - _Zero-day vulnerability_: The term "Zero-day" is a security flaw n software, hardware or firmware that is unknown to the party or parties responsible for patching or otherwise fixing the flaw. The term zero day may refer to the vulnerability itself, or an attack that has zero days between the time the vulnerability is discovered and the first attack. 
