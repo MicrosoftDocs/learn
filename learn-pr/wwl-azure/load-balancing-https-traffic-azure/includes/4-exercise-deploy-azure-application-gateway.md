@@ -21,7 +21,8 @@ In this exercise, you will:
 1. Sign in to the [Azure portal](https://portal.azure.com/) with your Azure account.
 
 2. On any Azure portal page, in **Search resources, services and docs (G+/)**, enter application gateway, and then select **Application gateways** from the results.
-    ![Azure portal search for application gateway](../media/search-application-gateway.png)    
+    > [!div class="mx-imgBorder"]
+    > ![Azure portal search for application gateway](../media/search-application-gateway.png)    
 
 3. On the Application gateways page, select **+ Create**.
 
@@ -86,7 +87,8 @@ In this exercise, you will:
 
 19. Accept the default values for the other settings on the **Listener** tab.
 
-    ![Azure portal add an Application Gateway routing rule](../media/routing-rule-listener-tab.png)
+    > [!div class="mx-imgBorder"]
+    > ![Azure portal add an Application Gateway routing rule](../media/routing-rule-listener-tab.png)
 
 20. Select the **Backend targets** tab to configure the rest of the routing rule.
 
@@ -208,7 +210,8 @@ In this example, you install IIS on the virtual machines to verify Azure created
 
 7. Under **Target**, select **BackendVM2.** 
 
-   ![Azure portal add target backends to backend pool](../media/edit-backend-pool.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal add target backends to backend pool](../media/edit-backend-pool.png)
 
 8. Select **Save**.
 
@@ -222,13 +225,15 @@ Although IIS isn't required to create the application gateway, you installed it 
 
 1. Find the public IP address for the application gateway on its **Overview** page. 
 
-   ![Azure portal look up Frontend Public IP address ](../media/app-gateway-public-ip.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal look up Frontend Public IP address ](../media/app-gateway-public-ip.png)
 
 2. Copy the public IP address, and then paste it into the address bar of your browser to browse that IP address.
 
 3. Check the response. A valid response verifies that the application gateway was successfully created and can successfully connect with the backend.
 
-   ![Broswer - display BackendVM1 or BackendVM2 depending which backend server reponds to request.](../media/browse-backend.png)
+   > [!div class="mx-imgBorder"]
+   > ![Broswer - display BackendVM1 or BackendVM2 depending which backend server reponds to request.](../media/browse-backend.png)
 
 4. Refresh the browser multiple times and you should see connections to both BackendVM1 and BackendVM2.
 

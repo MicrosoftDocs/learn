@@ -3,7 +3,8 @@
 
 In this exercise, you will set up an Azure Front Door configuration that pools two instances of a web application that runs in different Azure regions. This configuration directs traffic to the nearest site that runs the application. Azure Front Door continuously monitors the web application. You will demonstrate automatic failover to the next available site when the nearest site is unavailable. The network configuration is shown in the following diagram:
 
-![Network configuration for Azure Front Door.](../media/front-door-environment-diagram.png)
+> [!div class="mx-imgBorder"]
+> ![Network configuration for Azure Front Door.](../media/front-door-environment-diagram.png)
 
 In this exercise, you will:
 
@@ -22,7 +23,8 @@ This exercise requires two instances of a web application that run in different 
 2. On the Azure portal home page, select + **Create a resource**.
 
 3. On the Create a resource page, select **WebApp**.
-   ![Azure portal Create a web app. ](../media/create-web-app.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal Create a web app. ](../media/create-web-app.png)
 
 4. On the Create Web App page, on the **Basics** tab, enter or select the following information.
 
@@ -68,7 +70,8 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
 
 1. On any Azure portal page, in **Search resources, services and docs (G+/)**, enter front door, and then select **Front Doors** from the results.
 
-   ![Azure portal Search for Front Door](../media/search-front-door.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal Search for Front Door](../media/search-front-door.png)
 
 2. On the Front Doors page, select **+ Create**.
 
@@ -84,14 +87,16 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
 
 5. On the Configuration tab, in **Frontends/domains**, select **+** to add a frontend host.
 
-   ![Create a Front Door add Frontends/Domains](../media/add-frontends-domains.png)
+   > [!div class="mx-imgBorder"]
+   > ![Create a Front Door add Frontends/Domains](../media/add-frontends-domains.png)
 
 6. Enter a globally unique **host name**, like contoso-frontend, and then select **Add**.
 
 7. Next, create a backend pool that contains your two web apps.  
    ‎In Create a Front Door, in **Backend** pools, select + to add a backend pool.
 
-   ![Create a Front Door add a backend pool](../media/add-backends.png)
+   > [!div class="mx-imgBorder"]
+   > ![Create a Front Door add a backend pool](../media/add-backends.png)
 
 8. Enter a globally unique **host name**, like BackendPool.
 
@@ -123,7 +128,8 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
 
 16. In Create a Front Door, in **Routing rules**, select **+** to configure a routing rule.
 
-    ![Create a Front Door add a routing rule](../media/add-routing-rules.png)
+    > [!div class="mx-imgBorder"]
+    > ![Create a Front Door add a routing rule](../media/add-routing-rules.png)
 
 17. In Add a rule, for **Name**, enter LocationRule. 
 
@@ -143,13 +149,15 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 2. On the Front Door page, note the **Frontend host** URL. This exercise uses contoso-frontend.azurefd.net, but you may have altered it to ensure the name is unique.
 
-   ![Azure portal Frontend page - Verify Frontend URL](../media/frontend-url.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal Frontend page - Verify Frontend URL](../media/frontend-url.png)
 
 3. In a browser, go to your Frontend host URL (contoso-frontend.azurefd.net). Your request will automatically be routed to the nearest server to you from the specified servers in the backend pool.
 
 4. You'll see the following information page:
 
-   ![Browser showing App Service information page](../media/app-service-info-page.png)
+   > [!div class="mx-imgBorder"]
+   > ![Browser showing App Service information page](../media/app-service-info-page.png)
 
 5. To test instant global failover in action, try the following steps:
 
@@ -157,7 +165,8 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 7. Select one of your web apps, then select **Stop**, and then select **Yes** to verify.
 
-   ![Azure portal showing stopped Web App](../media/stop-web-app.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal showing stopped Web App](../media/stop-web-app.png)
 
 8. Switch back to your browser and select Refresh. You should see the same information page.
 
@@ -167,7 +176,8 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 2. Switch back to your browser and select Refresh. This time, you should see an error message.
 
-   ![Browser showing App Service error page](../media/web-apps-both-stopped.png)
+   > [!div class="mx-imgBorder"]
+   > ![Browser showing App Service error page](../media/web-apps-both-stopped.png)
 
    Congratulations! You have configured and tested an Azure Front Door.
    
@@ -175,7 +185,8 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
    
 ## Task 4: Clean up resources
    
-> [!NOTE]  Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+> [!NOTE]  
+> Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
@@ -185,4 +196,5 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
    Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
    ```
 
-    > [!NOTE]  The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+    > [!NOTE]  
+    > The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.

@@ -2,7 +2,8 @@
 
 Azure Application Gateway is a web traffic load balancer that enables you to manage traffic to your web applications. Traditional load balancers operate at the transport layer (OSI layer 4 - TCP and UDP) and route traffic based on source IP address and port, to a destination IP address and port.
 
-![Azure Application Gateway traffic flow](../media/azure-application-gateway-flow.png)
+> [!div class="mx-imgBorder"]
+> ![Azure Application Gateway traffic flow](../media/azure-application-gateway-flow.png)
 
 Application Gateway can make routing decisions based on additional attributes of an HTTP request, for example URI path or host headers. For example, you can route traffic based on the incoming URL. So, if /images is in the incoming URL, you can route traffic to a specific set of servers (known as a pool) configured for images. If /video is in the URL, that traffic is routed to another pool that's optimized for videos.
 
@@ -38,7 +39,8 @@ There are two primary methods of routing traffic, path-based routing, and multip
 
 Path-based routing sends requests with different URL paths different pools of back-end servers. For example, you could direct requests with the path /video/* to a back-end pool containing servers that are optimized to handle video streaming, and direct /images/* requests to a pool of servers that handle image retrieval.
 
-![Flowchart from left to right: user, application gateway, image server pool. Traffic is directed to the image server pool based on *images or *video](../media/app-gateway-path.png)
+> [!div class="mx-imgBorder"]
+> ![Flowchart from left to right: user, application gateway, image server pool. Traffic is directed to the image server pool based on *images or *video](../media/app-gateway-path.png)
 
  
 
@@ -48,7 +50,8 @@ Multiple site routing configures more than one web application on the same appli
 
  
 
-![Flowchart left to right: user, application gateway, backend pool. Traffic is directed to the backend pool based on company, contoso or fabrikam](../media/app-gateway-site.png)
+> [!div class="mx-imgBorder"]
+> ![Flowchart left to right: user, application gateway, backend pool. Traffic is directed to the backend pool based on company, contoso or fabrikam](../media/app-gateway-site.png)
 
 Multi-site configurations are useful for supporting multi-tenant applications, where each tenant has its own set of virtual machines or other resources hosting a web application.
 
