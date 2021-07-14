@@ -1,8 +1,8 @@
 It's also possible to create *multiclass* classification models, in which there are more than two possible classes. For example, the health clinic might expand the diabetes model to classify patients as:
 
-1. Non-diabetic
-1. Type-1 diabetic
-1. Type-2 diabetic.
+* Non-diabetic
+* Type-1 diabetic
+* Type-2 diabetic.
 
 The individual class probability values would still add up to a total of 1 as the patient is definitely in only one of the three classes, and the most probable class would be predicted by the model.
 
