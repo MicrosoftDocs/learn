@@ -228,7 +228,7 @@ Although IIS isn't required to create the application gateway, you installed it 
 
 3. Check the response. A valid response verifies that the application gateway was successfully created and can successfully connect with the backend.
 
-   ![Broswer - display BackendVM1 or BackendVM2 depending which backend server reponds to request.](../media/browse-to-backend.png)
+   ![Broswer - display BackendVM1 or BackendVM2 depending which backend server reponds to request.](../media/browse-backend.png)
 
 4. Refresh the browser multiple times and you should see connections to both BackendVM1 and BackendVM2.
 
