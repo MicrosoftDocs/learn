@@ -178,9 +178,9 @@ Kubernetes groups containers into logical structures called pods, which have no 
                   name: http
     ```
 
-> [!NOTE]
-> In an AKS cluster which has multiple node pools (Linux and Windows), this above deployment manifest file also defines a `nodeSelector` to tell your AKS cluster to run the sample application's pod on a node that can run Linux containers.
-Linux nodes cannot run Windows containers & vice versa.
+    > [!NOTE]
+    > In an AKS cluster which has multiple node pools (Linux and Windows), this above deployment manifest file also defines a `nodeSelector` to tell your AKS cluster to run the sample application's pod on a node that can run Linux containers.
+  Linux nodes cannot run Windows containers & vice versa.
 
 1. Save the manifest file and close the editor.
 
