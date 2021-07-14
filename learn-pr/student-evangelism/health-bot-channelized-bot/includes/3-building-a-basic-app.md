@@ -1,38 +1,37 @@
-In the previous unit we did go through the steps to channelize the bot to Microsoft Teams using the ID that we obtained from the Health Bot platform. Now lets further see how to wrap up this bot into a Teams App using Microsoft Teams App Studio.
+In the previous unit, you learned how to make the bot available on Microsoft Teams. Now you'll learn how to wrap the bot into a Teams app by using App Studio.
 
-## Creating basic app Microsoft Teams App Studio
+## Create a basic app by using App Studio
 
-App Studio makes it easy to start creating or integrating your own Microsoft Teams apps, whether you develop custom apps for your enterprise or SaaS applications for Teams around the world by streamlining the creation of the manifest and package for your app and providing useful tools like the Card Editor and a React control library. For more information, see [Manage your apps with App Studio for Microsoft Teams](/microsoftteams/platform/concepts/build-and-test/app-studio-overview).
+App Studio for Teams makes it easy to start creating or integrating your own Teams apps, whether you develop custom apps for your enterprise or SaaS applications for use around the world. App Studio streamlines the creation of the manifest and package for your app and provides useful tools like the Card Editor and a React control library. For more information, see [Manage your apps with App Studio for Microsoft Teams](/microsoftteams/platform/concepts/build-and-test/app-studio-overview).
 
-First, open the Microsoft Teams App.
+1. Open Microsoft Teams.
 
-If it's not installed on the PC, [download and install Teams](https://www.microsoft.com/microsoft-teams/group-chat-software).
+   > [!NOTE] 
+   > If you don't have Teams, [download and install it](https://www.microsoft.com/microsoft-teams/group-chat-software).
 
-:::image type="content" source="../media/3-teams-app-studio.png" alt-text="Screenshot of Teams app studio.":::
 
-1. After the app launches, select the **Apps** on the bottom-left corner of the screen. Here all published applications can be seen. Keep in mind that Microsoft Teams is an organization-specific platform. Now to create health bot app, search for the **App Studio** in the search bar.
+1. Select **Apps** in the lower-left corner of the window. You'll see all the published applications. (Keep in mind that Microsoft Teams is an organization-specific platform.) 
 
-   :::image type="content" source="../media/3-app-studio-search.png" alt-text="Screenshot of Teams app search for app studio.":::
+   :::image type="content" source="../media/3-teams-app-studio.png" alt-text="Screenshot that shows published apps in Teams.":::
+1. To create the health bot app, search for **App Studio** in the search box. Select **App Studio** in the search results:
+   :::image type="content" source="../media/3-app-studio-search.png" alt-text="Screenshot that shows search results for App Studio.":::
 
-1. Select the App Studio from the dropdown.
+1. Select **Add** in the resulting window:
+   :::image type="content" source="../media/3-app-studio-add.png" alt-text="Screenshot that shows the Add button.":::
 
-   :::image type="content" source="../media/3-app-studio-add.png" alt-text="Screenshot of Teams app studio add button.":::
 
-1. When you select the App studio, a dialog appears on the screen. Select on the **Add** button.
+1. A new page will open. At the top of the page, select **Manifest editor**. Then select **Create a new app**:
+   :::image type="content" source="../media/3-create-new-app.png" alt-text="Screenshot that shows the Create a new app button.":::
 
-   :::image type="content" source="../media/3-create-new-app.png" alt-text="Screenshot of creating new app button.":::
+   There are three main steps to creating a new app:
 
-1. Selecting **Add** redirects you to a new page. At the top is **Manifest Editor, Validation, Card editor, UI tools ,Chat and About section**. Select the Manifest Editor and then select **Create a new app**
+   - Details
+   - Capabilities
+   - Finish
+
+1. In the **Details** section, select **App details**. You enter all the App data here.
 
    :::image type="content" source="../media/3-app-id-generation.png" alt-text="Screenshot of generating new app ID.":::
-
-There are three main sections in creating a new app.
-
-- Details
-- Capabilities
-- Finish
-
-In the **Details** section, locate **App Details**. You enter all the App data here.
 
 - **Short name:** For this bot Enter "ParamedicBot" in this field. The short name is the displayed App name.
 
