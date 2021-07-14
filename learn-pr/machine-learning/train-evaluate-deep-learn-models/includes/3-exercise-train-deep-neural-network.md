@@ -10,7 +10,7 @@ To complete the exercise, you'll need:
 - An Azure Machine Learning workspace with a compute instance and the **ml-basics** repository cloned.
 
 > [!NOTE]
-> This module is one of many that make use of an Azure Machine Learning workspace. If you are completing this module as part of the [Create machine learning models](https://docs.microsoft.com/learn/paths/create-machine-learn-models?azure-portal=true) learning path or in preparation for the [Azure Data Scientist](https://docs.microsoft.com/learn/certifications/azure-data-scientist?azure-portal=true) certification, consider creating the workspace once and reusing it in other modules. After completing the exercise, be sure to follow the **Clean Up** instructions to stop compute resources, and retain the workspace if you plan to reuse it.
+> This module makes use of an Azure Machine Learning workspace. If you are completing this module in preparation for the [Azure Data Scientist](/learn/certifications/azure-data-scientist?azure-portal=true) certification, consider creating the workspace once and reusing it in other modules. After completing the exercise, be sure to follow the **Clean Up** instructions to stop compute resources, and retain the workspace if you plan to reuse it.
 
 ### Create an Azure Machine Learning workspace
 
@@ -59,7 +59,7 @@ The files used in this module (and other related modules) are published in the *
 
 After you've created a Jupyter environment and cloned the **ml-basics** repository, you're ready to explore deep learning.
 
- 1. In Jupyter, in the **ml-basics** folder, open the **Deep Neural Networks (PyTorch).ipynb** or **Deep Neural Networks (Tensorflow).ipynb** notebook, depending on your framework preference, and follow the instructions it contains.
+ 1. In Jupyter, in the **ml-basics** folder, open *either* the **Deep Neural Networks (PyTorch).ipynb** or **Deep Neural Networks (Tensorflow).ipynb** notebook, depending on your framework preference, and follow the instructions it contains.
  2. When you've finished, close and halt all notebooks.
 
 When you've finished working through the notebook, return to this module and move on to the next unit to learn more.
