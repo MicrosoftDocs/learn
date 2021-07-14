@@ -1,0 +1,38 @@
+To distribute traffic, a back-end address pool contains the IP addresses of the virtual NICs that are connected to the load balancer.
+
+:::image type="content" source="../media/AZ104_Backend_Pool1-2888b399.png" alt-text="Flowchart. The frontend is connected to the load balancer. The load balancer is connected to the backend.":::
+
+
+How you configure the backend pool depends on whether you are using the Standard or Basic SKU.
+
+:::row:::
+  :::column:::
+    
+  :::column-end:::
+  :::column:::
+    **Standard SKU**
+  :::column-end:::
+  :::column:::
+    **Basic SKU**
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Backend pool endpoints
+  :::column-end:::
+  :::column:::
+    Any VM in a single virtual network, including a blend of VMs, availability sets, and VM scale sets.
+  :::column-end:::
+  :::column:::
+    VMs in a single availability set or virtual machine scale set.
+  :::column-end:::
+:::row-end:::
+
+
+Backend pools are configured from the Backend Pool blade. For the Standard SKU you can connect to an Availability set, single virtual machine, or a virtual machine scale set.
+
+:::image type="content" source="../media/AZ104_Backend_Pool2-4dfee2aa.png" alt-text="Screenshot of the Settings for Backend pools shows the list of options available for configuring the backend pool.":::
+
+
+> [!NOTE]
+> In the Standard SKU, you can have up to 1000 instances in the backend pool. In the Basic SKU, you can have up to 300 instances.
