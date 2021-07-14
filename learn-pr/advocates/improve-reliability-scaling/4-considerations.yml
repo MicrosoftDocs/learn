@@ -20,8 +20,8 @@ quiz:
     choices:
     - content: 'Azure Monitor'
       isCorrect: false
-      explanation: 'Azure monitor is not used to retrieve the limits for compute resources.'
-    - content: 'the List Usage endpoint'
+      explanation: 'Azure Monitor is not used to retrieve the limits for compute resources.'
+    - content: 'List Usage endpoint'
       isCorrect: true
       explanation: 'Correct.'
     - content: 'CosmosDB'
@@ -32,10 +32,10 @@ quiz:
     choices:
     - content: 'find the bugs in your application or service'
       isCorrect: true
-      explanation: 'Correct, you may find you need to scale out less.'
+      explanation: 'Correct. You may find you need to scale out less.'
     - content: 'scale up'
       isCorrect: false
-      explanation: 'It is better to first determine if there are issues in your application and service because you may find you do not need to scale.'
+      explanation: 'It is best to first determine if there are issues in your application and service because you may find you do not need to scale.'
     - content: 'increase soft service limits'
       isCorrect: false
-      explanation: 'It is better to first determine if issued in your application or service are causing you to consume more resources than you need.'
+      explanation: 'It is best to first determine if issues in your application or service are causing you to consume more resources than you need.'

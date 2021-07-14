@@ -1,6 +1,6 @@
 When you have multiple IT and engineering teams, how can you control what access they have to the resources in your cloud environment? It's a good security practice to grant users only the rights they need to perform their job, and only to the relevant resources. 
 
-Instead of defining the detailed access requirements for each individual, and then updating access requirements when new resources are created, Azure enables you to control access through [Azure role-based access control](https://docs.microsoft.com/azure/role-based-access-control/overview?azure-portal=true) (Azure RBAC).
+Instead of defining the detailed access requirements for each individual, and then updating access requirements when new resources are created, Azure enables you to control access through [Azure role-based access control](/azure/role-based-access-control/overview?azure-portal=true) (Azure RBAC).
 
 Azure provides built-in roles that describe common access rules for cloud resources. You can also define your own roles. Each role has an associated set of access permissions that relate to that role. When you assign individuals or groups to one or more roles, they receive all of the associated access permissions.
 
@@ -23,9 +23,9 @@ Scopes include:
 
 When you grant access at a parent scope, those permissions are inherited by all child scopes. For example:
 
-* When you assign the [Owner](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles?azure-portal=true#owner) role to a user at the management group scope, that user can manage everything in all subscriptions within the management group.
-* When you assign the [Reader](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles?azure-portal=true#reader) role to a group at the subscription scope, the members of that group can view every resource group and resource within the subscription.
-* When you assign the [Contributor](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles?azure-portal=true#contributor) role to an application at the resource group scope, the application can manage resources of all types within that resource group, but not other resource groups within the subscription.
+* When you assign the [Owner](/azure/role-based-access-control/built-in-roles?azure-portal=true#owner) role to a user at the management group scope, that user can manage everything in all subscriptions within the management group.
+* When you assign the [Reader](/azure/role-based-access-control/built-in-roles?azure-portal=true#reader) role to a group at the subscription scope, the members of that group can view every resource group and resource within the subscription.
+* When you assign the [Contributor](/azure/role-based-access-control/built-in-roles?azure-portal=true#contributor) role to an application at the resource group scope, the application can manage resources of all types within that resource group, but not other resource groups within the subscription.
 
 ## When should I use Azure RBAC?
 

@@ -36,7 +36,7 @@ quiz:
     - content: "A Shortcut trust"
       isCorrect: false
       explanation: "That's incorrect. You configure shortcut trusts to reduce the time taken to authenticate between AD DS domains that are in different parts of an AD DS forest."
-  - content: "Which of the following is a built-in container in an AD DS domain that can home computer accounts?"
+  - content: "Which of the following is a built-in container in an AD DS domain that can manage home computer accounts?"
     choices:
     - content: "The Domain Controllers OU"
       isCorrect: true

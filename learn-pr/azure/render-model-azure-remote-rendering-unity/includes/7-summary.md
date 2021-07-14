@@ -6,6 +6,6 @@ The automotive engineering team needed a solution for rendering a 3D model of a 
 
 - Sign up for the [Mixed Reality Developer Program](https://mixedreality.microsoftcrmportals.com/signup/?Place=APRIL) to receive the latest on mixed reality developer tools, events, and early access offers.
 - View [pricing](https://azure.microsoft.com/pricing/details/remote-rendering/) for Azure Remote Rendering.
-- Review the [minimum system requirements](https://docs.microsoft.com/azure/remote-rendering/overview/system-requirements) to work with Azure Remote Rendering.
-- Learn how to [deploy the Unity sample to HoloLens](https://docs.microsoft.com/azure/remote-rendering/quickstarts/deploy-to-hololens).
-- Learn how to [deploy the Unity sample to Desktop](https://docs.microsoft.com/azure/remote-rendering/quickstarts/deploy-to-desktop).
+- Review the [minimum system requirements](/azure/remote-rendering/overview/system-requirements) to work with Azure Remote Rendering.
+- Learn how to [deploy the Unity sample to HoloLens](/azure/remote-rendering/quickstarts/deploy-to-hololens).
+- Learn how to [deploy the Unity sample to Desktop](/azure/remote-rendering/quickstarts/deploy-to-desktop).

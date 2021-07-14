@@ -95,7 +95,7 @@ The team leaves Andy and Mara to work out the details.
 
 ## How does continuous delivery compare to right-click publishing?
 
-Many development tools provide ways to publish your application directly to some target environment, such as Microsoft Internet Information Services (IIS) or Azure. For example, you can [Publish an ASP.NET Core app to Azure by using Visual Studio](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?azure-portal=true). This process is sometimes called *right-click publishing*.
+Many development tools provide ways to publish your application directly to some target environment, such as Microsoft Internet Information Services (IIS) or Azure. For example, you can [Publish an ASP.NET Core app to Azure by using Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?azure-portal=true). This process is sometimes called *right-click publishing*.
 
 Right-click publishing is a great way to quickly build a prototype. For example, you might right-click publish your application to Azure so that you can share a new idea with your team. But this technique has limitations.
 

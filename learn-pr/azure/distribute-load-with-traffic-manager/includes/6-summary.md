@@ -12,4 +12,4 @@ You can now use Traffic manager to improve your availability and global distribu
 
 Visit the following links to learn more about some of the subjects we explored in this module:
 
-- [What is Traffic Manager?](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview)
+- [What is Traffic Manager?](/azure/traffic-manager/traffic-manager-overview)

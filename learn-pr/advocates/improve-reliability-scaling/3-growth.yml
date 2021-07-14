@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: 'organic growth'
       isCorrect: true
-      explanation: 'Correct, this description is the definition of organic growth.'
+      explanation: 'Correct. This description is the definition of organic growth.'
     - content: 'inorganic growth'
       isCorrect: false
       explanation: 'This description is the definition of organic growth.'
@@ -41,13 +41,13 @@ quiz:
       explanation: 'Request Units (RUs) are a mixture of Memory, CPU, and IOPS'
     - content: 'all of the above'
       isCorrect: true
-      explanation: 'Correct, Request Units (RUs) are a mixture of memory, CPU, and IOPS'
+      explanation: 'Correct. Request Units (RUs) are a mixture of memory, CPU, and IOPS'
 
   - content: 'Which of the following options is _not_ a business metric you should correlate your resource usage to when planning for capacity?'
     choices:
     - content: 'server count'
       isCorrect: true
-      explanation: 'Correct, this answer is not a business metric.'
+      explanation: 'Correct. This answer is not a business metric.'
     - content: 'monthly active users (MAUs)'
       isCorrect: false
       explanation: 'This answer is a business metric you should correlate your resource usage to when planning for capacity.'

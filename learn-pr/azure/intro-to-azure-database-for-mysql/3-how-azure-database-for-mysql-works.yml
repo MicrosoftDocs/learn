@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-database-for-mysql.3-how-azure-database-for-mysql-works  
+title: How Azure Database for MySQL works  
+metadata:
+  unitType: learning-content  
+  title: How Azure Database for MySQL works
+  description: How Azure Database for MySQL works
+  ms.date: 03/23/2021  
+  author: tchristiani
+  ms.author: terrychr
+  ms.topic: interactive-tutorial 
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-how-azure-database-for-mysql-works.md)]

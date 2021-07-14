@@ -8,7 +8,7 @@ The **ManufacturingVnet** virtual network is deployed in the **North Europe** re
 
 The **ResearchVnet** virtual network is deployed in the **West India** region, near the location of the organization's research and development team. The research and development team uses this virtual network. The team has a small, stable set of resources that is not expected to grow. The team needs a small number of IP addresses for a few virtual machines for their work.
 
-![A diagram of virtual networks that you need to create](../media/5-design-implement-vnet-peering.svg)
+![A diagram of virtual networks that you need to create.](../media/5-design-implement-vnet-peering.svg)
 
 You will create the following resources:
 
@@ -38,7 +38,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
     az network vnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name CoreServicesVnet \
-        --address-prefix 10.20.0.0/16 \
+        --address-prefixes 10.20.0.0/16 \
         --location westus
     ```
 
@@ -98,7 +98,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
     az network vnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name ManufacturingVnet \
-        --address-prefix 10.30.0.0/16 \
+        --address-prefixes 10.30.0.0/16 \
         --location northeurope
     ```
 
@@ -158,7 +158,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
     az network vnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name ResearchVnet \
-        --address-prefix 10.40.40.0/24 \
+        --address-prefixes 10.40.40.0/24 \
         --location westindia
     ```
 

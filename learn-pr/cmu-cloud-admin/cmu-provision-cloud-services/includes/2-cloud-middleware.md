@@ -2,7 +2,7 @@ Middleware is a general term for software that serves to \"glue together\" separ
 
 Cloud middleware refers to the software platform that controls and coordinates different cloud services and makes it possible for users to issue service requests and cloud providers to manage their infrastructure. Cloud middleware consists of multiple abstraction layers that hide system complexity and that enable communication between various applications, services, and devices that are part of a cloud service (Figure 2.3).
 
-![Figure 2.3: Cloud middleware features](../media/middleware-features.png)
+![Figure 2.3: Cloud middleware features.](../media/middleware-features.png)
 
 _Figure 2.3: Cloud middleware features._
 

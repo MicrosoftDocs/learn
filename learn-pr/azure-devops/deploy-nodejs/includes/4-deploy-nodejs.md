@@ -5,7 +5,7 @@ In this part, you:
 > [!div class="checklist"]
 > * Install the Azure Pipelines extension for your GitHub repo.
 > * Set up an Azure DevOps project for this module.
-> * Create a CI/CD pipeline triggered by commits to the *master* branch.
+> * Create a CI/CD pipeline triggered by commits to the *main* branch.
 > * Review the pipeline tasks.
 > * Save the pipeline to trigger a CI/CD workflow.
 
@@ -63,7 +63,7 @@ The starter pipeline code provides everything you need to build, test, package, 
 
 ### The CI trigger
 
-The pipeline is configured to run whenever a change is committed to the `master` branch. You can adjust this as needed, such as if you wanted to include (or exclude) runs based on their branch, path, or tag.
+The pipeline is configured to run whenever a change is committed to the `main` branch. You can adjust this as needed, such as if you wanted to include (or exclude) runs based on their branch, path, or tag.
 
 [!code-yml[](code/4-1-azure-pipelines.yml)]
 
@@ -101,7 +101,7 @@ After the build completes, the `ArchiveFiles@2` task packages the build output a
 
 [!code-yml[](code/4-6-azure-pipelines.yml)]
 
-You don't need to provide your own storage for build artifacts. Azure Pipelines holds the results of your builds based on the configured retention policy. To learn more, see [Build and release retention policies](https://docs.microsoft.com/azure/devops/pipelines/policies/retention?tabs=yaml&azure-portal=true).
+You don't need to provide your own storage for build artifacts. Azure Pipelines holds the results of your builds based on the configured retention policy. To learn more, see [Build and release retention policies](/azure/devops/pipelines/policies/retention?azure-portal=true&tabs=yaml).
 
 ### Deploying the build
 
@@ -128,10 +128,10 @@ You can learn more about the flexibility of this task in the [Azure Web App task
 1. In Azure Pipelines, go to the build. Trace the build as it runs.
 1. After the build has succeeded, select the web site's deploy task and click the URL to view the deployed site.
 
-    ![Locating the web site URL in Azure Pipelines](../media/4-deploy-url.png)
+    :::image type="content" source="../media/4-deploy-url.png" alt-text="Locating the web site URL in Azure Pipelines.":::
 
 1. You see the site running on App Service.
 
-    ![The Node.js application running in a web browser](../media/4-hello-world.png)
+    :::image type="content" source="../media/4-hello-world.png" alt-text="The Node.js application running in a web browser.":::
 
 Although this application is very basic, you now have a complete CI/CD pipeline that you can extend. You can repeat the steps you performed here to deploy one of your own Node.js projects to Azure.

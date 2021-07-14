@@ -10,8 +10,8 @@ Finally, you've learned about ways to identify performance bottlenecks in your a
 
 To learn more about the Azure Well-Architected Framework and about performance efficiency, see the following articles:
 
-- [Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework?azure-portal=true)
-- [Azure Cache for Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview?azure-portal=true)
-- [What is a content delivery network on Azure?](https://docs.microsoft.com/azure/cdn/cdn-overview?azure-portal=true)
-- [What is Traffic Manager?](https://docs.microsoft.com/azure/traffic-manager/traffic-manager-overview?azure-portal=true)
-- [What is Azure Monitor?](https://docs.microsoft.com/azure/azure-monitor/overview?azure-portal=true)
+- [Azure Well-Architected Framework](/azure/architecture/framework?azure-portal=true)
+- [Azure Cache for Redis](/azure/azure-cache-for-redis/cache-overview?azure-portal=true)
+- [What is a content delivery network on Azure?](/azure/cdn/cdn-overview?azure-portal=true)
+- [What is Traffic Manager?](/azure/traffic-manager/traffic-manager-overview?azure-portal=true)
+- [What is Azure Monitor?](/azure/azure-monitor/overview?azure-portal=true)

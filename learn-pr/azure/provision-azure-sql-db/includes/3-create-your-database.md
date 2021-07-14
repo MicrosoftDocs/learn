@@ -46,7 +46,7 @@ For your prototype, you won't need a SQL elastic pool because you need only one 
 
 ## What is collation?
 
-Collation refers to the rules that sort and compare data. Collation helps you define sorting rules when case sensitivity, accent marks, and other language characteristics are important.
+Collation refers to the rules that sort and compare data. Collation helps you define *sorting rules* when case sensitivity, accent marks, and other language characteristics are important. Sorting rules enable you to arrange data in an ordered sequence.
 
 Let's take a moment to consider what the default collation, **SQL_Latin1_General_CP1_CI_AS**, means:
 
@@ -89,8 +89,8 @@ Over time, if you realize you need additional compute power to keep up with dema
 
     | Setting | Value |
     | --- | --- |
-    | **Server name** | A globally unique [server name](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions). |
-    | **Server admin login** | A [database identifier](https://docs.microsoft.com/sql/relational-databases/databases/database-identifiers) that serves as your primary administrator login name. |
+    | **Server name** | A globally unique [server name](/azure/architecture/best-practices/naming-conventions). |
+    | **Server admin login** | A [database identifier](/sql/relational-databases/databases/database-identifiers) that serves as your primary administrator login name. |
     | **Password** | Any valid password that has at least eight characters and contains characters from three of these categories: uppercase characters, lowercase characters, numbers, and non-alphanumeric characters. |
     | **Location** | Any valid location from the dropdown. |
 

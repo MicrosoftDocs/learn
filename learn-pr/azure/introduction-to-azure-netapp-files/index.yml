@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure.introduction-to-azure-netapp-files
+metadata:
+  moduleType: introduction        
+  title: Introduction to Azure NetApp Files         
+  description: Evaluate whether Microsoft Azure NetApp Files is appropriate for migrating and running your organization's file-based workloads.       
+  ms.date: 06/18/2021            
+  author: nickwalkmsft   
+  ms.author: nickwalk           
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure NetApp Files
+summary: Describe how the low latency and high availability of Microsoft Azure NetApp Files work to provide on-premises-like performance for cloud workloads. Determine the types of file-based workloads that are suitable for migration to Azure NetApp Files.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Evaluate whether Azure NetApp Files is appropriate for migrating and running your organization's file-based workloads.
+    - Describe how the performance tiers of Azure NetApp Files enable you to choose a performance level that fits your workload requirements.
+prerequisites: |
+  - Basic knowledge of Azure products, including Azure Virtual Network and Azure Virtual Gateway.
+  - Basic knowledge of networked file system protocols, particularly Server Message Block (SMB) and Network File System (NFS).
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - administrator
+  - database-administrator
+  - data-engineer
+  - data-scientist
+  - solution-architect
+products:
+  - azure-netapp-files
+units:
+- learn.azure.introduction-to-azure-netapp-files.introduction
+- learn.azure.introduction-to-azure-netapp-files.what-is-azure-netapp-files
+- learn.azure.introduction-to-azure-netapp-files.how-azure-netapp-files-works
+- learn.azure.introduction-to-azure-netapp-files.when-to-use-azure-netapp-files
+- learn.azure.introduction-to-azure-netapp-files.knowledge-check
+- learn.azure.introduction-to-azure-netapp-files.summary
+badge:
+  uid: learn.azure.introduction-to-azure-netapp-files.badge

@@ -1,16 +1,16 @@
-Massively parallel compute applications are often used in security-conscious industries, like banking or insurance. Consider using the features described below to enhance the security of your Batch account. 
+Massively parallel compute applications are often used in security-conscious industries, like banking or insurance. Consider using the following features to enhance the security of your Azure Batch account. 
 
-## Batch account private endpoints
+## Private endpoints for a Batch account
 
-Azure Private Link enables access to Azure PaaS Services and Azure hosted customer-owned/partner services over a private endpoint in your virtual network. Private Link restricts access to a Batch account from within the virtual network or from any peered virtual network. Resources mapped to Private Link are also accessible on-premises over private peering through VPN or Azure ExpressRoute.
+Azure Private Link enables access to the Azure platform as a service (PaaS) services and Azure-hosted, customer-owned services over a private endpoint in your virtual network. Private Link restricts access to a Batch account from within the virtual network or from any peered virtual network. Resources mapped to Private Link are also accessible on-premises over private peering through VPN or Azure ExpressRoute.
 
-To use private endpoints, a Batch account needs to be configured appropriately when created; public network access configuration must be disabled. Once created, private endpoints can be created and associated with the Batch account.
+To use private endpoints, you need to create a Batch account and configure it appropriately. Public network access configuration must be disabled. After you create the Batch account, you can create private endpoints and associate them with the account.
 
-By default, a private endpoint is an ARM resource. An ARM template defines the infrastructure and configuration that are required for deployment, without writing a sequence of programming commands. ARM template deployment helps to create the virtual network, the web app, the private endpoint and the private DNS zone.
+By default, a private endpoint is an Azure Resource Manager resource. An Azure Resource Manager template (ARM template) defines the infrastructure and configuration that are required for deployment, without writing a sequence of programming commands. ARM template deployment helps to create the virtual network, the web app, the private endpoint, and the private DNS zone.
 
 ## Pools without public IP addresses
 
-By default, all the compute nodes in a Batch pool are assigned a public IP address. This address is used by the Batch service to schedule tasks and for communication with compute nodes, including outbound access to the internet.
+By default, all the compute nodes in a Batch pool are assigned a public IP address. The Batch service uses this address to schedule tasks and for communication with compute nodes, including outbound access to the internet.
 
 To restrict access to these nodes and reduce the discoverability of these nodes from the internet, you can provision the pool without public IP addresses. This feature is most often used in conjunction with private endpoints. 
 

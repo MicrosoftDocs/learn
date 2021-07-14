@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.ms-learn-live-foundations-serverless-dev.7-return-data-to-caller
 
-title: Use the Context Object to Return Data
+title: Use the context object to return data
 
 metadata:
-  title: Use the Context Object to Return Data
-  description: Use the Context Object to Return Data
+  title: Use the context object to return data
+  description: Use the context object to return data
   
   ms.date: 04/29/2020
   

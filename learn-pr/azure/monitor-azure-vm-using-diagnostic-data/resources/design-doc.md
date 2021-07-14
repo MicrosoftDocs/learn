@@ -170,7 +170,6 @@ Phil - Exercise 6 can't setup these as they are all for Windows VM not Linux, so
 
 ## Resources
 
-- [How to monitor virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/windows/monitor)
-- [Tutorial: Monitor and update a Linux virtual machine in Azure](https://docs.microsoft.com/azure/virtual-machines/linux/tutorial-monitoring)
-- Related module: [Keep your virtual machines updated](https://docs.microsoft.com/learn/modules/keep-your-virtual-machines-updated/2-update-management-solution-on-a-vm)
-
+- [How to monitor virtual machines in Azure](/azure/virtual-machines/windows/monitor)
+- [Tutorial: Monitor and update a Linux virtual machine in Azure](/azure/virtual-machines/linux/tutorial-monitoring)
+- Related module: [Keep your virtual machines updated](/learn/modules/keep-your-virtual-machines-updated/2-update-management-solution-on-a-vm)

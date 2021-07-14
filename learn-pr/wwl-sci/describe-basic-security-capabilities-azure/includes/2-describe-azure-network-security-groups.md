@@ -26,7 +26,7 @@ Each rule specifies one or more of the following properties:
 - **Source or destination**: Specify either individual IP address or an IP address range, service tag (a group of IP address prefixes from a given Azure service), or application security group. Specifying a range, a service tag, or application security group, enables you to create fewer security rules.
 - **Protocol**: What network protocol will the rule check? The protocol can be any of: TCP, UDP, ICMP or Any.
 - **Direction**: Whether the rule should be applied to inbound or outbound traffic.
-- **Port range**: You can specify an individual or range of ports. For example, you could specify 80 or 10000-10005. Specifying ranges enables you to create fewer security rules. You can't specify multiple ports or port ranges in the same security rule in NSGs created through the classic deployment model.
+- **Port range**: You can specify an individual or range of ports. For example, you could specify 80 or 10000-10005. Specifying ranges enables you to be more efficient when creating security rules. You can't specify multiple ports or port ranges in the same security rule in NSGs created through the classic deployment model.
 - **Action**: Finally, you need to decide what will happen when this rule is triggered.
 
 There are limits to the number of security rules you can create in an NSG. Use Azure NSGs to automatically allow or deny traffic to your cloud-based resources and assets.

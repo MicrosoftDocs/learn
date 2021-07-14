@@ -9,7 +9,7 @@ struct Container {
 
 impl Container {
     pub fn new(value: u32) -> Self {
-    Container { value }
+        Container { value }
     }
 }
 

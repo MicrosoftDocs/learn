@@ -65,7 +65,7 @@ Assume you have a cluster with one control plane and two nodes. When you add nod
 
 :::image type="content" source="../media/4-nodes-assigned-ip-addresses.svg" alt-text="Diagram of nodes with assigned IP addresses in a cluster." border="false":::
 
-Each pod that you deploy gets assigned an IP from a pool of IP addresses. For example, assume that your configuration uses the 10.32.0.0/12 network range.
+Each pod that you deploy gets assigned an IP from a pool of IP addresses. For example, assume that your configuration uses the 10.32.0.0/12 network range, as the following image shows.
 
 :::image type="content" source="../media/4-nodes-pods-assigned-ip-addresses.svg" alt-text="Diagram of nodes and pods with assigned IP addresses in a cluster." border="false":::
 
@@ -101,7 +101,7 @@ In the drone tracking app, network communication is as follows:
 
 To support these scenarios, you can configure three types of services to expose your app's components.
 
-|||
+| **Service** | **Description** |
 |---|---|
 | **ClusterIP** | The address assigned to a service that makes the service available to a set of services inside the cluster. For example, communication between the front-end and back-end components of your app. |
 | **NodePort** | The node port, between 30000 and 32767, that the Kubernetes control plane assigns to the service. An example is 192.169.1.11 on clusters01. You then configure the service with a target port on the pod that you want to expose. For example, configure port 80 on the pod running one of the front ends. You can now access the front end through a node IP and port address.  |
@@ -123,7 +123,7 @@ For example, assume that you have many running pods. Only a few of these pods ar
 
 Kubernetes uses the same storage volume concept that you find when using Docker. Docker volumes are less managed than the Kubernetes volumes because Docker volume lifetimes aren't managed. The Kubernetes volume's lifetime is an explicit lifetime that matches the pod's lifetime. This lifetime match means a volume outlives the containers that run in the pod. However, if the pod is removed, so is the volume.
 
-:::image type="content" source="../media/4-kubernetes-storage.svg" alt-text="Diagram of a service with selector labels." border="false":::
+:::image type="content" source="../media/4-kubernetes-storage.svg" alt-text="Diagram of a service with selector labels again." border="false":::
 
 Kubernetes provides options to provision persistent storage with the use of *PersistentVolumes*. You can also request specific storage for pods by using *PersistentVolumeClaims*.
 

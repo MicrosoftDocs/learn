@@ -3,7 +3,7 @@ uid: learn.azure.cloud-adoption-framework-govern.5-governance-disciplines
 title: Governance disciplines
 metadata:
   title: Governance disciplines
-  description: Understand the actionable disciplines from the Govern methodology to implement the key processes for creating cloud adoption guardrails.
+  description: Understand the five actionable disciplines in the Govern methodology that guide the creation of cloud adoption guardrails.
   ms.date: 09/22/2020
   author: BrianBlanchard
   ms.author: jumcn

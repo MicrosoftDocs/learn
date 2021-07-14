@@ -15,11 +15,11 @@ In this module, you accomplished the following actions:
 
 To determine your mobile device management and mobile application management next steps, see the following resources:
 
-- To become more familiar with Intune, walk through the [Microsoft Endpoint Manager tutorial](https://docs.microsoft.com/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager?azure-portal=true).
+- To become more familiar with Intune, walk through the [Microsoft Endpoint Manager tutorial](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager?azure-portal=true).
 - [Plan your deployment with FastTrack experts included in EMS subscription](https://go.microsoft.com/fwlink/?linkid=2143850&azure-portal=true)
 
 ## Resources
 
 For more information about Microsoft Endpoint Manager, see the following resources:
 
-- [Microsoft Endpoint Manager documentation](https://docs.microsoft.com/mem/?azure-portal=true)
+- [Microsoft Endpoint Manager documentation](/mem/?azure-portal=true)

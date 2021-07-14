@@ -9,4 +9,4 @@ Now that you have reviewed this module, you should be able to:
 
 Use these resources to discover more.
 
-- See the [TypeScript Handbook: Interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html) for more information about interfaces.
+- See the [TypeScript Handbook: Interfaces](https://www.typescriptlang.org/docs/handbook/2/objects.html) for more information about interfaces.

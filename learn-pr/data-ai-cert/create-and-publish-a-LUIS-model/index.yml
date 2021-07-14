@@ -4,8 +4,8 @@ metadata:
   title: Add conversational intelligence to your apps by using Language Understanding Intelligent Service (LUIS)
   description: In this module, we'll introduce you to Language Understanding Intelligent Service (LUIS) and show how to build and publish a LUIS model
   ms.date: 1/24/2019
-  author: gerryaobrien
-  ms.author: gerryo
+  author: wwlpublish
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 abstract: | 

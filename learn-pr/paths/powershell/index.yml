@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.powershell
 metadata:
-  title: PowerShell commands
+  title: Automate administrative tasks by using PowerShell
   description: PowerShell provides a large set of commands with which you can automate your tasks, like user management, CI/CD, managing cloud resources and much more. There's also testing capabilities via Pester and third-party modules you can install on your system, to extend your list of commands.
   brand: vs-code
   ms.date: 03/15/2021
@@ -9,7 +9,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: PowerShell commands
+title: Automate administrative tasks by using PowerShell
 summary: PowerShell can be used to automate tasks such as user management, CI/CD, managing cloud resources and much more. You'll learn to run commands, how to learn more about PowerShell and additionally to create and run script files. 
 prerequisites: |
   - Basic familiarity with using a command-line shell like Command Prompt or Git Bash 
@@ -21,12 +21,15 @@ levels:
 - beginner
 roles:
 - student
+- administrator
 - developer
 products:
 - vs-code
 modules:
 - learn.powershell.intro-to-powershell
 - learn.powershell.connect-commands
+- learn.languages.powershell-write-first
 - learn.powershell.scripting-with-powershell
+- learn.automate-azure-tasks-with-powershell
 trophy:
   uid: learn.powershell.powershell.trophy

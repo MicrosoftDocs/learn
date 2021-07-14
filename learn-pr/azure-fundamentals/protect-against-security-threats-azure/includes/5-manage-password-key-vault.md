@@ -12,9 +12,9 @@ The Azure CLI is a way to work with Azure resources from the command line or fro
 
 1. On the Azure portal menu, or from the **Home** page, select **Create a resource**.
 
-1. From the search bar, enter **Key Vault**, and then select **Key Vault** from the results.
+1. From the search bar, enter **Key Vault**, and then select **Key Vaults** from the results.
 
-1. On the **Key Vault** pane, select **Create**. The **Create key vault** pane appears.
+1. On the **Key Vaults** pane, select **Create**. The **Create key vault** pane appears.
 
 1. On the **Basics** tab, fill in the following values for each setting.
 
@@ -27,7 +27,7 @@ The Azure CLI is a way to work with Azure resources from the command line or fro
     | Subscription | **Concierge Subscription** |
     | Resource group | **<rgn>[sandbox resource group name]</rgn>** |
     | **Instance details** |
-    | Key vault name | **my-keyvault-NNN** |
+    | Key vault name | **my-keyvault-NNN** where NNN is a unique identifier|
 
     Leave the other settings at their default values.
 
@@ -45,7 +45,7 @@ The Azure CLI is a way to work with Azure resources from the command line or fro
 
     :::image type="content" source="../media/5-portal-key-vault-overview.png" alt-text="A screenshot of the Azure portal showing details about a key vault. It shows fields such as the parent resource group, location, and DNS name.":::
 
-1. As an optional step, on the left menu pane, under **Settings**, examine some of the other features.
+1. As an optional step, on the left menu pane under **Settings**, examine some of the other features.
 
     Although they're initially empty, here you'll find places where you can store keys, secrets, and certificates.
 
@@ -72,27 +72,27 @@ The Azure CLI is a way to work with Azure resources from the command line or fro
 
 ## Show the password
 
-Here, you access the password from Key Vault two times. First, you access it from the Azure portal. Next, you access it from the Azure CLI.
+Here, you access the password from Key Vault two ways. First, you access it from the Azure portal. Next, you access it from the Azure CLI.
 
 1. From your **Key Vault/Secrets** pane, select **MyPassword**. The **MyPassword/Versions** pane appears. You see that the current version is enabled.
 
 1. Select the current version. The **Secret Version** pane appears.
 
-    Under **Secret Identifier**, you see a URI that you can now use with applications to access the secret. Remember, only authorized applications can access this secret.
+    In **Secret Identifier** field, you see a URI that you can now use with applications to access the secret. Remember, only authorized applications can access this secret.
 
-1. Select **Show Secret Value**.
+1. Select **Show Secret Value**. The unique value for this version of the password displays.
 
     :::image type="content" source="../media/5-portal-secret-value.png" alt-text="A screenshot of the Azure portal showing the secret value in the key vault.":::
 
 1. From Cloud Shell, run this command.
 
     > [!NOTE]
-    > If you're not familiar with the Azure CLI, just follow along.
+    > Replace <**my-keyvault-NNN**> with the name you used earlier.
 
     ```azurecli
     az keyvault secret show \
       --name MyPassword \
-      --vault-name $(az keyvault list --query [0].name --output tsv) \
+      --vault-name <my-keyvault-NNN> \
       --query value \
       --output tsv
     ```

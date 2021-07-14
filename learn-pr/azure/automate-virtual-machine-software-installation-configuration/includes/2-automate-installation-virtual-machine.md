@@ -143,7 +143,7 @@ az network nsg rule create \
     --name [SSH rule name] \
     --protocol tcp \
     --priority 1000 \
-    --destination-port-range 22 \
+    --destination-port-ranges 22 \
     --access allow \
     --resource-group [resource group name]
 ```
@@ -177,7 +177,7 @@ az network nsg rule create \
     --name [HTTP rule name] \
     --protocol tcp \
     --priority 1001 \
-    --destination-port-range 80 \
+    --destination-port-ranges 80 \
     --access allow \
     --resource-group [resource group name]
 ```

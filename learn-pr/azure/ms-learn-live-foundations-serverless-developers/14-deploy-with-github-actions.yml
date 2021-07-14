@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.ms-learn-live-foundations-serverless-dev.14-deploy-with-github-actions
 
-title: Configure Continuous Deployment using GitHub Actions
+title: Configure continuous deployment using GitHub actions
 
 metadata:
-  title: Configure Continuous Deployment using GitHub Actions
-  description: Configure Continuous Deployment using GitHub Actions
+  title: Configure continuous deployment using GitHub actions
+  description: Configure continuous deployment using GitHub actions
   
   ms.date: 04/29/2020
   
@@ -18,7 +18,7 @@ metadata:
 
 azureSandbox: true
 
-durationInMinutes: 5
+durationInMinutes: 10
 
 content: |
   [!include[](includes/14-deploy-with-github-actions.md)]

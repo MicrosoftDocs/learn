@@ -5,7 +5,7 @@ metadata:
   description: "Learn to manage LUIS apps through versioning, key management, handling data, and improving predictions."
   ms.date: 09/26/2020
   author: wwlpublish
-  ms.author: gerryo
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage your Language Understanding Intelligent Service (LUIS) Apps

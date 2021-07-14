@@ -21,7 +21,7 @@ abstract: |
   - What are the Microsoft technologies for data classification and protection? 
 prerequisites: |
   -Basic experience with Azure services
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/classification-and-protection.svg
 levels:
 - beginner
 roles:

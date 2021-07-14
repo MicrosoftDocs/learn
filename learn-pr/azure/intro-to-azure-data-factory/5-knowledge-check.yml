@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-data-factory.5-knowledge-check  
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 04/07/2021  
+  author: tchristiani
+  ms.author: terrychr  
+  ms.topic: interactive-tutorial 
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "When considering Azure Data Factory, which of the following statements about its components is accurate?"
+    choices:
+    - content: "Data movement is an example of a pipeline."
+      isCorrect: false
+      explanation: "Incorrect. Data movement is an example of an activity."
+    - content: "A data flow is used to represent a data store."
+      isCorrect: false
+      explanation: "Incorrect. A linked service represents a data store."
+    - content: "A pipeline is a logical grouping of activities."
+      isCorrect: true
+      explanation: "Correct. These activities together perform a task."
+  - content: "Which of the following components in Azure Data Factory enable data engineers to develop data transformation logic without needing to write code?"
+    choices:
+    - content: "Data flows"
+      isCorrect: true
+      explanation: "Correct. Data flows are run as activities within Azure Data Factory pipelines that use scaled-out Apache Spark clusters."
+    - content: "Datasets"
+      isCorrect: false
+      explanation: "Incorrect. Datasets represent data structures within your data stores."
+    - content: "Integration runtimes"
+      isCorrect: false
+      explanation: "Incorrect. Integration runtimes provides the bridge between the activity and linked services."
+  - content: "In Azure Data Factory, which of the following is an advantage of using pipelines?"
+    choices:
+    - content: "They point to the data that you want to use in your activities as either inputs or outputs."
+      isCorrect: false
+      explanation: "Incorrect. This is a description of datasets."
+    - content: "You can more easily manage activities as a set instead of as individual items."
+      isCorrect: true
+      explanation: "Correct. The advantage of using a pipeline is that you can more easily manage the activities as a set instead of as individual items."
+    - content: "They enable your data engineers to develop data transformation logic without needing to write code."
+      isCorrect: false
+      explanation: "Incorrect. This is a description of data flows."
+  - content: "Which of the following organization types often rely on SQL Server Integration Services and could benefit from Azure Data Factory?"
+    choices:
+    - content: "Small and medium organizations"
+      isCorrect: false
+      explanation: "Incorrect. These organizations might not benefit from Azure Data Factory."
+    - content: "Big data organizations"
+      isCorrect: false
+      explanation: "Incorrect. For these organizations, Azure Data Factory provides a means to create and run pipelines in the cloud."
+    - content: "Traditional relational data warehousing organizations"
+      isCorrect: true
+      explanation: "Correct. For these organizations, Azure Data Factory provides the ability to run SSIS packages on Azure."
+  - content: "Which authentication service might typically be used in the data storage and analysis phases of data integration with Azure Data Factory?"
+    choices:
+    - content: "Azure AD"
+      isCorrect: true
+      explanation: "Correct. This is the cloud-based authentication service that underpins Azure Data Factory."
+    - content: "Active Directory Domain Services (AD DS)"
+      isCorrect: false
+      explanation: "Incorrect. AD DS is an on-premises authentication service."
+    - content: "Azure AD DS"
+      isCorrect: false
+      explanation: "Incorrect. Azure AD DS is a cloud-based managed authentication service, but it's not used in this context."

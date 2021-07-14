@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.ms-learn-live-foundations-serverless-dev.3-create-function-endpoint
 
-title: Create a Function Endpoint that Reacts to an HTTP Request using HTTP trigger
+title: Create a function endpoint that reacts to an HTTP request using HTTP trigger
 
 metadata:
-  title: Create a Function Endpoint that Reacts to an HTTP Request using HTTP trigger
-  description: Create a Function Endpoint that Reacts to an HTTP Request using HTTP trigger
+  title: Create a function endpoint that reacts to an HTTP request using HTTP trigger
+  description: Create a function endpoint that reacts to an HTTP request using HTTP trigger
   
   ms.date: 04/29/2020
   

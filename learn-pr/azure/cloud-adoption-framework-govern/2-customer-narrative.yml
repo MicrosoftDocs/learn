@@ -3,7 +3,7 @@ uid: learn.azure.cloud-adoption-framework-govern.2-customer-narrative
 title: Customer narrative
 metadata:
   title: Customer narrative
-  description: Tailwind Traders is preparing their cloud environment. Learn more about their cloud portfolio to help them find the best governance solutions for their workloads.
+  description: Tailwind Traders is preparing its cloud environment. Learn more about Tailwind's cloud portfolio as the organization seeks the best governance solutions for its workloads.
   ms.date: 09/22/2020
   author: BrianBlanchard
   ms.author: jumcn

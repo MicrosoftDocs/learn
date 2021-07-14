@@ -16,7 +16,7 @@ You can view all groups by selecting **Groups** under the **Manage** section fro
 
 The same options are available to create groups in Azure AD as we saw with users. The Azure portal is the easiest way to create groups. You must select the group type (Security or Microsoft 365), assign a unique group name, description and a _membership type_.
 
-![Screenshot of the Create Group feature in the Azure portal](../media/4-add-group-portal.png)
+![Screenshot of the Create Group feature in the Azure portal.](../media/4-add-group-portal.png)
 
 The membership type field can be one of three values:
 
@@ -40,4 +40,4 @@ New-AzureADGroup -Description "Marketing" -DisplayName "Marketing" -MailEnabled 
 
 Once a group is created, you can add or remove users (or groups) from it by editing the group membership by selecting the group and using the options under the **Manage** section.
 
-![Screenshot showing the group management options](../media/4-edit-group-membership.png)
+![Screenshot showing the group management options.](../media/4-edit-group-membership.png)

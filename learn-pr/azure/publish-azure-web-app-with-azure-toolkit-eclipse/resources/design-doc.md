@@ -19,7 +19,7 @@ Publish a web app to Azure by using Azure Toolkit for Eclipse
 ## Product(s)
 
 - [Azure Web Apps](https://azure.microsoft.com/services/app-service/web/)
-- [Azure Toolkit for Eclipse](https://docs.microsoft.com/java/azure/eclipse/azure-toolkit-for-eclipse)
+- [Azure Toolkit for Eclipse](/java/azure/eclipse/azure-toolkit-for-eclipse)
 
 ## Prerequisites
 

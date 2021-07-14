@@ -2,7 +2,7 @@ Visual Studio App Center supports Azure AD Conditional Access, an advanced featu
 
 ## Setting up Conditional Access
 
-This is an abbreviated guide to setting up Conditional Access. Full documentation is available at [https://docs.microsoft.com/azure/active-directory/conditional-access/overview](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+This is an abbreviated guide to setting up Conditional Access. Full documentation is available at [https://docs.microsoft.com/azure/active-directory/conditional-access/overview](/azure/active-directory/conditional-access/overview).
 
 In the Azure portal, open your Active Directory tenant, then open the **Security** settings, and click on **Conditional Access**.
 

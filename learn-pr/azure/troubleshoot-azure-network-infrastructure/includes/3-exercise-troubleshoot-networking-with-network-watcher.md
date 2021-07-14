@@ -26,9 +26,9 @@ Let's start by creating the problematic infrastructure, which includes a configu
     az network vnet create \
         --resource-group $RG \
         --name MyVNet1 \
-        --address-prefix 10.10.0.0/16 \
+        --address-prefixes 10.10.0.0/16 \
         --subnet-name FrontendSubnet \
-        --subnet-prefix 10.10.1.0/24
+        --subnet-prefixes 10.10.1.0/24
     ```
 
 1. To create the subnet called **BackendSubnet**, run this command.
@@ -155,7 +155,7 @@ Now, you can use Network Watcher to troubleshoot connectivity between two VMs in
 
 1. In the dropdowns, select your **Subscription** and **Resource Group** for this exercise. Network Watcher displays your network topology.
 
-    ![Screenshot that shows the exercise network topology](../media/3-network-topology.png)
+    ![Screenshot that shows the exercise network topology.](../media/3-network-topology.png)
 
 ## Use Connection Monitor to run tests from the back end to the front end
 
@@ -188,7 +188,7 @@ The topology appears to be correct. To get more information, let's set up some t
 
 1. At the far right of each endpoint, select the ellipsis, and then select **Enable Network Watcher**. Wait for each endpoint to deploy.
 
-    ![Screenshot that shows enabling of Network Watcher](../media/3-enable-network-watcher.png)
+    ![Screenshot that shows enabling of Network Watcher.](../media/3-enable-network-watcher.png)
 
 1. Select **BackendVM** from the expanded Azure endpoint list.
 
@@ -307,7 +307,7 @@ Let's use the IP flow verify tool to get more information.
     | Remote port | 3389 |
     | | |
 
-    ![Screenshot that shows an IP flow test](../media/3-ip-flow-test.png)
+    ![Screenshot that shows an IP flow test.](../media/3-ip-flow-test.png)
 
 1. Examine the results. They show that access is denied because of NSG and security rules.
 

@@ -4,6 +4,6 @@ In this module, you explored different techniques to copy Azure Storage blobs be
 
 ## Learn more
 
-- [Using the Azure CLI with Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-azure-cli)
-- [Transfer data with the AzCopy on Windows](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy)
-- [Azure Storage APIs for .NET](https://docs.microsoft.com/dotnet/api/overview/azure/storage?view=azure-dotnet)
+- [Using the Azure CLI with Azure Storage](/azure/storage/common/storage-azure-cli)
+- [Transfer data with the AzCopy on Windows](/azure/storage/common/storage-use-azcopy)
+- [Azure Storage APIs for .NET](/dotnet/api/overview/azure/storage?view=azure-dotnet)

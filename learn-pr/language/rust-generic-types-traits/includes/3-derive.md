@@ -98,12 +98,12 @@ use std::fmt;
 
 impl fmt::Display for Point {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-    write!(f, "({}, {})", self.x, self.y)
+        write!(f, "({}, {})", self.x, self.y)
     }
 }
 ```
 
-Our code will then compile just fine:
+Our code will now compile:
 
 ```output
     (1, 2)

@@ -16,7 +16,7 @@ You're now confident that you can handle real-time workloads on Azure.
 
 ## Enable diagnostic logging
 
-Learn how Azure provides [built-in diagnostics to help with debugging](https://docs.microsoft.com/azure/app-service/troubleshoot-diagnostic-logs/).
+Learn how Azure provides [built-in diagnostics to help with debugging](/azure/app-service/troubleshoot-diagnostic-logs/).
 
 ## Clean up resources
 
@@ -33,7 +33,7 @@ This command might take a minute to run.
 
 ## Additional resources
 
-- [Tutorial: Create a function in Java with an Event Hub trigger and an Azure Cosmos DB output binding](https://docs.microsoft.com/azure/azure-functions/functions-event-hub-cosmos-db?WT.mc_id=java-9741-sakriema)
-- [An introduction to Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction?WT.mc_id=java-9741-sakriema)
-- [Best practices for Azure Functions](https://docs.microsoft.com/azure/azure-functions/storage-considerations?WT.mc_id=java-9741-sakriema)
-- [Store and manage connection strings with Azure Key Vault](https://docs.microsoft.com/azure/key-vault/secrets/quick-create-java?WT.mc_id=java-9741-sakriema)
+- [Tutorial: Create a function in Java with an Event Hub trigger and an Azure Cosmos DB output binding](/azure/azure-functions/functions-event-hub-cosmos-db?WT.mc_id=java-9741-sakriema)
+- [An introduction to Azure Cosmos DB](/azure/cosmos-db/introduction?WT.mc_id=java-9741-sakriema)
+- [Best practices for Azure Functions](/azure/azure-functions/storage-considerations?WT.mc_id=java-9741-sakriema)
+- [Store and manage connection strings with Azure Key Vault](/azure/key-vault/secrets/quick-create-java?WT.mc_id=java-9741-sakriema)

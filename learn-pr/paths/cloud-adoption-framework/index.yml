@@ -1,0 +1,48 @@
+### YamlMime:LearningPath
+uid: learn.accelerate-cloud-adoption
+metadata:
+  title: Accelerate cloud adoption with the Microsoft Cloud Adoption Framework for Azure
+  description: Do you need a clear path forward for your cloud journey? This learning path includes best practice guidance to help you create a cloud strategy, define a cloud adoption plan, prepare your cloud environment with proper governance, and implement cloud operations in alignment with your organizational needs.  Cloud architects and IT professionals will learn and engage with the proven best practices, tools, and documentation in the Cloud Adoption Framework for Azure to build the technical knowledge needed to help your organization successfully adopt the cloud and meet business goals.
+  brand: azure
+  ms.date: 04/26/2021
+  author: BrianBlanchard
+  ms.author: bblanch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Accelerate cloud adoption with the Microsoft Cloud Adoption Framework for Azure
+summary: Do you need a clear path forward for your cloud journey? This learning path includes best practice guidance to help you create a cloud strategy, define a cloud adoption plan, prepare your cloud environment with proper governance, and implement cloud operations in alignment with your organizational needs.  Cloud architects and IT professionals will learn and engage with the proven best practices, tools, and documentation in the Cloud Adoption Framework for Azure to build the technical knowledge needed to help your organization successfully adopt the cloud and meet business goals.
+prerequisites: An understanding of cloud computing is helpful, but isn't necessary.
+iconUrl: /learn/achievements/cloud-adoption-framework.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- solution-architect
+- auditor
+- business-analyst
+- business-owner
+- data-engineer
+- database-administrator
+- developer
+- devops-engineer
+- functional-consultant
+- privacy-manager
+- risk-practitioner
+- security-engineer
+- solution-architect
+- student
+- technology-manager 
+products:
+- azure
+modules:
+- learn.azure.cloud-adoption-framework-getting-started
+- learn.cloud-adoption-framework-strategy
+- learn.azure.cloud-adoption-framework-plan
+- learn.azure.cloud-adoption-framework-ready
+- learn.cloud-adoption-framework-migrate
+- learn.azure.cloud-adoption-framework-govern
+- learn.cloud-adoption-framework-manage
+- learn.innovate-applications-azure-cloud-technologies
+trophy:
+  uid: learn.cloud-adoption-framework.trophy

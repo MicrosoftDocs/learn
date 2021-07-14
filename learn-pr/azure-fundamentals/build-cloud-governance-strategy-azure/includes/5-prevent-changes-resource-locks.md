@@ -1,4 +1,4 @@
-A [resource lock](https://docs.microsoft.com/azure/azure-resource-manager/management/lock-resources?azure-portal=true) prevents resources from being accidentally deleted or changed.
+A [resource lock](/azure/azure-resource-manager/management/lock-resources?azure-portal=true) prevents resources from being accidentally deleted or changed.
 
 Even with Azure role-based access control (Azure RBAC) policies in place, there's still a risk that people with the right level of access could delete critical cloud resources. Think of a resource lock as a warning system that reminds you that a resource should not be deleted or changed.
 

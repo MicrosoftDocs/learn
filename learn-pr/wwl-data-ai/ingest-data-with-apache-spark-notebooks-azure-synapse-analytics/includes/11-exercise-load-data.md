@@ -1,12 +1,8 @@
-## Ingesting data with Apache Spark notebooks in Azure Synapse Analytics
-In order to go through this exercise, it require a set-up with instructions that can be found here:
-[Set up](https://github.com/ctesta-oneillmsft/asa-vtd)
-
-## Ingest and explore Parquet files from a data lake with Synapse Spark
+## Ingest and explore Parquet files from a data lake with Apache Spark for Azure Synapse
 
 Tailwind Traders has Parquet files stored in their data lake. They want to know how they can quickly access the files and explore them using Apache Spark.
 
-You recommend using the Data hub to view the Parquet files in the connected storage account, then use the _new notebook_ context menu to create a new Synapse Notebook that loads a Spark dataframe with the contents of a selected Parquet file.
+You recommend using the Data hub to view the Parquet files in the connected storage account, then use the _new notebook_ context menu to create a new Synapse notebook that loads a Spark DataFrame with the contents of a selected Parquet file.
 
 1. Open Synapse Studio (<https://web.azuresynapse.net/>).
 
@@ -18,13 +14,13 @@ You recommend using the Data hub to view the Parquet files in the connected stor
 
     ![The Parquet file is displayed as described.](../media/2010-sale-parquet-new-notebook.png "New notebook")
 
-    This generates a notebook with PySpark code to load the data in a Spark dataframe and display 100 rows with the header.
+    It generates a notebook with PySpark code to load the data in a Spark dataframe and display 100 rows with the header.
 
 4. Make sure the Spark pool is attached to the notebook.
 
     ![The Spark pool is highlighted.](../media/2010-sale-parquet-notebook-sparkpool.png "Notebook")
 
-    The Spark pool provides the compute for all notebook operations. If we look at the bottom of the notebook, we'll see that the pool has not started. When you run a cell in the notebook while the pool is idle, the pool will start and allocate resources. This is a one-time operation until the pool autopauses from being idle for too long.
+    The Spark pool provides the compute for all notebook operations. If we look at the bottom of the notebook, we'll see that the pool has not started. When you run a cell in the notebook while the pool is idle, the pool will start and allocate resources. It is a one-time operation until the pool autopauses from being idle for too long.
 
     ![The Spark pool is in a paused state.](../media/spark-pool-not-started.png "Not started")
 
@@ -42,7 +38,7 @@ You recommend using the Data hub to view the Parquet files in the connected stor
 
     We have just set the number of executors allocated to **SparkPool01** for the session.
 
-7. Add the following beneath the code in the cell to define a variable named `datalake` whose value is the name of the primary storage account (**replace the REPLACE_WITH_YOUR_DATALAKE_NAME value with the name of the storage account in line 2**):
+7. Add the following code beneath the code in the cell to define a variable named `datalake` whose value is the name of the primary storage account (**replace the REPLACE_WITH_YOUR_DATALAKE_NAME value with the name of the storage account in line 2**):
 
     ```python
     datalake = 'REPLACE_WITH_YOUR_DATALAKE_NAME'
@@ -84,13 +80,13 @@ You recommend using the Data hub to view the Parquet files in the connected stor
 
     ![The Add code button is highlighted underneath the chart.](../media/chart-add-code.png "Add code")
 
-14. The Spark engine can analyze the Parquet files and infer the schema. To do this, enter the following in the new cell and **run** it:
+14. The Apache Spark engine can analyze the Parquet files and infer the schema. To do so, enter the below code in the new cell and **run** it:
 
     ```python
     data_path.printSchema()
     ```
 
-    Your output should look like the following:
+    Your output should look as follows:
 
     ```text
     root
@@ -107,7 +103,7 @@ You recommend using the Data hub to view the Parquet files in the connected stor
         |-- StoreId: short (nullable = true)
     ```
 
-    Spark evaluates the file contents to infer the schema. This automatic inference is sufficient for data exploration and most transformation tasks. However, when you load data to an external resource like a SQL pool table, sometimes you need to declare your own schema and apply that to the dataset. For now, the schema looks good.
+    Apache Spark evaluates the file contents to infer the schema. This automatic inference is sufficient for data exploration and most transformation tasks. However, when you load data to an external resource like a SQL pool table, sometimes you need to declare your own schema and apply that to the dataset. For now, the schema looks good.
 
 15. Now let's use the dataframe to use aggregates and grouping operations to better understand the data. Create a new cell and enter the following, then **run** the cell:
 

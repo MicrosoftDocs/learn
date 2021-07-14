@@ -1,16 +1,28 @@
-You work for Contoso, an organization that delivers managed services to customers. Contoso has been approached by a prospective customer, Lamna Healthcare Company, who has recently migrated to Azure. They're a mid-sized company with no in-house expertise in Azure management. They want to focus on providing services for their customers, most of which are hospitals. While Contoso wants a managed service, they're keen to only extend the access and privileges needed to carry out administration, maintenance, and governance activities.
+If your organization provides technical services to other customers who use Microsoft Azure, you may need access to your customer's Azure environments. To help you easily deliver services to multiple different customers, Azure Lighthouse provides you with a granular level of access to the appropriate customer resources, from within your own existing Azure tenant. Azure Lighthouse also provides your customer with visibility of your access permissions and your activities inside their Azure environment.
 
-Microsoft has recently launched Azure Lighthouse to help service providers manage customer resources, but you know little about it. Lamna Healthcare is an important customer, and you're keen to win their business. In the future, you'd also like to scale this service to manage multiple customers with as much automation as possible.
+In this module, you work for Contoso, an organization that delivers technical services to customers (also known as a Managed Service Provider or MSP). Contoso has signed managed service contracts with three new customers, with different requirements for each contract. Each customer wants to focus on providing products or services to their own customers and they are relying on Contoso to manage their Azure resources for them. Both Contoso and the customers want to use a "least  privilege" approach - meaning that Contoso only has the access and privileges needed to carry out the administration, maintenance, and governance activities that are specified in the contracts.
 
-To respond, you need to get a better understanding of the capabilities of Azure Lighthouse, its features, any ancillary costs, and how it's set up and configured.
+You are tasked with getting a better understanding of the capabilities of Azure Lighthouse and how you can onboard a customer to provide security, monitoring, and management services at scale.
 
-In this module, you'll learn about what Azure Lighthouse is and how it can deliver a scalable, automated process. You'll learn how to onboard a customer to provide security, monitoring, and management services at scale. Finally, you'll learn how to work on your customer's tenant, and how to publish a service offering to Azure Marketplace.
+Finally, you'll learn how to work on your customer's tenant, and how to publish a service offering to Azure Marketplace.
 
-**Learning objectives**
+> [!IMPORTANT]
+> Your own Microsoft Azure subscription is required to action the exercises in this module, but the exercises can be viewed and this module completed without performing the exercise steps. The tasks incur no cost and a free Azure trial can be used.
+>
+> [Sign up for a free trial](https://azure.microsoft.com/free/).
 
-- Explore what Azure Lighthouse is
-- Understand the features of Azure Lighthouse
-- See how to use Azure Lighthouse for cross tenant management
-- See how to use Azure Resource Manager templates
-- Set up Security Center with Alerting
+## Learning objectives
+
+After completing this module, you'll be able to:
+
+- Explain the features of Azure Lighthouse 
+- Describe how Azure Lighthouse is used for managing multiple Microsoft Azure tenants
+- Configure Azure Resource Manager templates for deploying Azure Lighthouse
+- Deploy Azure Lighthouse with Azure Resource Manager templates
+- Set up Azure Security Center with Alerting
 - Create a managed service offer on the Azure Marketplace
+
+## Prerequisites
+
+- Basic understanding of Microsoft Azure subscriptions
+- Basic understanding of Azure resource groups and resources.

@@ -1,6 +1,6 @@
 Microsoft Endpoint Manager supports several device platforms. The available platforms that can be managed by Endpoint Manager include iOS/iPadOS, Windows, Android, and macOS. These platforms are often referred to as device types. Because each platform is different, each offers sightly different enrollment methods, devices settings, protection policy settings, configuration policy settings, custom policy settings, and remote actions.
 
-![Microsoft Endpoint Manager supported platforms](../media/intro-to-endpoint-manager-08.png)
+![Microsoft Endpoint Manager supported platforms.](../media/intro-to-endpoint-manager-08.png)
 
 You need to determine the platforms that must be supported in your endpoint environment. Once you know the platforms you need to support, you must verify whether each platform is supported by Intune when you create your endpoint management design.
 
@@ -26,7 +26,7 @@ You can manage devices running the following operating systems:
 - Windows 10 IoT Mobile Enterprise
 - Windows Holographic for Business
 
-For more information about Intune supported devices, platforms, and operating systems, see [Supported operating systems and browsers in Intune](https://docs.microsoft.com/mem/intune/fundamentals/supported-devices-browsers?azure-portal=true).
+For more information about Intune supported devices, platforms, and operating systems, see [Supported operating systems and browsers in Intune](/mem/intune/fundamentals/supported-devices-browsers?azure-portal=true).
 
 ## Configuration Manager supported operating systems
 
@@ -38,10 +38,10 @@ The supported OS versions for clients and devices that can be managed by Configu
     - Windows 8.1 (x86, x64): Professional, Enterprise
 - Windows Servers (*several variations available*)
 - Windows Server Core (*several variations available*)
-- Windows Virtual Desktop
+- Azure Virtual Desktop
 - Windows Embedded computers (*several variations available*)
 - Windows 10 IoT Mobile Enterprise
 - Windows 10 Team for Surface Hub
 - Mac computers (*several variations available*)
  
-For more information about Configuration Manager supported devices, servers, platforms, and operating systems, see [Supported OS versions for clients and devices for Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/plan-design/configs/supported-operating-systems-for-clients-and-devices?azure-portal=true).
+For more information about Configuration Manager supported devices, servers, platforms, and operating systems, see [Supported OS versions for clients and devices for Configuration Manager](/mem/configmgr/core/plan-design/configs/supported-operating-systems-for-clients-and-devices?azure-portal=true).

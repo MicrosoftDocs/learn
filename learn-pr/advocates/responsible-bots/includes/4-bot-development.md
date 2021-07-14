@@ -266,4 +266,4 @@ Next, we'll enable the bot to understand human language, and we'll apply some of
 [BotEmulator]: https://aka.ms/abs/build/emulatordownload?azure-portal=true
 [GitHubSample]: https://github.com/MicrosoftDocs/learn-responsible-bots?azure-portal=true
 [GitHubSampleStage1]: https://github.com/MicrosoftDocs/learn-responsible-bots/tree/t1-capdict?azure-portal=true
-[InstallVS]: https://docs.microsoft.com/visualstudio/install/install-visual-studio?view=vs-2019?azure-portal=true
+[InstallVS]: /visualstudio/install/install-visual-studio?view=vs-2019&azure-portal=true

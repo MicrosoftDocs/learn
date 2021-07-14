@@ -1,11 +1,10 @@
-
 In this exercise, you'll protect your webhook payload with a secret, and learn how to validate payloads from GitHub inside an Azure Function.
 
 ## Get Key for your Azure Function
 
-1. In the Azure portal, return to your function app that you created from the first exercise in the module.
+1. In the Azure portal, return to your Function App that you created from the first exercise in the module.
 
-1. Expand **Functions**.
+1. In the left menu pane, under **Functions**, select **Functions**.
 
 1. Select the function that you created.
 
@@ -15,11 +14,13 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
     const Crypto = require('crypto');
     ```
 
-1. Select **Function Keys** from the left-hand menu, select **Click to show** next to the **default** key.
+1. In the left menu pane, select **Function Keys**. The **Function Keys** pane appears for your function.
 
-1. Under **Actions**, select **Copy** and save this key for use in the next step.
+1. Under the **Value** column, next to the **default** key, select the **Hidden value. Click to show value** link.
 
-1. Back in the body of your function, after the `context.log` statement, add the following code. Replace *\<default key\> with the default key that you copied to the clipboard earlier:
+1. Select the **Copy to clipboard** icon, and save this key for use in the next step.
+
+1. Back in the body of your function, after the `context.log` statement, add the following code. Replace *\<default key\>* with the default key that you copied to the clipboard earlier:
 
     ```JavaScript
     const hmac = Crypto.createHmac("sha1", "<default key>");
@@ -113,11 +114,11 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 
 1. Select your repository.
 
-1. Select the **Settings** tab.
+1. In the top menu bar, select the **Settings** tab.
 
-1. Select **Webhooks** in the navigation panel.
+1. Select **Webhooks** in the left menu pane.
 
-1. Select the **Edit** button next to your webhook.
+1. Select **Edit** next to your webhook.
 
 1. In the **Secret** text box, enter the default key from your function that you saved earlier in this exercise.
 
@@ -125,11 +126,11 @@ In this exercise, you'll protect your webhook payload with a secret, and learn h
 
 ## Test the webhook and the Azure Function
 
-1. On the webhooks page, scroll down to the **Recent Deliveries** section.
+1. On the **Webhooks** page, scroll down to the **Recent Deliveries** section.
 
-1. Select the latest delivery entry by clicking the ellipsis (...) button.
+1. Select the latest delivery entry by selecting the ellipsis (...) button.
 
-1. Click **Redeliver**, and then select **Yes, redeliver this payload**.
+1. Select **Redeliver**, and then select **Yes, redeliver this payload**.
 
     This action simulates you changing your Wiki page again.
 

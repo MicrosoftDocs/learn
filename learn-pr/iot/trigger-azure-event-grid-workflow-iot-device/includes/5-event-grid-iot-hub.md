@@ -22,13 +22,13 @@ IoT Hub events contain all the information that you need to respond to changes i
 
 There are two types of schemas for IoT Hub events. One is for events related to device life cycle, and one is for telemetry events.
 
-For more information about how to use the IoT Hub integration with Event Grid, visit the [documentation](https://docs.microsoft.com/azure/iot-hub/iot-hub-event-grid).
+For more information about how to use the IoT Hub integration with Event Grid, visit the [documentation](/azure/iot-hub/iot-hub-event-grid).
 
 ## Event filtering and enrichment
 
-Depending on the type of events that you want to post to Event Grid for other services to be notified, you might want to implement some filtering. Some telemetry or device life-cycle events might not be relevant to the workflow that you want to implement. The IoT Hub event subscriptions can filter events based on event type, data content, and subject (which is the device name). To learn more about event filtering, refer to the [documentation](https://docs.microsoft.com/azure/iot-hub/iot-hub-event-grid#filter-events).
+Depending on the type of events that you want to post to Event Grid for other services to be notified, you might want to implement some filtering. Some telemetry or device life-cycle events might not be relevant to the workflow that you want to implement. The IoT Hub event subscriptions can filter events based on event type, data content, and subject (which is the device name). To learn more about event filtering, refer to the [documentation](/azure/iot-hub/iot-hub-event-grid#filter-events).
 
-Before events are posted to Event Grid, you can enrich them by selecting the endpoint as Event Grid. For more information, see [Message enrichments overview](https://docs.microsoft.com/azure/iot-hub/iot-hub-message-enrichments-overview).
+Before events are posted to Event Grid, you can enrich them by selecting the endpoint as Event Grid. For more information, see [Message enrichments overview](/azure/iot-hub/iot-hub-message-enrichments-overview).
 
 ## Tips for consuming events
 

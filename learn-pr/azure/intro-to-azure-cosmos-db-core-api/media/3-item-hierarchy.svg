@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" overflow="hidden" viewBox="0 0 674 578" width="350">
+  <defs>
+    <clipPath id="a">
+      <path d="M303 71h674v578H303z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)" transform="translate(-303 -71)">
+    <path fill="#FFF" d="M304 72h672v576H304z"/>
+    <path fill="#44546A" d="M414 102h499v101H414z"/>
+    <text fill="#FFF" font-family="Cascadia Code,Cascadia Code_MSFontService,sans-serif" font-size="48" font-weight="400" transform="translate(480.172 169)">
+      { Container <tspan x="338" y="0">}</tspan>
+    </text>
+    <path fill="#44546A" d="M665.556 203.5v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12.986h-2.015v-3h.515l-1.5 1.5V371.5zm-11.015 12.986h-11.999v-3h11.999zm-20.999 0h-12v-3h12zm-21 0h-12v-3h12zm-21 0h-12v-3h12zm-21 0h-12v-3h12zm-21 0h-12v-3h12zm-17.042 6a7.5 7.5 0 110-15 7.5 7.5 0 010 15z"/>
+    <path fill="#44546A" d="M662 203.5v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v6.769h8.23v-3h-6.73l1.5 1.5V392.5zm17.23 6.769h12v-3h-12zm21 0h12v-3h-12zm21 0h12v-3h-12zm21 0h12v-3h-12zm21 0h10.95v-3h-10.95zm10.95 6a7.5 7.5 0 100-15 7.5 7.5 0 000 15z"/>
+    <path fill="#44546A" d="M662 203.5v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm8.75 15.25h12v-3h-12zm21 0h12v-3h-12zm21 0h12v-3h-12zm21 0h1.606v-3h-1.606zm1.606 6a7.5 7.5 0 100-15 7.5 7.5 0 000 15z"/>
+    <path fill="#44546A" d="M665.43 203.5v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm-10.007 13.993h-12v-3h12zm-21 0h-12v-3h12zm-21 0h-12v-3h12zm-21 0h-12v-3h12zm-21 0h-12v-3h12zm-21 0h-12v-3h12zm-21 0h-12v-3h12zm-12.923 6a7.5 7.5 0 110-15 7.5 7.5 0 010 15z"/>
+    <path fill="#44546A" d="M665.259 203.5v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm0 21v12h-3v-12zm-9 15h-12v-3h12zm-21 0h-12v-3h12zm-21 0h-12v-3h12zm-21 0h-12v-3h12zm-21 0h-12v-3h12zm-18.759 6a7.5 7.5 0 110-15 7.5 7.5 0 010 15z"/>
+    <path fill="#44546A" d="M662 203.5v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm0 21v12h3v-12zm10.362 13.638h12v-3h-12zm21 0h12v-3h-12zm21 0h12v-3h-12zm21 0h12v-3h-12zm20.914 6a7.5 7.5 0 007.5-7.5 7.5 7.5 0 10-7.5 7.5z"/>
+    <path fill="#FFF" stroke="#44546A" stroke-miterlimit="8" stroke-width="3" d="M774.5 374.5h109v46h-109z"/>
+    <text fill="#44546A" font-family="Cascadia Code,Cascadia Code_MSFontService,sans-serif" font-size="21" font-weight="400" transform="translate(803.261 404)">
+      item
+    </text>
+    <path fill="#FFF" stroke="#44546A" stroke-miterlimit="8" stroke-width="3" d="M735.5 467.5h109v45h-109z"/>
+    <text fill="#44546A" font-family="Cascadia Code,Cascadia Code_MSFontService,sans-serif" font-size="21" font-weight="400" transform="translate(764.437 497)">
+      item
+    </text>
+    <path fill="#FFF" stroke="#44546A" stroke-miterlimit="8" stroke-width="3" d="M756.5 570.5h109v45h-109z"/>
+    <text fill="#44546A" font-family="Cascadia Code,Cascadia Code_MSFontService,sans-serif" font-size="21" font-weight="400" transform="translate(785.357 600)">
+      item
+    </text>
+    <path fill="#FFF" stroke="#44546A" stroke-miterlimit="8" stroke-width="3" d="M423.5 360.5h109v45h-109z"/>
+    <text fill="#44546A" font-family="Cascadia Code,Cascadia Code_MSFontService,sans-serif" font-size="21" font-weight="400" transform="translate(452.374 389)">
+      item
+    </text>
+    <path fill="#FFF" stroke="#44546A" stroke-miterlimit="8" stroke-width="3" d="M407.5 466.5h109v45h-109z"/>
+    <text fill="#44546A" font-family="Cascadia Code,Cascadia Code_MSFontService,sans-serif" font-size="21" font-weight="400" transform="translate(436.499 495)">
+      item
+    </text>
+    <path fill="#FFF" stroke="#44546A" stroke-miterlimit="8" stroke-width="3" d="M444.5 572.5h109v45h-109z"/>
+    <text fill="#44546A" font-family="Cascadia Code,Cascadia Code_MSFontService,sans-serif" font-size="21" font-weight="400" transform="translate(473.671 601)">
+      item
+    </text>
+  </g>
+</svg>

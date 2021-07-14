@@ -18,8 +18,8 @@ prerequisites: |
   - Basic knowledge of high-performance computing (HPC).
   - Familiarity with Azure Virtual Machines tasks, such as deploying virtual machines and mounting shared file systems.
   - To complete the optional exercises, you need to use your own subscription, which might incur charges. A trial subscription or a subscription that you already have access to will work to follow along.
-  - You need the Azure CLI to complete the exercise in this module. If you don't have the Azure CLI installed, see [Control Azure services with the CLI](https://docs.microsoft.com/learn/modules/control-azure-services-with-cli/).
-iconUrl: /learn/achievements/generic-badge.svg
+  - You need the Azure CLI to complete the exercise in this module. If you don't have the Azure CLI installed, see [Control Azure services with the CLI](/learn/modules/control-azure-services-with-cli/).
+iconUrl: /learn/achievements/optimize-hpc-application-azure-virtual-machines-series.svg
 levels:
 - intermediate
 roles:

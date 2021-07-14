@@ -77,7 +77,7 @@ The first step is to create a long-running workload. This workload allows you to
 
     You'll see an error similar to this one: 
 
-    `Invoke-AzSqlDatabaseFailover: Long running operation failed with status 'Failed'. Additional Info:'There was a recent failover on the database or pool if database belongs in an elastic pool.  At least 30 minutes must pass between database failovers.'`
+    `Invoke-AzSqlDatabaseFailover: Long running operation failed with status 'Failed'. Additional Info:'There was a recent failover on the database or pool if database belongs in an elastic pool.  At least 15 minutes must pass between database failovers.'`
 
 1. You can now stop the workload in the Command Prompt window by selecting the window and then selecting **Ctrl+C**. You can leave the window open because you'll use the same workload in the next exercise.
 

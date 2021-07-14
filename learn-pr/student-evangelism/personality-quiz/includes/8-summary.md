@@ -14,8 +14,8 @@ As an added challenge, you can start exploring how you might:
 
 ## Dive deeper into Python
 
-If Python has piqued your interest, you might want to check out the rest of the [Take your First Steps with Python](https://docs.microsoft.com/learn/paths/python-first-steps/?azure-portal=true) learning path.
+If Python has piqued your interest, you might want to check out the rest of the [Take your First Steps with Python](../../../paths/python-first-steps/index.yml?azure-portal=true) learning path.
 
-After you complete this learning path, you can find other Learn modules to inspire your next steps on our [Student page](https://docs.microsoft.com/learn/roles/student?azure-portal=true). 
+After you complete this learning path, you can find other Learn modules to inspire your next steps on our [Student page](/learn/roles/student?azure-portal=true). 
 
-We're here to guide you through new tech with modules that teach you how to [track global air quality with Azure Maps](https://docs.microsoft.com/learn/modules/azure-maps-track-air-pollution/?azure-portal=true) and [help remote farmers protect their crops by using text message weather alerts from Azure Functions](https://docs.microsoft.com/learn/modules/send-crop-weather-alerts/?azure-portal=true). Learn new coding skills and solve engaging problems!
+We're here to guide you through new tech with modules that teach you how to [track global air quality with Azure Maps](/learn/modules/azure-maps-track-air-pollution/?azure-portal=true) and [help remote farmers protect their crops by using text message weather alerts from Azure Functions](/learn/modules/send-crop-weather-alerts/?azure-portal=true). Learn new coding skills and solve engaging problems!

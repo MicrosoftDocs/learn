@@ -3,15 +3,16 @@ uid: learn.azure.azure-database-fundamentals.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Knowledge check
-  ms.date: 09/14/2020
-  author: Randall-Knapp
+  description: "Knowledge check"
+  ms.date: 05/10/2021
+  author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/knowledge-check.md)]
+  [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -19,32 +20,38 @@ quiz:
     choices:
     - content: "Azure Cosmos DB"
       isCorrect: true
-      explanation: "Azure Cosmos DB supports SQL, MongoDB, Cassandra, Tables, and Gremlin APIs."
+      explanation: "That's correct. Azure Cosmos DB supports SQL, MongoDB, Cassandra, Tables, and Gremlin APIs."
     - content: "Azure SQL Database"
       isCorrect: false
+      explanation: "That's incorrect."
     - content: "Azure Databricks"
       isCorrect: false
+      explanation: "That's incorrect."
     - content: "Azure Database for PostgreSQL"
       isCorrect: false
+      explanation: "That's incorrect."
   - content: "Tailwind Traders uses the LAMP stack for several of its websites. Which option would be ideal for migration?"
     choices:
     - content: "Azure Cosmos DB"
       isCorrect: false
+      explanation: "That's incorrect."
     - content: "Azure Database for MySQL"
       isCorrect: true
-      explanation: "Azure Database for MySQL is the logical choice for existing LAMP stack applications."
-    - content: "Azure SQL Database"
-      isCorrect: false
+      explanation: "That's correct. Azure Database for MySQL is the logical choice for existing LAMP stack applications."
     - content: "Azure Database for PostgreSQL"
       isCorrect: false
+      explanation: "That's incorrect."
   - content: "Tailwind Traders has millions of log entries that it wants to analyze. Which option would be ideal for analysis?"
     choices:
     - content: "Azure Cosmos DB"
       isCorrect: false
+      explanation: "That's incorrect."
     - content: "Azure SQL Database"
       isCorrect: false
+      explanation: "That's incorrect."
     - content: "Azure Database for PostgreSQL"
       isCorrect: false
+      explanation: "That's incorrect."
     - content: "Azure Synapse Analytics"
       isCorrect: true
-      explanation: "Azure Synapse Analytics is the logical choice for analyzing large volumes of data."
+      explanation: "That's correct. Azure Synapse Analytics is the logical choice for analyzing large volumes of data."

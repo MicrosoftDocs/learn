@@ -16,11 +16,11 @@ Azure Cloud Shell makes it easy to start working with your databases. From Cloud
 
 The documentation provides lots more information, including tutorials and samples. Here are a few links to what we covered here:
 
-- [Azure SQL Database documentation](https://docs.microsoft.com/azure/sql-database/)
-- [Azure SQL Database purchasing models and resources](https://docs.microsoft.com/azure/sql-database/sql-database-service-tiers)
-- [Azure SQL Database logical servers and their management](https://docs.microsoft.com/azure/sql-database/sql-database-logical-servers)
-- [Azure SQL Database and SQL Data Warehouse firewall rules](https://docs.microsoft.com/azure/sql-database/sql-database-firewall-configure)
+- [Azure SQL Database documentation](/azure/sql-database/)
+- [Azure SQL Database purchasing models and resources](/azure/sql-database/sql-database-service-tiers)
+- [Azure SQL Database logical servers and their management](/azure/sql-database/sql-database-logical-servers)
+- [Azure SQL Database and SQL Data Warehouse firewall rules](/azure/sql-database/sql-database-firewall-configure)
 
-To learn more about Cloud Shell, see [Overview of Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview).
+To learn more about Cloud Shell, see [Overview of Azure Cloud Shell](/azure/cloud-shell/overview).
 
-If you're interested in learning more about the `sqlcmd` utility, see [sqlcmd Utility](https://docs.microsoft.com/sql/tools/sqlcmd-utility?view=sql-server-2017).
+If you're interested in learning more about the `sqlcmd` utility, see [sqlcmd Utility](/sql/tools/sqlcmd-utility?view=sql-server-2017).

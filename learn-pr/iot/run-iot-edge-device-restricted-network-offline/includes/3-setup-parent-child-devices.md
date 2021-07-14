@@ -67,7 +67,7 @@ If you have more than one Azure account, be sure that you are logged in with the
 1. Run the following command to retrieve the Connection String from IoT Hub for the IoTEdgeGateway Device, and copy the connection string value for reference later:
  
    ```bash
-     az iot hub device-identity show-connection-string --hub-name AZ-220-HUB-_{YOUR-ID}_ --device-id IoTEdgeGateway -o tsv
+     az iot hub device-identity connection-string show --hub-name AZ-220-HUB-_{YOUR-ID}_ --device-id IoTEdgeGateway -o tsv
    ```
 
     >[!NOTE]
@@ -141,7 +141,7 @@ If you have more than one Azure account, be sure that you are logged in with the
 1. Run the following command to retrieve the Connection String from IoT Hub for the IoTEdgeGateway Device, and copy the connection string value for reference later:
 
     ```bash
-      az iot hub device-identity show-connection-string --hub-name AZ-220-HUB-_{YOUR-ID}_ --device-id ChildDevice1 -o tsv
+      az iot hub device-identity connection-string show --hub-name AZ-220-HUB-_{YOUR-ID}_ --device-id ChildDevice1 -o tsv
     ```
 
     >[!NOTE]

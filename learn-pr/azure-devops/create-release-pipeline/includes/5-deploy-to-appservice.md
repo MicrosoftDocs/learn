@@ -25,7 +25,7 @@ We won't go into many of the details about how App Service works or the configur
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. On the left, select **App Services**.
-1. Select **+ Add**.
+1. Select **+ Create**.
 1. On the **Web App** page, fill in these fields:
 
     | Field                | Value                                                                                         |
@@ -34,13 +34,11 @@ We won't go into many of the details about how App Service works or the configur
     | **Resource Group**   | Select **Create new** and then enter *tailspin-space-game-rg* as the resource group name.   |
     | **Name**             | Provide a unique name, such as *tailspin-space-game-web-1234*. Your App Service instance requires a unique name because the name becomes part of the domain name. In practice, choose a name that describes your service. Note the name for later.                              |
     | **Publish**          | **Code**                                                                                      |
-    | **Runtime stack**    | **.NET Core 3.1 (LTS)**                                                                            |
+    | **Runtime stack**    | **.NET 5**                                                                            |
     | **Operating System** | **Linux**                                                                                     |
     | **Region**           | Select any region, preferably one close to you.                                               |
     | **Linux Plan**       | Keep the default value.                                                                       |
     | **Sku and size**     | Select **Change size** > **Dev/Test** tab > **B1** > **Apply**. |
-
-   
 
 1. Select **Review + create** > **Create**.
 
@@ -50,13 +48,13 @@ We won't go into many of the details about how App Service works or the configur
 
     You see details related to your deployment.
 
-    ![Deployment details in the Azure portal](../media/5-app-service-details.png)
+    :::image type="content" source="../media/5-app-service-details.png" alt-text="A screenshot of the Azure portal showing deployment details. Details include the deployment URL.":::
 
 1. Select the URL.
 
     From a new browser tab, you see the default home page for your app.
 
-    ![A browser showing the default App Service home page](../media/5-default-home-page.png)
+    :::image type="content" source="../media/5-default-home-page.png" alt-text="A screenshot of a web browser showing the default App Service home page.":::
 
     Soon you'll define a pipeline stage that deploys the _Space Game_ website to this App Service instance.
 
@@ -105,25 +103,25 @@ trigger:
 - '*'
 
 pool:
-  vmImage: 'ubuntu-18.04'
+  vmImage: 'ubuntu-20.04'
   demands:
   - npm
 
 variables:
   buildConfiguration: 'Release'
   wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
-  dotnetSdkVersion: '3.1.300'
+  dotnetSdkVersion: '5.x'
 
 steps:
 - task: UseDotNet@2
-  displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
+  displayName: 'Use .NET SDK $(dotnetSdkVersion)'
   inputs:
     version: '$(dotnetSdkVersion)'
 
 ...
 ```
 
-A _multistage pipeline_ enables you to define distinct phases that your change passes through as it's promoted through the pipeline. Each stage defines the agent, variable, and steps required to carry out that phase of the pipeline. In this module, you define one stage to perform the build. You define a second stage to deploy the web application to App Service.
+A _multistage pipeline_ enables you to define distinct phases that your change passes through as it's promoted through the pipeline. Each stage defines the agent, variables, and steps required to carry out that phase of the pipeline. In this module, you define one stage to perform the build. You define a second stage to deploy the web application to App Service.
 
 To convert your existing build configuration to a multistage pipeline, you add a `stages` section to your configuration. You then add one or more `stage` sections to define each phase of your pipeline. Stages break down into jobs, which are a series of steps that run sequentially as a unit.
 
@@ -145,12 +143,30 @@ Before we add the _Deploy_ stage to the pipeline, let's first convert the existi
     git commit -m "Add a build stage to the pipeline"
     git push origin release-pipeline
     ```
+
 1. In Azure Pipelines, go to the build and trace the build as it runs.
 1. After the build finishes, select the back button to return to the summary page.
 
-    ![Azure Pipelines, showing the job summary](../media/5-pipeline-build-stage-summary.png)
+    :::image type="content" source="../media/5-pipeline-build-stage-summary.png" alt-text="A screenshot of Azure Pipelines showing the job summary.":::
 
     You see that the build finished successfully. Your build pipeline accomplishes the same task as before. It builds the web app and publishes the artifact to the pipeline. But with this new change, you can now add more stages to the pipeline.
+
+## Create the dev environment
+
+Recall that in Azure Pipelines, an _environment_ is an abstract representation of your deployment environment. You can also define an environment through Azure Pipelines that includes specific criteria for your release. This criteria can include the pipelines that are authorized to deploy to the environment. You can also specify the human approvals that are needed to promote the release from one stage to the next.
+
+For your POC, you'll deploy to the **dev** environment. For now, your environment will define no specific release criteria. In future modules, you'll specify criteria such as human approvals which are required to sign off on changes before those changes move to the next stage.
+
+To create the **dev** environment:
+
+1. From Azure Pipelines, select **Environments**.
+
+    :::image type="content" source="../../shared/media/pipelines-environments.png" alt-text="A screenshot of Azure Pipelines showing the location of the Environments menu option.":::
+
+1. Select **Create environment**.
+1. Under **Name**, enter *dev*.
+1. Leave the remaining fields at their default values.
+1. Select **Create**.
 
 ## Store your web app name in a pipeline variable
 
@@ -166,7 +182,7 @@ To add the variable:
 
 1. In Azure DevOps, under **Pipelines**, select **Library**.
 
-    ![Azure Pipelines, showing the Library menu](../media/5-pipelines-library.png)
+    :::image type="content" source="../media/5-pipelines-library.png" alt-text="A screenshot of Azure Pipelines showing the location of the Library menu.":::
 1. Select **+ Variable group**.
 1. Under **Properties**, enter *Release* for the variable group name.
 1. Under **Variables**, select **+ Add**.
@@ -183,6 +199,8 @@ Here you extend your pipeline by adding a deployment stage that uses App Service
 
     Notice the use of the `download` and `AzureWebApp@1` tasks. `$(WebAppName)` reads the web app name from your pipeline variable.
 
+    Also notice the `environment` field. This specifies that the deployment is associated with the **dev** environment.
+
 1. From the integrated terminal, add *azure-pipelines.yml* to the index. Then commit the change and push it up to GitHub.
 
     ```bash
@@ -194,7 +212,7 @@ Here you extend your pipeline by adding a deployment stage that uses App Service
 1. In Azure Pipelines, trace the build and deployment through each of the stages.
 1. After the pipeline finishes, select the back button to return to the summary page.
 
-    ![Azure Pipelines, showing the completed stages](../media/5-pipeline-deployment-summary.png)
+    :::image type="content" source="../media/5-pipeline-deployment-summary.png" alt-text="A screenshot of Azure Pipelines showing the completed Build and Deploy stages.":::
 
     You see that both the build stages and the deployment stages finished successfully.
 
@@ -206,10 +224,10 @@ When you created your App Service instance, you saw the default website that was
 
     If you still have the browser tab open, simply refresh the page. If the browser tab isn't open, you can find the URL on the App Service details page in the Azure portal.
 
-    ![Deployment details in the Azure portal](../media/5-app-service-details.png)
+    :::image type="content" source="../media/5-app-service-details.png" alt-text="A screenshot of the Azure portal showing deployment details.":::
 
 1. See that the _Space Game_ website has been successfully deployed to App Service and is running.
 
-    ![A browser showing the Space Game website](../media/5-deployed-website.png)
+    :::image type="content" source="../media/5-deployed-website.png" alt-text="A screenshot of web browser showing the Space Game website.":::
 
 Congratulations! You've successfully deployed the _Space Game_ website to App Service by using Azure Pipelines.

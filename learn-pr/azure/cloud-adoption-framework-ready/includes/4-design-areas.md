@@ -88,7 +88,7 @@ The principles for the start-small approach are rooted in refactoring. To avoid 
 The concept of refactoring a landing zone is simple, but execution requires proper guardrails. Here's the basic flow:
 
 1. When you're ready to build your first landing zone, start with an initial landing zone defined via a template.
-1. After that landing zone is deployed, use the decision trees in the articles under [Expand your landing zone](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true) (in the table of contents) to refactor and add to your initial landing zone.
+1. After that landing zone is deployed, use the decision trees in the articles under [Expand your landing zone](/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true) (in the table of contents) to refactor and add to your initial landing zone.
 1. Repeat decision trees and refactoring until you have an enterprise-ready environment that meets the enhanced requirements of your security, operations, and governance teams.
 
 **Design impact:** Minor refactoring is common. Significant shifts from one operations model to another might result in major restructuring. In other words, customers who deploy one subscription to host workloads and foundational utilities might hit scale restrictions. If your portfolio is much broader, requiring multiple landing zones in this approach might require restructuring or redesigning common elements such as Active Directory or networking to expand to an enterprise operating model.
@@ -119,7 +119,7 @@ All initial templates for landing zones have limitations. Guardrails or policies
 
 As an example of establishing refactoring guardrails, let's compare the development approach in the prior example and the CAF Migration landing zone blueprint from the Cloud Adoption Framework.
 
-In accordance with the [assumptions of the CAF Migration landing zone blueprint](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/migrate-landing-zone#assumptions), this initial landing zone is not designed for sensitive data or mission-critical workloads. Those features will have to be added through refactoring. In this example, let's assume that the portfolio of 100 workloads will require hosting capabilities for both mission-critical workloads and sensitive data.
+In accordance with the [assumptions of the CAF Migration landing zone blueprint](/azure/cloud-adoption-framework/ready/landing-zone/migrate-landing-zone#assumptions), this initial landing zone is not designed for sensitive data or mission-critical workloads. Those features will have to be added through refactoring. In this example, let's assume that the portfolio of 100 workloads will require hosting capabilities for both mission-critical workloads and sensitive data.
 
 To balance these two competing requirements, the adoption team and platform team will agree to and operate under the following conditions:
 
@@ -132,10 +132,10 @@ For this example, the preceding conditions will allow the adoption team to start
 
 #### Meeting long-term requirements while refactoring
 
-The section of the Ready methodology on expanding your landing zone will aid in moving toward the longer-term requirements. As the cloud adoption team progresses with its adoption plan, review [Expand your landing zone](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true) for guidance to help make decisions and refactor to meet the evolving requirements of various teams.
+The section of the Ready methodology on expanding your landing zone will aid in moving toward the longer-term requirements. As the cloud adoption team progresses with its adoption plan, review [Expand your landing zone](/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true) for guidance to help make decisions and refactor to meet the evolving requirements of various teams.
 
 :::image type="content" source="../media/refactor-methodologies.png" alt-text="Diagram that shows parallel landing zone iteration." border="false":::
 
 *Figure 2: Deeper methodologies assist a parallel iteration of a landing zone.*
 
-Each subsection of [Expand your landing zone](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true) maps to one of the additions outlined in Figure 2. Beyond those basic expansions, the deeper methodologies (such as Govern or Manage) of this framework can help you go beyond basic modifications of landing zones and implement long-term disciplines.
+Each subsection of [Expand your landing zone](/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true) maps to one of the additions outlined in Figure 2. Beyond those basic expansions, the deeper methodologies (such as Govern or Manage) of this framework can help you go beyond basic modifications of landing zones and implement long-term disciplines.

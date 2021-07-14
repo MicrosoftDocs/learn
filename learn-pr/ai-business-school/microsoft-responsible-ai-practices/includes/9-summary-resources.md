@@ -70,7 +70,7 @@ With these foundational principles in place, we began developing more scenario-s
 
 |Resource type|Details|
 |---|---|
-|<br>Technologies|<ul><li>The [Data Drift Monitoring](https://docs.microsoft.com/azure/machine-learning/service/concept-data-drift) feature in [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning-service/) detects changes in the distribution of data that may cause degraded prediction performance, enabling developers to maintain accuracy by adapting the model to reflect changing data.</li></ul>|
+|<br>Technologies|<ul><li>The [Data Drift Monitoring](/azure/machine-learning/service/concept-data-drift) feature in [Azure Machine Learning](https://azure.microsoft.com/services/machine-learning-service/) detects changes in the distribution of data that may cause degraded prediction performance, enabling developers to maintain accuracy by adapting the model to reflect changing data.</li></ul>|
 |<br>Tools|<ul><li>[Pandora](https://docs.wixstatic.com/ugd/1acfaf_4b2b106eaf6a40a89185eccacf822ea1.pdf) is a debugging framework designed by Microsoft Research to identify reliability and bias problems within machine learning models. It uses interpretable machine learning techniques, such as decision trees, to discover patterns and identify potential issues.</li><li> Microsoft [AirSim](https://github.com/microsoft/AirSim) is a valuable open-source tool for improving simulated training environments.</li></ul>|
 
 ### Transparency
@@ -78,7 +78,7 @@ With these foundational principles in place, we began developing more scenario-s
 |Resource type|Details|
 |---|---|
 |<br>Open-source code|<ul><li>[InterpretML](https://www.microsoft.com/research/blog/creating-ai-glass-boxes-open-sourcing-a-library-to-enable-intelligibility-in-machine-learning/) is an open-source package created by Microsoft Research for training interpretable models and explaining black box systems. It implements a number of intelligible models including Explainable Boosting Machine (EBM), an improvement over generalized additive models that has both high accuracy and intelligibility.  It also supports several methods for generating explanations of black box model behavior or predictions including 'SHapley Additive exPlanations' (SHAP) and 'Local Interpretable Model-agnostics Explanations' (LIME).</li></ul>|
-|<br>Technologies|<ul><li>[Azure Machine Learning](https://azure.microsoft.com/services/machine-learning-service/) has a variety of tools that support model transparency. The [Model Interpretability](https://docs.microsoft.com/azure/machine-learning/service/machine-learning-interpretability-explainability) feature enables model designers and evaluators to explain why a model makes the predictions it does, which can be used to debug the model, validate that its behavior matches objectives, and check for bias.</li></ul>|
+|<br>Technologies|<ul><li>[Azure Machine Learning](https://azure.microsoft.com/services/machine-learning-service/) has a variety of tools that support model transparency. The [Model Interpretability](/azure/machine-learning/service/machine-learning-interpretability-explainability) feature enables model designers and evaluators to explain why a model makes the predictions it does, which can be used to debug the model, validate that its behavior matches objectives, and check for bias.</li></ul>|
 
 ### Accountability
 
@@ -118,4 +118,4 @@ With these foundational principles in place, we began developing more scenario-s
 26. [GitHub, InterpretML](https://github.com/Microsoft/interpret)  
 27. [Microsoft, "Creating AI glass boxes – Open sourcing a library to enable intelligibility in machine learning." 10 May 2019.](https://www.microsoft.com/research/blog/creating-ai-glass-boxes-open-sourcing-a-library-to-enable-intelligibility-in-machine-learning/)  
 28. [Cornell University, "Datasheets for Datasets." Timnit Gebru, Jamie Morgenstern, Briana Vecchione, Jennifer Wortman Vaughan, Hanna Wallach, Hal Daumeé III, Kate Crawford, 14 April 2019.](https://arxiv.org/abs/1803.09010)  
-29. [Partnership on AI, ABOUT ML (Annotation and Benchmarking on Understanding and Transparency of Machine Learning Lifecycles)](https://www.partnershiponai.org/about-ml/)  
+29. [Partnership on AI, ABOUT ML (Annotation and Benchmarking on Understanding and Transparency of Machine Learning Lifecycles)](https://www.partnershiponai.org/about-ml/)

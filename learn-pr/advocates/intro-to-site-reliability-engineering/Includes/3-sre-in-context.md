@@ -10,7 +10,7 @@ As people from Google left the company (and people in the company talked more ab
 
 The broader industry faced the same challenges around scaling, development velocity vs. operational stability, and other software delivery issues that spawned the site reliability engineering movement. Parallel efforts to address them outside of Google (and a few larger companies at that time) yielded DevOps. 
 
-For lots of good information about DevOps, see [https://docs.microsoft.com/azure/devops/learn/](https://docs.microsoft.com/azure/devops/learn/).
+For lots of good information about DevOps, see [https://docs.microsoft.com/azure/devops/learn/](/azure/devops/learn/).
 
 > [!NOTE]
 > It is important to note that DevOps and SRE are two different parallel attempts to address the same challenges. SRE is not the next evolutionary step after DevOps. SRE was not created to be "the future of DevOps."

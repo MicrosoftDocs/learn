@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-hdinsight.1-introduction  
+title: Introduction
+metadata:
+  unitType: introduction  
+  title: Introduction
+  description: You can use Azure HDInsight to process big data in many scenarios, either historical or real-time. HDInsight supports popular open-source frameworks that support many scenarios including extract, transform, data-warehousing, and others.
+  ms.date: 04/11/2021  
+  author: tchristiani
+  ms.author: terrychr  
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -8,22 +8,22 @@ Regardless of your choice, Azure provides many services, features, and tools you
 
 ## Additional reading
 
-[Azure Fundamentals part 1: Describe core Azure concepts](https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/) provides a comprehensive overview of cloud concepts and Azure services.
+[Azure Fundamentals part 1: Describe core Azure concepts](../../../paths/az-900-describe-cloud-concepts/index.yml) provides a comprehensive overview of cloud concepts and Azure services.
 
 ### Linux on Azure
 
 - [Linux on Azure](https://azure.com/linux)
 - [Red Hat on Azure](https://azure.com/redhat)
   - [Red Hat solutions on Azure](https://azure.microsoft.com/overview/linux-on-azure/red-hat/#marketplace), including Azure Red Hat OpenShift, JBoss EAP, and Ansible Automation
-  - [Red Hat bring your own subscription](https://docs.microsoft.com/azure/virtual-machines/workloads/redhat/byos)
+  - [Red Hat bring your own subscription](/azure/virtual-machines/workloads/redhat/byos)
 - [SUSE on Azure](https://azure.com/suse)
   - [SUSE bring your own subscription](https://www.suse.com/news/suse-invites-customers-to-bring-your-own-subscription-to-the-public-cloud/)
 
 ### Documentation
 
-- [Linux virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/linux/)
-- [Azure Architecture Center](https://docs.microsoft.com/azure/architecture/)
-- [Featured Azure services](https://docs.microsoft.com/azure/?product=featured)
+- [Linux virtual machines in Azure](/azure/virtual-machines/linux/)
+- [Azure Architecture Center](/azure/architecture/)
+- [Featured Azure services](/azure/?product=featured)
 - [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/)
 
 ### Example Linux workloads
@@ -35,7 +35,7 @@ Regardless of your choice, Azure provides many services, features, and tools you
 ### Migration
 
 - [Linux Migration – Azure Migration Center](https://azure.microsoft.com/migration/linux/)
-- [Azure Migrate documentation](https://docs.microsoft.com/azure/migrate/)
+- [Azure Migrate documentation](/azure/migrate/)
 - Sample total cost of ownership (TCO) summary reports (on-premises vs. Azure) for migration scenarios: [datacenter migration](https://azure.microsoft.com/resources/sample-report-for-datacenter-migration-windows-and-linux-servers/), [rehosting open source](https://azure.microsoft.com/resources/sample-migration-tco-rehost-oss/), [rebuilding open source](https://azure.microsoft.com/resources/sample-migration-tco-rebuild-oss/)
 
 ### E-books

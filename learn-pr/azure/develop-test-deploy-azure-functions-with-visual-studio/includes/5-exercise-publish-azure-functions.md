@@ -8,17 +8,19 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. From the Azure portal menu, select **Create a resource**.
+1. From the Azure portal menu, under **Azure services**, select **Create a resource**.
 
     ![Screenshot of Azure portal menu and Create a resource option.](../media/5-create-a-resource.png)
 
-1. Select **Compute**, and then select **Function App**.
+    The **Create a resource** pane appears.
+
+1. In the left menu pane, select **Compute**, and then select **Function App** under *Popular services*.
 
     ![Screenshot of the Compute and Function App options.](../media/5-compute-function-app.png)
 
     <!-- [!include[](../../includes/functions-classic-workaround.md)] -->
 
-1. The **Create Function App** panel appears. On the **Basics** tab, enter the following values.
+1. The **Create Function App** pane appears. On the **Basics** tab, enter the following values for each setting.
 
     > [!NOTE]
     > The function app must have a unique name. We suggest using something like **\<*your name or initials*\>watchfunctions**. In this exercise, use this name wherever you see *\<your-function-app-name\>*.
@@ -27,7 +29,7 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
     | --- | --- |
     | **Project Details** |
     | Subscription | Concierge Subscription  |
-    | Resource Group | From the dropdown, select the existing resource group <rgn>[Sandbox resource group]</rgn> |
+    | Resource Group | From the dropdown list, select the existing resource group <rgn>[Sandbox resource group]</rgn> |
     | **Instance Details** |
     | Function App name | *\<your-function-app-name\>* |
     | Publish | Code |
@@ -37,7 +39,7 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
 1. Select **Next : Hosting**.
 
-1. On the **Hosting** tab, enter the following values.
+1. On the **Hosting** tab, enter the following values for each setting.
 
     | Setting  | Value |
     | --------- | --------- |

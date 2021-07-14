@@ -41,15 +41,15 @@ The Azure CLI provides a set of commands you can use to create and manage a stor
 
 ## Shell command to clone an application GitHub repository
 
-Git is a collaboration tool that uses a distributed version control model, and is designed for collaborative working on software and documentation projects. Git clients are available for multiple platforms, including Windows, and the Git command line is included in the Azure Bash cloud shell. GitHub is a web-based hosting service for Git repositories.
+Git is a collaboration tool that uses a distributed version control model, and is designed for collaborative working on software and documentation projects. Git clients are available for multiple platforms, including Windows, and the Git command line is included in Azure Bash Cloud Shell. GitHub is a web-based hosting service for Git repositories.
 
 If you have an application that is hosted as a project in GitHub, you can make a local copy of the project, by cloning its repository using the **git clone** command.
 
-## Edit files in the Cloud Shell
+## Edit files in Cloud Shell
 
-You can use one of the built-in editors in the Cloud Shell to modify all the files that make up the application, and add your Event Hub namespace, Event Hub name, shared access policy name, and primary key.
+You can use one of the built-in editors in Cloud Shell to modify all the files that make up the application, and add your Event Hub namespace, Event Hub name, shared access policy name, and primary key.
 
-The Cloud Shell supports **nano**, **vim**, **emacs, and the Cloud Shell editor (code)**. Just enter the name of the editor you want, and it will launch in the environment. We'll use the Cloud Shell editor (**code**) in the next unit.
+Azure Cloud Shell supports **nano**, **vim**, **emacs, and Cloud Shell editor (code)**. Just enter the name of the editor you want, and it will launch in the environment. We'll use Cloud Shell editor (**code**) in the next unit.
 
 ## Summary
 

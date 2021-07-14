@@ -4,4 +4,4 @@ You can now use network security groups and service endpoints to ensure that net
 
 ## Learn more
 
-For more information about network security groups, see the [security groups](https://docs.microsoft.com/azure/virtual-network/security-overview) overview. For more information about virtual network service endpoints, see the [virtual network service endpoint](https://docs.microsoft.com/azure/virtual-network/virtual-network-service-endpoints-overview) overview.
+For more information about network security groups, see the [security groups](/azure/virtual-network/security-overview) overview. For more information about virtual network service endpoints, see the [virtual network service endpoint](/azure/virtual-network/virtual-network-service-endpoints-overview) overview.

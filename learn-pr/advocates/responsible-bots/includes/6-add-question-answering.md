@@ -34,7 +34,7 @@ For **step 2**, return to the browser window that displays QnA Maker and continu
     > Some languages that are available in **Language**  support *chit-chat* functionality, which refers to general conversation functionality. For other languages, only information extraction and basic QnA functionality is available. For the purpose of this module, let's select English as the most supported language.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of the QnA Maker Connect your QnA service to your KB pane that shows options to select](../media/qna-maker-create-2.png)
+> ![Screenshot of the QnA Maker Connect your QnA service to your KB pane that shows options to select.](../media/qna-maker-create-2.png)
 
 For **step 3**, enter a name for your database. Our example is **qnadb**.
 
@@ -206,6 +206,6 @@ How are you?
 
 We've got a pretty useful, fun bot now! As our final step, let's reexamine some of the responsible conversational AI principles to make sure we're creating a responsible bot!
 
-[QAMaker]: https://docs.microsoft.com/azure/cognitive-services/qnamaker/
+[QAMaker]: /azure/cognitive-services/qnamaker/
 [ProjectPersonalityChat]: https://azure.microsoft.com/resources/videos/build-2019-microsoft-research-apis---project-personality-chat-in-action/
 [CodeQnA]: https://github.com/MicrosoftDocs/mslearn-responsible-bots/blob/t3-qna/src/Bots/EchoBot.cs?azure-portal=true

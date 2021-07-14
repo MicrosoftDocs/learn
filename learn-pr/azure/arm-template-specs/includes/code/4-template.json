@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "storageAccountName": {
+      "type": "string",
+      "defaultValue": "[concat('stor', uniqueString(resourceGroup().id))]"
+    }
+  },
+  "variables": {
+    "templateSpecName": "StorageWithoutSAS",
+    "templateSpecVersion": "1.0"
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Resources/deployments",
+      "apiVersion": "2020-10-01",
+      "name": "createStorage",
+      "properties": {
+        "mode": "Incremental",
+        "templateLink": {
+          "id": "[resourceId('Microsoft.Resources/templateSpecs/versions', variables('templateSpecName'), variables('templateSpecVersion'))]"
+        },
+        "parameters": {
+          "storageAccountName": {
+            "value": "[parameters('storageAccountName')]"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -9,30 +9,30 @@ Follow this part if you want to see the tests run locally on Edge.
 The NuGet package for Chrome and Firefox installs driver software under the *bin* directory, alongside the compiled test code. For Edge, you need to manually install the driver. To do so:
 
 1. Install [Microsoft Edge](https://www.microsoft.com/edge?azure-portal=true).
-1. Open Edge and navigate to `edge://settings/help`. Note the version number.
+1. Open Edge and navigate to `edge://settings/help`. Note the version number. Here's an example:
 
-    ![A screenshot of the Microsoft Edge setting page, showing the version number.](https://docs.microsoft.com/microsoft-edge/media/webdriver-chromium/edge-version.png)
+    :::image type="content" source="../media/6-edge-version.png" alt-text="A screenshot of the Microsoft Edge setting page, showing the version number.":::
 
-1. Navigate to the [Microsoft Edge Driver downloads](https://developer.microsoft.com/microsoft-edge/tools/webdriver/#downloads?azure-portal=true) page and download the driver that matches the Edge version number.
+1. Navigate to the [Microsoft Edge Driver downloads](https://developer.microsoft.com/microsoft-edge/tools/webdriver/#downloads?azure-portal=true) page and download the driver that matches the Edge version number. Here's an example:
 
-    ![The Downloads section of the Microsoft Edge Driver page.](https://docs.microsoft.com/microsoft-edge/media/webdriver-chromium/edge-driver-install.png)
+    :::image type="content" source="../media/6-edge-driver-install.png" alt-text="A screenshot of the Downloads section of the Microsoft Edge Driver page showing the matching driver version.":::
 
-1. Extract the *.zip* file to the *bin/Release/netcoreapp3.1* directory under your project's *Tailspin.SpaceGame.Web.UITests* directory. Create these directories if they don't exist.
+1. Extract the *.zip* file to the *bin/Release/net5.0* directory under your project's *Tailspin.SpaceGame.Web.UITests* directory. Create these directories if they don't exist.
 
 On macOS, you may need to update your system policy to allow **msedgedriver** to run. To do so, in Visual Studio Code, run the following `spctl` command from the terminal:
 
 ```bash
-spctl --add Tailspin.SpaceGame.Web.UITests/bin/Release/netcoreapp3.1/msedgedriver
+spctl --add Tailspin.SpaceGame.Web.UITests/bin/Release/net5.0/msedgedriver
 ```
 
 ## Export environment variables
 
 Later in this module, you'll run Selenium tests on Windows Server 2019. The 
-[documentation](https://github.com/actions/virtual-environments/blob/master/images/win/Windows2019-Readme.md?azure-portal=true) lists the software that's preinstalled for you.
+[documentation](https://github.com/actions/virtual-environments/blob/main/images/win/Windows2019-Readme.md?azure-portal=true) lists the software that's preinstalled for you.
 
 The section **Selenium Web Drivers** lists the Selenium driver versions that are available for Chrome, Firefox, and Edge. Here's an example:
 
-![A screenshot showing the documentation for the installed Selenium drivers on the build agent.](../media/6-readme-selenium-drivers.png)
+:::image type="content" source="../media/6-readme-selenium-drivers.png" alt-text="A screenshot showing the documentation for the installed Selenium drivers on the build agent.":::
 
 For each driver, you see the environment variable that maps to the location of that driver. For example, `ChromeWebDriver` maps to the location of the Chrome driver.
 
@@ -43,7 +43,10 @@ From Visual Studio Code, go to the terminal. Then run these commands. Replace th
 # [Windows](#tab/export-windows)
 
 ```bash
-driverDir="C:\Users\user\mslearn-tailspin-spacegame-web-deploy\Tailspin.SpaceGame.Web.UITests\bin\Release\netcoreapp3.1"
+driverDir="C:\Users\user\mslearn-tailspin-spacegame-web-deploy\Tailspin.SpaceGame.Web.UITests\bin\Release\net5.0"
+```
+
+```bash
 export ChromeWebDriver=$driverDir
 export EdgeWebDriver=$driverDir
 export GeckoWebDriver=$driverDir
@@ -52,7 +55,10 @@ export GeckoWebDriver=$driverDir
 # [macOS](#tab/export-macos)
 
 ```bash
-driverDir="/Users/user/mslearn-tailspin-spacegame-web-deploy/Tailspin.SpaceGame.Web.UITests/bin/Release/netcoreapp3.1"
+driverDir="/Users/user/mslearn-tailspin-spacegame-web-deploy/Tailspin.SpaceGame.Web.UITests/bin/Release/net5.0"
+```
+
+```bash
 export ChromeWebDriver=$driverDir
 export EdgeWebDriver=$driverDir
 export GeckoWebDriver=$driverDir
@@ -108,14 +114,10 @@ To run the tests locally:
 
 1. From the terminal, trace the output of each test. Also note the test-run summary at the end.
 
-    This example shows that out of nine tests, six succeeded and three were skipped:
+    This example shows that out of nine tests, all nine tests succeeded and zero tests were skipped:
 
     ```output
-    Test Run Successful.
-    Total tests: 9
-         Passed: 6
-        Skipped: 3
-     Total time: 1.8257 Seconds
+    Passed!  - Failed:     0, Passed:     9, Skipped:     0, Total:     9, Duration: 5 s 
     ```
 
 ## Add the SITE_URL variable to Azure Pipelines
@@ -133,7 +135,7 @@ Let's add the pipeline variable now, before you update your pipeline configurati
 
     Your variable group resembles this one:
 
-    ![Azure Pipelines, showing the variable group](../media/6-library-variable-group.png)
+    :::image type="content" source="../media/6-library-variable-group.png" alt-text="A screenshot of Azure Pipelines, showing the variable group. The group contains four variables.":::
 
 ## Modify the pipeline configuration
 
@@ -154,7 +156,7 @@ In this section, you modify the pipeline configuration to run your Selenium UI t
         [!code-yml[](code/6-azure-pipelines-publish.yml?highlight=5)]
 
         This task generates two build artifacts: the _Space Game_ website package and the compiled UI tests. We build the UI tests during the _Build_ stage to ensure that they'll compile during the _Test_ stage. But we don't need to publish the compiled test code. We build it again during the _Test_ stage when the tests run.
-    * The _Test_ stage includes a second job that builds and runs the tests. This job resembles the one that you used in the [Run quality tests in your build pipeline by using Azure Pipelines](https://docs.microsoft.com/learn/modules/run-quality-tests-build-pipeline/4-add-unit-tests?azure-portal=true) module. In that module, you ran NUnit tests that verified the leaderboard's filtering functionality.
+    * The _Test_ stage includes a second job that builds and runs the tests. This job resembles the one that you used in the [Run quality tests in your build pipeline by using Azure Pipelines](/learn/modules/run-quality-tests-build-pipeline/4-add-unit-tests?azure-portal=true) module. In that module, you ran NUnit tests that verified the leaderboard's filtering functionality.
 
         Recall that a _deployment job_ is a special type of job that plays an important role in your deployment stages. The second job is a normal job that runs the Selenium tests on a Windows Server 2019 agent. Although we use a Linux agent to build the application, here we use a Windows agent to run the UI tests. We use a Windows agent because Amita runs manual tests on Windows, and that's what most customers use.
 
@@ -176,24 +178,24 @@ Here you watch the pipeline run. The pipeline runs the Selenium UI tests during 
 
     During the build, you see the automated tests run after the website is deployed.
 
-    ![Azure Pipelines, showing the running stages](../media/6-stages-test-running.png)
+    :::image type="content" source="../media/6-stages-test-running.png" alt-text="A screenshot of Azure Pipelines, showing the running stages.":::
 
 1. After the build finishes, go to the summary page.
 
-    ![Azure Pipelines, showing the completed stages](../media/6-stages-complete.png)
+    :::image type="content" source="../media/6-stages-complete.png" alt-text="A screenshot of Azure Pipelines, showing the completed stages.":::
 
     You see that the deployment and the UI tests finished successfully.
 1. Near the top of the page, note the summary.
 
     You see that the build artifact for the _Space Game_ website is published just like always. Also note the **Tests and coverage** section, which shows that the Selenium tests have passed.
 
-    ![Azure Pipelines, showing the test summary](../../shared/media/azure-pipelines-build-summary-tests.png)
+    :::image type="content" source="../../shared/media/azure-pipelines-build-summary-tests.png" alt-text="A screenshot of Azure Pipelines, showing the test summary.":::
 
 1. Select the test summary to see the full report.
 
     The report shows that all nine tests have passed. These tests include three tests across three browsers.
 
-    ![Azure Pipelines, showing the full test report](../media/6-test-summary.png)
+    :::image type="content" source="../media/6-test-summary.png" alt-text="A screenshot of Azure Pipelines, showing the full test report.":::
 
     If any test fails, you see detailed results of the failure. From there, you can investigate the source of the failure, fix it locally, and then push up the necessary changes to make the tests pass in the pipeline.
 

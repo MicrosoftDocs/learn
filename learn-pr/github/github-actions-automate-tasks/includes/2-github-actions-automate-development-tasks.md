@@ -97,7 +97,7 @@ branding:
 
 Notice the ```inputs``` section. Here you are getting the value of a variable called MY_NAME. This variable will be set in the workflow that runs this action.
 
-In the ```runs``` section, notice you specify *docker* in the ```using``` attribute. When you do this, you'll need to provide the path to the docker image file. Here, it's called *Dockerfile*. We won't get into the specifics of Docker here, but if you would like more information, check out the [Introduction to Docker Containers](https://docs.microsoft.com/learn/modules/intro-to-docker-containers/?azure-portal=true) module.
+In the ```runs``` section, notice you specify *docker* in the ```using``` attribute. When you do this, you'll need to provide the path to the docker image file. Here, it's called *Dockerfile*. We won't get into the specifics of Docker here, but if you would like more information, check out the [Introduction to Docker Containers](/learn/modules/intro-to-docker-containers/?azure-portal=true) module.
 
 The last section, *branding*, personalizes your action in the GitHub Marketplace if you decide to publish it there.
 
@@ -164,4 +164,4 @@ Each type of runner has its benefits, but in short, GitHub-hosted runners offer 
 
 ### GitHub Actions may have usage limits
 
-GitHub Actions usage has some limits depending on if your runner is GitHub-hosted or self-hosted, and your GitHub plan. For more information on usage limits, check out [Usage limits](https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#usage-limits?azure-portal=true) in the GitHub documentation.
+GitHub Actions usage has some limits depending on if your runner is GitHub-hosted or self-hosted, and your GitHub plan. For more information on usage limits, check out [Usage limits, billing, and administration](https://docs.github.com/en/actions/reference/usage-limits-billing-and-administration) in the GitHub documentation.

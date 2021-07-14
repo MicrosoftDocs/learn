@@ -1,0 +1,42 @@
+### YamlMime:LearningPath
+uid: learn.wwl.get-started-querying-with-transact-sql
+metadata:
+  title: Get Started Querying with Transact-SQL
+  description: Get Started Querying with Transact-SQL
+  ms.date: 05/07/2021
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Get Started Querying with Transact-SQL
+prerequisites: |
+  Familiarity with working with tables of data, for example in a spreadsheet.
+summary: |
+  Learn how to use Transact-SQL to query data in a database.
+iconUrl: /learn/achievements/get-started-querying-with-transact-sql.svg
+levels:
+- beginner
+roles:
+- data-analyst
+- data-engineer
+- data-scientist
+- database-administrator
+- developer
+- solution-architect
+- student
+- technology-manager
+products:
+- azure-sql-database
+- sql-server
+- azure-sql-managed-instance
+- azure-sqlserver-vm
+- azure-sql-virtual-machines
+modules:
+- learn.wwl.intro-to-transact-sql
+- learn.wwl.sort-and-filter-queries
+- learn.wwl.query-multiple-tables-with-joins
+- learn.wwl.write-subqueries
+- learn.wwl.use-built-functions-transact-sql
+- learn.wwl.modify-data-with-transact-sql
+trophy:
+  uid: learn.wwl.get-started-querying-with-transact-sql.trophy

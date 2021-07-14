@@ -89,7 +89,7 @@ Here you'll create an empty data disk and attach it to your VM. Your data disk w
     This command:
 
     * Names the disk **uploadDataDisk1**.
-    * Set its size to be 64 GB.
+    * Sets its size to be 64 GB.
     * Specifies to use premium storage with local redundancy.
 
 To use the disk, you'll need to partition and format it. You'll do that next.
@@ -158,7 +158,7 @@ For learning purposes, here you'll also run a few commands on your VM to verify 
 
     * Partitions the drive `/dev/sdc`.
     * Creates an ext4 filesystem on the drive.
-    * Create the `/uploads` directory, which we use as our mount point.
+    * Creates the `/uploads` directory, which we use as our mount point.
     * Attaches the disk to the mount point.
     * Updates `/etc/fstab` so that the drive is mounted automatically after the system reboots.
 
@@ -182,7 +182,7 @@ For learning purposes, here you'll also run a few commands on your VM to verify 
     ```
 
 > [!TIP]
-> Some Linux kernels support TRIM to discard unused blocks on disks. This feature is available on Azure disks and can save you money if you create large files and then delete them. Learn how to [turn this feature on](https://docs.microsoft.com/azure/virtual-machines/linux/attach-disk-portal#trimunmap-support-for-linux-in-azure) in the Azure documentation.
+> Some Linux kernels support TRIM to discard unused blocks on disks. This feature is available on Azure disks and can save you money if you create large files and then delete them. Learn how to [turn this feature on](/azure/virtual-machines/linux/attach-disk-portal#trimunmap-support-for-linux-in-azure) in the Azure documentation.
 
 ## Summary
 
