@@ -8088,7 +8088,7 @@
     {
       "source_path": "learn-pr/wwl-data-ai/train-evaluate-regression-models/2-exercise-explore-data.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models/3-exercise-model",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/train-evaluate-regression-models/2-exercise-model.md",
@@ -8108,7 +8108,7 @@
     {
       "source_path": "learn-pr/wwl-data-ai/train-evaluate-classification-models/2-exercise-explore-data.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-classification-models/3-exercise-model",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/train-evaluate-classification-models/2-exercise-model.md",
@@ -8128,7 +8128,7 @@
     {
       "source_path": "learn-pr/wwl-data-ai/train-evaluate-cluster-models/2-exercise-explore-data.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-cluster-models/3-exercise-model",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-data-ai/train-evaluate-cluster-models/2-exercise-model.md",
