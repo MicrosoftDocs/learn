@@ -182,7 +182,7 @@ In this step you will create a virtual machine, assign a public IP address to it
 
 5. Click **Create**.
 
-   ![Create virtual machine page](../media/create-virtual-machine-to-test-ddos.png)
+   ![Create virtual machine page](../media/create-virtual-machine-test-ddos.png)
 
 6. In the **Generate new key pair** dialog box, click **Download private key and create resource**.
 
@@ -204,7 +204,7 @@ In this step you will create a virtual machine, assign a public IP address to it
 
 6. Click **Save**.
 
-   ![Change public IP address for DDoS VM](../media/change-public-ip-config-for-ddos-vm-new.png)
+   ![Change public IP address for DDoS VM](../media/change-public-ip-config-ddos-vm-new.png)
 
 ### Configure DDoS alerts
 
@@ -220,7 +220,7 @@ In this step you will create a virtual machine, assign a public IP address to it
 
 6. In the **Select a resource** pane, in the **Filter by resource type** box, scroll down the list and select **Public IP addresses**.
 
-   ![New alert rule change scope to public IP address](../media/new-alert-rule-change-scope-to-public-ip-address-1.png)
+   ![New alert rule change scope to public IP address](../media/new-alert-rule-change-scope-public-ip-address-1.png)
 
 7. In the **Resource** list, select **MyPublicIPAddress**, then click **Done**.
 
@@ -228,7 +228,7 @@ In this step you will create a virtual machine, assign a public IP address to it
 
 9. Select **Under DDoS attack or not**.
 
-   ![Add condition to alert rule - select a signal](../media/add-condition-to-alert-rule-1.png)
+   ![Add condition to alert rule - select a signal](../media/add-condition-alert-rule-1.png)
 
 10. In the **Operator** box select **Greater than or equal to**.
 
@@ -236,7 +236,7 @@ In this step you will create a virtual machine, assign a public IP address to it
 
 12. Click **Done**.
 
-    ![Add condition to alert rule - configure signal logic](../media/add-condition-to-alert-rule-2.png)
+    ![Add condition to alert rule - configure signal logic](../media/add-condition-alert-rule-2.png)
 
 13. Back on the **Create alert rule** page, scroll down to the **Alert rule details** section and in **Alert rule name**, enter **MyDdosAlert**.
 

@@ -107,7 +107,7 @@ In this task, you will create the workload virtual machine and place it in the W
    | Public inbound ports | Select **None**                                              |
 
 
-   ![Create a virtual machine - Basics tab](../media/create-vm-for-azure-firewall-test-basics.png)
+   ![Create a virtual machine - Basics tab](../media/create-vm-azure-firewall-test-basics.png)
 
 4. Click **Next : Disks**.
 
@@ -159,11 +159,11 @@ In this task, you will deploy the firewall into the virtual network with a firew
    | Public IP address        | Select **Add new**<br />Name: **fw-pip** |
 
 
-   ![Add public IP address to firewall](../media/assign-public-ip-to-firewall.png)
+   ![Add public IP address to firewall](../media/assign-public-ip-firewall.png)
 
 4. Review all the settings to ensure they match the screenshot below.
 
-   ![Create a firewall - review settings](../media/review-all-configurations-for-firewall.png)
+   ![Create a firewall - review settings](../media/review-all-configurations-firewall.png)
 
 5. Click **Review + create**.
 
@@ -260,7 +260,7 @@ In this task, you will add an application rule that allows outbound access to ww
    | Destination            | **www.google.com**                        |
 
 
-   ![Add an application rule collection](../media/add-application-rule-for-firewall.png)
+   ![Add an application rule collection](../media/add-application-rule-firewall.png)
 
 6. Click **Add**.
 
@@ -327,7 +327,7 @@ In this task, you will add a DNAT rule that allows you to connect a remote deskt
    | Translated port       | **3389**                                                     |
 
 
-​		![Add a DNAT rule collection](../media/add-a-dnat-rule.png)
+​		![Add a DNAT rule collection](../media/add-dnat-rule.png)
 
 4. Click **Add**.
 
