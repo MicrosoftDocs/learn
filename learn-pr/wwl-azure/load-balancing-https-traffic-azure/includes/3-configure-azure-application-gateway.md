@@ -70,7 +70,7 @@ The following table provides definitions for the properties of a custom health p
 
 
 | **Probe property**  | **Description**                                              |
-| - |  |
+|:-:|:-:|
 | Name                | Name of the probe. This name is used to identify and refer to the probe in back-end HTTP settings. |
 | Protocol            | Protocol used to send the probe. This must match with the protocol defined in the back-end HTTP settings it is associated to |
 | Host                | Host name to send the probe with. In v1 SKU, this value will be used only for the host header of the probe request. In v2 SKU, it will be used both as host header as well as SNI |

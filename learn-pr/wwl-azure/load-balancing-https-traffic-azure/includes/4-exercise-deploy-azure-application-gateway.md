@@ -28,7 +28,7 @@ In this exercise, you will:
 4. On the Create application gateway **Basics** tab, enter, or select the following information:
 
    | **Setting**         | **Value**                                    |
-   | ------------------- | -------------------------------------------- |
+   |:-:|:-:|
    | Subscription        | Select your subscription.                    |
    | Resource group      | Select the resource group provided by Learn. |
    | Application Gateway | ContosoAppGateway                            |
@@ -38,7 +38,7 @@ In this exercise, you will:
 5. In Create virtual network, enter, or select the following information:
 
    | **Setting**       | **Value**                          |
-   | ----------------- | ---------------------------------- |
+   |:-:|:-:|
    | Name              | ContosoVNet                        |
    | **ADDRESS SPACE** |                                    |
    | Address range     | 10.0.0.0/16                        |
@@ -63,7 +63,7 @@ In this exercise, you will:
 12. In the **Add a backend pool** window that opens, enter the following values to create an empty backend pool:
 
     | **Setting**                      | **Value**   |
-    | -------------------------------- | ----------- |
+    |:-:|:-:|
     | Name                             | BackendPool |
     | Add backend pool without targets | Yes         |
 
@@ -80,7 +80,7 @@ In this exercise, you will:
 18. On the **Listener** tab, enter or select the following information:
 
     | **Setting**   | **Value**         |
-    | ------------- | ----------------- |
+    |:-:|:-:|
     | Listener name | Listener          |
     | Frontend IP   | Select **Public** |
 
@@ -93,14 +93,14 @@ In this exercise, you will:
 21. On the **Backend targets** tab, enter or select the following information:
 
     | **Setting**   | **Value**      |
-    | ------------- | -------------- |
+    |:-:|:-:|
     | Target type   | Backend pool   |
     | HTTP Settings | **Create new** |
 
 22. In **Add a HTTP setting**, enter or select the following information:
 
     | **Setting**        | **Value**   |
-    | ------------------ | ----------- |
+    |:-:|:-:|
     | HTTP settings name | HTTPSetting |
     | Backend port       | 80          |
 
@@ -137,7 +137,7 @@ To do this, you'll:
 3. In **Create a virtual machine**, enter, or select the following information (If the setting is not listed, use the default value):
 
    | **Setting**          | **Value**                                        |
-   | -------------------- | ------------------------------------------------ |
+   |:-:|:-:|
    | **Basics** tab       |                                                  |
    | Subscription         | Select the subscription provided by Learn.       |
    | Resource group       | Select the Resource Group provided by Learn.     |
@@ -170,25 +170,25 @@ In this example, you install IIS on the virtual machines to verify Azure created
 
 3. Run the following command to install IIS on the virtual machine. Change the Location parameter if necessary:
 
-```Azure PowerShell
-Set-AzVMExtension `
+   ```Azure PowerShell
+   Set-AzVMExtension `
 
- -ResourceGroupName ContosoResourceGroup `
+   -ResourceGroupName ContosoResourceGroup `
 
- -ExtensionName IIS `
+   -ExtensionName IIS `
 
- -VMName BackendVM1 `
+   -VMName BackendVM1 `
 
- -Publisher Microsoft.Compute `
+   -Publisher Microsoft.Compute `
 
- -ExtensionType CustomScriptExtension `
+   -ExtensionType CustomScriptExtension `
 
- -TypeHandlerVersion 1.4 `
+   -TypeHandlerVersion 1.4 `
 
- -SettingString '{"commandToExecute":"powershell Add-WindowsFeature Web-Server; powershell Add-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\" -Value $($env:computername)"}' `
+   -SettingString '{"commandToExecute":"powershell Add-WindowsFeature Web-Server; powershell Add-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\" -Value $($env:computername)"}' `
 
- -Location WestUS
-```
+   -Location WestUS
+   ```
 
 4. Create a second virtual machine and install IIS by using the Create virtual machines and Install IIS for testing steps that you previously completed. Use BackendVM2 for the virtual machine name and for the **VMName** setting of the **Set-AzVMExtension** cmdlet.
 
