@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-file-folder-backups.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/14/2021
+  author: wwlpublish
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "It is time to backup files and folders to Azure. Which of these steps should be completed first?"
+    choices:
+    - content: "Download the agent and credential file."
+      isCorrect: false
+      explanation: "That's incorrect. You would do this second."
+    - content: "Configure the backup."
+      isCorrect: false
+      explanation: "That's incorrect. You would do this last."
+    - content: "Create the recovery services vault."
+      isCorrect: true
+      explanation: "That's correct. First, create a recovery services vault."
+  - content: "Does Azure Backup require a dedicated backup server?"
+    choices:
+    - content: "Yes"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Backup does not require a dedicated backup server. Instead, a recovery services vault is used."
+    - content: "No"
+      isCorrect: true
+      explanation: "That's correct. Azure Backup does not require a dedicated backup server. Instead, a recovery services vault is used."
+  - content: "The infrastructure manager wants to know more about Azure Backup. The discussion includes all of the following information, except:"
+    choices:
+    - content: "Azure Backup doesn't provide data encryption."
+      isCorrect: true
+      explanation: "That's incorrect. Azure Backup secures transmission and storage of your data in the public cloud. You store the encryption passphrase locally, and it is never transmitted or stored in Azure. If it is necessary to restore any of the data, only you have encryption passphrase, or key."
+    - content: "Azure Backup doesn't limit the amount of inbound or outbound data you transfer, or charge for the data that is transferred."
+      isCorrect: false
+      explanation: "That's correct."
+    - content: "Azure Backup doesn't limit the length of time data can remain in a Recovery Services vault."
+      isCorrect: false
+      explanation: "That's correct."
