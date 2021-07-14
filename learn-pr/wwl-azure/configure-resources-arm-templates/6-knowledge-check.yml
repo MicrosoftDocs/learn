@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/13/2021
+  ms.date: 07/14/2021
   author: wwlpublish
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -37,7 +37,7 @@ quiz:
     - content: "Outputs"
       isCorrect: false
       explanation: "That's incorrect. Outputs is part of the template schema. You use outputs when you need to return values from the deployed resources."
-  - content: "What happens if you accidently run the same template a second time?"
+  - content: "What happens if the same template is accidently run a second time?"
     choices:
     - content: "Azure Resource Manager will deploy new resources as copies of the previously deployed resources."
       isCorrect: false
