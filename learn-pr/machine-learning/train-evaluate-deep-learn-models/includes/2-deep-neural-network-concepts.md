@@ -13,7 +13,7 @@ Specifically, the measurements are:
 - The length of the penguin's flipper.
 - The penguin's weight.
 
-In this case, the features (***x***) are a vector of four values, or mathematically, ***x***=[x<sub>1</sub>,x<sub>2</sub>,x<sub>3</sub>,x<sub>4</sub>].
+In this case, the features (***x***) are a vector of four values, or mathematically,   ***x***=[x<sub>1</sub>,x<sub>2</sub>,x<sub>3</sub>,x<sub>4</sub>].
 
  Let's suppose that the label we're trying to predict (***y***) is the species of the penguin, and that there are three possible species it could be:
 
