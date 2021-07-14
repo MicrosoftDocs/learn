@@ -74,13 +74,13 @@ A route filter can have only one rule, and the rule must be of type 'Allow'. Thi
 
 - Select **Create a resource** then search for Route filter as shown in the following image:
 
-> [!div class="mx-imgBorder"]
-> ![Azure portal - create route filter](../media/create-route-filter.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal - create route filter](../media/create-route-filter.png)
 
 - Place the route filter in a resource group. Ensure the location is the same as the ExpressRoute circuit. Select **Review + create** and then **Create**.
 
-> [!div class="mx-imgBorder"]
-> ![Azure portal - create route filter basics tab](../media/create-route-filter-basic.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal - create route filter basics tab](../media/create-route-filter-basic.png)
 
  
 
@@ -88,13 +88,13 @@ A route filter can have only one rule, and the rule must be of type 'Allow'. Thi
 
 To add and update rules, select the manage rule tab for your route filter.
 
-> [!div class="mx-imgBorder"]
-> ![Azure portal - manage route filter properties](../media/manage-route-filter.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal - manage route filter properties](../media/manage-route-filter.png)
 
 - Select the services you want to connect to from the drop-down list and save the rule when done.
 
-> [!div class="mx-imgBorder"]
-> ![Azure portal - Add a route filter rule](../media/add-route-filter-rule.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal - Add a route filter rule](../media/add-route-filter-rule.png)
 
  
 
@@ -102,15 +102,13 @@ To add and update rules, select the manage rule tab for your route filter.
 
 - Attach the route filter to a circuit by selecting the **+ Add Circuit** button and selecting the ExpressRoute circuit from the drop-down list.
 
-> [!div class="mx-imgBorder"]
-> ![Azure portal - Add a circuit to a route filter](../media/add-circuit-route-filter.png)
-
- 
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal - Add a circuit to a route filter](../media/add-circuit-route-filter.png)
 
 - If the connectivity provider configures peering for your ExpressRoute circuit, refresh the circuit from the ExpressRoute circuit page before you select the **+ Add Circuit** button.
 
-> [!div class="mx-imgBorder"]
-> ![Azure portal - Microsoft peering with provisioned status](../media/refresh-express-route-circuit.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal - Microsoft peering with provisioned status](../media/refresh-express-route-circuit.png)
 
 **Common tasks**
 
@@ -118,12 +116,10 @@ To add and update rules, select the manage rule tab for your route filter.
 
 - You can view properties of a route filter when you open the resource in the portal.
 
-> [!div class="mx-imgBorder"]
-> ![Azure portal - View Route filter properties](../media/view-route-filter.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal - View Route filter properties](../media/view-route-filter.png)
 
- 
 
- 
 
 **To update the properties of a route filter**
 
@@ -132,12 +128,10 @@ You can update the list of BGP community values attached to a circuit by selecti
 > [!div class="mx-imgBorder"]
 > ![Azure portal - Route filter manage rule ](../media/update-route-filter.png)
 
- 
-
 - Select the service communities you want and then select **Save**.
 
-> [!div class="mx-imgBorder"]
-> ![Azure portal - Add another rule](../media/add-route-filter-rules.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal - Add another rule](../media/add-route-filter-rules.png)
 
  
 
@@ -145,15 +139,15 @@ You can update the list of BGP community values attached to a circuit by selecti
 
 - To detach a circuit from the route filter, right-click on the circuit and select **Disassociate**.
 
-> [!div class="mx-imgBorder"]
-> ![Azure portal - dissociate rule from route filter](../media/detach-route-filter.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal - dissociate rule from route filter](../media/detach-route-filter.png)
 
 **Clean up resources**
 
 - You can delete a route filter by selecting the **Delete** button. Ensure the Route filter is not associate to any circuits before doing so.
 
-> [!div class="mx-imgBorder"]
-> ![Azure portal - delete a rule](../media/delete-route-filter.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal - delete a rule](../media/delete-route-filter.png)
 
  
 
@@ -169,21 +163,18 @@ You can reset the Microsoft peering and the Azure private peering on an ExpressR
 
 - Choose the circuit that you want to change.
 
-> [!div class="mx-imgBorder"]
-> ![Azure portal - select ExpressRoute circuit](../media/expressroute-circuit-lists.png)
-
- 
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal - select ExpressRoute circuit](../media/expressroute-circuit-lists.png)
 
 - Choose the peering configuration that you want to reset.
 
-> [!div class="mx-imgBorder"]
-> ![Azure portal - select peering to reset](../media/expressroute-circuit.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal - select peering to reset](../media/expressroute-circuit.png)
 
 - Clear the **Enable Peering** check box, and then select **Save** to disable the peering configuration.
 
-> [!div class="mx-imgBorder"]
-> ![Azure portal - disable peering](../media/disable-peering.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal - disable peering](../media/disable-peering.png)
 
- 
 
 - Select the **Enable Peering** check box, and then select **Save** to re-enable the peering configuration.
