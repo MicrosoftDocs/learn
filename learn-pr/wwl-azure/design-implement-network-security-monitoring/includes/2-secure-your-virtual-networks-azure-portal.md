@@ -56,13 +56,15 @@ The regulatory compliance dashboard shows the status of all the assessments with
 
 ### Security Center regulatory compliance dashboard 
 
-![Security Center regulatory compliance dashboard ](../media/compliance-dashboard.png)
+> [!div class="mx-imgBorder"]
+> ![Security Center regulatory compliance dashboard ](../media/compliance-dashboard.png)
 
 The dashboard shows an overview of your compliance status with the set of supported compliance regulations. You will see your overall compliance score, and the number of passing vs. failing assessments associated with each standard.
 
 ### Compliance controls
 
-![Regulatory compliance dashboard with drilldown to compliance controls](../media/compliance-drilldown.png)
+> [!div class="mx-imgBorder"]
+> ![Regulatory compliance dashboard with drilldown to compliance controls](../media/compliance-drilldown.png)
 
  
 
@@ -82,7 +84,8 @@ Some controls are grayed out. These controls do not have any Security Center ass
 
 To generate a PDF report with a summary of your current compliance status for a particular standard, select Download report.
 
-![Download regulatory compliance report.](../media/download-report.png)
+> [!div class="mx-imgBorder"]
+> ![Download regulatory compliance report.](../media/download-report.png)
 
 The report provides a high-level summary of your compliance status for the selected standard based on Security Center assessments data. The report is organized according to the controls of that standard. The report can be shared with relevant stakeholders and might provide evidence to internal and external auditors.
 
@@ -94,15 +97,18 @@ Security Center automatically collects, analyzes, and integrates log data from y
 
 The Security Center overview page shows the Security alerts tile at the top of the page, and as a link from the sidebar.
 
-![Security Center overview page shows the Security alerts tile ](../media/overview-page-alerts-links.png)
+> [!div class="mx-imgBorder"]
+> ![Security Center overview page shows the Security alerts tile ](../media/overview-page-alerts-links.png)
 
 The security alerts page shows the active alerts. You can sort the list by Severity, Alert title, Affected resource, Activity start time. MITRE ATTACK tactics, and status.
 
-![Active security alerts list.](../media/alerts-page.png)
+> [!div class="mx-imgBorder"]
+> ![Active security alerts list.](../media/alerts-page.png)
 
 To filter the alerts list, select any of the relevant filters. You can add further filters with the Add filter option.
 
-![Adding filters to the alerts view.](../media/alerts-adding-filters-large.png)
+> [!div class="mx-imgBorder"]
+> ![Adding filters to the alerts view.](../media/alerts-adding-filters-large.png)
 
 The list updates according to the filtering options you have selected. Filtering can be very helpful. For example, you might want to address security alerts that occurred in the last 24 hours because you are investigating a potential breach in the system.
 
@@ -110,7 +116,8 @@ The list updates according to the filtering options you have selected. Filtering
 
 From the Security alerts list, select an alert. A side pane opens and shows a description of the alert and all the affected resources.
 
-![Mini details view of a security alert.](../media/alerts-details-pane.png)
+> [!div class="mx-imgBorder"]
+> ![Mini details view of a security alert.](../media/alerts-details-pane.png)
 
 View full details displays further information, as shown in the following image:
 
@@ -156,7 +163,8 @@ Use Azure ExpressRoute or Azure virtual private network (VPN) to create private 
 
 Azure Private Link enables you to access Azure PaaS Services (for example, Azure Storage and SQL Database) and Azure hosted customer-owned/partner services over a private endpoint in your virtual network.
 
-![Private network access to azure services. Connecting on-premise infrastructure to Azure.](../media/private-network-access-to-azure-services.png)
+> [!div class="mx-imgBorder"]
+> ![Private network access to azure services. Connecting on-premise infrastructure to Azure.](../media/private-network-access-to-azure-services.png)
 
 ### NS-4: Protect applications and services from external network attacks
 
@@ -170,7 +178,8 @@ Use Azure Firewall threat intelligence-based filtering to alert on and/or block 
 
 Use application security groups as a natural extension to your security policies instead of defining explicit security policies per application.
 
-![Network security group hierarchy with defined rules.](../media/network-security-group-hierarchy-with-defined-rules.png)
+> [!div class="mx-imgBorder"]
+> ![Network security group hierarchy with defined rules.](../media/network-security-group-hierarchy-with-defined-rules.png)
 
 ### NS-7: Secure Domain Name Service (DNS)
 

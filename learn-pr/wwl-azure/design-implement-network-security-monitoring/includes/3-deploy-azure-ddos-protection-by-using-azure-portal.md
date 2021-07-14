@@ -48,7 +48,8 @@ Let us have a look in a bit more detail at some of those key features.
 
 DDoS Protection Standard monitors actual traffic utilization and constantly compares it against the thresholds defined in the DDoS Policy. When the traffic threshold is exceeded, DDoS mitigation is initiated automatically. When traffic returns below the thresholds, the mitigation is stopped.
 
-![Diagram illustrating always-on traffic monitoring with DDoS protection.](../media/always-on-traffic-monitoring.png)
+> [!div class="mx-imgBorder"]
+> ![Diagram illustrating always-on traffic monitoring with DDoS protection.](../media/always-on-traffic-monitoring.png)
 
 During mitigation, traffic sent to the protected resource is redirected by the DDoS protection service and several checks are performed, such as:
 

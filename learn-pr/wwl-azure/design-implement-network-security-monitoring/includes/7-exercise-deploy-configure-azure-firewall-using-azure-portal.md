@@ -32,7 +32,8 @@ In this task, you will create a new resource group.
 
 5. In **Region**, select your region from the list.
 
-   ![Create a resource group for Azure firewall](../media/create-resource-group-for-azure-firewall.png)
+    > [!div class="mx-imgBorder"]
+    > ![Create a resource group for Azure firewall](../media/create-resource-group-for-azure-firewall.png)
 
 6. Click **Review + create**.
 
@@ -52,7 +53,8 @@ In this task, you will create a single virtual network with two subnets.
 
 4. In the **Name** box, enter **Test-FW-VN**.
 
-   ![Create a virtual network - Basics tab](../media/create-vnet-basics-for-azure-firewall.png)
+    > [!div class="mx-imgBorder"]
+    > ![Create a virtual network - Basics tab](../media/create-vnet-basics-for-azure-firewall.png)
 
 5. Click **Next: IP Addresses**.
 
@@ -64,7 +66,8 @@ In this task, you will create a single virtual network with two subnets.
 
 9. Click **Save**.
 
-   ![Create a virtual network - edit subnet](../media/edit-default-subnet-for-firewall.png)
+    > [!div class="mx-imgBorder"]
+    > ![Create a virtual network - edit subnet](../media/edit-default-subnet-for-firewall.png)
 
 10. Click **Add subnet**, to create another subnet, which will host the workload server that you will create shortly.
 
@@ -74,7 +77,8 @@ In this task, you will create a single virtual network with two subnets.
 
 13. Click **Add**.
 
-    ![Add subnet](../media/add-workload-subnet.png)
+    > [!div class="mx-imgBorder"]
+    > ![Add subnet](../media/add-workload-subnet.png)
 
 14. Click **Review + create**.
 
@@ -151,7 +155,8 @@ In this task, you will deploy the firewall into the virtual network with a firew
    | Firewall management  | **Use a Firewall Policy to manage this firewall**            |
    | Firewall policy      | Select **Add new**<br />Name: **fw-test-pol**<br />Region: **your region** |
 
-   ![Create a new firewall policy](../media/create-firewall-policy.png)
+    > [!div class="mx-imgBorder"]
+    > ![Create a new firewall policy](../media/create-firewall-policy.png)
 
    | Choose a virtual network | **Use existing**                         |
    | ------------------------ | ---------------------------------------- |
@@ -159,11 +164,13 @@ In this task, you will deploy the firewall into the virtual network with a firew
    | Public IP address        | Select **Add new**<br />Name: **fw-pip** |
 
 
-   ![Add public IP address to firewall](../media/assign-public-ip-firewall.png)
+    > [!div class="mx-imgBorder"]
+    > ![Add public IP address to firewall](../media/assign-public-ip-firewall.png)
 
 4. Review all the settings to ensure they match the screenshot below.
 
-   ![Create a firewall - review settings](../media/review-all-configurations-firewall.png)
+    > [!div class="mx-imgBorder"]
+    > ![Create a firewall - review settings](../media/review-all-configurations-firewall.png)
 
 5. Click **Review + create**.
 
@@ -202,7 +209,8 @@ In this task, on the Workload-SN subnet, you will configure the outbound default
 
 5. Click **Create**.
 
-   ![Create a route table](../media/create-route-table.png)
+    > [!div class="mx-imgBorder"]
+    > ![Create a route table](../media/create-route-table.png)
 
 6. After deployment completes, select **Go to resource**.
 
@@ -226,7 +234,8 @@ In this task, on the Workload-SN subnet, you will configure the outbound default
 
 16. Click **OK**.
 
-    ![Add firewall route](../media/add-firewall-route.png)
+    > [!div class="mx-imgBorder"]
+    > ![Add firewall route](../media/add-firewall-route.png)
 
  
 
@@ -260,7 +269,8 @@ In this task, you will add an application rule that allows outbound access to ww
    | Destination            | **www.google.com**                        |
 
 
-   ![Add an application rule collection](../media/add-application-rule-firewall.png)
+    > [!div class="mx-imgBorder"]
+    > ![Add an application rule collection](../media/add-application-rule-firewall.png)
 
 6. Click **Add**.
 
@@ -293,7 +303,8 @@ In this task, you will add a network rule that allows outbound access to two IP 
    | Destination            | **209.244.0.3, 209.244.0.4**<br />These are public DNS servers operated by Century Link |
 
 
-   ​	![Add a network rule collection](../media/add-network-rule-for-firewall.png)
+   ​	> [!div class="mx-imgBorder"]
+     >![Add a network rule collection](../media/add-network-rule-for-firewall.png)
 
 4. Click **Add**.
 
@@ -326,8 +337,8 @@ In this task, you will add a DNAT rule that allows you to connect a remote deskt
    | Translated address    | Enter the private IP address from **Srv-Work** that you noted earlier.<br />**e.g. - 10.0.2.4** |
    | Translated port       | **3389**                                                     |
 
-
-​		![Add a DNAT rule collection](../media/add-dnat-rule.png)
+    > [!div class="mx-imgBorder"]
+    > ![Add a DNAT rule collection](../media/add-dnat-rule.png)
 
 4. Click **Add**.
 
@@ -343,7 +354,8 @@ For testing purposes in this exercise, in this task, you will configure the Srv-
 
 3. In the list of resources in this resource group, select the network interface for the **Srv-Work** virtual machine (e.g., **srv-work350**).
 
-   ![Select NIC in resource group](../media/change-dns-servers-srv-work-nic-1.png)
+    > [!div class="mx-imgBorder"]
+    > ![Select NIC in resource group](../media/change-dns-servers-srv-work-nic-1.png)
 
 4. Under **Settings**, select **DNS servers**.
 
@@ -353,7 +365,8 @@ For testing purposes in this exercise, in this task, you will configure the Srv-
 
 7. Select **Save**.
 
-   ![Change DNS servers on NIC](../media/change-dns-servers-srv-work-nic-2.png)
+    > [!div class="mx-imgBorder"]
+    > ![Change DNS servers on NIC](../media/change-dns-servers-srv-work-nic-2.png)
 
 8. Restart the **Srv-Work** virtual machine.
 
@@ -371,7 +384,8 @@ In this final task, you will test the firewall to verify that the rules are conf
 
 4. Click **Connect**.
 
-   ![RDP connection to firewall's public IP address](../media/remote-desktop-connection-1.png)
+    > [!div class="mx-imgBorder"]
+    > ![RDP connection to firewall's public IP address](../media/remote-desktop-connection-1.png)
 
 5. In the **Enter your credentials** dialog box, log into the **Srv-Work** server virtual machine, by using the password, **TestPa$$w0rd!**.
 
@@ -387,12 +401,14 @@ In this final task, you will test the firewall to verify that the rules are conf
 
 11. You should see the Google home page.
 
-    ![RDP session on Srv-work server - browser on google.com](../media/remote-desktop-connection-2.png)
+    > [!div class="mx-imgBorder"]
+    > ![RDP session on Srv-work server - browser on google.com](../media/remote-desktop-connection-2.png)
 
 12. Browse to **https://www.microsoft.com**.
 
 13. You should be blocked by the firewall.
 
-    ![RDP session on Srv-work server - browser blocked on microsoft.com](../media/remote-desktop-connection-3.png)
+    > [!div class="mx-imgBorder"]
+    > ![RDP session on Srv-work server - browser blocked on microsoft.com](../media/remote-desktop-connection-3.png)
 
  
