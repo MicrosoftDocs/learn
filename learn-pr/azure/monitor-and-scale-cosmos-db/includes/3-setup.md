@@ -4,13 +4,13 @@ In this unit, you'll create an Azure Cosmos DB account, and use a console applic
 
 A database account is a container for multiple Azure Cosmos DB databases.
 
-1. Add a unique name for your database account. This name must be unique across all Azure Cosmos DB instances. Use the following command to generate a random database account name, by using the **Bash** `$RANDOM` variable, and store it in an environment variable to use later.
+1. Add a unique name for your database account. This name must be unique across all Azure Cosmos DB instances. Run the following command to generate a random database account name, by using the **Bash** `$RANDOM` variable, and store it in an environment variable to use later.
 
     ```bash
     export COSMOS_NAME=cosmos$RANDOM
     ```
 
-1. A sandbox resource group has been created for you, which the following command will store in an environment variable that you'll use for the rest of the code samples in this exercise.
+1. A sandbox resource group has been created for you. Run the following command to have it stored in an environment variable that you'll use for the rest of the code samples in this exercise.
 
     ```bash
     export RESOURCE_GROUP=$(az group list | jq -r '.[0].name')
@@ -19,7 +19,7 @@ A database account is a container for multiple Azure Cosmos DB databases.
     > [!NOTE]
     > If you were using your own Azure account instead of the sandbox, you would configure a static resource name in this variable.
 
-1. Create an Azure Cosmos DB account using the following command.
+1. Create an Azure Cosmos DB account running the following command.
 
     ```azurecli
     az cosmosdb create \
@@ -86,7 +86,7 @@ We look at indexing in subsequent units.
 
 ## Create your database and collections
 
-1. Create a database called `mslearn` in your Azure Cosmos DB account. We need only one database for these exercises.
+1. Run the following command to create a database called `mslearn` in your Azure Cosmos DB account. We need only one database for these exercises.
 
     ```azurecli
     az cosmosdb sql database create \
@@ -95,7 +95,7 @@ We look at indexing in subsequent units.
         --name mslearn
     ```
 
-1. Create the first collection.
+1. Create the first collection running the following command.
 
     We're going to create three collections to compare different partitioning strategies and workloads.
 
@@ -111,7 +111,7 @@ We look at indexing in subsequent units.
         --throughput 400
     ```
 
-1. Create the second collection.
+1. Create the second collection running the following command.
 
     This collection uses an order item's product category as the partition key. We'll explore the consequences of this choice as we go through the exercises in this module. This second collection is configured for 7000 RU/s, which is more than the first collection.
 
@@ -125,7 +125,7 @@ We look at indexing in subsequent units.
         --throughput 7000
     ```
 
-1. Create a third collection.
+1. Create a third collection running the following command.
 
     This collection partitions the documents by the order item's unique product identifier. This last collection is also configured for 7000 RU/s.
 
@@ -149,7 +149,7 @@ We'll use an open-source C# console application to populate your collections. Th
     git clone https://github.com/MicrosoftDocs/mslearn-monitor-azure-cosmos-db
     ```
 
-1. Change into the application's directory.
+1. Change into the application's directory running the following command.
 
     ```bash
     cd mslearn-monitor-azure-cosmos-db/ExerciseCosmosDB
@@ -174,7 +174,7 @@ We'll use an open-source C# console application to populate your collections. Th
         --query primaryMasterKey)
     ```
 
-1. Populate the `Small` collection.
+1. Populate the `Small` collection running the following command.
 
     ```bash
     dotnet run -- -c Small -o InsertDocument -n 4000 -p 10
@@ -184,24 +184,24 @@ We'll use an open-source C# console application to populate your collections. Th
 
     | Option | Value | Description |
     |---|---|---|
-    | -c | Small | The name of the collection to use. |
-    | -o | InsertDocument | The name of the task to run. |
-    | -n | 4000 | The number of times to run. |
-    | -p | 10 | The degree of parallelism to use. That's the number of threads used for the experiment. The higher this number, the greater the demand on the collection. |
+    | -c | Small | Name of the collection to use. |
+    | -o | InsertDocument | Name of the task to run. |
+    | -n | 4000 | Number of times to run. |
+    | -p | 10 | Degree of parallelism to use. That's the number of threads used for the experiment. The higher this number, the greater the demand on the collection. |
 
     The first time you run the application, it shows a welcome message.
 
     You can see the other options for this application by running `dotnet run -- --help`.
 
-    While the console application runs, you see one line printed per second that shows the status and Request Units needed for the database writes.
+    While the console application runs, you see one line printed per second that shows the status and RUs needed for the database writes.
 
-1. Populate the `HotPartition` collection.
+1. Populate the `HotPartition` collection running the following command.
 
     ```bash
     dotnet run -- -c HotPartition -o InsertDocument -n 20000 -p 10
     ```
 
-1. Populate the `Orders` collection.
+1. Populate the `Orders` collection running the following command.
 
     ```bash
     dotnet run -- -c Orders -o InsertDocument -n 20000 -p 10
