@@ -1,0 +1,41 @@
+### YamlMime:LearningPath
+uid: learn.machinelearning.machine-learning-foundations-using-data-science
+metadata:
+  title: Foundations of data science for creating machine learning models 
+  description: Learn to develop an enterprise AI strategy to create business value in financial services, including machine learning technologies, and culture.
+  ms.date: 06/30/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Foundations of data science for creating machine learning models
+summary: Decision-makers in financial services have considerations that are particular to their industry to help them realize the true transformational impact of AI in the enterprise. It is critical to understand the components of a strategy that will help the financial services sector create business value with AI.
+prerequisites: |
+  This learning path assumes knowledge of basic mathematical concepts. Some experience with Python is also beneficial. To get started with Python, complete the [Take your first steps with Python](../python-first-steps/index.yml) learning path.
+iconUrl: /learn/achievements/machine-learning-foundations-using-data-science.svg
+levels:
+- beginner
+- intermediate
+roles:
+- ai-engineer
+- data-scientist
+- student
+products:
+- azure
+modules:
+- learn.machinelearning.introduction-to-machine-learning
+- learn.machinelearning.introduction-to-classical-machine-learning
+- learn.machinelearning.introduction-to-data-for-machine-learning
+- learn.wwl.explore-analyze-data-with-python
+- learn.machinelearning.understand-regression-machine-learning
+- learn.machinelearning.test-machine-learning-models
+- learn.wwl.train-evaluate-regression-models
+- learn.machinelearning.understand-classification-machine-learning
+- learn.machinelearning.machine-learning-architectures-and-hyperparameters
+- learn.machinelearning.evaluate-real-world-models
+- learn.machinelearning.optimize-model-performance-roc-auc-dropout
+- learn.wwl.train-evaluate-classification-models
+- learn.wwl.train-evaluate-cluster-models
+- learn.wwl.train-evaluate-deep-learn-models
+trophy:
+  uid: learn.machinelearning.machine-learning-foundations-using-data-science.trophy
