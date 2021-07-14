@@ -3,7 +3,7 @@ You can create new virtual networks at any time. You can also add virtual networ
 > [!NOTE]
 > Default limits on Azure networking resources can change periodically so it's a good idea to consult the documentation for the latest information.
 
-:::image type="content" source="../media/AZ104_Implementing_VNets-6f9df081.png":::
+:::image type="content" source="../media/AZ104_Implementing_VNets-6f9df081.png" alt-text="Screenshot of the create virtual network page.":::
 
 
 > [!NOTE]
