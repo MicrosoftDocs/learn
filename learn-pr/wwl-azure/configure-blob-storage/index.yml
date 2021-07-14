@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.configure-blob-storage
+metadata:
+  title: Configure Blob Storage
+  description: "Configure Blob Storage"
+  ms.date: 07/14/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure Blob Storage
+summary: You will learn how to configure blob storage including tiers and object replication.
+abstract: |
+  - Identify features and usage cases for Azure Blob storage.
+  - Configure Blob storage and Blob access tiers.
+  - Configure Blob lifecycle management rules.
+  - Configure Blob object replication.
+  - Upload and price Blob storage.
+prerequisites: ""
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure-blob-storage
+units:
+- learn.wwl.configure-blob-storage.introduction
+- learn.wwl.configure-blob-storage.implement
+- learn.wwl.configure-blob-storage.create-blob-containers
+- learn.wwl.configure-blob-storage.create-blob-access-tiers
+- learn.wwl.configure-blob-storage.add-blob-lifecycle-management-rules
+- learn.wwl.configure-blob-storage.determine-blob-object-replication
+- learn.wwl.configure-blob-storage.upload-blobs
+- learn.wwl.configure-blob-storage.determine-storage-pricing
+- learn.wwl.configure-blob-storage.knowledge-check
+- learn.wwl.configure-blob-storage.summary-resources
+badge:
+  uid: learn.wwl.configure-blob-storage.badge
