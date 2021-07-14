@@ -20,6 +20,7 @@ You should be familiar with:
 
 - Creating and deploying basic Bicep files.
 - Azure, including the Azure portal, subscriptions, resource groups, and resources.
+- Service principals.
 - Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
 
 To follow along with the exercises in the module, you'll need the following installed locally:
