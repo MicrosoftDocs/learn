@@ -14,11 +14,11 @@ Finally, we talked through securing your network. We looked at ways to secure tr
 
 To learn more about the Security pillar of the Azure Well-Architected Framework, visit the following articles:
 
-- [Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework?azure-portal=true)
-- [Introduction to Azure security](https://docs.microsoft.com/azure/security/fundamentals/overview?azure-portal=true)
-- [Azure security documentation](https://docs.microsoft.com/azure/security/?azure-portal=true)
-- [Configure encryption with customer-managed keys stored in Azure Key Vault](https://docs.microsoft.com/azure/storage/common/storage-service-encryption-customer-managed-keys?azure-portal=true)
-- [Start using Azure Active Directory Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started?azure-portal=true)
-- [What is Azure Security Center?](https://docs.microsoft.com/azure/security-center/security-center-intro?azure-portal=true)
-- [What is Conditional Access?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview?azure-portal=true)
+- [Azure Well-Architected Framework](/azure/architecture/framework?azure-portal=true)
+- [Introduction to Azure security](/azure/security/fundamentals/overview?azure-portal=true)
+- [Azure security documentation](/azure/security/?azure-portal=true)
+- [Configure encryption with customer-managed keys stored in Azure Key Vault](/azure/storage/common/storage-service-encryption-customer-managed-keys?azure-portal=true)
+- [Start using Azure Active Directory Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-getting-started?azure-portal=true)
+- [What is Azure Security Center?](/azure/security-center/security-center-intro?azure-portal=true)
+- [What is Conditional Access?](/azure/active-directory/conditional-access/overview?azure-portal=true)
 - [Microsoft Security Development Lifecycle](https://www.microsoft.com/sdl?azure-portal=true)

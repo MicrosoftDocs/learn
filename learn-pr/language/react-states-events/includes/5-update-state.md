@@ -46,6 +46,6 @@ Here, `text` keeps the original value. The `color` value is updated to green.
 // new object
 {
     text: 'Hello, world',
-    color: 'red'
+    color: 'green'
 }
 ```

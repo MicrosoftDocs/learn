@@ -58,7 +58,7 @@ Identify the subtasks of *module title*
     - Summarize the purpose of the WAImportExport tool (details in Unit 2)
 
     - Discuss security considerations when importing or exporting data
-        - How to ensure that the data will not be compromised? Summarize encryption options (AES-128 bitlocker encryption by default, but can be upgraded to AES 256. See [Does Azure Import/Export suppoer AES-256 encryption](https://docs.microsoft.com/azure/storage/common/storage-import-export-service-faq?toc=%2fazure%2fstorage%2fblobs%2ftoc.json#does-azure-importexport-support-aes-256-encryption))
+        - How to ensure that the data will not be compromised? Summarize encryption options (AES-128 bitlocker encryption by default, but can be upgraded to AES 256. See [Does Azure Import/Export suppoer AES-256 encryption](/azure/storage/common/storage-import-export-service-faq?toc=%2fazure%2fstorage%2fblobs%2ftoc.json#does-azure-importexport-support-aes-256-encryption))
 
 1. **How Azure Import/Export works**
 
@@ -87,8 +87,8 @@ Identify the subtasks of *module title*
 
    - Contrast with other tools, such as AzCopy and Azure Data Box family.
       - Is this the best tool for a company to use to export large amounts of data out of Azure blobs to use locally on-premise?
-        - Summarize factors to consider, such as network bandwidth, connectivity (online vs offline) frequency of jobs, amounts of data (see [Choose an Azure solution for data transfer](https://docs.microsoft.com/azure/storage/common/storage-choose-data-transfer-solution?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)).
-        - Briefy compare scenarios for using Import/Export to Data Box family (see [Comparison of key capabilities](https://docs.microsoft.com/azure/storage/common/storage-solution-large-dataset-low-network?toc=%2fazure%2fstorage%2fblobs%2ftoc.json#comparison-of-key-capabilities))
+        - Summarize factors to consider, such as network bandwidth, connectivity (online vs offline) frequency of jobs, amounts of data (see [Choose an Azure solution for data transfer](/azure/storage/common/storage-choose-data-transfer-solution?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)).
+        - Briefy compare scenarios for using Import/Export to Data Box family (see [Comparison of key capabilities](/azure/storage/common/storage-solution-large-dataset-low-network?toc=%2fazure%2fstorage%2fblobs%2ftoc.json#comparison-of-key-capabilities))
 
         > [!NOTE]
         > Azure Data Box family is the recommended solution for performing very large import jobs when the organization is within a region where Data Box is supported. It's an easier process. Azure Data Box family doesn't support export from Azure.
@@ -117,10 +117,10 @@ Identify the subtasks of *module title*
 
 ## Resources
 
-- [What is Azure Import/Export service?](https://docs.microsoft.com/azure/storage/common/storage-import-export-service)
-- [Azure Import/Export requirements](https://docs.microsoft.com/azure/storage/common/storage-import-export-requirements)
-- [Use the Azure Import/Export service to import data to Azure Blob Storage](https://docs.microsoft.com/azure/storage/common/storage-import-export-data-to-blobs?)
-- [Choose an Azure solution for data transfer](https://docs.microsoft.com/azure/storage/common/storage-choose-data-transfer-solution?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)
-- [Scenarios: Data transfer for large datasets with moderate to high network bandwidth](https://docs.microsoft.com/azure/storage/common/storage-solution-large-dataset-moderate-high-network)
+- [What is Azure Import/Export service?](/azure/storage/common/storage-import-export-service)
+- [Azure Import/Export requirements](/azure/storage/common/storage-import-export-requirements)
+- [Use the Azure Import/Export service to import data to Azure Blob Storage](/azure/storage/common/storage-import-export-data-to-blobs)
+- [Choose an Azure solution for data transfer](/azure/storage/common/storage-choose-data-transfer-solution?toc=%2fazure%2fstorage%2fblobs%2ftoc.json)
+- [Scenarios: Data transfer for large datasets with moderate to high network bandwidth](/azure/storage/common/storage-solution-large-dataset-moderate-high-network)
 - [Pricing](https://azure.microsoft.com/en-ca/pricing/details/storage-import-export/)
-- Related service: [What is Azure Data Box?](https://docs.microsoft.com/azure/databox/data-box-overview)
+- Related service: [What is Azure Data Box?](/azure/databox/data-box-overview)

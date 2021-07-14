@@ -11,12 +11,12 @@ In this module, you learned how to:
 
 See the following for more information about the Azure technologies that were discussed in this module.
 
-- [Azure image builder](https://docs.microsoft.com/azure/virtual-machines/image-builder-overview)
+- [Azure image builder](/azure/virtual-machines/image-builder-overview)
 - [Azure HPC VM images](https://techcommunity.microsoft.com/t5/azure-compute/azure-hpc-vm-images/ba-p/977094)
-- [High-performance computing VM sizes](https://docs.microsoft.com/azure/virtual-machines/sizes-hpc)
-- [HB-series VMs](https://docs.microsoft.com/azure/virtual-machines/hb-series)
-- [HBv2-series VMs](https://docs.microsoft.com/azure/virtual-machines/hbv2-series)
-- [HC-series VMs](https://docs.microsoft.com/azure/virtual-machines/hc-series)
+- [High-performance computing VM sizes](/azure/virtual-machines/sizes-hpc)
+- [HB-series VMs](/azure/virtual-machines/hb-series)
+- [HBv2-series VMs](/azure/virtual-machines/hbv2-series)
+- [HC-series VMs](/azure/virtual-machines/hc-series)
 
 See the following for more information about third-party products that were mentioned in this module.
 

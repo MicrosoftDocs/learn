@@ -84,6 +84,6 @@ Azure Database for PostgreSQL servers records information about the queries run 
 
 ## Migrate data to Azure
 
-If you have existing MySQL, MariaDB, or PostgreSQL databases running on premises, and you want to move the data to a database running the corresponding data services in Azure, you can use the [Azure Database Migration Service (DMS)](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online). 
+If you have existing MySQL, MariaDB, or PostgreSQL databases running on premises, and you want to move the data to a database running the corresponding data services in Azure, you can use the [Azure Database Migration Service (DMS)](/azure/dms/tutorial-postgresql-azure-postgresql-online). 
 
 The Database Migration Service enables you to restore a backup of your on-premises databases directly to databases running in Azure Data Services. You can also configure replication from an on-premises database, so that any changes made to data in that database are copied to the database running in Azure Data Services. This strategy enables you to reconfigure users and applications to connect to the database in the cloud while the on-premises system is still active; you don't have to shut down the on-premises system while you transfer users to the cloud.

@@ -5,7 +5,7 @@ Here, you'll configure a Unity project to use the Azure Cognitive Services Speec
 ## Create and configure a new Unity project for Windows Mixed Reality development by using the MRTK
 
 > [!NOTE]
-> If you're unfamiliar with the process of configuring a Unity project for Windows Mixed Reality development, see the [Set up a Mixed Reality project in Unity with the Mixed Reality Toolkit](https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity/?azure-portal=true) Learn module for an overview.
+> If you're unfamiliar with the process of configuring a Unity project for Windows Mixed Reality development, see the [Set up a Mixed Reality project in Unity with the Mixed Reality Toolkit](/learn/modules/mixed-reality-toolkit-project-unity/?azure-portal=true) Learn module for an overview.
 
 1. Create a new 3D Unity project.
 1. Go to **File** > **Build Settings** to switch **Build Platform** to **Universal Windows Platform**.

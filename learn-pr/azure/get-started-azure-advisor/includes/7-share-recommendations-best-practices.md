@@ -78,4 +78,4 @@ The downloaded file includes any filters you applied to the Advisor dashboard. I
 
 As with many features in Azure, a REST API is also available to help you manage most of these things you've learned about Azure Advisor. For example, enterprises use our API to manage recommendations at scale by integrating with their existing work management systems.
 
-For more information, see [Azure Advisor REST API](https://docs.microsoft.com/rest/api/advisor/?azure-portal=true).
+For more information, see [Azure Advisor REST API](/rest/api/advisor/?azure-portal=true).

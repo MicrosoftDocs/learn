@@ -1,5 +1,5 @@
 Of all of the units in this module, this is certainly one of the most
-important. In this unit we're going to consider a few ideas that could
+important. In this unit, we're going to consider a few ideas that could
 change the way we frame our understanding for what is important to monitor
 and why. For some people, this can radically change everything about how
 they think about monitoring to improve their reliability.
@@ -28,7 +28,7 @@ it home.
 ### SCENARIO
 
 You are in charge of running the e-commerce website for your company. You
-have a web farm with 100 server instances. Suddenly 14 of these 100
+have a web farm with 100 server instances. Suddenly, 14 of these 100
 instances stop working due to an operating system failure, a software
 update, a power fluctuation or some other unexpected event. These 14
 instances are now totally out of commission.
@@ -50,9 +50,9 @@ fast as possible even if it means getting them out of bed in the middle of
 the night.
 
 Take a moment to think through this scenario carefully before answer and
-then read further. Do you think it is A, B or C?
+then read further. Do you think it is A, B, or C?
 
-The correct answer is neither A, B, nor C; it’s "it depends". Or more
+The correct answer is neither A, B, nor C; it’s "it depends." Or more
 precisely, "it depends on how your customers are experiencing this outage.”
 
 If you have engineered the site in such a way that no customers even
@@ -86,17 +86,16 @@ This idea comes from site reliability engineering (SRE). We can extract
 several really useful ideas (including the one for this section) just by
 closely examining the definition of SRE:
 
-> Site Reliability Engineering is an engineering discipline devoted to
-> helping organizations sustainably achieve the appropriate level of
-> reliability in their systems, services, and products.
+> [!NOTE]
+> Site Reliability Engineering is an engineering discipline devoted to helping organizations sustainably achieve the appropriate level of reliability in their systems, services, and products.
 
 There are three important words in this definition:
 
--   **reliability** We've talked a considerable amount about the importance
+-   **Reliability**: We've talked a considerable amount about the importance
     of reliability in the introductory unit, so we won't belabor the point
     here.
 
--   **sustainably** In this context, “sustainably", refers to the role of
+-   **Sustainably**: In this context, “sustainably", refers to the role of
     people in all of this. It is crucial we create a sustainable operations
     practice. Reliable systems, services, products are built by people. If
     we don't do things to make sure that our work is sustainable—if we wake
@@ -107,10 +106,10 @@ There are three important words in this definition:
     we implement an operations practice that is sustainable over time, so
     our people are able to bring their best to the job.
 
--   **appropriate** This is the word that can be a game changer for some
-    people. Once upon a time in the operations world our goal was to make
+-   **Appropriate**: This is the word that can be a game changer for some
+    people. Once upon a time in the operations world, our goal was to make
     sure that everything was up 24/7. We tried to keep everything up all
-    day long, all week long, all month long, all year long. It was never
+    day long, all week long, all month long, and all year long. It was never
     acceptable for something to go down. One of the things that site
     reliability engineering brought to the operations discussion was a
     notion that we should strive for an _appropriate_ level of reliability
@@ -118,14 +117,14 @@ There are three important words in this definition:
 
 Let's dive into this idea. A key point here is that 100% reliable is almost
 never the right goal. Except for certain exceptions like medical devices or
-aviation, we don't really need things to be 100% reliable. And in fact 100%
+aviation, we don't really need things to be 100% reliable. And in fact, 100%
 reliable isn't often possible.
 
-Here's an example of "not even possible": These days we are all running
+Here's an example of "not even possible:" These days, we are all running
 systems that have dependencies on other systems. Maybe you're running a
 piece of software that has to call out to a payment processor or has to
 call out to on authentication system. If the payment processor isn't 100%
-reliable or the authentication system isn't 100% reliable it can be very
+reliable or the authentication system isn't 100% reliable, it can be very
 difficult for your system to be 100% reliable.
 
 The other tricky thing about a goal of 100% reliable is it means zero

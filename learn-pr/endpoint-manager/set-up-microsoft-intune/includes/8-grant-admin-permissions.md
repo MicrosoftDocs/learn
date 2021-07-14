@@ -40,4 +40,4 @@ Assign users one or more administrator permissions. These permissions define the
 - **User administrator** - (Microsoft 365 and Intune) Resets passwords, monitors service health, adds and deletes user accounts, and manages service requests. The user management admin can't delete a global admin, create other admin roles, or reset passwords for other admins.
 - **Intune administrator** - Full access to Intune, manages users and devices to associate policies, as well as creates and manages groups. All Intune Global administrator permissions except permission to create administrators with **Directory Role** options.
 
-For more information about roles, see [Admin roles in Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?azure-portal=true).
+For more information about roles, see [Admin roles in Microsoft 365](/microsoft-365/admin/add-users/about-admin-roles?azure-portal=true).

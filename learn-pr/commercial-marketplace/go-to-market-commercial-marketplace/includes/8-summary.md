@@ -2,8 +2,8 @@ The commercial marketplace gives you the opportunity to grow your business in co
 
 The information provided in this module is meant to guide you as you start creating your organization's unique commercial marketplace strategy. As you consider the recommendations, here are some additional resources you can reference to expand on the concepts we learned today.
 
-- [Commercial marketplace documentation](https://docs.microsoft.com/azure/marketplace/)
-- [Marketplace Rewards](https://docs.microsoft.com/azure/marketplace/gtm-your-marketplace-benefits#marketplace-rewards)
-- [Co-sell partner engagement](https://docs.microsoft.com/azure/marketplace/marketplace-co-sell)
-- [Cloud Solution Provider program](https://docs.microsoft.com/azure/marketplace/cloud-solution-providers)
-- [Customer leads from your commercial marketplace offer](https://docs.microsoft.com/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads)
+- [Commercial marketplace documentation](/azure/marketplace/)
+- [Marketplace Rewards](/azure/marketplace/gtm-your-marketplace-benefits#marketplace-rewards)
+- [Co-sell partner engagement](/azure/marketplace/marketplace-co-sell)
+- [Cloud Solution Provider program](/azure/marketplace/cloud-solution-providers)
+- [Customer leads from your commercial marketplace offer](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads)

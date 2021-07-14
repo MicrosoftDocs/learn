@@ -19,6 +19,9 @@ abstract: |
 prerequisites: |
   - Experience with REST API design and implementation
   - Experience developing basic ASP.NET Core apps
+  - Local installations of [.NET SDK](https://dotnet.microsoft.com/download)
+  - [Visual Studio Code](https://code.visualstudio.com)
+  - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
 iconUrl: /learn/achievements/improve-developer-experience-of-an-api-with-swagger-documentation.svg
 levels:
 - beginner

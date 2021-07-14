@@ -20,22 +20,22 @@ Using the Azure portal, you can amend the Access Tier for the Storage Account, f
 1. To manage storage tiers in the Azure portal, click **Storage Accounts**.
 1. Click one of your storage accounts in the displayed list.
 1. Click **Configuration**.
-   ![](../media/3-storage-configuration.png)
+   ![Screenshot of Azure portal showing storage account configuration with Access tier set highlighted as set to hot.](../media/3-storage-configuration.png)
 1. In the Storage Account, click **Blobs** and select a container.
 1. Click your blob and scroll down to **Access Tier**.
-   ![](../media/3-change-tier.png)
+   ![Screenshot of Azure portal showing blob container access tier highlighted as set to hot.](../media/3-change-tier.png)
 1. Click the drop-down list and select the Access Tier you want to use.
-   ![](../media/3-tier-list.png)
+   ![Screenshot of blob access tier drop-down showing options of hot, cool, and archive.](../media/3-tier-list.png)
 
 ## Azure Storage Explorer
 
 Azure Storage Explorer can be used to upload and download Blobs from Azure Storage. There are two versions of Storage Explorer, Portal Storage Explorer and standalone Storage Explorer.
 
 1. To use the Azure portal tool, under Storage account, click **Storage Explorer**:
-   ![](../media/3-storage-explorer.png)
+   ![Screenshot of Azure portal storage account with Storage Explorer selected.](../media/3-storage-explorer.png)
 1. Click **BLOB CONTAINERS** to view a list of your containers.
 1. Select a container, and then select the Blob where you want to change the Access Tier.
-   ![](../media/3-tier-list-explorer.png)
+   ![Screenshot of blob containers with a test container selected, showing a highlighted access tier of hot.](../media/3-tier-list-explorer.png)
 1. Right-click the Blob and click **Change Access Tier.**
 1. From the Access Tier drop-down list, select the tier you want to assign to the Blob.
 

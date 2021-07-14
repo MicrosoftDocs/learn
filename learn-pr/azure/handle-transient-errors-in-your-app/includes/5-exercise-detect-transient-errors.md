@@ -32,7 +32,7 @@ The first thing to do is configure the app's back end. It uses an Azure Cosmos D
 
     ```azurecli
     az cosmosdb database create --name $COSMOS_DB_NAME \
-      --resource-group <rgn>[sandbox resource group name]</rgn> \
+      --resource-group-name <rgn>[sandbox resource group name]</rgn> \
       --db-name chat-app
     ```
 
@@ -41,7 +41,7 @@ The first thing to do is configure the app's back end. It uses an Azure Cosmos D
 1. Finally, run the following command in the Azure Cloud Shell to retrieve the connection strings for our new database.
 
     ```azurecli
-    az cosmosdb list-connection-strings \
+    az cosmosdb keys list --type connection-strings \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --name $COSMOS_DB_NAME  | sed -n -e '4 p' | sed -E -e 's/.*mongo(.*)true.*/mongo\1true/'
     ```

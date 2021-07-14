@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.receive-data-with-azure-data-share-transforming-with-azure-data-factory
 metadata:
-  title: Receive data with Azure Data Share and transforming with Azure Data Factory
-  description: "Receive data with Azure Data Share and transforming with Azure Data Factory"
-  ms.date: 04/09/2021
+  title: Send and receive data using Azure Data Share and transform data using Azure Data Factory
+  description: "Send and receive data using Azure Data Share and transform data using Azure Data Factory"
+  ms.date: 06/16/2021
   author: wwlpublish
   ms.author: kawaaije
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Receive data with Azure Data Share and transforming with Azure Data Factory
+title: Send and receive data using Azure Data Share and transform data using Azure Data Factory
 summary: Learn how to ingest data from Azure Data Share into Azure Data Factory pipelines to build automated ingestion pipelines.
 abstract: |
   After completing this module, you will be able to:

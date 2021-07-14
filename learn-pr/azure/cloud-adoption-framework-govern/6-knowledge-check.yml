@@ -3,7 +3,7 @@ uid: learn.azure.cloud-adoption-framework-govern.6-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Test your knowledge of the Govern methodology before starting this exercise.
+  description: Test your knowledge of the Govern methodology.
   ms.date: 09/22/2020
   author: BrianBlanchard
   ms.author: jumcn
@@ -13,61 +13,61 @@ durationInMinutes: 10
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
-  title: Check your knowledge
+  title: Which comes first? What matters most?
   questions:
-  - content: To address the risks and concerns raised by the Tailwind Traders CIO, which of the following would you act on first?
+  - content: To address the risks and concerns the Tailwind Traders CIO raises in the customer narrative, which of the following steps would you start with?
     choices:
     - content: Implement a governance foundation in Azure.
       isCorrect: false
-      explanation: Governance tools can't address poorly defined corporate policy.
+      explanation: Incorrect. Governance tools can't address poorly defined corporate policy.
     - content: Update the existing corporate policy to outline concerns, risks, triggers, and actions.
-      isCorrect: True
-      explanation: Starting with sound corporate policy will make all downstream implementations go smoother.
+      isCorrect: true
+      explanation: Correct! Starting with sound corporate policy will make all downstream implementations smoother.
     - content: Deploy cost management controls and processes.
       isCorrect: false
-      explanation: It will be hard to address cost management without a clear set of policies and a governance foundation.
+      explanation: Incorrect. It will be hard to address cost management without a clear set of policies and a governance foundation.
     - content: Deploy security baseline controls and processes.
       isCorrect: false
-      explanation: It will be hard to address security baseline without a clear set of policies and a governance foundation.
+      explanation: Incorrect. It will be hard to address a security baseline without a clear set of policies and a governance foundation.
   - content: Which would you address second?
     choices:
     - content: Implement a governance foundation in Azure.
-      isCorrect: True
-      explanation: A governance foundation will implement the tools and a few references to begin building your cloud governance solutions.
+      isCorrect: true
+      explanation: Correct! A governance foundation will implement tools and references to begin building cloud governance solutions.
     - content: Update the existing corporate policy to outline concerns, risks, triggers, and actions.
       isCorrect: false
-      explanation: Corporate policy should be number one on the list of things to address.
+      explanation: Incorrect. Corporate policy should be at the top of a list of things to address.
     - content: Deploy cost management controls and processes.
       isCorrect: false
-      explanation: It will be hard to address cost management without a clear set of policies and a governance foundation.
+      explanation: Incorrect. It will be hard to address cost management without a clear set of policies and a governance foundation.
     - content: Deploy security baseline controls and processes.
       isCorrect: false
-      explanation: It will be hard to address security baseline without a clear set of policies and a governance foundation.
-  - content: Which will deliver the most visible improvement based on the existing corporate policy?
+      explanation: Incorrect. It will be hard to address a security baseline without a clear set of policies and a governance foundation.
+  - content: Which will deliver the most visible improvement based on existing corporate policy?
     choices:
     - content: Implement a governance foundation in Azure.
       isCorrect: false
-      explanation: This is one of the coolest tech accomplishments, but it won't show much value beyond the hands-on team.
+      explanation: Incorrect. Implementing governance through Azure is one of the coolest tech accomplishments, but it won't show much value beyond the hands-on team that creates it.
     - content: Update the existing corporate policy to outline concerns, risks, triggers, and actions.
       isCorrect: false
-      explanation: Corporate policy is important, but few will initially see the value of this exercise.
+      explanation: Incorrect. Corporate policy is important, but few will initially see the value of this exercise.
     - content: Deploy cost management controls and processes.
       isCorrect: false
-      explanation: While important, cost management won't help with the security concerns.
+      explanation: Incorrect. Although important, cost management won't help with the security concerns.
     - content: Deploy security baseline controls and processes.
       isCorrect: true
-      explanation: In the narrative the visible pain points can be addressed through an automated security baseline to reduce security risks.
-  - content: Which will create the most confidence with the chief information officer?
+      explanation: Correct! In the customer narrative, the visible pain points can be addressed through an automated security baseline to reduce security risks.
+  - content: Which will increase confidence for the CIO?
     choices:
     - content: Implement a governance foundation in Azure.
       isCorrect: false
-      explanation: This is one of the coolest tech accomplishments, but it won't show much value beyond the hands-on team.
+      explanation: Incorrect. Implementing governance through Azure one of the coolest tech accomplishments, but it won't show much value beyond the hands-on team that creates it.
     - content: Update the existing corporate policy to outline concerns, risks, triggers, and actions.
       isCorrect: false
-      explanation: Corporate policy is important, but few will see the value of this exercise initially.
+      explanation: Incorrect. Corporate policy is important, but these aspects of governance don't address the concerns the CIO raises in the customer narrative.
     - content: Deploy cost management controls and processes.
       isCorrect: true
-      explanation: In this narrative the CIO expressed concerns with cost. Addressing those concerns with cost management controls will build confidence.
+      explanation: Correct! In this narrative, the CIO expresses concerns with cost. Addressing those concerns by adding cost management controls will build confidence.
     - content: Deploy security baseline controls and processes.
       isCorrect: false
-      explanation: The chief information officer (CIO) injected cost risks and concerns into the list when the existing policy had nothing to do with cost. This has also been a message shared by the CIO throughout this narrative.
+      explanation: Incorrect. The CIO added cost risks and concerns to the list, and the existing policy had nothing to do with cost. It's also a message that the CIO shares throughout the narrative.

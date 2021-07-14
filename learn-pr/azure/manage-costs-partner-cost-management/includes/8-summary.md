@@ -6,6 +6,6 @@ You also now know how to determine what resources have partner earned credits ap
 
 ## Learn more
 
-- [Azure Cost Management for partners](https://docs.microsoft.com/azure/cost-management-billing/costs/get-started-partners?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn)
-- [Start analyzing costs](https://docs.microsoft.com/azure/cost-management-billing/costs/quick-acm-cost-analysis?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn)
-- [Create and manage budgets](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn)
+- [Azure Cost Management for partners](/azure/cost-management-billing/costs/get-started-partners?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn)
+- [Start analyzing costs](/azure/cost-management-billing/costs/quick-acm-cost-analysis?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn)
+- [Create and manage budgets](/azure/cost-management-billing/costs/tutorial-acm-create-budgets?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn)

@@ -107,5 +107,5 @@ Here are the meanings of the names of the columns in the output:
 
 The recommended workflow is to run these commands, in this order:
 
-1. Run `dotnet list package`. This command lists all the outdated packages. It provides information in the `Requested`, `Resolved`, and `Latest` columns.
+1. Run `dotnet list package --outdated`. This command lists all the outdated packages. It provides information in the `Requested`, `Resolved`, and `Latest` columns.
 1. Run `dotnet add package <package name>`. If you run this command, it will try to update to the latest version. Optionally, you can pass in `--version=<version number/range>`.

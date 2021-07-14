@@ -1,4 +1,4 @@
-![Polling-based web application](../media/serverless-app-signalr-concept.png)
+![Polling-based web application.](../media/serverless-app-signalr-concept.png)
 
 Next, we'll move away from polling and toward an app that pushes data updates (as they occur) to connected clients. This new design reduces traffic and makes a more efficient UI by only updating as data changes. The three technologies that we'll use to deliver this updated solution are **Azure Cosmos DB**, **Azure Functions**, and **SignalR**.
 

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-batch-account-using-azure-portal.run-batch-applications
-title: Tasks and application packages
+title: Run tasks and add application packages
 metadata:
-  title: Tasks and application packages
-  description: Learn about application packages and configuring parallel task execution
+  title: Run tasks and add application packages
+  description: Learn about application packages and configuring parallel task execution.
   ms.date: 02/01/2021
   author: prkannap
   ms.author: prkannap

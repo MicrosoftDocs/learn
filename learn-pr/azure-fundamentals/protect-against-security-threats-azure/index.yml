@@ -8,6 +8,7 @@ metadata:
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  adobe-target: true
 title: Protect against security threats on Azure
 summary: Learn how Azure can help you protect the workloads that you run both in the cloud and in your on-premises datacenter.
 abstract: |

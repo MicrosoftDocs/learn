@@ -5,7 +5,7 @@ metadata:
   description: Modify the program to display a friendly error message if the journal file isn't found.
   ms.date: 01/26/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Display friendly error messages

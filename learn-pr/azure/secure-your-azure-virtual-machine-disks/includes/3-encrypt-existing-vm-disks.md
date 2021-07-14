@@ -56,8 +56,7 @@ An Azure Key Vault is a resource that can be created in the [Azure portal](https
     | **Instance details** |
     | Key vault name | Enter a name for your key vault |
     | Region | Ensure to select the region that the VM resides |
-    | Pricing tier | 1 minute |
-    | Frequency of evaluation | Select either Standard or Premium for the pricing tier. The main difference is that the premium tier allows for hardware encryption-backed keys |
+    | Pricing tier | Standard. You can select either Standard or Premium for the pricing tier. The main difference is that the premium tier allows for hardware encryption-backed keys |
 
     ![Screenshot showing Key vault pane.](../media/3-create-keyvault.png)
 
@@ -90,7 +89,7 @@ Set-AzKeyVaultAccessPolicy -VaultName <keyvault-name> -ResourceGroupName <resour
 ```
 
 ```azurecli
-az keyvault update --name <keyvault-name> --resource-group <resource-group> --enabled-for-disk-encryption "true"
+az keyvault update --name <keyvault-name> --resource-group <resource-group> --enabled-for-disk-encryption true
 ```
 
 ## Encrypt an existing VM disk
@@ -113,14 +112,14 @@ Set-AzVmDiskEncryptionExtension `
      -SkipVmBackup
 ```
 
-For the Azure CLI, to enable encryption, run the `az vm encryption enable` command.
+For the Azure CLI, to enable encryption, run the `az vm encryption enable` command and specify the volume you want to encrypt using the `--volume-type [all | os | data]` parameter. Here is an example of encrypting all volumes for a virtual machine.
 
 ```azurecli
 az vm encryption enable \
     --resource-group <resource-group> \
     --name <vm-name> \
     --disk-encryption-keyvault <keyvault-name> \
-    --volume-type [all | os | data]
+    --volume-type all
 ```
 
 ## View status of disk

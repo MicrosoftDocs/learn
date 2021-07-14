@@ -120,7 +120,7 @@ The commands in the previous section copy blobs from a source container to a des
 
 ```azurecli
 az storage blob delete \
-  --container sourceContainer \
+  --container-name sourceContainer \
   --name sourceBlob
 ```
 

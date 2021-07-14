@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" overflow="hidden" viewBox="0 0 866 674" width="400">
+  <defs>
+    <clipPath id="a">
+      <path d="M207 23h866v674H207z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)" transform="translate(-207 -23)">
+    <path fill="#FFF" d="M208 24h864v672H208z"/>
+    <path fill="none" stroke="#44546A" stroke-miterlimit="8" stroke-width="3" d="M340.5 400.5c0-46.392 37.608-84 84-84s84 37.608 84 84-37.608 84-84 84-84-37.608-84-84z"/>
+    <path fill="#8497B0" fill-rule="evenodd" stroke="#44546A" stroke-miterlimit="8" stroke-width="2" d="M388 424h73v24h-73zm0-36h73v24h-73zm0-36h73v24h-73z"/>
+    <path fill="#FFF" stroke="#44546A" stroke-miterlimit="8" stroke-width="3" d="M304.5 460.5h240v48h-240z"/>
+    <text fill="#44546A" font-family="Cascadia Code,Cascadia Code_MSFontService,sans-serif" font-size="24" font-weight="400" transform="translate(368.467 493)">
+      Database
+    </text>
+    <path fill="#8497B0" fill-rule="evenodd" stroke="#44546A" stroke-miterlimit="8" stroke-width="2" d="M662.096 178.351a4.794 4.794 0 00-4.788 4.8c0 2.651 2.144 4.8 4.788 4.8a4.794 4.794 0 004.789-4.8c0-2.651-2.144-4.8-4.789-4.8zm-21.557 0a4.794 4.794 0 00-4.788 4.8c0 2.651 2.144 4.8 4.788 4.8a4.794 4.794 0 004.788-4.8c0-2.651-2.144-4.8-4.788-4.8zm-21.557 0a4.794 4.794 0 00-4.789 4.8c0 2.651 2.144 4.8 4.789 4.8a4.794 4.794 0 004.788-4.8c0-2.651-2.144-4.8-4.788-4.8zM603 113h49.399L677 137.662V209h-74z"/>
+    <path fill="none" stroke="#44546A" stroke-miterlimit="8" stroke-width="3" d="M556.5 161.5c0-46.392 37.608-84 84-84s84 37.608 84 84-37.608 84-84 84-84-37.608-84-84z"/>
+    <path fill="#FFF" fill-rule="evenodd" stroke="#44546A" stroke-miterlimit="8" stroke-width="3" d="M496.5 221.5h288v48l-90.747-.741-126.388.691-70.865.05v-48z"/>
+    <text fill="#44546A" font-family="Cascadia Code,Cascadia Code_MSFontService,sans-serif" font-size="24" font-weight="400" transform="translate(528 254)">
+      Database Account
+    </text>
+    <path fill="#44546A" d="M566.523 268.362l-9.104 7.819 1.955 2.276 9.103-7.82zm-15.93 13.683l-9.104 7.818 1.955 2.276 9.103-7.818zm-15.932 13.682l-9.103 7.82 1.955 2.275 9.103-7.819zm-15.93 13.683l-9.103 7.819 1.954 2.276 9.104-7.819zm-15.93 13.683l-9.104 7.819 1.955 2.275 9.103-7.818zm-15.931 13.683l-3.348 2.875 1.955 2.275 3.347-2.875zm-7.257-1.677a7.5 7.5 0 109.774 11.379 7.5 7.5 0 00-9.774-11.379zM424.47 507.335l-9.32 7.56 1.89 2.33 9.32-7.56zm-16.308 13.23l-9.32 7.56 1.89 2.33 9.32-7.56zm-16.309 13.23l-9.319 7.56 1.89 2.33 9.32-7.56zm-16.308 13.23l-9.32 7.56 1.89 2.33 9.32-7.56zm-16.309 13.23l-9.319 7.56 1.89 2.33 9.32-7.56zm-16.308 13.23l-9.32 7.56 1.89 2.33 9.32-7.56zm-16.309 13.23l-8.064 6.543 1.89 2.33 8.064-6.543zm-11.844 1.883a7.5 7.5 0 109.45 11.65 7.5 7.5 0 00-9.45-11.65z"/>
+    <path fill="none" stroke="#44546A" stroke-miterlimit="8" stroke-width="3" d="M772.5 400.5c0-46.392 37.608-84 84-84s84 37.608 84 84-37.608 84-84 84-84-37.608-84-84z"/>
+    <path fill="#8497B0" fill-rule="evenodd" stroke="#44546A" stroke-miterlimit="8" stroke-width="2" d="M819 424h73v24h-73zm0-36h73v24h-73zm0-36h73v24h-73z"/>
+    <path fill="#FFF" stroke="#44546A" stroke-miterlimit="8" stroke-width="3" d="M736.5 460.5h240v48h-240z"/>
+    <text fill="#44546A" font-family="Cascadia Code,Cascadia Code_MSFontService,sans-serif" font-size="24" font-weight="400" transform="translate(799.533 493)">
+      Database
+    </text>
+    <path fill="#44546A" d="M694.36 268.271l9.832 6.879-1.719 2.458-9.833-6.879zm17.207 12.038l9.832 6.879-1.719 2.459-9.833-6.879zm17.207 12.039l9.832 6.879-1.72 2.458-9.832-6.879zm17.207 12.038l9.832 6.879-1.72 2.458-9.832-6.879zm17.207 12.039l9.832 6.879-1.72 2.458-9.832-6.879zm17.206 12.038l9.833 6.879-1.72 2.458-9.832-6.879zm20.288 6.871a7.5 7.5 0 11-8.6 12.291 7.5 7.5 0 018.6-12.291zM865 594h203v49H865z"/>
+    <text fill="#FFF" font-family="Cascadia Code,Cascadia Code_MSFontService,sans-serif" font-size="24" font-weight="400" transform="translate(875.809 627)">
+      { Container }
+    </text>
+    <path fill="#44546A" d="M647 594h204v49H647z"/>
+    <text fill="#FFF" font-family="Cascadia Code,Cascadia Code_MSFontService,sans-serif" font-size="24" font-weight="400" transform="translate(657.936 627)">
+      { Container }
+    </text>
+    <path fill="#44546A" d="M212 594h203v49H212z"/>
+    <text fill="#FFF" font-family="Cascadia Code,Cascadia Code_MSFontService,sans-serif" font-size="24" font-weight="400" transform="translate(222.191 627)">
+      { Container }
+    </text>
+    <path fill="#44546A" d="M855.155 507.332l-9.343 7.53 1.883 2.337 9.342-7.531zm-16.35 13.179l-9.343 7.53 1.883 2.336 9.343-7.53zm-16.35 13.179l-9.343 7.53 1.883 2.336 9.343-7.53zm-16.35 13.179l-9.343 7.53 1.883 2.336 9.343-7.53zm-16.35 13.179l-9.342 7.53 1.882 2.336 9.343-7.53zm-16.35 13.179l-9.342 7.53 1.882 2.336 9.343-7.53zm-16.35 13.178l-8.497 6.85 1.883 2.335 8.497-6.849zm-12.262 2.178a7.5 7.5 0 109.414 11.679 7.5 7.5 0 00-9.414-11.679z"/>
+    <path fill="#44546A" d="M857.417 507.313l9.498 7.334-1.834 2.374-9.498-7.334zm16.621 12.834l9.498 7.334-1.833 2.375-9.498-7.334zm16.622 12.835l9.498 7.334-1.833 2.374-9.499-7.334zm16.622 12.834l9.498 7.334-1.834 2.375-9.498-7.334zm16.621 12.835l9.498 7.334-1.833 2.374-9.498-7.334zm16.622 12.834l9.498 7.334-1.834 2.374-9.498-7.333zm16.621 12.834l9.498 7.334-1.833 2.375-9.498-7.334zm15.214 4.167a7.5 7.5 0 11-9.167 11.873 7.5 7.5 0 019.167-11.873z"/>
+  </g>
+</svg>

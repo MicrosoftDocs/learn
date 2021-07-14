@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-hdinsight.4-when-to-use-azure-hdinsight  
+title: When to use Azure HDInsight  
+metadata:
+  unitType: learning-content  
+  title: When to use Azure HDInsight
+  description: When to use Azure HDInsight
+  ms.date: 04/11/2021  
+  author: tchristiani
+  ms.author: terrychr
+  ms.topic: interactive-tutorial 
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-when-to-use-azure-hdinsight.md)]

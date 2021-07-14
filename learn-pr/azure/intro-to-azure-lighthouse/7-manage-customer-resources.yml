@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-lighthouse.7-manage-customer-resources
+metadata:
+  title: Manage customer resources
+  description: Learn how to manage your customer resources using Azure Lighthouse
+  ms.date: 01/08/2020
+  author: iankensey
+  ms.author: socuff
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage customer resources
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-manage-customer-resources.md)]

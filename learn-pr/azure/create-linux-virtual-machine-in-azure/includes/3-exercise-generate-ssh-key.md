@@ -18,15 +18,15 @@ You can use the same single public-private key pair to access multiple Azure VMs
 
 ## Create the SSH key pair
 
-On Linux, Windows 10, and macOS, you can use the built-in `ssh-keygen` command to generate the SSH public and private key files.
+On Windows 10, Linux, and macOS, you can use the built-in `ssh-keygen` command to generate the SSH public and private key files.
 
-Windows 10 includes an SSH client with the **Fall Creators Update**. Earlier versions of Windows require additional software to use SSH; [check the documentation for full details](https://docs.microsoft.com/azure/virtual-machines/linux/ssh-from-windows). Alternatively, you can install the Linux subsystem for Windows and get the same functionality.
+Windows 10 includes an SSH client with the **Fall Creators Update**. Earlier versions of Windows require additional software to use SSH; [check the documentation for full details](/azure/virtual-machines/linux/ssh-from-windows). Alternatively, you can install the Linux subsystem for Windows and get the same functionality.
 
 We will use Azure Cloud Shell, which stores the generated keys in Azure in your private storage account. You can also type these commands directly into your local shell if you prefer. You will need to adjust the instructions throughout this module to reflect a local session if you take this approach.
 
 Here is the minimum command necessary to generate the key pair for an Azure VM. This creates an SSH protocol 2 (SSH-2) RSA public-private key pair. The minimum length is 2048, but for the sake of this learning module we will use 4096.
 
-1. Run the following command in the Cloud Shell.
+1. Run the following command in Cloud Shell.
 
    ```bash
    ssh-keygen -m PEM -t rsa -b 4096
@@ -50,7 +50,7 @@ We strongly recommended that you add a passphrase. If an attacker stole your pri
 
 After you have the key pair generated, you can use it with a Linux VM in Azure. You can supply the public key during the VM creation, or add it after the VM has been created.
 
-You can view the contents of the file in Azure Cloud Shell by running the following command.
+You can view the contents of the file in Cloud Shell by running the following command.
 
 ```bash
 cat ~/.ssh/id_rsa.pub

@@ -15,10 +15,10 @@ With these ideas in place, the software development and IT administrator teams c
 
 Here are more resources to help you go further:
 
-* [Compare Active Directory to Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-compare-azure-ad-to-ad/?azure-portal=true)
+* [Compare Active Directory to Azure Active Directory](/azure/active-directory/fundamentals/active-directory-compare-azure-ad-to-ad/?azure-portal=true)
 * [Azure Active Directory](https://azure.microsoft.com/services/active-directory/?azure-portal=true)
-* [What is single sign-on (SSO)?](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on/?azure-portal=true)
-* [Azure Active Directory Seamless Single Sign-On](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso?azure-portal=true)
-* [What is Azure AD Connect?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect/?azure-portal=true)
-* [Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks?azure-portal=true)
-* [Azure AD Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/?azure-portal=true)
+* [What is single sign-on (SSO)?](/azure/active-directory/manage-apps/what-is-single-sign-on/?azure-portal=true)
+* [Azure Active Directory Seamless Single Sign-On](/azure/active-directory/hybrid/how-to-connect-sso?azure-portal=true)
+* [What is Azure AD Connect?](/azure/active-directory/hybrid/whatis-azure-ad-connect/?azure-portal=true)
+* [Azure AD Multi-Factor Authentication](/azure/active-directory/authentication/concept-mfa-howitworks?azure-portal=true)
+* [Azure AD Conditional Access](/azure/active-directory/conditional-access/?azure-portal=true)

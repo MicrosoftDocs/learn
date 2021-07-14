@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.cloud-adoption-framework-plan.2-customer-narrative
-title: Customer Narrative
+title: Customer narrative
 metadata:
-  title: Customer Narrative
+  title: Customer narrative
   description: Resume the story about Tailwind Traders to learn about their planning needs.
   ms.date: 02/22/2021
   author: BrianBlanchard

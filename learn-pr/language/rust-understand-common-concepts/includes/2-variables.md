@@ -1,74 +1,109 @@
-Values can be bound to variables by using the `let` keyword.
+Developers write computer programs to work with data. Data is gathered, analyzed, stored, processed, shared, and reported. We use *variables* to store our data in a named reference that we can refer to later in our code.
+
+## Variables
+
+In Rust, a variable is declared with the keyword `let`. Each variable has a unique name. When a variable is declared, it can be bound to a value, or the value can be bound later in the program. The following code declares a variable named `a_number`. 
 
 ```rust
-fn main() {
-  let a_number = 10;
-  let a_boolean = true;
-
-  println!("the number is {}.", a_number);
-  println!("the boolean is {}.", a_boolean);
-}
+let a_number;
 ```
 
-The `println` macro takes a string as a first argument and one extra argument for each `{}` inside that string and replaces them for the argument's display value.
-
-> [!NOTE]
-> We won't cover Rust macros in this module. For now, you can think of the `println` macro as a function
-with a variable number of arguments.
-
-The preceding example would print:
-
-> the number is 10.
-
-> the boolean is true.
-
-## Mutability
-
-In Rust, variable bindings are immutable by default. When a variable is immutable, after a value is
-bound to a name, you can't change that value.
-
-For instance, if we tried to change the value of our number from the previous example, we would receive an
-error message from the compiler.
+The `a_number` variable isn't yet bound to a value. We can modify this statement to bind a value to the variable:
 
 ```rust
-fn main() {
-  let a_number = 10; // error: cannot assign twice to immutable variable `a_number`
-  println!("the number is {}.", a_number);
-  a_number = 15;
-  println!("and now the number is {}.", a_number);
-}
+let a_number = 10;
 ```
 
-You can see this error message for yourself in the [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=723a1c9bd36161c3cfc056f572ed9c11?azure-portal=true). Select the **Run** button to run the code.
+> [!Note]
+> **Keywords**
+> &nbsp;
+> As with other programming languages, certain *keywords* like `fn` and `let` are reserved for use only by Rust. Keywords can't be used as names of functions or variables.
 
-To mutate a value, we must first use the `mut` keyword to make a variable binding mutable instead.
+
+Let's look at another example. The following code declares two variables. The first variable is declared and bound to a number value. The second variable is declared, but it's not bound to a value. Later in the program, the value for the second variable is bound to a word. The code calls the `println!` macro to display the variable values.
 
 ```rust
-fn main() {
-  let mut a_number = 10; // notice the `mut` keyword
-  println!("the number is {}.", a_number);
-  a_number = 15;
-  println!("and now the number is {}.", a_number);
-}
+// Declare a variable
+let a_number;
+    
+// Declare a second variable and bind the value
+let a_word = "Ten";
+    
+// Bind a value to the first variable
+a_number = 10;
+
+println!("The number is {}.", a_number);
+println!("The word is {}.", a_word);
+```
+
+Our example prints the following output:
+
+```output
+The number is 10.
+The word is Ten.
+```
+
+If we call the `println!` macro and try to show the value of the `a_number` variable before it's bound, the compiler returns an error.
+You can see this error message for yourself in the [Rust Playground][RustPlay-variables]. Select the **Run** button to run the code.
+
+
+## Immutable versus mutable
+
+In Rust, variable bindings are immutable by default. When a variable is immutable, after a value is bound to a name, you can't change that value.
+
+For instance, if we try to change the value of the `a_number` variable from the previous example, we receive an error message from the compiler.
+
+```rust
+// Change the value of an immutable variable
+a_number = 15;
+```
+
+You can see this error message for yourself in the [Rust Playground][RustPlay-variables]. 
+
+To mutate a value, we must first use the `mut` keyword to make a variable binding mutable.
+
+```rust
+// The `mut` keyword lets the variable be changed
+let mut a_number = 10; 
+println!("The number is {}.", a_number);
+
+// Change the value of an immutable variable
+a_number = 15;
+println!("Now the number is {}.", a_number);
+```
+
+This example prints the following output:
+
+```output
+The number is 10.
+Now the number is 15.
 ```
 
 This code compiles without errors because the variable `a_number` can now be mutated.
 
-## Shadowing
 
-You can also declare a new variable with the same name as a previous variable, which creates a new
-binding. In Rust, this operation is called "shadowing" because the new variable shadows the previous
-variable. The old variable still exists, but you can't refer to it in this scope anymore.
+## Variable shadowing
 
-The variable `number` from the preceding example doesn't need to be mutable. No mutation occurs because every operation creates a new variable while shadowing the previous one.
+You can declare a new variable that uses the same name of an existing variable. The new declaration creates a new binding. In Rust, this operation is called "shadowing" because the new variable shadows the previous variable. The old variable still exists, but you can't refer to it in this scope anymore.
+
+The following code demonstrates the use of shadowing. We declare a variable named `shadow_num`. We don't define the variable as mutable because each `let` operation creates a new variable named `number` while shadowing the previous variable binding.
 
 ```rust
-fn main() {
-    let number = 5;          // the first binding is created using the name "number"
-    let number = number + 5; // a different binding shadows the name "number"
-    let number = number * 2; // again, a new binding is created
-    println!("The number is: {}", number);
-}
+// Declare first variable binding with name "shadow_num"
+let shadow_num = 5;
+
+// Declare second variable binding, shadows existing variable "shadow_num" 
+let shadow_num = shadow_num + 5; 
+
+// Declare third variable binding, shadows second binding of variable "shadow_num"
+let shadow_num = shadow_num * 2; 
+
+println!("The number is {}.", shadow_num);
 ```
 
-Can you guess the output? Visit the [Rust Playground to run this example](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=ddc9fa490b0602526e10b564fa93890a?azure-portal=true).
+Can you guess the output? Visit the [Rust Playground][RustPlay-shadow] to run this example.
+
+
+<!-- Links -->
+[RustPlay-shadow]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e6f06e06abb37c9ee15e25de0d510f5a?azure-portal=true
+[RustPlay-variables]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=ece8cff9611f109439db2645d75e98d6?azure-portal=true

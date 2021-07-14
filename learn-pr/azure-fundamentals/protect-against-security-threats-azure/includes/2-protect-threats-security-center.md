@@ -37,7 +37,7 @@ In the **Resource security hygiene** section, Tailwind Traders can see the healt
 
 ### What's secure score?
 
-[Secure score](https://docs.microsoft.com/azure/security-center/secure-score-security-controls/?azure-portal=true) is a measurement of an organization's security posture.
+[Secure score](/azure/security-center/secure-score-security-controls/?azure-portal=true) is a measurement of an organization's security posture.
 
 Secure score is based on *security controls*, or groups of related security recommendations. Your score is based on the percentage of security controls that you satisfy. The more security controls you satisfy, the higher the score you receive. Your score improves when you remediate all of the recommendations for a single resource within a control.
 

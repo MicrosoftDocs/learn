@@ -10,7 +10,7 @@ Normally, you create a _resource group_ before you create other resources on Azu
 >  The below example code is for you to use with your own account, not this sandbox!
 
 ```azurecli 
-(Example)az group create \
+az group create \
   --name <resource-group-name> \
   --location <resource-group-location>
 ```

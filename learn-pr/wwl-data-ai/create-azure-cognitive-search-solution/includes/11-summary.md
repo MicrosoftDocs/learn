@@ -7,4 +7,4 @@ In this module, you learned how to use Azure Cognitive Search to create a cognit
 
 You can use the Azure Cognitive Search REST APIs or SDKs to create and manage index objects, and to implement a client application that queries the index to retrieve information.
 
-For more information about Azure Cognitive Search, take a look at the [service documentation](https://docs.microsoft.com/azure/search/).
+For more information about Azure Cognitive Search, take a look at the [service documentation](/azure/search/).

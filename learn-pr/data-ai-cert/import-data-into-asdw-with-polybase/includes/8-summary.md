@@ -12,6 +12,6 @@ To avoid additional costs in your Azure account, delete the **mslearn-demodw** r
 
 1. Select **Delete resource group**.
 
-    ![Delete resource group menu](../media/8-cleanup.png)
+    ![Delete resource group menu.](../media/8-cleanup.png)
 
 1. Enter the name of the resource group, and select **Delete**. Azure removes all the resources for you.

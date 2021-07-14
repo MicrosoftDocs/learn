@@ -18,7 +18,7 @@ This feature lets you to the following actions.
 
 - **Use rich customization**: Take advantage of customizable attribute mappings that define what user data should flow from the source system to the target system.
 
-- **Get alerts for critical events**: The provisioning service provides alerts for critical events and allows for Log Analytics integration where you can define custom alerts to suite your business needs.
+- **Get alerts for critical events**: The provisioning service provides alerts for critical events and allows for Log Analytics integration where you can define custom alerts to suit your business needs.
 
 ## Manual vs. automatic provisioning
 

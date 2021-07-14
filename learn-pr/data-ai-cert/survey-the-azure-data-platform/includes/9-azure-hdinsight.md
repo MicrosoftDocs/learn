@@ -6,7 +6,7 @@ HDInsight is a low-cost cloud solution. It includes Apache Hadoop, Spark, Kafka,
 
 - **Hadoop** includes Apache Hive, HBase, Spark, and Kafka. Hadoop stores data in a file system (HDFS). Spark stores data in memory. This difference in storage makes Spark about 100 times faster.
 - **HBase** is a NoSQL database built on Hadoop. It's commonly used for search engines. HBase offers automatic failover.
-- **Storm** is a distributed real-time streamlining analytics solution.
+- **Storm** is a distributed real-time streaming analytics solution.
 - **Kafka** is an open-source platform that's used to compose data pipelines. It offers message queue functionality, which allows users to publish or subscribe to real-time data streams.
 
 ## Ingesting data

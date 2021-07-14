@@ -61,7 +61,7 @@ The other properties can be used to affect your app layouts, even if you choose 
 
 We have identified five common user interface design patterns
 
-![Stylized representations of five user-interface patterns for dual-screens](../media/2-dual-screen-app-patterns.png)
+![Stylized representations of five user-interface patterns for dual-screens.](../media/2-dual-screen-app-patterns.png)
 
 - Extended canvas - useful for maps or a drawing canvas.
 - List-detail - hierarchical navigation through data.
@@ -69,4 +69,4 @@ We have identified five common user interface design patterns
 - Dual view - different views of the same data (such as a list and a map).
 - Companion pane - tool palettes or game controllers.
 
-These design patterns are described in more detail in the [dual-screen documentation](https://docs.microsoft.com/dual-screen/introduction#dual-screen-app-patterns).
+These design patterns are described in more detail in the [dual-screen documentation](/dual-screen/introduction#dual-screen-app-patterns).

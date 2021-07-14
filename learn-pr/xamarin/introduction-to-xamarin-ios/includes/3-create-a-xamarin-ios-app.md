@@ -75,4 +75,4 @@ You have a couple of options for testing your application:
 
 Always test with a physical device during your development cycle because of runtime differences on the simulator. Configuring a physical device requires additional setup. For example, your apps must be signed with an Apple-supplied certificate, and test devices need to be registered with Apple's developer portal.
 
-For instructions, see [device provisioning for Xamarin.iOS.](https://docs.microsoft.com/xamarin/ios/get-started/installation/device-provisioning/index).
+For instructions, see [device provisioning for Xamarin.iOS.](/xamarin/ios/get-started/installation/device-provisioning/index).

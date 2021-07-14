@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.introduction-to-machine-learning.exercise-test-ml-models
+title: Exercise - Use machine learning models
+metadata:
+  title: Exercise - Use machine learning models
+  description: Exercise unit using a machine learning model
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+sandbox: true
+notebook: notebooks/1-7-exercise-test-ml-models.ipynb

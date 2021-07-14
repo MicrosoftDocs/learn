@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "What steps must you go through in constructing a Web application with Express?"
+    - content: "What steps must you go through in constructing a web application with Express?"
       choices:
         - content: "Instantiate an app, configure routes, set up middleware, set up error handlers, listen to the server"
           isCorrect: false
@@ -49,7 +49,7 @@ quiz:
           isCorrect: true
         - content: "Register a route by using the post method as in app.post(<route>, () =>{}), read from req.body"
           isCorrect: false
-          explanation: "You need to configure a body pasting middleware or the posted data won't be available on req.body."
+          explanation: "You need to configure a body paring middleware or the posted data won't be available on req.body."
         - content: "Configure body parsing middleware, register a route by using the post method as in app.post(<route>, () =>{}), read from req.data"
           isCorrect: false
           explanation: "The posted data is available on req.body, not req.data."

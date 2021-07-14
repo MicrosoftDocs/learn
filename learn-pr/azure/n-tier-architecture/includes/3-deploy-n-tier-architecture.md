@@ -26,7 +26,7 @@ Here's a high-level visualization of what is deployed with this template.
 After the deployment has completed, test the application. Run the following command, which will return the URL for the app.
 
 ```azurecli
-az group deployment show \
+az deployment group show \
   --output table \
   --resource-group <rgn>[sandbox resource group name]</rgn> \
   --name azuredeploy \
@@ -35,7 +35,7 @@ az group deployment show \
 
 Open a web browser, and visit the site. You see a box where you can add food choices. After an option is added, selecting it adds a vote.
 
-![Screenshot of the sample voting application](../media/3-lunch.png)
+![Screenshot of the sample voting application.](../media/3-lunch.png)
 
 ## Three tiers of "What's For Lunch?"
 

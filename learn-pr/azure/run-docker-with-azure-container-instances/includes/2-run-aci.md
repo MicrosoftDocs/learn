@@ -17,9 +17,9 @@ For scenarios where you need full container orchestration, including service dis
 
 ## Create a container
 
-1. Sign into the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure subscription.
+1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure subscription.
 
-1. Open the Azure Cloud Shell from the Azure portal using the Cloud Shell icon.
+1. Open Azure Cloud Shell from the Azure portal using the Cloud Shell icon. Make sure to select **Bash** as the interactive Cloud Shell environment.
 
     :::image type="icon" source="../media/2-portal-cloudshell-access.png":::
 
@@ -58,7 +58,7 @@ For scenarios where you need full container orchestration, including service dis
       --resource-group learn-deploy-aci-rg \
       --name mycontainer \
       --query "{FQDN:ipAddress.fqdn,ProvisioningState:provisioningState}" \
-      --out table
+      --output table
     ```
 
     You see your container's fully qualified domain name (FQDN) and its provisioning state. Here's an example.
@@ -71,7 +71,7 @@ For scenarios where you need full container orchestration, including service dis
 
     If your container is in the **Creating** state, wait a few moments and run the command again until you see the **Succeeded** state.
 
-1. From a browser, navigate to your container's FQDN to see it running. You see this.
+1. From a browser, navigate to your container's FQDN to see it running. Ensure you enter the prefix, *http://* in front of *aci-demo...* string. You see this.
 
     :::image type="content" source="../media/2-browser.png" alt-text="Screenshot of the sample Node.js container app running in a browser." loc-scope="other"::: <!-- no-loc -->
 

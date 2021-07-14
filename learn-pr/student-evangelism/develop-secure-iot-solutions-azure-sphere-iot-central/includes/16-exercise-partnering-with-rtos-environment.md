@@ -103,7 +103,7 @@ The default developer board configuration is for the Avnet Azure Sphere Starter 
     > You can learn how to set breakpoints from this [Visual Studio Code Debugging](https://code.visualstudio.com/docs/editor/debugging#_debug-actions?azure-portal=true) article.
 
     <!-- > [!div class="mx-imgBorder"]
-    > ![The illustration shows how to set a breakpoint in the InterCoreHandler callback function](../media/visual-studio-debug-intercore-callback.png) -->
+    > ![The illustration shows how to set a breakpoint in the InterCoreHandler callback function.](../media/visual-studio-debug-intercore-callback.png) -->
 
     :::image type="content" source="../media/visual-studio-debug-intercore-callback.png" alt-text="The illustration shows how to set a breakpoint in the InterCoreHandler callback function.":::
 

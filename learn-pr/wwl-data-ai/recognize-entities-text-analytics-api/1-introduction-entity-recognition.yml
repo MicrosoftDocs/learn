@@ -6,7 +6,7 @@ metadata:
   description: "Introduction to entity recognition"
   ms.date: 10/15/2020
   author: wwlpublish
-  ms.author: gerryo
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

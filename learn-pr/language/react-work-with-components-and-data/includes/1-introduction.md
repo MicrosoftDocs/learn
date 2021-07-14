@@ -33,12 +33,12 @@ This module uses a starter project.
     ````bash
     # Windows
     git clone https://github.com/MicrosoftDocs/mslearn-react
-    cd learn-react\code\2-component-events\start
+    cd mslearn-react\code\2-component-events\start
     code .
 
     # macOS or Linux
     git clone https://github.com/MicrosoftDocs/mslearn-react
-    cd learn-react/code/2-component-events/start
+    cd mslearn-react/code/2-component-events/start
     code .
     ````
 
@@ -51,4 +51,4 @@ This module uses a starter project.
     npm start
     ```
 
-1. Your default browser automatically opens. If it doesn't, open your browser and go to `http://locahost:8080`. The starter page appears.
+1. Your default browser automatically opens. If it doesn't, open your browser and go to `http://locahost:8080`. The starter page will appear.

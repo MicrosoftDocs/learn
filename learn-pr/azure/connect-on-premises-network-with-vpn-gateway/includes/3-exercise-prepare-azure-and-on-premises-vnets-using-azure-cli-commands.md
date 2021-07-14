@@ -2,7 +2,7 @@ Your company is now ready to deploy a site-to-site VPN. This VPN will allow your
 
 You'll start by creating your Azure-side resources and on-premises network resources. For this deployment, you'll use the following network topology.
 
-![Network topology for unit 3 exercise](../media/3-network-topology-used-in-exercise.svg)
+![Network topology for unit 3 exercise.](../media/3-network-topology-used-in-exercise.svg)
 
 In this exercise, you'll simulate an on-premises datacenter (HQ-Network) by using an additional Azure virtual network. There are many makes and models of on-premises VPN devices, and it won't be possible to describe their configuration in this unit. The logical method of configuration is the same for a VPN device. You just need to replace the steps for HQ-Network with steps tailored to your on-premises device.
 
@@ -12,28 +12,28 @@ In this unit, you'll configure the virtual networks with a subnet, add a gateway
 
 ## Create the Azure-side resources
 
-1. Run this command in Azure Cloud Shell to create the **Azure-VNet-1** virtual network and the **Services** subnet.
+1. Run the following command in Azure Cloud Shell to create the **Azure-VNet-1** virtual network and the **Services** subnet.
 
     ```azurecli
     az network vnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name Azure-VNet-1 \
-        --address-prefix 10.0.0.0/16 \
+        --address-prefixes 10.0.0.0/16 \
         --subnet-name Services \
-        --subnet-prefix 10.0.0.0/24
+        --subnet-prefixes 10.0.0.0/24
     ```
 
-1. Run this command in Cloud Shell to add the **GatewaySubnet** subnet to **Azure-VNet-1**.
+1. Run the following command in Cloud Shell to add the **GatewaySubnet** subnet to **Azure-VNet-1**.
 
     ```azurecli
     az network vnet subnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --vnet-name Azure-VNet-1 \
-        --address-prefix 10.0.255.0/27 \
+        --address-prefixes 10.0.255.0/27 \
         --name GatewaySubnet
     ```
 
-1. Run this command in Cloud Shell to create the **LNG-HQ-Network** local network gateway.
+1. Run the following command in Cloud Shell to create the **LNG-HQ-Network** local network gateway.
 
     ```azurecli
     az network local-gateway create \
@@ -47,28 +47,28 @@ In this unit, you'll configure the virtual networks with a subnet, add a gateway
 
 ## Create the simulated on-premises network and supporting resources
 
-1. Run this command in Cloud Shell to create the **HQ-Network** virtual network and the **Applications** subnet.
+1. Run the following command in Cloud Shell to create the **HQ-Network** virtual network and the **Applications** subnet.
 
     ```azurecli
     az network vnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name HQ-Network \
-        --address-prefix 172.16.0.0/16 \
+        --address-prefixes 172.16.0.0/16 \
         --subnet-name Applications \
-        --subnet-prefix 172.16.0.0/24
+        --subnet-prefixes 172.16.0.0/24
     ```
 
-1. Run this command in Cloud Shell to add **GatewaySubnet** to **HQ-Network**.
+1. Run the following command in Cloud Shell to add **GatewaySubnet** to **HQ-Network**.
 
     ```azurecli
     az network vnet subnet create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --address-prefix 172.16.255.0/27 \
+        --address-prefixes 172.16.255.0/27 \
         --name GatewaySubnet \
         --vnet-name HQ-Network
     ```
 
-1. Run this command in Cloud Shell to create the **LNG-Azure-VNet-1** local network gateway.
+1. Run the following command in Cloud Shell to create the **LNG-Azure-VNet-1** local network gateway.
 
     ```azurecli
     az network local-gateway create \
@@ -82,13 +82,13 @@ In this unit, you'll configure the virtual networks with a subnet, add a gateway
 
 ## Verify the topology
 
-1. Run this command in Cloud Shell to verify that the virtual networks have been successfully created.
+1. Run the following command in Cloud Shell to verify that the virtual networks have been successfully created.
 
     ```azurecli
     az network vnet list --output table
     ```
 
-1. Run this command in Cloud Shell to verify that the local network gateways have been successfully created.
+1. Run the following command in Cloud Shell to verify that the local network gateways have been successfully created.
 
     ```azurecli
     az network local-gateway list \
@@ -98,4 +98,4 @@ In this unit, you'll configure the virtual networks with a subnet, add a gateway
 
 The following diagram shows the resources that you've deployed.
 
-![Resources deployed during unit 3 exercise](../media/3-resources-deployed-during-exercise.svg)
+![Resources deployed during unit 3 exercise.](../media/3-resources-deployed-during-exercise.svg)

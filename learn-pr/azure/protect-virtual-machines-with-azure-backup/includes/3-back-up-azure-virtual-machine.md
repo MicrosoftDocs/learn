@@ -10,7 +10,7 @@ In this unit, you'll explore all the methods of backing up Azure virtual machine
 
 Azure Backup uses a Recovery Services vault to manage and store the backup data. A vault is a storage-management entity, which provides a simple experience to  carry out and monitor backup and restore operations. With Azure Backup, you need not worry about deploying or managing storage accounts. In fact, all you need to specify is the vault you want to back up the VM to. The backup data is transferred to the Azure Backup storage accounts (in a separate fault domain) in the background. The vault also acts as an RBAC boundary to allow secure access to the data.
 
-![Screenshot that highlights the Recovery Services vaults that are available in context to the resources they're protecting](../media/3-recovery-vault-in-context.png)
+![Screenshot that highlights the Recovery Services vaults that are available in context to the resources they're protecting.](../media/3-recovery-vault-in-context.png)
 
 ## Snapshots
 
@@ -57,6 +57,6 @@ Here's how Azure Backup completes a backup for Azure VMs:
    - For each disk that's being backed up, Azure Backup reads the blocks on the disk and identifies and transfers only the data blocks that changed (the delta) since the previous backup.
    - Snapshot data might not be immediately copied to the vault. It might take several hours at peak times. Total backup time for a VM will be less than 24 hours for daily backup policies.
 
-![Azure Backup architecture](../media/3-azure-vm-backup-architecture.png)
+![Azure Backup architecture.](../media/3-azure-vm-backup-architecture.png)
 
-You may additionally enable [vault encryption with customer-managed keys (CMK)](https://docs.microsoft.com/azure/backup/encryption-at-rest-with-cmk#configuring-a-vault-to-encrypt-using-customer-managed-keys?azure-portal=true).
+You may additionally enable [vault encryption with customer-managed keys (CMK)](/azure/backup/encryption-at-rest-with-cmk#configuring-a-vault-to-encrypt-using-customer-managed-keys?azure-portal=true).

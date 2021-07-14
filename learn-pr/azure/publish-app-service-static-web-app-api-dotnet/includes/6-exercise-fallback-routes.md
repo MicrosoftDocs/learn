@@ -15,24 +15,24 @@ You can now see your workflow file in the folder _.github/workflows_ in **Window
 
 Before publishing your app, you'll create routing rules that include a fallback route.
 
-### Create the file routes.json
+### Create the file staticwebapp.config.json
+
+If you don't already have a _staticwebapp.config.json_ file in your project, you can create one with the following steps.
 
 1. In Visual Studio, right-click the folder _wwwroot_ within the _Client_ project.
-2. Select **Add -> New Item**.
-3. Select **JSON File** from the available templates, name it _routes.json_ and press <kbd>Enter</kbd>.
-4. Update the _routes.json_ file to include the following fallback route:
+1. Select **Add -> New Item**.
+1. Select **JSON File** from the available templates, name it _staticwebapp.config.json_ and press <kbd>Enter</kbd>.
 
-   ```json
-   {
-     "routes": [
-       {
-         "route": "/*",
-         "serve": "/index.html",
-         "statusCode": 200
-       }
-     ]
-   }
-   ```
+One the _staticwebapp.config.json_ is created update it to include the following fallback route:
+
+```json
+{
+  "navigationFallback": {
+    "rewrite": "index.html",
+    "exclude": ["/_framework/*", "/css/*"]
+  }
+}
+```
 
 ### Push your changes to Git
 

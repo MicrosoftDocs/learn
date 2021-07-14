@@ -1,66 +1,68 @@
-Now you have a better understanding of the benefits and capabilities of using Azure Lighthouse; you're beginning to see how to apply Azure Lighthouse to Lamna Healthcare.
+Now you have a better understanding of the benefits and capabilities of using Azure Lighthouse; you're beginning to see how Azure Lighthouse can help you deliver services to your three new customers.
 
-Contoso has existing customer management processes and roles you use for other customers. You'd like to understand what's needed to get ready to onboard Lamna Healthcare, your first Azure Lighthouse customer.
+Contoso has existing customer onboarding and management processes. You'd like to understand what's needed to onboard a customer using Azure Lighthouse.
 
-In this unit, you'll take a close look at tenants and how they work with Azure Lighthouse, and the use of roles and users in the day-to-day management of customers. Finally, you'll learn about security recommendations about access to, and using, Azure Lighthouse.
+In this unit, you'll take a close look at Azure tenants and how they work with Azure Lighthouse, and the use of roles and users in the day-to-day management of customers. Finally, you'll learn about security recommendations about access to, and using, Azure Lighthouse. These concepts and associated decisions will be used regardless of whether you deploy Azure Lighthouse via Azure Resource Manager templates or private or global Azure Marketplace offers.
 
 ## Getting started
 
 Using Azure Lighthouse fundamentally changes the way you interact with, and manage, your new and future Azure customer tenants. With your existing Azure customers, each of your service provider users needed to have an account in your customer's tenant to do management tasks. Under Azure Lighthouse, there's only one tenant for your Contoso staff to use. That's your own.
 
-Through Azure delegated resource management, Lamna Healthcare's Azure subscriptions or resource groups are logically mapped to Contoso's Azure tenant. Which means the assigned Contoso managed service users only access and manage those specific resources for Lamna Healthcare.
+Through Azure delegated resource management, your customer's Azure subscriptions or resources are logically mapped to Contoso's Azure tenant, relevant to the service provider user who is logged in.  It means the assigned Contoso managed service user only has access to view and manage those specific resources that they have delegated access to. With this in mind, you can segregate your team to include, for example:
 
-This logical mapping is automatically created when the customer accepts a Service Management offering on the Azure Marketplace. It also occurs when they deploy one of your Azure Resource Manager templates on their Azure tenant.
+- a group of Helpdesk staff with access to view the status of the customer's virtual machines
+- a group of Backup Management staff with access to manage Azure Backup for your customers
+- a group of project staff with a higher level of access to all of the resources inside particular resource groups in your customer's environment
 
-Before we get to onboarding Lamna Healthcare, there are a few more things you'll need to take care of at Contoso first. Next, you need to think about roles and authorizations.
+This logical mapping is automatically created when the customer accepts a Service Management offering on the Azure Marketplace. It also occurs when they deploy one of your Azure Resource Manager templates on their Azure tenant, where you will specify these access levels and scope of where they apply to.
+
+These access levels are defined and enforced using Azure's role-based access control. Let's take a deeper look at those roles and authorizations.
 
 ## Roles and authorizations
 
-When you make a managed service offer to Lamna Healthcare, one of the things you'll need to decide is which roles are required to manage that offering. These roles will be based on the type of tasks you'll perform. The roles needed to align with the built-in role-based access control (RBAC) list.
+Once you've confirmed how the service teams at Contoso are structured, to deliver the requirements of the customer's service contracts, you need to identify which roles in Azure best provide those access levels. The roles need to exist in the list of built-in Azure role-based access control (RBAC) definitions.
 
-Lamna Healthcare has requested that we manage and administer their subscription. Also, they've mentioned they're interested in the management and security of their database systems within that subscription. The **Contributor** role would seem to be the obvious choice since this role does have the broadest scope for use across the Lamna Healthcare subscription. The Contributor role is better suited to managing administrative needs for the subscription rather than focused access. If the demand for a Contributor role is high, limit the group to senior Contoso managed service users. For Lamna Healthcare, we'll create a limited-access user group called Lamna Subscription Management.
+**Customer 1** has requested that we manage and administer their entire Azure subscription and all of its resources. The **Contributor** role would be the best choice here, since this role does have the broadest scope for use across a customer subscription. As this role has a high level of access, you'll limit it to a small group of senior technical staff at Contoso.
 
-For the other Contoso managed service users, you'll create specific, tightly focused roles to meet Lamna Healthcare's database management needs. For example, **SQL DB Contributor**, and **SQL Security Manager**.
+> [!TIP]
+> You can apply roles to a group name in your Azure resource manager templates to onboard your customer to Azure Lighthouse. Then during the life of that services contract, you can add and remove your Contoso staff to that group as required within your own Azure tenant, without needing to make any changes to your customer's delegated resource access.  
 
-Your managed service users will need to be assigned the **Reader** role (or another built-in role, which includes reader access) to view Lamna Healthcare's subscription, in the **My Customers** page.
+**Customer 2's** service contract is limited to resources inside one particular resource group only, called "cust2-rg1". Your Contoso staff only need Reader access to this resource group and its resources, so the Reader role and it's associated permissions are appropriate here.
 
-When selecting roles for your Lamna Healthcare offering, you should consider that these roles have to work within the Azure delegated resource management framework. At this time, that means there are a few roles that aren't supported. You can't use custom roles or the Owner role. You'll also need to avoid using any built-in roles that have **DataAction** permissions.
+> [!TIP]
+> Authorizations applied at a resource group level will apply to all existing resources in that resource group and will be inherited by all new resources created in that resource group (by people who have the right permissions to create resources).
 
-When applying these roles to your service offer, you need to think of them differently. So, when presenting a managed service offer, you need to create authorizations. Each authorization defines a user and the role they'll be granted for the delegated resources.
+For **Customer 3**, the staff at Contoso also need read access but to two different resource groups. Again, the Reader role is the most appropriate choice.
+
+When applying these roles to your service offer, you don't use the Identity and Access Management blade in the Azure portal as you usually would for granting role-based access control. Instead, you create an authorization. Each authorization defines a user (or group) and the role they'll be granted for the delegated resources. It also forms a required part of Azure Resource Manager templates, if you're using them to onboard a customer to Azure Lighthouse.
 
 ## Best practices
 
 If you're thinking about users and roles, especially for  Azure delegated resource management, there are guidelines you should try to adhere to:
 
-- Avoid assigning an individual Contoso user to a role. It's better to appoint an Azure AD user group or a service principal. Which mitigates the need to update the offer each time you change a Contoso service manager user allocation.
-- Ensure that at least one Contoso user in your tenant has the **Managed Services Registration Assignment Delete** role. Otherwise, removing delegated resources from your tenant can only be done by Lamna Healthcare from their Azure AD tenant.
+- Avoid assigning an individual Contoso user to a role. It's better to appoint an Azure AD user group or a service principal. It mitigates the need to update the offer each time your Contoso staff change.
+- Ensure that at least one Contoso user is granted the **Managed Services Registration Assignment Delete** role. It allows you to remove the delegated access at the completion of your service contract, otherwise the customer has to remove it from their Azure tenant.
+- You can't use custom role definitions or the Owner role. For a list of the current built-in roles and their IDs, visit [Azure built-in roles](/azure/role-based-access-control/built-in-roles).
+- You also need to avoid using any built-in roles that have **DataAction** permissions.
 
 ## Permission structures
 
-Contoso already uses Azure AD user groups and roles to control access to your systems. To simplify the authorizations you assign to your managed service offers, it's a good idea to create a dedicated suite of Azure AD user groups and associated roles.
-
-For Lamna Healthcare, you already know the roles needed and, by following the good practice guide, you'll be using user groups. The table shows the permissions table you'll use for Lamna Healthcare.
+Contoso already uses Azure AD user groups and roles to control access to its own Azure resources. To simplify the authorizations you will assign to your managed service offers, you have decided to create a dedicated suite of Azure AD user groups and associated roles in your tenant.
 
 | **Group name**                     | **Type**   | **Role definition**                             |
 | ---------------------------------- | ---------- | ----------------------------------------------- |
-| Lamna_Subscription_Management      | User group | Contributor                                     |
-| Lamna_Database_Management          | User group | SQL DB Contributor & SQL Security Manager       |
-| Lamna_Managed_Service_Registration | User group | Managed Services Registration Assignment Delete |
-| Lamna_Policy_Automation_Account    | User group | User Access Administrator                       |
-| Manage_Lighthouse_Customers        | User group | Reader                                          |
+| Customer_Helpdesk                  | User group | Reader                                          |
+| Customer_Backup_Management         | User group | Backup Contributor                                     |
+| Customer_Subscription_Management   | User group | Contributor                                     |
 
 > [!NOTE]
-> When you create each of these user groups in your Contoso Azure Active Directory, please make a note of the principal IDs. You'll need them for the onboarding process.
+> When you create each of these user groups in your Contoso Azure Active Directory, make a note of their Object ID. You'll need that for the onboarding process.
 
-As Contoso onboards more Azure customers, the permissions structure will become more generic. For instance, you might want to use a single user group with the Contributor role to manage all your Azure customers' subscriptions, not just Lamna Healthcare.
-
-With your permission structure defined, you need to assign users to these groups. It's essential to ensure you only add those Contoso users who will be responsible for managing Lamna Healthcare. When allocating users, bear in mind that, if you reuse the Lamna Healthcare permission structure for new managed service customers. The Contoso managed service users in those user groups will also gain access to the new customers' subscriptions or resource groups.
+With your permission structure defined, you need to assign users to these groups. Remember, Contoso staff in these groups will have access to all customers where this group has been used in an authorization. If you have a customer with a specific security requirement where you need to limit access to only certain Contoso staff (for example, people who have done certain accredited training), consider creating groups just for this customer and using only those groups in their authorization.
 
 ## Security considerations
 
-Security is a constant consideration for any Azure Active Directory. When you introduce Azure delegated resource management into your tenant, you should also consider the security of your customers, including Lamna Healthcare.
+Security is a constant consideration for any Azure Active Directory environment. When you introduce Azure delegated resource management into your tenant, you should also consider the security of your customers. Considerations should include:
 
-When you prepare to onboard Lamna Healthcare, and for scaling Azure Lighthouse to all your other Azure customers later, there are a few things to do:
-
-- Implement Azure AD Multi-Factor Authentication for all users in your service provider tenant, including any users with responsibility for managing Lamna Healthcare's subscription. This authentication method reduces the likelihood of attackers gaining access to Lamna Healthcare's systems or databases from the Contoso Azure AD tenant
-- Apply the **principle of least privilege** when giving permissions to your users;  Contoso users should have enough permissions to do their job and no more
+- Implementing Azure AD Multi-Factor Authentication for all users in your Conotoso tenant, including any users with responsibility for managing customer with Azure Lighthouse. This authentication method reduces the likelihood of attackers gaining access to your customer's resources via your Contoso Azure AD tenant.
+- Apply the **principle of least privilege** when giving permissions to your users - Contoso users should have enough permissions to do their job and no more.

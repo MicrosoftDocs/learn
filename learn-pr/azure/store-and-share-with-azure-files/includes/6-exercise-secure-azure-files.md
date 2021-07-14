@@ -42,11 +42,11 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 1. Select **File shares**.
 
-    ![Screenshot of the Azure portal showing the storage account overview](../media/4-select-file-shares.png)
+    ![Screenshot of the Azure portal showing the storage account overview.](../media/4-select-file-shares.png)
 
 1. You should see **Access Denied**.
 
-    ![Screenshot showing access is denied to the share](../media/6-access-denied.png)
+    ![Screenshot showing access is denied to the share.](../media/6-access-denied.png)
 
 1. Return to the **Firewalls and virtual networks** settings.
 
@@ -65,7 +65,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 1. Open the file share in the Azure portal, upload the azcopy.exe file so it is available on the VM. On the VM drag to the desktop for easy use.
 
-    ![Screenshot of expanding the AzCopy zip folder](../media/6-unzip-azcopy.png)
+    ![Screenshot of expanding the AzCopy zip folder.](../media/6-unzip-azcopy.png)
 
 1. Select the **azcopy** zip file.
 
@@ -167,6 +167,6 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 1. In the File properties window, select **Previous Versions**, and note the listed snapshots created on the file share.
 
-    ![Screenshot of the file properties window showing previous snapshots](../media/6-previous-versions.png)
+    ![Screenshot of the file properties window showing previous snapshots.](../media/6-previous-versions.png)
 
     From here, you can select **Open** to open the previous version to browse the files at that snapshot. Otherwise, you can select **Restore** to restore files from a snapshot.

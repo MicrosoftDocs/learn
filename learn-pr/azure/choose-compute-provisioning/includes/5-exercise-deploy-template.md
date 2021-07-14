@@ -8,21 +8,21 @@ In this exercise, you'll provision a web server to meet the requirements.
 
 You'll use a couple of tools together. With Azure Resource Manager templates, you can create a template that outlines the environment for your web server. Your Resource Manager template can also help you define a state that you apply to your web server at the point of provisioning. Apply your desired state by linking to a Desired State Configuration (DSC) extension handler inside your Resource Manager template. The DSC handler helps you enforce a state that you define in a DSC configuration.
 
-In the following exercise, you use a Resource Manager template to provision a virtual machine. The DSC extension handler that's included in the template enforces your state on the virtual machine. You use an Azure storage account to host your DSC configuration file.
+In the following exercise, you'll use a Resource Manager template to provision a virtual machine. The DSC extension handler that's included in the template enforces your state on the virtual machine. You use an Azure storage account to host your DSC configuration file.
 
 ## Clone the configuration and template
 
 Let's start by obtaining a configuration file and Resource Manager template from GitHub.
 
-1. In the Azure Cloud Shell instance on the right, run this command to clone the GitHub repository.
+1. In Azure Cloud Shell instance on the right, run the following command to clone the GitHub repository.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-choose-compute-provisioning.git
     ```
 
-## Examine and compress the state configuration file
+## Examine and compress the State Configuration file
 
-The state configuration is defined in the *Webserver.ps1* file, which includes the IIS web server on your virtual machine. Let's examine that file.
+The State Configuration is defined in the *Webserver.ps1* file, which includes the IIS web server on your virtual machine. Let's examine that file.
 
 1. To open the file, run these commands:
 
@@ -63,9 +63,9 @@ The state configuration is defined in the *Webserver.ps1* file, which includes t
     }
     ```
 
-1. To close the code editor, select <kbd>Ctrl+q</kbd>.
+1. To close the code editor, press <kbd>Ctrl+Q</kbd>.
 
-1. To see the contents of the cloned repository, enter this command:
+1. To see the contents of the cloned repository, run this command:
 
     ```bash
     ls -al
@@ -77,7 +77,7 @@ The state configuration is defined in the *Webserver.ps1* file, which includes t
 
 The GitHub repository that you cloned also contains a Resource Manager template. Let's add the location of the zipped configuration file to it.
 
-1. In Cloud Shell, use this command to open the template:
+1. In Cloud Shell, run this command to open the template:
 
     ```bash
     code template.json
@@ -108,19 +108,19 @@ The GitHub repository that you cloned also contains a Resource Manager template.
     },
     ```
 
-1. To save the template, select <kbd>Ctrl+s</kbd>.
+1. To save the template, press <kbd>Ctrl+S</kbd>.
 
 1. In the `<variables>` section of the *template.json* code file, notice that values are stored to configure networking for the virtual machine.
 
 1. In the `<resources>` section, notice that the template creates an IP address, a virtual network, the virtual machine, and other related resources.
 
-1. To close the code editor, select <kbd>Ctrl+q</kbd>.
+1. To close the code editor, press <kbd>Ctrl+Q</kbd>.
 
 ## Validate your template
 
 Now that you have a completed template and zipped configuration file, you can use the Azure CLI to perform a deployment. Before you deploy, validate your files to see if the deployment will be successful.
 
-1. In Cloud Shell, run the following command to validate your deployment. When prompted for a password, enter a complex password of your choice.
+1. In Cloud Shell, run this command to validate your deployment. When prompted for a password, enter a complex password of your choice.
 
     ```azurecli
     az deployment group validate \
@@ -176,4 +176,4 @@ Now that we know the template is valid, we can perform the deployment.
 
     :::image type="content" source="../media/5-iis-server-runs.png" alt-text="Screenshot of the default IIS page on the virtual machine that was deployed." loc-scope="other":::
 
-You provisioned a web server by using Resource Manager templates and enforced a desired state configuration on your machine through a DSC extension handler.
+You provisioned a web server by using Resource Manager templates and enforced a desired State Configuration on your machine through a DSC extension handler.

@@ -2,7 +2,7 @@ In the motor vehicle department system, you decide to run the web app on two ser
 
 In this exercise, you'll create a pair of virtual machines and install the vehicle registration web app. You'll also configure a virtual network that Application Gateway can use to connect to the virtual machines. Finally, you'll deploy the license renewal web site to an instance of Azure App Service.
 
-![Diagram showing the resources that will be deployed](../media/3-resources.svg)
+![Diagram showing the resources that will be deployed.](../media/3-resources.svg)
 
 ## Create virtual machines and deploy the vehicle registration site
 
@@ -24,9 +24,9 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
     az network vnet create \
       --resource-group $RG \
       --name vehicleAppVnet \
-      --address-prefix 10.0.0.0/16 \
+      --address-prefixes 10.0.0.0/16 \
       --subnet-name webServerSubnet \
-      --subnet-prefix 10.0.1.0/24
+      --subnet-prefixes 10.0.1.0/24
     ```
 
 1. To download the script that creates the virtual machines, run the following command.

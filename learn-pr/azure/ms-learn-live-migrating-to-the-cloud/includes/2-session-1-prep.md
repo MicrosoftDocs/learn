@@ -34,6 +34,6 @@ If you'd like to follow along with the demos shown during the session, please sw
 ## Resources
 
 - Learn Live GitHub repository for this series: [github.com/MicrosoftDocs/mslearn-live-migrating-to-the-cloud](https://github.com/MicrosoftDocs/mslearn-live-migrating-to-the-cloud)
-- Architecture Reference Center: [docs.microsoft.com/azure/architecture/](https://docs.microsoft.com/azure/architecture/)
-- Learn Live Sandbox: [docs.microsoft.com/learn/support/?pivots=sandbox](https://docs.microsoft.com/learn/support/?pivots=sandbox)
-- Azure Naming Conventions: [docs.microsoft.com/azure/architecture/best-practices/naming-conventions](https://docs.microsoft.com/azure/architecture/best-practices/naming-conventions)
+- Architecture Reference Center: [docs.microsoft.com/azure/architecture/](/azure/architecture/)
+- Learn Live Sandbox: [docs.microsoft.com/learn/support/?pivots=sandbox](/learn/support/?pivots=sandbox)
+- Azure Naming Conventions: [docs.microsoft.com/azure/architecture/best-practices/naming-conventions](/azure/architecture/best-practices/naming-conventions)

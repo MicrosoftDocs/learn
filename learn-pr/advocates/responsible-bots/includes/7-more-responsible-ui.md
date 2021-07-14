@@ -115,20 +115,20 @@ In this unit, we reviewed several ways to improve our bot and provide a robust c
 
 <!-- Links -->
 [QnAPortal]: https://qnamaker.ai?azure-portal=true
-[QnAFollowUp]: https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/multiturn-conversation
-[BotAttachments]: https://docs.microsoft.com/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0&tabs=csharp
-[AdaptiveCards]: https://docs.microsoft.com/adaptive-cards/getting-started/bots
+[QnAFollowUp]: /azure/cognitive-services/qnamaker/how-to/multiturn-conversation
+[BotAttachments]: /azure/bot-service/bot-builder-howto-add-media-attachments?tabs=csharp&view=azure-bot-service-4.0
+[AdaptiveCards]: /adaptive-cards/getting-started/bots
 [WikiFlags]: https://en.wikipedia.org/wiki/National_flag
 [CountryFlagsFile]: https://github.com/#TODO
 [GitFlag]: https://github.com/MicrosoftDocs/mslearn-responsible-bots/tree/t4.0-flags
-[TextAnalytics]: https://docs.microsoft.com/azure/cognitive-services/text-analytics/
+[TextAnalytics]: /azure/cognitive-services/text-analytics/
 [PersonalityChat]: https://aischool.microsoft.com/conversational/learning-paths/advanced-conversational-ai/ttmb-implementing-project-personality-chat
 [TranslatorAPI]: https://azure.microsoft.com/services/cognitive-services/translator-text-api/
-[LangDetection]: https://docs.microsoft.com/azure/cognitive-services/Face/quickstarts/csharp
-[Translation]: https://docs.microsoft.com/azure/cognitive-services/translator/quickstart-translator
-[MiddleWare]: https://docs.microsoft.com/azure/bot-service/bot-builder-concept-middleware?view=azure-bot-service-4.0
+[LangDetection]: /azure/cognitive-services/Face/quickstarts/csharp
+[Translation]: /azure/cognitive-services/translator/quickstart-translator
+[MiddleWare]: /azure/bot-service/bot-builder-concept-middleware?view=azure-bot-service-4.0
 [BotTranslateSample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/17.multilingual-bot
-[BotDialogs]: https://docs.microsoft.com/azure/bot-service/bot-builder-concept-dialog?view=azure-bot-service-4.0
+[BotDialogs]: /azure/bot-service/bot-builder-concept-dialog?view=azure-bot-service-4.0
 [BotDialogsSample]: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/19.custom-dialogs
-[SpeechSDK]: https://docs.microsoft.com/azure/cognitive-services/speech-service/
-[AddSpeech]: https://docs.microsoft.com/azure/bot-service/rest-api/bot-framework-rest-connector-text-to-speech?view=azure-bot-service-4.0
+[SpeechSDK]: /azure/cognitive-services/speech-service/
+[AddSpeech]: /azure/bot-service/rest-api/bot-framework-rest-connector-text-to-speech?view=azure-bot-service-4.0

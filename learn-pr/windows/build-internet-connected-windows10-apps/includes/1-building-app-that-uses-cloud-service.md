@@ -20,7 +20,7 @@ zone_pivot_groups: platform-apps
 
 ::: zone-end
 
-In this unit, we'll use the Azure Cognitive Services [Image Search](https://docs.microsoft.com/azure/cognitive-services/bing-image-search/) feature to write part of an app that helps teach English as a second language. The finished app will automatically provide a picture for any word within a block of text. For example, imagine that the user is reading about different types of food, and they come across a word they don't know. With this app, they can select the word **soup** and see a picture of some soup.
+In this unit, we'll use the Azure Cognitive Services [Image Search](/azure/cognitive-services/bing-image-search/) feature to write part of an app that helps teach English as a second language. The finished app will automatically provide a picture for any word within a block of text. For example, imagine that the user is reading about different types of food, and they come across a word they don't know. With this app, they can select the word **soup** and see a picture of some soup.
 
 ::: zone pivot="uwp"
 
@@ -237,7 +237,7 @@ We're now going to build the part of our English-language teaching app that focu
 
     ![Screen shot of the Nuget Package Manager with Newtonsoft.Json selected.](../media/wpf-image-search2.png)
 
-    For more information about NuGet, see the Microsoft Learn module [Getting started with Visual Studio for Windows 10 app development](https://docs.microsoft.com/learn/modules/get-started-with-visual-studio-for-windows10-app-dev/) in this learning path.
+    For more information about NuGet, see the Microsoft Learn module [Getting started with Visual Studio for Windows 10 app development](/learn/modules/get-started-with-visual-studio-for-windows10-app-dev/) in this learning path.
 
 4. Now we can define our UI. The UI will be simple for now, consisting of only a **TextBox** (for entering search terms) and an **Image** control (for displaying the image). You can create the UI yourself, or copy the following XAML code and paste it into MainWindow.xaml, replacing everything that's already there:
 
@@ -409,7 +409,7 @@ We're now going to build the part of our English-language teaching app that focu
 
     ![Screen shot of the Nuget Package Manager with Newtonsoft.Json selected.](../media/wpf-image-search2.png)
 
-    For more information about NuGet, see the Microsoft Learn module [Getting started with Visual Studio for Windows 10 app development](https://docs.microsoft.com/learn/modules/get-started-with-visual-studio-for-windows10-app-dev/) in this learning path.
+    For more information about NuGet, see the Microsoft Learn module [Getting started with Visual Studio for Windows 10 app development](/learn/modules/get-started-with-visual-studio-for-windows10-app-dev/) in this learning path.
 
 4. Now we can define our UI. The UI will be simple for now, consisting of only a **TextBox** (for entering search terms) and a **PictureBox** control (for displaying the image). Select **Form1.cs** and drag **TextBox** and **PictureBox** controls from the Toolbox. Name the **TextBox** control **searchTerms** and the **PictureBox** control **foundImage**.
 

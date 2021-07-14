@@ -12,4 +12,4 @@ You've identified the features of Azure Database for MariaDB. You also know that
 
 - [Azure Database for MariaDB](https://azure.microsoft.com/services/mariadb?azure-portal=true)
 - [Azure Database for MariaDB pricing](https://azure.microsoft.com/pricing/details/mariadb?azure-portal=true)
-- [Azure Database for MariaDB documentation](https://docs.microsoft.com/azure/mariadb/?azure-portal=true)
+- [Azure Database for MariaDB documentation](/azure/mariadb/?azure-portal=true)

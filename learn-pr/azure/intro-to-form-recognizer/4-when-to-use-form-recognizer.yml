@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-form-recognizer.when-to-use-form-recognizer
+title: When to use Form Recognizer
+metadata:
+  title: When to user Form Recognizer
+  description: When to use Form Recognizer
+  ms.date: 03/14/2021
+  author: tomreidnz
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-when-to-use-form-recognizer.md)]

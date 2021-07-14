@@ -19,21 +19,20 @@ When you're working in your own subscription, it's a good idea at the end of a p
 
 A great way to learn is by doing. Try writing a Resource Manager template that automates one of your deployments.
 
-Refer to the [Resource Manager on Azure documentation](https://docs.microsoft.com/azure/azure-resource-manager?azure-portal=true) to learn more about how to create, deploy, manage, audit, and troubleshoot your templates.
+Refer to the [Resource Manager on Azure documentation](/azure/azure-resource-manager?azure-portal=true) to learn more about how to create, deploy, manage, audit, and troubleshoot your templates.
 
 Here are some resources that go into more detail on what you learned in this module.
 
 * [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates?azure-portal=true)
 * [Azure Resource Manager Visualizer](http://armviz.io?azure-portal=true)
-* [Deploy a simple Windows VM](https://azure.microsoft.com/resources/templates/101-vm-simple-windows?azure-portal=true)
-* [Deploy a simple Ubuntu Linux VM](https://azure.microsoft.com/resources/templates/101-vm-simple-linux?azure-portal=true)
+* [Deploy a simple Windows VM](https://azure.microsoft.com/resources/templates/vm-simple-windows?azure-portal=true)
+* [Deploy a simple Ubuntu Linux VM](https://azure.microsoft.com/resources/templates/vm-simple-linux?azure-portal=true)
 
 Here are some topics that we did not discuss here, but you might be interested in as you explore and build your own templates.
 
-* [Manage access using RBAC and Azure Resource Manager templates](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-template?azure-portal=true)
-* [Use condition in Azure Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-tutorial-use-conditions?azure-portal=true)
-* [Integrate Azure Key Vault in Resource Manager Template deployment](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-tutorial-use-key-vault?azure-portal=true)
-* [Create linked Azure Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-tutorial-create-linked-templates?azure-portal=true)
-* [Best Practices For Using Azure Resource Manager Templates](https://blogs.msdn.microsoft.com/mvpawardprogram/2018/05/01/azure-resource-manager?azure-portal=true)
-* [Troubleshoot common Azure deployment errors with Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/resource-manager-common-deployment-errors?azure-portal=true)
-
+* [Manage access using RBAC and Azure Resource Manager templates](/azure/role-based-access-control/role-assignments-template?azure-portal=true)
+* [Use condition in Azure Resource Manager templates](/azure/azure-resource-manager/resource-manager-tutorial-use-conditions?azure-portal=true)
+* [Integrate Azure Key Vault in Resource Manager Template deployment](/azure/azure-resource-manager/resource-manager-tutorial-use-key-vault?azure-portal=true)
+* [Create linked Azure Resource Manager templates](/azure/azure-resource-manager/resource-manager-tutorial-create-linked-templates?azure-portal=true)
+* [Best Practices For Using Azure Resource Manager Templates](/archive/blogs/mvpawardprogram/azure-resource-manager?azure-portal=true)
+* [Troubleshoot common Azure deployment errors with Azure Resource Manager](/azure/azure-resource-manager/resource-manager-common-deployment-errors?azure-portal=true)

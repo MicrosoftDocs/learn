@@ -58,8 +58,8 @@ Moving to the cloud can help ensure security and resilience for business-critica
 
 Azure was designed for business continuity and disaster recovery with solutions built into the regions (datacenters) and many of the services, such as:
 
-- [Azure paired regions](https://docs.microsoft.com/azure/best-practices-availability-paired-regions?azure-portal=true)
-- [Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-redundancy?azure-portal=true) for redundancy and replication
+- [Azure paired regions](/azure/best-practices-availability-paired-regions?azure-portal=true)
+- [Azure Storage](/azure/storage/common/storage-redundancy?azure-portal=true) for redundancy and replication
 - [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery/?azure-portal=true) for virtual machine replication and failover
 - [Azure Backup](https://azure.microsoft.com/services/backup/?azure-portal=true) for data protection and recovery
 

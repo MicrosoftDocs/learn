@@ -86,9 +86,9 @@ In this module, you'll learn to describe Azure Arc and implement Azure Arc with 
 
 ### References
 
-- Azure Arc: [https://aka.ms/azure-azure-arc?azure-portal=true](https://aka.ms/azure-azure-arc?azure-portal=true)
-- What is Azure Arc for servers (preview)? [https://aka.ms/azure-arc-servers?azure-portal=true](https://aka.ms/azure-arc-servers?azure-portal=true)
-- What is Azure Arc-enabled Kubernetes Preview? [https://aka.ms/azure-arc-servers?azure-portal=true](https://docs.microsoft.com/en-us/azure/azure-arc/kubernetes/overview)
+- Azure Arc: [https://aka.ms/azure-azure-arc?azure-portal=true](/azure/azure-arc/?azure-portal=true)
+- What is Azure Arc for servers (preview)? [https://aka.ms/azure-arc-servers?azure-portal=true](/azure/azure-arc/servers/overview?azure-portal=true)
+- What is Azure Arc-enabled Kubernetes Preview? [https://aka.ms/azure-arc-servers?azure-portal=true](/azure/azure-arc/kubernetes/overview)
 
 
 ### Related MS Learn content
@@ -118,4 +118,4 @@ In this module, you'll learn to describe Azure Arc and implement Azure Arc with 
 
 |Title|Duration|Link to resource content|
 |---|---|---|
-|Connect hybrid machines to Azure from the Azure portal|5| [https://aka.ms/onboard-portal?azure-portal=true"](https://aka.ms/onboard-portal?azure-portal=true)<br> (Video already exists:) <br> [https://www.microsoft.com/videoplayer/embed/RE4zf4p](https://www.microsoft.com/videoplayer/embed/RE4zf4p)|
+|Connect hybrid machines to Azure from the Azure portal|5| [https://aka.ms/onboard-portal?azure-portal=true"](/azure/azure-arc/servers/onboard-portal?azure-portal=true)<br> (Video already exists:) <br> [https://www.microsoft.com/videoplayer/embed/RE4zf4p](https://www.microsoft.com/videoplayer/embed/RE4zf4p)|

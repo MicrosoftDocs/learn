@@ -6,14 +6,14 @@ You've already implemented the necessary objects in your Azure subscription. Now
 
 In this unit, you'll build two console applications. The first application places messages into a Service Bus queue and the second retrieves them. The applications are part of a single .NET Core solution.
 
-1. Start by cloning the solution. Run the following commands in the Cloud Shell.
+1. Start by cloning the solution. Run the following commands in Cloud Shell.
 
     ```bash
     cd ~
     git clone https://github.com/MicrosoftDocs/mslearn-connect-services-together.git
     ```
 
-1. Next, change directories into the starter folder, and open the Cloud Shell editor.
+1. Next, change directories into the starter folder, and open Cloud Shell editor.
 
     ```bash
     cd ~/mslearn-connect-services-together/implement-message-workflows-with-service-bus/src/start
@@ -32,7 +32,7 @@ Both of these values can be obtained from the Azure portal in the form of a comp
 > [!NOTE]
 > For simplicity, you will hard-code the connection string in the **Program.cs** file of both console applications. In a production application, you might use a configuration file or Azure Key Vault to store the connection string.
 
-1. Run the following command in the Cloud Shell to display the primary connection string for your Service Bus namespace. Replace `<namespace-name>` with the name of your Service Bus namespace.
+1. Run the following command in Cloud Shell to display the primary connection string for your Service Bus namespace. Replace `<namespace-name>` with the name of your Service Bus namespace.
 
     ```azurecli
     az servicebus namespace authorization-rule keys list \
@@ -42,9 +42,9 @@ Both of these values can be obtained from the Azure portal in the form of a comp
         --output tsv \
         --namespace-name <namespace-name>
     ```
-    
+
     The response from this command should resemble the following example:
-    
+
     ```
     Endpoint=sb://example.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=AbCdEfGhIjKlMnOpQrStUvWxYz==
     ```
@@ -164,10 +164,10 @@ To complete the component that sends messages about sales, follow these steps:
 
 ## Send a message to the queue
 
-1. To run the component that sends a message about a sale, run the following command in the Cloud Shell.
+1. To run the component that sends a message about a sale, run the following command in Cloud Shell.
 
     ```bash
-    dotnet run -p privatemessagesender
+    dotnet run -p ./privatemessagesender
     ```
 
     > [!NOTE]
@@ -329,7 +329,7 @@ To complete the component that sends messages about sales, follow these steps:
 
 ## Retrieve a message from the queue
 
-1. To run the component that receives a message about a sale, run this command in the Cloud Shell.
+1. To run the component that receives a message about a sale, run this command in Cloud Shell.
 
     ```bash
     dotnet run -p privatemessagereceiver

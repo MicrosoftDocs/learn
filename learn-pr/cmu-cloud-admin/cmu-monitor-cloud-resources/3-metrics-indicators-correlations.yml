@@ -5,8 +5,8 @@ metadata:
   title: Metrics, indicators, and correlations
   description: Metrics, indicators, and correlations
   ms.date: 1/15/2019
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

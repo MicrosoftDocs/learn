@@ -4,7 +4,7 @@ In the following exercise, you'll use a network virtual appliance (NVA) to help 
 
 You'll configure the network so that all traffic flowing from a public subnet to a private subnet will be routed through the NVA. To make this flow happen, you'll create a custom route for the public subnet to route this traffic to a perimeter-network subnet. Later, you'll deploy an NVA to the perimeter-network subnet.
 
-![Virtual network, subnets, and route table](../media/3-virtual-network-subnets-route-table.svg)
+![Virtual network, subnets, and route table.](../media/3-virtual-network-subnets-route-table.svg)
 
 In this exercise, you'll create the route table, custom route, and subnets. You'll then associate the route table with a subnet.
 
@@ -46,9 +46,9 @@ The next task is to create the **vnet** virtual network and the three subnets th
     az network vnet create \
         --name vnet \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --address-prefix 10.0.0.0/16 \
+        --address-prefixes 10.0.0.0/16 \
         --subnet-name publicsubnet \
-        --subnet-prefix 10.0.0.0/24
+        --subnet-prefixes 10.0.0.0/24
 ```
 
 2. Run the following command in Cloud Shell to create the **privatesubnet** subnet.
@@ -58,7 +58,7 @@ The next task is to create the **vnet** virtual network and the three subnets th
         --name privatesubnet \
         --vnet-name vnet \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --address-prefix 10.0.1.0/24
+        --address-prefixes 10.0.1.0/24
 ```
 
 3. Run the following command to create the **dmzsubnet** subnet.
@@ -68,7 +68,7 @@ The next task is to create the **vnet** virtual network and the three subnets th
         --name dmzsubnet \
         --vnet-name vnet \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --address-prefix 10.0.2.0/24
+        --address-prefixes 10.0.2.0/24
 ```
 
 4. You should now have three subnets. Run the following command to show all of the subnets in the **vnet** virtual network.

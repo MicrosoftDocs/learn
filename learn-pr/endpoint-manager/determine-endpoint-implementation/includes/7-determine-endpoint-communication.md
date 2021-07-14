@@ -55,4 +55,4 @@ You can [download a template of the above table](https://gallery.technet.microso
 ## Additional information
 
 For more information about determining and creating a rollout plan, see the following resources:
-- [Microsoft Intune planning guide - Communicate changes](https://docs.microsoft.com/mem/intune/fundamentals/intune-planning-guide?azure-portal=true#task-6-communicate-changes)
+- [Microsoft Intune planning guide - Communicate changes](/mem/intune/fundamentals/intune-planning-guide?azure-portal=true#task-6-communicate-changes)

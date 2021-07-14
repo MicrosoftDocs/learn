@@ -8,30 +8,30 @@ In this module, you'll explore the types of nonfunctional tests you can run. You
 
 ## Learning objectives
 
-In this module, you will:
+After completing this module, you'll be able to:
 
-- Define nonfunctional tests and learn how they compare to functional tests.
-- Identify some popular kinds of nonfunctional tests you can run.
-- Run automated load tests in the pipeline by using Apache JMeter.
-- Convert test results to a format that Azure Pipelines can visualize for you.
+- Define the role of nonfunctional tests and explain how they compare to functional tests
+- Identify some popular kinds of nonfunctional tests you can run
+- Run automated load tests in the pipeline by using Apache JMeter
+- Convert test results to a format that Azure Pipelines can visualize for you
 
 ## Prerequisites
 
 The modules in this learning path are part of a progression. To follow the progression from the beginning, be sure to first complete these learning paths:
 
-* [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true)
-* [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true)
+* [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
+* [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
 
-We also recommend that you start at the beginning of the [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops?azure-portal=true) learning path.
+We also recommend that you start at the beginning of the [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true) learning path.
 
 If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need the following resources:
 
-* An [Azure DevOps organization](https://dev.azure.com?azure-portal=true).
-* An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true).
-* A [GitHub](https://github.com/join?azure-portal=true) account.
-* [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
-* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1?azure-portal=true).
-* [Git](https://git-scm.com/downloads?azure-portal=true).
+- An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
+- An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
+- A [GitHub](https://github.com/join?azure-portal=true) account
+- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+- [.NET 5.0 SDK](https://dotnet.microsoft.com/download/dotnet/5.0?azure-portal=true)
+- [Git](https://git-scm.com/downloads?azure-portal=true)
 
 You can get started with Azure and Azure DevOps for free. You don't need an Azure subscription to work with Azure DevOps, but here you'll use Azure DevOps to deploy to resources that exist in your Azure subscription.
 

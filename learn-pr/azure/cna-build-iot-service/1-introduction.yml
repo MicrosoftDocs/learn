@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cna-build-iot-service.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to building an IoT service
+  ms.date: 04/29/2021
+  author: mpolicht
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

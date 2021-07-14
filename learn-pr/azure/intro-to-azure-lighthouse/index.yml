@@ -5,7 +5,7 @@ metadata:
   description: Learn about and adopt Azure Lighthouse for your managed service business to manage your customers at scale.
   ms.date: 04/30/2019
   author: iankensey
-  ms.author: v-geo
+  ms.author: socuff
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use Azure Lighthouse with your managed service business
@@ -31,9 +31,15 @@ units:
 - learn.intro-to-azure-lighthouse.2-intro-azure-lighthouse
 - learn.intro-to-azure-lighthouse.3-prepare-for-azure-lighthouse
 - learn.intro-to-azure-lighthouse.4-using-templates
-- learn.intro-to-azure-lighthouse.5-video-cross-tenant-management
-- learn.intro-to-azure-lighthouse.6-video-publish-managed-service
-- learn.intro-to-azure-lighthouse.7-summary
+- learn.intro-to-azure-lighthouse.4a-exercise-prepare-azure-resource-manager-templates
+- learn.intro-to-azure-lighthouse.4b-exercise-deploy-azure-resource-manager-templates
+- learn.intro-to-azure-lighthouse.5-video-publish-managed-service
+- learn.intro-to-azure-lighthouse.6-cross-tenant-management
+- learn.intro-to-azure-lighthouse.6a-exercise-managing-a-customer
+- learn.intro-to-azure-lighthouse.7-manage-customer-resources
+- learn.intro-to-azure-lighthouse.8-exercise-manage-customer-resources
+- learn.intro-to-azure-lighthouse.9-knowledge-check
+- learn.intro-to-azure-lighthouse.10-summary
 badge:
   uid: learn.intro-to-azure-lighthouse.badge
   

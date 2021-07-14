@@ -1,18 +1,14 @@
-Learn how to differentiate between Apache Spark, Azure Databricks, HDInsight, and SQL Pools, as well as understanding the use-cases of data-engineering with Apache Spark in Azure Synapse Analytics.
+Understand the use cases of data engineering with Apache Spark in Azure Synapse Analytics.
 
 After completing this module, you will be able to:
 
-* Introductions to apache spark
-* Differentiate between apache spark and spark pools
-* Differentiate between Azure Databricks and spark pools
-* Differentiate between HDInsight and spark pools
-* Differentiate between spark pools and SQL pools
-* Understand the use-cases of data engineering with apache spark in Azure synapse analytics
-* Exercise: Create a spark pool in Azure synapse analytics
+* Describe what Apache Spark in Azure Synapse Analytics is
+* Describe how Apache Spark in Azure Synapse Analytics works
+* Understand when to use Apache Spark in Azure Synapse Analytics.
 
 ## Prerequisite
 Before taking this module, it is recommended that you complete the following modules:
 
-* Data Fundamentals
+* Azure Data Fundamentals
 * Introduction to Azure Data Factory
 * Introduction to Azure Synapse Analytics

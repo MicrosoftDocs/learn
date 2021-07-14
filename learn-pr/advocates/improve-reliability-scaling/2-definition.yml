@@ -51,7 +51,7 @@ quiz:
     - content: 'inherently scalable'
       isCorrect: false
       explanation: 'This is the definition for scaling out, inherently scalable means you do not have explicitly configure scaling.'
-    - content: 'auto scaling'
+    - content: 'autoscaling'
       isCorrect: false
-      explanation: 'This is the definition for scaling out, auto scaling is an offering that allows you to configure specific scaling behavior.'
+      explanation: 'This is the definition for scaling out. Autoscaling is an offering that enables you to configure specific scaling behavior.'
       

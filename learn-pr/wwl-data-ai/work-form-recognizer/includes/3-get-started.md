@@ -13,7 +13,7 @@ You can access Form Recognizer services via:
 >[!NOTE]
 >The phrase "subscribe to a service" is used interchangeably with "create a resource". 
 
-You can subscribe to a service in the Azure portal or with the Azure Command Line Interface (CLI). You can learn more about the CLI commands [here](https://docs.microsoft.com/cli/azure/cognitiveservices/account?view=azure-cli-latest#commands). 
+You can subscribe to a service in the Azure portal or with the Azure Command Line Interface (CLI). You can learn more about the CLI commands [here](/cli/azure/cognitiveservices/account#commands). 
 
 ## Understand Form Recognizer file input requirements  
 Form Recognizer works on input documents that meet these requirements:
@@ -23,13 +23,13 @@ Form Recognizer works on input documents that meet these requirements:
 - Image dimensions must be between 50 x 50 pixels and 10000 x 10000 pixels.
 - The total size of the training data set must be 500 pages or less.
 
-More input requirements can be found in the [documentation](https://docs.microsoft.com/azure/cognitive-services/form-recognizer/overview?tabs=v2-1#input-requirements). 
+More input requirements can be found in the [documentation](/azure/cognitive-services/form-recognizer/overview#input-requirements). 
 
 ## Decide what component of Form Recognizer to use 
 
 After you have collected your files, decide what you need to accomplish. 
 
-- To use OCR capabilities to capture the layout of a form, use the [Layout service](https://docs.microsoft.com/azure/cognitive-services/form-recognizer/concept-layout). The Layout API will accurately extract the structured output from  documents.
+- To use OCR capabilities to capture the layout of a form, use the [Layout service](/azure/cognitive-services/form-recognizer/concept-layout). The Layout API will accurately extract the structured output from  documents.
 
 - To create an application that extracts data from receipts, business cards, or invoices use a prebuilt model. These models do not need to be trained. Form Recognizer services analyze the documents and return a JSON output. 
 
