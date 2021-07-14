@@ -31,7 +31,7 @@ Let's say you want to find a Resource Manager template that brings up a basic VM
 
     The **Deploy to Azure** button enables you to deploy the template directly through the Azure portal. But you won't do that here. Rather, you'll use the Azure CLI to deploy the template from Cloud Shell.
 
-1. Click **Browse on GitHub** to navigate to the template's source code on GitHub.
+1. Select **Browse on GitHub** to navigate to the template's source code on GitHub.
 
     You see this.
 
@@ -39,13 +39,13 @@ Let's say you want to find a Resource Manager template that brings up a basic VM
 
     The **Deploy to Azure** button enables you to deploy the template directly through the Azure portal, just like you saw on the gallery page.
 
-1. Click **Visualize** to navigate to the Azure Resource Manager Visualizer.
+1. Select **Visualize** to navigate to the Azure Resource Manager Visualizer.
 
     You see the resources that make up the deployment, including a VM, a storage account, and network resources.
 
     You can use your mouse to arrange the resources. You can also use your mouse's scroll wheel to zoom in an out.
 
-1. Click on the **Virtual Machine** resource labeled **simpleLinuxVM**.
+1. Select the **Virtual Machine** resource labeled **simpleLinuxVM**.
 
     You see the source code that defines the VM resource.
 

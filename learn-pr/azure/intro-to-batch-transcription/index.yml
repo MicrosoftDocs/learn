@@ -16,7 +16,7 @@ abstract: |
   - Transcribe a batch of audio files
   - Create a specialized customer service model to transcribe call center recordings
 prerequisites: A basic familiarity with Azure
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/intro-to-batch-transcription.svg
 levels:
 - beginner
 roles:
