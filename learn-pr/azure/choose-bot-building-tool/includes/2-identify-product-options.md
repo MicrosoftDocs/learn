@@ -48,5 +48,7 @@ Once your knowledge base is edited, you can publish the knowledge base to a work
 
 Composer's visual-design experience provides greater design efficiency. You can model more sophisticated conversational experiences that include context switching, interruption, and more natural and dynamic conversation flows.
 
+Bot Framework Composer and Bot Framework SDK provide the IDE and development time environment and pair with Azure Bot Service which provides hosting and runtime services like authentication and connections to services such as chat clients and telephony.
+
 >[!TIP]
 > Accomplish more complex activities, such as integrating with dependencies including REST API, by directly modifying your bot's code by using Visual Studio Code or another IDE.

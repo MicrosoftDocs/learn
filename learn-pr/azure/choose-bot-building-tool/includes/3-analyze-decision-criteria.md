@@ -15,7 +15,7 @@ If you prefer a low-code design interface, compare the three options:
      > [!NOTE]
      > The QnA Maker portal doesn't offer bot-modification options. If you must modify your bot to meet test requirements, you'd have to edit the bot's source code.
 
-- Bot Framework Composer has a low-code, visual designer that you can download for Windows, macOS, and Linux. You can also host Composer as a shared, hosted web service. Composer offers extensive bot building capabilities, including controlling conversation flow, defining intents and entities, and adding authentication. Composer also offers built-in low-code integration with LUIS and QnA Maker.
+- Bot Framework Composer has a low-code, visual designer that you can download for Windows, macOS, and Linux. You can also host Composer as a shared, hosted web service. Composer offers extensive bot building capabilities, including controlling conversation flow, defining intents and entities, and adding authentication. Composer also offers built-in low-code integration with LUIS and QnA Maker. Bot Framework Composer starts us off with a friendly low-code interface, but is still considered a powerful tool for technologists. If you require a low-code-only environment, it might not be right for you.
 
 ### Do you require low-code integration with other components?
 
