@@ -8,7 +8,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 1. In the Azure portal you should still have open from the previous exercise, select the storage account you created, named **learnazurefileshare** followed by random numbers.
 
-1. In the middle menu pane, Under **Settings**, select **Configuration**.
+1. In the middle menu pane, under **Settings**, select **Configuration**.
 
     :::image type="content" source="../media/5-secure-transfer.png" alt-text="Screenshot of the configuration page of storage accounts.":::
 
@@ -16,7 +16,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 ## Add a firewall rule to restrict access to an IP address
 
-1. In the middle menu pane, Under **Security + networking**, select **Networking**. The Storage account **Networking** pane appears with the **Firewalls and virtual networks** tab highlighted.
+1. In the middle menu pane, under **Security + networking**, select **Networking**. The Storage account **Networking** pane appears with the **Firewalls and virtual networks** tab highlighted.
 
    :::image type="content" source="../media/6-add-firewall-protections.png" alt-text="Screenshot showing the firewalls and virtual networks options.":::
 
@@ -118,7 +118,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
     .\azcopy copy "D:\*.txt" "https://learnazurefileshare6438.file.core.windows.net/data/?sv=2019-02-02&ss=bfqt&srt=sco&sp=rwdlacup&se=2019-12-05T20:46:09Z&st=2019-12-05T12:46:09Z&spr=https&sig=TW1ZMwzksKMhKMqJxSCMBy5wFmut7yuR3vNlTSwFhKQ%3D" --recursive=true
     ```
 
-1. You should see the following output from AzCopy.
+    You should see the following output from AzCopy.
 
     ```powershell
     INFO: Scanning...
@@ -149,7 +149,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 1. In the **Operations** section, select **Snapshots**.
 
-1. Select **Add snapshot**, and select **OK**.
+1. Select **Add snapshot**, and then select **OK**.
 
 1. Return to your VM, and open **File Explorer**.
 
@@ -159,4 +159,4 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
     ![Screenshot of the file properties window showing previous snapshots.](../media/6-previous-versions.png)
 
-    From here, you can select **Open** to open the previous version to browse the files at that snapshot. Otherwise, you can select **Restore** to restore files from a snapshot.
+1. From here, you can select **Open** to open the previous version to browse the files at that snapshot. Otherwise, you can select **Restore** to restore files from a snapshot.

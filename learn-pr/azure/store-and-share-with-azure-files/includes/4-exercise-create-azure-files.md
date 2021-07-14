@@ -6,7 +6,7 @@ In this exercise, you'll first create a new storage account and two file shares 
 
 ## Create a GRS storage account
 
-1. Create a storage account by copying the Azure CLI command and pasting it into the Azure Cloud Shell.
+1. Create a storage account by copying the Azure CLI command and pasting it into Azure Cloud Shell.
 
     ```azurecli
     export STORAGEACCT=learnazurefileshare$RANDOM
@@ -50,7 +50,7 @@ In this exercise, you'll first create a new storage account and two file shares 
 
 Next, create a Windows Server VM to simulate an on-premises machine running in the finance company's datacenter or branch office.
 
-1. Using Azure Cloud Shell, create a Windows VM with the Azure CLI. When you're prompted for a password, enter a complex password of your choice and note it for reference later.
+1. Using Cloud Shell, create a Windows VM with the Azure CLI. When you're prompted for a password, enter a complex password of your choice and note it for reference later.
 
     ```azurecli
     az vm create \
