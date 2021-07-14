@@ -19,7 +19,8 @@ In this exercise, you will:
 
 2. In the portal, type Virtual WAN into the search box and select **Virtual WANs** from the results list.
 
-   ![Search for Virtual WAN in Azure portal.](../media/search-for-virtual-wan.png)
+   > [!div class="mx-imgBorder"]
+   > ![Search for Virtual WAN in Azure portal.](../media/search-for-virtual-wan.png)
 
  
 
@@ -48,7 +49,8 @@ A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functio
 1. Locate the Virtual WAN that you created. 
 2. On the Virtual WAN page, under **Connectivity**, select **Hubs**.
 3. On the Hubs page, select **+New Hub** to open the Create virtual hub page.
-   ![Create Virtual Hub, Basics tab.](../media/create-vwan-hub.png)
+   > [!div class="mx-imgBorder"]
+   > ![Create Virtual Hub, Basics tab.](../media/create-vwan-hub.png)
 4. On the Create virtual hub page **Basics** tab, complete the following fields:
    - **Region:** West US
    - **Name:** ContosoVirtualWANHub-WestUS
@@ -68,7 +70,8 @@ A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functio
 
 2. In ContosoVirtualWAN, under **Connectivity**, select **Virtual network connections**.
 
-   ![Virtual WAN configuration page with Virtual network connections highlighted.](../media/connect-vnet-to-virtual-hub.png)
+   > [!div class="mx-imgBorder"]
+   > ![Virtual WAN configuration page with Virtual network connections highlighted.](../media/connect-vnet-virtual-hub.png)
 
 3. On ContosoVirtualWAN | Virtual network connections, select **+ Add connection**.
 
@@ -96,7 +99,8 @@ Congratulations! You have created a Virtual WAN and a Virtual WAN Hub and connec
 
 ## Task 4: Clean up resources
 
-> [!NOTE] Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+> [!NOTE] 
+> Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 

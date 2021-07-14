@@ -36,7 +36,9 @@ In this exercise, you will:
 1. On the Azure home page, select **Virtual Machines**.
 
 2. In Virtual Machines, select **+ Add** > **+ Start with a preset configuration**.
-   ![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
+
+   > [!div class="mx-imgBorder"]
+   > ![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
 
 3. In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
 
@@ -45,7 +47,7 @@ In this exercise, you will:
 5. Use the information in the following table to create your VM.
 
    | **Tab**         | **Option**                                                   | **Value**                             |
-   | --------------- | ------------------------------------------------------------ | ------------------------------------- |
+   |:-:|:-:|:-:|
    | Basics          | Resource group                                               | ContosoResourceGroup                  |
    |                 | Virtual machine name                                         | CoreServicesTestVM                    |
    |                 | Region                                                       | (US) West US                          |
@@ -78,7 +80,9 @@ In this exercise, you will:
 1. On the Azure home page, select **Virtual Machines**.
 
 2. In Virtual Machines, select **+ Add** > **+ Start with a preset configuration**.
-   ![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
+
+   > [!div class="mx-imgBorder"]
+   > ![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
 
 3. In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
 
@@ -87,7 +91,7 @@ In this exercise, you will:
 5. Use the information in the following table to create your VM.
 
    | **Tab**         | **Option**                                                   | **Value**                                 |
-   | --------------- | ------------------------------------------------------------ | ----------------------------------------- |
+   |:-:|:-:|:-:|
    | Basics          | Resource group                                               | ContosoResourceGroup                      |
    |                 | Virtual machine name                                         | ManufacturingTestVM                       |
    |                 | Region                                                       | (Europe) North Europe                     |
@@ -148,21 +152,24 @@ In this exercise, you will:
 
 3. The test connection should fail, and you will see a result similar to the following:
 
-   ![Test-NetConnection failed.](../media/test-netconnection-fail.png)
+   > [!div class="mx-imgBorder"]
+   > ![Test-NetConnection failed.](../media/test-netconnection-fail.png)
 
  
 
 ##  Task 6: Create CoreServicesVnet Gateway
 
 1. In **Search resources, services, and docs (G+/)**, enter **Virtual network gateway**, and then select **Virtual network gateways** from the results.
-   ![Search for virtual network gateway on Azure portal.](../media/virtual-network-gateway-search.png)
+
+   > [!div class="mx-imgBorder"]
+   > ![Search for virtual network gateway on Azure portal.](../media/virtual-network-gateway-search.png)
 
 2. In Virtual network gateways, select **+ Create**.
 
 3. Use the information in the following table to create the virtual network gateway:
 
    | **Tab**         | **Section**       | **Option**                                  | **Value**                    |
-   | --------------- | ----------------- | ------------------------------------------- | ---------------------------- |
+   |:-:|:-:|:-:|:-:|
    | Basics          | Project Details   | Subscription                                | No changes required          |
    |                 |                   | ResourceGroup                               | ContosoResourceGroup         |
    |                 | Instance Details  | Name                                        | CoreServicesVnetGateway      |
@@ -193,7 +200,7 @@ In this exercise, you will:
 3. Use the information in the following table to create the virtual network gateway:
 
    | **Tab**         | **Section**       | **Option**                                  | **Value**                    |
-   | --------------- | ----------------- | ------------------------------------------- | ---------------------------- |
+   |:-:|:-:|:-:|:-:|
    | Basics          | Project Details   | Subscription                                | No changes required          |
    |                 |                   | ResourceGroup                               | ContosoResourceGroup         |
    |                 | Instance Details  | Name                                        | ManufacturingVnetGateway     |
@@ -232,7 +239,7 @@ In this exercise, you will:
 4. Use the information in the following table to create the connection:
 
    | **Option**                     | **Value**                         |
-   | ------------------------------ | --------------------------------- |
+   |:-:|:-:|
    | Name                           | CoreServicesGW-to-ManufacturingGW |
    | Connection type                | VNet-to-VNet                      |
    | First virtual network gateway  | CoreServicesVnetGateway           |
@@ -259,7 +266,7 @@ In this exercise, you will:
 4. Use the information in the following table to create the connection:
 
    | **Option**                     | **Value**                         |
-   | ------------------------------ | --------------------------------- |
+   |:-:|:-:|
    | Name                           | ManufacturingGW-to-CoreServicesGW |
    | Connection type                | VNet-to-VNet                      |
    | First virtual network gateway  | ManufacturingVnetGateway          |
@@ -281,7 +288,8 @@ In this exercise, you will:
 
 2. Wait until the status of both connections is **Connected**. You may need to refresh your screen. 
 
-   ![VPN Gateway connections successfully created.](../media/connections-status-connected.png)
+   > [!div class="mx-imgBorder"]
+   > ![VPN Gateway connections successfully created.](../media/connections-status-connected.png)
 
  
 
@@ -297,7 +305,8 @@ In this exercise, you will:
 
 3. The test connection should succeed, and you will see a result similar to the following:
 
-   ![Test-NetConnection suceeded.](../media/test-connection-succeeded.png)
+   > [!div class="mx-imgBorder"]
+   > ![Test-NetConnection suceeded.](../media/test-connection-succeeded.png)
 
  
 
