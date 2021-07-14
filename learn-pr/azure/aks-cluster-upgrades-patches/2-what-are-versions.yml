@@ -18,10 +18,10 @@ quiz:
     choices:
     - content: "Deprecate Kubernetes 1.0.0 and release Kubernetes 2.0.0"
       isCorrect: false
-      explanation: "Depreciating Kubernetes 1.0.0 to release Kubernetes 2.0.0 is a major version release. Bug fixes within the software does not require such drastic changes."
+      explanation: "Depreciating Kubernetes 1.0.0 to release Kubernetes 2.0.0 is a major version release. Bug fixes within the software do not require such drastic changes."
     - content: "Make a patch release"
       isCorrect: true
-      explanation: "A patch release means a new patch version is available which has identified the bug fixes that needs to be made and patched."
+      explanation: "A patch release means a new patch version is available which has identified the bug fixes that need to be made and patched."
     - content: "Make a feature release"
       isCorrect: false
       explanation: "A feature release is considered a minor release that should be made when a new feature is being rolled out. Since we are not releasing any new features, we do not need to make any feature or minor version updates."
