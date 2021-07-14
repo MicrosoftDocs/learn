@@ -31,7 +31,7 @@ In this exercise, you will:
 3. On the Create virtual networks pane, on the **Basics** tab, use the information in the following table to create the VNet:
 
    | **Setting**          | **Value**                        |
-   | -------------------- | -------------------------------- |
+   |:-:|:-:|
    | Virtual Network Name | CoreServicesVNet                 |
    | Resource Group       | Resource Group provided by Learn |
    | Location             | West US                          |
@@ -43,7 +43,7 @@ In this exercise, you will:
 6. In the Add subnet pane, use the information in the following table to create the subnet:
 
    | **Setting**                  | **Value**     |
-   | ---------------------------- | ------------- |
+   |:-:|:-:|
    | Gateway Subnet name          | GatewaySubnet |
    | Gateway Subnet address space | 10.20.0.0/27  |
 
@@ -51,7 +51,8 @@ In this exercise, you will:
 
 8. On the Create virtual network page, select **Review + Create**.
 
-   ![Azure portal - add gateway subnet](../media/add-gateway-subnet.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal - add gateway subnet](../media/add-gateway-subnet.png)
 
 9. Confirm that the VNet passes the validation and then select **Create**.
 
@@ -66,7 +67,7 @@ In this exercise, you will:
 2. On the **Create virtual network gateway** page, use the information in the following table to create the gateway:
 
    | **Setting**               | **Value**                  |
-   | ------------------------- | -------------------------- |
+   |:-:|:-:|
    | **Project details**       |                            |
    | Subscription              | Provided by Learn          |
    | Resource Group            | Provided by Learn          |

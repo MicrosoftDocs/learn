@@ -25,7 +25,8 @@ Use the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculato
 
 The following screenshot shows the cost estimation by using the calculator:
 
-![Azure - capacity calculator cost estimate](../media/capacity-calculator-cost-estimate.png)
+> [!div class="mx-imgBorder"]
+> ![Azure - capacity calculator cost estimate](../media/capacity-calculator-cost-estimate.png)
 
  
 

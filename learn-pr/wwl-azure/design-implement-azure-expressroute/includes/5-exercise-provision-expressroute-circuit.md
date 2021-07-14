@@ -5,7 +5,8 @@
 
 In this exercise, you will create an ExpressRoute circuit using the Azure portal and the Azure Resource Manager deployment model. 
 
-![Diagram ExpressRoute circuit layout for exercise](../media/environment-diagram.png)
+> [!div class="mx-imgBorder"]
+> ![Diagram ExpressRoute circuit layout for exercise](../media/environment-diagram.png)
 
 To watch a demonstration of how to create an ExpressRoute circuit, see [Azure ExpressRoute - How to create an ExpressRoute circuit | Azure | Channel 9 (msdn.com)](https://channel9.msdn.com/Blogs/Azure/Azure-ExpressRoute-How-to-create-an-ExpressRoute-circuit?term=ExpressRoute&lang-en=true&pageSize=15&skip=15).
 
@@ -30,15 +31,18 @@ In this exercise, you will:
 
 2. On the Azure portal menu, select **+ Create a resource**. Select **Networking**, and then select **ExpressRoute**, as shown in the following image. If ExpressRoute does not appear in the list, use **Search the marketplace** to search for it:
 
-   ![Azure portal - create ExpressRoute circuit menu](../media/create-expressroute-circuit-menu.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal - create ExpressRoute circuit menu](../media/create-expressroute-circuit-menu.png)
 
 3. On the **Create ExpressRoute** page, provide the **Resource Group**, **Region**, and **Name** for the circuit. Then select **Next: Configuration &gt;**.
 
-   ![Azure portal - Create ExpressRoute basic tab](../media/expressroute-create-basic.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal - Create ExpressRoute basic tab](../media/expressroute-create-basic.png)
 
 4. When you are filling in the values on this page, make sure that you specify the correct SKU tier (Local, Standard, or Premium) and data metering billing model (Unlimited or Metered).
 
-![Azure portal - Create ExpressRoute configuration tab](../media/expressroute-create-configuration.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal - Create ExpressRoute configuration tab](../media/expressroute-create-configuration.png)
 
  
 
@@ -70,15 +74,18 @@ In this exercise, you will:
 
 1. You can view all the circuits that you created by selecting **All services &gt; Networking &gt; ExpressRoute circuits**.
 
-   ![Azure portal - Create ExpressRoute resource menu](../media/expressroute-circuit-menu.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal - Create ExpressRoute resource menu](../media/expressroute-circuit-menu.png)
 
 2. All ExpressRoute circuits created in the subscription will appear here. 
 
-   ![Azure portal - show existing Expressroute circuits](../media/expressroute-circuit-list.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal - show existing Expressroute circuits](../media/expressroute-circuit-list.png)
 
 3. The circuit page displays the properties of the circuit. The service key appears in the service key field. Your service provider will need the Service Key to complete the provisioning process. The service key is specific to your circuit. **You must send the service key to your connectivity provider for provisioning.**
 
-   ![Azure portal - ExpressRoute Circuit properties showing service key](../media/expressroute-circuit-overview.png)
+   > [!div class="mx-imgBorder"]
+   > ![Azure portal - ExpressRoute Circuit properties showing service key](../media/expressroute-circuit-overview.png)
 
 4. On this page, **Provider status** gives you the current state of provisioning on the service-provider side. **Circuit status** provides you the state on the Microsoft side. 
 
@@ -99,7 +106,8 @@ In this exercise, you will:
 
 6. You can view the properties of the circuit that you are interested in by selecting it. Check the **Provider status** and ensure that it has moved to **Provisioned** before you continue.
 
-![Azure portal - ExpressRoute circuit properties showing status is now provisioned](../media/provisioned.png)
+> [!div class="mx-imgBorder"]
+> ![Azure portal - ExpressRoute circuit properties showing status is now provisioned](../media/provisioned.png)
 
 
 Watch this demonstration of how to create and provision an ExpressRoute circuit: [Azure ExpressRoute - How to create an ExpressRoute circuit | Azure | Channel 9 (msdn.com)](https://channel9.msdn.com/Blogs/Azure/Azure-ExpressRoute-How-to-create-an-ExpressRoute-circuit?term=ExpressRoute&lang-en=true&pageSize=15&skip=15). 
@@ -120,7 +128,8 @@ If the ExpressRoute circuit service provider provisioning state is **Provisionin
 
 You can delete your ExpressRoute circuit by selecting the **Delete** icon. Ensure the provider status is Not provisioned before proceeding.
 
-![Azure portal - delete an ExpressRoute circuit](../media/expressroute-circuit-delete.png)
+> [!div class="mx-imgBorder"]
+> ![Azure portal - delete an ExpressRoute circuit](../media/expressroute-circuit-delete.png)
 
 
    > [!NOTE] Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.

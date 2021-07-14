@@ -26,7 +26,8 @@ Azure ExpressRoute is used to create private connections between Azure datacente
 
 You can create a connection between your on-premises network and the Microsoft cloud in four different ways, CloudExchange Co-location, Point-to-point Ethernet Connection, Any-to-any (IPVPN) Connection, and ExpressRoute Direct. Connectivity providers may offer one or more connectivity models. 
 
-![ExpressRoute connectivity models](../media/expressroute-connectivity-models-diagram.png)
+> [!div class="mx-imgBorder"]
+> ![ExpressRoute connectivity models](../media/expressroute-connectivity-models-diagram.png)
 
 **Co-located at a cloud exchange**
 
@@ -67,7 +68,7 @@ Key features that ExpressRoute Direct provides includes:
 
 
 | **ExpressRoute using a  Service Provider** | **ExpressRoute Direct**                  |
-| - | - |
+|:-:|:-:|
 | Uses service providers to enable fast  onboarding and connectivity into existing infrastructure | Requires 100 Gbps/10 Gbps infrastructure  and full management of all layers |
 | Integrates with hundreds of providers  including Ethernet and MPLS | Direct/Dedicated capacity for regulated  industries and massive data ingestion |
 | Circuits SKUs from 50 Mbps to 10 Gbps    | Customer may select a combination of the  following circuit SKUs on 100-Gbps ExpressRoute Direct:   5 Gbps  10 Gbps  40 Gbps  100 Gbps  Customer may select a combination of the  following circuit SKUs on 10-Gbps ExpressRoute Direct:  1 Gbps  2 Gbps  5 Gbps  10 Gbps |
@@ -107,7 +108,8 @@ In this scenario, BFD can help. BFD provides low-overhead link failure detection
 
 The following diagram shows the benefit of enabling BFD over an ExpressRoute circuit:
 
-![Bidirectional flow between partner or customer edge and Microsoft edge.](../media/bfd-need.png)
+> [!div class="mx-imgBorder"]
+> ![Bidirectional flow between partner or customer edge and Microsoft edge.](../media/bfd-need.png)
 
  
 
@@ -135,7 +137,8 @@ This section shows you how to use Azure Virtual WAN to establish an IPsec/IKE VP
 
 The following diagram shows an example of VPN connectivity over ExpressRoute private peering:
 
-![VWAN to VPN over ExpressRoute ](../media/vwan-vpn-over-er.png)
+> [!div class="mx-imgBorder"]
+> ![VWAN to VPN over ExpressRoute ](../media/vwan-vpn-over-er.png)
 
  
 
@@ -202,7 +205,8 @@ You can deploy VPN and ExpressRoute gateways in [Azure Availability Zones](/azur
 
 To automatically deploy your virtual network gateways across availability zones, you can use zone-redundant virtual network gateways. With zone-redundant gateways, you can benefit from zone-resiliency to access your mission-critical, scalable services on Azure.
 
-![Zone redundant gateways layout](../media/zonered.png)
+> [!div class="mx-imgBorder"]
+> ![Zone redundant gateways layout](../media/zonered.png)
 
  
 
@@ -210,7 +214,8 @@ To automatically deploy your virtual network gateways across availability zones,
 
 To deploy gateways in a specific zone, you can use zonal gateways. When you deploy a zonal gateway, all instances of the gateway are deployed in the same Availability Zone.
 
-![Zonal gateways layout](../media/zonal.png)
+> [!div class="mx-imgBorder"]
+> ![Zonal gateways layout](../media/zonal.png)
 
 **Gateway SKUs**
 
