@@ -1,4 +1,4 @@
-Running a command can be really powerful, you get data from either your local machine or across the network. To be even more effective, you need to learn how to get the data that you want. Most commands operates on objects, as input or as output, or both. Objects have properties and you likely want a subset of those properties and present them in reports for example. You might also want to sort the data based on one ore more columns. But how do you get there?
+Running a command can be powerful, you get data from either your local machine or across the network. To be even more effective, you need to learn how to get the data that you want. Most commands operate on objects, as input or as output, or both. Objects have properties and you likely want a subset of those properties and present them in reports for example. You might also want to sort the data based on one or more columns. But how do you get there?
 
 ## Use Get-Member to inspect output
 
@@ -29,7 +29,7 @@ Above you are shown both the type of object the `Get-Process` returns, i.e `Syst
 
 ## Select-Object
 
-When you run a command and get an output, you are not shown the full truth. What you are shown is just a subset of everything that's possible to show as indicated by the below response from running `Get-Process` on the process `zsh`:
+When you run a command and get an output, you are not shown the full truth. What you are shown is a subset of everything that's possible to show as indicated by the below response from running `Get-Process` on the process `zsh`:
 
 ```output
  NPM(K)    PM(M)      WS(M)     CPU(s)      Id  SI ProcessName
@@ -48,19 +48,19 @@ The way to show something different than the above response is by specifying wha
 
 ### Getting the full response
 
-What you've seen so far is a very limited response. To present the full response, you use `Select-Object` and asks for all the properties `*`, like so:
+What you've seen so far is a limited response. To present the full response, you use `Select-Object` and asks for all the properties `*`, like so:
 
 ```powershell
 Get-Process zsh | Select-Object -Property *
 ```
 
-This shows you every single attribute and their value and you can start investigating what values you are interested in. You likely don't want this massive response but you may not be content with the default response either.
+This character `*`, shows you every single attribute and their value and you can start investigating what values you are interested in. You likely don't want this massive response but you may not be content with the default response either.
 
-However, the response you get is using presentational names for properties, not the actual property names and is something that looks good in a report.
+However, the response you get is using presentation names for properties, not the actual property names and is something that looks good in a report.
 
 ### Selecting specific columns
 
-To limit the response and find a middle ground between the default response and the full response, you want to select some properties you are interested in and have that as parameter input to `Select-Object`. But, and here's a problem, you need to use the real names for the columns. How do you find those out? Use `Get-Member`. A call to `Get-Member` gives you all the properties and their actual names.
+To limit the response and find a middle ground between the default response and the full response, you want to select some properties you are interested in and have that as parameter input to `Select-Object`. But, and here's a problem, you need to use the real names for the columns. How do you find out the real names? Use `Get-Member`. A call to `Get-Member` gives you all the properties and their actual names.
 
 ### Finding the real property name
 
@@ -78,7 +78,7 @@ From the default response, the properties `Id` and `ProcessName` are most likely
 Get-Process zsh | Get-Member -Name C*
 ```
 
-You now get a list of all members that starts with a `C` and among them is `CPU` which is likely what you want:
+You now get a list of all members that starts with a `C` and among them is `CPU`, which is likely what you want:
 
 ```output
 TypeName: System.Diagnostics.Process
@@ -120,4 +120,25 @@ an output that differs from the default output but contains properties that you 
 
 ## Sorting
 
-TODO
+Using `Sort-Object` in pipeline, PowerShell attempts to sort the output data. It does so by relying by first looking at the default properties and sort by those properties. If no such properties exist, it tries to compare the objects themselves. The sorting is either by ascending or descending order.
+
+By providing properties, you can choose to sort by specific columns, like so:
+
+```powershell
+Get-Process | Sort-Object -Descending -Property Name
+```
+
+Above we are sorting by both the column `Name` and in descending order. To sort by more than one column, you can add a secondary column to sort by, by separating column names via a comma, like so:
+
+```powershell
+Get-Process | Sort-Object -Descending -Property Name, CPU
+```
+
+Additionally to sorting by column name, you can also provide your own custom expression, like in this example:
+
+```powershell
+Get-Process 'some process' | Sort-Object -Property @{Expression = "Name"; Descending = $True}, @{Expression = "CPU"; Descending = $False}
+```
+
+In the above example, you sort by columns `Name` and `CPU` and you're able to control sort order for each column. This topic is a bit advanced and out of scope for this module, but will be revisited in more advanced modules. It's good to see though that `Sort-Object` is powerful and quite flexible.
+
