@@ -1,9 +1,24 @@
+Most networked applications need to work with secrets, such as database connection strings or passwords. When perform machine learning on Azure, we normally use secrets to access training data or look at results. Particularly when working with private data, it’s important to make sure the secrets are properly managed.
+
+## Don’t store secrets in source code
+
+Storing secrets in source code is impractical and a security anti-pattern. This is for multiple reasons:
+
+* Changing passwords means updating source code, which can mean rebuilding and re-publishing applications.
+* Hard-coded secrets make it awkward to work with different environments, such as staging and production environments. This also increases the risk of inadvertent modification or destruction of production environment data during development. 
+* All people with access to the source code gain access to all secrets. This makes it near impossible to ensure that only senior team members have access to sensitive resources. It also means that any sharing, or leak, of your source code also provides outside parties with your security keys.
+* Source control, such as git, will typically retain old passwords in history. This means future team members gain access to all historical passwords.
+
+One of the best alternatives to storing secrets in source code is to make them available in the application environment. In this pattern, your application requests secrets from the environment and then uses these to connect to the requisite resources. The aforementioned drawbacks of storing secrets in source code are eliminated, so long as each environment has different secret values, such as different passwords to access certain resources.
+
 ## Azure Key Vault
 
-Azure Key Vault is a cloud service for securely storing and accessing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, certificates, or cryptographic key. Key Vault can save time and resources by not having to provision, configure, patch, and maintain hardware security modules and critical management software. When you create a key vault in an Azure subscription, it's automatically associated with the Azure AD tenant of the subscription, so you keep control over your keys-just grant permission for your own and partner applications to use them as needed.
+Azure Key Vault provides secure storage of generic secrets for applications in Azure-hosted environments. Any type of secret can be stored, so long as its value is no larger than 25kb and it can be read and returned as a string. Secrets are named, and their content type (such as password or certificate) can optionally be stored alongside the value to provide a hint that assists in its interpretation when retrieved.  
 
-The Key Vault can be helpful if you need to share authentication information such as usernames and passwords.
+Secrets stored in Azure Key Vault are encrypted, optionally at the hardware level. This is handled transparently, and requires no action from the user or the application requesting the secrets. They can also be temporarily disabled, and automatically activate or expire on a certain date.
 
-For example, if you connect to an external database with Azure ML in order to query training data, you'll need to pass your username and password to the remote run context. Coding such values into training scripts in cleartext is insecure as it would expose the secret. Instead, use Key Vault to pass secrets to remote runs securely through a set of APIs in the Azure ML Python SDK.
+## How Key Vault works with Azure ML
+
+When you create an Azure ML workspace, this automatically creates a Key Vault. To view the Azure Key Vault associated with your workspace, open the workspace’s Overview tab. Your key vault appears on the right hand side.
 
 ![A generic image of a key vault authenticator.](../media/4-key-vault.png)
