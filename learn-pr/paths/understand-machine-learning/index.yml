@@ -1,9 +1,8 @@
 ### YamlMime:LearningPath
 uid: learn.machinelearning.understanding-machine-learning
-hidden: true
 metadata:
   title: Understand data science for machine learning 
-  description: Machine learning is powered by simple but effective ways that data scientists make predictions about objects, people, and the future. This learning path is a high-level introduction to machine learning for people with little or no knowledge of computer science or statistics.
+  description: Machine learning is enables data scientists make predictions about objects, people, and the future. This learning path is a high-level introduction to machine learning for people with little or no knowledge of computer science or statistics.
   ms.date: 06/30/2021
   author: TomReidNZ
   ms.author: jasdeb
@@ -11,23 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Understand data science for machine learning  
 summary: |
-  Microsoft Learn provides several interactive ways to get an interactive introduction to classic machine learning. "Classic machine learning" refers to models other than deep learning models. Whether you plan to move on to learning deep learning in detail or not, all of these options are a great place to start.
-
-  From the most basic classical machine learning models, to exploratory data analysis and customizing architectures, you’ll be guided by easy to digest conceptual content and interactive Jupyter notebooks, all without leaving your browser.
-
-  Choose your own path depending on your educational background and interests.
-  
-  ### Option 1: The complete data science for classic machine learning course 
-  This is the recommended option for most people. It has all the same modules as the other two learning paths with a custom flow that maximizes reinforcement of concepts. If you want to learn about both the underlying concepts as well as how to get into building models with the most common machine learning tools this is the path for you. It's also the best path if you plan to move beyond classic machine learning, and get an education in deep learning and neural networks, which we only introduce here.
-
-  ### Option 2: The _Understand data science for machine learning_ learning path
-  If you are looking to understand how machine learning works and have little mathematical background then this path is for you. It makes no assumptions about previous education (other than a very light familiarity with coding concepts) and teaches with code, metaphor, and visual that give you the ah ha moment. It's hands-on, but focuses more on understanding fundamentals and less on the power of the tools and libraries available.
-
-  ✔ You are currently on this path, scroll down to begin.
-
-  ### Option 3: The _Create machine learning models_ learning path
-  If you already have some idea what machine learning is about or you have a strong mathematical background you may best enjoy jumping right in to the _Create Machine Learning Models_ learning path. These modules teach some machine learning concepts, but move fast so they can get to the power of using tools like scikit-learn, TensorFlow, and PyTorch. This is also the best learning path for you if your looking for just enough familiarity to understand machine learning examples for products like Azure ML or Azure Databricks
-
+  Machine learning is a powerful, modern way to analyze data and make predictions. Using data science fundamentals, you’ll learn the core principles of machine learning and how to use common tools and frameworks to train, evaluate, and use machine learning models.
 prerequisites: None
 iconUrl: /learn/achievements/machine-learning-essentials.svg
 levels:
