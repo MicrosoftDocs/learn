@@ -7,7 +7,7 @@ In Azure Machine Learning, you can deploy a service as an Azure Container Instan
 
 2. On the **Details** tab, select the algorithm name for the best model. 
 > [!div class="centered"]
-> ![Select run.](../media/deploy_detail_tab.png)
+> ![Select run.](../media/deploy-detail-tab.png)
 
 3. on the **Model** tab, use the **Deploy** button to deploy the model with the following settings:
     - **Name**: predict-rentals
@@ -21,7 +21,7 @@ In Azure Machine Learning, you can deploy a service as an Azure Container Instan
     - the Primary Key for your service
 
 > [!div class="centered"]
-> ![Review the REST endpoint and Primary Key.](../media/endpoints2.png)
+> ![Review the REST endpoint and Primary Key.](../media/endpoints-2.png)
 
 6. Note that you can use the &#10697; link next to these values to copy them to the clipboard.
 
@@ -80,7 +80,7 @@ Now that you've deployed a service, you can test it using some simple code.
 7. Switch to the browser tab containing the **Consume** page for the **predict-rentals** service, and copy the Primary Key for your service. The switch back to the tab containing the notebook and paste the key into the code, replacing YOUR_KEY.
 8. Save the notebook, Then use the **&#9655;** button next to the cell to run the code. You will get predictions for the number of bicycle rentals expected per day. 
 > [!div class="centered"]
-> ![Run the code to get predictions for number of bicycle rentals.](../media/example_output.png)
+> ![Run the code to get predictions for number of bicycle rentals.](../media/example-output.png)
 
 9. Verify that predicted number of rentals for each day in the five day period are returned. 
 

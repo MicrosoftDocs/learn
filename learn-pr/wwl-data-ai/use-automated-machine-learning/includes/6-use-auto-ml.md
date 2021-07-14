@@ -24,7 +24,7 @@ In Azure Machine Learning, operations that you run are called *experiments*. Fol
         - **Task type**: Regression *(the model will predict a numeric value)* 
        
 > [!div class="centered"]
-> ![Select View additional configuration settings.](../media/new_automated_mlrun4.png)
+> ![Select View additional configuration settings.](../media/new-automated-ml-run-4.png)
 
 Notice under task type there are settings _View additional configuration settings_ and _View Featurization settings_. We will configure these settings next. 
 
@@ -36,7 +36,7 @@ Notice under task type there are settings _View additional configuration setting
         - **Training job time (hours)**: 0.5 - *this causes the experiment to end after a maximum of 30 minutes.*
         - **Metric score threshold**: 0.08 - *this causes the experiment to end if a model achieves a normalized root mean squared error metric score of 0.08 or less.*
 > [!div class="centered"]
-> ![Click on Select from all options to locate the VM size.](../media/new_automated_mlrun5.png)
+> ![Click on Select from all options to locate the VM size.](../media/new-automated-ml-run-5.png)
 - **Featurization settings:**
     - **Enable featurization**: Selected - *this causes Azure Machine Learning to automatically preprocess the features before training.*
 
@@ -50,7 +50,7 @@ After the experiment has finished; you can review the best performing model that
 
 1. On the **Details** tab of the automated machine learning run, note the best model summary.
 > [!div class="centered"]
-> ![Click on the algorithm name on the details pane.](../media/complete_run.png)
+> ![Click on the algorithm name on the details pane.](../media/complete-run.png)
 
 2. Select the **Algorithm name** for the best model to view its details.
 
@@ -60,12 +60,12 @@ After the experiment has finished; you can review the best performing model that
 
 3. Next to the *Normalized root mean squared error* value, select **View all other metrics** to see values of other possible evaluation metrics for a regression model.
 > [!div class="centered"]
-> ![Review the other metrics for a regression model.](../media/\review_run1.png)
+> ![Review the other metrics for a regression model.](../media/review-run-1.png)
 
 4. Select the **Metrics** tab and select the **residuals** and **predicted_true** charts if they are not already selected. 
 
 > [!div class="centered"]
-> ![Select the residuals and predicted_true charts.](../media/\review_run3.png)
+> ![Select the residuals and predicted_true charts.](../media/review-run-3.png)
 
 Then review the charts, which show the performance of the model by comparing the predicted values against the true values, and by showing the *residuals* (differences between predicted and actual values) as a histogram.
 
