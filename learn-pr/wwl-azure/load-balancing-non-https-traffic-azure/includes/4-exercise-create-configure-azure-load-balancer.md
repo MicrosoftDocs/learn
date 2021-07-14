@@ -8,7 +8,8 @@ The steps to create an internal load balancer, are very similar to those you hav
 
 The diagram below illustrates the environment you will be deploying in this exercise.
 
-![internal standard loadbalancer diagram](../media/exercise-internal-standard-load-balancer-environment-diagram.png)
+> [!div class="mx-imgBorder"]
+> ![internal standard loadbalancer diagram](../media/exercise-internal-standard-load-balancer-environment-diagram.png)
 
  
 In this exercise, you will:
@@ -29,7 +30,8 @@ In this section, you will create a virtual network and a subnet.
 
 3. Click **Create**.
 
-![create a virtual network from the Azure portal](../media/create-virtual-network-1.png)
+    > [!div class="mx-imgBorder"]
+    > ![create a virtual network from the Azure portal](../media/create-virtual-network-1.png)
 
 4. On the **Basics** tab, use the information in the table below to create the virtual network.
 
@@ -80,7 +82,8 @@ In this section, you will create an internal Standard SKU load balancer. The rea
 3. Scroll down to the bottom of the page and select **Load Balancer** (the one that says 'Microsoft' and 'Azure Service' under the name).
 
 4. Click **Create**.
-    ![create a load balancer](../media/create-load-balancer-4.png)
+    > [!div class="mx-imgBorder"]
+    > ![create a load balancer](../media/create-load-balancer-4.png)
 
 5. On the **Basics** tab, use the information in the table below to create the load balancer.
 
@@ -123,7 +126,8 @@ The backend address pool contains the IP addresses of the virtual NICs connected
 
 
 4. Click **Add**.
-    ![create a backend pool](../media/create-backendpool.png)
+    > [!div class="mx-imgBorder"]
+    > ![create a backend pool](../media/create-backendpool.png)
 
  
 
@@ -146,7 +150,8 @@ The load balancer monitors the status of your app with a health probe. The healt
 
 
 3. Click **Add**.
-    ![create a health probe](../media/create-healthprobe.png)
+    > [!div class="mx-imgBorder"]
+    > ![create a health probe](../media/create-healthprobe.png)
 
  
 
@@ -174,7 +179,8 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
 
 
 3. Click **Add**.
-    ![create a load balancer rule](../media/create-loadbalancer-rule.png)
+    > [!div class="mx-imgBorder"]
+    > ![create a load balancer rule](../media/create-loadbalancer-rule.png)
 
  
 
@@ -210,11 +216,9 @@ In this section, you will create three VMs, that will be in the same availabilit
 5. Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**), then click **Add**.
 
 6. On the **myBackendPool** page, click **Save**.
-    ![add vms to backend pool](../media/add-vms-backendpool.png)
+    > [!div class="mx-imgBorder"]
+    > ![add vms to backend pool](../media/add-vms-backendpool.png)
 
- 
-
- 
 
 ## Task 5: Test the load balancer
 
@@ -285,10 +289,12 @@ In this section, you will create a test VM, and then test the load balancer.
 11. Enter (or paste) the **Private IP address** (e.g. 10.1.0.4) from the previous step into the address bar of the browser and press Enter.
 
 12. The default web home page of the IIS Web server is displayed in the browser window. One of the three virtual machines in the backend pool will respond.
-    ![webpage showing myVM1](../media/load-balancer-web-test-1.png)
+    > [!div class="mx-imgBorder"]
+    > ![webpage showing myVM1](../media/load-balancer-web-test-1.png)
 
 13. If you click the refresh button in the browser a few times, you will see that the response comes randomly from the different VMs in the backend pool of the internal load balancer.
-    ![webpage showing myVM3](../media/load-balancer-web-test-2.png)
+    > [!div class="mx-imgBorder"]
+    > ![webpage showing myVM3](../media/load-balancer-web-test-2.png)
 
 ## Clean up resources
 
