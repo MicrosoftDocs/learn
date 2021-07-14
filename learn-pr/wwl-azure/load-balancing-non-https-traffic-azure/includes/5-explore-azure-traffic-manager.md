@@ -54,7 +54,7 @@ To achieve this configuration, they complete the following steps:
 
 Following on from the deployment example above; when a client requests the page https://partners.contoso.com/login.aspx, the client performs the following steps to resolve the DNS name and establish a connection:
 
-​> [!div class="mx-imgBorder"]
+> [!div class="mx-imgBorder"]
 > ![Diagram illustrating client usage flow in Traffic Manager](../media/traffic-manager-client-usage-flow.png)
 
 1. The client sends a DNS query to its configured recursive DNS service to resolve the name 'partners.contoso.com'. A recursive DNS service, sometimes called a 'local DNS' service, does not host DNS domains directly. Rather, the client off-loads the work of contacting the various authoritative DNS services across the Internet needed to resolve a DNS name.
@@ -110,7 +110,7 @@ For more information, see [Priority traffic-routing method](/azure/traffic-manag
 
 This is an example of the **Weighted** routing method.
 
-​> [!div class="mx-imgBorder"]
+> [!div class="mx-imgBorder"]
 > ![Diagram illustrating the 'Weighted' routing method](../media/routingmethod-weighted.png)
 
 For more information, see [Weighted traffic-routing method](/azure/traffic-manager/traffic-manager-routing-methods).
