@@ -28,29 +28,32 @@ In this exercise, you will:
 3. Select **+** **Create**.
 
 4. Enter, or select, the following information
-   ![creating a VirtualNetwork in the Azure portal](../media/create-virtual-network.png)
+   > [!div class="mx-imgBorder"]
+   > ![creating a VirtualNetwork in the Azure portal](../media/create-virtual-network.png)
 
    | **Setting**    | **Value**                                     |
-   | -------------- | --------------------------------------------- |
+   |:-:|:-:|
    | Subscription   | Select your subscription                      |
    | Resource group | Select the provided resource group from Learn |
    | Name           | CoreServicesVNet                              |
    | Location       | Select **West US**                            |
 
 5. Select the **IP Addresses** tab and enter the following values (select **default** to change the subnet name):
-   ![IP configuration settings](../media/create-virtual-network-ip.png)
+   > [!div class="mx-imgBorder"]
+   > ![IP configuration settings](../media/create-virtual-network-ip.png)
 
    | **Setting**          | **Value**   |
-   | -------------------- | ----------- |
+   |:-:|:-:|
    | Address space        | 10.0.0.0/16 |
    | Subnet Name          | Public      |
    | Subnet Address range | 10.0.0.0/24 |
 
 6. Select the **Security** tab and enter the following values:
-   ![Network security settings](../media/ create-virtual-network-security.png)
+   > [!div class="mx-imgBorder"]
+   > ![Network security settings](../media/ create-virtual-network-security.png)
 
    | **Setting**     | **Value** |
-   | --------------- | --------- |
+   |:-:|:-:|
    | BastionHost     | Disabled  |
    | DDoS protection | Disabled  |
    | Firewall        | Disabled  |
@@ -64,12 +67,13 @@ Service endpoints are enabled per service, per subnet. Create a subnet and enabl
 1. In the **Search resources, services, and docs** box at the top of the portal, enter CoreServicesVNet. When CoreServicesVNet appears in the search results, select it.
 
 2. Add a subnet to the virtual network. Under **Settings**, select **Subnets**, and then select **+ Subnet**, as shown in the following picture: 
-   ![adding a subnet to a virtual network in the Azure portal](../media/create-subnet.png)
+   > [!div class="mx-imgBorder"]
+   > ![adding a subnet to a virtual network in the Azure portal](../media/create-subnet.png)
 
 3. Under **Add subnet**, select or enter the following information:
 
    | **Setting**                 | **Value**                    |
-   | --------------------------- | ---------------------------- |
+   |:-:|:-:|
    | Name                        | Private                      |
    | Address range               | 10.0.1.0/24                  |
    | Service endpoints: Services | Select **Microsoft.Storage** |
@@ -78,7 +82,8 @@ Service endpoints are enabled per service, per subnet. Create a subnet and enabl
 
 You should now have two subnets configured:
 
-![subnets created in the virtual network](../media/configured-subnets.png)
+> [!div class="mx-imgBorder"]
+> ![subnets created in the virtual network](../media/configured-subnets.png)
 
  
 
@@ -91,10 +96,11 @@ By default, all VMs in a subnet can communicate with all resources. You can limi
 2. In Network security groups, select **+ Create**. 
 
 3. Enter or select, the following information: 
-   ![creat network security group](../media/create-network-security-group.png)
+   > [!div class="mx-imgBorder"]
+   > ![creat network security group](../media/create-network-security-group.png)
 
    | **Setting**    | **Value**                                                    |
-   | -------------- | ------------------------------------------------------------ |
+   |:-:|:-:|
    | Subscription   | Select your subscription                                     |
    | Resource group | Select **Use existing** and select the provided resource group from Learn |
    | Name           | ContosoPrivateNSG                                            |
@@ -103,17 +109,19 @@ By default, all VMs in a subnet can communicate with all resources. You can limi
 4. select **Review + create**, then click **Create**:
 
 5. After the ContosoPrivateNSG network security group is created, select **Go to resource**.
-   ![view network security group in the Azure portal](../media/nsg-deployment-complete.png)
+   > [!div class="mx-imgBorder"]
+   > ![view network security group in the Azure portal](../media/nsg-deployment-complete.png)
 
 6. Under **Settings**, select **Outbound security rules**.
 
 7. Select **+ Add**.
 
 8. Create a rule that allows outbound communication to the Azure Storage service. Enter, or select, the following information:
-   ![configure outbound security rule for allow storage](../media/add-outbound-security-rule.png)
+   > [!div class="mx-imgBorder"]
+   > ![configure outbound security rule for allow storage](../media/add-outbound-security-rule.png)
 
    | **Setting**             | **Value**                 |
-   | ----------------------- | ------------------------- |
+   |:-:|:-:|
    | Source                  | Select **VirtualNetwork** |
    | Source port ranges      | *                         |
    | Destination             | Select **Service Tag**    |
@@ -135,10 +143,11 @@ Create another outbound security rule that denies communication to the internet.
 1. Select **+Add** under **Outbound security rules**.
 
 2. Enter, or select, the following information:
-   ![configure outbound security rule for deny internet](../media/add-outbound-security-rule-deny.png)
+   > [!div class="mx-imgBorder"]
+   > ![configure outbound security rule for deny internet](../media/add-outbound-security-rule-deny.png)
 
    | **Setting**             | **Value**                 |
-   | ----------------------- | ------------------------- |
+   |:-:|:-:|
    | Source                  | Select **VirtualNetwork** |
    | Source port ranges      | *                         |
    | Destination             | Select **Service Tag**    |
@@ -161,10 +170,11 @@ Create an inbound security rule that allows Remote Desktop Protocol (RDP) traffi
 2. Select **+ Add**.
 
 3. In Add inbound security rule, enter the following values::
-   ![inbound security rule for allow RDP](../media/add-inbound-security-rule.png)
+   > [!div class="mx-imgBorder"]
+   > ![inbound security rule for allow RDP](../media/add-inbound-security-rule.png)
 
    | **Setting**             | **Value**                 |
-   | ----------------------- | ------------------------- |
+   |:-:|:-:|
    | Source                  | Any                       |
    | Source port ranges      | *                         |
    | Destination             | Select **VirtualNetwork** |
@@ -198,10 +208,11 @@ The steps necessary to restrict network access to resources created through Azur
 2. Select +Create.
 
 3. Enter, or select, the following information and accept the remaining defaults:
-   ![configure storage account in the Azure portal](../media/create-a-storage-account-basics.png)
+   > [!div class="mx-imgBorder"]
+   > ![configure storage account in the Azure portal](../media/create-a-storage-account-basics.png)
 
    | **Setting**    | **Value**                                                    |
-   | -------------- | ------------------------------------------------------------ |
+   |:-:|:-:|
    | Subscription   | Select your subscription                                     |
    | Resource group | Select Use existing and select the resource group provided by Learn. |
    | Name           | Enter a contosostoragewest..                                 |
@@ -215,7 +226,8 @@ The steps necessary to restrict network access to resources created through Azur
 
 1. After the storage account is created, enter the name of the storage account in the **Search resources, services, and docs** box, at the top of the portal. When the name of your storage account appears in the search results, select it.
 2. Select **File shares**, as shown in the following picture: 
-   ![create new file share in the Azure portal](../media/new-file-share.png)
+   > [!div class="mx-imgBorder"]
+   > ![create new file share in the Azure portal](../media/new-file-share.png)
 3. Select **+ File share**.
 4. Enter marketing under **Name**, and then select **Create**.
 
@@ -230,10 +242,11 @@ By default, storage accounts accept network connections from clients in any netw
 3. Select **+Add existing virtual network**.
 
 4. Under **Add networks**, select the following values:
-   ![add network address configuration](../media/add-network-access.png)
+   > [!div class="mx-imgBorder"]
+   > ![add network address configuration](../media/add-network-access.png)
 
    | **Setting**      | **Value**                    |
-   | ---------------- | ---------------------------- |
+   |:-:|:-:|
    | Subscription     | Select your subscription.    |
    | Virtual networks | Select CoreServicesVNet**.** |
    | Subnets          | Select **Private**.          |
@@ -253,10 +266,11 @@ To test network access to a storage account, deploy a VM to each subnet.
 1. In the Azure portal Home screen, select Virtual machinesSelect **+ Create**, then **+Virtual machine**.
 
 2. On the Basics tab, enter, or select, the following information: 
-   ![create virtual machines in the Azure portal](../media/create-virtual-machine-basics.png)
+   > [!div class="mx-imgBorder"]
+   > ![create virtual machines in the Azure portal](../media/create-virtual-machine-basics.png)
 
    | **Setting**           | **Value**                                                    |
-   | --------------------- | ------------------------------------------------------------ |
+   |:-:|:-:|
    | Project Details       |                                                              |
    | Subscription          | Select your subscription.                                    |
    | Resource group        | Select **Use existing** and select the resource group provided by Learn |
@@ -276,10 +290,11 @@ To test network access to a storage account, deploy a VM to each subnet.
    | Select inbound ports  | RDP (3389)                                                   |
 
 3. Then select the **Networking** tab. Enter, or select, the following information:
-   ![configure networking for the virtual machine](../media/create-virtual-machine-networking.png)
+   > [!div class="mx-imgBorder"]
+   > ![configure networking for the virtual machine](../media/create-virtual-machine-networking.png)
 
    | **Setting**                | **Value**                  |
-   | -------------------------- | -------------------------- |
+   |:-:|:-:|
    | Virtual network            | CoreServicesVNet           |
    | Subnet                     | Public (10.0.0.0/24)       |
    | Public IP                  | (new) ContosoWestPublic-ip |
@@ -300,23 +315,23 @@ The VM takes a few minutes to deploy. Do not continue to the next step until it 
 ## Task 10: Confirm access to storage account
 
 1. Once the ContosoWestPrivate VM finishes creating, open the blade for the VM by selecting Go to resource. Select the Connect button, then select RDP.
-   ![select RDP to connect to virtual machine](../media/private-virtual-machine-connect.png)
+   > [!div class="mx-imgBorder"]
+   > ![select RDP to connect to virtual machine](../media/private-virtual-machine-connect.png)
 2. After selecting the Connect button and RDP, select the Download RDP File button. A Remote Desktop Protocol (.rdp) file is created and downloaded to your computer.
 3. Open the downloaded rdp file. If prompted, select Connect. Enter the user name and password you specified when creating the VM. You may need to select More choices, then Use a different account, to specify the credentials you entered when you created the VM.
 4. Select **OK**.
 5. You may receive a certificate warning during the sign-in process. If you receive the warning, select Yes or Continue to proceed with the connection.
 6. On the ContosoWestPrivate VM, map the Azure file share to drive Z using PowerShell. Before running the commands that follow, replace <storage-account-key> and <storage-account-name> with values you supplied and retrieved in the Create a storage account task.
 
-```Azure CLI
-   $acctKey = ConvertTo-SecureString -String "<storage-account-key>" -AsPlainText -Force
+    ```Azure CLI
+       $acctKey = ConvertTo-SecureString -String "<storage-account-key>" -AsPlainText -Force
 
-   $credential = New-Object System.Management.Automation.PSCredential -ArgumentList "Azure\<storage-account-name>", $acctKey
+       $credential = New-Object System.Management.Automation.PSCredential -ArgumentList "Azure\<storage-account-name>", $acctKey
 
-   New-PSDrive -Name Z -PSProvider FileSystem -Root "\\<storage-account-name>.file.core.windows.net\my-file-share" -Credential $credential
-```
+       New-PSDrive -Name Z -PSProvider FileSystem -Root "\\<storage-account-name>.file.core.windows.net\my-file-share" -Credential $credential
+    ```
 
-
-The Azure file share successfully mapped to the Z drive.
+   The Azure file share successfully mapped to the Z drive.
 
 7. Confirm that the VM has no outbound connectivity to the internet from a command prompt:
 
@@ -346,7 +361,8 @@ The Azure file share successfully mapped to the Z drive.
 
 8. You receive the error shown in the following screenshot:
 
-    ![error showing no access](../media/no-access.png)
+   > [!div class="mx-imgBorder"]
+   > ![error showing no access](../media/no-access.png)
 
  Access is denied, because your computer is not in the Private subnet of the CoreServicesVNet virtual network.
 
@@ -358,7 +374,8 @@ Results: You have now completed this lab.
 
 ## Task 11: Clean up resources
 
-> [!NOTE] Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+> [!NOTE] 
+> Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
@@ -368,4 +385,5 @@ Results: You have now completed this lab.
    Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
    ```
 
-> [!NOTE]  The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+> [!NOTE]  
+> The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.

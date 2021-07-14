@@ -371,7 +371,7 @@ In this section, you'll use the virtual machine you created in the previous step
 
 - Open Windows PowerShell on the server after you connect.
 
-- Enter nslookup <your- webapp-name>.azurewebsites.net. Replace <your-webapp-name> with the name of the web app you created in the previous steps. You'll receive a message similar to what is displayed below:
+- Enter nslookup `<your- webapp-name>.azurewebsites.net`. Replace `<your-webapp-name>` with the name of the web app you created in the previous steps. You'll receive a message similar to what is displayed below:
 
   ```| Azure PowerShell |
   Server: UnKnown
@@ -392,7 +392,8 @@ A private IP address of **10.0.0.5** is returned for the web app name. This addr
 - In the bastion connection to **myVM**, open Internet Explorer.
 - Enter the url of your web app, **https://&lt;your-webapp-name&gt;.azurewebsites.net**.
 - You'll receive the default web app page if your application hasn't been deployed:
-  ![screen shot of page in Azure indicating an app service is up and running](../media/web-app-default-page.png)
+   > [!div class="mx-imgBorder"]
+   > ![screen shot of page in Azure indicating an app service is up and running](../media/web-app-default-page.png)
 - Close the connection to **myVM**.
 
 ## Task 7: Clean up resources

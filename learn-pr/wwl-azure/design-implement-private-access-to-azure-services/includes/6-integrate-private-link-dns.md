@@ -4,7 +4,8 @@ Application teams do have permissions to create Azure resource in their own subs
 
 The following diagram shows a typical high-level architecture for enterprise environments with central DNS resolution and where name resolution for Private Link resources is done via Azure Private DNS:
 
-![Diagram of high-level workflow of enterprise environments with central DNS resolution and where name resolution for Private Link resources is done via Azure Private DNS.](../media/private-link-example-central-dns.png)
+> [!div class="mx-imgBorder"]
+> ![Diagram of high-level workflow of enterprise environments with central DNS resolution and where name resolution for Private Link resources is done via Azure Private DNS.](../media/private-link-example-central-dns.png)
 
 From the previous diagram, it is important to highlight that:
 
@@ -156,7 +157,8 @@ To configure properly, you need the following resources:
 
 The following screenshot illustrates the DNS resolution sequence from virtual network workloads using the private DNS zone:
 
-![Diagram illustrating the DNS resolution sequence from virtual network workloads using the private DNS zone.](../media/single-vnet-azure-dns.png)
+> [!div class="mx-imgBorder"]
+> ![Diagram illustrating the DNS resolution sequence from virtual network workloads using the private DNS zone.](../media/single-vnet-azure-dns.png)
 
 You can extend this model to peered virtual networks associated to the same Private Endpoint. Add new virtual network links to the private DNS zone for all peered virtual networks.
 
@@ -166,7 +168,8 @@ If you're using a Private Endpoint in a hub-and-spoke model from a different sub
 
 In this scenario, there's a hub and spoke networking topology. The spoke networks share a Private Endpoint. The spoke virtual networks are linked to the same private DNS zone.
 
-![Diagram illustrating hub and spoke topology where the spoke networks share a Private Endpoint. The spoke virtual networks are linked to the same private DNS zone.](../media/hub-spoke-azure-dns.png)
+> [!div class="mx-imgBorder"]
+> ![Diagram illustrating hub and spoke topology where the spoke networks share a Private Endpoint. The spoke virtual networks are linked to the same private DNS zone.](../media/hub-spoke-azure-dns.png)
 
 This configuration can be extended for an on-premises network that already has a DNS solution in place. The on-premises DNS solution is configured to forward DNS traffic to Azure DNS via a conditional forwarder. The conditional forwarder references the DNS forwarder deployed in Azure.
 
@@ -188,7 +191,8 @@ The following diagram illustrates the DNS resolution from an on-premises network
 
 The conditional forwarding must be made to the recommended public DNS zone forwarder. For example: database.windows.net instead of privatelink.database.windows.net.
 
-![Diagram illustrating DNS resolution from an on-premises network. DNS resolution is conditionally forwarded to Azure. The resolution is made by a private DNS zone linked to a virtual network](../media/on-premises-forwarding-to-azure.png)
+> [!div class="mx-imgBorder"]
+> ![Diagram illustrating DNS resolution from an on-premises network. DNS resolution is conditionally forwarded to Azure. The resolution is made by a private DNS zone linked to a virtual network](../media/on-premises-forwarding-to-azure.png)
 
  
 
@@ -214,7 +218,8 @@ To configure properly, you need the following resources:
 
 The following diagram illustrates the DNS resolution sequence from an on-premises network. The configuration uses a DNS forwarder deployed in Azure. The resolution is made by a private DNS zone linked to a virtual network:
 
-![Diagram illustrating the DNS resolution sequence from an on-premises network using a DNS forwarder deployed in Azure.](../media/on-premises-using-azure-dns.png)
+> [!div class="mx-imgBorder"]
+> ![Diagram illustrating the DNS resolution sequence from an on-premises network using a DNS forwarder deployed in Azure.](../media/on-premises-using-azure-dns.png)
 
 ### Virtual network and on-premises workloads using a DNS forwarder
 
@@ -244,4 +249,5 @@ To configure properly, you need the following resources:
 
 The following diagram shows the DNS resolution for both networks, on-premises and virtual networks. The resolution is using a DNS forwarder. The resolution is made by a private DNS zone linked to a virtual network:
 
-![Diagram illustrating the DNS resolution for both on-premises and virtual networks.](../media/hybrid-scenario.png)
+> [!div class="mx-imgBorder"]
+> ![Diagram illustrating the DNS resolution for both on-premises and virtual networks.](../media/hybrid-scenario.png)

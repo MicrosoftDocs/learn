@@ -164,7 +164,8 @@ In many environments, you have defined virtual networks and subnets with allocat
 
 With kubenet, only the nodes receive an IP address in the virtual network subnet. Pods can't communicate directly with each other. Instead, User Defined Routing (UDR) and IP forwarding is used for connectivity between pods across nodes. By default, UDRs and IP forwarding configuration is created and maintained by the AKS service, but you have to the option to bring your own route table for custom route management. You could also deploy pods behind a service that receives an assigned IP address and load balances traffic for the application. The following diagram shows how the AKS nodes receive an IP address in the virtual network subnet, but not the pods:
 
-![diagram shows how the AKS nodes receive an IP address in the virtual network subnet, but not the pods](../media/kunenet-overview.png)
+> [!div class="mx-imgBorder"]
+> ![diagram shows how the AKS nodes receive an IP address in the virtual network subnet, but not the pods](../media/kunenet-overview.png)
 
 ### Limitations & considerations for kubenet
 

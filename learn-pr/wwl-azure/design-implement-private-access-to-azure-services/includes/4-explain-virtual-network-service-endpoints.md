@@ -2,7 +2,8 @@
 
 Use virtual network Service Endpoints to extend your private address space in Azure by providing a direct connection to your Azure services. Service Endpoints let you secure your Azure resources to only your virtual network. Service traffic will remain on the Azure backbone and doesn't go out to the internet.
 
-![image showing web server, database server, and service endpoint within a v-net. A link is shown to from the service endpoint to azure storage outside the v-net. ](../media/service-endpoint.png)
+> [!div class="mx-imgBorder"]
+> ![image showing web server, database server, and service endpoint within a v-net. A link is shown to from the service endpoint to azure storage outside the v-net. ](../media/service-endpoint.png)
 
 By default, Azure services are all designed for direct internet access. All Azure resources have public IP addresses, including PaaS services, such as Azure SQL Database and Azure Storage. Because these services are exposed to the internet, anyone can potentially access your Azure services.
 
@@ -61,7 +62,7 @@ When you enable a Service Endpoint, you restrict the flow of traffic, and enable
 This is an example route table, before enabling a Service Endpoint:
 
 | **SOURCE** | **STATE** | **ADDRESS PREFIXES** | **NEXT HOP TYPE** |
-| ---------- | --------- | -------------------- | ----------------- |
+|:-:|:-:|:-:|:-:|
 | Default    | Active    | 10.1.1.0/24          | VNet              |
 | Default    | Active    | 0.0.0.0./0           | Internet          |
 | Default    | Active    | 10.0.0.0/8           | None              |
@@ -74,7 +75,7 @@ This is an example route table, before enabling a Service Endpoint:
 And here's an example route table after you've added two Service Endpoints to the virtual network:
 
 | **SOURCE** | **STATE** | **ADDRESS PREFIXES**    | **NEXT HOP TYPE**             |
-| ---------- | --------- | ----------------------- | ----------------------------- |
+|:-:|:-:|:-:|:-:|
 | Default    | Active    | 10.1.1.0/24             | VNet                          |
 | Default    | Active    | 0.0.0.0./0              | Internet                      |
 | Default    | Active    | 10.0.0.0/8              | None                          |
@@ -94,7 +95,8 @@ As the network engineer, you're planning to move sensitive engineering diagram f
 
 You'll create a Service Endpoint and use network rules to restrict access to Azure Storage. You'll create a virtual network Service Endpoint for Azure Storage on the Databases subnet. You'll then verify that your DataServer VM can access Azure Storage. Lastly, you'll check that the AppServer VM, which is on a different subnet, can't access storage.
 
-![Service endpoints workflow: App server, Dataserver, and service endpoint are contained in a vnet called ERP-servers. The v net is connected to the internet. The service endpoint is connected to Azure storage outside the vnet. ](../media/exercise-task.png)
+> [!div class="mx-imgBorder"]
+> ![Service endpoints workflow: App server, Dataserver, and service endpoint are contained in a vnet called ERP-servers. The v net is connected to the internet. The service endpoint is connected to Azure storage outside the vnet. ](../media/exercise-task.png)
 
 **Add rules to the network security group**
 
@@ -169,7 +171,7 @@ Ensure that communications with Azure Storage pass through the Service Endpoint.
 You should now have the following rules in ERP-SERVERS-NSG:
 
 | **Rule name** | **Direction** | **Priority** | **Purpose**                             |
-| ------------- | ------------- | ------------ | --------------------------------------- |
+|:-:|:-:|:-:|:-:|
 | AllowSSHRule  | Inbound       | 100          | Allow inbound SSH                       |
 | httpRule      | Inbound       | 150          | Deny from DataServer to AppServer on 80 |
 | Allow_Storage | Outbound      | 190          | Allow access to Azure Storage           |
@@ -362,7 +364,8 @@ As of March 2021, you can also use Service Tags in place of explicit IP ranges i
 
 You can use service tags to achieve network isolation and protect your Azure resources from the general Internet while accessing Azure services that have public endpoints. Create inbound/outbound network security group rules to deny traffic to/from Internet and allow traffic to/from AzureCloud or other available service tags of specific Azure services.
 
-![Diagram of service tags workflow: Access control denies outbound internet traffic by the DenyAllOutBound NSG. Access control allows only Azure service traffic by the AllowStorage and Allow SQL NSGs. ](../media/service-tags.png)
+> [!div class="mx-imgBorder"]
+> ![Diagram of service tags workflow: Access control denies outbound internet traffic by the DenyAllOutBound NSG. Access control allows only Azure service traffic by the AllowStorage and Allow SQL NSGs. ](../media/service-tags.png)
 
 ## Available service tags
 
@@ -379,7 +382,7 @@ The columns indicate whether the tag:
 By default, service tags reflect the ranges for the entire cloud. Some service tags also allow more granular control by restricting the corresponding IP ranges to a specified region. For example, the service tag Storage represents Azure Storage for the entire cloud, but Storage. WestUS narrows the range to only the storage IP address ranges from the WestUS region. The following table indicates whether each service tag supports such regional scope.
 
 | Tag                                                          | Purpose                                                      | Can use inbound or outbound? | Can be regional? | Can use with Azure Firewall? |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------------- | ---------------- | ---------------------------- |
+|:-:|:-:|:-:|:-:|:-:|
 | ActionGroup                                                  | Action Group.                                                | Inbound                      | No               | No                           |
 | ApiManagement                                                | Management traffic for Azure API Management-dedicated deployments. Note: This tag represents the Azure API Management Service Endpoint for control plane per region. This enables customers to perform management operations on the APIs, Operations, Policies, NamedValues configured on the API Management service. | Inbound                      | Yes              | Yes                          |
 | ApplicationInsightsAvailability                              | Application Insights Availability.                           | Inbound                      | No               | No                           |
@@ -454,7 +457,7 @@ In the classic deployment model (before Azure Resource Manager), a subset of the
 In the classic deployment model (before Azure Resource Manager), a subset of the tags listed in the previous table are supported. These tags are spelled differently:
 
 | Classic Spelling   | Equivalent Resource Manager Tag |
-| ------------------ | ------------------------------- |
+|:-:|:-:|
 | AZURE_LOADBALANCER | AzureLoadBalancer               |
 | INTERNET           | Internet                        |
 | VIRTUAL_NETWORK    | VirtualNetwork                  |
