@@ -2,7 +2,7 @@
 
 Your company is moving to Azure. As a first step, they are need to obtain an Azure subscription.
 
-You are responsible for obtaining an Azure subcription for your company. You are also responsible for effective management of costs.
+You are responsible for obtaining an Azure subscription for your company. You are also responsible for effective management of costs.
 
 ## Skills measured
 
