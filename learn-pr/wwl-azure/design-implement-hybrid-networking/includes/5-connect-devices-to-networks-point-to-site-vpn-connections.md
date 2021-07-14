@@ -1,7 +1,6 @@
 A Point-to-Site (P2S) VPN gateway connection lets you create a secure connection to your virtual network from an individual client computer. A P2S connection is established by starting it from the client computer. This solution is useful for telecommuters who want to connect to Azure VNets from a remote location, such as from home or a conference. P2S VPN is also a useful solution to use instead of S2S VPN when you have only a few clients that need to connect to a VNet.
 
 > [!div class="mx-imgBorder"]
-
 >![Connect from a computer to an Azure VNet - point-to-site connection diagram](../media/point-site-diagram.png)
 
  
@@ -51,7 +50,6 @@ The RADIUS server can also integrate with AD certificate services. This lets you
 A RADIUS server can also integrate with other external identity systems. This opens many authentication options for P2S VPN, including multi-factor options.
 
 > [!div class="mx-imgBorder"]
-
 >![RADIUS authentication of client.](../media/p2s-authenticate-with-ad.png)
 
 ## Configure point-to-site clients
@@ -70,5 +68,4 @@ Users use the native VPN clients on Windows and Mac devices for P2S. Azure provi
 The zip file also provides the values of some of the important settings on the Azure side that you can use to create your own profile for these devices. Some of the values include the VPN gateway address, configured tunnel types, routes, and the root certificate for gateway validation.
 
 > [!NOTE]
-
 > That for Windows clients, you must have administrator rights on the client device to initiate the VPN connection from the client device to Azure.
