@@ -2,7 +2,7 @@ Data presented in educational material is often remarkably perfect, designed to 
 
 Because of the complexity of ‘real world’ data, raw data has to be inspected for issues before being used. 
 
-As such, best practice is to inspect the raw data and process it before use, which reduces errors or issues, typically by removing erroneous data points or modifying the data into a more useful form. 
+As such, best practice is to inspect the raw data and process it before use, which reduces errors or issues, typically by removing erroneous data points or modifying the data into a more useful form.
 
 ## Real world data issues
 
@@ -16,7 +16,7 @@ Another common issue in real-world data is bias. Bias refers to a tendency to se
 
 Remember, real-world data will always have issues, but this is often a surmountable problem. Remember to:
 
-1. Check for missing values and badly recorded data
-1. Consider removal of obvious outliers 
-1. Consider what real-world factors might affect your analysis and consider if your dataset size is large enough to handle this
-1. Check for biased raw data and consider your options to fix this, if found
+* Check for missing values and badly recorded data
+* Consider removal of obvious outliers 
+* Consider what real-world factors might affect your analysis and consider if your dataset size is large enough to handle this
+* Check for biased raw data and consider your options to fix this, if found

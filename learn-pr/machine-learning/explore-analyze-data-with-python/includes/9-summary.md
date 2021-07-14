@@ -6,6 +6,7 @@ Machine learning works by identifying relationships between data values that des
 
 ## Challenge: Analyze Flight Data
 
-If this exercises in this module have inspired you to try exploring data for yourself, why not take on the challenge of a real world dataset containing flight records from the US Department of Transportation? You'll find the challenge in the [01 - Flights Challenge.ipynb](https://github.com/MicrosoftDocs/ml-basics/blob/master/challenges/01%20-%20Flights%20Challenge.ipynb) notebook! 
+If this exercises in this module have inspired you to try exploring data for yourself, why not take on the challenge of a real world dataset containing flight records from the US Department of Transportation? You'll find the challenge in the [01 - Flights Challenge.ipynb](https://github.com/MicrosoftDocs/ml-basics/blob/master/challenges/01%20-%20Flights%20Challenge.ipynb) notebook!
 
-> **Note**: The time to complete this optional challenge is not included in the estimated time for this module - you can spend as little or as much time on it as you like!
+> [!NOTE]
+> The time to complete this optional challenge is not included in the estimated time for this module - you can spend as little or as much time on it as you like!

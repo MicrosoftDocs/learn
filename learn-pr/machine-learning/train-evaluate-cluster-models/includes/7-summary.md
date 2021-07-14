@@ -6,4 +6,5 @@ While scikit-learn is a popular framework for writing code to train clustering m
 
 Now that you've seen how to create a clustering model, why not try for yourself? You'll find a clustering challenge in the [04 - Clustering Challenge.ipynb](https://github.com/MicrosoftDocs/ml-basics/blob/master/challenges/04%20-%20Clustering%20Challenge.ipynb) notebook!
 
-> **Note**: The time to complete this optional challenge is not included in the estimated time for this module - you can spend as little or as much time on it as you like!
+> [!NOTE]
+> The time to complete this optional challenge is not included in the estimated time for this module - you can spend as little or as much time on it as you like!

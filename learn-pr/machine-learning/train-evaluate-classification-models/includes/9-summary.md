@@ -6,4 +6,5 @@ While scikit-learn is a popular framework for writing code to train classificati
 
 Feel like challenging yourself to train a classification model? Try the challenge in the [/challenges/03 - Wine Classification Challenge.ipynb](https://github.com/MicrosoftDocs/ml-basics/blob/master/challenges/03%20-%20Wine%20Classification%20Challenge.ipynb) notebook to see if you can classify wines into their grape varietals!
 
-> **Note**: The time to complete this optional challenge is not included in the estimated time for this module - you can spend as little or as much time on it as you like!
+> [!NOTE]
+> The time to complete this optional challenge is not included in the estimated time for this module - you can spend as little or as much time on it as you like!

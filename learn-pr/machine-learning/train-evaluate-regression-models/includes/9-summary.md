@@ -6,4 +6,5 @@ While scikit-learn is a popular framework for writing code to train regression m
 
 Think you're ready to create your own regression model? Try the challenge of predicting real estate property prices in the [02 - Real Estate Regression Challenge.ipynb](https://github.com/MicrosoftDocs/ml-basics/blob/master/challenges/02%20-%20Real%20Estate%20Regression%20Challenge.ipynb) notebook!
 
-> **Note**: The time to complete this optional challenge is not included in the estimated time for this module - you can spend as little or as much time on it as you like!
+> [!NOTE]
+> The time to complete this optional challenge is not included in the estimated time for this module - you can spend as little or as much time on it as you like!
