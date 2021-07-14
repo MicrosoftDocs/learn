@@ -11,4 +11,4 @@ metadata:
   ms.topic: interactive-tutorial # do we need ms.topic?
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-the-threat-landscape.md)]
+  [!include[](includes/3-threat-landscape.md)]
