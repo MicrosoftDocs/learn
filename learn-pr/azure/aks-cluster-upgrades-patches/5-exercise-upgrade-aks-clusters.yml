@@ -11,6 +11,6 @@ metadata:
   sandbox: true
   interactive: bash
   ms.product: learning-azure
-durationInMinutes: 20
+durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-upgrade-aks-clusters.md)]

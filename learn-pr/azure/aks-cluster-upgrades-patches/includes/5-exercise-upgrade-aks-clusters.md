@@ -99,6 +99,11 @@ In the following exercise, you will deploy an AKS cluster to represent the AKS c
     
     ---
 
+    Once complete, run the following command to confirm the patch upgrade. Check the `KubernetesVersion` is the next patch version.
+
+    ```azurecli-interactive
+    az aks show -n $CLUSTERNAME -g $RG -o table
+    ```
 ## Upgrade to the next minor version
 
 9. Run the following command to upgrade the AKS cluster to the next supported Kubernetes minor version.
@@ -113,6 +118,12 @@ In the following exercise, you will deploy an AKS cluster to represent the AKS c
     az aks wait -g $RG -n $CLUSTERNAME --update
     ```
 
+    Once complete, run the following command to confirm the upgrade. Check the `KubernetesVersion` is the next minor version.
+
+    ```azurecli-interactive
+    az aks show -n $CLUSTERNAME -g $RG -o table
+    ```
+
 10. Finally, run the following command to upgrade the cluster to the latest stable Kubernetes version supported by Azure Kubernetes Service.
 
     ```azurecli-interactive
@@ -122,6 +133,11 @@ In the following exercise, you will deploy an AKS cluster to represent the AKS c
     
     ```azurecli-interactive
     az aks wait -g $RG -n $CLUSTERNAME --update
+    ```
+    Once complete, run the following command to confirm the upgrade. Check the `KubernetesVersion` is the latest stable Kubernetes version.
+
+    ```azurecli-interactive
+    az aks show -n $CLUSTERNAME -g $RG -o table
     ```
 
 ## Clean up your resources 
