@@ -1,21 +1,3 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-
-    Goal: state what's in this unit and how it aligns to the 'evaluate' learning objective.
-
-    Pattern:
-        One paragraph of 2 sentences:
-            Sentence 1: State that this unit addresses ("when to use it").
-            Sentence 2: State that this unit targets this learning objective: "Evaluate whether (product) is appropriate to (general product use case)."
-        Decision criteria as a bulleted list.
-
-    Heading: none
-
-    Example: "Here, we'll discuss how you can decide whether Logic Apps is the right choice for a workflow. We'll list some criteria that indicate whether Logic Apps will meet your performance and functional goals.
-        * Integration
-        * Performance
-        * Conditionals
-        * Connectors"
--->
 Here, we'll go over the testing pyramid and the many types of tests. Knowing how different types of tests can help address different vulnerabilities in your code will make sure you are spending your test investment in the most impactful way.
 
 * **The Testing pyramid** The testing pyramid helps us organize the types of tests by how expensive they are to write, maintain, and run as well as the rarity of those types of tests.
@@ -25,23 +7,6 @@ Here, we'll go over the testing pyramid and the many types of tests. Knowing how
 * **Load Tests** Load tests stress your app to its limits by mimicking multiple users and processes using your app at once.
 * **Acceptance Tests** Acceptance tests are tests that define business desired outcome and may take on the role of testing if your app has the customer criteria it needs.
 * **UI Tests** UI Tests mimic actual users using the app and interacting with the UI as an end customer would to complete an action.
-
-<!-- 2. Decision criteria introduction --------------------------------------------------------------------------------
-
-    Goal: Lead-in to the criteria discussion.
-
-    Pattern:
-        1 paragraph consisting of 3 sentences
-            Sentence 1: summarizing the criteria from a positive view ("when to use").
-            Sentence 2: describing the negative ("when not to use") at a high level.
-            Sentence 3: transition/lead-in to the detailed discussion.
-
-    Heading: "## Decision criteria"
-
-    Example:
-        "Decision criteria"
-         "Logic Apps helps you coordinate the flow of data through disparate systems. The cases where Logic Apps might not be the best option typically involve real-time requirements, complex business rules, or use of non-standard services. Here's some discussion of each of these factors."
--->
 
 ## The Testing pyramid
 

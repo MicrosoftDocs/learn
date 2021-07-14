@@ -1,21 +1,3 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
-
-    Goal: state what's in this unit and how it aligns to the 'evaluate' learning objective.
-
-    Pattern:
-        One paragraph of 2 sentences:
-            Sentence 1: State that this unit addresses ("when to use it").
-            Sentence 2: State that this unit targets this learning objective: "Evaluate whether (product) is appropriate to (general product use case)."
-        Decision criteria as a bulleted list.
-
-    Heading: none
-
-    Example: "Here, we'll discuss how you can decide whether Logic Apps is the right choice for a workflow. We'll list some criteria that indicate whether Logic Apps will meet your performance and functional goals.
-        * Integration
-        * Performance
-        * Conditionals
-        * Connectors"
--->
 There is a lot of guidance out there when it comes to testing. We'll cover some of the common schools of thought that experienced developers often recommend. Learning these acronyms will help you keep up with popular concepts.
 
 * **Test Driven Development (TDD)** Let tests be the driving force behind your day-to-day coding.

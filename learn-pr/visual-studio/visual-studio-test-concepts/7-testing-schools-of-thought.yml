@@ -9,7 +9,7 @@ metadata:
   author: {{githubUsername}}
   ms.author: {{msUser}}
   ms.topic: interactive-tutorial
-  ms.prod: learning-visual-studio # Edit as appropriate for your portfolio area
+  ms.prod: learning-visual-studio
 durationInMinutes: 1
 content: |
   [!include[](includes/7-testing-schools-of-thought.md)]

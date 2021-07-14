@@ -1,60 +1,12 @@
-<!-- 1. Topic sentence(s) ---------------------------------------------------------------
-
-    Goal: briefly state that this unit will define the product.
-
-    Heading: none
-
-    Example: "Let's start with a few definitions and a quick tour of the core features of Logic Apps. This overview should help you see whether Logic Apps might be a good fit for your work."
--->
 When you test, either by writing code or performing manual testing, you do so because you want to ensure that your software works as intended. This unit focuses on writing code that tests various parts of your application code. Your application code will not ship with the test code. Think of test code as scaffolding that supports the software development process throughout your program's lifetime.
 
 Let's start by defining testing with some examples before we dive into the concepts.
-
-<!-- 2. Background-concept definitions (optional) ----------------------------------------
-
-    Goal:
-        Define any needed underlying concepts or terms the learner must know to understand the product.
-        Repeat this pattern multiple times if multiple concepts are needed.
-
-    Heading:
-        "## What is (concept)?"
-
-    Pattern:
-        1. H2 heading.
-        2. Lead sentence that gives a definition "(concept) is..." (ensure this is a definition, do not give use cases like "(concept) lets you...").
-        3. Additional text as needed (typically 1-3 paragraphs total, integrate the lead sentence into the first paragraph).
-        4. Visual like an image, table, list, code sample, or blockquote (image preferred).
-
-    Example:
-        (Note: the product "Logic Apps" implements business processes in the cloud; therefore, "business process" is a background concept.)
-        Heading: "What is a business process?
-        Lead sentence: "A business process or _workflow_ is a sequence of tasks that produce a specific outcome. The result might be a decision, some data, or a notification...."
--->
 
 ## The testing process
 
 Testing involves a series of test methods that run against your product code and return a pass or fail result based on certain criteria that is asserted. Test results appear in a list of red "x" to represent failing tests and green "✔" to represent passing tests that make it easy to assess what functionality is working or not at a glance.
 
 ![image](../media/test-intro-testlist.png)
-
-<!-- 3. Define the product -------------------------------------------------------------
-
-    Goal:
-        Give a formal and precise definition of the product.
-
-    Heading:
-        "## (product) definition"
-
-    Pattern:
-        1. H2 heading.
-        2. Lead sentence that gives a definition "(product) is..." (ensure this is a definition, do not give use cases like "(product) lets you...").
-        3. Additional text as needed (typically 1-3 paragraphs total, integrate the lead sentence into the first paragraph).
-        4. Visual like an image, table, list, code sample, or blockquote (image preferred).
-
-    Example:
-        Heading: "Azure Logic Apps definition"
-        Lead sentence: "Azure Logic Apps is a cloud service that automates the execution of your business processes."
--->
 
 ## Test Method definition
 
@@ -81,26 +33,6 @@ Here is how this test would appear in Visual Studio:
 One difference between tests and product code is they don't run as part of your app's normal function. So instead of using F5 (or the big green run button at the top of your development environment) to run as you would your app, you choose which tests to run either via a Test Explorer or a number of other helpful editor tools.
 ![image](../media/test-intro-runtests.png)
 ![image](../media/test-intro-runtests-testexplorer.png)
-
-<!-- 4. Solve the scenario -------------------------------------------------------------
-
-    Goal:
-        At a high level, describe how the (product) solves one of the customer tasks in your (scenario).
-        Avoid teaching how to actually do the work (you're not teaching how-to-use in this module).
-
-    Heading:
-        "## How to (solve scenario)"
-
-    Pattern:
-        1. H2 heading.
-        2. Lead sentence that summarizes how the (product) solved the (scenario).
-        3. Additional text as needed (typically 1-2 paragraphs total, integrate the lead sentence into the first paragraph).
-        4. Visual like an image, table, list, code sample, or blockquote (image preferred).
-
-    Example:
-        Heading: "How to implement a Twitter monitor"
-        Lead sentence: "To implement a Twitter monitor, you map each task to a Logic Apps component and connect them with conditional logic."
--->
 
 ## How can tests help prevent regressions in functionality?
 

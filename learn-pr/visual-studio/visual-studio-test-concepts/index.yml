@@ -135,4 +135,4 @@ units: # stub based on prefix, module folder, and unit names
 ### TODO: verify if this should start as temporary/default badge
 ###
 badge:
-  uid: learn-visualstudio.introduction-to-testing-concepts.badge
+  uid: /learn/achievements/generic-badge.svg
