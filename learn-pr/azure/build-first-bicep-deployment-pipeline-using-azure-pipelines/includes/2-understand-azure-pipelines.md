@@ -10,7 +10,7 @@ Pipelines are used to describe the your process you follow to test and deploy yo
 
 When you work with Azure Pipelines, you describe your pipeline by using a YAML file. A YAML file is a structured text file, a little like how Bicep is also a structured text file. You can create and edit YAML files using any text editor. In this module, you'll use Visual Studio Code, which includes an extension to help you edit Azure DevOps YAML pipeline files. The Azure DevOps web interface also provides some tools to view and edit your pipeline YAML files.
 
-> [NOTE!]
+> [!NOTE]
 > Azure Pipelines also has _classic pipelines_, which are an older version of the pipelines feature. YAML-based pipelines have replaced classic pipelines, and in this module, we're only going to discuss YAML pipelines. We recommend you use YAML pipelines.
 
 Because pipeline YAML files are code, they are stored alongside your Bicep code in your Git repository. You use Git's features to collaborate on your pipeline, and you can manage different versions of your pipeline file by using commits and branches. In a future module, you'll also learn about other advanced features of pipelines like templates, which make pipelines easy to reuse.
@@ -25,7 +25,7 @@ Azure Pipelines provides multiple types of agents with different operating syste
 
 An _agent pool_ contains multiple agents of the same type. When you configure your pipeline, you tell Azure Pipelines which agent pool to use to execute each set of steps. When your pipeline runs, it waits for an agent to become available from the pool, and then it instructs the agent to run your deployment steps.
 
-:::image type="content" source="../media/2-agent.png" alt-text="TODO" border="false":::
+:::image type="content" source="../media/2-agent.png" alt-text="Diagram that shows a pipeline that runs on an agent within an agent pool." border="false":::
 
 > [!NOTE]
 > You can also create your own custom agents. These are called _self-hosted agents_. You might do this if you have specific software you need to run as part of your pipeline, or if you need to have a lot of control over exactly how the agent is configured. We won't discuss self-hosted agents in this module, but we provide a link to more information in the summary.
@@ -42,7 +42,7 @@ When your pipeline starts, the agent that's running your deployment steps will h
 
 You need to ensure that your service principal has the permissions it needs to be able to execute your deployment steps. For example, you might need to assign the service principal the contributor role for the resource group that it deploys your resources to.
 
-:::image type="content" source="../media/2-service-connection.png" alt-text="TODO" border="false":::
+:::image type="content" source="../media/2-service-connection.png" alt-text="Diagram that shows a pipeline that includes an Azure deployment step, which accesses a service connection and then deploys to Azure." border="false":::
 
 > [!NOTE]
 > Service connections can be used to enable your pipeline to access other resources outside of Azure, too. We don't need to use any other service connection types in this module, though.
@@ -51,7 +51,7 @@ You need to ensure that your service principal has the permissions it needs to b
 
 You need to instruct Azure Pipelines _when_ to run your pipeline by using a _trigger_. There are multiple types of trigger available. For now, we'll just use a _manual trigger_, which means we'll manually tell Azure Pipelines when to start running our pipeline. Later in this module, you'll learn about the other triggers you can use.
 
-:::image type="content" source="../media/2-trigger.png" alt-text="TODO" border="false":::
+:::image type="content" source="../media/2-trigger.png" alt-text="Diagram that shows a trigger initiating a pipeline." border="false":::
 
 ## Jobs
 
@@ -68,7 +68,7 @@ There are two types of steps in Azure Pipelines:
 - _Scripts_ enable you to run a script by using Bash, PowerShell, or the Windows command shell.
 - _Tasks_ provide more advanced functionality and give you a convenient way to access lots of different capabilities without writing script statements. For example, there are built-in tasks to run the Azure CLI or Azure PowerShell, to test your code, to upload files to an FTP server, and many more. Additionally, anyone can write their own task and publish it to the Visual Studio Marketplace, so there's a large set of commercial and open-source tasks available, too.
 
-:::image type="content" source="../media/2-job-step.png" alt-text="TODO" border="false":::
+:::image type="content" source="../media/2-job-step.png" alt-text="Diagram that shows a pipeline with one job, which contains two steps." border="false":::
 
 > [!NOTE]
 > Some people prefer to use script statements rather than built-in tasks, because they provide more control over what is going on. Other people prefer to use tasks so they don't need to write and manage scripts. In this module, we use a mixture of both approaches.
@@ -89,8 +89,6 @@ Let's look at each part in detail.
   > In this example, we define the `pool` for the whole pipeline. Sometimes, you might have different jobs that need to run on different agent pools. You can configure the `pool` for each job.
 - `jobs` defines the list of jobs that our pipeline runs. In this example, we have a single `job`.
 - `steps` lists the sequence of actions that we want to run. We have two steps, both of which run a simple script to echo some text. Each step has a `displayName`, which is a human-readable name for the step. You'll see the display name when you look at the pipeline logs. You'll also see any outputs from the commands in your steps.
-
-<!-- TODO I'm not sure jobs are worth including -->
 
 > [!IMPORTANT]
 > In YAML files, indentation is very important. Take a look at the example above: some lines are indented by two or four spaces. The number of spaces you use is important, and if you don't indent your file correctly then Azure Pipelines won't be able to interpret it. Visual Studio Code helps you to find and fix errors in your YAML file indentation.
