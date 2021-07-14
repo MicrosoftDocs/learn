@@ -1,8 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.visual-studio-test-concepts.5-different-types-of-testing
-title: The Different Types of Testing and the Testing Pyramid
+title: Different Types of Testing and the Testing Pyramid
 metadata:
-  unitType: learning-content
   title: different-types-of-testing
   description: You may hear of many different types of testing including unit testing, performance testing, load testing, UI testing, etc. These types of tests all have different advantages in improving software quality.
   ms.date: 6/28/2021
@@ -12,4 +11,4 @@ metadata:
   ms.prod: learning-visual-studio # Edit as appropriate for your portfolio area
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-different-types-of-testing.md)]
+  [!include[](includes/5-different-types-of-testing.md)]

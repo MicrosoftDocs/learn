@@ -2,7 +2,6 @@
 uid: learn.visual-studio-test-concepts.4-knowledge-check
 title: Knowledge check
 metadata:
-  unitType: knowledge_check
   title: Knowledge check
   description: Test your knowledge on the basic concepts behind why people test.
   ms.date: 6/28/2021
@@ -11,30 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio # Edit as appropriate for your portfolio area
 durationInMinutes: 1
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-### Question content requirements:
-###  - Write 5 questions
-###  - Questions 1,2 must test this Learning Objective: "Describe how (attributes) of (product) work to (solve problem)"
-###      Guidance: These two questions can be short, no need for a long scenario to analyze. Test if they understand how the product works.
-###      Example: "What differentiates an action from a control action in an Azure Logic App?"
-###  - Questions 3,4,5 must test this Learning Objective: "Evaluate whether (product) is appropriate to (general product use case)"
-###      Guidance: Use scenario questions that ask the learner to analyze a situation with the "when to use" criteria presented in the module.
-###      Example: "Suppose you work for a financial company. You're building a system to let your brokers trade financial instruments. Your system must monitor market conditions, detect changes, and execute trades. You'll need to handle a large volume of transactions and you'll need to do it quickly. The faster you can complete trades, the more of an advantage you'll have over your competitors. Which requirement of this system would be difficult for Logic Apps to satisfy?"
-###
-###########################################################################
 content: |
+  [!include[](includes/4-knowledge-check.md)]
 quiz:
   questions:
   - content: "Which of these is **not** a benefit of testing?"
@@ -62,3 +39,4 @@ quiz:
     - content: "There is no one true answer. Your code coverage goal depends on the repository."
       isCorrect: true
       explanation: "There is no one true answer that can be applied to all code bases equally. It is best to agree as a team on a metric and pay more attention to new code causing code coverage to decrease to indicate it's time to test the newly added functionality."
+      

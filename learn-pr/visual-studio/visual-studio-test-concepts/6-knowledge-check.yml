@@ -35,6 +35,7 @@ durationInMinutes: 1
 ###
 ###########################################################################
 content: |
+  [!include[](includes/6-knowledge-check.md)]
 quiz:
   questions:
   - content: "What is the most common type of test?"
