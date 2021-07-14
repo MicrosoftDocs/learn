@@ -195,7 +195,9 @@ If you deploy this Bicep template as is, the deployment would succeed, but there
 
 One of the main tasks in converting our JSON templates to Bicep templates is to revise the names of parameters, variables, and symbolic names. The Bicep decompiler may add some extra text to these names that may not adhere to your template standards.
 
-In the converted template, take a look at the variable `appServicePlanName_var`. This variable name has `_var` appended to the end of the original variable name.
+#### Revise parameters and variables
+
+Review parameter and variable names. - In the converted template, take a look at the variable `appServicePlanName_var`. This variable name has `_var` appended to the end of the original variable name.
 
 :::code language="bicep" source="code/2-app-service-plan.bicep" range="20-27" highlight="6" :::
 
@@ -214,6 +216,8 @@ For clarity, remove the `_var` and shown below:
 ```Bicep
 name: appServicePlanName
 ```
+
+#### Revise symbolic names
 
 After updating the variable name and its references, notice that the `appServicePlanName` variable shares the same name as the `appServicePlanName` symbolic name.
 
@@ -255,6 +259,8 @@ Single-line comments can be added as headers for sections of code, or on individ
 :::code language="bicep" source="code/2-app-service-plan-updated.bicep" range="34-46" highlight="34,39,42,46" :::
 
 ### The converted template
+
+After making the appropriate improvements, review the final template before deployment. Take a look at the final converted template below that includes the revised names and added comments:
 
 ```Bicep
 /*
