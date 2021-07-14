@@ -1,10 +1,10 @@
-Migrating your existing ARM JSON templates and Azure resources to Bicep is not accomplished with a click of a button. The process involves a a recommended workflow that includes conversions and verifications.
+Migrating your existing ARM JSON templates and Azure resources to Bicep isn't accomplished with a click of a button. The process involves a recommended workflow that includes conversions and verifications.
 
 ## Example scenario
 
 Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. Recently, your company acquired a smaller competitor. This company is also using Azure to host its application infrastructure, but their resources were deployed using ARM JSON templates and the Azure portal.
 
-You want to begin the process of standardizing on Bicep for all resource deployments. To accomplish this, you will need to convert the existing JSON templates to Bicep and export the existing resource definitions from the Azure portal. Before using these migrated templates, you will want to verify the migration using the tools available.
+You want to begin the process of standardizing on Bicep for all resource deployments. To accomplish this task, you'll need to convert the existing JSON templates to Bicep and export the existing resource definitions from the Azure portal. Before using these migrated templates, you'll want to verify the migration using the tools available.
 
 ## What will we be doing?
 
