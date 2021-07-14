@@ -362,7 +362,7 @@ As of March 2021, you can also use Service Tags in place of explicit IP ranges i
 
 You can use service tags to achieve network isolation and protect your Azure resources from the general Internet while accessing Azure services that have public endpoints. Create inbound/outbound network security group rules to deny traffic to/from Internet and allow traffic to/from AzureCloud or other available service tags of specific Azure services.
 
-![Diagram of service tags workflow: Access control denies outbound internet traffic by the DenyAllOutBound NSG. Access control allows only Azure service traffic by the AllowStorage and Allow SQL NSGs. ](../media/service_tags.png)
+![Diagram of service tags workflow: Access control denies outbound internet traffic by the DenyAllOutBound NSG. Access control allows only Azure service traffic by the AllowStorage and Allow SQL NSGs. ](../media/service-tags.png)
 
 ## Available service tags
 
