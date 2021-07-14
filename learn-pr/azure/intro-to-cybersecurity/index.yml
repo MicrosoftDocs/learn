@@ -29,7 +29,7 @@ products:
 units:
 - learn.intro-to-cybersecurity.1-introduction
 - learn.intro-to-cybersecurity.2-what-is-cybersecurity
-- learn.intro-to-cybersecurity.3-the-threat-landscape
+- learn.intro-to-cybersecurity.3-threat-landscape
 - learn.intro-to-cybersecurity.4-mitigation-strategies
 - learn.intro-to-cybersecurity.5-knowledge-check
 - learn.intro-to-cybersecurity.6-summary
