@@ -95,14 +95,14 @@ You can specify the following next hop types when creating a user-defined route:
 Here is an example where you have a virtual network that includes three subnets.
 -  The subnets are Private, DMZ, and Public. In the DMZ subnet, there is a network virtual appliance (NVA). NVAs are VMs that help with network functions like routing and firewall optimization.-  You want to ensure all traffic from the Public subnet goes through the NVA to the Private subnet.
 
-![Image](../media/routing-example.png)
+![Image](../media/route-example.png)
 
 ### Create a Routing Table
 
 Creating a routing table is straightforward. You provide **Name**, **Subscription**, **Resource Group**, and **Location**. You also decide to use **Virtual network gateway route propagation**.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of the Create route table page. BGP route propagation is Enabled.](../media/creating-routing-table.png)
+> ![Screenshot of the Create route table page. BGP route propagation is Enabled.](../media/create-routing-table.png)
 
 Routes are automatically added to the route table for all subnets with Virtual network gateway propagation enabled. When you are using ExpressRoute, propagation ensures all subnets get the routing information.
 

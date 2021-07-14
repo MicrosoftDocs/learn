@@ -44,7 +44,7 @@ NAT is compatible with the following standard SKU resources:
 NAT and compatible Standard SKU features are aware of the direction the flow was started. Inbound and outbound scenarios can coexist. These scenarios will receive the correct network address translations because these features are aware of the flow direction. When used together with NAT, these resources provide inbound Internet connectivity to your subnet(s). NAT provides all outbound Internet connectivity from your subnet(s).
 
 >[!div class="mx-imgBorder"]
->![Virtual Network NAT flow direction](../media/nat-flow-direction-inbound-and-outbound.png)
+>![Virtual Network NAT flow direction](../media/nat-flow-direction-inbound-outbound.png)
 
 
 ## Limitations of NAT
