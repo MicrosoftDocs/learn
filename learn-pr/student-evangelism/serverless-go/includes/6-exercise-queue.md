@@ -164,8 +164,8 @@ The next step is to configure your environment. Because you are developing local
 
 1. Next you need to start the Azurite extension. Start it by opening the command palette **View > Command palette** and select **Azurite: Start Queue Service**.
 
-   > [NOTE!]
-   > This will create some local files in your project
+   > [!NOTE]
+   > This will create some local files in your project.
 
 1. Next start the Azure Storage Explorer program. Once opened, on the left side it should look like so:
 
