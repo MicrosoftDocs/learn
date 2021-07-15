@@ -1,4 +1,4 @@
-Migrating your existing ARM JSON templates and Azure resources to Bicep isn't accomplished with a click of a button. The process involves a recommended workflow that includes conversions and verifications.
+Bicep provides many improvements over JSON for template authoring, including simpler syntax, modules, automatic dependency management and type validation and IntelliSense. Your team may have already deployed Azure resources using the Azure portal, ARM JSON templates, or a command line interface. Migrating your existing ARM JSON templates and Azure resources to Bicep isn't accomplished with a click of a button. The process involves a recommended workflow that includes conversions and verifications.
 
 ## Example scenario
 
@@ -8,7 +8,7 @@ You want to begin the process of standardizing on Bicep for all resource deploym
 
 ## What will we be doing?
 
-In this module, you'll learn about the ways you can migrate your JSON templates to Bicep and how you can verify your template migrations. You'll find answers to these questions:
+In this module, you'll learn about the ways you can migrate your Azure resources to Bicep, including ARM JSON templates and Azure portal resources. You will also learn how you can verify your resource template migrations. You'll find answers to these questions:
 
 - How can you migrate your JSON templates to Bicep using the native tooling?
 - How can you export Azure resource definitions to Bicep using the Azure portal and the command line?
@@ -21,5 +21,5 @@ After completing this module, you'll be able to migrate your ARM JSON templates 
 ## Prerequisites
 
 - You should be familiar with Azure, including the Azure portal, Subscriptions, and Resource groups.
-- You should have an understanding of ARM templates (JSON and Bicep, including parameters, modules, child and extension resources, and the what-if operation.
+- You should have an understanding of ARM templates (both JSON and Bicep), including parameters, modules, and child and extension resources.
 - You should have a basic understanding of the what-if operation.

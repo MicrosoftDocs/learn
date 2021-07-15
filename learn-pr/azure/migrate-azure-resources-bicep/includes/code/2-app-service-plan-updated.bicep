@@ -16,9 +16,9 @@ param location string = resourceGroup().location
 param environment string = 'prod'
 
 @allowed([
-  'P1v3' // 195 ACU/vCPU, 8GB memory, 2 vCPU
-  'P2v3' // 195 ACU/vCPU, 16GB memory, 4 vCPU
-  'P3v3' // 195 ACU/vCPU, 32GB memory, 8 vCPU
+  'P1v3'
+  'P2v3'
+  'P3v3'
 ])
 @description('The list of allowed App Service Plan SKUs.')
 param appServicePlanSku string = 'P1v3'
@@ -40,7 +40,6 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2020-12-01' = {
     capacity: appServicePlanInstanceCount
   }
   kind: 'app' // Specifies a Windows App service Plan.
-  properties: {}
 }
 
 output appServicePlanId string = appServicePlan.id // Outputs the resource Id of the App Service Plan.

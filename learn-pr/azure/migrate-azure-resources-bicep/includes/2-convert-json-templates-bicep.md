@@ -201,7 +201,7 @@ Review parameter and variable names. - In the converted template, take a look at
 
 :::code language="bicep" source="code/2-app-service-plan.bicep" range="20-27" highlight="6" :::
 
-For clarity, remove the `_var` and shown below:
+For clarity, remove the `_var` as shown below:
 
 ```Bicep
 var appServicePlanName = 'plan-${environment}-001'
@@ -211,11 +211,14 @@ By making this change to the `appServicePlanName` variable, any reference to the
 
 :::code language="bicep" source="code/2-app-service-plan.bicep" range="27-29" highlight="2" :::
 
-For clarity, remove the `_var` and shown below:
+For clarity, remove the `_var` as shown below:
 
 ```Bicep
 name: appServicePlanName
 ```
+
+> [!TIP]
+> Pressing F2 in VS Code will help you rename a symbol and all references to that symbol.
 
 #### Revise symbolic names
 
@@ -231,7 +234,7 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2020-12-01' = {
 
 By making this change to the `appServicePlan` symbolic name, any reference to the original symbolic name will need to be updated. Look for any linting errors within the code that highlight where the symbolic name needs to be updated. The value for the `appServicePlanId` output needs to be updated based on the new symbolic name.
 
-:::code language="bicep" source="code/2-app-service-plan.bicep" range="35-38" highlight="4" :::
+:::code language="bicep" source="code/2-app-service-plan.bicep" range="34-38" highlight="4" :::
 
 Modify the value of the `appServicePlanId` output as shown below:
 
@@ -256,7 +259,7 @@ You can add a multi-line comment at the beginning of the file as shown below:
 
 Single-line comments can be added as headers for sections of code, or on individual lines to describe the code.
 
-:::code language="bicep" source="code/2-app-service-plan-updated.bicep" range="34-46" highlight="34,39,42,46" :::
+:::code language="bicep" source="code/2-app-service-plan-updated.bicep" range="34-46" highlight="1,6,9,13" :::
 
 ### The converted template
 
@@ -281,9 +284,9 @@ param location string = resourceGroup().location
 param environment string = 'prod'
 
 @allowed([
-  'P1v3' // 195 ACU/vCPU, 8GB memory, 2 vCPU
-  'P2v3' // 195 ACU/vCPU, 16GB memory, 4 vCPU
-  'P3v3' // 195 ACU/vCPU, 32GB memory, 8 vCPU
+  'P1v3'
+  'P2v3'
+  'P3v3'
 ])
 @description('The list of allowed App Service Plan SKUs.')
 param appServicePlanSku string = 'P1v3'
@@ -305,7 +308,6 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2020-12-01' = {
     capacity: appServicePlanInstanceCount
   }
   kind: 'app' // Specifies a Windows App service Plan.
-  properties: {}
 }
 
 output appServicePlanId string = appServicePlan.id // Outputs the resource Id of the App Service Plan.

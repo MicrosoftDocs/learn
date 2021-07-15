@@ -8,8 +8,8 @@ Finally, you learned how to use the what-if operation and documentation resource
 
 ## References
 
-- [Bicep at Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview)
+- [Bicep at Microsoft Docs](https://docs.microsoft.com/azure/azure-resource-manager/bicep/overview)
 - [Bicep on GitHub](https://github.com/Azure/bicep)
-- [Azure Quickstart Templates](https://azure.microsoft.com/en-us/resources/templates/)
-- [Azure ARM Template Reference](https://docs.microsoft.com/en-us/azure/templates/)
-- [Azure ARM Template What-if Operation](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/deploy-what-if?tabs=azure-powershell)
+- [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/)
+- [Azure ARM Template Reference](https://docs.microsoft.com/azure/templates/)
+- [Azure ARM Template What-if Operation](https://docs.microsoft.com/azure/azure-resource-manager/templates/deploy-what-if?tabs=azure-powershell)
