@@ -12,6 +12,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
+  [!include[](includes/8-knowledge-check.md)]
 quiz:
   questions:
   - content: Which of these situations will trigger the pipeline to run?
