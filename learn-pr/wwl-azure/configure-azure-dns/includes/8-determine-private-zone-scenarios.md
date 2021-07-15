@@ -5,7 +5,7 @@ In this scenario, you have a virtual network and resources in Azure,, including 
 :::image type="content" source="../media/AZ104_Private_Zones_Single-e6cae73f.png" alt-text="A VNet is shown with two VMs.VMs are querying the Azure DNS and private IP addresses are returned.":::
 
 
-In the above diagram, VNET1 contains two VMs (VM1 and VM2). Each VM has a private IP address. When you create and a Private Zone (`contoso.lab`) to the Registration virtual network, Azure DNS will automatically create two A records in the zone. DNS queries from VM1 to resolve `VM2.contoso.lab` will receive a DNS response that contains the Private IP of VM2. Amd, a Reverse DNS query (PTR) for the Private IP of VM1 (10.0.0.4) issued from VM2 will receive a DNS response that contains the FQDN of VM1, as expected.
+In the above diagram, VNET1 contains two VMs (VM1 and VM2). Each VM has a private IP address. When you create and a Private Zone (`contoso.lab`) to the Registration virtual network, Azure DNS will automatically create two A records in the zone. DNS queries from VM1 to resolve `VM2.contoso.lab` will receive a DNS response that contains the Private IP of VM2. And, a Reverse DNS query (PTR) for the Private IP of VM1 (10.0.0.4) issued from VM2 will receive a DNS response that contains the FQDN of VM1, as expected.
 
 ## Scenario 2: Name resolution for multiple networks
 
