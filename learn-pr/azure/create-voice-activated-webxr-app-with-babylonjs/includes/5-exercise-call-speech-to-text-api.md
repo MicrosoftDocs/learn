@@ -119,8 +119,8 @@ Let's create a Speech Recognizer using the Azure Speech JavaScript SDK.
     ```typescript
     recognizer.canceled = (s: Recognizer, e: SpeechRecognitionCanceledEventArgs) => {
         if (e.reason == CancellationReason.Error) {
-            console.log(`"CANCELED: ErrorCode=${e.errorCode}`);
-            console.log(`"CANCELED: ErrorDetails=${e.errorDetails}`);
+            console.log(`CANCELED: ErrorCode=${e.errorCode}`);
+            console.log(`CANCELED: ErrorDetails=${e.errorDetails}`);
         }
     
         recognizer.stopContinuousRecognitionAsync();
@@ -149,6 +149,8 @@ Let's create a Speech Recognizer using the Azure Speech JavaScript SDK.
         }
     };
     ```
+
+    Since the transcribed text might contain uppercase letters and punctuations, we also had to transform the text (so that it only contains lowercase alphanumeric letters) before performing the comparison.
 
 1. In addition to the dragon 3D model, we'll also render a magic circle 3D model for better visual effect. The 3D models for the dragon and the magic circle are stored in the *env* object. Let's add the code to have the magic circle and the dragon models fade in, one after another. Also, let's stop the speech recognition after the dragon has been summoned.
 

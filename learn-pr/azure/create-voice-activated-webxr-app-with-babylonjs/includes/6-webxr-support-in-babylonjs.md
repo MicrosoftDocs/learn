@@ -4,6 +4,9 @@ In the scenario of the amusement park application, the company wants the Virtual
 
 Here, you'll learn about a selection of the WebXR features provided by Babylon.js.
 
+> [!NOTE]
+> In this unit, we'll provide several code snippets for explanatory purposes. You won't need to edit the code for the amusement park application until the next exercise unit.
+
 ## WebXR in Babylon.js
 
 Babylon.js is a powerful 3D rendering engine packed into a typescript framework. Other than its main features such as rendering 3D meshes and animations, the framework also provides support for WebXR.
