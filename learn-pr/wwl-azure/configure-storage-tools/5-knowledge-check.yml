@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-storage-tools.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/15/2021
+  author: wwlpublish
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A manufacturing company's finance department wants to control how the data is being transferred to Azure Files. They want a graphical tool to manage the process, but they don't want to use the Azure portal. What tool would be in this situation?"
+    choices:
+    - content: "Azure Data Box"
+      isCorrect: false
+      explanation: "That's incorrect. Data Box would be better for importing and exporting very large data sets to Azure."
+    - content: "Robocopy"
+      isCorrect: false
+      explanation: "That's incorrect. Robocopy would be better for copying large datasets or lots of files across volumes."
+    - content: "Azure Storage Explorer"
+      isCorrect: true
+      explanation: "That's correct. Azure Storage Explorer is the best choice of the finance department doesn't want to use the Azure portal."
+  - content: "These is an existing storage account in Azure that stores unstructured data. The organizattion creates a new storage account. What is the best way to move the existing data to the new storage account?"
+    choices:
+    - content: "Use the Azure portal"
+      isCorrect: false
+      explanation: "That's incorrect. Can you think of another Azure tool more focused on storage?"
+    - content: "Use the Robocopy command-line tool"
+      isCorrect: false
+      explanation: "That's incorrect. It will be difficult to move data between cloud storage accounts."
+    - content: "Use the AzCopy command-line tool"
+      isCorrect: true
+      explanation: "That's correct. The key in this scenario is that you need to move data between storage accounts. The AzCopy tool can work with two different storage accounts. The other tools do not copy data between storage accounts. Alternatively, although not one of the answer choices, you can use Storage Explorer to copy data between storage accounts."
+  - content: "The finance team needs to transfer a series of large files to blob storage. It may take several hours to upload each file. Everyone is concerned if the  transfer fails, it will have to be restarted. Which tool is the most appropriate for this task?"
+    choices:
+    - content: "Azure CLI"
+      isCorrect: false
+      explanation: "That's incorrect. Can you think of another tool that might more appropriate for this task?"
+    - content: "AzCopy"
+      isCorrect: true
+      explanation: "That's correct. AzCopy is ideal for transferring large files as it can run in the background, and you can monitor the status AzCopy jobs."
+    - content: "Azure Storage Explorer"
+      isCorrect: false
+      explanation: "That's incorrect. Can you think of another tool that might more appropriate for this task?"
