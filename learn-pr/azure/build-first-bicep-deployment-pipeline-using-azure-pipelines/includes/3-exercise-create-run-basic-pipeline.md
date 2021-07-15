@@ -1,4 +1,4 @@
-You want to start automating the deployment for your toy company's website and as a first step you need to create a first pipeline in Azure DevOps.
+You want to start automating the deployment for your toy company's website. As a first step you need to create a basic pipeline in Azure DevOps.
 
 In this exercise, you'll:
 
@@ -7,70 +7,102 @@ In this exercise, you'll:
 > * Create a basic pipeline.
 > * Execute your basic pipeline.
 
-## Create an Azure DevOps organization, project and repository
+## Create a project in Azure DevOps
 
-To work with Azure DevOps service, you will first need to create an Azure DevOps organization. An organization can hold one or more Azure DevOps projects. To create a new Azure DevOps organization you will need the following steps: 
+1. In a browser, navigate to [dev.azure.com](https://dev.azure.com?azure-portal=true). Sign in or create a new account.
 
-<TODO: John, include Azure DevOps org and project creation>
+1. If you're creating a new account, follow the prompts to create an Azure DevOps organization. Azure DevOps then asks you to create a new project. Continue to the next step.
 
+   If you signed in to an existing Azure DevOps organization, select the **New project** button to create a new project.
 
-## Create a Repository
+   :::image type="content" source="../media/TODO-azure-devops-create-project.png" alt-text="Screenshot of the Azure DevOps interface showing the button to create a new project." border="true":::
 
-Since a pipeline is a YAML file, that is stored in your repository, you will also need to initialize this repository in Azure DevOps. 
+1. Enter the details of your new project:
 
-1. On the project page, select the **Repos** menu item.
+   - **Project name**: Use a meaningful but short name. Here, you use `toy-website`.
+   - **Visibility**: You can use Azure DevOps to create public and private repositories. Create a private repository, since your toy website's files should only be accessed by people inside your organization. You can grant access to others later.
 
-<TODO: Insert image>
+   After you're done, your project configuration should look like the following:
 
-2. Select the **Initialize** button at the bottom to initialize your repository with a README file. 
+   :::image type="content" source="../media/TODO-azure-devops-new-project-details.png" alt-text="Screenshot of the Azure DevOps interface showing the configuration for the project to create." border="true":::
 
-These steps will create a repository for you with one file, README.md in it. This repository will be used in the next step to commit your YAML pipeline file to. 
+1. Select **Create project**.
 
-## Create a starter YAML pipeline
+## Create a repository in Azure Repos
 
-Now that you have your organization, project and repository created, you will need to create a starter pipeline. 
+A pipeline is defined as a YAML file and is stored in your repository. Here, you'll initialize a repository for your Azure DevOps project.
 
-1. On the project page, select the **Pipelines** menu item. 
+1. On the project page that appears, select the **Repos** menu item.
 
-<TODO: Insert menu image>
+   :::image type="content" source="../media/TODO-azure-devops-repos-menu.png" alt-text="Screenshot of the Azure DevOps interface showing the menu, with the Repos item highlighted." border="true":::
 
-2. Select the **Create Pipeline** button.
+1. Select the **Initialize** button.
 
-<TODO: Insert pipeline image>
+   Azure Repos initializes your repository and adds a _README.md_ into it.
 
-3. Select the **Azure Repos Git (`YAML`)** option from the list.
+1. Make a note of the repository's URL. You'll use this shortly.
 
-<TODO: Insert image>
+   :::image type="content" source="../media/TODO-azure-devops-repo-details.png" alt-text="Screenshot of the Azure Repos interface showing the repository's details, with the repository's URL highlighted." border="true":::
 
-4. Select the **Repository** you just created from the list. This will be the same name as the name you used for your project. 
+## Clone the repository
 
-<TODO: Insert image>
+1. Open Visual Studio Code.
 
-5. Select **Starter pipeline** from the list. 
+1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
 
-<TODO: Insert image>
+1. Enter the following command to clone the repository to your local computer. Make sure you replace `YOUR_REPOSITORY_URL` with the URL that you saved earlier.
 
-6. Copy the following in the file: 
+   ```bash
+   git clone YOUR_REPOSITORY_URL
+   ```
 
-```YAML
-trigger: none
+1. Enter the following command to change to the repository folder and reopen Visual Studio Code with the folder loaded:
 
-pool:
-  vmImage: ubuntu-latest
+   ```bash
+   cd toy-website
+   code --reuse-window .
+   ```
 
-jobs:
-- job: 
-  steps:
-  - script: echo Hello, world!
-    displayName: 'Run a one-line script'
+   Visual Studio Code reloads. If you're prompted to trust the folder, select **Yes, I trust the authors**.
 
-  - script: |
-      echo Add other tasks to build, test, and deploy your project.
-      echo See https://aka.ms/yaml
-    displayName: 'Run a multi-line script'
-```
+## Create a YAML pipeline definition
 
-## Manually execute the pipeline and look at the results.
+Now that you have your organization, project and repository created, you're ready to create a basic pipeline.
+
+1. Open **Explorer** in Visual Studio Code.
+
+1. Add a new folder at the root of your current folder structure, and name it _deploy_.
+
+1. In the _deploy_ folder, create a new file named _pipeline.yml_.
+
+1. Copy the following into the file: 
+
+   ```yaml
+   trigger: none
+   
+   pool:
+     vmImage: ubuntu-latest
+   
+   jobs:
+   - job: 
+     steps:
+     - script: echo Hello world!
+       displayName: 'Placeholder step'
+   ```
+
+1. Commit and push the file to your Git repository by using the following commands:
+
+   ```bash
+   git add .
+   git commit -m "Add initial pipeline definition"
+   git push
+   ```
+
+<!-- TODO below -->
+
+## Trigger the pipeline
+
+1. In your browser, TODO
 
 1. Select the **Save and run** button. 
 

@@ -13,39 +13,6 @@ In this exercise, you'll:
 
 In this exercise will use the [Azure Pipelines extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines). Be sure to install this extension in Visual Studio Code.
 
-## Clone the repository
-
-As a first step we will make sure our Bicep templates are part of the repository. That way in the next steps we can reference them for deployment. To do this, we first need to clone the repository. 
-
-1. In Azure DevOps navigate to `Repos`.
-
-<TODO: Insert image>
-
-1. On the top right, click the `Clone` Button.
-
-<TODO: Insert image>
-
-1. In the pop-out, copy the clone URL to the clipboard.
-
-<TODO: Insert image>
-
-1. Open Visual Studio Code and open a `Terminal` window.
-
-<TODO: Insert image>
-
-1. Navigate to the folder you want to clone the repository to.  
-
-<TODO: Insert image>
-
-1. Clone the repository by using `git clone` and the repository url you copied. 
-
-```
-git clone repository-url-you-copied
-```
-
-1. The repository will be cloned now to the file location you chose. `Open` the project by opening this folder in Visual Studio Code.
-
-<TODO: Insert image>
 
 ## Add your bicep template to the repository
 
