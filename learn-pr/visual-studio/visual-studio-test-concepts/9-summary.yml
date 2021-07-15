@@ -6,8 +6,8 @@ metadata:
   title: summary
   description: Our goal was to help you understand the purpose, concepts, and schools of thought behind testing and how they can help you improve your code quality.
   ms.date: 6/28/2021
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
+  author: kendrahavens
+  ms.author: kehavens
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio
 durationInMinutes: 1

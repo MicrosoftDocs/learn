@@ -6,8 +6,8 @@ metadata:
   title: Knowledge check
   description: Check your knowledge on the different schools of testing including TDD, BDD, DRY, and Red/Green/Refactor.
   ms.date: 6/28/2021
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
+  author: kendrahavens
+  ms.author: kehavens
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio
 durationInMinutes: 1
@@ -25,7 +25,7 @@ quiz:
       explanation: "Not quite! Try again."
     - content: "Test Driven Development"
       isCorrect: true
-      explanation: "You are correct, TDD centers around the idea of writing tests first before the code and letting the tests drive development."
+      explanation: "You're correct. TDD centers around the idea of writing tests before the code and letting the tests drive development."
     - content: "Technical Data Development"
       isCorrect: false
       explanation: "Not quite! Try again."
@@ -33,13 +33,13 @@ quiz:
     choices:
     - content: "TDD"
       isCorrect: false
-      explanation: "While many may prefer TDD over other methods there is no empirical evidence indicating it is the best way for all humans to write code."
+      explanation: "While many may prefer TDD over other methods, there's no empirical evidence indicating it's the best way for all humans to write code."
     - content: "DRY"
       isCorrect: false
       explanation: "While many may find DRY a necessity, it may be difficult to avoid all repetition, especially for new coders. One certainly can't have perfection slow down getting a prototype working."
     - content: "It depends on the needs of the repo and the team!"
       isCorrect: true
-      explanation: "Every developer and team is different. While it's good to keep much of this guidance in mind, at the end of the day the only important thing is choosing what works for you."
+      explanation: "Every developer and team is different. While it's good to keep much of this guidance in mind, the important thing is choosing what works best for you."
     - content: "BDD"
       isCorrect: false
-      explanation: "While many may prefer BDD over other methods there is no empirical evidence indicating it is the best way for all humans to write code."
+      explanation: "While many may prefer BDD over other methods, there's no empirical evidence indicating it's the best way for all humans to write code."

@@ -1,13 +1,13 @@
-There is a lot of guidance out there when it comes to testing. We'll cover some of the common schools of thought that experienced developers often recommend. Learning these acronyms will help you keep up with popular concepts.
+There is much guidance out there when it comes to testing. We'll cover some of the common schools of thought that experienced developers often recommend. Learning these acronyms will help you keep up with popular concepts.
 
 * **Test Driven Development (TDD)** Let tests be the driving force behind your day-to-day coding.
 * **Behavior Driven Development (BDD)** Use behavior specification to formulate your tests.
-* **DRY (Don't Repeat Yourself)** Avoid any kind of code repetition and opt for re-usable code instead.
+* **DRY (Don't Repeat Yourself)** Avoid any kind of code repetition and opt for reusable code instead.
 * **Choose what works best for you!** These are just guidelines anyway! Each team and developer should choose what makes them the most productive.
 
 ## Test Driven Development (TDD)
 
-Test driven development, often referred to as TDD, is a method of directly coupling testing with every part of your day-to-day development. Developers who use TDD typically start developing by first writing a test that fails and then writing the code that makes the test pass. This means product code is more likely to get very high test coverage and the tests typically come first. Many developers find this useful to help them prioritize good architecture from the start of development and stay laser focused on each part of the functionality they need to implement. This school of thought advocates for testing not being an after-thought of development, but rather a driving force.
+Test driven development, or TDD, is a method of directly coupling testing with every part of your daily development. Developers who use TDD typically start developing by first writing a test that fails and then writing the code that makes the test pass. This approach means product code is more likely to get high test coverage and the tests typically come first. Many developers find this pattern useful to help them prioritize good architecture from the start of development and stay laser focused on each part of the functionality they need to implement. This school of thought advocates for testing not being an after-thought of development, but rather a driving force.
 
 For example, in the image below you can see the `AddTest` is written and failing while the `Add` method is still yet to be implemented. This test will fail until the method is implemented.
 ![image](../media/test-tdd.png)
@@ -25,7 +25,7 @@ BDD can use many different tools, but they all tend to focus on documenting diff
 
 ## DRY (Don't Repeat Yourself)
 
-Don't Repeat Yourself, also known as DRY, is another practice also referred to in testing. This is strong guidance to avoid repeating information and logic everywhere you can. You can do this by abstracting the information and remembering to honor one source of truth rather than maintaining multiple copies of the same data. For example, let's say you are writing unit tests for different constructors, but you are re-using many of the parameters for multiple tests. You could choose to write a test helper method that keeps all the parameter inputs in one place so they can more easily be called and modified for all of your tests. This is an example reducing duplication so you Don't Repeat Yourself.
+Don't Repeat Yourself, also known as DRY, is another practice also referred to in testing. This is strong guidance to avoid repeating information and logic everywhere you can. You can do this by abstracting the information and remembering to honor one source of truth rather than maintaining multiple copies of the same data. For example, let's say you are writing unit tests for different constructors, but you are reusing many of the parameters for multiple tests. You could choose to write a test helper method that keeps all the parameter inputs in one place so they can more easily be called and modified for all of your tests. This is an example reducing duplication so you Don't Repeat Yourself.
 
 ## Choose what works best for you
 

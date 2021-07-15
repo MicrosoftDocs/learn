@@ -4,10 +4,10 @@ title: Testing Schools of Thought
 metadata:
   unitType: learning-content
   title: testing-schools-of-thought
-  description: There are many different schools of thought when it comes to testing. Find a summary of Test Driven Development (TDD), Behavior Driven Development (BDD), Red/Green/Refactor, and Don't Repeat Yourself (DRY) as well as the advantages of each strategy.
+  description: There are many different schools of thought when it comes to testing. Find a summary of Test Driven Development (TDD), Behavior Driven Development (BDD), Red/Green/Refactor, and Don't Repeat Yourself (DRY) and the advantages of each strategy.
   ms.date: 6/28/2021
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
+  author: kendrahavens
+  ms.author: kehavens
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio
 durationInMinutes: 1
