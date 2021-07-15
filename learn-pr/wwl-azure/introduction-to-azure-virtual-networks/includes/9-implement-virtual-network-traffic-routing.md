@@ -148,9 +148,11 @@ You can view the effective routes for each network interface by using the Azure 
 ### View effective routes by using Azure PowerShell
 
 You can view the effective routes for a network interface with the Get-AzEffectiveRouteTable command. The following example gets the effective routes for a network interface named myVMNic1, that is in a resource group named myResourceGroup:
-```powershell    Get-AzEffectiveRouteTable `
+
+```powershellGet-AzEffectiveRouteTable `
 -NetworkInterfaceName myVMNic1 `
--ResourceGroupName myResourceGroup ` ```
+-ResourceGroupName myResourceGroup `
+```
 
 
 ### Resolve the routing issue
@@ -170,7 +172,6 @@ Steps you might take to resolve the routing problem might include:
 
 Forced tunneling lets you redirect or "force" all Internet-bound traffic back to your on-premises location via a Site-to-Site VPN tunnel for inspection and auditing. This is a critical security requirement for most enterprise IT policies. If you don't configure forced tunneling, Internet-bound traffic from your VMs in Azure always traverses from the Azure network infrastructure directly out to the Internet, without the option to allow you to inspect or audit the traffic. Unauthorized Internet access can potentially lead to information disclosure or other types of security breaches. Forced tunneling can be configured by using Azure PowerShell. It can't be configured using the Azure portal. 
 
-
 In the following example, the Frontend subnet is not force tunneled. The workloads in the Frontend subnet can continue to accept and respond to customer requests from the Internet directly. The Mid-tier and Backend subnets are forced tunneled. Any outbound connections from these two subnets to the Internet will be forced or redirected back to an on-premises site via one of the Site-to-site (S2S) VPN tunnels.
 
 >[!div class="mx-imgBorder"]
@@ -181,18 +182,18 @@ In the following example, the Frontend subnet is not force tunneled. The workloa
 Forced tunneling in Azure is configured using virtual network custom user-defined routes.
 
 - Each virtual network subnet has a built-in, system routing table. The system routing table has the following three groups of routes:
- - Local VNet routes: Route directly to the destination VMs in the same virtual network.
- - On-premises routes: Route to the Azure VPN gateway.
- - Default route: Route directly to the Internet. Packets destined to the private IP addresses not covered by the previous two routes are dropped.
+  - Local VNet routes: Route directly to the destination VMs in the same virtual network.
+  - On-premises routes: Route to the Azure VPN gateway.
+  - Default route: Route directly to the Internet. Packets destined to the private IP addresses not covered by the previous two routes are dropped.
 
 - To configure forced tunneling, you must:
- - Create a routing table.
- - Add a user-defined default route to the VPN Gateway.
- - Associate the routing table to the appropriate VNet subnet(s).
+  - Create a routing table.
+  - Add a user-defined default route to the VPN Gateway.
+  - Associate the routing table to the appropriate VNet subnet(s).
 
 - Forced tunneling must be associated with a VNet that has a route-based VPN gateway. 
- - You must set a default site connection among the cross-premises local sites connected to the virtual network. 
- - The on-premises VPN device must be configured using 0.0.0.0/0 as traffic selectors.
+  - You must set a default site connection among the cross-premises local sites connected to the virtual network. 
+  - The on-premises VPN device must be configured using 0.0.0.0/0 as traffic selectors.
 
 Using forced tunneling allows you to restrict and inspect Internet access from your VMs and cloud services in Azure, while continuing to enable your multi-tier service architecture the Internet access it requires. 
 
