@@ -1,8 +1,8 @@
 > [!NOTE] 
-> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://Azure.com/free.
 
 
-Get started with Azure Private Link by using a Private Endpoint to connect securely to an Azure web app. There are many ways to create Endpoints including Portal, CLI, PowerShell etc. 
+Get started with Azure Private Link by using a Private Endpoint to connect securely to an Azure web app. There are many ways to create Endpoints including portal, CLI, PowerShell etc. 
 
 You'll create a Private Endpoint for an Azure web app and deploy a virtual machine to test the private connection.
 
@@ -14,7 +14,7 @@ Private Endpoints can be created for different kinds of Azure services, such as 
 
 - An Azure Web App with a PremiumV2-tier or higher app service plan deployed in your Azure subscription.
 
-If you choose to install and use PowerShell locally, this example requires the Azure PowerShell module version 5.4.1 or later. Run ```Get-Module -ListAvailable Az``` to find the installed version. If you need to upgrade, see [Install Azure PowerShell module](/azure/app-service/quickstart-dotnetcore). If you're running PowerShell locally, you also need to run ```Connect-AzAccount``` to create a connection with Azure.
+If you choose to install and use PowerShell locally, this example requires the Azure PowerShell module version 5.4.1 or later. Run ```Get-Module -ListAvailable Az``` to find the installed version. If you need to upgrade, see [Install Azure PowerShell module](/Azure/app-service/quickstart-dotnetcore). If you're running PowerShell locally, you also need to run ```Connect-AzAccount``` to create a connection with Azure.
 
 In this exercise, you will:
 
@@ -122,7 +122,7 @@ New-AzBastion @parameters3
 
 In this section, you'll create a virtual machine that will be used to test the Private Endpoint.
 
-- Create the virtual machine with:
+Create the virtual machine with:
 
 - Get-Credential
 
@@ -299,7 +299,7 @@ $parameters1 = @{
 
  ResourceGroupName = 'CreatePrivateEndpointQS-rg'
 
- Name = 'privatelink.azurewebsites.net'
+ Name = 'privatelink.Azurewebsites.net'
 
 }
 
@@ -311,7 +311,7 @@ $parameters2 = @{
 
  ResourceGroupName = 'CreatePrivateEndpointQS-rg'
 
- ZoneName = 'privatelink.azurewebsites.net'
+ ZoneName = 'privatelink.Azurewebsites.net'
 
  Name = 'myLink'
 
@@ -325,7 +325,7 @@ $link = New-AzPrivateDnsVirtualNetworkLink @parameters2
 
 $parameters3 = @{
 
- Name = 'privatelink.azurewebsites.net'
+ Name = 'privatelink.Azurewebsites.net'
 
  PrivateDnsZoneId = $zone.ResourceId
 
@@ -355,23 +355,23 @@ New-AzPrivateDnsZoneGroup @parameters4
 
 In this section, you'll use the virtual machine you created in the previous step to connect to the SQL server across the Private Endpoint.
 
-- Sign in to the [Azure portal](https://portal.azure.com/)
+1. Sign in to the [Azure portal](https://portal.Azure.com/)
 
-- Select **Resource groups** in the left-hand navigation pane.
+2. Select **Resource groups** in the left-hand navigation pane.
 
-- Select **CreatePrivateEndpointQS-rg**.
+3. Select **CreatePrivateEndpointQS-rg**.
 
-- Select **myVM**.
+4. Select **myVM**.
 
-- On the overview page for **myVM**, select **Connect** then **Bastion**.
+5. On the overview page for **myVM**, select **Connect** then **Bastion**.
 
-- Select the blue **Use Bastion** button.
+6. Select the blue **Use Bastion** button.
 
-- Enter the username and password that you entered during the virtual machine creation.
+7. Enter the username and password that you entered during the virtual machine creation.
 
-- Open Windows PowerShell on the server after you connect.
+8. Open Windows PowerShell on the server after you connect.
 
-- Enter nslookup `<your- webapp-name>.azurewebsites.net`. Replace `<your-webapp-name>` with the name of the web app you created in the previous steps. You'll receive a message similar to what is displayed below:
+9. Enter nslookup `<your- webapp-name>.Azurewebsites.net`. Replace `<your-webapp-name>` with the name of the web app you created in the previous steps. You'll receive a message similar to what is displayed below:
 
   ```| Azure PowerShell |
   Server: UnKnown
@@ -380,21 +380,23 @@ In this section, you'll use the virtual machine you created in the previous step
   
   Non-authoritative answer:
   
-  Name: mywebapp8675.privatelink.azurewebsites.net
+  Name: mywebapp8675.privatelink.Azurewebsites.net
   
   Address: 10.0.0.5
   
-  Aliases: mywebapp8675.azurewebsites.net  
-
+  Aliases: mywebapp8675.Azurewebsites.net  
+```
 
 A private IP address of **10.0.0.5** is returned for the web app name. This address is in the subnet of the virtual network you created previously.
 
-- In the bastion connection to **myVM**, open Internet Explorer.
-- Enter the url of your web app, **https://&lt;your-webapp-name&gt;.azurewebsites.net**.
-- You'll receive the default web app page if your application hasn't been deployed:
+10. In the bastion connection to **myVM**, open Internet Explorer.
+
+11. Enter the url of your web app, **https://&lt;your-webapp-name&gt;.Azurewebsites.net**.
+  - You'll receive the default web app page if your application hasn't been deployed:
    > [!div class="mx-imgBorder"]
    > ![screen shot of page in Azure indicating an app service is up and running](../media/web-app-default-page.png)
-- Close the connection to **myVM**.
+
+12. Close the connection to **myVM**.
 
 ## Task 7: Clean up resources
 

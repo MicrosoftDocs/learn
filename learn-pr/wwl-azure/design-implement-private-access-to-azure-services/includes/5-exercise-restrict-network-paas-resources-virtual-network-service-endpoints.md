@@ -1,5 +1,5 @@
 > [!NOTE] 
-> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://azure.com/free.
+> To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at https://Azure.com/free.
 
 
 
@@ -21,7 +21,7 @@ In this exercise, you will:
 
 ## Task 1: Create a virtual network
 
-1. On the Azure Portal home page, select **+ Create a resource**.
+1. On the Azure portal home page, select **+ Create a resource**.
 
 2. Search for virtual network and then select **Virtual network** from the results.
 
@@ -50,7 +50,7 @@ In this exercise, you will:
 
 6. Select the **Security** tab and enter the following values:
    > [!div class="mx-imgBorder"]
-   > ![Network security settings](../media/ create-virtual-network-security.png)
+   > ![Network security settings](../media/create-virtual-network-security.png)
 
    | **Setting**     | **Value** |
    |:-:|:-:|
@@ -368,7 +368,7 @@ The VM takes a few minutes to deploy. Do not continue to the next step until it 
 
 > [!WARNING]
 >
->  Prior to continuing you should remove all resources used for this lab. To do this in the Azure Portal click Resource groups. Select any resources groups you have created. On the resource group blade click Delete Resource group, enter the Resource Group Name and click Delete. Repeat the process for any additional Resource Groups you may have created. Failure to do this may cause issues with other labs.
+>  Prior to continuing you should remove all resources used for this lab. To do this in the Azure portal click Resource groups. Select any resources groups you have created. On the resource group blade click Delete Resource group, enter the Resource Group Name and click Delete. Repeat the process for any additional Resource Groups you may have created. Failure to do this may cause issues with other labs.
 
 Results: You have now completed this lab.
 

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-implement-private-access-to-azure-services.exercise-create-azure-private-endpoint-using-azure-powershell
-title: Exercise - create an Azure private endpoint using Azure PowerShell
+title: 'Exercise: Create an Azure private endpoint using Azure PowerShell'
 metadata:
-  title: Exercise - create an Azure private endpoint using Azure PowerShell
-  description: "Exercise - create an Azure private endpoint using Azure PowerShell"
-  ms.date: 07/14/2021
+  title: 'Exercise: Create an Azure private endpoint using Azure PowerShell'
+  description: "Exercise: Create an Azure private endpoint using Azure PowerShell"
+  ms.date: 07/15/2021
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
