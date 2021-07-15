@@ -5,7 +5,11 @@ Virtual network peering enables you to seamlessly connect two Azure virtual netw
 - **Regional VNet peering** connects Azure virtual networks in the same region.
 
 - **Global VNet peering** connects Azure virtual networks in different regions. When creating a global peering, the peered virtual networks can exist in any Azure public cloud region or China cloud regions, but not in Government cloud regions. You can only peer virtual networks in the same region in Azure Government cloud regions.
-   >[!div class="mx-imgBorder"]   >![Illustration showing VNet1 in Region 1, and VNet2 and VNet3 in Region 2. VNet2 and VNet3 are connected with regional VNet peering. VNet1 and VNet2 are connected with a global VNet peering](../media/global-vnet-peering.png)
+
+
+
+> [!div class="mx-imgBorder"]
+> ![Illustration showing VNet1 in Region 1, and VNet2 and VNet3 in Region 2. VNet2 and VNet3 are connected with regional VNet peering. VNet1 and VNet2 are connected with a global VNet peering](../media/global-vnet-peering.png)
 
 The benefits of using virtual network peering, whether local or global, include:
 
