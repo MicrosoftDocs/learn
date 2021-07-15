@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-app-services.secure-app-service
-title: Secure and app service
+title: Secure an app service
 metadata:
-  title: Secure and app service
-  description: "Secure and app service"
+  title: Secure an app service
+  description: "Secure an app service"
   ms.date: 07/15/2021
   author: wwlpublish
   ms.topic: interactive-tutorial
