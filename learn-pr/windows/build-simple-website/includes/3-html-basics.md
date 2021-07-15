@@ -80,7 +80,7 @@ Let's start filling in the *body* element now.
 
     ```html
     <!DOCTYPE html>
-    <html lang="en" dir="ltr">
+    <html lang="en">
       <head>
         <meta charset="utf-8">
         <title>Simple website</title>
