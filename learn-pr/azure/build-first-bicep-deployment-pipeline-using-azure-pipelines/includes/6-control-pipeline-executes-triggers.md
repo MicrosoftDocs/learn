@@ -8,25 +8,58 @@ If you don't use an automatic trigger, someone might make a change to a Bicep fi
 
 When you configure your pipeline to run every time you update your files, the moment your changes are pushed, your pipeline will start running. This gives you instant feedback on the validity of your change and ensures that everything is always up to date.
 
-## Types of pipeline triggers
+## Branch triggers
 
-Until now, you've been using a manual pipeline trigger:
-
-```yaml
-trigger: none
-```
-
-> [!NOTE]
-> You can always manually trigger a pipeline, even if you've configured another trigger type.
-
-Another common trigger is a _branch trigger_, which sometimes called a _continuous integration trigger_ or _CI trigger_. When you use this trigger, every time you make a change to a specified branch, the pipeline is run. If you commit and push a change to a different branch, the pipeline ignores it. It's common to use this trigger against your **main**  branch, like this:
+A common trigger is a _branch trigger_, which sometimes called a _continuous integration trigger_ or _CI trigger_. When you use this trigger, every time you make a change to a specified branch, the pipeline is run. If you commit and push a change to a different branch, the pipeline ignores it. It's common to use this trigger against your **main**  branch, like this:
 
 ```yaml
 trigger: 
 - main
 ```
 
-<!-- TODO PRs -->
+### Trigger when multiple branches change
+
+You can customize the branches that cause your pipeline to trigger. For example, suppose you create _release branches_ that contain the code you'll deploy for a specific release of your project. You use branch names like **release/v1**, **release/v2**, and so forth. You want to run your pipeline any time code changes on a branch that begins with the name **release/**. You can use the `include` property in conjunction with a `*` wildcard to express this:
+
+```yaml
+trigger:
+  branches:
+    include:
+    - main
+    - release/*
+```
+
+You can also exclude specific branches, too. Suppose you're collaborating with team members on your project. Your colleagues create _feature branches_ to try out their ideas in Bicep files. All of these feature branches are given names like **feature/add-database**, **feature/improve-performance**, and so forth. You don't want to run the pipeline automatically when changes are made to these branches. By using the `exclude` property, you ensure the pipeline isn't automatically triggered for changes to feature branches:
+
+```yaml
+trigger:
+  branches:
+    include:
+    - main
+    - release/*
+    exclude:
+    - feature/*
+```
+
+### Path filters
+
+Sometimes, you have files in your repository that don't relate to your deployment. For example, in your repository you might have a _deploy_ folder that contains your Bicep code, and a separate _docs_ folder that contains your documentation files. You want to trigger your pipeline when anyone makes a change to any of the Bicep files in the _deploy_ folder, but you don't want to trigger the pipeline if someone only changes a documentation file. To configure this, you can use a _path filter_:
+
+```YAML
+trigger:
+  branches:
+    include:
+    - main
+  paths:
+    exclude:
+    - docs
+    include:
+    - deploy
+```
+
+If someone commits a change that only updates a documentation file, the pipeline won't run. But if they change a Bicep file, or even if they change a Bicep file in addition to a documentation file, then the trigger will run the pipeline.
+
+## Schedule your pipeline to run automatically
 
 You can also run your pipeline on a schedule. For example, you might run a nightly release of your Bicep code, or automatically deploy a test environment every morning. Use the `schedule` keyword instead of `trigger`, and specify the frequency by using a cron expression:
 
@@ -44,7 +77,9 @@ schedules:
 
 You can also specify the branch of your repository that should be used when the schedule starts. When the pipeline begins, it will use the most recent version of the code from that branch.
 
-You can combine triggers, like this:
+## Combine triggers
+
+You can combine triggers, like in this example:
 
 ```yaml
 trigger: 
@@ -62,37 +97,3 @@ When you specify a branch trigger and a scheduled trigger in the same pipeline, 
 
 > [!TIP]
 > It's a good practice to specify the triggers for each pipeline. If you don't, then by default your pipeline will automatically run whenever any files change on any branch, which isn't often what you want.
-
-<!-- TODO here down -->
-
-## Filtering pipeline execution through triggers
-
-You might want more fine-grained control over when your pipeline runs. Suppose you have a situation where collaborators on your project create feature branches where they try things out in Bicep template files. These deployments also need to happen, but to their own personal Azure subscription and not to your shared development environment. In that case you may want to exclude these feature branches from triggering your pipeline. For doing this you can use the exclude statement: 
-
-```YAML
-trigger:
-  branches:
-    include:
-    - main
-    - releases/*
-    exclude:
-    - feature/*
-```
-
-In the above example the pipeline will trigger for every change that is made in the main branch, but also for every change that happens in any of the release branches. In this case all release branches use a naming convention, so releases/v1 will trigger a run as will releases/v2.4. If someone uses releases-v5 the pipeline will not be triggered. 
-On top of that any feature branch will not trigger a pipeline run in the above example. 
-
-Apart from using branches to determine when your pipeline triggers, you can also make use of path filters. This is handy when for certain changes you do want your pipeline to trigger, but not for other changes. Suppose that in your current repository you have your Bicep templates in a deploy folder and you also have a docs folder that holds documentation files. You want to trigger your pipeline when anyone makes a change to any of the Bicep templates in the deploy folder, however a change to one of the files in the docs folder does not need to trigger your pipeline. To configure this you can use a path filter: 
-
-```YAML
-# specific path build
-trigger:
-  branches:
-    include:
-    - main
-  paths:
-    exclude:
-    - docs
-    include:
-    - deploy
-```

@@ -16,7 +16,7 @@ You can also configure your service connection so that it's only used by certain
 One of the most useful built-in tasks for Azure Pipelines is the Azure CLI task. You use this task to execute one or more Azure CLI commands, including deploying a Bicep file.
 
 > [!NOTE] 
-> Azure Pipelines includes a task named _ARM Template Deployment_. This can be used to deploy JSON ARM templates. However, it doesn't currently work with Bicep files.
+> Azure Pipelines includes a task named _Azure Resource Group Deployment_. This can be used to deploy JSON ARM templates. However, it doesn't currently work with Bicep files.
 
 Here's an example of how you can configure a step to use the Azure CLI task:
 
