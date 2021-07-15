@@ -24,7 +24,7 @@ summary: |
   ### [Option 2: The _Understand data science for machine learning_ learning path](/learn/paths/understand-machine-learning)
   If you are looking to understand how machine learning works and don't have much mathematical background then this path is for you. It makes no assumptions about previous education (other than a very light familiarity with coding concepts) and teaches with code, metaphor, and visual that give you the ah ha moment. It's hands-on, but focuses more on understanding fundamentals and less on the power of the tools and libraries available.
 
-  ## Option 3: The _Create machine learning models_ learning path
+  ## ✔ Option 3: The _Create machine learning models_ learning path
   If you already have some idea what machine learning is about or you have a strong mathematical background you may best enjoy jumping right in to the _Create Machine Learning Models_ learning path. These modules teach some machine learning concepts, but move fast so they can get to the power of using tools like scikit-learn, TensorFlow, and PyTorch. This is also the best learning path for you if you're looking for just enough familiarity to understand machine learning examples for products like Azure ML or Azure Databricks
 
   ✔ You are currently on this path, scroll down to begin.
