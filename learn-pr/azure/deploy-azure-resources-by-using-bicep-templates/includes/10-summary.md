@@ -12,5 +12,6 @@ Now, when you want to prepare your resources for the next product launch, you ca
 
 ## References
 
+- [Bicep documentation](/azure/azure-resource-manager/bicep)
 - [Template reference for each Azure resource type](/azure/templates/)
 - [Template functions](/azure/azure-resource-manager/templates/template-functions)

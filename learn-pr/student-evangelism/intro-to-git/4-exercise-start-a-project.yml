@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Start a project
   description: Add a file to Git and make your first commit.
   ms.date: 03/05/2021
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-git
 durationInMinutes: 10

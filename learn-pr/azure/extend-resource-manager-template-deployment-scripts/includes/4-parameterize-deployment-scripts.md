@@ -17,7 +17,7 @@ The first option for passing data into the `deploymentScripts` resources is to c
 
 ::: zone pivot="bicepcli,biceppowershell"
 
-:::code language="plaintext" source="code/4-example-parameters-template.bicep" range="11-12,23-26,29-34" highlight="2,5-6" :::
+:::code language="bicep" source="code/4-example-parameters-template.bicep" range="11-12,23-26,29-34" highlight="2,5-6" :::
 
 ::: zone-end
 
@@ -33,7 +33,7 @@ Your second option is to create environment variables that your scripts can acce
 
 ::: zone pivot="bicepcli,biceppowershell"
 
-:::code language="plaintext" source="code/4-example-parameters-template.bicep" range="11-17,22-27,29-34" highlight="3-8,13" :::
+:::code language="bicep" source="code/4-example-parameters-template.bicep" range="11-17,22-27,29-34" highlight="3-8,13" :::
 
 ::: zone-end
 
@@ -47,7 +47,7 @@ One benefit of using environment variables is that you can use [the `secureValue
 
 ::: zone pivot="bicepcli,biceppowershell"
 
-:::code language="plaintext" source="code/4-example-parameters-template.bicep" range="11-34" highlight="3,8-11,18" :::
+:::code language="bicep" source="code/4-example-parameters-template.bicep" range="11-34" highlight="3,8-11,18" :::
 
 ::: zone-end
 

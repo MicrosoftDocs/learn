@@ -11,8 +11,6 @@ During the process, you'll:
 > * Update the template to include variables for the SKU of each resource.
 > * Test the deployment to ensure that the template is valid.
 
-This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
-
 ## Add the location and resource name parameters
 
 1. In the *main.bicep* file in Visual Studio Code, add the following code to the top of the file:
@@ -25,7 +23,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 1. Find the places within the resource definitions where the `location` and `name` properties are set, and update them to use the parameter values. After you're finished, the resource definitions within your Bicep file should look like this:
 
-   :::code language="plaintext" source="code/6-template-1.bicep" range="7-35" highlight="2-3, 14-15, 23-24":::
+   :::code language="bicep" source="code/6-template-1.bicep" range="7-35" highlight="2-3, 14-15, 23-24":::
 
 1. Save the changes to the file.
 
@@ -45,7 +43,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 1. Find the places within the resource definitions where the  `sku` properties are set, and update them to use the parameter values. After you're finished, the resource definitions in your Bicep file should look like this:
 
-   :::code language="plaintext" source="code/6-template-2.bicep" range="16-44" highlight="5, 17-18":::
+   :::code language="bicep" source="code/6-template-2.bicep" range="16-44" highlight="5, 17-18":::
 
    Notice that you haven't parameterized everything. You've set some properties right in the resource definitions where you know these aren't going to change between deployments.
 

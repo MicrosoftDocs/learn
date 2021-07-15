@@ -14,7 +14,7 @@ The simplest explanation for Azure Backup is that it backs up data, machine stat
 
 For on-premises Windows machines, you can back up directly to Azure with the Azure Backup Microsoft Azure Recovery Services (MARS) agent. Alternatively, you can back up these Windows machines to a backup server, perhaps a System Center Data Protection Manager (DPM), or Microsoft Azure Backup Server (MABS). You can then back up that server to a Recovery Services vault in Azure.
 
-If you are using Azure VMs, you can back up these Azure VMs directly. Azure Backup installs a backup extension to the Azure VM agent that is running on the VM, which allows backing up the entire VM. If you only want to back up the files and folders on the VM, you can do by running the MARS agent.
+If you are using Azure VMs, you can back up these Azure VMs directly. Azure Backup installs a backup extension to the Azure VM agent that is running on the VM, which allows backing up the entire VM. If you only want to back up the files and folders on the VM, you can do so by running the MARS agent.
 
 Azure Backup stores backed-up data in vaults - Recovery Services vaults and Backup vaults. A vault is an online-storage entity in Azure that's used to hold data, such as backup copies, recovery points, and backup policies.
 
@@ -38,10 +38,6 @@ A backup extension, specific to each workload, is installed on the source VM or 
 * stream backup for databases like SQL or HANA running in VMs.
 
 The backup data is eventually transferred to the data plane (Azure Backup managed storage) via secure Azure networks (Network Security Groups (NSG), Firewalls, or more sophisticated private end points).
-
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
 
 ## Data Plane- Access Tiers
 There are three access tiers where the backups could be stored:

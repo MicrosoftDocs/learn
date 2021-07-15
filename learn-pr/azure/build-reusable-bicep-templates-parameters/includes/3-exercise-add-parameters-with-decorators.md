@@ -1,13 +1,15 @@
-[!INCLUDE [Sandbox explanation](../../includes/bicep-sandbox-subscription.md)]
+[!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
-As part of the HR application migration, you're creating a Bicep template to deploy Azure resources. In this exercise, you'll create an Azure App Service plan and App Service app. You'll apply decorators to each parameter to ensure that they'll always contain the values you expect. During the process, you'll:
+As part of the HR application migration, you're creating a Bicep template to deploy Azure resources. In this exercise, you'll create an Azure App Service plan and App Service app. You'll apply decorators to each parameter to ensure that they'll always contain the values you expect. 
+
+During the process, you'll:
 
 > [!div class="checklist"]
 > * Create a Bicep file that includes parameters and variables.
 > * Add decorators to the parameters.
 > * Test the deployment to ensure that the template is valid.
 
-This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
+[!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
 
 ## Create a Bicep template with parameters
 
@@ -15,7 +17,9 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 1. Create a new file called *main.bicep*.
 
-1. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select **File** > **Save**, or use the <kbd>Ctrl+S</kbd> keyboard shortcut (<kbd>⌘+S</kbd> on macOS). Make sure you remember where you save the file. For example, you might want to create a *scripts* folder to save it in.
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
+ 
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 
 1. Add the following content into the file. You'll deploy the template soon. Enter the content yourself instead of copying and pasting so that you can see how the tooling helps you to write your Bicep files.
 
@@ -40,7 +44,7 @@ This exercise uses [Bicep for Visual Studio Code](https://marketplace.visualstud
 
 1. In the *main.bicep* file in Visual Studio Code, add the `@description` decorator directly above every parameter that you created in the previous task. The parameters should look similar to this example:
 
-   :::code language="plaintext" source="code/3-template.bicep" range="1,7-9,12-14,17-26" highlight="1,4,7,10,16" :::
+   :::code language="bicep" source="code/3-template.bicep" range="1,7-9,12-14,17-26" highlight="1,4,7,10,16" :::
 
 1. Save the changes to the file.
 
@@ -50,7 +54,7 @@ Your toy company will deploy the HR application to three environments: dev, test
 
 1. In the *main.bicep* file in Visual Studio Code, find the `environmentName` parameter. Insert an `@allowed` decorator underneath its `@description` decorator. After you're finished, the parameter should look like this example:
 
-   :::code language="plaintext" source="code/3-template.bicep" range="1-7" highlight="2-6" :::
+   :::code language="bicep" source="code/3-template.bicep" range="1-7" highlight="2-6" :::
 
    Notice that you're limiting the parameter value for `environmentName` parameter to only `dev`, `test`, and `prod`. If more environments are added in the future, you'll need to update this list.
 
@@ -62,7 +66,7 @@ Your `solutionName` parameter is used to generate the names of resources. You wa
 
 1. In the *main.bicep* file in Visual Studio Code, find the `solutionName` parameter. Add `@minLength` and `@maxLength` decorators underneath the `@description` decorator. After you're finished, the parameter should look like this example:
 
-   :::code language="plaintext" source="code/3-template.bicep" range="9-12" highlight="2-3" :::
+   :::code language="bicep" source="code/3-template.bicep" range="9-12" highlight="2-3" :::
 
 1. Save the changes to the file.
 
@@ -72,7 +76,7 @@ Next, you'll ensure that the `appServicePlanInstanceCount` parameter only allows
 
 1. In the *main.bicep* file in Visual Studio Code, find the `appServicePlanInstanceCount` parameter. Add `@minValue` and `@maxValue` decorators underneath the `@description` decorator. After you're finished, the parameter should look like this example:
 
-   :::code language="plaintext" source="code/3-template.bicep" range="14-17" highlight="2-3" :::
+   :::code language="bicep" source="code/3-template.bicep" range="14-17" highlight="2-3" :::
 
 1. Save the changes to the file.
 
@@ -88,7 +92,7 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 ::: zone pivot="cli"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/bicep-exercise-deploy-cli.md)]
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/azure-template-bicep-exercise-sandbox-deploy-cli.md)]
 
 ### Deploy the template to Azure by using the Azure CLI
 
@@ -104,7 +108,7 @@ You'll see ```Running...``` in the terminal.
 
 ::: zone pivot="powershell"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/bicep-exercise-deploy-powershell.md)]
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/azure-template-bicep-exercise-sandbox-deploy-powershell.md)]
 
 ### Deploy the template to Azure by using PowerShell
 

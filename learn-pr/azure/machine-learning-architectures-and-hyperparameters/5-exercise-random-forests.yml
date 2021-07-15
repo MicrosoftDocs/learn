@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.machine-learning-architectures-and-hyperparameters.exercise-random-forests
+title: Exercise - Selecting random forest architectures
+metadata:
+  title: Exercise - Selecting random forest architectures
+  description: Exercise about selecting random forest architectures
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+sandbox: true
+notebook: notebooks/7-5-exercise-random-forests.ipynb

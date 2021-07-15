@@ -1,10 +1,10 @@
-[!INCLUDE [Sandbox explanation](../../includes/bicep-sandbox-subscription.md)]
+[!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
 You need to deploy your toy company's resources to a variety of environments. And you want to use parameters and conditions to control what gets deployed to each environment. 
 
 In this exercise, you create an Azure SQL logical server and a database. You then add auditing settings to ensure that auditing is enabled, but you want it enabled only when you're deploying to a production environment. For auditing purposes, you need to have a storage account, which you also deploy only when you're deploying resources to a production environment.
 
-During the creation process, you'll:
+During the process, you'll:
 
 > [!div class="checklist"]
 > * Create a Bicep file that defines a logical server with a database.
@@ -12,7 +12,7 @@ During the creation process, you'll:
 > * Set up an infrastructure for your development environment, and then verify the result.
 > * Redeploy your infrastructure against your production environment, and then look at the changes.
 
-This exercise uses [the Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep). Be sure to install this extension in Visual Studio Code.
+[!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
 
 ## Create a Bicep template with a logical server and database
 
@@ -20,9 +20,9 @@ This exercise uses [the Bicep extension for Visual Studio Code](https://marketpl
 
 1. Create a new file called *main.bicep*.
 
-1. Save the empty file so that Visual Studio Code loads the Bicep tooling. You can select **File** > **Save** or <kbd>Ctrl+S</kbd> (<kbd>⌘+S</kbd> on macOS). 
+1. Save the empty file so that Visual Studio Code loads the Bicep tooling. 
  
-   Remember where you've saved the file. For example, you might want to create a *scripts* folder to save it to.
+   You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 
 1. To define a logical server and database, add the following content to the file, along with the parameters and variables that these resources need. Enter the content yourself instead of copying and pasting so that you can see how the tooling helps you to write your Bicep files.
 
@@ -74,7 +74,7 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 ::: zone pivot="cli"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/bicep-exercise-deploy-cli.md)]
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - CLI](../../includes/azure-template-bicep-exercise-sandbox-deploy-cli.md)]
 
 ### Deploy the template to Azure by using the Azure CLI
 
@@ -88,7 +88,7 @@ az deployment group create --template-file main.bicep --parameters location=west
 
 ::: zone pivot="powershell"
 
-[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/bicep-exercise-deploy-powershell.md)]
+[!INCLUDE [Bootstrapping instructions for first Bicep exercise - PowerShell](../../includes/azure-template-bicep-exercise-sandbox-deploy-powershell.md)]
 
 ### Deploy the template to Azure by using Azure PowerShell
 

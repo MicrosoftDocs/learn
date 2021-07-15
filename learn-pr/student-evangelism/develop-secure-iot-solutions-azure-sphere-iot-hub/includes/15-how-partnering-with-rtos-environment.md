@@ -6,7 +6,7 @@ In this unit, you will learn how to read data from the upgraded lab sensor and s
 
 The following describes how an Azure Sphere high-level application can read data from the upgraded lab sensor running on one of the Azure Sphere real-time cores. The high-level application will then send this data securely to IoT Hub.
 
-![Inter-core communications architecture](../media/intercore-coms.png)
+![Inter-core communications architecture.](../media/intercore-coms.png)
 
 To recap the solution architecture introduced in the Azure RTOS lab.
 

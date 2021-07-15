@@ -3,10 +3,11 @@ uid: learn.languages.python-introduction.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: Learn about one of the most popular programming languages and begin your software development journey.
-  ms.date: 12/04/2019
+  description: Learn about one of the most popular programming languages and begin
+    your software development journey.
+  ms.date: 07/02/2021
   author: bobtabor-msft
-  ms.author: rotabor
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

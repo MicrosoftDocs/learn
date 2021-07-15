@@ -5,9 +5,10 @@ metadata:
   title: Apply cluster upgrades and security patches with Azure Kubernetes Service
   description: |
     Apply the latests version upgrades and patches to your Azure Kubernetes Service clusters. 
-  ms.date: 06/11/2021  
+  ms.date: 07/15/2021
   author: microsoftmichelle 
   ms.author: mixie
+  ms.topic: interactive-tutorial
 title: Apply cluster upgrades and security patches with Azure Kubernetes Service  
 summary: Learn more about why you need to upgrade your existing Azure Kubernetes Service clusters.
 abstract: |
@@ -18,7 +19,7 @@ abstract: |
 prerequisites: |  
   - A basic understanding of containers.
   - A basic understanding of Azure Kubernetes Service. 
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - beginner
 roles: 

@@ -10,11 +10,11 @@ Azure Functions can be published to Azure from inside Visual Studio.
 
 1. Right-click on the `ImHere.Functions` app in the solution explorer and select *Publish...*.
 
-    ![Right-click publish on the Functions app](../media/8-right-click-publish.png)
+    ![Right-click publish on the Functions app.](../media/8-right-click-publish.png)
 
 1. From the **Pick a publish target** dialog, select *Azure Function App*, and for **Azure App Service**, select *Create New*. Click **Publish**.
 
-    ![Creating a new Azure App Service to publish to](../media/8-pick-publish-target.png)
+    ![Creating a new Azure App Service to publish to.](../media/8-pick-publish-target.png)
 
 1. Sign in to your Azure account.
 
@@ -24,10 +24,10 @@ Azure Functions can be published to Azure from inside Visual Studio.
 
 1. Click **Create** to provision all the resources on Azure and publish your Azure Functions app.
 
-    ![Create the App Service](../media/8-create-app-service.png)
+    ![Create the App Service.](../media/8-create-app-service.png)
 
 1. You may be asked if you want to update the functions version on Azure. If this dialog appears, select **Yes** to ensure your function app is published with the latest Azure Functions runtime version.
-    ![The update Azure Functions dialog](../media/8-update-functions-on-azure.png)
+    ![The update Azure Functions dialog.](../media/8-update-functions-on-azure.png)
 
 Provisioning will take a couple of minutes to complete. The following resources will be provisioned:
 
@@ -43,11 +43,11 @@ When the Azure Functions was running locally, it was using Twilio credentials th
 
 1. From the Publish tab, click the **Manage Application Settings** option.
 
-    ![The Manage Application Settings option](../media/8-application-settings-option.png)
+    ![The Manage Application Settings option.](../media/8-application-settings-option.png)
 
 1. The **Application Settings** dialog will show application settings with both a local and remote value - the local coming from your `local.settings.json` file, and the remote value is the one your function will use when it is hosted in Azure. Copy the values from the *Local* to the *Remote* boxes for the **TwilioAccountSid** and **TwilioAuthToken** values.
 
-    ![Setting the Twilio credentials in the application settings](../media/8-set-creds-in-app-settings.png)
+    ![Setting the Twilio credentials in the application settings.](../media/8-set-creds-in-app-settings.png)
 
 1. Click **OK**. This will publish the values to the Azure Functions app.
 
@@ -55,7 +55,7 @@ When the Azure Functions was running locally, it was using Twilio credentials th
 
 1. From the Publish tab, copy the **Site URL** using the **Copy to clipboard** button next to the value.
 
-    ![Copy the site URL from the publish tab](../media/8-copy-site-url.png)
+    ![Copy the site URL from the publish tab.](../media/8-copy-site-url.png)
 
 1. Open the `MainViewModel` from the `ImHere` project.
 

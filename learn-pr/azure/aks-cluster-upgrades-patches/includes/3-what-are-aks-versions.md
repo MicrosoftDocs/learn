@@ -28,7 +28,7 @@ There are several ways Azure Kubernetes Service will announce cluster version up
 #### AKS Release Calendar 
  :::image type="content" source="../media/3-aks-release-calendar.png" border="false" alt-text="An image that shows Azure Kubernetes Services announcing upcoming Kubernetes version releases and deprecation through the AKS Release Calendar.":::
 
-Azure Kubernetes Service announces the upcoming Kubernetes versions it will support and deprecate through the [AKS Release Calendar](https://docs.microsoft.com/azure/aks/supported-kubernetes-versions#aks-kubernetes-release-calendar) with details about the new releases on [GitHub](https://github.com/Azure/AKS/releases) to keep AKS users informed and up to date.
+Azure Kubernetes Service announces the upcoming Kubernetes versions it will support and deprecate through the [AKS Release Calendar](/azure/aks/supported-kubernetes-versions#aks-kubernetes-release-calendar) with details about the new releases on [GitHub](https://github.com/Azure/AKS/releases) to keep AKS users informed and up to date.
 
 These announcements are a great way to plan ahead to avoid using Azure Kubernetes Service cluster versions that go out of support.
 
