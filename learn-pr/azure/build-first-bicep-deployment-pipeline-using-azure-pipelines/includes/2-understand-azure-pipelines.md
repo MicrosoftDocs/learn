@@ -44,9 +44,6 @@ You need to ensure that your service principal has the permissions it needs to b
 
 :::image type="content" source="../media/2-service-connection.png" alt-text="Diagram that shows a pipeline that includes an Azure deployment step, which accesses a service connection and then deploys to Azure." border="false":::
 
-> [!NOTE]
-> Service connections can be used to enable your pipeline to access other resources outside of Azure, too. We don't need to use any other service connection types in this module, though.
-
 ## Triggers
 
 You need to instruct Azure Pipelines _when_ to run your pipeline by using a _trigger_. There are multiple types of trigger available. For now, we'll just use a _manual trigger_, which means we'll manually tell Azure Pipelines when to start running our pipeline. Later in this module, you'll learn about the other triggers you can use.
