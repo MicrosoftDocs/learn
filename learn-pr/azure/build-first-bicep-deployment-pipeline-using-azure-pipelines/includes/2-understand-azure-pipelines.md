@@ -21,7 +21,7 @@ Until now, you've deployed your Bicep files from your local computer. After you 
 
 So how does this translate to a pipeline? The pipeline needs access to a computer so that it can execute the deployment steps. Azure Pipelines uses a machine called an _agent_. An agent is a computer that's configured to run the steps in your pipeline. Each agent already has the Bicep and Azure tooling you used in the previous modules, so it's able to do the same things that you do from your own computer.
 
-Azure Pipelines provides multiple types of agents with different operating systems, like Ubuntu or Windows, and sets of tools. Microsoft runs these agents so you don't have to maintain any compute infrastructure. They are sometimes called _Microsoft-hosted agents_ or _hosted agents_ since they're hosted on your behalf.
+Azure Pipelines provides multiple types of agents with different operating systems, like Ubuntu or Windows, and sets of tools. Microsoft runs these agents so you don't have to maintain any compute infrastructure. They are sometimes called _Microsoft-hosted agents_ or _hosted agents_ since they're hosted on your behalf. Hosted agents are automatically deleted after your pipeline runs, and you can't access them directly. So, it's important that your pipeline contains all the steps necessary to deploy your solution.
 
 An _agent pool_ contains multiple agents of the same type. When you configure your pipeline, you tell Azure Pipelines which agent pool to use to execute each set of steps. When your pipeline runs, it waits for an agent to become available from the pool, and then it instructs the agent to run your deployment steps.
 

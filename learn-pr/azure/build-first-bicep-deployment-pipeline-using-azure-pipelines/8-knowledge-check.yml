@@ -14,58 +14,36 @@ durationInMinutes: 1
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: Which of these situations will trigger the pipeline to run?
     choices:
-    - content: ""
+    - content: Someone commits an update to the _README.md_ file in the _templates_ directory on the **main** branch.
+      isCorrect: false
+      explanation: Incorrect. The _templates/README.md_ file is excluded by a path filter.
+    - content: Someone commits an update to any file anywhere in the repository, and pushes the update to a branch with a name starting with **releases/**.
+      isCorrect: false
+      explanation: Incorrect. Changes to the _templates/README.md_ file won't trigger the pipeline, because that filename is excluded by a path filter.
+    - content: Someone commits an update to the _template.bicep_ file in the _templates_ directory, and pushes the update to a branch with a name starting with **releases/**.
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: Correct. The _templates/template.bicep_ file matches the `include` path filter, and doesn't match the `exclude` path filter. Additionally, any branch name that starts with **releases/** is included in the branch trigger.
+  - content: Which of the following statements is true?
     choices:
-    - content: ""
+    - content: When a YAML pipeline deploys a Bicep file that creates resources into a virtual network, the pipeline cannot run on a Microsoft-hosted agent.
+      isCorrect: false
+      explanation: Incorrect. Bicep resource deployments occur against the Azure control plane, Azure Resource Manager. The deployment can run on any agent, as long as the service principal that the agent uses has the appropriate permissions.
+    - content: Microsoft-hosted agents contain all of the needed software to deploy Bicep files.
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: Correct. Microsoft-hosted agents include a set of predefined software, and Bicep is part of this set.
+    - content: After your pipeline has finished running, you can sign in to the Microsoft-hosted agent machine to check the logs of the pipeline run.
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: Incorrect. Microsoft-hosted agents only exist during the lifetime of your pipeline run. After the pipeline completes, the agent is destroyed and not used anymore. If you want to see the logs of your run, you should do so in the Azure Pipelines web interface.
+  - content: You have a Bicep file that deploys a new App Service plan and app to a resource group in Azure. Which of the following tasks should you use to execute the deployment?
     choices:
-    - content: ""
+    - content: The _Azure Web App_ task.
+      isCorrect: false
+      explanation: Incorrect. The _Azure Web App_ task deploys application code to an already-deployed web application. It doesn't deploy the App Service resources.
+    - content: The _Copy Files_ task.
+      isCorrect: false
+      explanation: Incorrect. The _Copy Files_ task doesn't perform any deployments  to Azure.
+    - content: The _Azure CLI_ task.
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: Correct. The _Azure CLI_ task can be used to execute a deployment by using the `az deployment group create` command.

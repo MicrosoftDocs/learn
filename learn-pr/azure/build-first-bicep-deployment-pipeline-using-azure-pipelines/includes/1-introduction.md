@@ -4,7 +4,9 @@ By automating Bicep deployments through Azure Pipelines, you can create a flexib
 
 Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. You've built a Bicep template to deploy your company's website. Every time you need to reconfigure the website you update your Bicep files and redeploy them from your computer. Your website team is asking for changes regularly so the deployment process has become time-consuming, and you want to find a way to automate the process so that you can spend your time on more important things.
 
-You also want to enable your colleagues to make changes to the Bicep templates and deploy them, but you want to ensure they follow the same process as you.
+You also want to enable your colleagues to make changes to the Bicep templates and deploy them, but you want to ensure they follow the same process as you. You decide to create a deployment pipeline, which will run automatically every time the Bicep code is updated in your shared repository. It will deploy your Bicep files to Azure.
+
+:::image type="content" source="../media/1-workflow.png" alt-text="Diagram that shows a change to a Bicep file, which is pushed to Azure Repos. This then automatically triggers a pipeline, which deploys to Azure." border="false":::
 
 ## What will you be doing?
 

@@ -77,7 +77,7 @@ schedules:
 
 You can also specify the branch of your repository that should be used when the schedule starts. When the pipeline begins, it will use the most recent version of the code from that branch.
 
-## Combine triggers
+## Use multiple triggers
 
 You can combine triggers, like in this example:
 
