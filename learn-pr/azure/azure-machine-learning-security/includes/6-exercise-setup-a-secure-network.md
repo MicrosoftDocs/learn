@@ -32,13 +32,13 @@ Let's create a VNet for this exercise:
 
 3. In the **Virtual Network** page, select **Create**.
 
-    :::image type="content" source="../media/create_vnet.png" alt-text="Screenshot showing the virtual network page with a red box around create.":::
+    :::image type="content" source="../media/create-vnet.png" alt-text="Screenshot showing the virtual network page with a red box around create.":::
 
 4. In **Create virtual network**, enter or select this information in the **Basics** tab:
 
     <!-- :::image type="content" source="./media/quick-create-portal/create-virtual-network.png" alt-text="Create virtual network Azure portal" border="true"::: -->
 
-    :::image type="content" source="../media/vnet_form1.png" alt-text="Screenshot showing how to fill in the Azure Virtual Network form.":::
+    :::image type="content" source="../media/vnet-form1.png" alt-text="Screenshot showing how to fill in the Azure Virtual Network form.":::
 
    | Setting              | Value                                                                                                 |
    | -------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -54,7 +54,7 @@ Let's create a VNet for this exercise:
    > [!TIP]
    > If your screen comes with the IPv4 address space and _default_ subnet setup like in the image below, skip to step 9.
 
-    :::image type="content" source="../media/vnet_form2.png" alt-text="Screenshot showing Azure Virtual Network IP Addresses page.":::
+    :::image type="content" source="../media/vnet-form2.png" alt-text="Screenshot showing Azure Virtual Network IP Addresses page.":::
 
 6. In **IPv4 address space**, select the existing address space and change it to **10.1.0.0/16**.
 
@@ -66,7 +66,7 @@ Let's create a VNet for this exercise:
 
 10. Select **Create** and wait a few moments for the deployment to finish:
 
-    :::image type="content" source="../media/vnet_deployment.png" alt-text="Screenshot showing the deployment complete page from step 11.":::
+    :::image type="content" source="../media/vnet-deployment.png" alt-text="Screenshot showing the deployment complete page from step 11.":::
 
 > [!IMPORTANT]
 > For simplicity, we are creating a single subnet for our Virtual Network.
@@ -87,11 +87,11 @@ We just added a VNet to our resource group, but is it restricting access to our 
 
 2. Select the __ml-workspace__ in the list of recent resources:
 
-    :::image type="content" source="../media/workspace1.png" alt-text="Screenshot showing the Azure portal with a red box around ml-workspace.":::
+    :::image type="content" source="../media/workspace-1.png" alt-text="Screenshot showing the Azure portal with a red box around ml-workspace.":::
 
 3. Select the __Studio web URL__ for your workspace:
 
-    :::image type="content" source="../media/workspace2.png" alt-text="Screenshot showing the studio web url to select.":::
+    :::image type="content" source="../media/workspace-2.png" alt-text="Screenshot showing the studio web url to select.":::
 
 4. Azure Machine Learning Studio should open in a new tab or window. Scroll down until you can see the tabs below (Runs, Compute, Models, and Datasets):
 
@@ -119,15 +119,15 @@ To accomplish that, we need to define a [Private Endpoint](/azure/private-link/p
 
 1. Go to "Home", select **Resource Groups**, select the **MLResourceGroup** resource group, and then select your **ml_workspace** workspace:
 
-    :::image type="content" source="../media/ml_workspace_home.png" alt-text="Screenshot showing the machine learning workspace page.":::
+    :::image type="content" source="../media/ml-workspace-home.png" alt-text="Screenshot showing the machine learning workspace page.":::
 
 2. In the left-hand menu, select **Private endpoint connections**:
 
-    :::image type="content" source="../media/pvt1.png" alt-text="Screenshot showing where to select private endpoint connections with a red box.":::
+    :::image type="content" source="../media/pvt-1.png" alt-text="Screenshot showing where to select private endpoint connections with a red box.":::
 
 3. Select **Private Endpoint** and fill the form with the following values:
 
-    :::image type="content" source="../media/pvt2.png" alt-text="Screenshot showing how to fill in the private endpoint form.":::
+    :::image type="content" source="../media/pvt-2.png" alt-text="Screenshot showing how to fill in the private endpoint form.":::
 
    | Setting              | Value                                                                                                 |
    | -------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -142,7 +142,7 @@ To accomplish that, we need to define a [Private Endpoint](/azure/private-link/p
 
 5. In the **Resource** tab, use the values below
 
-    :::image type="content" source="../media/pvt3.png" alt-text="Screenshot showing how to fill in the resources form.":::
+    :::image type="content" source="../media/pvt-3.png" alt-text="Screenshot showing how to fill in the resources form.":::
 
    | Setting              | Value                                                   |
    | -------------------- | ------------------------------------------------------- |
@@ -157,7 +157,7 @@ To accomplish that, we need to define a [Private Endpoint](/azure/private-link/p
 
    Leave the suggested defaults:
 
-    :::image type="content" source="../media/pvt4.png" alt-text="Screenshot showing how to fill in the configuration form.":::
+    :::image type="content" source="../media/pvt-4.png" alt-text="Screenshot showing how to fill in the configuration form.":::
 
    | Setting                         | Value                     |
    | ------------------------------- | ------------------------- |
@@ -167,7 +167,7 @@ To accomplish that, we need to define a [Private Endpoint](/azure/private-link/p
 
 7. Select **Review + Create** to validate the deployment, then select **Create** to deploy the endpoint (this can take a few moments):
 
-    :::image type="content" source="../media/pvt_final.png" alt-text="Screenshot showing the deployment complete page.":::
+    :::image type="content" source="../media/pvt-final.png" alt-text="Screenshot showing the deployment complete page.":::
 
 ## Testing the network configuration
 
@@ -198,4 +198,3 @@ In this unit you've covered the following topics:
 - Creating subnets in a Virtual Network
 - How to use Private Endpoints to secure network access to you Machine Learning workspaces
 - Accessing a workspace using Azure Machine Learning Studio and check if resources are blocked
-

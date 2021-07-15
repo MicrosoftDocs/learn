@@ -24,11 +24,11 @@ Let's create a Resource Group for this exercise:
 
 1. In the Azure portal, select **Resource Groups**:
 
-    :::image type="content" source="../media/resource_group_1.png" alt-text="Screenshot showing the Azure portal with a red box around resource groups.":::
+    :::image type="content" source="../media/resource-group-1.png" alt-text="Screenshot showing the Azure portal with a red box around resource groups.":::
 
 2. Select **New** or **Create** in the resource groups list:
 
-    :::image type="content" source="../media/resource_group_2.png" alt-text="Screenshot showing the resource groups window with a red box around new.":::
+    :::image type="content" source="../media/resource-group-2.png" alt-text="Screenshot showing the resource groups window with a red box around new.":::
 
 3. Fill in the form to add a new Resource Group
 
@@ -37,7 +37,7 @@ Let's create a Resource Group for this exercise:
    - Select your preferred region.
    - Select **Review and create**, then select **Create**.
 
-    :::image type="content" source="../media/resource_group_3.png" alt-text="Screenshot showing the form to fill in to add a new resource group.":::
+    :::image type="content" source="../media/resource-group-3.png" alt-text="Screenshot showing the form to fill in to add a new resource group.":::
 
 ## Create ML Workspace
 
@@ -47,23 +47,23 @@ To create an ML Workspace, follow these steps:
 
 2. Select **Create a resource** in the Azure portal:
 
-    :::image type="content" source="../media/ws1.png" alt-text="Screenshot showing the Azure portal with a red box around create a resource.":::
+    :::image type="content" source="../media/ws-1.png" alt-text="Screenshot showing the Azure portal with a red box around create a resource.":::
 
 3. Select **See all**.
 
-    :::image type="content" source="../media/ws2.png" alt-text="Screenshot showing the create a resource page with a red box around see all.":::
+    :::image type="content" source="../media/ws-2.png" alt-text="Screenshot showing the create a resource page with a red box around see all.":::
 
 4. Scroll down until the **AI + Machine Learning** option is visible and select **create**.
 
-    :::image type="content" source="../media/ws3.png" alt-text="Screenshot showing the AI and machine learning option.":::
+    :::image type="content" source="../media/ws-3.png" alt-text="Screenshot showing the AI and machine learning option.":::
 
 5. Fill in the form, selecting your current subscription and the resource group we had previously created (**AI-Resource**). Use **ml-workspace** as the workspace name:
 
-    :::image type="content" source="../media/ws4.png" alt-text="Screenshot showing the form from step 4 and how to fill it in.":::
+    :::image type="content" source="../media/ws-4.png" alt-text="Screenshot showing the form from step 4 and how to fill it in.":::
 
 6. Select the **Review + create** button to load a review confirmation screen:
 
-    :::image type="content" source="../media/ws5.png" alt-text="Screenshot showing the confirmation screen from step 5.":::
+    :::image type="content" source="../media/ws-5.png" alt-text="Screenshot showing the confirmation screen from step 5.":::
 
 7. Select **Create** to start deploying your new workspace (this may take a few minutes).
 
@@ -83,12 +83,12 @@ To create an ML Workspace, follow these steps:
 
    Select the Cloud Shell Icon:
 
-    :::image type="content" source="../media/powershell1.png" alt-text="Screenshot showing where to select the cloud shell icon."::: or use the direct URL in your browser:
+    :::image type="content" source="../media/powershell-1.png" alt-text="Screenshot showing where to select the cloud shell icon."::: or use the direct URL in your browser:
    https://shell.azure.com.
 
 1. Select **Bash** or **PowerShell** (we will use `bash`):
 
-    :::image type="content" source="../media/powershell2.png" alt-text="Screenshot showing where to select bash.":::
+    :::image type="content" source="../media/powershell-2.png" alt-text="Screenshot showing where to select bash.":::
 
 ## Define a Custom Role:
 
@@ -134,7 +134,7 @@ This adds the "Data Scientist Custom" role, which is limited to running experime
 
 To verify and list existing roles using the Azure portal, select the option **Access Control (IAM)** on your `ml-workspace` then select the **Roles** tab:
 
-:::image type="content" source="../media/custom_role.png" alt-text="Screenshot showing roles defined to the workspace example.":::
+:::image type="content" source="../media/custom-role.png" alt-text="Screenshot showing roles defined to the workspace example.":::
 
 ><!-- ## Assign Custom Role to a User
 >Finally, to assign this role to a user, use the CLI commands below:
@@ -158,7 +158,7 @@ In this unit you've covered the following topics:
 
 <!-- - Assigning roles to a user -->
 
-## More Resources
+## More resources
 
 To read more about Workspaces and Custom Roles visit:
 
