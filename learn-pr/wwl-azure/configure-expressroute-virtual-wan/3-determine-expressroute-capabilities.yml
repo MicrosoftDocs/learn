@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-expressroute-virtual-wan.determine-expressroute-capabilities
-title: Determine expressroute capabilities
+title: Determine ExpressRoute capabilities
 metadata:
-  title: Determine expressroute capabilities
-  description: "Determine expressroute capabilities"
+  title: Determine ExpressRoute capabilities
+  description: "Determine ExpressRoute capabilities"
   ms.date: 07/15/2021
   author: wwlpublish
   ms.topic: interactive-tutorial

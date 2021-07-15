@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-expressroute-virtual-wan.determine-uses
-title: Determine virtual WAN uses
+title: Determine Virtual WAN uses
 metadata:
-  title: Determine virtual WAN uses
-  description: "Determine virtual WAN uses"
+  title: Determine Virtual WAN uses
+  description: "Determine Virtual WAN uses"
   ms.date: 07/15/2021
   author: wwlpublish
   ms.topic: interactive-tutorial
