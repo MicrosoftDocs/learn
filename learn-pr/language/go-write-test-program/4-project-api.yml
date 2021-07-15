@@ -5,7 +5,7 @@ metadata:
   description: Build a web API to test and use the bank project externally.
   ms.date: 02/02/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Write the bank API

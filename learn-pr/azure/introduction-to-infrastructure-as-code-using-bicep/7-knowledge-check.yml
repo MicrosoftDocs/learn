@@ -1,82 +1,60 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.introduction-infrastructure-code-using-bicep.knowledge-check
-title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+title: Knowledge check
 metadata:
   unitType: knowledge_check
-  title: "Knowledge check" # user input: module title for browser tab and search results
-  description: "" # user input: a description for site search and SEO
+  title: Knowledge check
+  description: Knowledge check
   ms.date: 03/12/2021  
   author: joshuawaddell
   ms.author: jowaddel
-  ms.topic: interactive-tutorial # do we need ms.topic?
-durationInMinutes: 10 # user input: the estimate time to complete the unit
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check) 
-###  - Questions are complete sentences ending with a question mark 
-###  - No true/false questions 
-###  - 3 answers per question 
-###  - All answers about the same length 
-###  - Numeric answers listed in sorted order 
-###  - No "All of the above" and/or "None of the above" as answer choices 
-###  - No "Not" or "Except" in questions 
-###  - No second person ("you") in the questions or answers 
-###  - Provide a meaningful explanation for both correct and incorrect answers 
-###
-### Question content requirements:
-###  - Write 5 questions
-###  - Questions 1,2 must test this Learning Objective: "Describe how <attributes> of <product> work to <solve problem>"
-###      Guidance: These two questions can be short, no need for a long scenario to analyze. Test if they understand how the product works.
-###      Example: "What differentiates an action from a control action in an Azure Logic App?"
-###  - Questions 3,4,5 must test this Learning Objective: "Evaluate whether <product> is appropriate to <general product use case>"
-###      Guidance: Use scenario questions that ask the learner to analyze a situation with the "when to use" criteria presented in the module.
-###      Example: "Suppose you work for a financial company. You're building a system to let your brokers trade financial instruments. Your system must monitor market conditions, detect changes, and execute trades. You'll need to handle a large volume of transactions and you'll need to do it quickly. The faster you can complete trades, the more of an advantage you'll have over your competitors. Which requirement of this system would be difficult for Logic Apps to satisfy?"
-###
-###########################################################################
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
 content: |
 quiz:
   questions:
-  - content: "Suppose you're deciding on a method to use to deploy your Azure infrastructure. Which of the following characteristics is a benefit of using infrastructure as code?"
+  - content: Suppose you're deciding on a method to use to deploy your Azure infrastructure. Which of the following characteristics is a benefit of using infrastructure as code?
     choices:
-    - content: "Infrastructure as code improves the consistency of your deployments."
+    - content: Infrastructure as code improves the consistency of your deployments.
       isCorrect: true
-      explanation: "Correct. Infrastructure as code helps reduce human error in resource provisioning and ensure consistency."
-    - content: "Infrastructure as code requires that you deploy only a single environment."
+      explanation: Correct. Infrastructure as code helps reduce human error in resource provisioning and ensure consistency.
+    - content: Infrastructure as code requires that you deploy only a single environment.
       isCorrect: false
-      explanation: "Incorrect. Infrastructure as code can help with managing multiple environments, like keeping your non-production and production environments in sync."
-    - content: "With infrastructure as code, you manually execute your deployments."
+      explanation: Incorrect. Infrastructure as code can help with managing multiple environments, like keeping your non-production and production environments in sync.
+    - content: With infrastructure as code, you manually execute your deployments.
       isCorrect: false
-      explanation: "Incorrect. Infrastructure as code helps you automate your deployments, which improves their consistency and reduces the chance of error."
-  - content: "Suppose you've decided to use infrastructure as code for resource provisioning. You're deciding between using an imperative or a declarative code approach. Which statement best describes declarative code?"
+      explanation: Incorrect. Infrastructure as code helps you automate your deployments, which improves their consistency and reduces the chance of error.
+  - content: Suppose you've decided to use infrastructure as code for resource provisioning. You're deciding between using an imperative or a declarative code approach. Which statement best describes declarative code?
     choices:
-    - content: "With declarative code, you execute a sequence of commands, in a specific order, to reach an end configuration. This process defines what the code should accomplish, and it defines how to accomplish the task. "
+    - content: With declarative code, you execute a sequence of commands, in a specific order, to reach an end configuration. This process defines what the code should accomplish, and it defines how to accomplish the task.
       isCorrect: false
-      explanation: "Incorrect. Imperative code defines what the code should accomplish and how to accomplish the task."
-    - content: "With declarative code, objects and classes are used to determine the final configuration of a resource."
+      explanation: Incorrect. Imperative code defines what the code should accomplish and how to accomplish the task.
+    - content: With declarative code, objects and classes are used to determine the final configuration of a resource.
       isCorrect: false
-      explanation: "Incorrect. Object-oriented programming languages, like C#, use objects and classes in their code base. You don't need to use these constructs for declarative infrastructure as code."
-    - content: "With declarative code, you specify only the end configuration. You don't define how to accomplish the task."
+      explanation: Incorrect. Object-oriented programming languages, like C#, use objects and classes in their code base. You don't need to use these constructs for declarative infrastructure as code.
+    - content: With declarative code, you specify only the end configuration. You don't define how to accomplish the task.
       isCorrect: true
-      explanation: "Correct. Declarative code specifies only the properties and configuration of your resources. The tooling then determines how to ensure that your resources meet those requirements."
-  - content: "Suppose you're deciding on the type of declarative template to use for your resource provisioning. Which of the following declarative template formats work with Azure?"
+      explanation: Correct. Declarative code specifies only the properties and configuration of your resources. The tooling then determines how to ensure that your resources meet those requirements.
+  - content: Suppose you're deciding on the type of declarative template to use for your resource provisioning. Which of the following declarative template formats work with Azure?
     choices:
-    - content: "Bicep template."
+    - content: Bicep template.
       isCorrect: true
-      explanation: "Correct. Bicep templates can be used for Azure resource deployments."
-    - content: "XML template."
+      explanation: Correct. Bicep templates can be used for Azure resource deployments.
+    - content: XML template.
       isCorrect: false
-      explanation: "Incorrect. XML templates aren't used for Azure resource deployments."
-    - content: "Running a Bash script in Azure CLI."
+      explanation: Incorrect. XML templates aren't used for Azure resource deployments.
+    - content: Running a Bash script in Azure CLI.
       isCorrect: false
-      explanation: "Incorrect. Running a Bash script in Azure CLI isn't an example of using a declarative template."
-  - content: "Suppose you're deciding on the type of declarative template to use for your resource provisioning. Which of the following characteristics is a benefit of using ARM templates?"
+      explanation: Incorrect. Running a Bash script in Azure CLI isn't an example of using a declarative template.
+  - content: Suppose you're deciding on the type of declarative template to use for your resource provisioning. Which of the following characteristics is a benefit of using ARM templates?
     choices:
-    - content: "Imperative code."
+    - content: Imperative code.
       isCorrect: false
-      explanation: "Incorrect. ARM templates don't use imperative code."
-    - content: "Modularity."
+      explanation: Incorrect. ARM templates don't use imperative code.
+    - content: Modularity.
       isCorrect: true
-      explanation: "Correct. ARM templates can be configured as separate templates, or modules."
-    - content: "Management group."
+      explanation: Correct. ARM templates can be configured as separate templates, or modules.
+    - content: Management group.
       isCorrect: false
-      explanation: "Incorrect. A management group is a logical container for grouping Azure subscriptions."
+      explanation: Incorrect. A management group is a logical container for grouping Azure subscriptions.

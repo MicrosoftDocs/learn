@@ -6,7 +6,7 @@ This module uses the same scenario, and code base, as the [Identify anomalies by
 
 The scenario we're using is that of a conveyor belt, monitored for vibration.
 
-[![Conceptual art of conveyor belt](../media/vibration-art-2.png)](../media/vibration-art-2.png#lightbox)
+[![Conceptual art of conveyor belt.](../media/vibration-art-2.png)](../media/vibration-art-2.png#lightbox)
 
 ## Learning objectives
 
@@ -36,7 +36,7 @@ There are a number of different types of vibration. _Natural vibration_, which i
 
 Forced vibration is the dangerous one for our conveyor belt. Even if it starts at a low level this vibration can build so that the structure fails completely.
 
-[![Graph of cyclical forced vibration](../media/vibration-art-1.png)](../media/vibration-art-1.png#lightbox)
+[![Graph of cyclical forced vibration.](../media/vibration-art-1.png)](../media/vibration-art-1.png#lightbox)
 
 Vibration is typically measured as an acceleration (meters per second squared, m/s<sup>2</sup>), though sometimes vibration is measured in g-forces.
 

@@ -172,4 +172,3 @@ DROP LOGIN Sales1;
 DROP LOGIN Sales2;
 DROP LOGIN Manager;
 ```
-

@@ -39,7 +39,7 @@ In this exercise, you'll create a Docker Compose YAML file. And then use the Doc
     - First it creates the frontend website, naming it **pizza frontend**. It tells Docker to build it, pointing to the Dockerfile found in the **frontend** folder. Then it sets an environment variable for the website: `backendUrl=http://backend`. Finally it opens a port and declares it depends on the backend service.
     - The backend service gets created next. It's named **pizzabackend**. It's built from the same Dockerfile you created in the previous exercise. The last command specifies which port to open.
 
-1. To build the container images, open up a command prompt and from the same director where the **docker-compose.yml** file is, run the following command:
+1. To build the container images, open up a command prompt and from the same directory where the **docker-compose.yml** file is, run the following command:
 
     ```bash
     docker-compose build

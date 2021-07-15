@@ -1,4 +1,4 @@
-:::image type="content" source="../media/space-jam-end-card.png" alt-text="Logo for SPACE JAM: A NEW LEGACY.":::
+:::image type="content" source="../media/space-jam-a-new-legacy-end-card.png" alt-text="Logo for SPACE JAM: A NEW LEGACY.":::
 
 *Welcome to the Jam!  Basketball champion and global icon LeBron James goes on an epic adventure alongside timeless Tune Bugs Bunny in the animated/live-action event "Space Jam: A New Legacy," from director Malcolm D. Lee and an innovative filmmaking team including Ryan Coogler and Maverick Carter.*
 
@@ -11,7 +11,7 @@ In this module, you get to explore stats related to basketball players (both hum
 > [!TIP]
 > This module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module in a new tab](https://youtu.be/R6S05RkWl10?azure-portal=true). 
 
-© 2020 Warner Bros. Ent. All Rights Reserved.
+© 2021 Warner Bros. Ent. All Rights Reserved.
 
 ## Learning objectives
 

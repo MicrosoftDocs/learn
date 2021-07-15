@@ -4,7 +4,7 @@ In your healthcare organization, you have a business-critical system that manage
 
 In this unit, you'll examine the requirements for each virtual server in the proposed Azure infrastructure and see why a particular disk type is optimal.
  
-![On-premises servers for the prescription drugs stocks database](../media/4-on-premises-servers.png)
+![On-premises servers for the prescription drugs stocks database.](../media/4-on-premises-servers.png)
 
 ## Production database server
 

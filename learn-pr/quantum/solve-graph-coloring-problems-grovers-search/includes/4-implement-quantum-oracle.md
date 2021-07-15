@@ -4,7 +4,7 @@ In this part, you'll implement a quantum oracle for the graph coloring problem.
 
 > [!NOTE]
 > In this module we'll focus on high-level behavior of quantum oracles and (in the following units) Grover's search algorithm. 
-> We encourage you to dig deeper into the code on your own, in particular, to look up any unfamiliar operations and language constructs in the [Q# documentation](/quantum).
+> We encourage you to dig deeper into the code on your own, in particular, to look up any unfamiliar operations and language constructs in the [Q# documentation](/azure/quantum).
 
 ## Create the project
 
@@ -160,6 +160,11 @@ Lastly, we compute the final result. If all the extra qubits allocated are in th
 Here's the Q# code that validates that the vertex coloring is valid.
 
 :::code language="qsharp" source="code/4-program-4.qs":::
+
+> [!NOTE]
+> This code snippet does not currently run on any available Azure Quantum hardware targets, as general measurement result comparisons (`let isColoringValid = M(target) == One;`) require a QPU with [full computation profile](/azure/quantum/concepts-targets-in-azure-quantum#quantum-processing-units-qpu-different-profiles).
+>
+> Learn module code that does not feature such a notice is executable on current hardware targets.
 
 Here's the output of this code:
 

@@ -1,4 +1,13 @@
-Now that you've finished creating the database for your R&D team to use, you need to ensure that access to the database is logged. You have an existing Log Analytics workspace that you want these logs to be sent to. You also need to send the logs from the R&D team's storage account to the same Log Analytics workspace. 
+Now that you've finished creating the database for your R&D team to use, you need to ensure that access to the database is logged. You have an existing Log Analytics workspace that you want these logs to be sent to. You also need to send the logs from the R&D team's storage account to the same Log Analytics workspace. In this exercise, you'll update your Bicep file to meet these requirements.
+
+During the process, you'll:
+
+> [!div class="checklist"]
+> * Create a Log Analytics workspace.
+> * Update your Bicep file to add diagnostic settings to your Cosmos DB account.
+> * Create a storage account.
+> * In your Bicep file, update the diagnostic settings for the storage account.
+> * Deploy your template and verify the result.
 
 ## Create a Log Analytics workspace
 
@@ -44,38 +53,17 @@ To add diagnostics settings, do the following:
 
 1. In Visual Studio Code, open the *main.bicep* file and then, below the existing variable definitions, add the following code:
 
-   ```bicep
-   var logAnalyticsWorkspaceName = 'ToyLogs'
-   var cosmosDBAccountDiagnosticSettingsNames = 'route-logs-to-log-analytics'
-   ```
+   :::code language="bicep" source="code/7-complete.bicep" range="9-10" :::
 
 1. At the bottom of the file, below the resource definitions, add the following code:
 
-   ```bicep
-   resource logAnalyticsWorkspace 'Microsoft.OperationalInsights/workspaces@2020-03-01-preview' existing = {
-     name: logAnalyticsWorkspaceName
-   }
-   ```
+   :::code language="bicep" source="code/7-complete.bicep" range="55-57" :::
 
    Notice that this resource definition uses the `existing` keyword, and that you're purposely omitting other properties that you'd normally specify if you were deploying the Log Analytics workspace through this Bicep template.
 
 1. Below the code you just added, add the following code:
 
-   ```bicep
-   resource cosmosDBAccountDiagnostics 'Microsoft.Insights/diagnosticSettings@2017-05-01-preview' = {
-     scope: cosmosDBAccount
-     name: cosmosDBAccountDiagnosticSettingsNames
-     properties: {
-       workspaceId: logAnalyticsWorkspace.id
-       logs: [
-         {
-           category: 'DataPlaneRequests'
-           enabled: true
-         }
-       ]
-     }
-   }
-   ```
+   :::code language="bicep" source="code/7-complete.bicep" range="59-71" :::
 
    Notice that this code deploys an extension resource. It uses the `scope` keyword to tell Bicep that the resource should be attached to the Azure Cosmos DB account. The code also uses the `id` property of the `logAnalyticsWorkspace` existing resource so that Azure understands where to send the Azure Cosmos DB logs.
 
@@ -118,55 +106,21 @@ You need to update your Bicep template to reference the storage account you crea
 
 1. Near the top of the *main.bicep* file, below the parameter definitions, add the following parameter definition:
 
-   ```bicep
-   param storageAccountName string
-   ```
+   :::code language="bicep" source="code/7-complete.bicep" range="4" :::
 
 1. Under the variable definitions, add the following variable definition:
 
-   ```bicep
-   var storageAccountBlobDiagnosticSettingsNames = 'route-logs-to-log-analytics'
-   ```
+   :::code language="bicep" source="code/7-complete.bicep" range="11" :::
 
 1. At the bottom of the file, under the resource definitions, add the following:
 
-   ```bicep
-   resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' existing = {
-     name: storageAccountName
-   
-     resource blobService 'blobServices' existing = {
-       name: 'default'
-     }
-   }
-   ```
+   :::code language="bicep" source="code/7-complete.bicep" range="73-79" :::
 
    Notice that both of these resources use the `existing` keyword.
 
 1. At the bottom of the file, below the storage account definition you've just added, add the following:
 
-   ```bicep
-   resource storageAccountBlobDiagnostics 'Microsoft.Insights/diagnosticSettings@2017-05-01-preview' = {
-     scope: storageAccount::blobService
-     name: storageAccountBlobDiagnosticSettingsNames
-     properties: {
-       workspaceId: logAnalyticsWorkspace.id
-       logs: [
-         {
-           category: 'StorageRead'
-           enabled: true
-         }
-         {
-           category: 'StorageWrite'
-           enabled: true
-         }
-         {
-           category: 'StorageDelete'
-           enabled: true
-         }
-       ]
-     }
-   }
-   ```
+   :::code language="bicep" source="code/7-complete.bicep" range="81-101" :::
 
    Notice that this extension resource has its `scope` set to the nested existing resource. Bicep understands that it should attach the extension resource to the `blobServices` child resource.
 

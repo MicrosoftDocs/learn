@@ -6,7 +6,7 @@ Authentication and authorization controls provide infrastructure security. In th
 
 To demonstrate the security capabilities of Azure Synapse Analytics, we'll create an instance of Azure Synapse Analytics with a sample database that Azure provides. Create the server and database from the Azure portal with the following options.
 
-![Screenshot of creating a Azure Synapse Analytics data warehouse instance by using the portal](../media/2-create-dw-portal.png)
+![Screenshot of creating a Azure Synapse Analytics data warehouse instance by using the portal.](../media/2-create-dw-portal.png)
 
 ## Set firewall access rules by using the portal
 
@@ -19,12 +19,12 @@ To specify firewall rules:
 1. Select the data warehouse that you created in the previous section.
 1. Select **Server name** in the right pane.
 
-   ![Screenshot of selecting a server name](../media/2-select-server-name.png)
+   ![Screenshot of selecting a server name.](../media/2-select-server-name.png)
 
 1. Select **Show firewall settings**.
 1. Select a name for **RULE NAME**, **START IP**, and **END IP**.
 
-   ![Screenshot of selecting rule name, start IP, and end IP](../media/2-select-server-setting.png)
+   ![Screenshot of selecting rule name, start IP, and end IP.](../media/2-select-server-setting.png)
 
 ## Create an Azure Synapse Analytics data warehouse login by using SQL Server Management Studio
 
@@ -34,21 +34,21 @@ With SQL authentication, users connect to the data warehouse by using a username
 
 1. Open SQL Server Management Studio (which you installed as a prerequisite) and connect to the data warehouse. Get the server name from the Azure portal by going to the data warehouse, and use the username and password that you specified when you created the data warehouse.
 
-   ![Screenshot of opening SQL Server Management Studio](../media/2-open-ssms.png)
+   ![Screenshot of opening SQL Server Management Studio.](../media/2-open-ssms.png)
 
 1. Select **Connect**, which logs you in to the data warehouse.
 1. Right-click **Logins** under **Security** in the left pane, and select **New Login**.
 
-   ![Screenshot of creating a new login](../media/2-create-new-login.png)
+   ![Screenshot of creating a new login.](../media/2-create-new-login.png)
 
 1. After the query pane appears with commands to create a login, change the username and password as desired and select **Execute**.
 
-   ![Screenshot of executing a new query](../media/2-execute-new-query.png)
+   ![Screenshot of executing a new query.](../media/2-execute-new-query.png)
 
 1. Right-click **Logins** under **Security** in the left pane, and select **Refresh**.
 1. The newly created login appears under **Logins** in the left pane.
 
-   ![Screenshot of executing a login query](../media/2-create-login-query.png)
+   ![Screenshot of executing a login query.](../media/2-create-login-query.png)
 
 Azure Active Directory is a central location to manage identities for all Microsoft online and cloud services. Azure AD authentication is beyond the scope of this lesson. It broadly involves four steps:
 
@@ -65,14 +65,14 @@ Roles allow various levels of user access to a database. This approach to securi
 
 1. Open SQL Server Management Studio and connect to the data warehouse. Get the server name from the Azure portal by going to the data warehouse, and use the username and password that you specified when you created the data warehouse.
 
-   ![Screenshot of opening SQL Server Management Studio for SQL Data Warehouse](../media/2-open-ssms-sql-dw.png)
+   ![Screenshot of opening SQL Server Management Studio for SQL Data Warehouse.](../media/2-open-ssms-sql-dw.png)
 
 1. Select **Connect**, which logs you in to the SQL data warehouse.
 1. Expand **Databases** in the left pane, and expand **DemoDW** (which you created in the prerequisites).
 1. Expand **Security**, and expand **Users**.
 1. Right-click **Users**, and select **New User**.
 
-   ![Screenshot of creating a new user](../media/2-create-new-user.png)
+   ![Screenshot of creating a new user.](../media/2-create-new-user.png)
 
 1. After the query pane appears with commands to create a user:
    
@@ -88,7 +88,7 @@ Roles allow various levels of user access to a database. This approach to securi
 
    The newly created user appears under **Users** in the left pane.
 
-   ![Screenshot that shows the newly created user](../media/2-show-new-user.png)
+   ![Screenshot that shows the newly created user.](../media/2-show-new-user.png)
 
 ## Enable data encryption on a data warehouse by using the portal
 
@@ -101,7 +101,7 @@ Data encryption at rest helps protect data in your data warehouse and satisfies 
 1. Select **ON**.
 1. Select **Save**.
 
-![Screenshot of configuring encryption](../media/2-configure-encryption.png)
+![Screenshot of configuring encryption.](../media/2-configure-encryption.png)
 
 ### Encrypt data in transit in your application
 
@@ -124,16 +124,16 @@ Use the following steps to grant access to specific users to only certain column
 
 1. Open SQL Server Management Studio and connect to the data warehouse. Get the server name from the Azure portal by going to the data warehouse, and use the username and password that you specified when you created the data warehouse.
 
-   ![Screenshot of opening SQL Server Management Studio for SQL Data Warehouse](../media/2-open-ssms-sql-dw.png)
+   ![Screenshot of opening SQL Server Management Studio for SQL Data Warehouse.](../media/2-open-ssms-sql-dw.png)
 
 1. Select **Connect**, which logs you in to the SQL data warehouse.
 1. Go to the **DemoDW** database and expand the **Tables** node. You see the **dbo.DimEmployee** table, which is the table where we'll limit access to the user that we previously created, **demodw_user**.
 
-   ![Screenshot of the dbo.DimEmployee table](../media/2-show-employee-table.png)
+   ![Screenshot of the dbo.DimEmployee table.](../media/2-show-employee-table.png)
 
 1. From the **File** menu, select **New** > **Query with Current Connection**.
 
-   ![Screenshot of creating a new query with the current connection](../media/2-query-with-current-connection.png)
+   ![Screenshot of creating a new query with the current connection.](../media/2-query-with-current-connection.png)
 
 1. In the query pane, type the following command and select the **Execute** button.
 
@@ -141,7 +141,7 @@ Use the following steps to grant access to specific users to only certain column
    GRANT SELECT ON dbo.DimEmployee (FirstName, MiddleName, LastName, Title) TO demodw_user;
    ```
 
-   ![Command to create a query](../media/2-create-query.png)
+   ![Command to create a query.](../media/2-create-query.png)
 
 The user **demodw_user** can now access only the four columns in the table for which it was granted access. No other columns are visible to that user.
 
@@ -156,16 +156,16 @@ Follow these steps to enforce row-level security for the **dbo.DimEmployee** tab
 
 1. Open SQL Server Management Studio and connect to the data warehouse. Get the server name from the Azure portal by going to the data warehouse, and use the username and password that you specified when you created the data warehouse.
 
-   ![Screenshot of opening SQL Server Management Studio for SQL Data Warehouse](../media/2-open-ssms-sql-dw.png)
+   ![Screenshot of opening SQL Server Management Studio for SQL Data Warehouse.](../media/2-open-ssms-sql-dw.png)
 
 1. Select **Connect**, which logs you in to the SQL data warehouse.
 1. Go to the **DemoDW** database and expand the **Tables** node. You see the **dbo.DimEmployee** table, which is the table where we'll limit access to the user that we previously created, **demodw_user**.
 
-   ![Screenshot of the dbo.DimEmployee table](../media/2-show-employee-table.png)
+   ![Screenshot of the dbo.DimEmployee table.](../media/2-show-employee-table.png)
 
 1. From the **File** menu, select **New** > **Query with Current Connection**.
 
-   ![Screenshot for creating a new query with the current connection](../media/2-query-with-current-connection.png)
+   ![Screenshot for creating a new query with the current connection.](../media/2-query-with-current-connection.png)
 
 1. In the query pane, type the following command and select the **Execute** button.
 
@@ -190,4 +190,4 @@ Follow these steps to enforce row-level security for the **dbo.DimEmployee** tab
 
 Now, only **demodw_user** can access the rows in the **DimEmployee** table.
 
-![Screenshot of the query result](../media/2-show-query-result.png)
+![Screenshot of the query result.](../media/2-show-query-result.png)

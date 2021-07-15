@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cna-build-basic-service.2-define-services
+title: Define the concept of services
+metadata:
+  title: Define the concept of services
+  description: Describe the concept of service in the context of cloud-native applications.
+  ms.date: 05/15/2021
+  author: mpolicht
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-define-services.md)]

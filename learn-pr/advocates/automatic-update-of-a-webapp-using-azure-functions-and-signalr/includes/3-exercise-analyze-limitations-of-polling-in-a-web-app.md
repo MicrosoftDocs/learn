@@ -126,7 +126,7 @@ For the app to run, you need to add the connection settings for your cloud servi
 
 1. The script automatically opens the browser and goes to http://localhost:8080. If the browser fails to open automatically, you can go to http://localhost:8080 manually.
 
-    ![Beginning state of serverless web app](../media/serverless-app-beginning-state.png)
+    ![Beginning state of serverless web app.](../media/serverless-app-beginning-state.png)
 
 1. Return to Visual Studio Code, open a third terminal instance, and enter the following command to update the stock prices. Immediately return to the browser and observe that the values for stock ABC change within a few seconds.
 

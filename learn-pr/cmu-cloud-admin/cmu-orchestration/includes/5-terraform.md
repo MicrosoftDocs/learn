@@ -17,7 +17,7 @@ Terraform has been called a configuration-management (CM) system. Technically, i
 
 As Figure 9 shows, Terraform has no remote, client-side agents, though HashiCorp makes platform components that do, and its central component isn't considered a server. HashiCorp calls this component the *core*. Rather than communicating with something designed to communicate only with it, the core is designed to communicate with *resource providers* through REST APIs. When a resource provider builds an API around its services, borrowing an idea from the SQL database language, it typically phrases its methods using some form of the four basic commands for handling resources, which Terraform interprets as create, read, update, and delete. It's up to the intermediate plugins to map the commands the API provides to methods it can generally recognize.
 
-![Figure 9: The Terraform core uses plugins that in turn call cloud provider APIs](../media/fig6-9.png)
+![Figure 9: The Terraform core uses plugins that in turn call cloud provider APIs.](../media/fig6-9.png)
 
 _Figure 9: The Terraform core uses plugins that in turn call cloud provider APIs._
 

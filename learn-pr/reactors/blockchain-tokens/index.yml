@@ -3,9 +3,9 @@ uid: learn.reactors.blockchain-tokens
 metadata:
   title: Create tokens using OpenZeppelin
   description: Learn about the significance of tokens and how they are used in blockchain.
-  ms.date: 10/16/2020
-  author: meaghanlewis
-  ms.author: shanama
+  ms.date: 06/17/2021
+  author: danmabee
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create tokens using OpenZeppelin
@@ -46,4 +46,3 @@ units:
 - learn.reactors.blockchain-tokens.8-summary
 badge:
   uid: learn.reactors.blockchain-tokens.badge
-hidden: true

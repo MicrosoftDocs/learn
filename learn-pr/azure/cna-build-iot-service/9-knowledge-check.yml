@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.cna-build-iot-service.9-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Multiple-choice questions
+  ms.date: 04/29/2021
+  author: mpolicht
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'Which Azure service implements a wide range of IoT capabilities, including telemetry collection, processing, analytics, and secure device management?'
+    choices:
+    - content: "Azure IoT Hub"
+      isCorrect: false
+      explanation: "Incorrect. This service is optimized for reliable and secure bidirectional communications between IoT devices and cloud services, but it lacks the analytics capabilities available in Azure IoT Central."
+    - content: "Azure IoT Central"
+      isCorrect: true
+      explanation: "Correct. This service implements a wide range of IoT capabilities, including telemetry collection, processing, analytics, and secure device management."
+    - content: "Azure Event Hub"
+      isCorrect: false
+      explanation: "Incorrect. This service offers autoscalable ingestion of telemetry data at high throughput rates, but it's not optimized for IoT scenarios. For example, it doesn't support device management."
+  - content: 'Which of the following features distinguishes Azure Cosmos DB from Azure SQL Database?'
+    choices:
+    - content: "Geo-replication"
+      isCorrect: false
+      explanation: "Incorrect. Both Azure Cosmos DB and Azure SQL Database support geo-replication."
+    - content: "Transactional support"
+      isCorrect: false
+      explanation: "Incorrect. Both Azure Cosmos DB and Azure SQL Database support transactions."
+    - content: "Five consistency modes"
+      isCorrect: true
+      explanation: "Correct. Azure Cosmos DB supports five consistency modes, while Azure SQL Database is designed to operate with strong consistency."
+  - content: 'For which of the following Azure services can a developer configure continuous data export from Azure IoT Central?'
+    choices:
+    - content: "Azure Storage"
+      isCorrect: false
+      explanation: "Incorrect. Azure IoT Central offers interval-based export to Azure Storage."
+    - content: "Azure Cosmos DB"
+      isCorrect: false
+      explanation: "Incorrect. Azure IoT Central offers continuous data export to Azure Event Hub, Azure Service Bus, and custom webhooks."
+    - content: "Azure Event Hub"
+      isCorrect: true
+      explanation: "Correct. Azure IoT Central offers continuous data export to Azure Event Hub, Azure Service Bus, and custom webhooks."

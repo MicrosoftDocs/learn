@@ -12,22 +12,25 @@ metadata:
 title: Build flexible Bicep templates by using conditions and loops
 summary: |
   Learn how to use conditions to deploy resources only when specific constraints are in place. Also learn how to use loops to deploy multiple resources that have similar properties.
-abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
-  After you complete this module, you'll be able to:
-    - Deploy resources conditionally within a Bicep template.
-    - Deploy multiple instances of resources by using loops.
-    - Use output and variable loops.
-prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
-  - Familiarity with the basic Bicep template structure and syntax, including modules.
-  - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
-  - [Visual Studio Code](https://code.visualstudio.com), installed locally.
-  - Either of the following:
-    - The latest [Azure CLI](/cli/azure/install-azure-cli) tools, installed locally.
-    - The latest [Azure PowerShell](/powershell/azure/install-az-ps), installed locally.
+abstract: |
+  After completing this module, you'll be able to:
+    - Deploy resources conditionally within a Bicep template
+    - Deploy multiple instances of resources by using loops
+    - Use output and variable loops
+prerequisites: |
+  You should be familiar with:
+  - Creating and deploying basic Bicep templates, including modules.
+  - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+
+  To follow along with the exercises in the module, you'll need:
+  - [Visual Studio Code](https://code.visualstudio.com) installed locally.
+  - Either:
+    - The latest [Azure CLI](/cli/azure/install-azure-cli) tools installed locally.
+    - The latest [Azure PowerShell](/powershell/azure/install-az-ps) installed locally.
 iconUrl: /learn/achievements/bicep/bicep-conditions-loops.svg
-levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
+levels:
   - intermediate
-roles: # user input: add roles from role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#role)
+roles:
   - devops-engineer
   - developer
   - administrator

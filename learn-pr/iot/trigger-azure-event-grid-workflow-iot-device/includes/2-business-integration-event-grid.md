@@ -6,7 +6,7 @@ You can use filters to route specific events to different endpoints, multicast t
 
 Azure Event Grid is deployed to maximize availability. It natively spreads across multiple fault domains in every region, and across availability zones (in regions that support them). For a list of regions that Event Grid supports, see [Products available by region](https://azure.microsoft.com/global-infrastructure/services/?products=event-grid&regions=all).
 
-[![Business integration - Event Grid functional model](../media/business-integration-event-grid.png) ](../media/business-integration-event-grid.png#lightbox)
+[![Business integration - Event Grid functional model.](../media/business-integration-event-grid.png) ](../media/business-integration-event-grid.png#lightbox)
 
 This image shows how Event Grid connects sources and handlers. It isn't a comprehensive list of supported integrations.
 
@@ -22,7 +22,7 @@ We chose to use Azure Logic Apps as the event handler. Logic Apps is a cloud ser
 
 Logic Apps simplifies how you design and build scalable solutions for app integration, data integration, system integration, enterprise application integration (EAI), and business-to-business (B2B) communication. These solutions can be in the cloud, on premises, or both. One of the Logic Apps connectors sends emails to specific recipients.
 
-[![IoT Hub integration with Event Grid and Logic Apps](../media/iot-hub-event-grid-logic-apps.png)](../media/iot-hub-event-grid-logic-apps.png#lightbox)
+[![IoT Hub integration with Event Grid and Logic Apps.](../media/iot-hub-event-grid-logic-apps.png)](../media/iot-hub-event-grid-logic-apps.png#lightbox)
 
 ## More information about services
 

@@ -18,7 +18,7 @@ To recap, there are three dimensions to participation in open-source software:
 
 As organizations think more deeply about what they want to get out of each dimension, it's a good practice to take stock of where they are today. There are five process levels within each dimension.
 
-![Open-source process levels](../media/2-process-levels.png)
+![Open-source process levels.](../media/2-process-levels.png)
 
 - **Ad hoc**, which have no process in place. Success depends on individual efforts.
 - **Managed**, which have a partially documented process. Success depends on discipline.

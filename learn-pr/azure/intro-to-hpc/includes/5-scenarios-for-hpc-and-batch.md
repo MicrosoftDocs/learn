@@ -22,7 +22,7 @@ The underlying infrastructure improves as technology upgrades become available. 
 
 The following diagram shows a typical Batch architecture that you can use to support 3D rendering.
 
-![Diagram of Azure Batch 3D rendering architecture](../media/5-architecture-video-rendering.svg)
+![Diagram of Azure Batch 3D rendering architecture.](../media/5-architecture-video-rendering.svg)
 
 ### DNA analysis
 
@@ -34,7 +34,7 @@ Computer-aided design (CAD), which has some similarities to both finite element 
 
 This diagram shows a possible architecture that you can use to publish a CAD software as a service (SaaS) product, based on N- and H-series VMs in Azure. 
 
-![Diagram of architecture for SaaS CAD](../media/5-architecture-hpc-saas.svg)
+![Diagram of architecture for SaaS CAD.](../media/5-architecture-hpc-saas.svg)
 
 ### Computational fluid dynamics
 

@@ -8,7 +8,7 @@ In this exercise, you'll provision a web server to meet the requirements.
 
 You'll use a couple of tools together. With Azure Resource Manager templates, you can create a template that outlines the environment for your web server. Your Resource Manager template can also help you define a state that you apply to your web server at the point of provisioning. Apply your desired state by linking to a Desired State Configuration (DSC) extension handler inside your Resource Manager template. The DSC handler helps you enforce a state that you define in a DSC configuration.
 
-In the following exercise, you use a Resource Manager template to provision a virtual machine. The DSC extension handler that's included in the template enforces your state on the virtual machine. You use an Azure storage account to host your DSC configuration file.
+In the following exercise, you'll use a Resource Manager template to provision a virtual machine. The DSC extension handler that's included in the template enforces your state on the virtual machine. You use an Azure storage account to host your DSC configuration file.
 
 ## Clone the configuration and template
 
@@ -63,7 +63,7 @@ The State Configuration is defined in the *Webserver.ps1* file, which includes t
     }
     ```
 
-1. To close the code editor, press <kbd>Ctrl+q</kbd>.
+1. To close the code editor, press <kbd>Ctrl+Q</kbd>.
 
 1. To see the contents of the cloned repository, run this command:
 
@@ -108,13 +108,13 @@ The GitHub repository that you cloned also contains a Resource Manager template.
     },
     ```
 
-1. To save the template, press <kbd>Ctrl+s</kbd>.
+1. To save the template, press <kbd>Ctrl+S</kbd>.
 
 1. In the `<variables>` section of the *template.json* code file, notice that values are stored to configure networking for the virtual machine.
 
 1. In the `<resources>` section, notice that the template creates an IP address, a virtual network, the virtual machine, and other related resources.
 
-1. To close the code editor, press <kbd>Ctrl+q</kbd>.
+1. To close the code editor, press <kbd>Ctrl+Q</kbd>.
 
 ## Validate your template
 
