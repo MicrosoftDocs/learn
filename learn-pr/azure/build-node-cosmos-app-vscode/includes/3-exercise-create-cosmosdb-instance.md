@@ -39,7 +39,7 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
 1. Sign in with the same credentials you used to set up the sandbox, and then close the browser page.
 
-1. In the toolbar above the Azure Databases extension pane, select **Create Account** (the **+** sign).
+1. In the toolbar above the Azure Databases extension pane, select **Create Server** (the **+** sign).
 
     :::image type="content" source="../media/3-add-comsosdb-account.png" alt-text="Screenshot of the Azure Databases extension pane in Visual Studio Code. The user has selected the **Create Account** command." loc-scope="vs-code":::
 
@@ -59,13 +59,13 @@ This exercise runs on your desktop computer and uses an Azure sandbox for your r
 
     Wait while the Azure Databases extension account is created. This will take a few minutes.
 
-1. When the account has been created, in the Azure Databases extension pane, expand the Concierge Subscription. Verify that the new Cosmos DB account appears.
+1. When the account has been created, in the Azure Databases extension pane, expand *Concierge Subscription*. Verify that the new Cosmos DB account appears.
 
     :::image type="content" source="../media/3-new-comsosdb-account.png" alt-text="Screenshot of the Azure Databases extension pane in Visual Studio Code. The new Azure Databases extension account is listed under the user's Azure account." loc-scope="vs-code":::
 
 ## Create a database and container
 
-1. In the Database pane, right-click the database account you created, and then select **Create Database**.
+1. In the Azure Databases extension pane, right-click the database account you created, and then select **Create Database**.
 
     :::image type="content" source="../media/3-cosmosdb-create-database.png" alt-text="Screenshot of the Azure Databases extension pane in Visual Studio Code. The user has selected the Create Database command for the Azure Databases extension account." loc-scope="vs-code":::
 

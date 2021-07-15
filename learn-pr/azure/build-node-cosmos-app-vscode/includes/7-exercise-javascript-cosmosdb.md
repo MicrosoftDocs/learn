@@ -38,11 +38,7 @@ The first task is to enable your application to connect to the Azure Databases e
 
 1. In the toolbar on the left side of Visual Studio Code, select the **Azure** icon.
 
-1. In the **Azure Databases extension** pane, if you aren't already connected, select **Sign in to Azure**. Sign in with the same credentials you used to set up the sandbox.
-
-    ![Screenshot of Azure Databases extension pane in Visual Studio Code. The user is about to sign in to Azure.](../media/7-azure-sign-in.png)
-
-1. Expand your Azure account, right-click your Azure Databases extension account, and then select **Copy Connection String**.
+1. Expand your Cosmos DB account, right-click your Azure Databases extension account, and then select **Copy Connection String**.
 
     ![Screenshot of Azure DB pane in Visual Studio Code. The user is copying the connection string for the Azure DB account to the clipboard.](../media/7-connection.png)
 
