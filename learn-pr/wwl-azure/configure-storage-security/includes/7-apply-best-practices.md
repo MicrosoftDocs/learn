@@ -9,7 +9,7 @@ When you use shared access signatures in your applications, you should be aware 
 
 The following recommendations for using shared access signatures can help mitigate risks.
 
- -  **Always use HTTPS to create or distribute a SAS**. If a SAS is passed over HTTP and intercepted, an attacker could intercept and use the SAS. These man-in-the-middle attacks can compromisesensitive data or allowfor data corruption by the malicious user.
+ -  **Always use HTTPS to create or distribute a SAS**. If a SAS is passed over HTTP and intercepted, an attacker could intercept and use the SAS. These man-in-the-middle attacks can compromise sensitive data or allow for data corruption by the malicious user.
  -  **Reference stored access policies where possible**. Stored access policies give you the option to revoke permissions without having to regenerate the storage account keys. Set the storage account key expiration date far out in the future.
  -  **Use near-term expiration times on an unplanned SAS**. In this way, even if a SAS is compromised, it's valid only for a short time. This practice is important if you can't reference a stored access policy. Near-term expiration times also limit the amount of data that can be written to a blob by limiting the time available to upload to it.
  -  **Have clients automatically renew the SAS if necessary**. Clients should renew the SAS well before the expiration date. Renewing early allows time for retries if the service providing the SAS is unavailable.
