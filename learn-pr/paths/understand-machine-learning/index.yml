@@ -19,7 +19,7 @@ summary: |
   ### [Option 1: The complete course: Foundations of data science for machine learning](/learn/paths/machine-learning-foundations-using-data-science/)
   This is the recommended option for most people. It has all the same modules as the other two learning paths with a custom flow that maximizes reinforcement of concepts. If you want to learn about both the underlying concepts as well as how to get into building models with the most common machine learning tools this is the path for you. It's also the best path if you plan to move beyond classic machine learning, and get an education in deep learning and neural networks, which we only introduce here.
   
-  ### [Option 2: The _Understand data science for machine learning_ learning path](/learn/paths/understand-machine-learning)
+  ## Option 2: The _Understand data science for machine learning_ learning path
   If you are looking to understand how machine learning works and don't have much mathematical background then this path is for you. It makes no assumptions about previous education (other than a very light familiarity with coding concepts) and teaches with code, metaphor, and visual that give you the ah ha moment. It's hands-on, but focuses more on understanding fundamentals and less on the power of the tools and libraries available.
 
   ✔ You are currently on this path, scroll down to begin.
