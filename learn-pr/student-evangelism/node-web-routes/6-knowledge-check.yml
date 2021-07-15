@@ -14,38 +14,25 @@ content: Choose the best response for each question. Then select **Check your an
 quiz:
   title: Check your knowledge
   questions:
-    - content: How would you set up Express to handle a post request with JSON data?
+    - content: What is a way to setup middleware? 
       choices:
-        - content: Call app.use(bodyParser.json()) at the top, register a route by using the post method as in app.post(<route>, () =>{}), read from req.body
+        - content: Use `app.get(‘/’, () => {}).`
+          isCorrect: false
+          explanation: Incorrect. That’s how you would setup a default route, for ‘/’. 
+        - content: Use `app.use({} => {})`.
           isCorrect: true
-        - content: Register a route by using the post method as in app.post(<route>, () =>{}), read from req.body
+          explanation: Correct, using `use()` is correct way to set up a middleware.
+        - content: Use `app.middleware() => {})`.
           isCorrect: false
-          explanation: You need to configure a body paring middleware or the posted data won't be available on req.body.
-        - content: Configure body parsing middleware, register a route by using the post method as in app.post(<route>, () =>{}), read from req.data
-          isCorrect: false
-          explanation: The posted data is available on req.body, not req.data.
-        - content: "Call app.use(bodyParser.urlencoded({ extended: false })) at the top, register a route by using the post method as in app.post(<route>, () =>{}), read from req.body"
-          isCorrect: false
-          explanation: The configuration at the top is wrong. That configuration will instruct it to receive posted data from a form that is URL encoded. It needs to be app.use(bodyParser.json()).
-    - content: What is a query parameter? 
+          explanation: Incorrect. There’s no such method called `middleware()`.
+    - content: How would you respond with text content?
       choices:
-        - content: You use query parameters to divide your app into logical parts.
+        - content: Use `res.text()` method;
           isCorrect: false
-          explanation: That’s what you use routes for like ‘/products’, ‘/users’. 
-        - content: A query parameter is used to get hold of specific items in a collection. 
-          isCorrect: false
-          explanation: That’s what you would use a route parameter for.
-        - content: A Query parameter is something that exist last in the route, after the question mark and can be used to filter the size of the response.
+          explanation: Incorrect. There’s no such method `text()` on the response stream.
+        - content: Use the `res.send()` method.
           isCorrect: true
-          explanation: Correct! You can use query parameters to define for example a page or a page size to reduce the size of what’s being returned.
-    - content: How would you implement a route that is meant to update a resource?
-      choices:
-        - content: Use the `put()` method and setup a route and a callback function.
-          isCorrect: true
-          explanation: Correct! `put()` is what you would use.
-        - content: Use the `post()` method, a route and a callback function.
+          explanation: Correct, this method ensure what’s sent back is of type text.
+        - content: Use the `req.send()` method.
           isCorrect: false
-          explanation: You can theoretically use the `post()` to handle updates but it’s better to be specific and use a `put()` method as this is what’s expected of put.
-        - content: Use `get()` method and setup a route and a callback function.
-          isCorrect: false
-          explanation: The `get()` method is what you would use to read data not write it. 
+          explanation: Incorrect. While `send()` is the correct method to use for sending data back, you need to use the response stream `res`, not the request `req`.

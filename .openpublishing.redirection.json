@@ -8071,6 +8071,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/advocates/build-web-api-nodeje-express/6-middleware.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-web-api-nodejs-express/4-middleware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/build-web-api-nodeje-express/7-exercise-middleware.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-web-api-nodejs-express/5-exercise-middleware",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/advocates/build-web-api-nodeje-express/8-knowledge-check.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/build-web-api-nodejs-express/6-knowledge-check",
       "redirect_document_id": false

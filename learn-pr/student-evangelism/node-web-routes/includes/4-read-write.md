@@ -1,4 +1,4 @@
-So far you've seen examples of requests made toward a web application when the client wants to read data. However, you are likely to want to write data as well.  To write data, you want to use an HTTP verb that matches your intention. You also need to know that incoming data an come in various forms, so you need to configure your Express application to match how the data arrives to your app.
+So far you've seen examples of requests made toward a web application when the client wants to read data. However, you are likely to want to write data as well.  To write data, you want to use an HTTP verb that matches your intention. You also need to know that incoming data can come in various forms, so you need to configure your Express application to match how the data arrives to your app.
 
 ```javascript
 app.get('/<path>', (req, res) => {

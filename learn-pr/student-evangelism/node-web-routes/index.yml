@@ -29,7 +29,7 @@ prerequisites: |
   - Experience using the command line, including Git operations
 units:
 - learn.student-evangelism.node-web-routes.introduction
-- learn.student-evangelism.node-web-routes.route-management
+- learn.student-evangelism.node-web-routes.manage-routes
 - learn.student-evangelism.node-web-routes.exercise-route-query-parameters
 - learn.student-evangelism.node-web-routes.read-write
 - learn.student-evangelism.node-web-routes.exercise-read-write
