@@ -18,7 +18,7 @@ By the end of this module, you should be able to upgrade and apply patches to yo
 ## Learning objectives
 
 Upon completing this module, you should be able to: 
- - Understand what [Kubernetes versions](https://docs.microsoft.com/azure/aks/supported-kubernetes-versions) are supported by Azure Kubernetes Services (AKS).
+ - Understand what Kubernetes versions are supported by Azure Kubernetes Services (AKS)
  - Upgrade your existing Azure Kubernetes Services (AKS) clusters components to the latest supported Kubernetes version
  - Understand how to adopt a Blue/Green deployment to upgrade your Azure Kubernetes Services clusters in a production environment
  
