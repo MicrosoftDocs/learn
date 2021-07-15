@@ -127,11 +127,13 @@ You can preview your webpage locally by opening the HTML file in a browser. Inst
 
 You can inspect a webpage by using the developer tools in your browser. Let's give this a try.
 
-1. Open Developer Tools.
+1. Open Developer Tools by right-clicking in the web page and selecting **Inspect**, or try these shortcuts:
 
-   - In **Edge**, press the keyboard shortcut for **Developer Tools**, which is <kbd>F12</kbd> or <kbd>Ctrl-Shift+I</kbd>. Alternatively, view **Settings and more** by pressing <kbd>Alt+X</kbd>, and selecting **Developer Tools**.
+   - In **Edge** on Windows or Linux, press the keyboard shortcut for **Developer Tools**, which is <kbd>F12</kbd> or <kbd>Ctrl-Shift+I</kbd>. Alternatively, view **Settings and more** by pressing <kbd>Alt+X</kbd>, and selecting **Developer Tools**.
 
-   - In **Chrome**, press the keyboard shortcut for **Developer Tools**, which is <kbd>Option+Command+I</kbd> or <kbd>F12</kbd>.
+   - In **Chrome** on Windows or Linux, press the keyboard shortcut <kbd>Ctrl-Shift+I</kbd>. Or, open the Chrome Menu in the upper-right-hand corner of the browser window and select **More Tools > Developer Tools**.
+
+   - In **Chrome** on a Mac, press the keyboard shortcut for **Developer Tools**, which is <kbd>Option+Command+I</kbd> or <kbd>F12</kbd>.
 
 1. Select the **Elements** tab.
 
