@@ -12,7 +12,7 @@ Azure RBAC roles can be assigned to individuals and groups. The rights assigned 
 
 If the default roles do not meet your organization's need for more selective access control, you can create your own Custom roles. Custom roles give you the flexibility to develop permission-based rules for individuals' or groups that provide access while defining your own security stipulations to secure data or resources. You can make a role available at a specific workspace level, a specific resource group level, or a subscription level by defining the scope of your custom role, which we can see in the example JSON below.
 
-Custom roles can be created by defining possible actions permitted and NotActions to restrict specific activities or access.  You can create custom roles using Azure Portal, Azure PowerShell, Azure CLI, or the REST API. Below we can see a custom role JSON request for a Data Scientist:
+Custom roles can be created by defining possible actions permitted and NotActions to restrict specific activities or access.  You can create custom roles using Azure portal, Azure PowerShell, Azure CLI, or the REST API. Below we can see a custom role JSON request for a Data Scientist:
 
 ```JSON
 {

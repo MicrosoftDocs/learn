@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-machine-learning-security.azure-key-vault
-title: Keys and Secrets with Azure Key Vault
+title: Keys and secrets with Azure Key Vault
 metadata:
-  title: Keys and Secrets with Azure Key Vault
+  title: Keys and secrets with Azure Key Vault
   description: When to use Azure Machine Learning
   ms.date: 03/14/2021
   author: tomreidnz
