@@ -3,7 +3,6 @@
 A site-to-site (S2S) VPN gateway connection lets you create a secure connection to your virtual network from another virtual network or a physical network. The following diagram illustrates how you would connect an on-premises network to the Azure platform. The internet connection uses an IPsec VPN tunnel.
 
 > [!div class="mx-imgBorder"]
-
 >![Site-to-site VPN Gateway architecture.](../media/site-site-vpn-architecture.png)
 
 ## In the diagram:

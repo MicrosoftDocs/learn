@@ -110,9 +110,8 @@ The following table lists the requirements for PolicyBased and RouteBased VPN ga
 ### Create the VPN Gateway
 
 The VPN gateway settings that you chose are critical to creating a successful connection.
-  > [!div class="mx-imgBorder"]
-
-  > ![Screenshot of the Create virtual network gateway page in the Azure portal. The parameters discussed in the topic are shown, including: Name and Gateway Type, VPN Type, SKU, Virtual Networks, and Public IP Address.](../media/vpn-gateway-config.png)
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the Create virtual network gateway page in the Azure portal. The parameters discussed in the topic are shown, including: Name and Gateway Type, VPN Type, SKU, Virtual Networks, and Public IP Address.](../media/vpn-gateway-config.png)
 
  
 
@@ -143,7 +142,6 @@ The local network gateway typically refers to the on-premises location. You give
 
  
 > [!div class="mx-imgBorder"]
-
 > ![Screenshot of the Create local network gateway page. The Name is VNet1LocalNet. The IP address is 128.8.8.8. The Address space is 10.101.0.0 24.](../media/local-network-gateway.png)
 
  
@@ -173,7 +171,6 @@ To configure your VPN device, you will need:
 Once your VPN gateways are created, you can create the connection between them. If your VNets are in the same subscription, you can use the portal.
 
 > [!div class="mx-imgBorder"] 
-
 > ![Screenshot of the Add Connection page in the Azure portal. TestVNet4GW is selected as the second virtual network gateway. The Shared key is abc123.](../media/gateway-conections.png)
 
 **Name**. Enter a name for your connection.
@@ -203,7 +200,6 @@ To provide better availability for your VPN connections, there are a few options
 Every Azure VPN gateway consists of two instances in an active-standby configuration. For any planned maintenance or unplanned disruption that happens to the active instance, the standby instance would take over (failover) automatically and resume the S2S VPN or VNet-to-VNet connections. The switch over will cause a brief interruption. For planned maintenance, the connectivity should be restored within 10 to 15 seconds. For unplanned issues, the connection recovery will be longer, about 1 to 3 minutes in the worst case. For P2S VPN client connections to the gateway, the P2S connections will be disconnected, and the users will need to reconnect from the client machines.
 
 > [!div class="mx-imgBorder"]
-
 >![Single Azure VPN Gateway in active standby VPN configuration.](../media/vpn-active-standby.png)
 
  
@@ -213,7 +209,6 @@ Every Azure VPN gateway consists of two instances in an active-standby configura
 You can use multiple VPN devices from your on-premises network to connect to your Azure VPN gateway, as shown in the following diagram:
 
 > [!div class="mx-imgBorder"]
-
 >![Multiple Azure VPN Gateways in active standby VPN configuration.](../media/vpn-multiple-onprem-vpns.png)
 
  
@@ -241,7 +236,6 @@ In this configuration, the Azure VPN gateway is still in active-standby mode, so
 You can create an Azure VPN gateway in an active-active configuration, where both instances of the gateway VMs will establish S2S VPN tunnels to your on-premises VPN device, as shown the following diagram:
 
 > [!div class="mx-imgBorder"]
-
 >![Single Azure VPN Gateway in active active configuration.](../media/vpn-active-active.png)
 
 In this configuration, each Azure gateway instance will have a unique public IP address, and each will establish an IPsec/IKE S2S VPN tunnel to your on-premises VPN device specified in your local network gateway and connection. Note that both VPN tunnels are part of the same connection. You will still need to configure your on-premises VPN device to accept or establish two S2S VPN tunnels to those two Azure VPN gateway public IP addresses.
@@ -255,7 +249,6 @@ When a planned maintenance or unplanned event happens to one gateway instance, t
 The most reliable option is to combine the active-active gateways on both your network and Azure, as shown in the diagram below.
 
 > [!div class="mx-imgBorder"]
-
 >![Dual-redundancy: active-active VPN gateways for both Azure and on-premises networks.](../media/vpn-dual-redundancy.png)
 
 Here you create and set up the Azure VPN gateway in an active-active configuration and create two local network gateways and two connections for your two on-premises VPN devices as described above. The result is a full mesh connectivity of 4 IPsec tunnels between your Azure virtual network and your on-premises network.
@@ -269,7 +262,6 @@ This topology will require two local network gateways and two connections to sup
 The same active-active configuration can also apply to Azure VNet-to-VNet connections. You can create active-active VPN gateways for both virtual networks, and connect them together to form the same full mesh connectivity of 4 tunnels between the two VNets, as shown in the diagram below:
 
 > [!div class="mx-imgBorder"]
-
 >![Highly available VNet-to-VNet VPN Gateway configuration.](../media/vpn-vnet-vnet.png)
 
 This ensures there are always a pair of tunnels between the two virtual networks for any planned maintenance events, providing even better availability. Even though the same topology for cross-premises connectivity requires two connections, the VNet-to-VNet topology shown above will need only one connection for each gateway. Additionally, BGP is optional unless transit routing over the VNet-to-VNet connection is required.

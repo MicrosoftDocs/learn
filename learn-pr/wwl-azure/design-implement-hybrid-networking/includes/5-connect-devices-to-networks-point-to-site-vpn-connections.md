@@ -61,7 +61,7 @@ Users use the native VPN clients on Windows and Mac devices for P2S. Azure provi
 - For Mac devices, it consists of the mobileconfig file that users install on their devices.
 
 > [!div class="mx-imgBorder"]
->![configuration window in the azure portal for a point to site connection](../media/configure-point-site.png)
+>![configuration window in the Azure portal for a point to site connection](../media/configure-point-site.png)
 
  
 
