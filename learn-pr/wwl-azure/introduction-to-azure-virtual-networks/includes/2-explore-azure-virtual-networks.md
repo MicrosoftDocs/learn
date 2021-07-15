@@ -153,7 +153,7 @@ On the Virtual Network page, select **Create**.
 In Create virtual network, enter or select this information in the **Basics** tab:
 
 | **Setting**          | **Value**                                                    |
-|:-:|:-:|
+|:-|:-|
 | **Project details**  |                                                              |
 | Subscription         | Select your subscription.                                    |
 | Resource group       | Select an existing resource group **or** Create a new resource group. |

@@ -24,7 +24,7 @@ In this exercise, you will:
 4. Use the information in the following table to create the private DNS zone.
 
     | **Tab**         | **Option**                             | **Value**            |
-    |:-:|:-:|:-:|
+    |:-|:-|:-|
     | Basics          | Resource group                         | ContosoResourceGroup |
     |                 | Name                                   | Contoso.com          |
     | Tags            | No changes required                    |                      |
@@ -47,7 +47,7 @@ In this exercise, you will:
 3. Use the information in the following table to add the virtual network link.
 
     | **Option**                          | **Value**                               |
-    |:-:|:-:|
+    |:-|:-|
     | Link name                           | CoreServicesVnetLink                    |
     | Subscription                        | No changes required                     |
     | Virtual Network                     | CoreServicesVnet (ContosoResourceGroup) |
@@ -62,7 +62,7 @@ In this exercise, you will:
 6. Repeat steps 2 - 5 for the ManufacturingVnet, using the information in the following table: 
 
     | **Option**                          | **Value**                                |
-    |:-:|:-:|
+    |:-|:-|
     | Link name                           | ManufacturingVnetLink                    |
     | Subscription                        | No changes required                      |
     | Virtual Network                     | ManufacturingVnet (ContosoResourceGroup) |
@@ -77,7 +77,7 @@ In this exercise, you will:
 9. Repeat steps 2 - 5 for the ResearchVnet, using the information in the following table: 
 
     | **Option**                          | **Value**                           |
-    |:-:|:-:|
+    |:-|:-|
     | Link name                           | ResearchVnetLink                    |
     | Subscription                        | No changes required                 |
     | Virtual Network                     | ResearchVnet (ContosoResourceGroup) |
@@ -111,7 +111,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 5. Use the information in the following table to create your first VM.
 
     | **Tab**         | **Option**                                                   | **Value**                             |
-    |:-:|:-:|:-:|
+    |:-|:-|:-|
     | Basics          | Resource group                                               | ContosoResourceGroup                  |
     |                 | Virtual machine name                                         | TestVM1                               |
     |                 | Region                                                       | (US) West US                          |
@@ -156,7 +156,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 5. Use the information in the following table to create your second VM.
 
     | **Tab**         | **Option**                                                   | **Value**                             |
-    |:-:|:-:|:-:|
+    |:-|:-|:-|
     | Basics          | Resource group                                               | ContosoResourceGroup                  |
     |                 | Virtual machine name                                         | TestVM2                               |
     |                 | Region                                                       | (US) West US                          |

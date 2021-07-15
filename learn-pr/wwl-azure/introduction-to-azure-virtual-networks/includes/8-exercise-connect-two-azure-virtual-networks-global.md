@@ -31,7 +31,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 5. Use the information in the following table to create your VM.
 
     | **Tab**         | **Option**                                                   | **Value**                             |
-    |:-:|:-:|:-:|
+    |:-|:-|:-|
     | Basics          | Resource group                                               | ContosoResourceGroup                  |
     |                 | Virtual machine name                                         | ManufacturingVM                       |
     |                 | Region                                                       | (Europe) North Europe                 |
@@ -103,7 +103,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 2. Use the following command to verify that there is no connection to TestVM1 on CoreServicesVnet. Be sure to use the IPv4 address for TestVM1.
 
     | PowerShell                               |
-    |:-:|
+    |:-|
     | Test-NetConnection 10.20.20.4 -port 3389 |
 
 
@@ -125,7 +125,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 4. Use the information in the following table to create the peering.
 
     | **Section**                          | **Option**                                    | **Value**                             |
-    |:-:|:-:|:-:|
+    |:-|:-|:-|
     | This virtual network                 |                                               |                                       |
     |                                      | Peering link name                             | CoreServicesVnet-to-ManufacturingVnet |
     |                                      | Traffic to remote virtual network             | Allow (default)                       |
@@ -157,7 +157,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 2. Use the following command to verify that there is now a connection to TestVM1 on CoreServicesVnet. 
 
     | PowerShell                               |
-    |:-:|
+    |:-|
     | Test-NetConnection 10.20.20.4 -port 3389 |
 
 

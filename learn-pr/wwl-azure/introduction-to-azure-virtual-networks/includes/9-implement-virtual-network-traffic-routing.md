@@ -9,7 +9,7 @@ Azure automatically creates system routes and assigns the routes to each subnet 
 Each route contains an address prefix and next hop type. When traffic leaving a subnet is sent to an IP address within the address prefix of a route, the route that contains the prefix is the route Azure uses. Whenever a virtual network is created, Azure automatically creates the following default system routes for each subnet within the virtual network:
 
 | **Source** | **Address prefixes**          | **Next hop type** |
-|:-:|:-:|:-:|
+|:-|:-|:-|
 | Default    | Unique to the virtual network | Virtual network   |
 | Default    | 0.0.0.0/0                     | Internet          |
 | Default    | 10.0.0.0/8                    | None              |
@@ -39,7 +39,7 @@ Azure adds default system routes for any Azure capabilities that you enable. Dep
 
 
 | **Source**              | **Address prefixes**                                                                      | **Next hop type**             | **Subnet within virtual network that route is added to** |
-|:-:|:-:|:-:|:-:|
+|:-|:-|:-|:-|
 | Default                 | Unique to the virtual network, for example: 10.1.0.0/16                                   | VNet peering                  | All                                                      |
 | Virtual network gateway | Prefixes advertised from on-premises via BGP, or configured in the local network gateway  | Virtual network gateway       | All                                                      |
 | Default                 | Multiple                                                                                  | VirtualNetworkServiceEndpoint | Only the subnet a service endpoint is enabled for        |

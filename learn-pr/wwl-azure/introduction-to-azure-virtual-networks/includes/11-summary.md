@@ -5,8 +5,7 @@ In this module you saw a broad overview of some of the most crucial aspects of d
 
 You now have the fundamental knowledge required to design and implement virtual networking in Azure.
 
-## Summary and Resources
-
+## Summary 
 
 Now that you have reviewed this module, you should be able to:
 
