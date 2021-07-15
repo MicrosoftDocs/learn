@@ -20,7 +20,7 @@ To be able to send SMS messages from an Azure Function, you'll need a Twilio acc
 
 ## Create a new Twilio project
 
-Before you start using Twilio to send messages to your verified number, create a project to send programable SMS.
+Before you start using Twilio to send messages to your verified number, create a project to send programmable SMS.
 
 1. Select the drop-down at the top-left corner of the screen and select **Create New Project**.
 
