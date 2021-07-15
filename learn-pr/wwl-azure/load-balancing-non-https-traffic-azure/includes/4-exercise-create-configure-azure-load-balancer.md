@@ -127,7 +127,7 @@ The backend address pool contains the IP addresses of the virtual NICs connected
 
 4. Click **Add**.
     > [!div class="mx-imgBorder"]
-    > ![create a backend pool](../media/create-backendpool.png)
+    > ![create a backend pool](../media/create-backend-pool.png)
 
  
 
@@ -151,7 +151,7 @@ The load balancer monitors the status of your app with a health probe. The healt
 
 3. Click **Add**.
     > [!div class="mx-imgBorder"]
-    > ![create a health probe](../media/create-healthprobe.png)
+    > ![create a health probe](../media/create-health-probe.png)
 
  
 
@@ -180,7 +180,7 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
 
 3. Click **Add**.
     > [!div class="mx-imgBorder"]
-    > ![create a load balancer rule](../media/create-loadbalancer-rule.png)
+    > ![create a load balancer rule](../media/create-load-balancer-rule.png)
 
  
 
@@ -217,7 +217,7 @@ In this section, you will create three VMs, that will be in the same availabilit
 
 6. On the **myBackendPool** page, click **Save**.
     > [!div class="mx-imgBorder"]
-    > ![add vms to backend pool](../media/add-vms-backendpool.png)
+    > ![add vms to backend pool](../media/add-vms-backend-pool.png)
 
 
 ## Task 5: Test the load balancer

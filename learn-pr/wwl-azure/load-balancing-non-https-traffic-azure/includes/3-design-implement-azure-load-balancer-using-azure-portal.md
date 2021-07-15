@@ -45,7 +45,7 @@ You can choose to have a frontend guaranteed to a single zone, which is known as
 Additionally, the use of zonal frontends directly for load balanced endpoints within each zone is supported. You can use this configuration to expose per zone load-balanced endpoints to individually monitor each zone. For public endpoints, you can integrate them with a DNS load-balancing product like Traffic Manager and use a single DNS name.
 
 > [!div class="mx-imgBorder"]
-> ![Diagram illustrating Zonal load balancers in Azure](../media/zonal-loadbalancer.png)
+> ![Diagram illustrating Zonal load balancers in Azure](../media/zonal-load-balancer.png)
 
 For a public load balancer frontend, you add a zones parameter to the public IP. This public IP is referenced by the frontend IP configuration used by the respective rule.
 
@@ -222,7 +222,7 @@ The next task is to create a health probe to monitor the virtual machines in the
 On the **Backend pools** page of the load balancer, under **Settings**, select **Health probes**, and then click **Add**.
 
 > [!div class="mx-imgBorder"]
-> ![Add health probes](../media/create-healthprobe-1.png)
+> ![Add health probes](../media/create-health-probe-1.png)
 
 You need to enter the following information on the **Add health probe** page.
 
@@ -237,10 +237,10 @@ You need to enter the following information on the **Add health probe** page.
 You then click **Add** to add the health probe.
 
 > [!div class="mx-imgBorder"]
-> ![configure health probe settings](../media/create-healthprobe-2.png)
+> ![configure health probe settings](../media/create-health-probe-2.png)
 
 > [!div class="mx-imgBorder"]
-> ![View list of added health probes in load balancer](../media/create-healthprobe-3.png)
+> ![View list of added health probes in load balancer](../media/create-health-probe-3.png)
 
  
 
@@ -251,7 +251,7 @@ The last task is to create a load balancing rule for the load balancer. A load b
 On the **Health probes** page of the load balancer, under **Settings**, select **Load balancing rules**, and then click **Add**.
 
 > [!div class="mx-imgBorder"]
-> ![Add load balancing rule](../media/create-loadbalancing-rule-1.png)
+> ![Add load balancing rule](../media/create-load-balancing-rule-1.png)
 
 You need to enter the following information on the **Add load balancing rule** page.
 
@@ -271,10 +271,10 @@ You need to enter the following information on the **Add load balancing rule** p
 You then click **Add** to add the load balancing rule.
 
 > [!div class="mx-imgBorder"]
-> ![Add load balancing rule - Add](../media/create-loadbalancing-rule-2.png)
+> ![Add load balancing rule - Add](../media/create-load-balancing-rule-2.png)
 
 > [!div class="mx-imgBorder"]
-> ![View list of added load balancing rules](../media/create-loadbalancing-rule-3.png)
+> ![View list of added load balancing rules](../media/create-load-balancing-rule-3.png)
 
  
 

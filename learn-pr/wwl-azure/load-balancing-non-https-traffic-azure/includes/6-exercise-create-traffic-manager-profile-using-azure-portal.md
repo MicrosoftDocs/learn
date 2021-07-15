@@ -151,14 +151,14 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
 2. On the **Overview** screen, copy the **DNS name** entry to the clipboard (or take note of it somewhere).
 
     > [!div class="mx-imgBorder"]
-    > ![traffic manager DNS name](../media/check-dnsname-1.png)
+    > ![traffic manager DNS name](../media/check-dns-name-1.png)
 
 3. Open a web browser tab, and paste (or enter) the **DNS name** entry (contoso-tmprofile.trafficmanager.net) into the address bar, and press Enter.
 
 4. The web app's default web site should be displayed.
 
     > [!div class="mx-imgBorder"]
-    > ![web apps default webpage](../media/traffic-manager-webapp-test-1a.png)
+    > ![web apps default webpage](../media/traffic-manager-web-app-test-1.png)
 
 5. Currently all traffic is being sent to the primary endpoint as you set its **Priority** to **1**.
 

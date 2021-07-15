@@ -104,28 +104,28 @@ The following traffic routing methods are available in Traffic Manager:
 This is an example of the **Priority** routing method.
 
 > [!div class="mx-imgBorder"]
-> ![Diagram illustrating the 'Priority' routing method](../media/routingmethod-priority.png)
+> ![Diagram illustrating the 'Priority' routing method](../media/routing-method-priority.png)
 
 For more information, see [Priority traffic-routing method](/azure/traffic-manager/traffic-manager-routing-methods). 
 
 This is an example of the **Weighted** routing method.
 
 > [!div class="mx-imgBorder"]
-> ![Diagram illustrating the 'Weighted' routing method](../media/routingmethod-weighted.png)
+> ![Diagram illustrating the 'Weighted' routing method](../media/routing-method-weighted.png)
 
 For more information, see [Weighted traffic-routing method](/azure/traffic-manager/traffic-manager-routing-methods).
 
 This is an example of the **Performance** routing method.
 
 > [!div class="mx-imgBorder"]
-> ![Diagram illustrating the 'Performance' routing method](../media/routingmethod-performance.png)
+> ![Diagram illustrating the 'Performance' routing method](../media/routing-method-performance.png)
 
 For more information, see [Performance traffic-routing method](/azure/traffic-manager/traffic-manager-routing-methods).
 
 This is an example of the **Geographic** routing method.
 
 > [!div class="mx-imgBorder"]
-> ![Diagram illustrating the 'Geographic' routing method](../media/routingmethod-geographic.png)
+> ![Diagram illustrating the 'Geographic' routing method](../media/routing-method-geographic.png)
 
 For more information, see [Geographic traffic-routing method](/azure/traffic-manager/traffic-manager-routing-methods).
 
