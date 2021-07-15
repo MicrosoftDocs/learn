@@ -23,5 +23,3 @@ Insert text here.
 ## Export resources using Azure CLI, Azure PowerShell, and REST API
 
 Insert text here.
-
-https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/export-template-portal
