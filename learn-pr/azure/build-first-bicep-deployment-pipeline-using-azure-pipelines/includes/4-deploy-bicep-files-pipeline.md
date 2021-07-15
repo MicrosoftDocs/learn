@@ -83,6 +83,6 @@ You can also specify variables in your pipeline's YAML file. You might do this w
 
 When you define variables in your YAML file, you can define them at different _scopes_. For example, you can define a variable at the root scope, which means its value can be used throughout your YAML pipeline. You can also scope a variable to a single job, and it won't be accessible outside of that job. If the same variable is defined in multiple scopes, the value from the most specific scope will be used.
 
-:::code language="yaml" source="code/4-yaml-variables.yaml" highlight="1-3, 12-13" :::
+:::code language="yaml" source="code/4-yaml-variables.yaml" highlight="6-8, 12-13" :::
 
 This pipeline contains three variables. `ServiceConnectionName` and `EnvironmentType` are defined at the root level of the pipeline. The `ResourceGroupName` variable is scoped to the job.

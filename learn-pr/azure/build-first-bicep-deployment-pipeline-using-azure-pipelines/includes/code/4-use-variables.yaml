@@ -8,7 +8,7 @@ jobs:
   steps:
   - task: AzureCLI@2
     inputs:
-      azureSubscription: $(serviceConnection)
+      azureSubscription: $(ServiceConnectionName)
       scriptType: 'bash'
       scriptLocation: 'inlineScript'
       inlineScript: 'az deployment group create --resource-group $(ResourceGroupName) --template-file deploy/main.bicep -p environmentType=$(EnvironmentType)'
