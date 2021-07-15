@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.introduction-to-azure-virtual-networks.exercise-configure-dns-settings-azure
-title: 'Exercise: configure Domain Name Servers settings in Azure'
+title: 'Exercise: configure domain name servers settings in Azure'
 metadata:
-  title: 'Exercise: configure Domain Name Servers settings in Azure'
-  description: "Exercise: configure Domain Name Servers settings in Azure"
+  title: 'Exercise: configure domain name servers settings in Azure'
+  description: "Exercise: configure domain name servers settings in Azure"
   ms.date: 07/15/2021
   author: wwlpublish
   ms.author: jileary

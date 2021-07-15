@@ -17,7 +17,8 @@ Azure DNS provides a reliable, secure DNS service to manage and resolve domain n
 A DNS zone hosts the DNS records for a domain. So, to start hosting your domain in Azure DNS, you need to create a DNS zone for that domain name. Each DNS record for your domain is then created inside this DNS zone.
 
 ## Considerations
--  The name of the zone must be unique within the resource group, and the zone must not exist already.-  The same zone name can be reused in a different resource group or a different Azure subscription.-  Where multiple zones share the same name, each instance is assigned different name server addresses.-  Root/Parent domain is registered at the registrar and pointed to Azure NS.-  Child domains are registered in AzureDNS directly.
+-  The name of the zone must be unique within the resource group, and the zone must not exist already.
+-  The same zone name can be reused in a different resource group or a different Azure subscription.-  Where multiple zones share the same name, each instance is assigned different name server addresses.-  Root/Parent domain is registered at the registrar and pointed to Azure NS.-  Child domains are registered in AzureDNS directly.
 
 > [!NOTE] 
 >
