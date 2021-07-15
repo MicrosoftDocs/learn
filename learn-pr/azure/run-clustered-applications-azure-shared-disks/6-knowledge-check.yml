@@ -14,41 +14,41 @@ quiz:
   title: Check your knowledge
   questions:
  
-  - content: "An administrator plans to use an Azure shared disk for their clustered database. Which of the following SQL deployment options can benefit from Azure shared disk?"
+  - content: "An administrator plans to use an Azure shared disk for a clustered database. Which one of the following SQL deployment options can benefit from Azure shared disks?"
     choices:
-    - content: "Single instance SQL"
+    - content: "A single instance SQL"
       isCorrect: false
       explanation: "Single instance SQL is deployed on only one VM and doesn't require Azure shared disk."
-    - content: "Always On Availability Group"
+    - content: "An Always On availability group"
       isCorrect: false
-      explanation: "Always On Availability group provides high available SQL deployment, but doesn't use Azure shared disks."
-    - content: "SQL FCI"
+      explanation: "An Always On availability group provides high availability SQL deployment, but it doesn't use Azure shared disks."
+    - content: "A SQL Server failover cluster instance (FCI)"
       isCorrect: true
-      explanation: "SQL FCI leverages failover-cluster scenarios where multiple VMs access and use an Azure shared disk."
+      explanation: "A SQL Server FCI takes advantage of failover cluster scenarios, where multiple VMs access and use an Azure shared disk."
  
-  - content: "Which of the following statements is true about Azure shared disks?"
+  - content: "Which one of the following statements is true about Azure shared disks?"
     choices:
-    - content: "Shared managed disks offer a fully managed file system that can be accessed using SMB/NFS."
+    - content: "Shared managed disks offer a fully managed file system that can be accessed by using SMB/NFS."
       isCorrect: false
-      explanation: "Shared managed disks don't natively offer a fully managed file system that can be accessed using SMB/NFS. You need to use a cluster manager, such as Windows Server Failover Cluster (WSFC) or Pacemaker, that handles cluster node communication and write locking."
+      explanation: "Shared managed disks don't natively offer a fully managed file system that can be accessed by using SMB/NFS. You need to use a cluster manager, such as Windows Server Failover Cluster (WSFC) or Pacemaker, that handles cluster node communication and write locking."
     - content: "I can use a shared disk as an OS Disk."
       isCorrect: false
-      explanation: "You can only use Azure shared disks as Data disks."
-    - content: "You can use SCSI PR commands to enable failover from one node to another, when using Azure shared disks."
+      explanation: "You can use Azure shared disks only as data disks."
+    - content: "You can use SCSI PR commands to enable failover from one node to another when you use Azure shared disks."
       isCorrect: true
-      explanation: "Azure shared disks support SCSI PR standards. Once you've mounted the shared disk to your VMs in your cluster, you can establish a quorum and read/write to the disk using SCSI PR."
+      explanation: "Azure shared disks support SCSI PR standards. After you've mounted the shared disk to the VMs in your cluster, you can establish a quorum and read/write access to the disk by using SCSI PR."
  
-  - content: "An administrator plans to create an Azure VM that will use an Azure shared disk. Which of the following disk types can use the shared disk functionality?"
+  - content: "An administrator plans to create an Azure VM that will use an Azure shared disk. Which one of the following disk types can use the shared disk functionality?"
     choices:
     - content: "Data disk"
       isCorrect: true
-      explanation: "The Azure shared disks can only be shared as data disks."
+      explanation: "Azure shared disks can be shared only as data disks."
     - content: "OS disk"
       isCorrect: false
-      explanation: "The Azure shared disks can only be shared as data disks."
+      explanation: "Azure shared disks can be shared only as data disks."
     - content: "Temporary disk"
       isCorrect: false
-      explanation: "The Azure shared disks can only be shared as data disks."
+      explanation: "Azure shared disks can be shared only as data disks."
 
 content: |
   [!include[](includes/6-knowledge-check.md)]
