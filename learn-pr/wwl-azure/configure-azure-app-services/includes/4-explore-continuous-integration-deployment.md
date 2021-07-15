@@ -16,6 +16,6 @@ Automated deployment, or continuous integration, is a process used to push out n
 There are a few options that you can use to manually push your code to Azure:
 
  -  **Git**: App Service web apps feature a Git URL that you can add as a remote repository. Pushing to the remote repository will deploy your app.
- -  **CLI**: `webapp up` is a feature of the command-line interface that packages your app and deploys it. Deployment can include createing a new App Service web app.
+ -  **CLI**: `webapp up` is a feature of the command-line interface that packages your app and deploys it. Deployment can include creating a new App Service web app.
  -  **Visual Studio**: Visual Studio features an App Service deployment wizard that can walk you through the deployment process.<br>
  -  **FTP/S**: FTP or FTPS is a traditional way of pushing your code to many hosting environments, including App Service.
