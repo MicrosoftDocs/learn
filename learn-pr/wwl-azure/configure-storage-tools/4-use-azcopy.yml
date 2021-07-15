@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-storage-tools.use-azcopy
-title: Use azcopy
+title: Use AzCopy
 metadata:
-  title: Use azcopy
-  description: "Use azcopy"
+  title: Use AzCopy
+  description: "Use AzCopy"
   ms.date: 07/15/2021
   author: wwlpublish
   ms.author: cynthist
