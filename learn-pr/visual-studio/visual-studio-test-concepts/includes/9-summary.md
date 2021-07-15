@@ -12,7 +12,7 @@ The testing schools of thought recommend different styles of testing that can dr
 
 ## References
 
-* [Create tests C# tutorial](../../visual-studio-test-tools/resources/design-doc.md)
-* [Run tests in Azure DevOps](../../../azure-devops/run-functional-tests-azure-pipelines/includes/1-introduction.md)
+* [Unit testing C# with MSTest and .NET](https://docs.microsoft.com/dotnet/core/testing/unit-testing-with-mstest)
+* [Run tests in Azure DevOps](https://docs.microsoft.com/learn/modules/run-functional-tests-azure-pipelines/)
 
 <!-- Do not include any other content -->

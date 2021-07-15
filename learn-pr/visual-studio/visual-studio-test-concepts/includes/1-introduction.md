@@ -9,9 +9,9 @@ This learning module will cover why we test and a brief introduction to testing 
 
 There are limitless testing technologies out there, but no matter your language or software stack, this guidance should help you grasp the basic concepts and help you avoid common pitfalls.
 
-If you want to get started testing right away see the [Create tests C# tutorial](../../visual-studio-test-tools/resources/design-doc.md) that dives into writing, running, and managing tests.
+If you want to get started testing right away see [Unit testing C# with MSTest and .NET](https://docs.microsoft.com/dotnet/core/testing/unit-testing-with-mstest) that dives into writing and running tests.
 
-![image](../media/test-intro-collage.png)
+:::image type="content" source="../media/test-intro-collage.png" alt-text="Collage of test features in Microsoft tools including the Visual Studio and Azure DevOps.":::
 
 ## Example scenario
 

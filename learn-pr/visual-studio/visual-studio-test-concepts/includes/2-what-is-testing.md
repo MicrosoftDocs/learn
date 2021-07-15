@@ -6,7 +6,7 @@ Let's start by defining testing with some examples before we dive into the conce
 
 Testing involves a series of test methods that run against your product code and return a pass or fail result. The result is based on certain criteria that is asserted. Test results appear in a list of red "x" to represent failing tests and green "✔" to represent passing tests. These symbols make it easy to assess what functionality is working or not at a glance.
 
-![image](../media/test-intro-testlist.png)
+:::image type="content" source="../media/test-intro-testlist.png" alt-text="Table showing how tests appear in a list with passing and failing results.":::
 
 ## Test Method definition
 
@@ -28,11 +28,12 @@ public void AddTest()
 ```
 
 Here's how this test would appear in Visual Studio:
-![image](../media/test-intro-TestMethod.png)
+:::image type="content" source="../media/test-intro-TestMethod.png" alt-text="Test method in Visual Studio editor.":::
 
 One difference between tests and product code is they don't run as part of your app's normal function. So instead of using F5 (or the large green run button at the top of your development environment) to run as you would your app, you choose which tests to run either via a Test Explorer or many other helpful editor tools.
-![image](../media/test-intro-runtests.png)
-![image](../media/test-intro-runtests-testexplorer.png)
+
+:::image type="content" source="../media/test-intro-runtests.png" alt-text="Run or debug tests from the Visual Studio editor":::
+:::image type="content" source="../media/test-intro-runtests-testexplorer.png" alt-text="Run tests from the Test Explorer in Visual Studio":::
 
 ## How can tests help prevent regressions in functionality?
 
@@ -40,7 +41,7 @@ Remember the phone number bug from the intro scenario? As soon as new code was a
 
 As we implement new code, it may not always occur to us what old scenarios could be impacted by new changes. The phone numbers are a simple example, but imagine apps with hundreds of different input formats and needing to check that code every time. Tests make it easy for all several variations of the old behavior to be checked with a simple test run.
 
-![image](../media/test-intro-phoneNum-example.png)
+:::image type="content" source="../media/test-intro-phoneNum-example.png" alt-text="A test titled CheckDomesticPhoneNumber in the Visual Studio editor showing a failure message.":::
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
