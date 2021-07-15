@@ -9,7 +9,7 @@ metadata:
   author: mbcrump
   ms.author: micrum
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.prod: learning-azure
 durationInMinutes: 8
 content: |
   [!include[](includes/4-mitigation-strategies.md)]
