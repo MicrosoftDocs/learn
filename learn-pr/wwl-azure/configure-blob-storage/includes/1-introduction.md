@@ -2,7 +2,7 @@
 
 Azure Blob storage is a service for storing large amounts of unstructured object data, such as text or binary data. Your media company has an extensive library of video clips. The videos are accessed thousands of times a day.
 
-The company relies on you to configure Blob storage. You use access tiers to reduce cost and improvde performance. You develop a lifecycle management plan for the older videos. You configure object replication for failover.
+The company relies on you to configure Blob storage. You use access tiers to reduce cost and improve performance. You develop a lifecycle management plan for the older videos. You configure object replication for failover.
 
 ## Skills measured
 
