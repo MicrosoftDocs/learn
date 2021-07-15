@@ -28,8 +28,7 @@ summary: |
   ### [Option 3: The _Create machine learning models_ learning path](/learn/paths/create-machine-learn-models/)
   If you already have some idea what machine learning is about or you have a strong mathematical background you may best enjoy jumping right in to the _Create Machine Learning Models_ learning path. These modules teach some machine learning concepts, but move fast so they can get to the power of using tools like scikit-learn, TensorFlow, and PyTorch. This is also the best learning path for you if you're looking for just enough familiarity to understand machine learning examples for products like Azure ML or Azure Databricks
 
-prerequisites: |
-  This learning path assumes knowledge of basic mathematical concepts. Some experience with Python is also beneficial. To get started with Python, complete the [Take your first steps with Python](../python-first-steps/index.yml) learning path.
+prerequisites: None
 iconUrl: /learn/achievements/machine-learning-foundations-using-data-science.svg
 levels:
 - beginner
