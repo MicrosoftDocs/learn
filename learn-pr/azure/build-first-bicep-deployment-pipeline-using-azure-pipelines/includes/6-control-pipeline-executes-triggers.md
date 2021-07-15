@@ -26,6 +26,8 @@ trigger:
 - main
 ```
 
+<!-- TODO PRs -->
+
 You can also run your pipeline on a schedule. For example, you might run a nightly release of your Bicep code, or automatically deploy a test environment every morning. Use the `schedule` keyword instead of `trigger`, and specify the frequency by using a cron expression:
 
 ```yaml
@@ -94,4 +96,3 @@ trigger:
     include:
     - deploy
 ```
-
