@@ -3,12 +3,10 @@ trigger: none
 pool:
   vmImage: ubuntu-latest
 
-jobs:
-- job: 
-  steps:
-  - task: AzureCLI@2
-    inputs:
-      azureSubscription: $(ServiceConnectionName)
-      scriptType: 'bash'
-      scriptLocation: 'inlineScript'
-      inlineScript: 'az deployment group create --resource-group $(ResourceGroupName) --template-file deploy/main.bicep -p environmentType=$(EnvironmentType)'
+steps:
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: $(ServiceConnectionName)
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az deployment group create --resource-group $(ResourceGroupName) --template-file deploy/main.bicep -p environmentType=$(EnvironmentType)'

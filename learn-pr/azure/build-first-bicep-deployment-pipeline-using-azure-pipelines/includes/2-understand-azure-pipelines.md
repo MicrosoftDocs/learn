@@ -48,12 +48,6 @@ You need to instruct Azure Pipelines _when_ to run your pipeline by using a _tri
 
 :::image type="content" source="../media/2-trigger.png" alt-text="Diagram that shows a trigger initiating a pipeline." border="false":::
 
-## Jobs
-
-A pipeline consists of one or more _jobs_. Each job contains a set of _steps_ to follow in sequence. When you create basic pipelines, you typically use a single job. For more advanced pipelines, you use jobs to run multiple operations at the same time. In this module, we'll just use a single job.
-
-A job is associated with an agent pool, which you learned about earlier. Some simple jobs can be run without an agent, but we won't cover that here.
-
 ## Steps
 
 A step represents a single operation that the pipeline will perform. Think of a step as being like the individual command you execute against the Azure CLI or Azure PowerShell. For most deployments, you execute several steps in a sequence. You define the sequence, and all of the details of each step, in your pipeline YAML file.
@@ -63,12 +57,15 @@ There are two types of steps in Azure Pipelines:
 - _Scripts_ enable you to run a script by using Bash, PowerShell, or the Windows command shell.
 - _Tasks_ provide more advanced functionality and give you a convenient way to access lots of different capabilities without writing script statements. For example, there are built-in tasks to run the Azure CLI or Azure PowerShell, to test your code, to upload files to an FTP server, and many more. Additionally, anyone can write their own task and publish it to the Visual Studio Marketplace, so there's a large set of commercial and open-source tasks available, too.
 
-:::image type="content" source="../media/2-job-step.png" alt-text="Diagram that shows a pipeline with one job, which contains two steps." border="false":::
-
 > [!NOTE]
 > Some people prefer to use script statements rather than built-in tasks, because they provide more control over what is going on. Other people prefer to use tasks so they don't need to write and manage scripts. In this module, we use a mixture of both approaches.
 
-A pipeline step can be associated with a service connection so that it can authenticate to Azure, or to another external system.
+A step can be associated with a service connection so that it can authenticate to Azure.
+
+:::image type="content" source="../media/2-step.png" alt-text="Diagram that shows a pipeline with two steps." border="false":::
+
+> [!NOTE]
+> Azure Pipelines also has the concepts of _stages_ and _jobs_, which help you to organize your steps and run multiple steps at the same time. You’ll learn more about these in future modules.
 
 ## Basic pipeline example
 
@@ -80,10 +77,7 @@ Let's look at each part in detail.
 
 - `trigger` tells your pipeline when it should execute. In this case, `trigger: none` is our way of telling Azure Pipelines that we want to manually trigger the pipeline.
 - `pool` instructs our pipeline which agent pool to use when it runs the pipeline steps. In this example, we want to execute our pipeline on an Ubuntu agent machine from the pool of Microsoft hosted agents.
-  > [!NOTE]
-  > In this example, we define the `pool` for the whole pipeline. Sometimes, you might have different jobs that need to run on different agent pools. You can configure the `pool` for each job.
-- `jobs` defines the list of jobs that our pipeline runs. In this example, we have a single `job`.
 - `steps` lists the sequence of actions that we want to run. We have two steps, both of which run a simple script to echo some text. Each step has a `displayName`, which is a human-readable name for the step. You'll see the display name when you look at the pipeline logs. You'll also see any outputs from the commands in your steps.
 
 > [!IMPORTANT]
-> In YAML files, indentation is very important. Take a look at the example above: some lines are indented by two or four spaces. The number of spaces you use is important, and if you don't indent your file correctly then Azure Pipelines won't be able to interpret it. Visual Studio Code helps you to find and fix errors in your YAML file indentation.
+> In YAML files, indentation is important. Take a look at the example above: some lines are indented by two or four spaces. The number of spaces you use is important, and if you don't indent your file correctly then Azure Pipelines won't be able to interpret it. Visual Studio Code helps you to find and fix errors in your YAML file indentation.

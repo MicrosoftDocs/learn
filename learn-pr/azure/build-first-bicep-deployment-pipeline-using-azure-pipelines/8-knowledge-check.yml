@@ -15,7 +15,18 @@ content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   questions:
-  - content: Which of these situations will trigger the pipeline to run?
+  - content: You want to modify the pipeline YAML file so that it follows best practices. What should you do?
+    choices:
+    - content: Add variables for the service connection name, resource group name, and the environment type parameter.
+      isCorrect: true
+      explanation: Correct. It's good practice to use variables for these values.
+    - content: Update the step's `scriptType` to `pscore`.
+      isCorrect: false
+      explanation: Incorrect. You don't need to change the script language for the pipeline step.
+    - content: Update the pipeline's `pool` to use a Windows agent pool.
+      isCorrect: false
+      explanation: Incorrect. You don't need to change the operating system for your pipeline's agent pool.
+  - content: Which of these situations will trigger the R&D team's pipeline to run?
     choices:
     - content: Someone commits an update to the _README.md_ file in the _templates_ directory on the **main** branch.
       isCorrect: false

@@ -21,12 +21,12 @@ One of the most useful built-in tasks for Azure Pipelines is the Azure CLI task.
 Here's an example of how you can configure a step to use the Azure CLI task:
 
 ```YAML
-  - task: AzureCLI@2
-    inputs:
-      azureSubscription: 'MyServiceConnection'
-      scriptType: 'bash'
-      scriptLocation: 'inlineScript'
-      inlineScript: 'az deployment group create --resource-group Example --template-file deploy/main.bicep'
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'MyServiceConnection'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az deployment group create --resource-group Example --template-file deploy/main.bicep'
 ```
 
 Notice that the first line specifies `AzureCLI@2`. This tells Azure Pipelines that the task you want to use for this step is named `AzureCLI`, and you want to use version `2`.
@@ -66,7 +66,7 @@ You can also let users override variable values when they run your pipeline manu
 
 Once you've created a variable, you use a special syntax to refer to it within your pipeline's YAML file, like this:
 
-:::code language="yaml" source="code/4-use-variables.yaml" highlight="14" :::
+:::code language="yaml" source="code/4-use-variables.yaml" highlight="12" :::
 
 Notice the Azure CLI command includes a special `$(VariableName)` syntax. You can refer to any variable by using this approach - whether it's secret or not.
 
@@ -79,10 +79,8 @@ Azure Pipelines also provides _system variables_. These contain predefined infor
 
 ### Create variables within your pipeline's YAML file
 
-You can also specify variables in your pipeline's YAML file. You might do this when you have values that aren't secret, that you're happy to store in your repository, and where you want to keep them in one place in the file so you can refer to them throughout the pipeline definition. This approach also allows you to track changes to the variable in your version control system.
+You can also specify variables in your pipeline's YAML file. You might do this when you have values that aren't secret, that you're happy to store in your repository, and where you want to keep them in one place in the file so you can refer to them throughout the pipeline definition. This approach also allows you to track changes to the variable in your version control system:
 
-When you define variables in your YAML file, you can define them at different _scopes_. For example, you can define a variable at the root scope, which means its value can be used throughout your YAML pipeline. You can also scope a variable to a single job, and it won't be accessible outside of that job. If the same variable is defined in multiple scopes, the value from the most specific scope will be used.
+:::code language="yaml" source="code/4-yaml-variables.yaml" highlight="6-9" :::
 
-:::code language="yaml" source="code/4-yaml-variables.yaml" highlight="6-8, 12-13" :::
-
-This pipeline contains three variables. `ServiceConnectionName` and `EnvironmentType` are defined at the root level of the pipeline. The `ResourceGroupName` variable is scoped to the job.
+This pipeline contains three variables: `ServiceConnectionName`, `EnvironmentType`, and `ResourceGroupName`.
