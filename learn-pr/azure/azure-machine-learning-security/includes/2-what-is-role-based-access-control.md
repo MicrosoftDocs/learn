@@ -56,10 +56,13 @@ A common challenge for developers is the management of secrets and credentials u
 
 In general, there are three authentication workflows that you can use when connecting to the workspace:
 
-* **Interactive**: You use your account in Azure Active Directory to either manually authenticate or obtain an authentication token. Interactive authentication is used during **experimentation and iterative development.** It enables you to control access to resources (such as a web service) on a per-user basis.
-* **Service principal:** You create a service principal account in Azure Active Directory, and use it to authenticate or obtain an authentication token. A service principal is used when you need an automated process to authenticate to the service. For example, a continuous integration and deployment script that trains and tests a model every time the training code changes needs ongoing access and so would benefit from a service principal account.
-* **Azure CLI session:** You use an active Azure CLI session to authenticate. Azure CLI authentication is used during **experimentation and iterative development**, or when you need an **automated process to authenticate** to the service using a pre-authenticated session. You can log in to Azure via the Azure CLI on your local workstation, without storing credentials in code or prompting the user to authenticate.
-* **Managed identity:** When using the Azure Machine Learning SDK on an Azure Virtual Machine, you can use a managed identity for Azure. This workflow allows the VM to connect to the workspace using the managed identity, without storing credentials in code or prompting the user to authenticate. Azure Machine Learning compute clusters can also be configured to use a managed identity to access the workspace when training models.
+**Interactive**: You use your account in Azure Active Directory to either manually authenticate or obtain an authentication token. Interactive authentication is used during **experimentation and iterative development.** It enables you to control access to resources (such as a web service) on a per-user basis.
+
+**Service principal:** You create a service principal account in Azure Active Directory, and use it to authenticate or obtain an authentication token. A service principal is used when you need an automated process to authenticate to the service. For example, a continuous integration and deployment script that trains and tests a model every time the training code changes needs ongoing access and so would benefit from a service principal account.
+
+**Azure CLI session:** You use an active Azure CLI session to authenticate. Azure CLI authentication is used during **experimentation and iterative development**, or when you need an **automated process to authenticate** to the service using a pre-authenticated session. You can log in to Azure via the Azure CLI on your local workstation, without storing credentials in code or prompting the user to authenticate.
+
+**Managed identity:** When using the Azure Machine Learning SDK on an Azure Virtual Machine, you can use a managed identity for Azure. This workflow allows the VM to connect to the workspace using the managed identity, without storing credentials in code or prompting the user to authenticate. Azure Machine Learning compute clusters can also be configured to use a managed identity to access the workspace when training models.
 
 ### Managed Identities
 
@@ -74,7 +77,7 @@ Once you have a managed identity, you can request tokens via a token endpoint on
 
 Below we can see the typical workflow for a managed identity within a virtual machine:
 
-Image to be added
+![Azure AD managed identity service workflow.](../media/2-azure-identity.png)
 
 #### Identities with compute clusters
 
@@ -82,4 +85,5 @@ Azure Machine Learning compute clusters can use managed identities to authentica
 
 During cluster creation or when editing compute cluster details, in the Advanced settings, toggle Assign a managed identity and specify a system-assigned identity or user-assigned identity. Note that Azure Machine Learning compute clusters support only one system-assigned identity or multiple user-assigned identities, not both concurrently.
 
-"`NOTEBOX: Managed identities can only be used with Azure Machine Learning when using the Azure Machine Learning SDK on an Azure Virtual Machine or Azure Machine Learning compute cluster. This workflow allows the virtual machine to connect to the workspace using the managed identity instead of the individual user's Azure AD account, and without storing credentials in code.
+> [!NOTE]
+> Managed identities can only be used with Azure Machine Learning when using the Azure Machine Learning SDK on an Azure Virtual Machine or Azure Machine Learning compute cluster. This workflow allows the virtual machine to connect to the workspace using the managed identity instead of the individual user's Azure AD account, and without storing credentials in code.
