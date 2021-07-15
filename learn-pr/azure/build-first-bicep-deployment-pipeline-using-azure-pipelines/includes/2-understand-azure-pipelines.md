@@ -1,19 +1,17 @@
 By using _pipelines_, you can automate the steps in your deployment process. Each time you make a change to code and you check it into your Git repository, your pipeline runs a predefined process. The pipeline can verify your Bicep code meets your quality standards, and then automates the steps to deploy your resources to Azure. You describe this process by creating a pipeline definition.
 
-Azure Pipelines is a feature of the Azure DevOps service. Azure DevOps also includes Azure Repos, which hosts the Git repositories you use to store and share your code with your collaborators. Once your Bicep code is stored in Git, Azure Pipelines can access your code to automate your deployment processes.
-
-In this unit, you'll learn about Azure DevOps pipelines.
+Azure Pipelines is a feature of the Azure DevOps service. Azure DevOps also includes Azure Repos, which hosts the Git repositories you use to store and share your code with your collaborators. Once your Bicep code is stored in Git, Azure Pipelines can access your code to automate your deployment processes. In this unit, you'll learn about Azure Pipelines.
 
 ## What are pipelines?
 
-Pipelines are used to describe the your process you follow to test and deploy your Bicep code. Pipelines include all of the steps you want to execute, and the order in which you want them to happen.
+Pipelines are used to describe the process that you follow to test and deploy your Bicep code. Pipelines include all of the steps you want to execute, and the order in which you want them to happen.
 
 When you work with Azure Pipelines, you describe your pipeline by using a YAML file. A YAML file is a structured text file, a little like how Bicep is also a structured text file. You can create and edit YAML files using any text editor. In this module, you'll use Visual Studio Code, which includes an extension to help you edit Azure DevOps YAML pipeline files. The Azure DevOps web interface also provides some tools to view and edit your pipeline YAML files.
 
 > [!NOTE]
 > Azure Pipelines also has _classic pipelines_, which are an older version of the pipelines feature. YAML-based pipelines have replaced classic pipelines, and in this module, we're only going to discuss YAML pipelines. We recommend you use YAML pipelines.
 
-Because pipeline YAML files are code, they are stored alongside your Bicep code in your Git repository. You use Git's features to collaborate on your pipeline, and you can manage different versions of your pipeline file by using commits and branches. In a future module, you'll also learn about other advanced features of pipelines like templates, which make pipelines easy to reuse.
+Because pipeline YAML files are code, they're stored alongside your Bicep code in your Git repository. You use Git's features to collaborate on your pipeline, and you can manage different versions of your pipeline file by using commits and branches. In a future module, you'll also learn about other advanced features of pipelines like templates, which make pipelines easy to reuse.
 
 ## Agents and pools
 
@@ -21,7 +19,7 @@ Until now, you've deployed your Bicep files from your local computer. After you 
 
 So how does this translate to a pipeline? The pipeline needs access to a computer so that it can execute the deployment steps. Azure Pipelines uses a machine called an _agent_. An agent is a computer that's configured to run the steps in your pipeline. Each agent already has the Bicep and Azure tooling you used in the previous modules, so it's able to do the same things that you do from your own computer.
 
-Azure Pipelines provides multiple types of agents with different operating systems, like Ubuntu or Windows, and sets of tools. Microsoft runs these agents so you don't have to maintain any compute infrastructure. They are sometimes called _Microsoft-hosted agents_ or _hosted agents_ since they're hosted on your behalf. Hosted agents are automatically deleted after your pipeline runs, and you can't access them directly. So, it's important that your pipeline contains all the steps necessary to deploy your solution.
+Azure Pipelines provides multiple types of agents with different operating systems, like Ubuntu or Windows, and sets of tools. Microsoft runs these agents so you don't have to maintain any compute infrastructure. They're sometimes called _Microsoft-hosted agents_ or _hosted agents_ since they're hosted on your behalf. Hosted agents are automatically deleted after your pipeline runs, and you can't access them directly. So, it's important that your pipeline contains all the steps necessary to deploy your solution.
 
 An _agent pool_ contains multiple agents of the same type. When you configure your pipeline, you tell Azure Pipelines which agent pool to use to execute each set of steps. When your pipeline runs, it waits for an agent to become available from the pool, and then it instructs the agent to run your deployment steps.
 

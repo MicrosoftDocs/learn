@@ -19,7 +19,7 @@ trigger:
 
 ### Trigger when multiple branches change
 
-You can customize the branches that cause your pipeline to trigger. For example, suppose you create _release branches_ that contain the code you'll deploy for a specific release of your project. You use branch names like **release/v1**, **release/v2**, and so forth. You want to run your pipeline any time code changes on a branch that begins with the name **release/**. You can use the `include` property in conjunction with a `*` wildcard to express this:
+You can customize the branches that cause your pipeline to trigger. For example, suppose you create _release branches_ that contain the code you'll deploy for a specific release of your project. You use branch names like **release/v1**, **release/v2**, and so forth. You want to run your pipeline anytime your code changes on a branch that begins with the name **release/**. You can use the `include` property in conjunction with a `*` wildcard to express this:
 
 ```yaml
 trigger:

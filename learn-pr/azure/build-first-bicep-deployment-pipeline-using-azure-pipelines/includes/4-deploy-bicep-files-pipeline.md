@@ -7,7 +7,7 @@ As you learned previously, a pipeline uses a service connection to store the ser
 > [!WARNING]
 > You might be tempted to store your service principal's credentials in your YAML file and log in using the `az login` command. You should never do this. Credentials in a YAML file will be stored in clear text. Anyone who has access to your repository could take them. Even though you can restrict access to your Azure DevOps organization and project, whenever someone clones your repository the YAML file holding the credentials will be on that person's computer. It's important to use a service credential whenever you work with Azure from a pipeline.
 
-Service connections are created within your Azure DevOps project. A single service connection can be shared by multiple pipelines. However, it's usually a good iea to set up a service connection, and the corresponding service principal, for each pipeline and each environment you deploy to. This helps to increase the security of your pipelines, and reduces the likelihood of you accidentally deploying or configuring resources in a different environment than the one you expect.
+Service connections are created within your Azure DevOps project. A single service connection can be shared by multiple pipelines. However, it's usually a good idea to set up a service connection, and the corresponding service principal, for each pipeline and each environment you deploy to. This helps to increase the security of your pipelines, and reduces the likelihood of you accidentally deploying or configuring resources in a different environment than the one you expect.
 
 You can also configure your service connection so that it's only used by certain pipelines. For example, when you create a service connection that deploys to your website's production environment, it's a good idea to ensure that only your website's pipeline can use this service connection. You can even add more checks and approvals that need to be in place before a service connection can be used in a pipeline. You'll learn more about this in a future module.
 
@@ -55,7 +55,7 @@ The Azure Pipelines web interface provides an editor for you to use to create va
 
 :::image type="content" source="../media/4-new-variable.png" alt-text="Screenshot of the Azure DevOps interface that shows creating a new variable." border="true":::
 
-When you create a variable, you can tell Azure Pipelines that the the variables contain secret values. When you do this, you won't be able to view the values once you've set them. Also, Azure Pipelines will try to prevent the values from showing in your pipeline logs.
+You can tell Azure Pipelines that a variable contains secret values. When you do this, you can't view the value once you've set it. Also, Azure Pipelines will try to prevent the secret value from showing in your pipeline logs.
 
 > [!WARNING]
 > Azure Pipelines will obfuscate the variable values, but this is a best-effort process and you need to follow good practices as well. Your pipeline steps will have access to all of the variables, including secrets, so if your pipeline includes a step that insecurely handles a secure variable then Azure Pipelines might not be able to stop it.

@@ -10,7 +10,7 @@ You also want to enable your colleagues to make changes to the Bicep templates a
 
 ## What will you be doing?
 
-In this module, you'll learn how you can automate the deployment of Bicep templates with Azure Pipelines. You'll understand the benefits of using pipelines to deploy your code, and you'll learn how to build a basic pipeline that deploys a Bicep file. Along the way, you'll learn how to securely give your pipeline the necessary authorization to deploy to an Azure resource group, and how to configure when the pipeline runs.
+In this module, you'll learn how you can automate the deployment of Bicep templates with Azure Pipelines. You'll understand the benefits of using pipelines to deploy your code, and you'll learn how to build a basic pipeline that deploys a Bicep file. Along the way, you'll learn how to give your pipeline the necessary authorization to deploy to an Azure resource group, and how to configure when the pipeline runs.
 
 ## What is the main goal?
 
