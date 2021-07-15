@@ -54,7 +54,7 @@ The following table provides examples that illustrate the high performance of Pr
 | P40 | 2 TiB | 7,500 | 250 |
 | P80 | 32 TiB | 20,000 | 900 |
 
-Premium SSD disks are designed to provide consistent performance figures, as the examples in the table show. Azure Standard SSD managed disks occasionally might be affected by high demand.
+Premium SSD disks are designed to provide consistent performance figures, as the examples in the table depict. Azure Standard SSD managed disks occasionally might be affected by high demand.
 
 If you need higher performance than what Standard SSD disks provide, or if you can't sustain the occasional effect on performance, use Premium SSD disks. Also use Premium SSD disks when you want the highest possible performance, but you're not able to use Ultra Disk Storage because of its current limitations. Premium SSD disks are a good solution for mission-critical workloads in medium and large organizations.
 
