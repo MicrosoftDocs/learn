@@ -95,7 +95,7 @@ In this exercise, you will:
 
 > [!NOTE] 
 >
-> it can take up to 45 minutes to deploy a Gateway.
+> It can take up to 45 minutes to deploy a Gateway.
 
 Congratulations! You have successfully created a Virtual network, a gateway subnet, and an ExpressRoute Gateway.
 
