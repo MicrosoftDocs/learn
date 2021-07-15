@@ -367,6 +367,6 @@ Implementing CRUD for a resource is a common thing to do. Express has a method *
    Connection closed
    ```
 
-   You used **client-delete-route.js** instead of **client-delete.js** in the previous exercise. The difference lies in how the route is implemented. The first version of **app.js** relies on deletions being done toward a route like this **/products/<id>**, with the unique identifier being sent as a route parameter.
+You used **client-delete-route.js** instead of **client-delete.js** in the previous exercise. The difference lies in how the route is implemented. The first version of **app.js** relies on deletions being done toward a route like this **/products/<id>**, with the unique identifier being sent as a route parameter.
 
-   When you use the **route()** method, it implements the deletion route differently, and wants you to send unique identifier through the body instead of as a route parameter. There's no right or wrong way to implement a deletion route.
+When you use the **route()** method, it implements the deletion route differently, and wants you to send unique identifier through the body instead of as a route parameter. There's no right or wrong way to implement a deletion route.
