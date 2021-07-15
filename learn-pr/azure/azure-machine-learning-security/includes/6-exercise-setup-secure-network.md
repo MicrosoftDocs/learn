@@ -38,7 +38,7 @@ Let's create a VNet for this exercise:
 
     <!-- :::image type="content" source="./media/quick-create-portal/create-virtual-network.png" alt-text="Create virtual network Azure portal" border="true"::: -->
 
-    :::image type="content" source="../media/vnet-form1.png" alt-text="Screenshot showing how to fill in the Azure Virtual Network form.":::
+    :::image type="content" source="../media/vnet-form-1.png" alt-text="Screenshot showing how to fill in the Azure Virtual Network form.":::
 
    | Setting              | Value                                                                                                 |
    | -------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -54,7 +54,7 @@ Let's create a VNet for this exercise:
    > [!TIP]
    > If your screen comes with the IPv4 address space and _default_ subnet setup like in the image below, skip to step 9.
 
-    :::image type="content" source="../media/vnet-form2.png" alt-text="Screenshot showing Azure Virtual Network IP Addresses page.":::
+    :::image type="content" source="../media/vnet-form-2.png" alt-text="Screenshot showing Azure Virtual Network IP Addresses page.":::
 
 6. In **IPv4 address space**, select the existing address space and change it to **10.1.0.0/16**.
 
@@ -123,11 +123,11 @@ To accomplish that, we need to define a [Private Endpoint](/azure/private-link/p
 
 2. In the left-hand menu, select **Private endpoint connections**:
 
-    :::image type="content" source="../media/pvt-1.png" alt-text="Screenshot showing where to select private endpoint connections with a red box.":::
+    :::image type="content" source="../media/private-endpoint-1.png" alt-text="Screenshot showing where to select private endpoint connections with a red box.":::
 
 3. Select **Private Endpoint** and fill the form with the following values:
 
-    :::image type="content" source="../media/pvt-2.png" alt-text="Screenshot showing how to fill in the private endpoint form.":::
+    :::image type="content" source="../media/private-endpoint-2.png" alt-text="Screenshot showing how to fill in the private endpoint form.":::
 
    | Setting              | Value                                                                                                 |
    | -------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -142,7 +142,7 @@ To accomplish that, we need to define a [Private Endpoint](/azure/private-link/p
 
 5. In the **Resource** tab, use the values below
 
-    :::image type="content" source="../media/pvt-3.png" alt-text="Screenshot showing how to fill in the resources form.":::
+    :::image type="content" source="../media/private-endpoint-3.png" alt-text="Screenshot showing how to fill in the resources form.":::
 
    | Setting              | Value                                                   |
    | -------------------- | ------------------------------------------------------- |
@@ -157,7 +157,7 @@ To accomplish that, we need to define a [Private Endpoint](/azure/private-link/p
 
    Leave the suggested defaults:
 
-    :::image type="content" source="../media/pvt-4.png" alt-text="Screenshot showing how to fill in the configuration form.":::
+    :::image type="content" source="../media/private-endpoint-4.png" alt-text="Screenshot showing how to fill in the configuration form.":::
 
    | Setting                         | Value                     |
    | ------------------------------- | ------------------------- |
@@ -167,7 +167,7 @@ To accomplish that, we need to define a [Private Endpoint](/azure/private-link/p
 
 7. Select **Review + Create** to validate the deployment, then select **Create** to deploy the endpoint (this can take a few moments):
 
-    :::image type="content" source="../media/pvt-final.png" alt-text="Screenshot showing the deployment complete page.":::
+    :::image type="content" source="../media/private-endpoint-final.png" alt-text="Screenshot showing the deployment complete page.":::
 
 ## Testing the network configuration
 
