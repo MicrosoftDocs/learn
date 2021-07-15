@@ -90,7 +90,7 @@ secret_value = run.get_secret(name=" ExamplePassword")
 
 ![A generic image of a key vault authenticator.](../media/4-key-vault.png)
 
-## Read More
+## Read more
 
 For more information about using secrets to secure and access your data, we recommend these resources:
 
