@@ -46,13 +46,13 @@ Setting up a subdomain follows the same process as typical delegation. The only 
 It's important to understand the difference between DNS record sets and individual DNS records. A record set is a collection of records in a zone that have the same name and are the same type.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of the Add a record set page.](../media/dns-record-set1.png)
+> ![Screenshot of the Add a record set page.](../media/dns-record-set-1.png)
 
 A record set cannot contain two identical records. Empty record sets (with zero records) can be created, but do not appear on the Azure DNS name servers. Record sets of type CNAME can contain one record at most.
 
 The **Add record set** page will change depending on the type of record you select. For an A record, you will need the TTL (Time to Live) and IP address. The time to live, or TTL, specifies how long each record is cached by clients before being requeried.
 > [!div class="mx-imgBorder"]
-> ![Screenshot of the Add a record page.](../media/dns-record-set2.png)
+> ![Screenshot of the Add a record page.](../media/dns-record-set-2.png)
 
 
 ## Private DNS services

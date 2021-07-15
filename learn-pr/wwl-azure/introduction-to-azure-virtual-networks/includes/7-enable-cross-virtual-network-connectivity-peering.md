@@ -27,11 +27,11 @@ The following diagram shows a scenario where resources on the Contoso VNet and r
 
 The routing tables show the routes known to the resources in each subscription. The following routing table shows the routes known to Contoso, with the final entry being the Global VNet peering entry to the Fabrikam 10.10.26.0/24 subnet.
 > [!div class="mx-imgBorder"]
-> ![Contoso routing table showing Global VNet peering entry 10.10.26.0/24.](../media/contosovm-routes-peering-annotated.png)
+> ![Contoso routing table showing Global VNet peering entry 10.10.26.0/24.](../media/contoso-vm-routes-peering-annotated.png)
 
 The following routing table shows the routes known to Fabrikam. Again, the final entry is the Global VNet peering entry, this time to the Contoso 10.1.26.0/25 subnet.
 > [!div class="mx-imgBorder"]
-> ![Fabrikam routing table showing Global VNet peering entry 10.17.26.0/24.](../media/fabrikamvm-routes-peering-annotated.png)
+> ![Fabrikam routing table showing Global VNet peering entry 10.17.26.0/24.](../media/fabrikam-vm-routes-peering-annotated.png)
 
 ## Configure VNet Peering
 
