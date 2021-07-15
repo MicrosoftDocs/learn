@@ -36,6 +36,7 @@ levels:
 roles:
 - ai-engineer
 - data-scientist
+- developer
 - student
 products:
 - azure
