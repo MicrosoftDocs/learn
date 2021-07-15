@@ -1,34 +1,34 @@
-You now have a working pipeline that can deploy your Bicep template to your Azure environment. Running your pipeline though is still a manual step. It would be great if you could automate that as well. 
+You now have a working pipeline that deploys your Bicep file to your Azure environment. However, you still need to manually run your pipeline. In this unit, you'll learn how to trigger your pipeline automatically when your Bicep code changes.
 
 ## What are pipeline triggers?
 
-Pipeline triggers can automatically run your pipeline. You can configure them in such a way so they run your pipeline for every git commit to your repository, or for every pull request, or you could configure them to run on a schedule. You use them because with every change that happens to the code, you want to make sure that all checks and deploys that need to happen actually get executed. 
+Pipeline triggers automatically run your pipeline based on rules you specify. You can configure them to run your pipeline at scheduled intervals. You can also configure triggers to run your pipeline every time the files in your repository changes. You do this because it's a good idea to run all of your tests and deployment steps every time your code changes.
 
-Without an automatic trigger, someone can make changes to the Bicep template, commit and push that change to your git repository, but forget to run the pipeline. You now have a difference in what your Bicep template describes as resources that need to be present in your Azure environment and the resources that are actually present in your Azure environment. Suppose this happens for a couple of subsequent commits and pushes, where people forget to run the pipeline. If someone now introduces an error or misconfiguration in the Bicep template during one of these changes, it is a lot harder to track back where the error was introduced, since you have several commits to work through. 
+If you don't use an automatic trigger, someone might make a change to a Bicep file, and even commit it and push it to the repository. If they forget to run the pipeline, then you have a difference between the resource definitions in your Bicep file and the resources that are actually deployed to your Azure environment. Suppose this happens for a couple of subsequent commits and pushes. If someone now introduces an error or misconfiguration in the Bicep file during one of these changes, it's hard to track back to where the error was introduced, since you have several commits to work through. After a while, you won't trust that your Bicep code truly represents your infrastructure, and its value is eroded.
 
-In case you run your pipeline for every push that happens to your git repository, the moment the push happens, your pipeline will start running. This will give whoever made the push instant feedback on the validity of the change they made. This is the great value add of pipeline automation, your entire team will need to follow the same mandatory process. 
+When you configure your pipeline to run every time you update your files, the moment your changes are pushed, your pipeline will start running. This gives you instant feedback on the validity of your change and ensures that everything is always up to date.
 
-## Which types of pipeline triggers can you use
+## Types of pipeline triggers
 
-You have actually already been using a pipeline trigger in the previous sections, namely the manual pipeline trigger. When you add a trigger: none to the top of your YAML file, you can only manually trigger the pipeline execution.
+Until now, you've been using a manual pipeline trigger:
 
-```YAML
+```yaml
 trigger: none
 ```
 
-Another type of pipeline trigger, which is very commonly used, are CI or branch triggers. This trigger runs your pipeline with every change that is made to that specific branch. The most common type of branch trigger is a trigger for your main branch. You also define a branch trigger in your YAML file:
+> [!NOTE]
+> You can always manually trigger a pipeline, even if you've configured another trigger type.
 
-```YAML
+Another common trigger is a _branch trigger_, which sometimes called a _continuous integration trigger_ or _CI trigger_. When you use this trigger, every time you make a change to a specified branch, the pipeline is run. If you commit and push a change to a different branch, the pipeline ignores it. It's common to use this trigger against your **main**  branch, like this:
+
+```yaml
 trigger: 
 - main
 ```
 
-Once you put this trigger at the top of your YAML pipeline file, with each push that happens to your git repository a pipeline run will start. You will also still be able to trigger your pipeline manually even though the trigger: none statement is gone. 
+You can also run your pipeline on a schedule. For example, you might run a nightly release of your Bicep code, or automatically deploy a test environment every morning. Use the `schedule` keyword instead of `trigger`, and specify the frequency by using a cron expression:
 
-Next to branch triggers, Azure DevOps also has scheduled triggers. These will run your pipeline based on a schedule. This can be handy when each morning for instance you want to run a pipeline that has a Bicep template which restores a certain environment to its original state with a Complete deployment mode. A scheduled trigger is defined based on a cron schedule: 
-
-```YAML
-# YAML file in the main branch
+```yaml
 schedules:
 - cron: "0 0 * * *"
   displayName: Daily environment restore
@@ -37,12 +37,31 @@ schedules:
     - main
 ```
 
-As you can see in the example you also specify for a scheduled trigger to which branch it applies. 
+> [!NOTE]
+> A _cron expression_ is a specially formatted sequence of characters that specify how often something should happen. In this example, `0 0 * * *` means _run every day at midnight UTC_.
 
-You can also use both a branch and a scheduled trigger in the same pipeline. In that case the pipeline will run each time a changed is pushed to the indicated branch. Also will the pipeline run for the indicated schedule. 
+You can also specify the branch of your repository that should be used when the schedule starts. When the pipeline begins, it will use the most recent version of the code from that branch.
 
-If you leave out the trigger and schedule parts altogether from your YAML pipeline your pipeline will run by default with a CI trigger on all branches. This is not necessarily always the behavior you would like. Also, indicating for which branches you would like your pipeline to run, makes it a lot more explicit when the pipeline will run. 
+You can combine triggers, like this:
 
+```yaml
+trigger: 
+- main
+
+schedules:
+- cron: "0 0 * * *"
+  displayName: Deploy test environment
+  branches:
+    include:
+    - main
+```
+
+When you specify a branch trigger and a scheduled trigger in the same pipeline, then the pipeline will run every time a file changes on the specified branch, _and_ on the schedule you specify.
+
+> [!TIP]
+> It's a good practice to specify the triggers for each pipeline. If you don't, then by default your pipeline will automatically run whenever any files change on any branch, which isn't often what you want.
+
+<!-- TODO here down -->
 
 ## Filtering pipeline execution through triggers
 
