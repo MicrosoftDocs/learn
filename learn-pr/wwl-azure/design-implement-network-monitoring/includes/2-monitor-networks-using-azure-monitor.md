@@ -104,7 +104,7 @@ You can access metrics from the **Metrics** option in the Azure Monitor menu.
 You can also access metrics from the **Metrics** menu of most other services and resources in the Azure portal. The screenshot below for example, displays the **Metrics** page for a virtual network resource.
 
 > [!div class="mx-imgBorder"]
-> [![The Metrics pane for a virtual network in Azure Monitor](../media/azure-monitor-metrics-2.png)](../media/azure-monitor-metrics-2.png#ligthbox)
+> [![The Metrics pane for a virtual network in Azure Monitor](../media/azure-monitor-metrics-2.png)](../media/azure-monitor-metrics-2.png#lightbox)
 
 ### Create metric charts with metrics explorer
 
@@ -157,7 +157,7 @@ Azure Monitor Network Insights is structured around these key components of moni
 - Diagnostic Toolkit
 
   > [!div class="mx-imgBorder"]
-  > ![Azure Monitor Network Insights - Networks page, all tabs highlighted](../media/network-insights-overview-1.png)
+  > [![Azure Monitor Network Insights - Networks page, all tabs highlighted](../media/network-insights-overview-1.png)](../media/network-insights-overview-1.png#lightbox)
 
 ### Network health and metrics
 
@@ -170,7 +170,7 @@ You can customize the resource health and alerts view by using filters such as *
 You can use the search box to search for network resources and their associated resources. For example, a public IP is associated with an application gateway, so a search for the public IP's DNS name would return both the public IP and the associated application gateway.
 
 > [!div class="mx-imgBorder"]
-> ![Azure Monitor Network Insights - Network health tab](../media/network-insights-search.png)
+> [![Azure Monitor Network Insights - Network health tab](../media/network-insights-search.png)](../media/network-insights-search.png#lightbox)
 
 **Network resource health and metrics**
 
