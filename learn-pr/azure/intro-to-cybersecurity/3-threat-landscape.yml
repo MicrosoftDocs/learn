@@ -9,7 +9,7 @@ metadata:
   author: mbcrump
   ms.author: micrum
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.prod: learning-azure
 durationInMinutes: 6
 content: |
   [!include[](includes/3-threat-landscape.md)]
