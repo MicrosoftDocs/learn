@@ -2,8 +2,7 @@
 
 Azure Application Gateway is a web traffic load balancer that enables you to manage traffic to your web applications. Traditional load balancers operate at the transport layer (OSI layer 4 - TCP and UDP) and route traffic based on source IP address and port, to a destination IP address and port.
 
-> [!div class="mx-imgBorder"]
-> ![Azure Application Gateway traffic flow](../media/azure-application-gateway-flow.png)
+![Azure Application Gateway traffic flow](../media/azure-application-gateway-flow.png)
 
 Application Gateway can make routing decisions based on additional attributes of an HTTP request, for example URI path or host headers. For example, you can route traffic based on the incoming URL. So, if /images is in the incoming URL, you can route traffic to a specific set of servers (known as a pool) configured for images. If /video is in the URL, that traffic is routed to another pool that's optimized for videos.
 
@@ -39,8 +38,7 @@ There are two primary methods of routing traffic, path-based routing, and multip
 
 Path-based routing sends requests with different URL paths different pools of back-end servers. For example, you could direct requests with the path /video/* to a back-end pool containing servers that are optimized to handle video streaming, and direct /images/* requests to a pool of servers that handle image retrieval.
 
-> [!div class="mx-imgBorder"]
-> ![Flowchart from left to right: user, application gateway, image server pool. Traffic is directed to the image server pool based on *images or *video](../media/app-gateway-path.png)
+![Flowchart from left to right: user, application gateway, image server pool. Traffic is directed to the image server pool based on *images or *video](../media/app-gateway-path.png)
 
  
 
@@ -48,10 +46,7 @@ Path-based routing sends requests with different URL paths different pools of ba
 
 Multiple site routing configures more than one web application on the same application gateway instance. In a multi-site configuration, you register multiple DNS names (CNAMEs) for the IP address of the Application Gateway, specifying the name of each site. Application Gateway uses separate listeners to wait for requests for each site. Each listener passes the request to a different rule, which can route the requests to servers in a different back-end pool. For example, you could direct all requests for [http://contoso.com](http://contoso.com/) to servers in one back-end pool, and requests for [http://fabrikam.com](http://fabrikam.com/) to another back-end pool. The following diagram shows this configuration.
 
- 
-
-> [!div class="mx-imgBorder"]
-> ![Flowchart left to right: user, application gateway, backend pool. Traffic is directed to the backend pool based on company, contoso or fabrikam](../media/app-gateway-site.png)
+![Flowchart left to right: user, application gateway, backend pool. Traffic is directed to the backend pool based on company, contoso or fabrikam](../media/app-gateway-site.png)
 
 Multi-site configurations are useful for supporting multi-tenant applications, where each tenant has its own set of virtual machines or other resources hosting a web application.
 
@@ -83,11 +78,8 @@ The new v2 SKU includes the following enhancements:
 
 ## Choosing between Azure Application Gateway v2 and Web Application Firewall V2 SKUs 
 
-When choosing whether to deploy an Application Gateway or a Web Application Firewall, there are several factors you must consider, including the region in which you want to deploy, the scaling strategy you want to follow and the cost of the service. 
+When choosing whether to deploy an Application Gateway or a Web Application Firewall, there are several factors you must consider, including the scaling strategy you want to follow and the cost of the service. 
 
-### Supported regions
-
-The Standard_v2 and WAF_v2 SKU is available in the following regions: North Central US, South Central US, West US, West US 2, East US, East US 2, Central US, North Europe, West Europe, Southeast Asia, France Central, UK West, Japan East, Japan West, Australia East, Australia Southeast, Brazil South, Canada Central, Canada East, East Asia, Korea Central, Korea South, UK South, Central India, West India, South India.
 
 ### Scaling Application Gateway and WAF v2
 

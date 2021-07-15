@@ -1,7 +1,6 @@
 Azure Front Door is a global, scalable entry-point that uses the Microsoft global edge network to create fast, secure, and widely scalable web applications. With Front Door, you can transform your global consumer and enterprise applications into robust, high-performing personalized modern applications with contents that reach a global audience through Azure.
 
-> [!div class="mx-imgBorder"]
-> ![Azure Front Door layout diagram](../media/front-door-visual-diagram.png)
+![Azure Front Door layout diagram](../media/front-door-visual-diagram.png)
 
 Front Door works at Layer 7 (HTTP/HTTPS layer) using anycast protocol with split TCP and Microsoft's global network to improve global connectivity. Based on your routing method you can ensure that Front Door will route your client requests to the fastest and most available application backend. An application backend is any Internet-facing service hosted inside or outside of Azure. Front Door provides a range of [traffic-routing methods](/azure/frontdoor/front-door-routing-methods) and [backend health monitoring options](/azure/frontdoor/front-door-health-probes) to suit different application needs and automatic failover scenarios. Like [Traffic Manager](/azure/traffic-manager/traffic-manager-overview), Front Door is resilient to failures, including failures to an entire Azure region.
 
@@ -103,8 +102,7 @@ Azure Front Door supports URL rewrite by configuring an optional Custom Forwardi
 
 The powerful part of URL rewrite is that the custom forwarding path will copy any part of the incoming path that matches to a wildcard path to the forwarded path (these path segments are the green segments in the example below):
 
-> [!div class="mx-imgBorder"]
-> ![URL rewrite example](../media/front-door-rewrite-policy.png)
+![URL rewrite example](../media/front-door-rewrite-policy.png)
 
 ## Configure health probes, including customization of HTTP response codes
 

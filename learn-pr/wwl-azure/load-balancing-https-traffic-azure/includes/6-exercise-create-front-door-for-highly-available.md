@@ -3,8 +3,7 @@
 
 In this exercise, you will set up an Azure Front Door configuration that pools two instances of a web application that runs in different Azure regions. This configuration directs traffic to the nearest site that runs the application. Azure Front Door continuously monitors the web application. You will demonstrate automatic failover to the next available site when the nearest site is unavailable. The network configuration is shown in the following diagram:
 
-> [!div class="mx-imgBorder"]
-> ![Network configuration for Azure Front Door.](../media/front-door-environment-diagram.png)
+![Network configuration for Azure Front Door.](../media/front-door-environment-diagram.png)
 
 In this exercise, you will:
 
@@ -29,7 +28,7 @@ This exercise requires two instances of a web application that run in different 
 4. On the Create Web App page, on the **Basics** tab, enter or select the following information.
 
    | **Setting**      | **Value**                                                    |
-   | ---------------- | ------------------------------------------------------------ |
+   |:-:|:-:|
    | Subscription     | Select your subscription.                                    |
    | Resource group   | Select the resource group provided by Learn.                 |
    | Name             | Enter a unique Name for your web app. This example uses WebAppContoso-1. |
@@ -50,7 +49,7 @@ This exercise requires two instances of a web application that run in different 
 8. On the Create Web App page, on the **Basics** tab, enter or select the following information.
 
    | **Setting**      | **Value**                                                    |
-   | ---------------- | ------------------------------------------------------------ |
+   |:-:|:-:|
    | Subscription     | Select your subscription.                                    |
    | Resource group   | Select the resource group provided by Learn.                 |
    | Name             | Enter a unique Name for your web app. This example uses WebAppContoso-2. |
@@ -78,7 +77,7 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
 3. In Create a Front Door, enter or select the following information.
 
    | **Setting**             | **Value**                                    |
-   | ----------------------- | -------------------------------------------- |
+   |:-:|:-:|
    | Subscription            | Select your subscription.                    |
    | Resource group          | Select the resource group provided by Learn. |
    | Resource group location | Select **Central US**.                       |
@@ -105,7 +104,7 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
 10. In Add a backend, enter, or select the following information.
 
     | **Setting**       | **Value**                                                    |
-    | ----------------- | ------------------------------------------------------------ |
+    |:-:|:-:|
     | Backend host type | Select **App service**.                                      |
     | Subscription      | Select your subscription.                                    |
     | Backend host name | Select the first web app you created. In this example, the web app was **WebAppContoso-1**. |
@@ -115,7 +114,7 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
 12. Select **+ Add a backend** again, enter or select the following.
 
     | **Setting**       | **Value**                                                    |
-    | ----------------- | ------------------------------------------------------------ |
+    |:-:|:-:|
     | Backend host type | Select App service.                                          |
     | Subscription      | Select your subscription.                                    |
     | Backend host name | Select the second web app you created. In this example, the web app was **WebAppContoso-2**. |

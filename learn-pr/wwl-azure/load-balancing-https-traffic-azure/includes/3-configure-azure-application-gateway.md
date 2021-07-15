@@ -1,9 +1,6 @@
 Application Gateway has a series of components that combine to route requests to a pool of web servers and to check the health of these web servers.
 
- 
-
-> [!div class="mx-imgBorder"]
-> ![Flowchart top to bottom: frontend IP, listener, rule, and backend instances](../media/app-gateway-config.png)
+![Flowchart top to bottom: frontend IP, listener, rule, and backend instances](../media/app-gateway-config.png)
 
  
 
@@ -27,8 +24,7 @@ The source IP address Application Gateway uses for health probes depends on the 
 
 - If the server address in the backend pool is a private endpoint, then the source IP address is from the application gateway subnet's private IP address space.
 
-  > [!div class="mx-imgBorder"]
-  > ![example heath probe for Azure App Gateway ](../media/app-gateway-probe.png)
+   ![example heath probe for Azure App Gateway ](../media/app-gateway-probe.png)
 
  
 
