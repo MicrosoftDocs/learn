@@ -75,6 +75,11 @@ Let's use the Data Explorer tool in the Azure portal to create a database and co
 
 1. Select the **New Container** box. The **New Container** pane appears. To see it, you may need to scroll to the right.
 
+    > [!NOTE]
+    > Ensure you enter the following values precisely as documented here:
+    > - **Collection Name** = `Bookmarks` with a capital B
+    > - **Partition key** = `/id` (slash id; NOT curly brackets or any combination of curly brackets and slashes)
+
 1. Enter the following values for each setting.
 
     | Setting | Value | Description |
@@ -211,7 +216,7 @@ To read data from the database, you need to define an input binding. As you'll s
     > [!NOTE]
     > Ensure you enter the following values precisely as documented here:
     > - **Collection Name** = `Bookmarks` with a capital B
-    > - **Partition key** = `id` (slash id; NOT curly brackets or any combination of curly brackets and slashes)
+    > - **Partition key** = `/id` (slash id; NOT curly brackets or any combination of curly brackets and slashes)
 
     | Setting | Value | Description |
     |---|---|---|
@@ -363,8 +368,6 @@ Let's examine what this code is doing.
 1. In the top menu bar, select **Get Function Url**. The **Get Function Url** dialog box appears.
 
 1. Select **default (function key)** from the dropdown list, then select the *Copy to clipboard* icon at the end of the URL.
-
-
 
 1. Paste the function URL you copied into the address bar of a new tab in your browser.
 
