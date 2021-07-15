@@ -32,7 +32,7 @@ In this exercise, you will:
 2. On the Azure portal menu, select **+ Create a resource**. Select **Networking**, and then select **ExpressRoute**, as shown in the following image. If ExpressRoute does not appear in the list, use **Search the marketplace** to search for it:
 
    > [!div class="mx-imgBorder"]
-   > ![Azure portal - create ExpressRoute circuit menu](../media/create-expressroute-circuit-menu.png)
+   > [![Azure portal - create ExpressRoute circuit menu](../media/create-expressroute-circuit-menu.png)](../media/create-expressroute-circuit-menu.png#lightbox)
 
 3. On the **Create ExpressRoute** page, provide the **Resource Group**, **Region**, and **Name** for the circuit. Then select **Next: Configuration &gt;**.
 
@@ -80,7 +80,7 @@ In this exercise, you will:
 2. All ExpressRoute circuits created in the subscription will appear here. 
 
    > [!div class="mx-imgBorder"]
-   > ![Azure portal - show existing Expressroute circuits](../media/expressroute-circuit-list.png)
+   > [![Azure portal - show existing Expressroute circuits](../media/expressroute-circuit-list.png)](../media/expressroute-circuit-list.png#lightbox)
 
 3. The circuit page displays the properties of the circuit. The service key appears in the service key field. Your service provider will need the Service Key to complete the provisioning process. The service key is specific to your circuit. **You must send the service key to your connectivity provider for provisioning.**
 
