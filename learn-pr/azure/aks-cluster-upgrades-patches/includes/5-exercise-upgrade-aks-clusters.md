@@ -92,12 +92,10 @@ In the following exercise, you will deploy an AKS cluster to represent the AKS c
     az aks wait -g $RG -n $CLUSTERNAME --update
     ```
 
-    ---
     
-    **Note:**
-    It is possible to apply upgrades only to the control plane in the AKS cluster or only to the nodes in the AKS cluster by including the optional parameters `--control-plane-only` or `--node-image-only` when running the upgrade command. If the optional parameters are not included, both the control plane and nodes in the AKS cluster are upgraded.
-    
-    ---
+    > [!NOTE]
+    > It is possible to apply upgrades only to the control plane in the AKS cluster or only to the nodes in the AKS cluster by including the optional parameters `--control-plane-only` or `--node-image-only` when running the upgrade command. If the optional parameters are not included, both the control plane and nodes in the AKS cluster are upgraded.
+
 
     Once complete, run the following command to confirm the patch upgrade. Check the `KubernetesVersion` is the next patch version.
 

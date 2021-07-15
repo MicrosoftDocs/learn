@@ -4,7 +4,7 @@ metadata:
   moduleType: standard  
   title: Apply cluster upgrades and security patches with Azure Kubernetes Service
   description: |
-    Apply the latests version upgrades and patches to your Azure Kubernetes Service clusters. 
+    Apply the latest version upgrades and patches to your Azure Kubernetes Service clusters. 
   ms.date: 07/15/2021
   author: microsoftmichelle 
   ms.author: mixie
