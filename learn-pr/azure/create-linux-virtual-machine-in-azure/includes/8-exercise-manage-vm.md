@@ -14,8 +14,6 @@ Port 80 is open on the NSG applied to the subnet. But port 80 is blocked by the 
 
     The **Add inbound security rule** pane appears.
 
-    ![Screenshot of that shows the basic button called out.](../media/8-inbound-port-basic.png)
-
 1. Enter the following values for our HTTP rule.
 
    |Setting | Value  |
