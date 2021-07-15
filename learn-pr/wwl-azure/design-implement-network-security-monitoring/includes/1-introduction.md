@@ -14,7 +14,7 @@ Your security requirements might include:
 
 - DDoS protection
 
-## Learning objectives
+## Learning objectives 
 
 In this module, you will:
 
