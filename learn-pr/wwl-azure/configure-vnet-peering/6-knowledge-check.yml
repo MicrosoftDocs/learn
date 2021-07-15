@@ -20,7 +20,7 @@ quiz:
     - content: "Connected"
       isCorrect: true
       explanation: "That's correct. The peering is not successfully established until the peering status for both virtual network peerings is Connected."
-    - content: "Inititiated"
+    - content: "Initiated"
       isCorrect: false
       explanation: "That's incorrect. The Initiated status is shown when the peering is first created."
     - content: "Peered"
