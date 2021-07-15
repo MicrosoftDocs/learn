@@ -35,7 +35,7 @@ Use the `Get-Help` cmdlet to learn about cmdlets.
                go to https://go.microsoft.com/fwlink/?LinkId=517145.
    ```
 
-   Because this output is difficult to read, you decide to use a less verbose alternative. That is, you use the `help` alias.
+   Because this output is difficult to read, you decide to use an alternative that is less verbose. That is, you use the `help` alias.
 
 1. Enter the `help` command:
 
@@ -43,7 +43,7 @@ Use the `Get-Help` cmdlet to learn about cmdlets.
    help Get-FileHash
    ```
 
-   You now get a reduced version of the help output. It looks like the following text:
+   Now, a reduced version of the help output is shown. It looks like the following text:
 
    ```output
    NAME
@@ -92,4 +92,3 @@ Use the `Get-Help` cmdlet to learn about cmdlets.
 
    > [!TIP]
    > To quickly see an example, add the flag `-Examples` when you search for help.
-

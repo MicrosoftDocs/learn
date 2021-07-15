@@ -3,7 +3,7 @@ uid: learn.powershell.discover-commands.5-exercise-discover-objects
 title: Exercise - Discover objects
 metadata:
   title: Exercise - Discover objects
-  description: In this exercise, learn how to discover what type of object a command returns, so you can find related commands, among other things.
+  description: In this exercise, learn how to discover what type of object a command returns, so you can find related commands and more.
   author: softchris
   ms.author: chnoring
   ms.date: 07/09/2021
