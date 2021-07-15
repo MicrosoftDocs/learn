@@ -29,14 +29,13 @@ trigger:
     - release/*
 ```
 
-You can also exclude specific branches, too. Suppose you're collaborating with team members on your project. Your colleagues create _feature branches_ to try out their ideas in Bicep files. All of these feature branches are given names like **feature/add-database**, **feature/improve-performance**, and so forth. You don't want to run the pipeline automatically when changes are made to these branches. By using the `exclude` property, you ensure the pipeline isn't automatically triggered for changes to feature branches:
+You can also exclude specific branches, too. Suppose you're collaborating with team members on your project. Your colleagues create _feature branches_ to try out their ideas in Bicep files. All of these feature branches are given names like **feature/add-database**, **feature/improve-performance**, and so forth. You want to run your pipeline automatically on all branches, except for the feature branches that your colleagues create. By using the `exclude` property, you ensure the pipeline isn't automatically triggered for changes to feature branches:
 
 ```yaml
 trigger:
   branches:
     include:
-    - main
-    - release/*
+    - *
     exclude:
     - feature/*
 ```

@@ -15,11 +15,11 @@ Because pipeline YAML files are code, they're stored alongside your Bicep code i
 
 ## Agents and pools
 
-Until now, you've deployed your Bicep files from your local computer. After you write the template, you deploy it to Azure by using the Azure CLI or Azure PowerShell. These tools use your computer's resources to submit the template to Azure, and they use your personal identity to authenticate you to Azure to verify you're allowed to deploy the file.
+Until now, you've deployed your Bicep files from your local computer. After you write the template, you deploy it to Azure by using the Azure CLI or Azure PowerShell. These tools use your computer's resources to submit the template to Azure, and they use your personal identity to authenticate you to Azure to verify you're allowed to deploy the resources.
 
-So how does this translate to a pipeline? The pipeline needs access to a computer so that it can execute the deployment steps. Azure Pipelines uses a machine called an _agent_. An agent is a computer that's configured to run the steps in your pipeline. Each agent already has the Bicep and Azure tooling you used in the previous modules, so it's able to do the same things that you do from your own computer.
+So how does this translate to a pipeline? The pipeline needs access to a computer so that it can execute the deployment steps. Azure Pipelines uses a machine called an _agent_. An agent is a computer that's configured to run the steps in your pipeline. Each agent already has the Bicep and Azure tooling you used in the previous modules, so it's able to do the same things that you do from your own computer. Instead of a human executing commands, the Azure Pipelines service instructs the agent to perform the steps you've asked it to run.
 
-Azure Pipelines provides multiple types of agents with different operating systems, like Ubuntu or Windows, and sets of tools. Microsoft runs these agents so you don't have to maintain any compute infrastructure. They're sometimes called _Microsoft-hosted agents_ or _hosted agents_ since they're hosted on your behalf. Hosted agents are automatically deleted after your pipeline runs, and you can't access them directly. So, it's important that your pipeline contains all the steps necessary to deploy your solution.
+Azure Pipelines provides multiple types of agents with different operating systems, like Ubuntu or Windows, and sets of tools. Microsoft runs these agents so you don't have to maintain any compute infrastructure. They're sometimes called _Microsoft-hosted agents_ or _hosted agents_ since they're hosted on your behalf. Hosted agents are automatically created for your pipeline and are deleted after your pipeline runs. You can't access them directly, so it's important that your pipeline contains all the steps necessary to deploy your solution.
 
 An _agent pool_ contains multiple agents of the same type. When you configure your pipeline, you tell Azure Pipelines which agent pool to use to execute each set of steps. When your pipeline runs, it waits for an agent to become available from the pool, and then it instructs the agent to run your deployment steps.
 
@@ -27,20 +27,6 @@ An _agent pool_ contains multiple agents of the same type. When you configure yo
 
 > [!NOTE]
 > You can also create your own custom agents. These are called _self-hosted agents_. You might do this if you have specific software you need to run as part of your pipeline, or if you need to have a lot of control over exactly how the agent is configured. We won't discuss self-hosted agents in this module, but we provide a link to more information in the summary.
-
-## Service connections
-
-When you deploy a Bicep file from your own computer, you use the Azure CLI or Azure PowerShell. Before you can deploy your code, you need to sign in to Azure. Usually the tools ask you to enter your email address and password in a browser. After verifying your credentials, the tools know who you are and can verify that you have permission to deploy your Bicep file.
-
-Since pipelines are run without any human present, they need to authenticate to Azure by using a service principal. You typically create a service principal manually before you create your pipeline. A service principal's credentials consist of an _application ID_ and a secret, which is usually a key or a certificate. You use a _service connection_ in Azure Pipelines to securely store these credentials so that your pipeline can use them. A service connection also includes some other information to help your pipeline identify the Azure environment that you want to deploy to.
-
-When you create a service connection, you give it a name. Your pipeline YAML file refers to the service connection by using this name. That way, your pipeline YAML code doesn't contain any secret information.
-
-When your pipeline starts, the agent that's running your deployment steps will have access to the service connection, including its credentials. It uses the credentials to sign in to Azure, just like you do yourself. Then, any steps in your pipeline will run by using the service principal's _identity_.
-
-You need to ensure that your service principal has the permissions it needs to be able to execute your deployment steps. For example, you might need to assign the service principal the contributor role for the resource group that it deploys your resources to.
-
-:::image type="content" source="../media/2-service-connection.png" alt-text="Diagram that shows a pipeline that includes an Azure deployment step, which accesses a service connection and then deploys to Azure." border="false":::
 
 ## Triggers
 
@@ -57,15 +43,26 @@ There are two types of steps in Azure Pipelines:
 - _Scripts_ enable you to run a script by using Bash, PowerShell, or the Windows command shell.
 - _Tasks_ provide more advanced functionality and give you a convenient way to access lots of different capabilities without writing script statements. For example, there are built-in tasks to run the Azure CLI or Azure PowerShell, to test your code, to upload files to an FTP server, and many more. Additionally, anyone can write their own task and publish it to the Visual Studio Marketplace, so there's a large set of commercial and open-source tasks available, too.
 
-> [!NOTE]
-> Some people prefer to use script statements rather than built-in tasks, because they provide more control over what is going on. Other people prefer to use tasks so they don't need to write and manage scripts. In this module, we use a mixture of both approaches.
+Some people prefer to use script statements rather than built-in tasks, because they provide more control over what is going on. Other people prefer to use tasks so they don't need to write and manage scripts. In this module, we use a mixture of both approaches.
 
-A step can be associated with a service connection so that it can authenticate to Azure.
-
-:::image type="content" source="../media/2-step.png" alt-text="Diagram that shows a pipeline with two steps." border="false":::
+:::image type="content" source="../media/2-steps.png" alt-text="Diagram that shows a pipeline with two steps." border="false":::
 
 > [!NOTE]
 > Azure Pipelines also has the concepts of _stages_ and _jobs_, which help you to organize your steps and run multiple steps at the same time. You’ll learn more about these in future modules.
+
+## Service connections
+
+When you deploy a Bicep file from your own computer, you use the Azure CLI or Azure PowerShell. Before you can deploy your code, you need to sign in to Azure. Usually the tools ask you to enter your email address and password in a browser. After verifying your credentials, the tools know who you are and can verify that you have permission to deploy your Bicep file.
+
+Since pipelines are run without any human present, they need to authenticate to Azure by using a service principal. You typically create a service principal manually before you create your pipeline. A service principal's credentials consist of an _application ID_ and a secret, which is usually a key or a certificate. You use a _service connection_ in Azure Pipelines to securely store these credentials so that your pipeline can use them. A service connection also includes some other information to help your pipeline identify the Azure environment that you want to deploy to.
+
+When you create a service connection, you give it a name. Steps refer to the service connection by using this name. That way, your pipeline YAML code doesn't contain any secret information.
+
+When your pipeline starts, the agent that's running your deployment steps will have access to the service connection, including its credentials. A pipeline step uses the credentials to sign in to Azure, just like you do yourself. Then, the actions that step takes uses the service principal's _identity_.
+
+You need to ensure that your service principal has the permissions it needs to be able to execute your deployment steps. For example, you might need to assign the service principal the contributor role for the resource group that it deploys your resources to.
+
+:::image type="content" source="../media/2-service-connection.png" alt-text="Diagram that shows a pipeline that includes an Azure deployment step, which accesses a service connection and then deploys to Azure." border="false":::
 
 ## Basic pipeline example
 
