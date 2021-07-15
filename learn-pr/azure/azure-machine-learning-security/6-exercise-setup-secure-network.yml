@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-machine-learning-security.exercise-setup-a-secure-network
+uid: learn.azure.azure-machine-learning-security.exercise-setup-secure-network
 title: Exercise - Setup a secure Azure Virtual Network
 metadata:
   title: Exercise - Setup a secure Azure Virtual Network
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-exercise-setup-a-secure-network.md)]
+  [!include[](includes/6-exercise-setup-secure-network.md)]

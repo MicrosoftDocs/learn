@@ -2,7 +2,7 @@
 
 Machine Learning Workspace is the top-level resource where you work with artifacts needed in Azure Machine Learning, such as datasets, models, and user roles.
 
-In this exercise, we will set up an Azure ML Workspace, which will be used in following exercises and modules.
+In this exercise, we will set up an Azure Machine Learning Workspace, which will be used in following exercises and modules.
 
 ## Prerequisites
 
@@ -47,23 +47,23 @@ To create an ML Workspace, follow these steps:
 
 2. Select **Create a resource** in the Azure portal:
 
-    :::image type="content" source="../media/ws-1.png" alt-text="Screenshot showing the Azure portal with a red box around create a resource.":::
+    :::image type="content" source="../media/3-workspace-1.png" alt-text="Screenshot showing the Azure portal with a red box around create a resource.":::
 
 3. Select **See all**.
 
-    :::image type="content" source="../media/ws-2.png" alt-text="Screenshot showing the create a resource page with a red box around see all.":::
+    :::image type="content" source="../media/3-workspace-2.png" alt-text="Screenshot showing the create a resource page with a red box around see all.":::
 
 4. Scroll down until the **AI + Machine Learning** option is visible and select **create**.
 
-    :::image type="content" source="../media/ws-3.png" alt-text="Screenshot showing the AI and machine learning option.":::
+    :::image type="content" source="../media/3-workspace-3.png" alt-text="Screenshot showing the AI and machine learning option.":::
 
 5. Fill in the form, selecting your current subscription and the resource group we had previously created (**AI-Resource**). Use **ml-workspace** as the workspace name:
 
-    :::image type="content" source="../media/ws-4.png" alt-text="Screenshot showing the form from step 4 and how to fill it in.":::
+    :::image type="content" source="../media/3-workspace-4.png" alt-text="Screenshot showing the form from step 4 and how to fill it in.":::
 
 6. Select the **Review + create** button to load a review confirmation screen:
 
-    :::image type="content" source="../media/ws-5.png" alt-text="Screenshot showing the confirmation screen from step 5.":::
+    :::image type="content" source="../media/3-workspace-5.png" alt-text="Screenshot showing the confirmation screen from step 5.":::
 
 7. Select **Create** to start deploying your new workspace (this may take a few minutes).
 

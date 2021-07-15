@@ -17,9 +17,9 @@ Azure Key Vault provides secure storage of generic secrets for applications in A
 
 Secrets stored in Azure Key Vault are encrypted, optionally at the hardware level. This is handled transparently, and requires no action from the user or the application requesting the secrets. They can also be temporarily disabled, and automatically activate or expire on a certain date.
 
-## How Key Vault works with Azure ML
+## How Key Vault works with Azure Machine Learning
 
-When you create an Azure ML workspace, this automatically creates a Key Vault. To view the Azure Key Vault associated with your workspace, open the workspace’s Overview tab. Your key vault appears on the right hand side.
+When you create an Azure Machine Learning workspace, this automatically creates a Key Vault. To view the Azure Key Vault associated with your workspace, open the workspace’s Overview tab. Your key vault appears on the right hand side.
 
 When you first create your workspace, your Key Vault will be automatically created. 
 The Key Vault can be accessed through your application. For example, you can use the Azure Shell to set an environmental variable holding Key Store’s name, and save a password to that key store like so:
