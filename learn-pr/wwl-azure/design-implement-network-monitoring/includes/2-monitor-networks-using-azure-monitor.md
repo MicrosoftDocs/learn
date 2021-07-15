@@ -71,14 +71,14 @@ For several of your resources in Azure, you will see the data collected by Azure
 In the screenshot below for example, you can see the Monitoring tab from the Overview page of a virtual machine.
 
 > [!div class="mx-imgBorder"]
-> ![Monitoring tab of a virtual machine in Azure Monitor](../media/monitoring-tab-vm-1.png)
+> [![Monitoring tab of a virtual machine in Azure Monitor](../media/monitoring-tab-vm-1.png)](../media/monitoring-tab-vm-1.png#lightbox)
 
 Note the various charts displaying several key performance metrics for system components such as **CPU**, **Network**, and **Disk**. 
 
 You can click on these graphs to open the data in **Metrics Explorer** in the Azure portal, which allows you to interactively analyze the data in your metric database and chart the values of multiple metrics over time. You can also pin the charts to a dashboard to view them with other visualizations later. You can also retrieve metrics by using the Azure monitoring REST API.
 
 > [!div class="mx-imgBorder"]
-> ![The Metrics pane for a virtual machine in Azure Monitor](../media/monitoring-tab-vm-2.png)
+> [![The Metrics pane for a virtual machine in Azure Monitor](../media/monitoring-tab-vm-2.png)](../media/monitoring-tab-vm-2.png#lightbox)
 
 The data collected by Azure Monitor Metrics is stored in a time-series database which is optimized for analyzing time-stamped data. Each set of metric values is a time series with the following properties:
 
@@ -99,12 +99,12 @@ The data collected by Azure Monitor Metrics is stored in a time-series database 
 You can access metrics from the **Metrics** option in the Azure Monitor menu.
 
 > [!div class="mx-imgBorder"]
-> ![Select a scope pane for metrics on a virtual machine in Azure Monitor ](../media/azure-monitor-metrics-1.png)
+> [![Select a scope pane for metrics on a virtual machine in Azure Monitor ](../media/azure-monitor-metrics-1.png)](../media/azure-monitor-metrics-1.png#lightbox)
 
 You can also access metrics from the **Metrics** menu of most other services and resources in the Azure portal. The screenshot below for example, displays the **Metrics** page for a virtual network resource.
 
 > [!div class="mx-imgBorder"]
-> ![The Metrics pane for a virtual network in Azure Monitor](../media/azure-monitor-metrics-2.png)
+> [![The Metrics pane for a virtual network in Azure Monitor](../media/azure-monitor-metrics-2.png)](../media/azure-monitor-metrics-2.png#ligthbox)
 
 ### Create metric charts with metrics explorer
 
@@ -118,33 +118,33 @@ Start in the following order:
 
 3. Use advanced settings to customize the chart before pinning to dashboards. Configure alerts to receive notifications when the metric value exceeds or drops below a threshold.
 
-To create a metric chart, from your resource, resource group, subscription, or Azure Monitor view, open the **Metrics** tab and follow these steps:
+4. To create a metric chart, from your resource, resource group, subscription, or Azure Monitor view, open the **Metrics** tab and follow these steps:
 
-Click on the "Select a scope" button to open the resource scope picker. This will allow you to select the resource(s) you want to see metrics for. If you opened metrics explorer from the resource's menu, the resource should already be populated.
-
-> [!div class="mx-imgBorder"]
-> ![The Metrics Explorer pane in Azure Monitor - Scope highlighted](../media/metrics-explorer-1.png)
-
-For some resources, you must pick a namespace. The namespace is just a way to organize metrics so that you can easily find them. For example, storage accounts have separate namespaces for storing Files, Tables, Blobs, and Queues metrics. Many resource types only have one namespace.
+5. Click on the "Select a scope" button to open the resource scope picker. This will allow you to select the resource(s) you want to see metrics for. If you opened metrics explorer from the resource's menu, the resource should already be populated.
 
 > [!div class="mx-imgBorder"]
-> ![The Metrics Explorer pane in Azure Monitor - Metrics namespace highlighted](../media/metrics-explorer-2.png)
+> [![The Metrics Explorer pane in Azure Monitor - Scope highlighted](../media/metrics-explorer-1.png)](../media/metrics-explorer-1.png#lightbox)
 
-Select a metric from the list of available metrics. This list will vary depending on what resource and scope you select.
-
-> [!div class="mx-imgBorder"]
-> ![The Metrics Explorer pane in Azure Monitor - Metrics highlighted](../media/metrics-explorer-3.png)
-
-Optionally, you can change the metric aggregation. For example, you might want your chart to show minimum, maximum, or average values of the metric.
+6. For some resources, you must pick a namespace. The namespace is just a way to organize metrics so that you can easily find them. For example, storage accounts have separate namespaces for storing Files, Tables, Blobs, and Queues metrics. Many resource types only have one namespace.
 
 > [!div class="mx-imgBorder"]
-> ![The Metrics Explorer pane in Azure Monitor - Aggregation highlighted](../media/metrics-explorer-4.png)
+> [![The Metrics Explorer pane in Azure Monitor - Metrics namespace highlighted](../media/metrics-explorer-2.png)](../media/metrics-explorer-2.png#lightbox)
+
+7. Select a metric from the list of available metrics. This list will vary depending on what resource and scope you select.
+
+> [!div class="mx-imgBorder"]
+> [![The Metrics Explorer pane in Azure Monitor - Metrics highlighted](../media/metrics-explorer-3.png)](../media/metrics-explorer-3.png#lightbox)
+
+8. Optionally, you can change the metric aggregation. For example, you might want your chart to show minimum, maximum, or average values of the metric.
+
+> [!div class="mx-imgBorder"]
+> [![The Metrics Explorer pane in Azure Monitor - Aggregation highlighted](../media/metrics-explorer-4.png)](../media/metrics-explorer-4.png#lightbox)
 
  
 
 ## Monitor network resources with Azure Monitor Network Insights
 
-You can use the **Insights&gt;Networks** section in **Azure Monitor** to obtain a broad view of health and metrics for all your deployed network resources, without requiring any configuration. It also provides access to network monitoring features such as Connection Monitor, flow logging for network security groups (NSG) flow logs, and Traffic Analytics., and it provides other network diagnostic features.
+You can use the **Insights&gt;Networks** section in **Azure Monitor** to obtain a broad view of health and metrics for all your deployed network resources, without requiring any configuration. It also provides access to network monitoring features such as Connection Monitor, flow logging for network security groups (NSG) flow logs, and Traffic Analytics, and it provides other network diagnostic features.
 
 Azure Monitor Network Insights is structured around these key components of monitoring:
 
