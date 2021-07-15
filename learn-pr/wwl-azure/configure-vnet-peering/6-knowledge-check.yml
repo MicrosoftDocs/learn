@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/14/2021
+  ms.date: 07/15/2021
   author: wwlpublish
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -20,9 +20,9 @@ quiz:
     - content: "Connected"
       isCorrect: true
       explanation: "That's correct. The peering is not successfully established until the peering status for both virtual network peerings is Connected."
-    - content: "Inititated"
+    - content: "Inititiated"
       isCorrect: false
-      explanation: "That's incorrect. The Initatiated status is shown when the peering is first created."
+      explanation: "That's incorrect. The Initiated status is shown when the peering is first created."
     - content: "Peered"
       isCorrect: false
       explanation: "That's incorrect. Peered is not a virtual network status."
