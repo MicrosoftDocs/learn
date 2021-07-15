@@ -3,7 +3,7 @@ Web Application Firewall (WAF) provides centralized protection of your web appli
  
 
 > [!div class="mx-imgBorder"]
-> ![WAF overview diagram showing a global WAF policy can allow or deny access to resources in Azure regions or on-premises ](../media/wafoverview.png)
+> ![WAF overview diagram showing a global WAF policy can allow or deny access to resources in Azure regions or on-premises ](../media/waf-overview.png)
 
  
 

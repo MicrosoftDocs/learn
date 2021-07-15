@@ -104,7 +104,7 @@ In this task, you will create the workload virtual machine and place it in the W
    | Region               | Your region                                                  |
    | Availability options | **No infrastructure redundancy required**                    |
    | Image                | **Windows Server 2016 Datacenter - Gen 1**                   |
-   | Size                 | Select **See all sizes**, then choose **B1s** in the list and choose **Select** <br /><br />**(Standard_B1s - 1 vcpu, 1 GiB memory (£8.60/month)** |
+   | Size                 | Select **See all sizes**, then choose **B1s** in the list and choose **Select** <br /><br />**(Standard_B1s - 1 vcpu, 1 GiB memory** |
    | Username             | **MyAdmin**                                                  |
    | Password             | **TestPa$$w0rd!**                                            |
    | Confirm password     | **TestPa$$w0rd!**                                            |
