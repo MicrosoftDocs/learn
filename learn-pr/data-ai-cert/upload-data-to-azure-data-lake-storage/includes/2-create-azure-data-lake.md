@@ -17,7 +17,7 @@ To create a resource group in the Azure portal, follow these steps:
 1. Name the resource group **mslearn-datalake-test**.
 1. Choose the region (location) for the resource group. Typically, you'll want a location that's close to you or to the data you'll work with.
 
-    ![Screenshot showing how to create a resource group in the Azure portal](../media/2-create-resource-group.png)
+    ![Screenshot showing how to create a resource group in the Azure portal.](../media/2-create-resource-group.png)
 
 1. Select **Review + Create** > **Create**.
 
@@ -34,13 +34,13 @@ You'll create a Data Lake Storage Gen2 account the same way you create an Azure 
 1. For the location, select **Central US**.
 1. Make sure the **Account kind** is **StorageV2 (general-purpose V2)**. Leave the defaults for the rest of the values.
 
-    ![Screenshot showing how to create a storage account in the Azure portal](../media/2-create-storage-account-basics.png)
+    ![Screenshot showing how to create a storage account in the Azure portal.](../media/2-create-storage-account-basics.png)
 
 1. Select **Next: Advanced**.
 1. In the **Data Lake Storage Gen2 (preview)** section, next to **Hierarchical namespace**, select **Enabled**.
 1. Select **Review + Create** to create the storage account.
 
-    ![Screenshot showing the Advanced tab of the Create storage account area in the Azure portal](../media/2-create-storage-account.png)
+    ![Screenshot showing the Advanced tab of the Create storage account area in the Azure portal.](../media/2-create-storage-account.png)
 
 1. After the creation details are validated, select **Create** to start the deployment.
 

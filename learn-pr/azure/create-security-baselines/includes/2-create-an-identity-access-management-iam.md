@@ -17,7 +17,7 @@ All non-Administrators should not have access due to the sensitive data and the 
 
 1. Ensure that **Restrict access to Azure AD administration portal** is set to **Yes**. Setting this value to **Yes** restricts all non-administrators from accessing any Azure AD data in the administration portal, but does not restrict such access using PowerShell or another client such as Visual Studio.
 
-    ![Screenshot of the Azure portal showing the Restrict access to Azure AD administration portal option](../media/2-restrict-access-ad-portal.png)
+    ![Screenshot of the Azure portal showing the Restrict access to Azure AD administration portal option.](../media/2-restrict-access-ad-portal.png)
 
 ### Enable Azure AD Multi-Factor Authentication (MFA) - Level 2
 
@@ -31,7 +31,7 @@ Enable it for privileged and non-privileged users.
 
 1. Ensure that **Multi-Factor Authentication Status** is **Enabled** for all users who are co-Administrators, Owners, or Contributors.
 
-    ![Screenshot of the Azure portal showing the Multi-Factor Authentication option in the AAD pane](../media/2-mfa-ad-portal.png)
+    ![Screenshot of the Azure portal showing the Multi-Factor Authentication option in the AAD pane.](../media/2-mfa-ad-portal.png)
 
 ### Block remembering MFA on trusted devices - Level 2
 
@@ -47,7 +47,7 @@ Remember Multi-Factor Authentication feature for devices and browsers that are t
 
 1. Ensure that **Restore multi-factor authentication on all remembered devices** is **Selected**.
 
-    ![Screenshot of the Azure portal showing the Multi-Factor Authentication option to Manage user settings](../media/2-block-remembering-mfa-on-trusted-devices.png)
+    ![Screenshot of the Azure portal showing the Multi-Factor Authentication option to Manage user settings.](../media/2-block-remembering-mfa-on-trusted-devices.png)
 
 ### About guests - Level 1
 
@@ -95,7 +95,7 @@ If authentication reconfirmation is set to disabled, registered users will never
 
 1. Ensure that **Number of days before users are asked to reconfirm their authentication information** is not set to **0**. The default is 180 days.
 
-    ![Screenshot of the Azure portal showing the form for number of days to re-confirm info](../media/2-days-till-re-confirm.png)
+    ![Screenshot of the Azure portal showing the form for number of days to re-confirm info.](../media/2-days-till-re-confirm.png)
 
 ### Members and guests can invite - Level 2
 
@@ -124,7 +124,7 @@ When this feature is enabled, all users in AAD are allowed to create new securit
 
 1. Ensure that **Users can create security groups** is set to **No**.
 
-    ![Screenshot showing the Azure portal in the AAD section with the Users can create security groups turned off](../media/2-create-groups.png)
+    ![Screenshot showing the Azure portal in the AAD section with the Users can create security groups turned off.](../media/2-create-groups.png)
 
 ### Self-service group management enabled - Level 2
 
@@ -138,7 +138,7 @@ Until your business requires this delegation to various users it is a best pract
 
 1. Ensure that **Self-service group management enabled** is set to **No**.
 
-    ![Screenshot showing the Azure portal in the AAD section with the self-service groups turned off](../media/2-self-service-groups.png)
+    ![Screenshot showing the Azure portal in the AAD section with the self-service groups turned off.](../media/2-self-service-groups.png)
 
 ### Application options - Allow users to register apps - Level 2
 
@@ -152,7 +152,7 @@ Require administrators to register custom applications.
 
 1. Ensure that **App registrations** is set to **No**.
 
-    ![Screenshot showing the Azure portal in the AAD users section showing app registration turned off](../media/2-app-registrations.png)
+    ![Screenshot showing the Azure portal in the AAD users section showing app registration turned off.](../media/2-app-registrations.png)
 
 > [!TIP]
 > Remember to select **Save** if you make changes to any of the settings.

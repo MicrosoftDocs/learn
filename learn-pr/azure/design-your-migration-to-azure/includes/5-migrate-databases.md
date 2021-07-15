@@ -28,7 +28,7 @@ Your company's database needs are simple, so the fastest and cheapest option is 
 
 ## Overview of database migrations
 
-![Database migrations](../media/5-database-migration.svg)
+![Database migrations.](../media/5-database-migration.svg)
 
 The Data Migration Assistant will guide you through the process of migrating your database. You'll take your existing relational databases, split out the database schemas, and then recreate them in the destination Azure SQL Database instance. With the new schema in place, the data for each database can then be copied to Azure. Finally, you'll check that the new databases are performing as expected.
 

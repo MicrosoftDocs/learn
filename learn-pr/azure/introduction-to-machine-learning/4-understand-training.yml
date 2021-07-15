@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.introduction-to-machine-learning.understand-training
+title: What are inputs and outputs?
+metadata:
+  title: What are inputs and outputs?
+  description: Conceptual unit introducing what machine learning inputs and outputs are
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-understand-training.md)]

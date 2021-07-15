@@ -127,7 +127,7 @@ To expose your website to the world via DNS, you must create an ingress controll
 
     ```yaml
     #ingress.yaml
-    apiVersion: extensions/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: contoso-website
@@ -141,7 +141,7 @@ To expose your website to the world via DNS, you must create an ingress controll
 
     ```yaml
     #ingress.yaml
-    apiVersion: extensions/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: contoso-website
@@ -163,7 +163,7 @@ To expose your website to the world via DNS, you must create an ingress controll
 
     ```yaml
     #ingress.yaml
-    apiVersion: extensions/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: contoso-website
@@ -180,7 +180,7 @@ To expose your website to the world via DNS, you must create an ingress controll
 
     ```yaml
     #ingress.yaml
-    apiVersion: extensions/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: contoso-website
@@ -192,8 +192,10 @@ To expose your website to the world via DNS, you must create an ingress controll
           http:
             paths:
               - backend: # How the ingress will handle the requests
-                  serviceName: contoso-website # Which service the request will be forwarded to
-                  servicePort: http # Which port in that service
+                  service:
+                   name: contoso-website # Which service the request will be forwarded to
+                   port:
+                     name: http # Which port in that service
                 path: / # Which path is this rule referring to
     ```
 

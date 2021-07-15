@@ -29,7 +29,7 @@ Diagnostic data collected by the Storage Analytics service is written to blobs i
 
 Unlike Storage Analytics metrics, Storage Analytics logging isn't enabled by default for your storage account. You can enable it in the Azure portal, from the **Diagnostic settings (classic)** page. You can specify whether you want to record read, write, and delete operations performed against your storage account. You enable logging individually for each service (blob, file, table, queue).
 
-![Screenshot of the diagnostic settings page in the Azure portal, showing how to enable logging](../media/5-enable-logging.png)
+![Screenshot of the diagnostic settings page in the Azure portal, showing how to enable logging.](../media/5-enable-logging.png)
 
 > [!NOTE]
 > The portal gives you a choice in the format of the data that is written to the log records. You can select Logging version 1.0 or Logging version 2.0. Logging Version 2.0 provides additional fields to support authentication mechanisms such as OAuth 2.0 and Azure Active Directory. It is recommended for all new storage accounts to use Logging version 2.0. For more information on these formats, see [Storage Analytics log format](/rest/api/storageservices/storage-analytics-log-format).

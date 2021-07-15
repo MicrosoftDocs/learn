@@ -12,7 +12,7 @@ az webapp log tail -n <function app name> -g <resource group name>
 
 With traffics to your Function app you will see for example:
 
-![Image showing Log Streaming from Azure CLI](../media/8-log-streaming-cli.png)
+![Image showing Log Streaming from Azure CLI.](../media/8-log-streaming-cli.png)
 
 For more complicate troubleshooting and monitoring scenario, Application Insights will be a better fit.
 
@@ -46,4 +46,4 @@ The recommended method for using Application Insights in your function applicati
 
 For example, **Log streaming** is available from the **Platform features** tab from the top-level page of your functions App Service.
 
-![Image showing where to find Log Streaming](../media/8-log-streaming.png)
+![Image showing where to find Log Streaming.](../media/8-log-streaming.png)

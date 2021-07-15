@@ -42,7 +42,7 @@ In this URL:
 
 The specific endpoint details are available in the Custom Vision service portal. If you select the **View Endpoint** button on the **Predictions** tab or the **Prediction URL** option on the **Performance** tab, you'll see a dialog box similar to this one:
 
-![Screenshot showing the two defined prediction endpoints for a Custom Vision service](../media/4-image-url.png)
+![Screenshot showing the two defined prediction endpoints for a Custom Vision service.](../media/4-image-url.png)
 
 ### Constructing the HTTP request
 

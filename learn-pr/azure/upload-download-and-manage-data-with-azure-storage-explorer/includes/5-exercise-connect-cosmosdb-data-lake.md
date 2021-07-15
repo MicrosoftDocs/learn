@@ -73,15 +73,15 @@ Next, connect Storage Explorer to Azure Cosmos DB through a connection string.
 
 1. In the **EXPLORER** pane, expand **Local & Attached**.
 
-    ![Screenshot that shows the Cosmos DB Accounts option in the Local & Attached resource tree](../media/5-cosmos-db-connect-string.png)
+    ![Screenshot that shows the Cosmos DB Accounts option in the Local & Attached resource tree.](../media/5-cosmos-db-connect-string.png)
 
 1. You'll see a **Cosmos DB Accounts** item. Right-click it and select **Connect to Cosmos DB**.
 
-    ![Screenshot that shows the Connect to Cosmos DB option on the shortcut menu](../media/5-cosmos-db-connect-string-option.png)
+    ![Screenshot that shows the Connect to Cosmos DB option on the shortcut menu.](../media/5-cosmos-db-connect-string-option.png)
 
 1. The connection wizard needs the connection string to Azure Cosmos DB. Copy and paste the **Primary SQL Connection String** you generated earlier into the **Connection string** box. 
 
-    ![Screenshot that shows the Azure Cosmos DB connection wizard](../media/5-cosmos-db-connect-string-connect.png)  
+    ![Screenshot that shows the Azure Cosmos DB connection wizard.](../media/5-cosmos-db-connect-string-connect.png)  
 
 1. You'll now see a **Summary** view that shows the **Account** label and name, the account endpoint, and the account key. Verify that they're correct, and then select **Connect**. Select **Next**.
 
@@ -95,7 +95,7 @@ So far, you've created an Azure Cosmos DB instance and connected to it by using 
 
 1. In the **EXPLORER** pane, select the Cosmos DB account that you created earlier. Right-click it and select **Create Database**.
 
-   ![Screenshot that shows the Cosmos DB shortcut menu with Create Database selected](../media/5-cosmos-db-create-database.png)
+   ![Screenshot that shows the Cosmos DB shortcut menu with Create Database selected.](../media/5-cosmos-db-create-database.png)
 
 1. Give your database the name **products** and select **Enter**.
 
@@ -111,7 +111,7 @@ Now that you have a Cosmos DB database, it's time to create a collection. When y
 
 1. For **Collection ID**, enter an ID of **regions**.
 
-   ![Screenshot that shows the Create Collection panel and the Collection ID box](../media/5-cosmos-db-collection.png)
+   ![Screenshot that shows the Create Collection panel and the Collection ID box.](../media/5-cosmos-db-collection.png)
 
 1. Next, specify whether this collection has a finite amount of storage space or whether it will grow to match the size of the collection. A fixed option gives you a maximum collection size of 10 GB.
 
@@ -131,7 +131,7 @@ The collection can contain many items. You use Storage Explorer to manage these,
 
 1. To add a document, select **New Document**. A new empty document is available in the window below.
 
-    ![Screenshot that shows the New Document button and the document control panel](../media/5-cosmos-db-collection-create-doc.png)
+    ![Screenshot that shows the New Document button and the document control panel.](../media/5-cosmos-db-collection-create-doc.png)
 
 1. Replace the content of the document with this JSON:
 
@@ -146,7 +146,7 @@ The collection can contain many items. You use Storage Explorer to manage these,
 
 1. Select **Save**.
 
-   ![Screenshot that shows the Save button](../media/5-cosmos-db-collection-save-doc.png)
+   ![Screenshot that shows the Save button.](../media/5-cosmos-db-collection-save-doc.png)
 
 The new document appears in the ID pane.
 
@@ -182,13 +182,13 @@ Now that you've created a Gen2 storage account, you can connect to it in Storage
 
 1. Right-click **Storage Accounts** and select **Connect to Azure storage**.
 
-   ![Screenshot that shows the Connect to Azure storage option](../media/5-connect-to-azure-storage.png)
+   ![Screenshot that shows the Connect to Azure storage option.](../media/5-connect-to-azure-storage.png)
 
 1. If you're prompted, sign in with your Azure account.
 
 1. When the connection is successful, you'll see the **dlsstoragetest001 (ADLS Gen2)** storage account displayed under the storage accounts. Your account will have a different number suffix.
 
-   ![Screenshot that shows the Azure Data Lake Storage Gen2 account](../media/5-azure-data-lake-gen2-storage-account.png)
+   ![Screenshot that shows the Azure Data Lake Storage Gen2 account.](../media/5-azure-data-lake-gen2-storage-account.png)
 
 ### Create a container
 
@@ -196,13 +196,13 @@ All containers in an Azure Data Lake Gen2 storage account are blobs. To create a
 
 1. Right-click the **dlsstoragetest001** storage account, and select **Create Blob Container** from the shortcut menu.
 
-    ![Screenshot that shows the shortcut menu for adding a container](../media/5-data-lake-create-blob-container.png)
+    ![Screenshot that shows the shortcut menu for adding a container.](../media/5-data-lake-create-blob-container.png)
 
 1. Name the new container **myfilesystem**.
 
 1. When the container is created, the pane for the container appears. There, you can manage the container contents.
 
-    ![Screenshot that shows the myfilesystem control ribbon and view](../media/5-data-lake-create-blob-container-view.png )
+    ![Screenshot that shows the myfilesystem control ribbon and view.](../media/5-data-lake-create-blob-container-view.png )
 
 ### Upload and view blob data
 
@@ -210,7 +210,7 @@ With the new **myfilesystem** container created, you can now upload files or fol
 
 1. To upload a file, select the **Upload** option, and select **Upload Files**.
 
-    ![Screenshot that shows the upload options](../media/5-data-lake-container-upload-options.png)
+    ![Screenshot that shows the upload options.](../media/5-data-lake-container-upload-options.png)
 
 1. In the dialog box, use the ellipsis (**...**) to select the file that you want to upload.
 
@@ -218,6 +218,6 @@ With the new **myfilesystem** container created, you can now upload files or fol
 
 1. The file is available to the **myfilesystem** container.
 
-    ![Screenshot that shows the uploaded file](../media/5-data-lake-file-uploaded.png)
+    ![Screenshot that shows the uploaded file.](../media/5-data-lake-file-uploaded.png)
 
 You can upload as many files as you want to this folder. Also, you can create an unlimited number of folders. You can then organize and manage the content in your folders, as you do with your file system.
