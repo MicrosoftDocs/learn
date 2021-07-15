@@ -12,13 +12,13 @@ title: Optimize performance and costs by using Azure Disk Storage
 summary: |
   Azure Disk Storage offers a range of disk types and capabilities that you can use to optimize application performance and costs in specific scenarios. In this module, you'll learn more about how disk performance works and identify Azure Disk Storage capabilities and performance-scaling options.
 abstract: |
-  After completing this module, you should know more about:
+  In this module, you'll learn more about:
   - The disk types that are available in Azure
   - How disk performance works
   - Performance-scaling options
 prerequisites: |
   - Basic knowledge of Azure Disk Storage
-  - Basic knowledge of Azure virtual machines
+  - Basic knowledge of Azure virtual machines (VMs)
   - Experience using the Azure portal
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: true
