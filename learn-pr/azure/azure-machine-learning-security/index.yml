@@ -2,14 +2,14 @@
 uid: learn.azure.azure-machine-learning-security
 metadata:
   title: Introduction to Security Concepts in Azure Machine Learning
-  description: Azure Machine Learning provides several mechanisms to secure your data and training environment.
+  description: Security is increasingly important for machine learning. In particular, it is increasingly important to ensure that private data stay private, and models are not manipulated by bad actors. In this learning module, we cover the basics of locking down a machine learning solution and keeping sensitive data safe.
   ms.date: 03/14/2021
   author: tomreidnz
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Security Concepts in Azure Machine Learning
-summary: Azure Machine Learning provides several mechanisms to secure your data and training environment.
+summary: Security is increasingly important for machine learning. In particular, it is increasingly important to ensure that private data stay private, and models are not manipulated by bad actors. In this learning module, we cover the basics of locking down a machine learning solution and keeping sensitive data safe.
 abstract: |
   In this module, you will:
   - Apply and understand Role-Based Access Control in Azure Machine Learning

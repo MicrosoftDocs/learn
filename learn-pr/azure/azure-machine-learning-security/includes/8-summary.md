@@ -1,4 +1,4 @@
-In this module, you learned about some of the tools Azure Machine Learning provides to secure your data and training environment.
+In this module, you learned about Azure Machine Learning Role-Based Access Control, a security service available for Azure. You learned about the different types of roles that you can assign, how to use key vaults, and how to secure your network.
 
 Now that you've reviewed this module, you should be able to:
 

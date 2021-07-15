@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "Custom roles allow you to customize what users can and can’t access in a workspace"
       isCorrect: true
-      explanation: "Correct. By creating custom roles, you can make a role available for specific tasks by using actions and notactions to give and restrict access."
+      explanation: "Correct. By creating custom roles, you can make a role available for specific tasks by using actions and NotActions to give and restrict access."
     - content: "Custom roles allow you to **only** perform read-only actions in a workspace"
       isCorrect: false
       explanation: "Incorrect. The **reader** role can only perform read-only actions. Using custom roles, you can set restrictions on certain workspaces so a user can be a contributor for one space and a reader for another."
@@ -30,7 +30,7 @@ quiz:
     choices:
     - content: "To keep track of your house, work, and car keys"
       isCorrect: false
-      explanation: "Incorrect. Azure Key Vault isn’t for your literal keys, but for storing and accessing your sensitive computer data."
+      explanation: "Incorrect. Azure Key Vault isn't for your literal keys, but for electronic keys (such as passwords) that provide access to resources."
     - content: "To hide your training models and data"
       isCorrect: false
       explanation: "Incorrect. That is what virtual private network’s (VPN) are used for."
