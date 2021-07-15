@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-classification-model-with-azure-machine-learning-designer.introduction
+uid: learn.wwl.load-balancing-non-https-traffic-azure.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
   ms.date: 07/15/2021
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
