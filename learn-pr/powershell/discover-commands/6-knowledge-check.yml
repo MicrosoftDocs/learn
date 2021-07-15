@@ -20,10 +20,10 @@ quiz:
           explanation: Incorrect. Using the `-help` function with a command doesn't help you paginate the response.
           isCorrect: false
         - content: "`Get-Help <command>`"
-          explanation: Incorrect. `Get-Help` is the cmdlet you use to find out more about a command. However, adding the `-help` function offers a better experience because it paginates the response and lets you traverse it row by row.
+          explanation: Incorrect. `Get-Help` is the cmdlet you use to find out more about a command. However, adding the `-help` function offers a better experience because it paginates the response, so you can traverse it row by row.
           isCorrect: false
         - content: "`help` <command>`"
-          explanation: Correct. By using the `help`, you pipe the `Get-Help` cmdlet into a function so that you can see the help page. You can see it row by row and line by line, if you want.
+          explanation: Correct. By using `help`, you pipe the `Get-Help` cmdlet into a function so that you can see the help page. You can see it row by row and line by line, if you want.
           isCorrect: true
     - content: Which statement will most efficiently find the returned type from a command?
       choices:

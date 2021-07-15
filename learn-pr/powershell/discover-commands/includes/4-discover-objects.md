@@ -8,7 +8,7 @@ The `Get-Member` cmdlet is meant to be _piped_ on top of the command you run so 
 Get-Process -Name <name-of-process> | Get-Member
 ```
 
-This command first produces an object result by calling `Get-Process`. That result is passed as an input to `Get-Member` by using the pipe (`|`). In return, you get a table result that includes the  `Name`, `MemberType`, and `Definition` columns. You also get the type of the returned object.
+This command first produces an object result by calling `Get-Process`. That result is passed as an input to `Get-Member` by using the pipe (`|`). In return, you get a table result that includes the `Name`, `MemberType`, and `Definition` columns. You also get the type of the returned object.
 
 ### Search by type
 
