@@ -3,7 +3,7 @@ uid: learn.wwl.operate-maintain-azure-stack-hci
 metadata:
   title: Operate and maintain Azure Stack HCI
   description: Operate and maintain Azure Stack HCI
-  ms.date: 05/18/2021
+  ms.date: 06/18/2021
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ prerequisites: |
   - Familiarity with the concept of containerization and container orchestration
 summary: |
   This learning path explains how to manage Azure Stack HCI clusters, integrate Microsoft Azure services with Azure Stack HCI, manage Azure Stack HCI VM workloads, and manage Azure Kubernetes Service on Azure Stack HCI.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/operate-and-maintain-azure-stack-hci.svg
 levels:
 - intermediate
 roles:

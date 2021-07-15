@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.train-evaluate-classification-models.exercise-multiclass-classification
+title: Exercise - Train and evaluate multiclass classification models
+metadata:
+  title: Exercise - Train and evaluate multiclass classification models
+  description: Train and evaluate a multiclass classifier
+  ms.date: 01/04/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+sandbox: true
+notebook: notebooks/03-multiclass.ipynb

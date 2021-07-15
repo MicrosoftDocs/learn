@@ -13,6 +13,6 @@ Continue learning more about .NET debugging with:
 
 - [Visual Studio Code debugging](https://code.visualstudio.com/docs/editor/debugging)
 - [Working with C# in Visual Studio Code](https://code.visualstudio.com/Docs/languages/csharp)
-- [Tutorial: Debug a .NET Core console application using Visual Studio Code](https://docs.microsoft.com/dotnet/core/tutorials/debugging-with-visual-studio-code)
-- [Tutorial: Debug a .NET Core console application using Visual Studio](https://docs.microsoft.com/dotnet/core/tutorials/debugging-with-visual-studio)
-- [Tutorial: Debug a .NET Core console application using Visual Studio for Mac](https://docs.microsoft.com/dotnet/core/tutorials/debugging-with-visual-studio-mac)
+- [Tutorial: Debug a .NET Core console application using Visual Studio Code](/dotnet/core/tutorials/debugging-with-visual-studio-code)
+- [Tutorial: Debug a .NET Core console application using Visual Studio](/dotnet/core/tutorials/debugging-with-visual-studio)
+- [Tutorial: Debug a .NET Core console application using Visual Studio for Mac](/dotnet/core/tutorials/debugging-with-visual-studio-mac)

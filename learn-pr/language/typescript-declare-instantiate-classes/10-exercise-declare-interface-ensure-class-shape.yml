@@ -6,7 +6,7 @@ metadata:
   description: Learn how to define an interface that describes the properties and methods of a class and implement the interface in a class definition.
   ms.date: 02/11/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

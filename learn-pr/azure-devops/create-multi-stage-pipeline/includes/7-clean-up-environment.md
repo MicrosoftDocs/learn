@@ -14,7 +14,7 @@ To clean up your resource group:
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true), and sign in.
 1. From the menu bar, select Cloud Shell. When prompted, select the **Bash** experience.
 
-    ![Selecting Cloud Shell from the menu bar](../../shared/media/azure-portal-menu-cloud-shell.png)
+    :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
 1. To delete the resource group that you used, `tailspin-space-game-rg`, run the following `az group delete` command.
 
@@ -45,7 +45,7 @@ To complete the work item:
 1. From Azure DevOps, navigate to **Boards**, and from the menu, select **Boards**.
 1. From the **Doing** column to the **Done** column, move the **Create a multistage pipeline** work item.
 
-    ![Azure Boards, showing the card in the Done column](../media/6-azure-boards-wi1-done.png)
+    :::image type="content" source="../media/6-azure-boards-wi1-done.png" alt-text="Azure Boards, showing the card in the Done column.":::
 
 ## Disable the pipeline or delete your project
 

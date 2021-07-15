@@ -8,7 +8,7 @@ By using a hybrid network architecture, such as ExpressRoute, you establish a hi
 
 To learn more about networking services on Azure, see the following articles:
 
-- [Choose a solution for connecting an on-premises network to Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/)
-- [What is VPN Gateway?](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)
-- [What is ExpressRoute?](https://docs.microsoft.com/azure/expressroute/expressroute-introduction)
-- [Connect an on-premises network to Azure by using ExpressRoute with VPN failover](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/expressroute-vpn-failover)
+- [Choose a solution for connecting an on-premises network to Azure](/azure/architecture/reference-architectures/hybrid-networking/)
+- [What is VPN Gateway?](/azure/vpn-gateway/vpn-gateway-about-vpngateways)
+- [What is ExpressRoute?](/azure/expressroute/expressroute-introduction)
+- [Connect an on-premises network to Azure by using ExpressRoute with VPN failover](/azure/architecture/reference-architectures/hybrid-networking/expressroute-vpn-failover)

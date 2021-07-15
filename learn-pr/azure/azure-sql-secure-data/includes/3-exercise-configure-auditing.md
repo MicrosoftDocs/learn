@@ -76,8 +76,8 @@ These scripts should take three to five minutes to complete. Be sure to note you
         -DatabaseName $databaseName `
         -SampleName "AdventureWorksLT" `
         -Edition "GeneralPurpose" -Vcore 2 -ComputeGeneration "Gen5"
-    # Enable Advanced Data Security
-    $advancedDataSecurity = Enable-AzSqlServerAdvancedDataSecurity `
+    # Enable Advanced Defender
+    $azureDefender = Enable-AzSqlServerAdvancedDataSecurity `
         -ResourceGroupName $resourceGroupName `
         -ServerName $serverName
     # Create a storage account
@@ -105,25 +105,22 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 ### Configure auditing
 
-1. Run the following to create a Log Analytics Workspace.
-
-    ```powershell
-    $WorkspaceName = "azuresql$($uniqueID)-la"
-    New-AzOperationalInsightsWorkspace -Location $Location -Name $WorkspaceName -Sku Standard -ResourceGroupName $ResourceGroupName
-    ```
-
-1. In the Azure portal, go to your Azure SQL Database instance to enable auditing on the logical server.
+1. In the Azure portal, in the search bar type **Log analytics**, and under *Marketplace* select **Log Analytics Workspace**. Select your subscription, resource group, and provide a name like **azuresql-la**. 
 
     > [!div class="nextstepaction"]
     > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-1. On the left pane, under **Security**, select **Auditing**. Review the options, and then select **View server settings**.
+1. Pick the region closest to where you are located and select **Review + Create** > **Create**. 
 
-    You can apply auditing at the server level, which then applies to all databases within the Azure SQL Database logical server. If you also apply auditing at the database level, which you won't do in this unit, the two audits would happen in parallel. One does not override the other. Alternatively, you could audit only at the database level.
+1. In the Azure portal, go to your Azure SQL Database to enable auditing on the database (not logical server).
+
+1. On the left pane, under **Security**, select **Auditing**. Review the options.
+
+    You can apply auditing at the server level, which then applies to all databases within the Azure SQL Database logical server. If you also apply auditing at the database level, which you will do in this unit, the two audits would happen in parallel. One does not override the other. Alternatively, you could audit only at the database level.
 
 1. Select **Enable Azure SQL Auditing**.  
 
-1. Select **Log Analytics** and under Log Analytics, select the workspace you created in step 1 of this section.
+1. Select **Log Analytics** and under Log Analytics, select the workspace you created.
 
 1. Select **Storage**, and under Storage account, select the storage account that contains *sqlva* and *a random string of letters and numbers*. In this storage account, you can collect XEvent log files that are saved as a collection of blob files within a container named **sqldbauditlogs**. In a later activity, you'll see more on how this differs from Log Analytics.
 
@@ -133,10 +130,6 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. Select **Save**.  
 
-    After the configuration is saved, select the **X** button to close the server-level **Auditing** pane.  
-
-1. Go back to your Azure SQL Database instance (not logical server) and, under **Security**, select **Auditing**. 
-
-   On the Azure SQL Database auditing overview pane, you might notice that the **Auditing** option is set to **OFF**, but that **Server-level Auditing** is set to **Enabled**. It's important to note that if auditing is enabled on the server, the setting applies to the database also.  
+    After the configuration is saved, select the **X** button to close the database-level **Auditing** pane.  
 
 You've now enabled auditing for a storage account and an Azure Monitor workspace. Later, you'll dive deeper into the auditing capabilities in Azure SQL. You'll see how to analyze the audit logs to view all the changes you've made throughout the module, as well as some other interesting use cases.  

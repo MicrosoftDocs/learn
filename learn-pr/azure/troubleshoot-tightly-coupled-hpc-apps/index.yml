@@ -17,7 +17,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of high-performance computing (HPC) concepts
   - Familiarity with building and running tightly coupled HPC applications on Azure
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/troubleshoot-tightly-coupled-hpc-apps.svg
 levels:
 - intermediate
 roles:

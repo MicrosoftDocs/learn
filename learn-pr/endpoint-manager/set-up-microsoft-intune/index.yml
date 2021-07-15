@@ -22,8 +22,8 @@ abstract: |
   - Understand the MEM authority
   
 prerequisites: | 
-  - Basic knowledge of Microsoft Endpoint Manager and endpoint management concepts, see [Microsoft Endpoint Manager fundamentals](https://docs.microsoft.com/learn/paths/endpoint-manager-fundamentals/).
-  - Understand your endpoint management objectives, device inventory considerations, licensing needs, infrastructure objectives, and rollout plans, see [Determine your endpoint management implementation](https://docs.microsoft.com/learn/modules/determine-endpoint-implementation?azure-portal=true).
+  - Basic knowledge of Microsoft Endpoint Manager and endpoint management concepts, see [Microsoft Endpoint Manager fundamentals](../../paths/endpoint-manager-fundamentals/index.yml).
+  - Understand your endpoint management objectives, device inventory considerations, licensing needs, infrastructure objectives, and rollout plans, see [Determine your endpoint management implementation](/learn/modules/determine-endpoint-implementation?azure-portal=true).
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: true
 levels:
@@ -47,4 +47,3 @@ units:
 - learn.set-up-microsoft-intune.11-summary
 badge:
   uid: learn.set-up-microsoft-intune.badge
-  

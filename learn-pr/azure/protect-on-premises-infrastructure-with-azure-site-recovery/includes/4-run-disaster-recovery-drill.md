@@ -21,7 +21,7 @@ Use the Site Recovery dashboard to monitor recovery operations, which include re
 
 In the dashboard, you can monitor replicated items and test failovers. Each replicated item under both categories is placed into a particular state for easy viewing of a healthy item compared to one with issues. See the following image.
 
-![Site Recovery overview](../media/4-site-recovery-overview.png)
+![Site Recovery overview.](../media/4-site-recovery-overview.png)
 
 **(1) Backup or Site Recovery**: Switch between the **Backup** or the **Site Recovery** dashboards. In this example, you're on the **Site Recovery** tab.
 

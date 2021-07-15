@@ -13,7 +13,7 @@ A few considerations that make this a challenging task are
 - the pricing model of the cloud service provider
 - the potential loss in revenue from degrading Quality of Service (QoS) by not scaling out in time.
 
-![Figure 5: Sample load pattern](../media/fig5-5.png)
+![Figure 5: Sample load pattern.](../media/fig5-5.png)
 
 _Figure 5: Sample load pattern._
 

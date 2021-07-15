@@ -79,7 +79,7 @@ public event PropertyChangedEventHandler PropertyChanged;
 
 #### 3. The `RaisePropertyChanged` method
 
-In previous lessons, we have often raised the `PropertyChangedEvent` in our code, even outside of property setters. While modern C# and the [null-conditional operator](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/null-conditional-operators) or (`?.`) allowed us to do this in one line, we can still simplify by creating a convenience function like this:
+In previous lessons, we have often raised the `PropertyChangedEvent` in our code, even outside of property setters. While modern C# and the [null-conditional operator](/dotnet/csharp/language-reference/operators/null-conditional-operators) or (`?.`) allowed us to do this in one line, we can still simplify by creating a convenience function like this:
 
 ```cs
 protected void RaisePropertyChanged(string propertyName)

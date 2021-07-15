@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-elastic-cloud-on-azure.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: "This unit checks for users' understanding of the Elastic Cloud on Azure content discussed in the module."
+  ms.date: 6/11/2021
+  author: yenchiho
+  ms.author: yenchiho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: Which Elastic Cloud deployment option is the best to use if you are not certain about the type of deployment you need? 
+    choices:
+    - content: Elastic Observability
+      isCorrect: false
+      explanation: Elastic Observability lets you monitor, search, and analyze all your operational data for insights to quickly resolve issues and consistently deliver exceptional digital experiences.
+    - content: General purpose
+      isCorrect: true
+      explanation: Elastic General Purpose is the best option if you are not certain about what type of deployment you need.
+    - content: Elastic Enterprise Search 
+      isCorrect: false
+      explanation: Elastic Enterprise Search provides all the tools you need to design and deploy powerful search experiences for your websites and mobile apps.
+  - content: Which of the following is FALSE about Elastic Cloud on Azure?
+    choices:
+    - content: By default, it gives you the latest version and updates.
+      isCorrect: false
+      explanation: Elastic Cloud on Azure provides the latest version and updates.
+    - content: It allows you to select a previous version of Elastic if you prefer. 
+      isCorrect: false
+      explanation: You can choose a previous version of Elastic.
+    - content: The regions and machine size cannot be changed after deployment.
+      isCorrect: true
+      explanation: You can change these settings after deployment.
+  - content: What is Kibana?
+    choices:
+    - content: It's a visualization tool that automatically alongside Elastic.
+      isCorrect: true
+      explanation: Kibana is the visualization tool for Elastic.
+    - content: It's a coding language specifically for Elastic on Azure.
+      isCorrect: false
+      explanation: A specific coding language is not required.
+    - content: It's the workflow wizard that helps you launch Elastic.
+      isCorrect: false
+      explanation: You can get started with Elastic Cloud on Azure through the Azure portal.

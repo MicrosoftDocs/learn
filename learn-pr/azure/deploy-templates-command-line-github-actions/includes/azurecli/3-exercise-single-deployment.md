@@ -33,7 +33,7 @@ az group list -o table
 In this command, use the resource name that you got from the previous command. (It looks something like `learn-a73131a1-b618-48b8-af70-21af7ca420c4`.) This command allows you to omit that parameter from the rest of the Azure CLI commands in this exercise.
 
 > [!NOTE]
-> Normally, when you use an Azure CLI command to deploy a template, you need to specify the target resource group name.  In the exercise in this module, we're bypassing this requirement by setting the context of our deployment. We're specifying our sandbox resource group name in the next step by using the [az configure](https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest&azure-portal=true) Azure CLI command.
+> Normally, when you use an Azure CLI command to deploy a template, you need to specify the target resource group name.  In the exercise in this module, we're bypassing this requirement by setting the context of our deployment. We're specifying our sandbox resource group name in the next step by using the [az configure](/cli/azure/azure-cli-configuration?azure-portal=true&view=azure-cli-latest) Azure CLI command.
 
 ```azurecli
 az configure --defaults group={Resource Group Name}
@@ -111,7 +111,7 @@ In the following exercise, you'll deploy a template from your local machine. The
     }
     ```
 
-1. After you've saved the file locally, you can use the Azure CLI command to deploy it at the resource group level that we talked about in the last unit. Namely, use [az deployment group create](https://docs.microsoft.com/cli/azure/deployment/group?view=azure-cli-latest&azure-portal=true#az-deployment-group-create).
+1. After you've saved the file locally, you can use the Azure CLI command to deploy it at the resource group level that we talked about in the last unit. Namely, use [az deployment group create](/cli/azure/deployment/group?azure-portal=true&view=azure-cli-latest#az-deployment-group-create).
 
     > [!NOTE]
     > In the following example, the template file is in a **json** folder in the home drive in Windows Linux Subsystem (WSL2). Adjust your command based on your shell of choice.
@@ -287,7 +287,7 @@ In the next exercise, you'll pass inline parameters to your deployment. You'll n
       }
     ```
 
-    Rather than pass parameters as inline values in your script, you might find it easier to use a JSON file that contains the parameter values. The parameter file can be a local file or an external/remote file with an accessible URI. For more information about the parameter file, see [Create Resource Manager parameter file](https://docs.microsoft.com/azure/azure-resource-manager/templates/parameter-files?azure-portal=true).
+    Rather than pass parameters as inline values in your script, you might find it easier to use a JSON file that contains the parameter values. The parameter file can be a local file or an external/remote file with an accessible URI. For more information about the parameter file, see [Create Resource Manager parameter file](/azure/azure-resource-manager/templates/parameter-files?azure-portal=true).
 
 1. To pass a local parameter file, we use the `--parameters` parameter in the same command that we've been using. But first, you need to create and save your parameter file:
 
@@ -389,7 +389,7 @@ In some instances, you need to deploy from an external or remote location instea
 
 1. To deploy an external template, use the `--template-uri` parameter.
     
-    In this exercise, you'll deploy an ARM template from a GitHub repo. The repo is public, so you don't need to worry about deploying a template that requires a shared access signature (SAS) token. For details about using a private or secured remote location, see [Deploy a private template with SAS token](https://docs.microsoft.com/azure/azure-resource-manager/templates/secure-template-with-sas-token?tabs=azure-cli&azure-portal=true).
+    In this exercise, you'll deploy an ARM template from a GitHub repo. The repo is public, so you don't need to worry about deploying a template that requires a shared access signature (SAS) token. For details about using a private or secured remote location, see [Deploy a private template with SAS token](/azure/azure-resource-manager/templates/secure-template-with-sas-token?azure-portal=true&tabs=azure-cli).
 
     The template URI for the exercise is https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.storage/storage-account-create/azuredeploy.json. It's a short template that will deploy a simple storage account in your sandbox environment.
 1. The Azure CLI command is exactly the same as for a local template. The only difference is that the `--template-uri` parameter replaces the `--template-file` parameter.

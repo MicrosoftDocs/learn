@@ -10,10 +10,10 @@ Azure file shares are simpler to use because organizations can continue to use t
 
 To learn more about Azure Files, see the following articles:
 
-- [Planning for an Azure Files deployment](https://docs.microsoft.com/azure/storage/files/storage-files-planning)
-- [Quickstart: Create and manage an Azure Files share with Windows virtual machines](https://docs.microsoft.com/azure/storage/files/storage-files-quick-create-use-windows#create-a-share-snapshot)
-- [Transfer data with AzCopy and file storage](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy-files)
-- [Use an Azure file share with Windows](https://docs.microsoft.com/azure/storage/files/storage-how-to-use-files-windows)
-- [Use Azure Files with Linux](https://docs.microsoft.com/azure/storage/files/storage-how-to-use-files-linux)
-- [Mount an Azure Files share over SMB with macOS](https://docs.microsoft.com/azure/storage/files/storage-how-to-use-files-mac)
-- [Deploy Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-deployment-guide)
+- [Planning for an Azure Files deployment](/azure/storage/files/storage-files-planning)
+- [Quickstart: Create and manage an Azure Files share with Windows virtual machines](/azure/storage/files/storage-files-quick-create-use-windows#create-a-share-snapshot)
+- [Transfer data with AzCopy and file storage](/azure/storage/common/storage-use-azcopy-files)
+- [Use an Azure file share with Windows](/azure/storage/files/storage-how-to-use-files-windows)
+- [Use Azure Files with Linux](/azure/storage/files/storage-how-to-use-files-linux)
+- [Mount an Azure Files share over SMB with macOS](/azure/storage/files/storage-how-to-use-files-mac)
+- [Deploy Azure File Sync](/azure/storage/files/storage-sync-files-deployment-guide)

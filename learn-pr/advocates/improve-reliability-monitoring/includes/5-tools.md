@@ -21,7 +21,7 @@ Azure Monitor starts with the data that comes into the system. It takes in data 
     systems or applications, basically of any sort and from any source,
     Azure Monitor can take in that custom data.
 
-:::image type="content" source="../media/azure-monitor-overview-sources.png" alt-text="Partial overview diagram of Azure monitor showing data sources":::
+:::image type="content" source="../media/azure-monitor-overview-sources.png" alt-text="Partial overview diagram of Azure monitor showing data sources.":::
 
 ### Data types
 
@@ -36,7 +36,7 @@ The data that comes into Azure Monitor can be divided into two types:
 
 In this module, we will be focusing primarily on log data.
 
-:::image type="content" source="../media/azure-monitor-overview-datatypes.png" alt-text="Partial overview diagram of Azure monitor showing data types":::
+:::image type="content" source="../media/azure-monitor-overview-datatypes.png" alt-text="Partial overview diagram of Azure monitor showing data types.":::
 
 ### Do something with the data
 

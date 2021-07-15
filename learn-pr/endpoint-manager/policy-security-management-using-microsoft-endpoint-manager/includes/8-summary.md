@@ -1,4 +1,3 @@
-
 In this module, you've learned how Microsoft Endpoint Manager uses Conditional Access to make sure that only trusted users can access organizational resources on trusted devices using trusted apps. Here are some of the things you covered:
 
 - Adding assigned groups and dynamic groups to manually or automatically assign groups in Microsoft Endpoint Manager.
@@ -18,4 +17,4 @@ To determine your mobile device management and mobile application management nex
 
 For additional information about Microsoft Endpoint Manager, see the following resources:
 
-- [Microsoft Endpoint Manager documentation](https://docs.microsoft.com/mem/?azure-portal=true)
+- [Microsoft Endpoint Manager documentation](/mem/?azure-portal=true)

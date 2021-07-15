@@ -6,7 +6,7 @@ metadata:
   description: Learn how to extend a class to create a new class that inherits its properties and override a method in a subclass.
   ms.date: 02/11/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

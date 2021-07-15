@@ -68,11 +68,11 @@ After your logic app is created, you add triggers for Event Grid events.
 
 1. Under **Templates**, select **Blank Logic App**.
 
-    ![Template for a blank logic app](../media/3-choose-logic-app-template.png)
+    ![Template for a blank logic app.](../media/3-choose-logic-app-template.png)
 
 1. Within the designer, in the search box, enter **Event Grid** as your filter. From the list of triggers, select **When a resource event occurs**.
 
-    ![Selections for adding an Event Grid trigger](../media/3-logic-app-event-grid-trigger.png)
+    ![Selections for adding an Event Grid trigger.](../media/3-logic-app-event-grid-trigger.png)
 
 1. When you're prompted, sign in to the **Microsoft Learn Sandbox** organization by using your Azure account credentials.
 
@@ -88,10 +88,10 @@ After your logic app is created, you add triggers for Event Grid events.
     | **Event Type Item - 3** | `Microsoft.Resources.ResourceWriteSuccess` |
     | | |
 
-    ![Trigger details](../media/3-logic-app-event-grid-trigger-details.png)
+    ![Trigger details.](../media/3-logic-app-event-grid-trigger-details.png)
 
 1. On the top menu bar, select **Save**.
 
-    ![Save button](../media/3-logic-app-event-grid-save.png)
+    ![Save button.](../media/3-logic-app-event-grid-save.png)
 
 Your logic app is now ready and set up to be a subscriber to the events from Azure Event Grid.

@@ -3,9 +3,9 @@ uid: learn.language.rust-automated-tests
 metadata:
   title: Write automated tests
   description: "Learn about the types of testing you can do with Rust."
-  ms.date: 01/26/2021
+  ms.date: 06/14/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Write automated tests
@@ -39,4 +39,3 @@ units:
 - learn.language.rust-automated-tests.summary
 badge:
   uid: learn.language.rust-automated-tests.badge
-hidden: true

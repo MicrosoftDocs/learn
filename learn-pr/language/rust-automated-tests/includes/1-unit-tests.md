@@ -1,6 +1,6 @@
-Unit tests in Rust are simple functions marked with the `#[test]` attribute that verify that the non-test code is functioning in the expected manner. These functions are only compiled when testing our code.
+Unit tests in Rust are simple functions marked with the `#[test]` attribute that verify that the non-test code is functioning in the expected manner. These functions are only compiled when testing code.
 
-The bodies of test functions typically perform some setup, run the code we want to test, and then assert whether the results are what we expect.
+Test functions run the code that you want to test. Then they check the results, often by using the `assert!` or `assert_eq!` macros.
 
 In the following code example, we define a simple `add` function and another `add_works` function marked with the `#[test]` attribute.
 
@@ -37,7 +37,7 @@ fn add_fails() {
 }
 ```
 
-If we ran the tests again by using the `$ cargo test` command, the output should point out that our `add_works` test passed and `add_fails` failed, with the detail of the failed call to `assert_eq`.
+If we run the tests again by using the `$ cargo test` command, the output should show that our `add_works` test passed. It should also show that `add_fails` failed and should include information about the failed call to `assert_eq`.
 
 ```output
 running 2 tests
@@ -63,7 +63,7 @@ test result: FAILED. 1 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out
 
 In many scenarios, it's important to test if a condition will cause a `panic!`.
 
-We can do this test by adding another attribute, `should_panic`, to our test function. This attribute makes a test pass when the code inside the function panics. It makes the test fail if the code inside the function doesn't panic.
+The `should_panic` attribute makes it possible to check for a `panic!`. If we add this attribute to our test function, the test passes when the code in the function panics. The test fails when the code doesn't panic.
 
 Now, our `add_fails` test function can capture an expected panic and treat it as a passing test.
 

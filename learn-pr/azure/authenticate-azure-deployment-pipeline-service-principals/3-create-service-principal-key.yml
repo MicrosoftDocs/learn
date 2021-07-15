@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.authenticate-azure-deployment-pipeline-service-principals.create-service-principal-key
+title: Create a service principal and key
+metadata:
+  unitType: learning-content
+  title: Create a service principal and key
+  description: Learn how to create service principals, and how to manage keys and other credentials for service principals.
+  ms.date: 06/30/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  zone_pivot_groups: azure-shell-interface
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-create-service-principal-key.md)]

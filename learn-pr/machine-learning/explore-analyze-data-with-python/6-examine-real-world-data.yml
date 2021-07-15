@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-analyze-data-with-python.examine-real-world-data
+title: Examine real world data
+metadata:
+  title: Examine real world data
+  description: "Examine real world data"
+  ms.date: 01/04/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-examine-real-world-data.md)]

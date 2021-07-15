@@ -19,7 +19,7 @@ np.
 
 You should see:
 > [!div class="mx-imgBorder"]
-> ![IPython drop-down menu](..\media\ipython-help-menu-vscode.png)
+> ![IPython drop-down menu.](..\media\ipython-help-menu-vscode.png)
 
 From the drop-down menu, you can select any function to run. Better still, you can select any function and view the built-in Help documentation for it. For example, to view the documentation for the NumPy `add()` function, you can hover over a specific function or click the information icon next to the drop-down list in IntelliSense.
 

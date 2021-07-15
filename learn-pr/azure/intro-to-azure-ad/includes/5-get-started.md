@@ -66,14 +66,14 @@ After you lay the groundwork for your instance of Azure AD, you can begin to con
 
 Use the Azure portal to create a tenant and a new Azure AD resource.
 
-![Create a resource in the Azure portal](../media/5-create-resource.png)
+![Create a resource in the Azure portal.](../media/5-create-resource.png)
 
 Use a form in the Azure portal to create your Azure AD directory.
 
-![Create an Azure AD directory in the Azure portal](../media/5-create-azure-ad.png)
+![Create an Azure AD directory in the Azure portal.](../media/5-create-azure-ad.png)
 
 ## Associate a subscription
 
 After you create your tenant, associate it with a subscription. In the Azure portal, go to your subscription and change it to your new directory.
 
-![Change the directory of your subscription in the Azure portal](../media/5-change-subscription-directory.png)
+![Change the directory of your subscription in the Azure portal.](../media/5-change-subscription-directory.png)

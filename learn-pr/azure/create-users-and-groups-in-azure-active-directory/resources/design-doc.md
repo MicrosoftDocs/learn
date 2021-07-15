@@ -160,16 +160,16 @@ Tasks to cover in the module:
 
 Sandbox info:
 
-- Similar to the module being developed for "Allow users to reset their password with Azure Active Directory self-service password reset", users should be able to go through exercises by creating a new directory within sandbox or their own account. This would be on a trial license for AD that's created outside the Azure sandbox scope. We think users won't be able to delete or clean up this tenant- it'll just expire after a month (with no charge). So we'll want to group together AD learning paths. See [Quickstart: Set up a dev environment](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-create-new-tenant#work-and-school-accounts-or-personal-microsoft-accounts).
+- Similar to the module being developed for "Allow users to reset their password with Azure Active Directory self-service password reset", users should be able to go through exercises by creating a new directory within sandbox or their own account. This would be on a trial license for AD that's created outside the Azure sandbox scope. We think users won't be able to delete or clean up this tenant- it'll just expire after a month (with no charge). So we'll want to group together AD learning paths. See [Quickstart: Set up a dev environment](/azure/active-directory/develop/quickstart-create-new-tenant#work-and-school-accounts-or-personal-microsoft-accounts).
 - We should show the steps in Azure Portal but let users know that they can do steps in PowerShell or CLI where appropriate.
 
 ## Resources
 
-- [Add or delete users using Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
-- [Create a basic group and add members using Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal?)
-- [Create a dynamic group and check status](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/groups-create-rule)
-- [Add Azure Active Directory B2B collaboration users in the Azure portal](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator)
-- [Tutorial: Bulk invite Azure AD B2B collaboration users](https://docs.microsoft.com/en-us/azure/active-directory/b2b/tutorial-bulk-invite)
-- [Enable B2B external collaboration and manage who can invite guests](https://docs.microsoft.com/en-us/azure/active-directory/b2b/delegate-invitations)
-- [Cmdlets for group management](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/groups-settings-v2-cmdlets#create-groups)
-- [New user cmdlet](https://docs.microsoft.com/en-us/powershell/module/azuread/New-AzureADUser?view=azureadps-2.0)
+- [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory)
+- [Create a basic group and add members using Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+- [Create a dynamic group and check status](/azure/active-directory/users-groups-roles/groups-create-rule)
+- [Add Azure Active Directory B2B collaboration users in the Azure portal](/azure/active-directory/b2b/add-users-administrator)
+- [Tutorial: Bulk invite Azure AD B2B collaboration users](/azure/active-directory/b2b/tutorial-bulk-invite)
+- [Enable B2B external collaboration and manage who can invite guests](/azure/active-directory/b2b/delegate-invitations)
+- [Cmdlets for group management](/azure/active-directory/users-groups-roles/groups-settings-v2-cmdlets#create-groups)
+- [New user cmdlet](/powershell/module/azuread/New-AzureADUser?view=azureadps-2.0)

@@ -127,7 +127,7 @@ jobs:
     ...
 ```
 
-The jobs use the Azure CLI to create and destroy the Azure resources. If you're not familiar with Azure CLI, check out [Overview of Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest&azure-portal=true) in the Microsoft documentation.
+The jobs use the Azure CLI to create and destroy the Azure resources. If you're not familiar with Azure CLI, check out [Overview of Azure CLI](/cli/azure/?azure-portal=true&view=azure-cli-latest) in the Microsoft documentation.
 
 Here's an example of the steps in the ```set-up-azure-resources``` job:
 

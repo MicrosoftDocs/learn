@@ -14,7 +14,7 @@ summary: >
   Describe Azure Cosmos DB SQL API along with the SQL API. Determine if Azure Cosmos DB SQL API is a good fit for your application.
 abstract: |
   By the end of this module, you'll be able to:
-  - Evaluate whether Azure Cosmos CB SQL API is the right database for your application.
+  - Evaluate whether Azure Cosmos DB SQL API is the right database for your application.
   - Describe how the features of the Azure Cosmos DB SQL API is appropriate for modern applications.
 prerequisites: |
   - Ability to navigate the Azure portal

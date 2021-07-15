@@ -1,6 +1,6 @@
 The final step is to test the application gateway and verify that it implements load balancing, and won't attempt to direct traffic to a web server that is unavailable. We also want to ensure that our path-based routing is working correctly.
 
-![Diagram showing the resources that have been deployed](../media/6-resources.svg)
+![Diagram showing the resources that have been deployed.](../media/6-resources.svg)
 
 ## Test load balancing for the vehicle registration web app
 

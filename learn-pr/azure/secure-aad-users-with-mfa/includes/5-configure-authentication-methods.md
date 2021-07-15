@@ -2,7 +2,7 @@ As mentioned earlier, it's recommended that administrators enable users to be ab
 
 When a user signs into a service that requires MFA the first time, they will be asked to register their preferred multi-factor authentication method as shown in the following screenshot.
 
-![Screenshot showing the registration info](../media/5-setup-user.png)
+![Screenshot showing the registration info.](../media/5-setup-user.png)
 
 > [!TIP]
 > If you followed the previous exercise and turned on MFA for an account and app, then you can try accessing that app with the given user account and you should see the above flow.
@@ -76,14 +76,14 @@ Certain non-browser apps don’t support Azure AD MFA. If users are enabled for 
 
 Azure AD includes a **Usage & insights** view in the **Monitoring** section where you can monitor the authentication methods activity. From here you can view the adoption of MFA and SSPR:
 
-![Screenshot showing the metrics view for MFA](../media/5-monitor-auth-methods.png)
+![Screenshot showing the metrics view for MFA.](../media/5-monitor-auth-methods.png)
 
 In addition to the overall registration numbers, you can also see the success and failure of registrations per authentication method. This allows you to understand which authentication methods your users most commonly registered and which ones are easy for them to register. This data is calculated using the last 30 days of audit logs from the combined security info registration and SSPR registration experiences.
 
 You can drill down and see the latest registration audit information for each user by clicking the chart.
 
-![Screenshot showing the registration details](../media/5-auth-registration-details.png)
+![Screenshot showing the registration details.](../media/5-auth-registration-details.png)
 
 You can also learn more about SSPR usage in your organization through the **Usage** tab on the main view as shown in the following image.
 
-![Screenshot showing the SSPR usage metrics](../media/5-sspr-usage.png)
+![Screenshot showing the SSPR usage metrics.](../media/5-sspr-usage.png)

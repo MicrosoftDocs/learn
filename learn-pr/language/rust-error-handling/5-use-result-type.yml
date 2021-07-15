@@ -3,9 +3,9 @@ uid: learn.language.rust-error-handling.5-use-result-type
 metadata:
   title: Use the Result type to handle errors
   description: Learn how to use the Result type enum to return and propagate errors.
-  ms.date: 12/14/2020
+  ms.date: 6/7/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use the Result type to handle errors

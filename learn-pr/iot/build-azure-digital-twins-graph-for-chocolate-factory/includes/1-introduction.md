@@ -17,12 +17,12 @@ To summarize, in this module, you will:
 ## Prerequisites
 
 - Familiarity with the Azure portal.
-- We recommend introductory knowledge of Azure IoT. You can learn more by completing the [Introduction to Azure IoT](https://docs.microsoft.com/learn/paths/introduction-to-azure-iot/) learning path.
-- A basic understanding of the Azure CLI. We recommend following the [Control Azure services with the CLI](https://docs.microsoft.com/learn/modules/control-azure-services-with-cli/) module.
-- [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli).
+- We recommend introductory knowledge of Azure IoT. You can learn more by completing the [Introduction to Azure IoT](../../../paths/introduction-to-azure-iot/index.yml) learning path.
+- A basic understanding of the Azure CLI. We recommend following the [Control Azure services with the CLI](/learn/modules/control-azure-services-with-cli/) module.
+- [Azure CLI](/cli/azure/install-azure-cli).
   - We recommend installing the Azure CLI locally.
   - We don't recommend using Azure Cloud Shell, because it will time out due to the length of the lab. 
-- macOS: [PowerShell for Mac](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6&preserve-view=true).
+- macOS: [PowerShell for Mac](/powershell/scripting/install/installing-powershell-core-on-macos?preserve-view=true&view=powershell-6).
 - Windows OS: PowerShell is built in.
 - Access to an Azure subscription where you have the Global Administrator role for your account and Azure Active Directory tenant to complete the exercise units.
 - [Visual Studio Code](https://code.visualstudio.com/).
@@ -40,7 +40,7 @@ For this scenario, the production of chocolate has been simplified into three st
 
 Cocoa beans are the input to this production line, and chocolate bars are the output!
 
-1. **Roasting**: The roasting process cooks fermented cocoa beans. The temperature and time of cooking depends on the type of beans, but typically the roasting (sometimes called *fanning* in the chocolate trade) might take 35 minutes at 120 to 150 degrees Celsius. Roasting aids the removal of unwanted stuff, such as acetic acid, and the formation of the sweet taste of cocoa.
+1. **Roasting**: The roasting process cooks fermented cocoa beans. The temperature and time of cooking depends on the type of beans, but typically the roasting (sometimes called *fanning* in the chocolate trade) might take 35 minutes at 250 to 300 degrees Fahrenheit. Roasting aids the removal of unwanted stuff, such as acetic acid, and the formation of the sweet taste of cocoa.
 
 1. **Grinding**: The grinding process takes the cocoa nibs that result from the roasting and crushes them to pieces, typically between steel plates, to create a liquid cocoa butter.
 

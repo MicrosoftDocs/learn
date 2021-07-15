@@ -31,4 +31,4 @@ Now that you have determined the targeted groups and time frames for your Endpoi
 
 ## Additional information
 
-For more information about determining and creating a rollout plan, see [Microsoft Intune planning guide - Create a rollout plan](https://docs.microsoft.com/mem/intune/fundamentals/intune-planning-guide?azure-portal=true#task-5-create-a-rollout-plan)
+For more information about determining and creating a rollout plan, see [Microsoft Intune planning guide - Create a rollout plan](/mem/intune/fundamentals/intune-planning-guide?azure-portal=true#task-5-create-a-rollout-plan)
