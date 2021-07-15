@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/14/2021
+  ms.date: 07/15/2021
   author: wwlpublish
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -26,7 +26,7 @@ quiz:
     - content: "Create the recovery services vault."
       isCorrect: true
       explanation: "That's correct. First, create a recovery services vault."
-  - content: "Azure Backup requirea ..."
+  - content: "Azure Backup requires ..."
     choices:
     - content: "a dedicated backup server."
       isCorrect: false
@@ -37,7 +37,7 @@ quiz:
     - content: "an Azure blob storage container."
       isCorrect: false
       explanation: "That's incorrect. Azure Backup does not require a blob storage container."
-  - content: "The infrastructure manager wants to know more about Azure Backup. The discussion includes all of the following information, except:"
+  - content: "The infrastructure manager wants to know more about Azure Backup. The discussion includes all the following information, except:"
     choices:
     - content: "Azure Backup doesn't provide data encryption."
       isCorrect: true
