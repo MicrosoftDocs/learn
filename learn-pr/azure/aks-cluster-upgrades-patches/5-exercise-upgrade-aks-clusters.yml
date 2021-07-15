@@ -5,7 +5,7 @@ metadata:
   unitType: exercise  
   title: Patch and upgrade an AKS cluster
   description: Implement an AKS cluster and apply patches and upgrade it to the latest Kubernetes version supported by Azure Kubernetes Service. 
-  ms.date: 06/07/2021    
+  ms.date: 07/15/2021
   ms.author: mixie 
   author: microsoftmichelle
   sandbox: true

@@ -4,7 +4,7 @@ title: How to safely upgrade AKS clusters?
 metadata: 
   title: How to safely upgrade AKS clusters?
   description: Understand how to upgrade AKS clusters through a Blue/Green deployment method.
-  ms.date: 06/17/2021   
+  ms.date: 07/15/2021
   ms.author: mixie 
   author: microsoftmichelle
   ms.product: learning-azure

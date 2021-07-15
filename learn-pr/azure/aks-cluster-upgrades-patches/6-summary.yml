@@ -5,7 +5,7 @@ metadata:
   unitType: summary  
   title: Summary 
   description: A summary of the apply cluster upgrades and security patches with Azure Kubernetes Service module. 
-  ms.date: 06/11/2021  
+  ms.date: 07/15/2021
   author: microsoftmichelle 
   ms.author: mixie 
   ms.product: learning-azure
