@@ -25,7 +25,7 @@ To handle a client sending data to the web application, configure Express differ
    app.use(bodyParser.json({ extended: false }));
    ```
 
-   The **bodyParser()** function is passed to the Express instance by calling **app.use()**. The **bodyParser** function also calls **.json()** to determine how the incoming data is parsed. In this case, it's parsed as JSON, but can be parsed to some other format. The **bodyParser** function listens to the incoming data while it's being streamed, a few bytes at a time. Once data is transmitted, it's placed on the **body** property of the request object.
+The data sent by a client, is now available on the property `body` on the request object `req`. You can now read this data and talk to a data source and either create a resource from it or update a resource, depending on the request using POST or PUT verb.
 
 ## Handle the request data
 
