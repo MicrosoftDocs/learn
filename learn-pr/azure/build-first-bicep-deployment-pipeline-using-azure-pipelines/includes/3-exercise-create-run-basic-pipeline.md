@@ -1,10 +1,11 @@
-You want to start automating the deployment for your toy company's website and as a first step you need to create a first pipeline in Azure DevOps. 
+You want to start automating the deployment for your toy company's website and as a first step you need to create a first pipeline in Azure DevOps.
 
-During the process you'll: 
+In this exercise, you'll:
 
-- Create an Azure DevOps organization and project
-- Create a starter pipeline
-- Execute your starter pipeline
+> [!div class="checklist"]
+> * Create an Azure DevOps organization and project.
+> * Create a basic pipeline.
+> * Execute your basic pipeline.
 
 ## Create an Azure DevOps organization, project and repository
 

@@ -1,7 +1,11 @@
 You have a pipeline that can execute a Bicep deployment to your Azure environment. We will now make this pipeline run automatically. In this exercise you will: 
 
-- Update your pipeline so it triggers automaticaly based on changes to the main branch and the deploy folder. 
-- See your pipeline trigger automatically
+In this exercise, you'll:
+
+> [!div class="checklist"]
+> * Update your pipeline so that it triggers automatically whenever files change in the _deploy_ folder and on the **main** branch.
+> * Make a change to your Bicep file.
+> * Verify that the pipeline runs automatically.
 
 ## Update the trigger to be branch-based
 

@@ -1,14 +1,17 @@
-Now that you have a first basic pipeline, you want to start using this pipeline to deploy your bicep templates. In this exercise you will: 
+Now that you have a basic basic pipeline, you want to use it to deploy your Bicep file to Azure.
 
-- Add your Bicep files to your repository
-- Create a resource group to which to deploy your resources
-- Create a service principal and give it access to the resource group
-- Create a service connection that uses the service principal
-- Add tasks in your pipeline to deploy your Bicep template
-- Execute your pipeline and watch the execution result
+In this exercise, you'll:
+
+> [!div class="checklist"]
+> * Add a Bicep file to your repository.
+> * Create a resource group for your website.
+> * Create a service principal and grant it access to the resource group.
+> * Create a service connection and configure it with the service principal's credentials.
+> * Add a pipeline step to deploy your Bicep file.
+> * Execute your pipeline.
+> * Verify that the pipeline runs successfully.
 
 In this exercise will use the [Azure Pipelines extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines). Be sure to install this extension in Visual Studio Code.
-
 
 ## Clone the repository
 
