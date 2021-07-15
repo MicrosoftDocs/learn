@@ -390,3 +390,11 @@ groups:
       title: Virtual reality
     - id: ar
       title: Augmented reality
+- id: repository-hosting-platform
+  title: Choose a repository hosting platform
+  prompt: Choose a repository hosting platform
+  pivots:
+    - id: github
+      title: GitHub
+    - id: azurerepos
+      title: Azure Repos

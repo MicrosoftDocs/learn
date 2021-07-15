@@ -11,7 +11,7 @@ Here you'll download the template and modify it.
 1. From Cloud Shell, run `curl` to download the template you used previously from GitHub.
 
     ```bash
-    curl https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.json > azuredeploy.json
+    curl https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.compute/vm-simple-linux/azuredeploy.json > azuredeploy.json
     ```
 
 1. Open **azuredeploy.json** through the Cloud Shell editor.

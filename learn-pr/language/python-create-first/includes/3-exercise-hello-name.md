@@ -47,7 +47,7 @@ You now have a program capable of collecting user input but no way of verifying 
 Add the following to output the user's input:
 
 ```python
-print("Hello" + name)
+print("Hello, " + name)
 ```
 
 The preceding line will concatenate the string "Hello" with the value of the `name` variable.
@@ -74,7 +74,7 @@ An important part of writing programs is running them to ensure everything works
     The `python3` command launches Python's compiler. You provide the source code file name as an argument. If you installed Python correctly and your command prompt is working in the same directory as your code files, this should work. Otherwise, you'll need to use the full path and file name of your code file.
 
     >[!NOTE]
-    > Use "python" or "python3" for MacOS and Linux and "py" om Windows.
+    > Use "python" or "python3" for MacOS and Linux; use "py" for Windows.
 
 The full program looks like so:
 

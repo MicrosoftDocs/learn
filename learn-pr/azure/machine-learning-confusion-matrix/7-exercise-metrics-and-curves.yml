@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.evaluate-real-world-models.exercise-metrics-and-curves
+title: Exercise - Multiple metrics and ROC curves
+metadata:
+  title: Exercise - Multiple metrics and ROC curves
+  description: Exercise unit about multiple metrics and ROC curves in machine learning
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+sandbox: true
+notebook: notebooks/8-7-exercise-metrics-and-curves.ipynb
