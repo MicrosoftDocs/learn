@@ -18,7 +18,7 @@ quiz:
       choices:
         - content: You set `defaultExecutablePath` in the file _host.json_
           isCorrect: false
-          explanation: Incorrect. You should `defaultExecutablePath` in the _function.json_ file for that endpoint.
+          explanation: Incorrect. You should set `defaultExecutablePath` in the _function.json_ file for that endpoint.
         - content: You set the `executionPath` property in the function endpoints _function.json_ file.
           isCorrect: false
           explanation: Incorrect. The property is called `defaultExecutionPath`.
