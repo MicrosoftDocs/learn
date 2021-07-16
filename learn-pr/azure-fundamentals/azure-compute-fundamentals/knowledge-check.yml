@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/10/2021
+  ms.date: 07/02/2021
   author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
@@ -38,14 +38,14 @@ quiz:
     - content: "Azure Container Instances"
       isCorrect: false
       explanation: "That's incorrect. In this case, you're still running a full application that might not be designed for quick responses to events."
-  - content: "Your company has a team of remote workers that need to use Windows-based software to develop your company's applications, but your team members are using various operating systems like MacOS, Linux, and Windows. Which Azure compute service would help resolve this scenario?"
+  - content: "Your company has a team of remote workers that need to use Windows-based software to develop your company's applications, but your team members are using various operating systems like macOS, Linux, and Windows. Which Azure compute service would help resolve this scenario?"
     choices:
     - content: "Azure App Service"
       isCorrect: false
       explanation: "That's incorrect. App Service is a service for hosting web apps in the cloud."
-    - content: "Windows Virtual Desktop"
+    - content: "Azure Virtual Desktop"
       isCorrect: true
-      explanation: "That's correct. Windows Virtual Desktop enables your team members to run Windows in the cloud, with access to the required applications for your company's needs."
+      explanation: "That's correct. Azure Virtual Desktop enables your team members to run Windows in the cloud, with access to the required applications for your company's needs."
     - content: "Azure Container Instances"
       isCorrect: false
       explanation: "That's incorrect. Azure Container Instances is used for hosting containerized apps in the cloud."

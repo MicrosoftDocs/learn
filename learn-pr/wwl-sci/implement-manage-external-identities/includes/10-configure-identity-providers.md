@@ -89,7 +89,7 @@ Required claims for the WS-Fed token issued by the IdP:
 By setting up federation with Google, you can allow invited users to sign in to your shared apps and resources with their own Gmail accounts, without having to create Microsoft accounts.
 
 > [!NOTE]
-> Google federation is designed specifically for Gmail users. To federate with G Suite domains, use [direct federation](https://docs.microsoft.com/azure/active-directory/external-identities/direct-federation).
+> Google federation is designed specifically for Gmail users. To federate with G Suite domains, use [direct federation](/azure/active-directory/external-identities/direct-federation).
 
 ## What is the experience for the Google user?
 
@@ -138,7 +138,7 @@ We’re continuing to test various platforms and scenarios, and will update publ
 
    - If your Windows app uses embedded WebView or the WebAccountManager (WAM) on an older version of Windows, update to the latest version of Windows.
 
-   - Modify your apps to use the system browser for sign-in. For details, see [Embedded vs System Web UI](https://docs.microsoft.com/azure/active-directory/develop/msal-net-web-browsers) in the MSAL.NET documentation.
+   - Modify your apps to use the system browser for sign-in. For details, see [Embedded vs System Web UI](/azure/active-directory/develop/msal-net-web-browsers) in the MSAL.NET documentation.
 
 ## Sign-in endpoints
 
