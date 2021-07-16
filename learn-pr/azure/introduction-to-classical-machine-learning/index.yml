@@ -17,7 +17,7 @@ abstract: |
   - Discover how models are optimized by gradient descent
   - Experiment with learning rates, and see how they can affect training
 prerequisites: A basic familiarity with inputs, outputs, and models
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/machine-learning/introduction-to-classical-machine-learning.svg
 levels: 
 - beginner
 roles: 
