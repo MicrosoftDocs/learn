@@ -26,7 +26,7 @@ public void AddTest()
     Assert.AreEqual(2, actual);
 }
 ```
-
+In the code above, the product code is the `Calculator` class and its `Add()` method. The comparison happens when calling `Assert.AreEqual(2, actual)`. This pattern is something you find in most if not all test methods.
 Here's how this test would appear in Visual Studio:
 :::image type="content" source="../media/test-intro-TestMethod.png" alt-text="Test method in Visual Studio editor.":::
 

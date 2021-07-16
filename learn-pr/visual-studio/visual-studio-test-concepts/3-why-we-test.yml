@@ -3,7 +3,7 @@ uid: learn.visual-studio-test-concepts.3-why-we-test
 title: Why we test
 metadata:
   unitType: learning-content
-  title: why-we-test
+  title: Why we test
   description: Why do we test? Testing can help improve the quality of your code by consistently running checks against the behavior of your app. This practice makes your code more stable and builds confidence in your code health.
   ms.date: 6/28/2021
   author: kendrahavens

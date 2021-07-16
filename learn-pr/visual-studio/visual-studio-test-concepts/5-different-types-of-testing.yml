@@ -2,7 +2,7 @@
 uid: learn.visual-studio-test-concepts.5-different-types-of-testing
 title: Different Types of Testing and the Testing Pyramid
 metadata:
-  title: different-types-of-testing
+  title: Different Types of Testing and the Testing Pyramid
   description: You may hear of many different types of testing including unit testing, performance testing, load testing, UI testing, and so on. These types of tests all have different advantages in improving software quality.
   ms.date: 6/28/2021
   author: kendrahavens
