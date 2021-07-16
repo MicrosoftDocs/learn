@@ -8,4 +8,4 @@ In this module you wrote your first lines of F# code and build your first consol
 Use the following resources to learn more about .NET and F#:
 
 [What is .NET](https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet)
-[F# Documentation](http://docs.microsoft.com/dotnet/fsharp)
+[F# Documentation](/dotnet/fsharp)
