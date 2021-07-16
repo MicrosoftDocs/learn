@@ -4,7 +4,7 @@ Application performance often depends on how quickly the application can read an
 
 To choose the right disk type, it's important that you understand the performance indicators. The following indicators express performance:
 
-- **IOPS**. IOPS is the number of requests that your application sends to the disks in one second. IOPS directly affects your application performance. Some applications, like retail websites, need high IOPS to manage all the small and random I/O requests that must be processed quickly to keep the site responsive. Higher performance disks have higher IOPS values.
+- **IOPS**. IOPS is the number of requests that your application sends to the disks in one second. IOPS directly affects your application performance. Some applications, like retail websites, need high IOPS to manage all the small and random input/output (I/O) requests that must be processed quickly to keep the site responsive. Higher performance disks have higher IOPS values.
 - **Throughput**. Throughput is the amount of data that your application sends to the disks in a specified interval. Throughput is also called *data transfer rate* and is measured in MBps. If your application is performing I/O with large blocks of data, it requires high throughput. Higher performance disks have higher throughput.
 - **Latency**. Latency expresses the time it takes your app to send a request to the disk and receive a response. Latency puts a limit on effective IOPS. For example, if your disk can handle 5,000 IOPS but each operation takes 10 ms to process, your app will be capped at 100 operations per second because of the processing time. The latency is significantly improved if you enable ReadOnly host caching.
 
