@@ -34,6 +34,6 @@ quiz:
           isCorrect: false
           explanation: Incorrect. Although this searches for commands where the noun part is `file`, it's using an exact match, so you risk missing out on a command like `Get-FileHash`. 
         - content: "Call `Get-Command -Noun File*`"
-          isCorrect: false
+          isCorrect: true
           explanation: Correct. This command correctly searches by using the `-Noun` parameter because `file` is a noun. It uses an asterisk `*` to ensure it finds all commands that have the word `file` in them.
  
