@@ -4,7 +4,7 @@ title: Exercise - Add a Bicep deployment task to the pipeline
 metadata:
   unitType: exercise
   title: Exercise - Add a Bicep deployment task to the pipeline
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: Learn how to deploy a Bicep infrastructure as code template by using Azure Pipelines. Learn how variables can make your pipeline code reusable.
   ms.date: 07/05/2021
   author: vermegi
   ms.author: givermei

@@ -4,7 +4,7 @@ title: Exercise - Update your pipeline's trigger
 metadata:
   unitType: exercise
   title: Exercise - Update your pipeline's trigger
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: Learn how Bicep deployment pipelines can be triggered. Understand continuous integration branch triggers and scheduled triggers.
   ms.date: 07/05/2021
   author: vermegi
   ms.author: givermei

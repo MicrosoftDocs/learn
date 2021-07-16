@@ -4,7 +4,7 @@ title: Exercise - Prepare your Azure environment
 metadata:
   unitType: exercise
   title: Exercise - Prepare your Azure environment
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: Learn how to create a service principal and service connection for a Bicep deployment pipeline.
   ms.date: 07/05/2021
   author: vermegi
   ms.author: givermei
