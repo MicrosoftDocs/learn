@@ -1,4 +1,4 @@
-An Azure SignalR service has been exposed as part of the ARM template that you deployed. This service and associated setup enables you to connect to ADT.  A data pipeline has been created to retrieve data from ADT, which is abstracted from the client app that will be running on HoloLens 2.
+An Azure SignalR service has been exposed as part of the ARM template that you deployed. This service and associated setup enables you to connect to ADT.  A data pipeline has been created to retrieve data from ADT, which is abstracted from the client app that will be running in mixed reality.
 
 ## SignalR overview
 
@@ -20,9 +20,9 @@ Azure SignalR Service has been used in a wide variety of industries, for any app
 - **IoT and connected devices:** real-time IoT metrics, remote control, real-time status, and location tracking.
 - **Automation:** real-time trigger from upstream events.
 
-For your wind turbine use case, the communication layer between the ADT wind turbine data and HoloLens 2 uses the Azure SignalR service and a SignalR client embedded in the HoloLens 2 app.
+For your wind turbine use case, the communication layer between the ADT wind turbine data and your mixed reality device uses the Azure SignalR service and a SignalR client embedded in the mixed reality app.
 
-To expose the data to your client app via ADT, you need to connect to the Azure SignalR service. The HoloLens 2 app that you're building implements a SignalR client to connect to the SignalR service.  Establishing communication between the SignalR client and the Azure SignalR service requires the client to invoke the **negotiate** function in the SignalR service.
+To expose the data to your client app via ADT, you need to connect to the Azure SignalR service. The mixed reality app that you're building implements a SignalR client to connect to the SignalR service.  Establishing communication between the SignalR client and the Azure SignalR service requires the client to invoke the **negotiate** function in the SignalR service.
 
 Configure your **DeviceSimulator** with your ADT connection parameters and authentication details captured in the previous exercise.  
 
