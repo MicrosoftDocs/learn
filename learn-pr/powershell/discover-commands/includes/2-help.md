@@ -1,11 +1,11 @@
-You use `Get-Command` to locate a command that you need. After you've located the command you need, you might want to know more about what the command does and various ways to call it. By using the built-in help system, you can find out more about a specific command.
+By using the built-in help system in PowerShell, you can find out more about a specific command. You use the `Get-Command` cmdlet to locate a command that you need. After you've located the command, you might want to know more about what the command does and various ways to call it.
 
 ## Discover cmdlets by using the help system and Get-Help
 
-You can use the `Get-Help` core cmdlet to learn more about your chosen command. Typically, you invoke the `Get-Help` cmdlet by specifying it by name and adding the `-Name` flag that contains the name of the cmdlet you want to learn about. Here's an example:
+You can use the `Get-Help` core cmdlet to learn more about a command. Typically, you invoke `Get-Help` by specifying it by name and adding the `-Name` flag that contains the name of the cmdlet you want to learn about. Here's an example:
 
 ```powershell
-Get-Help -Name name-of-command
+Get-Help -Name 'name-of-command'
 ```
 
 ### Update help
@@ -20,29 +20,29 @@ Here's an example command:
 Update-Help -UICulture en-US -Verbose
 ```
 
-This command specifies the `-UICulture` flag. It gives it the value `en-US`, which fetches US-English help files. To update your help files on macOS or Linux, use a culture that corresponds to your machine's culture.
+This command specifies the `-UICulture` flag. It gives it the value `en-US`, which fetches US English help files. To update your help files on macOS or Linux, use a culture that corresponds to your machine's culture.
 
 ### Explore help sections
 
 When you invoke `Get-Help` on a cmdlet, a help page is returned. The page includes many sections. You'll likely see these common sections:
 
-- **NAME**: This section provides the name of the command.
-- **SYNTAX**: This section shows ways to call the command by using a combination of flags and sometimes also allowed parameters.
-- **ALIASES**: This section lists any aliases for a command. An alias is a different name for a command, and it can be used to invoke the command.
-- **REMARKS**: This section provides information about what commands to run to get more help for this command.
-- **PARAMETERS**: This section provides details about the parameter. It lists its type, a longer description, and acceptable values, if applicable.
+- **NAME**: Provides the name of the command.
+- **SYNTAX**: Shows ways to call the command by using a combination of flags, and sometimes, allowed parameters.
+- **ALIASES**: Lists any aliases for a command. An alias is a different name for a command, and it can be used to invoke the command.
+- **REMARKS**: Provides information about what commands to run to get more help for this command.
+- **PARAMETERS**: Provides details about the parameter. It lists its type, a longer description, and acceptable values, if applicable.
 
 ### Filter the help response
 
-If you don't want to display the full help page, narrow down the response by adding flags to your `Get-Help` command. Here are some flags you can use:
+If you don't want to display the full help page, narrow the response by adding flags to your `Get-Help` command. Here are some flags you can use:
 
-- **Full**: This flag returns a detailed help page. It specifies information like parameters, inputs, and outputs that you don't get in the standard response.
-- **Detailed**: This flag's response looks like the standard response, but it includes a section for parameters.
-- **Examples**: This flag returns only examples, if any exist.
-- **Online**: This flag opens a web page for your command.
-- **Parameter**: This flag requires a parameter name as an argument. It lists a specific parameter's properties.
+- **Full**: Returns a detailed help page. It specifies information like parameters, inputs, and outputs that you don't get in the standard response.
+- **Detailed**: Returns a response that looks like the standard response, but it includes a section for parameters.
+- **Examples**: Returns only examples, if any exist.
+- **Online**: Opens a web page for your command.
+- **Parameter**: Requires a parameter name as an argument. It lists a specific parameter's properties.
 
-For example, you could use the following command to return only the "Examples" section of the help page.
+For example, you can use the following command to return only the Examples section of the help page.
 
 ```powershell
 Get-Help Get-FileHash -Examples
@@ -50,4 +50,4 @@ Get-Help Get-FileHash -Examples
 
 ### Improve the reading experience
 
-The `Get-Help` command returns the entire help page. This page might not provide the best reading experience. You might have to scroll to the part that interests you. A better approach is to use the `help` alias. The `help` alias pipes `Get-Help` into a function that ensures that your output is readable line by line. It also makes the response readable page by page.
+Running `Get-Help` returns the entire help page. The page might not provide the best reading experience. You might have to scroll to find the section you want to read. A better approach is to use the `help` alias. The `help` alias pipes `Get-Help` into a function that ensures that your output is readable line by line. It also makes the response readable page by page.
