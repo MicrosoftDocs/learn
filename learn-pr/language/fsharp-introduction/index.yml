@@ -13,7 +13,7 @@ summary: "Learn how to get started developing applications with F#" # user input
 abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
   By the end of this module, you'll be able to:
     - Understand what F# is 
-    - Write your first line of F#
+    - Write your first line of F# code
     - Build your first F# console application
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
   - Introductory knowledge of .NET

@@ -5,20 +5,20 @@ In this exercise, we'll write our first line of F# code which prints out **Hello
 1. Open a command prompt
 1. Enter the following .NET CLI command into the command prompt
 
-```dotnetcli
-dotnet fsi
-``` 
+    ```dotnetcli
+    dotnet fsi
+    ```
 
-When the F# Interactive terminal opens, you should see something like the following:
+    When the F# Interactive terminal opens, you should see something like the following:
 
-```dotnetcli
-Microsoft (R) F# Interactive version 11.0.0.0 for F# 5.0
-Copyright (c) Microsoft Corporation. All Rights Reserved.
-
-For help type #help;;
-
->
-```
+    ```dotnetcli
+    Microsoft (R) F# Interactive version 11.0.0.0 for F# 5.0
+    Copyright (c) Microsoft Corporation. All Rights Reserved.
+    
+    For help type #help;;
+    
+    >
+    ```
 
 ## Write your first line of code
 
@@ -46,11 +46,11 @@ Congratulations! You've written your first line of F# code!
 1. Create a file called *script.fsx* and open it in a text editor.
 1. Add the following code to the *script.fsx* file.
 
-```fsharp
-printfn "Hello World!"
-```
+    ```fsharp
+    printfn "Hello World!"
+    ```
 
-Note that because this is inside a script file, there's no need to include `;;`
+    Note that because the code is inside a script file, there's no need to include `;;`.
 
 1. Run the script `dotnet fsi script.fsx`.
 
