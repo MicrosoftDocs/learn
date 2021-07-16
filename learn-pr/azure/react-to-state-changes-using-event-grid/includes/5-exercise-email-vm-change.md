@@ -8,7 +8,7 @@ You're going to learn how to set up a condition that enables you to inspect an e
 
 First, let's create a condition that runs the logic app only when a certain event is published. Select the Logic app you just created > Logic app designer from the left-hand menu.
 
-1. In Logic Apps Designer, under the **Event Grid** trigger, select **+**.
+1. In Logic Apps Designer, under the **Event Grid** trigger, select **+** (Insert a new step).
 
     ![Button for a new logic app step.](../media/5-choose-new-step-condition.png)
 
@@ -28,7 +28,7 @@ First, let's create a condition that runs the logic app only when a certain even
 
     ![Selections for renaming a condition.](../media/5-rename-condition.png)
 
-1. On the first row under **And**, click inside the left box, and then select the **Choose a value** box. In the content list that appears, select the **Expression** tab.
+1. On the first row under **And**, click inside the left box to generate a checkmark, and then select the **Choose a value** box. In the content list that appears, select the **Expression** tab.
 
     ![Selections for choosing an expression as a value.](../media/5-condition-choose-expression.png)
 
