@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.exercise-add-bicep-deployment-task-pipeline
+title: Exercise - Add a Bicep deployment task to the pipeline
+metadata:
+  unitType: exercise
+  title: Exercise - Add a Bicep deployment task to the pipeline
+  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 07/05/2021
+  author: vermegi
+  ms.author: givermei
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-exercise-add-bicep-deployment-task-pipeline.md)]

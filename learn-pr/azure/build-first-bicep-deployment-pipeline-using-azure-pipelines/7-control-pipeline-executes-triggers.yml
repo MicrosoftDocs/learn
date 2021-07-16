@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/6-control-pipeline-executes-triggers.md)]
+  [!include[](includes/7-control-pipeline-executes-triggers.md)]
