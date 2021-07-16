@@ -17,7 +17,7 @@ summary: |
   You'll create multiple services, processing both large scale of messages from devices and streaming data from IoT devices.
 
 prerequisites: None
-iconUrl: /learn/achievements/machine-learning-essentials.svg
+iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - beginner
 roles:
