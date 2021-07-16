@@ -36,7 +36,7 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 
 1. Because Bicep is still new, it changes regularly. It's a good idea to upgrade the version of Bicep on the agent before you start to use it, to ensure you can use all of the latest features. Add a new task at the bottom of the file to run the `az bicep upgrade` command:
 
-   :::code language="yaml" source="code/6-pipeline.bicep" range="7-12" :::
+   :::code language="yaml" source="code/6-pipeline.yaml" range="7-12" :::
 
    Notice that the task includes a variable named `$(ServiceConnectionName)`. This doesn't exist yet. You will add it soon.
 
@@ -45,14 +45,14 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 
 1. Below the task you just added, add another Azure CLI task to deploy your Bicep file by using the `az deployment group create` command:
 
-   :::code language="yaml" source="code/6-pipeline.bicep" range="14-19" :::
+   :::code language="yaml" source="code/6-pipeline.yaml" range="14-19" :::
 
    > [!TIP]
    > When you work in Visual Studio Code and have installed the Azure Pipelines extension, try using the <kbd>Ctrl+Space</kbd> key combination. It shows a context menu of suggested elements to add at your current cursor position. 
 
 1. Save the changes to the file. Your file should look like the below:
 
-   :::code language="yaml" source="code/6-pipeline.bicep" :::
+   :::code language="yaml" source="code/6-pipeline.yaml" :::
 
 1. In the Visual Studio Code **Terminal**, stage your changes, commit them to your repository, and push them Azure Repos:
 
