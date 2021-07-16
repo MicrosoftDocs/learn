@@ -92,7 +92,7 @@ Next, create a Windows Server VM to simulate an on-premises machine running in t
 
 1. In the **Drive letter** dropdown list, select the **F**.
 
-1. Under **Authentication method**, ensure **Storage account key** is selected, and then copy the Powershell script that appears in the text box.
+1. Under **Authentication method**, ensure **Storage account key** is selected, and then copy the PowerShell script that appears in the text box.
 
     :::image type="content" source="../media/4-connect-share.png" alt-text="Screenshot of the data file share and its connection commands." lightbox="../media/4-connect-share.png#lightbox":::
 
@@ -110,7 +110,7 @@ Next, create a Windows Server VM to simulate an on-premises machine running in t
 
 1. In the **Drive letter** dropdown list, select the **G**.
 
-1. Under **Authentication method**, ensure **Storage account key** is selected, and then copy the Powershell script that appears in the text box.
+1. Under **Authentication method**, ensure **Storage account key** is selected, and then copy the PowerShell script that appears in the text box.
 
 1. In the PowerShell window, paste the copied commands, and press <kbd>Enter</kbd>.
 

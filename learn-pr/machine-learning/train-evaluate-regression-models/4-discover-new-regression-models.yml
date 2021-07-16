@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.train-evaluate-regression-models.discover-new-regression-models
+title: Discover new regression models
+metadata:
+  title: Discover new regression models
+  description: Review new types of regression models, such as tree-based algorithms
+  ms.date: 01/04/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-discover-new-regression-models.md)]

@@ -597,3 +597,8 @@ achievements:
   title: Capture feedback and monitoring data to continuously improve your software
   summary: Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to recommend and design system feedback mechanisms, implement a process for routing system feedback to development teams, and optimize feedback mechanisms.
   iconUrl: /learn/achievements/azure-devops/capture-feedback-monitoring.svg
+- uid: learn.build-azure-vm-templates
+  type: badge
+  title: Build Azure Resource Manager templates
+  summary: Learn how Resource Manager templates express your deployments as code, enabling you to deploy faster and more reliably. 
+  iconUrl: /learn/achievements/build-azure-vm-templates.svg

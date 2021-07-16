@@ -32,7 +32,7 @@ prerequisites: |
   - Either:
     - The latest [Azure CLI](/cli/azure/install-azure-cli) tools, installed locally.  
     - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps), installed locally.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/bicep/deploy-resources-scopes-bicep.svg
 levels:
   - advanced
 roles:
