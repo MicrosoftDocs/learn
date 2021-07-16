@@ -34,6 +34,7 @@ units:
   - learn.powershell.intro-to-powershell.3-exercise-powershell
   - learn.powershell.intro-to-powershell.4-cmdlets
   - learn.powershell.intro-to-powershell.5-exercise-cmdlets
-  - learn.powershell.intro-to-powershell.6-summary
+  - learn.powershell.intro-to-powershell.6-knowledge-check
+  - learn.powershell.intro-to-powershell.7-summary 
 badge:
   uid: learn.powershell.intro-to-powershell.badge
