@@ -17,7 +17,7 @@ summary: |
   You'll create multiple services, processing both large scale of messages from devices and streaming data from IoT devices.
 
 prerequisites: None
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/create-cloud-native-apps-with-Azure-open-source.svg
 levels:
 - intermediate
 roles:
