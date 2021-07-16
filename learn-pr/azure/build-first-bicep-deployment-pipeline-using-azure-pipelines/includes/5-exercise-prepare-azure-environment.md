@@ -1,11 +1,9 @@
-TODO lead-in
-
-In this exercise, you'll:
+Before you can deploy your toy company's website from a pipeline, you need to prepare your Azure environment. In this exercise, you'll:
 
 > [!div class="checklist"]
 > * Create a resource group for your website.
-> * Create a service principal and grant it access to the resource group.
-> * Create a service connection and configure it with the service principal's credentials.
+> * Create an Azure AD service principal and grant it access to the resource group.
+> * Create an Azure Pipelines service connection and configure it with the service principal's credentials.
 
 This exercise requires that you have permission to create applications and service principals in your Azure Active Directory (Azure AD) directory. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
 
@@ -75,21 +73,29 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 ::: zone pivot="cli"
 
-Run this Azure CLI command in the Visual Studio Code terminal to create a new resource group:
+1. Run this Azure CLI command in the Visual Studio Code terminal to create a new resource group:
 
-```azurecli
-az group create --name ToyWebsite --location westus
-```
+   ```azurecli
+   az group create --name ToyWebsite --location westus
+   ```
+
+1. Look at the JSON output from the previous command. It includes an `id` property, which is the resource group's ID.
+
+   Copy the resource group ID somewhere safe. You'll use it soon.
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-Run this Azure PowerShell commands in the Visual Studio Code terminal to create a resource group:
+1. Run this Azure PowerShell commands in the Visual Studio Code terminal to create a resource group:
 
-```azurepowershell
-New-AzResourceGroup -Name ToyWebsite -Location westus
-```
+   ```azurepowershell
+   New-AzResourceGroup -Name ToyWebsite -Location westus
+   ```
+
+1. Look at the output from the previous command. It includes a `ResourceId`, which is the resource group's fully qualified ID.
+
+   Copy the resource group ID somewhere safe. You'll use it soon.
 
 ::: zone-end
 
@@ -97,13 +103,13 @@ New-AzResourceGroup -Name ToyWebsite -Location westus
 
 ::: zone pivot="cli"
 
-1. Run this Azure CLI command in the Visual Studio Code terminal to create a service principal:
+1. Run this Azure CLI command in the Visual Studio Code terminal to create a service principal and assign it the Contributor role for your resource group. Replace the placeholder with the resource group ID you copied in the previous step.
 
    ```azurecli
    az ad sp create-for-rbac \
      --name ToyWebsitePipeline \
      --role Contributor \
-     --scopes TODO-RGID
+     --scopes RESOURCE_GROUP_ID
    ```
 
 1. Look at the JSON output from the previous command. It includes the following properties:
@@ -112,21 +118,32 @@ New-AzResourceGroup -Name ToyWebsite -Location westus
    - `password`: The service principal's key.
    - `tenant`: Your Azure AD tenant ID.
 
-   TODO need sub ID and sub name
-
    Copy these values somewhere safe. You'll use them soon. 
+
+1. Run this Azure CLI command to view the information about your Azure subscription.
+
+   ```azurecli
+   az account show
+   ```
+
+1. Look at the JSON output from the previous command. It includes the following properties:
+ 
+   - `id`: Your Azure subscription ID.
+   - `name`: Your Azure subscription name.
+
+   Copy these values somewhere safe. You'll use them soon.
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-1. Run these Azure PowerShell commands in the Visual Studio Code terminal to create a service principal:
+1. Run these Azure PowerShell commands in the Visual Studio Code terminal to create a service principal and assign it the Contributor role for your resource group. Replace the placeholder with the resource group ID you copied in the previous step.
 
    ```azurepowershell
    $servicePrincipal = New-AzADServicePrincipal `
      -DisplayName ToyWebsitePipeline `
      -Role Contributor `
-     -Scope TODO-RGID
+     -Scope RESOURCE_GROUP_ID
 
    $plaintextSecret = [System.Net.NetworkCredential]::new('', $servicePrincipal.Secret).Password
    ```
