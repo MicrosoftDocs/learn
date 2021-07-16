@@ -196,6 +196,8 @@ inputs:
 > [!Note]
 > Notice that in the task we also add the extra system variable Build.BuildId for the name of the deployment. 
 
+TODO mention the az bicep upgrade thing
+
 1. Your resulting YAML file should look like this: 
 
 ```YAML

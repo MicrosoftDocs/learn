@@ -28,17 +28,9 @@ In this exercise, you'll:
 
 1. Select **Create project**.
 
-## Create a repository in Azure Repos
-
-A pipeline is defined as a YAML file and is stored in your repository. Here, you'll initialize a repository for your Azure DevOps project.
-
 1. On the project page that appears, select the **Repos** menu item.
 
    :::image type="content" source="../media/TODO-azure-devops-repos-menu.png" alt-text="Screenshot of the Azure DevOps interface showing the menu, with the Repos item highlighted." border="true":::
-
-1. Select the **Initialize** button.
-
-   Azure Repos initializes your repository and adds a _README.md_ into it.
 
 1. Make a note of the repository's URL. You'll use this shortly.
 
@@ -46,34 +38,23 @@ A pipeline is defined as a YAML file and is stored in your repository. Here, you
 
 ## Clone the repository
 
-1. Open Visual Studio Code.
+1. Select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
 
-1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
+   TODO screenshot
 
-1. Enter the following command to clone the repository to your local computer. Make sure you replace `YOUR_REPOSITORY_URL` with the URL that you saved earlier.
+1. Create a folder to use for the repository and select **Select Repository Location**.
 
-   ```bash
-   git clone YOUR_REPOSITORY_URL
-   ```
-
-1. Enter the following command to change to the repository folder and reopen Visual Studio Code with the folder loaded:
-
-   ```bash
-   cd toy-website
-   code --reuse-window .
-   ```
-
-   Visual Studio Code reloads. If you're prompted to trust the folder, select **Yes, I trust the authors**.
+1. Visual Studio Code prompts you to open the repository location. Select **Open**.
 
 ## Create a YAML pipeline definition
 
-Now that you have your organization, project and repository created, you're ready to create a basic pipeline.
+Now that you have your organization, project and repository created, you're ready to create a basic pipeline definition.
 
 1. Open **Explorer** in Visual Studio Code.
 
 1. Add a new folder at the root of your current folder structure, and name it _deploy_.
 
-1. In the _deploy_ folder, create a new file named _pipeline.yml_.
+1. In the _deploy_ folder, create a new file named _azure-pipelines.yml_.
 
 1. Copy the following into the file: 
 
@@ -90,6 +71,8 @@ Now that you have your organization, project and repository created, you're read
        displayName: 'Placeholder step'
    ```
 
+1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
+
 1. Commit and push the file to your Git repository by using the following commands:
 
    ```bash
@@ -98,80 +81,78 @@ Now that you have your organization, project and repository created, you're read
    git push
    ```
 
-<!-- TODO below -->
+## Configure the pipeline in Azure Pipelines
 
-## Trigger the pipeline
+You have created a pipeline definition. Here, you register the pipeline with Azure Pipelines.
 
-1. In your browser, TODO
+1. In your browser, select **Pipelines**, then select **Create Pipeline**.
 
-1. Select the **Save and run** button. 
+   TODO ss
 
-<TODO: Insert image>
+1. Select **Azure Repos Git**.
 
-2. In the pop out window you will see that this file and changes will be saved by a commit to your repository. Select **Save and run**.
+   TODO ss
 
-<TODO: Insert image>
+1. Select the **toy-website** repository.
 
+   TODO ss
 
-## Inspect pipeline output
+1. Select **Existing Azure Pipelines YAML file**.
 
-Once you hit Save and run in the previous step, you will see the Pipelines - Run screen: 
+   TODO ss
 
-1. Take note of the commit ID this pipeline run is based on. 
+1. In the **Path** field, select _/deploy/azure-pipelines.yml_. Then select **Continue**.
 
-<TODO: Insert image>
+   TODO ss
+
+   Your YAML pipeline definition is shown.
+
+   > [!NOTE]
+   > The Azure Pipelines web interface provides an editor for managing your pipeline definition. In this module, we work with the definition file in Visual Studio Code, but you can explore the Azure Pipelines editor to see how it works, too.
+
+1. Select **Run**.
+
+   TODO ss
+
+   Azure Pipelines creates a pipeline.
+
+   > [!NOTE]
+   > It can take some time for your pipeline to start. This is because Azure Pipelines needs to wait for an agent to become available.
+
+## Verify the pipeline execution
+
+After the pipeline has run, a page is displayed with information about this execution.
+
+1. Notice the page includes the identifier for the Git commit that the run used. This indicates the version of your repository's content that the pipeline used.
+
+   TODO ss
 
 1. Select the **Job**.
 
-<TODO: Insert image>
+   TODO ss
 
-1. This will show you the different steps that got executed as part of your job. Select the **Checkout** step. You will see that as a first step in your pipeline your source code, which in this case only holds the README.md file and your YAML file, will be downloaded to your agent machine. 
+   The job information page is displayed, which shows the log of the steps that the pipeline ran for you. Notice that your **Placeholder step** is included.
 
-> [!NOTE]
-> It sometimes can take a little time for your pipeline to start. This is because Azure Pipelines needs to wait for an agent to become available.
+   Notice the list includes steps that you didn't specify. These are created automatically by Azure Pipelines.
 
-<TODO: Insert image>
+1. Select the **Checkout toy-website@main to s** step.
 
-1. Select the **Run a one line script** step. This will display the output of this step. 
+   TODO ss
 
-<TODO: Insert image>
+   The logs for the step provide a lot of detail on exactly what happened. In this case, the repository's contents was downloaded to the agent.
 
-1. Select the **Run a multi-line script** step and inspect the output. 
+1. Select the **Placeholder step** step.
 
-<TODO: Insert image>
+   TODO ss
 
+   The logs for this step show the _Hello world!_ text that our pipeline YAML file specified.
 
 ## Inspect how pipeline execution can be linked back to a commit
 
-1. Navigate back to the Repository overview screen by selecting the **Repos** option in the right menu.
+1. Navigate back to the Repository overview screen by selecting **Repos**. Then, select **Commits**.
 
-<TODO: Insert image>
+   TODO ss
 
-1. In the Repos overview you will see that your YAML file is part of the repository. It got committed and added when you selected Save and run in one of the previous steps. Select your **YAML** file in the file tree to confirm that it contains your pipeline code. 
+   Notice that the commit identifier displayed is the same as the commit identifier you noted from your pipeline run.
 
-<TODO: Insert image>
-
-2. Navigate back to the Pipelines overview screen by selecting the **Pipelines** option in the right menu.
-
-<TODO: Insert image>
-
-1. Select the pipeline your just created.
-
-<TODO: Insert image>
-
-1. Select the **Run pipeline** button. 
-
-
-<TODO: Insert image>
-
-1. Select the **Run** button.
-
-<TODO: Insert image>
-
-1. In the Pipelines - Run screen that appears, take note of the commit number, this is the same hash as previously. There were no new changes in your repository, so the run is started based on the same version and files. 
-
-<TODO: Insert image>
-
-1. Select the **Commit hash**. This will show you the screen with an overview of the changes that are linked to this run. 
-
-<TODO: Insert image>
+1. Select the commit. The list of changes from the commit are displayed.
