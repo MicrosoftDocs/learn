@@ -33,9 +33,6 @@ quiz:
     - content: "70%"
       isCorrect: false
       explanation: "There's some advice that indicates 70% code coverage could be a happy medium of code coverage. However, there isn't much empirical evidence supporting this specific number today. Most commonly, developers observe a drop in efficacy of code coverage as it increases between 70% and 100%. At a certain point fewer bugs are found and writing tests just to cover corner cases becomes more time consuming. Thinking holistically about testing different behaviors of your code can be a better strategy than aiming for 100% code coverage."
-    - content: "50%"
-      isCorrect: false
-      explanation: "In many cases, 50% may be considered too low to be an effective code coverage goal."
     - content: "There's no one true answer. Your code coverage goal depends on the repository."
       isCorrect: true
       explanation: "There's no one true answer that can be applied to all code bases equally. It's best to agree as a team on a metric. New code that causes code coverage to decrease may indicate it's time to test the newly added functionality."
