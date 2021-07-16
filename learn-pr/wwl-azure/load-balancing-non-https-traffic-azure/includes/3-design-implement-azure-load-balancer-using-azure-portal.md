@@ -76,11 +76,9 @@ To compare and understand the differences, review the table below.
 | SLA                                                                                                                                           | [99.99%](https://azure.microsoft.com/support/legal/sla/load-balancer/v1_0/)                                                                             | Not available                                                                                           |
 
 
+**Microsoft recommends Standard load balancer. Standalone VMs, availability sets, and virtual machine scale sets can be connected to only one SKU, never both. Load balancer and the public IP address SKU must match when you use them with public IP addresses.**
 
-**Microsoft recommends Standard load balancer. Standalone VMs, availability sets, and virtual machine scale sets can be connected to only one SKU, never both. Load balancer and the public IP address SKU must match when you use them with public IP addresses. **
-
-
-**SKUs aren't mutable; therefore, you cannot change the SKU of an existing resource. **
+**SKUs aren't mutable; therefore, you cannot change the SKU of an existing resource.**
 
 
 
