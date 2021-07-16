@@ -40,11 +40,11 @@ let main argv =
     0 // return an integer exit code
 ```
 
-This application uses the `System` class library which is imported using the `open` keyword. 
+This application uses the `System` class library which is imported using the `open` keyword.
 
 The `from` function uses the `whom` string parameter to create and format a string message.
 
-The `main` function is the entrypoint of the application. It uses the `from` function to create the message "from F#". Then, using the `printfn` function, it prints out "Hello world from F#" to the console.
+The `main` function is the entry point of the application. It uses the `from` function to create the message "from F#" and binds the value to `message`. Then, using the `printfn` function, it prints out "Hello world from F#" to the console.
 
 ## Run your application
 
@@ -54,7 +54,7 @@ In the terminal, enter the following .NET CLI command from inside your *MyFSharp
 dotnet run
 ```
 
-The console output should look like the following:
+The console output looks like the following:
 
 ```console
 Hello world from F#
