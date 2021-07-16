@@ -2,23 +2,22 @@
 uid: learn.fsharp-introduction
 metadata:
   moduleType: standard
-  title: "TODO" # user input: module title for browser tab and search results
+  title: "Introduction to F#" # user input: module title for browser tab and search results
   description: "TODO" # user input: a description for site search and SEO
   ms.date: 6/26/2021
   author: luisquintanilla
   ms.author: luquinta
   ms.topic: interactive-tutorial # do we need ms.topic?
 title: Introduction to F#
-summary: "Leanr how to get started with F#" # user input: introductory summary (https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)
+summary: "Learn how to get started developing applications with F#" # user input: introductory summary (https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master)
 abstract: | # user input: learning objectives (https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=master)
   By the end of this module, you'll be able to:
     - # Understand what F# is 
     - # Write your first line of F#
     - # Build your first F# console application
 prerequisites: | # user input: prerequisites (https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=master)
-  - # .NET SDK
-  - # Visual Studio Code
-  - # Ionide F# extension
+  - Introductory knowledge of .NET
+  - Introductory knowledge of programming concepts
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # user input: add levels from level taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=master#level)
   - beginner

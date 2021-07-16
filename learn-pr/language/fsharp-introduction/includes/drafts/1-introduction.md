@@ -4,10 +4,10 @@ This modules is an introduction into the F# programming language.
 
 In this module you will learn:
 
-- what F# is
-- Why should you develop using F#
-- What types of applications you can build with F#
-- Learn what interactive programming and F# is
+- What F# is?
+- Why should you use F# for your next application?
+- What types of applications you can build with F#?
+- Learn what F# interactive is
 - Write your first line of F# code
 - Build your first F# console application
 
