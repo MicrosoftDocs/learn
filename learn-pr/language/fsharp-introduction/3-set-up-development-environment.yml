@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.fsharp-introduction.set-up-development-environment
-title: Set up F# development environment
+title: Set up your F# development environment
 metadata:
   unitType: exercise
-  title: "Set up development environment" # user input: module title for browser tab and search results
+  title: "Set up F# development environment" # user input: module title for browser tab and search results
   description: "Install the .NET SDK, Visual Studio Code, and Ionide F# extension to develop your F# applications" # user input: a description for site search and SEO
-  ms.date: 6/26/2021
+  ms.date: 07/16/2021
   author: luisquintanilla
   ms.author: luquinta
   ms.topic: interactive-tutorial # do we need ms.topic?
