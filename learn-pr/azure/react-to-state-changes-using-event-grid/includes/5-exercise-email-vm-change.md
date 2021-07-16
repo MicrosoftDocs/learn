@@ -8,9 +8,11 @@ You're going to learn how to set up a condition that enables you to inspect an e
 
 First, let's create a condition that runs the logic app only when a certain event is published. Select the Logic app you just created > Logic app designer from the left-hand menu.
 
-1. In Logic Apps Designer, under the **Event Grid** trigger, select **New step**.
+1. In Logic Apps Designer, under the **Event Grid** trigger, select **+**.
 
     ![Button for a new logic app step.](../media/5-choose-new-step-condition.png)
+
+1. Select **Add an action**.
 
 1. Under **Choose an operation**, in the search box, enter **condition** as your filter.
 
@@ -22,7 +24,7 @@ First, let's create a condition that runs the logic app only when a certain even
 
     ![Empty condition.](../media/5-empty-condition.png)
 
-1. On the condition's title bar, select the ellipsis (...) button, and select **Rename**. Rename the condition to **If a virtual machine in your resource group has changed**.
+1. In the **Condition** text box on the right, enter **If a virtual machine in your resource group has changed**.
 
     ![Selections for renaming a condition.](../media/5-rename-condition.png)
 
@@ -44,7 +46,7 @@ First, let's create a condition that runs the logic app only when a certain even
 
 Next, we'll add an email action based on the logic app being triggered. The following steps use the Office 365 Outlook action. If you don't have an Office 365 account, you can also use Outlook.com or Gmail. The configuration for these may be slightly different, so you may need to adjust accordingly.
 
-1. In the condition's **True** box, select **Add an action**.
+1. In the condition's **True** box, select **+** (Add an action).
 
     ![Button for adding an action.](../media/5-condition-true-add-action.png)
 
@@ -54,9 +56,9 @@ Next, we'll add an email action based on the logic app being triggered. The foll
 
 1. If you don't already have a connection for your email provider, sign in to your email account when you're asked for authentication.
 
-1. On the action's title bar, select the ellipsis (...) button, and select **Rename**.
+1. On the action's title bar to the right, rename the action to **Send email when virtual machine updated**.
 
-1. Rename the action to **Send email when virtual machine updated**.
+    ![Selections for sending an email when vm updates.](../media/5-send-email-vm-update.png)
 
 1. Select each box in the email form, and on the **Dynamic content** tab, search for and select the appropriate content type as follows in the following screenshot.
 
