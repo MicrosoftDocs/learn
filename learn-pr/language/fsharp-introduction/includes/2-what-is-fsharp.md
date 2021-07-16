@@ -11,8 +11,8 @@ There are many language features and aspects of the F# language that make it eas
 
 ### Performant - Handle any workload
 
-**Built-in parallelism & concurrency**: F# has language features like `async` expressions that simplify the process of writing concurrent code to safely make the most of your compute resources.
-**Leverage the performance of the .NET Runtime**: The .NET runtime is able to efficiently handle large workloads across a wide range of deployment targets.
+- **Built-in parallelism & concurrency**: F# has language features like `async` expressions that simplify the process of writing concurrent code to safely make the most of your compute resources.
+- **Leverage the performance of the .NET Runtime**: The .NET runtime is able to efficiently handle large workloads across a wide range of deployment targets.
 
 ### Robust - Trust your code
 
