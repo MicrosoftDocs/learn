@@ -4,7 +4,7 @@ There's also value in knowing what a command returns, what type it returns, and 
 
 ## Learning objectives
 
-When you finish this module, you'll know how to:
+When you finish this module, you'll be able to:
 
 - Inspect commands to understand how to call them.
 - Understand what a command returns and customize what it returns. 
