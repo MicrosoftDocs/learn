@@ -10,7 +10,7 @@ In this unit, you'll create a simple project structure using Visual Studio (VS) 
 
    :::image type="content" source="../media/vs-code-welcome.png" alt-text="Screenshot of VS Code Welcome page.":::
 
-   If the **Welcome** page isn't visible, you can displayit by selecting **Help > Welcome** on the menu. (Alternatively, you can display the **Welcome** page using the VS Code Command Palette. You can open the Command Palette using the keyboard shortcut <kbd>Shift+Ctrl+P</kbd> on a Windows computer or <kbd>Shift+Cmd+P</kbd> on macOS, or by selecting **View > Command Palette** from the VS Code menu. When the command palette is displayed, enter **>Help: Welcome** in the search field to open the **Welcome** page.)
+   If the **Welcome** page isn't visible, you can display it by selecting **Help > Welcome** on the menu. (Alternatively, you can display the **Welcome** page using the VS Code Command Palette. You can open the Command Palette using the keyboard shortcut <kbd>Shift+Ctrl+P</kbd> on a Windows computer or <kbd>Shift+Cmd+P</kbd> on macOS, or by selecting **View > Command Palette** from the VS Code menu. When the command palette is displayed, enter **>Help: Welcome** in the search field to open the **Welcome** page.)
 
 1. Select **Open folder** in the **Start** list of the **Welcome** page, or select **File > Open Folder** from the VS Code menu.
 
