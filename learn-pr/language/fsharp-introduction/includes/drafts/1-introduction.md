@@ -1,6 +1,6 @@
 This modules is an introduction into the F# programming language.
 
-## Learning objective
+## Learning objectives
 
 In this module you will learn:
 
