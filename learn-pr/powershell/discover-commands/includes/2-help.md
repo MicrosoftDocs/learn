@@ -5,7 +5,7 @@ By using the built-in help system in PowerShell, you can find out more about a s
 You can use the `Get-Help` core cmdlet to learn more about a command. Typically, you invoke `Get-Help` by specifying it by name and adding the `-Name` flag that contains the name of the cmdlet you want to learn about. Here's an example:
 
 ```powershell
-Get-Help -Name <name-of-command>
+Get-Help -Name 'name-of-command'
 ```
 
 ### Update help
