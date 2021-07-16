@@ -14,6 +14,7 @@ In this exercise, you'll:
 1. Copy the following into the _main.bicep_ file:
 
    :::code language="bicep" source="code/6-main.bicep" :::
+   <!-- TODO update this to something with an EnvironmentType -->
 
 1. Save the file.
 
@@ -27,171 +28,98 @@ In this exercise, you'll:
 
 ##  Replace the existing tasks in the pipeline by a task that will deploy your Bicep template
 
-You will now update your YAML pipeline to include tasks to deploy the bicep template to Azure using your service connection. 
+Here, you update your pipeline definition to deploy your Bicep file to Azure by using the service connection.
 
-1. Open your Visual Studio Code and open the azure-pipelines.yml file. 
+1. In Visual Studio Code, open the _deploy/azure-pipelines.yml_ file.
 
-<TODO: Insert image>
+1. Remove the `script` step from the pipeline definition by deleting the bottom two lines of the file.
 
-1. Remove all script steps that are already present. 
-1. Add a task step. Type: -task: 
-1. If a context menu does not appear, type Ctrl + space, this shows a context menu of available tasks.
+1. Because Bicep is still new, it changes regularly. It's a good idea to upgrade the version of Bicep on the agent before you start to use it, to ensure you can use all of the latest features. Add a new task at the bottom of the file to run the `az bicep upgrade` command:
 
-<TODO: Insert image>
+   :::code language="yaml" source="code/6-pipeline.bicep" range="7-12" :::
 
-> [!Note]
-> While working in Visual Studio Code the Ctrl + Space key combination is a handy one to bring up a context menu of suggestions at all times at the place where your cursor is. 
+   Notice that the task includes a variable named `$(ServiceConnectionName)`. This doesn't exist yet. You will add it soon.
 
-> [!Note]
-> Keep an eye on indentation. If your indentation is off, your YAML file will not be correct. Visual Studio Code will also indicate faulty indication by means of squigly lines. 
+   > [!NOTE]
+   > It's a good idea to type this in yourself instead of copying and pasting. Watch out for the file's indentation. If your indentation isn't correct, your YAML file won't be valid. Visual Studio Code indicates errors by showing you squiggly lines.
 
-1. Start typing `AzureCLI@2`, the context menu will filter down the entries based on the text you type. You can use the arrow keys to choose this task from the context menu and insert it by pressing `Enter`. 
+1. Below the task you just added, add another Azure CLI task to deploy your Bicep file by using the `az deployment group create` command:
 
-<TODO: Insert image>
+   :::code language="yaml" source="code/6-pipeline.bicep" range="14-19" :::
 
-1. Add the following statements underneath the task. Be sure to have input at the same indentation level as task. You will notive that the task is already making use of variables. We will define these variables at a later step in the pipeline UI. 
+   > [!TIP]
+   > When you work in Visual Studio Code and have installed the Azure Pipelines extension, try using the <kbd>Ctrl+Space</kbd> key combination. It shows a context menu of suggested elements to add at your current cursor position. 
 
-```YAML
-inputs:
-  azureSubscription: $(serviceConnection)
-  scriptType: 'bash'
-  scriptLocation: 'inlineScript'
-  inlineScript: 'az deployment group create --resource-group $(resourcegroup) --template-file deploy/main.bicep -n $(Build.BuildId) -p environmentType=$(environment)'
-```
+1. Save the changes to the file.
 
-> [!Note]
-> Notice that in the task we also add the extra system variable Build.BuildId for the name of the deployment. 
+1. In the Visual Studio Code **Terminal**, stage your changes, commit them to your repository, and push them Azure Repos:
 
-TODO mention the az bicep upgrade thing
+   ```bash
+   git add .
+   git commit -m 'Add Azure CLI task to pipeline'
+   git push
+   ```
 
-1. Your resulting YAML file should look like this: 
+## Add pipeline variables
 
-```YAML
-trigger: none
+1. In your browser, select **Pipelines**. Select your pipeline.
 
-pool:
-  vmImage: ubuntu-latest
+1. Select the **Edit** button to configure your pipeline.
 
-jobs:
-- job: 
-  steps:
-  - task: AzureCLI@2
-    inputs:
-      azureSubscription: $(serviceConnection)
-      scriptType: 'bash'
-      scriptLocation: 'inlineScript'
-      inlineScript: 'az deployment group create --resource-group $(resourcegroup) --template-file deploy/main.bicep -n $(Build.BuildId) -p environmentType=$(environment)'
-```
+1. Select the **Variables** button to manage your pipeline's variables.
 
-1. Save your YAML pipeline file.
-1. Add your changes, commit and push them to your repository. 
+1. Select the **New variable** button.
 
-```cmd
-git add -A
-git commit -m 'Added Azure CLI task'
-git push
-```
+1. In **Name**, enter _ServiceConnectionName_. In **Value**, enter _ToyWebsite_.
 
-1. Go back to your project in Azure DevOps in the browser and navigate to `Pipelines`. 
+   Leave the checkboxes unchecked, and select **OK**.
 
-<TODO: Insert image>
+1. Follow the same process to create a variable named **ResourceGroupName**, with a value of _ToyWebsite_.
 
-1. Select your pipeline.
+1. Follow the process one more time to create a variable named **Environment**, with a value of _Test_. For this variable, check the box titled **Let users override this value when running this pipeline**.
 
-<TODO: Insert image>
-
-1. Click the `Edit` button. 
-
-<TODO: Insert image>
-
-1. On the top right, click the `Variables` button. 
-
-<TODO: Insert image>
-
-1. Click the `+` button. 
-
-<TODO: Insert image>
-
-1. Fill out `serviceConnection` for the `Name` and `Toywebsite` for the `Value`. 
-
-<TODO: Insert image>
-
-1. Click the `Ok` button.
-
-<TODO: Insert image>
-
-1. In the same way create the `resourcegroup` variable with a value of `ToyWebsite`.
-
-<TODO: Insert image>
-
-1. Also create an `environment` variable with a value of `Test`. For this variable check the checkbox to `Let users override this value when running this pipeline`.
-
-<TODO: Insert image>
-
-1. When you created all 3 variables, click the `Save` button.
-
-<TODO: Insert image>
-
+1. After you've created all three variables, select **Save**.
 
 ## Run your pipeline
 
-1. Now that you created your variables and while you are still on the pipeline edit screen in Azure Devops, on the top right, click the `Run pipeline` button.
+Now you're ready to run your pipeline!
 
-<TODO: Insert image>
+1. Select **Run**.
 
-1. In the Run pipeline flyout, expand the variables.
+   The **Run pipeline** panel appears. You can use this panel to configure settings for this specific run of the pipeline.
 
-<TODO: Insert image>
+1. Select **Variables**, and then select the **EnvironmentType** variable.
 
-1. Select the `environment` variable.
+1. Change the value to _Production_.
 
-<TODO: Insert image>
+1. Select **Update**.
 
-1. Give it a new value of `Production`. 
+1. Select the back arrow.
 
-<TODO: Insert image>
+1. Select **Run** to start a new pipeline run.
 
-1. Click the `Update` button.
+1. Select **Job** to monitor the job as it runs. It might take a few minutes for the pipeline to start, and once it's started, it might take a few minutes for your deployment to complete.
 
-<TODO: Insert image>
+1. Select **fx 3 queue time variables used**.
 
-1. Click the `<-` back arrow.
+   This shows the values that are used for each variable for this pipeline run. Notice that the `ResourceGroupName` and `ServiceConnectionNam` variables are the values that you set for the pipeline variables, and the `EnvironmentType` variable's value is _Production_ since you overrode it for this pipeline run.
 
-<TODO: Insert image>
+1. Inspect the rest of your pipeline output.
 
-1. Click the `Run` button to start a new pipeline run.
+   The pipeline shows a successful deployment.
 
-<TODO: Insert image>
+## Verify the deployment
 
-1. Click on the `Job` to see its details. 
+1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-<TODO: Insert image>
+1. On the left-side panel, select **Resource groups**.
 
-1. On the `Job`, click open the `fx 3 queue time variables used`. This should show the 2 values for resourcegroup and serviceConnection as your set them up in the overall variable definitions. For environment it will show Production as you indicated this value for this specific run. 
+1. Select **ToyWebsite**.
 
-<TODO: Insert image>
+1. In **Overview**, you can see that one deployment succeeded.
 
-1. Also inspect the rest of your pipeline output. This should succeed. 
+1. Select **1 Succeeded** to see the details of the deployment.
 
-<TODO: Insert image>
+1. Select the deployment to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's an App Service plan and app, and an Application Insights instance.
 
-1. Navigate to the resource group you created in the Azure portal and verify that your resources got deployed.
-
-<TODO: Insert image>
-
-1. Select the App Service Plan in the resource group.
-
-<TODO: Insert image>
-
-1.  Since you deployed the Production environmentType of the Bicep template, this will be a Standard 1 plan running 2 instances. 
-
-<TODO: Insert image>
-
-1. Navigate back to your resource group in the Azure portal. 
-
-<TODO: Insert image>
-
-1. Select the `Deployments` menu. You will notice that a new deployment was added, with as name your build ID.
-
-<TODO: Insert image>
-
+1. Leave the page open in your browser. You'll check on deployments again later.
