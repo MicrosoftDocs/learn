@@ -15,7 +15,7 @@ In this exercise, you'll:
 
 1. Add the following trigger definition in its place:
 
-   :::code language="yaml" source="code/6-pipeline.bicep" range="1-4" :::
+   :::code language="yaml" source="code/6-pipeline.yaml" range="1-4" :::
 
 1. Save the changes to the file.
 

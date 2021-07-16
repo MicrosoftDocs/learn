@@ -102,7 +102,7 @@ Now you're ready to run your pipeline!
 
 1. Select **Job** to monitor the job as it runs. It might take a few minutes for the pipeline to start, and once it's started, it might take a few minutes for your deployment to complete.
 
-1. Select **fx 3 queue time variables used**.
+1. Select **fx 3 queue time variables used**. <!-- TODO can we use a webfont here? -->
 
    This shows the values that are used for each variable for this pipeline run. Notice that the `ResourceGroupName` and `ServiceConnectionNam` variables are the values that you set for the pipeline variables, and the `EnvironmentType` variable's value is _Production_ since you overrode it for this pipeline run.
 
