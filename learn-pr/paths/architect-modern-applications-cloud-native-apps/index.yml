@@ -1,25 +1,25 @@
 ### YamlMime:LearningPath
 uid: learn.azure.cna-architect-modern-apps
 metadata:
-  title: Architect modern applications with Cloud Native Apps 
-  description: Cloud-native apps represent a modern approach to app development, where software systems are designed with cloud technologies in mind. Cloud-native apps make the end-to-end process of building an application easier, with a focus on architectural modularity, rather than monolithic, all-in-one applications. You can utilize the technologies that suit your skillset and situation, without being locked into technology choices.
+  title: Create cloud native apps with Azure and open-source software
+  description: Cloud-native apps represent a modern approach to app development, where software systems are designed with cloud scale and capabilities in mind. Cloud-native apps build on open source technologies where feasible, with a focus on architectural modularity.
   ms.date: 06/30/2021
   author: jasallen
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Architect modern applications with Cloud Native Apps
+title: Create cloud native apps with Azure and open-source software
 summary: |
-  Cloud-native apps represent a modern approach to app development, where software systems are designed with cloud technologies in mind. Cloud-native apps make the end-to-end process of building an application easier, with a focus on architectural modularity, rather than monolithic, all-in-one applications. You can utilize the technologies that suit your skillset and situation, without being locked into technology choices.
+  Cloud-native apps represent a modern approach to app development, where software systems are designed with cloud scale and capabilities in mind. Cloud-native apps build on open source technologies where feasible, with a focus on architectural modularity. In focusing on open technologies, "Cloud Native", means flexibility in terms of deployment, while still being able to leverage Azure-specific services like CosmosDb and Azure Active Directory.
 
-  This learning path covers the essentials of selecting components for cloud-native apps, and how to tie them all together for a modern, modular approach to building applications. Cloud-native apps different from more traditional approaches to building software such as microservices because while you'll use Open-Source Software (OSS) like Docker and Node.js, you can turn to proprietary offerings like Azure Kubernetes Service and Cosmos DB when the benefit is overwhelming.
+  This learning path covers the essentials of selecting components for cloud-native apps, and how to tie them all together.
 
   You'll create multiple services, processing both large scale of messages from devices and streaming data from IoT devices.
 
 prerequisites: None
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
-- beginner
+- intermediate
 roles:
 - administrator
 - developer
