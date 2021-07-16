@@ -7,7 +7,7 @@ In a pipeline statement, _filtering left_ means filtering for the results you wa
 Consider the following statement:
 
 ```powershell
-Get-Process | Select-Object Name | Where-Object Name -eq name-of-process
+Get-Process | Select-Object Name | Where-Object Name -eq 'name-of-process'
 ```
 
 This statement first retrieves all of the processes on the machine. It ends up formatting the response so that only the `Name` property is listed. This statement doesn't follow the _filtering left_ principle, because it operates on all the processes, attempts to format the response, and then filters at the end.
@@ -28,7 +28,9 @@ In this version, the parameter `-Name` does the filtering for you.
 
 ## Formatting right, formatting as the last thing you do
 
-Whereas _filtering left_ means to filter something as _early_ as possible in a statement, _formatting right_ means to format something as _late_ as possible in the statement. Ok, but why do I need to format late? The answer is because the formatting destroys the object you are dealing with. Take the following call for example:
+Whereas _filtering left_ means to filter something as _early_ as possible in a statement, _formatting right_ means to format something as _late_ as possible in the statement. Ok, but why do I need to format late? The answer is because format commands alters the object to a format object. What that means is your data is no longer found in the same properties and methods. This alteration will impact your ability to pipe commands and using `Select-Object`, looping through with `foreach` and more.
+
+ the formatting destroys the object you are dealing with. Take the following call for example:
 
 ```powershell
 Get-Process 'some process' | Select-Object Name, CPU | Get-Member
@@ -40,7 +42,7 @@ The type you get back is `System.Diagnostics.Process`. Now, add a formatter like
 Get-Process 'some process' | Format-Table Name,CPU | Get-Member
 ```
 
-If you only focus on the types you get back, you see you are getting back something completely different:
+If you only focus on the types you get back, you see you are getting back something different:
 
 ```output
 TypeName: Microsoft.PowerShell.Commands.Internal.Format.FormatStartData
@@ -83,7 +85,7 @@ Name CPU
 ---- ---
 ```
 
-It's completely empty, because `Format-Table` _destroyed_ your data, or rather it's moved into other columns, named differently. Formatting commands is supposed to be the last thing you do because they are meant for formatting things nicely for screen presentation, not for you to keep massaging via commands like `Select-Object` for example.
+It's empty, because `Format-Table` transformed your object to place said data into other properties. Your data isn't gone, only your properties, and PowerShell above makes an honest attempt of resolving non existing properties. Formatting commands is supposed to be the last thing you do because they are meant for formatting things nicely for screen presentation, not for you to keep massaging via commands like `Select-Object` for example.
 
 ### Formatting commands
 

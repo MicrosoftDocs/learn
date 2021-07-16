@@ -2,7 +2,13 @@ Running a command can be powerful, you get data from either your local machine o
 
 ## Use Get-Member to inspect output
 
-When you run `Get-Member` on a command, it returns back with the type of object, and properties and methods the returned object consist of. Let's demonstrate this fact by running `Get-Member` on the command `Get-Process`.
+When you pass the results of a command to `Get-Member`, `Get-Member` returns information about the object, information like:
+
+- The type of object being passed to Get-Member.
+- The Properties of the object that may be evaluated.
+- The Methods of the object that may be executed.
+
+Let's demonstrate this fact by running `Get-Member` on the command `Get-Process`.
 
 ```powershell
 Get-Process zsh | Get-Member
@@ -29,7 +35,13 @@ Above you are shown both the type of object the `Get-Process` returns, i.e `Syst
 
 ## Select-Object
 
-When you run a command and get an output, you are not shown the full truth. What you are shown is a subset of everything that's possible to show as indicated by the below response from running `Get-Process` on the process `zsh`:
+By default, when you run a command that is going to output to the screen, Powershell automatically adds the command `Out-Default`. If this is not just a collection of strings, but objects - PowerShell looks at the object type to determine if there is a registered view for that object type, if so, it uses that view.
+
+The view generally doesn't contain all the properties of an object because it wouldn't display properly on screen, so only some of the most common properties are selected in the view.
+
+You can override the default view by using `Select-Object` and choosing your own list of properties. you can then send those properties to `Format-Table` or `Format-List`, to display the table however you like...
+
+Consider the result of running `Get-Process` on the process `zsh`:
 
 ```output
  NPM(K)    PM(M)      WS(M)     CPU(s)      Id  SI ProcessName
@@ -44,14 +56,14 @@ When you run a command and get an output, you are not shown the full truth. What
       0     0.00       1.16       0.31   68298 …98 zsh
 ```
 
-The way to show something different than the above response is by specifying what properties you want to see.
+What you are seeing is a view that represents what you most likely want to see from this command, that does not mean that's all the information there is. The way to show something different than the above response is by explicitly specifying what properties you want to see.
 
 ### Getting the full response
 
-What you've seen so far is a limited response. To present the full response, you use `Select-Object` and asks for all the properties `*`, like so:
+What you've seen so far is a limited response. To present the full response, you use a wildcard `*`, like so:
 
 ```powershell
-Get-Process zsh | Select-Object -Property *
+Get-Process zsh | Format-List -Property *
 ```
 
 This character `*`, shows you every single attribute and their value and you can start investigating what values you are interested in. You likely don't want this massive response but you may not be content with the default response either.
@@ -72,7 +84,7 @@ Let's quickly recap on the default response, with this subset:
       0     0.00       0.01       0.38     644 620 zsh
 ```
 
-From the default response, the properties `Id` and `ProcessName` are most likely called the same, but CPU(s) is a presentational name, real property names tend to consist of only text characters and no spaces. To find out the real name for said property, you can use `Get-Member` to find out:
+From the default response, the properties `Id` and `ProcessName` are most likely called the same, but CPU(s) is a presentation name, real property names tend to consist of only text characters and no spaces. To find out the real name for said property, you can use `Get-Member` to find out:
 
 ```powershell
 Get-Process zsh | Get-Member -Name C*
@@ -140,5 +152,5 @@ Additionally to sorting by column name, you can also provide your own custom exp
 Get-Process 'some process' | Sort-Object -Property @{Expression = "Name"; Descending = $True}, @{Expression = "CPU"; Descending = $False}
 ```
 
-In the above example, you sort by columns `Name` and `CPU` and you're able to control sort order for each column. This topic is a bit advanced and out of scope for this module, but will be revisited in more advanced modules. It's good to see though that `Sort-Object` is powerful and quite flexible.
+In the above example, you sort by columns `Name` and `CPU` and you're able to control sort order for each column. This topic is a bit advanced and out of scope for this module, but will be revisited in more advanced modules. It's good to see though that `Sort-Object` is powerful and flexible.
 
