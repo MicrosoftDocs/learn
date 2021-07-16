@@ -3,7 +3,7 @@ Testing can be a powerful tool to improve the quality, architecture, and overall
 - **Validating code changes and quality**. Software grows over time when changes in requirements lead to more features or altered behavior. To ensure you still have working software with all these changes, you need tests to validate and to maintain quality.
 - **Industry examples**. There are many large pieces of software out there like compilers or tools like Visual Studio that run many tests and test scenarios. To ensure reliability, running and maintaining tests is crucial.
 - **Testing effects on architecture**. Testing is an important forcing function on architecture. It makes you consider things such as duplication or whether a piece of code can be tested with its current architecture.
-- **Code coverage and code health**. Many programs run business critical scenarios. By looking at code coverage, you have a sense of how well parts of your code are covered by testing. You want a good coverage on the most important scenarios.
+- **Code coverage and code health**. Many programs run business critical scenarios. By looking at code coverage, you have a sense of how well parts of your code are covered by testing. You want good coverage on the most important scenarios.
 
 ## Validating code changes and quality
 

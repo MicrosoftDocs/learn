@@ -1,9 +1,9 @@
 There is much guidance out there when it comes to testing. We'll cover some of the common schools of thought that experienced developers often recommend. Learning these acronyms will help you keep up with popular concepts.
 
-* **Test Driven Development (TDD)** Let tests be the driving force behind your day-to-day coding.
-* **Behavior Driven Development (BDD)** Use behavior specification to formulate your tests.
-* **DRY (Don't Repeat Yourself)** Avoid any kind of code repetition and opt for reusable code instead.
-* **Choose what works best for you!** These are just guidelines anyway! Each team and developer should choose what makes them the most productive.
+* **Test Driven Development (TDD)**: Let tests be the driving force behind your day-to-day coding.
+* **Behavior Driven Development (BDD)**: Use behavior specification to formulate your tests.
+* **DRY (Don't Repeat Yourself)**: Avoid any kind of code repetition and opt for reusable code instead.
+* **Choose what works best for you!**: These are just guidelines anyway! Each team and developer should choose what makes them the most productive.
 
 ## Test Driven Development (TDD)
 
@@ -20,7 +20,7 @@ There is a type of TDD called Red/Green/Refactor that gives further order to thi
 
 Behavior driven development (or BDD) is very similar to TDD, but with greater focus on using acceptance tests to guide development at a high level. You may work with your customers, business partners, or program managers to define a set of tests that list the needed criteria for the product. These tests are usually much higher-level descriptions of functionality than unit tests and are more business-oriented.
 
-BDD can use many different tools, but they all tend to focus on documenting different stages of expectations for the functionality such as the comments do in the test below. They also likely list the scope of what is expected, for example, in this simple example the comments specify that this app is only expected to add two numbers.
+BDD can use many different tools, but they all tend to focus on documenting different stages of expectations for the functionality such as the comments do in the test below. They also likely list the scope of what is expected. In the basic example pictured below, the comments specify that this app is only expected to add two numbers.
 :::image type="content" source="../media/test-bdd.png" alt-text="An empty test method in Visual Studio with several comments describing business needs of the app's calculator function.":::
 
 ## DRY (Don't Repeat Yourself)
