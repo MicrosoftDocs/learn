@@ -1,4 +1,4 @@
-This modules is an introduction into the F# programming language.
+This module is an introduction into the F# programming language.
 
 ## Learning objectives
 
