@@ -16,7 +16,8 @@ It's possible to choose which Subscriptions and Resource Groups you want to rece
 
 Under  the **Rules** option, it is possible to configure the average CPU utilization rule for the low usage virtual machine recommendation. The CPU utilization rule can be set to 5%, 10%, 15%, or 20%.
 
->[!Note] To adjust the average CPU utilization rule for identifying low usage virtual machines, you must be a subscription Owner. If you do not have the required permissions for a subscription or resource group, the option to include or exclude it will be disabled in the user interface.
+> [!Note]
+> To adjust the average CPU utilization rule for identifying low usage virtual machines, you must be a subscription Owner. If you do not have the required permissions for a subscription or resource group, the option to include or exclude it will be disabled in the user interface.
 
 ## Download recommendations
 
