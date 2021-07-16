@@ -12,7 +12,7 @@ You are Contoso's lead system engineer and server administrator. You must evalua
 After completing this module, you’ll know more about:
 
 - DSRs for the GDPR and the CCPA.
-- The different types of, and terminology about, DSRs.
+- The different types of, and terminology about DSRs.
 - The processes for responding to DSRs in Azure, Microsoft 365, and Office 365.
 - The processes and tools for responding to DSRs for customer data and system-generated logs.
 
