@@ -15,7 +15,7 @@ If you want to get started testing right away see [Unit testing C# with MSTest a
 
 ## Example scenario
 
-Example: "Suppose you're building a website that allows users to shop your products online and you need to start selling internationally. You've extended the phone numbers in your customer information logic to accept international numbers. You've checked your code with several international numbers and you feel it's ready to push your changes and update your app.
+Suppose you're building a website that allows users to shop your products online and you need to start selling internationally. You've extended the phone numbers in your customer information logic to accept international numbers. You've checked your code with several international numbers and you feel it's ready to push your changes and update your app.
 
 After just a few hours, you've started getting calls from customer service that new numbers in your database have stopped working! It looks like your new behavior caused a bug that broke the way the domestic phone numbers are saved to your database.
 

@@ -1,7 +1,7 @@
 Testing can be a powerful tool to improve the quality, architecture, and overall health of a code base. You'll find many strong examples of the positive impact of testing across the software industry.
 
-- **Validating code changes and quality**. Software grows over time by a change in requirements that leads to more features or altered behavior. To ensure you still have a working software with all these changes, you need tests to validate and to maintain quality.
-- **Industry examples**. There are many large pieces of software out there like compilers or tools like Visual Studio that are large pieces of software running many tests and test scenarios. To ensure reliability, having and supporting tests is crucial.
+- **Validating code changes and quality**. Software grows over time when changes in requirements lead to more features or altered behavior. To ensure you still have working software with all these changes, you need tests to validate and to maintain quality.
+- **Industry examples**. There are many large pieces of software out there like compilers or tools like Visual Studio that run many tests and test scenarios. To ensure reliability, running and maintaining tests is crucial.
 - **Testing effects on architecture**. Testing is an important forcing function on architecture. It makes you consider things such as duplication or whether a piece of code can be tested with its current architecture.
 - **Code coverage and code health**. Many programs run business critical scenarios. By looking at code coverage, you have a sense of how well parts of your code are covered by testing. You want a good coverage on the most important scenarios.
 
@@ -11,9 +11,9 @@ Any successful software tends to grow in functionality and behavior. Sometimes i
 
 Tests not only keep track of the different capabilities of a program, but tests can also continue to check the old functionality didn't break as new code is added. A fundamental purpose of testing is validating that code changes don't break existing functionality and provide a way of ensuring that newly added code will continue to work as expected even with future changes.
 
-![image](../media/test-quality-cycle.png)
+:::image type="content" source="../media/test-quality-cycle.png" alt-text="A circular graphic showing steps. The steps include add new functionality, test, catch bugs, fix bugs, release, get feedback, and repeat.":::
 
-Tests can help catch bugs before you even check in your code changes. It's best practice to run tests before major steps in your development cycle. This final check allows you to improve your code quality so your users don't have to report that something broke in your latest update. It's much nicer to catch bugs while you're still developing the code rather than a when you're in the middle of deploying your app or when the app is in production with customers using it! Catching bugs early in the development cycle saves time and money.
+Tests can help catch bugs before you even check in your code changes. It's best practice to run tests before major steps in your development cycle. This final check allows you to improve your code quality so your users don't have to report that something broke in your latest update. It's much nicer to catch bugs while you're still developing the code rather than when you're in the middle of deploying your app or when the app is in production with customers using it! Catching bugs early in the development cycle saves time and money.
 
 ## Industry examples
 
@@ -27,7 +27,7 @@ Testing can also force some architecture improvement. You can't unit test your c
 
 Code coverage is a metric indicating how much of an app's production code is covered by tests. It indicates if tests actually exercise all the product code, including branching logic, method overloads, and so on. Code coverage can give a basic idea of what areas need more testing. Visual Studio even has tools that can [highlight what lines are covered by tests](https://docs.microsoft.com/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested) and what aren't in your editor.
 
-![image](../media/test-why-code-coverage.png)
+:::image type="content" source="../media/test-why-code-coverage.png" alt-text="Code in the Visual Studio editor showing test coverage via red and blue highlights. Covered code is highlighted in blue and uncovered code is highlighted in red.":::
 
 Tracking the code coverage percentage overtime can give you an idea if the new code being added to your repository has tests. If new code isn't being tested, it *may* be an indication the repository is building up technical debt. While code coverage is useful, it's *not* an ultimate indication of repo health. It should only be one of many factors used to assess the health of a repo. Different code coverage engines can calculate coverage differently and many programs may appear to have low coverage, despite being well tested. For example, heavily testing certain methods that have high use, and ignoring others may actually be the right thing to do for a given repo. We wouldn't encourage every repo to try to achieve 100% code coverage because that isn't a practical investment for many businesses. There's much debate if there's a universal code coverage percentage that repositories should aspire too, but we believe for now the best guidance is to judge on a case-by-case basis and not arbitrarily hold your team to a number without a deeper discussion.
 

@@ -12,20 +12,20 @@ Test driven development, or TDD, is a method of directly coupling testing with e
 For example, in the image below you can see the `AddTest` is written and failing while the `Add` method is still yet to be implemented. This test will fail until the method is implemented.
 :::image type="content" source="../media/test-tdd.png" alt-text="A test method in the Visual Studio editor named AddTest is implemented and failing. The Add method is also visible and throws a NotImplementedException.":::
 
-There is a type of TDD called Red/Green/Refactor that gives further order to this process: (1) Write a failing "red" test (2) Add the necessary product code to make that test pass or turn "green" (3) "refactor" now that you have the correct functionality. This pattern provides an easy guide as you get into a programming flow.
+There is a type of TDD called Red/Green/Refactor that gives further order to this process: (1) Write a failing "red" test (2) Add the necessary product code to make that test pass or turn "green" (3) "Refactor" now that you have the correct functionality. This pattern provides an easy guide as you get into a programming flow.
 
-:::image type="content" source="../media/test-red-green-refactor.png" alt-text="A circular diagram with steps including Red (start with a failing test), Green (write code until it passes), and Refactor (cleanup your implementation).":::
+:::image type="content" source="../media/test-red-green-refactor.png" alt-text="A circular diagram with steps including Red (write a failing test), Green (write code until it passes), and Refactor (cleanup your implementation).":::
 
 ## Behavior Driven Development (BDD)
 
 Behavior driven development (or BDD) is very similar to TDD, but with greater focus on using acceptance tests to guide development at a high level. You may work with your customers, business partners, or program managers to define a set of tests that list the needed criteria for the product. These tests are usually much higher-level descriptions of functionality than unit tests and are more business-oriented.
 
-BDD can use many different tools, but they all tend to focus on documenting different stages of expectations for the functionality such as the comments do in the test below. They also likely list the scope of what is expected, for example, in this simpler example the comments specify that this app is only expected to add two numbers.
+BDD can use many different tools, but they all tend to focus on documenting different stages of expectations for the functionality such as the comments do in the test below. They also likely list the scope of what is expected, for example, in this simple example the comments specify that this app is only expected to add two numbers.
 :::image type="content" source="../media/test-bdd.png" alt-text="An empty test method in Visual Studio with several comments describing business needs of the app's calculator function.":::
 
 ## DRY (Don't Repeat Yourself)
 
-Don't Repeat Yourself, also known as DRY, is another practice also referred to in testing. This is strong guidance to avoid repeating information and logic everywhere you can. You can do this by abstracting the information and remembering to honor one source of truth rather than maintaining multiple copies of the same data. For example, let's say you are writing unit tests for different constructors, but you are reusing many of the parameters for multiple tests. You could choose to write a test helper method that keeps all the parameter inputs in one place so they can more easily be called and modified for all of your tests. This is an example reducing duplication so you Don't Repeat Yourself.
+Don't Repeat Yourself, also known as DRY, is another practice also referred to in testing. This is strong guidance to avoid repeating information and logic everywhere you can. You can do this by abstracting the information and remembering to honor one source of truth rather than maintaining multiple copies of the same logic. For example, let's say you are writing unit tests for different constructors, but you are reusing many of the parameters for multiple tests. You could choose to write a test helper method that keeps all the parameter inputs in one place so they can more easily be called and modified for all of your tests. This is an example reducing duplication so you Don't Repeat Yourself.
 
 ## Choose what works best for you
 

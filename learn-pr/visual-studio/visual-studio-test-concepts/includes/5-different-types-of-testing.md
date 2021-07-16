@@ -5,7 +5,7 @@ Here, we'll go over the testing pyramid and the many types of tests. Knowing how
 * **Integration Tests** Integration tests are the next level up and test more than the smallest testable unit of code and often test how multiple behaviors integrate with each other.
 * **Performance Tests** Performance tests measure how long it takes certain parts of your program to execute.
 * **Load Tests** Load tests stress your app to its limits by mimicking multiple users and processes using your app at once.
-* **Acceptance Tests** Acceptance tests are tests that define business desired outcome and may take on the role of testing if your app has the customer criteria it needs.
+* **Acceptance Tests** Acceptance tests define the business desired outcome and test if your app has the customer criteria it needs.
 * **UI Tests** UI Tests mimic actual users using the app and interacting with the UI as an end customer would in order to complete an action.
 
 ## The Testing pyramid
@@ -16,43 +16,43 @@ The testing pyramid has been popularized over the past several years to explain 
 
 ## Types of Tests
 
-The industry is ever evolving better ways to ensure code quality with tests there are likely many more types of tests not listed here, but these are the major ones. The testing pyramid itself may need to be rewritten or reshaped as better software practices and development technologies evolve how we think and test.
+The industry is ever evolving better ways to ensure code quality with tests. There are likely many more types of tests not listed here, but these are the major ones. The testing pyramid itself may need to be rewritten or reshaped as better software practices and development technologies evolve how we think and test.
 
 ### Unit Tests
 
-:::image type="content" source="../media/test-pyramid-unit.png" alt-text="The testing pyramid with the "unit" layer highlighted at the base of the pyramid.":::
+:::image type="content" source="../media/test-pyramid-unit.png" alt-text="The testing pyramid with the 'unit' layer highlighted at the base of the pyramid.":::
 
 Unit tests are the most basic types of tests and make up the base of the testing pyramid. They should be specific to one method or the smallest testable unit of code. A method can have many unit tests to cover all its functionality given a range of parameters. These are the easiest to write and also the easiest to debug because they should be the simplest way to exercise the piece of code that they test.
 For example, let's say you have a method that parses a postal address from a string of input. Good unit tests for this method would insert many kinds of different postal addresses to make sure they were parsed correctly by the method and matched the expected result. One unit test may insert a postal address from a different country as a string. Another may insert a string that had special characters to make sure it doesn't break your parser. Unit tests should be testing small aspects of the functionality of your app so that, if the test fails, it's easy to determine what functionality failed.
 
 ### Integration Tests
 
-:::image type="content" source="../media/test-pyramid-integration.png" alt-text="The testing pyramid with the integration layer highlighted second from the bottom of the pyramid.":::
+:::image type="content" source="../media/test-pyramid-integration.png" alt-text="The testing pyramid with the 'integration' layer highlighted second from the bottom of the pyramid.":::
 
 Integration tests are the next step up from unit tests in the testing pyramid. They may cover multiple methods or a broader set of behavior than unit tests.
-Going back to our postal address example, an integration test could test both the postal addresser parse and a method for calculating a shipping rate for that location. The two combined help summarize if multiple parts of your app are working together as expected.
+Going back to our postal address example, an integration test could test both the postal address parser and a method for calculating a shipping rate for that location. The two combined help summarize if multiple parts of your app are working together as expected.
 
 ### Performance Tests
 
-:::image type="content" source="../media/test-pyramid-performance.png" alt-text="The testing pyramid with the performance layer highlighted third from the bottom of the pyramid.":::
+:::image type="content" source="../media/test-pyramid-performance.png" alt-text="The testing pyramid with the 'performance' layer highlighted third from the bottom of the pyramid.":::
 
 Performance tests usually capture the time it takes certain parts of your program to execute. Performance tests are a great way to catch a code change that slows down your app. You can set timers at the beginning of tests that only complete when the test is finished executing and report a test failure if the timer was above a certain threshold.
 
 ### Load Tests
 
-:::image type="content" source="../media/test-pyramid-load.png" alt-text="The testing pyramid with the load layer highlighted fourth from the bottom and third from the top of the pyramid..":::
+:::image type="content" source="../media/test-pyramid-load.png" alt-text="The testing pyramid with the 'load' layer highlighted fourth from the bottom and third from the top of the pyramid..":::
 
 Load tests can be similar to performance testing, but focuses more on using your app at scale. How does the app hold up with 1000 users are using it? 10,000 users? Load tests help determine if your app is slowing down or throwing exceptions when under stress.
 
 ### Acceptance Tests
 
-:::image type="content" source="../media/test-pyramid-acceptance.png" alt-text="The testing pyramid with the acceptance layer highlighted second from the top of the pyramid.":::
+:::image type="content" source="../media/test-pyramid-acceptance.png" alt-text="The testing pyramid with the 'acceptance' layer highlighted second from the top of the pyramid.":::
 
-Acceptance tests can be tests that guide the business desired outcome. If your customer gave you a list of criteria for the app, you can write acceptance tests that only pass once all of those criteria are met. Acceptance tests are another way of integrating your spec with your code.
+Acceptance tests can guide towards the business desired outcome. If your customer gave you a list of criteria for the app, you can write acceptance tests that only pass once all of those criteria are met. Acceptance tests are another way of integrating your spec with your code.
 
 ### UI Tests
 
-:::image type="content" source="../media/test-pyramid-ui.png" alt-text="The testing pyramid with the UI layer highlighted at the top of the pyramid.":::
+:::image type="content" source="../media/test-pyramid-ui.png" alt-text="The testing pyramid with the 'UI' layer highlighted at the top of the pyramid.":::
 
 UI tests can directly test the UI interactions of an app. This is meant to mimic an actual user clicking and interacting with your app and testing if the UI response is correct. UI tests are at the top of the testing pyramid. There are many frameworks that can automate UI interactions. For example, [Playwright](https://playwright.dev/dotnet/docs/why-playwright) can automate the browser to mimic a user using your website.
 

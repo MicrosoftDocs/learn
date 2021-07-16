@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "Integration"
       isCorrect: false
-      explanation: "Close! Integration tests are likely the second most common type of test as it is one step up from testing individual functions."
+      explanation: "Close! Integration tests are likely the second most common type of test as they are one step up from testing individual functions."
     - content: "UI"
       isCorrect: false
       explanation: "UI tests are often less common because they've historically been more expensive to maintain, run, and write."
