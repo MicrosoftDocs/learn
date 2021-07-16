@@ -30,10 +30,9 @@ In the code above, the product code is the `Calculator` class and its `Add()` me
 Here's how this test would appear in Visual Studio:
 :::image type="content" source="../media/test-intro-TestMethod.png" alt-text="Test method in Visual Studio editor.":::
 
-One difference between tests and product code is they don't run as part of your app's normal function. So instead of using F5 (or the large green run button at the top of your development environment) to run as you would your app, you choose which tests to run either via a Test Explorer or many other helpful editor tools.
+One difference between tests and product code is they don't run as part of your app's normal function. So instead of using F5 (or the large green run button at the top of your development environment) to run as you would your app, you choose which tests to run either via a Test Explorer or many other helpful editor tools. You can think of tests as scaffolding. Tests are there for support, but are not shipped with the app and because of this, they are run independently like there own app.
 
-:::image type="content" source="../media/test-intro-runtests.png" alt-text="Run or debug tests from the Visual Studio editor.":::
-:::image type="content" source="../media/test-intro-runtests-testexplorer.png" alt-text="Run tests from the Test Explorer in Visual Studio.":::
+:::image type="content" source="../media/test-intro-runtests-collage.png" alt-text="Run or debug tests from the Visual Studio Test Explorer or Editor.":::
 
 ## How can tests help prevent regressions in functionality?
 
