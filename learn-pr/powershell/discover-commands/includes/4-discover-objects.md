@@ -5,7 +5,7 @@ When a cmdlet runs, it returns an object. When you invoke a cmdlet, the response
 The `Get-Member` cmdlet is meant to be _piped_ on top of the command you run so that you can filter the output. A typical command-line invocation of `Get-Member` might look like the following example:
 
 ```bash
-Get-Process -Name <name-of-process> | Get-Member
+Get-Process -Name 'name-of-process' | Get-Member
 ```
 
 This command first produces an object result by calling `Get-Process`. That result is passed as an input to `Get-Member` by using the pipe (`|`). In return, you get a table result that includes the `Name`, `MemberType`, and `Definition` columns. You also get the type of the returned object.
