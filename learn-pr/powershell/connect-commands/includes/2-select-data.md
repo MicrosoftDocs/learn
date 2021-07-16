@@ -35,7 +35,7 @@ Above you are shown both the type of object the `Get-Process` returns, i.e `Syst
 
 ## Select-Object
 
-By default, when you run a command that is going to output to the screen, Powershell automatically adds the command `Out-Default`. If this is not just a collection of strings, but objects - PowerShell looks at the object type to determine if there is a registered view for that object type, if so, it uses that view.
+By default, when you run a command that is going to output to the screen, PowerShell automatically adds the command `Out-Default`. If the data is not just a collection of strings, but objects - PowerShell looks at the object type to determine if there is a registered view for that object type, if so, it uses that view.
 
 The view generally doesn't contain all the properties of an object because it wouldn't display properly on screen, so only some of the most common properties are selected in the view.
 

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.powershell.connect-commands.2-selecting-data
+uid: learn.powershell.connect-commands.2-select-data
 title: Selecting data
 metadata:
   title: Selecting data
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/2-selecting-data.md)]
+  [!include[](includes/2-select-data.md)]
