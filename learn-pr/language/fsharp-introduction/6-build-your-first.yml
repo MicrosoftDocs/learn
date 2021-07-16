@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.fsharp-introduction.build-your-first
-title: Build your first F# application
+title: Exercise - Build your first F# application
 metadata:
   unitType: exercise
-  title: "Build your first F# application" # user input: module title for browser tab and search results
-  description: "Use the .NET CLI to create an F# console application" # user input: a description for site search and SEO
+  title: "Exercise - Build your first F# application"
+  description: "Use the .NET CLI to create an F# console application"
   ms.date: 07/16/2021
   author: luisquintanilla
   ms.author: luquinta
-  ms.topic: interactive-tutorial # do we need ms.topic?
-durationInMinutes: 1 # user input: the estimate time to complete the unit
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
 content: |
   [!include[](includes/6-build-your-first.md)]

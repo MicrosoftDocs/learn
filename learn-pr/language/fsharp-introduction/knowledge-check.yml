@@ -3,7 +3,7 @@ uid: learn.fsharp-introduction.knowledge-check
 title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
 metadata:
   unitType: knowledge_check
-  title: "F# Knowledge Check" # user input: module title for browser tab and search results
+  title: "Knowledge check" # user input: module title for browser tab and search results
   description: "Review your knowledge of F#" # user input: a description for site search and SEO
   ms.date: 07/16/2021
   author: luisquintanilla
@@ -75,11 +75,11 @@ quiz:
   - content: "What is F# Interactive?"
     choices:
     - content: "A notebook computing environment for F#"
-      isCorrect: true
-      explanation: ".NET has a notebook computing environment (.NET Interactive) where you can run F#, C#, and other languages, it's not the same as F# Interactive."
-    - content: "F# Interactive is a programming environment to run F# code interactively at the console, or to execute F# scripts."
       isCorrect: false
-      explanation: ""
+      explanation: ".NET has a notebook computing environment (.NET Interactive) where you can run F#, C#, and other languages, it's not the same as F# Interactive."
+    - content: "A programming environment to run F# code interactively at the console, or to execute F# scripts"
+      isCorrect: true
+      explanation: "Correct! In F# Interactive, you can use the REPL directly or write your code in script with the .fsx file extension."
     - content: "A video game"
       isCorrect: false
       explanation: "Although building applications with F# interactive can be a lot of fun, it's not a video game."

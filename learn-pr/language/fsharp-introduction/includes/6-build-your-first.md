@@ -5,9 +5,9 @@ Build your first F# console application
 1. Open the terminal
 1. In the terminal, enter the following .NET CLI command
 
-```dotnetcli
-dotnet new console -o MyFSharpApp -lang F#
-```
+    ```dotnetcli
+    dotnet new console -o MyFSharpApp -lang F#
+    ```
 
 The `dotnet new console` command uses .NET Templates to scaffold a new console application.
 

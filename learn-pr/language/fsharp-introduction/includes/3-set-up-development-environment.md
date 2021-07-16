@@ -31,4 +31,4 @@ Visual Studio Code is an free, open-source, and cross-platform text editor that 
 1. In the Extensions view, search for "Ionide-fsharp".
 1. Select **Install**.
 
-:::image type="content" source="../media/install-ionide.png" alt-text="Install F# Ionide Extension in VS Code":::
+:::image type="content" source="../media/install-ionide.png" alt-text="Screenshot of Visual Studio Code extensions view displaying F# Ionide extension install page.":::
