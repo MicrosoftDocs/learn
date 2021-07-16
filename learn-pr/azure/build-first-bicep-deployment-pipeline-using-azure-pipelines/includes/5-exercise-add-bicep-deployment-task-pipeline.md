@@ -1,4 +1,4 @@
-Now that you have a basic basic pipeline, you want to use it to deploy your Bicep file to Azure.
+Now that you have a basic pipeline, you want to use it to deploy your website's Bicep file to Azure.
 
 In this exercise, you'll:
 
@@ -11,153 +11,214 @@ In this exercise, you'll:
 > * Execute your pipeline.
 > * Verify that the pipeline runs successfully.
 
-In this exercise will use the [Azure Pipelines extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines). Be sure to install this extension in Visual Studio Code.
+This exercise requires that you have permission to create applications and service principals in your Azure Active Directory (Azure AD) directory. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
 
+## Sign in to Azure
 
-## Add your bicep template to the repository
+::: zone pivot="cli"
 
-1. Once the project has opened, you will see your azure-pipelines.yml file and the README.md file in the file tree. Add a new folder in the root of the file tree and call it `deploy`. In the deploy folder create a new `main.bicep` file.
+To work with service principals in Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli) tools.
 
-<TODO: Insert image>
+1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
 
-1. Copy paste the following bicep code in the main.bicep file:
+1. If the dropdown control at the right displays **bash**, you have the right shell to work from, and you can skip to the next section.
 
-(https://review.docs.microsoft.com/en-us/learn/modules/authenticate-azure-deployment-pipeline-service-principals/6-exercise-authorize-service-principal-deployments?branch=pr-en-us-18385&pivots=cli)
+    :::image type="content" source="../../includes/media/bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with bash displayed in the dropdown control." border="true":::
 
-```bicep
-@description('The Azure region into which the resources should be deployed.')
-param location string = resourceGroup().location
+    If **bash** isn't displayed, select the dropdown control, choose **Select Default Shell**, and then select **bash**.
 
-@description('The name of the App Service app.')
-param appServiceAppName string = 'toywebsite${uniqueString(resourceGroup().id)}'
+    :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window, displaying the dropdown list for selecting a preferred terminal shell." border="true":::
 
-@description('The name of the App Service plan SKU.')
-param appServicePlanSkuName string = 'F1'
+1. Select the plus sign (**+**) in the terminal to create a new terminal with Bash as the shell.
 
-var appServicePlanName = 'toy-website-plan'
-var applicationInsightsInstanceName = 'toy-website-insights'
+[!INCLUDE [Upgrade Azure CLI](../../includes/azure-template-bicep-exercise-upgrade-cli.md)]
 
-resource appServicePlan 'Microsoft.Web/serverFarms@2020-06-01' = {
-  name: appServicePlanName
-  location: location
-  sku: {
-    name: appServicePlanSkuName
-  }
-}
+### Sign in to Azure by using the Azure CLI
 
-resource applicationInsightsInstance 'Microsoft.Insights/components@2018-05-01-preview' = {
-  name: applicationInsightsInstanceName
-  location: location
-  kind: 'web'
-  properties: {
-    Application_Type: 'web'
-  }
-}
+1. In the Visual Studio Code terminal, sign in to Azure by running the following command: 
 
-resource appServiceApp 'Microsoft.Web/sites@2020-06-01' = {
-  name: appServiceAppName
-  location: location
-  properties: {
-    serverFarmId: appServicePlan.id
-    httpsOnly: true
-    siteConfig: {
-      appSettings: [
-        {
-          name: 'APPINSIGHTS_INSTRUMENTATIONKEY'
-          value: applicationInsightsInstance.properties.InstrumentationKey
-        }
-        {
-          name: 'APPLICATIONINSIGHTS_CONNECTION_STRING'
-          value: applicationInsightsInstance.properties.ConnectionString
-        }
-      ]
-    }
-  }
-}
+    ```azurecli
+    az login
+    ```
+
+1. In the browser that opens, sign in to your Azure account.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+To deploy this template to Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps), and sign in to the same account that activated the sandbox.
+
+1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
+
+1. If the dropdown control at the right displays **pwsh** or **PowerShell**, you have the right shell to work from, and you can skip to the next section.
+
+    :::image type="content" source="../../includes/media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with 'pwsh' displayed in the dropdown control." border="true":::
+
+   If **pwsh** or **PowerShell** isn't displayed, select the dropdown control, choose **Select Default Shell**, and then select **pwsh** or **PowerShell**.   
+
+    :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window, displaying the dropdown list for selecting your preferred terminal shell." border="true":::
+
+1. Select the plus sign (**+**) in the terminal to create a new terminal with **pwsh** or **PowerShell** as the shell.
+
+[!INCLUDE [Upgrade Azure PowerShell](../../includes/azure-template-bicep-exercise-upgrade-powershell.md)]
+
+### Sign in to Azure by using Azure PowerShell
+
+1. In the Visual Studio Code terminal, sign in to Azure by running the following command:
+
+    ```azurepowershell
+    Connect-AzAccount
+    ```
+
+1. In the browser that opens, sign in to your Azure account.
+
+::: zone-end
+
+## Create a resource group in Azure
+
+::: zone pivot="cli"
+
+Run this Azure CLI command in the Visual Studio Code terminal to create a new resource group:
+
+```azurecli
+az group create --name ToyWebsite --location westus
 ```
 
-1.  Save the file. 
-1.  In the Visual Studio Code `Terminal` window, add the changes, commit the changes and push the changes to your repository. 
+::: zone-end
 
-```cmd
-git add -A
-git commit -m 'Added bicep file'
-git push
+::: zone pivot="powershell"
+
+Run this Azure PowerShell commands in the Visual Studio Code terminal to create a resource group:
+
+```azurepowershell
+New-AzResourceGroup -Name ToyWebsite -Location westus
 ```
 
-1.  Switch back to Azure DevOps `Repos`. The _main.bicep_ file in the _deploy_ directory should be present. If not, try refreshing the page. 
+::: zone-end
 
+## Create a service principal and grant it access to the resource group
 
-##  Create a resource group in Azure
+::: zone pivot="cli"
 
-TODO, reuse content from https://review.docs.microsoft.com/en-us/learn/modules/authenticate-azure-deployment-pipeline-service-principals/?branch=pr-en-us-18385 ? 
+1. Run this Azure CLI command in the Visual Studio Code terminal to create a service principal:
 
+   ```azurecli
+   az ad sp create-for-rbac \
+     --name ToyWebsitePipeline \
+     --role Contributor \
+     --scopes TODO-RGID
+   ```
 
-##  Create a service principal and grant it access to the resource group
+1. Look at the JSON output from the previous command. It includes the following properties:
+ 
+   - `appId`: The service principal's application ID.
+   - `password`: The service principal's key.
+   - `tenant`: Your Azure AD tenant ID.
 
-TODO, reuse content from https://review.docs.microsoft.com/en-us/learn/modules/authenticate-azure-deployment-pipeline-service-principals/?branch=pr-en-us-18385 ? 
+   TODO need sub ID and sub name
 
-##  Create a service connection and refer to it in the task
+   Copy these values somewhere safe. You'll use them soon. 
 
-With the resource group and service principal created, you will now use the details of the service principal to create a service connection. 
+::: zone-end
 
-1. Open your project in `dev.azure.com`. 
+::: zone pivot="powershell"
 
-<TODO: Insert image>
+1. Run these Azure PowerShell commands in the Visual Studio Code terminal to create a service principal:
 
-1. Navigate to `Project settings` in the bottom left.
+   ```azurepowershell
+   $servicePrincipal = New-AzADServicePrincipal `
+     -DisplayName ToyWebsitePipeline `
+     -Role Contributor `
+     -Scope TODO-RGID
 
-<TODO: Insert image>
+   $plaintextSecret = [System.Net.NetworkCredential]::new('', $servicePrincipal.Secret).Password
+   ```
 
-1. Select `Service connections`
+1. Run the following command to show the service principal's application ID, the key, and your Azure AD tenant ID:
 
-<TODO: Insert image>
+   ```azurepowershell
+   Write-Output "Service principal application ID: $($servicePrincipal.ApplicationId)"
+   Write-Output "Service principal key: $($plaintextSecret)"
+   Write-Output "Azure subscription ID: $((Get-AzContext).Subscription.Id)"
+   Write-Output "Azure subscription name: $((Get-AzContext).Subscription.Name)"
+   Write-Output "Azure AD tenant ID: $((Get-AzContext).Tenant.Id)"
+   ```
 
-1. Click on the `New service connection` button.
+   Copy the values somewhere safe. You'll use them soon.
 
-<TODO: Insert image>
+::: zone-end
 
-1. Choose `Azure Resource Manager` from the list and click `Next`.
+## Create a service connection in Azure Pipelines
 
-<TODO: Insert image>
+Now that you've created the resource group and service principal, you create a service connection in Azure Pipelines.
 
-1. Choose `Service principal (manual)` from the list and click `Next`.
+1. In your browser, select **Project settings**.
 
-<TODO: Insert image>
+   TODO ss
 
-> [!Note]
-> We advise you to follow the manual and not the automatic service principal authentication process. The reason for this is that in the automatic process Azure DevOps creates the Service Principal for you and gives the Service Principal Owner permission at subscription level. This is a wide set of permissions. Hence we recommend to create the service principal beforehand and give it only the permissions needed for the job it needs to execute. We advise to utilize the principle of least privilege. 
+1. Select **Service connections**.
 
-1. Fill out your `Subscription Id`, `Subscription Name` in the designated textboxes. You can find these values on the overview screen of your resource group in the Azure portal. 
+   TODO ss
 
-<TODO: Insert image>
+1. Select **Create service connection**.
 
-1. For `Service Principal Id` you use the `Application Id` of the service principal you created. 
+   TODO SS
 
-<TODO: Insert image>
+1. Select **Azure Resource Manager** and select **Next**.
 
-1. For Credential type, you can leave it to the default value of `Service principal key`. Use the service principal `Password` as a value. 
+   TODO SS
 
-<TODO: Insert image>
+1. Select **Service principal (manual)** and select **Next**.
 
-1. Fill out the `Tenant ID` as well.
+   TODO SS
 
-<TODO: Insert image>
+   > [!NOTE]
+   > It's a good idea to manually create service principals like you're doing here, rather than using the automatic service principal creation in Azure Pipelines. This is because, when Azure Pipelines creates a service principal for you, it grants it permissions to your whole subscription. It's more secure to grant permissions at a narrower scope like a resource group, and that requires you use the manual creation process.
 
-1. You can now click the `Verify` button, this should indicate the values you filled out are correct.
+1. Enter the subscription ID and subscription name that you saved earlier.
 
-<TODO: Insert image>
+   TODO SS
 
-1. Name your service connection `Toywebsite`.
+1. In **Service principal ID**, enter the service principal's application ID that you saved earlier.
 
-<TODO: Insert image>
+   TODO SS
 
-1. Leave the `Grant access permission to all pipelines as is`.
+1. In **Service principal key**, enter the service principal's key that you saved earlier.
 
-<TODO: Insert image>
+1. In **Tenant ID**, enter the Azure tenant ID that you saved earlier.
 
-1. Click `Verify and save`.
+1. Select the **Verify** button.
 
+   TODO SS
+
+   Azure Pipelines verifies it can access your Azure subscription.
+
+1. In **Service connection name**, enter _ToyWebsite_.
+
+   Leave **Grant access permission to all pipelines** checked.
+
+1. Select **Verify and save**.
+
+<!-- TODO below -->
+
+## Add your website's Bicep file to the repository
+
+1. In Visual Studio Code, in the _deploy_ folder, create a new file named _main.bicep_.
+
+1. Copy the following into the _main.bicep_ file:
+
+   :::code language="bicep" source="code/5-main.bicep" :::
+
+1. Save the file.
+
+1. In the Visual Studio Code **Terminal**, stage the changes, commit the changes and push the changes to your repository by using the following commands:
+
+   ```bash
+   git add -A
+   git commit -m 'Add Bicep file'
+   git push
+   ```
 
 ##  Replace the existing tasks in the pipeline by a task that will deploy your Bicep template
 
