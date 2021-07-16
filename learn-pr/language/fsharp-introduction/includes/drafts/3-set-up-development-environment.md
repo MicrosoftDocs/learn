@@ -13,7 +13,7 @@ To get started writing code with F#, at minimum you'll need to install the .NET 
         dotnet --version
         ```
 
-    1. Output similar to the following appears in the console. Your version might be different but if a version is output, it means everything is installed correctly.
+    1. Output similar to the following appears in the console. Your version might be different but as long as version information is output to the console, it means everything is installed correctly.
 
         ```console
         5.0.302
