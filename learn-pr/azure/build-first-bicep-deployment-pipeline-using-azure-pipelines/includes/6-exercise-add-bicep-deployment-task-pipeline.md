@@ -50,7 +50,9 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
    > [!TIP]
    > When you work in Visual Studio Code and have installed the Azure Pipelines extension, try using the <kbd>Ctrl+Space</kbd> key combination. It shows a context menu of suggested elements to add at your current cursor position. 
 
-1. Save the changes to the file.
+1. Save the changes to the file. Your file should look like the below:
+
+   :::code language="yaml" source="code/6-pipeline.bicep" :::
 
 1. In the Visual Studio Code **Terminal**, stage your changes, commit them to your repository, and push them Azure Repos:
 
@@ -121,5 +123,3 @@ Now you're ready to run your pipeline!
 1. Select **1 Succeeded** to see the details of the deployment.
 
 1. Select the deployment to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's an App Service plan and app, and an Application Insights instance.
-
-1. Leave the page open in your browser. You'll check on deployments again later.

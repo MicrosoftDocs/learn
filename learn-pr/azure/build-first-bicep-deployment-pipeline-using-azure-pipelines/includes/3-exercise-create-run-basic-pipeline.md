@@ -76,23 +76,13 @@ You have created a pipeline definition. Here, you register the pipeline with Azu
 
 1. In your browser, select **Pipelines**, then select **Create Pipeline**.
 
-   TODO ss
-
 1. Select **Azure Repos Git**.
-
-   TODO ss
 
 1. Select the **toy-website** repository.
 
-   TODO ss
-
 1. Select **Existing Azure Pipelines YAML file**.
 
-   TODO ss
-
 1. In the **Path** field, select _/deploy/azure-pipelines.yml_. Then select **Continue**.
-
-   TODO ss
 
    Your YAML pipeline definition is shown.
 
@@ -100,8 +90,6 @@ You have created a pipeline definition. Here, you register the pipeline with Azu
    > The Azure Pipelines web interface provides an editor for managing your pipeline definition. In this module, we work with the definition file in Visual Studio Code, but you can explore the Azure Pipelines editor to see how it works, too.
 
 1. Select **Run**.
-
-   TODO ss
 
    Azure Pipelines creates a pipeline.
 
@@ -114,11 +102,7 @@ After the pipeline has run, a page is displayed with information about this exec
 
 1. Notice the page includes the identifier for the Git commit that the run used. This indicates the version of your repository's content that the pipeline used.
 
-   TODO ss
-
 1. Select the **Job**.
-
-   TODO ss
 
    The job information page is displayed, which shows the log of the steps that the pipeline ran for you. Notice that your **Placeholder step** is included.
 
@@ -126,21 +110,15 @@ After the pipeline has run, a page is displayed with information about this exec
 
 1. Select the **Checkout toy-website@main to s** step.
 
-   TODO ss
-
    The logs for the step provide a lot of detail on exactly what happened. In this case, the repository's contents was downloaded to the agent.
 
 1. Select the **Placeholder step** step.
-
-   TODO ss
 
    The logs for this step show the _Hello world!_ text that our pipeline YAML file specified.
 
 ## Inspect how pipeline execution can be linked back to a commit
 
 1. Navigate back to the Repository overview screen by selecting **Repos**. Then, select **Commits**.
-
-   TODO ss
 
    Notice that the commit identifier displayed is the same as the commit identifier you noted from your pipeline run.
 

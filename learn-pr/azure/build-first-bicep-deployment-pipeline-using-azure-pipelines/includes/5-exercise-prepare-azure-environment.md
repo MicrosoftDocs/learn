@@ -168,42 +168,26 @@ Now that you've created the resource group and service principal, you create a s
 
 1. In your browser, select **Project settings**.
 
-   TODO ss
-
 1. Select **Service connections**.
-
-   TODO ss
 
 1. Select **Create service connection**.
 
-   TODO SS
-
 1. Select **Azure Resource Manager** and select **Next**.
 
-   TODO SS
-
 1. Select **Service principal (manual)** and select **Next**.
-
-   TODO SS
 
    > [!NOTE]
    > It's a good idea to manually create service principals like you're doing here, rather than using the automatic service principal creation in Azure Pipelines. This is because, when Azure Pipelines creates a service principal for you, it grants it permissions to your whole subscription. It's more secure to grant permissions at a narrower scope like a resource group, and that requires you use the manual creation process.
 
 1. Enter the subscription ID and subscription name that you saved earlier.
 
-   TODO SS
-
 1. In **Service principal ID**, enter the service principal's application ID that you saved earlier.
-
-   TODO SS
 
 1. In **Service principal key**, enter the service principal's key that you saved earlier.
 
 1. In **Tenant ID**, enter the Azure tenant ID that you saved earlier.
 
 1. Select the **Verify** button.
-
-   TODO SS
 
    Azure Pipelines verifies it can access your Azure subscription.
 

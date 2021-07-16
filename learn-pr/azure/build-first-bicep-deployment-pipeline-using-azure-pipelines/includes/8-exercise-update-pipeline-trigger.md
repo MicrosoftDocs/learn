@@ -9,148 +9,75 @@ In this exercise, you'll:
 
 ## Update the trigger to be branch-based
 
-1. In Visual Studio Code, open your YAML pipeline file and change the manual trigger to a branch trigger: 
+1. In Visual Studio Code, open the _deploy/azure-pipelines.yml_ file.
 
-```YAML
-trigger:
-  branches:
-    include:
-    - main
-```
+1. Remove the manual trigger on the first line.
 
-1. Save the file. The full code should look like this: 
+1. Add the following trigger definition in its place:
 
-```YAML
-trigger:
-  branches:
-    include:
-    - main
+   :::code language="yaml" source="code/6-pipeline.bicep" range="1-4" :::
 
-pool:
-  vmImage: ubuntu-latest
+1. Save the changes to the file.
 
-jobs:
-- job: 
-  steps:
-  - task: AzureCLI@2
-    inputs:
-      azureSubscription: $(serviceConnection)
-      scriptType: 'bash'
-      scriptLocation: 'inlineScript'
-      inlineScript: 'az deployment group create --resource-group $(resourcegroup) --template-file deploy/main.bicep -n $(Build.BuildId) -p environmentType=$(environment)'
-```
+1. Commit your changes and push them to Azure Repos.
 
-1. Commit the changes and push them to the git repository.
+   ```bash
+   git add .
+   git commit -m 'Add branch trigger'
+   git push
+   ```
 
-```cmd
-git add -A
-git commit -m 'Added trigger'
-git push
-```
+## Verify the pipeline is running
 
-1. Open your project in Azure DevOps and navigate to your `Pipelines`. On the pipelines overview page, you should already see that your pipeline has been triggered and is running. If it is not, try refreshing the page. 
+1. In Azure DevOps, select **Pipelines**.
 
-<TODO: Insert image>
+1. Select your pipeline.
+
+   Notice that the pipeline has automatically been triggered because the pipeline detected the commit you just made.
 
 ## Add a Bicep module and make it intentionally invalid
 
-1. Go back to Visual Studio Code and open your Bicep template. Add the bottom of the file, add an ApplicationInsights resource: 
+1. In Visual Studio Code, open the _main.bicep_ file.
 
-```bicep
-resource applicationInsights 'Microsoft.Insights/components@2018-05-01-preview' = {
-  name: applicationInsightsName
-  location: location
-  kind: 'web'
-  properties: {
-    Application_Type: 'web'
-  }
-}
-```
+1. At the bottom of the file, add an Application Insights resource: 
 
-1. Save the file and commit the changes: 
+   TODO
 
-```cmd
-git add -A
-git commit -m 'New bicep'
-git push
-```
+   > [!NOTE]
+   > Visual Studio Code might tell you the Bicep resource is invalid. It is! Here, you're intentionally adding an invalid resource. You'll fix it soon.
 
-1. Go back to Azure DevOps and notice that this change as well triggered a pipeline run. This run however will fail, since we used a unsupported version of the Application Insights resource provider. 
+1. Save the file.
 
-<TODO: Insert image>
+1. Commit the changes by running the following commands in the Visual Studio Code terminal:
 
-## Fix the Bicep module and see the pipeline triggered again
+   ```bash
+   git add .
+   git commit -m 'Add Application Insights instance to Bicep file'
+   git push
+   ```
 
-1. Go back to Visual Studio Code and open your Bicep template. Add the bottom of the file, remove the ApplicationInsights resource again. Your bicep file should agin look like this: 
+## Verify the pipeline fails
 
-```bicep
-@description('The location into which your Azure resources should be deployed.')
-param location string = resourceGroup().location
+1. In Azure DevOps, (TODO need to confirm exact instructions for where the user is)
 
-@description('Select the type of environment you want to provision. Allowed values are Production and Test.')
-@allowed([
-  'Production'
-  'Test'
-])
-param environmentType string
+1. Notice that the pipeline run failed. This is because the Application Insights resource in the Bicep file isn't valid: it uses an unsupported version of the Application Insights resource type.
 
-@description('A unique suffix to add to resource names that need to be globally unique.')
-@maxLength(13)
-param resourceNameSuffix string = uniqueString(resourceGroup().id)
+## Fix the Bicep file and see the pipeline triggered again
 
-// Define the names for resources.
-var appServiceAppName = 'toy-website-${resourceNameSuffix}'
-var appServicePlanName = 'toy-website'
+1. In Visual Studio Code, update the Application Insights definition: (TODO confirm details)
 
-// Define the SKUs for each component based on the environment type.
-var environmentConfigurationMap = {
-  Production: {
-    appServicePlan: {
-      sku: {
-        name: 'S1'
-        capacity: 2
-      }
-    }
-  }
-  Test: {
-    appServicePlan: {
-      sku: {
-        name: 'F1'
-        capacity: 1
-      }
-    }
-  }
-}
+1. Save the changes to the file.
 
-resource appServicePlan 'Microsoft.Web/serverfarms@2020-06-01' = {
-  name: appServicePlanName
-  location: location
-  sku: environmentConfigurationMap[environmentType].appServicePlan.sku
-}
+1. Use the Visual Studio Code terminal to commit your changes and push them:
 
-resource appServiceApp 'Microsoft.Web/sites@2020-06-01' = {
-  name: appServiceAppName
-  location: location
-  properties: {
-    serverFarmId: appServicePlan.id
-    siteConfig: {
-      appSettings: [
-      ]
-    }
-  }
-}
-```
+   ```cmd
+   git add -A
+   git commit -m 'Fix Application Insights resource definition'
+   git push
+   ```
 
-1. Save the file and commit all changes: 
+## Verify the pipeline succeeds
 
-```cmd
-git add -A
-git commit -m 'New bicep'
-git push
-```
+1. In Azure DevOps, (TODO need to confirm exact instructions for where the user is)
 
-1. This will trigger another pipeline run, which is ok. 
-
-<TODO: Insert image>
-
-
+1. Notice that the pipeline run succeeded, because you fixed the resource definition and now have a valid Bicep file.
