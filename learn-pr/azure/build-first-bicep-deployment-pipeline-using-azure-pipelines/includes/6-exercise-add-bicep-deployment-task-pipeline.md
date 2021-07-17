@@ -75,9 +75,14 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 
    Leave the checkboxes unchecked, and select **OK**.
 
-1. Follow the same process to create a variable named **ResourceGroupName**, with a value of _ToyWebsite_.
+1. Follow the same process to create these variables:
 
-1. Follow the process one more time to create a variable named **Environment**, with a value of _Test_. For this variable, check the box titled **Let users override this value when running this pipeline**.
+   | Variable name         | Value        |
+   |-----------------------|--------------|
+   | **ResourceGroupName** | _ToyWebsite_ |
+   | **EnvironmentType**   | _Test_       |
+
+1. Follow the process one more time to create a variable named **DeployToyManualsStorageAccount**, with a value of _true_. For this variable, check the box titled **Let users override this value when running this pipeline**.
 
 1. After you've created all three variables, select **Save**.
 
@@ -89,9 +94,9 @@ Now you're ready to run your pipeline!
 
    The **Run pipeline** panel appears. You can use this panel to configure settings for this specific run of the pipeline.
 
-1. Select **Variables**, and then select the **EnvironmentType** variable.
+1. Select **Variables**, and then select the **DeployToyManualsStorageAccount** variable.
 
-1. Change the value to _Production_.
+1. Change the value to _false_.
 
 1. Select **Update**.
 
@@ -103,7 +108,7 @@ Now you're ready to run your pipeline!
 
 1. Select **fx 3 queue time variables used**.
 
-   This shows the values that are used for each variable for this pipeline run. Notice that the `ResourceGroupName` and `ServiceConnectionNam` variables are the values that you set for the pipeline variables, and the `EnvironmentType` variable's value is _Production_ since you overrode it for this pipeline run.
+   This shows the values that are used for each variable for this pipeline run. Notice that the `ResourceGroupName` and `ServiceConnectionName`, and `EnvironmentType` variables are the values that you set for the pipeline variables, and the `DeployToyManualsStorageAccount` variable's value is _false_ since you overrode it for this pipeline run.
 
 1. Inspect the rest of your pipeline output.
 
@@ -121,4 +126,4 @@ Now you're ready to run your pipeline!
 
 1. Select **1 Succeeded** to see the details of the deployment.
 
-1. Select the deployment to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's an App Service plan and app, and an Application Insights instance.
+1. Select the deployment to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's an App Service plan and an app.
