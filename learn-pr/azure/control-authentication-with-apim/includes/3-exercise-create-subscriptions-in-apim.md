@@ -85,7 +85,7 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
 
 ## Import the API
 
-After deployment has completed, import the Weather API into the API Management gateway
+After deployment has completed, import the Weather API into the API Management gateway.
 
 1. Select **Go to resource**. Your **API Management service** pane appears.
 

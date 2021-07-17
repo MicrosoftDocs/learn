@@ -67,11 +67,11 @@ Now, create the authentication policy within the API Management gateway.
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **All Resources**, and then select your API gateway.
 
-1. In the left menu pane, under **APIs**, Select **APIs**. The **APIs** pane appears for your API Management service.
+1. In the left menu pane, under **APIs**, select **APIs**. The **APIs** pane appears for your API Management service.
 
-1. In the middle menu pane, under **All APIS**, select **Weather Data**.
+1. In the middle menu pane, under **All APIs**, select **Weather Data**.
 
-1. In the **Inbound processing** box, select the **Policies </>**.
+1. In the **Inbound processing** box, select **Policies </>**.
 
     ![Inbound processing policy button.](../media/5-inbound-policy.png)
 
