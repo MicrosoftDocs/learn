@@ -15,8 +15,6 @@ In this exercise, you'll:
 
 1. Select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
 
-   TODO screenshot
-
 1. Create a folder to use for the repository and select **Select Repository Location**.
 
 1. Visual Studio Code prompts you to open the repository location. Select **Open**.
