@@ -28,6 +28,8 @@ In this exercise, you'll:
 
 ## Update your Bicep file
 
+<!-- TODO tie this into the scenario -->
+
 1. In Visual Studio Code, open the _main.bicep_ file.
 
 1. Within the `appServiceApp` resource definition's `siteConfig` property, add the `alwaysOn` property with a value of `true`:
@@ -68,7 +70,7 @@ In this exercise, you'll:
 
    ```cmd
    git add -A
-   git commit -m 'Fix Always On property'
+   git commit -m 'Enable App Service Always On for production environments only'
    git push
    ```
 
