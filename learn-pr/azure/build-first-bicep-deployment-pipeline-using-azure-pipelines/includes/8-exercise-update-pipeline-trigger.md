@@ -15,7 +15,7 @@ In this exercise, you'll:
 
 1. Add the following trigger definition in its place:
 
-   :::code language="yaml" source="code/6-pipeline.yaml" range="1-4" :::
+   :::code language="yaml" source="code/8-pipeline.yaml" range="1-4" :::
 
 1. Save the changes to the file.
 
@@ -39,16 +39,24 @@ In this exercise, you'll:
 
 1. In Visual Studio Code, open the _main.bicep_ file.
 
+1. Below the `toyManualsStorageAccountName` variable definition, add the following variable definition:
+
+   :::code language="bicep" source="code/8-main-broken.bicep" range="21" :::
+
+1. Update the `appServiceApp` resource definition to include the highlighted lines below:
+
+   :::code language="bicep" source="code/8-main-broken.bicep" range="60-83" highlight="13-20" :::
+
 1. At the bottom of the file, add an Application Insights resource: 
 
-   TODO
+   :::code language="bicep" source="code/8-main-broken.bicep" range="92-99" :::
 
    > [!NOTE]
    > Visual Studio Code might tell you the Bicep resource is invalid. It is! Here, you're intentionally adding an invalid resource. You'll fix it soon.
 
-1. Save the file.
+1. Save your changes to the file.
 
-1. Commit the changes by running the following commands in the Visual Studio Code terminal:
+1. Commit your changes by running the following commands in the Visual Studio Code terminal:
 
    ```bash
    git add .
@@ -60,11 +68,13 @@ In this exercise, you'll:
 
 1. In Azure DevOps, (TODO need to confirm exact instructions for where the user is)
 
-1. Notice that the pipeline run failed. This is because the Application Insights resource in the Bicep file isn't valid: it uses an unsupported version of the Application Insights resource type.
+1. Notice that the pipeline run failed. This is because the Application Insights resource in the Bicep file isn't valid. It uses an unsupported version of the Application Insights resource type.
 
 ## Fix the Bicep file and see the pipeline triggered again
 
-1. In Visual Studio Code, update the Application Insights definition: (TODO confirm details)
+1. In Visual Studio Code, update the Application Insights definition's API version:
+
+   :::code language="bicep" source="code/8-main-fixed.bicep" range="92" :::
 
 1. Save the changes to the file.
 

@@ -18,6 +18,7 @@ param resourceNameSuffix string = uniqueString(resourceGroup().id)
 var appServiceAppName = 'toy-website-${resourceNameSuffix}'
 var appServicePlanName = 'toy-website-plan'
 var toyManualsStorageAccountName = 'toyweb${resourceNameSuffix}'
+var applicationInsightsInstanceName = 'toy-website-insights'
 
 // Define the SKUs for each component based on the environment type.
 var environmentConfigurationMap = {
@@ -68,6 +69,14 @@ resource appServiceApp 'Microsoft.Web/sites@2020-06-01' = {
           name: 'ToyManualsStorageAccountConnectionString'
           value: toyManualsStorageAccountConnectionString
         }
+        {
+          name: 'APPINSIGHTS_INSTRUMENTATIONKEY'
+          value: applicationInsightsInstance.properties.InstrumentationKey
+        }
+        {
+          name: 'APPLICATIONINSIGHTS_CONNECTION_STRING'
+          value: applicationInsightsInstance.properties.ConnectionString
+        }
       ]
     }
   }
@@ -78,4 +87,13 @@ resource toyManualsStorageAccount 'Microsoft.Storage/storageAccounts@2021-02-01'
   location: resourceGroup().location
   kind: 'StorageV2'
   sku: environmentConfigurationMap[environmentType].toyManualsStorageAccount.sku
+}
+
+resource applicationInsightsInstance 'Microsoft.Insights/components@2018-05-01' = {
+  name: applicationInsightsInstanceName
+  location: location
+  kind: 'web'
+  properties: {
+    Application_Type: 'web'
+  }
 }
