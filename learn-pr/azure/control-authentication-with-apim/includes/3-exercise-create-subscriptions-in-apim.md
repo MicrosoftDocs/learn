@@ -78,7 +78,7 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
     | Pricing tier | From the dropdown, select `Consumption`. |
     | | |
 
-1. Select **Review + create**, and after validation apsses, select **Create**.
+1. Select **Review + create**, and after validation passes, select **Create**.
 
     > [!NOTE]
     > You're using the **Consumption** tier because it is much faster to create while testing. The overall experience is very similar to the other pricing tiers.
