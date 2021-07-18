@@ -3,11 +3,13 @@ trigger: none
 pool:
   vmImage: ubuntu-latest
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo We'll add more steps soon.
-    echo For example, we'll add our Bicep deployment step.
-  displayName: 'Run a multi-line script'
+jobs:
+- job:
+  steps:
+  - script: echo Hello, world!
+    displayName: 'Run a one-line script'
+  
+  - script: |
+      echo We'll add more steps soon.
+      echo For example, we'll add our Bicep deployment step.
+    displayName: 'Run a multi-line script'

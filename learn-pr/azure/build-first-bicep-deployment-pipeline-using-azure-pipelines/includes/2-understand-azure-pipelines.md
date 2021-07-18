@@ -30,11 +30,11 @@ An _agent pool_ contains multiple agents of the same type. When you configure yo
 
 ## Triggers
 
-You need to instruct Azure Pipelines _when_ to run your pipeline by using a _trigger_. There are multiple types of trigger available. For now, we'll just use a _manual trigger_, which means we'll manually tell Azure Pipelines when to start running our pipeline. Later in this module, you'll learn about the other triggers you can use.
+You need to instruct Azure Pipelines _when_ to run your pipeline by using a _trigger_. There are multiple types of trigger available. For now, you'll just use a _manual trigger_, which means you'll manually tell Azure Pipelines when to start running your pipeline. Later in this module, you'll learn about the other triggers you can use.
 
 :::image type="content" source="../media/2-trigger.png" alt-text="Diagram that shows a trigger initiating a pipeline." border="false":::
 
-## Steps
+## Steps and jobs
 
 A step represents a single operation that the pipeline will perform. Think of a step as being like the individual command you execute against the Azure CLI or Azure PowerShell. For most deployments, you execute several steps in a sequence. You define the sequence, and all of the details of each step, in your pipeline YAML file.
 
@@ -45,10 +45,17 @@ There are two types of steps in Azure Pipelines:
 
 Some people prefer to use script statements rather than built-in tasks, because they provide more control over what is going on. Other people prefer to use tasks so they don't need to write and manage scripts. In this module, we use a mixture of both approaches.
 
-:::image type="content" source="../media/2-steps.png" alt-text="Diagram that shows a pipeline with two steps." border="false":::
+Azure Pipelines creates groups of steps called _jobs_. Each job represents a ordered set of steps. You always have at least one job in a pipeline, and when you create complex deployments it's common to have more than one job.
 
 > [!NOTE]
-> Azure Pipelines also has the concepts of _stages_ and _jobs_, which help you to organize your steps and run multiple steps at the same time. You’ll learn more about these in future modules.
+> Each job can run on a different agent pool if you want it to. This is useful when you build and deploy solutions that need to use different operating systems in different parts of their pipeline. For example, imagine you're building an iOS app and its backend service. You might have one job that runs on a macOS agent pool to build the iOS app, and another job that runs on a Ubuntu or Windows agent pool to build the backend.
+>
+> In this module, we use the same agent pool for every job in each pipeline, so the agent pools are declared at the root of the pipeline definitions.
+
+:::image type="content" source="../media/2-steps.png" alt-text="Diagram that shows a pipeline with two steps, both within one job." border="false":::
+
+> [!NOTE]
+> Azure Pipelines also has the concepts of _stages_, which enable you to divide your pipeline up into logical phases, and to add manual checks at various points in your pipeline's execution. You’ll learn more about stages in future modules.
 
 ## Service connections
 
@@ -72,9 +79,10 @@ Now that you know the basic concepts behind Azure Pipelines, let's look at a sim
 
 Let's look at each part in detail.
 
-- `trigger` tells your pipeline when it should execute. In this case, `trigger: none` is our way of telling Azure Pipelines that we want to manually trigger the pipeline.
-- `pool` instructs our pipeline which agent pool to use when it runs the pipeline steps. In this example, we want to execute our pipeline on an Ubuntu agent machine from the pool of Microsoft hosted agents.
-- `steps` lists the sequence of actions that we want to run. We have two steps, both of which run a simple script to echo some text. Each step has a `displayName`, which is a human-readable name for the step. You'll see the display name when you look at the pipeline logs. You'll also see any outputs from the commands in your steps.
+- `trigger` tells your pipeline when it should execute. In this case, `trigger: none` tells Azure Pipelines that you want to manually trigger the pipeline.
+- `pool` instructs the pipeline which agent pool to use when it runs the pipeline steps. In this example, the pipeline will be run on an Ubuntu agent machine and will come from the pool of Microsoft hosted agents.
+- `jobs` tells your pipeline that you have a single job. When you only have one job in your pipeline you can omit the `jobs` and `job` keywords, but we've included it here to make it clear how the concepts work.
+- `steps` lists the sequence of actions to run within the job. This example includes two steps, both of which run a simple script to echo some text. Each step has a `displayName`, which is a human-readable name for the step. You'll see the display name when you look at the pipeline logs. You'll also see any outputs from the commands in your steps.
 
 > [!IMPORTANT]
 > In YAML files, indentation is important. Take a look at the example above: some lines are indented by two or four spaces. The number of spaces you use is important, and if you don't indent your file correctly then Azure Pipelines won't be able to interpret it. Visual Studio Code helps you to find and fix errors in your YAML file indentation.
