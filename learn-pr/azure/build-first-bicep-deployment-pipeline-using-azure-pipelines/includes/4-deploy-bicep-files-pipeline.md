@@ -66,7 +66,7 @@ You can also let users override variable values when they run your pipeline manu
 
 Once you've created a variable, you use a special syntax to refer to it within your pipeline's YAML file, like this:
 
-:::code language="yaml" source="code/4-use-variables.yaml" highlight="12" :::
+:::code language="yaml" source="code/4-variables.yaml" range="14-19" highlight="3, 6" :::
 
 Notice the Azure CLI command includes a special `$(VariableName)` syntax. You can refer to any variable by using this approach - whether it's secret or not.
 
@@ -81,6 +81,6 @@ Azure Pipelines also provides _system variables_. These contain predefined infor
 
 You can also specify variables in your pipeline's YAML file. You might do this when you have values that aren't secret, that you're happy to store in your repository, and where you want to keep them in one place in the file so you can refer to them throughout the pipeline definition. This approach also allows you to track changes to the variable in your version control system:
 
-:::code language="yaml" source="code/4-yaml-variables.yaml" highlight="6-9" :::
+:::code language="yaml" source="code/4-variables.yaml" highlight="6-9" :::
 
 This pipeline contains three variables: `ServiceConnectionName`, `EnvironmentType`, and `ResourceGroupName`.
