@@ -28,13 +28,24 @@ In this exercise, you'll:
 
 1. Select **Create project**.
 
-## Clone the repository
-
 1. On the project page that appears, select the **Repos** menu item.
 
    :::image type="content" source="../../includes/media/azure-devops-repos-menu.png" alt-text="Screenshot of the Azure DevOps interface showing the menu, with the Repos item highlighted." border="true":::
 
-<!-- TODO macOS instructions - generate Git creds -->
+## Generate a Git password
+
+When you work with Azure Repos from Visual Studio Code on macOS, you need to use a special password that's different from the password you use to sign in.
+
+> [!NOTE]
+> If you're using Windows, skip to the next section, _Clone the repository_.
+
+1. Select the **Generate Git credentials** button.
+
+   Azure Repos creates a random password for you to use.
+
+1. Make a note of the **Password**. You'll use this shortly.
+
+## Clone the repository
 
 1. Select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
 
@@ -42,7 +53,11 @@ In this exercise, you'll:
 
 1. Create a folder to use for the repository and select **Select Repository Location**.
 
-<!-- TODO macOS instructions - use Git creds here -->
+1. This is the first time you've used this repository, so you are prompted to sign in.
+
+   If you're using Windows, enter the same credentials you used to sign in to Azure DevOps earlier in this exercise.
+
+   If you're using macOS, paste the password that you generated earlier in this exercise.
 
 1. Visual Studio Code prompts you to open the repository location. Select **Open**.
 
