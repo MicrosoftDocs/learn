@@ -15,40 +15,30 @@ In this exercise, you'll:
 
 1. Add the following trigger definition in its place:
 
-   :::code language="yaml" source="code/6-pipeline.yaml" range="1-4" :::
+   :::code language="yaml" source="code/8-pipeline.yaml" range="1-4" :::
 
 1. Save the changes to the file.
 
-1. Commit your changes and push them to Azure Repos.
+1. Commit your changes. You'll push them shortly.
 
    ```bash
    git add .
    git commit -m 'Add branch trigger'
-   git push
    ```
 
-## Verify the pipeline is running
+## Update your Bicep file
 
-1. In Azure DevOps, select **Pipelines**.
-
-1. Select your pipeline.
-
-   Notice that the pipeline has automatically been triggered because the pipeline detected the commit you just made.
-
-## Add a Bicep module and make it intentionally invalid
+<!-- TODO tie this into the scenario -->
 
 1. In Visual Studio Code, open the _main.bicep_ file.
 
-1. At the bottom of the file, add an Application Insights resource: 
+1. Within the `appServiceApp` resource definition's `siteConfig` property, add the `alwaysOn` property with a value of `true`:
 
-   TODO
+   :::code language="bicep" source="code/8-main-broken.bicep" range="66" :::
 
-   > [!NOTE]
-   > Visual Studio Code might tell you the Bicep resource is invalid. It is! Here, you're intentionally adding an invalid resource. You'll fix it soon.
+1. Save your changes to the file.
 
-1. Save the file.
-
-1. Commit the changes by running the following commands in the Visual Studio Code terminal:
+1. Commit your changes and push both of your commits by running the following commands in the Visual Studio Code terminal:
 
    ```bash
    git add .
@@ -60,11 +50,19 @@ In this exercise, you'll:
 
 1. In Azure DevOps, (TODO need to confirm exact instructions for where the user is)
 
-1. Notice that the pipeline run failed. This is because the Application Insights resource in the Bicep file isn't valid: it uses an unsupported version of the Application Insights resource type.
+1. Notice that the pipeline run failed. This is because the App Service app is deployed using the _F1_ free tier, which doesn't support the Always On feature.
+
+<!-- TODO mention this shows how subtle issues can creep in, and that multiple environments can make it hard to test everything -->
 
 ## Fix the Bicep file and see the pipeline triggered again
 
-1. In Visual Studio Code, update the Application Insights definition: (TODO confirm details)
+1. In Visual Studio Code, add new properties for each environment type to the `environmentConfigurationMap` variable:
+
+   :::code language="bicep" source="code/8-main-fixed.bicep" range="23-56" highlight="3-5, 19-21" :::
+
+1. Change the application's `alwaysOn` setting to use the appropriate configuration map value for the environment type:
+
+   :::code language="bicep" source="code/8-main-fixed.bicep" range="72" :::
 
 1. Save the changes to the file.
 
@@ -72,7 +70,7 @@ In this exercise, you'll:
 
    ```cmd
    git add -A
-   git commit -m 'Fix Application Insights resource definition'
+   git commit -m 'Enable App Service Always On for production environments only'
    git push
    ```
 
@@ -80,4 +78,4 @@ In this exercise, you'll:
 
 1. In Azure DevOps, (TODO need to confirm exact instructions for where the user is)
 
-1. Notice that the pipeline run succeeded, because you fixed the resource definition and now have a valid Bicep file.
+1. Notice that the pipeline run succeeded, because you now have a valid Bicep file.
