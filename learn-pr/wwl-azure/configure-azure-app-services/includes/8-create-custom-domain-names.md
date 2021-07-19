@@ -1,6 +1,6 @@
 When you create a web app, Azure assigns it to a subdomain of azurewebsites.net. For example, if your web app is named contoso, the URL is contoso.azurewebsites.net. Azure also assigns a virtual IP address. For a production web app, you may want users to see a custom domain name.
 
-:::image type="content" source="../media/AZ104_App_Service_Custom_Domain-45438d83.png" alt-text="Screenshot of the custom domain name blade with a custom domain name.":::
+:::image type="content" source="../media/app-service-custom-domain.png" alt-text="Screenshot of the custom domain name blade with a custom domain name.":::
 
 
 ## Configuration steps

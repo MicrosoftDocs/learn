@@ -7,7 +7,7 @@ Secure authentication and authorization requires deep understanding of security,
 
 ## How it works
 
-:::image type="content" source="../media/AZ104_Secure_App_Service-2b4c92b8.png" alt-text="Screenshot of the App Service authentication being enabled and configured to Login to Azure Active Directory.":::
+:::image type="content" source="../media/secure-app-service.png" alt-text="Screenshot of the App Service authentication being enabled and configured to Login to Azure Active Directory.":::
 
 
 The authentication and authorization module runs in the same sandbox as your application code. When it's enabled, every incoming HTTP request passes through it before being handled by your application code. This module handles several things for your app:

@@ -1,6 +1,6 @@
 Azure App Service brings together everything you need to create websites, mobile backends, and web APIs for any platform or device. Applications run and scale with ease on both Windows and Linux-based environments. There are many deployment choices.
 
-:::image type="content" source="../media/AZ104_Web_QuickStarts-4761e813.png" alt-text="Screenshot of the App service quickstarts showing products to develop and deploy your application.":::
+:::image type="content" source="../media/web-quickstarts.png" alt-text="Screenshot of the App service quickstarts showing products to develop and deploy your application.":::
 
 
 ## Reasons to use App Services

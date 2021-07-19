@@ -4,7 +4,7 @@ New deployment slots can be empty or cloned. When you clone a configuration from
  -  Continuous deployment settings, if enabled.
  -  App Service authentication settings, if enabled.
 
-:::image type="content" source="../media/AZ104_Add_A_Slot-bb3fc2b4.png" alt-text="Screenshot of the Add a Web App blade. Several configuation sources are shown.":::
+:::image type="content" source="../media/add-slot.png" alt-text="Screenshot of the Add a Web App blade. Several configuation sources are shown.":::
 
 
 **Settings that are swapped:**
