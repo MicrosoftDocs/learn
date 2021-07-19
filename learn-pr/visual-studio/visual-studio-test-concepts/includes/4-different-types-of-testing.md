@@ -52,9 +52,9 @@ Acceptance tests can guide towards the business desired outcome. If your custome
 
 ### UI Tests
 
-:::image type="content" source="../media/test-pyramid-ui.png" alt-text="The testing pyramid with the 'UI' layer highlighted at the top of the pyramid.":::
+:::image type="content" source="../media/test-pyramid-user-interface.png" alt-text="The testing pyramid with the 'UI' layer highlighted at the top of the pyramid.":::
 
-UI tests can directly test the UI interactions of an app. This is meant to mimic an actual user clicking and interacting with your app and testing if the UI response is correct. UI tests are at the top of the testing pyramid. There are many frameworks that can automate UI interactions. For example, [Playwright](https://playwright.dev/dotnet/docs/why-playwright) can automate the browser to mimic a user using your website.
+UI tests can directly test the user interface interactions of an app. This is meant to mimic an actual user clicking and interacting with your app and testing if the UI response is correct. UI tests are at the top of the testing pyramid. There are many frameworks that can automate UI interactions. For example, [Playwright](https://playwright.dev/dotnet/docs/why-playwright) can automate the browser to mimic a user using your website.
 
 Another type of UI testing is manual testing. Manual testing is when an actual person uses your app. Having a user test out your app before it's released has some advantages and disadvantages. It can be a slower type of testing because it can take a while to describe how to use the app to a new user and it may be difficult to repeat the exact same steps every time. The major advantage is higher confidence that the app is ready for real human customers and nothing was missed because the app was used by more than just automation.
 > [!IMPORTANT]
