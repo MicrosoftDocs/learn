@@ -18,7 +18,7 @@ abstract: |
   - Add support for switching between themes using JavaScript
   - Inspect the website using browser developer tools
 prerequisites: |
-  - [Visual Studio Code](https://code.visualstudio.com)
+  - [Microsoft Visual Studio Code](https://code.visualstudio.com)
   - Familiarity with one or more programming languages and a markup language such as HTML
   - A computer that's running one of the following operating systems:
     - Windows: Windows 7, 8, 10
