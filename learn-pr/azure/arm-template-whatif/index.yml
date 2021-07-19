@@ -14,7 +14,7 @@ abstract: |
   After completing this module, you'll be able to:
   - Describe the two deployment modes in Azure and their effects
   - Preview what changes will happen before you deploy by using the what-if operation
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/bicep/arm-template-whatif.svg
 levels:
   - intermediate
 roles:

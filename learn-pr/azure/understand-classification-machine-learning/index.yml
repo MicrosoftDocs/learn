@@ -16,7 +16,7 @@ abstract: |
   - Build models that can perform classification tasks
   - Explore how to assess and improve classification models
 prerequisites: Familiarity with machine learning models
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/machine-learning/understand-classification-machine-learning.svg
 levels: 
 - beginner
 roles: 
