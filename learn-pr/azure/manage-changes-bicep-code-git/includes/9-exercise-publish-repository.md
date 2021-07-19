@@ -1,4 +1,4 @@
-At the toy company, the website's developers have asked you to help write the Bicep template. You told them you've been keeping the Bicep code in a repository, and they've asked you to publish the repository. In this exercise, you'll publish your Git repository so that so your colleagues can view the files and collaborate with you.
+At the toy company, the website's developers have offered to help you write the Bicep template. You told them you've been keeping the Bicep code in a repository, and they've asked you to publish the repository. In this exercise, you'll publish your Git repository so that so your colleagues can view the files and collaborate with you.
 
 During the process, you'll: 
 
