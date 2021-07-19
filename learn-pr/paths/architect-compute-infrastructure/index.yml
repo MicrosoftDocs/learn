@@ -26,7 +26,7 @@ modules:
 - learn.azure.azure-compute-fundamentals
 - learn.manage-vms-with-azure-cli
 - learn.choose-compute-provisioning
-- learn.build-azure-vm-templates
+- learn.azure.create-resource-manager-template-vs-code
 - learn.deploy-vms-from-vhd-templates
 - learn.build-app-with-scale-sets
 - learn.choose-azure-service-to-integrate-and-automate-business-processes
