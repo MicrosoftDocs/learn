@@ -29,7 +29,7 @@ Here's an illustration of how this structure might look for your toy company's w
 
 ## Stage your changes
 
-When you make changes to a file or files, you first need to _stage_ them. Staging tells Git that you consider the changes important enough to keep. It might seem like an unnecessary step, but staging gives you a lot of flexibility as you work. For example, you might make changes to several files but want to commit only one of them. Or, you might want to commit only some of the changes that you've made to a file.
+After you make changes to a file or files, you need to _stage_ them. Staging tells Git that you consider the changes important enough to keep. It might seem like an unnecessary step, but staging gives you a lot of flexibility as you work. For example, you might make changes to several files but want to keep only one of them. Or, you might want to keep only some of the changes that you've made to a file.
 
 To stage a file, you use the `git add` command and specify the file name or folder name that you want to stage. After you do this, Git knows that you might want to commit the changes. When you query the repository status by using `git status`, you see the staged changes.
 
