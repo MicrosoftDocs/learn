@@ -3,7 +3,7 @@ A common concern with resources provisioned in Azure is the ease with which they
  -  You can associate the lock with a subscription, resource group, or resource.
  -  Locks are inherited by child resources.
 
-:::image type="content" source="../media/AZ104_Resource_Manager_Locks-17be7a28.png" alt-text="Screenshot of the Management locks page. In the Settings options, Locks are highlighted and in the Add Lock page, the Lock type, Ready-only, and Delete option are displayed and highlighted.":::
+:::image type="content" source="../media/resource-manager-locks.png" alt-text="Screenshot of the Management locks page. In the Settings options, Locks are highlighted and in the Add Lock page, the Lock type, Ready-only, and Delete option are displayed and highlighted.":::
 
 
 ## Lock types
