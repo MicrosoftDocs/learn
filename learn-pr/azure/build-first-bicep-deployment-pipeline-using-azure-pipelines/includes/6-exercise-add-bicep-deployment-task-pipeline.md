@@ -174,7 +174,7 @@ Your template includes a storage account, which your website team uses to store 
 
    :::image type="content" source="../media/6-portal-deployment-list.png" alt-text="Screenshot of the Azure portal, showing the resource group deployment history, and the deployment highlighted." border="true":::
 
-   Notice that the deployment identifier is a number assigned by the pipeline.
+   Notice that the deployment name is the same as the pipeline run name.
 
 1. Select the deployment to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's an App Service plan and an app.
 
