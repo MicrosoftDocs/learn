@@ -30,7 +30,3 @@ Don't Repeat Yourself, also known as DRY, is another practice also referred to i
 ## Choose what works best for you
 
 Ultimately, you should choose what practices work best for you and make you the most effective programmer. That may be different for everyone since we all think and solve problems in many different ways. Don't worry if TDD is too intense or it doesn't fit your particular project. Maybe the team you are working on has better guidance on practices that work best specifically for your code base. I would encourage you to do some research and find something that is a good fit for you!
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->

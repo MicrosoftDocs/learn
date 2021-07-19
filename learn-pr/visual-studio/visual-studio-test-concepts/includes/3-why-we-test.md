@@ -30,7 +30,3 @@ Code coverage is a metric indicating how much of an app's production code is cov
 :::image type="content" source="../media/test-why-code-coverage.png" alt-text="Screenshot of code in the Visual Studio editor showing test coverage via red and blue highlights. Covered code is highlighted in blue and uncovered code is highlighted in red.":::
 
 Tracking the code coverage percentage overtime can give you an idea if the new code being added to your repository has tests. If new code isn't being tested, it *may* be an indication the repository is building up technical debt. While code coverage is useful, it's *not* an ultimate indication of repo health. It should only be one of many factors used to assess the health of a repo. Different code coverage engines can calculate coverage differently and many programs may appear to have low coverage, despite being well tested. For example, heavily testing certain methods that have high use, and ignoring others may actually be the right thing to do for a given repo. We wouldn't encourage every repo to try to achieve 100% code coverage because that isn't a practical investment for many businesses. There's much debate if there's a universal code coverage percentage that repositories should aspire too, but we believe for now the best guidance is to judge on a case-by-case basis and not arbitrarily hold your team to a number without a deeper discussion.
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->

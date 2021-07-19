@@ -34,5 +34,3 @@ We'll learn the capabilities of tests and help you decide when to use different 
 ## What is the main goal?
 
 By the end of this session, you'll be able to evaluate how testing can improve your code quality. You'll also be able to describe how different types of testing, the testing pyramid, and different testing schools of thought answer the demands of modern development.
-
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->

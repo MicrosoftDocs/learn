@@ -42,7 +42,3 @@ Remember the phone number bug from the intro scenario? As soon as new code was a
 As we implement new code, it may not always occur to us what old scenarios could be impacted by new changes. The phone numbers are a simple example, but imagine apps with hundreds of different input formats and needing to check that code every time. Tests make it easy for all variations of the old behavior to be checked with a simple test run.
 
 :::image type="content" source="../media/test-intro-phone-example.png" alt-text="Screenshot of a test titled CheckDomesticPhoneNumber in the Visual Studio editor showing a failure message.":::
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
