@@ -9,7 +9,7 @@ When you work with a version control system like Git, it's important to plan how
 
 If you're building Bicep code to deploy an application or another solution, it's also a good idea to store your Bicep files in the same repository as the application code and other files. That way, anytime someone needs to add a new feature that changes both Bicep and application code, they'll be tracked together. 
 
-Deploying your solution from a pipeline also makes the process easier. You'll learn about that in a future module.
+Planning your folder structure also makes it easier to deploy your solution from a pipeline. You'll learn about that in a future module.
 
 Different teams have different conventions for how they set up their repository folders and files. Even if you aren't working with a team, it's still a good idea to decide on a convention to follow. This will help anyone who has to work with your code in future.
 
