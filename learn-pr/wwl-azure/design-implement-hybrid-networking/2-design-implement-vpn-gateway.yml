@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-implement-hybrid-networking.design-implement-hybrid-networking
+title: Design and implement Azure VPN Gateway
+metadata:
+  title: Design and implement Azure VPN Gateway
+  description: "Design and implement Azure VPN Gateway"
+  ms.date: 07/15/2021
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 24
+content: |
+  [!include[](includes/2-design-implement-vpn-gateway.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What are the two types of VPNs?"
+    choices:
+    - content: "PolicyBased and RouteBased."
+      isCorrect: true
+      explanation: "Correct, VPNs can be RouteBased or PolicyBased."
+    - content: "PolicyBased and static."
+      isCorrect: false
+      explanation: "Incorrect, VPNs can be PolicyBased. Static is the name used for PolicyBased VPNs in the classic deployment model."
+    - content: "RouteBased and dynamic."
+      isCorrect: false
+      explanation: "Incorrect, VPNs can be RouteBased. Dynamic is the name used for RouteBased VPNs in the classic deployment model."
+  - content: "What is the default high availability configuration for VPN gateways?"
+    choices:
+    - content: "Active-standby"
+      isCorrect: true
+      explanation: "Correct, Every Azure VPN gateway consists of two instances in an active-standby configuration."
+    - content: "Active-active"
+      isCorrect: false
+      explanation: "Incorrect, You can create an Azure VPN gateway in an active-active configuration, but this is not the default."
+    - content: "Dual-redundancy"
+      isCorrect: false
+      explanation: "Incorrect, This is the most reliable option, combining the active-active gateways on both your network and Azure, but it is not the default."

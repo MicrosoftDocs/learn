@@ -2,14 +2,14 @@
 uid: learn.azure.build-mixed-reality-azure-digital-twins-unity
 metadata:
   title: Build mixed reality digital twins with Azure Digital Twins and Unity
-  description: Learn how to create a mixed reality HoloLens 2 application using Azure Digital Twins and Unity, a real-time 3D platform.
+  description: Learn how to create a mixed reality application using Azure Digital Twins and Unity, a real-time 3D platform.
   ms.date: 05/12/2021
   author: JBrentJ
   ms.author: jejacks
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build mixed reality digital twins with Azure Digital Twins and Unity
-summary: Learn how to create of a mixed reality HoloLens 2 application using Azure Digital Twins and Unity, a real-time 3D platform.
+summary: Learn how to create a mixed reality application using Azure Digital Twins and Unity, a real-time 3D platform.
 prerequisites: |
   - Azure service creation and configuration
   - Basic familiarity with Unity, C#, and GitHub
