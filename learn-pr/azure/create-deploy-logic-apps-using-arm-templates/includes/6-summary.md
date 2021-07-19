@@ -10,7 +10,7 @@ Once you practice by doing and explore the documentation, it will become clearer
 
 ## Learn more
 
-- [Build Azure Resource Manager templates](/learn/modules/build-azure-vm-templates/)
+- [Deploy Azure infrastructure by using JSON ARM templates](/learn/modules/create-azure-resource-manager-template-vs-code/)
 - [Azure Logic Apps Documentation](/azure/logic-apps/)
 - [Quickstart: Create and manage automated logic app workflows - Visual Studio Code](/azure/logic-apps/Quickstart-create-logic-apps-visual-studio-code)
 - [Schema reference for Workflow Definition Language in Azure Logic Apps](/azure/logic-apps/logic-apps-workflow-definition-language)
