@@ -9,4 +9,4 @@ Azure VM extensions can be:
 
 There are different extensions for Windows and Linux machines and a large choice of first and third-party extensions.
 
-:::image type="content" source="../media/AZ104_VM_Extensions-5d3ddaa9.png" alt-text="Screenshot of the Windows extensions page. The Custom Script Extension and PowerShell Desired State Configuration extensions are highlighted.":::
+:::image type="content" source="../media/virtual-machines-extensions.png" alt-text="Screenshot of the Windows extensions page. The Custom Script Extension and PowerShell Desired State Configuration extensions are highlighted.":::

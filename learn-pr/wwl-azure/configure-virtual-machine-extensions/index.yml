@@ -2,8 +2,8 @@
 uid: learn.wwl.configure-virtual-machine-extensions
 metadata:
   title: Configure Virtual Machine Extensions
-  description: "Configure Virtual Machine Extensions"
-  ms.date: 07/14/2021
+  description: "You will learn how to use virtual machine extensions to automate virtual machine deployments."
+  ms.date: 07/19/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -11,6 +11,7 @@ metadata:
 title: Configure Virtual Machine Extensions
 summary: You will learn how to use virtual machine extensions to automate virtual machine deployments.
 abstract: |
+  After completing this module, you will be able to:
   - Identify features and usage cases for virtual machine extensions.
   - Identify features and usage cases for custom script extensions.
   - Identify features and usage cases for desired state configuration.

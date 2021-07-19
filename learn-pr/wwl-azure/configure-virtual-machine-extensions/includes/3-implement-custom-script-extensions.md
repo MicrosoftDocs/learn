@@ -2,7 +2,7 @@ Custom Script Extension(CSE) can be used to automatically launch and execute vir
 
 You can install the CSE from the Azure portal by accessing the virtual machines **Extensions** blade. Once the CSE resource is created, you will provide a PowerShell script file. Your script file will include the PowerShell commands you want to execute on the virtual machine. Optionally, you can pass in arguments, such as param1, param2. After the file is uploaded, it executes immediately. Scripts can be downloaded from Azure storage or GitHub, or provided to the Azure portal at extension run time.
 
-:::image type="content" source="../media/AZ104_CSE-2a48c6f1.png" alt-text="Screenshot of the Install Custom Script extension page is shown. There are two text boxes. The script file information is required. The arguments information is optional.":::
+:::image type="content" source="../media/custom-script-extensions.png" alt-text="Screenshot of the Install Custom Script extension page is shown. There are two text boxes. The script file information is required. The arguments information is optional.":::
 
 
 You could also use the PowerShell **Set-AzVmCustomScriptExtension** command. This command requires the URI for the script in the blob container.
