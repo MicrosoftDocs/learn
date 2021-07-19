@@ -2,8 +2,8 @@
 uid: learn.wwl.configure-virtual-machine-availability
 metadata:
   title: Configure Virtual Machine Availability
-  description: "Configure Virtual Machine Availability"
-  ms.date: 07/14/2021
+  description: "You will learn how to configure virtual machine availability including vertical and horizontal scaling."
+  ms.date: 07/19/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -11,6 +11,7 @@ metadata:
 title: Configure Virtual Machine Availability
 summary: You will learn how to configure virtual machine availability including vertical and horizontal scaling.
 abstract: |
+  After completing this module, you will be able to:
   - Implement availability sets and availability zones.
   - Implement update and fault domains.
   - Implement virtual machine scale sets.

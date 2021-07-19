@@ -11,7 +11,7 @@ Availability Sets are an essential capability when you want to build reliable cl
 
 You create Availability Sets through the Azure portal in the disaster recovery section. Also, you can build Availability Sets using Resource Manager templates. scripting, or API tools.
 
-:::image type="content" source="../media/AZ104_Availability_Sets-09e904d5.png" alt-text="Screenshot of the create an availability set in the portal.":::
+:::image type="content" source="../media/availability-sets.png" alt-text="Screenshot of the create an availability set in the portal.":::
 
 
 ## Service Level Agreements

@@ -1,6 +1,6 @@
 Availability Zones is a high-availability offering that protects your applications and data from datacenter failures.
 
-:::image type="content" source="../media/AZ104_Avail_Zones-0e51ed31.png" alt-text="Three availability zones are connected, making an Azure region.":::
+:::image type="content" source="../media/avail-zones.png" alt-text="Three availability zones are connected, making an Azure region.":::
 
 
 ## Considerations

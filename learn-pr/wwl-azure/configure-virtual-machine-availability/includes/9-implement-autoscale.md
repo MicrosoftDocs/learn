@@ -1,6 +1,6 @@
 An Azure virtual machine scale set can automatically increase or decrease the number of VM instances that run your application. This means you can dynamically scale to meet changing demand.
 
-:::image type="content" source="../media/AZ104_Autoscale-44ce6562.png" alt-text="An example scale set graph is shown with three lines.":::
+:::image type="content" source="../media/autoscale.png" alt-text="An example scale set graph is shown with three lines.":::
 
 
 ## Autoscale benefits
