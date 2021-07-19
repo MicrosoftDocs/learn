@@ -16,7 +16,7 @@ First, let's create a condition that runs the logic app only when a certain even
 
 1. Under **Choose an operation**, in the search box, enter **condition** as your filter.
 
-1. On the **Actions** tab, select **Condition**.
+1. On the **Actions** tab, select **Control**, and thenselect **Condition**.
 
     ![Selections for choosing an action.](../media/5-select-condition.png)
 
