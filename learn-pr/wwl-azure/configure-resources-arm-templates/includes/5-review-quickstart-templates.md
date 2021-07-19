@@ -1,6 +1,6 @@
 [Azure Quickstart templates](https://azure.microsoft.com/resources/templates/) are Resource Manager templates provided by the Azure community.
 
-:::image type="content" source="../media/AZ104_Quickstart_Templates-1273ef6c.png" alt-text="Screenshot of the QuickStart templates page.":::
+:::image type="content" source="../media/quickstart-templates.png" alt-text="Screenshot of the QuickStart templates page.":::
 
 
 Templates provide everything you need to deploy your solution, while others might serve as a starting point for your template. Either way, you can study these templates to learn how to best author and structure your own templates.
