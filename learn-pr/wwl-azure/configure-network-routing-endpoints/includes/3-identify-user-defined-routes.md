@@ -1,6 +1,6 @@
 Azure automatically handles all network traffic routing. But, what if you want to do something different? For example, you may have a VM that performs a network function, such as routing, firewalling, or WAN optimization. You may want certain subnet traffic to be directed to this virtual appliance. For example, you might place an appliance between subnets or a subnet and the internet.
 
-:::image type="content" source="../media/AZ104_User_Defined_Routes-be2309e2.png" alt-text="Diagram of a subnet using a UDR to access an NVA and then the internet. The subnet is using another UDR and NVA to access the backend subnet.":::
+:::image type="content" source="../media/user-defined-routes.png" alt-text="Diagram of a subnet using a UDR to access an NVA and then the internet. The subnet is using another UDR and NVA to access the backend subnet.":::
 
 
 In these situations, you can configure user-defined routes (UDRs). UDRs control network traffic by defining routes that specify the next hop of the traffic flow. The hop can be a virtual network gateway, virtual network, internet, or virtual appliance.
