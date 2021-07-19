@@ -31,7 +31,7 @@ In this section, you will create two instances of a web application deployed in 
 2. On the **Create Web App** page, on the **Basics** tab, use the information in the table below to create the first web application.
 
    | **Setting**      | **Value**                                                    |
-   |:-:|:-:|
+   |:-|:-|
    | Subscription     | Select your subscription                                     |
    | Resource group   | Select **Create  new**  Name: **Contoso-RG-TM1**             |
    | Name             | **ContosoWebAppEastUS**                                      |
@@ -57,7 +57,7 @@ In this section, you will create two instances of a web application deployed in 
 7. Repeat steps 1-6 above to create a second web app. Use the same settings as before except for the information in the table below. 
 
    | **Setting**    | **Value**                                                    |
-   |:-:|:-:|
+   |:-|:-|
    | Resource group | Select **Create  new**  Name: **Contoso-RG-TM2**             |
    | Name           | **ContosoWebAppWestEurope**                                  |
    | Region         | **West Europe**                                              |
@@ -89,7 +89,7 @@ Now you will create a Traffic Manager profile that directs user traffic based on
 4. On the **Create Traffic Manager profile** page, use the information in the table below to create the Traffic Manager profile.
 
    | **Setting**             | **Value**                |
-   |:-:|:-:|
+   |:-|:-|
    | Name                    | **Contoso-TMProfile**    |
    | Routing method          | **Priority**             |
    | Subscription            | Select your subscription |
@@ -115,7 +115,7 @@ In this section, you will add the website in the East US as the primary endpoint
 3. On the **Add endpoint** page, enter the information from the table below.
 
    | **Setting**          | **Value**                         |
-   |:-:|:-:|
+   |:-|:-|
    | Type                 | **Azure endpoint**                |
    | Name                 | **myPrimaryEndpoint**             |
    | Target resource type | **App Service**                   |
@@ -128,7 +128,7 @@ In this section, you will add the website in the East US as the primary endpoint
 5. Repeat steps 2-4 above to create the failover endpoint. Use the same settings as before except for the information in the table below. 
 
    | **Setting**     | **Value**                                 |
-   |:-:|:-:|
+   |:-|:-|
    | Name            | **myFailoverEndpoint**                    |
    | Target resource | **ContosoWebAppWestEurope (West Europe)** |
    | Priority        | **2**                                     |
