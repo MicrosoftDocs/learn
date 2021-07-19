@@ -13,7 +13,7 @@ Consider using Azure Import/Export service when uploading or downloading data ov
 
 An Import job securely transfers large amounts of data to Azure Blob storage (block and page blobs) and Azure Files by shipping disk drives to an Azure datacenter. In this case, you will be shipping hard drives containing your data.
 
-:::image type="content" source="../media/AZ104_Import_Jobs-f42190cf.png" alt-text="Flowchart of an import data job. From the left prepare disks, create job, ship job to datacenter, datacenter receives disks, transfers data, packages disks, ships disks back to the customer, you receive the disks and view data in Azure.":::
+:::image type="content" source="../media/import-jobs.png" alt-text="Flowchart of an import data job. From the left prepare disks, create job, ship job to datacenter, datacenter receives disks, transfers data, packages disks, ships disks back to the customer, you receive the disks and view data in Azure.":::
 
 
 In order to perform an import, follow these steps:
@@ -30,7 +30,7 @@ In order to perform an import, follow these steps:
 
 Export jobs transfer data from Azure storage to hard disk drives and ship to your on-premise sites.
 
-:::image type="content" source="../media/AZ104_Export_Jobs-8106d08c.png" alt-text="Flowchart of an export job. From the left create job, ship disks, the datacenter receives the disks, transfers the data, packages the disks, ships the disks back to you, and you receive and unlock the disks.":::
+:::image type="content" source="../media/export-jobs.png" alt-text="Flowchart of an export job. From the left create job, ship disks, the datacenter receives the disks, transfers the data, packages the disks, ships the disks back to you, and you receive and unlock the disks.":::
 
 
 In order to perform an export, follow these steps:
