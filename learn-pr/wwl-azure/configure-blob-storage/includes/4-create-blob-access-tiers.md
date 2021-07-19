@@ -1,6 +1,6 @@
 Azure Storage provides different options for accessing block blob data (as shown in the screenshot), based on usage patterns. Each access tier in Azure Storage is optimized for a particular pattern of data usage. By selecting the correct access tier for your needs, you can store your block blob data in the most cost-effective manner.
 
-:::image type="content" source="../media/AZ104_Blob_Performance_Tiers-aff42532.png" alt-text="Screenshot of creating a storage account with choices for blob performance.":::
+:::image type="content" source="../media/blob-performance-tiers.png" alt-text="Screenshot of creating a storage account with choices for blob performance.":::
 
 
  -  **Hot**. The Hot tier is optimized for frequent access of objects in the storage account. Accessing data in the Hot tier is most cost-effective, while storage costs are higher. New storage accounts are created in the Hot tier by default.
