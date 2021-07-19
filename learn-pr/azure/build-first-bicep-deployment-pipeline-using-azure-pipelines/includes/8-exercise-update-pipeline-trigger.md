@@ -69,7 +69,7 @@ In this exercise, you'll:
 1. Use the Visual Studio Code terminal to commit your changes and push them:
 
    ```cmd
-   git add -A
+   git add .
    git commit -m 'Enable App Service Always On for production environments only'
    git push
    ```

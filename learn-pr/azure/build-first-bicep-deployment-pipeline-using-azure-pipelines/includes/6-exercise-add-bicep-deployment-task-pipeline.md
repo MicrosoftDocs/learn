@@ -20,12 +20,12 @@ In this exercise, you'll:
 1. In the Visual Studio Code **Terminal**, stage the changes, commit the changes and push the changes to your repository by using the following commands:
 
    ```bash
-   git add -A
+   git add .
    git commit -m 'Add Bicep file'
    git push
    ```
 
-##  Replace the existing tasks in the pipeline by a task that will deploy your Bicep template
+## Replace the existing tasks in the pipeline by a task that will deploy your Bicep template
 
 Here, you update your pipeline definition to deploy your Bicep file to Azure by using the service connection.
 
@@ -57,7 +57,7 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 
    ```bash
    git add .
-   git commit -m 'Add Azure CLI task to pipeline'
+   git commit -m 'Add Azure CLI tasks to pipeline'
    git push
    ```
 
@@ -67,24 +67,40 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 
 1. Select the **Edit** button to configure your pipeline.
 
+   :::image type="content" source="../media/6-edit-pipeline.png" alt-text="TODO" border="true":::
+
 1. Select the **Variables** button to manage your pipeline's variables.
 
+   :::image type="content" source="../media/6-edit-pipeline-variables.png" alt-text="TODO" border="true":::
+
 1. Select the **New variable** button.
+
+   :::image type="content" source="../media/6-edit-pipeline-new-variable.png" alt-text="TODO" border="true":::
 
 1. In **Name**, enter _ServiceConnectionName_. In **Value**, enter _ToyWebsite_.
 
    Leave the checkboxes unchecked, and select **OK**.
 
-1. Follow the same process to create these variables:
+   :::image type="content" source="../media/6-edit-pipeline-variable-serviceconnectionname.png" alt-text="TODO" border="true":::
 
-   | Variable name         | Value        |
-   |-----------------------|--------------|
-   | **ResourceGroupName** | _ToyWebsite_ |
-   | **EnvironmentType**   | _Test_       |
+1. Select the **+** button.
 
-1. Follow the process one more time to create a variable named **DeployToyManualsStorageAccount**, with a value of _true_. For this variable, check the box titled **Let users override this value when running this pipeline**.
+   :::image type="content" source="../media/6-edit-pipeline-additional-variable.png" alt-text="TODO" border="true":::
+
+   Create these variables:
+
+   | Variable name       | Value        |
+   |---------------------|--------------|
+   | _ResourceGroupName_ | _ToyWebsite_ |
+   | _EnvironmentType_   | _nonprod_    |
+
+1. Follow the process one more time to create a variable named _DeployToyManualsStorageAccount_, with a value of _true_. For this variable, check the box titled **Let users override this value when running this pipeline**.
+
+   :::image type="content" source="../media/6-edit-pipeline-variable-deploytoymanualsstorageaccount.png" alt-text="TODO" border="true":::
 
 1. After you've created all three variables, select **Save**.
+
+   :::image type="content" source="../media/6-edit-pipeline-save-variables.png" alt-text="TODO" border="true":::
 
 ## Run your pipeline
 
@@ -92,23 +108,29 @@ Now you're ready to run your pipeline!
 
 1. Select **Run**.
 
-   The **Run pipeline** panel appears. You can use this panel to configure settings for this specific run of the pipeline.
+   :::image type="content" source="../media/6-edit-pipeline-run.png" alt-text="TODO" border="true":::
 
-1. Select **Variables**, and then select the **DeployToyManualsStorageAccount** variable.
+1. The **Run pipeline** panel appears. You can use this panel to configure settings for this specific run of the pipeline. Select **Variables**.
 
-1. Change the value to _false_.
+   :::image type="content" source="../media/6-pipeline-run.png" alt-text="TODO" border="true":::
 
-1. Select **Update**.
+1. Select the **DeployToyManualsStorageAccount** variable and change its value to _false_, then select **Update**.
+
+   :::image type="content" source="../media/6-pipeline-run-edit-variable.png" alt-text="TODO" border="true":::
 
 1. Select the back arrow.
 
-1. Select **Run** to start a new pipeline run.
+   :::image type="content" source="../media/6-pipeline-run-edit-variables-back.png" alt-text="TODO" border="true":::
 
-1. Select **Job** to monitor the job as it runs. It might take a few minutes for the pipeline to start, and once it's started, it might take a few minutes for your deployment to complete.
+1. Select **Run** to start a new pipeline run. It might take a few minutes for the pipeline to start, and once it's started, it might take a few minutes for your deployment to complete.
 
-1. Select **fx 3 queue time variables used**.
+1. Select **Job** to open the job. You can monitor the job as it runs, or wait until the job completes to review its history.
 
-   This shows the values that are used for each variable for this pipeline run. Notice that the `ResourceGroupName` and `ServiceConnectionName`, and `EnvironmentType` variables are the values that you set for the pipeline variables, and the `DeployToyManualsStorageAccount` variable's value is _false_ since you overrode it for this pipeline run.
+1. Select **fx 1 queue time variable used**.
+
+   :::image type="content" source="../media/6-log-variables.png" alt-text="TODO" border="true":::
+
+   The value that you override for this pipeline's run are shown. Notice that the `DeployToyManualsStorageAccount` variable's value is _false_, since you overrode it.
 
 1. Inspect the rest of your pipeline output.
 
@@ -123,6 +145,8 @@ Now you're ready to run your pipeline!
 1. Select **ToyWebsite**.
 
 1. In **Overview**, you can see that one deployment succeeded.
+
+   :::image type="content" source="../media/6-portal-resource-group.png" alt-text="TODO" border="true":::
 
 1. Select **1 Succeeded** to see the details of the deployment.
 
