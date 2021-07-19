@@ -65,7 +65,7 @@ The Recovery Services vaults are accessible at the subscription level. When you'
 
 1. To restore the virtual machine, in the top menu bar, select **Restore VM**. The **Restore Virtual Machine** pane appears for nw-app01.
 
-1. Under the **Restore point** text box, select **Select**. The **Select retore point** pane appears.
+1. Under the **Restore point** text box, select **Select**. The **Select restore point** pane appears.
 
 1. Select the restore point to use for the recovery, and then select **OK**.
 

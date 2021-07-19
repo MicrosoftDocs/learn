@@ -38,7 +38,7 @@ Depending on how the snapshot is taken and what it includes, you can achieve dif
 
 You can define the backup frequency and retention duration for your backups. Currently, the VM backup can be triggered daily or weekly, and can be stored for multiple years. The backup policy supports two access tiers - snapshot tier and the vault tier.
 
-**Snapshot tier**: All the snapshots are stored locally for a maximum period of five days. This is referred to as the snapshot tier. For all types of operation recoveries, we recommended that you restore from the snapshots becasue it's much faster to do so. This capability is called **Instant Restore**.
+**Snapshot tier**: All the snapshots are stored locally for a maximum period of five days. This is referred to as the snapshot tier. For all types of operation recoveries, we recommended that you restore from the snapshots because it's much faster to do so. This capability is called **Instant Restore**.
 
 **Vault tier**: All snapshots are additionally transferred to the vault for additional security and longer retention. At this point, the recovery point type changes to “snapshot and vault”.
 
