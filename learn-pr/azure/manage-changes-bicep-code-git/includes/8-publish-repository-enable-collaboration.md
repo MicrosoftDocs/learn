@@ -31,7 +31,7 @@ You also need to set up _tracking branches_, which tell Git that a branch from y
 After you've configured your local repository and tracking branch, you can _push_ the contents of your local repository to the remote repository. And you can _pull_ the remote repository's changes into your local repository.
 
 > [!NOTE]
-> The `git pull` operation downloads the changes from your remote repository and then merges the changes - just like when you merge branches. Occasionally you want to download only changes from the remote repository, such as when you want to update your local repository's list of remote branches. Use the `git fetch` command for that.
+> The `git pull` operation downloads the changes from your remote repository and then merges the changes - just like when you merge branches. Occasionally you want to only download changes from the remote repository, such as when you want to update your local repository's list of remote branches. Use the `git fetch` command for that.
 
 ## Authentication
 
