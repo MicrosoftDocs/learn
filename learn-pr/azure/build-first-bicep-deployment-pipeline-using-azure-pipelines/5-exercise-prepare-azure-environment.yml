@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.exercise-prepare-azure-environment
-title: Exercise - Prepare your Azure environment
+uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.exercise-create-service-connection
+title: Exercise - Create a service connection
 metadata:
   unitType: exercise
-  title: Exercise - Prepare your Azure environment
+  title: Exercise - Create a service connection
   description: Learn how to create a service principal and service connection for a Bicep deployment pipeline.
   ms.date: 07/05/2021
   author: vermegi
@@ -13,4 +13,4 @@ metadata:
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-exercise-prepare-azure-environment.md)]
+  [!include[](includes/5-exercise-create-service-connection.md)]

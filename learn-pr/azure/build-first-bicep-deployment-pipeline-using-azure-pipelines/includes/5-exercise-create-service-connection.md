@@ -1,4 +1,4 @@
-Before you can deploy your toy company's website from a pipeline, you need to prepare your Azure environment. In this exercise, you'll:
+Before you can deploy your toy company's website from a pipeline, you need to create a service connection for your pipeline to use. In this exercise, you'll:
 
 > [!div class="checklist"]
 > * Create a resource group for your website.
