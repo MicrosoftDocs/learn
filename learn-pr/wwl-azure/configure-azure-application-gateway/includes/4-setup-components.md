@@ -1,6 +1,6 @@
 Application Gateway has a series of components that combine to route requests to a pool of web servers and to check the health of these web servers.
 
-:::image type="content" source="../media/AZ104_App_Gateway_Conf-e855da39.png" alt-text="Flowchart for app gateway processnig.":::
+:::image type="content" source="../media/app-gateway-configure.png" alt-text="Flowchart for app gateway processnig.":::
 
 
 ## Front-end IP address

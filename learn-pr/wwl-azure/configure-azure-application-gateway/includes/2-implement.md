@@ -2,7 +2,7 @@ Application Gateway manages the requests that client applications send to a web 
 
 The Application Gateway uses application layer routing. Application layer routing routes traffic to a pool of web servers based on the URL of a request. The back-end pool can include Azure virtual machines, Azure virtual machine scale sets, Azure App Service, and even on-premises servers.
 
-:::image type="content" source="../media/AZ104_App_Gateway-92d010d9.png" alt-text="A browser using the app gateway to access the backend pool.":::
+:::image type="content" source="../media/app-gateway.png" alt-text="A browser using the app gateway to access the backend pool.":::
 
 
 The Application Gateway uses round robin to send load balance requests to the servers in each back-end pool. The Application Gateway provides session stickiness. Use session stickiness to ensure client requests in the same session are routed to the same back-end server.
