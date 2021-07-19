@@ -2,16 +2,17 @@ In the previous unit, you learned how to design an efficient partitioning strate
 
 ## Measure the impact of partitions on throughput
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), go to your Azure Cosmos DB account, and in the menu pane, under **Monitoring**, select **Metrics**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), go to your Azure Cosmos DB account, and in the middle menu pane, under **Monitoring**, select **Metrics (Classic)**. The Azure Cosmos DB account **Metrics (Classic)** pane appears.
+
 1. Select the **Throughput** tab.
 
-1. Filter on the **mslearn** database.
+1. In the **Database(s)** dropdown list, select (filter on) **mslearn**.
 
     ![Screenshot that shows the Throughput tab's database filter.](../media/6-metrics-throughput-database-filter.png)
 
 ### Review unevenly distributed partitions for throughput
 
-1. Filter on the **HotPartition** collection.
+1. In the **Container(s)** dropdown list, select (filter on) **HotPartition**.
 
 1. Review the results. You see that the collection is using two partitions with 7,000 RU/s divided between them.
 
@@ -19,7 +20,7 @@ In the previous unit, you learned how to design an efficient partitioning strate
 
     :::image type="content" source="../media/6-request-peak.png" alt-text="Screenshot that shows the chart for Azure Cosmos DB requests over time." loc-scope="other"::: <!-- no-loc -->
 
-1. Enter that time on the **Max consumed RU/s by each partition key range** chart and select **Apply**.
+1. Enter that time on the **Max consumed RU/s by each partition key range** chart, and select **Apply**.
 
     ![Screenshot that shows the chart for uneven distribution of partition access.](../media/6-hot-partition-throughput.png)
 
@@ -29,11 +30,11 @@ In the previous unit, you learned how to design an efficient partitioning strate
 
 ### Review evenly distributed partitions for throughput
 
-1. Filter on the **Orders** collection.
+1. In the **Container(s)** dropdown list, select (filter on) **Orders**.
 
 1. On the **Number of requests** chart, find the time that you populated this collection.
 
-1. Enter that time on the **Max consumed RU/s by each partition key range** chart and select **Apply**.
+1. Enter that time on the **Max consumed RU/s by each partition key range** chart, and select **Apply**.
 
     ![Chart for even partition throughput.](../media/6-even-partitions-throughput.png)
 
@@ -45,13 +46,13 @@ In the previous unit, you learned how to design an efficient partitioning strate
 
 1. Select the **Storage** tab.
 
-1. Filter on the **mslearn** database.
+1. In the **Database(s)** dropdown list, select (filter on) **mslearn**.
 
     ![Screenshot that shows the Storage tab's database filter.](../media/6-metrics-storage-database-filter.png)
 
 ### Review unevenly distributed partitions for storage
 
-1. Filter on the **Hot Partition** collection.
+1. In the **Container(s)** dropdown list, select (filter on) **HotPartition**.
 
 1. Review the **Data + Index storage consumed per partition key range** chart. You see the uneven distribution of data among the partitions. When you have uneven storage, one partition will receive more requests than others.
 
@@ -61,7 +62,7 @@ In the previous unit, you learned how to design an efficient partitioning strate
 
 ### Review evenly distributed partitions for storage
 
-1. Filter on the **Orders** database.
+1. In the **Container(s)** dropdown list, select (filter on) **Orders**.
 
 1. Review the **Data + Index storage consumed per partition key range** chart.
 

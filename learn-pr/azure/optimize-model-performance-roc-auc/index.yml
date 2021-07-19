@@ -16,7 +16,7 @@ abstract: |
   - Explore how to assess and compare models using these curves
   - Practice fine-tuning a model using characteristics plotted on ROC curves
 prerequisites: Familiarity with machine learning models
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/machine-learning/optimize-model-performance-roc-auc.svg
 levels: 
 - beginner
 roles: 
