@@ -63,7 +63,7 @@ Now that the code is downloaded, we'll be deploying our back-end and front-end m
     - Pull the `mcr.microsoft.com/dotnet/aspnet:5.0` image.
     - Set the working directory within the image to `/app`.
     - Exposes port 80 and 443.
-    - Copy everything from the `/app` directory of the **build** image created above into the root directory of this image.
+    - Copy everything from the `/app` directory of the **build** image created above into the app directory of this image.
     - Sets the entrypoint of this image to `dotnet` and passes `backend.dll` as an argument.
 
 1. Save the Dockerfile, open a command prompt, and go to the directory that holds that file.
