@@ -6,9 +6,9 @@ In this unit, you add basic HTML content, open the HTML page in the browser, and
 
 Visual Studio Code provides basic support for HTML programming out of the box. There is syntax highlighting, smart completions with IntelliSense, and customizable formatting.
 
-1. Open your website in **Visual Studio Code**, then open the `index.html` file by selecting the `index.html` file in the **Explorer** window.
+1. Open your website in **Visual Studio Code**, then open the `index.html` file by selecting the `index.html` file in the **Explorer** pane.
  
-1. When the `index.html` page, type `html:5`, and then press <kbd>Enter</kbd>. HTML5 template code gets added to the file.
+1. When the `index.html` page, type `html:5`, and then press <kbd>Enter</kbd>. HTML5 template code is added to the file.
 
    Note: If the HTML5 template code is not added to the `index.html` file, try closing and reopening the file.
 
@@ -19,6 +19,8 @@ Visual Studio Code provides basic support for HTML programming out of the box. T
    <html lang="en">
    <head>
      <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Document</title>
    </head>
    <body>
@@ -35,6 +37,8 @@ The *character set* (charset) for UTF-8 may seem insignificant, but is crucial f
 
 ## Edit the head
 
+The *metadata* defines data about the HTML document, such as characterset, scripts, and which browser the web page opens in. 
+
 The *title* of a webpage appears at the top of a browser window, and is significant in a few ways. For example, the title is used by and displayed in search engines. Let's add a title.
 
 > [!IMPORTANT]
@@ -46,7 +50,9 @@ The *title* of a webpage appears at the top of a browser window, and is signific
    ...
    <head>
      <meta charset="utf-8">
-     <title>Simple website</title>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple website</title>
    ...
    ```
 
@@ -58,13 +64,15 @@ The *title* of a webpage appears at the top of a browser window, and is signific
    <link rel="stylesheet" href="">
    ```
 
-1. Update the `href` to `main.css`, and save the file by pressing <kbd>Control+S</kbd> on Windows or <kbd>Command+S</kbd> on macOS.
+1. Update the `href=` to `href=main.css`, and save the file by pressing <kbd>Control+S</kbd> on Windows or <kbd>Command+S</kbd> on macOS.
 
    ```html
    ...
    <head>
      <meta charset="utf-8">
-     <title>Task List</title>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
      <link rel="stylesheet" href="main.css">
    </head>
    ...
@@ -80,7 +88,7 @@ Let's start filling in the *body* element now.
 
     ```html
     <!DOCTYPE html>
-    <html lang="en" dir="ltr">
+    <html lang="en">
       <head>
         <meta charset="utf-8">
         <title>Simple website</title>
@@ -111,7 +119,7 @@ You can preview your webpage locally by opening the HTML file in a browser. Inst
    :::image type="content" source="../media/vs-code-open-in-browser.png" alt-text="Screenshot of Open in Browser in Visual Studio Code.":::
 
   > [!IMPORTANT]
-  > If you're having trouble, make sure you're directly right-clicking the filename icon or text.
+  > If you're having trouble, make sure you're directly right-clicking the filename icon or text. If a VS Code dialog appears, select **Yes, I trust the authors**; this is the Workspace Trust feature that lets you decide whether your project folders should allow or restrict automatic code execution. You just created the file, so is is safe.
 
   The webpage opens in your default browser.
 
@@ -119,11 +127,13 @@ You can preview your webpage locally by opening the HTML file in a browser. Inst
 
 You can inspect a webpage by using the developer tools in your browser. Let's give this a try.
 
-1. Open Developer Tools.
+1. Open Developer Tools by right-clicking in the web page and selecting **Inspect**, or try these shortcuts:
 
-   - In **Edge**, press the keyboard shortcut for **Developer Tools**, which is <kbd>F12</kbd> or <kbd>Ctrl-Shift+I</kbd>. Alternatively, view **Settings and more** by pressing <kbd>Alt+X</kbd>, and selecting **Developer Tools**.
+   - In **Edge** on Windows or Linux, press the keyboard shortcut for **Developer Tools**, which is <kbd>F12</kbd> or <kbd>Ctrl-Shift+I</kbd>. Alternatively, view **Settings and more** by pressing <kbd>Alt+X</kbd>, and selecting **Developer Tools**.
 
-   - In **Chrome**, press the keyboard shortcut for **Developer Tools**, which is <kbd>Option+Command+I</kbd> or <kbd>F12</kbd>.
+   - In **Chrome** on Windows or Linux, press the keyboard shortcut <kbd>Ctrl-Shift+I</kbd>. Or, open the Chrome Menu in the upper-right-hand corner of the browser window and select **More Tools > Developer Tools**.
+
+   - In **Chrome** on a Mac, press the keyboard shortcut for **Developer Tools**, which is <kbd>Option+Command+I</kbd> or <kbd>F12</kbd>.
 
 1. Select the **Elements** tab.
 
