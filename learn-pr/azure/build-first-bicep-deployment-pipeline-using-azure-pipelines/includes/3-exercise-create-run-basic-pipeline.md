@@ -158,6 +158,8 @@ You have created a pipeline definition. Here, you register the pipeline with Azu
 
 ## Inspect how pipeline execution can be linked back to a commit
 
+It's good to understand how to cross-reference a pipeline run to the commit that it contained. This can help you to diagnose problems and to trace the history of your deployments. Azure DevOps provides several ways to achieve this. Here, you manually inspect the commit history.
+
 1. Navigate back to the Repository overview screen by selecting **Repos**. Then, select **Commits**.
 
    :::image type="content" source="../media/3-pipeline-commit.png" alt-text="Screenshot of the Azure DevOps interface showing the commit, with the commit identifier and succeeded state highlighted." border="true":::

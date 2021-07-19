@@ -9,6 +9,8 @@ In this exercise, you'll:
 
 ## Add your website's Bicep file to the Git repository
 
+You've already prepared your website's Bicep file, which can be used to deploy different configurations of the website resources depending on the situation.
+
 1. Open the Visual Studio Code **Explorer**.
 
 1. In the _deploy_ folder, create a new file named _main.bicep_. Make sure you create inside the _deploy_ folder and not at the root of the repository:
@@ -37,9 +39,12 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 
 1. Remove the `script` step from the pipeline definition by deleting the bottom two lines of the file.
 
+   > [!TIP]
+   > When you work in Visual Studio Code and have installed the Azure Pipelines extension, try using the <kbd>Ctrl+Space</kbd> key combination. It shows a context menu of suggested elements to add at your current cursor position. 
+
 1. Because Bicep is still new, it changes regularly. It's a good idea to upgrade the version of Bicep on the agent before you start to use it, to ensure you can use all of the latest features. Add a new task at the bottom of the file to run the `az bicep upgrade` command:
 
-   :::code language="yaml" source="code/6-pipeline.yaml" range="9-14" :::
+   :::code language="yaml" source="code/6-pipeline.yaml" range="6-14" highlight="4-9" :::
 
    Notice that the task includes a variable named `$(ServiceConnectionName)`. This variable hasn't been defined yet. You'll add it soon.
 
@@ -48,10 +53,9 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 
 1. Below the task you just added, add another Azure CLI task to deploy your Bicep file by using the `az deployment group create` command:
 
-   :::code language="yaml" source="code/6-pipeline.yaml" range="16-21" :::
+   :::code language="yaml" source="code/6-pipeline.yaml" range="6-21" range="11-16" :::
 
-   > [!TIP]
-   > When you work in Visual Studio Code and have installed the Azure Pipelines extension, try using the <kbd>Ctrl+Space</kbd> key combination. It shows a context menu of suggested elements to add at your current cursor position. 
+   Notice that this step uses a system variable, `$(Build.BuildNumber)`, to name the deployment. This way, you can easily see which pipeline run a deployment corresponds to.
 
 1. Save the changes to the file. Your file should look like the below:
 
@@ -115,6 +119,8 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 ## Run your pipeline
 
 Now you're ready to run your pipeline!
+
+Your template includes a storage account, which your website team uses to store toy instruction manuals. Because you're still testing your environments, you don't need to deploy the storage account every time you deploy the website, so you made this a parameter. Here, you run the pipeline and override the deployment so that it doesn't deploy the storage account this time.
 
 1. Select **Run**.
 
