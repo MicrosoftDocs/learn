@@ -1,4 +1,4 @@
-Now that you have a basic pipeline, you want to use it to deploy your website's Bicep file to Azure.
+Now that you have a basic pipeline, and you've configured your Azure and Azure Pipelines environments to connect together, you're ready to deploy your website's Bicep file to Azure from your pipeline.
 
 In this exercise, you'll:
 
@@ -63,7 +63,13 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 
 ## Add pipeline variables
 
-1. In your browser, select **Pipelines**. Select your pipeline.
+1. In your browser, select **Pipelines**.
+
+   <!-- TODO add screenshot -->
+
+1. Select your pipeline.
+
+   <!-- TODO add screenshot -->
 
 1. Select the **Edit** button to configure your pipeline.
 
@@ -98,7 +104,7 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 
    :::image type="content" source="../media/6-edit-pipeline-variable-deploytoymanualsstorageaccount.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline variable editor." border="true":::
 
-1. After you've created all three variables, select **Save**.
+1. After you've created all four variables, select **Save**.
 
    :::image type="content" source="../media/6-edit-pipeline-save-variables.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline variable editor, with the Save button highlighted." border="true":::
 
@@ -126,6 +132,8 @@ Now you're ready to run your pipeline!
 
 1. Select **Job** to open the job. You can monitor the job as it runs, or wait until the job completes to review its history.
 
+   <!-- TODO confirm where to click -->
+
 1. Select **fx 1 queue time variable used**.
 
    :::image type="content" source="../media/6-log-variables.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline log, with the '1 queue time variable used' item highlighted." border="true":::
@@ -150,4 +158,10 @@ Now you're ready to run your pipeline!
 
 1. Select **1 Succeeded** to see the details of the deployment.
 
+   <!-- TODO add screenshot -->
+
+   Notice that the deployment identifier is the pipeline run number.
+
 1. Select the deployment to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's an App Service plan and an app.
+
+   <!-- TODO add screenshot -->

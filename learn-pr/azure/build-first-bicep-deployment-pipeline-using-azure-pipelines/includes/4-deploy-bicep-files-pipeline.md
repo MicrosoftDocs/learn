@@ -1,8 +1,18 @@
 Now that you've created a basic pipeline, you're ready to configure it to deploy your Bicep templates. In this unit you'll learn how to deploy your Bicep templates from your pipeline, and how you can configure the deployment steps.
 
-## Create a service connection
+## Service connections
 
-As you learned previously, a pipeline uses a service connection to store the service principal credentials securely. 
+When you deploy a Bicep file from your own computer, you use the Azure CLI or Azure PowerShell. Before you can deploy your code, you need to sign in to Azure. Usually the tools ask you to enter your email address and password in a browser. After verifying your credentials, the tools know who you are and can verify that you have permission to deploy your Bicep file.
+
+Since pipelines are run without any human present, they need to authenticate to Azure by using a service principal. You typically create a service principal manually before you create your pipeline. A service principal's credentials consist of an _application ID_ and a secret, which is usually a key or a certificate. You use a _service connection_ in Azure Pipelines to securely store these credentials so that your pipeline can use them. A service connection also includes some other information to help your pipeline identify the Azure environment that you want to deploy to.
+
+When you create a service connection, you give it a name. Steps refer to the service connection by using this name. That way, your pipeline YAML code doesn't contain any secret information.
+
+When your pipeline starts, the agent that's running your deployment steps will have access to the service connection, including its credentials. A pipeline step uses the credentials to sign in to Azure, just like you do yourself. Then, the actions that step takes uses the service principal's _identity_.
+
+You need to ensure that your service principal has the permissions it needs to be able to execute your deployment steps. For example, you might need to assign the service principal the contributor role for the resource group that it deploys your resources to.
+
+:::image type="content" source="../media/4-service-connection.png" alt-text="Diagram that shows a pipeline that includes an Azure deployment step, which accesses a service connection and then deploys to Azure." border="false":::
 
 > [!WARNING]
 > You might be tempted to store your service principal's credentials in your YAML file and log in using the `az login` command. You should never do this. Credentials in a YAML file will be stored in clear text. Anyone who has access to your repository could take them. Even though you can restrict access to your Azure DevOps organization and project, whenever someone clones your repository the YAML file holding the credentials will be on that person's computer. It's important to use a service credential whenever you work with Azure from a pipeline.

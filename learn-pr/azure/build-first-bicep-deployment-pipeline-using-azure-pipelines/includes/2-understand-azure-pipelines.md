@@ -34,7 +34,7 @@ You need to instruct Azure Pipelines _when_ to run your pipeline by using a _tri
 
 :::image type="content" source="../media/2-trigger.png" alt-text="Diagram that shows a trigger initiating a pipeline." border="false":::
 
-## Steps and jobs
+## Steps
 
 A step represents a single operation that the pipeline will perform. Think of a step as being like the individual command you execute against the Azure CLI or Azure PowerShell. For most deployments, you execute several steps in a sequence. You define the sequence, and all of the details of each step, in your pipeline YAML file.
 
@@ -44,6 +44,8 @@ There are two types of steps in Azure Pipelines:
 - _Tasks_ provide more advanced functionality and give you a convenient way to access lots of different capabilities without writing script statements. For example, there are built-in tasks to run the Azure CLI or Azure PowerShell, to test your code, to upload files to an FTP server, and many more. Additionally, anyone can write their own task and publish it to the Visual Studio Marketplace, so there's a large set of commercial and open-source tasks available, too.
 
 Some people prefer to use script statements rather than built-in tasks, because they provide more control over what is going on. Other people prefer to use tasks so they don't need to write and manage scripts. In this module, we use a mixture of both approaches.
+
+## Jobs
 
 Azure Pipelines creates groups of steps called _jobs_. Each job represents an ordered set of steps. You always have at least one job in a pipeline, and when you create complex deployments it's common to have more than one job.
 
@@ -56,20 +58,6 @@ Azure Pipelines creates groups of steps called _jobs_. Each job represents an or
 
 > [!NOTE]
 > Azure Pipelines also has the concepts of _stages_, which enable you to divide your pipeline up into logical phases, and to add manual checks at various points in your pipeline's execution. You’ll learn more about stages in future modules.
-
-## Service connections
-
-When you deploy a Bicep file from your own computer, you use the Azure CLI or Azure PowerShell. Before you can deploy your code, you need to sign in to Azure. Usually the tools ask you to enter your email address and password in a browser. After verifying your credentials, the tools know who you are and can verify that you have permission to deploy your Bicep file.
-
-Since pipelines are run without any human present, they need to authenticate to Azure by using a service principal. You typically create a service principal manually before you create your pipeline. A service principal's credentials consist of an _application ID_ and a secret, which is usually a key or a certificate. You use a _service connection_ in Azure Pipelines to securely store these credentials so that your pipeline can use them. A service connection also includes some other information to help your pipeline identify the Azure environment that you want to deploy to.
-
-When you create a service connection, you give it a name. Steps refer to the service connection by using this name. That way, your pipeline YAML code doesn't contain any secret information.
-
-When your pipeline starts, the agent that's running your deployment steps will have access to the service connection, including its credentials. A pipeline step uses the credentials to sign in to Azure, just like you do yourself. Then, the actions that step takes uses the service principal's _identity_.
-
-You need to ensure that your service principal has the permissions it needs to be able to execute your deployment steps. For example, you might need to assign the service principal the contributor role for the resource group that it deploys your resources to.
-
-:::image type="content" source="../media/2-service-connection.png" alt-text="Diagram that shows a pipeline that includes an Azure deployment step, which accesses a service connection and then deploys to Azure." border="false":::
 
 ## Basic pipeline example
 

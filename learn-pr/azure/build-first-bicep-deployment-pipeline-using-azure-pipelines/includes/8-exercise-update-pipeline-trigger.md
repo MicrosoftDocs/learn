@@ -56,9 +56,7 @@ During the process, you'll:
 
 1. To diagnose the failure, select the **Job**, and select the failed **AzureCLI** task. Scroll across to see the full error message. Notice that it includes the following text:
 
-   ```output
-   There was a conflict. AlwaysOn cannot be set for this site as the plan does not allow it. For more information on pricing and features, please see: https://aka.ms/appservicepricingdetails
-   ```
+   > There was a conflict. AlwaysOn cannot be set for this site as the plan does not allow it. For more information on pricing and features, please see: https://aka.ms/appservicepricingdetails
 
    This error message indicates that the deployment failed because the App Service app is deployed using the _F1_ free tier, which doesn't support the Always On feature.
 

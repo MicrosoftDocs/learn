@@ -196,6 +196,10 @@ Now that you've created the resource group and service principal, you create a s
    > [!NOTE]
    > If the verification doesn't succeed, check you copied the right details for the service principal, subscription, and tenant. Wait a few minutes to allow time for Azure's role assignments to replicate globally, and then try again.
 
-1. In **Service connection name**, enter _ToyWebsite_. Ensure **Grant access permission to all pipelines** is checked. Select **Verify and save**.
+1. In **Service connection name**, enter _ToyWebsite_. Ensure **Grant access permission to all pipelines** is checked.
 
    :::image type="content" source="../media/5-create-service-connection-principal-details-3.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Create service connection' page, with the service connection name filled out, and the 'Verify and save' button highlighted." border="true":::
+
+1. Select **Verify and save**. Azure Pipelines saves your new service connection and displays it in the list of service connections.
+
+   :::image type="content" source="../media/5-service-connection-created.png" alt-text="Screenshot of the Azure DevOps interface showing the list of service connections, with the ToyWebsite service connection included." border="true":::

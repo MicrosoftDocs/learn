@@ -2,7 +2,7 @@ You now have a working pipeline that deploys your Bicep file to your Azure envir
 
 ## What are pipeline triggers?
 
-Pipeline triggers automatically run your pipeline based on rules you specify. You can configure them to run your pipeline at scheduled intervals. You can also configure triggers to run your pipeline every time the files in your repository changes. You do this because it's a good idea to run all of your tests and deployment steps every time your code changes.
+Pipeline triggers automatically run your pipeline based on rules you specify. You can configure them to run your pipeline at scheduled intervals. You can also configure triggers to run your pipeline every time the files in your repository changes. You do this because it's a good idea to run all of your tests and deployment steps every time sometime changes your code.
 
 If you don't use an automatic trigger, someone might make a change to a Bicep file, and even commit it and push it to the repository. If they forget to run the pipeline, then you have a difference between the resource definitions in your Bicep file and the resources that are actually deployed to your Azure environment. Suppose this happens for a couple of subsequent commits and pushes. If someone now introduces an error or misconfiguration in the Bicep file during one of these changes, it's hard to track back to where the error was introduced, since you have several commits to work through. After a while, you won't trust that your Bicep code truly represents your infrastructure, and its value is eroded.
 
