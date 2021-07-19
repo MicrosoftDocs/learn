@@ -7,7 +7,7 @@ If the validation check succeeds, you can trigger the pipeline. **Trigger now** 
 [ ![Trigger now option in Azure Data Factory](../media/trigger-now-azure-data-factory.png) ](../media/trigger-now-azure-data-factory.png#lightbox)
 
 
-If you triggered the data flow, data flow will start a just-in-time Apche Spark cluster, which terminates once the pipeline is finished and the job is concluded. 
+If you triggered the data flow, data flow will start a just-in-time Apache Spark cluster, which terminates once the pipeline is finished and the job is concluded. 
 However, since it’s a just-in-time Apache Spark cluster, the data flow activity might take 5-7 minutes since the Apache Spark cluster has to be activated.  
 
 Once you start developing more pipelines, it is important to keep track of the pipelines you created. To do so, there is a Monitor tab in Azure Data Factory, which by default will store all the run information for 45 days. If you want to keep the metrics longer than the default time, you can configure Azure Data Factory with Azure Monitor. 
