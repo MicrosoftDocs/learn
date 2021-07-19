@@ -2,7 +2,7 @@ RBAC includes many built-in roles, can be assigned at different scopes, and allo
 
 This diagram is a high-level view of how the Azure RBAC roles and Azure AD administrator roles are related.
 
-:::image type="content" source="../media/AZ104_RBAC_Authentication-7b5a54c3.png" alt-text="Azure AD Admin roles and Azure RBAC roles work together to authenticate users.":::
+:::image type="content" source="../media/rbac-authentication.png" alt-text="Azure AD Admin roles and Azure RBAC roles work together to authenticate users.":::
 
 
 > [!NOTE]
