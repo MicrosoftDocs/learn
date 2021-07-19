@@ -2,7 +2,7 @@ An action group is a collection of notification preferences defined by the owner
 
 **Notifications** configure the method in which users will be notified when the action group triggers.
 
-:::image type="content" source="../media/AZ104_Action_Groups-9f8683cc.png" alt-text="Screenshot of the Notifications tab with the listed below this graphic.":::
+:::image type="content" source="../media/action-groups.png" alt-text="Screenshot of the Notifications tab with the listed below this graphic.":::
 
 
  -  **Email Azure Resource Manager role** – Send email to the members of the subscription's role. Email will only be sent to Azure AD user members of the role. Email will not be sent to Azure AD groups or service principals.
@@ -10,7 +10,7 @@ An action group is a collection of notification preferences defined by the owner
 
 **Actions** configure the method in which actions are performed when the action group triggers.
 
-:::image type="content" source="../media/AZ104_Action_Groups2-13fd90a3.png" alt-text="Screenshot of the Actions tab with the items listed below this graphic.":::
+:::image type="content" source="../media/action-groups-2.png" alt-text="Screenshot of the Actions tab with the items listed below this graphic.":::
 
 
  -  **Automation runbook** \- An automation runbook is the ability to define, build, orchestrate, manage, and report on workflows that support system and network operational processes. A runbook workflow can potentially interact with all types of infrastructure elements, such as applications, databases, and hardware.
