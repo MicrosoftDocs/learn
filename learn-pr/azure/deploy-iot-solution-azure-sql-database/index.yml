@@ -41,7 +41,7 @@ units:
 - learn.azure.deploy-iot-solution-azure-sql-database.3-exercise-deploy
 - learn.azure.deploy-iot-solution-azure-sql-database.4-store-iot-data
 - learn.azure.deploy-iot-solution-azure-sql-database.5-exercise-configure
-- learn.azure.deploy-iot-solution-azure-sql-database.6-exercise-powerbi
+- learn.azure.deploy-iot-solution-azure-sql-database.6-exercise-power-bi
 - learn.azure.deploy-iot-solution-azure-sql-database.7-summary
 badge:
   uid: learn.azure.deploy-iot-solution-azure-sql-database.badge
