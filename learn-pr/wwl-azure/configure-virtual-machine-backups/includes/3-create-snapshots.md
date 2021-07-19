@@ -1,6 +1,6 @@
 An Azure backup job consists of two phases. First, a virtual machine snapshot is taken. Second, the virtual machine snapshot is transferred to the Azure Recovery Services vault.
 
-:::image type="content" source="../media/AZ104_VM_Snapshot-6cf6d85e.png" alt-text="A virtual machine snapshot is transferring data to an Azure Recovery Services vault.":::
+:::image type="content" source="../media/virtual-machine-snapshot.png" alt-text="A virtual machine snapshot is transferring data to an Azure Recovery Services vault.":::
 
 
 A recovery point is considered created only after both steps are completed. As a part of the upgrade, a recovery point is created as soon as the snapshot is finished. This recovery point is used to perform a restore. You can identify the recovery point in the Azure portal by using “snapshot” as the recovery point type. After the snapshot is transferred to the vault, the recovery point type changes to “snapshot and vault”.

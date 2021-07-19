@@ -1,6 +1,6 @@
 Another method of backing up virtual machines is using a Data Protection Manager (DPM) or Microsoft Azure Backup Server (MABS) server. This method can be used for specialized workloads, virtual machines, or files, folders, and volumes. Specialized workloads can include SharePoint, Exchange, and SQL Server.
 
-:::image type="content" source="../media/AZ104_MABS-d476f001.png" alt-text="Diagram showing workloads, vms, and files being backed up to Azure using DPM or MABS.":::
+:::image type="content" source="../media/microsoft-azure-backup-server.png" alt-text="Diagram showing workloads, vms, and files being backed up to Azure using DPM or MABS.":::
 
 
 ## Advantages
