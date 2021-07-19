@@ -3,7 +3,7 @@ A Kubernetes cluster is divided into two components:
  -  **Azure-managed nodes**, which provide the core Kubernetes services and orchestration of application workloads.
  -  **Customer-managed nodes** that run your application workloads.
 
-:::image type="content" source="../media/AZ104_AKS_Clusters-40ef32c4.png" alt-text="Graphic representing an Azure-managed cluster node, which is in a box. A second box within contains a scheduler, controller, API server, and storage. A separate customer-managed node box has boxes within containing container runtime, container, kubelet and kube-proxy.":::
+:::image type="content" source="../media/azure-kubernetes-service-clusters.png" alt-text="Graphic representing an Azure-managed cluster node, which is in a box. A second box within contains a scheduler, controller, API server, and storage. A separate customer-managed node box has boxes within containing container runtime, container, kubelet and kube-proxy.":::
 
 
 ## Azure-managed node

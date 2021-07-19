@@ -1,6 +1,6 @@
 Applications that run in Azure Kubernetes Service (AKS) may need to store and retrieve data. For some application workloads, this data storage can use local, fast storage on the node that is no longer needed when the pods are deleted. Other application workloads may require storage that persists on more regular data volumes within the Azure platform. Multiple pods may need to share the same data volumes, or reattach data volumes if the pod is rescheduled on a different node. Finally, you may need to inject sensitive data or application configuration information into pods.
 
-:::image type="content" source="../media/AZ104_AKS_Storage-e2715159.png" alt-text="Storage options for applications in an Azure Kubernetes Services cluster.":::
+:::image type="content" source="../media/azure-kubernetes-service-storage.png" alt-text="Storage options for applications in an Azure Kubernetes Services cluster.":::
 
 
 This section introduces the core concepts that provide storage to your applications in AKS:

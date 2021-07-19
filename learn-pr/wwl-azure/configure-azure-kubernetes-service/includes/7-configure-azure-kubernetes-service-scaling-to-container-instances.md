@@ -1,4 +1,4 @@
-:::image type="content" source="../media/AZ104_AKS_Burst-ca432aa5.png" alt-text="An AKS cluster rapid burst pods to the ACI.":::
+:::image type="content" source="../media/azure-kubernetes-service-burst.png" alt-text="An AKS cluster rapid burst pods to the ACI.":::
 
 
 To rapidly scale your AKS cluster, you can integrate with Azure Container Instances (ACI). Kubernetes has built-in components to scale the replica and node count. However, if your application needs to rapidly scale, the horizontal pod autoscaler may schedule more pods than can be provided by the existing compute resources in the node pool. If configured, this scenario would then trigger the cluster autoscaler to deploy additional nodes in the node pool. It may take a few minutes for those nodes to successfully provision.

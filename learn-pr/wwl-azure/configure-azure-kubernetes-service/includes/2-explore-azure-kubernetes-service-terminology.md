@@ -1,4 +1,4 @@
-:::image type="content" source="../media/AZ104_AKS_Terms-9d86710c.png" alt-text="Pools contain nodes. Nodes contain pods. Pods contain containers.":::
+:::image type="content" source="../media/azure-kubernetes-service-terms.png" alt-text="Pools contain nodes. Nodes contain pods. Pods contain containers.":::
 
 
 **Pools** are groups of nodes with identical configurations.
