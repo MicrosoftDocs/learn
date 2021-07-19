@@ -1,18 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.visual-studio-test-concepts.6-knowledge-check
-title: Knowledge check
+uid: learn.visual-studio-test-concepts.4-different-types-of-testing
+title: Different Types of Testing and the Testing Pyramid
 metadata:
-  unitType: knowledge_check
-  title: Knowledge check
-  description: Test your knowledge on the common types of tests including unit tests, integrations tests, and more!
+  title: Different Types of Testing and the Testing Pyramid
+  description: You may hear of many different types of testing including unit testing, performance testing, load testing, UI testing, and so on. These types of tests all have different advantages in improving software quality.
   ms.date: 6/28/2021
   author: kendrahavens
   ms.author: kehavens
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
-  [!include[](includes/6-knowledge-check.md)]
+  [!include[](includes/4-different-types-of-testing.md)]
 quiz:
   questions:
   - content: "What is the most common type of test?"

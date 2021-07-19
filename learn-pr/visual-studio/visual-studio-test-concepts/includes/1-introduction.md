@@ -11,7 +11,7 @@ There are limitless testing technologies out there, but no matter your language 
 
 If you want to get started testing right away see [Unit testing C# with MSTest and .NET](https://docs.microsoft.com/dotnet/core/testing/unit-testing-with-mstest) that dives into writing and running tests.
 
-:::image type="content" source="../media/test-intro-collage.png" alt-text="Collage of test features in Microsoft tools including the Visual Studio and Azure DevOps.":::
+:::image type="content" source="../media/test-intro-collage.png" alt-text="Collage showing screenshots of test features in Microsoft tools including Visual Studio and Azure DevOps.":::
 
 ## Example scenario
 

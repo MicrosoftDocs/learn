@@ -10,7 +10,7 @@ There is much guidance out there when it comes to testing. We'll cover some of t
 Test driven development, or TDD, is a method of directly coupling testing with every part of your daily development. Developers who use TDD typically start developing by first writing a test that fails and then writing the code that makes the test pass. This approach means product code is more likely to get high test coverage and the tests typically come first. Many developers find this pattern useful to help them prioritize good architecture from the start of development and stay laser focused on each part of the functionality they need to implement. This school of thought advocates for testing not being an after-thought of development, but rather a driving force.
 
 For example, in the image below you can see the `AddTest` is written and failing while the `Add` method is still yet to be implemented. This test will fail until the method is implemented.
-:::image type="content" source="../media/test-tdd.png" alt-text="A test method in the Visual Studio editor named AddTest is implemented and failing. The Add method is also visible and throws a NotImplementedException.":::
+:::image type="content" source="../media/test-tdd.png" alt-text="Screenshot of a test method in the Visual Studio editor named AddTest is implemented and failing. The Add method is also visible and throws a NotImplementedException.":::
 
 There is a type of TDD called Red/Green/Refactor that gives further order to this process: (1) Write a failing "red" test (2) Add the necessary product code to make that test pass or turn "green" (3) "Refactor" now that you have the correct functionality. This pattern provides an easy guide as you get into a programming flow.
 
@@ -21,7 +21,7 @@ There is a type of TDD called Red/Green/Refactor that gives further order to thi
 Behavior driven development (or BDD) is very similar to TDD, but with greater focus on using acceptance tests to guide development at a high level. You may work with your customers, business partners, or program managers to define a set of tests that list the needed criteria for the product. These tests are usually much higher-level descriptions of functionality than unit tests and are more business-oriented.
 
 BDD can use many different tools, but they all tend to focus on documenting different stages of expectations for the functionality such as the comments do in the test below. They also likely list the scope of what is expected. In the basic example pictured below, the comments specify that this app is only expected to add two numbers.
-:::image type="content" source="../media/test-bdd.png" alt-text="An empty test method in Visual Studio with several comments describing business needs of the app's calculator function.":::
+:::image type="content" source="../media/test-bdd.png" alt-text="A screenshot of an empty test method in Visual Studio with several comments describing business needs of the app's calculator function.":::
 
 ## DRY (Don't Repeat Yourself)
 

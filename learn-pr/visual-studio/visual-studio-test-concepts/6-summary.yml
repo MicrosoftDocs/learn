@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.visual-studio-test-concepts.9-summary
+uid: learn.visual-studio-test-concepts.6-summary
 title: Summary
 metadata:
   unitType: summary
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-visual-studio
 durationInMinutes: 1
 content: |
-  [!include[](includes/9-summary.md)]
+  [!include[](includes/6-summary.md)]
