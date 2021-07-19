@@ -25,7 +25,7 @@ In this exercise, you'll:
    git push
    ```
 
-## Replace the existing tasks in the pipeline by a task that will deploy your Bicep template
+## Replace the pipeline steps
 
 Here, you update your pipeline definition to deploy your Bicep file to Azure by using the service connection.
 
@@ -37,7 +37,7 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 
    :::code language="yaml" source="code/6-pipeline.yaml" range="9-14" :::
 
-   Notice that the task includes a variable named `$(ServiceConnectionName)`. This doesn't exist yet. You will add it soon.
+   Notice that the task includes a variable named `$(ServiceConnectionName)`. This variable hasn't been defined yet. You'll add it soon.
 
    > [!NOTE]
    > It's a good idea to type this in yourself instead of copying and pasting. Watch out for the file's indentation. If your indentation isn't correct, your YAML file won't be valid. Visual Studio Code indicates errors by showing you squiggly lines.

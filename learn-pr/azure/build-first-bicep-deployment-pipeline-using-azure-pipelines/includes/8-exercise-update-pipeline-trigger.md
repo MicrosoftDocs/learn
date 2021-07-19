@@ -75,13 +75,13 @@ You speak to your colleague and decide that the Always On setting only needs to 
 
 1. Change the application's `alwaysOn` setting to use the appropriate configuration map value for the environment type:
 
-   :::code language="bicep" source="code/8-main-fixed.bicep" range="72" :::
+   :::code language="bicep" source="code/8-main-fixed.bicep" range="65-81" highlight="8" :::
 
 1. Save the changes to the file.
 
 1. Use the Visual Studio Code terminal to commit your changes and push them:
 
-   ```cmd
+   ```bash
    git add .
    git commit -m 'Enable App Service Always On for production environments only'
    git push
