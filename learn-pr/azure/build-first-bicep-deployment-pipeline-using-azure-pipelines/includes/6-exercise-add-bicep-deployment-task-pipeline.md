@@ -9,7 +9,11 @@ In this exercise, you'll:
 
 ## Add your website's Bicep file to the Git repository
 
-1. In Visual Studio Code, in the _deploy_ folder, create a new file named _main.bicep_.
+1. Open the Visual Studio Code **Explorer**.
+
+1. In the _deploy_ folder, create a new file named _main.bicep_. Make sure you create inside the _deploy_ folder and not at the root of the repository:
+
+   :::image type="content" source="../media/6-vs-code-main-bicep.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the main.bicep file highlighted and located in the deploy folder." border="true":::
 
 1. Copy the following into the _main.bicep_ file:
 
@@ -65,11 +69,11 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 
 1. In your browser, select **Pipelines**.
 
-   <!-- TODO add screenshot -->
+   :::image type="content" source="../media/6-pipelines-menu.png" alt-text="Screenshot of the Azure DevOps interface showing the menu, with Pipelines highlighted." border="true":::
 
 1. Select your pipeline.
 
-   <!-- TODO add screenshot -->
+   :::image type="content" source="../media/6-pipelines-list.png" alt-text="Screenshot of the Azure DevOps interface showing the pipelines list, with the toy-website pipeline highlighted." border="true":::
 
 1. Select the **Edit** button to configure your pipeline.
 
@@ -132,7 +136,11 @@ Now you're ready to run your pipeline!
 
 1. Select **Job** to open the job. You can monitor the job as it runs, or wait until the job completes to review its history.
 
-   <!-- TODO confirm where to click -->
+   Wait for the job to complete.
+
+1. Select **Job**.
+
+   :::image type="content" source="../media/6-pipeline-run-job.png" alt-text="Screenshot of the Azure DevOps interface showing the job page, with the Job menu item highlighted." border="true":::
 
 1. Select **fx 1 queue time variable used**.
 
@@ -158,10 +166,10 @@ Now you're ready to run your pipeline!
 
 1. Select **1 Succeeded** to see the details of the deployment.
 
-   <!-- TODO add screenshot -->
+   :::image type="content" source="../media/6-portal-deployment-list.png" alt-text="Screenshot of the Azure portal, showing the resource group deployment history, and the deployment highlighted." border="true":::
 
-   Notice that the deployment identifier is the pipeline run number.
+   Notice that the deployment identifier is a number assigned by the pipeline.
 
 1. Select the deployment to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's an App Service plan and an app.
 
-   <!-- TODO add screenshot -->
+   :::image type="content" source="../media/6-portal-deployment-details.png" alt-text="Screenshot of the Azure portal, showing the resource group deployment details, with the App Service resources highlighted." border="true":::
