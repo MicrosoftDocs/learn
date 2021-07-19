@@ -94,7 +94,7 @@ Now that you've made the changes on your branch, you can verify that the changes
 
 ## Merge your branch
 
-Your website team is now ready to launch the updated website with the Azure Cosmos DB database included. You'll merge the **add-database** branch into the **main** branch.
+Your website team has tested the changes, and is now ready to launch the updated website with the Azure Cosmos DB database included. You'll merge the **add-database** branch into the **main** branch.
 
 1. Verify that you're on the **main** branch by running `git status` and by looking at the branch name in the status bar.
 
