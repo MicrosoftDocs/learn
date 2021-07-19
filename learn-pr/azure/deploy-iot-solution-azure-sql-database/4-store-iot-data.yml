@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.deploy-iot-solution-azure-sql-database.4-store-iot-data
+title: Store IoT data in real time with Azure SQL Database
+metadata:
+  title: Store IoT data in real time with Azure SQL Database
+  description: In this unit we discuss how device / streaming simulation works. You will learn how to process/store the data in Azure SQL Database and the best practices for optimizing performance/throughput.
+  ms.date: 07/19/2021
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-devops-actions
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-store-iot-data.md)]
