@@ -1,6 +1,6 @@
 When using private DNS zones, you can use your own custom domain names rather than the Azure-provided names. Using custom domain names helps you to tailor your virtual network architecture to best suit your organization's needs. It provides name resolution for virtual machines (VMs) within a virtual network and between virtual networks. Additionally, you can configure zones names with a split-horizon view, which allows a private and a public DNS zone to share the name.
 
-:::image type="content" source="../media/AZ104_DNS_Private_Domains-3541278c.png" alt-text="Azure DNS responds to a request with a private IP address.":::
+:::image type="content" source="../media/dns-private-domains.png" alt-text="Azure DNS responds to a request with a private IP address.":::
 
 
 The DNS records for the private zone are not viewable or retrievable. But, the DNS records are registered and will resolve successfully.

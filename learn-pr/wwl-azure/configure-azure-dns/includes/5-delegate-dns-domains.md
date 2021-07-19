@@ -5,7 +5,7 @@ To delegate your domain to Azure DNS, you first need to know the name server nam
 
 The easiest way to locate the name servers assigned to your zone is through the Azure portal. In this example, the zone ‘contoso.net’ has been assigned four name servers: ‘ns1-01.azure-dns.com’, ‘ns2-01.azure-dns.net’, ‘ns3-01.azure-dns.org’, and ‘ns4-01.azure-dns.info’:
 
-:::image type="content" source="../media/AZ104_DNS_Name_Servers-991b82d0.png" alt-text="Screenshot from the Azure portal where in this example, the zone contoso.net has been assigned name servers ns1-01.azure-dns.com, ns2-01.azure-dns.net, ns3-01.azure-dns.org, and ns4-01.azure-dns.info":::
+:::image type="content" source="../media/dns-name-servers.png" alt-text="Screenshot from the Azure portal where in this example, the zone contoso.net has been assigned name servers ns1-01.azure-dns.com, ns2-01.azure-dns.net, ns3-01.azure-dns.org, and ns4-01.azure-dns.info":::
 
 
 Once the DNS zone is created, and you have the name servers, you need to update the parent domain. Each registrar has their own DNS management tools to change the name server records for a domain. In the registrar’s DNS management page, edit the NS records and replace the NS records with the ones Azure DNS created.
