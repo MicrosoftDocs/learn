@@ -10,6 +10,6 @@ Now, your team can move forward and create a new Azure Cosmos DB SQL API account
 
 To learn more about the topics discussed in this module, please check out our documentation:
 
-1. Read about the [Azure Cosmos DB resource model](/azure/cosmos-db/account-databases-containers-items) and different entities in the resource model hierarchy.
+- Read about the [Azure Cosmos DB resource model](/azure/cosmos-db/account-databases-containers-items) and different entities in the resource model hierarchy.
 
-1. If you need help choosing an API to select for your Azure Cosmos DB deployment, [this article discusses the different APIs](/azure/cosmos-db/choose-api) and how your workload and requirements will influence your choice.
+- If you need help choosing an API to select for your Azure Cosmos DB deployment, [this article discusses the different APIs](/azure/cosmos-db/choose-api) and how your workload and requirements will influence your choice.
