@@ -1,6 +1,6 @@
 Backup Center provides a single unified management experience in Azure for enterprises to govern, monitor, operate, and analyze backups at scale. As such, it's consistent with Azure’s native management experiences.
 
-:::image type="content" source="../media/AZ-104_Backup_Center-dc46f070.png" alt-text="Screenshot of the Backup Center. Jobs and Backup Instances are shown.":::
+:::image type="content" source="../media/backup-center.png" alt-text="Screenshot of the Backup Center. Jobs and Backup Instances are shown.":::
 
 
 Some of the key benefits of Backup Center include:
