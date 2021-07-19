@@ -38,7 +38,7 @@ The *character set* (charset) for UTF-8 may seem insignificant, but is crucial f
 
 ## Edit the head
 
-The *metadata* defines data about the HTML document, such as characterset, scripts, and which browser the webpage opens in. 
+The *metadata* defines data about the HTML document, such as character set, scripts, and which browser the webpage opens in. 
 
 The *title* of a webpage appears at the top of a browser window, and is significant in many ways. For example, the title is used by and displayed in search engines. Let's add a title.
 
@@ -115,7 +115,7 @@ Before the next step, make sure your file is saved by selecting <kbd>Control+S</
 
 ## Open in browser
 
-You can preview your webpage locally by opening the HTML file in a browser. Instead of a website address that begins with `https://`, your browser points to the local file path. For example, the path might look similar to the following: *file:///Users/username/Desktop/public/index.html*.
+You can preview your webpage locally by opening the HTML file in a browser. Instead of a website address that begins with `https://`, your browser points to the local file path, which should  look similar to *file:///Users/<username>/Desktop/public/index.html*, where <username> is your ID.
 
 - To preview using **Visual Studio Code**, right-click `index.html`, and select **Open In Default Browser**, or select the `index.html` file and use the keyboard shortcut <kbd>Alt+B</kbd>.
 
