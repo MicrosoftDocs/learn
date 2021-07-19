@@ -1,4 +1,4 @@
-Recently, your company acquired a smaller competitor. This company deployed its Azure resources using ARM JSON templates and the Azure portal. You have already started the process of converting the JSON templates to Bicep, but now you need to address the resources that were deployed manually through the Azure portal. You want to learn about the different methods of exporting Azure resources to templates and the limitations of this process, while following recommended workflow.
+Recently, your company acquired a smaller competitor. This company deployed its Azure resources using ARM JSON templates and the Azure portal. You've already started the process of converting the JSON templates to Bicep, but now you need to address the resources deployed manually through the Azure portal. You want to learn about the different methods of exporting Azure resources to templates and the limitations of this process, while following recommended workflow.
 
 ## Export resources from the Azure portal
 
@@ -26,7 +26,7 @@ To export a template from the resource from the Azure portal:
 
 1. Navigate to the resource group that contains the resource you want to export.
 
-2. In the list of resources in the resource group, click the resource you want to export. This will open up the resource blade.
+2. In the list of resources in the resource group, click the resource you want to export. The resource blade will open up.
 
 3. From the resource blade under the **Automation** section, select **Export template**, and then click **Download** as shown in the image below. A download will automatically begin and will include both the main JSON template and the parameters JSON file.
 
@@ -38,7 +38,7 @@ The export a template from the resource group from the Azure portal:
 
 1. Navigate to the resource group that contains the resource you want to export.
 
-2. From the resource group blade under the **Automation** section, select **Export template**, and then click **Download** as shown in the image below. A download will automatically begin and will include both the main JSON template as well as the parameters JSON file.
+2. From the resource group blade under the **Automation** section, select **Export template**, and then click **Download** as shown in the image below. A download will automatically begin and will include both the main JSON template and the parameters JSON file.
 
    :::image type="content" source="../media/4-export-resource-group.png" alt-text="Screenshot." border="true":::
 
@@ -96,9 +96,9 @@ Export-AzResourceGroup -ResourceGroupName mslearn_bicep -Resource @($resource1.R
 
 Insert text here.
 
-- Not all Azure resource types can be exported through the Azure portal, Azure CLI, or Azure PowerShell. For example, virtual machine extensions such as the DependencyAgentWindows and MMAExtension (Microsoft Monitoring Agent) aren't supported resource types for export. Consider treating these exported templates as a starting point and use them as inspiration for your final template. You'll need to use other reference material such as the [Azure Resource Explorer](azure/azure-resource-manager/templates/view-resources#use-resource-explorer), the [Azure ARM Template Reference](azure/templates/) documentation, or [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/) to help complete your template deployments.
+- Not all Azure resource types can be exported through the Azure portal, Azure CLI, or Azure PowerShell. For example, virtual machine extensions such as the DependencyAgentWindows and MMAExtension (Microsoft Monitoring Agent) aren't supported resource types for export. Consider treating these exported templates as a starting point and use them as inspiration for your final template. Other reference material such as the [Azure Resource Explorer](azure/azure-resource-manager/templates/view-resources#use-resource-explorer), the [Azure ARM Template Reference](azure/templates/) documentation, or [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/) are needed to help complete your template deployments.
 
-  When you attempt to export resources from the Azure portal and it includes unsupported resource types, you'll see a warning banner at the top of the page as shown below:
+  When you attempt to export resources from the Azure portal and it includes unsupported resource types, you'll see a warning banner as shown below:
 
   :::image type="content" source="../media/4-export-error-banner.png" alt-text="Screenshot of the banner message." border="true":::
 
@@ -110,19 +110,19 @@ Insert text here.
 
   :::image type="content" source="../media/4-export-error-azcli.png" alt-text="Screenshot." border="true":::
 
-  When you attempt to export resources using Azure PowerShell and it includes unsupported resource types, an error message will generated as shown below:
+  When you attempt to export resources using Azure PowerShell and it includes unsupported resource types, an error message is as shown below:
 
   :::image type="content" source="../media/4-export-error-powershell.png" alt-text="Screenshot." border="true":::
 
-- When exporting Azure resources, the exported template may not have the latest API version for a resource type. If there are specific properties that you need for future deployments, you'll need to update the API to the appropriate version. It's good practice to review the API versions for each exported resource.
+- When exporting Azure resources, the exported template may not have the latest API version for a resource type. If there are specific properties that you need for future deployments, update the API to the appropriate version. It's good practice to review the API versions for each exported resource.
 
-- The export template feature is unable to export more than 200 resources from a resource group at one time. If your resource group contains more than 200 resources, you'll need to perform multiple exports to capture all resources. The error message `Export template is not supported for resource groups more than 200 resources` is shown if you attempt to export more than 200 resources.
+- The export template feature is unable to export more than 200 resources from a resource group at one time. If your resource group contains more than 200 resources, you'll need to export multiple times to capture all resources. The error message `Export template is not supported for resource groups more than 200 resources` is shown if you attempt to export more than 200 resources.
 
 - If your environment contains any resources deployed through the Azure classic deployment model, those resources need to be migrated to the Resource Manager deployment model first.
 
 ## Recommended workflow for exporting templates to Bicep
 
-You have exported your resource and resource group templates using one of the available methods, and now it's time to convert those templates to Bicep. In the previous unit, you learned about a recommended workflow for converting templates. You can follow the same workflow when exporting templates, with only a few changes.
+You've exported your resource and resource group templates using one of the available methods, and now it's time to convert those templates to Bicep. In the previous unit, you learned about a recommended workflow for converting templates. You can follow the same workflow when exporting templates, with only a few changes.
 
 1. **Create a new Bicep file** - Using [Visual Studio Code](https://code.visualstudio.com/), create a new Bicep file. This new file will become the main template file for your converted template.
 
