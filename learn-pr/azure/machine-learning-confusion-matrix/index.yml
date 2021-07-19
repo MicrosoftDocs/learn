@@ -16,7 +16,7 @@ abstract: |
   - Review metrics to improve classification models
   - Mitigate performance issues from data imbalances
 prerequisites: Basic familiarity with classification models
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/machine-learning/machine-learning-confusion-matrix.svg
 levels: 
 - beginner
 roles: 
