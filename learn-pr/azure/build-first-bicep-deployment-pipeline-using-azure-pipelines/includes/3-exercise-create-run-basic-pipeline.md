@@ -130,7 +130,7 @@ You have created a pipeline definition. Here, you register the pipeline with Azu
 
    :::image type="content" source="../media/3-pipeline-run-queued.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline, with the job in the queued state." border="true":::
 
-   Notice the job status initially is displayed as **Queued**. It can take some time for your pipeline to start. Your job is added to a queue for an agent, and once an agent is available, Azure Pipelines assigns the agent and starts the job.
+   Notice the job status initially is displayed as **Queued**. It can take some time for your pipeline to start. Your job is added to a queue for an agent, and once an agent is available, Azure Pipelines assigns the agent and starts the job. The job status then becomes **Running**.
 
    Also, notice the page includes the branch name, and the identifier for the Git commit that the run used. This indicates the version of your repository's content that the pipeline used.
 

@@ -1,4 +1,4 @@
-By using _pipelines_, you can automate the steps in your deployment process. Each time you make a change to code and you check it into your Git repository, your pipeline runs a predefined process. The pipeline can verify your Bicep code meets your quality standards, and then automates the steps to deploy your resources to Azure. You describe this process by creating a pipeline definition.
+By using _pipelines_, you can automate the steps in your deployment process. Each time you make a change to code and you check it into your Git repository, your pipeline runs a predefined process. The pipeline can verify whether your Bicep code meets your quality standards, and then automates the steps to deploy your resources to Azure. You describe this process by creating a pipeline definition.
 
 Azure Pipelines is a feature of the Azure DevOps service. Azure DevOps also includes Azure Repos, which hosts the Git repositories you use to store and share your code with your collaborators. Once your Bicep code is stored in Git, Azure Pipelines can access your code to automate your deployment processes. In this unit, you'll learn about Azure Pipelines.
 
@@ -45,10 +45,10 @@ There are two types of steps in Azure Pipelines:
 
 Some people prefer to use script statements rather than built-in tasks, because they provide more control over what is going on. Other people prefer to use tasks so they don't need to write and manage scripts. In this module, we use a mixture of both approaches.
 
-Azure Pipelines creates groups of steps called _jobs_. Each job represents a ordered set of steps. You always have at least one job in a pipeline, and when you create complex deployments it's common to have more than one job.
+Azure Pipelines creates groups of steps called _jobs_. Each job represents an ordered set of steps. You always have at least one job in a pipeline, and when you create complex deployments it's common to have more than one job.
 
 > [!NOTE]
-> Each job can run on a different agent pool if you want it to. This is useful when you build and deploy solutions that need to use different operating systems in different parts of their pipeline. For example, imagine you're building an iOS app and its backend service. You might have one job that runs on a macOS agent pool to build the iOS app, and another job that runs on a Ubuntu or Windows agent pool to build the backend.
+> Each job can run on a different agent pool if you want it to. This is useful when you build and deploy solutions that need to use different operating systems in different parts of their pipeline. For example, imagine you're building an iOS app and its backend service. You might have one job that runs on a macOS agent pool to build the iOS app, and another job that runs on a Ubuntu or Windows agent pool to build the backend. You can even tell the pipeline to run the jobs simultaneously, to save time.
 >
 > In this module, we use the same agent pool for every job in each pipeline, so the agent pools are declared at the root of the pipeline definitions.
 

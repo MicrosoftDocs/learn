@@ -53,7 +53,7 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 
    :::code language="yaml" source="code/6-pipeline.yaml" :::
 
-1. In the Visual Studio Code **Terminal**, stage your changes, commit them to your repository, and push them Azure Repos:
+1. In the Visual Studio Code **Terminal**, stage your changes, commit them to your repository, and push them to Azure Repos:
 
    ```bash
    git add .
@@ -87,7 +87,7 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 
    :::image type="content" source="../media/6-edit-pipeline-additional-variable.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline variable list, with the + button highlighted." border="true":::
 
-   Create these variables:
+   Create these variables in the same way as the previous variable:
 
    | Variable name       | Value        |
    |---------------------|--------------|
