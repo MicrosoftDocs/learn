@@ -1,4 +1,4 @@
-There are different ways to create and manage website projects. Some of these differences depend on the specific tools you have, and also the preferences of your organization. When creating a website, it's not uncommon for your project structure to change over time as it becomes more complicated. The key is to keep a semblance of organization, and there are common strategies to help. Large projects often require a higher degree of care and attention so that many people can keep everything organized.
+There are different ways to create and manage website projects. Some of these differences depend on the specific tools you have and the preferences of your organization. When creating a website, it's not uncommon for your project structure to change over time as it becomes more complicated. The key is to maintain a semblance of organization, and there are common strategies to help you do this. Large projects often require a higher degree of care and attention so that many people can keep everything organized.
 
 In this unit, you'll create a simple project structure using Visual Studio Code. The project will have three files: an HTML file, a CSS file, and a JavaScript file. You'll also add a Visual Studio Code extension to simplify running the website in your browser.
 
@@ -44,7 +44,7 @@ Setting up three files helps keep your website project organized. The separation
 
 ### Install extensions or packages
 
-You can extend the functionality of Visual Studio Code using the extensions marketplace. Keep in mind that these are community-developed resources and there are often several solutions for the same type of feature. You can install extensions individually in your editor, or several at once with the command line.
+You can extend the functionality of Visual Studio Code using the extensions marketplace. Keep in mind that these extensions are community-developed resources and there are often several solutions for the same type of feature. You can install extensions individually in your editor, or several at once using the command line.
 
 For web development, all you need right now is **open-in-browser**. This extension helps you to quickly open the website in your default browser, instead of copying and pasting the file URL into your browser.
 
