@@ -12,7 +12,7 @@ After completing this module, you will be able to:
 
 Before taking this module, it is recommended that you complete the following modules:
 
-*	Data Fundamentals
+*	Azure Data Fundamentals
 *	Introduction to Azure Data Share
 *	Introduction to Azure Data Factory
 *	Introduction to Azure Synapse Analytics
