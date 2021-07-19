@@ -117,12 +117,12 @@ Before the next step, make sure your file is saved by selecting <kbd>Control+S</
 
 You can preview your webpage locally by opening the HTML file in a browser. Instead of a website address that begins with `https://`, your browser points to the local file path. For example, the path might look similar to the following: *file:///Users/username/Desktop/public/index.html*.
 
-- To preview using **VS Code**, right-click `index.html`, and select **Open In Default Browser**, or select the `index.html` file and use the keyboard shortcut <kbd>Alt+B</kbd>.
+- To preview using **Visual Studio Code**, right-click `index.html`, and select **Open In Default Browser**, or select the `index.html` file and use the keyboard shortcut <kbd>Alt+B</kbd>.
 
-   :::image type="content" source="../media/vs-code-open-in-browser.png" alt-text="Screenshot of Open in Browser in VS Code.":::
+   :::image type="content" source="../media/vs-code-open-in-browser.png" alt-text="Screenshot of Open in Browser in Visual Studio Code.":::
 
   > [!IMPORTANT]
-  > If you're having trouble, make sure you're directly right-clicking the filename icon or text. If a VS Code dialog appears, select **Yes, I trust the authors**; this is the Workspace Trust feature that lets you decide whether your project folders should allow or restrict automatic code execution. You just created the file, so is is safe.
+  > If you're having trouble, make sure you're directly right-clicking the filename icon or text. If a **Visual Studio Code** dialog appears, select **Yes, I trust the authors**; this is the Workspace Trust feature that lets you decide whether your project folders should allow or restrict automatic code execution. You just created the file, so is is safe.
 
   The webpage opens in your default browser.
 
@@ -138,9 +138,8 @@ You can inspect a webpage by using the developer tools in your browser. Let's gi
 
    - In **Chrome** on a Mac, press the keyboard shortcut for **Developer Tools**, which is <kbd>Option+Command+I</kbd> or <kbd>F12</kbd>.
 
-
-  > [!NOTE]
-  > If you're using **Safari**, see the [Web Developer Tools](https://developer.apple.com/safari/tools/). When installed, select **Safari > Preferences**, and then select **Advanced**. At the bottom of the pane, select the **Show Develop menu in menu bar** checkbox. Select **Develop > Show Web Inspector**. For more information, check the Safari Web Inspector documentation.
+    > [!NOTE]
+    > If you're using **Safari**, see the [Web Development Tools](https://developer.apple.com/safari/tools/). When installed, select **Safari > Preferences**, and then select **Advanced**. At the bottom of the pane, select the **Show Develop menu in menu bar** checkbox. Select **Develop > Show Web Inspector**. For more information, check the Safari Web Inspector documentation.
 
 1. Select the **Elements** tab.
 
