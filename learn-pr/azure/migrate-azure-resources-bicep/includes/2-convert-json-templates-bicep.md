@@ -38,7 +38,7 @@ Both commands will create a file named main.bicep in the same directory as the o
 > [!NOTE]
 > The [Bicep playground](https://bicepdemo.z22.web.core.windows.net/) is an online tool that compares JSON templates and Bicep templates side by side. You can choose an Azure quickstart template or upload your own template by clicking the `Decompile` button.
 
-## Recommended workflow for converting templates
+## Recommended workflow for converting templates to Bicep
 
 In the previous section you learned that the decompilation is a best-effort process, and you may need to revise the generated Bicep file. When you convert your JSON templates to Bicep templates, follow this recommended workflow to help meet your template best practices.
 
@@ -259,7 +259,7 @@ You can add a multi-line comment at the beginning of the file as shown below:
 
 Single-line comments can be added as headers for sections of code, or on individual lines to describe the code.
 
-:::code language="bicep" source="code/2-app-service-plan-updated.bicep" range="34-46" highlight="1,6,9,13" :::
+:::code language="bicep" source="code/2-app-service-plan-updated.bicep" range="34-46" highlight="1,6,9,12" :::
 
 ### The converted template
 
