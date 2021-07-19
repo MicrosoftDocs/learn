@@ -1,6 +1,6 @@
 The **Azure portal** lets you build, manage, and monitor everything from simple web apps to complex cloud applications in a single, unified console.
 
-:::image type="content" source="../media/AZ104_Azure_Portal-c6793719.png" alt-text="azure portal":::
+:::image type="content" source="../media/azure-portal.png" alt-text="azure portal":::
 
 
  -  Search resources, services, and docs.
