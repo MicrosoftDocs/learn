@@ -7,7 +7,7 @@ You've learned how Git enables you to track the changes to your Bicep code. In t
 
 Git is software that you install and run on your own computer. As you've learned, Git keeps track of the changes you make to your files. It enables features like branching.
 
-GitHub and Azure Repos are online services that keep copies of your Git repository and enable collaborative development. After you sign up for GitHub or Azure Repos, you continue to work with Git by using the same commands you've already been using. You also continue working against your local Git repository. The difference is that you can synchronize your local Git repository with an online repository. You can also grant access to the online repository to other people, and you can control whether they can read or modify your code.
+GitHub and Azure Repos are online services that keep copies of your Git repository and enable collaborative development. After you sign up for GitHub or Azure Repos, you continue to work with Git by using the same commands you've already been using. You continue working against your local Git repository. The difference is that you can synchronize your local Git repository with an online repository. You can also grant access to the online repository to other people, and you can control whether they can read or modify your code.
 
 > [!NOTE]
 > Azure Repos is a feature of Azure DevOps. When you work with Azure Repos, you use the Azure DevOps website.
