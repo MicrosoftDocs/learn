@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.load-balancing-non-https-traffic-azure
+metadata:
+  title: Load balance non-HTTP(S) traffic in Azure
+  description: "You will learn the different load balancer options in Azure and how to choose and implement the right Azure solution for non-HTTP(S) traffic."
+  ms.date: 07/16/2021
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Load balance non-HTTP(S) traffic in Azure
+summary: You will learn the different load balancer options in Azure and how to choose and implement the right Azure solution for non-HTTP(S) traffic.
+abstract: |
+  At the end of this module, you will be able to:
+  - Identify the features and capabilities of Azure Load Balancer
+  - Design and implement an Azure Load Balancer
+  - Implement a Traffic Manager profile
+prerequisites: |
+  - You should have experience with networking concepts, such as IP addressing, Domain Name System (DNS), and routing
+  - You should have experience with network connectivity methods, such as VPN or WAN
+  - You should have experience with the Azure portal and Azure PowerShell
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+- network-engineer
+products:
+- azure-load-balancer
+- azure-traffic-manager
+- azure-virtual-network
+units:
+- learn.wwl.load-balancing-non-https-traffic-azure.introduction
+- learn.wwl.load-balancing-non-https-traffic-azure.explore
+- learn.wwl.load-balancing-non-https-traffic-azure.design-implement-azure-load-balancer-using-azure-portal
+- learn.wwl.load-balancing-non-https-traffic-azure.exercise-create-configure-azure-load-balancer
+- learn.wwl.load-balancing-non-https-traffic-azure.explore-azure-traffic-manager
+- learn.wwl.load-balancing-non-https-traffic-azure.exercise-create-traffic-manager-profile-using-azure-portal
+- learn.wwl.load-balancing-non-https-traffic-azure.summary
+badge:
+  uid: learn.wwl.load-balancing-non-https-traffic-azure.badge
