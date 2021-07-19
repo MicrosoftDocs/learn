@@ -25,7 +25,7 @@ Testing can also force some architecture improvement. You can't unit test your c
 
 ## Code coverage and code health
 
-Code coverage is a metric indicating how much of an app's production code is covered by tests. It indicates if tests actually exercise all the product code, including branching logic, method overloads, and so on. Code coverage can give a basic idea of what areas need more testing. Visual Studio even has tools that can [highlight what lines are covered by tests](visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested) and what aren't in your editor.
+Code coverage is a metric indicating how much of an app's production code is covered by tests. It indicates if tests actually exercise all the product code, including branching logic, method overloads, and so on. Code coverage can give a basic idea of what areas need more testing. Visual Studio even has tools that can [highlight what lines are covered by tests](/visualstudio/test/using-code-coverage-to-determine-how-much-code-is-being-tested) and what aren't in your editor.
 
 :::image type="content" source="../media/test-why-code-coverage.png" alt-text="Screenshot of code in the Visual Studio editor showing test coverage via red and blue highlights. Covered code is highlighted in blue and uncovered code is highlighted in red.":::
 
