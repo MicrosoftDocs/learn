@@ -1,6 +1,6 @@
 To get started with Log Analytics you need to add a workspace.
 
-:::image type="content" source="../media/AZ104_Create_a_Workspace2-6c1eeae2.png" alt-text="Screenshot of the log analytics workspace page.":::
+:::image type="content" source="../media/create-workspace-2.png" alt-text="Screenshot of the log analytics workspace page.":::
 
 
  -  Provide a name for the new Log Analytics workspace.
