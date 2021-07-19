@@ -35,61 +35,52 @@ App Studio for Teams makes it easy to start creating or integrating your own Tea
 
    - **Full name:** Enter the full name of the app. For this bot, enter **Paramedic bot built on Azure Health Bot**.
 
-The next section here is identification which where you enter the app ID. Because you don't have an ID, select **Generate** to generate a new ID.
+1.   Under **Identification**, you enter the app ID. Because you don't have an ID, select **Generate** to generate a new ID.
 
-- **Package name:** Enter **para.app** in this field for this particular bot.
+1. In the **Package Name** box, enter **Para.app** for this bot.
 
-- **Version:** Enter 1.0.0 since it's the first version.
+1. In the **Version** box, enter **1.0.0** because this is the first version.
 
-  :::image type="content" source="../media/3-app-id-generation.png" alt-text="Screenshot of generating new app ID.":::
+     :::image type="content" source="../media/3-app-id-generation.png" alt-text="Screenshot that shows App details values.":::
 
-The next section is **"Descriptions"**.
+   There are two fields under **Descriptions**: **Short description** and **Full description**.
 
-:::image type="content" source="../media/3-descriptions.png" alt-text="Screenshot of descriptions.":::
 
-There are two fields here, **Short Description** and **Full description**.
+1. In the **Short description** box, enter a description of 80 characters or less. This description appears in the overview section. Enter **Simple bot collecting information from the user**.
 
-- **Short Description:** A brief description within 80 characters. This field serves as the description of the app when we are viewing it in the overview section. Enter "Simple bot collecting information from the user" for this particular application.
+1. In the  **Full description** box, enter a description of 4,000 words or less. We can include more detail here. Enter **Simple bot collecting information from the user and storing the data in the SQL database**.
 
-- **Full description:** This field is the full description of 4000 words or less. Here we can explain in detail about the bot. Enter "Simple bot collecting information from the user and storing the data in the SQL Database".
+   Under **Developer information**, we'll provide the details about the developer and the developer's website.
 
-The next section is **Developer Information** section. Here we are supposed to provide the details about the developer and the website of the developer.
+1. In the **Developer/Company Name** box, enter **Contoso**.
 
-**Developer/Company name:** Enter "Contoso".
+1. The **Website** box is where you'll normally enter the developer's website. Because this bot is a demo,  enter **https://github.com/**.
 
-**Website:** This field refers to the website of the developer. Since this bot is a demo, provide the web-address of [GitHub](https://github.com/).
+   :::image type="content" source="../media/3-descriptions.png" alt-text="Screenshot that shows App details values.":::
 
-:::image type="content" source="../media/3-branding.png" alt-text="Screenshot of Branding.":::
+   Under **App URLs**, you'll normally provide the website for the privacy statement of the application and terms of use. Because this bot is a demo, use **https://github.com/** for both of these values.
 
-The next section is the App URLs.
+   **Branding** is about the appearance of the app. For example, the icon.
 
-Here again you should provide the Website for referring the privacy statement of the application and Terms of use. Since this bot is a demo, we are again providing the web-address of [GitHub](https://github.com/).
+1. Under **Full color**, select the **Update**. Choose an image. The image dimensions should be 192 x 192. Because this is a health bot, we'll use the official Health Bot icon. You can also choose an accent color. 
 
-**Privacy statement:** The web-address of [GitHub](https://github.com/).
+1. Finally, select the **Loading indicator** and **Fullscreen Mode** boxes:
 
-**Terms of use:** The web-address of [GitHub](https://github.com/).
+   :::image type="content" source="../media/3-branding.png" alt-text="Screenshot that shows App details values.":::
 
-The next section here is **Branding**. This section is all about the appearance of the app. For example, the icon.
+   The second main section is the **Capabilities** section. This is where the bot is integrated to the Teams app platform.
 
-In the Full Color section, select the update button and choose an image. The image should be of **192x192** dimension. Similarly, an accent color also can be chosen. Here since it's a health Bot we are using the official Health Bot icon.
+1. Under **Capabilities**, select **Bots**:
 
-:::image type="content" source="../media/3-bots-section.png" alt-text="Screenshot of Bots section.":::
+   :::image type="content" source="../media/3-bots-section.png" alt-text="Screenshot that shows the Bots section.":::
+   
+1. Select **Setup**.
 
-Finally, tick the Loading Indicator and Fullscreen Mode check boxes.
+   Now you'll set up the bot. Because we already have the bot configured on the Azure Health Bot platform, select **Existing bot**:
 
-Now the second main section is **Capabilities**.
-
-Here is where the Bot is being integrated to the Teams app platform.
-
-Select **Bots**.
-
-:::image type="content" source="../media/3-bots-setup.png" alt-text="Screenshot of Bots setup section.":::
-
-Once the bots section is selected, you'll have to set up the bot. Select **Setup** .
+   :::image type="content" source="../media/3-bots-setup.png" alt-text="Screenshot of Bots setup section.":::
 
 :::image type="content" source="../media/3-existing-bots.png" alt-text="Screenshot of Existing Bots section.":::
-
-Since we have the bot already configured on the Azure Health Bot platform, we will have to choose the **Existing Bot**.
 
 :::image type="content" source="../media/3-existing-bot-setup.png" alt-text="Screenshot of Existing Bots section setup.":::
 
