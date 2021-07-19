@@ -67,25 +67,25 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 
 1. Select the **Edit** button to configure your pipeline.
 
-   :::image type="content" source="../media/6-edit-pipeline.png" alt-text="TODO" border="true":::
+   :::image type="content" source="../media/6-edit-pipeline.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline, with the Edit button highlighted." border="true":::
 
 1. Select the **Variables** button to manage your pipeline's variables.
 
-   :::image type="content" source="../media/6-edit-pipeline-variables.png" alt-text="TODO" border="true":::
+   :::image type="content" source="../media/6-edit-pipeline-variables.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline editor, with the Variables button highlighted." border="true":::
 
 1. Select the **New variable** button.
 
-   :::image type="content" source="../media/6-edit-pipeline-new-variable.png" alt-text="TODO" border="true":::
+   :::image type="content" source="../media/6-edit-pipeline-new-variable.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline variable editor, with the 'New variable' button highlighted." border="true":::
 
 1. In **Name**, enter _ServiceConnectionName_. In **Value**, enter _ToyWebsite_.
 
    Leave the checkboxes unchecked, and select **OK**.
 
-   :::image type="content" source="../media/6-edit-pipeline-variable-serviceconnectionname.png" alt-text="TODO" border="true":::
+   :::image type="content" source="../media/6-edit-pipeline-variable-serviceconnectionname.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline variable editor, with the OK button highlighted." border="true":::
 
 1. Select the **+** button.
 
-   :::image type="content" source="../media/6-edit-pipeline-additional-variable.png" alt-text="TODO" border="true":::
+   :::image type="content" source="../media/6-edit-pipeline-additional-variable.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline variable list, with the + button highlighted." border="true":::
 
    Create these variables:
 
@@ -96,11 +96,11 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 
 1. Follow the process one more time to create a variable named _DeployToyManualsStorageAccount_, with a value of _true_. For this variable, check the box titled **Let users override this value when running this pipeline**.
 
-   :::image type="content" source="../media/6-edit-pipeline-variable-deploytoymanualsstorageaccount.png" alt-text="TODO" border="true":::
+   :::image type="content" source="../media/6-edit-pipeline-variable-deploytoymanualsstorageaccount.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline variable editor." border="true":::
 
 1. After you've created all three variables, select **Save**.
 
-   :::image type="content" source="../media/6-edit-pipeline-save-variables.png" alt-text="TODO" border="true":::
+   :::image type="content" source="../media/6-edit-pipeline-save-variables.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline variable editor, with the Save button highlighted." border="true":::
 
 ## Run your pipeline
 
@@ -108,19 +108,19 @@ Now you're ready to run your pipeline!
 
 1. Select **Run**.
 
-   :::image type="content" source="../media/6-edit-pipeline-run.png" alt-text="TODO" border="true":::
+   :::image type="content" source="../media/6-edit-pipeline-run.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline, with the Run button highlighted." border="true":::
 
 1. The **Run pipeline** panel appears. You can use this panel to configure settings for this specific run of the pipeline. Select **Variables**.
 
-   :::image type="content" source="../media/6-pipeline-run.png" alt-text="TODO" border="true":::
+   :::image type="content" source="../media/6-pipeline-run.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Run pipeline' page, with the Variables menu item highlighted." border="true":::
 
-1. Select the **DeployToyManualsStorageAccount** variable and change its value to _false_, then select **Update**.
+1. Select the **DeployToyManualsStorageAccount** variable and change its value to _false_, then select **OK**.
 
-   :::image type="content" source="../media/6-pipeline-run-edit-variable.png" alt-text="TODO" border="true":::
+   :::image type="content" source="../media/6-pipeline-run-edit-variable.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Run pipeline' page, with the DeployToyManualsStorageAccount variable editor, and the OK button highlighted." border="true":::
 
 1. Select the back arrow.
 
-   :::image type="content" source="../media/6-pipeline-run-edit-variables-back.png" alt-text="TODO" border="true":::
+   :::image type="content" source="../media/6-pipeline-run-edit-variables-back.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Run pipeline' page, with the back arrow highlighted." border="true":::
 
 1. Select **Run** to start a new pipeline run. It might take a few minutes for the pipeline to start, and once it's started, it might take a few minutes for your deployment to complete.
 
@@ -128,7 +128,7 @@ Now you're ready to run your pipeline!
 
 1. Select **fx 1 queue time variable used**.
 
-   :::image type="content" source="../media/6-log-variables.png" alt-text="TODO" border="true":::
+   :::image type="content" source="../media/6-log-variables.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline log, with the '1 queue time variable used' item highlighted." border="true":::
 
    The value that you override for this pipeline's run are shown. Notice that the `DeployToyManualsStorageAccount` variable's value is _false_, since you overrode it.
 
@@ -146,7 +146,7 @@ Now you're ready to run your pipeline!
 
 1. In **Overview**, you can see that one deployment succeeded.
 
-   :::image type="content" source="../media/6-portal-resource-group.png" alt-text="TODO" border="true":::
+   :::image type="content" source="../media/6-portal-resource-group.png" alt-text="Screenshot of the Azure portal, showing the resource group with one successful deployment." border="true":::
 
 1. Select **1 Succeeded** to see the details of the deployment.
 
