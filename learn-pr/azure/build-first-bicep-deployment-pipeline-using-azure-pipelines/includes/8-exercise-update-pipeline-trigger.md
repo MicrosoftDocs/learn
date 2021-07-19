@@ -1,6 +1,6 @@
-You have a pipeline that can execute a Bicep deployment to your Azure environment. We will now make this pipeline run automatically. In this exercise you will: 
+You have a pipeline that can execute a Bicep deployment to your Azure environment. In this exercise you'll make the pipeline run automatically whenever a file changes on your **main** branch. You'll use the updated pipeline to make a change that your colleague requested - they want the website app to be always running, and they asked you to configure the App Service Always On feature for the site.
 
-In this exercise, you'll:
+During the process, you'll:
 
 > [!div class="checklist"]
 > * Update your pipeline so that it triggers automatically whenever files change in the _deploy_ folder and on the **main** branch.
@@ -27,8 +27,6 @@ In this exercise, you'll:
    ```
 
 ## Update your Bicep file
-
-<!-- TODO tie this into the scenario -->
 
 1. In Visual Studio Code, open the _main.bicep_ file.
 
@@ -68,6 +66,8 @@ In this exercise, you'll:
    > This illustrates how it's important to test your Bicep files, including all of the parameter values you use. It's easy for subtle errors to creep into your resource configuration or other code. You  might not discover the issues until your pipeline deploys the code. In a future module, you'll learn some strategies to verify and test your Bicep code.
 
 ## Fix the Bicep file and see the pipeline triggered again
+
+You speak to your colleague and decide that the Always On setting only needs to be applied for your production environment. Here, you fix the issue that caused your deployment failure by applying the new rule you've decided on.
 
 1. In Visual Studio Code, add new properties for each environment type to the `environmentConfigurationMap` variable:
 
