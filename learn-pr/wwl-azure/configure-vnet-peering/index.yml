@@ -2,8 +2,8 @@
 uid: learn.wwl.configure-vnet-peering
 metadata:
   title: Configure VNet Peering
-  description: "Configure VNet Peering"
-  ms.date: 07/15/2021
+  description: "You will learn to configure a VNet peering connection and address transit and connectivity concerns."
+  ms.date: 07/19/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -11,6 +11,7 @@ metadata:
 title: Configure VNet Peering
 summary: You will learn to configure a VNet peering connection and address transit and connectivity concerns.
 abstract: |
+  After completing this module, you will be able to:
   - Identify usage cases and product features of virtual network peering.
   - Configure gateway transit, connectivity, and service chaining.
 prerequisites: ""

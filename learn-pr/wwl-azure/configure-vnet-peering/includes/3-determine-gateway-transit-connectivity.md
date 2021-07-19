@@ -1,6 +1,6 @@
 When virtual networks are peered, you configure a VPN gateway in the peered virtual network as a transit point. In this case, a peered virtual network uses the remote gateway to gain access to other resources. A virtual network can have only one gateway. Gateway transit is supported for both VNet Peering and Global VNet Peering.
 
-:::image type="content" source="../media/AZ104_Gateway_Transit-bca6bb86.png" alt-text="Two VNets, VNet1 and VNet2, are shown in a region and are connected by VNet peering. VNet1 has Allow Gateway transit and VNet2 has use remote gateways.":::
+:::image type="content" source="../media/gateway-transit.png" alt-text="Two VNets, VNet1 and VNet2, are shown in a region and are connected by VNet peering. VNet1 has Allow Gateway transit and VNet2 has use remote gateways.":::
 
 
 When you Allow Gateway Transit the virtual network can communicate to resources outside the peering. For example, the subnet gateway could:
