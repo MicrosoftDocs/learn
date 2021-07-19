@@ -21,7 +21,7 @@ abstract: |
 prerequisites: | 
   - [Node.js](https://nodejs.org/?azure-portal=true)
   - [Visual Studio Code](https://aka.ms/LearnOnVSCode?azure-portal=true)
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/student-evangelism/explore-mixed-reality-basketball-court-babylonjs.svg
 levels:
 - beginner
 roles:
