@@ -79,7 +79,7 @@ The Recovery Services vaults are accessible at the subscription level. When you'
     |-|-|
     | **Restore Configuration** |
     | Replace existing | Select this option. |
-    | **Staging Location** | From the dropdown list, select the storage account that you previously created. |
+    | Staging Location | From the dropdown list, select the storage account that you previously created. |
 
     ![Screenshot that shows the restore configuration options.](../media/6-restore-configuration.png)
 
@@ -97,7 +97,9 @@ The Recovery Services vaults are accessible at the subscription level. When you'
 
     ![Screenshot of the restore progress.](../media/6-restore-progress.png)
 
-1. Select the restore job. You can now monitor the progress of the VM restore:
+    The **Backup** pane appears for nw-app01.
+
+1. You can now monitor the progress of the VM restore:
     - **Job details**: Real-time percentage of the job as a whole.
     - **Sub tasks**: Status of the current task within the job.
 

@@ -82,10 +82,8 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
 1. Under the **Summary** section, ensure the following information exists for creating a backup.
 
-    | | |
-    |-|-|
-    | **Recovery services vault** | **azure-backup** for the name. |
-    | **Backup policy** | **DailyPolicy**, which is a daily backup at 12:00 PM UTC, and a retention range of 180 days. |
+    - **Recovery services vault**: **azure-backup** for the name.
+    - **Backup policy**: **DailyPolicy**, which is a daily backup at 12:00 PM UTC, and a retention range of 180 days.
 
     ![Screenshot that shows the backup options.](../media/4-portal-azure-backup.png)
 
