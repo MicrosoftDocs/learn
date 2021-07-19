@@ -50,7 +50,7 @@ During the process, you'll:
 
 1. Notice the pipeline automatically triggered because you pushed your changes to a branch that the branch trigger monitors. If the pipeline is still running, wait a minute and refresh it. The pipeline run is displayed.
 
-   :::image type="content" source="../media/8-failed-run.png" alt-text="Screenshot of the Azure DevOps interface showing the failed pipeline run." border="true":::
+   :::image type="content" source="../media/8-failed.png" alt-text="Screenshot of the Azure DevOps interface showing the failed pipeline run." border="true":::
 
    Notice that the pipeline run failed.
 
