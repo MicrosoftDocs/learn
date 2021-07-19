@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.create-git-project.3-unit
+title: Unit
+metadata:
+  title: Unit
+  description: Describe unit
+  author: mshumba
+  ms.author: mufaroshumba
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-unit.md)]

@@ -1,4 +1,7 @@
-It's time to get your website project off the ground. In the exercises that follow, you'll start using Git by adding a simple HTML file to your working tree. Then, you'll make some changes in the directory and learn how to commit the changes.
+Now that you've spent time learning the essential git commands, lets move onto creating a project in git. 
+
+
+In the exercises that follow, you'll start using Git by adding a simple HTML file to your working tree. Then, you'll make some changes in the directory and learn how to commit the changes.
 
 ## Create and add (stage) a file
 

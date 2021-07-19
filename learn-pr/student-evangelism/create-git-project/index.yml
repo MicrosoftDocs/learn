@@ -1,0 +1,32 @@
+### YamlMime:Module
+uid: learn.create-git-project
+metadata:
+  title: Introduction to
+  description: Learn how to
+  ms.date: 06/04/2020
+  author: mshumba
+  ms.author: mufaroshumba
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to
+summary: Learn how to
+abstract: |
+  In this module you will:
+  - Learn about X
+iconUrl: /learn/achievements/create-git-project.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - vs
+prerequisites: None
+units:
+  - learn.create-git-project.1-introduction
+  - learn.create-git-project.2-making-class
+  - learn.create-git-project.3-unit
+  - learn.create-git-project.4-exercise-unit
+  - learn.create-git-project.5-knowledge-check
+  - learn.create-git-project.6-summary
+badge:
+  uid: learn.create-git-project.badge

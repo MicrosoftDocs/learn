@@ -2,11 +2,12 @@ Congratulations! In this module, you learned the basics of using Git.
 
 You learned:
 
-- How to configure Git.
-- How to create repositories.
-- How to track changes.
-- How to recover from simple mistakes by using Git.
+- An overview of Version Control Systems (VCS)
+- Important Git terminology.
 - The differences between Git and GitHub.
+- How to configure Git.
+- Some basic Git commands.
+
 
 At this point, you know enough about Git to use version control by yourself on a basic project. Collaboration with other developers is where version control shines. Check out the other modules in this learning path for more about using Git with others!
 
