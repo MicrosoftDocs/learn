@@ -2,8 +2,8 @@
 uid: learn.wwl.configure-expressroute-virtual-wan
 metadata:
   title: Configure ExpressRoute and Virtual WAN
-  description: "Configure ExpressRoute and Virtual WAN"
-  ms.date: 07/15/2021
+  description: "You will learn how to configure ExpressRoute and Virtual WAN to provide connection services."
+  ms.date: 07/19/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -11,6 +11,7 @@ metadata:
 title: Configure ExpressRoute and Virtual WAN
 summary: You will learn how to configure ExpressRoute and Virtual WAN to provide connection services.
 abstract: |
+  After completing this module, you will be able to:
   - Identify features and usage cases for ExpressRoute.
   - Coexist site-to-site and ExpressRoute networks.
   - Identify features and usage cases for virtual WAN.

@@ -1,6 +1,6 @@
 ExpressRoute is supported across all Azure regions and locations. This map provides a list of Azure regions and ExpressRoute locations. ExpressRoute locations are where Microsoft peers with several service providers. When you connected to at least one ExpressRoute location within the geopolitical region, you will access Azure services across all regions within a geopolitical region.
 
-:::image type="content" source="../media/AZ104_ExpressRoute_Benefits-b01fac2d.png" alt-text="Global map with partner locations.":::
+:::image type="content" source="../media/expressroute-benefits.png" alt-text="Global map with partner locations.":::
 
 
 ## ExpressRoute benefits
