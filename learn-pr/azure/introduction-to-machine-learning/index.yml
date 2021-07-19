@@ -16,7 +16,7 @@ abstract: |
   - Create and test a machine learning model
   - Load a model and use it with new data
 prerequisites: None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/machine-learning/introduction-to-machine-learning.svg
 levels: 
 - beginner
 roles: 
