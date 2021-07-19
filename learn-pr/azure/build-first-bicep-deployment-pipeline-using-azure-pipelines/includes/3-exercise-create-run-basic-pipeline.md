@@ -95,23 +95,23 @@ You have created a pipeline definition. Here, you register the pipeline with Azu
 
 1. In your browser, select **Pipelines**, then select **Create Pipeline**.
 
-   :::image type="content" source="../includes/media/3-create-pipeline.png" alt-text="Screenshot of the Azure DevOps interface showing the Pipelines page, and the Create Pipeline button highlighted." border="true":::
+   :::image type="content" source="../media/3-create-pipeline.png" alt-text="Screenshot of the Azure DevOps interface showing the Pipelines page, and the Create Pipeline button highlighted." border="true":::
 
 1. Select **Azure Repos Git**.
 
-   :::image type="content" source="../includes/media/3-create-pipeline-repo-type.png" alt-text="Screenshot of the Azure DevOps interface showing the Create Pipeline flow's Connect step, with the Azure Repos Git option selected." border="true":::
+   :::image type="content" source="../media/3-create-pipeline-repo-type.png" alt-text="Screenshot of the Azure DevOps interface showing the Create Pipeline flow's Connect step, with the Azure Repos Git option selected." border="true":::
 
 1. Select the **toy-website** repository.
 
-   :::image type="content" source="../includes/media/3-create-pipeline-repo.png" alt-text="Screenshot of the Azure DevOps interface showing the Create Pipeline flow's Select step, with the toy-website repository selected." border="true":::
+   :::image type="content" source="../media/3-create-pipeline-repo.png" alt-text="Screenshot of the Azure DevOps interface showing the Create Pipeline flow's Select step, with the toy-website repository selected." border="true":::
 
 1. Select **Existing Azure Pipelines YAML file**.
 
-   :::image type="content" source="../includes/media/3-create-pipeline-configure.png" alt-text="Screenshot of the Azure DevOps interface showing the Create Pipeline flow's Configure step, with the Existing Azure Pipelines YAML File option selected." border="true":::
+   :::image type="content" source="../media/3-create-pipeline-configure.png" alt-text="Screenshot of the Azure DevOps interface showing the Create Pipeline flow's Configure step, with the Existing Azure Pipelines YAML File option selected." border="true":::
 
 1. In the **Path** field, select _/deploy/azure-pipelines.yml_. Then select **Continue**.
 
-   :::image type="content" source="../includes/media/3-create-pipeline-yaml-file.png" alt-text="Screenshot of the Azure DevOps interface showing the Create Pipeline flow's 'Select an existing YAML file' page, with the Path set to the path to the pipeline file and the Continue button highlighted." border="true":::
+   :::image type="content" source="../media/3-create-pipeline-yaml-file.png" alt-text="Screenshot of the Azure DevOps interface showing the Create Pipeline flow's 'Select an existing YAML file' page, with the Path set to the path to the pipeline file and the Continue button highlighted." border="true":::
 
    Your YAML pipeline definition is shown.
 
@@ -120,7 +120,7 @@ You have created a pipeline definition. Here, you register the pipeline with Azu
 
 1. Select **Run**.
 
-   :::image type="content" source="../includes/media/3-create-pipeline-run.png" alt-text="Screenshot of the Azure DevOps interface showing the Create Pipeline flow's Review step, with the Run button highlighted." border="true":::
+   :::image type="content" source="../media/3-create-pipeline-run.png" alt-text="Screenshot of the Azure DevOps interface showing the Create Pipeline flow's Review step, with the Run button highlighted." border="true":::
 
    Azure Pipelines creates the pipeline and starts a first run.
 
@@ -128,7 +128,7 @@ You have created a pipeline definition. Here, you register the pipeline with Azu
 
 1. Once the pipeline run starts, a page is displayed with information about this execution.
 
-   :::image type="content" source="../includes/media/3-pipeline-run-queued.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline, with the job in the queued state." border="true":::
+   :::image type="content" source="../media/3-pipeline-run-queued.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline, with the job in the queued state." border="true":::
 
    Notice the job status initially is displayed as **Queued**. It can take some time for your pipeline to start. Your job is added to a queue for an agent, and once an agent is available, Azure Pipelines assigns the agent and starts the job.
 
@@ -136,23 +136,23 @@ You have created a pipeline definition. Here, you register the pipeline with Azu
 
 1. Refresh the page until the job status changes to **Success**. Then, select the **Job**.
 
-   :::image type="content" source="../includes/media/3-pipeline-run-success.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline, with the job in the success state and the job name highlighted." border="true":::
+   :::image type="content" source="../media/3-pipeline-run-success.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline, with the job in the success state and the job name highlighted." border="true":::
 
 1. The job information page is displayed, which shows the log of the steps that the pipeline ran for you. Notice that your **Placeholder step** is included.
 
-   :::image type="content" source="../includes/media/3-pipeline-job-summary.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline job log, with 'Placeholder step' highlighted." border="true":::
+   :::image type="content" source="../media/3-pipeline-job-summary.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline job log, with 'Placeholder step' highlighted." border="true":::
 
    Notice the list includes steps that you didn't specify. These are created automatically by Azure Pipelines. In some organizations, you might also see steps that your organization automatically includes in all of your pipelines.
 
 1. Select the step named **Checkout toy-website@main to s**.
 
-   :::image type="content" source="../includes/media/3-pipeline-job-checkout-log.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline job log, with the 'Checkout' step highlighted." border="true":::
+   :::image type="content" source="../media/3-pipeline-job-checkout-log.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline job log, with the 'Checkout' step highlighted." border="true":::
 
    The logs for each step provide a lot of detail on exactly what happened. In this case, the repository's contents was downloaded to the agent.
 
 1. Select the **Placeholder step** step.
 
-   :::image type="content" source="../includes/media/3-pipeline-job-placeholder-log.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline job log, with the 'Placeholder step' highlighted." border="true":::
+   :::image type="content" source="../media/3-pipeline-job-placeholder-log.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline job log, with the 'Placeholder step' highlighted." border="true":::
 
    The logs for this step include the contents of the script as it was specified in your pipeline's YAML file, and the _Hello world!_ text that the script emitted.
 
@@ -160,7 +160,7 @@ You have created a pipeline definition. Here, you register the pipeline with Azu
 
 1. Navigate back to the Repository overview screen by selecting **Repos**. Then, select **Commits**.
 
-   :::image type="content" source="../includes/media/3-pipeline-commit.png" alt-text="Screenshot of the Azure DevOps interface showing the commit, with the commit identifier and succeeded state highlighted." border="true":::
+   :::image type="content" source="../media/3-pipeline-commit.png" alt-text="Screenshot of the Azure DevOps interface showing the commit, with the commit identifier and succeeded state highlighted." border="true":::
 
    Notice that the commit identifier displayed is the same as the commit identifier you noted from your pipeline run. Also, notice that Azure Pipelines displays the status of the pipeline run associated with the commit.
 
