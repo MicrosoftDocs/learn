@@ -1,6 +1,6 @@
 Azure Active Directory (Azure AD) is Microsoft’s multi-tenant cloud-based directory and identity management service.
 
-:::image type="content" source="../media/AZ104_Azure_AD-b14d85bc.png" alt-text="Windows Server AD is using Kerberos and NTLM authentication to on-premises apps. Azure AD is using SAML, Oauth, Open ID, WS-Federation authentication to Cloud apps. Windows Server AD and Azure AD overlap with users, groups, authentication, and authorization.":::
+:::image type="content" source="../media/azure-active-directory.png" alt-text="Windows Server AD is using Kerberos and NTLM authentication to on-premises apps. Azure AD is using SAML, Oauth, Open ID, WS-Federation authentication to Cloud apps. Windows Server AD and Azure AD overlap with users, groups, authentication, and authorization.":::
 
 
 ## Benefits and features
