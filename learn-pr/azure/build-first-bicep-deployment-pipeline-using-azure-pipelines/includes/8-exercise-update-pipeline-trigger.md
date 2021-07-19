@@ -52,7 +52,7 @@ In this exercise, you'll:
 
 1. Notice the pipeline automatically triggered because you pushed your changes to a branch that the branch trigger monitors. If the pipeline is still running, wait a minute and refresh it. The pipeline run is displayed.
 
-   :::image type="content" source="../media/8-failed-run.png" alt-text="TODO" border="true":::
+   :::image type="content" source="../media/8-failed-run.png" alt-text="Screenshot of the Azure DevOps interface showing the failed pipeline run." border="true":::
 
    Notice that the pipeline run failed.
 
@@ -65,7 +65,7 @@ In this exercise, you'll:
    This error message indicates that the deployment failed because the App Service app is deployed using the _F1_ free tier, which doesn't support the Always On feature.
 
    > [!IMPORTANT]
-   > This illustrates how it's important to test your Bicep files, including all of the parameter values you use. It's easy for subtle errors to creep into your code, which you might not discover until your pipeline deploys the code. In a future module, you'll learn some strategies to verify and test your Bicep code.
+   > This illustrates how it's important to test your Bicep files, including all of the parameter values you use. It's easy for subtle errors to creep into your resource configuration or other code. You  might not discover the issues until your pipeline deploys the code. In a future module, you'll learn some strategies to verify and test your Bicep code.
 
 ## Fix the Bicep file and see the pipeline triggered again
 
@@ -91,6 +91,6 @@ In this exercise, you'll:
 
 In Azure DevOps, return to the **Pipelines** list and select your pipeline, then select the most recent run. If the pipeline is still running, wait a minute and refresh it. The pipeline run is displayed.
 
-:::image type="content" source="../media/8-success.png" alt-text="TODO" border="true":::
+:::image type="content" source="../media/8-success.png" alt-text="Screenshot of the Azure DevOps interface showing the successful pipeline run." border="true":::
 
 Notice that the pipeline run succeeded, because you now have a valid Bicep file.
