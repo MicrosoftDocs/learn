@@ -36,7 +36,7 @@ In this section, you will create a virtual network and a subnet.
 4. On the **Basics** tab, use the information in the table below to create the virtual network.
 
    | **Setting**    | **Value**                                  |
-   |:-:|:-:|
+   |:-|:-|
    | Subscription   | Select your subscription                   |
    | Resource group | Select **Create  new**  Name: **IntLB-RG** |
    | Name           | **IntLB-VNet**                             |
@@ -58,7 +58,7 @@ In this section, you will create a virtual network and a subnet.
 11. Under **BastionHost** select **Enable**, then enter the information from the table below.
 
     | **Setting**                       | **Value**                                     |
-    |:-:|:-:|
+    |:-|:-|
     | Bastion name                      | **myBastionHost**                             |
     | AzureBastionSubnet address  space | **10.1.1.0/24**                               |
     | Public IP address                 | Select **Create  new**  Name: **myBastionIP** |
@@ -88,7 +88,7 @@ In this section, you will create an internal Standard SKU load balancer. The rea
 5. On the **Basics** tab, use the information in the table below to create the load balancer.
 
    | **Setting**           | **Value**                |
-   |:-:|:-:|
+   |:-|:-|
    | Subscription          | Select your subscription |
    | Resource group        | **IntLB-RG**             |
    | Name                  | **myIntLoadBalancer**    |
@@ -119,7 +119,7 @@ The backend address pool contains the IP addresses of the virtual NICs connected
 3. On the **Add backend pool** page, enter the information from the table below.
 
    | **Setting**     | **Value**            |
-   |:-:|:-:|
+   |:-|:-|
    | Name            | **myBackendPool**    |
    | Virtual network | **IntLB-VNet**       |
    | Associated to   | **Virtual machines** |
@@ -140,7 +140,7 @@ The load balancer monitors the status of your app with a health probe. The healt
 2. On the **Add health probe** page, enter the information from the table below.
 
    | **Setting**         | **Value**         |
-   |:-:|:-:|
+   |:-|:-|
    | Name                | **myHealthProbe** |
    | Protocol            | **HTTP**          |
    | Port                | **80**            |
@@ -164,7 +164,7 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
 2. On the **Add load balancing rule** page, enter the information from the table below.
 
    | **Setting**            | **Value**                |
-   |:-:|:-:|
+   |:-|:-|
    | Name                   | **myHTTPRule**           |
    | IP Version             | **IPv4**                 |
    | Frontend IP address    | **LoadBalancerFrontEnd** |
@@ -231,7 +231,7 @@ In this section, you will create a test VM, and then test the load balancer.
 2. On the **Create a virtual machine** page, on the **Basics** tab, use the information in the table below to create the first VM.
 
    | **Setting**          | **Value**                                    |
-   |:-:|:-:|
+   |:-|:-|
    | Subscription         | Select your subscription                     |
    | Resource group       | **IntLB-RG**                                 |
    | Virtual machine name | **myTestVM**                                 |
@@ -249,7 +249,7 @@ In this section, you will create a test VM, and then test the load balancer.
 4. On the **Networking** tab, use the information in the table below to configure networking settings.
 
    | **Setting**                                                  | **Value**                     |
-   |:-:|:-:|
+   |:-|:-|
    | Virtual network                                              | **IntLB-VNet**                |
    | Subnet                                                       | **myBackendSubnet**           |
    | Public IP                                                    | Change to **None**            |
