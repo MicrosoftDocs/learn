@@ -183,7 +183,7 @@ Now that you've created the resource group and service principal, you create a s
 
 1. Enter the **Subscription ID** and **Subscription name** that you saved earlier.
 
-   :::image type="content" source="../media/5-create-service-connection-principal-details-1.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Create service connection' page, with the subscription ID and subscription name filled out." border="true":::
+   :::image type="content" source="../media/create-service-connection-principal-details-1.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Create service connection' page, with the subscription ID and subscription name filled out." border="true":::
 
 1. In **Service principal ID** and **Service principal key**, enter the service principal's application ID and key that you saved earlier, and in **Tenant ID**, enter the Azure tenant ID that you saved earlier.
 

@@ -19,7 +19,7 @@ In this exercise, you'll:
 
 1. Save the changes to the file.
 
-1. Commit your changes. You'll push them shortly.
+1. Commit your changes, but don't push yet. You'll push them shortly.
 
    ```bash
    git add .
@@ -34,7 +34,7 @@ In this exercise, you'll:
 
 1. Within the `appServiceApp` resource definition's `siteConfig` property, add the `alwaysOn` property with a value of `true`:
 
-   :::code language="bicep" source="code/8-main-broken.bicep" range="66" :::
+   :::code language="bicep" source="code/8-main-broken.bicep" range="59-75" highlight="8" :::
 
 1. Save your changes to the file.
 
@@ -42,17 +42,30 @@ In this exercise, you'll:
 
    ```bash
    git add .
-   git commit -m 'Add Application Insights instance to Bicep file'
+   git commit -m 'Configure app AlwaysOn setting'
    git push
    ```
 
 ## Verify the pipeline fails
 
-1. In Azure DevOps, (TODO need to confirm exact instructions for where the user is)
+1. In Azure DevOps, select the **Pipelines** menu, and select your pipeline. Select the most recent run.
 
-1. Notice that the pipeline run failed. This is because the App Service app is deployed using the _F1_ free tier, which doesn't support the Always On feature.
+1. Notice the pipeline automatically triggered because you pushed your changes to a branch that the branch trigger monitors. If the pipeline is still running, wait a minute and refresh it. The pipeline run is displayed.
 
-<!-- TODO mention this shows how subtle issues can creep in, and that multiple environments can make it hard to test everything -->
+   :::image type="content" source="../media/8-failed-run.png" alt-text="TODO" border="true":::
+
+   Notice that the pipeline run failed.
+
+1. To diagnose the failure, select the **Job**, and select the failed **AzureCLI** task. Scroll across to see the full error message. Notice that it includes the following text:
+
+   ```output
+   There was a conflict. AlwaysOn cannot be set for this site as the plan does not allow it. For more information on pricing and features, please see: https://aka.ms/appservicepricingdetails
+   ```
+
+   This error message indicates that the deployment failed because the App Service app is deployed using the _F1_ free tier, which doesn't support the Always On feature.
+
+   > [!IMPORTANT]
+   > This illustrates how it's important to test your Bicep files, including all of the parameter values you use. It's easy for subtle errors to creep into your code, which you might not discover until your pipeline deploys the code. In a future module, you'll learn some strategies to verify and test your Bicep code.
 
 ## Fix the Bicep file and see the pipeline triggered again
 
@@ -76,6 +89,8 @@ In this exercise, you'll:
 
 ## Verify the pipeline succeeds
 
-1. In Azure DevOps, (TODO need to confirm exact instructions for where the user is)
+In Azure DevOps, return to the **Pipelines** list and select your pipeline, then select the most recent run. If the pipeline is still running, wait a minute and refresh it. The pipeline run is displayed.
 
-1. Notice that the pipeline run succeeded, because you now have a valid Bicep file.
+:::image type="content" source="../media/8-success.png" alt-text="TODO" border="true":::
+
+Notice that the pipeline run succeeded, because you now have a valid Bicep file.
