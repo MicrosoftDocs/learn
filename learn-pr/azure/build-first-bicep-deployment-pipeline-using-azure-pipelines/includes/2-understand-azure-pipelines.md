@@ -80,8 +80,8 @@ Now that you know the basic concepts behind Azure Pipelines, let's look at a sim
 Let's look at each part in detail.
 
 - `trigger` tells your pipeline when it should execute. In this case, `trigger: none` tells Azure Pipelines that you want to manually trigger the pipeline.
-- `pool` instructs the pipeline which agent pool to use when it runs the pipeline steps. In this example, the pipeline will be run on an Ubuntu agent machine and will come from the pool of Microsoft hosted agents.
-- `jobs` tells your pipeline that you have a single job. When you only have one job in your pipeline you can omit the `jobs` and `job` keywords, but we've included it here to make it clear how the concepts work.
+- `pool` instructs the pipeline which agent pool to use when it runs the pipeline steps. In this example, the pipeline will be run on an agent running the Ubuntu operating system, which comes from the pool of Microsoft hosted agents.
+- `jobs` tells your pipeline that you have a single job. When you only have one job in your pipeline you can omit the `jobs` and `job` keywords, but we've included it here to make it clear how the concepts work together in a pipeline.
 - `steps` lists the sequence of actions to run within the job. This example includes two steps, both of which run a simple script to echo some text. Each step has a `displayName`, which is a human-readable name for the step. You'll see the display name when you look at the pipeline logs. You'll also see any outputs from the commands in your steps.
 
 > [!IMPORTANT]
