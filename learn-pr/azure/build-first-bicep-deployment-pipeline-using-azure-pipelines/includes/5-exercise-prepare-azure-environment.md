@@ -172,30 +172,30 @@ Now that you've created the resource group and service principal, you create a s
 
 1. Select **Azure Resource Manager** > **Next**.
 
-   :::image type="content" source="../media/5-create-service-connection-type.png" alt-text="TODO" border="true":::
+   :::image type="content" source="../media/5-create-service-connection-type.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Create service connection' page, with the Azure Resource Manager service connection type highlighted." border="true":::
 
 1. Select **Service principal (manual)** > **Next**.
 
-   :::image type="content" source="../media/5-create-service-connection-principal-type.png" alt-text="TODO" border="true":::
+   :::image type="content" source="../media/5-create-service-connection-principal-type.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Create service connection' page, with the 'Service principal (manual)' authentication method highlighted." border="true":::
 
    > [!NOTE]
    > It's a good idea to manually create service principals like you're doing here, rather than using the automatic service principal creation in Azure Pipelines. This is because, when Azure Pipelines creates a service principal for you, it grants it permissions to your whole subscription. It's more secure to grant permissions at a narrower scope like a resource group, and that requires you use the manual creation process.
 
 1. Enter the **Subscription ID** and **Subscription name** that you saved earlier.
 
-   :::image type="content" source="../media/5-create-service-connection-principal-details-1.png" alt-text="TODO" border="true":::
+   :::image type="content" source="../media/5-create-service-connection-principal-details-1.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Create service connection' page, with the subscription ID and subscription name filled out." border="true":::
 
 1. In **Service principal ID** and **Service principal key**, enter the service principal's application ID and key that you saved earlier, and in **Tenant ID**, enter the Azure tenant ID that you saved earlier.
 
-   :::image type="content" source="../media/5-create-service-connection-principal-details-2.png" alt-text="TODO" border="true":::
+   :::image type="content" source="../media/5-create-service-connection-principal-details-2.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Create service connection' page, with the service principal ID, service principal key, and tenant ID filled out, and the Verify button highlighted." border="true":::
 
 1. Select the **Verify** button.
 
    Azure Pipelines verifies it can access your Azure subscription, and displays _Verification succeeded_.
 
    > [!NOTE]
-   > TODO what to do if it doesn't work
+   > If the verification doesn't succeed, check you copied the right details for the service principal, subscription, and tenant. Wait a few minutes to allow time for Azure's role assignments to replicate globally, and then try again.
 
 1. In **Service connection name**, enter _ToyWebsite_. Leave **Grant access permission to all pipelines** checked. Select **Verify and save**.
 
-   :::image type="content" source="../media/5-create-service-connection-principal-details-3.png" alt-text="TODO" border="true":::
+   :::image type="content" source="../media/5-create-service-connection-principal-details-3.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Create service connection' page, with the service connection name filled out, and the 'Verify and save' button highlighted." border="true":::
