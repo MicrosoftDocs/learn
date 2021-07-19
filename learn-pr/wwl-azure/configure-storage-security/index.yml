@@ -2,8 +2,8 @@
 uid: learn.wwl.configure-storage-security
 metadata:
   title: Configure Storage Security
-  description: "Configure Storage Security"
-  ms.date: 07/15/2021
+  description: "You will learn how to configure common storage security features like storage access signatures."
+  ms.date: 07/19/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -11,6 +11,7 @@ metadata:
 title: Configure Storage Security
 summary: You will learn how to configure common storage security features like storage access signatures.
 abstract: |
+  After completing this module, you will be able to:
   - Configure shared access signatures including URI and SAS parameters.
   - Configure storage service encryption.
   - Implement customer-managed keys.

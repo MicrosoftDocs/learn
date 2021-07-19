@@ -2,7 +2,7 @@ The Azure Key Vault can manage your encryption keys. You can create your own enc
 
 Customer-managed keys give you more flexibility and control. You can create, disable, audit, rotate, and define access controls.
 
-:::image type="content" source="../media/AZ104_Customer_Keys-c4b0c338.png" alt-text="Screenshot of using a customer managed key.":::
+:::image type="content" source="../media/customer-keys.png" alt-text="Screenshot of using a customer managed key.":::
 
 
 > [!NOTE]
