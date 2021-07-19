@@ -6,7 +6,7 @@ When you deploy a VM, Azure applies several default security rules to the VM. Th
 
 The IP Flow Verify capability enables you to specify a source and destination IPv4 address, port, protocol (TCP or UDP), and traffic direction (inbound or outbound). IP Flow Verify then tests the communication and informs you if the connection succeeds or fails. If the connection fails, IP Flow Verify identifies which security rule allowed or denied the communication. With this information, you can then resolve the problem.
 
-:::image type="content" source="../media/AZ104_IP_Flow_Verify2-251e9796.png" alt-text="Screenshot of the IP Flow Verify page. A check of packet details shows access denied.":::
+:::image type="content" source="../media/ip-flow-verify-2.png" alt-text="Screenshot of the IP Flow Verify page. A check of packet details shows access denied.":::
 
 
 > [!NOTE]
