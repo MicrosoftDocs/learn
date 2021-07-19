@@ -1,6 +1,6 @@
 The VPN gateway settings that you chose are critical to creating a successful connection.
 
-:::image type="content" source="../media/AZ104_VPN_Gateway2-07de06b9.png" alt-text="Screenshot of the create virtual network gateway page .":::
+:::image type="content" source="../media/vpn-gateway-2.png" alt-text="Screenshot of the create virtual network gateway page .":::
 
 
  -  **Gateway type**. VPN or ExpressRoute.

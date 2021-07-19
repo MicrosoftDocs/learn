@@ -2,8 +2,8 @@
 uid: learn.wwl.configure-vpn-gateway
 metadata:
   title: Configure VPN Gateway
-  description: "Configure VPN Gateway"
-  ms.date: 07/14/2021
+  description: "You will learn how to create VPN gateways and securely connect your company sites to Azure."
+  ms.date: 07/19/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -11,6 +11,7 @@ metadata:
 title: Configure VPN Gateway
 summary: You will learn how to create VPN gateways and securely connect your company sites to Azure.
 abstract: |
+  After completing this module, you will be able to:
   - Identify features and usage cases for VPN gateways.
   - Implement high availability scenarios.
   - Configure site-to-site VPN connections using a VPN gateway.
