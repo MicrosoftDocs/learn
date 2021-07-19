@@ -14,7 +14,7 @@ Azure Backup uses a Recovery Services vault to manage and store the backup data.
 
 ## Snapshots
 
-A snapshot is a point-in-time backup of all disks on the VM. For Azure VMss, Azure Backup uses different extensions for each supporting operating system:
+A snapshot is a point-in-time backup of all disks on the VM. For Azure VMs, Azure Backup uses different extensions for each supporting operating system:
 
 | Extension | OS | Description |
 |---|---|---|

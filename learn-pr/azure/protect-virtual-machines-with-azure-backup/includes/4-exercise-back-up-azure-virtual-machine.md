@@ -33,7 +33,7 @@ In this exercise, you'll create a VM, set up a backup, and start a backup.
         --subnet-prefixes 10.0.0.0/24
     ```
 
-### Create a Windows virtual machine using the Azure CLI
+### Create a Windows virtual machine by using the Azure CLI
 
 Create the **NW-APP01** virtual machine by running the following command. Replace `<password>` with a password of your choice.
 
@@ -50,7 +50,7 @@ az vm create \
     --admin-password <password>
 ```
 
-### Create a Linux virtual machine using the Azure CLI
+### Create a Linux virtual machine by using the Azure CLI
 
 Create the **NW-RHEL01** virtual machine by running the following command.
 
@@ -68,7 +68,7 @@ az vm create \
 
 The command can take a few minutes to complete. Wait for it to finish before moving on to the next step.
 
-### Enable backup for a virtual machine using the Azure portal
+### Enable backup for a virtual machine by using the Azure portal
 
 1. In the Azure portal, search for and select **Virtual machines**.
 
@@ -95,7 +95,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
 1. Select **OK**.
 
-### Enable a backup using the Azure CLI
+### Enable a backup by using the Azure CLI
 
 1. Using Cloud Shell, enable a backup for the **NW-APP01** virtual machine.
 
