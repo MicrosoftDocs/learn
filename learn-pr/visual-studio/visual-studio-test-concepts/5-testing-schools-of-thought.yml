@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.visual-studio-test-concepts.5-testing-schools-of-thought
-title: Testing Schools of Thought
+title: Testing schools of thought
 metadata:
   unitType: learning-content
-  title: Testing Schools Of Thought
+  title: Testing schools of thought
   description: There are many different schools of thought when it comes to testing. Find a summary of Test Driven Development (TDD), Behavior Driven Development (BDD), Red/Green/Refactor, and Don't Repeat Yourself (DRY) and the advantages of each strategy.
   ms.date: 6/28/2021
   author: kendrahavens
