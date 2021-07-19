@@ -1,6 +1,6 @@
 Azure Databases extension provides a highly scalable document store suitable for holding a wide range of document types. The SQL API enables you to write applications that can easily query and maintain documents.
 
-In the sample scenario, you're using Azure Databases extension to store the details of students, and the course grades they achieved. You've written and tested code to create student objects in memory. You now need to add functionality to save these documents to Azure DB, and to query documents held in Azure DB.
+In the sample scenario, you're using Azure Databases extension to store the details of students, and the course grades they achieved. You've written and tested code to create student objects in memory. You now need to add functionality to save these documents to Cosmos DB, and to query documents held in Cosmos DB.
 
 In this exercise, you'll extend the JavaScript app you wrote previously. You'll add code that saves student documents to the Azure Databases extension container you created in the first exercise of this module. You'll add a query capability that enables users to find the course grades achieved by a specified student in a given academic year. Then you'll see the grades received by students who took a particular course.
 
@@ -12,15 +12,15 @@ The first task is to enable your application to connect to the Azure Databases e
 
 1. Start Visual Studio Code if it isn't already running, and open the **grades** folder, holding the **studentgrades.js** file.
 
-2. On the **Terminal** menu, click **New Terminal** if you don't currently have a terminal window open.
+1. On the **Terminal** menu, select **New Terminal** if you don't currently have a terminal window open.
 
-3. In the **Terminal** window, run the following command to install the Azure Databases extension package for JavaScript:
+1. In the **Terminal** window, run the following command to install the Azure Databases extension package for JavaScript.
 
     ```bash
     npm install @azure/cosmos
     ```
 
-4. Add the following code to the studentgrades.js file, immediately above the **Student** class. This object wraps the connection, database, and container information you'll use to access documents in the Azure database:
+1. Add the following code to the studentgrades.js file, immediately above the **Student** class. This object wraps the connection, database, and container information you'll use to access documents in the Cosmos DB.
 
     ```javascript
     let config = {
@@ -30,19 +30,21 @@ The first task is to enable your application to connect to the Azure Databases e
     }
     ```
 
-5. In the toolbar on the left side of Visual Studio Code, select the **Azure** icon.
-
-6. In the **Azure Databases extension** pane, if you aren't already connected, click **Sign in to Azure**. Sign in with the same credentials you used to set up the sandbox.
+1. If you aren't already connected, on the Visual Studio Code **View** menu, select **Command Palette**, and then select **Azure: Sign in**.
 
     ![Screenshot of Azure Databases extension pane in Visual Studio Code. The user is about to sign in to Azure.](../media/7-azure-sign-in.png)
 
-7. Expand your Azure account, right-click your Azure Databases extensionaccount, and then click **Copy Connection String**.
+1. Sign in with the same credentials you used to set up the sandbox, and then close the browser page.
+
+1. In the toolbar on the left side of Visual Studio Code, select the **Azure** icon.
+
+1. Expand your Cosmos DB account, right-click your Azure Databases extension account, and then select **Copy Connection String**.
 
     ![Screenshot of Azure DB pane in Visual Studio Code. The user is copying the connection string for the Azure DB account to the clipboard.](../media/7-connection.png)
 
-8. Paste the connection string for your Azure DB account where indicated in the **connectionString** property of the **config** object in your code.
+1. Paste the connection string for your Cosmos DB account where indicated in the **connectionString** property of the **config** object in your code.
 
-9. Add the following code between the **config** object and the **Student** class:
+1. Add the following code between the **config** object and the **Student** class:
 
     ```javascript
     const cosmos = require("@azure/cosmos");
@@ -56,15 +58,15 @@ The first task is to enable your application to connect to the Azure Databases e
 
     The `require` statement loads the types and functions in the **cosmos** package.
 
-    You use the **AzureClient** object to connect to your Azure DB account. Use the connection string that you specified in the **config.js** script. The **containerref** object is a reference to the **StudentGrades** container in the **SchoolDB** database in your Azure DB account. You'll use the **containerdata** object to access the documents in this container.
+    You use the **AzureClient** object to connect to your Cosmos DB account. Use the connection string that you specified in the **config.js** script. The **containerref** object is a reference to the **StudentGrades** container in the **SchoolDB** database in your Cosmos DB account. You'll use the **containerdata** object to access the documents in this container.
 
-10. Save the file.
+1. Save the file.
 
 ## Maintain student documents in a container
 
-You'll now use the Azure DB client to insert, update, and delete student documents in the database.
+You'll now use the Cosmos DB client to insert, update, and delete student documents in the database.
 
-1. Add the following function to your code, directly above the **Student** class:
+1. Add the following function to your code, directly above the **Student** class.
 
     ```javascript
     function isOK(statusCode) {
@@ -74,7 +76,7 @@ You'll now use the Azure DB client to insert, update, and delete student documen
 
     This function takes an HTTP status code, and returns **true** if the code is in the 200 range. Codes in this range typically indicate that an operation was successful.
 
-2. Add the function shown below to the script, after the **isOK** function:
+2. Add the following function to the script, after the **isOK** function.
 
     ```javascript
     async function addStudent(student) {
@@ -83,12 +85,12 @@ You'll now use the Azure DB client to insert, update, and delete student documen
     }
     ```
 
-    This function takes a **Student** object and adds it to the container in the Azure database. If the insert was successful, the function displays a message indicating that the student document was added.
+    This function takes a **Student** object and adds it to the container in the Azure Databases extension. If the insert was successful, the function displays a message indicating that the student document was added.
 
     > [!NOTE]
     > If the **create** method returns an HTTP status code outside of the 200-299 range, it throws an exception. The empty **catch** handler is intended to catch and discard this exception as it's handled by the **isOK** statement.
 
-3. Add the **updateStudent** function shown below to the script, after the **addStudent** function:
+3. Add the **updateStudent** function shown below to the script, after the **addStudent** function.
 
     ```javascript
     async function updateStudent(student) {
@@ -99,7 +101,7 @@ You'll now use the Azure DB client to insert, update, and delete student documen
 
     This function uses the **upsert** operation of the container to update the student document with the data provided in the **student** parameter. You use this function to modify a student document.
 
-4. Add the function shown below to the script, after the **updateStudent** function:
+4. Add the following function to the script, after the **updateStudent** function.
 
     ```javascript
     async function deleteStudent(student) {
@@ -108,13 +110,13 @@ You'll now use the Azure DB client to insert, update, and delete student documen
     }
     ```
 
-    This function removes the document for the specified student from the container in the Azure database.
+    This function removes the document for the specified student from the container in the Azure Databases extension.
 
 ## Query and retrieve student documents from a container
 
 In this task, you'll add a function that retrieves a student document using its ID. You'll also create a more generalized function that finds all students that have taken a particular course.
 
-1. Add the function shown below to the script, after the **deleteStudent** function:
+1. Add the following function to the script, after the **deleteStudent** function.
 
     ```javascript
     async function getStudent(ID, studentNumber) {
@@ -130,9 +132,9 @@ In this task, you'll add a function that retrieves a student document using its 
     }
     ```
 
-    This function fetches a student document, given the id and the studentNumber (the partition key). The details of the student are displayed. The `forEach` loop displays the grades for each course the student has taken, listed in the **CourseGrades** array for the student. The function returns a **Student** object using the details retrieved from the database. If no matching student is found, the function returns a null reference.
+    This function fetches a student document, given the id and the studentNumber (the partition key). The details of the student appear. The `forEach` loop displays the grades for each course the student has taken, listed in the **CourseGrades** array for the student. The function returns a **Student** object using the details retrieved from the database. If no matching student is found, the function returns a null reference.
 
-2. Add the following function, after the **getStudent** function:
+2. Add the following function, after the **getStudent** function.
 
     ```javascript
     async function queryStudents(courseName) {
@@ -162,7 +164,7 @@ In this task, you'll add a function that retrieves a student document using its 
 
 You can now create and run a test harness that verifies that your code creates student documents correctly.
 
-1. Replace the existing **test** function near the end of the script with the code shown below. Note that this is an asynchronous function:
+1. Replace the existing **test** function near the end of the script with the following code. Note that this is an asynchronous function.
 
     ```javascript
     async function test() {
@@ -242,13 +244,13 @@ You can now create and run a test harness that verifies that your code creates s
 
     3. It runs the **queryStudents** function to display the grades for all students who have taken each course.
 
-    4. It removes student documents from the container in Azure Databases extension with the **deleteStudent** function. The students removed are those created manually, in the first exercise in this module. The **getStudent** function is used to retrieve the student data afterward. In both cases, the documents should no longer be present, and nothing will be displayed.
+    4. It removes student documents from the container in Azure Databases extension with the **deleteStudent** function. The students removed are those created manually, in the first exercise in this module. The **getStudent** function is used to retrieve the student data afterward. In both cases, the documents should no longer be present, and nothing will appear.
 
 2. Save the file.
 
-3. On the **View** menu, click **Terminal** to display the terminal window.
+3. On the **View** menu, select **Terminal** to display the terminal window.
 
-4. In the Terminal window, run the **studentgrages** script:
+4. In the terminal window, run the **studentgrages** script.
 
     ```bash
     node studentgrades.js
@@ -265,7 +267,7 @@ You can now create and run a test harness that verifies that your code creates s
     | Enter the student's forename: | ABC |
     | Enter the student's last name: | DEF |
 
-    The following messages should appear. This is the data displayed by the **getStudent** function, after the course has been added to the Azure Databases extensioncontainer by the **addStudent** function:
+    The following messages should appear. This is the data displayed by the **getStudent** function, after the course has been added to the Azure Databases extension container by the **addStudent** function.
 
     ```text
     Added student with id: S901
@@ -306,7 +308,7 @@ You can now create and run a test harness that verifies that your code creates s
 
     These messages show that the student documents were successfully modified, and the grades for the courses for each student have been added.
 
-8. The next set of messages should appear, as the **queryStudents** function is tested:
+8. The next set of messages should appear, as the **queryStudents** function is tested.
 
     ```text
     Testing queryStudents
@@ -350,19 +352,19 @@ You can now create and run a test harness that verifies that your code creates s
 
     The same series of operations is performed for student 102.
 
-## Verify the documents in the Azure database
+## Verify the documents in the Cosmos database
 
-You'll now query the documents in the database directly, using the Azure Azure DB extension for Visual Studio Code. You'll verify that the documents created by the app have been stored in the database.
+You'll now query the documents in the database directly, using the Azure Databases extension for Visual Studio Code. You'll verify that the documents created by the app have been stored in the database.
 
-1. In the **Azure DB** pane, expand your Azure account, expand the **\<your name or initials\>school** Azure DB account, expand the **SchoolDB** database, expand the **StudentCourseGrades** container, right-click **Documents**, and then click **Refresh**.
+1. In the **Databases** pane, expand your Concierge Subscription account, expand the **\<your name or initials\>school** SQL account, expand the **SchoolDB** database, expand the **StudentCourseGrades** container, right-click **Documents**, and then select **Refresh**.
 
     :::image type="content" source="../media/7-cosmosdb-refresh.png" alt-text="Screenshot of Azure DB pane in Visual Studio Code. The user has selected the Refresh command." loc-scope="vs-code":::
 
-2. Expand the **Documents** folder. You should see only the documents **S901** and **S902**. The documents that you created in the first exercise (**S101**, and **S102**) should have been deleted:
+2. Expand the **Documents** folder. You should see only the documents **S901** and **S902**. The documents that you created in the first exercise (**S101**, and **S102**) should have been deleted.
 
     :::image type="content" source="../media/7-cosmosdb-documents.png" alt-text="Screenshot of Azure DB pane in Visual Studio Code showing the documents in the StudentCourseGrades container." loc-scope="vs-code":::
 
-3. Click the **S901** document. It should look similar to this:
+3. Select the **S901** document. It should look similar to this.
 
     ```json
     {
@@ -392,4 +394,4 @@ You'll now query the documents in the database directly, using the Azure Azure D
 
     If time allows, also examine the **S902** document.
 
-You've now used Visual Studio Code to create a Node.js application that can query, insert, update, and delete documents in an Azure database.
+You've now used Visual Studio Code to create a Node.js application that can query, insert, update, and delete documents in a Cosmos DB.

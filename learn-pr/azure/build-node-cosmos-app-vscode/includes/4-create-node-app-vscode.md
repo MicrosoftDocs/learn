@@ -30,7 +30,7 @@ Other IntelliSense features available in Visual Studio Code include:
 - Organizing imports. IntelliSense can quickly sort the imports that occur in a code file, and remove imports that aren't used.
 - Peeking definitions and references. The peek facility enables you to quickly view the definition of an object or function, even if it's in another file. Right-click a variable or function, and select **Peek Definition** or **Peek References**. The definition or references appear in a pop-up window.
 - Go to a variable, function, or type definition. This feature enables you to move directly to the definition of a variable, function, or type in your code. This is useful if you need to change the definition of an item or modify a function. Right-click the code that references your variable or type, or that calls your function. Select **Go To Definition**, or **Go To Type Definition**.
-- Suggesting possible refactoring of your code. An ellipsis (...) under an item indicates areas where IntelliSense has one or more suggestions. Click the ellipsis to view the suggestions. Select **Quick Fix** to implement the suggestion.
+- Suggesting possible refactoring of your code. An ellipsis (...) under an item indicates areas where IntelliSense has one or more suggestions. Select the ellipsis to view the suggestions. Select **Quick Fix** to implement the suggestion.
   
 ## Run and debug a Node.js application
 
@@ -40,7 +40,7 @@ You can use the native Node.js debugger (for example, `node inspect myapp`) from
 
 Before you use the Visual Studio Code debugger, you should configure it. For example, the Visual Studio Code debugger displays output in its own **Output** window in the IDE. However, this window can't handle terminal input. If your app expects to receive keyboard input, you must configure the debugger to use an external terminal.
 
-To edit the debugger configuration settings, on the **Debug** menu, click **Open Configurations**. The configuration file contains a JSON object named **configurations**. To debug the application using an external terminal, add the **console** property, and set it to **externalTerminal**.
+To edit the debugger configuration settings, on the **Debug** menu, select **Open Configurations**. The configuration file contains a JSON object named **configurations**. To debug the application using an external terminal, add the **console** property, and set it to **externalTerminal**.
 
 ```json
 {
@@ -60,7 +60,7 @@ To edit the debugger configuration settings, on the **Debug** menu, click **Open
 }
 ```
 
-To begin a debug session, first set one or more breakpoints in your application code. To do this, click in the left margin by the statement at which you want to pause execution. A red dot will appear.
+To begin a debug session, first, set one or more breakpoints in your application code. To do this, click in the left margin by the statement at which you want to pause execution. A red dot will appear.
 
 Next, select **Start Debugging** on the **Debug** menu. If you're using an external terminal, a new terminal window will appear. If your application expects any input, enter it into this window. Any messages output by your application will appear in this window:
 
@@ -68,7 +68,7 @@ Next, select **Start Debugging** on the **Debug** menu. If you're using an exter
 
 If you aren't using an external terminal, debugger output will appear in the **Output** window in Visual Studio Code.
 
-When the debugger reaches a breakpoint in your application, execution will pause, and the breakpoint statement is highlighted. On the left, you'll see windows where you can examine and set the values of local and global variables, and the call stack. You can also add **Watch** expressions, which are evaluated and displayed as execution proceeds:
+When the debugger reaches a breakpoint in your application, execution will pause, and the breakpoint statement is highlighted. On the left, you'll see windows where you can examine and set the values of local and global variables, and the call stack. You can also add **Watch** expressions, which are evaluated and displayed as execution proceeds.
 
 :::image type="content" source="../media/4-debugger-at-breakpoint.png" alt-text="Screenshot of the Visual Studio Code debugger in action pausing at a breakpoint on some sample JavaScript code." loc-scope="vs-code":::
 
