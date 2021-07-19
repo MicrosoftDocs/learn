@@ -1,4 +1,4 @@
-:::image type="content" source="../media/AZ104_Monitor_Key_Capabilities-6b8e9d42.png" alt-text="Key capabilities as described in the topic.":::
+:::image type="content" source="../media/monitor-key-capabilities.png" alt-text="Key capabilities as described in the topic.":::
 
 
  -  **Monitor and visualize metrics**. Metrics are numerical values available from Azure resources helping you understand the health, operation and performance of your system.

@@ -1,6 +1,6 @@
 The Azure Activity Log is a subscription log that provides insight into subscription-level events that have occurred in Azure. This includes a range of data, from Azure Resource Manager operational data to updates on Service Health events.
 
-With the Activity Log, you can determine the ‘what, who, and when’ for any write operations (PUT, POST, DELETE) taken on the resources in your subscription. You can also understand the status of the operation and other relevant properties. Through activity logs, you can determine:
+With the Activity Log, you can determine the 'what, who, and when' for any write operations (PUT, POST, DELETE) taken on the resources in your subscription. You can also understand the status of the operation and other relevant properties. Through activity logs, you can determine:
 
  -  What operations were taken on the resources in your subscription?
  -  Who started the operation?
@@ -8,7 +8,7 @@ With the Activity Log, you can determine the ‘what, who, and when’ for any w
  -  The status of the operation.
  -  The values of other properties that might help you research the operation.
 
-:::image type="content" source="../media/AZ104_Activity_Log-93eb3ca8.png" alt-text="Activity log is shown gathering information from compute and non-compute resources.":::
+:::image type="content" source="../media/activity-log.png" alt-text="Activity log is shown gathering information from compute and non-compute resources.":::
 
 
 > [!NOTE]
