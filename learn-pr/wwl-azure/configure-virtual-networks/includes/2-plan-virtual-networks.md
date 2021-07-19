@@ -2,14 +2,14 @@ A major incentive for adopting cloud solutions such as Azure is to enable inform
 
 Once the resources are moved to Azure, they require the same networking functionality as an on-premises deployment, and in specific scenarios require some level of network isolation. Azure networking components offer a range of functionalities and services.
 
-:::image type="content" source="../media/AZ104_Networking_Components-a7ba5a58.png" alt-text="Screenshot of the Networking page from the Products section of Azure Documentation. Shows all the main networking components of Azure Networking.":::
+:::image type="content" source="../media/network-components.png" alt-text="Screenshot of the Networking page from the Products section of Azure Documentation. Shows all the main networking components of Azure Networking.":::
 
 
 ## Implementation
 
 An Azure Virtual Network (VNet) is a representation of your own network in the cloud. It is a logical isolation of the Azure cloud dedicated to your subscription. You can use VNets to provision and manage virtual private networks (VPNs) in Azure and, optionally, link the VNets with other VNets in Azure, or with your on-premises IT infrastructure to create hybrid or cross-premises solutions. Each VNet you create has its own CIDR block and can be linked to other VNets and on-premises networks if the CIDR blocks do not overlap. You also have control of DNS server settings for VNets, and segmentation of the VNet into subnets.
 
-:::image type="content" source="../media/AZ104_Virtual_Networks-4e5b2a5d.png" alt-text="Diagram of a VNet with a subnet containing two virtual machines, pointing to a on-premises infrastructure and a separate virtual network, and showing connectivity with both.":::
+:::image type="content" source="../media/virtual-networks.png" alt-text="Diagram of a VNet with a subnet containing two virtual machines, pointing to a on-premises infrastructure and a separate virtual network, and showing connectivity with both.":::
 
 
 Virtual networks can be used in many ways.
