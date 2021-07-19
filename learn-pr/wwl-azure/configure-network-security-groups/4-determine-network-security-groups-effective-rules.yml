@@ -4,11 +4,11 @@ title: Determine Network Security Group effective rules
 metadata:
   title: Determine Network Security Group effective rules
   description: "Determine Network Security Group effective rules"
-  ms.date: 07/15/2021
+  ms.date: 07/19/2021
   author: wwlpublish
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-determine-nsg-effective-rules.md)]
+  [!include[](includes/4-determine-network-security-groups-effective-rules.md)]
