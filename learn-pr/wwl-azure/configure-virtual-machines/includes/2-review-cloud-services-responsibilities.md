@@ -2,7 +2,7 @@ Azure Virtual Machines is one of several types of on-demand, scalable computing 
 
 Virtual machines are part of the Infrastructure as a Service (IaaS) offering. IaaS is an instant computing infrastructure, provisioned and managed over the Internet. Quickly scale up and down with demand and pay only for what you use.
 
-:::image type="content" source="../media/AZ104_IaaS_Layers-ac547d19.png" alt-text="Visual Representation of the SaaS, PaaS, and IaaS and shared responsibility areas.":::
+:::image type="content" source="../media/iaas-layers.png" alt-text="Visual Representation of the SaaS, PaaS, and IaaS and shared responsibility areas.":::
 
 
 ## IaaS business scenarios

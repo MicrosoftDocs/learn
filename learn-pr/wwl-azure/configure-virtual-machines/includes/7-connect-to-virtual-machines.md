@@ -1,6 +1,6 @@
 There are several ways to access your virtual machines in Azure.
 
-:::image type="content" source="../media/AZ104_VM_Bastion-2cf37176.png" alt-text="A person is shown using RDP and SSH to directly access a virtual machine subnet. A person is also shown using SSL and the Cloud Shell to access a Bastion virtual network.":::
+:::image type="content" source="../media/virtual-machines-bastion.png" alt-text="A person is shown using RDP and SSH to directly access a virtual machine subnet. A person is also shown using SSL and the Cloud Shell to access a Bastion virtual network.":::
 
 
 ## Windows-based virtual machines

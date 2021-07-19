@@ -2,7 +2,7 @@ To manage an Azure Windows VM, you can use the same set of tools that you used t
 
  -  **Remote Desktop Protocol (RDP)** allows you to establish a graphical user interface (GUI) session to an Azure VM that runs any supported version of Windows. The Azure portal automatically enables the **Connect button** on the Azure Windows VM blade if the VM is running and accessible via a public or private IP address, and if it accepts inbound traffic on TCP port 3389. After you click this button, the portal will automatically provision an RDP file, which you can either open or download. Opening the file initiates an RDP connection to the corresponding VM. You will get a warning that the RDP file is from an unknown publisher. Certificate warnings are expected. When connecting be sure to use credentials for the virtual machine. The Azure PowerShell **Get-AzRemoteDesktopFile** cmdlet provides the same functionality.
 
-:::image type="content" source="../media/AZ104_Connecting_Win_VMs-6a0e8424.png" alt-text="Screenshot of the RDP connection page.":::
+:::image type="content" source="../media/connect-windows-virtual-machines.png" alt-text="Screenshot of the RDP connection page.":::
 
 
  -  **Windows Remote Management (WinRM)** allows you to establish a command-line session to an Azure VM that runs any supported version of Windows. You can also use WinRM to run noninteractive Windows PowerShell scripts. WinRM facilitates additional session security by using certificates. You can upload a certificate that you intend to use to Azure Key Vault prior to establishing a session. The process of setting up WinRM connectivity includes the following, high-level steps:
