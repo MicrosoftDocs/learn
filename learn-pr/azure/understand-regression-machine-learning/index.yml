@@ -18,7 +18,7 @@ abstract: |
   - Visualize error and cost functions in linear regression
   - Understand basic evaluation metrics for regression
 prerequisites: Familiarity with machine learning models
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/machine-learning/understand-regression-machine-learning.svg
 levels: 
 - beginner
 roles: 
