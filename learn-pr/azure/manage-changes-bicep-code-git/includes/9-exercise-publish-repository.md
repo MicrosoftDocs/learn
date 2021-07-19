@@ -99,7 +99,7 @@ Keep your browser open. You'll check on the repository again later in this exerc
    git remote add origin YOUR_REPOSITORY_URL
    ```
 
-   Notice that you're using the command `git remote add` to create a new reference to a remote repository. You name the reference `origin`, which is the standard name. But you can use any name you want.
+   Notice that you're using the command `git remote add` to create a new reference to a remote repository. You name the reference `origin`, which is the standard name.
 
 ## Push your changes by using the Git CLI
 
