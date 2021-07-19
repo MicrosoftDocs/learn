@@ -16,7 +16,7 @@ abstract: |
   - Clean a dataset of errors
   - Predict unknown values using numeric and categorical data
 prerequisites: Some familiarity with machine learning concepts, such as models and cost, is helpful, but not essential
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/machine-learning/introduction-to-data-for-machine-learning.svg
 levels: 
 - beginner
 roles: 
