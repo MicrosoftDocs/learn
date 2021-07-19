@@ -23,7 +23,7 @@ In a future module, you'll learn about deploying your Bicep code through an auto
 
 When you work with repositories hosted in GitHub or Azure DevOps, you configure your local Git repository to know about the remote repository. An online repository has a URL that Git can use to access it from your computer. Conventionally, the term _origin_ refers to the remote repository that your local repository synchronizes with.
 
-You also need to set up _tracking branches_. This designation tells Git that a branch from your local repository represents the same branch as in your online repository. This is especially important for your **main** branch, because you want to keep that synchronized across all of your repositories. You can enable tracking on other branches too.
+You also need to set up _tracking branches_, which tell Git that a branch from your local repository represents the same branch as in your online repository. This is especially important for your **main** branch, because you want to keep that synchronized across all of your repositories. You can enable tracking on other branches too.
 
 > [!NOTE]
 > Your team might have already created a repository that you want to view or modify. You can quickly get a copy of the repository by _cloning_ the online repository through the `git clone` command.
