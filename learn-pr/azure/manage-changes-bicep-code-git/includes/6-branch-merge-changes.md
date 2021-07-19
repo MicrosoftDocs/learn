@@ -73,5 +73,4 @@ In this module, we're using a simple workflow called _trunk-based development_. 
 
 Trunk-based development discourages making changes directly on the trunk branch. You try to keep other branches around for only a short amount of time, which helps to minimize merge conflicts. Then you merge and delete those branches as you complete pieces of work.
 
-There are other workflows too. These are common in team environments where you might want to control how often you release your changes. In the summary for this module, we provide a link to more information about Git workflows.
-
+There are other workflows too. These are common in team environments where you might want to control how often you release your changes. In the summary for this module, we provide links to more information about Git workflows.
