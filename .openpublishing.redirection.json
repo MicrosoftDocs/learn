@@ -8062,13 +8062,128 @@
     },
     {
       "source_path": "learn-pr/student-evangelism/implement-cicd-iot-edge/7-how-monitor-devices.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/implement-cicd-iot-edge/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-cicd-iot-edge/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/student-evangelism/implement-cicd-iot-edge/8-monitor-devices-app-insights.md",
-      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/implement-cicd-iot-edge/",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/implement-cicd-iot-edge/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-azure-vm-templates/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-azure-vm-templates/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-azure-vm-templates/2-define-templates.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-azure-vm-templates/3-discover-quickstart-templates.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-azure-vm-templates/4-deploy-a-vm-quickstart-template.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-azure-vm-templates/5-add-a-resource.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-azure-vm-templates/6-extend-the-quickstart-template.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-azure-vm-templates/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-analyze-data-with-python/2-exercise-explore-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-analyze-data-with-python/3-exercise-explore-data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-analyze-data-with-python/3-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-analyze-data-with-python/8-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/explore-analyze-data-with-python/4-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/explore-analyze-data-with-python/9-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-evaluate-regression-models/2-exercise-explore-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models/3-exercise-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-evaluate-regression-models/2-exercise-model.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models/3-exercise-model",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-evaluate-regression-models/3-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models/8-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-evaluate-regression-models/4-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models/9-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-evaluate-classification-models/2-exercise-explore-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-classification-models/3-exercise-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-evaluate-classification-models/2-exercise-model.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-classification-models/3-exercise-model",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-evaluate-classification-models/3-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-classification-models/8-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-evaluate-classification-models/4-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-classification-models/9-summary",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-evaluate-cluster-models/2-exercise-explore-data.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-cluster-models/3-exercise-model",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-evaluate-cluster-models/2-exercise-model.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-cluster-models/3-exercise-model",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-evaluate-cluster-models/3-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-cluster-models/6-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/train-evaluate-cluster-models/4-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-cluster-models/7-summary",
+      "redirect_document_id": true
     }
   ]
 }
