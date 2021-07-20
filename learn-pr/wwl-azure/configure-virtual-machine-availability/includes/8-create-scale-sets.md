@@ -1,4 +1,4 @@
-:::image type="content" source="../media/implement-scale-sets.png" alt-text="Screenshot of the Create virtual machine scale set page in the portal.":::
+:::image type="content" source="../media/AZ104_Implementing_Scale_Sets-b779b541.png" alt-text="Screenshot of the Create virtual machine scale set page in the portal.":::
 
 
  -  **Initial instance count.** Number of virtual machines in the scale set (0 to 1000).

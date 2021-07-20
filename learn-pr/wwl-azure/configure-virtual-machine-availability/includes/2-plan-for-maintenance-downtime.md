@@ -1,6 +1,6 @@
 As an Azure administrator you must be prepared for planned and unplanned failures. There are three scenarios that can lead to your virtual machine in Azure being impacted: unplanned hardware maintenance, unexpected downtime, and planned maintenance.
 
-:::image type="content" source="../media/maintenance-downtime.png" alt-text="Three textboxes, Unplanned Hardware Maintenance, Unexpected Downtime, and Planned Maintenance.":::
+:::image type="content" source="../media/AZ104_Maintenance_Downtime-8d7ac23b.png" alt-text="Three textboxes, Unplanned Hardware Maintenance, Unexpected Downtime, and Planned Maintenance.":::
 
 
 An **Unplanned Hardware Maintenance** event occurs when the Azure platform predicts that the hardware or any platform component associated to a physical machine, is about to fail. When the platform predicts a failure, it will issue an unplanned hardware maintenance event. Azure uses Live Migration technology to migrate the Virtual Machines from the failing hardware to a healthy physical machine. Live Migration is a VM preserving operation that only pauses the Virtual Machine for a short time, but performance might be reduced before and/or after the event.
