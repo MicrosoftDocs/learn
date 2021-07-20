@@ -4,7 +4,7 @@ SSE automatically encrypts your data before persisting it to Azure-managed Disks
 
 SES encryption, encryption at rest, decryption, and key management are transparent to users. All data written to the Azure storage platform is encrypted through 256-bit AES encryption, one of the strongest block ciphers available.
 
-:::image type="content" source="../media/storage-service-encryption.png" alt-text="Screenshot of the Encryption page. Two radio buttons, Microsoft Managed Keys, and Customer Managed Keys are shown.":::
+:::image type="content" source="../media/AZ104_SES-65de5654.png" alt-text="Screenshot of the Encryption page. Two radio buttons, Microsoft Managed Keys, and Customer Managed Keys are shown.":::
 
 
 > [!NOTE]

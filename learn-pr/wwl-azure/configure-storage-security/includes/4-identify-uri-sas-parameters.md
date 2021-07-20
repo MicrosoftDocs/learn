@@ -1,6 +1,6 @@
 When you create your SAS, a URI is created using parameters and tokens. The URI consists of your Storage Resource URI and the SAS token.
 
-:::image type="content" source="../media/uri-shared-access-signature.png" alt-text="Storage Resource and the SAS Token combine to form the URI.":::
+:::image type="content" source="../media/AZ104_URI_and_SAS-ab4e404c.png" alt-text="Storage Resource and the SAS Token combine to form the URI.":::
 
 
 Below is an example URI.
