@@ -45,3 +45,4 @@ Specify the Diagnostic setting name (the name of the file you’re going to save
 Navigate to save, and the settings are saved and you will be able to view the saved diagnostic settings in the ‘Diagnostic’ tab:
 
 ![Save Diagnostic Setting](../media/azure-data-share-save-diagnostic-set.png)
+
