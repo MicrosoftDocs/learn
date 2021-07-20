@@ -2,7 +2,7 @@ A role assignment is the process of scoping a role definition to a user, group, 
 
 For example, in the diagram, the Marketing group has been assigned the Contributor role for the pharma-sales resource group. Users in the Marketing group can create or manage any Azure resource in the pharma-sales resource group. Marketing users don't have access to resources outside the pharma-sales resource group, unless they are part of another role assignment.
 
-:::image type="content" source="../media/role-assignment.png" alt-text="A service principle, role definition, and scope create a role assignment.":::
+:::image type="content" source="../media/AZ104_Role_Assignment-b90067dd.png" alt-text="A service principle, role definition, and scope create a role assignment.":::
 
 
 > [!NOTE]

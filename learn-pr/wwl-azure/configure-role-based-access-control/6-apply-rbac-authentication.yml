@@ -4,8 +4,9 @@ title: Apply Role-based Access Control authentication
 metadata:
   title: Apply Role-based Access Control authentication
   description: "Apply Role-based Access Control authentication"
-  ms.date: 07/19/2021
+  ms.date: 07/20/2021
   author: wwlpublish
+  ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

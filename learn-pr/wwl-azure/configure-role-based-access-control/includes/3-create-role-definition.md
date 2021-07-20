@@ -1,6 +1,6 @@
 Each role is a set of properties defined in a JSON file. This role definition includes Name, Id, and Description. The definition also includes the allowable permissions (Actions), denied permissions (NotActions), and scope (read access, etc.) for the role.
 
-:::image type="content" source="../media/role-definition.png" alt-text="The built-in Contributor role has actions, notactions, and dataactions.":::
+:::image type="content" source="../media/AZ104_Role_Definition-5b0918ec.png" alt-text="The built-in Contributor role has actions, notactions, and dataactions.":::
 
 
 In this example, the Owner role means all (asterisk) actions, no denied actions, and all (/) scopes.
