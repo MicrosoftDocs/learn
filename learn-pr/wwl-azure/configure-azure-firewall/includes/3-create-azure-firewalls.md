@@ -4,7 +4,7 @@ It's recommended to use a hub-spoke network topology when deploying a firewall.
  -  The *spokes* are virtual networks that peer with the hub, and can be used to isolate workloads.
  -  Traffic flows between the on-premises datacenter and the hub through an ExpressRoute or VPN gateway connection.
 
-:::image type="content" source="../media/firewall-tasks.png" alt-text="Diagram with three subnets. Numbers are aligned with the subnets.":::
+:::image type="content" source="../media/AZ104_Firewall_Tasks-958ac4f1.png" alt-text="Diagram with three subnets. Numbers are aligned with the subnets.":::
 
 
 The benefits of this topology include:

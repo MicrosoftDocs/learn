@@ -1,6 +1,6 @@
 There are three kinds of rules that you can configure in the Azure Firewall. Remember, by default, Azure Firewall blocks all traffic, unless you enable it.
 
-:::image type="content" source="../media/firewall-rules.png" alt-text="Screenshot of the application rule collection.":::
+:::image type="content" source="../media/AZ104_Firewall_Rules-444b3360.png" alt-text="Screenshot of the application rule collection.":::
 
 
 ## NAT Rules
