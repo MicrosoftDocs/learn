@@ -1,6 +1,6 @@
 Azure Files provides the capability to take share snapshots of file shares. Share snapshots capture a point-in-time, read-only copy of your data.
 
-:::image type="content" source="../media/file-share-snapshots.png" alt-text="Screenshot of the Snapshot page with a snapshot name and date created.":::
+:::image type="content" source="../media/AZ104_FS_Snapshot-8e4de8fb.png" alt-text="Screenshot of the Snapshot page with a snapshot name and date created.":::
 
 
 Share snapshot capability is provided at the file share level. Retrieval is provided at the individual file level, to allow for restoring individual files. You cannot delete a share that has share snapshots unless you delete all the share snapshots first.
