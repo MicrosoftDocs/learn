@@ -18,7 +18,7 @@ Blob storage offers three types of resources:
 
 The following diagram shows the relationship between these resources.
 
-:::image type="content" source="../media/blob-storage.png" alt-text="Diagram of Blob storage architecture.":::
+:::image type="content" source="../media/AZ104_Blob_Storage2-8183f49d.png" alt-text="Diagram of Blob storage architecture.":::
 
 
 > [!NOTE]
