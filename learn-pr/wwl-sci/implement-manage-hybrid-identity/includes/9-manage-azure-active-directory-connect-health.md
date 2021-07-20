@@ -104,7 +104,7 @@ When you're deleting a service instance, be aware of the following:
 
 ## Manage access with Azure Role Based Access Control
 
-[Azure role-based access control (Azure RBAC)](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal) for Azure AD Connect Health provides access to users and groups other than global administrators. Azure RBAC assigns roles to the intended users and groups, and provides a mechanism to limit the global administrators within your directory.
+[Azure role-based access control (Azure RBAC)](/azure/role-based-access-control/role-assignments-portal) for Azure AD Connect Health provides access to users and groups other than global administrators. Azure RBAC assigns roles to the intended users and groups, and provides a mechanism to limit the global administrators within your directory.
 
 ### Roles
 
