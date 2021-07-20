@@ -1,6 +1,6 @@
 With Azure products and services, you only pay for what you use. As you create and use Azure resources, you are charged for the resources. You use Azure Cost Management and Billing features to conduct billing administrative tasks and manage billing access to costs. You also its features to monitor and control Azure spending and to optimize Azure resource use.
 
-:::image type="content" source="../media/cost-management.png" alt-text="Screenshot of the Cost Management dashboard showing service name and location costs and forecasts.":::
+:::image type="content" source="../media/AZ104_Cost_Management-49fd3459.png" alt-text="Screenshot of the Cost Management dashboard showing service name and location costs and forecasts.":::
 
 
 Cost Management shows organizational cost and usage patterns with advanced analytics. Reports in Cost Management show the usage-based costs consumed by Azure services and third-party Marketplace offerings. Costs are based on negotiated prices and factor in reservation and Azure Hybrid Benefit discounts. Collectively, the reports show your internal and external costs for usage and Azure Marketplace charges. Other charges, such as reservation purchases, support, and taxes are not yet shown in reports. The reports help you understand your spending and resource use and can help find spending anomalies. Predictive analytics are also available. Cost Management uses Azure management groups, budgets, and recommendations to show clearly how your expenses are organized and how you might reduce costs.
