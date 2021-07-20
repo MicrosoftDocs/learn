@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.powershell.intro-to-powershell.4-cmdlets
-title: Use the core cmdlets to find and learn about cmdlets
+title: Locate commands
 metadata:
-  title: Use the core cmdlets to find and learn about cmdlets
-  description: Learn how to use the built-in help system, the Get-Command cmdlet, and the Get-Member cmdlet.
+  title: Locate commands
+  description: Learn how locate commands.
   author: softchris
   ms.author: chnoring
   ms.date: 12/7/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 9
+durationInMinutes: 3
 content: |
   [!include[](includes/4-cmdlets.md)]

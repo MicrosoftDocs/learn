@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.powershell.discover-commands.5-exercise-discover-objects
+title: Exercise - Discover objects
+metadata:
+  title: Exercise - Discover objects
+  description: In this exercise, learn how to discover what type of object a command returns, so you can find related commands and more.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 07/09/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: true
+interactive: powershell
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-exercise-discover-objects.md)]
