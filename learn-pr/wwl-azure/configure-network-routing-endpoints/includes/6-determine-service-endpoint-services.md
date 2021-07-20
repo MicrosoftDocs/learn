@@ -1,6 +1,6 @@
 It is easy to add a service endpoint to the virtual network. Several services are available including: Azure Active Directory, Azure Cosmos DB, EventHub, KeyVault, Service Bus, SQL, and Storage.
 
-:::image type="content" source="../media/service-endpoint-services.png" alt-text="Screenshot of the Service endpoints blade. The service drop-down displays the available services. Two subnets are selected.":::
+:::image type="content" source="../media/AZ104_Service_Endpoint_Services-c41bf57c.png" alt-text="Screenshot of the Service endpoints blade. The service drop-down displays the available services. Two subnets are selected.":::
 
 
 **Azure Storage**. Generally available in all Azure regions. This endpoint gives traffic an optimal route to the Azure Storage service. Each storage account supports up to 100 virtual network rules.
