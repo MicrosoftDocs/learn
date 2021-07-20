@@ -4,11 +4,12 @@ title: What is F# Interactive?
 metadata:
   unitType: learning-content
   title: "What is F# Interactive?"
-  description: "Learn what F# Interactive is and how you can use it to interactively evaluate code and write scripts"
-  ms.date: 07/16/2021
+  description: "Learn what F# Interactive is and how you can use it to evaluate code and scripts in real-time"
+  ms.date: 07/19/2021
   author: luisquintanilla
   ms.author: luquinta
   ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-fsharp-interactive.md)]
+  [!include[](includes/5-fsharp-interactive.md)]
