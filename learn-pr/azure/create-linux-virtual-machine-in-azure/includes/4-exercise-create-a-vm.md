@@ -42,7 +42,7 @@ Remember that these instructions use the sandbox. If you're using another Azure 
     <!-- Resource selection -->  
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-1. Select **Next: Disks >** to open the **Disks** tab.
+1. Select **Next: Disks** to open the **Disks** tab.
 
 1. On the **Disks** pane, enter the following values for each setting.
 
