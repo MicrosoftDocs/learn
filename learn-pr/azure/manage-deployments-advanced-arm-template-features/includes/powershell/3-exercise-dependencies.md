@@ -109,7 +109,7 @@ Here, you download an ARM template from a GitHub repository that we provide for 
       -adminPasswordOrKey $secure
     ```
 
-    The command can take a few minutes to run. While the command runs, you can [examine the ARM template](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.json?azure-portal=true) from a separate browser tab if you'd like.
+    The command can take a few minutes to run. While the command runs, you can [examine the ARM template](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/quickstarts/microsoft.compute/vm-simple-linux/azuredeploy.json) from a separate browser tab if you'd like.
 
     Note the resource dependencies by searching for the `dependsOn` key. For example, the virtual machine resource depends on the network interface:
 
