@@ -1,3 +1,3 @@
-In this module we firstly saw the way we interface our bot with Microsoft Teams app. The Unique Bot ID was obtained from the Azure Health bot platform. We mapped the scenario in the Models section and later used the ID to invoke bot on the Microsoft Teams app. Then we designed an app using the Teams app studio where we wrapped up the bot into an application. The Bot ID again played a major role to achieve this successfully. 
+In this module, you first learned how to interface your bot with a Teams app. You got your unique bot ID from the Azure Health Bot service. You later used that ID to invoke the bot on Teams. You then designed an app by using App Studio for Teams to wrap the bot into an application. 
 
-:::image type="content" source="../media/5-summary.png" alt-text="Screenshot of app icon":::
+:::image type="content" source="../media/5-summary.png" alt-text="Screenshot that shows the app icon.":::

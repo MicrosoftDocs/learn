@@ -1,4 +1,4 @@
-This module is about making a bot available on Microsoft Teams. You'll also learn how to build a basic app in Teams so you can share it within your organization. You'll make the bot you created in previous modules available on Microsoft Teams and wrap it in a Teams application.
+This module is about making a bot available on Microsoft Teams. You'll also learn how to build a basic app in Teams so you can share it within your organization. You'll make the bot you created in previous modules available on Microsoft Teams and wrap it into a Teams application.
 
 ## Learning objectives
 

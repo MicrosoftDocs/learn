@@ -1,6 +1,6 @@
 You created a bot in the previous module. You'll now implement advanced features like LUIS, connecting data, and making the bot available on channels like Teams and WhatsApp. Let's first connect the bot to Teams.  
 
-## Making the bot available on channels 
+## Make the bot available on Teams
 
 1. Select **Models** under **Language** in the left pane.
 
