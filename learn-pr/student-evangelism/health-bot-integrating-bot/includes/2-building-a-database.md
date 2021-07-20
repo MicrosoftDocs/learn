@@ -1,8 +1,8 @@
-In our previous module (Enhanced Healthcare Bot), we had developed a vitals bot to collects basic health information of the users. To store the data we collected, we are going to build a database.
+In our previous module (Enhanced Healthcare Bot), we'd developed a vitals bot to collects basic health information of the users. To store the data we collected, we're going to build a database.
 
 Follow the steps to build a database:
 
-1. Go to the [Azure Portal](https://portal.azure.com/) and sign into your account.
+1. Go to the [Azure portal](https://portal.azure.com/) and sign into your account.
 
 1. Select **Create a resource**.
 
@@ -22,7 +22,7 @@ Follow the steps to build a database:
 
       :::image type="content" source="../media/2-create-sql-server.png" alt-text="Creating a server":::
 
-    - **Server:** Click on 'Create New' and then fill in configurations for New Server cell as follows:
+    - **Server:** Select **Create New** and then fill in configurations for New Server cell as follows:
 
        - **Server Name:** Give a server name like **healthbot**.
        - **Server Admin Login:** Give a username for the server such as **learnbot**.
@@ -34,53 +34,53 @@ Follow the steps to build a database:
 
    - Want to use SQL elastic pool: Select 'No'
 
-   - Compute + Storage: Click on 'Configure database' and then click on 'Looking for basic, standard, premuim'
+   - Compute + Storage: Select **Configure database** and then select **Looking for basic, standard, premium**.
 
       :::image type="content" source="../media/2-compute-categories.png" alt-text="Categories of compute plans":::
 
-   - Select the Basic option and note that it will cost 359.58 INR and click on 'Apply'
+   - Select the Basic option and note that it will cost 359.58 INR and select **Apply**.
 
       :::image type="content" source="../media/2-database-review-create.png" alt-text="Review a database":::
 
-   - Backup Storage Redundancy: Select 'Geo-redundant backup storage'
+   - Backup Storage Redundancy: Select **Geo-redundant backup storage**.
 
-1. Select **Review + Create**, after which you will land on the summary page. Check if you have entered all the details accurately and select **Create**.
+1. Select **Review + Create**, after which you'll land on the summary page. Check if you've entered all the details accurately and select **Create**.
 
-1. Once the deployment is successful, select the SQL database you have created.
+1. After the deployment is successful, select the SQL database created.
 
 1. Note down the Server name mentioned under the essentials.
 
    :::image type="content" source="../media/2-query-editor.png" alt-text="Query Editor of Database":::
 
-1. Select **Query editor (preview)** from the menu bar on the left of the page and you will be able to see a login page. Enter the credentials which you created in the previous steps. (Login ID: learnbot and Password: healthbot@123)
+1. Select **Query editor (preview)** from the menu bar on the left of the page and you'll be able to see a log-in page. Enter the credentials you created in the previous steps. (Login ID: learnbot and Password: healthbot@123)
 
    :::image type="content" source="../media/2-whitelist-ip.png" alt-text="Whitelisting a single IP address":::
 
 1. It will give out an error saying **Cannot open server**.
 
-    > [!NOTE]
-    > To avoid this issue, follow the steps below before logging in:
-    >
-    > 1. In the Overview page of the SQL database, select **Set Server Firewall**.
-    > 1. Select **Yes** for Allow azure Services and resources to access this server.
-    >
-    >    :::image type="content" source="../media/2i.png" alt-text="Searching for a database":::
-    >
-    > 1. Under Rule name enter the following details in the three textboxes:
-    >
-    >    - 1st textbox - ALL
-    >    - 2nd textbox – 0.0.0.0
-    >    - 3dr textbox – 255.255.255.255
-    >
-    > 1. Select **Save**.
+   > [!NOTE]
+   > To avoid this issue, follow the steps below before logging in:
+   >
+   > 1. In the Overview page of the SQL database, select **Set Server Firewall**.
+   > 1. Select **Yes** for Allow Azure Services and resources to access this server.
+   >
+   > :::image type="content" source="../media/2-firewall-settings.png" alt-text="Whitelisting ALL IP addresses":::
+   >
+   > 1. Under Rule name enter the following details in the three text boxes:
+   >
+   >    - 1st textbox - ALL
+   >    - 2nd textbox – 0.0.0.0
+   >    - 3dr textbox – 255.255.255.255
+   >
+   > 1. Select **Save**.
 
-1. To solve this issue, select the link with the IP address which is highlighted in the red box and select **ok**. With that you will get a **Succesfully updated server firewall rules** message.
+1. To solve this issue, select the link with the IP address, which is highlighted in the red box and select **OK**. With that, you'll get a **Successfully updated server firewall rules** message.
 
-1. Enter the credentials again and select Login.
+1. Enter the credentials again and select **Login**.
 
    :::image type="content" source="../media/2-sql-query.png" alt-text="SQL query in Editor":::
 
-1. After you login, select **Tables** to create a new table. In the code section, paste the following code:
+1. After you log in, select **Tables** to create a new table. In the code section, paste the following code:
 
    ```
         CREATE TABLE Persons (
@@ -98,7 +98,7 @@ Follow the steps to build a database:
 
 ### Giving Access to other users to make changes to your database
 
-We often work with multiple people on the same project and would like to share our timely updated work with them. We can do this by making the the other users admins for our database. This way the user can view and modify the database along with you.
+We often work with multiple people on the same project and would like to share our timely updated work with them. We can make the the other users admins for our database. This way the user can view and modify the database along with you.
 
 Follow the steps to give access to another user:
 
@@ -112,17 +112,17 @@ Follow the steps to give access to another user:
 
 1. Select **Set Admin** which will pop open an Azure Active Directory cell on your screen.
 
-   :::image type="content" source="../media/2-set-admin.png" alt-text="Set azure active directory admin":::
+   :::image type="content" source="../media/2-set-admin.png" alt-text="Set Azure active directory admin":::
 
 1. Search for the user you'd like to give access to and choose **Select**.
 
 ### Visualizing the database in the form of a table
 
-Even though we know our database is working successfully, to visualize the data getting logged into a table we can . For this we will require to download Azure Data Studio.
+Even though we know our database is working successfully, to visualize the data getting logged into a table we can download and use Azure Data Studio.
 
 1. Return to the Azure portal landing page and select the SQL database you created.
 
-   :::image type="content" source="../media/2-database-connect.png" alt-text="Connecting a database for visualisation":::
+   :::image type="content" source="../media/2-database-connect.png" alt-text="Connecting a database for visualization":::
 
 1. From the dropdown menu of **Connect with**, select **Azure Data Studio**.
 
@@ -132,7 +132,7 @@ Even though we know our database is working successfully, to visualize the data 
 
 1. Select the **New Connection** icon next to Servers dropdown, and you'll be able to see a cell named connection pop on your screen.
 
-   :::image type="content" source="../media/2-azure-data-studio-connection.png" alt-text="Connecting to database from azure data studio":::
+   :::image type="content" source="../media/2-azure-data-studio-connection.png" alt-text="Connecting to database from Azure data studio":::
 
 1. Fill in the following details in the Connection details fields:
 
@@ -146,7 +146,7 @@ Even though we know our database is working successfully, to visualize the data 
 
 1. Select **Connect**
 
-   :::image type="content" source="../media/2-ads-run.png" alt-text="Executing query in azure data studio":::
+   :::image type="content" source="../media/2-ads-run.png" alt-text="Executing query in Azure data studio":::
 
 1. Expand the Servers dropdown, then expand the **healthbotserver** dropdown, and continue to expand the dropdown named **Databases**.
 
@@ -159,5 +159,5 @@ Even though we know our database is working successfully, to visualize the data 
 > [!NOTE]
 >
 > - The query **SELECT - FROM Vitals** asks to select all the data from the table named Vitals.
-> - The name of table is case-sentive and the asterisk (\*) denotes **ALL**.
-> - It is required for you to follow step 8, 9, and 10 everytime you want to visualize the table.
+> - The name of table is case-sensitive and the asterisk (\*) denotes **ALL**.
+> - It is required for you to follow step 8, 9, and 10 every time you want to visualize the table.

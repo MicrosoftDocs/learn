@@ -1,17 +1,17 @@
-We have to connect the database to the bot, to store/retrieve the data being collected from the user. In order to do so, we need to use the 'Data Connect' scenario step. We can do this by dragging it to the Designer window and connecting it to the steps which collect the data from the user.
+We have to connect the database to the bot, to store/retrieve the data being collected from the user. To do so, we need to use the 'Data Connect' scenario step. We can do this by dragging it to the Designer window and connecting it to the steps that collect the data from the user.
 
 :::image type="content" source="../media/4-health-bot-portal-scenario.png" alt-text="Healthbot portal scenario":::
 
-In the vitals bot that we previously worked on during the 'Enhanced Healthcare Bot' module, the data connect step for POST method gets added between the prompt with weight variable and the Yes or No step. The data connection step has multiple fields that need to be filled by us. A separate data connect step needs to be added for Get method which will be added between Thank you statement step and Final statement step. This helps the bot to retrieve the name of the person who logged in their data and greet them Thank you.
+In the vitals bot that we previously worked on during the 'Enhanced Healthcare Bot' module, the data connect step for POST method gets added between the prompt with weight variable and the Yes or No step. The data connection step has multiple fields that need to be filled by us. A separate data connect step needs to be added for Get method that will be added between Thank you statement step and Final statement step. This helps the bot to retrieve the name of the person who logged in their data and greet them Thank you.
 
-A data connect cell has three connections to make. We have already made two connections for both the data connect cells. For the last connection, connect the left of the both the data connect cells to the Log error statement step.
+A data connect cell has three connections to make. We have already made two connections for both the data connect cells. For the last connection, connect the left of the both data connect cells to the Log error statement step.
 
 > [!Note]
 > The left node of the data connect step is always used to indicate to the error message.
 
 :::image type="content" source="../media/4-final-prompt.png" alt-text="Final prompt connection step Healthbot":::
 
-In order to display some retrieved data, the display text field from the Final Statement step needs to be filled with the following code:
+To display some retrieved data, the display text field from the Final Statement step needs to be filled with the following code:
 
 `Thank you ${scenario.req.ResultSets.Table1[0].name}.You have checked in at ${scenario.req.ResultSets.Table1[0].ColumnDateTime} `
 
@@ -26,7 +26,7 @@ Select **Ok** to save it.
 
 - **Options:**
 
-  - **JSON:** Sets body to JSO representation of value and adds Content-type: application/json header. Additionally, parses the response body as JSON.
+  - **JSON:** Sets body to JSO representation of value and adds Content-type: application/json header. Additionally, it parses the response body as JSON.
   - **Resolve with full response:** Set whether the promise should be resolved with the full response or just the response body.
 
 - **Base URL:** It must include the HTTPS protocol.
@@ -41,7 +41,7 @@ The configuration of the data connection step needs to be done in the following 
 
 - **Data connection:** Select 'Step specific connection details' from the dropdown.
 
-- **Authentication provider:** Select 'Don't require end user authentication' .
+- **Authentication provider:** Select 'Don't require end-user authentication' .
 
 - **HTTPS Method:** Select 'POST'.
 
@@ -72,7 +72,7 @@ We also have to configure our second data connect cell for the GET method (to re
 
 :::image type="content" source="../media/4-get-health-bot.png" alt-text="GET Data connection - connection step":::
 
-The configuration for this data connect step is very similar to that of the POST method.
+The configuration for this data connect step is similar to that of the POST method.
 
 - **Data connection:** Select 'Step specific connection details' from the dropdown.
 

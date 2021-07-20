@@ -1,8 +1,8 @@
-The healthcare bot so far has been receiving the inputs from users. We can notice that it isn't being stored anywhere. What if we were to retrieve the data on a website for the doctor to see his appointments? To achieve this the data has to be stored in a database. The Azure Health bot provides us a "Data Connection" Step to achieve this. The data connection step has the capability of connecting to a FHIR [Fast Healthcare Interoperability Resources](https://azure.microsoft.com/services/azure-api-for-fhir/) database and also any Normal databases like SQL.
+The healthcare bot so far has been receiving the inputs from users. We can notice that it isn't being stored anywhere. What if we could retrieve the data on a website for the doctor to see his appointments? To do that, the data has to be stored in a database. The Azure Health bot provides us a "Data Connection" Step. The data connection step has the capability of connecting to an FHIR [Fast Healthcare Interoperability Resources](https://azure.microsoft.com/services/azure-api-for-fhir/) database and also any Normal databases like SQL.
 
-In this tutorial we will be demonstrating the connection with a SQL database hosted on Microsoft Azure.
+In this tutorial, we'll be demonstrating the connection with a SQL database hosted on Microsoft Azure.
 
-To achieve this connection, we will be following the architecture which has 3 main components:
+To achieve this connection, we'll be following the architecture, which has three main components:
 
 - The Azure Health Bot platform
 
@@ -10,9 +10,9 @@ To achieve this connection, we will be following the architecture which has 3 ma
 
 - SQL Server and SQL Database
 
-The framework here will be the Node.js. Azure provides us various options. Since the Node.js has been a popular choice in the development community we will be going ahead with Node.js.
+The framework here will be the Node.js. Azure provides us various options. Since the Node.js has been a popular choice in the development community we'll be going ahead with Node.js.
 
-These can be diagrammatically represented as follows
+These options can be diagrammatically represented as follows:
 
 ## Architecture
 

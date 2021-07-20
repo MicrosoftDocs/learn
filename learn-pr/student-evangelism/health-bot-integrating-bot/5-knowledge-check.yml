@@ -24,7 +24,7 @@ quiz:
           explanation: We aren't using Kubernetes for integrating healthcare bot with database.
         - content: Logic App, Azure Healthcare Bot, SQL Server and Database
           isCorrect: true
-          explanation: Yes, we're using the above three components to integrate healthbot with database.
+          explanation: Yes, we're using the above three components to integrate health bot with database.
         - content: SQL Server and Database, Function App, Azure Healthcare Bot
           isCorrect: false
           explanation: We aren't using Function app to integrate database with healthcare bot.
@@ -44,12 +44,12 @@ quiz:
 
     - content: "To prevent the error while logging into the Query Editor, we need to make which of the following changes in the firewall settings?"
       choices:
-        - content: "Enable ‘allow azure services and resources to access this server’ and enter rule name – ‘ALL’; Start IP – ‘0.0.0.0’; End IP – ‘255.255.255.255’."
+        - content: "Enable ‘allow Azure services and resources to access this server’ and enter rule name – ‘ALL’; Start IP – ‘0.0.0.0’; End IP – ‘255.255.255.255’."
           isCorrect: true
           explanation: These are the correct changes to be made to the firewall settings for preventing the error while logging in.
-        - content: "Enable ‘allow azure services and resources to access this server’ and enter rule name – ‘ALL’; Start IP – ‘1.0.0.0’; End IP – ‘125.99.255.60’."
+        - content: "Enable ‘allow Azure services and resources to access this server’ and enter rule name – ‘ALL’; Start IP – ‘1.0.0.0’; End IP – ‘125.99.255.60’."
           isCorrect: false
           explanation: Start IP and End IP values are wrong.
-        - content: "Disable ‘allow azure services and resources to access this server’ and enter rule name – ‘ALL’; Start IP – ‘0.0.0.0’; End IP – ‘255.255.255.255’."
+        - content: "Disable ‘allow Azure services and resources to access this server’ and enter rule name – ‘ALL’; Start IP – ‘0.0.0.0’; End IP – ‘255.255.255.255’."
           isCorrect: false
-          explanation: "Disabling 'allow azure services and resources to access this server' will not allow us to connect to the server for logging in."
+          explanation: "Disabling 'allow Azure services and resources to access this server' will not allow us to connect to the server for logging in."

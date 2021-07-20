@@ -102,7 +102,7 @@ To start with, go to the [Azure portal](https://portal.azure.com/#home).
     - **Username:** Provide the same username used for logging into the Query editor. We have used 'learnbot'.
     - **Password::** Provide the same password used for logging into the Query editor. We have used 'healthbot@123'.
 
-1. Select the gateway if you already have one, else select [install gateway](https://docs.microsoft.com/en-us/azure/logic-apps/logic-apps-gateway-install).
+1. Select the gateway if you already have one, else select [install gateway](/azure/logic-apps/logic-apps-gateway-install).
 
 1. Select the **Create** button.
 
