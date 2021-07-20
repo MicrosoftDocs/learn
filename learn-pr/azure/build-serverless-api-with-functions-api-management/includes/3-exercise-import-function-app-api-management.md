@@ -114,7 +114,7 @@ Now that we have our function app deployed and tested, we'll expose the function
 
     ![Screenshot showing the Create from Function app dialog box.](../media/3-create-from-function-app.png)
 
-    The **API Management** pane appears for yoru Function App.
+    The **API Management** pane appears for your Function App.
 
 Note that we were able to define our API all from within the Azure function app portal experience.
 
