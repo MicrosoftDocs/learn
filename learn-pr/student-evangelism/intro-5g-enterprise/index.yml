@@ -18,7 +18,7 @@ abstract: |
   "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
 
 prerequisites: |
-Azure private MEC brings together several capabilities from Microsoft in the context of 5G. You need a basic understanding of the following capabilities: 
+  Azure private MEC brings together several capabilities from Microsoft in the context of 5G. You need a basic understanding of the following capabilities: 
   - Azure Network Functions offered via Marketplace (Metaswitch Fusion Core, Affirmed Private Network Service) 
   - Azure Management Services (Azure Network Functions Manager (NFM), Arc Enabled Kubernetes)
   - Azure Stack hardware and services (Azure Stack Edge, Azure Stack HCI)
