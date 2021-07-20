@@ -16,11 +16,11 @@ To export a template from the resource group from the Azure portal:
 
 3. Select **Export template** from the top of the window.
 
-   :::image type="content" source="../media/4-export-resource-rg1.png" alt-text="Screenshot." border="true":::
+   :::image type="content" source="../media/4-export-resource-rg1.png" alt-text="Export a single resource from a resource group." border="true":::
 
 4. From the **Export resource group template** blade, click **Download** to save a copy of the template.
 
-   :::image type="content" source="../media/4-export-resource-rg2.png" alt-text="Screenshot." border="true":::
+   :::image type="content" source="../media/4-export-resource-rg2.png" alt-text="Download the template from the Export resource group template page." border="true":::
 
 To export a template from the resource from the Azure portal:
 
@@ -30,7 +30,7 @@ To export a template from the resource from the Azure portal:
 
 3. From the resource blade under the **Automation** section, select **Export template**, and then click **Download** as shown in the image below. A download will automatically begin and will include both the main JSON template and the parameters JSON file.
 
-   :::image type="content" source="../media/4-export-resource.png" alt-text="Screenshot." border="true":::
+   :::image type="content" source="../media/4-export-resource.png" alt-text="Export a single resource from the resource under the automation section." border="true":::
 
 ### Export from resource group
 
@@ -40,7 +40,7 @@ The export a template from the resource group from the Azure portal:
 
 2. From the resource group blade under the **Automation** section, select **Export template**, and then click **Download** as shown in the image below. A download will automatically begin and will include both the main JSON template and the parameters JSON file.
 
-   :::image type="content" source="../media/4-export-resource-group.png" alt-text="Screenshot." border="true":::
+   :::image type="content" source="../media/4-export-resource-group.png" alt-text="Export a resource group." border="true":::
 
 ## Export resources using Azure CLI and Azure PowerShell
 
@@ -96,23 +96,23 @@ Export-AzResourceGroup -ResourceGroupName mslearn_bicep -Resource @($resource1.R
 
 Insert text here.
 
-- Not all Azure resource types can be exported through the Azure portal, Azure CLI, or Azure PowerShell. For example, virtual machine extensions such as the DependencyAgentWindows and MMAExtension (Microsoft Monitoring Agent) aren't supported resource types for export. Consider treating these exported templates as a starting point and use them as inspiration for your final template. Other reference material such as the [Azure Resource Explorer](azure/azure-resource-manager/templates/view-resources#use-resource-explorer), the [Azure ARM Template Reference](azure/templates/) documentation, or [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/) are needed to help complete your template deployments.
+- Not all Azure resource types can be exported through the Azure portal, Azure CLI, or Azure PowerShell. For example, virtual machine extensions such as the DependencyAgentWindows and MMAExtension (Microsoft Monitoring Agent) aren't supported resource types for export. Consider treating these exported templates as a starting point and use them as inspiration for your final template. Other reference material such as the [Azure Resource Explorer](https://docs.microsoft.com/azure/azure-resource-manager/templates/view-resources#use-resource-explorer), the [Azure ARM Template Reference](https://docs.microsoft.com/azure/templates/) documentation, or [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/) are needed to help complete your template deployments.
 
   When you attempt to export resources from the Azure portal and it includes unsupported resource types, you'll see a warning banner as shown below:
 
-  :::image type="content" source="../media/4-export-error-banner.png" alt-text="Screenshot of the banner message." border="true":::
+  :::image type="content" source="../media/4-export-error-banner.png" alt-text="Error message about resources that cannot be exported." border="true":::
 
   Clicking on **See error details** in the warning banner will open up additional information about the unsupported resource types. In the screenshot below, you'll notice that the DependencyAgentWindows and the MicrosoftMonitoringAgent aren't able to be exported.
 
-  :::image type="content" source="../media/4-export-error-details.png" alt-text="Screenshot." border="true":::
+  :::image type="content" source="../media/4-export-error-details.png" alt-text="Details of the error for the resources that cannot be exported." border="true":::
 
   When you attempt to export resources using Azure CLI and it includes unsupported resource types, an error message will be generated as shown below:
 
-  :::image type="content" source="../media/4-export-error-azcli.png" alt-text="Screenshot." border="true":::
+  :::image type="content" source="../media/4-export-error-azcli.png" alt-text="Azure CLI error message about resources that cannot be exported.." border="true":::
 
   When you attempt to export resources using Azure PowerShell and it includes unsupported resource types, an error message is as shown below:
 
-  :::image type="content" source="../media/4-export-error-powershell.png" alt-text="Screenshot." border="true":::
+  :::image type="content" source="../media/4-export-error-powershell.png" alt-text="Azure PowerShell error message about resources that cannot be exported.." border="true":::
 
 - When exporting Azure resources, the exported template may not have the latest API version for a resource type. If there are specific properties that you need for future deployments, update the API to the appropriate version. It's good practice to review the API versions for each exported resource.
 
