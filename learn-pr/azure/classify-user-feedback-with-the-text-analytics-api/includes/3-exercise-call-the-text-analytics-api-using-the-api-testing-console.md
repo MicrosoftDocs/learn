@@ -14,7 +14,7 @@ Every call to Text Analytics API requires a subscription key. Often called an ac
 
 1. Select **Create**. The **Select additional features** pane appears.
 
-1. Select **Continue to create yoru resource**. The **Create** pane appears for *Text Analytics*.
+1. Select **Continue to create your resource**. The **Create** pane appears for *Text Analytics*.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -25,7 +25,7 @@ Every call to Text Analytics API requires a subscription key. Often called an ac
     |Resource group    |  From the dropdown list, select *<rgn>[sandbox resource group name]</rgn>*       |  Name for the new resource group in which to create your Cognitive Services Text Analytics API account.       |
     | **Instance details**| |
     |Region     |  From the dropdown list, choose a region close to you. |  Choose a region near you or near other services your functions access.  |
-    |Name     |  Enter a unique name for your Cognitive Dervices account.   |  Name of the Cognitive Services account. We recommend using a descriptive name. Valid characters are `a-z`, `0-9`, and `-`. |
+    |Name     |  Enter a unique name for your Cognitive Devices account.   |  Name of the Cognitive Services account. We recommend using a descriptive name. Valid characters are `a-z`, `0-9`, and `-`. |
     |Pricing tier     | From the dropdown list, select **F0 Free**. |  Cost of your Cognitive Services account depends on the actual usage and the options you choose. We recommend selecting the free tier for our purposes here.      |
 
     > [!TIP]
