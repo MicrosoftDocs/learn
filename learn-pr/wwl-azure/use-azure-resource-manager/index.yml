@@ -19,7 +19,8 @@ abstract: |
   - Move Azure resources between groups, subscriptions, and regions.
   - Remove resources and resource groups.
   - Apply and track resource limits.
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
