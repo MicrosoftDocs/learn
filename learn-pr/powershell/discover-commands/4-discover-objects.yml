@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.powershell.discover-commands.4-discover-objects
+title: Discover objects
+metadata:
+  title: Discover objects
+  description: Learn what type of object a command returns to help you understand how to pick out the information you need and how a command can fit with another command in a pipeline.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 07/09/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-discover-objects.md)]
