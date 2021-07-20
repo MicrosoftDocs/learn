@@ -57,7 +57,7 @@ App Studio for Teams makes it easy to start creating or integrating your own Tea
 
 1. In the **Developer/Company Name** box, enter **Contoso**.
 
-1. The **Website** box is where you'll normally enter the your website. Because this bot is a demo,  enter **https://github.com/**:
+1. The **Website** box is where you'll normally enter your website. Because this bot is a demo,  enter **https://github.com/**:
 
    :::image type="content" source="../media/3-descriptions.png" alt-text="Screenshot that shows the developer information values.":::
 
