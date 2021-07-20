@@ -79,7 +79,7 @@ You can also let users override variable values when they run your pipeline manu
 
 Once you've created a variable, you use a special syntax to refer to it within your pipeline's YAML file, like this:
 
-:::code language="yaml" source="code/4-variables.yaml" range="14-19" highlight="3, 6" :::
+:::code language="yaml" source="code/4-variables.yaml" range="14-23" highlight="3, 8, 10" :::
 
 Notice the Azure CLI command includes a special `$(VariableName)` syntax. You can refer to any variable by using this approach - whether it's secret or not.
 

@@ -18,4 +18,9 @@ jobs:
       azureSubscription: $(ServiceConnectionName)
       scriptType: 'bash'
       scriptLocation: 'inlineScript'
-      inlineScript: 'az deployment group create --resource-group $(ResourceGroupName) --template-file deploy/main.bicep --name $(Build.BuildNumber) --parameters environmentType=$(EnvironmentType)  deployToyManualsStorageAccount=$(DeployToyManualsStorageAccount)'
+      inlineScript: |
+        az deployment group create \
+          --name $(Build.BuildNumber) \
+          --resource-group $(ResourceGroupName) \
+          --template-file deploy/main.bicep \
+          --parameters environmentType=$(EnvironmentType) deployToyManualsStorageAccount=$(DeployToyManualsStorageAccount)

@@ -53,7 +53,7 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 
 1. Below the task you just added, add another Azure CLI task to deploy your Bicep file by using the `az deployment group create` command:
 
-   :::code language="yaml" source="code/6-pipeline.yaml" range="6-21" highlight="11-16" :::
+   :::code language="yaml" source="code/6-pipeline.yaml" range="6-26" highlight="11-21" :::
 
    Notice that this step uses a system variable, `$(Build.BuildNumber)`, to name the deployment. This way, you can easily see which pipeline run a deployment corresponds to.
 
