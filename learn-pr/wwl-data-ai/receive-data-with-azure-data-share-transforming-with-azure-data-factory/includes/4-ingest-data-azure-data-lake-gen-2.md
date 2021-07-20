@@ -1,4 +1,4 @@
-To create a pipeline we first need to set up kinked services in Azure Data Factory. Linked services define the connection information for Azure Data Factory to the external resources you want to connect with, such as an Azure SQL Database or Azure Data Lake Storage Gen 2 (ADLS Gen 2). 
+To create a pipeline we first need to set up linked services in Azure Data Factory. Linked services define the connection information for Azure Data Factory to the external resources you want to connect with, such as an Azure SQL Database or Azure Data Lake Storage Gen 2 (ADLS Gen 2). 
 
 The connection to the data source and dataset that is linked to that linked service represents the data structure. For example, an Azure Data Lake Storage linked service will specify the connection string to the Azure Data Lake Storage account. 
 
