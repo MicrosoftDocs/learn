@@ -1,6 +1,6 @@
-In this exercise, you'll deploy the newly created Web Sales Aggregator BFF to the existing Kubernetes cluster. You will:
+In this exercise, you'll deploy the newly created Web Sales aggregator BFF to the existing Kubernetes cluster. You will:
 
-- Enable the Web Sales Aggregator BFF.
+- Enable the Web Sales aggregator BFF.
 - Configure the BFF.
 - Publish the affected containers to Azure Container Registry.
 - Deploy the affected apps to the cluster.
@@ -140,7 +140,7 @@ You can find an ASP.NET Core project for the `Web.Sales` BFF in the *src/ApiGate
         In the preceding code:
 
         - Health check services are registered in the dependency injection container.
-        - Because the functionality of Web Sales Aggregator also depends on the Ordering and Catalog APIs, it's a good idea to add them too.
+        - Because the functionality of the Web Sales aggregator also depends on the Ordering and Catalog APIs, it's a good idea to add them too.
 
     1. Also in *Startup.cs*, note the JSON Web Token (JWT) authentication code in the `AddCustomAuthentication` method:
 
@@ -211,7 +211,7 @@ Make the following configuration changes to support the Web Sales aggregator cod
 
 ### WebStatus configuration
 
-Earlier, you added health checks in the Web Sales aggregator's *Startup.cs* file. You also need to configure the Web Status app to ping that health check. Uncomment the following YAML in *deploy/k8s/helm-simple/webstatus/templates/configmap.yaml*:
+Earlier, you added health checks in the Web Sales aggregator's *Startup.cs* file. You also need to configure the *Web Status* app to ping that health check. Uncomment the following YAML in *deploy/k8s/helm-simple/webstatus/templates/configmap.yaml*:
 
 ```yaml
 HealthChecksUI__HealthChecks__10__Name: Web Sales Aggregator GW HTTP Check
@@ -225,7 +225,7 @@ Configure *Identity.API*  with the Web Sales aggregator URL. Uncomment the follo
 ```yaml
 WebSalesAggClient: {{ .Values.protocol }}://{{ .Values.host }}/websalesagg
 ```
-## Build the local images and push the changes in the container registry
+## Build the local images and push the changes to Azure Container Registry
 
 The setup script created an Azure Container Registry instance for you. Push your changes to the Container Registry instance by using the following steps:
 
@@ -242,7 +242,7 @@ The setup script created an Azure Container Registry instance for you. Push your
     ```
 
     > [!IMPORTANT]
-    > The *:::no-loc text="WebSPA":::* project is built in Container Registry, rather than being local to Cloud Shell, to take advantage of robust build hosts in Container Registry. If the Container Registry quick task fails, inspect the output for troubleshooting information. Run the preceding script again to try additional builds.
+    > The *:::no-loc text="WebSPA":::* project is built in Container Registry, rather than being local to Cloud Shell, to take advantage of robust build hosts in Container Registry. If the Container Registry quick task fails, inspect the output for troubleshooting information. Run the preceding script again to try more builds.
 
 1. Push and build the *:::no-loc text="websalesagg":::* image:
 

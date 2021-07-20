@@ -31,7 +31,7 @@ The decoupling aspect also makes it easy to route request versions to different 
 
 An API gateway solves several problems, but there's still more to be done. Each client app might have a context that imposes some specific constraints. For example, a mobile phone has a more constrained internet connection than a desktop computer. The phone also has a much smaller screen size. It might be desirable to have a streamlined, low-bandwidth API for mobile use, and a full-featured API for desktop use.
 
-This problem is where the BFF pattern can help. The BFF pattern supplies a per-device-type API customized for the specific context, as shown in the following image.
+This problem is where the Backend for Frontend (BFF) pattern can help. The BFF pattern supplies a per-device-type API customized for the specific context, as shown in the following image.
 
 :::image type="content" source="../media/bff-api-gateways.png" alt-text="Diagram that shows the Backend for Frontend pattern." lightbox="../media/bff-api-gateways.png":::
 
@@ -45,7 +45,7 @@ The web aggregator works as a broker, and it has a central role in the BFF patte
 
 ### Explore an aggregator implementation in eShopOnContainers
 
-In the eShop app, the *Web.Shopping.HttpAggregator* project is a web aggregator. The BFF takes care of all the shopping-related activities for the web client. For example, the `AddBasketItemAsync()` method in the `BasketController` class:
+In the *eShop* app, the *Web.Shopping.HttpAggregator* project is a web aggregator. The BFF takes care of all the shopping-related activities for the web client. For example, the `AddBasketItemAsync()` method in the `BasketController` class:
 
 - Fetches an item from *Catalog.API*.
 - Gets current basket details from *Basket.API*.
@@ -56,14 +56,14 @@ Merging these operations into a single method hides the complexity from the clie
 
 ### Implement an aggregator in eShopOnContainers
 
-Let's assume you're an admin for the eShop app. At the end of each day, you want to see the aggregated sales data per brand. To implement the new feature, you need information on the brand and orders for each product. Your aggregator needs to retrieve:
+Let's assume you're an admin for the *eShop* app. At the end of each day, you want to see the aggregated sales data per brand. To implement the new feature, you need information on the brand and orders for each product. Your aggregator needs to retrieve:
 
 - Catalog items and brand-related information from *Catalog.API*.
 - Sales of each product from *Ordering.API*.
 
 The aggregator will merge this information into a single response to the client. 
 
-The following diagram illustrates the eShop app with the aggregator implemented as *Web.Sales.HttpAggregator*.
+The following diagram illustrates the *eShop* app with the aggregator implemented as *Web.Sales.HttpAggregator*.
 
 :::image type="content" source="../media/api-gateway-bff-nginx-ingress.png" alt-text="Diagram that shows the eShopOnContainers architecture with WebSalesAgg." lightbox="../media/api-gateway-bff-nginx-ingress.png":::
 
@@ -72,8 +72,8 @@ The following diagram illustrates the eShop app with the aggregator implemented 
 
 The *Web.Sales.HttpAggregator* Web API project has the following components:
 
-- Class `SalesController` annotated with the authorized attribute, requiring the `Admin` role.
-- Method `SalesController.GetSalesOfTodayByBrand()`, which fetches catalog brand information from *Catalog.API* and sales data from *Ordering.API*.
-- Method `SalesController.GetSalesData()`, which aggregates the sales based on the brand names.
+- Class `SalesController` annotated with the authorized attribute, requiring the `Admin` role
+- Method `SalesController.GetSalesOfTodayByBrand()`, which fetches catalog brand information from *Catalog.API* and sales data from *Ordering.API*
+- Method `SalesController.GetSalesData()`, which aggregates the sales based on the brand names
 
-In the next unit, you'll configure and deploy `Web.Sales.HttpAggregator` to the existing Kubernetes cluster.
+In the next unit, you'll configure and deploy *Web.Sales.HttpAggregator* to the existing Kubernetes cluster.

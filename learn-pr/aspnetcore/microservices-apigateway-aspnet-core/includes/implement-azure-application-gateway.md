@@ -25,7 +25,7 @@ The script does the following tasks:
 - Creates a public IP address.
 - Creates the Application Gateway instance.
 
-The output resembles the following image:
+The output resembles the following image.
 
 :::image type="content" source="../media/create-application-gateway.png" alt-text="Screenshot that shows output from the create-application-gateway script." lightbox="../media/create-application-gateway.png":::
 
@@ -54,7 +54,7 @@ The `kubernetes.io/ingress.class: azure/application-gateway` annotation must be 
 >[!TIP]
 > The ingress YAML for the *Seq* app is a good example of this. It's available under the */deploy/k8s/helm-ingress/seq/templates* directory.
 
-Review the ingress manifest file of the *websalesagg* service.
+Review the ingress manifest file of the *websalesagg* service:
 
 ```yml
 apiVersion: extensions/v1beta1
@@ -81,7 +81,7 @@ spec:
           servicePort: 80
 ```
 
-Along with the *websalesagg* service, you need to update the NGINX configuration for each service to make it available for AGIC. All of the service configurations in the `helm-simple` directory require changes. For simplicity, you'll copy files from the `helm-ingress` folder. These files have been preconfigured for you. Run the following command:
+Along with the *websalesagg* service, you need to update the NGINX configuration for each service to make it available for AGIC. All of the service configurations in the *helm-simple* directory require changes. For simplicity, you'll copy files from the *helm-ingress* folder. These files have been preconfigured for you. Run the following command:
 
 ```bash
 cp -r deploy/k8s/helm-ingress/* deploy/k8s/helm-simple
@@ -96,13 +96,11 @@ You can view this step with the following image.
 
 ## Clean up old ingress objects
 
-You need to clean up the old ingress objects before deploying the newly annotated `azure/application-gateway` ingress object. Run the following command:
+You need to clean up the old ingress objects before deploying the newly annotated `azure/application-gateway` ingress object. Run the following command to delete the existing ingress objects:
 
 ```bash
 kubectl delete ingress --all
 ```
-
-The preceding command deletes the existing ingress objects.
 
 ## Deploy the application with the updated ingresses
 
@@ -147,7 +145,7 @@ The script redeploys the following services from your private Azure Container Re
 
 The existing `[Microsoft.eShopOnContainers.Service.IdentityDb]` database in the `sqldata-*` pod won't have the necessary configuration for *websalesagg* to authorize. You'll need to repopulate the data in *IdentityDb*. Use the following steps:
 
-1. Delete the SQL pod by using the following command:
+1. Delete the SQL Server pod by using the following command:
 
     ```bash
     kubectl delete pods --selector service=sqldata
@@ -161,7 +159,7 @@ The existing `[Microsoft.eShopOnContainers.Service.IdentityDb]` database in the 
 
     :::image type="content" source="../media/delete-all-pods-apart-from-sql.png" alt-text="Screenshot that shows deleting all pods." lightbox="../media/delete-all-pods-apart-from-sql.png":::
 
-1. Check the `WebStatus` app by using `http://{appgw-public-ip}/webstatus/hc-ui#/healthchecks` and verify that `websalesagg` is healthy. This address uses the *new* IP address.
+1. Check the `WebStatus` app by using `http://{appgw-public-ip}/webstatus/hc-ui#/healthchecks` and verify that *websalesagg* is healthy. This address uses the new IP address.
 
     > [!NOTE]
     > As with the initial deployment, the health check dashboard might take a few minutes to come up.
@@ -178,8 +176,7 @@ Sign in to the *WebSPA* app by using `http://{appgw-public-ip}/` and create an o
 
 ### Fetch sales data
 
-- Authorize the request with the `adminuser@microsoft.com` user.
-- Select the Sales API to fetch the API data.
+Authorize the request with the `adminuser@microsoft.com` user. Then select the Sales API to fetch the API data.
 
 Output similar to the following text appears. Note that the aggregated sales unit per brand is shown for orders created today.
 

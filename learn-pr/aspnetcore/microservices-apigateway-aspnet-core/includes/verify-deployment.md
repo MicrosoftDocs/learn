@@ -34,7 +34,7 @@ When the script finishes, *:::no-loc text="eShopOnContainers":::* is fully deplo
     > [!NOTE]
     > While the app is starting up, you might initially receive an `HTTP 503` or `HTTP 502` response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
 
-1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
+1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears.
 
     :::image type="content" source="../media/eshop-spa.png" alt-text="Screenshot of the Web S P A application's product catalog page." border="true" lightbox="../media/eshop-spa.png":::
 
@@ -58,7 +58,7 @@ The following *:::no-loc text="src":::* subdirectories contain .NET Core project
 |-------------------|-------------|
 | *:::no-loc text="Aggregators/":::* | Services to aggregate across multiple microservices for certain cross-service operations. An HTTP aggregator is implemented in the *:::no-loc text="ApiGateways/Aggregators/Web.Shopping.HttpAggregator":::* project. |
 | *:::no-loc text="BuildingBlocks/":::* | Services that provide cross-cutting functionality, such as the app's event bus used for events between services. |
-| *:::no-loc text="Services/":::* | Projects that implement the business logic of the app. Each microservice is autonomous, with its own data store. They showcase different software patterns, including Create-Read-Update-Delete (CRUD), Domain-Driven Design (DDD), and Command and Query Responsibility Segregation (CQRS). The new *:::no-loc text="Coupon.API":::* project has been provided, but it's not resilient. |
+| *:::no-loc text="Services/":::* | Projects that implement the business logic of the app. Each microservice is autonomous, with its own data store. The projects showcase different software patterns, including Create-Read-Update-Delete (CRUD), Domain-Driven Design (DDD), and Command and Query Responsibility Segregation (CQRS). The new *:::no-loc text="Coupon.API":::* project has been provided, but it's not resilient. |
 | *:::no-loc text="Web/":::* | ASP.NET Core apps that implement user interfaces. *:::no-loc text="WebSPA":::* is a storefront UI built with Angular. *:::no-loc text="WebStatus":::* is the Health Checks dashboard for monitoring the operational status of each service. |
 
 ## Explore the deployed services
@@ -95,7 +95,7 @@ webstatus-579d55c59d-tthv9         1/1     Running   0          4m34s
 
 Microservices use the following pods for the datastores:
 
-- `sqldata-<random-guid>` pod as an SQL instance.
+- `sqldata-<random-guid>` pod as a SQL Server instance.
 - `nosqldata-<random-guid>` pod as a MongoDB instance.
 - `basketdata-<random-guid>` pod as a Redis instance.
 

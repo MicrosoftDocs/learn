@@ -15,7 +15,7 @@ abstract: |
   - Deploy an existing ASP.NET Core microservices e-commerce application to Azure Kubernetes Service (AKS).
   - Implement a Backend for Frontend (BFF) pattern by using .NET.
   - Deploy the microservices application to an AKS instance that's using Azure Application Gateway.
-  - Expose the BFF API outside the Kubernetes cluster by using an Application Gateway ingress controller and access that external Swagger client.
+  - Expose the BFF API outside the Kubernetes cluster by using Application Gateway Ingress Controller and access that external Swagger client.
 prerequisites: |
   - Familiarity with C# and ASP.NET Core
   - Familiarity with REST API services

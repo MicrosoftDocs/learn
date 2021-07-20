@@ -87,7 +87,7 @@ AGIC integrates Application Gateway with your Kubernetes cluster. The following 
 
 You can see that AGIC lives inside the Azure Kubernetes Service (AKS) cluster as an ingress controller, although it isn't really routing any traffic. AGIC monitors the cluster state by using the Kubernetes API. It applies the required configuration to Application Gateway, which can route traffic directly to the pods.
 
-Azure Application Gateway is a managed service outside the AKS cluster and can't usually access the pods directly. The AKS instance must be created with the *advanced networking* option. This setting makes the pods connect through a subnet that Application Gateway can access.
+Application Gateway is a managed service outside the AKS cluster and can't usually access the pods directly. The AKS instance must be created with the *advanced networking* option. This setting makes the pods connect through a subnet that Application Gateway can access.
 
 For more information, see the [Application Gateway Ingress Controller overview page](/azure/application-gateway/ingress-controller-overview).
 
@@ -104,6 +104,6 @@ The following image compares the two approaches.
 
 ## Proposed solution
 
-The following image shows the solution architecture of the eShop app that you'll deploy in the next unit.
+The following image shows the solution architecture of the *eShop* app that you'll deploy in the next unit.
 
 :::image type="content" source="../media/app-gateway-ingress.png" alt-text="Diagram that shows the Azure Application Gateway solution architecture." lightbox="../media/app-gateway-ingress.png":::

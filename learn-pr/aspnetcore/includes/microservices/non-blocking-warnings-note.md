@@ -1,5 +1,5 @@
 > [!NOTE]
-> Nonblocking warnings are expected in the deployment process. An unexpected exception might occur, or the script might enter a `Retrying in 5s...` loop with no sign of exiting. In the event of an exception, or if the loop has been running for about 5 minutes, reset any changes made by the script. 
+> Nonblocking warnings are expected in the deployment process. An unexpected exception might occur, or the script might enter a `Retrying in 5s...` loop with no sign of exiting. In the event of an exception, or if the loop has been running for about five minutes, reset any changes that the script has made. 
 >
 > Select <kbd>Ctrl+C</kbd> (<kbd>⌘+C</kbd> on macOS) to stop the script. Then run the following command:
 >
@@ -9,4 +9,4 @@
 >   az group delete --name eshop-learn-rg --yes
 > ```
 >
-> You cn then re-run the setup script.
+> You can then re-run the setup script.

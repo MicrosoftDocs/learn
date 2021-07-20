@@ -1,6 +1,6 @@
 Imagine you're a software developer for an online retailer. Your company uses an app named *:::no-loc text="eShopOnContainers":::* as its online storefront. The storefront is a cloud-native, microservices-based ASP.NET Core app. The product owner has asked you to migrate some data services from your Azure Kubernetes Service (AKS) cluster to managed services to reduce operational costs.
 
-In a microservices architecture, each service typically exposes a set of fine-grained endpoints. There are often a large number of endpoints to manage, so it's important to develop a sound strategy. In this module, you'll learn about exposing a microservices application to the outside world. You'll explore ingress, API gateways, and the [Backend for Frontend](https://samnewman.io/patterns/architectural/bff/) (BFF) pattern.
+In a microservices architecture, each service typically exposes a set of fine-grained endpoints. There are often many endpoints to manage, so it's important to develop a sound strategy. In this module, you'll learn about exposing a microservices application to the outside world. You'll explore ingress, API gateways, and the [Backend for Frontend](https://samnewman.io/patterns/architectural/bff/) (BFF) pattern.
 
 In this module, you will:
 

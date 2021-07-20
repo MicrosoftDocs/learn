@@ -14,7 +14,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: The BFF pattern is an extension what pattern?
+    - content: The BFF pattern is an extension of what pattern?
       choices:
         - content: "API gateway"
           isCorrect: true
@@ -28,7 +28,7 @@ quiz:
         - content: "Event bus"
           isCorrect: false
           explanation: Event bus is not related to the BFF pattern.
-    - content: Which is a correct statement regarding the Kubernetes ingress object?
+    - content: Which is a correct statement about the Kubernetes ingress object?
       choices:
         - content: A Kubernetes ingress object helps to set up the communication among pods.
           isCorrect: false
@@ -41,18 +41,18 @@ quiz:
           explanation: Correct.
         - content: An ingress object can route its own traffic. You don't need any ingress controller.
           isCorrect: false
-          explanation: You need to have an ingress controller for an ingress object to work. It can be an NGINX ingress controller or Azure Application Gateway ingress controller.
+          explanation: You need to have an ingress controller for an ingress object to work. It can be NGINX Ingress Controller or Azure Application Gateway Ingress Controller.
     - content: Which of the following is a correct statement about Azure Application Gateway?
       choices:
-        - content: Application Gateway runs inside the AKS cluster to route traffic to the pods.
+        - content: Application Gateway runs inside the Azure Kubernetes Service cluster to route traffic to the pods.
           isCorrect: false
           explanation: Application Gateway runs outside the Kubernetes cluster.
         - content: Application Gateway uses a special network configuration to access the pods directly.
           isCorrect: true
           explanation: Correct. 
-        - content: The NGINX ingress controller can use Application Gateway if the ingresses have the `kubernetes.io/ingress.class:azure/application-gateway` annotation.
+        - content: NGINX Ingress Controller can use Application Gateway if the ingresses have the `kubernetes.io/ingress.class:azure/application-gateway` annotation.
           isCorrect: false
-          explanation: Only Application Gateway ingress controllers can read ingress configuration based on the `application-gateway` annotation.
+          explanation: Only Application Gateway Ingress Controller can read ingress configuration based on the `application-gateway` annotation.
         - content: All ingresses need the `appgw.ingress.kubernetes.io/backend-path-prefix` annotation to use Application Gateway.
           isCorrect: false
           explanation: The `backend-path-prefix` annotation is not a mandatory configuration. It needs to implement URL rewriting.

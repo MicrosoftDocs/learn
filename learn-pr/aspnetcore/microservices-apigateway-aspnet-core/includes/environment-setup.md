@@ -1,4 +1,4 @@
-In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopOnContainers":::* app to Azure Kubernetes Service (AKS).
+In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopOnContainers":::* app to Azure Kubernetes Service (AKS). AKS is a fully managed Kubernetes service in Azure.
 
 [!INCLUDE[Azure Cloud Shell instructions](../../includes/use-az-cloud-shell.md)]
 
@@ -18,7 +18,7 @@ The preceding command retrieves and runs a setup script from a GitHub repository
 1. Clones the *:::no-loc text="eShopOnContainers":::* app from a GitHub repository.
 1. Provisions AKS and Azure Container Registry resources.
 1. Opens the Cloud Shell editor to view the code.
-1. Deploys the containers to a fully managed Kubernetes service in Azure, known as AKS.
+1. Deploys the containers to AKS.
 1. Displays connection information upon completion.
 
 [!INCLUDE[Instructions for restoring the default Cloud Shell configuration](../../includes/microservices/revert-cloud-shell-configuration.md)]
