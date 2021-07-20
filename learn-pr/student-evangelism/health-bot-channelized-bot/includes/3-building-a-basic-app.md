@@ -40,7 +40,7 @@ App Studio for Teams makes it easy to start creating or integrating your own Tea
 
 1.   Under **Identification**, you enter the app ID. Because you don't have an ID, select **Generate** to generate a new ID.
 
-1. In the **Package Name** box, enter **Para.app** for this bot.
+1. In the **Package Name** box, enter **Para.app**.
 
 1. In the **Version** box, enter **1.0.0** because you're creating the first version:
 
@@ -51,25 +51,25 @@ App Studio for Teams makes it easy to start creating or integrating your own Tea
 
 1. In the **Short description** box, enter a description of 80 characters or less. This description appears in the overview section. Enter **Simple bot collecting information from the user**.
 
-1. In the  **Full description** box, enter a description of 4,000 words or less. We can include more detail here. Enter **Simple bot collecting information from the user and storing the data in the SQL database**.
+1. In the  **Full description** box, enter a description of 4,000 words or less. You can include more detail here. Enter **Simple bot collecting information from the user and storing the data in the SQL database**.
 
-   Under **Developer information**, we'll provide the details about the developer and the developer's website.
+   Under **Developer information**, we'll provide the details about you and your website.
 
 1. In the **Developer/Company Name** box, enter **Contoso**.
 
-1. The **Website** box is where you'll normally enter the developer's website. Because this bot is a demo,  enter **https://github.com/**:
+1. The **Website** box is where you'll normally enter the your website. Because this bot is a demo,  enter **https://github.com/**:
 
    :::image type="content" source="../media/3-descriptions.png" alt-text="Screenshot that shows the developer information values.":::
 
-   Under **App URLs**, you'll normally provide the website for the privacy statement of the application and terms of use. Because this bot is a demo, use **https://github.com/** for both of these values.
+   Under **App URLs**, you'll normally provide the website for the application's privacy statement and terms of use. Because this bot is a demo, use **https://github.com/** for both of these values.
 
    **Branding** is about the appearance of the app. For example, the icon.
 
-1. Under **Full color**, select the **Update**. Choose an image. The image dimensions should be 192 x 192. Because this bot is a health bot, we'll use the official Health Bot icon. You can also choose an accent color. 
+1. Under **Full color**, select **Update**. Choose an image. The image dimensions should be 192 x 192. Because this bot is a health bot, we'll use the official Health Bot icon. You can also choose an accent color. 
 
    :::image type="content" source="../media/3-branding.png" alt-text="Screenshot that shows the branding values.":::
 
-1. Finally, select the **Loading indicator** and **Fullscreen Mode** boxes.
+1. Finally, select the **Loading indicator** and **Fullscreen Mode** checkboxes.
 
    
 
@@ -84,10 +84,9 @@ App Studio for Teams makes it easy to start creating or integrating your own Tea
    :::image type="content" source="../media/3-bots-setup.png" alt-text="Screenshot that shows the Set up button.":::
    
 1.   Now you'll set up the bot. Because we already have the bot configured on the Azure Health Bot platform, select **Existing bot**:
-
    :::image type="content" source="../media/3-existing-bots.png" alt-text="Screenshot that shows the Existing bot tab.":::
 
-1. Select **Connect to a different bot id**. You can get the bot ID from the Azure Health Bot service. This ID is the same one we used in the previous unit. It's a unique ID that's specific to your bot.
+1. Select **Connect to a different bot id**. You can get the bot ID from the Azure Health Bot service. This ID is the same one you used in the previous unit. It's a unique ID that's specific to your bot.
 
 1. Under **Scope**, select **Personal** and **Team**:
 

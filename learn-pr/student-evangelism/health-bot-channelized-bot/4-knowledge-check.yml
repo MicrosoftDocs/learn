@@ -41,7 +41,7 @@ quiz:
           explanation: "No, we can't use sign-in credentials."
         
 
-    - content: "In which section do we upload an icon for the bot?"
+    - content: "In which section do you upload an icon for the bot?"
       choices:
         - content: "Finish"
           isCorrect: false
@@ -51,7 +51,7 @@ quiz:
           explanation: "No, the Capabilities section doesn’t have an option for uploading an icon."
         - content: "Details"
           isCorrect: true
-          explanation: "Yes, we upload the icon in the Details section, in the Branding subsection. The dimensions should be 192 x 192."
+          explanation: "Yes, you upload the icon in the Details section, in the Branding subsection. The dimensions should be 192 x 192."
 
     - content: "Which of the following options isn't one of the options in the Test and Distribute subsection?"
       choices:
