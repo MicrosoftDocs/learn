@@ -4,7 +4,7 @@
  -  **Gain insight into your network traffic using flow logs**. Build a deeper understanding of your network traffic pattern using Network Security Group flow logs. Information provided by flow logs helps you gather data for compliance, auditing and monitoring your network security profile.
  -  **Diagnose VPN connectivity issues**. Network Watcher provides you the ability to diagnose your most common VPN Gateway and Connections issues. Allowing you, not only, to identify the issue but also to use the detailed logs created to help further investigate.
 
-:::image type="content" source="../media/network-watcher-diag.png" alt-text="Screenshot of the Network Watcher page.":::
+:::image type="content" source="../media/AZ104_Network_Watcher_Diag-dd4dac50.png" alt-text="Screenshot of the Network Watcher page.":::
 
 
 **Verify IP Flow**: Quickly diagnose connectivity issues from or to the internet and from or to the on-premises environment. For example, confirming if a security rule is blocking ingress or egress traffic to or from a virtual machine. IP flow verify is ideal for making sure security rules are being correctly applied. When used for troubleshooting, if IP flow verify doesn’t show a problem, you will need to explore other areas such as firewall restrictions.
