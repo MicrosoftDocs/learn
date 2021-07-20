@@ -1,4 +1,4 @@
-:::image type="content" source="../media/create-public-ip.png" alt-text="Screenshot of creating a public IP address.":::
+:::image type="content" source="../media/AZ104_Create_PublicIP-4b885ae0.png" alt-text="Screenshot of creating a public IP address.":::
 
 
 **IP Version**. Select IPv4 or IPv6 or Both. Selecting Both will result in two Public IP addresses being create- one IPv4 address and one IPv6 address.
