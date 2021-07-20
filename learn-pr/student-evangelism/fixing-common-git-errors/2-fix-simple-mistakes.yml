@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.introduction-to-git.6-fix-simple-mistakes
+uid: learn.student-evangelism.introduction-to-git.2-fix-simple-mistakes
 title: Fix simple mistakes
 metadata:
   title: Fix simple mistakes
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-git
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-fix-simple-mistakes.md)]
+  [!include[](includes/2-fix-simple-mistakes.md)]
