@@ -1,6 +1,6 @@
 There are two methods for Web App scaling, **scale up** and **scale out**. Apps can be scaled manually or automatically (autoscale).
 
-:::image type="content" source="../media/scale-options.png" alt-text="Screenshot showing the choice between manual and autoscale.":::
+:::image type="content" source="../media/AZ104_Scale_Options-35142c9f.png" alt-text="Screenshot showing the choice between manual and autoscale.":::
 
 
 **Scale up**. Get more CPU, memory, disk space, and extra features like dedicated virtual machines (VMs), custom domains and certificates, staging slots, autoscaling, and more. You scale up by changing the pricing tier of the App Service plan that your app belongs to.
