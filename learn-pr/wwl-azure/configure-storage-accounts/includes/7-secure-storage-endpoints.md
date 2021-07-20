@@ -1,6 +1,6 @@
 The steps necessary to restrict network access to Azure services varies across services. For accessing a storage account, you would use the **Firewalls and virtual networks** blade to add the virtual networks that will have access. Notice you can also configure to allow access to one or more public IP ranges.
 
-:::image type="content" source="../media/secure-access-to-storage.png" alt-text="Screenshot of the Storage Account Firewalls and virtual networks blade in the Azure portal. One virtual network is selected and the firewall has an IP address range.":::
+:::image type="content" source="../media/AZ104_Secure_Access_to_Storage-4a4e5cdf.png" alt-text="Screenshot of the Storage Account Firewalls and virtual networks blade in the Azure portal. One virtual network is selected and the firewall has an IP address range.":::
 
 
  -  Firewalls and Virtual Networks restricts access to the Storage Account from specific Subnets on Virtual Networks or public IPs.
