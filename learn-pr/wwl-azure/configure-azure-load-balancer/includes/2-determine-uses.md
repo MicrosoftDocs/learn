@@ -3,7 +3,7 @@ The Azure Load Balancer delivers high availability and network performance to yo
  -  Load-balancing rules determine how traffic is distributed to the backend.
  -  Health probes ensure the resources in the backend are healthy.
 
-:::image type="content" source="../media/load-balancer.png" alt-text="Diagram showing how load balancer works. Left to right. The frontend is exchanging information with the Load Balancer. The Load Balancer is using rules and probes to communicate with the backend.":::
+:::image type="content" source="../media/AZ104_Load_Balancer-baccbb10.png" alt-text="Diagram showing how load balancer works. Left to right. The frontend is exchanging information with the Load Balancer. The Load Balancer is using rules and probes to communicate with the backend.":::
 
 
 The Load Balancer can be used for inbound and outbound scenarios and scales up to millions of TCP and UDP application flows.
