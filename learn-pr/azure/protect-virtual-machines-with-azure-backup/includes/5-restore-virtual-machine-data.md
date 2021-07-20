@@ -21,8 +21,8 @@ You can also recover individual files from a recovery point by mounting the snap
 
 Azure Backup supports the backup and restore of machines encrypted through Azure Disk Encryption. Disk Encryption works with Azure Key Vault to manage the relevant secrets that are associated with the encrypted disk. For an additional layer of security, you can use key vault encryption keys (KEKs) to encrypt the secrets before they're written to the key vault.
 
-Certain limitations apply when you restore encrypted virtual machines:
+Certain limitations apply when you restore encrypted VMs:
 
-- Azure Backup supports only standalone key encryption. Any key that's part of a certificate isn't supported currently.
-- File-level or folder-level restores are not supported with encrypted virtual machines. To restore to that level of granularity, the whole virtual machine has to be restored. You can then manually copy the file or folders.
-- The **Replace existing VM** option isn't available for encrypted virtual machines.
+- Azure Backup supports only standalone key encryption. Any key that's part of a certificate isn't currently supported.
+- File-level or folder-level restores are not supported with encrypted VMs. To restore to that level of granularity, the entire VM has to be restored. You can then manually copy the file or folders.
+- The **Replace existing VM** option isn't available for encrypted VMs.
