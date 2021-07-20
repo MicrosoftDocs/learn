@@ -68,4 +68,4 @@ Output files are written into the default location, which is *bin/\<configuratio
 For applications that are executable, The `dotnet run` command provides a convenient option to run your application. The `dotnet run` command looks for the *.dll* or executable in your output directory and uses the `dotnet` driver to execute the code as defined in the application's entrypoint (*Program.fs*).
 
 > [!TIP]
-> When you use the `dotnet run` command, the `dotnet build` is automatically run as well. Therefore, you're able to save yourself the step of explicitly building your application.
+> When you use the `dotnet run` command, `dotnet build` is automatically run as well. Therefore, you're able to save yourself the step of explicitly building your application.
