@@ -1,6 +1,6 @@
 We have to connect the database to the bot, to store/retrieve the data being collected from the user. To do so, we need to use the 'Data Connect' scenario step. We can do this by dragging it to the Designer window and connecting it to the steps that collect the data from the user.
 
-:::image type="content" source="../media/4-health-bot-portal-scenario.png" alt-text="Healthbot portal scenario":::
+:::image type="content" source="../media/4-health-bot-portal-scenario.png" alt-text="Healthbot portal scenario lightbox="../media/4-health-bot-portal-scenario.png":::
 
 In the vitals bot that we previously worked on during the 'Enhanced Healthcare Bot' module, the data connect step for POST method gets added between the prompt with weight variable and the Yes or No step. The data connection step has multiple fields that need to be filled by us. A separate data connect step needs to be added for Get method that will be added between Thank you statement step and Final statement step. This helps the bot to retrieve the name of the person who logged in their data and greet them Thank you.
 
@@ -15,7 +15,7 @@ To display some retrieved data, the display text field from the Final Statement 
 
 `Thank you ${scenario.req.ResultSets.Table1[0].name}.You have checked in at ${scenario.req.ResultSets.Table1[0].ColumnDateTime} `
 
-Select **Ok** to save it.
+Select **OK** to save it.
 
 > [!Note]
 > While entering the code in the Display text field, it is must for the code to be within two left quotes/backtick (`<code>`)
@@ -35,7 +35,7 @@ Select **Ok** to save it.
 
 - **Payload:** Needs to be provided with a JSON or JavaScript object.
 
-:::image type="content" source="../media/4-post-health-bot.png" alt-text="POST method Data connection - connection step":::
+:::image type="content" source="../media/4-post-health-bot.png" alt-text="POST method Data connection - connection step lightbox="../media/4-post-health-bot.png":::
 
 The configuration of the data connection step needs to be done in the following way:
 
@@ -49,7 +49,7 @@ The configuration of the data connection step needs to be done in the following 
 
 - **Base URL:** We can get the base URL from the Workflow URL of the healthbot-post workflow which we created earlier.
 
-:::image type="content" source="../media/4-post-url.png" alt-text="POST Data connection - connection step":::
+:::image type="content" source="../media/4-post-url.png" alt-text="POST Data connection - connection step lightbox="../media/4-post-url.png":::
 
 From the Workflow URL, take 'https://healthbotlearn.azurewebsites.net.443' for the Base URL.
 
@@ -70,7 +70,7 @@ From the Workflow URL, take 'https://healthbotlearn.azurewebsites.net.443' for t
 
 We also have to configure our second data connect cell for the GET method (to retrieve data from the database).
 
-:::image type="content" source="../media/4-get-health-bot.png" alt-text="GET Data connection - connection step":::
+:::image type="content" source="../media/4-get-health-bot.png" alt-text="GET Data connection - connection step lightbox="../media/4-get-health-bot.png":::
 
 The configuration for this data connect step is similar to that of the POST method.
 
@@ -84,13 +84,13 @@ The configuration for this data connect step is similar to that of the POST meth
 
 - **Base URL:** We can get the base URL from the Workflow URL of the healthbot-get workflow which we created earlier.
 
-:::image type="content" source="../media/4-get-url.png" alt-text="GET workflow url":::
+:::image type="content" source="../media/4-get-url.png" alt-text="GET workflow url lightbox="../media/4-get-url.png":::
 
 From the Workflow URL, take 'https://healthbotlearn.azurewebsites.net.443' for the Base URL
 
 - **Path:** The remaining part of the workflow URL goes into path, i.e, '/api/healthbot-get/triggers/manual...'  
 
-- **Response Variable name:** : Give it any variable name. We have used 'req'.
+- **Response Variable name:**  Give it any variable name. We have used 'req'.
 
 With this you have successfully connected the database to your healthcare bot. The database can now accept data and also display the data in the final message.
 

@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.health-bot-integrating-bot
 metadata:
-  title: Integrated HealthCare Bot
+  title: Integrated healthcare bot
   description: This module will contain the steps to connect the healthcare bot to a database.
   ms.date: 06/04/2020
   author: Meghana-ch

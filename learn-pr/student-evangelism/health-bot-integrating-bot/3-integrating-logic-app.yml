@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.health-bot-integrating-bot.3-integrating-logic-app
-title: Integrating Logic App
+title: Integrating logic app
 metadata:
-  title: Integrating Logic App
+  title: Integrating logic app
   description: In this unit, you learn how to integrate a logic app for connecting a database to healthcare bot.
   author: Meghana-ch
   ms.author: chnoring
