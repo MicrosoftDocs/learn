@@ -1,6 +1,6 @@
 In the Azure portal, you can filter your Activity Log.
 
-:::image type="content" source="../media/query-activity-log.png" alt-text="Screenshot of the Activity Log page showing failed and succeeded events.":::
+:::image type="content" source="../media/AZ104_Query_the_Activity_Log-d3917c23.png" alt-text="Screenshot of the Activity Log page showing failed and succeeded events.":::
 
 
  -  **Subscription**. One or more Azure subscription names.

@@ -7,7 +7,7 @@ All data collected by Azure Monitor fits into one of two fundamental types, [met
 
 For many Azure resources, the data collected by Azure Monitor is displayed on the Overview page in the Azure portal. For example, virtual machines have several charts displaying performance metrics. Click on any of the graphs to open the data in Metric explorer in the Azure portal, which allows you to chart the values of multiple metrics over time. You can view the charts interactively or pin them to a dashboard to view them with other visualizations.
 
-:::image type="content" source="../media/monitor-data-platform.png" alt-text="Screenshot of the metric analytics page.":::
+:::image type="content" source="../media/AZ104_Monitoring_Data_Plaftform-f338f256.png" alt-text="Screenshot of the metric analytics page.":::
 
 
 ## Logs
@@ -16,4 +16,4 @@ Log data collected by Azure Monitor is stored in Log Analytics which includes a 
 
 Azure Monitor uses a version of the [Data Explorer](/azure/kusto/query/) query language that is suitable for simple log queries but also includes advanced functionality such as aggregations, joins, and smart analytics. You can quickly learn the query language using multiple lessons. Particular guidance is provided to users who are already familiar with SQL and Splunk.
 
-:::image type="content" source="../media/log-data.png" alt-text="The logs database is shown providing information to the log analytics page.":::
+:::image type="content" source="../media/AZ104_Log_Data-f47db4e9.png" alt-text="The logs database is shown providing information to the log analytics page.":::

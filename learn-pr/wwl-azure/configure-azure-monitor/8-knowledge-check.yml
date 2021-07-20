@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/19/2021
+  ms.date: 07/20/2021
   author: wwlpublish
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -12,39 +12,3 @@ azureSandbox: false
 durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
-quiz:
-  title: "Check your knowledge"
-  questions:
-  - content: "Someone deleted a network security group through Azure Resource Manager. When viewing the Activity Log another Azure Administrator says the search can be narrowed with which event category?"
-    choices:
-    - content: "Administrative"
-      isCorrect: true
-      explanation: "That's correct. Contains the record of all create, update, delete, and action operations performed through Resource Manager. Examples of Administrative events include create virtual machine and delete network security group."
-    - content: "Service Health"
-      isCorrect: false
-      explanation: "That's incorrect. Contains the record of any service health incidents that have occurred in Azure. An example of a Service Health event SQL Azure in East US is experiencing downtime."
-    - content: "Policy"
-      isCorrect: false
-      explanation: "That's incorrect. Contains records of all effect action operations performed by Azure Policy. Examples of Policy events include Audit and Deny. Every action taken by Policy is modeled as an operation on a resource."
-  - content: "What data does Azure Monitor collect?"
-    choices:
-    - content: "Data from a variety of sources, such as the application event log, the operating system (Windows and Linux), Azure resources, and custom data sources."
-      isCorrect: true
-      explanation: "That's correct."
-    - content: "Azure billing details"
-      isCorrect: false
-      explanation: "That's incorrect. Azure Monitor does not collect information related to billing. You can use Azure Cost Management to track this information."
-    - content: "Backups of database transaction logs"
-      isCorrect: false
-      explanation: "That's incorrect. Azure Monitor does not perform backups of database transaction logs. You can use Azure Backup for backups of your systems."
-  - content: "Activity logs are kept for ..."
-    choices:
-    - content: "30 days"
-      isCorrect: false
-      explanation: "That's incorrect."
-    - content: "90 days"
-      isCorrect: true
-      explanation: "That's correct."
-    - content: "120 days"
-      isCorrect: false
-      explanation: "That's incorrect."
