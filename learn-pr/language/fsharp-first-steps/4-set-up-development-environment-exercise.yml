@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.fsharp-introduction.set-up-development-environment
-title: Exercise - set up your F# development environment
+title: Exercise - Set up your F# development environment
 metadata:
   unitType: exercise
-  title: "Exercise - set up your F# development environment"
+  title: "Exercise - Set up your F# development environment"
   description: "Install the .NET SDK, Visual Studio Code, and Ionide F# extension to develop your F# applications"
   ms.date: 07/19/2021
   author: luisquintanilla

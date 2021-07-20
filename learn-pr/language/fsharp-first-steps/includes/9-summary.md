@@ -9,5 +9,5 @@ You now understand the fundamentals of how to get started building F# applicatio
 
 ## References
 
-- [What is .NET](/learn/dotnet/what-is-dotnet)
+- [What is .NET](https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet)
 - [F# Documentation](/dotnet/fsharp)
