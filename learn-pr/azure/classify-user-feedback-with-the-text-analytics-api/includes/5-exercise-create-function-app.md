@@ -14,7 +14,7 @@
     | ------------ |  ------- | ------ |
     | **Project Details** | |
     | Subscription | Concierge Subscription | Subscription under which this new function app is created. |
-    | Resource Group|  From the dropdown list, select <rgn>[sandbox resource group name]</rgn>. | Name for the resource group in which to create your function app.  Make sure to select **Use existing** and use the resource group from the last exercise. That way, all the resources we make in this module are consolidated. |
+    | Resource Group|  From the dropdown list, select *<rgn>[sandbox resource group name]</rgn>*. | Name for the resource group in which to create your function app.  Make sure to select **Use existing** and use the resource group from the last exercise. That way, all the resources we make in this module are consolidated. |
     | **Instance Details**| |
     | Function App name | Globally unique name | Name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. In our case, let's use *discover-sentiment-function*. |
     | Publish | Code | Leave as default. |

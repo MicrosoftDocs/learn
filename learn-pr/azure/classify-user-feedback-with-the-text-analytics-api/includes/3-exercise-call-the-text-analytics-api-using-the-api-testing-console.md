@@ -22,11 +22,11 @@ Every call to Text Analytics API requires a subscription key. Often called an ac
     |---------|---------|---------|
     | **Project details**| |
     | Subscription  |  Concierge Subscription  | Subscription under which this new Cognitive Services API account with **Text Analytics API** is created.   |
-    |Resource group    |  From the dropdown list, select <rgn>[sandbox resource group name]</rgn>       |  Name for the new resource group in which to create your Cognitive Services Text Analytics API account.       |
+    |Resource group    |  From the dropdown list, select *<rgn>[sandbox resource group name]</rgn>*       |  Name for the new resource group in which to create your Cognitive Services Text Analytics API account.       |
     | **Instance details**| |
     |Region     |  From the dropdown list, choose a region close to you. |  Choose a region near you or near other services your functions access.  |
     |Name     |  Enter a unique name for your Cognitive Dervices account.   |  Name of the Cognitive Services account. We recommend using a descriptive name. Valid characters are `a-z`, `0-9`, and `-`. |
-    |Pricing tier     | From the dropdown list, select **F0 Free** |  Cost of your Cognitive Services account depends on the actual usage and the options you choose. We recommend selecting the free tier for our purposes here.      |
+    |Pricing tier     | From the dropdown list, select **F0 Free**. |  Cost of your Cognitive Services account depends on the actual usage and the options you choose. We recommend selecting the free tier for our purposes here.      |
 
     > [!TIP]
     > Remember the location you selected when creating the Text Analytics cognitive services account. You'll use it to make API calls shortly.
@@ -41,7 +41,7 @@ Every call to Text Analytics API requires a subscription key. Often called an ac
 
 Now that we have our Cognitive Services account, let's find the access key so we can start calling the API.
 
-1. Select **Go to resource**. This action opens the account Quick start.
+1. Select **Go to resource**. This action opens the Quick start account.
 
 1. In the left menu bar, under **RESOURCE MANAGEMENT**, select **Keys and Endpoint**. The **Keys and Endpoint** pane appears.
 
