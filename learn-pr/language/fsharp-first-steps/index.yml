@@ -1,10 +1,10 @@
 ### YamlMime:Module
-uid: learn.fsharp-introduction
+uid: learn.fsharp-first-steps
 metadata:
   moduleType: standard
   title: "Take your first steps with F#"
-  description: "Set up your development environment, write your first line of code, and build your first application" 
-  ms.date: 07/19/2021
+  description: "Set up your F# development environment, write your first line of F# code, and build your first F# application" 
+  ms.date: 07/20/2021
   author: luisquintanilla
   ms.author: luquinta
   ms.topic: interactive-tutorial
@@ -27,15 +27,15 @@ roles:
 products:
   - dotnet
 units:
-- learn.fsharp-introduction.introduction
-- learn.fsharp-introduction.what-is-fsharp
-- learn.fsharp-introduction.fsharp-development-environment
-- learn.fsharp-introduction.set-up-development-environment
-- learn.fsharp-introduction.fsharp-interactive
-- learn.fsharp-introduction.write-your-first
-- learn.fsharp-introduction.fsharp-build-application
-- learn.fsharp-introduction.build-your-first
-- learn.fsharp-introduction.knowledge-check
-- learn.fsharp-introduction.summary
+- learn.fsharp-first-steps.introduction
+- learn.fsharp-first-steps.what-is-fsharp
+- learn.fsharp-first-steps.fsharp-development-environment
+- learn.fsharp-first-steps.set-up-development-environment
+- learn.fsharp-first-steps.fsharp-interactive
+- learn.fsharp-first-steps.write-your-first
+- learn.fsharp-first-steps.fsharp-build-application
+- learn.fsharp-first-steps.build-your-first
+- learn.fsharp-first-steps.knowledge-check
+- learn.fsharp-first-steps.summary
 badge:
-  uid: learn.fsharp-introduction.badge
+  uid: learn.fsharp-first-steps.badge

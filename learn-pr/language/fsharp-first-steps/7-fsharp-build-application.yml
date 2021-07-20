@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.fsharp-introduction.fsharp-build-application
+uid: learn.fsharp-first-steps.fsharp-build-application
 title: Create F# applications
 metadata:
   unitType: learning-content
   title: "Create F# applications"
   description: "Overview of .NET templates and how they can help you build your first F# application"
-  ms.date: 07/19/2021
+  ms.date: 07/20/2021
   author: luisquintanilla
   ms.author: luquinta
   ms.topic: interactive-tutorial
