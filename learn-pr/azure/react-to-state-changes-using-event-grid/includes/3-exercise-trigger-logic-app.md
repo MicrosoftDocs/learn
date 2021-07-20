@@ -89,10 +89,10 @@ The next step is to create the logic app that will run when a virtual machine ch
     | **Event Type Item - 3** | `Microsoft.Resources.ResourceWriteSuccess` |
     | | |
 
-    :::image type="content" source=../media/3-logic-app-event-grid-trigger-details.png" alt-text="Trigger details.":::
+    :::image type="content" source="../media/3-logic-app-event-grid-trigger-details.png" alt-text="Trigger details.":::
 
 1. On **Logic Apps Deisgner** menu bar, select **Save**.
 
-    :::image type="content" source=../media/3-logic-app-event-grid-save.png" alt-text="Save menu button.":::
+    :::image type="content" source="../media/3-logic-app-event-grid-save.png" alt-text="Save menu button.":::
 
 Your logic app is now ready and set up to be a subscriber to the events from the Azure Event Grid.
