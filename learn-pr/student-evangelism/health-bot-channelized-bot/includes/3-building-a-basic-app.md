@@ -39,7 +39,7 @@ App Studio for Teams makes it easy to start creating or integrating your own Tea
 
 1. In the **Package Name** box, enter **Para.app** for this bot.
 
-1. In the **Version** box, enter **1.0.0** because this is the first version.
+1. In the **Version** box, enter **1.0.0** because you're creating the first version.
 
      :::image type="content" source="../media/3-app-id-generation.png" alt-text="Screenshot that shows App details values.":::
 
@@ -62,43 +62,45 @@ App Studio for Teams makes it easy to start creating or integrating your own Tea
 
    **Branding** is about the appearance of the app. For example, the icon.
 
-1. Under **Full color**, select the **Update**. Choose an image. The image dimensions should be 192 x 192. Because this is a health bot, we'll use the official Health Bot icon. You can also choose an accent color. 
+1. Under **Full color**, select the **Update**. Choose an image. The image dimensions should be 192 x 192. Because this bot is a health bot, we'll use the official Health Bot icon. You can also choose an accent color. 
 
 1. Finally, select the **Loading indicator** and **Fullscreen Mode** boxes:
 
    :::image type="content" source="../media/3-branding.png" alt-text="Screenshot that shows App details values.":::
 
-   The second main section is the **Capabilities** section. This is where the bot is integrated to the Teams app platform.
+   The second main section is the **Capabilities** section. In this section, the bot is integrated to the Teams app platform.
 
 1. Under **Capabilities**, select **Bots**:
 
-   :::image type="content" source="../media/3-bots-section.png" alt-text="Screenshot that shows the Bots section.":::
+   :::image type="content" source="../media/3-bots-section.png" alt-text="Screenshot that shows the Bots selection in the left pane.":::
    
-1. Select **Setup**.
+1. Select **Set up**:
 
-   Now you'll set up the bot. Because we already have the bot configured on the Azure Health Bot platform, select **Existing bot**:
+   :::image type="content" source="../media/3-bots-setup.png" alt-text="Screenshot that shows the Set up button.":::
+   
+1.   Now you'll set up the bot. Because we already have the bot configured on the Azure Health Bot platform, select **Existing bot**:
+   :::image type="content" source="../media/3-existing-bots.png" alt-text="Screenshot that shows the Existing bot tab.":::
 
-   :::image type="content" source="../media/3-bots-setup.png" alt-text="Screenshot of Bots setup section.":::
+1. Select **Connect to a different bot id**. You can get the bot ID from the Azure Health Bot service. This ID is the same one we used in the previous unit. It's a unique ID that's specific to your bot.
 
-:::image type="content" source="../media/3-existing-bots.png" alt-text="Screenshot of Existing Bots section.":::
+1. Under **Scope**, select **Personal** and **Team**:
+   :::image type="content" source="../media/3-existing-bot-setup.png" alt-text="Screenshot that shows the Existing bot setup values.":::
 
-:::image type="content" source="../media/3-existing-bot-setup.png" alt-text="Screenshot of Existing Bots section setup.":::
+   There are four subsections in the **Finish** section:
 
-Upon clicking the Existing Bot section, select the **Connect to a different bot id**. The Bot ID can be obtained from the Azure health bot platform. This is the same ID we used in the previous unit. It's a unique ID and varies from user to user.
+   - Languages
+   - Domains and permissions
+   - App manifesto
+   - Test and distribute
 
-In the scope section, select **Personal** and **Team**.
+1. Under **Domains and permissions**, you can provide an Azure Active Directory app ID. To learn how to generate one, see [create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal). This step is optional.
 
-:::image type="content" source="../media/3-azure-ad-app-id.png" alt-text="Screenshot of Azure AD app ID":::
+   :::image type="content" source="../media/3-azure-ad-app-id.png" alt-text="Screenshot that shows where to add an Azure AD app ID.":::
 
-In the Finish section, we have four sub sections:
+1. Under **Test and Distribute**, you can install, download, and publish the app: 
 
-- Languages
-- Domains and Permissions
-- App manifesto
-- Test and Distribute
+   :::image type="content" source="../media/3-test-and-distribute.png" alt-text="Screenshot that shows the Install, Download, and Publish buttons.":::
 
-In the Domains and Permissions section, we can provide Azure Active Directory App ID. To learn how generate one, see [create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal). This step is optional.
+You have IT admin rights to install the bot. 
 
-:::image type="content" source="../media/3-test-and-distribute.png" alt-text="Screenshot of test and distribute":::
-
-Finally, Test and Distribute, here we can install, download, and publish the app that is built. You will be IT admin rights to install it!  The bot app is ready! We have successfully wrapped up the bot into Teams app and now can be shipped to anyone in the organization.
+The app is now ready! You've wrapped the bot in a Teams app. It can now be shipped to anyone in the organization.
