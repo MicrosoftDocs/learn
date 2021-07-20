@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.create-git-project
 metadata:
-  title: Introduction to
+  title: Learn How to Create A Git Project
   description: Learn how to
   ms.date: 06/04/2020
   author: mshumba
@@ -22,11 +22,10 @@ products:
   - vs
 prerequisites: None
 units:
-  - learn.create-git-project.1-introduction
-  - learn.create-git-project.2-making-class
-  - learn.create-git-project.3-unit
-  - learn.create-git-project.4-exercise-unit
-  - learn.create-git-project.5-knowledge-check
-  - learn.create-git-project.6-summary
+  - learn.student-evangelism.create-git-project.1-introduction
+  - learn.student-evangelism.create-git-project.2-exercise-start-a-project
+  - learn.student-evangelism.create-git-project.3-exercise-make-and-track-changes
+  - learn.student-evangelism.create-git-project.4-knowledge-check
+  - learn.student-evangelism.create-git-project.5-summary
 badge:
   uid: learn.create-git-project.badge

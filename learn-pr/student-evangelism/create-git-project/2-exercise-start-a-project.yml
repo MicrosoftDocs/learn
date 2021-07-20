@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-git-project.2-making-class
-title: Unit
+uid: learn.student-evangelism.create-git-project.2-exercise-start-a-project
+title: Start a Project
 metadata:
-  title: Unit
+  title: Exercise Start A Project
   description: Describe unit
-  author: undefined
-  ms.author: undefined
+  author: mshumba
+  ms.author: mufaroshumba
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-making-class.md)]
+  [!include[](includes/2-exercise-start-a-project.md)]
