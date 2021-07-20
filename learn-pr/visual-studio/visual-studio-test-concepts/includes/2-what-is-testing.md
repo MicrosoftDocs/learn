@@ -6,9 +6,9 @@ Let's start by defining testing with some examples before we dive into the conce
 
 Testing involves a series of test methods that run against your product code and return a pass or fail result. The result is based on certain criteria that is asserted. Test results appear in a list of red "x" to represent failing tests and green "✔" to represent passing tests. These symbols make it easy to assess what functionality is working or not at a glance.
 
-:::image type="content" source="../media/test-intro-testlist.png" alt-text="Screenshot of table showing how tests appear in a list with passing and failing results in Visual Studio Test Explorer.":::
+:::image type="content" source="../media/test-intro-test-list.png" alt-text="Screenshot of table showing how tests appear in a list with passing and failing results in Visual Studio Test Explorer.":::
 
-## Test Method definition
+## Test method definition
 
 Tests are very much like regular methods. They're organized within Test Classes, have method signatures, and accept parameters. Tests reference and call your product code (another way of saying your non-test code) and compare how it behaves to an expected outcome.
 
@@ -33,7 +33,7 @@ Here's how this test would appear in Visual Studio:
 
 One difference between tests and product code is they don't run as part of your app's normal function. So instead of using F5 (or the large green run button at the top of your development environment) to run as you would your app, you choose which tests to run either via a Test Explorer or many other helpful editor tools. You can think of tests as scaffolding. Tests are there for support, but are not shipped with the app and because of this, they are run independently like their own app.
 
-:::image type="content" source="../media/test-intro-runtests-collage.png" alt-text="Screenshot of buttons and commands for running or debugging tests from the Visual Studio Test Explorer or Editor.":::
+:::image type="content" source="../media/test-intro-run-tests-collage.png" alt-text="Screenshot of buttons and commands for running or debugging tests from the Visual Studio Test Explorer or Editor.":::
 
 ## How can tests help prevent regressions in functionality?
 
