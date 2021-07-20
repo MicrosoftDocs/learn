@@ -12,6 +12,6 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: true
 interactive: powershell
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
   [!include[](includes/3-exercise-powershell.md)]
