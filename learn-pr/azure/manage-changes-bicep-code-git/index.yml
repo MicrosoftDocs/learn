@@ -11,8 +11,8 @@ metadata:
   ms.prod: learning-azure
 title: Manage changes to your Bicep code by using Git
 summary: |
-  Learn how to use Git to support your Bicep development workflow by keeping track of the changes you make as you work.
-  You'll find out how to commit files, view the history of the files you've changed, and how to use branches to develop multiple versions of your code at the same time.
+  Learn how to use Git to support your Bicep development workflow by keeping track of the changes that you make as you work.
+  You'll find out how to commit files, how to view the history of the files you've changed, and how to use branches to develop multiple versions of your code at the same time.
   You'll also learn how to use GitHub or Azure Repos to publish a repository so that you can collaborate with team members.
 abstract: |
   After completing this module, you'll be able to:
