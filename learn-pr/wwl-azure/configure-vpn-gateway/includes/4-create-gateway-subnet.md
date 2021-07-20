@@ -4,4 +4,4 @@ When you create your gateway subnet, gateway VMs are deployed to the gateway sub
 
 Deploy a gateway in your virtual network by adding a gateway subnet.
 
-:::image type="content" source="../media/create-gateway-subnet.png" alt-text="Screenshot of the Subnets blade of the Virtual Networking Azure portal . The add Gateway subnet link is highlighted.":::
+:::image type="content" source="../media/AZ104_Create_Gateway_Subnet-8670a93a.png" alt-text="Screenshot of the Subnets blade of the Virtual Networking Azure portal . The add Gateway subnet link is highlighted.":::

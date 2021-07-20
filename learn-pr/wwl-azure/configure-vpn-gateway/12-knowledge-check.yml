@@ -4,47 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/19/2021
+  ms.date: 07/20/2021
   author: wwlpublish
+  ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 durationInMinutes: 3
 content: |
   [!include[](includes/12-knowledge-check.md)]
-quiz:
-  title: "Check your knowledge"
-  questions:
-  - content: "The company's VPN gateway must work with ExpressRoute. Which VPN type should be used?"
-    choices:
-    - content: "Policy-based"
-      isCorrect: false
-      explanation: "That's incorrect. Policy-based gateways have very limited capabilities and should not be used for ExpressRoute."
-    - content: "Route-based"
-      isCorrect: true
-      explanation: "That's correct. Typical route-based gateway scenarios include point-to-site, inter-virtual network, or multiple site-to-site connections. Route-based is also selected when you coexist with an ExpressRoute gateway or if you need to use IKEv2."
-    - content: "Path-based"
-      isCorrect: false
-      explanation: "That's incorrect. Path-based is not a VPN type."
-  - content: "The infrastructure team is connecting two virtual networks. Performance is a key concern. Which of the following will most influence performance?"
-    choices:
-    - content: "Ensuring you select a route-based VPN."
-      isCorrect: false
-      explanation: "That's incorrect. Although routing can affect performance, another choice will have more influence."
-    - content: "Ensuring you select an appropriate Gateway SKU"
-      isCorrect: true
-      explanation: "That's correct. Aggregate Throughput Benchmarks are provided for each Gateway SKU."
-    - content: "Ensuring you select a policy-based VPN."
-      isCorrect: false
-      explanation: "That's incorrect. Although routing can affect performance, another choice will have more influence."
-  - content: "The infrastructure teams needs to configure a site-to-site VPN connection between the on-premises network and theAzure network. The on-premises network uses a Cisco ASA VPN device. Before starting the configuration, which of the following is required?"
-    choices:
-    - content: "The shared access signature key for the recovery services vault."
-      isCorrect: false
-      explanation: "That's incorrect. The recovery service vault is not needed."
-    - content: "The private IP address of your virtual network gateway."
-      isCorrect: false
-      explanation: "That's incorrect. You will need the public IP address of the virtual network gateway."
-    - content: "The shared key you provided when you created your site-to-site VPN connection."
-      isCorrect: true
-      explanation: "That's correct. You will need the shared key."
