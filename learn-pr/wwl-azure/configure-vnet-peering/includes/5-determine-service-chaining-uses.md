@@ -7,7 +7,7 @@ VNet Peering is nontransitive. When you establish VNet peering between VNet1 and
 
 When you deploy hub-and-spoke networks, the hub virtual network can host infrastructure components like the network virtual appliance or VPN gateway. All the spoke virtual networks can then peer with the hub virtual network. Traffic can flow through network virtual appliances or VPN gateways in the hub virtual network.
 
-:::image type="content" source="../media/service-chaining.png" alt-text="Hub virtual network with virtual appliance and gateway is being accessed by other virtual networks.":::
+:::image type="content" source="../media/AZ104_Service_Chaining-20a58433.png" alt-text="Hub virtual network with virtual appliance and gateway is being accessed by other virtual networks.":::
 
 
 ## User-defined routes and service chaining
