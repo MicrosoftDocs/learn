@@ -1,6 +1,6 @@
 Containers are becoming the preferred way to package, deploy, and manage cloud applications. Azure Container Instances offers the fastest and simplest way to run a container in Azure, without having to manage any virtual machines and without having to adopt a higher-level service. Azure Container Instances is a great solution for any scenario that can operate in isolated containers, including simple applications, task automation, and build jobs.
 
-:::image type="content" source="../media/azure-container-instances-overview.png" alt-text="A web server container is running on a virtual machine in a virtual network.":::
+:::image type="content" source="../media/AZ104_ACI_overview-ff680e5c.png" alt-text="A web server container is running on a virtual machine in a virtual network.":::
 
 
 :::row:::
