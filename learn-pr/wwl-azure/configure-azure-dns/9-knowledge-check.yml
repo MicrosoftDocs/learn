@@ -4,47 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/19/2021
+  ms.date: 07/20/2021
   author: wwlpublish
+  ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 durationInMinutes: 3
 content: |
   [!include[](includes/9-knowledge-check.md)]
-quiz:
-  title: "Check your knowledge"
-  questions:
-  - content: "Which of the following best summarizes the purpose of Azure DNS?"
-    choices:
-    - content: "Manages the security and access to your website."
-      isCorrect: false
-      explanation: "Generally, that is true but it is not the primary purpose. Can you suggest a better answer?"
-    - content: "Registers new domain names, removing the need to use a domain registrar."
-      isCorrect: false
-      explanation: "That's incorrect. Azure DNS isn't a domain registrar. It hosts your domain and allows you to manage DNS zone records."
-    - content: "Manages and hosts your registered domain and associated records."
-      isCorrect: true
-      explanation: "That's correct. Azure DNS allows you to host your registered domains. You can control and configure the domain records, like A, CNAME, MX, and setup alias records."
-  - content: "What type of DNS record should be created to map one or more IP addresses against a single domain?"
-    choices:
-    - content: "CNAME"
-      isCorrect: false
-      explanation: "That's incorrect. The CNAME record maps a domain name to another domain name"
-    - content: "A or AAAA"
-      isCorrect: true
-      explanation: "That's correct. The A or AAAA record maps an IP address to a domain. Multiple IP addresses are known as a record set."
-    - content: "SOA"
-      isCorrect: false
-      explanation: "That's incorrect. The SOA record is the start of authority for your domain. It's used by other DNS servers to resolve your domain."
-  - content: "Azure Private DNS ..."
-    choices:
-    - content: "lets organizations manage and resolve domain names in a virtual network without adding a custom DNS solution."
-      isCorrect: true
-      explanation: "That's correct."
-    - content: "lets organizations manage and resolve domain names in a virtual network by adding a custom DNS solution."
-      isCorrect: false
-      explanation: "That's incorrect. Azure Private DNS doesn't require adding a custom DNS solution."
-    - content: "lets organizations manage domain names in other organizations."
-      isCorrect: false
-      explanation: "That's incorrect. Azure Private DNS doesn't manage domain names in other organizations."

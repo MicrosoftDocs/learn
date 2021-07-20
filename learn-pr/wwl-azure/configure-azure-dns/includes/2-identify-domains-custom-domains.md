@@ -6,7 +6,7 @@ When you create an Azure subscription, an Azure AD domain is automatically creat
 
 The initial domain name can't be changed or deleted. You can however add a routable custom domain name you control. A custom domain name simplifies the user sign-on experience. Users can use credentials they are familiar with. For example, a contosogold.onmicrosoft.com, could be assigned to contosogold.com.
 
-:::image type="content" source="../media/domains-custom-domains.png" alt-text="Screenshot of the Create directory page.":::
+:::image type="content" source="../media/AZ104_Domains_and_Custom_Domains-ba6a50d2.png" alt-text="Screenshot of the Create directory page.":::
 
 
 ## Practical information about domain names
