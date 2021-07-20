@@ -36,11 +36,11 @@ Follow the steps to build a database:
 
    - Compute + Storage: Select **Configure database** and then select **Looking for basic, standard, premium**.
 
-      :::image type="content" source="../media/2-compute-categories.png" alt-text="Categories of compute plans lightbox="../media/2-compute-categories.png":::
+      :::image type="content" source="../media/2-compute-categories.png" alt-text="Categories of compute plans" lightbox="../media/2-compute-categories.png":::
 
    - Select the Basic option and note that it will cost 359.58 INR and select **Apply**.
 
-      :::image type="content" source="../media/2-database-review-create.png" alt-text="Review a database lightbox="../media/2-database-review-create.png":::
+      :::image type="content" source="../media/2-database-review-create.png" alt-text="Review a database" lightbox="../media/2-database-review-create.png":::
 
    - Backup Storage Redundancy: Select **Geo-redundant backup storage**.
 
@@ -50,11 +50,11 @@ Follow the steps to build a database:
 
 1. Note down the Server name mentioned under the essentials.
 
-   :::image type="content" source="../media/2-query-editor.png" alt-text="Query Editor of Database lightbox="../media/2-query-editor.png":::
+   :::image type="content" source="../media/2-query-editor.png" alt-text="Query Editor of Database" lightbox="../media/2-query-editor.png":::
 
 1. Select **Query editor (preview)** from the menu bar on the left of the page and you'll be able to see a log-in page. Enter the credentials you created in the previous steps. (Login ID: learnbot and Password: healthbot@123)
 
-   :::image type="content" source="../media/2-whitelist-ip.png" alt-text="Whitelisting a single IP address lightbox="../media/2-whitelist-ip.png":::
+   :::image type="content" source="../media/2-whitelist-ip.png" alt-text="Whitelisting a single IP address" lightbox="../media/2-whitelist-ip.png":::
 
 1. It will give out an error saying **Cannot open server**.
 
@@ -64,7 +64,7 @@ Follow the steps to build a database:
    > 1. In the Overview page of the SQL database, select **Set Server Firewall**.
    > 1. Select **Yes** for Allow Azure Services and resources to access this server.
    >
-   > :::image type="content" source="../media/2-firewall-settings.png" alt-text="Whitelisting ALL IP addresses lightbox="../media/2-firewall-settings.png":::
+   > :::image type="content" source="../media/2-firewall-settings.png" alt-text="Whitelisting ALL IP addresses" lightbox="../media/2-firewall-settings.png":::
    >
    > 1. Under Rule name enter the following details in the three text boxes:
    >
@@ -78,7 +78,7 @@ Follow the steps to build a database:
 
 1. Enter the credentials again and select **Login**.
 
-   :::image type="content" source="../media/2-sql-query.png" alt-text="SQL query in Editor lightbox="../media/2-sql-query.png":::
+   :::image type="content" source="../media/2-sql-query.png" alt-text="SQL query in Editor" lightbox="../media/2-sql-query.png":::
 
 1. After you log in, select **Tables** to create a new table. In the code section, paste the following code:
 
@@ -102,17 +102,17 @@ We often work with multiple people on the same project and would like to share o
 
 Follow the steps to give access to another user:
 
-:::image type="content" source="../media/2-sql-server.png" alt-text="Sql server lightbox="../media/2-sql-server.png":::
+:::image type="content" source="../media/2-sql-server.png" alt-text="Sql server" lightbox="../media/2-sql-server.png":::
 
 1. On the main Azure portal, select the SQL server you created.
 
-   :::image type="content" source="../media/2-azure-active-directory.png" alt-text="Azure active directory lightbox="../media/2-azure-active-directory.png":::
+   :::image type="content" source="../media/2-azure-active-directory.png" alt-text="Azure active directory" lightbox="../media/2-azure-active-directory.png":::
 
 1. Select **Azure Active Directory** form the setting menu on the left side of the page.
 
 1. Select **Set Admin** which will pop open an Azure Active Directory cell on your screen.
 
-   :::image type="content" source="../media/2-set-admin.png" alt-text="Set Azure active directory admin lightbox="../media/2-set-admin.png":::
+   :::image type="content" source="../media/2-set-admin.png" alt-text="Set Azure active directory admin" lightbox="../media/2-set-admin.png":::
 
 1. Search for the user you'd like to give access to and choose **Select**.
 
@@ -122,17 +122,17 @@ Even though we know our database is working successfully, to visualize the data 
 
 1. Return to the Azure portal landing page and select the SQL database you created.
 
-   :::image type="content" source="../media/2-database-connect.png" alt-text="Connecting a database for visualization lightbox="../media/2-database-connect.png":::
+   :::image type="content" source="../media/2-database-connect.png" alt-text="Connecting a database for visualization" lightbox="../media/2-database-connect.png":::
 
 1. From the dropdown menu of **Connect with**, select **Azure Data Studio**.
 
-   :::image type="content" source="../media/2-azure-data-studio.png" alt-text="Azure Data Studio lightbox="../media/2-azure-data-studio.png":::
+   :::image type="content" source="../media/2-azure-data-studio.png" alt-text="Azure Data Studio" lightbox="../media/2-azure-data-studio.png":::
 
 1. Select **Download Azure Data Studio** and follow the steps given to download it. If you already have it installed in your laptop, select **Launch it Now**.
 
 1. Select the **New Connection** icon next to Servers dropdown, and you'll be able to see a cell named connection pop on your screen.
 
-   :::image type="content" source="../media/2-azure-data-studio-connection.png" alt-text="Connecting to database from Azure data studio lightbox="../media/2-azure-data-studio-connection.png":::
+   :::image type="content" source="../media/2-azure-data-studio-connection.png" alt-text="Connecting to database from Azure data studio" lightbox="../media/2-azure-data-studio-connection.png":::
 
 1. Fill in the following details in the Connection details fields:
 
@@ -146,7 +146,7 @@ Even though we know our database is working successfully, to visualize the data 
 
 1. Select **Connect**
 
-   :::image type="content" source="../media/2-ads-run.png" alt-text="Executing query in Azure data studio lightbox="../media/2-ads-run.png":::
+   :::image type="content" source="../media/2-ads-run.png" alt-text="Executing query in Azure data studio" lightbox="../media/2-ads-run.png":::
 
 1. Expand the Servers dropdown, then expand the **healthbotserver** dropdown, and continue to expand the dropdown named **Databases**.
 
