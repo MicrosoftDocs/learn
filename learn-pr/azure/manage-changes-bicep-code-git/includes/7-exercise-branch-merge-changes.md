@@ -1,6 +1,6 @@
-Back at your toy company, your website development team has told you they plan to add a new Cosmos DB database to store some of the data about the toys your company sells. They asked you to update the Bicep code to add the Cosmos DB resources. However, they've told you they're not ready to make the change quite yet - they just want you to get the changes ready for when their developers have finished their modifications. In this exercise, you'll add a new Bicep module on a branch of your repository.
+Back at the toy company, your website developers plan to add a new Azure Cosmos DB database to store data about the toys that the company sells. The developers asked you to update the Bicep code to add the Cosmos DB resources. However, they're not ready to make the changes yet. They just want you to get the changes ready for when they finish the modifications. 
 
-During the process, you'll: 
+In this exercise, you'll add a new Bicep module on a branch of your repository. During the process, you'll: 
 
 > [!div class="checklist"]
 > * Create a branch and switch to it.
@@ -10,7 +10,7 @@ During the process, you'll:
 
 ## Create and check out a branch in your repository
 
-1. Using the Visual Studio Code terminal, execute the following command to create and check out a new branch:
+1. By using the Visual Studio Code terminal, run the following command to create and check out a new branch:
 
    ```bash
    git checkout -b add-database
@@ -29,17 +29,15 @@ During the process, you'll:
    nothing to commit, working tree clean
    ```
 
-   Notice that the first line of the output tells you that Git is on the **add-database** branch.
+   The first line of the output tells you that Git is on the **add-database** branch.
 
-1. In Visual Studio Code, look at the **Status Bar** at the bottom of the window.
+1. In Visual Studio Code, look at the status bar at the bottom of the window. Notice that the branch name on the left has changed to **add-database**.
 
-   Notice that the branch name on the left has changed to **add-database**.
-
-   Like with the other Git commands you've run, Visual Studio Code stays up-to-date with the changes in your Git repository, including when you check out a branch.
+   As with the other Git commands you've run, Visual Studio Code stays up to date with the changes in your Git repository, including when you check out a branch.
 
 ## Update a file on your branch
 
-Now that you've created a branch, you will add a new Bicep module for your website's Cosmos DB account.
+Now that you've created a branch, you'll add a new Bicep module for your website's Azure Cosmos DB account.
 
 1. In the _modules_ subfolder within the _deploy_ folder, create a new file named _cosmos-db.bicep_.
 
@@ -63,11 +61,11 @@ Now that you've created a branch, you will add a new Bicep module for your websi
 
 1. Save and close the _main.bicep_ file.
 
-## Review the difference and commit the changes
+## Review the differences and commit the changes
 
-1. Using **Source Control** in Visual Studio Code, look at the difference for both files.
+1. Using **Source Control** in Visual Studio Code, look at the differences for both files.
 
-   Notice you see the changed lines highlighted in the _main.bicep_ file.
+   Notice the changed lines highlighted in the _main.bicep_ file.
 
 1. Commit the changes. You can choose whether to use the Git CLI or Visual Studio Code to commit the files.
 
@@ -76,9 +74,9 @@ Now that you've created a branch, you will add a new Bicep module for your websi
 
 ## Switch branches
 
-Now that you've made the change on your branch, you can verify that the change is only visible on the **add-database** branch.
+Now that you've made the changes on your branch, you can verify that the changes are visible only on the **add-database** branch.
 
-1. Check out the **main** branch. You can choose either of the following approaches to do this:
+1. Check out the **main** branch. You can choose either of the following approaches:
 
       - In the Visual Studio Code terminal window, enter the following command:
       
@@ -86,19 +84,19 @@ Now that you've made the change on your branch, you can verify that the change i
         git checkout main
         ```
 
-      - In the Visual Studio Code **Status Bar** at the bottom of the window, select the branch name that currently displays **add-database**.
+      - In the Visual Studio Code status bar at the bottom of the window, select the branch name that currently displays **add-database**.
 
-        A list of branches appear. Select the **main** branch.
+        A list of branches appears. Select the **main** branch.
 
-1. In the Visual Studio Code **Explorer**, open the _main.bicep_ file.
+1. In the Visual Studio Code **Explorer** pane, open the _main.bicep_ file.
 
-   Notice that none of the Cosmos DB changes you made are included. Now that you've switched to the **main** branch, the database module isn't there. Don't worry - they are safely stored on your branch.
+   Notice that none of the Azure Cosmos DB changes you made are included. Now that you've switched to the **main** branch, the database module isn't there. Don't worry - they're safely stored on your branch.
 
 ## Merge your branch
 
-Your website team has come back to you and told you they're ready to launch the updated website with the Azure Cosmos DB database included. You will merge the **add-database** branch into the **main** branch.
+Your website team has tested the changes, and is now ready to launch the updated website with the Azure Cosmos DB database included. You'll merge the **add-database** branch into the **main** branch.
 
-1. Verify that you're on the **main** branch by running `git status` and by looking at the branch name in the **Status Bar**.
+1. Verify that you're on the **main** branch by running `git status` and by looking at the branch name in the status bar.
 
 1. In the Visual Studio Code terminal, enter the following command to merge the changes from the **add-database** branch onto the **main** branch:
 
@@ -106,11 +104,11 @@ Your website team has come back to you and told you they're ready to launch the 
    git merge add-database
    ```
 
-1. In the Visual Studio Code **Explorer**, open the _main.bicep_ file.
+1. In the Visual Studio Code **Explorer** pane, open the _main.bicep_ file.
 
-   Notice that the database module now appears in the file. You've now updated your known-good Bicep files, on your **main** branch, to include the change from your **add-database** branch.
+   Notice that the database module now appears in the file. You've now updated your known-good Bicep files, on your **main** branch, to include the changes from your **add-database** branch.
 
-1. In the Visual Studio Code terminal, enter the following command to delete the **add-database** branch since you no longer need it:
+1. In the Visual Studio Code terminal, enter the following command to delete the **add-database** branch because you no longer need it:
 
    ```bash
    git branch -d add-database
