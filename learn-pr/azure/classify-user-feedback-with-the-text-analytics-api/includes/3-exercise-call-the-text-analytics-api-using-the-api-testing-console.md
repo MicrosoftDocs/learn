@@ -6,30 +6,34 @@ Every call to Text Analytics API requires a subscription key. Often called an ac
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the **Search the Marketplace** search box, enter *text analytics* and press <kbd>Enter</kbd> or <kbd>Return</kbd>.
+1. In the search box, enter *Text Analytics*, and press <kbd>Enter</kbd>.
 
-1. Select **Text Analytics** in the search results, and then select **Create**.
+1. Select **Text Analytics** in the search results. The **Text Analytics** pane appears.
 
-1. In the **Create Text Analytics** page, in the **Basics** tab, complete the following fields.
+1. Select **Create**. The **Select additional features** pane appears.
 
-    |Property  | Value  | Description  |
+1. Select **Continue to create your resource**. The **Create** pane appears for *Text Analytics*.
+
+1. On the **Basics** tab, enter the following values for each setting.
+
+    | Setting  | Value  | Description  |
     |---------|---------|---------|
     | **Project details**| |
-    |Subscription     |  Concierge Subscription    |   The subscription under which this new Cognitive Services API account with **Text Analytics API** is created.   |
-    |Resource group    |  Select **Use existing** and select <rgn>[sandbox resource group name]</rgn>       |  Name for the new resource group in which to create your Cognitive Services Text Analytics API account.       |
+    | Subscription  |  Concierge Subscription  | Subscription under which this new Cognitive Services API account with **Text Analytics API** is created.   |
+    |Resource group    |  From the dropdown list, select *<rgn>[sandbox resource group name]</rgn>*       |  Name for the new resource group in which to create your Cognitive Services Text Analytics API account.       |
     | **Instance details**| |
-    |Region     |  *Choose a region from the dropdown*       |  Select a location from the dropdown.  |
-    |Name     |    *Choose a unique name*     |  The name of the Cognitive Services account. We recommend using a descriptive name. Valid characters are `a-z`, `0-9`, and `-`. |
-    |Pricing tier     | **F0 Free**     |   The cost of your Cognitive Services account depends on the actual usage and the options you choose. We recommend selecting the free tier for our purposes here.      |
+    |Region     |  From the dropdown list, choose a region close to you. |  Choose a region near you or near other services your functions access.  |
+    |Name     |  Enter a unique name for your Cognitive Devices account.   |  Name of the Cognitive Services account. We recommend using a descriptive name. Valid characters are `a-z`, `0-9`, and `-`. |
+    |Pricing tier     | From the dropdown list, select **F0 Free**. |  Cost of your Cognitive Services account depends on the actual usage and the options you choose. We recommend selecting the free tier for our purposes here.      |
 
     > [!TIP]
     > Remember the location you selected when creating the Text Analytics cognitive services account. You'll use it to make API calls shortly.
 
-1. Select **Review + create** to start the account creation process. A *Validation Passed* message appears.
+1. Select **Review + create** to start the account creation process, and then select **Create**.
 
-1. Select **Create**. Watch for a notification that the deployment is in progress. You'll then get a notification that the account has been deployed successfully to your resource group.
+    Watch for a notification that the deployment is in progress. You'll then get a notification that the account has been deployed successfully to your resource group.
 
     ![Deployment succeeded notification with a Go to resource button and a Pin to dashboard button.](../media/deploy-resource-group-success.PNG)
 
@@ -37,9 +41,9 @@ Every call to Text Analytics API requires a subscription key. Often called an ac
 
 Now that we have our Cognitive Services account, let's find the access key so we can start calling the API.
 
-1. Select **Go to resource** on the *Overview* page. This action opens the account Quick start.
+1. Select **Go to resource**. This action opens the Quick start account.
 
-1. In the left nav bar, under **RESOURCE MANAGEMENT**, select **Keys and Endpoint**. The **Keys and Endpoint** page appears.
+1. In the left menu bar, under **RESOURCE MANAGEMENT**, select **Keys and Endpoint**. The **Keys and Endpoint** pane appears.
 
 1. Copy one of the keys by selecting the *Copy to clipboard* icon at the end of one of the **KEY** fields.
 
@@ -54,7 +58,7 @@ Now that we have our Cognitive Services account, let's find the access key so we
 
 Now that we have our key, we can head over to the testing console and take the API for a spin.
 
-1. Navigate to the following URL in your favorite browser. Replace `[location]` with the location you selected when creating the Text Analytics cognitive services account earlier in this unit. For example, if you created the account in *eastus*, you'd replace `[location]` with `eastus` in the URL.
+1. Go to the following URL in your favorite browser. Replace `[location]` with the location you selected when creating the Text Analytics cognitive services account earlier in this unit. For example, if you created the account in *eastus*, you'd replace `[location]` with `eastus` in the URL.
 
     ```bash
     https://[location].dev.cognitive.microsoft.com/docs/services/TextAnalytics.V2.0
@@ -65,20 +69,21 @@ Now that we have our key, we can head over to the testing console and take the A
     - Select the method we want to call.
     - Add the access key that we saved earlier in the lesson to each call.
 
-1. From the left menu, select **Sentiment**. This selection opens the Sentiment documentation to the right. As the documentation shows, we'll be making a REST call in the following format.  
+1. From the left menu pane, select **Sentiment**. This selection opens the Sentiment documentation to the right. As the documentation shows, we'll be making a REST call in the following format.  
 
     `https://[location].api.cognitive.microsoft.com/text/analytics/v2.0/sentiment`
 
-     `[location]` is replaced with the location that you selected when you created the Text Analytics account.  
-We'll pass in our subscription key, or access key, in the **ocp-Apim-Subscription-Key** header.
+     `[location]` is replaced with the location that you selected when you created the Text Analytics account.
+
+    We'll pass in our subscription key, or access key, in the **ocp-Apim-Subscription-Key** header.
 
 ## Make some API calls
 
-1. In the **Sentiment** section of this page, select the button corresponding to the location or region in which you created  the Cognitive Services account. Selecting this button opens the live, interactive, API console.
+1. In the **Sentiment** section of this pane, select the button corresponding to the location or region in which you created the Cognitive Services account. Selecting this button opens the live, interactive, API console.
 
 1. Paste the access key you saved earlier into the field labeled **Ocp-Apim-Subscription-Key**. Notice that the key is written automatically into the HTTP request window as a header value.
 
-1. Scroll to the bottom of the page, and select **Send**.
+1. Scroll to the bottom of the pane, and select **Send**.
 
     Let's examine the sections of this screen in more detail.
 
@@ -106,7 +111,7 @@ We'll pass in our subscription key, or access key, in the **ocp-Apim-Subscriptio
 
 Congratulations! You've made your first call to the Text Analytics API without writing a line of code. Feel free to stay in the console and try out more calls. Here are some suggestions:
 
-- Change the documents in section number 2 and see what the API returns.
+- Change the documents in the *Request body* and see what the API returns.
 - Try the other methods, **Detect Language**, **Entities**, and **Key Phrases**, using the same subscription key.
 - Try to make a call from a different region with your subscription and observe what happens.
 
