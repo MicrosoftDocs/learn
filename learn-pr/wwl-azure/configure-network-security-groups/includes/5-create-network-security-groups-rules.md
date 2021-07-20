@@ -1,6 +1,6 @@
 It is easy to add inbound and outbound rules. There is a Basic and Advanced page. The Advanced page lets you select from a large variety of services. These services include HTTPS, RDP, FTP, and DNS.
 
-:::image type="content" source="../media/create-network-security-groups-rules.png" alt-text="Screenshot of the Add inbound security rule page in the Azure portal. The Advanced configuration link is highlighted. Custom services are shown such as HTTP, HTTPS, and SSH.":::
+:::image type="content" source="../media/AZ104_Creating_NSG_Rules-a5b5b1cc.png" alt-text="Screenshot of the Add inbound security rule page in the Azure portal. The Advanced configuration link is highlighted. Custom services are shown such as HTTP, HTTPS, and SSH.":::
 
 
 **Service.** Service specifies the destination protocol and port range for this rule. You can choose a predefined service, like HTTPS and SSH. When you select a service, the Port range is automatically completed. Choose custom to provide your own port range.
