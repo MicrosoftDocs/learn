@@ -1,6 +1,6 @@
 Just like any other computer, virtual machines in Azure use disks as a place to store an operating system, applications, and data. All Azure virtual machines have at least two disks – a Windows operating system disk (in the case of a Windows VM) and a temporary disk. Virtual machines also can have one or more data disks. All disks are stored as VHDs.
 
-:::image type="content" source="../media/virtual-machine-disks.png" alt-text="Screenshot of the VM disks blade. The OS disk is shown. There are no data disks.":::
+:::image type="content" source="../media/AZ104_VM_Disks-d809d7cd.png" alt-text="Screenshot of the VM disks blade. The OS disk is shown. There are no data disks.":::
 
 
 ## Operating System Disks
