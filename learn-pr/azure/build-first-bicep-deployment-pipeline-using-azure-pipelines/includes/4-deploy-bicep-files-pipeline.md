@@ -1,5 +1,8 @@
 Now that you've created a basic pipeline, you're ready to configure it to deploy your Bicep templates. In this unit you'll learn how to deploy your Bicep templates from your pipeline, and how you can configure the deployment steps.
 
+> [!NOTE]
+> The commands in this unit are shown to illustrate the concepts. Don't run them yet. You'll practice what you learn here soon.
+
 ## Service connections
 
 When you deploy a Bicep file from your own computer, you use the Azure CLI or Azure PowerShell. Before you can deploy your code, you need to sign in to Azure. Usually the tools ask you to enter your email address and password in a browser. After verifying your credentials, the tools know who you are and can verify that you have permission to deploy your Bicep file.

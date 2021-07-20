@@ -1,5 +1,8 @@
 You now have a working pipeline that deploys your Bicep file to your Azure environment. However, you still need to manually run your pipeline. In this unit, you'll learn how to trigger your pipeline automatically when your Bicep code changes.
 
+> [!NOTE]
+> The commands in this unit are shown to illustrate the concepts. Don't run them yet. You'll practice what you learn here soon.
+
 ## What are pipeline triggers?
 
 Pipeline triggers automatically run your pipeline based on rules you specify. You can configure them to run your pipeline at scheduled intervals. You can also configure triggers to run your pipeline every time the files in your repository changes. You do this because it's a good idea to run all of your tests and deployment steps every time sometime changes your code.
