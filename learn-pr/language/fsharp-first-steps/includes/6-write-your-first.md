@@ -1,4 +1,4 @@
-In this exercise, we'll write our first line of F# code which prints out **Hello World** to the console. 
+In this exercise, we'll write our first line of F# code which prints out the message **Hello World** to the console.
 
 ## Start F# Interactive
 
@@ -28,10 +28,6 @@ Add the following line of code next to the `>` character in the F# Interactive t
 printfn "Hello World!";;
 ```
 
-`printfn` is a function which takes a value as input and prints out its string representation out to the console. In this case, the value is the string **Hello World!**.
-
-`;;` represents the end of an expression.
-
 The code is evaluated and output similar to the following is displayed on the console:
 
 ```fsharp
@@ -43,15 +39,23 @@ Congratulations! You've written your first line of F# code!
 
 ## (Optional) Write a script
 
-1. Create a file called *script.fsx* and open it in a text editor.
-1. Add the following code to the *script.fsx* file.
+1. Create a file called *hello-world.fsx* and open it in Visual Studio Code.
+1. Add the following code to the *hello-world.fsx* file.
 
     ```fsharp
     printfn "Hello World!"
     ```
 
-    Note that because the code is inside a script file, there's no need to include `;;`.
+1. Run the script using the `dotnet fsi` command.
 
-1. Run the script `dotnet fsi script.fsx`.
+    ```dotnetcli
+    dotnet fsi hello-world.fsx
+    ```
 
-The script is evaluated and output similar to that from the REPL should appear on the console.
+    Running the script produces the following output:
+
+    ```console
+    Hello World!
+    ```
+
+Congratulations! You wrote your first script!

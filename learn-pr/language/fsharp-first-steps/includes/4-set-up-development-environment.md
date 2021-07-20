@@ -1,8 +1,8 @@
-This section provides guidance on how to set up your development environment
+In this exercise, you'll set up your F# development environment by installing the .NET SDK, Visual Studio Code, and the F# Ionide extension.
 
 ## Install .NET SDK
 
-To get started writing code with F#, at minimum you'll need to install the .NET SDK. The .NET SDK provides you with the base set of libraries and tools for developing. 
+To get started writing code with F#, you'll need to install the .NET SDK.
 
 1. [Download and install .NET SDK](https://dotnet.microsoft.com/download/dotnet) for your operating system.
 1. Verify that the .NET SDK has installed successfully
@@ -21,9 +21,7 @@ To get started writing code with F#, at minimum you'll need to install the .NET 
 
 ## Install Visual Studio Code & Ionide F# extension
 
-Once you have the .NET SDK installed, you can begin writing F# scripts and applications in your preferred text editor or IDE.
-
-Visual Studio Code is an free, open-source, and cross-platform text editor that when paired with the Ionide extension provides you with a rich set of features for building F# applications.
+Once you have the .NET SDK installed, install Visual Studio Code and the Ionide extension.
 
 1. [Download and install Visual Studio Code](https://code.visualstudio.com/#alt-downloads) for your operating system.
 1. After you install Visual Studio Code, open it.

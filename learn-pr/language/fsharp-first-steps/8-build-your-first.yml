@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.fsharp-introduction.build-your-first
-title: Exercise - Build your first F# application
+title: Exercise - build your first F# application
 metadata:
   unitType: exercise
-  title: "Exercise - Build your first F# application"
-  description: "Use the .NET CLI to create an F# console application"
+  title: "Exercise - build your first F# application"
+  description: "Create an F# application to print out a message to a text console"
   ms.date: 07/19/2021
   author: luisquintanilla
   ms.author: luquinta
