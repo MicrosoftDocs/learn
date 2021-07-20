@@ -4,8 +4,9 @@ title: Use Azure Storage Explorer
 metadata:
   title: Use Azure Storage Explorer
   description: "Use Azure Storage Explorer"
-  ms.date: 07/19/2021
+  ms.date: 07/20/2021
   author: wwlpublish
+  ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
