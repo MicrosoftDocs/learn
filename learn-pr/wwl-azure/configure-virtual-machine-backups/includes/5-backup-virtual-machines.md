@@ -1,6 +1,6 @@
 Backing up Azure virtual machines using Azure Backup is easy and follows a simple process.
 
-:::image type="content" source="../media/virtual-machines-backups.png" alt-text="Three steps to create, use, and then backup.":::
+:::image type="content" source="../media/AZ104_Imp_VM_Backups-5791b698.png" alt-text="Three steps to create, use, and then backup.":::
 
 
 1.  **Create a recovery services vault**. To back up your files and folders, you need to create a Recovery Services vault in the region where you want to store the data. You also need to determine how you want your storage replicated, either geo-redundant (default) or locally redundant. By default, your vault has geo-redundant storage. If you are using Azure as a primary backup storage endpoint, use the default geo-redundant storage. If you are using Azure as a non-primary backup storage endpoint, then choose locally redundant storage, which will reduce the cost of storing data in Azure.
