@@ -68,9 +68,9 @@ Let's repeat the test. This time, instead of using the Test pane of the portal, 
 
 1. Select the new queue in the left-hand menu to see the storage explorer for this queue. As expected, the queue is empty.
 
-1. Let's add a message to the queue. In the opr menu bar, select **Add Message**. The **Add Message** pane appears.
+1. Let's add a message to the queue. In the top menu bar, select **Add Message**. The **Add Message** pane appears.
 
-1. In the **Meesage text** field, enter "This message came from our input queue, new-feedback-q", and select **OK**.
+1. In the **Message text** field, enter *This message came from our input queue, new-feedback-q*, and select **OK**.
 
 1. Observe the message, similar to the message in the following screenshot, in the Data Explorer.
 
