@@ -1,6 +1,6 @@
 Alerts proactively notify you when important conditions are found in your monitoring data. They allow you to identify and address issues before the users of your system notice them. Alerts consist of alert rules, action groups, and monitor conditions.
 
-:::image type="content" source="../media/create-alert.png" alt-text="Screenshot of the create rule page with resource, condition, and action group.":::
+:::image type="content" source="../media/AZ104_Create_an_Alert-e5dc1f13.png" alt-text="Screenshot of the create rule page with resource, condition, and action group.":::
 
 
 Alert rules are separated from alerts and the actions that are taken when an alert fires. The alert rule captures the target and criteria for alerting. The alert rule can be in an enabled or a disabled state. Alerts only fire when enabled. The key attributes of an alert rule are:
