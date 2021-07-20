@@ -4,24 +4,7 @@ At this point, you've used the REPL and maybe even created an *fsx* script file.
 
 When you install the .NET SDK, you receive over a dozen built-in templates for creating projects and files, including console apps, class libraries, unit test projects, ASP.NET Core web apps, and configuration files.
 
-Use the `dotnet new -l` .NET CLI command to get a list of templates. The following templates provide support for F#:
-
-- Console (console)
-- Class Library (classlib)
-- Web
-  - Empty (mvc)
-  - MVC (mvc)
-  - Web API (webapi)
-- Test
-  - MSTest (mstest)
-  - NUnit (nunit)
-  - XUnit (xunit)
-- Configuration
-  - .gitignore (gitignore)
-  - global.json (globaljson)
-  - NuGet Config (nugetconfig)
-  - .NET local tool manifest (tool-manifest)
-  - Solution File (sln)
+F# has support for a variety of templates, everything from testing and web to class libraries. For a full list of supported projects run `dotnet new -l` at the console.
 
 ## Create an application using templates
 
@@ -78,10 +61,11 @@ Now that you've created a console application, it's time to build it using the `
 - A *.runtimeconfig.json* file, which specifies the shared runtime and its version for an application.
 - Other libraries that the project depends on (via project references or NuGet package references).
 
-Output files are written into the default location, which is *bin/<configuration>/<target>*. Debug is the default configuration, but you can override it using the `--configuration` option. The target refers to the target framework, which is specified in the `TargetFramework` property of the *fsproj* file. Target framework specifies the set of APIs that you'd like to make available to the app or library. For example if you have a .NET 5 application and you run `dotnet build`, the output is placed in *bin/Debug/net5.0*.
+Output files are written into the default location, which is *bin/\<configuration\>/\<target\>*. Debug is the default configuration, but you can override it using the `--configuration` option. The target refers to the target framework, which is specified in the `TargetFramework` property of the *fsproj* file. Target framework specifies the set of APIs that you'd like to make available to the app or library. For example if you have a .NET 5 application and you run `dotnet build`, the output is placed in *bin/Debug/net5.0*.
 
 ## Run your application
 
 For applications that are executable, The `dotnet run` command provides a convenient option to run your application. The `dotnet run` command looks for the *.dll* or executable in your output directory and uses the `dotnet` driver to execute the code as defined in the application's entrypoint (*Program.fs*).
 
-As a tip, when you use the `dotnet run` command, the `dotnet build` is automatically run as well. Therefore, you're able to save yourself the step of explicitly building your application.
+> [!TIP]
+> When you use the `dotnet run` command, the `dotnet build` is automatically run as well. Therefore, you're able to save yourself the step of explicitly building your application.

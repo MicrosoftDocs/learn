@@ -1,18 +1,15 @@
 F# is an open-source, cross-platform programming language that makes it easy to write succinct, performant, robust, and practical code
 
-F# runs anywhere .NET runs. That means you can leverage the vast .NET ecosystem and tools to build different kinds of applications such as:
+F# runs anywhere .NET runs and F# is extensible as well and in cases where your application needs to run in a JavaScript environment, there are various libraries you can use.
 
-- Web APIs
-- Single-Page applications (SPA)
-- WebAssembly
-- Desktop
-- Mobile
-- Big data
-- Data science & machine learning
-- Internet-of-Things (IoT)
-- Gaming
+F# has numerous features that include:
 
-F# is extensible as well and in cases where your application needs to run in a JavaScript environment, there are various libraries you can use.
+- **Lightweight syntax:** Write low-ceremony code and focus on the core logic of your application.
+- **Immutable by default:** Apply predictable & repeatable transformations to your data without worrying about side-effects.
+- **Type inference and automatic generalization:** Leverage the compiler to get the benefits of a statically typed language without explicitly defining your types.
+- **Powerful data types:** Represent complex data & model domains using tuples, records, and discriminated unions.
+- **Pattern matching:** Enforce correctness in your application's behavior using the compiler.
+- **Asynchronous programming:** Support for asynchronous workflows out of the box.
 
 In this module you will:
 
