@@ -179,7 +179,7 @@ Now that you've created the resource group and service principal, you create a s
    :::image type="content" source="../media/5-create-service-connection-principal-type.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Create service connection' page, with the 'Service principal (manual)' authentication method highlighted." border="true":::
 
    > [!NOTE]
-   > It's a good idea to manually create service principals like you're doing here, rather than using the automatic service principal creation in Azure Pipelines. This is because, when Azure Pipelines creates a service principal for you, it grants it permissions to your whole subscription. It's more secure to grant permissions at a narrower scope like a resource group, and that requires you use the manual creation process.
+   > It's a good idea to manually create service principals like you're doing here, rather than using the automatic service principal creation in Azure Pipelines. When you use the automatic method, Azure Pipelines grants the service principal permissions to your whole subscription. It's more secure to grant permissions at a narrower scope like a resource group, and that requires you to use the manual creation process like you're doing here.
 
 1. Enter the **Subscription ID** and **Subscription name** that you saved earlier.
 
@@ -194,7 +194,7 @@ Now that you've created the resource group and service principal, you create a s
    Azure Pipelines verifies it can access your Azure subscription, and displays _Verification succeeded_.
 
    > [!NOTE]
-   > If the verification doesn't succeed, check you copied the right details for the service principal, subscription, and tenant. Wait a few minutes to allow time for Azure's role assignments to replicate globally, and then try again.
+   > If the verification doesn't succeed, check that you copied the right details for the service principal, subscription, and tenant. Wait a few minutes to allow time for Azure's role assignments to replicate globally, and then try again.
 
 1. In **Service connection name**, enter _ToyWebsite_. Ensure **Grant access permission to all pipelines** is checked.
 

@@ -21,5 +21,9 @@ steps:
     azureSubscription: ResearchSubscription
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
-    inlineScript: 'az deployment group create --resource-group ResearchDevelopment --template-file deploy/main.bicep -p environmentType=Production'
+    inlineScript: |
+      az deployment group create \
+        --resource-group ResearchDevelopment \
+        --template-file deploy/main.bicep \
+        --parameters environmentType=Production
 ```

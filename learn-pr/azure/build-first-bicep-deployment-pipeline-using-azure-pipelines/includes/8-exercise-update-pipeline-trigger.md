@@ -1,4 +1,4 @@
-You have a pipeline that can execute a Bicep deployment to your Azure environment. In this exercise you'll make the pipeline run automatically whenever a file changes on your **main** branch. You'll use the updated pipeline to make a change that your colleague requested - they want the website app to be always running, and they asked you to configure the App Service Always On feature for the site.
+You previously created a pipeline that can execute a Bicep deployment to your Azure environment. In this exercise you'll make the pipeline run automatically whenever a file changes on your **main** branch. You'll use the updated pipeline to deploy a change that your colleague requested - they want the website app to be always running, and they asked you to configure the App Service Always On feature for the site.
 
 During the process, you'll:
 
@@ -40,7 +40,7 @@ During the process, you'll:
 
    ```bash
    git add .
-   git commit -m 'Configure app AlwaysOn setting'
+   git commit -m 'Configure app Always On setting'
    git push
    ```
 
@@ -48,7 +48,7 @@ During the process, you'll:
 
 1. In Azure DevOps, select the **Pipelines** menu, and select your pipeline. Select the most recent run.
 
-1. Notice the pipeline automatically triggered because you pushed your changes to a branch that the branch trigger monitors. If the pipeline is still running, wait a minute and refresh it. The pipeline run is displayed.
+1. Notice the pipeline automatically ran. This is because you pushed your changes to a branch that the branch trigger monitors. If the pipeline is still running, wait a minute and refresh it. The pipeline run is displayed.
 
    :::image type="content" source="../media/8-failed.png" alt-text="Screenshot of the Azure DevOps interface showing the failed pipeline run." border="true":::
 
@@ -65,7 +65,7 @@ During the process, you'll:
 
 ## Fix the Bicep file and see the pipeline triggered again
 
-You speak to your colleague and decide that the Always On setting only needs to be applied for your production environment. Here, you fix the issue that caused your deployment failure by applying the new rule you've decided on.
+You speak to your colleague about the failed deployment. You decide together that the Always On setting only needs to be applied for your production environment. Here, you fix the issue that caused your deployment failure by applying the new rule you've decided on.
 
 1. In Visual Studio Code, add new properties for each environment type to the `environmentConfigurationMap` variable:
 

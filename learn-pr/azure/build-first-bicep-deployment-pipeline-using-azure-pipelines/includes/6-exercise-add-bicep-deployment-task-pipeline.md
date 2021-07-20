@@ -1,4 +1,4 @@
-Now that you have a basic pipeline, and you've configured your Azure and Azure Pipelines environments to connect together, you're ready to deploy your website's Bicep file to Azure from your pipeline.
+You've created a basic pipeline, and you've configured your Azure and Azure Pipelines environments to connect together. Now you're ready to deploy your website's Bicep file to Azure from your pipeline.
 
 In this exercise, you'll:
 
@@ -9,11 +9,11 @@ In this exercise, you'll:
 
 ## Add your website's Bicep file to the Git repository
 
-You've already prepared your website's Bicep file, which can be used to deploy different configurations of the website resources depending on the situation.
+You've already prepared your website's Bicep file, which can be used to deploy different configurations of the website resources depending on the environment and configuration. Here, you add your Bicep file to your repository.
 
 1. Open the Visual Studio Code **Explorer**.
 
-1. In the _deploy_ folder, create a new file named _main.bicep_. Make sure you create inside the _deploy_ folder and not at the root of the repository:
+1. In the _deploy_ folder, create a new file named _main.bicep_. Make sure you create the file inside the _deploy_ folder and not at the root of the repository:
 
    :::image type="content" source="../media/6-vs-code-main-bicep.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the main.bicep file highlighted and located in the deploy folder." border="true":::
 
@@ -120,7 +120,7 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 
 Now you're ready to run your pipeline!
 
-Your template includes a storage account, which your website team uses to store toy instruction manuals. Because you're still testing your environments, you don't need to deploy the storage account every time you deploy the website, so you made this a parameter. Here, you run the pipeline and override the deployment so that it doesn't deploy the storage account this time.
+Your template includes a storage account, which your website team uses to store toy instruction manuals. Because you're still testing your environments, you don't need to deploy the storage account every time you deploy the website. So you created a Bicep parameter to control whether the storage account is deployed. Here, you run the pipeline and override the deployment so that it doesn't deploy the storage account this time.
 
 1. Select **Run**.
 

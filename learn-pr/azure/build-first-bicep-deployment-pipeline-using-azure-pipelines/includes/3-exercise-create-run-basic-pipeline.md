@@ -11,7 +11,7 @@ In this exercise, you'll:
 
 1. In a browser, navigate to [dev.azure.com](https://dev.azure.com?azure-portal=true). Sign in or create a new account.
 
-1. If you're creating a new account, follow the prompts to create an Azure DevOps organization. Azure DevOps then asks you to create a new project. Continue to the next step.
+1. If you're creating a new account, follow the prompts to create an Azure DevOps organization. Azure DevOps then asks you to create a new project. Continue to the next step to configure the project.
 
    If you signed in to an existing Azure DevOps organization, select the **New project** button to create a new project.
 
@@ -62,6 +62,16 @@ When you work with Azure Repos from Visual Studio Code on macOS, you need to use
 1. Visual Studio Code prompts you to open the repository location. Select **Open**.
 
    :::image type="content" source="../media/3-open-cloned-repo.png" alt-text="Screenshot of the Visual Studio Code interface with a prompt to open the cloned repository, and the Open button highlighted." border="true":::
+
+## Install the Azure Pipelines Visual Studio Code extension
+
+Microsoft publishes an Azure Pipelines extension for Visual Studio Code, which helps you to write the pipeline YAML files. It's a good idea to install this extension so that your YAML files are validated as you work.
+
+1. Open **Extensions** in Visual Studio Code by selecting **View** > **Extensions**.
+
+1. In the **Search** field, enter _Azure Pipelines_, and find the Azure Pipelines extension published by Microsoft. Select the **Install** button.
+
+   :::image type="content" source="../media/3-vs-code-extension.png" alt-text="Screenshot of the Visual Studio Code Extensions, with the search field displaying 'Azure Pipelines', and the Install button for the Microsoft Azure Pipelines extension highlighted." border="true":::
 
 ## Create a YAML pipeline definition
 
@@ -124,11 +134,13 @@ You have created a pipeline definition. Here, you register the pipeline with Azu
 
    Azure Pipelines creates the pipeline and starts a first run.
 
-## Verify the pipeline execution
+## Verify the pipeline run
 
-1. Once the pipeline run starts, a page is displayed with information about this execution.
+1. Once the pipeline run starts, a page is displayed with information about this run.
 
    :::image type="content" source="../media/3-pipeline-run-queued.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline, with the job in the queued state." border="true":::
+
+   Each pipeline run includes an identifier. You can use this when you need to refer to the pipeline run, and to help find a specific pipeline run.
 
    Notice the job status initially is displayed as **Queued**. It can take some time for your pipeline to start. Your job is added to a queue for an agent, and once an agent is available, Azure Pipelines assigns the agent and starts the job. The job status then becomes **Running**.
 
@@ -148,7 +160,7 @@ You have created a pipeline definition. Here, you register the pipeline with Azu
 
    :::image type="content" source="../media/3-pipeline-job-checkout-log.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline job log, with the 'Checkout' step highlighted." border="true":::
 
-   The logs for each step provide a lot of detail on exactly what happened. In this case, the repository's contents was downloaded to the agent.
+   The logs for each step provide a lot of detail on exactly what happened. In this case, the repository's contents was downloaded from Azure Repos to the agent's file system.
 
 1. Select the **Placeholder step** step.
 
