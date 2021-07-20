@@ -1,4 +1,4 @@
-You built your first F# application. In doing so, you were able to experience why F# is a great language to develop applications.
+You built your first F# console application. In doing so, you were able to become familiar with F# syntax and experience why F# is a great choice for building applications.
 
 After setting up your development environment, you:
 
