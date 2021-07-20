@@ -44,11 +44,11 @@ Since we are using Node.js, all of the required dependencies are listed in the *
 
 1. Within the terminal, run `cd starter-code` to change the directory into the **starter-code** folder.
 
-    :::image type="content" source="../media/terminal-change-directory.PNG" alt-text="Screenshot of the terminal with the C D starter code command.":::
+    :::image type="content" source="../media/terminal-change-directory.png" alt-text="Screenshot of the terminal with the C D starter code command.":::
 
 1. Run `npm install` in the terminal to install all dependencies for the project.
 
-    :::image type="content" source="../media/terminal-npm-install.PNG" alt-text="Screenshot of the terminal with the N P M install command.":::
+    :::image type="content" source="../media/terminal-npm-install.png" alt-text="Screenshot of the terminal with the N P M install command.":::
 
 1. After the command finishes running, you should see a folder named *node_modules* created within the *starter-code* folder.
 
@@ -150,7 +150,7 @@ Let's create a Speech Recognizer using the Azure Speech JavaScript SDK.
     };
     ```
 
-    Since the transcribed text might contain uppercase letters and punctuations, we also had to transform the text (so that it only contains lowercase alphanumeric letters) before performing the comparison.
+    Since the transcribed text might contain uppercase letters and punctuation, we also had to transform the text (so that it only contains lowercase alphanumeric letters) before performing the comparison.
 
 1. In addition to the dragon 3D model, we'll also render a magic circle 3D model for better visual effect. The 3D models for the dragon and the magic circle are stored in the *env* object. Let's add the code to have the magic circle and the dragon models fade in, one after another. Also, let's stop the speech recognition after the dragon has been summoned.
 
@@ -224,12 +224,12 @@ Now that the code is ready, it is time to verify that the web application works 
 
 1. In your VSCode terminal, run `npm start`.
 
-    :::image type="content" source="../media/terminal-npm-start.PNG" alt-text="Screenshot of the N P M start command in a Visual Studio Code terminal.":::
+    :::image type="content" source="../media/terminal-npm-start.png" alt-text="Screenshot of the N P M start command in a Visual Studio Code terminal.":::
 
 1. Once the application finishes compiling, open your browser and head to **localhost:8080**.
 1. If the app loads successfully, you will see an empty scene with a dark background.
 
-    :::image type="content" source="../media/empty-scene.PNG" alt-text="An empty Babylon J S scene with only the background skybox is displayed in the browser.":::
+    :::image type="content" source="../media/empty-scene.png" alt-text="An empty Babylon J S scene with only the background skybox is displayed in the browser.":::
 
     If it does not load successfully, you will see a white screen. Make sure your createScene() function matches the snippet given in the section above.
 

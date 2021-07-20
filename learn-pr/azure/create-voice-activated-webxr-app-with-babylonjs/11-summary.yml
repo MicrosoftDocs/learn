@@ -5,9 +5,9 @@ metadata:
   unitType: summary
   title: Summary
   description: Summarizes the module and new concepts, explains cleaning up Azure resources
-  ms.date: 6/22/2021
-  author: JING1201
-  ms.author: t-jinglow
+  ms.date: 07/20/2021
+  author: aprilspeight
+  ms.author: apspeigh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

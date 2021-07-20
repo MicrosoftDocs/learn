@@ -7,9 +7,9 @@ metadata:
   title: Exercise - Deploy your Babylon.js project to the public web
   description: Deploy your Babylon.js project to the web using Azure Blob Storage Static Website Hosting
   zone_pivot_groups: webxr-vr-ar
-  ms.date: 6/22/2021 
-  author: JING1201 
-  ms.author: t-jinglow 
+  ms.date: 07/20/2021 
+  author: aprilspeight 
+  ms.author: apspeigh 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

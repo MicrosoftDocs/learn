@@ -6,10 +6,10 @@ metadata:
   title: Exercise - Enable WebXR support in your Babylon.js project
   description: Add various WebXR features to your Babylon.js project
   zone_pivot_groups: webxr-vr-ar
-  ms.date: 6/22/2021 
-  author: JING1201 
-  ms.author: t-jinglow 
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.date: 07/20/2021 
+  author: aprilspeight 
+  ms.author: apspeigh 
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8
 content: |

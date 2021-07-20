@@ -5,9 +5,9 @@ metadata:
   unitType: learning-content
   title: Azure Speech-to-text Javascript SDK
   description: Learn about important methods for Speech-to-text in Azure Speech Javascript SDK
-  ms.date: 6/22/2021 
-  author: JING1201 
-  ms.author: t-jinglow 
+  ms.date: 07/20/2021 
+  author: aprilspeight 
+  ms.author: apspeigh 
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

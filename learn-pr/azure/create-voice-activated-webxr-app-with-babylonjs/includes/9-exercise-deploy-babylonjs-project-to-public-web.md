@@ -15,7 +15,7 @@ Before jumping into hosting the website, we must first package our Node.js web p
 1. Within the terminal, make sure that you are in the **starter-code** folder, which should be the folder that you edited.
 1. Run `npm run-script build` in the terminal to package the project into static files.
 
-    :::image type="content" source="../media/terminal-npm-build.PNG" alt-text="Screenshot of the N P M build command in a Visual Studio Code terminal.":::
+    :::image type="content" source="../media/terminal-npm-build.png" alt-text="Screenshot of the N P M build command in a Visual Studio Code terminal.":::
 
 1. After the command finishes running, you should see a folder named *dist* created in the root folder of the project.
 
@@ -49,7 +49,7 @@ Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com
     |**Performance** | Standard | This option decides the type of disk storage used to hold the data in the Storage account. Standard uses traditional hard disks, and Premium uses solid-state drives (SSD) for faster access. |
     |**Redundancy** | Geo-redundant storage (GRS) | In the case of a regional unavailability, the data in the storage account will still be present and accessible thanks to redundancy in other regions. Keep "Make read access to data available in the event of regional unavailability" checked. |
 
-    :::image type="content" source="../media/create-storage-account.PNG" alt-text="Screenshot of values for creating a storage account on Azure portal":::
+    :::image type="content" source="../media/create-storage-account.png" alt-text="Screenshot of values for creating a storage account on Azure portal":::
 
 1. Select **Review + Create**.
 
@@ -74,7 +74,7 @@ Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com
 
 1. Toggle the Static website switch to **Enabled**, and put **index.html** as the **Index document name**.
 
-    :::image type="content" source="../media/static-website-settings.PNG" alt-text="Settings page for the static website hosted using Azure Blob Storage":::
+    :::image type="content" source="../media/static-website-settings.png" alt-text="Settings page for the static website hosted using Azure Blob Storage":::
 
 1. Select **Save**.
 1. After the settings are applied, you will see the default URLs provided for your website. Copy and save one of the URLs somewhere so that we can access the website later.
@@ -93,7 +93,7 @@ Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com
 
 1. Upload the source files within the *dist* folder (excluding the **assets** folder).
 
-    :::image type="content" source="../media/source-files-uploaded.PNG" alt-text="Screenshot of the website source files uploaded to blob storage.":::
+    :::image type="content" source="../media/source-files-uploaded.png" alt-text="Screenshot of the website source files uploaded to blob storage.":::
 
 1. Next, let's upload the *assets* folder. Select **New Folder** and name the folder **assets**.
 
@@ -103,7 +103,7 @@ Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com
 
 1. In this directory, upload the files from your local *assets* folder.
 
-    :::image type="content" source="../media/uploaded-assets.PNG" alt-text="A screenshot of the Storage Explorer page with the list of assets files uploaded.":::
+    :::image type="content" source="../media/uploaded-assets.png" alt-text="A screenshot of the Storage Explorer page with the list of assets files uploaded.":::
 
 ## Access the website from your device
 
@@ -124,7 +124,7 @@ The static website for the amusement park application is live on the public web!
 
 1. Say "Go dragon" and watch the dragon appears!
 
-    :::image type="content" source="../media/vr-dragon.PNG" alt-text="A screenshot of the dragon and magic circle rendered in the Virtual Reality Space.":::
+    :::image type="content" source="../media/virtual-reality-dragon.png" alt-text="A screenshot of the dragon and magic circle rendered in the Virtual Reality Space.":::
 
 ::: zone-end
 
@@ -143,6 +143,6 @@ The static website for the amusement park application is live on the public web!
 
 1. Say "Go dragon" and watch the dragon appears!
 
-    :::image type="content" source="../media/ar-dragon.jpg" alt-text="A screenshot of the dragon and magic circle rendered in the Augmented Reality Space.":::
+    :::image type="content" source="../media/augmented-reality-dragon.jpg" alt-text="A screenshot of the dragon and magic circle rendered in the Augmented Reality Space.":::
 
 ::: zone-end

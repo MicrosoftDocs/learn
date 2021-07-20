@@ -5,10 +5,10 @@ metadata:
   unitType: learning-content 
   title: Static Website Hosting using Azure Blob Storage
   description: Learn about Azure Blob Storage and its support for hosting static websites
-  ms.date: 6/22/2021 
-  author: JING1201 
-  ms.author: t-jinglow 
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.date: 07/20/2021 
+  author: aprilspeight 
+  ms.author: apspeigh 
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |

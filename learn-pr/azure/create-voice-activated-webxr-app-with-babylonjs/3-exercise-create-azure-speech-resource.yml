@@ -6,9 +6,9 @@ metadata:
   unitType: exercise
   title: Exercise - Create an Azure Speech Resource
   description: Create an Azure Speech Resource and retrieve the subscription key
-  ms.date: 6/22/2021
-  author: JING1201
-  ms.author: t-jinglow
+  ms.date: 07/20/2021
+  author: aprilspeight
+  ms.author: apspeigh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
