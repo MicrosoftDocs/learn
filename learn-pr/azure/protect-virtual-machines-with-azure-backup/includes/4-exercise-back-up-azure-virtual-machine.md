@@ -1,8 +1,8 @@
-Your company is running a combination of Windows and Linux workloads. You've been asked to prove that Azure Backup is a good fit for both kinds of virtual machines. By using a combination of the Azure CLI and the Azure portal, you'll help protect both kinds of virtual machines with Azure Backup.
+Your company is running a combination of Windows and Linux workloads. You've been asked to prove that Azure Backup is a good fit for both kinds of virtual machines (VMs). By using a combination of the Azure CLI and the Azure portal, you'll help protect both kinds of VMs with Azure Backup.
 
-Azure Backup can be quickly enabled for virtual machines in Azure. You can enable Azure Backup from the portal, from the Azure CLI, or by using PowerShell commands.
+Azure Backup can be quickly enabled for VMs in Azure. You can enable Azure Backup from the portal, from the Azure CLI, or by using PowerShell commands.
 
-In this exercise, you'll create a virtual machine, set up a backup, and start a backup.
+In this exercise, you'll create a VM, set up a backup, and start a backup.
 
 > [!NOTE]
 > This exercise is optional. If you don't have an Azure account, you can read through the instructions so you understand how to back up virtual machines by using Azure Backup.
@@ -78,14 +78,12 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
     ![Screenshot that shows selecting a virtual machine.](../media/4-portal-select-linux-vm.png)
 
-1. In the left menu pane, scroll down to **Operations**, select **Backup**. The **NW-RHEL01 | Backup** pane appears.
+1. In the middle menu pane, scroll down to **Operations**, and select **Backup**. The **Backup** pane for NW-RHEL01 appears.
 
-1. Under the **Summary** section, enter the following information to create a backup.
+1. Under the **Summary** section, ensure the following information exists for creating a backup.
 
-    | | |
-    |-|-|
-    | **Recovery services vault** | Enter **azure-backup** for the name. |
-    | **Backup policy** | Select **DailyPolicy**, which is a daily backup at 12:00 PM UTC, and a retention range of 180 days. |
+    - **Recovery services vault**: **azure-backup** for the name.
+    - **Backup policy**: **DailyPolicy**, which is a daily backup at 12:00 PM UTC, and a retention range of 180 days.
 
     ![Screenshot that shows the backup options.](../media/4-portal-azure-backup.png)
 
@@ -93,7 +91,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
     ![Screenshot that shows "Backup now."](../media/4-portal-backup-now.png)
 
-    The **Backup Now** pane appears.
+    The **Backup Now** pane for NW-RHEL01 appears.
 
 1. Select **OK**.
 
@@ -109,7 +107,7 @@ The command can take a few minutes to complete. Wait for it to finish before mov
         --policy-name DefaultPolicy
     ```
 
-1. Monitor the progress of the setup by using the Azure CLI.
+1. Monitor the progress of the setup using the Azure CLI.
 
     ```azurecli
     az backup job list \
@@ -152,11 +150,11 @@ The command can take a few minutes to complete. Wait for it to finish before mov
 
 1. Select the **NW-APP01** virtual machine.
 
-1. In the left menu pane, under **Operations**, select **Backup**.
-
-    ![Screenshot of the Backup page after it has been set up.](../media/4-portal-backup-setup.png)
+1. In the middle menu pane, under **Operations**, select **Backup**.
 
     **Last backup status** displays the current status of the backup.
+
+    ![Screenshot of the Backup page after it has been set up.](../media/4-portal-backup-setup.png)
 
 ### View the status of backups in the Recovery Services vault
 
