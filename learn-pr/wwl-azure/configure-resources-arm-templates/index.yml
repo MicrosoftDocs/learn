@@ -15,7 +15,8 @@ abstract: |
   - Identify the Azure template schema components.
   - Specify Azure template parameters.
   - Locate and use Azure QuickStart templates.
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
