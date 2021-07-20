@@ -44,7 +44,7 @@ units:
 - learn.create-voice-activated-webxr-app-with-babylonjs.exercise-call-speech-to-text-api
 - learn.create-voice-activated-webxr-app-with-babylonjs.webxr-support-in-babylonjs
 - learn.create-voice-activated-webxr-app-with-babylonjs.exercise-enable-webxr-babylonjs-project
-- learn.create-voice-activated-webxr-app-with-babylonjs.static-website-hosting-using-azure-blob-storage
+- learn.create-voice-activated-webxr-app-with-babylonjs.static-website-hosting-with-azure-blob-storage
 - learn.create-voice-activated-webxr-app-with-babylonjs.exercise-deploy-babylonjs-project-to-public-web
 - learn.create-voice-activated-webxr-app-with-babylonjs.knowledge-check
 - learn.create-voice-activated-webxr-app-with-babylonjs.summary

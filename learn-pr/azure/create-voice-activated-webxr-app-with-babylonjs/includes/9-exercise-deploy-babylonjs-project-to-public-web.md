@@ -14,9 +14,6 @@ Before jumping into hosting the website, we must first package our Node.js web p
 
 1. Within the terminal, make sure that you are in the **starter-code** folder, which should be the folder that you edited.
 1. Run `npm run-script build` in the terminal to package the project into static files.
-
-    :::image type="content" source="../media/terminal-npm-build.png" alt-text="Screenshot of the N P M build command in a Visual Studio Code terminal.":::
-
 1. After the command finishes running, you should see a folder named *dist* created in the root folder of the project.
 
 ## Create a storage account
@@ -60,7 +57,7 @@ Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com
 > [!NOTE]
 > It can take a few seconds to get the storage account created and ready for use. A notification will appear after deployment is complete.
 
-## Enable Static Website Hosting
+## Enable static website hosting
 
 1. On the Azure portal menu or from the **Home** page, select **All resources**.
 

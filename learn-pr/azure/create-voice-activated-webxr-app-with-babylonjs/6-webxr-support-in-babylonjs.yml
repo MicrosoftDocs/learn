@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-voice-activated-webxr-app-with-babylonjs.webxr-support-in-babylonjs
-title: WebXR Support in Babylon.js
+title: WebXR support in Babylon.js
 metadata:
   unitType: learning-content
-  title: WebXR Support in Babylon.js
+  title: WebXR support in Babylon.js
   description: Learn about the WebXR support and features provided by Babylon.js framework
   ms.date: 07/20/2021 
   author: aprilspeight 

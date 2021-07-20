@@ -16,6 +16,6 @@ The Speech-to-text service under Azure Speech Services can be used to transcribe
 
 However, several options exist for customizing the transcription model. You can create a customized model by using the Custom Speech service. There, you can upload your own test data and train a unique model based on the set of data. Or, you can add certain phrases into the Phrase List to help the model identify those phrases in your use case more accurately.
 
-## Privacy and Security
+## Privacy and security
 
 Azure Speech Services is certified by SOC, FedRAMP, PCI DSS, HIPAA, HITECH, and ISO. Both audio input and transcription data are not logged, and all custom speech data and models are encrypted when saved in storage. You can also view or delete any custom speech data or models at any time.

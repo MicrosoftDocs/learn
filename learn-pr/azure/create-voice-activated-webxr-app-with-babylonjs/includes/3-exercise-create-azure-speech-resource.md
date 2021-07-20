@@ -45,6 +45,6 @@ A notification will appear after deployment is complete. Your new Speech service
 
     :::image type="content" source="../media/select-keys-and-endpoint.png" alt-text="A screenshot of the Speech service resource page. There's a red box around the menu item Keys and Endpoint.":::
 
-In later exercises, you'll need the values for **KEY 1** and **LOCATION** as you call the Speech-to-text API using the Javascript SDK.
+In later exercises, you'll need the values for **KEY 1** and **LOCATION** as you call the Speech-to-text API using the JavaScript SDK.
 
 :::image type="content" source="../media/key-endpoint-location.png" alt-text="A screenshot of the key and endpoints for the speech service. There's a red box around KEY 1 and LOCATION.":::

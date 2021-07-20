@@ -4,7 +4,7 @@ Recall that the amusement park company wanted the application to be a Virtual Re
 
 Here, you have a choice of adding WebXR support in the Virtual Reality mode or the Augmented Reality mode based on your preference. Make sure to select the tab of the path that you prefer before continuing to the exercise.
 
-## Enable WebXR Support
+## Enable WebXR support
 
 ::: zone pivot="vr"
 

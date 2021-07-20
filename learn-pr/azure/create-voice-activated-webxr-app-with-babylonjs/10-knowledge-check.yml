@@ -13,7 +13,7 @@ metadata:
 durationInMinutes: 3
 content: |
 quiz:
-  title: Knowledge check
+  title: Check your knowledge
   questions:
   - content: "Which of the following is a method that allows developers to train a speech-to-text model using their own dataset?"
     choices:

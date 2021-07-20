@@ -4,7 +4,7 @@ In the amusement park application, we need to use a speech-to-text service to re
 
 Here, you will use the Azure Speech JavaScript SDK to integrate the Azure Speech-to-text service into the amusement park application.
 
-## Clone the GitHub Repository
+## Clone the GitHub repository
 
 Recall that your teammate has already set up a Babylon.js project with all of the necessary assets imported into the Babylon.js scene. Let's clone the repository that contains their work so far.
 
@@ -43,13 +43,7 @@ Since we are using Node.js, all of the required dependencies are listed in the *
     :::image type="content" source="../media/select-new-terminal.png" alt-text="Screenshot of the Terminal dropdown menu in Visual Studio Code. The New Terminal option is surrounded by a red box.":::
 
 1. Within the terminal, run `cd starter-code` to change the directory into the **starter-code** folder.
-
-    :::image type="content" source="../media/terminal-change-directory.png" alt-text="Screenshot of the terminal with the C D starter code command.":::
-
 1. Run `npm install` in the terminal to install all dependencies for the project.
-
-    :::image type="content" source="../media/terminal-npm-install.png" alt-text="Screenshot of the terminal with the N P M install command.":::
-
 1. After the command finishes running, you should see a folder named *node_modules* created within the *starter-code* folder.
 
 ## Import dependencies
@@ -223,9 +217,6 @@ Let's create a Speech Recognizer using the Azure Speech JavaScript SDK.
 Now that the code is ready, it is time to verify that the web application works as intended. We will need to make sure that the dragon and magic circle models fade in when users say "go dragon" to the application.
 
 1. In your VSCode terminal, run `npm start`.
-
-    :::image type="content" source="../media/terminal-npm-start.png" alt-text="Screenshot of the N P M start command in a Visual Studio Code terminal.":::
-
 1. Once the application finishes compiling, open your browser and head to **localhost:8080**.
 1. If the app loads successfully, you will see an empty scene with a dark background.
 
