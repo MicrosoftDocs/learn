@@ -135,7 +135,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. Add the query string value `&name=Azure` to the end of the URL. Your resulting URL should resemble the following example:
  
-    https://example.azurewebsites.net/api/HttpTrigger1?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&name=Azure 
+    'https://example.azurewebsites.net/api/HttpTrigger1?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&name=Azure' 
  
 1. Press <kbd>Enter</kbd> to execute the request in your browser. You should see a response similar to the following example returned by your function.
 
@@ -229,7 +229,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. Add the query string value `&name=Azure` to the end of the URL. Your resulting URL should resemble the following example:
  
-    https://example.azurewebsites.net/api/HttpTrigger1?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&name=Azure 
+    'https://example.azurewebsites.net/api/HttpTrigger1?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&name=Azure' 
 
 1. Press <kbd>Enter</kbd> to execute the request in your browser.
 
