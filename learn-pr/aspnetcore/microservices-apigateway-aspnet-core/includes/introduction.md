@@ -7,7 +7,7 @@ In this module, you will:
 - Deploy an existing ASP.NET Core microservices e-commerce app to AKS.
 - Implement a BFF pattern by using .NET.
 - Redeploy the app to an instance of AKS configured to use [Azure Application Gateway](/azure/application-gateway/overview).
-- Expose a BFF API outside the Kubernetes cluster by using the [Application Gateway ingress controller (AGIC)](/azure/application-gateway/ingress-controller-overview).
+- Expose a BFF API outside the Kubernetes cluster by using [Application Gateway Ingress Controller (AGIC)](/azure/application-gateway/ingress-controller-overview).
 
 ## Learning objectives
 

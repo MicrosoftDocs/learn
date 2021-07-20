@@ -29,7 +29,7 @@ The decoupling aspect also makes it easy to route request versions to different 
 
 ## Backend for Frontend pattern
 
-An API gateway solves several problems, but there's still more to be done. Each client app might have a context that imposes some specific constraints. For example, a mobile phone has a more constrained internet connection than a desktop computer's connection. The phone also has a much smaller screen size. It might be desirable to have a streamlined, low-bandwidth API for mobile use, and a full-featured API for desktop use.
+An API gateway solves several problems, but there's still more to be done. Each client app might have a context that imposes some specific constraints. For example, a mobile phone has a more constrained internet connection than a desktop computer. The phone also has a much smaller screen size. It might be desirable to have a streamlined, low-bandwidth API for mobile use, and a full-featured API for desktop use.
 
 This problem is where the BFF pattern can help. The BFF pattern supplies a per-device-type API customized for the specific context, as shown in the following image.
 
@@ -45,14 +45,14 @@ The web aggregator works as a broker, and it has a central role in the BFF patte
 
 ### Explore an aggregator implementation in eShopOnContainers
 
-In the eShop app, the *Web.Shopping.HttpAggregator* project is a web aggregator. The BFF takes care of all the shopping-related activities for the web client. For example, `AddBasketItemAsync()` method in the `BasketController` class does the following tasks:
+In the eShop app, the *Web.Shopping.HttpAggregator* project is a web aggregator. The BFF takes care of all the shopping-related activities for the web client. For example, the `AddBasketItemAsync()` method in the `BasketController` class:
 
 - Fetches an item from *Catalog.API*.
 - Gets current basket details from *Basket.API*.
 - Updates the current basket status with the new catalog item.
-- Updates basket of *Basket.API*.
+- Updates the basket of *Basket.API*.
 
-As shown, merging these operations into a single method hides the complexity from the client SPA. You can review the detailed implementation in the *src\ApiGateways\Aggregators\Web.Shopping.HttpAggregator* folder.
+Merging these operations into a single method hides the complexity from the client SPA. You can review the detailed implementation in the *src\ApiGateways\Aggregators\Web.Shopping.HttpAggregator* folder.
 
 ### Implement an aggregator in eShopOnContainers
 
@@ -63,17 +63,17 @@ Let's assume you're an admin for the eShop app. At the end of each day, you want
 
 The aggregator will merge this information into a single response to the client. 
 
-The eShop app with the aggregator implemented as *Web.Sales.HttpAggregator* is illustrated below:
+The following diagram illustrates the eShop app with the aggregator implemented as *Web.Sales.HttpAggregator*.
 
-:::image type="content" source="../media/api-gateway-bff-nginx-ingress.png" alt-text="eShopOnContainers architecture with WebSalesAgg" lightbox="../media/api-gateway-bff-nginx-ingress.png":::
+:::image type="content" source="../media/api-gateway-bff-nginx-ingress.png" alt-text="Diagram that shows the eShopOnContainers architecture with WebSalesAgg." lightbox="../media/api-gateway-bff-nginx-ingress.png":::
 
 > [!NOTE]
-> In this implementation, there isn't a UI to consume the WebSales aggregator. You will use the Swagger UI as a client for testing.
+> In this implementation, there isn't a UI to consume the Web Sales aggregator. You'll use the Swagger UI as a client for testing.
 
-The *Web.Sales.HttpAggregator* Web API project will have the following components:
+The *Web.Sales.HttpAggregator* Web API project has the following components:
 
 - Class `SalesController` annotated with the authorized attribute, requiring the `Admin` role.
-- Method `SalesController.GetSalesOfTodayByBrand()`, which fetches catalog brand information from the *Catalog.API* and sales data from the *Ordering.API*.
+- Method `SalesController.GetSalesOfTodayByBrand()`, which fetches catalog brand information from *Catalog.API* and sales data from *Ordering.API*.
 - Method `SalesController.GetSalesData()`, which aggregates the sales based on the brand names.
 
 In the next unit, you'll configure and deploy `Web.Sales.HttpAggregator` to the existing Kubernetes cluster.

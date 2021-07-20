@@ -3,8 +3,8 @@ In this exercise, you'll deploy an instance of Azure Application Gateway with an
 In this exercise, you will:
 
 - Create an Azure Application Gateway instance.
-- Enable the Application Gateway ingress controller (AGIC) in the Azure Kubernetes Service (AKS) cluster.
-- Configure the existing ingresses to use the AGIC.
+- Enable Application Gateway Ingress Controller (AGIC) in the Azure Kubernetes Service (AKS) cluster.
+- Configure the existing ingresses to use AGIC.
 - Deploy the application with the updated ingresses.
 - Redeploy the affected apps to the cluster.
 - Add the *websalesagg* client redirect URIs in *IdentityDb*.
@@ -34,9 +34,9 @@ Note the Application Gateway public IP address that's exported as `ESHOP_APPGATE
 > [!NOTE]
 > The script takes several minutes to finish.
 
-## Enable the AGIC in the AKS cluster
+## Enable AGIC in the AKS cluster
 
-You've created an instance of the Azure Application Gateway service. Now enable the AGIC in the cluster by using the following command:
+You've created an instance of the Azure Application Gateway service. Now enable AGIC in the cluster by using the following command:
 
 ```bash
 ./deploy/k8s/enable-agic-adon.sh
@@ -44,12 +44,12 @@ You've created an instance of the Azure Application Gateway service. Now enable 
 
 The script does the following tasks:
 
-- Enables the AGIC as an add-on feature in the existing Kubernetes cluster.
+- Enables AGIC as an add-on feature in the existing Kubernetes cluster.
 - Enables bidirectional peering. This peering connects the existing virtual network of the AKS cluster and the newly created virtual network of the Application Gateway cluster.
 
-## Configure ingresses to use the AGIC
+## Configure ingresses to use AGIC
 
-The `kubernetes.io/ingress.class: azure/application-gateway` annotation must be included in your ingress manifest YAML files before the AGIC can use them. In some scenarios, if the ingress needs to do URL rewriting, you must include the `appgw.ingress.kubernetes.io/backend-path-prefix` annotation.
+The `kubernetes.io/ingress.class: azure/application-gateway` annotation must be included in your ingress manifest YAML files before AGIC can use them. In some scenarios, if the ingress needs to do URL rewriting, you must include the `appgw.ingress.kubernetes.io/backend-path-prefix` annotation.
 
 >[!TIP]
 > The ingress YAML for the *Seq* app is a good example of this. It's available under the */deploy/k8s/helm-ingress/seq/templates* directory.
@@ -81,7 +81,7 @@ spec:
           servicePort: 80
 ```
 
-Along with the *websalesagg* service, you need to update the NGINX configuration for each service to make it available for the AGIC. All of the service configurations in the `helm-simple` directory require changes. For simplicity, you'll copy files from the `helm-ingress` folder. These files have been preconfigured for you. Run the following command:
+Along with the *websalesagg* service, you need to update the NGINX configuration for each service to make it available for AGIC. All of the service configurations in the `helm-simple` directory require changes. For simplicity, you'll copy files from the `helm-ingress` folder. These files have been preconfigured for you. Run the following command:
 
 ```bash
 cp -r deploy/k8s/helm-ingress/* deploy/k8s/helm-simple

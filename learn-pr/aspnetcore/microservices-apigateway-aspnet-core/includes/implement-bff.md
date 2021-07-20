@@ -256,7 +256,7 @@ The setup script created an Azure Container Registry instance for you. Push your
 
 Now that your modified images are published, you can deploy the affected containers.
 
-1. Fetch the external IP address of the existing Nginx ingress load balancer:
+1. Fetch the external IP address of the existing NGINX ingress load balancer:
 
     ```bash
     kubectl get svc -n ingress-nginx 
@@ -264,12 +264,12 @@ Now that your modified images are published, you can deploy the affected contain
 
     The following image shows an example.
 
-    :::image type="content" source="../media/nginx-ingress-external-ip.png" alt-text="Screenshot that shows the Nginx ingress external load balancer." lightbox="../media/nginx-ingress-external-ip.png":::
+    :::image type="content" source="../media/nginx-ingress-external-ip.png" alt-text="Screenshot that shows the NGINX ingress external load balancer." lightbox="../media/nginx-ingress-external-ip.png":::
 
     > [!NOTE]
     > In the next unit, you'll learn more about the ingress controllers in Kubernetes.
 
-1. Replace `{nginx-ingress-ip-address}` with the external IP address of the Nginx ingress controller. Then run the following command to deploy the affected services to the cluster:
+1. Replace `{nginx-ingress-ip-address}` with the external IP address of the NGINX ingress controller. Then run the following command to deploy the affected services to the cluster:
 
     ```bash
     ./deploy/k8s/deploy-affected-services.sh --ipAddress {nginx-ingress-ip-address}
