@@ -3,7 +3,7 @@ There are several steps to configuring Azure backup of on-premises files and fol
 > [!NOTE]
 > The Backup agent can be deployed on any Windows Server VM or physical machine.
 
-:::image type="content" source="../media/file-folder-backup.png" alt-text="Diagram showing the implementation steps discussed in the topic.":::
+:::image type="content" source="../media/AZ104_File_and_Folder_Backup-baec61d6.png" alt-text="Diagram showing the implementation steps discussed in the topic.":::
 
 
 1.  **Create the recovery services vault**. Within your Azure subscription, you will need to create a recovery services vault for the backups.
