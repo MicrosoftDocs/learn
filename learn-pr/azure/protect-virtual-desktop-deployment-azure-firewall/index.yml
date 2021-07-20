@@ -26,7 +26,7 @@ roles:
 products:
 - azure
 - azure-firewall
-- windows-virtual-desktop
+- azure-virtual-desktop
 units:
 - learn.protect-virtual-desktop-deployment-azure-firewall.introduction
 - learn.protect-virtual-desktop-deployment-azure-firewall.use-azure-firewall

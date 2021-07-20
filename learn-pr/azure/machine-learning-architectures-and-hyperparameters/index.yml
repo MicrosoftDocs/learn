@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.machinelearning.machine-learning-architectures-and-hyperparameters
 metadata:
-  title: More complex models often can be manually customized to improve how effective they're. Through exercises and explanatory content, we explore how altering the architecture of more complex models can bring about more effective results.
-  description: Skeleton module for Jason to review. A soft introduction to machine learning.
+  title: Select and customize architectures and hyperparameters using random forest
+  description: Explore how altering the architecture of more complex models can bring about more effective results.
   ms.date: 05/25/2021
   author: TomReidNZ
   ms.author: jasdeb
@@ -16,7 +16,7 @@ abstract: |
   - Learn how model architecture can affect performance
   -	Practice working with hyperparameters to improve training effectiveness
 prerequisites: Familiarity with machine learning models
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/machine-learning/machine-learning-architectures-and-hyperparameters.svg
 levels: 
 - beginner
 roles: 

@@ -6,11 +6,11 @@ To start creating Power BI reports using serverless SQL pool, select the **Devel
  
 ![Defining a Power BI dataset in Azure Synapse Studio](../media/power-bi-dataset.png)
 
-This will download a Power BI file with all the connection information already populated. Open the file, it will launch Power BI desktop. Once Power BI desktop opens, it will ask you to sing in. Select Microsoft account on the left side and click the **sign-in** button. This will open a web browser and ask you to enter your Microsoft account credentials.
+This will download a Power BI file with all the connection information already populated. Open the file, it will launch Power BI desktop. Once Power BI desktop opens, it will ask you to sign in. Select Microsoft account on the left side and click the **sign-in** button. This will open a web browser and ask you to enter your Microsoft account credentials.
  
 ![Entering credentials for Power BI](../media/power-bi-credentials.png)
 
-Once singed in, click **Connect**. A new page will open where you can select the views or tables you want to use to build a report. Select the one you are interested in and click **Load**.
+Once signed in, click **Connect**. A new page will open where you can select the views or tables you want to use to build a report. Select the one you are interested in and click **Load**.
  
 ![Viewing datasets in Power BI](../media/view-power-bi-datasets.png)
 

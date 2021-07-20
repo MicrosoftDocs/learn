@@ -24,7 +24,7 @@ To help build your adoption strategy, the Cloud Adoption Framework breaks out ea
 
 ### Define your strategy
 
-Here, you answer why you're moving to the cloud and what you want to get out of cloud migration. Do you need to scale to meet demand or reach new markets? Will it reduce costs or increase business agility?
+Here, you answer why you're moving to the cloud and what you want to get out of cloud migration. Do you need to scale to meet demand or reach new markets? Will it reduce costs or increase business agility? When you define your cloud business strategy, you should understand [cloud economics](https://azure.microsoft.com/overview/cloud-economics?azure-portal=true), business impact, turnaround time, global reach, performance, and more.  
 
 Here are the steps in this stage.
 
@@ -32,8 +32,8 @@ Here are the steps in this stage.
 |--|--|
 | <br> ![1.](../media/number-1.png) | <br> **Define and document your motivations**: Meeting with stakeholders and leadership can help you answer why you're moving to the cloud. |
 | <br> ![2.](../media/number-2.png) | <br> **Document business outcomes**: Meet with leadership from your finance, marketing, sales, and human resource groups to help you document your goals. |
-| <br> ![3.](../media/number-3.png) | <br> **Develop a business case**: Validate that moving to the cloud gives you the right return on investment (ROI) for your efforts. |
-| <br> ![4.](../media/number-4.png) | <br> **Choose the right first project**: Choose a project that's achievable but also shows progress toward your cloud migration goals. |
+| <br> ![3.](../media/number-3.png) | <br> **Evaluate financial considerations**: Measure objectives and identify the return expected from a specific investment.  |
+| <br> ![4.](../media/number-4.png) | <br> **Understand technical considerations**: Evaluate those technical considerations through the selection and completion of your first technical project.       |
 
 ### Make a plan
 
