@@ -1,4 +1,4 @@
-At this point, you've used the REPL and maybe even created an *fsx* script file. Now you're at the point where your application has grown so you need to include more files, as well as the ability to package and distribute your application. To do so, you'll need to create a project. The .NET SDK provides a variety of project templates to help you get started building all types of applications.
+At this point, you've used the REPL and maybe even created an *fsx* script file. Now you're at the point where your application has grown so you need to include more files, as well as the ability to package and distribute your application. To do so, you'll need to create a project. The .NET SDK provides various project templates to help you get started building all types of applications.
 
 ## What are .NET Templates?
 
@@ -31,11 +31,11 @@ To create a new application, use the `dotnet new` .NET CLI command. For example,
 dotnet new console --language F# -o MyFSharpApp
 ```
 
-Note that some shells interpret `#` as a special character. In that case, enclose the language in quotes as such `dotnet new console --language "F#" -o MyFSharpApp`
+Some shells interpret `#` as a special character. In that case, enclose the language in quotes as such `dotnet new console --language "F#" -o MyFSharpApp`
 
 The `dotnet new console` command uses the built-in console .NET template to scaffold a new console application.
 
-After a few seconds, a directory called *MyFSharpApp* appears containing the code for your F# application.
+After a few seconds, a directory called *MyFSharpApp* appears with the code for your F# application.
 
 ### Project Structure
 
@@ -62,11 +62,11 @@ let main argv =
     0 // return an integer exit code
 ```
 
-This application uses the `System` class library which is imported using the `open` keyword.
+This application uses the `System` class library, which is imported using the `open` keyword.
 
 The `from` function uses the `whom` string parameter to create and format a string message.
 
-The `main` function is the entry point of the application. It uses the `from` function to create the message "from F#" and binds the value to `message`. Then, using the `printfn` function, it prints out "Hello world from F#" to the console.
+The `main` function is the entry point of the application. It uses the `from` function to create the message "from F#" and binds the value to `message`. Then, using the `printfn` function, it prints "Hello world from F#" to the console.
 
 ## Build an application
 
@@ -78,7 +78,7 @@ Now that you've created a console application, it's time to build it using the `
 - A *.runtimeconfig.json* file, which specifies the shared runtime and its version for an application.
 - Other libraries that the project depends on (via project references or NuGet package references).
 
-Output files are written into the default location, which is *bin/<configuration>/<target>*. Debug is the default configuration, but you can override it using the `--configuration` option. The target refers to the target framework which specified in the `TargetFramework` property of the *fsproj* file. Target framework specifies the set of APIs that you'd like to make available to the app or library. For example if you have a .NET 5 application and you run `dotnet build`, the output is placed in *bin/Debug/net5.0*.
+Output files are written into the default location, which is *bin/<configuration>/<target>*. Debug is the default configuration, but you can override it using the `--configuration` option. The target refers to the target framework, which is specified in the `TargetFramework` property of the *fsproj* file. Target framework specifies the set of APIs that you'd like to make available to the app or library. For example if you have a .NET 5 application and you run `dotnet build`, the output is placed in *bin/Debug/net5.0*.
 
 ## Run your application
 

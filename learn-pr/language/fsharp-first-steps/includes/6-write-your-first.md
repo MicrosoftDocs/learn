@@ -1,4 +1,4 @@
-In this exercise, we'll write our first line of F# code which prints out the message **Hello World** to the console.
+In this exercise, we'll write our first line of F# code, which prints the message **Hello World** to the console.
 
 ## Start F# Interactive
 
@@ -9,7 +9,7 @@ In this exercise, we'll write our first line of F# code which prints out the mes
     dotnet fsi
     ```
 
-    When the F# Interactive terminal opens, you should see something like the following:
+    When the F# Interactive terminal opens, you should see something similar to the following output:
 
     ```dotnetcli
     Microsoft (R) F# Interactive version 11.0.0.0 for F# 5.0
@@ -28,7 +28,7 @@ Add the following line of code next to the `>` character in the F# Interactive t
 printfn "Hello World!";;
 ```
 
-The code is evaluated and output similar to the following is displayed on the console:
+The code is evaluated and similar output is displayed on the console:
 
 ```fsharp
 Hello World!

@@ -9,7 +9,7 @@ In this exercise, you'll use the .NET SDK console template to create, build, and
     dotnet new console -o HelloWorld -lang F#
     ```
 
-After a few seconds, a directory called *HelloWorld* appears containing the code for your F# application.
+After a few seconds, a directory called *HelloWorld* appears with the code for your F# application.
 
 ## Run your application
 

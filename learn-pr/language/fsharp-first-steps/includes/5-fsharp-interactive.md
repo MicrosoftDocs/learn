@@ -1,4 +1,4 @@
-Sometimes you don't want to go through the process of creating, packaging, and distributing an application. F# Interactive is an interactive programming and scripting environment makes it simple to go from idea to code by letting you write and evaluate code in real-time through the console or standalone script files.
+Sometimes you don't want to go through the process of creating, packaging, and distributing an application. F# Interactive is an interactive programming and scripting environment makes it simple to go from idea to code by letting you write and evaluate code in real time through the console or standalone script files.
 
 ## Starting F# Interactive
 
@@ -29,7 +29,7 @@ To evaluate your input, you must enter it after the `>` character.
 > #help;;
 ```
 
-Running the `#help` command for example outputs the F# Interactive help menu
+Running the `#help` command, for example, outputs the F# Interactive help menu
 
 ```console
 F# Interactive directives:
@@ -49,9 +49,9 @@ F# Interactive command line options:
     See 'dotnet fsi --help' for options
 ```
 
-Note that the end of an expression is delimited by the `;;` characters. This means that no code is evaluated until you input the `;;` characters. This is useful when writing multi-line expressions since your code is not delimited by new line characters.
+Note that the end of an expression is delimited by the `;;` characters. No code is evaluated until you input the `;;` characters. This is useful when writing multi-line expressions since your code is not delimited by new line characters.
 
-Evaluating F# code works the same way. The following code prints out a message to the console.
+Evaluating F# code works the same way. The following code prints a message to the console.
 
 ```fsharp
 > printfn "Hello World!";;
@@ -64,7 +64,7 @@ Hello World!
 val it : unit = ()
 ```
 
-The first line displays the output from the evaluated code while the second line displays output's type information. In this case, the value output to the console is of type `unit`, which is represented by the `()` token and bound to the `it` name. You can access the `it` value later on in your program if you want to perform additional operations.
+The first line displays the output from the evaluated code while the second line displays output's type information. In this case, the value output to the console is of type `unit`, which is represented by the `()` token and bound to the `it` name. You can access the `it` value later on in your program if you want to perform more operations.
 
 ## Exiting the REPL
 
@@ -78,7 +78,7 @@ Once you're done using the F# Interactive REPL, use the `#q` or `#quit` commands
 
 As you write more code, you can save your code in a script with the *fsx* file extension.
 
-Using the same example of printing out a message to the console, I can create a file called *my-script.fsx* to write my code in.
+Using the same example of printing  a message to the console, I can create a file called *my-script.fsx* to write my code in.
 
 ```fsharp
 printfn "Hello World!"
