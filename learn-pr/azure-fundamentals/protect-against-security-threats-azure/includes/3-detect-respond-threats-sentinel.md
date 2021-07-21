@@ -56,7 +56,7 @@ Here's an example that shows what an investigation graph looks like in Azure Sen
 
 :::image type="content" source="../media/3-investigate-incidents.png" alt-text="An example incident investigation graph in Azure Sentinel." lightbox="../media/3-investigate-incidents.png":::
 
-The company will also use [Azure Monitor Playbooks](/learn/modules/threat-response-sentinel-playbooks) to automate responses to threats. For example, it can set an alert that looks for malicious IP addresses that access the network and create a workbook that does the following steps:
+The company will also use [Azure Monitor Playbooks](../../../azure/threat-response-sentinel-playbooks/index.yml) to automate responses to threats. For example, it can set an alert that looks for malicious IP addresses that access the network and create a workbook that does the following steps:
 
 1. When the alert is triggered, open a ticket in the IT ticketing system.
 
