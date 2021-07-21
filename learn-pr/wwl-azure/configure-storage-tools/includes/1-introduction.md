@@ -13,7 +13,7 @@ Manage storage
  -  Export from Azure job.
  -  Import into Azure job.
  -  Install and use Azure Storage Explorer.
- -  Copy data by using AZCopy.
+ -  Copy data by using AzCopy.
 
 ## Learning objectives
 
@@ -21,7 +21,7 @@ In this module, you will learn how to:
 
  -  Configure and use Storage Explorer.
  -  Configure the Import and Export Service.
- -  Configure and use AZCopy.
+ -  Configure and use AzCopy.
 
 ## Prerequisites
 

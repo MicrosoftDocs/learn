@@ -1,6 +1,6 @@
 Azure Storage Explorer is a standalone app that makes it easy to work with Azure Storage data on Windows, macOS, and Linux. With Storage Explorer, you can access multiple accounts and subscriptions and manage all your storage content.
 
-:::image type="content" source="../media/AZ104_Storage_Explorer-4564155e.png" alt-text="Screenshot of the Storage Explorer. The navigation pane is expanded and a folder in the blob container is selected. The folder contains several documents.":::
+:::image type="content" source="../media/storage-explorer-304e94f3.png" alt-text="Screenshot of the Storage Explorer. The navigation pane is expanded and a folder in the blob container is selected. The folder contains several documents.":::
 
 
 To fully access resources after you sign in, Storage Explorer requires both management (Azure Resource Manager) and data layer permissions. This means that you need Azure Active Directory (Azure AD) permissions, which give you access to your storage account, the containers in the account, and the data in the containers.
@@ -11,7 +11,7 @@ To fully access resources after you sign in, Storage Explorer requires both mana
  -  Connect to storage accounts and services that are shared from other Azure subscriptions.
  -  Connect to and manage local storage by using the Azure Storage Emulator.
 
-:::image type="content" source="../media/AZ104_SE_Connection_Options1-7e9aa6aa.png" alt-text="Screenshot of the Azure Explorer Manage Accounts page.":::
+:::image type="content" source="../media/connection-options-1df9c8f7.png" alt-text="Screenshot of the Azure Explorer Manage Accounts page.":::
 
 
 In addition, you can work with storage accounts in global and national Azure:
@@ -27,7 +27,7 @@ In addition, you can work with storage accounts in global and national Azure:
 
 As mentioned previously, Storage Explorer lets you attach to external storage accounts so that storage accounts can be easily shared. To create the connection you will need the storage **Account name** and **Account key**. In the portal, the account key is called **key1**.
 
-:::image type="content" source="../media/AZ104_SE_Connection_Options2-39b5276a.png" alt-text="Screenshot of Storage Explorer. The wizard to connect to external storage is displayed, prompting for an account name, account key, and storage endpoint domain.":::
+:::image type="content" source="../media/attach-name-key-13fe3ba3.png" alt-text="Screenshot of Storage Explorer. The wizard to connect to external storage is displayed, prompting for an account name, account key, and storage endpoint domain.":::
 
 
 To use a name and key from a national cloud, use the **Storage endpoints domain** drop-down to select **Other** and then enter the custom storage endpoint domain.
