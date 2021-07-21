@@ -14,7 +14,7 @@ durationInMinutes: 3
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge"
+  title: ""
   questions:
   - content: "There are several Azure policies that need to be applied to a new branch office. What is the best way to proceed?"
     choices:

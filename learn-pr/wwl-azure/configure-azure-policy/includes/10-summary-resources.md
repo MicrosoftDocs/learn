@@ -1,5 +1,3 @@
-## Summary
-
 Azure Policy is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources. Azure Policy helps you define and implement your governance strategy.
 
 You should now be able to:
