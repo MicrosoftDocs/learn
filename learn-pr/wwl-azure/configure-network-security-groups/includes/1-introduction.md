@@ -1,8 +1,8 @@
 ## Scenario
 
-Your company has several sites, and users throughout the company will need to use an enterprise resource planning (ERP) app to migrate to Azure. The company will only consider moving key systems onto the platform if stringent security requirements can be met, including tight control over which computers have network access to the servers running the app. You want to secure both virtual machine (VM) networking and Azure services networking as part of your company's network security strategy. Your goal is to prevent unwanted or unsecured network traffic from being able to reach key systems.
+Your company has several sites. Users company-wide will use an enterprise resource planning app to migrate to Azure. The company will only consider moving key systems onto the platform if stringent security requirements can be met. These requirements include tight control over which computers have network access to the servers running the app. You need to secure both virtual machine networking and Azure services networking. Your goal is to prevent unwanted or unsecured network traffic from being able to reach key systems.
 
-You need to implement network security groups. You need to implement network security group rules are ensure the rules are correctly applied.
+You need to implement network security groups. You need to create network security group rules and ensure the rules are correctly applied.
 
 ## Skills measured
 

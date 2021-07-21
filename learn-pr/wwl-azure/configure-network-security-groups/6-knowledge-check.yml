@@ -14,7 +14,7 @@ durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge"
+  title: ""
   questions:
   - content: "The infrastructure team has two NSG security rules for inbound traffic to the backend web servers. There is an allow rule with a priority of 200. And, there is a deny rule with a priority of 150. Which rule takes precedence?"
     choices:

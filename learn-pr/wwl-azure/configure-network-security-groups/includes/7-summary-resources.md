@@ -1,5 +1,3 @@
-## Summary
-
 Isolating and securing network resources in Azure is an important job skill. Network security groups secure virtual networks by creating rules to control network traffic.
 
 You should now be able to:
