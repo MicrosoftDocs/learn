@@ -6,7 +6,7 @@ Azure AD allows you to define two different types of groups.
 :::image type="content" source="../media/group-accounts-378b3e22.png" alt-text="Screenshot of the Users and Groups page.":::
 
 
-## Adding Members to Groups
+## Adding members to groups
 
 There are different ways you can assign access rights:
 
