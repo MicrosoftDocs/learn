@@ -2,14 +2,14 @@ Every object that you store in Azure Storage has a unique URL address. The stora
 
 For example, if your storage account is named *mystorageaccount*, then the default endpoints for your storage account are:
 
- -  Container service: http://mystorageaccount.blob.core.windows.net
- -  Table service: http://mystorageaccount.table.core.windows.net
- -  Queue service: http://mystorageaccount.queue.core.windows.net
- -  File service: http://mystorageaccount.file.core.windows.net
+ -  Container service: `https://mystorageaccount.blob.core.windows.net`
+ -  Table service: `https://mystorageaccount.table.core.windows.net`
+ -  Queue service: `https://mystorageaccount.queue.core.windows.net`
+ -  File service: `https://mystorageaccount.file.core.windows.net`
 
-The URL for accessing an object in a storage account is built by appending the object's location in the storage account to the endpoint. For example, to access *myblob* in the *mycontainer*, use this format: http://mystorageaccount.blob.core.windows.net/mycontainer/myblob.
+The URL for accessing an object in a storage account is built by appending the object's location in the storage account to the endpoint. For example, to access *myblob* in the *mycontainer*, use this format: `https://mystorageaccount.blob.core.windows.net/mycontainer/myblob`.
 
-## Configuring a Custom Domain
+## Configuring a custom domain
 
 You can configure a custom domain for accessing blob data in your Azure storage account. As mentioned previously, the default endpoint for Azure Blob storage is &lt;storage-account-name&gt;.blob.core.windows.net. You can also use the web endpoint that's generated as a part of the static websites feature. If you map a custom domain and subdomain, such as www.contoso.com, to the blob or web endpoint for your storage account, your users can use that domain to access blob data in your storage account. There are two ways to configure this service: Direct CNAME mapping and an intermediary domain.
 
