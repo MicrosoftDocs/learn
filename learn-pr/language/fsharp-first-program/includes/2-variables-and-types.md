@@ -115,4 +115,4 @@ There are many format specifiers but here are some you are likely to encounter:
 | %d, %i | Formatted as a decimal integer, signed if the basic integer type is signed  | printf "Age: %i" 65 |
 | %b | boolean `true` or `false` | printf "Setting on: " true |
 
-There's a lot more information on formatting. If you want to know about all the capabilities, here's the [formatting in F# doc](https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/plaintext-formatting)
+There's a lot more information on formatting. If you want to know about all the capabilities, here's the [formatting in F# doc](/dotnet/fsharp/language-reference/plaintext-formatting)
