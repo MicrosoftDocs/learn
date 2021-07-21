@@ -8189,6 +8189,56 @@
       "source_path": "learn-pr/wwl-data-ai/train-evaluate-cluster-models/4-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-cluster-models/7-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/language/rust-get-started/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/rust-first-steps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-get-started/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/rust-first-steps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-get-started/2-what-is-rust.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/rust-first-steps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-get-started/3-install-code-editor.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/rust-first-steps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-get-started/4-install-rust-build-tools.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/rust-first-steps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-get-started/5-hello-world.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/rust-first-steps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-get-started/6-what-is-cargo.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/rust-first-steps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-get-started/7-hello-world-cargo.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/rust-first-steps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-get-started/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/rust-first-steps/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-get-started/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/rust-first-steps/",
+      "redirect_document_id": false
     }
   ]
 }
