@@ -296,7 +296,7 @@ The API responds with an empty array because you haven't written any data to it 
 
 ## Implement CRUD
 
-Implementing CRUD for a resource is a common thing to do. Express has a `route()` method just for this purpose. When you use the `route()` method, your code is grouped so that it's easier to read.
+Implementing CRUD for a resource is a common task. Express has a `route()` method just for this purpose. When you use the `route()` method, your code is grouped so that it's easier to read.
 
 1. To implement CRUD, replace the code in *app.js* with this code:
 

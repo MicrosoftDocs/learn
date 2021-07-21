@@ -1,6 +1,6 @@
 Data usually resides in a database or an endpoint. The size of the data can be enormous. When a user asks for all the data for a specific resource, the response can be thousands or even millions of records. A request like this can cause a massive strain on a database. It also takes a long time to serve the response.
 
-To avoid that scenario, it's a good practice to *limit* the size of the response:
+To avoid that scenario, it's a good practice to limit the size of the response:
 
 - Use route parameters to ask for specific records.
 - Use query parameters to specify a subset of records.

@@ -34,7 +34,7 @@ The host is a friendly name that you specify instead of an IP address. The IP ad
 
 ### Path
 
-The path portion of the URL consists of zero to many segments. Each segment is separated by a slash (`/`). In the example, the only segment is `/products`. A segment filters down the exact resources you're interested in.
+The path portion of the URL consists of zero to many segments. Each segment is separated by a slash (`/`). In the example URL, the only segment is `/products`. A segment filters down the exact resources you're interested in.
 
 ### Query
 
@@ -48,7 +48,7 @@ The fragment part of the URL helps you be even more specific. For example, a fra
 
 ## Route
 
-A route is a subsection of a URL that usually points to a specific resource. Express lets you associate an HTTP verb with a specific route, like `/products`. Express also handles the following concepts for routes that help you be more intentional.
+A route is a subsection of a URL that usually points to a specific resource. Express handles the following concepts for routes that help you be more intentional.
 
 ### Route parameter
 
@@ -73,7 +73,7 @@ app.get('/products/:id', (req, res) => {
 })
 ```
 
-Route parameters are written to a `params` property on the request object `req`. A request of `/products/114` would have `req.params.id` that contains `114`.
+Route parameters are written to a `params` property on the `req` request object. A request of `/products/114` would have `req.params.id` that contains `114`.
 
 ### Query parameter
 
@@ -81,7 +81,7 @@ The query part of the URL is a set of key/value pairs that exist after the `?` c
   
 Imagine if the route `/products` returned 2 million records from a database. That response would be huge, and it would take a long time to appear. That's a poor user experience and a strain on the app. A better approach is to use query parameters to limit the size of the response.
 
-Express has an easy way of handling query parameters. Given the route `/products?page=1&pageSize=20`, the query parameters are written to a query object on the request object `res`, like the following example:
+Express has an easy way of handling query parameters. Given the route `/products?page=1&pageSize=20`, the query parameters are written to a query object on the `res` request object, like the following example:
 
 ```javascript
 app.get('/products', (req, res) => {
@@ -100,7 +100,7 @@ To create a request with the route `/products?page=1&pageSize=20`, `req.query` h
 
 ### General pattern management
 
-So far, you've seen simple routes like `/products` and `/orders/1/items/2`. There are other patterns, like `**`, which could mean *catch-all*. You would normally define such a route to make sure that unexpected requests, like typos, are handled in a graceful way. This helps provide a good user experience.
+So far, you've seen simple routes like `/products` and `/orders/1/items/2`. There are other patterns, like `**`, which can mean *catch-all*. You would normally define such a route to make sure that unexpected requests, like typos, are handled in a graceful way. This helps provide a good user experience.
 
 ### HTTP verb
 

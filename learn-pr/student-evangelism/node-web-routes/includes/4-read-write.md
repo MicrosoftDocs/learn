@@ -31,7 +31,7 @@ The data that a client sends is now available on the `body` property on the `req
 
 ## Handle the request data
 
-To handle an incoming request, use either the `post()` or `put()` method on the Express instance. Both methods work, but `post()` tells Express that you want to create a resource. The `put()` method is used to convey that a resource should be updated using the incoming data. Here's an example:
+To handle an incoming request, use either the `post()` or the `put()` method on the Express instance. Both methods work, but `post()` tells Express that you want to create a resource. The `put()` method is used to convey that a resource should be updated using the incoming data. Here's an example:
 
 ```javascript
 app.post('/<path>', (req, res) => {
