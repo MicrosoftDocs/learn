@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-role-based-access-control.compare-azure-rbac-roles-to-azure-ad-roles
-title: Compare Azure Role-based Access Control roles to Azure AD roles
+title: Compare Azure roles to Azure Active Directory roles
 metadata:
-  title: Compare Azure Role-based Access Control roles to Azure AD roles
-  description: "Compare Azure Role-based Access Control roles to Azure AD roles"
+  title: Compare Azure roles to Azure Active Directory roles
+  description: "Compare Azure roles to Azure Active Directory roles"
   ms.date: 07/21/2021
   author: wwlpublish
   ms.author: cynthist

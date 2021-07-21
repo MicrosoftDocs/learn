@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-role-based-access-control.apply-rbac-authentication
-title: Apply Role-based Access Control authentication
+title: Apply role-based access control authentication
 metadata:
-  title: Apply Role-based Access Control authentication
-  description: "Apply Role-based Access Control authentication"
+  title: Apply role-based access control authentication
+  description: "Apply role-based access control authentication"
   ms.date: 07/21/2021
   author: wwlpublish
   ms.author: cynthist
