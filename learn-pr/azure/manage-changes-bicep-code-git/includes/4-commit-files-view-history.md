@@ -1,7 +1,6 @@
 Now that you've initialized your Git repository, you're ready to start adding files. In this unit, you'll learn how to tell Git to track the changes to files in your repository.
 
-> [!NOTE]
-> The commands in this unit are shown to illustrate the concepts. Don't run them yet. You'll practice what you learn here in the next unit.
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
 
 ## Folder structure for your repository
 
