@@ -2,7 +2,7 @@ Azure Virtual WAN is a networking service that provides optimized and automated 
 
 Azure Virtual WAN brings together many Azure cloud connectivity services such as site-to-site VPN, User VPN (point-to-site), and ExpressRoute into a single operational interface. Connectivity to Azure VNets is established by using virtual network connections. The global transit network architecture based on a hub-and-spoke connectivity model. The cloud hosted network 'hub' enables transitive connectivity between endpoints that may be distributed across different types of 'spokes'.
 
-:::image type="content" source="../media/AZ104_Verify_Virtual_WAN-7c2a0126.png" alt-text="ExpressRoute, S2S, and P2S connections are using a Virtual WAN to access Azure virtual networks.":::
+:::image type="content" source="../media/virtual-wide-area-networks-2e1efc3e.png" alt-text="ExpressRoute, S2S, and P2S connections are using a Virtual WAN to access Azure virtual networks.":::
 
 
 ## Virtual WAN advantages

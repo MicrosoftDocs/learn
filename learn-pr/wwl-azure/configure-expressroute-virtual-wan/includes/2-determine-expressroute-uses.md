@@ -1,6 +1,6 @@
 Azure ExpressRoute lets you extend your on-premises networks into the Microsoft cloud. The connection is facilitated by a connectivity provider. With ExpressRoute, you can establish connections to Microsoft cloud services, such as Microsoft Azure, Microsoft 365, and CRM Online.
 
-:::image type="content" source="../media/AZ104_ExpressRoute-b1e0322f.png" alt-text="Illustration of Expressroute showing a customer's network with traffic through the partner edge through two Expressroute circuits to the Microsoft edge, then from there to the webapps, public IP addresses in Azure, to Microsoft 365 and CRM Services, and to virtual networks.":::
+:::image type="content" source="../media/expressroute-b72c1320.png" alt-text="Illustration of Expressroute showing a customer's network with traffic through the partner edge through two Expressroute circuits to the Microsoft edge, then from there to the webapps, public IP addresses in Azure, to Microsoft 365 and CRM Services, and to virtual networks.":::
 
 
 ## Make your connections fast, reliable, and private

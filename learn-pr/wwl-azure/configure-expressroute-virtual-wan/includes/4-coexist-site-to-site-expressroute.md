@@ -4,7 +4,7 @@ You configure a Site-to-Site VPN as a secure failover path for ExpressRoute or u
 
 ## ExpressRoute and VPN Gateway coexisting connections example
 
-:::image type="content" source="../media/AZ104_Coexisting_Site_and_ExpressRoute-eba3dc4a.png" alt-text="Diagram showing how you have an ExpressRoute and a Site-to-Tite VPN configuration coexisting. VNet1 is configured with 2 virtual network gateways, one for the private ExpressRoute connection, and the other for the Site-to-Site traffic. The two S2S connections originate from an on-premises HQ and an on-premises branch site, whereas the dedicated private ExpressRoute originates from the on-premise HQ.":::
+:::image type="content" source="../media/coexisting-connections-4af27ce9.png" alt-text="Diagram showing how you have an ExpressRoute and a Site-to-Tite VPN configuration coexisting. VNet1 is configured with 2 virtual network gateways, one for the private ExpressRoute connection, and the other for the Site-to-Site traffic. The two S2S connections originate from an on-premises HQ and an on-premises branch site, whereas the dedicated private ExpressRoute originates from the on-premise HQ.":::
 
 
 ## ExpressRoute connection models
