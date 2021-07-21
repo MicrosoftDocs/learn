@@ -1,5 +1,3 @@
-## Summary
-
 Azure Administrators must be familiar with Azure Active Directory and its features.
 
 You should now be able to:

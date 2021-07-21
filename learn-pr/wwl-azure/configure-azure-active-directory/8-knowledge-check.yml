@@ -14,7 +14,7 @@ durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge"
+  title: ""
   questions:
   - content: "Users want to sign-in to devices, apps, and services from anywhere. They want to sign-in using an organizational work or school account instead of a personal account. IT requires that corporate assets are protected and that devices meet standards for security and compliance. What should be done?"
     choices:
