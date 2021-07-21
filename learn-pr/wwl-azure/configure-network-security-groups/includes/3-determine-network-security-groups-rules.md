@@ -16,11 +16,11 @@ Azure creates the default rules in each network security group that you create. 
 
 There are three default inbound security rules. The rules deny all inbound traffic except from the virtual network and Azure load balancers.
 
-:::image type="content" source="../media/AZ104_Default_NSG_Rules1-b0bcf8fe.png" alt-text="Screenshot of the default inbound security rules.":::
+:::image type="content" source="../media/inbound-rules-a554314b.png" alt-text="Screenshot of the default inbound security rules.":::
 
 
 ## Outbound rules
 
 There are three default outbound security rules. The rules only allow outbound traffic to the Internet and the virtual network.
 
-:::image type="content" source="../media/AZ104_Default_NSG_Rules2-da8208ef.png" alt-text="Screenshot of the default outbound security rules.":::
+:::image type="content" source="../media/outbound-rules-ff90d802.png" alt-text="Screenshot of the default outbound security rules.":::
