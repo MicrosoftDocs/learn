@@ -68,19 +68,46 @@ So how would you print to the screen? In F# there are three different functions 
 
 Ok, you know the difference, but which one to use? Well, `printfn` and `printf` are considered more idiomatic and preferred in F#.
 
-### Formatting
+## Formatting
 
-As part of printing to the screen, you might want to combine text and numbers or you want the output to be formatted in a certain way.
+Aa part of printing to the screen, you might want to combine text and numbers or you want the output to be formatted in a certain way.
 
-To format you can use a .NET function like `string.Format`, which uses positional arguments like so `string.Format("My name is {0} and I live in {1}", "Chris", "UK")`. You can also use format specifiers (this is the most commonly used way to format in F#) as part of what you're trying to print, like in this example:
+- **Positional arguments**. To format you can use a .NET function like `string.Format`, which uses positional arguments like so `string.Format("My name is {0} and I live in {1}", "Chris", "UK")`. 
+- **String interpolation**. Another way to combine variables and text is to use something called interpolation. To use it, you need to the string with a `$` sign and indicate placeholders with brackets `{}`. Here's an example of using interpolation:
 
-```fsharp
-let name = "Chris"
-printf "Hi %s" name
-// prints: Hi Chris
-```  
+   ```fsharp
+   let name = "Luis"
+   let company = "Microsoft"
+   printfn $"Name: {name}, Company: {company}"
+   ```
 
-Here you can see how the formatter `%s` is used to mix the first string with the variable `name`. There are many format specifiers but here are some you are likely to enounter:
+   You can also add expressions in between the brackets like so:
+
+   ```fsharp
+   let firstNumber = 2000
+   let secondNumber = 21
+   printfn $"The year is: {firstNumber + secondNumber}"
+   ```
+
+   > [!NOTE]
+   > There's no type checking using interpolation, so it may seem straight forward to use, but beware to combine things correctly.
+
+- **Using specifiers**. You can also use format specifiers (this is the most commonly used way to format in F#) as part of what you're trying to print, like in this example:
+
+    ```fsharp
+    let name = "Chris"
+    printf "Hi %s" name
+    // prints: Hi Chris
+    ```  
+
+    Here you can see how the formatter `%s` is used to mix the first string with the variable `name`.
+
+    > [!NOTE]
+    > When using formatters like %s or %i, the compiler checks types so if your positional argument is not of the type you've specified, it'll thrown an error.
+
+### Format specifiers
+
+There are many format specifiers but here are some you are likely to encounter:
 
 |Specifier  |Description  | Example |
 |---------|---------|-------|

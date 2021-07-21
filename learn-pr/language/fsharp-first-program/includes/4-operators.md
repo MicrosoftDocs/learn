@@ -12,7 +12,7 @@ printfn "You typed %s" str
 
 Now, this code might work fine to store what the user types into a string variable. But what happens if your program needs work on the user input and wants to treat it as a number or as a boolean and use it in an operation? At that point, you need to convert the data. 
 
-## Convert
+## Convert between data types
 
 You've seen how F# implicitly infers the type of a variable by assigning a value to a variable like so:
 
@@ -36,18 +36,16 @@ To use the former approach, write code like so:
 ```fsharp
 let first = "32"
 let numberVersion = System.Int32.Parse first 
-printfn "Number %i" numberVersion // Ouutput: Number 32
+printfn "Number %i" numberVersion // Output: Number 32
 ```
 
 To use the built-in `int`, you can instead type like so:
 
 ```fsharp
 let first = "32"
-let numberVersion =  first |> int 
+let numberVersion =  int first 
 printfn "Number %i" numberVersion
 ```
-
-The latter version is using `|>`.
 
 So which one do you use? It's preferred to use the built-in version with `int`.
 
@@ -61,12 +59,13 @@ You've learned how to read input from a console and seen how that was stored as 
 | - | Subtract one value from another |
 | / | divides the left side value with the right side value |
 | % | Called modulus, gives the left over from dividing the left value with the right value |
-| <> | Checks if two values are equal
+| <> | Checks if two values are not equal |
+| = | Checks if two values are equal |
 
 To use the modulus operator for example, you would type:
 
 ```fsharp
 let no = 10
-let isDivisibleByTwo = no % 2 <> 2
+let isDivisibleByTwo = no % 2 = 0
 printfn "Divisible by two %b" isDivisibleByTwo
 ```
