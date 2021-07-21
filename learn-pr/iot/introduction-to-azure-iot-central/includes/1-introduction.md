@@ -17,7 +17,7 @@ Store managers will use the results of the analysis to properly schedule staff b
 We'll analyze the capabilities of Azure IoT Central and help you decide when to use it for your IoT solutions to:
 
 - **Collect** and securely store data from different types of IoT devices.
-- **Monitor** IoT data in real-time with user-friendly dashboards.
+- **Monitor** IoT data in real time with user-friendly dashboards.
 - **Analyze** trends to base your future business decisions and predictions on.
 
 ## What is the main goal?

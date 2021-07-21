@@ -27,9 +27,8 @@ Since most of the work required to produce a production-ready, enterprise-level 
 
 IoT solutions are valuable for business and personal use. However, building IoT solutions from the ground up can be a daunting task. The key attributes of successful IoT solutions are centered around the following considerations:
 
-|               |                 |
+| Attribute | Description |
 | ------------- | --------------- |
-| **Attribute** | **Description** |
 | Scale | Scaling to hundreds of millions of devices creates system requirements for increased data processing, storage, compute, networking, multi-tenancy and more |
 | Device Management | Systematic pattern to provision, deprovision, manage, monitor and update your IoT devices and manage device data transmission |
 | Big Data Management | Manage how your applications capture, store, retain and analyze data across hot, warm and cold paths and different storage options |
@@ -38,7 +37,6 @@ IoT solutions are valuable for business and personal use. However, building IoT 
 | Security & Compliance | Develop a strategy that ensures secure connectivity between devices and the cloud, secure integration with other applications, secure data protection in the cloud with regulatory compliance |
 | Total cost of ownership | Understand how to estimate long-term aggregated costs of cloud services, including how operational and infrastructure costs grow as your device and message volume grows |
 | DevOps | Effectively build, operate and maintain cloud services. Manage, provision and deploy code, prevent and manage security issues and test your solution before product deployment |
-|               |                 |
 
 ## How to leverage Azure IoT Central
 

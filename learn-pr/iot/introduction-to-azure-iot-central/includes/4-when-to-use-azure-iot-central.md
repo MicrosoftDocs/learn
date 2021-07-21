@@ -9,11 +9,10 @@ Azure IoT Central lets users take advantage of a pre-built, production-ready IoT
 
 Let's take a look at some of the criteria you should consider when determining which of these options is best for you:
 
-| | |
+| Criteria | Analysis |
 | --- | --- |
 | **Experience** | A common obstacle to producing successful IoT solutions is a lack of skills and experience. Therefore, it's crucial that you consider the skills and abilities of your IoT team. Fortunately, the Azure IoT Central platform is intended for users and teams that may not be experienced IoT professionals. |
 | **Customization** | Like most aPaaS solutions, the Azure IoT Central platform provides a ready-to-use application but there are a few customization options available as well. Before abandoning the Azure IoT Central platform for a custom-built solution from scratch, we'd recommend using companion applications with Azure IoT Central. Companion applications are often much easier to build than the alternative and can provide additional functionality to your application. However, experienced professionals may find that they want or need full control over their IoT solution. In this case, Azure IoT Hub is the better option. |
-| | |
 
 ## Apply the criteria
 
@@ -27,12 +26,10 @@ The following flowchart illustrates the decision process we will use to determin
 
 Now that we have our list of criteria and an illustration of the decision process, we can apply the criteria to the requirements of the example scenario to determine if Azure IoT Central can help us develop a solution to improve the overall customer experience as seen in the table below.
 
-| | | |
+| Criteria | Fictitious Requirement | Use Azure IoT Central? |
 | --- | --- | --- |
-| **Criteria** | **Fictitious Requirement** | **Use Azure IoT Central?** |
 | **Experience** | As stated in the introduction scenario, this is your first time working on an IoT project and your team doesn't have much experience either. Therefore, the solution you design has to account for your lack of skills and experience. | Yes |
 | **Customization** | You and your team would like to design a custom notification system for the cloud application to notify store managers with critical alerts. | __*Maybe*__ |
-| | | |
 
 ## Guidance summary
 
