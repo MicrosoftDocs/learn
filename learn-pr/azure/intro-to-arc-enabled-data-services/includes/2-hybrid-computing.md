@@ -2,7 +2,7 @@
 Hybrid computing connects on-premises systems to one or more public-cloud systems, providing a single application experience along with cohesive provisioning, governance, and management. The advantages of hybrid computing are the ability to leverage current on-premises investments, placing the data close to the compute environment for the best performance, and selecting the proper security posture for applications all while using a unified billing, management, and data collection and reporting for the governance of the entire system.
 
 # Considerations for Effective Hybrid Computing
-While hybrid computing offers many benefits, there are various considerations for combining disparate computing environments, including provisioning, governance, and management. 
+While hybrid computing offers many benefits, there are various considerations for combining disparate computing environments including provisioning, governance, and management. 
 
 ## Provisioning
 The first consideration for hybrid computing is to ensure a declarative, stateful method of deployment, ideally with the ability to check the manifest describing the desired state configuration into source-control systems. This allows for a complete DevOps optimization, along with point-in-time configuration snapshots. 
