@@ -14,7 +14,7 @@ durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge"
+  title: ""
   questions:
   - content: "What is an Azure Resource Manager template?"
     choices:
