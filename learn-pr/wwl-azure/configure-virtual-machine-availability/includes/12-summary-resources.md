@@ -1,5 +1,3 @@
-## Summary
-
 Azure provides several high availability options for virtual machines. These options include availability sets, availability zones, and virtual machine scale sets.
 
 You should now be able to:

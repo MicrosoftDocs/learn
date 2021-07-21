@@ -11,10 +11,10 @@ Availability Sets are an essential capability when you want to build reliable cl
 
 You create Availability Sets through the Azure portal in the disaster recovery section. Also, you can build Availability Sets using Resource Manager templates. scripting, or API tools.
 
-:::image type="content" source="../media/AZ104_Availability_Sets-09e904d5.png" alt-text="Screenshot of the create an availability set in the portal.":::
+:::image type="content" source="../media/availability-sets-4e3b2af6.png" alt-text="Screenshot of the create an availability set in the portal.":::
 
 
-## Service Level Agreements
+## Service Level Agreements (SLAs)
 
  -  For all Virtual Machines that have two or more instances deployed across two or more Availability Zones in the same Azure region, we guarantee you will have Virtual Machine Connectivity to at least one instance at least 99.99% of the time.
  -  For all Virtual Machines that have two or more instances deployed in the same Availability Set, we guarantee you will have Virtual Machine Connectivity to at least one instance at least 99.95% of the time.

@@ -1,6 +1,6 @@
 Availability Zones is a high-availability offering that protects your applications and data from datacenter failures.
 
-:::image type="content" source="../media/AZ104_Avail_Zones-0e51ed31.png" alt-text="Three availability zones are connected, making an Azure region.":::
+:::image type="content" source="../media/availability-zones-26abc45c.png" alt-text="Three availability zones are connected, making an Azure region.":::
 
 
 ## Considerations
@@ -18,7 +18,7 @@ An Availability Zone in an Azure region is a combination of a fault domain and a
 
 Azure services that support Availability Zones fall into two categories:
 
- -  **Zonal services**. Pin the resource to a specific zone (for example, virtual machines, managed disks, Standard IP addresses), or
+ -  **Zonal services**. Pins the resource to a specific zone (for example, virtual machines, managed disks, Standard IP addresses).
  -  **Zone-redundant services**. Platform replicates automatically across zones (for example, zone-redundant storage, SQL Database).
 
 > [!NOTE]
