@@ -11,7 +11,7 @@ To remove a resource group use, **Remove-AzResourceGroup**. In this example, we 
 Remove-AzResourceGroup -Name "ContosoRG01"
 ```
 
-## Removing Resources
+## Removing resources
 
 You can also delete individual resources within a resource group. For example, here we are deleting a virtual network. Notice you can change the resource group on this page.
 

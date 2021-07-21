@@ -14,7 +14,7 @@ durationInMinutes: 3
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge"
+  title: ""
   questions:
   - content: "Which one of these resource types can be moved across resource groups?"
     choices:
