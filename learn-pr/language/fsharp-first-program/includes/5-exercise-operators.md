@@ -1,4 +1,4 @@
-In this exercise, you will continue working on the calculator program you created in the first exercise. You will take all that hard earned knowledge and implement the remaining functionality like user input and applying an arithmetic operator.
+In this exercise, you will continue working on the calculator program you created in the first exercise. You will take all that hard earned knowledge and implement the remaining functionality like user input and apply an arithmetic operator.
 
 ## Read from the console
 
@@ -61,7 +61,7 @@ To add the calculation part of the program, you need to convert the user input t
    change it to the following code:
 
    ```fsharp
-   let sum = (firstNo |> int) + (secondNo |> int)
+   let sum = (int firstNo) + (int secondNo)
    ```
 
    Save your changes and lets rerun the program next.
