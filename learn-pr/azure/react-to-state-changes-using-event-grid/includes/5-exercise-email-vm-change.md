@@ -32,15 +32,15 @@ First, let's create a condition that runs the logic app whenever a certain event
 
 1. In the area under the new name, select the check box under **And** to generate a checkmark, and then select the **Choose a value** box. In the Dynam     ic content list, select the **Expression** tab.
 
-    ![](../media/5-.png):::image type="content" source="../media/5-condition-choose-expression.png" alt-text="Selections for choosing an expression as a value."::: 
+    :::image type="content" source="../media/5-condition-choose-expression.png" alt-text="Selections for choosing an expression as a value."::: 
 
 1. In the expression editor, enter `triggerBody()?['data']['operationName']`, and select **OK**.
 
-    ![Entered expression for a data operation.](../media/5-condition-add-data-operation-name.png)
+    :::image type="content" source="../media/5-condition-add-data-operation-name.png" alt-text="Entered expression for a data operation."::: 
 
 1. Leave the middle box as **is equal to**, select the right box, and enter `Microsoft.Compute/virtualMachines/write`.
 
-    ![Completed condition.](../media/5-complete-condition.png)
+    :::image type="content" source="../media/5-complete-condition.png" alt-text="Completed condition."::: 
 
 1. In the **Logic app designer** menu bar, select **Save**.
 
