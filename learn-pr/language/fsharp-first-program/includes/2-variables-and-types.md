@@ -1,4 +1,4 @@
-All programs usually consist of a number of steps where it operates on data. As part of running all those stepsm it's common to store the intermittent result, the data, in a named reference. By doing so, it allows you to later read or manipulate it. Named references are commonly referred to as variables.
+All programs usually consist of many steps where it operates on data. As part of running all those steps it's common to store the intermittent result, the data, in a named reference. By doing so, it allows you to later read or manipulate it. Named references are commonly referred to as variables.
 
 ## Variables
 
@@ -26,7 +26,7 @@ name <- "Luis" // this statement is now allowed
 
 ## Variable types
 
-There exist a range of different types in F#. Many of the types has to do with storing numbers of different size and with our without decimals. Other types are associated with text string or boolean variables. Here's list of types that you are likely to encounter when you start out learning F#:
+There exist a range of different types in F#. Many of the types have to do with storing numbers of different size and with our without decimals. Other types are associated with text string or boolean variables. Here's list of types that you are likely to encounter when you start out learning F#:
 
 | Type | Description |
 |--|--|
@@ -37,7 +37,7 @@ There exist a range of different types in F#. Many of the types has to do with s
 
 ### Type is inferred
 
-When you declare a variable you can do so with or without type. If you don't provide a type when you declare a variable, the F# compiler will make a best guess on what the type should be by the value you assign to the variable. Consider the below statements:
+When you declare a variable, you can do so with or without type. If you don't provide a type when you declare a variable, the F# compiler will make a best guess on what the type should be by the value you assign to the variable. Consider the below statements:
 
 ```fsharp
 let age = 65 // int
@@ -45,7 +45,7 @@ let PI = 3.14 // float
 let name = "my name" // string
 ```
 
-The compiler will _infer_ what the types should be, and it's usually right. You can however, be more explicit about what you want the type to be. To assign a data you use the syntax `variableName:<type>`, like in this code:
+The compiler will _infer_ what the types should be, and it's right. You can however, be more explicit about what you want the type to be. To assign a data you use the syntax `variableName:<type>`, like in this code:
 
 ```fsharp
 let sum:float = 0.0
@@ -60,11 +60,11 @@ You often want to be able to print to the screen. It could be for various reason
 
 There are other reasons too for wanting to output to the screen, but the two scenarios mentioned above are the most common.
 
-So how would you print to the screen? In F# there are three different functions you could be using `printf`, `printfn` and even `Console.WriteLine`. So what's the difference?
+So how would you print to the screen? In F# there are three different functions you could be using `printf`, `printfn`, and even `Console.WriteLine`. So what's the difference?
 
 - `printfn`, it prints to `stdout` and adds a newline character.
 - `printf`, prints to `stdout` but no newline character.
-- `Console.WriteLine`, this is from the `System` namespace and work in all .NET languages.
+- `Console.WriteLine`, this function is from the `System` namespace and work in all .NET languages.
 
 Ok, you know the difference, but which one to use? Well, `printfn` and `printf` are considered more idiomatic and preferred in F#.
 

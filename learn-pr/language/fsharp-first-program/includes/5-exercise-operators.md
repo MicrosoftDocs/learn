@@ -2,7 +2,7 @@ In this exercise, you will continue working on the calculator program you create
 
 ## Read from the console
 
-In this part you will add support for reading from the console.
+In this part, you will add support for reading from the console.
 
 1. Navigate to the directory _Variables_ and open up the `Program.fs` file.
 1. Locate the following code:
@@ -50,7 +50,7 @@ In this part you will add support for reading from the console.
 
 ## Perform calculation
 
-To add the calculation part of the program you need to convert the user input to numbers and apply an arithmetic operator.
+To add the calculation part of the program, you need to convert the user input to numbers and apply an arithmetic operator.
 
 1. Locate the row that looks like so:
 
