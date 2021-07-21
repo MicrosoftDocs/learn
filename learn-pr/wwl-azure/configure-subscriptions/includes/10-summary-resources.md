@@ -1,5 +1,3 @@
-## Summary
-
 Obtaining and managing Azure subscriptions is a common Administrator task. Effectively identifying and managing costs is also important.
 
 You should now be able to:

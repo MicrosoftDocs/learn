@@ -12,7 +12,7 @@ An Azure free subscription includes a $200 credit to spend on any service for th
 > [!NOTE]
 > Credit card information is used for identity verification only. You won’t be charged for any services until you upgrade.
 
-## Azure Pay-As-You-Go subscription
+## Azure pay-as-you-go subscription
 
 A Pay-As-You-Go (PAYG) subscription charges you monthly for the services you used in that billing period. This subscription type is appropriate for a wide range of users, from individuals to small businesses, and many large organizations as well.
 

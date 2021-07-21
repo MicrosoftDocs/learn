@@ -14,7 +14,7 @@ durationInMinutes: 3
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge"
+  title: ""
   questions:
   - content: "The company financial comptroller wants to be notified whenever the company is half-way to spending the money allocated for cloud services. Which of the following is the best approach to meeting this requirement?"
     choices:

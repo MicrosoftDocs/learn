@@ -5,7 +5,7 @@ Subscriptions help you organize access to cloud service resources. They also hel
 :::image type="content" source="../media/azure-subscriptions-e855533e.png" alt-text="Diagram showing the relationship between an Azure subscription and an account, which is simply an identity in Azure Active Directory. Users and services accessing subscription resources first authenticate through Azure AD.":::
 
 
-## Azure Accounts
+## Azure accounts
 
 Subscriptions have accounts. An Azure account is simply an identity in Azure Active Directory (Azure AD) or in a directory that is trusted by Azure AD, such as a work or school organization. If you don't belong to one of these organizations, you can sign up for an Azure account by using your Microsoft Account, which is also trusted by Azure AD.
 

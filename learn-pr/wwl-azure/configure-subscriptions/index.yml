@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-subscriptions
 metadata:
-  title: Configure Subscriptions
+  title: Configure subscriptions
   description: "You will learn how to configure subscriptions including obtaining a subscription, implementing cost management, and applying resource tags."
   ms.date: 07/21/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Configure Subscriptions
+title: Configure subscriptions
 summary: You will learn how to configure subscriptions including obtaining a subscription, implementing cost management, and applying resource tags.
 abstract: |
   After completing this module, you will be able to:
