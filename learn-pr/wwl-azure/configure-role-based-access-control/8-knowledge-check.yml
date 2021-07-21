@@ -14,7 +14,7 @@ durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge"
+  title: ""
   questions:
   - content: "There are three virtual machines (VM1, VM2, and VM3) in a resource group. The Helpdesk hires a new employee. The new employee must be able to modify the settings on VM3, but not on VM1 and VM2. Which of following meets the requirements and minimizes administrative overhead?"
     choices:
