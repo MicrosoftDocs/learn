@@ -2,7 +2,7 @@ Access management for cloud resources is a critical function for any organizatio
 
 Azure RBAC is an authorization system built on Azure Resource Manager that provides fine-grained access management of resources in Azure.
 
-## What can I do with Azure RBAC?
+## What can I do with Azure roles?
 
 Here are some examples of what you can do with Azure RBAC:
 
