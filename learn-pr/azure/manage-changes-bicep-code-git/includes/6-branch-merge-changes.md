@@ -5,8 +5,7 @@ When you work on Bicep code, it's common to need to do more than one thing at a 
 
 In this unit, you learn about Git branches.
 
-> [!NOTE]
-> The commands in this unit are shown to illustrate the concepts. Don't run them yet. You'll practice what you learn here in the next unit.
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
 
 ## What are branches?
 
