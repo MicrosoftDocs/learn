@@ -1,5 +1,3 @@
-## Summary
-
 There are many options for securing Azure storage. These options include shared access signatures, storage service encryption, and customer-managed keys.
 
 You should now be able to:
