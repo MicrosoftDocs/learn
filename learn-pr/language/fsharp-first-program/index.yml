@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.fsharp-first-program
+metadata:
+  title: Write your first F# programs
+  description: In this module, you will learn about variables and data types. You will also look at outputting data to the screen as well as capture user input. Additionally you'll explore operators and ways to convert between data types.
+  ms.date: 06/04/2020
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Write your first F# programs
+summary: Write your first F# programs, learn to work with input and output, data type conversions and operators.
+abstract: |
+  In this module you will:
+  - Learn about X
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - vs
+prerequisites: |
+  - Run commands at the console
+  - Have F# (.NET Core) installed
+
+units:
+  - learn.fsharp-first-program.1-introduction
+  - learn.fsharp-first-program.2-variables-and-types
+  - learn.fsharp-first-program.3-exercise-variables
+  - learn.fsharp-first-program.4-operators
+  - learn.fsharp-first-program.5-exercise-operators
+  - learn.fsharp-first-program.6-knowledge-check
+  - learn.fsharp-first-program.7-summary
+badge:
+  uid: learn.fsharp-first-program.badge

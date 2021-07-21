@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.fsharp-first-program.5-exercise-operators
+title: Exercise - build a calculator program
+metadata:
+  title: Exercise - build a calculator program
+  description: In this unit you will keep working on your calculator project and add features like  reading user input, type conversion and performing a mathematical operation.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-exercise-operators.md)]

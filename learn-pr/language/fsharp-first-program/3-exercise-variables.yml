@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.fsharp-first-program.3-exercise-variables
+title: Exercise - using variables to store data
+metadata:
+  title: Exercise - using variables to store data
+  description: In this exercise you learn to declare and print variables. You also
+    learn how to recognize and fix an error related to formatting.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-exercise-variables.md)]
