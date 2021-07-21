@@ -1,6 +1,6 @@
 A container provides a grouping of a set of blobs. All blobs must be in a container. An account can contain an unlimited number of containers. A container can store an unlimited number of blobs. You can create the container in the Azure portal.
 
-:::image type="content" source="../media/AZ104_Blob_Containers-45dae4fc.png" alt-text="Screenshot showing the container creation page and the public access level choices.":::
+:::image type="content" source="../media/blob-containers-a243a2b9.png" alt-text="Screenshot showing the container creation page and the public access level choices.":::
 
 
 **Name**: The name may only contain lowercase letters, numbers, and hyphens, and must begin with a letter or a number. The name must also be between 3 and 63 characters long.

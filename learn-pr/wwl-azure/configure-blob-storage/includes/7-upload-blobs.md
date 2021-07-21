@@ -1,6 +1,6 @@
 A blob can be any type and size file. Azure Storage offers three types of blobs: *block* blobs, *page* blobs, and *append* blobs. You specify the blob type and access tier when you create the blob.
 
-:::image type="content" source="../media/AZ104_Uploading_Blobs-72186d05.png" alt-text="Screenshot of the Upload Blob page. The Advanced section with Authentication type, blob types, and block size.":::
+:::image type="content" source="../media/upload-blobs-7ad73d30.png" alt-text="Screenshot of the Upload Blob page. The Advanced section with Authentication type, blob types, and block size.":::
 
 
  -  **Block blobs (default)** consist of blocks of data assembled to make a blob. Most scenarios using Blob storage employ block blobs. Block blobs are ideal for storing text and binary data in the cloud, like files, images, and videos.
