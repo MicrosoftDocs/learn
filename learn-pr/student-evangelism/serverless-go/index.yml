@@ -2,19 +2,19 @@
 uid: learn.student-evangelism.serverless-go
 metadata:
   title: Build serverless apps with Go and custom handlers
-  description: You can build Serverless apps using almost any programming language. The only thing needed is that it supports HTTP primitives. By using custom handlers in Serverless you can now choose a runtime that suits you, it doesn't have to be a runtime or program language with first class support.
+  description: You can build serverless apps by using almost any programming language that supports HTTP primitives. By using custom handlers in serverless, you can choose a runtime that suits you. The runtime or programming language doesn't need first-class support.
   ms.date: 07/12/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build serverless apps with Go
-summary: Custom handlers is an approach you can use when authoring Azure Functions. It allows you to use any language or runtime as long as it supports HTTP Primitives. In this module, you will be using the programming language Go and custom handlers.
+summary: When you're authoring Azure functions, custom handlers allow you to use any language or runtime that supports HTTP primitives. In this module, you'll use the programming language Go and custom handlers.
 abstract: |
-  In this module you will:
-  - Understand when to use Custom Handlers.
-  - Build Serverless apps using Go.
-  - Handle different triggers like HTTP and Queue.
+  In this module, you will:
+  - Understand when to use custom handlers.
+  - Build serverless apps by using Go.
+  - Handle different triggers like HTTP and queue.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner

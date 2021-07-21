@@ -3,7 +3,7 @@ uid: learn.student-evangelism.serverless-go.web-api
 title: Web API
 metadata:
   title: Web API
-  description: Building a Web API using Go.
+  description: Build a Web API by using Go.
   author: softchris
   ms.author: chnoring
   ms.date: 07/12/2021

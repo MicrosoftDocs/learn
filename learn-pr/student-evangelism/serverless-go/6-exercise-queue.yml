@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.serverless-go.exercise-queue
-title: Exercise queue
+title: Exercise - Queue
 metadata:
-  title: Exercise queue
-  description: How to build an Azure Function that's triggered by a queue message.
+  title: Exercise - Queue
+  description: Build an Azure function that's triggered by a queue message.
   author: softchris
   ms.author: chnoring
   ms.date: 07/12/2021

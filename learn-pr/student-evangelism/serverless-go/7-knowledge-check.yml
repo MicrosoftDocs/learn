@@ -14,25 +14,25 @@ content: Choose the best response for each question. Then select **Check your an
 quiz:
   title: Check your knowledge
   questions:
-    - content: How does Azure Function know how to find your compiled app?
+    - content: How can you make Azure Functions find your compiled app?
       choices:
-        - content: You set `defaultExecutablePath` in the file _host.json_
+        - content: Set `defaultExecutablePath` in the _host.json_ file.
           isCorrect: false
           explanation: Incorrect. You should set `defaultExecutablePath` in the _function.json_ file for that endpoint.
-        - content: You set the `executionPath` property in the function endpoints _function.json_ file.
+        - content: Set the `executionPath` property in the _function.json_ file for the function endpoint.
           isCorrect: false
           explanation: Incorrect. The property is called `defaultExecutionPath`.
-        - content: You set `defaultExecutablePath` in the _function.json_ for the function endpoint.
+        - content: Set `defaultExecutablePath` in the _function.json_ file for the function endpoint.
           isCorrect: true
           explanation: Correct. That's the correct place to point out the compiled app path.
-    - content: Any any language or runtime can use custom handlers
+    - content: Can any language or runtime use custom handlers?
       choices:
-        - content: Yes, there are no limitations.
+        - content: Yes. There are no limitations.
           isCorrect: false
           explanation: Incorrect. The selected language or runtime needs to support HTTP primitives.
-        - content: As long as it supports HTTP primitives.
+        - content: Yes, as long as it supports HTTP primitives.
           isCorrect: true
-          explanation: Correct. A runtime or language supporting HTTP primitives can be used to create Azure Functions.
-        - content: Only languages with a first-class support. 
+          explanation: Correct. A runtime or language that supports HTTP primitives can be used to create Azure functions.
+        - content: Yes, but only languages with first-class support. 
           isCorrect: false
-          explanation: Incorrect. The whole point with custom handlers is to support languages and runtimes that doesn't have first-class support.
+          explanation: Incorrect. The point of custom handlers is to support languages and runtimes that don't have first-class support.
