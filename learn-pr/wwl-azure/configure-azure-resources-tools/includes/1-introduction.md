@@ -1,16 +1,16 @@
 ## Scenario
 
-Azure Administrators use tools to interact with the cloud environment and perform such tasks as:
+Azure Administrators use tools to interact with the cloud environment and complete such tasks as:
 
  -  Deploying dozens or hundreds of resources at a time.
- -  Configuring individual services programmatically.
+ -  Configuring individual services using scripts.
  -  Viewing rich reports across usage, health, costs, and more.
 
-You must select and use a tooling options. Your choices can include the Azure portal, Azure PowerShell, Azure CLI, or Azure Cloud Shell.
+You must select and use a tooling option. Your choices can include the Azure portal, Azure PowerShell, Azure CLI, or Azure Cloud Shell.
 
 ## Skills measured
 
-These administrative tools are not directly tested on [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104). However, may be used during performance-based testing.
+These administrative tools aren't directly tested on [Exam AZ-104: Microsoft Azure Administrator](/learn/certifications/exams/az-104). However, may be used during performance-based testing.
 
 ## Learning objectives
 

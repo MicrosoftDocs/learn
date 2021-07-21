@@ -1,5 +1,3 @@
-## Summary
-
 Azure Administrators have many tools when it comes to managing resources. These tools include the Azure portal, Azure Cloud Shell, Azure PowerShell, and Azure CLI.
 
 You should now be able to:

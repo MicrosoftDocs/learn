@@ -10,4 +10,5 @@ The **Azure portal** lets you build, manage, and monitor everything from simple 
  -  Receive notifications.
  -  Links to the Azure documentation.
 
-**Note:** You can access the portal at [https://portal.azure.com](https://portal.azure.com/).
+> [!NOTE]
+> You can access the portal at [https://portal.azure.com](https://portal.azure.com/).
