@@ -3,9 +3,7 @@ uid: learn.fsharp-first-program.5-exercise-operators
 title: Exercise - build a calculator program
 metadata:
   title: Exercise - build a calculator program
-  description: In this unit you will keep working on your calculator project and
-    add features like  reading user input, type conversion and performing a
-    mathematical operation.
+  description: In this unit, you'll keep working on your calculator project. You'll add features like reading user input, type conversion, and performing a mathematical operation.
   author: softchris
   ms.author: chnoring
   ms.date: 07/21/2021
