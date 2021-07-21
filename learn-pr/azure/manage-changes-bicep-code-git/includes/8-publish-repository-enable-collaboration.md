@@ -1,7 +1,6 @@
 You've learned how Git enables you to track the changes to your Bicep code. In this unit, you'll learn how Git also enables collaboration with your team members.
 
-> [!NOTE]
-> The commands in this unit are shown to illustrate the concepts. Don't run them yet. You'll practice what you learn here in the next unit.
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
 
 ## What are GitHub and Azure Repos?
 
