@@ -17,6 +17,8 @@ Fortunately, by using a combination of monitoring solutions on Azure, you can:
 
 At a high level, there are three primary Azure monitoring offerings, each of which is aimed at a specific audience and use case and provides a diverse set of tools, services, programmatic APIs, and more.
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWGw3I]
+
 ### Azure Advisor
 
 [Azure Advisor](https://azure.microsoft.com/services/advisor/?azure-portal=true) evaluates your Azure resources and makes recommendations to help improve reliability, security, and performance, achieve operational excellence, and reduce costs.  Advisor is designed to help you save time on cloud optimization. The recommendation service includes suggested actions you can take right away, postpone, or dismiss.
