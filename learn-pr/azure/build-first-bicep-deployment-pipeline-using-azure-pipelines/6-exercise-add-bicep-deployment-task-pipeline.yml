@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Add a Bicep deployment task to the pipeline
   description: Learn how to deploy a Bicep infrastructure as code template by using Azure Pipelines. Learn how variables can make your pipeline code reusable.
-  ms.date: 07/05/2021
+  ms.date: 07/20/2021
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial

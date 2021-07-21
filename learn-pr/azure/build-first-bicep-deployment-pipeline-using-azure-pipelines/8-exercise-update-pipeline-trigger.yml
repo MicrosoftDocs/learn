@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Update your pipeline's trigger
   description: Learn how Bicep deployment pipelines can be triggered. Understand continuous integration branch triggers and scheduled triggers.
-  ms.date: 07/05/2021
+  ms.date: 07/20/2021
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial
