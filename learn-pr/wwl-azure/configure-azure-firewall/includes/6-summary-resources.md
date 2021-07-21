@@ -1,5 +1,3 @@
-## Summary
-
 Azure Firewall acts as a barrier between your Azure virtual network and the internet. Azure Firewall examines all inbound and outbound traffic. Azure Firewall uses threat intelligence, rules, and other policy settings to allow legitimate traffic and deny threatening or unknown traffic.
 
 You should now be able to:
