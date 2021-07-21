@@ -1,5 +1,3 @@
-## Summary
-
 The Application Gateway provides load balancing and application routing capabilities across multiple web sites. Several routing methods are available including path-based routing. Also, the Application Gateway includes the Web Application Firewall with built-in security features.
 
 You should now be able to:
