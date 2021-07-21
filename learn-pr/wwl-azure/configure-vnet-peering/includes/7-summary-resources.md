@@ -1,5 +1,3 @@
-## Summary
-
 Virtual network peering connects virtual networks in a hub and spoke topology. Virtual network peering is a cost-effective and easy to configure.
 
 You should now be able to:

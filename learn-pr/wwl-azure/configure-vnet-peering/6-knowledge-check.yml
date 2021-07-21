@@ -14,7 +14,7 @@ durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
-  title: "Check your knowledge"
+  title: ""
   questions:
   - content: "Virtual network peering is successfully established when the peering status for both virtual network peerings shows which status?"
     choices:
