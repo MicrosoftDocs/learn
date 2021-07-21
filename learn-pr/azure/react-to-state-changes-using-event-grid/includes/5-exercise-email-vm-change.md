@@ -14,25 +14,25 @@ First, let's create a condition that runs the logic app whenever a certain event
  
 1. In the Logic app designer pane for your app, you will see an **Event Grid** trigger **When a resource event occurs**. Select **+ New step**.
 
-    ![Button for a new logic app step.](../media/5-choose-new-step-condition.png)
+    :::image type="content" source="../media/5-choose-new-step-condition.png" alt-text="Button for a new logic app step."::: 
 
 1. Under **Choose an operation**, in the search box, enter **condition** as your filter. Select **Control**.
 
 1. On the **Actions** tab, select **Condition** *Control*.
 
-    ![Selections for choosing an action.](../media/5-select-condition.png)
+    :::image type="content" source="../media/5-select-condition.png" alt-text="Selections for choosing an action."::: 
 
     The Logic app designer adds an empty condition to your workflow, including action paths to follow, based on a true or false condition.
 
-    ![Empty condition.](../media/5-empty-condition.png)
+    :::image type="content" source="../media/5-empty-condition.png" alt-text="Empty condition."::: 
 
 1. Select ellipsis on the right side of the **Condition** text box, select **Rename**, and enter **If a virtual machine in your resource group has changed**.
 
-    ![Selections for renaming a condition.](../media/5-rename-condition.png)
+    :::image type="content" source="../media/5-rename-condition.png" alt-text="Selections for renaming a condition."::: 
 
 1. In the area under the new name, select the check box under **And** to generate a checkmark, and then select the **Choose a value** box. In the Dynam     ic content list, select the **Expression** tab.
 
-    ![Selections for choosing an expression as a value.](../media/5-condition-choose-expression.png)
+    ![](../media/5-.png):::image type="content" source="../media/5-condition-choose-expression.png" alt-text="Selections for choosing an expression as a value."::: 
 
 1. In the expression editor, enter `triggerBody()?['data']['operationName']`, and select **OK**.
 
