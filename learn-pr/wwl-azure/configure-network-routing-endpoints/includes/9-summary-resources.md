@@ -1,5 +1,3 @@
-## Summary
-
 Network routes control the flow of traffic through your network. You can customize these routes, implement service endpoints, and private links.
 
 You should now be able to:

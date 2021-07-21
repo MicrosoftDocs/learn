@@ -6,7 +6,7 @@ Let’s review a specific network routing example. In this example, you have a v
 :::image type="content" source="../media/routing-example-cec52490.png" alt-text="A public subnet uses a routing table to access the private subnet.":::
 
 
-## Create a Routing Table
+## Create a routing table
 
 Creating a routing table is straightforward. You provide **Name**, **Subscription**, **Resource Group**, and **Location**. You also decide to use **Virtual network gateway route propagation**.
 
@@ -15,7 +15,7 @@ Creating a routing table is straightforward. You provide **Name**, **Subscriptio
 
 Routes are automatically added to the route table for all subnets with Virtual network gateway propagation enabled. When you are using ExpressRoute, propagation ensures all subnets get the routing information.
 
-## Create a Custom Route
+## Create a custom route
 
 For our example,
 
@@ -29,7 +29,7 @@ For our example,
 
 In summary, this route applies to any address prefixes in 10.0.1.0/24 (private subnet). Traffic headed to these addresses will be sent to the virtual appliance with a 10.0.2.4 address.
 
-## Associate the Route Table
+## Associate the route table
 
 The last step in our example is to associate the Public subnet with the new routing table. Each subnet can have zero or one route table associated to it.
 
