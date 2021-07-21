@@ -2,7 +2,7 @@ ExpressRoute is a direct, private connection from your WAN (not over the public 
 
 You configure a Site-to-Site VPN as a secure failover path for ExpressRoute or use Site-to-Site VPNs to connect to sites that are not part of your network, but that are connected through ExpressRoute. Notice this configuration requires two virtual network gateways for the same virtual network, one using the gateway type *VPN*, and the other using the gateway type *ExpressRoute*.
 
-## ExpressRoute and VPN Gateway coexisting connections example
+## Coexisting ExpressRoute and VPN gateway
 
 :::image type="content" source="../media/coexisting-connections-4af27ce9.png" alt-text="Diagram showing how you have an ExpressRoute and a Site-to-Tite VPN configuration coexisting. VNet1 is configured with 2 virtual network gateways, one for the private ExpressRoute connection, and the other for the Site-to-Site traffic. The two S2S connections originate from an on-premises HQ and an on-premises branch site, whereas the dedicated private ExpressRoute originates from the on-premise HQ.":::
 
