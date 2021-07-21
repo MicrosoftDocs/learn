@@ -1,4 +1,4 @@
-In contrast to the Bot Framework, the Health Bot service simplifies the process of creating a bot that addresses the compliance and regulatory requirements of the healthcare industry. It does so by providing the following capabilities.
+The Azure Health Bot service simplifies the process of creating a bot that addresses the compliance and regulatory requirements of the healthcare industry. It does so by providing the following capabilities:
 
 ### Extensible management portal
 

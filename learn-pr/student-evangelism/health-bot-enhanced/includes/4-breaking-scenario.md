@@ -19,7 +19,7 @@ Let's start by creating a second interrupting bot which works like a breaking sc
 
 1. Select **Update**.
 
-We've now created a bot that collects temperature information.
+You can now create a scenario to collect temperature information from the patient, based on your learnings from the previous sections.
 
 :::image type="content" source="../media/4-bot-designer.png" alt-text="Screenshot of the designer view of a bot that collects temperature information.":::
 

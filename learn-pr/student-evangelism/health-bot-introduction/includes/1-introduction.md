@@ -1,6 +1,6 @@
 Bots allow customers to interact with different computer applications by using text or speech. It might be a simple conversation. Or it might be a more complicated one, where different technologies and systems are integrated to deliver the desired result.
 
-The Azure Health Bot service empowers healthcare organizations to build and deploy an AI-powered conversational healthcare experience at scale. The Health Bot service's built-in medical database differentiates it from the Bot Framework. This database enables developers to use built-in scenarios or create custom scenarios to meet their business needs.
+The Azure Health Bot service empowers healthcare organizations to build and deploy an AI-powered conversational healthcare experience at scale. The Health Bot service's built-in medical intelligence differentiates it from the Bot Framework and enables developers to use built-in scenarios or create custom scenarios to support their organization's clinical use cases.
 
 The information that each instance of the Health Bot service handles is privacy protected to Health Insurance Portability and Accountability Act (HIPAA) standards. It also meets Microsoft's high standards for privacy and security.
 

@@ -1,4 +1,4 @@
-A health bot is an application that your users interact with. The Azure Health Bot service offers personalized access to health-related information and interactions through a natural conversation experience. It supports several built-in scenarios, although partners can extend the functionality of the bot by authoring custom scenarios.
+The Azure Health Bot service offers personalized access to health-related information and interactions through a natural conversation experience. It supports several built-in scenarios, although partners can extend the functionality of the bot by authoring custom scenarios.
 
 ## What is a scenario?
 

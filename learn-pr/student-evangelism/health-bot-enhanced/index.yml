@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.health-bot-enhanced
 metadata:
-  title: Enhanced healthcare bot
+  title: Enhanced Azure Health Bot
   description: Learn how to enhance your healthcare bot with advanced functionalities.
   ms.date: 05/21/2021
   author: shreyan1999
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Enhanced healthcare bot 
+title: Enhanced Azure Health Bot 
 summary: In the previous module, you created a basic informative bot without any interrupting or breaking scenario involved. This module shows you how to enhance the bot with advanced functionalities.
 abstract: |
   In this module, you will:

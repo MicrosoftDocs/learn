@@ -84,7 +84,7 @@ Configure built-in scenarios that interact with your users. For example, you can
 
    :::image type="content" source="../media/3-interactions.png" alt-text="Screenshot that shows the Interactions tab options.":::
 
-You can also change the automatic welcome message that appears when users first enter the chat. Or, you can use a custom scenario as an automatic welcome scenario. The automatic welcome scenario overrides the automatic welcome message.
+You can also change the automatic welcome message that appears when users first enter the chat. Or, you can use a custom scenario as an automatic welcome scenario. A custom welcome scenario overrides the automatic welcome message, but note that a custom welcome scenario won't work with multi-step scenarios.
 
 :::image type="content" source="../media/3-automatic-welcome.png" alt-text="Screenshot that shows the Automatic welcome section.":::
 

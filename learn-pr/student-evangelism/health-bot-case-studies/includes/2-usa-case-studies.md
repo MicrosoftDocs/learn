@@ -1,4 +1,4 @@
-Microsoft partners are using the Azure Health Bot service to build bots that address a wide range of healthcare-specific use cases. For example:
+Microsoft partners and customers are using the Azure Health Bot service to build bots that address a wide range of healthcare-specific use cases.
 
 - Insurers have built bots that give their customers an easy way to look up the status of a claim and ask questions about benefits and services.
 - Providers have built bots that triage patient issues with a symptom checker, help patients find appropriate care, and look up nearby doctors.
@@ -12,6 +12,8 @@ The Centers for Disease Control and Prevention (CDC) bot, which utilizes the Azu
 - Assess the symptoms and risk factors for people worried about infection.
 - Provide information and suggest a course of action, such as contacting a medical provider.  
 - Help those who don't need in-person medical care to manage the illness safely at home.
+
+For more information, see [Delivering information and eliminating bottlenecks with CDC's COVID-19 assessment bot](https://blogs.microsoft.com/blog/2020/03/20/delivering-information-and-eliminating-bottlenecks-with-cdcs-covid-19-assessment-bot/?azure-portal=true).
 
 ## Providence
 
