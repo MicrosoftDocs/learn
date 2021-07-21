@@ -30,7 +30,7 @@ First, let's create a condition that runs the logic app whenever a certain event
 
     :::image type="content" source="../media/5-rename-condition.png" alt-text="Selections for renaming a condition."::: 
 
-1. In the area under the new name, select the check box under **And** to generate a checkmark, and then select the **Choose a value** box. In the Dynam     ic content list, select the **Expression** tab.
+1. In the area under the new name, select the check box under **And** to generate a checkmark, and then select the **Choose a value** box. In the Dynamic content list, select the **Expression** tab.
 
     :::image type="content" source="../media/5-condition-choose-expression.png" alt-text="Selections for choosing an expression as a value."::: 
 
