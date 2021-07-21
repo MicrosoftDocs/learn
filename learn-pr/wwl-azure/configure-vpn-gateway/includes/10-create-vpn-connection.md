@@ -1,6 +1,6 @@
 Once your VPN gateways are created, you can create the connection between them. If your VNets are in the same subscription, you can use the portal.
 
-:::image type="content" source="../media/AZ104_Conf_Gateway_Connections-4012f957.png" alt-text="Screenshot of the Add Connection page in the Azure portal. TestVNet4GW is selected as the second virtual network gateway. The Shared key is abc123.":::
+:::image type="content" source="../media/add-connections-db2266af.png" alt-text="Screenshot of the Add Connection page in the Azure portal. TestVNet4GW is selected as the second virtual network gateway. The Shared key is abc123.":::
 
 
  -  **Name**. Enter a name for your connection.
