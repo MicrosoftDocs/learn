@@ -91,7 +91,7 @@ The next step is to create the logic app that will run when a virtual machine ch
 
     :::image type="content" source="../media/3-logic-app-event-grid-trigger-details.png" alt-text="Trigger details.":::
 
-1. On **Logic Apps Deisgner** menu bar, select **Save**.
+1. On **Logic Apps Designer** menu bar, select **Save**.
 
     :::image type="content" source="../media/3-logic-app-event-grid-save.png" alt-text="Save menu button.":::
 
