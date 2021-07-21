@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-network-security-groups.determine-nsg-rules
-title: Determine Network Security Group rules
+title: Determine network security group rules
 metadata:
-  title: Determine Network Security Group rules
-  description: "Determine Network Security Group rules"
+  title: Determine network security group rules
+  description: "Determine network security group rules"
   ms.date: 07/21/2021
   author: wwlpublish
   ms.author: cynthist

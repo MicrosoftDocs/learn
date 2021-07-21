@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-network-security-groups.determine-nsg-effective-rules
-title: Determine Network Security Group effective rules
+title: Determine network security group effective rules
 metadata:
-  title: Determine Network Security Group effective rules
-  description: "Determine Network Security Group effective rules"
+  title: Determine network security group effective rules
+  description: "Determine network security group effective rules"
   ms.date: 07/21/2021
   author: wwlpublish
   ms.author: cynthist

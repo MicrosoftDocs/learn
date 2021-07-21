@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-network-security-groups.create-nsg-rules
-title: Create Network Security Group rules
+title: Create network security group rules
 metadata:
-  title: Create Network Security Group rules
-  description: "Create Network Security Group rules"
+  title: Create network security group rules
+  description: "Create network security group rules"
   ms.date: 07/21/2021
   author: wwlpublish
   ms.author: cynthist
