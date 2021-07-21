@@ -3,4 +3,3 @@ Healthcare organizations around the world are using the Azure Health Bot service
 Customers Stories of organization using Azure Health Bot are also available in the Azure Health Bot website:
 
 - [Azure Health Bot customer stories](https://azure.microsoft.com/services/bot-services/health-bot/#customer-stories)
-- [Azure case studies](https://azure.microsoft.com/case-studies/)

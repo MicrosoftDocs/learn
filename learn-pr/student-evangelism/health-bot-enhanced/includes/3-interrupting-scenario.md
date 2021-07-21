@@ -19,7 +19,7 @@ Let's start by creating an interrupting bot. After that, we'll connect it to the
 
 1. Select **Create**.
 
-We've now created a bot that collects basic information (name, age, height, weight, temperature) from the patient.
+You can now create a scenario to collect basic information (name, age, height, weight, temperature) from the patient, based on your learnings from the previous sections.
 
 :::image type="content" source="../media/3-intermediate-bot-1.png" alt-text="Screenshot of the designer view of a bot that collects basic information.":::
 

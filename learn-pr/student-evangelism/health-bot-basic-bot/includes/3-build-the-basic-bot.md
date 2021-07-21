@@ -4,7 +4,7 @@ Let's start building a basic bot that can be deployed at the entrance of a hospi
 
 ## Ask what the user wants
 
-Because our aim is to create an informative bot, let's first greet the user and take input on what the user wants to do. 
+Because our aim is to create an informative bot, let's first greet the user and take input on what the user wants to do.
 
 ### Set up a prompt and branches
 
@@ -22,9 +22,11 @@ We start by using the *prompt* block. This is what a prompt block looks like:
 
 **Show Choices as**: This is the way we want the GUI to look. Let's simply choose a button. Depending on the variable type, you'll need to change the upcoming boxes. The rest will be set to defaults.
 
-After you fill in the information, close the pane. Congratulations! You've completed the first step. Now let's head to the next step.
+Close the pane after you've entered the information. Congratulations! You've completed the first step. Now let's head to the next step.
 
-After the user enters the data, we have to move according to those choices. That means we're branching from this point. So, which block will we use? You guessed it: the *branch* block. Let's drag a block onto the canvas.
+After the user enters the data, we have to move according to those choices. That means we're branching from this point. We could use either the switch block or the branch block.
+
+For the sake of this exercise we will be using the branch block. Let's drag a block onto the canvas.
 
 **JavaScript Boolean Expression**:  This field recognizes the command. We know that the counting in a computer starts from 0 index. So 0 is the first position in the computer. If we choose the option 1 in the array, then it corresponds to the 0 index. We have to feed this with a simple line of code:
 

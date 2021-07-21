@@ -21,7 +21,7 @@ Let's learn more about the features that make the Azure Health Bot accommodating
 
 ### Out-of-the-box AI and world knowledge capabilities
 
-Azure Health Bot has a built-in interactive symptom checker and medical database to help patients. Health Bot instances handle interruptions, topic changes, human error, and complex medical questions.  
+A built-in, interactive symptom checker and medical database enables patients to have meaningful conversations with the health bot. Health Bot instances handle interruptions, topic changes, human error, and complex medical questions.  
 
 ### Configurability and extensibility
 
@@ -33,4 +33,4 @@ The Azure architecture provides the Health Bot service's ability to scale with r
 
 ### Ease of management
 
-The Azure Health Bot service's management portal and management API manage each health bot instance, which is monitored by Microsoft partners. The management portal monitors usage, while the management API allows the secure exchange of data and information.
+The management portal for the Azure Health Bot service is used to easily configure and manage the scenarios and configurations. The Health Bot service also provides an API to enable programmatic management actions; for example, programmatic import and export of scenarios from the Scenario Editor.
