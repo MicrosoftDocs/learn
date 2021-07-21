@@ -3,7 +3,7 @@ Perhaps the simplest and quickest way to connect your VNets is to use VNet peeri
  -  **Regional VNet peering** connects Azure virtual networks in the same region.
  -  **Global VNet peering** connects Azure virtual networks in different regions. When creating a global peering, the peered virtual networks can exist in any Azure public cloud region or China cloud regions, but not in Government cloud regions. You can only peer virtual networks in the same region in Azure Government cloud regions.
 
-:::image type="content" source="../media/AZ104_VNet_Peering-29fea1e7.png" alt-text="Two VNets in one region and two vnets in different regions.":::
+:::image type="content" source="../media/network-peering-5beae28a.png" alt-text="Two VNets in one region and two vnets in different regions.":::
 
 
 ## Benefits of virtual network peering
