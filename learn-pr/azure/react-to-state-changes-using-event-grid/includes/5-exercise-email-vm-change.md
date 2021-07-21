@@ -48,31 +48,31 @@ First, let's create a condition that runs the logic app whenever a certain event
 
 Next, we'll add an email action based on the logic app being triggered. The following steps use the Office 365 Outlook action. If you don't have an Office 365 account, you can also use Outlook.com or Gmail. The configuration for these may be slightly different, so you may need to adjust accordingly.
 
-1. In the condition's **True** box, select **+** (Add an action).
+1. In the condition's **True** box, select **+Add an action**.
 
-    :::image type="content" source=./media/5-condition-true-add-action.png" alt-text="Add an action button.":::
+    :::image type="content" source="../media/5-condition-true-add-action.png" alt-text="Add an action button.":::
 
 1. In the search box under **Choose an operation**, enter **send an email** as your filter, and select the **Office 365 Outlook** provider.
 
-    :::image type="content" source=../media/5-logic-app-send-email.png" alt-text="Selections for sending an email action.":::
+    :::image type="content" source="../media/5-logic-app-send-email.png" alt-text="Selections for sending an email action.":::
 
 1. If you don't already have a connection for your email provider, sign in to your email account when you're asked for authentication.
 
 1. On the action's title bar to the right, rename the action to **Send email when virtual machine updated**.
 
-    :::image type="content" source=../media/5-send-email-vm-update.png" alt-text="Selections for sending an email when vm updates.":::
+    :::image type="content" source="../media/5-send-email-vm-update.png" alt-text="Selections for sending an email when vm updates.":::
 
 1. Select each box in the email form, and on the **Dynamic content** tab, search for and select the appropriate content type according to the following screenshot, adding text to label the items in the email body.
 
-    :::image type="content" source=../media/5-logic-app-empty-email-action.png" alt-text="Selections for adding a subject as a dynamic email field.":::
+    :::image type="content" source="../media/5-logic-app-empty-email-action.png" alt-text="Selections for adding a subject as a dynamic email field.":::
 
 1. Your email action should look similar to the following. If you selected a different email account type (Outlook.com or Gmail), your inputs might be different.
 
-    :::image type="content" source=../media/5-logic-app-send-email-details.png" alt-text="Email action view.":::()
+    :::image type="content" source="../media/5-logic-app-send-email-details.png" alt-text="Email action view.":::
 
 1. Your finished logic app should now look similar to the following screenshot.
 
-    :::image type="content" source=../media/5-logic-app-completed.png" alt-text="View of a finished logic app.":::
+    :::image type="content" source="../media/5-logic-app-completed.png" alt-text="View of a finished logic app.":::
 
 1. Select **Save** to save your logic app.
 
@@ -90,4 +90,4 @@ The final step is to test the complete workflow.
 
 1. Wait to be notified that your virtual machine has been resized, allowing time for the email to be generated and processed. After a few minutes, you should receive an email that looks similar to the following:
 
-    :::image type="content" source=../media/5-email.png" alt-text="Email notification example":::
+    :::image type="content" source="../media/5-email.png" alt-text="Email notification example":::
