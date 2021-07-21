@@ -221,7 +221,7 @@ The API responds with an empty array because you haven't written any data to it 
    Closed connection
    ```
 
-1. To check that the updates works, run this command:
+1. To check that the update works, run this command:
 
    ```bash
    node client-get.js

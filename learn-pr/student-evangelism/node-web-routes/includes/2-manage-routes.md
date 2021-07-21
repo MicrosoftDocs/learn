@@ -6,7 +6,7 @@ This unit describes understand what a URL is, along with other concepts for crea
 
 ## URL
 
-A URL is an address that a user enters into a into a client, like a browser, to locate a specific server and a specific resource. Knowing how the URL works helps you organize your app around it. 
+A URL is an address that a user enters into a client, like a browser, to locate a specific server and a specific resource. Knowing how the URL works helps you organize your app around it. 
 
 Here's a typical URL:
 
@@ -40,7 +40,7 @@ The path portion of the URL consists of zero to many segments. Each segment is s
 
 A query is an optional part of the URL that's defined after the question mark (`?`) character. It consists of query parameter/value pairs delimited by either an ampersand (`&`) or a semicolon (`;`). It filters data further by asking for a number of records from a specific page. 
 
-The query in the example URL is `?page=1&pageSize=20`. Imagine that you have two million records on a resource. It would take a long time to return all those records. If you specify that you want 20 records, the data returns quickly and is small in size.
+The query in the example URL is `?page=1&pageSize=20`. Imagine that you have 2 million records on a resource. It would take a long time to return all those records. If you specify that you want 20 records, the data returns quickly and is small in size.
 
 ### Fragment
 
