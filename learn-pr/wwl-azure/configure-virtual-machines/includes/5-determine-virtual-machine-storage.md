@@ -1,13 +1,13 @@
 Just like any other computer, virtual machines in Azure use disks as a place to store an operating system, applications, and data. All Azure virtual machines have at least two disks – a Windows operating system disk (in the case of a Windows VM) and a temporary disk. Virtual machines also can have one or more data disks. All disks are stored as VHDs.
 
-:::image type="content" source="../media/AZ104_VM_Disks-d809d7cd.png" alt-text="Screenshot of the VM disks blade. The OS disk is shown. There are no data disks.":::
+:::image type="content" source="../media/virtual-machine-disks-ff57089c.png" alt-text="Screenshot of the VM disks blade. The OS disk is shown. There are no data disks.":::
 
 
 ## Operating System Disks
 
 Every virtual machine has one attached operating system disk. That OS disk has a pre-installed OS, which was selected when the VM was created. It’s registered as a SATA drive and labeled as the C: drive by default.
 
-## Temporary Disk
+## Temporary disk
 
 Every VM contains a temporary disk, which is not a managed disk. The temporary disk provides short-term storage for applications and processes and is intended to only store data such as page or swap files. Data on the temporary disk may be lost during a maintenance event or when you redeploy a VM. During a standard reboot of the VM, the data on the temporary drive should persist. However, there are cases where the data may not persist, such as moving to a new host. Therefore, any data on the temp drive should not be data that is critical to the system.
 
@@ -17,11 +17,11 @@ Every VM contains a temporary disk, which is not a managed disk. The temporary d
 > [!NOTE]
 > Don’t store data on the temporary disk. It provides temporary storage for applications and processes and is intended to only store data such as page or swap files.
 
-## Data Disks
+## Data disks
 
 A data disk is a managed disk that's attached to a virtual machine to store application data, or other data you need to keep. Data disks are registered as SCSI drives and are labeled with a letter that you choose. Each data disk has a maximum capacity of 4,095 gibibytes (GiB). The size of the virtual machine determines how many data disks you can attach to it and the type of storage you can use to host the disks.
 
-## Virtual Machine Storage Options
+## Virtual machine storage options
 
 Azure Premium Storage delivers high-performance, low-latency disk support for virtual machines (VMs) with input/output (I/O)-intensive workloads. VM disks that use Premium Storage store data on solid-state drives (SSDs). To take advantage of the speed and performance of premium storage disks, you can migrate existing VM disks to Premium Storage.
 

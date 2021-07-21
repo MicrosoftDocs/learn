@@ -1,5 +1,3 @@
-## Summary
-
 Azure Virtual Machines (VM) is one of several types of on-demand, scalable computing resources that Azure offers. Typically, you choose a VM when you need more control over the computing environment than the other choices offer.
 
 You should now be able to:
