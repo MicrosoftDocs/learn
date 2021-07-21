@@ -16,9 +16,9 @@ For example, suppose you have a logic app that needs to send an email based on c
 
 ## Actions
 
-Logic apps provide built-in triggers and actions so you can orchestrate workflows, communicate with other apps and services, and manage or manipulate data.
+Logic apps provide built-in triggers and actions; use logic apps to orchestrate workflows, communicate with other apps and services, and manage or manipulate data.
 
-There are many built-in actions that you can use. Here are some examples:
+Here are some of the many built-in actions:
 
 - Azure Service Bus
 - SQL Server
@@ -36,7 +36,7 @@ The Logic Apps Designer menu bar has two views of a logic app; both can be used 
 
 :::image type="content" source="../media/4-code-designer-view.png" alt-text="Choice of two views for a logic app.":::
 
-In the Logic Apps Designer menu bar, select **Code view** to see the JSON configuration for the Event Grid trigger you've created. By reviewing the JSON configuration code for your event triggers, you'll recognize the settings and concepts we've completed thus far. As you become more familiar with JSON, you will be able to confidenty edit the JSON configuration directly.
+In the Logic Apps Designer menu bar, select **Code view** to see the JSON configuration for the Event Grid trigger you've created. By reviewing the JSON configuration code for your event triggers, you'll recognize the settings and concepts we've completed thus far. As you become more familiar with JSON, you will be able to confidently edit the JSON configuration directly.
 
 ``` json
 {
