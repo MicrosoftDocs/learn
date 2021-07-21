@@ -1,10 +1,13 @@
-The online retailer is impressed with your first web application. Now they want you to build an API that you can read and write from. Their data might be stored in a database and might contain millions of records. For that reason, the retailer wants to see an app that uses different techniques that limit how much data is asked for.
+The online retailer is impressed with your first web application. Now it wants you to create an API that you can read and write from. The data might be stored in a database and might contain millions of records. For that reason, the retailer wants to see an app that uses techniques that limit how much data is asked for.
 
 ## Implement support to read and write data
 
-It's common to construct an API with a number of resources. Each resource can have a several operations available on it to read and write. Organizing by resource and by operations like read/write is called *create*, *read*, *update*, *delete* (CRUD). Implement the CRUD API on the resource **products**:
+It's common to construct an API with a number of resources. Each resource can have several operations available on it to read and write. Organizing by resource and by operations like read/write is called *create*, *read*, *update*, *delete* (CRUD). Implement the CRUD API on the `products` resource:
 
-1. Clone the repo at https://github.com/MicrosoftDocs/node-essentials by running this command:
+1. Clone the [node-essentials repo](https://github.com/MicrosoftDocs/node-essentials) by running the following command.
+
+   > [!NOTE]
+   > If you completed this step in the earlier exercise, you don't need to do it again.
 
    ```bash
    git clone https://github.com/MicrosoftDocs/node-essentials
@@ -12,7 +15,7 @@ It's common to construct an API with a number of resources. Each resource can ha
 
    This starter project contains the product files and some starter application code. All you need to do is to fill in the missing parts.
 
-1. To inspect the repo you cloned and go to the files you need, run this command:
+1. To inspect the repo that you cloned and go to the files that you need, run this command:
 
    ```bash
    cd node-essentials/nodejs-http/exercise-express-routing/reading-writing
@@ -30,15 +33,15 @@ It's common to construct an API with a number of resources. Each resource can ha
    -| package.json
    ```
 
-1. The **package.json** file contains a dependency **express**. In the terminal, run the following command to install it:
+1. The *package.json* file contains an `express` dependency. In the terminal, run the following command to install it:
 
    ```bash
    npm install
    ```
 
-   **npm** reads from the **dependencies** section in the **package.json**.
+   `npm` reads from the `dependencies` section in *package.json*.
 
-1. Open **app.js** to inspect it. The file should look like this:
+1. Open *app.js* to inspect it. The file should look like this:
 
    ```javascript
    const express = require('express')
@@ -68,13 +71,13 @@ It's common to construct an API with a number of resources. Each resource can ha
    app.listen(port, () => console.log(`Example app listening on port ${port}!`));
    ```
 
-   The **app.js** file shows a skeleton of a program. Your next job is to implement the routes.
+   The *app.js* file shows a skeleton of a program. Your next job is to implement the routes.
 
-### Implement the routes
+## Implement routes
 
-To implement the routes, add a little code, and then test it. Do this method-by-method until you have a fully functional API.
+To implement routes, add a little code and then test it. Do this method by method until you have a fully functional API.
 
-1. First, support reading from the API. Locate the part of the code that looks like this:
+1. Support reading from the API. Locate the part of the code that looks like this:
 
    ```javascript
    app.get('/products', (req, res) => {
@@ -82,7 +85,7 @@ To implement the routes, add a little code, and then test it. Do this method-by-
    })
    ```
 
-1. Replace that code with this code:
+   Replace it with this code:
 
    ```javascript
    app.get('/products', (req, res) => {
@@ -109,9 +112,9 @@ To implement the routes, add a little code, and then test it. Do this method-by-
    Connection closed
    ```
 
-The API responds with an empty array because you haven't written any data to it yet. Lets change that up next.
+The API responds with an empty array because you haven't written any data to it yet. Let's change that next.
 
-### Implement writing
+## Implement writing
 
 1. To implement writing, locate this code:
 
@@ -121,7 +124,7 @@ The API responds with an empty array because you haven't written any data to it 
    });
    ```
 
-1. Replace that code with this code:
+   Replace it with this code:
 
    ```javascript
    app.post('/products', function(req, res) {
@@ -131,7 +134,7 @@ The API responds with an empty array because you haven't written any data to it 
    });
    ```
 
-   The code reads incoming data from **req.body** and constructs a JavaScript object from it. Next, it's added to the array **products**. Finally, the new product is returned to the user.
+   The new code reads incoming data from `req.body` and constructs a JavaScript object from it. Next, it's added to the `products` array. Finally, the new product is returned to the user.
 
 1. To test the code, run the server program by running this command:
 
@@ -165,9 +168,9 @@ The API responds with an empty array because you haven't written any data to it 
    Connection closed
    ```
 
-   The response tells you that when you ran **client-post.js**, you wrote data to the API. Also, you ran **client-get.js** to query the API for data. The API responded with the data that you just wrote to it.
+   The response tells you that when you ran *client-post.js*, you wrote data to the API. Also, you ran *client-get.js* to query the API for data. The API responded with the data that you just wrote to it.
 
-### Implement the ability to update data
+## Implement the ability to update data
 
 1. To implement the ability to update your data, locate the code that looks like this:
 
@@ -175,7 +178,7 @@ The API responds with an empty array because you haven't written any data to it 
    app.put('/products', function(req, res) {});
    ```
 
-1. Replace that code with this code:
+   Replace it with this code:
 
    ```javascript
    app.put('/products', function(req, res) {
@@ -191,7 +194,7 @@ The API responds with an empty array because you haven't written any data to it 
    });
    ```
 
-   The code locates the record in the **products** array that matches the **id** property, and updates that record.
+   The new code locates the record in the `products` array that matches the `id` property, and it updates that record.
 
 1. To test the code, start the server application:
 
@@ -231,15 +234,15 @@ The API responds with an empty array because you haven't written any data to it 
    Connection closed
    ```
 
-### Implement delete
+## Implement deleting
 
-1. To implement delete, locate the code that looks like this:
+1. To implement deleting, locate the code that looks like this:
 
    ```javascript
    app.delete('/products/:id', function(req, res) {});
    ```
 
-1. Replace that code with this code:
+   Replace it with this code:
 
    ```javascript
    app.delete('/products/:id', function(req, res) {
@@ -249,7 +252,7 @@ The API responds with an empty array because you haven't written any data to it 
    });
    ```
 
-   The code finds the product item to be deleted. Then it filters out that item from the **products** array and responds with a filtered version of **products**.
+   The new code finds the product item to be deleted. Then it filters out that item from the `products` array and responds with a filtered version of `products`.
 
 1. To test the code, start the server application:
 
@@ -289,13 +292,13 @@ The API responds with an empty array because you haven't written any data to it 
    Connection closed
    ```
 
-   Congratulations, you've managed to implement a resource **products** by using a full CRUD.
+   Congratulations! You've implemented a `products` resource by using a full CRUD.
 
-### Implement CRUD
+## Implement CRUD
 
-Implementing CRUD for a resource is a common thing to do. Express has a method **route()** meant just for this purpose. By using the **route()** method, your code is grouped so that it's easier to read.
+Implementing CRUD for a resource is a common thing to do. Express has a `route()` method just for this purpose. When you use the `route()` method, your code is grouped so that it's easier to read.
 
-1. To implement CRUD, replace the code in **app.js** with this code:
+1. To implement CRUD, replace the code in *app.js* with this code:
 
    ```javascript
    const express = require('express')
@@ -348,7 +351,7 @@ Implementing CRUD for a resource is a common thing to do. Express has a method *
    node client-post.js
    ```
 
-1. Then, run this command to delete the record:
+1. Run this command to delete the record:
 
    ```bash
    node client-delete-route.js
@@ -367,6 +370,6 @@ Implementing CRUD for a resource is a common thing to do. Express has a method *
    Connection closed
    ```
 
-You used **client-delete-route.js** instead of **client-delete.js** in the previous exercise. The difference lies in how the route is implemented. The first version of **app.js** relies on deletions being done toward a route like this **/products/<id>**, with the unique identifier being sent as a route parameter.
+You used *client-delete-route.js* instead of *client-delete.js* in the previous exercise. The difference lies in how the route is implemented. The first version of *app.js* relies on deletions being done toward a route like `/products/<id>`, with the unique identifier being sent as a route parameter.
 
-When you use the **route()** method, it implements the deletion route differently, and wants you to send unique identifier through the body instead of as a route parameter. There's no right or wrong way to implement a deletion route.
+When you use the `route()` method, it implements the deletion route differently. It wants you to send unique identifier through the body instead of as a route parameter. There's no right or wrong way to implement a deletion route.
