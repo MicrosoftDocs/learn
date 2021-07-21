@@ -22,10 +22,10 @@ products:
   - vs
 prerequisites: None
 units:
-  - learn.student-evangelism.fixing-simple-mistakes.1-introduction
-  - learn.student-evangelism.introduction-to-git.2-fix-simple-mistakes
-  - learn.student-evangelism.introduction-to-git.3-exercise-fix-mistakes
-  - learn.student-evangelism.fixing-simple-mistakes.4-knowledge-check
-  - learn.student-evangelism.fixing-simple-mistakes.5-summary
+  - learn.student-evangelism.fixing-common-git-errors.1-introduction
+  - learn.student-evangelism.fixing-common-git-errors.2-fix-simple-mistakes
+  - learn.student-evangelism.fixing-common-git-errors.3-exercise-fix-mistakes
+  - learn.student-evangelism.fixing-common-git-errors.4-knowledge-check
+  - learn.student-evangelism.fixing-common-git-errors.5-summary
 badge:
   uid: learn.create-git-project.badge
