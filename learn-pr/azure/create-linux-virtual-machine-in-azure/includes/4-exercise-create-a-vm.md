@@ -1,4 +1,4 @@
-eRecall that our goal is to move an existing Linux server running Apache to Azure. We'll start by creating an Ubuntu Linux server.
+Recall that our goal is to move an existing Linux server running Apache to Azure. We'll start by creating an Ubuntu Linux server.
 
 ## Create a new Linux virtual machine
 
@@ -18,7 +18,7 @@ The VM creation experience in the portal is presented in a wizard format to walk
 
 After you complete all the required options (identified with red asterisks), you can skip the remainder of the wizard experience, and start creating the VM by selecting **Review + create** at the bottom of the wizard.
 
-We'll start with the **Basics** tab. Remember that these instructions use the sandbox. If you're using another Azure portal account, you may need to adapt some details accordingly.
+Remember that these instructions use the sandbox. If you're using another Azure portal account, you may need to adapt some details accordingly.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -42,7 +42,7 @@ We'll start with the **Basics** tab. Remember that these instructions use the sa
     <!-- Resource selection -->  
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-1. Select **Next: Disks >** to open the **Disks** tab.
+1. Select **Next: Disks** to open the **Disks** tab.
 
 1. On the **Disks** pane, enter the following values for each setting.
 
@@ -60,7 +60,7 @@ We'll start with the **Basics** tab. Remember that these instructions use the sa
 
     :::image type="content" source="../media/3-new-disk.png" alt-text="Screenshot of the Azure portal showing the newly created data disk line for the VM creation process." lightbox="../media/3-new-disk.png":::
 
-1. Select **Next: Networking >** to move to the **Networking** tab.
+1. Select **Next: Networking** to move to the **Networking** tab.
 
 1. On the **Networking** pane, accept all the default values for each setting.
 
