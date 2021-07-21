@@ -1,4 +1,4 @@
-In Azure Data Lake Storage you can upload data by using REST APIs. Use any programming language that supports building and sending HTTP-based messages. In this exercise, you'll try this out using a simple .NET Core app with C#.
+In Azure Data Lake Storage, you can upload data by using REST APIs. Use any programming language that supports building and sending HTTP-based messages. In this exercise, you'll try this out using a simple .NET Core app with C#.
 
 > [!NOTE]
 > If you don't have an Azure account, don't want to install .NET Core, or prefer not to do this exercise in your account, just read through the exercise to understand how to invoke the REST API services.
