@@ -15,7 +15,7 @@ F# has numerous features that include:
 
 There are many language features and aspects of the F# language that make it easy to be productive when writing code:
 
-- **Succinct:**: You write less code with F# that's also expressed in a clear manner.
+- **Succinct:** You write less code with F# that's also expressed in a clear manner.
 - **Performant:** F# comes with built-in parallelism and concurrency. It also uses the fact that it's part of the .NET runtime to speed things up.
 - **Robust:**  There are language constructs that makes the code fault tolerant and robust like immutable by default,  null value management and more.
 - **Supports multiple programming paradigms:** F# lets you choose the patterns and practices most effective for solving problems by providing strong support for functional and object programming paradigms.
