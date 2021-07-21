@@ -7,7 +7,7 @@ Azure uses **system routes** to direct network traffic between virtual machines,
 
 For example, consider this virtual network with two subnets. Communication between the subnets and from the frontend to the internet are all managed by Azure using the default system routes.
 
-:::image type="content" source="../media/AZ104_System_Routes-55e77a26.png" alt-text="Diagram of two subnets. One subnet is using a System route to access the internet. The other subnet is using a System route to access the first subnet. Both subnets are accessing a route table.":::
+:::image type="content" source="../media/system-routes-08992506.png" alt-text="Diagram of two subnets. One subnet is using a System route to access the internet. The other subnet is using a System route to access the first subnet. Both subnets are accessing a route table.":::
 
 
 > [!NOTE]

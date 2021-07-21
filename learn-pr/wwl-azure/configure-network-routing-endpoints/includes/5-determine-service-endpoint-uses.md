@@ -2,7 +2,7 @@ A virtual network service endpoint provides the identity of your virtual network
 
 Today, Azure service traffic from a virtual network uses public IP addresses as source IP addresses. With service endpoints, service traffic switches to use virtual network private addresses as the source IP addresses when accessing the Azure service from a virtual network. This switch allows you to access the services without the need for reserved, public IP addresses used in IP firewalls.
 
-:::image type="content" source="../media/AZ104_Service_Endpoint_Addresses-f5cf1580.png" alt-text="Diagram of a VM connecting to the Azure service through a service endpoint. The Azure services include CosmosDB, Event Hub, Key Vault, SQL, and Storage. The Azure Service cannot connect to the Internet.":::
+:::image type="content" source="../media/service-endpoint-addresses-a027197f.png" alt-text="Diagram of a VM connecting to the Azure service through a service endpoint. The Azure services include CosmosDB, Event Hub, Key Vault, SQL, and Storage. The Azure Service cannot connect to the Internet.":::
 
 
 ## Why use a service endpoint?
