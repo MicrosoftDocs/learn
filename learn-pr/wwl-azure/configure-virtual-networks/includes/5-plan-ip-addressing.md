@@ -9,7 +9,7 @@ You can assign IP addresses to Azure resources to communicate with other Azure r
 > [!NOTE]
 > IP Addresses are never managed from within a virtual machine.
 
-## Static vs Dynamic addressing
+## Static vs dynamic addressing
 
 IP addresses can also be statically assigned or dynamically assigned. Static IP addresses do not change and are best for certain situations such as:
 
