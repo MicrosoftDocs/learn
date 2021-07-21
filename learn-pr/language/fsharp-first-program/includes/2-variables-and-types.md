@@ -70,7 +70,7 @@ Ok, you know the difference, but which one to use? Well, `printfn` and `printf` 
 
 ### Formatting
 
-Aa part of printing to the screen, you might want to combine text and numbers or you want the output to be formatted in a certain way.
+As part of printing to the screen, you might want to combine text and numbers or you want the output to be formatted in a certain way.
 
 To format you can use a .NET function like `string.Format`, which uses positional arguments like so `string.Format("My name is {0} and I live in {1}", "Chris", "UK")`. You can also use format specifiers (this is the most commonly used way to format in F#) as part of what you're trying to print, like in this example:
 
