@@ -37,9 +37,9 @@ products:
 units:
 - learn.azure.cna-deploy-maintain-cloud-native-apps.1-introduction
 - learn.azure.cna-deploy-maintain-cloud-native-apps.2-define-principles-benefits-devops
-- learn.azure.cna-deploy-maintain-cloud-native-apps.3-exercise-implement-infrastructure-as-code
-- learn.azure.cna-deploy-maintain-cloud-native-apps.4-deploy-maintain-cloud-native-app-using-github
-- learn.azure.cna-deploy-maintain-cloud-native-apps.5-exercise-provision-cloud-native-app-using-github
+- learn.azure.cna-deploy-maintain-cloud-native-apps.exercise-implement-infrastructure-as-code
+- learn.azure.cna-deploy-maintain-cloud-native-apps.deploy-maintain-cloud-native-app-using-github
+- learn.azure.cna-deploy-maintain-cloud-native-apps.exercise-provision-cloud-native-app-using-github
 - learn.azure.cna-deploy-maintain-cloud-native-apps.6-use-devops-iot-scenarios
 - learn.azure.cna-deploy-maintain-cloud-native-apps.7-exercise-configure-cicd-iot-scenarios
 - learn.azure.cna-deploy-maintain-cloud-native-apps.8-knowledge-check

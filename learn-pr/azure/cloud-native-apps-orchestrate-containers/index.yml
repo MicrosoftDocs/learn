@@ -35,8 +35,8 @@ units:
 - learn.azure.cna-orchestrate-containers.3-exercise-create-aks-instance
 - learn.azure.cna-orchestrate-containers.4-developing-with-containers-and-aks
 - learn.azure.cna-orchestrate-containers.5-exercise-setup-aks
-- learn.azure.cna-orchestrate-containers.6-connect-components
-- learn.azure.cna-orchestrate-containers.7-exercise-connect-container-to-web-app
+- learn.azure.cna-orchestrate-containers.6-connecting-components
+- learn.azure.cna-orchestrate-containers.7-exercise-connect-container-to-webapp
 - learn.azure.cna-orchestrate-containers.8-knowledge-check
 - learn.azure.cna-orchestrate-containers.9-summary
 badge:
