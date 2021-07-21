@@ -23,7 +23,7 @@ quiz:
       explanation: "That's incorrect. Azure Reservations helps save money by committing to one-year or three-year plans for multiple products."
     - content: "Create a budget and a spending threshold."
       isCorrect: true
-      explanation: "That's correct. Create a budget and a spending threshold. Billing Alerts willhelp monitor and manage billing activity for your Azure accounts. Budget thresholds can be evaluated and will be reset automatically at the end of a period."
+      explanation: "That's correct. Create a budget and a spending threshold. Billing Alerts will help monitor and manage billing activity for your Azure accounts. Budget thresholds can be evaluated and will be reset automatically at the end of a period."
     - content: "Create a management group."
       isCorrect: false
       explanation: "That's incorrect. Azure management groups provide a way for an organization to control and manage access, compliance, and policies for their subscription within their tenant."
