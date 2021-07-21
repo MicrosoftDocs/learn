@@ -3,8 +3,8 @@ uid: learn.fsharp-first-program.6-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Four multiple-choice questions
-  ms.date: 04/27/2020
+  description: Review your knowledge of building F# programs
+  ms.date: 07/21/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -15,15 +15,40 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: First question
+    - content: How would you declare a variable, holding an integer, who's value you
+        want to be able to change?
       choices:
-        - content: first choice
+        - content: By typing the following code `let number = 1`
+          isCorrect: false
+          explanation: Incorrect. You need the `mutable` keyword after the `let` keyword
+            to be able to change a value.
+        - content: By typing the following code `let mutable number = 1`
           isCorrect: true
-          explanation: Correct. because reasons
-        - content: second choice
+          explanation: Correct. Using `mutable` is the correct way to create variable that
+            can have its value changed.
+        - content: By typing the following code `let mut number = 1`
           isCorrect: false
-        - content: third choice
+          explanation: There's no `mut` keyword. Use the `mutable` keyword instead.
+    - content: What formatter would you use to format an integer?
+      choices:
+        - content: Use the `%s` formatter.
+          explanation: Incorrect. `%s` is used to format strings.
           isCorrect: false
-        - content: fourth choice
+        - content: Use `$"{variable}"`
+          explanation: Incorrect. That's a string interpolation. What's asked for here is
+            a formatter for a data type.
           isCorrect: false
-          explanation: Incorrect. because reasons
+        - content: Use the `%i` formatter.
+          explanation: Correct. That's the correct formatter to use.
+          isCorrect: true
+    - content: What's the correct operator for equality?
+      choices:
+        - content: The correct operator to use is `=`
+          isCorrect: true
+          explanation: Correct. That's the correct operator to use.
+        - content: The correct operator to use is `<>`
+          isCorrect: false
+          explanation: Incorrect. That operator means not equal to.
+        - content: The correct operator to use is `==`
+          isCorrect: false
+          explanation: Incorrect. There's only one equal sign for equality.

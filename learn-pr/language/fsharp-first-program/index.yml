@@ -2,14 +2,18 @@
 uid: learn.fsharp-first-program
 metadata:
   title: Write your first F# programs
-  description: In this module, you will learn about variables and data types. You will also look at outputting data to the screen and capture user input. Additionally you'll explore operators and ways to convert between data types.
-  ms.date: 06/04/2020
+  description: In this module, you will learn about variables and data types. You
+    will also look at outputting data to the screen and capture user input.
+    Additionally you'll explore operators and ways to convert between data
+    types.
+  ms.date: 07/21/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Write your first F# programs
-summary: Write your first F# programs, learn to work with input and output, data type conversions and operators.
+summary: Write your first F# programs, learn to work with input and output, data
+  type conversions and operators.
 abstract: |
   In this module you will:
   - Declare and use variables to store values.
@@ -26,7 +30,6 @@ products:
 prerequisites: |
   - Run commands at the console
   - Have F# (.NET Core) installed
-
 units:
   - learn.fsharp-first-program.1-introduction
   - learn.fsharp-first-program.2-variables-and-types
