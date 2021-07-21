@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-vnet-peering.create
-title: Create VNet peering
+title: Create virtual network peering
 metadata:
-  title: Create VNet peering
-  description: "Create VNet peering"
+  title: Create virtual network peering
+  description: "Create virtual network peering"
   ms.date: 07/21/2021
   author: wwlpublish
   ms.author: cynthist
