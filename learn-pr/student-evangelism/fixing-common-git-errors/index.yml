@@ -28,4 +28,4 @@ units:
   - learn.student-evangelism.fixing-common-git-errors.4-knowledge-check
   - learn.student-evangelism.fixing-common-git-errors.5-summary
 badge:
-  uid: learn.create-git-project.badge
+  uid: learn.fixing-common-git-errors.badge
