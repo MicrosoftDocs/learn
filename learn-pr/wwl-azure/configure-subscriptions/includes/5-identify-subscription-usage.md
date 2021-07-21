@@ -20,6 +20,6 @@ A Pay-As-You-Go (PAYG) subscription charges you monthly for the services you use
 
 An Enterprise Agreement provides flexibility to buy cloud services and software licenses under one agreement, with discounts for new licenses and Software Assurance. It's targeted at enterprise-scale organizations.
 
-## Azure for Students subscription
+## Azure for students subscription
 
 An Azure for Students subscription includes $100 in Azure credits to be used within the first 12 months plus select free services without requiring a credit card at sign-up. You must verify your student status through your organizational email address.
