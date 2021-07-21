@@ -10,7 +10,7 @@ Choose the tools and APIs that work best for you - they have the same capability
 
 The following image shows how all the tools interact with the same Azure Resource Manager API. The API passes requests to the Resource Manager service, which authenticates and authorizes the requests. Resource Manager then routes the requests to the appropriate resource providers.
 
-:::image type="content" source="../media/AZ104_Resource_Manager_Overview-341c8f10.png" alt-text="Resource Manager request model.":::
+:::image type="content" source="../media/resource-manager-016a1bac.png" alt-text="Resource Manager request model.":::
 
 
 ## Benefits

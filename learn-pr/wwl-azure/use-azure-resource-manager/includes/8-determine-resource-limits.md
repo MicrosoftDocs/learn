@@ -1,6 +1,6 @@
 Azure lets you view resource usage against limits this is helpful to track current usage, and plan for future use.
 
-:::image type="content" source="../media/AZ104_Check_Resource_Limits-32d5b93a.png" alt-text="Screenshot of the Subscription usage and quotas page. It shows quotas for Network Watchers, Public IP Addresses, Route Tables, and Virtual Networks by their location with the usage numbers by percent used and number of resources.":::
+:::image type="content" source="../media/check-resource-limits-4f522428.png" alt-text="Screenshot of the Subscription usage and quotas page. It shows quotas for Network Watchers, Public IP Addresses, Route Tables, and Virtual Networks by their location with the usage numbers by percent used and number of resources.":::
 
 
  -  The limits shown are the limits for your subscription.
