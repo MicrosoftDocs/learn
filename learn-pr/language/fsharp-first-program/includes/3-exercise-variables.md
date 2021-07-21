@@ -78,7 +78,7 @@ Part of learning to program in any language is learning to recognize compilation
    The build failed. Fix the build errors and run again.
    ```
 
-   The error message is saying "expected string but here was type int". Do you understand what the problem is? The problem is the use of the formatter `%s` instead of `%i` as you are giving the `printfn()` function the variable `aNumber` that's of type `int`. Lets correct the code
+   The error message is saying "expected string but here was type int". Do you understand what the problem is? The problem is the use of the formatter `%s` instead of `%i` as you are giving the `printfn` function the variable `aNumber` that's of type `int`. Lets correct the code
 
 1. Locate the row with the code "printfn "Here's a number %s" aNumber" and change it to:
 
@@ -93,4 +93,3 @@ Part of learning to program in any language is learning to recognize compilation
    ```
 
 Congratulations you've managed to debug a program by reading the code, understand what was wrong and fix it. Being able to recognize error messages and correct them is an essential skill to have as a developer.
-
