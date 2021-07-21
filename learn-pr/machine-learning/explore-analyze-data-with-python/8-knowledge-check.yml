@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-analyze-data-with-python.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 01/04/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "You have a NumPy array with the shape (2,20). What does this tell you about the elements in the array?"
+    choices:
+    - content: "The array is two dimensional, consisting of two arrays each with 20 elements"
+      isCorrect: true
+      explanation: "That is correct. A shape of (2,20) indicates a multidimensional array with two arrays, each containing 20 elements."
+    - content: "The array contains 2 elements, with the values 2 and 20"
+      isCorrect: false
+      explanation: "That is incorrect. A shape of (2,20) indicates a multidimensional array with two arrays, each containing 20 elements."
+    - content: "The array contains 20 elements, all with the value 2"
+      isCorrect: false
+      explanation: "That is incorrect. A shape of (2,20) indicates a multidimensional array with two arrays, each containing 20 elements."
+  - content: "You have a Pandas DataFrame named df_sales containing daily sales data. The DataFrame contains the following columns: year, month, day_of_month, sales_total. You want to find the average sales_total value. Which code should you use?"
+    choices:
+    - content: "df_sales['sales_total'].avg()"
+      isCorrect: false
+      explanation: "That is incorrect. Use the mean() method of the columns to return the average."
+    - content: "df_sales['sales_total'].mean()"
+      isCorrect: true
+      explanation: "That is correct. This code will return the average of the sales_total column values."
+    - content: "mean(df_sales['sales_total'])"
+      isCorrect: false
+      explanation: "That is incorrect. Use the mean() method of the columns to return the average."
+  - content: "You have a DataFrame containing data about daily ice cream sales. You use the corr method to compare the avg_temp and units_sold columns, and get a result of 0.97. What does this result indicate?"
+    choices:
+    - content: "On the day with the maximum units_sold value, the avg_temp value was 0.97"
+      isCorrect: false
+      explanation: "That is incorrect. The corr method returns the correlation between two numeric columns."
+    - content: "Days with high avg_temp values tend to coincide with days that have high units_sold values"
+      isCorrect: true
+      explanation: "That is correct. The corr method returns the correlation, and a value near 1 indicates a positive correlation."
+    - content: "The units_sold value is, on average, 97% of the avg_temp value"
+      isCorrect: false
+      explanation: "That is incorrect. The corr method returns the correlation between two numeric columns."

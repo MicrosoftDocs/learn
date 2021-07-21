@@ -64,7 +64,7 @@ Let's repeat what we did in the preceding exercise to add another Azure Cosmos D
     If you do not see your connection listed, follow these steps to create a new connection.
 
     1. In the **Azure Cosmos DB details** section, under the **Cosmos DB account connection** setting, select the **New** link.
-    
+
     1. When the **New Cosmos DB connection** dialog box appears, select **OK** to create the connection.
 
 1. Enter the following remaining values for each setting in this pane. At any time, to learn more about the purpose of each setting, you can select the information icon to its right.
@@ -72,7 +72,7 @@ Let's repeat what we did in the preceding exercise to add another Azure Cosmos D
     > [!NOTE]
     > Ensure you enter the following values precisely as documented here:
     > - **Collection Name** = `Bookmarks` with a capital B
-    > - **Partition key** = `id` (slash id; NOT curly brackets or any combination of curly brackets and slashes)
+    > - **Partition key** = `/id` (slash id; NOT curly brackets or any combination of curly brackets and slashes)
 
     | Setting | Value | Description |
     |---|---|---|
@@ -104,7 +104,7 @@ We now have an Azure Cosmos DB input binding. It's time to add an output binding
     > [!NOTE]
     > Ensure you enter the following values precisely as documented here:
     > - **Collection Name** = `Bookmarks` with a capital B
-    > - **Partition key** = `id` (slash id; NOT curly brackets or any combination of curly brackets and slashes)
+    > - **Partition key** = `/id` (slash id; NOT curly brackets or any combination of curly brackets and slashes)
 
     | Setting | Value | Description |
     |---|---|---|
