@@ -1,7 +1,6 @@
 You now have a working pipeline that deploys your Bicep file to your Azure environment. However, whenever you change your files, you manually start your pipeline. In this unit, you'll learn how to trigger your pipeline automatically whenever your Bicep code changes.
 
-> [!NOTE]
-> The commands in this unit are shown to illustrate the concepts. Don't run them yet. You'll practice what you learn here soon.
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
 
 ## What are pipeline triggers?
 

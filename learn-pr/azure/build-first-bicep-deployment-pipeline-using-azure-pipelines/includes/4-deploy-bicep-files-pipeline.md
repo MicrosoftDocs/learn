@@ -1,7 +1,6 @@
 Now that you've created a basic pipeline, you're ready to configure it to deploy your Bicep files. In this unit you'll learn how to deploy Bicep code from a pipeline, and how you can configure the deployment steps.
 
-> [!NOTE]
-> The commands in this unit are shown to illustrate the concepts. Don't run them yet. You'll practice what you learn here soon.
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
 
 ## Service connections
 
