@@ -2,14 +2,14 @@
 uid: learn.azure.cna-orchestrate-containers
 metadata:
   title: Orchestrate containers for cloud-native apps with AKS
-  description: Cloud-native applications are modular in nature, with components separated and self-contained. Components can be encapsulated in containers, such as those created with Docker, or published from an Azure service. Dynamic scaling can then be managed by Kubernetes. We'll learn to decide when Kubernetes is right for our Cloud Native app, and we'll see how to use it as a first building block of our Cloud Native architecture.
+  description: Cloud-native applications are modular in nature, with components separated and self-contained. Components can be encapsulated in containers, such as those created with Docker, or published from an Azure service. Dynamic scaling can then be managed by Kubernetes. We'll learn to decide when Kubernetes is right for our cloud-native app, and we'll see how to use it as a first building block of our cloud-native architecture.
   ms.date: 10/23/2020
   author: TomReidNZ
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Orchestrate containers for cloud-native apps with AKS 
-summary: Cloud-native applications are modular in nature, with components separated and self-contained. Components can be encapsulated in containers, such as those created with Docker, or published from an Azure service. Dynamic scaling can then be managed by Kubernetes. We'll learn to decide when Kubernetes is right for our Cloud Native app, and we'll see how to use it as a first building block of our Cloud Native architecture.
+summary: Cloud-native applications are modular in nature, with components separated and self-contained. Components can be encapsulated in containers, such as those created with Docker, or published from an Azure service. Dynamic scaling can then be managed by Kubernetes. We'll learn to decide when Kubernetes is right for our cloud-native app, and we'll see how to use it as a first building block of our cloud-native architecture.
 abstract: |
   In this module, you will:
   - Create a Kubernetes AKS cluster
@@ -35,8 +35,8 @@ units:
 - learn.azure.cna-orchestrate-containers.3-exercise-create-aks-instance
 - learn.azure.cna-orchestrate-containers.4-developing-with-containers-and-aks
 - learn.azure.cna-orchestrate-containers.5-exercise-setup-aks
-- learn.azure.cna-orchestrate-containers.6-connecting-components
-- learn.azure.cna-orchestrate-containers.7-exercise-connect-container-to-webapp
+- learn.azure.cna-orchestrate-containers.6-connect-components
+- learn.azure.cna-orchestrate-containers.7-exercise-connect-container-to-web-app
 - learn.azure.cna-orchestrate-containers.8-knowledge-check
 - learn.azure.cna-orchestrate-containers.9-summary
 badge:
