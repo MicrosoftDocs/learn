@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.serverless-go
 metadata:
   title: Build serverless apps with Go and custom handlers
-  description: You can build serverless apps by using almost any programming language that supports HTTP primitives. By using custom handlers in serverless, you can choose a runtime that suits you. The runtime or programming language doesn't need first-class support.
+  description: You can build serverless apps by using almost any programming language that supports HTTP primitives. By using custom handlers, you can choose a runtime that suits you.
   ms.date: 07/12/2021
   author: softchris
   ms.author: chnoring

@@ -3,7 +3,7 @@ uid: learn.student-evangelism.serverless-go.exercise-custom-handler
 title: Exercise - Custom handler
 metadata:
   title: Exercise - Custom handler
-  description: Build and run a serverless API by using Go.
+  description: Build and run a serverless app by using Go.
   author: softchris
   ms.author: chnoring
   ms.date: 07/12/2021

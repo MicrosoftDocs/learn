@@ -1,18 +1,18 @@
 In this exercise, we are looking to extend our application with a route that can trigger on a message queue message.
 
 > [!NOTE]
-> You should have downloaded the following software before carying out this exercise [download Azurite extension](https://marketplace.visualstudio.com/items?itemName=Azurite.azurite&azure-portal=true) and [download Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/?azure-portal=true) and also the needed dependencies to work with Azure Functions, that is [download Azure Functions Core Tools](/azure/azure-functions/functions-run-local?tabs=macos%2Ccsharp%2Cbash#v2&azure-portal=true)
+> You should have downloaded the following software before carrying out this exercise [download Azurite extension](https://marketplace.visualstudio.com/items?itemName=Azurite.azurite&azure-portal=true) and [download Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/?azure-portal=true) and also the needed dependencies to work with Azure Functions, that is [download Azure Functions Core Tools](/azure/azure-functions/functions-run-local?tabs=macos%2Ccsharp%2Cbash#v2&azure-portal=true)
 
-## Scaffold application
+## Scaffold the app
 
-For this exercise, we will start on a new Function app. Create a new directory and place yourself in it. Activate the command palette:
+For this exercise, we will start on a new Functions app. Create a new directory and place yourself in it.
 
-1. In the Menu, select View > Command Palette
-1. Select **Azure Functions: Create New Project**
+1. In the Menu, select **View** > **Command Palette**.
+1. Select **Azure Functions: Create New Project**.
 1. Select folder, usually you want the folder you are standing in.
 1. In select a language, select **Custom Handler**
-1. In Select a template for your first function, select **HttpTrigger**
-1. Give it a name, **queueTrigger**
+1. In Select a template for your first function, select **HttpTrigger**.
+1. Give it a name, **queueTrigger**.
 1. Select authorization level, **anonymous**. You can change that later if you want.
 
 1. At the root, create a file _server.go_. Your project should now have the following files:
@@ -57,7 +57,7 @@ For this exercise, we will start on a new Function app. Create a new directory a
 
    What you've done is to set the `name` property, you will refer to that one later in code. You've also changed the trigger type to `queueTrigger`, which makes it possible to listen to queue messages. The `queueName` points out a specific queue. Later when you run the emulator, you need to create a queue with such a name. Finally you pointed out a variable in _local.settings.json_ that will need to contain the connection string to the queue.
 
-## Build app
+## Build the app
 
 At this point, you have an app skeleton, and you are now ready to add code that can handle incoming queue messages.
 
@@ -152,9 +152,9 @@ At this point, you have an app skeleton, and you are now ready to add code that 
    go build server.go
    ```
 
-## Configure environment
+## Configure the environment
 
-The next step is to configure your environment. Because you are developing locally, you need to set it up so that you can talk to an emulated message queue.
+The next step is to configure your environment. Because you're developing locally, you need to set it up so that you can talk to an emulated message queue.
 
 1. In the file _local.settings.json_, locate an element in `Values` called `AzureWebJobsStorage` (or add it if missing) and give it the value **UseDevelopmentStorage=true**, your JSON entry should look like so:
 
@@ -162,7 +162,7 @@ The next step is to configure your environment. Because you are developing local
    "AzureWebJobsStorage" : "UseDevelopmentStorage=true"
    ```
 
-1. Next you need to start the Azurite extension. Start it by opening the command palette **View > Command palette** and select **Azurite: Start Queue Service**.
+1. Next you need to start the Azurite extension. Start it by opening the command palette (**View** > **Command palette**) and then selecting **Azurite: Start Queue Service**.
 
    > [!NOTE]
    > This will create some local files in your project.
@@ -171,7 +171,7 @@ The next step is to configure your environment. Because you are developing local
 
    ![Azure storage explorer, emulator](../media/azure-storage-explorer-emulator.png)
 
-1. Right-click the Queues node and select to create a new queue, give it the name **items**.
+1. Right-click the Queues node and select to create a new queue. Give it the name **items**.
 
    > [!NOTE]
    > You can name the queue what you want. However you are about to configure your _function.json_ file so whatever you name the queue here, it needs to go into _function.json_.
@@ -190,7 +190,7 @@ The next step is to configure your environment. Because you are developing local
 
     The `queueName` property has the same name as the queue you created in Azure Storage Explorer. Furthermore, the `connection` property points to the value you set up in _local.settings.json_. Finally, the `name` property has the value **queueItem**, this value is something your Go code is using to parse out the queue message.
 
-## Run app
+## Run the app
 
 At this point, everything is set up. All you need to do is to run the app and start Azure Storage Explorer and create a queue message and your code should be able to consume said message.
 
@@ -215,4 +215,6 @@ At this point, everything is set up. All you need to do is to run the app and st
 
    Your function was able to consume the queue message and write out its content.
 
-Congratulations. You were able to build an Azure Function in Go, that's able to trigger on a queue message. You were able to parse that message. It's now up to you what you want to do with an incoming message. You could store it in a database or maybe send it as the payload in a web request, you decide.
+Congratulations! You were able to build an Azure Function in Go, that's able to trigger on a queue message. You were able to parse that message. 
+
+It's now up to you what you want to do with an incoming message. You could store it in a database or maybe send it as the payload in a web request. You decide.

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.serverless-go.web-api
-title: Web API
+title: Web app
 metadata:
-  title: Web API
-  description: Build a Web API by using Go.
+  title: Web app
+  description: Build a web app by using Go.
   author: softchris
   ms.author: chnoring
   ms.date: 07/12/2021
