@@ -1,5 +1,3 @@
-# Exercise - Write a test
-
 In this exercise, we'll write tests with a few basic steps:
 
 * Create a test project

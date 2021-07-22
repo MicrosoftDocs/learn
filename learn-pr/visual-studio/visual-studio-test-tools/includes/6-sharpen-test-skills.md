@@ -1,7 +1,12 @@
 # Sharpen your test writing skills
 
-* You can brush up on different types of tests and more testing concepts with [Introduction to software testing concepts](/learn/modules/visual-studio-test-concepts/).
-* There are many tools out there to help you write good tests that help make your tests easy to understand, avoid repetition, and help you test any architecture. Let's go over some popular ones and their advantages.
+You can brush up on different types of tests and more testing concepts with [Introduction to software testing concepts](/learn/modules/visual-studio-test-concepts/). There are many tools out there to help you write good tests that help make your tests easy to understand, avoid repetition, and help you test any architecture. Let's go over some popular ones and their advantages.
+
+This unit will cover a few useful test writing tips:
+
+* **Fluent assertions**: Enables using assert statements that are more human-readable.
+* **Data driven tests**: Run the same test repeatedly with different parameters.
+* **Mocking**: Isolate your test by mocking parts of your code that don't affect the test outcome.
 
 ## Fluent Assertions
 

@@ -17,9 +17,6 @@ quiz:
   questions:
   - content: If you have one method that you'd like to test with multiple different inputs, what testing tool could help you?
     choices:
-    - content: Fluent Assertions
-      isCorrect: false
-      explanation: "Not quite! Try again."
     - content: "Data driven tests"
       isCorrect: true
       explanation: "You are correct! Data driven tests can reduce repetition in your code by letting you run a test with multiple different inputs."
@@ -40,6 +37,3 @@ quiz:
     - content: "Mocking"
       isCorrect: true
       explanation: "Correct! Mocking uses stubs and shims to isolate code so you are only testing one specific piece of your project at a time."
-    - content: "Behavior driven tests"
-      isCorrect: false
-      explanation: "Not quite! Try again."
