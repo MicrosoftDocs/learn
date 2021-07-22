@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-storage-tools.use-import-export-service
-title: Use the Import and Export service
+title: Use the import and export service
 metadata:
-  title: Use the Import and Export service
-  description: "Use the Import and Export service"
-  ms.date: 07/21/2021
+  title: Use the import and export service
+  description: "Use the import and export service"
+  ms.date: 07/22/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

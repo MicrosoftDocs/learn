@@ -7,6 +7,8 @@ To fully access resources after you sign in, Storage Explorer requires both mana
 
 ## Connecting to storage
 
+Storage Explorer is used to connect to different storage accounts.
+
  -  Connect to storage accounts associated with your Azure subscriptions.
  -  Connect to storage accounts and services that are shared from other Azure subscriptions.
  -  Connect to and manage local storage by using the Azure Storage Emulator.
