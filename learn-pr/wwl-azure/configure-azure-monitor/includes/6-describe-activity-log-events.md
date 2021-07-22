@@ -8,7 +8,7 @@ With the Activity Log, you can determine the ‘what, who, and when’ for any w
  -  The status of the operation.
  -  The values of other properties that might help you research the operation.
 
-:::image type="content" source="../media/AZ104_Activity_Log-93eb3ca8.png" alt-text="Activity log is shown gathering information from compute and non-compute resources.":::
+:::image type="content" source="../media/activity-log-7d1913ad.png" alt-text="Activity log is shown gathering information from compute and non-compute resources.":::
 
 
 > [!NOTE]

@@ -1,5 +1,3 @@
-## Summary
-
 Azure Monitor helps you maximize the availability and performance of your applications and services.
 
 You should now be able to:

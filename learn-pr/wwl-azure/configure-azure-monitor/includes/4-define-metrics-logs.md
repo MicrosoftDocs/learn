@@ -7,7 +7,7 @@ All data collected by Azure Monitor fits into one of two fundamental types, [met
 
 For many Azure resources, the data collected by Azure Monitor is displayed on the Overview page in the Azure portal. For example, virtual machines have several charts displaying performance metrics. Click on any of the graphs to open the data in Metric explorer in the Azure portal, which allows you to chart the values of multiple metrics over time. You can view the charts interactively or pin them to a dashboard to view them with other visualizations.
 
-:::image type="content" source="../media/AZ104_Monitoring_Data_Plaftform-f338f256.png" alt-text="Screenshot of the metric analytics page.":::
+:::image type="content" source="../media/monitor-data-platform-7dbebda9.png" alt-text="Screenshot of the metric analytics page.":::
 
 
 ## Logs
