@@ -10,7 +10,7 @@ To set up a .NET project to work with dependencies, we'll use Visual Studio Code
 
 1. In Visual Studio Code, select **File** > **Open Folder**.
 
-1. Create a new folder named **DotNetDependencies** in the location of your choice, and then click **Select Folder**.
+1. Create a new folder named **DotNetDependencies** in the location of your choice, and then select **Select Folder**.
 
 1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
 
@@ -93,9 +93,9 @@ You can close the **Extension: C#** tab to focus on the code we'll be writing.
     ```csharp
     using Humanizer;
     ```
-    
+
     Your **Program.cs** should now look like this:
-    
+
     ```csharp
     using System;
     using Humanizer;
