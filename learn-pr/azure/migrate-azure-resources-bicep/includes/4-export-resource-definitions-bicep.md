@@ -8,7 +8,7 @@ The Azure portal provides multiple methods of exporting Azure resources to a tem
 
 There are multiple ways to export a single resource to a template within the Azure portal. You can export a resource from its resource group or from the resource itself. Both methods will provide you with the same exported template.
 
-To export a template from the resource group from the Azure portal:
+To export a JSON template from the resource group from the Azure portal:
 
 1. Navigate to the resource group that contains the resource you want to export.
 
