@@ -1,6 +1,6 @@
 When you build a query, you start by determining which tables have the data that you're looking for. Each data source and solution stores its data in dedicated tables in the Log Analytics workspace. Documentation for each data source and solution includes the name of the data type that it creates and a description of each of its properties. Many queries will only require data from a single table, but others may use a variety of options to include data from multiple tables.
 
-:::image type="content" source="../media/AZ104_Querying_Language_Tables-a533c7d7.png" alt-text="Illustration showing how Log Analytics queries are built from data in dedicated tables in a Log Analytics workspace. An example of a query is given that uses the main query tables Event, Syslog, Heartbeat, and Alert.":::
+:::image type="content" source="../media/query-tables-f3872e3a.png" alt-text="Illustration showing how Log Analytics queries are built from data in dedicated tables in a Log Analytics workspace. An example of a query is given that uses the main query tables Event, Syslog, Heartbeat, and Alert.":::
 
 
 Some common query tables are: Event, Syslog, Heartbeat, and Alert.
@@ -9,10 +9,10 @@ The basic structure of a query is a source table followed by a series of operato
 
 ```
 Event
- | where (EventLevelName == "Error")
- | where (TimeGenerated &gt; ago(1days))
- | summarize ErrorCount = count() by Computer
- | top 10 by ErrorCount desc
+| where (EventLevelName == "Error")
+| where (TimeGenerated &gt; ago(1days))
+| summarize ErrorCount = count() by Computer
+| top 10 by ErrorCount desc
 ```
 
 Some common operators are:

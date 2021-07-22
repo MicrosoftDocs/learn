@@ -4,7 +4,7 @@ Log queries help you to use the data collected in Azure Monitor Logs. A powerful
 
 Some features in Azure Monitor such as insights and solutions process log data without exposing you to the underlying queries. To use other features of Azure Monitor, you should understand how queries are constructed and how you can use them to interactively analyze data in Azure Monitor Logs.
 
-:::image type="content" source="../media/AZ104_Log_Analytics-01e53eb9.png" alt-text="Screenshot of Logs blade in Azure Monitor.":::
+:::image type="content" source="../media/log-analytics-38112dc9.png" alt-text="Screenshot of Logs blade in Azure Monitor.":::
 
 
 ## Example 1 - Assessing updates
