@@ -1,6 +1,6 @@
 # Sharpen your test writing skills
 
-* You can brush up on different types of tests and more testing concepts in the [Testing concept learning module](../../visual-studio-test-concepts/1-introduction).
+* You can brush up on different types of tests and more testing concepts with [Introduction to software testing concepts](/learn/modules/visual-studio-test-concepts/).
 * There are many tools out there to help you write good tests that help make your tests easy to understand, avoid repetition, and help you test any architecture. Let's go over some popular ones and their advantages.
 
 ## Fluent Assertions

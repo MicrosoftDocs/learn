@@ -31,6 +31,7 @@ Start testing your C# apps with the testing tools in Visual Studio.
 
 1. Upon completion of this module, the student will be able to create a test project, add references to product code, and write tests.
 2. Upon completion of this module, the student will be able to view, run, and debug tests in Test Explorer.
+3. Sharpen the student's test writing skills with fluent assertions, data driven tests, and mocking.
 
 ## Chunk your content into subtasks
 
@@ -38,15 +39,42 @@ Identify the subtasks of C# Testing Tutorial
 
 | Subtask | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- |
-| Create a test project | Knowledge check | 1 | Yes |
-| Add a reference from the test project to product code  | Knowledge check | 1 | No, combine with create test. |
+| Define a unit test | Knowledge check | 1 | Yes |
+| Create a test project and add a reference from the test project to product code  | Knowledge check | 1 | No, combine with create test. |
+| The 3 A's Arrange, Act Assert  | Knowledge check | 1 | No, combine with create test. |
+| Run a test  | Knowledge check | 1 | No, combine with create test. |
+| Red Green Refactor  | Knowledge check | 1 | No, combine with create test. |
+| Different Asserts  | Knowledge check | 1 | No, combine with create test. |
 | Write a test | Exercise | 1 | Yes |
-| View tests in the Test Explorer | Exercise | 2 | Yes |
-| Run tests from the Test Explorer | Exercise | 2 | No, combine with view tests. |
-| Debug tests from the Test Explorer | Exercise | 2 | No, combine with view tests. |
+| View, run, and debug test suites in the Test Explorer | Knowledge check | 2 | Yes |
+| Create and manage a test suite | Exercise | 1 | Yes |
 | Sharpen your test writing skills | Knowledge check | 3 | Yes |
 
 ## Outline the units
+
+- Introduction
+- Concept: Create a test
+  - What's a unit test
+  - The 3 As, Arrange, Act, Assert
+  - Mini-run test instruction
+  - Red green refactor (fail at least once)
+  - Different asserts
+- Exercise: Write a test
+  - Create a test project, start with a failing red test, add reference, minimal test impl, green test
+  - Different asserts
+- Concept: View, run, and debug test suites in the Test Explorer
+  - What's a test suite
+  - Running a suite
+  - Running only failing test
+  - Other features with the explorer
+- Exercise: Create and manage a test suite
+  - Create a suite
+  - See certain tests fail, only rerun those
+- Concept: Sharpen your test skills
+  - Sharpen your test skills: fluent assertions, data driven tests, mocking
+  - Knowledge check
+- Summary
+- Check
 
 1. **Introduction**
 

@@ -8,11 +8,13 @@ Suppose you are creating a calculator app for school and you've been able to suc
 
 ## What will we be doing?
 
-Here, you'll start adding tests to your program by:
+Here, you'll start testing your program by:
 
-* **Adding a test project**: All tests are kept inside of test projects that reference your product code.
-* **Write your first test**: Learn the basic parts of writing a test.
-* **Use Visual Studio to run and debug your tests**: See the output of your tests and interact with them.
+* **Write a test**: Learn the basic parts of writing a test and use test projects that reference your product code.
+* **Use Visual Studio to run and debug your tests**: See the output of your tests and interact with a whole suite of tests.
+* **Sharped your test writing skills**: Use fluent assertions, data driven tests, and mocking to expand your testing skills.
+
+If you want to familiarize yourself with the basic concepts of software testing before you dive into writing tests see [Introduction to software testing concepts](/learn/modules/visual-studio-test-concepts/).
 
 ## What is the main goal?
 
