@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/21/2021
+  ms.date: 07/22/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -16,11 +16,11 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Another administrator creates an Azure virtual machine scale set with five virtual machines. Later, alerts show the VMs are all running at max capacity with the CPU being fully consumed. However, additional VMs are not deploying in the scale set. What should be done to ensure that additional VMs are deployed when the CPU is 75% consumed?"
+  - content: "Another administrator creates an Azure virtual machine scale set with five virtual machines. Later, alerts show the VMs are all running at max capacity with the CPU being fully consumed. However, more VMs are not deploying in the scale set. What should be done to ensure that additional VMs are deployed when the CPU is 75% consumed?"
     choices:
     - content: "Enable the autoscale option."
       isCorrect: true
-      explanation: "That's correct. When autoscale is enabled the parameters for when to scale are configured. To meet the requirements of this scenario, enable the autoscale option so that additional VMs are created when the CPU is 75% consumed."
+      explanation: "That's correct. When autoscale is enabled the parameters for when to scale are configured. To meet the requirements of this scenario, enable the autoscale option so that more VMs are created when the CPU is 75% consumed."
     - content: "Manually increase the instance count."
       isCorrect: false
       explanation: "That's incorrect. Manually increases the instance count is time consuming and error prone. Is there a more automated way to do this?"
