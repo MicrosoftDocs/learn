@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/3-building-a-basic-app.md)]
+  [!include[](includes/3-building-basic-app.md)]
