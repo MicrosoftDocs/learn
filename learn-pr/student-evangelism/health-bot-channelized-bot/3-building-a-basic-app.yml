@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.health-bot-channelized-bot.3-building-a-basic-app
-title: Building a Basic App
+title: Build a basic app
 metadata:
-  title: Building a Basic App
-  description: In this unit, you'll learn how to build a a basic app on Teams app studio.
+  title: Build a basic app
+  description: In this unit, you'll learn how to build a basic app with App Studio for Teams.
   author: shreyan1999
   ms.author: chnoring
   ms.date: 05/21/2021

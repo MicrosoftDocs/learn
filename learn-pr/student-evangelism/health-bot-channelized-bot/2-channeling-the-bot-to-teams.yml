@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.health-bot-channelized-bot.2-channeling-the-bot-to-teams
-title: Channeling the Bot to Microsoft Teams
+title: Connect the bot to Microsoft Teams
 metadata:
-  title: Channeling the Bot to Microsoft Teams
-  description: In this unit, the bot will be channelized to Microsoft Teams.
+  title: Connect the bot to Microsoft Teams
+  description: In this unit, you'll make the bot available on Microsoft Teams.
   author: shreyan1999
   ms.author: chnoring
   ms.date: 05/21/2021

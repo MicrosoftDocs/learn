@@ -1,114 +1,112 @@
-In the previous unit we did go through the steps to channelize the bot to Microsoft Teams using the ID that we obtained from the Health Bot platform. Now lets further see how to wrap up this bot into a Teams App using Microsoft Teams App Studio.
+In the previous unit, you learned how to make the bot available on Microsoft Teams. Now you'll learn how to wrap the bot into a Teams app by using App Studio.
 
-## Creating basic app Microsoft Teams App Studio
+## Create a basic app by using App Studio
 
-App Studio makes it easy to start creating or integrating your own Microsoft Teams apps, whether you develop custom apps for your enterprise or SaaS applications for Teams around the world by streamlining the creation of the manifest and package for your app and providing useful tools like the Card Editor and a React control library. For more information, see [Manage your apps with App Studio for Microsoft Teams](/microsoftteams/platform/concepts/build-and-test/app-studio-overview).
+App Studio for Teams makes it easy to start creating or integrating your own Teams apps, whether you develop custom apps for your enterprise or SaaS applications for use around the world. App Studio streamlines the creation of the manifest and package for your app and provides useful tools like the Card Editor and a React control library. For more information, see [Manage your apps with App Studio for Microsoft Teams](/microsoftteams/platform/concepts/build-and-test/app-studio-overview).
 
-First, open the Microsoft Teams App.
+1. Open Microsoft Teams.
 
-If it's not installed on the PC, [download and install Teams](https://www.microsoft.com/microsoft-teams/group-chat-software).
+   > [!NOTE] 
+   > If you don't have Teams, [download and install it](https://www.microsoft.com/microsoft-teams/group-chat-software).
 
-:::image type="content" source="../media/3-teams-app-studio.png" alt-text="Screenshot of Teams app studio.":::
 
-1. After the app launches, select the **Apps** on the bottom-left corner of the screen. Here all published applications can be seen. Keep in mind that Microsoft Teams is an organization-specific platform. Now to create health bot app, search for the **App Studio** in the search bar.
+1. Select **Apps** in the lower-left corner of the window. You'll see all the published applications. (Keep in mind that Microsoft Teams is an organization-specific platform.) 
 
-   :::image type="content" source="../media/3-app-studio-search.png" alt-text="Screenshot of Teams app search for app studio.":::
+   :::image type="content" source="../media/3-teams-app-studio.png" alt-text="Screenshot that shows published apps in Teams.":::
+1. To create the health bot app, search for **App Studio** in the search box. Select **App Studio** in the search results:
 
-1. Select the App Studio from the dropdown.
+   :::image type="content" source="../media/3-app-studio-search.png" alt-text="Screenshot that shows search results for App Studio.":::
 
-   :::image type="content" source="../media/3-app-studio-add.png" alt-text="Screenshot of Teams app studio add button.":::
+1. Select **Add** in the resulting window:
 
-1. When you select the App studio, a dialog appears on the screen. Select on the **Add** button.
+   :::image type="content" source="../media/3-app-studio-add.png" alt-text="Screenshot that shows the Add button.":::
 
-   :::image type="content" source="../media/3-create-new-app.png" alt-text="Screenshot of creating new app button.":::
 
-1. Selecting **Add** redirects you to a new page. At the top is **Manifest Editor, Validation, Card editor, UI tools ,Chat and About section**. Select the Manifest Editor and then select **Create a new app**
+1. A new page will open. At the top of the page, select **Manifest editor**. Then select **Create a new app**:
 
-   :::image type="content" source="../media/3-app-id-generation.png" alt-text="Screenshot of generating new app ID.":::
+   :::image type="content" source="../media/3-create-new-app.png" alt-text="Screenshot that shows the Create a new app button.":::
 
-There are three main sections in creating a new app.
+   There are three main steps to creating a new app:
 
-- Details
-- Capabilities
-- Finish
+   - Details
+   - Capabilities
+   - Finish
 
-In the **Details** section, locate **App Details**. You enter all the App data here.
+1. In the **Details** section, select **App details**. Enter these values:
 
-- **Short name:** For this bot Enter "ParamedicBot" in this field. The short name is the displayed App name.
+   - **Short name:** For this bot, enter **ParamedicBot**. The short name is the displayed app name.
 
-- **Full name:** Enter the full name of the app. In this scenario, enter "Paramedic bot built on Azure Health Bot".
+   - **Full name:** Enter the full name of the app. In this scenario, enter **A Paramedic bot built on Azure Health Bot platform**.
 
-The next section here is identification which where you enter the app ID. Because you don't have an ID, select **Generate** to generate a new ID.
+1.   Under **Identification**, you enter the app ID. Because you don't have an ID, select **Generate** to generate a new ID.
 
-- **Package name:** Enter **para.app** in this field for this particular bot.
+1. In the **Package Name** box, enter **Para.app**.
 
-- **Version:** Enter 1.0.0 since it's the first version.
+1. In the **Version** box, enter **1.0.0** because you're creating the first version:
 
-The next section is **"Descriptions"**.
+     :::image type="content" source="../media/3-app-id-generation.png" alt-text="Screenshot that shows App details values.":::
 
-:::image type="content" source="../media/3-descriptions.png" alt-text="Screenshot of descriptions.":::
+   There are two fields under **Descriptions**: **Short description** and **Full description**.
 
-There are two fields here, **Short Description** and **Full description**.
 
-- **Short Description:** A brief description within 80 characters. This field serves as the description of the app when we are viewing it in the overview section. Enter "Simple bot collecting information from the user" for this particular application.
+1. In the **Short description** box, enter a description of 80 characters or less. This description appears in the overview section. Enter **Simple bot collecting information from the user**.
 
-- **Full description:** This field is the full description of 4000 words or less. Here we can explain in detail about the bot. Enter "Simple bot collecting information from the user and storing the data in the SQL Database".
+1. In the  **Full description** box, enter a description of 4,000 words or less. You can include more detail here. Enter **Simple bot collecting information from the user and storing the data in the SQL database**.
 
-The next section is **Developer Information** section. Here we are supposed to provide the details about the developer and the website of the developer.
+   Under **Developer information**, we'll provide the details about you and your website.
 
-**Developer/Company name:** Enter "Contoso".
+1. In the **Developer/Company Name** box, enter **Contoso**.
 
-**Website:** This field refers to the website of the developer. Since this bot is a demo, provide the web-address of [GitHub](https://github.com/).
+1. The **Website** box is where you'll normally enter your website. Because this bot is a demo,  enter **https://github.com/**:
 
-:::image type="content" source="../media/3-branding.png" alt-text="Screenshot of Branding.":::
+   :::image type="content" source="../media/3-descriptions.png" alt-text="Screenshot that shows the developer information values.":::
 
-The next section is the App URLs.
+   Under **App URLs**, you'll normally provide the website for the application's privacy statement and terms of use. Because this bot is a demo, use **https://github.com/** for both of these values.
 
-Here again you should provide the Website for referring the privacy statement of the application and Terms of use. Since this bot is a demo, we are again providing the web-address of [GitHub](https://github.com/).
+   **Branding** is about the appearance of the app. For example, the icon.
 
-**Privacy statement:** The web-address of [GitHub](https://github.com/).
+1. Under **Full color**, select **Update**. Choose an image. The image dimensions should be 192 x 192. Because this bot is a health bot, we'll use the official Health Bot icon. You can also choose an accent color. 
 
-**Terms of use:** The web-address of [GitHub](https://github.com/).
+   :::image type="content" source="../media/3-branding.png" alt-text="Screenshot that shows the branding values.":::
 
-The next section here is **Branding**. This section is all about the appearance of the app. For example, the icon.
+1. Finally, select the **Loading indicator** and **Fullscreen Mode** checkboxes.
 
-In the Full Color section, select the update button and choose an image. The image should be of **192x192** dimension. Similarly, an accent color also can be chosen. Here since it's a health Bot we are using the official Health Bot icon.
+   
 
-:::image type="content" source="../media/3-bots-section.png" alt-text="Screenshot of Bots section.":::
+   The second main section is the **Capabilities** section. In this section, the bot is integrated to the Teams app platform.
 
-Finally, tick the Loading Indicator and Fullscreen Mode check boxes.
+1. Under **Capabilities**, select **Bots**:
 
-Now the second main section is **Capabilities**.
+   :::image type="content" source="../media/3-bots-section.png" alt-text="Screenshot that shows the Bots selection in the left pane.":::
+   
+1. Select **Set up**:
 
-Here is where the Bot is being integrated to the Teams app platform.
+   :::image type="content" source="../media/3-bots-setup.png" alt-text="Screenshot that shows the Set up button.":::
+   
+1.   Now you'll set up the bot. Because we already have the bot configured on the Azure Health Bot platform, select **Existing bot**:
+   :::image type="content" source="../media/3-existing-bots.png" alt-text="Screenshot that shows the Existing bot tab.":::
 
-Select **Bots**.
+1. Select **Connect to a different bot id**. You can get the bot ID from the Azure Health Bot service. This ID is the same one you used in the previous unit. It's a unique ID that's specific to your bot.
 
-:::image type="content" source="../media/3-bots-setup.png" alt-text="Screenshot of Bots setup section.":::
+1. Under **Scope**, select **Personal** and **Team**:
 
-Once the bots section is selected, you'll have to set up the bot. Select **Setup** .
+   :::image type="content" source="../media/3-existing-bot-setup.png" alt-text="Screenshot that shows the Existing bot setup values.":::
 
-:::image type="content" source="../media/3-existing-bots.png" alt-text="Screenshot of Existing Bots section.":::
+   There are four subsections in the **Finish** section:
 
-Since we have the bot already configured on the Azure Health Bot platform, we will have to choose the **Existing Bot**.
+   - Languages
+   - Domains and permissions
+   - App manifesto
+   - Test and distribute
 
-:::image type="content" source="../media/3-existing-bot-setup.png" alt-text="Screenshot of Existing Bots section setup.":::
+1. Under **Domains and permissions**, you can provide an Azure Active Directory app ID. To learn how to generate one, see [create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal). This step is optional.
 
-Upon clicking the Existing Bot section, select the **Connect to a different bot id**. The Bot ID can be obtained from the Azure health bot platform. This is the same ID we used in the previous unit. It's a unique ID and varies from user to user.
+   :::image type="content" source="../media/3-azure-ad-app-id.png" alt-text="Screenshot that shows where to add an Azure AD app ID.":::
 
-In the scope section, select **Personal** and **Team**.
+1. Under **Test and Distribute**, you can install, download, and publish the app: 
 
-:::image type="content" source="../media/3-azure-ad-app-id.png" alt-text="Screenshot of Azure AD app ID":::
+   :::image type="content" source="../media/3-test-and-distribute.png" alt-text="Screenshot that shows the Install, Download, and Publish buttons.":::
 
-In the Finish section, we have four sub sections:
+You have IT admin rights to install the bot. 
 
-- Languages
-- Domains and Permissions
-- App manifesto
-- Test and Distribute
-
-In the Domains and Permissions section, we can provide Azure Active Directory App ID. To learn how generate one, see [create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal). This step is optional.
-
-:::image type="content" source="../media/3-test-and-distribute.png" alt-text="Screenshot of test and distribute":::
-
-Finally, Test and Distribute, here we can install, download, and publish the app that is built. You will be IT admin rights to install it!  The bot app is ready! We have successfully wrapped up the bot into Teams app and now can be shipped to anyone in the organization.
+The app is now ready! You've wrapped the bot into a Teams app. It can now be shipped to anyone in the organization.
