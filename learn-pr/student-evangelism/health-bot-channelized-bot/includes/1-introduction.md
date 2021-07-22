@@ -11,8 +11,8 @@ In this module, you'll:
 ## Prerequisite modules
 
 - Introduction to Azure Health Bot
-- Introduction and basic healthcare bot
-- Enhanced HealthBot 
-- Integrated Health bot
+- Basic Azure Health Bot
+- Enhanced Azure Health Bot 
+- Integrated Azure Health Bot
 
 **Produced in partnership with Meghana Chikkam and Shreyan J. D. Fernandes, Microsoft Learn student ambassadors, and the Azure Health Bot product group**
