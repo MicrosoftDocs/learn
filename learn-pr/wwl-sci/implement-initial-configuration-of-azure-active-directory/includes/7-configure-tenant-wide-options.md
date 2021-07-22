@@ -50,7 +50,7 @@ Use sign in with LinkedIn to:
 
 Managing security can be difficult with common identity-related attacks like password spray, replay, and phishing becoming more and more popular. Security defaults make it easier to help protect your organization from these attacks with preconfigured security settings:
 
-- Requiring all users to register for Azure AD multifactor Authentication.
+- Requiring all users to register for Azure AD Multi-factor Authentication(MFA).
 
 - Requiring administrators to perform multifactor authentication.
 
