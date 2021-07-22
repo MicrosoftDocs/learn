@@ -1,5 +1,3 @@
-## Summary
-
 Azure Kubernetes Services (AKS) is recommended when you need full container organization. AKS includes discovery across multiple containers, automatic scaling, and coordinated application upgrades.
 
 You should now be able to:

@@ -8,12 +8,11 @@ The Azure platform also helps to simplify virtual networking for AKS clusters. W
 
 To simplify the network configuration for application workloads, Kubernetes uses Services to logically group a set of pods together and provide network connectivity. The following Service types are available:
 
- -  **Cluster IP** \- Creates an internal IP address for use within the AKS cluster. Good for internal-only applications that support other workloads within the cluster. :::image type="content" source="../media/AZ104_AKS_Clusterip-949b83c8.png" alt-text="Diagram showing Cluster IP traffic flow in an AKS cluster.":::
+ -  **Cluster IP** \- Creates an internal IP address for use within the AKS cluster. Good for internal-only applications that support other workloads within the cluster. :::image type="content" source="../media/kubernetes-cluster-networks-1cca24fd.png" alt-text="Diagram showing Cluster IP traffic flow in an AKS cluster.":::
     
- -  **NodePort** \- Creates a port mapping on the underlying node that allows the application to be accessed directly with the node IP address and port. :::image type="content" source="../media/AZ104_AKS_Nodeport-69acb55c.png" alt-text="Diagram showing NodePort traffic flow in an AKS cluster.":::
+ -  **NodePort** \- Creates a port mapping on the underlying node that allows the application to be accessed directly with the node IP address and port. :::image type="content" source="../media/kubernetes-node-networks-ed11828c.png" alt-text="Diagram showing NodePort traffic flow in an AKS cluster.":::
     
- -  **LoadBalancer** \- Creates an Azure load balancer resource, configures an external IP address, and connects the requested pods to the load balancer backend pool. To allow customers traffic to reach the application, load-balancing rules are created on the desired ports. :::image type="content" source="../media/AZ104_AKS_LB-a89f8344.png" alt-text="Diagram showing Load Balancer traffic flow in an AKS cluster.":::
-     For additional control and routing of the inbound traffic, you may instead use an Ingress controller.
+ -  **LoadBalancer** \- Creates an Azure load balancer resource, configures an external IP address, and connects the requested pods to the load balancer backend pool. To allow customers traffic to reach the application, load-balancing rules are created on the desired ports.
  -  **ExternalName** \- Creates a specific DNS entry for easier application access.
 
 The IP address for load balancers and services can be dynamically assigned, or you can specify an existing static IP address to use. Both internal and external static IP addresses can be assigned. This existing static IP address is often tied to a DNS entry.
