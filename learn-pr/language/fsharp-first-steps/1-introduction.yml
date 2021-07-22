@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.fsharp-first-steps.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: "Introduction"
+  description: "What is F# and what can you build with it?"
+  ms.date: 07/20/2021
+  author: luisquintanilla
+  ms.author: luquinta
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
