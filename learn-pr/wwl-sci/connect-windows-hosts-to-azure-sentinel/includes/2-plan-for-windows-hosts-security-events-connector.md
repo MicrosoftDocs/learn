@@ -28,9 +28,9 @@ To view the connector page:
 
 1. For each virtual machine that you want to connect, select its name in the list that appears on the right, and then select **Connect**.
 
-1. Select which event set ([All, Common, or Minimal](https://docs.microsoft.com/azure/sentinel/connect-windows-security-events?azure-portal=true)) you want to stream.
+1. Select which event set ([All, Common, or Minimal](/azure/sentinel/connect-windows-security-events)) you want to stream.
 
-1. Select **Update**.
+1. Select **Apply Changes**.
 
 ## Connect non-Azure Windows Machines
 
@@ -52,6 +52,6 @@ To view the connector page:
 
 1. Select which event set (All, Common, or Minimal) you want to stream.
 
-1. Select **Update**.
+1. Select **Apply Changes**.
 
 :::image type="content" source="../media/agent-download.png" alt-text="Log Analytics agent download." lightbox="../media/agent-download.png":::
