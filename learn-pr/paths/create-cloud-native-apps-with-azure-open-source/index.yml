@@ -37,6 +37,7 @@ products:
 - azure-database-postgresql
 - azure-monitor
 - azure-application-insights
+- azure-active-directory
 modules:
 - learn.azure.intro-to-cloud-native-apps
 - learn.azure.cna-orchestrate-containers

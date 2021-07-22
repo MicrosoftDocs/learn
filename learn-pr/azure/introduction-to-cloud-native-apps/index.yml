@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.intro-to-cloud-native-apps
+uid: 
 metadata:
   title: Introduction to cloud-native apps on Azure
   description: This module teaches concepts and ideas associated with cloud-native apps. We cover selecting Open-Source Software (OSS) components like Kubernetes and PostgreSQL, as well as unique Azure tools like Cosmos DB. We’ll also identify situations that call for building cloud-native apps, and review selecting components in an example scenario.
