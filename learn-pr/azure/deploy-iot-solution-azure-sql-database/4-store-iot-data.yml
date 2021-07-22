@@ -11,5 +11,35 @@ metadata:
   ms.prod: learning-azure
   zone_pivot_groups: azure-devops-actions
 durationInMinutes: 10
+quiz:
+  questions:
+  - content: "What is **not** a way to increase the ingestion rate into Azure SQL Database?"
+    choices:
+    - content: "TODO"
+      isCorrect: false
+      explanation: "Incorrect. TODO"
+    - content: "TODO"
+      isCorrect: true
+      explanation: "Correct! TODO"
+    - content: "TODO"
+      isCorrect: false
+      explanation: "Incorrect. TODO"
+    - content: "TODO"
+      isCorrect: false
+      explanation: "Incorrect. TODO"      
+  - content: "What is the best way to surface real-time data in Power BI?"
+    choices:
+    - content: "TODO"
+      isCorrect: false
+      explanation: "Incorrect. TODO"
+    - content: "TODO"
+      isCorrect: false
+      explanation: "Incorrect. TODO"
+    - content: "TODO"
+      isCorrect: false
+      explanation: "Incorrect. TODO"
+    - content: "TODO"
+      isCorrect: true
+      explanation: "Correct! TODO"   
 content: |
   [!include[](includes/4-store-iot-data.md)]
