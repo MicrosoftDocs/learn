@@ -1,86 +1,89 @@
-In our previous module (Enhanced Healthcare Bot), we'd developed a vitals bot to collects basic health information of the users. To store the data we collected, we're going to build a database.
+In the previous module, Enhanced healthcare bots, we developed a vitals bot to collect basic health information from users. To store the data we collected, we'll build a database.
 
-Follow the steps to build a database:
+Follow these steps to build a database:
 
-1. Go to the [Azure portal](https://portal.azure.com/) and sign into your account.
+1. In the [Azure portal](https://portal.azure.com/), sign in to your account.
 
 1. Select **Create a resource**.
 
-   :::image type="content" source="../media/2-database-creation.png" alt-text="Provisioning a database" lightbox="../media/2-database-creation.png":::
+   :::image type="content" source="../media/2-database-creation.png" alt-text="Screenshot showing how to provision a database." lightbox="../media/2-database-creation.png":::
 
-1. From the Categories menu, select **Databases** and select **SQL Database** from the listed options of databases.
+1. On the **Categories** menu, select **Databases**. On the database list, select **SQL Database**.
 
 1. Select **Create**.
 
-   :::image type="content" source="../media/2-create-database.png" alt-text="Creating a database" lightbox="../media/2-create-database.png":::
+   :::image type="content" source="../media/2-create-database.png" alt-text="Screenshot showing how to create a database." lightbox="../media/2-create-database.png":::
 
-1. The configurations for SQL database fields are mentioned below:
+1. Use the following information to configure the SQL database fields:
 
-    - **Subscription:** Select your subscription.
-    - **Resource group:** Select create new and enter a unique name for the resource group. In our case, we use the name as **Healthbot** and select **OK**.
-    - **Database name:** Give a name for your database. We have used the name **healthbot**.
+    - **Subscription**: Select your subscription.
+    - **Resource group**: Select **Create new** and enter a unique name for the resource group. We'll name our resource group *Healthbot*. Then select **OK**.
+    - **Database name**: Name your database. We'll name our database *healthbot*.
 
-      :::image type="content" source="../media/2-create-sql-server.png" alt-text="Creating a server" lightbox="../media/2-create-sql-server.png":::
+      :::image type="content" source="../media/2-create-sql-server.png" alt-text="Screenshot showing how to create a server." lightbox="../media/2-create-sql-server.png":::
 
-    - **Server:** Select **Create New** and then fill in configurations for New Server cell as follows:
+    - **Server**: Select **Create new**. Then fill in the fields:
 
-       - **Server Name:** Give a server name like **healthbot**.
-       - **Server Admin Login:** Give a username for the server such as **learnbot**.
-       - **Password:** Give a unique password for the server. We have used healthbot@123**.
-       - **Confirm Password:** Carefully repeat the password you have given in the password field.
-       - **Location:** Select **(US) West US** from the dropdown and select **OK**.
+       - **Server name**: Add a server name such as *healthbot*.
+       - **Server admin login**: Add a username for the server, such as *learnbot*.
+       - **Password**: Add a unique password for the server. We used *healthbot@123*.
+       - **Confirm password**: Carefully retype the password you provided in the **Password** field.
+       - **Location**: Select **(US) West US**
+       - Select **OK**.
 
-    :::image type="content" source="../media/2-database-compute.png" alt-text="Searching for a database compute option" lightbox="../media/2-database-compute.png":::
+    :::image type="content" source="../media/2-database-compute.png" alt-text="Screenshot showing how to search for a database compute option." lightbox="../media/2-database-compute.png":::
 
-   - Want to use SQL elastic pool: Select 'No'
+   - **Want to use SQL elastic pool?**: Select **No**.
 
-   - Compute + Storage: Select **Configure database** and then select **Looking for basic, standard, premium**.
+   - **Compute + storage**: Select **Configure database**. Then select **Looking for basic, standard, premium**.
 
-      :::image type="content" source="../media/2-compute-categories.png" alt-text="Categories of compute plans" lightbox="../media/2-compute-categories.png":::
+      :::image type="content" source="../media/2-compute-categories.png" alt-text="Screenshot showing categories of compute plans." lightbox="../media/2-compute-categories.png":::
 
-   - Select the Basic option and note that it will cost 359.58 INR and select **Apply**.
+   - Select the **Basic** option. Note its cost. Then select **Apply**.
 
-      :::image type="content" source="../media/2-database-review-create.png" alt-text="Review a database" lightbox="../media/2-database-review-create.png":::
+      :::image type="content" source="../media/2-database-review-create.png" alt-text="Screenshot showing a database review." lightbox="../media/2-database-review-create.png":::
 
-   - Backup Storage Redundancy: Select **Geo-redundant backup storage**.
+   - **Backup storage redundancy**: Select **Geo-redundant backup storage**.
 
-1. Select **Review + Create**, after which you'll land on the summary page. Check if you've entered all the details accurately and select **Create**.
+1. Select **Review + Create**. 
 
-1. After the deployment is successful, select the SQL database created.
+1. On the summary page that appears, make sure you entered all details accurately. Then select **Create**.
 
-1. Note down the Server name mentioned under the essentials.
+1. After the deployment succeeds, select the SQL database you created.
 
-   :::image type="content" source="../media/2-query-editor.png" alt-text="Query Editor of Database" lightbox="../media/2-query-editor.png":::
+1. Note down the Server name that's listed under **Essentials**.
 
-1. Select **Query editor (preview)** from the menu bar on the left of the page and you'll be able to see a log-in page. Enter the credentials you created in the previous steps. (Login ID: learnbot and Password: healthbot@123)
+   :::image type="content" source="../media/2-query-editor.png" alt-text="Screenshot showing the database's query editor." lightbox="../media/2-query-editor.png":::
 
-   :::image type="content" source="../media/2-whitelist-ip.png" alt-text="Whitelisting a single IP address" lightbox="../media/2-whitelist-ip.png":::
+1. In the menu on the left, select **Query editor (preview)**. In the page that appears, enter the credentials you created in the previous steps. (**Login ID**: *learnbot*, **Password**: *healthbot@123*)
 
-1. It will give out an error saying **Cannot open server**.
+   :::image type="content" source="../media/2-whitelist-ip.png" alt-text="Screenshot showing how to add a single IP address to an allowlist." lightbox="../media/2-whitelist-ip.png":::
+
+   An error states, **Cannot open server**.
 
    > [!NOTE]
-   > To avoid this issue, follow the steps below before logging in:
+   > To avoid this error, follow these steps before you log in:
    >
-   > 1. In the Overview page of the SQL database, select **Set Server Firewall**.
-   > 1. Select **Yes** for Allow Azure Services and resources to access this server.
+   > 1. On the **Overview** page of the SQL database, select **Set server firewall**.
+   > 1. For **Allow Azure services and resources to access this server**, select **Yes**.
    >
-   > :::image type="content" source="../media/2-firewall-settings.png" alt-text="Whitelisting ALL IP addresses" lightbox="../media/2-firewall-settings.png":::
+   >    :::image type="content" source="../media/2-firewall-settings.png" alt-text="Screenshot showing how to add all IP addresses to the allowlist." lightbox="../media/2-firewall-settings.png":::
    >
-   > 1. Under Rule name enter the following details in the three text boxes:
+   > 1. Enter the following details in the three text boxes:
    >
-   >    - 1st textbox - ALL
-   >    - 2nd textbox – 0.0.0.0
-   >    - 3dr textbox – 255.255.255.255
+   >    - **Rule name**: *ALL*
+   >    - **Start IP**: *0.0.0.0*
+   >    - **End IP**: *255.255.255.255*
    >
    > 1. Select **Save**.
 
-1. To solve this issue, select the link with the IP address, which is highlighted in the red box and select **OK**. With that, you'll get a **Successfully updated server firewall rules** message.
+1. To resolve the error, select the link that includes the IP address. Then select **OK**. You'll see this message: **Successfully updated server firewall rules**.
 
-1. Enter the credentials again and select **Login**.
+1. Enter the credentials again and then select **Login**.
 
-   :::image type="content" source="../media/2-sql-query.png" alt-text="SQL query in Editor" lightbox="../media/2-sql-query.png":::
+   :::image type="content" source="../media/2-sql-query.png" alt-text="Screenshot showing a SQL query in the editor." lightbox="../media/2-sql-query.png":::
 
-1. After you log in, select **Tables** to create a new table. In the code section, paste the following code:
+1. Select **Tables** to create a new table. In the code section, paste the following code:
 
    ```
         CREATE TABLE Persons (
@@ -94,17 +97,17 @@ Follow the steps to build a database:
 
 1. Select **Run**.
 
-1. To save this code to your PC for future purpose, select **Save Query**.
+1. To save this code to your PC for future use, select **Save query**.
 
-### Giving Access to other users to make changes to your database
+### Allow other users to edit your database
 
-We often work with multiple people on the same project and would like to share our timely updated work with them. We can make the the other users admins for our database. This way the user can view and modify the database along with you.
+We often work with multiple people on the same project and want to share our current work with them. So we'll assign the the other users as admins for our database. They'll be able view and modify the database like we do.
 
-Follow the steps to give access to another user:
+Follow these steps to give access to another user:
 
-:::image type="content" source="../media/2-sql-server.png" alt-text="Sql server" lightbox="../media/2-sql-server.png":::
+:::image type="content" source="../media/2-sql-server.png" alt-text="Screenshot showing the SQL server." lightbox="../media/2-sql-server.png":::
 
-1. On the main Azure portal, select the SQL server you created.
+1. In the Azure portal, select the SQL server you created.
 
    :::image type="content" source="../media/2-azure-active-directory.png" alt-text="Azure active directory" lightbox="../media/2-azure-active-directory.png":::
 
@@ -136,13 +139,13 @@ Even though we know our database is working successfully, to visualize the data 
 
 1. Fill in the following details in the Connection details fields:
 
-    - **Connection type:** Select Microsoft SQL Server.
-    - **Server:** Paste the server name which you noted in step 8 under **Building a Database**.
-    - **Authentication type:** Select **SQL Login** from the dropdown.
-    - **Username:** Use the same Username which you used for logging into the Query Editor. We used **learnbot**.
-    - **Password:** Use the same Password which you used for logging into the Query Editor. We used **healthbot@123**.
-    - **Database:** Select the name of your database which you created on Azure.
-    - **Server Group:** Leave it as **Default**.
+    - **Connection type**: Select Microsoft SQL Server.
+    - **Server**: Paste the server name which you noted in step 8 under **Building a Database**.
+    - **Authentication type**: Select **SQL Login** from the dropdown.
+    - **Username**: Use the same Username which you used for logging into the Query Editor. We used **learnbot**.
+    - **Password**: Use the same Password which you used for logging into the Query Editor. We used **healthbot@123**.
+    - **Database**: Select the name of your database which you created on Azure.
+    - **Server Group**: Leave it as **Default**.
 
 1. Select **Connect**
 
