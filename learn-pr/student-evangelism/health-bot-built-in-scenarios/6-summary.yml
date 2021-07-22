@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.health-bot-built-in-scenarios.7-summary
+uid: learn.health-bot-built-in-scenarios.6-summary
 title: Summary
 metadata:
   title: Summary
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/7-summary.md)]
+  [!include[](includes/6-summary.md)]

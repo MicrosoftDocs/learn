@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-channeling-the-bot-to-teams.md)]
+  [!include[](includes/2-channeling-bot-to-teams.md)]

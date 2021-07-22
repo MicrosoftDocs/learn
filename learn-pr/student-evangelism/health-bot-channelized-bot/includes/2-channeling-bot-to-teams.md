@@ -8,17 +8,17 @@ You created a bot in the previous module. You'll now implement advanced features
 
 3. Change the **Intent Mapping** to **bot1** (the basic bot you created in the previous module) and then select **Save**:
 
-   :::image type="content" source="../media/2-edit-model.png" alt-text="Screenshot that shows the Edit model options.":::
+   :::image type="content" source="../media/2-edit-model.png" alt-text="Screenshot that shows the Edit model options." lightbox="../media/2-edit-model.png":::
 
 4. In the left pane, under **Integration**, select **Channels**. The Channels page will open, showing channels where you can make the health bot available:
 
-   :::image type="content" source="../media/2-channels.png" alt-text="Screenshot that shows channels available in Health Bot.":::
+   :::image type="content" source="../media/2-channels.png" alt-text="Screenshot that shows channels available in Health Bot." lightbox="../media/2-channels.png":::
 
 5. Under **Active**, enable **Microsoft Teams**. You'll now see options for **View** and **Test**.
 
 6. Select **View** and then copy the **Bot Id**. Paste it into a Notepad file. You'll need it later.
 
-   :::image type="content" source="../media/2-teams-channel-id.png" alt-text="Screenshot that shows the Bot Id for Teams.":::
+   :::image type="content" source="../media/2-teams-channel-id.png" alt-text="Screenshot that shows the Bot Id for Teams." lightbox="../media/2-teams-channel-id.png":::
 
 7. Select **Test**. Microsoft Teams will open.
 
@@ -26,11 +26,11 @@ You created a bot in the previous module. You'll now implement advanced features
 
 9. Select **People** and then select **HealthCare**:
 
-   :::image type="content" source="../media/2-teams-search-id.png" alt-text="Screenshot that shows searching with the bot ID in Teams.":::
+   :::image type="content" source="../media/2-teams-search-id.png" alt-text="Screenshot that shows searching with the bot ID in Teams." lightbox="../media/2-teams-search-id.png":::
 
 The bot will work according to the flow you created in previous modules. You've successfully connected your bot to a channel. You can also connect your bot to other channels, like WhatsApp, Facebook, and Telegram. Try connecting it to Telegram or Facebook.
 
-:::image type="content" source="../media/2-teams-chat.png" alt-text="Screenshot that shows the bot's chat in Teams.":::
+:::image type="content" source="../media/2-teams-chat.png" alt-text="Screenshot that shows the bot's chat in Teams." lightbox="../media/2-teams-chat.png":::
 
 ## What's next?
 

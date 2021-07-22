@@ -28,7 +28,8 @@ units:
   - learn.health-bot-basic-bot.2-get-started-with-custom-scenario
   - learn.health-bot-basic-bot.3-build-the-basic-bot
   - learn.health-bot-basic-bot.4-bonus-conversational-elements
-  - learn.health-bot-basic-bot.5-knowledge-check
-  - learn.health-bot-basic-bot.6-summary
+  - learn.health-bot-basic-bot.5-exercise-provision-webchat-channel
+  - learn.health-bot-basic-bot.6-knowledge-check
+  - learn.health-bot-basic-bot.7-summary
 badge:
   uid: learn.student-evangelism.health-bot-basic-bot.badge
