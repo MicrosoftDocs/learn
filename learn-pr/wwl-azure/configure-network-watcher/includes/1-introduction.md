@@ -1,5 +1,3 @@
-## Scenario
-
 You can create complex and flexible setups in Azure that connect many virtual machines (VMs) to meet your needs. Just like in an on-premises network, configuration errors can result in problems that are challenging to troubleshoot. When you have to diagnose network problems in Azure, use Azure Network Watcher.
 
 Suppose you have deployed a VM in Azure, and the VM has network connectivity issues. You want to learn how to troubleshoot and fix the problem so that you can help your colleagues to do the same, if they face similar issues in the future.

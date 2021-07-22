@@ -1,5 +1,3 @@
-## Summary
-
 Azure Network Watcher provides the tools you need to monitor, troubleshoot, and optimize your network infrastructure.
 
 You should now be able to:
