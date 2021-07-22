@@ -1,6 +1,6 @@
 The Azure portal provides out-of-the-box continuous integration and deployment with Azure DevOps, GitHub, Bitbucket, FTP, or a local Git repository on your development machine. Connect your web app with any of the above sources and App Service will do the rest for you by auto-syncing code and any future changes on the code into the web app. Furthermore, with Azure DevOps, you can define your own build and release process that compiles your source code, runs the tests, builds a release, and finally deploys the release into your web app every time you commit the code. All that happens implicitly without any need to intervene.
 
-:::image type="content" source="../media/AZ104_Cont_Dev-0640f0f4.png" alt-text="Two developers are sharing a single GitHub source to produce a website.":::
+:::image type="content" source="../media/continuous-development-a0dfd350.png" alt-text="Two developers are sharing a single GitHub source to produce a website.":::
 
 
 ## Automated deployment

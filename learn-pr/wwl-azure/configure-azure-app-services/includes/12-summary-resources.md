@@ -1,5 +1,3 @@
-## Summary
-
 Azure App Service is an HTTP-based service for hosting web applications. You can develop in your favorite language. Applications run and scale with ease on both Windows and Linux-based environments.
 
 You should now be able to:

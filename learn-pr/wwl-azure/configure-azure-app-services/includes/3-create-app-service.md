@@ -1,6 +1,6 @@
 When creating an App Service, you will need to specify a resource group and service plan. Then there are few other configuration choices. You may need to ask your developer for assistance in completing this information.
 
-:::image type="content" source="../media/AZ104_Web_Instance-6ed5422b.png" alt-text="Screenshot of the instance details for a new app service.":::
+:::image type="content" source="../media/web-instances-feb0bc48.png" alt-text="Screenshot of the instance details for a new app service.":::
 
 
  -  **Name**. The name must be unique and will be used to locate your app. For example, webappces1.azurewebsites.net. You can map a custom domain name, if you prefer to use that instead.
@@ -13,7 +13,7 @@ When creating an App Service, you will need to specify a resource group and serv
 
 Once your app service is created, additional configuration information is available.
 
-:::image type="content" source="../media/AZ104_Web_Conf-83963ee6.png" alt-text="Screenshot of the app service configuration blade.":::
+:::image type="content" source="../media/web-app-configuration-27facdc5.png" alt-text="Screenshot of the app service configuration blade.":::
 
 
 Certain configuration settings can be included in the developer's code or configurated in the app service. Here are a few interesting settings.
