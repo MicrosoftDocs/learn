@@ -1,5 +1,3 @@
-## Summary
-
 Your App Service plan can be scaled up and down at any time. Scaling lets you meet changing demands while effectively managing costs.
 
 You should now be able to:
