@@ -13,21 +13,21 @@ When you submit a Bicep template for deployment to Resource Manager, the tooling
 
 ## What is the Bicep decompiler?
 
-Your first step in migrating your Azure resources to Bicep is to convert your ARM JSON templates to Bicep templates.
+Your first step in migrating your Azure resources to Bicep is to convert your JSON ARM templates to Bicep templates.
 
 The Bicep tooling includes the `decompile` command, which is used to convert a JSON template to a Bicep template. You can invoke the `decompile` command from either the AZ CLI, or from the Bicep CLI.
 
 The decompilation process is a best-effort process and doesn't guarantee a full mapping from JSON to Bicep. You may need to revise the generated Bicep file to meet your template best practices before using the file to deploy resources. Later in this unit, you'll learn how to fix any issues encountered in the decompilation process.
 
-### Decompile an ARM JSON template to Bicep
+### Decompile an JSON ARM template to Bicep
 
-To decompile an ARM JSON template to Bicep with the Azure CLI, use:
+To decompile an JSON ARM template to Bicep with the Azure CLI, use:
 
 ```azurecli
 az bicep decompile --file main.json
 ```
 
-To decompile an ARM JSON template to Bicep with the Bicep tooling, use:
+To decompile an JSON ARM template to Bicep with the Bicep tooling, use:
 
 ```bicep
 bicep decompile --file main.json
@@ -44,7 +44,7 @@ In the previous section you learned that the decompilation is a best-effort proc
 
 1. **Create a new Bicep file** - Using [Visual Studio Code](https://code.visualstudio.com/), create a new Bicep file. This new file will become the main template file for your converted template.
 
-2. **Decompile the source ARM JSON template** - From a terminal window, run either the `az bicep decompile` or the `bicep decompile` command against your source JSON template to convert the file to a Bicep template. Using Visual Studio Code, open your new Bicep file and the decompiled JSON file side by side.
+2. **Decompile the source JSON ARM template** - From a terminal window, run either the `az bicep decompile` or the `bicep decompile` command against your source JSON template to convert the file to a Bicep template. Using Visual Studio Code, open your new Bicep file and the decompiled JSON file side by side.
 
 3. **Copy the resources from converted Bicep file to new Bicep file** - For each defined resource in your original JSON template, copy it from the converted Bicep file to the new Bicep file. Consider copying the resources individually, so that you can resolve any issues on a per resource basis.
 
@@ -63,7 +63,9 @@ In the previous section you learned that the decompilation is a best-effort proc
 
 9. **Add comments** - Good Bicep code is _self-documenting_! Bicep allows you to add comments to your code that help you document your infrastructure. These comments can help your teammates understand the code, and increase confidence when changes are made. Comments are ignored when the Bicep file is deployed to Azure.
 
-10. **Perform a test deployment** - Before introducing your converted Bicep template to production, consider running multiple test deployments. If you have multiple environments (prod, dev, test), you may want to try deploying your template to one of your non-production environments first.
+10. **Follow Bicep best practices** - Make sure that your Bicep file is following the recommended best practices. Review the [Bicep best practices](/azure/azure-resource-manager/bicep/best-practices) reference document for anything you might have missed.
+
+11. **Perform a test deployment** - Before introducing your converted Bicep template to production, consider running multiple test deployments. If you have multiple environments (prod, dev, test), you may want to try deploying your template to one of your non-production environments first.
 
     > [!NOTE]
     > If you're going to use the converted template in a pipeline, such as Azure DevOps or GitHub Actions, consider running the deployment from your local machine first. It is better to verify the functionality of the template before adding it to your production pipeline.
