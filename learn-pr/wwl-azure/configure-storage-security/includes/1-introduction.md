@@ -1,6 +1,6 @@
 ## Scenario
 
-Your company has sensitive data including Personally Identifiable Information. The data is used internally and by external application developers.
+Your company has sensitive data including personal information. The data is used internally and by external application developers.
 
 You need to ensure the data is secured. You provide ways to grant secure access to the information.
 
