@@ -28,7 +28,7 @@ Let's create a sample data warehouse in Azure Synapse Analytics with sample data
     | Account name | Select the **Create new** link, and enter *sampledatawhxx*, where **xx** are your initials |
     | File system name | Select the **Create new** link, and enter *demodwxx*, where **xx** are your initials |
 
-    ![Create Synapse workspace pane.](../media/2-sql-dw.png)
+    ![Create Synapse workspace pane.](../media/2-create-sql-dw.png)
 
 1. Select **Next: Security**.
 

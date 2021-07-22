@@ -213,9 +213,9 @@ Paste these results wherever necessary. For example, you can paste results to an
 
 :::row:::
   :::column:::
-![Screenshot of Observing Pie Chart.](../media/4-observe-pie-chart.png)
+![Screenshot of observing pie chart first view.](../media/4-observe-pie-chart.png)
   :::column-end:::
   :::column:::
-![Screenshot of Observing Pie Chart.](../media/4-observe-bar-chart.png)
+![Screenshot of observing pie chart second view.](../media/4-observe-bar-chart.png)
   :::column-end:::
 :::row-end:::
