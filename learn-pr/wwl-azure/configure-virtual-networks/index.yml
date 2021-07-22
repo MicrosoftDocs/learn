@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-virtual-networks
 metadata:
-  title: Configure Virtual Networks
+  title: Configure virtual networks
   description: "You will learn to configure virtual networks and subnets, including IP addressing."
-  ms.date: 07/21/2021
+  ms.date: 07/22/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Configure Virtual Networks
+title: Configure virtual networks
 summary: You will learn to configure virtual networks and subnets, including IP addressing.
 abstract: |
   After completing this module, you will be able to:
