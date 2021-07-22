@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.fsharp-conditional.5-exercise-loops
+title: Exercise - use loops
+metadata:
+  title: Exercise - use loops
+  description: Describe unit
+  author: undefined
+  ms.author: undefined
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-exercise-loops.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.fsharp-conditional.2-if-else
+title: Conditional logic
+metadata:
+  title: Conditional logic
+  description: Describe unit
+  author: softchris
+  ms.author: chnoring
+  ms.date: 07/22/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-if-else.md)]

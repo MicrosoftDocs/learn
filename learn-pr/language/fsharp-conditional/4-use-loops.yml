@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.fsharp-conditional.4-use-loops
+title: Use loops to iterate over statements
+metadata:
+  title: Use loops to iterate over statements
+  description: Describe unit
+  author: undefined
+  ms.author: undefined
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-use-loops.md)]
