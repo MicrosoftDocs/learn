@@ -16,7 +16,7 @@ abstract: |
   - Learn how to make a bot available on Teams
   - Build a basic Teams app for the healthcare bot
   
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/student-evangelism/health-bot-channelized-bot.svg
 levels:
   - beginner
 roles:
@@ -31,4 +31,4 @@ units:
  - learn.health-bot-channelized-bot.4-knowledge-check
  - learn.health-bot-channelized-bot.5-summary
 badge:
-  uid: learn.health-bot-channelized-bot.badge
+  uid: learn.student-evangelism.health-bot-channelized-bot.badge
