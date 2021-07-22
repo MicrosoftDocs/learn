@@ -1,5 +1,3 @@
-## Summary
-
 Azure Container Instances is a great solution for any scenario that can operate in isolated containers. This includes simple applications, task automation, and build jobs.
 
 You should now be able to:

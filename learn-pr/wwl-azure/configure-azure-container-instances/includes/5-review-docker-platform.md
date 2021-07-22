@@ -1,6 +1,6 @@
 Docker is a platform that enables developers to host applications within a container.
 
-:::image type="content" source="../media/AZ104_Docker-f9b72b61.png" alt-text="Diagram of Docker Hub communicating with Docker Host.":::
+:::image type="content" source="../media/docker-c787c4b8.png" alt-text="Diagram of Docker Hub communicating with Docker Host.":::
 
 
 A container is essentially a standalone package that contains everything that is needed to execute a piece of software. The package includes:
