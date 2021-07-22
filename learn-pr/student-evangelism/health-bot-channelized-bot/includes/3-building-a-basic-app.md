@@ -36,7 +36,7 @@ App Studio for Teams makes it easy to start creating or integrating your own Tea
 
    - **Short name:** For this bot, enter **ParamedicBot**. The short name is the displayed app name.
 
-   - **Full name:** Enter the full name of the app. For this bot, enter **Paramedic bot built on Azure Health Bot**.
+   - **Full name:** Enter the full name of the app. In this scenario, enter **A Paramedic bot built on Azure Health Bot platform**.
 
 1.   Under **Identification**, you enter the app ID. Because you don't have an ID, select **Generate** to generate a new ID.
 
