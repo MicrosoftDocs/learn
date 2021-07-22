@@ -1,4 +1,4 @@
-:::image type="content" source="../media/AZ104_Azure_Monitor_Alerts-0ebe1eff.png" alt-text="Monitor Alerts screenshot.":::
+:::image type="content" source="../media/monitor-alerts-0e2e8659.png" alt-text="Monitor Alerts screenshot.":::
 
 
 The Monitor Alerts experience has many benefits.
