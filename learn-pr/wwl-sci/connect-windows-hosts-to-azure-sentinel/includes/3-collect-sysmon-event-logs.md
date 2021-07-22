@@ -4,7 +4,7 @@ Installing and configuring Sysmon is out of the scope of this module.  Because S
 
 After connecting the Sysmon agent to the windows machine perform the following to enable Azure Sentinel to query the logs:
 
-1. Go to your Azure Portal.
+1. Go to your Azure portal.
 
 1. Select **Log Analytics workspaces** from Azure services.
 
