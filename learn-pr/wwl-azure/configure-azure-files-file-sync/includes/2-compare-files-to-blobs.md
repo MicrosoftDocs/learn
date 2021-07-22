@@ -12,7 +12,7 @@ Applications running in Azure virtual machines or cloud services can mount a fil
  -  **Diagnostic data**. Storing diagnostic data such as logs, metrics, and crash dumps in a shared location.
  -  **Tools and utilities**. Storing tools and utilities needed for developing or administering Azure virtual machines or cloud services.
 
-## Comparing Files and Blobs
+## Files and blobs comparison
 
 Sometimes it is difficult to decide when to use file shares instead of blobs or disk shares. Take a minute to review this table that compares the different features.
 

@@ -1,6 +1,6 @@
 Use **Azure File Sync** to centralize your organization's file shares in Azure Files, while keeping the flexibility, performance, and compatibility of an on-premises file server. Azure File Sync transforms Windows Server into a quick cache of your Azure file share. You can use any protocol that's available on Windows Server to access your data locally, including SMB, NFS, and FTPS. You can have as many caches as you need across the world.
 
-:::image type="content" source="../media/AZ104_Azure_File_Sync-38cbd381.png" alt-text="Illustration depicting that Azure File Sync can be used to cache an organization's file shares in Azure Files. Different graphics represent different geographic locations like Mexico, Munich, Seattle, and a branch office, with Azure represented by a standard cloud icon.":::
+:::image type="content" source="../media/file-sync-1d3fd2e7.png" alt-text="Illustration depicting that Azure File Sync can be used to cache an organization's file shares in Azure Files. Different graphics represent different geographic locations like Mexico, Munich, Seattle, and a branch office, with Azure represented by a standard cloud icon.":::
 
 
 There are many uses and advantages to file sync.

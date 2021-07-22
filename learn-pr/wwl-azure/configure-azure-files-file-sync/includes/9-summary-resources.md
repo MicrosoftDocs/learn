@@ -1,5 +1,3 @@
-## Summary
-
 Azure Files offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol or Network File System (NFS) protocol. Azure File Sync is a service that allows you to cache several Azure file shares on an on-premises Windows Server or cloud VM.
 
 You should now be able to:
