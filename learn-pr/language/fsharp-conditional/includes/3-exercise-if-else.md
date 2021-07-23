@@ -1,8 +1,8 @@
-In this exercise you will learn to use `if` and `else` to implement some funtionality for card game for the recreational games company you work for. You will need to write some functionality that will be used by your colleagues to implement the game Black Jack
+In this exercise, you will learn to use `if` and `else` to implement some functionality for card game for the recreational games company you work for. You will need to write some functionality that will be used by your colleagues to implement the game Black Jack
 
 ## Display presentable cards
 
-As part of a player's experience, players are used to have names for certain cards like, Jack, Queen, King and so on, whereas other cards are a mere number. You will write the logic needed to make the user experience better.
+As part of a player's experience, players are used to have names for certain cards like, Jack, Queen, King, and so on, whereas other cards are a mere number. You will write the logic needed to make the user experience better.
 
 1. Scaffold an F# project by running `dotnet new`:
 

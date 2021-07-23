@@ -1,12 +1,12 @@
-You've come to a point in your program where you need to carry out a group of statements more than one time. The reason for that is that you are either with list type structures or that you have the a general need to repeat something until a certain condition is met. To deal with this situation, you can use loops. 
+You've come to a point in your program where you need to carry out a group of statements more than one time. The reason for that is that you are either dealing with a list type structure, or you have a general need to repeat something until a certain condition is met. To deal with this situation, you can use loops. 
 
 ## Loops
 
-The idea of a loop is to iterate over a range of values and for each value do something like outputting it to a screen or have said value take part in some operation. F# has three different loops you could be using:
+The idea of a loop is to iterate over a range of values and for each value do something like outputting it to a screen or have the value interact in some operation. F# has three different loops you could be using:
 
 - **for...to**. This construct assumes you have an enumerable collection that you can iterate over. It will iterate over each value in said collection.
 - **for...in**. The `for...in` loop has the notion of start and ending where this loop iterates until it reaches the value of a loop variable.
-- **while...do**. The `while...do` is not centred around an enumerable collection, like two first constructs, but loops until a condition is met. 
+- **while...do**. The `while...do` is not centered around an enumerable collection, like two first constructs, but loops until a condition is met. 
 
 ### `for...in`, looping through every value in a collection
 
@@ -19,7 +19,7 @@ for pattern in enumerable-expression do
 
 There's some keywords here that needs explaining:
 
-- **Pattern**, the pattern can be the current item, or a tuple for example of iterating over a sequence. Here's an example where the pattern is the current value, `i`. The `for` iterates over the list `list` and ends up printing each value in the collection:
+- **Pattern**, the pattern can be the current item, or a tuple, for example,  of iterating over a sequence. Here's an example where the pattern is the current value, `i`. The `for` iterates over the list `list` and ends up printing each value in the collection:
 
    ```fsharp
    let list = [1; 2; 3; 4; 5]
@@ -51,7 +51,7 @@ for i = 1 to 10 do
   printfn "%i " i  // prints 1, 2 3 4 5 6 7 8 9 10
 ```
 
-The above loop will print all values between 1 and 10, including 10. Let's have a look at an example using the `downto` construct as well. This construct is pretty much `to` but in reverse. The following code shown how you can print from numbers 10 to 1:
+The above loop will print all values between 1 and 10, including 10. Let's have a look at an example using the `downto` construct as well. This construct is much `to` but in reverse. The following code shown how you can print from numbers 10 to 1:
 
 ```fsharp
 for i = 10 downto 1 do
@@ -60,7 +60,7 @@ for i = 10 downto 1 do
 
 ### `while...do`, loop until a condition is met
 
-The `while...do` construct is different in the sense that it doesn't center around a collection to iterate over. Instead, if you have logic that you need to implement like accepting command line args until a user types the string "quit" this construct is well suited for it.
+The `while...do` construct is different in the sense that it doesn't center around a collection to iterate over. Instead, if you have logic that you need to implement like accepting command-line args until a user types the string "quit" this construct is well suited for it.
 
 The syntax of the `while...do` looks like so:
 
@@ -69,7 +69,7 @@ while test-expression do
   body-expression
 ```
 
-An example of using a `while...do` can for example be this guessing game:
+An example of using a `while...do` can, for example,  be this guessing game:
 
 ```fsharp
   let mutable quit = false

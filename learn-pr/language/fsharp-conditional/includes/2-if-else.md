@@ -2,7 +2,7 @@ Let's say you have a program that creates a backup file based on the files in fo
 
 ## Create a code branch with `If`
 
-An `if` construct evaluates a boolean expression. If said expression evaluates to `true` it runs a different branch of code. Here's what an `if` syntax looks like:
+An `if` construct evaluates a boolean expression. If said expression evaluates to `true`, it runs a different branch of code. Here's what an `if` syntax looks like:
 
 ```fsharp
 if condition then expression 
@@ -18,7 +18,7 @@ then printfn "Senior citizen"
 
 ## Define an alternate branch with `Else`
 
-An `else` clause is used in conjunction with an `if` to express that if the `if` statement evaluates to `false` then the `else` branch is run instead.
+An `else` clause is used with an `if` to express that if the `if` statement evaluates to `false` then the `else` branch is run instead.
 
 Here's how you can use an else:
 
@@ -31,7 +31,7 @@ else printfn "Citizen"
 
 ## `If` as an expression
 
-So far you've seen how `if` and `else` have created different branches to the code that produces a different result based on wether a boolean condition evaluates to `true` or `false`. What's always happening, that you might not be aware of, is that it an expression is run that produces a value. It becomes more clear if the code is written like so instead:
+So far you've seen how `if` and `else` have created different branches to the code that produces a different result based on whether a boolean condition evaluates to `true` or `false`. What's always happening, that you might not be aware of, is that when an expression is run, it produces a value. It becomes clearer if the code is written like so instead:
 
 ```fsharp
 let age = 64
@@ -39,7 +39,7 @@ let message = if age > 65 then "Senior citizen" else "Citizen"
 printfn "%s" message
 ``` 
 
-In this case the `if` and `else` behaves more like a ternary expression where if a condition is true, it returns that value, and if false it returns the other value. In fact, `if` always behaves this way. Let's revisit a previous code example and see that that is the case:
+In this case, the `if` and `else` behave more like a ternary expression where if a condition is true, it returns that value, and if false it returns the other value. In fact, `if` always behaves this way. Let's revisit a previous code example and see that that is the case:
 
 ```fsharp
 let age = 66
@@ -55,7 +55,7 @@ let someCondition = true
 let value = if someCondition then "hello" else 1 // not allowed
 ```
 
-In this case the `if` decides that the return type is 'string', so the `else` can't decide to change that to `int`. You would need to modify the code like so for the above to work:
+In this case, the `if` decides that the return type is 'string', so the `else` can't decide to change that to `int`. You would need to modify the code like so for the above to work:
 
 ```fsharp
 let someCondition = true
