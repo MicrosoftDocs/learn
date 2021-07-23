@@ -602,3 +602,8 @@ achievements:
   title: Build Azure Resource Manager templates
   summary: Learn how Resource Manager templates express your deployments as code, enabling you to deploy faster and more reliably. 
   iconUrl: /learn/achievements/build-azure-vm-templates.svg
+- uid: learn.wwl.process-natural-language-azure-cognitive-language-services.trophy
+  type: trophy
+  title: Process natural language with Azure Cognitive Language Services
+  summary: Process natural language with Azure Cognitive Language Services
+  iconUrl: /learn/achievements/process-natural-language-with-azure-cognitive-language-services.svg
