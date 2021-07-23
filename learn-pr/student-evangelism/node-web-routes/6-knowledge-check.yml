@@ -14,25 +14,25 @@ content: Choose the best response for each question. Then select **Check your an
 quiz:
   title: Check your knowledge
   questions:
-    - content: What is a way to setup middleware? 
+    - content: What is a way to set up middleware? 
       choices:
-        - content: Use `app.get(‘/’, () => {}).`
+        - content: Use `app.get(‘/’, () => {})`.
           isCorrect: false
-          explanation: Incorrect. That’s how you would setup a default route, for ‘/’. 
+          explanation: Incorrect. That's how you would set up a default route for ‘/’. 
         - content: Use `app.use({} => {})`.
           isCorrect: true
-          explanation: Correct, using `use()` is correct way to set up a middleware.
+          explanation: Correct. Using `use()` is the correct way to set up middleware.
         - content: Use `app.middleware() => {})`.
           isCorrect: false
-          explanation: Incorrect. There’s no such method called `middleware()`.
+          explanation: Incorrect. There's no method called `middleware()`.
     - content: How would you respond with text content?
       choices:
-        - content: Use `res.text()` method;
+        - content: Use the `res.text()` method.
           isCorrect: false
-          explanation: Incorrect. There’s no such method `text()` on the response stream.
+          explanation: Incorrect. There's no method called `text()` on the response stream.
         - content: Use the `res.send()` method.
           isCorrect: true
-          explanation: Correct, this method ensure what’s sent back is of type text.
+          explanation: Correct. This method ensures that what's sent back is of type `text`.
         - content: Use the `req.send()` method.
           isCorrect: false
-          explanation: Incorrect. While `send()` is the correct method to use for sending data back, you need to use the response stream `res`, not the request `req`.
+          explanation: Incorrect. Although `send()` is the correct method to use for sending data back, you need to use the response stream (`res`), not the request (`req`).

@@ -3,7 +3,7 @@ uid: learn.student-evangelism.node-web-routes.exercise-route-query-parameters
 title: Exercise - Route and query parameters
 metadata:
   title: Exercise - Route and query parameters
-  description: This unit covers how to filter a response using query parameters.
+  description: This unit covers how to filter a response by using query parameters.
   author: clarkio
   ms.author: brcl
   ms.date: 07/12/2021
