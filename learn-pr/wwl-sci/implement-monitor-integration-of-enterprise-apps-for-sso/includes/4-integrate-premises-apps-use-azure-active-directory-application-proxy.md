@@ -6,13 +6,13 @@ The Application Proxy for Azure AD provides secure remote access to on-premises 
 
 Application Proxy works with:
 
-- Web applications that use [Integrated Windows Authentication](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd) for authentication.
+- Web applications that use [Integrated Windows Authentication](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd) for authentication.
 
-- Web applications that use form-based or [header-based](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-headers) access.
+- Web applications that use form-based or [header-based](/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-headers) access.
 
 - Web APIs that you want to expose to rich applications on different devices.
 
-- Applications hosted behind a [Remote Desktop Gateway](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-remote-desktop-services).
+- Applications hosted behind a [Remote Desktop Gateway](/azure/active-directory/manage-apps/application-proxy-integrate-with-remote-desktop-services).
 
 - Rich client apps that are integrated with the Microsoft Authentication Library (MSAL).
 
