@@ -4,7 +4,7 @@ metadata:
   title: Program with F#
   description: F# is an open-source, cross-platform programming language that makes it easy to write succinct, performant, robust, and practical code. It's a general-purpose language that enables you to create many different types of applications like Web API, Desktop, IoT, Gaming and more. 
   brand: azure
-  ms.date: 07/30/2021
+  ms.date: 07/23/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
