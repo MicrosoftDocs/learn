@@ -2,7 +2,7 @@
 uid: learn.microservices-apigateway-aspnet-core.review-kubernetes-ingress-controller-concepts
 metadata:
   title: Understand Kubernetes ingress controller concepts
-  description: Understand how ingress controllers work in a k8s cluster.
+  description: Understand how ingress controllers work in a Kubernetes cluster.
   author: camsoper
   ms.author: casoper
   ms.date: 05/12/2021
