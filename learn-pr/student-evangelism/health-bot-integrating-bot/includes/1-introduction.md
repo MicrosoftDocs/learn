@@ -1,4 +1,4 @@
-The healthcare bot so far has been receiving inputs from users. But the data isn't stored anywhere. What if we retrieve the data on a website so the doctor can see his appointments? To do that, we have to store the data in a database. We can use the data connection step in Azure Health Bot. In this step, we can connect to an FHIR [Fast Healthcare Interoperability Resources](https://azure.microsoft.com/services/azure-api-for-fhir/) database and also any normal databases, such as SQL.
+The healthcare bot has been receiving inputs from users. But the data isn't stored anywhere. What if we retrieve the data on a website so the doctor can see appointments? To do that, we have to store the data in a database. We can use the data connection step in Azure Health Bot. In this step, we can connect to an FHIR [Fast Healthcare Interoperability Resources](https://azure.microsoft.com/services/azure-api-for-fhir/) database and also any normal databases, such as SQL.
 
 In this tutorial, we'll demonstrate the connection by using a SQL database hosted on Azure.
 

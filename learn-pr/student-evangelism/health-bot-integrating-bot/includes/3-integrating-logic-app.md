@@ -1,69 +1,69 @@
-In this unit, we will be using Azure Logic Apps to connect our database to the healthcare bot.
+In this unit, we'll use Azure Logic Apps to connect our database to the healthcare bot.
 
-Azure Logic Apps is a cloud-based platform for creating and running automated workflows that integrate your apps, data, services, and systems.
+Azure Logic Apps is a cloud-based platform for creating and running automated workflows. These workflows can integrate your apps, data, services, and systems.
 
-To start with, go to the [Azure portal](https://portal.azure.com/#home).
+To begin, go to the [Azure portal](https://portal.azure.com/#home).
 
-:::image type="content" source="../media/3-logic-app-creation.png" alt-text="Creating logic app resource" lightbox="../media/3-logic-app-creation.png":::
+## Create a new scenario
 
-## Creating a new scenario
+1. On the Azure services page, select **Create a resource**.
 
-1. In the Azure services page, select **Create a Resource**.
+1. In the search bar, search for **Logic App** and then select the logic app resource.
 
-1. In the search bar, search for **Logic App**, and select the Logic App resource.
+   :::image type="content" source="../media/3-logic-app-creation.png" alt-text="Screenshot showing how to create a logic app resource." lightbox="../media/3-logic-app-creation.png":::
 
 1. Select the **Create** button.
 
-   :::image type="content" source="../media/3-provision-logic-app.png" alt-text="Provision a logic app" lightbox="../media/3-provision-logic-app.png":::
+1. On the page that appears, fill in the required fields.
 
-1. Fill in the required fields:
+   :::image type="content" source="../media/3-provision-logic-app.png" alt-text="Screenshot showing how to provision a logic app." lightbox="../media/3-provision-logic-app.png":::
 
-    - **Subscription:** Select your subscription.
+    - **Subscription**: Select your subscription.
 
-    - **Resource group:** Select create new and enter a unique name for the resource group. In our case we use the name as 'Healthbot' and select **OK**.
+    - **Resource group**: Select **Create new** and enter a unique name for the resource group, such as *Healthbot*. Then select **OK**.
 
-    - **Type:** Select 'Standard' type
+    - **Type**: Select **Standard**.
 
-    - **Logic App Name:** The Logic App name may be a unique name of your choosing. We have given 'healthbotlearn'.
+    - **Logic App name**: Choose a unique name, such as *healthbotlearn*.
 
-    - **Publish:** Select 'workflow'
+    - **Publish**: Select **Workflow**.
 
-    - **Region:** Select any region from the dropdown.Here we use "Central US".
-
-1. Select the **Review + create** button to create and deploy the logic app.  
+    - **Region**: Select any region. We'll use **Central US**.
 
    > [!Note]
-   > You may also select **Next: Hosting** to look at the other details before **Review + create**.
+   > Before you select **Review + create** in the next step, you can select **Next: Hosting** to see other details.
 
-   :::image type="content" source="../media/3-navigate-to-resource.png" alt-text="Navigating to the logic app resource" lightbox="../media/3-navigate-to-resource.png":::
+1. Select **Review + create** to create and deploy the logic app.  
 
-1. After deploying the logic app, select **Go to resource**.
+1. Select **Go to resource**.
 
-1. Select workflows from the left column.
+   :::image type="content" source="../media/3-navigate-to-resource.png" alt-text="Screenshot showing how to go to a deployed logic app." lightbox="../media/3-navigate-to-resource.png":::
 
-   :::image type="content" source="../media/3-post-worflow.png" alt-text="POST workflow creation" lightbox="../media/3-post-worflow.png":::
+1. On the left, select **Workflows**.
+
+   :::image type="content" source="../media/3-post-worflow.png" alt-text="Screenshot showing the Workflows selection in the menu on the left. The New workflow pane is open on the right." lightbox="../media/3-post-worflow.png":::
 
 1. Select **Add**.
 
-1. Type a Workflow Name (in this case we have given it as 'healthbot-post). Select the state type as **Stateful**, then select the **Create** button at the bottom.
+1. Name the workflow. We'll name our workflow *healthbot-post*. Select the state type as **Stateful**. Then select **Create**.
 
-1. After its creation, select the name ('healthbot-post' in this instance).
+1. Select the workflow name to open it.
 
-1. After it opens, select **Designer** from the left column.
+1. On the left, select **Designer**.
 
-   :::image type="content" source="../media/3-http-request.png" alt-text="when http response is recieved" lightbox="../media/3-http-request.png":::
+   :::image type="content" source="../media/3-http-request.png" alt-text="Screenshot showing the workflow designer. The selection on the right is labeled, 'When a HTTP response is received.'" lightbox="../media/3-http-request.png":::
 
-1. Select choose an operation, and in the search bar, search for 'When a HTTP request is received', and then select it.
+1. Choose an operation. Then, in the search bar, search for and select **When a HTTP request is received**.
 
-   :::image type="content" source="../media/3-http-post-method.png" alt-text="HTTP POST method" lightbox="../media/3-http-post-method.png":::
+1. Select **Method** > **POST**.
 
-1. Select **Method**, and from the drop down, select POST.
+   :::image type="content" source="../media/3-http-post-method.png" alt-text="Screenshot showing the selection of the HTTP POST method." lightbox="../media/3-http-post-method.png":::
 
-   :::image type="content" source="../media/3-post-url.png" alt-text="HTTP POST URL" lightbox="../media/3-post-url.png":::
+1. Copy the HTTP POST URL and save it for future reference.
 
-1. Copy the HTTP POST URL that is generated above, and save it for future reference.
+   :::image type="content" source="../media/3-post-url.png" alt-text="Screenshot showing the generated HTTP POST URL." lightbox="../media/3-post-url.png":::
 
-1. For the request body JSON Schema, use the following code:
+1. For the request body JSON schema, use the following code:
 
    ```json
    "'{
@@ -85,99 +85,103 @@ To start with, go to the [Azure portal](https://portal.azure.com/#home).
    }
    ```
 
-1. Select the **+** to add another action.
+1. Select the plus sign (**+**) to add an action.
 
-   :::image type="content" source="../media/3-insert-sql-row.png" alt-text="Insert sql row" lightbox="../media/3-insert-sql-row.png":::
+   :::image type="content" source="../media/3-insert-sql-row.png" alt-text="Screenshot showing how to add an action." lightbox="../media/3-insert-sql-row.png":::
 
-1. Search for 'insert row(v2)' in the search bar and under the Azure tab, under actions, select the 'Insert now(v2)' SQL Server.
+1. In the search bar, search for **Insert row (V2)**. On the **Azure** tab, under **Actions**, select **Insert now (V2) SQL Server**.
 
-   :::image type="content" source="../media/3-install-gateway.png" alt-text="Install gateway" lightbox="../media/3-install-gateway.png":::
+   :::image type="content" source="../media/3-install-gateway.png" alt-text="Screenshot showing the selection for Insert now (V2)." lightbox="../media/3-install-gateway.png":::
 
-1. Fill the table as:
+1. Fill the table by using the following information:
 
-    - **Connection name:** Give a name for your connection. We have used 'healthbot-vitals'.
-    - **Authentication Type:** Select 'SQL Server Authentication'.
-    - **SQL Server name:** Go to the SQL server which you  have created previously, and note the SQL Server name from the essentials. Paste it in the field.
-    - **SQL Database name:** Use the same database name as used in the the previous unit. We have used 'healthbot'.
-    - **Username:** Provide the same username used for logging into the Query editor. We have used 'learnbot'.
-    - **Password::** Provide the same password used for logging into the Query editor. We have used 'healthbot@123'.
+    - **Connection name**: Name your connection. We'll use *healthbot-vitals*.
+    - **Authentication Type**: Select **SQL Server Authentication**.
+    - **SQL server name**: Paste the name for the SQL server you created. You'll find it listed on the **Essentials** pane.
+    - **SQL database name**: Paste your database name, such as *healthbot*.
+    - **Username**: Provide the username you used to log in to the query editor. We used *learnbot*.
+    - **Password**: Provide the password you used to log in to the query editor. We used *healthbot@123*.
 
-1. Select the gateway if you already have one, else select [install gateway](/azure/logic-apps/logic-apps-gateway-install).
+1. Select the gateway if you already have one. Otherwise, select [**Install gateway**](/azure/logic-apps/logic-apps-gateway-install).
 
-1. Select the **Create** button.
+1. Select **Create**.
 
-   :::image type="content" source="../media/3-parameters-sql-row.png" alt-text="Parameters for SQL insert Row" lightbox="../media/3-parameters-sql-row.png":::
+1. Provide the server name and database name you created in the previous unit.
 
-1. Fill the required fields with the server and database name from the previous unit.
+   :::image type="content" source="../media/3-parameters-sql-row.png" alt-text="Screenshot showing the parameters for the SQL insert row." lightbox="../media/3-parameters-sql-row.png":::
 
-1. Select your table name from the drop down menu.
+1. Select your table name.
 
-   :::image type="content" source="../media/3-sql-table-columns.png" alt-text="SQL table columns selection" lightbox="../media/3-sql-table-columns.png":::
+1. Select the required parameters. In this case, the parameters are **Name**, **Age**, **Height**, **Weight**, and **ColumnDateTime**.
 
-1. Select the required parameters, which in this case will be: name, Age, Height, Weight and ColumnDateTime.
+   :::image type="content" source="../media/3-sql-table-columns.png" alt-text="Screenshot showing the selected columns for the SQL table." lightbox="../media/3-sql-table-columns.png":::
 
-   :::image type="content" source="../media/3-dynamic-content.png" alt-text="Dynamic content selection" lightbox="../media/3-dynamic-content.png":::
+1. Add the parameters by selecting **Add dynamic content**.
 
-1. Add name, Age, Height, Weight and ColumnDateTime, by clicking on 'Add dynamic content'.
+   :::image type="content" source="../media/3-dynamic-content.png" alt-text="Screenshot showing how to add dynamic content." lightbox="../media/3-dynamic-content.png":::
 
-   :::image type="content" source="../media/3-getfuturetime-function.png" alt-text="Function - getfuturetime for timestamp" lightbox="../media/3-getfuturetime-function.png":::
+1. Add the expression *getFutureTime(0, 'Day')*. 
 
-1. Add the expression 'getFutureTime(0, 'Day')'. The fields should now look like this:
+   :::image type="content" source="../media/3-getfuturetime-function.png" alt-text="Screenshot showing the function get future time for timestamp." lightbox="../media/3-getfuturetime-function.png":::
 
-   :::image type="content" source="../media/3-insert-row-final.png" alt-text="Insert row final configurations" lightbox="../media/3-insert-row-final.png":::
+   The fields should now look like this:
 
-1. Select the **+** in the designer, search for 'response' under actions, and select it.
+   :::image type="content" source="../media/3-insert-row-final.png" alt-text="Screenshot showing the final configuration for insert row." lightbox="../media/3-insert-row-final.png":::
 
-   :::image type="content" source="../media/3-http-response.png" alt-text="https response" lightbox="../media/3-http-response.png":::
+1. In the designer, select the plus sign (**+**). Then under **Actions**, search for and select **Response**.
 
-1. Fill out the parameters as shown.
+   :::image type="content" source="../media/3-http-response.png" alt-text="Screenshot showing how to select the HTTP response." lightbox="../media/3-http-response.png":::
 
-   :::image type="content" source="../media/3-response-config.png" alt-text="https response configuration" lightbox="../media/3-response-config.png":::
+1. Fill in the parameters.
 
-1. On the left column, select **Overview**, and click **Run with payload**.
+   :::image type="content" source="../media/3-response-config.png" alt-text="Screenshot showing the HTTP response configuration." lightbox="../media/3-response-config.png":::
 
-   :::image type="content" source="../media/3-run-payload.png" alt-text="Test with payload" lightbox="../media/3-run-payload.png":::
+1. On the left, select **Overview** > **Run with payload**.
 
-1. Copy, paste the URL from step 14, and fill out the rest of the fields as shown.
+   :::image type="content" source="../media/3-run-payload.png" alt-text="Screenshot showing the Run with payload pane." lightbox="../media/3-run-payload.png":::
 
-1. Select **Run**. If the workflow runs successfully, it means that it's working perfectly.
+1. Paste the HTTP POST URL that you copied earlier. Then fill in the remaining fields.
+
+1. Select **Run**. If the workflow runs successfully, you've set up the logic app correctly.
 
 > [!NOTE]
-> If the workflow doesn't run, use the POST url in any API tester, and check for the response.
+> If the workflow doesn't run, check the POST URL in an API tester to see if it responds.
 
-## Integrating Logic App for GET method
+## Set up the logic app for the GET method
 
-Using the same logic app that we created earlier, we will continue to create a new workflow for the GET method to retrieve the data from the database and to display it on to the screen.
+We'll now use the logic app to create a workflow for the GET method. This setup will allow us to retrieve data from the database and display it.
 
-:::image type="content" source="../media/3-get-workflow.png" alt-text="Worflow fo GET method" lightbox="../media/3-get-workflow.png":::
+1. On the **Workflows** page, select **Add** to add a new workflow.
 
-1. Select 'Add' in the workflows page to add a new workflow.
+   :::image type="content" source="../media/3-get-workflow.png" alt-text="Screenshot showing how to add a new workflow for the GET method." lightbox="../media/3-get-workflow.png":::
 
-1. Give a name for the workflow. We have given it as 'healthbot-get' and select state type as 'Stateful'.
+1. Name the workflow something like *healthbot-get*. Then select a state type of **Stateful**.
 
-1. Select 'Create'.
+1. Select **Create**.
 
-   :::image type="content" source="../media/3-logic-app-designer.png" alt-text="Logic app designer" lightbox="../media/3-logic-app-designer.png":::
+1. After the workflow is created, on the left, under **Developer**, select **Designer**.
 
-1. After the workflow is created, select **Designer** from the menu on the left side of the page under developer.
+   :::image type="content" source="../media/3-logic-app-designer.png" alt-text="Screenshot showing the logic app designer." lightbox="../media/3-logic-app-designer.png":::
 
-1. On the designer page, select **Add a new action**, search for HTTP Request, and then select **When a HTTP request is received**.
+1. Select **Add a new action**. 
+
+1. Search for *HTTP request* and then select **When a HTTP request is received**.
+
+1. Note down the HTTP GET URL. We'll need it later to run the workflow.
 
    :::image type="content" source="../media/3-get-method.png" alt-text="Selecting GET method" lightbox="../media/3-get-method.png":::
 
-1. Note down the HTTP Get URL which we will later require to run the workflow.
+1. Select **Method** > **GET**.
 
-1. In HTTP Request, select **Method** and choose the GET method.
+1. Add a new action and then search for *SQL query*.
 
-1. Add a new action and search for SQL Query.
+   :::image type="content" source="../media/3-execute-sql-query.png" alt-text="Screenshot showing how to run a SQL query." lightbox="../media/3-execute-sql-query.png":::
 
-   :::image type="content" source="../media/3-execute-sql-query.png" alt-text="Executing SQL query" lightbox="../media/3-execute-sql-query.png":::
+1. Give the connection a unique name. You can copy the connection string from the SQL database.
 
-1. Give any unique name for the connection name. The connection string can be copied from the SQL Database.
+   :::image type="content" source="../media/3-execute-query-connection.png" alt-text="Screenshot showing how to search for the Execute Query selection." lightbox="../media/3-execute-query-connection.png":::
 
-   :::image type="content" source="../media/3-execute-query-connection.png" alt-text="Connecting execute query" lightbox="../media/3-execute-query-connection.png":::
-
-1. To get the connection string, go to the main portal and click on the SQL Database that you have created.
+1. To get the connection string, in the Azure portal, select the SQL database you created.
 
    :::image type="content" source="../media/3-sql-database.png" alt-text="SQL database" lightbox="../media/3-sql-database.png":::
 
@@ -199,11 +203,11 @@ Using the same logic app that we created earlier, we will continue to create a n
 
 1. After you select the icon, you will be able to see new fields. Fill the new fields in the following way:
 
-   - **Server Name:**  Select the same server's name we used previously from the dropdown menu.
+   - **Server Name**:  Select the same server's name we used previously from the dropdown menu.
 
-   - **Database name:** Select the name of your database from the dropdown menu.
+   - **Database name**: Select the name of your database from the dropdown menu.
 
-   - **Query:** Enter the following code in the Query field.
+   - **Query**: Enter the following code in the Query field.
 
        ```
        SELECT - FROM Vitals WHERE ColumnDateTime=(SELECT MAX(ColumnDateTime) FROM Vitals)
@@ -213,8 +217,8 @@ Using the same logic app that we created earlier, we will continue to create a n
 
 1. Add a new action to the designer and search for Response. Open the response cell and configure the fields in the following way:
 
-   - **Status Code:** Enter 200.
-   - **Body:** Select add dynamic content and add 'Query Results' from the list.
+   - **Status Code**: Enter 200.
+   - **Body**: Select add dynamic content and add 'Query Results' from the list.
 
    :::image type="content" source="../media/3-final-get.png" alt-text="Logic App designer" lightbox="../media/3-final-get.png":::
 
