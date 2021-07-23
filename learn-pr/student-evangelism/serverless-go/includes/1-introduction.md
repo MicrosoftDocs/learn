@@ -7,7 +7,7 @@ One of the biggest reasons to use Azure Functions is the low cost. With Azure Fu
 
 Using Azure Functions doesn't mean that you don't need to care about infrastructure. You just have fewer decisions to make about where your application runs. When you deploy a Functions app to Azure, server resources are provided on demand. As demand varies, the application automatically scales up and down.
 
-Logic implemented in Azure Functions runs in response to events that happen in the cloud. For example, events that trigger a function include inserting database rows, provisioning new resources, and adding new queue messages.
+Logic implemented in Azure Functions runs in response to events that happen in the cloud. Events that trigger a function include inserting database rows, provisioning new resources, and adding new queue messages.
 
 To author Azure Functions in Go or Rust, for example, you use a feature called custom handlers. Custom handlers allow you to bring almost any language to Azure Functions.
 

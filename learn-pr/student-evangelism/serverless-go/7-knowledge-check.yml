@@ -24,7 +24,7 @@ quiz:
           explanation: Incorrect. The property is called `defaultExecutionPath`.
         - content: Set `defaultExecutablePath` in the _function.json_ file for the function endpoint.
           isCorrect: true
-          explanation: Correct. That's the correct place to point out the compiled app path.
+          explanation: Correct. That's the right place to point out the compiled app path.
     - content: Can any language or runtime use custom handlers?
       choices:
         - content: Yes. There are no limitations.

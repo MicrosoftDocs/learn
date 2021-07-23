@@ -4,7 +4,7 @@ In the cloud, message queues can generate events with a payload. A service like 
 
 ## Work with message queues
 
-For an Azure function to be able to consume a message from a message queue, it needs a *trigger* and possibly a *binding*.
+For an Azure function to be able to consume a message from a message queue, it needs a trigger and possibly a binding.
 
 An Azure function needs to listen to a specific queue so that its code is triggered when a new message is published on that queue. To set up a trigger, you need to provide the proper credentials so the trigger code knows how to connect to the message queue. You create an entry in the _function.json_ file for the function that's listening to the queue. In the `bindings` element, specify these properties on an entry:
 
@@ -62,7 +62,7 @@ You now have a local emulator set up, and it has a queue on it. You've also conf
 
 ### Create a function endpoint
 
-You're ready to create a function that can handle incoming queue messages. Create a folder for your function and name it, for example,  **queueTrigger**. Then create a _function.json_ file and give it the following content:
+You're ready to create a function that can handle incoming queue messages. Create a folder for your function and name it, for example, `queueTrigger`. Then create a _function.json_ file and give it the following content:
 
 ```json
 {
