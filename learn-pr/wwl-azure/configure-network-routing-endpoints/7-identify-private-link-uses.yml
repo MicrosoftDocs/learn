@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-network-routing-endpoints.identify-private-link-uses
+title: Identify private link uses
+metadata:
+  title: Identify private link uses
+  description: "Identify private link uses"
+  ms.date: 07/23/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-identify-private-link-uses.md)]
