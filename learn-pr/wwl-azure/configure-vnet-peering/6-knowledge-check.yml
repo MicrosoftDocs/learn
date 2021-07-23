@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/22/2021
+  ms.date: 07/23/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -38,14 +38,14 @@ quiz:
     - content: "Transitivity"
       isCorrect: false
       explanation: "That's incorrect. Transitivity refers to virtual networks communicating with the peers of their peers."
-  - content: "Which of the following is true about virtual network peering?"
+  - content: "Which of the following best describes virtual network peering?"
     choices:
     - content: "Creating a virtual network disrupts other resources."
       isCorrect: false
       explanation: "That's incorrect. There is no downtime to resources in either virtual network when creating the peering, or after the peering is created."
     - content: "Traffic between the virtual networks is kept on the Microsoft backbone network."
       isCorrect: true
-      explanation: "That's correct."
+      explanation: "That's correct. The Azure backbone handles traffic between virtual networks."
     - content: "Peered virtual networks must be in the same region."
       isCorrect: false
       explanation: "That's incorrect. Global virtual network peering connects virtual networks that are in different Azure regions."
