@@ -5,10 +5,10 @@ Use **Azure File Sync** to centralize your organization's file shares in Azure F
 
 There are many uses and advantages to file sync.
 
-1.  **Lift and shift**. The ability to move applications that require access between Azure and on-premises systems. Provide write access to the same data across Windows Servers and Azure Files. This lets companies with multiple offices have a need to share files with all offices.
-2.  **Branch Offices**. Branch offices need to backup files, or you need to setup a new server that will connect to Azure storage.
-3.  **Backup and Disaster Recovery**. Once File Sync is implemented, Azure Backup will back up your on-premises data. Also, you can restore file metadata immediately and recall data as needed for rapid disaster recovery.
-4.  **File Archiving**. Only recently accessed data is located on local servers. Non-used data moves to Azure in what is called Cloud Tiering.
+ -  **Lift and shift**. The ability to move applications that require access between Azure and on-premises systems. Provide write access to the same data across Windows Servers and Azure Files. This lets companies with multiple offices have a need to share files with all offices.
+ -  **Branch Offices**. Branch offices need to backup files, or you need to setup a new server that will connect to Azure storage.
+ -  **Backup and Disaster Recovery**. Once File Sync is implemented, Azure Backup will back up your on-premises data. Also, you can restore file metadata immediately and recall data as needed for rapid disaster recovery.
+ -  **File Archiving**. Only recently accessed data is located on local servers. Non-used data moves to Azure in what is called Cloud Tiering.
 
 > [!NOTE]
 > Cloud tiering is an optional feature of Azure File Sync in which frequently accessed files are cached locally on the server while all other files are tiered to Azure Files based on policy settings. When a file is tiered, the Azure File Sync file system replaces the file locally with a pointer, or reparse point. The reparse point represents a URL to the file in Azure Files. When a user opens a tiered file, Azure File Sync seamlessly recalls the file data from Azure Files without the user needing to know that the file is actually stored in Azure. Cloud Tiering files will have greyed icons with an offline O file attribute to let the user know the file is only in Azure.
