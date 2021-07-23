@@ -642,3 +642,8 @@ achievements:
   title: Use containers for your Language Understanding Intelligent Service (LUIS) Apps
   summary: Use containers for your Language Understanding Intelligent Service (LUIS) Apps
   iconUrl: /learn/achievements/use-containers-for-your-language-understanding-intelligent-service-luis-apps.svg
+- uid: learn.wwl.process-classify-images-with-azure-cognitive-vision-services.trophy
+  type: trophy
+  title: Process and classify images with the Azure cognitive vision services
+  summary: Process and classify images with the Azure cognitive vision services
+  iconUrl: /learn/achievements/process-and-classify-images-with-the-azure-cognitive-vision-services.svg
