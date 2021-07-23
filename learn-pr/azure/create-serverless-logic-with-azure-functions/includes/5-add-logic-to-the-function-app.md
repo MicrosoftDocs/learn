@@ -161,7 +161,7 @@ To test the function, you can send an HTTP request to the function URL using cUR
 
 1. From the top menu bar, select **Get function URL**, as shown in the following image. Save this link by selecting the *Copy to clipboard* icon at the end of the URL. Store this link to Notepad or a similar app for later use.
 
-    :::image type="content" source=../media/5-get-function-url.png" alt-text="Screenshot of the Azure portal showing the function editor, with the Get function URL button highlighted.":::
+    :::image type="content" source="../media/5-get-function-url.png" alt-text="Screenshot of the Azure portal showing the function editor, with the Get function URL button highlighted.":::
 
 ### Secure HTTP triggers
 
@@ -173,7 +173,7 @@ Because you specified *Function* when you created this function, you need to sup
 
 1. Show the default Function Key, and copy it to the clipboard. Store this key to Notepad or a similar app for later use.
 
-    :::image type="content" source=../media/5-get-function-key.png" alt-text="Screenshot of the Azure portal showing the function Manage pane with the revealed function key highlighted.":::
+    :::image type="content" source="../media/5-get-function-key.png" alt-text="Screenshot of the Azure portal showing the function Manage pane with the revealed function key highlighted.":::
 
 1. At the bottom of the screen, scroll to the left, and select your function. At the top, under the **Get Function Url** section, copy your **URL** by selecting the *Copy to clipboard* icon at the end of the URL. Store this link to Notepad or a similar app for later use.
 
