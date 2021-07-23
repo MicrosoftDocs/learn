@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.configure-virtual-machine-extensions
 metadata:
-  title: Configure Virtual Machine Extensions
+  title: Configure virtual machine extensions
   description: "You will learn how to use virtual machine extensions to automate virtual machine deployments."
-  ms.date: 07/21/2021
+  ms.date: 07/23/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Configure Virtual Machine Extensions
+title: Configure virtual machine extensions
 summary: You will learn how to use virtual machine extensions to automate virtual machine deployments.
 abstract: |
   After completing this module, you will be able to:
