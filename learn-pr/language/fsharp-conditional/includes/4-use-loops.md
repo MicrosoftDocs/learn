@@ -13,8 +13,8 @@ The idea of a loop is to iterate over a range of values and for each value do so
 This construct needs to operate on something that's an enumerable collection and thereby implements `System.Collections.IEnumerable`, that includes, lists, sequences, arrays and more. The syntax for the loop looks like the following:
 
 ```fsharp
-for pattern in enumerable-expression do
-  body-expression
+for <pattern> in <enumerable-expression> do
+  <body-expression>
 ```
 
 There's some keywords here that needs explaining:
@@ -35,8 +35,8 @@ There's some keywords here that needs explaining:
 This construct is slightly different from the first loop. The difference lies in there being a loop variable that constitutes a boundary, where to stop iterating. Here's what the syntax looks like:
 
 ```fsharp
-for identifier = start [ to | downto ] finish do
-    body-expression
+for <identifier = start> [ to | downto ] <finish> do
+    <body-expression>
 ```
 
 Let's go over the different parts:
@@ -65,8 +65,8 @@ The `while...do` construct is different in the sense that it doesn't center arou
 The syntax of the `while...do` looks like so:
 
 ```fsharp
-while test-expression do
-  body-expression
+while <test-expression> do
+  <body-expression>
 ```
 
 An example of using a `while...do` can, for example,  be this guessing game:

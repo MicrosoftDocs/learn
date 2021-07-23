@@ -48,6 +48,9 @@ if age > 65 then printfn "Senior citizen" else printfn "Citizen"
 
 Same code example as before, with the difference being that `if` and `else` have been put on the same line. The expression being run `printfn "Senior citizen"` produces a value of type `unit`. 
 
+> [!NOTE]
+> `unit` is a value that acts as a placeholder when no actual value is returned. You can think of it like `void` or `None`.
+
 Another thing to keep in mind is that you can't mix types, the `if` and `else` needs to return the same data type or you will get an error. You can't for example write code like so:
 
 ```fsharp
