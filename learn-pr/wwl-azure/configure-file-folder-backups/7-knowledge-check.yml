@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/22/2021
+  ms.date: 07/23/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -42,7 +42,7 @@ quiz:
     choices:
     - content: "Azure backup has unlimited data transfer."
       isCorrect: true
-      explanation: "That's correct. Azure Backup doesn't limit the amount of inbound or outbound data that is transfered. Azure Backup also does not charge for the data that's transferred."
+      explanation: "That's correct. Azure Backup doesn't limit the amount of inbound or outbound data that is transferred. Azure Backup also does not charge for the data that's transferred."
     - content: "Azure Backup doesn't provide data encryption."
       isCorrect: false
       explanation: "That's incorrect. Azure Backup provides solutions for securing data in transit and at rest."
