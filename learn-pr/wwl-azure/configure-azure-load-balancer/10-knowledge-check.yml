@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/22/2021
+  ms.date: 07/23/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "A company provides customers a virtual network in the cloud. There are dozens of Linux virtual machines in another virtual network. Which Azure load balancer should be used to direct traffic between the virtual networks."
+  - content: "A company provides customers a virtual network in the cloud. There are dozens of Linux virtual machines in another virtual network. Which Azure load balancer should be used to direct traffic between the virtual networks?"
     choices:
     - content: "An external load balancer."
       isCorrect: false
