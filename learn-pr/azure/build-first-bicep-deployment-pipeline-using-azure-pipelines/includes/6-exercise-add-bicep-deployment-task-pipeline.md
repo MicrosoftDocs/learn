@@ -130,9 +130,9 @@ Your template includes a storage account, which your website team uses to store 
 
    :::image type="content" source="../media/6-pipeline-run.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Run pipeline' page, with the Variables menu item highlighted." border="true":::
 
-1. Select the **DeployToyManualsStorageAccount** variable and change its value to _false_, then select **OK**.
+1. Select the **DeployToyManualsStorageAccount** variable and change its value to _false_, then select **Update**.
 
-   :::image type="content" source="../media/6-pipeline-run-edit-variable.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Run pipeline' page, with the DeployToyManualsStorageAccount variable editor, and the OK button highlighted." border="true":::
+   :::image type="content" source="../media/6-pipeline-run-edit-variable.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Run pipeline' page, with the DeployToyManualsStorageAccount variable editor, and the Update button highlighted." border="true":::
 
 1. Select the back arrow.
 
