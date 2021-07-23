@@ -40,7 +40,7 @@ Let's create a function app that we'll use throughout this module. A function ap
     | Publish | Code | Option to publish code files or a Docker container. |
     | Runtime stack | From the dropdown list, select *Node.js* | The sample code in this module is written in JavaScript. |
     | Version | Accept *default* | The default value is sufficient for this exercise. |
-    | Region | From the dropdown list, select a *locaton* | Select the region nearest to you. |
+    | Region | From the dropdown list, select a *location* | Select the region nearest to you. |
 
 1. Select **Review + create**, and then select **Create** to provision and deploy the function app.
 
@@ -70,7 +70,7 @@ Let's create a function app that we'll use throughout this module. A function ap
     | Publish | Code | Option to publish code files or a Docker container. |
     | Runtime stack | From the dropdown list, select *PowerShell Core* | The sample code in this module is written in PowerShell. |
     | Version | Accept *default* | The default value is sufficient for this exercise. |
-    | Region | From the dropdown list, select a *locaton* | Select the region nearest to you. |
+    | Region | From the dropdown list, select a *location* | Select the region nearest to you. |
 
 1. Select **Review + create**, and then select **Create** to provision and deploy the function app.
 
