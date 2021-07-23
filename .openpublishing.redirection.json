@@ -8189,6 +8189,11 @@
       "source_path": "learn-pr/wwl-data-ai/train-evaluate-cluster-models/4-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-cluster-models/7-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/paths/process-natural-language-azure-cognitive-language-services/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-language-understanding-solution/",
+      "redirect_document_id": false
     }
   ]
 }
