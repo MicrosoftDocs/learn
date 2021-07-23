@@ -111,7 +111,7 @@ Audit logs should be preserved for security, discovery, and to meet legal and re
 
 ### Configure threat detection retention for more than 90 days - Level 1
 
-A retention of zero days means logs are deleted the same day. Otherwise, the value can be any number of days between 1 and 2147483647. You should consider keeping the logs for at least 90 days to be able to go backwards to spot thread patterns.
+A retention of zero days means logs are deleted the same day. Otherwise, the value can be any number of days between 1 and 2147483647. You should consider keeping the logs for at least 90 days to be able to go backwards to spot threat patterns.
 
 1. Sign in to the Azure portal.
 
