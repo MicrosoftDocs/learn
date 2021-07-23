@@ -1,5 +1,3 @@
-# What is Azure Stack HCI?
-
 Most organizations and businesses, including Contoso, strive to ensure high availability of their mission critical workloads. Traditionally, this required specialized, costly, and complex solution. With Failover Clustering, it is possible to accomplish the same objective in a cost-effective manner on commodity hardware.
 
 Azure Stack HCI provides a hyperconverged infrastructure (HCI) failover cluster solution that hosts virtualized Windows and Linux workloads and their storage in a hybrid, on-premises environment. Azure Stack HCI connects with Azure hybrid services to enhance with capabilities such as cloud-based monitoring, Site Recovery, and virtual machine (VM) backups, as well as a central view of all of your Azure Stack HCI deployments in the Azure portal. Azure Stack HCI will be a required component of your proof-of-concept environment at Contoso.
