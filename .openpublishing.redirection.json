@@ -8474,6 +8474,11 @@
       "source_path": "learn-pr/wwl-data-ai/use-containers-language-understanding-intelligent-service-apps/6-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/publish-use-language-understanding-app/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/process-classify-images-with-azure-cognitive-vision-services/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-computer-vision-solutions-azure-cognitive-services/",
+      "redirect_document_id": false
     }
   ]
 }
