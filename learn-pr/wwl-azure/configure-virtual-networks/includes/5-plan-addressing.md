@@ -3,8 +3,8 @@ You can assign IP addresses to Azure resources to communicate with other Azure r
 :::image type="content" source="../media/ip-addressing-54476e47.png" alt-text="An Azure resource is shown. The resource is using a private IP address to connect to VNets, on-premises networks, VPN gateways, and ExpressRoute. The resource is using a public IP address to connect to the internet, and public-facing services.":::
 
 
-1.  **Private IP addresses**: Used for communication within an Azure virtual network (VNet), and your on-premises network, when you use a VPN gateway or ExpressRoute circuit to extend your network to Azure.
-2.  **Public IP addresses**: Used for communication with the Internet, including Azure public-facing services.
+ -  **Private IP addresses**: Used for communication within an Azure virtual network (VNet), and your on-premises network, when you use a VPN gateway or ExpressRoute circuit to extend your network to Azure.
+ -  **Public IP addresses**: Used for communication with the Internet, including Azure public-facing services.
 
 > [!NOTE]
 > IP Addresses are never managed from within a virtual machine.
