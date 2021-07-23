@@ -50,9 +50,9 @@ The **Create a virtual machine** pane appears.
     | **Instance details** |
     | Virtual machine name | Enter a name for your VM, such as **test-vp-vm2** (for Test Video Processor VM #2). |
     | Region | Select a region close to you from the global regions listed below this table. |
-    | Availability options | Select **No infrastructure redundancy required**. This option is used to ensure the VM is highly available by grouping multiple VMs together a set to deal with planned or unplanned maintenance events or outages. |
-    | Image | Select **Windows Server 2019 Datacenter - Gen1** from the dropdown list. |
-    | Size | The **Size** field is not directly editable and has a DS1 default size. Select **See all sizes** to explore other VM sizes. The resulting dialog box allows you to filter based on # of CPUs, Name, and Disk Type. Select **Standard DS1 v2** (normally the default), which will give the VM 1 CPU and 3.5 GB of memory. |
+    | Availability options | Accept default **No infrastructure redundancy required**. This option is used to ensure the VM is highly available by grouping multiple VMs together to deal with planned or unplanned maintenance events or outages. |
+    | Image | Select **[smalldisk] Windows Server 2019 Datacenter - Gen1** from the dropdown list. |
+    | Size | The **Size** field is not directly editable. Accept the default **Standard DS1 v2**, which will give the VM 1 CPU and 3.5 GB of memory. Optionally, select the field to view recommended or recently chosen sizes; select **See all sizes** to explore filters for sizes based on vCPUs, RAM, Data disks, operations per second, and cost. Select the X in the top right of the pane to close the pane.  |
     | **Administrator account** |
     | Username | Enter a username you will use to sign in to the VM. |
     | Password | Enter a password that's at least 12 characters long. It must have three of the following: one lower case character, one uppercase character, one number, and one special character that is not '\\' or '-'. Use something you will remember or write it down, as you will need it later. |
@@ -64,26 +64,27 @@ The **Create a virtual machine** pane appears.
 
    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
+    
+1. Select **Next : Disks**.
     > [!TIP]
     > You can use the horizonal scroll bar to slide the view to the left to get back to the VM settings, which had opened a new pane to the right.
 
 ## Configure disks for the VM
 
-1. Select **Next : Disks**.
 
-1. On the **Disks** pane, select or enter the following values.
+1. On the **Disks** tab, select or enter the following values.
 
     | Setting | Value |
     |---------|---------|
     | **Disk options** |
-    | OS disk type | Select **Premium SSD**. |
-    | SSE encryption type | Select **(Default) Encryption at-rest with a platform-managed key**. |
+    | OS disk type | Accept the default **Premium SSD (locally redundant storage)**. |
+    | SSE encryption type | Accept the default **(Default) Encryption at-rest with a platform-managed key**. |
     | **Data disks** |
-    | Select **Create and attach a new disk** link. The **Create a new disk** pane appears. | Accept all the default values for the following settings: *Name*; *Source type*; *Size*; *SSE encryption type*; and *Enable shared disk*. Note that this is where you could use a snapshot, or Storage Blob to create a VHD. Select **OK**. |
+    | Select **Create and attach a new disk** link. The **Create a new disk** pane appears. | Accept all the default values for the following settings: *Name*; *Source type*; *Size*; *SSE encryption type*; and *Enable shared disk*. Note that this is where you could use a snapshot, or Storage Blob to create a VHD. Select **OK** to close the pane. |
 
     ![Screenshot showing the configure disks section for the VM.](../media/3-configure-disks.png)
 
-1. Under **Data disks**, there should now be a new disk in the first row.
+1. On the **Create a virtual machine** pane **Disks** tab, under **Data disks**, there should now be a new row showing the newly configured disk.
 
     ![Screenshot showing the newly added disk in the VM.](../media/3-new-disk.png)
 
@@ -95,36 +96,29 @@ The **Create a virtual machine** pane appears.
     - **Subnet**: First subnet to subdivide the address space - it must fit within the defined address space. After the VNet is created, you can add additional subnets.
     - **Public IP**: Overall IPV4 space available to this network.
 
-1. On the **Networking** tab, let's change some of the settings.
+1. On the **Networking** tab, let's change some of the settings. Under the input field for **Virtual network**, select **Create new**. The **Create virtual network** pane appears.
 
-    | Setting | Value |
-    |---------|---------|
-    | **Network interface** |
-    | Virtual network | Let's change the default ranges to use the `172.xxx` IP address space. Select the **Create new** link. |
-    
-    The **Create virtual network** pane appears.
-
-1. On the **Create virtual network pane** select or enter the following values.
+1. On the **Create virtual network** pane, select or enter the following values.
 
     | Field | Value |
     |---------|---------|
     | **Address space** |
-    | Select *Address range* | In the empty field enter `172.16.0.0/16` to give the adress space a full range of addresses. If another address range row exists, select it so that it is deleted. |
+    | *Address range* | Select the checkbox in the row below and enter `172.16.0.0/16` to give the adress space a full range of addresses. If another address range row exists, select it so that it is deleted. |
     | **Subnets** |
-    | Select *Subnet name* | In empty field, enter *default*. If a different setting exists for default, delete it|
-    | Address range | Enter `172.16.1.0/24` to give it 256 IP addresses of the space. |
+    | *Subnet name* | Select the checkbox in the row below and enter *default* in the first box. If another row exists for default, select it to delete it.|
+    | *Address range* | In the empty input field, enter `172.16.1.0/24` to give the subnet 256 IP addresses of the space. |
 
-1. Select **OK**.
+1. Select **OK** to save your settings and return to the **Create a virtual machine** pane.
 
 > [!NOTE]
-> By default, Azure will create a virtual network, network interface, and public IP for your VM. It's not trivial to change networking options after the VM has been created so always double-check the network assignments on services you create in Azure.
+> By default, Azure will create a virtual network, network interface, and public IP for your VM. It's not trivial to change networking options after the VM has been created so always double-check the network assignments for services you create in Azure.
 
 ## Finish configuring the VM and create the image
 
-On the **Create a virtual machine** pane, the rest of the tabs have reasonable defaults and there's no need to change any of them. You can explore the other tabs if you like. Each field has an `(i)` icon next to it that, if selected will show additional details about that configuration setting. This is a great way to learn about the various settings you can use to configure the VM.
+On the **Create a virtual machine** pane, the rest of the tabs have reasonable defaults and there's no need to change any of them. You can explore the other tabs if you like. Each field has an `(i)` icon next to it which, if selected, will show additional details about that configuration setting. This is a great way to learn about the various settings you can use to configure the VM.
 
-1. Select **Review + create**. The system will validate your options, and give you details about the VM being created.
+1. Select **Review + create**. The system will validate your options and display details about the VM being created.
 
-1. Select **Create** to create and deploy the VM. The Azure dashboard will show the VM that's being deployed. This may take several minutes.
+1. Select **Create** to deploy the VM. The Azure dashboard will show the name VM that's being deployed and details about your deployment. This may take several minutes.
 
 While that's deploying, let's look at what we can do with this VM.
