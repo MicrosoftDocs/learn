@@ -3,7 +3,7 @@ Just like any other computer, virtual machines in Azure use disks as a place to 
 :::image type="content" source="../media/virtual-machine-disks-ff57089c.png" alt-text="Screenshot of the VM disks blade. The OS disk is shown. There are no data disks.":::
 
 
-## Operating System Disks
+## Operating system disks
 
 Every virtual machine has one attached operating system disk. That OS disk has a pre-installed OS, which was selected when the VM was created. It’s registered as a SATA drive and labeled as the C: drive by default.
 
