@@ -35,18 +35,13 @@ If your server has been locked down according to Federal Information Processing 
 1. Save your changes.
 
 For reference, this snippet is what it should look like:
-
+```
     <configuration>
-
         <runtime>
-
             <enforceFIPSPolicy enabled="false"/>
-
         </runtime>
-
     </configuration>
-
-
+```
 ## Using PingFederate
 
 Configure PingFederate with Azure AD Connect to set up federation with the domain you want connected. The following prerequisites are required:
