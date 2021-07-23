@@ -59,7 +59,7 @@ Our JSON configuration specifies that our function will be triggered when a mess
 This example is a simple illustration of how we configure bindings for a function. We could change the output to be an email using a SendGrid binding, or put an event onto a Service Bus to notify some other component in our architecture, or even have multiple output bindings to push data to various services.
 
 > [!TIP]
-> To view and edit the contents of _function.json_ in the Azure portal, in the left menu pane of your function, under **Developer**, select **Code + Test**. In the function's path above the code box, select *function.json* from the dropdown list.
+> To view and edit the contents of _function.json_ in the Azure portal, from Home, select your function app, and in the right pane, select **JSON View**. The Resource JSON view displays the Resourse ID and the editable JSON code. To close the JSON view, select the **X** in to top right corner of the pane.
 
 ## Create a function in the Azure portal
 
