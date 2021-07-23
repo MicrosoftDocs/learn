@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-app-services.implement
-title: Implement app services
+title: Implement Azure App Services
 metadata:
-  title: Implement app services
-  description: "Implement app services"
-  ms.date: 07/22/2021
+  title: Implement Azure App Services
+  description: "Implement Azure App Services"
+  ms.date: 07/23/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
