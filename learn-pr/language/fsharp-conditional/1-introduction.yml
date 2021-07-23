@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.date: 07/23/2021
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-dotnet
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

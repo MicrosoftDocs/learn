@@ -1,11 +1,11 @@
 Let's say you have a program that creates a backup file based on the files in folder. The program consists of few lines of code locating and compressing a set of files. What if you suddenly wanted to add logic that said, only create such a backup file if a backup hasn't been done that day. Such a program would need a way to perform a check so it has a different behavior based on a condition of file existing or not.
 
-## Create a code branch with `If`
+## Create a code branch with `if`
 
 An `if` construct evaluates a boolean expression. If said expression evaluates to `true`, it runs a different branch of code. Here's what an `if` syntax looks like:
 
 ```fsharp
-if condition then expression 
+if <condition> then <expression>
 ```
 
 A more tangible code example would look like so:
@@ -16,7 +16,7 @@ if age > 65
 then printfn "Senior citizen"
 ```
 
-## Define an alternate branch with `Else`
+## Define an alternate branch with `else`
 
 An `else` clause is used with an `if` to express that if the `if` statement evaluates to `false` then the `else` branch is run instead.
 
@@ -71,7 +71,6 @@ let cardValue = 1
 let cardDescription = if cardValue = 1 then "Ace" elif cardValue = 14 then "Ace" else "A card"
 printfn "%s" cardDescription
 ```
-
 
 
 
