@@ -1,4 +1,4 @@
-Your company processes video content on Windows VMs. A new city has contracted with your company to process their traffic cameras, but it's a model you haven't worked with before. You need to create a new Windows VM and install some proprietary codecs in order to process and analyze their images.
+Your company processes video content on Windows VMs. A new city has contracted with your company to process their traffic cameras, but it's a model you haven't worked with before. You need to create a new Windows VM and install some proprietary codecs in order to process and analyze the new video content.
 
 ## Create a new Windows virtual machine
 
@@ -55,7 +55,7 @@ The **Create a virtual machine** pane appears.
     | Size | The **Size** field is not directly editable. Accept the default **Standard DS1 v2**, which will give the VM 1 CPU and 3.5 GB of memory. Optionally, select the field to view recommended or recently chosen sizes; select **See all sizes** to explore filters for sizes based on vCPUs, RAM, Data disks, operations per second, and cost. Select the X in the top right of the pane to close the pane.  |
     | **Administrator account** |
     | Username | Enter a username you will use to sign in to the VM. |
-    | Password | Enter a password that's at least 12 characters long and has at least three of the following four characteristcs: one lower case character, one uppercase character, one number, and one special character that is not '\\' or '-'. Use something you will remember or write it down, as you will need it later. |
+    | Password | Enter a password that's at least 12 characters long and has at least three of the following four characteristics: one lower case character, one uppercase character, one number, and one special character that is not '\\' or '-'. Use something you will remember or write it down, as you will need it later. |
     | Confirm password | Confirm your password. |
     | **Inbound port rules** |
     | Public inbound ports | Select **Allow selected ports**. We want to be able to access the desktop for this Windows VM using RDP. |
@@ -94,7 +94,7 @@ The **Create a virtual machine** pane appears.
 1. Select **Next : Networking**.
 
    In a production system, where other components are already in use, it would be important to use an _existing_ virtual network so that the VM can communicate with the other cloud services in the production solution. If no virtual network has defined in this location, create it here and configure the:
-    - **Subnet**: First subnet to subdivide the address space - it must fit within the defined address space. After the VNet is created, you can add additional subnets.
+    - **Subnet**: First subnet to subdivide the address space - it must fit within the defined address space. After the VNet is created, you can add more subnets.
     - **Public IP**: Overall IPV4 space available to this network.
 
 1. On the **Networking** tab, let's change some of the settings. Under the input field for **Virtual network**, select **Create new**. The **Create virtual network** pane appears.
@@ -116,10 +116,10 @@ The **Create a virtual machine** pane appears.
 
 ## Finish configuring the VM and create the image
 
-On the **Create a virtual machine** pane, the rest of the tabs have reasonable defaults and there's no need to change any of them. You can explore the other tabs if you like. Each field has an `(i)` icon next to it which, if selected, will show a detailed definition of that configuration setting. This is a great way to learn about the various settings you can use to configure the VM.
+On the **Create a virtual machine** pane, the rest of the tabs have reasonable defaults and there's no need to change any of them. You can explore the other tabs if you like. Each field has an `(i)` icon next to it which, if selected, will show a detailed definition of that configuration setting. Reviewing field descriptions is a great way to learn about the settings you can use to configure the VM.
 
 1. Select **Review + create**. The system will validate your options and display details about the VM being created.
 
-1. Select **Create** to deploy the VM. The Azure dashboard will show the name VM that's being deployed and details about your deployment. This may take several minutes.
+1. Select **Create** to deploy the VM. The Azure dashboard will show the name VM that's being deployed and details about your deployment. Deployment may take several minutes.
 
 While your VM is deploying, let's look at what we can do with this VM.
