@@ -3,10 +3,12 @@ uid: learn.fsharp-conditional.5-exercise-loops
 title: Exercise - use loops
 metadata:
   title: Exercise - use loops
-  description: Describe unit
-  author: undefined
-  ms.author: undefined
-  ms.date: 04/14/2020
+  description: In this exercise you are looking to add loop constructs to iterate
+    through a collection of cards. As part of the exercise, you'll use
+    previously created code to also add description of the card.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 07/23/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

@@ -11,7 +11,7 @@ As part of a player's experience, players are used to have names for certain car
    cd Cards
    ```
 
-1. Locate the `Program.fs` file and the main method and add the following code:
+1. Locate the `Program.fs` file and the `main()` method and add the following code:
 
    ```fsharp
    let cardNo = 12
@@ -36,3 +36,5 @@ As part of a player's experience, players are used to have names for certain car
    ```output
    Queen
    ```
+
+Congratulations, you've managed to create a piece of code that given a card number is apply to produce a description.
