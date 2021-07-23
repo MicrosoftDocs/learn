@@ -30,9 +30,9 @@ Azure SQL Database has two purchasing models: _DTU_ and _vCore_.
 
 - **What are vCores?**
 
-    vCores are _Virtual cores_, which give you greater control over the compute and storage resources that you create and pay for.
+    vCores stands for  _Virtual cores_, and give you greater control over the compute and storage resources that you create and pay for.
 
-    While the DTU model provides fixed combinations of compute, storage, and IO resources, the vCore model enables you to configure resources independently. For example, with the vCore model, you can increase storage capacity but keep the existing amount of compute and IO throughput.
+    Whereas the DTU model provides fixed combinations of compute, storage, and IO resources, the vCore model enables you to configure resources independently. For example, with the vCore model, you can increase storage capacity but keep the existing amount of compute and IO throughput.
 
 Your transportation and logistics prototype only needs one Azure SQL Database instance. You decide on the DTU option because it provides a good balance of compute, storage, and IO performance and is less expensive to get started.
 
@@ -50,24 +50,24 @@ Collation refers to the rules that sort and compare data. Collation helps you de
 
 Let's take a moment to consider what the default collation, **SQL_Latin1_General_CP1_CI_AS**, means:
 
-- **Latin1_General** refers to the family of Western European languages.
-- **CP1** refers to code page 1252, a popular character encoding of the Latin alphabet.
-- **CI** means that comparisons are case insensitive. For example, "HELLO" compares equally to "hello".
-- **AS** means that comparisons are accent sensitive. For example, "résumé" doesn't compare equally to "resume".
+  - **Latin1_General** refers to the family of Western European languages.
+  - **CP1** refers to code page 1252, a popular character encoding of the Latin alphabet.
+  - **CI** means that comparisons are case insensitive. For example, "HELLO" compares equally to "hello".
+  - **AS** means that comparisons are accent sensitive. For example, "résumé" doesn't compare equally to "resume".
 
-Because you don't have specific requirements around how data is sorted and compared, you choose the default collation.
+  Because you don't have specific requirements around how data is sorted and compared, you choose the default collation.
 
 ## Create your Azure SQL database
 
 Here you'll set up your database, which includes creating your logical server. You'll choose settings that support your transportation logistics application. In practice, you would choose settings that support the kind of app you're building.
 
-Over time, if you realize you need additional compute power to keep up with demand, you can adjust performance options or even switch between the DTU and vCore performance models.
+Over time, if you realize you need more compute power to keep up with demand, you can adjust performance options or even switch between the DTU and vCore performance models.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Under **Azure Services** select **Create a resource**.  The**Create a resoure** pane appears.
+1. Under **Azure Services**, select **Create a resource**.  The**Create a resource** pane appears.
 
-   :::image type="content" source=../media/3-create-db.png" alt-text="Screenshot showing Create a resource pane with Databases in menu and SQL Database resource service highlighted.":::
+   :::image type="content" source="../media/3-create-db.png" alt-text="Screenshot showing Create a resource pane with Databases in menu and SQL Database resource service highlighted.":::
 
 1. On the left menu pane, select **Databases**, and then select **SQL Database**. The **Create SQL Database** pane appears.
 
@@ -97,7 +97,7 @@ Over time, if you realize you need additional compute power to keep up with dema
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
-1. Select **OK**. The Server field updates with the name of the server you just created.
+1. Select **OK**. The Server field updates with the name of the server you created.
 
 1. Under **Compute + storage**, select **Configure database**. The **Configure** pane appears.
  
@@ -111,34 +111,32 @@ Over time, if you realize you need additional compute power to keep up with dema
     | --- | --- | --- |
     | **Data source** | **Use existing data** | *None* |
     | **Database Collation** | **Collation** | *SQL_Latin1_General_CP1_CI_AS* |
-    | **Maintenance window** | **Waintenance window** | *System default (5pm to 8am* |
+    | **Maintenance window** | **Maintenance window** | *System default (5pm to 8am* |
 
 1. Select **Review + create** to validate your input, and then select **Create** to create your Azure SQL database. 
 
     > [!IMPORTANT]
     > Remember your server name, admin login, and password for later.
 
-Allow time for the deployment to complete. The Deployment notifications enable you to monitor the deployment process.
+Deployment notifications display, enabling you to monitor the deployment process. When the process completes, select **Go to resource** to view your database server dashboard.
 
-When the process completes, select **Go to resource** to view your database server dashboard.
-
-   :::image type="content" source=../media/3-notifications-complete.png" alt-text="Screenshot of the Azure portal showing the Overview pane of a newly created SQL database.":::
+   :::image type="content" source="../media/3-notifications-complete.png" alt-text="Screenshot of the Azure portal showing the Overview pane of a newly created SQL database.":::
 
 ## Set the server firewall
 
 Your Azure SQL database is now up and running. You have many options to further configure, secure, monitor, and troubleshoot your new database. You can also specify which systems can access your database through the firewall. Initially, the firewall prevents all access to your database server from outside of Azure.
 
-For your prototype, you only need to access the database from your laptop. Later, you can add additional systems, such as your mobile app.
+For your prototype, you only need to access the database from your laptop. Later, you can add more systems, such as your mobile app.
 
 For now, let's enable your development computer to access the database through the firewall.
 
 1. In the Overview pane of the Logistics database, select **Set server firewall**. The **Firewall settings** pane appears.
 
-    :::image type="content" source=../media/3-set-server-firewall.png" alt-text="Screenshot of the Azure portal showing a SQL database overview pane with the Set server firewall button highlighted.":::
+    :::image type="content" source="../media/3-set-server-firewall.png" alt-text="Screenshot of the Azure portal showing a SQL database overview pane with the Set server firewall button highlighted.":::
 
 1. Select **Add client IP**. This action automatically adds the IP address for your development computer.
 
-    :::image type="content" source=../media/3-add-client-ip.png" alt-text="Screenshot of the Azure portal showing a SQL database Firewall settings pane with the Add client IP button highlighted.":::
+    :::image type="content" source="../media/3-add-client-ip.png" alt-text="Screenshot of the Azure portal showing a SQL database Firewall settings pane with the Add client IP button highlighted.":::
 
 1. Select **Save**.
 
