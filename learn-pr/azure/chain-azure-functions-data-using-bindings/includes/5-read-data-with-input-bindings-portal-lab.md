@@ -163,7 +163,7 @@ You now have a few entries in your **Bookmarks** container. Your scenario will w
 
 1. Accept every setting with the defaults, and select **Add** to create your function.
 
-    The **HttpTrigger2** pane for your function appears displaying a default implementation of your HTTP-triggered function, and automatically opens the corresponding file in the code editor.
+    The **HttpTrigger2** pane for your function appears displaying a default implementation of your HTTP-triggered function.
 
 ### Verify the function
 
@@ -369,9 +369,9 @@ Let's examine what this code is doing.
 1. Paste the function URL you copied into the address bar of a new tab in your browser.
 
 1. Add the query string value `&id=docs` to the end of the URL. Your resulting URL should resemble the following example:
- 
+
     https://example.azurewebsites.net/api/HttpTrigger2?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&id=docs
- 
+
 1. Press <kbd>Enter</kbd> to execute the request in your browser. You should see a response similar to the following example returned by your function.
 
     ```json
