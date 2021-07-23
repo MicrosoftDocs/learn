@@ -2,14 +2,14 @@
 uid: learn.azure.deploy-iot-solution-azure-sql-database
 metadata:
   title: Deploy IoT solutions with Azure SQL Database
-  description: In this module, learn how Azure SQL Database provides a price-performant backend for IoT applications. Then, you'll deploy a template that includes Azure SQL Database, Azure VMs, and Azure Functions, which simplifies deploying and configuring IoT solutions.
+  description: In this module, learn how Azure SQL Database provides a price-performant backend for IoT applications. Then, you'll deploy a template that includes Azure SQL Database, Azure VMs, Azure Functions, and Power BI which simplifies deploying and configuring IoT solutions.
   ms.date: 07/19/2021
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy IoT solutions with Azure SQL Database
-summary: In this module, learn how Azure SQL Database provides a price-performant backend for IoT applications. Then, you'll deploy a template that includes Azure SQL Database, Azure VMs, and Azure Functions, which simplifies deploying and configuring IoT solutions.
+summary: In this module, learn how Azure SQL Database provides a price-performant backend for IoT applications. Then, you'll deploy a template that includes Azure SQL Database, Azure VMs, Azure Functions, and Power BI which simplifies deploying and configuring IoT solutions.
 abstract: By the end of this module, you'll be able to create scalable IoT solutions using Azure SQL Database, and use the template provided for many IoT use cases.
 prerequisites: | 
   - Introductory knowledge of Azure IoT
