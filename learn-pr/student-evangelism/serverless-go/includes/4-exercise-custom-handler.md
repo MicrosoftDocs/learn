@@ -120,7 +120,7 @@ You're done authoring the code at this point, but you need to do some configurat
 
    This step creates an executable file that's called *server* on macOS and Linux, or *server.exe* on a Windows OS.
 
-1. Open the _host.json_ file and locate the `defaultExecutablePath` element inside the `customHandler` one. Specify `./server` on macOS and Linux, or `.\server.exe` on a Windows OS.
+1. Open the _host.json_ file and find the `defaultExecutablePath` element inside the `customHandler` one. Specify `./server` on macOS and Linux, or `.\server.exe` on a Windows OS.
 1. Under the `customHandler` element, add the element `enableForwardingHttpRequest` and give it the value `true`. Your `customHandler` element should now look like this:
 
    ```json

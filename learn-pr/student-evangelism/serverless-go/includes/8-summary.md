@@ -1,8 +1,6 @@
-In this module, you were taught the concept of custom handlers. A custom handler is what makes it possible to use any language supporting HTTP primitives and author Azure Functions.
+In this module, you learned about the concept of custom handlers. A custom handler is what makes it possible to use any language that supports HTTP primitives and author Azure functions. Custom handlers support all the things you're used to with Azure functions, like triggers and bindings.
 
-Custom handlers support all the things you are used to with Azure Functions like triggers and bindings.
-
-You looked into how to develop Azure Functions supporting both HTTP triggers and queue triggers. Furthermore you were taught how to emulate a message queue using Azurite and Azure Storage Explorer.
+You looked into how to develop functions that support both HTTP triggers and queue triggers. You also emulated a message queue by using Azurite and Azure Storage Explorer.
 
 ## Further learning
 
