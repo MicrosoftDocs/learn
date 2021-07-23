@@ -20,7 +20,7 @@ prerequisites: |
   - Basic knowledge of Azure Disk Storage
   - Basic knowledge of Azure virtual machines (VMs)
   - Experience using the Azure portal
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/optimize-performance-and-costs-using-azure-disk-storage.svg
 ratingEnabled: true
 levels:
 - intermediate
