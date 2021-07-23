@@ -1,4 +1,4 @@
-There are many applications you can use as a client for the Azure Synapse Analytics server. Data engineers often use SQL Server Management Studio (SSMS) to access Microsoft database products including Azure SQL Database, Azure Synapse Analytics, and on-premises SQL Server instances. Data analysts usually use Excel or Power BI as their client application to query the database. Developers use Visual Studio to write all kinds of third-party applications to query the database.
+There are many applications you can use as a client for the Azure Synapse Analytics server. Data engineers often use SQL Server Management Studio (SSMS) to access Microsoft database products, including Azure SQL Database, Azure Synapse Analytics, and on-premises SQL Server instances. Data analysts usually use Excel or Power BI as their client application to query the database. Developers use Visual Studio to write all kinds of third-party applications to query the database.
 
 Since SSMS is a common tool, let's look at how to use it to query our data warehouse. To connect to our database, we need to create a _connection string_.
 
@@ -20,7 +20,7 @@ For example, here's the connection string for ADO.NET.
 
 Notice that the connection string identifies the protocol as TCP/IP, includes the URL, and uses the port 1433, which is the default in this case.
 
-TCP:1433 is a well-known and public port. After your SQL Data Warehouse server's name is made public, it might invite denial-of-service (DoS) attacks. To protect the server from such attacks, configure the Azure firewall to restrict network access to specific IP addresses.
+TCP:1433 is a well-known and public port. After your Azure Synapse Analytics server's name is made public, it might invite denial-of-service (DoS) attacks. To protect the server from such attacks, configure the Azure firewall to restrict network access to specific IP addresses.
 
 ## Configure the firewall
 
@@ -34,12 +34,13 @@ To configure the firewall rules, go back to the **Overview** page.
 
     ![Configuring the firewall.](../media/3-configure-firewall.png)
 
-1. From here, you can add a single IP address, an address segment, or a virtual network configuration to connect it securely to specific Azure regions or your on-premises networks. 
-    - For convenience, the portal lists the IP address of your computer. 
-    - Select **Add client IP** to add the client IP address as a rule. You also can add a set of known IP addresses or segments in the rules section.
+1. From here, you can add a single IP address, an address segment, or a virtual network configuration to connect it securely to specific Azure regions or your on-premises networks For convenience, the portal lists the IP address of your computer.
+
+1. Toggle to **ON** for **Allow Azure services and resources to access this workspace**.
+
+1. In the top menu bar, select **Add client IP** to add the client IP address as a rule. You also can add a set of known IP addresses or segments in the rules section.
 
     ![Adding IP address to firewall in DB configuration.](../media/3-add-ip.png)
-
 
 ## Download SQL Server Management Studio
 
@@ -54,11 +55,15 @@ After you have the connection string information, you can connect to the databas
 
     ![Starting SQL Server Management Studio.](../media/3-start-ssms.png)
 
-1. In the **Connect to Server** dialog box:
-    - Enter the server name as **demo-dw-server.database.windows.net**.
-    - Select the **Authentication** type as **SQL Server Authentication**.
-    - Enter the sign-in credentials. If you forget the admin credentials, you can get the admin ID from the database overview. You also can reset the password.
-    
+1. In the **Connect to Server** dialog box, enter the following values for each setting.
+
+    | Setting | Value |
+    |---|---|
+    | Server name | demo-dw-server.database.windows.net |
+    | Authentication | SQL Server Authentication |
+    | Login | Enter the sign-in credentials. If you forget the admin credentials, you can get the admin ID from the database overview |
+    | Password | *Enter your password. You also can reset the password. |
+
 1. Select **Connect** to establish the network connection.
 
     ![Connecting to SQL Server by using SQL Server Management Studio.](../media/3-connect-ssms-sql-server.png)
@@ -67,6 +72,6 @@ After you have the connection string information, you can connect to the databas
 
     ![New Firewall Rule dialog box in SQL Server Management Studio.](../media/3-show-firewall-rule.png)
 
-1. The IP address of your computer was added to the firewall, so your connection should be successful. The SQL Data Warehouse server node and its database appear in the Object Explorer panel of SQL Server Management Studio.
+1. The IP address of your computer was added to the firewall, so your connection should be successful. The Azure Synapse Analytics server node and its database appear in the Object Explorer panel of SQL Server Management Studio.
 
     ![SQL Server Management Studio Object Explorer expanded to show the database.](../media/3-show-explorer-ssms.png)
