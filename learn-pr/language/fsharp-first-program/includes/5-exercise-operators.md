@@ -8,7 +8,7 @@ In this part, you add support for reading from the console.
 1. Locate the following code:
 
    ```fsharp
-   printfn "Welcome to the calculator progran"
+   printfn "Welcome to the calculator program"
    // read input from the console and assign to `sum`
    let sum = 0
    printfn "The sum is %i" sum
