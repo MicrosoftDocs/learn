@@ -33,7 +33,7 @@ Follow these steps to build a database:
 
    - **Want to use SQL elastic pool?**: Select **No**.
 
-     :::image type="content" source="../media/2-database-compute.png" alt-text="Screenshot showing setup options for the SQL Database." lightbox="../media/2-database-compute.png":::
+     :::image type="content" source="../media/2-database-compute.png" alt-text="Screenshot showing setup options for the SQL database." lightbox="../media/2-database-compute.png":::
 
    - **Compute + storage**: Select **Configure database**. Then select **Looking for basic, standard, premium?**.
 
@@ -65,7 +65,7 @@ Follow these steps to build a database:
    > 1. On the **Overview** page of the SQL database, select **Set server firewall**.
    > 1. For **Allow Azure services and resources to access this server**, select **Yes**.
    >
-   >    :::image type="content" source="../media/2-firewall-settings.png" alt-text="Screenshot showing how to add all IP addresses to the allowlist." lightbox="../media/2-firewall-settings.png":::
+   >    :::image type="content" source="../media/2-firewall-settings.png" alt-text="Screenshot showing how to add all I P addresses to the allowlist." lightbox="../media/2-firewall-settings.png":::
    >
    > 1. Enter the following details in the three text boxes:
    >
@@ -77,7 +77,7 @@ Follow these steps to build a database:
 
 1. To resolve the error, select the link that includes the IP address. Then select **OK**. You'll see this message: **Successfully updated server firewall rules**.
 
-   :::image type="content" source="../media/2-whitelist-ip.png" alt-text="Screenshot showing how to add a single IP address to an allowlist." lightbox="../media/2-whitelist-ip.png":::
+   :::image type="content" source="../media/2-whitelist-ip.png" alt-text="Screenshot showing how to add a single I P address to an allowlist." lightbox="../media/2-whitelist-ip.png":::
 
 1. Enter the credentials again and then select **Login**.
 
@@ -109,7 +109,7 @@ Follow these steps to give access to another user:
 
 1. In the Azure portal, select the SQL server you created.
 
-    :::image type="content" source="../media/2-sql-server.png" alt-text="Screenshot showing the selected SQL server." lightbox="../media/2-sql-server.png":::
+    :::image type="content" source="../media/2-sql-server.png" alt-text="Screenshot showing the selected seequel server." lightbox="../media/2-sql-server.png":::
     
 1. In the menu on the left side of the page, select **Azure Active Directory**.
 

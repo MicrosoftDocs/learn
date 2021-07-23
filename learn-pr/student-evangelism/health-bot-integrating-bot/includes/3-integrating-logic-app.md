@@ -41,7 +41,7 @@ To begin, go to the [Azure portal](https://portal.azure.com/#home).
 
 1. On the left, select **Workflows**.
 
-   :::image type="content" source="../media/3-post-worflow.png" alt-text="Screenshot showing the Workflows selection in the menu on the left. The New workflow pane is open on the right." lightbox="../media/3-post-worflow.png":::
+   :::image type="content" source="../media/3-post-workflow.png" alt-text="Screenshot showing the Workflows selection in the menu on the left. The New workflow pane is open on the right." lightbox="../media/3-post-workflow.png":::
 
 1. Select **Add**.
 
@@ -51,17 +51,17 @@ To begin, go to the [Azure portal](https://portal.azure.com/#home).
 
 1. On the left, select **Designer**.
 
-   :::image type="content" source="../media/3-http-request.png" alt-text="Screenshot showing the workflow designer. The selection on the right is labeled, 'When a HTTP response is received.'" lightbox="../media/3-http-request.png":::
+   :::image type="content" source="../media/3-http-request.png" alt-text="Screenshot showing the workflow designer. The selection on the right is labeled, 'When a H T T P response is received.'" lightbox="../media/3-http-request.png":::
 
 1. Choose an operation. Then, in the search bar, search for and select **When a HTTP request is received**.
 
 1. Select **Method** > **POST**.
 
-   :::image type="content" source="../media/3-http-post-method.png" alt-text="Screenshot showing the selection of the HTTP POST method." lightbox="../media/3-http-post-method.png":::
+   :::image type="content" source="../media/3-http-post-method.png" alt-text="Screenshot showing the selection of the H T T P POST method." lightbox="../media/3-http-post-method.png":::
 
 1. Copy the HTTP POST URL and save it for future reference.
 
-   :::image type="content" source="../media/3-post-url.png" alt-text="Screenshot showing the generated HTTP POST URL." lightbox="../media/3-post-url.png":::
+   :::image type="content" source="../media/3-post-url.png" alt-text="Screenshot showing the generated H T T P POST U R L." lightbox="../media/3-post-url.png":::
 
 1. For the request body JSON schema, use the following code:
 
@@ -130,11 +130,11 @@ To begin, go to the [Azure portal](https://portal.azure.com/#home).
 
 1. In the designer, select the plus sign (**+**). Then under **Actions**, search for and select **Response**.
 
-   :::image type="content" source="../media/3-http-response.png" alt-text="Screenshot showing how to select the HTTP response." lightbox="../media/3-http-response.png":::
+   :::image type="content" source="../media/3-http-response.png" alt-text="Screenshot showing how to select the H T T P response." lightbox="../media/3-http-response.png":::
 
 1. Fill in the parameters.
 
-   :::image type="content" source="../media/3-response-config.png" alt-text="Screenshot showing the HTTP response configuration." lightbox="../media/3-response-config.png":::
+   :::image type="content" source="../media/3-response-config.png" alt-text="Screenshot showing the H T T P response configuration." lightbox="../media/3-response-config.png":::
 
 1. On the left, select **Overview** > **Run with payload**.
 
@@ -142,7 +142,7 @@ To begin, go to the [Azure portal](https://portal.azure.com/#home).
 
 1. Paste the HTTP POST URL that you copied earlier. Then fill in the remaining fields.
 
-1. Select **Run**. If the workflow runs successfully, you've set up the logic app correctly.
+1. Select **Run**. If the workflow runs successfully, you've set up the parameters correctly.
 
 > [!NOTE]
 > If the workflow doesn't run, check the POST URL in an API tester to see if it responds.
@@ -169,7 +169,7 @@ We'll now use the logic app to create a workflow for the GET method. This setup 
 
 1. Note down the HTTP GET URL. We'll need it later to run the workflow.
 
-   :::image type="content" source="../media/3-get-method.png" alt-text="Selecting GET method" lightbox="../media/3-get-method.png":::
+   :::image type="content" source="../media/3-get-method.png" alt-text="Screenshot showing how to add the GET method." lightbox="../media/3-get-method.png":::
 
 1. Select **Method** > **GET**.
 
@@ -183,43 +183,45 @@ We'll now use the logic app to create a workflow for the GET method. This setup 
 
 1. To get the connection string, in the Azure portal, select the SQL database you created.
 
-   :::image type="content" source="../media/3-sql-database.png" alt-text="SQL database" lightbox="../media/3-sql-database.png":::
+   :::image type="content" source="../media/3-sql-database.png" alt-text="Screenshot showing a selected SQL database in the Azure portal." lightbox="../media/3-sql-database.png":::
 
-1. From the left side menu bar, under settings, select **Connection strings**.
+1. On the left, under **Settings**, select **Connection strings**.
 
-1. Under the ADO.NET, copy the string under ADO.NET (SQL authentication).
+1. Under **ADO.NET**, copy the string under **ADO.NET (SQL authentication)**.
 
-   :::image type="content" source="../media/3-ado-net.png" alt-text="ADO.net key" lightbox="../media/3-ado-net.png":::
+   :::image type="content" source="../media/3-ado-net.png" alt-text="Screenshot showing the A D O dot NET key." lightbox="../media/3-ado-net.png":::
 
-1. Paste the string in the Connection string field of the Execute Query cell and select **create**.
+1. In the **Execute Query** pane, paste the string in the **Connection String** field. Then select **Create**.
 
-   :::image type="content" source="../media/3-query-parameters.png" alt-text="Query parameters" lightbox="../media/3-query-parameters.png":::
+   :::image type="content" source="../media/3-query-parameters.png" alt-text="Screenshot showing the query parameters for the connection." lightbox="../media/3-query-parameters.png":::
 
-1. In the Query field, enter SQL Query.
+1. In the **Query** field, enter *SQL Query*.
 
-1. Under the **Add New Parameter** dropdown, select **Query Parameters**, and select the small tables Icon next to the Query Parameters.
+1. Select **Add new parameter** > **Query parameters**. Then select the small table icon next to the query parameters.
 
-   :::image type="content" source="../media/3-sql-query.png" alt-text="SQL query" lightbox="../media/3-sql-query.png":::
+   :::image type="content" source="../media/3-sql-query.png" alt-text="Screenshot showing parameter selections for the SQL query." lightbox="../media/3-sql-query.png":::
 
-1. After you select the icon, you will be able to see new fields. Fill the new fields in the following way:
+1. In the new fields, add the following settings:
 
-   - **Server Name**:  Select the same server's name we used previously from the dropdown menu.
+   - **Server name**:  Select the server name we used earlier.
 
-   - **Database name**: Select the name of your database from the dropdown menu.
+   - **Database name**: Select the name of your database.
 
-   - **Query**: Enter the following code in the Query field.
+   - **Query**: Enter the following code:
 
-       ```
+       ```sql
        SELECT - FROM Vitals WHERE ColumnDateTime=(SELECT MAX(ColumnDateTime) FROM Vitals)
        ```
 
-   :::image type="content" source="../media/3-http-response-block.png" alt-text="http response" lightbox="../media/3-http-response-block.png":::
+1. Add a new action to the designer and search for *response*. Then open the response pane and fill in the fields:
 
-1. Add a new action to the designer and search for Response. Open the response cell and configure the fields in the following way:
+   - **Status Code**: Enter *200*.
+   - **Body**: Select **Add dynamic content** and then select **Query Results**.
 
-   - **Status Code**: Enter 200.
-   - **Body**: Select add dynamic content and add 'Query Results' from the list.
+   :::image type="content" source="../media/3-http-response-block.png" alt-text="Screenshot showing parameters for the H T T P response." lightbox="../media/3-http-response-block.png":::
 
-   :::image type="content" source="../media/3-final-get.png" alt-text="Logic App designer" lightbox="../media/3-final-get.png":::
+After you've added the three components (HTTP request, Execute SQL query, and Response), select **Save**. 
 
-After you have added the three components (HTTP Request, Execute SQL Query, Response) onto the designer, select **Save**. Run the workflow in the same way like you ran the workflow for GET method. If it runs successfully, your logic app is ready to use!
+:::image type="content" source="../media/3-final-get.png" alt-text="Screenshot showing the three added components in the logic app designer." lightbox="../media/3-final-get.png":::
+
+Run the workflow like you did for the GET method workflow. If it runs successfully, your logic app is ready to use!

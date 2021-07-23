@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.health-bot-integrating-bot
 metadata:
-  title: Integrated healthcare bot
-  description: This module will contain the steps to connect the healthcare bot to a database.
+  title: Integrate a health bot with a database
+  description: This module explains how to connect an Azure health bot to a database.
   ms.date: 06/04/2020
   author: Meghana-ch
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Integrated healthcare bot
-summary: This is an advanced bot integrated with functionalities like database.
+title: Integrate a health bot with a database
+summary: Learn how to integrate an advanced bot with a database.
 abstract: |
-  In this module you will:
-  - Get to know how to connect healthcare bot to database 
-  - Build a database using Azure SQL Database  
-  - Integrate the bot with database using Logic Apps
+  In this module, you'll:
+  - Learn how to connect a health bot to a database. 
+  - Build a database by using Azure SQL Database.  
+  - Integrate the bot with the database by using Azure Logic Apps.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
@@ -22,7 +22,7 @@ roles:
   - developer
 products:
   - vs
-prerequisites: Enhanced HealthCare Bot
+prerequisites: Complete the module titled "Enhanced health bot."
 units:
   - learn.health-bot-integrating-bot.1-introduction
   - learn.health-bot-integrating-bot.2-building-a-database
