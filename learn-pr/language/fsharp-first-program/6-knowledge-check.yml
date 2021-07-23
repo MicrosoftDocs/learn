@@ -18,15 +18,15 @@ quiz:
     - content: How would you declare a variable, holding an integer, whose value you
         want to be able to change?
       choices:
-        - content: By entering the code `let number = 1`
+        - content: Enter the code `let number = 1`.
           isCorrect: false
           explanation: Incorrect. You need the `mutable` keyword after the `let` keyword
             to be able to change a value.
-        - content: By entering the code `let mutable number = 1`
+        - content: Enter the code `let mutable number = 1`.
           isCorrect: true
           explanation: Correct. Using `mutable` is the correct way to create a variable that
             can have its value changed.
-        - content: By entering the code `let mut number = 1`
+        - content: Enter the code `let mut number = 1`.
           isCorrect: false
           explanation: There's no `mut` keyword. Use the `mutable` keyword instead.
     - content: What formatter would you use to format an integer?

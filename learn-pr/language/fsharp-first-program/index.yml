@@ -27,8 +27,8 @@ roles:
 products:
   - vs
 prerequisites: |
-  - Run commands at the console
-  - Have F# (.NET Core) installed
+  - Know how to run commands at the console.
+  - Have F# (.NET Core) installed.
 units:
   - learn.fsharp-first-program.1-introduction
   - learn.fsharp-first-program.2-variables-types

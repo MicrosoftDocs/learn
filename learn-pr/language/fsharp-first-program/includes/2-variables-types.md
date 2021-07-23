@@ -70,7 +70,7 @@ Now you know the difference, but which one should you use? Well, `printfn` and `
 
 ## Formatting
 
-Aa part of printing to the screen, you might want to combine text and numbers or you might want the output to be formatted in a certain way.
+Aa part of printing to the screen, you might want to combine text and numbers. Or you might want the output to be formatted in a certain way, such as by using:
 
 - **Positional arguments**: To format, you can use a .NET function like `string.Format`, which uses positional arguments like `string.Format("My name is {0} and I live in {1}", "Chris", "UK")`.
 - **String interpolation**: Another way to combine variables and text is to use something called interpolation. To use it, you need to precede the string with a `$` sign and indicate placeholders with brackets `{}`. Here's an example of using interpolation:
@@ -92,7 +92,7 @@ Aa part of printing to the screen, you might want to combine text and numbers or
    > [!NOTE]
    > There's no type checking using interpolation, so it might seem straightforward to use. Be sure to combine things correctly.
 
-- **Use specifiers**: You can also use format specifiers as part of what you're trying to print. Using specifiers is the most commonly used way to format in F#. Here's an example:
+- **Specifiers**: You can also use format specifiers as part of what you're trying to print. Using specifiers is the most commonly used way to format in F#. Here's an example:
 
     ```fsharp
     let name = "Chris"
@@ -103,11 +103,11 @@ Aa part of printing to the screen, you might want to combine text and numbers or
     Here you can see how the formatter `%s` is used to mix the first string with the variable `name`.
 
     > [!NOTE]
-    > When you use formatters like %s or %i, the compiler checks types. So if your positional argument isn't of the type you've specified, it'll throw an error.
+    > When you use formatters like %s or %i, the compiler checks types. If your positional argument isn't of the type you've specified, it throws an error.
 
 ### Format specifiers
 
-There are many format specifiers. Here are some you're likely to encounter:
+There are many format specifiers. Here are some you're likely to encounter.
 
 |Specifier  |Description  | Example |
 |---------|---------|-------|
@@ -115,4 +115,4 @@ There are many format specifiers. Here are some you're likely to encounter:
 | %d, %i | Formatted as a decimal integer, signed if the basic integer type is signed  | printf "Age: %i" 65 |
 | %b | Boolean `true` or `false` | printf "Setting on: " true |
 
-There's a lot more information on formatting. If you want to know about all the capabilities, here's the [formatting in F# doc](/dotnet/fsharp/language-reference/plaintext-formatting).
+There's much more information on formatting. If you want to know about all the capabilities, see the [formatting in F# doc](/dotnet/fsharp/language-reference/plaintext-formatting).

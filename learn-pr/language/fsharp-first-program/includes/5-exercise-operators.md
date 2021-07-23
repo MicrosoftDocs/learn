@@ -48,7 +48,7 @@ In this part, you add support for reading from the console.
 
    At this point, you're supporting user input, but you need the program to actually calculate, so let's do that next.
 
-## Perform calculation
+## Perform a calculation
 
 To add the calculation part of the program, convert the user input to numbers and apply an arithmetic operator.
 
