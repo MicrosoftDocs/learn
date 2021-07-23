@@ -8,10 +8,8 @@ The Azure platform also helps to simplify virtual networking for AKS clusters. W
 
 To simplify the network configuration for application workloads, Kubernetes uses Services to logically group a set of pods together and provide network connectivity. The following Service types are available:
 
- -  **Cluster IP** \- Creates an internal IP address for use within the AKS cluster. Good for internal-only applications that support other workloads within the cluster. :::image type="content" source="../media/kubernetes-cluster-networks-1cca24fd.png" alt-text="Diagram showing Cluster IP traffic flow in an AKS cluster.":::
-    
- -  **NodePort** \- Creates a port mapping on the underlying node that allows the application to be accessed directly with the node IP address and port. :::image type="content" source="../media/kubernetes-node-networks-ed11828c.png" alt-text="Diagram showing NodePort traffic flow in an AKS cluster.":::
-    
+ -  **Cluster IP** \- Creates an internal IP address for use within the AKS cluster. Good for internal-only applications that support other workloads within the cluster.
+ -  **NodePort** \- Creates a port mapping on the underlying node that allows the application to be accessed directly with the node IP address and port.
  -  **LoadBalancer** \- Creates an Azure load balancer resource, configures an external IP address, and connects the requested pods to the load balancer backend pool. To allow customers traffic to reach the application, load-balancing rules are created on the desired ports.
  -  **ExternalName** \- Creates a specific DNS entry for easier application access.
 
