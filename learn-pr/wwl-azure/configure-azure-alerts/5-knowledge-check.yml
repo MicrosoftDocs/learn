@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/22/2021
+  ms.date: 07/23/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -23,7 +23,7 @@ quiz:
       explanation: "That's incorrect. The Alerts page shows New when an issue has been detected and has not yet been reviewed."
     - content: "An administrator has reviewed the alert and started working on it."
       isCorrect: true
-      explanation: "That's correct. the Acknowledged state is shown when an administraor has reviewed an alert and is working on it."
+      explanation: "That's correct. the Acknowledged state is shown when an administrator has reviewed an alert and is working on it."
     - content: "An issue has been resolved."
       isCorrect: false
       explanation: "That's incorrect. The Alerts page shows Closed when an issue has been resolved."
