@@ -1,4 +1,4 @@
-Azure Active Directory (Azure AD) supports bulk user create and delete operations and supports downloading lists of users. Just fill out the comma-separated values (CSV) template. You can download the template from the Azure AD portal. To create users in the Azure Portal, you must be signed in as a Global administrator or User administrator.
+Azure Active Directory (Azure AD) supports bulk user create and delete operations and supports downloading lists of users. Just fill out the comma-separated values (CSV) template. You can download the template from the Azure AD portal. To create users in the Azure portal, you must be signed in as a Global administrator or User administrator.
 
 :::image type="content" source="../media/bulk-user-accounts-224ad1b7.png" alt-text="A CSV file is shown being processed by New-ADUser and writing to Azure AD.":::
 
