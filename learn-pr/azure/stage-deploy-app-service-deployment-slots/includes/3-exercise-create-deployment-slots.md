@@ -58,7 +58,7 @@ Use any of the usual deployment tools for your web app and its deployment slots.
 
 1. On the resulting **Deployment Center** pane, select the **Local Git/FTPS credentials** tab.
 
-1. Under **User scope**, enter a new username and password of your choice, and insophia Owen the top menu bar, select **Save**. Make a note of the username and password for later.
+1. Under **User scope**, enter a new username and password of your choice, and in the top menu bar, select **Save**. Make a note of the username and password for later.
 
 ## Configure the git client and clone the web app source code
 
