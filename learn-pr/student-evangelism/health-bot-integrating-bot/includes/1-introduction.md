@@ -32,8 +32,8 @@ In this module, you'll:
 
 ### Modules
 - Introduction to Azure Health Bot
-- Introduction and basic healthcare bots
-- Enhanced healthcare bots
+- Introduction and basic health bots
+- Enhanced health bots
 ### Knowledge
 - Familiarity with Azure Logic Apps
 - Basic knowledge about SQL Database
