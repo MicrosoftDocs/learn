@@ -29,7 +29,7 @@ In this exercise, we'll write tests with a few basic steps:
 
 ## Add assert statements
 
-1. The templates come with a pre-written test. Note the 'Assert' line. Assert statements are what decide if your test passes or fails.
+1. The templates come with a pre-written test. Note the example assert statement.
 2. Add an assert statement to check if a type in your product code is null. See the example below is testing if the calculator variable is null.
 
     ```csharp
