@@ -41,23 +41,24 @@ There are four classes of services for Azure private MEC in the enterprise:
 
 We describe these below:
 
-| Azure Network Functions offered via Marketplace | Details                                                      |
-| ----------------------------------------------- | ------------------------------------------------------------ |
-| **Metaswitch Fusion Core**                      | is container based 4G and 5G Core solution for IoT devices.  |
-| **Affirmed Private Network Service**            | is an Azure Marketplace offering that enables a managed private network service for Mobile Network Operators and managed services providers who want to provide 4G, and 5G managed service offerings to Enterprises. |
-|                                                 |                                                              |
-| **Azure Management Services**                   | **Details**                                                  |
-| **Azure Network Functions Manager (NFM)**       | helps to deploy network functions to the edge using consistent Azure tools and interfaces. |
-| **Arc Enabled Kubernetes**:                     | enables you to attach and configure Kubernetes clusters located either inside or outside Azure. |
-|                                                 |                                                              |
-| **Azure Stack hardware and services**           | **Details**                                                  |
-| **Azure Stack Edge**:                           | Azure Stack Edge comprises of a portfolio of devices that bring compute, storage, and intelligence to the edge where data is created. |
-| **Azure Stack HCI**:                            | is a hyper-converged infrastructure (HCI) operating system delivered as an Azure service that provides the security, performance, and feature updates. It enables you to deploy and run Windows and Linux virtual machines (VMs) in your datacenter or at the edge using your existing tools and processes. |
-|                                                 |                                                              |
-| **Application services**                        | **Details**                                                  |
-| **Azure IoT Edge Runtime**:                     | enables cloud workloads to be managed and deployed across edge compute appliances using the same tools and security posture as cloud-native workloads. |
-| **Azure IoT Hub**                               | enables cloud workloads to be managed and deployed across edge compute appliances using the same tools and security posture as cloud-native workloads. |
-| **Azure IoT Central**:                          | is a managed application platform that enables device management and data ingestion as a service with a predictable pricing model and global scale built-in. |
-| **Azure Digital Twins**:                        | enables device sensors to be modeled in their business context considering spatial relationships, usage patterns, and other business context that turns a fleet of devices into a digital replica of a physical asset or environment. |
+| Classes of services for Azure private MEC           | Details                                                      |
+| --------------------------------------------------- | ------------------------------------------------------------ |
+| **Azure Network Functions offered via Marketplace** |                                                              |
+| **Metaswitch Fusion Core**                          | is container based 4G and 5G Core solution for IoT devices.  |
+| **Affirmed Private Network Service**                | is an Azure Marketplace offering that enables a managed private network service for Mobile Network Operators and managed services providers who want to provide 4G, and 5G managed service offerings to Enterprises. |
+|                                                     |                                                              |
+| **Azure Management Services**                       |                                                              |
+| **Azure Network Functions Manager (NFM)**           | helps to deploy network functions to the edge using consistent Azure tools and interfaces. |
+| **Arc Enabled Kubernetes**:                         | enables you to attach and configure Kubernetes clusters located either inside or outside Azure. |
+|                                                     |                                                              |
+| **Azure Stack hardware and services**               |                                                              |
+| **Azure Stack Edge**:                               | Azure Stack Edge comprises of a portfolio of devices that bring compute, storage, and intelligence to the edge where data is created. |
+| **Azure Stack HCI**:                                | is a hyper-converged infrastructure (HCI) operating system delivered as an Azure service that provides the security, performance, and feature updates. It enables you to deploy and run Windows and Linux virtual machines (VMs) in your datacenter or at the edge using your existing tools and processes. |
+|                                                     |                                                              |
+| **Application services**                            |                                                              |
+| **Azure IoT Edge Runtime**:                         | enables cloud workloads to be managed and deployed across edge compute appliances using the same tools and security posture as cloud-native workloads. |
+| **Azure IoT Hub**                                   | enables cloud workloads to be managed and deployed across edge compute appliances using the same tools and security posture as cloud-native workloads. |
+| **Azure IoT Central**:                              | is a managed application platform that enables device management and data ingestion as a service with a predictable pricing model and global scale built-in. |
+| **Azure Digital Twins**:                            | enables device sensors to be modeled in their business context considering spatial relationships, usage patterns, and other business context that turns a fleet of devices into a digital replica of a physical asset or environment. |
 
 Thus, new services may be implemented as a partnership between the Enterprise customer, Telco and System Integrator partners, and Application ISVs. 
