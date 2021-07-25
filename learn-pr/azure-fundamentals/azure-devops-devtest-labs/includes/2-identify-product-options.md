@@ -14,6 +14,8 @@ Microsoft offers tools to enable source-code management, continuous integration 
 
 At a high level, there are three primary offerings, each of which is aimed at a specific audience and use case and provides a diverse set of tools, services, programmatic APIs, and more.
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWGtHv]
+
 ### Azure DevOps Services
 
 Azure DevOps Services is a suite of services that address every stage of the software development lifecycle.
