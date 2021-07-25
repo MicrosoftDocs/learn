@@ -36,5 +36,7 @@ products:
 - azure-iot-edge
 units:
 - learn.oxford.intro-5g-azure.introduction
+- learn.oxford.intro-5g-azure.what-azure-private-multi-access-5g
+- learn.oxford.intro-5g-azure.how-azure-private-multi-access-5g-works
 
 
