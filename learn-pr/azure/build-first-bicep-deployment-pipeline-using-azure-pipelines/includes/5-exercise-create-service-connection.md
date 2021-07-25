@@ -87,7 +87,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 ::: zone pivot="powershell"
 
-1. Run this Azure PowerShell commands in the Visual Studio Code terminal to create a resource group:
+1. Run this Azure PowerShell command in the Visual Studio Code terminal to create a resource group:
 
    ```azurepowershell
    New-AzResourceGroup -Name ToyWebsite -Location westus
