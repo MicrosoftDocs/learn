@@ -46,15 +46,12 @@ We describe these below:
 | **Azure Network Functions offered via Marketplace** |                                                              |
 | **Metaswitch Fusion Core**                          | is container based 4G and 5G Core solution for IoT devices.  |
 | **Affirmed Private Network Service**                | is an Azure Marketplace offering that enables a managed private network service for Mobile Network Operators and managed services providers who want to provide 4G, and 5G managed service offerings to Enterprises. |
-|                                                     |                                                              |
 | **Azure Management Services**                       |                                                              |
 | **Azure Network Functions Manager (NFM)**           | helps to deploy network functions to the edge using consistent Azure tools and interfaces. |
 | **Arc Enabled Kubernetes**:                         | enables you to attach and configure Kubernetes clusters located either inside or outside Azure. |
-|                                                     |                                                              |
 | **Azure Stack hardware and services**               |                                                              |
 | **Azure Stack Edge**:                               | Azure Stack Edge comprises of a portfolio of devices that bring compute, storage, and intelligence to the edge where data is created. |
 | **Azure Stack HCI**:                                | is a hyper-converged infrastructure (HCI) operating system delivered as an Azure service that provides the security, performance, and feature updates. It enables you to deploy and run Windows and Linux virtual machines (VMs) in your datacenter or at the edge using your existing tools and processes. |
-|                                                     |                                                              |
 | **Application services**                            |                                                              |
 | **Azure IoT Edge Runtime**:                         | enables cloud workloads to be managed and deployed across edge compute appliances using the same tools and security posture as cloud-native workloads. |
 | **Azure IoT Hub**                                   | enables cloud workloads to be managed and deployed across edge compute appliances using the same tools and security posture as cloud-native workloads. |
