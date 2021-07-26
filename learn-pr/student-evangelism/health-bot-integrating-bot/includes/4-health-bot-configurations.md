@@ -1,61 +1,61 @@
-We have to connect the database to the bot, to store/retrieve the data being collected from the user. To do so, we need to use the 'Data Connect' scenario step. We can do this by dragging it to the Designer window and connecting it to the steps that collect the data from the user.
+We have to connect the database to the bot so we can store and retrieve the data we're collecting from the user. To do so, we'll use the data-connect scenario step. We'll drag the step to the designer window and connect it to the steps that collect data from the user.
 
-:::image type="content" source="../media/4-health-bot-portal-scenario.png" alt-text="Healthbot portal scenario" lightbox="../media/4-health-bot-portal-scenario.png":::
+:::image type="content" source="../media/4-health-bot-portal-scenario.png" alt-text="Screenshot showing the health bot portal scenario." lightbox="../media/4-health-bot-portal-scenario.png":::
 
-In the vitals bot that we previously worked on during the 'Enhanced Healthcare Bot' module, the data connect step for POST method gets added between the prompt with weight variable and the Yes or No step. The data connection step has multiple fields that need to be filled by us. A separate data connect step needs to be added for Get method that will be added between Thank you statement step and Final statement step. This helps the bot to retrieve the name of the person who logged in their data and greet them Thank you.
+In the vitals bot we worked on in the previous module, the data-connect step for the POST method is added between the prompt for the weight variable and the yes-or-no step. The data-connect step has multiple fields that we'll need to fill. We'll add a separate data-connect step for the GET method. We'll add it between the thank-you statement and the final statement. This setup allows the bot to retrieve the name of the person who logged the data so the bot can thank them.
 
-A data connect cell has three connections to make. We have already made two connections for both the data connect cells. For the last connection, connect the left of the both data connect cells to the Log error statement step.
-
-> [!Note]
-> The left node of the data connect step is always used to indicate to the error message.
-
-:::image type="content" source="../media/4-final-prompt.png" alt-text="Final prompt connection step Healthbot":::
-
-To display some retrieved data, the display text field from the Final Statement step needs to be filled with the following code:
-
-`Thank you ${scenario.req.ResultSets.Table1[0].name}.You have checked in at ${scenario.req.ResultSets.Table1[0].ColumnDateTime} `
-
-Select **OK** to save it.
+A data-connect cell must make three connections. We already made two connections for both of the data-connect cells. Next, we'll connect the left node of both data-connect cells to the step for the log error statement.
 
 > [!Note]
-> While entering the code in the Display text field, it is must for the code to be within two left quotes/backtick (`<code>`)
+> The left node of the data-connect step is always used to indicate to the error message.
 
-- **Data Connection:** Gives the users a choice to select a reusable data connection object or to provide specific connection details for this step.
+:::image type="content" source="../media/4-final-prompt.png" alt-text="Screenshot showing the final prompt connection in the health bot.":::
 
-- **Authentication provider:** Gives the users a choice in selecting a provider for authenticating end-users or servers before calling this data connection.
+To display some retrieved data, in the final-statement step, fill the **Display text** field with the following code:
 
-- **Options:**
+`Thank you ${scenario.req.ResultSets.Table1[0].name}. You have checked in at ${scenario.req.ResultSets.Table1[0].ColumnDateTime}`
 
-  - **JSON:** Sets body to JSO representation of value and adds Content-type: application/json header. Additionally, it parses the response body as JSON.
-  - **Resolve with full response:** Set whether the promise should be resolved with the full response or just the response body.
+Select **OK** to save the code.
 
-- **Base URL:** It must include the HTTPS protocol.
+> [!Note]
+> In Markdown format, the code in the **Display text** field must be surrounded by single back ticks (*`*), also called *back quotes*.
 
-- **Headers:** Needs to be provided with a JSON or JavaScript object.
+We'll configure the following parameters to set up the data-connect step:
 
-- **Payload:** Needs to be provided with a JSON or JavaScript object.
+- **Data connection**: Sets a reusable data connection object or provides specific connection details for the step.
 
-:::image type="content" source="../media/4-post-health-bot.png" alt-text="POST method Data connection - connection step" lightbox="../media/4-post-health-bot.png":::
+- **Authentication provider**: Sets a provider to authenticate users or servers before calling the data connection.
 
-The configuration of the data connection step needs to be done in the following way:
+- **Options**:
 
-- **Data connection:** Select 'Step specific connection details' from the dropdown.
+  - **JSON**: Sets the body to a JSON representation of value. It adds the content type `application/json header`. It also parses the response body as JSON.
+  - **Resolve with full response**: Indicates whether the promise should be resolved with the full response or just the response body.
 
-- **Authentication provider:** Select 'Don't require end-user authentication' .
+- **Base URL**: Must include the HTTPS protocol.
 
-- **HTTPS Method:** Select 'POST'.
+- **Headers**: Must be provided with a JSON or JavaScript object.
 
-- **Options:** Select the 'JSON' checkbox.
+- **Payload**: Must be provided with a JSON or JavaScript object.
 
-- **Base URL:** We can get the base URL from the Workflow URL of the healthbot-post workflow which we created earlier.
+:::image type="content" source="../media/4-post-health-bot.png" alt-text="Screenshot showing the POST method data connection - connection step." lightbox="../media/4-post-health-bot.png":::
 
-:::image type="content" source="../media/4-post-url.png" alt-text="POST Data connection - connection step" lightbox="../media/4-post-url.png":::
+Make the following selections:
 
-From the Workflow URL, take 'https://healthbotlearn.azurewebsites.net.443' for the Base URL.
+- **Data connection**: Select **Step specific connection details**.
 
-- **Path:** The remaining part of the workflow URL goes into path, i.e, '/api/healthbot-post/triggers/man...'
+- **Authentication provider**: Select **Don't require end-user authentication**.
 
-- **Payload:** Give the following code in the payload section
+- **HTTPS method**: Select **POST**.
+
+- **Options**: Select **JSON**.
+
+- **Base URL**: Get this URL from the workflow URL of the healthbot-post workflow we created earlier. In the workflow URL, the base URL is `https://healthbotlearn.azurewebsites.net.443`.
+
+   :::image type="content" source="../media/4-post-url.png" alt-text="Screenshot showing the POST data connection - connection step." lightbox="../media/4-post-url.png":::
+
+- **Path**: Add the remaining part of the workflow URL: `/api/healthbot-post/triggers/man...`
+
+- **Payload**: Add the following code:
 
    ```
    {
@@ -66,33 +66,31 @@ From the Workflow URL, take 'https://healthbotlearn.azurewebsites.net.443' for t
    }
    ```
 
-- **Response Variable name:** : Give it any variable name. We have used 'res'
+- **Response variable name**: Provide any variable name, such as *res*.
 
-We also have to configure our second data connect cell for the GET method (to retrieve data from the database).
+   > [!Note]
+   > The response variable is used in the watch window. On the lower-right side of the page, the watch window shows the structure of the database. It also shows how the data is stored in different variables.
 
-:::image type="content" source="../media/4-get-health-bot.png" alt-text="GET Data connection - connection step" lightbox="../media/4-get-health-bot.png":::
+We also have to configure the second data-connect cell for the GET method. We'll need this setup to retrieve data from the database.
 
-The configuration for this data connect step is similar to that of the POST method.
+:::image type="content" source="../media/4-get-health-bot.png" alt-text="Screenshot showing the GET data connection - connection step." lightbox="../media/4-get-health-bot.png":::
 
-- **Data connection:** Select 'Step specific connection details' from the dropdown.
+The configuration for this data-connect step is like the configuration for the POST method step.
 
-- **Authentication provider:** Select 'Don't require end user authentication' .
+- **Data connection**: Select **Step specific connection details**.
 
-- **HTTPS Method:** Select 'GET'.
+- **Authentication provider**: Select **Don't require end user authentication**.
 
-- **Options:** Select the 'JSON' checkbox.
+- **HTTPS method**: Select **GET**.
 
-- **Base URL:** We can get the base URL from the Workflow URL of the healthbot-get workflow which we created earlier.
+- **Options**: Select **JSON**.
 
-:::image type="content" source="../media/4-get-url.png" alt-text="GET workflow url" lightbox="../media/4-get-url.png":::
+- **Base URL**: Get the base URL from the workflow URL of the healthbot-get workflow we created earlier. In the workflow URL, the base URL is `https://healthbotlearn.azurewebsites.net.443`.
 
-From the Workflow URL, take 'https://healthbotlearn.azurewebsites.net.443' for the Base URL
+    :::image type="content" source="../media/4-get-url.png" alt-text="Screenshot showing the GET workflow URL." lightbox="../media/4-get-url.png":::
 
-- **Path:** The remaining part of the workflow URL goes into path, i.e, '/api/healthbot-get/triggers/manual...'  
+- **Path**: Add the remaining part of the workflow URL: `/api/healthbot-get/triggers/manual...`  
 
-- **Response Variable name:**  Give it any variable name. We have used 'req'.
+- **Response variable name**: Add any variable name, such as *req*.
 
-With this you have successfully connected the database to your healthcare bot. The database can now accept data and also display the data in the final message.
-
-> [!Note]
-> The response variable name is given to a variable used in the watch window. The watch window on the right-side bottom of the page, is the place where you can view the structure of the database and also see how the data is stored into different variables.
+You've successfully connected the database to your healthcare bot. The database can now accept data and also display the data in the final message.

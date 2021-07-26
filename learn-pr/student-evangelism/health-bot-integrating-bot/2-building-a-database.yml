@@ -3,7 +3,7 @@ uid: learn.health-bot-integrating-bot.2-building-a-database
 title: Build a database
 metadata:
   title: Build a database
-  description: In this unit, you will how to build a database using Azure SQL Database and Server
+  description: In this unit, you'll learn how to build a database by using Azure SQL Database and SQL Server.
   author: Meghana-ch
   ms.author: chnoring
   ms.date: 04/14/2020
