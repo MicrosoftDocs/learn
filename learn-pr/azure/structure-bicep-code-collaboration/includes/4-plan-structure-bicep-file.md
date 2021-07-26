@@ -34,15 +34,11 @@ You also need to consider how to handle parameters and variables that are common
 > [!TIP]
 > Consider whether it might make more sense to create _modules_ for groups of related resources, and then use a simpler template to combine the modules together. Bicep modules are covered in more detail throughout the Bicep learning paths.
 
-<!--
-TODO
+## How do you define several similar resources?
 
-## Add loops
+Bicep enables to you use loops to deploy similar resources from a single definition. Look for places where you define multiple resources that are identical, or that have a few differences in their properties. Then, add a variable to list the resources to create along with their properties. For example, here's how you use a loop to define a set of Azure Cosmos DB containers, each of which has its own name and partition key:
 
-- Look for places where you define very similar resources multiple times
-- Loops can be used to simplify the deployment
-- Simple example?
--->
+::: code language="bicep" source="code/4-loop.bicep" range="7-21, 48-64" highlight="16, 18, 21, 25" :::
 
 ## How do you add meaningful whitespace?
 
