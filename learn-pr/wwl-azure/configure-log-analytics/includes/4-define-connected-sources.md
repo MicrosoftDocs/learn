@@ -12,5 +12,5 @@ Ensure you can locate each of the following.
 
  -  The Log Analytics service (1) collects data and stores it in the repository (2). The repository is hosted in Azure. Connected Sources provide information to the Log Analytics service.
  -  Computer agents (3) generate data to the Log Analytics service. These agents can run on Windows or Linux computers, virtual or physical computers, on-premises or cloud computers, and Azure or other cloud providers.
- -  A System Center Operations Manager (SCOM) management group can be connected to Log Analytics. SCOM agents (4) communicate with management servers that forward events and performance data to Log Analytics.
+ -  A System Center Operations Manager management group can be connected to Log Analytics. Agents (4) communicate with management servers that forward events and performance data to Log Analytics.
  -  An Azure storage account (5) can also collect Azure Diagnostics data from a worker role, web role, or virtual machine in Azure. This information can be sent to the Log Analytics service.

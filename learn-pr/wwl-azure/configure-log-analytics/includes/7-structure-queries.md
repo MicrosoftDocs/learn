@@ -17,31 +17,31 @@ Event
 
 Some common operators are:
 
- -  **count** \- Returns the number of records in the input record set.
+**count** \- Returns the number of records in the input record set.
 
 ```
 StormEvents | count
 ```
 
- -  **limit** \- Return up to the specified number of rows.
+**limit** \- Return up to the specified number of rows.
 
 ```
 T | limit 5
 ```
 
- -  **summarize** \- Produces a table that aggregates the content of the input table.
+**summarize** \- Produces a table that aggregates the content of the input table.
 
 ```
 T | summarize count(), avg(price) by fruit, supplier
 ```
 
- -  **top** \- Returns the first N records sorted by the specified columns.
+**top** \- Returns the first N records sorted by the specified columns.
 
 ```
 T | top 5 by Name desc nulls last
 ```
 
- -  **where** \- Filters a table to the subset of rows that satisfy a predicate.
+**where** \- Filters a table to the subset of rows that satisfy a predicate.
 
 ```
 T | where fruit=="apple"
