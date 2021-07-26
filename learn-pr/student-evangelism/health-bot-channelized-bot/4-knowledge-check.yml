@@ -15,19 +15,7 @@ content: |
 quiz:
   
   questions:
-    
-    - content: "We can't make the health bot available in one of the following channels. Which one?"
-      choices:
-        - content: "Telegram"
-          isCorrect: false
-          explanation: Incorrect. The health bot can be made available on Telegram.
-        - content: "WhatsApp"
-          isCorrect: false
-          explanation: Incorrect. The health bot can be made available on WhatsApp.
-        - content: "Signal"
-          isCorrect: true
-          explanation: Correct. Health Bot doesn’t currently support Signal.
-    
+        
     - content: "How can we connect the health bot to Microsoft Teams?"
       choices:
         - content: "APIs"
