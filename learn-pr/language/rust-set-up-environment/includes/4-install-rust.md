@@ -8,7 +8,7 @@ On Linux or macOS, copy the curl command by selecting the clipboard icon. Then o
 > [!Important]
 > Rust requires the Microsoft C++ build tools for Visual Studio 2013 or later.
 > The build tools must be installed before you can install Rust.
-> If you need to install the build tools, see the steps in the [previous unit](./3-install-build-tools.md).
+> If you need to install the build tools, see the steps in the [previous unit](learn/modules/rust-set-up-environment/includes/3-install-build-tools.md).
 
 Rust has a six-week, rapid release process, and supports a great number of platforms, so there are many builds of Rust available at any time. If you've installed `rustup` in the past, you can update to the latest stable version of Rust by running the command `rustup update`.
 
