@@ -11,16 +11,16 @@ First, let's create a condition that runs the logic app whenever a certain event
 1. Select the Logic app you just created. Select **Home**, then **Logic apps**, and then select the Logic app name from the Recent resources list.
 
 1. In the left menu pane, under **Development Tools**, select **Logic app designer**.
- 
-1. In the Logic app designer pane for your app, you will see an **Event Grid** trigger **When a resource event occurs**. Select **+ New step**.
 
-    :::image type="content" source="../media/5-choose-new-step-condition.png" alt-text="Button for a new logic app step."::: 
+1. In the Logic Apps Designer pane for your app, an **Event Grid** trigger **When a resource event occurs** appears. Select **+ New step**.
+
+    :::image type="content" source="../media/5-choose-new-step-condition.png" alt-text="Button for a new logic app step.":::
 
 1. Under **Choose an operation**, in the search box, enter **condition** as your filter. Select **Control**.
 
 1. On the **Actions** tab, select **Condition** *Control*.
 
-    :::image type="content" source="../media/5-select-condition.png" alt-text="Selections for choosing an action."::: 
+    :::image type="content" source="../media/5-select-condition.png" alt-text="Selections for choosing an action.":::
 
     The Logic app designer adds an empty condition to your workflow, including action paths to follow, based on a true or false condition.
 
@@ -28,15 +28,15 @@ First, let's create a condition that runs the logic app whenever a certain event
 
 1. Select ellipsis on the right side of the **Condition** text box, select **Rename**, and enter **If a virtual machine in your resource group has changed**.
 
-    :::image type="content" source="../media/5-rename-condition.png" alt-text="Selections for renaming a condition."::: 
+    :::image type="content" source="../media/5-rename-condition.png" alt-text="Selections for renaming a condition.":::
 
 1. In the area under the new name, select the check box under **And** to generate a checkmark, and then select the **Choose a value** box. In the Dynamic content list, select the **Expression** tab.
 
-    :::image type="content" source="../media/5-condition-choose-expression.png" alt-text="Selections for choosing an expression as a value."::: 
+    :::image type="content" source="../media/5-condition-choose-expression.png" alt-text="Selections for choosing an expression as a value.":::
 
 1. In the expression editor, enter `triggerBody()?['data']['operationName']`, and select **OK**.
 
-    :::image type="content" source="../media/5-condition-add-data-operation-name.png" alt-text="Entered expression for a data operation."::: 
+    :::image type="content" source="../media/5-condition-add-data-operation-name.png" alt-text="Entered expression for a data operation.":::
 
 1. Leave the middle box as **is equal to**, select the right box, and enter `Microsoft.Compute/virtualMachines/write`.
 
