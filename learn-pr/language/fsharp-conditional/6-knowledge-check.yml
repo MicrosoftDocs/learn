@@ -41,10 +41,10 @@ quiz:
         - content: It will print 0, 1, 2, 3, 4
           explanation: Incorrect. It will print 0, 1, 2, 3, 4 ,5
           isCorrect: false
-        - content: I will print 0, 1, 2, 3, 4, 5
+        - content: It will print 0, 1, 2, 3, 4, 5
           explanation: Correct. It will print all numbers from the start boundary including the ending boundary.
           isCorrect: true
-        - content: I will print 1, 2, 3, 4, 5
+        - content: It will print 1, 2, 3, 4, 5
           explanation: Incorrect. It will print all numbers from the start boundary including the ending boundary, which is 0, 1, 2, 3, 4 , 5. 
           isCorrect: false
 
