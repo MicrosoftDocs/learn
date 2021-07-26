@@ -6,7 +6,7 @@ There are multiple types of input. However, not all types support both input and
 
 - **Azure Blob Storage** - Blob Storage bindings allow you to read from a blob.
 
-- **Azure Cosmos DB** - The Azure Cosmos DB input binding uses the SQL API to retrieve one or more Azure Cosmos DB documents and passes them to the input parameter of the function. The document ID or query parameters can be determined based on the trigger that invokes the function.
+- **Azure Cosmos DB** - The Azure Cosmos DB input binding uses the SQL API to retrieve one or more Azure Cosmos DB documents, and passes them to the input parameter of the function. The document ID or query parameters can be determined based on the trigger that invokes the function.
 
 - **Mobile Apps** - The Mobile Apps input binding loads a record from a mobile table endpoint and passes it into your function.
 
@@ -31,7 +31,7 @@ There are a number of types of binding expressions, including:
 - New GUID
 - Current date and time
 
-Most expressions are identified by being wrapped in curly braces. However, app setting binding expressions are wrapped in percent signs rather than curly braces. For example, if the blob output binding path is `%Environment%/newblob.txt` and the Environment app setting value is *Development*, a blob will be created in the Development container.
+Most expressions are identified by being wrapped in curly braces. However, app setting binding expressions are wrapped in percent signs rather than curly braces. For example, if the blob output binding path is `%Environment%/newblob.txt`, and the Environment app setting value is *Development*, a blob will be created in the Development container.
 
 ## Summary
 
