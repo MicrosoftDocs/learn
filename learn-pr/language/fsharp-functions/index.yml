@@ -1,18 +1,21 @@
 ### YamlMime:Module
 uid: learn.fsharp-functions
 metadata:
-  title: Introduction to
+  title: Create and architect with functions in F#
   description: Learn how to
   ms.date: 07/26/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to
+title: Create and architect with functions in F#
 summary: Learn how to
 abstract: |
   In this module you will:
-  - Learn about X
+
+  - Define and use functions.
+  - Explore Functional programming.
+  - Compose functions and use pipelines.
 iconUrl: /learn/achievements/fsharp-functions.svg
 levels:
   - beginner
@@ -20,7 +23,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - dotnet
 prerequisites: None
 units:
   - learn.fsharp-functions.1-introduction
