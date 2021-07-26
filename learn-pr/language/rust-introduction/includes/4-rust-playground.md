@@ -1,16 +1,23 @@
-The Rust playground is a website that acts an IDE for Rust development. Anyone can access the playground. You can write your code, and then compile and run your code in the same environment. In this unit, we'll look at some of the features of the playground.
+Sometimes you want to try a piece of Rust code, confirm a method in a Rust library, or quickly share some code with others. It's convenient to have a tool for these tasks, so you don't have to write a full program in a standalone development environment. The Rust language offers tools to support these tasks in the Rust playground.
+
+The Rust playground is a website that acts an IDE for Rust development. You can write your code, and then compile and run your code in the same environment. In this unit, we'll look at some of the features of the playground.
+
+
+## Access the Rust playground
+
+The Rust playground is available on the internet at https://play.rust-lang.org/. Anyone can access the playground. Try connecting to the playground now.
 
 ## Write code
 
 The playground is like an IDE for the Rust language that's available on the internet. You can write and build your code, test and debug your code, and run and save your code. The following screenshot shows the playground environment. At the far right on the toolbar, the **Configure** menu has options to set your preferences for the environment.
 
-:::image type="content" source="../media/rust-playground-main.png" alt-text="Screenshot of the Rust playground that shows code for a hello world program.":::
+:::image type="content" source="../media/rust-playground-main.png" alt-text="Screenshot of the Rust playground that shows a basic program.":::
 
+Copy and paste the following code into the playground window:
 
-## Use crates in your code
-
-In the playground, you can access methods and functions in the standard Rust libraries. The top 100 most-downloaded crates in the crates.io library are available along with their dependencies.
-
+```rust
+fn main(){println!(Welcome to Rust!);}
+```
 
 ## Format your code
 
@@ -18,10 +25,25 @@ The playground features the **rustfmt** tool to format your Rust code to use off
 
 :::image type="content" source="../media/rust-playground-tools.png" alt-text="Screenshot of the Tools menu in the Rust playground.":::
 
+Select **Tools** > **Rustfmt** to format your code. The tool applies the standard Rust styles to your code and refreshes the display:
+
+:::image type="content" source="../media/rust-playground-rustfmt.png" alt-text="Screenshot of the reformatted code in the Rust playground.":::
+
+
+## Use crates in your code
+
+In the playground, you can access methods and functions in the standard Rust libraries. The top 100 most-downloaded crates in the crates.io library are available along with their dependencies. In the exercises for the Rust lessons, we'll use several Rust libraries and crates.
+
+Our sample program uses a predefined function to print some text. The functionality is available in a library that's loaded by default in the playground. Preloaded libraries mean you don't have to add extra code to use functionality from a library.
+
 
 ## Find mistakes in your code
 
-Most developers appreciate the ability to run *lint* tests on their code to find errors and areas for improvement. The **Clippy** collection of lints is available in the playground. You can use the Clippy collection to help find mistakes in your code and see suggestions for how to improve your code. The **Clippy** collection is available on the **Tools** menu.
+Most developers appreciate the ability to run *lint* tests on their code to find errors and areas for improvement. The **Clippy** collection of lints is available in the playground. You can use the Clippy collection to help find mistakes in your code and see suggestions for how to improve your code.
+
+Select **Tools** > **Clippy** to check for mistakes in the sample code. The tool runs the checks and displays the results in a pane under the editor. To fix the sample code, we need to add quote marks around the text, "Welcome to Rust!" You can make that correction now.
+
+:::image type="content" source="../media/rust-playground-clippy.png" alt-text="Screenshot of the fixed code in the Rust playground.":::
 
 
 ## Compile your code
@@ -42,6 +64,10 @@ The **Run** menu has several options for building and running your code. Here ar
 - **Build**: Build your code, but don't run the code. The **Build** option is the same as using the `cargo build` command.
 - **Test**: Build your code, and run all the tests against the code. The **Test** option is the same as using the `cargo test` command.
 
+Select **Run** to build and execute the sample program. Any output from the program is displayed in the pane beneath the editor:
+
+:::image type="content" source="../media/rust-playground-print.png" alt-text="Screenshot of the sample program output in the Rust playground.":::
+
 
 ## Share your code
 
@@ -52,10 +78,10 @@ Another useful feature of the playground is the ability to share any code that y
 
 ## Access your most recent code
 
-As you write Rust programs in the playground, your code is saved automatically to the local storage for your browser. This feature makes it easy for you to recover your most recent work, especially if you happen to close your browser window.
+As you write Rust programs in the playground, your code is saved automatically to the local storage for your browser. This feature makes it easy to recover your most recent work, especially if you happen to close your browser window.
 
 > [!Note]
-> The local storage for a browser is a singleton resource. If you have more than one browser window open to the Rust playground, only your most recently saved code is persisted in the local storage.
+> The local storage for a browser is a singleton resource. If you have more than one browser window open to the Rust playground, and you're working on different code in each window, only your most recently saved code across all windows is persisted in the local storage. 
 
 
 ## Understand playground limitations
@@ -63,9 +89,9 @@ As you write Rust programs in the playground, your code is saved automatically t
 The Rust playground has some limitations that protect the site from being used in a malicious manner. The restrictions also help to ensure the site remains available for all users.
 
 - **Network**: When you compile or run your code in the playground, a network connection isn't available.
-- **Memory**: The playground limits how much memory the compiler can use to build your code, and also when you run your built program.
+- **Memory**: The playground limits the available memory to compile your code and run your built program.
 - **Execution time**: The playground sets a maximum amount of time to compile your code and also to run your built program.
-- **Disk**: The amount of disk space that can be used to compile your code is limited, as well as when you run your built program.
+- **Disk**: The amount of available disk space to compile your code and run your built program is limited.
 
 
 You can read more about the features of the Rust playground on the [Rust website](https://play.rust-lang.org/help).

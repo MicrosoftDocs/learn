@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: The Rust playground
-durationInMinutes: 5
+durationInMinutes: 6
 content: |
   [!include[](includes/4-rust-playground.md)]
 
