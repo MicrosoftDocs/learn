@@ -10,3 +10,5 @@ In this module, you will:
 
 - Learn about the real-life use of Health Bot through case studies in the United States, the Middle East, and Europe.
 - Understand the service's benefits to customers.
+
+**Produced in partnership with Rodanthi Alexiou (Microsoft Learn Student Ambassadors) and the Microsoft Health Bot Product Group.**
