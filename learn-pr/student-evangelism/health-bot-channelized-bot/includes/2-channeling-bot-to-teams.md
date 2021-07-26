@@ -1,4 +1,13 @@
-You created a bot in the previous module. You'll now implement advanced features like LUIS, connecting data, and making the bot available on channels like Teams and WhatsApp. Let's first connect the bot to Teams.  
+## What is a Channel?
+
+A channel is a connection between the Health Bot and communication apps. You may configure the bot to connect to the channels you want it to be available on, through the Health Bot Management portal. The Health Bot leverages Azure Bot Service to connect your bot to these channels and facilitates communication between your bot and the user. In previous modules you learnt how to connect your Azure Health Bot to the Webchat Channel. In this module you will learn how to connect your Azure Health Bot to the Teams channel. 
+
+> [!NOTE]
+> Microsoft Teams is Organization specific. So, app sharing is allowed within the organization.  
+
+## Launching your Bot to Channels: 
+
+A “Trigger” is responsible in order to carry out a specific operation. In the interrupting and breaking scenario, we created a RegEx model to map it to a custom intent that we created. Let’s say the user types “Hello”, Now, We want our Health bot scenario to “Trigger” to this intent. This can be done in the “Models” section. Here we will use the “Greeting” model which is already present in the Language section. By default, the Greetings intent is linked to default scenario available on the Azure Health Bot portal. We want the scenario that we created to map to the Greetings intent mapping. 
 
 ## Make the bot available on Teams
 
