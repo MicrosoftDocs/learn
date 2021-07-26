@@ -44,7 +44,7 @@ Most developers appreciate the ability to run *lint* tests on their code to find
 
 1. Select **Tools** > **Clippy** to check for mistakes in the sample code. The tool runs the checks and displays the results under the editor.
 
-   :::image type="content" source="../media/rust-playground-clippy.png" alt-text="Screenshot of the fixed code in the Rust playground.":::
+   :::image type="content" source="../media/rust-playground-clippy.png" alt-text="Screenshot of the Clippy tool results in the Rust playground.":::
 
 1. To fix the sample code, we need to add quote marks around the text, "Welcome to Rust!" In the editor, add the quote marks.
 
