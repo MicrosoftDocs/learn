@@ -7,6 +7,8 @@ In this module, you will be taken through a journey from understanding what a fu
 
 ## Learning objectives
 
+In this module you will:
+
 - Define and use functions.
-- Functional programming.
+- Explore Functional programming.
 - Compose functions and use pipelines.
