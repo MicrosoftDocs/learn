@@ -18,7 +18,7 @@ cd hello-world
 ```
 ::: zone-end
 
-::: zone pivot="linux"
+::: zone pivot="linux,macos"
 
 For Linux, macOS, and PowerShell on Windows, run the following commands:
 
@@ -59,7 +59,7 @@ rustc main.rs
 
 ::: zone-end
 
-::: zone pivot="linux"
+::: zone pivot="linux,macos"
 
 If you're on Linux or macOS, run the following commands:
 
