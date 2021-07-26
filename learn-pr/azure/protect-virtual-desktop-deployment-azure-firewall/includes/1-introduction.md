@@ -1,4 +1,4 @@
-Use Azure Firewall to protect the network traffic for Azure services like Azure Virtual Desktop. Azure Firewall is a managed network security service that's cloud-based and that protects your Azure Virtual Network resources. It's a fully stateful and centralized network firewall as a service. It provides network- and application-level protection across different subscriptions and virtual networks.
+Use Azure Firewall to protect the network traffic for Azure services like Azure Virtual Desktop. Azure Firewall is a managed network security service that's cloud-based and that protects your Azure Virtual Network resources. It's a fully stateful and centralized network firewall as a service. It provides network-level and application-level protection across different subscriptions and virtual networks.
 
 ## Example scenario
 
