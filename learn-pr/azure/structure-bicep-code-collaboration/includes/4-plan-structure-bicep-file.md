@@ -32,7 +32,7 @@ This approach can make it easy to read your template, since all of the elements 
 You also need to consider how to handle parameters and variables that are common to multiple resources, like an `environmentType` parameter when you use a configuration map. Common parameters and variables should be placed together, usually at the top of the Bicep file.
 
 > [!TIP]
-> Consider whether it might make more sense to create _modules_ for groups of related resources, and then use a simpler template to combine the modules together. Bicep modules are covered in more detail later in this Learn module.
+> Consider whether it might make more sense to create _modules_ for groups of related resources, and then use a simpler template to combine the modules together. Bicep modules are covered in more detail throughout the Bicep learning paths.
 
 ## How do you add meaningful whitespace?
 

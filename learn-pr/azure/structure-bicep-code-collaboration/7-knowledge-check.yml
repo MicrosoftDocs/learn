@@ -48,14 +48,3 @@ quiz:
     - content: "You can structure your template and group elements in any order."
       isCorrect: false
       explanation: "Incorrect. While it's true that you can structure your Bicep templates in many different ways, this is unrelated to configuration sets."
-  - content: "How do you pass parameter values from a main template to a module?"
-    choices:
-    - content: "Use the `params` property in the module declaration."
-      isCorrect: true
-      explanation: "Correct. Parameters declared in a module are referenced from the main template's module declaration by using the `params` property."
-    - content: "Provide a JSON parameters file for each module you use."
-      isCorrect: false
-      explanation: "Incorrect. Modules are compiled into a single Resource Manager template. You provide one parameters file for the deployment."
-    - content: "You can't - modules don't support parameters."
-      isCorrect: false
-      explanation: "Incorrect. Modules can include parameters. Their values are populated by referencing using the `params` property when you declare the module."

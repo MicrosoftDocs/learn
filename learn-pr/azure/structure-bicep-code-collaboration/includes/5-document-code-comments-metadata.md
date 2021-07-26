@@ -19,7 +19,7 @@ You can also use Bicep comments to add a structured multi-line block at the begi
 ```bicep
 /*
   SYNOPSIS: Module for provisioning Azure SQL server and database.
-  DESCRIPTION: This modules provisions an Azure SQL server and a database, and configures the server to accept connections from within Azure.
+  DESCRIPTION: This module provisions an Azure SQL server and a database, and configures the server to accept connections from within Azure.
   VERSION: 1.0.0
   OWNER TEAM: Website
 */

@@ -11,14 +11,14 @@ metadata:
   ms.prod: learning-azure
 title: Structure your Bicep code for collaboration
 summary: |
-  Build Bicep files that support collaborative development. Use a consistent style, clear structure, and comments to make your Bicep code easy to understand, use, and modify. Create modules to simplify your templates and support reusability.
+  Build Bicep files that support collaborative development. Plan your parameters to make your templates easy to deploy. Use a consistent style, clear structure, and comments to make your Bicep code easy to understand, use, and modify.
 abstract: |
   After competing this module, you'll be able to:
+    - Select the appropriate parameters for a Bicep file
     - Structure your Bicep code and parameters to support team collaboration
     - Document your Bicep code by using comments and resource tags
-    - Convert a single large Bicep template to smaller, reusable modules
 prerequisites: |
-  You should be familiar with Bicep structure and syntax, including parameters, modules, and conditions.
+  You should be familiar with Bicep structure and syntax, including parameters, loops, modules, and conditions.
 
   To follow along with the exercises in the module, you'll need the following installed locally:
   - [Visual Studio Code](https://code.visualstudio.com)
@@ -39,8 +39,6 @@ units:
 - learn.azure.structure-bicep-code-collaboration.plan-structure-bicep-file
 - learn.azure.structure-bicep-code-collaboration.document-code-comments-metadata
 - learn.azure.structure-bicep-code-collaboration.exercise-refactor-bicep-file
-- learn.azure.structure-bicep-code-collaboration.modularize-bicep-code
-- learn.azure.structure-bicep-code-collaboration.exercise-refactor-bicep-file-modules
 - learn.azure.structure-bicep-code-collaboration.knowledge-check
 - learn.azure.structure-bicep-code-collaboration.summary
 badge:
