@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.fsharp-functions.5-exercise-patterns
+title: Exercise - function patterns
+metadata:
+  title: Exercise - function patterns
+  description: Describe unit
+  author: softchris
+  ms.author: chnoring
+  ms.date: 07/26/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-exercise-patterns.md)]

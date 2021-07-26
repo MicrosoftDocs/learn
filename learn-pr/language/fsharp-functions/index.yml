@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.fsharp-functions
+metadata:
+  title: Introduction to
+  description: Learn how to
+  ms.date: 07/26/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to
+summary: Learn how to
+abstract: |
+  In this module you will:
+  - Learn about X
+iconUrl: /learn/achievements/fsharp-functions.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs
+prerequisites: None
+units:
+  - learn.fsharp-functions.1-introduction
+  - learn.fsharp-functions.2-function
+  - learn.fsharp-functions.3-exercise-function
+  - learn.fsharp-functions.4-function-patterns
+  - learn.fsharp-functions.5-exercise-patterns
+  - learn.fsharp-functions.6-knowledge-check
+  - learn.fsharp-functions.7-summary
+badge:
+  uid: learn.fsharp-functions.badge
