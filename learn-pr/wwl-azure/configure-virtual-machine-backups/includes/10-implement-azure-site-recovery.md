@@ -3,7 +3,7 @@ Site Recovery helps ensure business continuity by keeping business apps and work
 :::image type="content" source="../media/site-recovery-scenarios-388c71fd.png" alt-text="Two regions are connected by Traffic Manager. Region 1 is failing over to Region 2.":::
 
 
-## Replications Scenarios
+## Replications scenarios
 
  -  Replicate Azure VMs from one Azure region to another.
  -  Replicate on-premises VMware VMs, Hyper-V VMs, physical servers (Windows and Linux), Azure Stack VMs to Azure.
