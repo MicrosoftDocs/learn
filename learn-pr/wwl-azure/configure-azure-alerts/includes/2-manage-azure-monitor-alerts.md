@@ -9,7 +9,7 @@ The Monitor Alerts experience has many benefits.
  -  **Separation of Fired Alerts and Alert Rules**. Alert Rules (the definition of the condition that triggers an alert), and Fired Alerts (an instance of the alert rule firing) are differentiated, so the operational and configuration views are separated.
  -  **Better workflow**. The new alerts authoring experience guides the user along the process of configuring an alert rule, which makes it simpler to discover the right things to get alerted on.
 
-## Managing Alerts
+## Managing alerts
 
 You can alert on metrics and logs as described in monitoring data sources. These include but are not limited to:
 
