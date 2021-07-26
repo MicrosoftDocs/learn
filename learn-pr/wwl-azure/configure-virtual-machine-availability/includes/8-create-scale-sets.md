@@ -1,6 +1,8 @@
 :::image type="content" source="../media/implement-scale-sets-61516afb.png" alt-text="Screenshot of the Create virtual machine scale set page in the portal.":::
 
 
+When you create a scale set, consider these parameters.
+
  -  **Initial instance count.** Number of virtual machines in the scale set (0 to 1000).
  -  **Instance size.** The size of each virtual machine in the scale set.
  -  **Azure spot instance**. Low-priority VMs are allocated from Microsoft Azure's excess compute capacity. Spot instances enable several types of workloads to run at a reduced cost.
