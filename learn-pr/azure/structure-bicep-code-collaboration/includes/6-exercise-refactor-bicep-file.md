@@ -76,7 +76,7 @@ Take a look at the symbolic names for the resources in the template. What could 
 
 1. There are a few resources with symbolic names that don't reflect the current names of Azure resources:
 
-   ::: code language="bicep" source="code/2-template.bicep" range="94,101, 103,120, 140,143" :::
+   ::: code language="bicep" source="code/2-template.bicep" range="94,101, 103,127, 140,143" :::
 
    Managed identities used to be called _MSIs_, App Service plans used to be called _hosting plans_, and App Service apps used to be called _websites_.
 
