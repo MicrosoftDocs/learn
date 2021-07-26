@@ -41,7 +41,7 @@ units:
 - learn.advocates.responsible-bots.4a-develop-bot-online-editor
 - learn.advocates.responsible-bots.4b-develop-bot-visual-studio
 # learn.advocates.responsible-bots.5-add-language-understanding
-- learn.advocates.responsible-bots.5a-add-language-understanding
+- learn.advocates.responsible-bots.5a-luis-integration
 - learn.advocates.responsible-bots.5b-connect-luis-bot-code
 - learn.advocates.responsible-bots.6-add-question-answering
 - learn.advocates.responsible-bots.7-more-responsible-ui
