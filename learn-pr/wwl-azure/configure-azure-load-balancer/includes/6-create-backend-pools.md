@@ -1,9 +1,4 @@
-To distribute traffic, a back-end address pool contains the IP addresses of the virtual NICs that are connected to the load balancer.
-
-:::image type="content" source="../media/frontend-backend-a7077aa7.png" alt-text="Flowchart. The frontend is connected to the load balancer. The load balancer is connected to the backend.":::
-
-
-How you configure the backend pool depends on whether you are using the Standard or Basic SKU.
+To distribute traffic, a back-end address pool contains the IP addresses of the virtual NICs that are connected to the load balancer. How you configure the backend pool depends on whether you are using the Standard or Basic SKU.
 
 :::row:::
   :::column:::
