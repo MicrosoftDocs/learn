@@ -62,7 +62,7 @@ As you write programs in the Rust playground, your code is saved automatically t
 
    :::image type="content" source="../media/rust-playground-share.png" alt-text="Screenshot that shows how to use the Share feature in the Rust playground.":::
 
-1. Select the paper icon next to *Permalink*. Now you can save the URL to access your code later. The URL loads the gist for your specific code into the playground.
+1. Select the paper icon next to the text **Permalink to the playground** to get a shareable gist for your code. You can save this URL to access your code later. The URL loads the gist for your specific code into the playground.
 
-> [!Note]
-> The local storage for a browser is a singleton resource. If you have more than one browser window open to the Rust playground, and you're working on different code in each window, only your most recently saved code across all windows is persisted in the local storage. 
+   > [!Note]
+   > The local storage for a browser is a singleton resource. If you have more than one browser window open to the Rust playground, and you're working on different code in each window, only your most recently saved code across all windows is persisted in the local storage. 
