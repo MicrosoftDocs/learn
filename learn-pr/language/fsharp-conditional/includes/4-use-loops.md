@@ -41,8 +41,8 @@ for <identifier = start> [ to | downto ] <finish> do
 
 Let's go over the different parts:
 
-- **identifier = start**. This syntax is an assignment, here you typically decide what variable you want to track as part of the iteration and what value it should start on.
-- **[to | downto]**. You can choose between two different keywords. If you choose `to` to that means the loop will iterate to that number. If you on the other hand choose `downto` the value of your identifier will decrease until it hits that number.
+- `identifier = start`. This syntax is an assignment, here you typically decide what variable you want to track as part of the iteration and what value it should start on.
+- `[to | downto]`. You can choose between two different keywords. If you choose `to` to that means the loop will iterate to that number. If you on the other hand choose `downto` the value of your identifier will decrease until it hits that number.
 
 Here's an example using the `for...to` loop:
 
