@@ -89,9 +89,9 @@ To begin, go to the [Azure portal](https://portal.azure.com/#home).
 
    :::image type="content" source="../media/3-insert-sql-row.png" alt-text="Screenshot showing how to add an action." lightbox="../media/3-insert-sql-row.png":::
 
-1. In the search bar, search for **Insert row (V2)**. On the **Azure** tab, under **Actions**, select **Insert now (V2) SQL Server**.
+1. In the search bar, search for **Insert row (V2)**. On the **Azure** tab, under **Actions**, select **Insert row (V2) SQL Server**.
 
-   :::image type="content" source="../media/3-install-gateway.png" alt-text="Screenshot showing the selection for Insert now (V2)." lightbox="../media/3-install-gateway.png":::
+   :::image type="content" source="../media/3-install-gateway.png" alt-text="Screenshot showing the selection for Insert row." lightbox="../media/3-install-gateway.png":::
 
 1. Fill the table by using the following information:
 
