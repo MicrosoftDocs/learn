@@ -1,4 +1,4 @@
-In this unit, we look at application performance monitoring (APM) concepts.
+In this unit, we look at autoscaling monitoring.
 
 ## Monitoring
 
