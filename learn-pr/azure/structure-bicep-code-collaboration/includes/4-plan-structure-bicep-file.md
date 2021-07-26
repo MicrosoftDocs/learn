@@ -21,7 +21,7 @@ You still have to decide how to order the elements within these categories. It's
 
 Sometimes, you create a template that deploys a primary resource, with a number of secondary supporting resources. For example, you might create a template to deploy a website hosted on Azure App Service. The primary resource is the App Service app. Secondary resources in the same template would include the App Service plan, storage account, Application Insights instance, and others. When you have a template like this, it's a good idea to put the primary resource or resources at the top of the resource section of the template, so that anyone who opens the template can quickly identify the purpose of the template and can find the important resources.
 
-### Group elements together by resource type
+### Group elements together by resource
 
 Alternative, you can group your elements based on the type of the resources being deployed. For example, you might have a Bicep file that deploys an Azure SQL database and a storage account. You could put all of the parameters, variables, resources, and outputs that relate to the Azure SQL database resources together, then put the parameters, variables, resources, and outputs for the storage account, like this:
 
