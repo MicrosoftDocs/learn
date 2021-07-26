@@ -34,6 +34,11 @@ var sqlServerName = 'sqlserver${resourceNameSuffix}'
 var sqlDatabaseName = 'ToyCompanyWebsite'
 var managedIdentityName = 'WebSite'
 var applicationInsightsName = 'AppInsights'
+var storageAccountName = 'toywebsite${resourceNameSuffix}'
+var blobContainerNames = [
+  'productspecs'
+  'productmanuals'
+]
 
 // Define the SKUs for each component based on the environment type.
 var environmentConfigurationMap = {
@@ -42,6 +47,11 @@ var environmentConfigurationMap = {
       sku: {
         name: 'S1'
         capacity: 2
+      }
+    }
+    storageAccount: {
+      sku: {
+        name: 'Standard_GRS'
       }
     }
     sqlDatabase: {
@@ -58,6 +68,11 @@ var environmentConfigurationMap = {
         capacity: 1
       }
     }
+    storageAccount: {
+      sku: {
+        name: 'Standard_LRS'
+      }
+    }
     sqlDatabase: {
       sku: {
         name: 'Basic'
@@ -67,7 +82,7 @@ var environmentConfigurationMap = {
 }
 
 var contributorRoleDefinitionId = 'b24988ac-6180-42a0-ab88-20f7382dd24c' // This is the built-in Azure 'Contributor' role.
-var sqlDatabaseConnectionString = 'Data Source=tcp:${sqlServer.properties.fullyQualifiedDomainName},1433;Initial Catalog=${sqlDatabaseName};User Id=${sqlServerAdministratorLogin}@${sqlServer.properties.fullyQualifiedDomainName};Password=${sqlServerAdministratorLoginPassword};'
+var storageAccountConnectionString = 'DefaultEndpointsProtocol=https;AccountName=${storageAccount.name};EndpointSuffix=${environment().suffixes.storage};AccountKey=${listKeys(storageAccount.id, storageAccount.apiVersion).keys[0].value}'
 
 resource sqlServer 'Microsoft.Sql/servers@2019-06-01-preview' = {
   name: sqlServerName
@@ -110,6 +125,18 @@ resource appServiceApp 'Microsoft.Web/sites@2020-06-01' = {
   tags: tags
   properties: {
     serverFarmId: appServicePlan.id
+    siteConfig: {
+      appSettings: [
+        {
+          name: 'APPINSIGHTS_INSTRUMENTATIONKEY'
+          value: applicationInsights.properties.InstrumentationKey
+        }
+        {
+          name: 'StorageAccountConnectionString'
+          value: storageAccountConnectionString
+        }
+      ]
+    }
   }
   identity: {
     type: 'UserAssigned'
@@ -119,14 +146,21 @@ resource appServiceApp 'Microsoft.Web/sites@2020-06-01' = {
   }
 }
 
-resource webSiteConnectionString 'Microsoft.Web/sites/config@2020-06-01' = {
-  parent: appServiceApp
-  name: 'connectionstrings'
+resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
+  name: storageAccountName
+  location: location
+  sku: environmentConfigurationMap[environmentType].storageAccount.sku
+  kind: 'StorageV2'
   properties: {
-    DefaultConnection: {
-      value: sqlDatabaseConnectionString
-      type: 'SQLAzure'
-    }
+    accessTier: 'Hot'
+  }
+
+  resource blobServices 'blobServices' existing = {
+    name: 'default'
+
+    resource containers 'containers' = [for blobContainerName in blobContainerNames: {
+      name: blobContainerName
+    }]
   }
 }
 

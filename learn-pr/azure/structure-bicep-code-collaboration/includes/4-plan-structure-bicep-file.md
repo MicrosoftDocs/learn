@@ -34,6 +34,16 @@ You also need to consider how to handle parameters and variables that are common
 > [!TIP]
 > Consider whether it might make more sense to create _modules_ for groups of related resources, and then use a simpler template to combine the modules together. Bicep modules are covered in more detail throughout the Bicep learning paths.
 
+<!--
+TODO
+
+## Add loops
+
+- Look for places where you define very similar resources multiple times
+- Loops can be used to simplify the deployment
+- Simple example?
+-->
+
 ## How do you add meaningful whitespace?
 
 Blank lines, or _whitespace_, can help you to structure your template. By using whitespace thoughtfully, you can clarify the relationships between resources and logically group sections of your Bicep code together. Consider adding a blank line between the sections of your template, regardless of which grouping style you prefer.
