@@ -26,7 +26,7 @@ You've already prepared your website's Bicep file, which can be used to deploy d
 1. In the Visual Studio Code **Terminal**, stage the changes, commit the changes and push the changes to your repository by using the following commands:
 
    ```bash
-   git add .
+   git add deploy/main.bicep
    git commit -m 'Add Bicep file'
    git push
    ```
@@ -64,7 +64,7 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 1. In the Visual Studio Code **Terminal**, stage your changes, commit them to your repository, and push them to Azure Repos:
 
    ```bash
-   git add .
+   git add deploy/azure-pipelines.yml
    git commit -m 'Add Azure CLI tasks to pipeline'
    git push
    ```

@@ -94,7 +94,7 @@ Now that you have your organization, project and repository created, you're read
 1. Commit and push the file to your Git repository by using the following commands:
 
    ```bash
-   git add .
+   git add deploy/azure-pipelines.yml
    git commit -m "Add initial pipeline definition"
    git push
    ```
