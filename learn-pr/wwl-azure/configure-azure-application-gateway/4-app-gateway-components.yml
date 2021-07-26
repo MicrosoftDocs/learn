@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-application-gateway.setup-components
-title: Setup application gateway components
+title: Application Gateway component setup
 metadata:
-  title: Setup application gateway components
-  description: "Setup application gateway components"
-  ms.date: 07/23/2021
+  title: Application Gateway component setup
+  description: "Application Gateway component setup"
+  ms.date: 07/26/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-setup-components.md)]
+  [!include[](includes/4-app-gateway-components.md)]
