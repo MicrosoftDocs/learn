@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-advisor.what-is-azure-advisor
+title: What is Azure Advisor?
+metadata:
+  unitType: learning-content
+  title: What is Azure Advisor?
+  description: What is Azure Advisor and what can it be used for?
+  ms.date: 6/30/2021
+  author: ricmmartins
+  ms.author: ricmart
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-what-is-azure-advisor.md)]
