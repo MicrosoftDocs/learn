@@ -17,7 +17,6 @@ abstract: |
   - Understand the basic components and tools for using Rust.
 prerequisites: | 
   - Knowledge of programming languages, such as Python or C++
-# ADD NEW BADGE FILE WHEN READY
 iconUrl: /learn/achievements/rust-get-started.svg 
 levels:
 - beginner
@@ -33,6 +32,5 @@ units:
 - learn.language.rust-introduction.3-rust-features
 - learn.language.rust-introduction.4-rust-playground
 - learn.language.rust-introduction.5-summary
-# ADD NEW BADGE UID WHEN READY
 badge:
   uid: learn.language.rust-introduction.badge
