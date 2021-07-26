@@ -4,7 +4,7 @@ title: Understand Azure Pipelines
 metadata:
   unitType: learning-content
   title: Understand Azure Pipelines
-  description: Learn about pipelines, triggers, and steps. Also, learn how pipelines run on agents and how they authenticate by using service connections.
+  description: Learn about pipelines, jobs, and steps. Also, learn how pipelines run on agents.
   ms.date: 07/20/2021
   author: vermegi
   ms.author: givermei
