@@ -13,7 +13,7 @@ durationInMinutes: 4
 quiz:
   title: ''
   questions:
-  - content: 'Which of the following scenarios is a common use case for a version control system?'
+  - content: 'How do you include a new file to your Git index?'
     choices:
     - content: "Deleting earlier versions of a project or file, so you know you are working only with the most current file or data."
       isCorrect: false
@@ -24,7 +24,7 @@ quiz:
     - content: "Gathering feature requirements for a large project and communicating them to stakeholders."
       isCorrect: false
       explanation: "Incorrect. Although some teams use tools like GitHub to collaborate, version control systems are not designed for this type of work."            
-  - content: 'What is another name for a version control system?'
+  - content: 'What does the -m tag do to your commit?'
     choices:
     - content: "Version management software (VMS)"
       isCorrect: false
@@ -35,7 +35,7 @@ quiz:
     - content: "Software configuration management (SCM) system"
       isCorrect: true
       explanation: "Correct!"
-  - content: 'What’s the difference between Git and GitHub?'
+  - content: 'Which of these is a good example of a commit message?'
     choices:
     - content: "Git lets you work with one or more local branches and push changes to a remote repository. GitHub acts as the remote repository, which is accessed through a website or command-line tools."
       isCorrect: true
@@ -46,7 +46,7 @@ quiz:
     - content: "Git is used by an individual contributor. GitHub is used by multiple contributors to simplify group development work."
       isCorrect: false
       explanation: "Incorrect. Both Git and GitHub are used by individual contributors and by teams to facilitate working together."            
-  - content: 'What Git command gives information about how to use Git?'
+  - content: 'Which Git function allows you to replace a file?'
     choices:
     - content: "`git init`"
       isCorrect: false
