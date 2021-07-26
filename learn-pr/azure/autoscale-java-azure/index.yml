@@ -2,20 +2,21 @@
 uid: learn.autoscale-java-azure
 metadata:
   moduleType: standard
-  title: Autoscaling Java applications on Azure
-  description: Learn how to use Autoscaling for your Java applications on Azure
+  title: Drive higher utilization of your Java Apps - autoscaling
+  description: Learn how to drive higher utilization of your Java Apps on Azure
   ms.date: 07/07/2021
   author: roryp
   ms.author: ropreddy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Autoscaling Java applications on Azure
-summary: Learn how to use Autoscaling for your Java applications on Azure
+title: Drive higher utilization of your Java Apps - autoscaling
+summary: Learn how to drive higher utilization of your Java Apps on Azure
 abstract: |
   By the end of this module, you will be able to:
   - Identify scenarios for which autoscaling is an appropriate solution
-  - Create autoscaling rules for a Java web app
+  - Create autoscaling rules for a Java application
   - Monitor the effects of autoscaling
+  - Understand common design patterns for autoscaling
 prerequisites: |
   - Azure subscription
   - Basic knowledge of [Azure Spring Cloud](/learn/modules/azure-spring-cloud-workshop/?WT.mc_id=java-00000-ropreddy)
