@@ -37,7 +37,7 @@ So far you've seen how `if` and `else` have created different branches to the co
 let age = 64
 let message = if age > 65 then "Senior citizen" else "Citizen"
 printfn "%s" message
-``` 
+```
 
 In this case, the `if` and `else` behave more like a ternary expression where if a condition is true, it returns that value, and if false it returns the other value. In fact, `if` always behaves this way. Let's revisit a previous code example and see that that is the case:
 
@@ -46,7 +46,7 @@ let age = 66
 if age > 65 then printfn "Senior citizen" else printfn "Citizen"
 ```
 
-Same code example as before, with the difference being that `if` and `else` have been put on the same line. The expression being run `printfn "Senior citizen"` produces a value of type `unit`. 
+Same code example as before, with the difference being that `if` and `else` have been put on the same line. The expression being run `printfn "Senior citizen"` produces a value of type `unit`.
 
 > [!NOTE]
 > `unit` is a value that acts as a placeholder when no actual value is returned. You can think of it like `void` or `None`.
@@ -74,6 +74,3 @@ let cardValue = 1
 let cardDescription = if cardValue = 1 then "Ace" elif cardValue = 14 then "Ace" else "A card"
 printfn "%s" cardDescription
 ```
-
-
-

@@ -1,4 +1,4 @@
-In this exercise, you'll continue with your card game to build a deck of cards. You'll use looping constructs to iterate over the cards and print them to the screen. Your colleagues have been hard at work and taken what you've implemented in the first exercise and placed that code into a function. 
+In this exercise, you'll continue with your card game to build a deck of cards. You'll use looping constructs to iterate over the cards and print them to the screen. Your colleagues have been hard at work and taken what you've implemented in the first exercise and placed that code into a function.
 
 ## Scaffold a project
 
