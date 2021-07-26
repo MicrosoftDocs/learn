@@ -4,4 +4,4 @@ In this module, you learned how to use Azure Cognitive Search to create a *knowl
 - *File* projections are JPEG files containing image data extracted from documents.
 - *Table* projections create a relational schema for the extracted data.
 
-For more information about Azure Cognitive Search, take a look at the [service documentation](https://docs.microsoft.com/azure/search/).
+For more information about Azure Cognitive Search, take a look at the [service documentation](/azure/search/).
