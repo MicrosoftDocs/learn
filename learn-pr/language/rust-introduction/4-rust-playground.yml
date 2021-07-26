@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-introduction.4-rust-playground
+metadata:
+  title: Exercise - The Rust playground
+  description: Learn about the Rust playground where you can write code and build and run programs.
+  ms.date: 07/20/2021
+  author: GitHubber17
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - The Rust playground
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-rust-playground.md)]
+
+quiz:
+  questions:
+
+  - content: "What tasks can you do in the Rust playground?"
+    choices:
+    - content: "Write code, compile code, test code, run code, share code"
+      isCorrect: true
+      explanation: "Correct. The Rust playground is a robust IDE."    
+    - content: "Only write code and test code"
+      isCorrect: false
+      explanation: "Incorrect. The Rust playground is a robust IDE that supports most programming tasks."
+    - content: "Write code, compile code, run code"
+      isCorrect: false
+      explanation: "Incorrect. You can also test your code in the playground and create a GitHub gist of your code for sharing."  
+   
+  - content: "What playground tool can you use to find mistakes in your code?"
+    choices:
+    - content: "rustfmt"
+      isCorrect: false
+      explanation: "Incorrect. You can use the rustfmt tool to format your Rust code to use official Rust styles."
+    - content: "Clippy"
+      isCorrect: true
+      explanation: "Correct. You can use the Clippy collection of lints to find mistakes in your code and see suggestions for how to improve your code."
+    - content: "Debug"
+      isCorrect: false
+      explanation: "Incorrect. Debug is a compile option."
