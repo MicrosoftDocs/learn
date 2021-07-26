@@ -11,5 +11,5 @@ You should now be able to:
 You can learn more by reviewing the following.
 
  -  [Azure Policy Documentation](/azure/azure-policy/)
- -  [Learn - Apply and monitor infrastructure standards with Azure Policy](/learn/modules/intro-to-governance/)
- -  [Learn - Build a cloud governance strategy on Azure](/learn/modules/analyze-costs-create-budgets-azure-cost-management/)
+ -  [Learn - Build a cloud governance strategy on Azure](/learn/modules/build-cloud-governance-strategy-azure/)
+ -  [Learn - Analyze costs and create budgets with Azure Cost Management](/learn/modules/analyze-costs-create-budgets-azure-cost-management/)
