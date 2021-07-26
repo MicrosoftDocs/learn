@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.language.rust-introduction.4-rust-playground
 metadata:
-  title: The Rust playground
+  title: Exercise - The Rust playground
   description: Learn about the Rust playground where you can write code and build and run programs.
   ms.date: 07/20/2021
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: The Rust playground
+title: Exercise - The Rust playground
 durationInMinutes: 6
 content: |
   [!include[](includes/4-rust-playground.md)]

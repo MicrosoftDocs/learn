@@ -20,6 +20,7 @@ The Rust Cookbook contains *recipes* for code that follows recommended practices
 - [Rust `chrono` crate](https://docs.rs/chrono/0.4.19/chrono/index.html?azure-portal=true)
 - [Rust `regex` crate](https://docs.rs/regex/1.5.4/regex/?azure-portal=true)
 - [Rust `serde` crate](https://serde.rs/?azure-portal=true)
-- [Rust cookbook](https://rust-lang-nursery.github.io/rust-cookbook/?azure-portal=true)
+- [Rust cookbook recipes](https://rust-lang-nursery.github.io/rust-cookbook/?azure-portal=true)
+- [Rust playgound help](https://play.rust-lang.org/help?azure-portal=true)
 - [Lib.rs catalog of programs and libraries for Rust](https://lib.rs?azure-portal=true/)
 - [Stack overflow developer survey of 2020: Rust](https://insights.stackoverflow.com/survey?azure-portal=true)
