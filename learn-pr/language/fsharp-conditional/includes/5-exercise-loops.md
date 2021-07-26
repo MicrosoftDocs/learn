@@ -46,18 +46,18 @@ let cardDescription (card: int) : string =
         0 // return an integer exit code
    ```
 
-  The `cardDescription` is the name of the function and `card` is the input parameter. Your colleagues have given you a code snippet to work with and what they want is for you to implement a similar function but that determines what suit  card has.  They've given you the following code snippet:
+   The `cardDescription` is the name of the function and `card` is the input parameter. Your colleagues have given you a code snippet to work with and what they want is for you to implement a similar function but that determines what suit  card has.  They've given you the following code snippet:
 
-  ```fsharp
-  let suit (no:int) : string = 
-      let suitNo:int = no / 13
-      // add implementation here 
-  ```
+   ```fsharp
+   let suit (no:int) : string = 
+       let suitNo:int = no / 13
+       // add implementation here 
+   ```
 
-  Now, use the knowledge you've been given, around `if...else` to determine what suit something is. The rules are `0` is hearts, `1` is Spades, `2` is Diamonds, and `3` is Clubs.
+   Now, use the knowledge you've been given, around `if...else` to determine what suit something is. The rules are `0` is hearts, `1` is Spades, `2` is Diamonds, and `3` is Clubs.
 
-  > [!TIP]
-  > Think about this one for a second before moving on.
+   > [!TIP]
+   > Think about this one for a second before moving on.
 
 1. Change the implementation above to the following code:
 
@@ -116,14 +116,14 @@ let cards = [ 1; 10; 2; 34 ]
         0 // return an integer exit code
    ```
 
-  The deck contains only four cards. In a more real implementation, it would contain all 52 cards but this list implementation should suffice. Your colleagues have again written some code for you, so you just have to fill in what's missing. Here's a code snippet:
+   The deck contains only four cards. In a more real implementation, it would contain all 52 cards but this list implementation should suffice. Your colleagues have again written some code for you, so you just have to fill in what's missing. Here's a code snippet:
 
-  ```fsharp
-  // add for loop
-    printfn "%s of %s" (cardDescription(card)) (suit(card))
-  ```
+   ```fsharp
+   // add for loop
+     printfn "%s of %s" (cardDescription(card)) (suit(card))
+   ```
 
-  The code above consist of a commented out line, you are supposed to add code, to implement a `for...in` loop.
+   The code above consist of a commented out line, you are supposed to add code, to implement a `for...in` loop.
 
 1. Add the following code, to the `main()` method to implement the `for...in` loop:
 
