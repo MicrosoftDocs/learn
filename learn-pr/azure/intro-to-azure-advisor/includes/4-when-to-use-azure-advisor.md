@@ -1,0 +1,9 @@
+Azure Advisor takes the ownership of optimizing your Azure deployments in three approaches:
+
+* **Provide highly personalized recommendations and best practices, which are both actionable and proactive:** Microsoft provides many best practices through the Cloud Adoption Framework and the Well-Architected Framework. Due to the complexity of scenarios and the mix of different components you can have, it may not be possible for a person to be aware of all details for each recommendation or best practice. Personalized guidance from Azure Advisor can make this challenge less complex.
+
+* **Help you find ways to reduce costs related to your Azure service subscriptions:** Azure has many services and many different pricing models across them. Cost control is one of the most important disciplines for cloud governance. To help you keep your budget on track, the cost recommendations will be fundamental to helping you become aware of areas where your costs could be optimized, and where you have opportunities to save money.
+
+* **Improve security, reliability, operational excellence, and performance of resources you use:** In a cloud environment, you have changes happening every day. You have automated processes handling the continuous integration of your environments, continuous delivery of your projects, and continuous deployment of your applications. So why not have something to help with continuous improvements? Here is where the recommendations from Azure Advisor can help. Regular review of the recommendations can go a long way to helping you improve on these key areas.
+
+The usage of Azure Advisor doesn't have costs, it's free. Carefully consider whether you should apply, or not apply, the recommendations. You need to evaluate what makes sense for your environment. Whether your implement the recommendations or not, using Advisor is something you should consider across your Azure subscriptions.

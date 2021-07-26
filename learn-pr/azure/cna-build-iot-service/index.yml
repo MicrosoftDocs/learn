@@ -2,22 +2,22 @@
 uid: learn.azure.cna-build-iot-service
 metadata:
   title: Build an IoT service for your cloud-native apps by using IoT Central
-  description: This module describes how to build an IoT service.
+  description: This module describes how to extend your cloud-native application to provide IoT functionality by integrating its components with Azure IoT services and using Cosmos DB to provide a persistent data store.
   ms.date: 04/29/2021
   author: mpolicht
   ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build an IoT service for your cloud-native apps by using IoT Central
-summary: This module describes how to extend your cloud-native application to provide IoT functionality by integrating its components with Microsoft Azure IoT services and using Cosmos DB to provide a persistent data store.
+summary: This module describes how to extend your cloud-native application to provide IoT functionality by integrating its components with Azure IoT services and using Cosmos DB to provide a persistent data store.
 abstract: |
   In this module, you'll:
-  - Describe the architecture and components of IoT services.
-  - Describe the characteristics and functionality of Azure Cosmos DB.
-  - Integrate Azure data stores with IoT pipelines.
-  - Implement Azure Cosmos DB for processing telemetry data.
-  - Analyze and manage telemetry data.
-  - Configure and manage IoT pipelines.
+  - Describe the architecture and components of IoT services
+  - Describe the characteristics and functionality of Azure Cosmos DB
+  - Integrate Azure data stores with IoT pipelines
+  - Implement Azure Cosmos DB for processing telemetry data
+  - Analyze and manage telemetry data
+  - Configure and manage IoT pipelines
 prerequisites: | 
   - Basic understanding of cloud computing
   - Basic familiarity with Azure
@@ -33,6 +33,9 @@ roles:
 - student
 products:
 - azure
+- azure-pipelines
+- azure-cosmos-db
+- azure-iot-central
 units:
 - learn.azure.cna-build-iot-service.1-introduction
 - learn.azure.cna-build-iot-service.2-define-iot-service-architecture
