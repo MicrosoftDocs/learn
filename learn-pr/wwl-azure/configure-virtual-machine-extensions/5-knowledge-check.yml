@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/23/2021
+  ms.date: 07/26/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -27,17 +27,17 @@ quiz:
     - content: "Virtual machine extensions."
       isCorrect: true
       explanation: "That's correct. Virtual machine extensions automate the tasks of creating, maintaining, and removing virtual machines"
-  - content: "Custom script extensions timeout after which of the following?"
+  - content: "Custom script extensions time out after which of the following?"
     choices:
     - content: "30 minutes"
       isCorrect: false
-      explanation: "That's incorrect. Custom script extensions will timeout, but not after only 30 minutes."
+      explanation: "That's incorrect. Custom script extensions will time out, but not after only 30 minutes."
     - content: "90 minutes"
       isCorrect: true
-      explanation: "That's correct. Custom script extensions will timeout and that should be considered when deciding on the scope of the script."
+      explanation: "That's correct. Custom script extensions will time out and that should be considered when deciding on the scope of the script."
     - content: "120 minutes"
       isCorrect: false
-      explanation: "That's incorrect. Custom script extensions will timeout, but sooner than 120 minutes."
+      explanation: "That's incorrect. Custom script extensions will time out, but sooner than 120 minutes."
   - content: "The infrastructure team needs to install IIS on the localhost. They do not want to use a Custom Script Extension. Which of the following could be used instead?"
     choices:
     - content: "Desired state configuration"
