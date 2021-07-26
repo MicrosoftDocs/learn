@@ -24,7 +24,7 @@ Cloud App Security integrates visibility with your cloud by:
 ### Cloud Discovery
 
 >[!div class="mx-imgBorder"]
->![Screenshot of the MCAS Cloud Discovery report in the Azure Portal.  This report is on the Dashboard tab showing how many apps have been discovered, how much data is being actively accessed by those apps, what apps were discovered, and information about common users.](../media/sc300-cloud-discovery-screenshot.png)
+>[![Screenshot of the MCAS Cloud Discovery report in the Azure Portal.  This report is on the Dashboard tab showing how many apps have been discovered, how much data is being actively accessed by those apps, what apps were discovered, and information about common users.](../media/sc300-cloud-discovery-screenshot.png)](../media/sc300-cloud-discovery-screenshot.png#lightbox)
 
 Cloud Discovery uses your traffic logs to dynamically discover and analyze the cloud apps your organization is using. To create a snapshot report of your organization's cloud use, manually upload log files from your firewalls or proxies for analysis. To set up continuous reports, use Cloud App Security log collectors to periodically forward your logs.
 
