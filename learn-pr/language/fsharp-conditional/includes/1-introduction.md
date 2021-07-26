@@ -6,6 +6,6 @@ In this module, you will learn to construct conditional logic to create multiple
 
 In this module you will:
 
-- Use `if ... else` to add conditional logic to your code.
+- Use `if...elif...else` to add conditional logic to your code.
 - Create repeat statements using various loop constructs.
 - Understand the difference between various loop constructs and when to use them.

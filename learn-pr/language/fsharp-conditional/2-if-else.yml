@@ -4,7 +4,7 @@ title: Use conditional logic to create multiple execution paths
 metadata:
   title: Use conditional logic to create multiple execution paths
   description: In this unit, you'll learn why it's a good idea to implement
-    conditional logic and how to apply it using `if...else`.
+    conditional logic and how to apply it using `if...elif...else`.
   author: softchris
   ms.author: chnoring
   ms.date: 07/23/2021
