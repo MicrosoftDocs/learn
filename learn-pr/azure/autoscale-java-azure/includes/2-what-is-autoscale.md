@@ -7,14 +7,17 @@ Autoscaling can be triggered according to a schedule, or by assessing whether th
 In the hotel reservation system, autoscaling is useful for handling short-term spikes in the number of booking requests. You can also use scheduled autoscaling to provide additional resources at peak times.
 
 ## What is autoscaling?
+
 Autoscaling is a cloud system or process that adjusts avalaible resources based on the current demand. Autoscaling performs scaling in and out, as opposed to scaling up and down.
 
 ## Azure App Service Autoscaling
+
 Autoscaling in Azure App Service monitors the resource metrics of a web app as it runs. It detects situations where additional resources are required to handle an increasing workload, and ensures those resources are available before the system becomes overloaded.
 
 Autoscaling responds to changes in the environment by adding or removing web servers and balancing the load between them. Autoscaling doesn't have any effect on the CPU power, memory, or storage capacity of the web servers powering the app, it only changes the number of web servers.
 
 ## Autoscaling rules
+
 Autoscaling makes its decisions based on rules that you define. A rule specifies the threshold for a metric, and triggers an autoscale event when this threshold is crossed. Autoscaling can also deallocate resources when the workload has diminished.
 
 Define your autoscaling rules carefully. For example, a Denial of Service attack will likely result in a large-scale influx of incoming traffic. Trying to handle a surge in requests caused by a DoS attack would be fruitless and expensive. These requests aren't genuine, and should be discarded rather than processed. A better solution is to implement detection and filtering of requests that occur during such an attack before they reach your service.
