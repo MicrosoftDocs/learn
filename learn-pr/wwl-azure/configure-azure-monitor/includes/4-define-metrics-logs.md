@@ -16,4 +16,4 @@ Log data collected by Azure Monitor is stored in Log Analytics which includes a 
 
 Azure Monitor uses a version of the [Data Explorer](/azure/kusto/query/) query language that is suitable for simple log queries but also includes advanced functionality such as aggregations, joins, and smart analytics. You can quickly learn the query language using multiple lessons. Particular guidance is provided to users who are already familiar with SQL and Splunk.
 
-:::image type="content" source="../media/AZ104_Log_Data-f47db4e9.png" alt-text="The logs database is shown providing information to the log analytics page.":::
+:::image type="content" source="../media/log-data-32e50eae.png" alt-text="The logs database is shown providing information to the log analytics page.":::
