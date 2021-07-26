@@ -6,7 +6,7 @@ The Rust playground is a website that acts an IDE for Rust development. You can 
 ## Access the Rust playground
 
 The Rust playground is available on the internet at `https://play.rust-lang.org/`. Anyone can access the playground.
-- Connect to the playground now: https://play.rust-lang.org/.
+- Connect to the playground: https://play.rust-lang.org/.
 
 ## Write code
 
@@ -14,7 +14,7 @@ The playground is like an IDE for the Rust language that's available on the inte
 
 :::image type="content" source="../media/rust-playground-main.png" alt-text="Screenshot of the Rust playground that shows a basic program.":::
 
-- Copy and paste the following code into the playground window:
+- Enter the following code into the playground editor:
 
    ```rust
    fn main(){println!(Welcome to Rust!);}
@@ -42,24 +42,27 @@ Our sample program uses the `println!` macro function to print some text. This f
 
 Most developers appreciate the ability to run *lint* tests on their code to find errors and areas for improvement. The **Clippy** collection of lints is available in the playground. You can use the Clippy collection to help find mistakes in your code and see suggestions for how to improve your code.
 
-1. Select **Tools** > **Clippy** to check for mistakes in the sample code. The tool runs the checks and displays the results in a pane under the editor.
-1. To fix the sample code, we need to add quote marks around the text, "Welcome to Rust!" In the editor, add the quote marks.
+1. Select **Tools** > **Clippy** to check for mistakes in the sample code. The tool runs the checks and displays the results under the editor.
 
    :::image type="content" source="../media/rust-playground-clippy.png" alt-text="Screenshot of the fixed code in the Rust playground.":::
+
+1. To fix the sample code, we need to add quote marks around the text, "Welcome to Rust!" In the editor, add the quote marks.
+
+   :::image type="content" source="../media/rust-playground-add-quotes.png" alt-text="Screenshot of the fixed code in the Rust playground.":::
 
 
 ## Compile your code
 
-In the playground, you can choose to compile your Rust code for *Debugging* purposes or for full *Release*. The faster option is to compile the code for Debugging. If you choose to compile your code for full Release, the process can take longer because the compiler applies more optimizing algorithms on the code.
+In the playground, you can choose to compile your Rust code for *debugging* purposes or for full *release*. The faster option is to compile the code for debugging. If you choose to compile your code for full release, the process can take longer because the compiler applies more optimizing algorithms on the code.
 
 :::image type="content" source="../media/rust-playground-debug.png" alt-text="Screenshot of the Debug menu in the Rust playground.":::
 
 
 ## Build and run your code
 
-Now let's compile and execute the sample program in the playground.
+Now we'll compile and execute the sample program in the playground.
 
-1. To build and run your code in the playground, select **Run** at the top of the UI.
+1. To choose how to build and run your code in the playground, open the **Run** dropdown menu at the top of the UI.
 
    :::image type="content" source="../media/rust-playground-run.png" alt-text="Screenshot of the Run menu in the Rust playground.":::
 
@@ -68,7 +71,7 @@ Now let's compile and execute the sample program in the playground.
    - **Build**: Build your code, but don't run the code. The **Build** option is the same as using the `cargo build` command.
    - **Test**: Build your code, and run all the tests against the code. The **Test** option is the same as using the `cargo test` command.
 
-1. Select **Run** to build and execute the sample program. Any output from the program is displayed in the pane beneath the editor:
+1. Select **Run** to build and execute the sample program. Any output from the program is displayed under the editor:
 
    :::image type="content" source="../media/rust-playground-print.png" alt-text="Screenshot of the sample program output in the Rust playground.":::
 
