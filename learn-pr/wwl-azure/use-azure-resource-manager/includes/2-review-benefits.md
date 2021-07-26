@@ -1,21 +1,21 @@
 The infrastructure for your application is typically made up of many components – maybe a virtual machine, storage account, and virtual network, or a web app, database, database server, and third-party services. These components are not separate entities, instead they are related and interdependent parts of a single entity. You want to deploy, manage, and monitor them as a group.
 
-Azure Resource Manager enables you to work with the resources in your solution as a group. You can deploy, update, or delete all the resources for your solution in a single, coordinated operation. You use a template for deployment and that template can work for different environments such as testing, staging, and production. Resource Manager provides security, auditing, and tagging features to help you manage your resources after deployment.
+Azure Resource Manager enables you to work with the resources in your solution as a group. You can deploy, update, or delete all the resources for your solution in a single, coordinated operation. You use a template for deployment and that template can work for different environments such as testing, staging, and production. Azure Resource Manager provides security, auditing, and tagging features to help you manage your resources after deployment.
 
 ## Consistent management layer
 
-Resource Manager provides a consistent management layer to perform tasks through Azure PowerShell, Azure CLI, Azure portal, REST API, and client SDKs. All capabilities that are available in the Azure portal are also available through Azure PowerShell, Azure CLI, the Azure REST APIs, and client SDKs. Functionality initially released through APIs will be represented in the portal within 180 days of initial release.
+Azure Resource Manager provides a consistent management layer to perform tasks through Azure PowerShell, Azure CLI, Azure portal, REST API, and client SDKs. All capabilities that are available in the Azure portal are also available through Azure PowerShell, Azure CLI, the Azure REST APIs, and client SDKs. Functionality initially released through APIs will be represented in the portal within 180 days of initial release.
 
 Choose the tools and APIs that work best for you - they have the same capability and provide consistent results.
 
-The following image shows how all the tools interact with the same Azure Resource Manager API. The API passes requests to the Resource Manager service, which authenticates and authorizes the requests. Resource Manager then routes the requests to the appropriate resource providers.
+The following image shows how all the tools interact with the same Azure Resource Manager API. The API passes requests to the Azure Resource Manager service, which authenticates and authorizes the requests. Azure Resource Manager then routes the requests to the appropriate resource providers.
 
 :::image type="content" source="../media/resource-manager-016a1bac.png" alt-text="Resource Manager request model.":::
 
 
 ## Benefits
 
-Resource Manager provides several benefits:
+Azure Resource Manager provides several benefits:
 
  -  You can deploy, manage, and monitor all the resources for your solution as a group, rather than handling these resources individually.
  -  You can repeatedly deploy your solution throughout the development lifecycle and have confidence your resources are deployed in a consistent state.
@@ -27,9 +27,9 @@ Resource Manager provides several benefits:
 
 ## Guidance
 
-The following suggestions help you take full advantage of Resource Manager when working with your solutions.
+The following suggestions help you take full advantage of Azure Resource Manager when working with your solutions.
 
- -  Define and deploy your infrastructure through the declarative syntax in Resource Manager templates, rather than through imperative commands.
+ -  Define and deploy your infrastructure through the declarative syntax in Azure Resource Manager templates, rather than through imperative commands.
  -  Define all deployment and configuration steps in the template. You should have no manual steps for setting up your solution.
  -  Run imperative commands to manage your resources, such as to start or stop an app or machine.
  -  Arrange resources with the same lifecycle in a resource group. Use tags for all other organizing of resources.

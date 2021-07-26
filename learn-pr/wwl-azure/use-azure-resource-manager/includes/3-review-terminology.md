@@ -1,4 +1,4 @@
-If you're new to Azure Resource Manager (ARM), there are some terms you might not be familiar with.
+If you're new to Azure Resource Manager, there are some terms you might not be familiar with.
 
  -  **resource** \- A manageable item that is available through Azure. Some common resources are a virtual machine, storage account, web app, database, and virtual network, but there are many more.
  -  **resource group** \- A container that holds related resources for an Azure solution. The resource group can include all the resources for the solution, or only those resources that you want to manage as a group. You decide how you want to allocate resources to resource groups based on what makes the most sense for your organization.
