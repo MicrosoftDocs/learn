@@ -8714,6 +8714,16 @@
       "source_path": "learn-pr/wwl-data-ai/extract-insights-from-videos-with-video-indexer-service/7-view-edit-insights.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/analyze-video/",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/4-bot-development.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/responsible-bots/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/responsible-bots/5-add-language-understanding.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/responsible-bots/",
+      "redirect_document_id": false
+    }        
   ]
 }
