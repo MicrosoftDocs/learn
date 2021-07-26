@@ -1,4 +1,4 @@
-[Azure Quickstart templates](https://azure.microsoft.com/resources/templates/) are Resource Manager templates provided by the Azure community.
+[Azure Quickstart templates](https://azure.microsoft.com/resources/templates/) are Azure Resource Manager templates provided by the Azure community.
 
 :::image type="content" source="../media/quickstart-templates-2d65475a.png" alt-text="Screenshot of the QuickStart templates page.":::
 

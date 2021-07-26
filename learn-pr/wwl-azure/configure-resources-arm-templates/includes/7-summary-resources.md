@@ -1,4 +1,4 @@
-To implement infrastructure as code for your Azure solutions, use Azure Resource Manager templates (ARM templates). The template is a JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for your project. The template uses declarative syntax, which lets you state what you intend to deploy without having to write the sequence of programming commands to create it. In the template, you specify the resources to deploy and the properties for those resources.
+To implement infrastructure as code for your Azure solutions, use Azure Resource Manager templates. The template is a JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for your project. The template uses declarative syntax, which lets you state what you intend to deploy without having to write the sequence of programming commands to create it. In the template, you specify the resources to deploy and the properties for those resources.
 
 You should now be able to:
 
@@ -14,6 +14,4 @@ You can learn more by reviewing the following.
  -  [ARM template documentation](/azure/azure-resource-manager/templates/)
  -  [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/)
  -  [Learn - Deploy Azure infrastructure by using JSON ARM templates](/learn/modules/build-azure-vm-templates/)
- -  [Learn - Deploy Azure infrastructure by using ARM templates](/learn/modules/create-azure-resource-manager-template-vs-code/)
  -  [Learn - Deploy to multiple Azure environments by using ARM template features](/learn/modules/extend-resource-manager-template-deployment-scripts/)
- -  [Learn - Extend ARM templates by using deployment scripts](/learn/modules/extend-resource-manager-template-deployment-scripts/)
