@@ -2,7 +2,7 @@ Visual Studio App Center supports Azure AD Conditional Access, an advanced featu
 
 ## Setting up Conditional Access
 
-This is an abbreviated guide to setting up Conditional Access. Full documentation is available at [https://docs.microsoft.com/azure/active-directory/conditional-access/overview](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+This is an abbreviated guide to setting up Conditional Access. Full documentation is available at [https://docs.microsoft.com/azure/active-directory/conditional-access/overview](/azure/active-directory/conditional-access/overview).
 
 In the Azure portal, open your Active Directory tenant, then open the **Security** settings, and click on **Conditional Access**.
 
@@ -158,11 +158,8 @@ With the location condition in Conditional Access, you can control access to you
 Organizations that have deployed Microsoft Intune can use the information returned from their devices to identify devices that meet compliance requirements, such as:
 
 - Requiring a PIN to unlock.
-
 - Requiring device encryption.
-
 - Requiring a minimum or maximum operating system version.
-
 - Requiring a device is not jailbroken or rooted.
 
 This policy compliance information is forwarded to Azure AD where Conditional Access can make decisions to grant or block access to resources.
@@ -224,84 +221,17 @@ Policies like these can have unintended side effects. Proper testing and validat
 Conditional Access policies are powerful tools. We recommend excluding the following accounts from your policy:
 
 - **Emergency access** or **break-glass** accounts to prevent tenant-wide account lockout. In the unlikely scenario that all administrators are locked out of your tenant, your emergency-access administrative account can be used to log in to the tenant and take steps to recover access.
-
 - **Service accounts** and **service principals**, such as the Azure AD Connect Sync Account. Service accounts are non-interactive accounts that are not tied to any particular user. They are normally used by back-end services allowing programmatic access to applications, but they are also used to sign in to systems for administrative purposes. Service accounts like these should be excluded since MFA can't be completed programmatically. Calls made by service principals are not blocked by Conditional Access.
-
   - If your organization has these accounts in use in scripts or code, consider replacing them with managed identities. As a temporary workaround, you can exclude these specific accounts from the baseline policy.
 
-### Create a Conditional Access policy
+## Conditional Access Terms of Use (TOU)
 
-The following steps will help create Conditional Access policies to block access to all apps except for Office 365 if users are not on a trusted network. These policies are put in to Report-only mode to start so administrators can determine the impact they will have on existing users. When administrators are comfortable that the policies apply as they intend, they can switch them to **On**.
+> [!div class="mx-imgBorder"]
+> ![Screenshot of the Azure AD conditional access setup page that shows adding Terms-of-Use rules for being able to access resources.](../media/sc300-terms-of-use-conditional-access.png)
 
-The first policy blocks access to all apps except for Microsoft 365 applications if not on a trusted location.
+The linking of consent (accept terms before access) and conditional access is getting more and more traction. Organizations get the ability to enforce a user to consent to the terms of use.  Additionally, organizations can expire the consent given or change the terms of use, and request the user attest again.
 
-1. Sign in to the **Azure portal** as a Global Administrator, Security Administrator, or Conditional Access Administrator.
-
-2. Browse to **Azure Active Directory** > **Security** > **Conditional Access**.
-
-3. Select **New policy**.
-
-4. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
-
-5. Under **Assignments**, select **Users and groups**.
-
-   1. Under **Include**, select **All users**.
-
-   2. Under **Exclude**, select **Users and groups** and choose your organization's emergency access or break-glass accounts.
-
-   3. Select **Done**.
-
-6. Under **Cloud apps or actions**, select the following options:
-
-   1. Under **Include**, select **All cloud apps**.
-
-   2. Under **Exclude**, select **Office 365**, select **Select**, then select **Done**.
-
-7. Under **Conditions**:
-
-   1. Under **Conditions** > **Location**.
-
-      1. Set **Configure** to **Yes.**
-
-      2. Under **Include**, select **Any location**.
-
-      3. Under **Exclude**, select **All trusted locations**.
-
-      4. Select **Done**.
-
-   2. Under **Client apps (Preview)**, set **Configure** to **Yes**, and select **Done**, then **Done**.
-
-8. Under **Access controls** > **Grant**, select **Block access**, then select **Select**.
-
-9. Confirm your settings and set **Enable policy** to **Report-only**.
-
-10. Select **Create** to create to enable your policy.
-
-A second policy is created below to require multifactor authentication or a compliant device for users of Microsoft 365.
-
-1. Select **New policy**.
-
-2. Give your policy a name. We recommend that organizations create a meaningful standard for the names of their policies.
-
-3. Under **Assignments**, select **Users and groups**.
-
-   1. Under **Include**, select **All users**.
-
-   2. Under **Exclude**, select **Users and groups** and choose your organization's emergency access or break-glass accounts.
-
-   3. Select **Done**.
-
-4. Under **Cloud apps or actions** > **Include**, select **Select apps**, choose **Office 365**, and select **Select**, then **Done**.
-
-5. Under **Access controls** > **Grant**, select **Grant access**.
-
-   1. Select **Require multi-factor authentication** and **Require device to be marked as compliant** select **Select**.
-
-   2. Ensure **Require one of the selected controls** is selected.
-
-   3. Select **Select**.
-
-6. Confirm your settings and set **Enable policy** to **Report-only**.
-
-7. Select **Create** to create to enable your policy.
+Before accessing certain cloud apps in your environment, you might want to get consent from users in form of accepting your terms of use (ToU). Azure Active Directory (Azure AD) Conditional Access provides you with:
+- A simple method to configure ToU
+- The option to require accepting your terms of use through a Conditional Access policy
 

@@ -25,7 +25,7 @@ To turn on Auditing:
 
 1. Ensure that **Enable Azure SQL Auditing** is *enabled*.
 
-    ![Screenshot the SQL Server setting pane](../media/5-auditing.png)
+    ![Screenshot the SQL Server setting pane.](../media/5-auditing.png)
 
 ### Enable a threat detection service - Level 1
 
@@ -49,7 +49,7 @@ Azure SQL Auditing provides a set of advanced SQL security capabilities, includi
 
 Azure SQL Auditing is part of the advanced data security (ADS) offering, which is part of the defense in depth SQL security strategy. Azure SQL Auditing can be accessed and managed via the portal by selecting **Security** > **Auditing** in the left menu pane.
 
-   ![Screenshot the SQL Server setting pane](../media/5-auditing.png)
+   ![Screenshot the SQL Server setting pane.](../media/5-auditing.png)
 
 ### Enable the option to send security alerts - Level 1
 
@@ -111,7 +111,7 @@ Audit logs should be preserved for security, discovery, and to meet legal and re
 
 ### Configure threat detection retention for more than 90 days - Level 1
 
-A retention of zero days means logs are deleted the same day. Otherwise, the value can be any number of days between 1 and 2147483647. You should consider keeping the logs for at least 90 days to be able to go backwards to spot thread patterns.
+A retention of zero days means logs are deleted the same day. Otherwise, the value can be any number of days between 1 and 2147483647. You should consider keeping the logs for at least 90 days to be able to go backwards to spot threat patterns.
 
 1. Sign in to the Azure portal.
 

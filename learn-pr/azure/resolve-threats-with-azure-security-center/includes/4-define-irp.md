@@ -40,7 +40,7 @@ As mentioned earlier, the NIST defines a computer security incident guide that c
 
 The following figure shows these four phases defined by the NIST. Note that the descriptions provided here are simple summaries - the overall document linked in the summary has more thorough descriptions of each phase and how you can plan a strategy.
 
-![NIST response phases from the Security Handling Guide](../media/4-nist-response-phases.png)
+![NIST response phases from the Security Handling Guide.](../media/4-nist-response-phases.png)
 
 - **Preparation.** This phase includes defining the incident response team, documenting the response plan, and also scoping out tools and processes to help prevent incidents from occurring.
 

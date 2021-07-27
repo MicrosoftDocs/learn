@@ -131,7 +131,7 @@ while roll != 5:
   name = input('Enter a name, or \'q\' to quit:  ' )
 
   if name.strip() == '':
-    continue
+      continue
 
   if name.strip() == 'q':
       break

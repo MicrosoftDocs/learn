@@ -30,7 +30,7 @@ In this module, we're using the consumption tier for Azure API Management becaus
     | Cache type | Standard C1 |
     | | |
 
-    ![Creating a Redis cache](../media/5-create-redis-cache.png)
+    ![Creating a Redis cache.](../media/5-create-redis-cache.png)
 
 1. Select **Review + create** > **Create**.
 
@@ -111,7 +111,7 @@ Now, if the Redis cache deployment has been complete, you can configure the API 
 
 1. To the right of the **Primary connection string** textbox, select the *Copy to clipboard* icon.
 
-    ![Obtaining the Redis cache connection string](../media/5-obtain-redis-cache-connection-string.png)
+    ![Obtaining the Redis cache connection string.](../media/5-obtain-redis-cache-connection-string.png)
 
 1. In the left menu pane, under  **All resources**, select the API management service you previously created. Your **API Management service** pane appears.
 
@@ -123,7 +123,7 @@ Now, if the Redis cache deployment has been complete, you can configure the API 
 
 1. To paste in the connection string, put the cursor in the **Connection string** textbox, press <kbd>Ctrl-v</kbd>, and then select **Save** from the top menu bar.
 
-    ![Configuring the external cache](../media/5-configure-external-cache.png)
+    ![Configuring the external cache.](../media/5-configure-external-cache.png)
 
     The external cache you just created appears.
 
@@ -139,7 +139,7 @@ Before you can apply a policy, you must add the API to the API Management instan
 
 1. In the **OpenAPI specification** textbox, paste the Swagger JSON URL that you previously copied.
 
-    ![Adding an API](../media/5-complete-api-add.png)
+    ![Adding an API.](../media/5-complete-api-add.png)
 
 1. Select **Create**. The **APIs** pane for your API Management service reappears with Azure adding the API to the management instance.
 
@@ -161,7 +161,7 @@ The API is now added to the management instance. Let's test the API before any p
 
 1. Select **Send**.
 
-    ![Test the API in API Management](../media/5-test-api-in-apim.png)
+    ![Test the API in API Management.](../media/5-test-api-in-apim.png)
 
 1. Examine the results. Note the precise time that is included in the *HTTP response*.
 
@@ -175,7 +175,7 @@ Now we can enable the cache by adding policies to the XML.
 
 1. In the **Inbound processing** section, select **Add policy**. The **Add inbound policy** pane appears.
 
-    ![Adding a policy](../media/5-add-policy.png)
+    ![Adding a policy.](../media/5-add-policy.png)
 
 1. Select **Cache responses**. The **Inbound processing** pane reappears.
 
@@ -185,7 +185,7 @@ Now we can enable the cache by adding policies to the XML.
 
 1. Notice that a **&lt;cache-lookup&gt;** tag has been added to the **&lt;inbound&gt;** section, and a **&lt;cache-store&gt;** tag has been added to the **&lt;outbound&gt;** section.
 
-    ![Policy editor with caching policies](../media/5-policy-editor-with-caching-policies.png)
+    ![Policy editor with caching policies.](../media/5-policy-editor-with-caching-policies.png)
 
 1. Select **Save**.
 
@@ -205,7 +205,7 @@ We'll run the same test on the API in API Management and observe the results of 
     | Width | 8 |
     | | |
 
-    ![Test the API in API Management](../media/5-test-api-in-apim.png)
+    ![Test the API in API Management.](../media/5-test-api-in-apim.png)
 
 1. Select **Send**.
 

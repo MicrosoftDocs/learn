@@ -12,7 +12,7 @@ In this unit you will learn:
 
 2. When asked about the versions of Windows that the app should support, change the minimum version from the default to the one shown in the image below. There are some newer features of Windows that we would like to include.
 
-![Setting the Minimum version](../media/windows-minimum.png)
+![Setting the Minimum version.](../media/windows-minimum.png)
 
 3. Navigate to [this GitHub repo](https://github.com/MicrosoftDocs/mslearn-write-inclusive-Windows-apps) and open up the `MainPage.xaml` file. Select all the contents of the file and copy and paste it over the entire contents of the MainPage.xaml file in your project.
 
@@ -20,7 +20,7 @@ In this unit you will learn:
 
 5. Select **Start without debugging** from the **Debug** menu of Visual Studio. You should see something like the following image. If not, double-check that everything was copied correctly.
 
-![Showing the default light calculator](../media/non-light.png)
+![Showing the default light calculator.](../media/non-light.png)
 
 ### Test the features of the calculator
 

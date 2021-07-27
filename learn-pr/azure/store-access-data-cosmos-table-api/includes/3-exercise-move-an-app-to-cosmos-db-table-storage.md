@@ -67,7 +67,7 @@ Next, you will configure the lenses app with the connection string of the storag
 
 1. Select **Show keys**, and to the right of the **key1 Connection string** textbox, select **Copy**. Save this in a note pad for later use.
 
-   ![Copy the storage account connection string](../media/3-copy-storage-account-connection.png)
+   ![Copy the storage account connection string.](../media/3-copy-storage-account-connection.png)
 
 1. In the Cloud Shell on the right, run the following command to change to the folder for the lenses app.
 
@@ -138,7 +138,7 @@ We can use the .NET Core CLI tool to compile and run the lenses app. Here, let's
 
 1. Select **Storage Explorer**, expand **Tables**, and then select **lensestable**. The Storage Explorer displays the list of camera lenses, including the lens you added.
 
-   ![Lenses in the Storage Account table](../media/3-lenses-in-storage-table.png)
+   ![Lenses in the Storage Account table.](../media/3-lenses-in-storage-table.png)
 
 ::: zone-end
 
@@ -154,7 +154,7 @@ Next, you will configure the lenses app with the connection string of the storag
 
 1. To the right of the **key1 Connection string** textbox, select the **Copy** button.
 
-   ![Copy the storage account connection string](../media/3-copy-storage-account-connection.png)
+   ![Copy the storage account connection string.](../media/3-copy-storage-account-connection.png)
 
 1. In the Cloud Shell on the right, run the following command to change to the folder for the lenses app.
 
@@ -218,7 +218,7 @@ Let's use the app to populate a table with lenses and then add our own lens entr
 
 1. Select **Storage Explorer**, expand **Tables**, and then select **lensestable**. The Storage Explorer displays the list of camera lenses, including the lens you added.
 
-   ![Lenses in the Storage Account table](../media/3-lenses-in-storage-table.png)
+   ![Lenses in the Storage Account table.](../media/3-lenses-in-storage-table.png)
 
 ::: zone-end
 
@@ -263,7 +263,7 @@ To change the lenses app to use the new Azure Cosmos DB database, you must chang
 
 1. To the right of the **PRIMARY CONNECTION STRING** textbox, select **Copy**.
 
-    ![Copy the Azure Cosmos DB connection string](../media/3-copy-cosmos-connection.png)
+    ![Copy the Azure Cosmos DB connection string.](../media/3-copy-cosmos-connection.png)
 
 1. In the Cloud Shell on the right, to start the code editor, run this command.
 
@@ -331,7 +331,7 @@ Finally, let's populate the table in Azure Cosmos DB and view the results.
 
 1. Select **Data Explorer**. Under **AZURE TABLE API**, expand **TablesDB**, then **lensestable**, and then select **Entities**. The Data Explorer displays your list of camera lenses.
 
-   ![Lenses data in Azure Cosmos DB](../media/3-view-cosmos-db-data.png)
+   ![Lenses data in Azure Cosmos DB.](../media/3-view-cosmos-db-data.png)
 
 ::: zone-end
 
@@ -347,7 +347,7 @@ To change the lenses app to use the new Azure Cosmos DB database, you must chang
 
 1. To the right of the **PRIMARY CONNECTION STRING** textbox, select the **Copy** button.
 
-    ![Copy the Azure Cosmos DB connection string](../media/3-copy-cosmos-connection.png)
+    ![Copy the Azure Cosmos DB connection string.](../media/3-copy-cosmos-connection.png)
 
 1. In the Cloud Shell on the right, to start the code editor, type this command.
 
@@ -411,6 +411,6 @@ Finally, let's populate the table in Azure Cosmos DB and view the results.
 
 1. Select **Data Explorer**. Under **AZURE TABLE API**, expand **TablesDB**, then **lensestable**, and then select **Entities**. The Data Explorer displays your list of camera lenses.
 
-   ![Lenses data in Azure Cosmos DB](../media/3-view-cosmos-db-data.png)
+   ![Lenses data in Azure Cosmos DB.](../media/3-view-cosmos-db-data.png)
 
 ::: zone-end

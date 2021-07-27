@@ -24,7 +24,7 @@ For guidance to help you complete this step, reference our documentation on [off
 
 ### Adding a preview audience
 
-When you publish your offer, you’ll be able to identify a preview audience that gets access to review your VM offer it's published. For more information, review our [documentation on adding a preview audience for your VM offer](/azure/marketplace/azure-vm-create-preview).
+When you publish your offer, you’ll be able to identify a preview audience that gets access to review your VM offer before it's available in Azure Marketplace. For more information, review our [documentation on adding a preview audience for your VM offer](/azure/marketplace/azure-vm-create-preview).
 
 ### Creating VM offer plans
 

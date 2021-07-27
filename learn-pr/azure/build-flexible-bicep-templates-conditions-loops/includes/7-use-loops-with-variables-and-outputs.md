@@ -6,6 +6,8 @@ Because you'll also be deploying multiple storage accounts in your Azure environ
 
 In this unit, you learn how to use loops with variables and outputs.
 
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+
 ## Variable loops
 
 By using variable loops, you can create an array, which you can then use through your Bicep file. As you do with other loops, you use the `for` keyword to create a variable loop:
@@ -18,7 +20,7 @@ The preceding example creates an array that contains the values `item1`, `item2`
 
 You would ordinarily use variable loops to create more complex objects that you could then use within a resource declaration. Here's how to use variable loops to create a `subnets` property:
 
-::: code language="plaintext" source="code/7-loop-variable.bicep" highlight="13-18" :::
+::: code language="bicep" source="code/7-loop-variable.bicep" highlight="13-18" :::
 
 This example illustrates an effective use for variable loops: turning a parameter that has simple, easy-to-understand values into a more complex object that corresponds to what the Azure resource needs to be defined. You use variable loops to enable parameters to specify only the key information that will change for each item in the list. You can then use Bicep expressions or default values to set other properties.
 
@@ -28,7 +30,7 @@ You use Bicep outputs to provide information from your deployments back to the u
 
 As you do with other loops, you use the `for` keyword to specify an output loop:
 
-::: code language="plaintext" source="code/7-loop-output-simple.bicep" highlight="9" :::
+::: code language="bicep" source="code/7-loop-output-simple.bicep" highlight="9" :::
 
 You'll ordinarily use output loops in conjunction with other loops within your template. For example, let's look at a Bicep file that deploys a set of storage accounts to Azure regions that are specified by the `locations` parameter:
 

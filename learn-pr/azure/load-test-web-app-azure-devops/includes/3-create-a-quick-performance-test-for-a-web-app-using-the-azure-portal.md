@@ -62,7 +62,7 @@ In this step, you'll finalize the deployment of your web app by editing a config
 
 1. In the Azure App Service Editor, in the file list, expand **includes**, select **config.php**, and then, in line 10, paste the copied URL string to replace `app-url-here`. (Don't remove the quotation marks.)
 
-   ![Configure web app URL](../media/3-configure-webapp.png)
+   ![Configure web app URL.](../media/3-configure-webapp.png)
 
 1. Open a new browser tab, paste the URL string you copied earlier into the address box, and press <kbd>Enter</kbd>.
 
@@ -109,7 +109,7 @@ In this step, you'll create and run a performance test for your web app. You'll 
 
 1. In the App Service Editor, in the file list, expand **includes**, select **config.php**, and then, in line 11, change `false` to `true`:
 
-   ![Configure web app to display graphics](../media/3-configure-webapp-graphics.png)
+   ![Configure web app to display graphics.](../media/3-configure-webapp-graphics.png)
 
 1. Switch to the web app's browser tab and refresh the page. You should now see a box at top of the page that varies by page. You'll also see a box containing text and circles at the bottom of the page that loads a new set of random colors on each page load:
 

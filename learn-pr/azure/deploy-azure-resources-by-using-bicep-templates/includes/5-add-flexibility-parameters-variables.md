@@ -4,6 +4,8 @@ Your toy company will launch new products regularly, and you need to use the Bic
 
 In this unit, you'll learn about _parameters_ and _variables_, which are two Bicep features that can make your templates flexible and reusable. You'll also be introduced to _expressions_.
 
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+
 ## Parameters and variables
 
 A _parameter_ lets you bring values in from outside the template file. For example, if someone is manually deploying the template by using the Azure CLI or PowerShell, they'll be asked to provide values for each parameter. They can also create a _parameter file_, which lists all of the parameters and values they want to use for the deployment. If the template is deployed from an automated process like a deployment pipeline, the pipeline can provide the parameter values.
@@ -55,7 +57,7 @@ param appServiceAppName string = 'toy-product-launch-1'
 
 After you've declared a parameter, you can refer to it throughout the rest of the template. Let's see how you can use your new parameter within the resource definition:
 
-:::code language="plaintext" source="code/5-parameter-value.bicep" highlight="2":::
+:::code language="bicep" source="code/5-parameter-value.bicep" highlight="2":::
 
 Notice that the template now uses the parameter value to set the resource name for the app resource, instead of hard-coding it.
 
@@ -98,7 +100,7 @@ If someone is deploying this template, they might choose to override the default
 
 You can now use the resource location parameter inside the template, like this:
 
-:::code language="plaintext" source="code/5-variable-value.bicep" highlight="3":::
+:::code language="bicep" source="code/5-variable-value.bicep" highlight="3":::
 
 ### Resource names
 

@@ -6,6 +6,6 @@ Creating comprehensive and powerful Bicep templates requires you to understand c
 
 ## Learn more
 
-- [Child resources](/azure/azure-resource-manager/templates/child-resource-name-type)
-- [Extension resources](/azure/azure-resource-manager/templates/scope-extension-resources)
+- [Child resources](/azure/azure-resource-manager/bicep/child-resource-name-type)
+- [Extension resources](/azure/azure-resource-manager/bicep/scope-extension-resources)
 - [Extension resource types](/azure/azure-resource-manager/management/extension-resource-types)

@@ -6,7 +6,7 @@ metadata:
   brand: azure
   ms.date: 03/11/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create data-driven websites by using Django

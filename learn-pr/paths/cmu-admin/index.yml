@@ -1,0 +1,44 @@
+### YamlMime:LearningPath
+uid: learn.cmu-cloud-admin.cloud-admin
+metadata:
+  title: Cloud administration basics
+  description: You will learn various important skills you need as an admin like, provisioning and securing resources but also topics like elasticity and orchestration and more.
+  brand: azure
+  ms.date: 07/01/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: Cloud administration basics
+summary: |
+
+  In this learning path, you will:
+    - Provision resources.
+    - Secure cloud resources.
+    - Use virtualization.
+    - Orchestrate your deployments and use a concept like infrastructure as code.
+    - Monitor your resources.
+
+
+  In Partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: none
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- administrator
+- student
+products:
+- azure
+modules:
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview
+- learn.cmu-cloud-admin.cloud-admin-provision-manage
+- learn.cmu-cloud-admin.secure-cloud-resources
+- learn.cmu-cloud-admin.cmu-virtualization
+- learn.cmu-cloud-admin.cmu-cloud-elasticity
+- learn.cmu-cloud-admin.cmu-orchestration
+- learn.cmu-cloud-admin.cmu-monitor-cloud-resources
+
+trophy:
+  uid: learn.cmu-cloud-admin.cloud-admin.trophy

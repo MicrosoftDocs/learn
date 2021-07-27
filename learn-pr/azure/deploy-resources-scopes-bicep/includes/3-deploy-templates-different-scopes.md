@@ -6,7 +6,7 @@ Bicep needs to know the scope at which a file will be deployed. This information
 
 Use the `targetScope` keyword to tell Bicep that the resources in the file are for a specific scope. Here's an example of a Bicep file that will be deployed at the management group scope:
 
-:::code language="plaintext" source="code/3-mg-scope.bicep" highlight="1" :::
+:::code language="bicep" source="code/3-mg-scope.bicep" highlight="1" :::
 
 Notice that you're telling Bicep that the resources will be deployed at the scope of a management group, but you're not specifying *which* management group. When you deploy the template, you tell Bicep exactly which management group you want to deploy the resources to. The Azure CLI and Azure PowerShell cmdlets provide arguments to specify this information.
 
@@ -16,7 +16,7 @@ You can set the `targetScope` to `resourceGroup`, `subscription`, `managementGro
 
 Now that you understand how to create deployments at various scopes, try applying this understanding to creating a resource group, which is a subscription-scoped resource:
 
-:::code language="plaintext" source="code/3-create-rg.bicep" highlight="1" :::
+:::code language="bicep" source="code/3-create-rg.bicep" highlight="1" :::
 
 In this example, notice that the Bicep file has a `targetScope` of `subscription`, which means that Bicep will consider all the resources in the file to be subscription-scoped by default.
 

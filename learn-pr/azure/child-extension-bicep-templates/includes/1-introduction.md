@@ -26,13 +26,15 @@ By the end of this module, you'll be able to create Bicep templates that include
 
 ## Prerequisites
 
-- You should have familiarity with creating and deploying Bicep templates.
-- You should have some familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+You should be familiar with:
+
+- Creating and deploying basic Bicep templates.
+- Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
 To follow along with the exercises in the module, you'll need:
 
 - [Visual Studio Code](https://code.visualstudio.com), installed locally.
-- The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed.
+- The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed.
 - Either:
   - The latest [Azure CLI](/cli/azure/install-azure-cli) tools, installed locally.
   - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps), installed locally.

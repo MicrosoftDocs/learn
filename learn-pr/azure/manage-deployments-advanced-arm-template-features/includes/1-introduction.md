@@ -1,8 +1,10 @@
-Azure Resource Manager (ARM) templates have numerous constructs, able to handle both simple and complex setups. These constructs help you run statements conditionally, define dependencies between resources, and read secrets at deployment time.
+JSON Azure Resource Manager (ARM) templates have numerous constructs, and are able to handle both simple and complex setups. These constructs help you run statements conditionally, define dependencies between resources, and read secrets at deployment time.
 
 Let's say you're on a software team at Tailwind Traders. You plan to deploy infrastructure to Azure by using ARM templates. There are various challenges that you need to address, including managing secrets, assigning secrets to template resources, and dealing with repetitive resources. You also need to look into how you can express dependencies to control the order in which resources are deployed.
 
 In this module, you'll gain an understanding for how to handle more complex scenarios that you'll face. You'll use constructs like `copy` and `dependsOn`, as well as learn how to manage secrets during deployment.
+
+[!INCLUDE [Bicep introduction for JSON modules](../../includes/azure-template-json-bicep-intro.md)]
 
 ## Learning objectives
 

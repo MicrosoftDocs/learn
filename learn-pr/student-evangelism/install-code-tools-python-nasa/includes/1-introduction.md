@@ -12,7 +12,7 @@ In this module, you'll learn about and test software that assists developers, pa
   - What a programming language is
   - How to install Visual Studio Code and about the benefits of this code editor
   - How to install extensions to enhance the Visual Studio Code experience
-  - How to install Python and why it is such a popular programming language
+  - How to install Python and why it's such a popular programming language
   - How to run a basic Jupyter Notebook within Visual Studio Code
 
 ## Prerequisites

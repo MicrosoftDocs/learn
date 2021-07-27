@@ -4,7 +4,7 @@ In this unit, you'll set up the web application and the application gateway. Nex
 
 The following image highlights the elements you'll configure in this exercise. You'll be setting up an application gateway by using Azure Application Gateway v2.
 
-![Diagram that highlights the elements (backend pool, SSL certificate, and HTTP settings) created in this exercise](../media/4-exercise-elements.svg)
+![Diagram that highlights the elements (backend pool, SSL certificate, and HTTP settings) created in this exercise.](../media/4-exercise-elements.svg)
 
 ## Deploy a virtual machine and an application gateway
 
@@ -56,7 +56,7 @@ The following image highlights the elements you'll configure in this exercise. Y
   
    You'll likely receive a warning message from your browser, similar to the example in the following image. This warning occurs because the web server is configured through a self-signed certificate that can't be authenticated.
 
-   ![Warning about an unauthenticated server in Microsoft Edge](../media/4-warning.png)
+   ![Warning about an unauthenticated server in Microsoft Edge.](../media/4-warning.png)
 
     The warning message can vary, depending on your browser. The example image shows Microsoft Edge. Proceed to the website by selecting **Go on to the webpage** or the equivalent. You should see the home page for the shipping portal. This is a sample app to test that the server is configured correctly.
 

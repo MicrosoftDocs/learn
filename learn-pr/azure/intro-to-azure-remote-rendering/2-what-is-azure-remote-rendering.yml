@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-remote-rendering.2-what-is-azure-remote-rendering  
+title: What is Azure Remote Rendering?  
+metadata:
+  unitType: learning-content  
+  title: What is Azure Remote Rendering? 
+  description: What is Azure Remote Rendering?
+  ms.date: 06/15/2021
+  author: nickwalkmsft
+  ms.author: nickwalk  
+  ms.topic: interactive-tutorial 
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-what-is-azure-remote-rendering.md)]
