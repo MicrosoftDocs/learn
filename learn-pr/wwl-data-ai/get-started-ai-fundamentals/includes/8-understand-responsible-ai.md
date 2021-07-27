@@ -1,5 +1,3 @@
-Artificial Intelligence is a powerful tool that can be used to greatly benefit the world. However, like any tool, it must be used responsibly.
-
 At Microsoft, AI software development is guided by a set of six principles, designed to ensure that AI applications provide amazing solutions to difficult problems without any unintended negative consequences.
 
 ## Fairness
@@ -53,3 +51,9 @@ People should be accountable for AI systems. Designers and developers of AI-base
 For more details about considerations for accountability, watch the following video.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vvIk]
+
+The principles of responsible AI can help you understand some of the challenges facing developers as they try to create ethical AI solutions. 
+
+## Further resources
+
+For more resources to help you put the responsible AI principles into practice, see https://www.microsoft.com/ai/responsible-ai-resources.
