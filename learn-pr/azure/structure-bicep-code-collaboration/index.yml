@@ -18,7 +18,7 @@ abstract: |
     - Structure your Bicep code and parameters to support team collaboration
     - Document your Bicep code by using comments and resource tags
 prerequisites: |
-  You should be familiar with Bicep structure and syntax, including parameters, loops, modules, and conditions.
+  You should be familiar with Bicep structure and syntax, including parameters, loops, conditions, and modules.
 
   To follow along with the exercises in the module, you'll need the following installed locally:
   - [Visual Studio Code](https://code.visualstudio.com)

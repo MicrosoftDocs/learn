@@ -36,9 +36,17 @@ You also need to consider how to handle parameters and variables that are common
 
 ## How do you define several similar resources?
 
-Bicep enables to you use loops to deploy similar resources from a single definition. Look for places where you define multiple resources that are identical, or that have a few differences in their properties. Then, add a variable to list the resources to create along with their properties. For example, here's how you use a loop to define a set of Azure Cosmos DB containers, each of which has its own name and partition key:
+Bicep enables to you use loops to deploy similar resources from a single definition. By using the `for` keyword to define resource loops, you can make your Bicep code cleaner and reduce unnecessary duplication of resources. In future, when you need to change the definition of your resources, you just update one place. When Azure Resource Manager deploys your resources, by default it deploys all of the resources in the loop at the same time, so your deploy is as efficient as possible.
+
+Look for places where you define multiple resources that are identical, or that have a few differences in their properties. Then, add a variable to list the resources to create along with their properties. The example below uses a loop to define a set of Azure Cosmos DB containers, each of which has its own name and partition key:
 
 ::: code language="bicep" source="code/4-loop.bicep" range="7-21, 48-64" highlight="16, 18, 21, 25" :::
+
+## How do you deploy resources only to certain environments?
+
+Sometimes, you define resources that should only be deployed to specific environments or under certain conditions. The `if` keyword enables you to selectively deploy resources based on a parameter value, a configuration map variable, or another condition. This example uses a configuration map to deploy logging resources for production environments, but not for test environments:
+
+::: code language="bicep" source="code/4-condition.bicep" range="17-25, 39-51" highlight="10, 15" :::
 
 ## How do you add meaningful whitespace?
 

@@ -1,4 +1,4 @@
-One of the benefits of deploying your infrastructure as code is that your templates are shareable, allowing you to collaborate on your Bicep code with other team members. It's important that your Bicep code is easy to read and easy to work with. In this module, you'll learn some ways to structure and style your Bicep code to make it easy for others to understand, modify, and deploy. You'll also learn how to design your Bicep modules to support reuse and flexibility.
+One of the benefits of deploying your infrastructure as code is that your templates are shareable, allowing you to collaborate on your Bicep code with other team members. It's important that your Bicep code is easy to read and easy to work with. In this module, you'll learn some ways to structure and style your Bicep code to make it easy for others to understand, modify, and deploy.
 
 ## Example scenario
 
@@ -18,7 +18,7 @@ By the end of this module, you'll be able to author Bicep templates that are mod
 
 ## Prerequisites
 
-You should be familiar with Bicep structure and syntax, including parameters, loops, modules, and conditions.
+You should be familiar with Bicep structure and syntax, including parameters, loops, conditions, and modules.
 
 To follow along with the exercises in the module, you'll need the following installed locally:
 - [Visual Studio Code](https://code.visualstudio.com)
