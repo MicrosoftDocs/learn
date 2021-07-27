@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.health-bot-template-scenarios.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: In this module, you'll use the triage and handoff scenario template to build a health bot that extends the built-in symptom checker and transitions the conversation to a live nurse.
+  author: sfoteini
+  ms.author: chnoring
+  ms.date: 07/27/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

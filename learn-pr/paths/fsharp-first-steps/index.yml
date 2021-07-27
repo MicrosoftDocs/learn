@@ -28,5 +28,6 @@ products:
 modules:
 - learn.fsharp-first-steps
 - learn.fsharp-first-program
+- learn.fsharp-conditional
 trophy:
   uid: learn.languages.fsharp-first-steps.trophy

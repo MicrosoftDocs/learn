@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.fsharp-conditional.use-loops
+title: Use loops to iterate over statements
+metadata:
+  title: Use loops to iterate over statements
+  description: In this unit, you'll look at different loops to repeat statements.
+    Some loop constructs are meant to iterate over enumerable collections and
+    some are more focused on repeating an activity until a condition is met.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 07/23/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-use-loops.md)]
