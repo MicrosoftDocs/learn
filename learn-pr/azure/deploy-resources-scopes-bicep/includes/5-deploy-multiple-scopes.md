@@ -6,6 +6,8 @@ Sometimes you need to deploy resources across multiple levels of your hierarchy 
 
 With Bicep, you can create a deployment that works across a range of scopes by using the `scope` keyword.
 
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+
 ## Specify the scope for a module
 
 You can use Bicep modules to deploy a set of resources at a scope that's different from the `targetScope` specified in the file. Here's an example Bicep file that's deployed with a `targetScope` of a `subscription`, but uses a module to deploy some resources to a resource group:
