@@ -5,7 +5,7 @@ In this exercise, you'll focus on applying some of the functional patterns you w
 As mentioned initially, your colleagues have been busy writing code. Here it is:
 
 ```fsharp
-let cards = [21; 3;1;7; 9;23]
+let cards = [21; 3; 1; 7; 9; 23]
 let cardFace card = 
        let no = card % 13
        if no = 14 || no = 1 then "Ace"

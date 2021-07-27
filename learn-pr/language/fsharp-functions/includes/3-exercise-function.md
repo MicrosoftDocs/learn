@@ -65,7 +65,7 @@ You've turned your colleague's code into a function. To make this code extra rea
 1. Modify your existing function `cardFace()` to look like so:
 
    ```fsharp
-   let cardFace card:int = 
+   let cardFace (card:int) = 
        let no = card % 13
        if no = 14 || no = 1 then "Ace"
        elif no = 13 then "King"

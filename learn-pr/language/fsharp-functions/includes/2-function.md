@@ -1,8 +1,8 @@
-Usually you find yourself in a situation where your code looks repetitive, it's doing the same thing in many places or there's minor differences. At situations like these, you should start thinking how to make code reusable. The answer how to tackle this situation is to extract these statements and make one or more function. A function is a fundamental building block in numerous programming languages, F# is no different.
+Usually you find yourself in a situation where your code looks repetitive, it's doing the same thing in many places or there's minor differences. In situations like these, you should start thinking how to make code reusable. The answer how to tackle this situation is to extract these expressions and make one or more function. A function is a fundamental building block in numerous programming languages, F# is no different.
 
 ## A function
 
-A function is a named reference that has a body consisting of one or more statements. On top of that it can have parameters. A function starts with `let` keyword and the name of the function. Then there's an assignment operator and to the right of said operator is the function body. Below is the syntax of a function, taking no parameters.
+A function is a named reference that has a body consisting of one or more expressions. On top of that it can have parameters. A function starts with `let` keyword and the name of the function. Then there's an assignment operator and to the right of said operator is the function body. Below is the syntax of a function, taking no parameters.
 
 ```fsharp
 let <function name> <parameters> = <function body>
@@ -31,7 +31,7 @@ By placing `product` on the last line, it's what's being returned. So how do you
 
 ### Calling a function
 
-To call, or invoke a function, use the name of the function and add any parameters you wish to use separated by a space character. Take the example code from above, to call it, type the following:
+To call, or invoke a function, use the name of the function and add any parameters you wish to use separated by a space character. Take the example `addAndMultiply` function from above, to call it, type the following:
 
 ```fsharp
 addAndMultiply 2 3 3 // 15
@@ -89,7 +89,7 @@ let convert a =
 To add types to it, you add a `: <type>`, like so:
 
 ```fsharp
-let convert a:string =
+let convert (a:string) =
     int a
 ```
 
