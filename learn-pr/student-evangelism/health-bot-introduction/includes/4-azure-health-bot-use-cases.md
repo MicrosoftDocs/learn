@@ -21,3 +21,5 @@ Now, let's examine how two kinds of companies can use the Health Bot Service:
 - Insurance companies can build Health Bot instances that give their customers an easy way to look up the status of a claim and ask questions about benefits and services. Through this interaction, customers acquire better communication with the company, and the company understands the existing needs.
 
 - Providers can build Health Bot instances that triage patient issues with a symptom checker, help patients find appropriate care, and look up nearby doctors. In this way, patients have an integrated solution that helps them with everyday healthcare issues.
+
+-	Pharmaceutical companies can build Health Bot instances that helps customers to check their eligibility for the COVID-19 vaccine, the bot helps patients get more information about the vaccine and schedule an appointment for getting their vaccines at a desired location.
