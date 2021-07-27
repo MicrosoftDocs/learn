@@ -6,6 +6,8 @@ Bicep files often need to refer to resources that have been created elsewhere. T
 
 Bicep provides the `existing` keyword for you to use in these situations.
 
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+
 ## Refer to existing resources
 
 Within a Bicep file, you can define a resource that already exists. The declaration looks similar to a normal resource definition, but there are a few key differences. In the following example of an existing resource definition, the definition refers to a storage account named `toydesigndocs` that's in the same resource group that your Bicep template will be deployed to.
