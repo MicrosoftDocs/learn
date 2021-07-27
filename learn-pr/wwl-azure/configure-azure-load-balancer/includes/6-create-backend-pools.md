@@ -16,10 +16,10 @@ To distribute traffic, a back-end address pool contains the IP addresses of the 
     Backend pool endpoints
   :::column-end:::
   :::column:::
-    Any VM in a single virtual network, including a blend of VMs, availability sets, and VM scale sets.
+    Any virtual machine in a single virtual network. This includes a blend of virtual machines, availability sets, and virtual machine scale sets.
   :::column-end:::
   :::column:::
-    VMs in a single availability set or virtual machine scale set.
+    Virtual machines in a single availability set or virtual machine scale set.
   :::column-end:::
 :::row-end:::
 
