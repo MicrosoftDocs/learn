@@ -25,7 +25,7 @@ Sometimes, you create a template that deploys a primary resource, with a number 
 
 Alternative, you can group your elements based on the type of the resources being deployed. For example, you might have a Bicep file that deploys an Azure SQL database and a storage account. You could put all of the parameters, variables, resources, and outputs that relate to the Azure SQL database resources together, then put the parameters, variables, resources, and outputs for the storage account, like this:
 
-:::image type="content" source="../media/4-group-resource-type.png" alt-text="Diagram showing elements grouped by resource type. Storage account elements are grouped together, then Azure SQL database elements." border="false":::
+:::image type="content" source="../media/4-group-resource.png" alt-text="Diagram showing elements grouped by resource. Storage account elements are grouped together, then Azure SQL database elements." border="false":::
 
 This approach can make it easy to read your template, since all of the elements you need for a specific resource are together. But it makes it harder to quickly check how specific element types are declared, like if you want to review all of your parameters.
 
