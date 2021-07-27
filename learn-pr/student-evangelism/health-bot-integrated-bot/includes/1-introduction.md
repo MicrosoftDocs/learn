@@ -31,10 +31,13 @@ In this module, you'll:
 ## Prerequisites
 
 ### Modules
+
 - Introduction to Azure Health Bot
-- Introduction and basic health bots
-- Enhanced health bots
+- Basic Azure Health Bot
+- Enhanced Azure Health Bot
+
 ### Knowledge
+
 - Familiarity with Azure Logic Apps
 - Basic knowledge about SQL Database
 

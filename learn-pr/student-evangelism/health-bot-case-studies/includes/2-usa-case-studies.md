@@ -17,21 +17,21 @@ For more information, see [Delivering information and eliminating bottlenecks wi
 
 ## Providence
 
-One of the largest health systems in the United States created a [healthcare chatbot named Grace](https://www.providence.org/news/uf/623601749) by using the Azure Health Bot service. Providence created Grace to help answer patients' questions online. 
+One of the largest health systems in the United States created a [healthcare chatbot named Grace](https://www.providence.org/news/uf/623601749) by using the Azure Health Bot service. Providence created Grace to help answer patients' questions online.
 
 By using CDC guidelines and its own clinical protocols, Providence then built a Coronavirus Assessment Tool in just three days for the communities that it serves. The tool helps people decide whether they should seek medical attention for their respiratory symptoms.  
 
-## Walgreens
+## Walgreens Boots Alliance
 
-Walgreens, the global pharmacy and healthcare retail provider, [used Azure Health Bot to expand the Find Care platform](https://customers.microsoft.com/story/812836-walgreens-boots-alliance-retailers-azure-bot-service-cognitive-services) to include a COVID-19 risk assessment. Customers can use it to assess their risk of COVID-19 based on CDC guidelines.
+Walgreens Boots Alliance, the global pharmacy and healthcare retail provider, [used Azure Health Bot to expand the Find Care platform](https://customers.microsoft.com/story/812836-walgreens-boots-alliance-retailers-azure-bot-service-cognitive-services) to include a COVID-19 risk assessment. Customers can use it to assess their risk of COVID-19 based on CDC guidelines.
 
 ## Aurora Health Care
 
-[Aurora Health Care](https://www.aurorahealthcare.org/) created a bot system to help patients triage symptoms. Based on outcomes of the symptom checker, the system directs patients to an appropriate care provider.
+Aurora Health Care created a bot system to help patients triage symptoms. Based on outcomes of the symptom checker, the system directs patients to an appropriate care provider.
 
-## Virginia Mason
+## Virginia Mason Franciscan Health
 
-Serving the Pacific Northwest region, the [Virginia Mason health system](https://www.virginiamason.org/coronavirus) created a healthcare bot to help patients understand whether they need care. This Azure Health Bot instance has thousands of daily users.
+Serving the Pacific Northwest region, the Virginia Mason health system created a healthcare bot to help patients understand whether they need care. This Azure Health Bot instance has thousands of daily users.
 
 ## Premera Blue Cross
 
@@ -40,4 +40,3 @@ Premera Blue Cross improved its patient experience by implementing Scout, an int
 ## Quest Diagnostics
 
 Quest Diagnostics created a virtual health assistant called Quest Bot. This assistant can answer questions about lab and COVID testing, find nearby test centers based on a patient's location, and connect the patient with a live agent for more support.
-

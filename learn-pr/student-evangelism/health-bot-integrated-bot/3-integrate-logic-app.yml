@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.health-bot-integrating-bot.3-integrating-logic-app
+uid: learn.health-bot-integrated-bot.3-integrate-logic-app
 title: Integrate a logic app
 metadata:
   title: Integrate a logic app
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
-  [!include[](includes/3-integrating-logic-app.md)]
+  [!include[](includes/3-integrate-logic-app.md)]
