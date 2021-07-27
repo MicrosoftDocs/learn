@@ -1,4 +1,4 @@
-By using _pipelines_, you can automate the steps in your deployment process. Each time you make a change to code and you commit the change to your Git repository, your pipeline runs your predefined process. The pipeline can verify whether your Bicep code meets your quality standards, and then automates the steps to deploy your resources to Azure. You describe this process by creating a _pipeline definition_.
+By using _pipelines_, you can automate the steps in your deployment process. Each time you make a change to your code and commit the change to your Git repository, the pipeline runs your predefined process. The pipeline can verify whether your Bicep code meets your quality standards, and then automates the steps to deploy your resources to Azure. You describe this process by creating a _pipeline definition_.
 
 Azure Pipelines is a feature of the Azure DevOps service. Azure DevOps also includes Azure Repos, which hosts the Git repositories you use to store and share your code with your collaborators. Once your Bicep code is stored in Git, Azure Pipelines can access your code to automate your deployment processes. In this unit, you'll learn about Azure Pipelines.
 
@@ -30,13 +30,13 @@ An _agent pool_ contains multiple agents of the same type. When you configure yo
 
 ## Triggers
 
-You need to instruct Azure Pipelines _when_ to run your pipeline by using a _trigger_. There are multiple types of trigger available. For now, you'll just use a _manual trigger_, which means you'll manually tell Azure Pipelines when to start running your pipeline. Later in this module, you'll learn about the other triggers you can use.
+You need to instruct Azure Pipelines _when_ to run your pipeline by using a _trigger_. There are multiple types of trigger available. For now, you'll just use a _manual trigger_, which means you'll manually tell Azure Pipelines when to start running your pipeline. Later in this module, you'll learn about other triggers.
 
 :::image type="content" source="../media/2-trigger.png" alt-text="Diagram that shows a trigger initiating a pipeline." border="false":::
 
 ## Steps
 
-A step represents a single operation that the pipeline will perform. Think of a step as being like the individual command you execute in Bash or PowerShell. For most deployments, you execute several steps in a sequence. You define the sequence, and all of the details of each step, in your pipeline YAML file.
+A step represents a single operation that the pipeline will perform. Think of a step as being like the individual command that you run in Bash or PowerShell. For most deployments, you execute several steps in a sequence. You define the sequence, and all of the details of each step, in your pipeline YAML file.
 
 There are two types of steps in Azure Pipelines:
 
