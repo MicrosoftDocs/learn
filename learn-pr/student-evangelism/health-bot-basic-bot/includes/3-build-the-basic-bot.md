@@ -16,7 +16,7 @@ We start by using the *prompt* block. This is what a prompt block looks like:
 
 **Variable name**: Because the healthcare bot uses some programming concepts, you need give the name of the variable to store the input from the user. A variable is simply a container that temporarily holds the data. The name is case-sensitive. We'll use **help** in our example.
 
-**Variable Data Type**: Choose the type of data that you'll store in the variable. Important data types include string, number, Boolean, time, choice, multiple choice, attachment, and object. Because the help that we're providing to the user through the bot can have many options, select multiple choice (**multi-choice**).
+**Variable Data Type**: Choose the type of data that you'll store in the variable. Important data types include string, number, Boolean, time, choice, multiple choice, attachment, and object. Because the help that we're providing to the user through the bot can have many options, select choice (**choice**).
 
 **Choices Array**: As the name suggests, this is an array of choices or multiple choices. An array is a systematic collection of like objects. Provide the required choices.
 
