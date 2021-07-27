@@ -16,8 +16,8 @@ You can apply this approach to F# as well, the following code takes on a declara
 
 ```fsharp
 let studentsFromOhio = 
-  allStudents |>
-  filterLocation "Ohio"
+    allStudents  
+    |> filterLocation "Ohio"
 ```
 
 Above you're able to operate on data, asks for what you want, but without being specific on how you want it done, just like with SQL. When your code looks like the above, it's easy to read, and to reason about. But to get to this point, let's look at some useful patterns that's supported in F#.
