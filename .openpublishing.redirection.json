@@ -8752,7 +8752,7 @@
     },
     {
       "source_path": "learn-pr/language/rust-get-started/5-hello-world.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-set-up-environment/5-exercise-hello-world",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-set-up-environment/5-hello-world",
       "redirect_document_id": false
     },
     {
@@ -8762,7 +8762,7 @@
     },
     {
       "source_path": "learn-pr/language/rust-get-started/7-hello-world-cargo.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-set-up-environment/5-exercise-hello-world",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-set-up-environment/5-hello-world",
       "redirect_document_id": false
     },
     {
