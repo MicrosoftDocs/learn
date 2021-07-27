@@ -9,10 +9,10 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
 title: Manage execution flow with F#
-summary: Learn how to
+summary: Learn how to manage execution flow in your programs using `if...elif...else` and loop constructs.
 abstract: |
   In this module you will:
-  - Use `if ... elif ... else` to add conditional logic to your code.
+  - Use `if...elif...else` to add conditional logic to your code.
   - Create repeat statements using various loop constructs.
   - Understand the difference between various loop constructs and when to use them.
 iconUrl: /learn/achievements/generic-badge.svg
@@ -20,17 +20,17 @@ levels:
   - beginner
 roles:
   - developer
-  - developer
+  - student
 products:
   - vs
 prerequisites: None
 units:
-  - learn.fsharp-conditional.1-introduction
-  - learn.fsharp-conditional.2-if-else
-  - learn.fsharp-conditional.3-exercise-if-else
-  - learn.fsharp-conditional.4-use-loops
-  - learn.fsharp-conditional.5-exercise-loops
-  - learn.fsharp-conditional.6-knowledge-check
-  - learn.fsharp-conditional.7-summary
+  - learn.fsharp-conditional.introduction
+  - learn.fsharp-conditional.if-else
+  - learn.fsharp-conditional.exercise-if-else
+  - learn.fsharp-conditional.use-loops
+  - learn.fsharp-conditional.exercise-loops
+  - learn.fsharp-conditional.knowledge-check
+  - learn.fsharp-conditional.summary
 badge:
   uid: learn.fsharp-conditional.badge

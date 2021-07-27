@@ -1,4 +1,4 @@
-You've come to a point in your program where you need to carry out a group of statements more than one time. The reason for that is that you are either dealing with a list type structure, or you have a general need to repeat something until a certain condition is met. To deal with this situation, you can use loops. 
+You've come to a point in your program where you need to carry out a group of statements more than one time. The reason for that is that you are either dealing with a list type structure, or you have a general need to repeat something until a certain condition is met. To deal with this situation, you can use loops.
 
 ## Loops
 
@@ -6,7 +6,7 @@ The idea of a loop is to iterate over a range of values and for each value do so
 
 - **for...to**. This construct assumes you have an enumerable collection that you can iterate over. It will iterate over each value in said collection.
 - **for...in**. The `for...in` loop has the notion of start and ending where this loop iterates until it reaches the value of a loop variable.
-- **while...do**. The `while...do` is not centered around an enumerable collection, like two first constructs, but loops until a condition is met. 
+- **while...do**. The `while...do` is not centered around an enumerable collection, like two first constructs, but loops until a condition is met.
 
 ### `for...in`, looping through every value in a collection
 
@@ -27,7 +27,7 @@ There's some keywords here that needs explaining:
      printf "%d " i
    ```
 
-- **Enumerable-expression**, the enumerable expression is what you are iterating through, like a list or  sequence and so on. 
+- **Enumerable-expression**, the enumerable expression is what you are iterating through, like a list or  sequence and so on.
 - **Body-expression**, this part is where you carry out the task you mean to do, like printing or performing a calculation and so on.
 
 ### `for...to`, loop until a looping variable
@@ -41,8 +41,8 @@ for <identifier = start> [ to | downto ] <finish> do
 
 Let's go over the different parts:
 
-- **identifier = start**. This syntax is an assignment, here you typically decide what variable you want to track as part of the iteration and what value it should start on.
-- **[to | downto]**. You can choose between two different keywords. If you choose `to` to that means the loop will iterate to that number. If you on the other hand choose `downto` the value of your identifier will decrease until it hits that number.
+- `identifier = start`. This syntax is an assignment, here you typically decide what variable you want to track as part of the iteration and what value it should start on.
+- `[to | downto]`. You can choose between two different keywords. If you choose `to` to that means the loop will iterate to that number. If you on the other hand choose `downto` the value of your identifier will decrease until it hits that number.
 
 Here's an example using the `for...to` loop:
 

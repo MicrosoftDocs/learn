@@ -1,4 +1,4 @@
-In this exercise, you will learn to use `if` and `else` to implement some functionality for card game for the recreational games company you work for. You will need to write some functionality that will be used by your colleagues to implement the game Black Jack
+In this exercise, you will learn to use `if` and `else` to implement some functionality for card game for the recreational games company you work for. You will need to write some functionality that will be used by your colleagues to implement the game Black Jack.
 
 ## Display presentable cards
 
