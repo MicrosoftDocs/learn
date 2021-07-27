@@ -12,7 +12,7 @@ By adopting the shock absorber design pattern for your IoT solutions, you can us
 
 ### Optimize storage for large volumes of IoT data
 
-In a benchmarking [exercise](https://devblogs.microsoft.com/azure-sql/json-in-your-azure-sql-database-lets-benchmark-some-options) on real IoT data, the Azure SQL team was able to achieve about 25 times reduction in storage usage by storing 3 million, 1.6 KB messages (around 5 GB total) in a 200 MB columnstore-based table.
+In a benchmarking [exercise](https://devblogs.microsoft.com/azure-sql/json-in-your-azure-sql-database-lets-benchmark-some-options) on real IoT data, the Azure SQL team was able to achieve about 25 times reduction in storage usage by storing 3 million, 1.6-KB messages (around 5 GB total) in a 200-MB columnstore-based table.
 
 ### Customers using Azure SQL Database for IoT in production today
 
