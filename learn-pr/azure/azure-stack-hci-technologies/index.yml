@@ -31,6 +31,9 @@ roles:
 - technology-manager
 products:
 - azure
+- azure-stack-hci
+- hyper-v
+- windows-server
 units:
 - learn.azure.azure-stack-hci-technologies.1-introduction
 - learn.azure.azure-stack-hci-technologies.2-hyper-v
