@@ -3,7 +3,7 @@ uid: learn.health-bot-integrated-bot
 metadata:
   title: Integrate a health bot with a database
   description: This module explains how to connect an Azure health bot to a database.
-  ms.date: 06/04/2020
+  ms.date: 07/27/2021
   author: Meghana-ch
   ms.author: chnoring
   ms.topic: interactive-tutorial
