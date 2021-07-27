@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.fsharp-functions.6-knowledge-check
+uid: learn.fsharp-functions.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -10,8 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
 durationInMinutes: 4
-content: |
-  [!include[](includes/6-knowledge-check.md)]
+content: Choose the best response for each question. Then select **Check your answers**.
 quiz:
   title: Check your knowledge
   questions:

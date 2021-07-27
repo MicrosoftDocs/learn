@@ -26,12 +26,12 @@ products:
   - dotnet
 prerequisites: None
 units:
-  - learn.fsharp-functions.1-introduction
-  - learn.fsharp-functions.2-function
-  - learn.fsharp-functions.3-exercise-function
-  - learn.fsharp-functions.4-function-patterns
-  - learn.fsharp-functions.5-exercise-patterns
-  - learn.fsharp-functions.6-knowledge-check
-  - learn.fsharp-functions.7-summary
+  - learn.fsharp-functions.introduction
+  - learn.fsharp-functions.function
+  - learn.fsharp-functions.exercise-function
+  - learn.fsharp-functions.function-patterns
+  - learn.fsharp-functions.exercise-patterns
+  - learn.fsharp-functions.knowledge-check
+  - learn.fsharp-functions.summary
 badge:
   uid: learn.fsharp-functions.badge
