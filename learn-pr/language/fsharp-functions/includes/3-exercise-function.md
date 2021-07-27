@@ -42,7 +42,7 @@ You'll start by scaffolding a new F# project, then you'll take a piece of code a
 
     ```fsharp
     printfn "%s" (cardFace 11)
-    ``` 
+    ```
 
 1. Run the project calling `dotnet run` in the console
 
