@@ -2,12 +2,12 @@ Every object that you store in Azure Storage has a unique URL address. The stora
 
 For example, if your storage account is named *mystorageaccount*, then the default endpoints for your storage account are:
 
- -  Container service: `https://mystorageaccount.blob.core.windows.net`
- -  Table service: `https://mystorageaccount.table.core.windows.net`
- -  Queue service: `https://mystorageaccount.queue.core.windows.net`
- -  File service: `https://mystorageaccount.file.core.windows.net`
+ -  Container service: `//mystorageaccount.blob.core.windows.net`
+ -  Table service: `//mystorageaccount.table.core.windows.net`
+ -  Queue service: `//mystorageaccount.queue.core.windows.net`
+ -  File service: `//mystorageaccount.file.core.windows.net`
 
-The URL for accessing an object in a storage account is built by appending the object's location in the storage account to the endpoint. For example, to access *myblob* in the *mycontainer*, use this format: `https://mystorageaccount.blob.core.windows.net/mycontainer/myblob`.
+The URL for accessing an object in a storage account is built by appending the object's location in the storage account to the endpoint. For example, to access *myblob* in the *mycontainer*, use this format: `//mystorageaccount.blob.core.windows.net/mycontainer/myblob`.
 
 ## Configure a custom domain
 
