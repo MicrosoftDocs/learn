@@ -62,7 +62,7 @@ In this unit, you'll create a system-assigned managed identity for your VM. You'
       --value "Server=tcp:prodserverSQL.database.windows.net,1433;Database=myDataBase;User ID=mylogin@myserver;Password=examplePassword;Trusted_Connection=False;Encrypt=True;"
     ```
 
-1. Make a note of your key vault name. 
+1. Make a note of your key vault name.
 
     ```bash
     echo $KVNAME
