@@ -1,8 +1,8 @@
-Usually you find yourself in a situation where your code looks repetitive, it's doing the same thing in many places or there's minor differences. At situations like these, you should start thinking how to make code reusable. The answer how to tackle this situation is to extract these statements and make one or more function. A function is a fundamental building block in numerous programming languages, F# is no different.
+Usually you find yourself in a situation where your code looks repetitive, it's doing the same thing in many places or there's minor differences. At situations like these, you should start thinking how to make code reusable. The answer how to tackle this situation is to extract these expressions and make one or more function. A function is a fundamental building block in numerous programming languages, F# is no different.
 
 ## A function
 
-A function is a named reference that has a body consisting of one or more statements. On top of that it can have parameters. A function starts with `let` keyword and the name of the function. Then there's an assignment operator and to the right of said operator is the function body. Below is the syntax of a function, taking no parameters.
+A function is a named reference that has a body consisting of one or more expressions. On top of that it can have parameters. A function starts with `let` keyword and the name of the function. Then there's an assignment operator and to the right of said operator is the function body. Below is the syntax of a function.
 
 ```fsharp
 let <function name> <parameters> = <function body>

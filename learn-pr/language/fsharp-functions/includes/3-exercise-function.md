@@ -112,4 +112,3 @@ You've turned your colleague's code into a function. To make this code extra rea
    No more error message because you've added a return type to your function as well. Looking at the function header you now see this code `let cardFace (card:int) :string`, the input parameter is of type `int` and it returns `string`.
 
 Congratulation! Your code has now types added to it.  
-    
