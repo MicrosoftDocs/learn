@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.health-bot-integrated-bot.4-health-bot-configurations
+title: Health bot configurations
+metadata:
+  title: Health bot configurations
+  description: In this unit, you learn how to configure your health bot with a data-connect cell.
+  author: Meghana-ch
+  ms.author: chnoring
+  ms.date: 07/27/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-health-bot-configurations.md)]

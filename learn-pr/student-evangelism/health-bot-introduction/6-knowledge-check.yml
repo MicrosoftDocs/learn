@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.health-bot-introduction.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Two multiple-choice questions
+  ms.date: 07/27/2021
+  author: RuchaYagnik
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+
+    - content: "Is it possible for a Health Bot instance to be integrated within an organization's existing systems?"
+      choices:
+        - content: "Yes."
+          isCorrect: true
+          explanation: "A Health Bot instance can be successfully integrated within the organization's existing systems."
+        - content: "Yes, but functional problems will occur."
+          isCorrect: false
+          explanation: "A Health Bot instance can be integrated within the organization's existing systems without any functional problem."
+        - content: "No."
+          isCorrect: false
+          explanation: "A Health Bot instance can be successfully integrated within the
+            organization's existing systems."
+    
+    - content: "Which built-in scenario is activated when a user types 'I have fever'?" 
+      choices:
+        - content: "Find doctor type."
+          isCorrect: false
+          explanation: "The above built-in scenario is activated when health bot instance is required to recommend the appropriate type of doctor to treat an illness."
+        - content: "General information about conditions, symptoms, causes, complications, and more."
+          isCorrect: false
+          explanation: "The above built-in scenario is activated when the health bot instance loaded with medical database is required to provide information about medical conditions, symptoms, causes, and complications."
+        - content: "Triage and symptom checker."
+          isCorrect: true
+          explanation: "The above built-in scenario is activated when the end user describes a symptom to the health bot instance and the bot helps the user to understand it and suggests how to react."
+

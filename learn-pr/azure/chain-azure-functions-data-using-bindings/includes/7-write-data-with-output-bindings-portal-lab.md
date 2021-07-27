@@ -183,7 +183,9 @@ So, that's it. Let's see our work in action in the next section.
 
 1. To open the **run.ps1** file in the code editor, select your function, **HttpTrigger3**.
 
-1. Replace all the code in the *run.ps1* file with the code from the following snippet, and then select **Save**.
+1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your function.
+
+1. Replace all the code in the *run.ps1* file with the code from the following snippet, and in the top menu bar, select **Save**.
 
     ```powershell
     using namespace System.Net

@@ -163,7 +163,7 @@ You now have a few entries in your **Bookmarks** container. Your scenario will w
 
 1. Accept every setting with the defaults, and select **Add** to create your function.
 
-    The **HttpTrigger2** pane for your function appears displaying a default implementation of your HTTP-triggered function, and automatically opens the corresponding file in the code editor.
+    The **HttpTrigger2** pane for your function appears displaying a default implementation of your HTTP-triggered function.
 
 ### Verify the function
 
