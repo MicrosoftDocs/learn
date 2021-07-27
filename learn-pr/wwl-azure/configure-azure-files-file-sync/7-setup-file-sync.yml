@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-files-file-sync.setup
-title: Setup file sync
+title: Deploy Azure File Sync
 metadata:
-  title: Setup file sync
-  description: "Setup file sync"
-  ms.date: 07/26/2021
+  title: Deploy Azure File Sync
+  description: "Deploy Azure File Sync"
+  ms.date: 07/27/2021
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
