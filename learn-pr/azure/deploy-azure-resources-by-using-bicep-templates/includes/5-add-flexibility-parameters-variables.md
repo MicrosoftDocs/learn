@@ -4,6 +4,8 @@ Your toy company will launch new products regularly, and you need to use the Bic
 
 In this unit, you'll learn about _parameters_ and _variables_, which are two Bicep features that can make your templates flexible and reusable. You'll also be introduced to _expressions_.
 
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+
 ## Parameters and variables
 
 A _parameter_ lets you bring values in from outside the template file. For example, if someone is manually deploying the template by using the Azure CLI or PowerShell, they'll be asked to provide values for each parameter. They can also create a _parameter file_, which lists all of the parameters and values they want to use for the deployment. If the template is deployed from an automated process like a deployment pipeline, the pipeline can provide the parameter values.
