@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.fsharp-functions
+metadata:
+  title: Create and architect with functions in F#
+  description: Learn what functions are and how to define and call them. Additionally, use function patterns to architect with functions.
+  ms.date: 07/26/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+title: Create and architect with functions in F#
+summary: Learn what functions are, how to declare and call them. Also, learn how to architect with functions using various patterns.
+abstract: |
+  In this module you will:
+
+  - Define and use functions.
+  - Use pipelines to operate on data.
+  - Compose functions to create larger functions.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - dotnet
+prerequisites: None
+units:
+  - learn.fsharp-functions.1-introduction
+  - learn.fsharp-functions.2-function
+  - learn.fsharp-functions.3-exercise-function
+  - learn.fsharp-functions.4-function-patterns
+  - learn.fsharp-functions.5-exercise-patterns
+  - learn.fsharp-functions.6-knowledge-check
+  - learn.fsharp-functions.7-summary
+badge:
+  uid: learn.fsharp-functions.badge
