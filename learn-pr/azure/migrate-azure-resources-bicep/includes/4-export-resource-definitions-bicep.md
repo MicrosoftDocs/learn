@@ -2,7 +2,7 @@ Recently, your company acquired a smaller competitor. This company deployed its 
 
 ## Export Azure resources to a template
 
-Azure Resource Manager is the service that's used to deploy and manage resources in Azure. All resources deployed to Azure are tracked by Azure Resource Manager, regardless of the method used to deploy the resource. Information about each resource is made available in JSON format by Azure Resource Manager. You can use the Azure portal, Azure CLI and Azure PowerShell to view the JSON templates and export your Azure resources to JSON templates. Later in this module, you will practice exporting JSON ARM templates.
+Azure Resource Manager is the service that's used to deploy and manage resources in Azure. All resources deployed to Azure are tracked by Azure Resource Manager, regardless of the method used to deploy the resource. Information about each resource is made available in JSON format by Azure Resource Manager. You can use the Azure portal, Azure CLI, and Azure PowerShell to view the JSON templates and export your Azure resources to JSON templates. Later in this module, you'll practice exporting JSON ARM templates.
 
 > [!NOTE]
 > The export template feature is unable to export more than 200 resources from a resource group at one time. If your resource group contains more than 200 resources, you'll need to export multiple times to capture all resources.
@@ -27,27 +27,27 @@ There are a few things that you need to consider when exporting your templates u
 
 1. The exported template is a snapshot of that resource, resources,  or resource group's current state. It will include all changes made to the resources since initial deployment.
 
-2. The exported template may include some default resource properties that are normally not specified in a standard deployment. You will need to consider removing these properties prior to re-deployment.
+2. The exported template may include some default resource properties that are normally not specified in a standard deployment. You'll need to consider removing these properties prior to redeployment.
 
-3. The exported template may not include all of the parameters you will need to make the template reusable. Many of these parameters may be hard coded into the template.
+3. The exported template may not include all of the parameters you'll need to make the template reusable. Many of these parameters may be hard-coded into the template.
 
 #### Export template from a deployment
 
-The Azure portal provides the ability to export a template of a resource prior to it's initial deployment or from it's deployment history.
+The Azure portal allows you export a template of a resource before its initial deployment or from its deployment history.
 
-If you have ever deployed a resource manually from the Azure portal, you may have noticed the option to **Download a template for automation** prior to the deployment of the resource. This option exports an JSON ARM template based on the names and properties you have set while building the resource in the portal.
+If you've ever deployed a resource manually from the Azure portal, you may have noticed the option to **Download a template for automation** before the deployment of the resource. This option exports a JSON ARM template based on the names and properties you've set while building the resource in the portal.
 
-You can also export a JSON ARM template based on its deployment history. As mentioned before, Azure Resource Manager tracks all resources and resource deployments. To export a resource template from it's deployment history click **Deployments** from the resource group blade. You may see multiple deployments listed. Click the name of the deployment that you want to export, click **Template** on the deployment blade, and click **Download** to save a copy of the template.
+You can also export a JSON ARM template based on its deployment history. As mentioned before, Azure Resource Manager tracks all resources and resource deployments. To export a resource template from its deployment history, click **Deployments** from the resource group blade. You may see multiple deployments listed. Click the name of the deployment that you want to export, click **Template** on the deployment blade, and click **Download** to save a copy of the template.
 
-When exporting a template from a deployment, consider the following:
+There are a few things that you need to consider when exporting your templates using this method.
 
-1. The exported template shows the state of the resource(s) at the time of deployment. It will not include any changes made after deployment.
+1. The exported template shows the state of the resource(s) at the time of deployment. It won't include any changes made after deployment.
 
-2. You will not have the option to select specific resources from a multi-resource deployment. This option will download all resources that were part of the initial deployment.
+2. You won't be able to select specific resources from a multi-resource deployment. This option will download all resources that were part of the initial deployment.
 
-3. The template wil only include resource properties needed for deployment. In most cases, you can consider this template ready to use.
+3. The template will only include resource properties needed for deployment. In most cases, you can consider this template ready to use.
 
-4. The template will include parameters that will allow you to re-deploy the template in multiple environments.
+4. The template will include parameters that will allow you to redeploy the template in multiple environments.
 
 ### Export resources using Azure CLI and Azure PowerShell
 
