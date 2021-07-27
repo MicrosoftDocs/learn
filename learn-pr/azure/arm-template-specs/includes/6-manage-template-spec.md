@@ -2,6 +2,8 @@ Template specs provide a convenient way to publish and share templates within yo
 
 In this unit, you learn about versioning, how to modify and delete template specs, and how to control access to template specs.
 
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+
 ## Add versions
 
 You've already learned that a single template spec can have multiple versions. A template spec acts as a container for one or more versions, and each version is associated with a template file. When you deploy a template spec, you need to specify the version that you want to use, so that Azure Resource Manager knows which template file to retrieve. 

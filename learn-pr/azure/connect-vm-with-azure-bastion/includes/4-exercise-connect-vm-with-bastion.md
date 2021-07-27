@@ -11,7 +11,7 @@ Create a resource group to contain all the resources that you'll create for the 
 
 1. Search for or select **Resource groups**. 
 
-1. Select **New**. The **Create a resource group** pane appears.
+1. Select **Create**. The **Create a resource group** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -31,7 +31,7 @@ Create a Linux VM that's not exposed to the internet.
 
 1. In the [Azure portal](https://portal.azure.com/), search for or select **Virtual machines**.
 
-1. Select **Add**, and then select **Virtual machine** from the dropdown. The **Create a virtual machine** pane appears.
+1. Select **Create**, and then select **Virtual machine** from the dropdown. The **Create a virtual machine** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
