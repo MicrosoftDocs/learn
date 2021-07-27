@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-alerts.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/26/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "The Alerts page has an alert marked as Acknowledged. What does this status indicate?"
+    choices:
+    - content: "A new issue has been opened."
+      isCorrect: false
+      explanation: "That's incorrect. The Alerts page shows New when an issue has been detected and has not yet been reviewed."
+    - content: "An administrator has reviewed the alert and started working on it."
+      isCorrect: true
+      explanation: "That's correct. the Acknowledged state is shown when an administrator has reviewed an alert and is working on it."
+    - content: "An issue has been resolved."
+      isCorrect: false
+      explanation: "That's incorrect. The Alerts page shows Closed when an issue has been resolved."
+  - content: "A major retailer has an app that is used across the business. The performance of this app is critical to day-to-day operations. Because the app is so important, four infrastructure administrators have been identified to address any issues. What would ensure the administrators are notified if there is a problem?"
+    choices:
+    - content: "Configure the Activity log"
+      isCorrect: false
+      explanation: "That's incorrect. The Activity Log provides insight into subscription-level events."
+    - content: "Configure an Alert Team"
+      isCorrect: false
+      explanation: "That's incorrect. An alert team is not a valid choice."
+    - content: "Configure an Action Group"
+      isCorrect: true
+      explanation: "That's correct. An Action Group notifies a group of administrators when there is an issue."
+  - content: "An alert rule consists of which of the following?"
+    choices:
+    - content: "Resource, condition, log, alert type"
+      isCorrect: false
+      explanation: "That's incorrect. These elements do not make up an alert rule."
+    - content: "Metrics, logs, application, operating system"
+      isCorrect: false
+      explanation: "That's incorrect. These elements do not make up an alert rule."
+    - content: "Resource, condition, actions, alert details"
+      isCorrect: true
+      explanation: "That's correct. These elements make up an alert rule."
