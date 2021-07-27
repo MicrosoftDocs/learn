@@ -11,7 +11,7 @@ You should now be able to:
 
 You can learn more by reviewing the following.
 
- -  [ARM template documentation](/azure/azure-resource-manager/templates/)
+ -  [Azure Resource Manager template documentation](/azure/azure-resource-manager/templates/)
  -  [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/)
- -  [Learn - Deploy Azure infrastructure by using JSON ARM templates](/learn/modules/build-azure-vm-templates/)
- -  [Learn - Deploy to multiple Azure environments by using ARM template features](/learn/modules/extend-resource-manager-template-deployment-scripts/)
+ -  [Learn - Deploy Azure infrastructure by using JSON Azure Resource Manager templates](/learn/modules/build-azure-vm-templates/)
+ -  [Learn - Deploy to multiple Azure environments by using Azure Resource Manager template features](/learn/modules/extend-resource-manager-template-deployment-scripts/)
