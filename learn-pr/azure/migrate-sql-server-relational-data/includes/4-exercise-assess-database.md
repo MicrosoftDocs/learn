@@ -1,4 +1,4 @@
-In this exercise, you use Data Migration Assistant to assess your existing social database for any issues and ensure it's compatible with Azure SQL Database. This is an important step to ensure that your company's database can be successfully migrated to Azure.
+In this exercise, you will use Data Migration Assistant to assess your existing social database for any issues and to ensure it's compatible with Azure SQL Database. This is an important step to ensure your company's database can be successfully migrated to Azure.
 
 You start by installing Data Migration Assistant on your SQL Server instance.
 
@@ -12,7 +12,7 @@ You start by installing Data Migration Assistant on your SQL Server instance.
 
 1. On the toolbar above the VM info, select **Connect**, and from the dropdown, select **RDP**.
 
-1. On the **Connect** window, from the **RDP*** tab, under the **Connect with RDP** section, select **Download RDP File**, Save it to your computer in a location of your choice.
+1. On the **Connect** window, from the **RDP** tab, under the **Connect with RDP** section, select **Download RDP File**, Save it to your computer in a location of your choice.
 
 1. Select the RDP file to open it. Select **Connect**, and supply the credentials. Use the **windowsadmin** account, and use the password that you specified for this account.You should have an RDP connection open in a separate window.
 
@@ -51,7 +51,7 @@ On your RDP session, before you can download Data Migration Assistant, you need 
 
     :::image type="content" source="../media/4-02-project-type.png" alt-text="Project type." loc-scope="azure-database-migration":::
     
-1. In the **Connect to a server** dialog box, enter the values shown above.  When you've successfully connected, on the **Add sources** dialog, select *admsdemovm* and then select **Add**.
+1. In the **Connect to a server** dialog box, enter the values shown above.  When you've successfully connected, on the **Add sources** dialog, select *admsdemovm*, and then select **Add**.
 
 ## Configure the project
 
