@@ -5,7 +5,7 @@ The Azure Bot Service provides the core components for creating bots, including 
 - Amazon Alexa - Alexa devices that support custom skills, can be used as a channel for bot communications.
 - Facebook - your bot can connect to Facebook Messenger and Facebook Workplace as channel for communication.
 - Microsoft Teams - if your organization uses Microsoft Teams for collaboration, you can integrate Teams with a bot.
-- Additional channels and more information can be found on the [channels article](https://docs.microsoft.com/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0) for the Azure Bot Service.
+- Additional channels and more information can be found on the [channels article](/azure/bot-service/bot-service-manage-channels) for the Azure Bot Service.
 
 The bot service also provides the interaction functionality for your bot.  An example of a user interaction with a simple echo bot can offer some insight into the interaction between a bot, the Bot Framework Service, and a bot channel.
 

@@ -647,3 +647,28 @@ achievements:
   title: Process and classify images with the Azure cognitive vision services
   summary: Process and classify images with the Azure cognitive vision services
   iconUrl: /learn/achievements/process-and-classify-images-with-the-azure-cognitive-vision-services.svg
+- uid: learn.classify-images-with-custom-vision-services.badge
+  type: badge
+  title: Classify images with the Microsoft Custom Vision Service
+  summary: Classify images with the Microsoft Custom Vision Service
+  iconUrl: /learn/achievements/classify-images-with-custom-vision-service.svg
+- uid: learn.create-computer-vision-service.badge
+  type: badge
+  title: Process images with the Computer Vision service
+  summary: Process images with the Computer Vision service
+  iconUrl: /learn/achievements/create-computer-vision-service-to-classify-images.svg
+- uid: learn.data-ai.identify-faces-with-computer-vision.badge
+  type: badge
+  title: Identify faces and expressions by using the Computer Vision API in Azure Cognitive Services
+  summary: Identify faces and expressions by using the Computer Vision API in Azure Cognitive Services
+  iconUrl: /learn/achievements/data-ai/identify-faces-with-computer-vision.svg
+- uid: learn.wwl.evaluate-requirements-for-custom-computer-vision-api.badge
+  type: badge
+  title: Evaluate the requirements for implementing the Custom Vision APIs
+  summary: Evaluate the requirements for implementing the Custom Vision APIs
+  iconUrl: /learn/achievements/data-ai/evaluate-the-custom-computer-vision-apis.svg
+- uid: learn.wwl.extract-insights-from-videos-with-video-indexer-service.badge
+  type: badge
+  title: Extract insights from videos with the Video Indexer service
+  summary: Extract insights from videos with the Video Indexer service
+  iconUrl: /learn/achievements/extract-insights-from-videos-with-the-video-indexer-service.svg

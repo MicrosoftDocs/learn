@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.fsharp-first-program
 metadata:
-  title: Write your first F# programs
+  title: Store and retrieve data using F#
   description: In this module, you will learn about variables and data types. You
     will also look at outputting data to the screen and capture user input.
     Additionally you'll explore operators and ways to convert between data
@@ -11,7 +11,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Write your first F# programs
+title: Store and retrieve data using F#
 summary: Write your first F# programs, learn to work with input and output, data
   type conversions and operators.
 abstract: |
