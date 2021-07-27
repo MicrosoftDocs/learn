@@ -10,6 +10,6 @@ metadata:
   ms.author: dapazd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 6
+durationInMinutes: 7
 content: |
   [!include[](includes/4-plan-structure-bicep-file.md)]
