@@ -2,9 +2,9 @@ You now know how to deploy, configure, and utilize Azure SQL Database to build a
 
 DevOps is the union of people, process, and technology to continually provide value to customers. Teams that adopt DevOps culture, practices, and tools become high-performing: building better products faster for greater customer satisfaction.
 
-As database is one of the main parts of a solution, and the ability to have it working with your DevOps practices is a key piece of modern and agile application development.
+As a database is one of the main parts of a solution, and the ability to have your database working with your DevOps practices is a key piece of modern and agile application development.
 
-With Azure SQL, there are several to include the database in the DevOps process. A CI/CD pipeline is the backbone of a DevOps environment, and Azure SQL can be fully integrated with any CI/CD tool you choose. Two of the most common and widely used in Azure are GitHub Actions and Azure DevOps.
+With Azure SQL, there are several approaches to include your database in your DevOps process. A CI/CD pipeline is the backbone of a DevOps environment, and Azure SQL can be fully integrated with any CI/CD tool you choose. Two of the most common and widely used in Azure are GitHub Actions and Azure DevOps.
 
 ## Implement CI/CD for databases
 
