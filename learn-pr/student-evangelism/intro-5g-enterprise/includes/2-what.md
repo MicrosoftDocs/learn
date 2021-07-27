@@ -2,7 +2,7 @@ To explore the capabilities of 5G networks, we can consider two parts: firstly, 
 
 ## 5G network capabilities
 
-In telecommunications, the term '5G' refers to the fifth-generation technology standard for broadband cellular networks. Currently (2021), in most places in the world, the dominant standard is 4G(fourth generation) which is also called LTE(Long Term Evolution). 5G is the successor of LTE. Hence, 5G is the evolution of existing LTE networks. 
+In telecommunications, the term '5G' refers to the fifth-generation technology standard for broadband cellular networks. Currently (2021), in most places in the world, the dominant standard is 4G (fourth generation) which is also called LTE (Long Term Evolution). 5G is the successor of LTE. Hence, 5G is the evolution of existing LTE networks. 
 
 We are all used to mobile technology as consumers. But 5G technology has implications for business as well. 5G is similar to its predecessors in that it's a cellular network service comprising of 'cells.' Cells are logical divisions of a geographical service area. All the cellular devices in a cell (service area) are connected to the internet through the cellular network. Thus, the 5G cellular network provides an 'air interface' to connect mobile devices to the internet through the cell tower. Thus, the cellular service acts as a 'last mile' between the cell tower and the end-user device. 
 
