@@ -1,12 +1,12 @@
-In this module, we started to build a bot that can help school students with their geography lessons. Implementing a complete bot is out of scope for this module.
+In this course, we started to build a bot that can help school students with their geography lessons. Implementing a complete bot is out of scope for this module.
 
-The main thing you learned in this module is how (and why) to create a responsible bot.
+The main thing you learned in this lesson is how (and why) to create a responsible bot.
 
 A responsible bot:
 
 - Introduces itself and makes it clear to the user that it is a bot.
 - Speaks with the user in a natural language and tries to answer the user's questions.
-- Welcomes and supports diverse users by adapting to communication styles and supporting different means of communication (including text and speech).
+- Welcomes and supports diverse users by adapting to communication styles and supporting different means of communication, including text and speech.
 
 From a technological point of view, you learned how to:
 
