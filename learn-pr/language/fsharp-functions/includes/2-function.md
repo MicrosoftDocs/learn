@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Usually you find yourself in a situation where your code looks repetitive, it's doing the same thing in many places or there's minor differences. In situations like these, you should start thinking how to make code reusable. The answer how to tackle this situation is to extract these expressions and make one or more functions. A function is a fundamental building block in numerous programming languages, F# is no different.
 
 ## A function

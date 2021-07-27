@@ -7,7 +7,7 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-dotnet
 title: Create and architect with functions in F#
 summary: Learn what functions are, how to declare and call them. Also, learn how to architect with functions using various patterns.
 abstract: |

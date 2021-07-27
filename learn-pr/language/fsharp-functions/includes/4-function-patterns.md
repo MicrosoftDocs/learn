@@ -1,4 +1,4 @@
-So you've taken repetitious expressions and put those expressions in functions. Great, your code looks a lot better, easier to read. As you get used to using functions more, it's worth starting to look at some powerful patterns that exist in this space. By using these patterns, you will geet code that's easier to read and maintain. 
+So you've taken repetitious expressions and put those expressions in functions. Great, your code looks a lot better, easier to read. As you get used to using functions more, it's worth starting to look at some powerful patterns that exist in this space. By using these patterns, you will get code that's easier to read and maintain. 
 
 ## Declarative versus imperative
 
@@ -39,9 +39,9 @@ Here's an example:
 let add2 a = a + 2
 let multiply3 a = a * 3 
 let addAndMultiply a =
-    let mutable sum = add2 a
-    sum <- multiply3 sum
-    sum 
+    let sum = add2 a
+    let product = multiply3 sum
+    product
 ```
 
 This pattern is so common that F# has an operator for it, the `>>`, that lets you combine two or more functions into one bigger function. By using said operator, you can it instead right the above code like so:
