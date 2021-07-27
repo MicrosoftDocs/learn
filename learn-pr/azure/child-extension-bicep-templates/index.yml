@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 title: Deploy child and extension resources by using Bicep
 summary: |
-  This module shows how to deploy a variety of Azure resources in your Bicep code. Learn about child and extension resources, and how they can be defined and used within Bicep. Use Bicep to work with resources that you created outside a Bicep template or module.
+  Deploy a variety of Azure resources in your Bicep code. Define and use child and extension resources. Work with resources that you created outside a Bicep template or module.
 abstract: |
   After completing this module, you'll be able to:
     - Explain resource types and resource IDs
