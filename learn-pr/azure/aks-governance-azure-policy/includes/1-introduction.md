@@ -10,9 +10,10 @@ In this module, you'll learn how to achieve this by using Azure policy for Kuber
 
 By the end of this module, you'll be able to:
 
-- Describe a continuous integration (CI) and continuous delivery (CD) process that uses GitHub Actions
-- Create a deployment pipeline by using GitHub Actions and Azure
-- Deploy a cloud-native application to AKS by using GitHub Actions
+- Understand how Azure Policy integrates with Azure Kubernetes Service
+- Deploy the Azure policy and Azure Monitor add-on for Azure Kubernetes Service
+- Configure policies to manage compliance state of an Azure Kubernetes Service cluster
+- Monitor cluster compliance status using Azure policy
 
 ## Prerequisites
 
