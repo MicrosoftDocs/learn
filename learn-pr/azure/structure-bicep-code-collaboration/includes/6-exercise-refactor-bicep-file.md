@@ -34,7 +34,7 @@ In the sections below, there are some pointers to specific parts of the template
 
    ::: code language="bicep" source="code/2-template.bicep" range="27" :::
 
-   Why is there a default value of `b24988ac-6180-42a0-ab88-20f7382dd24c`? What does that big long identifier mean? How would someone else know whether to use the default value or override it? What could you do to improve this? Does it even make sense to have this as a parameter?
+   Why is there a default value of `b24988ac-6180-42a0-ab88-20f7382dd24c`? What does that long identifier mean? How would someone else know whether to use the default value or override it? What could you do to improve this? Does it even make sense to have this as a parameter?
 
    > [!TIP]
    > That identifier is the _Contributor_ role definition ID for Azure. How can you use that information to improve the template?
@@ -47,7 +47,7 @@ In the sections below, there are some pointers to specific parts of the template
 
    | Resource | SKU for production | SKU for non-production |
    |-|-|-|
-   | App Service plan | S1, 2 instances | F1, 1 instance |
+   | App Service plan | S1, two instances | F1, one instance |
    | Storage account | GRS | LRS |
    | SQL database | S1 | Basic |
 
@@ -107,7 +107,7 @@ Take a look at the symbolic names for the resources in the template. What could 
    >
    > You don't need to worry about this here, since this is just an example.
 
-1. Your SQL logical server's resource name is set using a variable, even though it needs a globally unique names:
+1. Your SQL logical server's resource name is set using a variable, even though it needs a globally unique name:
 
    ::: code language="bicep" source="code/2-template.bicep" range="33" :::
 
@@ -119,7 +119,7 @@ Take a look at the symbolic names for the resources in the template. What could 
 
    ::: code language="bicep" source="code/2-template.bicep" range="80-89" highlight="7-9" :::
 
-1. Notice how these child resource are declared in your template:
+1. Notice how these child resources are declared in your template:
 
    ::: code language="bicep" source="code/2-template.bicep" range="68-89" highlight="2, 14" :::
 
@@ -158,7 +158,7 @@ Think about anything in the template that might not be obvious, or that needs so
 
    ::: code language="bicep" source="code/2-template.bicep" range="103-127" highlight="22" :::
 
-   That syntax is quite strange, isn't it? Do you think this needs a comment to help explain it?
+   That syntax is strange, isn't it? Do you think this needs a comment to help explain it?
 
 1. Look at the role assignment resource:
 

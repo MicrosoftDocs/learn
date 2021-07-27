@@ -22,8 +22,8 @@ quiz:
       explanation: "Correct. The parameters don't have clear names, so you should rename them to more meaningful identifiers."
     - content: Create a module for each resource.
       isCorrect: false
-      explanation: "Incorrect. The resource definitions in this template are simple, so they don't need to be put into their own modules.."
-    - content: "Create a new output to pass the the storage account key back to the user."
+      explanation: "Incorrect. The resource definitions in this template are simple, so they don't need to be put into their own modules."
+    - content: "Create a new output to pass the storage account key back to the user."
       isCorrect: false
       explanation: "Incorrect. You shouldn't emit secrets as outputs. Outputs aren't designed to handle secure data."
   - content: "You want to ensure your template's users provide valid inputs for the `number` parameter. How should you do this?"
@@ -41,7 +41,7 @@ quiz:
     choices:
     - content: "You can expose all of your resources' properties to your template's users as parameters."
       isCorrect: false
-      explanation: "Incorrect. When you use a configuration set, you minimize the number of parameters you expose to your template's users, and instead ask them to select a predefined set of configuration.."
+      explanation: "Incorrect. When you use a configuration set, you minimize the number of parameters you expose to your template's users, and instead ask them to select a predefined set of configuration."
     - content: "You can abstract the internal complexity of the template by providing a simple set of options."
       isCorrect: true
       explanation: "Correct. When you use a configuration set, you provide a discrete set of options your users can choose from."

@@ -74,7 +74,7 @@ In Bicep, it's important that you give your resources meaningful names. Resource
 
 It's important to think about the symbolic names you apply to your resources. Imagine that a colleague will need to modify the template - will they understand what each resource is for?
 
-For example, suppose you define a storage that will contain product manuals for users to download from your website. You could name give the resource a symbolic name of  `storageAccount`, but if it's in a Bicep file that contains lots of other resources - and maybe even other storage accounts - then that name isn't very descriptive. So you could instead give it a symbolic name that includes some information about its purpose - like perhaps `productManualStorageAccount`.
+For example, suppose you define a storage account that will contain product manuals for users to download from your website. You could name give the resource a symbolic name of  `storageAccount`, but if it's in a Bicep file that contains lots of other resources - and maybe even other storage accounts - then that name isn't very descriptive. So you could instead give it a symbolic name that includes some information about its purpose - like perhaps `productManualStorageAccount`.
 
 In Bicep, you typically use _camel case_ for the names of parameters, variables, and resource symbolic names. This means use a lowercase first letter for the first word, and then capitalize the first letter of subsequent words - like in `productManualStorageAccount`. You're not required to use camel case. If you choose to use a different style, it's important to agree on one standard within your team and use it consistently.
 

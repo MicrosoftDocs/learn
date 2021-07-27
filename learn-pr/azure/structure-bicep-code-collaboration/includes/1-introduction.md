@@ -6,7 +6,7 @@ Suppose you work as an Azure infrastructure administrator at a toy company. You 
 
 A colleague from the quality control team has been tasked to run a customer survey. To accomplish this, they need to deploy a new website and database. They're on a tight deadline so they don't want to build a whole new template if they don't have to. After speaking with them about their requirements, you remember you have a template that is close to what they need.
 
-It's one of the first Bicep files you wrote, so you're worried that it might not be ready for them to use. How can you revise your template to ensure that its easy to understand, easy to read, and easy to modify?
+It's one of the first Bicep files you wrote, so you're worried that it might not be ready for them to use. How can you revise your template to ensure that it's easy to understand, easy to read, and easy to modify?
 
 ## What will we be doing?
 
