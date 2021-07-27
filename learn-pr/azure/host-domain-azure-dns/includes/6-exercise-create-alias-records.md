@@ -57,7 +57,7 @@ Now that you've created a test environment, you're ready to set up the Azure ali
     | Type | **A**. Even though we're creating an alias, the base record type must still be either A, AAAA, or CNAME. |
     | Alias record set | **Yes** |
     | Alias type | You can select either **Azure resource** or **Zone record set**. In this case, select the **Azure resource**. |
-    | Azure resource | From the list of resources, select **myPublicIP**. |
+    | Azure resource | From the list of resources, select **myPublicIP**. If this resource isn't listed, wait several minutes and try creating the record set again. |
 
     When you're done, it should look like this.
 
