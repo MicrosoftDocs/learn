@@ -14,13 +14,15 @@ You start by installing Data Migration Assistant on your SQL Server instance.
 
 1. On the **Connect** window, from the **RDP*** tab, under the **Connect with RDP** section, select **Download RDP File**, Save it to your computer in a location of your choice.
 
-1. Select the RDP file to open it. Select **Connect**, and supply the credentials. Use the **windowsadmin** account, and use the password that you specified for this account.
+1. Select the RDP file to open it. Select **Connect**, and supply the credentials. Use the **windowsadmin** account, and use the password that you specified for this account.You should have an RDP connection open in a separate window.
 
 ## Disable Enhanced Security Configuration
 
-Before you can download Data Migration Assistant, you need to disable Enhanced Security Configuration in Internet Explorer, or it will block the download.
+On your RDP session, before you can download Data Migration Assistant, you need to disable Enhanced Security Configuration in Internet Explorer, or it will block the download.
 
-1. By default, Server Manager should be open. If you closed it, use the **Start** menu to open it.
+1. By default, Server Manager should be open on your connected RDP session. If you closed it, use the **Start** menu to open it.
+
+
 
 1. On the left menu, select **Local Server**.
 
@@ -31,13 +33,13 @@ Before you can download Data Migration Assistant, you need to disable Enhanced S
 ## Download, install, and run Data Migration Assistant
 
 > [!NOTE]  
->  You may need to install .Net Framework 4.8.  You can do so from https://dotnet.microsoft.com/download/dotnet-framework/net48 
+>  You may need to install .Net Framework 4.8 before installing Data Migration Assistant. You can do so from https://dotnet.microsoft.com/download/dotnet-framework/net48. You will need to relaunch your RDP session prior to installing the Data Migration Assistant.
 
-1. Open Internet Explorer, and go to the [Data Migration Assistant download page](https://www.microsoft.com/download/details.aspx?id=53595).
+1. From your RDP session, open Internet Explorer, and go to the [Data Migration Assistant download page](https://www.microsoft.com/download/details.aspx?id=53595).
 
 1. Select **Download**, and install the migration assistant. Accept the defaults through the installation dialog box.
 
-1. To start the assistant, on the desktop, select **Microsoft Data Migration Assistant**.
+1. To start the assistant, on the remote desktop, select **Microsoft Data Migration Assistant** to open the application.
 
 1. To begin a new assessment, on the left menu, select **+**.
 
@@ -48,6 +50,8 @@ Before you can download Data Migration Assistant, you need to disable Enhanced S
 1. Leave the remaining fields at their default values, and select **Create**.
 
     :::image type="content" source="../media/4-02-project-type.png" alt-text="Project type." loc-scope="azure-database-migration":::
+    
+1. In the **Connect to a server** dialog box, enter the values shown above.  When you've successfully connected, on the **Add sources** dialog, select *admsdemovm* and then select **Add**.
 
 ## Configure the project
 
