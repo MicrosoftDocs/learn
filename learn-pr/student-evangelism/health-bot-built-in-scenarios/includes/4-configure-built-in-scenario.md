@@ -92,17 +92,17 @@ You can also change the automatic welcome message that appears when users first 
 
 Configure the built-in scenarios that help users navigate conversations. Examples include the **cancel**, **start over**, and **help** commands.
 
-:::image type="content" source="../media/3-navigation.png" alt-text="Screenshot that shows the Navigation tab.":::
-
 In the **Help** section, you can control every aspect of the help menu. You can add or remove items and edit the description of each menu item.
 
-:::image type="content" source="../media/3-help-section.png" alt-text="Screenshot that shows the Help section.":::
+:::image type="content" source="../media/3-navigation.png" alt-text="Screenshot that shows the Navigation tab.":::
 
-### Cognitive Services
+### Spelling
 
-Health Bot provides Bing Speller to pass all utterances through a spell check before processing by the natural language understanding model. If Bing Speller is enabled, user utterances are spell checked if they aren't understood in their original spelling. For example, a user might have spelling mistakes. 
+:::image type="content" source="../media/3-spelling-section.png" alt-text="Screenshot that shows the spelling section.":::
 
-On the **Cognitive Services** tab, you can configure the:
+Health Bot provides Spelling, this allows you to Configure the built-in spelling correction available in your bot. This services pass all utterances through a spell check before processing by the natural language understanding model. If Spelling service is enabled, user utterances are spell checked if they aren't understood in their original spelling. For example, a user might have spelling mistakes.
+
+On the **Spelling** tab, you can configure the:
 
 * Spelling verification message that displays when the speller has corrected an utterance.
 * Message that displays when the speller has corrected an utterance but user intent wasn't understood.
