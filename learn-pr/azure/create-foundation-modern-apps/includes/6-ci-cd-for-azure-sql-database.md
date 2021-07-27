@@ -10,7 +10,7 @@ With Azure SQL, there are several approaches to include your database in your De
 
 Having the database as part of a CI/CD pipeline means that you want to configure and deploy the structure--and maybe even some of the data--in a fully automated, reproducible, and determinist manner. Once configured, you can run the deployment or update process anytime, for any number of times, and get consistent results.
 
-In this unit, you will learn about the three main approaches for implementing a CI/CD pipline for databases:
+In this unit, you will learn about the three main approaches for implementing a CI/CD pipeline for databases:
 
 - Desired State
 - Code First Migrations
@@ -20,7 +20,7 @@ In this unit, you will learn about the three main approaches for implementing a 
 
 In a Desired State approach, you take a snapshot of the structure of a reference database to represent the desired state. You can then use that snapshot to synchronize another target database, usually the test or production database, to the desired state. A tool like [SqlPackage.exe](/sql/tools/sqlpackage/sqlpackage) can be used to take the snapshot into a `.dacpac` file. When the `.dacpac` is applied to the target database, it will automatically find the differences, generate the correct script, and apply that script to sync the target schema with the reference.
 
-The Deisred State approach is used in the bus-catching scenario; it is probably the easiest and the simplest of the three approaches discussed.
+The Desired State approach is used in the bus-catching scenario; it is probably the easiest and the simplest of the three approaches discussed.
 
 ### Implement Code First Migrations depending on your language
 
