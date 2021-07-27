@@ -2,7 +2,7 @@ Recently, your company acquired a smaller competitor. This company deployed its 
 
 ## Export Azure resources to a template
 
-Azure Resource Manager is the service that's used to deploy and manage resources in Azure. All resources deployed to Azure are tracked by Azure Resource Manager, regardless of the method used to deploy the resource. Information about each resource is made available in JSON format by Azure Resource Manager. You can use the Azure portal, Azure CLI and Azure PowerShell to view the JSON templates and export your Azure resources to JSON ARM templates. Later in this module, you will practice exporting JSON ARM templates.
+Azure Resource Manager is the service that's used to deploy and manage resources in Azure. All resources deployed to Azure are tracked by Azure Resource Manager, regardless of the method used to deploy the resource. Information about each resource is made available in JSON format by Azure Resource Manager. You can use the Azure portal, Azure CLI and Azure PowerShell to view the JSON templates and export your Azure resources to JSON templates. Later in this module, you will practice exporting JSON ARM templates.
 
 > [!NOTE]
 > The export template feature is unable to export more than 200 resources from a resource group at one time. If your resource group contains more than 200 resources, you'll need to export multiple times to capture all resources.
