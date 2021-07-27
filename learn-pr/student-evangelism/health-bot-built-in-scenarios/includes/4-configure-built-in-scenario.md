@@ -10,7 +10,7 @@ On the **Medical protocols** tab, you can configure the behavior of the built-in
 
 Let's start with the configuration of the built-in medical **Triage and symptom checking** scenario.
 
-:::image type="content" source="../media/3-infermedica-settings.png" alt-text="Screenshot that shows the Infermedica Settings section.":::
+:::image type="content" source="../media/3-infermedica-settings.png" alt-text="Screenshot that shows the Infermedica Settings section." lightbox="../media/3-infermedica-settings.png":::
 
 Under **Infermedica Settings**, you can configure the following parameters.
 
@@ -44,7 +44,7 @@ You can configure symptom checking and triage questions.
 
 You can configure title text for suggested care and possible causes.
 
-:::image type="content" source="../media/3-medical-information.png" alt-text="Screenshot that shows the Medical Information tab.":::
+:::image type="content" source="../media/3-medical-information.png" alt-text="Screenshot that shows the Medical Information tab."  lightbox="../media/3-medical-information.png":::
 
 On the **Medical Information** tab, you can edit the responses for questions about conditions, symptoms, and online resources.
 
@@ -56,13 +56,13 @@ Under **Compliance** configuration, the following topics can be changed.
 
 Configure how users can manage their data.
 
-:::image type="content" source="../media/3-privacy-tab.png" alt-text="Screenshot that shows the Privacy tab.":::
+:::image type="content" source="../media/3-privacy-tab.png" alt-text="Screenshot that shows the Privacy tab." lightbox="../media/3-privacy-tab.png":::
 
 ### Security
 
 Configure the security settings for your bot instance. For example, you can change the timeout duration and message and require user authentication.
 
-:::image type="content" source="../media/3-security-tab.png" alt-text="Screenshot that shows the Security tab.":::
+:::image type="content" source="../media/3-security-tab.png" alt-text="Screenshot that shows the Security tab." lightbox="../media/3-security-tab.png":::
 
 ### Terms and consent
 
@@ -82,11 +82,11 @@ Configure built-in scenarios that interact with your users. For example, you can
 * A default message when returning from interrupting scenarios.
 * A default reply for utterances that aren't understood.
 
-   :::image type="content" source="../media/3-interactions.png" alt-text="Screenshot that shows the Interactions tab options.":::
+   :::image type="content" source="../media/3-interactions.png" alt-text="Screenshot that shows the Interactions tab options."  lightbox="../media/3-interactions.png":::
 
 You can also change the automatic welcome message that appears when users first enter the chat. Or, you can use a custom scenario as an automatic welcome scenario. A custom welcome scenario overrides the automatic welcome message, but note that a custom welcome scenario won't work with multi-step scenarios.
 
-:::image type="content" source="../media/3-automatic-welcome.png" alt-text="Screenshot that shows the Automatic welcome section.":::
+:::image type="content" source="../media/3-automatic-welcome.png" alt-text="Screenshot that shows the Automatic welcome section." lightbox="../media/3-automatic-welcome.png":::
 
 ### Navigation
 
@@ -94,11 +94,11 @@ Configure the built-in scenarios that help users navigate conversations. Example
 
 In the **Help** section, you can control every aspect of the help menu. You can add or remove items and edit the description of each menu item.
 
-:::image type="content" source="../media/3-navigation.png" alt-text="Screenshot that shows the Navigation tab.":::
+:::image type="content" source="../media/3-navigation.png" alt-text="Screenshot that shows the Navigation tab." lightbox="../media/3-navigation.png":::
 
 ### Spelling
 
-:::image type="content" source="../media/3-spelling-section.png" alt-text="Screenshot that shows the spelling section.":::
+:::image type="content" source="../media/3-spelling-section.png" alt-text="Screenshot that shows the spelling section." lightbox="../media/3-spelling-section.png":::
 
 Health Bot provides Spelling, this allows you to Configure the built-in spelling correction available in your bot. This services pass all utterances through a spell check before processing by the natural language understanding model. If Spelling service is enabled, user utterances are spell checked if they aren't understood in their original spelling. For example, a user might have spelling mistakes.
 
@@ -120,4 +120,4 @@ Health Bot can be used to provide users with chat support from live agents. In s
 
 On the **Human Handoff** tab, you can enable handoff to human agents' functionality and configure related parameters. Examples are user and agent timeout and messages that are displayed when a user is waiting for an agent to connect or when an agent connects to a conversation. Handoff to live agents by using Microsoft Teams and integration with Dynamics require more configuration.
 
-:::image type="content" source="../media/3-human-handoff.png" alt-text="Screenshot that shows the Human Handoff tab.":::
+:::image type="content" source="../media/3-human-handoff.png" alt-text="Screenshot that shows the Human Handoff tab."  lightbox="../media/3-human-handoff.png":::
