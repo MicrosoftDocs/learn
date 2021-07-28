@@ -50,9 +50,9 @@ Start by creating a new web app resource in the Azure portal.
 
 ## Configure git deployment
 
-Use any of the usual deployment tools for your web app and its deployment slots. In this exercise, you'll use a local git repository for deployment. Set up the web app to use git by following these steps.
+You can use any of the usual deployment tools for your web app and its deployment slots. In this exercise, you'll set up the web app to use a local git repository. Follow  these steps.
 
-1. On the **Overview** page, in the left menu pane, under **Deployment**, select **Deployment Center**.
+1. On the web app App Service page, in the left menu pane, under **Deployment**, select **Deployment Center**.
 
 1. On the **Settings** tab, for **Source**, select **Local Git**. On the top menu bar, select **Save**.
 
@@ -62,28 +62,30 @@ Use any of the usual deployment tools for your web app and its deployment slots.
 
 ## Configure the git client and clone the web app source code
 
-Now, you'll set up the git client in Cloud Shell for the left-hand menu, and use it to clone a sample web app. Follow these steps.
+Now, you'll set up the git client in Cloud Shell and use it to clone a sample web app. Follow these steps.
 
-1. In the Azure portal, open Azure Cloud Shell by selecting its icon on the top left-side toolbar.
+1. In the Azure portal, open Azure Cloud Shell by selecting its icon on the top toolbar.
 
-1. Run the following commands to set up your git username and email address. These commands aren't associated with any account or sign-up, and you can use whatever values you like.
+      :::image type="content" source="../media/3-cloud-shell-icon.png" alt-text="Cloud shell icon in toolbar.":::
+
+1. In the Cloud Shell tool bar, ensure that Bash is selected. Copy the ollowing code to Notepad and replace the values in quotes with your preferred username and email address. These config values aren't associated with any Azure account or sign-up, so you can use whatever values you like. 
 
     ```bash
-    git config --global user.name "<your name>"
-    git config --global user.email "<your email address>"
+    git config --global user.name "your-username"
+    git config --global user.email "your-email-address
+    "
     ```
 
-1. To create a folder for the source code, run the following commands.
+1. Copy and paste your edited code into the Cloud Shell and run it.
+ 
+1. Create a folder for the source code. Run the following commands.
 
     ```bash
     mkdir demoapp
-    ```
-
-     ```bash
     cd demoapp
     ```
 
-1. To clone the source for the web app, run the following commands.
+1. Clone the source for the web app. Run the following commands.
 
     ```bash
     git clone https://github.com/Azure-Samples/app-service-web-dotnet-get-started.git
@@ -94,22 +96,19 @@ Now, you'll set up the git client in Cloud Shell for the left-hand menu, and use
 
 To use git to deploy the source code to the web app's production slot, set up your app's git URL as a remote repository. Follow these steps.
 
-1. In the Azure portal, on the web app's **Overview** page, in the **Essentials** section, select the *Copy to clipboard* icon for **URL**. Note that the URL contains your deployment username.
+1. In the Azure portal, on the web app's **Overview** page, in the **Essentials** section, select the *Copy to clipboard* icon for **URL**. Note that the URL contains your deployment name for the web app.
 
-    :::image type="content" source="../media/3-copy-git-clone-url.png" alt-text="Copy the git clone URL.":::
+    :::image type="content" source="../media/3-copy-git-clone-url.png" alt-text="Copy the git clone URL." lightbox="../media/3-copy-git-clone-url.png":::
 
     > [!NOTE]
     > If you don't see the git clone URL where it's shown in the preceding screenshot, refresh the portal.
 
-1. In the Azure portal, on the web app's **Overview** page, in the **Essentials** section, select the *Copy to clipboard* icon for **Git clone url**. Note that the URL contains your deployment username.
+1. Select the *Copy to clipboard* icon for **Git clone url**. Note that the URL contains your deployment username.
 
 1. In Cloud Shell, run the following command to configure the URL as a git remote named "production". Replace `git-clone-url` with the URL from the previous step.
 
     ```bash
     cd app-service-web-dotnet-get-started
-    ```
-
-    ```bash
     git remote add production <git-clone-url>
     ```
 
@@ -119,9 +118,9 @@ To use git to deploy the source code to the web app's production slot, set up yo
     git push production
     ```
 
-1. When the deployment finishes, in the Azure portal, go to the web app's **Overview** page, and then select **URL**. You can double-click to copy and paste.
+1. When the deployment finishes, in the Azure portal, go to the web app's **Overview** page, and then select **URL**. You can double-click to open the URL in a new tab.
 
-    ![The web app in the production slot.](../media/3-web-app-production-slot.png)
+    :::image type="content" source="../media/3-web-app-production-slot.png" alt-text="The web app in the production slot.":::
 
 1. Close the browser tab that displays the web app.
 
@@ -131,11 +130,13 @@ For the new web app, you created only one slot: the production slot. You deploye
 
 Next, you'll create a deployment slot where you can stage new versions of the web app.
 
-1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select the web app.
+1. On the Azure portal menu or from the **Home** page, select **All resources**, and then filter by **Type == App Service**.
+ 
+3. Select your web app. The **web app App Service** pane appears.
 
-1. In the middle menu pane, under **Deployment**, select **Deployment slots**. The **Deployment slots** pane appears.
+1. In the menu pane, under **Deployment**, select **Deployment slots**. The **Deployment slots** pane appears.
 
-    ![Access deployment slots.](../media/3-access-deployment-slots.png)
+    :::image type="content" source="../media/3-access-deployment-slots.png" alt-text="Access deployment slots.":::
 
 1. From the top menu bar, select **Add Slot**. The **Add a slot** pane appears.
 
