@@ -8784,6 +8784,56 @@
       "source_path": "learn-pr/wwl-data-ai/get-started-ai-fundamentals/7-understand-responsible-ai.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/8-understand-responsible-ai",
       "redirect_document_id": true
+    },
+    {
+    "source_path": "learn-pr/paths/evaluate-text-with-language-services/index.md",
+    "redirect_url": "https://docs.microsoft.com/learn/paths/process-translate-text-azure-cognitive-services/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/paths/create-bots-with-the-azure-bot-service/index.md",
+    "redirect_url": "https://docs.microsoft.com/learn/paths/create-conversational-ai-solutions/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/index.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/1-introduction.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/2-overview-of-luis.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/3-exercise-create-luis-service.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/4-exercise-add-intents-and-entities.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/5-exercise-train-luis-model.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/6-knowledge-check.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/7-summary.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
+    "redirect_document_id": false
     }    
   ]
 }
