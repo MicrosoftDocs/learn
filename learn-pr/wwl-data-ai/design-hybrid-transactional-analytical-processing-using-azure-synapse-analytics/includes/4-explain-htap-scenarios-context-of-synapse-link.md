@@ -1,4 +1,4 @@
-HTAP enables businesses to perform analytics over database systems that provide high performance transactional capabilities without impacting the performance of these systems. This enables organizations to use a database to fulfill both transactional and analytical needs to support near real-time analysis of operational data to make timely decisions.
+Hybrid Transactional and Analytical Processing (HTAP) enables businesses to perform analytics over database systems that provide high-performance transactional capabilities without impacting the performance of these systems. HTAP enables organizations to use a database to fulfill both transactional and analytical needs to support near real-time analysis of operational data to make timely decisions.
 
 As an example, Adventure Works uses Azure Cosmos DB to store sales orders and customer profile data from their eCommerce site. The NoSQL document store provided by the Azure Cosmos DB provides the familiarity of managing their data using SQL syntax, while being able to read and write the files at a massive, global scale.
 
