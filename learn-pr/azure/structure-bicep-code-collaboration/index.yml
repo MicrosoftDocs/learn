@@ -13,7 +13,7 @@ title: Structure your Bicep code for collaboration
 summary: |
   Build Bicep files that support collaborative development. Plan your parameters to make your templates easy to deploy. Use a consistent style, clear structure, and comments to make your Bicep code easy to understand, use, and modify.
 abstract: |
-  After competing this module, you'll be able to:
+  After completing this module, you'll be able to:
     - Select the appropriate parameters for a Bicep file
     - Structure your Bicep code and parameters to support team collaboration
     - Document your Bicep code by using comments and resource tags
