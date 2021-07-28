@@ -21,7 +21,7 @@ You've already prepared your website's Bicep file, which can be used to deploy d
 
    :::code language="bicep" source="code/6-main.bicep" :::
 
-1. Save the file.
+1. Save your changes to the file.
 
 1. In the Visual Studio Code **Terminal**, stage the changes, commit the changes and push the changes to your repository by using the following commands:
 
@@ -40,7 +40,7 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 1. Remove the `script` step from the pipeline definition by deleting the bottom two lines of the file.
 
    > [!TIP]
-   > When you work in Visual Studio Code and have installed the Azure Pipelines extension, try using the <kbd>Ctrl+Space</kbd> key combination. It shows a context menu of suggested elements to add at your current cursor position. 
+   > When you work in Visual Studio Code and have installed the Azure Pipelines extension, try using the <kbd>Ctrl+Space</kbd> key combination. It shows a context menu with suggested elements to add at your current cursor position. 
 
 1. Because Bicep is still new, it changes regularly. It's a good idea to upgrade the version of Bicep on the agent before you start to use it, to ensure you can use all of the latest features. Add a new task at the bottom of the file to run the `az bicep upgrade` command:
 
@@ -57,7 +57,7 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 
    Notice that this step uses a system variable, `$(Build.BuildNumber)`, to name the deployment. This way, you can easily see which pipeline run a deployment corresponds to.
 
-1. Save the changes to the file. Your file should look like the below:
+1. Save your changes to the file. Your file should look like the below:
 
    :::code language="yaml" source="code/6-pipeline.yaml" :::
 
@@ -108,7 +108,7 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
    | _ResourceGroupName_ | _ToyWebsite_ |
    | _EnvironmentType_   | _nonprod_    |
 
-1. Follow the process one more time to create a variable named _DeployToyManualsStorageAccount_, with a value of _true_. For this variable, check the box titled **Let users override this value when running this pipeline**.
+1. Follow the process one more time to create a variable named _DeployToyManualsStorageAccount_, with a value of _true_. For this variable, select **Let users override this value when running this pipeline**.
 
    :::image type="content" source="../media/6-edit-pipeline-variable-deploytoymanualsstorageaccount.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline variable editor." border="true":::
 
@@ -148,11 +148,11 @@ Your template includes a storage account, which your website team uses to store 
 
    :::image type="content" source="../media/6-pipeline-run-job.png" alt-text="Screenshot of the Azure DevOps interface showing the job page, with the Job menu item highlighted." border="true":::
 
-1. Select **fx 1 queue time variable used**.
+1. Select **1 queue time variable used**.
 
    :::image type="content" source="../media/6-log-variables.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline log, with the '1 queue time variable used' item highlighted." border="true":::
 
-   The value that you override for this pipeline's run are shown. Notice that the `DeployToyManualsStorageAccount` variable's value is _false_, since you overrode it.
+   The value that you override for this pipeline's run is shown. Notice that the `DeployToyManualsStorageAccount` variable's value is _false_, since you overrode it.
 
 1. Inspect the rest of your pipeline output.
 

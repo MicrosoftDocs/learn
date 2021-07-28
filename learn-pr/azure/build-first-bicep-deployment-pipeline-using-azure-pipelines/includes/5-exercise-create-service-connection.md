@@ -3,7 +3,7 @@ Before you can deploy your toy company's website from a pipeline, you need to cr
 > [!div class="checklist"]
 > * Create a resource group for your website.
 > * Create an Azure AD service principal and grant it access to the resource group.
-> * Create an Azure Pipelines service connection and configure it with the service principal's credentials.
+> * Create an Azure Pipelines service connection and configure it to use the service principal's credentials.
 
 This exercise requires that you have permission to create applications and service principals in your Azure Active Directory (Azure AD) directory. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
 
@@ -11,7 +11,7 @@ This exercise requires that you have permission to create applications and servi
 
 ::: zone pivot="cli"
 
-To work with service principals in Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli) tools.
+To work with service principals in Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) tools.
 
 1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
 
@@ -41,7 +41,7 @@ To work with service principals in Azure, you need to sign in to your Azure acco
 
 ::: zone pivot="powershell"
 
-To deploy this template to Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps), and sign in to the same account that activated the sandbox.
+To deploy this template to Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true), and sign in to the same account that activated the sandbox.
 
 1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
 
@@ -199,6 +199,9 @@ Now that you've created the resource group and service principal, you create a s
 1. In **Service connection name**, enter _ToyWebsite_. Ensure **Grant access permission to all pipelines** is checked.
 
    :::image type="content" source="../media/5-create-service-connection-principal-details-3.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Create service connection' page, with the service connection name filled out, and the 'Verify and save' button highlighted." border="true":::
+
+   > [!TIP]
+   > For simplicity, you're allowing every pipeline to access your service connection. When you create real service connections that work with production resources, consider restricting access just to the pipelines that need them.
 
 1. Select **Verify and save**. Azure Pipelines saves your new service connection and displays it in the list of service connections.
 

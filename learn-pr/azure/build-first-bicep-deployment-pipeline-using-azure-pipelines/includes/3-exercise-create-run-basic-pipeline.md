@@ -85,7 +85,7 @@ Now that you have your organization, project and repository created, you're read
 
    :::image type="content" source="../media/3-vs-code-pipeline-file.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the deploy folder and the azure-pipelines.yml file shown." border="true":::
 
-1. Copy the following into the file: 
+1. Copy the following pipeline definition into the file: 
 
    :::code language="yaml" source="code/3-pipeline.yaml" :::
 
@@ -125,7 +125,7 @@ You have created a pipeline definition. Here, you register the pipeline with Azu
 
    Your YAML pipeline definition is shown.
 
-   > [!NOTE]
+   > [!TIP]
    > The Azure Pipelines web interface provides an editor for managing your pipeline definition. In this module, we work with the definition file in Visual Studio Code, but you can explore the Azure Pipelines editor to see how it works, too.
 
 1. Select **Run**.
@@ -160,13 +160,15 @@ You have created a pipeline definition. Here, you register the pipeline with Azu
 
    :::image type="content" source="../media/3-pipeline-job-checkout-log.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline job log, with the 'Checkout' step highlighted." border="true":::
 
-   The logs for each step provide a lot of detail on exactly what happened. In this case, the repository's contents was downloaded from Azure Repos to the agent's file system.
+   The logs for each step provide a lot of detail on exactly what happened. This is helpful if you need to diagnose a problem with a pipeline, since you don't have access to the agent that ran your steps.
+   
+   In this case, the repository's contents was downloaded from Azure Repos to the agent's file system.
 
-1. Select the **Placeholder step** step.
+1. Select **Placeholder step**.
 
    :::image type="content" source="../media/3-pipeline-job-placeholder-log.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline job log, with the 'Placeholder step' highlighted." border="true":::
 
-   The logs for this step include the contents of the script as it was specified in your pipeline's YAML file, and the _Hello world!_ text that the script emitted.
+   The logs for this step include the contents of the script as it was specified in your pipeline's YAML file, and the `Hello world!` text that the script emitted.
 
 ## Inspect how pipeline execution can be linked back to a commit
 

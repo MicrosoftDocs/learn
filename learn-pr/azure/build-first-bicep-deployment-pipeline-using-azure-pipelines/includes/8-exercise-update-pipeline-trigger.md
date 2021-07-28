@@ -1,4 +1,6 @@
-You previously created a pipeline that can execute a Bicep deployment to your Azure environment. In this exercise you'll make the pipeline run automatically whenever a file changes on your **main** branch. You'll use the updated pipeline to deploy a change that your colleague requested - they want the website app to be always running, and they asked you to configure the App Service Always On feature for the site.
+Your colleague has asked you to configure the website to enable the App Service Always On feature, which keeps the website app always running.
+
+In this exercise, you'll update the pipeline you previously created to run automatically whenever a file changes on your **main** branch. You'll use the updated pipeline to deploy the configuration change.
 
 During the process, you'll:
 
