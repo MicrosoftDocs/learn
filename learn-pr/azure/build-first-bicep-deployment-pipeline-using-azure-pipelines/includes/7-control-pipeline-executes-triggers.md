@@ -29,6 +29,9 @@ You can also exclude specific branches, too. Suppose you're collaborating with t
 
 :::code language="yaml" source="code/7-branch-filter-exclude.yaml" highlight="5-6" :::
 
+> [!TIP]
+> Notice the quote marks around the wildcard in the include filter. The YAML file format requires that you include quotes when you have a single `*` character like this.
+
 ### Path filters
 
 Sometimes, you have files in your repository that don't relate to your deployment. For example, in your repository you might have a _deploy_ folder that contains your Bicep code, and a separate _docs_ folder that contains your documentation files. You want to trigger your pipeline when anyone makes a change to any of the Bicep files in the _deploy_ folder, but you don't want to trigger the pipeline if someone only changes a documentation file. To configure this, you can use a _path filter_:
