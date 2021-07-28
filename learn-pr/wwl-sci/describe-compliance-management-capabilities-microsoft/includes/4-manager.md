@@ -27,7 +27,7 @@ Compliance Manager tracks the following types of controls:
 - **Your controls**: sometimes referred to as customer-managed controls, these are implemented and managed by the organization.
 - **Shared controls**: responsibility for implementing these controls is shared by the organization and Microsoft.
 
-Compliance Manager continuously assesses controls by scaning through your Microsoft 365 environment and detecting your system settings, continuously and automatically updating your technical action status.
+Compliance Manager continuously assesses controls by scanning through your Microsoft 365 environment and detecting your system settings, continuously and automatically updating your technical action status.
 
 ## Assessments
 
