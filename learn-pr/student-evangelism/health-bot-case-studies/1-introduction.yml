@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.health-bot-case-studies.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  author: rodanthi-alexiou
+  ms.author: chnoring
+  ms.date: 07/27/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
