@@ -26,6 +26,21 @@ When you use the what-if operation, it lists six types of changes:
 
 If you don't need to know all of the change types, you can use the `-WhatIfExcludeChangeType` argument to omit the types you're not interested in.
 
+### What-if example
+
+TODO: Create an example.
+
+```azurecli
+az deployment group what-if \
+  --resource-group ToyStorage \
+  --template-file $templateFile \
+  --result-format FullResourcePayloads
+```
+
+```azurecli
+show the output
+```
+
 > [!NOTE]
 > The what-if operation sometimes shows that a resource will change when actually no change will happen. We're working to reduce these problems, but we need your help. [Please report these problems](https://aka.ms/whatifissues).
 
@@ -35,15 +50,69 @@ If you don't need to know all of the change types, you can use the `-WhatIfExclu
 
 - The what-if operation can't resolve the reference function. Every time you set a property to a template expression that includes the reference function, what-if reports the property will change. This behavior happens because what-if compares the current value of the property (such as true or false for a boolean value) with the unresolved template expression. Obviously, these values won't match. When you deploy the template, the property will only change when the template expression resolves to a different value.
 
-## Documentation resources
+## Verify your templates with documentation
 
-TODO: Insert text here.
+Verifying your templates and having confidence in your deployments is an important step in the Infrastructure as Code process. There are multiple documentation resources such as the [Azure ARM Template Reference](azure/templates/) documentation and the [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/) repository that can assist you in building and finalizing your templates for deployment.
 
 ### ARM template reference
 
-TODO: Insert text here.
+The [Azure ARM Template Reference](azure/templates/) documentation is a source of information for ARM template structure, resource types, API versions, and property definitions for Azure resources. Both JSON and Bicep examples are included.
 
-The [Azure ARM Template Reference](azure/templates/) documentation.
+The documentation allows you to choose specific resource providers and their API versions to determine what settings and properties can be set in your template, including which properties are required and which are optional.
+
+The following is an example of an App Service Plan using the latest API version.
+
+```bicep
+resource symbolicname 'Microsoft.Web/serverfarms@2020-12-01' = {
+  name: 'string'
+  kind: 'string'
+  location: 'string'
+  tags: {}
+  properties: {
+    workerTierName: 'string'
+    hostingEnvironmentProfile: {
+      id: 'string'
+    }
+    perSiteScaling: bool
+    maximumElasticWorkerCount: int
+    isSpot: bool
+    spotExpirationTime: 'string'
+    freeOfferExpirationTime: 'string'
+    reserved: bool
+    isXenon: bool
+    hyperV: bool
+    targetWorkerCount: int
+    targetWorkerSizeId: int
+    kubeEnvironmentProfile: {
+      id: 'string'
+    }
+  }
+  sku: {
+    name: 'string'
+    tier: 'string'
+    size: 'string'
+    family: 'string'
+    capacity: int
+    skuCapacity: {
+      minimum: int
+      maximum: int
+      elasticMaximum: int
+      default: int
+      scaleType: 'string'
+    }
+    locations: [
+      'string'
+    ]
+    capabilities: [
+      {
+        name: 'string'
+        value: 'string'
+        reason: 'string'
+      }
+    ]
+  }
+}
+```
 
 ### Azure quickstart templates
 
