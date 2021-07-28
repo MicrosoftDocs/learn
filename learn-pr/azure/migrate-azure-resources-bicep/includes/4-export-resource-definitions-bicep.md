@@ -8,9 +8,9 @@ Azure Resource Manager is the service that's used to deploy and manage resources
 
 ## Export Azure resources to a template
 
-Information about each resource is made available in JSON format by Azure Resource Manager. When you ask for a copy of the JSON representation of a resource, this is called _exporting_ the resource.
+Information about each resource is made available in JSON format by Azure Resource Manager. When you ask for a copy of the JSON representation of a resource, you are _exporting_ the resource.
 
-The Azure portal, Azure CLI and Azure PowerShell cmdlets can all be used to export your Azure resources and resource groups to JSON ARM templates. This is one of the first steps in migrating your Azure resources to Bicep. Later in this module, you'll practice exporting JSON ARM templates yourself.
+The Azure portal, Azure CLI, and Azure PowerShell cmdlets can all be used to export your Azure resources and resource groups to JSON ARM templates. This is one of the first steps in migrating your Azure resources to Bicep. Later in this module, you'll practice exporting JSON ARM templates yourself.
 
 > [!NOTE]
 > The export template feature is unable to export more than 200 resources from a resource group at one time. If your resource group contains more than 200 resources, you'll need to export multiple times to capture all resources.
@@ -126,7 +126,7 @@ When you attempt to export a resource through the Azure portal, Azure CLI, or Az
 
 :::image type="content" source="../media/4-export-error-azcli.png" alt-text="Azure CLI error message about resources that cannot be exported.." border="true":::
 
-You can use this error message and the [Azure Resource Explorer](azure/azure-resource-manager/templates/view-resources#use-resource-explorer) to help re-create these resources in your exported template. While the export template feature will not generate the appropriate JSON, you can reference it using the Azure Resource Explorer.
+You can use this error message and the [Azure Resource Explorer](azure/azure-resource-manager/templates/view-resources#use-resource-explorer) to help re-create these resources in your exported template. While the export template feature won't generate the appropriate JSON, you can reference it using the Azure Resource Explorer.
 
 ## Recommended workflow for exporting templates to Bicep
 
