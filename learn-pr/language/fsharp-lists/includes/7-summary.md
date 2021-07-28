@@ -1,4 +1,4 @@
-In this module, you first covered the topic of collections. There are three main collections lists, sequences and arrays. Each type of collection has their own pros and cons. 
+In this module, you first covered the topic of collections. There are three main collections lists, sequences, and arrays. Each type of collection has their own pros and cons. 
 
 We then focused on lists and list properties. Lists are implemented as linked lists which facilities accessing items at the start of the list but also using a zero based index.
 

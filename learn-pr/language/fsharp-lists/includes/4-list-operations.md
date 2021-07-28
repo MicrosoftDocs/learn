@@ -1,4 +1,4 @@
-When you items in a list, you will want to carry out operatioons on either the whole or part of the list. The list module, contains a lot of useful operations that lets you do just that.
+When you store many items in a list, you will want to carry out operations on either the whole or part of the list. The list module, contains many useful operations that let you do just that.
 
 ## List module functions
 
@@ -13,7 +13,7 @@ let cards = [ 1 .. 5 ]
 List.iter(fun i -> printfn "%i" i) cards // 1 2 3 4 5
 ```
 
-The `iter()` function takes a function, above you are providing an anonymous function using the `fun` keyword. The function takes a parameter that represents the current item as it's being iterated through. This is the equivalent of writing the following code with a loop:
+The `iter()` function takes a function, above you are providing an anonymous function using the `fun` keyword. The function takes a parameter that represents the current item as it's being iterated through. This code is the equivalent of writing the following code with a loop:
 
 ```fsharp
 for i in cards do printfn "%i" i
@@ -76,7 +76,7 @@ A thing you are likely to do is, sort. Here's three functions you might find use
 
 Another thing you might want to do is to find a specific element. There are a few different functions to choose from namely:
 
-- `find()`, it finds the first element that matches a condition. To use `find()` you need to provide it function (predicate) that expresses how to find the item. Here's an example:
+- `find()`, it finds the first element that matches a condition. To use `find()`, you need to provide it function (predicate) that expresses how to find the item. Here's an example:
 
    ```fsharp
    let list = [1;2;3;4]
@@ -95,7 +95,7 @@ Another thing you might want to do is to find a specific element. There are a fe
    findValue 5 list // Not found
    ```
 
-   In the above code we send in a value to compare to our list. If found, it returns `Some`, if not found, then it's a `None`.
+   In the above code, we send in a value to compare to our list. If found, it returns `Some`, if not found, then it's a `None`.
 
 - `tryFindIndex()`, just like `tryFind()`, it returns an option and it takes a function (predicate) that evaluates to a boolean. Here's what using it might look like:
 
@@ -108,9 +108,9 @@ Another thing you might want to do is to find a specific element. There are a fe
 
 ### Arithmetic operations
 
-Being able to carry out mathematical operations on a list can be really valuable. There are many functions to choose from in the List module API but there are three very useful ones in `sum()`, `average()` and `sumBy()`. Here's how they work:
+Being able to carry out mathematical operations on a list can be valuable. There are many functions to choose from in the List module API but there are three useful ones in `sum()`, `average()`, and, `sumBy()`. Here's how they work:
 
-- `sum()`, using this function you iterate over each item sum things up. Here's how you can use it:
+- `sum()`, using this function you iterate over each item sum thing up. Here's how you can use it:
 
    ```fsharp
    let sum - List.sum [1 .. 5] // sum = 15 

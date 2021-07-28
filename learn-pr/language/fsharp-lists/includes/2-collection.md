@@ -1,4 +1,4 @@
-You find yourself in a situation where you have many more than one of a certain type of data. Now, you could create a variable for each piece of data or you could group them into a collection. Doing so brings advantages like being able to carry out methods on invidual pieces of data but also on the collection as a whole.
+You find yourself in a situation where you have many more than one of a certain type of data. Now, you could create a variable for each piece of data or you could group them into a collection. Doing so brings advantages like being able to carry out methods on individual pieces of data but also on the collection as a whole.
 
 ## Collections
 
@@ -10,7 +10,7 @@ let logEntryTuesDay = "second entry"
 let logEntryWednesday = "third entry"
 ```
 
-You can keep going like the above code, for each new entry, but at some point it's starting to feel impractical. The data seem related, is of the same type and do you really want to create a new variable for each entry? Probably not, so you turn to a collection, where you can instead creating a logical grouping that you can manage, whether it's adding or removing or some other operation:
+You can keep going like the above code, for each new entry, but at some point it's starting to feel impractical. The data seem related, is of the same type and do you really want to create a new variable for each entry? Probably not, so you turn to a collection, where you can instead create a logical grouping that you can manage, whether it's adding or removing or some other operation:
 
 ```fsharp
 logEntriesWeek = ["first entry", "second entry"; "third entry"]
@@ -22,7 +22,7 @@ The above code is a lot less to type and it also creates a sense of orders, ever
 - **Lists**, a list in F# is an ordered, immutable series of elements of the same type.
 - **Sequences**, a sequence is a logical series of elements all of one type.
 
-Which one you want to use depends on your situation. The face that an array is mutable means it's easy to add and remove elements of data but there might be a performance hit as it is mutable. A list on the other hand is immutable and may offer better performance than an array but you might have to be more creative if you want to seemingly change its content, by for example creating new lists from other lists. A sequence has a just-in-time feeling to it, as it's great with large collections of data, where you don't expect to use all elements, and only computes elements when required. Therefore it can offer better performance than a list in certain situations.
+Which one you want to use depends on your situation. The face that an array is mutable means it's easy to add and remove elements of data but there might be a performance hit as it is mutable. A list on the other hand is immutable and may offer better performance than an array but you might have to be more creative if you want to seemingly change its content, by, for example,  creating new lists from other lists. A sequence has a just-in-time feeling to it, as it's great with large collections of data, where you don't expect to use all elements, and only computes elements when required. Therefore it can offer better performance than a list in certain situations.
 
 ## Lists
 
@@ -48,7 +48,7 @@ Lists need to have the same type of element, so the below declaration is not per
 let cards = [ 1, "Ace", "King" ] // not permitted
 ```
 
-Above you are mixing numbers and strings, you need to keep with one type. Another way to create a list is by using a range operator `..`, the idea is to define the start element and then an end element, separated by `:`. Thereby all the numbers from start, the between elements, and the end element is created. In the below example it create the values `1 2 3 4 5`:
+Above you are mixing numbers and strings, you need to keep with one type. Another way to create a list is by using a range operator `..`, the idea is to define the start element and then an end element, separated by `:`. Thereby all the numbers from start, the between elements, and the end element is created. In the below example, it creates the values `1 2 3 4 5`:
 
 ```fsharp
 let numbers = [ 1 .. 5 ]
@@ -79,13 +79,13 @@ let fullList = cards @ otherCardList // "Ace", "King", "Queen", "Jack", "10"
 
 ## Properties
 
-Lists in F# are implemented as linked lists, meaning it's a structure where each element is connect to another element. There are also concepts like "head" meaning the first element in the list, and "tail" meaning everything that's not the head. Imagine you have the following items in a list `1 2 3 4`, then you can think of the list as consisting of two parts, head and tail:
+Lists in F# are implemented as linked lists, meaning it's a structure where each element is connected to another element. There are also concepts like "head" meaning the first element in the list, and "tail" meaning everything that's not the head. Imagine you have the following items in a list `1 2 3 4`, then you can think of the list as consisting of two parts, head and tail:
 
 | head | tail |
 |--|--|
 | 1 | 2,3,4 |
 
-What this division gives you is the ability to quickly be able to access the first element, to read or remove it or whatever you want to do. Should you want to access a specific item in the list, there's an `Item` property that takes a 0-based index like so:
+What this division gives you are the ability to quickly be able to access the first element, to read or remove it or whatever you want to do. Should you want to access a specific item in the list, there's an `Item` property that takes a 0-based index like so:
 
 ```fsharp
 let list = [1; 2; 3; 4]

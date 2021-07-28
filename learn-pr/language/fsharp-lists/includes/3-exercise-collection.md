@@ -2,7 +2,7 @@ You are working as a developer at a casual games company. You've been asked to c
 
 ## Create a deck
 
-A deck of cards have 52 cards, we will for convenience make that 5 cards, so it's easier to read the console print out. You can create a series of numbers using `..`.
+A deck of cards has 52 cards, we will for convenience make that five cards, so it's easier to read the console print. You can create a series of numbers using `..`.
 
 1. Create a new project by running `dotnet new`:
 
@@ -47,7 +47,7 @@ Congratulations! You've implemented a deck of cards you can draw from.
 
 ## Draw cards to a hand
 
-So, drawing cards is great, but usually in a card game there's players that wants to pick up those cards - a hand. Next, you will implement so that each card you draw will also be picked up by a hand. You will need to make some modifications to your code to support this scenario.
+So, drawing cards is great, but usually in a card game there's players that want to pick up those cards - a hand. Next, you will implement so that each card you draw will also be picked up by a hand. You will need to make some modifications to your code to support this scenario.
 
 1. Add the following code, just where you declared the `cards` list:
 
@@ -55,7 +55,7 @@ So, drawing cards is great, but usually in a card game there's players that want
    let hand = []
    ```
 
-1. Next, modify the `drawCard()` method to accept a tuple, that consist of two lists, representing the deck and representing the hand:
+1. Next, modify the `drawCard()` method to accept a tuple, that consists of two lists, representing the deck and representing the hand:
 
    ```fsharp
    let drawCard (tuple: int list * int list) = 
@@ -68,7 +68,7 @@ So, drawing cards is great, but usually in a card game there's players that want
 
    The `fst()` function is used to access the first property in the tuple, that is your deck. `snd` is used to access the hand. You also modified the return type, so it returns a tuple, consisting of the deck and your hand `(deck.Tail, firstCard :: hand)`, but with the added card `firstCard`.
 
-1. Modify the code in then main method to draw cards to the hand:
+1. Modify the code in the main method to draw cards to the hand:
 
    ```fsharp
    let d, h = (cards, hand) |> drawCard |> drawCard
