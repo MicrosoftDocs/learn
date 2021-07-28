@@ -8834,6 +8834,11 @@
     "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/7-summary.md",
     "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
     "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/wwl-data-ai/explore-non-relational-data-stores-azure/6-exercise.md",
+    "redirect_url": "https://docs.microsoft.com/learn/modules/explore-non-relational-data-stores-azure/",
+    "redirect_document_id": false
     }    
   ]
 }
