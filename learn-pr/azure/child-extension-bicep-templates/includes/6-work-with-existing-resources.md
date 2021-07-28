@@ -6,6 +6,8 @@ Bicep files often need to refer to resources that have been created elsewhere. T
 
 Bicep provides the `existing` keyword for you to use in these situations.
 
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+
 ## Refer to existing resources
 
 Within a Bicep file, you can define a resource that already exists. The declaration looks similar to a normal resource definition, but there are a few key differences. In the following example of an existing resource definition, the definition refers to a storage account named `toydesigndocs` that's in the same resource group that your Bicep template will be deployed to.
@@ -82,10 +84,10 @@ In this example, because the instrumentation key isn't considered sensitive data
 
 :::code language="bicep" source="code/6-existing-listkeys.bicep" highlight="1-3,15":::
 
-Notice that the `listKeys` function needs you to specify the resource ID and API version of the storage account, which you do by using the `storageAccount.id` and `storageAccount.apiVersion` properties. The rest of the expression retrieves the value of the first key in the `keys` array.
+Notice that the `listKeys` function returns a `keys` array. The Bicep code retrieves the `value` property from the first item in the `keys` array.
 
 > [!TIP]
-> Different resource types have different information available from the `listKeys()` function, and some resources have no information available at all.
+> Different resource types have different information available from the `listKeys()` function. Some resources don't support `listKeys()` at all, or use other function names instead.
 
 > [!NOTE]
 > The `listKeys()` function provides access to sensitive data about the resource. This means that the user or service principal that runs the deployment needs to have the appropriate level of permission on the resource. This is usually the *Contributor* built-in role, or a custom role that assigns the appropriate permission.

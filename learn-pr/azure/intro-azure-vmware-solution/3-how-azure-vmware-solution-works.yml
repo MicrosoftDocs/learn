@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-azure-vmware-solution.how-azure-vmware-solution-works
-title: How Azure VMware Solution Works
+title: How Azure VMware Solution works
 metadata:
-  title: How Azure VMware Solution Works
-  description: How Azure VMware Solution Works
+  title: How Azure VMware Solution works
+  description: Learn how Azure VMware Solution is set up and how it works on Azure.
   ms.date: 06/17/2021
   author: exchangegoddess
   ms.author: phschmit
@@ -15,37 +15,37 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What component of the Azure VMware Solution is the customer not responsible for?"
+  - content: "What component of Azure VMware Solution is the customer not responsible for?"
     choices:
-    - content: "Tier 1 gateways."
+    - content: "Tier 1 gateways"
       isCorrect: false
-      explanation: "Tier 1 gateways are managed by the customer."
-    - content: "Lifecycle management of VMware software (ESXi, vCenter, and vSAN)."
+      explanation: "The customer manages tier 1 gateways."
+    - content: "Lifecycle management of VMware software (ESXi, vCenter, and vSAN)"
       isCorrect: true
-      explanation: "Microsoft, in partnership with VMware, will support and maintain the lifecycle management of VMware software (ESXi, vCenter, and vSAN)."
-    - content: "Virtual machines."
+      explanation: "Microsoft, in partnership with VMware, supports and maintains the lifecycle management of VMware software (ESXi, vCenter, and vSAN)."
+    - content: "Virtual machines"
       isCorrect: false
       explanation: "Microsoft doesn't manage the virtual machines."
   - content: "Shannon wants to start migrating to Azure VMware Solution. What minimum number of nodes must Shannon have to get started?"
     choices:
-    - content: "Three nodes"
+    - content: "3 nodes"
       isCorrect: true
-      explanation: "The minimum nodes required are 3 in a cluster."
+      explanation: "The minimum number of nodes required in a cluster is 3."
     - content: "24 nodes"
       isCorrect: false
-      explanation: "The minimum nodes required are 3 in a cluster."
+      explanation: "The minimum number of nodes required in a cluster is 3."
     - content: "16 nodes"
       isCorrect: false
       explanation: "The maximum number of nodes in a cluster is 16."
-  - content: "What does the cloudadmin role in the Azure VMware Solution vCenter do?"
+  - content: "What does the cloudAdmin role in the Azure VMware Solution vCenter do?"
     choices:
-    - content: "The local cloudadmin user is used to set up users in Active Directory (AD)."
+    - content: "The local cloudadmin user sets up users in Active Directory."
       isCorrect: false
-      explanation: "The cloudAdmin user is a member of the cloudadmin role."
+      explanation: "The cloudadmin user is a member of the cloudAdmin role."
     - content: "The cloudAdmin role creates and manages workloads in your private cloud."
       isCorrect: true
       explanation: "The cloudAdmin role creates and manages workloads in your private cloud."
-    - content: "The cloudadmin role has access to the ESXi hosts in Azure."
+    - content: "The cloudAdmin role has access to the ESXi hosts in Azure."
       isCorrect: false
-      explanation: "The cloudAdmin role doesn't have access to and can't configure specific management components supported and managed by Microsoft."
+      explanation: "The cloudAdmin role doesn't have access to, and can't configure, specific management components that Microsoft supports and manages."
   
