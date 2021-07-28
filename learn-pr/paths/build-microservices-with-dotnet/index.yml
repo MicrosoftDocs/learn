@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.build-microservices-with-dotnet
+uid: learn.dotnet.build-microservices-with-dotnet
 metadata:
   title: Build microservices with .NET and ASP.NET Core
   description: Build independently deployable, highly scalable, and resilient services using the free and open source .NET platform.
@@ -40,4 +40,4 @@ modules:
 - learn.microservices-apigateway-aspnet-core
 - learn.microservices-devops-aspnet-core
 trophy:
-  uid: learn.build-microservices-with-dotnet.trophy
+  uid: learn.dotnet.build-microservices-with-dotnet.trophy
