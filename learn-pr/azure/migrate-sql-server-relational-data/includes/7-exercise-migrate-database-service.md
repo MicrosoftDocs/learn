@@ -23,7 +23,7 @@ In this exercise, you migrate the data in your database by using Azure Database 
 
 1. Select **Next : Networking**.
 
-1. On the **Netowrking** tab, select the **admsdemo-vnet/default** virtual network.
+1. On the **Networking** tab, select the **admsdemo-vnet/default** virtual network.
 
 1. Select **Review + create**.
 
@@ -99,7 +99,7 @@ After the service instance is created, you create a project to migrate the datab
 
 1. Select **Next : Configure migration settings**.
 
-1. On the **Configure migration settings** tab, to exapnd the list of tables, next to **Social 1 of 1**, select the arrow. Make sure the `dbo.Twitters` table is selected.
+1. On the **Configure migration settings** tab, to expand the list of tables, next to **Social 1 of 1**, select the arrow. Make sure the `dbo.Twitters` table is selected.
 
     ![List of tables.](../media/7-11-select-tables.png)
 

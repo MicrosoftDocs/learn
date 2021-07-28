@@ -51,24 +51,24 @@ Before you can download Data Migration Assistant, you need to disable Enhanced S
 
 ## Configure the project
 
-1. On the **Select report type** pane, ensure both **Check database compatibility** and **Check feature parity** are checked, and then select **Next**.
+1. On the **Select report type** pane, ensure both **Check database compatibility** and **Check feature parity** are checked, and then select **Next**. The **Connect to a server** pane appears.
 
-1. Configure the source database to connect to. On the **Connect to a server** pane, configure the following settings:
+1. To onfigure the source database to connect to, enter the following values for each setting.
 
-    | | |
+    | Setting | Value |
     |---------|---------|
-    | **Server name** | admsdemovm |
-    | **Authentication type** | Windows Authentication |
+    | Server name | admsdemovm |
+    | Authentication type | Windows Authentication |
     | **Connection properties** |
-    | **Encrypt connection** | Check  |
-    | **Trust server certificate** | Check  |
+    | Encrypt connection | Check  |
+    | Trust server certificate | Check  |
     | | |
 
     :::image type="content" source="../media/4-04-connect-to-server.png" alt-text="Connect to a server." loc-scope="azure-database-migration":::
 
-1. Select **Connect**.
+1. Select **Connect**. The **Add sources** pane appears.
 
-1. On the **Add sources** pane, select the **Social** database, and then select **Add**.
+1. Select the **Social** database, and then select **Add**.
 
 1. The assessment now shows the database you've selected. To begin the assessment, select **Start Assessment**.
 
