@@ -8724,6 +8724,66 @@
       "source_path": "learn-pr/advocates/responsible-bots/5-add-language-understanding.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/responsible-bots/",
       "redirect_document_id": false
-    }        
+    },
+    {
+      "source_path": "learn-pr/language/rust-get-started/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-get-started/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-introduction/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-get-started/2-what-is-rust.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-introduction/2-rust-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-get-started/3-install-code-editor.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-set-up-environment/2-install-vs-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-get-started/4-install-rust-build-tools.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-set-up-environment/3-install-build-tools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-get-started/5-hello-world.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-set-up-environment/5-hello-world",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-get-started/6-what-is-cargo.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-introduction/3-rust-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-get-started/7-hello-world-cargo.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-set-up-environment/5-hello-world",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-get-started/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-introduction/3-rust-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/language/rust-get-started/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/rust-introduction/5-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-ai-fundamentals/8-explore-responsible-ai-practice.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/7-challenges-with-ai",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/get-started-ai-fundamentals/7-understand-responsible-ai.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/8-understand-responsible-ai",
+      "redirect_document_id": true
+    }    
   ]
 }
