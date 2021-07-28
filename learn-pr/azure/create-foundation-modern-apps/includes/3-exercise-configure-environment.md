@@ -14,7 +14,7 @@ Throughout the learning path, you'll use Visual Studio Code as your main develop
 
 1. Download and install the [Azure Functions Core Tools](/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash#install-the-azure-functions-core-tools). These tools allow you to run Azure Functions locally.
 
-1. Open the **Extensions** blade from the left-hand taskbar. We recommend installing the following extensions:
+1. Open the **Extensions** pane from the left-hand taskbar. We recommend installing the following extensions:
 
     - **Azure Account**: This extension allows you to authenticate to Azure.
     - **Azure Functions**: This extension allows you to manage Azure Functions.
@@ -29,15 +29,15 @@ Throughout the learning path, you'll use Visual Studio Code as your main develop
 
 1. Select **Code** and copy the HTTPS Clone URL, for example, *`https://github.com/<github-username>/serverless-full-stack-apps-azure-sql.git`*.
 
-1. Back in Visual Studio Code, select the **Source Control** blade from the left-hand taskbar.
+1. Back in Visual Studio Code, select the **Source Control** pane from the left-hand taskbar.
 
-1. Select **...** in the Source Control blade.
+1. Select **...** in the Source Control pane.
 
 1. Select **Clone** from the drop-down menu and enter the URL copied in a previous step. Select the location you would like the repository to be copied locally. This step will download the repository to your local machine.
 
 1. In Visual Studio Code, select **File** > **Open folder** and navigate to the location where you cloned the repository. This step will open the folder in your Visual Studio Code session.
 
-1. Select the **Explorer** blade from the left-hand taskbar. Confirm that you see the repository files.
+1. Select the **Explorer** pane from the left-hand taskbar. Confirm that you see the repository files.
 
 ### Access and build data solutions with Azure Data Studio
 
@@ -47,4 +47,4 @@ Azure Data Studio is a source-open application for managing various data service
 
 1. Azure Data Studio is similar to Visual Studio Code in its layout. Select **File** > **Open folder**  and navigate to the location where you cloned the repository. This step will open the folder in Azure Data Studio so you can easily access repository files in future exercises.
 
-1. Select the **Explorer** blade from the left-hand taskbar. Confirm that you see the repository files.
+1. Select the **Explorer** pane from the left-hand taskbar. Confirm that you see the repository files.
