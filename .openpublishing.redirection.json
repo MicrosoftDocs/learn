@@ -8784,6 +8784,16 @@
       "source_path": "learn-pr/wwl-data-ai/get-started-ai-fundamentals/7-understand-responsible-ai.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/get-started-ai-fundamentals/8-understand-responsible-ai",
       "redirect_document_id": true
+    },
+    {
+    "source_path": "learn-pr/paths/evaluate-text-with-language-services/index.md",
+    "redirect_url": "https://docs.microsoft.com/learn/paths/process-translate-text-azure-cognitive-services/",
+    "redirect_document_id": false
+    },
+    {
+    "source_path": "learn-pr/paths/create-bots-with-the-azure-bot-service/index.md",
+    "redirect_url": "https://docs.microsoft.com/learn/paths/create-conversational-ai-solutions/",
+    "redirect_document_id": false
     }    
   ]
 }
