@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.serverless-go.exercise-custom-handler
-title: Exercise - Custom handler
+title: Exercise - Use a custom handler to build an app
 metadata:
-  title: Exercise - Custom handler
+  title: Exercise - Use a custom handler to build an app
   description: Build and run a serverless app by using Go.
   author: softchris
   ms.author: chnoring
