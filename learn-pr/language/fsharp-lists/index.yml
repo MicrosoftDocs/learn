@@ -29,8 +29,8 @@ prerequisites: |
   - Know how to declare variables and understand functions and how to declare and run them.
 units:
   - learn.fsharp-lists.1-introduction
-  - learn.fsharp-lists.2-unit
-  - learn.fsharp-lists.3-exercise-unit
+  - learn.fsharp-lists.2-collection
+  - learn.fsharp-lists.3-exercise-collection
   - learn.fsharp-lists.4-list-operations
   - learn.fsharp-lists.5-exercise-operations
   - learn.fsharp-lists.6-knowledge-check
