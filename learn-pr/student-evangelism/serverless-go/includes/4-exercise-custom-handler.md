@@ -1,18 +1,18 @@
-In this exercise, we are looking to build and run a Serverless API using Go. 
+In this exercise, you'll build and run a serverless app by using Go. 
 
 ## Scaffold the app
 
-Begin by scaffolding the app using the Azure Functions extension in Visual Studio Code. Start by opening the command palate.
+Begin by scaffolding the app, by using the Azure Functions extension in Visual Studio Code.
 
-1. In the Menu, select **View > Command Palette**
-1. Select **Azure Functions: Create New Project**
+1. Select **View** > **Command Palette**.
+1. Select **Azure Functions: Create New Project**.
 1. Select a folder, usually your current folder.
-1. In select a language, select **Custom Handler**
-1. In Select a template for your first function, select **HttpTrigger**
-1. Give it a name, for example **hello**
-1. Select authorization level, **anonymous**. You can change that later if you want.
+1. In **Select a language**, select **Custom Handler**.
+1. In **Select a template for your first function**, select **HttpTrigger**.
+1. Give the app a name, such as **hello**.
+1. Select an authorization level of **anonymous**. You can change that later if you want.
 
-Congrats, now you have a project looking something like this:
+Now you have a project that looks something like this:
 
 ```output
 hello/
@@ -26,9 +26,9 @@ proxies.json
 
 ## Create the app
 
-Next step is about creating an app that will be able to respond to an HTTP trigger.
+The next series of steps is about creating an app that can respond to an HTTP trigger.
 
-1. Create a file _server.go_ at the project root
+1. Create a file named _server.go_ at the project root.
 1. Give _server.go_ the following content:
 
    ```go
@@ -43,7 +43,7 @@ Next step is about creating an app that will be able to respond to an HTTP trigg
    )
    ```
 
-   The above code imports all the libraries you need to be able to build an HTTP app but also look up environment variables
+   The preceding code imports all the libraries that you need to build an HTTP app and to look up environment variables.
 
 1. Add the following code after the import statements:
 
@@ -60,13 +60,13 @@ Next step is about creating an app that will be able to respond to an HTTP trigg
    }
    ```
 
-   The `main()` function will be invoked by itself. The first line of the code states how it will read from the environment variable `FUNCTIONS_CUSTOM_HANDLER_PORT`:
+   The `main()` function is invoked by itself. The first line of the code states how it will read from the `FUNCTIONS_CUSTOM_HANDLER_PORT` environment variable:
 
    ```go
    customHandlerPort, exists := os.LookupEnv("FUNCTIONS_CUSTOMHANDLER_PORT")
    ```
 
-   Next, it checks whether the port exists, if not it's assigned the port 8080:
+   Next, the function checks whether the port exists. If not, the function is assigned port 8080:
 
    ```go
    if !exists {
@@ -74,7 +74,7 @@ Next step is about creating an app that will be able to respond to an HTTP trigg
    }
    ```
 
-   The code after that instantiates an HTTP server instance:
+   The next code instantiates an HTTP server instance:
 
    ```go
    mux := http.NewServeMux()
@@ -86,7 +86,7 @@ Next step is about creating an app that will be able to respond to an HTTP trigg
    log.Fatal(http.ListenAndServe(":"+customHandlerPort, mux))
    ```
   
-1. Finally let's add the remaining code. First localize the following line and uncomment it:
+1. Let's add the remaining code. First, localize the following line and uncomment it:
 
    ```go
    // mux.HandleFunc("/api/hello", helloHandler)
@@ -106,22 +106,22 @@ Next step is about creating an app that will be able to respond to an HTTP trigg
    }
    ```
 
-   What `helloHandler()` does is to set the content type to `application/json` and either respond with "hello world" or with the posted body, if any.
+   The `helloHandler()` function sets the content type to `application/json`. It responds with either "hello world" or the posted body, if any.
 
 ## Run the app
 
-At this point you are done authoring the code, but you need to do some configuration for this scenario to work. You need to point out where your executable is but you also need to configure the routing and state that this app deals with HTTP triggers and no other types of bindings.
+You're done authoring the code at this point, but you need to do some configuration for this scenario to work. You need to point out where your executable file is, so the Function host can find it. You also need to configure the routing and state that this app deals with HTTP triggers and no other types of bindings.
 
-1. Run `go build server.go`, in a terminal and at the project root.
+1. From a terminal, run `go build server.go` in the project root:
 
    ```go
    go build server.go
    ```
 
-   Doing so will create an executable, that's either called `server` or `server.exe` if you are on a Windows OS, Next you need to point out the executable so the Function host is able to find it.
+   This step creates an executable file that's called *server* on macOS and Linux, or *server.exe* on a Windows OS.
 
-1. Open the _host.json_ file and locate the `defaultExecutablePath` element inside of the `customHandler` one. Specify **./server** on macOS and Linux and **.\server.exe** on a Windows OS.
-1. Under the `customHandler` element, add the element `enableForwardingHttpRequest` and give it the value **true**. Your `customHandler` element should now look like so:
+1. Open the _host.json_ file and find the `defaultExecutablePath` element inside the `customHandler` one. Specify `./server` on macOS and Linux, or `.\server.exe` on a Windows OS.
+1. Under the `customHandler` element, add the `enableForwardingHttpRequest` element and give it the value `true`. Your `customHandler` element should now look like this:
 
    ```json
    "customHandler": {
@@ -134,13 +134,13 @@ At this point you are done authoring the code, but you need to do some configura
    }
    ```
 
-1. Run `func start` from a terminal in the project root, doing so will start up your function app.
+1. From a terminal, run `func start` in the project root. Doing so starts your Functions app.
 
    ```go
    func start
    ```
 
-   At the end of the output you will see an output similar to:
+   At the end of the output, you'll see an output similar to:
 
    ```output
    Functions:
@@ -148,6 +148,6 @@ At this point you are done authoring the code, but you need to do some configura
         hello: [GET,POST] http://localhost:7071/api/hello
    ```
 
-1. In a browser, navigate to `http://localhost:7071/api/hello`, you should see the output "hello world"
+1. In a browser, go to `http://localhost:7071/api/hello`. You should see the output "hello world."
 
-Congratulations, you've managed to develop a Serverless app in Go.
+Congratulations! You've developed a serverless app in Go.

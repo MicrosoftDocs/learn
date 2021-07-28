@@ -3,7 +3,7 @@ uid: learn.student-evangelism.serverless-go.custom-handlers
 title: Custom handlers
 metadata:
   title: Custom handlers
-  description: Describe what custom handlers are and when to use them
+  description: Learn what custom handlers are and when to use them.
   author: softchris
   ms.author: chnoring
   ms.date: 07/12/2021
