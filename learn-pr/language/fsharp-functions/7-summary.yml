@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.fsharp-first-program.7-summary
+uid: learn.fsharp-functions.summary
 title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 07/21/2021
+  ms.date: 07/26/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-dotnet
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
