@@ -14,17 +14,6 @@ Bicep supports two types of comments:
 > [!TIP]
 > Avoid using comments for obvious and clear parts of your code. Focus on documenting unique logic and complex expressions. Having too many comments actually reduces your code's readability!
 
-You can also use Bicep comments to add a structured multi-line block at the beginning of each file. Think of it as a _manifest_. Your team could agree that each template and module should have a manifest, and what it contains.
-
-```bicep
-/*
-  SYNOPSIS: Module for provisioning Azure SQL server and database.
-  DESCRIPTION: This module provisions an Azure SQL server and a database, and configures the server to accept connections from within Azure.
-  VERSION: 1.0.0
-  OWNER TEAM: Website
-*/
-```
-
 ### Add comments to parameter files
 
 Parameter files enable you to create a file to specify a set of parameters for your deployment. The parameters that you specify in parameter files also often need to be documented, and it's a good practice to add comments to parameter files when you work with parameter values that aren't immediately clear to someone reading the file. For example, your website's Bicep template might include a parameter for the URL to access your product stock API, so your website can display whether your toys are in stock in your warehouse. The URLs to access the stock API for each environment aren't easy to understand, so they're a good candidate for a comment:
