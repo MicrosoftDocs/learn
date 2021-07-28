@@ -22,7 +22,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - dotnet
 prerequisites: None
 units:
   - learn.fsharp-conditional.introduction

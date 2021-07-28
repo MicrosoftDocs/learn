@@ -9,7 +9,7 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-dotnet
 title: Store and retrieve data by using F#
 summary: Write your first F# programs, and learn to work with input and output, data type conversions, and operators.
 abstract: |
@@ -25,7 +25,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - dotnet
 prerequisites: |
   - Know how to run commands at the console.
   - Have F# (.NET Core) installed.
