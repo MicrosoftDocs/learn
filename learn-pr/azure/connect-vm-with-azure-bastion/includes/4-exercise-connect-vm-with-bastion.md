@@ -79,12 +79,6 @@ Before you can use Azure Bastion, you need to create a subnet on the virtual net
 
 1. From the list of resources, select the virtual network **learn bastion-rg-vnet**.
 
-1. In the left menu pane, under **Settings**, select **Address space**.
-
-1. Enter an address space with a subnet mask that's /27 or larger, like /26, /25, and so on. An example is 10.0.1.0/24.
-
-1. Select **Save**.
-
 1. In the left menu pane, under **Settings**, select **Subnets**.
 
 1. In the top menu bar, select **Subnet** to add a subnet. The **Add subnet** pane appears.
@@ -94,7 +88,7 @@ Before you can use Azure Bastion, you need to create a subnet on the virtual net
     |Field  |Name |
     |---------|---------|
     |Name    |  AzureBastionSubnet       |
-    |Subnet address range     | The address space you just added, like 10.0.1.0/24  |
+    |Subnet address range     | Enter an address space with a subnet mask that's /27 or larger, like /26, /25, and so on. An example is 10.0.1.0/24. |
 
    Use the default values for the rest of the fields.
 

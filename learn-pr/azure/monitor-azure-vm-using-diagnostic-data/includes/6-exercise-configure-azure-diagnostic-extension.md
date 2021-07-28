@@ -16,7 +16,7 @@ Use the portal to enable guest-level metric monitoring of the VM. When you enabl
 
     ![Screenshot that shows the monitoring section for a VM.](../media/6-scroll-to-monitoring.png)
 
-1. On the **Overview** tab, select **Enable guest-level monitoring**.
+1. On the **Overview** tab, select **Enable guest-level monitoring**. If the storage account isn't listed, wait several minutes and refresh the page until it appears.
 
     ![Screenshot that shows the button for enabling guest-level monitoring.](../media/6-enable-guest-level-monitoring.png)
 
