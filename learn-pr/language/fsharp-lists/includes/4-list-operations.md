@@ -1,3 +1,5 @@
+When you items in a list, you will want to carry out operatioons on either the whole or part of the list. The list module, contains a lot of useful operations that lets you do just that.
+
 ## List module functions
 
 Except for properties, there's also a List module, a module full of functions that operates on a list, capable of performing commonly used operations like finding, filtering, sorting, mathematical operations and more. 
@@ -105,4 +107,50 @@ Another thing you might want to do is to find a specific element. There are a fe
    ```
 
 ### Arithmetic operations
- 
+
+Being able to carry out mathematical operations on a list can be really valuable. There are many functions to choose from in the List module API but there are three very useful ones in `sum()`, `average()` and `sumBy()`. Here's how they work:
+
+- `sum()`, using this function you iterate over each item sum things up. Here's how you can use it:
+
+   ```fsharp
+   let sum - List.sum [1 .. 5] // sum = 15 
+   ```
+
+- `sumBy()`. The idea with `sumBy()` function is to point out how to sum something. A way to do so is by pointing out the fields to sum by like in the below example:
+
+   ```fsharp
+   type OrderItem = { Name: string; Cost:int }
+
+   let orderItems = [
+         { Name="XBox"; Cost=500 }
+         { Name="Book"; Cost=10 }
+         { Name="Movie ticket"; Cost=7 }
+       ]
+    
+   let sum = List.sumBy(fun item -> item.Cost) orderItems
+   printfn "%i" sum // 517
+   ```
+
+   In the above code, the `Cost` field is pointed out and each item adds to the total.
+
+- `average()`. The `average()` function is similar to `sum()` in that it operates on a list of numbers. There are two differences however, the function expects the data to be floating point numbers, not integers, also it calculates an average rather than a sum. Here's an example:
+
+   ```fsharp
+   let numbers = [ 1.0; 2.5; 3.0 ]
+   let avg = List.average numbers
+   printfn "%f" avg // 2.166667
+   ```
+
+- `averageBy()`, just like `sumBy()` it takes a function where you specify what value you want. Here's an example:
+
+   ```fsharp
+   type WeatherMeasurement = { Date: string; Temperature: float }
+   let measurements = [
+      { Date="07/20/2021"; Temperature=21.3 }
+      { Date="07/21/2021"; Temperature=23.2 }
+      { Date="07/22/2021"; Temperature=20.7 }
+   ]
+    
+   let avgBy = List.averageBy(fun m -> m.Temperature) measurements
+   printfn "%f" avgBy
+   ```

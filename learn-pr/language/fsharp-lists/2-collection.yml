@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.fsharp-lists.1-introduction
-title: Introduction
+uid: learn.fsharp-lists.2-collection
+title: Collections
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Collections
+  description: Describe unit
   author: softchris
   ms.author: chnoring
   ms.date: 07/28/2021
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/2-collection.md)]

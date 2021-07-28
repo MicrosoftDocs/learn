@@ -102,4 +102,3 @@ Here's a full list of the properties on the list:
 | Item | Retrieves the current element at the specified position (0-based index) |
 | Length | Returns the number of items |
 | Tail | Returns back the entire list, save for the first element |
-

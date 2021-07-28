@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.fsharp-lists
 metadata:
-  title: Store and iterate through sequences of data in F#
+  title: Store and apply operations on list data in F#
   description: Learn how to
-  ms.date: 07/27/2021
+  ms.date: 07/28/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Store and iterate through sequences of data in F#
+title: Store and apply operations on list data in F#
 summary: Learn how to
 abstract: |
   In this module you will:
