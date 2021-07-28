@@ -7,7 +7,7 @@ Azure offers free and paid subscription options to suit different needs and requ
 
 ## Azure free subscription
 
-An Azure free subscription includes a monitary credit to spend on any service for the first 30 days, free access to the most popular Azure products for 12 months, and access to more than 25 products that are always free. An Azure free subscription is an excellent way for new users to get started. To set up a free subscription, you need a phone number, a credit card, and a Microsoft account.
+An Azure free subscription includes a monetary credit to spend on any service for the first 30 days, free access to the most popular Azure products for 12 months, and access to more than 25 products that are always free. An Azure free subscription is an excellent way for new users to get started. To set up a free subscription, you need a phone number, a credit card, and a Microsoft account.
 
 > [!NOTE]
 > Credit card information is used for identity verification only. You won’t be charged for any services until you upgrade.
