@@ -53,7 +53,7 @@ Before you can download Data Migration Assistant, you need to disable Enhanced S
 
 1. On the **Select report type** pane, ensure both **Check database compatibility** and **Check feature parity** are checked, and then select **Next**. The **Connect to a server** pane appears.
 
-1. To onfigure the source database to connect to, enter the following values for each setting.
+1. To configure the source database to connect to, enter the following values for each setting.
 
     | Setting | Value |
     |---------|---------|
