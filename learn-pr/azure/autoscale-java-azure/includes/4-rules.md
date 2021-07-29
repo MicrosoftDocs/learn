@@ -1,11 +1,12 @@
-In this unit, we'll look at autoscaling rules, and then in the next exercise, run the commands.
+In this unit, we'll look at autoscaling rules, and then in the next exercise, trigger the rules.
 
 ## Autoscale conditions
 
-You indicate how to autoscale by creating autoscale conditions. Azure provides two options for autoscaling:
+Azure provides two options for autoscaling:
 
-Scale based on a metric, such as the length of the disk queue, or the number of HTTP requests awaiting processing,
-Scale to a specific instance count according to a schedule. For example, you can arrange to scale out at a particular time of day, or on a specific date or day of the week. You also specify an end date, and the system will scale back in at this time.
+- Scale based on a metric, such as the length of the disk queue, or the number of HTTP requests awaiting processing,
+- Scale to a specific instance count according to a schedule. For example, you can arrange to scale out at a particular time of day, or on a specific date or day of the week. You also specify an end date, and the system will scale back in at this time.
+
 Scaling to a specific instance count only enables you to scale out to a defined number of instances. If you need to scale out incrementally, you can combine metric and schedule-based autoscaling in the same autoscale condition. So, you could arrange for the system to scale out if the number of HTTP requests exceeds some threshold, but only between certain hours of the day.
 
 You can create multiple autoscale conditions to handle different schedules and metrics. Azure will autoscale your service when any of these conditions apply. An App Service Plan also has a default condition that will be used if none of the other conditions are applicable. This condition is always active and doesn't have a schedule.
@@ -24,7 +25,7 @@ You can also scale based on metrics for other Azure services. For example, if th
 
 ## How an autoscale rule analyzes metrics
 
-Autoscaling works by analyzing trends in metric values over time across and all instances. Analysis is a multistep process.
+Autoscaling works by analyzing trends in metric values over time across and all instances. Analysis is a multi-step process.
 
 In the first step, an autoscale rule aggregates the values retrieved for a metric for all instances across a period of time known as the time grain. Each metric has its own intrinsic time grain, but in most cases this period is 1 minute. The aggregated value is known as the time aggregation. The options available are Average, Minimum, Maximum, Total, Last, and Count.
 

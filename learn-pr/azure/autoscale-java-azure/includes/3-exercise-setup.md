@@ -1,4 +1,4 @@
-In this exercise, you'll configure a sample Application to be ready for monitoring. Later, you'll access the collected monitoring data and view it in the Azure portal.
+In this exercise, you'll configure a sample Application to be ready for autoscaling. Later, you'll view the application autoscaling details and trigger it to scale.
 
 ## Introduction
 
