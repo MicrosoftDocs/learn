@@ -58,12 +58,17 @@ So, drawing cards is great, but usually in a card game there's players that want
 1. Next, modify the `drawCard()` method to accept a tuple, that consists of two lists, representing the deck and representing the hand:
 
    ```fsharp
-   let drawCard (tuple: int list * int list) = 
-       let deck = fst(tuple)
-       let hand = snd(tuple)
-       let firstCard = deck.Head
-       printfn "%i" firstCard
-       (deck.Tail, firstCard :: hand)
+let drawCard (tuple: int list * int list) = 
+   let deck = fst tuple
+   let draw = snd tuple
+   let firstCard = deck.Head
+   printfn "%i" firstCard
+   
+   let hand = 
+        draw
+        |> List.append [firstCard]
+
+   (deck.Tail, hand)
    ```
 
    The `fst()` function is used to access the first property in the tuple, that is your deck. `snd` is used to access the hand. You also modified the return type, so it returns a tuple, consisting of the deck and your hand `(deck.Tail, firstCard :: hand)`, but with the added card `firstCard`.
