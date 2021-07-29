@@ -86,7 +86,7 @@ As part of configuring a redirect routing, you can also change the hostname or d
 
 ### Destination path
 
-For cases where you want to replace the path segment of a URL as part of redirection, you can set this field with the new path value. Otherwise, you can choose to preserve the path value as part of redirect. So, using this field, you can redirect all requests sent to https://www.contoso.com/\* to https://www.contoso.com/redirected-site.
+For cases where you want to replace the path segment of a URL as part of redirection, you can set this field with the new path value. Otherwise, you can choose to preserve the path value as part of redirect. So, using this field, you can redirect all requests sent to https://www.contoso.com/* to https://www.contoso.com/redirected-site.
 
 ### Destination fragment
 
