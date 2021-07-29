@@ -1,19 +1,3 @@
-<!--**Store IoT data in real time with Azure SQL Database**
-
-    List the content that will enable the learner to *subtask*:
-
-    - How device / streaming simulation works
-    - How to process/store the data in Azure SQL Database
-    - Best practices for optimizing performance/throughput 
-
-    **Knowledge check**
-
-    What types of questions will test *learning objective*? *[(Knowledge check guidance)](/help/learn/id-guidance-knowledge-check)*
-
-    - What is **not** a way to increase the ingestion rate into Azure SQL Database?
-    - What is the best way to surface real-time data in Power BI?
--->
-
 IoT workloads can be characterized by high rates of input data, on both steady and burst streams, to be ingested from devices. 
 
 Recall in the distributor scenario, your IoT solution will be taking in real-time telemetry data from thousands of trucks every second. Here, you'll learn how to implement a design pattern to ingest data and optimize storage of that data.

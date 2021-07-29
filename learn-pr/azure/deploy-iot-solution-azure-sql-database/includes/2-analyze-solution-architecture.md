@@ -1,19 +1,3 @@
-<!--**Analyze the solution architecture**
-
-    List the content that will enable the learner to *subtask*:
-
-    - Explain the need for the reusable architecture -- may be able to mention customer examples. Relate to scenario in introduction as well
-    - Present the architecture
-    - Explain each component, why it was used over alternatives, specific advantages.
-
-    **Knowledge check**
-
-    What types of questions will test *learning objective*? *[(Knowledge check guidance)](/help/learn/id-guidance-knowledge-check)*
-
-    - Which component of the architecture will help with X?
-    - What is the advantage of using Azure SQL Database for IoT scenarios?
--->
-
 IoT solutions usually include several components that span from device communication and management to event processing, data ingestion, and analysis. Deploying all these components independently on compute, network, and storage-based infrastructures can be a complex and time consuming task. Even more challenging is managing, monitoring, and operating these systems at significant scale.
 
 Recall in the distributor example, there are thousands of trucks that you're hoping to monitor the health and status. Each truck will need to have a connected IoT device that is sending telemetry data to be processed, stored, and analyzed.
@@ -73,7 +57,7 @@ Here are some considerations for achieving scale with Azure SQL Database:
 
 You now understand how and why Azure SQL Database is a good fit for IoT applications. Following the distributor scenario, you'll deploy and configure a baseline IoT solution and implement the best practices for achieving scale. The template you deploy can be a great starting point for other IoT scenarios that you or your organization seek to create.
 
-:::image type="content" source="../media/2-azure-sql-iot.png" alt-text="Diagram of the canonical IoT architecture using Azure services." border="false":::
+:::image type="content" source="../media/2-azure-sql-iot.png" alt-text="Diagram of the architecture for an IoT solution with Azure SQL Database." border="false":::
 
 The template is an Azure Resource Manager (ARM) template, which uses JSON files to define the infrastructure and configuration for a solution. Typically, there is a template file and a parameters file, which contain what to deploy and specifications respectively. You can then deploy the template and parameters with the Azure CLI or Azure PowerShell. Let's break down what the template deploys:
 

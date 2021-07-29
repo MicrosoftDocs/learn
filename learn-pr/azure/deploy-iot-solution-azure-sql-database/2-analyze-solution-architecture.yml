@@ -28,17 +28,17 @@ quiz:
       explanation: "Incorrect. TODO"      
   - content: "What is the advantage of using Azure SQL Database for IoT scenarios?"
     choices:
-    - content: "TODO"
+    - content: "Azure SQL Database can ingest millions of events per second"
       isCorrect: false
-      explanation: "TODO is true, but that's not the only advantage."
-    - content: "TODO"
+      explanation: "Azure SQL Database can ingest millions of events per second if configured properly. However, that's not the only advantage."
+    - content: "Azure SQL Database can integrate with other services including Azure Functions and Azure Stream Analytics."
       isCorrect: false
-      explanation: "TODO is true, but that's not the only advantage."
-    - content: "TODO"
+      explanation: "Azure SQL Database can integrate with Azure Functions and Azure Stream Analytics, but that's not the only advantage."
+    - content: "Azure SQL Database supports real-time analytics, you can configure up to 30 read-only replicas if needed."
       isCorrect: false
-      explanation:  "TODO is true, but that's not the only advantage."
+      explanation:  "The Hyperscale tier supports up to 30 named replicas for read-scale, but that's not the only advantage."
     - content: "All of the above"
       isCorrect: true
-      explanation: "TODO"
+      explanation: "Correct! Azure SQL Database is great for IoT because it can scale, integrate, and support real-time analytics."
 content: |
   [!include[](includes/2-analyze-solution-architecture.md)]
