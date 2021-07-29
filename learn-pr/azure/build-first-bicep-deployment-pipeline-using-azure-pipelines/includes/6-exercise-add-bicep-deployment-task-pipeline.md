@@ -15,7 +15,7 @@ You've already prepared your website's Bicep file, which can be used to deploy d
 
 1. In the _deploy_ folder, create a new file named _main.bicep_. Make sure you create the file inside the _deploy_ folder and not at the root of the repository:
 
-   :::image type="content" source="../media/6-vs-code-main-bicep.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the main.bicep file highlighted and located in the deploy folder." border="true":::
+   :::image type="content" source="../media/6-visual-studio-code-main-bicep.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the main.bicep file highlighted and located in the deploy folder." border="true":::
 
 1. Copy the following into the _main.bicep_ file:
 
@@ -44,7 +44,7 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 
 1. Because Bicep is still new, it changes regularly. It's a good idea to upgrade the version of Bicep on the agent before you start to use it, to ensure you can use all of the latest features. Add a new task at the bottom of the file to run the `az bicep upgrade` command:
 
-   :::code language="yaml" source="code/6-pipeline.yaml" range="6-14" highlight="4-9" :::
+   :::code language="yaml" source="code/6-pipeline.yml" range="6-14" highlight="4-9" :::
 
    Notice that the task includes a variable named `$(ServiceConnectionName)`. This variable hasn't been defined yet. You'll add it soon.
 
@@ -53,13 +53,13 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 
 1. Below the task you just added, add another Azure CLI task to deploy your Bicep file by using the `az deployment group create` command:
 
-   :::code language="yaml" source="code/6-pipeline.yaml" range="6-26" highlight="11-21" :::
+   :::code language="yaml" source="code/6-pipeline.yml" range="6-26" highlight="11-21" :::
 
    Notice that this step uses a system variable, `$(Build.BuildNumber)`, to name the deployment. This way, you can easily see which pipeline run a deployment corresponds to.
 
 1. Save your changes to the file. Your file should look like the below:
 
-   :::code language="yaml" source="code/6-pipeline.yaml" :::
+   :::code language="yaml" source="code/6-pipeline.yml" :::
 
 1. In the Visual Studio Code **Terminal**, stage your changes, commit them to your repository, and push them to Azure Repos:
 
