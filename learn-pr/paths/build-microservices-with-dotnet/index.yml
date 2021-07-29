@@ -2,7 +2,7 @@
 uid: learn.dotnet.create-microservices-with-dotnet
 metadata:
   title: Create microservices with .NET and ASP.NET Core
-  description: Create independently deployable, highly scalable, and resilient services using the free and open-source .NET platform. Leverage popular microservice technology like Docker, Kubernetes, Dapr, Azure Container Registery, and more for .NET and ASP.NET core applications and services.
+  description: Create independently deployable, highly scalable, and resilient services using the free and open-source .NET platform. With .NET you can use popular microservice technology like Docker, Kubernetes, Dapr, Azure Container Registry, and more for .NET and ASP.NET core applications and services.
   ms.date: 07/28/2021
   author: nishanil
   ms.author: nanil
