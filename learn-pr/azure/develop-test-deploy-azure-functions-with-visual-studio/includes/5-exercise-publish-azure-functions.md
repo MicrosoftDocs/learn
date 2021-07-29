@@ -8,17 +8,19 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. From the Azure portal menu, select **Create a resource**.
+1. From the Azure portal home page, under **Azure services**, select **Create a resource**.
 
     ![Screenshot of Azure portal menu and Create a resource option.](../media/5-create-a-resource.png)
 
-1. Select **Compute**, and then select **Function App**.
+    The **Create a resource** pane appears.
+
+1. In the left menu pane, select **Compute**, and then select **Function App** under *Popular services*.
 
     ![Screenshot of the Compute and Function App options.](../media/5-compute-function-app.png)
 
     <!-- [!include[](../../includes/functions-classic-workaround.md)] -->
 
-1. The **Create Function App** panel appears. On the **Basics** tab, enter the following values.
+1. The **Create Function App** pane appears. On the **Basics** tab, enter the following values for each setting.
 
     > [!NOTE]
     > The function app must have a unique name. We suggest using something like **\<*your name or initials*\>watchfunctions**. In this exercise, use this name wherever you see *\<your-function-app-name\>*.
@@ -27,17 +29,17 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
     | --- | --- |
     | **Project Details** |
     | Subscription | Concierge Subscription  |
-    | Resource Group | From the dropdown, select the existing resource group <rgn>[Sandbox resource group]</rgn> |
+    | Resource Group | From the dropdown list, select the existing resource group <rgn>[Sandbox resource group]</rgn> |
     | **Instance Details** |
     | Function App name | *\<your-function-app-name\>* |
     | Publish | Code |
     | Runtime stack | .NET |
     | Version     | 3.1 |
-    | Region     | *Accept the default location* |
+    | Region     | Accept the default location |
 
 1. Select **Next : Hosting**.
 
-1. On the **Hosting** tab, enter the following values.
+1. On the **Hosting** tab, enter the following values for each setting.
 
     | Setting  | Value |
     | --------- | --------- |
@@ -49,6 +51,8 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
     | Plan type | Consumption (Serverless) |
 
 1. Select **Review + create**, and then select **Create**. Wait while the Function App is created before continuing.
+
+1. After deployment completes, select **Go to resource**. Your Function App pane appears.
 
 ## Deploy the WatchInfo function to the Azure Function App
 
@@ -62,11 +66,11 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
     :::image type="content" source="../media/5-publish-target.png" alt-text="Screenshot of the Publish target window. The user has chosen the Azure option." loc-scope="vs":::
 
-1. The **Publish** window reappears. In the **Subscription** dropdown, select **Concierge Subscription**. In the **View** dropdown, select **Resource group**, and on top of the **Function Apps** field, select the **+** (Create a new Azure Function) icon.
+1. The **Publish** window reappears. In the **Subscription** dropdown list, select **Concierge Subscription**. In the **View** dropdown list, select **Resource group**, and on top of the **Function Apps** field, select the **+** (Create a new Azure Function) icon.
 
     :::image type="content" source="../media/5-publish-functions-instance.png" alt-text="Screenshot of the Publish Functions instance window. The user to select Function Apps." loc-scope="vs":::
 
-1.  The **Function App (Windows)** window appears. Maintain all the default selections but ensure the **Location** field matches what you previously specified in the Azure portal, and then select **Create**.
+1. The **Function App (Windows)** window appears. Maintain all the default selections but ensure the **Location** field matches what you previously specified in the Azure portal, and then select **Create**.
 
     :::image type="content" source="../media/5-function-app-windows.png" alt-text="Screenshot of the Function App (Windows) window. The user to select Create." loc-scope="vs":::
 
@@ -84,20 +88,20 @@ In this exercise, you'll see how to use the Azure portal to create an Azure Func
 
 ## Verify the functions have been deployed
 
-1. Return to the Azure portal.
+1. Return to the Azure portal. Your Function App pane appears.
 
-1. On the Azure portal menu, or from the **Home** page, select **All resources**.
+1. In the middle menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your Function App.
 
-1. Select *\<your-function-app-name\>*.
+1. Verify that the **Function1** and  **WatchInfo** functions are listed.
 
-1. In the *\<your-function-app-name\>* panel, expand **Functions**, and verify that the **Function1** and  **WatchInfo** functions are listed. In the right pane, check that the status of the Azure Function App is **Running**.
+1. In the middle menu pane, select **Overview** and check that the **Status** of the Azure Function App is listed as **Running**.
 
     :::image type="content" source="../media/5-functions-app.png" alt-text="Screenshot of the Azure Function App in the portal, showing the Function1 and WatchInfo functions." loc-scope="other"::: <!-- no-loc -->
 
     > [!NOTE]
     > The functions are marked as *Read Only*. You cannot modify their settings or configuration from the Azure portal because you published them from Visual Studio. If you need to update either of these functions, make the changes in Visual Studio and publish them again.
 
-1. In the right pane, select the **URL** (highlighted in the previous image). A browser window opens, and confirms that the Functions app is up and running.
+1. In that same Function App pane, select the **URL** (highlighted in the previous image). A browser window opens, and confirms that the Functions app is up and running.
 
     ![Screenshot of web browser window confirming that the functions app is running.](../media/5-functions-app-running.png)
 

@@ -2,10 +2,12 @@ To begin training our machine learning model, we'll start by teaching the comput
 
 ## Further data cleansing
 
-Next, we'll remove some of the columns that aren't needed for making this prediction. Columns like "Name" give us more context about the data. But the name of a launch isn't an indicator of whether weather will cause the launch to be postponed. In this module, we'll focus on the columns for wind speed, conditions, and precipitation.
+Next, we'll remove some of the columns that aren't needed for making this prediction. Columns like "Name" give us more context about the data. But the name of a launch doesn't indicate if weather will cause the launch to be postponed. In this module, we'll focus on the columns for wind speed, conditions, and precipitation.
 
 > [!NOTE]
 > We don't typically recommend variable names like `x` and `y`. But they're norms used in data science to represent input and output data. This usage is based on the grounding in mathematical algorithms. For example, you might remember formulas like y=mx+b.
+
+In the Jupyter Notebook (*.ipynb* file) you created in the previous module, run the following commands. If too much time has passed since you ran through the steps in that module, you might see errors. In that case, reimport the libraries and data from the previous module and then run the commands:
 
 ```python
 # First, we save the output we are interested in. In this case, "launch" yes and no's go into the output variable.
@@ -25,4 +27,4 @@ You now have two variables. The output is in `y`, and the input is in `X`. You c
 X.columns
 ```
 
-The `X` input data represents the weather for a particular day. In this case, we aren't worried about the date or time. We want the profile of the weather for that day to be the indicator for whether a launch should happen, not the date or time.
+The `X` input data represents the weather for a particular day. In this case, we aren't worried about the date or time. We want the weather profile for that day to indicate whether a launch should happen, not the date or time.

@@ -14,9 +14,9 @@ In Cloud Shell, run the following command to delete the `scalesetrg` resource gr
 
 ## Learn more
 
-- [Overview of autoscale with Azure virtual machine scale sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview)
-- [Deploy your application on virtual machine scale sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-deploy-app)
-- [Work with large virtual machine scale sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-placement-groups)
-- [Use the custom script extension for Windows](https://docs.microsoft.com/azure/virtual-machines/extensions/custom-script-windows)
-- [Use the Azure custom script extension version 2 with Linux VMs](https://docs.microsoft.com/azure/virtual-machines/extensions/custom-script-linux)
-- [Use the application health extension with virtual machine scale sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-health-extension)
+- [Overview of autoscale with Azure virtual machine scale sets](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-autoscale-overview)
+- [Deploy your application on virtual machine scale sets](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-deploy-app)
+- [Work with large virtual machine scale sets](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-placement-groups)
+- [Use the custom script extension for Windows](/azure/virtual-machines/extensions/custom-script-windows)
+- [Use the Azure custom script extension version 2 with Linux VMs](/azure/virtual-machines/extensions/custom-script-linux)
+- [Use the application health extension with virtual machine scale sets](/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-health-extension)

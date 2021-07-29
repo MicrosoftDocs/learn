@@ -5,7 +5,7 @@ Let's see how an Azure storage account is configured to allow for replication an
 ## Azure storage accounts
 Azure storage accounts are used to house data objects, such as files, blobs, tables, and disks for virtual machines. The data that you store in a storage account can be accessed from any location globally via HTTP or HTTPS and is highly available and secure.
 
-![The storage types that are accessible as read-access geo-redundant storage](../media/2-ra-grs-storage-account.png)
+![The storage types that are accessible as read-access geo-redundant storage.](../media/2-ra-grs-storage-account.png)
 
 ## Data redundancy
 
@@ -22,7 +22,7 @@ Each replication option provides a different level of redundancy and durability.
 
 ### What is locally redundant storage (LRS)?
 
-![An overview of locally redundant storage](../media/2-locally-redundant-storage.png)
+![An overview of locally redundant storage.](../media/2-locally-redundant-storage.png)
 
 Locally redundant storage replicates data and stores three copies across fault domains, or racks of hardware, within a single datacenter facility in one region. Data is replicated so that if there's a hardware fault or maintenance work, your data is still available and accessible.
 
@@ -32,7 +32,7 @@ LRS is the least expensive replication option available. It also offers the leas
 
 ### What is zone-redundant storage (ZRS)?
 
-![An overview of zone-redundant storage](../media/2-zone-redundant-storage.png)
+![An overview of zone-redundant storage.](../media/2-zone-redundant-storage.png)
 
 Zone-redundant storage replicates your data across three storage clusters in a region. Each cluster is physically separated from the other two, which means that each cluster is supplied by separate utilities, such as power or networking.
 
@@ -44,7 +44,7 @@ ZRS offers 99.999999999999 percent durability of data. However, ZRS might not pr
 
 ### What is geographically redundant storage (GRS)?
 
-![An overview of geo-redundant storage](../media/2-geo-redundant-storage.png)
+![An overview of geo-redundant storage.](../media/2-geo-redundant-storage.png)
 
 Geographically redundant, or geo-redundant, storage provides multiple levels of replication. Your data is replicated three times within the primary region, and then this set is replicated to a secondary region.
 
@@ -54,7 +54,7 @@ Keep in mind that your data in the secondary region is inaccessible until the pr
 
 ### What is read-access geo-redundant storage (RA-GRS)?
 
-![An overview of read-access geo-redundant storage](../media/2-ra-grs-redundant-storage.png)
+![An overview of read-access geo-redundant storage.](../media/2-ra-grs-redundant-storage.png)
 
 Geo-redundant storage provides 99.9999999999999999 percent durability, because it replicates data and objects to a secondary region. When failover starts, DNS entries that point to the primary region are updated to point to the secondary region. Microsoft currently controls the DNS failover process.
 

@@ -13,7 +13,7 @@ The following table lists some of the Azure tools for operational compliance. Re
 
 | Tool | Description | Link to more information |
 | -----|-------------|--------------------------|
-| Azure Automation Update Management | Management and scheduling of updates | [Update Management overview](https://docs.microsoft.com/azure/automation/update-management/overview) |
-| Azure Policy | Policy enforcement to ensure environmental and guest compliance |  [Azure Policy overview](https://docs.microsoft.com/azure/governance/policy/overview) |
-| Azure Blueprints | Automated compliance for core services |  [Azure Blueprints overview](https://docs.microsoft.com/azure/governance/blueprints/overview) |
-| Azure Automation State Configuration| Automated configuration on the guest OS and some aspects of the environment | [State Configuration overview](https://docs.microsoft.com/azure/automation/automation-dsc-overview) |
+| Azure Automation Update Management | Management and scheduling of updates | [Update Management overview](/azure/automation/update-management/overview) |
+| Azure Policy | Policy enforcement to ensure environmental and guest compliance |  [Azure Policy overview](/azure/governance/policy/overview) |
+| Azure Blueprints | Automated compliance for core services |  [Azure Blueprints overview](/azure/governance/blueprints/overview) |
+| Azure Automation State Configuration| Automated configuration on the guest OS and some aspects of the environment | [State Configuration overview](/azure/automation/automation-dsc-overview) |

@@ -8,7 +8,7 @@ In this module, you learned how to:
 - Create a query to apply a built-in ML model for anomaly detection, using SQL
 - Create a dashboard to visualize data anomalies, using Power BI
 
-[![Graph of smooth vibrations](../media/vibration3.png)](../media/vibration3.png#lightbox)
+[![Graph of smooth vibrations.](../media/vibration3.png)](../media/vibration3.png#lightbox)
 
 ## Clean up
 
@@ -22,9 +22,9 @@ No need to delete your project code though, keep it for future reference!
 
 Take your interest further with:
 
-- [IoT Hub message routing query syntax](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-routing-query-syntax/)
+- [IoT Hub message routing query syntax](/azure/iot-hub/iot-hub-devguide-routing-query-syntax/)
 - [Azure Stream Analytics portal](https://azure.microsoft.com/services/stream-analytics/)
-- [Azure Stream Analytics documentation](https://docs.microsoft.com/azure/stream-analytics/)
+- [Azure Stream Analytics documentation](/azure/stream-analytics/)
 - [Azure Certified for IoT device catalog](https://catalog.azureiotsolutions.com/)
 
 And look out for additional Learn modules on IoT Hub, and Stream Analytics

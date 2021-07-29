@@ -7,8 +7,8 @@ To implement a website on-premises requires hardware and the skills to set it up
 ## Learn more
 
 - [Node.js tutorial in Visual Studio Code](https://code.visualstudio.com/docs/nodejs/nodejs-tutorial)
-- [App Service Documentation](https://docs.microsoft.com/azure/app-service/)
-- [Azure App Service plan overview](https://docs.microsoft.com/azure/app-service/overview-hosting-plans)
-- [Deploy to Azure App Service using Visual Studio Code](https://docs.microsoft.com/azure/javascript/tutorial-vscode-azure-app-service-node-01)
+- [App Service Documentation](/azure/app-service/)
+- [Azure App Service plan overview](/azure/app-service/overview-hosting-plans)
+- [Deploy to Azure App Service using Visual Studio Code](/azure/javascript/tutorial-vscode-azure-app-service-node-01)
 - [Azure Remote Debugging for Node.js](https://code.visualstudio.com/docs/azure/remote-debugging)
-- [Set up staging environments in Azure App Service](https://docs.microsoft.com/azure/app-service/deploy-staging-slots)
+- [Set up staging environments in Azure App Service](/azure/app-service/deploy-staging-slots)

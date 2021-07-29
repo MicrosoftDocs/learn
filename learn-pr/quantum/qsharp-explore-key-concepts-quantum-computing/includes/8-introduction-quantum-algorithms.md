@@ -31,7 +31,7 @@ this capacity, you can encode the input $x$ that has the binary representation $
 into an $n$-qubit register: $|x\rangle=|x_0x_1...x_{n-1}\rangle$.
 
 For more information about quantum oracles, see the [conceptual documentation for the
-Quantum Development Kit (QDK)](https://docs.microsoft.com/quantum/concepts/oracles?azure-portal=true).
+Quantum Development Kit (QDK)](/quantum/concepts/oracles?azure-portal=true).
 
 ## Deutsch–Jozsa algorithm
 

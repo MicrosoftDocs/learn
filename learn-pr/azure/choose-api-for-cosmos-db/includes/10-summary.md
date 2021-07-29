@@ -16,8 +16,8 @@ You should only use the Azure Table API if you are migrating from Azure Table St
 
 Here are some resources where you can learn more about each of the APIs:
 
-- [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db)
-- [Modeling data](https://docs.microsoft.com/azure/cosmos-db/modeling-data)
-- [MongoDB](https://docs.microsoft.com/azure/cosmos-db/mongodb-introduction)
-- [Cassandra](https://docs.microsoft.com/azure/cosmos-db/cassandra-introduction)
-- [Table API](https://docs.microsoft.com/azure/cosmos-db/table-introduction)
+- [Azure Cosmos DB](/azure/cosmos-db)
+- [Modeling data](/azure/cosmos-db/modeling-data)
+- [MongoDB](/azure/cosmos-db/mongodb-introduction)
+- [Cassandra](/azure/cosmos-db/cassandra-introduction)
+- [Table API](/azure/cosmos-db/table-introduction)

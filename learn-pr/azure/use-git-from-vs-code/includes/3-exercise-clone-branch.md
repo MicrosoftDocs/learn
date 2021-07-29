@@ -77,7 +77,7 @@ The **Status Bar** appears at the bottom of the Visual Studio Code window, and p
 
    ![Screenshot of the Status Bar with a Synchronize Changes icon.](../media/3-exercise-clone-branch-04.png)
 
-   The **Publish Changes** icon is displayed beside the current branch name. Pressing this will your local commit to your GitHub repository.
+   The **Publish Changes** icon is displayed beside the current branch name. Pressing this icon will push your local commit to your GitHub repository.
 
    ![Screenshot of the Status Bar with a Publish Changes icon.](../media/3-exercise-clone-branch-05.png)
 

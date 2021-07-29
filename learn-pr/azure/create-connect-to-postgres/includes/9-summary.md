@@ -16,7 +16,7 @@ Now that you have reviewed this module, you should be able to:
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-* [Azure Database for PostgreSQL documentation](https://docs.microsoft.com/azure/postgresql/)
-* [Azure Database for PostgreSQL - Hyperscale (Citus) documentation](https://docs.microsoft.com/azure/postgresql/hyperscale/)
-* [Pricing tiers in Azure Database for PostgreSQL - Single Server](https://docs.microsoft.com/azure/postgresql/concepts-pricing-tiers)
-* [Connect and query overview for Azure database for PostgreSQL- Single Server](https://docs.microsoft.com/azure/postgresql/how-to-connect-query-guide)
+* [Azure Database for PostgreSQL documentation](/azure/postgresql/)
+* [Azure Database for PostgreSQL - Hyperscale (Citus) documentation](/azure/postgresql/hyperscale/)
+* [Pricing tiers in Azure Database for PostgreSQL - Single Server](/azure/postgresql/concepts-pricing-tiers)
+* [Connect and query overview for Azure database for PostgreSQL- Single Server](/azure/postgresql/how-to-connect-query-guide)

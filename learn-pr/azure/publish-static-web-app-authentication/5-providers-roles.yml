@@ -4,7 +4,7 @@ title: Configure access for providers and roles
 metadata:
   title: Configure access for providers and roles
   description: Learn how to prevent unwanted access in your static web app by restricting providers and unauthenticated users
-  ms.date: 05/02/2021
+  ms.date: 06/17/2021
   author: sinedied
   ms.author: yolasors
   ms.topic: interactive-tutorial

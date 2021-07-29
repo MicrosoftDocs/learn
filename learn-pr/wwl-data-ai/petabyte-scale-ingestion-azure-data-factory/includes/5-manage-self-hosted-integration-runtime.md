@@ -4,7 +4,7 @@ In Data Factory, an activity defines the action to be performed. A linked servic
 
 A self-hosted integration runtime is capable of:
 
-- Running copy activity between a cloud data stores and a data store in private network.
+- Running copy activity between a cloud data store and a data store in the private network.
 - Dispatching the following transform activities against compute resources in on-premises or Azure Virtual Network: 
     - HDInsight Hive activity (BYOC-Bring Your Own Cluster) 
     - HDInsight Pig activity (BYOC)

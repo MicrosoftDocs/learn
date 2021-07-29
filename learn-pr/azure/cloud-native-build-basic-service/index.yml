@@ -1,0 +1,47 @@
+﻿### YamlMime:Module
+uid: learn.azure.cna-build-basic-service
+metadata:
+  title: Build a basic cloud-native service using PostgreSQL and Node.js
+  description: Build a basic service consisting of an Express.js-based web service with Microsoft Azure Database for PostgreSQL providing its persistent data store, and managed by a front-end Next.js management web app. 
+  ms.date: 05/15/2021
+  author: mpolicht
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build a basic cloud-native service using PostgreSQL and Node.js
+summary: Build a basic service consisting of an Express.js-based web service with Microsoft Azure Database for PostgreSQL providing its persistent data store, and managed by a front-end Next.js management web app. 
+abstract: |
+  In this module, you'll:
+  - Learn the concept of service in the context of cloud-native applications
+  - Set up a basic service
+  - Extend the services architecture
+  - Implement Azure Database for PostgreSQL
+  - Connect Node.js Express to Azure Database for PostgreSQL
+  - Set up a Next.js management web app
+prerequisites: | 
+  - Basic understanding of cloud computing
+  - Basic familiarity with Azure
+  - Basic familiarity with programming concepts
+iconUrl: /learn/achievements/cloud-native-build-basic-service.svg
+levels:
+- intermediate
+roles:
+- administrator
+- developer
+- solution-architect
+- student
+products:
+- azure
+- azure-database-postgresql
+units:
+- learn.azure.cna-build-basic-service.1-introduction
+- learn.azure.cna-build-basic-service.2-define-services
+- learn.azure.cna-build-basic-service.3-exercise-set-up-azure-postgresql
+- learn.azure.cna-build-basic-service.4-set-up-basic-service
+- learn.azure.cna-build-basic-service.exercise-connect-express-js-postgresql
+- learn.azure.cna-build-basic-service.6-extend-services-architecture
+- learn.azure.cna-build-basic-service.exercise-set-up-next-js-app.yml
+- learn.azure.cna-build-basic-service.8-knowledge-check
+- learn.azure.cna-build-basic-service.9-summary
+badge:
+  uid: learn.azure.cna-build-basic-service.badge

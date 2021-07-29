@@ -1,4 +1,3 @@
-
 In this learning module, you followed the evolution of the architecture of an application deployed by a telecommunications provider:
 
 - Azure Container Instance was chosen as the platform for the API due to per-second billing and quick startup times
@@ -12,10 +11,10 @@ In this learning module, you followed the evolution of the architecture of an ap
 ## Learn more
 
 - [Terraform azurerm_container_group](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/container_group)
-- [ACI Secure Values](https://docs.microsoft.com/azure/container-instances/container-instances-environment-variables#secure-values)
+- [ACI Secure Values](/azure/container-instances/container-instances-environment-variables#secure-values)
 - [Understanding Kubernetes Objects](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/)
-- [ACI YAML Reference](https://docs.microsoft.com/azure/container-instances/container-instances-reference-yaml)
-- [Sidecar Pattern](https://docs.microsoft.com/azure/architecture/patterns/sidecar) 
-- [Container groups in Azure Container Instances](https://docs.microsoft.com/azure/container-instances/container-instances-container-groups)
+- [ACI YAML Reference](/azure/container-instances/container-instances-reference-yaml)
+- [Sidecar Pattern](/azure/architecture/patterns/sidecar) 
+- [Container groups in Azure Container Instances](/azure/container-instances/container-instances-container-groups)
 - [Pods in Kubernetes](https://kubernetes.io/docs/concepts/workloads/pods/)
 - [Kubernetes Init Containers](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/)

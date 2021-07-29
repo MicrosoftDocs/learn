@@ -88,12 +88,6 @@ For example, "a11y" is an abbreviation for accessibility, but a screen reader wo
    AutomationProperties.Name="{OnPlatform iOS='Project name'}"
    ```
 
-2. Setting accessible properties on `Entry` means that the _Project name_ `Label` instance doesn't need to be in the accessibility tree. Set the following property on the _Project name_ `Label` instance:
-
-   ```xaml
-   AutomationProperties.IsInAccessibleTree="False"
-   ```
-
 When you run the application again, you hear "Project name" read out loud when `Entry` is in focus.
 
 > [!NOTE]

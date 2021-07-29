@@ -4,7 +4,7 @@ Let's say your company is now ready to implement virtual network peering. You wa
 - The **Marketing** virtual network is deployed in **North Europe**. Marketing systems use this virtual network. Members of the Marketing team regularly chat with the Sales team. To share their data with the Sales team, they must download it because the Sales and Marketing systems aren't connected.
 - The **Research** virtual network is deployed in **West Europe**. Research systems use this virtual network. Members of the Research team have a logical working relationship with Marketing, but they don't want the Sales team to have direct access to their data.
 
-![A diagram of virtual networks you need to create](../media/3-prepare-vnets.svg)
+![A diagram of virtual networks you need to create.](../media/3-prepare-vnets.svg)
 
 You'll create the following resources:
 
@@ -76,7 +76,7 @@ Let's take a quick look at what you created.
 
 Now you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual networks. These VMs simulate the services in each virtual network. In the final unit of this module, you'll use these VMs to test connectivity between the virtual networks. 
 
-1. In Cloud Shell, run the following command to create an Ubuntu VM in the **Apps** subnet of **SalesVNet**. In the command, replace `<password>` with a password that meets the [requirements for Linux VMs](https://docs.microsoft.com/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm). Note this password for later use.
+1. In Cloud Shell, run the following command to create an Ubuntu VM in the **Apps** subnet of **SalesVNet**. In the command, replace `<password>` with a password that meets the [requirements for Linux VMs](/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm). Note this password for later use.
 
     ```azurecli
     az vm create \
@@ -94,7 +94,7 @@ Now you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual netw
     > [!NOTE]
     > The `--no-wait` parameter in this command lets you continue working in Cloud Shell while the VM is building.
 
-1. Run the following command to create another Ubuntu VM in the **Apps** subnet of **MarketingVNet**. Replace `<password>` with a password that meets the [requirements for Linux VMs](https://docs.microsoft.com/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm). Note this password for later use.
+1. Run the following command to create another Ubuntu VM in the **Apps** subnet of **MarketingVNet**. Replace `<password>` with a password that meets the [requirements for Linux VMs](/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm). Note this password for later use.
 
     ```azurecli
     az vm create \
@@ -109,7 +109,7 @@ Now you'll deploy some Ubuntu virtual machines (VMs) in each of the virtual netw
         --admin-password <password>
     ```
 
-1. Run the following command to create an Ubuntu VM in the **Data** subnet of **ResearchVNet**. Replace `<password>` with a password that meets the [requirements for Linux VMs](https://docs.microsoft.com/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm). Note this password for later use.
+1. Run the following command to create an Ubuntu VM in the **Data** subnet of **ResearchVNet**. Replace `<password>` with a password that meets the [requirements for Linux VMs](/azure/virtual-machines/linux/faq?azure-portal=true#what-are-the-password-requirements-when-creating-a-vm). Note this password for later use.
 
     ```azurecli
     az vm create \

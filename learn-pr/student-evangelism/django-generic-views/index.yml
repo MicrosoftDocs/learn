@@ -2,10 +2,10 @@
 uid: learn.django.generic-views
 metadata:
   title: Use generic views in Django
-  description: Learn how to use generic views in Django.
+  description: Learn how to use generic views in the Python framework Django.
   ms.date: 02/25/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use generic views in Django
@@ -27,7 +27,7 @@ prerequisites:  |
      - [Package management](https://docs.python.org/3/installing/index.html)
      - [Virtual environments](https://packaging.python.org/tutorials/installing-packages/#creating-virtual-environments)
      - [Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/django-generic-views.svg
 levels:
 - intermediate
 roles:

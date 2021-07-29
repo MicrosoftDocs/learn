@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.create-vm-offer-commercial-marketplace.2-what-is-vm-offer
+title: What is a virtual machine offer?
+metadata:
+  title: What is a virtual machine offer?
+  description: In this unit, we explain how VM-based applications are sold through Azure Marketplace
+  ms.date: 06/03/2021
+  author: marleva
+  ms.author: maevan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-what-is-vm-offer.md)]

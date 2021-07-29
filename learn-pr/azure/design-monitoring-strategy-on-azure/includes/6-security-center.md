@@ -8,7 +8,7 @@ You use Security Center to:
 
 - Understand the security posture of your architecture.
 - Identify and address risks and threats to your infrastructure.
-- Need the traditional in-house skills and capital to secure a complex infrastructure.
+- Secure a complex infrastructure with traditional in-house skills and capital.
 - Secure an infrastructure that consists of on-premises and cloud resources.
 
 ## Understand the security posture of your architecture

@@ -5,7 +5,7 @@ metadata:
   description: Django is one of the most popular Python web frameworks. Explore its benefits, learn how to install it, and create your first project.
   ms.date: 02/25/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Get started with Django
@@ -25,7 +25,7 @@ prerequisites:  |
     - [Package management](https://docs.python.org/3/installing/index.html)
     - [Virtual environments](https://packaging.python.org/tutorials/installing-packages/#creating-virtual-environments)
     - [Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/django-get-started.svg
 levels:
 - intermediate
 roles:

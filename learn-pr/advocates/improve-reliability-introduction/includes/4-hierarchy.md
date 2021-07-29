@@ -5,7 +5,7 @@ founding administrator of the United States Digital Services. He created
 this hierarchy while facing one the largest reliability crises he had ever
 met.
 
-:::image type="content" source="../media/dickerson-hierarchy.png" alt-text="a diagram of a pyramid showing the seven levels of the hierarchy of reliability":::
+:::image type="content" source="../media/dickerson-hierarchy.png" alt-text="a diagram of a pyramid showing the seven levels of the hierarchy of reliability.":::
 
 The model is patterned after Abraham Maslow's hierarchy of needs addressing
 human motivation. As with Maslow's hierarchy, to progress up the hierarchy

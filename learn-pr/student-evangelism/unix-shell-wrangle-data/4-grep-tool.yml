@@ -5,7 +5,7 @@ metadata:
   description: In this unit, you'll learn how to use the grep command to match patterns by using regular expressions from the command line.
   ms.date: 12/09/2020
   author: trallard
-  ms.author: shanama # Leave this as shanama unless you want content bugs assigned directly to you
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title:  Use the grep command to match regular expressions

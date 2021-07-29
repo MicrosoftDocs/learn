@@ -4,7 +4,7 @@ In the motor vehicle department system, you need to configure Application Gatewa
 
 In this exercise, you'll create an instance of Application Gateway with a back-end pool of web servers. You'll verify that Application Gateway is configured with the correct listener to handle incoming HTTP requests, and routes these requests to a functioning web server.
 
-![Diagram showing the resources that will be deployed](../media/5-resources.svg)
+![Diagram showing the resources that will be deployed.](../media/5-resources.svg)
 
 ## Configure the network for Application Gateway
 

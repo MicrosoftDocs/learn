@@ -32,7 +32,7 @@ One of the key components of window functions is the OVER clause. This clause de
 
 When we use PARTITION BY with the OVER clause (1), we divide the query result set into partitions. The window function is applied to each partition separately and computation restarts for each partition.
  
-    ![Using a window function with the row_number function](../media/window-row-number.png)
+![Using a window function with the row_number function](../media/window-row-number.png)
 
 The script we executed uses the OVER clause with ROW_NUMBER function (1) to display a row number for each row within a partition. The partition in our case is the Region column. The ORDER BY clause (2) specified in the OVER clause orders the rows in each partition by the column Quantity. The ORDER BY clause in the SELECT statement determines the order in which the entire query result set is returned.
 
@@ -66,7 +66,7 @@ Now  use aggregate functions with our window by expanding on our query that uses
 
 In our query, we added the SUM, AVG, COUNT, MIN, and MAX aggregate functions. Using the OVER clause is more efficient than using subqueries.
  
-    ![Using a window function with aggregate functions](../media/window-aggregates.png)
+![Using a window function with aggregate functions](../media/window-aggregates.png)
 
 ## Analytic functions
 

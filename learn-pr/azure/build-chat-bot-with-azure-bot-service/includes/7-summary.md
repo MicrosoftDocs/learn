@@ -19,11 +19,11 @@ To avoid any unexpected costs in your Azure account, delete the **mslearn-factbo
 There is more that you can do to leverage the power of the Azure Bot Service.
 
 - Incorporating [Dialogs](https://aihelpwebsite.com/ViewBlogPost/32)
-- Add support for [FormFlow](https://blogs.msdn.microsoft.com/uk_faculty_connection/2016/07/14/building-a-microsoft-bot-using-microsoft-bot-framework-using-formflow/)
+- Add support for [FormFlow](/archive/blogs/uk_faculty_connection/building-a-microsoft-bot-using-microsoft-bot-framework-using-formflow)
 - Support natural language with [Microsoft Language Understanding and Intelligence Services (LUIS)](https://docs.botframework.com/node/builder/guides/understanding-natural-language/).
 
 By using these features in conjunction with others, you can build sophisticated bots that respond to users' queries and commands and interact in a fluid, conversational, and non-linear manner.
 
-For more information, and for ideas to get you started, see the [What is Microsoft Bot Framework Overview](https://blogs.msdn.microsoft.com/uk_faculty_connection/2016/04/05/what-is-microsoft-bot-framework-overview/).
+For more information, and for ideas to get you started, see the [What is Microsoft Bot Framework Overview](/archive/blogs/uk_faculty_connection/what-is-microsoft-bot-framework-overview).
 
-If you would like to make the bot smarter, consider expanding the knowledge base with additional questions and answers. For example, you could use the [online FAQ](https://docs.microsoft.com/azure/bot-service/bot-service-resources-bot-framework-faq?view=azure-bot-service-3.0) for the Bot Framework to train the bot to answer questions about the framework itself.
+If you would like to make the bot smarter, consider expanding the knowledge base with additional questions and answers. For example, you could use the [online FAQ](/azure/bot-service/bot-service-resources-bot-framework-faq?view=azure-bot-service-3.0) for the Bot Framework to train the bot to answer questions about the framework itself.

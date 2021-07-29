@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.machine-learning-architectures-and-hyperparameters.random-forests
+title: Random forests and selecting architectures
+metadata:
+  title: Random forests and selecting architectures
+  description: Conceptual unit about random forests and selecting architectures
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-random-forests.md)]

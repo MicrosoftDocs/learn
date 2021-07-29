@@ -5,7 +5,7 @@ metadata:
   description: Write your first Go program in Visual Studio Code.
   ms.date: 04/14/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: os

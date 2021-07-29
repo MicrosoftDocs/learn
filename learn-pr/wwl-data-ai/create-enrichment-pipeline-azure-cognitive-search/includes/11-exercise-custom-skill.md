@@ -1,4 +1,4 @@
-In this excerise, you'll try out some of the techniques you've learned about in this module to build a cognitive search solution.
+In this exercise, you'll try out some of the techniques you've learned about in this module to build a cognitive search solution.
 
 > [!NOTE]
 > A virtual machine containing the client tools you need is provided. If you prefer to build your own development environment, you can do so - these [setup notes](https://microsoftlearning.github.io/AI-102-AIEngineer/Instructions/00-setup.html) describe the software installed in the hosted virtual machine.

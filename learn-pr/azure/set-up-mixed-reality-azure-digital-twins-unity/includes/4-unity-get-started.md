@@ -3,7 +3,7 @@ A complete Unity project has been prepared for you to assist with this learning 
 
 To build Mixed Reality solutions in Unity, you require a number of different development tools.  You can have multiple versions of Unity on your computer, managed within the Unity Hub. 
 
-1. [Download and Unzip the compressed folder from GitHub](https://github.com/MicrosoftDocs/mslearn-mixed-reality-and-azure-digital-twins-in-unity/) and take note of the folder location to where you extracted the project.
+1. [Download and Unzip the compressed folder from GitHub](https://aka.ms/mr-adt-mslearn) and take note of the folder location to where you extracted the project.
 2. From within the Unity Hub, select **Installs** from the panel on the left side.
 
     :::image type="content" source="../media/unity-hub-installs.png" alt-text="Screenshot of the Unity Hub application open to the installs window.":::

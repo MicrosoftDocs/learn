@@ -9,7 +9,7 @@ To connect to a PostgreSQL database, you require the name of the server, and the
 > [!div class="mx-imgBorder"]
 > ![The **Overview** page for an Azure Database for PostgreSQL instance in the Azure portal](../media/4-postgresql-azure.png)
 
-As with Azure SQL Database, you must open the PostgreSQL firewall to enable client applications to connect to the service. For detailed information, see [Firewall rules in Azure Database for PostgreSQL - Single Server](https://docs.microsoft.com/azure/postgresql/concepts-firewall-rules)
+As with Azure SQL Database, you must open the PostgreSQL firewall to enable client applications to connect to the service. For detailed information, see [Firewall rules in Azure Database for PostgreSQL - Single Server](/azure/postgresql/concepts-firewall-rules)
 
 ## Use psql to query a database
 

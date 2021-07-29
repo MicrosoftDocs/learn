@@ -7,7 +7,7 @@ Replication produces multiple replicas of data, and consistency ensures that tho
 
 We discuss three consistency models in detail in this unit: **sequential consistency**, **causal consistency**, and **eventual consistency**.
 
-![A distributed data store that can be a distributed file system, a parallel file system, or a distributed database with replicas maintained across distributed storage disks](../media/replication.png)
+![A distributed data store that can be a distributed file system, a parallel file system, or a distributed database with replicas maintained across distributed storage disks.](../media/replication.png)
 
 _Figure 13: A distributed data store that can be a distributed file system, a parallel file system, or a distributed database with replicas maintained across distributed storage disks_
 
@@ -15,7 +15,7 @@ _Figure 13: A distributed data store that can be a distributed file system, a pa
 
 Also called **strong** or **strict consistency**, sequential consistency entails propagating updates to all replicas immediately. This typically requires applying updates on related replicas in a single atomic operation or transaction. In practice, implementing atomicity across widely dispersed replicas in a large-scale distributed data store is inherently difficult, especially if updates are to be completed quickly. The difficulty stems from the unpredictable access latencies imposed by the underlying storage network and the lack of a global clock that can be utilized to order operations rapidly and accurately. To address this problem, the requirement of executing updates as atomic operations can be relaxed. Relaxing consistency requirements means that replicas need not always be the same in all locations. Whether or not consistency relaxation is acceptable depends on the application that is running over the distributed data store. Specifically, relaxing consistency requirements depends on the read and write access patterns of the application and the purpose for which replicas are used. For instance, browsers and web proxies are often configured to store webpages in local caches (this is a type of replication because multiple copies are maintained for the same webpage) to reduce access times for future references. It is acceptable in some situations that users receive outdated webpages as long as, eventually and rapidly enough, the webpages will be upgraded to the most up-to-date versions available at the actual web server(s). Eventual consistency is an example of a model that suits such scenarios.
 
-![(a) A sequentially consistent distributed data store, and (b) a nonsequentially consistent distributed data store](../media/sequential-vs-nonsequential.png)
+![(a) A sequentially consistent distributed data store, and (b) a nonsequentially consistent distributed data store.](../media/sequential-vs-nonsequential.png)
 
 _Figure 14: (a) A sequentially consistent distributed data store, and (b) a nonsequentially consistent distributed data store_
 
@@ -25,7 +25,7 @@ A distributed data store is considered sequentially consistent if all processes 
 
 The causal consistency model is a weaker variant of the sequential consistency model. First, causality implies that if operation _b_ is caused or influenced by an earlier operation _a_, then every process accessing the distributed data store should see first _a_ and then _b_. A causally consistent distributed data store enforces consistency across only the operations that are potentially causally related. The operations that are not potentially causally related can appear at processes in any interleaving and are denoted as concurrent operations. Figure 15 shows two causally consistent distributed data stores (Figures 15(a) and 15(c)) and one noncausally consistent distributed data store (Figure 15(b)). In Figure 15(a), W(x)b performed by process P2 is potentially dependent on W(x)a carried by process P1 because _b_ may be a result of computation involving _a_ read by process P2 (i.e., R(x)a) before writing _b_ (i.e., W(x)b). Thus, the results of the write operations W(x)a and W(x)b performed by P1 and P2, respectively, should appear in the same order at each reading process. Because processes P3 and P4 read first _a_ and then _b_, they are said to adhere to the causality condition, thus making the underlying distributed data store causally consistent. In contrast, process P3 in Figure 15(b) does not abide by the causality condition (i.e., it reads first _b_ and then _a_), thus rendering the underlying distributed data store noncausally consistent. Last, Figure 15(c) illustrates a causality consistent distributed data store because W(x)a and W(x)b are concurrent operations; hence, their results (i.e., R(x)a and R(x)b) can appear in any order in the reading processes, which is the case for processes P3 and P4.
 
-![(a) A causally consistent distributed data store, (b) a noncausally consistent distributed data store, and (c) a causally consistent distributed data store](../media/causal-consistency.png)
+![(a) A causally consistent distributed data store, (b) a noncausally consistent distributed data store, and (c) a causally consistent distributed data store.](../media/causal-consistency.png)
 
 _Figure 15: (a) A causally consistent distributed data store, (b) a noncausally consistent distributed data store, and (c) a causally consistent distributed data store_
 
@@ -82,7 +82,7 @@ As an example, consider the case of a traditional single-node RDBMS. In this sce
 
 When companies such as Microsoft were designing large-scale databases to serve millions of customers, 24/7 availability was key, as even a few minutes of downtime means lost revenue. When scaling distributed shared-data systems to hundreds or thousands of machines, the likelihood of a failure of one or more nodes (thereby creating a network partition) increases significantly. Therefore, by the CAP theorem, in order to have strong guarantees on availability and partition tolerance, one must sacrifice strict consistency in a large-scale, high-performance distributed database.
 
-![CAP theorem illustrated](../media/cap-theorem.png)
+![CAP theorem illustrated.](../media/cap-theorem.png)
 
 _Figure 16: CAP theorem illustrated_
 <br>

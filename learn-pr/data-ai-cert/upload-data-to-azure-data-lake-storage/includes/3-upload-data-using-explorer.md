@@ -1,4 +1,4 @@
-To do ad-hoc data transfers into an Azure Data Lake store, use Azure Storage Explorer.
+To do ad hoc data transfers into an Azure Data Lake store, use Azure Storage Explorer.
 
 Storage Explorer is a free application for Windows, macOS, and Linux. This Azure app is designed to manage unstructured data such as tables, blobs, queues, and files. It also supports data in Azure Cosmos DB and Azure Data Lake Storage Gen2. That's why we'll use it in this exercise.
 
@@ -22,24 +22,24 @@ To get started using Storage Explorer, first add your Azure account:
 
 1. In Storage Explorer, on the left, select the Account button.
 
-    ![Screenshot showing account management in Storage Explorer](../media/3-account-management.png)
+    ![Screenshot showing account management in Storage Explorer.](../media/3-account-management.png)
 
 1. You can connect your storage account in multiple ways: 
    - Sign in with your Azure account to access all of your subscriptions.
    - Use a connection string to access a specific Azure Storage account.
    - Use a storage account name and access key.
 
-     ![Screenshot showing the ways to connect to Azure Storage](../media/3-connect-to-azure-storage.png)
+     ![Screenshot showing the ways to connect to Azure Storage.](../media/3-connect-to-azure-storage.png)
 
 1. After you sign in, select the subscriptions you want to work with. Make sure to select the subscription in which you created the Azure Storage account.
 
 The app shows a list of storage areas you can work with from your subscriptions. Your Azure Storage account should appear on the list.
 
-![Screenshot showing available storage areas in Storage Explorer](../media/3-main-app-display.png)
+![Screenshot showing available storage areas in Storage Explorer.](../media/3-main-app-display.png)
 
 ## Create a file system in Storage Explorer
 
-Because blobs are always uploaded into folders, you can organize groups of blobs much like you organize files on your computer. 
+Because blobs are always uploaded into folders, you can organize groups of blobs much like you organize files on your computer.
 
 In Data Lake Storage Gen2, you start by creating a _file system_. This defines the Blob storage container that will hold your data lake. You create folders and files within this dedicated area.
 
@@ -59,7 +59,7 @@ A folder helps provide a hierarchical structure for your data. You can create mu
 
 1. On the menu at the top of Storage Explorer, select **New Folder**.
 
-    ![The New Folder button in Storage Explorer](../media/3-create-new-folder.png)
+    ![The New Folder button in Storage Explorer.](../media/3-create-new-folder.png)
 
 1. Name the folder **sample**. Then select **OK** to create the directory. If you get a message that asks if you want to refresh your view, select **Yes**.
 
@@ -83,18 +83,23 @@ You'll need data to work with, so create a sample text file on your computer nam
 01-01-2019  c3   e6 7000
 ```
 
-You'll upload this data file in various ways. Keep in mind that this is a _simple_ example. Typically, you'll populate your data lake with much larger data samples from a variety of sources. 
+You'll upload this data file in various ways. Keep in mind that this is a _simple_ example. Typically, you'll populate your data lake with much larger data samples from a variety of sources.
+
 ## Upload a file
 
 You can upload files and folders from your local machine to directories in your file share right from Storage Explorer.
 
 1. In Storage Explorer, double-click the **data** folder.
+
 1. On menu at the top of the window, select **Upload**. From the Upload menu, you can upload a folder or a file.
+
 1. Select **Upload Files**.
+
 1. Select the **sales.txt** file you created earlier.
+
 1. In the **Upload Files** dialog box, ensure that the destination directory is **sample/data**. Then select **Upload**.
 
-    ![Screenshot of the Upload Files dialog box in Storage Explorer](../media/3-upload-file.png)
+    ![Screenshot of the Upload Files dialog box in Storage Explorer.](../media/3-upload-file.png)
 
 When you finish, the file appears on the list.
 

@@ -6,7 +6,7 @@ metadata:
   brand: azure
   ms.date: 03/11/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create data-driven websites by using Django
@@ -24,7 +24,7 @@ prerequisites: |
     - Package management
     - Inheritance and mix-ins
   - Intermediate understanding of HTML and CSS
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/django-create-data-driven-websites.svg
 levels:
 - intermediate
 roles:

@@ -21,12 +21,15 @@ prerequisites: |
 iconUrl: /learn/achievements/azure-sql-intro.svg
 levels:
 - beginner
+- intermediate
 roles:
 - solution-architect
 - database-administrator
+- data-engineer
 products:
 - azure
 - azure-sql-database
+- azure-sql-managed-instance
 units:
 - learn.azure-sql-intro.1-introduction
 - learn.azure-sql-intro.2-azure-sql-history

@@ -8,7 +8,7 @@ Next, you'll modify the web app by using Azure Explorer to add a pair of propert
 
 1. In the **Azure Explorer** window, expand **Web Apps**, right-click your web app, and then click **Start Streaming Logs**.
 
-    ![Screenshot of the context menu for the web app in the **Azure Explorer** window](../media/6-streaming-logs-entry.png)
+    ![Screenshot of the context menu for the web app in the **Azure Explorer** window.](../media/6-streaming-logs-entry.png)
 
 1. You will see logs showing up in a few seconds. You can access the web app to generate some logs.
 
@@ -20,7 +20,7 @@ Next, you'll modify the web app by using Azure Explorer to add a pair of propert
 
 1. In the **Azure Explorer** window, right-click the web app, and then click **Show Properties**. The properties window for the web app should appear:
 
-    ![Screenshot of the properties window for the web app](../media/7-web-app-properties.png)
+    ![Screenshot of the properties window for the web app.](../media/7-web-app-properties.png)
 
 1. In the properties window, click the **Add** icon to add a new property key and value.
 
@@ -32,7 +32,7 @@ Next, you'll modify the web app by using Azure Explorer to add a pair of propert
 
 1. Add another property named **Iterations**, with the value **10**.
 
-    ![Screenshot of the properties window for the web app showing the new properties and values](../media/7-new-web-app-properties.png)
+    ![Screenshot of the properties window for the web app showing the new properties and values.](../media/7-new-web-app-properties.png)
 
 1. Click **Save**.
 
@@ -97,4 +97,4 @@ Next, you'll modify the web app by using Azure Explorer to add a pair of propert
 >
 > Deleting the web app using the Azure Toolkit for IntelliJ doesn't delete the app service plan, but you can remove the plan using the Azure portal. To do so, navigate to the appropriate resource group, select the app service plan, and then click **Delete**, as shown in the image below:
 >
-> ![Screenshot of the Azure portal. The user is deleting the app service plan](../media/7-delete-app-service-plan.png)
+> ![Screenshot of the Azure portal. The user is deleting the app service plan.](../media/7-delete-app-service-plan.png)

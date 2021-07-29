@@ -12,5 +12,5 @@ In this module, you:
 
 ## Learn more
 
-- [Threat Modeling Tool](https://aka.ms/tmtpreview)
+- [Threat Modeling Tool](/azure/security/develop/threat-modeling-tool)
 - [Visio](https://products.office.com/en-us/visio/flowchart-software)

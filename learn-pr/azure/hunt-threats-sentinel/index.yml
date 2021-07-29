@@ -28,6 +28,7 @@ roles:
 - solution-architect
 products:
 - azure
+- azure-sentinel
 units:
 - learn.azure.hunt-threats-sentinel.1-introduction
 - learn.azure.hunt-threats-sentinel.2-exercise-setup

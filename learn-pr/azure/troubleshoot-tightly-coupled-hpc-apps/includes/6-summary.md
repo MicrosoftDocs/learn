@@ -7,11 +7,11 @@ In this module, you learned:
 
 ## Learn more
 
-- [HPC on Azure](https://docs.microsoft.com/azure/architecture/topics/high-performance-computing)
+- [HPC on Azure](/azure/architecture/topics/high-performance-computing)
 
-- [VM sizes for HPC](https://docs.microsoft.com/azure/virtual-machines/sizes-hpc)
+- [VM sizes for HPC](/azure/virtual-machines/sizes-hpc)
 
-- [Microsoft MPI](https://docs.microsoft.com/message-passing-interface/microsoft-mpi)
+- [Microsoft MPI](/message-passing-interface/microsoft-mpi)
 
 - [Intel Memory Latency Checker](https://software.intel.com/content/www/us/en/develop/articles/intelr-memory-latency-checker.html)
 

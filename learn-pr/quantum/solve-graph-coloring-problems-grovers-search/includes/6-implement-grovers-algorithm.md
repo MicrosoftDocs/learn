@@ -41,6 +41,11 @@ Here's the full code.
 
 :::code language="qsharp" source="code/6-program-2.qs":::
 
+> [!NOTE]
+> This code snippet does not currently run on any available Azure Quantum hardware targets, as the callable `ResultArrayAsBoolArray`, as well variable reassignments inside of measurement-dependant `if`-blocks, require a QPU with [full computation profile](/azure/quantum/concepts-targets-in-azure-quantum#quantum-processing-units-qpu-different-profiles).
+>
+> Learn module code that does not feature such a notice is executable on current hardware targets.
+
 You should recognize the first three operations as the oracle implementation from unit 4, and the fourth operation as the generic search algorithm we implemented earlier in this unit.
 
 This leaves us only the last operation, which defines the problem we're solving, creates all the necessary parameters, calls the generic search implementation, and interprets the results.

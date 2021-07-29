@@ -27,6 +27,7 @@ roles:
 - solution-architect
 products:
 - azure
+- azure-sentinel
 units:
 - learn.azure.incident-management-sentinel.1-introduction
 - learn.azure.incident-management-sentinel.2-exercise-setup

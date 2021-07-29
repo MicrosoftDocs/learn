@@ -25,7 +25,7 @@ Another popular Python library that is widely used in the research community is 
 
 1. Now run the cell to display a scatter plot with a regression line.
 
-    ![Scatter plot with regression line computed by sckikit-learn](../media/4-sklearn-regression.png)
+    ![Scatter plot with regression line computed by sckikit-learn.](../media/4-sklearn-regression.png)
 
     _Scatter plot with regression line computed by sckikit-learn_
 

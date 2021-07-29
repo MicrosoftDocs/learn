@@ -4,9 +4,9 @@ We only used examples of JavaScript and C#, but Azure supports a variety of othe
 
 ## Additional resources
 
-- [Azure Storage Services REST API Reference](https://docs.microsoft.com/rest/api/storageservices/)
-- [Using shared access signatures to provide limited access to a storage account](https://docs.microsoft.com/azure/storage/common/storage-dotnet-shared-access-signature-part-1)
-- [Using Azure Key Vault Storage Account Keys with server apps](https://docs.microsoft.com/azure/key-vault/key-vault-ovw-storage-keys)
+- [Azure Storage Services REST API Reference](/rest/api/storageservices/)
+- [Using shared access signatures to provide limited access to a storage account](/azure/storage/common/storage-dotnet-shared-access-signature-part-1)
+- [Using Azure Key Vault Storage Account Keys with server apps](/azure/key-vault/key-vault-ovw-storage-keys)
 - [Source code for the .NET Azure SDKs](https://github.com/Azure/azure-sdk-for-net)
 - [Azure Storage Client Library for JavaScript](https://github.com/Azure/azure-storage-node#azure-storage-javascript-client-library-for-browsers)
 

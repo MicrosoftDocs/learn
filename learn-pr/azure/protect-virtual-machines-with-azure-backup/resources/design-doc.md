@@ -147,6 +147,6 @@ Details the features of Azure Backup to backup and restore Azure virtual machine
 
 Supporting documentation:
 
-[Azure Backup architecture](https://docs.microsoft.com/azure/backup/backup-architecture?azure-portal=true)
+[Azure Backup architecture](/azure/backup/backup-architecture?azure-portal=true)
 
-[Restore Azure VMs in portal](https://docs.microsoft.com/azure/backup/backup-azure-arm-restore-vms?azure-portal=true)
+[Restore Azure VMs in portal](/azure/backup/backup-azure-arm-restore-vms?azure-portal=true)

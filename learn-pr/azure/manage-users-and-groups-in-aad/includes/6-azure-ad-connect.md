@@ -3,7 +3,7 @@ Companies that use an on-premises Windows Server Active Directory solution can i
 With Azure AD Connect, you can provide your
 users with a common identity for Microsoft 365, Azure, and SaaS applications integrated with Azure AD in a hybrid identity environment.
 
-![A picture containing object Description automatically generated](../media/M1-AAD-Connect1.png)
+![A picture containing object Description automatically generated.](../media/M1-AAD-Connect1.png)
 
 ## What's included in Azure AD Connect?
 
@@ -21,8 +21,8 @@ Integrating your on-premises directories with Azure AD makes your users more pro
 
 * Users can use a single identity to access both on-premises applications and cloud services, such as Microsoft 365.
 * A single tool provides an easy deployment experience for synchronization and sign-in.
-* Integration provides the newest capabilities for your scenarios. Azure AD Connect replaces older versions of identity integration tools, such as DirSync and Azure AD Sync. For more information, see [Hybrid Identity directory integration tools comparison](https://docs.microsoft.com/azure/active-directory/hybrid/plan-hybrid-identity-design-considerations-tools-comparison).
+* Integration provides the newest capabilities for your scenarios. Azure AD Connect replaces older versions of identity integration tools, such as DirSync and Azure AD Sync. For more information, see [Hybrid Identity directory integration tools comparison](/azure/active-directory/hybrid/plan-hybrid-identity-design-considerations-tools-comparison).
 
 ## Installing
 
-Installing and configuring Azure AD Connect is not a trivial task and requires some initial planning and decisions before you begin. Microsoft has a full [Installation guide](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-roadmap) to help you prepare, install, configure and test your AD Connect setup.
+Installing and configuring Azure AD Connect is not a trivial task and requires some initial planning and decisions before you begin. Microsoft has a full [Installation guide](/azure/active-directory/hybrid/how-to-connect-install-roadmap) to help you prepare, install, configure and test your AD Connect setup.

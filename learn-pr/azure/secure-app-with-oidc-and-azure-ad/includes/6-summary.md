@@ -22,7 +22,7 @@ To delete the Azure AD tenant, follow these steps:
 
 ## Further reading
 
-- [Authorize access to web applications by using OpenID Connect and Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/v1-protocols-openid-connect-code)
+- [Authorize access to web applications by using OpenID Connect and Azure Active Directory](/azure/active-directory/develop/v1-protocols-openid-connect-code)
 - [OpenID Connect specification](https://openid.net/specs/openid-connect-core-1_0.html)
-- [ID tokens](https://docs.microsoft.com/azure/active-directory/develop/id-tokens)
-- [Azure Active Directory access tokens](https://docs.microsoft.com/azure/active-directory/develop/access-tokens)
+- [ID tokens](/azure/active-directory/develop/id-tokens)
+- [Azure Active Directory access tokens](/azure/active-directory/develop/access-tokens)

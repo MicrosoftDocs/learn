@@ -199,5 +199,5 @@ Epoch | Training loss | Test loss | Test accuracy
 
 
 <!-- Links -->
-[AnalyzeMod]: https://docs.microsoft.com/learn/modules/analyze-rock-images-ai-nasa/4-import-and-clean-data?azure-portal=true
-[CheckEnviron]: https://docs.microsoft.com/learn/modules/train-test-predictive-ai-model-nasa/3-build-neural-network?azure-portal=true
+[AnalyzeMod]: /learn/modules/analyze-rock-images-ai-nasa/4-import-and-clean-data?azure-portal=true
+[CheckEnviron]: /learn/modules/train-test-predictive-ai-model-nasa/3-build-neural-network?azure-portal=true

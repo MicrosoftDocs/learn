@@ -12,10 +12,12 @@ Although both the remote and local ports matched here (port 5000), that might no
 
 ## How do we view or modify forwarded ports?
 
-You can forward a new port for the duration of the session by running the **Forward a Port** command from the Command Palette (<kbd>F1</kbd>).
+You can forward a new port for the duration of the session by running the **Forward a Port** command from the Command Palette (<kbd>F1</kbd>) or clicking **Add Port** in the ports tab of the terminal.
 
-You can work with your forwarded ports by going to the **Forwarded Ports** section of the Remote Explorer. There, you can view what ports are currently forwarded or add a new port. You can also right-click and modify your port or open it in a browser, as shown in the following screenshot.
+You can also right-click and modify your port or open it in a browser, as shown in the following screenshot.
 
-:::image type="content" source="../media/forward-port-right-click.png" alt-text="Screenshot of right-click options in the Forwarded Ports section of the Remote Explorer in Visual Studio Code.":::
+:::image type="content" source="../media/port-forwarded.png" alt-text="Screenshot of the Forwarded Ports section of the internal terminal in Visual Studio Code.":::
 
 In the next section, you'll take a closer look at your forwarded ports and make some changes to understand forwarding even better.
+
+:::image type="content" source="../media/port-right-click.png" alt-text="Screenshot of right-clicking on the forwarded port in the internal terminal in Visual Studio Code.":::

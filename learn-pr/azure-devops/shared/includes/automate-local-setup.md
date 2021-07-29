@@ -11,9 +11,9 @@ Visual Studio Code comes with an integrated terminal. Here you can both edit fil
 
 1. Start Visual Studio Code.
 1. On the **View** menu, select **Terminal**.
-1. In the drop-down list, select **bash**:
+1. In the drop-down list, select **bash**. If you're familiar with another Unix shell that you prefer to use, such as Zsh, select that shell instead.
 
-    ![Selecting the Bash shell in Visual Studio Code](../../shared/media/vscode-terminal-bash.png)
+    :::image type="content" source="../../shared/media/vscode-terminal-bash.png" alt-text="A screenshot of Visual Studio Code showing the location of the Bash shell.":::
 
     In the terminal window, you can choose any shell that's installed on your system. For example, you can choose Bash, Zsh, or PowerShell.
 
@@ -44,7 +44,7 @@ At a minimum, you need to complete the following steps. Run the commands from th
 
 ### Set up your project in Visual Studio Code
 
-In the [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true) learning path, you forked and then cloned a Git repository. The repository contains the source code for the _Space Game_ website. Your fork was connected to your projects in Azure DevOps so that the build runs when you push changes to GitHub.
+In the [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true) learning path, you forked and then cloned a Git repository. The repository contains the source code for the _Space Game_ website. Your fork was connected to your projects in Azure DevOps so that the build runs when you push changes to GitHub.
 
 > [!IMPORTANT]
 > In this learning path, we switch to a different Git repository, [mslearn-tailspin-spacegame-web-automate](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-automate?azure-portal=true). When you ran the template to set up your Azure DevOps project, the process forked the repository automatically for you.
@@ -60,9 +60,9 @@ A clone, just like a fork, is a copy of a repository. When you clone a repositor
 To clone the *Space Game* web project to your computer:
 
 1. Go to your fork of the *Space Game* web project (**mslearn-tailspin-spacegame-web-automate**) on [GitHub](https://github.com?azure-portal=true).
-1. Select **Clone or download**. Then select the button next to the URL to copy the URL to your clipboard:
+1. Select **Code**. Then, from the **HTTPS** tab, select the button next to the URL that's shown to copy the URL to your clipboard.
 
-    ![The Clone or download button on GitHub](../../shared/media/github-clone-button.png)
+    :::image type="content" source="../../shared/media/github-clone-button.png" alt-text="Locating the URL and copy button from the GitHub repository.":::
 1. In Visual Studio Code, go to the terminal window.
 1. In the terminal, move to the directory where you want to work. Choose your home directory (`~`) or a different directory if you want.
 
@@ -84,53 +84,60 @@ To clone the *Space Game* web project to your computer:
 
 ### Set the upstream remote
 
-A *remote* is a Git repository where team members collaborate. It's like a repository on GitHub.
+A *remote* is a Git repository where team members collaborate (like a repository on GitHub). Here you list your remotes and add a remote that points to Microsoft's copy of the repository so that you can get the latest sample code.
 
-Run this `git remote` command to list your remotes:
+1. Run this `git remote` command to list your remotes:
 
-```bash
-git remote -v
-```
+    ```bash
+    git remote -v
+    ```
 
-You see that you have both fetch (download) and push (upload) access to your repository:
+    You see that you have both fetch (download) and push (upload) access to your repository:
 
-```output
-origin  https://github.com/username/mslearn-tailspin-spacegame-web-automate.git (fetch)
-origin  https://github.com/username/mslearn-tailspin-spacegame-web-automate.git (push)
-```
+    ```output
+    origin  https://github.com/username/mslearn-tailspin-spacegame-web-automate.git (fetch)
+    origin  https://github.com/username/mslearn-tailspin-spacegame-web-automate.git (push)
+    ```
 
-*Origin* specifies your repository on GitHub. When you fork code from another repository, the original remote (the one you forked from) is often named *upstream*.
+    *Origin* specifies your repository on GitHub. When you fork code from another repository, the original remote (the one you forked from) is often named *upstream*.
 
-Run this `git remote add` command to create a remote named *upstream* that points to the Microsoft repository:
+1. Run this `git remote add` command to create a remote named *upstream* that points to the Microsoft repository:
 
-```bash
-git remote add upstream https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-automate.git
-```
+    ```bash
+    git remote add upstream https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-automate.git
+    ```
 
-Run `git remote` again to see the changes:
+1. Run `git remote` again to see the changes:
 
-```bash
-git remote -v
-```
+    ```bash
+    git remote -v
+    ```
 
-You see that you still have both fetch (download) access and push (upload) access to your repository. You also now have fetch access to the Microsoft repository:
+    You see that you still have both fetch (download) access and push (upload) access to your repository. You also now have fetch access to the Microsoft repository:
 
-```output
-origin  https://github.com/username/mslearn-tailspin-spacegame-web-automate.git (fetch)
-origin  https://github.com/username/mslearn-tailspin-spacegame-web-automate.git (push)
-upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-automate.git (fetch)
-```
+    ```output
+    origin  https://github.com/username/mslearn-tailspin-spacegame-web-automate.git (fetch)
+    origin  https://github.com/username/mslearn-tailspin-spacegame-web-automate.git (push)
+    upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-automate.git (fetch)
+    ```
 
-### Open the project
+### Open the project in the file explorer
 
-In Visual Studio Code, your terminal window points to the root directory of the *Space Game* web project. You'll now open the project to view its structure and work with files.
+In Visual Studio Code, your terminal window points to the root directory of the *Space Game* web project. To view its structure and work with files, from the file explorer, you'll now open the project.
 
-1. On the **File** menu, select **Open**.
-1. Navigate to the root directory of the *Space Game* web project. If you need a reminder of the full path, you can run the `pwd` command in the terminal window to see the path.
+1. The easiest way to open the project is to reopen Visual Studio Code in the current directory. To do so, run the following command from the integrated terminal:
 
-You see the directory and file tree.
+    ```bash
+    code -r .
+    ```
 
-> [!NOTE]
-> You might need to open the integrated terminal again after you open the folder.
+    You see the directory and file tree in the file explorer.
+1. Reopen the integrated terminal. The terminal places you at the root of your web project.
+
+If the `code` command fails, you need to add Visual Studio Code to your system PATH. To do so:
+
+1. In Visual Studio Code, select <kbd>F1</kbd> or select **View** > **Command Palette** to access the command palette.
+1. In the command palette, enter *Shell Command: Install 'code' command in PATH*.
+1. Repeat the previous procedure to open the project in the file explorer.
 
 You're now set up to work with the _Space Game_ source code and your Azure Pipelines configuration from your local development environment.

@@ -93,18 +93,18 @@ You'll now push your changes to GitHub and see the pipeline run.
 
     As the pipeline runs, you see that the process expands the tasks within the template. The tasks that build and publish the project are run two times, once for each build configuration.
 
-    ![The expanded template tasks in Azure Pipelines](../media/8-template-tasks.png)
+    :::image type="content" source="../media/8-template-tasks.png" alt-text="Azure Pipelines showing the expanded template tasks. Included are build and publish tasks for both the Debug and Release configurations.":::
 
 1. When the build completes, go back to the summary page, and select the published artifact as you did before. Expand the drop folder.
 
     You see that the pipeline produces a *.zip* file for both the Debug configuration and the Release configuration.
 
-    ![The packaged application for Debug and Release configurations in the Artifacts explorer](../media/8-artifacts-explorer.png)
+    :::image type="content" source="../media/8-artifacts-explorer.png" alt-text="Azure Pipelines showing the packaged application for both Debug and Release configurations.":::
 
-## Merge the branch into master
+## Merge the branch into main
 
 At this point, you have a working build pipeline that accomplishes everything Mara needs for right now.
 
-In practice, you'd submit a *pull request* that merges your `build-pipeline` branch into the `master` branch.
+In practice, you'd submit a *pull request* that merges your `build-pipeline` branch into the `main` branch.
 
 We'll skip that step for now. In the next module, you'll learn some ways to collaborate with your team on GitHub, including how to submit, review, and merge pull requests.

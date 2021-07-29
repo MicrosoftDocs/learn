@@ -17,7 +17,7 @@ You should now be able to determine whether Azure Data Factory can provide a sui
 
 ## References
 
-- [Azure Data Factory whitepapers](https://docs.microsoft.com/azure/data-factory/whitepapers?azure-portal=true)
-- [Azure Data Factory documentation](https://docs.microsoft.com/azure/data-factory?azure-portal=true)
-- [Copy activity in Azure Data Factory](https://docs.microsoft.com/azure/data-factory/copy-activity-overview?azure-portal=true)
-- [Continuous integration and delivery in Azure Data Factory](https://docs.microsoft.com/azure/data-factory/continuous-integration-deployment?azure-portal=true)
+- [Azure Data Factory whitepapers](/azure/data-factory/whitepapers?azure-portal=true)
+- [Azure Data Factory documentation](/azure/data-factory?azure-portal=true)
+- [Copy activity in Azure Data Factory](/azure/data-factory/copy-activity-overview?azure-portal=true)
+- [Continuous integration and delivery in Azure Data Factory](/azure/data-factory/continuous-integration-deployment?azure-portal=true)

@@ -32,7 +32,7 @@ Things are looking up at Tailspin. At a recent management offsite, Andy presente
 
 **Mara**: Have you thought about what we will refactor out as the second container? I know there have been several teams asking us to make our leaderboard available through a web API.
 
-**Andy**: I'm one step ahead of you. I forked the Docker project last night and refactored the leaderboard data functionality into its own miroservice. This leaves us with one container for the web site and another for a leaderboard API. Both containers are configured to have their own public endpoints that we can share with anyone who wants to use the site or API regardless of what technology stack their app uses. If the load grows substantially for either, we can scale its containers independently.
+**Andy**: I'm one step ahead of you. I forked the Docker project last night and refactored the leaderboard data functionality into its own microservice. This leaves us with one container for the web site and another for a leaderboard API. Both containers are configured to have their own public endpoints that we can share with anyone who wants to use the site or API regardless of what technology stack their app uses. If the load grows substantially for either, we can scale its containers independently.
 
 **Mara**: This project sounds awesome! Let's get started on updating the release pipeline.
 

@@ -20,7 +20,7 @@ For example, if a pool's `taskSlotsPerNode` property is set to 16, the tasks run
 - 3 tasks that require 5 slots can run at the same time because the number of slots is less than 16 (3 * 5 = 15)
 - 5 tasks that require 4 slots cannot run at the same time because the number of slots is more than 16 (5 * 4 = 20)
 
-At maximum, the `taskSlotsPerNode` property can be up to four times the number of vCPUs that a node has. To figure out how many vCPUs are available on a node, see [Sizes for virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/sizes).
+At maximum, the `taskSlotsPerNode` property can be up to four times the number of vCPUs that a node has. To figure out how many vCPUs are available on a node, see [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes).
 
 > [!NOTE]
 > After the `taskSlotsPerNode` property has been set, it can't be modified. Changing it requires creating a new pool.

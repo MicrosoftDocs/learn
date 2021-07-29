@@ -12,8 +12,8 @@ In this module, you've learned to build that dashboard view and help prevent and
 
 To learn more about events in Azure AD, see the following articles:
 
-- [What are Azure Active Directory reports?](https://docs.microsoft.com/azure/active-directory/reports-monitoring/overview-reports)
-- [What is Azure Active Directory monitoring?](https://docs.microsoft.com/azure/active-directory/reports-monitoring/overview-monitoring)
-- [Azure AD activity logs in Azure Monitor](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-activity-logs-azure-monitor)
-- [Azure AD Authentication and authorization error codes](https://docs.microsoft.com/azure/active-directory/develop/reference-aadsts-error-codes)
-- [Get started with log queries in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/log-query/get-started-queries)
+- [What are Azure Active Directory reports?](/azure/active-directory/reports-monitoring/overview-reports)
+- [What is Azure Active Directory monitoring?](/azure/active-directory/reports-monitoring/overview-monitoring)
+- [Azure AD activity logs in Azure Monitor](/azure/active-directory/reports-monitoring/concept-activity-logs-azure-monitor)
+- [Azure AD Authentication and authorization error codes](/azure/active-directory/develop/reference-aadsts-error-codes)
+- [Get started with log queries in Azure Monitor](/azure/azure-monitor/log-query/get-started-queries)

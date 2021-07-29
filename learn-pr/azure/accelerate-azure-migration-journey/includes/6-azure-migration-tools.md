@@ -11,7 +11,7 @@ Tools available to support successful Azure migrations:
 
 ## Cloud Adoption Framework for Azure
 
-The [Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/?azure-portal=true) is a collection of documentation, implementation guidance, best practices, and tools that are proven advice from Microsoft designed to accelerate your cloud adoption journey.
+The [Cloud Adoption Framework](/azure/cloud-adoption-framework/?azure-portal=true) is a collection of documentation, implementation guidance, best practices, and tools that are proven advice from Microsoft designed to accelerate your cloud adoption journey.
 
 The Cloud Adoption Framework helps you create and implement the business and technology strategies necessary for your organization to succeed in the cloud. It provides best practices, documentation, and tools that cloud architects, IT professionals, and business decision-makers need to achieve short-term and long-term objectives successfully.
 
@@ -21,8 +21,8 @@ By using the Cloud Adoption Framework, organizations can better align their busi
 
 The Cloud Adoption Framework brings together cloud adoption methodologies based on input from Microsoft employees, partners, and customers. It provides a set of tools, guidance, and narratives that help shape technology, business, and people strategies for driving desired business outcomes during your cloud adoption effort. Review the guidance for each methodology:
 
-- Learn more about the Cloud Adoption Framework in this [overview](https://docs.microsoft.com/azure/cloud-adoption-framework/overview/?azure-portal=true).
-- Download [tools and templates](https://docs.microsoft.com/azure/cloud-adoption-framework/reference/tools-templates/?azure-portal=true) from the Cloud Adoption Framework to get started on your journey to Azure.
+- Learn more about the Cloud Adoption Framework in this [overview](/azure/cloud-adoption-framework/overview/?azure-portal=true).
+- Download [tools and templates](/azure/cloud-adoption-framework/reference/tools-templates/?azure-portal=true) from the Cloud Adoption Framework to get started on your journey to Azure.
 
 ## Azure Migrate
 

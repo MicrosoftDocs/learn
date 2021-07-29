@@ -14,16 +14,9 @@ Create ADT equipped User Interfaces to provide a window into operations data.
     > Do not change any other parameters or characteristics on Addressables otherwise you will need to re-compile them, which is not covered in this module.
 
 3. Drag the UI Panel Prefab from **Assets > UIPrefabs > Prefabs > OperateSceneUI** into the **Hierarchy** panel.  
-    - This UI Panel is populated with Turbine Site Data at runtime. In this Prefab folder, you will find the **HandMenuOperate.prefab**.  This provides constraints, thresholds, and tracking configuration for menu operation on the HoloLens 2 using your hands.  The Prefab has been configured for default behavior and no further configuration is required.
+    - This UI Panel is populated with Turbine Site Data at runtime.
 
     :::image type="content" source="../media/operate-scene-ui-expanded.png" alt-text="Screenshot of the Unity editor with the operate scene ui prefab running in the main scene. UI prefab is positioned away from the terrain." lightbox="../media/operate-scene-ui.png":::
-
-## Explore the configurable items in the OperateSceneUI and Hand Menu - Operate
-
-1. Use the Inspector panel to familiarize yourself with some of the parameters.
-2. If you accidentally change a value, use Ctrl+Z to undo and revert to the original parameter
-
-Once you are familiar with the Scene, you can go back and customize the color values of the data ranges in the **TurbinePanel** child of the **OperateSceneUI**.
 
 ## Customize colors for data ranges in UI
 

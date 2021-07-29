@@ -6,7 +6,7 @@ metadata:
   description: Create and configure your Translator service.
   ms.date: 10/23/2020
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-python
 durationInMinutes: 10

@@ -12,7 +12,7 @@ Data encryption at rest is a mandatory step toward data privacy, compliance, and
 
 | Best practice| Solution |
 |--------------|----------|
-| Apply disk encryption to help safeguard your data.| Use [Microsoft Azure Disk Encryption](https://docs.microsoft.com/azure/security/azure-security-disk-encryption-overview), which enables IT administrators to encrypt both Windows infrastructure as a service (IaaS) and Linux IaaS virtual machine (VM) disks. Disk encryption combines the industry-standard BitLocker feature and the Linux DM-Crypt feature to provide volume encryption for the operating system (OS) and the data disks. ‎Azure Storage and Azure SQL Database encrypt data at rest by default, and many services offer encryption as an option. You can use Azure Key Vault to maintain control of keys that access and encrypt your data. See [Azure resource providers encryption model support](https://docs.microsoft.com/azure/security/azure-security-encryption-atrest) to learn more. |
+| Apply disk encryption to help safeguard your data.| Use [Microsoft Azure Disk Encryption](/azure/security/azure-security-disk-encryption-overview), which enables IT administrators to encrypt both Windows infrastructure as a service (IaaS) and Linux IaaS virtual machine (VM) disks. Disk encryption combines the industry-standard BitLocker feature and the Linux DM-Crypt feature to provide volume encryption for the operating system (OS) and the data disks. ‎Azure Storage and Azure SQL Database encrypt data at rest by default, and many services offer encryption as an option. You can use Azure Key Vault to maintain control of keys that access and encrypt your data. See [Azure resource providers encryption model support](/azure/security/azure-security-encryption-atrest) to learn more. |
 | Use encryption to help mitigate risks related to unauthorized data access.| Encrypt your drives before you write sensitive data to them. |
 
 Organizations that don’t enforce data encryption risk higher exposure to data-integrity issues. For example, unauthorized users or malicious hackers might steal data in compromised accounts or gain unauthorized access to data coded in Clear Format. To comply with industry regulations, companies also must prove that they are diligent and using correct security controls to enhance their data security.
@@ -42,7 +42,7 @@ Data discovery and classification (currently in preview) provides advanced capab
 * Addressing various security scenarios such as monitoring, auditing, and alerting on anomalous access to sensitive data.
 * Controlling access to and hardening the security of databases containing highly sensitive data.
 
-Data discovery and classification is part of the [Advanced Data Security](https://docs.microsoft.com/azure/sql-database/sql-database-advanced-data-security) offering, which is a unified package for advanced Microsoft SQL Server security capabilities. You access and manage data discovery and classification via the central SQL Advanced Data Security portal.
+Data discovery and classification is part of the [Advanced Data Security](/azure/sql-database/sql-database-advanced-data-security) offering, which is a unified package for advanced Microsoft SQL Server security capabilities. You access and manage data discovery and classification via the central SQL Advanced Data Security portal.
 
 Data discovery and classification introduces a set of advanced services and SQL capabilities, forming a SQL Information Protection paradigm aimed at protecting the data, not just the database:
 

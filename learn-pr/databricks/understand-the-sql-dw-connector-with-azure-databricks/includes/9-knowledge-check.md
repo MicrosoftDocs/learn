@@ -1,1 +1,0 @@
-Now that you've completed the notebooks in Azure Databricks, check your knowledge by answering these questions.

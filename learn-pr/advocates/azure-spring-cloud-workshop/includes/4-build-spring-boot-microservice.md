@@ -10,7 +10,7 @@ This microservice will use Spring Data JPA to read and write data from an [Azure
 Create a specific `todo-service` application in your Azure Spring Cloud instance:
 
 ```bash
-az spring-cloud app create -n todo-service
+az spring-cloud app create --name todo-service --resource-group "$RESOURCE_GROUP_NAME" --service "$SPRING_CLOUD_NAME"
 ```
 
 ## Create a MySQL database
@@ -20,6 +20,7 @@ Now create an Azure database for MySQL:
 ```bash
 az mysql server create \
     --name ${SPRING_CLOUD_NAME}-mysql \
+    --resource-group "$RESOURCE_GROUP_NAME" \
     --sku-name B_Gen5_1 \
     --storage-size 5120 \
     --admin-user "spring"
@@ -34,9 +35,12 @@ Now create a **todos** database in that server, and open up its firewall so that
 az mysql db create \
     --name "todos" \
     --server-name ${SPRING_CLOUD_NAME}-mysql
+```
 
+```bash
 az mysql server firewall-rule create \
     --name ${SPRING_CLOUD_NAME}-mysql-allow-azure-ip \
+    --resource-group "$RESOURCE_GROUP_NAME" \
     --server ${SPRING_CLOUD_NAME}-mysql \
     --start-ip-address "0.0.0.0" \
     --end-ip-address "0.0.0.0"
@@ -191,14 +195,14 @@ You can now build your "todo-service" project and send it to Azure Spring Cloud:
 ```bash
 cd todo-service
 ./mvnw clean package -DskipTests
-az spring-cloud app deploy -n todo-service --jar-path target/demo-0.0.1-SNAPSHOT.jar
+az spring-cloud app deploy --name todo-service --service "$SPRING_CLOUD_NAME" --resource-group "$RESOURCE_GROUP_NAME" --jar-path target/demo-0.0.1-SNAPSHOT.jar
 cd ..
 ```
 
 If you want to check the logs of the application, in case something fails, you can use the `az spring-cloud app logs` command:
 
 ```bash
-az spring-cloud app logs -n todo-service -f
+az spring-cloud app logs --name todo-service --service "$SPRING_CLOUD_NAME" --resource-group "$RESOURCE_GROUP_NAME" -f
 ```
 
 ## Test the project in the cloud

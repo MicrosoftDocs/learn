@@ -11,7 +11,7 @@ Azure SQL Database is available with several options: *Single Database*, *Elasti
 
 ### Single Database
 
-This option enables you to quickly set up and run a single SQL Server database. You create and run a database server in the cloud, and you access your database through this server. Microsoft manages the server, so all you have to do is configure the database, create your tables, and populate them with your data. You can scale the database if you need additional storage space, memory, or processing power. By default, resources are pre-allocated, and you're charged per hour for the resources you've requested. You can also specify a *serverless* configuration. In this configuration, Microsoft creates its own server, which might be shared by a number of databases belonging to other Azure subscribers. Microsoft ensures the privacy of your database. Your database automatically scales and resources are allocated or deallocated as required. For more information, read [What is a single database in Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-single-database).
+This option enables you to quickly set up and run a single SQL Server database. You create and run a database server in the cloud, and you access your database through this server. Microsoft manages the server, so all you have to do is configure the database, create your tables, and populate them with your data. You can scale the database if you need additional storage space, memory, or processing power. By default, resources are pre-allocated, and you're charged per hour for the resources you've requested. You can also specify a *serverless* configuration. In this configuration, Microsoft creates its own server, which might be shared by a number of databases belonging to other Azure subscribers. Microsoft ensures the privacy of your database. Your database automatically scales and resources are allocated or deallocated as required. For more information, read [What is a single database in Azure SQL Database](/azure/sql-database/sql-database-single-database).
 
 ![Image showing the resources managed by Azure SQL Database using the Single Database deployment option](../media/4-single-database.png)
 
@@ -26,7 +26,7 @@ This option is similar to *Single Database*, except that by default multiple dat
 Azure SQL Database gives you the best option for low cost with minimal administration. It is not fully compatible with on-premises SQL Server installations. It is often used in new cloud projects where the application design can accommodate any required changes to your applications.
 
 > [!NOTE]
-> You can use the Data Migration Assistant to detect compatibility issues with your databases that can impact database functionality in Azure SQL Database.  For more information, see [Overview of Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview).
+> You can use the Data Migration Assistant to detect compatibility issues with your databases that can impact database functionality in Azure SQL Database.  For more information, see [Overview of Data Migration Assistant](/sql/dma/dma-overview).
 
 Azure SQL Database is often used for:
 

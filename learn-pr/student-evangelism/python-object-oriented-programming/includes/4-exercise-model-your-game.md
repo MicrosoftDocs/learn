@@ -41,7 +41,15 @@ Rock, paper, scissors is a game played by two participants. The game consists of
 
 The preceding table tells the story of how the game progresses through different phases. By focusing on the two columns `Behavior` and `Data`, you can _scaffold_ some initial code that will help support the creation of the game.
 
-1. Create a file `rock-paper-scissor.py`, and give it the following content:
+
+1. Create a file `rock-paper-scissor.py` using the terminal and open the editor:
+
+   ```bash
+   touch rock-paper-scissor.py
+   code .
+   ```
+
+1. Give it the following content and save the file (Ctrl+S or Command+S on macOS) :
 
    ```python
    class Participant:

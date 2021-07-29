@@ -8,28 +8,28 @@ Although Azure DevOps works with various kinds of source control, many developer
 
 ## Learning objectives
 
-In this module, you:
+After completing this module, you'll be able to:
 
-* Collaborate with others by choosing an appropriate branching and merging strategy.
-* Add a badge to your GitHub repository to show the status of the latest build.
-* Add a dashboard widget to visualize your build history.
-* Set up a rule on your GitHub repository to require a reviewer.
+- Collaborate with others by choosing an appropriate branching and merging strategy
+- Add a badge to your GitHub repository to show the status of the latest build
+- Add a dashboard widget to help visualize your build history
+- Set up a rule on your GitHub repository to require a review
 
 ## Prerequisites
 
 The modules in this learning path form a progression.
 
-To follow the progression from the beginning, be sure to first complete the [Evolve your DevOps practices](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path.
+To follow the progression from the beginning, be sure to first complete the [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true) learning path.
 
 We also recommend you start at the beginning of this learning path, [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true).
 
 If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
 
-* An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
-* A [GitHub](https://github.com/join?azure-portal=true) account
-* [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1?azure-portal=true)
-* [Git](https://git-scm.com/downloads?azure-portal=true)
+- An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
+- A [GitHub](https://github.com/join?azure-portal=true) account
+- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+- [.NET 5.0 SDK](https://dotnet.microsoft.com/download/dotnet/5.0?azure-portal=true)
+- [Git](https://git-scm.com/downloads?azure-portal=true)
 
 You can get started with Microsoft Azure DevOps for free.
 

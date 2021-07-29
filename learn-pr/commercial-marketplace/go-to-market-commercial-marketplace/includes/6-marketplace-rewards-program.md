@@ -6,9 +6,9 @@ Marketplace Rewards benefits are tiered, which means you’ll unlock new benefit
 
 ## Marketplace Rewards benefits
 
-Marketplace Rewards benefits are designed to help you with marketing, sales, and technical activities. The benefits you receive when you publish your offer are differentiated by the [listing option](https://docs.microsoft.com/azure/marketplace/determine-your-listing-type#choose-a-listing-option) you choose. All commercial marketplace listings are eligible for benefits, but you'll unlock more advanced benefits when you publish a transact offer, which customers can purchase through Microsoft.
+Marketplace Rewards benefits are designed to help you with marketing, sales, and technical activities. The benefits you receive when you publish your offer are differentiated by the [listing option](/azure/marketplace/determine-your-listing-type#choose-a-listing-option) you choose. All commercial marketplace listings are eligible for benefits, but you'll unlock more advanced benefits when you publish a transact offer, which customers can purchase through Microsoft.
 
-You can find more information about Marketplace Rewards, including a full list of available benefits, in our [documentation on your commercial marketplace benefits](https://docs.microsoft.com/azure/marketplace/gtm-your-marketplace-benefits).
+You can find more information about Marketplace Rewards, including a full list of available benefits, in our [documentation on your commercial marketplace benefits](/azure/marketplace/gtm-your-marketplace-benefits).
 
 ### Accessing your benefits in Partner Center
 
@@ -25,4 +25,4 @@ After joining the program, you'll see a list of your available benefits. Before 
 
 To get the most impact from your Marketplace Rewards benefits, integrate them into your existing business strategy. You can amplify the impact of your existing marketing campaigns and sales activities by timing them to coincide with the benefits you earn from the commercial marketplace.
 
-For additional best practices, check out our [marketing best practices documentation](https://docs.microsoft.com/azure/marketplace/gtm-marketing-best-practices) and download the marketing best practice guide. You can also get in touch with your engagement manager for help if you've already published your offer to the commercial marketplace.
+For additional best practices, check out our [marketing best practices documentation](/azure/marketplace/gtm-marketing-best-practices) and download the marketing best practice guide. You can also get in touch with your engagement manager for help if you've already published your offer to the commercial marketplace.
