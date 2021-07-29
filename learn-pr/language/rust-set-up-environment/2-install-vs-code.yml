@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-set-up-environment.2-install-vs-code
+metadata: 
+  title: Install Visual Studio Code
+  description: Install Visual Studio Code to write Rust code.
+  ms.date: 07/26/2021
+  author: GitHubber17
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: os
+title: Install Visual Studio Code
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-install-vs-code.md)]
+
+quiz:
+  questions:
+
+  - content: "What two commands compile a Rust program?"
+    choices:
+    - content: "`compile` and `rustc`"
+      isCorrect: false
+      explanation: "Incorrect. The command `compile` isn't recognized in Rust."
+    - content: "`cargo compile` and `rustc`"
+      isCorrect: false
+      explanation: "Incorrect. The command `cargo compile` isn't recognized in Rust."
+    - content: "`cargo build` and `rustc`"
+      isCorrect: true
+      explanation: "Correct!"

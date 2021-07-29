@@ -8,7 +8,7 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-dotnet
 title: Take your first steps with F#
 summary: |
   Interested in learning to program with F# but don't know where to start? Start here! Learn the basic syntax and features of the language. In this learning path you'll:
@@ -24,9 +24,11 @@ roles:
 - developer
 - student
 products:
-- azure
+- dotnet
 modules:
 - learn.fsharp-first-steps
 - learn.fsharp-first-program
+- learn.fsharp-conditional
+- learn.fsharp-functions
 trophy:
   uid: learn.languages.fsharp-first-steps.trophy
