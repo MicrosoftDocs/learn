@@ -10,8 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
-content: |
-  [!include[](includes/8-knowledge-check.md)]
+content: Choose the best response for each question. Then select **Check your answers**.
 quiz:
   title: Check your knowledge
   questions:
@@ -47,6 +46,7 @@ quiz:
       choices:
         - content: "Call app.use(bodyParser.json()) at the top, register a route by using the post method as in app.post(<route>, () =>{}), read from req.body"
           isCorrect: true
+          explanation: Correct, that's how you would configure `bodyParser` to interpret the incoming data as JSON.
         - content: "Register a route by using the post method as in app.post(<route>, () =>{}), read from req.body"
           isCorrect: false
           explanation: "You need to configure a body paring middleware or the posted data won't be available on req.body."

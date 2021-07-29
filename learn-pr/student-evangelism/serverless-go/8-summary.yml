@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-web-api-nodejs-express.9-summary
+uid: learn.student-evangelism.serverless-go.summary
 title: Summary
 metadata:
   title: Summary
   description: summary
-  ms.date: 04/27/2020
+  ms.date: 07/12/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
-  [!include[](includes/9-summary.md)]
+  [!include[](includes/8-summary.md)]
