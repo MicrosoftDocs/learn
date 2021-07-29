@@ -6,18 +6,33 @@ Except for properties, there's also a List module, a module full of functions th
 
 ### Iteration
 
-To iterate, means you go through each element in a list from a starting point to an end point. Here's an example using the method `iter()` that lets you iterate over each item in a list:
+To iterate, means you go through each element in a list from a starting point to an end point. For iteration there are two especially interesting functions: 
 
-```fsharp
-let cards = [ 1 .. 5 ]
-List.iter(fun i -> printfn "%i" i) cards // 1 2 3 4 5
-```
+- `iter()`, lets you iterate over each item in a list:
 
-The `iter()` function takes a function, above you are providing an anonymous function using the `fun` keyword. The function takes a parameter that represents the current item as it's being iterated through. This code is the equivalent of writing the following code with a loop:
+    ```fsharp
+    let cards = [ 1 .. 5 ]
+    List.iter(fun i -> printfn "%i" i) cards // 1 2 3 4 5
+    ```
 
-```fsharp
-for i in cards do printfn "%i" i
-```
+    The `iter()` function takes a function, above you are providing an anonymous function using the `fun` keyword. The function takes a parameter that represents the current item as it's being iterated through. This code is the equivalent of writing the following code with a loop:
+
+    ```fsharp
+    for i in cards do printfn "%i" i
+    ```
+
+- `map()`, is similar to `iter()` but with this function you are interested in transforming what you have. Here's an example:
+
+   ```fsharp
+   type Person = { FirstName: string, LastName= string  }
+   let people = [
+     { FirstName="Albert"; LastName="Einstein" }
+     { FirstName="Marie"; LastName="Curie" }
+   ]
+   let nobelPrizeWinners = people.map(fun person -> person.FirstName + person.LastName) // "Albert Einstein", "Marie Curie"
+   ```
+
+   In the above code, the list of `Person` objects is transformed to a list of strings.
 
 ### Filter
 

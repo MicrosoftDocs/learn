@@ -58,27 +58,27 @@ So, drawing cards is great, but usually in a card game there's players that want
 1. Next, modify the `drawCard()` method to accept a tuple, that consists of two lists, representing the deck and representing the hand:
 
    ```fsharp
-let drawCard (tuple: int list * int list) = 
-   let deck = fst tuple
-   let draw = snd tuple
-   let firstCard = deck.Head
-   printfn "%i" firstCard
+   let drawCard (tuple: int list * int list) = 
+       let deck = fst tuple
+       let draw = snd tuple
+       let firstCard = deck.Head
+       printfn "%i" firstCard
    
-   let hand = 
-        draw
-        |> List.append [firstCard]
+       let hand = 
+           draw
+           |> List.append [firstCard]
 
-   (deck.Tail, hand)
+       (deck.Tail, hand)
    ```
 
-   The `fst()` function is used to access the first property in the tuple, that is your deck. `snd` is used to access the hand. You also modified the return type, so it returns a tuple, consisting of the deck and your hand `(deck.Tail, firstCard :: hand)`, but with the added card `firstCard`.
+   The `fst()` function is used to access the first property in the tuple, that is your deck. `snd` is used to access the hand. You also modified the return type, so it returns a tuple, consisting of the deck and your hand `(deck.Tail, hand)`, but with the added card `firstCard`.
 
 1. Modify the code in the main method to draw cards to the hand:
 
    ```fsharp
    let d, h = (cards, hand) |> drawCard |> drawCard
 
-   printfn "Deck: %A Hand: %A" d h // Deck: [2; 3; 4; 5] Hand: [1; 0]
+   printfn "Deck: %A Hand: %A" d h // Deck: [2; 3; 4; 5] Hand: [0; 1]
    ```
 
 1. Run the project calling `dotnet run`:
@@ -90,7 +90,7 @@ let drawCard (tuple: int list * int list) =
    You should see the following printed in the console:
 
    ```output
-   Deck: [2; 3; 4; 5] Hand: [1; 0]
+   Deck: [2; 3; 4; 5] Hand: [0; 1]
    ```
 
 Congratulations! You've managed to simulate having a player, `hand`, for each time you draw a card.
