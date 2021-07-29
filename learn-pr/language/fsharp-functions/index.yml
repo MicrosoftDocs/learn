@@ -11,7 +11,7 @@ metadata:
 title: Create and architect with functions in F#
 summary: Learn what functions are and how to declare and call them. Also, learn how to architect with functions by using various patterns.
 abstract: |
-  In this module you'll:
+  In this module, you'll:
 
   - Define and use functions.
   - Use pipelines to operate on data.
@@ -24,7 +24,7 @@ roles:
   - student
 products:
   - dotnet
-prerequisites: None
+prerequisites: None.
 units:
   - learn.fsharp-functions.introduction
   - learn.fsharp-functions.function

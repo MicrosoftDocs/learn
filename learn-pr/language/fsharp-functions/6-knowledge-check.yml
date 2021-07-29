@@ -41,10 +41,10 @@ quiz:
         - content: Creating a pipeline.
           explanation: Incorrect. The code is using the composition operator `>>` to compose several functions into one. A pipeline uses the `|>` operator.
           isCorrect: false
-        - content: Defines a function.
+        - content: Defining a function.
           explanation: Incorrect. Technically, the `addAndMultiply()` function is being declared, but a composition creates one function out of several other functions.
           isCorrect: false
-        - content: Creates a composition.
+        - content: Creating a composition.
           explanation: Correct. It's using the composition operator `>>` to create a more complex function.
           isCorrect: true
   
