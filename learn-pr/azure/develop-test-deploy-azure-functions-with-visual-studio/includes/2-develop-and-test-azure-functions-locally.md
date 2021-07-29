@@ -38,7 +38,7 @@ An Azure Function is triggered by an event rather than being called directly fro
 Azure currently provides three versions of the runtime environment required to run Azure Functions:
 
 - Version 1 (v1) uses the .NET Framework 4.7
-- Vversion 2 (v2x) runs using .NET Core 2
+- Version 2 (v2x) runs using .NET Core 2
 - Version 3 (v3x) contains JavaScript and .NET changes.
 
 Using v2 triggers enables you to develop and host the trigger in different environments. Version 1 triggers can only be created using Windows. Use v2 triggers wherever possible.
