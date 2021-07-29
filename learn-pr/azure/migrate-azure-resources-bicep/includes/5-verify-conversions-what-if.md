@@ -2,7 +2,7 @@ Recently, your company acquired a smaller competitor. This company deployed its 
 
 ## What is the ARM template deployment what-if operation?
 
-When you deploy new resources or modify existing resources, it's possible to introduce breaking changes to your environments. Your deployment could incorrectly modify or delete existing resources, create incorrectly configured new resources, or impact the overall functionality of your application.
+When you deploy new resources or modify existing resources, it's possible to introduce breaking changes to your environments. Your deployment could modify or delete existing resources, create incorrectly configured new resources, or impact the overall functionality of your application.
 
 To help you verify your converted templates before deployment, you can use the Azure Resource Manager template deployment what-if operation. When you use the what-if operation, it compares the current state of your environment with the desired state that is defined in the template. The tool outputs the list of changes that will occur *without* applying the changes to your environment. This process can help increase your confidence level in your deployments.
 
@@ -19,7 +19,7 @@ When you use the what-if operation, it lists six types of changes:
 |-|-|-|
 | Create | The resource doesn't currently exist but is defined in the template. | The resource will be created. |
 | Delete | This change type applies only when you're using complete mode for deployment. The resource exists but isn't defined in the template. | If you deploy by using incremental mode, the resource w0n't be deleted. If you deploy by using complete mode, the resource will be deleted. This change type is returned only for resources that support deletion through complete mode. |
-| Ignore | The resource exists but isn't defined in the template. | The resource won't be deployed or modified. This happens when you use incremental mode, which is the default deployment mode. If you deploy by using complete mode, the resource will be deleted. |
+| Ignore | The resource exists but isn't defined in the template. | The resource won't be deployed or modified. This situation happens when you use incremental mode, which is the default deployment mode. If you deploy by using complete mode, the resource will be deleted. |
 | NoChange | The resource exists and is defined in the template. | The resource will be redeployed, but the properties of the resource won't change. This change type is returned when the result format is set to `FullResourcePayloads`, which is the default result format. |
 | Modify | The resource exists and is defined in the template. | The resource will be redeployed, and the properties of the resource will change. This change type is returned when the result format is set to `FullResourcePayloads`, which is the default result format. |
 | Deploy | The resource exists and is defined in the template. | The resource will be redeployed. The properties of the resource might or might not change. The operation returns this change type when it doesn't have enough information to determine if any properties will change. You see this condition only when the result format is set to `ResourceIdOnly`. |
@@ -46,80 +46,96 @@ show the output
 
 ### Limitations of the what-if operation
 
-- Some of the properties that are listed as deleted won't actually change. Properties can be incorrectly reported as deleted when they aren't in the template, but are automatically set during deployment as default values. This result is considered "noise" in the what-if response. The final deployed resource will have the values set for the properties. As the what-if operation matures, these properties will be filtered out of the result.
+The what-if operation may list some resource properties as deleted, when in reality they won't change. It's possible that properties can be reported as deleted when the don't exist in the template. These same properties can bet set automatically during deployment using default values. These results are considered _noise_ in the response from what-if. When the resource is deployed, the appropriate values for the properties will be set. As the what-if operation matures, these properties will be filtered out of the results.
 
-- The what-if operation can't resolve the reference function. Every time you set a property to a template expression that includes the reference function, what-if reports the property will change. This behavior happens because what-if compares the current value of the property (such as true or false for a boolean value) with the unresolved template expression. Obviously, these values won't match. When you deploy the template, the property will only change when the template expression resolves to a different value.
+The what-if operation is unable to resolve the reference function in a template. When you set a resource property to an expression that uses the reference function, what-if will report that the property will change. When what-if compares the current property value with the expression, the values will not match. When you deploy the template, the resource property will only change when the template expression resolves to a different value.
 
-## Verify your templates with documentation
+## Recommended workflow for converting and exporting templates to Bicep
 
-Verifying your templates and having confidence in your deployments is an important step in the Infrastructure as Code process. There are multiple documentation resources such as the [Azure ARM Template Reference](azure/templates/) documentation and the [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/) repository that can assist you in building and finalizing your templates for deployment.
+To help your templates align with best practices, you can follow a recommended workflow when converting and exporting your templates to Bicep. This workflow is broken down into five phases:
 
-### ARM template reference
+- Convert
+- Migrate
+- Refactor
+- Test
+- Deploy
 
-The [Azure ARM Template Reference](azure/templates/) documentation is a source of information for ARM template structure, resource types, API versions, and property definitions for Azure resources. Both JSON and Bicep examples are included.
+This unit will focus on the last two phases: test and deploy.
 
-The documentation allows you to choose specific resource providers and their API versions to determine what settings and properties can be set in your template, including which properties are required and which are optional.
+> [!NOTE]
+> Many of the steps outlined below were discussed in a previous unit. For details on these steps, please refer to Unit 2 - "Convert JSON templates to Bicep" and Unit 4 - "Export resource definitions to Bicep".
 
-The following is an example of an App Service Plan using the latest API version.
+### Convert phase
 
-```bicep
-resource symbolicname 'Microsoft.Web/serverfarms@2020-12-01' = {
-  name: 'string'
-  kind: 'string'
-  location: 'string'
-  tags: {}
-  properties: {
-    workerTierName: 'string'
-    hostingEnvironmentProfile: {
-      id: 'string'
-    }
-    perSiteScaling: bool
-    maximumElasticWorkerCount: int
-    isSpot: bool
-    spotExpirationTime: 'string'
-    freeOfferExpirationTime: 'string'
-    reserved: bool
-    isXenon: bool
-    hyperV: bool
-    targetWorkerCount: int
-    targetWorkerSizeId: int
-    kubeEnvironmentProfile: {
-      id: 'string'
-    }
-  }
-  sku: {
-    name: 'string'
-    tier: 'string'
-    size: 'string'
-    family: 'string'
-    capacity: int
-    skuCapacity: {
-      minimum: int
-      maximum: int
-      elasticMaximum: int
-      default: int
-      scaleType: 'string'
-    }
-    locations: [
-      'string'
-    ]
-    capabilities: [
-      {
-        name: 'string'
-        value: 'string'
-        reason: 'string'
-      }
-    ]
-  }
-}
-```
+In the convert phase of converting your templates to Bicep, the goal is to capture the initial representation of your Azure resources. Take a look at the following steps for this phase.
 
-### Azure quickstart templates
+:::image type="content" source="../media/3-export.png" alt-text="Diagram of converting a JSON template to Bicep." border="true":::
 
-The [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/) repository is a collection of community contributed templates. This database of searchable templates provides examples of many Azure resources and solutions. In some quickstarts, both a JSON ARM template and a Bicep ARM template are available to view. These templates can be used as a reference point to help you build and verify your templates for deployment.
+1. **Export the JSON ARM template**
 
-For example, suppose you want to use a quickstart template that builds an App Service Plan and an App Service as a reference for one of your templates. In the repository you'll notice each quickstart template gives you the option to deploy the template directly to Azure, or browse the template on GitHub.
+2. **Decompile the source JSON ARM template**
 
-:::image type="content" source="../media/5-azure-quickstart-template.png" alt-text="Azure PowerShell error message about resources that cannot be exported.." border="true":::
+### Migrate phase
 
-Keep in mind that the Azure quickstart templates are community contributions. Some of the examples can be out of date as features are added to Azure services regularly. The examples can also include resources and properties that are unnecessary for your templates.
+In the migrate phase of converting your templates to Bicep, the goal is to create an initial Bicep file that includes all of your Azure resources. Take a look at the following steps for this phase.
+
+:::image type="content" source="../media/2-migrate.png" alt-text="Diagram of migrating a template to Bicep." border="true":::
+
+1. **Create a new Bicep file**
+
+1. **Copy the resources from converted Bicep file to new Bicep file**
+
+2. **Re-create any resources that were not exported**
+
+3. **Create parameters for each environment**
+
+### Refactor phase
+
+In the refactor phase of converting your templates to Bicep, the goal is to improve the quality of your Bicep code. Take a look at the following steps for this phase.
+
+:::image type="content" source="../media/2-refactor.png" alt-text="Diagram of refactoring a Bicep template." border="true":::
+
+1. **Review resource API versions**
+
+2. **Review the linter suggestions in your new Bicep file**
+
+3. **Revise parameters, variables, and symbolic names**
+
+4. **Simplify expressions**
+
+5. **Review child and extension resources**
+
+6. **Modularize**
+
+7. **Add comments**
+
+8. **Follow Bicep best practices**
+
+### Test phase
+
+TODO: Intro paragraph
+
+TODO: Image
+
+1. **Run the ARM template deployment what-if operation** - TODO: Insert text here.
+
+1. **Perform a test deployment** - Before introducing your converted Bicep template to production, consider running multiple test deployments. If you have multiple environments (prod, dev, test), you may want to try deploying your template to one of your non-production environments first.
+
+    > [!NOTE]
+    > If you're going to use the converted template in a pipeline, such as Azure DevOps or GitHub Actions, consider running the deployment from your local machine first. It is better to verify the functionality of the template before adding it to your production pipeline.
+
+### Deploy phase
+
+TODO: Intro paragraph
+
+TODO: Image
+
+1. **Prepare a rollback plan** - TODO: Insert text here.
+
+1. **Run the what-if operation against production** - TODO: Insert text here.
+
+1. **Deploy manually** - TODO: Insert text here.
+
+1. **Run smoke tests** - TODO: Insert text here.
+
+Once you've successfully deployed your production environment through your Bicep code, you're done! Now go use a pipeline and automated deployments.
