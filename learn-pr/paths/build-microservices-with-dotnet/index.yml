@@ -12,9 +12,9 @@ title: Create microservices with .NET and ASP.NET Core
 summary: |
   Create independently deployable, highly scalable, and resilient services using the free and open-source .NET platform.
 prerequisites: |
-- Familiarity with command-line based applications.
-- Familiarity with basic Docker concepts.
-- Experience writing C# at the beginner level
+  - Familiarity with command-line based applications.
+  - Familiarity with basic Docker concepts.
+  - Experience writing C# at the beginner level
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - beginner
