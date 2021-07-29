@@ -87,9 +87,11 @@ Another thing you might want to do is to find a specific element. There are a fe
 
    ```fsharp
    let findValue aValue aList =
-    match List.tryFind(fun item -> item = aValue) aList with
-      | Some value -> printfn "%i" value
-      | None -> printfn "Not found"
+       let found= aList |> List.tryFind(fun item -> item = aValue)
+           
+       match found with
+       | Some value -> printfn "%i" value
+       |  None -> printfn "Not found"
 
    findValue 1 list // 1
    findValue 5 list // Not found
