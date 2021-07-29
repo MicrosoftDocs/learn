@@ -176,7 +176,7 @@ Now that you've created the resource group and service principal, you create a s
 
 1. Select **Service principal (manual)** > **Next**.
 
-   :::image type="content" source="../media/5-create-service-connection-principal-type.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Create service connection' page, with the 'Service principal (manual)' authentication method highlighted." border="true":::
+   :::image type="content" source="../media/5-create-service-connection-principal-type.png" alt-text="Screenshot of the Azure DevOps interface 'Create service connection' page, with the 'Service principal (manual)' authentication method highlighted." border="true":::
 
    > [!NOTE]
    > It's a good idea to manually create service principals like you're doing here, rather than using the automatic service principal creation in Azure Pipelines. When you use the automatic method, Azure Pipelines grants the service principal permissions to your whole subscription. It's more secure to grant permissions at a narrower scope like a resource group, and that requires you to use the manual creation process like you're doing here.
@@ -187,7 +187,7 @@ Now that you've created the resource group and service principal, you create a s
 
 1. In **Service principal ID** and **Service principal key**, enter the service principal's application ID and key that you saved earlier, and in **Tenant ID**, enter the Azure tenant ID that you saved earlier.
 
-   :::image type="content" source="../media/5-create-service-connection-principal-details-2.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Create service connection' page, with the service principal ID, service principal key, and tenant ID filled out, and the Verify button highlighted." border="true":::
+   :::image type="content" source="../media/5-create-service-connection-principal-details-2.png" alt-text="Screenshot of the Azure DevOps interface 'Create service connection' page, with the details completed and the Verify button highlighted." border="true":::
 
 1. Select the **Verify** button.
 
@@ -198,7 +198,7 @@ Now that you've created the resource group and service principal, you create a s
 
 1. In **Service connection name**, enter _ToyWebsite_. Ensure **Grant access permission to all pipelines** is checked.
 
-   :::image type="content" source="../media/5-create-service-connection-principal-details-3.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Create service connection' page, with the service connection name filled out, and the 'Verify and save' button highlighted." border="true":::
+   :::image type="content" source="../media/5-create-service-connection-principal-details-3.png" alt-text="Screenshot of the Azure DevOps interface 'Create service connection' page, with the 'Verify and save' button highlighted." border="true":::
 
    > [!TIP]
    > For simplicity, you're allowing every pipeline to access your service connection. When you create real service connections that work with production resources, consider restricting access just to the pipelines that need them.

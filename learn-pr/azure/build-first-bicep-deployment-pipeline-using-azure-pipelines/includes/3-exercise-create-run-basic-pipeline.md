@@ -121,7 +121,7 @@ You have created a pipeline definition. Here, you register the pipeline with Azu
 
 1. In the **Path** field, select _/deploy/azure-pipelines.yml_. Then select **Continue**.
 
-   :::image type="content" source="../media/3-create-pipeline-yaml-file.png" alt-text="Screenshot of the Azure DevOps interface showing the Create Pipeline flow's 'Select an existing YAML file' page, with the Path set to the path to the pipeline file and the Continue button highlighted." border="true":::
+   :::image type="content" source="../media/3-create-pipeline-yaml-file.png" alt-text="Screenshot of the Azure DevOps interface 'Select an existing YAML file' page, the Path set to the pipeline file and Continue button highlighted." border="true":::
 
    Your YAML pipeline definition is shown.
 
