@@ -20,6 +20,7 @@ levels:
   - beginner
 roles:
   - developer
+  - student
 products:
   - vs
 prerequisites: Complete the module titled "Enhanced health bot."
