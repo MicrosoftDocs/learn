@@ -49,7 +49,7 @@ When you work with Azure Repos from Visual Studio Code on macOS, you need to use
 
 1. Select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
 
-   :::image type="content" source="../media/3-clone-vs-code.png" alt-text="Screenshot of the Azure DevOps interface showing the repository settings, with the Clone in VS Code button highlighted." border="true":::
+   :::image type="content" source="../media/3-clone-visual-studio-code.png" alt-text="Screenshot of the Azure DevOps interface showing the repository settings, with the Clone in VS Code button highlighted." border="true":::
 
 1. Create a folder to use for the repository and select **Select Repository Location**.
 
@@ -71,7 +71,7 @@ Microsoft publishes an Azure Pipelines extension for Visual Studio Code, which h
 
 1. In the **Search** field, enter _Azure Pipelines_, and find the Azure Pipelines extension published by Microsoft. Select the **Install** button.
 
-   :::image type="content" source="../media/3-vs-code-extension.png" alt-text="Screenshot of the Visual Studio Code Extensions, with the search field displaying 'Azure Pipelines', and the Install button for the Microsoft Azure Pipelines extension highlighted." border="true":::
+   :::image type="content" source="../media/3-visual-studio-code-extension.png" alt-text="Screenshot of the Visual Studio Code Extensions, with the search field displaying 'Azure Pipelines', and the Install button for the Microsoft Azure Pipelines extension highlighted." border="true":::
 
 ## Create a YAML pipeline definition
 
@@ -83,7 +83,7 @@ Now that you have your organization, project and repository created, you're read
 
 1. In the _deploy_ folder, create a new file named _azure-pipelines.yml_.
 
-   :::image type="content" source="../media/3-vs-code-pipeline-file.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the deploy folder and the azure-pipelines.yml file shown." border="true":::
+   :::image type="content" source="../media/3-visual-studio-code-pipeline-file.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the deploy folder and the azure-pipelines.yml file shown." border="true":::
 
 1. Copy the following pipeline definition into the file: 
 
