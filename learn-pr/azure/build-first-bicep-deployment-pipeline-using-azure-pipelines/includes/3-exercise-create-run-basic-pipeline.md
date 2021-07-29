@@ -87,7 +87,7 @@ Now that you have your organization, project and repository created, you're read
 
 1. Copy the following pipeline definition into the file: 
 
-   :::code language="yaml" source="code/3-pipeline.yaml" :::
+   :::code language="yaml" source="code/3-pipeline.yml" :::
 
 1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
 

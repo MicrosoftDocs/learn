@@ -65,7 +65,7 @@ In Azure Pipelines, a _job_ represents an ordered set of steps. You always have 
 
 Now that you know the basic concepts behind Azure Pipelines, let's look at a simple pipeline definition in YAML:
 
-:::code language="yaml" source="code/2-simple.yaml" :::
+:::code language="yaml" source="code/2-simple.yml" :::
 
 Let's look at each part in detail.
 

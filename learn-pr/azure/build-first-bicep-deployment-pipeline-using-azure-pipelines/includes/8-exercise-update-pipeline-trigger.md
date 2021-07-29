@@ -17,7 +17,7 @@ During the process, you'll:
 
 1. Add the following trigger definition in its place:
 
-   :::code language="yaml" source="code/8-pipeline.yaml" range="1-4" :::
+   :::code language="yaml" source="code/8-pipeline.yml" range="1-4" :::
 
 1. Save the changes to the file.
 
