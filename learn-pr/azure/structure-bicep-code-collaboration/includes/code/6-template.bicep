@@ -103,9 +103,9 @@ resource sqlDatabase 'Microsoft.Sql/servers/databases@2020-08-01-preview' = {
   tags: tags
 }
 
-resource sqlFirewallRule 'Microsoft.Sql/servers/firewallRules@2014-04-01' = {
+resource sqlFirewallRuleAllowAllAzureIPs 'Microsoft.Sql/servers/firewallRules@2014-04-01' = {
   parent: sqlServer
-  name: 'AllowAllWindowsAzureIps'
+  name: 'AllowAllAzureIPs'
   properties: {
     endIpAddress: '0.0.0.0'
     startIpAddress: '0.0.0.0'

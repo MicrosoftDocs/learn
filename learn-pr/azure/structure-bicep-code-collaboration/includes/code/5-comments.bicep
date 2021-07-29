@@ -1,6 +1,6 @@
 resource firewallRule 'Microsoft.Sql/servers/firewallRules@2014-04-01' = {
   parent: sqlServer
-  name: 'AllowAllWindowsAzureIps'
+  name: 'AllowAllAzureIPs'
   properties: {
     startIpAddress: '0.0.0.0' // This combination represents 'all Azure IP addresses'.
     endIpAddress: '0.0.0.0'
