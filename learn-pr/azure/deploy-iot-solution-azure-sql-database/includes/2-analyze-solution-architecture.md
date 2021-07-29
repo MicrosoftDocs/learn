@@ -73,7 +73,7 @@ Here are some considerations for achieving scale with Azure SQL Database:
 
 You now understand how and why Azure SQL Database is a good fit for IoT applications. Following the distributor scenario, you'll deploy and configure a baseline IoT solution and implement the best practices for achieving scale. The template you deploy can be a great starting point for other IoT scenarios that you or your organization seek to create.
 
-:::image type="content" source="../media/2-azure-iot.png" alt-text="Diagram of the canonical IoT architecture using Azure services." border="false":::
+:::image type="content" source="../media/2-azure-sql-iot.png" alt-text="Diagram of the canonical IoT architecture using Azure services." border="false":::
 
 The template is an Azure Resource Manager (ARM) template, which uses JSON files to define the infrastructure and configuration for a solution. Typically, there is a template file and a parameters file, which contain what to deploy and specifications respectively. You can then deploy the template and parameters with the Azure CLI or Azure PowerShell. Let's break down what the template deploys:
 
