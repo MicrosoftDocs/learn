@@ -12,15 +12,21 @@ The first step is to create a project that contains your unit tests, and add it 
 
     :::image type="content" source="../media/6-add-new-project-to-solution.png" alt-text="Screenshot of Solution Explorer, showing the Add new project to solution command." loc-scope="vs":::
 
-1. In the **Add a new project** window, scroll down, select the **xUnit Test Project (.NET Core)** template, and then select **Next**.
+1. In the **Add a new project** window, scroll down, select the **xUnit Test Project** *C#+* icon template, and then select **Next**.
 
     :::image type="content" source="../media/6-add-xunit-project.png" alt-text="Screenshot of Add New Project window. The user has selected the xUnit Test Project template." loc-scope="vs":::
 
-1. The **Configure your new project** window appears. In the **Project name** field, enter **WatchFunctionsTests**. Aside the **Location** field, select the browse icon, and then select **WatchPortalFunction**. Select **Create.**
+1. The **Configure your new project** window appears. In the **Project name** field, enter *WatchFunctionsTests*. Aside the **Location** field, select the browse icon, and then select the **WatchPortalFunction** folder.
+
+1. Select **Next**. The **Additional information** window appears.
+
+1. Under **Target Framework**. accept the default value of **.NET Core 3.1 (Long-term support)**.
+
+1. Select **Create**.
 
 1. When the project has been added, right-click the **WatchFunctionTests** project in the **Solution Explorer** window, and then select **Manage NuGet Packages**.
 
-1. In the **NuGet: WatchFunctionTests** window, select the **Browse** tab. In the **Search** box, enter **Microsoft.AspNetCore.Mvc**. Select the **Microsoft.AspNetCore.Mvc** package, and then select **Install**.
+1. In the **NuGet: WatchFunctionTests** window, select the **Browse** tab. In the **Search** box, enter *Microsoft.AspNetCore.Mvc*. Select the **Microsoft.AspNetCore.Mvc** package, and then select **Install**.
 
     :::image type="content" source="../media/6-nuget-install-aspnet-mvc.png" alt-text="Screenshot of the NuGet Package Manager window. The user is installing the Microsoft.AspNetCore.Mvc package." loc-scope="vs":::
 
@@ -29,9 +35,9 @@ The first step is to create a project that contains your unit tests, and add it 
 
 1. Wait while the package is installed. If the **Preview Changes** message box appears, select **OK**. In the **License Acceptance** message box, select **I Accept**.
 
-1. After the package has been added, in the **Solution Explorer** window, under the **WatchFunctionsTests** project, right-click the **UnitTest1.cs** file, and then select **Rename**. Change the name of the file to **WatchFunctionUnitTests.cs**. In the message box that appears, to rename all references of **UnitTest1** to **WatchFunctionUnitTests**, select **Yes**.
+1. After the package has been added, in the **Solution Explorer** window, under the **WatchFunctionsTests** project, right-click the **UnitTest1.cs** file, and then select **Rename**. Change the name of the file to *WatchFunctionUnitTests.cs*. In the message box that appears, to rename all references of **UnitTest1** to **WatchFunctionUnitTests**, select **Yes**.
 
-1. In the **Solution Explorer** window, under the **WatchFunctionsTests** project, right-click **Dependencies**, and then select **Add Reference**.
+1. In the **Solution Explorer** window, under the **WatchFunctionsTests** project, right-click **Dependencies**, and then select **Add Project Reference**.
 
 1. In the **Reference Manager** window, select the **WatchPortalFunction** project, and then select **OK**.
 
@@ -41,7 +47,7 @@ You can now add unit tests to the test project. In the luxury watch scenario, yo
 
 To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctionsTests**.
 
-1. In the **Solution Explorer** window, to display it in the code window, double-click the **WatchFunctionUnitTests.cs** file.
+1. In the **Solution Explorer** window, to display the WatchPortalFunction in the code window, double-click the **WatchFunctionUnitTests.cs** file.
 
 1. At the top of the file, add the following `using` directives to the list.
 
@@ -84,7 +90,7 @@ To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctio
     response.Wait();
     ```
 
-1. Add the following code to the method. This code checks that the response from the Azure Function is correct. In this case, the function should return an *OK* response, containing the expected body data.
+1. Add the following code to the method. This code checks that the response from the Azure Function is correct. In this case, the function should return an *OK* response, containing the expected data in the body.
 
     ```csharp
     // Check that the response is an "OK" response
@@ -182,7 +188,7 @@ To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctio
 
 ## Run the tests
 
-1. On the **Test** menu, select **Run All Tests**.
+1. On the top menu bar, under **Test**, select **Run All Tests**.
 
     :::image type="content" source="../media/6-start-tests.png" alt-text="Screenshot of the Test menu in Visual Studio. The user has selected Run -> All Tests." loc-scope="vs":::
 
@@ -205,7 +211,7 @@ To verify this behavior, you'll add a pair of *Fact* tests to the **WatchFunctio
     string model = req.Query["modelll"];
     ```
 
-1. On the **Test** menu, select **Run**, and to repeat the tests, select **All Tests**. This time, the **TestWatchFunctionSuccess** test should fail. This failure occurs because the **WatchInfo** function hasn't found the parameter named `modelll` in the query string, and so the function has returned a *Bad* response.
+1. On the top menu bar, under **Test**, select **Run All Tests**. This time, the **TestWatchFunctionSuccess** test should fail. This failure occurs because the **WatchInfo** function hasn't found the parameter named `modelll` in the query string, and so the function has returned a *Bad* response.
 
     :::image type="content" source="../media/6-test-failure.png" alt-text="Screenshot of the Team Explorer window. The TestWatchFunctionSuccess test failed." loc-scope="vs":::
 
