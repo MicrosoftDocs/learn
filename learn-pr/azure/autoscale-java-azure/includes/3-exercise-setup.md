@@ -21,7 +21,7 @@ Select "Bash" mode in the top right-hand side.
 Next, in the bash window, run the following commands to clone the sample repository and open the built-in Azure editor:
 
    ```bash
-   git clone https://github.com/MicrosoftDocs/mslearn-monitoring-java
+   git clone https://github.com/roryp/mslearn-autoscale-java
    cd mslearn-monitoring-java
    code deployPetClinicApp.sh
    ```
