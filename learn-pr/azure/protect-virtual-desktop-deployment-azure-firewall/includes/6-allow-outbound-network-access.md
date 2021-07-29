@@ -23,7 +23,7 @@ The following table shows the target options you can use to create a rule that a
 |Options |FQDNs to use|
 |---------|---------|
 |Wildcard FQDN    | `*xt.blob.core.windows.net`, `*eh.servicebus.windows.net`        |
-|Exact FQDNs    |   Use the following log analytics query to list the exact required FQDNs used by the host pool.|
+|Exact FQDNs    |   Use the following Log Analytics query in Azure Monitor Logs to list the exact required FQDNs used by the host pool.|
 
   ```kusto
     AzureDiagnostics
