@@ -20,9 +20,15 @@ levels:
   - beginner
 roles:
   - developer
+  - student
 products:
   - vs
-prerequisites: Introduction and basic healthcare bot
+prerequisites: |
+ - Introduction to Azure Health Bot
+ - Basic Azure Health Bot
+ - Language understanding in Azure Health Bot
+ - Azure Health Bot built-in scenarios
+ - Azure Health Bot scenario templates
 units:
   - learn.health-bot-enhanced.1-introduction
   - learn.health-bot-enhanced.2-interrupting-vs-breaking-scenario
