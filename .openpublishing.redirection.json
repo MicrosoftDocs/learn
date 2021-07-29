@@ -8066,6 +8066,36 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/advocates/build-web-api-nodejs-express/4-route-management.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/node-web-routes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/build-web-api-nodeje-express/5-exercise-route-management.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/node-web-routes/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/build-web-api-nodeje-express/6-middleware.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-web-api-nodejs-express/4-middleware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/build-web-api-nodeje-express/7-exercise-middleware.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-web-api-nodejs-express/5-exercise-middleware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/build-web-api-nodeje-express/8-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-web-api-nodejs-express/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/build-web-api-nodeje-express/9-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-web-api-nodejs-express/7-summary",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/student-evangelism/implement-cicd-iot-edge/7-how-monitor-devices.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/implement-cicd-iot-edge/",
       "redirect_document_id": false
