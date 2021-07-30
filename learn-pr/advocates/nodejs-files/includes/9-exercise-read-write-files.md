@@ -92,7 +92,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
    }
    ```
 
-1. Select the <kbd>Cmd</kbd> / <kbd>Ctrl</kbd> + <kbd>S</kbd> keys to save the *index.js* file.
+. Press <kbd>Ctrl+S</kbd> or <kbd>Cmd+S</kbd> to save the *index.js* file.
 
 ## Run the program
 
