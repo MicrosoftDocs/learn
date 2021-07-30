@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.fsharp-lists.collection
-title: Collections
+title: Collections and lists
 metadata:
-  title: Collections
+  title: Collections and lists
   description: In this unit we cover collections in F# and also focus on lists and list properties.
   author: softchris
   ms.author: chnoring
