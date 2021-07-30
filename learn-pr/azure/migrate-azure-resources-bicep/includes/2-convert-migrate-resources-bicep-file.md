@@ -2,7 +2,7 @@ You've started the process of migrating your Azure resources to Bicep, and you w
 
 ## Convert and Migrate
 
-The first two phases of the recommended workflow for migrating your JSON ARM template and Azure resource to Bicep are the _convert_ phase and the _migrate_ phase. The main focus for these two phases is to prepare a new Bicep file prior to refactoring and testing.
+The first two phases of the recommended workflow for migrating your JSON ARM template and Azure resource to Bicep are the _convert_ phase and the _migrate_ phase. The main focus for these two phases is to prepare a new Bicep file before refactoring and testing.
 
 :::image type="content" source="../media/2-convert-migrate.png" alt-text="Diagram of the convert and migrate phases of the recommended workflow for migrating Azure resources to Bicep." border="true":::
 
@@ -20,7 +20,7 @@ The first step in migrating your Azure resources to Bicep is to select your sour
 
 Azure Resource Manager is the service that's used to deploy and manage resources in Azure. All resources deployed to Azure are tracked by Resource Manager, regardless of the method used to deploy the resource. You can use the Azure portal, Azure CLI, Azure PowerShell, the REST API, and SDKs to interact with Resource Manager
 
-Information about each resource is made available in JSON format by Resource Manager. When you ask for a copy of the JSON representation of a resource, you are _exporting_ the resource.
+Information about each resource is made available in JSON format by Resource Manager. When you ask for a copy of the JSON representation of a resource, you're _exporting_ the resource.
 
 The Azure portal, Azure CLI, and Azure PowerShell cmdlets can all be used to export your Azure resources and resource groups to JSON ARM templates. Later in this module, you'll practice exporting JSON ARM templates yourself.
 
@@ -57,7 +57,7 @@ There are a few things that you need to consider when exporting your templates u
 
 - The exported template shows the state of the resource(s) at the time of deployment. It won't include any changes made after deployment.
 
-- You won't be able to select specific resources from a multi-resource deployment. This option will download all resources that were part of the initial deployment.
+- You can't select specific resources from a multi-resource deployment. This option will download all resources that were part of the initial deployment.
 
 - The template will only include resource properties needed for deployment.
 
@@ -138,28 +138,28 @@ Export-AzResourceGroup `
 
 ### Decompile the source JSON ARM template
 
-The second step in migrating your Azure resources to Bicep is converting your JSON ARM templates and Azure resources to Bicep templates. The Bicep tooling includes the `decompile` command to accomplish this. You can invoke the `decompile` command from either the AZ CLI, or from the Bicep CLI.
+The second step in migrating your Azure resources to Bicep is converting your JSON ARM templates and Azure resources to Bicep templates. The Bicep tooling includes the `decompile` command to convert templates. You can invoke the `decompile` command from either the AZ CLI, or from the Bicep CLI.
 
-The decompilation process is a best-effort process and doesn't guarantee a full mapping from JSON to Bicep. You may need to revise the generated Bicep file to meet your template best practices before using the file to deploy resources. Later in this module, you'll learn how to fix any issues encountered in the decompilation process.
+The decompilation process is a best-effort process and doesn't guarantee a full mapping from JSON to Bicep. You may need to revise the generated Bicep file to meet your template best practices before using the file to deploy resources. Later in this module, you'll learn how to fix any issues you come across in the decompilation process.
 
 #### Bicep's relationship with Azure Resource Manager
 
-Bicep is a Azure Resource Manager template language that's used to declaratively deploy Azure resources. It's a domain-specific language, which means it's designed for a specific scenario or "domain." Bicep isn't meant to be used as a programming language for applications. Bicep is only used to create Resource Manager templates.
+Bicep is an Azure Resource Manager template language that's used to declaratively deploy Azure resources. It's a domain-specific language, which means it's designed for a specific scenario or "domain." Bicep isn't meant to be used as a programming language for applications. Bicep is only used to create Resource Manager templates.
 
 When you submit a Bicep template for deployment to Resource Manager, the tooling converts your Bicep template into a JSON template. This process is known as _transpilation_, which essentially treats the ARM template as an intermediate language. The conversion happens automatically when you submit your deployment, or you can do it manually.
 
 > [!NOTE]
 > Transpilation is the process of converting source code written in one language into another language.
 
-#### Decompile an JSON ARM template to Bicep
+#### Decompile a JSON ARM template to Bicep
 
-To decompile an JSON ARM template to Bicep with the Azure CLI, use:
+To decompile a JSON ARM template to Bicep with the Azure CLI, use:
 
 ```azurecli
 az bicep decompile --file main.json
 ```
 
-To decompile an JSON ARM template to Bicep with the Bicep tooling, use:
+To decompile a JSON ARM template to Bicep with the Bicep tooling, use:
 
 ```bicep
 bicep decompile --file main.json
@@ -178,7 +178,7 @@ In the _migrate_ phase of converting your templates to Bicep, the goal is to cre
 
 ### Create a new Bicep file
 
-Using [Visual Studio Code](https://code.visualstudio.com/), create a new Bicep file. This new file will become the main template file for your converted template. Open this file side-by-side with your decompiled Bicep file.
+Using [Visual Studio Code](https://code.visualstudio.com/), create a new Bicep file. This new file will become the main template file for your converted template. Open this file side by side with your decompiled Bicep file.
 
 ### Copy resources to the new Bicep file
 
@@ -190,15 +190,15 @@ Not all Azure resource types can be exported through the Azure portal, Azure CLI
 
 When you attempt to export a resource through the Azure portal, Azure CLI, or Azure PowerShell, and it includes an unsupported resource type, a detailed error message is generated.
 
-For any resource that wasn't exported, such as virtual machine extensions, you'll need to re-create those resources in your new Bicep file. Consider using the [Azure Resource Explorer](azure/azure-resource-manager/templates/view-resources#use-resource-explorer), the [Azure ARM Template Reference](azure/templates/) documentation, or [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/) to help re-create these resources.
+For any resource that wasn't exported, such as virtual machine extensions, you'll need to re-create those resources in your new Bicep file. Consider using the [Azure Resource Explorer](/azure/azure-resource-manager/templates/view-resources#use-resource-explorer), the [Azure ARM Template Reference](/azure/templates/) documentation, or [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/) to help re-create these resources.
 
 #### What is Azure Resource Explorer?
 
-[Azure Resource Explorer](azure/azure-resource-manager/templates/view-resources#use-resource-explorer) is a tool embedded into the Azure portal that allows you to view a JSON representation of your deployed resources. While you may not be able to export certain resource types from Azure, the Resource Explorer can provide a JSON representation of those resources. This will help you to re-create any unsupported resources. You can find Resource Explorer in the Azure portal by searching for the tool in the search bar as shown below:
+[Azure Resource Explorer](/azure/azure-resource-manager/templates/view-resources#use-resource-explorer) is a tool embedded into the Azure portal that allows you to view a JSON representation of your deployed resources. While you won't be able to export certain resource types from Azure, the Resource Explorer can provide a JSON representation of those resources. You can find Resource Explorer in the Azure portal by searching for the tool in the search bar as shown below:
 
 :::image type="content" source="../media/2-resource-explorer-1.png" alt-text="A screenshot of the Resource Explorer from the Azure portal." border="true":::
 
-Once you are in the tool, you can expand the hierarchy on the left hand side of the screen. Here you can view registered resource providers and any resource, resource group, and subscription that you have permission to view. You can drill down to a specific resource to view it's JSON representation as shown below:
+Once you are in the tool, expand the hierarchy on the left-hand side of the screen. This provides a view registered resource providers and any resource, resource group, and subscription that you have permission to view. Drill down to a specific resource to view its JSON representation as shown below:
 
 :::image type="content" source="../media/2-resource-explorer-2.png" alt-text="A screenshot of the Azure Resource Explorer from the Azure portal." border="true":::
 
@@ -222,7 +222,7 @@ By clicking on the `DependencyAgentWindows` resource, `[Microsoft.Compute/virtua
 
 #### What is the Azure ARM Template Reference documentation?
 
-The [Azure ARM Template Reference](azure/templates/) documentation is a source of information for ARM template structure, resource types, API versions, and property definitions for Azure resources. Both JSON and Bicep examples are included.
+The [Azure ARM Template Reference](/azure/templates/) documentation is a source of information for ARM template structure, resource types, API versions, and property definitions for Azure resources. Both JSON and Bicep examples are included.
 
 It allows you to choose specific resource providers, such as `Microsoft.Web/serverFarms` and their API versions. When you specify an API version, you can review  which resource properties are required and which are optional.
 
