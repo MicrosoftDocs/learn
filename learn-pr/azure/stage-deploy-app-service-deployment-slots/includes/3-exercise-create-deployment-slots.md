@@ -12,11 +12,9 @@ Start by creating a new web app resource in the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
-1. On the Azure portal menu or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Web**, and then search for and select **Web App**. The **Web App** pane appears.
-
-1. Select **Create**. The **Create Web App** pane appears.
+1. In the left menu, select **Web**, and then search for and select **Web App**. The **Create Web App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -44,7 +42,7 @@ Start by creating a new web app resource in the Azure portal.
     | **Application Insights** |
     | **Enable Application Insights** | Toggle to **No** |
 
-1. Select **Review + create** > **Create**. Wait while Azure creates the web app.
+1. Select **Review + create** and when the content is validated, select **Create**. Wait while Azure creates the web app.
 
 1. When deployment successfully completes, select **Go to resource**. The **App Service** pane appears.
 
@@ -52,13 +50,13 @@ Start by creating a new web app resource in the Azure portal.
 
 You can use any of the usual deployment tools for your web app and its deployment slots. In this exercise, you'll set up the web app to use a local git repository. Follow  these steps.
 
-1. On the web app App Service page, in the left menu pane, under **Deployment**, select **Deployment Center**.
+1. On your web app App Service page, in the left menu, under **Deployment**, select **Deployment Center**.
 
 1. On the **Settings** tab, for **Source**, select **Local Git**. On the top menu bar, select **Save**.
 
 1. On the resulting **Deployment Center** pane, select the **Local Git/FTPS credentials** tab.
 
-1. Under **User scope**, enter a new username and password of your choice, and in the top menu bar, select **Save**. Make a note of the username and password for later.
+1. Under **User scope**, enter a username and password of your choice, and in the top menu bar, select **Save**. Make a note of the username and password for later.
 
 ## Configure the git client and clone the web app source code
 
@@ -68,17 +66,16 @@ Now, you'll set up the git client in Cloud Shell and use it to clone a sample we
 
       :::image type="content" source="../media/3-cloud-shell-icon.png" alt-text="Cloud shell icon in toolbar.":::
 
-1. In the Cloud Shell tool bar, ensure that Bash is selected. Copy the ollowing code to Notepad and replace the values in quotes with your preferred username and email address. These config values aren't associated with any Azure account or sign-up, so you can use whatever values you like. 
+1. In the Cloud Shell tool bar, ensure that Bash is selected. Copy the following code to Notepad and replace the values in quotes with your preferred username and email address. These config values aren't associated with any Azure account or sign-up, so you can use whatever values you like. 
 
     ```bash
     git config --global user.name "your-username"
-    git config --global user.email "your-email-address
-    "
+    git config --global user.email "your-email-address"
     ```
 
 1. Copy and paste your edited code into the Cloud Shell and run it.
  
-1. Create a folder for the source code. Run the following commands.
+1. Create a folder for the source code. Run the following commands.cd
 
     ```bash
     mkdir demoapp
@@ -96,14 +93,16 @@ Now, you'll set up the git client in Cloud Shell and use it to clone a sample we
 
 To use git to deploy the source code to the web app's production slot, set up your app's git URL as a remote repository. Follow these steps.
 
-1. In the Azure portal, on the web app's **Overview** page, in the **Essentials** section, select the *Copy to clipboard* icon for **URL**. Note that the URL contains your deployment name for the web app.
+1. In the Azure portal, your web app should be active. In the left menu, select **Overview**. 
+
+1.  In the Overview pane, in the **Essentials** section, hover over the **URL** and select the *Copy to clipboard* icon. Note that the URL contains your deployment name for the web app.
 
     :::image type="content" source="../media/3-copy-git-clone-url.png" alt-text="Copy the git clone URL." lightbox="../media/3-copy-git-clone-url.png":::
 
     > [!NOTE]
     > If you don't see the git clone URL where it's shown in the preceding screenshot, refresh the portal.
 
-1. Select the *Copy to clipboard* icon for **Git clone url**. Note that the URL contains your deployment username.
+1. Under  **Git clone url**, select the *Copy to clipboard* icon for the git URL. Note that the URL contains your deployment username.
 
 1. In Cloud Shell, run the following command to configure the URL as a git remote named "production". Replace `git-clone-url` with the URL from the previous step.
 
