@@ -159,7 +159,7 @@ The exercise also runs a client app that simulates several users issuing POST an
 
 1. Run the app for another five minutes. Next, go to the chart that shows the metrics for the app on the dashboard in the Azure portal. You should see that the CPU time has increased dramatically because there's now five times more CPU power available. The average response time should have dropped, and the number of HTTP 4xx errors should also have decreased. The following chart shows a typical set of results. The point at which scale-out occurred is noted.
 
-    :::image type="content" source="3-web-app-chart-after-scaling-out.png" alt-text="Screenshot showing the performance metrics for the web app after scaling out to five instances.":::
+    :::image type="content" source="../media/3-web-app-chart-after-scaling-out.png" alt-text="Screenshot showing the performance metrics for the web app after scaling out to five instances.":::
 
 1. If you want to experiment some more, try increasing the instance count for the App Service plan to 10. Ten is the maximum number of instances supported by the S1 tier. You should notice a further increase in CPU time, and a corresponding drop in response time and HTTP 4xx errors.
 
