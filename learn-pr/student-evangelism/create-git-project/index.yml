@@ -1,18 +1,19 @@
 ### YamlMime:Module
 uid: learn.create-git-project
 metadata:
-  title: Learn How to Create A Git Project
-  description: Learn how to
+  title: How to Create A Git Project
+  description: Learn how to us Git to create a new project and track changes
   ms.date: 06/04/2020
   author: mshumba
   ms.author: mufaroshumba
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to
-summary: Learn how to
+title: How to Create A Git Project
+summary: Learn how to create, modify and track changes on a project using Git.
 abstract: |
   In this module you will:
-  - Learn about X
+  - Learn how to create a new Git Project
+  - Understand how to track changes in Git
 iconUrl: /learn/achievements/create-git-project.svg
 levels:
   - beginner
