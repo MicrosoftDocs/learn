@@ -20,9 +20,12 @@ levels:
   - beginner
 roles:
   - developer
+  - student
 products:
   - vs
-prerequisites: None
+prerequisites: |
+ - Introduction to Azure Health Bot
+ - Basic Azure Health Bot
 units:
 - learn.health-bot-language-understanding.1-introduction
 - learn.health-bot-language-understanding.2-language-understanding-luis

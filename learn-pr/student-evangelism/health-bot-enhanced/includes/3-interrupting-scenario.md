@@ -34,7 +34,7 @@ Along with creating a new scenario for the bot, we need to create a new model.
 
 1. Configure the model with the following details:  
 
-   :::image type="content" source="../media/3-model-details.png" alt-text="Screenshot that shows the selections for model configuration.":::
+   :::image type="content" source="../media/3-model-details.png" alt-text="Screenshot that shows the selections for model configuration." lightbox="../media/3-model-details.png":::
 
    - **Name**: Provide a name for the model. In this example, we've used **vitals**.
    - **Description**: Provide a suitable description. We've used **vitals collection**.
@@ -50,11 +50,11 @@ Along with creating a new scenario for the bot, we need to create a new model.
 
 In this module, we'll use the basic bot scenario that we just created to demonstrate the interrupting and breaking scenarios. Before moving ahead, we need to make some changes to the scenario. 
 
-:::image type="content" source="../media/3-add-block.png" alt-text="Screenshot that shows changes to the basic bot.":::
+:::image type="content" source="../media/3-add-block.png" alt-text="Screenshot that shows changes to the basic bot." lightbox="../media/3-add-block.png":::
 
 Open the basic bot scenario and add a **Prompt** item immediately to the right of the switch branches. The prompt will ask for the entry of the **vitals** keyword to record the patient's information. The **vitals** keyword triggers an interrupting scenario.
 
-:::image type="content" source="../media/3-prompt-details.png" alt-text="Screenshot that shows the prompt scenario step.":::
+:::image type="content" source="../media/3-prompt-details.png" alt-text="Screenshot that shows the prompt scenario step." lightbox="../media/3-prompt-details.png":::
 
 While the main bot is running, this scenario is triggered when the patient enters the word **vitals** as shown in the following screenshot. The word **vitals** breaks the current flow of the main bot and takes the patient to the new scenario for recording their information.  
 
