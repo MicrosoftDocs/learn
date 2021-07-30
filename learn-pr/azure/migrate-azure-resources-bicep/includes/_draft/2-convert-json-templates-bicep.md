@@ -1,4 +1,4 @@
-You've started the process of migrating your Azure resources to Bicep, and you want to start with converting your JSON templates to Bicep templates using the native tooling. You want to learn more about how Bicep works, how to use the Bicep decompiler, and how to revise your decompiled templates following a recommended workflow.
+You've started the process of migrating your Azure resources to Bicep, and you want to start with converting your JSON templates to Bicep templates using the native tooling. You want to learn more about how Bicep works, how to use the Bicep decompiler, and how to refactor your decompiled templates. You want to accomplish these tasks following a recommended workflow.
 
 ## How does Bicep work?
 
@@ -40,19 +40,11 @@ Both commands will create a file named main.bicep in the same directory as the o
 
 ## Recommended workflow for converting templates to Bicep
 
-To help your templates align with best practices, you can follow a recommended workflow when converting and exporting your templates to Bicep. This workflow is broken down into five phases:
-
-- Convert
-- Migrate
-- Refactor
-- Test
-- Deploy
-
-This unit will focus on the first three phases: convert, migrate, and refactor.
+To help your templates align with best practices, you can follow a recommended workflow when converting and exporting your templates to Bicep. This workflow consists of five phases: convert, migrate, refactor, test, and deploy. In this unit, we focus on the first three phases: convert, migrate, and refactor. Later in this module, you'll learn how to test and deploy your Bicep template.
 
 ### Convert phase
 
-In the convert phase of converting your templates to Bicep, the goal is to capture the initial representation of your Azure resources. Take a look at the following steps for this phase.
+In the _convert_ phase of converting your templates to Bicep, the goal is to capture the initial representation of your Azure resources.
 
 :::image type="content" source="../media/2-convert.png" alt-text="Diagram of converting a JSON template to Bicep." border="true":::
 
@@ -60,19 +52,19 @@ In the convert phase of converting your templates to Bicep, the goal is to captu
 
 ### Migrate phase
 
-In the migrate phase of converting your templates to Bicep, the goal is to create an initial Bicep file that includes all of your Azure resources. Take a look at the following steps for this phase.
+In the _migrate_ phase of converting your templates to Bicep, the goal is to create an initial Bicep file that includes all of your Azure resources.
 
 :::image type="content" source="../media/2-migrate.png" alt-text="Diagram of migrating a template to Bicep." border="true":::
 
 1. **Create a new Bicep file** - Using [Visual Studio Code](https://code.visualstudio.com/), create a new Bicep file. This new file will become the main template file for your converted template. Open this file side-by-side with your decompiled Bicep file.
 
-2. **Copy the resources from converted Bicep file to new Bicep file** - For each defined resource in your original JSON template, copy it from the converted Bicep file to the new Bicep file. Consider copying the resources individually, so that you can resolve any issues on a per resource basis.
+1. **Copy the resources from the converted Bicep file to your new Bicep file** - For each defined resource in your original JSON template, copy it from the converted Bicep file to the new Bicep file. Consider copying the resources individually, so that you can resolve any issues on a per resource basis.
 
-3. **Create parameters for each environment** - If your infrastructure supports multiple environments, such as production and development, create parameters that support these environments. Identifying naming convention parameters will make it easy to customize your deployments per environment.
+1. **Create parameters for each environment** - If your infrastructure supports multiple environments, such as production and development, create parameters that support these environments. A good parameter naming convention will make it easy to customize your deployments per environment.
 
 ### Refactor phase
 
-In the refactor phase of converting your templates to Bicep, the goal is to improve the quality of your Bicep code. Take a look at the following steps for this phase.
+In the _refactor_ phase of converting your templates to Bicep, the goal is to improve the quality of your Bicep code.
 
 :::image type="content" source="../media/2-refactor.png" alt-text="Diagram of refactoring a Bicep template." border="true":::
 
@@ -87,7 +79,7 @@ In the refactor phase of converting your templates to Bicep, the goal is to impr
 1. **Modularize** - If you're converting a template that has many resources, consider breaking the individual resource types into modules for simplicity. Bicep modules help to reduce the complexity of your template deployments.
 
    > [!NOTE]
-   > It is possible to use your JSON templates as modules in a Bicep deployment. Bicep has the ability to recognize JSON modules and reference them the same way as Bicep modules.
+   > It is possible to use your JSON templates as modules in a Bicep deployment. Bicep has the ability to recognize JSON modules and reference them similarly to how you use Bicep modules.
 
 1. **Add comments** - Good Bicep code is _self-documenting_! Bicep allows you to add comments to your code that help you document your infrastructure. These comments can help your teammates understand the code, and increase confidence when changes are made. Comments are ignored when the Bicep file is deployed to Azure.
 
@@ -95,7 +87,7 @@ In the refactor phase of converting your templates to Bicep, the goal is to impr
 
 ## Refactor decompiled templates
 
-After the convert and migrate phases of converting your templates to Bicep, you'll want to make some improvements to the file. This process is called refactoring. These improvements may include changes that bring the template in line with your team's code standards and general best practices with Bicep templates.
+After the convert and migrate phases of converting your templates to Bicep, you'll want to make some improvements to the file. This process is called refactoring. These improvements can include changes that bring the template in line with your team's code standards and general best practices with Bicep templates.
 
 Take a look at the following JSON template that creates an Azure App Service Plan.
 
@@ -150,7 +142,7 @@ Take a look at the following JSON template that creates an Azure App Service Pla
     },
     "resources": [
         {
-            "type": "Microsoft.Web/serverfarms",
+            "type": "Microsoft.Web/serverFarms",
             "apiVersion": "2020-12-01",
             "name": "[variables('appServicePlanName')]",
             "location": "[parameters('location')]",
@@ -165,7 +157,7 @@ Take a look at the following JSON template that creates an Azure App Service Pla
     "outputs": {
         "appServicePlanId": {
           "type": "string",
-          "value": "[resourceId('Microsoft.Web/serverfarms', variables('appServicePlanName'))]"
+          "value": "[resourceId('Microsoft.Web/serverFarms', variables('appServicePlanName'))]"
         }
     }
 }
@@ -214,7 +206,7 @@ resource appServicePlanName 'Microsoft.Web/serverfarms@2020-12-01' = {
 output appServicePlanId string = appServicePlanName.id
 ```
 
-If you deploy this Bicep template as is, the deployment would succeed, but there are a few things you could do to improve the template and bring it line with best practices.
+If you deploy this Bicep template as-is, the deployment would succeed, but there are a few things you could do to improve the template and bring it line with best practices.
 
 ### Revise parameters, variables, and symbolic names
 

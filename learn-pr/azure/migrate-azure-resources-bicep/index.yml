@@ -39,11 +39,13 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
 - azure-resource-manager
 units:
 - learn.azure.migrate-azure-resources-bicep.introduction
-- learn.azure.migrate-azure-resources-bicep.convert-json-templates-bicep
-- learn.azure.migrate-azure-resources-bicep.exercise-decompile-json-template-bicep
-- learn.azure.migrate-azure-resources-bicep.export-resource-definitions-bicep
-- learn.azure.migrate-azure-resources-bicep.verify-conversions-what-if
-- learn.azure.migrate-azure-resources-bicep.exercise-export-azure-resources-bicep
+- learn.azure.migrate-azure-resources-bicep.convert-migrate-resources-bicep-file
+- learn.azure.migrate-azure-resources-bicep.exercise-convert-migrate-resources
+- learn.azure.migrate-azure-resources-bicep.refactor-bicep-file
+- learn.azure.migrate-azure-resources-bicep.exercise-refactor-bicep-file
+- learn.azure.migrate-azure-resources-bicep.test-deploy-converted-template
+- learn.azure.migrate-azure-resources-bicep.exercise-test-deploy-converted-template
+- learn.azure.migrate-azure-resources-bicep.workflow-migrate-resources-bicep
 - learn.azure.migrate-azure-resources-bicep.knowledge-check
 - learn.azure.migrate-azure-resources-bicep.summary
 badge:
