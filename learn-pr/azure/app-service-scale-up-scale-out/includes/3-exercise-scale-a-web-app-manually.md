@@ -14,7 +14,7 @@ The exercise also runs a client app that simulates several users issuing POST an
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
-1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the menu, under Categories, select **Web**, search for and select **Web App**, and then select **Create**. The **Create Web App** pane appears.
 
@@ -29,7 +29,7 @@ The exercise also runs a client app that simulates several users issuing POST an
     | Subscription | Select the Azure subscription you'd like to use for this exercise  |
     | Resource Group | Create a new resource group called **mslearn-scale** |
     | **Instance Details** |
-    | Name | \*your-webapp-name*\ Enter a unique name that you can remember for later in this exercise|
+    | Name | <your-webapp-name> Enter a unique name that you can remember for later in this exercise|
     | Publish | Code |
     | Runtime stack | .NET Core 3.1 (LTS)|
     | Operating System | Windows |
@@ -41,7 +41,9 @@ The exercise also runs a client app that simulates several users issuing POST an
 
 ## Build and deploy the web app
 
-1. In the Microsoft Azure menu bar, select the Cloud Shell icon (top-right, looks like a square with >_ inside) to open the Cloud Shell, and run the following command to download the source code for the hotel reservation system.
+1. In the Microsoft Azure menu bar, select the Cloud Shell icon to open the Cloud Shell, and run the following command to download the source code for the hotel reservation system.
+    
+    :::image type="content" source="../media/3-cloud-shell-icon.png" alt-text="Screenshot of the cloud shell icon in menu bar.":::
 
      ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-hotel-reservation-system.git
@@ -66,17 +68,17 @@ The exercise also runs a client app that simulates several users issuing POST an
     dotnet publish -o website
     ```
 
-1. Go to the *website* folder, which contains the published files. Zip the files and deploy them to the web app that you created in the previous task. Copy the following code to Notepad and replace `your-webapp-name` with the name of your web app, then paste the edited code block into the Cloud Shell and run it.
+1. Go to the *website* folder, which contains the published files. Zip the files and deploy them to the web app that you created in the previous task. Copy the following code to Notepad and replace `<your-webapp-name>` with the name of your web app, then paste the edited code block into the Cloud Shell and run it.
 
      ```bash
     cd website
     zip website.zip *
-    az webapp deployment source config-zip --src website.zip --name your-webapp-name --resource-group mslearn-scale
+    az webapp deployment source config-zip --src website.zip --name YOUR-WEBAPP-NAME --resource-group mslearn-scale
     ```
 
 1. Use your web browser to go to `http://<your-webapp-name>.azurewebsites.net/api/reservations/1`. A JSON document appears that contains the details for reservation number 1.
 
-    :::image type="content" source="../media/3-web-app.png" alt-text="Screenshot of the running web app, showing the details for reservation number 1 in JSON format." loc-scope="other"::: <!-- no loc -->
+    :::image type="content" source="../media/3-web-app.png" alt-text="Screenshot of the running web app, showing the details for reservation number 1 in JSON format." loc-scope="other":::
 
 ## Monitor the performance of the web app before scaling out
 
@@ -99,8 +101,8 @@ The exercise also runs a client app that simulates several users issuing POST an
     <configuration>
         <appSettings>
             <add key="NumClients" value="100" />
-            <add key="ReservationsServiceURI" value="https://<your-webapp-name>.azurewebsites.net/"/>
-            <add key="ReservationsServiceCollection" value="api/reservations"/>
+            <add key="ReservationsServiceURI" value="https://<your-webapp-name>.azurewebsites.net/" />
+            <add key="ReservationsServiceCollection" value="api/reservations" />
         </appSettings>
     </configuration>
     ```
@@ -122,22 +124,24 @@ The exercise also runs a client app that simulates several users issuing POST an
     dotnet run
     ```
 
-    :::image type="content" source="../media/3-web-client.png" alt-text="Screenshot of a running client app, showing the responses and error messages that occur." loc-scope="other"::: <!-- no-loc -->
+    :::image type="content" source="../media/3-web-client.png" alt-text="Screenshot of a running client app, showing the responses and error messages that occur." loc-scope="other"::: 
 
-1. In the Azure portal, go to the pane for your web app (not the service plan). Under **Monitoring**, select **Metrics**.
+1. In the Azure portal, select **Go to resource** to open your web app. 
+ 
+1. In menu, scroll down to **Monitoring**, and select **Metrics**.
 
-1.  On the far right of the menu bar for the web app pane, select the time range and select **Last 30 minutes**.
+1. On menu bar of your web app pane, select the **Local Time: Last 24 hours (Automatic)** time range, select **Last 30 minutes**, and select **Apply**.
   
-1.  In the secondary menu for the pane, select **Pin to dashboard** and then select **Pin**.
-  
-1.  Add the following metrics to the chart.
+1.  In the menu under **Chart Title**, add the following metrics to the chart.
 
    - Select **Add metric** CPU Time. Select the Sum aggregation.
    - Select **Add metric** Http Server Errors. Select the Sum aggregation.
-   - Select **Add metric** Http 4.xx. Select the Sum aggregation.
+   - Select **Add metric** Http 4xx. Select the Sum aggregation.
    - Select **Add metric** Average Response Time. Select the Avg aggregation.
 
-1. Allow the system to run for five minutes to stabilize, and then note the CPU Time, the number of HTTP 4.xx errors, and the average response time. You should see a significant number of HTTP 4xx errors (these are HTTP 408 Timeout errors), and that the average response time is several seconds. You might see the occasional HTTP server error, depending on how the webserver is coping with the burden.
+1. In the menu under **Chart Title**, select **Pin to dashboard** and then select **Pin**.
+ 
+1. Allow the system to run for five minutes to stabilize, and then note the CPU Time, the number of HTTP 4xx errors, and the average response time. You should see a significant number of HTTP 4xx errors (these are HTTP 408 Timeout errors), and that the average response time is several seconds. You might see the occasional HTTP server error, depending on how the webserver is coping with the burden.
 
    :::image type="content" source="../media/3-web-app-chart-before-scaling-out.png" alt-text="Screenshot showing the performance metrics for the web app before scaling out.":::
 
@@ -159,6 +163,6 @@ The exercise also runs a client app that simulates several users issuing POST an
 
 1. If you want to experiment some more, try increasing the instance count for the App Service plan to 10. Ten is the maximum number of instances supported by the S1 tier. You should notice a further increase in CPU time, and a corresponding drop in response time and HTTP 4xx errors.
 
-1. Return to the Cloud Shell that's running the client app. Select Enter to stop the app.
+1. Return to the Cloud Shell that's running the client app. Select <kbd>Enter</kbd> to stop the app.
 
-1. In the Azure portal, select your web app, and in the menu, select Scale out (App Service plan). On the **Configure** tab, set the instance count to 1, and then select **Save** in the menu bar at the top of the **App Service** pane.
+1. In the Azure portal, set the insance count back to 1. Select your web app, and in the menu, select Scale out (App Service plan). On the **Configure** tab, set the instance count to 1, and then select **Save** in the menu bar at the top of the **App Service** pane. This 
