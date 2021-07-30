@@ -2,11 +2,11 @@ When you store many items in a list, you will want to carry out operations on ei
 
 ## List module functions
 
-Except for properties, there's also a List module, a module full of functions that operates on a list, capable of performing commonly used operations like finding, filtering, sorting, mathematical operations and more. 
+Except for properties, there's also a List module, a module full of functions that operates on a list, capable of performing commonly used operations like finding, filtering, sorting, mathematical operations and more.
 
 ### Iteration
 
-To iterate, means you go through each element in a list from a starting point to an end point. For iteration there are two especially interesting functions: 
+To iterate, means you go through each element in a list from a starting point to an end point. For iteration there are two especially interesting functions:
 
 - `iter()`, lets you iterate over each item in a list:
 

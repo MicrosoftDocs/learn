@@ -6,6 +6,6 @@ Then we focused on operation in the list module that allows you to do things lik
 
 ## Additional learning
 
-- [List in F#](/dotnet/fsharp/language-reference/lists)
-- [Arrays in F#](/dotnet/fsharp/language-reference/arrays)
-- [Sequences in F#](/dotnet/fsharp/language-reference/sequences)
+- [List in F#](/dotnet/fsharp/language-reference/lists?azure-portal=true)
+- [Arrays in F#](/dotnet/fsharp/language-reference/arrays?azure-portal=true)
+- [Sequences in F#](/dotnet/fsharp/language-reference/sequences?azure-portal=true)
