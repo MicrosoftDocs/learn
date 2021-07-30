@@ -8,7 +8,7 @@ Azure Digital Twins provides a service that abstracts the complexity needed to d
 
 In this module, you'll leverage Azure IoT services to create an end-to-end architecture that helps populate Azure Digital Twins with relevant data from IoT devices.
 
-      :::image type="content" source= "../media/module-3-architecture.png" alt-text="Partial screenshot of a code listing, showing the line in which to specify the device connection string.":::
+:::image type="content" source= "../media/module-3-architecture.png" alt-text="Partial screenshot of a code listing, showing the line in which to specify the device connection string.":::
 
 ## Learning objectives
 
@@ -27,9 +27,9 @@ In this module you will:
 - Beginner-level experience with Azure IoT Hub, Functions, and Logic Apps
 - An Azure subscription and admin access to it
 - Admin access to an Azure Active Directory (Azure AD) tenant
-- macOS: [PowerShell for Mac](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6 )
+- macOS: [PowerShell for Mac](/powershell/scripting/install/installing-powershell-core-on-macos?view=powershell-6)
 - Windows OS: PowerShell (built in)
-- The [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli)
+- The [Azure CLI](/cli/azure/install-azure-cli)
 - [.NET Core 3.1](https://dotnet.microsoft.com/download)
 - [Visual Studio Code](https://code.visualstudio.com)
 - [C# for Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)

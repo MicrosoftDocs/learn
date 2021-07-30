@@ -14,5 +14,5 @@ If you have any phone numbers assigned to your resource upon resource deletion, 
 
 ## Next steps
 
-* To learn more about Azure Communication Services, see [Azure Communication Services](https://docs.microsoft.com/azure/communication-services/).
-* To learn more about SMS concepts on Azure Communication Services, see [SMS Concepts](https://docs.microsoft.com/azure/communication-services/concepts/telephony-sms/concepts).
+* To learn more about Azure Communication Services, see [Azure Communication Services](/azure/communication-services/).
+* To learn more about SMS concepts on Azure Communication Services, see [SMS Concepts](/azure/communication-services/concepts/telephony-sms/concepts).

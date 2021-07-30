@@ -4,13 +4,13 @@ In this unit, you'll create and configure an instance of Azure IoT Hub.  IoT Hub
 
 Use the Azure CLI to create a resource group and then add an IoT hub. Use the resource group that was created for use by Azure Digital Twins and Azure Functions.
 
-1. Run the following [command to create an IoT hub](https://docs.microsoft.com/cli/azure/iot/hub#az-iot-hub-create) in your resource group. Use a globally unique name for your IoT hub.
+1. Run the following [command to create an IoT hub](/cli/azure/iot/hub#az-iot-hub-create) in your resource group. Use a globally unique name for your IoT hub.
 
    ```azurecli
    az iot hub create --name $dtname --resource-group $rgname --sku S1
    ```
 
-1. In the active PowerShell window, create a device in IoT Hub by using this command:
+1. In the active PowerShell window, create a device in IoT Hub by running this command:
 
     ```azurecli
     az iot hub device-identity create --device-id GrindingStep --hub-name $dtname -g $rgname
@@ -71,12 +71,12 @@ In this section, you configure your IoT hub to publish events as they occur. If 
 
 1. In the **ENDPOINT DETAILS** section:
    1. Select **Endpoint Type** as **Azure Function**.
-   1. Choose **Select an endpoint** and pick the Azure Function app that you deployed earlier.
+   1. Select **Select an endpoint** and pick the Azure Function app that you deployed earlier.
    1. Select **Confirm Selection**.
 
       :::image type="content" source= "../media/select-azure-function.png" alt-text="Partial screenshot showing the Select Azure Function dialog box, with the Confirm Selection button highlighted.":::
 
-1. Select **Create**
+1. Select **Create**.
 
     At this point, you should see messages in the Azure Functions log stream that you configured in the preceding unit. The Azure Functions log stream shows the telemetry being received from Event Grid. It also shows any errors that occur when connecting to Azure Digital Twins or updating the twin.
 
@@ -89,4 +89,5 @@ To see the values being updated in the twin GrindingStep, run this command:
 ```azurecli
 az dt twin show -n $dtname --twin-id GrindingStep
 ```
+
 The values shown for ChasisTemperature should match the values being sent by the devices simulator.

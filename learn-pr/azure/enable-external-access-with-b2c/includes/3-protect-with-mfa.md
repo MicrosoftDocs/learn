@@ -12,7 +12,7 @@ Before you allow access to the application, use multi-factor authentication to h
 - Something the user owns
 - Something the user is
 
-  ![MFA challenges](../media/3-mfa-challenges.svg)
+  ![MFA challenges.](../media/3-mfa-challenges.svg)
 
 A secret password or a secret answer to a security question should be something that only the user *knows*. Users also have devices that can be classified as something they *own*. For example, a user with a mobile phone would receive a text message on that phone with a secret code for one-time use. You could also make successful authentication contingent on the user by using biometrics. Biometric information is something the user *is*. For example, you could make authentication rely on the user's fingerprint or voice.
 
@@ -28,4 +28,4 @@ Use these different methods to accommodate your users' needs. For example, for a
 
 You enable multi-factor authentication for your Azure AD B2C application by using the Azure portal. When you create user sign-in and sign-up flows, you enable multi-factor authentication by turning on a toggle. If necessary, use the same toggle to disable multi-factor authentication in your flow.
 
-![Enable MFA in user flow](../media/3-enable-mfa-user-flow.png)
+![Enable MFA in user flow.](../media/3-enable-mfa-user-flow.png)

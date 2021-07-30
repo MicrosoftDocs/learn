@@ -62,9 +62,9 @@ You can combine your queries with some of the most commonly used operators:
 
 To combine the records from two sources (tables), you can use the **join** operator. The **union** operator combines two or more tables into one.
 
-For more information, see the Microsoft [Log analytics tutorial](https://docs.microsoft.com/azure/azure-monitor/log-query/log-analytics-tutorial) that uses features of Log Analytics to build and run a query instead of working with the query itself.
+For more information, see the Microsoft [Log analytics tutorial](/azure/azure-monitor/log-query/log-analytics-tutorial) that uses features of Log Analytics to build and run a query instead of working with the query itself.
 
-You can also use [Azure Data explorer tutorial](https://docs.microsoft.com/azure/data-explorer/kusto/query/tutorial?pivots=azuredataexplorer) to learn about KQL.
+You can also use [Azure Data explorer tutorial](/azure/data-explorer/kusto/query/tutorial?pivots=azuredataexplorer) to learn about KQL.
 
 > [!NOTE]
 > Azure Sentinel Log Analytics doesn't support all the KQL syntax that is used in Azure Data Explorer.

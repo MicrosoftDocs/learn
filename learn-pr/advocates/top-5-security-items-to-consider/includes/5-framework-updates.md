@@ -6,7 +6,7 @@ The most important factor regarding security when choosing a framework is how we
 
 Often "well supported" is synonymous with "modern". Older frameworks tend to either be replaced or eventually fade in popularity. Even if you have significant experience with (or many apps written in) an older framework, you'll be better off choosing a modern library that has the features you need. Modern frameworks tend to build on the lessons learned by earlier iterations which makes choosing them for new apps a form of threat surface reduction. You will have one more app to worry about if a vulnerability is discovered in the older framework that your legacy applications are written in.
 
-For more information on secure design and reducing threat surface, see [Design For Security in Azure](https://docs.microsoft.com/learn/modules/design-for-security-in-azure/).
+For more information on secure design and reducing threat surface, see [Design For Security in Azure](/learn/modules/design-for-security-in-azure/).
 
 ## Keep your framework updated
 
@@ -28,11 +28,11 @@ More specialized libraries such as JavaScript frameworks, or .NET components can
 Always check to see what security features your frameworks offer. **Never** roll your own security if there's a standard technique or capability built in. In addition, rely on proven algorithms and workflows because these have often been scrutinized by many experts, critiqued and strengthened so you can be assured that they are reliable and secure.
 
 The .NET Core framework has countless security features, here are a few core starting places in the documentation.
-* [Authentication -Identity Management](https://docs.microsoft.com/aspnet/core/security/authentication/index?view=aspnetcore-2.1)
-* [Authorization](https://docs.microsoft.com/aspnet/core/security/authorization/index?view=aspnetcore-2.1)
-* [Data Protection](https://docs.microsoft.com/aspnet/core/security/data-protection/index?view=aspnetcore-2.1)
-* [Secure Configuration](https://docs.microsoft.com/aspnet/core/security/data-protection/configuration/index?view=aspnetcore-2.1)
-* [Security Extensibility APIs](https://docs.microsoft.com/aspnet/core/security/data-protection/extensibility/index?view=aspnetcore-2.1)
+* [Authentication -Identity Management](/aspnet/core/security/authentication/index?view=aspnetcore-2.1)
+* [Authorization](/aspnet/core/security/authorization/index?view=aspnetcore-2.1)
+* [Data Protection](/aspnet/core/security/data-protection/index?view=aspnetcore-2.1)
+* [Secure Configuration](/aspnet/core/security/data-protection/configuration/index?view=aspnetcore-2.1)
+* [Security Extensibility APIs](/aspnet/core/security/data-protection/extensibility/index?view=aspnetcore-2.1)
 
 Each one of these features was written by experts in their field, and then battered with tests to ensure that it works as intended, and only as intended. Other frameworks offer similar features - check with the vendor that provides the framework to find out what they have in each category.
 

@@ -5,11 +5,11 @@ In this unit, you'll configure continuous deployment for the web app and create 
 
 ## Configure continuous deployment and create a webhook
 
-1. Return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and go to the **Container settings** pane of your web app.
+1. Return to the [Azure portal](https://portal.azure.com/?azure-portal=true) and go to the **Container settings** pane of your web app.
 
 1. Set **Continuous Deployment** to **On**, and then select **Save**. This setting configures a webhook that Container Registry uses to alert the web app that the Docker image has changed.
 
-    ![Screenshot that shows the container settings for the web app with continuous deployment enabled](../media/7-continuous-deployment-annotated.png)
+    ![Screenshot that shows the container settings for the web app with continuous deployment enabled.](../media/7-continuous-deployment-annotated.png)
 
 ## Update the web app and test the webhook
 
@@ -39,7 +39,7 @@ In this unit, you'll configure continuous deployment for the web app and create 
 
 1. Note that there's a record of the webhook that just fired in response to the build and push you ran.
 
-    ![Screenshot of the webhook showing the push event](../media/7-acr-webhook-event.png)
+    ![Screenshot of the webhook showing the push event.](../media/7-acr-webhook-event.png)
 
 ## Test the web app again
 
@@ -47,7 +47,7 @@ In this unit, you'll configure continuous deployment for the web app and create 
 
 1. Review the items in the carousel control. Note that the control now contains four pages. The new page looks like the following image.
 
-    ![Screenshot of the sample web app](../media/7-sample-web-app-dotnet.png)
+    ![Screenshot of the sample web app.](../media/7-sample-web-app-dotnet.png)
 
 The web app has been updated and redeployed automatically based on the new image. The webhook service in your registry notified your web app that the container image had been modified, triggering an update.
 
@@ -88,7 +88,7 @@ The web app has been updated and redeployed automatically based on the new image
 
 1. Note that there's a record of the webhook that just fired in response to the build and push you ran.
 
-    ![Screenshot of the webhook showing the push event](../media/7-acr-webhook-event.png)
+    ![Screenshot of the webhook showing the push event.](../media/7-acr-webhook-event.png)
 
 ## Test the web app again
 
@@ -96,7 +96,7 @@ The web app has been updated and redeployed automatically based on the new image
 
 1. Note that the contents of the page have changed to reflect the updates made to the container image.
 
-    ![Screenshot of the sample web app](../media/7-sample-web-app-node.png)
+    ![Screenshot of the sample web app.](../media/7-sample-web-app-node.png)
 
 The web app has been updated and redeployed automatically based on the new image. The webhook service in your registry notified your web app that the container image had been modified, triggering an update.
 

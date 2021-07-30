@@ -32,22 +32,25 @@ In this activity, you'll deploy Azure SQL Database by using the Azure portal. Th
     |**Server**     |  Select **Create new**, fill out the  **New server** pane as follows, and select **OK**:      |
     |         |**Server name**:  Enter a unique name for the server (for example, **aw-server0406**).  |
     | | **Server admin login**: cloudadmin |
-    | | **Password/Confirm Password**:  Use a complex password that meets [strong password requirements](https://docs.microsoft.com/sql/relational-databases/security/strong-passwords?azure-portal=true). Note this password for later use.|
+    | | **Password/Confirm Password**:  Use a complex password that meets [strong password requirements](/sql/relational-databases/security/strong-passwords?azure-portal=true). Note this password for later use.|
     || **Location**: Use a region that's close to you. |
     |**Want to use SQL elastic pool?**     |   No      |
     |**Compute + storage**     |  Leave the default of **General Purpose**, **Gen5, 2 vCores, 32 GB storage**       |
+    |**Backup storage redundancy**     |  Leave the default of **Geo-redundant backup storage**       |
 
 1. Select **Next: Networking**.  
 
 1. For **Connectivity method**, select **Public endpoint**. Select **Yes** for both **Allow Azure services and resources to access this server** and **Add current client IP address**.
 
-1. Select **Next: Additional settings**.
-
-1. On the **Additional settings** tab, for Azure SQL Database you have the option to select the AdventureWorksLT database as the sample in the Azure portal. For this exercise, for **Use existing data**, select **Sample**.  
+1. Select **Next: Security**.
 
 1. When you deploy Azure SQL Database in the portal, you're prompted about whether you want to **Enable Azure Defender for SQL** in a free trial. Select **Start free trial**.
 
     After the free trial, it's billed according to the Azure Security Center Standard Tier pricing. After you enable it, you get functionality related to identifying/mitigating potential database vulnerabilities and threat detection.
+
+1. Select **Next: Additional settings**.
+
+1. On the **Additional settings** tab, for Azure SQL Database you have the option to select the AdventureWorksLT database as the sample in the Azure portal. For this exercise, for **Use existing data**, select **Sample**.  
 
 1. Select **Review + create**. Here, you can review your deployment selections and the Azure Marketplace terms. Review all the options to ensure that all of your selections match the exercise instructions, and then select **Create** to deploy the service.  
 
@@ -102,4 +105,4 @@ Keep that in mind as a reference for comparison as you complete the following st
 
     :::image type="content" source="../media/3-managed-instance.png" alt-text="Screenshot of the view of a managed instance in SSMS.":::  
 
-In this exercise, you saw how to deploy and connect to Azure SQL Database, and how it compares (at first glance) to SQL Server and Azure SQL Managed Instance. In the next exercise, you'll continue this comparison, going deeper and exploring various methods to verify your deployment/installation.  
+In this exercise, you saw how to deploy and connect to Azure SQL Database, and how it compares (at first glance) to SQL Server and Azure SQL Managed Instance. In the next exercise, you'll continue this comparison, going deeper and exploring various methods to verify your deployment/installation.

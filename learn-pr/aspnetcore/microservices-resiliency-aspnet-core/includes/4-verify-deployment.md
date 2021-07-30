@@ -37,14 +37,14 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 
 1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. A green checkmark icon denotes a healthy service. The page refreshes automatically, every 10 seconds.
 
-    :::image type="content" source="../media/4-verify-deployment/health-checks-status-page.png" alt-text="health checks status dashboard" border="true" lightbox="../media/4-verify-deployment/health-checks-status-page.png":::
+    :::image type="content" source="../media/4-verify-deployment/health-checks-status-page.png" alt-text="health checks status dashboard." border="true" lightbox="../media/4-verify-deployment/health-checks-status-page.png":::
 
     > [!NOTE]
     > While the app is starting up, you might initially receive an HTTP 503 response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
 
 1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
-    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app" border="true" lightbox="../../media/microservices/eshop-spa.png":::
+    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app." border="true" lightbox="../../media/microservices/eshop-spa.png":::
 
 1. Complete a purchase as follows:
     1. Select the **:::no-loc text="LOGIN":::** link in the upper right to sign into the app. The credentials are provided on the page. Select the **:::no-loc text="Remember me?":::** check box to avoid signing in again.
@@ -52,7 +52,7 @@ Even though the app has been deployed, it might take a few minutes to come onlin
     1. Select the shopping bag icon in the upper right.
     1. Select **:::no-loc text="CHECKOUT":::**, and then select **:::no-loc text="PLACE ORDER":::** to complete the purchase.
 
-    :::image type="content" source="../../media/microservices/eshop-spa-shopping-bag.png" alt-text="shopping cart with .NET Blue Hoodie" border="true" lightbox="../../media/microservices/eshop-spa-shopping-bag.png":::
+    :::image type="content" source="../../media/microservices/eshop-spa-shopping-bag.png" alt-text="shopping cart with .NET Blue Hoodie." border="true" lightbox="../../media/microservices/eshop-spa-shopping-bag.png":::
 
 You've successfully verified that the app was deployed to AKS and is working properly.
 
@@ -75,7 +75,7 @@ The coupon service was designed to simulate failures on demand. Configuration of
 
     You'll receive the following confirmation message with the number of failures configured for the code: **:::no-loc text="CONFIG: 2 failure(s) configured for code \"DISC-10\"!!":::**.
 
-    :::image type="content" source="../media/4-verify-deployment/configure-coupon-failures.png" alt-text="configure coupon failures" border="true" lightbox="../media/4-verify-deployment/configure-coupon-failures.png" :::
+    :::image type="content" source="../media/4-verify-deployment/configure-coupon-failures.png" alt-text="configure coupon failures." border="true" lightbox="../media/4-verify-deployment/configure-coupon-failures.png" :::
 
 This configuration causes the next two requests for the *:::no-loc text="DISC-10":::* code to throw an exception.
 
@@ -89,7 +89,7 @@ This configuration causes the next two requests for the *:::no-loc text="DISC-10
 
 In the two failed attempts to apply the *:::no-loc text="DISC-10":::* code, notice that you received the error message immediately. Check the log traces. You'll see a variation of the following output:
 
-:::image type="content" source="../media/4-verify-deployment/non-resilient-failures.png" alt-text="non-resilient failures" border="true" lightbox="../media/4-verify-deployment/non-resilient-failures.png":::
+:::image type="content" source="../media/4-verify-deployment/non-resilient-failures.png" alt-text="non-resilient failures." border="true" lightbox="../media/4-verify-deployment/non-resilient-failures.png":::
 
 In the preceding image, you can see that:
 

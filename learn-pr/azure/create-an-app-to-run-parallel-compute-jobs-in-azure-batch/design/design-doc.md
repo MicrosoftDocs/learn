@@ -61,7 +61,7 @@ Azure Batch is an Azure service that enables you to run large-scale parallel and
 
 1. **Exercise - Setup Batch and Storage accounts in the Azure portal**
     - Straightforward Azure portal exercise that walks through the process of creating a Batch account and a Storage account.
-    - Procedure is defined in this [tutorial](https://docs.microsoft.com/azure/batch/batch-account-create-portal) 
+    - Procedure is defined in this [tutorial](/azure/batch/batch-account-create-portal) 
     - If the module is run against a sandbox subscription (need to verify if this is possible/allowed), can probably have a *Check your work** validation that makes sure one Batch account and Storage account is in the resource group. 
 
 1. **Learn - Access your Batch account using the .NET client library**
@@ -111,9 +111,9 @@ Azure Batch is an Azure service that enables you to run large-scale parallel and
 - Produce between 5 and 8 very short (each < 5 seconds) videos that e=we intend to convert to animated GIFs. Given the core scenario involves pets, each video could be as simple a short video of a cute cat or dog. **Please work with the video team on this aspect** - we want videos that are suitable and add value. Perhaps the video team can consider licensing these videos, or we consider getting some team members to make these clips for us.
 - Make sure to call out the fact that you can programmatically tear down a Batch job.
 - References
-  - [Azure Batch Libraries for .NET](https://docs.microsoft.com/dotnet/api/overview/azure/batch?view=azure-dotnet)
-  - [Deploy application packages](https://docs.microsoft.com/azure/batch/batch-application-packages)
-  - [Batch API Basics](https://docs.microsoft.com/azure/batch/batch-api-basics)
-  - [Quickstart: Run your first Azure Batch job with the .NET API](https://docs.microsoft.com/azure/batch/quick-run-dotnet)
-  - [Tutorial: Run a parallel workload with Azure Batch using the .NET API](https://docs.microsoft.com/azure/batch/tutorial-parallel-dotnet)
+  - [Azure Batch Libraries for .NET](/dotnet/api/overview/azure/batch?view=azure-dotnet)
+  - [Deploy application packages](/azure/batch/batch-application-packages)
+  - [Batch API Basics](/azure/batch/batch-api-basics)
+  - [Quickstart: Run your first Azure Batch job with the .NET API](/azure/batch/quick-run-dotnet)
+  - [Tutorial: Run a parallel workload with Azure Batch using the .NET API](/azure/batch/tutorial-parallel-dotnet)
   - [ffmpeg documentation](https://www.ffmpeg.org/documentation.html)

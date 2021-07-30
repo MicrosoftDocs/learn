@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-virtual-machines.create-portal
+title: Create virtual machines in the portal
+metadata:
+  title: Create virtual machines in the portal
+  description: "Create virtual machines in the portal"
+  ms.date: 07/28/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-create-portal.md)]

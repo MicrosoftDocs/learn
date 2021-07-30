@@ -2,7 +2,7 @@ In this unit, you'll follow steps to set up Azure Digital Twins and get ready to
 
 ## Download files
 
-First, you'll download the the Digital Twins samples repo which contain the Digital Twins models (in DTDL format), a IoT device simulator, and the C# code for the Azure Function that will be created.  
+First, you'll download the the Digital Twins samples repo which contain the Digital Twins models (in DTDL format), an IoT device simulator, and the C# code for the Azure Function that will be created.  
 
 Clone a GitHub repo that contains some files you'll need:
 

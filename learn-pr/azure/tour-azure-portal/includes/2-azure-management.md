@@ -79,7 +79,7 @@ You can switch between the two shells, and both support the Azure CLI and Azure 
 - maven
 - make
 - npm
-- [and more...](https://docs.microsoft.com/azure/cloud-shell/features#tools)
+- [and more...](/azure/cloud-shell/features#tools)
   :::column-end:::
 :::row-end:::
 

@@ -98,9 +98,9 @@ Next, we need to describe the user interface for Phoneword. We are using control
 1. Set the page's `Padding` to "20" all around. Setting the margin will ensure the controls aren't against the edge of the screen.
 1. Create a `StackLayout` with `Spacing = 15`.
 1. Create the required controls for the Phoneword UI:
-    * A [`Label`](https://docs.microsoft.com/dotnet/api/Xamarin.Forms.Label?view=xamarin-forms) with the `Text` property set to "Enter a Phoneword:".
-    * An [`Entry`](https://docs.microsoft.com/dotnet/api/Xamarin.Forms.Entry?view=xamarin-forms) that allows the user to edit the phone number, which is used to collect the input from the user. It should be initialized with the `Text` "1-855-XAMARIN". The user can replace the initial text with their own; however, pre-populating it with a phoneword is convenient for testing.
-    * A [`Button`](https://docs.microsoft.com/dotnet/api/Xamarin.Forms.Button?view=xamarin-forms) that runs the logic to translate the phone number. Its `Text` property should be set to "Translate".
+    * A [`Label`](/dotnet/api/Xamarin.Forms.Label?view=xamarin-forms) with the `Text` property set to "Enter a Phoneword:".
+    * An [`Entry`](/dotnet/api/Xamarin.Forms.Entry?view=xamarin-forms) that allows the user to edit the phone number, which is used to collect the input from the user. It should be initialized with the `Text` "1-855-XAMARIN". The user can replace the initial text with their own; however, pre-populating it with a phoneword is convenient for testing.
+    * A [`Button`](/dotnet/api/Xamarin.Forms.Button?view=xamarin-forms) that runs the logic to translate the phone number. Its `Text` property should be set to "Translate".
     * A second `Button` displaying the `Text` "Call", which places the call. This `Button` should be initially disabled (use the `IsEnabled` property).
     * Store the `Entry` and the two `Button` controls in class fields, so you can interact with them later.
 1. Add the controls to the `StackLayout`.

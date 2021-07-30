@@ -2,6 +2,8 @@ In order to evaluate whether Contoso should migrate to Azure Virtual WAN, you ne
 
 In this unit, you’ll learn how remote offices use Virtual WAN to connect to Azure. You’ll explore connectivity options and hub types.
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWEhw0]
+
 ## Service components of Azure Virtual WAN
 
 The following services and components of Azure Virtual WAN provide multiple connectivity options into Azure and permit customers to use the Azure high-speed connected backbone.

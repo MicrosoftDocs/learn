@@ -4,7 +4,7 @@ Azure Synapse Analytics provides built-in threat monitoring capabilities. It's o
 1. Under **Security** in the options pane, select **Advanced Threat Protection**.
 1. Select **Enable Advanced Threat Protection on the server**.
 
-![Screenshot of enabling threat protection](../media/3-configure-threat-protection.png)
+![Screenshot of enabling threat protection.](../media/3-configure-threat-protection.png)
 
 You can set up a storage account to persist assessment logs for later vulnerability analysis.
 
@@ -18,11 +18,11 @@ To turn on database-level auditing:
 1. Under **Security** in the options pane, select **Auditing**.
 1. Select **ON**.
 
-   ![Screenshot of enabling database-level auditing](../media/3-enable-auditing.png)
+   ![Screenshot of enabling database-level auditing.](../media/3-enable-auditing.png)
 
 1. Select **Storage details** and fill in the details for the destination storage account for audit logs.
 
-   ![Screenshot of configuring storage details](../media/3-configure-storage-details.png)
+   ![Screenshot of configuring storage details.](../media/3-configure-storage-details.png)
 
 1. Select **OK**.
 1. Select **OK** again after the storage account is provisioned.

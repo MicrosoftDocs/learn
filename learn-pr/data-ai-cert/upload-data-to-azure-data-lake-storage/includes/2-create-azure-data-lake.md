@@ -5,43 +5,74 @@ Before you can upload or transfer data into a data lake, you need to create one.
 
 ## Create a resource group
 
-Create a new resource group to hold the data lake storage. You'll use the resource group to administer related services and applications together. A resource group will also make resource cleanup easier when you finish this module. 
+Create a new resource group to hold the data lake storage. You'll use the resource group to administer related services and applications together. A resource group will also make resource cleanup easier when you finish this module.
 
 To create a resource group in the Azure portal, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
-1. On the left, select **Create a resource**.
-1. In the search box, type **Resource** and select **Resource group** from the results.
+
+1. On the **Home** page, under **Azure services**, select **Create a resource**.
+
+1. In the search box, enter **Resource group** and press <kbd>Enter</kbd>. The **Resource group** pane appears.
+
 1. Select **Create** to add a new resource group.
-1. On the **Basics** tab, select the subscription you want to work in.
-1. Name the resource group **mslearn-datalake-test**.
-1. Choose the region (location) for the resource group. Typically, you'll want a location that's close to you or to the data you'll work with.
 
-    ![Screenshot showing how to create a resource group in the Azure portal](../media/2-create-resource-group.png)
+1. On the **Basics** tab, enter the following values for each setting.
 
-1. Select **Review + Create** > **Create**.
+    | Setting      | Value  |
+    | ------------ |  ------- |
+    | **Project details** |
+    | Subscription | Subscription you choose to work in. |
+    | Resource group|  Enter *mslearn-datalake-test* |
+    | **Resource details**|
+    | Region | Select a location for the resource group. Typically, you'll want a location that's close to you or to the data you'll work with. |
 
-After you quickly create your resource group, you can pin it to your dashboard to make it easy to find later.
+    ![Screenshot showing how to create a resource group in the Azure portal.](../media/2-create-resource-group.png)
+
+1. Select **Review + create**.
+
+1. After validation passes, select **Create**.
+
+After you create your resource group, you can select **Pin to dashboard** from the *Notifications* icon in the portal's top task bar to make it easy to find later.
 
 ## Create a Data Lake Storage Gen2 account
 
 You'll create a Data Lake Storage Gen2 account the same way you create an Azure Blob store, but with one setting difference. To create the data lake, follow these steps:
 
-1. On the left side of the Azure portal, select **Create a resource**.
-1. Select **Storage** > **Storage account**.
-1. Select your **Subscription** and the **Resource group** you created earlier (**mslearn-datalake-test**).
-1. Enter a name for your storage account. The name must be unique across all of Azure. You might have to try a few variations to find a unique name. Try using the prefix "dlakedata" with some numbers. A green check mark indicates you've entered a valid name.
-1. For the location, select **Central US**.
-1. Make sure the **Account kind** is **StorageV2 (general-purpose V2)**. Leave the defaults for the rest of the values.
+1. On the portal **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-    ![Screenshot showing how to create a storage account in the Azure portal](../media/2-create-storage-account-basics.png)
+1. In the left menu pane, select **Storage**, and then search for and select **Storage account**. The **Storage account** pane appears.
 
-1. Select **Next: Advanced**.
-1. In the **Data Lake Storage Gen2 (preview)** section, next to **Hierarchical namespace**, select **Enabled**.
-1. Select **Review + Create** to create the storage account.
+1. Select **Create**. The **Create a storage account** pane appears.
 
-    ![Screenshot showing the Advanced tab of the Create storage account area in the Azure portal](../media/2-create-storage-account.png)
+1. On the **Basics** tab, enter the following values for each setting.
 
-1. After the creation details are validated, select **Create** to start the deployment.
+    | Setting      | Value  |
+    | ------------ |  ------- |
+    | **Project details** |
+    | Subscription | Same subscription as the *Data Lake Storage Gen2 account* you just created. |
+    | Resource group|  From the dropdown list, select *mslearn-datalake-test* |
+    | **Instance details**|
+    | Storage account name | Enter a unique name for your storage account. The name must be unique across all of Azure. You might have to try a few variations to find a unique name. Try using the prefix *dlakedata* with some numbers. A green check mark indicates you've entered a valid name. |
+    | **Region** | From the dropdown list, select *Central US*. |
 
-When you receive a message that indicates your deployment is complete, select **Go to resource** to confirm the deployment.
+1. Accept the defaults for the reminder of the options.
+
+1. Select **Next : Advanced**.
+
+1. On the **Advanced** tab, enter the following value for the setting. Accept all other default values.
+
+    | Setting      | Value  |
+    | ------------ |  ------- |
+    | **Data Lake Storage Gen2** |
+    | Enable hierarchical namespace | *check* (Enabled) |
+
+    ![Screenshot showing how to create a storage account in the Azure portal.](../media/2-create-storage-account-basics.png)
+
+1. Select **Review + create** to create the storage account.
+
+    ![Screenshot showing the Advanced tab of the Create storage account area in the Azure portal.](../media/2-create-storage-account.png)
+
+1. After the creation details pass validation, select **Create** to start the deployment.
+
+After you receive a message that your deployment is complete, select **Go to resource** to confirm the deployment.

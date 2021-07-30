@@ -117,8 +117,8 @@ Identify the subtasks of *React to state changes in your Azure services using Ev
 
 ## Notes
 
-The [Email when VM changes](https://docs.microsoft.com/en-us/azure/event-grid/monitor-virtual-machine-changes-event-grid-logic-app) tutorial can be used as a basis for the steps. Will need to adjust it to our scenario.
+The [Email when VM changes](/azure/event-grid/monitor-virtual-machine-changes-event-grid-logic-app) tutorial can be used as a basis for the steps. Will need to adjust it to our scenario.
 
 Other useful links:
 - [Azure Event Grid With Logic Apps and Functions](https://social.technet.microsoft.com/wiki/contents/articles/39969.azure-event-grid-with-logic-apps-and-functions.aspx)
-- [Azure Event Grid Connector](https://docs.microsoft.com/en-us/connectors/azureeventgrid/)
+- [Azure Event Grid Connector](/connectors/azureeventgrid/)

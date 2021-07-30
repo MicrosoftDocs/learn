@@ -1,4 +1,4 @@
-You can ingest data into Azure Digital Twins through external compute resources such as Virtual Machines, Azure Functions, and Logic Apps. In this module, a function app will be invoked by Event Grid.  The function app receives the data and uses the [Azure Digital Twins APIs](https://docs.microsoft.com/rest/api/azure-digitaltwins) to set properties.
+You can ingest data into Azure Digital Twins through external compute resources such as Virtual Machines, Azure Functions, and Logic Apps. In this module, a function app will be invoked by Event Grid.  The function app receives the data and uses the [Azure Digital Twins APIs](/rest/api/azure-digitaltwins) to set properties.
 
 Additionally, when choosing what type of external compute to use, remember to factor in the additional cost. Virtual Machines, Functions, and Logic Apps all have different cost models.
 
@@ -75,14 +75,14 @@ In this section, you use Visual Studio Code to create a local Azure Functions pr
     - **Select a template for your project's first function**: Select **Change template filter**.
     - **Select a template filter**: Select **All**.
     - **Select a template for your project's first function**: Select **EventGridTrigger**.
-    - **Provide a function name**: Type **TwinsFunction**.
-    - **Provide a namespace**: Type **My.Function**.
+    - **Provide a function name**: Enter **TwinsFunction**.
+    - **Provide a namespace**: Enter **My.Function**.
     - **When prompted for a storage account choose**: Skip for now.
     - **Select how you would like to open your project**: Select **Add to workspace**.
 
 ### Install NuGet packages
 
-In the Visual Studio Code terminal, add the required NuGet packages by typing the following commands:
+In the Visual Studio Code terminal, add the required NuGet packages by entering the following commands:
 
 ```dos
 dotnet add package Azure.DigitalTwins.Core --version 1.2.0

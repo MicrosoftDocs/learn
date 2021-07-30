@@ -6,6 +6,6 @@ A hub-spoke architecture in Azure allows your business to quickly and easily ada
 
 ## More information
 
-- [Hub-spoke topology](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/#hub-spoke-network-topology)
-- [Connect to Azure by using ExpressRoute](https://docs.microsoft.com/azure/architecture/reference-architectures/hybrid-networking/expressroute)
-- [Azure DDoS protection](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview)
+- [Hub-spoke topology](/azure/architecture/reference-architectures/hybrid-networking/#hub-spoke-network-topology)
+- [Connect to Azure by using ExpressRoute](/azure/architecture/reference-architectures/hybrid-networking/expressroute)
+- [Azure DDoS protection](/azure/virtual-network/ddos-protection-overview)

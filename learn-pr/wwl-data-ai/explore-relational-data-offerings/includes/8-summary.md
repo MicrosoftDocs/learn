@@ -2,12 +2,12 @@ In this module, you've learned about the PaaS and IaaS deployment options for ru
 
 ## Additional resources
 
-- [Choose the right deployment option](https://docs.microsoft.com/azure/sql-database/sql-database-paas-vs-sql-server-iaas)
-- [What is a single database in Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-single-database)
-- [What is Azure SQL Database managed instance?](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance)
+- [Choose the right deployment option](/azure/sql-database/sql-database-paas-vs-sql-server-iaas)
+- [What is a single database in Azure SQL Database](/azure/sql-database/sql-database-single-database)
+- [What is Azure SQL Database managed instance?](/azure/sql-database/sql-database-managed-instance)
 - [Data Migration Assistant (DMA)](https://www.microsoft.com/download/details.aspx?id=53595)
-- [Azure Database Migration Service (DMS)](https://docs.microsoft.com/azure/dms/tutorial-postgresql-azure-postgresql-online)
-- [Choose the right data store](https://docs.microsoft.com/azure/architecture/guide/technology-choices/data-store-overview)
-- [Transport Layer Security](https://docs.microsoft.com/windows-server/security/tls/transport-layer-security-protocol)
-- [Transparent Data Encryption](https://docs.microsoft.com/sql/relational-databases/security/encryption/transparent-data-encryption)
-- [Always Encrypted](https://docs.microsoft.com/sql/relational-databases/security/encryption/always-encrypted-database-engine)
+- [Azure Database Migration Service (DMS)](/azure/dms/dms-overview)
+- [Choose the right data store](/azure/architecture/guide/technology-choices/data-store-overview)
+- [Transport Layer Security](/windows-server/security/tls/transport-layer-security-protocol)
+- [Transparent Data Encryption](/sql/relational-databases/security/encryption/transparent-data-encryption)
+- [Always Encrypted](/sql/relational-databases/security/encryption/always-encrypted-database-engine)

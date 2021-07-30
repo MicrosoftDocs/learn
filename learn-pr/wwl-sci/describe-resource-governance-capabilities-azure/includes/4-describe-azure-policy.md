@@ -2,7 +2,7 @@ Azure Policy is designed to help enforce standards and assess compliance across 
 
 Azure Policy evaluates all resources in Azure and Arc enabled resources (specific resource types hosted outside of Azure).
 
-Azure Policy evaluates whether the properties of resources match with business rules. These business rules are described using [JSON](https://docs.microsoft.com/azure/governance/policy/concepts/definition-structure) format, and referred to as [policy definitions](https://docs.microsoft.com/azure/governance/policy/overview#policy-definition). For simplified management, you can group together multiple business rules to form a single [policy initiative](https://docs.microsoft.com/azure/governance/policy/overview#initiative-definition). After business rules have been formed, you can assign the policy definition, or policy initiative, to any scope of resources that are supported, such as management groups, subscriptions, resource groups, or individual resources.  
+Azure Policy evaluates whether the properties of resources match with business rules. These business rules are described using [JSON](/azure/governance/policy/concepts/definition-structure) format, and referred to as [policy definitions](/azure/governance/policy/overview#policy-definition). For simplified management, you can group together multiple business rules to form a single [policy initiative](/azure/governance/policy/overview#initiative-definition). After business rules have been formed, you can assign the policy definition, or policy initiative, to any scope of resources that are supported, such as management groups, subscriptions, resource groups, or individual resources.  
 
 ## Evaluation outcomes
 
@@ -20,7 +20,7 @@ Organizations will vary in how they respond to non-compliant resources. Here's s
 - Alter a resource before or after a change.
 - Deploy related compliant resources.  
 
-With Azure Policy, responses like these are made possible by using [effects](https://docs.microsoft.com/azure/governance/policy/concepts/effects), which are specified in policy definitions.
+With Azure Policy, responses like these are made possible by using [effects](/azure/governance/policy/concepts/effects), which are specified in policy definitions.
 
 ## What’s the difference between Azure Policy and Azure role-based access control (RBAC)?
 

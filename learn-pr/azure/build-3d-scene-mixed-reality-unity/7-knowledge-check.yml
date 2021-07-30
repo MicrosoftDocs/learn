@@ -37,11 +37,14 @@ quiz:
         - content: "Cardinal, Ordinal, and Nominal"
           isCorrect: false
           explanation: "Although these are number types that may appear in the Map Renderer (Script) configuration, they aren't the primary configuration parameters.  Cardinal numbers define how many of something exist.  Ordinal numbers represent the position of an entity in a list.  Nominal numbers are like labels, with little relationship to each other (for example, not scalar)."
-    - content: "True or false: Using satellite imagery from Bing Maps can help make your experience more realistic and meaningful by providing contextual information."
+    - content: "How far away should you place objects from users for maximum comfort and focus?"
       choices:
-        - content: "True"
+        - content: "About 6.5ft from the user"
           isCorrect: true
-          explanation: ""
-        - content: "False"
+          explanation: "6.5ft is the optimum distance for objects to be placed because users can see them clearly but they don't appear to close or too far."
+        - content: "Less than 4ft from the user"
           isCorrect: false
-          explanation: "Dynamic map data, including satellite imagery from Bing Maps, grounds your Mixed Reality experience with real-world context, permitting your users to better visualize surrounding ancillary data supporting your Digital Twin."
+          explanation: "Objects less than 4ft will not be comfortably inside a users field of view, which may make it hard to focus on."
+        - content: "More than 16ft from the user"
+          isCorrect: false
+          explanation: "Objects farther than 16ft will be uncomfortably far from the users immediate field of view, which may make it hard to see or identify."

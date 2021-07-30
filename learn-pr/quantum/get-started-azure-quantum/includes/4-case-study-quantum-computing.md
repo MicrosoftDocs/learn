@@ -2,7 +2,7 @@ One of the services that Azure Quantum offers is a solution for quantum computin
 
 Quantum mechanics is the underlying "operating system" of our universe. It describes how the fundamental building blocks of nature behave. Nature's behaviors, such as chemical reactions, biological reactions, and material formations, often involve many-body quantum interactions. To understand these behaviors, we rely on the ability to simulate them with state-of-the-art computation.
 
-Classical computing, which uses binary states, is increasingly challenged as the size of the system grows. As we've seen throughout the [learning path](/learn/paths/quantum-computing-fundamentals/?azure-portal=true), quantum computing makes use of quantum mechanical phenomena such as *superposition*, *interference*, and *entanglement* to address some of these challenges. For simulating intrinsically quantum mechanical problems, quantum computing is promising, because quantum states can be used to represent the natural states in question.
+Classical computing, which uses binary states, is increasingly challenged as the size of the system grows. As we've seen throughout the [learning path](../../../paths/quantum-computing-fundamentals/index.yml?azure-portal=true), quantum computing makes use of quantum mechanical phenomena such as *superposition*, *interference*, and *entanglement* to address some of these challenges. For simulating intrinsically quantum mechanical problems, quantum computing is promising, because quantum states can be used to represent the natural states in question.
 
 ![Figure of Azure Quantum computing with Q D K.](../media/4-azure-quantum-computing-with-qdk.png)
 
@@ -77,7 +77,7 @@ With the anticipation of a sufficiently large and fault-tolerant quantum compute
 - Estimate the security for cryptosystems of a given bit length in a post-quantum environment.
 - Estimate how long it will take to migrate current cryptosystems to new ones.
 
-In collaboration with researchers in [QuArC](https://www.microsoft.com/research/blog/cryptography-quantum-computing-intersect/?azure-portal=true), Microsoft has been developing concrete quantum estimates for breaking current encryption systems. It's also working on ways to make these systems robust against quantum attacks.
+In collaboration with [Microsoft Quantum researchers](https://www.microsoft.com/research/blog/cryptography-quantum-computing-intersect/?azure-portal=true), Microsoft has been developing concrete quantum estimates for breaking current encryption systems. It's also working on ways to make these systems robust against quantum attacks.
 
 Again, let's talk about graphs. The "path-finding problem" is a hard problem for explicit choices of expander graphs. The development of post-quantum cryptosystems (that is, classical protocols that are resistant to quantum attacks) [has been proposed](http://eprint.iacr.org/2006/021.pdf?azure-portal=true).
 

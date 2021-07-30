@@ -42,7 +42,7 @@ This step installs the QDK and adds extensions to Visual Studio Code that provid
 1. Go to [Microsoft Quantum Development Kit for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=quantum.quantum-devkit-vscode&azure-portal=true), select **Install**, then follow the installation steps.
 
 > [!NOTE]
-> If you already have an older version of the QDK, we recommend that you [update to the latest version](https://docs.microsoft.com/azure/quantum/install-update-qdk?azure-portal=true).
+> If you already have an older version of the QDK, we recommend that you [update to the latest version](/azure/quantum/install-update-qdk?azure-portal=true).
 > After installing the QDK extension, restart Visual Studio Code to continue the next steps.
 
 ## Verify the installation
@@ -67,7 +67,7 @@ Project templates enable you to quickly create Q# applications, libraries, and u
 1. Enter **Q#: Create new project**.
 
     > [!NOTE]
-    > If you run into a problem with VS Code project templates, receiving an error "'npm' is not recognized as an internal or external command", please install [node.js including npm](https://nodejs.org/en/?azure-portal=true). Alternatively, use our [command line templates](https://docs.microsoft.com/azure/quantum/install-command-line-qdk?tabs=tabid-vscode#to-configure-for-another-environment?azure-portal=true) to create a Q# project , or use [Visual Studio](https://docs.microsoft.com/azure/quantum/install-command-line-qdk?tabs=tabid-vscode#to-configure-for-visual-studio?azure-portal=true).
+    > If you run into a problem with VS Code project templates, receiving an error "'npm' is not recognized as an internal or external command", please install [node.js including npm](https://nodejs.org/en/?azure-portal=true). Alternatively, use our [command line templates](/azure/quantum/install-command-line-qdk?tabs=tabid-vscode#to-configure-for-another-environment?azure-portal=true) to create a Q# project , or use [Visual Studio](/azure/quantum/install-command-line-qdk?tabs=tabid-vscode#to-configure-for-visual-studio?azure-portal=true).
 
 1. Select **Standalone console application**.
 1. Select a directory to hold your project, such as your home directory. Enter *QuantumHello* as the project name, then select **Create Project**.
@@ -116,4 +116,4 @@ Great work. You just ran your first Q# program!
 You likely noticed that this basic program doesn't involve any quantum computations. Next, you'll use quantum computation to create a random number generator.
 
 > [!NOTE]
-> If you run into any issues with the installation of the QDK, take a look at the [QDK documentation](https://docs.microsoft.com/azure/quantum/install-command-line-qdk?tabs=tabid-vscode?azure-portal=true) for additional information, or you can report an issue on [GitHub](https://github.com/MicrosoftDocs/quantum-docs/issues).
+> If you run into any issues with the installation of the QDK, take a look at the [QDK documentation](/azure/quantum/install-command-line-qdk?tabs=tabid-vscode%3fazure-portal%3dtrue) for additional information, or you can report an issue on [GitHub](https://github.com/MicrosoftDocs/quantum-docs/issues).

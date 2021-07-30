@@ -19,7 +19,7 @@ Compose a T-SQL query step by step against the existing fact table **FactReselle
 
 1. Right-click each of the tables, and select **Select Top 1000 Rows** to view the data in the tables.
 
-    ![How to issue a query](../media/4-query-top-rows.png)
+    ![How to issue a query.](../media/4-query-top-rows.png)
 
     > [!TIP]
     > The column view in Object Explorer provides information about the table structure. For example, from here you can see that the column **ResellerKey** in **FactResellerSales** and the column **ResellerKey** of **DimReseller** are the links on which the two tables can join together.
@@ -40,9 +40,9 @@ Now create a custom query. Start by querying the fact table, which holds the cen
 
     Notice the use of aliases in this query. The table `FactResellerSales` is aliased as `S` so that it's easier to reference in other parts of the query. The column `SalesAmount` is aliased as `Sales` to change its name in the output.
 
-1. Select **Execute** on the toolbar, or select <kbd>F5</kbd>. The query is sent to the Azure SQL Data Warehouse server where it runs. The results are sent back and displayed in the bottom pane of the query window.
+1. Select **Execute** on the toolbar, or select <kbd>F5</kbd>. The query is sent to the Azure Synapse Analytics server where it runs. The results are sent back and appear in the bottom pane of the query window.
 
-    ![Run a query by using the SQL Server Management Studio tool](../media/4-execute-query.png)
+    ![Run a query by using the SQL Server Management Studio tool.](../media/4-execute-query.png)
 
 1. Bring the dimension table in by using the shared column. Enter the following query into the editor:
 
@@ -71,7 +71,7 @@ Now create a custom query. Start by querying the fact table, which holds the cen
 
     ... remainder omitted for length
     ```
-    
+
     Look at the values in the `BusinessType` column. The resellers fall into three types of businesses: Specialty Bike Shop, Warehouse, and Value Added Reseller. To focus on _warehouse resellers_, add a `WHERE` condition to the source data.
 
 1. Add a `WHERE` clause to the query that looks something like the following:
@@ -83,7 +83,7 @@ Now create a custom query. Start by querying the fact table, which holds the cen
     WHERE R.[BusinessType] = 'Warehouse'
     ```
 
-1. Run the query to limit the results. 
+1. Run the query to limit the results.
 
 1. Because there are only _warehouse resellers_ left, the `BusinessType` column in the query result isn't needed. Go ahead and remove it.
 
@@ -95,12 +95,12 @@ Now create a custom query. Start by querying the fact table, which holds the cen
     ```
 
 ## Perform aggregate calculations
-    
+
 Most of the data analysis tasks involve aggregation calculations, which include minimum and maximum values, totals, summations, and averaging data.
 
-For example, if you want to know the sales performance of each reseller, calculate the total sales amount for each of the resellers. In T-SQL, use the `GROUP BY` clause and the `SUM` aggregation function. 
+For example, if you want to know the sales performance of each reseller, calculate the total sales amount for each of the resellers. In T-SQL, use the `GROUP BY` clause and the `SUM` aggregation function.
 
-1. Enter the following query into the editor:
+Enter the following query into the editor:
 
     ```sql
     SELECT SUM(S.[SalesAmount]) AS [Sales], R.[ResellerName]
@@ -109,8 +109,8 @@ For example, if you want to know the sales performance of each reseller, calcula
     WHERE R.[BusinessType] = 'Warehouse'
     GROUP BY R.[ResellerName]
     ```
-    
-    The following results are returned:
+
+The following results are returned:
 
     ```
     Sales          ResellerName
@@ -143,14 +143,14 @@ For example, if you want to know the sales performance of each reseller, calcula
     HAVING SUM(S.[SalesAmount]) > 700000
     ```
 
-    > [!TIP]    
+    > [!TIP]
     > Notice that the `SUM(S.[SalesAmount])` aggregation appears twice, both in `SELECT` and `HAVING`. So far, T-SQL doesn't support the use of a column alias in the `HAVING` clause. 
 
 ## Sort results
 
 Notice that the results aren't sorted. We need to fix that. 
 
-To sort the query result, use the `ORDER BY` clause. With an optional `ASC` argument, the `ORDER BY` clause sorts the query result in ascending order. In contrast, using `ORDER BY` with the `DESC` argument sorts the query result in descending order. To highlight the high-performance resellers, sort the query result in descending order. 
+To sort the query result, use the `ORDER BY` clause. With an optional `ASC` argument, the `ORDER BY` clause sorts the query result in ascending order. In contrast, using `ORDER BY` with the `DESC` argument sorts the query result in descending order. To highlight the high-performance resellers, sort the query result in descending order.
 
 1. Change the query to look like the following:
 
@@ -163,7 +163,7 @@ To sort the query result, use the `ORDER BY` clause. With an optional `ASC` argu
     HAVING SUM(S.[SalesAmount]) > 700000
     ORDER BY [Sales] DESC
     ```
-    
+
 1. Run the query. The descended sorted result appears.
 
 ## Select the top section of data
@@ -180,7 +180,7 @@ What if you need to find the "Top 10" best resellers? In SQL, use the `TOP` argu
     GROUP BY R.[ResellerName]
     ORDER BY [Sales] DESC
     ```
-    
+
 1. Run the query. The top 10 best warehouse resellers are listed. The `TOP` filtering occurs later than `ORDER BY`, which is why the result is the top 10 best warehouse resellers.
 
     ```output
@@ -206,15 +206,16 @@ You can export results directly from the query window by choosing to:
 - Save results to a file, which is typically comma-delimited.
 
 1. Right-click the data grid of the query result, and select **Select All**.
+
 1. Right-click the data grid again, and select **Copy with Headers**.
 
 Paste these results wherever necessary. For example, you can paste results to an Excel sheet. Then you can visualize the data either with a pie chart or a bar chart to gain business insight. You can even use an Excel PivotTable to go further. This option is beyond the scope of this course.
 
 :::row:::
   :::column:::
-![Screenshot of Observing Pie Chart](../media/4-observe-pie-chart.png)
+![Screenshot of observing pie chart first view.](../media/4-observe-pie-chart.png)
   :::column-end:::
   :::column:::
-![Screenshot of Observing Pie Chart](../media/4-observe-bar-chart.png)
+![Screenshot of observing pie chart second view.](../media/4-observe-bar-chart.png)
   :::column-end:::
 :::row-end:::

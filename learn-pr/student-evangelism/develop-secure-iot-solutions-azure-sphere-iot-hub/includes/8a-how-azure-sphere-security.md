@@ -54,7 +54,7 @@ Hardware is declared in the application **app_manifest.json** file in the **Capa
 
 ## Hardware definitions
 
-Azure Sphere hardware is available from multiple vendors, and each vendor may expose features of the underlying chip in different ways. Azure Sphere applications manage hardware dependencies by using hardware definition files. For further information, review the [Managing target hardware dependencies](https://docs.microsoft.com/azure-sphere/app-development/manage-hardware-dependencies?azure-portal=true) article.
+Azure Sphere hardware is available from multiple vendors, and each vendor may expose features of the underlying chip in different ways. Azure Sphere applications manage hardware dependencies by using hardware definition files. For further information, review the [Managing target hardware dependencies](/azure-sphere/app-development/manage-hardware-dependencies?azure-portal=true) article.
 
 The labs for this learning module have a set of hardware definition files for the AVNET and SEEED Studio Azure Sphere developer boards. The **azure_sphere_learning_path** hardware definition file is included in main.c for each lab.
 

@@ -4,7 +4,7 @@ We have already discussed several optimization techniques used on the cloud to r
 
 Most cloud applications are large, distributed systems that often rely on parallelization to reduce latency. A common technique is to fan out a request received at a root node (for example, a front-end web server) to many leaf nodes (back-end compute servers). The performance improvement is driven by the parallelism of the distributed computation, and also by the fact that extremely expensive data-moving costs are avoided. We simply move the computation to the place where the data is stored. Of course, each leaf node concurrently operates on hundreds or even thousands of parallel requests. 
 
-![Latency due to scale-out](../media/scale-out-latency.png)
+![Latency due to scale-out.](../media/scale-out-latency.png)
 
 _Figure 7: Latency due to scale-out_
 
@@ -21,7 +21,7 @@ Clearly, the need for scale has led to a large fan-out at the back end for each 
 
 Like most stochastic processes, the response time of a single leaf node can be expressed as a distribution. Decades of experience have shown that in the general case, most (>99%) requests of a well-configured cloud system will execute extremely quickly. But often, there are very few outliers on a system that execute extremely slowly. 
 
-![Tail latency example](../media/tail-latency-1.png)
+![Tail latency example.](../media/tail-latency-1.png)
 
 _Figure 8: Tail latency example_<sup>[5][^5]</sup>
 
@@ -31,7 +31,7 @@ $(.99^{100})$
 
 If we simulate this for a variety of cases, we see that as the number of servers increases, the impact of a single slow query is more pronounced (notice that the graph below is monotonically increasing). Also, as the probability of these outliers decreases from 1% to 0.01%, the system is substantially lower. 
 
-![Recent study of response time probability that shows the fiftieth, ninety-fifth, and ninety-ninth percentiles for latency of requests](../media/tail-latency-2.png)
+![Recent study of response time probability that shows the fiftieth, ninety-fifth, and ninety-ninth percentiles for latency of requests.](../media/tail-latency-2.png)
 
 _Figure 9: Recent study of response time probability that shows the 50th, 95th, and 99th percentiles for latency of requests_<sup>[4][^4]</sup>
 
@@ -69,7 +69,7 @@ Using these techniques, it's possible to significantly improve the experience of
 2. _Wu, Haitao and Feng, Zhenqian and Guo, Chuanxiong and Zhang, Yongguang (2013). [ICTCP: Incast Congestion Control for TCP in Data-Center Networks](https://conferences.sigcomm.org/co-next/2010/CoNEXT_papers/13-Wu.pdf), IEEE/ACM Transactions on Networking (TON), IEEE Press_
 3. _Xu, Yunjing and Musgrave, Zachary and Noble, Brian and Bailey, Michael (2013). [Bobtail: Avoiding Long Tails in the Cloud](https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final77.pdf), 10th USENIX Conference on Networked Systems Design and Implementation, USENIX Association_
 4. _Dean, Jeffrey and Barroso, Luiz André (2013). [The tail at scale](https://cacm.acm.org/magazines/2013/2/160173-the-tail-at-scale/fulltext), Communications of the ACM, ACM_
-5. _Tene, Gil (2014). [Understanding Latency - Some Key Lessons and Tools](https://www.azul.com/presentation/understanding-latency-pitfalls-lessons-and-tools/), QCon London_
+5. _Tene, Gil (2014). [Understanding Latency - Some Key Lessons and Tools](https://www.infoq.com/presentations/latency-lessons-tools/, QCon London_
 
 ***
 
@@ -77,4 +77,4 @@ Using these techniques, it's possible to significantly improve the experience of
 [^2]: <https://conferences.sigcomm.org/co-next/2010/CoNEXT_papers/13-Wu.pdf> "Wu, Haitao and Feng, Zhenqian and Guo, Chuanxiong and Zhang, Yongguang (2013). *ICTCP: Incast Congestion Control for TCP in Data-Center Networks*, IEEE/ACM Transactions on Networking (TON), IEEE Press"
 [^3]: <https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final77.pdf> "Xu, Yunjing and Musgrave, Zachary and Noble, Brian and Bailey, Michael (2013). *Bobtail: Avoiding Long Tails in the Cloud*, 10th USENIX Conference on Networked Systems Design and Implementation, USENIX Association"
 [^4]: <https://cacm.acm.org/magazines/2013/2/160173-the-tail-at-scale/fulltext> "Dean, Jeffrey and Barroso, Luiz André (2013). *The tail at scale*, Communications of the ACM, ACM"
-[^5]: <https://www.azul.com/presentation/understanding-latency-pitfalls-lessons-and-tools/)> "Tene, Gil (2014). *Understanding Latency - Some Key Lessons and Tools*, QCon London"
+[^5]: <https://www.infoq.com/presentations/latency-lessons-tools/> "Tene, Gil (2014). *Understanding Latency - Some Key Lessons and Tools*, QCon London"

@@ -4,13 +4,13 @@ In this unit, learn about the Azure Digital Twins REST APIs: what they're for an
 
 Some application architectures don't support the Azure Digital Twins SDK. In such cases, you can use the Azure Digital Twins REST APIs to perform both control-plane operations (for example, to create Azure Digital Twins instances) and data-plane operations (for example, ingesting telemetry or modifying Azure Digital Twins instance properties).
 
-For more information, see the [Azure Digital Twins REST APIs documentation](https://docs.microsoft.com/rest/api/azure-digitaltwins/).
+For more information, see the [Azure Digital Twins REST APIs documentation](/rest/api/azure-digitaltwins/).
 
 ## API authentication
 
 Use the OAuth 2.0 client-credentials grant, specified in RFC 6749 and sometimes called "two-legged OAuth," to access web-hosted resources by using the identity of an application. This type of grant is commonly used for server-to-server interactions that must run in the background, without immediate interaction with a user. These types of applications are often called daemons or service accounts.
 
-For more information on different authentication patterns, see the [Azure Active Directory documentation](https://docs.microsoft.com/azure/active-directory/develop/v2-app-types).
+For more information on different authentication patterns, see the [Azure Active Directory documentation](/azure/active-directory/develop/v2-app-types).
 
 ### Grant admin consent
 
@@ -20,7 +20,7 @@ The **Grant admin consent for [*company*]** action is often required for app reg
 
 :::image type="content" source= "../media/grant-admin-consent.png" alt-text="Screenshot of API permissions page for Contoso, with Grant-consent button highlighted.":::
 
-## Setup App Registration
+## Set up App Registration
 
 In order to leverage the Azure Digital Twins APIs, an application will need to be defined with permissions to use the ADT APIs.
 
@@ -33,7 +33,7 @@ In order to leverage the Azure Digital Twins APIs, an application will need to b
 
     Now you're editing manifest.json.
 
-1. Paste the following JSON code into PowerShell and then use Ctrl+C to close the file.
+1. Paste the following JSON code into PowerShell and then press <kbd>Ctrl+C</kbd> to close the file.
 
     ```json
     [{
@@ -104,6 +104,7 @@ Get the Azure AD tenant ID:
 ```azurecli
 az account show --query 'tenantId'
 ```
+
 ### POSTMAN
 
 [Postman](https://www.getpostman.com/) is a REST testing tool that provides key HTTP request functionalities in a desktop and plugin-based GUI. You can use it to craft HTTP requests and submit them to the Azure Digital Twins REST APIs.
@@ -134,6 +135,7 @@ To use the Azure Digital Twins APIs, you'll need to get an authorization token f
     ```
 
 1. Azure AD responds with a bearer token that will be used in the next section:
+
     :::image type="content" source= "../media/bearertoken.png" alt-text="Partial screenshot of bearer-token text displayed in a console window.":::
 
 ## Use REST APIs
@@ -174,4 +176,3 @@ Run the following command to update the REST API property in the GrindingStep di
         "query": "SELECT * FROM DIGITALTWINS"
     }'
 ```
-

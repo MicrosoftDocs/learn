@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.fsharp-functions.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  author: softchris
+  ms.author: chnoring
+  ms.date: 07/26/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

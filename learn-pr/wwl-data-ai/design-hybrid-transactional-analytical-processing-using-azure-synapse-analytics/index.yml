@@ -3,7 +3,7 @@ uid: learn.wwl.design-hybrid-transactional-analytical-processing-using-azure-syn
 metadata:
   title: Design hybrid transactional and analytical processing using Azure Synapse Analytics
   description: "Design hybrid transactional and analytical processing using Azure Synapse Analytics"
-  ms.date: 12/02/2020
+  ms.date: 07/28/2021
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   - Describe the supported analytical workloads
   - Explain HTAP scenarios in the context of Synapse Link
   - Describe the analytical store
-  - Understand well defined schema's
+  - Understand well defined schemas
   - Design schemas to support type of analytics
   - Design writeback scenarios
 prerequisites: |

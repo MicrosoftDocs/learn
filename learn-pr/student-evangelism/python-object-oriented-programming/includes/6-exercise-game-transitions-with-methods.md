@@ -16,19 +16,29 @@ This time you'll focus on the column `Behavior` and populate the column with met
 
 Here's your code so far. Let's extend it in the following steps:
 
-```python
-class Participant:
-  def __init__(self):
-    self.points = 0
-    self.choice = ""
+1. You should have a file `rock-paper-scissor.py`, if not, then take the following steps:
+1. Create the file `rock-paper-scissor` and open the editor:
 
-class GameRound:
+   ```bash
+   touch rock-paper-scissor.py
+   code .
+   ```
 
-class Game:
-  def __init__(self):
-    self.endGame = False
-    self.participant = Participant()
-    self.secondParticipant = Participant()
+   and add below code:
+
+   ```python
+   class Participant:
+     def __init__(self):
+        self.points = 0
+        self.choice = ""
+    
+   class GameRound:
+    
+   class Game:
+      def __init__(self):
+      self.endGame = False
+      self.participant = Participant()
+      self.secondParticipant = Participant()
    ```
 
 ### Start a game
@@ -36,7 +46,7 @@ class Game:
 The first part of the game involves setting it up, which means to instantiate the game itself and take the game to a point where it's waiting for the participants to act.
 
 1. Replace the content of `rock-paper-scissors.py` with this code:
-    
+
     ```python
     class Participant:
       def __init__(self, name):
@@ -74,7 +84,7 @@ The first part of the game involves setting it up, which means to instantiate th
     ```
 
     You've added the methods from your table to each object. The changes you've made can be expressed by a table so that it's easier to see what behavior led to what method being added.
-    
+
     |Behavior              |Method              | Actor       |
     |----------------------|--------------------|-------------|
     |Chooses symbol        | choose()           | Participant |
@@ -82,7 +92,7 @@ The first part of the game involves setting it up, which means to instantiate th
     |Awards points         | awardPoints()      | GameRound   |  
     |Check continue answer | checkEndCondition()| Game        |
     |Game end credit       | determineWinner()  | Game        |
-    
+
     Most of the behavior in the preceding table corresponds to methods with similar names. The exception is _Game end credit_, which becomes `determineWinner()`. The reason is that as part of ending a game, it's nice if you can check who won and print out that information. It's up to you if you want to name this method something else.
 
 1. Run the code by invoking `python3`:

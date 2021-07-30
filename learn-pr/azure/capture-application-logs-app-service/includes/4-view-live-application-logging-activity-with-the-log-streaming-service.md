@@ -12,9 +12,9 @@ The log streaming service adds a redirect from the file system logs, so you'll s
 
 ### Typical scenarios for using live logging
 
-Live logging is a good tool for initial debugging; log messages show in real time to give you quick feedback on code or server issues. You can then make a change, redeploy your app, and instantly see the results.
+Live logging is a good tool for initial debugging. Log messages show in real time to give you quick feedback on code or server issues. You can then make a change, redeploy your app, and instantly see the results.
 
-The live log stream connects to only one app instance, so is not useful if you have a multi-instance app. Live logging is also of limited use as you scale up your apps; in these scenarios, it is better to ensure that messages are saved to log files that can be opened and studied offline.
+The live log stream connects to only one app instance, so is not useful if you have a multi-instance app. Live logging is also of limited use as you scale up your apps. In these scenarios, it is better to ensure that messages are saved to log files that can be opened and studied offline.
 
 ## How to use live log streaming
 

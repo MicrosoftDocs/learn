@@ -87,7 +87,7 @@ You're given some code that parses an address from a string. Your task should be
    "test": "jest"
    ```
 
-1. Run the tests by typing this command in the terminal:
+1. Run the tests by entering this command in the terminal:
 
    ```bash
    npm run test

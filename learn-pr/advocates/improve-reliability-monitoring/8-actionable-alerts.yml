@@ -23,7 +23,7 @@ quiz:
       explanation: 'Complex alerts are harder to think about and triage, especially when you are woken up in the middle of the night by them.'
     - content: 'include information about where the alert is coming from'
       isCorrect: true
-      explanation: 'Correct, this makes it much easier to determine where to look for more information.'
+      explanation: 'Correct. This makes it much easier to determine where to look for more information.'
     - content: 'serve as a record of an event'
       isCorrect: false
       explanation: 'Log entries are much better at serving as a record of an event, an alert should not be used for this purpose.'
@@ -41,4 +41,4 @@ quiz:
       explanation: 'This text leaves out the expectation that was violated.'
     - content: 'the database server has been reporting an error rate of 20% (expected rate: < 1%) for the last 18 minutes'
       isCorrect: true
-      explanation: 'Correct, this text includes important details that can help us triage the situation better.'
+      explanation: 'Correct. This text includes important details that can help us triage the situation better.'

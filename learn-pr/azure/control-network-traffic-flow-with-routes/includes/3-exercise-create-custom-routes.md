@@ -4,7 +4,7 @@ In the following exercise, you'll use a network virtual appliance (NVA) to help 
 
 You'll configure the network so that all traffic flowing from a public subnet to a private subnet will be routed through the NVA. To make this flow happen, you'll create a custom route for the public subnet to route this traffic to a perimeter-network subnet. Later, you'll deploy an NVA to the perimeter-network subnet.
 
-![Virtual network, subnets, and route table](../media/3-virtual-network-subnets-route-table.svg)
+![Virtual network, subnets, and route table.](../media/3-virtual-network-subnets-route-table.svg)
 
 In this exercise, you'll create the route table, custom route, and subnets. You'll then associate the route table with a subnet.
 

@@ -18,7 +18,7 @@ As is true with ASP.NET Core MVC, EF Core adopts a *convention over configuratio
 
     The newly created files will ultimately support generation of the following database structure:
 
-    ![database diagram](../media/4-design-domain-model/database-diagram.png)
+    ![database diagram.](../media/4-design-domain-model/database-diagram.png)
 
     The following one-to-many relationships will exist:
 

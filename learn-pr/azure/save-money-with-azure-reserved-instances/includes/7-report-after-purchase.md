@@ -19,7 +19,7 @@ Cost analysis shows charges as they appear on your bill. The charges are shown a
 
 1. Change the view from **Actual cost** to **Amortized cost**.
 
-    ![Example showing Amortized cost selection](../media/7-change-amortized-cost.png)
+    ![Example showing Amortized cost selection.](../media/7-change-amortized-cost.png)
 
 1. Apply the following filters:
 
@@ -28,7 +28,7 @@ Cost analysis shows charges as they appear on your bill. The charges are shown a
 
 1. Select filters and views as follows. The view shows the monetary value of the reservation consumption by a subscription, resource group, or resource. You can use the view to charge back for reservation use.
 
-    [![Example showing cost analysis filters](../media/7-set-cost-analysis-filters.png)](../media/7-set-cost-analysis-filters.png#lightbox)
+    [![Example showing cost analysis filters.](../media/7-set-cost-analysis-filters.png)](../media/7-set-cost-analysis-filters.png#lightbox)
 
 ## Create a chargeback report from usage details data
 
@@ -39,7 +39,7 @@ You can create a chargeback report to charge internal cost centers using amortiz
 - Tags
 - Subscription
 
-To view amortized data, navigate to **Cost Management + Billing** > **Exports**, and select the **Amortized Data** in the dimension. You can also get the amortized data [using APIs](https://docs.microsoft.com/azure/cost-management-billing/reservations/understand-reserved-instance-usage-ea#get-azure-consumption-and-reservation-usage-data-using-api).
+To view amortized data, navigate to **Cost Management + Billing** > **Exports**, and select the **Amortized Data** in the dimension. You can also get the amortized data [using APIs](/azure/cost-management-billing/reservations/understand-reserved-instance-usage-ea#get-azure-consumption-and-reservation-usage-data-using-api).
 
 ### Chargeback with Power BI
 
@@ -62,7 +62,7 @@ The unused reservation view in cost analysis shows the monetary value of underut
     - Set **Granularity** to **Monthly**.
     - Set the chart type to **Table**.
 
-    [![Example showing selections in cost analysis to view unused reservations](../media/7-unused-reservation-selections.png)](../media/7-unused-reservation-selections.png#lightbox)
+    [![Example showing selections in cost analysis to view unused reservations.](../media/7-unused-reservation-selections.png)](../media/7-unused-reservation-selections.png#lightbox)
 
 The same unused reservation information is in usage details data. To view it, get amortized data and then apply a filter on ChargeType = **unusedreservation** to get the reservation waste.
 

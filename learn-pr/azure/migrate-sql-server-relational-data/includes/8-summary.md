@@ -22,7 +22,7 @@ Be sure to delete the resources that you created during this lesson to avoid any
 
 To learn more about Azure SQL Database and Azure Database Migration Service, see the following articles:
 
-- [What is Azure Database Migration Service?](https://docs.microsoft.com/azure/dms/dms-overview)
-- [SQL Server database migration to Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-single-database-migrate)
-- [What is the Azure SQL Database service?](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)
+- [What is Azure Database Migration Service?](/azure/dms/dms-overview)
+- [SQL Server database migration to Azure SQL Database](/azure/sql-database/sql-database-single-database-migrate)
+- [What is the Azure SQL Database service?](/azure/sql-database/sql-database-technical-overview)
 - [Azure Database Migration Guide](https://datamigration.microsoft.com/)

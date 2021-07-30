@@ -30,7 +30,7 @@ prerequisites: |
   - Familiarity with running commands in PowerShell
 units:
   - learn.powershell.connect-commands.1-introduction
-  - learn.powershell.connect-commands.2-pipeline
+  - learn.powershell.connect-commands.2-select-data
   - learn.powershell.connect-commands.3-exercise-pipeline
   - learn.powershell.connect-commands.4-formatting
   - learn.powershell.connect-commands.5-exercise-formatting

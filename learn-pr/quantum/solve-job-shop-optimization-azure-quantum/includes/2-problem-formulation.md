@@ -8,7 +8,7 @@ To illustrate the scenario, we are going to return to our spaceship, where a dis
 
 Back onboard the spaceship, warning lights are flashing and alarms are blaring. You have been hit by the electromagnetic fallout from a coronal mass ejection event of a nearby star and are experiencing multiple failures across different critical systems!
 
-![Image showing a failure in the life support system](../media/life-support-room-alert.png) | ![Image showing the cockpit, where the navigation system needs recalibration](../media/cockpit-room-alert.png) | ![Image showing a blown transformer in the reactor room](../media/reactor-room-alert.png)
+![Image showing a failure in the life support system.](../media/life-support-room-alert.png) | ![Image showing the cockpit, where the navigation system needs recalibration](../media/cockpit-room-alert.png) | ![Image showing a blown transformer in the reactor room](../media/reactor-room-alert.png)
 
 Fortunately, you have the tools, team, and expertise on board to fix all the issues, however it's important that you follow procedure to ensure the repairs are successful. Below is the list of repair tasks that you must complete:
 
@@ -58,14 +58,10 @@ from typing import List
 from azure.quantum.optimization import Term
 from azure.quantum import Workspace
 
-workspace = Workspace (
-    subscription_id = "",  # Add your subscription_id
-    resource_group = "",   # Add your resource_group
-    name = "",             # Add your workspace name
-    location = ""          # Add your workspace location (for example, "westus")
-    )
-
-workspace.login()
+workspace = Workspace(
+    resource_id = "", # add the Resource ID of the Azure Quantum workspace you created
+    location = ""     # add the location of your Azure Quantum workspace (e.g. "westus")
+)
 ```
 
 ## Problem formulation

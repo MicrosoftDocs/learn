@@ -10,7 +10,7 @@ From your web browser, navigate to [https://portal.azure.com](https://portal.azu
 
 You can prepare Azure cloud resources with the Azure CLI, the Azure portal (a web interface), or deployment templates. For this module, you'll use an Azure deployment template. Select **Deploy to Azure** to deploy a Device Provisioning Service (**DPS**) and a linked Azure IoT Hub.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2FAzure-Sphere-Developer-Learning-Path%2Fmaster%2Fdocs%2Fdocs_vs_code_iot_hub%2FLab_2_Send_Telemetry_to_Azure_IoT_Hub%2Fsetup%2Fazuredeploy.json?azure-portal=true)
+[![Deploy to Azure.](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2FAzure-Sphere-Developer-Learning-Path%2Fmaster%2Fdocs%2Fdocs_vs_code_iot_hub%2FLab_2_Send_Telemetry_to_Azure_IoT_Hub%2Fsetup%2Fazuredeploy.json?azure-portal=true)
 
 1. Select or create a new resource group.
 
@@ -119,7 +119,7 @@ From the Azure portal:
 
 ## Step 5: Configure Azure IoT Explorer
 
-This learning module uses [Azure IoT Explorer](https://docs.microsoft.com/azure/iot-pnp/howto-use-iot-explorer?azure-portal=true) to work with Azure IoT Hub devices. You should have already installed Azure IoT Explorer in the previous exercise.
+This learning module uses [Azure IoT Explorer](/azure/iot-pnp/howto-use-iot-explorer?azure-portal=true) to work with Azure IoT Hub devices. You should have already installed Azure IoT Explorer in the previous exercise.
 
 You need the connection string for your IoT Hub.
 

@@ -19,7 +19,7 @@ The Azure portal gives you a graphical way to view and monitor storage performan
 
 You can monitor the performance of a storage account using the **Overview** tab on the storage account page. Scroll down to the monitoring section and choose what data to show data. The image below shows an example that includes the ingress, egress, average latency, and request breakdown for blob storage in a storage account:
 
-![Screenshot of the Metrics page for a storage account in the Azure portal](../media/2-block-blob-metrics.png)
+![Screenshot of the Metrics page for a storage account in the Azure portal.](../media/2-block-blob-metrics.png)
 
 ### Azure Storage Explorer (desktop version)
 
@@ -27,7 +27,7 @@ The desktop version of [Azure Storage Explorer](https://azure.microsoft.com/feat
 
 ### AzCopy
 
-You can download the storage account logs to your local computer by using the [AzCopy](https://aka.ms/AzCopy) utility, or the desktop version of [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/). You can then analyze this data by using analysis tools on your desktop.
+You can download the storage account logs to your local computer by using the [AzCopy](/azure/storage/common/storage-use-azcopy-v10) utility, or the desktop version of [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/). You can then analyze this data by using analysis tools on your desktop.
 
 Unlike Azure Storage Explorer, you can't use AzCopy to download data from storage tables. As a result, you can't use this tool to retrieve the data from the **\$Metrics** tables.
 

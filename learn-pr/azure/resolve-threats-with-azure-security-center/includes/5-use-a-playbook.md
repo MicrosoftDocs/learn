@@ -2,7 +2,7 @@ Often, the response for a specific security threat is well-known, and if perform
 
 Azure Security Center provides a feature called _Workflow Automation_ to execute these sorts of responses when specific security alerts are detected.
 
-## What is Workflow automation in Azure Security Center?
+## What is Workflow Automation in Azure Security Center?
 
 A workflow automation is a collection of grouped procedures that the security response team can execute with a single click in Security Center when a specific alert is detected. These actions are _not_ automatically triggered - they require human interaction to run.
 
@@ -16,4 +16,4 @@ Some of the pre-built actions are:
 
 However, because Logic Apps can integrate Azure Functions and webhooks, the possible actions are endless. Imagine a case where a client is misusing your service, and it's generating an alert in Security Center. We can create a custom Azure Function to take the source IP address from the alert and create a rule in our firewall to block all inbound traffic from that address. A visual representation of this might look something like this:
 
-![Diagram showing an architecture using an Azure Function in a workflow automation](../media/5-azure-functions-playbook.png)
+![Diagram showing an architecture using an Azure Function in a workflow automation.](../media/5-azure-functions-playbook.png)

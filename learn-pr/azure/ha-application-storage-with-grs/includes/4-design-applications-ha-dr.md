@@ -6,7 +6,7 @@ In this unit, you look at how to design and configure an application that can ha
 
 When you configure a storage account GRS or RA-GRS, the client writes data to the primary endpoint or region. The data is then automatically replicated across to the secondary region, as shown in the following image:
 
-![The replication workflow](../media/4-primary-secondary-replication.png)
+![The replication workflow.](../media/4-primary-secondary-replication.png)
 
 If the primary region that hosts your geo-redundant storage becomes unavailable, you can fail over to the secondary region.
 
@@ -14,7 +14,7 @@ When failover occurs, the secondary region becomes your new primary region, and 
 
 A failure in the primary region is shown in the following image:
 
-![The replication failover process](../media/4-primary-account-failover.png)
+![The replication failover process.](../media/4-primary-account-failover.png)
 
 > [!IMPORTANT]
 > Failover is automatic and controlled by Microsoft. A manual failover of an Azure storage account isn't possible in a majority of the Azure regions. However, Microsoft has made a new feature available in WestUS2 and CentralUS regions, with which you can manually failover the storage account by using the following command:
@@ -47,7 +47,7 @@ When you design your application, consider the following factors:
     | T1 |  | Record is replicated | T1 | Last Sync Time field is updated |
     | T2 | Consultant updates patient record | |T1 | Record is updated in primary region but not replicated |
     | T3 | Read record from secondary region | | | Data from the secondary region is stale, because updates haven't yet been replicated from the primary region |
-    | T4 |  | Record replicated | T1 | Data at secondary region is now updated; Last Sync Time field is updated |
+    | T4 |  | Record replicated | T4 | Data at secondary region is now updated; Last Sync Time field is updated |
 
 ## Best practices for cloud-based applications with RA-GRS
 
@@ -95,4 +95,4 @@ Use the Circuit Breaker pattern to prevent an application from trying connection
 
 When you implement the Circuit Breaker pattern, set the *LocationMode* of read requests appropriately. Most of the time, you should set this mode to *PrimaryThenSecondary*. If the read from the primary location times out, the secondary location is used. However, this process can slow down an application if it's done repeatedly. After the circuit breaker has detected that the primary location is unavailable, it should switch the mode to *SecondaryOnly*. This action ensures that read operations don't wait for a timeout from the primary location before trying the secondary location. When the circuit breaker estimates that the primary location has been repaired, it can revert back to the *PrimaryThenSecondary* mode.
 
-For more information, see [Circuit Breaker pattern](https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker).
+For more information, see [Circuit Breaker pattern](/azure/architecture/patterns/circuit-breaker).

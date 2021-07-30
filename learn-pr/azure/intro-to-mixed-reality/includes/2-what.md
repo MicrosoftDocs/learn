@@ -18,4 +18,4 @@ The intersection of computer processing, human input, and environmental understa
 
 :::image type="content" source="../media/venn-diagram.png" alt-text="Venn diagram with circles for human, computer, and environment interaction with mixed reality at the intersection.":::
 
-As a historical footnote, the term *mixed realty* comes from a 1994 paper titled *A Taxonomy of Mixed Reality Visual Displays*, written by Paul Milgram and Fumio Kishino. Although that paper wasn't describing the version of mixed reality that we have today, it did explore the concept of a virtuality continuum and the categorization of taxonomy applied to displays. You can find a link to the paper at the end of the module.
+As a historical footnote, the term *mixed reality* comes from a 1994 paper titled *A Taxonomy of Mixed Reality Visual Displays*, written by Paul Milgram and Fumio Kishino. Although that paper wasn't describing the version of mixed reality that we have today, it did explore the concept of a virtuality continuum and the categorization of taxonomy applied to displays. You can find a link to the paper at the end of the module.

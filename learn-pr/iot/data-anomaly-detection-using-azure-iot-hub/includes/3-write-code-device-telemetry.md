@@ -12,23 +12,23 @@ The code sample we'll write has a conveyor belt running at a range of speeds (st
 
 The natural vibration will vary from a minimum to a maximum level, similar to the following diagram.
 
-[![Graph showing the minimum and maximum natural vibration sine waves](../media/vibration-minmax-basic.png)](../media/vibration-minmax-basic.png#lightbox)
+[![Graph showing the minimum and maximum natural vibration sine waves.](../media/vibration-minmax-basic.png)](../media/vibration-minmax-basic.png#lightbox)
 
 Forced cyclic vibration will also vary from a minimum to a maximum level.
 
-[![Graph showing the minimum and maximum forced vibration sine waves](../media/vibration-minmax-forced.png)](../media/vibration-minmax-forced.png#lightbox)
+[![Graph showing the minimum and maximum forced vibration sine waves.](../media/vibration-minmax-forced.png)](../media/vibration-minmax-forced.png#lightbox)
 
 When forced vibration is added to natural vibration, the resulting vibration wave gets more complicated.
 
-[![Graph showing the addition of forced vibration to natural vibration sine waves](../media/vibration-minmax-forced-basic.png)](../media/vibration-minmax-forced-basic.png#lightbox)
+[![Graph showing the addition of forced vibration to natural vibration sine waves.](../media/vibration-minmax-forced-basic.png)](../media/vibration-minmax-forced-basic.png#lightbox)
 
 Increasing vibration starts almost undetectable.
 
-[![Graph showing the increasing vibration sine waves](../media/vibration-minmax-increasing.png)](../media/vibration-minmax-increasing.png#lightbox)
+[![Graph showing the increasing vibration sine waves.](../media/vibration-minmax-increasing.png)](../media/vibration-minmax-increasing.png#lightbox)
 
 When we add all three vibrations, notice how the extreme highs and lows slowly increase.
 
-[![Graph showing the addition of natural, forced, and increasing sine waves](../media/vibration-basic-forced-increasing.png)](../media/vibration-basic-forced-increasing.png#lightbox)
+[![Graph showing the addition of natural, forced, and increasing sine waves.](../media/vibration-basic-forced-increasing.png)](../media/vibration-basic-forced-increasing.png#lightbox)
 
 We assume that our conveyor belt has just one sensor, and it also pumps out some other data (packages delivered, ambient temperature, and similar metrics). These extra values are just to give us something to archive!
 

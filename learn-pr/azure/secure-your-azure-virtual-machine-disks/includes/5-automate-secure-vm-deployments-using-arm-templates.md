@@ -8,7 +8,7 @@ Resource Manager templates are JSON files used to define a set of resources to d
 
 To automate all sorts of administrative tasks, there are [example templates available in docs](https://azure.microsoft.com/resources/templates). In fact, you could have used one of these templates to encrypt your VM that you just did manually!
 
-![Screenshot showing the Azure templates](../media/5-browse-templates.png)
+![Screenshot showing the Azure templates.](../media/5-browse-templates.png)
 
 ## Use GitHub templates
 
@@ -18,7 +18,7 @@ The actual template source is stored in GitHub. You can browse to a template in 
 
 When the template is deployed, Azure will display a list of required input fields.
 
-![Screenshot showing template in Azure portal](../media/5-fill-in-template.png)
+![Screenshot showing template in Azure portal.](../media/5-fill-in-template.png)
 
 You can then execute the template to create, modify, or remove resources.
 
@@ -28,7 +28,7 @@ If you already know the template you want to use, or you have saved templates in
 
 ### Run templates from command line
 
-Given a URL to a template, you can execute it with Azure PowerShell. For example, you could run the disk encryption template with the following PowerShell command.
+Given a URL to a template, you can execute it with Azure PowerShell. For example, you could run the disk encryption template with the following PowerShell command:
 
 ```powershell
 New-AzResourceGroupDeployment `
@@ -37,7 +37,7 @@ New-AzResourceGroupDeployment `
     -TemplateUri https://raw.githubusercontent.com/azure/azure-quickstart-templates/master/201-encrypt-running-windows-vm-without-aad/azuredeploy.json
 ```
 
-Or, if you prefer the Azure CLI, with the `group deployment create` command.
+or, if you prefer the Azure CLI, run the `az deployment group create` command.
 
 ```azurecli
 az deployment group create --resource-group <my-resource-group> --name <my-deployment-name> \ 

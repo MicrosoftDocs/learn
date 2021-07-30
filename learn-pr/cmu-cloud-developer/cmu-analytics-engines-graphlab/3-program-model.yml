@@ -5,8 +5,8 @@ metadata:
   title: Programming model
   description: Programming model
   ms.date: 03/20/2020
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
@@ -19,8 +19,9 @@ quiz:
 # Quiz uses image "quiz-units-2-and-4-vertices-graph.png"
 # Original course uses text box for user to enter answer. Using sample choices for now.
 # LaTeX dollar sign syntax not supported in 'explanation' property. Using HTML 'sub' subscript syntax.
-  - content: "For the following graph, under the full consistency model, what's the maximum number of vertices that can read or write data in parallel at any given time? <br><br>
-             <img src=./media/quiz-units-2-and-4-vertices-graph.png></img>"
+  - content: |
+      For the following graph, under the full consistency model, what's the maximum number of vertices that can read or write data in parallel at any given time? <br><br>
+      <img alt="Diagram of graph showing vertex V1 connected to V2, V3, and V6; then vertex V2 connected to V4 and V3 connected to V4 and V5." src="./media/quiz-units-2-and-4-vertices-graph.png" />
     choices:
     - content: "5"
       isCorrect: false

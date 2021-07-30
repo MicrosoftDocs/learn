@@ -21,7 +21,7 @@ You'll configure the following settings for a basic virtual network:
     
     > [!NOTE]
     > Subnet names must begin with a letter or number and end with a letter, number, or underscore. They may contain only letters, numbers, underscores, periods, or hyphens.
- -  **DDoS protection** You can select either Basic or Standard DDoS protection. Standard DDoS protection is a premium service. For more information on Standard DDoS protection, see [Azure DDoS protection Standard overview](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview?azure-portal=true).
+ -  **DDoS protection** You can select either Basic or Standard DDoS protection. Standard DDoS protection is a premium service. For more information on Standard DDoS protection, see [Azure DDoS protection Standard overview](/azure/virtual-network/ddos-protection-overview?azure-portal=true).
  -  **Service endpoints** Here, you enable service endpoints. Then you select from the list which Azure service endpoints you want to enable. Options include Azure Cosmos DB, Azure Service Bus, Azure Key Vault, and so on.
 
 After you've configured these settings, select **Create**.

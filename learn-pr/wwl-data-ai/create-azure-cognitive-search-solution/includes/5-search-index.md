@@ -19,8 +19,8 @@ Query processing consists of four stages:
 
 1. *Query parsing*. The search expression is evaluated and reconstructed as a tree of appropriate subqueries. Subqueries might include *term queries* (finding specific individual words in the search expression - for example *hotel*), *phrase queries* (finding multi-term phrases specified in quotation marks in the search expression - for example, *"free parking"*), and *prefix queries* (finding terms with a specified prefix - for example *air\**, which would match *aircon*, *air-conditioning*, and *airport*).
 2. *Lexical analysis* - The query terms are analyzed and refined based on linguistic rules. For example, text is converted to lower case, non-essential *stopwords* (such as "the", "a", "is", and so on) are removed, words are converted to their *root* form (for example, "comfortable" may be simplified to "comfort"), and composite words are split into their constituent terms.
-3. *Document retrieval* - The query terns are matched against the indexed terms, and the set of matching documents is identified.
+3. *Document retrieval* - The query terms are matched against the indexed terms, and the set of matching documents is identified.
 4. *Scoring* - A relevance score is assigned to each result based on a term frequency/inverse document frequency (TF/IDF) calculation.
 
 > [!NOTE]
-> For more information about querying an index, and details about **simple** and **full** syntax, see [Query types and composition in Azure Cognitive Search](https://docs.microsoft.com/azure/search/search-query-overview) in the Azure Cognitive Search documentation.
+> For more information about querying an index, and details about **simple** and **full** syntax, see [Query types and composition in Azure Cognitive Search](/azure/search/search-query-overview) in the Azure Cognitive Search documentation.

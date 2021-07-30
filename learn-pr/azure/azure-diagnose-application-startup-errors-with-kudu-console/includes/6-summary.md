@@ -4,8 +4,8 @@ In this module, you learned about the different application startup errors. As a
 
 ## Learn more
 
-- [Troubleshoot ASP.NET Core on Azure App Service](https://docs.microsoft.com/aspnet/core/host-and-deploy/azure-apps/troubleshoot?view=aspnetcore-2.2)
+- [Troubleshoot ASP.NET Core on Azure App Service](/aspnet/core/host-and-deploy/azure-apps/troubleshoot?view=aspnetcore-2.2)
 - [Project Kudu Console](https://github.com/projectkudu/kudu/wiki/Kudu-console)
 - [Using KUDU with Microsoft Azure Web Apps](/archive/blogs/benjaminperkins/deploy-to-an-azure-app-service-using-kudu-and-a-zip-file)
 - [Ace for in-browser editing](https://github.com/ajaxorg/ace)
-- [Common errors reference](https://docs.microsoft.com/aspnet/core/host-and-deploy/azure-iis-errors-reference?view=aspnetcore-2.2)
+- [Common errors reference](/aspnet/core/host-and-deploy/azure-iis-errors-reference?view=aspnetcore-2.2)

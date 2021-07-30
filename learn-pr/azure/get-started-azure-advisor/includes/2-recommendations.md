@@ -23,7 +23,7 @@ The Advisor dashboard gives you recommendations for each of the five categories 
 | Category | Description |
 |---------|---------|
 | **Cost** | Helps optimize and reduce your overall Azure spend by identifying idle and underutilized resources. |
-| **Security** | Integrates with [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-recommendations?azure-portal=true) to identify potential vulnerabilities that can lead to security breaches. |
+| **Security** | Integrates with [Azure Security Center](/azure/security-center/security-center-recommendations?azure-portal=true) to identify potential vulnerabilities that can lead to security breaches. |
 | **Reliability** | Helps to ensure and improve the continuity of your business-critical applications. |
 | **Operational excellence** | Makes recommendations for process and workflow efficiency, resource manageability, and deployment best practices. |
 | **Performance** | Helps improve the speed and responsiveness of your business-critical applications. |
@@ -72,7 +72,7 @@ Advisor gives you several recommendations for each of these categories. Here are
 - FTPS should be required in your web app.
 - Container images should be deployed from trusted registries only.
 
-Advisor integrates with [Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-recommendations?azure-portal=true) to provide security recommendations on the Advisor dashboard Security tab and with Azure Cost Management and Billing to offer cost recommendations on the Advisor dashboard Cost tab.
+Advisor integrates with [Azure Security Center](/azure/security-center/security-center-recommendations?azure-portal=true) to provide security recommendations on the Advisor dashboard Security tab and with Azure Cost Management and Billing to offer cost recommendations on the Advisor dashboard Cost tab.
 
 ## Remediating issues found by Advisor recommendations
 
@@ -97,7 +97,7 @@ By making a selection, you open a new page that shows  details about the recomme
 
 In addition, on the left side of the page under **Recommendations**, you can select a different category to quickly open a page where you can see the Advisor recommendations for that  selection.
 
-:::image type="content" source="../media/azure-advisor-cost-recommendations.png" alt-text="Screenshot of Advisor Performance window with recommendation details" lightbox="../media/azure-advisor-cost-recommendations.png":::
+:::image type="content" source="../media/azure-advisor-cost-recommendations.png" alt-text="Screenshot of Advisor Performance window with recommendation details." lightbox="../media/azure-advisor-cost-recommendations.png":::
 
 After you select a linked description for a recommendation, a window opens showing some suggestions for actions you can take. At this point in the flow, you have several options for how you want to handle the recommendation.
 

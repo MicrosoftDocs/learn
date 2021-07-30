@@ -1,5 +1,3 @@
-
-
 You’re the solution architect for a manufacturing company that currently hosts its IT operations through a managed service provider. The company has recently decided to migrate their on-premises operations to Azure and has completed the planning and assessment of their on-premises environment, in which a mix of virtualized Windows and Linux workloads currently runs.
 
 As a result of the planning phase, you’ve decided to use Azure Migrate to migrate your on-premises workloads to Azure. You now plan to run a pilot to migrate an initial subset of the workloads in your environment. 
@@ -12,7 +10,7 @@ In this module, you’ll learn how to use Azure Migrate to:
 - Monitor and test the migration
 - Migrate VMs to Azure
 
-## Learning objectives
+## Learning objectives 
 
 In this module, you’ll learn how to:
 

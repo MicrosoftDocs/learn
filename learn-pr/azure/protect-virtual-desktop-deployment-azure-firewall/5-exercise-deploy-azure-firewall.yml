@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.protect-virtual-desktop-deployment-azure-firewall.exercise-deploy-azure-firewall
+title: Exercise - Deploy Azure Firewall
+metadata:
+  unitType: exercise
+  title: Exercise - Deploy Azure Firewall
+  description: Exercise - Deploy Azure Firewall
+  ms.date: 07/05/2021
+  author: cwatson-cat 
+  ms.author: cwatson 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise-deploy-azure-firewall.md)]

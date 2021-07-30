@@ -77,6 +77,11 @@ Modify *Program.qs* like this:
 
 The `let` directive declares variables that don't change during the computation. For learning purposes, here we define the maximum value as 50.
 
+> [!NOTE]
+> This code snippet does not currently run on any available Azure Quantum hardware targets, as the callable `ResultArrayAsInt` requires a QPU with [full computation profile](/azure/quantum/concepts-targets-in-azure-quantum#quantum-processing-units-qpu-different-profiles).
+>
+> Learn module code that does not feature such a notice is executable on current hardware targets.
+
 ## Run the program
 
 Let's try out our new random number generator!

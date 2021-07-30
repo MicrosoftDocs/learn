@@ -1,4 +1,4 @@
-Your first task is to open the Unity project that you downloaded from [GitHub](https://github.com/MicrosoftDocs/mslearn-mixed-reality-and-azure-digital-twins-in-unity/). You then have 2 options to start the exercises in this module:
+Your first task is to open the Unity project that you downloaded from [GitHub](https://aka.ms/mr-adt-mslearn). You then have 2 options to start the exercises in this module:
 
 1. If you're starting this module without having completed the Build a 3D Scene for Mixed Reality in Unity module or wish to abandon any previous work that you undertook creating a Scene.
     - In the Project Panel, open the **Assets > Scenes > Supporting Scenes > ModuleStartScenes** folder
@@ -12,7 +12,7 @@ Your first task is to open the Unity project that you downloaded from [GitHub](h
     - Browse to the folder where you saved your Scene.  Typically, this is the **Assets > Scenes** folder in the root project folder structure.  If you followed the guidance in the previous module, your Scene will be called **MainScene**.
 
     > [!NOTE]
-    > The **Assets > Scenes > CompletedScene** contains configuration, scripts, and relevant pointers to the final build.  If you want to use it, you'll need to configure the Scene parameters (viz., Maps SDK and Azure Services) from steps found in the *Build a 3D Scene for Mixed Reality in Unity* and *Connect IoT data to HoloLens 2 with Azure Digital Twin and Unity* modules.
+    > The **Assets > Scenes > CompletedScene** contains configuration, scripts, and relevant pointers to the final build.  If you want to use it, you'll need to configure the Scene parameters (viz., Maps SDK and Azure Services) from steps found in the *Build a 3D Scene for Mixed Reality in Unity* and *Connect IoT data to Mixed Reality with Azure Digital Twin and Unity* modules.
 
 Placing your Prefab wind turbine assets in the Scene enables interaction with the assets.
 
@@ -56,7 +56,7 @@ Gizmos are a graphic overlay associated with a GameObject in a Scene and are dis
 ## Place and configure prefab wind turbine on Dynamic Terrain
 
 1. Create Bing Maps Account 
-    - If you haven’t already, you need to [create a Bing Maps account](/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account).  You will use that account to access the Microsoft Bing Maps Dev Center to generate a **Developer Key**, which is a code used to authenticate with the map service. The app you build for the HoloLens will connect to that map service using your Bing Maps account.  
+    - If you haven’t already, you need to [create a Bing Maps account](/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account).  You will use that account to access the Microsoft Bing Maps Dev Center to generate a **Developer Key**, which is a code used to authenticate with the map service. The app you build for the Mixed Reality will connect to that map service using your Bing Maps account.  
 2. When you create a Developer Key, be sure to select **Basic** as the key type and **Windows Application** as the **Application Type**.
 
     :::image type="content" source="../media/create-developer-key.png" alt-text="Screenshot of the Bing maps dev center portal with my keys page selected showing create key property fields.":::

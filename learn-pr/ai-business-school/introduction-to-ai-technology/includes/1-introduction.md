@@ -4,7 +4,7 @@ Introduction to AI Technology is a starting point for business decision-makers w
 
 * Why is AI booming now?
 * What is AI and its capabilities?
-* How to use prebuilt AI to build intelligent applications
-* How to identity what machine learning techniques apply to your business problem
+* How to use prebuilt AI to build intelligent applications.
+* How to identity what machine learning techniques apply to your business problem.
 
 Next, let’s examine the following question: “Why AI now?”

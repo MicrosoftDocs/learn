@@ -6,4 +6,4 @@ You learned what programming languages are and how they communicate to the compu
 
 ## Learn more
 
-For more information, see [What is PowerShell?](https://docs.microsoft.com/powershell/scripting/overview).
+For more information, see [What is PowerShell?](/powershell/scripting/overview).

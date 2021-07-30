@@ -8,27 +8,27 @@ It's a good idea to review the platform-specific documentation to make sure you'
 
 For *iOS apps*, take a look at:
 
-- [Xamarin.iOS app distribution overview](https://docs.microsoft.com/xamarin/ios/deploy-test/app-distribution/)
+- [Xamarin.iOS app distribution overview](/xamarin/ios/deploy-test/app-distribution/)
 
     Get an overview of distribution options and links to more detailed documents on the distribution process.
 
-    For example, you'll find links to information about [App Store distribution](https://docs.microsoft.com/xamarin/ios/deploy-test/app-distribution/app-store-distribution/index), [configuring an App in iTunes Connect](https://docs.microsoft.com/xamarin/ios/deploy-test/app-distribution/app-store-distribution/itunesconnect), and [troubleshooting](https://docs.microsoft.com/xamarin/ios/deploy-test/troubleshooting).
+    For example, you'll find links to information about [App Store distribution](/xamarin/ios/deploy-test/app-distribution/app-store-distribution/index), [configuring an App in iTunes Connect](/xamarin/ios/deploy-test/app-distribution/app-store-distribution/itunesconnect), and [troubleshooting](/xamarin/ios/deploy-test/troubleshooting).
 
 For *Android applications*, take a look at:
 
-- [Preparing an application for release](https://docs.microsoft.com/xamarin/android/deploy-test/release-prep/?tabs=windows)
+- [Preparing an application for release](/xamarin/android/deploy-test/release-prep/?tabs=windows)
 
     Get additional platform-specific information about the Android package creation process.
 
-- [Signing the Android application package](https://docs.microsoft.com/xamarin/android/deploy-test/signing/?tabs=windows)
+- [Signing the Android application package](/xamarin/android/deploy-test/signing/?tabs=windows)
 
     Learn about the Android package signing process.
 
-- [Publishing an application](https://docs.microsoft.com/xamarin/android/deploy-test/publishing/)
+- [Publishing an application](/xamarin/android/deploy-test/publishing/)
 
     Get a quick overview of the publishing process and information about several distribution channels.
 
-    For example, you'll learn how to publish to [Google Play](https://docs.microsoft.com/xamarin/android/deploy-test/publishing/publishing-to-google-play/?tabs=windows) and the [Amazon App Store for Android](https://docs.microsoft.com/xamarin/android/deploy-test/publishing/publishing-to-amazon).
+    For example, you'll learn how to publish to [Google Play](/xamarin/android/deploy-test/publishing/publishing-to-google-play/?tabs=windows) and the [Amazon App Store for Android](/xamarin/android/deploy-test/publishing/publishing-to-amazon).
     
  ## Learn more with a Channel 9 video series
 

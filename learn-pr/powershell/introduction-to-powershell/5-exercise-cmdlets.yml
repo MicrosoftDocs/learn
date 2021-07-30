@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.powershell.intro-to-powershell.5-exercise-cmdlets
-title: Exercise - Use the core cmdlets to learn about the available commands
+title: Exercise - locate commands
 metadata:
-  title: Exercise - Use the core cmdlets to learn about the available commands
-  description: Try out the core cmdlets to learn about what commands exist, what they do, and what types they operate on.
+  title: Exercise - locate commands
+  description: Learn how to locate commands by searching for its verb or noun part.
   author: softchris
   ms.author: chnoring
   ms.date: 12/7/2020
@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: true
 interactive: powershell
-durationInMinutes: 5
+durationInMinutes: 2
 content: |
   [!include[](includes/5-exercise-cmdlets.md)]

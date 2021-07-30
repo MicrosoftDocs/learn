@@ -106,7 +106,7 @@ Finally, if you can't identify all your endpoints, disable App Transport Securit
 </dict>
 ```
 
-There are additional options that you can add to be more specific about how you want to opt out. That guidance is outside the scope of this module. The options are documented on the [Xamarin.iOS ATS documentation](https://docs.microsoft.com/xamarin/ios/app-fundamentals/ats).
+There are additional options that you can add to be more specific about how you want to opt out. That guidance is outside the scope of this module. The options are documented on the [Xamarin.iOS ATS documentation](/xamarin/ios/app-fundamentals/ats).
 
 ## What is Android Network Security Configuration?
 
@@ -161,4 +161,4 @@ public static string BaseAddress =
 public static string TodoItemsUrl = $"{BaseAddress}/api/todoitems/";
 ```
 
-To learn more, visit the [connect to a local web service](https://docs.microsoft.com/xamarin/cross-platform/deploy-test/connect-to-local-web-services) documentation.
+To learn more, visit the [connect to a local web service](/xamarin/cross-platform/deploy-test/connect-to-local-web-services) documentation.

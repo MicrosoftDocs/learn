@@ -4,9 +4,9 @@ You've learned how, with conditional access, you can control when and how a user
 
 ## Learn more
 
-- [Plan your conditional access deployment in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access)
-- [Enroll Windows devices in Intune by using the Windows Autopilot](https://docs.microsoft.com/mem/intune/enrollment/enrollment-autopilot)
-- [How SSO to on-premises resources works on Azure AD joined devices](https://docs.microsoft.com/azure/active-directory/devices/azuread-join-sso)
-- [Manage device identities using the Azure portal](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal)
-- [Manage stale devices in Azure AD](https://docs.microsoft.com/azure/active-directory/devices/manage-stale-devices)
-- [Manage the local administrators group on Azure AD joined devices](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin)
+- [Plan your conditional access deployment in Azure Active Directory](/azure/active-directory/conditional-access/plan-conditional-access)
+- [Enroll Windows devices in Intune by using the Windows Autopilot](/mem/intune/enrollment/enrollment-autopilot)
+- [How SSO to on-premises resources works on Azure AD joined devices](/azure/active-directory/devices/azuread-join-sso)
+- [Manage device identities using the Azure portal](/azure/active-directory/devices/device-management-azure-portal)
+- [Manage stale devices in Azure AD](/azure/active-directory/devices/manage-stale-devices)
+- [Manage the local administrators group on Azure AD joined devices](/azure/active-directory/devices/assign-local-admin)

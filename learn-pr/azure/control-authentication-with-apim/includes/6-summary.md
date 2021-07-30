@@ -4,6 +4,6 @@ In this module, you have learned about API management and how you can control au
 
 ## Learn more
 
-- [API Management documentation](https://docs.microsoft.com/azure/api-management/)
-- [Subscriptions in Azure API Management](https://docs.microsoft.com/azure/api-management/api-management-subscriptions)
-- [How to secure back-end services using client certificate authentication in Azure API Management](https://docs.microsoft.com/azure/api-management/api-management-howto-mutual-certificates)
+- [API Management documentation](/azure/api-management/)
+- [Subscriptions in Azure API Management](/azure/api-management/api-management-subscriptions)
+- [How to secure back-end services using client certificate authentication in Azure API Management](/azure/api-management/api-management-howto-mutual-certificates)

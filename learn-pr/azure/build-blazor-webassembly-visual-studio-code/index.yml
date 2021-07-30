@@ -1,23 +1,26 @@
 ### YamlMime:Module
 uid: learn.build-web-app-blazor-webassembly-vscode
 metadata:
-  title: Build a web app with Blazor WebAssembly and Visual Studio Code
-  description: Learn how to set up your development environment and build your first WebAssembly app with Blazor, Visual Studio Code, and C#.
+  title: Build a web app with Blazor
+  description: Learn how to set up your development environment and build your first web app with Blazor, Visual Studio Code, and C#.
   ms.date: 05/02/2020
-  author: adrianstevens
-  ms.author: adsteven
+  author: csharpfritz
+  ms.author: jefritz
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Build a web app with Blazor WebAssembly and Visual Studio Code
-summary: Learn how to set up your development environment and build your first WebAssembly app with Blazor, Visual Studio Code, and C#.
+title: Build a web app with Blazor
+summary: Learn how to set up your development environment and build your first web app with Blazor, Visual Studio Code, and C#.
 abstract: | 
   In this module, you will:
   - Configure your local environment for Blazor development with Visual Studio Code
-  - Create a new Blazor WebAssembly project
+  - Create a new Blazor project
   - Add client-side logic to a Blazor web app
 prerequisites: |
   - Basic knowledge of web app concepts
   - C# .NET experience at a beginner level
+  - Local installations of the [.NET Core SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com/)
+  - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
+  - Experience with using the command line
 iconUrl: /learn/achievements/build-a-web-app-with-blazor-webassembly-and-vs-code.svg
 levels:
 - beginner

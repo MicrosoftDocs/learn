@@ -2,7 +2,7 @@
 uid: learn.language.vue-cli-components
 metadata:
   title: Getting started with Vue CLI and single-file components in Vue.js.
-  description: Learn to create components with Vue CLI.
+  description: Learn to create components with Vue CLI and JavaScript.
   ms.date: 03/01/2021
   author: GeekTrainer
   ms.author: chrhar
@@ -15,7 +15,7 @@ abstract: |
   - Use Vue CLI
   - Create components
 prerequisites: HTML/CSS, Git, npm, JavaScript, and some knowledge of Vue.js
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/vue-cli-components.svg
 ratingEnabled: true
 levels:
 - intermediate
