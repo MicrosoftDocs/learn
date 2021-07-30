@@ -20,10 +20,10 @@ quiz:
         - content: Read a book on design patterns
           isCorrect: false
           explanation: Incorrect. While design patterns are an important part of coding, it's better to use a platform like TopCoder to practice known algorithmic problems.
-        - content: Do a so called code Kata
+        - content: Do a so-called "code kata"
           isCorrect: false
-          explanation: Incorrect. Code katas are definitely a good way to practice common problems. Some of the katas are even algorithmic in nature. The sought after answer here is a platform like TopCoder or Project Euler etc. 
+          explanation: Incorrect. Code katas are definitely a good way to practice common problems. Some of the katas are even algorithmic in nature. A better option is a platform like TopCoder or Project Euler. 
         - content: Practice problems on a platform like TopCoder
           isCorrect: true
-          explanation: Correct. A platform like TopCoder enables you to practice specific algorithmic problems and usually tells you how well you solutions fares additionally.
+          explanation: Correct. A platform like TopCoder enables you to practice specific algorithmic problems and usually analyzes your solution's quality.
         
