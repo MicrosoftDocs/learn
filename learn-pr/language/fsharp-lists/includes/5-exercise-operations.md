@@ -34,7 +34,7 @@ Your task is to take a card hand and calculate its value by using the `sumBy()` 
    ```fsharp
    let sum = List.sumBy(fun card -> cardValue card) hand
    printfn "%i" sum
-   ``` 
+   ```
 
 1. Now, run the code by calling `dotnet run`:
 

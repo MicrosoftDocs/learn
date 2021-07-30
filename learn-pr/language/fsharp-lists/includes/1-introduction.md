@@ -11,4 +11,3 @@ In this module you will:
 - Explore the collection data structures.
 - Understand basic properties on a list structure.
 - Use the list module to carry out some more advanced operations.
-

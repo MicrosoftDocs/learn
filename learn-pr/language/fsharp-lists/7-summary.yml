@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.fsharp-lists.7-summary
+uid: learn.fsharp-lists.summary
 title: Summary
 metadata:
   title: Summary
-  description: summary
+  description: Summary
   ms.date: 07/28/2021
   author: softchris
   ms.author: chnoring

@@ -18,9 +18,9 @@ logEntriesWeek = ["first entry", "second entry"; "third entry"]
 
 The above code is a lot less to type and it also creates a sense of orders, everything related goes together. So what can F# offer us? There's three types of collections in F#:
 
-- **Arrays**, arrays are fixed-size, zero-based, mutable collections of consecutive data elements that are all of the same type.
-- **Lists**, a list in F# is an ordered, immutable series of elements of the same type.
-- **Sequences**, a sequence is a logical series of elements all of one type.
+- **Arrays**: Arrays are fixed-size, zero-based, mutable collections of consecutive data elements that are all of the same type.
+- **Lists**: A list in F# is an ordered, immutable series of elements of the same type.
+- **Sequences**: A sequence is a logical series of elements all of one type.
 
 Which one you want to use depends on your situation. The fat that an array is mutable means it's easy to add and remove elements of data but there might be a performance hit as it is mutable. A list on the other hand is immutable and may offer better performance than an array but you might have to be more creative if you want to seemingly change its content, by, for example,  creating new lists from other lists. A sequence has a just-in-time feeling to it, as it's great with large collections of data, where you don't expect to use all elements, and only computes elements when required. Therefore it can offer better performance than a list in certain situations.
 
