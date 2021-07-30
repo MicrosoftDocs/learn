@@ -10,5 +10,5 @@ You can learn more by reviewing the following documents:
 
 - [Overview of Azure Cloud Shell](https://aka.ms/overview-of-azure-cloud-shell?azure-portal=true?).
 - [Secure your management ports with just-in-time access](https://aka.ms/security-center-just-in-time?azure-portal=true).
-- [Tutorial: Learn about Windows virtual machine management with Azure PowerShell](https://aka.ms/learn-about-windows-vm-management-with-azure-powershell?azure-portal=true).
+- [Tutorial: Learn about Windows virtual machine management with Azure PowerShell](/azure/virtual-machines/windows/quick-create-powershell).
 - [Azure CLI command reference](https://aka.ms/azure-cli-command-reference?azure-portal=true).
