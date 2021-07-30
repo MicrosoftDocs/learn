@@ -70,11 +70,14 @@ In this interview you will be standing in front of a whiteboard to explain the s
 
 How do youI pass such an interview? Generally the more interviews you do, the better you become at it, but here are three tips:
 
-- **Stop and think**. Don't try to solve the problem immediately. Try assessing the problem first. 
+- **Stop and think**. Don't try to solve the problem immediately. Try assessing the problem first.
 
 - **Be verbal**. Explain your line of thinking so the interviewers can see what considerations and assumptions you make. It gives them a chance to both assess you and to correct an unclear instruction.
 
 - **Confidence**. The more certain you come across the better. You might not get it right when solving a problem but you want to avoid coming across that you have no idea. With that said, saying "I don't know" to something is better than saying something nonsensical. Keep in mind that there might be more than one way to solve a problem.
+
+> [!TIP]
+> If you get stuck, you can try asking for help.
 
 ### Standard interview
 

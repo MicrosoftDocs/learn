@@ -17,5 +17,7 @@ Lastly you learned interview guidelines, how to leave a lasting good impression 
 - [Mock interview Microsoft Copenhagen](https://www.youtube.com/watch?v=zPjRLL7pShc) 
 
 - [How to prepare for the Microsoft technical interview](https://www.youtube.com/watch?v=8Myx-vy0csM) 
+- [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation)
+- [Calculate Big O](https://www.integralist.co.uk/posts/calculating-bigo/)
 
 [Learn more](https://careers.microsoft.com) about working at Microsoft. 

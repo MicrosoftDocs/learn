@@ -12,7 +12,6 @@ Remember, the interview process goes both ways.  While the company is assessing 
 
 ## Learning objectives
 
-- Understand what types of interviews exist.
-- Learn how to practice for the interviews.
-- Learn tips to carry out interviews in the most efficient way.
-- Learn best ways to follow up.
+- Describe the types of interviews you many encounter.
+- Prepare for your interviews by practicing.
+- Identify how and when to follow up after an interview.

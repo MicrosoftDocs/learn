@@ -26,7 +26,7 @@ So, how can you guess the kind of interview your prospective company will assign
 
 > What does an interview that focuses on algorithm challenges look for?
 
-In this type of interview, you are given a specific problem and you are expected to do two things. First, you need to select an appropriate algorithm for the problem. Next, you need to understand its limitations and understand what happens when it scales. The concept of _scaling_ implies that when the input to a function increases, your algorithm should perform well. Algorithm performance is denoted as O(n), also known as [Big O notation](https://en.wikipedia.org/wiki/Big_O_notation). You can consult a variety of web sites to understand how to  [calculate Big O](https://www.integralist.co.uk/posts/calculating-bigo/).
+In this type of interview, you are given a specific problem and you are expected to do two things. First, you need to select an appropriate algorithm for the problem. Next, you need to understand its limitations and understand what happens when it scales. The concept of _scaling_ implies that when the input to a function increases, your algorithm should perform well. Algorithm performance is denoted as O(n), also known as Big O notation. You can consult a variety of web sites to understand how to calculate Big O.
 
 You will be asked about algorithms and their performance to get an idea of your grasp of software performance and, more importantly, your ability to explain it.
 
@@ -48,6 +48,9 @@ Many existing sites are dedicated to interview preparation. In fact, many recrui
 - [Geeks for Geeks](https://www.geeksforgeeks.org/)
 
 These platforms offer many problems to try to solve and will let you use different programming languages to do so. Usually you get assessed on how well you solved something, which means a solution that simply _works_ receives a lower score than one that is optimal.
+
+> [!TIP]
+> It's worth bookmarking some of the above sites for later study.
 
 ## Mini exercise, work on a task
 
@@ -124,15 +127,18 @@ Spend as much time as possible preparing by trying to solve various problems but
 
 ## General guidelines
 
-While it's great to prepare as much as possible for a technical interview, don't forget about how to behave while at the interview. Mind your manners! In addition, you have the right to expect a certain behavior from the company during your interview. Even if you're a star at algorithms, behaving poorly might lead you to not be hired.  
+Now that you hopefully have some bookmarks for resources, lets focus on some general guidelines. By remembering and following these guidelines, during the interview, you'll be seen as a good candidate with a great attitude.
 
-- **Work history**. Ensure that your work history is accounted for. If you have a gap in your resume, ensure that there's a reasonable explanation for it. This is something you can bring up at the interview and the company is likely to ask, so ensure you have answers prepared.
+> [!NOTE]
+> While it's great to prepare as much as possible for a technical interview, don't forget about how to behave while at the interview. Mind your manners! In addition, you have the right to expect a certain behavior from the company during your interview. Even if you're a star at algorithms, behaving poorly might lead you to not be hired.  
 
-- **Speaking ill of former employers**. While it is understandable that you found friction at a workplace you would like to leave, it's best not to bring this up in an interview. If you have to bring it up, ensure that you are speaking about it as a moment that helped you grow as a person rather than as a negative experience.
+- **Account for Work history**. Ensure that your work history is accounted for. If you have a gap in your resume, ensure that there's a reasonable explanation for it. This is something you can bring up at the interview and the company is likely to ask, so ensure you have answers prepared.
+
+- **Avoid speaking ill of former employers**. While it is understandable that you found friction at a workplace you would like to leave, it's best not to bring this up in an interview. If you have to bring it up, ensure that you are speaking about it as a moment that helped you grow as a person rather than as a negative experience.
 
 - **Be professional**. Always come to your interview on time. Even if the traffic is bad and you are delayed, email or call the interviewer to alert them.
 
-- **Team player**. Being a developer is about being a team player. As such, you should make it clear in an interview that you understand that you didn't deliver a big project by yourself. Explain your role in it but try not to boast. Be humble but confident.
+- **Convey being a team player**. Being a developer is about being a team player. As such, you should make it clear in an interview that you understand that you didn't deliver a big project by yourself. Explain your role in it but try not to boast. Be humble but confident.
 
 ## Mini exercise - practice questions
 
