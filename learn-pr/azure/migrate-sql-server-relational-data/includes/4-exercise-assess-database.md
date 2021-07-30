@@ -1,4 +1,4 @@
-In this exercise, you will use Data Migration Assistant to assess your existing social database for any issues and to ensure it's compatible with Azure SQL Database. This is an important step to ensure your company's database can be successfully migrated to Azure.
+In this exercise, you will use Data Migration Assistant to assess your existing Social database for any issues and to ensure that it is compatible with Azure SQL Database. A successful assessment is an important step to ensure your company's database can be successfully migrated to Azure.
 
 You start by installing Data Migration Assistant on your SQL Server instance.
 
@@ -14,11 +14,11 @@ You start by installing Data Migration Assistant on your SQL Server instance.
 
 1. On the **RDP** tab, under the **Connect with RDP** section, select **Download RDP File**. Save it to your computer in a location of your choice.
 
-1. Select the RDP file to open it. Select **Connect**, and supply the credentials. Use the **windowsadmin** account, and use the password that you specified for this account.You should have an RDP connection open in a separate window.
+1. Select the RDP file to open it. Select **Connect**, and supply the credentials. Use the **windowsadmin** account and the password that you specified earlier. An RDP connection shoud open in a separate window.
 
 ## Disable Enhanced Security Configuration
 
-On your RDP session, before you can download Data Migration Assistant, you need to disable Enhanced Security Configuration in Internet Explorer, or it will block the download.
+On your RDP session, you need to disable Enhanced Security Configuration in Internet Explorer before you can download Data Migration Assistant, otherwise security rules will block the download.
 
 1. By default, Server Manager should be open on your connected RDP session. If you closed it, use the **Start** menu to open it.
 
@@ -26,7 +26,7 @@ On your RDP session, before you can download Data Migration Assistant, you need 
 
 1. Select the **IE Enhanced Security Configuration** setting.
 
-1. Change the setting to **Off** for **Administrators**, and then select **OK**.
+1. Change the **Administrators** setting to **Off**, and then select **OK**.
 
 ## Download, install, and run Data Migration Assistant
 
@@ -37,7 +37,7 @@ On your RDP session, before you can download Data Migration Assistant, you need 
 
 1. Select **Download**, and install the migration assistant. Accept the defaults through the installation dialog box.
 
-1. To start the assistant, on the remote desktop, select **Microsoft Data Migration Assistant** to open the application.
+1. To start the assistant, select **Microsoft Data Migration Assistant** to open the application.
 
 1. To begin a new assessment, in the left menu bar, select **+**.
 
@@ -45,11 +45,13 @@ On your RDP session, before you can download Data Migration Assistant, you need 
 
 1. For **Project name**, enter *Social Database Assessment*.
 
-1. Accept the remaining fields at their default values, and select **Create**.
+1. Accept the default values for the remaining fields, and select **Create**.
 
-    :::image type="content" source="../media/4-02-project-type.png" alt-text="Project type." loc-scope="azure-database-migration":::
+    :::image type="content" source="../media/4-02-project-type.png" alt-text="Screenshot of project type." loc-scope="azure-database-migration":::
     
-1. In the **Connect to a server** dialog box, enter the values shown above.  When you've successfully connected, on the **Add sources** dialog, select *admsdemovm*, and then select **Add**.
+1. In the **Connect to a server** dialog box, enter the values shown in the screenshot above.  
+ 
+1. When you've successfully connected, on the **Add sources** dialog, select *admsdemovm*, and then select **Add**.
 
 ## Configure the project
 
@@ -61,12 +63,12 @@ On your RDP session, before you can download Data Migration Assistant, you need 
     |---------|---------|
     | Server name | admsdemovm |
     | Authentication type | Windows Authentication |
-    | **Connection properties** |
+    | **Connection properties** |   |
     | Encrypt connection | Check  |
     | Trust server certificate | Check  |
     | | |
 
-    :::image type="content" source="../media/4-04-connect-to-server.png" alt-text="Connect to a server." loc-scope="azure-database-migration":::
+    :::image type="content" source="../media/4-04-connect-to-server.png" alt-text="Screenshot of connect to a server." loc-scope="azure-database-migration":::
 
 1. Select **Connect**. The **Add sources** pane appears.
 
@@ -74,13 +76,13 @@ On your RDP session, before you can download Data Migration Assistant, you need 
 
 1. The assessment now shows the database you've selected. To begin the assessment, select **Start Assessment**.
 
-    :::image type="content" source="../media/4-06-select-sources.png" alt-text="Select sources." loc-scope="azure-database-migration":::
+    :::image type="content" source="../media/4-06-select-sources.png" alt-text="Screenshot of select sources." loc-scope="azure-database-migration":::
 
 ## Review the assessment results and address issues
 
-Allow the analysis to run. When it finishes, it produces results and breaks them into *SQL Server feature parity* issues or *Compatibility issues*. Start by looking at the SQL Server feature parity results, which is the default.
+Allow the assessment to run. When it finishes, the results display in two options, *SQL Server feature parity* issues or *Compatibility issues*. Start by looking at the default view, **SQL Server feature parity**.
 
-:::image type="content" source="../media/4-07-review-results.png" alt-text="Review results." loc-scope="azure-database-migration":::
+:::image type="content" source="../media/4-07-review-results.png" alt-text="Review results." loc-scope="azure-database-migration" lightbox="../media/4-07-review-results.png":::
 
 In the middle of the page, look for the section **Unsupported features**. The second and third items show **N/A** under the affected objects, meaning that nothing was found in the source system for these two items.
 
@@ -88,9 +90,9 @@ Look more closely at the first row, though, and you'll see the issue, **Service 
 
 Select **Compatibility issues**. It shows that there were no compatibility issues with the database. If there had been issues, it would have listed them and you would need to resolve them before you could continue the migration.
 
-:::image type="content" source="../media/4-08-compatibility-issues.png" alt-text="Compatibility issues." loc-scope="azure-database-migration":::
+:::image type="content" source="../media/4-08-compatibility-issues.png" alt-text="Screenshot showing Compatibility issues." loc-scope="azure-database-migration" lightbox="../media/4-08-compatibility-issues.png":::
 
-1. Open SQL Server Management Studio and connect to the **admsdemovm** server with Windows authentication. To connect to the **social** database, select **Connect**.
+1. Open SQL Server Management Studio and connect to the **admsdemovm** server with Windows authentication. To connect to the **Social** database, select **Connect**.
 
 1. Select **New Query**.
 
@@ -110,4 +112,4 @@ Select **Compatibility issues**. It shows that there were no compatibility issue
 
     :::image type="content" source="../media/4-09-fixed-issues.png" alt-text="Fixed issues." loc-scope="azure-database-migration":::
 
-At this point, you've completed the assessment. To return to the list of completed assessments, on the upper-left side of the screen, select the arrow.
+At this point, you've completed the assessment. To return to the list of completed assessments, on the upper-left side of the page, next to **Social Database Assessment**, select the arrow.
