@@ -8,8 +8,7 @@ You are already a winner. The interview step is a bit stressful but if you've ma
 
 You might be asked to complete a take home assignment. What's important to consider, when creating such a sample, is that it should, first of all, solve the problem. Most likely you will send the company a link to where they can find your assignment solution on a site such as GitHub.  
 
-> [!TIP] 
-
+> [!TIP]
 > If you're not sure about a requirement or how to interpret part of the task, reach out and ask for clarification. In fact, some companies make the task unclear on purpose and want to see if the candidate will reach out.  
 
 Your solution should fulfill the following: 
