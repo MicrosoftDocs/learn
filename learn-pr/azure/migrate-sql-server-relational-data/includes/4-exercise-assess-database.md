@@ -24,6 +24,8 @@ On your RDP session, you need to disable Enhanced Security Configuration in Inte
 
 1. In the left menu bar, select **Local Server**.
 
+:::image type="content" source="../media/4-rdp-server-manager.png" alt-text="Screenshot of server manager with IE Enhanced security set to off." loc-scope="azure-database-migration":::
+
 1. Select the **IE Enhanced Security Configuration** setting.
 
 1. Change the **Administrators** setting to **Off**, and then select **OK**.
