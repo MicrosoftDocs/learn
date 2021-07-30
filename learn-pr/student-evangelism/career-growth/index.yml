@@ -6,8 +6,6 @@ metadata:
   ms.date: 4/15/2021
   author: jlooper
   ms.author: jelooper
-  products:
-    - vs-code
   ms.topic: interactive-tutorial # do we need ms.topic?
 title: career-growth
 summary: You've just landed your first job in tech. Now what? Learn strategies to growth-hack your career inside your company.
@@ -23,7 +21,9 @@ iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:
   - beginner
 roles:
-  - student 
+  - student
+products:
+  - vs-code 
 units:
 - learn.career-growth.introduction
 - learn.career-growth.networking
