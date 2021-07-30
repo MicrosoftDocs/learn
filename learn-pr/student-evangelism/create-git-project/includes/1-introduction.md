@@ -11,6 +11,6 @@ By the end of this module, you'll:
 - Learn how to create a new Git Project
 - Understand how to track changes in Git
 
-- ## Prerequisites
+## Prerequisites
 
 Intro to Git Module
