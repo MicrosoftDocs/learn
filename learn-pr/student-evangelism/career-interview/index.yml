@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.interview
 metadata:
-  title: Mastering the interview
+  title: Successful interviewing
   description: In this module you will learn how to prepare for a technical and non-technical interview. You will also get recommendations on how to best carry out the interview.
   ms.date: 06/04/2020
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Mastering the interview
+title: Successful interviewing
 summary: In this module you will learn how to prepare for a technical and non-technical interview. You will also get recommendations on how to best carry out the interview.
 abstract: |
   - Understand what types of interviews exist.
