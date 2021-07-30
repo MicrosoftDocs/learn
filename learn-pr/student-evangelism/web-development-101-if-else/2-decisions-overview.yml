@@ -20,7 +20,7 @@ quiz:
       choices:
         - content: Equality
           isCorrect: false
-          explanation: Incorrect. This operator indicates equality, but it isn't strict.
+          explanation: Incorrect. This operator indicates equality, but it's also more strict than equality.
         - content: Strict equality
           isCorrect: true
           explanation: Correct. This operator indicates strict equality.
