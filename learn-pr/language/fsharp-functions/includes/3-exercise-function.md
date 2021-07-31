@@ -83,7 +83,7 @@ You've turned your colleague's code into a function. To make this code extra rea
    You get a long error message back that starts with text "error FS0001: The 'if' expression needs to have type 'int' to satisfy context type requirements. It currently has type 'string'".
 
    > [!TIP]
-   > Stop here for second and think what you need to do, to make the code work.
+   > Stop here for second and think what you need to do to make the code work.
 
 1. Alter your `cardFace()` function to look like so:
 
@@ -109,6 +109,6 @@ You've turned your colleague's code into a function. To make this code extra rea
    Jack
    ```
 
-   No more error message because you've added a return type to your function as well. Looking at the function header you now see this code `let cardFace (card:int) :string`, the input parameter is of type `int` and it returns `string`.
+   No more error message because you've added a return type to your function, as well. Looking at the function header you now see this code `let cardFace (card:int) :string`, the input parameter is of type `int` and it returns `string`.
 
-Congratulation! Your code has now types added to it.  
+Congratulation! Your code now has types added to it.  
