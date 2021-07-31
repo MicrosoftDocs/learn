@@ -74,7 +74,16 @@ You can also add an entire list with the `@` operator, like so:
 ```fsharp
 let cards = ["Ace"; "King"; "Queen"]
 let otherCardList = ["Jack", "10"]
-let fullList = cards |> List.append // "Ace", "King", "Queen", "Jack", "10"
+let fullList = cards @ otherCardList // "Ace", "King", "Queen", "Jack", "10"
+```
+
+However, there is a function `append()` in the list module. Here's the thing, the `append()` function exist for both sequence and array collections, so it's better to use that, should you ever need to switch the collection type for example or learn things once. Let's revisit our two examples and instead use `append()`:
+
+```fsharp
+let cards = ["Ace"; "King"; "Queen"]
+let otherCardList = ["10", "9"]
+let fullList = cards |> List.append ["Jack"]
+let fullList = cards |> List.append otherCardList // "Ace", "King", "Queen", "Jack", "10", "9"
 ```
 
 ## Properties
