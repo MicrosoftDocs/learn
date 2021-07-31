@@ -1,4 +1,4 @@
-You've completed the process of converting and migrating your JSON ARM templates and Azure resources to Bicep. It's clear the converted templates could use some improvements to bring them inline with your template standards. You want to learn more about how to refactor your converted and migrated templates to improve their quality. You want to accomplish these tasks following a recommended workflow.
+You and your team have completed the process of converting and migrating your JSON ARM templates and Azure resources to Bicep. It's clear the converted templates could use some improvements to bring them inline with your template standards. The next step is to learn about how to refactor your converted and migrated templates to improve their quality. You want to accomplish these tasks following a recommended workflow.
 
 ## Refactor phase
 
@@ -6,7 +6,7 @@ After the convert and migrate phases of converting your templates to Bicep, impr
 
 :::image type="content" source="../media/4-refactor-phase.png" alt-text="Diagram of the refactor phase of the recommended workflow for migrating Azure resources to Bicep." border="true":::
 
-The main focus of this phase is to improve the quality of your Bicep code. These improvements can include changes that bring the template in line with your template standards and general best practices with Bicep templates.
+The main focus of this phase is to improve the quality of your Bicep code. These improvements can include changes, such as adding code comments, that bring the template in line with your template standards.
 
 :::image type="content" source="../media/4-refactor.png" alt-text="Diagram of refactoring a Bicep template." border="true":::
 
@@ -196,7 +196,7 @@ The decompile process may not always take advantage of some of Biceps features. 
 
 ### Review child and extension resources
 
-With Bicep, there are multiple ways to declare child and extension resources. Consider reviewing these resources after decompilation and make sure the structure meets your standards. For example, Subnets can either be referenced as properties of a Virtual Network, or as a separate resource. Make any necessary changes to child and extension resources.
+With Bicep, there are multiple ways to declare child and extension resources. Consider reviewing these resources after decompilation and make sure the structure meets your standards. For example, subnets can either be referenced as properties of a Virtual Network, or as a separate resource. Make any necessary changes to child and extension resources.
 
 ### Modularize
 
@@ -226,7 +226,7 @@ Single-line comments can be added as headers for sections of code, or on individ
 
 ### Follow Bicep best practices
 
-Make sure your Bicep file is following the recommended best practices. Review the [Bicep best practices](/azure/azure-resource-manager/bicep/best-practices) reference document for anything you might have missed.
+Make sure your Bicep file is following the standard recommendations. Review the [Bicep best practices](/azure/azure-resource-manager/bicep/best-practices) reference document for anything you might have missed.
 
 ### The converted template
 
