@@ -62,7 +62,7 @@ let list = [4; 3; 1]
 let sort (list: int list) = List.sort list
 let print (list: int list)= List.iter(fun x-> printfn "item %i" x) list
 
-list |> sort |> print // item 1 item 3 item 3
+list |> sort |> print // item 1 item 3 item 4
 ```
 
 In the last row you start off with a list of integers, `list`, and then it serves as input to the first function `sort()` and the result of that operation is fed into `print()`. The big difference from composition is that you start with some data, a list of integers in this case, and then you lead it through a set of functions.
