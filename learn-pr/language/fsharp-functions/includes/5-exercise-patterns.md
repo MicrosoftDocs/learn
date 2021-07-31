@@ -1,4 +1,4 @@
-In this exercise, you'll focus on applying some of the functional patterns you were taught. You'll also be working on code written by your colleagues and fuse it altogether with a pipeline operator - team work.
+In this exercise, you'll focus on applying some of the functional patterns you were taught. You'll also be working on code written by your colleagues and fuse it altogether with a pipeline operator - teamwork.
 
 ## Create an app
 
@@ -31,7 +31,7 @@ let printCard card = printfn "%s of %s" (cardFace card) (suit card)
 let printAll list = List.iter(fun x -> printCard(x)) list
 ```
 
-The code consists of different parts that will help you on your way to implement a card game. So what's the task? Your task is to take a deck of cards, shuffle it, take the three top cards and then print the results.
+The code consists of different parts that will help you on your way to implement a card game. So what's the task? Your task is to take a deck of cards, shuffle it, take the top three cards, and then print the results.
 
 1. Create a new project with
 
@@ -41,6 +41,7 @@ The code consists of different parts that will help you on your way to implement
     ```
 
 1. Take the code you've been given above and place it above the `main()` method in the _Program.fs_ file.
+
 1. Create a pipeline by adding the following line in the `main()` method:
 
    ```fsharp
@@ -55,7 +56,7 @@ The code consists of different parts that will help you on your way to implement
    dotnet run
    ```
 
-    You should however see three cards being printed with their proper description and suit. Here's an example output what it can look like:
+    You should, however, see three cards being printed with their proper description and suit. Here's an example of what output can look like:
 
     ```output
     Ace of Hearts
@@ -63,4 +64,4 @@ The code consists of different parts that will help you on your way to implement
     7 of Hearts
     ```
 
-Congratulations! You, and your team, have managed to build the start of a card application. Additionally you've successfully applied a pipeline that lets you call functions in a sequence all the while being applied to list of cards.
+Congratulations! You and your team have managed to build the start of a card application. Additionally, you've successfully applied a pipeline that lets you call functions in a sequence, all of which applies to a list of cards.
