@@ -31,7 +31,7 @@ let printCard card = printfn "%s of %s" (cardFace card) (suit card)
 let printAll list = List.iter(fun x -> printCard(x)) list
 ```
 
-The code consists of different parts that will help you on your way to implement a card game. So what's the task? Your task is to take a deck of cards, shuffle it, take the top three cards, and then print the results.
+The code consists of different parts that will help you implement a card game. So what's the task? Your task is to take a deck of cards, shuffle it, take the top three cards, and then print the results.
 
 1. Create a new project with
 
