@@ -1,4 +1,4 @@
-Usually you find yourself in a situation where your code looks repetitive, it's doing the same thing in many places or there's minor differences. In situations like these, you should start thinking how to make code reusable. The answer how to tackle this situation is to extract these expressions and make one or more functions. A function is a fundamental building block in numerous programming languages, F# is no different.
+Usually, you find yourself in a situation where your code looks repetitive, it's doing the same thing in many places, or there are minor differences. In situations like these, you should start thinking how to make code reusable. The answer how to tackle this situation is to extract these expressions and make one or more functions. A function is a fundamental building block in numerous programming languages; F# is no different.
 
 ## A function
 
@@ -8,7 +8,7 @@ A function is a named reference that has a body consisting of one or more expres
 let <function name> <parameters> = <function body>
 ```
 
-An actual function example, given the example syntax above, looks like so:
+An actual function, given the syntax above, looks like so:
 
 ```fsharp
 let add a b = a + b 
@@ -18,7 +18,7 @@ In this example, the name of the function is `add` and the parameters are `a` an
 
 ### Return values
 
-As you've seen on the first example, there was no `return` keyword to state what's being returned. In F#, what's on the last line of a function is what's being returned. Consider this multiline function below:
+As you've seen in the first example, there was no `return` keyword to state what's being returned. In F#, what's on the last line of a function is what's being returned. Consider this multiline function below:
 
 ```fsharp
 let addAndMultiply a b c = 
@@ -31,13 +31,13 @@ By placing `product` on the last line, it's what's being returned. So how do you
 
 ### Calling a function
 
-To call, or invoke a function, use the name of the function and add any parameters you wish to use separated by a space character. Take the example `addAndMultiply` function from above, to call it, type the following:
+To call, or invoke a function, use the name of the function and add any parameters you wish to use, separated by a space character. Take the example `addAndMultiply` function from above: to call it, type the following:
 
 ```fsharp
 addAndMultiply 2 3 3 // 15
 ```
 
-To see the results of the function, you can either assign it to a variable or print it out directly like so:
+To see the results of the function, you can either assign it to a variable or print it out directly, like so:
 
 ```fsharp
 let sum = addAndMultiply 2 3 3
@@ -65,7 +65,7 @@ but here has type
     'string'    
 ```
 
-The reason, is that F# already made up its mind what parameter types there should be, it decided on integer. The reason it decided on integer was the second row `let sum = add 2 2` where the function `add` was used in a way stating that the parameters definitely was integer. However, if the second row doesn't exist your code will work:
+The reason is that F# already made up its mind what parameter types there should be, it decided on integer. The reason it decided on integer was the second row `let sum = add 2 2` where the function `add` was used in a way stating that the parameters definitely were integers. However, if the second row didn't exist, your code will work:
 
 ```fsharp
 let add a b = a + b
@@ -102,10 +102,10 @@ but here has type
     'int'
 ```
 
-To make this code, you also need to specify a return type for the function, to do so, add another `: <type>` right after your parameter like so:
+To make this code compile, you also need to specify a return type for the function; to do so, add another `: <type>` right after your parameter like so:
 
 ```fsharp
-let convert (a:string): int =
+let convert (a:string):int =
     int a
 ```
 
