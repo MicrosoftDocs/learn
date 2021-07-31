@@ -100,7 +100,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
 
 ::: zone pivot="python"
 
-1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource. The **Create a reource** pane appears.
+1. On the Azure portal menu, or from the **Home** page, select **Create a resource**. Everything you create on Azure is a resource. The **Create a resource** pane appears.
 
     Here, you can search for the resource you want to create, or select one of the popular resources that people create in the Azure portal.
 
