@@ -242,7 +242,7 @@ Now that you've got the template set, you can validate the new deployment script
 
 ::: zone-end
 
-::: zone pivot="jsoncli,jsonpowershell"
+::: zone pivot="bicepcli,biceppowershell"
 
 1. Create an *azuredeploy.parameters.json* file.
 
