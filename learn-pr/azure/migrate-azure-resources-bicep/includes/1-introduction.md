@@ -4,7 +4,7 @@ Bicep provides many improvements over JSON for template authoring. These benefit
 
 Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. Recently, your company acquired a smaller competitor. This company is also using Azure to host its application infrastructure, but their resources were deployed using JSON ARM templates and the Azure portal.
 
-You want to begin the process of standardizing on Bicep for all resource deployments. To accomplish this task, you'll convert and migrate your existing JSON templates and Azure resources to Bicep. You'll refactor the templates for clarity and perform a series of test deployments to verify the migration.
+You want to begin the process of standardizing on Bicep for all resource deployments. To accomplish this task, you'll convert and migrate your existing JSON templates and Azure resources to Bicep. You'll refactor the templates for clarity and test deployments to verify the migration.
 
 ## What will we be doing?
 
@@ -15,7 +15,7 @@ In this module, you'll learn about the recommended workflow for migrating your A
 Throughout this module, you'll also learn about the available tools and resources that can help improve the quality of your templates.
 
 - How can you convert and migrate your JSON templates to Bicep?
-- How can you refactor your Bicep files to meet best practices?
+- How can you refactor your Bicep files to your template standards?
 - How can you perform a test deployment of your converted templates?
 
 ## What is the main goal?
