@@ -11,7 +11,7 @@ cd Loops
 
 ## Create a card description
 
-Your colleagues have taken the code you wrote in the previous exercise and turned that into a function, so it's reuseable. Here's what the code looks like now:
+Your colleagues have taken the code you wrote in the previous exercise and turned it into a function, so it's reuseable. Here's what the code looks like now:
 
 ```fsharp
 let cardDescription (card: int) : string = 
@@ -23,9 +23,11 @@ let cardDescription (card: int) : string =
      else string cardNo
 ```
 
-1. In *Program.fs*, paste the code before the `main()` method.
+To create a card description:
 
-    The code in *Program.fs* now look like this example:
+1. In *Program.fs*, add the code before the `main()` method.
+
+    The code in *Program.fs* now looks like this example:
 
     ```fsharp
     open System
@@ -44,7 +46,7 @@ let cardDescription (card: int) : string =
         0 // return an integer exit code
     ```
 
-   The function is named `cardDescription` and `card` is the input parameter. Your colleagues gave you a code snippet to work with. They want you to implement a similar function, but a function determines what suit the card is. They gave you this code snippet:
+   The function is named `cardDescription` and the input parameter is `card`. Your colleagues gave you a code snippet to work with. They want you to implement a similar function, but a function determines what suit the card is. They gave you this code snippet:
 
    ```fsharp
    let suit (no:int) : string = 
@@ -104,6 +106,8 @@ Again, your colleagues have helped you create a card deck. All you have to do is
 let cards = [ 1; 10; 2; 34 ]
 ```
 
+To print the deck:
+
 1. Add the `cards` definition to the `main()` method:
 
    ```fsharp
@@ -123,7 +127,7 @@ let cards = [ 1; 10; 2; 34 ]
      printfn "%s of %s" (cardDescription(card)) (suit(card))
    ```
 
-   The code consist of a commented-out line. Your task is to add code to implement a `for...in` loop.
+   The code consists of a commented-out line. Your task is to add code to implement a `for...in` loop.
 
 1. Add the following code to the `main()` method to implement the `for...in` loop:
 
@@ -158,7 +162,7 @@ let cards = [ 1; 10; 2; 34 ]
    8 of Diamonds 
    ```
 
-Congratulations. You worked with you and your colleagues implemented and made into more of a realistic-looking program.
+Congratulations. You worked with code that you and your colleagues implemented and developed it into more of a realistic-looking program.
 
 *Program.fs* now looks like this code:
 

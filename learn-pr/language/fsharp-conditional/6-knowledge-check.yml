@@ -18,7 +18,7 @@ quiz:
       choices:
         - content: You can use a `for...in` loop.
           isCorrect: true
-          explanation: Correct. This loop construct is the best suited to iterate over a collection.
+          explanation: Correct. This loop construct is best suited to iterate over a collection.
         - content: You can use a `for...to` loop.
           isCorrect: false
           explanation: Incorrect. It's possible to use a `for...to` construct, but `for...in` is a better choice.
@@ -28,13 +28,13 @@ quiz:
     - content: Explain what's wrong with the code `let value = if condition then true else 1`.
       choices: 
         - content: Nothing is wrong and the code will compile.
-          explanation: Incorrect. You can't mix data types. You either need both `if` and `else` to resolve to Boolean or to int.
+          explanation: Incorrect. You can't mix data types. You need both `if` and `else` to resolve either to Boolean or to int.
           isCorrect: false
         - content: You can't assign the result to a variable.
-          explanation: Incorrect. You can assign the result to a variable, but data type must be the same both for `if` and `else`. 
+          explanation: Incorrect. You can assign the result to a variable, but data type must be the same for both `if` and `else`. 
           isCorrect: false
-        - content: The data type must be the same both in `if` and `else`. The code `let value = if condition then 2 else 1` would work.
-          explanation: Correct. The ame data type must be returned from the expressions in `if` and `else`.
+        - content: The data type must be the same in both `if` and `else`. The code `let value = if condition then 2 else 1` would work.
+          explanation: Correct. The same data type must be returned from the expressions in `if` and `else`.
           isCorrect: true
     - content: Which numbers would the loop `for i = 0 to 5 do printfn "%i " i` print?
       choices:
@@ -45,6 +45,6 @@ quiz:
           explanation: Correct. It will print all numbers from the start boundary, including the ending boundary.
           isCorrect: true
         - content: It will print 1, 2, 3, 4, 5.
-          explanation: Incorrect. It will print all numbers from the start boundary including the ending boundary, which is 0, 1, 2, 3, 4 , 5. 
+          explanation: Incorrect. It will print all numbers from the start boundary, including the ending boundary, which is 0, 1, 2, 3, 4, 5. 
           isCorrect: false
 

@@ -1,8 +1,8 @@
 In this exercise, you'll use `if` and `else` to create the code for a card game for the recreational games company you work for. Your job is to write specific functionality that your colleagues can use in the Blackjack game they're creating.
 
-## Display presentable cards
+## Display playing cards users expect to see
 
-Blackjack players are used to having face cards called Jack, Queen, King, and Ace. All other cards are numbers. You'll write logic to make the user experience in a new Blackjack game your team is developing similar to a Blackjack game played in person.
+Blackjack players typically are dealt face cards called Jack, Queen, King, and Ace. All other cards are numbers. You'll write logic that makes the user experience in a new Blackjack game your team is developing similar to a Blackjack game played in person.
 
 1. Scaffold an F# project by running `dotnet new`:
 
