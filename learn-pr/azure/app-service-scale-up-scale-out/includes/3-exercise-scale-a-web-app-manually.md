@@ -132,7 +132,7 @@ The exercise also runs a client app that simulates several users issuing POST an
 
 1. On menu bar of your web app pane, select the **Local Time: Last 24 hours (Automatic)** time range, select **Last 30 minutes**, and select **Apply**.
   
-1.  In the menu under **Chart Title**, add the following metrics to the chart.
+1. In the menu under **Chart Title**, add the following metrics to the chart.
 
    - Select **Add metric** CPU Time. Select the Sum aggregation.
    - Select **Add metric** Http Server Errors. Select the Sum aggregation.
