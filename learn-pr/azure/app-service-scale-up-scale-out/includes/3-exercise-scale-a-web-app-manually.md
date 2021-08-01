@@ -165,4 +165,4 @@ The exercise also runs a client app that simulates several users issuing POST an
 
 1. Return to the Cloud Shell that's running the client app. Select <kbd>Enter</kbd> to stop the app.
 
-1. In the Azure portal, set the insance count back to 1. Select your web app, and in the menu, select Scale out (App Service plan). On the **Configure** tab, set the instance count to 1, and then select **Save** in the menu bar at the top of the **App Service** pane. This 
+1. In the Azure portal, set the instance count back to 1. Select your web app, and in the menu, select Scale out (App Service plan). On the **Configure** tab, set the instance count to 1, and then select **Save** in the menu bar at the top of the **App Service** pane. This 
