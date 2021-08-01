@@ -11,7 +11,7 @@ cd Loops
 
 ## Create a card description
 
-Your colleagues have taken the code you wrote in the previous exercise and turned it into a function, so it's reuseable. Here's what the code looks like now:
+Your colleagues have taken the code you wrote in the previous exercise and turned it into a function, so it's reusable. Here's what the code looks like now:
 
 ```fsharp
 let cardDescription (card: int) : string = 
@@ -118,7 +118,7 @@ To print the deck:
         0 // return an integer exit code
    ```
 
-   The deck contains only four cards. In a more realistic implementation, the code would contain all 52 cards, but this list will suffice for an example. 
+   The deck contains only four cards. In a more realistic implementation, the code would contain all 52 cards, but this list will suffice for an example.
 
    Your colleagues have again written some code for you. You just have to fill in what's missing. Here's a code snippet:
 
