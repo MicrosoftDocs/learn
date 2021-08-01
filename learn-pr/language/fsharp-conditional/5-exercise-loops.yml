@@ -3,7 +3,7 @@ uid: learn.fsharp-conditional.exercise-loops
 title: Exercise - Use loops
 metadata:
   title: Exercise - Use loops
-  description: In this exercise, you'll add loop constructs to iterate through a collection of playing cards.
+  description: Add loop constructs to iterate through a collection of playing cards.
   author: softchris
   ms.author: chnoring
   ms.date: 07/23/2021

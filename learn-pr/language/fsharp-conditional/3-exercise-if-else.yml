@@ -3,7 +3,7 @@ uid: learn.fsharp-conditional.exercise-if-else
 title: Exercise - Apply conditional logic
 metadata:
   title: Exercise - Apply conditional logic
-  description: Learn how to apply conditional logic to describe different playing cards.
+  description: Apply conditional logic to describe different playing cards.
   author: softchris
   ms.author: chnoring
   ms.date: 07/23/2021
