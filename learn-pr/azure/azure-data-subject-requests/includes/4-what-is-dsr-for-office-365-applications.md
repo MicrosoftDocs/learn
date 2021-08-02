@@ -16,9 +16,9 @@ National clouds are isolated from the Office 365 cloud. There might be notable d
 
 Many organizations manage their user identities in on-premises Active Directory deployments, while retaining resources in the cloud. Hybrid deployments combine cloud-based services and on-premises server products. This enables an organization to share accounts and resources. For example, a user can sign in with their on-premises user account and access their cloud-based mailbox. Some common hybrid deployments include:
 
-- **Microsoft Exchange.** In these hybrid deployments, mailboxes exist both on premises and in the cloud. 
-- **Microsoft SharePoint.** Organizations with this hybrid deployment method use on-premises SharePoint servers, on-premises files servers, Skype for Business Online, and Microsoft OneDrive for Business accounts.
-- **Hybrid identity management.** For this deployment, identities are managed on premises with Active Directory. Accounts are synchronized with Azure AD by using Azure AD Connect. This deployment type also makes single sign-on (SSO) scenarios possible for hybrid deployments.
+- Exchange hybrid deployments, where some users have an on-premises mailbox and other users have Exchange Online mailboxes.
+- SharePoint hybrid deployments, where site and files servers are on-premises and OneDrive for Business accounts are in Office365
+- The on-premises with identity management system (Active Directory) that is synchronized with Azure Active Directory, which is the underlying directory service in Office 365.
 
 In a hybrid deployment, the scope of a DSR will vary based on the data that's related to a specific DSR. The controller must determine whether the response must come from the cloud or from on premises. This unit focuses on cloud-based data responses. However, guidance is available for responding to DSRs on premises. Refer to the summary unit for more information.
 
