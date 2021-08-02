@@ -2,7 +2,7 @@
 uid: learn.ai-edge-engineer
 metadata:
   title: AI edge engineer
-  description: University of Oxford
+  description: This learning path aims to explain learners how to deploy AI at the edge using Azure services.
   brand: azure
   ms.date: 4/13/2020
   author: leestott
