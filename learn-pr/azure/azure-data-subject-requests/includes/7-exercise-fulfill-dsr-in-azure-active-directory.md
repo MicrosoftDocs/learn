@@ -97,7 +97,7 @@ You'll now respond to  the DSR by deleting the data subject's user account:
 > [!NOTE]
 > Your Azure subscription may incur some costs if you do not delete all the resources created during this exercise.
 
-> If you’ve completed all the steps in this exercise, you won’t have any resources to clean up. However, if you’ve only partially completed the exercise, complete the following steps:
+If you’ve completed all the steps in this exercise, you won’t have any resources to clean up. However, if you’ve only partially completed the exercise, complete the following steps:
 
 1. In the Azure Active Directory admin center, select **All Users**.
 1. Search for and select **Avery Howard**.
