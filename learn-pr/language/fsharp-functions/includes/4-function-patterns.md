@@ -33,7 +33,7 @@ There are some useful patterns in F# that you can use to take on a more _functio
 
 ### Composition
 
-Composiition is about combining functions and have them applied, one after the other, in a certain order. The composition operator takes two functions and returns a new function. 
+Composition is about combining functions and have them applied, one after the other, in a certain order. The composition operator takes two functions and returns a new function. 
 
 When you author code, you'll often find yourself calling one function and then another function right after it. For example, you might want to order a list and filter out all products that are on discount. Below is an example in which the function `add2()` is called and its result is fed to the `multiply3()` function.
 
