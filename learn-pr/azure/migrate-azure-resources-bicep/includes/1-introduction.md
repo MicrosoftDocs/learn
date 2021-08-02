@@ -12,11 +12,7 @@ In this module, you'll learn about the recommended workflow for migrating your A
 
 :::image type="content" source="../media/1-five-phases.png" alt-text="Diagram of the recommended workflow for migrating Azure resources to Bicep." border="true":::
 
-Throughout this module, you'll also learn about the available tools and resources that can help improve the quality of your templates.
-
-- How can you convert and migrate your JSON templates to Bicep?
-- How can you refactor your Bicep files to your template standards?
-- How can you perform a test deployment of your converted templates?
+You'll learn how to convert and migrate your Azure resources and JSON templates to a Bicep file. You'll also learn about the available tools and resources that can help improve the quality of your templates, and how to safely perform test deployments of your converted templates.
 
 ## What is the main goal?
 
@@ -24,6 +20,6 @@ After completing this module, you'll be able to migrate your Azure resources to 
 
 ## Prerequisites
 
-- You should be familiar with Azure, including the Azure portal, Subscriptions, and Resource groups.
+- You should be familiar with Azure, including the Azure portal, subscriptions, and resource groups.
 - You should have an understanding of ARM templates (both JSON and Bicep), including parameters, modules, and child and extension resources.
 - You should have a basic understanding of the what-if operation.
