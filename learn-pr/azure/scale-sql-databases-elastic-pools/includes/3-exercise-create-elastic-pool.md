@@ -87,6 +87,6 @@ We're ready to set up the resources for the SQL elastic pool. We'll switch to th
 
 1. Select the databases for both locations, and then select **Apply**. The **Configure** pane reappears.
 
-1. In the top menu bae, select **Save**.
+1. In the top menu bar, select **Save**.
 
 Congratulations, you've successfully added databases to a SQL elastic pool.
