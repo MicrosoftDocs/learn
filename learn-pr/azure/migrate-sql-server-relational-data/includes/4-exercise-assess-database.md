@@ -14,7 +14,7 @@ You start by installing Data Migration Assistant on your SQL Server instance.
 
 1. On the **RDP** tab, under the **Connect with RDP** section, select **Download RDP File**. Save it to your computer in a location of your choice.
 
-1. Select the RDP file to open it. Select **Connect**, and supply the credentials. Use the **windowsadmin** account and the password that you specified earlier. An RDP connection shoud open in a separate window.
+1. Select the RDP file to open it. Select **Connect**, and supply the credentials. Use the **windowsadmin** account and the password that you specified earlier. An RDP connection should open in a separate window.
 
 ## Disable Enhanced Security Configuration
 
@@ -24,7 +24,7 @@ On your RDP session, you need to disable Enhanced Security Configuration in Inte
 
 1. In the left menu bar, select **Local Server**.
 
-:::image type="content" source="../media/4-rdp-server-manager.png" alt-text="Screenshot of server manager with IE Enhanced security set to off." loc-scope="azure-database-migration":::
+    :::image type="content" source="../media/4-rdp-server-manager.png" alt-text="Screenshot of server manager with IE Enhanced security set to off." loc-scope="azure-database-migration":::
 
 1. Select the **IE Enhanced Security Configuration** setting.
 
@@ -84,7 +84,7 @@ On your RDP session, you need to disable Enhanced Security Configuration in Inte
 
 Allow the assessment to run. When it finishes, the results display in two options, *SQL Server feature parity* issues or *Compatibility issues*. Start by looking at the default view, **SQL Server feature parity**.
 
-:::image type="content" source="../media/4-07-review-results.png" alt-text="Review results." loc-scope="azure-database-migration" lightbox="../media/4-07-review-results.png":::
+:::image type="content" source="../media/4-07-review-results.png" alt-text="Screenshot of review results." loc-scope="azure-database-migration" lightbox="../media/4-07-review-results.png":::
 
 In the middle of the page, look for the section **Unsupported features**. The second and third items show **N/A** under the affected objects, meaning that nothing was found in the source system for these two items.
 
