@@ -1,6 +1,6 @@
 When you start the process of migrating to Bicep, it's important to follow a structured process to ensure your Bicep file describes your Azure resources correctly, that it follows best practices, and that it's fully tested and safe to use for subsequent deployments. In this unit, you learn about the first two phases for your Bicep migration: the  _convert_ phase and the _migrate_ phase.
 
-:::image type="content" source="../media/2-convert-migrate.png" alt-text="Diagram of the convert and migrate phases of the recommended workflow for migrating Azure resources to Bicep." border="false":::
+:::image type="content" source="../media/2-convert-migrate-phases.png" alt-text="Diagram of the convert and migrate phases of the recommended workflow for migrating Azure resources to Bicep." border="false":::
 
 The main focus for these two phases is to prepare a new Bicep file before you later refactor and test it.
 
