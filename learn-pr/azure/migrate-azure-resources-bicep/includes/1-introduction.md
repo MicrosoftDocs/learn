@@ -23,3 +23,4 @@ After completing this module, you'll be able to migrate your Azure resources to 
 - You should be familiar with Azure, including the Azure portal, subscriptions, and resource groups.
 - You should have an understanding of ARM templates (both JSON and Bicep), including parameters, modules, and child and extension resources.
 - You should have a basic understanding of the what-if operation.
+- You should have a basic understanding of how to refactor Bicep files to conform to best practices.

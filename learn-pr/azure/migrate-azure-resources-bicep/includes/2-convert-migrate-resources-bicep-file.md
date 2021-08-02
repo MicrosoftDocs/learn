@@ -168,8 +168,19 @@ To view a deployment and its template from the Azure portal, open a resource gro
 
 TODO screenshot
 
+::: zone pivot="cli"
+
 > [!NOTE]
 > You can also export a deployment from the Azure CLI by using the `az deployment group export` command.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+> [!NOTE]
+> You can also export a deployment from Azure PowerShell by using the `Save-AzResourceGroupDeploymentTemplate` cmdlet.
+
+::: zone-end
 
 ### Decompile the source JSON ARM template
 
@@ -224,7 +235,7 @@ By clicking on the `DependencyAgentWindows` resource, `[Microsoft.Compute/virtua
 ```json
 {
     "name": "DependencyAgentWindows",
-    "id": "/subscriptions/{subscriptionId}/resourceGroups/rg-app-prod-truckline/providers/Microsoft.Compute/virtualMachines/vm-prod-001/extensions/DependencyAgentWindows",
+    "id": "/subscriptions/f0750bbe-ea75-4ae5-b24d-a92ca601da2c/resourceGroups/rg-app-prod-truckline/providers/Microsoft.Compute/virtualMachines/vm-prod-001/extensions/DependencyAgentWindows",
     "type": "Microsoft.Compute/virtualMachines/extensions",
     "location": "eastus",
     "properties": {

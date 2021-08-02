@@ -91,7 +91,7 @@ After the convert and migrate phases of converting your templates to Bicep, you'
 
 Take a look at the following JSON template that creates an Azure App Service Plan.
 
-```JSON
+```json
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
@@ -165,7 +165,7 @@ Take a look at the following JSON template that creates an Azure App Service Pla
 
 When you run the Bicep `decompile` command against this template, the following Bicep template is generated:
 
-```Bicep
+```bicep
 @description('Location for resources.')
 param location string = resourceGroup().location
 
@@ -220,7 +220,7 @@ Review parameter and variable names. - In the converted template, take a look at
 
 For clarity, remove the `_var` as shown below:
 
-```Bicep
+```bicep
 var appServicePlanName = 'plan-${environment}-001'
 ```
 
@@ -230,7 +230,7 @@ By making this change to the `appServicePlanName` variable, any reference to the
 
 For clarity, remove the `_var` as shown below:
 
-```Bicep
+```bicep
 name: appServicePlanName
 ```
 
@@ -245,7 +245,7 @@ After updating the variable name and its references, notice that the `appService
 
 Modify the name of the symbolic name to `appServicePlan` as shown below:
 
-```Bicep
+```bicep
 resource appServicePlan 'Microsoft.Web/serverfarms@2020-12-01' = {
 ```
 
@@ -255,7 +255,7 @@ By making this change to the `appServicePlan` symbolic name, any reference to th
 
 Modify the value of the `appServicePlanId` output as shown below:
 
-```Bicep
+```bicep
 output appServicePlanId string = appServicePlan.id
 ```
 
@@ -267,7 +267,7 @@ Bicep supports both single-line comments using a `//` character sequence and mul
 
 You can add a multi-line comment at the beginning of the file as shown below:
 
-```Bicep
+```bicep
 /*
   This Bicep file was developed by the web team.
   It deploys the resources we need for our toy company's website.
@@ -282,7 +282,7 @@ Single-line comments can be added as headers for sections of code, or on individ
 
 After making the appropriate improvements, review the final template before deployment. Take a look at the final converted template below that includes the revised names and added comments:
 
-```Bicep
+```bicep
 /*
   This Bicep file was developed by the web team.
   It deploys the resources we need for our toy company's website.
