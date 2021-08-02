@@ -10,7 +10,7 @@ You want to begin the process of standardizing on Bicep for all resource deploym
 
 In this module, you'll learn about the recommended workflow for migrating your Azure resources to Bicep. This workflow consists of five phases: convert, migrate, refactor, test, and deploy.
 
-:::image type="content" source="../media/1-five-phases.png" alt-text="Diagram of the recommended workflow for migrating Azure resources to Bicep." border="true":::
+:::image type="content" source="../media/1-five-phases.png" alt-text="Diagram of the recommended workflow for migrating Azure resources to Bicep." border="false":::
 
 You'll learn how to convert and migrate your Azure resources and JSON templates to a Bicep file. You'll also learn about the available tools and resources that can help improve the quality of your templates, and how to safely perform test deployments of your converted templates.
 
