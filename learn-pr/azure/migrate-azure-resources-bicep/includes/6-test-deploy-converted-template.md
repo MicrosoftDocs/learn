@@ -69,7 +69,7 @@ This unit will focus on the last two phases: test and deploy.
 
 In the convert phase of converting your templates to Bicep, the goal is to capture the initial representation of your Azure resources. Take a look at the following steps for this phase.
 
-:::image type="content" source="../media/3-export.png" alt-text="Diagram of converting a JSON template to Bicep." border="true":::
+:::image type="content" source="../media/3-export.png" alt-text="Diagram of converting a JSON template to Bicep." border="false":::
 
 1. **Export the JSON ARM template**
 
@@ -79,7 +79,7 @@ In the convert phase of converting your templates to Bicep, the goal is to captu
 
 In the migrate phase of converting your templates to Bicep, the goal is to create an initial Bicep file that includes all of your Azure resources. Take a look at the following steps for this phase.
 
-:::image type="content" source="../media/2-migrate.png" alt-text="Diagram of migrating a template to Bicep." border="true":::
+:::image type="content" source="../media/2-migrate.png" alt-text="Diagram of migrating a template to Bicep." border="false":::
 
 1. **Create a new Bicep file**
 
@@ -93,7 +93,7 @@ In the migrate phase of converting your templates to Bicep, the goal is to creat
 
 In the refactor phase of converting your templates to Bicep, the goal is to improve the quality of your Bicep code. Take a look at the following steps for this phase.
 
-:::image type="content" source="../media/2-refactor.png" alt-text="Diagram of refactoring a Bicep template." border="true":::
+:::image type="content" source="../media/2-refactor.png" alt-text="Diagram of refactoring a Bicep template." border="false":::
 
 1. **Review resource API versions**
 

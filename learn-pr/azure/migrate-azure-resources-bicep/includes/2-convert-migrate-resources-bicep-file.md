@@ -1,6 +1,6 @@
 When you start the process of migrating to Bicep, it's important to follow a structured process to ensure your Bicep file describes your Azure resources correctly, that it follows best practices, and that it's fully tested and safe to use for subsequent deployments. In this unit, you learn about the first two phases for your Bicep migration: the  _convert_ phase and the _migrate_ phase.
 
-:::image type="content" source="../media/2-convert-migrate.png" alt-text="Diagram of the convert and migrate phases of the recommended workflow for migrating Azure resources to Bicep." border="true":::
+:::image type="content" source="../media/2-convert-migrate.png" alt-text="Diagram of the convert and migrate phases of the recommended workflow for migrating Azure resources to Bicep." border="false":::
 
 The main focus for these two phases is to prepare a new Bicep file before you later refactor and test it.
 
@@ -13,7 +13,7 @@ The convert phase consists of two steps:
 1. Capture a JSON representation of your Azure resources.
 1. Convert the JSON representation to Bicep by _decompiling_ it. The decompilation process outputs a Bicep file that isn't final, but that gives you a starting point for your migration.
 
-:::image type="content" source="../media/2-convert.png" alt-text="TODO alt text" border="true":::
+:::image type="content" source="../media/2-convert.png" alt-text="TODO alt text" border="false":::
 
 If you have an existing JSON template that you're converting to Bicep, the first step is easy - you already have your source template. You'll learn how to decompile it to Bicep shortly.
 
@@ -24,7 +24,7 @@ If you're converting Azure resources that you deployed through the portal or ano
 Azure Resource Manager is the service that's used to deploy and manage resources in Azure. All resources deployed to Azure are tracked by Resource Manager, regardless of the method used to deploy the resource. You can use the Azure portal, Azure CLI, Azure PowerShell, the Resource Manager REST API, and Azure SDKs to interact with Resource Manager.
 
 <!-- TODO move file to includes folder -->
-:::image type="content" source="../../introduction-to-infrastructure-as-code-using-bicep/media/azure-resource-manager.png" alt-text="TODO alt text" border="true":::
+:::image type="content" source="../../introduction-to-infrastructure-as-code-using-bicep/media/azure-resource-manager.png" alt-text="TODO alt text" border="false":::
 
 Regardless of how each resource was created, information about the resource is made available in JSON format by Resource Manager. When you ask for a copy of the JSON representation of a resource, you're _exporting_ the resource. The JSON file that you export can be decompiled into Bicep.
 
@@ -199,7 +199,7 @@ In the _migrate_ phase of converting your templates to Bicep, the goal is to cre
 1. Identify and recreate any missing resources.
 1. Add parameters to make your Bicep file reusable.
 
-:::image type="content" source="../media/2-migrate.png" alt-text="Diagram of migrating a template to Bicep." border="true":::
+:::image type="content" source="../media/2-migrate.png" alt-text="Diagram of migrating a template to Bicep." border="false":::
 
 ### Create a new Bicep file
 

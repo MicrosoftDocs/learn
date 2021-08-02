@@ -1,10 +1,10 @@
 After the convert and migrate phases of converting your templates to Bicep, you need to improve the file. This process is called _refactoring_, and so the third phase of the recommended workflow for migrating your JSON ARM template and Azure resources to Bicep is the _refactor_ phase:
 
-:::image type="content" source="../media/4-refactor-phase.png" alt-text="Diagram of the refactor phase of the recommended workflow for migrating Azure resources to Bicep." border="true":::
+:::image type="content" source="../media/4-refactor-phase.png" alt-text="Diagram of the refactor phase of the recommended workflow for migrating Azure resources to Bicep." border="false":::
 
 The main focus of this phase is to improve the quality of your Bicep code. These improvements can include changes, such as adding code comments, that bring the template in line with your template standards.
 
-:::image type="content" source="../media/4-refactor.png" alt-text="Diagram of refactoring a Bicep template." border="true":::
+:::image type="content" source="../media/4-refactor.png" alt-text="Diagram of refactoring a Bicep template." border="false":::
 
 Here's the output of a the Bicep `decompile` command against a JSON template that creates an App Service plan:
 
