@@ -13,36 +13,36 @@ durationInMinutes: 4
 quiz:
   title: ''
   questions:
-  - content: 'What is a way to fix one of your past commits without needing to make a new Commit?'
+  - content: 'What is a way to fix one of your past commits without needing to make a new commit?'
     choices:
-    - content: "Deleting earlier versions of a project or file, so you know you are working only with the most current file or data."
+    - content: "Deleting the file and creating a new one in its place with the correct changes."
       isCorrect: false
-      explanation: "Incorrect. Version control systems purposefully retain earlier versions of a file or project, so you can access them, if needed."    
-    - content: "Making experimental changes to your project in an isolated branch."
+      explanation: "Incorrect. This will need to be put in a new commit because you are making a new file."    
+    - content: "Utilizing the Git 'amend' tag"
       isCorrect: true
-      explanation: "Correct! Using branches to create different sets of changes to a project is a key use case for version control."
-    - content: "Gathering feature requirements for a large project and communicating them to stakeholders."
+      explanation: "Correct! Using amend means that you are changing what was put in the initial commit!"
+    - content: "Revert the commit and make a new one"
       isCorrect: false
-      explanation: "Incorrect. Although some teams use tools like GitHub to collaborate, version control systems are not designed for this type of work."            
-  - content: 'How do you use Git reset and Git checkout to recover a lost file?'
+      explanation: "Incorrect. Although it does keep the amount of commits as the same, you may lose some changes and using amend is much better."            
+  - content: 'How do you choose between Git reset and Git checkout to recover a lost file?'
     choices:
-    - content: "Version management software (VMS)"
+    - content: "Git checkout can recover a file you may have accidentally deleted. Git Reset, will recover a file you deleted using the 'git rm' command "
+      isCorrect: True
+      explanation: "Correct! Git checkout updates your file with the one present in the git index, while git reset unstages files deleted."
+    - content: "Always use git checkout because it is the safer option"
       isCorrect: false
-      explanation: "Incorrect."
-    - content: "Software control management (SCM) system"
+      explanation: "Incorrect. Git checkout will only be able to recover the file if it is still in the index."
+    - content: "Create a new file with the same name and use Git reset"
       isCorrect: false
-      explanation: "Incorrect."
-    - content: "Software configuration management (SCM) system"
-      isCorrect: true
-      explanation: "Correct!"
-  - content: 'What’s the difference between Git and GitHub?'
+      explanation: "Incorrect, this wouldn't work"
+  - content: 'When should you avoid changing a past commit?'
     choices:
-    - content: "When should you avoid changing a past commit?"
+    - content: "Avoid amending commits that other developers have based their work on"
       isCorrect: true
-      explanation: "Correct! Git is the tool you can use to work with a local branch and push changes to a remote repository. GitHub acts as the remote repository."
-    - content: "Git is a distributed version control system (DVCS) that runs in the cloud. GitHub is an interface layer that provides access to Git technology."
+      explanation: "Correct! When you amend a commit the past commit before it is gone and replaced by your amended commit."
+    - content: "When you want to add an new file to your commit"
       isCorrect: false
-      explanation: "Incorrect. Users have access to both Git and GitHub. GitHub is a cloud platform that uses the Git DVCS."
-    - content: "Git is used by an individual contributor. GitHub is used by multiple contributors to simplify group development work."
+      explanation: "Incorrect. You are able to use the amend tag to add a new file to your commit."
+    - content: "When you want to change the not most recent commit."
       isCorrect: false
-      explanation: "Incorrect. Both Git and GitHub are used by individual contributors and by teams to facilitate working together."            
+      explanation: "Incorrect. Git amend only works on the most recent commit."
