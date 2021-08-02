@@ -1,6 +1,6 @@
 In this unit, we'll look at autoscaling rules, and then in the next exercise, trigger the rules.
 
-## Autoscale conditions
+## Autoscale conditions https://docs.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview
 
 Azure provides two options for autoscaling:
 
@@ -9,14 +9,15 @@ Azure provides two options for autoscaling:
 
 Scaling to a specific instance count only enables you to scale out to a defined number of instances. If you need to scale out incrementally, you can combine metric and schedule-based autoscaling in the same autoscale condition. So, you could arrange for the system to scale out if the number of HTTP requests exceeds some threshold, but only between certain hours of the day.
 
-Autoscale profiles
+## Autoscale profiles
+
 There are three types of Autoscale profiles:
 
-Regular profile: The most common profile. If you don’t need to scale your resource based on the day of the week, or on a particular day, you can use a regular profile. This profile can then be configured with metric rules that dictate when to scale out and when to scale in. You should only have one regular profile defined.
+- Regular profile: The most common profile. If you don’t need to scale your resource based on the day of the week, or on a particular day, you can use a regular profile. This profile can then be configured with metric rules that dictate when to scale out and when to scale in. You should only have one regular profile defined.
 
-Fixed date profile: This profile is for special cases. For example, let’s say you have an important event coming up on December 26, 2017 (PST). You want the minimum and maximum capacities of your resource to be different on that day, but still scale on the same metrics. In this case, you should add a fixed date profile to your setting’s list of profiles. The profile is configured to run only on the event’s day. For any other day, Autoscale uses the regular profile.
+- Fixed date profile: This profile is for special cases. For example, let’s say you have an important event coming up on December 26, 2017 (PST). You want the minimum and maximum capacities of your resource to be different on that day, but still scale on the same metrics. In this case, you should add a fixed date profile to your setting’s list of profiles. The profile is configured to run only on the event’s day. For any other day, Autoscale uses the regular profile.
 
-Recurrence profile: This type of profile enables you to ensure that this profile is always used on a particular day of the week. Recurrence profiles only have a start time. They run until the next recurrence profile or fixed date profile is set to start. An Autoscale setting with only one recurrence profile runs that profile, even if there is a regular profile defined in the same setting. The following two examples illustrate how this profile is used:
+- Recurrence profile: This type of profile enables you to ensure that this profile is always used on a particular day of the week. Recurrence profiles only have a start time. They run until the next recurrence profile or fixed date profile is set to start. An Autoscale setting with only one recurrence profile runs that profile, even if there is a regular profile defined in the same setting. The following two examples illustrate how this profile is used:
 
 Example 1: Weekdays vs. weekends
 
