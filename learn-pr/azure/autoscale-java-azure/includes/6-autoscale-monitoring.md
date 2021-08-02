@@ -46,4 +46,4 @@ In the autoscale setting screen, go to the Run history tab to see the most recen
 
 ## Monitor the Application's autoscale with Log Analytics
 
-You can validate the evaluations and scale actions better using Log Analytics. In your sample application, we've routed your autoscale logs to Azure Monitor Logs (Log Analytics) through a workspace when you created the autoscale setting.
+You can validate the evaluations and scale actions better using Log Analytics. In your sample application, we've routed your autoscale logs to Azure Monitor Logs (Log Analytics) through a workspace when you created the autoscale setting. In the next exercise, you'll use log analytics to find out more about the autoscale events.
