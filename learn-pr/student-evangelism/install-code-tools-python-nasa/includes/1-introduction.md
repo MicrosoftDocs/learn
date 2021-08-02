@@ -1,8 +1,5 @@
 
-In this module, you'll be introduced to Visual Studio Code, Python, and Jupyter Notebooks. You'll learn how to install all the software and packages you'll need to begin writing code to explore different types of data, depending on the Learning Path you're working on. 
-
-> [!TIP]
-> This module is part of a multimodal learning experience. Be sure to check out the other modules in this Learning Path to keep learning!
+In this module, you'll be introduced to Visual Studio Code, Python, and Jupyter Notebooks. You'll learn how to install all the software and packages you'll need to begin writing code to explore different types of data, depending on the Learning Path you're working on.
 
 ## Learning objectives
 
