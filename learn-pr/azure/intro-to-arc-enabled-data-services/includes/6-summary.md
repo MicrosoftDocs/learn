@@ -1,4 +1,4 @@
-In this module you learned about Azure Arc-enabled data services including the fundamentals of hybrid computing and Azure Arc, the Azure Arc-enabled data services architecture, Azure Arc-enabled SQL Managed Instance, and Azure Arc-enabled PostgreSQL Hyperscale.
+In this module, you learned about the fundamentals of hybrid computing and Azure Arc. You also learned about the Azure Arc-enabled data services architecture, Azure Arc-enabled SQL Managed Instance, and Azure Arc-enabled PostgreSQL Hyperscale.
 
 ## Learn more
 
