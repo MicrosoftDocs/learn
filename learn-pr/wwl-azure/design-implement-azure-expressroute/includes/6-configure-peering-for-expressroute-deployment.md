@@ -5,7 +5,7 @@ An ExpressRoute circuit two peering options associated with it: Azure private, a
 
 **Create Peering configuration**
 
-- You can configure private peering and Microsoft peering for an ExpressRoute circuit. Peering's can be configured in any order you choose. However, you must make sure that you complete the configuration of each peering one at a time. 
+- You can configure private peering and Microsoft peering for an ExpressRoute circuit. Peerings can be configured in any order you choose. However, you must make sure that you complete the configuration of each peering one at a time. 
 - You must have an active ExpressRoute circuit. Have the circuit enabled by your connectivity provider before you continue. To configure peering(s), the ExpressRoute circuit must be in a provisioned and enabled state.
 - If you plan to use a shared key/MD5 hash, be sure to use the key on both sides of the tunnel. The limit is a maximum of 25 alphanumeric characters. Special characters are not supported.
 - This only applies to circuits created with service providers offering Layer 2 connectivity services. If you are using a service provider that offers managed Layer 3 services (typically an IPVPN, like MPLS), your connectivity provider configures and manages the routing for you.
