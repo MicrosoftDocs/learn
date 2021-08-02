@@ -19,9 +19,9 @@ By the end of this module, you will be able to:
 
 To get the most out of this module, you should consider reviewing the following resources before going through this module:
 
-- [Azure Fundamentals part 1: Describe core Azure concepts](https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/): This free hands-on learning path module helps you understand the fundamentals of Azure at a general level.
-- [ Introduction to Kubernetes:](https://docs.microsoft.com/learn/modules/intro-to-kubernetes/) This free hands-on learning path module helps you understand the fundamentals of Kubernetes, a key technology for Azure Arc-enabled data services.
+- [Azure Fundamentals part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts): This free hands-on learning path module helps you understand the fundamentals of Azure at a general level.
+- [Introduction to Kubernetes](/learn/modules/intro-to-kubernetes): This free hands-on learning path module helps you understand the fundamentals of Kubernetes, a key technology for Azure Arc-enabled data services.
 
-For those wanting to maximize their understanding of Azure Arc-enabled SQL Managed Instance, review the following documentation page at [What is Azure SQL Managed Instance](https://docs.microsoft.com/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview).
+For those wanting to maximize their understanding of Azure Arc-enabled SQL Managed Instance, review the following documentation page at [What is Azure SQL Managed Instance](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview).
 
-For those wanting to maximize their understanding of Azure Arc-enabled PostgreSQL Hyperscale, review the following learning path module: [Introduction to Azure Database for PostgreSQL](https://docs.microsoft.com/learn/modules/intro-to-postgres/).
+For those wanting to maximize their understanding of Azure Arc-enabled PostgreSQL Hyperscale, review [Introduction to Azure Database for PostgreSQL](/learn/modules/intro-to-postgres).
