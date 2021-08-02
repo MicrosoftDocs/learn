@@ -187,7 +187,7 @@ You'll fix these problems throughout the rest of this module.
 
 At the end of the _migrate_ phase, your *main.bicep* file should look similar to the following:
 
-:::code language="bicep" source="code/3-main-migrated.txt" :::
+:::code language="bicep" source="code/3-main-migrated.bicep" :::
 
 > [!NOTE]
 > A few things will be different in your template, including some of the symbolic names and the public IP address. That's OK.
