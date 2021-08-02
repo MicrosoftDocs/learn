@@ -1,6 +1,6 @@
 In this unit, we'll look at autoscaling rules, and then in the next exercise, trigger the rules.
 
-## Autoscale conditions https://docs.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview
+## Autoscale conditions
 
 Azure provides two options for autoscaling:
 
