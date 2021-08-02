@@ -15,45 +15,34 @@ quiz:
   questions:
   - content: 'How do you include a new file to your Git index?'
     choices:
-    - content: "Deleting earlier versions of a project or file, so you know you are working only with the most current file or data."
+    - content: "Using the 'git include' command"
       isCorrect: false
-      explanation: "Incorrect. Version control systems purposefully retain earlier versions of a file or project, so you can access them, if needed."    
-    - content: "Making experimental changes to your project in an isolated branch."
+      explanation: "Incorrect. Git include isn't a current command supported by Git."    
+    - content: "Using the 'git add' command"
       isCorrect: true
-      explanation: "Correct! Using branches to create different sets of changes to a project is a key use case for version control."
-    - content: "Gathering feature requirements for a large project and communicating them to stakeholders."
+      explanation: "Correct! Git add will add whatever file you tell it to your git index."
+    - content: "Using the 'git commit' command"
       isCorrect: false
-      explanation: "Incorrect. Although some teams use tools like GitHub to collaborate, version control systems are not designed for this type of work."            
+      explanation: "Incorrect. git commit is used after you add your file to the index."            
   - content: 'What does the -m tag do to your commit?'
     choices:
-    - content: "Version management software (VMS)"
+    - content: "The -m tag is not a valid tag in git"
       isCorrect: false
       explanation: "Incorrect."
-    - content: "Software control management (SCM) system"
+    - content: "The tag modifies your commit if you forgot to add something"
       isCorrect: false
       explanation: "Incorrect."
-    - content: "Software configuration management (SCM) system"
+    - content: "This tag allows you add a message to your commit "
       isCorrect: true
-      explanation: "Correct!"
+      explanation: "Correct! Make sure to keep your commit messages short and readable"
   - content: 'Which of these is a good example of a commit message?'
     choices:
-    - content: "Git lets you work with one or more local branches and push changes to a remote repository. GitHub acts as the remote repository, which is accessed through a website or command-line tools."
+    - content: "Add feature to alert admin for new user registration..."
       isCorrect: true
-      explanation: "Correct! Git is the tool you can use to work with a local branch and push changes to a remote repository. GitHub acts as the remote repository."
-    - content: "Git is a distributed version control system (DVCS) that runs in the cloud. GitHub is an interface layer that provides access to Git technology."
+      explanation: "Correct! A good rule of thumb is to keep your git commit messages under 50 words and make sure they are descriptive to other developers."
+    - content: "added new feature"
       isCorrect: false
-      explanation: "Incorrect. Users have access to both Git and GitHub. GitHub is a cloud platform that uses the Git DVCS."
-    - content: "Git is used by an individual contributor. GitHub is used by multiple contributors to simplify group development work."
+      explanation: "Incorrect. this commit message is short and non descriptive of the task that you completed."
+    - content: "Add Name, age ,height, weight and salary labels with corresponding text boxes and more over a Submit Button to the webpage to ensure the user is clear on what is being added..."
       isCorrect: false
-      explanation: "Incorrect. Both Git and GitHub are used by individual contributors and by teams to facilitate working together."            
-  - content: 'Which Git function allows you to replace a file?'
-    choices:
-    - content: "`git init`"
-      isCorrect: false
-      explanation: "Incorrect. The `git init` command is used to initialize a new Git repository."    
-    - content: "`git status`"
-      isCorrect: false
-      explanation: "Incorrect. The `git status` command lets you see which changes are currently being tracked by Git."
-    - content: "`git help`"
-      isCorrect: true
-      explanation: "Correct! Use `git help` to view information about how to use Git."
+      explanation: "Incorrect. This commit, while being quite descriptive of the work done, adds alot of information that may be too much."            
