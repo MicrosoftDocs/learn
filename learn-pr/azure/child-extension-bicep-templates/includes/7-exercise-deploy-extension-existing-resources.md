@@ -158,7 +158,7 @@ New-AzResourceGroupDeployment `
 
 ### Check your deployment
 
-1. In your browser, go back to the Azure portal. Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment. 
+1. In your browser, go back to the Azure portal. Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment.
 
 1. Select the **1 Succeeded** link.
 
@@ -172,7 +172,7 @@ New-AzResourceGroupDeployment `
 
     :::image type="content" source="../media/7-deployment-details-cosmos-db-selected.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with the Azure Cosmos DB account highlighted." border="true":::
 
-1. In the **Search** field in the top left, enter _Diagnostic settings_ and select the **Diagnostic settings** menu item.
+1. In the **Search** box in the top left, enter _Diagnostic settings_, and select the **Diagnostic settings** menu item.
 
     :::image type="content" source="../media/7-cosmos-db-search.png" alt-text="Screenshot of the Azure portal interface for the Azure Cosmos DB account, showing the search field with 'Diagnostic settings' entered and the 'Diagnostic settings' menu item highlighted." border="true":::
 
