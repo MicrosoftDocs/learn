@@ -68,18 +68,6 @@ A single autoscale condition can contain several autoscale rules (for example, a
 
 When determining whether to scale out, the autoscale action will be performed if any of the scale-out rules are met (HTTP queue length exceeds 10 or CPU utilization exceeds 70%). When scaling in, the autoscale action will run only if all of the scale-in rules are met (HTTP queue length drops to zero and CPU utilization falls below 50%). If you need to scale in if only one the scale-in rules are met, you must define the rules in separate autoscale conditions.
 
-## Navigate to the Autoscale page in the Azure portal
-
-1. Sign in to the Azure portal
-2. Go to the Azure Spring Cloud **Overview** page.
-3. Select the resource group that contains your service.
-4. Select the **Apps** tab under **Settings** in the menu on the left navigation pane.
-5. Select the application for which you want to set up Autoscale. In this example, select the application named **demo**. You should then see the application's **Overview** page.
-6. Go to the **Scale out** tab under **Settings** in the menu on the left navigation pane.
-7. Select the deployment you want to set up Autoscale. You should see options for Autoscale shown in the following section.
-
-![Autoscale menu](../media/autoscale-menu.png)
-
 ## Set up Autoscale settings for your application in the Azure portal
 
 There are two options for Autoscale demand management:
@@ -91,19 +79,3 @@ There are two options for Autoscale demand management:
 In the Azure portal, choose how you want to scale.  The following figure shows the **Custom autoscale** option and mode settings.
 
 ![Custom autoscale](../media/custom-autoscale.png)
-
-## Set up Autoscale settings for your application in Azure CLI
-
-You can also set Autoscale modes using the Azure CLI.  The following commands create an Autoscale setting and an Autoscale rule.
-
-- Create Autoscale setting
-
-  ```bash
-  az monitor autoscale create -g demo-rg --resource /subscriptions/ffffffff-ffff-ffff-ffff-ffffffffffff/resourcegroups/demo-rg/providers/Microsoft.AppPlatform/Spring/autoscale/apps/demo/deployments/default --name demo-setting --min-count 1 --max-count 5 --count 1
-  ```
-
-- Create Autoscale rule
-
-  ```bash
-  az monitor autoscale rule create -g demo-rg --autoscale-name demo-setting --scale out 1 --cooldown 1 --condition "tomcat.global.request.total.count > 100 avg 1m where AppName == demo and Deployment == default"
-  ```

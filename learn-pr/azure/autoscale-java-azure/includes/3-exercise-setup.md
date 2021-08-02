@@ -5,15 +5,6 @@ In this exercise, you'll configure a sample Application to be ready for autoscal
 In this exercise, you'll clone a Git repository and run a script that sets-up an Azure Spring Cloud application and Azure Database for MySQL.
 The script deploys a well-known PetClinic microservice application and is built around small independent services, communicating over HTTP via a REST API.
 
-## The sample microservice application
-
-The PetClinic application is decomposed into four core microservices. All of them are independently deployable applications organized by business domains.
-
-- Customers service: Contains general user input logic and validation including pets and owners information (Name, Address, City, Telephone).
-- Visits service: Stores and shows visits information for each pets' comments.
-- Vets service: Stores and shows Veterinarians' information, including names and specialties.
-- API Gateway: A single entry point into the system, used to handle requests and route them to an appropriate service, and aggregate the results.
-
 ## Set up the sample microservice application
 
 In a web browser, open https://shell.azure.com in a new browser window.
