@@ -1,7 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.migrate-azure-resources-bicep.exercise-refactor-bicep-file
 title: Exercise - Refactor the Bicep file
-sandbox: true
 metadata:
   unitType: exercise
   title: Exercise - Refactor the Bicep file
