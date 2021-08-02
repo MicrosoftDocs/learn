@@ -1,0 +1,6 @@
+WARNING: Decompilation is a best-effort process, as there is no guaranteed mapping from ARM JSON to Bicep.
+You may need to fix warnings and errors in the generated bicep file(s), or decompilation may fail entirely if an accurate conversion is not possible.
+If you would like to report any issues or inaccurate conversions, please see https://github.com/Azure/bicep/issues.
+C:\Users\toyuser\Desktop\template.bicep(70,5) : Warning BCP073: The property "tier" is read-only. Expressions cannot be assigned to read-only properties.
+C:\Users\toyuser\Desktop\template.bicep(171,3) : Error BCP073: The property "sku" is read-only. Expressions cannot be assigned to read-only properties.
+C:\Users\toyuser\Desktop\template.bicep(188,3) : Error BCP073: The property "sku" is read-only. Expressions cannot be assigned to read-only properties.
