@@ -1,4 +1,4 @@
-Regulations provide people with rights to help manage the personal data that organizations or employers collect from them. These regulations often refer to people as data subjects or consumers, and the organizations or employers with that data as data controllers, or controllers. The GDPR provides these rights to EU citizens. In the United States, the CCPA provides these rights to California consumers.
+Regulations provide people with rights to help manage the personal data that organizations or employers collect from them. These regulations often refer to people as data subjects or consumers, and the organizations or employers with that data as data controllers, or controllers. The GDPR provides these rights to data subject within the territorial reach of the GDPR. In the United States, the CCPA provides these rights to California consumers.
 
 There are significant differences between the CCPA and the GDPR. However, it’s easier to focus on the similarities, which include:
 
@@ -33,7 +33,7 @@ When a data controller receives a DSR, they must respond to it. Responses can in
 
 ## Process for DSR responses
 
-Microsoft services include administrative tools to help your organization respond to DSRs. Responding to a DSR includes the following actions:
+Microsoft services include administrative tools to help your organization respond to DSRs. Responding to a DSR includes the following DSR actions:
 
 - **Discovery.** A DSR begins with discovery. Use Microsoft search and discovery tools to find customer data that might be the subject of a DSR. Organizations can also use third-party products to gather information. 
 
@@ -60,7 +60,7 @@ The following list defines some of the terms that are relevant to DSR:
    - An identifier such as a name, an identification number, location data, or an online identifier.
    - One or more factors specific to the physical, physiological, genetic, mental, economic, cultural, or social identity of that natural person.
 - **Processor.** A natural or legal person, public authority, agency, or other body that processes personal data for the controller.
-- **Customer data.** All data, including text, sound, video, image files, or software that's provided by Microsoft, or on behalf of, a customer through Microsoft online services. Customer data includes:
+- **Customer data.** All data, including text, sound, video, image files, or software that's provided by Microsoft, or on behalf of a customer through Microsoft online services. Customer data includes:
    - Identifiable end-user information. An example is usernames and contact information in Azure AD.
-   - Customer content that a customer uploads to, or creates in, specific services. Such services could include an Azure Storage account, an Azure SQL database, or a customer's virtual machine (VM) image in Azure Virtual Machines.
+   - Customer content that a customer uploads to, or creates in specific services. Such services could include an Azure Storage account, an Azure SQL database, or a customer's virtual machine (VM) image in Azure Virtual Machines.
 - **System-generated logs.** Microsoft and other vendors generate logs and related data that help provide enterprise services to users. System-generated logs contain primarily pseudonymized  data, such as unique identifiers—typically system-generated numbers. These unique identifiers are used to deliver enterprise services to users. On their own, they can't be used to identify an individual person. However, system-generated logs might contain identifiable information about end users, such as a username.
