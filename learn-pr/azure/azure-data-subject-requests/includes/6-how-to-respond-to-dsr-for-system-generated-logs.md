@@ -18,8 +18,7 @@ Data that can be derived from system-generated logs includes:
 
 A Contoso customer residing in Spain submitted a DSR form through the corporate website. They’re requesting a copy of their personal data that's stored in system-generated logs. To respond to the DSR, take the following steps:
 
-1. Notify the tenant administrator of the request for system-generated logs.
-2. The tenant administrator can then use the Azure portal to create an export request:
+1. The tenant administrator can then use the Azure portal to create an export request:
 
     1. Sign into the Azure portal.
     1. Select **All services**, and then select **Policy**.
@@ -31,7 +30,7 @@ A Contoso customer residing in Spain submitted a DSR form through the corporate 
       - Storage account
       - Container
 
-3. The tenant administrator can export the data, and then send the file to the data subject.
+2. The tenant administrator can export the data, and then send the file to the data subject.
 
 > [!NOTE]
 > Personal data can come from the system-generated logs in multiple systems. This can cause the export process to take as long as a month to complete.
@@ -47,8 +46,7 @@ One of Contoso's customers who resides in The Netherlands has submitted a DSR fo
 1. In the **Deleted users** blade, select the data subject's user account check box.
 1. Select **Delete permanently**, and then select **Yes** to confirm.
 
-> [!NOTES]
-> 
+> [!NOTE]
 > In Example two, you used the same process that you used to respond to delete requests for Azure-based personal data. The user’s personal data in the system-generated logs is deleted, as is their user account, providing it doesn’t negatively impact the security or integrity of any Microsoft cloud service. This usually happens within 30 days of the user account’s deletion.
 
 > The exception to this 30-day period is with respect to a user's Exchange Online mailbox. To prevent accidental data loss, Exchange Online places data in a holding state for up to 60 days after permanent user-account deletion. You’ll need to contact Microsoft Support if the mailbox data must be removed earlier than the 60-day timeline.
