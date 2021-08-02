@@ -13,7 +13,7 @@ The convert phase consists of two steps:
 1. Capture a JSON representation of your Azure resources.
 1. Convert the JSON representation to Bicep by _decompiling_ it. The decompilation process outputs a Bicep file that isn't final, but that gives you a starting point for your migration.
 
-TODO figure
+:::image type="content" source="../media/2-convert.png" alt-text="TODO alt text" border="true":::
 
 If you have an existing JSON template that you're converting to Bicep, the first step is easy - you already have your source template. You'll learn how to decompile it to Bicep shortly.
 
@@ -23,7 +23,8 @@ If you're converting Azure resources that you deployed through the portal or ano
 
 Azure Resource Manager is the service that's used to deploy and manage resources in Azure. All resources deployed to Azure are tracked by Resource Manager, regardless of the method used to deploy the resource. You can use the Azure portal, Azure CLI, Azure PowerShell, the Resource Manager REST API, and Azure SDKs to interact with Resource Manager.
 
-TODO figure
+<!-- TODO move file to includes folder -->
+:::image type="content" source="../../introduction-to-infrastructure-as-code-using-bicep/media/azure-resource-manager.png" alt-text="TODO alt text" border="true":::
 
 Regardless of how each resource was created, information about the resource is made available in JSON format by Resource Manager. When you ask for a copy of the JSON representation of a resource, you're _exporting_ the resource. The JSON file that you export can be decompiled into Bicep.
 
@@ -46,7 +47,7 @@ There are a few things that you need to consider when exporting a resource:
 > [!NOTE]
 > However you export a template, treat it as a starting point and don't use it directly. Instead, use it as inspiration for your final template.
 
-## Export a single resource
+#### Export a single resource
 
 A single resource's definition can be exported to a JSON template by using the Azure portal. After you open a resource, select the **Export template** menu item to view the template:
 
@@ -65,7 +66,7 @@ virtualMachineResourceId=$(az resource show \
    --output tsv)
 az group export \
    --resource-group 'rg-app-prod-truckline' \
-   --resource-ids virtualMachineResourceId
+   --resource-ids $virtualMachineResourceId
 ```
 
 ::: zone-end
@@ -86,7 +87,7 @@ Export-AzResourceGroup `
 
 ::: zone-end
 
-## Export multiple resources
+#### Export multiple resources
 
 You can export all of the resources in a resource group by using the Azure portal by opening up the resource group blade and selecting **Export template**:
 
@@ -140,15 +141,18 @@ Export-AzResourceGroup `
 
 ::: zone-end
 
-### Use the Azure portal to view a template before you create a resource
+#### Use the Azure portal to view a template before you create a resource
 
 If you've ever deployed a resource manually from the Azure portal, you may have noticed the option to **Download a template for automation** before the deployment of the resource. This option exports a JSON ARM template based on the names and properties you've set while building the resource in the portal:
 
 :::image type="content" source="../media/4-download-template-for-automation.png" alt-text="Download template for automation option when deploying a new resource." border="true":::
 
-### View the template for a previous deployment
+#### View the template for a previous deployment
 
 Resource Manager tracks all resources and resource deployments. If the deployments were created using a compatible tool, you can access the deployment template from the resource group's deployment history.
+
+> [!IMPORTANT]
+> Some methods of creating resources don't create deployments, so this option might not be available for all of your Azure resources.
 
 There are a few things that you need to consider when exporting your templates using this method.
 
@@ -156,7 +160,6 @@ There are a few things that you need to consider when exporting your templates u
 - You can't select specific resources from a multi-resource deployment. This option will download all resources that were part of the initial deployment.
 - The template will only include resource properties needed for deployment.
 - The template will include parameters that will allow you to redeploy the template in multiple environments.
-- Some resource creation methods don't create deployments, so this option might not be available for all of your Azure resources.
 
 > [!TIP]
 > When you copy a template from a deployment, it probably won't include extraneous properties. You should still check that the template includes everything you expect, though.
@@ -174,11 +177,11 @@ The second step in migrating your Azure resources to Bicep is converting your JS
 
 The decompilation process is a best-effort process and doesn't guarantee a full mapping from JSON to Bicep. You may need to revise the generated Bicep file to meet your template best practices before using the file to deploy resources. Later in this module, you'll learn how to fix any issues you come across in the decompilation process.
 
-Once you decompile your template, you've completed the _convert_ phase and you have a valid Bicep file. However, the file you create isn't ready to use yet - it's just a reference point.
+Once you decompile your template, you've completed the _convert_ phase and you have a valid Bicep file to start from. However, the file you create isn't ready to use yet - it's just a reference point.
 
 ## Migrate phase
 
-In the _migrate_ phase of converting your templates to Bicep, the goal is to create the first draft of your real Bicep file, and to ensure it includes all of your Azure resources. In this phase, you do the following steps:
+In the _migrate_ phase of converting your templates to Bicep, the goal is to create the first draft of your real Bicep file, and to ensure it defines all of the Azure resources that are in scope for the migration. In this phase, you do the following steps:
 
 1. Create a new empty Bicep file.
 1. Copy each resource from your decompiled template.
@@ -192,7 +195,7 @@ In the _migrate_ phase of converting your templates to Bicep, the goal is to cre
 It's good practice to create a brand new Bicep file. The file you created in the _convert_ phase is a reference point for you to look at, but you shouldn't treat it as final or deploy it as-is.
 
 > [!TIP]
-> Visual Studio Code has excellent support for Bicep files. When you start the migrate phase, it's a good idea to use Visual Studio Code's split editor to open your newly created blank Bicep file side by side with your decompiled Bicep file.
+> When you start the migrate phase, it can be helpful to use Visual Studio Code's split editor to open your newly created blank Bicep file side by side with your decompiled Bicep file.
 
 ### Copy resources to the new Bicep file
 
