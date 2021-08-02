@@ -60,7 +60,7 @@ We're ready to set up the resources for the SQL elastic pool. We'll switch to th
     |---|---|
     | **Project details** |
     | Subscription | Concierge Subscription |
-    | Resource group | From ther dropdown list, select <rgn>[sandbox resource group name]</rgn> |
+    | Resource group | From the dropdown list, select <rgn>[sandbox resource group name]</rgn> |
     | **Elastic pool details** |
     | Elastic Pool Name | Provide a meaningful name, such as *FitnessSQLPool*. |
     | Server | Ensure your existing *FitnessSQLServer-nnnn* server is selected. |

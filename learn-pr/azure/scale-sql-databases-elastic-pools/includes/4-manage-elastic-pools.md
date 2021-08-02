@@ -1,10 +1,10 @@
-SQL elastic pools can help reduce server costs. To make effective use of elastic pools, you muust configure their capacity correctly. To configure an elastic pool, we need to understand how SQL server performance is measured and priced, using either a *DTU-based* or *vCore-based* purchasing model.
+SQL elastic pools can help reduce server costs. To make effective use of elastic pools, you must configure their capacity correctly. To configure an elastic pool, we need to understand how SQL server performance is measured and priced, using either a *DTU-based* or *vCore-based* purchasing model.
 
 ## DTU-based pricing model
 
 A database transaction unit (DTU) is a unit of measurement for the performance of a service tier in Azure, and is based on a bundled measure of compute, storage, and IO resources. Compute sizes are expressed in terms of Database Transaction Units (DTUs) for single databases, or elastic Database Transaction Units (eDTUs) for elastic pools.
 
-If demand exceeds the available resources for your tier for any resource (CPU, storage or IO), the performance of your database is throttled. This model is best for customers who want simple, pre-configured resource options available in three tiers: **basic**, **standard**, and **premium**. 
+If demand exceeds the available resources for your tier for any resource (CPU, storage or IO), the performance of your database is throttled. This model is best for customers who want simple, pre-configured resource options available in three tiers: **basic**, **standard**, and **premium**.
 
 ## vCore-based pricing model
 
