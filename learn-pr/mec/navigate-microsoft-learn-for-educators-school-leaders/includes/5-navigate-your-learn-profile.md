@@ -1,9 +1,10 @@
-## Your profile
-Your profile stores your activities, collections, achievements, and settings. To go to your profile, navigate to the avatar image on the upper right-hand corner of the browser window and select 'profile' in the pop-up window.
+Your profile stores your activities, collections, achievements, and settings. 
+
+Access your profile by navigating to the avatar image on the upper right corner of the browser window and then select **Profile** in the pop-up window.
 
 :::image type="icon" source="../media/Screenshot of profile icon.png" border="false":::
 
-Here are some main items in your profile:
+Here are some of the main items in your profile:
 
 |          |                                                              |
 |----------|--------------------------------------------------------------|
@@ -15,24 +16,31 @@ Here are some main items in your profile:
 |Achievements | Badges and trophies that you have earned in Learn. You can export certificate for each badge and transcript for all your achievements |
 |Settings | Change your display name, manage email preferences and account settings. You can link your work account to your profile and share your learning progress with your school |
 
-:::image type="content" source="../media/Screenshot of learn profile categories.png" alt-text="image of the learn profile categories that can be selected from":::
-
 > [!NOTE]
-> If you came from Microsoft Educator Center, we will be moving your full course history and badges to Learn. We will notify you before that takes place, until that time, please still refer to your achievements in your Microsoft Educator Center profile for your full completion history.
+> Great news! Those of you who have achievement history within the Microsoft Educator Center, will get to retain all your prior course history, badges, and professional development hours.
+>
+>We will notify you before that takes place. Until that time, please still refer to your achievements in your Microsoft Educator Center profile for your full completion history.
 
 ## Changing your personal info, username and URL
 
-Select "Settings" in the left-hand menu to open your profile settings options.
+You may wish to customize your profile to better fit your personality. You can do this in the Profile settings. 
 
-Here you can change your:
-- Profile picture - The avatar image displayed for your profile 
-- Username/URL - The link that you can provide others to access your public profile
-- Display name - The name associated with your profile.
+1. Navigate to your avatar image.
+1. Select Profile, then Settings.
+1. From here you can change:
+    - Profile picture
+    - Username/URL
+    - Display name
 
 > [!IMPORTANT]
 > By default your Learn profile is public but you can use private mode to restrict what others can see. When private mode is on, Learn badges, trophies, and Q&A contributions are hidden on your public profile. 
 >
-> To enable private mode go to Privacy Settings in the Settings area of your profile.
+> To enable private mode:
+>
+> 1. Navigate to your avatar image.
+> 1. Select Profile, then Settings.
+> 1. Scroll down to the privacy area and move the slider to the right, then select Save.
+> To undo it, move the slider back to the left, then select Save.
 
 ## Adding and removing accounts
 
