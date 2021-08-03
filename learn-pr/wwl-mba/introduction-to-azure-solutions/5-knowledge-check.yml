@@ -3,15 +3,14 @@ uid: learn-wwl.introduction-to-azure-solutions.5-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Knowledge check
-  ms.date: 11/07/2019
+  description: "Knowledge check"
+  ms.date: 08/03/2021
   author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 durationInMinutes: 2
-
 quiz:
   questions:
   - content: "Artificial intelligence combined with Microsoft tools, services, and infrastructure can make AI real for your organization. Which of the following describes a scenario that uses AI to improve business outcomes?"
@@ -25,7 +24,7 @@ quiz:
     - content: "Unlocking latent data with knowledge mining"
       isCorrect: true
       explanation: "Correct. AI scenarios include building AI apps and agents, unlocking latent data with knowledge mining, and developing AI models with machine learning"
-  - content: "Azure provides unique value in four areas: Be Future Ready, Operate Hybrid Seamlessly, Trust your Cloud, and _____________.  "
+  - content: "Azure provides unique value in four areas: Be Future Ready, Operate Hybrid Seamlessly, Trust your Cloud, and _____________."
     choices:
     - content: "Build on your Terms"
       isCorrect: true
@@ -36,7 +35,7 @@ quiz:
     - content: "Most Compliant Platform"
       isCorrect: false
       explanation: "Incorrect. Compliance is a key part of the Trust your Cloud value, but does not stand alone.  Remember that developers love to build the way they want to."
-  - content: "What is the Microsoft solution that allows you to run your own copy of Azure within your datacenter, letting you build once and deploy seamlessly on-premises or to the cloud?  "
+  - content: "What is the Microsoft solution that allows you to run your own copy of Azure within your datacenter, letting you build once and deploy seamlessly on-premises or to the cloud?"
     choices:
     - content: "Azure Cloud Services"
       isCorrect: false
@@ -47,7 +46,7 @@ quiz:
     - content: "Azure Server"
       isCorrect: false
       explanation: "Incorrect. Azure Server is not a Microsoft solution."
-  - content: "Microsoft has support and coverage for certification and regulations worldwide. We cover certifications in the US Government, Industry, and what other areas?  "
+  - content: "Microsoft has support and coverage for certification and regulations worldwide. We cover certifications in the US Government, Industry, and what other areas?"
     choices:
     - content: "Regional and Global certification support"
       isCorrect: true
@@ -58,7 +57,7 @@ quiz:
     - content: "All currently available certifications worldwide"
       isCorrect: false
       explanation: "Incorrect. Although Microsoft has more industry certifications than any other cloud provider, it does not hold all currently available certifications."
-  - content: "Build on your Terms is a unique value for Azure, what does that mean to your developers?  "
+  - content: "Build on your Terms is a unique value for Azure, what does that mean to your developers?"
     choices:
     - content: "IT sets policy for Azure development that all developers have to follow to publish solutions."
       isCorrect: false
