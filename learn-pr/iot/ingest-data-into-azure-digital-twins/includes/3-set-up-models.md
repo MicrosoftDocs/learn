@@ -7,7 +7,6 @@ The model looks like this:
     "@id": "dtmi:com:microsoft:iot:e2e:digital_factory:production_step_moulding;1",
     "@type": "Interface",
     "displayName": "Factory Production Step: Moulding - Interface Model",
-    "extends": "dtmi:com:microsoft:iot:e2e:digital_factory:production_step;2",
     "@context": "dtmi:dtdl:context;2",
     "contents": [
       {
@@ -57,3 +56,11 @@ The model looks like this:
       "ChasisTemperature": 0.0
     }
     ```
+
+    > [!IMPORTANT]
+    > Be sure to set the initial value for the "ChasisTemperature" property by including the `--properties  ./properties.json` segment of the command.
+    >
+    > If the property isn't set, the output from the command will omit the `"ChasisTemperature": 0.0` line and cause an error while running the simulated device later on in the module. In this case:
+    >
+    > 1. Delete the twin by running the `az dt twin delete --dt-name $dtname --twin-id GrindingStep` command.
+    > 1. Run the `az dt twin create --dtmi "dtmi:com:microsoft:iot:e2e:digital_factory:production_step_moulding;1" --twin-id GrindingStep --properties  ./properties.json --dt-name $dtname` command again.

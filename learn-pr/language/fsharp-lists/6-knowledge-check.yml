@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.fsharp-lists.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Four multiple-choice questions
+  ms.date: 07/28/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 4
+content: Choose the best response for each question. Then select **Check your answers**.
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: You are operating on a list, where each item has properties `City` and `Country`. You want to display those two properties concatenated, what list function would you use?
+      choices:
+        - content: Use the `sum()` function.
+          isCorrect: false
+          explanation: Incorrect. `sum()` sums up numbers, what you are looking for a transformation, so `map()` would be correct.
+        - content: Use the `iter()`
+          isCorrect: false
+          explanation: Incorrect. `iter()` iterates over each element without transforming it. You need to transform the `City` and `Country` into one property, so `map()` is the correct function to use.
+        - content: Use the `map()` function.
+          isCorrect: true
+          explanation: Correct. Using `map()` allows you to transform two properties into one `List.map(fun item -> item.City + item.Country )`
+    - content: Given the list `let list = [1;2;3;4]` what will the `Head` property return?
+      choices:
+        - content: It returns `[2;3;4]`
+          isCorrect: false
+          explanation: Incorrect. That's the tail part of the list.
+        - content: It returns `1` 
+          isCorrect: true
+          explanation: Correct. `Head` return the first element of the list, which has the value `1`.
+        - content: It returns `4`. 
+          isCorrect: false
+          explanation: Incorrect. `4`is the last element of the list. `Head` return the first element of the list, which has the value `1`.
+    - content: What is the correct way to return the average value from a list ?
+      choices: 
+        - content: Use the following code `let list = [2;4]` and calculate average with `let average = List.average list`.
+          isCorrect: false
+          explanation: Incorrect. The numbers needs to be floating point, so you need to transform the values `let avg = list |> List.map(fun x -> float x) |> List.average` or use a list with floating point numbers `let list = [2.0; 4.0]`.
+        - content: Use the following code `let list = [2.0; 4.0]` and calculate average with `let average = List.avg list`.
+          isCorrect: false
+          explanation: Incorrect. The function is called `average()` not `avg()`.
+        - content: Use the following code `let list = [2.0; 4.0]` and calculate average with `let average = List.average list`.
+          isCorrect: true
+          explanation: Correct. You need the list to consist of floating point numbers and use the `average()` function.

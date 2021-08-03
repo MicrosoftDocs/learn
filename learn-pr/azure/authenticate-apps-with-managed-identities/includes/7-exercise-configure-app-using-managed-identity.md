@@ -2,7 +2,7 @@ You can store application connection strings, credentials, passwords, and other 
 
 Your stock-tracking application connects to Azure SQL Database. Previously, your on-premises app stored the connection string in configuration files. As part of the migration to Azure, you now securely store all credentials and connection strings in an Azure Key Vault.
 
-Your stock-tracking application runs on a virtual machine, so you can use the system-assigned managed identity that you created. To your key vault, you add a policy that grants the appropriate permissions to the VM.
+Your stock-tracking application runs on a virtual machine (VM), so you can use the system-assigned managed identity that you created. To your key vault, you add a policy that grants the appropriate permissions to the VM.
 
 In this exercise, you'll edit your app to use the new key vault. Then, you'll grant the managed identity for the VM access so that the app can retrieve the database connection. Finally, you'll build and run an app on the VM to access Key Vault, and retrieve the information.
 

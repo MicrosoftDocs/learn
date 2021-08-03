@@ -10,7 +10,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 ## Create a storage account using Azure portal
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
 1. On the Azure portal menu, or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
@@ -72,7 +72,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. Select **Review + create** to review the settings. This will do a quick validation of your options to make sure all the required fields are selected. If there are issues, they'll be reported here.
 
-1. If validation passed, select **Create** to provision the storage account.
+1. After validation passes successfully, select **Create** to provision the storage account.
 
    It may take up to two minutes to deploy the account.
 

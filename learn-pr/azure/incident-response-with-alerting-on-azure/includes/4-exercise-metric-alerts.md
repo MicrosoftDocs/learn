@@ -25,6 +25,7 @@ This VM will run a specific configuration that stresses the CPU, and generates t
     az vm create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name vm1 \
+        --location eastUS \
         --image UbuntuLTS \
         --custom-data cloud-init.txt \
         --generate-ssh-keys
@@ -47,7 +48,7 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
     ![Screenshot that shows the "Create alert rule" pane.](../media/4-create-monitor-rule.png)
 
-1. Under **Scope**, select **Select resource**. The **Select a resource** pane appears.
+1. Under **Scope**, select the **Select resource** link. The **Select a resource** pane appears.
 
 1. The **Filter by subscription** dropdown list should already be populated with **Concierge Subscription**. In the **Filter by resource type** dropdown list, select **Virtual machines**.
 
@@ -55,7 +56,7 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
     ![Screenshot showing the "Select a resource" pane.](../media/4-select-resource.png)
 
-1. Next, you'll configure the conditional logic for this resource. From the **Create alert rule** pane, under the **Condition** section, select **Add condition**. The **Configure signal logic** pane appears.
+1. Next, you'll configure the conditional logic for this resource. From the **Create alert rule** pane, under the **Condition** section, select the **Add condition** link. The **Select a signal** pane appears.
 
 1. For **Signal type**, from the dropdown list, select **Metrics**. For **Monitor service**, select **All**.
 
@@ -63,7 +64,9 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
 
     ![Screenshot that shows the "Configure signal logic" pane.](../media/4-configure-signal-logic.png)
 
-1. In the **Configure signal logic** pane, enter the following values for each setting.
+    The **Configure signal logic** pane appears.
+
+1. Enter the following values for each setting.
 
     | Setting | Value |
     |---------|---------|
@@ -86,7 +89,7 @@ You use either the Azure portal or the CLI to create a metric alert. In this exe
     |---------|---------|
     | Alert rule name | Cpu90PercentAlert |
     | Description | Virtual machine is running at or greater than 90% CPU utilization |
-    | Severity | Sev 2 |
+    | Severity | Sev 2 - Warning |
     | Enable alert rule upon creation | Yes (checked) |
     | | |
 
