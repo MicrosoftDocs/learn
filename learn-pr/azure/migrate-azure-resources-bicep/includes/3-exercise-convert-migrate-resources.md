@@ -170,11 +170,11 @@ You'll fix these problems throughout the rest of this module.
 
 1. Repeat the process with the following resources and their associated parameters:
 
-   - `publicIPAddresses_ToyTruckServer_ip_name`
-   - `virtualNetworks_learn_b44b5d84_e9a2_4b1b_8d33_fdf6122b54ad_vnet_name_resource`
+   - `publicIPAddresses_ToyTruckServer_ip_name_resource`
+   - `virtualNetworks_ToyTruck_vnet_name_resource`
    - `virtualMachines_ToyTruckServer_name_resource`
-   - `virtualNetworks_learn_b44b5d84_e9a2_4b1b_8d33_fdf6122b54ad_vnet_name_default`
-   - `networkInterfaces_toytruckserver686_name_resource`
+   - `virtualNetworks_ToyTruck_vnet_name_default`
+   - `networkInterfaces_toytruckserver90_name_resource`
 
    > [!NOTE]
    > The names of the resources in your deployment might be different to the ones above. Find the resources that have names that are close to the names listed here.

@@ -14,9 +14,9 @@ During the process, you'll:
 
 1. Select the symbolic name for the network security group resource, which is named `networkSecurityGroups_ToyTruckServer_nsg_name_resource` or a similar name.
 
-   Rename the symbolic name. You can choose to select F2, or select and hold (or right-click) and select **Rename Symbol**.
+   Rename the symbolic name. You can choose to select <kbd>F2</kbd>, or select and hold (or right-click) and select **Rename Symbol**.
 
-   Enter the name `networkSecurityGroup` and press Enter. Visual Studio Code updates the name and all of the references inside the file.
+   Enter the name `networkSecurityGroup` and press <kbd>Enter</kbd>. Visual Studio Code updates the name and all of the references inside the file.
 
 1. Repeat this process for each resource, and rename them as listed below:
 
