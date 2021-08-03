@@ -1,5 +1,3 @@
-[!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
-
 In the previous exercise, you created an initial Bicep file that contains the toy truck virtual machine and the associated resources. However, the Bicep template doesn't follow best practices, and it's a little hard to read. In this unit, you'll refactor the file.
 
 During the process, you'll:
@@ -88,7 +86,7 @@ The parameters in the current template don't really need to be parameters. Here,
    | `networkSecurityGroups_ToyTruckServer_nsg_name` | `networkSecurityGroupName` |
    | `virtualNetworks_learn_b44b5d84_e9a2_4b1b_8d33_fdf6122b54ad_vnet_name` | `virtualNetworkName` |
 
-1. Verify that your variable list looks similar to the following:
+1. Verify that your variable declarations look similar to the following:
 
    :::code language="bicep" source="code/5-variables.bicep" :::
 
@@ -113,7 +111,7 @@ Your template has some hard-coded values where parameters or variables would be 
 
    :::code language="bicep" source="code/5-main-refactored.bicep" range="4-24" :::
 
-1. Below the current variable declarations, add the following new variables:
+1. Add the following new variable declarations:
 
    :::code language="bicep" source="code/5-main-refactored.bicep" range="26-37" highlight="2-7, 12" :::
 
@@ -158,13 +156,19 @@ The export process adds redundant properties to many resources. Here, you remove
    - Remove the `dnsServers` property from `dnsSettings`, since it's empty. Remove the `dnsSettings` property since it's empty now, too.
 
 > [!TIP]
-> When you work with your own templates, you'll need to determine if there are any properties that should be removed. The Azure Quickstart Templates repository is helpful for this task. Find a quickstart template that is approximately what you're trying to do, and look at the properties it sets on the resource.
+> When you work with your own templates, you'll need to determine whether there are any properties that should be removed like you've done here.
+> 
+> The Azure Quickstart Templates repository is helpful for this task. Find a quickstart template that is approximately what you're trying to do, and look at the properties it sets on the resource.
 
 ## Verify your template
 
-You've now completed an initial refactoring pass on the template. Your *main.bicep* file should look similar to the following:
+1. At the end of the _refactor_ phase, your *main.bicep* file should look similar to the following:
 
-:::code language="bicep" source="code/5-main-refactored.bicep" :::
+   :::code language="bicep" source="code/5-main-refactored.bicep" :::
+
+1. Select **View** > **Problems** to show the problems pane.
+
+   No problems are indicated.
 
 > [!TIP]
-> When you work with your own templates, you might make different choices about the properties to parameterize and other customizations. The advice we've provided here is general guidance to help you get started, but you'll need to consider your own environment and how you want to reuse your templates when deciding how to refactor your own Bicep files.
+> When you work with your own templates, you might make different choices about the properties to parameterize and other customizations. Throughout this module, we provide general guidance to help you get started, but you'll need to consider your own environment and how you want to reuse your templates when deciding how to refactor your own Bicep files.

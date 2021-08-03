@@ -199,7 +199,7 @@ You'll fix these problems throughout the rest of this module.
    :::code language="bicep" source="code/3-main-migrated.bicep" :::
 
    > [!NOTE]
-   > A few things will be different in your template, including some of the symbolic names and the public IP address. That's OK.
+   > A few things will be different in your template, including some of the symbolic names and the public IP address. That's OK. Some of this will be resolved later in the module.
 
 1. Close the *template.bicep* file.
 

@@ -1,5 +1,3 @@
-[!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
-
 TODO: Introduction - Insert text here.
 
 During the process, you'll:
