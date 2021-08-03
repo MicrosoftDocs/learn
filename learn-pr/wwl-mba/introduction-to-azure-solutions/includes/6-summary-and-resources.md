@@ -1,5 +1,5 @@
 Azure enables digital transformation through flexible solutions that evolve along with your business. Whether you're designing for on-premises, cloud, hybrid, 
-or Edge devices Azure can help meet your digital transformation goals.  Azure enables your to Invent with Purpose, and promises that you will enable you to be
+or Edge devices Azure can help meet your digital transformation goals.  Azure enables you to Invent with Purpose, and promises that you will enable you to be
 future ready, build on your terms, operate your hybrid environment seamlessly, and trust your cloud.
 
 Now that you have reviewed this module, you should be able to:
@@ -34,4 +34,4 @@ Use these resources to discover more.
 > [!TIP]
 > To open a resource link, right-click it, and then select “Open in new tab or window." That way, you can check out the resource and easily return to the module tab to unlock your achievement when you're done.
 
-- [Azure.com – depth on Azure capabilities](https://azure.com/)
+- [Azure.com – depth on Azure capabilities](http://azure.com/)
