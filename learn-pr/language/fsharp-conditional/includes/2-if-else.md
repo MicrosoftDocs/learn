@@ -1,14 +1,14 @@
-Let's say you have a program that creates a backup file based on the files in folder. The program consists of few lines of code locating and compressing a set of files. What if you suddenly wanted to add logic that said, only create such a backup file if a backup hasn't been done that day. Such a program would need a way to perform a check so it has a different behavior based on a condition of file existing or not.
+Let's say you have a program that creates a backup file based on the files in a folder. The program consists of a few lines of code that locate and compress a set of files. What if you decide that you want to add logic that creates a backup file only if a backup hasn't been made that day? The program would need a way to check for that condition (has a backup already been made?), and then do something different based on whether the condition is true (if a backup file for the day exists, don't run backup).
 
-## Create a code branch with `if`
+## Create a code branch by using an if construct
 
-An `if` construct evaluates a boolean expression. If said expression evaluates to `true`, it runs a different branch of code. Here's what an `if` syntax looks like:
+An `if` construct evaluates a Boolean expression. If the expression evaluates as `true`, the program runs a different branch of code. Here's what the syntax of an `if` construct looks like:
 
 ```fsharp
 if <condition> then <expression>
 ```
 
-A more tangible code example would look like so:
+A more tangible code example looks like this example:
 
 ```fsharp
 let age = 66
@@ -16,11 +16,11 @@ if age > 65
 then printfn "Senior citizen"
 ```
 
-## Define an alternate branch with `else`
+## Define an alternate branch by using an else clause
 
-An `else` clause is used with an `if` to express that if the `if` statement evaluates to `false` then the `else` branch is run instead.
+Use an `else` clause with an `if` construct to express that if the `if` statement evaluates as `false`, the `else` branch runs instead.
 
-Here's how you can use an else:
+Here's how you can use an `else` clause:
 
 ```fsharp
 let age = 66
@@ -29,9 +29,9 @@ then printfn "Senior citizen"
 else printfn "Citizen"
 ```
 
-## `If` as an expression
+## Use an if construct as an expression
 
-So far you've seen how `if` and `else` have created different branches to the code that produces a different result based on whether a boolean condition evaluates to `true` or `false`. What's always happening, that you might not be aware of, is that when an expression is run, it produces a value. It becomes clearer if the code is written like so instead:
+So far, you've seen how you can use `if` and `else` to create different branches in the code. When the code follows different branches, it produces different results based on whether a Boolean condition evaluates as `true` or `false`. What's always happening, and what you might not be aware of, is that when an expression is run, a value is produced. If the code is written like this example, this result becomes clear:
 
 ```fsharp
 let age = 64
@@ -39,35 +39,35 @@ let message = if age > 65 then "Senior citizen" else "Citizen"
 printfn "%s" message
 ```
 
-In this case, the `if` and `else` behave more like a ternary expression where if a condition is true, it returns that value, and if false it returns the other value. In fact, `if` always behaves this way. Let's revisit a previous code example and see that that is the case:
+In this case, `if` and `else` work more like a ternary expression. If a condition is `true`, it returns that value. If it is `false`, it returns the other value. In fact, it's true for all instances of `if`. Let's revisit an earlier code example and see that that's the case:
 
 ```fsharp
 let age = 66
 if age > 65 then printfn "Senior citizen" else printfn "Citizen"
 ```
 
-Same code example as before, with the difference being that `if` and `else` have been put on the same line. The expression being run `printfn "Senior citizen"` produces a value of type `unit`.
+It's the same code example you saw earlier, but now, `if` and `else` are on the same line. The `printfn "Senior citizen"` expression produces a value of type `unit`.
 
 > [!NOTE]
 > `unit` is a value that acts as a placeholder when no actual value is returned. You can think of it like `void` or `None`.
 
-Another thing to keep in mind is that you can't mix types, the `if` and `else` needs to return the same data type or you will get an error. You can't for example write code like so:
+Another thing to keep in mind is that you can't mix types. `if` and `else` must return the same data type or you'll get an error. For example, you can't write code that looks like this example:
 
 ```fsharp
 let someCondition = true
 let value = if someCondition then "hello" else 1 // not allowed
 ```
 
-In this case, the `if` decides that the return type is 'string', so the `else` can't decide to change that to `int`. You would need to modify the code like so for the above to work:
+In this case, `if` determines that the return type is `string`, so `else` can't change that type to `int`. For the preceding code to work, you must modify it:
 
 ```fsharp
 let someCondition = true
 let value = if someCondition then "hello" else "1" // allowed
 ```
 
-## Elif
+## Use an elif construct
 
-So far you've seen `if` and `else`, but there's another construct `elif` that you would use in much the same way as an `if`. Just like an `if`, the `elif` takes a boolean and it should be added right next to the `if`. The `elif` is executed if the `if` evaluates to `false`. Here's an example of using `elif`:
+So far, you've seen how `if` and `else` work. `elif` is another construct that you can use similar to the way you'd use `if`. Just like an `if` construct, the `elif` construct takes a Boolean value and should be added right after `if`. The `elif` constructed is executed if the `if` evaluates as `false`. Here's an example of how to use `elif`:
 
 ```fsharp
 let cardValue = 1
