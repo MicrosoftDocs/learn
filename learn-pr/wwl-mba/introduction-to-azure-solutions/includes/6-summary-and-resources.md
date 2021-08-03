@@ -13,7 +13,7 @@ Now that you have reviewed this module, you should be able to:
 Here are the two key takeaways from this module:
 
 :::row:::
-![Icon of lightbulb](../media/Key-Takeaway.png)
+![Icon of lightbulb](../media/key-takeaway.png)
 :::column:::
 1. Wherever you are on your cloud adoption journey, Azure delivers unique value in four areas: be future ready, build on your terms, operate hybrid seamlessly, and trust your cloud.
 1. Azure provides technologies and services across the following solution areas:
@@ -34,4 +34,4 @@ Use these resources to discover more.
 > [!TIP]
 > To open a resource link, right-click it, and then select “Open in new tab or window." That way, you can check out the resource and easily return to the module tab to unlock your achievement when you're done.
 
-- [Azure.com – depth on Azure capabilities](http://azure.com/)
+- [Azure.com – depth on Azure capabilities](https://azure.com/)
