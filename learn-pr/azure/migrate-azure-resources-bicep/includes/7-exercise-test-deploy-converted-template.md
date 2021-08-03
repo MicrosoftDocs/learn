@@ -54,6 +54,9 @@ Before you deploy your new Bicep file for real, you first run the what-if comman
    Resource changes: 1 to modify, 5 no change, 2 to ignore.
    ```
 
+   ---
+
+<!-- TODO update the above - use the correct names and what-if output given the changes in the exercise -->
 <!-- TODO review results -->
 
 <!-- TODO note that anything on the OS disk wouldn't be included - you'd need to do a separate backup or image -->
