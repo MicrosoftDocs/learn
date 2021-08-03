@@ -1,5 +1,5 @@
 resource virtualNetwork 'Microsoft.Network/virtualNetworks@2020-11-01' = {
-  name: virtualNetworkName
+  name: virtualNetworks_ToyTruck_vnet_name
   location: 'westus'
   properties: {
     addressSpace: {
@@ -12,9 +12,6 @@ resource virtualNetwork 'Microsoft.Network/virtualNetworks@2020-11-01' = {
         name: 'default'
         properties: {
           addressPrefix: '10.0.0.0/24'
-          networkSecurityGroup: {
-            id: networkSecurityGroup.id
-          }
           delegations: []
           privateEndpointNetworkPolicies: 'Enabled'
           privateLinkServiceNetworkPolicies: 'Enabled'
