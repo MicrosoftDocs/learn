@@ -17,11 +17,11 @@ quiz:
     choices:
     - content: "Enterprise 5G solutions need low latency"
       isCorrect: false
-      explanation: "While enterprise 5G solutions need low latency, it is not the primary reason for a collaborative approach"
+      explanation: "While enterprise 5G solutions need low latency, it isn't the primary reason for a collaborative approach"
     - content: "Enterprise 5G solutions need to be backward compatible with older networks like LTE"
       isCorrect: false
-      explanation: "Backward compatibility is not the primary goal of a collaborative approach"
-    - content: "Enterprise 5g solutions are 5G network-aware, leading to the need for multiple partners to work together"
+      explanation: "Backward compatibility isn't the primary goal of a collaborative approach"
+    - content: "Enterprise 5G solutions are 5G network-aware, leading to the need for multiple partners to work together"
       isCorrect: true
       explanation: "Enterprise 5G solutions need to be aware of the underlying network and the capabilities of the mobile network operator."
   - content: "Azure private MEC is the primary interface for Edge applications and 5G for the enterprise. Which of these functions are the primary purpose of Azure private MEC?"
@@ -31,18 +31,18 @@ quiz:
       explanation: "Azure private MEC helps the developer ecosystem by leveraging existing tools for 5G"
     - content: "Azure private MEC provides end-to-end security"
       isCorrect: false
-      explanation: " End to end security may be a by-product but is not the primary motivation of Azure private MEC"
+      explanation: " End to end security may be a by-product but isn't the primary motivation of Azure private MEC"
     - content: "Azure private MEC helps to integrate third-party providers"
       isCorrect: false
-      explanation: "The primary purpose of Azure private MEC is not to integrate third-party providers"
+      explanation: "The primary purpose of Azure private MEC isn't to integrate third-party providers"
   - content: "Edge analytics is used for situations that need rapid response time with very low latency. Video data is also captured and sent to the cloud. What type of analytics can be done in the cloud for stored video from the enterprise?"
     choices:
     - content: "More Edge analytics that complements the work done on the enterprise"
       isCorrect: false
-      explanation: "Edge analytics is not done in the Cloud"
+      explanation: "Edge analytics isn't done in the Cloud"
     - content: "Long-term trends from the video collected in the Cloud"
       isCorrect: true
-      explanation: "The stored video can be used to analyze long term trends"
+      explanation: "The stored video can be used to analyze long-term trends"
     - content: "You perform computer vision applications"
       isCorrect: false
       explanation: "why you could perform computer vision applications for video in the cloud, that isn't the primary business reason for cloud storage

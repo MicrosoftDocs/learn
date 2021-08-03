@@ -6,7 +6,7 @@ The core value proposition for 5G and Azure private MEC depends on the following
 - Your service needs high bandwidth
 - Your service needs low latency
 - You probably need a high density of sensor deployment
-- You are deploying complex IoT Edge applications or Live Video analytics applications
+- You're deploying complex IoT Edge applications or Live Video analytics applications
 - You need to integrate your 5G service into your broader Azure ecosystem to provide an end-to-end service
 - You want to develop using familiar Azure toolsets
 
@@ -16,7 +16,7 @@ Having addressed the core value proposition, you need to make several technology
 
 **Edge devices v.s. Datacenter?**
 
-Will you be deploying on edge devices or a data center? If you are deploying on an edge device, you should consider Azure Stack Edge. If you are deploying on a data center, you should consider Azure Stack HCI. In both cases, you will avail of the same toolsets to deploy and manage your application. 
+Will you be deploying on edge devices or a data center? If you're deploying on an edge device, you should consider Azure Stack Edge. If you're deploying on a data center, you should consider Azure Stack HCI. In both cases, you will avail of the same toolsets to deploy and manage your application. 
 
 **End to end deployment considerations**
 
@@ -28,7 +28,7 @@ Once you deploy your application, how will you manage it on a day-to-day basis? 
 
 **Mobile network or systems integrator considerations**
 
-Typically, you deploy new 5G based services as a partnership between an enterprise, a network operator, and a systems integrator. Participants in the collaborative 5G ecosystem will avail of various benefits as part of their value proposition. For example, if you are a mobile network provider or a systems integrator, you could access fusion core and Affirmed Private Network Service (APNS) through the marketplace. 
+Typically, you deploy new 5G based services as a partnership between an enterprise, a network operator, and a systems integrator. Participants in the collaborative 5G ecosystem will avail of various benefits as part of their value proposition. For example, if you're a mobile network provider or a systems integrator, you could access fusion core and Affirmed Private Network Service (APNS) through the marketplace. 
 
 ## Application areas
 

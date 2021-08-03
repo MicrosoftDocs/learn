@@ -29,7 +29,7 @@ Here, we first describe the components of 5G and Azure private MEC. There are fo
 
 ## Azure Management services	
 
-**Azure Network Functions Manager (NFM):** Azure Network Function Manager enables the deployment of network functions to the IoT Edge using Azure tools and interfaces. Accessed through the marketplace, the azure network function manager enables you to deploy network functions such as mobile packet core, SD-WAN edge, and VPN services to your Azure Stack Edge device directly from the Azure management portal. Azure Network Function Manager also brings network functions from the partner ecosystem.
+**Azure Network Functions Manager (NFM):** Azure Network Function Manager enables the deployment of network functions to the IoT Edge using Azure tools and interfaces. Accessed through the marketplace, the Azure network function manager enables you to deploy network functions such as mobile packet core, SD-WAN edge, and VPN services to your Azure Stack Edge device directly from the Azure management portal. Azure Network Function Manager also brings network functions from the partner ecosystem.
 
 **Arc Enabled Kubernetes:** Azure Arc enabled Kubernetes allows you to attach and configure Kubernetes clusters located either inside or outside Azure.
 
