@@ -9,34 +9,6 @@ Azure provides two options for autoscaling:
 
 Scaling to a specific instance count only enables you to scale out to a defined number of instances. If you need to scale out incrementally, you can combine metric and schedule-based autoscaling in the same autoscale condition. So, you could arrange for the system to scale out if the number of HTTP requests exceeds some threshold, but only between certain hours of the day.
 
-## Scale based on CPU
-
-You have a web app and
-
-- You want to scale out/scale in based on CPU.
-- Additionally, you want to ensure there is a minimum number of instances.
-- Also, you want to ensure that you set a maximum limit to the number of instances you can scale to.
-
-## Scale differently on weekdays vs weekends
-
-You have a web app and
-
-- You want three instances by default (on weekdays)
-- You don't expect traffic on weekends and hence you want to scale down to one instance on weekends.
-
-## Scale differently during holidays
-
-You have a web app and
-
-- You want to scale up/down based on CPU usage by default
-- However, during holiday season (or specific days that are important for your business) you want to override the defaults and have more capacity at your disposal.
-
-## Scale based on custom metric
-
-You have a web front end and an API tier that communicates with the backend.
-
-- You want to scale the API tier based on custom events in the front end (example: You want to scale your checkout process based on the number of items in the shopping cart)
-
 ## Autoscale profiles
 
 There are three types of Autoscale profiles:
@@ -107,3 +79,33 @@ There are two options for Autoscale demand management:
 In the Azure portal, choose how you want to scale.  The following figure shows the **Custom autoscale** option and mode settings.
 
 ![Custom autoscale](../media/custom-autoscale.png)
+
+## Examples of autoscale conditions
+
+### Scale based on CPU
+
+You have a web app and
+
+- You want to scale out/scale in based on CPU.
+- Additionally, you want to ensure there is a minimum number of instances.
+- Also, you want to ensure that you set a maximum limit to the number of instances you can scale to.
+
+### Scale differently on weekdays vs weekends
+
+You have a web app and
+
+- You want three instances by default (on weekdays)
+- You don't expect traffic on weekends and hence you want to scale down to one instance on weekends.
+
+### Scale differently during holidays
+
+You have a web app and
+
+- You want to scale up/down based on CPU usage by default
+- However, during holiday season (or specific days that are important for your business) you want to override the defaults and have more capacity at your disposal.
+
+### Scale based on custom metric
+
+You have a web front end and an API tier that communicates with the backend.
+
+- You want to scale the API tier based on custom events in the front end (example: You want to scale your checkout process based on the number of items in the shopping cart)
