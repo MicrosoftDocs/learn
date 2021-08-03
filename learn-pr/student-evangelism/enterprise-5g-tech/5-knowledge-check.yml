@@ -45,7 +45,6 @@ quiz:
       explanation: "The stored video can be used to analyze long-term trends"
     - content: "You perform computer vision applications"
       isCorrect: false
-      explanation: "why you could perform computer vision applications for video in the cloud, that isn't the primary business reason for cloud storage
-"
+      explanation: "why you could perform computer vision applications for video in the cloud, that isn't the primary business reason for cloud storage"
     
     
