@@ -48,14 +48,14 @@ Here's an example of using a `for...to` loop:
 
 ```fsharp
 for i = 1 to 10 do
-  printfn "%i " i  // prints 1, 2 3 4 5 6 7 8 9 10
+  printfn "%i " i  // prints 1 2 3 4 5 6 7 8 9 10
 ```
 
 This loop prints all values between 1 and 10, including 10. Let's look at an example that also uses the `downto` construct. This construct works similar to `to`, but in reverse. The following code shows how you can instead print numbers 10 to 1:
 
 ```fsharp
 for i = 10 downto 1 do
-  printfn "%i" i  // prints 10, 9 8 7 6 5 4 3 2 1
+  printfn "%i" i  // prints 10 9 8 7 6 5 4 3 2 1
 ```
 
 ### Use a while...do loop until a condition is met
