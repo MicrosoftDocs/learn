@@ -6,9 +6,9 @@ During the process, you'll:
 
 > [!div class="checklist"]
 >
-> - TODO: Task - Insert text here.
-> - TODO: Task - Insert text here.
-> - TODO: Task - Insert text here.
+> - Update the symbolic names for your resources and parameters.
+> - Remove redundant parameters, resources, and properties.
+> - Add variables and parameters to make your Bicep file reusable.
 
 [!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
 
@@ -25,7 +25,7 @@ During the process, you'll:
 1. Repeat this process for each resource, and rename them as listed below:
 
    > [!NOTE]
-   > TODO might not be the same names
+   > The names of the resources in your deployment will be a little different to the ones below. Find the resources that have names that are close to the names listed here.
 
    | Resource type | Current symbolic name | New symbolic name |
    |-|-|-|
@@ -43,7 +43,7 @@ Notice there is a parameter named similarly to `networkSecurityGroups_NSG_westus
 
 1. In the `virtualNetwork` resource, notice that the Bicep extension for Visual Studio Code detects the missing parameter as a problem and indicates this with a red squiggly line.
 
-   :::image type="content" source="../media/5-virtual-network-nsg-problem.png" alt-text="TODO" border="true":::
+   :::image type="content" source="../media/5-virtual-network-nsg-problem.png" alt-text="Screenshot of Visual Studio Code showing the virtualNetwork resource definition, with the error highlighted." border="true":::
 
 1. Update the virtual network's `networkSecurityGroup.id` property to `networkSecurityGroup.id`:
 
@@ -57,7 +57,7 @@ The virtual network's subnet is currently defined twice: once in the `virtualNet
 
    Notice that the `networkInterface` resource now displays an problem, since it refers to the default subnet's resource ID:
 
-   :::image type="content" source="../media/5-network-interface-subnet-problem.png" alt-text="TODO" border="true":::
+   :::image type="content" source="../media/5-network-interface-subnet-problem.png" alt-text="Screenshot of Visual Studio Code showing the networkInterface resource definition, with the error highlighted." border="true":::
 
 1. Update the `virtualNetwork` resource to include an `existing` reference to the subnet, which enables you to refer to the subnet within your Bicep code without defining it again:
 
@@ -105,20 +105,66 @@ All of the resources currently use a hard-coded location. Here, you'll add a par
 
 1. Update each resource to use the `location` parameter instead of the hard-coded `westus` location.
 
+## Add parameters and variables
+
+Your template has some hard-coded values where parameters or variables would be more appropriate. Here, you'll add parameters for properties that might change between deployments, and variables for values that won't.
+
+1. At the top of the *main.bicep* file, below the `location` parameter, add the following parameters:
+
+   :::code language="bicep" source="code/5-main-refactored.bicep" range="4-24" :::
+
+1. Below the current variable declarations, add the following new variables:
+
+   :::code language="bicep" source="code/5-main-refactored.bicep" range="26-37" highlight="2-7, 12" :::
+
+1. Update the `publicIPAddress` resource to refer to the `publicIPAddresSkuName` parameter in its `sku.name` property.
+
+1. Update the `virtualNetwork` resource to refer to the parameters and variables:
+
+   - Use the `vnetAddressPrefix` parameter within the virtual network's `addressSpace.addressPrefixes` property.
+   - Use the `virtualNetworkDefaultSubnetName` variable for the subnet name, in both the `subnets` property and in the nested `existing` resource.
+   - Use the `vnetDefaultSubnetAddressPrefix` parameter for the subnet's `addressPrefix` property.
+
+1. Update the `virtualMachine` resource to refer to the parameters and variables: 
+
+   - Use the `virtualMachineSizeName` parameter for the `hardwareProfile.vmSize` property.
+   - Use the `virtualMachineImageReference` variable for the `storageProfile.imageReference` property.
+   - Use the `virtualMachineManagedDiskStorageAccountType` parameter for the `storageProfile.osDisk.managedDisk.storageAccountType` property.
+   - Use the `virtualMachineAdminUsername` parameter for the `osProfile.adminUsername` property.
+   - Directly below the `osProfile.adminUsername` property, set the `adminPassword` property to the `virtualMachineAdminPassword` parameter.
+
 ## Remove unnecessary properties
 
-- pip
-    - ipAddress
-    - ipTags
-- todo more
+The export process adds redundant properties to many resources. Here, you remove the extraneous properties.
 
-## Add parameters
+1. In the `networkSecurityGroup` resource, remove the `securityRules` property, since it's empty. Remove the `properties` property since it's empty now, too.
 
-TODO
- - PiP SKU
- - VNet IP range
- - VM SKU
- - vm adminUsername (and add adminPassword)
- - nic privateIPAddress
+1. In the `publicIPAddress` resource:
 
-TODO managed disk resource ID
+   - Remove the `ipAddress` property, since it's automatically set by Azure.
+   - Remove the `ipTags` property, since it's empty.
+
+1. In the `virtualNetwork` resource, remove the `delegations` and `virtualNetworkPeerings` properties, since they're empty.
+
+1. In the `virtualMachine` resource:
+
+   - Remove the `storageProfile.osDisk.managedDisk.id` property, since Azure automatically determines this when the virtual machine is deployed.
+   - Remove the `requireGuestProvisionSignal` property, since Azure sets this automatically.
+   - Remove the `storageProfile.dataDisks` and `osProfile.secrets` properties, since they're empty.
+
+1. In the `networkInterface` resource:
+
+   - Remove the `privateIPAddress` property from `ipConfigurations`, since it's automatically set by Azure.
+   - Remove the `dnsServers` property from `dnsSettings`, since it's empty. Remove the `dnsSettings` property since it's empty now, too.
+
+> [!TIP]
+> When you work with your own templates, you'll need to determine if there are any properties that should be removed. The Azure Quickstart Templates repository is helpful for this task. Find a quickstart template that is approximately what you're trying to do, and look at the properties it sets on the resource.
+
+## Verify your template
+
+You've now completed an initial refactoring pass on the template. Your *main.bicep* file should look similar to the following:
+
+:::code language="bicep" source="code/5-main-refactored.bicep" :::
+
+> [!TIP]
+> When you work with your own templates, you might make different choices about the properties to parameterize and other customizations. The advice we've provided here is general guidance to help you get started, but you'll need to consider your own environment and how you want to reuse your templates when deciding how to refactor your own Bicep files.

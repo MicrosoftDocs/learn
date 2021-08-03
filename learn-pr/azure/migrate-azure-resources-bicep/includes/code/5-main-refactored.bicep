@@ -1,33 +1,57 @@
 @description('The location into which the resources should be deployed.')
 param location string = resourceGroup().location
 
+@description('The name of the size of the virtual machine to deploy.')
+param virtualMachineSizeName string = 'Standard_D2s_v3'
+
+@description('The name of the storage account SKU to use for the virtual machine\'s managed disk.')
+param virtualMachineManagedDiskStorageAccountType string = 'Premium_LRS'
+
+@description('The administrator username for the virtual machine.')
+param virtualMachineAdminUsername string = 'toytruckadmin'
+
+@description('The administrator password for the virtual machine.')
+@secure()
+param virtualMachineAdminPassword string
+
+@description('The name of the SKU of the public IP address to deploy.')
+param publicIPAddresSkuName string = 'Basic'
+
+@description('The virtual network address range.')
+param vnetAddressPrefix string = '10.0.0.0/16'
+
+@description('The default subnet address range within the virtual network')
+param vnetDefaultSubnetAddressPrefix string = '10.0.0.0/24'
+
 var virtualMachineName = 'ToyTruckServer'
+var virtualMachineImageReference = {
+  publisher: 'canonical'
+  offer: '0001-com-ubuntu-server-focal'
+  sku: '20_04-lts'
+  version: 'latest'
+}
 var networkInterfaceName = 'toytruckserver686'
 var publicIPAddressName = 'ToyTruckServer-ip'
 var networkSecurityGroupName = 'ToyTruckServer-nsg'
 var virtualNetworkName = 'learn-b44b5d84-e9a2-4b1b-8d33-fdf6122b54ad-vnet'
+var virtualNetworkDefaultSubnetName = 'default'
 
 resource networkSecurityGroup 'Microsoft.Network/networkSecurityGroups@2020-11-01' = {
   name: networkSecurityGroupName
   location: location
-  properties: {
-    securityRules: []
-  }
 }
 
 resource publicIPAddress 'Microsoft.Network/publicIPAddresses@2020-11-01' = {
   name: publicIPAddressName
   location: location
   sku: {
-    name: 'Basic'
+    name: publicIPAddresSkuName
     tier: 'Regional'
   }
   properties: {
-    ipAddress: '13.64.89.79'
     publicIPAddressVersion: 'IPv4'
     publicIPAllocationMethod: 'Dynamic'
     idleTimeoutInMinutes: 4
-    ipTags: []
   }
 }
 
@@ -37,24 +61,22 @@ resource virtualNetwork 'Microsoft.Network/virtualNetworks@2020-11-01' = {
   properties: {
     addressSpace: {
       addressPrefixes: [
-        '10.0.0.0/16'
+        vnetAddressPrefix
       ]
     }
     subnets: [
       {
-        name: 'default'
+        name: virtualNetworkDefaultSubnetName
         properties: {
-          addressPrefix: '10.0.0.0/24'
+          addressPrefix: vnetDefaultSubnetAddressPrefix
           networkSecurityGroup: {
             id: networkSecurityGroup.id
           }
-          delegations: []
           privateEndpointNetworkPolicies: 'Enabled'
           privateLinkServiceNetworkPolicies: 'Enabled'
         }
       }
     ]
-    virtualNetworkPeerings: []
     enableDdosProtection: false
   }
   
@@ -68,32 +90,25 @@ resource virtualMachine 'Microsoft.Compute/virtualMachines@2021-03-01' = {
   location: location
   properties: {
     hardwareProfile: {
-      vmSize: 'Standard_D2s_v3'
+      vmSize: virtualMachineSizeName
     }
     storageProfile: {
-      imageReference: {
-        publisher: 'canonical'
-        offer: '0001-com-ubuntu-server-focal'
-        sku: '20_04-lts'
-        version: 'latest'
-      }
+      imageReference: virtualMachineImageReference
       osDisk: {
         osType: 'Linux'
         name: '${virtualMachineName}_OsDisk_1_3b5a980955c54f1c838b7efa21e1ddd3'
         createOption: 'FromImage'
         caching: 'ReadWrite'
         managedDisk: {
-          storageAccountType: 'Premium_LRS'
-          // TODO id: resourceId('Microsoft.Compute/disks', '${virtualMachineName}_OsDisk_1_3b5a980955c54f1c838b7efa21e1ddd3')
+          storageAccountType: virtualMachineManagedDiskStorageAccountType
         }
         diskSizeGB: 30
       }
-      dataDisks: []
     }
     osProfile: {
       computerName: virtualMachineName
-      adminUsername: 'toytruckadmin'
-      adminPassword: 'Test123!!!!!' // TODO
+      adminUsername: virtualMachineAdminUsername
+      adminPassword: virtualMachineAdminPassword
       linuxConfiguration: {
         disablePasswordAuthentication: false
         provisionVMAgent: true
@@ -102,9 +117,7 @@ resource virtualMachine 'Microsoft.Compute/virtualMachines@2021-03-01' = {
           assessmentMode: 'ImageDefault'
         }
       }
-      secrets: []
       allowExtensionOperations: true
-      // TODO requireGuestProvisionSignal: true
     }
     networkProfile: {
       networkInterfaces: [
@@ -129,7 +142,6 @@ resource networkInterface 'Microsoft.Network/networkInterfaces@2020-11-01' = {
       {
         name: 'ipconfig1'
         properties: {
-          privateIPAddress: '10.0.0.4'
           privateIPAllocationMethod: 'Dynamic'
           publicIPAddress: {
             id: publicIPAddress.id
@@ -142,9 +154,6 @@ resource networkInterface 'Microsoft.Network/networkInterfaces@2020-11-01' = {
         }
       }
     ]
-    dnsSettings: {
-      dnsServers: []
-    }
     enableAcceleratedNetworking: true
     enableIPForwarding: false
     networkSecurityGroup: {
