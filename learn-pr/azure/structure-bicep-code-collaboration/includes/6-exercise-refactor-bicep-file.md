@@ -7,7 +7,7 @@ Look at the Bicep template that you saved earlier. Think about the advice you've
 In the sections below, there are some pointers to specific parts of the template and some hints for things you might want to change. A suggested solution is provided, but your template might look different - that's OK!
 
 > [!TIP]
-> As you work through the refactoring process, it's good to ensure that your Bicep file is valid and that you haven't accidentally introduced any errors. The Bicep extension for Visual Studio Code helps with this. Watch out for any red or squiggly lines below your code, since these lines indicate an error or a warning. You can also view a list of the problems in your file by selecting **View** > **Problems**.
+> As you work through the refactoring process, it's good to ensure that your Bicep file is valid and that you haven't accidentally introduced any errors. The Bicep extension for Visual Studio Code helps with this. Watch out for any red or yellow squiggly lines below your code, since these lines indicate an error or a warning. You can also view a list of the problems in your file by selecting **View** > **Problems**.
 
 ## Update the parameters
 
