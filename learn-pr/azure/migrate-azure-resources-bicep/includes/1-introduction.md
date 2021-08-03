@@ -2,9 +2,9 @@ Bicep provides many improvements over JSON for template authoring. These benefit
 
 ## Example scenario
 
-Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. Recently, your company acquired a smaller competitor. This company is also using Azure to host its application infrastructure, but their resources were deployed using JSON ARM templates and the Azure portal.
+Suppose you're responsible for deploying and configuring the Azure infrastructure at a toy company. Recently, your company acquired a smaller competitor that has created a popular toy truck. This company also uses Azure to host its application infrastructure, but their resources were deployed using the Azure portal. They have deployed a virtual machine that provides some of the services to support the toy truck.
 
-You want to begin the process of standardizing on Bicep for all resource deployments. To accomplish this task, you'll convert and migrate your existing JSON templates and Azure resources to Bicep. You'll refactor the templates for clarity and test deployments to verify the migration.
+You want to begin the process of standardizing on Bicep for all resource deployments. To accomplish this task, you'll convert and migrate your the resources to Bicep. You'll refactor the templates for clarity and test deployments to verify the migration.
 
 ## What will we be doing?
 
@@ -21,6 +21,6 @@ After completing this module, you'll be able to migrate your Azure resources to 
 ## Prerequisites
 
 - You should be familiar with Azure, including the Azure portal, subscriptions, and resource groups.
-- You should have an understanding of ARM templates (both JSON and Bicep), including parameters, modules, and child and extension resources.
+- You should have an understanding of ARM templates (both JSON and Bicep), including parameters, modules, the `existing` keyword, and child and extension resources.
 - You should have a basic understanding of the what-if operation.
 - You should have a basic understanding of how to refactor Bicep files to conform to best practices.

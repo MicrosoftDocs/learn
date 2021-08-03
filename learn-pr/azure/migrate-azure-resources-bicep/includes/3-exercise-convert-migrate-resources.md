@@ -1,6 +1,6 @@
 [!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
-TODO: Introduction - Insert text here.
+Your toy company has acquired a competitor that created a popular toy truck. The toys connect to a virtual machine hosted in Azure to receive firmware updates. All of the resources for the virtual machine were created manually by using the Azure portal. In this unit, you'll begin the process to migrate the resources to a Bicep file.
 
 During the process, you'll:
 
@@ -15,7 +15,7 @@ During the process, you'll:
 
 ## Create a virtual machine by using the Azure portal
 
-TODO scenario
+To simulate the situation in the example scenario, you'll first deploy a virtual machine using the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you activated the sandbox with.
 
@@ -189,6 +189,8 @@ You'll fix these problems throughout the rest of this module.
 
    > [!INFORMATION]
    > This example illustrates how you can sometimes export unrelated resources that shouldn't be migrated. This is why it's a good idea to copy the resources across individually, so that you can review each item as you copy it to the new Bicep file.
+
+<!-- TODO need to mention managed disk is auto created and you don't declare in your Bicep file? -->
 
 ## Verify your template
 
