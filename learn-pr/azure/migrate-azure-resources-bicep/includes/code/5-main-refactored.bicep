@@ -2,26 +2,26 @@
 param location string = resourceGroup().location
 
 @description('The name of the size of the virtual machine to deploy.')
-param virtualMachineSizeName string = 'Standard_D2s_v3'
+param virtualMachineSizeName string
 
 @description('The name of the storage account SKU to use for the virtual machine\'s managed disk.')
-param virtualMachineManagedDiskStorageAccountType string = 'Premium_LRS'
+param virtualMachineManagedDiskStorageAccountType string
 
 @description('The administrator username for the virtual machine.')
-param virtualMachineAdminUsername string = 'toytruckadmin'
+param virtualMachineAdminUsername string
 
 @description('The administrator password for the virtual machine.')
 @secure()
 param virtualMachineAdminPassword string
 
 @description('The name of the SKU of the public IP address to deploy.')
-param publicIPAddresSkuName string = 'Basic'
+param publicIPAddressSkuName string = 'Basic'
 
 @description('The virtual network address range.')
-param vnetAddressPrefix string = '10.0.0.0/16'
+param vnetAddressPrefix string
 
 @description('The default subnet address range within the virtual network')
-param vnetDefaultSubnetAddressPrefix string = '10.0.0.0/24'
+param vnetDefaultSubnetAddressPrefix string
 
 var virtualMachineName = 'ToyTruckServer'
 var virtualMachineImageReference = {
@@ -45,7 +45,7 @@ resource publicIPAddress 'Microsoft.Network/publicIPAddresses@2020-11-01' = {
   name: publicIPAddressName
   location: location
   sku: {
-    name: publicIPAddresSkuName
+    name: publicIPAddressSkuName
     tier: 'Regional'
   }
   properties: {

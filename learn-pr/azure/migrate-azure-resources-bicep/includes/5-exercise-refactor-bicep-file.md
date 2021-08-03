@@ -8,8 +8,6 @@ During the process, you'll:
 > - Remove redundant parameters, resources, and properties.
 > - Add variables and parameters to make your Bicep file reusable.
 
-[!INCLUDE [Install the Bicep extension for Visual Studio Code](../../includes/azure-template-bicep-exercise-vscode-extension.md)]
-
 ## Update the resource symbolic names
 
 1. Open the *main.bicep* file in Visual Studio Code.
@@ -109,13 +107,35 @@ Your template has some hard-coded values where parameters or variables would be 
 
 1. At the top of the *main.bicep* file, below the `location` parameter, add the following parameters:
 
-   :::code language="bicep" source="code/5-main-refactored.bicep" range="4-24" :::
+   ```bicep
+   @description('The name of the size of the virtual machine to deploy.')
+   param virtualMachineSizeName string = 'Standard_D2s_v3'
+   
+   @description('The name of the storage account SKU to use for the virtual machine\'s managed disk.')
+   param virtualMachineManagedDiskStorageAccountType string = 'Premium_LRS'
+   
+   @description('The administrator username for the virtual machine.')
+   param virtualMachineAdminUsername string = 'toytruckadmin'
+   
+   @description('The administrator password for the virtual machine.')
+   @secure()
+   param virtualMachineAdminPassword string
+   
+   @description('The name of the SKU of the public IP address to deploy.')
+   param publicIPAddresSkuName string = 'Basic'
+   
+   @description('The virtual network address range.')
+   param vnetAddressPrefix string = '10.0.0.0/16'
+   
+   @description('The default subnet address range within the virtual network')
+   param vnetDefaultSubnetAddressPrefix string = '10.0.0.0/24'
+   ```
 
 1. Add the following new variable declarations:
 
    :::code language="bicep" source="code/5-main-refactored.bicep" range="26-37" highlight="2-7, 12" :::
 
-1. Update the `publicIPAddress` resource to refer to the `publicIPAddresSkuName` parameter in its `sku.name` property.
+1. Update the `publicIPAddress` resource to refer to the `publicIPAddressSkuName` parameter in its `sku.name` property.
 
 1. Update the `virtualNetwork` resource to refer to the parameters and variables:
 
@@ -159,6 +179,18 @@ The export process adds redundant properties to many resources. Here, you remove
 > When you work with your own templates, you'll need to determine whether there are any properties that should be removed like you've done here.
 > 
 > The Azure Quickstart Templates repository is helpful for this task. Find a quickstart template that is approximately what you're trying to do, and look at the properties it sets on the resource.
+
+## Create a parameter file
+
+Your parameters are currently defined as default values in your template. To make your template work well across environments, it's a good idea to create a parameter file, and to remove default values for parameters that need to change for each environment.
+
+1. Create a new file named *main.parameters.production.json*.
+
+1. Paste the following JSON into the *main.parameters.production.json* file:
+
+   :::code language="json" source="code/5-parameters.json" :::
+
+1. Update your *main.bicep* to remove the default values for the parameters you specified in the parameters file.
 
 ## Verify your template
 
