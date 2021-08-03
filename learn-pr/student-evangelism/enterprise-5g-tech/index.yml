@@ -29,7 +29,7 @@ badge:
 levels:
 - beginner
 roles:
-- deploy-5g-services-with-azure
+- ai-edge-engineer
 products:
 - azure-iot-edge
 units:
