@@ -1,17 +1,17 @@
-In this exercise, you will learn to use `if` and `else` to implement some functionality for card game for the recreational games company you work for. You will need to write some functionality that will be used by your colleagues to implement the game Black Jack.
+In this exercise, you'll use `if` and `else` to create the code for a card game for the recreational games company you work for. Your job is to write specific functionality that your colleagues can use in the Blackjack game they're creating.
 
-## Display presentable cards
+## Display playing cards users expect to see
 
-As part of a player's experience, players are used to have names for certain cards like, Jack, Queen, King, and so on, whereas other cards are a mere number. You will write the logic needed to make the user experience better.
+Blackjack players typically are dealt face cards called Jack, Queen, King, and Ace. All other cards are numbers. You'll write logic that makes the user experience in a new Blackjack game your team is developing similar to a Blackjack game played in person.
 
 1. Scaffold an F# project by running `dotnet new`:
 
-   ```bash
-   dotnet new console --language F# -o Cards
-   cd Cards
-   ```
+    ```bash
+    dotnet new console --language F# -o Cards
+    cd Cards
+    ```
 
-1. Locate the `Program.fs` file and the `main()` method and add the following code:
+1. Open the *Program.fs* file. In the `main()` method, add the following code:
 
    ```fsharp
    let cardNo = 12
@@ -25,7 +25,7 @@ As part of a player's experience, players are used to have names for certain car
     printfn "%s" cardDescription
    ```
 
-1. Run the project with `dotnet run`
+1. Run the project with `dotnet run`:
 
    ```bash
    dotnet run
@@ -37,4 +37,4 @@ As part of a player's experience, players are used to have names for certain car
    Queen
    ```
 
-Congratulations, you've managed to create a piece of code that given a card number is apply to produce a description.
+Congratulations, you've created a piece of code that, given a card number, produces a description.
