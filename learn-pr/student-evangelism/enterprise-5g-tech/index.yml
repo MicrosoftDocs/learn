@@ -22,8 +22,7 @@ prerequisites: |
   - Basic knowledge of 5G 
   - Basic understanding of Azure Stack Edge, Azure Stack HCI, Azure IoT Edge Runtime, Azure IoT Hub, Azure IoT Central, Azure Digital Twins, Azure Video Analyzer, Web Apps in Microsoft Azure App Service, Media Services Storage, Azure Network Functions Manager (NFM), Arc Enabled Kubernetes, Fusion Core, Affirmed Private Network Service (APNS)
 
-iconUrl: /learn/achievements/student-evangelism/.svg
-
+iconUrl: /learn/achievements/student-evangelism/5g-technologies-for-azure-cloud-services.svg
 badge:
   uid: learn.oxford.5g-tech-azure-cloud.badge
 levels:
