@@ -36,7 +36,7 @@ You also need to consider how to handle parameters and variables that are common
 
 ## How do you define several similar resources?
 
-Bicep enables to you use loops to deploy similar resources from a single definition. By using the `for` keyword to define resource loops, you can make your Bicep code cleaner and reduce unnecessary duplication of resources. In future, when you need to change the definition of your resources, you just update one place. When Azure Resource Manager deploys your resources, by default it deploys all of the resources in the loop at the same time, so your deploy is as efficient as possible.
+Bicep enables you to use loops to deploy similar resources from a single definition. By using the `for` keyword to define resource loops, you can make your Bicep code cleaner and reduce unnecessary duplication of resources. In future, when you need to change the definition of your resources, you just update one place. When Azure Resource Manager deploys your resources, by default it deploys all of the resources in the loop at the same time, so your deploy is as efficient as possible.
 
 Look for places where you define multiple resources that are identical, or that have a few differences in their properties. Then, add a variable to list the resources to create along with their properties. The example below uses a loop to define a set of Azure Cosmos DB containers, each of which has its own name and partition key:
 
