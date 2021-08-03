@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.node-web-routes.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Multiple-choice questions
+  ms.date: 07/12/2021
+  author: clarkio
+  ms.author: brcl
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: Choose the best response for each question. Then select **Check your answers**.
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: What is a way to set up middleware? 
+      choices:
+        - content: Use `app.get(‘/’, () => {})`.
+          isCorrect: false
+          explanation: Incorrect. That's how you would set up a default route for ‘/’. 
+        - content: Use `app.use({} => {})`.
+          isCorrect: true
+          explanation: Correct. Using `use()` is the correct way to set up middleware.
+        - content: Use `app.middleware() => {})`.
+          isCorrect: false
+          explanation: Incorrect. There's no method called `middleware()`.
+    - content: How would you respond with text content?
+      choices:
+        - content: Use the `res.text()` method.
+          isCorrect: false
+          explanation: Incorrect. There's no method called `text()` on the response stream.
+        - content: Use the `res.send()` method.
+          isCorrect: true
+          explanation: Correct. This method ensures that what's sent back is of type `text`.
+        - content: Use the `req.send()` method.
+          isCorrect: false
+          explanation: Incorrect. Although `send()` is the correct method to use for sending data back, you need to use the response stream (`res`), not the request (`req`).

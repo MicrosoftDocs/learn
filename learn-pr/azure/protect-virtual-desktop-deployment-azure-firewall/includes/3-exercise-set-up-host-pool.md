@@ -1,42 +1,23 @@
 In the accounting firm scenario, your organization is using Azure Virtual Desktop to provide your workforce access to virtualized desktops and apps.
 
-So, in this unit, you create a host pool and add a VM that will act as a session host. To avoid having to domain join the VM, you manually install the Azure Virtual Desktop agent and boot loader to register the VM to the host pool. You'll then have an Azure Virtual Desktop deployment that you can use in the rest of the module exercises.
+So, in this unit, you create a host pool and add a VM that will act as a session host. To avoid having to join the VM to a domain, you manually install the Azure Virtual Desktop agent and boot loader to register the VM to the host pool. You'll then have an Azure Virtual Desktop deployment that you can use in the rest of the module exercises.
 
 [!include[](../../../includes/azure-subscription-prerequisite.md)]
 
-## Create a resource group
-
-First, create a resource group to contain all the resources you'll create in this module.
-
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
-1. From the top right-hand side of the Azure portal, select **Cloud Shell**.
-1. Select **PowerShell**.
-1. In Azure Cloud Shell, run the following command to create a resource group. Replace `EastUS` with the value of a location near you.
-
-   ```powershell
-    $resourceGroup = 'learn-firewall-rg'
-    $location = 'EastUS'
-    New-AzResourceGroup -Name $resourceGroup -Location $location
-   ```
-
-   This list shows some location values you can use:
-
-   [!include[](../../../includes/azure-sandbox-regions-note.md)]
-
-
 ## Create a host pool for Azure Virtual Desktop
 
-Next, let's create a host pool that will contain the VM you'll create later in this exercise.
+Let's create a host pool that will contain the VM you'll create later in this exercise.
 
-1. In the Azure portal, search for and select **Azure Virtual Desktop**.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. Search for and select **Azure Virtual Desktop**.
 1. Select **Create a host pool**.
-1. Enter the following information into the **Basics** tab.
+1. Enter the following information into the **Basics** tab:
 
    |Field  |Value  |
    |---------|---------|
    |Subscription     |  Your subscription      |
-   |Resource group     | learn-firewall-rg    |
-   |Host pool name     |  learn-host-pool      |
+   |Resource group     | Create a new resource group named learn-firewall-rg    |
+   |Host pool name     | learn-host-pool      |
    |Location    | Region near you       |
    |Host pool type     |  Pooled  |
    |Load balancing algorithm    | Breadth-first |
@@ -52,6 +33,7 @@ Create a registration token to authorize a session host to join the host pool.
 1. In Cloud Shell, run the following command to create a registration token that will expire in 4 hours.
 
    ```powershell
+    $resourceGroup = 'learn-firewall-rg'
     $hostPoolName = 'learn-host-pool' 
     $regToken = New-AzWvdRegistrationInfo `
     -ResourceGroupName $resourceGroup `
@@ -59,31 +41,37 @@ Create a registration token to authorize a session host to join the host pool.
     -ExpirationTime $((get-date).ToUniversalTime().AddHours(4).ToString('yyyy-MM-ddTHH:mm:ss.fffffffZ'))
    ```
 
-1. Run the following command to get the registration token.
+1. Run the following command to get the registration token:
 
    ```powershell
     $regToken.Token
    ```
 
-1. Copy the token to a note app like Notepad.  
+1. Copy the token to a note app, like Notepad.  
 
 ## Create a subnet and virtual network for the host pool
 
-In Cloud Shell, run the following command to create a subnet and virtual network in the same location as the resource group.
+In Cloud Shell, run the following command to create a subnet and virtual network in the same location as the resource group:
 
    ```powershell
    $subnetConfig = New-AzVirtualNetworkSubnetConfig `
    -Name hostSubnet `
    -AddressPrefix 10.0.0.0/24
 
+   $location = Get-AzResourceGroup -Name learn-firewall-rg
+
    $virtualNetwork = New-AzVirtualNetwork `
    -Name hostVNet `
    -AddressPrefix 10.0.0.0/16 `
-   -Location $location `
+   -Location $location.Location `
    -ResourceGroupName $resourceGroup `
    -Subnet $subnetConfig
 
    ```
+
+   This list shows some location values you can use:
+
+   [!include[](../../../includes/azure-sandbox-regions-note.md)]
 
 Ignore the warning message about upcoming breaking changes. It doesn't apply to the command you're running.
 
@@ -98,7 +86,7 @@ Create an Azure VM to act as a session host for the host pool.
 
     ```
 
-1. Run the following command to create the VM using a Windows 10 Enterprise multi-session image.
+1. Run the following command to create the VM by using a Windows 10 Enterprise multiple session image:
 
     ```powershell
     New-Azvm `
@@ -112,7 +100,7 @@ Create an Azure VM to act as a session host for the host pool.
 
     ```
 
-   Ignore message "No size value has been provided..." The VM will be created with the size you specified in the command above.
+   Ignore the message "No size value has been provided..." The VM will be created with the size you specified in the preceding command.
 
 1. Wait a couple of minutes for the VM to be created.
 
@@ -134,14 +122,14 @@ Install the Azure Virtual Desktop agent and boot loader on the VM to register th
 
 ### Install the agent
 
-In your remote desktop session on the VM, install the  Azure Virtual Desktop agent. You'll need the registration token for the host pool to complete the installation.
+In your remote desktop session on the VM, install the Azure Virtual Desktop agent. You'll need the registration token for the host pool to complete the installation.
 
-1. Copy the following link to the Azure Virtual Desktop agent: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv
+1. Copy the following link to the Azure Virtual Desktop agent: `https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrmXv`.
 1. On the VM, open Microsoft Edge to start a web browser session.
 1. Paste the link into a web browser.
 1. At the bottom of the web browser window, select **Open file** to install the Azure Virtual Desktop agent.
 1. When the installer asks you for the registration token, paste in the value you got after you created the token.
-1. If you no longer have the token value, go back to your Cloud Shell session and run the following command.
+1. If you no longer have the token value, go back to your Cloud Shell session and run the following command:
 
    ```powershell
     (Get-AzWvdRegistrationInfo `
@@ -153,9 +141,9 @@ In your remote desktop session on the VM, install the  Azure Virtual Desktop age
 
 ### Install the boot loader
 
-In your remote desktop session on the VM, install the  Azure Virtual Desktop boot loader.
+In your remote desktop session on the VM, install the Azure Virtual Desktop boot loader.
 
-1. Copy the following link to the Azure Virtual Desktop boot loader: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH
+1. Copy the following link to the Azure Virtual Desktop boot loader: `https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWrxrH`.
 1. Paste the link into a web browser session in the VM.
 1. At the bottom of the web browser window, select **Open file** to install the Azure Virtual Desktop boot loader.
 1. Complete the installation.
@@ -163,7 +151,7 @@ In your remote desktop session on the VM, install the  Azure Virtual Desktop boo
 
 ## Check your work
 
-At this point, the virtual machine should be registered as a session host for the host pool. To verify it's registered, let's sign into the portal and check the VM in the host pool.
+At this point, the virtual machine should be registered as a session host for the host pool. To verify that it's registered, let's sign into the portal and check the VM in the host pool.
 
 1. In the Azure portal, search for or select **Azure Virtual Desktop**.
 1. Select **Host pools** > **learn-host-pool**.
@@ -174,5 +162,5 @@ At this point, the virtual machine should be registered as a session host for th
 1. If you get a **Not found** error, wait a few minutes and try again.
 1. Under **Status**, select **ViewDetails**.
 :::image type="content" source="../media/3-host-pool-status.png" alt-text="Screenshot that shows the status of the host pool and the link to view status details.":::
-1. The health check **"DomainJoinedCheck"** failed as we didn't domain join the VM. But the rest of the health checks succeeded.
-:::image type="content" source="../media/3-session-host-status-detail.png" alt-text="Screenshot of the session host status details that show that the domain joined check failed but rest of checks succeeded.":::
+1. The health check `DomainJoinedCheck` failed because we didn't join the VM to a domain. But the rest of the health checks succeeded.
+:::image type="content" source="../media/3-session-host-status-detail.png" alt-text="Screenshot of the session host status details that show that the check for domain-join failed, but the rest of the checks succeeded.":::

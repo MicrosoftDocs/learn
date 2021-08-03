@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.fsharp-functions.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Four multiple-choice questions
+  ms.date: 07/26/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 4
+content: Choose the best response for each question. Then select **Check your answers**.
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: How do you return from a function?
+      choices: 
+        - content: The last row of the function is the return value.
+          explanation: Correct.
+          isCorrect: true
+        - content: You use the `return` keyword.
+          explanation: There's no `return` keyword. What's on the last line is what's being returned.
+          isCorrect: false
+        - content: You declare a variable called `return` and place it last.
+          explanation: Incorrect. All you need to do is place something on the last line of the function and it will be returned.
+          isCorrect: false
+    - content: How would you declare the `add()` function that takes two strings and returns an int?
+      choices:
+        - content: Write it like `let add a b = a + b`.
+          isCorrect: false
+          explanation: Incorrect. This function takes two integers and returns an int. You need to specify the parameter types explicitly in this case.
+        - content: Write it like `let add (a:string) (b:string):int = (int a) + (int b)`.
+          isCorrect: true
+          explanation: Correct. Adding the type to the parameters is needed, and the return type.
+        - content: Write it like `let add (a:string) (b:string) = (int a) + (int b)`.
+          explanation: Incorrect. Although this is a correct way to solve it, good practice is to be explicit about adding even the return type.
+          isCorrect: false
+    - content: The following code `let addAndMultiply = add >> multiply` is doing what?
+      choices: 
+        - content: Creating a pipeline.
+          explanation: Incorrect. The code is using the composition operator `>>` to compose several functions into one. A pipeline uses the `|>` operator.
+          isCorrect: false
+        - content: Defining a function.
+          explanation: Incorrect. Technically, the `addAndMultiply()` function is being declared, but a composition creates one function out of several other functions.
+          isCorrect: false
+        - content: Creating a composition.
+          explanation: Correct. It's using the composition operator `>>` to create a more complex function.
+          isCorrect: true
+  

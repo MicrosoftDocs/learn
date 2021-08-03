@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.serverless-go.custom-handlers
+title: Custom handlers
+metadata:
+  title: Custom handlers
+  description: Learn what custom handlers are and when to use them.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 07/12/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-custom-handlers.md)]

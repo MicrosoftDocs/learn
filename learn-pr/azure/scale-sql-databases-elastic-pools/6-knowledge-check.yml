@@ -26,11 +26,11 @@ quiz:
       isCorrect: true
       explanation: "It's likely each dealership's data would be stored in a separate database. This scenario would likely benefit from elastic pools."
   
-  - content: "True or False: You can add Azure SQL servers to elastic pools."
+  - content: "True or False: You can add Azure SQL databases from your Azure SQL server into SQL elastic pools."
     choices:
     - content: "True"
       isCorrect: true
-      explanation: "Correct. You can add Azure SQL servers to elastic pools."
+      explanation: "Correct. You can add Azure SQL databases into elastic pools."
     - content: "False"
       isCorrect: false
-      explanation: "Incorrect. You can add Azure SQL servers to elastic pools."
+      explanation: "Incorrect. You can add Azure SQL databases into elastic pools."
