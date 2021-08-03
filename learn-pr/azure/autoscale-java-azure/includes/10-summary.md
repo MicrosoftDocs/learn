@@ -40,3 +40,7 @@ az monitor log-analytics workspace delete --force true --resource-group <your Re
 - [KQL syntax](/azure/data-explorer/kql-quick-reference?WT.mc_id=java-00000-ropreddy)
 
 - [Azure for Java developers](/azure/developer/java?WT.mc_id=java-00000-ropreddy)
+
+- [create an Activity Log Alert to monitor all autoscale engine operations on your subscription](https://github.com/Azure/azure-quickstart-templates/tree/master/demos/monitor-autoscale-alert)
+
+- [create an Activity Log Alert to monitor all failed autoscale scale in/scale out operations on your subscription](https://github.com/Azure/azure-quickstart-templates/tree/master/demos/monitor-autoscale-failed-alert).
