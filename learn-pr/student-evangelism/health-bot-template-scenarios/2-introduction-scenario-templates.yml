@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.health-bot-template-scenarios.2-introduction-scenario-templates
+title: Introduction to scenario templates
+metadata:
+  title: Introduction to scenario templates
+  description: Scenario templates are prebuilt scenarios that provide examples for popular healthcare use cases and enable you to quickly build out your own custom scenarios.
+  author: sfoteini
+  ms.author: chnoring
+  ms.date: 07/27/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-introduction-scenario-templates.md)]

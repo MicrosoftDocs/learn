@@ -3,7 +3,7 @@ uid: learn.wwl.designing-implementing-microsoft-azure-networking-solutions-az-70
 metadata:
   title: AZ-700 Designing and Implementing Microsoft Azure Networking Solutions
   description: AZ-700 Designing and Implementing Microsoft Azure Networking Solutions
-  ms.date: 07/16/2021
+  ms.date: 07/29/2021
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ prerequisites: |
   - You should have experience with the Azure portal and Azure PowerShell
 summary: |
   Learn how to design and implement a secure network infrastructure in Azure and how to establish hybrid connectivity, routing, private access to Azure services, and monitoring in Azure.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/designing-implementing-microsoft-azure-networking-solutions.svg
 levels:
 - intermediate
 roles:
