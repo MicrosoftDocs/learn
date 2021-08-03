@@ -30,10 +30,10 @@ var virtualMachineImageReference = {
   sku: '20_04-lts'
   version: 'latest'
 }
-var networkInterfaceName = 'toytruckserver686'
+var networkInterfaceName = 'toytruckserver674'
 var publicIPAddressName = 'ToyTruckServer-ip'
 var networkSecurityGroupName = 'ToyTruckServer-nsg'
-var virtualNetworkName = 'learn-b44b5d84-e9a2-4b1b-8d33-fdf6122b54ad-vnet'
+var virtualNetworkName = 'learn-fa7d2315-37da-4b11-9475-c52e422b8e11-vnet'
 var virtualNetworkDefaultSubnetName = 'default'
 
 resource networkSecurityGroup 'Microsoft.Network/networkSecurityGroups@2020-11-01' = {

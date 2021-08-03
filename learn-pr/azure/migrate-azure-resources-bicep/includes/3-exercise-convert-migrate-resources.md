@@ -1,5 +1,3 @@
-[!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
-
 Your toy company has acquired a competitor that created a popular toy truck. The toys connect to a virtual machine hosted in Azure to receive firmware updates. All of the resources for the virtual machine were created manually by using the Azure portal. In this unit, you'll begin the process to migrate the resources to a Bicep file.
 
 During the process, you'll:
@@ -17,7 +15,7 @@ During the process, you'll:
 
 To simulate the situation in the example scenario, you'll first deploy a virtual machine using the Azure portal.
 
-1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
 1. On the Azure home page, under **Azure services**, select **Create a resource**.
 
@@ -34,11 +32,10 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
     | Setting | Value  |
     | ------ | ------- |
     | **Project Details**  |
-    | Subscription | Concierge Subscription |
-    | Resource group | "**<rgn>[sandbox resource group name]</rgn>**" |
+    | Resource group | Select **Create new** and enter **ToyTruck** |
     | **Instance Details** |
     | Virtual machine name  | ToyTruckServer |
-    | Region | West US |
+    | Region | (US) West US |
     | Availability options  | No infrastructure redundancy required |
     | Image | Ubuntu Server 20.04 LTS - Gen1 |
     | Size | Standard_D2s_v3 |
@@ -48,6 +45,8 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
     | Password | Enter a password |
     | **Inbound port rules** |
     | Public inbound ports | None |
+
+1. On the **Management** tab, ensure that **Enable auto-shutdown** is not selected.
 
 1. Select **Review + Create**. Azure validates your settings. You might need to supply some additional information based on the requirements of the image creator.
 
@@ -59,9 +58,9 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
    :::image type="content" source="../media/3-deployment-completed.png" alt-text="Screenshot of the Azure portal showing the deployment, with the resource group name highlighted." border="true":::
 
-1. Notice that the resource group now contains the virtual machine and its dependencies. It also contains a storage account with a name beginning with **cloudshell**, which is created by the Microsoft Learn sandbox and is unrelated to the virtual machine.
+1. Notice that the resource group now contains the virtual machine and its dependencies.
 
-   :::image type="content" source="../media/3-resource-group.png" alt-text="Screenshot of the Azure portal showing the resource group and its resources." border="true":::
+   :::image type="content" source="../media/3-resource-group.png" alt-text="Screenshot of the Azure portal showing the resource group." border="true":::
 
 ## Export the resource group contents to a JSON template
 
@@ -89,8 +88,6 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 [!INCLUDE [Install Bicep (CLI)](../../includes/azure-template-bicep-exercise-install-bicep-cli.md)]
 
-[!INCLUDE [Sign into sandbox (CLI)](../../includes/azure-template-exercise-sandbox-sign-in-cli.md)]
-
 ::: zone-end
 
 ::: zone pivot="powershell"
@@ -100,8 +97,6 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 [!INCLUDE [Upgrade Azure CLI](../../includes/azure-template-bicep-exercise-upgrade-powershell.md)]
 
 [!INCLUDE [Install Bicep (CLI)](../../includes/azure-template-bicep-exercise-install-bicep-powershell.md)]
-
-[!INCLUDE [Sign into sandbox (CLI)](../../includes/azure-template-exercise-sandbox-sign-in-powershell.md)]
 
 ::: zone-end
 
@@ -145,14 +140,11 @@ Open the *template.bicep* file and look over it. Notice that it's a valid Bicep 
 
 - The symbolic names given to parameters and resources include underscores and aren't easy to understand.
 - The `location` property is hard-coded in all of the resource definitions.
-- The file includes definitions for resources that you don't need, including a Cloud Shell storage account.
-   > [!NOTE]
-   > The Cloud Shell storage account is created automatically by the Microsoft Learn sandbox.
 - The Bicep linter shows some warnings and errors.
 
 You'll fix these problems throughout the rest of this module.
 
-## Create a new Bicep file for the migration
+## Create a new Bicep file
 
 1. Create a new file called *main.bicep*.
 
@@ -164,9 +156,11 @@ You'll fix these problems throughout the rest of this module.
 
    :::image type="content" source="../media/3-visual-studio-code-split-editor.png" alt-text="Screenshot of the split Visual Studio Code editor, showing the template.bicep file in the left pane and the main.bicep file in the right pane." border="true":::
 
-## Copy elements into your new Bicep file
+## Copy each element into your new Bicep file
 
 1. Copy the resource named `networkSecurityGroups_ToyTruckServer_nsg_name_resource` from the *template.bicep* file to the *main.bicep* file.
+
+   As you copy it, note that the `securityRules` property is empty. Later in this module, you'll refactor the file to remove redundant properties.
 
 1. Notice that Visual Studio Code indicates an error because the `networkSecurityGroups_ToyTruckServer_nsg_name` parameter is missing:
 
@@ -183,14 +177,19 @@ You'll fix these problems throughout the rest of this module.
    - `networkInterfaces_toytruckserver686_name_resource`
 
    > [!NOTE]
-   > The names of the resources in your deployment will be a little different to the ones above. Find the resources that have names that are close to the names listed here.
+   > The names of the resources in your deployment might be different to the ones above. Find the resources that have names that are close to the names listed here.
 
-1. Note that you don't copy the storage account resources or parameter. These elements relate to the Cloud Shell storage account created by the Microsoft Learn sandbox, and they don't need to be migrated to Bicep.
+   As you copy each resource, inspect its properties. Later in this module, you'll update each resource's properties and configuration to conform to Bicep best practices.
 
-   > [!INFORMATION]
-   > This example illustrates how you can sometimes export unrelated resources that shouldn't be migrated. This is why it's a good idea to copy the resources across individually, so that you can review each item as you copy it to the new Bicep file.
+## Check for missing resources
 
-<!-- TODO need to mention managed disk is auto created and you don't declare in your Bicep file? -->
+1. In the Azure portal, open the **ToyTruck** resource group.
+
+1. Review the list of resources, and compare it against the list of resources in your Bicep file. Notice that the resource group contains a **Disk** resource that isn't defined in your Bicep file:
+
+   :::image type="content" source="../media/3-resource-group.png" alt-text="Screenshot of the Azure portal showing the resource group, with the disk resource highlighted." border="true":::
+
+   When you work with virtual machines in Bicep, you don't need to explicitly define the managed disk resource. Instead, you define properties of the virtual machine, and Azure creates the managed disk for you automatically. This means that, in this case, you don't need to worry about the missing resource.
 
 ## Verify your template
 
@@ -199,7 +198,7 @@ You'll fix these problems throughout the rest of this module.
    :::code language="bicep" source="code/3-main-migrated.bicep" :::
 
    > [!NOTE]
-   > A few things will be different in your template, including some of the symbolic names and the public IP address. That's OK. Some of this will be resolved later in the module.
+   > A few things might be different in your template, including some of the symbolic names and the IP addresses. That's OK. Some of this will be resolved later in the module.
 
 1. Close the *template.bicep* file.
 
