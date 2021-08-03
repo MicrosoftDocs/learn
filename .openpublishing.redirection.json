@@ -8871,7 +8871,7 @@
     "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/deploy-azure-resources-by-using-bicep-templates/",
+      "source_path": "learn-pr/azure/deploy-azure-resources-by-using-bicep-templates/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/build-first-bicep-template",
       "redirect_document_id": true
     },
