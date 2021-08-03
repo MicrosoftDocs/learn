@@ -12,7 +12,7 @@ In this unit, you will learn about what content Learn offers for educators, how 
 
 :::image type="content" source="../media/Screenshot-educator-content.png" alt-text="Screenshot of the Learn browser window with Roles selected and Educator and Student roles highlighted.":::
 
-Offerings in Learn for educators will include:
+On Microsoft Learn, you will find:
 
 - Educator professional development training and courses
 - Educator skilling on Microsoft products
@@ -25,15 +25,6 @@ As the Microsoft Educator center merges with Microsoft Learn it will become the 
 ## Modules and learning paths
 
 Most of our training content is in the form of *modules*, which are organized into a series of *learning paths*. Modules are shorter courses, typically 30-60 minutes, that consist of pages called units. Learning paths are a series of modules centered around mastery of a particular topic. If you came from MEC, a module is the equivalent of a course and a learning path is the equivalent of a learning path.
-
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
-
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
-
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
 
 ## Browse and search for educator content
 
