@@ -28,47 +28,47 @@ durationInMinutes: 5 # user input: the estimate time to complete the unit
 content: |
 quiz:
   questions:
-  - content: "Under which area of your profile can you find your badges?"
+  - content: "Where do you find your badges?"
     choices:
-    - content: "Achievements"
+    - content: "Profile>Achievements"
       isCorrect: true
-      explanation: "The *Achievements* tab is where you can find both your badges and trophies for completed modules and learning paths respectively"
-    - content: "Certifications"
+      explanation: "You got it! Keep taking more modules to earn more badges."
+    - content: "Profile>Settings"
       isCorrect: false
-      explanation: "Certifications are where you can find the official Microsoft certifications that you have achieved by passing the required assessments."
-    - content: "Activities"
+      explanation: "There are a lot of great things you can do in settings, however, your badges will display elsewhere."
+    - content: "Profile>Activities"
       isCorrect: false
-      explanation: "Activities is where you can find your in-progress and completed modules and learning paths."
-  - content: "What is a collection?"
+      explanation: "This is a great place to see your progress, but your badges will appear elsewhere. "
+  - content: "Why would I want to use collections?"
     choices:
-    - content: "Collections are a series of modules that you must take in order to earn a Trophy."
+    - content: "Collections shows you what you need to do to earn trophies."
       isCorrect: false
-      explanation: "Learning Paths are a series of modules centered around a specific topic, task, or role that you can take in order to earn a Trophy"
-    - content: "Collections are a bunch of badges and trophies that show how much that you've learned."
+      explanation: "Not quite, think more about how a collection can be shared and organized."
+    - content: "Collections show you what your badges look like."
       isCorrect: false
-      explanation: "Badges and trophies are achievements that you can collect, but they aren't specifically the Collections feature."
-    - content: "Collections allow you to easily curate and organize sets of content and share them with anyone."
+      explanation: "This will be under your achievements, not in your collections."
+    - content: "Collections allow you to easily curate and organize sets of content and share them with peers."
       isCorrect: true
-      explanation: "Correct, collections are for organizing and sharing content with others"
+      explanation: "Keep your knowledge organized and feel free to help out your peers by sending it to them. "
   - content: "After completing a learning path, you will earn a ________."
     choices:
     - content: "Badge"
       isCorrect: false
-      explanation: "Badges are earned by completing a module."
+      explanation: "You will earn this for a module, but not a learning path."
     - content: "Trophy"
       isCorrect: true
-      explanation: "Yes, a trophy can be earned by completing a learning path."
-    - content: "Certifications"
+      explanation: "Way to go! You got it!"
+    - content: "Certification"
       isCorrect: false
-      explanation: "Certifications are earned by completing a Microsoft official assessment exam."
+      explanation: "Not quite, please try again"
   - content: "Which of these statements is false?"
     choices:
     - content: "All course history and badges will be migrated from the Microsoft Educator center to Microsoft Learn."
       isCorrect: false
-      explanation: "This is true. We will be migrating all course history and badges from the Microsoft Educator Center to Learn"
+      explanation: "This is true! All your achievements from MEC will be added to your Learn profile."
     - content: "You can share your profile with others by sending them the public URL."
       isCorrect: false
-      explanation: "This is true. You can share your profile publicly with others by sending them the URL that you create in your profile settings."
+      explanation: "This is true! Your profile URL can help connect peers and school leaders to your achievements."
     - content: "You can't link more than one Microsoft account to your Learn profile"
       isCorrect: true
-      explanation: "This is false. You can link both personal and work accounts to your Learn profile."
+      explanation: "This is false. Learn is allows you to combine multiple Microsoft accounts on your profile."
