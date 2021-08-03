@@ -369,9 +369,9 @@ Let's examine what this code is doing.
 1. Paste the function URL you copied into the address bar of a new tab in your browser.
 
 1. Add the query string value `&id=docs` to the end of the URL. Your resulting URL should resemble the following example:
-
-    https://example.azurewebsites.net/api/HttpTrigger2?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&id=docs
-
+ 
+    'https://example.azurewebsites.net/api/HttpTrigger2?code=AbCdEfGhIjKlMnOpQrStUvWxYz==&id=docs'
+ 
 1. Press <kbd>Enter</kbd> to execute the request in your browser. You should see a response similar to the following example returned by your function.
 
     ```json
