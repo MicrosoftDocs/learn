@@ -27,7 +27,7 @@ You can also use Bicep comments to add a structured multi-line block at the begi
 
 ### Add comments to parameter files
 
-Parameter files enable you to create a file to specify a set of parameters for your deployment. The parameters that you specify in parameter files also often need to be documented, and it's a good practice to add comments to parameter files when you work with parameter values that aren't immediately clear to someone reading the file. For example, your website's Bicep template might include a parameter for the URL to access your product stock API, so your website can display whether your toys are in stock in your warehouse. The URLs to access the stock API for each environment aren't easy to understand, so they're a good candidate for a comment:
+Parameter files enable you to create a JSON file to specify a set of parameter values for your deployment. They need to match with the parameters declared in the Bicep template. The values that you specify in parameter files also often need to be documented, and it's a good practice to add comments to parameter files when you work with parameter values that aren't immediately clear to someone reading the file. For example, your website's Bicep template might include a parameter for the URL to access your product stock API, so your website can display whether your toys are in stock in your warehouse. The URLs to access the stock API for each environment aren't easy to understand, so they're a good candidate for a comment:
 
 ::: code language="json" source="code/5-parameters.jsonc" highlight="6" :::
 
@@ -36,7 +36,7 @@ Parameter files enable you to create a file to specify a set of parameters for y
 
 ## Add descriptions to resources
 
-Some resources support adding descriptions or other human-readable information into the resource itself. For example, Azure RBAC role assignments include a `description` property:
+Some resources support adding descriptions or other human-readable information into the resource itself. For example, many Azure Policy resources as well as Azure RBAC role assignments include a `description` property:
 
 ::: code language="bicep" source="code/5-role-assignment-description.bicep" highlight="8" :::
 
