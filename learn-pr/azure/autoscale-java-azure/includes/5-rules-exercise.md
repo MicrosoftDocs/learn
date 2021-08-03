@@ -1,9 +1,5 @@
 In this exercise, we look at exercises for setting up and triggering autoscaling of your sample application.
 
-## Manually triggering autoscale
-
-Next, we'll look at how to trigger autoscale manually.
-
 ## The sample microservice application
 
 The PetClinic application is decomposed into four core microservices. All of them are independently deployable applications organized by business domains.
