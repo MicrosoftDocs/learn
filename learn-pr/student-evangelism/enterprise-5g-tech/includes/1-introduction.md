@@ -9,7 +9,7 @@ Four situations were identified. In all cases, you should be able to respond rap
 - Keeping safe: detecting motion, walking, gait; using locator devices (ex: for keys)
 - Socializing: remote monitoring by carers 
 
-Your healthcare facility has decided to invest in new technology to cope with dynamic and unpredictable challenges from COVID coupled with the need for rapid response.
+Your healthcare facility has decided to invest in new technology to cope with dynamic and unpredictable challenges  coupled with the need for rapid response.
 
 Video analytics is especially beneficial for monitoring and tracking. Also, video analytics can be used as a diagnostic and preventative tool for proactive intervention. You want to use 5G and Azure private MEC to address the challenges of caring for patients with dementia and Alzheimer’s. You aspire to use 5G-enabled internet protocol (IP) cameras to capture real-time video of the patients in care homes. Then, the on-premises IoT Edge devices will analyze the video data in real-time to detect the conditions listed above, such as walking, gait, socialization, and medication routines. Based on the analytics running on edge devices, the system sends an alert to the carer. If an anomaly (such as a deviation from a regular pattern or an emergency) is detected, the carer undertakes an action. Also, over time, the video clips collected are analyzed for trend data in the cloud. 
 
