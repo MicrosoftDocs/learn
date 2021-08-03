@@ -70,6 +70,8 @@ The scale-in condition in the autoscale setting triggers if there are fewer than
 
 1. Under the chart, are the corresponding set of activity log entries for each scale action taken by this autoscale setting.
 
+![Autoscale log](../media/scale-in-chart.png)
+
 ## Trigger out the scale-out action with Application insights
 
 To trigger the auto scale, we will need to generate some load to get the average tomcat request count above five.
