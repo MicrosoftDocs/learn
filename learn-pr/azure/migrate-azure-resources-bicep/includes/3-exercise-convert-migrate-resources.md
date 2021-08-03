@@ -166,28 +166,48 @@ You'll fix these problems throughout the rest of this module.
 
 ## Copy elements into your new Bicep file
 
-1. TODO copy all params
+1. Copy the resource named `networkSecurityGroups_ToyTruckServer_nsg_name_resource` from the *template.bicep* file to the *main.bicep* file.
 
-1. TODO copy the resources:
+1. Notice that Visual Studio Code indicates an error because the `networkSecurityGroups_ToyTruckServer_nsg_name` parameter is missing:
 
-   - `networkSecurityGroups_ToyTruckServer_nsg_name_resource`
+   :::image type="content" source="../media/3-visual-studio-code-missing-parameter.png" alt-text="Screenshot of the Visual Studio Code editor showing the migrated resource, with a tooltip displaying an error because of the missing parameter." border="true":::
+
+   Copy the parameter to the *main.bicep* file.
+
+1. Repeat the process with the following resources and their associated parameters:
+
    - `publicIPAddresses_ToyTruckServer_ip_name`
    - `virtualNetworks_learn_b44b5d84_e9a2_4b1b_8d33_fdf6122b54ad_vnet_name_resource`
    - `virtualMachines_ToyTruckServer_name_resource`
    - `virtualNetworks_learn_b44b5d84_e9a2_4b1b_8d33_fdf6122b54ad_vnet_name_default`
    - `networkInterfaces_toytruckserver686_name_resource`
 
-   Skip the storage account resources.
+   > [!NOTE]
+   > The names of the resources in your deployment will be a little different to the ones above. Find the resources that have names that are close to the names listed here.
 
-1. Delete the unused parameter, which is named similarly to `storageAccounts_cloudshell982026958_name`.
+1. Note that you don't copy the storage account resources or parameter. These elements relate to the Cloud Shell storage account created by the Microsoft Learn sandbox, and they don't need to be migrated to Bicep.
 
-<!-- TODO in this case no missing resources -->
+   > [!INFORMATION]
+   > This example illustrates how you can sometimes export unrelated resources that shouldn't be migrated. This is why it's a good idea to copy the resources across individually, so that you can review each item as you copy it to the new Bicep file.
 
 ## Verify your template
 
-At the end of the _migrate_ phase, your *main.bicep* file should look similar to the following:
+1. At the end of the _migrate_ phase, your *main.bicep* file should look similar to the following:
 
-:::code language="bicep" source="code/3-main-migrated.bicep" :::
+   :::code language="bicep" source="code/3-main-migrated.bicep" :::
 
-> [!NOTE]
-> A few things will be different in your template, including some of the symbolic names and the public IP address. That's OK.
+   > [!NOTE]
+   > A few things will be different in your template, including some of the symbolic names and the public IP address. That's OK.
+
+1. Close the *template.bicep* file.
+
+1. Select **View** > **Problems** to show the problems pane.
+
+   No problems are indicated.
+
+   :::image type="content" source="../media/3-visual-studio-code-problems.png" alt-text="Screenshot of the Visual Studio Code editor showing the problems pane, with no problems listed." border="true":::
+
+You've now created an initial Bicep file to represent your resources. The Bicep file isn't well-structured and it doesn't follow best practices. In the next unit, you'll learn how to improve the quality of the migrated template.
+
+> [!TIP]
+> If you use a version control system like Git, this would be a good time to commit your work.
