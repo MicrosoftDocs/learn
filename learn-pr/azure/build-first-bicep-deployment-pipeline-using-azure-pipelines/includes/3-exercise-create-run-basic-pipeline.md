@@ -1,4 +1,4 @@
-You want to start automating the deployment for your toy company's website. As a first step you need to create a basic pipeline in Azure DevOps.
+You want to start automating the deployment for your toy company's website. As a first step, you need to create a basic pipeline in Azure DevOps.
 
 In this exercise, you'll:
 
@@ -9,7 +9,7 @@ In this exercise, you'll:
 
 ## Create a project in Azure DevOps
 
-1. In a browser, navigate to [dev.azure.com](https://dev.azure.com?azure-portal=true). Sign in or create a new account.
+1. In a browser, go to [dev.azure.com](https://dev.azure.com?azure-portal=true). Sign in or create a new account.
 
 1. If you're creating a new account, follow the prompts to create an Azure DevOps organization. Azure DevOps then asks you to create a new project. Continue to the next step to configure the project.
 
