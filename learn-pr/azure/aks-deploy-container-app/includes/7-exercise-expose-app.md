@@ -239,40 +239,8 @@ Now we need to deploy the service for our changes to take effect.
 
     Make sure the `ADDRESS` column of the output is filled with an IP address. That's the address of your cluster.
 
-1. There could be a small delay between the creation of the ingress and the creation of the zone record. Let's query Azure to find out if our DNS has been created and we can access the website already.
-
-    Run the `list` command to list all DNS zones again.
-
-    ```bash
-    az network dns zone list --output table
-    ```
-
-    The command should output a result similar to the following example.
-
-    ```output
-    ZoneName                               ResourceGroup                                 RecordSets    MaxRecordSets
-    -------------------------------------  --------------------------------------------  ------------  ---------------
-    5cd29ec927f24764b052.eastus.aksapp.io  mc_rg-contoso-video_aks-contoso-video_eastus  4             10000
-    ```
-
-1. Copy the `ZoneName` and `ResourceGroup` columns, and run the `az network dns` command. Replace the `<resource-group>` and `<zone-name>` value placeholders with the values you copied.
-
-    ```bash
-    az network dns record-set list -g <resource-group> -z <zone-name> --output table
-    ```
-
-    The command should output a result similar to the following example.
-
-    ```output
-    Fqdn                                            Name     ProvisioningState    ResourceGroup                                 Ttl
-    ----------------------------------------------  -------  -------------------  --------------------------------------------  ------
-    5cd29ec927f24764b052.eastus.aksapp.io.          @        Succeeded            mc_rg-contoso-video_aks-contoso-video_eastus  172800
-    5cd29ec927f24764b052.eastus.aksapp.io.          @        Succeeded            mc_rg-contoso-video_aks-contoso-video_eastus  3600
-    contoso.5cd29ec927f24764b052.eastus.aksapp.io.  contoso  Succeeded            mc_rg-contoso-video_aks-contoso-video_eastus  300
-    contoso.5cd29ec927f24764b052.eastus.aksapp.io.  contoso  Succeeded            mc_rg-contoso-video_aks-contoso-video_eastus  300
-    ```
-
-    Make sure there are two new records at the bottom of the list with the host we created in the `host` key. The `ProvisioningState` value is `Succeeded`. It can take up to two minutes for zone records to propagate.
+    > [!NOTE]
+    > There can be a delay between the creation of the ingress and the creation of the zone record. It can take up to five minutes for zone records to propagate.
 
 1. Open your browser, and go to the FQDN described in the output. You should see a website that looks like the following example screenshot.
 
