@@ -10,54 +10,122 @@ You've now created a Bicep file to represent the virtual machine that runs the t
 Before you deploy your new Bicep file for real, you first run the what-if command. This command verifies that your Bicep file is valid, and it provides you with a list of changes that will occur in your Azure environment once you deploy the file.
 
 > [!NOTE]
-> In a real migration, you should run the what-if command against your production and non-production environments, with the appropriate set of parameters for each environment. This helps you to detect any differences in configuration that you might not have uncovered already. In this example you use a single environment, so you run the what-if operation against that one environment.
+> In a real migration, you should run the what-if command against your production and non-production environments, with the appropriate set of parameters for each environment. This helps you to detect any differences in configuration that you might not have uncovered already. In this example you use a single environment, so you only run the what-if operation against that one environment.
+
+::: zone pivot="cli"
 
 1. In the Visual Studio Code **Terminal**, run the following command:
 
    ```azurecli
-   az deployment group what-if --resource-group ToyTruck --file main.bicep --parameters main.parameters.production.json
+   az deployment group what-if --resource-group ToyTruck --template-file main.bicep --parameters main.parameters.production.json
    ```
 
-1. Review the output, which looks like the following:   
+1. When prompted, enter a secure password for the `virtualMachineAdminPassword` parameter value.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. In the Visual Studio Code **Terminal**, run the following command:
+
+   ```azurepowershell
+   New-AzResourceGroupDeployment `
+     -WhatIf `
+     -ResourceGroupName ToyTruck `
+     -TemplateFile main.bicep `
+     -TemplateParameterFile main.parameters.production.json
+   ```
+
+1. When prompted, enter a secure password for the `virtualMachineAdminPassword` parameter value.
+
+::: zone-end
+
+### Review the what-if output
+
+Review the what-if output, which looks like the following:
+
+# [Screenshot](#tab/screenshpt)   
+
+:::image type="content" source="../media/7-whatif-output-1.png" alt-text="Screenshot of the Visual Studio Code terminal showing the output from the what-if operation, with three changes detected.." :::   
+
+# [Text](#tab/textoutput)   
+
+:::code language="output" source="code/7-whatif-output-1.txt" highlight="15, 19, 27" :::
+
+---
+
+The output includes three important pieces of information, which are highlighted in the output above. Let's review each one.
+
+1. On the `networkInterface` resource, the `vnetEncryptionSupported` property is detected to no longer be set to the value `false`. You'll resolve this shortly.
+
+1. Also on the `networkInterface` resource, the `privateIPAddress` property is detected to be removed. This is OK, because you removed that property intentionally. The IP address allocation mode property (`privateIPAllocationMethod`) is set to _Dynamic_, so removing the `privateIPAddress` property won't have any effect, even though it's a change.
+
+1. The what-if command detects that the disk isn't described in your template, and it will ignore it. This is OK, because Azure creates the disk for you.
+
+<!-- TODO discuss how complete mode works -->
+
+### Resolve the vnetEncryptionSupported property issue by updating the API version
+
+1. Open your *main.bicep* file in Visual Studio Code.
+
+1. Update the API version of the `networkInterface` resource from `2020-11-01` to `2020-07-11`:
+
+   :::code language="bicep" source="code/7-main-final.bicep" range="134-160" highlight="1" :::
+
+### Re-run the what-if command
+
+::: zone pivot="cli"
+
+1. In the Visual Studio Code **Terminal**, run the following command:
+
+   ```azurecli
+   az deployment group what-if --resource-group ToyTruck --template-file main.bicep --parameters main.parameters.production.json
+   ```
+
+1. When prompted, enter a secure password for the `virtualMachineAdminPassword` parameter value.
+
+1. Wait for the what-if operation to complete, and inspect the output, which looks like the following:
 
    # [Screenshot](#tab/screenshpt)   
-
-   :::image type="content" source="../media/7-whatif-output.png" alt-text="Screenshot of the Visual Studio Code terminal showing the output from the what-if operation." :::   
-
+   
+   :::image type="content" source="../media/7-whatif-output-2.png" alt-text="Screenshot of the Visual Studio Code terminal showing the output from the what-if operation, with two changes detected." :::   
+   
    # [Text](#tab/textoutput)   
-
-   ```output
-   Note: The result may contain false positive predictions (noise).
-   You can help us improve the accuracy of the result by opening an issue here: https://aka.ms/WhatIfIssues.   
-
-   Resource and property changes are indicated with these symbols:
-     - Delete
-     ~ Modify
-     = Nochange
-     * Ignore   
-
-   The deployment will update the following scope:   
-
-   Scope: /subscriptions/8952eed4-dfa3-4518-93d0-62f8a8ae0d0c/resourceGroups/LEARN-B44B5D84-E9A2-4B1B-8D33-FDF6122B54AD   
-
-     ~ Microsoft.Network/networkInterfaces/toytruckserver686 [2020-11-01]
-       - properties.vnetEncryptionSupported: false   
-
-     = Microsoft.Compute/virtualMachines/ToyTruckServer [2021-03-01]
-     = Microsoft.Network/networkSecurityGroups/ToyTruckServer-nsg [2020-11-01]
-     = Microsoft.Network/publicIPAddresses/ToyTruckServer-ip [2020-11-01]
-     = Microsoft.Network/virtualNetworks/learn-b44b5d84-e9a2-4b1b-8d33-fdf6122b54ad-vnet [2020-11-01]
-     = Microsoft.Network/virtualNetworks/learn-b44b5d84-e9a2-4b1b-8d33-fdf6122b54ad-vnet/subnets/default [2020-11-01]
-     * Microsoft.Compute/disks/ToyTruckServer_OsDisk_1_3b5a980955c54f1c838b7efa21e1ddd3
-     * Microsoft.Storage/storageAccounts/cloudshell982026958   
-
-   Resource changes: 1 to modify, 5 no change, 2 to ignore.
-   ```
-
+   
+   :::code language="output" source="code/7-whatif-output-2.txt" highlight="18, 26" :::
+   
    ---
 
-<!-- TODO update the above - use the correct names and what-if output given the changes in the exercise -->
-<!-- TODO review results -->
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. In the Visual Studio Code **Terminal**, run the following command:
+
+   ```azurepowershell
+   New-AzResourceGroupDeployment `
+     -WhatIf `
+     -ResourceGroupName ToyTruck `
+     -TemplateFile main.bicep `
+     -TemplateParameterFile main.parameters.production.json
+   ```
+
+1. When prompted, enter a secure password for the `virtualMachineAdminPassword` parameter value.
+
+1. Wait for the what-if operation to complete, and inspect the output, which looks like the following:
+
+   # [Screenshot](#tab/screenshpt)   
+   
+   :::image type="content" source="../media/7-whatif-output-2.png" alt-text="Screenshot of the Visual Studio Code terminal showing the output from the what-if operation, with two changes detected." :::   
+   
+   # [Text](#tab/textoutput)   
+   
+   :::code language="output" source="code/7-whatif-output-2.txt" highlight="18, 26" :::
+   
+   ---
+   <!-- TODO check output is the same as CLI -->
+
+::: zone-end
 
 <!-- TODO note that anything on the OS disk wouldn't be included - you'd need to do a separate backup or image -->
 
@@ -65,17 +133,48 @@ Before you deploy your new Bicep file for real, you first run the what-if comman
 
 You know that your Bicep file is valid, and the what-if operation has indicated that your template has the effects that you expect. You're now ready to deploy your template. If this step succeeds, you should see no effect.
 
+::: zone pivot="cli"
+
 1. In the Visual Studio Code **Terminal**, run the following command:
 
    ```azurecli
-   az deployment group create --resource-group ToyTruck --file main.bicep --parameters main.parameters.production.json
+   az deployment group create --resource-group ToyTruck --template-file main.bicep --parameters main.parameters.production.json
    ```
 
    The deployment takes a few seconds and then completes successfully.
 
-1. In the Azure portal, open the resource group and navigate to the deployment.
+1. In the Azure portal, open the resource group. Select the **2 Succeeded** link to view the list of deployments.
 
-   Verify that the deployment succeeded.
+   :::image type="content" source="../media/7-resource-group.png" alt-text="Screenshot of the Azure portal showing the resource group, with the 2 successful deployment link highlighted." :::
+
+1. Notice that the deployment succeeded.
+
+   :::image type="content" source="../media/7-deployment-list.png" alt-text="Screenshot of the Azure portal showing the resource group deployments, with the successful deployment highlighted." :::
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. In the Visual Studio Code **Terminal**, run the following command:
+
+   ```azurepowershell
+   New-AzResourceGroupDeployment `
+     -ResourceGroupName ToyTruck `
+     -TemplateFile main.bicep `
+     -TemplateParameterFile main.parameters.production.json
+   ```
+
+   The deployment takes a few seconds and then completes successfully.
+
+1. In the Azure portal, open the resource group. Select the **2 Succeeded** link to view the list of deployments.
+
+   :::image type="content" source="../media/7-resource-group.png" alt-text="Screenshot of the Azure portal showing the resource group, with the 2 successful deployment link highlighted." :::
+
+1. Notice that the deployment succeeded.
+
+   :::image type="content" source="../media/7-deployment-list.png" alt-text="Screenshot of the Azure portal showing the resource group deployments, with the successful deployment highlighted." :::
+
+::: zone-end
 
 > [!TIP]
 > In a real migration, you should also run smoke tests to verify that your resources are still behaving correctly. This acts as a final check to ensure that you didn't accidentally change something you didn't mean to.

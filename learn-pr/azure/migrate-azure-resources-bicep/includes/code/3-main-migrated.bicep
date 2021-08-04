@@ -1,6 +1,6 @@
 param virtualNetworks_ToyTruck_vnet_name string = 'ToyTruck-vnet'
 param virtualMachines_ToyTruckServer_name string = 'ToyTruckServer'
-param networkInterfaces_toytruckserver379_name string = 'toytruckserver379'
+param networkInterfaces_toytruckserver890_name string = 'toytruckserver890'
 param publicIPAddresses_ToyTruckServer_ip_name string = 'ToyTruckServer-ip'
 param networkSecurityGroups_ToyTruckServer_nsg_name string = 'ToyTruckServer-nsg'
 
@@ -69,12 +69,12 @@ resource virtualMachines_ToyTruckServer_name_resource 'Microsoft.Compute/virtual
       }
       osDisk: {
         osType: 'Linux'
-        name: '${virtualMachines_ToyTruckServer_name}_disk1_2c4947554738461abc054a8bd79bcdb4'
+        name: '${virtualMachines_ToyTruckServer_name}_disk1_23e6a144c4ea4049b3e2be24b78a9e81'
         createOption: 'FromImage'
         caching: 'ReadWrite'
         managedDisk: {
           storageAccountType: 'Premium_LRS'
-          id: resourceId('Microsoft.Compute/disks', '${virtualMachines_ToyTruckServer_name}_disk1_2c4947554738461abc054a8bd79bcdb4')
+          id: resourceId('Microsoft.Compute/disks', '${virtualMachines_ToyTruckServer_name}_disk1_23e6a144c4ea4049b3e2be24b78a9e81')
         }
         diskSizeGB: 30
       }
@@ -98,7 +98,7 @@ resource virtualMachines_ToyTruckServer_name_resource 'Microsoft.Compute/virtual
     networkProfile: {
       networkInterfaces: [
         {
-          id: networkInterfaces_toytruckserver379_name_resource.id
+          id: networkInterfaces_toytruckserver890_name_resource.id
         }
       ]
     }
@@ -121,8 +121,8 @@ resource virtualNetworks_ToyTruck_vnet_name_default 'Microsoft.Network/virtualNe
   }
 }
 
-resource networkInterfaces_toytruckserver379_name_resource 'Microsoft.Network/networkInterfaces@2020-11-01' = {
-  name: networkInterfaces_toytruckserver379_name
+resource networkInterfaces_toytruckserver890_name_resource 'Microsoft.Network/networkInterfaces@2020-11-01' = {
+  name: networkInterfaces_toytruckserver890_name
   location: 'westus'
   properties: {
     ipConfigurations: [

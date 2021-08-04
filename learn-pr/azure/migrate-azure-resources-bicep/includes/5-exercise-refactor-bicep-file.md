@@ -29,7 +29,7 @@ During the process, you'll:
    | Virtual network | `virtualNetworks_ToyTruck_vnet_name_resource` | `virtualNetwork ` |
    | Virtual machine | `virtualMachines_ToyTruckServer_name_resource` | `virtualMachine` |
    | Subnet | `virtualNetworks_ToyTruck_vnet_name_default` | `defaultSubnet` |
-   | Network interface | `networkInterfaces_toytruckserver379_name_resource` | `networkInterface` |
+   | Network interface | `networkInterfaces_toytruckserver890_name_resource` | `networkInterface` |
 
 ## Remove the redundant subnet resource
 

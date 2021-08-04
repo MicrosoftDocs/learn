@@ -175,7 +175,7 @@ You'll fix these problems throughout the rest of this module.
    - `virtualNetworks_ToyTruck_vnet_name_resource`
    - `virtualMachines_ToyTruckServer_name_resource`
    - `virtualNetworks_ToyTruck_vnet_name_default`
-   - `networkInterfaces_toytruckserver379_name_resource`
+   - `networkInterfaces_toytruckserver890_name_resource`
 
    > [!NOTE]
    > The names of the resources in your deployment might be different to the ones above. Find the resources that have names that are close to the names listed here.
