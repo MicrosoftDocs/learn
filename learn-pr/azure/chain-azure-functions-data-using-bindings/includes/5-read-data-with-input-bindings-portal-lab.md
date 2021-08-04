@@ -230,7 +230,7 @@ Now that you have your binding defined, it's time to use it in your function.
 
 ## Update the function implementation
 
-There are two changes that you need to be make to implement the binding that you just created:
+There are two changes that you need to make to implement the binding that you just created:
 
 - Your function's language-specific implementation code needs to be modified to determine if a document was found in the database that matches the ID that is passed to the function.
 
