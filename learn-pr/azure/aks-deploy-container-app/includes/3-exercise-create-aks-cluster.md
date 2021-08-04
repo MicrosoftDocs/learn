@@ -12,8 +12,8 @@ AKS supports both Linux and Windows node pools via the Portal or Azure CLI, howe
 1. Create variables for the configuration values you'll reuse throughout the exercises.
 
     ```bash
-    RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
-    CLUSTER_NAME=aks-contoso-video
+    export RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
+    export CLUSTER_NAME=aks-contoso-video
     ```
 
 1. Run the `az aks create` command to create an AKS cluster.
