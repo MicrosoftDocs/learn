@@ -125,10 +125,10 @@ Your template has some hard-coded values where parameters or variables would be 
    param publicIPAddressSkuName string = 'Basic'
    
    @description('The virtual network address range.')
-   param vnetAddressPrefix string = '10.0.0.0/16'
+   param virtualNetworkAddressPrefix string = '10.0.0.0/16'
    
    @description('The default subnet address range within the virtual network')
-   param vnetDefaultSubnetAddressPrefix string = '10.0.0.0/24'
+   param virtualNetworkDefaultSubnetAddressPrefix string = '10.0.0.0/24'
    ```
 
 1. Add the following new variable declarations:
@@ -139,7 +139,7 @@ Your template has some hard-coded values where parameters or variables would be 
 
 1. Update the `virtualNetwork` resource to refer to the parameters and variables:
 
-   - Use the `vnetAddressPrefix` parameter within the virtual network's `addressSpace.addressPrefixes` property.
+   - Use the `virtualNetworkAddressPrefix` parameter within the virtual network's `addressSpace.addressPrefixes` property.
    - Use the `virtualNetworkDefaultSubnetName` variable for the subnet `name` properties. Make sure to change both the `subnets` property and the nested `existing` resource.
    - Use the `vnetDefaultSubnetAddressPrefix` parameter for the subnet's `addressPrefix` property.
 
@@ -168,7 +168,7 @@ The export process adds redundant properties to many resources. Here, you remove
 
    - Remove the `storageProfile.osDisk.managedDisk.id` property, since Azure automatically determines this when the virtual machine is deployed.
      > [!IMPORTANT]
-     > Make sure to do this TODO
+     > It's important to remove this property, otherwise your template won't deploy correctly.
    - Remove the `requireGuestProvisionSignal` property, since Azure sets this automatically.
    - Remove the `storageProfile.dataDisks` and `osProfile.secrets` properties, since they're empty.
 
@@ -180,9 +180,13 @@ The export process adds redundant properties to many resources. Here, you remove
 > [!TIP]
 > When you work with your own templates, you'll need to determine whether there are any properties that should be removed like you've done here.
 > 
-> TODO mention snippets
+> In Visual Studio Code, the Bicep extension helps you to set the minimum properties for a resource. After you select the <kbd>=</kbd> key in the resource definition, Visual Studio Code prompts you to select **required-properties**:
 > 
-> The Azure Quickstart Templates repository is helpful for this task. Find a quickstart template that is approximately what you're trying to do, and look at the properties it sets on the resource.
+> :::image type="content" source="../media/5-visual-studio-code-required-properties.png" alt-text="Screenshot of Visual Studio Code showing the required properties selection when defining a new Bicep resource." border="true":::
+>
+> When you select **required-properties**, Visual Studio Code pre-populates the resource definition with the properties that are mandatory. You can refer to this to determine whether the properties in your converted template all need to be present.
+> 
+> The Azure Quickstart Templates repository is also helpful for this task. Find a quickstart template that is approximately what you're trying to do, and look at the properties it sets on the resource.
 
 ## Create a parameter file
 

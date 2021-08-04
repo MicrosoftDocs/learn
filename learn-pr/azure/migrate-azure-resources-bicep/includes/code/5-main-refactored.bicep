@@ -2,13 +2,13 @@
 param location string = resourceGroup().location
 
 @description('The name of the size of the virtual machine to deploy.')
-param virtualMachineSizeName string = 'Standard_D2s_v3'
+param virtualMachineSizeName string
 
 @description('The name of the storage account SKU to use for the virtual machine\'s managed disk.')
-param virtualMachineManagedDiskStorageAccountType string = 'Premium_LRS'
+param virtualMachineManagedDiskStorageAccountType string
 
 @description('The administrator username for the virtual machine.')
-param virtualMachineAdminUsername string = 'toytruckadmin'
+param virtualMachineAdminUsername string
 
 @description('The administrator password for the virtual machine.')
 @secure()
@@ -18,10 +18,10 @@ param virtualMachineAdminPassword string
 param publicIPAddressSkuName string = 'Basic'
 
 @description('The virtual network address range.')
-param vnetAddressPrefix string = '10.0.0.0/16'
+param virtualNetworkAddressPrefix string
 
 @description('The default subnet address range within the virtual network')
-param vnetDefaultSubnetAddressPrefix string = '10.0.0.0/24'
+param virtualNetworkDefaultSubnetAddressPrefix string
 
 var virtualNetworkName = 'ToyTruck-vnet'
 var virtualNetworkDefaultSubnetName = 'default'
@@ -61,17 +61,14 @@ resource virtualNetwork 'Microsoft.Network/virtualNetworks@2020-11-01' = {
   properties: {
     addressSpace: {
       addressPrefixes: [
-        vnetAddressPrefix
+        virtualNetworkAddressPrefix
       ]
     }
     subnets: [
       {
         name: virtualNetworkDefaultSubnetName
         properties: {
-          addressPrefix: vnetDefaultSubnetAddressPrefix
-          networkSecurityGroup: {
-            id: networkSecurityGroup.id
-          }
+          addressPrefix: virtualNetworkDefaultSubnetAddressPrefix
           privateEndpointNetworkPolicies: 'Enabled'
           privateLinkServiceNetworkPolicies: 'Enabled'
         }
@@ -79,9 +76,9 @@ resource virtualNetwork 'Microsoft.Network/virtualNetworks@2020-11-01' = {
     ]
     enableDdosProtection: false
   }
-  
+
   resource defaultSubnet 'subnets' existing = {
-    name: 'default'
+    name: virtualNetworkDefaultSubnetName
   }
 }
 
@@ -96,7 +93,7 @@ resource virtualMachine 'Microsoft.Compute/virtualMachines@2021-03-01' = {
       imageReference: virtualMachineImageReference
       osDisk: {
         osType: 'Linux'
-        name: '${virtualMachineName}_OsDisk_1_3b5a980955c54f1c838b7efa21e1ddd3'
+        name: '${virtualMachineName}_disk1_23e6a144c4ea4049b3e2be24b78a9e81'
         createOption: 'FromImage'
         caching: 'ReadWrite'
         managedDisk: {

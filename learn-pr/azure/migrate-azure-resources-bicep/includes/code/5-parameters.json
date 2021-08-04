@@ -11,10 +11,10 @@
     "virtualMachineAdminUsername": {
         "value": "toytruckadmin"
     },
-    "vnetAddressPrefix": {
+    "virtualNetworkAddressPrefix": {
         "value": "10.0.0.0/16"
     },
-    "vnetDefaultSubnetAddressPrefix": {
+    "virtualNetworkDefaultSubnetAddressPrefix": {
         "value": "10.0.0.0/24"
     }
   }
