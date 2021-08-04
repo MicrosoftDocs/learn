@@ -2,13 +2,13 @@
 param location string = resourceGroup().location
 
 @description('The name of the size of the virtual machine to deploy.')
-param virtualMachineSizeName string
+param virtualMachineSizeName string = 'Standard_D2s_v3'
 
 @description('The name of the storage account SKU to use for the virtual machine\'s managed disk.')
-param virtualMachineManagedDiskStorageAccountType string
+param virtualMachineManagedDiskStorageAccountType string = 'Premium_LRS'
 
 @description('The administrator username for the virtual machine.')
-param virtualMachineAdminUsername string
+param virtualMachineAdminUsername string = 'toytruckadmin'
 
 @description('The administrator password for the virtual machine.')
 @secure()
@@ -18,11 +18,13 @@ param virtualMachineAdminPassword string
 param publicIPAddressSkuName string = 'Basic'
 
 @description('The virtual network address range.')
-param vnetAddressPrefix string
+param vnetAddressPrefix string = '10.0.0.0/16'
 
 @description('The default subnet address range within the virtual network')
-param vnetDefaultSubnetAddressPrefix string
+param vnetDefaultSubnetAddressPrefix string = '10.0.0.0/24'
 
+var virtualNetworkName = 'ToyTruck-vnet'
+var virtualNetworkDefaultSubnetName = 'default'
 var virtualMachineName = 'ToyTruckServer'
 var virtualMachineImageReference = {
   publisher: 'canonical'
@@ -30,11 +32,9 @@ var virtualMachineImageReference = {
   sku: '20_04-lts'
   version: 'latest'
 }
-var networkInterfaceName = 'toytruckserver674'
+var networkInterfaceName = 'toytruckserver890'
 var publicIPAddressName = 'ToyTruckServer-ip'
 var networkSecurityGroupName = 'ToyTruckServer-nsg'
-var virtualNetworkName = 'learn-fa7d2315-37da-4b11-9475-c52e422b8e11-vnet'
-var virtualNetworkDefaultSubnetName = 'default'
 
 resource networkSecurityGroup 'Microsoft.Network/networkSecurityGroups@2020-11-01' = {
   name: networkSecurityGroupName

@@ -67,22 +67,22 @@ The virtual network's subnet is currently defined twice: once in the `virtualNet
 
 The parameters in the current template don't really need to be parameters. Here, you'll convert them to variables. At the same time, you'll rename them to more meaningful names.
 
-1. Select the symbolic name for the `virtualMachines_ToyTruckServer_name` parameter. Rename it to `virtualMachineName`.
+1. Select the symbolic name for the `virtualNetworks_ToyTruck_vnet_name` parameter. Rename it to `virtualNetworkName`.
 
 1. Change the parameter to a variable. Remember to remove the type, since variable definitions don't include types:
 
    ```bicep
-   var virtualMachineName = 'ToyTruckServer'
+   var virtualNetworkName = 'ToyTruck-vnet'
    ```
 
 1. Repeat the process for each parameter, and rename them as listed below:
 
    | Current parameter name | New variable name |
    |-|-|
-   | `networkInterfaces_toytruckserver686_name` | `networkInterfaceName` |
+   | `virtualMachines_ToyTruckServer_name` | `virtualMachineName` |
+   | `networkInterfaces_toytruckserver890_name` | `networkInterfaceName` |
    | `publicIPAddresses_ToyTruckServer_ip_name` | `publicIPAddressName` |
    | `networkSecurityGroups_ToyTruckServer_nsg_name` | `networkSecurityGroupName` |
-   | `virtualNetworks_learn_b44b5d84_e9a2_4b1b_8d33_fdf6122b54ad_vnet_name` | `virtualNetworkName` |
 
 1. Verify that your variable declarations look similar to the following:
 
@@ -122,7 +122,7 @@ Your template has some hard-coded values where parameters or variables would be 
    param virtualMachineAdminPassword string
    
    @description('The name of the SKU of the public IP address to deploy.')
-   param publicIPAddresSkuName string = 'Basic'
+   param publicIPAddressSkuName string = 'Basic'
    
    @description('The virtual network address range.')
    param vnetAddressPrefix string = '10.0.0.0/16'
@@ -133,14 +133,14 @@ Your template has some hard-coded values where parameters or variables would be 
 
 1. Add the following new variable declarations:
 
-   :::code language="bicep" source="code/5-main-refactored.bicep" range="26-37" highlight="2-7, 12" :::
+   :::code language="bicep" source="code/5-main-refactored.bicep" range="26-37" highlight="2, 3-8" :::
 
 1. Update the `publicIPAddress` resource to refer to the `publicIPAddressSkuName` parameter in its `sku.name` property.
 
 1. Update the `virtualNetwork` resource to refer to the parameters and variables:
 
    - Use the `vnetAddressPrefix` parameter within the virtual network's `addressSpace.addressPrefixes` property.
-   - Use the `virtualNetworkDefaultSubnetName` variable for the subnet name, in both the `subnets` property and in the nested `existing` resource.
+   - Use the `virtualNetworkDefaultSubnetName` variable for the subnet `name` properties. Make sure to change both the `subnets` property and the nested `existing` resource.
    - Use the `vnetDefaultSubnetAddressPrefix` parameter for the subnet's `addressPrefix` property.
 
 1. Update the `virtualMachine` resource to refer to the parameters and variables: 
@@ -149,7 +149,7 @@ Your template has some hard-coded values where parameters or variables would be 
    - Use the `virtualMachineImageReference` variable for the `storageProfile.imageReference` property.
    - Use the `virtualMachineManagedDiskStorageAccountType` parameter for the `storageProfile.osDisk.managedDisk.storageAccountType` property.
    - Use the `virtualMachineAdminUsername` parameter for the `osProfile.adminUsername` property.
-   - Directly below the `osProfile.adminUsername` property, set the `adminPassword` property to the `virtualMachineAdminPassword` parameter.
+   - Directly below the `osProfile.adminUsername` property, add a new property named `adminPassword`. Set its value to the `virtualMachineAdminPassword` parameter.
 
 ## Remove unnecessary properties
 
@@ -167,16 +167,20 @@ The export process adds redundant properties to many resources. Here, you remove
 1. In the `virtualMachine` resource:
 
    - Remove the `storageProfile.osDisk.managedDisk.id` property, since Azure automatically determines this when the virtual machine is deployed.
+     > [!IMPORTANT]
+     > Make sure to do this TODO
    - Remove the `requireGuestProvisionSignal` property, since Azure sets this automatically.
    - Remove the `storageProfile.dataDisks` and `osProfile.secrets` properties, since they're empty.
 
 1. In the `networkInterface` resource:
 
-   - Remove the `privateIPAddress` property from `ipConfigurations`, since it's automatically set by Azure.
+   - Remove the `privateIPAddress` property from `ipConfigurations`, since it's automatically set by Azure because the allocation method is _Dynamic_.
    - Remove the `dnsServers` property from `dnsSettings`, since it's empty. Remove the `dnsSettings` property since it's empty now, too.
 
 > [!TIP]
 > When you work with your own templates, you'll need to determine whether there are any properties that should be removed like you've done here.
+> 
+> TODO mention snippets
 > 
 > The Azure Quickstart Templates repository is helpful for this task. Find a quickstart template that is approximately what you're trying to do, and look at the properties it sets on the resource.
 
@@ -190,7 +194,7 @@ Your parameters are currently defined as default values in your template. To mak
 
    :::code language="json" source="code/5-parameters.json" :::
 
-1. Update your *main.bicep* to remove the default values for the parameters you specified in the parameters file.
+1. Update your *main.bicep* to remove the default values for the parameters you specified in the parameters file. Notice that you leave the default values for the `location` and `publicIPAddressSkuName` parameters, since they are likely to be the same for all of your environments.
 
 ## Verify your template
 
