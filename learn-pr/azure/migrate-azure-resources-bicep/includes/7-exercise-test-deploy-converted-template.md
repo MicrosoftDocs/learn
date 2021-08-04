@@ -5,6 +5,12 @@ You've now created a Bicep file to represent the virtual machine that runs the t
 > - Run the what-if command to determine the effects of your deployment.
 > - Deploy the template and verify the deployment status.
 
+<!--
+TODO still to write:
+- Complete mode, and how the disk won't actually be deleted
+- Anything on the OS disk isn't included in the export - you'd need to do a separate backup, image, or run scripts to deploy app components etc
+-->
+
 ## Run what-if
 
 Before you deploy your new Bicep file for real, you first run the what-if command. This command verifies that your Bicep file is valid, and it provides you with a list of changes that will occur in your Azure environment once you deploy the file.
@@ -50,19 +56,17 @@ Review the what-if output, which looks like the following:
 
 # [Text](#tab/textoutput)   
 
-:::code language="output" source="code/7-whatif-output-1.txt" highlight="15, 19, 27" :::
+:::code language="output" source="code/7-whatif-output-1.txt" :::
 
 ---
 
-The output includes three important pieces of information, which are highlighted in the output above. Let's review each one.
+The output includes three important pieces of information. Let's review each one.
 
 1. On the `networkInterface` resource, the `vnetEncryptionSupported` property is detected to no longer be set to the value `false`. You'll resolve this shortly.
 
 1. Also on the `networkInterface` resource, the `privateIPAddress` property is detected to be removed. This is OK, because you removed that property intentionally. The IP address allocation mode property (`privateIPAllocationMethod`) is set to _Dynamic_, so removing the `privateIPAddress` property won't have any effect, even though it's a change.
 
 1. The what-if command detects that the disk isn't described in your template, and it will ignore it. This is OK, because Azure creates the disk for you.
-
-<!-- TODO discuss how complete mode works -->
 
 ### Resolve the vnetEncryptionSupported property issue by updating the API version
 
@@ -92,7 +96,7 @@ The output includes three important pieces of information, which are highlighted
    
    # [Text](#tab/textoutput)   
    
-   :::code language="output" source="code/7-whatif-output-2.txt" highlight="18, 26" :::
+   :::code language="output" source="code/7-whatif-output-2.txt" :::
    
    ---
 
@@ -120,14 +124,11 @@ The output includes three important pieces of information, which are highlighted
    
    # [Text](#tab/textoutput)   
    
-   :::code language="output" source="code/7-whatif-output-2.txt" highlight="18, 26" :::
+   :::code language="output" source="code/7-whatif-output-2.txt" :::
    
    ---
-   <!-- TODO check output is the same as CLI -->
 
 ::: zone-end
-
-<!-- TODO note that anything on the OS disk wouldn't be included - you'd need to do a separate backup or image -->
 
 ## Deploy your template
 
