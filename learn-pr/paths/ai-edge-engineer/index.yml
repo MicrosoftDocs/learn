@@ -2,7 +2,7 @@
 uid: learn.ai-edge-engineer
 metadata:
   title: AI edge engineer
-  description: University of Oxford
+  description: This learning path aims to explain learners how to deploy AI at the edge using Azure services.
   brand: azure
   ms.date: 4/13/2020
   author: leestott
@@ -75,5 +75,8 @@ modules:
 - learn.oxford.image-classification-azure-sphere
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere
+- learn.oxford.create-image-recognition-with-azure-iot-edge
+- learn.oxford.void-detection-edge-devices-lva
+- learn.oxford.object-detection-lva-edge-device
 trophy:
   uid: learn.oxford.ai-edge-engineer.trophy

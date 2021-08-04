@@ -9,6 +9,6 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-hub
-durationInMinutes: 3 # dummy number at present
+durationInMinutes: 4
 content: |
   [!include[](includes/1-introduction.md)]

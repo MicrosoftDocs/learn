@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.serverless-go.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Multiple-choice questions
+  ms.date: 07/12/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: Choose the best response for each question. Then select **Check your answers**.
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: How can you make Azure Functions find your compiled app?
+      choices:
+        - content: Set `defaultExecutablePath` in the _host.json_ file.
+          isCorrect: false
+          explanation: Incorrect. You should set `defaultExecutablePath` in the _function.json_ file for that endpoint.
+        - content: Set the `executionPath` property in the _function.json_ file for the function endpoint.
+          isCorrect: false
+          explanation: Incorrect. The property is called `defaultExecutionPath`.
+        - content: Set `defaultExecutablePath` in the _function.json_ file for the function endpoint.
+          isCorrect: true
+          explanation: Correct. That's the right place to point out the compiled app path.
+    - content: Can any language or runtime use custom handlers?
+      choices:
+        - content: Yes. There are no limitations.
+          isCorrect: false
+          explanation: Incorrect. The selected language or runtime needs to support HTTP primitives.
+        - content: Yes, as long as it supports HTTP primitives.
+          isCorrect: true
+          explanation: Correct. A runtime or language that supports HTTP primitives can be used to create Azure functions.
+        - content: Yes, but only languages with first-class support. 
+          isCorrect: false
+          explanation: Incorrect. The point of custom handlers is to support languages and runtimes that don't have first-class support.

@@ -2,7 +2,7 @@ Azure Database Migration Service automates the task of migrating your databases 
 
 Suppose you work for a company that aggregates social media links to provide recommendations to users of its website. The current infrastructure is having problems scaling up to handle the current demands. In addition, the infrastructure is becoming more expensive to maintain as the equipment ages.
 
-The company's SQL Server database is hosted in a Windows virtual machine in Azure. To save costs and to provide a platform for rapid growth in the future, management has decided to migrate that database to Azure SQL Database. As the IT resource in charge of the database, you're tasked with the migration.
+The company's SQL Server database is hosted in a Windows virtual machine (VM) in Azure. To save costs and to provide a platform for rapid growth in the future, management has decided to migrate that database to Azure SQL Database. As the IT resource in charge of the database, you're tasked with the migration.
 
 In this module, you'll learn how to use Azure Database Migration Service to accomplish the move to Azure SQL Database. First, you'll see how to use the Data Migration Assistant feature to examine your existing database for any compatibility issues with Azure SQL Database. You'll then use the service to migrate the database.
 

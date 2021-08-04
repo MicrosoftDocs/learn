@@ -26,6 +26,8 @@ Azure DevOps Services is a suite of services that address every stage of the sof
 - **Azure Artifacts** is a repository for hosting artifacts, such as compiled source code, which can be fed into testing or deployment pipeline steps.
 - **Azure Test Plans** is an automated test tool that can be used in a CI/CD pipeline to ensure quality before a software release.
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWHb6A]
+
 Azure DevOps is a mature tool with a large feature set that began as on-premises server software and evolved into a software as a service (SaaS) offering from Microsoft.
 
 ### GitHub and GitHub Actions

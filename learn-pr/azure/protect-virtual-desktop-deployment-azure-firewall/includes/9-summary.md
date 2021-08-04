@@ -1,20 +1,20 @@
 Your organization is using Azure Virtual Desktop to provide your workforce access to virtualized desktops and apps. Because of the sensitive data your organization works with and your organization's network security requirements, you can't have any unauthorized network traffic in your Azure Virtual Desktop environment. You decided to deploy Azure Firewall to limit outbound network traffic for Azure Virtual Desktop.
 
-You completed the following steps to deploy Azure Firewall to protect an Azure Virtual Desktop host pool.
+You completed the following steps to deploy Azure Firewall to protect an Azure Virtual Desktop host pool:
 
-**Step 1: Set up the network**
+1. Set up the network.
 
-- Created a hub virtual network that includes a subnet for the firewall deployment.
-- Peered the hub virtual network with the virtual network used by the Azure Virtual Desktop host pool.  
+    - Created a hub virtual network that includes a subnet for the firewall deployment.
+    - Peered the hub virtual network with the virtual network used by the Azure Virtual Desktop host pool.  
 
-**Step 2: Deployed Azure Firewall**
+1. Deployed Azure Firewall.
 
-- Deployed Azure firewall to a subnet in the hub virtual network.
-- For outbound traffic, created a default route that sends traffic from all subnets to the firewall's private IP address.
+    - Deployed Azure Firewall to a subnet in the hub virtual network.
+    - For outbound traffic, created a default route that sends traffic from all subnets to the firewall's private IP address.
 
-**Step 3: Created Azure Firewall rules**
+1. Created Azure Firewall rules.
 
-- Configured the firewall with rules to filter inbound and outbound traffic for the host pool.
+    - Configured the firewall with rules to filter inbound and outbound traffic for the host pool.
 
 ## Clean up
 

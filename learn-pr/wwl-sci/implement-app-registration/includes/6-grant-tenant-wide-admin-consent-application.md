@@ -99,7 +99,7 @@ If you follow these steps, your app can request permissions for all users in a t
 Applications are able to note which permissions they require (both delegated and application) in the app registration portal. This allows use of the /.default scope and the Azure portal's "Grant admin consent" option. In general, it's best practice to ensure that the permissions statically defined for a given application are a superset of the permissions that it will be requesting dynamically/incrementally.
 
 > [!NOTE]
-> Application permissions can only be requested through the use of [/.default](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent). If your app needs application permissions, make sure they're listed in the app registration portal.
+> Application permissions can only be requested through the use of [/.default](/azure/active-directory/develop/v2-permissions-and-consent). If your app needs application permissions, make sure they're listed in the app registration portal.
 
 ### To configure the list of statically requested permissions for an application
 
