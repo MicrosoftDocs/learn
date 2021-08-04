@@ -18,7 +18,7 @@ Add applications to Azure AD to leverage one or more of the services it provides
 
 - Directory schema extension attributes: Extend the schema of service principal and user objects to store additional data in Azure AD.
 
-There are two representations of applications in Azure AD: [application objects](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals) and service principals. The next two sections explain each, as well as how they interact with one another in the Azure portal.
+There are two representations of applications in Azure AD: [application objects](/azure/active-directory/develop/app-objects-and-service-principals) and service principals. The next two sections explain each, as well as how they interact with one another in the Azure portal.
 
 ## What are application objects and where do they come from?
 
@@ -104,7 +104,8 @@ Like application objects, service principals can be created through multiple pat
 
 An application has one application object in its home directory that's referenced by one or more service principals in each of the directories where it operates (including the application's home directory).
 
-![Shows relationship between app objects and service principals.](../media/how-apps-added-azure-active-directory.png)
+> [!div class="mx-imgBorder"]
+>![Shows relationship between app objects and service principals.](../media/how-apps-added-azure-active-directory.png)
 
 In the preceding diagram, Microsoft maintains two directories internally (shown on the left) that it uses to publish applications:
 
@@ -137,6 +138,18 @@ For more detailed information on the service principal and application objects, 
 - Application
 
 - Service Principal
+
+## Adding a new app registration
+
+> [!div class="mx-imgBorder"]
+>![A diagram that show the relationship between app objects and service principals.](../media/sc300-register-new-app.png)
+
+**Process flow of the diagram**
+1. User requests to register an application – a request token is issued.
+2. Authorization endpoint sends back an Authentication.
+3. User consents to have the application registration.
+4. Service is created from the application
+5. Token returned to the user.
 
 ## Who has permission to add applications to my Azure AD instance?
 
