@@ -77,11 +77,11 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
    :::image type="content" source="../media/3-export-template.png" alt-text="Screenshot of the Azure portal showing the exported resource group JSON template, with the Download button highlighted." border="true":::
 
-   The JSON template and parameters file are downloaded to your computer in a zip file.
+   The JSON template and parameters file are downloaded to your computer as a zip file.
 
-1. Unzip the file to somewhere you can access easily, like your desktop.
+1. Unzip the file to a folder that you can access easily, like your desktop.
 
-## Prepare Visual Studio Code
+## Prepare your local environment
 
 ::: zone pivot="cli"
 
@@ -117,8 +117,6 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
    :::code language="output" source="code/3-decompile-output.txt" :::
 
-   You'll update the decompiled Bicep file to resolve these issues soon.
-
 ::: zone-end
 
 ::: zone pivot="powershell"
@@ -132,8 +130,6 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 1. Notice that the decompile operation shows warnings similar to the following:
 
    :::code language="output" source="code/3-decompile-output.txt" :::
-
-   You'll update the decompiled Bicep file to resolve these issues soon.
 
 ::: zone-end
 
@@ -179,7 +175,7 @@ You'll fix these problems throughout the rest of this module.
    - `virtualNetworks_ToyTruck_vnet_name_resource`
    - `virtualMachines_ToyTruckServer_name_resource`
    - `virtualNetworks_ToyTruck_vnet_name_default`
-   - `networkInterfaces_toytruckserver90_name_resource`
+   - `networkInterfaces_toytruckserver379_name_resource`
 
    > [!NOTE]
    > The names of the resources in your deployment might be different to the ones above. Find the resources that have names that are close to the names listed here.

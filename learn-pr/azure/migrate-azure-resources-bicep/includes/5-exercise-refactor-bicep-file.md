@@ -26,24 +26,10 @@ During the process, you'll:
    | Resource type | Current symbolic name | New symbolic name |
    |-|-|-|
    | Public IP address | `publicIPAddresses_ToyTruckServer_ip_name_resource` | `publicIPAddress` |
-   | Virtual network | `virtualNetworks_learn_b44b5d84_e9a2_4b1b_8d33_fdf6122b54ad_vnet_name_resource` | `virtualNetwork ` |
+   | Virtual network | `virtualNetworks_ToyTruck_vnet_name_resource` | `virtualNetwork ` |
    | Virtual machine | `virtualMachines_ToyTruckServer_name_resource` | `virtualMachine` |
-   | Subnet | `virtualNetworks_learn_b44b5d84_e9a2_4b1b_8d33_fdf6122b54ad_vnet_name_default` | `defaultSubnet` |
-   | Network interface | `networkInterfaces_toytruckserver686_name_resource` | `networkInterface` |
-
-## Fix the redundant parameter
-
-Notice there is a parameter named similarly to `networkSecurityGroups_NSG_westus_externalid`. Its default value is the resource ID of the network security group. This is an example of an error in the export process: the network security group is defined within the template, so it shouldn't be specified by using a parameter. Here, you will update the template to dynamically obtain its resource ID from the network security group resource.
-
-1. Delete the parameter named `networkSecurityGroups_NSG_westus_externalid`.
-
-1. In the `virtualNetwork` resource, notice that the Bicep extension for Visual Studio Code detects the missing parameter as a problem and indicates this with a red squiggly line.
-
-   :::image type="content" source="../media/5-virtual-network-nsg-problem.png" alt-text="Screenshot of Visual Studio Code showing the virtualNetwork resource definition, with the error highlighted." border="true":::
-
-1. Update the virtual network's `networkSecurityGroup.id` property to `networkSecurityGroup.id`:
-
-   :::code language="bicep" source="code/5-virtual-network-nsg-fixed-1.bicep" highlight="16" :::
+   | Subnet | `virtualNetworks_ToyTruck_vnet_name_default` | `defaultSubnet` |
+   | Network interface | `networkInterfaces_toytruckserver379_name_resource` | `networkInterface` |
 
 ## Remove the redundant subnet resource
 
@@ -57,7 +43,7 @@ The virtual network's subnet is currently defined twice: once in the `virtualNet
 
 1. Update the `virtualNetwork` resource to include an `existing` reference to the subnet, which enables you to refer to the subnet within your Bicep code without defining it again:
 
-   :::code language="bicep" source="code/5-virtual-network-nsg-fixed-2.bicep" highlight="28-30" :::
+   :::code language="bicep" source="code/5-virtual-network-nsg-fixed.bicep" highlight="25-28" :::
 
 1. Update the `networkInterface` resource to refer to the subnet's resource ID:
 

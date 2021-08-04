@@ -1,5 +1,5 @@
 resource networkInterface 'Microsoft.Network/networkInterfaces@2020-11-01' = {
-  name: networkInterfaceName
+  name: networkInterfaces_toytruckserver379_name
   location: 'westus'
   properties: {
     ipConfigurations: [
