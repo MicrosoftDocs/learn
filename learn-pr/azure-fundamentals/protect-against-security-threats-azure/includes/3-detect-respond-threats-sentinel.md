@@ -56,14 +56,16 @@ Here's an example that shows what an investigation graph looks like in Azure Sen
 
 :::image type="content" source="../media/3-investigate-incidents.png" alt-text="An example incident investigation graph in Azure Sentinel." lightbox="../media/3-investigate-incidents.png":::
 
-The company will also use [Azure Monitor Workbooks](/azure/azure-monitor/platform/workbooks-overview/?azure-portal=true) to automate responses to threats. For example, it can set an alert that looks for malicious IP addresses that access the network and create a workbook that does the following steps:
+The company will also use [Azure Monitor Playbooks](../../../azure/threat-response-sentinel-playbooks/index.yml) to automate responses to threats. For example, it can set an alert that looks for malicious IP addresses that access the network and create a workbook that does the following steps:
 
 1. When the alert is triggered, open a ticket in the IT ticketing system.
+
 1. Send a message to the security operations channel in Microsoft Teams or Slack to make sure the security analysts are aware of the incident.
-1. Send all of the information in the alert to the senior network admin and to the security admin. The email message includes two user option buttons: **Block** or **Ignore**.
+
+1. Send all of the information in the alert to the senior network admin and to the security admin. The email message has two user option buttons: **Block** or **Ignore**.
 
 When an admin chooses **Block**, the IP address is blocked in the firewall, and the user is disabled in Azure Active Directory. When an admin chooses **Ignore**, the alert is closed in Azure Sentinel, and the incident is closed in the IT ticketing system.
 
-The workbook continues to run after it receives a response from the admins.
+The playbook continues to run after it receives a response from the admins.
 
-Workbooks can be run manually or automatically when a rule triggers an alert.
+Playbooks can be run manually or automatically when a rule triggers an alert.

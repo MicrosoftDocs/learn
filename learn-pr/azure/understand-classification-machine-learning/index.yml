@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.machinelearning.understand-classification-machine-learning
+metadata:
+  title: Create and understand classification models in machine learning
+  description: Classification means assigning items into categories, or can also be thought of automated decision making. Here we introduce classification models through logistic regression, providing you with a stepping-stone toward more complex and exciting classification methods.
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create and understand classification models in machine learning
+summary: Classification means assigning items into categories, or can also be thought of automated decision making. Here we introduce classification models through logistic regression, providing you with a stepping-stone toward more complex and exciting classification methods.
+abstract: | 
+  In this module, you will:
+  - Discover how classification differs from classical regression
+  - Build models that can perform classification tasks
+  - Explore how to assess and improve classification models
+prerequisites: Familiarity with machine learning models
+iconUrl: /learn/achievements/machine-learning/understand-classification-machine-learning.svg
+levels: 
+- beginner
+roles: 
+- ai-engineer
+- data-scientist
+- student
+products: 
+- azure
+units:
+- learn.machinelearning.understand-classification-machine-learning.introduction
+- learn.machinelearning.understand-classification-machine-learning.what-is-classification
+- learn.machinelearning.understand-classification-machine-learning.exercise-build-regression-model
+- learn.machinelearning.understand-classification-machine-learning.assess-classification
+- learn.machinelearning.understand-classification-machine-learning.exercise-assess-regression-model
+- learn.machinelearning.understand-classification-machine-learning.improve-classification
+- learn.machinelearning.understand-classification-machine-learning.exercise-improve-classification
+- learn.machinelearning.understand-classification-machine-learning.knowledge-check
+- learn.machinelearning.understand-classification-machine-learning.summary
+badge: 
+  uid: learn.machinelearning.understand-classification-machine-learning.badge #add the uid for your achievement badge.

@@ -2,7 +2,7 @@
 uid: learn.django.generic-views
 metadata:
   title: Use generic views in Django
-  description: Learn how to use generic views in Django.
+  description: Learn how to use generic views in the Python framework Django.
   ms.date: 02/25/2021
   author: GeekTrainer
   ms.author: chnoring

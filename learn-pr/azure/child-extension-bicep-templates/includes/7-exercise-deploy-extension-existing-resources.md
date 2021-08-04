@@ -53,38 +53,17 @@ To add diagnostics settings, do the following:
 
 1. In Visual Studio Code, open the *main.bicep* file and then, below the existing variable definitions, add the following code:
 
-   ```bicep
-   var logAnalyticsWorkspaceName = 'ToyLogs'
-   var cosmosDBAccountDiagnosticSettingsNames = 'route-logs-to-log-analytics'
-   ```
+   :::code language="bicep" source="code/7-complete.bicep" range="9-10" :::
 
 1. At the bottom of the file, below the resource definitions, add the following code:
 
-   ```bicep
-   resource logAnalyticsWorkspace 'Microsoft.OperationalInsights/workspaces@2020-03-01-preview' existing = {
-     name: logAnalyticsWorkspaceName
-   }
-   ```
+   :::code language="bicep" source="code/7-complete.bicep" range="55-57" :::
 
    Notice that this resource definition uses the `existing` keyword, and that you're purposely omitting other properties that you'd normally specify if you were deploying the Log Analytics workspace through this Bicep template.
 
 1. Below the code you just added, add the following code:
 
-   ```bicep
-   resource cosmosDBAccountDiagnostics 'Microsoft.Insights/diagnosticSettings@2017-05-01-preview' = {
-     scope: cosmosDBAccount
-     name: cosmosDBAccountDiagnosticSettingsNames
-     properties: {
-       workspaceId: logAnalyticsWorkspace.id
-       logs: [
-         {
-           category: 'DataPlaneRequests'
-           enabled: true
-         }
-       ]
-     }
-   }
-   ```
+   :::code language="bicep" source="code/7-complete.bicep" range="59-71" :::
 
    Notice that this code deploys an extension resource. It uses the `scope` keyword to tell Bicep that the resource should be attached to the Azure Cosmos DB account. The code also uses the `id` property of the `logAnalyticsWorkspace` existing resource so that Azure understands where to send the Azure Cosmos DB logs.
 
@@ -127,55 +106,21 @@ You need to update your Bicep template to reference the storage account you crea
 
 1. Near the top of the *main.bicep* file, below the parameter definitions, add the following parameter definition:
 
-   ```bicep
-   param storageAccountName string
-   ```
+   :::code language="bicep" source="code/7-complete.bicep" range="4" :::
 
 1. Under the variable definitions, add the following variable definition:
 
-   ```bicep
-   var storageAccountBlobDiagnosticSettingsNames = 'route-logs-to-log-analytics'
-   ```
+   :::code language="bicep" source="code/7-complete.bicep" range="11" :::
 
 1. At the bottom of the file, under the resource definitions, add the following:
 
-   ```bicep
-   resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' existing = {
-     name: storageAccountName
-   
-     resource blobService 'blobServices' existing = {
-       name: 'default'
-     }
-   }
-   ```
+   :::code language="bicep" source="code/7-complete.bicep" range="73-79" :::
 
    Notice that both of these resources use the `existing` keyword.
 
 1. At the bottom of the file, below the storage account definition you've just added, add the following:
 
-   ```bicep
-   resource storageAccountBlobDiagnostics 'Microsoft.Insights/diagnosticSettings@2017-05-01-preview' = {
-     scope: storageAccount::blobService
-     name: storageAccountBlobDiagnosticSettingsNames
-     properties: {
-       workspaceId: logAnalyticsWorkspace.id
-       logs: [
-         {
-           category: 'StorageRead'
-           enabled: true
-         }
-         {
-           category: 'StorageWrite'
-           enabled: true
-         }
-         {
-           category: 'StorageDelete'
-           enabled: true
-         }
-       ]
-     }
-   }
-   ```
+   :::code language="bicep" source="code/7-complete.bicep" range="81-101" :::
 
    Notice that this extension resource has its `scope` set to the nested existing resource. Bicep understands that it should attach the extension resource to the `blobServices` child resource.
 
@@ -213,7 +158,7 @@ New-AzResourceGroupDeployment `
 
 ### Check your deployment
 
-1. In your browser, go back to the Azure portal. Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment. 
+1. In your browser, go back to the Azure portal. Go to your resource group. You'll still see one successful deployment, because the deployment used the same name as the first deployment.
 
 1. Select the **1 Succeeded** link.
 
@@ -227,7 +172,7 @@ New-AzResourceGroupDeployment `
 
     :::image type="content" source="../media/7-deployment-details-cosmos-db-selected.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with the Azure Cosmos DB account highlighted." border="true":::
 
-1. In the **Search** field in the top left, enter _Diagnostic settings_ and select the **Diagnostic settings** menu item.
+1. In the **Search** box in the top left, enter _Diagnostic settings_, and select the **Diagnostic settings** menu item.
 
     :::image type="content" source="../media/7-cosmos-db-search.png" alt-text="Screenshot of the Azure portal interface for the Azure Cosmos DB account, showing the search field with 'Diagnostic settings' entered and the 'Diagnostic settings' menu item highlighted." border="true":::
 

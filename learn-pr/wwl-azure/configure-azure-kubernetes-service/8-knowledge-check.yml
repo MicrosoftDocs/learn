@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-kubernetes-service.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/28/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Which of the following is the Kubernetes agent that processes the orchestration requests and schedules running the requested containers?"
+    choices:
+    - content: "container"
+      isCorrect: false
+      explanation: "That's incorrect. A container is a lightweight and portable executable image that contains software and all its dependencies."
+    - content: "node"
+      isCorrect: false
+      explanation: "That's incorrect. Nodes are individual virtual machines running containerized applications."
+    - content: "kubelet"
+      isCorrect: true
+      explanation: "That's correct. The kubelet is the Kubernetes agent that processes the orchestration requests from the Azure-managed node."
+  - content: "The infrastructure team is configuring networking for the Azure Kubernetes service. Which of the following services would be best for internal-only applications that support other workloads within the cluster?"
+    choices:
+    - content: "LoadBalancer"
+      isCorrect: false
+      explanation: "That's incorrect. LoadBalancer creates an Azure load balancer resource, configures an external IP address, and connects the requested pods to the load balancer backend pool. To allow customers traffic to reach the application, load-balancing rules are created on the desired ports."
+    - content: "ClusterIP"
+      isCorrect: true
+      explanation: "That's correct. ClusterIP creates an internal IP address for use within the AKS cluster. This is good for internal-only applications that support other workloads within the cluster."
+    - content: "NodePort"
+      isCorrect: false
+      explanation: "That's incorrect. NodePort creates a port mapping on the underlying node that allows the application to be accessed directly with the node IP address and port."
+  - content: "The leadership team has decided to move all services to Azure Kubernetes service. Which of the following components contributes to the monthly Azure charge?"
+    choices:
+    - content: "Master node"
+      isCorrect: false
+      explanation: "That's incorrect. In an AKS cluster, the master node is free and there's no charge for cluster management."
+    - content: "Per deployed pod"
+      isCorrect: false
+      explanation: "That's incorrect. Deploying and running pods on an AKS cluster is free."
+    - content: "Per node VM"
+      isCorrect: true
+      explanation: "That's correct. With Kubernetes organizations only pay for the virtual machine instances, storage, and networking resources consumed by the cluster."
