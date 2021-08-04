@@ -27,6 +27,9 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
    :::image type="content" source="../media/3-create-ubuntu.png" alt-text="Screenshot that shows the Azure Marketplace with the 'Create' button highlighted below 'Ubuntu Server 20.04 LTS'." border="true":::
 
+   > [!IMPORTANT]
+   > If the Azure portal doesn't include the **Ubuntu Server 20.04 LTS** item, [select this link](https://portal.azure.com/#create/canonical.0001-com-ubuntu-server-focal20_04-lts-ARM?azure-portal=true) to open the portal to the correct place.
+
 1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value  |
@@ -140,7 +143,7 @@ Open the *template.bicep* file and look over it. Notice that it's a valid Bicep 
 
 - The symbolic names given to parameters and resources include underscores and aren't easy to understand.
 - The `location` property is hard-coded in all of the resource definitions.
-- The Bicep linter shows some warnings and errors.
+- The template includes hard-coded values that either should be parameters or should be set automatically by Azure.
 
 You'll fix these problems throughout the rest of this module.
 
@@ -152,7 +155,9 @@ You'll fix these problems throughout the rest of this module.
  
    You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS).
 
-1. Select **View** > **Editor Layout** > **Split Right**. In the left pane, select the **template.bicep** tab so that you have both files open at the same time.
+1. Split the editor so that you can see both files at the same time.
+
+   You can drag the tab titled **main.bicep** to the right side of the window to split. Alternatively, select **View** > **Editor Layout** > **Split Right**. In the left pane, select the **template.bicep** tab.
 
    :::image type="content" source="../media/3-visual-studio-code-split-editor.png" alt-text="Screenshot of the split Visual Studio Code editor, showing the template.bicep file in the left pane and the main.bicep file in the right pane." border="true":::
 
@@ -181,13 +186,16 @@ You'll fix these problems throughout the rest of this module.
 
    As you copy each resource, inspect its properties. Later in this module, you'll update each resource's properties and configuration to conform to Bicep best practices.
 
+   > [TTIP]
+   > When you convert or export your own templates, you could update the resources to follow best practices as you copy them across. In this module, we will do this separately to make it easier to understand each phase of the migration process.
+
 ## Check for missing resources
 
 1. In the Azure portal, open the **ToyTruck** resource group.
 
 1. Review the list of resources, and compare it against the list of resources in your Bicep file. Notice that the resource group contains a **Disk** resource that isn't defined in your Bicep file:
 
-   :::image type="content" source="../media/3-resource-group.png" alt-text="Screenshot of the Azure portal showing the resource group, with the disk resource highlighted." border="true":::
+   :::image type="content" source="../media/3-resource-group-missing-disk.png" alt-text="Screenshot of the Azure portal showing the resource group, with the disk resource highlighted." border="true":::
 
    When you work with virtual machines in Bicep, you don't need to explicitly define the managed disk resource. Instead, you define properties of the virtual machine, and Azure creates the managed disk for you automatically. This means that, in this case, you don't need to worry about the missing resource.
 
