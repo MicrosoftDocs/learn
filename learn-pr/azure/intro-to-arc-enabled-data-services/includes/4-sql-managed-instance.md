@@ -1,7 +1,45 @@
-Introduction pagrapraphs
+Azure Arc-enabled SQL Managed Instance is an Azure SQL service powered by the SQL Server engine that can be deployed on the infrastructure of your choice.
 
-## Heading 1
+## Comparison with Azure SQL
 
-## Heading 2
+Azure SQL is a family of database services deployed in the Azure infrastructure including the following:
 
-### Subheading 2.1
+- **SQL Server in Azure Virtual Machine**
+
+- **Azure SQL Managed Instance**
+
+- **Azure SQL Database**
+
+Azure Arc-enabled SQL Managed Instance is very similar to Azure SQL Managed Instance. It has similar features and management capabilities. One of the biggest differences is that the customer manages the infrastructure for Azure Arc while Microsoft manages the infrastructure for Azure SQL. The intention of Azure Arc-enabled SQL Managed Instance is to provide the same Platform as a Service (PaaS) capabilities and experience except the customer chooses and manages the underlying infrastructure using Kubernetes.
+
+## Comparison of features
+
+### Core features
+### Service tiers
+### Azure integration
+
+## Comparison of management capabilities
+
+### Versionless
+### Deploy and configure
+### Monitoring
+### High-availability
+### Disaster Recovery
+
+## Interfaces for Azure Arc-enabled SQL Managed Instance
+
+The following interfaces can be used with Azure Arc-enabled SQL Managed Instance to manage the instance and build applications:
+
+### SQL Server Management Studio (SSMS)
+
+### Azure Data Studio (ADS)
+
+### Azure portal
+
+### az CLI
+
+### kubectl
+
+### SQL providers
+
+## Getting started
