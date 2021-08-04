@@ -95,3 +95,13 @@ Enable effortless discovery with:
 
 
 :::image type="content" source="../media/search.png" alt-text="Screenshot depicting fictional company Adatum Corporation using the search functional of Azure Purview.":::
+
+## Data lineage
+
+The concept of data lineage focuses on the lifecycle of data. The lifecycle concerns itself with the various stages data may go through. Data is sourced, moved, and stored throughout the lifecycle. Data may also undergo transformations in the extract load transform / extract transform load (ELT/ETL) operations.
+
+Data lineage can offer insights into the data lifecycle by looking at the data pipeline. You can use the lineage to identify the root cause of issues, perform data quality analysis, and verify compliance.
+
+Azure Purview represents this data lineage in a visual form, showing data movement from source to destination.
+
+:::image type="content" source="../media/lineage-end-end.png" alt-text="Screen shot depicting a sample data lineage graph in Azure Purview":::
