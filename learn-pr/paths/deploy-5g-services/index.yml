@@ -52,6 +52,7 @@ levels:
 - beginner
 roles:
 - data-scientist
+- student
 products:
 - azure
 - azure-iot
@@ -62,6 +63,9 @@ products:
 - azure-virtual-machines
 modules:
 - learn.oxford.intro-5g-azure
+- learn.oxford.5g-business-models
+- learn.oxford.5g-tech-azure-cloud
 - learn.oxford.industrial-iot-connectivity
+
 trophy:
   uid: learn.oxford.deploy-5g-services-with-azure.trophy
