@@ -1,4 +1,4 @@
-Here, we first describe the components of 5G and Azure private MEC. There are four levels to consider:
+Here, we first describe the components of 5G and Azure private multi-access edge compute (MEC). There are four levels to consider:
 
 - Azure Stack hardware and services
 - Application services
@@ -39,7 +39,7 @@ Here, we first describe the components of 5G and Azure private MEC. There are fo
 
 In a private network comprising Azure private multi-access edge compute, you can use fusion core capabilities to implement a low latency IoT solution combined with the centralized management capabilities of Azure.
 
-This provides several benefits to enterprises, including.
+This provides several benefits to enterprises, including:
 
 - Automation
 - Real-time processing of telemetry data
