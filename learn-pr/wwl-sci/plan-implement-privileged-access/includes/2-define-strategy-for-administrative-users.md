@@ -1,3 +1,19 @@
+
+## What is Privileged identity management (PIM)?
+PIM is a service in Azure Active Directory (Azure AD) that enables you to manage, control, and monitor access to important resources in your organization. Such resources include those in Azure AD, Azure, and other Microsoft Online Services, such as Microsoft 365 or Microsoft Intune.
+
+## What does PIM do?
+PIM provides time-based and approval-based role activation to mitigate the risks of excessive, unnecessary, or misused access permissions on resources that you care about. Key features of PIM include:
+- Provide just-in-time privileged access to Azure AD and Azure resources
+- Assign time-bound access to resources using start and end dates
+- Require approval to activate privileged roles
+- Enforce multifactor authentication to activate any role
+- Use justification to understand why users activate
+- Get notifications when privileged roles are activated
+- Conduct access reviews to ensure users still need roles
+- Download audit history for internal or external audit
+
+
 Before you deploy PIM in your organization, follow the instructions and understand the concepts in this section to help you create a plan tailored to your organization’s privileged identity requirements.
 
 > [!NOTE]
@@ -72,9 +88,9 @@ Access reviews rely on emails to notify people to review their access to the rol
 
 For Azure subscriptions and resources, you can set up a similar Access review process to review the roles in each subscription or resource. The goal of this process is to minimize Owner and User Access Administrator assignments attached to each subscription or resource and to remove unnecessary assignments. However, organizations often delegate such tasks to the owner of each subscription or resource because they have a better understanding of the specific roles (especially custom roles).
 
-If you're in the Global Administrator role trying to deploy PIM for Azure roles in your organization, you can [elevate access to manage all Azure subscriptions](https://docs.microsoft.com/azure/role-based-access-control/elevate-access-global-admin?toc=/azure/active-directory/privileged-identity-management/toc.json) to get access to each subscription. You can then find each subscription owner and work with them to remove unnecessary assignments and minimize owner role assignment.
+If you're in the Global Administrator role trying to deploy PIM for Azure roles in your organization, you can [elevate access to manage all Azure subscriptions](/azure/role-based-access-control/elevate-access-global-admin) to get access to each subscription. You can then find each subscription owner and work with them to remove unnecessary assignments and minimize owner role assignment.
 
-Users with the Owner role for an Azure subscription can also use [access reviews for Azure resources](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review) to audit and remove unnecessary role assignments similar to the process described earlier for Azure AD roles.
+Users with the Owner role for an Azure subscription can also use [access reviews for Azure resources](/azure/active-directory/privileged-identity-management/pim-resource-roles-start-access-review) to audit and remove unnecessary role assignments similar to the process described earlier for Azure AD roles.
 
 ## Decide which role assignments should be protected by Privileged Identity Management
 
@@ -163,7 +179,7 @@ A group owner can manage membership for a group. For Azure AD role-assignable gr
 
 Once you have decided the list of roles to be managed by PIM, you must decide which users should get the eligible role versus the permanently active role. **Permanently active roles are the normal roles assigned through Azure AD and Azure resources, while eligible roles can only be assigned in PIM.**
 
-Microsoft recommends you have zero permanently active assignments for both Azure AD roles and Azure roles other than the recommended [two break-glass emergency access accounts](https://docs.microsoft.com/azure/active-directory/roles/security-emergency-access), which should have the permanent Global Administrator role.
+Microsoft recommends you have zero permanently active assignments for both Azure AD roles and Azure roles other than the recommended [two break-glass emergency access accounts](/azure/active-directory/roles/security-emergency-access), which should have the permanent Global Administrator role.
 
 Even though we recommend zero standing administrators, it is sometimes difficult for organizations to achieve this right away. Things to consider when making this decision include:
 
