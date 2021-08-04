@@ -15,7 +15,7 @@ summary:  |
 prerequisites: |
   - Basic knowledge of Azure services
   - Basic knowledge of monitoring concepts, such as using metrics, logging, and alerting
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/monitor-usage-performance-availability-resources-azure-monitor.svg
 levels:
 - beginner
 roles:
@@ -33,4 +33,4 @@ modules:
 - learn.analyze-infrastructure-with-azure-monitor-logs
 - learn.incident-response-with-alerting-on-azure
 trophy:
-  uid: learn.monitor-resources-with-azure-monitor.trophy
+  uid: learn.monitor-usage-performance-availability-resources-azure-monitor.trophy
