@@ -1,5 +1,7 @@
 You successfully deployed the video rendering service website to your cluster. But you noticed that you couldn't access the website from any client external to the cluster. The problem is that you haven't exposed your application to the internet yet. By default, Kubernetes blocks all external traffic. You'll need to add an *ingress rule* to allow traffic into the cluster.
 
+[!INCLUDE [azure-exercise-subscription-prerequisite](./include-sandbox-subscription-alert.md)]
+
 ## Create the service manifest
 
 Like all resources, services also have manifest files that describe how they should behave. Let's create a new service description.
@@ -154,7 +156,11 @@ To expose your website to the world via DNS, you must create an ingress controll
      In Cloud Shell, run the `az network dns zone list` command to query the Azure DNS zone list.
 
     ```bash
-    az aks show -g $RESOURCE_GROUP -n $CLUSTER_NAME -o tsv --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
+    az aks show \
+      -g $RESOURCE_GROUP \
+      -n $CLUSTER_NAME \
+      -o tsv \
+      --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
     ```
 
 1. Copy the output, and update the `ingress.yaml` file to match the following YAML. Replace the `<zone-name>` placeholder value with the `ZoneName` value you copied.
