@@ -3,6 +3,8 @@ In this exercise, you'll deploy your company's website as a test app onto Azure 
 > [!NOTE]
 > The code for the web app is available in this [GitHub repository](https://github.com/MicrosoftDocs/mslearn-aks-deploy-container-app) if you want to explore the source code further. Also, this sample app will be deployed on a Linux node pool only.
 
+[!INCLUDE [azure-exercise-subscription-prerequisite](./include-sandbox-subscription-alert.md)]
+
 ## Create a deployment manifest
 
 You create a deployment manifest file to deploy your application. The manifest file allows you to define what type of resource you want to deploy and all the details associated with the workload.
@@ -180,6 +182,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
 
     > [!NOTE]
     > In an AKS cluster which has multiple node pools (Linux and Windows), this above deployment manifest file also defines a `nodeSelector` to tell your AKS cluster to run the sample application's pod on a node that can run Linux containers.
+
   Linux nodes cannot run Windows containers & vice versa.
 
 1. Save the manifest file and close the editor.
