@@ -14,4 +14,4 @@ metadata:
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-define-resources-bicep-template.md)]
+  [!include[](includes/4-exercise-define-resources-bicep-template.md)]
