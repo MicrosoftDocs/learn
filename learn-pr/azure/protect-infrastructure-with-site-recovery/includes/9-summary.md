@@ -1,4 +1,4 @@
-You've learned about the benefits of Azure Site Recovery and how it fits into your company's BCDR policy. You've protected your company's infrastructure against disaster and tested its integrity with a disaster recovery drill. You then failed over a virtual machine, reprotected it, and then failed it back to its original region.
+You've learned about the benefits of Azure Site Recovery and how it fits into your company's BCDR policy. You've protected your company's infrastructure against disaster and tested its integrity with a DR drill. You then failed over a virtual machine, reprotected it, and then failed it back to its original region.
 
 ## Clean up
 

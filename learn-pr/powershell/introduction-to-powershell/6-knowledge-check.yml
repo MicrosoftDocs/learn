@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.powershell.intro-to-powershell.8-knowledge-check
+uid: learn.powershell.intro-to-powershell.6-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Answer multiple-choice questions to check your knowledge.
-  ms.date: 12/7/2020
+  description: Knowledge check for introduction to PowerShell.
+  ms.date: 07/09/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -14,28 +14,26 @@ content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   questions:
-    - content: Using the help system, what command, or function, helps you paginate the response?
+    - content: What's a correct way to locate a command in PowerShell?
       choices:
-        - content: "`command --help`"
-          explanation: Incorrect.
-          isCorrect: false
-        - content: "`Get-Help command`"
-          explanation: The command `Get-Help` is what you use to find out more about a command. However, the function `help` offers a better experience because it paginates the response and lets you traverse it row by row.
-          isCorrect: false
-        - content: "`help command`"
-          explanation: Correct. By using `help`, you pipe `Get-Help` into a function so that you can see the help page. You can see it row by row and line by line if you want.
+        - content: "Call `Get-Command 'name of command'`"
+          explanation: Correct. That's the correct way to locate a command.
           isCorrect: true
-    - content: Which statement will most efficiently find the returned type from a command?
+        - content: "Call `Find 'name of command'`"
+          explanation: Incorrect. There's no `Find` command in PowerShell.
+          isCorrect: false
+        - content: "Call `Locate 'name of command'`"
+          explanation: Incorrect. There's no `Locate` command in PowerShell.
+          isCorrect: false
+    - content: How would you search for commands that deal with files?
       choices:
-        - content: "`command --type`"
+        - content: "Call `Get-Command -Verb File*`"
           isCorrect: false
-          explanation: Incorrect.
-        - content: "`command | Get-Member`"
+          explanation: Incorrect. The word `file` is a noun, so you need to search by using the parameter `-Noun`.
+        - content: "Call `Get-Command -Noun File`"
+          isCorrect: false
+          explanation: Incorrect. Although this command searches for commands in which the noun part is `file`, it's using an exact match, so you risk not seeing a command like `Get-FileHash` in the output. 
+        - content: "Call `Get-Command -Noun File*`"
           isCorrect: true
-          explanation: Correct. The cmdlet `Get-Member` lists the returned type at the top of the response. 
-        - content: "`command | Get-Type`"
-          isCorrect: false
-          explanation: Incorrect.
-        - content: "`command Get-Member`"
-          isCorrect: false
-          explanation: Incorrect. The command needs to be piped with `Get-Member`.
+          explanation: Correct. This command correctly searches by using the `-Noun` parameter because `file` is a noun. It uses an asterisk (`*`) to ensure it finds all commands that have the word `file` in them.
+ 

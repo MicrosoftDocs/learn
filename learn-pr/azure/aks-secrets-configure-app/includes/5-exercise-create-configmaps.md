@@ -1,4 +1,46 @@
-The backend part of the application is deployed and now you need to deploy the front-end bit. You already know you're going to need a ConfigMap. So let's start by creating one.
+The back-end part of the application is deployed and now you need to deploy the front-end portion. You already know you're going to need a ConfigMap. So let's start by creating one.
+
+## Activate the Azure sandbox
+
+1. Start by **activating the Azure sandbox above**.
+
+1. Once it's activated, sign in to the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account you activated the sandbox with.
+
+## Before we start
+
+We'll assume an AKS cluster is already created and running. Before creating a new cluster, run the following commands to be sure there's no other clusters or resources already created:
+
+```azurecli-interactive
+export RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
+export CLUSTER_NAME=ship-manager-cluster
+```
+
+```azurecli-interactive
+az aks show -n $CLUSTER_NAME -g $RESOURCE_GROUP
+```
+
+If the list is empty, proceed to create your AKS cluster, running the following commands in Cloud Shell:
+
+```azurecli-interactive
+az aks create \
+ -g $RESOURCE_GROUP \
+ -n $CLUSTER_NAME \
+ --node-count 1 \
+ --node-vm-size Standard_B2s \
+ --generate-ssh-keys \
+ --enable-addons http_application_routing
+```
+
+After the previous command runs, or if the list is not empty (the cluster is already created), get the administration config:
+
+```azurecli-interactive
+az aks get-credentials -n $CLUSTER_NAME -g $RESOURCE_GROUP
+```
+
+The complete cluster creation can take up to five minutes.
+
+> [!IMPORTANT]
+> Make a note of the `RESOURCE_GROUP` and `CLUSTER_NAME` variables for later use.
 
 ## Create a ConfigMap
 
@@ -12,10 +54,12 @@ The backend part of the application is deployed and now you need to deploy the f
       --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
     ```
 
-    Copy the output. You can also use the same value from the previous Ingress you created for the backend application.
+    Copy the output. You can also use the same value from the previous Ingress you created for the back-end application.
 
 1. Create a new file called `configmap.yaml`.
-1. Open the file for changes using `code configmap.yaml`.
+
+1. Open the file for changes running `code configmap.yaml`.
+
 1. Paste the following YAML definition for the ConfigMap:
 
     ```yaml
@@ -36,7 +80,9 @@ The backend part of the application is deployed and now you need to deploy the f
     Replace the DNS zone by the value you copied in the first step.
 
 1. Save and close the file.
-1. Apply the changes to the cluster using `kubectl apply -f configmap.yaml`
+
+1. Apply the changes to the cluster running `kubectl apply -f configmap.yaml`.
+
 1. Check your work by querying the created ConfigMap:
 
     ```azurecli-interactive
@@ -45,8 +91,9 @@ The backend part of the application is deployed and now you need to deploy the f
 
 ## Create the application
 
-1. Create a new file called `frontend.yaml`
-1. In this file paste the following contents:
+1. Create a new file called `frontend.yaml`.
+
+1. In this file, paste the following contents:
 
     ```yaml
     apiVersion: apps/v1
@@ -81,7 +128,7 @@ The backend part of the application is deployed and now you need to deploy the f
     ---
     ```
 
-    Notice how we're mounting the ConfigMap in the Deployment object. We're not specifying any keys, which means we need to specify a `subPath` key, this is the file name inside the container.
+    Notice how we're mounting the ConfigMap in the Deployment object. We're not specifying any keys, which means we need to specify a `subPath` key. This is the filename inside the container.
 
 1. Continue to edit the file by adding the following lines below the last three dashes (`---`):
 
@@ -120,17 +167,15 @@ The backend part of the application is deployed and now you need to deploy the f
     Change the DNS zone present in the Ingress to match the DNS you copied from the first step.
 
 1. Save and close the file.
-1. Deploy the application by using `kubectl apply -f frontend.yaml`
+
+1. Deploy the application by running `kubectl apply -f frontend.yaml`.
+
 1. Check your work by querying the Kubernetes API:
 
     ```azurecli-interactive
     kubectl get deploy contoso-ship-manager-frontend
     ```
 
-    The DNS propagation may take up to five minutes to complete. Check the DNS creation using the following command:
+    The DNS propagation may take up to five minutes to complete.
 
-    ```azurecli-interactive
-    az network dns zone list -o table
-    ```
-
-    Check if there are two new records with the same DNS zone but starting with `contoso-ship-manager`.
+To check your work, access the front-end URL defined in the front-end ingress configuration.

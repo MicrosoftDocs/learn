@@ -11,7 +11,7 @@ There are some considerations to be aware of when it comes to adding these featu
 
 ## Text
 
-Text input from users is parsed to determine the intent. The ability to add natural language understanding to a bot is possible. Careful consideration around language understanding is important. One of the main reasons concerns how difference users will respond to a question. For example, your bot would ask "What is your name?". Users might respond with their name, such as Terry. The user may also respond with a phrase, "My name is Terry". If you want to personalize the conversation with follow-up prompts including the user's name, your bot logic needs to parse the response and isolate the name from the rest of the text.
+Text input from users is parsed to determine the intent. The ability to add natural language understanding to a bot is possible. Careful consideration around language understanding is important. One of the main reasons concerns how different users will respond to a question. For example, your bot would ask "What is your name?". Users might respond with their name, such as Terry. The user may also respond with a phrase, "My name is Terry". If you want to personalize the conversation with follow-up prompts including the user's name, your bot logic needs to parse the response and isolate the name from the rest of the text.
 
 Careful planning could reveal a better design option where the bot is specific in the prompt. Your bot could prompt the user with "What is your first name?". It doesn't completely eliminate ambiguity but it leans toward a more appropriate response that may not require extensive parsing logic.
 

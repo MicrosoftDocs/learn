@@ -14,7 +14,7 @@ How you act tells people who you are and what you think of them. Regardless of w
 
 If you are in a meeting and one of the attendees is blind and asks a question, look directly at the person who is blind when answering the question, not just the sighted people around them.
 
-:::image type="content" source="../media/TwoPeopleTalking.png" alt-text="Two people sitting down and talking directly to each other":::
+:::image type="content" source="../media/TwoPeopleTalking.png" alt-text="Two people sitting down and talking directly to each other.":::
 
 ## Disability etiquette
 
@@ -38,7 +38,7 @@ This mantra “reinforces the role of people without disabilities as strong alli
 
 A person who is deaf may have a sign language interpreter. Ensure that you speak directly to the person when you are talking, not the interpreter.
 
-:::image type="content" source="../media/PersonWithHearingAid.png" alt-text="Person with a hearing disability speaking with another person":::
+:::image type="content" source="../media/PersonWithHearingAid.png" alt-text="Person with a hearing disability speaking with another person.":::
 
 ### Don't touch
 

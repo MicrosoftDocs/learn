@@ -5,7 +5,7 @@ metadata:
   description: "Learn about how to effectively use modules and how to integrate with packages and third-party crates."
   ms.date: 01/20/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore modules, packages, and third-party crates
@@ -38,4 +38,3 @@ units:
 - learn.language.rust-modules-packages-crates.8-summary
 badge:
   uid: learn.language.rust-modules-packages-crates.badge
-hidden: true

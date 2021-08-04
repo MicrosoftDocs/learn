@@ -1,7 +1,6 @@
-
 Now let's go over the digital twin graph query language.
 
-You can query the digital twin graph that you just built, to get information about the digital twins and relationships it contains. You write these queries in a custom, SQL-like query language, referred to as the Azure Digital Twins query language. This language is also similar to [the query language for Azure IoT Hub](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-query-language).
+You can query the digital twin graph that you just built, to get information about the digital twins and relationships it contains. You write these queries in a custom, SQL-like query language, referred to as the Azure Digital Twins query language. This language is also similar to [the query language for Azure IoT Hub](/azure/iot-hub/iot-hub-devguide-query-language).
 
 Queries *can* be made through the Digital Twins API. In this module, you'll be using the Azure Digital Twins explorer sample to handle the API calls for you.
 
@@ -75,6 +74,6 @@ Example | Description
 
 ## Summary of the query language
 
-For more information on constructing a query, see [About the query language for Azure Digital Twins](https://docs.microsoft.com/azure/digital-twins/concepts-query-language#reference-expressions-and-conditions).
+For more information on constructing a query, see [About the query language for Azure Digital Twins](/azure/digital-twins/concepts-query-language#reference-expressions-and-conditions).
 
 Next, you'll try using the language on your factory graph.

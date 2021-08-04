@@ -5,7 +5,7 @@ metadata:
   description: "Understand what generic types and traits are and how to use them in Rust."
   ms.date: 05/16/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Implement generic types and traits
@@ -41,4 +41,3 @@ units:
 - learn.language.rust-generic-types-traits.9-summary
 badge:
   uid: learn.language.rust-generic-types-traits.badge
-hidden: true

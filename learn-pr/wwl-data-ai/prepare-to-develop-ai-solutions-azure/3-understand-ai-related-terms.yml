@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.prepare-to-develop-ai-solutions-azure.understand-ai-related-terms
+title: Understand AI-related terms
+metadata:
+  title: Understand AI-related terms
+  description: "Understand AI-related terms"
+  ms.date: 07/20/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-understand-ai-related-terms.md)]

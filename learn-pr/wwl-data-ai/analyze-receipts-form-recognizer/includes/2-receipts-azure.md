@@ -10,7 +10,7 @@ Form Recognizer supports automated document processing through:
 - **Custom models**, which enable you to extract what are known as key/value pairs and table data from forms.  Custom models are trained using your own data, which helps to tailor this model to your specific forms.  Starting with only five samples of your forms, you can train the custom model.  After the first training exercise, you can evaluate the results and consider if you need to add more samples and re-train.
 
 > [!NOTE]
-> The next hands-on exercise will only step through **a pre-built receipt model**. If you would like to train a **custom model** you can refer to the [Form Recognizer documentation](https://docs.microsoft.com/azure/cognitive-services/form-recognizer/) for quickstarts. 
+> The next hands-on exercise will only step through **a pre-built receipt model**. If you would like to train a **custom model** you can refer to the [Form Recognizer documentation](/azure/cognitive-services/form-recognizer/) for quickstarts. 
 
 ## Azure resources to access Form Recognizer services
 

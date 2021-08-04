@@ -16,12 +16,12 @@ Now let's take a deeper look under the covers. When you create an Azure Databric
 
 > You also have the option of using a Serverless Pool. A Serverless Pool is self-managed pool of cloud resources that is auto-configured for interactive Spark workloads. You provide the minimum and maximum number of workers and the worker type, and Azure Databricks provisions the compute and local storage based on your usage.
 
-![Create a cluster in Azure Databricks](../media/create-cluster.png)
+![Create a cluster in Azure Databricks.](../media/create-cluster.png)
 
 The "Databricks appliance" is deployed into Azure as a managed resource group within your subscription. This resource group contains the Driver and Worker VMs, along with other required resources, including a virtual network, a security group, and a storage account. All metadata for your cluster, such as scheduled jobs, is stored in an Azure Database with geo-replication for fault tolerance.
 
-![Databricks managed resource group resource list](../media/azure-databricks-managed-resource-group.png)
+![Databricks managed resource group resource list.](../media/azure-databricks-managed-resource-group.png)
 
 Internally, Azure Kubernetes Service (AKS) is used to run the Azure Databricks control-plane and data-planes via containers running on the latest generation of Azure hardware (Dv3 VMs), with NvMe SSDs capable of blazing 100us latency on IO. These make Databricks I/O performance even better. In addition, accelerated networking provides the fastest virtualized network infrastructure in the cloud. Azure Databricks utilizes these features to further improve Spark performance. Once the services within this managed resource group are ready, you will be able to manage the Databricks cluster through the Azure Databricks UI and through features such as auto-scaling and auto-termination.
 
-![Azure Databricks architecture diagram](../media/azure-databricks-architecture.png)
+![Azure Databricks architecture diagram.](../media/azure-databricks-architecture.png)

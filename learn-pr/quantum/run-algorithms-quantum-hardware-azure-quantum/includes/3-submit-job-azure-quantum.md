@@ -1,4 +1,3 @@
-
 You're ready to connect to Earth's Azure Quantum services and start solving problems on a real quantum computer. The programs you created in Q# in previous modules, such as the quantum random number generator, will run using real qubits, instead of using simulations like in the module [Create your first Q# program by using the Quantum Development Kit](/learn/modules/qsharp-create-first-quantum-development-kit/?azure-portal=true).
 
 In this unit, you learn how to submit a job to Azure Quantum.

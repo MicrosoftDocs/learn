@@ -10,7 +10,7 @@ Before you start learning to script, let's get an overview of the features of th
    > [!NOTE]
    > Many of the tasks PowerShell is used for are about side effects or modifications to system state (local or otherwise). Often the output is a secondary concern (reporting data, for example).
 - **Flow control**. Flow control is how you control various execution paths by using constructs like `If`, `ElseIf`, and `Else`.
-- **Loops**. Loops are constructs that allow you to operate on arrays, inspect each item, and do some kind of operation on each item. But loops are about more than array iteration. You can also conditionally continue to run a loop by using `Do-While` loops. For more information, see [About Do](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_do?view=powershell-7.1&preserve-view=true).
+- **Loops**. Loops are constructs that allow you to operate on arrays, inspect each item, and do some kind of operation on each item. But loops are about more than array iteration. You can also conditionally continue to run a loop by using `Do-While` loops. For more information, see [About Do](/powershell/module/microsoft.powershell.core/about/about_do?preserve-view=true&view=powershell-7.1).
 
 - **Error handling**. It's important to write scripts that are robust and can handle various types of errors. You'll need to know the difference between terminating and non-terminating errors. You'll use constructs like `Try` and `Catch`. This topic will be covered in the last conceptual unit of this module.
 - **Expressions**. You'll frequently use expressions in PowerShell scripts. For example, to create custom columns or custom sort expressions. Expressions are representations of values in PowerShell syntax.
@@ -56,7 +56,7 @@ You can manage execution policy by using these cmdlets:
 - `Set-ExecutionPolicy`. If you're using a Windows computer, you can use this cmdlet to change the value of an execution policy. It takes an `-ExecutionPolicy` parameter. There are a few possible values. It's a good idea to use `Default` as the value. That value sets the policy to `Restricted` on Windows clients and `RemoteSigned` on Windows Server. `Restricted` means you can't run scripts. You can run only commands, which makes sense on a client. `RemoteSigned` means that scripts written on the local computer can run. Scripts downloaded from the internet need to be signed by a digital signature from a trusted publisher.
 
    > [!NOTE]
-   > There are other values you can use. To learn more, see [About execution policies](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.1&preserve-view=true).
+   > There are other values you can use. To learn more, see [About execution policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies?preserve-view=true&view=powershell-7.1).
   
 ## Variables
 Variables aren't just for scripts. You can also define them on the console. You store values in variables so you can use them later. To define a variable, precede it with the `$` character. Here's an example:

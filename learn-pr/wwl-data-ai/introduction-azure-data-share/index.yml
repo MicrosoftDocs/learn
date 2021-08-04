@@ -2,10 +2,10 @@
 uid: learn.wwl.introduction-to-azure-data-share
 metadata:
   title: Introduction to Azure Data Share
-  description: "Learn how to use Azure Data Share for securely sending and receiving data to both external organizations or for inter-departmental transfers."
-  ms.date: 11/09/2020
+  description: "Introduction to Azure Data Share"
+  ms.date: 07/19/2021
   author: wwlpublish
-  ms.author: kawaaije
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Data Share

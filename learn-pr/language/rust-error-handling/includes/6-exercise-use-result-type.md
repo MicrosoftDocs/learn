@@ -7,14 +7,20 @@ If you plan to complete this exercise on the [Rust playground](https://play.rust
 In this exercise, you'll replace the `todo!` macro inside `read_file_contents` to make
 it compile and run without panics.
 
-Before you try this challenge, here's something you need to know:
+Here are a few helpful points for this challenge:
 
-`read_file_contents` is a function that receives a `PathBuf` struct as its single input and returns a `Result<String, io::Error>`. The function does the following, in order:
+- The `read_file_contents` function receives a `PathBuf` struct as its single input and returns a `Result<String, io::Error>`. The function does the following, in order:
 
-1. Creates a new mutable and empty `String`.
-1. Tries to access a file at a specified path.
-1. Tries to read the contents from that file into the `String` you just created by using the `read_to_string` method.
-1. Returns the modified `String.`
+  1. Creates a new mutable and empty `String`.
+  1. Tries to access a file at a specified path.
+  1. Tries to read the contents from that file into the `String` you just created by using the `read_to_string` method.
+  1. Returns the modified `String.`
+
+- The program use some structs and a trait. The first three lines of code bring these data types into scope.
+- Some of the `match` arms introduce variables like `file_handle` and `io_error`. Since their scope is limited to the `match` expression, they aren't declared in code that precedes `match`.
+- The `open` method returns a `Result<File, Error>` enum. In other words, when no errors occur, it returns a file handle wrapped in an `Ok` variant.
+- The `read_to_string` method appends the file contents to the `string` parameter that you pass to it, not to a return value.
+- The program uses a `match` expression to assign a value to a variable. Within that assignment statement, you can also use `match` arms to return from the function early.
 
 ## Exercise steps
 
@@ -30,10 +36,10 @@ To complete this exercise, follow the instructions in each of the three Rust inl
 
 ```rust
 use std::fs::File;
-use std::io::{Error as IoError, Read};
+use std::io::{Error, Read};
 use std::path::PathBuf;
 
-fn read_file_contents(path: PathBuf) -> Result<String, IoError> {
+fn read_file_contents(path: PathBuf) -> Result<String, Error> {
     let mut string = String::new();
 
     // TODO #1: Handle this match expression.
@@ -59,9 +65,13 @@ fn read_file_contents(path: PathBuf) -> Result<String, IoError> {
 }
 
 fn main() {
-    assert!(read_file_contents(PathBuf::from("src/main.rs")).is_ok());
-    assert!(read_file_contents(PathBuf::from("non-existent-file.txt")).is_err());
+    if read_file_contents(PathBuf::from("src/main.rs")).is_ok() {
+        println!("The program found the main file.");
+    }
+    if read_file_contents(PathBuf::from("non-existent-file.txt")).is_err() {
+        println!("The program reported an error for the file that doesn't exist.");
+    }
 }
 ```
 
-Get a [solution to this exercise](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=8a554893ab63112e5e8f7fa1bacfb9b5?azure-portal=true).
+Get a [solution to this exercise](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=ff38d6c708fe9fcd298e4c9ea4b4f72f).

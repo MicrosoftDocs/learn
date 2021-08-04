@@ -148,5 +148,4 @@ The neural network goes back and forth many times until it learns the best assoc
 
 
 <!-- Links -->
-[AILibs]: https://docs.microsoft.com/learn/modules/introduction-artificial-intelligence-nasa/7-install-ai-libraries?azure-portal-true
-
+[AILibs]: /learn/modules/introduction-artificial-intelligence-nasa/7-install-ai-libraries?azure-portal=true

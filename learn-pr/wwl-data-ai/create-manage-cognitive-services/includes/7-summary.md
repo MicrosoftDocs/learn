@@ -1,3 +1,8 @@
-Azure Cognitive Services are cloud services with REST APIs, and client library SDKs. Developers can use the APIs and SDK to build cognitive intelligent applications without having direct artificial intelligence (AI) or data science skills or knowledge. Azure Cognitive Services enable developers to easily add cognitive features into their applications. 
+In this module, you learned how to:
 
-The catalog of services within Azure Cognitive Services can be categorized into five main pillars - Vision, Speech, Language, Web Search, and Decision. Before you can add any of these features to your applications, you need to create the appropriate resources on Microsoft Azure. This module provided the necessary overview of how to create and use an Azure Cognitive Service resource.
+- Provision cognitive service resources in an Azure subscription.
+- Identify endpoints, keys, and locations required to consume a cognitive service resource.
+- Use a REST API to consume a cognitive service.
+- Use an SDK to consume a cognitive service.
+
+For more information about cognitive services, refer to the [cognitive services documentation](/azure/cognitive-services/what-are-cognitive-services).

@@ -106,10 +106,15 @@ In Visual Studio Code, your terminal window points to the root directory of the 
       displayName: 'Publish NuGet package'
       inputs:
         command: push
-        publishVstsFeed: 'Space Game - web - Dependencies/Tailspin.SpaceGame.Web.Models'
+        feedPublish: '$(System.TeamProject)/Tailspin.SpaceGame.Web.Models'
         allowPackageConflicts: true
       condition: succeeded()
     ```
+
+    `feedPublish` specifies the name of the feed to publish to. The format of the name is `<projectName>/<feedName>`, where:
+
+      * `$(System.TeamProject)` is a predefined variable that refers to your project name, for example, "Space Game - web - Dependencies".
+      * "Tailspin.SpaceGame.Web.Models" is the feed name that you provided in the previous exercise.
 
 ## Create the pipeline in Azure Pipelines
 

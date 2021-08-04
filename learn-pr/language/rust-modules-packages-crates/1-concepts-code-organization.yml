@@ -4,8 +4,8 @@ metadata:
   title: Understand concepts behind code organization
   description: Learn about how packages, crates, and modules work together in Rust programs.
   ms.date: 01/20/2021
-  author: meaghanlewis
-  ms.author: shanama
+  author: danmabee
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Understand concepts behind code organization

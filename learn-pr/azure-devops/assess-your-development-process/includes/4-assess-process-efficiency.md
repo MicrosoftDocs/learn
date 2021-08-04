@@ -12,7 +12,7 @@ Let's take a look at her map.
 
 Mara gathers the team in the meeting room to present her VSM.
 
-![A whiteboard showing the value stream map.](../media/4-vsm-whiteboard2.png)
+:::image type="content" source="../media/4-vsm-whiteboard2.png" alt-text="A picture of a whiteboard showing the value stream map. The image highlights six important phases in the development process.":::
 
 **Mara:** A VSM helps us measure where a process has value to the customer and where it's eating up time without producing any value. Our map begins on the upper left with the functional specification for the software. We'll follow just one feature to see how it moves through our current release cycle.
 

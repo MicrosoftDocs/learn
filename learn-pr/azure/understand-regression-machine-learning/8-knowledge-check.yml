@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.understand-regression-machine-learning.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Multiple-choice questions
+  ms.date: 05/25/2021
+  author: tomreidnz
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'Why is linear regression a popular model?'
+    choices:
+    - content: "It's fast to calculate and easily interpreted"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "It's easy to extrapolate from and the fitting procedure doesn't require ‘tuning’ to find an optimum solution"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Both options are correct"
+      isCorrect: true
+      explanation: "Correct."
+  - content: 'What is the difference between multiple and simple regression?'
+    choices:
+    - content: "Simple regression uses special mathematics to speed up analysis"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Multiple regression predicts multiple labels, but simple regression doesn't"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Multiple regression accepts multiple features, but simple regression doesn't"
+      isCorrect: true
+      explanation: "Correct."
+  - content: 'What are the main strengths and weaknesses of polynomial regression, compared to simple linear regression?'
+    choices:
+    - content: "Polynomial regression is a more popular method than linear regression, but it always needs to be fitted iteratively"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Polynomial regression can explain non-linear relationships, but it often makes extreme predictions when extrapolated"
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Polynomial regression can be extrapolated, unlike simple linear regression, but it can take a long time to compute"
+      isCorrect: false
+      explanation: "Incorrect."

@@ -14,15 +14,15 @@ In this module, you learned how to:
 
 For more information on how to use Time Series Insights and visualize and query data, see these resources:
 
-- [What is Azure Time Series Insights Gen2?](https://docs.microsoft.com/azure/time-series-insights/overview-what-is-tsi)
+- [What is Azure Time Series Insights Gen2?](/azure/time-series-insights/overview-what-is-tsi)
 
-- [Explore and analyze time-stamped data with Time Series Insights](https://docs.microsoft.com/learn/modules/explore-analyze-time-series-insights/)
+- [Explore and analyze time-stamped data with Time Series Insights](/learn/modules/explore-analyze-time-series-insights/)
 
-- [Quickstart: Explore the Azure Time Series Insights Gen2 demo environment](https://docs.microsoft.com/azure/time-series-insights/quickstart-explore-tsi)
+- [Quickstart: Explore the Azure Time Series Insights Gen2 demo environment](/azure/time-series-insights/quickstart-explore-tsi)
 
-- [Azure Time Series Insights Explorer](https://docs.microsoft.com/azure/time-series-insights/concepts-ux-panels)
+- [Azure Time Series Insights Explorer](/azure/time-series-insights/concepts-ux-panels)
 
-- [Querying data from Azure Time Series Insights Gen2](https://docs.microsoft.com/azure/time-series-insights/concepts-query-overview)
+- [Querying data from Azure Time Series Insights Gen2](/azure/time-series-insights/concepts-query-overview)
 
 ## Clean up resources
 

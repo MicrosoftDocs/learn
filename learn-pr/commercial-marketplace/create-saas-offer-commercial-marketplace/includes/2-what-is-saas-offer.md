@@ -25,7 +25,7 @@ When asked if you'd like to sell through Microsoft, you’ll have the following 
 
 If you decide not to sell through Microsoft, you’ll have three options to list your application in the online stores—[**Azure Marketplace**](https://azuremarketplace.microsoft.com/) and [**Microsoft AppSource**](https://appsource.microsoft.com/). Your choice will determine how customers can learn more about your offer and engage with you to purchase a subscription. The option you choose will be indicated to customers with a call-to-action (CTA), which is the blue button that customers will click on your product’s page in the online stores.
 
-:::image type="content" source="../media/3-marketplace-cta.png" alt-text="Screenshot of a product listing from Azure Marketplace with emphasis on the free trial button":::
+:::image type="content" source="../media/3-marketplace-cta.png" alt-text="Screenshot of a product listing from Azure Marketplace with emphasis on the free trial button.":::
 
 You'll have a few options to choose from for your listing type:
 
@@ -52,9 +52,9 @@ Choosing to sell your offer through Microsoft is an important decision that has 
 
   - Cost savings and operational efficiencies as Microsoft takes on billing, collections, currency conversions, and taxation for purchases from the commercial marketplace.
   
-  - More valuable [Marketplace Rewards](https://docs.microsoft.com/azure/marketplace/gtm-your-marketplace-benefits) program benefits that are unlocked when your offer reaches revenue milestones through marketplace.
+  - More valuable [Marketplace Rewards](/azure/marketplace/gtm-your-marketplace-benefits) program benefits that are unlocked when your offer reaches revenue milestones through marketplace.
 
-  - The ability to take advantage of customers’ Azure [consumption commitment benefit](https://docs.microsoft.com/azure/marketplace/azure-consumption-commitment-benefit). This benefit makes it possible for customers to purchase qualified offers from the commercial marketplace and receive credit against their Microsoft Azure Consumption Commitment (MACC). This streamlines purchasing and budgeting for customers with existing enterprise agreements (EA) or Microsoft Customer Agreements (MCA).
+  - The ability to take advantage of customers’ Azure [consumption commitment benefit](/azure/marketplace/azure-consumption-commitment-benefit). This benefit makes it possible for customers to purchase qualified offers from the commercial marketplace and receive credit against their Microsoft Azure Consumption Commitment (MACC). This streamlines purchasing and budgeting for customers with existing enterprise agreements (EA) or Microsoft Customer Agreements (MCA).
 
 ### Summary
 

@@ -25,7 +25,7 @@ Infrastructure orchestration automates the entire lifecycle of a solution and im
 
 ## The scope of automation
 
-![Figure 1: Levels of automation](../media/fig6-1.png)
+![Figure 1: Levels of automation.](../media/fig6-1.png)
 _Figure 1: Levels of automation._
 
 Figure 1 shows how these approaches to automation relate to one another. Scripting is the most basic of the three and involves using scripting languages such as Bash or programming languages such as Python to automate repetitive tasks. Configuration management provides a layer of abstraction over scripting and relies on tools such as Azure Resource Manager templates or platforms such as Chef and Puppet. With CM and with IaC in particular, you can change the definition of a solution and ask the system to update or provision the corresponding cloud resources. Orchestration implies a higher level of coordination than either scripting or CM. Here, the role each resource plays in a solution is specified in a program, a manifest, a configuration file, or in some other form that is legible to an administrator (a human being) and to an instruction interpreter (a computer program). And the platform, be it Terraform, AWS CloudFormation, or another prominent orchestration manager, takes responsibility not only for configuration management, but for versioning and other tasks as well.

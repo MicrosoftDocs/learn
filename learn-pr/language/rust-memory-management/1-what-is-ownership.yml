@@ -3,9 +3,9 @@ uid: learn.languages.rust-memory-management.1-what-is-ownership
 metadata:
   title: What is ownership?
   description: Learn about how memory is managed through ownership.
-  ms.date: 05/16/2021
-  author: meaghanlewis
-  ms.author: shanama
+  ms.date: 06/07/2021
+  author: danmabee
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: What is ownership?
