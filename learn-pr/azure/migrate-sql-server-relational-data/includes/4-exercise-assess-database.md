@@ -24,7 +24,7 @@ On your RDP session, you need to disable Enhanced Security Configuration in Inte
 
 1. In the left menu bar, select **Local Server**.
 
-    :::image type="content" source="../media/4-rdp-server-manager.png" alt-text="Screenshot of server manager with IE Enhanced security set to off." loc-scope="azure-database-migration":::
+    :::image type="content" source="../media/4-rdp-server-manager.png" alt-text="Screenshot of server manager with IE Enhanced security set to off." loc-scope="azure-database-migration" lightbox="../media/4-rdp-server-manager.png":::
 
 1. Select the **IE Enhanced Security Configuration** setting.
 
@@ -78,7 +78,7 @@ On your RDP session, you need to disable Enhanced Security Configuration in Inte
 
 1. The assessment now shows the database you've selected. To begin the assessment, select **Start Assessment**.
 
-    :::image type="content" source="../media/4-06-select-sources.png" alt-text="Screenshot of select sources." loc-scope="azure-database-migration":::
+    :::image type="content" source="../media/4-06-select-sources.png" alt-text="Screenshot of select sources." loc-scope="azure-database-migration" lightbox="../media/4-06-select-sources.png":::
 
 ## Review the assessment results and address issues
 
@@ -112,6 +112,6 @@ Select **Compatibility issues**. It shows that there were no compatibility issue
 
 1. Select **SQL Server feature parity**. It should now show that the issue has been resolved.
 
-    :::image type="content" source="../media/4-09-fixed-issues.png" alt-text="Fixed issues." loc-scope="azure-database-migration":::
+    :::image type="content" source="../media/4-09-fixed-issues.png" alt-text="Fixed issues." loc-scope="azure-database-migration" lightbox="../media/4-09-fixed-issues.png":::
 
 At this point, you've completed the assessment. To return to the list of completed assessments, on the upper-left side of the page, next to **Social Database Assessment**, select the arrow.
