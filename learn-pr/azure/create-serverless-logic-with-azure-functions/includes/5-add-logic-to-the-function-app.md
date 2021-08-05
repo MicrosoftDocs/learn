@@ -361,11 +361,11 @@ In this case, we're going to use the **Test** pane in the portal to test our fun
     }
     ```
 
-1. Select **Run** and view the response in the **Output** pane. To see log messages, open the **Logs** tab in the bottom flyout of the pane. The following image shows an example response in the output pane and messages in the **Logs** pane.
+1. Select **Run** and view the response under the **Output** tab. To see log messages, open the **Logs** tab in the bottom flyout of the pane. The following image shows an example response in the output pane and messages in the **Logs** pane.
 
     ![Screenshot of the Azure portal showing the function editor pane with the Test and Logs tabs visible. A sample response from the function is shown in the output pane.](../media/5-portal-testing.png)
 
-    You can see in the **Output** pane that our status field has been correctly added to each of the readings.
+    You can see under the **Output** tab that our status field has been correctly added to each of the readings.
 
     To see that the request has been logged to Application Insights, in the left menu pane, under **Developer**, select **Monitor**. The **Application Insights** pane appears for your trigger function.
 
