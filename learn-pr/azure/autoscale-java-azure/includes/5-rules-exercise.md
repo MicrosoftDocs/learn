@@ -9,10 +9,31 @@ The PetClinic application is decomposed into four core microservices. All of the
 - Vets service: Stores and shows Veterinarians' information, including names and specialties.
 - API Gateway: A single entry point into the system, used to handle requests and route them to an appropriate service, and aggregate the results.
 
-We've setup autoscale to trigger on the customer service microservice when the tomcat request count exceeds five sessions per minute on average.
+To test the autoscale rules, we will generate some load on the instances. This simulated load causes the autoscale rules to scale out and increase the number of instances. As the simulated load is then decreased, the autoscale rules scale in and reduce the number of instances.
+
+In your sample application, we've already setup autoscale to trigger on the customer service microservice when the tomcat request count exceeds five sessions per minute on average.
 
 After the autoscale is triggered, it will then scale down if the request count is less than, or equal to 5.
-In the next exercises, you'll trigger either manually or via Azure Application Insights, or a script for this task.
+In the next exercises, you'll trigger autoscaling via Azure Application Insights, via a script and finally, manually via a web browser.
+
+## Trigger out the scale-out action with Application insights
+
+To trigger the auto scale, we will need to generate some load to get the average tomcat request count above five.
+Create an Application Insights instance from the Azure portal and select performance testing under the configure menu.
+Select "new" and choose "manual test" under test type.
+Copy and paste the below public endpoint of the gateway app, and replace the service name with the name of your spring cloud instance and select "run test".
+
+```bash
+https://<your-spring-cloud-service>-api-gateway.azuremicroservices.io/api/customer/owners
+```
+
+After the load test is complete, let’s head back to Metrics under the Monitoring section of our Azure Spring Cloud instance. We see our average tomcat request count increase during the load test.
+
+## Trigger the scale-out action with a script
+
+```bash
+sh loadTest.sh
+```
 
 ## Navigate to the Autoscale page in the Azure portal
 
@@ -30,7 +51,7 @@ In the next exercises, you'll trigger either manually or via Azure Application I
 
 In the autoscale setting screen, go to the Run history tab to see the most recent scale actions. The tab also shows the change in Observed Capacity over time. To find more details about all autoscale actions including operations such as update/delete autoscale settings, view the activity log and filter by autoscale operations.
 
-## Trigger the scale-out action manually
+## Trigger the scale-out action manually via a web browser
 
 To trigger the scale-out condition in the autoscale setting created, the Web App must have more than five requests in less than 1 minute.
 
@@ -71,22 +92,3 @@ The scale-in condition in the autoscale setting triggers if there are fewer than
 1. Under the chart, are the corresponding set of activity log entries for each scale action taken by this autoscale setting.
 
 ![Autoscale log](../media/scale-in-chart.png)
-
-## Trigger out the scale-out action with Application insights
-
-To trigger the auto scale, we will need to generate some load to get the average tomcat request count above five.
-Create an Application Insights instance from the Azure portal and select performance testing under the configure menu.
-Select "new" and choose "manual test" under test type.
-Copy and paste the below public endpoint of the gateway app, and replace the service name with the name of your spring cloud instance and select "run test".
-
-```bash
-https://<your-spring-cloud-service>-api-gateway.azuremicroservices.io/api/customer/owners
-```
-
-After the load test is complete, let’s head back to Metrics under the Monitoring section of our Azure Spring Cloud instance. We see our average tomcat request count increase during the load test.
-
-## Trigger the scale-out action with a script
-
-```bash
-sh loadTest.sh
-```
