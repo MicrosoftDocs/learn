@@ -58,11 +58,11 @@ Continue to create the application.
 
 1. Click the **Create** button
 
-   :::image type="content" source="../media/create-button.png" alt-text="Create button":::
+   :::image type="content" source="../media/create-button.png" alt-text="Create button.":::
 
 1. Once the deployment is complete, click the **Go to resource** button
 
-   :::image type="content" source="../media/go-to-resource-button.png" alt-text="Go to resource button":::
+   :::image type="content" source="../media/go-to-resource-button.png" alt-text="Go to resource button.":::
 
 ### Review the GitHub Action
 
@@ -70,7 +70,7 @@ At this stage, your Static Web Apps instance is created in Azure, but your app i
 
 You can check the status of your build and deploy action by clicking the link shown below to navigate to the Actions page of your GitHub repository:
 
-:::image type="content" source="../media/goto-action.png" alt-text="Browse to see the progress of the GitHub Actions workflow":::
+:::image type="content" source="../media/goto-action.png" alt-text="Browse to see the progress of the GitHub Actions workflow.":::
 
 Once you're there:
 
@@ -86,7 +86,7 @@ Once your GitHub Action finishes building and publishing your web app, you can b
 
 Click on the _URL_ link in the Azure portal to visit your app in the browser.
 
-:::image type="content" source="../media/static-web-apps-resource-overview.png" alt-text="Azure Static Web Apps overview page":::
+:::image type="content" source="../media/static-web-apps-resource-overview.png" alt-text="Azure Static Web Apps overview page.":::
 
 Your app's now globally available, but it's still stuck at **Loading data ...** because there's no data or API yet. You'll add the API for your web app in the next section.
 

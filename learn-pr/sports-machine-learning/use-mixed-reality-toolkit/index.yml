@@ -5,7 +5,7 @@ metadata:
   description: "Use C#, Visual Studio, Unity, and the Mixed Reality Toolkit to create an interactive virtual reality experience compatible with the HoloLens. Inspired by *Space Jam: A New Legacy*, you create an experience for coaches and fans to learn more about the Tune Squad."
   ms.date: 06/15/2021
   author: aprilspeight
-  ms.author: apspeigh
+  ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create a mixed reality basketball player lineup with the Mixed Reality Toolkit
@@ -23,7 +23,7 @@ prerequisites: |
   - Windows 10 SDK 10.0.18362.0 or later
   - Unity Hub with Unity 2019.4.X installed
   - Basic familiarity with Unity, including the interface, scene creation, package import, and addition of GameObjects to a scene.
-iconUrl: /learn/achievements/generic-badge.svg # TODO change
+iconUrl: /learn/achievements/student-evangelism/create-mixed-reality-basketball-lineup-mixed-reality-toolkit.svg
 levels:
 - beginner
 - intermediate

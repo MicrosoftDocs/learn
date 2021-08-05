@@ -8,7 +8,7 @@ A well-known form of load balancing is *round-robin DNS*, which many large web s
 
 Before the advent of the cloud, DNS load balancing was a simple way to reduce the latency of long-distance connections. The dispatcher at the DNS server was programmed to respond with the IP address of the server geographically nearest to the client. The easiest way to do this  was to respond with the IP address from the pool that was numerically the closest to the IP address of the client. This method was unreliable, as IP addresses aren't distributed in a global hierarchy. Current techniques are more sophisticated and rely on a software mapping of IP addresses to locations based on physical maps of Internet Service Providers (ISPs). Since this mapping is implemented as a costly software lookup, this method yields better results, but is expensive to compute. However, the cost of a slow lookup is amortized since the DNS lookup occurs only when the first connection to a server is made by the client. All subsequent communications happen directly between the client and the server that owns the dispatched IP address. An example of a DNS load-balancing scheme is shown in Figure 9.
 
-![Figure 9: Load balancing in a cloud environment](../media/fig5-9.png)
+![Figure 9: Load balancing in a cloud environment.](../media/fig5-9.png)
 
 _Figure 9: Load balancing in a cloud environment._
 
@@ -24,7 +24,7 @@ Though all types of network load balancers will forward requests along with any 
 
 The latter of these strategies is illustrated in Figure 10.
 
-![Figure 10: TCP Handoff mechanism from the dispatcher to the back-end server](../media/fig5-10.png)
+![Figure 10: TCP Handoff mechanism from the dispatcher to the back-end server.](../media/fig5-10.png)
 
 _Figure 10: TCP Handoff mechanism from the dispatcher to the back-end server._
 

@@ -6,11 +6,15 @@ In this exercise, you'll add the Orders function app to the API and use the `cur
 
 Before we add the Orders function app to the API, let's test the function it hosts - OrderDetails.
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the **OrderFunction** Function App.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**. The **All resources** pane appears.
 
-1. In the left menu pane, under the **Functions** section, select **Functions**, and then select **OrderDetails**.
+1. Select the Function App whose name begins with **OrderFunction**. The Function App pane appears for this order function.
 
-1. In the left menu pane, select **Code + Test**, and in the upper menu bar, select **Test/Run**.
+1. In the middle menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your Function App.
+
+1. From the list, select **OrderDetails**. The **Function** pane appears for OrderDetails.
+
+1. In the left menu pane, under **Developer**, select **Code + Test**, and in the upper menu bar, select **Test/Run**.
 
     :::image type="content" source="../media/5-test-order-details.png" alt-text="Order details code is displayed.":::
 
@@ -18,7 +22,7 @@ Before we add the Orders function app to the API, let's test the function it hos
 
 1. On the **Input** tab, in the **HTTP method** dropdown, select **GET**, and then under **Query**, select **Add parameter**.
 
-1. In the **Name** field, enter *name*, and in the **Value** field, enter *Chiba*. The parameter name and value are both case-sensitive.
+1. In the **Name** field, enter *name*, and in the **Value** field, enter *Chiba*. The value is case-sensitive.
 
 1. Select **Run**, examine the results on the **Output** tab, and then select **Close**.
 
@@ -26,19 +30,21 @@ Before we add the Orders function app to the API, let's test the function it hos
 
     The output pane displays the details of an order in JSON format. You can also test the function with the names "Henri" and "Barriclough" for different orders.
 
-1. At the top of the page, select **Get function URL**. Notice that the URL is the name of the function within the **azurewebsites.net** domain. Make a note of this URL for later comparison.
+1. On the top menu bar of the Function pane for *OrderDetails*, select **Get function URL**. Notice that the URL is the name of the function within the **azurewebsites.net** domain. Make a note of this URL for later comparison.
 
 ## Add another function app to existing API
 
 In this step, we'll add the Order function to the API Management resource that we created in the preceding exercise. In that exercise, we used the API Management interface from within the function app UI. Here, we'll navigate to our API Management instance through the portal main navigation pane, just to demonstrate that both approaches are available.
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **All resources**, then select the App Service whose name begins with **OrderFunction**.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **All resources**. The **All resources** pane appears.
 
-1. In the left menu bar, under the **API** section, select **API Management**.
+1. Select the Function App whose name begins with **OrderFunction**.
 
-1. On the top menu pane, select **Go to API Management**.
+1. In the left menu bar, under **API**, select **API Management**.
 
-1. In the left menu pane, under the **APIs** section, select **APIs**. In the **APIs** page for your API Management service, in the left menu pane, select **Add API**.
+1. On the top menu bar, select **Go to API Management**.
+
+1. In the left menu pane, under **APIs**, select **APIs**. In the **APIs** page for your API Management service, in the left menu pane, select **Add API**.
 
 1. In the **Add a new API** window, select **Function App**.
 
@@ -78,7 +84,7 @@ Now that we've added OrderDetails to our API, let's test it by using the API Man
 
 We can use the `curl` command-line tool to submit requests to our API. It's ideal because we can use it to include the correct subscription key with our requests. To submit requests, we also need the location of the API, which is hosted in Azure API Management and consists of the Products and Orders functions.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources**, and then select your **Azure API Management** service instance (ProductFunction Function App).
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources**, and then select your ProductFunctionNNNNN instance (ProductFunction Function App).
 
 1. In the **Overview** pane,  select the **Copy to clipboard** icon to the right of the **URL** value.
 
@@ -88,9 +94,9 @@ We can use the `curl` command-line tool to submit requests to our API. It's idea
     GATEWAY_URL=<paste the URL here>
     ```
 
-1. In  the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in the left menu bar, under the **API** section, select **API Management**, and in the top menu pane, select **Go to API Management**.
+1. In  the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in the left menu bar, under **API**, select **API Management**, and in the top menu pane, select **Go to API Management**.
 
-1. In the left menu pane, under the **APIs** section, select **Subscriptions**. The **Subscriptions** page appears for your service instance.
+1. In the left menu pane, under **APIs**, select **Subscriptions**. The **Subscriptions** page appears for your service instance.
 
 1. To the far right of **Built-in all-access subscription**, select the ellipsis **...**, and then select **Show/hide keys**.
 

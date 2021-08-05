@@ -67,9 +67,9 @@ In order to get utilization metrics of an Azure Databricks cluster, you can stre
 
 You can use Log analytics directly to query the Perf data. Here is an example of a query which charts out CPU for the VMs in question for a specific cluster ID. See log analytics overview for further documentation on log analytics and query syntax.
 
-![Code snippet for querying perf data](../media/perfsnippet.png)
+![Code snippet for querying perf data.](../media/perfsnippet.png)
 
-![sample Grafana visualization](../media/grafana.png)
+![sample Grafana visualization.](../media/grafana.png)
 
 You can also use Grafana to visualize your data from Log Analytics.
 

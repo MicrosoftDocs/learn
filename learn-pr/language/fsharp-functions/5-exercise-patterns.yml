@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.fsharp-functions.exercise-patterns
+title: Exercise - Function patterns
+metadata:
+  title: Exercise - Function patterns
+  description: In this exercise, you'll combine code written by other developers in your team to create a pipeline.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 07/26/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-exercise-patterns.md)]

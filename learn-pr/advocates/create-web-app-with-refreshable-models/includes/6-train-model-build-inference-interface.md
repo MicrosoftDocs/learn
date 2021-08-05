@@ -9,7 +9,7 @@ Download this [compressed file of twelve training images](https://github.com/Mic
 
 In a browser, navigate to [Custom Vision AI](https://www.customvision.ai) and log in. Create a new project called *Chocolate or Dalmatian*. In the popup, give your project a description, and allocate a Resource so that your model can be trained in the cloud. Create a new one, if needed.
 
-![Create your project](../media/create-project.png)
+![Create your project.](../media/create-project.png)
 
 Make sure to give this project the type *Classification* as it will simply determine between types. It's a Multiclass Classification Type of project, as it will offer one single tag per image. Choose *General (compact)* as you will export it for TensorFlow.js.
 
@@ -19,21 +19,21 @@ Now you are ready to train on your image set.
 
 In the folder you downloaded, you'll find two folders, one labeled 'ice cream' and the other 'dalmatian'. Select the `+` icon in your Custom Vision AI project, and select the images in the `dalmatian` folder. Tag those `dalmatian`. Do the same process for the `ice cream` folder, tagging those `ice cream`.
 
-![Add tagging](../media/tagging.png)
+![Add tagging.](../media/tagging.png)
 
 You now have your twelve training images uploaded and tagged. Select the *gear* icon at the top, and select *Quick Training*. You will see the results with performance analyzed. Test your data on a new image of ice cream or a dalmatian. Here is one to try:
 
-![a dalmatian](../media/dalmatian.jpg)
+![a dalmatian.](../media/dalmatian.jpg)
 
 Drag this image to your desktop, and then select the *checkmark* icon in the Custom Vision AI interface, and browse to find the image on your desktop. The model classifies this new image as a dalmatian!
 
-![classification success](../media/classification-test.png)
+![classification success.](../media/classification-test.png)
 
 ## Download your model
 
 Select the *down arrow* icon at the top of the Custom Vision AI interface to download your model and its associated assets. Select *TensorFlow* as the model type, and `tensorflow.js` in the dropdown list.
 
-![tf.js](../media/tensorflowjs.png)
+![tf.js.](../media/tensorflowjs.png)
 
 A zipped file will be exported to your local computer. Extract this file, and name the resultant folder `models`. Inside this folder you'll find four files: a `cvexport.manifest` file, a `labels.txt` file, a `model.json` file, and a `weights.bin`.
 

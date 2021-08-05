@@ -1,5 +1,7 @@
 You successfully deployed the video rendering service website to your cluster. But you noticed that you couldn't access the website from any client external to the cluster. The problem is that you haven't exposed your application to the internet yet. By default, Kubernetes blocks all external traffic. You'll need to add an *ingress rule* to allow traffic into the cluster.
 
+[!INCLUDE [azure-exercise-subscription-prerequisite](./include-sandbox-subscription-alert.md)]
+
 ## Create the service manifest
 
 Like all resources, services also have manifest files that describe how they should behave. Let's create a new service description.
@@ -127,7 +129,7 @@ To expose your website to the world via DNS, you must create an ingress controll
 
     ```yaml
     #ingress.yaml
-    apiVersion: extensions/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: contoso-website
@@ -141,7 +143,7 @@ To expose your website to the world via DNS, you must create an ingress controll
 
     ```yaml
     #ingress.yaml
-    apiVersion: extensions/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: contoso-website
@@ -154,7 +156,11 @@ To expose your website to the world via DNS, you must create an ingress controll
      In Cloud Shell, run the `az network dns zone list` command to query the Azure DNS zone list.
 
     ```bash
-    az aks show -g $RESOURCE_GROUP -n $CLUSTER_NAME -o tsv --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
+    az aks show \
+      -g $RESOURCE_GROUP \
+      -n $CLUSTER_NAME \
+      -o tsv \
+      --query addonProfiles.httpApplicationRouting.config.HTTPApplicationRoutingZoneName
     ```
 
 1. Copy the output, and update the `ingress.yaml` file to match the following YAML. Replace the `<zone-name>` placeholder value with the `ZoneName` value you copied.
@@ -163,7 +169,7 @@ To expose your website to the world via DNS, you must create an ingress controll
 
     ```yaml
     #ingress.yaml
-    apiVersion: extensions/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: contoso-website
@@ -180,7 +186,7 @@ To expose your website to the world via DNS, you must create an ingress controll
 
     ```yaml
     #ingress.yaml
-    apiVersion: extensions/v1beta1
+    apiVersion: networking.k8s.io/v1
     kind: Ingress
     metadata:
       name: contoso-website
@@ -192,9 +198,12 @@ To expose your website to the world via DNS, you must create an ingress controll
           http:
             paths:
               - backend: # How the ingress will handle the requests
-                  serviceName: contoso-website # Which service the request will be forwarded to
-                  servicePort: http # Which port in that service
+                  service:
+                   name: contoso-website # Which service the request will be forwarded to
+                   port:
+                     name: http # Which port in that service
                 path: / # Which path is this rule referring to
+                pathType: Prefix # See more at https://kubernetes.io/docs/concepts/services-networking/ingress/#path-types
     ```
 
 1. Save the manifest file by pressing <kbd>Ctrl-S</kbd>, and close the editor by pressing <kbd>Ctrl-Q</kbd>.
@@ -230,40 +239,8 @@ Now we need to deploy the service for our changes to take effect.
 
     Make sure the `ADDRESS` column of the output is filled with an IP address. That's the address of your cluster.
 
-1. There could be a small delay between the creation of the ingress and the creation of the zone record. Let's query Azure to find out if our DNS has been created and we can access the website already.
-
-    Run the `list` command to list all DNS zones again.
-
-    ```bash
-    az network dns zone list --output table
-    ```
-
-    The command should output a result similar to the following example.
-
-    ```output
-    ZoneName                               ResourceGroup                                 RecordSets    MaxRecordSets
-    -------------------------------------  --------------------------------------------  ------------  ---------------
-    5cd29ec927f24764b052.eastus.aksapp.io  mc_rg-contoso-video_aks-contoso-video_eastus  4             10000
-    ```
-
-1. Copy the `ZoneName` and `ResourceGroup` columns, and run the `az network dns` command. Replace the `<resource-group>` and `<zone-name>` value placeholders with the values you copied.
-
-    ```bash
-    az network dns record-set list -g <resource-group> -z <zone-name> --output table
-    ```
-
-    The command should output a result similar to the following example.
-
-    ```output
-    Fqdn                                            Name     ProvisioningState    ResourceGroup                                 Ttl
-    ----------------------------------------------  -------  -------------------  --------------------------------------------  ------
-    5cd29ec927f24764b052.eastus.aksapp.io.          @        Succeeded            mc_rg-contoso-video_aks-contoso-video_eastus  172800
-    5cd29ec927f24764b052.eastus.aksapp.io.          @        Succeeded            mc_rg-contoso-video_aks-contoso-video_eastus  3600
-    contoso.5cd29ec927f24764b052.eastus.aksapp.io.  contoso  Succeeded            mc_rg-contoso-video_aks-contoso-video_eastus  300
-    contoso.5cd29ec927f24764b052.eastus.aksapp.io.  contoso  Succeeded            mc_rg-contoso-video_aks-contoso-video_eastus  300
-    ```
-
-    Make sure there are two new records at the bottom of the list with the host we created in the `host` key. The `ProvisioningState` value is `Succeeded`. It can take up to two minutes for zone records to propagate.
+    > [!NOTE]
+    > There can be a delay between the creation of the ingress and the creation of the zone record. It can take up to five minutes for zone records to propagate.
 
 1. Open your browser, and go to the FQDN described in the output. You should see a website that looks like the following example screenshot.
 

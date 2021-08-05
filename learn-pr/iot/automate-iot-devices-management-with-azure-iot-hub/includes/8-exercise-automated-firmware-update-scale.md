@@ -41,7 +41,7 @@ We will create a script file that we will execute from the shell in order to cre
         fi
     
         # Start the device simulator
-        connectionString=$(az iot hub device-identity show-connection-string --hub-name $iothubname --device-id simulateddevice$i)
+        connectionString=$(az iot hub device-identity connection-string show --hub-name $iothubname --device-id simulateddevice$i)
         connectionString=${connectionString#*: \"}
         connectionString=${connectionString%\"*}
         echo Starting device simulator $i with connection string $connectionString

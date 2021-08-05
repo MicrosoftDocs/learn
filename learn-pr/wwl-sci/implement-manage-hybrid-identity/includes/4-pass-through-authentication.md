@@ -2,9 +2,9 @@ Azure Active Directory (Azure AD) pass-through authentication allows your users 
 
 ## Enable the feature
 
-Enable pass-through authentication through [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity).
+Enable pass-through authentication through [Azure AD Connect](/azure/active-directory/hybrid/whatis-hybrid-identity).
 
-If you're installing Azure AD Connect for the first time, choose the [custom installation path](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom). At the **User sign-in** page, choose **Pass-through authentication** as the **Sign On method**. On successful completion, a pass-through authentication agent is installed on the same server as Azure AD Connect. In addition, the pass-through authentication feature is enabled on your tenant.
+If you're installing Azure AD Connect for the first time, choose the [custom installation path](/azure/active-directory/hybrid/how-to-connect-install-custom). At the **User sign-in** page, choose **Pass-through authentication** as the **Sign On method**. On successful completion, a pass-through authentication agent is installed on the same server as Azure AD Connect. In addition, the pass-through authentication feature is enabled on your tenant.
 
 > [!div class="mx-imgBorder"]
 > ![Azure AD Connect: User sign-in.](../media/single-sign-on-3.png)

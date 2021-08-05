@@ -10,7 +10,7 @@ Let's have a look at how the tracking portal's architectural design, and the com
 
 The tracking portal's design is based on the reference architecture shown in the following diagram.
 
-![A diagram showing a scalable web app architecture](../media/2-scalable-web-app.png)
+![A diagram showing a scalable web app architecture.](../media/2-scalable-web-app.png)
 
 Notice how our application makes use of a single Azure resource group. This resource group enables us to group and manage all of our resources logically, and simplifies management. We chose to deploy this resource group to the East US region. Even though the resource group doesn't limit us to use the same Azure region for the included resources, we've decided to use the East US region for all resources deployed in our application.
 
@@ -104,7 +104,7 @@ The following table shows which components are global, regional, and configurabl
 
 After some investigation, you propose the architecture as shown in the following diagram.
 
-![A diagram showing a highly available architecture](../media/2-multi-region-web-app-diagram.png)
+![A diagram showing a highly available architecture.](../media/2-multi-region-web-app-diagram.png)
 
 In this design, there's an active region (East US) and a standby region (West US). The East US region handles all requests by the components under ordinary circumstances. If a disaster causes a regional failure, the application fails over onto the West US region.
 

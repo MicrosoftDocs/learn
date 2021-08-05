@@ -13,7 +13,7 @@ Azure Sentinel uses built-in and custom detections to alert you to potential sec
 
 You can create security playbooks in Azure Sentinel to respond to alerts. *Security playbooks* are collections of procedures based on Azure Logic Apps that run in response to an alert. You can run these security playbooks manually in response to your investigation of an incident or you can configure an alert to run a playbook automatically.
 
-With the ability to respond to incidents automatically, you can automate some of your security operations and make your Service Organization Controls (SOC) more productive.
+With the ability to respond to incidents automatically, you can automate some of your security operations and make your Security Operations Center (SOC) more productive.
 
 For example, to address Contoso's concerns, you can develop a workflow with defined steps that can block a suspicious username from accessing resources from a non-secure IP address. Alternatively, you can configure the playbook to perform a simple operation such as notifying the SecOps team about a high-level security alert.
 

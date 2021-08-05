@@ -30,6 +30,7 @@ products:
 modules:
 - learn.design-your-migration-to-azure
 - learn.protect-on-premises-infrastructure-with-azure-site-recovery
+- learn.design-your-site-recovery-solution-in-azure
 - learn.protect-infrastructure-with-azure-site-recovery
 - learn.protect-virtual-machines-with-azure-backup
 - learn.backup-restore-azure-sql

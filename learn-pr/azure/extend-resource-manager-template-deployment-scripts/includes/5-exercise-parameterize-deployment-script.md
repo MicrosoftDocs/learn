@@ -2,7 +2,7 @@ Now that you've used a deployment script to migrate some manual work into your A
 
 The team's process has similar requirements, but the team needs to deploy multiple files to its storage account. The team has a PowerShell script that can take a list of files as a parameter and upload them, similar to the script that you were already using in your template.
 
-In this exercise, you'll take your previous template as a starting point and update the PowerShell script to use the one from your partner team. Then you'll add a way to enable the person who's deploying the template to specify what configuration files to deploy (one or more).
+In this exercise, you'll take your previous template as a starting point, and update the PowerShell script to use the one from your partner team. Then, you'll add a way to enable the person who's deploying the template to specify what configuration files to deploy (one or more).
 
 During the process, you'll:
 
@@ -114,24 +114,24 @@ To make your template easier for the two teams to use, you can add a parameter t
 
 ::: zone pivot="jsoncli,jsonpowershell"
 
-1. Add a parameter to the template to take an array of file names.
+Add a parameter to the template to take an array of filenames.
 
-    :::code language="json" source="code/5-template-with-deploymentscript-parameters.json" range="5-7, 9-13" :::
+:::code language="json" source="code/5-template-with-deploymentscript-parameters.json" range="5-7, 9-13" :::
 
-1. For bonus points, supply a default value so the template will continue to work for your team with no changes to the deployment process.
+As a bonus, you can supply a default value so the template will continue to work for your team with no changes to the deployment process. Although not required, entering a new default value can help you understand the pattern of making it easier for teams to adopt new versions of templates if they continue to behave as previously done, with the new functionality being the reward. In other words, this step shows you how to maintain the existing behavior while making the changes to support future work.
 
 ::: zone-end
 
 ::: zone pivot="bicepcli,biceppowershell"
 
-1. Add a parameter to the template to take an array of file names.
+Add a parameter to the template to take an array of filenames.
 
-    ```bicep
-    @description('List of files to copy to application storage account.')
-    param filesToCopy array
-    ```
+```bicep
+@description('List of files to copy to application storage account.')
+param filesToCopy array
+```
 
-2. For bonus points, supply a default value so the template will continue to work for your team with no changes to the deployment process.
+As a bonus, you can supply a default value so the template will continue to work for your team with no changes to the deployment process. Although not required, entering a new default value can help you understand the pattern of making it easier for teams to adopt new versions of templates if they continue to behave as previously done, with the new functionality being the reward. In other words, this step shows you how to maintain the existing behavior while making the changes to support future work.
 
 ::: zone-end
 
@@ -144,7 +144,7 @@ Next, you can take the parameter that you just defined and pass it in to the dep
 > [!TIP]
 > Use [template functions](/azure/azure-resource-manager/templates/template-functions-resource) to access common functions like `[string()]` to convert values of one type to a string.
 
-1. Add an `arguments` property to the deployment script.  The PowerShell script takes a parameter named `File`, which is a string of file names that should come from the `filesToCopy` template parameter. Make sure there are quotes around the whole argument so it gets passed in properly.
+1. Add an `arguments` property to the deployment script.  The PowerShell script takes a parameter named `File`, which is a string of filenames that should come from the `filesToCopy` template parameter. Make sure there are quotes around the whole argument so it gets passed in properly.
 
     > [!CAUTION]
     > This `arguments` property is invalid. If you're using the Azure Resource Manager extension in Visual Studio Code, it might flag this line. You'll fix this problem in the next steps.
@@ -170,13 +170,13 @@ Next, you can take the parameter that you just defined and pass it in to the dep
 
 Next, you can take the parameter that you just defined and pass it in to the deployment script. Passing command-line arguments can be tricky, because the strings are evaluated at multiple levels. Properly escaping quotes and picking the right quotes for the job are essential for success.
 
-Add an `arguments` property to the deployment script. The PowerShell script takes a parameter named `File`, which is a string of file names that should come from the `filesToCopy` template parameter. 
+Add an `arguments` property to the deployment script. The PowerShell script takes a parameter named `File`, which is a string of filenames that should come from the `filesToCopy` template parameter. 
 
 :::code language="bicep" source="code/5-template-with-deploymentscript-parameters.bicep" range="74" :::
 
 Notice this uses several Bicep features:
 
-- String interpolation, to combine the strings 
+- String interpolation, to combine the strings
 - The `\` escape character is used to allow us to include a single quote character (`'`) inside the string,since a single quote is normally a reserved character in Bicep.
 - The `string()` function is used to convert the `filesToCopy` array to a string.
 
@@ -232,23 +232,25 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 Now that you've got the template set, you can validate the new deployment script by using a parameters file with new files specified.
 
-1. Either create an *azuredeploy.parameters.json* file manually or use [the VS Code extension](/azure/azure-resource-manager/templates/quickstart-create-templates-use-visual-studio-code?tabs=CLI#create-a-parameter-file) to do so.
-1. Edit the file to have two files specified:
+::: zone pivot="jsoncli,jsonpowershell"
 
-    ```json
-    {
-        "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
-        "contentVersion": "1.0.0.0",
-        "parameters": {
-            "filesToCopy": {
-                "value": [
-                    "swagger.Staging.json",
-                    "appsettings.Staging.json"
-                ]
-            }
-        }
-    }
-    ```
+1. Either create an *azuredeploy.parameters.json* file manually or use [the VS Code extension](/azure/azure-resource-manager/templates/quickstart-create-templates-use-visual-studio-code?tabs=CLI#create-a-parameter-file) to do so.
+
+1. Edit the file to have two `filesToCopy` specified:
+
+   :::code language="json" source="code/5-parameters.json" :::
+
+::: zone-end
+
+::: zone pivot="bicepcli,biceppowershell"
+
+1. Create an *azuredeploy.parameters.json* file.
+
+1. Edit the file to have two `filesToCopy` specified:
+
+   :::code language="json" source="code/5-parameters.json" :::
+
+::: zone-end
 
 ## Deploy the template
 

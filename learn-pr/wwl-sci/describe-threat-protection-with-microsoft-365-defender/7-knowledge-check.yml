@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/21/2021
+  ms.date: 07/07/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
@@ -38,7 +38,7 @@ quiz:
     - content: "Data Security."
       isCorrect: true
       explanation: "That's correct. Through the Data Security pillar, an admin can identify and control sensitive information and respond to classification labels on content."
-  - content: "Which of the following is a is a cloud-based security solution that identifies, detects, and helps to investigate advanced threats, compromised identities, and malicious insider actions directed at your organization?"
+  - content: "Which of the following is a cloud-based security solution that identifies, detects, and helps to investigate advanced threats, compromised identities, and malicious insider actions directed at your organization?"
     choices:
     - content: "Microsoft Defender for Office 365"
       isCorrect: false
