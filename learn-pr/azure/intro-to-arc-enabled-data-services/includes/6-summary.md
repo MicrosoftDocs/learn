@@ -6,19 +6,19 @@ To learn more about Azure Arc-enabled data services see the following references
 
 ### Azure Arc
 
-Read this [overview](/azure/azure-arc/overview) to learn more about Azure Arc.
+Read this [overview](https://docs.microsoft.com/azure/azure-arc/overview) to learn more about Azure Arc.
 
 ### Azure Arc-enabled data services
 
-Read this [overview](/azure/azure-arc/data/overview) to learn more about Azure Arc-enabled data services.
+Read this [overview](https://docs.microsoft.com/azure/azure-arc/data/overview) to learn more about Azure Arc-enabled data services.
 
 ### Azure Arc-enabled SQL Managed Instance
 
-Read this [overview](/azure/azure-arc/data/managed-instance-overview) to learn more about Azure Arc-enabled SQL Managed Instance.
+Read this [overview](https://docs.microsoft.com/azure/azure-arc/data/managed-instance-overview) to learn more about Azure Arc-enabled SQL Managed Instance.
 
 ### Azure Arc-enabled PostgreSQL Hyperscale (Preview)
 
-Read this [overview](/azure/azure-arc/data/what-is-azure-arc-enabled-postgres-hyperscale) to learn more about Azure Arc-enabled PostgreSQL Hyperscale.
+Read this [overview](https://docs.microsoft.com/azure/azure-arc/data/what-is-azure-arc-enabled-postgres-hyperscale) to learn more about Azure Arc-enabled PostgreSQL Hyperscale.
 
 ### Azure Arc Jumpstart
 

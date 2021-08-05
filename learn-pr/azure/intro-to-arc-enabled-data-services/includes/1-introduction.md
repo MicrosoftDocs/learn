@@ -21,7 +21,3 @@ To get the most out of this module, you should consider reviewing the following 
 
 - [Azure Fundamentals part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts): This free hands-on learning path module helps you understand the fundamentals of Azure at a general level.
 - [Introduction to Kubernetes](/learn/modules/intro-to-kubernetes): This free hands-on learning path module helps you understand the fundamentals of Kubernetes, a key technology for Azure Arc-enabled data services.
-
-Maximize your understanding of Azure Arc-enabled SQL Managed Instance by reviewing [What is Azure SQL Managed Instance](/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview).
-
-Maximize their understanding of Azure Arc-enabled PostgreSQL Hyperscale by reviewing [Introduction to Azure Database for PostgreSQL](/learn/modules/intro-to-postgres).
