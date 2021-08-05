@@ -44,6 +44,18 @@ You can use the Metrics Explorer to chart the above metrics all in one place. Th
 
 In the autoscale setting screen, go to the Run history tab to see the most recent scale actions. The tab also shows the change in Observed Capacity over time. To find more details about all autoscale actions including operations such as update/delete autoscale settings, view the activity log and filter by autoscale operations.
 
+### Troubleshoot Autoscale via the Activity Log
+
+Autoscale will post to the Activity Log if any of the following conditions occur:
+
+- Autoscale issues a scale operation.
+- Autoscale service successfully completes a scale action.
+- Autoscale service fails to take a scale action.
+- Metrics are not available for autoscale service to make a scale decision.
+- Metrics are available (recovery) again to make a scale decision.
+- Autoscale detects flapping and aborts the scale attempt. You will see a log type of `Flapping` in this situation. If you see this, consider whether your thresholds are too narrow.
+- Autoscale detects flapping but is still able to successfully scale. You will see a log type of `FlappingOccurred` in this situation. If you see this, the autoscale engine has attempted to scale (for example, from four instances to 2), but has determined that this would cause flapping. Instead, the autoscale engine has scaled to a different number of instances (for example, using three instances instead of 2), which no longer causes flapping, so it has scaled to this number of instances.
+
 ## Monitor the Application's autoscale with Log Analytics
 
 You can validate the evaluations and scale actions better using Log Analytics. In your sample application, we've routed your autoscale logs to Azure Monitor Logs (Log Analytics) through a workspace when you created the autoscale setting. In the next exercise, you'll use log analytics to find out more about the autoscale events.

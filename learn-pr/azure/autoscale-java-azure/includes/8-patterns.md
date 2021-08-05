@@ -10,12 +10,16 @@ You have a web app and
 - Additionally, you want to ensure there is a minimum number of instances.
 - Also, you want to ensure that you set a maximum limit to the number of instances you can scale to.
 
+![CPU](../media/scale-based-on-cpu.png)
+
 ### Scale differently on weekdays vs weekends
 
 You have a web app and
 
 - You want three instances by default (on weekdays)
 - You don't expect traffic on weekends and hence you want to scale down to one instance on weekends.
+
+![CPU](../media/weekday-weekend-scale.png)
 
 ### Scale differently during holidays
 
@@ -24,11 +28,42 @@ You have a web app and
 - You want to scale up/down based on CPU usage by default
 - However, during holiday season (or specific days that are important for your business) you want to override the defaults and have more capacity at your disposal.
 
+![CPU](../media/holidays-scale.png)
+
 ### Scale based on custom metric
 
 You have a web front end and an API tier that communicates with the backend.
 
 - You want to scale the API tier based on custom events in the front end (example: You want to scale your checkout process based on the number of items in the shopping cart)
+
+![CPU](../media/custom-metric-scale.png)
+
+# Design your application to scale out
+
+## Design your application so that it can scale horizontally
+
+A primary advantage of the cloud is elastic scaling &mdash; the ability to use as much capacity as you need, scaling out as load increases, and scaling in when the extra capacity is not needed. Design your application so that it can scale horizontally, adding or removing new instances as demand requires.
+
+## Recommendations
+
+**Avoid instance stickiness**. Stickiness, or *session affinity*, is when requests from the same client are always routed to the same server. Stickiness limits the application's ability to scale out. For example, traffic from a high-volume user will not be distributed across instances. Causes of stickiness include storing session state in memory, and using machine-specific keys for encryption. Make sure that any instance can handle any request.
+
+**Identify bottlenecks**. Scaling out isn't a magic fix for every performance issue. For example, if your backend database is the bottleneck, it won't help to add more web servers. Identify and resolve the bottlenecks in the system first, before throwing more instances at the problem. Stateful parts of the system are the most likely cause of bottlenecks.
+
+**Decompose workloads by scalability requirements.**  Applications often consist of multiple workloads, with different requirements for scaling. For example, an application might have a public-facing site and a separate administration site. The public site may experience sudden surges in traffic, while the administration site has a smaller, more predictable load.
+
+**Offload resource-intensive tasks.** Tasks that require a lot of CPU or I/O resources should be moved to background jobs when possible, to minimize the load on the front end that is handling user requests.
+
+**Use built-in autoscaling features**. Many Azure compute services have built-in support for autoscaling. If the application has a predictable, regular workload, scale out on a schedule. For example, scale out during business hours. Otherwise, if the workload is not predictable, use performance metrics such as CPU or request queue length to trigger autoscaling. For autoscaling best practices.
+
+**Consider aggressive autoscaling for critical workloads**. For critical workloads, you want to keep ahead of demand. It's better to add new instances quickly under heavy load to handle the additional traffic, and then gradually scale back.
+
+**Design for scale in**.  Remember that with elastic scale, the application will have periods of scale in, when instances get removed. The application must gracefully handle instances being removed. Here are some ways to handle scalein:
+
+- Listen for shutdown events (when available) and shut down cleanly.
+- Clients/consumers of a service should support transient fault handling and retry.
+- For long-running tasks, consider breaking up the work, using checkpoints or the [Pipes and Filters][pipes-filters-pattern] pattern.
+- Put work items on a queue so that another instance can pick up the work, if an instance is removed in the middle of processing.
 
 ## Autoscale best practices
 
@@ -40,15 +75,3 @@ You have a web front end and an API tier that communicates with the backend.
 - All thresholds are calculated at an instance level. For example, "scale out by one instance when average CPU > 80% when instance count is 2", means scale-out when the average CPU across all instances is greater than 80%.
 - All autoscale failures are logged to the Activity Log. You can then configure an activity log alert so that you can be notified via email, SMS, or webhooks whenever there is an autoscale failure.
 - Similarly, all successful scale actions are posted to the Activity Log. You can then configure an activity log alert so that you can be notified via email, SMS, or webhooks whenever there is a successful autoscale action. You can also configure email or webhook notifications to get notified for successful scale actions via the notifications tab on the autoscale setting.
-
-### Troubleshoot Autoscale via the Activity Log
-
-Autoscale will post to the Activity Log if any of the following conditions occur:
-
-- Autoscale issues a scale operation.
-- Autoscale service successfully completes a scale action.
-- Autoscale service fails to take a scale action.
-- Metrics are not available for autoscale service to make a scale decision.
-- Metrics are available (recovery) again to make a scale decision.
-- Autoscale detects flapping and aborts the scale attempt. You will see a log type of `Flapping` in this situation. If you see this, consider whether your thresholds are too narrow.
-- Autoscale detects flapping but is still able to successfully scale. You will see a log type of `FlappingOccurred` in this situation. If you see this, the autoscale engine has attempted to scale (for example, from four instances to 2), but has determined that this would cause flapping. Instead, the autoscale engine has scaled to a different number of instances (for example, using three instances instead of 2), which no longer causes flapping, so it has scaled to this number of instances.
