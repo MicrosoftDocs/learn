@@ -159,7 +159,7 @@ Now that you know the template is valid, you can deploy it.
         --query "[*].{Name:name, Type:type}"
     ```
 
-    The outpus should show your host, extension, inetwork interface, public address, virtual network, and storage account. If you see all of these resources listed, your deployment was successful.
+    The output should show your host, extension, network interface, public address, virtual network, and storage account. If you see all of these resources listed, your deployment was successful.
 
 1. Run the following command to generate the URL for your web server. The output IP address confirms that IIS was successfully installed.
 
