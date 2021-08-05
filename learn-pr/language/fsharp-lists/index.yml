@@ -9,12 +9,12 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
 title: Store and apply operations on list data in F#
-summary: Learn to write programs using lists and learn to leverage list properties as well as list functions specified in the list module.
+summary: Learn to write programs by using lists, and learn to leverage list properties as well as the list functions specified in the list module.
 abstract: |
-  In this module you will:
-  - Explore the collection data structures.
-  - Understand basic properties on a list structure.
-  - Leverage the list module to carry out some more advanced operations.
+  In this module, you will:
+  - Explore collection data structures.
+  - Learn about basic properties on a list structure.
+  - Use the list module to carry out some more advanced operations.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner

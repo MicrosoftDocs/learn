@@ -1,8 +1,8 @@
-You are working as a developer at a casual games company. You've been asked to create some starting code that can be used for a card game. Your first assignment is to create a deck of cards and function that's able to take cards from the deck, one at a time.
+Let's say you're a developer at a casual games company. You've been asked to write some starting code to be used for a card game. Your first assignment is to create a deck of cards and then create a function that can draw cards from the deck, one at a time.
 
-## Create a deck
+## Create a deck of cards
 
-A deck of cards has 52 cards, we will for convenience make that five cards, so it's easier to read the console print. You can create a series of numbers using `..`.
+A card deck has 52 cards, of course, but to make it easier to read the console print, let's reduce the deck to five cards. You can create a series of numbers using `..`.
 
 1. Create a new project by running `dotnet new`:
 
@@ -11,17 +11,17 @@ A deck of cards has 52 cards, we will for convenience make that five cards, so i
    cd Cards
    ```
 
-1. Add the following code to _Program.fs_, to create the list holding the cards:
+1. To create a list that holds the cards, in the _Program.fs_ file, add the following code:
 
    ```fsharp
    let cards = [ 0 .. 5 ]
    ```
 
-   This code will create a list consisting of numbers from 0 to 5.
+   This code creates a list of numbers from 0 to 5.
 
 ## Draw cards
 
-Once you have your deck, you can construct a method to draw cards. You can use the built-in properties `Head` and `Tail` to do so.
+Now that you've created your deck, you can construct a method for drawing cards from it. To do so, you can use the built-in properties `Head` and `Tail`.
 
 1. Next, create a function `drawCard()`:
 
@@ -31,9 +31,9 @@ Once you have your deck, you can construct a method to draw cards. You can use t
        list.Tail 
    ```
 
-   By using `Head`, you read the first item in the list and by returning `Tail` you simulate taking a card from the top of the list and return the remaining deck.
+   By using the `Head` property, you read the first item in the list, and by returning `Tail`, you simulate taking a card from the top of the list and return the remaining cards in the deck.
 
-1. Add the following code to the `main()` method to try out your implementation:
+1. To try out your implementation, add the following code to the `main()` method:
 
    ```fsharp
    cards |> drawCard |> drawCard // 0 1
@@ -41,15 +41,15 @@ Once you have your deck, you can construct a method to draw cards. You can use t
 
 1. Run the project by calling `dotnet run`:
 
-   You should now see `0` and `1` being printed at the console.
+   You should now see `0` and `1` being printed in the console.
 
-Congratulations! You've implemented a deck of cards you can draw from.
+Congratulations! You've implemented a deck of cards that you can draw from.
 
 ## Draw cards to a hand
 
-So, drawing cards is great, but usually in a card game there's players that want to pick up those cards - a hand. Next, you will implement so that each card you draw will also be picked up by a hand. You will need to make some modifications to your code to support this scenario.
+The ability to draw cards from the deck is a great start, but card games ordinarily need two or more players to pick up those cards. As you know, each player's collection of drawn cards is called a *hand*. Next, you'll implement code to have each drawn card added to a hand.
 
-1. Add the following code, just where you declared the `cards` list:
+1. Where you declared the `cards` list, add the following code:
 
    ```fsharp
    let hand = []
