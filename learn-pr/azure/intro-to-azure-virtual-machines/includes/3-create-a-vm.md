@@ -51,7 +51,7 @@ You need to configure the basic parameters of your Ubuntu virtual machine. If so
     | Authentication type | Password |
     | Username | Enter a username |
     | Password | Enter a password |
-    | **Inpound port rules** |
+    | **Inbound port rules** |
     | Public inbound ports | None |
     
 1. There are several other tabs you can explore to see the settings you can influence during the VM creation. After you're finished exploring, select **Review + create** to review and validate the settings.
