@@ -27,9 +27,9 @@ You can create a resource template for your VM. From the VM menu, under **Automa
 ![Screenshot showing Export template option for a VM.](../media/4-automation-script.png)
 
 > [!NOTE]
-> The resources included in this modules do not have policies that enable you to export the VM you just created; however, the exported template is an easy-to-edit JSON file. 
+> The policies for the resources included in the sandbox for this Learn module prevent you from being able to export the VM you just created; that said, an exported template is an easy-to-edit JSON file. 
 
-You have the option to download or save the template for later use, or immediately deploy a new VM based on the template. For example, you might create a VM from a template in a test environment, and find it doesn’t quite work to replace your on-premises machine. You can delete the resource group, which deletes all of the resources, tweak the template, and try again. If you only want to make changes to the existing deployed resources, you can change the template used to create it, and deploy it again. Resource Manager will change the resources to match the new template.
+You have the option to download or save a template for later use, or immediately deploy a new VM based on the template. For example, you might create a VM from a template in a test environment, and find it doesn’t quite work to replace your on-premises machine. You can delete the resource group, which deletes all of the resources, tweak the template, and try again. If you only want to make changes to the existing deployed resources, you can change the template used to create it, and redeploy it. Resource Manager will change the resources to match the new template.
 
 After you have it working the way you want it, you can use that template to easily replicate multiple versions of your infrastructure, such as staging and production. You can parameterize fields such as the VM name, network name, storage account name, and so on, and load the template repeatedly, using different parameters to customize each environment.
 
