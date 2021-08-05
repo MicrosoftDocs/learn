@@ -123,7 +123,7 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 1. Run the following command to create a Bicep file from the template:
 
-   ```azurepowershell
+   ```powershell
    bicep decompile template.json
    ```
 
@@ -182,7 +182,7 @@ You'll fix these problems throughout the rest of this module.
 
    As you copy each resource, inspect its properties. Later in this module, you'll update each resource's properties and configuration to conform to Bicep best practices.
 
-   > [TTIP]
+   > [!TIP]
    > When you convert or export your own templates, you could update the resources to follow best practices as you copy them across. In this module, we will do this separately to make it easier to understand each phase of the migration process.
 
 ## Check for missing resources
