@@ -76,14 +76,11 @@ products:
 - azure-container-registry
 - azure-storage
 modules:
-- learn.azure.build-cloud-governance-strategy-azure
-- learn.introduction-to-azure-virtual-machines
-- learn.azure.network-fundamentals
-- learn.azure.network-fundamentals-2
-- learn.control-azure-services-with-cli
+- learn.wwl.configure-azure-resources-tools
+- learn.wwl.use-azure-resource-manager
+- learn.wwl.configure-resources-arm-templates
 - learn.automate-azure-tasks-with-powershell
-- learn.intro-to-azure-ad
-- learn.intro-to-docker-containers
-- learn.choose-storage-approach-in-azure
+- learn.control-azure-services-with-cli
+- learn.azure.create-resource-manager-template-vs-code
 trophy:
   uid: learn.az-104-admin-prerequisites.trophy
