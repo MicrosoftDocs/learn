@@ -1,8 +1,12 @@
-Your team is happy with the code you write so far for the card game. They wish you to develop it further and start implementing game rule-specific logic like calculate the value of a hand. For this exercise, you will use some of the functions in the list module.
+Your team is happy with the code you've written so far for the card game. The team wants you to develop it further and start implementing game rule-specific logic, such as calculating the value of a hand. 
+
+For this exercise, you'll use some of the functions in the list module.
 
 ## Calculate a hand for the game 31
 
-As part of calculating a card hand, you have the cards, represented as a number between 0 and 51. You need to translate those numbers to something that makes sense within the domain of cards, like for example "Ace of Hearts", rather than a 0. Luckily, a colleague of yours already wrote that code:
+In an earlier unit, you created a deck of cards, each represented as a number from 0 to 51. To begin calculating a hand, you need to translate those numbers into something that makes sense within the domain of cards. For example, you would replace the number "0" with the name "Ace of Hearts." 
+
+Fortunately, one of your colleagues has already written that code:
 
 ```fsharp
 // 0 = 11, 11, 12, 13 = 10, else the actual number
@@ -13,6 +17,8 @@ let cardValue card =
     else value
 ```
 
+Copy the code to use in step 2 of the following instructions.
+
 Your task is to take a card hand and calculate its value by using the `sumBy()` function.
 
 1. Create a new project by calling `dotnet new` in an empty directory:
@@ -22,21 +28,22 @@ Your task is to take a card hand and calculate its value by using the `sumBy()` 
    cd CardGame
    ```
 
-1. Add the code from your colleague above the main method.
+1. Above the main method, add your colleague's code, which you copied a moment ago.
+
 1. To create your card hand, add the following code:
 
    ```fsharp
    let hand = [0; 25; 31]
    ```
 
-1. You have a card hand, let's add the `sumBy()` function:
+1. Now that you've created the hand, add the `sumBy()` function:
 
    ```fsharp
    let sum = List.sumBy(fun card -> cardValue card) hand
    printfn "%i" sum
    ```
 
-1. Now, run the code by calling `dotnet run`:
+1. Run the code by calling `dotnet run`:
 
    ```bash
    dotnet run
@@ -48,4 +55,4 @@ Your task is to take a card hand and calculate its value by using the `sumBy()` 
    26 
    ```
 
-Congratulations! You've managed to evaluate a card game for the game 31, it became 26, not quite 31, but it's pretty good sum.
+Congratulations! You've managed to evaluate a card game for the game 31. It became 26, which is not quite 31, but it's pretty good sum.

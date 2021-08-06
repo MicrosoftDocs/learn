@@ -55,7 +55,7 @@ The ability to draw cards from the deck is a great start, but card games ordinar
    let hand = []
    ```
 
-1. Next, modify the `drawCard()` method to accept a tuple, that consists of two lists, representing the deck and representing the hand:
+1. Next, modify the `drawCard()` method to accept a tuple that consists of two lists, one representing the deck and the other representing the hand:
 
    ```fsharp
    let drawCard (tuple: int list * int list) = 
@@ -71,7 +71,7 @@ The ability to draw cards from the deck is a great start, but card games ordinar
        (deck.Tail, hand)
    ```
 
-   The `fst()` function is used to access the first property in the tuple, that is your deck. `snd` is used to access the hand. You also modified the return type, so it returns a tuple, consisting of the deck and your hand `(deck.Tail, hand)`, but with the added card `firstCard`.
+   The `fst()` function is used to access the first property in the tuple (that is, your deck). The `snd` function is used to access the hand. You also modified the return type so that it returns a tuple that consists of the deck and your hand `(deck.Tail, hand)`, but with the added card `firstCard`.
 
 1. Modify the code in the main method to draw cards to the hand:
 
@@ -81,13 +81,13 @@ The ability to draw cards from the deck is a great start, but card games ordinar
    printfn "Deck: %A Hand: %A" d h // Deck: [2; 3; 4; 5] Hand: [0; 1]
    ```
 
-1. Run the project calling `dotnet run`:
+1. Run the project by calling `dotnet run`:
 
    ```bash
    dotnet run
    ```
 
-   You should see the following printed in the console:
+   You should see the following output printed in the console:
 
    ```output
    Deck: [2; 3; 4; 5] Hand: [0; 1]
