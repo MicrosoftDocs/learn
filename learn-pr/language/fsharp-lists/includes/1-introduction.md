@@ -1,12 +1,16 @@
-Your program usually consists of many different types of data. The idea is to represent data as different types, such as strings or numbers. But there's also another important type, collections. A collection is more than one piece of data that can be accessed via a named reference. The reason for grouping data in a collection can simply be that, that's how the data looks, like a list of order items or maybe contacts in an address book. 
+Programs consist of many different types of data. The idea is to represent data as different types, such as strings or numbers. Another important type of data is collections. A collection is more than a single piece of data that can be accessed via a named reference. You group data in a collection, such as a list of items in a sales order or contacts in an address book. 
 
-In F#, there are three different data structures you could use to represent collections, each with its own pros and cons and accompanied by its own methods. The methods that come with these data structures does everything from adding, removing, ordering to perform mathematical operations. You might even find that using a collections method could in some instances replace the need to, for example, use a loop or event conditional structures, such as `if...else`. Ultimately, it's up to you what you use, but collections are powerful.
+In F#, there are three different data structures you can use to represent collections, each with its own pros and cons, purpose, and methods. The methods that come with these data structures do everything from adding, removing, and ordering items in a list to performing mathematical operations on the list. 
 
-In this module, you'll learn about these collection data structures and be introduced to their APIs and some scenarios in which you might them.
+You might even find that using a collections method replaces the need to, for example, use a loop or event conditional structures, such as `if...else` statements. 
+
+Collections can be powerful and, ultimately, it's up to you what you use and how you use them.
+
+In this module, you'll learn about collection data structures, their APIs, and scenarios in which you might apply them.
 
 ## Learning objectives
 
 In this module, you will:
 - Explore collection data structures.
-- Learn about basic properties on a list structure.
+- Learn about basic properties in a list structure.
 - Use the list module to carry out some more advanced operations.
