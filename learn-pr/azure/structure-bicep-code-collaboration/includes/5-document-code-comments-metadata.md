@@ -1,4 +1,4 @@
-Good Bicep code is _self-documenting_. This means that it uses clear naming and a good structure, so that when a colleague reads your code they can quickly understand what's happening - and if they need to make a change, they can be confident they are modifying the right places. However, there are some situations where you need to add extra documentation to your Bicep files. Also, once your template is deployed and resources have been created in Azure, it's important that anyone who looks at your Azure environment understands what each resource is and what it's for.
+Good Bicep code is _self-documenting_. This means that it uses clear naming and a good structure, so that when a colleague reads your code they can quickly understand what's happening - and if they need to make a change, they can be confident they're modifying the right places. However, there are some situations where you need to add extra documentation to your Bicep files. Also, once your template is deployed and resources have been created in Azure, it's important that anyone who looks at your Azure environment understands what each resource is and what it's for.
 
 In this unit, you'll learn how to add comments to your Bicep files, and how to use resource tags to add metadata to your Azure resources. These features provide insights into what your code does, the logic that was used to write the code, and the purpose of your Azure resources.
 
@@ -16,7 +16,7 @@ Bicep supports two types of comments:
 > [!TIP]
 > Avoid using comments for obvious and clear parts of your code. Having too many comments actually reduces your code's readability. Also, it's easy to forget to update comments when your code changes in the future. Focus on documenting unique logic and complex expressions.
 
-You can also use Bicep comments to add a structured multi-line block at the beginning of each file. Think of it as a _manifest_. Your team might decide that each template and module should have a manifest, and what it contain, such as in this example:
+You can also use Bicep comments to add a structured multi-line block at the beginning of each file. Think of it as a _manifest_. Your team might decide that each template and module should have a manifest that describes the purpose of the template and what it contains, such as in this example:
 
 ```bicep
 /*
@@ -42,7 +42,7 @@ For example, your website's Bicep template might include a parameter for the URL
 
 ## Add descriptions to resources
 
-Some resources support adding descriptions or other human-readable information into the resource itself. For example, many Azure Policy resources as well as Azure RBAC role assignments include a `description` property, like this:
+Some resources support adding descriptions or other human-readable information into the resource itself. For example, many Azure Policy resources and Azure RBAC role assignments include a `description` property, like this:
 
 ::: code language="bicep" source="code/5-role-assignment-description.bicep" highlight="8" :::
 
@@ -50,7 +50,7 @@ It's a good idea to use this property to explain the reason why you create each 
 
 ## Apply resource tags
 
-Comments in your Bicep file don't appear anywhere in your deployed resources - they are just there to help you document your Bicep files. However, there are many situations where you need to track information about your deployed Azure resources, including:
+Comments in your Bicep file don't appear anywhere in your deployed resources - they're just there to help you document your Bicep files. However, there are many situations where you need to track information about your deployed Azure resources, including:
 
 - Allocating your Azure costs to specific cost centers.
 - Understanding how the data contained in databases and storage accounts should be classified and protected.

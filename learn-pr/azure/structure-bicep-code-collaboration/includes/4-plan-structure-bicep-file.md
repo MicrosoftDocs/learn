@@ -36,7 +36,7 @@ You also need to consider how to handle parameters and variables that are common
 
 ## How do you add meaningful whitespace?
 
-Blank lines, or _whitespace_, can help you to structure your template. By using whitespace thoughtfully, you can clarify the relationships between resources, and you logically group the sections of your Bicep code together. Consider adding a blank line between the sections of your template, regardless of which grouping style you prefer.
+Blank lines, or _whitespace_, can help you to structure your template. By using whitespace thoughtfully, you can clarify the relationships between resources, and you logically group the sections of your Bicep code together. Consider adding a blank line between the sections of your template, regardless of the grouping style you prefer.
 
 ## How do you define several similar resources?
 
@@ -76,4 +76,4 @@ Version control systems like Git can help a lot when you're refactoring code.
 
 Because version control systems are designed to keep track of the changes to your files, you can use them to easily return to an older version of your code if you make a mistake. It's a good idea to commit your work often so that you can go back to the exact point in time that you need.
 
-Version control also helps you to avoid keeping old code in your Bicep files. Imagine that your Bicep code includes a resource definition that you don't need anymore. You might feel like there's a chance you could need the resource definition again in the future. It's tempting to comment out the resource definition so you keep it in the file. But really, this just clutters up your Bicep file and makes it hard for anyone else to understand what's going on and why the commented-out resources are still there. It's also easy for someone to accidentally uncomment the definition in future, leading to unpredictable results. Instead, when you use a version control system, you can simply remove the old resource definition. If you need to see it again in the future, you can always go back to the history of the file.
+Version control also helps you to avoid keeping old code in your Bicep files. Imagine your Bicep code includes a resource definition that you don't need anymore. You might feel like there's a chance you could need the resource definition again in the future. It's tempting to comment out the resource definition so you keep it in the file. But really, this just clutters up your Bicep file and makes it hard for anyone else to understand what's going on and why the commented-out resources are still there. It's also easy for someone to accidentally uncomment the definition in future, leading to unpredictable results. Instead, when you use a version control system, you can simply remove the old resource definition. If you need to see it again in the future, you can always go back to the history of the file.

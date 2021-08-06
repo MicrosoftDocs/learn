@@ -8,7 +8,7 @@ For example, suppose you need to deploy a storage account by using a Bicep file.
 
 Default values are an important way to make your template usable by others. It's important to use default values where they make sense. They help your template's users in two ways:
 
-- They simplify the process of deploying your template. If your parameter have a good default value that works for most of your template's users, they can omit the parameter value instead of specifying it on every deployment.
+- They simplify the process of deploying your template. If your parameters have good default values that works for most of your template's users, they can omit the parameter values instead of specifying them every time they deploy the template.
 - They provide an example of how you expect the parameter value to look. If the template user needs to choose a different value, the default value can provide useful hints about what their value should look like.
 
 Bicep can also help to validate the input that the user provides through _parameter decorators_. These decorators can be used to provide a parameter description, or state what kinds of values are permitted. Bicep provides several types of parameter decorators:
@@ -17,7 +17,7 @@ Bicep can also help to validate the input that the user provides through _parame
 - **Value constraints** enforce limits on what the user can enter for the parameter's value. You can specify a list of specific values that are permitted by using the `@allowed()` decorator. You can use the `@minValue()` and `@maxValue()` decorators to enforce the minimum and maximum values for numeric parameters. And you can use the `@minLength()` and `@maxLength()` decorators to enforce the length of string and array parameters.
   > [!TIP]
   > Be careful when you use the `@allowed()` parameter decorator to specify SKUs. Azure services often add new SKUs, and you don't want your template to unnecessarily prohibit their use. Consider using Azure Policy to enforce the use of specific SKUs, and use the `@allowed()` decorator with SKUs only when there are functional reasons why your template's users shouldn't select a specific SKU, like if the features your template needs aren't available in that SKU. Explain this using a `@description()` decorator or comment, to make the reasons clear to anyone in future.
-- **Metadata** can be used to provide additional custom metadata about the parameter, although this is not commonly used.
+- **Metadata** can be used to provide extra custom metadata about the parameter, although this is not commonly used.
 
 ## How flexible should a Bicep file be?
 
@@ -85,11 +85,11 @@ In Bicep, it's important that you give your resources meaningful names. Resource
 
 ### Symbolic names
 
-It's important to think about the symbolic names you apply to your resources. Imagine that a colleague will need to modify the template - will they understand what each resource is for?
+It's important to think about the symbolic names you apply to your resources. Imagine a colleague needs to modify the template - will they understand what each resource is for?
 
 For example, suppose you define a storage account that will contain product manuals for users to download from your website. You could name give the resource a symbolic name of  `storageAccount`, but if it's in a Bicep file that contains lots of other resources - and maybe even other storage accounts - then that name isn't very descriptive. So you could instead give it a symbolic name that includes some information about its purpose, like `productManualStorageAccount`.
 
-In Bicep, you typically use _camel case_ for the names of parameters, variables, and resource symbolic names. This means that you use a lowercase first letter for the first word, and then capitalize the first letter of subsequent words - like in `productManualStorageAccount`. You're not required to use camel case. If you choose to use a different style, it's important to agree on one standard within your team and use it consistently.
+In Bicep, you typically use _camel case_ for the names of parameters, variables, and resource symbolic names. This means that you use a lowercase first letter for the first word, and then capitalize the first letter of the other words - like in `productManualStorageAccount`. You're not required to use camel case. If you choose to use a different style, it's important to agree on one standard within your team and use it consistently.
 
 ### Resource names
 
