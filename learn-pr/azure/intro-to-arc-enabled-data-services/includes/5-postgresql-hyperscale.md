@@ -29,7 +29,7 @@ In general, you can use graphical tools for discovery and exploration, and comma
 - The PostgreSQL *pgcli* utility
 - The PostgreSQL *psql* utility
 - The PostgreSQL *pgAdmin* tool
-- The Microsoft Azure Portal interface
+- The Azure Portal interface
 - Azure Data Studio
 - The Microsoft Azure *az* command utility
 - Kubernetes native tools
@@ -38,3 +38,4 @@ In general, you can use graphical tools for discovery and exploration, and comma
 
 ### Deployment Model
 Your deployment for your Azure Arc-enabled PostgreSQL environment is based on the management you need. You can use your own infrastructure for more control over security, hardware, and backups. Using an Azure infrastructure gives you more automated patching, higher availability and disaster recover, and a complete Service Level Agreement. 
+
