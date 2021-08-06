@@ -14,14 +14,15 @@ In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view
 > Compute instances and clusters are based on standard Azure virtual machine images. For this module, the *Standard_DS11_v2* image is recommended to achieve the optimal balance of cost and performance. If your subscription has a quota that does not include this image, choose an alternative image; but bear in mind that a larger image may incur higher cost and a smaller image may not be sufficient to complete the tasks. Alternatively, ask your Azure administrator to extend your quota.
 
 1. On the **Compute Instances** tab, add a new compute instance with the following settings. You'll use this as a workstation from which to test your model:
+    - **Compute name**: *enter a unique name*
     - **Virtual Machine type**: CPU
     - **Virtual Machine size**: 
         - Choose **Select from all options** 
-        - Search for and select **Standard_DS11_v2**
-    - **Compute name**: *enter a unique name*
-    - **Enable SSH access**: Unselected
+        - Search for and select **Standard_DS11_v2**  
+
 
 2. While the compute instance is being created, switch to the **Compute Clusters** tab, and add a new compute cluster with the following settings. You'll use this to train a machine learning model:
+    - **Location**: *Select the same as your workspace. If that location is not listed, choose the one closest to you* 
     - **Virtual Machine priority**: Dedicated
     - **Virtual Machine type**: CPU
     - **Virtual Machine size**: 
