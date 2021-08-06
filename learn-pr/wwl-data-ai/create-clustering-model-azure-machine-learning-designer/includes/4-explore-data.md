@@ -36,10 +36,10 @@ Network](https://lternet.edu/).
 To get started with Azure machine Learning designer, first you must create a pipeline and add the dataset you want to work with.
 
 1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true) for your workspace, view the **Designer** page and create a new pipeline.
-2. In the **Settings** pane, change the default pipeline name (**Pipeline-Created-on-*date***) to **Train Penguin Clustering** (if the **Settings** pane is not visible, click the **&#9881;** icon next to the pipeline name at the top).
-3. Note that you need to specify a compute target on which to run the pipeline. In the **Settings** pane, click **Select compute target** and select the compute cluster you created previously.
-4. In the pane on the left side of the designer, expand the **Datasets** section, and drag the **penguin-data** dataset you created in the previous exercise onto the canvas.
-5. Right-click (Ctrl+click on a Mac) the **penguin-data** dataset on the canvas, and on the **Visualize** menu, select **Dataset output**.
+2. At the top left-hand side of the screen, click on the  default pipeline name (**Pipeline-Created-on-*date***) to **Train Penguin Clustering**. 
+3. You need to specify a compute target on which to run the pipeline. In the **Settings** pane, click on **Select compute target** to select the compute cluster you created previously (if the **Settings** pane is not visible, select the **&#9881;** icon next to the pipeline name at the top).
+4. Next to the pipeline name on the left, select the button **>>** to expand the panel. Drag the **penguin-data** dataset you created in the previous exercise onto the canvas.
+5. Right-click (Ctrl+click on a Mac) the **penguin-data** dataset on the canvas, and on the **Outputs** menu, select **Dataset output** by clicking on the *Preview data* graph icon.
 6. Review the schema of the data, noting that you can see the distributions of the various columns as histograms. Then select the **CulmenLength** column. The dataset should look similar to this:
 
 > [!div class="centered"]
