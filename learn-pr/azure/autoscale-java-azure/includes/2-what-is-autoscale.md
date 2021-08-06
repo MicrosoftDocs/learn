@@ -10,8 +10,8 @@ Autoscale allows you to have the right amount of resources running to handle the
 
 Autoscale only scales horizontally, which is an increase ("out") or decrease ("in") in the number of VM instances. Horizontal is more flexible in a cloud situation as it allows you to run potentially thousands of VMs to handle load.
 
-In contrast, vertical scaling is different. It keeps the same number of VMs, but makes the VMs more ("up") or less ("down") powerful. Power is measured in memory, CPU speed, disk space, etc.  Vertical scaling has more limitations. It's dependent on the availability of larger hardware, which quickly hits an upper limit and can vary by region. Vertical scaling also usually requires a VM to stop and restart.
-When rule conditions are met, one or more autoscale actions are triggered. You can add and remove VMs, or perform other actions. The following conceptual diagram shows this process.
+In contrast, vertical scaling is different. It keeps the same number of VMs, but makes the VMs more ("up") or less ("down") powerful. Power is measured in memory, CPU speed, disk space, and so on.  Vertical scaling has more limitations. It's dependent on the availability of larger hardware, which quickly hits an upper limit and can vary by region. Vertical scaling also usually requires a VM to stop and restart.
+When rule conditions are met, one or more autoscale actions are triggered. You can add and remove VMs, or do other actions. The following conceptual diagram shows this process.
 
 # How does Autoscale work?
 
@@ -24,7 +24,7 @@ Virtual machine scale sets use telemetry data from Azure diagnostics agents wher
 
 ## Custom Metrics
 
-You can also leverage your own custom metrics that your application(s) may be emitting. If you have configured your application(s) to send metrics to Application Insights you can leverage those metrics to make decisions on whether to scale or not.
+You can also apply your own custom metrics that your application(s) may be emitting. If you have configured your application(s) to send metrics to Application Insights, you can apply those metrics to make decisions on whether to scale or not.
 
 ## Rules
 
@@ -40,7 +40,7 @@ Metric-based rules measure application load and add or remove VMs based on that 
 Rules can trigger one or more types of actions.
 
 * **Scale** - Scale VMs in or out
-* **Email** - Send email to subscription admins, co-admins, and/or additional email address you specify
+* **Email** - Send email to subscription admins, co-admins, and/or other email address you specify
 * **Automate via webhooks** - Call webhooks, which can trigger multiple complex actions inside or outside Azure. Inside Azure, you can start an Azure Automation runbook, Azure Function, or Azure Logic App.
 
 ## Autoscale Settings
@@ -66,9 +66,9 @@ Autoscale use the following terminology and structure.
 
 Autoscale has the following benefits:
 
-* **Simple:** Autoscale removes the complexity of managing VM's with custom scripting or manually scaling capacity.
+* **Simple:** Autoscale removes the complexity of managing VMs with custom scripting or manually scaling capacity.
 
-* **Scalable:** VM's automatically scale the provisioned throughput as needed. There is no disruption to client connections, applications, or impact to Azure SLAs.
+* **Scalable:** VMs automatically scale the provisioned throughput as needed. There's no disruption to client connections, applications, or impact to Azure SLAs.
 
 * **Cost-effective:** Autoscale helps optimize your VM usage and cost usage by scaling down when not in use.
 
@@ -76,11 +76,11 @@ Autoscale has the following benefits:
 
 The use cases of autoscale include:
 
-* **Variable or unpredictable workloads:** When your workloads have variable or unpredictable spikes in usage, autoscale helps by automatically scaling up and down based on usage. Examples include retail websites that have different traffic patterns depending on seasonality; IOT workloads that have spikes at various times during the day; line of business applications that see peak usage a few times a month or year, and more. With autoscale, you no longer need to manually provision for peak or average capacity.
+* **Variable or unpredictable workloads:** When your workloads have variable or unpredictable spikes in usage, autoscale helps by automatically scaling up and down based on usage. Examples include retail websites that have different traffic patterns depending on seasonality; IOT workloads that have spikes at various times during the day; line-of-business applications that see peak usage a few times a month or year, and more. With autoscale, you no longer need to manually provision for peak or average capacity.
 
 * **New applications:** If you're developing a new application and not sure about the load you need, autoscale makes it easy to get started.
 
-* **Infrequently used applications:** If you have an application that's only used for a few hours several times a day, week, or month — such as a low-volume application/web/blog site — autoscale adjusts the capacity to handle peak usage and scales down when it's over.
+* **Infrequently used applications:** If you have an application that's only used for a few hours several times a day, week, or month, such as a low-volume application/web/blog site—autoscale adjusts the capacity to handle peak usage and scales down when it's over.
 
 * **Development and test workloads:** If you or your team use Azure resources during work hours, but don't need them on nights or weekends, autoscale helps save cost by scaling down to a minimum when not in use.
 
