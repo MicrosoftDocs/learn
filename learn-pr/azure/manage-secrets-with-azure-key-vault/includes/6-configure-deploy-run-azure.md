@@ -6,7 +6,7 @@ Creating an App Service app is a two-step process: First create the *plan*, then
 
 The *plan* name only needs to be unique within your subscription, so you can use the same name you've used: **keyvault-exercise-plan**. The app name needs to be globally unique, though, so you'll need to pick your own.
 
-In the Azure Cloud Shell, to create an App Service plan, run the following command.
+In Azure Cloud Shell, to create an App Service plan, run the following command.
 
 ```azurecli
 az appservice plan create \
