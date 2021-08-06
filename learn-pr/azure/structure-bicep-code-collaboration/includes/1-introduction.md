@@ -14,7 +14,7 @@ In this module, you'll learn how to improve and refactor Bicep files to make you
 
 ## What is the main goal?
 
-By the end of this module, you'll be able to author Bicep templates that are modular, reusable, and well-documented.
+By the end of this module, you'll be able to author Bicep templates that are clear, reusable, and well-documented.
 
 ## Prerequisites
 

@@ -2,7 +2,7 @@ You sit down with your colleague in the quality control team, and open up your t
 
 As you work through the template together, your colleague begins asking a series of questions about the structure and components of the file. They seem to be confused. Maybe your template could benefit from some improvements to make it more readable and easier to understand?
 
-Take a look at the template below. You're seeing the template for the first time. How many issues can you find? Do you understand what everything in the template is doing? What could you do to improve the template?
+Take a look at the template below. You're seeing the template for the first time. Do you understand what everything in the template is doing? How many issues can you find? What could you do to improve the template?
 
 ::: code language="bicep" source="code/2-template.bicep" :::
 

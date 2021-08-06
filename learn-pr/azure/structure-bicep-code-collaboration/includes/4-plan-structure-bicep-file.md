@@ -8,7 +8,7 @@ There are two main approaches to ordering. You and your team should agree on one
 
 ### Group elements together by element type
 
-You can group all elements of the same type together. So, all of your parameters would go in one place, usually at the top of the file, followed by variables, and then resources and modules, with outputs at the bottom.
+You can group all elements of the same type together. So, all of your parameters would go in one place, usually at the top of the file, followed by variables, and then resources and modules, with outputs at the bottom, like this:
 
 :::image type="content" source="../media/4-group-element-type.png" alt-text="Diagram showing elements grouped by element type. Parameters are grouped together, then variables, then resources, then outputs." border="false":::
 
