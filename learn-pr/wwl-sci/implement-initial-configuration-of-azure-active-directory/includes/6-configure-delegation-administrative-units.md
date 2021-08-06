@@ -67,7 +67,7 @@ By default, all users can create application registrations. To selectively grant
 
 To selectively grant the ability to consent to allow an application to access data:
 
-- Set **Users can consent to applications accessing company data on their behalf** To No in **User settings**
+- Set **Users can consent to applications accessing company data on their behalf** To No in **User settings** under Enterprise apps
 - Assign the user to the Application Developer role
 
 When an Application Developer creates a new application registration, they are automatically added as the first owner.
