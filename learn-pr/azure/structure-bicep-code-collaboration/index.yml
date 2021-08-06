@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 title: Structure your Bicep code for collaboration
 summary: |
-  Build Bicep files that support collaborative development. Plan your parameters to make your templates easy to deploy. Use a consistent style, clear structure, and comments to make your Bicep code easy to understand, use, and modify.
+  Build Bicep files that support collaborative development and follow best practices. Plan your parameters to make your templates easy to deploy. Use a consistent style, clear structure, and comments to make your Bicep code easy to understand, use, and modify.
 abstract: |
   After completing this module, you'll be able to:
     - Select the appropriate parameters for a Bicep file
