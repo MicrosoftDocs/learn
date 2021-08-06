@@ -1,3 +1,5 @@
+// We need to define a firewall rule to allow Azure services to access the database.
+
 resource firewallRule 'Microsoft.Sql/servers/firewallRules@2014-04-01' = {
   parent: sqlServer
   name: 'AllowAllAzureIPs'

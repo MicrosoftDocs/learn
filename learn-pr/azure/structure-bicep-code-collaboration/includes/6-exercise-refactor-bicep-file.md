@@ -46,7 +46,7 @@ In the sections below, there are some pointers to specific parts of the template
 
 ## Add a configuration set
 
-1. You speak to your colleagues and decide to use different SKUs for each resource depending on the environment being deployed. You decide on these SKUs for each of your resources:
+1. You speak to your colleagues and decide to use specific SKUs for each resource depending on the environment being deployed. You decide on these SKUs for each of your resources:
 
    | Resource | SKU for production | SKU for non-production |
    |-|-|-|
@@ -54,7 +54,7 @@ In the sections below, there are some pointers to specific parts of the template
    | Storage account | GRS | LRS |
    | SQL database | S1 | Basic |
 
-1. Can you provide a configuration set to simplify the parameters?
+1. Can you use a configuration set to simplify the parameter definitions?
 
 ## Update the symbolic names
 
@@ -79,7 +79,17 @@ Take a look at the symbolic names for the resources in the template. What could 
 
 1. There are a few resources with symbolic names that don't reflect the current names of Azure resources:
 
-   ::: code language="bicep" source="code/2-template.bicep" range="94,101, 103,127, 140,143" :::
+   ```bicep
+   resource hostingPlan 'Microsoft.Web/serverfarms@2020-06-01' = {
+     // ...
+   }
+   resource webSite 'Microsoft.Web/sites@2020-06-01' = {
+     // ...
+   }
+   resource msi 'Microsoft.ManagedIdentity/userAssignedIdentities@2018-11-30' = {
+     // ...
+   }
+   ```
 
    Managed identities used to be called _MSIs_, App Service plans used to be called _hosting plans_, and App Service apps used to be called _websites_.
 
