@@ -1,9 +1,18 @@
-In this exercise, you'll configure a sample Application to be ready for autoscaling. Later, you'll view the application autoscaling details and trigger it to scale.
+In this exercise, you'll configure a sample Microservice architecture to be ready for autoscaling. Later, you'll view the application autoscaling details and learn how to trigger it to scale.
 
 ## Introduction
 
-In this exercise, you'll clone a Git repository and run a script that sets-up an Azure Spring Cloud application and Azure Database for MySQL.
+In this exercise, you'll clone a Git repository and run a script that sets-up an Azure Spring Cloud microservice application and an Azure Database for MySQL.
 The script deploys a well-known PetClinic microservice application and is built around small independent services, communicating over HTTP via a REST API.
+
+## The sample microservice application
+
+The PetClinic application is decomposed into four core microservices. All of them are independently deployable applications organized by business domains.
+
+- Customers service: Contains general user input logic and validation including pets and owners information (Name, Address, City, Telephone).
+- Visits service: Stores and shows visits information for each pets' comments.
+- Vets service: Stores and shows Veterinarians' information, including names and specialties.
+- API Gateway: A single entry point into the system, used to handle requests and route them to an appropriate service, and aggregate the results.
 
 ## Set up the sample microservice application
 
@@ -41,7 +50,7 @@ When you run the above command, a window will pop up with the file `deployPetCli
 
 ## Run the setup script
 
-The script takes 30-45 minutes to run and includes the creation of an Azure spring Cloud and a MySQL instance. This sample script also populates sample data for the monitoring logs, traces, and metrics.
+The script takes 30-45 minutes to run and includes the creation of an Azure spring Cloud and a MySQL instance. This sample script also sets-up scale configuration for your microservices.
 
 In the already open Azure Cloud Shell, run the below shell script. Leave the browser window and Azure Cloud Shell open while running. Store the URL when the script completes:
 

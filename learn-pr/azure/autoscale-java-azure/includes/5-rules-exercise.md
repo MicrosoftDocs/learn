@@ -1,14 +1,5 @@
 In this exercise, we look at exercises for setting up and triggering autoscaling of your sample application.
 
-## The sample microservice application
-
-The PetClinic application is decomposed into four core microservices. All of them are independently deployable applications organized by business domains.
-
-- Customers service: Contains general user input logic and validation including pets and owners information (Name, Address, City, Telephone).
-- Visits service: Stores and shows visits information for each pets' comments.
-- Vets service: Stores and shows Veterinarians' information, including names and specialties.
-- API Gateway: A single entry point into the system, used to handle requests and route them to an appropriate service, and aggregate the results.
-
 To test the autoscale rules, we will generate some load on the instances. This simulated load causes the autoscale rules to scale out and increase the number of instances. As the simulated load is then decreased, the autoscale rules scale in and reduce the number of instances.
 
 In your sample application, we've already setup autoscale to trigger on the customer service microservice when the tomcat request count exceeds five sessions per minute on average.
@@ -41,9 +32,8 @@ sh loadTest.sh
 2. Go to the Azure Spring Cloud **Overview** page.
 3. Select the resource group that contains your service.
 4. Select the **Apps** tab under **Settings** in the menu on the left navigation pane.
-5. Select the application for which you want to set up Autoscale. In this example, select the application named **demo**. You should then see the application's **Overview** page.
+5. Select the customers-service application. You should then see the application's **Overview** page.
 6. Go to the **Scale out** tab under **Settings** in the menu on the left navigation pane.
-7. Select the deployment you want to set up Autoscale. You should see options for Autoscale shown in the following section.
 
 ![Autoscale menu](../media/autoscale-menu.png)
 
@@ -55,11 +45,15 @@ In the autoscale setting screen, go to the Run history tab to see the most recen
 
 To trigger the scale-out condition in the autoscale setting created, the Web App must have more than five requests in less than 1 minute.
 
-1. Open a browser window and navigate to the Web App created earlier in this tutorial. You can find the URL for your Web App in the Azure portal by navigating to your Web App resource and clicking on the Browse button in the 'Overview' tab.
+1. Open a new browser window and navigate to the customer-service:
+
+```bash
+https://<your-spring-cloud-service>-api-gateway.azuremicroservices.io/api/customer/owners
+```
 
 1. In quick succession, reload the page more than 10 times.
 
-1. From the left-hand navigation pane, select the Monitor option. Once the page loads select the Autoscale tab.
+1. Back in the original browser window, from the left-hand navigation pane, select the Monitor option. Once the page loads select the Autoscale tab.
 
 1. From the list, select the App Service Plan used throughout this tutorial.
 
@@ -75,7 +69,7 @@ To trigger the scale-out condition in the autoscale setting created, the Web App
 
 The scale-in condition in the autoscale setting triggers if there are fewer than five requests to the Web App over a period of 10 minutes.
 
-1. Ensure no requests are being sent to your Web App.
+1. Ensure no requests are being sent to your Web App and the browser window to your app/service is closed.
 
 1. Load the Azure portal.
 
@@ -87,7 +81,7 @@ The scale-in condition in the autoscale setting triggers if there are fewer than
 
 1. You see a chart reflecting the instance count of the App Service Plan over time.
 
-1. In a few minutes, the instance count should drop from 2, to 1. The process takes at least 100 minutes.
+1. In a few minutes, the instance count should drop from 2, to 1. The process takes at least 5 minutes.
 
 1. Under the chart, are the corresponding set of activity log entries for each scale action taken by this autoscale setting.
 

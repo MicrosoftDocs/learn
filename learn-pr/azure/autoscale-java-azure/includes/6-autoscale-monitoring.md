@@ -4,15 +4,15 @@ In this unit, we look at autoscaling monitoring.
 
 Same as any other Azure resource, the autoscale service provides resource logs. There are two categories of logs.
 
-Autoscale Evaluations - The autoscale engine records log entries for every single condition evaluation every time it does a check. The entry includes details on the observed values of the metrics, the rules evaluated, and if the evaluation resulted in a scale action or not.
+- Autoscale Evaluations - The autoscale engine records log entries for every single condition evaluation every time it does a check. The entry includes details on the observed values of the metrics, the rules evaluated, and if the evaluation resulted in a scale action or not.
 
-Autoscale Scale Actions - The engine records scale action events initiated by autoscale service and the results of those scales actions (success, failure, and how much scaling occurred as seen by the autoscale service).
+- Autoscale Scale Actions - The engine records scale action events initiated by autoscale service and the results of those scales actions (success, failure, and how much scaling occurred as seen by the autoscale service).
 
 As with any Azure Monitor supported service, you can use Diagnostic Settings to route these logs:
 
-to your Log Analytics workspace for detailed analytics
-to Event Hubs and then to non-Azure tools
-to your Azure storage account for archival
+- to your Log Analytics workspace for detailed analytics
+- to Event Hubs and then to non-Azure tools
+- to your Azure storage account for archival
 
 ## Monitor the Application's autoscale with Azure Monitor
 

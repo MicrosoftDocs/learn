@@ -67,15 +67,3 @@ A single autoscale condition can contain several autoscale rules (for example, a
 - If the CPU utilization drops below 50%, scale in by 1
 
 When determining whether to scale out, the autoscale action will be performed if any of the scale-out rules are met (HTTP queue length exceeds 10 or CPU utilization exceeds 70%). When scaling in, the autoscale action will run only if all of the scale-in rules are met (HTTP queue length drops to zero and CPU utilization falls below 50%). If you need to scale in if only one the scale-in rules are met, you must define the rules in separate autoscale conditions.
-
-## Set up Autoscale settings for your application in the Azure portal
-
-There are two options for Autoscale demand management:
-
-- Manual scale: Maintains a fixed instance count. In the Standard tier, you can scale out to a maximum of 500 instances. This value changes the number of separate running instances of the microservice application.
-
-- Custom autoscale: Scales on any schedule, based on any metrics.
-
-In the Azure portal, choose how you want to scale.  The following figure shows the **Custom autoscale** option and mode settings.
-
-![Custom autoscale](../media/custom-autoscale.png)
