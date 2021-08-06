@@ -9,8 +9,8 @@ Azure SQL Database Managed Instance provides a new solution that's a full PaaS b
 
 ## Learn more
 
-- [What is Azure SQL Database Managed Instance?](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance)
-- [SQL Server instance migration to Azure SQL Database Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-migrate)
-- [Tutorial: Migrate SQL Server to an Azure SQL Database Managed Instance offline using DMS](https://docs.microsoft.com/azure/dms/tutorial-sql-server-to-managed-instance?toc=/azure/sql-database/toc.json)
-- [Differences between Compatibility Level 140 and Level 150](https://docs.microsoft.com/sql/t-sql/statements/alter-database-transact-sql-compatibility-level?view=sql-server-2017#differences-between-compatibility-level-140-and-level-150)
-- [Pvk2Pfx](https://docs.microsoft.com/windows-hardware/drivers/devtest/pvk2pfx)
+- [What is Azure SQL Database Managed Instance?](/azure/sql-database/sql-database-managed-instance)
+- [SQL Server instance migration to Azure SQL Database Managed Instance](/azure/dms/tutorial-sql-server-managed-instance-online)
+- [Tutorial: Migrate SQL Server to an Azure SQL Database Managed Instance offline using DMS](/azure/dms/tutorial-sql-server-to-managed-instance?toc=/azure/sql-database/toc.json)
+- [Differences between Compatibility Level 140 and Level 150](/sql/t-sql/statements/alter-database-transact-sql-compatibility-level?view=sql-server-2017#differences-between-compatibility-level-140-and-level-150)
+- [Pvk2Pfx](/windows-hardware/drivers/devtest/pvk2pfx)

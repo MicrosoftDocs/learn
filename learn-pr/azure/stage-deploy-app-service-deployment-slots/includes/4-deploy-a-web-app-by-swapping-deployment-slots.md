@@ -20,9 +20,9 @@ To view and configure settings for the swap, go to the web app resource and foll
 
 1. On the **Application settings** tab, observe whether the settings you're interested in contain a checkmark in the **deployment slot setting** field. To set or unset a checkmark on a given setting, select the setting's pencil button to edit it, then toggle the **deployment slot setting** checkbox to the desired value, and select **OK**.
 
-    ![Configure slot settings.](../media/4-configure-slot-settings.png)
+    :::image type="content" source="../media/4-configure-slot-settings.png" alt-text="Configure slot settings." lightbox="../media/4-configure-slot-settings.png":::
 
-    ![Toggle deployment slot setting.](../media/4-deployment-slot-setting.png)
+    :::image type="content" source="../media/4-deployment-slot-setting.png" alt-text="Toggle deployment slot setting.":::
 
 1. Select **Save** on the Configuration page when you are finished to save your settings.
 
