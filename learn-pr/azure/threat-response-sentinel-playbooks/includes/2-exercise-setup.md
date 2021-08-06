@@ -12,6 +12,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     [![Deploy To Azure.](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2Fmslearn-security-ops-sentinel%2Fmain%2Fmslearn-threat-response-sentinel-playbooks%2Fsentinel-template.json?azure-portal=true)
 
     You're prompted to sign in to Azure.
+    
 1. On the **Custom deployment** page, provide the following information:
 
     |||
@@ -24,19 +25,24 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     | Simplevm Name | Accept the default value of simple-vm.|
     | Simplevm Windows OS Version | Accept the default value of 2016-Datacenter.|
 
-1. Select **Review + create**, and then select **Create**.
+1. Select **Review + create**, and then, when the data has been validated select **Create**.
+ 
+     > [!Note]
+     > Wait for the deployment to complete. The deployment should take less than five minutes.
 
-    :::image type="content" source="../media/02-custom-deployment.png" alt-text="Screenshot of the Custom Deployment page." border="true":::
-
-    > [!Note]
-    > Wait for the deployment to complete. The deployment should take less than five minutes.
+        :::image type="content" source="../media/02-custom-deployment.png" alt-text="Screenshot of the completed Deployment from a Microsoft template." border="true":::
 
 ## Task 2: Check the resources created
 
-1. In the Azure portal, search for **Resource groups**.
-2. Select **azure-sentinel-rg**.
-3. Sort the list of resources by **Type**.
-4. The resource group should contain the resources displayed in the following table.
+1. On the Deployment Overview page, select  **Go to resource group**. The resources for your custom deployment appear.
+
+1. Select **Home** and in **Azure services**, search for and select **Resource groups**.
+
+1. Select **azure-sentinel-rg**.
+
+1. Sort the list of resources by **Type**.
+ 
+1. The resource group should contain the resources displayed in the following table.
 
     |Name|Type|Description|
     |---|---|---|
