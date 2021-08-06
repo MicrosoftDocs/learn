@@ -15,6 +15,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     
 1. On the **Custom deployment** page, provide the following information:
 
+    | Label | Description |
     | --- | --- |
     | Subscription | Select your Azure subscription. |
     | Resource Group | Select Create new and provide a name for the resource group such as azure-sentinel-rg.|
@@ -86,8 +87,9 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 1. On the **General** page, provide the inputs in the following table, and then select  **Next: Set rule logic >**.
 
+    | Label | Description |
     | --- | --- |
-    | Name | Provide a descriptive name such as **Delete Virtual Machines** to explain what type of suspicious activity the alert detects. |
+    | Name | Provide a descriptive name, such as **Delete Virtual Machines**, to explain what type of suspicious activity the alert detects. |
     | Description | Enter a detailed description that will help other security analysts understand what the rule does. |
     | Tactics | From the **Tactics** drop-down menu, choose **Initial Access** category to classify the rule following the MITRE tactics. |
     | Severity | Select the **Severity** drop-down menu to categorize the level of importance of the alert as one of four options: High, Medium, Low, or Informational. |
