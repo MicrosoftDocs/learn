@@ -23,7 +23,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     | Location | Accept the default value of [resourceGroup().location]. |
     | Simplevm Name | Accept the default value of simple-vm.|
     | Simplevm Windows OS Version | Accept the default value of 2016-Datacenter.|
-    
+        
     :::image type="content" source="../media/02-custom-deployment.png" alt-text="Screenshot of the custom deployment inputs for a Microsoft template." border="true":::
 
 1. Select **Review + create**, and then, when the data has been validated select **Create**.
@@ -44,7 +44,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 1. Sort the list of resources by **Type**.
  
 1. The resource group should contain the resources displayed in the following table.
-   
+
     | Name|Type|Description |
     | --- | --- |
     | *yourname*-sentinel|Log Analytics workspace|Log Analytics workspace used by Azure Sentinel. |
