@@ -12,5 +12,5 @@ In this module, you'll learn about collection data structures, their APIs, and s
 
 In this module, you will:
 - Explore collection data structures.
-- Learn about basic properties in a list structure.
+- Learn about the basic properties in a list structure.
 - Use the list module to carry out some more advanced operations.
