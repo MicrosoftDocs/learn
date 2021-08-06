@@ -2,7 +2,7 @@ Let's say you're a developer at a casual games company. You've been asked to wri
 
 ## Create a deck of cards
 
-A card deck has 52 cards, of course, but to make it easier to read the console print, let's reduce the deck to five cards. You can create a series of numbers using `..`.
+A card deck has 52 cards, of course, but to make it easier to read the console print, let's reduce the deck to five cards. You can create a series of numbers using two dots (`..`) between the first and last numbers in the list.
 
 1. Create a new project by running `dotnet new`:
 
@@ -19,7 +19,7 @@ A card deck has 52 cards, of course, but to make it easier to read the console p
 
    This code creates a list of numbers from 0 to 5.
 
-## Draw cards
+## Draw cards from the deck
 
 Now that you've created your deck, you can construct a method for drawing cards from it. To do so, you can use the built-in properties `Head` and `Tail`.
 
@@ -43,13 +43,13 @@ Now that you've created your deck, you can construct a method for drawing cards 
 
    You should now see `0` and `1` being printed in the console.
 
-Congratulations! You've implemented a deck of cards that you can draw from.
+Congratulations! You've implemented a deck that you can draw cards from.
 
 ## Draw cards to a hand
 
 The ability to draw cards from the deck is a great start, but card games ordinarily need two or more players to pick up those cards. As you know, each player's collection of drawn cards is called a *hand*. Next, you'll implement code to have each drawn card added to a hand.
 
-1. Where you declared the `cards` list, add the following code:
+1. In the code where you declared the `cards` list, add the following code:
 
    ```fsharp
    let hand = []
