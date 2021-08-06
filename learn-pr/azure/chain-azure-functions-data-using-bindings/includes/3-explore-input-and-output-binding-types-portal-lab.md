@@ -103,7 +103,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
         The authorization level option determines what kind of key is used to securely access your function. Choosing *Function* requires callers of your function to provide a function-specific key with their requests.
 
-        [![Screenshot for the Add Function dialog box.](../media/3-add-function-small.png)](../media/3-add-function.png#lightbox)
+        [![Screenshot for the Create Function dialog box.](../media/3-add-function-small.png)](../media/3-add-function.png#lightbox)
 
 1. Select **Create**. Your new **Function** pane for *HttpTrigger1* appears.
 
