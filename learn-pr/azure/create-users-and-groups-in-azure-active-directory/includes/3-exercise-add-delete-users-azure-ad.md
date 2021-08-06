@@ -26,8 +26,8 @@ To hold all of the users you create in this exercise, create a new organization.
     | Setting | Value |
     |---|---|
     | **Directory details** |
-    | Organization name |From the dropdown list, select *Contoso Marketing Company* |
-    | Initial domain name| *contosomarketingXXXX* where you replace XXXX with numbers or letters to make your domain name unique
+    | Organization name | Enter *Contoso Marketing Company* |
+    | Initial domain name| Enter *contosomarketingXXXX* where you replace XXXX with numbers or letters to make your domain name unique
 
 1. Select **Next : Review + create**.
 
