@@ -52,7 +52,7 @@ To load the secret from our vault, you'll create a new ASP.NET Core web API, and
 
 ### Create the app
 
-In the Azure Cloud Shell, to create a new ASP.NET Core web API app and open it in the editor, run the following command.
+In Azure Cloud Shell, to create a new ASP.NET Core web API app and open it in the editor, run the following command.
 
 ```console
 dotnet new webapi -o KeyVaultDemoApp

@@ -1,4 +1,4 @@
-Azure Key Vault uses **Azure Active Directory** to authenticate users and apps that try to access a vault. To grant our web app access to the vault, we first need to register our app with Azure Active Directory. Registering creates an identity for the app. Once the app has an identity, we can assign vault permissions to it.
+Azure Key Vault uses **Azure Active Directory** to authenticate users and apps that try to access a vault. To grant our web app access to the vault, we first need to register our app with Azure Active Directory. Registering creates an identity for the app. After the app has an identity, we can assign vault permissions to it.
 
 Apps and users authenticate to Key Vault using an Azure Active Directory authentication token. Getting a token from Azure Active Directory requires a secret or certificate because anyone with a token could use the app identity to access all of the secrets in the vault.
 
