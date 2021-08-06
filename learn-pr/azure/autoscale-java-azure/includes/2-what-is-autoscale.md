@@ -8,12 +8,12 @@ Autoscale allows you to have the right amount of resources running to handle the
 
 ## Horizontal vs vertical scaling
 
-Autoscale only scales horizontally, which is an increase ("out") or decrease ("in") in the number of VM instances.  Horizontal is more flexible in a cloud situation as it allows you to run potentially thousands of VMs to handle load.
+Autoscale only scales horizontally, which is an increase ("out") or decrease ("in") in the number of VM instances. Horizontal is more flexible in a cloud situation as it allows you to run potentially thousands of VMs to handle load.
 
 In contrast, vertical scaling is different. It keeps the same number of VMs, but makes the VMs more ("up") or less ("down") powerful. Power is measured in memory, CPU speed, disk space, etc.  Vertical scaling has more limitations. It's dependent on the availability of larger hardware, which quickly hits an upper limit and can vary by region. Vertical scaling also usually requires a VM to stop and restart.
 When rule conditions are met, one or more autoscale actions are triggered. You can add and remove VMs, or perform other actions. The following conceptual diagram shows this process.
 
-## How does Autoscale work?
+# How does Autoscale work?
 
  ![Autoscale Flow Diagram](../media/Autoscale_Overview_v4.png)
 
@@ -25,10 +25,6 @@ Virtual machine scale sets use telemetry data from Azure diagnostics agents wher
 ## Custom Metrics
 
 You can also leverage your own custom metrics that your application(s) may be emitting. If you have configured your application(s) to send metrics to Application Insights you can leverage those metrics to make decisions on whether to scale or not.
-
-## Time
-
-Schedule-based rules are based on UTC. You must set your time zone properly when setting up your rules.  
 
 ## Rules
 
@@ -45,7 +41,7 @@ Rules can trigger one or more types of actions.
 
 * **Scale** - Scale VMs in or out
 * **Email** - Send email to subscription admins, co-admins, and/or additional email address you specify
-* **Automate via webhooks** - Call webhooks, which can trigger multiple complex actions inside or outside Azure. Inside Azure, you can start an Azure Automation runbook, Azure Function, or Azure Logic App. Example third-party URL outside Azure include services like Slack and Twilio.
+* **Automate via webhooks** - Call webhooks, which can trigger multiple complex actions inside or outside Azure. Inside Azure, you can start an Azure Automation runbook, Azure Function, or Azure Logic App.
 
 ## Autoscale Settings
 
@@ -68,15 +64,13 @@ Autoscale use the following terminology and structure.
 
 # Benefits of autoscale
 
-Azure Cosmos databases and containers that are configured with autoscale provisioned throughput have the following benefits:
+Autoscale has the following benefits:
 
-* **Simple:** Autoscale removes the complexity of managing RU/s with custom scripting or manually scaling capacity.
+* **Simple:** Autoscale removes the complexity of managing VM's with custom scripting or manually scaling capacity.
 
-* **Scalable:** Databases and containers automatically scale the provisioned throughput as needed. There is no disruption to client connections, applications, or impact to Azure Cosmos DB SLAs.
+* **Scalable:** VM's automatically scale the provisioned throughput as needed. There is no disruption to client connections, applications, or impact to Azure SLAs.
 
-* **Cost-effective:** Autoscale helps optimize your RU/s usage and cost usage by scaling down when not in use. You only pay for the resources that your workloads need on a per-hour basis. Of all hours in a month, if you set autoscale max RU/s(Tmax) and use the full amount Tmax for 66% of the hours or less, you'll save with autoscale.
-
-* **Highly available:** Databases and containers using autoscale use the same globally distributed, fault-tolerant, highly available Azure Cosmos DB backend to ensure data durability and high availability.
+* **Cost-effective:** Autoscale helps optimize your VM usage and cost usage by scaling down when not in use.
 
 ## Use cases of autoscale
 
@@ -84,10 +78,10 @@ The use cases of autoscale include:
 
 * **Variable or unpredictable workloads:** When your workloads have variable or unpredictable spikes in usage, autoscale helps by automatically scaling up and down based on usage. Examples include retail websites that have different traffic patterns depending on seasonality; IOT workloads that have spikes at various times during the day; line of business applications that see peak usage a few times a month or year, and more. With autoscale, you no longer need to manually provision for peak or average capacity.
 
-* **New applications:** If you're developing a new application and not sure about the throughput (RU/s) you need, autoscale makes it easy to get started. You can start with the autoscale entry point of 400 - 4000 RU/s, monitor your usage, and determine the right RU/s over time.
+* **New applications:** If you're developing a new application and not sure about the load you need, autoscale makes it easy to get started.
 
 * **Infrequently used applications:** If you have an application that's only used for a few hours several times a day, week, or month — such as a low-volume application/web/blog site — autoscale adjusts the capacity to handle peak usage and scales down when it's over.
 
-* **Development and test workloads:** If you or your team use Azure Cosmos databases and containers during work hours, but don't need them on nights or weekends, autoscale helps save cost by scaling down to a minimum when not in use.
+* **Development and test workloads:** If you or your team use Azure resources during work hours, but don't need them on nights or weekends, autoscale helps save cost by scaling down to a minimum when not in use.
 
 * **Scheduled production workloads/queries:** If you have a series of scheduled requests, operations, or queries that you want to run during idle periods, you can do that easily with autoscale. When you need to run the workload, the throughput will automatically scale to what's needed and scale down afterward.
