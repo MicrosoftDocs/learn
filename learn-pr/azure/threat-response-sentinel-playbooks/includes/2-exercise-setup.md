@@ -15,7 +15,6 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     
 1. On the **Custom deployment** page, provide the following information:
 
-    |||
     | --- | --- |
     | Subscription | Select your Azure subscription. |
     | Resource Group | Select Create new and provide a name for the resource group such as azure-sentinel-rg.|
@@ -24,13 +23,15 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     | Location | Accept the default value of [resourceGroup().location]. |
     | Simplevm Name | Accept the default value of simple-vm.|
     | Simplevm Windows OS Version | Accept the default value of 2016-Datacenter.|
+    
+    :::image type="content" source="../media/02-custom-deployment.png" alt-text="Screenshot of the custom deployment inputs for a Microsoft template." border="true":::
 
 1. Select **Review + create**, and then, when the data has been validated select **Create**.
  
      > [!Note]
      > Wait for the deployment to complete. The deployment should take less than five minutes.
 
-        :::image type="content" source="../media/02-custom-deployment.png" alt-text="Screenshot of the completed Deployment from a Microsoft template." border="true":::
+    :::image type="content" source="../media/02-custom-deployment-success.png" alt-text="Screenshot of the successful custom deployment." border="true":::
 
 ## Task 2: Check the resources created
 
@@ -44,8 +45,8 @@ To deploy the prerequisites for the exercise, perform the following tasks.
  
 1. The resource group should contain the resources displayed in the following table.
 
+    | --- | --- |
     |Name|Type|Description|
-    |---|---|---|
     |*yourname*-sentinel|Log Analytics workspace|Log Analytics workspace used by Azure Sentinel.|
     |simple-vmNetworkInterface|Network interface|Network interface for the VM.|
     |SecurityInsights(*yourname*-sentinel)|Solution|Security insights for Azure Sentinel.|
@@ -68,7 +69,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     :::image type="content" source="../media/02-azure-sentinel-connector.png" alt-text="Screenshot that displays the Azure Sentinel connector." border="true":::
 
     > [!Note]
-    > The connector for Azure Activity could take 15 minutes until Azure Sentinel displays a date. You can continue performing the rest of the steps and continue with the subsequent units in this module.
+    > The connector for Azure Activity could take 15 minutes until Azure Sentinel displays a date. You can continue performing the rest of the steps in this unit and subsequent units in this module.
 
 ## Task 4: Create an analytics rule
 
@@ -77,7 +78,6 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 3. On the **Azure Sentinel | Analytics** page, select **Create** and then select **Scheduled Query Rule**.
 4. On the **General** page, provide the inputs in the following table, and then select  **Next: Set rule logic >**.
 
-    |||
     | --- | --- |
     | Name | Provide a descriptive name such as **Delete Virtual Machines** to explain what type of suspicious activity the alert detects. |
     | Description | Enter a detailed description that will help other security analysts understand what the rule does. |
