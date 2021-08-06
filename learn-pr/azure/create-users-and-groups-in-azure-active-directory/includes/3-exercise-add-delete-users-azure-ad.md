@@ -14,7 +14,7 @@ To hold all of the users you create in this exercise, create a new organization.
 
 1. Select **Create**. The **Create a tenant** pane appears.
 
-1. On the **Basics** tab, enter the following values for each setting.
+1. On the **Basics** tab, enter the following value for the setting.
 
     | Setting | Value |
     |---|---|
@@ -31,11 +31,15 @@ To hold all of the users you create in this exercise, create a new organization.
 
 1. Select **Next : Review + create**.
 
-1. After validation passes, select **Create**. Wait for the creation of your tenant to be completed.
+1. After validation passes, select **Create**. The **Help us prove you're not a robot** pane appears.
 
-1. Go to the new tenant by selecting **Click here to manage your new tenant**. The **Overview** pane for *Contoso Marketing Company* appears.
+1. Enter the appropriate match to the request, and select **Submit**. Wait for the creation of your tenant to be completed.
+
+1. On the **Help us prove you're not a robot** pane, select the **Click here to navigate to your new tenant: Contoso Marketing Company**.
 
     :::image type="content" source="../media/3-switch-directory.png" alt-text="Screenshot that shows the link to manage your new organization.":::
+
+    The **Overview** pane for *Contoso Marketing Company* appears.
 
 ## Get a free trial for Azure AD Premium
 
