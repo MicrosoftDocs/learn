@@ -24,11 +24,11 @@ The membership type field can be one of three values:
 
 1. **Dynamic user**. You create rules based on characteristics to enable attribute-based dynamic memberships for groups. For example, if a user’s department is Sales, that user will be dynamically assigned to the Sales group.
 
-Security groups can be used for either devices or users, but Microsoft 365 Groups can be only used for user groups. If the user's department changes in the future, they are automatically removed from the group. This feature requires an Azure AD Premium P1 license.
+    Security groups can be used for either devices or users, but Microsoft 365 Groups can be only used for user groups. If the user's department changes in the future, they are automatically removed from the group. This feature requires an Azure AD Premium P1 license.
 
 1. **Dynamic device**. You create rules based on characteristics to enable attribute-based dynamic memberships for groups. For example, if a user’s device is associated with the Service department, that device will be dynamically assigned to the Service group.
 
-Security groups can be used for either devices or users, but Microsoft 365 Groups can be only used for user groups. If the device's association with a particular department changes in the future, it is automatically removed from the group. This feature requires an Azure AD Premium P1 license.
+    Security groups can be used for either devices or users, but Microsoft 365 Groups can be only used for user groups. If the device's association with a particular department changes in the future, it is automatically removed from the group. This feature requires an Azure AD Premium P1 license.
 
 Finally, you can select group owner(s) that can administer the group, and member(s) that will belong to the group. Both of these can contain other groups as well as individual users.
 
