@@ -2,7 +2,7 @@ You need to add member user accounts for the new developer team in your organiza
 
 In this exercise, you'll create a new Azure Active Directory (Azure AD) organization to hold all of your user accounts. You'll also create a user account, delete a user account, and learn how to recover a deleted user account.
 
-## Create an Azure AD organization
+## Create an Azure Active Directory organization
 
 To hold all of the users you create in this exercise, create a new organization.
 
