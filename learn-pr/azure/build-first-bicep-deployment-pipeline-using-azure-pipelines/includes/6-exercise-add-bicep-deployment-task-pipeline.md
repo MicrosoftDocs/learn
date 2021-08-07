@@ -13,11 +13,11 @@ You've already prepared your website's Bicep file, which can be used to deploy d
 
 1. Open the Visual Studio Code **Explorer**.
 
-1. In the _deploy_ folder, create a new file named _main.bicep_. Make sure you create the file inside the _deploy_ folder and not at the root of the repository:
+1. In the *deploy* folder, create a new file named *main.bicep*. Make sure you create the file inside the *deploy* folder and not at the root of the repository:
 
    :::image type="content" source="../media/6-visual-studio-code-main-bicep.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the main.bicep file highlighted and located in the deploy folder." border="true":::
 
-1. Copy the following into the _main.bicep_ file:
+1. Copy the following into the *main.bicep* file:
 
    :::code language="bicep" source="code/6-main.bicep" :::
 
@@ -35,7 +35,7 @@ You've already prepared your website's Bicep file, which can be used to deploy d
 
 Here, you update your pipeline definition to deploy your Bicep file to Azure by using the service connection.
 
-1. In Visual Studio Code, open the _deploy/azure-pipelines.yml_ file.
+1. In Visual Studio Code, open the *deploy/azure-pipelines.yml* file.
 
 1. Remove the `script` step from the pipeline definition by deleting the bottom two lines of the file.
 
@@ -91,7 +91,7 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 
    :::image type="content" source="../media/6-edit-pipeline-new-variable.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline variable editor, with the 'New variable' button highlighted." border="true":::
 
-1. In **Name**, enter _ServiceConnectionName_. In **Value**, enter _ToyWebsite_.
+1. In **Name**, enter *ServiceConnectionName*. In **Value**, enter *ToyWebsite*.
 
    Leave the checkboxes unchecked, and select **OK**.
 
@@ -105,10 +105,10 @@ Here, you update your pipeline definition to deploy your Bicep file to Azure by 
 
    | Variable name       | Value        |
    |---------------------|--------------|
-   | _ResourceGroupName_ | _ToyWebsite_ |
-   | _EnvironmentType_   | _nonprod_    |
+   | *ResourceGroupName* | *ToyWebsite* |
+   | *EnvironmentType*   | *nonprod*    |
 
-1. Follow the process one more time to create a variable named _DeployToyManualsStorageAccount_, with a value of _true_. For this variable, select **Let users override this value when running this pipeline**.
+1. Follow the process one more time to create a variable named *DeployToyManualsStorageAccount*, with a value of *true*. For this variable, select **Let users override this value when running this pipeline**.
 
    :::image type="content" source="../media/6-edit-pipeline-variable-deploytoymanualsstorageaccount.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline variable editor." border="true":::
 
@@ -130,7 +130,7 @@ Your template includes a storage account, which your website team uses to store 
 
    :::image type="content" source="../media/6-pipeline-run.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Run pipeline' page, with the Variables menu item highlighted." border="true":::
 
-1. Select the **DeployToyManualsStorageAccount** variable and change its value to _false_, then select **Update**.
+1. Select the **DeployToyManualsStorageAccount** variable and change its value to *false*, then select **Update**.
 
    :::image type="content" source="../media/6-pipeline-run-edit-variable.png" alt-text="Screenshot of the Azure DevOps interface showing the 'Run pipeline' variable editor, with the Update button highlighted." border="true":::
 
@@ -152,7 +152,7 @@ Your template includes a storage account, which your website team uses to store 
 
    :::image type="content" source="../media/6-log-variables.png" alt-text="Screenshot of the Azure DevOps interface showing the pipeline log, with the '1 queue time variable used' item highlighted." border="true":::
 
-   The value that you override for this pipeline's run is shown. Notice that the `DeployToyManualsStorageAccount` variable's value is _false_, since you overrode it.
+   The value that you override for this pipeline's run is shown. Notice that the `DeployToyManualsStorageAccount` variable's value is *false*, since you overrode it.
 
 1. Inspect the rest of your pipeline output.
 

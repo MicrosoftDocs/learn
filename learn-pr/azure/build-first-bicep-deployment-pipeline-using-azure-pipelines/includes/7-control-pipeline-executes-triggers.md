@@ -12,7 +12,7 @@ When you configure your pipeline to run every time you update your files, the mo
 
 ## Branch triggers
 
-A common trigger is a _branch trigger_, which sometimes called a _continuous integration trigger_ or _CI trigger_. When you use this trigger, every time you make a change to a specified branch, the pipeline is run. If you commit and push a change to a different branch, the pipeline ignores it. It's common to use this trigger against your **main**  branch, like this:
+A common trigger is a *branch trigger*, which sometimes called a *continuous integration trigger* or *CI trigger*. When you use this trigger, every time you make a change to a specified branch, the pipeline is run. If you commit and push a change to a different branch, the pipeline ignores it. It's common to use this trigger against your **main**  branch, like this:
 
 ```yaml
 trigger: 
@@ -21,11 +21,11 @@ trigger:
 
 ### Trigger when multiple branches change
 
-You can customize the branches that cause your pipeline to run. For example, suppose you create _release branches_ that contain the code you'll deploy for a specific release of your project. You use branch names like **release/v1**, **release/v2**, and so forth. You want to run your pipeline anytime your code changes on a branch that begins with the name **release/**. You can use the `include` property in conjunction with a `*` wildcard to express this:
+You can customize the branches that cause your pipeline to run. For example, suppose you create *release branches* that contain the code you'll deploy for a specific release of your project. You use branch names like **release/v1**, **release/v2**, and so forth. You want to run your pipeline anytime your code changes on a branch that begins with the name **release/**. You can use the `include` property in conjunction with a `*` wildcard to express this:
 
 :::code language="yaml" source="code/7-branch-filter-include.yml" highlight="3-5" :::
 
-You can also exclude specific branches, too. Suppose you're collaborating with team members on your project. Your colleagues create _feature branches_ to try out their ideas in Bicep files. All of these feature branches are given names like **feature/add-database**, **feature/improve-performance**, and so forth. You want to run your pipeline automatically on all branches, except for the feature branches that your colleagues create. By using the `exclude` property, you ensure the pipeline isn't automatically triggered for changes to feature branches:
+You can also exclude specific branches, too. Suppose you're collaborating with team members on your project. Your colleagues create *feature branches* to try out their ideas in Bicep files. All of these feature branches are given names like **feature/add-database**, **feature/improve-performance**, and so forth. You want to run your pipeline automatically on all branches, except for the feature branches that your colleagues create. By using the `exclude` property, you ensure the pipeline isn't automatically triggered for changes to feature branches:
 
 :::code language="yaml" source="code/7-branch-filter-exclude.yml" highlight="5-6" :::
 
@@ -34,7 +34,7 @@ You can also exclude specific branches, too. Suppose you're collaborating with t
 
 ### Path filters
 
-Sometimes, you have files in your repository that don't relate to your deployment. For example, in your repository you might have a _deploy_ folder that contains your Bicep code, and a separate _docs_ folder that contains your documentation files. You want to trigger your pipeline when anyone makes a change to any of the Bicep files in the _deploy_ folder, but you don't want to trigger the pipeline if someone only changes a documentation file. To configure this, you can use a _path filter_:
+Sometimes, you have files in your repository that don't relate to your deployment. For example, in your repository you might have a *deploy* folder that contains your Bicep code, and a separate *docs* folder that contains your documentation files. You want to trigger your pipeline when anyone makes a change to any of the Bicep files in the *deploy* folder, but you don't want to trigger the pipeline if someone only changes a documentation file. To configure this, you can use a *path filter*:
 
 :::code language="yaml" source="code/7-path-filter.yml" highlight="5-9" :::
 
@@ -47,7 +47,7 @@ You can also run your pipeline on a schedule. For example, you might run a night
 :::code language="yaml" source="code/7-schedule.yml" highlight="2" :::
 
 > [!NOTE]
-> A _cron expression_ is a specially formatted sequence of characters that specify how often something should happen. In this example, `0 0 * * *` means _run every day at midnight UTC_.
+> A *cron expression* is a specially formatted sequence of characters that specify how often something should happen. In this example, `0 0 * * *` means *run every day at midnight UTC*.
 
 You can also specify the branch of your repository that should be used when the schedule starts. When the pipeline begins, it will use the most recent version of the code from that branch.
 
@@ -67,7 +67,7 @@ schedules:
     - main
 ```
 
-When you specify a branch trigger and a scheduled trigger in the same pipeline, then the pipeline will run every time a file changes on the specified branch, _and_ on the schedule you specify. In this example, the pipeline runs every day at midnight UTC, and also whenever a change is pushed to the **main** branch.
+When you specify a branch trigger and a scheduled trigger in the same pipeline, then the pipeline will run every time a file changes on the specified branch, *and* on the schedule you specify. In this example, the pipeline runs every day at midnight UTC, and also whenever a change is pushed to the **main** branch.
 
 > [!TIP]
 > It's a good practice to specify the triggers for each pipeline. If you don't, then by default your pipeline will automatically run whenever any files change on any branch, which isn't often what you want.

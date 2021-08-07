@@ -1,4 +1,4 @@
-You want to start automating the deployment for your toy company's website. As a first step, you need to create a basic pipeline in Azure DevOps.
+You want to automate deployment for your toy company's website. As a first step, you need to create a basic pipeline in Azure DevOps.
 
 In this exercise, you'll:
 
@@ -11,7 +11,7 @@ In this exercise, you'll:
 
 1. In a browser, go to [dev.azure.com](https://dev.azure.com?azure-portal=true). Sign in or create a new account.
 
-1. If you're creating a new account, follow the prompts to create an Azure DevOps organization. Azure DevOps then asks you to create a new project. Continue to the next step to configure the project.
+1. If you're creating a new account, follow the prompts to create an Azure DevOps organization. Azure DevOps then prompts you to create a new project. Continue to the next step to configure the project.
 
    If you signed in to an existing Azure DevOps organization, select the **New project** button to create a new project.
 
@@ -19,41 +19,41 @@ In this exercise, you'll:
 
 1. Enter the details of your new project:
 
-   - **Project name**: Use a meaningful but short name. Here, you use `toy-website`.
-   - **Visibility**: You can use Azure DevOps to create public and private repositories. Create a private repository, since your toy website's files should only be accessed by people inside your organization. You can grant access to others later.
+   * **Project name**: Use a meaningful but short name. For this module, enter **toy-website**.
+   * **Visibility**: You can use Azure DevOps to create public and private repositories. You choose to create a private repository because your toy company website files should be accessed only by people inside your organization. You can grant access to others later.
 
-   After you're done, your project configuration should look like the following:
+   When you're finished, your project configuration should look like this example:
 
    :::image type="content" source="../../includes/media/azure-devops-new-project-details.png" alt-text="Screenshot of the Azure DevOps interface showing the configuration for the project to create." border="true":::
 
 1. Select **Create project**.
 
-1. On the project page that appears, select the **Repos** menu item.
+1. On the project page, in the menu, select **Repos**.
 
-   :::image type="content" source="../../includes/media/azure-devops-repos-menu.png" alt-text="Screenshot of the Azure DevOps interface showing the menu, with the Repos item highlighted." border="true":::
+   :::image type="content" source="../../includes/media/azure-devops-repos-menu.png" alt-text="Screenshot of the Azure DevOps interface that shows the menu, with the Repos item highlighted." border="true":::
 
 ## Generate a Git password
 
-When you work with Azure Repos from Visual Studio Code on macOS, you need to use a special password that's different from the password you use to sign in.
+When you work with Azure Repos in Visual Studio Code on macOS, you must use a special password that's different from the password you use to sign in.
 
 > [!NOTE]
-> If you're using Windows, skip to the next section, _Clone the repository_.
+> If you're using Windows, skip to the next section, *Clone the repository*.
 
 1. Select the **Generate Git credentials** button.
 
    Azure Repos creates a random password for you to use.
 
-1. Make a note of the **Password**. You'll use this shortly.
+1. Make a note of the **Password**. You'll use it in the next section.
 
 ## Clone the repository
 
 1. Select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
 
-   :::image type="content" source="../media/3-clone-visual-studio-code.png" alt-text="Screenshot of the Azure DevOps interface showing the repository settings, with the Clone in VS Code button highlighted." border="true":::
+   :::image type="content" source="../media/3-clone-visual-studio-code.png" alt-text="Screenshot of the Azure DevOps interface that shows the repository settings, with the Clone in VS Code button highlighted." border="true":::
 
-1. Create a folder to use for the repository and select **Select Repository Location**.
+1. Create a folder to use for the repository, and then select **Select Repository Location**.
 
-1. This is the first time you've used this repository, so you are prompted to sign in.
+1. This is the first time you've used this repository, so you're prompted to sign in.
 
    If you're using Windows, enter the same credentials you used to sign in to Azure DevOps earlier in this exercise.
 
@@ -65,11 +65,11 @@ When you work with Azure Repos from Visual Studio Code on macOS, you need to use
 
 ## Install the Azure Pipelines Visual Studio Code extension
 
-Microsoft publishes an Azure Pipelines extension for Visual Studio Code, which helps you to write the pipeline YAML files. It's a good idea to install this extension so that your YAML files are validated as you work.
+Microsoft publishes an Azure Pipelines extension for Visual Studio Code. The extension helps you write pipeline YAML files. It's a good idea to install this extension, so your YAML files are validated as you work.
 
-1. Open **Extensions** in Visual Studio Code by selecting **View** > **Extensions**.
+1. In Visual Studio Code, open **Extensions** by selecting **View** > **Extensions**.
 
-1. In the **Search** field, enter _Azure Pipelines_, and find the Azure Pipelines extension published by Microsoft. Select the **Install** button.
+1. In **Search**, enter **Azure Pipelines**, and then find the Azure Pipelines extension published by Microsoft. Select the **Install** button.
 
    :::image type="content" source="../media/3-visual-studio-code-extension.png" alt-text="Screenshot of the Visual Studio Code Extensions, with the search field displaying 'Azure Pipelines', and the Install button for the Microsoft Azure Pipelines extension highlighted." border="true":::
 
@@ -79,9 +79,9 @@ Now that you have your organization, project and repository created, you're read
 
 1. Open **Explorer** in Visual Studio Code.
 
-1. Add a new folder at the root of your current folder structure, and name it _deploy_.
+1. Add a new folder at the root of your current folder structure, and name it *deploy*.
 
-1. In the _deploy_ folder, create a new file named _azure-pipelines.yml_.
+1. In the *deploy* folder, create a new file named *azure-pipelines.yml*.
 
    :::image type="content" source="../media/3-visual-studio-code-pipeline-file.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the deploy folder and the azure-pipelines.yml file shown." border="true":::
 
@@ -119,7 +119,7 @@ You have created a pipeline definition. Here, you register the pipeline with Azu
 
    :::image type="content" source="../media/3-create-pipeline-configure.png" alt-text="Screenshot of the Azure DevOps interface showing the Create Pipeline flow's Configure step, with the Existing Azure Pipelines YAML File option selected." border="true":::
 
-1. In the **Path** field, select _/deploy/azure-pipelines.yml_. Then select **Continue**.
+1. In the **Path** field, select */deploy/azure-pipelines.yml*. Then select **Continue**.
 
    :::image type="content" source="../media/3-create-pipeline-yaml-file.png" alt-text="Screenshot of the Azure DevOps interface 'Select an existing YAML file' page, the Path set to the pipeline file and Continue button highlighted." border="true":::
 

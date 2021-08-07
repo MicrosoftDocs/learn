@@ -5,13 +5,13 @@ In this exercise, you'll update the pipeline you previously created to run autom
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Update your pipeline so that it triggers automatically whenever files change in the _deploy_ folder and on the **main** branch.
+> * Update your pipeline so that it triggers automatically whenever files change in the *deploy* folder and on the **main** branch.
 > * Make a change to your Bicep file.
 > * Verify that the pipeline runs automatically.
 
 ## Update the trigger to be branch-based
 
-1. In Visual Studio Code, open the _deploy/azure-pipelines.yml_ file.
+1. In Visual Studio Code, open the *deploy/azure-pipelines.yml* file.
 
 1. Remove the manual trigger on the first line.
 
@@ -30,7 +30,7 @@ During the process, you'll:
 
 ## Update your Bicep file
 
-1. In Visual Studio Code, open the _main.bicep_ file.
+1. In Visual Studio Code, open the *main.bicep* file.
 
 1. Within the `appServiceApp` resource definition's `siteConfig` property, add the `alwaysOn` property with a value of `true`:
 
@@ -60,7 +60,7 @@ During the process, you'll:
 
    > There was a conflict. AlwaysOn cannot be set for this site as the plan does not allow it. For more information on pricing and features, please see: https://aka.ms/appservicepricingdetails
 
-   This error message indicates that the deployment failed because the App Service app is deployed using the _F1_ free tier, which doesn't support the Always On feature.
+   This error message indicates that the deployment failed because the App Service app is deployed using the *F1* free tier, which doesn't support the Always On feature.
 
    > [!IMPORTANT]
    > This illustrates how it's important to test your Bicep files, including all of the parameter values you use. It's easy for subtle errors to creep into your resource configuration or other code. You  might not discover the issues until your pipeline deploys the code. In a future module, you'll learn some strategies to verify and test your Bicep code.

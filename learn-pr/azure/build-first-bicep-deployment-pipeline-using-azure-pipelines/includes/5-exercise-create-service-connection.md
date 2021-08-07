@@ -109,7 +109,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
    az ad sp create-for-rbac \
      --name ToyWebsitePipeline \
      --role Contributor \
-     --scopes RESOURCE_GROUP_ID
+     --scopes RESOURCE*GROUP*ID
    ```
 
 1. Look at the JSON output from the previous command. It includes the following properties:
@@ -143,7 +143,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
    $servicePrincipal = New-AzADServicePrincipal `
      -DisplayName ToyWebsitePipeline `
      -Role Contributor `
-     -Scope RESOURCE_GROUP_ID
+     -Scope RESOURCE*GROUP*ID
 
    $plaintextSecret = [System.Net.NetworkCredential]::new('', $servicePrincipal.Secret).Password
    ```
@@ -191,12 +191,12 @@ Now that you've created the resource group and service principal, you create a s
 
 1. Select the **Verify** button.
 
-   Azure Pipelines verifies it can access your Azure subscription, and displays _Verification succeeded_.
+   Azure Pipelines verifies it can access your Azure subscription, and displays *Verification succeeded*.
 
    > [!NOTE]
    > If the verification doesn't succeed, check that you copied the right details for the service principal, subscription, and tenant. Wait a few minutes to allow time for Azure's role assignments to replicate globally, and then try again.
 
-1. In **Service connection name**, enter _ToyWebsite_. Ensure **Grant access permission to all pipelines** is checked.
+1. In **Service connection name**, enter *ToyWebsite*. Ensure **Grant access permission to all pipelines** is checked.
 
    :::image type="content" source="../media/5-create-service-connection-principal-details-3.png" alt-text="Screenshot of the Azure DevOps interface 'Create service connection' page, with the 'Verify and save' button highlighted." border="true":::
 

@@ -6,11 +6,11 @@ Now that you've created a basic pipeline, you're ready to configure it to deploy
 
 When you deploy a Bicep file from your own computer, you use the Azure CLI or Azure PowerShell. Before you can deploy your code, you need to sign in to Azure. Usually the tools ask you to enter your email address and password in a browser. After verifying your credentials, the tools know who you are and can verify that you have permission to deploy your Bicep file.
 
-Because pipelines are run without any human present, they need to authenticate to Azure by using a service principal. A service principal's credentials consist of an _application ID_ and a secret, which is usually a key or a certificate. You use a _service connection_ in Azure Pipelines to securely store these credentials so that your pipeline can use them. A service connection also includes some other information to help your pipeline identify the Azure environment that you want to deploy to.
+Because pipelines are run without any human present, they need to authenticate to Azure by using a service principal. A service principal's credentials consist of an *application ID* and a secret, which is usually a key or a certificate. You use a *service connection* in Azure Pipelines to securely store these credentials so that your pipeline can use them. A service connection also includes some other information to help your pipeline identify the Azure environment that you want to deploy to.
 
 When you create a service connection, you give it a name. Steps refer to the service connection by using this name. That way, your pipeline YAML code doesn't contain any secret information.
 
-When your pipeline starts, the agent that's running your deployment steps has access to the service connection, including its credentials. A pipeline step uses the credentials to sign in to Azure, just like you do yourself. Then, the actions that step takes uses the service principal's _identity_.
+When your pipeline starts, the agent that's running your deployment steps has access to the service connection, including its credentials. A pipeline step uses the credentials to sign in to Azure, just like you do yourself. Then, the actions that step takes uses the service principal's *identity*.
 
 :::image type="content" source="../media/4-service-connection.png" alt-text="Diagram that shows a pipeline that includes an Azure deployment step, which accesses a service connection and then deploys to Azure." border="false":::
 
@@ -31,7 +31,7 @@ You can also configure your service connection so that it's only allowed to be u
 One of the most useful built-in tasks for Azure Pipelines is the Azure CLI task. You use this task to execute one or more Azure CLI commands, including deploying a Bicep file.
 
 > [!NOTE] 
-> Azure Pipelines includes a task named _Azure Resource Group Deployment_. This can be used to deploy JSON ARM templates. However, it doesn't currently work with Bicep files.
+> Azure Pipelines includes a task named *Azure Resource Group Deployment*. This can be used to deploy JSON ARM templates. However, it doesn't currently work with Bicep files.
 
 Here's an example of how you can configure a step to use the Azure CLI task:
 
@@ -49,11 +49,11 @@ Here's an example of how you can configure a step to use the Azure CLI task:
 
 Notice that the first line specifies `AzureCLI@2`. This tells Azure Pipelines that the task you want to use for this step is named `AzureCLI`, and you want to use version `2` of the task.
 
-When you use the Azure CLI task, you specify a number of _inputs_ to instruct it what to do:
+When you use the Azure CLI task, you specify a number of *inputs* to instruct it what to do:
 
 - `azureSubscription` specifies the name of the service connection to use.
 - `scriptType` specifies the type of script you want to run the Azure CLI commands in. You can choose from multiple script types including Bash and PowerShell.
-- `scriptLocation` is used to specify whether you want to run a script file stored in your repository, or an _inline script_ where you specify the Azure CLI commands inside the YAML file. In this module, we use inline scripts.
+- `scriptLocation` is used to specify whether you want to run a script file stored in your repository, or an *inline script* where you specify the Azure CLI commands inside the YAML file. In this module, we use inline scripts.
 - `inlineScript` contains the Azure CLI commands to execute. The commands work just like they do when you run the Azure CLI from your own computer.
 
 When the task starts, it uses the service connection to sign in to Azure, so by the time it runs the commands you specify, it's already authenticated. You don't need to run `az login`.
@@ -61,11 +61,11 @@ When the task starts, it uses the service connection to sign in to Azure, so by 
 > [!NOTE]
 > You might not have used the Azure CLI before. If you're used to PowerShell, that's OK. We use the Azure CLI task throughout this module because it provides a simple way to deploy a Bicep file.
 > 
-> In your own pipelines, you can use the _Azure PowerShell_ task instead, or you can even mix and match tasks and use both types of script.
+> In your own pipelines, you can use the *Azure PowerShell* task instead, or you can even mix and match tasks and use both types of script.
 
 ## Variables
 
-Often, your pipelines contain values that you want to keep separate from your YAML file. For example, when you deploy a Bicep file to a resource group, you need to specify the name of the resource group. The resource group name is probably different when you deploy to different environments. Additionally, you might need to provide parameters to your Bicep files, including secrets like database server passwords. You shouldn't store these in your pipeline YAML file or anywhere else in your Git repository. Instead, you should use _variables_.
+Often, your pipelines contain values that you want to keep separate from your YAML file. For example, when you deploy a Bicep file to a resource group, you need to specify the name of the resource group. The resource group name is probably different when you deploy to different environments. Additionally, you might need to provide parameters to your Bicep files, including secrets like database server passwords. You shouldn't store these in your pipeline YAML file or anywhere else in your Git repository. Instead, you should use *variables*.
 
 ### Create a variable
 
@@ -93,7 +93,7 @@ Notice the Azure CLI command includes a special `$(VariableName)` syntax. You ca
 
 ### System variables
 
-Azure Pipelines also provides _system variables_. These contain predefined information that you might want to use in your pipeline, such as:
+Azure Pipelines also provides *system variables*. These contain predefined information that you might want to use in your pipeline, such as:
 
 - `Build.BuildNumber`, which is the unique identifier for your pipeline run. Despite its name, it's often not a number - it's a string. You might use this variable to name your Azure deployment so that you can track the deployment back to the specific pipeline run that triggered it.
 - `Agent.BuildDirectory`, which is the path on your agent machine's file system where your pipeline run's files are stored. This can be useful when you want to reference files on the build agent. 
