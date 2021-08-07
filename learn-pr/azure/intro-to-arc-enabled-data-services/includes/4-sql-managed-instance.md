@@ -20,11 +20,11 @@ This Azure SQL deployment option provides a contained SQL Server database powere
 
 ## Comparison of features
 
-In order to understand the capabilities of Azure Arc-enabled SQL Managed Instance, it is important to look at it's core features, deployment options, and integration with Azure. 
+To understand the capabilities of Azure Arc-enabled SQL Managed Instance, it is important to look at its core features, deployment options, and integration with Azure.
 
 ### Core features
 
-Since Azure Arc-enabled SQL Managed Instance is based on the SQL Server engine, it provides core instance [features](https://docs.microsoft.com/azure/azure-arc/data/managed-instance-features) almost 100% compatible with SQL Server and Azure SQL Managed Instance. This includes a compatible T-SQL language interface and all the features of security, performance, and availability.
+Since Azure Arc-enabled SQL Managed Instance is based on the SQL Server engine, it provides core instance [features](https://docs.microsoft.com/azure/azure-arc/data/managed-instance-features) almost 100% compatible with SQL Server and Azure SQL Managed Instance. The instance includes a compatible T-SQL language interface and all the features of security, performance, and availability.
 
 Like Azure SQL Managed instance, when you deploy Azure Arc-enabled SQL Managed instance you get a pre-installed, versionless SQL Server. Azure Arc-enabled SQL Managed instance uses container images from the Microsoft container registry.
 
@@ -32,9 +32,9 @@ Like Azure SQL Managed instance, when you deploy Azure Arc-enabled SQL Managed i
 
 Like Azure SQL Managed Instance, you can deploy Azure Arc-enabled SQL Managed instance with two deployment options called [service tiers](https://docs.microsoft.com/azure/azure-arc/data/service-tiers):
 
-- **General purpose** - As it's name implies, this service tier is for most workloads.This service tier has a limit for resources such as core and memory but comes with built-in basic high availability through Kubernetes and shared storage.
+- **General purpose** - As its name implies, this service tier is for most workloads.This service tier has a limit for resources such as core and memory but comes with built-in basic high availability through Kubernetes and shared storage.
 
-- **Business critical (preview)** - This service tier is designed for workloads that require the best performance and highest level of availability. This service tier has no limits for memory or cores and uses availability groups to provide high availability includes read scale out.
+- **Business critical (preview)** - This service tier is designed for workloads that require the best performance and highest level of availability. This service tier has no limits for memory or cores and uses availability groups to provide high availability with read scale-out.
 
 Both service tiers are billed on a per core basis but also include the ability to use Azure Hybrid Benefit licensing and a developer option for no cost. Business critical service tier is currently under preview so does not incur any charges for use.
 
