@@ -210,7 +210,7 @@ We'll now use the logic app to create a workflow for the GET method. This setup 
    - **Query**: Enter the following code:
 
        ```sql
-       SELECT - FROM Vitals WHERE ColumnDateTime=(SELECT MAX(ColumnDateTime) FROM Vitals)
+       SELECT * FROM Vitals WHERE ColumnDateTime=(SELECT MAX(ColumnDateTime) FROM Vitals)
        ```
 
 1. Add a new action to the designer and search for *response*. Then open the response pane and fill in the fields:

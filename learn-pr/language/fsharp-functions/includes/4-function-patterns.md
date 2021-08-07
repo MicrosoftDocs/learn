@@ -22,7 +22,7 @@ let studentsFromOhio =
     |> filterLocation "Ohio"
 ```
 
-In the preceding code, you can operate on data and ask for what you want, but without being specific about how you want it done, just like with SQL. When your code looks like the preceding example, it's easy to read and to reason about. To get to this point, let's look at some useful patterns that are supported in F#.
+In the preceding code, you can operate on data and ask for what you want without being specific about how you want it done, just like with SQL. When your code looks like the preceding example, it's easy to read and to reason about. To get to this point, let's look at some useful patterns that are supported in F#.
 
 ## Functional patterns
 
@@ -33,9 +33,9 @@ There are some useful patterns in F# that you can use to take on a more _functio
 
 ### Composition
 
-When you author code, you'll often find yourself calling one function and then another function right after it. For example, you might want to order a list and filter out all products that are on discount. The next example shows where the function `add2()` is called, and its result is fed to the `multiply3()` function.
+Composition is about combining functions and have them applied, one after the other, in a certain order. The composition operator takes two functions and returns a new function. 
 
-Here's an example:
+When you author code, you'll often find yourself calling one function and then another function right after it. For example, you might want to order a list and filter out all products that are on discount. Below is an example in which the function `add2()` is called and its result is fed to the `multiply3()` function.
 
 ```fsharp
 let add2 a = a + 2
@@ -46,7 +46,7 @@ let addAndMultiply a =
     product
 ```
 
-This pattern is so common that F# has an operator for it. The `>>` operator lets you combine two or more functions into one bigger function. By using this operator, you can use it instead of the preceding code, like so:
+This pattern is so common that F# has an operator for it, the `>>`, which lets you combine two or more functions into one bigger function. By using the **>>** operator, you can use it instead of the preceding code, like so:
 
 ```fsharp
 let addAndMultiply = add2 >> multiply3
@@ -57,14 +57,14 @@ The combined function `addAndMultiply()` applies the functions it consists of fr
 
 ### Pipeline
 
-Composing is about combining functions and having them applied, one after the other, in a certain order. The composition operator takes two functions and returns a new function. The pipeline operator `|>` takes a function and an argument and returns a value. Let's see how the pipeline differs from composition with this example:
+The pipeline operator `|>` takes a function and an argument and returns a value. Let's see how the pipeline differs from composition with this example:
 
 ```fsharp
 let list = [4; 3; 1]
 let sort (list: int list) = List.sort list
 let print (list: int list)= List.iter(fun x-> printfn "item %i" x) list
 
-list |> sort |> print // item 1 item 3 item 3
+list |> sort |> print // item 1 item 3 item 4
 ```
 
-In the last row, you start with a list of integers by using `list`, which serves as input to the first function, `sort()`. The result of that operation is fed into `print()`. The main difference from composition is that you start with some data, which is a list of integers in this case. Then you lead it through a set of functions.
+In the last row, you start with a list of integers, using `list`, which serves as input to the first function, `sort()`. The result of that operation is fed into `print()`. The main difference between pipeline and composition is that with a pipeline, you start with some data, which is a list of integers in this case, and then you lead it through a set of functions.

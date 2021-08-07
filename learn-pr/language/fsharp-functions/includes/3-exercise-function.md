@@ -109,6 +109,6 @@ You've turned your colleague's code into a function. To make this code more read
    Jack
    ```
 
-   Now there's no error message because you added a return type to your function. When you look at the function header, you see the code `let cardFace (card:int) :string`, the input parameter is of type `int`, and it returns `string`.
+Now there's no error message because you added a return type to your function. When you look at the function header, you see the code `let cardFace (card:int) :string`, the input parameter is of type `int`, and it returns `string`.
 
 Congratulations! Your code now has types added to it.

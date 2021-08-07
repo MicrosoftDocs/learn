@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.fsharp-conditional.exercise-loops
-title: Exercise - use loops
+title: Exercise - Use loops
 metadata:
-  title: Exercise - use loops
-  description: In this exercise, you'll add loop constructs to iterate through a collection of cards. As part of the exercise, you'll use previously created code to also add a description of the card.
+  title: Exercise - Use loops
+  description: Add loop constructs to iterate through a collection of playing cards.
   author: softchris
   ms.author: chnoring
   ms.date: 07/23/2021

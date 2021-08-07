@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
 durationInMinutes: 4
-content: Choose the best response for each question. Then select **Check your answers**.
+content: Choose the best response for each question. Then, select **Check your answers**.
 quiz:
   title: Check your knowledge
   questions:
@@ -18,33 +18,33 @@ quiz:
       choices:
         - content: You can use a `for...in` loop.
           isCorrect: true
-          explanation: Correct. This loop construct is the most suited to iterate over a collection.
-        - content: You can use a `for...to`.
+          explanation: Correct. This loop construct is best suited to iterate over a collection.
+        - content: You can use a `for...to` loop.
           isCorrect: false
-          explanation: Incorrect. It's possible to use a `for...to` construct but `for...in` is a better choice.
-        - content: You can use a `while...do`
+          explanation: Incorrect. It's possible to use a `for...to` construct, but `for...in` is a better choice.
+        - content: You can use a `while...do` loop.
           isCorrect: false
-          explanation: Incorrect. A `while...do` is more meant to repeat a set of statements until a condition is met. Using a `for...in` is a better choice.
-    - content: Explain what is wrong with the following code, `let value = if condition then true else 1`
+          explanation: Incorrect. A `while...do` construct is meant to repeat a set of statements until a condition is met. Using `for...in` is a better choice.
+    - content: Explain what's wrong with the code `let value = if condition then true else 1`.
       choices: 
-        - content: Nothing is wrong, the code will compile.
-          explanation: Incorrect. You can't mix data types, you either need the `if` and `else` to resolve to both resolve to boolean or to int.
+        - content: Nothing is wrong and the code will compile.
+          explanation: Incorrect. You can't mix data types. You need both `if` and `else` to resolve either to Boolean or to int.
           isCorrect: false
         - content: You can't assign the result to a variable.
-          explanation: Incorrect. You can assign to a variable, but it needs to be the same data type in both `if` and `else`. 
+          explanation: Incorrect. You can assign the result to a variable, but data type must be the same for both `if` and `else`. 
           isCorrect: false
-        - content: It needs to be the same data type in `if` and `else`. The following code would work `let value = if condition then 2 else 1`
-          explanation: Correct. It needs to be the same data type returned from the expressions in `if` and `else`.
+        - content: The data type must be the same in both `if` and `else`. The code `let value = if condition then 2 else 1` would work.
+          explanation: Correct. The same data type must be returned from the expressions in `if` and `else`.
           isCorrect: true
-    - content: Which numbers would the following loop print `for i = 0 to 5 do printfn "%i " i`?
+    - content: Which numbers would the loop `for i = 0 to 5 do printfn "%i " i` print?
       choices:
-        - content: It will print 0, 1, 2, 3, 4
-          explanation: Incorrect. It will print 0, 1, 2, 3, 4 ,5
+        - content: It will print 0, 1, 2, 3, 4.
+          explanation: Incorrect. It won't print 0, 1, 2, 3, 4.
           isCorrect: false
-        - content: It will print 0, 1, 2, 3, 4, 5
-          explanation: Correct. It will print all numbers from the start boundary including the ending boundary.
+        - content: It will print 0, 1, 2, 3, 4, 5.
+          explanation: Correct. It will print all numbers from the start boundary, including the ending boundary.
           isCorrect: true
-        - content: It will print 1, 2, 3, 4, 5
-          explanation: Incorrect. It will print all numbers from the start boundary including the ending boundary, which is 0, 1, 2, 3, 4 , 5. 
+        - content: It will print 1, 2, 3, 4, 5.
+          explanation: Incorrect. It will print all numbers from the start boundary, including the ending boundary, which is 0, 1, 2, 3, 4, 5. 
           isCorrect: false
 

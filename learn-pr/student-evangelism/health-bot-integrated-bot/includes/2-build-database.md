@@ -88,12 +88,12 @@ Follow these steps to build a database:
    In the code section, paste the following code:
 
    ```sql
-        CREATE TABLE Persons (
-        PersonID int,
-        LastName varchar(255),
-        FirstName varchar(255),
-        Address varchar(255),
-        City varchar(255)
+        CREATE TABLE Vitals (
+               name varchar(255),
+               Age int,
+               Weight int,
+               Height int,
+               ColumnDateTime DATETIME DEFAULT CURRENT_TIMESTAMP
         );
    ```
 
@@ -155,7 +155,7 @@ Even though we know our database works, we can visualize the data that's logged 
 
 1. Right-click **healthbot** and then select **New query**.
 
-1. In the query, enter *SELECT - FROM Vitals*.
+1. In the query, enter *SELECT * FROM Vitals*.
 
 1. Select **Run** to see the table of the currently logged data.
 
@@ -163,6 +163,6 @@ Even though we know our database works, we can visualize the data that's logged 
 
 > [!NOTE]
 >
-> - The query **SELECT - FROM Vitals** asks to select all the data from the table named *Vitals*.
+> - The query **SELECT * FROM Vitals** asks to select all the data from the table named *Vitals*.
 > - The table name is case sensitive. The asterisk (\*) denotes **ALL**.
 > - Follow steps 8 through 10 every time you want to visualize the table.

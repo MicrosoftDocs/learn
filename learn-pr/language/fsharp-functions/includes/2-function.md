@@ -2,7 +2,9 @@ Usually, you find yourself in a situation where your code looks repetitive. It's
 
 ## A function
 
-A function is a named reference with a body that consists of one or more expressions. It can also have parameters. A function starts with the keyword `let` and the name of the function. Next, there's an assignment operator, and to the right of this operator is the function body. Here's the syntax of a function:
+A function is a named reference with a body that consists of one or more expressions. It can also have parameters. A function starts with the keyword `let` and the name of the function. Next, there's an assignment operator, and to the right of this operator is the function body. 
+
+Here's the syntax of a function:
 
 ```fsharp
 let <function name> <parameters> = <function body>
@@ -65,9 +67,9 @@ but here has type
     'string'    
 ```
 
-The reason for the failure is that F# already determined what parameter types there should be, and it decided on integer. The reason it decided on integer was because of the information in the second row, `let sum = add 2 2`. The function `add` was used in a way that stated that the parameter definitely was integer.
+The reason for the failure is that F# already determined what parameter type should be used, and it decided on integer. The reason it decided on integer was because of the information in the second row, `let sum = add 2 2`. The function `add` was used in a way that stated that the parameter definitely was integer.
 
-If the second row doesn't exist, your code works:
+If the second row didn't exist, your code works:
 
 ```fsharp
 let add a b = a + b
@@ -104,11 +106,11 @@ but here has type
     'int'
 ```
 
-To make this code, you also need to specify a return type for the function. To do so, add another `: <type>` right after your parameter, like so:
+To make this code compile, you also need to specify a return type for the function. To do so, add another `:<type>` right after your parameter:
 
 ```fsharp
-let convert (a:string): int =
+let convert (a:string):int =
     int a
 ```
 
-Now the parameter is enclosed by parentheses, as shown in `(a:string)`. The return type is the last `:<type>` annotation to happen, which is `:int`. Now your code works again.
+Now the parameter is enclosed by parentheses, as shown in `(a:string)`. The return type is the last `:<type>` annotation to happen, which is `:int`, and your code works again.
