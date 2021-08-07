@@ -53,7 +53,7 @@ For Azure AD Premium to complete all the exercises in this module, you'll need t
 
     The **Activate** pane appears.
 
-1. Under **Azure AD Premium P2**, expand **Free trial**, and then select **Activate**. If you don't have that option, that's ok. You can complete most of the exercises without it. After the premium license activtes, the **Overview** pane for *Licenses* reappears.
+1. Under **Azure AD Premium P2**, expand **Free trial**, and then select **Activate**. If you don't have that option, that's ok. You can complete most of the exercises without it. After the premium license activates, the **Overview** pane for *Licenses* reappears.
 
 1. Return to the **Overview** pane for Azure Active Directory for Contoso Marketing Company. On the **Overview** tab, under the **Basic information** section, refresh the browser until you see **Azure AD Premium P2** appear aside **License**. It may take a couple of minutes.
 
