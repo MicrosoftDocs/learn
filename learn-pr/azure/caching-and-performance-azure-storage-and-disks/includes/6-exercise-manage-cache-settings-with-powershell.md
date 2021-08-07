@@ -27,7 +27,7 @@ We used the portal to set the **Host caching** field for both the OS and data di
 
 First, let's store some resource names so we can use them later.
 
-1. In Azure Cloud Shell on the right, run the following PowerShell commands:
+In Azure Cloud Shell on the right, run the following PowerShell commands:
 
     > [!NOTE]
     > Switch your Cloud Shell session to **PowerShell** before trying these commands, if it isn't already.
@@ -113,7 +113,7 @@ We can check the caching  setting through  the `StorageProfile` object by runnin
 
 ### List data disk info
 
-1. To see what data disks we have on our VM, run the following command:
+To see what data disks we have on our VM, run the following command:
 
     ```powershell
     $myVM.StorageProfile.DataDisks

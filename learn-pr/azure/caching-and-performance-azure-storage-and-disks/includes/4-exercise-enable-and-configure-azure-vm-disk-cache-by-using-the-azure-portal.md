@@ -55,11 +55,11 @@ After our VM is deployed, we can confirm the caching status of the OS disk with 
 
 ## Change the cache settings of the OS disk in the portal
 
-1. From the dropdown list, change the **Host caching** value for the OS disk to **Read-only**, and from the top menu bar, select **Save**.
+From the dropdown list, change the **Host caching** value for the OS disk to **Read-only**, and from the top menu bar, select **Save**.
 
-    This update can take some time. The reason is that changing the cache setting of an Azure disk detaches and reattaches the target disk. If it's the operating system disk, the VM is also restarted. When the operation completes, you'll get a notification saying the VM disks have been updated. See the *Notifications* icon in the top taskbar of the portal for confirmation.
+This update can take some time. The reason is that changing the cache setting of an Azure disk detaches and reattaches the target disk. If it's the operating system disk, the VM is also restarted. When the operation completes, you'll get a notification saying the VM disks have been updated. See the *Notifications* icon in the top taskbar of the portal for confirmation.
 
-    After completion, the OS disk cache type is set to **Read-only**.
+After completion, the OS disk cache type is set to **Read-only**.
 
 Let's move on to data disk cache configuration. To configure a disk, we'll need first to create one.
 
