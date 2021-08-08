@@ -22,14 +22,7 @@ In the sections below, there are some pointers to specific parts of the template
 
    Does the template need to specify the list of allowed values for the `skuName` parameter? What resources are affected by choosing different values for these parameters? Are there better names that you can give the parameters?
 
-   > [!TIP]
-   > When you rename identifiers, you need to make sure you rename them consistently in all parts of your template. This is especially important for parameters, variables, and resources that you refer to throughout your template.
-   >
-   > Visual Studio Code offers a convenient way to rename symbols: select the identifier you want to rename, press <kbd>F2</kbd>, enter a new name, and press <kbd>Enter</kbd>:
-   >
-   > :::image type="content" source="../media/6-rename-symbol.png" alt-text="Screenshot from Visual Studio Code showing how to rename a symbol." border="true":::
-   >
-   > This renames the identifier and automatically updates all of the references to it as well.
+   [!include[Tip - How to use Visual Studio Code to rename Bicep symbols](../../includes/azure-template-bicep-tip-rename.md)]
 
 1. The `managedIdentityName` parameter doesn't have a default value. Could you fix that, or better yet, create the name automatically within the template?
 
