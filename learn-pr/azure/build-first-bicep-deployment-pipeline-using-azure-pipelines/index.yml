@@ -11,12 +11,12 @@ metadata:
   ms.prod: learning-azure
 title: Build your first Bicep deployment pipeline by using Azure Pipelines
 summary: |
-  Build a basic deployment pipeline for Bicep code. Use a service connection to securely identify your pipeline to Azure. Then, configure when the pipeline runs by using triggers.
+  Build a basic deployment pipeline for Bicep code. You'll use a service connection to securely identify your pipeline to Azure, and then set when the pipeline runs by using triggers and schedules.
 abstract: |
   When you finish this module, you'll be able to:
-    - Automate Bicep deployments by using a pipeline in Azure Pipelines
-    - Configure a service connection to authenticate a pipeline to Azure
-    - Select an appropriate pipeline trigger and set of tasks for a Bicep deployment
+    - Automate Bicep deployments by using a pipeline in Azure Pipelines.
+    - Set up a service connection to authenticate a pipeline to Azure.
+    - Select an appropriate pipeline trigger and set of tasks for a Bicep deployment.
 prerequisites: |
   You should be familiar with using:
 
@@ -25,15 +25,13 @@ prerequisites: |
   - Service principals.
   - Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
   
-  To follow along with the exercises in the module, you'll need an Azure account, with the ability to create resource groups and create Azure Active Directory applications and service principals.
+  To work through the exercises in the module, you'll need an Azure account, with the ability to create resource groups, Azure Active Directory applications, and service principals.
   
   You'll also need the following installed locally:
   
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
   - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
-  - Either:
-    - The latest [Azure CLI](/cli/azure/install-azure-cli) tools.
-    - The latest [Azure PowerShell](/powershell/azure/install-az-ps).
+  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps).
   - [Git](https://git-scm.com/download?azure-portal=true).
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
