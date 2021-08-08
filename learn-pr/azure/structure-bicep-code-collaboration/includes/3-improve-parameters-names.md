@@ -55,7 +55,7 @@ This format provides the most flexibility, since anyone who uses the template ca
 
 Alternatively, you could provide a _configuration set_: a single parameter, whose value is restricted list of allowed values like a list of environment types. When someone deploys your template, they only need to select a value for this one parameter. By selecting a value for the parameter, the deployment automatically inherits a set of configuration:
 
-:::image type="content" source="../media/3-configuration-map.png" alt-text="Diagram showing a user entering a parameter, which then influences the configuration map variable. The resource definition takes its value from the configuration map." border="false":::
+:::image type="content" source="../media/3-configuration-map.png" alt-text="Diagram showing a user entering a parameter. The resource definition takes its value from a configuration map variable based on the parameter value." border="false":::
 
 The parameter definition looks like this:
 
