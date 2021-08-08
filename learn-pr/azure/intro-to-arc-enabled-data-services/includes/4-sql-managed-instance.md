@@ -20,7 +20,7 @@ This Azure SQL deployment option provides a contained SQL Server database powere
 
 ## Comparison of features
 
-To understand the capabilities of Azure Arc-enabled SQL Managed Instance, it is important to look at its core features, deployment options, and integration with Azure.
+To understand the capabilities of Azure Arc-enabled SQL Managed Instance, it's important to look at its core features, deployment options, and integration with Azure.
 
 ### Core features
 
@@ -54,7 +54,7 @@ If you use indirect-connected mode, a minimal amount of data must be sent to Azu
 
 ## Comparison of management capabilities
 
-Since Azure Arc-enabled SQL Managed instance is a managed service, it is useful to compare management capabilities with Azure SQL Managed instance such as a versionless engine, deploy and configure, monitoring, high availability, and disaster recovery.
+Since Azure Arc-enabled SQL Managed instance is a managed service, it's useful to compare management capabilities with Azure SQL Managed instance such as a versionless engine, deploy and configure, monitoring, high availability, and disaster recovery.
 
 ### Versionless
 
@@ -80,7 +80,7 @@ Since Azure Arc-enabled SQL Managed Instance is based on SQL Server, the standar
 
 ### High availability
 
-One of the best benefits of using a managed service like Azure Arc-enabled SQL Managed Instance is built in high availability. Like Azure SQL Managed Instance, the method used to achieve high availability depends on the service tier.
+One of the benefits of using a managed service like Azure Arc-enabled SQL Managed Instance is built in high availability. Like Azure SQL Managed Instance, the method used to achieve high availability depends on the service tier.
 
 For the General Purpose service tier, the built in high availability of Kubernetes StatefulSets is used with shared storage.
 
