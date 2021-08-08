@@ -28,7 +28,7 @@ Since Azure Arc-enabled SQL Managed Instance is based on the SQL Server engine, 
 
 Like Azure SQL Managed instance, when you deploy Azure Arc-enabled SQL Managed instance you get a pre-installed, versionless SQL Server. Azure Arc-enabled SQL Managed instance uses container images from the Microsoft container registry.
 
-In direct connected mode, authentication to Azure Arc-enabled SQL Managed instance can be done using SQL or Azure Active Directory authentication. In indirect connected mode, SQL authentication can be used.
+In direct connected mode, authentication to Azure Arc-enabled SQL Managed instance can be done using SQL or Azure Active Directory authentication. SQL authentication can be used if you use indirect connected mode.
 
 Azure SQL Managed Instance uses gateway servers to abstract the application from underlying connectivity details. Azure Arc-enabled SQL Managed Instance also provides connection abstraction using Kubernetes LoadBalancers or NodePorts.
 
@@ -48,9 +48,9 @@ When you deploy an Azure SQL Managed instance, billing, usage, metrics, and logs
 
 Integration with Azure for Azure Arc-enabled SQL Managed instance depends on which [connectivity mode](https://docs.microsoft.com/azure/azure-arc/data/connectivity) you use.
 
-With direct-connected mode, integration with Azure is handled automatically through Azure Arc agents and the Azure Arc data controller. All Azure interfaces such as the Azure portal can be used for deployment and configuration.
+Integration with Azure is handled automatically with direct connected mode through Azure Arc agents and the Azure Arc data controller. All Azure interfaces such as the Azure portal can be used for deployment and configuration.
 
-With indirect-connected mode, a minimal amount of data must be sent to Azure for billing purposes. Optionally, you can export data such as metrics and logs. Deployment and configuration through the Azure portal is not supported indirect-connected mode. However, interfaces such as the az CLI and kubectl can still be used for deployment and configuration.
+If you use indirect-connected mode, a minimal amount of data must be sent to Azure for billing purposes. Optionally, you can export data such as metrics and logs. Deployment and configuration through the Azure portal is not supported indirect-connected mode. However, interfaces such as the az CLI and kubectl can still be used for deployment and configuration.
 
 ## Comparison of management capabilities
 
@@ -58,7 +58,7 @@ Since Azure Arc-enabled SQL Managed instance is a managed service, it is useful 
 
 ### Versionless
 
-One of the benefits of using Azure SQL Managed Instance is the elimination of the need to patch and update SQL Server, the operating system, and any platform related software. The engine for Azure SQL Managed instance is often referred to as *versionless*, because there is no concept of a major version as with SQL Server. The instance is constantly updated as needed with any necessary updates or new functionality.
+One of the benefits of using Azure SQL Managed Instance is the elimination of the need to patch and update SQL Server, the operating system, and any platform software. The engine for Azure SQL Managed instance is often referred to as *versionless*, because there is no concept of a major version as with SQL Server. The instance is constantly updated as needed with any necessary updates or new functionality.
 
 Azure Arc-enabled SQL Managed instance also uses a versionless engine so updates can be applied automatically as needed through updated container images. Availability is maintained by using the power of Kubernetes to stop and start new containers.
 
@@ -72,19 +72,19 @@ Inside the SQL instance, standard SQL Server interfaces such as sp_configure, AL
 
 ### Monitoring
 
-Like Azure SQL Managed Instance, you can monitor Azure Arc-enabled SQL Managed instance using Azure monitor for key metrics provided metrics are uploaded either automatically in direct connected mode or manually with indirect connected mode. Locally within the cluster, you can also use built-in monitoring with Grafana dashboards for nodes or the SQL instance.
+Like Azure SQL Managed Instance, you can monitor Azure Arc-enabled SQL Managed instance using Azure monitor for key metrics. Locally within the cluster, you can also use built in monitoring with Grafana dashboards for nodes or the SQL instance.
 
-Like Azure SQL Managed Instance, logs for Azure Arc-enabled SQL Managed Instance are available to view in the Azure portal through log analytics provides logs are uploaded either automatically in direct connected mode or manually in indirect connected mode. Locally within the cluster, you can also use built-in logging with Kibana.
+Like Azure SQL Managed Instance, logs for Azure Arc-enabled SQL Managed Instance are available to view in the Azure portal through log analytics. Locally within the cluster, you can also use built in logging with Kibana.
 
 Since Azure Arc-enabled SQL Managed Instance is based on SQL Server, the standard ERRORLOG files are available to view SQL errors and instance details. Azure Arc-enabled SQL Managed Instance also supports all available Dynamic Management Views (DMV) and Extended Events.
 
 ### High availability
 
-One of the best benefits of using a managed service like Azure Arc-enabled SQL Managed Instance is built-in high availability. Like Azure SQL Managed Instance, the method used to achieve high availability depends on the service tier.
+One of the best benefits of using a managed service like Azure Arc-enabled SQL Managed Instance is built in high availability. Like Azure SQL Managed Instance, the method used to achieve high availability depends on the service tier.
 
-For the General Purpose service tier, the built-in high availability of Kubernetes StatefulSets are used with shared storage.
+For the General Purpose service tier, the built in high availability of Kubernetes StatefulSets is used with shared storage.
 
-For the Business Critical service tier (Preview), built-in high availability is provided using a combination of Kubernetes StatefulSets and SQL Server Always On Availability Group replicas. Like Azure SQL Managed Instance, a read only replica is available to offload read workloads. In addition, system databases such as master and model are part of the availability groups. Therefore, system level objects such as SQL Agent jobs will automatically be available after a failover event.
+For the Business Critical service tier (Preview), built in high availability is provided using a combination of Kubernetes StatefulSets and SQL Server Always On Availability Group replicas. Like Azure SQL Managed Instance, a read-only replica is available to offload read workloads. In addition, system databases such as master and model are part of the availability groups. Therefore, system level objects such as SQL Agent jobs will automatically be available after a failover event.
 
 Kubernetes LoadBalancers and NodePorts provide connection abstraction for the application should the instance move nodes within the cluster. In addition, a read-only connection abstraction point is provided for Business Critical service tiers.
 
