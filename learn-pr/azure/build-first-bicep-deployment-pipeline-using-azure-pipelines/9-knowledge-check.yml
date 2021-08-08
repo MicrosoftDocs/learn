@@ -17,9 +17,6 @@ quiz:
   questions:
   - content: You want to modify the pipeline YAML file so that it follows best practices. What should you do?
     choices:
-    - content: Update the step's `scriptType` to `pscore`.
-      isCorrect: false
-      explanation: Incorrect. You don't need to change the script language for the pipeline step.
     - content: Update the pipeline's `pool` to use a Windows agent pool.
       isCorrect: false
       explanation: Incorrect. You don't need to change the operating system for your pipeline's agent pool.
