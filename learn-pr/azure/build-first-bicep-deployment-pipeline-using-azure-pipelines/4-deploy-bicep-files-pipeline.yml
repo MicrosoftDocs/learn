@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.deploy-bicep-files-pipeline
-title: Deploy Bicep files using a pipeline
+title: Deploy Bicep files by using a pipeline
 metadata:
   unitType: learning-content
   title: Deploy Bicep files by using a pipeline

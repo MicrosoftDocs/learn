@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.control-pipeline-executes-triggers
-title: Control when your pipeline executes by using triggers
+title: Use triggers to control when your pipeline runs
 metadata:
   unitType: learning-content
-  title: Control when your pipeline executes by using triggers
+  title: Use triggers to control when your pipeline runs
   description: Learn how to create and use branch triggers and schedules to run Bicep deployment pipelines.
   ms.date: 07/20/2021
   author: vermegi

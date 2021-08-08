@@ -185,13 +185,11 @@ You've created a resource group and a service principal. Next, create a service 
 
    :::image type="content" source="../media/5-create-service-connection-principal-details-1.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with a subscription ID and subscription name entered.":::
 
-1. In **Service principal Id** and **Service principal key**, enter the service principal's application ID and the key that you saved earlier. In **Tenant ID**, enter the Azure tenant ID that you saved earlier.
+1. In **Service principal Id** and **Service principal key**, enter the service principal's application ID and the key that you saved earlier. In **Tenant ID**, enter the Azure tenant ID that you saved earlier. Select **Verify**.
 
    :::image type="content" source="../media/5-create-service-connection-principal-details-2.png" alt-text="Screenshot of the Azure DevOps 'Create service connection' page, with the details completed and the Verify button highlighted.":::
 
-1. Select **Verify**.
-
-   Azure Pipelines verifies that it can access your Azure subscription and displays *Verification succeeded*.
+1. Azure Pipelines verifies that it can access your Azure subscription. Check that*Verification succeeded* is shown.
 
    > [!NOTE]
    > If the verification doesn't succeed, check that you copied the correct values for the service principal, subscription, and tenant. Wait a few minutes to allow time for Azure's role assignments to replicate globally, and then try again.

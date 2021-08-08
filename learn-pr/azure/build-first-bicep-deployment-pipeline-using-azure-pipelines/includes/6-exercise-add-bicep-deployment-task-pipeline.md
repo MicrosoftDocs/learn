@@ -101,7 +101,7 @@ Next, update your pipeline definition to deploy your Bicep file to Azure by usin
 
    :::image type="content" source="../media/6-edit-pipeline-additional-variable.png" alt-text="Screenshot of Azure DevOps that shows the pipeline variable list, with the plus button highlighted.":::
 
-   Create these variables the same way you created the *ServiceConnectionName* variable:
+   Create the following variables the same way you created the *ServiceConnectionName* variable:
 
    | Variable name       | Value        |
    |---------------------|--------------|

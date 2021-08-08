@@ -4,7 +4,7 @@ You now have a working pipeline that deploys your Bicep file to your Azure envir
 
 ## What is a pipeline trigger?
 
-A pipeline trigger automatically runs your pipeline based on rules you create. You can set triggers to run your pipeline at scheduled intervals. You can also set triggers to run your pipeline every time a file in your repository changes. You might choose the second option because it's a good idea to run all your tests and deployment steps every time sometime changes your code.
+A pipeline trigger is a condition that, when met, automatically runs your pipeline based on rules you create. You can set triggers to run your pipeline at scheduled intervals. You can also set triggers to run your pipeline every time a file in your repository changes. You might choose the second option because it's a good idea to run all your tests and deployment steps every time sometime changes your code.
 
 If you don't use an automatic trigger, someone might make a change to a Bicep file, and even commit it and push it to the repository. But if they forget to run the pipeline, there will be a difference between the resource definitions in your Bicep file and the resources that are deployed to your Azure environment. Suppose a couple more commits and pushes are made but not deployed. If someone introduces an error or misconfiguration in the Bicep file in one of these changes, it might be hard to track down the error among the multiple commits that are later deployed at once. After a while, you won't trust that your Bicep code truly represents your infrastructure, and its value is eroded.
 
@@ -12,7 +12,7 @@ When you set up your pipeline to run every time you update your files, the momen
 
 ## Branch triggers
 
-A common trigger is a *branch trigger*, also called a *continuous integration trigger* or *CI trigger*. When you use a branch trigger, every time you make a change to a specific branch, the pipeline runs. If you commit and push a change to a different branch, the pipeline is not triggered and it doesn't run. It's common to use this type of trigger against your default or *main*  branch, with this code:
+A common type of trigger is a *branch trigger*, also called a *continuous integration trigger* or *CI trigger*. When you use a branch trigger, every time you make a change to a specific branch, the pipeline runs. If you commit and push a change to a different branch, the pipeline is not triggered and it doesn't run. It's common to use this type of trigger against your default or *main*  branch, with this code:
 
 ```yaml
 trigger: 
@@ -30,7 +30,7 @@ You can exclude specific branches, too. Suppose you're collaborating with team m
 :::code language="yaml" source="code/7-branch-filter-exclude.yml" highlight="5-6":::
 
 > [!TIP]
-> Notice the quotation marks around the wildcard in the include filter. The YAML file format requires that you enclose a single `*` character in quotation marks when you use it as a wildcard.
+> Notice the quotation marks around the wildcard in the `include` filter. The YAML file format requires that you enclose a single `*` character in quotation marks when you use it as a wildcard.
 
 ### Path filters
 

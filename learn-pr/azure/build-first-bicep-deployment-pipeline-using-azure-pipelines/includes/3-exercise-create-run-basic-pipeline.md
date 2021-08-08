@@ -168,7 +168,7 @@ You've created a pipeline definition. Next, register the pipeline with Azure Pip
 
 1. Select **Placeholder step**.
 
-   :::image type="content" source="../media/3-pipeline-job-placeholder-log.png" alt-text="Screenshot of Azure DevOps that shows the pipeline job log, with the 'Placeholder step' step highlighted.":::
+   :::image type="content" source="../media/3-pipeline-job-placeholder-log.png" alt-text="Screenshot of Azure DevOps that shows the pipeline job log, with the 'Placeholder step' step highlighted and details shown.":::
 
    The logs for this step include the contents of the script as you created it in your pipeline's YAML file and the `Hello world!` text that the script emitted.
 
