@@ -1,4 +1,4 @@
-Your team is happy with the code you've written so far for the card game. The team wants you to develop it further and start implementing game rule-specific logic, such as calculating the value of a hand. 
+Your team is happy with the code you've written so far for the card game. The team wants you to develop the code further and start implementing game rule-specific logic, such as calculating the value of a hand. 
 
 For this exercise, you'll use some of the functions in the list module.
 
@@ -17,7 +17,7 @@ let cardValue card =
     else value
 ```
 
-Copy the code to use in step 2 of the following instructions.
+Copy the preceding code to use in step 2 of the following instructions.
 
 Your task is to take a card hand and calculate its value by using the `sumBy()` function.
 
