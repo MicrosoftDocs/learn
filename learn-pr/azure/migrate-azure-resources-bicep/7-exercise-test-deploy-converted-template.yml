@@ -1,7 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.migrate-azure-resources-bicep.exercise-test-deploy-converted-template
 title: Exercise - Test and deploy your converted template
-sandbox: true
 metadata:
   unitType: exercise
   title: Exercise - Test and deploy your converted template

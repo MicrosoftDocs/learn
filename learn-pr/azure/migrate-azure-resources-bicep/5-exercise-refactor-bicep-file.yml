@@ -1,7 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.migrate-azure-resources-bicep.exercise-refactor-bicep-file
 title: Exercise - Refactor the Bicep file
-sandbox: true
 metadata:
   unitType: exercise
   title: Exercise - Refactor the Bicep file
@@ -11,7 +10,6 @@ metadata:
   ms.author: jowaddel
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-  zone_pivot_groups: azure-shell-interface
 durationInMinutes: 1
 content: |
   [!include[](includes/5-exercise-refactor-bicep-file.md)]

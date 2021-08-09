@@ -1,7 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.migrate-azure-resources-bicep.exercise-convert-migrate-resources
 title: Exercise - Convert and migrate resources
-sandbox: true
 metadata:
   unitType: exercise
   title: Exercise - Convert and migrate resources

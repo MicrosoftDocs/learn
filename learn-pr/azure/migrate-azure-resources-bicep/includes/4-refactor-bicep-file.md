@@ -1,92 +1,14 @@
-You and your team have completed the process of converting and migrating your JSON ARM templates and Azure resources to Bicep. It's clear the converted templates could use some improvements to bring them inline with your template standards. The next step is to learn about how to refactor your converted and migrated templates to improve their quality. You want to accomplish these tasks following a recommended workflow.
+After the convert and migrate phases of converting your templates to Bicep, you need to improve the file. This process is called _refactoring_, and so the third phase of the recommended workflow for migrating your JSON ARM template and Azure resources to Bicep is the _refactor_ phase:
 
-## Refactor phase
-
-After the convert and migrate phases of converting your templates to Bicep, improvements can be made to the file. This process is called refactoring. The third phase of the recommended workflow for migrating your JSON ARM template and Azure resource to Bicep is the _refactor_ phase.
-
-:::image type="content" source="../media/4-refactor-phase.png" alt-text="Diagram of the refactor phase of the recommended workflow for migrating Azure resources to Bicep." border="true":::
+:::image type="content" source="../media/4-refactor-phase.png" alt-text="Diagram of the refactor phase of the recommended workflow for migrating Azure resources to Bicep." border="false":::
 
 The main focus of this phase is to improve the quality of your Bicep code. These improvements can include changes, such as adding code comments, that bring the template in line with your template standards.
 
-:::image type="content" source="../media/4-refactor.png" alt-text="Diagram of refactoring a Bicep template." border="true":::
+:::image type="content" source="../media/4-refactor.png" alt-text="Diagram of refactoring a Bicep template." border="false":::
 
-Take a look at the following JSON template that creates an Azure App Service Plan.
+Here's the output of a the Bicep `decompile` command against a JSON template that creates an App Service plan:
 
-```JSON
-{
-    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-    "contentVersion": "1.0.0.0",
-    "parameters": {
-        "location": {
-            "type": "string",
-            "defaultValue": "[resourceGroup().location]",
-            "metadata": {
-                "description": "Location for resources."
-            }
-        },
-        "environment": {
-            "type": "string",
-            "defaultValue": "prod",
-            "allowedValues": [
-                "prod",
-                "dev",
-                "test"
-            ],
-            "metadata": {
-                "description": "The list of allowed environment names."
-            }
-        },
-        "appServicePlanSku": {
-            "type": "string",
-            "defaultValue": "P1v3",
-            "allowedValues": [
-                "P1v3",
-                "P2v3",
-                "P3v3"
-            ],
-            "metadata": {
-                "description": "The list of allowed App Service Plan SKUs."
-            }
-        },
-        "appServicePlanInstanceCount": {
-            "type": "int",
-            "defaultValue": 1,
-            "minValue": 1,
-            "maxValue": 10,
-            "metadata": {
-                "description": "The number of allowed App Service Plan instances."
-            }
-        }
-    },
-    "variables": {
-        "appServicePlanName": "[concat('plan-', parameters('environment'), '-001')]"
-    },
-    "resources": [
-        {
-            "type": "Microsoft.Web/serverFarms",
-            "apiVersion": "2020-12-01",
-            "name": "[variables('appServicePlanName')]",
-            "location": "[parameters('location')]",
-            "sku": {
-                "name": "[parameters('appServicePlanSku')]",
-                "capacity": "[parameters('appServicePlanInstanceCount')]"
-            },
-            "kind": "app",
-            "properties": {}
-        }
-    ],
-    "outputs": {
-        "appServicePlanId": {
-          "type": "string",
-          "value": "[resourceId('Microsoft.Web/serverFarms', variables('appServicePlanName'))]"
-        }
-    }
-}
-```
-
-When you run the Bicep `decompile` command against this template, the following Bicep template is generated:
-
-```Bicep
+```bicep
 @description('Location for resources.')
 param location string = resourceGroup().location
 
@@ -131,7 +53,7 @@ If you deploy this Bicep template as-is, the deployment would succeed, but there
 
 ### Review resource API versions
 
-When exporting Azure resources, the exported template may not have the latest API version for a resource type. If there are specific properties that you need for future deployments, update the API to the appropriate version. It's good practice to review the API versions for each exported resource.
+When you use Bicep to interact with your Azure resources, you specify an _API version_ to use. As Azure's products change and improve, newer API versions are released that provide access to new functionality. When exporting Azure resources, the exported template may not have the latest API version for a resource type. If there are specific properties that you need for future deployments, update the API to the appropriate version. It's good practice to review the API versions for each exported resource.
 
 Consider using the [Azure ARM Template Reference](/azure/templates/) documentation to help verify the appropriate API versions and resource properties for your template.
 
@@ -151,7 +73,7 @@ In the converted template, take a look at the variable `appServicePlanName_var`.
 
 For clarity, remove the `_var` as shown below:
 
-```Bicep
+```bicep
 var appServicePlanName = 'plan-${environment}-001'
 ```
 
@@ -161,12 +83,17 @@ By making this change to the `appServicePlanName` variable, any reference to the
 
 For clarity, remove the `_var` as shown below:
 
-```Bicep
+```bicep
 name: appServicePlanName
 ```
 
+<!-- TODO add image to this once 'Structure your Bicep code for collaboration' module is published -->
 > [!TIP]
-> Pressing F2 in VS Code will help you rename a symbol and all references to that symbol.
+> When you rename identifiers, you need to make sure you rename them consistently in all parts of your template. This is especially important for parameters, variables, and resources that you refer to throughout your template.
+>
+> Visual Studio Code offers a convenient way to rename symbols: select the identifier you want to rename, press <kbd>F2</kbd>, enter a new name, and press <kbd>Enter</kbd>.
+>
+> This renames the identifier and automatically updates all of the references to it as well.
 
 #### Symbolic names
 
@@ -176,7 +103,7 @@ After updating the variable name and its references, notice that the `appService
 
 Modify the name of the symbolic name to `appServicePlan` as shown below:
 
-```Bicep
+```bicep
 resource appServicePlan 'Microsoft.Web/serverfarms@2020-12-01' = {
 ```
 
@@ -186,17 +113,19 @@ By making this change to the `appServicePlan` symbolic name, any reference to th
 
 Modify the value of the `appServicePlanId` output as shown below:
 
-```Bicep
+```bicep
 output appServicePlanId string = appServicePlan.id
 ```
 
 ### Simplify expressions
 
-The decompile process may not always take advantage of some of Biceps features. Review any expressions generated in the conversion and simplify them. The result may include a concat function that could be simplified using string interpolation. Review any suggestions from the linter and make adjustments as necessary.
+The decompile process may not always take advantage of some of Bicep's features. Review any expressions generated in the conversion and simplify them. For example, the decompiled template may include a `concat()` or `format()` function that could be simplified by using string interpolation. Review any suggestions from the linter and make adjustments as necessary.
 
 ### Review child and extension resources
 
-With Bicep, there are multiple ways to declare child and extension resources. Consider reviewing these resources after decompilation and make sure the structure meets your standards. For example, subnets can either be referenced as properties of a Virtual Network, or as a separate resource. Make any necessary changes to child and extension resources.
+With Bicep, there are multiple ways to declare child and extension resources, including concatenating the names of your resources, using the `parent` keyword, and using nested resources.
+
+Consider reviewing these resources after decompilation and make sure the structure meets your standards. For example, ensure that you don't use string concatenation to create child resource names - you should use the `parent` property or a nested resource. Similarly, subnets can either be referenced as properties of a virtual network, or as a separate resource.
 
 ### Modularize
 
@@ -213,7 +142,7 @@ Bicep supports both single-line comments using a `//` character sequence and mul
 
 You can add a multi-line comment at the beginning of the file as shown below:
 
-```Bicep
+```bicep
 /*
   This Bicep file was developed by the web team.
   It deploys the resources we need for our toy company's website.
@@ -232,14 +161,14 @@ Make sure your Bicep file is following the standard recommendations. Review the 
 
 After making the appropriate improvements, review the final template before deployment. Take a look at the final converted template below that includes the revised names and added comments:
 
-```Bicep
+```bicep
 /*
   This Bicep file was developed by the web team.
   It deploys the resources we need for our toy company's website.
 */
 
 // parameters
-@description('Location For All Resources.')
+@description('Location For all resources.')
 param location string = resourceGroup().location
 
 @allowed([
@@ -255,12 +184,12 @@ param environment string = 'prod'
   'P2v3'
   'P3v3'
 ])
-@description('The list of allowed App Service Plan SKUs.')
+@description('The list of allowed App Service plan SKUs.')
 param appServicePlanSku string = 'P1v3'
 
 @minValue(1)
 @maxValue(10)
-@description('The number of allowed App Service Plan instances.')
+@description('The number of allowed App Service plan instances.')
 param appServicePlanInstanceCount int = 1
 
 // variables
@@ -271,12 +200,11 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2020-12-01' = {
   name: appServicePlanName
   location: location
   sku: {
-    name: appServicePlanSku // Specifies the SKU of the App Service Plan.
+    name: appServicePlanSku // Specifies the SKU of the App Service plan.
     capacity: appServicePlanInstanceCount
   }
-  kind: 'app' // Specifies a Windows App service Plan.
+  kind: 'app' // Specifies a Windows App Service plan.
 }
 
-output appServicePlanId string = appServicePlan.id // Outputs the resource Id of the App Service Plan.
-
+output appServicePlanId string = appServicePlan.id // Outputs the resource Id of the App Service plan.
 ```
