@@ -1,4 +1,4 @@
-In this module, you learned about the fundamentals of hybrid computing and Azure Arc. You also learned about the Azure Arc-enabled data services architecture with important components like the data controller. In the last two units, you learned the capabilities and features of Azure Arc-enabled SQL Managed Instance and PostgreSQL Hyperscale.
+In this module, you learned about the fundamentals of hybrid computing and Azure Arc. You also learned about the Azure Arc-enabled data services architecture with important components like the data controller. To conclude the module, you learned the capabilities and features of Azure Arc-enabled SQL Managed Instance and PostgreSQL Hyperscale.
 
 , Azure Arc-enabled SQL Managed Instance, and Azure Arc-enabled PostgreSQL Hyperscale.
 
