@@ -35,3 +35,29 @@ quiz:
     - content: "false"
       isCorrect: false
       explanation: "You can view billing, metrics, and logs in the Azure portal using indirect connected mode provided you export and upload using the az CLI"
+  - content: "Users configure automated backup for Azure Arc-enabled SQL Managed Instance using what options?"
+    choices:
+    - content: "A server configuration setting using the T-SQL procedure sp_configure"
+      isCorrect: false
+      explanation: "sp_configure doesn't provide an option to configure automated backups for Azure Arc-enabled SQL Managed Instance"
+    - content: "Long-term backup retention in the Azure portal"
+      isCorrect: false
+      explanation: "Long-term backup retention settings in the Azure portal is used for Azure SQL Managed Instance"
+    - content: "Configure a desired Recovery Point Objective (RPO) and/or Recovery Time Objective (RTO)"
+      isCorrect: true
+      explanation: "Adjusting the RPO settings will dictate how often a transaction log backup occurs and adjusting RPO will affect how long backups are kept"
+  - content: "Which tool can be used to manage an Azure Arc-enabled SQL Managed Instance"
+    choices:
+    - content: "Azure Data Studio (ADS)"
+      isCorrect: false
+      explanation: "There is more than one tool to manage an Azure Arc-enabled SQL Managed Instance"
+    - content: "kubectl"
+      isCorrect: false
+      explanation: "There is more than one tool to manage an Azure Arc-enabled SQL Managed Instance"
+    - content: "az CLI"
+      isCorrect: false
+      explanation: "There is more than one tool to manage an Azure Arc-enabled SQL Managed Instance"
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Azure Data Studio, kubectl, and az CLI can all be used to manage an Azure Arc-enabled SQL Managed Instance"
+

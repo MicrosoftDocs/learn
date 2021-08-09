@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-arc-enabled-data-services.5-postgresql-hyperscale
 metadata:
-  title: Azure Arc-enabled PostgreSQL Hyperscale
+  title: Azure Arc-enabled PostgreSQL Hyperscale (Preview)
   description: This unit will describe what Azure Arc-enabled PostgreSQL Hyperscale provides and why it provides a hybrid data solution for PostgreSQL applications. This unit will also compare the features and management capabilities of Azure Arc-enabled PostgreSQL Hyperscale with PostgreSQL and Azure Database for PostgreSQL. This unit will also provide more details on the interfaces used with Azure Arc-enabled PostgreSQL Hyperscale.
   ms.date: 06/28/2021
   author: buckwoody

@@ -114,6 +114,10 @@ The following interfaces can be used with Azure Arc-enabled SQL Managed Instance
 
 [Azure Data Studio](https://azure.microsoft.com/services/developer-tools/data-studio/) (ADS) is a multi-platform tool that can connect, query, and manage an Azure Arc-enabled SQL Managed Instance. ADS supports queries using T-SQL along with T-SQL notebooks. Also, you can use the ADS Azure Arc extension (Preview) to create and manage Azure Arc-enabled data services resources such as the data controller, SQL Managed Instance, and PostgreSQL Hyperscale.
 
+### SQL command line tools
+
+SQL command line tools like sqlcmd and bcp are supported with Azure Arc-enabled SQL Managed Instance.
+
 ### Azure portal
 
 If you are using direct connected mode, you can create, view, and manage Azure Arc-enabled data services from the [Azure portal](https://azure.microsoft.com/features/azure-portal/). Also, if you upload data using indirect connected mode, you can view Azure Arc-enabled SQL Managed Instance details in the Azure portal.
