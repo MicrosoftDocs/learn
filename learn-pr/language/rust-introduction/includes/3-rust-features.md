@@ -88,9 +88,7 @@ The Rust language has some limitations to consider when choosing the best langua
 
 - Developing code with Rust isn't as fast as using a scripting language like Ruby or Python. The unique features of Rust involve a level of complexity that can take more time to grasp and implement.
 - The Rust language requires explicit declarations for types and definitions for actions. The requirements are more rigorous than C++, and can involve significant more time and effort to implement.
-- The Rust compiler is known to be slower than other popular languages like C++ and C. The built programs also tend to be larger and less efficient.
-- Rust is a newer language. The libraries and third-party code aren't as mature as common functionality for other popular languages.
-- Rust is known to leak memory, and compiled code can't rely on standard garbage collection.
+- Rust is a newer language. The libraries and third-party code might not be as mature for some functionality as is available for other programming languages.
 
 
 ### Check your knowledge
