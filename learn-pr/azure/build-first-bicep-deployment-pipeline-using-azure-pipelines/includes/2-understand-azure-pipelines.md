@@ -15,7 +15,7 @@ Because a pipeline YAML file is a code file, the file is stored with your Bicep 
 
 ## Agents and pools
 
-Until now, you've deployed your Bicep files from your local computer. After you write a Bicep template, you deploy it to Azure by using the Azure CLI or Azure PowerShell. These tools use your computer's resources to submit the template to Azure. They use your personal identity to authenticate you in Azure and to verify that you have the permissions to deploy the resources.
+Until now, you've deployed your Bicep files from your local computer. After you write a Bicep template, you deploy it to Azure by using the Azure CLI or Azure PowerShell. These tools use your computer's resources to submit the template to Azure. They use your personal identity to authenticate you to Azure and to verify that you have the permissions to deploy the resources.
 
 A pipeline also needs access to a computer, so it can execute the deployment steps. Azure Pipelines uses a machine called an *agent*. An agent is a computer that's configured to run deployment steps for a pipeline. Each agent already has the Bicep and Azure tooling you used in earlier modules, so it can do the same things you do from your own computer. Instead of a human executing commands, the Azure Pipelines service instructs the agent to run the steps that you've defined in a YAML file.
 
@@ -43,11 +43,11 @@ Azure Pipelines offers two types of steps:
 * **Scripts**. Use a script step to run a single command or a sequence of commands in Bash, PowerShell, or the Windows command shell.
 * **Tasks**. A task is a convenient way to access many different capabilities without writing script statements. For example, a built-in task can run the Azure CLI and Azure PowerShell cmdlets to test your code or upload files to an FTP server. Anyone can write a task and share it with other users by publishing the task in the Visual Studio Marketplace. A large set of commercial and open-source tasks are available.
 
-Some developers prefer to use script statements instead of built-in tasks because they offer more control over what's executed. Other developers prefer to use tasks so that they don't have to write and manage scripts. In this module, we use a mixture of both approaches.
+Some people prefer to use script statements instead of built-in tasks because they offer more control over what's executed. Other people prefer to use tasks so that they don't have to write and manage scripts. In this module, we use a mixture of both approaches.
 
 ## Jobs
 
-In Azure Pipelines, a *job* represents an ordered set of steps. You must define at least one job in a pipeline. For complex deployments, it's common to have more than one job.
+In Azure Pipelines, a *job* represents an ordered set of steps. You always have at least one job in a pipeline, and when you create complex deployments, it's common to have more than one job.
 
 > [!NOTE]
 > You can set each job to run on a different agent pool. Running jobs on different agent pools is useful when you build and deploy solutions that need to use different operating systems in different parts of the job pipeline.
@@ -75,7 +75,7 @@ Let's look at each part of the file in detail:
 * `job` tells your pipeline that you have a single job.
   > [!TIP]
   > When you have only one job in your pipeline, you can omit the `jobs` and `job` keywords. We included `job` here to make it clear how the concepts work together in a pipeline.
-* `steps` lists the sequence of actions to run in the job. The example YAML includes two steps. Both steps run a simple script to echo some text. Each step has a `displayName` value, which is a human-readable name for the step. You'll see the display name when you look at the pipeline logs. To create a multi-line step, use the pipe character (`|`) as shown in the example. After your step executes, you'll see the outputs in the pipeline log.
+* `steps` lists the sequence of actions to run in the job. The example YAML includes two steps. Both steps run a simple script to echo some text. Each step has a `displayName` value, which is a human-readable name for the step. You'll see the display name when you look at the pipeline logs. To create a multi-line script step, use the pipe character (`|`) as shown in the example. After your step executes, you'll see the outputs in the pipeline log.
 
 > [!IMPORTANT]
 > In YAML files, indentation is important. Take a look at the example YAML. Some lines in the YAML are indented by two or four spaces. The number of spaces you use is important. If you don't indent your file correctly, Azure Pipelines can't interpret it. Visual Studio Code helps you find and fix errors in your YAML file indentation.

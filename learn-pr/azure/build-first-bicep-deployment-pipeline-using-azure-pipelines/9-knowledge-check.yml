@@ -31,9 +31,9 @@ quiz:
     - content: Someone commits an update to the *README.md* file in the *templates* directory in the main branch.
       isCorrect: false
       explanation: Incorrect. The *templates/README.md* file is excluded by a path filter.
-    - content: Someone commits an update to any file anywhere in the repository and pushes the update to a branch with a name that starts with *features/*.
+    - content: Someone commits an update to any file anywhere in the repository, and pushes the update to a branch with a name starting with **releases/**.
       isCorrect: false
-      explanation: Incorrect. Changes to any file in a branch that starts with *features/* won't trigger the pipeline because *features/* is excluded by a path filter.
+      explanation: Incorrect. Changes to the _templates/README.md_ file won't trigger the pipeline, because that filename is excluded by a path filter.
     - content: Someone commits an update to the *template.bicep* file in the *templates* directory and pushes the update to a branch with a name that starts with *releases/*.
       isCorrect: true
       explanation: Correct. The *templates/template.bicep* file matches the `include` path filter, and it doesn't match the `exclude` path filter. Also, any branch name that starts with *releases/* is included in the branch trigger.

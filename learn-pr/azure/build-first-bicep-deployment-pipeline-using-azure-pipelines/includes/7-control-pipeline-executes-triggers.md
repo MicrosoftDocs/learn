@@ -21,7 +21,7 @@ trigger:
 
 ### Trigger when multiple branches change
 
-You can set up triggers to run your pipeline on sets of branches or on a type of branch. For example, suppose you create *release branches* that contain the code you'll deploy for a specific release of your project. You can use branch names like *release/v1*, *release/v2*, and so on. You want to run your pipeline anytime your code changes on a branch that begins with the name *release/*. You can use the `include` property with a `*` wildcard:
+You can set up triggers to run your pipeline on a specific branch or on sets of branches. For example, suppose you create *release branches* that contain the code you'll deploy for a specific release of your project. You can use branch names like *release/v1*, *release/v2*, and so on. You want to run your pipeline anytime your code changes on a branch that begins with the name *release/*. You can use the `include` property with a `*` wildcard:
 
 :::code language="yaml" source="code/7-branch-filter-include.yml" highlight="3-5":::
 

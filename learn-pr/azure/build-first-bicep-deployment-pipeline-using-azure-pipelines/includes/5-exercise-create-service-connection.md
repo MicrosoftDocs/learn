@@ -109,7 +109,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
    az ad sp create-for-rbac \
      --name ToyWebsitePipeline \
      --role Contributor \
-     --scopes RESOURCE*GROUP*ID
+     --scopes RESOURCE_GROUP_ID
    ```
 
 1. Look at the JSON output from the command. It includes the following properties:
@@ -143,7 +143,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
    $servicePrincipal = New-AzADServicePrincipal `
      -DisplayName ToyWebsitePipeline `
      -Role Contributor `
-     -Scope RESOURCE*GROUP*ID
+     -Scope RESOURCE_GROUP_ID
 
    $plaintextSecret = [System.Net.NetworkCredential]::new('', $servicePrincipal.Secret).Password
    ```
@@ -199,7 +199,7 @@ You've created a resource group and a service principal. Next, create a service 
    :::image type="content" source="../media/5-create-service-connection-principal-details-3.png" alt-text="Screenshot of the Azure DevOps 'Create service connection' page, with the 'Verify and save' button highlighted.":::
 
    > [!TIP]
-   > For simplicity, you're giving every pipeline to access your service connection. When you create real service connections that work with production resources, consider restricting access to only the pipelines that need them.
+   > For simplicity, you're giving every pipeline access to your service connection. When you create real service connections that work with production resources, consider restricting access to only the pipelines that need them.
 
 1. In **Service connections**, verify that your new service connection is shown in the list of service connections.
 

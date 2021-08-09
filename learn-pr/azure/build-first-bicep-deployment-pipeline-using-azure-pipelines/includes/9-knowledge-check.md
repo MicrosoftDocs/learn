@@ -11,8 +11,7 @@ trigger:
     - templates
     exclude:
     - templates/README.md
-    - features/*
-
+ 
 pool:
   vmImage: ubuntu-latest
 

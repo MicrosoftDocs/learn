@@ -4,7 +4,7 @@ Now that you've created a basic pipeline, you're ready to set up the pipeline to
 
 ## Service connections
 
-When you deploy a Bicep file from your own computer, you use the Azure CLI or Azure PowerShell. Before you can deploy your code, sign in to Azure. Usually, the tools ask you to enter your email address and password in a browser. After your credentials are verified, your permissions are authenticated and you can use the tools to deploy your Bicep file.
+When you deploy a Bicep file from your own computer, you use the Azure CLI or Azure PowerShell. Before you can deploy your code, sign in to Azure. Usually, the tools ask you to enter your email address and password in a browser. After your credentials are verified, your permissions to deploy resources are confirmed and you can use the tools to deploy your Bicep file.
 
 Deployment by pipeline requires authentication, too. Because pipelines run without human intervention, pipelines authenticate to Azure by using a service principal. A service principal's credentials consist of an *application ID* and a secret, which usually is a key or a certificate. In Azure Pipelines, you use a *service connection* to securely store these credentials so that your pipeline can use them. A service connection also includes some other information to help your pipeline identify the Azure environment that you want to deploy to.
 
@@ -65,7 +65,7 @@ When the task starts, it uses the service connection to sign in to Azure. By the
 
 ## Variables
 
-Often, your pipelines contain values that you want to keep separate from your YAML file. For example, when you deploy a Bicep file to a resource group, you specify the name of the resource group. The resource group name probably is different when you deploy to different environments. You also might need to provide parameters for your Bicep files, including secrets, like database server passwords. Don't store these values in your pipeline YAML file or anywhere else in your Git repository. Instead, to increase security, use *variables*.
+Often, your pipelines contain values that you want to keep separate from your YAML file. For example, when you deploy a Bicep file to a resource group, you specify the name of the resource group. The resource group name probably is different when you deploy to different environments. You also might need to provide parameters for your Bicep files, including secrets, like database server passwords. Don't store these values in your pipeline YAML file or anywhere else in your Git repository. Instead, to increase security and to make your pipeline definitions reusable, use *variables*.
 
 ### Create a variable
 

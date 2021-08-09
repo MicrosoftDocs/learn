@@ -47,7 +47,7 @@ When you work with Azure Repos in Visual Studio Code on macOS, you use a special
 
 ## Clone the repository
 
-In Azure DevOps, clone your repository.
+In Visual Studio Code, clone your repository.
 
 1. In **Clone to your computer**, select **Clone in VS Code**. If you're prompted to allow Visual Studio Code to open, select **Open**.
 
@@ -162,7 +162,7 @@ You've created a pipeline definition. Next, register the pipeline with Azure Pip
 
     :::image type="content" source="../media/3-pipeline-job-checkout-log.png" alt-text="Screenshot of Azure DevOps that shows the pipeline job log, with the 'Checkout' step highlighted.":::
 
-    The logs for each step provide details about exactly what happened during the pipeline run. The information is helpful if you need to diagnose a problem with a pipeline. You don't have access to information about the agent that ran your steps.
+    The logs for each step provide details about exactly what happened during the pipeline run. The information is helpful if you need to diagnose a problem with a pipeline. You don't have direct access to the agent that ran your steps.
 
     In this case, the repository's contents were downloaded from Azure Repos to the agent's file system.
 
