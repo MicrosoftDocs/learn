@@ -46,7 +46,7 @@ quiz:
     - content: "Configure a desired Recovery Point Objective (RPO) and Recovery Time Objective (RTO)"
       isCorrect: true
       explanation: "Adjusting the RPO settings will dictate how often a transaction log backup occurs and adjusting RPO will affect how long backups are kept"
-  - content: "Which tool can be used to manage an Azure Arc-enabled SQL Managed Instance"
+  - content: "Which tool can be used to manage an Azure Arc-enabled SQL Managed Instance?"
     choices:
     - content: "Azure Data Studio (ADS)"
       isCorrect: false
