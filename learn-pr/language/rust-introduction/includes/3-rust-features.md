@@ -87,7 +87,7 @@ You can read more about the features of the Rust playground on the [Rust website
 The Rust language has some limitations to consider when choosing the best language for your project:
 
 - Developing code with Rust isn't as fast as using a scripting language like Ruby or Python. The unique features of Rust involve a level of complexity that can take more time to grasp and implement.
-- The Rust language requires explicit declarations for types and definitions for actions. The requirements are more rigorous than C++, and can involve significant more time and effort to implement.
+- The Rust language requires explicit declarations for types and definitions for actions. The requirements are more rigorous than C++, and can involve more time and effort to implement.
 - Rust is a newer language. The libraries and third-party code might not be as mature for some functionality as is available for other programming languages.
 
 
