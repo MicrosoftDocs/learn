@@ -45,23 +45,23 @@ To hold all of the users you create in this exercise, create a new organization.
 
 For Azure AD Premium to complete all the exercises in this module, you'll need to activate a free trial.
 
-1. In the left menu pane, select **Getting started**.
+1. In the left menu pane, under **Manage**, select **Licenses**. The **Overview** pane for *Licenses* appears.
 
-1. Under **Getting started with Azure AD**, select **Get a free trial for Azure AD Premium**.
+1. On the right side of pane, under **Quick tasks**, select **Get a free trial**.
 
     ![Screenshot that shows the link to create free trial.](../media/3-ad-get-started-get-trial.png)
 
-1. Under **Azure AD Premium 2**, select **Free trial** > **Activate**. If you don't have that option, that's ok. You can complete most of the exercises without it.
+    The **Activate** pane appears.
 
-1. In the left menu pane, select **Overview**.
+1. Under **Azure AD Premium P2**, expand **Free trial**, and then select **Activate**. If you don't have that option, that's ok. You can complete most of the exercises without it. After the premium license activates, the **Overview** pane for *Licenses* reappears.
 
-1. Refresh the browser until you see **Azure AD Premium P2** under the organization name. It may take a couple of minutes.
+1. Return to the **Overview** pane for Azure Active Directory for Contoso Marketing Company. On the **Overview** tab, under the **Basic information** section, refresh the browser until you see **Azure AD Premium P2** appear aside **License**. It may take a couple of minutes.
 
     :::image type="content" source="../media/3-azure-ad-premium-2.png" alt-text="Screenshot that shows Azure AD Premium P2 on the Overview page under Tenant information.":::
 
-   You should also see *Your role* listed as the **Global administrator**.
+   Under **My feed**, you should also see your role listed as the **Global administrator**.
 
-1. Copy the **Primary domain** name to use in the next section.
+1. Under **Basic information**, copy the **Primary domain** name to use in the next section.
 
 ## Add a new user
 
