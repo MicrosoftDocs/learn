@@ -1,19 +1,19 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-arc-enabled-data-services
 metadata:
-  title: Introduction to Azure Arc enabled data services
-  description: Introduction to Azure Arc enabled data services
+  title: Introduction to Azure Arc-enabled data services
+  description: Introduction to Azure Arc-enabled data services
   ms.date: 06/28/2021
   author: bobward
   ms.author: bobward
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid
-title: Introduction to Azure Arc enabled data services
+title: Introduction to Azure Arc-enabled data services
 summary: In this module you will learn the fundamentals of hybrid computing and Azure Arc. You will also learn the basics of Azure Arc-enabled data services including the overall architecture. Then you will learn the fundamentals of the major services in Azure Arc-enabled data services, SQL Managed Instance and PostgreSQL Hyperscale.
 abstract: |
   In this module you will:
-  - Understand how Azure Arc enabled-data services fits within the Azure Arc set of services.
+  - Understand how Azure Arc-enabled-data services fits within the Azure Arc set of services.
   - Learn how Azure Arc-enabled data services provides a hybrid data solution.
   - Understand a comparison Azure Arc-enabled data services and counterparts for on-premises and Azure solutions.
 prerequisites: |

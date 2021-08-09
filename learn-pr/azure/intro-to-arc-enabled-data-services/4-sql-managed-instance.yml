@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   ms.custom: e2e-hybrid
 title: Azure Arc-enabled SQL Managed Instance
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/4-sql-managed-instance.md)]
 quiz:
