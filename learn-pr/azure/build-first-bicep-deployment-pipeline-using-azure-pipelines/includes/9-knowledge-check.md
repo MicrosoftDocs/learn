@@ -4,7 +4,7 @@ The R&D team at your toy company has asked you to help them with their pipeline 
 trigger:
   branches:
     include:
-    - master
+    - main
     - releases/*
   paths:
     include:
