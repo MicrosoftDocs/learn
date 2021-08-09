@@ -21,9 +21,9 @@ quiz:
     - content: "The data must stay on-premises"
       isCorrect: true
       explanation: "Azure Arc-enabled data services PostgreSQL Hyperscale provides a method to retain data on-premises, and the Azure PostgreSQL Hyperscale Service is cloud-based."
-    - content: "The system should be deployed from the Azure Portal"
+    - content: "The system should be deployed from the Azure portal"
       isCorrect: false
-      explanation: "You can create both deployments from the Azure Portal."
+      explanation: "You can create both deployments from the Azure portal."
     - content: "The system must work with a graphical user interface (GUI)"
       isCorrect: false
       explanation: "You can use graphical tools in both types of deployment."
