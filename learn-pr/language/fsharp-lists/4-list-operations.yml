@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.fsharp-lists.list-operations
-title: Use operations on lists
+title: Perform operations on lists
 metadata:
-  title: Use operations on lists
+  title: Perform operations on lists
   description: This unit covers various operations from the list module, such as arithmetic operations, sorting, and iteration.
   author: softchris
   ms.author: chnoring
