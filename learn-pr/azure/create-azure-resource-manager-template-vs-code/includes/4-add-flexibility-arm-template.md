@@ -97,7 +97,7 @@ When you deploy the template, you can give a value for the parameter. Notice the
 
 ```azurecli
 templateFile="azuredeploy.json"
-az deployment group create \
+az group deployment create \
   --name testdeployment1 \
   --template-file $templateFile \
   --parameters storageAccountType=Standard_LRS
