@@ -27,6 +27,21 @@ summary: |
   * Build deployment scripts that define custom steps in your Bicep templates.
 
   Each module in this learning path provides options for use with the Azure CLI and with Azure PowerShell. You'll use Visual Studio Code to write and validate your Bicep code.
+
+  To learn about Bicep, we recommend you take these two learning paths:
+
+  :::row:::
+  :::column:::
+    <img src="/learn/achievements/bicep/bicep-deploy-manage.svg" width="101" height="84" alt="The trophy for the Deploy and manage resources in Azure by using Bicep learning path." role="presentation"></img>
+
+    Part 1: Deploy and manage resources in Azure by using Bicep
+  :::column-end:::
+  :::column:::
+    <img src="/learn/achievements/generic-trophy.svg" width="101" height="84" alt="The trophy for the Build Azure infrastructure in a team environment by using Bicep learning path." role="presentation"></img>
+
+    [Part 2: Build Azure infrastructure in a team environment by using Bicep](/learn/paths/bicep-collaborate/)
+  :::column-end:::
+  :::row-end:::
 prerequisites: Familiarity with Azure Resource Manager and Azure resource groups is recommended, but not required.
 iconUrl: /learn/achievements/bicep/bicep-deploy-manage.svg
 levels:
