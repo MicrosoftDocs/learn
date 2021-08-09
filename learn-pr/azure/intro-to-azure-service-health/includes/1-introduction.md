@@ -10,8 +10,11 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=master#rule-use-the-standard-module-introduction-format)
 -->
-TODO: add your topic sentences(s)
-TODO: add your visual element
+A cloud environment is composed by different services distributed among geographies. Those geographies are composed by multiple regions and datacenters, which means that even with all levels of abstractions, your cloud environment is powered by datacenters managed by a cloud provider.
+
+Datacenters requires planned maintenances, hardware upgrades, failover-tests and much more to improve their resiliency. So how can you be aware about the health of Azure Services within datacenters? Azure Service Health is your answer. It provides a personalized view of the status of your Azure services and regions, includes information about planned maintenance and current incidents, and offers richer functionality, including alerting, health advisories and root cause analysis. 
+
+
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
