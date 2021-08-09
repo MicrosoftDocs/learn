@@ -92,13 +92,15 @@ Since Microsoft manages the complete platform and infrastructure of Azure SQL Ma
 
 ### Disaster Recovery
 
-Like Azure SQL Managed Instance, Azure Arc-enabled SQL Managed Instance provides an automatic backup system for databases including point-in-time restore.
+Like Azure SQL Managed Instance, Azure Arc-enabled SQL Managed Instance provides an automatic backup system for databases including point-in-time restore. Users can manually execute COPY_ONLY backups and restore them at any time.
 
 Users configure a desired Recovery Point Objective (RPO) and Recovery Time Objective (RTO). These settings determined how often transaction log backups are taken and how long backups are kept.
 
-Azure SQL Managed Instance provides built-in redundancy for backups using Azure storage. Users for Azure Arc-enabled SQL Managed Instance can configure a specific Kubernetes storage class to be used for SQL backups but are responsible for any redundancy needs.
+Azure SQL Managed Instance provides built in redundancy for backups using Azure storage. Users for Azure Arc-enabled SQL Managed Instance can configure a specific Kubernetes storage class to be used for SQL backups but are responsible for any redundancy needs.
 
 ## Migration
+
+Because Azure Arc-enabled SQL Managed Instances uses a SQL Server engine, existing SQL Server versions can be migrated using database backup and restore. Databases can be restored directly from Azure Storage or by copying the backup into the container running the SQL instance.
 
 ## Interfaces for Azure Arc-enabled SQL Managed Instance
 
@@ -106,12 +108,24 @@ The following interfaces can be used with Azure Arc-enabled SQL Managed Instance
 
 ### SQL Server Management Studio (SSMS)
 
+[SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) (SSMS) is fully compatible to connect, query, and manage an Azure Arc-enabled SQL Managed Instance.
+
 ### Azure Data Studio (ADS)
+
+[Azure Data Studio](https://azure.microsoft.com/services/developer-tools/data-studio/) (ADS) is a multi-platform tool that can connect, query, and manage an Azure Arc-enabled SQL Managed Instance. ADS supports queries using T-SQL along with T-SQL notebooks. Also, you can use the ADS Azure Arc extension (Preview) to create and manage Azure Arc-enabled data services resources such as the data controller, SQL Managed Instance, and PostgreSQL Hyperscale.
 
 ### Azure portal
 
+If you are using direct connected mode, you can create, view, and manage Azure Arc-enabled data services from the [Azure portal](https://azure.microsoft.com/features/azure-portal/). Also, if you upload data using indirect connected mode, you can view Azure Arc-enabled SQL Managed Instance details in the Azure portal.
+
 ### az CLI
+
+You can use the arcdata extension with the multi-platform [az](https://docs.microsoft.com/cli/azure/) command line interface (CLI) to create, view, and manage Azure Arc-enabled data services including SQL Managed Instance. You can use az CLI with either connection mode. az CLI is the primary interface to upload billing, metrics, and logs when using indirect connected mode.
 
 ### kubectl
 
-### SQL providers
+You can use the multi-platform [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) command line interface (CLI) to create, view, and manage Azure Arc-enabled data services including SQL Managed Instance. The az CLI tool is the  preferred command line interface to use with Azure Arc-enabled SQL Managed Instance, but you can use yaml files with kubectl to create and manage resources. There are some scenarios, such as editing the default point in time restore, which require the use of kubectl.
+
+### SQL drivers
+
+You can use any supported [SQL Server driver](https://docs.microsoft.com/sql/connect/sql-connection-libraries?) for your application to connect and execute queries against an Azure Arc-enabled SQL Managed Instance. This includes drivers for popular programming languages such as C#, Java, Node.js, PHP, Python, and Ruby.
