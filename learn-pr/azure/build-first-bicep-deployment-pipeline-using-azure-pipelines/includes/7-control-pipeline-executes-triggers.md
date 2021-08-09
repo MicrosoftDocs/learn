@@ -67,7 +67,7 @@ schedules:
     - main
 ```
 
-When you create a branch trigger *and* a scheduled trigger in the same pipeline, the pipeline runs every time a file changes on the branch that's set in the trigger *and* on the schedule you set. In this example, the pipeline runs every day at midnight UTC and also whenever a change is pushed to the main branch.
+When you create a branch trigger *and* a scheduled trigger in the same pipeline, the pipeline runs every time a file changes on the branch that's set in the trigger *and* on the schedule you set. In this example, the pipeline runs every day at midnight UTC and also whenever a change is pushed to the *main* branch.
 
 > [!TIP]
 > It's a good practice to set triggers for each pipeline. If you don't set triggers, by default, your pipeline automatically runs whenever any file changes on any branch, which often isn't what you want.
