@@ -30,7 +30,7 @@ These elements fall into three categories:
 * **Something you possess** - which might be a mobile app that receives a notification or a token-generating device.
 * **Something you are** - which typically is a biometric property, such as a fingerprint or face scan used on many mobile devices.
 
-![Conceptual art showing the pieces of MFA](../media/2-mfa-example.png)
+![Conceptual art showing the pieces of MFA.](../media/2-mfa-example.png)
 
 Using Azure AD MFA increases identity security by limiting the impact of credential exposure. To fully authenticate, a malicious hacker who has a user's password would also need their phone or their fingerprint. Authentication with only a single factor is insufficient, and without authentication from Azure AD MFA, a malicious hacker is unable to use those credentials to authenticate. You should enable Azure AD MFA wherever possible, because it adds enormous benefits to security.
 

@@ -128,4 +128,4 @@ memory usage: 5.9 KB
 
 There are 46 rows, and you see that the two unnamed columns have 0 non-`NaN` values (which means all 46 rows have `NaN` values for these two columns). So you can deduce that at least two columns can be eliminated from the DataFrame.
 
-© 2020 Warner Bros. Ent. All Rights Reserved.
+© 2021 Warner Bros. Ent. All Rights Reserved.

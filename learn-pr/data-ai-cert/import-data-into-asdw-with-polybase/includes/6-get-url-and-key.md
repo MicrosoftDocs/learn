@@ -16,7 +16,7 @@ Use the Azure portal to get both of these values.
 
 1. Select **Show keys**, and copy the value of **key1** by selecting the *Copy to clipboard* icon at the end of the field. Save it to a temporary file, for example in Notepad. The value is used in the next unit.
 
-    ![Getting the access key](../media/6-get-access-key.png)
+    ![Getting the access key.](../media/6-get-access-key.png)
 
 1. Next, go to your blob container. In the middle menu pane, under **Data storage**, select **Containers**. The **Containers** pane appears.
 
@@ -26,7 +26,7 @@ Use the Azure portal to get both of these values.
 
 1. Copy the **URL** to the container. It should be something like `https://demodwstorage.blob.core.windows.net/data-files`.
 
-    ![Copying the URL](../media/6-copy-url.png)
+    ![Copying the URL.](../media/6-copy-url.png)
 
     You will be manipulating the URL using the location **demodwstorage.blob.core.windows.net** and the container **data-files**. They become important when you import data from blob storage to Azure Synapse Analytics by using PolyBase in the next unit
 

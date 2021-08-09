@@ -1,6 +1,6 @@
 Let's verify that data is propagating from the IoT Edge Gateway into the Azure cloud! With data flowing, we can run hot-path operations on live data and meet cold-path requirements for storage.  Our operations team is already plugged in and waiting, let's make sure the data is live!
 
-[![operation team member](../media/operator.png)](../media/operator.png#lightbox)
+[![operation team member.](../media/operator.png)](../media/operator.png#lightbox)
 
 In this unit, you'll use the Azure CLI to monitor events sent to Azure IoT Hub.  These events will come from the downstream IoT Device connected to the IoT Edge Gateway. These steps will validate that event flow from downstream device to IoT Edge Gateway and upstream to IoT Hub is working correctly.
 

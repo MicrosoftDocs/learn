@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-java-azure.exercise-setup
+title: Exercise - sample application environment
+metadata:
+  unitType: exercise
+  title: Exercise - sample application environment
+  description: In this exercise, we'll set up the sample application environment
+  ms.date: 07/07/2021
+  author: roryp
+  ms.author: ropreddy
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 30
+content: |
+  [!include[](includes/3-exercise-setup.md)]

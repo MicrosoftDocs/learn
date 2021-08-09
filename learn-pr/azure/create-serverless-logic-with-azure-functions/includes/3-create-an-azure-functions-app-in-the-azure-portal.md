@@ -22,13 +22,13 @@ Let's create a function app in the Azure portal.
 
 1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a> using the same account you activated for the sandbox.
 
-1. Select **Create a resource**.
+1. Under **Azure services**, select **Create a resource**.
 
     ![Screenshot of the Azure portal menu open showing the Create a resource choice.](../media/3-create-function-app-1.png)
 
     The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Compute**, and then select **Function App** in the **Featured** list. The **Create Function App** pane appears.
+1. In the left menu pane, select **Compute**, and then select **Function App** in the *Popular offers* list. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -41,7 +41,7 @@ Let's create a function app in the Azure portal.
     | Function App name  | Enter a globally unique app name. The function app name will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the seven (7) x's can be replaced with your initials and your birth year. If this isn't globally unique, try any other combination. Valid characters are a-z, 0-9 and - |
     | Publish  | Code |
     | Runtime stack | Node.js (which is the language in which we implement the function examples in this exercise). |
-    | Version | *default* |
+    | Version | Accept *default* |
     | Region | Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function. |
 
 1. Select **Review + create**, and then select **Create**. Deployment will take a few minutes. You'll receive a notification when deployment is completed.
@@ -52,7 +52,7 @@ Let's create a function app in the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account as you activated for the sandbox.
 
-1. Select **Create a resource**.
+1. Under **Azure services**, select **Create a resource**.
 
     [!include[](../../includes/functions-classic-workaround.md)]
 
@@ -60,7 +60,7 @@ Let's create a function app in the Azure portal.
 
     The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Compute**, and then select **Function App** in the **Featured** list. The **Create Function App** page appears.
+1. In the left menu pane, select **Compute**, and then select **Function App** in the *Popular offers* list. The **Create Function App** page appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -73,7 +73,7 @@ Let's create a function app in the Azure portal.
     | Function App name  | Enter a globally unique app name. The function app name will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the seven (7) x's can be replaced with your initials and your birth year. If this isn't globally unique, try any other combination. Valid characters are a-z, 0-9 and - |
     | Publish  | Code |
     | Runtime stack | Node.js (which is the language in which we implement the function examples in this exercise). |
-    | Version | *default* |
+    | Version | Accept *default* |
     | Region | Select a geographical location close to you. In a production system, you would want to select a location near your customers or consumers of the function. |
 
 1. Select **Review + create**, and then select **Create**. Deployment will take a few minutes. You'll receive a notification when deployment is completed.

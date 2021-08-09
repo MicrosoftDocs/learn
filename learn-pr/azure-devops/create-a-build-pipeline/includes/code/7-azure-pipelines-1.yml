@@ -8,9 +8,9 @@ pool:
 
 steps:
 - task: UseDotNet@2
-  displayName: 'Use .NET SDK 5.0'
+  displayName: 'Use .NET SDK 5.x'
   inputs:
-    version: 5.0.203
+    version: '5.x'
 
 - task: Npm@1
   displayName: 'Run npm install'

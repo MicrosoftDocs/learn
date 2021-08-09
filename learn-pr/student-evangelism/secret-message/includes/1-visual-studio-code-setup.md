@@ -4,7 +4,7 @@ Start by creating a folder for your code on your computer where you can easily f
 
 Next, open Visual Studio Code. From the **Start** screen, select **Open folder** and choose your **Sleuth** folder.
 
-:::image type="content" source="../media/open-folder.png" alt-text="Screenshot that shows how to open a folder in Visual Studio Code":::
+:::image type="content" source="../media/open-folder.png" alt-text="Screenshot that shows how to open a folder in Visual Studio Code.":::
 
 Now create a file called <b>decrypt.py</b>.
 

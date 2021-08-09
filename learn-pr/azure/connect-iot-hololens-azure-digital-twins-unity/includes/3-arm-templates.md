@@ -1,4 +1,4 @@
-By using several Azure services working in unison, you can bring data to your Digital Twin and facilitate two-way communication between Azure and your Digital Twin – both in Unity or on the HoloLens. 
+By using several Azure services working in unison, you can bring data to your Digital Twin and facilitate two-way communication between Azure and your Digital Twin – both in Unity and in Mixed Reality. 
 
 The Azure services used in this module are as follows:
 

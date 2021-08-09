@@ -11,7 +11,7 @@ The Microsoft Endpoint Manager architecture provides three stages of the cloud m
 The first stage uses tenant-attach capabilities that provide the most flexible path for Configuration Manager customers to start gaining cloud benefits without necessarily enrolling their Windows clients with Intune. Connect the Configuration Manager site to the cloud and immediately gain access to a host of remote actions and analytics.
 Organizations ready for the next step can use co-management to manage Windows using both Configuration Manager and Intune. The Windows 10 device is managed by both Configuration Manager and mobile device management (MDM) systems in the second stage. We recommend new customers or new endpoints go directly to the cloud with Intune. Existing customers can gradually move more workloads to the cloud in the third stage.
 
-[ ![Endpoint security management](../media/intro-to-endpoint-manager-08.png) ](../media/intro-to-endpoint-manager-08.png#lightbox)
+[ ![Endpoint security management.](../media/intro-to-endpoint-manager-08.png) ](../media/intro-to-endpoint-manager-08.png#lightbox)
 
 ## Modern endpoint Management
 

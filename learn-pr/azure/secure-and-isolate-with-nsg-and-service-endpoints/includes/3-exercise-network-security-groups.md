@@ -2,7 +2,7 @@ As the solution architect for the manufacturing company, you now want to start m
 
 In this unit, you'll configure a network security group and security rules to restrict network traffic to specific servers. You want your app server to be able to connect to your database server over HTTP. You don't want the database server to be able to use HTTP to connect to the app server.
 
-![Diagram of exercise scenario network security groups](../media/3-exercise-first-task.svg)
+![Diagram of exercise scenario network security groups.](../media/3-exercise-first-task.svg)
 
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -274,7 +274,7 @@ Here, you'll check if your new rule works. **AppServer** should be able to commu
 
 Next, create an app security group for database servers so that all servers in this group can be assigned the same settings. You're planning to deploy more database servers, and want to prevent these servers from accessing app servers over HTTP. By assigning sources in the app security group, you don't need to manually maintain a list of IP addresses in the network security group. Instead, you assign the network interfaces of the VMs you want to manage to the app security group.
 
-![Diagram of exercise scenario app security groups](../media/3-exercise-second-task.svg)
+![Diagram of exercise scenario app security groups.](../media/3-exercise-second-task.svg)
 
 1. To create a new app security group called **ERP-DB-SERVERS-ASG**, in Cloud Shell, run the following command.
 

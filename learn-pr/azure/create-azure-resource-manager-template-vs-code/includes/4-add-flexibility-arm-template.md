@@ -11,19 +11,21 @@ In the parameters section of the template, you specify which values you can inpu
 The available properties for a parameter are:
 
 ```json
-"parameters": {
-  "<parameter-name>" : {
-    "type" : "<type-of-parameter-value>",
-    "defaultValue": "<default-value-of-parameter>",
-    "allowedValues": [ "<array-of-allowed-values>" ],
-    "minValue": <minimum-value-for-int>,
-    "maxValue": <maximum-value-for-int>,
-    "minLength": <minimum-length-for-string-or-array>,
-    "maxLength": <maximum-length-for-string-or-array-parameters>,
-    "metadata": {
-      "description": "<description-of-the parameter>"
-    }
-  }
+"parameters":{
+   "<parameter-name>":{
+      "type":"<type-of-parameter-value>",
+      "defaultValue":"<default-value-of-parameter>",
+      "allowedValues":[
+         "<array-of-allowed-values>"
+      ],
+      "minValue":"<minimum-value-for-int>",
+      "maxValue":"<maximum-value-for-int>",
+      "minLength":"<minimum-length-for-string-or-array>",
+      "maxLength":"<maximum-length-for-string-or-array-parameters>",
+      "metadata":{
+         "description":"<description-of-the-parameter>"
+      }
+   }
 }
 ```
 
@@ -50,14 +52,22 @@ In the parameters section of the ARM template, specify the parameters that can b
 Here's an example of a template file with a parameter for the storage account SKU defined in the parameters section of the template. You can provide a default for the parameter to be used if no value is specified at execution.
 
 ```json
-"parameters": {
-   "storageAccountType": {
-       "type": "string",
-       "defaultValue": "Standard_GRS",
-       "metadata": {
-           "description": "The type of the new storage account created to store the VM disks."
-       }
+"parameters":{
+   "<parameter-name>":{
+      "type":"<type-of-parameter-value>",
+      "defaultValue":"<default-value-of-parameter>",
+      "allowedValues":[
+         "<array-of-allowed-values>"
+      ],
+      "minValue":"<minimum-value-for-int>",
+      "maxValue":"<maximum-value-for-int>",
+      "minLength":"<minimum-length-for-string-or-array>",
+      "maxLength":"<maximum-length-for-string-or-array-parameters>",
+      "metadata":{
+         "description":"<description-of-the-parameter>"
+      }
    }
+}
 ```
 
 Then, use the parameter in the resource definition. The syntax is ```[parameters('name of the parameter')]```. You use the ```parameters``` function. You learn more about functions in the next module.
@@ -78,7 +88,7 @@ Then, use the parameter in the resource definition. The syntax is ```[parameters
        }
      }
    ]
-  }
+  
 ```
 
 When you deploy the template, you can give a value for the parameter. Notice the last line in the following command:
@@ -87,7 +97,7 @@ When you deploy the template, you can give a value for the parameter. Notice the
 
 ```azurecli
 templateFile="azuredeploy.json"
-az deployment group create \
+az group deployment create \
   --name testdeployment1 \
   --template-file $templateFile \
   --parameters storageAccountType=Standard_LRS

@@ -10,7 +10,7 @@ Each cloud resource that a CSP offers has an associated cost or set of costs. Ca
 
 A key advantage of cloud computing is that customers "rent" resources from the CSP and only pay for the resources that they use. Computing these costs, however, isn't trivial. For example, provisioning a virtual machine in Azure incurs a per-hour cost for the VM, a per-GB-month cost for storage, and a per-GB-month cost for data egress. Customers also pay for the virtual network to which the VM belongs and the resources that comprise it. The challenge for the cloud service provider is to accurately capture usage metrics for all of these resources. Figure 2.9 shows a typical breakdown of the metrics that apply to individual service models. Metering and monitoring usage for millions of customers employing tens or hundreds of services every month generates gigabytes of logs each minute, and customers must be charged accordingly. The most popular model used to define such metrics is called the chargeback model.
 
-![Figure 2.9: Metering in different types of cloud services](../media/metering.png)
+![Figure 2.9: Metering in different types of cloud services.](../media/metering.png)
 
 _Figure 2.9: Metering in different types of cloud services._
 
@@ -22,7 +22,7 @@ In the chargeback model, service owners measure resource usage and charge costs 
 
 Azure Cost Management is a service that helps organizations plan their spend on cloud services and monitor that spend over time. It works with both Azure and AWS. It provides several key features to organizations that use it, including cost analysis, budgeting, and recommendations (Figure 2.10).
 
-![Figure 2.10: The Azure Cost Management portal](../media/cost-management-portal.png)
+![Figure 2.10: The Azure Cost Management portal.](../media/cost-management-portal.png)
 
 _Figure 2.10: The Azure Cost Management portal<sup>[1][^1]</sup>._
 

@@ -117,7 +117,7 @@ After your app is redeployed, you can test that the new restrictions are effecti
 1. Select **AAD** in the authentication provider list to log in.
 1. You should see a 404 error page like this:
 
-   :::image type="content" source="../media/static-web-apps-404-error-page.png" alt-text="Screenshot of the Static Web Apps 404 error page":::
+   :::image type="content" source="../media/static-web-apps-404-error-page.png" alt-text="Screenshot of the Static Web Apps 404 error page.":::
 
 1. Use the back button of your browser to go back to your app.
 1. Select **GitHub** in the authentication provider list to log in.

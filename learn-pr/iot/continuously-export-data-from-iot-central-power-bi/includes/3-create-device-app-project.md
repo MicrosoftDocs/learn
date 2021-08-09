@@ -78,7 +78,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
 1. In Visual Studio, go to the **JavaScript** project types, and then select **Blank Node.js Console Application**, called "RefrigeratedTruck."
 
-    [![Screenshot showing how to create a new blank Node.js project in Visual Studio](../media/refrigerated-trucks-vs-project.png)](../media/refrigerated-trucks-vs-project.png#lightbox)
+    [![Screenshot showing how to create a new blank Node.js project in Visual Studio.](../media/refrigerated-trucks-vs-project.png)](../media/refrigerated-trucks-vs-project.png#lightbox)
 
 1. Right-click the **npm** entry in Solution Explorer, and select **Install New npm Packages**.
 
@@ -159,7 +159,7 @@ If this text isn't displayed, it usually means that either the IoT Central app i
 
 The "Device successfully connected to Azure IoT Central" line should be followed by some text verifying that the settings and properties were sent successfully.
 
-[![Screenshot of the console window showing a successful connection to IoT Central](../media/refrigerated-trucks-connected.png)](../media/refrigerated-trucks-connected.png#lightbox)
+[![Screenshot of the console window showing a successful connection to IoT Central.](../media/refrigerated-trucks-connected.png)](../media/refrigerated-trucks-connected.png#lightbox)
 
 If your device has connected successfully, proceed to the second test.
 
@@ -182,7 +182,7 @@ Watch the telemetry for a short while.
 
     | IoT Central | Device app |
     | --- | --- |
-    | [![Screenshot showing a tile in IoT Central, receiving the truck temperatures](../media/refrigerated-trucks-central.png)](../media/refrigerated-trucks-central.png#lightbox) | [![Screenshot showing the console output from the device app, showing the truck contents temperatures](../media/refrigerated-trucks-console.png)](../media/refrigerated-trucks-console.png#lightbox) |
+    | [![Screenshot showing a tile in IoT Central, receiving the truck temperatures.](../media/refrigerated-trucks-central.png)](../media/refrigerated-trucks-central.png#lightbox) | [![Screenshot showing the console output from the device app, showing the truck contents temperatures](../media/refrigerated-trucks-console.png)](../media/refrigerated-trucks-console.png#lightbox) |
 
     > [!NOTE]
     > The screenshots in this module are taken from the C# version of the app. The Node.js app display is similar, but not identical.
@@ -193,7 +193,7 @@ Watch the telemetry for a short while.
 
    In the following image, a blue circle near Seattle shows that your truck is ready to go. You might have to zoom out to view the entire map.
 
-    [![Screenshot showing the location of the truck at its base near Seattle](../media/refrigerated-trucks-seattle.png)](../media/refrigerated-trucks-seattle.png#lightbox)
+    [![Screenshot showing the location of the truck at its base near Seattle.](../media/refrigerated-trucks-seattle.png)](../media/refrigerated-trucks-seattle.png#lightbox)
 
 1. Try giving the truck a command to go to a customer. To do so, select **Commands**, enter a customer ID, and then select **Run**. Valid customer numbers are 0 through 9.
 

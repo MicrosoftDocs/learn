@@ -27,7 +27,7 @@ Next, add a new secret to the vault.
 1. Click the **Generate/Import** button at the top of the **Secrets** panel.
 1. Fill out the **Create a secret** screen with a name, value, and (optional) content type. An example is shown below.
 
-    ![Screenshot showing the Create a secret pane in the Azure portal for Azure Key Vault](../media/1-create-secret.png)
+    ![Screenshot showing the Create a secret pane in the Azure portal for Azure Key Vault.](../media/1-create-secret.png)
 
 1. Select **Create** to add the secret.
 
@@ -38,7 +38,7 @@ Finally, verify that the secret value has been set.
 1. Select your secret from the list and then select the current version of the secret.
 1. Select **Show Secret Value** to see the value assigned to the secret.
 
-    ![Screenshot showing the secret value in the Azure portal](../media/1-show-secret.png)
+    ![Screenshot showing the secret value in the Azure portal.](../media/1-show-secret.png)
 
 ## Other ways to consume the secret
 

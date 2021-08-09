@@ -63,7 +63,7 @@ Visual Studio Code comes with an integrated terminal so you can edit files and w
 
 1. Start Visual Studio Code.
 1. On the **View** menu, select **Terminal**.
-1. In the drop-down list, select **bash**:
+1. In the drop-down list, select **bash**. If you're familiar with another Unix shell that you prefer to use, such as Zsh, select that shell instead.
 
     :::image type="content" source="../../shared/media/vscode-terminal-bash.png" alt-text="A screenshot of Visual Studio Code showing where to locate the Bash shell.":::
 
@@ -136,92 +136,107 @@ To clone the *Space Game* web project to your computer:
 
 ### Set the upstream remote
 
-A *remote* is a Git repository where team members collaborate. It's like a repository on GitHub.
+A *remote* is a Git repository where team members collaborate (like a repository on GitHub). Here you list your remotes and add a remote that points to Microsoft's copy of the repository so that you can get the latest sample code.
 
-Run this `git remote` command to list your remotes:
+1. Run this `git remote` command to list your remotes:
 
-```bash
-git remote -v
-```
+    ```bash
+    git remote -v
+    ```
 
-You see that you have both fetch (download) and push (upload) access to your repository:
+    You see that you have both fetch (download) and push (upload) access to your repository:
 
-```output
-origin  https://github.com/username/mslearn-tailspin-spacegame-web-deploy.git (fetch)
-origin  https://github.com/username/mslearn-tailspin-spacegame-web-deploy.git (push)
-```
+    ```output
+    origin  https://github.com/username/mslearn-tailspin-spacegame-web-deploy.git (fetch)
+    origin  https://github.com/username/mslearn-tailspin-spacegame-web-deploy.git (push)
+    ```
 
-*Origin* specifies your repository on GitHub. When you fork code from another repository, the original remote (the one you forked from) is commonly named *upstream*.
+    *Origin* specifies your repository on GitHub. When you fork code from another repository, the original remote (the one you forked from) is commonly named *upstream*.
 
-Run this `git remote add` command to create a remote named *upstream* that points to the Microsoft repository:
+1. Run this `git remote add` command to create a remote named *upstream* that points to the Microsoft repository:
 
-```bash
-git remote add upstream https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy.git
-```
+    ```bash
+    git remote add upstream https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy.git
+    ```
 
-Run `git remote` a second time to see the changes:
+1. Run `git remote` a second time to see the changes:
 
-```bash
-git remote -v
-```
+    ```bash
+    git remote -v
+    ```
 
-You see that you still have both fetch (download) and push (upload) access to your repository. You also now have fetch access from the Microsoft repository:
+    You see that you still have both fetch (download) and push (upload) access to your repository. You also now have fetch access from the Microsoft repository:
 
-```output
-origin  https://github.com/username/mslearn-tailspin-spacegame-web-deploy.git (fetch)
-origin  https://github.com/username/mslearn-tailspin-spacegame-web-deploy.git (push)
-upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy.git (fetch)
-```
+    ```output
+    origin  https://github.com/username/mslearn-tailspin-spacegame-web-deploy.git (fetch)
+    origin  https://github.com/username/mslearn-tailspin-spacegame-web-deploy.git (push)
+    upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-deploy.git (fetch)
+    ```
 
-### Open the project
+### Open the project in the file explorer
 
-In Visual Studio Code, your terminal window points to the root directory of the *Space Game* web project. You'll now open the project in Visual Studio Code so you can view its structure and work with files.
+In Visual Studio Code, your terminal window points to the root directory of the *Space Game* web project. To view its structure and work with files, from the file explorer, you'll now open the project.
 
-1. On the **File** menu, select **Open**.
-1. Navigate to the root directory of the *Space Game* web project. (In the terminal window, you can run the `pwd` command to see the full path if you need a reminder.)
+1. The easiest way to open the project is to reopen Visual Studio Code in the current directory. To do so, run the following command from the integrated terminal:
 
-You see the directory and file tree in the browsing window.
+    ```bash
+    code -r .
+    ```
 
-> [!NOTE]
-> You might need to open the integrated terminal a second time after you open the folder.
+    You see the directory and file tree in the file explorer.
+1. Reopen the integrated terminal. The terminal places you at the root of your web project.
 
-## Create the initial pipeline configuration
+If the `code` command fails, you need to add Visual Studio Code to your system PATH. To do so:
 
-Create an initial pipeline configuration that builds the web application. This step ensures that your project is set up to build from your GitHub repository. The build configuration resembles the one you set up in previous modules.
+1. In Visual Studio Code, select <kbd>F1</kbd> or select **View** > **Command Palette** to access the command palette.
+1. In the command palette, enter *Shell Command: Install 'code' command in PATH*.
+1. Repeat the previous procedure to open the project in the file explorer.
 
-1. From Visual Studio Code, open the integrated terminal.
-1. Run the following `git fetch` and `git checkout` commands to download a branch named `release-pipeline` from the Microsoft repository and switch to that branch.
+You're now set up to work with the _Space Game_ source code and your Azure Pipelines configuration from your local development environment.
+
+### Fetch the branch from GitHub
+
+Here you fetch the `release-pipeline` branch from GitHub and check out, or switch to, that branch.
+
+This branch contains the _Space Game_ project that you worked with in the previous modules and an Azure Pipelines configuration to start with.
+
+1. In Visual Studio Code, open the integrated terminal.
+1. Run the following `git` commands to fetch a branch named `release-pipeline` from the Microsoft repository, and then switch to that branch.
 
     ```bash
     git fetch upstream release-pipeline
-    git checkout -b release-pipeline upstream/release-pipeline
+    git checkout -B release-pipeline upstream/release-pipeline
     ```
 
-    Recall that `upstream` refers to the Microsoft GitHub repository. Your project's Git configuration understands the `upstream` remote because you set up that relationship when you forked the project from the Microsoft repository and cloned it locally.
+    The format of this command enables you to get starter code from the Microsoft GitHub repository, known as `upstream`. Shortly, you'll push this branch to your GitHub repository, known as `origin`.
 
-    Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
-
-1. As an optional step, open *azure-pipelines.yml* from Visual Studio Code and familiarize yourself with the initial configuration.
-
-    The configuration resembles the basic one you created in the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline/6-create-the-pipeline?azure-portal=true) module. It builds only the application's release configuration. For learning purposes, this configuration doesn't run the quality or security checks that you set up in previous modules.
+1. As an optional step, in Visual Studio Code, open the *azure-pipelines.yml* file and familiarize yourself with the initial configuration.
+    The configuration resembles the basic one you created in the [Create a build pipeline with Azure Pipelines](/learn/modules/create-a-build-pipeline/6-create-the-pipeline?azure-portal=true) module. It builds only the application's Release configuration.
 
     [!include[](../../shared/includes/pipeline-branches-note.md)]
 
-1. Run the following `git commit` command to add an empty entry to your commit history.
+## Run the pipeline
 
-    ```bash
-    git commit --allow-empty -m "Trigger the pipeline"
-    ```
+This this point, you have:
 
-    This step is for learning purposes and isn't typical. We provide starter code that you don't need to modify now. The `--allow-empty` flag ensures that the next step successfully pushes the branch to GitHub and triggers Azure Pipelines to run.
+* A fork of the **mslearn-tailspin-spacegame-web-deploy** repository in your GitHub account.
+* The **mslearn-tailspin-spacegame-web-deploy** repository cloned locally.
+* A branch named `release-pipeline` that contains the web site source code and an initial Azure Pipelines configuration.
 
-    If you omitted this step, the `git push` command you run in the next step wouldn't take any action and therefore wouldn't trigger Azure Pipelines to run.
+Next, you'll manually trigger the pipeline to run. This step ensures that your project is set up to build from your GitHub repository. The initial pipeline configuration builds the application and produces a builds artifact. Shortly, you'll add a stage that deploys the build artifact to Azure App Service.
 
-1. Run the following `git push` command to upload the branch to your GitHub repository.
+1. In Azure DevOps, go to your project.
+1. Select **Pipelines** from the menu on the side of the page.
+1. You see that your pipeline has not yet been run.
 
-    ```bash
-    git push origin release-pipeline
-    ```
+    :::image type="content" source="../media/4-pipeline-no-runs.png" alt-text="A screnshot of Azure Pipelines showing the pipeline for this project. The pipeline has no runs.":::
+
+1. Select your pipeline, **mslearn-tailspin-spacegame-web-deploy**.
+1. Select **Run pipeline**.
+
+    :::image type="content" source="../media/4-pipeline-run-first.png" alt-text="A screnshot of Azure Pipelines showing the location of the Run pipeline button.":::
+
+1. From the **Run pipeline** window that appears, set **Branch/tag** to *release-pipeline*. Then select **Run**.
 
 1. In Azure Pipelines, go to the build and trace it as it runs.
 

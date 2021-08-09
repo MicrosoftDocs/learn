@@ -148,13 +148,13 @@ For example, a DSC script in the previous unit used the `xSmbShare` PowerShell m
 
 The following diagram shows how to set up Azure Automation State Configuration. We'll explore these steps more in the next unit.
 
-![Diagram that shows the steps to set up DSC](../media/3-user-sets-up-dsc.png)
+![Diagram that shows the steps to set up DSC.](../media/3-user-sets-up-dsc.png)
 
 By default, after 15 minutes, the LCM on the VM polls Azure Automation for any changes to the DSC configuration file. Any changes in the VMs are recorded in the desired state configuration. If you change a configuration, you can upload it to the Automation account to automatically reconfigure the VMs. 
 
 The following diagram shows the LCM's process to manage the desired state on the VM.
 
-![Diagram that shows how the VM polls Azure Automation](../media/3-vm-pulls-dsc.png)
+![Diagram that shows how the VM polls Azure Automation.](../media/3-vm-pulls-dsc.png)
 
 Credentials are handled natively by your Automation account. This management reduces the complexity of securing and working with credentials.
 

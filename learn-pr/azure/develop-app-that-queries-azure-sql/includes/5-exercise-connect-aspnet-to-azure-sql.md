@@ -2,7 +2,7 @@ Your database is created. Now you will configure and deploy a web application th
 
 To save time, you'll work with a pre-existing web application. You'll add the code that connects this app to your database. The following diagram shows the primary components of this app:
 
-![High-level view of the application structure](../media/5-diagram.svg)
+![High-level view of the application structure.](../media/5-diagram.svg)
 
 You'll do the following things:
 

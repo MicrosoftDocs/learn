@@ -12,17 +12,15 @@ In this module, you'll learn about the core Azure Stack HCI technologies, includ
 
 After completing this module, you'll be able to:
 
-- Describe Windows Server Hyper-V and its components.
-- Describe Windows Server Failover Clustering and its components.
-- Describe Windows Server software-defined storage.
-- Describe Windows Server software-defined networking.
+- Describe Hyper-V and its components.
+- Describe Azure Stack HCI and its components.
+- Describe software-defined storage.
+- Describe software-defined networking.
 
 ## Prerequisites
 
 To get the best learning experience from this module, you should have knowledge of, and experience with, the following:
 
-- Windows Server Hyper-V
-- Window Server software-defined storage
-- Windows Server software-defined networking (SDN)
+- Hyper-V
+- Azure Stack HCI
 - Windows Server operating system management
-- Windows Server Failover Clustering

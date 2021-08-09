@@ -6,6 +6,6 @@ A database migration project that involves multiple versions of SQL Server can i
 
 For more information on the DMA, see:
 
-- [What's new in Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-whatsnew)
-- [Assess an enterprise and consolidate assessment reports with DMA](https://docs.microsoft.com/sql/dma/dma-consolidatereports)
-- [Best practices for running Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-bestpractices)
+- [What's new in Data Migration Assistant](/sql/dma/dma-whats-new)
+- [Assess an enterprise and consolidate assessment reports with DMA](/sql/dma/dma-consolidatereports)
+- [Best practices for running Data Migration Assistant](/sql/dma/dma-bestpractices)

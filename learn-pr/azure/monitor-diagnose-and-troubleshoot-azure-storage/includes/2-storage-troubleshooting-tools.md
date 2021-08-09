@@ -19,7 +19,7 @@ The Azure portal gives you a graphical way to view and monitor storage performan
 
 You can monitor the performance of a storage account using the **Overview** tab on the storage account page. Scroll down to the monitoring section and choose what data to show data. The image below shows an example that includes the ingress, egress, average latency, and request breakdown for blob storage in a storage account:
 
-![Screenshot of the Metrics page for a storage account in the Azure portal](../media/2-block-blob-metrics.png)
+![Screenshot of the Metrics page for a storage account in the Azure portal.](../media/2-block-blob-metrics.png)
 
 ### Azure Storage Explorer (desktop version)
 

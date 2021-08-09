@@ -16,7 +16,7 @@ The [Control and organize Azure resources with Azure Resource Manager](/learn/mo
 
 Here are additional resources to help you go further:
 
-* Get started with the [Cloud Adoption Framework for Azure](/learn/modules/microsoft-cloud-adoption-framework-for-azure/?azure-portal=true).
+* Accelerate cloud adoption with [Accelerate cloud adoption with the Microsoft Cloud Adoption Framework for Azure](/learn//paths/cloud-adoption-framework?azure-portal=true).
 * Learn more about [Azure subscription and service limits, quotas, and constraints](/azure/azure-subscription-service-limits?azure-portal=true).
 * Review the complete list of [Azure built-in roles](/azure/role-based-access-control/built-in-roles/?azure-portal=true) for Azure RBAC.
 * To learn how Azure Policy can enforce tagging rules and conventions, see [Assign policies for tag compliance](/azure/azure-resource-manager/management/tag-policies/?azure-portal=true).

@@ -16,6 +16,6 @@ We encourage you to make this app your own and use it as a place to test your cr
 
 And don't forget to watch [_Space Jam: A New Legacy_](https://www.facebook.com/SpaceJamMovie?azure-portal=true) coming Summer 2021!
 
-:::image type="content" source="../media/space-jam-end-card.png" alt-text="Image of the SPACE JAM: A NEW LEGACY logo." border="false":::
+:::image type="content" source="../media/space-jam-a-new-legacy-end-card.png" alt-text="Image of the SPACE JAM: A NEW LEGACY logo." border="false":::
 
-© 2020 Warner Bros. Ent. All Rights Reserved
+© 2021 Warner Bros. Ent. All Rights Reserved

@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-azure-backup.knowledge-check
-title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
+title: Knowledge check
 metadata:
   unitType: knowledge_check
-  title: "Azure Backup knowledge check" # user input: module title for browser tab and search results
-  description: "Knowledge check questions for the Introduction to Azure Backup Module." # user input: a description for site search and SEO
+  title: "Azure Backup knowledge check"
+  description: "Knowledge check questions for the Introduction to Azure Backup Module."
   ms.prod: learning-azure
   ms.date: 4/30/2021
   author: gerryaobrien
   ms.author: gerryo
   ms.topic: interactive-tutorial
-durationInMinutes: 15
+durationInMinutes: 15 
 content: |
 quiz:
   questions:

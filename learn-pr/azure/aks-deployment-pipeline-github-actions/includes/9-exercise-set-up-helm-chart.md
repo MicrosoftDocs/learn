@@ -1,4 +1,4 @@
-Let's set up the environment to deploy a Helm chart to AKS by using GitHub Actions. 
+Let's set up the environment to deploy a Helm chart to AKS by using GitHub Actions.
 
 In this exercise, to deploy a Helm chart, we'll complete the following tasks:
 
@@ -57,7 +57,7 @@ In this exercise, to deploy a Helm chart, we'll complete the following tasks:
 1. From inside the contoso-website directory, run this command:
 
     ```bash
-    mv ../*.yaml ./templates
+    mv ../kubernetes/*.yaml ./templates
     ```
 
 Completing these steps is all it takes to create a chart. Now, let's configure the chart.
@@ -221,7 +221,7 @@ Completing these steps is all it takes to create a chart. Now, let's configure t
 
 1. In the root of the contoso-website directory, open the **values.yaml** file.
 
-1. Delete all contents in the file, so you have an empty YAML file. 
+1. Delete all contents in the file, so you have an empty YAML file.
 
 ## Add contents to the YAML file
 
@@ -234,7 +234,7 @@ Helm uses the values.yaml file to retrieve all the template values that start wi
 This file should have the same structure of the file you use to call variables. Let's take a quick look in the deployment.yaml file you edited to see the structure.
 
 Notice that you used `.Values.image.registry`, `.Values.image.name`, and `.Values.image.tag` in the deployment.yaml file.
-    
+
 1. Create the **values.yaml** file so that it looks like this example:
 
     ```yaml

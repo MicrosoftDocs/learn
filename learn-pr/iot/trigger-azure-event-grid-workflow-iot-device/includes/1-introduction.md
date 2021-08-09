@@ -6,7 +6,7 @@ You can use Azure Event Grid to build applications with event-based architecture
 
 With Azure IoT Hub and Azure Event Grid integration, you can send event notifications to other services and trigger downstream processes and workflows. Configure your business applications to listen for IoT Hub events and react to critical events in a reliable, scalable, and secure manner. For example, build an application that updates a database, creates a work ticket, and delivers an email notification every time a new IoT device is registered to your IoT hub.
 
-[![IoT Hub integration with Event Grid and Logic Apps](../media/iot-hub-event-grid-logic-apps.png)](../media/iot-hub-event-grid-logic-apps.png#lightbox)
+[![IoT Hub integration with Event Grid and Logic Apps.](../media/iot-hub-event-grid-logic-apps.png)](../media/iot-hub-event-grid-logic-apps.png#lightbox)
 
 ## Learning objectives
 

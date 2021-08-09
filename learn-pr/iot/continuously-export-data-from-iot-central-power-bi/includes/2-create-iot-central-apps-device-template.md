@@ -25,7 +25,7 @@ A _capability model_ contains a definition of a device template. A device templa
 
 1. Select **IoT device**.
 
-    [![Screenshot showing the tile for selecting the custom IoT device template](../media/rules-actions-new-template.png)](../media/rules-actions-new-template.png#lightbox)
+    [![Screenshot showing the tile for selecting the custom IoT device template.](../media/rules-actions-new-template.png)](../media/rules-actions-new-template.png#lightbox)
 
 1. Select **Next: Customize**.
 
@@ -35,11 +35,11 @@ A _capability model_ contains a definition of a device template. A device templa
 
 1. Select **Import capability model**.
 
-    [![Screenshot showing the tile for importing a capability model](../media/rules-actions-import-model.png)](../media/rules-actions-import-model.png#lightbox)
+    [![Screenshot showing the tile for importing a capability model.](../media/rules-actions-import-model.png)](../media/rules-actions-import-model.png#lightbox)
 
 1. Open the downloaded JSON file, which contains the capability model. A **Summary** page displays all the elements of the capability model.
 
-    [![Screenshot showing the Summary pane of the capability model](../media/rules-actions-model-summary.png)](../media/rules-actions-model-summary.png#lightbox)
+    [![Screenshot showing the Summary pane of the capability model.](../media/rules-actions-model-summary.png)](../media/rules-actions-model-summary.png#lightbox)
 
 1. At the upper right, select **Publish** and then, in the pane that opens, select **Publish** again to publish the capability model. Only a published model is available for your app to use.
 
@@ -49,7 +49,7 @@ To visualize the movements and state of the refrigerated truck, you need to crea
 
 1. Select the **Views** menu option, and then select the **Visualizing the device** tile.
 
-    [![Screenshot showing the new view options](../media/refrigerated-trucks-add-view.png)](../media/refrigerated-trucks-add-view.png#lightbox)
+    [![Screenshot showing the new view options.](../media/refrigerated-trucks-add-view.png)](../media/refrigerated-trucks-add-view.png#lightbox)
 
     The pane displays a list that includes **Telemetry**, **Property**, and other tiles of the capability model, each with a check box next to it.
 
@@ -65,7 +65,7 @@ To visualize the movements and state of the refrigerated truck, you need to crea
 
 1. When you've added all the tiles, check out the tile labels. You can drag tiles around, and the portal will try to rearrange them neatly.
 
-    [![Screenshot showing some sample dashboard tiles](../media/refrigerated-trucks-sample-tiles.png)](../media/refrigerated-trucks-sample-tiles.png#lightbox)
+    [![Screenshot showing some sample dashboard tiles.](../media/refrigerated-trucks-sample-tiles.png)](../media/refrigerated-trucks-sample-tiles.png#lightbox)
 
 1. When you're satisfied with your dashboard, select **Save**, and then select **Publish**. 
 
@@ -178,7 +178,7 @@ All of the work to generate connection strings is handled through Azure Cloud Sh
    
 1. Double-click the *connection1.txt* file to open it, and then copy the file contents to your text tool.
 
-    [![Screenshot showing how to locate the connection1.txt file in Azure Cloud Shell](../media/refrigerated-trucks-connection1.png)](../media/refrigerated-trucks-connection1.png#lightbox)
+    [![Screenshot showing how to locate the connection1.txt file in Azure Cloud Shell.](../media/refrigerated-trucks-connection1.png)](../media/refrigerated-trucks-connection1.png#lightbox)
 
     > [!IMPORTANT]
     > The last element of the connection string is the primary key. Verify that the connection string in your text file ends with an exact copy of the primary key. If it doesn't, correct the copy you've made of the correction string in your text document.

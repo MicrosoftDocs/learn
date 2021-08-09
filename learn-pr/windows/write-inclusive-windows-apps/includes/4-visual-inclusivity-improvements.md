@@ -95,16 +95,16 @@ A lot of work in making an app inclusive is done in the XAML files: `MainPage.xa
 
 | Color Schemes|  |
 |:--:|:--:|
-| ![Setting the light color mode](../media/inc-light-50.png) | ![Setting the dark color mode](../media/inc-dark-50.png) |
+| ![Setting the light color mode.](../media/inc-light-50.png) | ![Setting the dark color mode](../media/inc-dark-50.png) |
 | *Light*| *Dark* |
 
 7. Now "high contrast" in the Windows search bar. Select each of the four high contrast themes. Your scientific calculator should now look usable in all four themes, as shown in the following images.
 
 | High Contrast Color Schemes|  |
 |:--:|:--:|
-| ![Setting High Contrast #1](../media/inc-highcontrast1-50.png) | ![Setting High Contrast #2](../media/inc-highcontrast2-50.png) |
+| ![Setting High Contrast #1.](../media/inc-highcontrast1-50.png) | ![Setting High Contrast #2](../media/inc-highcontrast2-50.png) |
 | *High Contrast #1*| *High Contrast #2* |
-| ![Setting High Contrast Black](../media/inc-highcontrast-black-50.png) | ![Setting High Contrast White](../media/inc-highcontrast-white-50.png) |
+| ![Setting High Contrast Black.](../media/inc-highcontrast-black-50.png) | ![Setting High Contrast White](../media/inc-highcontrast-white-50.png) |
 | *High Contrast Black*| *High Contrast White* |
 
 8. Without too much work, you've made your app significantly more inclusive to users with color differentiation issues. A little bit of manual work can go even further, though.
@@ -147,7 +147,7 @@ In each of them, use the Quick Replace feature to change the searched-for text t
 
 3. Run the app. The buttons should look more substantial, and thus easier to use.
 
-![Using larger font sizes](../media/larger-fontsize.png)
+![Using larger font sizes.](../media/larger-fontsize.png)
 
 ## Unit Summary
 

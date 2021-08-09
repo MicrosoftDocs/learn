@@ -59,7 +59,7 @@ If your immediate concern is migrating specific workloads and applications to Az
 
 ### Virtual machine sizes and disks
 
-:::image type="content" source="../media/sizes.png" alt-text="Screenshot of the Azure portal displaying the Select a VM Size dialog box":::
+:::image type="content" source="../media/sizes.png" alt-text="Screenshot of the Azure portal displaying the Select a VM Size dialog box.":::
 
 A VM's performance characteristics and pricing are determined by its *size*, which is selected independently from its image. You select a VM's size when you create it, and you can modify it at any time. Azure offers a wide variety of VM sizes, across seven different optimization categories tuned for different kinds of workloads:
 

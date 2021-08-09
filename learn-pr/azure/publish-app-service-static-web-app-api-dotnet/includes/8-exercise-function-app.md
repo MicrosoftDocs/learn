@@ -39,7 +39,7 @@ Your API has routes for manipulating the products for the shopping list, but it 
 1. Use **Http trigger** as the function type
 1. Select **Anonymous** as the authentication level
 
-:::image type="content" source="../media/new-azure-function.png" alt-text="Creating a new Azure Function":::
+:::image type="content" source="../media/new-azure-function.png" alt-text="Creating a new Azure Function.":::
 
 You just extended your Azure Function app with a function to get your products!
 

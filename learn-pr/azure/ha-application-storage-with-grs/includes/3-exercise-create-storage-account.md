@@ -4,7 +4,7 @@ In this exercise, you create an Azure storage account and configure the account 
 
 As the first step, you create an Azure storage account for storing the application data.
 
-![The storage account configuration](../media/3-storage-account-overview.png)
+![The storage account configuration.](../media/3-storage-account-overview.png)
 
 ## Create an Azure storage account
 

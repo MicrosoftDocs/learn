@@ -119,7 +119,7 @@ SELECT AVG(c.age) AS avg,
 FROM c
 ```
 
-The SQL API also supports a large number of mathematical, trigonometric, string, array, and spatial functions. For detailed information on the syntax of queries, and the functions and operators supported by the Cosmos DB SQL API, visit the page [Getting started with SQL queries in Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/sql-api-sql-query) on the Microsoft website.
+The SQL API also supports a large number of mathematical, trigonometric, string, array, and spatial functions. For detailed information on the syntax of queries, and the functions and operators supported by the Cosmos DB SQL API, visit the page [Getting started with SQL queries in Azure Cosmos DB](/azure/cosmos-db/sql-api-sql-query) on the Microsoft website.
 
 ## Query documents with the SQL API using Data Explorer
 

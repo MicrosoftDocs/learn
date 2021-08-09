@@ -6,13 +6,13 @@ Formally, virtualization involves the construction of an isomorphism that maps a
 
 The function *V* in the figure maps guest state to host state. For a sequence of operations (*e*) that modifies a guest state, there is a corresponding sequence of operations (*e'*) in the host that performs equivalent modifications. Informally, virtualization creates virtual resources and maps them to physical resources. Virtual resources are created from physical resources and essentially act as proxies to them.
 
-![Virtualization isomorphism](../media/virtualization-isomorphism.png)
+![Virtualization isomorphism.](../media/virtualization-isomorphism.png)
 
 _Figure 1: Virtualization isomorphism_
 
 The concept of virtualization can be applied to either a system component or an entire machine. <!-- SCG: I think a process virtualizes both the memory (in space and time) and the CPU (in time). Not sure I understand how you are using the term virtualization. --> Traditionally, virtualization has been applied to only the memory component in general-purpose operating systems (OSs). This form of virtualization is what enables virtual memory. Revisiting the hard disk example in Figure 1, some applications might desire multiple hard drives. To satisfy such a requirement, the physical hard drive can be partitioned into multiple virtual disks, as shown in Figure 2. Each virtual disk is offered logical cylinders, sectors, and tracks. This keeps the level of detail analogous to what is offered by general-purpose OSs, yet at a different interface and without being abstracted. The hypervisor can map a virtual disk (the function *V* in the isomorphism) to a single, large file on the physical disk. Afterward, to carry out a read/write operation on a virtual disk (the function *e* in the isomorphism), the hypervisor reflects the operation as a file read/write followed by an actual disk read/write (the function *e'* in the isomorphism). 
 
-![Constructing a virtual disk by mapping its content to large files](../media/contructing-virtual-disk.png)
+![Constructing a virtual disk by mapping its content to large files.](../media/contructing-virtual-disk.png)
 
 _Figure 2: Constructing a virtual disk by mapping its content to large files_
 

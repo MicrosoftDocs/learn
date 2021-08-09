@@ -6,7 +6,7 @@ metadata:
   description: Create a database by using Django tools.
   ms.date: 02/25/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

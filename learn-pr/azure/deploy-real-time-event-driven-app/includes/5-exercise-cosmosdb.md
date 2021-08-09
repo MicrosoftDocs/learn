@@ -51,6 +51,7 @@ The consumer function needs to be aware of its storage account and the event hub
 ``` bash
 AZURE_WEB_JOBS_STORAGE=$( \
     az storage account show-connection-string \
+        --resource-group $RESOURCE_GROUP \
         --name $STORAGE_ACCOUNT"c" \
         --query connectionString \
         --output tsv)

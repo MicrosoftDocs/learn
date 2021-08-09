@@ -55,7 +55,7 @@ Once you have implemented Postman or OpenAPI, you can build custom connectors in
 1. Create a new Logic Apps custom connector resource.
 1. Upload the Postman collection or OpenAPI definition file.
 
-    ![Upload an OpenAPI file for a custom connector](../media/4-custom-connector-import-openapi.png)
+    ![Upload an OpenAPI file for a custom connector.](../media/4-custom-connector-import-openapi.png)
 
 1. Use the configuration wizard to complete the connector. For example, you can configure the title of the connector users will see in the Logic Apps designer, add descriptions to help Logic Apps developers to use the connector correctly, and configure secure connections.
 1. Save your new connector. You can now add the connector to Logic Apps.

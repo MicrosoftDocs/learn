@@ -10,7 +10,7 @@ For example, your company works with external healthcare partners. These partner
 
 Here's the B2B collaboration process:
 
-![B2B collaboration process](../media/4-b2b-process.svg)
+![B2B collaboration process.](../media/4-b2b-process.svg)
 
 1. The external user either receives an email invitation that includes a redemption link or gets a direct link.
 1. The user selects the redemption link to access the apps they were invited to.
@@ -28,7 +28,7 @@ AD B2C also helps you monitor for threats like brute force attacks and denial-of
 
 For example, a flow for the sign-in process might go like this:
 
-![Sign-in flow for users](../media/4-signin-user-flow.svg)
+![Sign-in flow for users.](../media/4-signin-user-flow.svg)
 
 1. On their browser or mobile phone, the user goes to the app they want to access.
 1. The user is required to complete the sign-in form.
@@ -44,7 +44,7 @@ Azure AD DS lets you add virtual machines to a domain without needing domain con
 
 Use this service to reduce the complexity of migrating on-premises apps to Azure. An organization could also use Azure AD DS to handle its infrastructure if it runs apps both on-premises and in the cloud. The process might go like this:
 
-![Process for adding VMs to a domain in Azure AD DS](../media/4-azure-ad-domain-services.svg)
+![Process for adding VMs to a domain in Azure AD DS.](../media/4-azure-ad-domain-services.svg)
 
 1. The organization deploys its apps and servers in a virtual network on Azure.
 1. Azure AD Connect sync synchronizes identity information between the on-premises Active Directory instance and the organization's tenant in Azure AD.
@@ -61,19 +61,19 @@ You can manage different categories of apps in Azure AD:
 
 - **Azure AD App Gallery applications**. Thousands of SaaS apps are integrated with Azure AD. Find these apps in Azure Marketplace.
 
-    ![Azure Marketplace](../media/4-azure-ad-marketplace.png)
+    ![Azure Marketplace.](../media/4-azure-ad-marketplace.png)
 
 - **Custom applications**. You can register your company-built apps with Azure AD. You then control and monitor authentication for these apps.
 
-    ![Add a custom application](../media/4-applications.png)
+    ![Add a custom application.](../media/4-applications.png)
 
 - **Non-gallery applications**. You can manually add any apps that you don't see in the gallery.
 
-    ![Add a non-gallery application](../media/4-non-gallery-applications.png)
+    ![Add a non-gallery application.](../media/4-non-gallery-applications.png)
 
 - **On-premises applications**. You can add on-premises apps by configuring Azure AD Application Proxy. This process creates secure remote access for your on-premises apps. To connect them, download and install the Application Proxy connector on-premises.
 
-    ![Add an on-premises application](../media/4-add-on-premises-application.png)
+    ![Add an on-premises application.](../media/4-add-on-premises-application.png)
 
 In the following sections, you learn about other Azure AD features that you can use to benefit your apps.
 
@@ -81,7 +81,7 @@ In the following sections, you learn about other Azure AD features that you can 
 
 Use conditional-access policies to require users to pass additional authentication challenges before they access an app. For example, you can configure a conditional-access policy to require users to complete a multi-factor authentication challenge after their credentials are verified and before they access the app.
 
-![Require multi-factor authentication in Azure AD](../media/4-conditional-access-policy.png)
+![Require multi-factor authentication in Azure AD.](../media/4-conditional-access-policy.png)
 
 Conditional-access policies are available for Premium P1 and Premium P2 license tiers.
 
@@ -89,7 +89,7 @@ Conditional-access policies are available for Premium P1 and Premium P2 license 
 
 Azure AD can help monitor your app sign-ins by generating reports that cover sign-in dates, user details, apps the user has used, risk detection, location, and more. Access those reports through the Azure portal or specific APIs for programmatic usage.
 
-![Azure AD reports](../media/4-reports.png)
+![Azure AD reports.](../media/4-reports.png)
 
 Reports are available for all licensing tiers.
 
@@ -99,12 +99,12 @@ Azure AD Identity Protection helps you to automatically detect, investigate, and
 
 Identity Protection uses risk policies to automatically detect and respond to threats. You configure a risk policy to set up how Identity Protection should respond to a particular type of risk. Use policies in this way to save time and give you peace of mind.
 
-![Identity Protection flow in Azure AD](../media/4-identity-protection-flow.svg)
+![Identity Protection flow in Azure AD.](../media/4-identity-protection-flow.svg)
 
 By using automated risk detection and remediation through Identity Protection, the admin first configures the risk policies. These policies then monitor for identity risks. When a risk is detected, the policies enforce measures to remediate it. For example, a policy might require a user to reset their password in response to a detected risk. The user then resets their password, and the risk is remediated.
 
 You configure risk policies through the Azure portal. For example, the following risk policy detects user risks and remediates them by requiring the user to reset their password.
 
-![Risk policy in Azure AD Identity Protection](../media/4-risk-policy.png)
+![Risk policy in Azure AD Identity Protection.](../media/4-risk-policy.png)
 
 Identity Protection is available for the Premium P2 licensing tier.

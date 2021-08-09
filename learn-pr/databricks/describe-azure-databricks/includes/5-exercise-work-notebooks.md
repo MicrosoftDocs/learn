@@ -15,7 +15,7 @@ To learn more about using notebooks, clone the labs archive where sample noteboo
 1. In the left pane, select **Workspace** > **Users**, and select your username (the entry with the house icon).
 1. In the pane that appears, select the arrow next to your name, and select **Import**.
 
-    ![The menu option to import the archive](../media/import-archive.png)
+    ![The menu option to import the archive.](../media/import-archive.png)
 
 1. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 

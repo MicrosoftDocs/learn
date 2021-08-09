@@ -24,7 +24,7 @@ When you have listed all of the requirements, services, and resources for your p
 
 With your list of services captured, you can use the [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/?azure-portal=true) to create estimates of the cost of your application. You can use the calculator to create, save, and share estimates for all Azure services. 
 
-:::image type="content" source="../media/2-azure-pricing-calculator.png" alt-text="Screenshot of the Azure Pricing Calculator site" border="true":::
+:::image type="content" source="../media/2-azure-pricing-calculator.png" alt-text="Screenshot of the Azure Pricing Calculator site." border="true":::
 
 As part of your cost estimation, it's also important to understand the subscription and billing models that are available on Azure. Two of the most common models are *pay-as-you-go* and *enterprise agreement*:
 

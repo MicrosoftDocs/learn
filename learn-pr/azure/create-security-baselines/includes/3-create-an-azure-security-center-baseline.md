@@ -27,13 +27,13 @@ ASC is offered in two pricing tiers, **Free** and **Standard**. The Standard tie
     > [!NOTE]
     > If you're still in a free tier, the portal might lock you on the **Getting started** option, as shown below. You can enable the Standard tier from this screen as well.
 
-    ![Screenshot showing getting started with Azure Security Center pane](../media/3-asc-get-started.png)
+    ![Screenshot showing getting started with Azure Security Center pane.](../media/3-asc-get-started.png)
 
 ### Azure Security Center built-in security polices
 
 The policies are grouped into four functional groups as follows.
 
-   ![Screenshot of Security policy AuditIfNotExists](../media/3-asc-security-policies.png)
+   ![Screenshot of Security policy AuditIfNotExists.](../media/3-asc-security-policies.png)
 
 The enabled policies define the ASC recommendations. Currently Enable Monitoring in Azure Security Center is in **Preview** so the listed policies are subject to change.
 
@@ -49,7 +49,7 @@ When automatic provisioning is enabled, Security Center installs the Microsoft M
 
 1. Select **Install agents**.
 
-    ![Screenshot showing getting started again with Azure Security Center pane](../media/3-asc-install-agents.png)
+    ![Screenshot showing getting started again with Azure Security Center pane.](../media/3-asc-install-agents.png)
 
 ### Enable System Updates - Level 1
 
@@ -65,15 +65,15 @@ Azure Security Center monitors daily Windows and Linux virtual machines (VMs) an
 
 1. Select the **Enable Monitoring in Azure Security Center** link.
 
-    ![Screenshot of the Security policy Azure security Center pane](../media/3-asc-enable-system-updates.png)
+    ![Screenshot of the Security policy Azure security Center pane.](../media/3-asc-enable-system-updates.png)
 
 1. In this example, the ASC agent has not been deployed to a VM or physical machine so the message **AuditIfNotExists** appears. AuditIfNotExists enables auditing on resources that match the if condition. If the resource is not deployed, **NotExists** appears.
 
-    ![Screenshot again of Security policy AuditIfNotExists](../media/3-asc-enable-auditing.png)
+    ![Screenshot again of Security policy AuditIfNotExists.](../media/3-asc-enable-auditing.png)
 
     If enabled, **Audit** is displayed. If deployed but disabled, **Disabled** appears.
 
-    ![Screenshot yet again of Security policy AuditIfNotExists](../media/3-state-of-audit.png)
+    ![Screenshot yet again of Security policy AuditIfNotExists.](../media/3-state-of-audit.png)
 
 ### Enable Security Configurations - Level 1
 
@@ -140,7 +140,7 @@ Azure Security Center will recommend that you provide security contact details f
 
 1. Enter or validate the contact information displayed.
 
-    ![Screenshot of the Contact information Azure security Center pane](../media/3-contact-info.png)
+    ![Screenshot of the Contact information Azure security Center pane.](../media/3-contact-info.png)
 
 ### Enable Send me emails about alerts - Level 1
 
@@ -156,7 +156,7 @@ Azure Security Center will recommend that you provide security contact details f
 
 1. Select **Save**.
 
-    ![Screenshot of the alert email notification Azure security Center pane](../media/3-asc-email-notifications.png)
+    ![Screenshot of the alert email notification Azure security Center pane.](../media/3-asc-email-notifications.png)
 
 ### Enable Send email also to subscription owners - Level 1
 

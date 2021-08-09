@@ -33,7 +33,7 @@ The starter code provides a framework for building a data access project. The ap
 
 Your team is responsible for multiple client apps. The Solution Architect approved the following N-tier architecture for an ASP.NET Core web API consumed by all client apps:
 
-![The ContosoPets web API solution architecture](../media/2-setup-environment/contoso-pets-architecture.png)
+![The ContosoPets web API solution architecture.](../media/2-setup-environment/contoso-pets-architecture.png)
 
 Your team makes the following technical decisions:
 
@@ -43,7 +43,7 @@ Your team makes the following technical decisions:
 
 ## Review EF Core architecture
 
-![EF Core Architecture](../media/2-setup-environment/ef-core-architecture.png)
+![EF Core Architecture.](../media/2-setup-environment/ef-core-architecture.png)
 
 Classes deriving from `DbContext`:
 

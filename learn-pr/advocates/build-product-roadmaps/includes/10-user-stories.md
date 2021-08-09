@@ -1,6 +1,6 @@
 :::row:::
   :::column:::
-       ![Product road map user stories](../media/user-stories.png)
+       ![Product road map user stories.](../media/user-stories.png)
   :::column-end:::
         :::column span="3":::
 
@@ -62,6 +62,6 @@ Your estimates also help you crudely ascertain how many people you need building
 
 This story is a formal user story; many organizations use more lightweight and informal representations. If a story feels like it has too much detail, then the traditional approach is to split the story into smaller stories.
 
-![Product road map structure](../media/structure.png)
+![Product road map structure.](../media/structure.png)
 
 From here, we can now also see the whole structure of a road map, and how each component, from user stories to the mission rolls up into the plan to build your product.

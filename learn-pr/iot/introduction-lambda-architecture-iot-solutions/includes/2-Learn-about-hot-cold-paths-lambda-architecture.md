@@ -18,7 +18,7 @@ The cold path is a batch processing path for telemetry data storage.
 
 ### The hot path
 
-[![Graph illustration of vibration telemetry](../media/lambda-hot-path.png)](../media/lambda-hot-path.png#lightbox)
+[![Graph illustration of vibration telemetry.](../media/lambda-hot-path.png)](../media/lambda-hot-path.png#lightbox)
 
 The IoT remote device pumps out _specific_ telemetry. This telemetry is sent in its own message, routed by the IoT Hub for instant analysis and visualization. The analysis could be done by a human operator, say, using Azure Time Series Insights. This approach is described in this module.
 
@@ -28,7 +28,7 @@ The hot path requires storage optimized for data availability. Data services tha
 
 ### The cold path
 
-[![Graph illustration of vibration, temperature, and humidity telemetry](../media/lambda-cold-path.png)](../media/lambda-cold-path.png#lightbox)
+[![Graph illustration of vibration, temperature, and humidity telemetry.](../media/lambda-cold-path.png)](../media/lambda-cold-path.png#lightbox)
 
 The IoT remote device also sends out all telemetry, and logging, data. The IoT Hub directs these messages down a route to an Azure storage account. The key point about cold path storage is that it's optimized for size (that is, it's compressed), long-term storage, and low cost. The cold path is _not_ optimized for availability.
 

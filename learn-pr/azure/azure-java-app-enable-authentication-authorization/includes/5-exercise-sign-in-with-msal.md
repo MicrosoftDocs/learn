@@ -34,7 +34,7 @@ To configure the code, open the application project in your preferred IDE like I
 
 3. Find the string `{enter-your-client-id-here}` and replace the existing value with the **application ID** (clientId) of the registered application copied from the Azure portal.
 
-   :::image type="content" source="../media/app-registration-blade.png" alt-text="Screenshot highlighting the App ID of an app registered with Azure Active Directory on Azure portal":::
+   :::image type="content" source="../media/app-registration-blade.png" alt-text="Screenshot highlighting the App ID of an app registered with Azure Active Directory on Azure portal.":::
 
 4. Find the string `{enter-your-client-secret-here}` and replace the existing value with the **key** you saved during the creation of the app in the Azure portal.
 
@@ -53,7 +53,7 @@ To configure the code, open the application project in your preferred IDE like I
 
 4. Open your browser and navigate to `http://localhost:8080/msal4j-servlet-graph/`. You will be redirected to login with Azure Active Directory. On successful login, you should see a page as shown in the below image.
 
-    :::image type="content" source="../media/app-sign-in.png" alt-text="Screenshot showing user name displayed on the page after successfully signing in to sample application":::
+    :::image type="content" source="../media/app-sign-in.png" alt-text="Screenshot showing user name displayed on the page after successfully signing in to sample application.":::
 
 5. Click on the **ID Token Details** button to see some of the ID token's decoded claims.
 

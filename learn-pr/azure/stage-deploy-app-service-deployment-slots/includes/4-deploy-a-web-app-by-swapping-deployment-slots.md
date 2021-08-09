@@ -20,9 +20,9 @@ To view and configure settings for the swap, go to the web app resource and foll
 
 1. On the **Application settings** tab, observe whether the settings you're interested in contain a checkmark in the **deployment slot setting** field. To set or unset a checkmark on a given setting, select the setting's pencil button to edit it, then toggle the **deployment slot setting** checkbox to the desired value, and select **OK**.
 
-    ![Configure slot settings](../media/4-configure-slot-settings.png)
+    :::image type="content" source="../media/4-configure-slot-settings.png" alt-text="Configure slot settings." lightbox="../media/4-configure-slot-settings.png":::
 
-    ![Toggle deployment slot setting](../media/4-deployment-slot-setting.png)
+    :::image type="content" source="../media/4-deployment-slot-setting.png" alt-text="Toggle deployment slot setting.":::
 
 1. Select **Save** on the Configuration page when you are finished to save your settings.
 
@@ -36,7 +36,7 @@ To swap two slots in the Azure portal:
 
 1. In the **Swap** dialog box, you can select the source and target slots and see a summary of the settings that will be applied to the swapped slots.
 
-    ![Swapping two slots](../media/4-swap-slots.png)
+    ![Swapping two slots.](../media/4-swap-slots.png)
 
 ## Understand the slot-swapping preview
 
@@ -54,7 +54,7 @@ To help you discover problems before your app goes live into production, Azure A
 
 To use the swap-with-preview feature, select **Perform swap with preview**, review the settings, and then select **Start Swap**.
 
-![Swap two slots and see a preview](../media/4-swap-slots-with-preview.png)
+![Swap two slots and see a preview.](../media/4-swap-slots-with-preview.png)
 
 Follow the link to preview the new version of the site. In the preview, the slot settings from the destination slot are applied. If you want to continue, select **Complete Swap**.
 
@@ -73,6 +73,6 @@ If you want to be able to test before you swap, you'll need a more complex deplo
 
 To configure auto swap for a slot, navigate to the **Configuration > General settings** pane for the slot in the Azure portal. Under **Deployment Slot**, set **Auto swap enabled** to **On**, select the target slot from the dropdown menu, and then select **Save** at the top.
 
-![Configure auto swap](../media/4-configure-auto-swap.png)
+![Configure auto swap.](../media/4-configure-auto-swap.png)
 
 This option is only available on slots other than the production slot.

@@ -21,51 +21,51 @@ quiz:
       explanation: "Correct. Azure HPC Cache was designed to accelerate NFS workloads."
     - content: "NTFS"
       isCorrect: false
-      explanation: "NTFS is not a supported protocol for Azure HPC Cache."
+      explanation: "NTFS isn't a supported protocol for Azure HPC Cache."
     - content: "SFTP"
       isCorrect: false
-      explanation: "SFTP is not a supported protocol for Azure HPC Cache."
+      explanation: "SFTP isn't a supported protocol for Azure HPC Cache."
   - content: "Ideal workloads for Azure HPC Cache are heavy in which operation?"
     choices:
     - content: "Directory operations (listing folder content)"
       isCorrect: false
-      explanation: ""
+      explanation: "Directory operations aren't ideal workloads for Azure HPC Cache."
     - content: "Read operations (requesting file content)"
       isCorrect: true
-      explanation: ""
+      explanation: "Correct. Read operations are ideal workloads for Azure HPC Cache."
     - content: "Write operations (creating or modifying content)"
       isCorrect: false
-      explanation: ""
+      explanation: "Write operations aren't ideal workloads for Azure HPC Cache."
   - content: "Azure HPC Cache is designed to run best when the data is what size?"
     choices:
-    - content: "Kilobyte (KB) files in a megabyte (MB) working set"
+    - content: "Kilobyte files in a megabyte working set"
       isCorrect: false
-      explanation: "Smaller files and data sets are not ideal for Azure HPC Cache."
-    - content: "Megabyte (MB) files in a gigabyte (GB) working set"
+      explanation: "Smaller files and datasets aren't ideal for Azure HPC Cache."
+    - content: "Megabyte files in a gigabyte working set"
       isCorrect: false
-      explanation: "Azure HPC Cache can accelerate these workloads, but they are not typically cost effective."
-    - content: "Gigabyte (GB) files in a terabyte (TB) working set"
+      explanation: "Azure HPC Cache can accelerate these workloads, but they aren't typically cost effective."
+    - content: "Gigabyte files in a terabyte working set"
       isCorrect: true
-      explanation: "That's right. Gigabyte-sized files are ideal in a working set that is terabytes in size."
-  - content: "Which of the following is the best reason why Azure HPC Cache would not be a good fit for accelerating users' personal data files?"
+      explanation: "Correct. Gigabyte-sized files are ideal in a working set that's terabytes in size."
+  - content: "Which of the following is the best reason why Azure HPC Cache wouldn't be a good fit for accelerating users' personal data files?"
     choices:
-    - content: "Personal data files are not to be shared with others because they are private."
+    - content: "Personal data files aren't to be shared with others because they're private."
       isCorrect: false
-      explanation: "Personal data files may or may not be private. This does not affect how the cache works."
-    - content: "Personal data files are not being accessed by several clients."
+      explanation: "Personal data files might or might not be private. Privacy status doesn't affect how the cache works."
+    - content: "Personal data files aren't being accessed by several clients."
       isCorrect: true
-      explanation: "Yes. A cache is most efficient when it's being accessed by several clients at the same time."
-    - content: "Personal data files are not sensitive and do not need to be encrypted."
+      explanation: "Correct. A cache is most efficient when it's being accessed by several clients at the same time."
+    - content: "Personal data files aren't sensitive and don't need to be encrypted."
       isCorrect: false
-      explanation: "All files are encrypted in Azure HPC Cache. File sensitivity and encryption do not make the cache a good fit or bad fit."
-  - content: "Suppose a genetic research company is considering Azure HPC Cache for a workload that compares gigabyte DNA files to the same reference DNA file. They use hundreds of cloud clients running an NFS workload. What would make this good fit even better?"
+      explanation: "All files are encrypted in Azure HPC Cache. File sensitivity and encryption don't make the cache a good fit or bad fit."
+  - content: "Suppose a genetic research company is considering Azure HPC Cache for a workload that compares gigabyte DNA files to the same reference DNA file. The company uses hundreds of cloud clients running an NFS workload. What would make this good fit even better?"
     choices:
-    - content: "If they installed a load balancer to distribute the workload."
+    - content: "If the company installed a load balancer to distribute the workload"
       isCorrect: false
-      explanation: "A load balancer would not affect the Azure HPC Cache."
-    - content: "If they installed a proxy server to handle network traffic."
+      explanation: "A load balancer wouldn't affect Azure HPC Cache."
+    - content: "If the company installed a proxy server to handle network traffic"
       isCorrect: false
-      explanation: "Proxy servers would not affect the Azure HPC Cache."
-    - content: "If they installed an ExpressRoute to maximize bandwidth."
+      explanation: "Proxy servers wouldn't affect Azure HPC Cache."
+    - content: "If the company installed Azure ExpressRoute to maximize bandwidth"
       isCorrect: true
-      explanation: "Yes. An ExpressRoute will maximize bandwidth between their clients in the cloud and their data on premises."
+      explanation: "Correct. ExpressRoute will maximize bandwidth between the company's clients in the cloud and it's data on-premises."

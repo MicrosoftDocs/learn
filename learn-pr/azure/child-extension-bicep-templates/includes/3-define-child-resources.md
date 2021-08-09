@@ -28,7 +28,7 @@ With Bicep, you can declare child resources in several different ways. Each way 
 
 One approach to defining a child resource is to _nest_ the child resource inside the parent. Here's an example of a Bicep template that deploys a virtual machine and a virtual machine extension. A virtual machine extension is a child resource that provides extra behavior for a virtual machine. In this case, it runs a custom script on the virtual machine after it's deployed.
 
-:::code language="plaintext" source="code/3-nested.bicep" highlight="8-14":::
+:::code language="bicep" source="code/3-nested.bicep" highlight="8-14":::
 
 Notice that the nested resource has a simpler resource type than normal. Even though the fully qualified type name is `Microsoft.Compute/virtualMachines/extensions`, the nested resource automatically inherits the parent's resource type, so you need to specify only the child resource type, `extensions`. 
 
@@ -46,7 +46,7 @@ Nesting resources is a simple way to declare a child resource. Nesting resources
 
 A second approach is to declare the child resource without any nesting and then tell Bicep about the parent-child relationship by using the `parent` property:
 
-:::code language="plaintext" source="code/3-parent-keyword.bicep" highlight="10":::
+:::code language="bicep" source="code/3-parent-keyword.bicep" highlight="10":::
 
 Notice that the child resource uses the `parent` property to refer to the symbolic name of its parent.
 
@@ -62,13 +62,13 @@ output childResourceId string = installCustomScriptExtension.id
 
 There are some circumstances where you can't use nested resources or the `parent` keyword. Examples include when you declare child resources within a `for` loop, or when you need to use complex expressions to dynamically select a parent resource for a child. In these situations, you can deploy a child resource by manually constructing the child resource name so that it includes its parent resource name, as shown here:
 
-:::code language="plaintext" source="code/3-manual-resource-type.bicep" highlight="10":::
+:::code language="bicep" source="code/3-manual-resource-type.bicep" highlight="10":::
 
 Notice that this example uses string interpolation to append the virtual machine resource `name` property to the child resource name. Bicep understands that there's a dependency between your child and parent resources. You could declare the child resource name by using the `vmName` variable instead. If you do that, though, Bicep won't understand that the parent resource needs to be deployed before the child resource, and deployments could sometimes fail. 
 
 To resolve this, you could manually tell Bicep about the dependency by using the `dependsOn` keyword, as shown here:
 
-:::code language="plaintext" source="code/3-manual-resource-type-dependson.bicep" highlight="11-13":::
+:::code language="bicep" source="code/3-manual-resource-type-dependson.bicep" highlight="11-13":::
 
 > [!TIP]
 > It's generally best to avoid constructing resource names, because you lose a lot of the benefits that Bicep can provide when it understands the relationships between your resources. Use this option only when you can't use one of the other approaches for declaring child resources.

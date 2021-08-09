@@ -5,7 +5,7 @@ metadata:
   title: Exercise - Collaborate by using a shared repo
   description: Set up a bare repo that changes can be pushed to and pulled from.
   ms.date: 03/14/2021
-  author: shanamatthews
+  author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-git

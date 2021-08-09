@@ -22,7 +22,7 @@ Recovery point objective (RPO) refers to how much data loss is acceptable for yo
 
 Recovery time objective (RTO) is the maximum duration of acceptable downtime for your application. For example, you might find it unacceptable for your application to be down for longer than four hours because of the potential loss to the business after this time. Critical applications will require a shorter RTO.
 
-![An image depicting RPO as the loss of data, and RTO as the time to recover from disaster](../media/2-rto-rpo.png)
+![An image depicting RPO as the loss of data, and RTO as the time to recover from disaster.](../media/2-rto-rpo.png)
 
 The RPO and RTO for your application can be influenced by contractual or regulatory requirements. These may also vary per application. Less critical applications may have larger values for RPO/RTO, while more business critical applications may have a smaller tolerance for downtime and data loss. You calculate RTO and RPO based on your organization's understanding of the risk and the cost incurred through the loss of data and downtime.
 
@@ -56,7 +56,7 @@ These region pairs are also used for replication. Storage and many PaaS services
 
 An Availability Set is a logical grouping capability that you can use in Azure to ensure that the VM resources you place within it are isolated from each other when they are deployed within an Azure datacenter. Availability sets are made up of *update domains* and *fault domains*.
 
-![Image depicting fault domains and update domains in an availability set](../media/2-availability-sets.png)
+![Image depicting fault domains and update domains in an availability set.](../media/2-availability-sets.png)
 
 Update domains ensure that a subset of your application's servers always remain running when the virtual machine hosts in an Azure datacenter require downtime for maintenance. Most updates can be performed with no impact to the VMs running on them, but there are occasions when this isn't possible. To ensure that updates don't happen to all VMs simultaneously, the Azure datacenter is logically sectioned into update domains. When a maintenance event, such as a performance update and critical security patch that needs to be applied to the host, the update is sequenced through update domains. The use of sequencing updates using update domains ensures that the whole datacenter isn't unavailable during platform updates and patching.
 
@@ -66,4 +66,4 @@ Fault domains (FDs) represent physical sections of the datacenter and ensure rac
 
 Availability zones are independent physical datacenter locations within a region that include their own power, cooling, and networking. By taking availability zones into account when deploying resources, you can protect workloads from datacenter outages while retaining presence in a particular region. Services like virtual machines are *zonal services*, and enable you to deploy them to specific zones within a region. Other services are *zone-redundant services*, and will replicate across the availability zones in the specific Azure region. Both types ensure that within an Azure region there are no single points of failure.
 
-![Image showing three availability zones with a failure in one but no impact to the other two](../media/2-availability-zones.png)
+![Image showing three availability zones with a failure in one but no impact to the other two.](../media/2-availability-zones.png)

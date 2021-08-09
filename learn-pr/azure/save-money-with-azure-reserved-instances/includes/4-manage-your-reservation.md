@@ -15,7 +15,7 @@ You can delegate access management for a reservation order in the Azure portal u
 
 The reservation is a child object to the *Reservation Order*. When granting someone permissions, it's best to grant permissions to the reservation order. Access on the order allows the user to make commercial transactions, such as an exchange or refund.
 
-[![Example showing add role assignment](../media/4-role-assignment.png)](../media/4-role-assignment.png#lightbox)
+[![Example showing add role assignment.](../media/4-role-assignment.png)](../media/4-role-assignment.png#lightbox)
 
 ## Change the reservation scope
 

@@ -2,18 +2,20 @@
 uid: learn.wwl.provision-manage-azure-cognitive-services
 metadata:
   title: Provision and manage Azure Cognitive Services
-  description: Learn about Cognitive Services and the important role they play in developing AI infused applications.  This learning path will introduce you to creating, managing, and deploying Cognitive Services in the Azure portal or through containers.
-  ms.date: 10/15/2020
+  description: Provision and manage Azure Cognitive Services
+  ms.date: 06/28/2021
   author: wwlpublish
-  ms.author: gerryo
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Provision and manage Azure Cognitive Services
 prerequisites: |
-  * Learners should have an Azure account and be able to navigate the Azure portal.
-  * Learners should also have experience with Docker and containers.
+  Before starting this learning path, you should already have:
+  - Familiarity with Azure and the Azure portal.
+  - Experience programming with C# or Python.
+  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/learn/paths/csharp-first-steps/) or [Take your first steps with Python](/learn/paths/python-first-steps/) learning path before starting this one.
 summary: |
-  Learn about Cognitive Services and the important role they play in developing AI infused applications.  This learning path will introduce you to creating, managing, and deploying Cognitive Services in the Azure portal or through containers.
+  Azure Cognitive Services are building blocks of AI functionality that you can integrate into your applications. In this learning path, you'll learn how to provision, secure. monitor, and deploy cognitive services resources and use them to build intelligent solutions.
 iconUrl: /learn/achievements/provision-and-manage-azure-cognitive-services.svg
 levels:
 - intermediate
@@ -21,17 +23,14 @@ roles:
 - ai-engineer
 - data-scientist
 - developer
-- devops-engineer
 - solution-architect
 - student
 products:
-- azure
 - azure-cognitive-services
-- azure-container-instances
-- azure-portal
 modules:
 - learn.wwl.create-manage-cognitive-services
-- learn.wwl.investigate-container-for-use-with-cognitive-services
 - learn.wwl.secure-cognitive-services
+- learn.wwl.monitor-cognitive-services
+- learn.wwl.investigate-container-for-use-with-cognitive-services
 trophy:
   uid: learn.wwl.provision-manage-azure-cognitive-services.trophy

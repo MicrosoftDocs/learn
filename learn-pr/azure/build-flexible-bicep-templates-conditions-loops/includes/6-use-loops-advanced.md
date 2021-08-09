@@ -2,6 +2,8 @@ By using the powerful copy loops feature, you can create dynamic and flexible te
 
 In this unit, you learn how to control the execution of copy loops, and how to use resource property loops and nested loops in Bicep.
 
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+
 ## Control loop execution
 
 By default, Azure Resource Manager creates resources from loops in parallel, and in a non-deterministic order. When you created loops in the previous exercises, both of the Azure SQL logical servers were created at the same time. This helps to reduce the overall deployment time, because all of the resources within the loop are deployed at once. 
@@ -20,7 +22,7 @@ All the resources in this loop will be deployed at the same time, in parallel:
 
 Now let's apply the `@batchSize` decorator with a value of `2`:
 
-::: code language="plaintext" source="code/6-loop-batchSize.bicep" range="2-6" highlight="1" :::
+::: code language="bicep" source="code/6-loop-batchSize.bicep" range="2-6" highlight="1" :::
 
 When you deploy the template, Bicep will deploy in batches of two:
 
@@ -31,7 +33,7 @@ When you deploy the template, Bicep will deploy in batches of two:
 
 You can also tell Bicep to run the loop sequentially by setting the `@batchSize` to `1`:
 
-::: code language="plaintext" source="code/6-loop-batchSize.bicep" range="1, 3-6" highlight="1" :::
+::: code language="bicep" source="code/6-loop-batchSize.bicep" range="1, 3-6" highlight="1" :::
 
 When you deploy the template, Bicep waits for each resource deployment to finish before it starts the next one:
 
@@ -41,7 +43,7 @@ When you deploy the template, Bicep waits for each resource deployment to finish
 
 You can use loops to help set resource properties. For example, when you deploy a virtual network, you need to specify its subnets. A subnet has to have two pieces of important information: a name and an address prefix. You can use a parameter with an array of objects so that you can specify different subnets for each environment:
 
-::: code language="plaintext" source="code/6-loop-property.bicep" highlight="15-20" :::
+::: code language="bicep" source="code/6-loop-property.bicep" highlight="15-20" :::
 
 In this example, notice that the `for` loop appears within the resource definition, around the `subnets` property value.
 
@@ -51,13 +53,13 @@ Some scenarios require you to use a loop inside another loop, or a *nested loop*
 
 For your teddy bear toy company, you need to deploy virtual networks in every country where the toy will be launched. Every virtual network needs a different address space and two subnets. Let's start by deploying the virtual networks in a loop:
 
-::: code language="plaintext" source="code/6-loop-nested.bicep" range="1-17,24-25" highlight="9,10,15" :::
+::: code language="bicep" source="code/6-loop-nested.bicep" range="1-17,24-25" highlight="9,10,15" :::
 
 This loop deploys the virtual networks for each location, and it sets the `addressPrefix` for the virtual network by using the loop index to ensure each virtual network gets a different address prefix.
 
 You can use a nested loop to deploy the subnets within each virtual network:
 
-::: code language="plaintext" source="code/6-loop-nested.bicep" range="9-25" highlight="10-15" :::
+::: code language="bicep" source="code/6-loop-nested.bicep" range="9-25" highlight="10-15" :::
 
 The nested loop uses the `range()` function to create two subnets.
 

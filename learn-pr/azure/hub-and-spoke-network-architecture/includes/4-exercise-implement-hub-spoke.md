@@ -2,7 +2,7 @@ You need to deploy your network infrastructure in a hub-spoke configuration for 
 
 In this exercise, you'll deploy your network infrastructure, and then create a new virtual network to host the servers for your company's new HR system.
 
-![Diagram showing adding a new HR spoke to the network](../media/4-adding-spoke.svg)
+![Diagram showing adding a new HR spoke to the network.](../media/4-adding-spoke.svg)
 
 ## Set up environment
 

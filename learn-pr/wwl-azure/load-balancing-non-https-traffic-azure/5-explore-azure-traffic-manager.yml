@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.load-balancing-non-https-traffic-azure.explore-azure-traffic-manager
+title: Explore Azure Traffic Manager
+metadata:
+  title: Explore Azure Traffic Manager
+  description: "Explore Azure Traffic Manager"
+  ms.date: 07/16/2021
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 14
+content: |
+  [!include[](includes/5-explore-azure-traffic-manager.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What are two benefits of Traffic Manager?"
+    choices:
+    - content: "Distribution of traffic and continuous monitoring of endpoint health."
+      isCorrect: true
+      explanation: "Correct, Distribution of traffic according to one of several traffic-routing methods and continuous monitoring of endpoint health and automatic failover when endpoints fail."
+    - content: "Resolution of DNS queries and reduced need for DNS servers."
+      isCorrect: false
+      explanation: "Incorrect, Traffic Manager uses DNS to direct clients to specific service endpoints based on the rules of the traffic-routing method, it does not resolve queries itself."
+    - content: "Supports one traffic-routing method and integrates with DNS."
+      isCorrect: false
+      explanation: "Incorrect, Azure Traffic Manager supports six traffic-routing methods. The traffic-routing method determines which endpoint is returned in the DNS response."
+  - content: "Which traffic-routing method should be use when end users need to use the \"closest\" endpoint for the lowest network latency?"
+    choices:
+    - content: "Performance"
+      isCorrect: true
+      explanation: "Correct, Use when you have endpoints in different geographic locations, and you want end users to use the \"closest\" endpoint for the lowest network latency."
+    - content: "Geographic"
+      isCorrect: false
+      explanation: "Incorrect, Select this routing method to direct users to specific endpoints (Azure, External, or Nested) based on where their DNS queries originate from geographically."
+    - content: "Priority"
+      isCorrect: false
+      explanation: "Incorrect, Select this routing method when you want to have a primary service endpoint for all traffic. You can provide multiple backup endpoints in case the primary or one of the backup endpoints is unavailable."

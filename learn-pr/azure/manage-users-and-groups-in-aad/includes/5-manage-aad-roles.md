@@ -48,7 +48,7 @@ Next, let's explore some of the other built-in roles.
 
 1. On the interior menu bar, select the **Roles** tab as follows to see the list of available roles.
 
-    ![Screenshot showing the roles in the portal](../media/5-list-roles.png)
+    ![Screenshot showing the roles in the portal.](../media/5-list-roles.png)
 
 ## What's a role definition?
 

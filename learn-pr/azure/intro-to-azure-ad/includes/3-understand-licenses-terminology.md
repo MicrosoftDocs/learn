@@ -20,11 +20,11 @@ Choose the license type you want, based on your organization's needs.
 
 View your active license plans in the Azure portal by selecting **Azure Active Directory** > **Licenses** > **All products**. Here, you can also buy or try new licenses.
 
-![Azure AD licenses](../media/3-licenses.png)
+![Azure AD licenses.](../media/3-licenses.png)
 
 Select a license plan to see which users are included. In the plan, you can add or remove users or groups of users.
 
-![Azure AD license users](../media/3-licenses-users.png)
+![Azure AD license users.](../media/3-licenses-users.png)
 
 ## Azure AD terminology
 

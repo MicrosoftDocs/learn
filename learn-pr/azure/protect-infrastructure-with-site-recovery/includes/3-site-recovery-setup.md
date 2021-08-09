@@ -63,7 +63,7 @@ A Recovery Services vault enables Site Recovery to complete disaster recovery re
 
 ### What are the target resources?
 
-Target resources are all the Azure services that are created after your existing resources replicate. In this scenario, the West US region is the region where all your target resources get created. There are a few considerations to keep in mind when selecting the target resources region:
+Target resources are all the Azure services that are created after your existing resources replicate. In this scenario, the West US region (source environment) is where all your target resources get created. There are a few considerations to keep in mind when selecting the target resources region:
 
 - Target resources for Site Recovery replication have to be in a different Azure region.
 - Storage account that stores the backed-up data must also be in a different region than the resources being protected.

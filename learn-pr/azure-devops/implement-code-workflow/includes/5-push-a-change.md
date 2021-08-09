@@ -84,7 +84,7 @@ Before you create a branch, it's a good idea to adhere to a naming convention. F
 In your terminal, run the following `git checkout` command:
 
 ```bash
-git checkout -b feature/home-page-text
+git checkout -B feature/home-page-text
 ```
 
 Like before, the `feature/home-page-text` is based off of `main`.

@@ -13,7 +13,7 @@ To register the resource provider by using the Azure CLI:
 1. Run this command for the Azure CLI:
 
     ```azurecli
-    az provider register -n Microsoft.Azure VMware Solution --subscription <your subscription ID> 
+    az provider register -n Microsoft.AVS --subscription <your subscription ID> 
     ```
 
 ### PowerShell
@@ -25,7 +25,7 @@ To register the resource provider by using PowerShell:
 1. Run this command for PowerShell:
 
     ```powershell
-    Register-AzResourceProvider -ProviderNamespace Microsoft.Azure VMware Solution
+    Register-AzResourceProvider -ProviderNamespace Microsoft.AVS
     ```
 
 ### Azure portal

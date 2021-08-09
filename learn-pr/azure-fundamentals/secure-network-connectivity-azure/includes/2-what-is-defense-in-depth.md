@@ -125,7 +125,7 @@ Integrating security into the application development lifecycle helps reduce the
 :::row-end:::
 :::row:::
   :::column:::
-    ![Image representing data](../media/2-data.png)
+    ![Image representing data.](../media/2-data.png)
   :::column-end:::
   :::column span="3":::
 

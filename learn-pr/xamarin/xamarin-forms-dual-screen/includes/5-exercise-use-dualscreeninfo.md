@@ -123,4 +123,4 @@ If the app is spanned, the list and detail view is shown side-by-side using `Two
 
 When you span or unspan the app, the detail view will be pushed onto the navigation stack or popped off the navigation stack as required. These screenshots show how the app working on a single screen:
 
-![List rendering correctly in single screen](../media/5-list.png) and ![Detail rendering correctly in single screen](../media/5-detail.png)
+![List rendering correctly in single screen.](../media/5-list.png) and ![Detail rendering correctly in single screen](../media/5-detail.png)

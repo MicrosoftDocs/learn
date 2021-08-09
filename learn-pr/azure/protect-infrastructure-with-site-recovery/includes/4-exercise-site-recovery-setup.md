@@ -2,7 +2,7 @@ Azure Site Recovery automates the setup of recovery from one region to another. 
 
 Currently, two VMs are running the company's patient and employee systems. These systems are running in the West US region. You've been asked to protect the infrastructure by enabling it to be recovered to the East US region. Using Azure Site Recovery, you'll enable a Recovery Services vault to replicate the current workloads.
 
-![Image showing the current Azure infrastructure and what will be set up by Azure Site Recovery](../media/4-environment.svg)
+![Image showing the current Azure infrastructure and what will be set up by Azure Site Recovery.](../media/4-environment.svg)
 
 In this exercise, you'll complete the setup of Azure Site Recovery using the Azure portal.
 
@@ -24,7 +24,7 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the Azu
     |---------|---------|
     | **Project Details** |
     | Subscription | *your subscription* |
-    | Resource group | Select **east-coast-rg**, and then select **OK**. |
+    | Resource group | From the dropdown list, select **east-coast-rg**. |
     | **Instance Details** |
     | Vault name | **asr-vault** |
     | Region | **East US 2** |
@@ -33,11 +33,11 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the Azu
 
 ## Enable replication
 
-1. In the Recovery Services vault pane, in the left menu bar, under **Protected items**, select **Replicated items**. The **Replicated items** pane appears.
+1. In the Recovery Services vault pane named *asr-vault*, in the left menu bar, under **Protected items**, select **Replicated items**. The **Replicated items** pane appears.
 
-1. In the top menu bar, select **Replicate**, and from the dropdown list, select **Azure virtual machines**. Enter the following values for each setting.
+1. In the top menu bar, select **Replicate**, and from the dropdown list, select **Azure virtual machines**. The **Enable replication** pane appears.
 
-    ![Screenshot showing the source options for replication](../media/4-enable-replication-source.png)
+1. Enter the following values for each setting.
 
     | Setting | Value |
     |---------|---------|
@@ -48,12 +48,11 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the Azu
     | Select both VMs | **hr-records** and **patient-records**. Select **Next**. |
     | **Replication settings** tab |
     | Target location | **East US 2**. |
-    | **Customize**. Select it. The **Customize target settings** pane appears. |
-    | Target resource group | **east-coast-rg** |
-    | For each VM | From the dropdown list, change the **Cache storage** to **asrcacheXXXX**, where **XXXX** is a random number. Select **OK**. |
-    | Select **Enable replication**. |
+    | Target subscription | Select the **Customize** link. The **Customize target subscription** pane appears. In the **Target subscription** field, select your Azure subscription, and select **OK**. The **Enable replication** pane reappears. |
 
-Continue to the next steps to monitor the progress.
+    ![Screenshot showing the source options for replication.](../media/4-enable-replication-source.png)
+
+1. Select **Enable replication**. When deployment succeeds, select **Go to resource group**. The **Recovery Services vault** pane named *asr-vault* appears.
 
 ## Monitor replication progress
 
@@ -67,10 +66,10 @@ Continue to the next steps to monitor the progress.
 
 1. In the jobs list, select the **In progress** link to view how the replication setup is progressing.
 
-    ![Screenshot of all the Site Recovery jobs](../media/4-site-recovery-jobs.png)
+    ![Screenshot of all the Site Recovery jobs.](../media/4-site-recovery-jobs.png)
 
 1. You can select any of the listed jobs to view more details.
 
-    ![Screenshot of the Enable replication job's progress](../media/4-replication-job.png)
+    ![Screenshot of the Enable replication job's progress.](../media/4-replication-job.png)
 
 Two of these jobs will take the most time to complete. If you select either of the **Enable replication** jobs, you'll see that the **Installing Mobility Service and preparing target** step can take between five to 10 minutes to finish.

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-ai-fundamentals.explore-responsible-ai-practice
+title: Challenges and risks with AI
+metadata:
+  title: Challenges and risks with AI
+  description: "Challenges and risks with AI"
+  ms.date: 07/27/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-challenges-with-ai.md)]

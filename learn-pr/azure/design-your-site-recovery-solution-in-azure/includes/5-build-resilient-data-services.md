@@ -14,7 +14,7 @@ You can also set secondary replicas to be readable. This way, clients can access
 
 Always On Availability Groups run on top of a Windows Server Failover Cluster that consists of a group of machines working in unison. This architecture gives you high availability for the workloads that run on those machines. With Always On Availability Groups, each node (machine) in your cluster hosts a replica, whether primary or secondary, and each replica holds a group of databases.
 
-![Availability Group example](../media/5-availability-group-example.png)
+![Availability Group example.](../media/5-availability-group-example.png)
 
 Always On Availability Groups can be configured in Azure by creating two availability sets. Create one availability set for your Windows Server Failover Cluster nodes, and another for the domain controllers. The Windows Server Failover Cluster needs to contain at least three machines. There should be one SQL machine for the primary replica, and another for the secondary replica in the cluster. There will be a third machine as a file share witness server, or you can use an Azure file share as a witness.
 

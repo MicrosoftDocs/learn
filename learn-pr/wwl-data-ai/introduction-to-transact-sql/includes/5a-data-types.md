@@ -433,7 +433,7 @@ The results from this query might look something like this:
 
 
 > [!NOTE]
-> To find out more about *style* formatting codes you can use with CONVERT, see the [Transact-SQL reference documentation](https://docs.microsoft.com/sql/t-sql/functions/cast-and-convert-transact-sql).
+> To find out more about *style* formatting codes you can use with CONVERT, see the [Transact-SQL reference documentation](/sql/t-sql/functions/cast-and-convert-transact-sql).
 
 ### PARSE and TRY_PARSE
 

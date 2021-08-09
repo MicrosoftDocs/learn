@@ -246,7 +246,7 @@ Xamarin.Forms UIs can be built using XAML.
     > When you compile this app, you will see a warning about `SendLocation` lacking `await` modifiers. You can ignore this warning as this will be resolved once more code is added to this method in the next unit.
     
     
-    ![The new app UI](../media/3-new-ui.png)
+    ![The new app UI.](../media/3-new-ui.png)
 
 ## Summary
 

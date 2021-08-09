@@ -8,7 +8,7 @@ The service can detect anomalies in historical time series data and also in real
 
 Anomalies are values that are outside the expected values or range of values.
 
-:::image type="content" source="../media/batch-anomaly.png" alt-text="Line graph depicting three points that are outside a boundary and identified as anomalies":::
+:::image type="content" source="../media/batch-anomaly.png" alt-text="Line graph depicting three points that are outside a boundary and identified as anomalies.":::
 
 In the graphic depicting the time series data, there is a light shaded area that indicates the boundary, or sensitivity range. The solid blue line is used to indicate the measured values. When a measured value is outside of the shaded boundary, an orange dot is used to indicate the value is considered an anomaly. The sensitivity boundary is a parameter that you can specify when calling the API. It allows you to adjust that boundary settings to tweak the results.
 

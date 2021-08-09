@@ -11,7 +11,7 @@ By using Azure DevOps, you can:
 ### Viewing tests
 To use the Azure DevOps Portal to view tests that you've run from the Azure portal, you open a test, and then, in the **Essentials** section, select the **Azure DevOps Account** link to open a new browser tab. If you used the same sign in details for the Azure portal and Azure DevOps, selecting this link will automatically sign you in to the Azure DevOps Portal.
 
-![Link to start Azure DevOps](../media/5-launch-devops.png)
+![Link to start Azure DevOps.](../media/5-launch-devops.png)
 
 If this is the first time you've opened the Azure DevOps dashboard to view the tests, you'll need to select your Azure DevOps organization and then create a new project. In any project, the **Load test** section under **Test Plans** will list the test runs that you initiated from the Azure portal:
 

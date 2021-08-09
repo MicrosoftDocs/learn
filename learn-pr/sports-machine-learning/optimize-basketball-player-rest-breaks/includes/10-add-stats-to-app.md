@@ -61,4 +61,4 @@ We can test the initial stat display locally: right-click the *index.html* file,
 
 :::image type="content" source="../media/local-test-start-game.png" alt-text="Screenshot that shows the test of the initial stat visualization.":::
 
-© 2020 Warner Bros. Ent. All Rights Reserved
+© 2021 Warner Bros. Ent. All Rights Reserved

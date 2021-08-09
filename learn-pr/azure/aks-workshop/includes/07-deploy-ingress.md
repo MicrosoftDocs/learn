@@ -1,4 +1,4 @@
-In the previous units, you exposed the Fruit Smoothies' ratings website and RESTfull API in two different ways for allowing access to each instance. The API is exposed via a ratings-api service using a *ClusterIP* that creates an internal IP address for use within the cluster. Recall that choosing this value makes the service reachable only from within the cluster. The website is exposed via a ratings-web service using a *LoadBalancer* that creates a public IP address in Azure and assigns it to Azure Load Balancer. Recall that choosing this value makes the service reachable from outside the cluster.
+In the previous units, you exposed the Fruit Smoothies' ratings website and RESTful API in two different ways for allowing access to each instance. The API is exposed via a ratings-api service using a *ClusterIP* that creates an internal IP address for use within the cluster. Recall that choosing this value makes the service reachable only from within the cluster. The website is exposed via a ratings-web service using a *LoadBalancer* that creates a public IP address in Azure and assigns it to Azure Load Balancer. Recall that choosing this value makes the service reachable from outside the cluster.
 
 Even though the load balancer exposes the ratings website via a publicly-accessible IP, there are limitations that you need to consider.
 
@@ -187,7 +187,7 @@ Let's set up an Ingress resource with a route to the ratings-web service.
 
 Open the host name you configured on the ingress in a web browser to view and interact with the application. For example, at http:\//frontend.13.68.177.68.nip.io.
 
-![Screenshot of the ratings-web application](../media/07-ratings-web-ingress.png)
+![Screenshot of the ratings-web application.](../media/07-ratings-web-ingress.png)
 
 ## Summary
 

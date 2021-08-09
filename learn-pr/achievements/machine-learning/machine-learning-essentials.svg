@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="118px" viewBox="0 0 100 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>AI and Machine Learning Crash Course/ai-and-machine-learning-crash-course</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M42.7425,1.49663266 C44.3745,0.498877554 46.1865,0 48,0 C49.8135,0 51.627,0.498877554 53.256,1.49663266 L90.591,24.3316189 C93.933,26.3773408 96,30.2031485 96,34.3529027 L96,79.6470973 C96,83.7952317 93.933,87.6242789 90.591,89.6683811 L53.256,112.504987 C51.627,113.501122 49.8135,114 48,114 C46.1865,114 44.3745,113.501122 42.7425,112.504987 L5.409,89.6683811 C2.0655,87.6242789 0,83.7952317 0,79.6470973 L0,34.3529027 C0,30.2031485 2.0655,26.3773408 5.409,24.3316189 L42.7425,1.49663266 Z" id="path-1"></path>
+        <filter x="-8.0%" y="-6.9%" width="116.0%" height="115.2%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0975147192 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="AI-and-Machine-Learning-Crash-Course" transform="translate(-50.000000, -50.000000)">
+            <g id="AI-and-Machine-Learning-Crash-Course/ai-and-machine-learning-crash-course" transform="translate(50.000000, 50.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Trophy-1" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="AI---network" opacity="0.79953497" mask="url(#mask-2)">
+                        <g transform="translate(-39.000000, 12.000000)">
+                            <g id="yellow-under" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(110.063657, 0.000000)">
+                                <circle id="Oval" fill="#F9D788" cx="16.2951389" cy="29.1597222" r="1.71527778"></circle>
+                                <circle id="Oval" fill="#F9D788" cx="20.2974537" cy="81.1898148" r="1.14351852"></circle>
+                                <circle id="Oval" fill="#F9D788" cx="22.5844907" cy="1.14351852" r="1.14351852"></circle>
+                                <polyline id="Path-184" stroke="#FFDC8B" stroke-width="0.4" points="14.5798611 86.9074074 20.2974537 81.1898148 2.25347004e-15 79.7539955"></polyline>
+                                <polyline id="Path-185" stroke="#FFDC8B" stroke-width="0.4" points="50.0289352 85.7638889 59.1770833 66.3240741 16.2951389 61.75"></polyline>
+                                <polyline id="Path-187" stroke="#FFDC8B" stroke-width="0.4" points="15.7233796 28.587963 22.5844907 1.14351852 32.8761574 35.4490741 16.2951389 29.1597222 10.005787 46.8842593 34.0196759 35.4490741"></polyline>
+                                <line x1="108.886637" y1="24.0138889" x2="22.5844907" y2="1.14351852" id="Path-188" stroke="#FFDC8B" stroke-width="0.4"></line>
+                                <polyline id="Path-191" stroke="#FFDC8B" stroke-width="0.4" points="50.6006944 85.7638889 21.4409722 81.1898148 59.1770833 66.3240741"></polyline>
+                            </g>
+                            <g id="green-under" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(46.884259, 20.583333)">
+                                <polyline id="Path-181" stroke="#FFFFFF" stroke-width="0.4" points="0 16.0092593 30.875 1.14351852 73.1851852 26.3009259 45.7407407 48.0277778 37.1643519 37.7361111 45.7407407 28.587963 21.7268519 24.5856481 67.4675926 13.7222222 30.875 1.14351852 21.7268519 26.3009259"></polyline>
+                                <polyline id="Path-182" stroke="#FFFFFF" stroke-width="0.4" points="12.5787037 55.4606481 32.0185185 58.6963365 45.7407407 48.0277778"></polyline>
+                                <polyline id="Path-183" stroke="#FFFFFF" stroke-width="0.4" points="62.8935185 58.8912037 80.0462963 41.1666667 96.0555556 14.8657407"></polyline>
+                                <circle id="Oval" fill="#A1D978" cx="21.7268519" cy="25.1574074" r="1.14351852"></circle>
+                                <circle id="Oval" fill="#A1D978" cx="45.7407407" cy="48.0277778" r="1.14351852"></circle>
+                                <circle id="Oval" fill="#FFFFFF" cx="64.6087963" cy="33.7337963" r="1.71527778"></circle>
+                                <circle id="Oval" fill="#FFFFFF" cx="73.1851852" cy="26.3009259" r="1.14351852"></circle>
+                                <circle id="Oval" fill="#FFFFFF" cx="80.0462963" cy="41.1666667" r="1.14351852"></circle>
+                                <circle id="Oval" fill="#FFFFFF" cx="32.0185185" cy="58.3194444" r="1.14351852"></circle>
+                                <circle id="Oval" fill="#FFFFFF" cx="30.875" cy="1.14351852" r="1.14351852"></circle>
+                            </g>
+                            <g id="red-under-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 18.296296)">
+                                <polyline id="Path-177" stroke="#D96B5F" stroke-width="0.4" points="0 53.5505032 16.5810185 57.7476852 2.28703704 34.3055556 33.2032774 38.7221613 33.162037 38.8796296 45.7407407 18.2962963 0 1.12341761"></polyline>
+                                <polyline id="Path-180" stroke="#D96B5F" stroke-width="0.4" points="16.5810185 57.1759259 33.162037 38.8796296 45.7407407 54.8888889 16.5810185 58.3194444"></polyline>
+                                <circle id="Oval" fill="#F97B6E" cx="45.7407407" cy="18.2962963" r="1.14351852"></circle>
+                            </g>
+                            <polyline id="Path-151" stroke="#C2423D" stroke-width="0.5" fill="none" points="24.0138889 70.8981481 37.7361111 56.0324074 28.587963 51.4583333 22.8703704 41.1666667 44.5972222 27.4444444 45.7407407 49.1712963"></polyline>
+                            <polygon id="Path-152" stroke="#C2423D" stroke-width="0.5" fill="none" points="37.7361111 84.6203704 52.6018519 62.8935185 37.7361111 56.0324074 24.0138889 70.8981481"></polygon>
+                            <polyline id="Path-153" stroke="#C2423D" stroke-width="0.5" fill="none" points="29.7314815 87.6611916 58.3194444 75.4722222 45.7407407 73.1851852 24.0138889 70.8981481 38.3078704 56.0324074"></polyline>
+                            <line x1="37.7361111" y1="54.8888889" x2="45.7407407" y2="73.1851852" id="Path-154" stroke="#C2423D" stroke-width="0.5" fill="none"></line>
+                            <line x1="28.587963" y1="51.4583333" x2="44.5972222" y2="27.4444444" id="Path-155" stroke="#C2423D" stroke-width="0.5" fill="none"></line>
+                            <line x1="45.7407407" y1="50.3148148" x2="28.587963" y2="51.4583333" id="Path-156" stroke="#C2423D" stroke-width="0.5" fill="none"></line>
+                            <line x1="60.6064815" y1="34.3055556" x2="44.5972222" y2="27.4444444" id="Path-158" stroke="#C2423D" stroke-width="0.5" fill="none"></line>
+                            <polyline id="Path-159" stroke="#C2423D" stroke-width="0.5" fill="none" points="60.6064815 34.3055556 45.7407407 49.1712963 62.8935185 49.1712963"></polyline>
+                            <polygon id="Path-160" stroke="#C9E1FF" stroke-width="0.5" fill="none" points="92.625 49.1712963 60.6064815 34.3055556 62.8935185 48.0277778"></polygon>
+                            <polygon id="Path-161" stroke="#E5F1FF" stroke-width="0.5" fill="none" points="52.6018519 62.8935185 62.8935185 49.1712963 84.0486111 58.8912037 77.7592593 66.3240741"></polygon>
+                            <polyline id="Path-162" stroke="#FFFFFE" stroke-width="0.5" fill="none" points="52.6018519 62.8935185 92.625 49.1712963 114.923611 34.8773148 118.925926 53.7453704 109.206019 78.9027778 84.0486111 58.8912037 77.7592593 66.3240741"></polyline>
+                            <polygon id="Path-163" stroke="#FFFFFE" stroke-width="0.5" fill="none" points="88 102 109.206019 78.9027778 62.8935185 87.6611916 58.3194444 76.6157407 78.9027778 66.3240741 109.206019 78.9027778"></polygon>
+                            <polygon id="Path-164" stroke="#FFFFFE" stroke-width="0.5" fill="none" points="118.925926 54.8888889 84.0486111 58.8912037 92.625 49.1712963"></polygon>
+                            <line x1="114.923611" y1="35.4490741" x2="105.203704" y2="51.4583333" id="Path-165" stroke="#FFFFFE" stroke-width="0.5" fill="none"></line>
+                            <polyline id="Path-166" stroke="#EFB252" stroke-width="0.5" fill="none" points="147.513889 19.4398148 114.923611 34.8773148 141.796296 54.8888889 160.664352 26.3009259"></polyline>
+                            <polygon id="Path-167" stroke="#EFB252" stroke-width="0.5" fill="none" points="147.513889 19.4398148 160.950231 25.7291667 114.923611 34.8773148 143.830062 21.1847854"></polygon>
+                            <polygon id="Path-168" stroke="#EFB252" stroke-width="0.5" fill="none" points="118.925926 54.8888889 141.796296 54.8888889 130.361111 72.0416667"></polygon>
+                            <polyline id="Path-169" stroke="#FFFFFE" stroke-width="0.5" fill="none" points="126.930556 99.4921875 116.638889 92.3232422 109.206019 80.0462963 130.361111 71.8467995 120.212384 89.2529297 140.652778 87.6611916"></polyline>
+                            <polyline id="Path-170" stroke="#EFB252" stroke-width="0.5" fill="none" points="189.824074 51.4583333 130.361111 72.0416667 141.796296 87.6611916"></polyline>
+                            <circle id="Oval" stroke="none" fill="#DF5142" fill-rule="evenodd" cx="37.7361111" cy="56.0324074" r="1.14351852"></circle>
+                            <circle id="Oval" stroke="none" fill="#DF5142" fill-rule="evenodd" cx="45.7407407" cy="49.1712963" r="1.14351852"></circle>
+                            <circle id="Oval" stroke="none" fill="#DF5142" fill-rule="evenodd" cx="44.5972222" cy="27.4444444" r="1.14351852"></circle>
+                            <circle id="Oval" stroke="none" fill="#DF5142" fill-rule="evenodd" cx="45.7407407" cy="73.1851852" r="1.14351852"></circle>
+                            <circle id="Oval" stroke="none" fill="#DF5142" fill-rule="evenodd" cx="52.6018519" cy="62.8935185" r="1.14351852"></circle>
+                            <circle id="Oval" stroke="none" fill="#DF5142" fill-rule="evenodd" cx="60.6064815" cy="34.3055556" r="1.14351852"></circle>
+                            <circle id="Oval" stroke="none" fill="#DF5142" fill-rule="evenodd" cx="62.8935185" cy="48.0277778" r="2.28703704"></circle>
+                            <circle id="Oval" stroke="none" fill="#87BF5F" fill-rule="evenodd" cx="77.7592593" cy="66.3240741" r="1.14351852"></circle>
+                            <circle id="Oval" stroke="none" fill="#DF5142" fill-rule="evenodd" cx="37.7361111" cy="84.6203704" r="1.14351852"></circle>
+                            <circle id="Oval" stroke="none" fill="#DF5142" fill-rule="evenodd" cx="58.3194444" cy="75.4722222" r="1.14351852"></circle>
+                            <circle id="Oval" stroke="none" fill="#87BF5F" fill-rule="evenodd" cx="84.0486111" cy="58.8912037" r="1.71527778"></circle>
+                            <circle id="Oval" stroke="none" fill="#87BF5F" fill-rule="evenodd" cx="92.625" cy="49.1712963" r="1.14351852"></circle>
+                            <circle id="Oval" stroke="none" fill="#E5F1FF" fill-rule="evenodd" cx="105.203704" cy="51.4583333" r="1.14351852"></circle>
+                            <circle id="Oval" stroke="none" fill="#E5F1FF" fill-rule="evenodd" cx="118.925926" cy="54.8888889" r="1.14351852"></circle>
+                            <circle id="Oval" stroke="none" fill="#E5F1FF" fill-rule="evenodd" cx="109.206019" cy="79.474537" r="1.71527778"></circle>
+                            <circle id="Oval" stroke="none" fill="#F7CB64" fill-rule="evenodd" cx="130.361111" cy="72.0416667" r="1.14351852"></circle>
+                            <circle id="Oval" stroke="none" fill="#E5F1FF" fill-rule="evenodd" cx="114.923611" cy="34.8773148" r="1.71527778"></circle>
+                        </g>
+                    </g>
+                    <g id="Chemestry" mask="url(#mask-2)">
+                        <g transform="translate(23.000000, 14.000000)">
+                            <g id="Group-3" filter="url(#filter-3)" transform="translate(0.000000, 19.090909)">
+                                <path d="M48.94,55.6363636 L35.0590909,21.7063636 C34.8690909,21.2709091 34.7036364,20.8909091 34.5463636,20.5645455 L34.5463636,3.63636364 L37.2736364,3.63636364 C38.2772727,3.63636364 39.0918182,2.82181818 39.0918182,1.81818182 C39.0918182,0.813636364 38.2772727,0 37.2736364,0 L11.8190909,0 C10.8145455,0 10.0009091,0.813636364 10.0009091,1.81818182 C10.0009091,2.82181818 10.8145455,3.63636364 11.8190909,3.63636364 L14.5463636,3.63636364 L14.5463636,20.5645455 C14.3890909,20.8909091 14.2227273,21.2709091 14.0336364,21.7063636 L0.151818182,55.6363636 C-0.0927272727,56.1981818 -0.0381818182,56.8463636 0.298181818,57.36 C0.633636364,57.8727273 1.20636364,58.1818182 1.81909091,58.1818182 L47.2736364,58.1818182 C47.8863636,58.1818182 48.4590909,57.8727273 48.7945455,57.36 C49.13,56.8463636 49.1854545,56.1981818 48.94,55.6363636" id="Fill-103" fill="#E1E4E1"></path>
+                                <path d="M28.1827273,32.7272727 C28.9845455,32.1781818 30.3127273,31.8181818 31.8190909,31.8181818 C33.3254545,31.8181818 34.6545455,32.1781818 35.4554545,32.7272727 L44.6463636,54.5454545 L4.44636364,54.5454545 L13.6372727,32.7272727 C14.4390909,32.1781818 15.7672727,31.8181818 17.2736364,31.8181818 C18.78,31.8181818 20.1090909,32.1781818 20.91,32.7272727 C21.7118182,33.2763636 23.04,33.6363636 24.5463636,33.6363636 C26.0527273,33.6363636 27.3818182,33.2763636 28.1827273,32.7272727" id="Fill-104" fill="#7CB65A"></path>
+                                <path d="M48.94,55.6363636 L35.0590909,21.7063636 C34.8690909,21.2709091 34.7036364,20.8909091 34.5463636,20.5645455 L34.5463636,3.63636364 L37.2736364,3.63636364 C38.2772727,3.63636364 39.0918182,2.82181818 39.0918182,1.81818182 L25.4554545,1.81818182 C24.9536364,1.81818182 24.5463636,2.22545455 24.5463636,2.72727273 L24.5463636,3.63636364 L14.5463636,3.63636364 L14.5463636,5.45454545 L22.7281818,5.45454545 C23.7318182,5.45454545 24.5463636,6.26818182 24.5463636,7.27272727 L24.5463636,20.8036364 C24.5463636,20.8736364 24.55,20.9436364 24.5581818,21.0136364 L28.4327273,54.3354545 C28.5590909,55.4154545 27.7145455,56.3636364 26.6272727,56.3636364 L0.0136363636,56.3636364 C0.0136363636,56.7127273 0.101818182,57.0590909 0.298181818,57.36 C0.633636364,57.8727273 1.20636364,58.1818182 1.81909091,58.1818182 L47.2736364,58.1818182 C47.8863636,58.1818182 48.4590909,57.8727273 48.7945455,57.36 C49.13,56.8463636 49.1854545,56.1981818 48.94,55.6363636" id="Fill-107" fill="#C5CCCD"></path>
+                                <path d="M31.8190909,31.8181818 C30.3127273,31.8181818 28.9845455,32.1781818 28.1827273,32.7272727 C27.6572727,33.0872727 26.8909091,33.3536364 26.0109091,33.5027273 L28.4327273,54.3354545 C28.4418182,54.4063636 28.4345455,54.4754545 28.4345455,54.5454545 L44.6463636,54.5454545 L35.4554545,32.7272727 C34.6545455,32.1781818 33.3254545,31.8181818 31.8190909,31.8181818" id="Fill-108" fill="#69994E"></path>
+                            </g>
+                            <g id="Group-7" opacity="0.300000012" transform="translate(13.636364, 0.000000)">
+                                <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="4.08681818" cy="8.18090909" r="3.89090909"></circle>
+                                <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="17.4327273" cy="9.81272727" r="3.155"></circle>
+                                <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="12.71" cy="2.4" r="1.89045455"></circle>
+                                <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="10.82" cy="14.8413636" r="1.23272727"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Hex-Border" stroke="#0078D4" stroke-width="4">
+                    <path d="M45.5618501,3.25844398 L45.5621963,3.25823359 L6.67338401,26.8942953 C3.79673288,28.6432593 2,31.9508238 2,35.5582677 L2,82.4417323 C2,86.0486597 3.79764663,89.3586805 6.67318764,91.1055853 L45.560618,114.742485 C46.9289662,115.572418 48.4546283,116 50,116 C51.5458817,116 53.0723633,115.572188 54.4362178,114.743457 L93.3268764,91.1055464 C96.2016145,89.3583456 98,86.0476286 98,82.4417323 L98,35.5582677 C98,31.9518547 96.202529,28.6435953 93.3268966,26.8944659 L54.4351916,3.25759524 C53.0721095,2.42798656 51.5462432,2 50,2 C48.4542664,2 46.9292165,2.42775755 45.5618501,3.25844398 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

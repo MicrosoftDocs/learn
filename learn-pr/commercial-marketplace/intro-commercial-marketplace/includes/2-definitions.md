@@ -16,7 +16,7 @@ The commercial marketplace has two online stores, **Microsoft AppSource** and **
 
 Between the two online stores and the in-product experiences, the commercial marketplace draws millions of active users per month, with each unique user representing a potential customer for your company. Because Microsoft products and services are used widely by organizations around the world, these monthly users represent companies of all sizes in every industry.
 
-![Comparison of two storefronts commercial marketplace storefronts by audience](../media/1-commercial-market.png)
+![Comparison of two storefronts commercial marketplace storefronts by audience.](../media/1-commercial-market.png)
 
 ## Summary
 

@@ -57,7 +57,7 @@ There are two ways that you can approve or deny access:
     > [!NOTE]
     > You can change your response at any time before the access review has ends. If you want to change your response, select the row and update the response. For example, you can approve a previously denied user or deny a previously approved user.
 
-- If a user is denied access, they aren't removed immediately. They are removed when the review period has ended or when an administrator stops the review if [Auto apply](https://docs.microsoft.com/azure/active-directory/governance/complete-access-review) is enabled.
+- If a user is denied access, they aren't removed immediately. They are removed when the review period has ended or when an administrator stops the review if [Auto apply](/azure/active-directory/governance/complete-access-review) is enabled.
 
 - If there are multiple reviewers, the last submitted response is recorded. Consider an example where an administrator designates two reviewers – Alice and Bob. Alice opens the access review first and approves a user's access request. Before the review period ends, Bob opens the access review and denies access on the same request previously approved by Alice. The last decision denying the access is the response that gets recorded.
 

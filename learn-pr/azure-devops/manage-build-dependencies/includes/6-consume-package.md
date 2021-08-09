@@ -19,7 +19,7 @@ This branch contains the _Space Game_ project you worked with in the previous mo
 
     ```bash
     git fetch upstream models-package
-    git checkout -b models-package upstream/models-package
+    git checkout -B models-package upstream/models-package
     ```
 
     The format of these commands enables you to get starter code from the Microsoft repository on GitHub, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.

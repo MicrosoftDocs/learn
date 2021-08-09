@@ -3,7 +3,7 @@ Companies that use an on-premises Windows Server Active Directory solution can i
 With Azure AD Connect, you can provide your
 users with a common identity for Microsoft 365, Azure, and SaaS applications integrated with Azure AD in a hybrid identity environment.
 
-![A picture containing object Description automatically generated](../media/M1-AAD-Connect1.png)
+![A picture containing object Description automatically generated.](../media/M1-AAD-Connect1.png)
 
 ## What's included in Azure AD Connect?
 

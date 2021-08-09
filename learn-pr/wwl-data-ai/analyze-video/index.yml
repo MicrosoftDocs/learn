@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.analyze-video
+metadata:
+  title: Analyze video
+  description: "Analyze video"
+  ms.date: 07/12/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Analyze video
+summary: Azure Video Analyzer for Media is a service to extract insights from video, including face identification, text recognition, object labels, scene segmentations, and more.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe Video Analyzer for Media capabilities
+  - Extract custom insights
+  - Use Video Analyzer for Media widgets and APIs
+prerequisites: |
+  Before starting this module, you should already have:
+  - Familiarity with Azure and the Azure portal.
+  - Experience programming with C# or Python.
+  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/learn/paths/csharp-first-steps/) or [Take your first steps with Python](/learn/paths/python-first-steps/) learning path first.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+products:
+- azure-cognitive-services
+- azure-video-indexer
+units:
+- learn.wwl.analyze-video.introduction
+- learn.wwl.analyze-video.understand-video-indexer-capabilities
+- learn.wwl.analyze-video.extract-custom-insights
+- learn.wwl.analyze-video.use-video-indexer-widgets-apis
+- learn.wwl.analyze-video.exercise-video-indexer
+- learn.wwl.analyze-video.knowledge-check
+- learn.wwl.analyze-video.summary
+badge:
+  uid: learn.wwl.analyze-video.badge

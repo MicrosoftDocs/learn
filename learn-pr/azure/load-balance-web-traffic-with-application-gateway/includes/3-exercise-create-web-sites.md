@@ -2,7 +2,7 @@ In the motor vehicle department system, you decide to run the web app on two ser
 
 In this exercise, you'll create a pair of virtual machines and install the vehicle registration web app. You'll also configure a virtual network that Application Gateway can use to connect to the virtual machines. Finally, you'll deploy the license renewal web site to an instance of Azure App Service.
 
-![Diagram showing the resources that will be deployed](../media/3-resources.svg)
+![Diagram showing the resources that will be deployed.](../media/3-resources.svg)
 
 ## Create virtual machines and deploy the vehicle registration site
 

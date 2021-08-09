@@ -21,7 +21,7 @@ After you're connected, you can create, query, and update your tables with SQL s
 
 The Azure Database for PostgreSQL server firewall prevents all access to your database server. Users must specify which computers have permission to access the server. The firewall can be configured in the Azure portal or with the Azure CLI. The firewall configuration allows you to specify a range of IP addresses that are permitted to connect to the server, and Azure can detect and suggest your own IP.
 
-   :::image type="content" source="../media/5b-firewall.png" alt-text="Azure Database for PostgreSQL - Create Firewall Rule":::
+   :::image type="content" source="../media/5b-firewall.png" alt-text="Azure Database for PostgreSQL - Create Firewall Rule.":::
 
 As you already created an Azure Database for PostgreSQL instance in the previous exercise, next we'll configure the firewall. We'll allow access for our Cloud Shell development environment. Later, our .NET server will use the same access to query the database.
 

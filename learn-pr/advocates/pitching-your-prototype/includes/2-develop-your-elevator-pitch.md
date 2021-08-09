@@ -6,7 +6,7 @@ One of the best ways to open your pitch is to use storytelling. Create a story t
 
 A prototype pitch is an extension of your elevator pitch, with the bonus of having something to show your audience beyond the story in your elevator pitch. You can turn your mission into some key opening slides for your pitch deck.
 
-![Tell your story](../media/pitch-proto-002.png)
+![Tell your story.](../media/pitch-proto-002.png)
 
 Since you hopefully have slightly longer than an elevator ride to explain your product, your story is just the start. The initial hook for your audience. 
 
@@ -25,19 +25,19 @@ Let's look at these other parts.
 
 State the problem you're trying to solve. Addressing this problem should be at the heart of your prototype. In our example, identifying a clothing item and its brand from an image is hard and time-consuming. Even if you can, it's often difficult to track the item down to a store to buy it.
 
-![Stating the problem that your product prototype is designed to solve](../media/pitch-proto-003.png)
+![Stating the problem that your product prototype is designed to solve.](../media/pitch-proto-003.png)
 
 ## Here's the solution
 
 Once you've articulated the problem, you need to share the solution you've built to solve the problem. You should include any unique properties or competitive advantages your product brings to the problem. In our case, our Fabrikam app makes it easier to identify who makes the clothes you want using machine learning and AI. Then allows you to buy those clothes without leaving the app.
 
-![State the solution to the problem](../media/pitch-proto-004.png)
+![State the solution to the problem.](../media/pitch-proto-004.png)
 
 ## Why are we the right people
 
 Lastly, we need to tell the audience why you and your team are the right people to solve this problem. The reasons could be based on experience, specialized knowledge, or empathy for the customer. If you don't have relevant experience, then articulating prior success is a good substitute.
 
-![Why are we the best people to solve this problem](../media/pitch-proto-005.png)
+![Why are we the best people to solve this problem.](../media/pitch-proto-005.png)
 
 Lastly, here are some important tips to make sure you deliver the best possible pitch.
 

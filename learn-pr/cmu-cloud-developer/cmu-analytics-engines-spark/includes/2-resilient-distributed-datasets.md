@@ -58,7 +58,7 @@ Once created, an RDD supports two types of operations, as shown in the following
 
 As mentioned earlier, Spark transformations are lazy by default. That is, they are not computed immediately; rather, they are batched and executed only when an action is executed. The execution of an action causes all RDDs in the lineage to be materialized. However, once the computation is completed, an RDD will persist only if explicitly required to by the program. 
 
-![Operations on resilient distributed datasets (RDDs)](../media/resilient-distributed-datasets.png)
+![Operations on resilient distributed datasets (RDDs).](../media/resilient-distributed-datasets.png)
 
 _Figure 3: Operations on resilient distributed datasets (RDDs)_
 

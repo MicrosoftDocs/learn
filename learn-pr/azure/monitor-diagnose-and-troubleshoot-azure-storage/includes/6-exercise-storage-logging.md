@@ -12,7 +12,7 @@ In the Customer Portal scenario, you've decided you need more detailed informati
 
 1. Select **Save**.
 
-    ![Screenshot of the diagnostic settings page in the Azure portal, with logging, enabled](../media/6-enable-logging.png)
+    ![Screenshot of the diagnostic settings page in the Azure portal, with logging, enabled.](../media/6-enable-logging.png)
 
 1. Switch to the Cloud Shell running PowerShell.
 

@@ -6,7 +6,7 @@ Route finding is just one of many features of Azure Maps. Other features haven't
 
 However, route finding is fun to watch. It's one of the applications of mapping services that helps us understand just how detailed the maps are. It's a dynamic application that we can play with. Who isn't curious to know whether road and traffic data is good enough to help with our daily travels?
 
-  [![Photograph of city street traffic](../media/azure-maps-buildings.png)](../media/azure-maps-buildings.png#lightbox)
+  [![Photograph of city street traffic.](../media/azure-maps-buildings.png)](../media/azure-maps-buildings.png#lightbox)
 
 ## Learning objectives
 
@@ -35,11 +35,11 @@ Finally, we need to know a route may well consist of more than a start and endin
 
 The following image shows the app we're going to build.
 
-  [![Screenshot showing the complete Azure Maps app](../media/azure-maps-app.png)](../media/azure-maps-app.png#lightbox)
+  [![Screenshot showing the complete Azure Maps app.](../media/azure-maps-app.png)](../media/azure-maps-app.png#lightbox)
 
 Notice, far right, that the travel distance, and estimated time, are provided. The map view shows the route. At the scale shown in the above image, you might wonder how much detail there really is. Look at the following image, it shows the route out of San Francisco, on an overland jaunt to Miami. The car and truck head north, the bicycle however, heads south. Every turn on every block is clear.
 
-  [![Screenshot showing the route out of San Francisco](../media/azure-maps-sf-miami.png)](../media/azure-maps-sf-miami.png#lightbox)
+  [![Screenshot showing the route out of San Francisco.](../media/azure-maps-sf-miami.png)](../media/azure-maps-sf-miami.png#lightbox)
 
 ## First steps
 
