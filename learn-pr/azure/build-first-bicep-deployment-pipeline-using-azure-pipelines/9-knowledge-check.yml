@@ -28,7 +28,7 @@ quiz:
       explanation: Incorrect. When you have a single job in the pipeline, you can safely omit the `job` declaration.
   - content: Which of these situations will trigger the R&D team's pipeline to run?
     choices:
-    - content: Someone commits an update to the *README.md* file in the *templates* directory in the main branch.
+    - content: Someone commits an update to the *README.md* file in the *templates* directory in the *main* branch.
       isCorrect: false
       explanation: Incorrect. The *templates/README.md* file is excluded by a path filter.
     - content: Someone commits an update to any file anywhere in the repository, and pushes the update to a branch with a name starting with **releases/**.

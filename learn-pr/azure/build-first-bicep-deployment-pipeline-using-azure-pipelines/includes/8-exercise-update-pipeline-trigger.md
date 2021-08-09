@@ -1,11 +1,11 @@
 A colleague asks you to turn on the App Service Always On feature on the company website, so the website app is always running.
 
-In this exercise, you'll update the pipeline you created to run automatically whenever a file changes on your main branch. You'll use the updated pipeline to deploy the requested configuration change to the website.
+In this exercise, you'll update the pipeline you created to run automatically whenever a file changes on your *main* branch. You'll use the updated pipeline to deploy the requested configuration change to the website.
 
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Update your pipeline, so it triggers automatically whenever a file changes in the *deploy* folder on the main branch.
+> * Update your pipeline, so it triggers automatically whenever a file changes in the *deploy* folder on the *main* branch.
 > * Make a change to your Bicep file.
 > * Verify that the pipeline runs automatically.
 
