@@ -24,23 +24,23 @@ In this module, you'll use the Language Understanding resource.
 
 1. Go to the Azure portal. Select the hamburger button on the top left corner of the screen and then choose **Create a resource**.
 
-   :::image type="content" source="../media/4-create-resource.png" alt-text="Screenshot that shows selecting a subscription." lightbox="../media/4-create-resource.png":::
+   :::image type="content" source="../media/4-create-resource.png" alt-text="Screenshot that shows creating the LUIS resource group." lightbox="../media/4-create-resource.png":::
    
 1. In the search bar, type **Language Understanding** and select the Language Understanding resource that appears. Choose the **Create** option in the resource page.
 
-   :::image type="content" source="../media/4-create-luis.png" alt-text="Screenshot that shows selecting a subscription." lightbox="../media/4-create-luis.png":::
+   :::image type="content" source="../media/4-create-luis.png" alt-text="Screenshot that shows creating a LUIS resource." lightbox="../media/4-create-luis.png":::
    
 1. On the page that appears, fill in the details for your **LUIS Application**. For Create options, choose **Both**.
 
-   :::image type="content" source="../media/4-create-luis-options.png" alt-text="Screenshot that shows selecting a subscription." lightbox="../media/4-create-luis-options.png":::
+   :::image type="content" source="../media/4-create-luis-options.png" alt-text="Screenshot that shows selecting a the options in the LUIS configuration." lightbox="../media/4-create-luis-options.png":::
    
 1. Make sure you select the same **resource group** where you created your Azure Health Bot earlier and then enter a name for your **LUIS** resource. Select your **location** and **pricing tier** of choice for both Authoring and Prediction resources.  You will use the location of the Prediction resource when you integrate your LUIS application into the Azure Health Bot later. Once done, select **Review + create.**
 
-   :::image type="content" source="../media/4-review-create-luis.png" alt-text="Screenshot that shows selecting a subscription." lightbox="../media/4-review-create-luis.png":::
+   :::image type="content" source="../media/4-review-create-luis.png" alt-text="Screenshot that shows reviewing the LUIS resources created." lightbox="../media/4-review-create-luis.png":::
    
 1. Select the **Create** option once the review is done.
 
-:::image type="content" source="../media/4-create-luis-all.png" alt-text="Screenshot that shows selecting a subscription." lightbox="../media/4-create-luis-all.png":::
+:::image type="content" source="../media/4-create-luis-all.png" alt-text="Screenshot that shows selecting the review and create LUIS service." lightbox="../media/4-create-luis-all.png":::
    
 > .[!NOTE] 
 > You can alternatively create Prediction and Authoring resources on the LUIS portal after creating your LUIS app.
