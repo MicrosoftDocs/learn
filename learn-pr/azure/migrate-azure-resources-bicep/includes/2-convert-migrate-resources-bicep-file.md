@@ -1,4 +1,4 @@
-When you start the process of migrating to Bicep, it's important to follow a structured process to ensure your Bicep file describes your Azure resources correctly, that it follows best practices, and that it's fully tested and safe to use for subsequent deployments. In this unit, you learn about the first two phases for your Bicep migration: the  _convert_ phase and the _migrate_ phase.
+When you start the process of migrating to Bicep, it's important to follow a structured process to ensure your Bicep file describes your Azure resources correctly. You want to make sure that it follows best practices, and that it's fully tested and safe to use for subsequent deployments. In this unit, you learn about the first two phases for your Bicep migration: the  _convert_ phase and the _migrate_ phase.
 
 :::image type="content" source="../media/2-convert-migrate-phases.png" alt-text="Diagram of the convert and migrate phases of the recommended workflow for migrating Azure resources to Bicep." border="false":::
 
@@ -11,13 +11,13 @@ In the _convert_ phase of converting your templates to Bicep, the goal is to cap
 The convert phase consists of two steps:
 
 1. Capture a JSON representation of your Azure resources.
-1. Convert the JSON representation to Bicep by _decompiling_ it. The decompilation process outputs a Bicep file that isn't final, but that gives you a starting point for your migration.
+2. Convert the JSON representation to Bicep using the _decompile_ command.
 
 :::image type="content" source="../media/2-convert.png" alt-text="TODO alt text" border="false":::
 
 If you have an existing JSON template that you're converting to Bicep, the first step is easy - you already have your source template. You'll learn how to decompile it to Bicep shortly.
 
-If you're converting Azure resources that you deployed through the portal or another tool, you need to export the resource definitions and then convert them to Bicep.
+If you're converting Azure resources deployed through the portal or another tool, you need to export the resource definitions and then convert them to Bicep.
 
 ### How Azure represents resources
 
@@ -41,7 +41,7 @@ There are a few things that you need to consider when exporting a resource:
 - The exported resource definition is a snapshot of that resource's current state. It will include all changes made to the resource since its initial deployment.
 - The exported template may include some default resource properties that are normally omitted from a Bicep definition. For example, it might include read-only properties that Azure sets automatically. Consider removing these properties from the resource definitions when you migrate to Bicep, to keep your Bicep files free of unnecessary code that might cause confusion.
 - The exported template likely won't include all of the parameters you'll need to make the template reusable. When you export a template, many of the properties will be hard-coded into the template.
-- Some resources can't be exported using this approach, and you need to define them manually in your Bicep file. You'll learn how to do this shortly.
+- Some resources can't be exported using this approach, and you need to define them manually in your Bicep file. You'll learn how to recreate these resources later in this unit.
 
 > [!NOTE]
 > However you export a template, treat it as a starting point and don't use it directly. Instead, use it as inspiration for your final template.
@@ -185,13 +185,13 @@ TODO screenshot
 
 The second step in migrating your Azure resources to Bicep is converting your JSON ARM templates and Azure resources to Bicep templates. The Bicep tooling includes the `decompile` command to convert templates. You can invoke the `decompile` command from either the Azure CLI, or from the Bicep CLI.
 
-The decompilation process is a best-effort process and doesn't guarantee a full mapping from JSON to Bicep. You may need to revise the generated Bicep file to meet your template best practices before using the file to deploy resources. Later in this module, you'll learn how to fix any issues you come across in the decompilation process.
+The decompilation process is a best-effort process and doesn't guarantee a full mapping from JSON to Bicep. You may need to revise the generated Bicep file to meet your template best practices before using the file to deploy resources. Consider this the starting point for your migration. Later in this module, you'll learn how to fix any issues you come across in the decompilation process.
 
 Once you decompile your template, you've completed the _convert_ phase and you have a valid Bicep file to start from. However, the file you create isn't ready to use yet - it's just a reference point.
 
 ## Migrate phase
 
-In the _migrate_ phase of converting your templates to Bicep, the goal is to create the first draft of your real Bicep file, and to ensure it defines all of the Azure resources that are in scope for the migration. In this phase, you do the following steps:
+In the _migrate_ phase of converting your templates to Bicep, the goal is to create the first draft of your final Bicep file, and to ensure it defines all of the Azure resources that are in scope for the migration. In this phase, you do the following steps:
 
 1. Create a new empty Bicep file.
 1. Copy each resource from your decompiled template.
@@ -209,7 +209,7 @@ It's good practice to create a brand new Bicep file. The file you created in the
 
 ### Copy resources to the new Bicep file
 
-Copy each resource individually from the converted Bicep file to the new Bicep file. You do this individually so that you can resolve any issues on a per-resource basis, which enables you to focus on one resource at a time.
+Copy each resource individually from the converted Bicep file to the new Bicep file. This process helps you resolve any issues on a per-resource basis and to avoid any confusion as your template grows in size.
 
 ### Recreate unsupported resources
 
@@ -225,7 +225,7 @@ For any resource that wasn't exported, such as virtual machine extensions, you'l
 
 :::image type="content" source="../media/2-resource-explorer-1.png" alt-text="A screenshot of the Resource Explorer from the Azure portal." border="true":::
 
-Once you are in the tool, expand the hierarchy on the left-hand side of the screen. This provides a list of the registered resource providers for your subscription, and details of any resource, resource group, and subscription that you have permission to view. Drill down to a specific resource to view its JSON representation as shown below:
+Once you are in the tool, expand the hierarchy on the left-hand side of the screen. This is a list of the registered resource providers for your subscription, and details of any resource, resource group, and subscription that you have permission to view. Drill down to a specific resource to view its JSON representation as shown below:
 
 :::image type="content" source="../media/2-resource-explorer-2.png" alt-text="A screenshot of the Azure Resource Explorer from the Azure portal." border="true":::
 
