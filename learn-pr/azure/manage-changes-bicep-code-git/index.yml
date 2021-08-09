@@ -24,7 +24,7 @@ prerequisites: |
   You should be familiar with creating basic Bicep templates, including modules.
   
   To follow along with the exercises in the module, you'll need [Visual Studio Code](https://code.visualstudio.com), installed locally.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/manage-changes-bicep-code-git.svg
 levels:
   - intermediate
 roles:
