@@ -11,7 +11,7 @@ After initial verification of the user during enrollment, Windows Hello is set u
 
 Windows stores PIN and biometric data securely on the local device; it's never sent to external devices or servers. That means there's no single collection point that an attacker might compromise.
 
-There are two configurations for Windows Hello: Windows Hello convenince PIN and Windows Hello for Business.
+There are two configurations for Windows Hello: Windows Hello convenience PIN and Windows Hello for Business.
 
 - Windows Hello is configured by a user on their personal device and is referred to as "Windows Hello convenience PIN". Windows Hello convenience PIN is not backed by asymmetric (public or private key) or certificate-based authentication.
 - Windows Hello for Business is configured by Group Policy or mobile device management (MDM) policy such as Microsoft Intune, and always uses key-based or certificate-based authentication. Windows Hello for Business may still use a PIN, but because the PIN used to unlock the credential is backed by key-based or certificate-based authentication, it is more secure than Windows Hello convenience PIN. 
