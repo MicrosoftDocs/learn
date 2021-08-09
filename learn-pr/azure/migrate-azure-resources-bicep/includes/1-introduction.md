@@ -12,15 +12,26 @@ In this module, you'll learn about the recommended workflow for migrating your A
 
 :::image type="content" source="../media/1-five-phases.png" alt-text="Diagram of the recommended workflow for migrating Azure resources to Bicep." border="false":::
 
-You'll learn how to convert and migrate your Azure resources and JSON templates to a Bicep file. You'll also learn about the available tools and resources that can help improve the quality of your templates, and how to perform test deployments of your converted templates.
+You'll learn how to convert and migrate your Azure resources and JSON templates to a Bicep file. You'll also learn about the available tools and resources that can help improve the quality of your templates. Finally, you'll learn how to do test deployments of your converted templates.
 
 ## What is the main goal?
 
-After completing this module, you'll be able to migrate your Azure resources to Bicep and have confidence in the fidelity of your templates for future deployments.
+After completing this module, you'll understand how to migrate your Azure resources to Bicep. You'll also gain confidence in the fidelity of your templates used in future deployments.
 
 ## Prerequisites
 
-- You should be familiar with Azure, including the Azure portal, subscriptions, and resource groups.
-- You should have an understanding of ARM templates (both JSON and Bicep), including parameters, modules, the `existing` keyword, and child and extension resources.
-- You should have a basic understanding of the what-if operation.
-- You should have a basic understanding of how to refactor Bicep files to conform to best practices.
+You should be familiar with:
+
+- Azure, including the Azure portal, subscriptions, and resource groups.
+- ARM templates (both JSON and Bicep), including parameters, modules, the `existing` keyword, and child and extension resources.
+- The what-if operation.
+- Refactoring Bicep files to conform to best practices.
+
+To follow along with the exercises in the module, you'll need:
+
+- An [Azure subscription](https://azure.microsoft.com/free/)
+- [Visual Studio Code](https://code.visualstudio.com), installed locally.  
+- The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally.  
+- Either:
+  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools, installed locally.  
+  - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps), installed locally.

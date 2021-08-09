@@ -13,7 +13,7 @@ The convert phase consists of two steps:
 1. Capture a JSON representation of your Azure resources.
 2. Convert the JSON representation to Bicep using the _decompile_ command.
 
-:::image type="content" source="../media/2-convert.png" alt-text="TODO alt text" border="false":::
+:::image type="content" source="../media/2-convert.png" alt-text="Diagram of converting a template to Bicep." border="false":::
 
 If you have an existing JSON template that you're converting to Bicep, the first step is easy - you already have your source template. You'll learn how to decompile it to Bicep shortly.
 
@@ -50,7 +50,7 @@ There are a few things that you need to consider when exporting a resource:
 
 A single resource's definition can be exported to a JSON template by using the Azure portal. After you open a resource, select the **Export template** menu item to view the template:
 
-TODO screenshot
+TODO: screenshot
 
 ::: zone pivot="cli"
 
@@ -90,7 +90,7 @@ Export-AzResourceGroup `
 
 You can export all of the resources in a resource group by using the Azure portal by opening up the resource group blade and selecting **Export template**:
 
-TODO screenshot
+TODO: screenshot
 
 ::: zone pivot="cli"
 
@@ -114,7 +114,7 @@ Export-AzResourceGroup -ResourceGroupName 'rg-app-prod-truckline'
 
 Sometimes, you might want to export multiple resources from a resource group, but not everything. In the resource group view, check the resources you want to export, and then select **Export template**:
 
-TODO screenshot
+TODO: screenshot
 
 ::: zone pivot="cli"
 
@@ -165,7 +165,7 @@ There are a few things that you need to consider when exporting your templates u
 
 To view a deployment and its template from the Azure portal, open a resource group and select **Deployments**, then select the deployment you want to export. Select **Template** to view and copy the template.
 
-TODO screenshot
+TODO: screenshot
 
 ::: zone pivot="cli"
 
