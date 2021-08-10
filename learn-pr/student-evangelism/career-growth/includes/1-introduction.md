@@ -15,7 +15,11 @@ You're new in an organization full of talented developers and engineers of all t
 > Learn more about the concept of [growth-hacking](https://www.linkedin.com/learning/growth-hacking-foundations/grow-your-business-with-growth-marketing?u=3322).
 ## What will you learn?
 
-In this module, you will discover ways to network in your new position, learn techniques to continue your professional growth, and find tips on how to build trust as an employee.
+In this module, you will discover:
+
+- ways to network in your new position
+- techniques to continue your professional growth
+- tips on how to build trust as a new employee
 ## What is the main goal?
 
 By the end of this session, you'll be able to list strategies that you will be able to take to grow your career from a new developer to a more seasoned, valued employee in any tech company.

@@ -13,5 +13,3 @@ Your organization is made up of all kinds of people including administrative fol
 ## Look around
 
 If you look around and realize that everyone around you looks like you, you need to expand your horizons. Look for teams with diverse people and try to collaborate with them. Coworkers who come from different backgrounds compared to yours and with different perspectives will challenge your preconceptions and biases and show you different approaches and techniques to solving problems. 
-> ### Exercise 
-> Do some research about the various social groups in your company and make a point of joining one or two. 
