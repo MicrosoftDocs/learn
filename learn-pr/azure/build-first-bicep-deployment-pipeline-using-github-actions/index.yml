@@ -49,8 +49,8 @@ units:
 - learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.understand-github-actions
 - learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.exercise-create-run-basic-workflow
 - learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.deploy-bicep-files-workflow
-- learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.exercise-create-service-connection
-- learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.exercise-add-bicep-deployment-task-workflow
+- learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.exercise-create-github-secret
+- learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.exercise-add-bicep-deployment-action-workflow
 - learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.control-workflow-executes-triggers
 - learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.exercise-update-workflow-trigger
 - learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.knowledge-check

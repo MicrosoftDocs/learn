@@ -7,22 +7,19 @@ on:
       - main
     paths:
       - 'deploy/**'
-
 name: AzureBicepSample
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-
+    - uses: actions/checkout@v2
     - uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-    - name: Azure CLI script
-      uses: azure/CLI@v1
+    - uses: azure/arm-deploy@v1
       with:
-        inlineScript: |
-          az deployment group create --resource-group github-action-arm-rg --template-file ./deploy/main.bicep -p environmentType=Test
+        resourceGroupName: ${{ env.AZURE_RESOURCEGROUP_NAME }}
+        template: ./deploy/main.bicep
+        parameters: environmentType=${{ env.ENVIRONMENT }} deployToyManualsStorageAccount=${{ env.DEPLOYSTORAGE }}
 ```
