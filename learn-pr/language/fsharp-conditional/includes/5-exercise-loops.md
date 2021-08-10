@@ -5,7 +5,7 @@ In this exercise, you'll build a deck of cards for a card game that's in develop
 Begin by scaffolding a new F# project in your console. Run the command `dotnet new`:
 
 ```bash
-dotnet run console --language F# -o Loops
+dotnet new console --language F# -o Loops
 cd Loops
 ```
 
