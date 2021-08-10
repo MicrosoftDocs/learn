@@ -1,14 +1,12 @@
-In GitHub, webhooks can be set up for an organization or for a specific repository. The webhook will be triggered each time one or more subscribed events occurs. For example, the *Gollum* event allows you to listen for wiki updates; specifically, creation of and updates for a wiki page.
+In GitHub, webhooks can be set up for an organization or for a specific repository. A webhook is triggered each time one or more subscribed events occur. For example, the *Gollum* event allows you to listen for wiki updates, in particular, the creation of and updates for a wiki page.
 
 In this unit, you'll learn how to set up a webhook listening for a change event from your company's GitHub wiki. 
 
 ## Set up a webhook
 
-Setting up a webhook is a two-step process. You specify how you want your webhook to behave through GitHub and what events it should listen to. Then you set up your function in Azure Functions to receive and manage the payload received from the webhook.
+Setting up a webhook is a two-step process. You specify how you want your webhook to behave through GitHub and what events it should listen to. Then you set up your function in Azure Functions to receive and manage the payload received from the webhook. In the example scenario, we're setting up a webhook for a specific repository.
 
-In GitHub, you can install webhooks for an organization or a repository. In the example scenario, we're setting up a webhook for a specific repository.
-
-To set up the webhook, in the GitHub portal, select **Settings** from the top menu bar. The **Settings** page appears, with the name of your repository. In the left menu, select **Webhooks**, and then select **Add webhook**. Alternatively, you can build and manage a webhook through the Webhooks API, which is not covered in this module.
+To set up the webhook, in the GitHub portal, select **Settings** from the top menu bar. The **Settings** page appears, with the name of your repository. In the left menu, select **Webhooks**, and then select **Add webhook**. You can also build and manage a webhook through the Webhooks API, which is not covered in this module.
 
 Webhooks require a couple of configuration options before you can use them. We'll go through each of these settings next.
 
