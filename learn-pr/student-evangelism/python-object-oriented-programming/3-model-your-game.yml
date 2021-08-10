@@ -5,7 +5,7 @@ metadata:
   title: Model your game by using classes and variables
   description: This unit covers what classes are in relation to objects. It also shows how to instantiate objects from classes. Additionally, it shows how to add data to your objects.
   author: softchris
-  ms.author: shanama
+  ms.author: chnoring
   ms.date: 12/01/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

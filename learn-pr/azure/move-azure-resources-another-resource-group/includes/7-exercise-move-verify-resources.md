@@ -10,7 +10,7 @@ First you create the development resource group where you'll move your resources
 1. Select **Next : Tags**.
 1. Enter the following values:
 
-    ![Screenshot that shows how to assign a tag when you create a resource group](../media/7-exercise-set-tags-on-rg.png)
+    ![Screenshot that shows how to assign a tag when you create a resource group.](../media/7-exercise-set-tags-on-rg.png)
 
     |Field |Value  |
     |---------|---------|
@@ -28,7 +28,7 @@ Now that you've created a devgroup resource group, you can move your development
 1. Select the storage account that you want to move.
 1. Select **Move** > **Move to another resource group**.
 
-    ![Screenshot that shows the move resource to another resource group option](../media/7-exercise-move-resource.png)
+    ![Screenshot that shows the move resource to another resource group option.](../media/7-exercise-move-resource.png)
 
 1. Under **Resource group**, select **devgroup**.
 1. Select the reminder for you to update the resource IDs in your tools and scripts.
@@ -43,6 +43,6 @@ To confirm that your move operations have succeeded:
 1. On the Azure portal home page, select **Resource groups** > **devgroup**. 
 1. You'll see that the development resources have been moved to the devgroup resource group.
 
-    ![Screenshot that shows resources moved](../media/7-exercise-resources-moved.png)
+    ![Screenshot that shows resources moved.](../media/7-exercise-resources-moved.png)
 
 In a real environment, you'd now update the resource IDs in any tools and scripts that reference your resources.

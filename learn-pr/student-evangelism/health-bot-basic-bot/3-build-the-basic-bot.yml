@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.health-bot-basic-bot.3-build-the-basic-bot
+title: Build a basic bot
+metadata:
+  title: Build a basic bot
+  description: In this unit, you'll learn how to build a basic bot.
+  author: Meghana-ch
+  ms.author: chnoring
+  ms.date: 07/27/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/3-build-the-basic-bot.md)]

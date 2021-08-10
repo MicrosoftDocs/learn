@@ -20,4 +20,4 @@ Azure Content Delivery (CDN) Network is a powerful way to improve performance an
 
 [Manage expiration of web content in Azure CDN](/azure/cdn/cdn-manage-expiration-of-cloud-service-content)
 
-[Restrictions on Directory Paths](/azure/cdn/cdn-restrict-access-by-country)
+[Restrictions on Directory Paths](/azure/cdn/cdn-restrict-access-by-country-region)

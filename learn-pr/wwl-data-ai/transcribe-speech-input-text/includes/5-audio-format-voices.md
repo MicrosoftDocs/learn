@@ -1,4 +1,4 @@
-When synthesizing speech, you can use an **SpeechConfig** object to customize the audio that is returned by the Speech service.
+When synthesizing speech, you can use a **SpeechConfig** object to customize the audio that is returned by the Speech service.
 
 ## Audio format
 
@@ -16,7 +16,7 @@ To specify the required output format, use the **SetSpeechSynthesisOutputFormat*
 speechConfig.SetSpeechSynthesisOutputFormat(SpeechSynthesisOutputFormat.Riff24Khz16BitMonoPcm);
 ```
 
-For a full list of supported formats and their enumeration values, see the [Speech SDK documentation](https://docs.microsoft.com/dotnet/api/microsoft.cognitiveservices.speech.speechsynthesisoutputformat).
+For a full list of supported formats and their enumeration values, see the [Speech SDK documentation](/dotnet/api/microsoft.cognitiveservices.speech.speechsynthesisoutputformat).
 
 ## Voices
 
@@ -27,7 +27,7 @@ The Speech service provides multiple voices that you can use to personalize your
 
 Voices are identified by names that indicate a locale and a person's name - for example `en-GB-George`.
 
-To specify a voice for speech synthesis in the **SpeechConfig**, set its **SpeechSythesisVoiceName** property to the voice you want to use:
+To specify a voice for speech synthesis in the **SpeechConfig**, set its **SpeechSynthesisVoiceName** property to the voice you want to use:
 
 ```
 speechConfig.SpeechSynthesisVoiceName = "en-GB-George";

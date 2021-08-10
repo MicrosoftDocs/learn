@@ -15,7 +15,7 @@ Modularity is important for datacenters because it allows an organization to exp
 > The width of early railroad relays dictated the width of a modern 19-inch rack. But the standard gauge of modern railroad tracks (4 feet, 8 1/2 inches) dates back to ancient Greek stone pathways, which the Romans adopted and brought to Europe during the age of the Roman Empire ([Wikipedia](http://en.wikipedia.org/wiki/Railroad_gauge#Early_origins_of_the_standard_gauge), 2014).
 
 
-![1940s radio operators' room showing early equipment racks from the Inland Marine Radio History Archive, 2012](../media/radio-operators-room.png)
+![1940s radio operators' room showing early equipment racks from the Inland Marine Radio History Archive, 2012.](../media/radio-operators-room.png)
 
 _Figure 15: 1940s radio operators' room showing early equipment racks_ ([Inland Marine Radio History Archive](http://www.imradioha.org/wmi.htm))
 
@@ -30,7 +30,7 @@ Some of the advantages of Lavarack's design over common predecessors include:
 
 Many of today's standard 19-inch equipment racks have evolved from Lavarack's design.
 
-![Relay rack patent drawings](../media/relay-rack-patent.png)
+![Relay rack patent drawings.](../media/relay-rack-patent.png)
 
 _Figure 16: Relay rack patent drawings_ (see [patent](https://patents.google.com/patent/US6223908B1/))
 

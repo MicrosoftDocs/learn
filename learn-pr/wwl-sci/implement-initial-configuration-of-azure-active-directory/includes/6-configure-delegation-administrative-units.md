@@ -67,7 +67,7 @@ By default, all users can create application registrations. To selectively grant
 
 To selectively grant the ability to consent to allow an application to access data:
 
-- Set **Users can consent to applications accessing company data on their behalf** To No in **User settings**
+- Set **Users can consent to applications accessing company data on their behalf** To No in **User settings** under Enterprise apps
 - Assign the user to the Application Developer role
 
 When an Application Developer creates a new application registration, they are automatically added as the first owner.
@@ -81,11 +81,11 @@ For even finer-grained app access delegation, you can assign ownership to indivi
 
 ## Develop a security plan
 
-Azure AD provides an extensive guide to planning and executing a security plan on your Azure AD admin roles, [Securing privileged access for hybrid and cloud deployments](https://docs.microsoft.com/azure/active-directory/roles/security-planning).
+Azure AD provides an extensive guide to planning and executing a security plan on your Azure AD admin roles, [Securing privileged access for hybrid and cloud deployments](/azure/active-directory/roles/security-planning).
 
 ## Establish emergency accounts
 
-To maintain access to your identity management store when issue arises, prepare emergency access accounts according to [Create emergency-access administrative accounts](https://docs.microsoft.com/azure/active-directory/roles/security-emergency-access).
+To maintain access to your identity management store when issue arises, prepare emergency access accounts according to [Create emergency-access administrative accounts](/azure/active-directory/roles/security-emergency-access).
 
 ## Secure your administrator roles
 

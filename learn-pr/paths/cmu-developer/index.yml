@@ -1,0 +1,53 @@
+### YamlMime:LearningPath
+uid: learn.cmu-cloud-admin.cloud-developer
+metadata:
+  title: Cloud developer
+  description: You will learn various important skills you need as a developer using the Cloud. Skills like virtualization, managing cost and cloud storage to more hands-on developer skills like message queues, and working with streaming data with spark and map reduce.
+  brand: azure
+  ms.date: 07/01/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  showCreativeCommonsFooter: true
+title: Cloud developer
+summary: |
+
+  In this learning path, you will:
+    - Use virtualization.
+    - Work with storage.
+    - Apply techniques around streaming data, and stream processing using Spark and more. 
+
+  In Partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: none
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- administrator
+- student
+products:
+- azure
+modules:
+- learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualization
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-computing-power
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-memory
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-input-output
+- learn.cmu-cloud-computing.how-cloud-works.cmu-storage-network-virtualization
+- learn.cmu-cloud-computing.cloud-basics.cmu-cloud-computing-overview
+- learn.cmu-cloud-computing.cloud-basics.cmu-cloud-economics
+- learn.cmu-cloud-computing.cloud-basics.cmu-data-centers
+- learn.cmu-cloud-computing.cloud-basics.cmu-data-center-design
+- learn.cmu-cloud-computing.cloud-basics.cmu-data-center-cloud-service
+- learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud
+- learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview
+- learn.cmu-cloud-computing.cloud-storage.case-study-distributed-file-systems
+- learn.cmu-cloud-computing.cloud-storage.case-study-nosql-databases-object-storage
+- learn.cmu-cloud-computing.distributed-programming.introduction
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-graphlab
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark
+- learn.cmu-cloud-computing.distributed-programming.message-queues-stream-processing
+trophy:
+  uid: learn.cmu-cloud-admin.cloud-developer.trophy

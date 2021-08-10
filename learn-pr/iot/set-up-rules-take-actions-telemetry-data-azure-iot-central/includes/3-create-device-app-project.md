@@ -14,7 +14,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
 1. From the **File** menu, create a new file. Insert a single line as a comment, such as `// Refrigerated Truck app`. Save the file to the "RefrigeratedTruck" folder (locating this folder might involve a bit of navigation), with the name "app.js". By using the .js file extension, Visual Studio Code interprets this file as JavaScript and evaluates the contents with the JavaScript language service.
 
-    [![Screenshot showing how to save the JavaScript file, in Visual Studio Code](../media/refrigerated-trucks-vscode.png)](../media/refrigerated-trucks-vscode.png#lightbox)
+    [![Screenshot showing how to save the JavaScript file, in Visual Studio Code.](../media/refrigerated-trucks-vscode.png)](../media/refrigerated-trucks-vscode.png#lightbox)
 
 1. Back in the terminal, load the libraries you need with the following commands:
 
@@ -55,7 +55,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
 1. Navigate to the **JavaScript** project types, and create a new **Blank Node.js Console Application** project, called "RefrigeratedTruck".
 
-    [![Screenshot showing how to create a new blank Node.js project, in Visual Studio](../media/refrigerated-trucks-vs-project.png)](../media/refrigerated-trucks-vs-project.png#lightbox)
+    [![Screenshot showing how to create a new blank Node.js project, in Visual Studio.](../media/refrigerated-trucks-vs-project.png)](../media/refrigerated-trucks-vs-project.png#lightbox)
 
 1. Right-click on the **npm** entry in Solution Explorer, and select **Install New npm Packages...**.
 
@@ -66,7 +66,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
     * **azure-maps-rest**
     * **chalk**
 
-    [![Screenshot showing how to add an npm package, in Visual Studio](../media/refrigerated-trucks-vs-npm.png)](../media/refrigerated-trucks-vs-npm.png#lightbox)
+    [![Screenshot showing how to add an npm package, in Visual Studio.](../media/refrigerated-trucks-vs-npm.png)](../media/refrigerated-trucks-vs-npm.png#lightbox)
 
 1. Delete the default contents of the app.js file.
 
@@ -134,7 +134,7 @@ You are now ready to test the device app.
 
 1. The "connected" line should be followed by some text verifying the settings and properties were sent successfully.
 
-    [![Screenshot showing the connection to IoT Central from the device app was made correctly](../media/refrigerated-trucks-connected.png)](../media/refrigerated-trucks-connected.png#lightbox)
+    [![Screenshot showing the connection to IoT Central from the device app was made correctly.](../media/refrigerated-trucks-connected.png)](../media/refrigerated-trucks-connected.png#lightbox)
 
 If all goes well, go straight into the second test.
 
@@ -152,7 +152,7 @@ If all goes well, go straight into the second test.
 
     | IoT Central | Device app |
     | --- | --- |
-    | [![Screenshot showing a tile in IoT Central, receiving the truck temperatures](../media/refrigerated-trucks-central.png)](../media/refrigerated-trucks-central.png#lightbox) | [![Screenshot showing the console output from the device app, showing the truck contents temperatures](../media/refrigerated-trucks-console.png)](../media/refrigerated-trucks-console.png#lightbox) |
+    | [![Screenshot showing a tile in IoT Central, receiving the truck temperatures.](../media/refrigerated-trucks-central.png)](../media/refrigerated-trucks-central.png#lightbox) | [![Screenshot showing the console output from the device app, showing the truck contents temperatures](../media/refrigerated-trucks-console.png)](../media/refrigerated-trucks-console.png#lightbox) |
 
     > [!NOTE]
     > The screenshots in this module are taken from the C# version of the app. The Node.js app screens will be similar, but not identical.
@@ -161,7 +161,7 @@ If all goes well, go straight into the second test.
 
 1. Check the **Location** map view for the device. A blue circle near Seattle, USA shows our truck ready to go. You may have to zoom out a bit.
 
-    [![Screenshot showing the location of the truck at its base in Seattle](../media/refrigerated-trucks-seattle.png)](../media/refrigerated-trucks-seattle.png#lightbox)
+    [![Screenshot showing the location of the truck at its base in Seattle.](../media/refrigerated-trucks-seattle.png)](../media/refrigerated-trucks-seattle.png#lightbox)
 
 If all is well, this is great progress. The truck is at its base, and in the correct state.
 

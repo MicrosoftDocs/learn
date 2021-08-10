@@ -30,7 +30,7 @@ Securely store and tightly control access to tokens, passwords, certificates, AP
 
 1. The following illustrates setting expiration date on a password.
 
-     ![Screenshot of setting Key Vault expiration date](../media/9-akv-expiration.png)
+     ![Screenshot of setting Key Vault expiration date.](../media/9-akv-expiration.png)
 
 ### Set resource locks for mission-critical Azure resources - Level 2
 
@@ -43,10 +43,10 @@ As an administrator, you may need to lock a subscription, resource group, or res
 
 1. In the Settings pane for the resource, resource group, or subscription that you want to lock, select **Locks**.
 
-     ![Screenshot of setting Key Vault lock](../media/9-lock1.png)
+     ![Screenshot of setting Key Vault lock.](../media/9-lock1.png)
 
 1. To add a lock, select **Add**.
 
 1. Give the lock a name and lock level, for example, **CanNotDelete or ReadOnly**. Optionally, you can add notes that describe the lock.
 
-     ![Screenshot of setting Key Vault naming the lock](../media/9-lock2.png)
+     ![Screenshot of setting Key Vault naming the lock.](../media/9-lock2.png)

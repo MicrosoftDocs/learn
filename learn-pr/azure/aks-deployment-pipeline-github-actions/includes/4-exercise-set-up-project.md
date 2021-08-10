@@ -25,7 +25,7 @@ Now that we understand what we need to do, let's create our resources and publis
     ```bash
     git clone https://github.com/{your-username}/mslearn-aks-deployment-pipeline-github-actions
     ```
-   
+
    The command creates a new directory called mslearn-aks-deployment-pipeline-github-actions.
 
 1. To go to the new directory, run `cd mslearn-aks-deployment-pipeline-github-actions`.
@@ -34,13 +34,10 @@ Now that we understand what we need to do, let's create our resources and publis
 
     The init.sh file does the following tasks:
 
-    * Sets up the environment variables `AKS_NAME`, `DNS_NAME`, `RESOURCE_GROUP_NAME`, and `ACR_NAME`. These variables are the names of the resources you will create.
-
-    * Creates a new resource group.
-
-    * Creates a new AKS cluster and sets up Kubectl to access it.
-
-    * Creates a new Container Registry repository and links it to your AKS cluster.
+    - Sets up the environment variables `AKS_NAME`, `DNS_NAME`, `RESOURCE_GROUP_NAME`, and `ACR_NAME`. These variables are the names of the resources you will create.
+    - Creates a new resource group.
+    - Creates a new AKS cluster and sets up Kubectl to access it.
+    - Creates a new Container Registry repository and links it to your AKS cluster.
 
    When the script finishes running, it displays a list of variables. *Copy and store the variables names*. We'll use those variable names in the next steps.
 
@@ -49,5 +46,4 @@ Now that we understand what we need to do, let's create our resources and publis
 Confirm that all the resources were created when the init.sh script ran:
 
 1. Run `az group list -o table` and check whether the resource group shown in the script output is listed.
-
 1. Run `az acr list -o table` and check whether the Container Registry instance shown in the script output is listed.

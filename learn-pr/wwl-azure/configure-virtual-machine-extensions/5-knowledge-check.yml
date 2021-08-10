@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-virtual-machine-extensions.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 07/26/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: ""
+  questions:
+  - content: "Which of the following is a small application that provides post-deployment configuration and automation tasks on Azure virtual machines?"
+    choices:
+    - content: "Automation State Configuration"
+      isCorrect: false
+      explanation: "That's incorrect. Automated state configuration ensures all virtual machines in a collection are in the same consistent state."
+    - content: "Desired state configuration"
+      isCorrect: false
+      explanation: "That's incorrect. DSC helps with deploying and managing configuration data for software services."
+    - content: "Virtual machine extensions."
+      isCorrect: true
+      explanation: "That's correct. Virtual machine extensions automate the tasks of creating, maintaining, and removing virtual machines"
+  - content: "Custom script extensions time out after which of the following?"
+    choices:
+    - content: "30 minutes"
+      isCorrect: false
+      explanation: "That's incorrect. Custom script extensions will time out, but not after only 30 minutes."
+    - content: "90 minutes"
+      isCorrect: true
+      explanation: "That's correct. Custom script extensions will time out and that should be considered when deciding on the scope of the script."
+    - content: "120 minutes"
+      isCorrect: false
+      explanation: "That's incorrect. Custom script extensions will time out, but sooner than 120 minutes."
+  - content: "The infrastructure team needs to install IIS on the localhost. They do not want to use a Custom Script Extension. Which of the following could be used instead?"
+    choices:
+    - content: "Desired state configuration"
+      isCorrect: true
+      explanation: "That's correct. DSC is a good choice for installing virtual machine features."
+    - content: "Virtual machine extension"
+      isCorrect: false
+      explanation: "That's incorrect. Virtual machine extensions automate the tasks of creating, maintaining, and removing virtual machines"
+    - content: "Windows update"
+      isCorrect: false
+      explanation: "That's incorrect. Windows update is not appropriate in this scenario."

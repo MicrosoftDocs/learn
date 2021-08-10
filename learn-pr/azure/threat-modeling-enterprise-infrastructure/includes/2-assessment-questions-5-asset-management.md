@@ -1,6 +1,6 @@
 ## Asset management
 
-![Asset category](../media/policies/asset.png)
+![Asset category.](../media/policies/asset.png)
 
 ### Why ask these questions
 

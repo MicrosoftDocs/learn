@@ -11,7 +11,7 @@ Similar data classification schemes exist in many countries.
 For top secret data, customers can deploy Azure Stack Hub, which can operate fully disconnected from Azure and the internet. [Tactical Azure Stack Hub](https://www.delltechnologies.com/en-us/collaterals/unauth/data-sheets/products/converged-infrastructure/dell-emc-integrated-system-for-azure-stack-hub-tactical-spec-sheet.pdf) is also available to address tactical edge deployments for limited or no connectivity, fully mobile requirements, harsh conditions requiring military specification solutions, and so on.
 :::column-end:::
 :::column span="2":::
-:::image type="complex" source="../media/azure-support-classification-levels.png" alt-text="Azure support classification levels":::
+:::image type="complex" source="../media/azure-support-classification-levels.png" alt-text="Azure support classification levels.":::
 Infographic shows a series of concentric rings, which correspond to Azure support classification levels. The hub of the graphic is labeled “Top Secret—Private/hybrid cloud”. The second ring from center is labeled “Secret”, the third ring from center is labeled “Confidential”, and the fourth ring from center is labeled “Unclassified”. Spanning the second, third, and fourth rings (labeled “Secret”, “Confidential”, and “Unclassified”, respectively) is an arrow labeled “Microsoft Azure”. Above the arrow is a Microsoft Azure icon.
 :::image-end:::
 :::column-end:::

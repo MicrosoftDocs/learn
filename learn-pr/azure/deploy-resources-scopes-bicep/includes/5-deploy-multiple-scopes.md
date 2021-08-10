@@ -6,11 +6,13 @@ Sometimes you need to deploy resources across multiple levels of your hierarchy 
 
 With Bicep, you can create a deployment that works across a range of scopes by using the `scope` keyword.
 
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+
 ## Specify the scope for a module
 
 You can use Bicep modules to deploy a set of resources at a scope that's different from the `targetScope` specified in the file. Here's an example Bicep file that's deployed with a `targetScope` of a `subscription`, but uses a module to deploy some resources to a resource group:
 
-:::code language="plaintext" source="code/5-sub-scope-rg-module.bicep" highlight="1,4" :::
+:::code language="bicep" source="code/5-sub-scope-rg-module.bicep" highlight="1,4" :::
 
 Notice that the `scope` property uses a Bicep function to help identify the scope to be targeted. The preceding example uses the `resourceGroup()` function and specifies the name of the resource group to target. You can also use the `subscription()`, `managementGroup()`, and `tenant()` functions. By using the `targetScope` keyword on Bicep files and the `scope` keyword on modules, it's possible to create lots of different combinations of scopes for your deployments.
 
@@ -26,7 +28,7 @@ A common use of scopes is to deploy resources across multiple resource groups. A
 
 For example, you might want to create a single set of Bicep files that deploys a virtual network and its associated resources to a shared resource group named *ToyNetworking*, and then deploy a network interface to a different resource group. Here's what the Bicep file looks like:
 
-:::code language="plaintext" source="code/5-multiple-rgs.bicep" highlight="2, 15" :::
+:::code language="bicep" source="code/5-multiple-rgs.bicep" highlight="2, 15" :::
 
 Notice that the resources to be deployed to the *ToyNetworking* resource group are defined in a module, and the `subnetResourceId` output is used in the network interface's resource definition.
 
@@ -52,7 +54,7 @@ Although the deployment targets the *ProjectTeddybear* resource group, the virtu
 
 You can even deploy a resource group in another subscription by including the subscription ID in the `resourceGroup` scope:
 
-:::code language="plaintext" source="code/5-multiple-rgs-different-sub.bicep" highlight="2" :::
+:::code language="bicep" source="code/5-multiple-rgs-different-sub.bicep" highlight="2" :::
 
 Similarly, you can use the `subscription()` scope function to deploy resources across multiple subscriptions at the subscription scope, and you can use the `managementGroup()` scope function to deploy the resources across multiple management groups. However, you can't deploy them across multiple tenants.
 
@@ -62,7 +64,7 @@ The `scope` keyword can be used on a few other specific resource types, not just
 
 For example, you might use a Bicep file to create a management group hierarchy, as shown in the following example:
 
-:::code language="plaintext" source="code/5-create-mg-hierarchy.bicep" range="1-2, 6-25" highlight="1, 4, 12" :::
+:::code language="bicep" source="code/5-create-mg-hierarchy.bicep" range="1-2, 6-25" highlight="1, 4, 12" :::
 
 Notice that this example uses `targetScope = 'managementGroup'` in the template file, but it then deploys the management groups within the `tenant()` scope.
 
@@ -73,20 +75,20 @@ Notice that this example uses `targetScope = 'managementGroup'` in the template 
 
 Now you know how to deploy many different resources at a variety of scopes, and you know how to use Bicep modules and the `scope` keyword to deploy combinations of resources. Let's apply all this new knowledge to extending the management group hierarchy in the preceding example. Now, the hierarchy will also include a _subscription alias_, which is a tenant-scoped resource that creates a new Azure subscription:
 
-:::code language="plaintext" source="code/5-create-mg-hierarchy.bicep" range="27-33" :::
+:::code language="bicep" source="code/5-create-mg-hierarchy.bicep" range="27-33" :::
 
 > [!NOTE]
 > When you create a subscription alias, you also specify some other properties like a billing scope. We have omitted them for clarity.
 
 You can then associate the subscription with a management group, which requires you deploy a resource type called `Microsoft.Management/managementGroups/subscriptions`. Because of the way this resource works, you would declare it in a module:
 
-:::code language="plaintext" source="code/5-mg-subscription-association.bicep" highlight="9-12" :::
+:::code language="bicep" source="code/5-mg-subscription-association.bicep" highlight="9-12" :::
 
 > [!NOTE]
 > Notice that the association is a child resource of the management group, and therefore it uses a two-part name, with the management group name concatenated with a `/` and then the subscription ID. Normally you use the `parent` property to create child resources, but due to a Bicep limitation we deploy it this way. This will be updated in a future Bicep version.
 
 The main Bicep file can then create the association by including the module. Here's the whole Bicep file:
 
-:::code language="plaintext" source="code/5-create-mg-hierarchy.bicep" highlight="35-41" :::
+:::code language="bicep" source="code/5-create-mg-hierarchy.bicep" highlight="35-41" :::
 		
 As you've seen, you can use all of the scopes and Bicep language features together to create sophisticated deployments of your entire Azure infrastructure.

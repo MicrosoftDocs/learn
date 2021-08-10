@@ -23,11 +23,3 @@ In this learning path, you accomplished a lot, including:
 * Extending pipelines to add support for different deployment targets, such as Azure Functions and Kubernetes.
 
 You can apply what you've learned to the applications and services that you work on.
-
-## Continue the journey
-
-This learning path focused on deploying applications by using Azure Pipelines. You know that you can use the Azure portal, the Azure CLI, or Azure PowerShell to provision resources on Azure. But how will you scale out your deployments to meet global demand?
-
-In [Provision infrastructure in Azure Pipelines](/learn/modules/provision-infrastructure-azure-pipelines/?azure-portal=true), you'll help the Tailspin team answer this question. There, you learn how to use _infrastructure as code_ to describe and automatically provision the infrastructure that you need for your application.
-
-For more self-paced, hands-on learning related to Azure DevOps, also check out [Azure DevOps Labs](https://www.azuredevopslabs.com?azure-portal=true).

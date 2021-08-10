@@ -4,7 +4,7 @@ Fabrikam has currently added the drone service into their existing application.
 
 In this exercise, we'll deploy a monolithic application on Azure App Service and enable Azure Monitor to get visibility into telemetry and application performance.
 
-![Visualization of the resources for the drone delivery application](../media/3-drone-delivery-monolithic.svg)
+![Visualization of the resources for the drone delivery application.](../media/3-drone-delivery-monolithic.svg)
 
 ## Deploy a monolithic application on Azure App Service
 

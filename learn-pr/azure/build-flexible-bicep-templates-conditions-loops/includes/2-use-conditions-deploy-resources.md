@@ -10,7 +10,7 @@ When you deploy a resource in Bicep, you can provide the `if` keyword followed b
 
 It's common to create conditions based on the values of parameters that you provide. For example, the following code deploys a storage account only when the `deployStorageAccount` parameter is set to `true`:
 
-::: code language="plaintext" source="code/2-conditional-simple.bicep" highlight="3" :::
+::: code language="bicep" source="code/2-conditional-simple.bicep" highlight="3" :::
 
 Notice that the `if` keyword is on the same line as the resource definition.
 
@@ -20,11 +20,11 @@ The preceding example was quite basic. The `deployStorageAccount` parameter was 
 
 In Bicep, conditions can also include expressions. In the following example, the code deploys a SQL auditing resource only when the `environmentName` parameter value is equal to `Production`:
 
-::: code language="plaintext" source="code/2-conditional-expression.bicep" highlight="7" :::
+::: code language="bicep" source="code/2-conditional-expression.bicep" highlight="7" :::
 
 It's usually a good idea to create a variable for the expression that you're using as a condition. That way, your template is easier to understand and read. Here's an example:
 
-::: code language="plaintext" source="code/2-conditional-expression-variable.bicep" range="1-5, 8-9, 20-24, 28-29" highlight="1, 9" :::
+::: code language="bicep" source="code/2-conditional-expression-variable.bicep" range="1-5, 8-9, 20-24, 28-29" highlight="1, 9" :::
 
 ## Depend on conditionally deployed resources
 
@@ -32,11 +32,11 @@ When you deploy resources conditionally, you sometimes need to be aware of how B
 
 Let's continue writing some Bicep code to deploy SQL auditing settings. The Bicep file also needs to declare a storage account resource, as shown here:
 
-::: code language="plaintext" source="code/2-conditional-expression-variable.bicep" range="1-24, 28-29" highlight="12-19" :::
+::: code language="bicep" source="code/2-conditional-expression-variable.bicep" range="1-24, 28-29" highlight="12-19" :::
 
 Notice that the storage account has a condition too. This means that it won't be deployed for non-production environments either. The SQL auditing settings resource can now refer to the storage account details:
 
-::: code language="plaintext" source="code/2-conditional-expression-variable.bicep" range="21-29" highlight="6-7" :::
+::: code language="bicep" source="code/2-conditional-expression-variable.bicep" range="21-29" highlight="6-7" :::
 
 Notice that this Bicep code uses the question mark (`?`) operator within the `storageEndpoint` and `storageAccountAccessKey` properties. When the Bicep code is deployed to a production environment, the expressions are evaluated to the details from the storage account. When the code is deployed to a non-production environment, the expressions evaluate to an empty string (`''`).
 

@@ -2,7 +2,7 @@ The testing team has been monitoring the uptime of our IoT Edge Gateway.  Their 
 
 A static ip may not be the best options since we'll eventually deploy the solution into the internal environment.  Maybe there is a better way. 
 
-[![Developer](../media/developer2.png)](../media/developer2.png#lightbox)
+[![Developer.](../media/developer2.png)](../media/developer2.png#lightbox)
 
 We need a reliable mechanism for connecting to the IoT Edge Gateway.  IP addresses are fine for testing, but are subject to change in our production environment.  To accommodate this issue, we'll set a up DNS Name for our IoT Edge Gateway then update the associated IoT Edge configuration.
 

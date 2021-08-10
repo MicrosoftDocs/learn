@@ -5,7 +5,7 @@ metadata:
   title: What is object-oriented programming?
   description: This unit covers the object-oriented programming paradigm. It talks about what makes it unique and how you can model a problem domain with it.
   author: softchris
-  ms.author: shanama
+  ms.author: chnoring
   ms.date: 12/01/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

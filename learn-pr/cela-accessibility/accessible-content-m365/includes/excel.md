@@ -11,7 +11,7 @@ To create a table with column headers:
 3. Check "My table has headers" in the **Create Table** dialog.
 4. Ensure the specified column headers have unique names. (By default, Microsoft Excel will name these "Column 1", "Column 2," and so on.)
 
-:::image type="content" source="../media/create-table.png" alt-text="The Excel Create Table window with the My table has headers option selected":::
+:::image type="content" source="../media/create-table.png" alt-text="The Excel Create Table window with the My table has headers option selected.":::
 
 ## Sheet names
 
@@ -22,7 +22,7 @@ To create, edit, and style tab names:
 1. Right-click on the sheet tab and select **Rename** or move to the desired sheet and select **Home** \> **Format** \> **Rename sheet**. You can also change tab color in the format menu.
 2. Enter a unique name for the sheet.
 
-:::image type="content" source="../media/rename-sheet.png" alt-text="The Rename option selected in the right-click menu for Sheet1":::
+:::image type="content" source="../media/rename-sheet.png" alt-text="The Rename option selected in the right-click menu for Sheet1.":::
 
 ## Charts and graphs
 
@@ -36,7 +36,7 @@ To add chart labels:
 2. Axis titles: Select the chart, then select **Design** \> **Add Chart Element** \> **Axis Titles**. Ensure the Axis Title clearly describes the axis.  
 3. Data labels: Select the chart, then select **Design** \> **Add Chart Element** \> **Data Labels** \> **Outside End**.
 
-:::image type="content" source="../media/axes-options.png" alt-text="The Rename option selected in the right-click menu for Sheet1":::
+:::image type="content" source="../media/axes-options.png" alt-text="The Rename option selected in the right-click menu for Sheet1.":::
 
 To create an accessible chart design:
 
@@ -45,7 +45,7 @@ To create an accessible chart design:
 3. Add alternative text to the chart. Select the chart, then right-click or press the applications key. Select **Edit Alt Text**. Enter a meaningful description of the chart.
 4. Use a sans serif font and a font size of 12 points or greater.
 
-:::image type="content" source="../media/chart-alt-text.png" alt-text="Alt Text describing a chart":::
+:::image type="content" source="../media/chart-alt-text.png" alt-text="Alt Text describing a chart.":::
 
 ## Table name
 
@@ -57,4 +57,4 @@ To edit a table name:
 2. Select the **Table Design** tab.
 3. In the **Properties** section, enter a unique table name that does not include spaces or special characters.
 
-:::image type="content" source="../media/table-name-excel.png" alt-text="Table Name field in the Excel Table Design ribbon highlighted":::
+:::image type="content" source="../media/table-name-excel.png" alt-text="Table Name field in the Excel Table Design ribbon highlighted.":::

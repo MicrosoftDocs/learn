@@ -12,7 +12,7 @@ In this unit, you download the DTDL validator sample. This is a command-line sam
 
     > [!NOTE]
     > If you receive messages about missing assets and unresolved dependencies, click "Yes" and "Restore" respectively:
-    > :::image type="content" source="../media/visual-studio-code-messages.png" alt-text="Screenshot showing the messages that can be disregarded with the DTDL Validator sample open in Visual Studio Code":::
+    > :::image type="content" source="../media/visual-studio-code-messages.png" alt-text="Screenshot showing the messages that can be disregarded with the DTDL Validator sample open in Visual Studio Code.":::
 
 1. Open the terminal (if it's not already open) by going to **View** > **Terminal**.
 

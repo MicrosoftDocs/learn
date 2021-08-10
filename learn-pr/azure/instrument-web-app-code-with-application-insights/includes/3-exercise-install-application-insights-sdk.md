@@ -73,12 +73,10 @@ We'll host our app in Azure App Service. Instead of manually creating an Applica
     | Operating System          | **Windows** |
     | Region                    | Choose location close to you. |
     | **App Service Plan** |
-    | Windows plan              | Select **<rgn>Sandbox resource group</rgn>** |
+    | Windows Plan              | Select **<rgn>Sandbox resource group</rgn>** |
     | Sku and size              | Select **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1**, and then select **Apply**.    |
 
-1. Select **Next : Monitoring**.
-
-1. Enter the following value for the setting.
+1. Select the **Monitoring** tab, and enter the following values for each setting.
 
     | Setting                   | Value    |
     |---------------------------|------------------|
@@ -95,10 +93,10 @@ After the web app is created, we can see how it's been configured to use Applica
 
 1. In the Azure portal, go to the App Service web app you created. Select **All Resources** to do this.
 
-1. In the left nav bar, under **Settings**, select the application settings that are listed and select the `APPINSIGHTS_INSTRUMENTATIONKEY` setting to see its value. When your app runs in App Service, this value will be available as an environment variable, and the Application Insights SDK will use it as configuration.
+1. In the left menu pane, under **Settings**, select the application settings that are listed and select the `APPINSIGHTS_INSTRUMENTATIONKEY` setting to see its value. When your app runs in App Service, this value will be available as an environment variable, and the Application Insights SDK will use it as configuration.
 
-1. In the nav bar, select **Application Insights**. At the top of the Application Insights window, see **Link to an Application Insights resource** to collect to the Application Insights resource linked to the web app.
+1. In the left menu pane, select **Application Insights**. At the top of the Application Insights pane, see **Link to an Application Insights resource** to collect to the Application Insights resource linked to the web app.
 
-1. The instrumentation key for the Application Insights resource appears near the top of the window. Note that it's the same as the one shown in the app's settings.
+1. The instrumentation key for the Application Insights resource appears near the top of the pane. Note that it's the same as the one shown in the app's settings.
 
 We've set up our app and deployment environment, but we're not going to deploy the app quite yet. First, we're going to add some custom event telemetry.

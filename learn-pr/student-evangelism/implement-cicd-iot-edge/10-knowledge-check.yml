@@ -35,14 +35,3 @@ quiz:
     - content: "Pipelines"
       isCorrect: true
       explanation: "CI/CD is implemented using pipelines."
-  - content: "Application Insights allows you to perform which function in CI/CD?"
-    choices:
-    - content: "Monitor long-running tests"
-      isCorrect: true
-      explanation: "Using Application Insights, you can perform long-running tests against edge modules and provide real-time alerts."
-    - content: "Continuous improvement"
-      isCorrect: false
-      explanation: "Application Insights doesn't directly lead to continuous improvement."
-    - content: "Continuous delivery"
-      isCorrect: false
-      explanation: "Application Insights doesn't directly lead to continuous delivery."

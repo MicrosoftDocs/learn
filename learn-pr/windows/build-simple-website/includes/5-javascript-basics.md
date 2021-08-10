@@ -1,14 +1,14 @@
-JavaScript (or *ECMAScript*) is a programming language that helps you add interactivity to your web pages. For example, you can use JavaScript to define the event or behavior that will happen when a user selects a button, such as opening a pop-up window. Using JavaScript, you can add or remove content, like text from a web page without reloading it. As a web developer, you can use your web browser to test and get feedback about your scripts.
+JavaScript (or *ECMAScript*) is a programming language that helps you interactivity add to your web pages. For example, you can use JavaScript to define the event or behavior that will happen when a user selects a button; for example, open a pop-up window. Using JavaScript, you can add or remove content from a web page without reloading it. As a web developer, you can use your web browser to test and get feedback about your scripts.
 
 In this unit, you'll set up an example JavaScript file for your web app. You'll create a button to switch between light and dark themes, and then you'll attach the button to JavaScript code that performs the actual theme switching. When this is done, you'll check the finished project using your browser's developer tools.
 
 ## Link to JavaScript
 
-Like CSS, you could add JavaScript directly to an HTML page, but a recommended best practice is to save your JavaScript in a separate file, which makes it easier to reuse your JavaScript code across several web pages. For example, you could create a pop-up alert by adding `<script>alert('Hello World')</script>` anywhere within the body of your web pages; however, it is better to add your JavaScript code to a separate file that can be linked to every file that needs your custom functionality. The HTML script tag `<script>` will let us link to an external JavaScript file, which is how you'll configure your web app in this exercise.
+Like CSS, you could add JavaScript directly to the HTML file, but a recommended best practice is to save your JavaScript in a separate file, which makes it easier to reuse your JavaScript code across several web pages. For example, you could create a pop-up alert by adding `<script>alert('Hello World')</script>` anywhere within the body of your web pages; however, it is better to add your JavaScript code to a separate file that can be linked to every file that needs your custom functionality. The HTML script tag `<script>` will let us link to an external JavaScript file, which is how you'll configure your web app in this exercise.
 
-1. In **Visual Studio Code**, open your `index.html` file.
+1. In **VS Code**, open your `index.html` file.
  
-1. Enter `script:src` on a new line before the closing `</body>` element, and then press <kbd>Enter</kbd>.
+1. On a new line before the closing `</body>` element, enter `script:src`, and then select <kbd>Enter</kbd>. The opening and closing tags for a script are added to your code.
 
 1. Modify the `<script>` element to load your `app.js` file as shown in the following example, and ensure that it is located after the closing `</ul>` element for the list.
 
@@ -27,35 +27,35 @@ The `<script>` element could be placed in the `<head>` or elsewhere in the `<bod
 
 ## Add fault tolerance
 
-1. In your HTML file, add a `<noscript>` element after the closing `</script>` element, which can be used to show a message if JavaScript is deactivated.
+1. In your HTML file, add a `<noscript>` element after the closing `</script>` tag, which can be used to show a message if JavaScript is deactivated.
 
     ```html
     <script src="app.js"></script>
     <noscript>You need to enable JavaScript to view the full site.</noscript>
     ```
 
-   Using the `<noscript>` element is an example of *fault tolerance* or *graceful degradation*. By using the `<noscript>` element, your code can detect and plan for when a feature isn't supported or available.
+   Adding the `<noscript>` element is an example of *fault tolerance* or *graceful degradation*. By using the `<noscript>` element, your code can detect and plan for when a feature isn't supported or available.
 
 1. Save your changes with the keyboard shortcut <kbd>Control+S</kbd> on Windows or <kbd>Command+S</kbd> on macOS.
 
 ## Set strict mode
 
-As you get started with JavaScript, your initial focus is often going to be working with numbers, math, text manipulation, dates, and storing information. Sometimes JavaScript makes assumptions about the type of data you enter; for example: assignment, math, or logical equality can give you unexpected results. JavaScript tries to be friendly, make your code work, and provide you with a solution, even if the result should be an error. To override this behavior, you can activate *strict mode*, which reduces silent errors, improves performance, provides you with more warnings, and fewer unsafe features.
+As you get started with JavaScript, your initial focus is often going to be working with numbers, math, text manipulation, dates, and storing information. Sometimes JavaScript makes assumptions about the type of data you enter; for example, assignment, math, or logical equality can give you unexpected results. JavaScript tries to be friendly, make your code work, and provide you with a solution, even if the result should be an error. To override this behavior, you can activate *strict mode*, which reduces silent errors, improves performance and provides you with more warnings and fewer unsafe features.
 
-- In **Visual Studio Code**, open the `app.js` file, and enter the following.
+- In **VS Code**, open the `app.js` file, and enter the following.
 
     ```javascript
     'use strict'
     ```
 
 > [!NOTE]
-> While it is possible to omit closing semicolons from your JavaScript code, it's a good idea to understand when semicolons are necessary before making any decisions about that. There's a debate about this topic within the JavaScript community, but you should consider using semicolons as a best practice.
+> In your javascript, you may want to add a closing semicolon at the end of the line of code. While it is possible to omit a closing semicolon from JavaScript code, it's a good idea to understand when semicolons are necessary before making any decisions about that. There's a debate about this topic within the JavaScript community, but you should consider using semicolons as a best practice.
 
 ## Add a button
 
-You need a way to let your users switch between the light and dark theme in your web page. In this exercise, you will implement that functionality with an HTML `<button>` element.
+You need a way to let your users switch between the light and dark themes in your web page. In this exercise, you will implement that functionality with an HTML `<button>` element.
 
-1. In your HTML page, add a `<button>` element. Put the button at the end of the list inside of a `<div>` element.
+1. In your HTML file, add a `<button>` element. Put the button at the end of the list inside of a `<div>` element.
 
     ```html
     ...
@@ -190,7 +190,7 @@ You can create a hidden message that won't appear on your webpage. However, what
     });
     ```
 
-In **Visual Studio Code**, when in a JavaScript file, you can use autocomplete for `console.log` by entering `log`, and then pressing <kbd>Enter</kbd>.
+In **VS Code**, when in a JavaScript file, you can use autocomplete for `console.log` by entering `log`, and then pressing <kbd>Enter</kbd>.
 
 You can define a text *string* with single or double quotes around the text.
 
@@ -202,11 +202,11 @@ As previously described, even though you were just editing the `app.js` file, to
 
    The webpage opens in your default browser.
 
-   :::image type="content" source="../media/chrome-light-theme-with-button.png" alt-text="Screenshot of website with the button":::
+   :::image type="content" source="../media/chrome-light-theme-with-button.png" alt-text="Screenshot of website with the button.":::
 
 1. Select the new **Dark** button to switch to the dark theme.
 
-   :::image type="content" source="../media/chrome-dark-theme-with-button.png" alt-text="Screenshot of website after switching to dark theme":::
+   :::image type="content" source="../media/chrome-dark-theme-with-button.png" alt-text="Screenshot of website after switching to dark theme.":::
 
 1. Make sure that everything looks correct and behaves as expected. If not, you should review the preceding steps to see if you missed something
 
@@ -214,9 +214,10 @@ As previously described, even though you were just editing the `app.js` file, to
 
 1. Open Developer Tools.
 
-   - In **Edge**, press the keyboard shortcut for **Developer Tools**, which is <kbd>F12</kbd>. Alternatively, view **Settings and more** by pressing <kbd>Alt+X</kbd>, and selecting **Developer Tools**.
+   - In **Edge** or **Chrome**, right-click and select **Inspect**, or use the keyboard shortcut <kbd>F12</kbd>. Alternatively, select <kbd>Alt +X</kbd> and then select Developer Tools.
 
-   - In **Chrome**, press the keyboard shortcut for **Developer Tools**, which is <kbd>Option+Command+I</kbd> or <kbd>F12</kbd>.
+   - In **macOS**, select <kbd>Option+Command+I</kbd> or select Develop in the menu. If you don’t see the Develop menu in the menu bar, select **Safari > Preferences > Advanced**, and then select *Show Develop menu in menu bar.*
+ 
 
 1. Select the **Styles** tab.
 
@@ -228,7 +229,7 @@ As previously described, even though you were just editing the `app.js` file, to
 
 1. Select the **Console** tab to see the `console.log` message, "current class name: light-theme dark-theme".
 
-:::image type="content" source="../media/chrome-console-output.png" alt-text="Screenshot of console message in Chrome":::
+:::image type="content" source="../media/chrome-console-output.png" alt-text="Screenshot of console message in Chrome.":::
 
 Using the console, you get an interesting look at how the CSS theme switching is handled. Both class names are applied to the `<body>` element when you switch to dark theme. However, it is the last class name applied, in this example the the dark theme, which takes precedence.
 

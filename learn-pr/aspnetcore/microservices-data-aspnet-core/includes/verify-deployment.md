@@ -29,7 +29,7 @@ When the finishes, *:::no-loc text="eShopOnContainers":::* is fully deployed. Ev
 
 1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. A green checkmark icon denotes a healthy service. The page refreshes automatically, every 10 seconds.
 
-    :::image type="content" source="../media/health-checks-status-page.png" alt-text="health checks status dashboard" border="true" lightbox="../media/health-checks-status-page.png":::
+    :::image type="content" source="../media/health-checks-status-page.png" alt-text="health checks status dashboard." border="true" lightbox="../media/health-checks-status-page.png":::
 
     > [!NOTE]
     > While the app is starting up, you might initially receive an `HTTP 503` or `HTTP 502` response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
@@ -46,7 +46,7 @@ When the finishes, *:::no-loc text="eShopOnContainers":::* is fully deployed. Ev
 
 1. Observe **:::no-loc text=".NET BLUE HOODIE":::** is in the shopping bag.
 
-     :::image type="content" source="../media/eshop-spa-shopping-bag.png" alt-text="shopping cart with .NET Blue Hoodie" border="true" lightbox="../media/eshop-spa-shopping-bag.png":::
+     :::image type="content" source="../media/eshop-spa-shopping-bag.png" alt-text="shopping cart with .NET Blue Hoodie." border="true" lightbox="../media/eshop-spa-shopping-bag.png":::
 
 You've successfully verified the app was deployed to AKS. Additionally, you've seen the discount coupon feature that you're going to make configurable.
 

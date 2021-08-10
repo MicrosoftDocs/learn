@@ -12,7 +12,7 @@ Let's get keys for the Translator service. As mentioned previously, we'll need a
 4. Select **Translator**
 
    > [!div class="mx-imgBorder"]
-   > ![Translator search results](../media/translator-search.png)
+   > ![Translator search results.](../media/translator-search.png)
 
 5. Select **Create**
 

@@ -7,8 +7,8 @@ var cosmosDBDatabaseName = 'FlightTests'
 var cosmosDBContainerName = 'FlightTests'
 var cosmosDBContainerPartitionKey = '/droneId'
 var logAnalyticsWorkspaceName = 'ToyLogs'
-var cosmosDBAccountDiagnosticSettingsNames = 'route-logs-to-log-analytics'
-var storageAccountBlobDiagnosticSettingsNames = 'route-logs-to-log-analytics'
+var cosmosDBAccountDiagnosticSettingsName = 'route-logs-to-log-analytics'
+var storageAccountBlobDiagnosticSettingsName = 'route-logs-to-log-analytics'
 
 resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2020-04-01' = {
   name: cosmosDBAccountName
@@ -58,7 +58,7 @@ resource logAnalyticsWorkspace 'Microsoft.OperationalInsights/workspaces@2020-03
 
 resource cosmosDBAccountDiagnostics 'Microsoft.Insights/diagnosticSettings@2017-05-01-preview' = {
   scope: cosmosDBAccount
-  name: cosmosDBAccountDiagnosticSettingsNames
+  name: cosmosDBAccountDiagnosticSettingsName
   properties: {
     workspaceId: logAnalyticsWorkspace.id
     logs: [
@@ -80,7 +80,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' existing 
 
 resource storageAccountBlobDiagnostics 'Microsoft.Insights/diagnosticSettings@2017-05-01-preview' = {
   scope: storageAccount::blobService
-  name: cosmosDBAccountDiagnosticSettingsNames
+  name: storageAccountBlobDiagnosticSettingsName
   properties: {
     workspaceId: logAnalyticsWorkspace.id
     logs: [

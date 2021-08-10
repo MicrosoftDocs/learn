@@ -13,7 +13,7 @@ Monitoring is as important in mission-critical solutions deployed to the cloud a
 
 - **Traces** - Records of the paths of execution for programs and services, especially in a highly distributed system, indicating the sequence of instructions that may have triggered, either directly or indirectly, an event
 
-![Figure 1: Three types of instrumentation](../media/fig7-1.png)
+![Figure 1: Three types of instrumentation.](../media/fig7-1.png)
 
 _Figure 1: Three types of instrumentation._
 

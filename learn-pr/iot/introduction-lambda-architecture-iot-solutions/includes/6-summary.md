@@ -7,7 +7,7 @@ In this module, you learned about:
 
 And you learned that Azure IoT can have a worldwide reach!
 
-[![Graph illustration of telemetry](../media/lambda-cloud-storage.png)](../media/lambda-cloud-storage.png#lightbox)
+[![Graph illustration of telemetry.](../media/lambda-cloud-storage.png)](../media/lambda-cloud-storage.png#lightbox)
 
 ## Next steps
 

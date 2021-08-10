@@ -1,4 +1,4 @@
-![Tech logo](../media/tech-all.png)
+![Tech logo.](../media/tech-all.png)
 
 Suppose you work for a custom clothing designer company and you want to create an app that lets your customers select their favorite materials or colors. The user's name, the list of colors they can choose from, and their selected favorite colors are all data. This is data that the user enters, selects, and reviews through a multitude of controls displayed on the UI: text boxes, drop downs, lists, buttons, and so on. All of this is controlled by the logic of the app.
 

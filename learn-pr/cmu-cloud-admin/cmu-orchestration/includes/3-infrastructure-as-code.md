@@ -4,7 +4,7 @@ The cloud changed that by offering computing infrastructure as a service. Sudden
 
 The next step on the journey to automating the processes used for to manage cloud infrastructure is *Infrastructure-as-Code*, or IaC. The idea of IaC is to explicitly define a solution deployed to the cloud in a dynamic way, like a program. Run the program and you create a solution; change the program, and you change the solution. IaC provides a mechanism for defining what a solution looks like. It contains many of the elements of a program without necessarily relying on a programming language: declaration of assets (variables), reusable functions and procedures, error trapping and recovery, and most importantly of all, formal support for testing and debugging (Figure 3).
 
-![Figure 3: Parallels between Infrastructure-as-Code and software programs](../media/fig6-3.png)
+![Figure 3: Parallels between Infrastructure-as-Code and software programs.](../media/fig6-3.png)
 
 _Figure 3: Parallels between Infrastructure-as-Code and software programs._
 

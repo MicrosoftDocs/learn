@@ -83,6 +83,7 @@ To retrieve the connection strings for the storage account and the event hub, we
 ```bash
 AZURE_WEB_JOBS_STORAGE=$( \
     az storage account show-connection-string \
+        --resource-group $RESOURCE_GROUP \
         --name $STORAGE_ACCOUNT"p" \
         --query connectionString \
         --output tsv)

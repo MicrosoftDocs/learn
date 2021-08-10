@@ -191,7 +191,7 @@ Once you decompile your template, you've completed the _convert_ phase and you h
 
 ## Migrate phase
 
-In the _migrate_ phase of converting your templates to Bicep, the goal is to create the first draft of your final Bicep file, and to ensure it defines all of the Azure resources that are in scope for the migration. In this phase, you do the following steps:
+In the _migrate_ phase of converting your templates to Bicep, the goal is to create the first draft of your deployable Bicep file, and to ensure it defines all of the Azure resources that are in scope for the migration. In this phase, you do the following steps:
 
 1. Create a new empty Bicep file.
 1. Copy each resource from your decompiled template.
@@ -284,7 +284,3 @@ For example, suppose you want to find a template that builds an App Service plan
 :::image type="content" source="../media/5-azure-quickstart-template.png" alt-text="Azure PowerShell error message about resources that cannot be exported.." border="true":::
 
 Keep in mind that the Azure quickstart templates are community contributions. Some of the examples can be out of date as features are added to Azure services regularly. The examples can also include resources and properties that are unnecessary for your templates. However, it's a useful resource to help you understand how to deploy your resources using ARM templates.
-
-### Create environment parameters
-
-If your infrastructure supports multiple environments, such as production and development, create parameters that support these environments. A good parameter naming convention will make it easy to customize your deployments per environment.

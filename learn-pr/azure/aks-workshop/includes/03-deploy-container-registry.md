@@ -208,20 +208,20 @@ The steps you follow are the same as you previously followed. Clone the reposito
 
 Run the following command in Cloud Shell to verify that the images were created and stored in the registry.
 
-    ```azurecli
-    az acr repository list \
-        --name $ACR_NAME \
-        --output table
-    ```
+```azurecli
+az acr repository list \
+    --name $ACR_NAME \
+    --output table
+```
 
 The output from this command looks similar to this example.
 
-    ```output
-    Result
-    -----------
-    ratings-api
-    ratings-web
-    ```
+```output
+Result
+-----------
+ratings-api
+ratings-web
+```
 
 The images are now ready for use.
 

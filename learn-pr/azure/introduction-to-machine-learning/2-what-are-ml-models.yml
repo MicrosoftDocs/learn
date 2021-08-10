@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.introduction-to-machine-learning.creating-ml-models
+title: What are machine learning models?
+metadata:
+  title: What are machine learning models?
+  description: Conceptual unit introducing what machine learning models are
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-what-are-ml-models.md)]

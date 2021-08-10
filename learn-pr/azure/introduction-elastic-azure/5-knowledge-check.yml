@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-elastic-azure.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: A multiple-choice knowledge check.
+  ms.date: 06/15/2021
+  author: yenchiho
+  ms.author: yenchiho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+quiz:
+  questions:
+  - content: What is the core capability upon which Elastic is built?
+    choices:
+    - content: App development
+      isCorrect: false
+      explanation: Elastic is based on leading search capabilities.
+    - content: Search
+      isCorrect: true
+      explanation: Elastic is based on leading search capabilities.
+    - content: Financial industry
+      isCorrect: false
+      explanation: Elastic is based on leading search capabilities.
+  - content: Which Elastic deployment option offers fully managed services?
+    choices:
+    - content: Elastic Cloud on Azure
+      isCorrect: true
+      explanation: Elastic Cloud on Azure is a software-as-a-service (SaaS) offering.
+    - content: Elastic on Azure virtual machines
+      isCorrect: false
+      explanation: Elastic on Azure virtual machines allows you to manage the underlying infrastructure.
+    - content: Elastic on Azure Kubernetes Service
+      isCorrect: false
+      explanation: Elastic on AKS allows you to manage the underlying infrastructure.
+  - content: Of the following services, which is supported through native integration with the Elastic Stack?
+    choices:
+    - content: iTunes
+      isCorrect: false
+      explanation: There is no integration with Elastic and iTunes.
+    - content: SQL Server
+      isCorrect: true
+      explanation: The Elastic Stack integrates with SQL Server.
+    - content: Preferred OS
+      isCorrect: false
+      explanation: Preferred OS is one of the decision criteria.

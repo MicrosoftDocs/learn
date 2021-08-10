@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Write a function app in Azure Functions to analyze photos
   description: Write a function app in Azure Functions to analyze photographs by passing them to the Custom Vision service.
   ms.date: 12/21/2020
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15

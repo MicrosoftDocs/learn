@@ -130,7 +130,7 @@ Here you create a CI/CD pipeline that's based on a starter template. The process
 
 ### Setting up the trigger and variables  
 
-The pipeline runs whenever there is a change to the `master` branch on GitHub. Replace the contents of *azure-pipelines.yml* with this:
+The pipeline runs whenever there is a change to the `main` branch on GitHub. Replace the contents of *azure-pipelines.yml* with this:
 
 [!code-yml[](code/4-1-azure-pipelines.yml)]
 

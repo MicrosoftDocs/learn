@@ -20,7 +20,7 @@ Common applications of Service Bus include standard business communications, suc
 
 We won't be implementing Service Bus in this module. The key takeaway is that Service Bus is an enterprise-level message routing service.
 
-[![Image of artwork as a metaphor for a network of communications](../media/continuous-data-network.png)](../media/continuous-data-network.png#lightbox)
+[![Image of artwork as a metaphor for a network of communications.](../media/continuous-data-network.png)](../media/continuous-data-network.png#lightbox)
 
 ## Azure Event Hubs
 

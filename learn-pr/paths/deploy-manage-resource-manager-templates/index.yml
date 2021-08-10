@@ -43,5 +43,6 @@ modules:
 - learn.azure.deploy-templates-command-line-github-actions
 - learn.azure.extend-resource-manager-template-deployment-scripts
 - learn.azure.manage-deployments-advanced-arm-template-features
+- learn.azure.arm-template-specs
 trophy:
   uid: learn.deploy-manage-resource-manager-templates.trophy

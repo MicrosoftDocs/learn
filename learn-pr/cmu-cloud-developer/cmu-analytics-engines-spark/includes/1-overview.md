@@ -12,7 +12,7 @@ One of the frameworks attempting to address these issues is Spark. Spark relies 
 
 The goal of any distributed programming framework is to support the execution of a parallel computation across multiple nodes in a performant manner. Consider an iterative application that runs a machine learning algorithm on a large graph. Spark would store this graph as an RDD, as shown in the following figure. The Spark client would store the details of the program to be executed and map it to Spark-specific operations for a cluster, which comprises many workers. There is a cluster manager that converts these operations into tasks and executes them on the worker nodes. Any cluster requires applications to be scheduled well to maximize the utilization and improve performance. Spark allows different policies to be used to schedule tasks on the cluster, depending upon factors such as the priority, duration, and resources required by each task. 
 
-![The most important parts of the Spark framework](../media/overview.png)
+![The most important parts of the Spark framework.](../media/overview.png)
 
 _Figure 1: The most important parts of the Spark framework_
 
@@ -24,7 +24,7 @@ Spark application developers write a driver program to connect to a cluster of w
 
 The `SparkContext` object can connect to several types of cluster managers that handle the scheduling of applications and tasks, as shown in the following figure. The cluster manager isolates multiple Spark programs from each other. Each application has its own driver and runs on isolated executors coordinated by the cluster manager. Currently, Spark supports applications written in Scala, Java, and Python. 
 
-![Spark architecture](../media/architecture.png)
+![Spark architecture.](../media/architecture.png)
 
 _Figure 2: Spark architecture_
 

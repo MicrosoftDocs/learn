@@ -2,7 +2,7 @@
 
 ![Automated Machine Learning](../media/08-02-automl.jpg)
 
-Azure Machine Learning includes support for automated machine learning through a visual interface in Azure Machine Learning studio for *Enterprise* edition workspaces only. You can use the Azure Machine Learning SDK to run automated machine learning experiments in either *Basic* or *Enterprise* edition workspaces.
+Azure Machine Learning includes support for automated machine learning through a visual interface in Azure Machine Learning studio. You can use the Azure Machine Learning SDK to run automated machine learning experiments.
 
 ## Learning objectives 
 

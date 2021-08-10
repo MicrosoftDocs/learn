@@ -58,7 +58,7 @@ You start with an existing template that your team has been using. The template 
 
 1. Copy the following starting template into *main.bicep*.
 
-    :::code language="plaintext" source="code/3-starting-template.bicep" :::
+    :::code language="bicep" source="code/3-starting-template.bicep" :::
 
 1. Save the template.
 
@@ -86,11 +86,11 @@ Next, you need to create a user-assigned managed identity. Given the infrastruct
 
 1. Under the variable definitions in *main.bicep*, add:
 
-    :::code language="plaintext" source="code/3-template-with-deploymentscript.bicep" range="3" :::
+    :::code language="bicep" source="code/3-template-with-deploymentscript.bicep" range="3" :::
 
 1. Under the resource definitions, add:
 
-    :::code language="plaintext" source="code/3-template-with-deploymentscript.bicep" range="44-47" :::
+    :::code language="bicep" source="code/3-template-with-deploymentscript.bicep" range="44-47" :::
 
 1. Save the template.
 
@@ -120,11 +120,11 @@ The role assignment also needs a GUID name. You can use the [`guid`](/azure/azur
 
 1. Under the variable definitions in *main.bicep*, add:
 
-    :::code language="plaintext" source="code/3-template-with-deploymentscript.bicep" range="4-5" :::
+    :::code language="bicep" source="code/3-template-with-deploymentscript.bicep" range="4-5" :::
 
 1. Under the resource definitions, add:
 
-    :::code language="plaintext" source="code/3-template-with-deploymentscript.bicep" range="49-56" :::
+    :::code language="bicep" source="code/3-template-with-deploymentscript.bicep" range="49-56" :::
 
 1. Save the template.
 
@@ -156,15 +156,15 @@ Now, you have all the prerequisites for the deployment script. You'll start with
 
 1. Under the variable definitions in *main.bicep*, add:
 
-    :::code language="plaintext" source="code/3-template-with-deploymentscript.bicep" range="6" :::
+    :::code language="bicep" source="code/3-template-with-deploymentscript.bicep" range="6" :::
 
 1. Under the resource definitions, add:
 
-    :::code language="plaintext" source="code/3-template-with-deploymentscript.bicep" range="58-67, 80-84" :::
+    :::code language="bicep" source="code/3-template-with-deploymentscript.bicep" range="58-67, 80-84" :::
 
 1. Add a `properties` section to the resource to define the script and the other required values.
 
-    :::code language="plaintext" source="code/3-template-with-deploymentscript.bicep" range="68-79" :::
+    :::code language="bicep" source="code/3-template-with-deploymentscript.bicep" range="68-79" :::
 
 1. Save the template.
 
@@ -178,7 +178,7 @@ Now that you have a deployment script uploading a file into Azure Blob Storage, 
 
 After the `resources` section of the ARM template, add an output that references the URI for the file as reported by the deployment script.
 
-:::code language="json" source="code/3-template-with-deploymentscript.json" range="102-107":::
+:::code language="json" source="code/3-template-with-deploymentscript.json" range="109-114":::
 
 ::: zone-end
 
@@ -186,7 +186,7 @@ After the `resources` section of the ARM template, add an output that references
 
 At the bottom of the file, after the resource definitions, add an output that references the URI for the file as reported by the deployment script.
 
-:::code language="plaintext" source="code/3-template-with-deploymentscript.bicep" range="86":::
+:::code language="bicep" source="code/3-template-with-deploymentscript.bicep" range="86":::
 
 ::: zone-end
 
@@ -202,7 +202,7 @@ Your template should look like:
 
 ::: zone pivot="bicepcli,biceppowershell"
 
-:::code language="plaintext" source="code/3-template-with-deploymentscript.bicep" highlight="3-6, 44-86" :::
+:::code language="bicep" source="code/3-template-with-deploymentscript.bicep" highlight="3-6, 44-86" :::
 
 ::: zone-end
 
@@ -386,7 +386,7 @@ After the deployment is complete, you'll be given a URL that points to the file 
 1. Retrieve that file by using the URL output from the template deployment to confirm that the deployment script worked properly.
 
     ```azurepowershell
-    $fileUri = (Get-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -Name $reploymentName).Outputs.fileUri.Value
+    $fileUri = (Get-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -Name $deploymentName).Outputs.fileUri.Value
     Invoke-RestMethod $fileUri
     ```
 

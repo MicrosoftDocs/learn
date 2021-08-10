@@ -52,7 +52,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
 1. Within that method, replace `// READ FILES LOOP` with a loop that iterates over the `salesFiles`, reads the file, parses the content as JSON, and then increments the `salesTotal` variable with the `total` value from the file.
 
     ```csharp
-    double CalculateSalesTotal(IEnumerable<string> salesFiles)
+    static double CalculateSalesTotal(IEnumerable<string> salesFiles)
     {
         double salesTotal = 0;
         

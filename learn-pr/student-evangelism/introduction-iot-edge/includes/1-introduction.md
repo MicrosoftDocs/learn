@@ -6,7 +6,7 @@ The ability to move computing workloads to edge devices provides other advantage
 
 Suppose you're a doctor who specializes in diabetic treatment. You want to monitor the patient's blood glucose level and warn the patient when the glucose level changes are of concern to their health. In this case, the IoT Edge device monitors the glucose level of the patient and stores the data on the device itself. The device pushes summarized data from the edge to the cloud. Algorithms that run on the device help to monitor the changes in the glucose levels, which could cause concern. If the glucose levels are of concern, the doctor receives an alert from the algorithm running on the IoT Edge device. The alarm can be generated rapidly in response to the changing glucose levels because the algorithm is running on the edge device. Hence, it doesn't need to connect to the cloud – in that way saving data round trip to the cloud, i.e. latency time. This notification enables the doctor to respond to the patient immediately. The device also caters for situations where connectivity is poor. The data is stored securely on the device.
 
-![Scenario-based image shows how you can use Azure IoT Edge device for your need and connect to IoT Hub](../media/iot-edge.png)
+![Scenario-based image shows how you can use Azure IoT Edge device for your need and connect to IoT Hub.](../media/iot-edge.png)
 
 This module is a part of the AI Edge Engineer learning path.  In this module, we explore engineering-based themes such as: edge computing, security, large-scale deployment and managing response times based on system and device constrains. 
 

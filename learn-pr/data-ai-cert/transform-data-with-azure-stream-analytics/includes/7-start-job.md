@@ -8,8 +8,8 @@ Perform these steps in the Azure portal.
 
 1. Select **Now** > **Start**.
 
-    ![Screenshot showing how to start a job in the Azure portal](../media/7-run-job.png)
+    ![Screenshot showing how to start a job in the Azure portal.](../media/7-run-job.png)
 
     The job should transition to the **Starting** state. After a few seconds, it will move to the **Running** state. The job will run for a few minutes, and then finish in the **Completed** state. You can watch these transitions on the job's **Overview** page.
 
-    ![Screenshot of a running a job in the Azure portal](../media/7-running-job.png)
+    ![Screenshot of a running a job in the Azure portal.](../media/7-running-job.png)

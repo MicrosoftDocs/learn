@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-introduction.4-rust-playground
+metadata:
+  title: 'Exercise: Try the Rust playground'
+  description: Use the Rust playground to write, edit, build, and run a basic program.
+  ms.date: 07/26/2021
+  author: GitHubber17
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Exercise: Try the Rust playground'
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-rust-playground.md)]

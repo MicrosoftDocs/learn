@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.health-bot-introduction.5-exercise-create-first-health-bot
+title: Exercise - Create your first Health Bot instance
+metadata:
+  title: Exercise - Create your first Health Bot instance
+  description: In this unit, you'll learn to create your first Health Bot instance.
+  author: RuchaYagnik
+  ms.author: chnoring
+  ms.date: 07/27/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-exercise-create-first-health-bot.md)]

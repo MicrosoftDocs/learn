@@ -7,7 +7,7 @@ variables:
 
 schedules:
 - cron: '0 3 * * *'
-  displayName: Deploy every day at 3 A.M.
+  displayName: 'Deploy every day at 3 A.M.'
   branches:
     include:
     - release
@@ -20,13 +20,13 @@ stages:
   - job: 'Build'
     displayName: 'Build job'
     pool:
-      vmImage: 'ubuntu-18.04'
+      vmImage: 'ubuntu-20.04'
       demands:
       - npm
 
     variables:
       wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
-      dotnetSdkVersion: '3.1.300'
+      dotnetSdkVersion: '5.x'
 
     steps:
     - task: UseDotNet@2
@@ -86,7 +86,7 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-      vmImage: 'ubuntu-18.04'
+      vmImage: 'ubuntu-20.04'
     environment: dev
     variables:
     - group: Release
@@ -110,7 +110,7 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-      vmImage: 'ubuntu-18.04'
+      vmImage: 'ubuntu-20.04'
     environment: test
     variables:
     - group: 'Release'
@@ -133,7 +133,7 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-      vmImage: 'ubuntu-18.04'
+      vmImage: 'ubuntu-20.04'
     environment: staging
     variables:
     - group: 'Release'

@@ -7,10 +7,10 @@ Using shapes correctly allows you to receive better input from colleagues and se
 
 |Element|Shape|Definition|Example|
 |-------|-----|----------|-------|
-|Process|![Process](../media/process50.png)|Task that receives, modifies, or redirects input to output|Web service|
-|Data store|![Data Store](../media/data-store50.png)|Permanent and temporary data storage|Web cache and Azure DB|
-|External entity|![External Entity](../media/external-entity50.png)|Task, entity, or data store outside of your direct control|Users and third-party APIs|
-|Data-flow|![Data-flow](../media/data-flow50.png)|Data movement between processes, data stores, and external entities|Connection strings and payloads|
-|Trust boundary|![Trust Boundary Box](../media/trust-boundary-box50.png) ![Trust Boundary Line](../media/trust-boundary-line50.png)|Trust zone changes as data flows through the system|Users connecting to a secured corporate network over the internet|
+|Process|![Process.](../media/process50.png)|Task that receives, modifies, or redirects input to output|Web service|
+|Data store|![Data Store.](../media/data-store50.png)|Permanent and temporary data storage|Web cache and Azure DB|
+|External entity|![External Entity.](../media/external-entity50.png)|Task, entity, or data store outside of your direct control|Users and third-party APIs|
+|Data-flow|![Data-flow.](../media/data-flow50.png)|Data movement between processes, data stores, and external entities|Connection strings and payloads|
+|Trust boundary|![Trust Boundary Box.](../media/trust-boundary-box50.png) ![Trust Boundary Line](../media/trust-boundary-line50.png)|Trust zone changes as data flows through the system|Users connecting to a secured corporate network over the internet|
 
 We'll discuss each element in the next few units.

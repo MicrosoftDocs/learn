@@ -47,7 +47,7 @@ Now, we need to create a single device identity - the sensor monitoring the conv
 
 1. Select **Save**.
 
-    [![Screenshot showing the creation of an IoT Hub device identity](../media/vibrations-device-create.png)](../media/vibrations-device-create.png#lightbox)
+    [![Screenshot showing the creation of an IoT Hub device identity.](../media/vibrations-device-create.png)](../media/vibrations-device-create.png#lightbox)
 
 1. Your device should now appear in the list of devices for the IoT Hub. Select the device name.
 

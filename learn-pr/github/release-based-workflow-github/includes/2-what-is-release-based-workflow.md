@@ -10,7 +10,7 @@ From a planning mindset, being release-centric means that issues are divided up 
 
 The dominant feature of a project is its **board**. The board is the central plan of record for the iteration and contains all of the **cards** that are to be resolved. A card can represent an issue, a pull request, or even just a generic note.
 
-![Release 1.0 tracker](../media/2-project-board.png)
+![Release 1.0 tracker.](../media/2-project-board.png)
 
 By default, each card starts in the **To do** column and moves to **In progress** after work begins before ending in **Done**. You may customize these columns, add additional columns, or apply automation to the movement of these cards and their properties to fit your team's process.
 
@@ -18,7 +18,7 @@ Learn more about [managing project boards](https://help.github.com/github/managi
 
 The card's project status is integrated across the repository. For example, dragging a card from **To do** to **In progress** changes its status, as well as updates the visual indicator next to the project's title. The green section indicates the portion of cards marked as **Done**, whereas purple is used for cards **In progress**. The remaining space represents the quantity of cards that have yet to begin. In addition to dragging cards around the board, you may update them from their main view.
 
-![Moving a project card](../media/2-move-project-card.png)
+![Moving a project card.](../media/2-move-project-card.png)
 
 By using a project board, all stakeholders have an easy way to understand the status and velocity of a project. You can also create boards that are scoped to individual users or a collection of repositories owned by an organization.
 
@@ -28,11 +28,11 @@ Learn more about [tracking the progress of your work with project boards](https:
 
 For teams, or possibly subsets of teams, GitHub offers **milestone** tracking.
 
-![A GitHub project board](../media/2-milestones.png)
+![A GitHub project board.](../media/2-milestones.png)
 
 Milestones are similar to project tracking in that there is an emphasis on the prioritized completion of issues and pull requests. However, where a project may be focused on the team's process, a milestone is focused on the product.
 
-![Site ready for first deployment](../media/2-milestone-progress.png)
+![Site ready for first deployment.](../media/2-milestone-progress.png)
 
 Learn more about [tracking the progress of your work with milestones](https://help.github.com/github/managing-your-work-on-github/tracking-the-progress-of-your-work-with-milestones?azure-portal=true).
 
@@ -70,7 +70,7 @@ Learn more about [Git's cherry-pick](https://git-scm.com/docs/git-cherry-pick?az
 
 When a product version is ready to be released, GitHub simplifies the process of packaging it up and notifying consumers.
 
-![Creating a GitHub release](../media/2-create-release.png)
+![Creating a GitHub release.](../media/2-create-release.png)
 
 Creating a version is as straightforward as filling out the form:
 
@@ -84,7 +84,7 @@ Creating a version is as straightforward as filling out the form:
 - If you would like to provide files as part of the release, such as pre-built installers, you can drag and drop them onto the form. You don't need to package the source as GitHub handles that for you automatically.
 - Indicate whether this is a pre-release version by checking that box. This will help customers avoid pre-release versions if they want to.
 
-![Viewing a GitHub release](../media/2-view-release.png)
+![Viewing a GitHub release.](../media/2-view-release.png)
 
 Once a release has been published, everyone watching the repository will receive a notification.
 

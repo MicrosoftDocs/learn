@@ -13,7 +13,7 @@ This branch contains the _Space Game_ project that you worked with in previous m
 
     ```bash
     git fetch upstream build-agent
-    git checkout -b build-agent upstream/build-agent
+    git checkout -B build-agent upstream/build-agent
     ```
 
     Recall that *upstream* refers to the Microsoft GitHub repository. Your project's Git configuration understands the upstream remote, because you set up that relationship when you forked the project from the Microsoft repository and cloned it locally.

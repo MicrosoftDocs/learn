@@ -14,7 +14,7 @@ This step is required to re-provision the resources created in [Module 3: Ingest
 
 1. Select **Deploy to Azure**: 
 
-   [![homepage](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Fdigital-twins-samples%2Fmaster%2FHandsOnLab%2Fdeployment%2FMSLearnModule3%2Fadt-hol-pt1-arm-template.json "Deploy template")
+   [![homepage.](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure-Samples%2Fdigital-twins-samples%2Fmaster%2FHandsOnLab%2Fdeployment%2FMSLearnModule3%2Fadt-hol-pt1-arm-template.json "Deploy template")
 1. Complete these custom-deployment template steps to start the deployment:
     - Select the **Subscription** in which you want to deploy the resources.
     - Create a **Resource group** and give it a unique name.
@@ -74,7 +74,7 @@ You've also provisioned the IoT hub and an Azure function that's connected, and 
     - Under **IoT devices**, select the new device. 
     - Copy the **Primary Connection String** and save it. You'll need it in one of the following steps.
 
-    :::image type="content" source="../media/iot-device-connection-string.png" alt-text="Getting the connection string for an IoT device in the Azure portal":::
+    :::image type="content" source="../media/iot-device-connection-string.png" alt-text="Getting the connection string for an IoT device in the Azure portal.":::
 
 1. On your local computer, create a directory and clone the Digital Twins Samples GitHub repo by pasting the following code into PowerShell. (Replace `username` with a valid directory.)
 

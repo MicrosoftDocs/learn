@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.introduction-to-data-for-machine-learning.exercise-detect-visualize-missing-data
+title: Exercise - Visualize missing data
+metadata:
+  title: Exercise - Visualize missing data
+  description: Learn how to detect and visualize missing data.
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+sandbox: true
+notebook: notebooks/3-3-exercise-detect-visualize-missing-data.ipynb

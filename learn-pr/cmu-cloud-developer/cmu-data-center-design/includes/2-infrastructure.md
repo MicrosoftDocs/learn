@@ -10,7 +10,7 @@ A server room can vary in size from a single rack in a closet to several hundred
 
 You were already introduced to the concept of a rack and a rack unit (U). Figure 6 shows a rack inside an open cabinet. Sometimes racks are also called cabinets. There are several variations of racks, but the most common are 19 inches wide (measured from the center of each hole on the same U). Some IBM equipment racks measure 24 inches post to post, inherited from older mainframes. Usually, network equipment is designed to mount on only two posts of the rack because wiring closets often have only two posts permanently mounted to the floor and/or wall. Servers, however, are designed to mount on four-post racks. The depth of the rear two posts is not standardized, and in most racks you can adjust the depth. Different rack-mount equipment has different depths, and each server or storage array will come with two mounting rails that connect to the front and rear posts on the left and right sides. There are two types of holes in vertical posts, square and round. Some mounting rails hook directly into square holes and have tool-less installation (fast). For round-hole racks, equipment is directly screwed in (this is more popular for telecom and A/V racks). If you need to mount round-hole style equipment or rails into a square-hole rack, you use cage nuts and bolts.
 
-![42-unit four-post rack cabinet with sides and doors removed](../media/42-unit-4-post-rack.png)
+![42-unit four-post rack cabinet with sides and doors removed.](../media/42-unit-4-post-rack.png)
 
 _Figure 6: 42-unit (42U) four-post rack cabinet with sides and doors removed_
 
@@ -18,7 +18,7 @@ The most common height rack is 42U, and that is simply to fit through a normal d
 
 Many server rooms have a raised floor, although it is not a strict requirement. This provides a plenum for cold air to be distributed throughout the room (tiles in front of racks have vent holes). Raised floors also provide space to run electrical or network cable or chilled water pipes for in-row cooling. Last, they provide more flexibility for future layout/configuration changes. Figure 7 shows what a raised floor looks like. 
 
-![Example of a raised floor](../media/raised-floor.png)
+![Example of a raised floor.](../media/raised-floor.png)
 
 _Figure 7: Example of a raised floor_
 
@@ -43,7 +43,7 @@ Between the UPS and the IT equipment, there are power distribution units (PDUs).
 
 For AC, higher voltage (400 V and 480 V) is more efficient for distributing power throughout a datacenter than 240 V or 208 V but still has to be stepped down before going to the actual server. Most server power supplies are universal and will accept input AC voltages ranging from 110 V to 240 V. The benefits to running at 208 to 240 V versus running at 110 to 125 V are slightly higher efficiency (5% to 10%) as well as getting the full rated power output (as labeled on the PSU). Most server room/datacenter installations will run at 200+ VAC for the efficiency, as well as lower pricing for electrical wiring (smaller-gauge copper). In order to boost efficiency, some server PSUs also support 277 V directly. Instead of traditional wire, some server rooms employ bus bars that mount overhead (above the racks) and have circuit breaker whips that can attach at any horizontal location (these are like track lighting, only larger).
 
-![C13 power connector, and C19 power connector](../media/power-connectors.png)
+![C13 power connector, and C19 power connector.](../media/power-connectors.png)
 
 _Figure 8: (a) C13 power connector. (b) C19 power connector._ ([Source](https://en.wikipedia.org/wiki/IEC_60320))
 
@@ -55,7 +55,7 @@ Because DC power supplies are not a commodity, these are only suited for large-s
 
 Many of the advances in datacenter efficiency over the last 10 years have come from new designs and methods for cooling.
 
-![Typical datacenter cooling with a CRAC and raised floor](../media/cooling-technique.png)
+![Typical datacenter cooling with a CRAC and raised floor.](../media/cooling-technique.png)
 
 _Figure 9: Typical datacenter cooling with a CRAC and raised floor_
 

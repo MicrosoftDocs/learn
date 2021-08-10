@@ -10,7 +10,7 @@ By separating an application into these logical layers, we treat each layer inde
 
 Here's a diagram that shows layers in a common N-tier architecture. Each layer handles one aspect of the application. The business layer manages communication between the user interface layer and the data access layer.
 
-![Visualization of layers](../media/2-layers.svg)
+![Visualization of layers.](../media/2-layers.svg)
 
 ## What are tiers?
 
@@ -24,7 +24,7 @@ Separating the architecture into physical tiers comes with several benefits:
 
 Communication between tiers should be in a top-down fashion. Each tier is allowed to talk to the next tier below it, but generally is not allowed to skip tiers. This is done to improve security by limiting the exposed surface area of a tier.
 
-![Visualization of tiers](../media/2-tiers.svg)
+![Visualization of tiers.](../media/2-tiers.svg)
 
 ## The three-tier architecture
 

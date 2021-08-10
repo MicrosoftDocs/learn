@@ -18,9 +18,10 @@ abstract: |
     - Verify template conversions using the what-if operation and documentation
 prerequisites: |
   You should be familiar with:
-  - Creating and deploying basic Bicep templates, including parameters and child and extension resources.
-  - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
+  - Azure, including the Azure portal, subscriptions, and resource groups.
+  - ARM templates (both JSON and Bicep), including parameters, modules, the `existing` keyword, and child and extension resources.
   - The what-if operation.
+  - Refactoring Bicep files to conform to best practices.
 
   To follow along with the exercises in the module, you'll need:
   - [Visual Studio Code](https://code.visualstudio.com), installed locally.  

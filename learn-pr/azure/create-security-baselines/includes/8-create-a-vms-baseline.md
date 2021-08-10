@@ -22,7 +22,7 @@ Azure Security Center enables you to see which VMs require the VM Agent and will
 
 1. Select **Save**.
 
-![Screenshot ASC Auto provisioning pane](../media/8-auto.png)
+![Screenshot ASC Auto provisioning pane.](../media/8-auto.png)
 
 ### Ensure that OS disk are encrypted - Level 1
 
@@ -42,7 +42,7 @@ If you use Azure Security Center (recommended), you're alerted if you have VMs t
 
 1. Ensure that each disk under **Data disks** has encryption set to **Enabled**.
 
-![Screenshot VM disk encryption pane](../media/8-asc-disk-encryption.png)
+![Screenshot VM disk encryption pane.](../media/8-asc-disk-encryption.png)
 
 ### Ensure only approved extensions are installed - Level 1
 
@@ -58,7 +58,7 @@ Azure virtual machine (VM) extensions are small applications that provide post-d
 
 1. Ensure that the listed extensions are approved for use.
 
-![Screenshot of VM Extensions pane](../media/8-extensions.png)
+![Screenshot of VM Extensions pane.](../media/8-extensions.png)
 
 ### Ensure that the OS patches for the VMs are applied - Level 1
 
@@ -72,7 +72,7 @@ Azure Security Center monitors daily Windows and Linux virtual machines (VMs) an
 
 1. Ensure that there are no recommendations for **Apply system updates**.
 
-![Screenshot of ASC Recommendations pane](../media/8-asc-recommend.png)
+![Screenshot of ASC Recommendations pane.](../media/8-asc-recommend.png)
 
 ### Ensure that VMs have an installed and running endpoint protection solution - Level 1
 

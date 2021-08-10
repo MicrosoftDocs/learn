@@ -6,7 +6,7 @@ In the ice cream scenario, how do we discover there is a food quality or safety 
 
 We could use a centralized database that all participants use to track shipments. In many scenarios, a centralized database is the right solution. Suppose we have a centralized database that stores details about the shipment and who's currently responsible. In our scenario, we could have the farmer, shipper, factory, and retailer use the same centralized database.
 
-![A farm, factory, shipper, and a shop use a single centralized database](../media/centralized-database.png)
+![A farm, factory, shipper, and a shop use a single centralized database.](../media/centralized-database.png)
 
 The advantage of the centralized database is that it's easy to control access and consistency. Everyone is using the same database and there's a trusted authority controlling access. Because there is only one database, all participants are using the same set of data. All participants need to trust the database is correct, and by extension they need to trust the owner of the database not to modify historical data for any reason.
 

@@ -17,7 +17,7 @@ Here are the underlying principle benefits of the Go programming language:
 - Concurrency is a first-class citizen, and enables any function to be run as a lightweight thread with little programmer effort.
 - Go provides automatic memory management including garbage collection.
 - Compilation and execution are fast.
-- Go requires that all code be used, or else and error is thrown.
+- Go requires that all code be used, or else an error is thrown.
 - There's official formatting that helps to maintain consistency across projects.
 - Go has a large and comprehensive standard library, and many applications can be built without third-party dependencies.
 - Go guarantees language backward compatibility with past releases.

@@ -6,7 +6,7 @@ metadata:
   description: Confirm that you understand the steps required to build and train a neural network to analyze sentiment.
   ms.date: 02/24/2019
   author: JeffProsise
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 content: |

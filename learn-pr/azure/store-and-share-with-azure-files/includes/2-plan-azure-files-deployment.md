@@ -6,7 +6,7 @@ In this unit, you'll explore the features offered by Azure Files and understand 
 
 ## What is Azure Files?
 
-![Diagram of how Azure files are structured. Starting with a storage account, through file storage, shares, directories, and files](../media/2-overview.svg)
+![Diagram of how Azure files are structured. Starting with a storage account, through file storage, shares, directories, and files.](../media/2-overview.svg)
 
 Before we explore Azure Files, you need to understand that storage of file shares is one type of data that can be contained in an Azure Storage account. Later in this unit, you'll see how storage accounts provide options for the resilience of stored files.
 
@@ -62,7 +62,7 @@ You need to balance the availability and performance requirements to decide on t
 
 The finance company has existing systems, data, and file shares. You need to migrate this data into Azure Files, so you have another decision to make. Because you can connect over SMB or use the REST APIs, you have many options. For example, you can write a custom utility or use Microsoft solutions. The table lists the most common utilities.
 
-![Most common utilities](../media/2-azure-data-transfer-options.svg)
+![Most common utilities.](../media/2-azure-data-transfer-options.svg)
 
 |Utility  | Description  |
 |---------|---------|

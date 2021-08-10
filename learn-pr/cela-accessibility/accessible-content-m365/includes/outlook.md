@@ -11,11 +11,11 @@ To set HTML as the default message format:  
 1. Select **File** \> **Options** \> **Mail**.
 2. In the **Compose Messages** section, set **Compose messages in this format** to **HTML**.
 
-:::image type="content" source="../media/outlook-html-format.png" alt-text="HTML option selected in Compose messages in the format drop-down menu":::
+:::image type="content" source="../media/outlook-html-format.png" alt-text="HTML option selected in Compose messages in the format drop-down menu.":::
 
 To set an individual message to HTML format, select **Format Text** \> **HTML** in the message that you're composing.
 
-:::image type="content" source="../media/outlook-format-text.png" alt-text="HTML option selected in Compose messages in the format drop-down menu":::
+:::image type="content" source="../media/outlook-format-text.png" alt-text="HTML option selected in Compose messages in the format drop-down menu.":::
 
 ## Tables
 
@@ -23,7 +23,7 @@ Tables can be a common strategy to organize the content in an email. Unfortunate
 
 Avoid empty table cells, columns, and rows, which can make navigation difficult. If you intend to use a table for decorative or design purposes rather than for organizing information, make sure your table does not have headers. Select your table, then make sure the Header Row box is not checked. If you identify your table as having headers, a screen reader will read the header each time when referencing a specific cell.
 
-:::image type="content" source="../media/header-row.png" alt-text="Screenshot of Header Row not checked in Outlook":::
+:::image type="content" source="../media/header-row.png" alt-text="Screenshot of Header Row not checked in Outlook.":::
 
 ## Fonts
 
@@ -35,14 +35,14 @@ To set the default font for all messages:
 2. In the Compose messages section, select **Stationery and Fonts** \> **Personal Stationery**.
 3. For **New mail messages**, select **Font**, then set a default sans serif font.
 
-:::image type="content" source="../media/calibri.png" alt-text="Calibri sans serif font selected in the Font menu of the New mail message option":::
+:::image type="content" source="../media/calibri.png" alt-text="Calibri sans serif font selected in the Font menu of the New mail message option.":::
 
 To change the font in an individual message:
 
 1. In a new blank message, select **Message**, then change the font settings (font, font size, and font color) to meet accessibility standards.
 2. To change the font for existing text, select the text, select **Message**, and then change the font.
 
-:::image type="content" source="../media/outlook-calibri.png" alt-text="Font setting for an individual message in Outlook":::
+:::image type="content" source="../media/outlook-calibri.png" alt-text="Font setting for an individual message in Outlook.":::
 
 ## Images
 
@@ -57,4 +57,4 @@ To add alt text to images in your Outlook messages:
 Note: You can also use the "Generate a description for me" option to automatically populate the Alt Text with an AI-generated description of
 the image.
 
-:::image type="content" source="../media/alt-text-logo.png" alt-text="Alt Text window with example image description highlighted":::
+:::image type="content" source="../media/alt-text-logo.png" alt-text="Alt Text window with example image description highlighted.":::

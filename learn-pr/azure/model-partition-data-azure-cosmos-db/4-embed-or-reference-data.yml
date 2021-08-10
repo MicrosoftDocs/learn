@@ -3,7 +3,7 @@ uid: learn.azure.model-partition-data-azure-cosmos-db.embed-or-reference-data
 title: When to embed or reference data 
 metadata: 
   title: When to embed or reference data
-  description: There are rules for when you should embed data in a document versus reference it in a different row.
+  description: There are rules for when you should embed data in a document instead of referencing it in a different row.
   ms.date: 6/14/2021 
   author: markjbrown 
   ms.author: mjbrown 
@@ -22,7 +22,7 @@ quiz:
       explanation: "Where the 1:Many relationship is unbounded or can grow large, data should be referenced."
     - content: "Stored in separate containers"
       isCorrect: false
-      explanation: "Cosmos DB does not support relational constraints between containers."
+      explanation: "Azure Cosmos DB does not support relational constraints between containers."
     - content: "Embedded in the same document"
       isCorrect: false
       explanation: "Data where the relationship is 1:1 or 1:Few is a better candidate for embedding."
@@ -30,10 +30,10 @@ quiz:
     choices: 
     - content: "Increase latency and lower cost"
       isCorrect: false
-      explanation: "Embedding data to reduce the amount of request can lower costs but it doesn't increase latency."
+      explanation: "Embedding data to reduce the number of requests can lower costs, but it doesn't increase latency."
     - content: "Lower latency"
       isCorrect: false
-      explanation: "Embedding data to reduce the amount of request can improve performance but it also affects cost."
+      explanation: "Embedding data to reduce the number of requests can improve performance, but it also affects cost."
     - content: "Reduce latency and cost"
       isCorrect: true
-      explanation: "Embedding data to reduce the amount of request can improve performance and lower cost."
+      explanation: "Embedding data to reduce the number of requests can improve performance and lower cost."

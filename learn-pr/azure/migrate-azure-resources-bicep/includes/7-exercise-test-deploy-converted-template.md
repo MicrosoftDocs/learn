@@ -6,7 +6,7 @@ You've now created a Bicep file to represent the virtual machine that runs the t
 > - Deploy the template and verify the deployment status.
 
 <!--
-TODO still to write:
+TODO: still to write:
 - Complete mode, and how the disk won't actually be deleted
 - Anything on the OS disk isn't included in the export - you'd need to do a separate backup, image, or run scripts to deploy app components etc
 -->

@@ -4,7 +4,7 @@ Let's assume your organization recently suffered an outage caused by a hurricane
 
 ## Site Recovery features
 
-![Diagram showing a VM environment that is unavailable and failing over to a secondary environment](../media/2-failover.png)
+![Diagram showing a VM environment that is unavailable and failing over to a secondary environment.](../media/2-failover.png)
 
 Site Recovery manages the orchestration of disaster recovery in Azure. It's designed to replicate workloads from a primary site or region, to a secondary site. If the primary site has an issue, Site Recovery can replicate protected VMs to another Azure region.
 
