@@ -2,9 +2,9 @@ In this exercise, we look at exercises for setting up and triggering autoscaling
 
 To test the autoscale rules, we will generate some load on the instances. This simulated load causes the autoscale rules to scale out and increase the number of instances. As the simulated load is then decreased, the autoscale rules scale in and reduce the number of instances.
 
-In your sample application, we've already setup autoscale to trigger on the customer service microservice when the tomcat request count exceeds five sessions per minute on average.
+In your sample application, we've already setup autoscale to trigger on the customer service microservice when the tomcat request count exceeds ten sessions per minute on average.
 
-After the autoscale is triggered, it will then scale down if the request count is less than, or equal to 5.
+After the autoscale is triggered, it will then scale down if the request count is less than, or equal to ten.
 In the next exercises, you'll trigger autoscaling via Azure Application Insights, via a script and finally, manually via a web browser.
 
 ## Viewing autoscale events
@@ -22,7 +22,7 @@ In the autoscale setting screen, go to the Run history tab to see the most recen
 
 ## Trigger the scale-out action manually via a web browser
 
-To trigger the scale-out condition in the autoscale setting created, the Web App must have more than five requests in less than 1 minute.
+To trigger the scale-out condition in the autoscale setting created, the Web App must have more than ten requests in less than 1 minute.
 
 1. Open a new browser window and navigate to the customer-service:
 
@@ -46,7 +46,7 @@ https://<your-spring-cloud-service>-api-gateway.azuremicroservices.io/api/custom
 
 ## Trigger a scale-in action manually
 
-The scale-in condition in the autoscale setting triggers if there are fewer than five requests to the Web App over a period of 10 minutes.
+The scale-in condition in the autoscale setting triggers if there are fewer than, or equal to, ten requests to the Web App over a period of 1 minute.
 
 1. Ensure no requests are being sent to your Web App and the browser window to your app/service is closed.
 
