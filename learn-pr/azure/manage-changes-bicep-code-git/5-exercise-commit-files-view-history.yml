@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-changes-bicep-code-git.exercise-commit-files-view-history
+title: Exercise - Commit files to your repository and view their history
+metadata:
+  unitType: exercise
+  title: Exercise - Commit files to your repository and view their history
+  description: Learn how Git tracks files, and how to stage and commit files and view their history.
+  ms.date: 07/08/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-exercise-commit-files-view-history.md)]

@@ -2,7 +2,7 @@
 uid: learn.django.views-templates
 metadata:
   title: Create views and templates in Django
-  description: Learn about the templating engine in Django to create dynamic HTML. In this module, you'll create views and use template variables, inheritance, and tags. 
+  description: Learn about the templating engine in the Python framework Django to create dynamic HTML. In this module, you'll create views and use template variables, inheritance, and tags. 
   ms.date: 3/2/2021  
   author: GeekTrainer
   ms.author: chnoring

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-user-group-accounts.create-user-accounts
+title: Create user accounts
+metadata:
+  title: Create user accounts
+  description: "Create user accounts"
+  ms.date: 07/27/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-create-user-accounts.md)]

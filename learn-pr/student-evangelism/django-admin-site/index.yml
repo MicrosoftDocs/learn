@@ -2,14 +2,14 @@
 uid: learn.django.admin-site
 metadata: 
   title: Work with the Django admin site     
-  description: Learn how to set up the built-in Django admin site and configure users for the site.
+  description: Learn how to set up the built-in Python framework Django admin site and configure users for the site.
   ms.date: 2/26/2021
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Work with the Django admin site
-summary: Probably the most popular feature of Django is its built-in admin site, which allows internal users to manage data without having to create a special utility. We'll explore how to configure users to use this site and how to set up the site itself.
+summary: Probably the most popular feature of the Python framework Django is its built-in admin site, which allows internal users to manage data without having to create a special utility. We'll explore how to configure users to use this site and how to set up the site itself.
 abstract: |
   By the end of this module, you'll be able to: 
     - Enable the Django admin site.

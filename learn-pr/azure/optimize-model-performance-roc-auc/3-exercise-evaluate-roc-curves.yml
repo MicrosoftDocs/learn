@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.optimize-model-performance-roc-auc-dropout.exercise-evaluate-roc-curves
+title: Exercise - Evaluate ROC curves
+metadata:
+  title: Exercise - Evaluate ROC curves
+  description: Exercise about good and bad ROC curves in machine learning
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+sandbox: true
+notebook: notebooks/9-3-evaluate-roc-curves.ipynb

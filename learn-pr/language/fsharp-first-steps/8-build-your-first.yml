@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.fsharp-first-steps.build-your-first
+title: Exercise - Create your first F# application
+metadata:
+  unitType: exercise
+  title: "Exercise - Create your first F# application"
+  description: "Create an F# application to print out a message to a text console"
+  ms.date: 07/20/2021
+  author: luisquintanilla
+  ms.author: luquinta
+  ms.topic: interactive-tutorial
+  ms.prod: learning-dotnet
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-build-your-first.md)]

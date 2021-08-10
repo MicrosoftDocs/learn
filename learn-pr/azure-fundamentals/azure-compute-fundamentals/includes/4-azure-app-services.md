@@ -10,7 +10,7 @@ In your research for Tailwind Traders, you've looked at different ways that you 
     App Service enables you to build and host web apps, background jobs, mobile back-ends, and RESTful APIs in the programming language of your choice without managing infrastructure. It offers automatic scaling and high availability. App Service supports Windows and Linux and enables automated deployments from GitHub, Azure DevOps, or any Git repo to support a continuous deployment model.
   :::column-end:::
   :::column:::
-    :::image type="content" source="../media/appservice-5384aae5.png" alt-text="icon.":::
+    :::image type="content" source="../media/appservice-5384aae5.png" alt-text="icon":::
 
   :::column-end:::
 :::row-end:::

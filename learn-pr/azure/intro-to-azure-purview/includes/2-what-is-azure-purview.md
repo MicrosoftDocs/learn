@@ -7,6 +7,17 @@ The main elements are the Azure Purview Data Map, Purview Data Catalog, and Purv
 
 :::image type="content" source="../media/data-map-sources.png" alt-text="Screenshot depicting the data map view in Azure Purview with data sources from Azure Data Lake Storage, Azure Files, CosmosDB, Azure Blob storage, and Azure SQL Database on the map.":::
 
+Data insights, one of the key pillars of Azure Purview, offers a bird's eye view into your data catalog, covering these key facets:
+
+* Asset insights - a report on the data estate and source type distribution. You can view by source type, classification, and file size. View the insights as a graph or key performance indicators (KPI).
+* Scan insights - this report provides information on the health of your scans (successes, failures, or canceled).
+* Glossary insights - a status report on the glossary to help users understand the distribution of glossary terms by status, or to view how the terms are attached to assets.
+* Classification insights - a report showing where classified data is located. It enables security administrators to understand the types of information found in their organization's data estate.
+* Sensitivity insights - this report focuses on sensitivity labels that are found during scans. Security administrators can make use of this information for ensure security is appropriate for the data estate.
+* File extension insights - detailed reporting on file extensions, or file types, found during scans. Use this to understand the number of files, of each type, that exist. It also indicates where these files are located and if they can be scanned for sensitive information.
+
+:::image type="content" source="../media/insights.png" alt-text="Depiction of a computer monitor displaying the Purview Insights graphs and data.":::
+
 ## Azure Purview definition
 Azure Purview is a data governance solution. It helps customers gain deep knowledge of all their data while maintaining control over its use. With Azure Purview, organizations discover and curate data. They gain insights into their data estate, and centrally govern access to data.
 

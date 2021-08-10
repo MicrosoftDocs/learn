@@ -7,3 +7,5 @@ Now you have completed this module, you'll be able to:
 - Work with windowing function
 - Perform complex queries with JSON data
 - Visualize Azure Cosmos DB data in Power BI
+
+The official technical documentation supporting this module can be found [here](/azure/synapse-analytics/sql/query-cosmos-db-analytical-store)

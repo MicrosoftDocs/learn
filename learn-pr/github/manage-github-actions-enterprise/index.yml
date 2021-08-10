@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.github.manage-github-actions-enterprise
+metadata:
+  title: Manage GitHub Actions in the enterprise 
+  description: Learn how to manage GitHub Actions in the enterprise.
+  ms.date: 06/09/2021
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage GitHub Actions in the enterprise
+summary: Discover which GitHub Actions features are available for your enterprise instance and learn how to use them.
+abstract: |
+  In this module, you'll learn how to:
+  - Identify the different tools you can use at enterprise and organization levels to manage your actions and workflows
+  - Evaluate what the appropriate runners are for your enterprise instance
+  - Discover the different configurations available for self-hosted runners and customize them according to your enterprise use case
+  - Understand what encrypted secrets are and how to use them in your actions and workflows
+levels:
+  - intermediate
+roles:
+  - devops-engineer
+  - administrator
+  - developer
+  - solution-architect
+products:
+  - github
+prerequisites: |
+  - A GitHub Enterprise Cloud or Enterprise Server account
+  - Working knowledge of GitHub Actions and workflows
+units:
+  - learn.github.manage-github-actions-enterprise.introduction
+  - learn.github.manage-github-actions-enterprise.manage-actions-workflows
+  - learn.github.manage-github-actions-enterprise.manage-runners
+  - learn.github.manage-github-actions-enterprise.manage-encrypted-secrets
+  - learn.github.manage-github-actions-enterprise.exercise
+  - learn.github.manage-github-actions-enterprise.knowledge-check
+  - learn.github.manage-github-actions-enterprise.summary
+iconUrl: /learn/achievements/github/manage-github-actions-enterprise.svg
+badge:
+  uid: learn.github.manage-github-actions-enterprise.badge

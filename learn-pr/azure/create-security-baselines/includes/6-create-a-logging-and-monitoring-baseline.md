@@ -1,11 +1,11 @@
 Logging and monitoring are a critical requirement when trying to identify, detect, and mitigate security threats. Having a proper logging policy can ensure you can determine when a security violation has occurred, but also potentially identify the culprit responsible. Azure Activity logs provide data about both external access to a resources and diagnostic logs, which provide information about the operation of that specific resource.
 
-    > [!NOTE]
-    > An Azure activity log is a subscription log that provides insight into subscription-level events that have occurred in Azure. Using the activity log, you can determine the what, the who, and the when for any write operations taken on the resources in your subscription.
+> [!NOTE]
+> An Azure activity log is a subscription log that provides insight into subscription-level events that have occurred in Azure. Using the activity log, you can determine the what, the who, and the when for any write operations taken on the resources in your subscription.
 
 ## Logging policy recommendations
 
-Here are the security recommendations you should follow to set logging and monitoring policies on your Azure subscriptions. Included with each recommendation are the basic steps to follow in the Azure portal. You should perform these steps on your own subscription with your own resources to validate the security for each. Keep in mind that **Level 2** options might restrict some features or activity, so carefully consider which security options you decide to enforce.
+Below are the security recommendations you should follow to set logging and monitoring policies on your Azure subscriptions. Each recommendation includes a procedure to follow in the Azure portal. Perform each procedure on your own subscription with your own resources to validate the security policy. Keep in mind that **Level 2** options might restrict some features or activity, so carefully consider which security options you decide to enforce.
 
 ### Ensure that a log profile exists - Level 1
 
@@ -14,7 +14,7 @@ There is a single Activity Log for each Azure subscription. It provides data abo
 
 1. Sign in to the Azure portal.
 
-1. Go to **Monitor**, and then select **Activity log**.
+1. Select **Monitor**, and then select **Activity log**.
 
 1. Ensure that a **Log Profile** is set. If not, select **Export** to Event Hub.
 
@@ -22,7 +22,7 @@ There is a single Activity Log for each Azure subscription. It provides data abo
 
 1. Select **Save**.
 
-    ![Screenshot the activity log profile setting pane.](../media/6-export-log.png)
+    :::image type="content" source="../media/6-export-log.png" alt-text="Screenshot of Export activity log." lightbox="../media/6-export-log.png#lightbox":::
 
 ### Ensure that activity log retention is set to 365 days or more - Level 1
 
@@ -46,7 +46,7 @@ Setting the Retention (days) to 0 retains the data forever.
 
 1. Select **Done**.
 
-    ![Screenshot the activity log profile setting pane.](../media/6-resource.png)
+   :::image type="content" source="../media/6-resource.png" alt-text="Screenshot of Create alert rule." lightbox="../media/6-resource.png#lightbox":::
 
 ### Create an activity log alert for "Creating, updating, or deleting a Network Security Group" - Level 1
 
@@ -80,7 +80,7 @@ Monitoring for **Create or update SQL Server Firewall Rule** events gives insigh
 
 1. Select **Done**.
 
-    ![Screenshot the activity log profile setting pane.](../media/6-sql-server.png)
+    :::image type="content" source="../media/6-sql-server.png" alt-text="Screenshot of Select SQL servers resource." lightbox="../media/6-sql-server.png#lightbox":::!
 
     > [!TIP]
     > Remember to select **Save** if you make changes to any of the settings.

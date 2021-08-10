@@ -52,7 +52,11 @@ These items include:
 
 ## Node pools
 
-You create *node pools* to group nodes in your AKS cluster. When you create a node pool, you specify the VM size for each node in the node pool. Node pools use virtual machine scale sets as the underlying infrastructure to allow the cluster to scale the number of nodes in a node pool. New nodes created in the node pool will always be the same size as you specified when you created the node pool.
+You create *node pools* to group nodes in your AKS cluster. When you create a node pool, you specify the VM size and OS type (Linux or Windows) for each node in the node pool based on application requirement. To host user application pods, node pool **Mode** should be **User** otherwise **System**.
+
+By default, AKS cluster will have Linux node pool (**System Mode**) whether creating it through Azure portal or CLI. However, you'll always have an option to add Windows node pools along with default Linux node pools during the creation wizard in the portal, via CLI, or in ARM templates.
+
+Node pools use virtual machine scale sets as the underlying infrastructure to allow the cluster to scale the number of nodes in a node pool. New nodes created in the node pool will always be the same size as you specified when you created the node pool.
 
 :::image type="content" source="../media/2-3-node-pool-diagram.png" alt-text="A diagram that depicts a Kubernetes cluster with two node pools. The first node pool uses NC24s_v2 VMs, and the second node pool uses B2s standard VMs.":::
 

@@ -2,7 +2,7 @@
 uid: learn.azure.set-up-mixed-reality-azure-digital-twins-unity
 metadata:
   title: Set up a mixed reality project for Azure Digital Twins in Unity  
-  description: Get step-by-step guidance on how to set up and configure a mixed reality project in Unity for HoloLens 2. Learn about the Azure Digital Twins and SignalR services and common use cases for the Azure platform in Mixed Reality.
+  description: Get step-by-step guidance on how to set up and configure a mixed reality project in Unity. Learn about the Azure Digital Twins and SignalR services and common use cases for the Azure platform in Mixed Reality.
   author: JBrentJ
   ms.author: jejacks
   ms.date: 05/12/2021
@@ -15,7 +15,7 @@ abstract: |
   - Understand the breadth of Mixed Reality use cases for industry
   - Describe a Digital Twin and summarize how they can be used in business settings
   - Summarize Digital Twin platforms and services such as Azure Digital Twin and Unity
-  - Install and configure your development environment for building Mixed Reality solutions for the HoloLens 2, using Azure Digital Twins and Unity
+  - Install and configure your development environment for building Mixed Reality solutions using Azure Digital Twins and Unity
 iconUrl: /learn/achievements/set-up-mixed-reality-azure-digital-twins-unity.svg
 levels:
 - beginner
@@ -39,7 +39,6 @@ products:
 - windows
 - windows-mixed-reality
 prerequisites: |
-  - A HoloLens 2 device
   - Azure service creation and configuration
   - Domain User Azure Active Directory (i.e, not Guest)
   - [Azure CLI](/cli/azure/install-azure-cli) installed

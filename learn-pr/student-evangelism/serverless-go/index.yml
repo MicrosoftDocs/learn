@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.student-evangelism.serverless-go
+metadata:
+  title: Build serverless apps with Go and custom handlers
+  description: You can build serverless apps by using almost any programming language that supports HTTP primitives. By using custom handlers, you can choose a runtime that suits you.
+  ms.date: 07/12/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build serverless apps with Go
+summary: When you're authoring Azure functions, custom handlers allow you to use any language or runtime that supports HTTP primitives. In this module, you'll use the programming language Go and custom handlers.
+abstract: |
+  In this module, you will:
+  - Understand when to use custom handlers.
+  - Build serverless apps by using Go.
+  - Handle different triggers like HTTP and queue.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - vs
+prerequisites: |
+  - Visual Studio Code is recommended, but it's perfectly fine to use any text editor or IDE.
+units:
+  - learn.student-evangelism.serverless-go.introduction
+  - learn.student-evangelism.serverless-go.custom-handlers
+  - learn.student-evangelism.serverless-go.web-api
+  - learn.student-evangelism.serverless-go.exercise-custom-handler
+  - learn.student-evangelism.serverless-go.queue
+  - learn.student-evangelism.serverless-go.exercise-queue
+  - learn.student-evangelism.serverless-go.knowledge-check
+  - learn.student-evangelism.serverless-go.summary
+badge:
+  uid: learn.student-evangelism.serverless-go.badge

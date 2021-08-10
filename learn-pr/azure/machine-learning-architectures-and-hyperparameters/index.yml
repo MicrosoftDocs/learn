@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.machinelearning.machine-learning-architectures-and-hyperparameters
+metadata:
+  title: Select and customize architectures and hyperparameters using random forest
+  description: Explore how altering the architecture of more complex models can bring about more effective results.
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Select and customize architectures and hyperparameters using random forest
+summary: More complex models often can be manually customized to improve how effective they're. Through exercises and explanatory content, we explore how altering the architecture of more complex models can bring about more effective results.
+abstract: | 
+  In this module, you will:
+  - Discover new model types– decision trees and random forests.
+  - Learn how model architecture can affect performance
+  -	Practice working with hyperparameters to improve training effectiveness
+prerequisites: Familiarity with machine learning models
+iconUrl: /learn/achievements/machine-learning/machine-learning-architectures-and-hyperparameters.svg
+levels: 
+- beginner
+roles: 
+- ai-engineer
+- data-scientist
+- student
+products: 
+- azure
+units: 
+- learn.machinelearning.machine-learning-architectures-and-hyperparameters.introduction
+- learn.machinelearning.machine-learning-architectures-and-hyperparameters.decision-trees
+- learn.machinelearning.machine-learning-architectures-and-hyperparameters.exercise-decision-trees
+- learn.machinelearning.machine-learning-architectures-and-hyperparameters.random-forests
+- learn.machinelearning.machine-learning-architectures-and-hyperparameters.exercise-random-forests
+- learn.machinelearning.machine-learning-architectures-and-hyperparameters.hyperparameters
+- learn.machinelearning.machine-learning-architectures-and-hyperparameters.exercise-hyperparameters-tuning
+- learn.machinelearning.machine-learning-architectures-and-hyperparameters.knowledge-check
+- learn.machinelearning.machine-learning-architectures-and-hyperparameters.summary
+badge: 
+  uid: learn.machinelearning.machine-learning-architectures-and-hyperparameters.badge #add the uid for your achievement badge.
