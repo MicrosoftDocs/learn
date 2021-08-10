@@ -1,14 +1,14 @@
 In this exercise, you'll update your function to parse information from the GitHub webhook payload, and display the results.
 
-## Update our function to parse the webhook payload
+## Update your function to parse the webhook payload
 
-1. In the Azure portal, navigate to the function app that you created earlier.
+1. In the Azure portal, navigate to the Function App that you created earlier.
 
-1. In the middle menu pane, under **Functions**, select **Functions**, and then select the function that you created.
+1. On the **Function App** pane, in the left menu under **Functions** section, select select **Functions**, and then select the HttpTrigger you created.
 
-1. In the left menu pane, under **Developer**, select **Code + Test**, and in the path above the code box, from the dropdown list, select **index.js**.
+1. In the left menu pane for your Http Trigger function, under **Developer**, select **Code + Test**, and in the path above the code,  select **index.js** from the dropdown list.
 
-1. Update the index.js file by editing the code in the main window for the function. Replace the current `if...else` statement in the function body with the following code.
+1. Update the index.js file by editing the code. Replace the current `if...else` statement in the function body with the following code.
 
     ```JavaScript
     if (req.body.pages[0].title){
@@ -34,13 +34,13 @@ In this exercise, you'll update your function to parse information from the GitH
 
 1. Select the repository you are using for this module.
 
-1. In the top menu bar, select the **Settings** tab.
+1. In the top menu bar, select **Settings**.
 
 1. In the left menu pane, select **Webhooks**. The **Webhooks** page appears.
 
-1. Select **Edit** next to your webhook.
+1. Select **Edit** for your webhook.
 
-1. Scroll down to the **Recent Deliveries** section.
+1. On the Webhooks/Manage webhook page, scroll down to the **Recent Deliveries** section.
 
 1. Select the latest delivery entry by clicking the ellipsis button (...).
 
