@@ -124,10 +124,10 @@ We'll start by downloading and building an existing .NET Core application. You m
 
     ```C#
     // Find all blobs that have been changed since the specified date and time
-    IEnumerable<BlobClient> sourceBlobRefs = FindMatchingBlobsAsync(sourceBlobContainer, transferBlobsModifiedSince).Result;
+    IEnumerable<BlobClient> sourceBlobRefs = await FindMatchingBlobsAsync(sourceBlobContainer, transferBlobsModifiedSince);
     ```
 
-1. Scroll down to the `MoveMatchingBlobsAsync` method.
+2. Scroll down to the `MoveMatchingBlobsAsync` method.
 
     ```C#
     // Iterate through the list of source blobs, and transfer them to the destination container
@@ -162,6 +162,13 @@ We'll start by downloading and building an existing .NET Core application. You m
     The parameters to this method are the list of blobs to be moved, and the source and destination containers. The code iterates through the list of blobs and uses the `StartCopyFromUriAsync` method to start copying each blob in turn. Once the copy operation has been initiated, the code queries the status of the destination blob at 0.5-second intervals, displaying the progress of the operation, until the copy is complete. When the blob has been copied, it is removed from the source container.
 
     The `StartCopyFromUriAsync` method call takes a URL containing a SAS token for the source object, as described in the previous unit.
+
+    In the *Main* method, this method is invoked by the following statement.
+
+    ```C#
+    // Move matching blobs to the destination container
+    await MoveMatchingBlobsAsync(sourceBlobRefs, sourceBlobContainer, destBlobContainer);
+    ```
 
 ## Test the ArchiveBlobs application
 
