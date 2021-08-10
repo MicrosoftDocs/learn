@@ -139,4 +139,4 @@ units:
 ### TODO: verify if this should start as temporary/default badge
 ###
 badge:
-  uid: learn.intro-to-azure-purview.badge
+  uid: learn.introduction-to-azure-purview.badge
