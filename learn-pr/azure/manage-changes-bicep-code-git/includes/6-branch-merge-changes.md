@@ -11,19 +11,19 @@ In this unit, you learn about Git branches.
 
 A _branch_ provides a way to have multiple active copies of your files. You can create and switch between branches whenever you want. When you're done working with a branch, you can _merge_ it into another branch. Or you can delete it, which removes all of the changes.
 
-It's common to use branches for all of your work. Often, you designate one branch as the primary branch that represents the _known good_ or live version of your files. By convention, this branch is usually called **main**. You can create any number of other branches. When your changes on a branch are ready, you merge the branch into the **main** branch.
+It's common to use branches for all of your work. Often, you designate one branch as the primary branch that represents the _known good_ or live version of your files. By convention, this branch is usually called *main*. You can create any number of other branches. When your changes on a branch are ready, you merge the branch into the *main* branch.
 
 ## Create and check out a branch
 
-Creating a branch is quick and easy in Git. There are a few ways to do it, but the easiest way is typically to use the `git checkout` command. Here's an example of how we create a new branch named **my-experimental-changes**:
+Creating a branch is quick and easy in Git. There are a few ways to do it, but the easiest way is typically to use the `git checkout` command. Here's an example of how we create a new branch named *my-experimental-changes*:
 
 ```bash
 git checkout -b my-experimental-changes
 ```
 
-This command actually does two things: it creates the **my-experimental-changes** branch, and it checks out the newly created branch. A _checkout_ means that the copy of the files you see in your folder will reflect what's in the branch. If you have two branches with completely different sets of changes, checking out one branch and then the other allows you to flip between the two sets of changes.
+This command actually does two things: it creates the *my-experimental-changes* branch, and it checks out the newly created branch. A _checkout_ means that the copy of the files you see in your folder will reflect what's in the branch. If you have two branches with completely different sets of changes, checking out one branch and then the other allows you to flip between the two sets of changes.
 
-You can switch to an existing branch by using the `git checkout` command too. In this example, you check out the **main** branch:
+You can switch to an existing branch by using the `git checkout` command too. In this example, you check out the *main* branch:
 
 ```bash
 git checkout main
@@ -34,20 +34,20 @@ git checkout main
 
 ## Work on a branch
 
-After you switch to a branch, you commit files just like normal. In fact, everything you've done up to now has been on a branch. You were working on the **main** branch, which is the default branch when you create a new repository.
+After you switch to a branch, you commit files just like normal. In fact, everything you've done up to now has been on a branch. You were working on the *main* branch, which is the default branch when you create a new repository.
 
 When you commit some changes while you've checked out a branch, the commit is associated with the branch. When you switch to a different branch, you probably won't see the commit in the `git log` history until you merge the branch.
 
 ## Merge branches
 
-Branches are a great way to separate your in-progress work from the current live version of your Bicep code. But after you finish making changes to your files on a branch, you often want to merge the changes back to your **main** branch.
+Branches are a great way to separate your in-progress work from the current live version of your Bicep code. But after you finish making changes to your files on a branch, you often want to merge the changes back to your *main* branch.
 
 When you're working on one branch, you can merge another branch's changes into your current branch by using the `git merge` command.
 
 > [!NOTE]
 > Be sure to check out the merge destination branch (often called the _target_ branch) before you merge. Remember that you're merging _from_ another branch _into_ your current working branch.
 
-Here's an example that shows how you can check out the **main** branch, and then merge the changes from the **my-experimental-changes** branch into the **main** branch. Finally, you delete the **my-experimental-changes** branch because you no longer need it.
+Here's an example that shows how you can check out the *main* branch, and then merge the changes from the *my-experimental-changes* branch into the *main* branch. Finally, you delete the *my-experimental-changes* branch because you no longer need it.
 
 ```bash
 git checkout main
@@ -68,7 +68,7 @@ We don't discuss merge conflicts in depth in this module, but it's important to 
 
 In this module, you learn about only the basics of branches. However, branches are powerful and give you a lot of flexibility in how you work. For example, you can create branches off other branches, and merge a branch with any other branch. You can use branches to create all sorts of different _workflows_ that support the way you and your team like to work.
 
-In this module, we're using a simple workflow called _trunk-based development_. In this workflow, you have a single _trunk_ branch. (We've been using **main**.) That branch represents the known-good version of your code. You create branches off this trunk when you make changes or do any work. 
+In this module, we're using a simple workflow called _trunk-based development_. In this workflow, you have a single _trunk_ branch. (We've been using *main*.) That branch represents the known-good version of your code. You create branches off this trunk when you make changes or do any work. 
 
 Trunk-based development discourages making changes directly on the trunk branch. You try to keep other branches around for only a short amount of time, which helps to minimize merge conflicts. Then you merge and delete those branches as you complete pieces of work.
 
