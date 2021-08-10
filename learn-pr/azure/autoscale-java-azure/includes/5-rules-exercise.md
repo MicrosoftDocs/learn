@@ -7,24 +7,9 @@ In your sample application, we've already setup autoscale to trigger on the cust
 After the autoscale is triggered, it will then scale down if the request count is less than, or equal to 5.
 In the next exercises, you'll trigger autoscaling via Azure Application Insights, via a script and finally, manually via a web browser.
 
-## Trigger out the scale-out action with Application insights
+## Viewing autoscale events
 
-To trigger the auto scale, we will need to generate some load to get the average tomcat request count above five.
-Create an Application Insights instance from the Azure portal and select performance testing under the configure menu.
-Select "new" and choose "manual test" under test type.
-Copy and paste the below public endpoint of the gateway app, and replace the service name with the name of your spring cloud instance and select "run test".
-
-```bash
-https://<your-spring-cloud-service>-api-gateway.azuremicroservices.io/api/customer/owners
-```
-
-After the load test is complete, let’s head back to Metrics under the Monitoring section of our Azure Spring Cloud instance. We see our average tomcat request count increase during the load test.
-
-## Trigger the scale-out action with a script
-
-```bash
-sh loadTest.sh
-```
+In the autoscale setting screen, go to the Run history tab to see the most recent scale actions. The tab also shows the change in Observed Capacity over time. To find more details about all autoscale actions including operations such as update/delete autoscale settings, view the activity log and filter by autoscale operations.
 
 ## Navigate to the Autoscale page in the Azure portal
 
@@ -34,12 +19,6 @@ sh loadTest.sh
 4. Select the **Apps** tab under **Settings** in the menu on the left navigation pane.
 5. Select the customers-service application. You should then see the application's **Overview** page.
 6. Go to the **Scale out** tab under **Settings** in the menu on the left navigation pane.
-
-![Autoscale menu](../media/autoscale-menu.png)
-
-## Viewing autoscale events
-
-In the autoscale setting screen, go to the Run history tab to see the most recent scale actions. The tab also shows the change in Observed Capacity over time. To find more details about all autoscale actions including operations such as update/delete autoscale settings, view the activity log and filter by autoscale operations.
 
 ## Trigger the scale-out action manually via a web browser
 
@@ -86,3 +65,22 @@ The scale-in condition in the autoscale setting triggers if there are fewer than
 1. Under the chart, are the corresponding set of activity log entries for each scale action taken by this autoscale setting.
 
 ![Autoscale log](../media/scale-in-chart.png)
+
+## Trigger the scale-out action with a script
+
+To allow you to trigger the autoscale manually, we have also provided a shell script.
+
+In your https://shell.azure.com bash window, run the following commands to set your spring cloud instance name (same azure spring cloud service name you used in the previous exercise):
+
+```bash
+export SPRING_CLOUD_SERVICE=<spring-cloud-instance-name>
+```
+
+Next, in the bash window, run the following commands to execute transactions against your spring cloud customers-service
+
+```bash
+cd mslearn-autoscale-java
+sh loadTest.sh
+```
+
+You'll see the output of the customers-service load test that will send 100 requests to your instance.

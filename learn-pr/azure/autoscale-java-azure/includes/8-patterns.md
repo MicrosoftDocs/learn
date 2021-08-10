@@ -1,5 +1,13 @@
 In this unit, we look at patterns for autoscaling.
 
+Azure offers many options to meet capacity requirements as your business grows. These options can also minimize cost.
+
+## Use metrics to fine-tune scaling
+
+It's often difficult to understand the relationship between metrics and capacity requirements, especially when an application is initially deployed. Provision a little extra capacity at the beginning, and then monitor and tune the autoscaling rules to bring the capacity closer to the actual load. Autoscaling enables you to run the right amount of resources to handle the load of your app. It adds resources (called scaling out) to handle an increase in load such as seasonal workloads and customer facing applications.
+
+After configuring the autoscaling rules, monitor the performance of your application over time. Use the results of this monitoring to adjust the pattern in which the system scales if necessary.
+
 ## Common patterns to scale your resource in Azure
 
 ### Scale based on CPU
