@@ -1,4 +1,4 @@
-Bicep provides many improvements over JSON for template authoring. These benefits include: simpler syntax, support for modules, automatic dependency management, type validation, and IntelliSense. Your team may have already deployed Azure resources using the Azure portal, JSON ARM templates, or a command-line interface. Migrating your existing JSON ARM templates and Azure resources to Bicep isn't accomplished with a click of a button. The process involves a recommended workflow that includes converting, migrating, refactoring, and testing.
+Your team may have already deployed Azure resources using the Azure portal, JSON ARM templates, or a command-line interface. If you're used to JSON ARM templates, you've learned how Bicep improves the template authoring process over JSON ARM templates. It's worth the investment to use Bicep for your Azure resources, but migrating your existing deployments to Bicep isn't accomplished with a click of a button. The process involves a recommended workflow that includes converting, migrating, refactoring, and testing.
 
 ## Example scenario
 
@@ -29,7 +29,7 @@ You should be familiar with:
 
 To follow along with the exercises in the module, you'll need:
 
-- An [Azure subscription](https://azure.microsoft.com/free/)
+- An [Azure subscription](https://azure.microsoft.com/free/).
 - [Visual Studio Code](https://code.visualstudio.com), installed locally.  
 - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally.  
 - Either:
