@@ -72,9 +72,9 @@ You now have a production resource group with two additional storage accounts th
 
 Now, use the Azure portal to apply tags to resources so you can identify and locate them later.
 
-1. In the Azure portal, on the **Home** page, under **Azure services**, select **Resource groups**.
+1. In the Azure portal, on the **Home** page, under **Azure services**, select **Resource groups**. The **Resource groups** pane appears.
 
-1. Select the **production-learn-rg** resource group. Your *resource group* pane appears.
+1. Select the **production-learn-rg** resource group. The *production-learn-rg* resource group pane appears.
 
 1. Select the check box next to the **Name** field for both storage accounts you created.
 
@@ -112,6 +112,6 @@ Now you'll filter your resources and find your development tagged resources.
 
 1. Select the **environment:development** tag.
 
-1. All your tagged development resources are listed in one place.
+    All your tagged development resources are listed in one place.
 
 Keep your portal instance open to use later.
