@@ -23,7 +23,7 @@ If you're converting Azure resources deployed through the portal or another tool
 
 Azure Resource Manager is the service that's used to deploy and manage resources in Azure. All resources deployed to Azure are tracked by Resource Manager, regardless of the method used to deploy the resource. You can use the Azure portal, Azure CLI, Azure PowerShell, the Resource Manager REST API, and Azure SDKs to interact with Resource Manager.
 
-:::image type="content" source="../media/2-azure-resource-manager.png" alt-text="Diagram showing Azure Resource Manager accepting requests from all Azure clients and libraries." border="false":::
+:::image type="content" source="../../includes/media/azure-resource-manager.png" alt-text="Diagram showing Azure Resource Manager accepting requests from all Azure clients and libraries." border="false":::
 
 Regardless of how each resource was created, information about the resource is made available in JSON format by Resource Manager. When you ask for a copy of the JSON representation of a resource, you're _exporting_ the resource. The JSON file that you export can be decompiled into Bicep.
 
