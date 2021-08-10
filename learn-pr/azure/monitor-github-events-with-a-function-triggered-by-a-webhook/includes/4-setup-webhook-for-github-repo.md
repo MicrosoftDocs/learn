@@ -34,6 +34,6 @@ Events are at the center of webhooks. Events occur whenever actions are taken in
 
 To listen for updates to the wiki for the repository, select the **Wiki** checkbox; this event is the *Gollum* event mentioned earlier. Select **Add webhook** to save all the individual events you selected.
 
-A full list of webhook events, and when they can run, can be found by visiting [Github Webhooks Events](https://developer.github.com/webhooks/#events). 
+A full list of webhook events, and when they can run, can be found by visiting [GitHub Webhooks Events](https://developer.github.com/webhooks/#events). 
 
 In the next exercise, we'll walk you through the process of setting up a webhook for a GitHub repository.
