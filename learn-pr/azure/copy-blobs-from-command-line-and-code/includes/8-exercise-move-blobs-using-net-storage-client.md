@@ -32,7 +32,7 @@ We'll start by downloading and building an existing .NET Core application. You m
 1. Build the sample application.
 
     ```bash
-    dotnet build
+    dotnet build TransferBlobs
     ```
 
 ## Examine the ArchiveBlobs application
@@ -40,7 +40,7 @@ We'll start by downloading and building an existing .NET Core application. You m
 1. Move to the *ArchiveBlobs* subdirectory. This subdirectory contains the source code for the sample application.
 
     ```bash
-    cd ArchiveBlobs
+    cd TransferBlobs
     ```
 
 1. Open the *Program.cs* file using the `Code` editor.
