@@ -5,12 +5,6 @@ You've now created a Bicep file to represent the virtual machine that runs the t
 > - Run the what-if command to determine the effects of your deployment.
 > - Deploy the template and verify the deployment status.
 
-<!--
-TODO: still to write:
-- Complete mode, and how the disk won't actually be deleted
-- Anything on the OS disk isn't included in the export - you'd need to do a separate backup, image, or run scripts to deploy app components etc
--->
-
 ## Run what-if
 
 Before you deploy your new Bicep file for real, you first run the what-if command. This command verifies that your Bicep file is valid, and it provides you with a list of changes that will occur in your Azure environment once you deploy the file.
