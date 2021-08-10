@@ -18,7 +18,7 @@ So how does this translate to a GitHub Actions workflow? The workflow needs acce
 
 GitHub Actions provides multiple types of runners with different operating systems, like Ubuntu or Windows, and sets of tools. GitHub runs these runners so you don't have to maintain any compute infrastructure. They're sometimes called _GitHub-hosted runners_ since they're hosted on your behalf. When your workflow runs, a GitHub-hosted runner is automatically created, and it's automatically deleted after your workflow runs. You can't access GitHub-hosted runners directly, so it's important that your workflow contains all the steps necessary to deploy your solution.
 
-:::image type="content" source="../media/2-runner.png" alt-text="Diagram that shows a pipeline that runs on an runner." border="false":::
+:::image type="content" source="../media/2-runner.png" alt-text="Diagram that shows a workflow that runs on an runner." border="false":::
 
 > [!NOTE]
 > You can also create your own custom runners. These are called _self-hosted runners_. You might do this if you have specific software you need to run as part of your workflow, or if you need to have a lot of control over exactly how the runner is configured. We don't discuss self-hosted runners in this module, but we provide a link to more information in the summary.
@@ -31,7 +31,7 @@ You need to instruct GitHub Actions _when_ to run your workflow by using a _trig
 
 ## Steps
 
-A step represents a single operation that the pipeline will perform. Think of a step as being like the individual command you execute in Bash or PowerShell. For most deployments, you execute several steps in a sequence. You define the sequence, and all of the details of each step, in your workflow YAML file.
+A step represents a single operation that the workflow will perform. Think of a step as being like the individual command you execute in Bash or PowerShell. For most deployments, you execute several steps in a sequence. You define the sequence, and all of the details of each step, in your workflow YAML file.
 
 There are two types of steps in GitHub Actions:
 

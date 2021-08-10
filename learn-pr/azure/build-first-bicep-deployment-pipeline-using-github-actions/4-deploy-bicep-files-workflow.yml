@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.deploy-bicep-files-workflow
+uid: learn.azure.build-first-bicep-deployment-workflow-using-github-actions.deploy-bicep-files-workflow
 title: Deploy Bicep files using a workflow
 metadata:
   unitType: learning-content

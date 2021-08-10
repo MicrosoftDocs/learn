@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.control-workflow-executes-triggers
+uid: learn.azure.build-first-bicep-deployment-workflow-using-github-actions.control-workflow-executes-triggers
 title: Control when your workflow executes by using triggers
 metadata:
   unitType: learning-content

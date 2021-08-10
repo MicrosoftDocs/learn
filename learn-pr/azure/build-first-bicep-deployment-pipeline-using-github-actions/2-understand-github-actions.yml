@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.understand-github-actions
+uid: learn.azure.build-first-bicep-deployment-workflow-using-github-actions.understand-github-actions
 title: Understand GitHub Actions
 metadata:
   unitType: learning-content
   title: Understand GitHub Actions
-  description: Build a basic deployment pipeline for Bicep infrastructure as code templates by using GitHub and GitHub Actions. Learn how to use secrets to authenticate your deployment pipeline to Azure. Add triggers to configure the Bicep deployment pipeline to run whenever your main branch is updated.
+  description: TODO
   ms.date: 07/20/2021
   author: vermegi
   ms.author: givermei

@@ -40,7 +40,7 @@ Here, you update your workflow definition to deploy your Bicep file to Azure by 
 
 1. In Visual Studio Code, open the _.github/workflows/workflow.yml_ file.
 
-1. Remove the `placeholder` step from the pipeline definition by deleting the bottom two lines of the file.
+1. Remove the `placeholder` step from the workflow definition by deleting the bottom two lines of the file.
 
 1. As a first step you will add a task to checkout the code on the runner. Add a new task at the bottom of the file that checks out your code. 
 
@@ -65,13 +65,13 @@ Here, you update your workflow definition to deploy your Bicep file to Azure by 
 
 1. Save the changes to the file. Your file should look like the below:
 
-   :::code language="yaml" source="code/6-pipeline.yaml" :::
+   :::code language="yaml" source="code/6-workflow.yaml" :::
 
 1. In the Visual Studio Code **Terminal**, stage your changes, commit them to your repository, and push them to Azure Repos:
 
    ```bash
    git add .
-   git commit -m 'Add Azure CLI tasks to pipeline'
+   git commit -m 'Add Azure CLI tasks to workflow'
    git push
    ```
 
@@ -87,7 +87,7 @@ Now you're ready to run your workflow!
 
    :::image type="content" source="../media/6-workflow-run.png" alt-text="Screenshot of the GitHub interface showing the workflow, with the Run workflow dropdown and button highlighted." border="true":::
 
-1. A new run of your pipeline will appear in the runs table. If it does not, refresh the screen. Select your running workflow to go to the detail screen of the run. 
+1. A new run of your workflow will appear in the runs table. If it does not, refresh the screen. Select your running workflow to go to the detail screen of the run. 
 
    :::image type="content" source="../media/6-workflow-runs.png" alt-text="Screenshot of the GitHub interface showing the workflow runs, with the running workflow highlighted." border="true":::
 
@@ -123,7 +123,7 @@ Now you're ready to run your workflow!
 
    :::image type="content" source="../media/6-portal-deployment-list.png" alt-text="Screenshot of the Azure portal, showing the resource group deployment history, and the deployment highlighted." border="true":::
 
-   Notice that the deployment name is the same as the pipeline run name.
+   Notice that the deployment name is the same as the workflow run name.
 
 1. Select the deployment to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's an App Service plan and an app.
 

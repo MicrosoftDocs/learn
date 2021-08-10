@@ -1,17 +1,17 @@
 ### YamlMime:Module
-uid: learn.azure.build-first-bicep-deployment-pipeline-using-github-actions
+uid: learn.azure.build-first-bicep-deployment-workflow-using-github-actions
 metadata:
   moduleType: standard
-  title: Build your first Bicep deployment pipeline by using GitHub Actions
-  description: Build a basic deployment pipeline for Bicep infrastructure as code templates by using GitHub and GitHub Actions. Learn how to use secrets to authenticate your deployment pipeline to Azure. Add triggers to configure the Bicep deployment pipeline to run whenever your main branch is updated.
+  title: Build your first Bicep deployment workflow by using GitHub Actions
+  description: TODO
   ms.date: 07/20/2021
   author: vermegi
   ms.author: givermei
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Build your first Bicep deployment pipeline by using GitHub Actions
+title: Build your first Bicep deployment workflow by using GitHub Actions
 summary: |
-  Build a basic deployment pipeline for Bicep code. Use a secret to securely identify your GitHub Actions workflow to Azure. Configure when the workflow runs by using triggers.
+  Build a basic deployment workflow for Bicep code. Use a secret to securely identify your GitHub Actions workflow to Azure. Configure when the workflow runs by using triggers.
 abstract: |
   After completing this module, you'll be able to:
     - Automate Bicep deployments by using a workflow in GitHub Actions
@@ -23,7 +23,7 @@ prerequisites: |
   - Creating and deploying basic Bicep files.
   - Azure, including the Azure portal, subscriptions, resource groups, and resources.
   - Service principals.
-  - Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
+  - Basic Git commands, including cloning, committing files, and pushing changes to GitHub.
   
   To follow along with the exercises in the module, you'll need an Azure account, with the ability to create resource groups and to create Azure Active Directory applications and service principals.
   
@@ -45,15 +45,15 @@ roles:
 products:
   - azure-resource-manager
 units:
-- learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.introduction
-- learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.understand-github-actions
-- learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.exercise-create-run-basic-workflow
-- learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.deploy-bicep-files-workflow
-- learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.exercise-create-github-secret
-- learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.exercise-add-bicep-deployment-action-workflow
-- learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.control-workflow-executes-triggers
-- learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.exercise-update-workflow-trigger
-- learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.knowledge-check
-- learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.summary
+- learn.azure.build-first-bicep-deployment-workflow-using-github-actions.introduction
+- learn.azure.build-first-bicep-deployment-workflow-using-github-actions.understand-github-actions
+- learn.azure.build-first-bicep-deployment-workflow-using-github-actions.exercise-create-run-basic-workflow
+- learn.azure.build-first-bicep-deployment-workflow-using-github-actions.deploy-bicep-files-workflow
+- learn.azure.build-first-bicep-deployment-workflow-using-github-actions.exercise-create-github-secret
+- learn.azure.build-first-bicep-deployment-workflow-using-github-actions.exercise-add-bicep-deployment-action-workflow
+- learn.azure.build-first-bicep-deployment-workflow-using-github-actions.control-workflow-executes-triggers
+- learn.azure.build-first-bicep-deployment-workflow-using-github-actions.exercise-update-workflow-trigger
+- learn.azure.build-first-bicep-deployment-workflow-using-github-actions.knowledge-check
+- learn.azure.build-first-bicep-deployment-workflow-using-github-actions.summary
 badge:
-  uid: learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.badge
+  uid: learn.azure.build-first-bicep-deployment-workflow-using-github-actions.badge

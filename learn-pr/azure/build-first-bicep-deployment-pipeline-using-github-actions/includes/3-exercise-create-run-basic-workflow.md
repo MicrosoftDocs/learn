@@ -157,7 +157,7 @@ You have created a workflow definition. GitHub Actions will automatically pick u
 
 1. Once the workflow run starts, you can navigate to a page with run details, by clicking on the run.
 
-   :::image type="content" source="../media/3-pipeline-running-click.png" alt-text="Screenshot of the GitHub interface showing the Actions tab, with the run highlighted." border="true":::
+   :::image type="content" source="../media/3-workflow-running-click.png" alt-text="Screenshot of the GitHub interface showing the Actions tab, with the run highlighted." border="true":::
 
 1. Refresh the page until the job status changes to **Success**. Then, select the **say-hello Job**.
 
@@ -175,7 +175,7 @@ You have created a workflow definition. GitHub Actions will automatically pick u
 
    :::image type="content" source="../media/3-workflow-run-placeholder-log.png" alt-text="Screenshot of the GitHub interface showing the workflow run log, with the 'Placeholder step' highlighted." border="true":::
 
-   The logs for this step include the contents of the command as it was specified in your pipeline's YAML file, and the _Hello world!_ text that the script emitted.
+   The logs for this step include the contents of the command as it was specified in your workflow's YAML file, and the _Hello world!_ text that the script emitted.
 
 ## Inspect how workflow execution can be linked back to a commit
 

@@ -1,4 +1,4 @@
-Before you can deploy your toy company's website from a pipeline, you need to create a service connection for your pipeline to use. In this exercise, you'll:
+Before you can deploy your toy company's website from a workflow, you need to enable your workflow to authenticate to Azure. In this exercise, you'll:
 
 > [!div class="checklist"]
 > * Create a resource group for your website.
@@ -107,7 +107,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
    ```azurecli
    az ad sp create-for-rbac \
-     --name ToyWebsitePipeline \
+     --name ToyWebsiteWorkflow \
      --role Contributor \
      --scopes RESOURCE_GROUP_ID \
      --sdk-auth
@@ -141,7 +141,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
    $azureContext = Get-AzContext
    $servicePrincipal = New-AzADServicePrincipal `
-   -DisplayName ToyWebsitePipeline `
+   -DisplayName ToyWebsiteWorkflow `
    -Role Contributor `
    -Scope $resourceGroupId
 

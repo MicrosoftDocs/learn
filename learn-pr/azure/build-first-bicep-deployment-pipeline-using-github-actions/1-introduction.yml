@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.introduction
+uid: learn.azure.build-first-bicep-deployment-workflow-using-github-actions.introduction
 title: Introduction
 metadata:
   unitType: introduction
   title: introduction
-  description: Build a basic deployment pipeline for Bicep infrastructure as code templates by using Azure DevOps and Azure Pipelines. Learn how to use service connections to authenticate your deployment pipeline to Azure. Add triggers to configure the Bicep deployment pipeline to run whenever your main branch is updated.
+  description: TODO
   ms.date: 07/20/2021
   author: vermegi
   ms.author: givermei

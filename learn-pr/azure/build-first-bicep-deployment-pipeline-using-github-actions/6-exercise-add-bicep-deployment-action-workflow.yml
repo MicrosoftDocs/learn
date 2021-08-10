@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.build-first-bicep-deployment-pipeline-using-github-actions.exercise-add-bicep-deployment-action-workflow
+uid: learn.azure.build-first-bicep-deployment-workflow-using-github-actions.exercise-add-bicep-deployment-action-workflow
 title: Exercise - Add a Bicep deployment action to the workflow
 metadata:
   unitType: exercise
