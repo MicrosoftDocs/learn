@@ -74,7 +74,7 @@ The output includes three important pieces of information. Let's review each one
 
 1. Update the API version of the `networkInterface` resource from `2020-11-01` to `2020-07-11`:
 
-   :::code language="bicep" source="code/7-main-final.bicep" range="134-160" highlight="1" :::
+   :::code language="bicep" source="code/7-main-final.bicep" range="135-161" highlight="1" :::
 
 ### Re-run the what-if command
 

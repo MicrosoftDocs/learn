@@ -85,6 +85,8 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 ::: zone pivot="cli"
 
+1. Open Visual Studio Code.
+
 [!include[](../../includes/azure-template-exercise-terminal-cli.md)]
 
 [!INCLUDE [Upgrade Azure CLI](../../includes/azure-template-bicep-exercise-upgrade-cli.md)]
@@ -94,6 +96,8 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 ::: zone-end
 
 ::: zone pivot="powershell"
+
+1. Open Visual Studio Code.
 
 [!include[](../../includes/azure-template-exercise-terminal-powershell.md)]
 
