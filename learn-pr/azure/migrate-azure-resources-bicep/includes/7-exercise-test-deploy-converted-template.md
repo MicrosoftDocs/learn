@@ -173,3 +173,27 @@ You know that your Bicep file is valid, and the what-if operation has indicated 
 
 > [!TIP]
 > In a real migration, you should also run smoke tests to verify that your resources are still behaving correctly. This acts as a final check to ensure that you didn't accidentally change something you didn't mean to.
+
+## Clean up the resources
+
+Now that you've completed the exercise, you can remove the resources so you aren't billed for them.
+
+In the Visual Studio Code **Terminal**, run the following command:
+
+::: zone pivot="cli"
+
+```azurecli
+az group delete --resource-group ToyTruck --yes --no-wait
+```
+
+The resource group is deleted in the background.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+```azurepowershell
+Remove-AzResourceGroup -Name ToyTruck -Force
+```
+
+::: zone-end
