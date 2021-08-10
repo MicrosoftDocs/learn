@@ -44,6 +44,8 @@ Create a resource group to act as the production resource group.
 
 1. Select **Review + create**. After validation passes, select **Create**. Wait for deployment to complete.
 
+## Create additional resources
+
 Now, you need to create some additional resources that you'll eventually move to a development resource group.
 
 1. Return to the Azure portal home page, and under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
