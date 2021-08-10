@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "At a minimum, how many IPs does Sonila need to identify on-premises for a network segment to use with VMware HCX?"
+  - content: "At a minimum, how many IPs does Mariana need to identify on-premises for a network segment to use with VMware HCX?"
     choices:
     - content: "3 IPs"
       isCorrect: false

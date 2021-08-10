@@ -18,7 +18,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "A container is launched using the --publish 80:8080 flag. Which of the following options is the most likely network configured used for the container?"
+  - content: "A container is launched using the --publish 8080:80 flag. Which of the following options is the most likely network configuration used for the container?"
     choices:
     - content: "none"
       isCorrect: false

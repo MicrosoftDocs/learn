@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-kubernetes-service.configure-aks-scaling
+title: Configure AKS scaling
+metadata:
+  title: Configure AKS scaling
+  description: "Configure AKS scaling"
+  ms.date: 07/28/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-kubernetes-scale-options.md)]

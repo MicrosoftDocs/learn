@@ -22,13 +22,16 @@ Resource Manager also enables you to create _templates_, which can be used to cr
 
 **Resource Manager templates** are JSON files that define the resources you need to deploy for your solution.
 
-Create resource templates from the **Automation** section for a specific VM by selecting **Export template**.
+You can create a resource template for your VM. From the VM menu, under **Automation** select **Export template**. 
 
-![Screenshot showing Export template option for our VM.](../media/4-automation-script.png)
+![Screenshot showing Export template option for a VM.](../media/4-automation-script.png)
 
-You have the option to save the resource template for later use, or immediately deploy a new VM based on this template. For example, you might create a VM from a template in a test environment, and find it doesn’t quite work to replace your on-premises machine. You can delete the resource group, which deletes all of the resources, tweak the template, and try again. If you only want to make changes to the existing deployed resources, you can change the template used to create it, and deploy it again. Resource Manager will change the resources to match the new template.
+> [!NOTE]
+> The policies for the resources included in the sandbox for this Learn module prevent you from being able to export the VM you just created; that said, an exported template is an easy-to-edit JSON file. 
 
-After you have it working the way you want it, you can take that template and easily re-create multiple versions of your infrastructure, such as staging and production. You can parameterize fields such as the VM name, network name, storage account name, and so on, and load the template repeatedly, using different parameters to customize each environment.
+You have the option to download or save a template for later use, or immediately deploy a new VM based on the template. For example, you might create a VM from a template in a test environment, and find it doesn’t quite work to replace your on-premises machine. You can delete the resource group, which deletes all of the resources, tweak the template, and try again. If you only want to make changes to the existing deployed resources, you can change the template used to create it, and redeploy it. Resource Manager will change the resources to match the new template.
+
+After you have it working the way you want it, you can use that template to easily replicate multiple versions of your infrastructure, such as staging and production. You can parameterize fields such as the VM name, network name, storage account name, and so on, and load the template repeatedly, using different parameters to customize each environment.
 
 You can use automation scripting tools such as the Azure CLI, Azure PowerShell, or even the Azure REST APIs with your favorite programming language to process resource templates, making this a powerful tool for quickly spinning up your infrastructure.
 
@@ -59,9 +62,9 @@ As shown here, you supply various parameters to handle the large number of VM co
 
 Another option for scripting and command-line Azure interaction is the **Azure CLI**.
 
-The Azure CLI is Microsoft's cross-platform command-line tool for managing Azure resources such as virtual machines and disks from the command line. It's available for Windows, Linux and macOS, or in the browser using the Cloud Shell. Like Azure PowerShell, the Azure CLI is a powerful way to streamline your administrative workflow. Unlike Azure PowerShell, the Azure CLI does not need PowerShell to function.
+The Azure CLI is Microsoft's cross-platform command-line tool for managing Azure resources such as virtual machines and disks from the command line. It's available for Windows, Linux and macOS, or in a browser using the Cloud Shell. Like Azure PowerShell, the Azure CLI is a powerful way to streamline your administrative workflow. Unlike Azure PowerShell, the Azure CLI does not need PowerShell to function.
 
-For example, you can create an Azure VM with the `az vm create` command.
+For example, from the CLI, you can create an Azure VM with the `az vm create` command.
 
 ```azurecli
 az vm create \
@@ -72,7 +75,7 @@ az vm create \
     --admin-password aReallyGoodPasswordHere
 ```
 
-The Azure CLI can be used with other scripting languages, for example, Ruby and Python. Both languages are commonly used on non-Windows-based machines where the developer might not be familiar with PowerShell.
+The Azure CLI can be used with other scripting languages, such as Ruby and Python. Both languages are commonly used on non-Windows-based machines where a developer might not be familiar with PowerShell.
 
 Learn more about creating and managing VMs in the **Manage virtual machines with the Azure CLI tool** module.
 

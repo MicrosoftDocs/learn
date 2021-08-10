@@ -9,3 +9,5 @@ Now you have completed this module, you'll be able to:
 - Work with the windowing function and other aggregations
 - Write data back to the Azure Cosmos DB transactional store
 - Read data from the transactional store
+
+The official technical documentation supporting this module can be found [here](/azure/synapse-analytics/sql/query-cosmos-db-analytical-store)

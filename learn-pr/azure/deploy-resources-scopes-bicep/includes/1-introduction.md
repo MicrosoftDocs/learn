@@ -41,7 +41,7 @@ To follow along with the exercises in the module, you'll need:
   > [!TIP]
   > If you can't meet these requirements with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
 - [Visual Studio Code](https://code.visualstudio.com), installed locally.  
-- The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally.  
+- The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally.  
 - Either:
   - The latest [Azure CLI](/cli/azure/install-azure-cli) tools, installed locally.  
   - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps), installed locally.

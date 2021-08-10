@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.wwl.prepare-to-develop-ai-solutions-azure
+metadata:
+  title: Prepare to develop AI solutions on Azure
+  description: "Prepare to develop AI solutions on Azure"
+  ms.date: 07/20/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Prepare to develop AI solutions on Azure
+summary: As an aspiring Azure AI Engineer, you should understand core concepts and principles of AI development, and the capabilities of Azure services used in AI solutions.
+abstract: |
+  After completing this module, you will be able to:
+  - Define artificial intelligence
+  - Understand AI-related terms
+  - Understand considerations for AI Engineers
+  - Understand considerations for responsible AI
+  - Understand capabilities of Azure Machine Learning
+  - Understand capabilities of Azure Cognitive Services
+  - Understand capabilities of the Azure Bot Service
+  - Understand capabilities of Azure Cognitive Search
+prerequisites: |
+  Before starting this module, you should already have familiarity with Azure and the Azure portal, and a basic understanding of software engineering.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+products:
+- azure
+units:
+- learn.wwl.prepare-to-develop-ai-solutions-azure.introduction
+- learn.wwl.prepare-to-develop-ai-solutions-azure.define-artificial-intelligence
+- learn.wwl.prepare-to-develop-ai-solutions-azure.understand-ai-related-terms
+- learn.wwl.prepare-to-develop-ai-solutions-azure.understand-considerations-for-ai-engineers
+- learn.wwl.prepare-to-develop-ai-solutions-azure.understand-considerations-for-responsible-ai
+- learn.wwl.prepare-to-develop-ai-solutions-azure.understand-capabilities-of-azure-machine-learning
+- learn.wwl.prepare-to-develop-ai-solutions-azure.understand-capabilities-of-azure-cognitive-services
+- learn.wwl.prepare-to-develop-ai-solutions-azure.understand-capabilities-of-azure-bot-service
+- learn.wwl.prepare-to-develop-ai-solutions-azure.understand-capabilities-of-azure-cognitive-search
+- learn.wwl.prepare-to-develop-ai-solutions-azure.knowledge-check
+- learn.wwl.prepare-to-develop-ai-solutions-azure.summary
+badge:
+  uid: learn.wwl.prepare-to-develop-ai-solutions-azure.badge

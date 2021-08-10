@@ -42,7 +42,7 @@ Availability zones are physically separate datacenters within an Azure region. E
 
 ### Supported regions
 
-Not every region has support for availability zones. For an updated list, see [Regions that support availability zones in Azure](/azure/availability-zones/az-region?azure-portal=true).
+Not every region has support for availability zones. For an updated list, see [Regions that support availability zones in Azure](/azure/availability-zones/az-region).
 
 ### Use availability zones in your apps
 

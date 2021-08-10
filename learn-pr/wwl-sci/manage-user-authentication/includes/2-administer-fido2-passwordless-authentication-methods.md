@@ -84,7 +84,7 @@ High
 :::row:::
 :::column:::
 
-FIDO2 security key (preview)
+FIDO2 security key
 
 :::column-end:::
 :::column:::
@@ -277,7 +277,7 @@ MFA and SSPR
 :::row:::
 :::column:::
 
-FIDO2 security key (preview)
+FIDO2 security key
 
 :::column-end:::
 :::column:::
@@ -383,10 +383,15 @@ All of these authentication methods can be configured in the Azure portal and in
 The following additional verification methods can be used in certain scenarios:
 
 - App passwords - used for old applications that don't support modern authentication and can be configured for per-user Azure AD Multi-Factor Authentication.
-
 - Security questions - only used for SSPR.
-
 - Email address - only used for SSPR.
+
+## What is FIDO2
+The FIDO (Fast IDentity Online) Alliance helps to promote open authentication specifications and reduce the use of passwords as a form of authentication. FIDO2 is the latest specification that incorporates the web authentication (WebAuthn) specification.  Users can register and then select a FIDO2 security key at the sign-in interface as their main means of authentication. These FIDO2 security keys are typically USB devices, but could also use Bluetooth or NFC. With a hardware device that handles the authentication, the security of an account is increased as there's no password that could be exposed or guessed.  FIDO2 security keys can be used to sign in to their Azure AD or hybrid Azure AD joined Windows 10 devices and get single-sign on to their cloud and on-premises resources. Users can also sign in to supported browsers. FIDO2 security keys are a great option for enterprises who are very security sensitive or have scenarios or employees who aren't willing or able to use their phone as a second factor.
+
+- FIDO2 security keys are an unphishable specification-based passwordless authentication method that can come in any form factor
+- Fast Identity Online (FIDO) is an open specification for passwordless authentication
+- FIDO allows users and organizations to leverage the specification to sign in to their resources without a username or password using an external security key or a platform key built into a device
 
 ## Enable FIDO2 security key method
 

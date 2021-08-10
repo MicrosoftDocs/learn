@@ -10,10 +10,11 @@ After consulting with several of your fellow developers at Tailwind Traders, you
     *Serverless* computing is the abstraction of servers, infrastructure, and operating systems. With serverless computing, Azure takes care of managing the server infrastructure and the allocation and deallocation of resources based on demand. Infrastructure isn't your responsibility. Scaling and performance are handled automatically. You're billed only for the exact resources you use. There's no need to even reserve capacity.
   :::column-end:::
   :::column:::
-    :::image type="content" source="../media/serverless-34c32854.png" alt-text="icon.":::
+    :::image type="content" source="../media/serverless-34c32854.png" alt-text="icon":::
 
   :::column-end:::
 :::row-end:::
+
 
 Serverless computing includes the abstraction of servers, an event-driven scale, and micro-billing:
 

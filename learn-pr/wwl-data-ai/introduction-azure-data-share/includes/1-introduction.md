@@ -11,4 +11,4 @@ After completing this module, you will be able to:
 
 ## Prerequisite
 
-Before taking this module, it is recommended that you complete Data Fundamentals.
+Before taking this module, it is recommended that you complete Azure Data Fundamentals.

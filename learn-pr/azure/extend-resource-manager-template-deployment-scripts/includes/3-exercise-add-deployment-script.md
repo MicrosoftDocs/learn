@@ -178,7 +178,7 @@ Now that you have a deployment script uploading a file into Azure Blob Storage, 
 
 After the `resources` section of the ARM template, add an output that references the URI for the file as reported by the deployment script.
 
-:::code language="json" source="code/3-template-with-deploymentscript.json" range="102-107":::
+:::code language="json" source="code/3-template-with-deploymentscript.json" range="109-114":::
 
 ::: zone-end
 
@@ -386,7 +386,7 @@ After the deployment is complete, you'll be given a URL that points to the file 
 1. Retrieve that file by using the URL output from the template deployment to confirm that the deployment script worked properly.
 
     ```azurepowershell
-    $fileUri = (Get-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -Name $reploymentName).Outputs.fileUri.Value
+    $fileUri = (Get-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -Name $deploymentName).Outputs.fileUri.Value
     Invoke-RestMethod $fileUri
     ```
 

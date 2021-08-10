@@ -3,7 +3,7 @@ uid: learn.azure.deploy-elastic-cloud-on-azure
 metadata:
   moduleType: standard
   title: Deploy Elastic Cloud on Azure
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  description: "Learn how to deploy Elastic Cloud on Azure. Elastic Cloud on Azure gives you the power of Elastic Enterprise Search, Elastic Observability, Elastic Security, and the ELK Stack (Elasticsearch, Kibana, Beats, and Logstash). You can quickly and easily search your environment for information, analyze data to observe insights, and protect your technology investment."
   ms.date: 6/11/2021
   author: yenchiho
   ms.author: yenchiho

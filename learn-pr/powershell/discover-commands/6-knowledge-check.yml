@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.powershell.discover-commands.6-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check for discover commands in PowerShell.
+  ms.date: 07/09/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  questions:
+    - content: Using the help system, what command or function helps you paginate the response?
+      choices:
+        - content: "`'command' -help`"
+          explanation: Incorrect. Using the `-help` function with a command doesn't help you paginate the response.
+          isCorrect: false
+        - content: "`Get-Help 'command'`"
+          explanation: Incorrect. `Get-Help` is the cmdlet you use to find out more about a command. However, adding the `-help` function offers a better experience because it paginates the response, so you can traverse it row by row.
+          isCorrect: false
+        - content: "`help 'command'`"
+          explanation: Correct. By using `help`, you pipe the `Get-Help` cmdlet into a function so that you can see the help page. You can see it row by row and line by line, if you want.
+          isCorrect: true
+    - content: Which statement will most efficiently find the returned type from a command?
+      choices:
+        - content: "`'command' -type`"
+          isCorrect: false
+          explanation: Incorrect. You don't use the `-type` function to find the returned type from a command.
+        - content: "`'command' | Get-Member`"
+          isCorrect: true
+          explanation: Correct. The  `Get-Member` cmdlet lists the returned type at the top of the response. 
+        - content: "`'command' | Get-Type`"
+          isCorrect: false
+          explanation: Incorrect. `Get-Type` is not the cmdlet to use to find the returned type from a command.
+        - content: "`'command' Get-Member`"
+          isCorrect: false
+          explanation: Incorrect. The command needs to be piped with the `Get-Member` cmdlet.
+

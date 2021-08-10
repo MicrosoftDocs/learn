@@ -19,7 +19,7 @@ prerequisites: |
   - Ability to navigate the Azure portal
   - Familiarity with Visual Studio Code
   - Familiarity with CI/CD concepts such as GitHub Actions
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/deploy-backend-apis.svg
 levels:
   - intermediate
 roles:

@@ -24,9 +24,9 @@ Let's set up the storage infrastructure for your app.
 
 ### Storage account
 
-You'll use the Azure Cloud Shell with the Azure CLI to create a storage account. You'll need to provide a unique name for the storage account &mdash; make a note of it for later.  Replace [your-unique-storage-account-name] with a name you choose. 
+You'll use the Azure Cloud Shell with the Azure CLI to create a storage account. You'll need to provide a unique name for the storage account &mdash; make a note of it for later.  Replace [your-unique-storage-account-name] with a name you choose.
 
-To create the storage account, run this command. 
+To create the storage account, run this command. Remember to enter your unique storage account name in the code.
 
 ```azurecli
 az storage account create \
@@ -38,4 +38,4 @@ az storage account create \
 
 ### Container
 
-The app you'll be working within this module uses a single container. You're going to follow the best practice of letting the app create the container at startup. However, container creation can be done from the Azure CLI. If you'd like to see the documentation, in the Cloud Shell terminal, run `az storage container create -h`.
+The app you'll be working within this module uses a single container. You're going to follow the best practice of letting the app create the container at startup. However, container creation can be done from the Azure CLI. If you'd like to see the documentation, in Cloud Shell terminal, run the `az storage container create -h` command.

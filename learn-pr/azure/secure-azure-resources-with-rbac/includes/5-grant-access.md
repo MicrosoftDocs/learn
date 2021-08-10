@@ -1,16 +1,16 @@
-A co-worker named Alain at First Up Consultants needs the ability to create and manage virtual machines for a project he is working on. Your manager has asked that you handle this request. Using the best practice to grant users the least privileges to get their work done, you decide to assign Alain the Virtual Machine Contributor role for a resource group.
+A co-worker named Alain at First Up Consultants needs permission to create and manage virtual machines for a project he is working on. Your manager has asked that you handle this request. Using the best practice to grant users the least privileges to get their work done, you decide to assign Alain the Virtual Machine Contributor role for a resource group.
 
 ## Grant access
 
-Follow these steps to assign the Virtual Machine Contributor role to a user at the resource group scope.
+Follow this procedure to assign the Virtual Machine Contributor role to a user at the resource group scope.
 
-1. In the navigation list, click **Resource groups**.
+1. In the Azure portal under Navigate, select **Resource groups**.
 
-1. Find and click the **FirstUpConsultantsRG1-_XXXXXXX_** resource group.
+1. Select **FirstUpConsultantsRG1-_XXXXXXX_** resource group.
 
-1. Click **Access control (IAM)**.
+1. Select **Access control (IAM)**.
 
-1. Click the **Role assignments** tab to see the current list of role assignments.
+1. Select the **Role assignments** tab to view the current list of role assignments.
 
    ![Screenshot showing the Access control for the selected resource group with the Role assignments tab selected.](../media/5-resource-group-role-assignment.png)
 

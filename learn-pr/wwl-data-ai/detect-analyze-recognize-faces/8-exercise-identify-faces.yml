@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.detect-analyze-recognize-faces.exercise-identify-faces
+title: Exercise - Detect, analyze, and identify faces
+metadata:
+  title: Exercise - Detect, analyze, and identify faces
+  description: "Exercise - Detect, analyze, and identify faces"
+  ms.date: 07/09/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labId: 100994
+labModal: true
+durationInMinutes: 30
+content: |
+  [!include[](includes/8-exercise-identify-faces.md)]

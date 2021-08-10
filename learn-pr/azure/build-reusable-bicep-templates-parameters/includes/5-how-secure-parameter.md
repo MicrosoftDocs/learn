@@ -3,6 +3,8 @@ Sometimes you need to pass sensitive values into your deployments, like password
 > [!TIP]
 > The best approach is to avoid using credentials entirely. [Managed identities for Azure resources](/azure/active-directory/managed-identities-azure-resources/overview) can enable the components of your solution to securely communicate with one another without any credentials. Managed identities aren't available for every resource, but it's a good idea to use them wherever you can. Where you can't, you can use the approaches described here.
 
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+
 ## Define secure parameters
 
 The `@secure` decorator can be applied to string and object parameters that might contain secret values. When you define a parameter as `@secure`, Azure won't make the parameter values available in the deployment logs. Also, if you create the deployment interactively by using the Azure CLI or Azure PowerShell and you need to enter the values during the deployment, the terminal won't display the text on your screen.
