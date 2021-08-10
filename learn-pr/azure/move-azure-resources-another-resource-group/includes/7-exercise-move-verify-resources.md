@@ -51,7 +51,7 @@ Now that you've created a devgroup resource group, you can move your development
 
 1. On the **Source + target** tab, under **Target**, for the **Resource group**, from the dropdown list, select **devgroup**.
 
-1. Select **Next**. On the **Resources to move** tab, the resources will be validated as to whether they an be moved. The validation might take a few minutes.
+1. Select **Next**. On the **Resources to move** tab, the resources will be validated as to whether they can be moved. The validation might take a few minutes.
 
 1. After validation succeeds, select **Next**.
 
