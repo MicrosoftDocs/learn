@@ -6,9 +6,9 @@ In this scenario, we'll receive requests to add bookmarks to our collection. The
 
 If the key that was passed to us is *not* found, we'll add the new bookmark to our database. We could stop there, but let's do a little more.
 
-Notice another step in the flowchart? So far we haven't done much with the data that we receive in terms of processing. We move what we receive into a database. However, in a real solution, it is possible that we'd probably process the data in some fashion. We can decide to do all processing in the same function, but in this lab we'll show a pattern that offloads further processing to another component or piece of business logic.
+Notice another step in the flowchart? So far, we haven't done much with the data that we receive in terms of processing. We move what we receive into a database. However, in a real solution, it is possible that we'd probably process the data in some fashion. We can decide to do all processing in the same function, but in this exercise, we'll show a pattern that offloads further processing to another component or piece of business logic.
 
-What might be a good example of this offloading of work in our bookmarks scenario? Well, what if we send the new bookmark to a QR code generation service? That service would, in turn, generate a QR code for the URL, store the image in Blob Storage, and add the address of the QR image back into the entry in our bookmarks collection. Calling a service to generate a QR image is time consuming so, rather than wait for the result, we hand it off to a function and let it take care of this asynchronously.
+What might be a good example of this offloading of work in our bookmarks scenario? Well, what if we send the new bookmark to a QR code generation service? That service would, in turn, generate a QR code for the URL, store the image in Blob Storage, and add the address of the QR image into the entry in our bookmarks collection. Calling a service to generate a QR image is time consuming so, rather than wait for the result, we hand it off to a function and let it take care of this asynchronously.
 
 Just as Azure Functions supports input bindings for various integration sources, it also has a set of output bindings templates to make it easy for you to write data to data sources. Output bindings are also configured in the *function.json* file. As you'll see in this exercise, we can configure our function to work with multiple data sources and services.
 
@@ -25,9 +25,9 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 1. In the left menu pane, under **Functions**, select **Functions**.
 
-1. In the top menu bar, select **Add**. The **Add function** pane appears.
+1. In the top menu bar, select **Create**. The **Create function** pane appears.
 
-1. The pane shows us the current set of supported triggers. Under the **Select a template** section, select **HTTP trigger**, and then select **Add**. The **HttpTrigger3** pane appears displaying a default implementation of your HTTP-triggered function. This action also opens the *index.js* file in the code editor.
+1. The pane shows us the current set of supported triggers. Under the **Select a template** section, select **HTTP trigger**, and then select **Create**. The **HttpTrigger3** pane for your function appears, showing a default implementation of your HTTP-triggered function.
 
 ::: zone-end
 
@@ -39,9 +39,9 @@ Just as Azure Functions supports input bindings for various integration sources,
 
 1. In the left menu pane, under **Functions**, select **Functions**.
 
-1. In the top menu bar, select **Add**. The **Add function** pane appears.
+1. In the top menu bar, select **Create**. The **Create function** pane appears.
 
-1. The pane shows us the current set of supported triggers. Under the **Select a template** section, select **HTTP trigger**, and then select **Add**. The **HttpTrigger3** pane appears displaying a default implementation of your HTTP-triggered function. This action also opens the *index.js* file in the code editor.
+1. The pane shows us the current set of supported triggers. Under the **Select a template** section, select **HTTP trigger**, and then select **Create**. The **HttpTrigger3** pane appears, showing a default implementation of your HTTP-triggered function.
 
 ::: zone-end
 
@@ -51,7 +51,7 @@ Let's repeat what we did in the preceding exercise to add another Azure Cosmos D
 
 1. Ensure your new function, **HttpTrigger3**, is selected.
 
-1. In the left menu pane, under **Developer**, select **Integration**. The **Integration** pane appears for your function.
+1. In the left menu pane, under **Developer**, select **Integration**. The **Integration** pane for your trigger associated with your function appears.
 
 1. To display the list of all possible input binding types, in the **Inputs** box, select **Add input**. The **Create Input** pane appears.
 
@@ -68,11 +68,6 @@ Let's repeat what we did in the preceding exercise to add another Azure Cosmos D
     1. When the **New Cosmos DB connection** dialog box appears, select **OK** to create the connection.
 
 1. Enter the following remaining values for each setting in this pane. At any time, to learn more about the purpose of each setting, you can select the information icon to its right.
-
-    > [!NOTE]
-    > Ensure you enter the following values precisely as documented here:
-    > - **Collection Name** = `Bookmarks` with a capital B
-    > - **Partition key** = `/id` (slash id; NOT curly brackets or any combination of curly brackets and slashes)
 
     | Setting | Value | Description |
     |---|---|---|
@@ -101,11 +96,6 @@ We now have an Azure Cosmos DB input binding. It's time to add an output binding
 
 1. Enter the following remaining values for each setting in this pane. At any time, to learn more about the purpose of each setting, you can select the information icon to its right.
 
-    > [!NOTE]
-    > Ensure you enter the following values precisely as documented here:
-    > - **Collection Name** = `Bookmarks` with a capital B
-    > - **Partition key** = `/id` (slash id; NOT curly brackets or any combination of curly brackets and slashes)
-
     | Setting | Value | Description |
     |---|---|---|
     | **Document parameter name** | `newbookmark` | The name used to identify this binding in your code. This parameter is used to write a new bookmark entry. |
@@ -119,11 +109,11 @@ Now we have a binding to read from our collection, and one to write to it.
 
 ## Add an Azure Queue Storage output binding
 
-Azure Queue storage is a service for storing messages that can be accessed from anywhere in the world. The size of a single message can be as much as 64 KB, and a queue can contain millions of messages - up to the total capacity of the storage account in which it is defined. The following diagram shows, at a high level, how a queue is used in our scenario:
+Azure Queue storage is a service for storing messages that can be accessed from anywhere in the world. The size of a single message can be as much as 64 KB, and a queue can contain millions of messages - up to the total capacity of the storage account in which it is defined. The following diagram shows, at a high level, how a queue is used in our scenario.
 
 ![Illustration showing a storage queue and two functions one pushing and the other popping messages onto the queue.](../media/7-q-logical-small.png)
 
-For example, here you can see that a function named **add-bookmark** adds messages to a queue, and another named **gen-qr-code** will pop messages from the same queue and process the request. Because we write, or *push*, messages to the queue from **add-bookmark**, we'll add a new output binding to your solution. Let's create the binding through the portal UI this time.
+For example, here you can see that a function named **add-bookmark** adds messages to a queue, and another named **gen-qr-code** will pop messages from the same queue, and process the request. Because we write, or *push* messages to the queue from **add-bookmark**, we'll add a new output binding to your solution. Let's create the binding through the portal this time.
 
 1. On the **Integration** pane for your function, in the **Outputs** box, select **Add output**. The **Create Output** pane appears displaying a list of all possible output binding types.
 
@@ -137,16 +127,16 @@ For example, here you can see that a function named **add-bookmark** adds messag
 
 1. When we started this module and you created your function app, a storage account was also created at that time. It's listed in this pane. You must select this storage account from the dropdown list.
 
-1. Select **OK**. The **Storage account connection** setting is populated with the name of a connection.
+1. Select **OK**. The Storage account connection setting is populated with the name of a connection.
 
-1. Although we could keep the default values in all the other settings, let's change the following values for each setting to lend more meaning to the properties:
+1. Although we could keep the default values in all the other settings, let's change the following values for each setting to lend more meaning to the properties. In the **Create Output** pane, enter the following new values for each setting. replacing the old values.
 
     | Setting | Old value | New value | Description |
     |---|---|---|---|
     | **Message parameter name** | outputQueueItem | newmessage | The binding property we'll use in code. |
     | **Queue name** | outqueue | bookmarks-post-process | The name of the queue where we're placing bookmarks so that they can be processed further by another function. |
 
-1. To save your changes, select **OK**.
+1. To save your changes, select **OK**. The **Storage account connection** setting is populated with the name of a connection.
 
 ## Update function implementation
 
@@ -158,7 +148,7 @@ We now have all our bindings set up for your function. It's time to use them in 
 
 1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your function.
 
-1. Replace all the code in the *index.js* file with the code from the following snippet, and then select **Save**.
+1. Replace all the code in the *index.js* file with the code from the following snippet, and in the top menu bar, select **Save**.
 
    [!code-javascript[](../code/add-bookmark.js)]
 
@@ -183,7 +173,9 @@ So, that's it. Let's see our work in action in the next section.
 
 1. To open the **run.ps1** file in the code editor, select your function, **HttpTrigger3**.
 
-1. Replace all the code in the *run.ps1* file with the code from the following snippet, and then select **Save**.
+1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your function.
+
+1. Replace all the code in the *run.ps1* file with the code from the following snippet, and in the top menu bar, select **Save**.
 
     ```powershell
     using namespace System.Net

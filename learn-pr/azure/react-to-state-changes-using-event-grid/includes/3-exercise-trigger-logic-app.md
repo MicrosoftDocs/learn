@@ -12,7 +12,7 @@ Let's start by creating a new virtual machine in the Azure portal.
 
 1. On the home page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Compute**, and then select **Virtual machine** from the *Featured* list. The **Create a virtual machine** pane appears.
+1. In the left menu pane, select **Compute**, and in the *Popular offers* list, select **Create**  under **Virtual machine**. The **Create a virtual machine** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -36,15 +36,15 @@ Let's start by creating a new virtual machine in the Azure portal.
 
 1. Select **Review and create**, and after validation passes, select **Create**.
 
-    Wait for deployment to complete, and then select **Go to resource**. Your virtual machine **Overview** pane for vm1 appears.
+    Wait for deployment to complete, and then select **Go to resource**. The virtual machine **Overview** pane for vm1 appears.
 
 ## Create a logic app
 
 The next step is to create the logic app that will run when a virtual machine change is detected. Let's create a blank logic app.
 
-1. Go back to the Azure portal **Home** page, and under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. In the top left, select **Home** to open **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Integration**, search for and select **Logic App (Consumption)**. The **Logic App (Consumption)** pane appears.
+1. In the left menu pane, select **Integration**, select **Logic App (Consumption)** from the Popular Offers in Marketplace. The **Logic App (Consumption)** pane appears.
 
 1. Select **Create**. The **Create a logic app** pane appears.
 
@@ -58,27 +58,26 @@ The next step is to create the logic app that will run when a virtual machine ch
     | **Instance details** |
     | Logic app name | Enter a name |
     | Region | Select a region near you |
+    | Associate with integration service environment | No checkmark |
     | Enable log analytics | No checkmark |
 
-1. Select **Review + create**, and then select **Create**.
+1. Select **Review + create**, and after validation passes, select **Create**.
 
 ## Add an Event Grid trigger to the logic app
 
-After your logic app is created, you add triggers for Event Grid events.
-
-1. After your deployment successfully completes, select **Go to resource**. The **Logic Apps Designer** pane appears.
+1. Wait for deployment to complete, and then select **Go to resource**. The **Logic Apps Designer** pane appears.
 
 1. Scroll down, and under **Templates**, select **Blank Logic App**.
 
-    ![Template for a blank logic app.](../media/3-choose-logic-app-template.png)
+    :::image type="content" source="../media/3-choose-logic-app-template.png" alt-text="Template for a blank logic app."::: 
 
 1. Within the designer, in the search box, enter **event grid** as your filter. From the list of triggers, select **When a resource event occurs**.
 
-    ![Selections for adding an Event Grid trigger.](../media/3-logic-app-event-grid-trigger.png)
+    :::image type="content" source="../media/3-logic-app-event-grid-trigger.png" alt-text="Selections for adding an Event Grid trigger.":::
 
-1. When you're prompted, sign in to the **Microsoft Learn Sandbox** organization by using your Azure account credentials.
+1. When prompted, sign in to the **Microsoft Learn Sandbox** organization using your Azure account credentials.
 
-1. Enter these values to subscribe your logic app to publisher events.
+1. On the Apps Designer in **When a resource event occurs** select the following values from the dropdown lists to subscribe your logic app to publisher events:
 
     | Field | Value |
     | --- | --- |
@@ -90,10 +89,10 @@ After your logic app is created, you add triggers for Event Grid events.
     | **Event Type Item - 3** | `Microsoft.Resources.ResourceWriteSuccess` |
     | | |
 
-    ![Trigger details.](../media/3-logic-app-event-grid-trigger-details.png)
+    :::image type="content" source="../media/3-logic-app-event-grid-trigger-details.png" alt-text="Trigger details.":::
 
-1. On the top menu bar, select **Save**.
+1. On **Logic Apps Designer** menu bar, select **Save**.
 
-    ![Save button.](../media/3-logic-app-event-grid-save.png)
+    :::image type="content" source="../media/3-logic-app-event-grid-save.png" alt-text="Save menu button.":::
 
-Your logic app is now ready and set up to be a subscriber to the events from Azure Event Grid.
+Your logic app is now ready and set up to be a subscriber to the events from the Azure Event Grid.

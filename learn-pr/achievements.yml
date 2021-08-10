@@ -602,3 +602,88 @@ achievements:
   title: Build Azure Resource Manager templates
   summary: Learn how Resource Manager templates express your deployments as code, enabling you to deploy faster and more reliably. 
   iconUrl: /learn/achievements/build-azure-vm-templates.svg
+- uid: learn.wwl.process-natural-language-azure-cognitive-language-services.trophy
+  type: trophy
+  title: Process natural language with Azure Cognitive Language Services
+  summary: Process natural language with Azure Cognitive Language Services
+  iconUrl: /learn/achievements/process-natural-language-with-azure-cognitive-language-services.svg
+- uid: learn.classify-user-feedback-with-the-text-analytics-api.badge
+  type: badge
+  title: Discover sentiment in text with the Text Analytics API
+  summary: Discover sentiment in text with the Text Analytics API
+  iconUrl: /learn/achievements/classify-user-feedback-with-the-text-analytics-api.svg
+- uid: learn.wwl.add-conversational-intelligence-luis.badge
+  type: badge
+  title: Add basic conversational intelligence to your apps by using Language Understanding Intelligent Service (LUIS)
+  summary: Add basic conversational intelligence to your apps by using Language Understanding Intelligent Service (LUIS)
+  iconUrl: /learn/achievements/add-conversational-intelligence-with-luis.svg
+- uid: learn.wwl.detect-language-text-analytics-api.badge
+  type: badge
+  title: Detect language with the text analytics API
+  summary: Detect language with the text analytics API
+  iconUrl: /learn/achievements/detect-language-with-the-text-analytics-api.svg
+- uid: learn.wwl.extract-key-phrases-text-analytics-api.badge
+  type: badge
+  title: Extract key phrases from text with the text analytics API
+  summary: Extract key phrases from text with the text analytics API
+  iconUrl: /learn/achievements/extract-key-phrases-from-text-with-the-text-analytics-api.svg
+- uid: learn.wwl.manage-language-understanding-intelligent-service-apps.badge
+  type: badge
+  title: Manage your Language Understanding Intelligent Service (LUIS) Apps
+  summary: Manage your Language Understanding Intelligent Service (LUIS) Apps
+  iconUrl: /learn/achievements/manage-your-language-understanding-intelligent-service-luis-apps.svg
+- uid: learn.wwl.recognize-entities-text-analytics-api.badge
+  type: badge
+  title: Recognize entities in text with the text analytics API
+  summary: Recognize entities in text with the text analytics API
+  iconUrl: /learn/achievements/recognize-entities-in-text-with-the-text-analytics-api.svg
+- uid: learn.wwl.use-containers-language-understanding-intelligent-service-apps.badge
+  type: badge
+  title: Use containers for your Language Understanding Intelligent Service (LUIS) Apps
+  summary: Use containers for your Language Understanding Intelligent Service (LUIS) Apps
+  iconUrl: /learn/achievements/use-containers-for-your-language-understanding-intelligent-service-luis-apps.svg
+- uid: learn.wwl.process-classify-images-with-azure-cognitive-vision-services.trophy
+  type: trophy
+  title: Process and classify images with the Azure cognitive vision services
+  summary: Process and classify images with the Azure cognitive vision services
+  iconUrl: /learn/achievements/process-and-classify-images-with-the-azure-cognitive-vision-services.svg
+- uid: learn.classify-images-with-custom-vision-services.badge
+  type: badge
+  title: Classify images with the Microsoft Custom Vision Service
+  summary: Classify images with the Microsoft Custom Vision Service
+  iconUrl: /learn/achievements/classify-images-with-custom-vision-service.svg
+- uid: learn.create-computer-vision-service.badge
+  type: badge
+  title: Process images with the Computer Vision service
+  summary: Process images with the Computer Vision service
+  iconUrl: /learn/achievements/create-computer-vision-service-to-classify-images.svg
+- uid: learn.data-ai.identify-faces-with-computer-vision.badge
+  type: badge
+  title: Identify faces and expressions by using the Computer Vision API in Azure Cognitive Services
+  summary: Identify faces and expressions by using the Computer Vision API in Azure Cognitive Services
+  iconUrl: /learn/achievements/data-ai/identify-faces-with-computer-vision.svg
+- uid: learn.wwl.evaluate-requirements-for-custom-computer-vision-api.badge
+  type: badge
+  title: Evaluate the requirements for implementing the Custom Vision APIs
+  summary: Evaluate the requirements for implementing the Custom Vision APIs
+  iconUrl: /learn/achievements/data-ai/evaluate-the-custom-computer-vision-apis.svg
+- uid: learn.wwl.extract-insights-from-videos-with-video-indexer-service.badge
+  type: badge
+  title: Extract insights from videos with the Video Indexer service
+  summary: Extract insights from videos with the Video Indexer service
+  iconUrl: /learn/achievements/extract-insights-from-videos-with-the-video-indexer-service.svg
+- uid: learn.data-ai.evaluate-text-with-language-services.trophy
+  type: trophy
+  title: Evaluate text with Azure Cognitive Language Services
+  summary: Learn how to use Cognitive Language Services to analyze text, determine intent, detect adult themes, and process natural language input.
+  iconUrl: /learn/achievements/data-ai/evaluate-text-with-language-services.svg
+- uid: learn.data-ai.create-bots-with-the-azure-bot-service.trophy
+  type: trophy
+  title: Create Intelligent Bots with the Azure Bot Service
+  summary: Allowing customers to interact with computer applications in a conversational way using text, graphics, or speech, can be realized using Bots. It may be a simple question and answer dialog, or a sophisticated bot that allows people to interact with services in an intelligent manner using pattern matching, state tracking and artificial intelligence techniques well integrated with existing business services. Learn how to build a chat bot and add intelligence to the Bot by integrating QnA Maker and LUIS.
+  iconUrl: /learn/achievements/data-ai/create-bots-with-the-azure-bot-service.svg
+- uid: learn.data-ai.create-and-publish-a-luis-model.badge
+  type: badge
+  title: Add conversational intelligence to your apps by using Language Understanding Intelligent Service (LUIS)
+  summary: In this module, we'll introduce you to Language Understanding Intelligent Service (LUIS) and show how to create a LUIS application.
+  iconUrl: /learn/achievements/data-ai/create-and-publish-a-luis-model.svg

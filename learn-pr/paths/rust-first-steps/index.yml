@@ -4,8 +4,8 @@ metadata:
   title: Take your first steps with Rust
   description: Interested in learning a new programming language that's growing in use and popularity? Start here! Lay the foundation of knowledge you need to build fast and effective programs in Rust.
   brand: azure
-  ms.date: 01/29/2021
-  author: meaghanlewis
+  ms.date: 07/26/2021
+  author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -32,7 +32,8 @@ roles:
 products:
 - vs-code
 modules:
-- learn.language.rust-get-started
+- learn.language.rust-introduction
+- learn.language.rust-set-up-environment
 - learn.language.rust-understand-common-concepts
 - learn.language.rust-error-handling
 - learn.languages.rust-memory-management

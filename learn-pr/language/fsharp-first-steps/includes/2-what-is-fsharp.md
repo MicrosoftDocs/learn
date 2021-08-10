@@ -15,9 +15,9 @@ F# has numerous features that include:
 
 There are many language features and aspects of the F# language that make it easy to be productive when writing code:
 
-- **Succinct:**: You write less code with F# that's also expressed in a clear manner.
+- **Succinct:** You write less code with F# that's also expressed in a clear manner.
 - **Performant:** F# comes with built-in parallelism and concurrency. It also uses the fact that it's part of the .NET runtime to speed things up.
-- **Robust:**  There are language constructs that makes the code fault tolerant and robust like immutable by default,  null value management and more.
+- **Robust:**  There are language constructs that make the code fault tolerant and robust like immutable by default,  null value management and more.
 - **Supports multiple programming paradigms:** F# lets you choose the patterns and practices most effective for solving problems by providing strong support for functional and object programming paradigms.
 
 ### Succinct
@@ -25,7 +25,7 @@ There are many language features and aspects of the F# language that make it eas
 Writing less code not only cuts down on your development time, but it also makes your code easier to read and test.
 
 - **Type inference**: As a result of its strong type system, the F# compiler is able to analyze your code and infer the data types you're working with without explicitly defining them.
-- **Lightweight syntax**: F# lets you be productive without writing too much boilerplate code. Its lightweight syntax let you focus on the core components of your application.
+- **Lightweight syntax**: F# lets you be productive without writing too much boilerplate code. Its lightweight syntax lets you focus on the core components of your application.
 
 ### Performant
 
@@ -45,7 +45,7 @@ Writing code that's unreliable can be costly. When you develop applications, you
 
 ### Supports multiple programming paradigms
 
-F# is about getting things done. With strong functional & object programming support, F# let's you choose which patterns and practices best solve your problem. Using its interactive programming & scripting environments, you can begin validating your ideas instantly.
+F# is about getting things done. With strong functional & object programming support, F# lets you choose which patterns and practices best solve your problem. Using its interactive programming & scripting environments, you can begin validating your ideas instantly.
 
 - **Strong functional & object programming support**: Regardless of the patterns you implement in your applications, with F# you don't have to choose because it provides strong support for both functional and object programming. 
 - **Interactive programming**: F# via F# Interactive provides scripting capabilities. Instead of compiling your code inside an F# project, you can get started writing and evaluating your code logic interactively via the console or through script files. For more visual environments such as when building visualizations, you can use tools like .NET notebooks via .NET Interactive.

@@ -65,15 +65,15 @@ Azure AD Connect Health for Active Directory Federation Services (AD FS) and Azu
 
 Azure AD Connect Health for Azure Active Directory Domain Services:
 
-5. Open the **Domain Controllers** dashboard.
+1. Open the **Domain Controllers** dashboard.
 
-6. Select the domain controller to be removed.
+2. Select the domain controller to be removed.
 
-7. From the action bar, click **Delete Selected**.
+3. From the action bar, click **Delete Selected**.
 
-8. Confirm the action to delete the server.
+4. Confirm the action to delete the server.
 
-9. Click **Delete**.
+5. Click **Delete**.
 
 ### Delete a service instance from Azure AD Connect Health service
 
@@ -104,7 +104,7 @@ When you're deleting a service instance, be aware of the following:
 
 ## Manage access with Azure Role Based Access Control
 
-[Azure role-based access control (Azure RBAC)](https://docs.microsoft.com/azure/role-based-access-control/role-assignments-portal) for Azure AD Connect Health provides access to users and groups other than global administrators. Azure RBAC assigns roles to the intended users and groups, and provides a mechanism to limit the global administrators within your directory.
+[Azure role-based access control (Azure RBAC)](/azure/role-based-access-control/role-assignments-portal) for Azure AD Connect Health provides access to users and groups other than global administrators. Azure RBAC assigns roles to the intended users and groups, and provides a mechanism to limit the global administrators within your directory.
 
 ### Roles
 
@@ -167,9 +167,9 @@ Now the listed users and groups have access, according to their assigned roles.
 
 **Step 3: Share the blade location with users or groups**
 
-7. After you assign permissions, a user can access Azure AD Connect Health by going [here](https://aka.ms/aadconnecthealth).
+1. After you assign permissions, a user can access Azure AD Connect Health by going [here](https://aka.ms/aadconnecthealth).
 
-8. On the blade, the user can pin the blade, or different parts of it, to the dashboard. Simply click the **Pin to dashboard** icon.
+2. On the blade, the user can pin the blade, or different parts of it, to the dashboard. Simply click the **Pin to dashboard** icon.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of Azure AD Connect Health and Azure RBAC pin blade, with pin icon highlighted](../media/role-based-access-control-pin-blade.png)
@@ -246,14 +246,14 @@ From the Azure portal, take a few steps to identify specific fixable scenarios:
 
 1. Check the **Diagnose status** column. The status shows if there's a possible way to fix a sync error directly from Azure Active Directory. In other words, a troubleshooting flow exists that can narrow down the error case and potentially fix it.
 
-| **Status**| **What does it mean?**|
-| :--- | :--- |
-| Not Started| You haven't visited this diagnosis process. Depending on the diagnostic result, there's a potential way to fix the sync error directly from the portal.|
-| Manual Fix Required| The error doesn't fit the criteria of available fixes from the portal. Either conflicting object types aren't users, or you already went through the diagnostic steps, and no fix resolution was available from the portal. In the latter case, a fix from the on-premises side is still one of the solutions. |
-| Pending Sync| A fix was applied. The portal is waiting for the next sync cycle to clear the error.|
+     | **Status**| **What does it mean?**|
+     | :--- | :--- |
+     | Not Started| You haven't visited this diagnosis process. Depending on the diagnostic result, there's a potential way to fix the sync error directly from the portal.|
+     | Manual Fix Required| The error doesn't fit the criteria of available fixes from the portal. Either conflicting object types aren't users, or you already went through the diagnostic steps, and no fix resolution was available from the portal. In the latter case, a fix from the on-premises side is still one of the solutions. |
+     | Pending Sync| A fix was applied. The portal is waiting for the next sync cycle to clear the error.|
 
-> [!IMPORTANT]
-> The diagnostic status column will reset after each sync cycle.
+     > [!IMPORTANT]
+     > The diagnostic status column will reset after each sync cycle.
 
 2. Select the **Diagnose** button under the error details. You'll answer a few questions and identify the sync error details. Answers to the questions help identify an orphaned object case.
 

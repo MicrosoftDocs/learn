@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.create-bots-azure-health-bot
+metadata:
+  title: Create intelligent health bots with Azure Health Bot
+  description: Learn how to create intelligent health bots with Azure Health Bot.
+  ms.date: 07/27/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create intelligent health bots with Azure Health Bot
+summary: |
+  Azure Health Bot enables users to build a health bot by using built-in or custom scenarios. The information that each instance of the Health Bot service handles is privacy protected to HIPAA standards. It also meets Microsoft's high standards for privacy and security.
+
+  The modules in this Learning path guide you through the creation of both a basic and enhanced health bot. You'll learn about language understanding and how to use both built-in and template scenarios.    
+prerequisites: |
+  - None
+iconUrl: /learn/achievements/create-bots-azure-health-bot.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- vs
+modules:
+- learn.health-bot-introduction
+- learn.health-bot-basic-bot
+- learn.health-bot-case-studies
+- learn.health-bot-language-understanding
+- learn.health-bot-built-in-scenarios
+- learn.health-bot-template-scenarios
+- learn.health-bot-enhanced
+- learn.health-bot-integrated-bot
+- learn.health-bot-channelized-bot
+trophy:
+  uid: learn.create-bots-azure-health-bot.trophy

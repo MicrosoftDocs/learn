@@ -1,89 +1,72 @@
+Every company is in a different place in its digital transformation journey and use of the cloud. In partnership with VMware, Microsoft has created Azure VMware Solution. It's a service that enables organizations to move VMware-based enterprise workloads from on-premises to Azure, deploy new virtual machines (VMs), and connect workloads directly to other Azure services.
 
-The Azure VMware Solution is an Azure service to redeploy and extend your VMware-based enterprise workloads to Azure. The solution is a VMware validated solution with on-going certification and testing of enhancements and upgrades.
+Azure VMware Solution combines VMware's Software-Defined Data Center (SDDC) software with the Azure global cloud service. It's a VMware-validated solution with ongoing certification and testing of enhancements and upgrades. 
 
-Microsoft provides the following services to run Azure VMware Solution at scale in Azure:
+Azure VMware Solution is managed by Microsoft to meet performance, availability, security, and compliance requirements. Microsoft provides the following components to run Azure VMware Solution at scale in Azure:
 
 - Management systems
 - Networking services
 - Operating platform
-- Backend infrastructure operations
+- Back-end infrastructure operations 
 
-## Move your VMware workloads to Azure
+The VMware vSphere clusters are built from bare-metal Azure hosts. These clusters are deployed and managed through the Azure portal, the Azure CLI, or PowerShell. All provisioned private clouds have standard supported versions of VMware vCenter Server, vSAN, vSphere, and NSX-T included and fully licensed. If you choose the service for your company, you can gain elasticity with the ability to add and remove capacity (compute and storage resources) on demand.
 
-Every company is in a different place when it comes to its digital transformation journey and use of the cloud.  In partnership with VMware, Microsoft has created the Azure VMware Solution. Azure VMware Solution combines VMware's Software-Defined Data Center (SDDC) software with Microsoft's Azure global cloud service. Gain continuity, scale, and fast provisioning for your VMware workloads on the global Azure infrastructure.
+The following diagram illustrates the relationship between private clouds and networks in Azure, Azure services, and on-premises environments.
 
-Azure VMware Solution is managed by Microsoft to meet performance, availability, security, and compliance requirements. Allowing you to focus on developing and running workloads that are critical to your business.
+:::image type="icon" source="../media/2-overview.png" border="false" alt-text="Diagram of Azure VMware Solution that shows the relationship between cloud and on-premises.":::
 
-The solution enables organizations to efficiently move existing VMware workloads to Azure. You can migrate workloads from your on-premises environments, deploy new virtual machines (VMs), and connect workloads directly to Azure services. 
+### Key features
+Azure VMware Solution provides a comprehensive VMware environment in Azure. It enables your organization to:
 
-The VMware vSphere clusters are built from bare-metal Azure hosts. These clusters are deployed and managed through the Azure portal, CLI, or PowerShell. All provisioned private clouds have standard supported versions of VMware vCenter Server, vSAN, vSphere, and NSX-T included and fully licensed. Gain elasticity with the ability to seamlessly add and remove capacity (compute and storage resources) on demand.
+- **Use existing VMware investments**: There's no need to reskill and learn new tools because the underlying products are the standard VMware vSphere and vCenter products. You can manage your VMware environments without the need to retrain staff or refactor the underlying hypervisors. 
 
-The diagram below illustrates the relationship between private clouds and networks in Azure, Azure services, and on-premises environments.
+- **Create operational consistency for admins**: Operational consistency is created for admins because you continue to use VMware for resources running on Azure, including vSphere Client and NSX-T Manager. Admins have direct access to VMware vSphere interfaces. The Azure portal is used only for deployment and management operations.
 
-:::image type="icon" source="../media/2-overview.png" border="false" alt-text="Diagram of Azure VMware Solution relationship between cloud and on-premises.":::
+- **Maintain operational consistency for the business**: The service can reduce change management and maintain operational consistency for the business. You can use all of your organization's existing investments in:
+  - Training
+  - Process management
+  - Change management
+  - Tooling
 
-### Key features of Azure VMware Solution
-Azure VMware Solution provides a comprehensive VMware environment in Azure. Migrating to Azure VMware Solution include the following key features listed below.
+   You can accelerate migration and minimize downtime by using the latest HCX Enterprise functionality for large-scale, live migration from on-premises to Azure.
 
-**Use your existing VMware investments:** No need to reskill and learn new tools because the underlying product is the standard VMware vSphere and vCenter products. Manage your VMware environments without the need to retrain staff or refactor the underlying hypervisors. 
+- **Have a single point of support**: Azure VMware Solution is Microsoft developed, operated, and supported. Microsoft is the first and only contact and coordinates support with VMware as required.
 
-**Create operational consistency for admins:** Operational consistency is created for admins as you continue to use VMware for resources running on Azure, including vSphere Client and NSX-T Manager. Admins have direct administrative access to VMware vSphere interfaces. The Azure portal is used only for deployment and management operations.
+- **Avoid licensing complexity**: You work with a single vendor for licensing and resource consumption. You can track VMware licensing directly with resource nodes as they're deployed and decommissioned.
 
-**Maintain operational consistency for the business:** Reduce change management and maintain operational consistency for the business. You can use all of your existing investments:
-- Training
-- Process management
-- Change management
-- Tooling
-
-Accelerate migration and minimize downtime using the latest HCX Enterprise functionality for large scale, live migration from on-premises to Azure.
-
-**Single Point of Support :** Azure VMware Solution is Microsoft developed, operated, and supported. Microsoft is the first and only contact and coordinates support with VMware as required.
-
-### Unique benefits of Azure VMware Solution
-Benefits that are unique to migrating to Azure VMware Solution include the following benefits:
-
-**Unified Licensing and Consumption :** Avoid licensing complexity by working with a single vendor for licensing and resource consumption. Track your VMware licensing directly with resource nodes as they're deployed and decommissioned.
-
-**Azure Hybrid Use Benefits :** Maximize the value of existing Windows Server and SQL Server licenses. Use Azure Hybrid Benefit for both Windows Server and SQL Server. Azure Hybrid Benefit allows you to bring your existing licenses to Azure and greatly reduce costs. Save up to 80% with Azure Hybrid Benefit and Azure Reserved Instances.
-
-**Free Extended Security Updates**: Get Extended Security Updates at no extra charge for three years on all your Windows Server 2008/R2 and SQL Server 2008/R2 workloads on Azure VMware Solutions.
+- **Maximize the value of existing Windows Server and SQL Server licenses**: You can use Azure Hybrid Benefit for both Windows Server and SQL Server to bring existing licenses to Azure and reduce costs.
 
 ### Integration with native Azure services
 
-Azure VMware Solution gives customers options when migrating to the cloud. Modernize applications running on VMware overtime through integration to Azure native management, security, and services. Admins develop cloud skills overtime as they become familiar with Azure.
+Azure VMware Solution gives customers options for migrating their VMware environment to the cloud at their own pace. Admins use a single Azure portal interface with no connection to any third-party services. They develop cloud skills over time as they become familiar with Azure.
 
-Azure VMware Solution allows the business to move to the cloud at the pace they're comfortable with. Admins get a seamless Azure experience with a single Azure portal interface with no connection to any third-party services.
+Native Azure tools and services like the following ones allow you to monitor and manage VMs in the Azure environment. You can use those same tools and services to monitor and manage VMs on Azure VMware Solution and on-premises VMs.
 
-Once your VMware environment is on Azure, all Azure services can be accessed. Some of the integrations you could use within your Azure VMware Solution environment are described below.
-
-:::image type="icon" source="../media/2-integration-overview.png" border="false" alt-text="Diagram showing some of the integration services available for Azure VMware Solution.":::
+:::image type="icon" source="../media/2-integration-overview.png" border="false" alt-text="Diagram that shows some of the integration services available for Azure VMware Solution.":::
 
 
 |Integration  |Description  |
 |---------|---------|
-|**Azure Active Directory**     |   Use Azure Active Directory as the VMware vCenter SSO identity source.      |
-|**Log Analytics workspace**     | Log Analytics workspace is a unique environment to store log data. Each workspace has its own data repository and configuration. Data sources and solutions are configured to store their data in a specific workspace. Once the solution is deployed into your subscription, Azure Monitor logs are generated automatically.        |
-|**Azure Security Center**     | Azure Security Center is a unified infrastructure security management system. It strengthens security of data centers, and provides advanced threat protection across hybrid workloads in the cloud or on premises.        |
-|**Azure Sentinel**    |  Azure Sentinel is a cloud-native, security information event management (SIEM) solution. It provides security analytics, alert detection, and automated threat response across an environment.       |
-|**Azure NetApp Files**    | Azure NetApp Files shares can be mounted from VMs that are created in the Azure VMware Solution environment. Azure NetApp Files supports Server Message Block (SMB) and Network File System (NFS) protocols. This support means the volumes can be mounted on the Linux client and can be mapped on Windows client.   |
-|**Azure Backup Server**     |   Use Azure Backup Server to back up VMware VMs running on VMware ESXi hosts/vCenter Server to Azure.      |
-|**Monitor and manage VMs**     | Microsoft Azure native tools allow you to monitor and manage your virtual machines (VMs) in the Azure environment. Yet they also allow you to monitor and manage your VMs on Azure VMware Solution and your on-premises VMs.        |
-|**Azure Application Gateway**    | Protect web apps on Azure VMware Solution with Azure Application Gateway. Azure Application Gateway is a layer 7 web traffic load balancer that lets you manage traffic to your web applications.    |
-|**Azure Traffic Manager**    |  Deploy Traffic Manager to balance Azure VMware Solution workloads. The integration balances application workloads across multiple endpoints       |
-
-As the Azure VMware Solution continues to advance and mature, more Azure integrations will be added to the offering.
+|**Azure Active Directory**     |   You can use Azure Active Directory as the VMware vCenter SSO identity source.      |
+|**Log Analytics workspace**     | A Log Analytics workspace in Azure Monitor is a unique environment to store log data. Each workspace has its own data repository and configuration. Data sources and solutions are configured to store their data in a specific workspace. After the solution is deployed into a subscription, Azure Monitor logs are generated automatically.        |
+|**Azure Security Center**     | Azure Security Center is a unified security management system for infrastructure. It strengthens the security of datacenters, and it provides advanced threat protection across hybrid workloads in the cloud or on-premises.        |
+|**Azure Sentinel**    |  Azure Sentinel is a cloud-native security information and event management (SIEM) solution. It provides security analytics, alert detection, and automated threat response across an environment.       |
+|**Azure NetApp Files**    | Azure NetApp Files shares can be mounted from VMs that are created in the Azure VMware Solution environment. Azure NetApp Files supports Server Message Block (SMB) and Network File System (NFS) protocols. This support means the volumes can be mounted on the Linux client and can be mapped on a Windows client.   |
+|**Azure Backup Server**     |   You can use Azure Backup Server to back up VMware VMs running on VMware ESXi hosts or vCenter Server to Azure.      |
+|**Azure Application Gateway**    | You can help protect web apps on Azure VMware Solution by using Azure Application Gateway. It's a layer-7 load balancer that enables the management of traffic to web applications.    |
+|**Azure Traffic Manager**    |  You can deploy Traffic Manager to balance Azure VMware Solution workloads. The integration balances application workloads across multiple endpoints.       |
 
 ### Continuity of operations
-Azure VMware Solution provides application high availability and modernization with well-managed Azure infrastructure designed for end-to-end high availability. The solution has built in redundancy with no single point of failure. 
+Azure VMware Solution provides application high availability and modernization with well-managed Azure infrastructure designed for end-to-end high availability. The service has built-in redundancy with no single point of failure. 
 
-With Azure VMware Solution, you can deploy VMware resources on Azure for a primary or secondary on-demand recovery site to provide business continuity for your existing on-premises datacenter resources.
+With Azure VMware Solution, you can deploy VMware resources on Azure for a primary or secondary on-demand recovery site to provide business continuity for on-premises datacenter resources.
 
 ### Billing
-There are three different ways that Azure VMware Solution can be billed and charged. Customers have the flexibility to change billing based on their business needs.
+Azure VMware Solution can be billed and charged in the following three ways. Customers have the flexibility to change billing based on their business needs.
 
-|Hourly (PAYG)  |1-Year Reserved Instance  |3-Year Reserved Instance  |
+|Hourly (pay as you go)  |1-Year Reserved Instance  |3-Year Reserved Instance  |
 |---------|---------|---------|
-|On demand     | Reserved capacity for 1 year       |  Reserved capacity for 3 years       |
+|On demand     | Reserved capacity for one year       |  Reserved capacity for three years       |
 | Typically used for bursting <br><br> Initial deployments    | Used for major projects <br><br> Known usage patterns     |  Used with datacenter exit scenarios <br><br> Long-term business strategy      |
 |    |         |         |
 

@@ -10,7 +10,7 @@ Network security groups are assigned to a network interface or a subnet. When yo
 
 When you apply network security groups to both a subnet and a network interface, each network security group is evaluated independently. Inbound traffic is first evaluated by the network security group applied to the subnet, and then by the network security group applied to the network interface. Conversely, outbound traffic from a VM is first evaluated by the network security group applied to the network interface, and then by the network security group applied to the subnet.
 
-![Diagram of network security groups.](../media/2-nsg1.svg)
+![Diagram of network security groups.](../media/2-nsg1.png)
 
 Applying a network security group to a subnet instead of individual network interfaces can reduce administration and management efforts. This approach also ensures that all VMs within the specified subnet are secured with the same set of rules.
 

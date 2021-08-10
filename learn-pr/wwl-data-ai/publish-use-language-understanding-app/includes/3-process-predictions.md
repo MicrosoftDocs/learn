@@ -9,7 +9,7 @@ Regardless of the approach used, requests for predictions are sent to a publishe
 
 ## Prediction results
 
-The prediction results consist of a hierarchy of information that you application must parse. When using the REST interface, the results are in JSON form. SDKs present the results as an object hierarchy based on the underlying JSON.
+The prediction results consist of a hierarchy of information that your application must parse. When using the REST interface, the results are in JSON form. SDKs present the results as an object hierarchy based on the underlying JSON.
 
 A typical response might look similar to this:
 

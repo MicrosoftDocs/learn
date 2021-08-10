@@ -12,7 +12,7 @@ The .NET SDK is free and cross-platform, which means you can install it on Windo
 
 ## Visual Studio Code
 
-You can use any text editor to write F# code. However, Visual Studio Code is an free, open-source, and cross-platform that is lightweight but also offers the following features to take your development workflow to the next level:
+You can use any text editor to write F# code. However, Visual Studio Code is a free, open-source, and cross-platform text editor that is lightweight but also offers the following features to take your development workflow to the next level:
 
 - **Debugging:** Visual Studio Code's built-in debugger helps accelerate your edit, compile and debug loop.
 - **Version control:** Visual Studio Code has integrated source control management (SCM) and includes Git support built-in to help you keep track of your code as it changes.

@@ -14,7 +14,7 @@ When the bot clearly communicates its goal, the user is discouraged from engagin
 
 ## Tell users they're talking to a bot
 
-From the start of the conversation, make it clear that the user is talking to a bot and not a human being. This approach helps the user to focus on solving a specific task. The user is less likely to expect emotional support. The bot should recognize some traditional phrases for greetings and endings of a conversation. General conversation can be implemented by using [Project Personality Chat][PersonalityChat]. We'll use this project later to enhance our **GeoFriend** bot.
+From the start of the conversation, make it clear that the user is talking to a bot and not a human being. This approach helps the user to focus on solving a specific task. The user is less likely to expect emotional support. The bot should recognize some traditional phrases for greetings and endings of a conversation. General conversation can be implemented by [Adding chit-chat to a knowledge base][AddChitChat]. We'll use the information in that article to enhance our **GeoFriend** bot.
 
 ## Build trust with the user
 
@@ -23,27 +23,28 @@ There are some useful tactics you can use to build trust between your user and t
 - **Clear introduction**: Clearly introduce the bot as a technology assistant at the beginning of the conversation.
 - **Robot picture**: Use a picture of a robot instead of a human face. The picture reminds users "who" they're talking to.
 - **Human hand-off**: Configure the bot to support _handoff to a human operator_. A common scenario is to use a bot dialog to collect initial information from the user. The information and conversation is then _handed off_ to an operator to make expert decisions and provide problem-solving. This structure delegates tedious tasks to the bot and leaves the most creative part to a human operator.
-- **Respect privacy**: Follow standard safe practices for collecting and handling personal information from the use. Collect only information that's relevant to solving the problem.
+- **Respect privacy**: Follow standard safe practices for collecting and handling personal information from the user. Collect only information that's relevant to solving the problem.
 
 ## Support diversity and accessibility
 
-A complex problem in AI is how to ensure fair and unbiased treatment for your users. This issue is addressed by [responsible AI][RespAI] principles.
+A complex problem in AI is how to ensure fair and unbiased treatment for your users. This issue is addressed by [responsible AI][ResponsibleAI] principles.
 
 One way you can avoid bias is to include _diversity_ in all stages of bot development. When you include different genders and nationalities on your development team, you achieve stronger support for diversity.
 
 Bots become accessible to a diverse audience when you support different languages. This task can be simplified with the [Azure Cognitive Services Translator Text API][TranslatorAPI]. You can use the API for automatic translation of incoming and outgoing messages, and to automatically [detect a user's language][LangDetect].
 
-_Cultural norms_ are important to consider when designing your bot. Some cultures use an informal tone, while others use more formal communication. Try to design your bot so it can adjust the conversational style to meet the culture. Project Personality Chat supports three conversational styles.
+_Cultural norms_ are important to consider when designing your bot. Some cultures use an informal tone, while others use more formal communication. Try to design your bot so it can adjust the conversational style to meet the culture. In this lesson, we'll add support for multiple conversational styles.
 
-Build _accessibility practices_ into your bot to broaden the potential audience. When you include _speech support_, you make the bot usable for visually impaired users. Your bot also becomes more attractive to users who don't want to type.
+Build _accessibility practices_ into your bot to broaden the potential audience. When you include _speech support_, you make the bot usable for users with visual impairment. Your bot also becomes more attractive to users who don't want to type.
 
-Now that we know some of the main principles for building responsible bots, let's apply them as we build a simple Geography assistant bot.
+Now that we know some of the main principles for building responsible bots, let's apply them as we build a simple geography assistant bot.
+
 
 <!-- Links -->
 
-[Guidelines10]: https://www.microsoft.com/research/publication/responsible-bots/
+[AddChitChat]: https://docs.microsoft.com/azure/cognitive-services/qnamaker/how-to/chit-chat-knowledge-base?tabs=v1?azure-portal=true
+[Guidelines10]: https://www.microsoft.com/research/publication/responsible-bots/?azure-portal=true
 [InteractiveDemo]: https://aidemos.microsoft.com/responsible-conversational-ai/building-a-trustworthy-bot?azure-portal=true
-[PersonalityChat]: https://azure.microsoft.com/resources/videos/build-2019-microsoft-research-apis---project-personality-chat-in-action/
-[RespAI]: https://www.microsoft.com/ai/responsible-ai
-[TranslatorAPI]: https://azure.microsoft.com/services/cognitive-services/translator-text-api/
-[LangDetect]: /azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection
+[LangDetect]: https://docs.microsoft.com/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-language-detection?azure-portal=true
+[ResponsibleAI]: https://www.microsoft.com/ai/responsible-ai?azure-portal=true
+[TranslatorAPI]: https://azure.microsoft.com/services/cognitive-services/translator-text-api/?azure-portal=true
