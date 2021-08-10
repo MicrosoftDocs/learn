@@ -13,7 +13,7 @@ The convert phase consists of two steps:
 1. Capture a JSON representation of your Azure resources.
 2. Convert the JSON representation to Bicep using the _decompile_ command.
 
-:::image type="content" source="../media/2-convert.png" alt-text="Diagram of converting a template to Bicep." border="false":::
+:::image type="content" source="../media/2-convert.png" alt-text="Diagram that shows a JSON template decompiled to JSON, and Azure resources that are exported to a JSON template, which is then decompiled." border="false":::
 
 If you have an existing JSON template that you're converting to Bicep, the first step is easy - you already have your source template. You'll learn how to decompile it to Bicep shortly.
 
@@ -23,7 +23,7 @@ If you're converting Azure resources deployed through the portal or another tool
 
 Azure Resource Manager is the service that's used to deploy and manage resources in Azure. All resources deployed to Azure are tracked by Resource Manager, regardless of the method used to deploy the resource. You can use the Azure portal, Azure CLI, Azure PowerShell, the Resource Manager REST API, and Azure SDKs to interact with Resource Manager.
 
-:::image type="content" source="../media/2-azure-resource-manager.png" alt-text="Diagram showing Azure Resource Manager accepting requests from all Azure clients and libraries." border="false":::
+:::image type="content" source="../../includes/media/azure-resource-manager.png" alt-text="Diagram showing Azure Resource Manager accepting requests from all Azure clients and libraries." border="false":::
 
 Regardless of how each resource was created, information about the resource is made available in JSON format by Resource Manager. When you ask for a copy of the JSON representation of a resource, you're _exporting_ the resource. The JSON file that you export can be decompiled into Bicep.
 
@@ -50,7 +50,7 @@ There are a few things that you need to consider when exporting a resource:
 
 A single resource's definition can be exported to a JSON template by using the Azure portal. After you open a resource, select the **Export template** menu item to view the template:
 
-TODO: screenshot
+:::image type="content" source="../media/2-export-single-resource.png" alt-text="Screenshot of the Azure portal showing a storage account, with the Export template menu item highlighted.":::
 
 ::: zone pivot="cli"
 
@@ -90,7 +90,7 @@ Export-AzResourceGroup `
 
 You can export all of the resources in a resource group by using the Azure portal by opening up the resource group blade and selecting **Export template**:
 
-TODO: screenshot
+:::image type="content" source="../media/2-export-resource-group.png" alt-text="Screenshot of the Azure portal showing a resource group, with the Export template menu item highlighted.":::
 
 ::: zone pivot="cli"
 
@@ -112,9 +112,9 @@ Export-AzResourceGroup -ResourceGroupName 'rg-app-prod-truckline'
 
 ::: zone-end
 
-Sometimes, you might want to export multiple resources from a resource group, but not everything. In the resource group view, check the resources you want to export, and then select **Export template**:
+Sometimes, you might want to export multiple resources from a resource group, but not everything. In the resource group view, check the resources you want to export, and then select the **Export template** menu item:
 
-TODO: screenshot
+:::image type="content" source="../media/2-export-multiple-resources.png" alt-text="Screenshot of the Azure portal showing a resource group, with two resources checked and the Export template menu item highlighted.":::
 
 ::: zone pivot="cli"
 
@@ -144,7 +144,7 @@ Export-AzResourceGroup `
 
 If you've ever deployed a resource manually from the Azure portal, you may have noticed the option to **Download a template for automation** before the deployment of the resource. This option exports a JSON ARM template based on the names and properties you've set while building the resource in the portal:
 
-:::image type="content" source="../media/4-download-template-for-automation.png" alt-text="Download template for automation option when deploying a new resource." border="true":::
+:::image type="content" source="../media/2-download-template-automation.png" alt-text="Screenshot of the Azure portal showing the deployment of a new resource, with the 'Download template for automation' button highlighted." border="true":::
 
 #### View the template for a previous deployment
 
@@ -165,7 +165,7 @@ There are a few things that you need to consider when exporting your templates u
 
 To view a deployment and its template from the Azure portal, open a resource group and select **Deployments**, then select the deployment you want to export. Select **Template** to view and copy the template.
 
-TODO: screenshot
+:::image type="content" source="../media/2-deployment-template.png" alt-text="Screenshot of the Azure portal showing a resource group deployment, with the Template menu item highlighted.":::
 
 ::: zone pivot="cli"
 
@@ -223,13 +223,13 @@ For any resource that wasn't exported, such as virtual machine extensions, you'l
 
 [Azure Resource Explorer](/azure/azure-resource-manager/templates/view-resources#use-resource-explorer) is a tool embedded into the Azure portal that allows you to view a JSON representation of your deployed resources. The portal doesn't show certain resource types, but Resource Explorer can provide a JSON representation of those resources. You can find Resource Explorer in the Azure portal by searching for the tool in the search bar as shown below:
 
-:::image type="content" source="../media/2-resource-explorer-1.png" alt-text="A screenshot of the Resource Explorer from the Azure portal." border="true":::
+:::image type="content" source="../media/2-resource-explorer-1.png" alt-text="Screenshot of Azure portal showing the search box with 'resource explorer' entered.":::
 
 Once you are in the tool, expand the hierarchy on the left-hand side of the screen. This is a list of the registered resource providers for your subscription, and details of any resource, resource group, and subscription that you have permission to view. Drill down to a specific resource to view its JSON representation as shown below:
 
-:::image type="content" source="../media/2-resource-explorer-2.png" alt-text="A screenshot of the Azure Resource Explorer from the Azure portal." border="true":::
+:::image type="content" source="../media/2-resource-explorer-2.png" alt-text="Screenshot of the Azure portal showing the Azure Resource Explorer." border="true":::
 
-By clicking on the `DependencyAgentWindows` resource, `[Microsoft.Compute/virtualMachines/extensions] vm-prod-001/DependencyAgentWindows`, you can view the JSON representation as shown below:
+By selecting a resource, you can view the JSON representation, like in this example:
 
 ```json
 {
