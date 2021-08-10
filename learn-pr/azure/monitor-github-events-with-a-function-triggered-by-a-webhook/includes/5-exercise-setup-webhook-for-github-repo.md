@@ -1,4 +1,4 @@
-In this exercise, you'll set up a webhook for a GitHub repository. You'll learn how to listen for specific events, (in this case, the *Gollum* event), and how to make your webhook callback to your function when the event is triggered.
+In this exercise, you'll set up a webhook for a GitHub repository. You'll learn how to listen for specific events (in this case, the *Gollum* event), and how to make your webhook callback to your function when the event is triggered.
 
 ## Setup
 
@@ -32,7 +32,7 @@ The **Gollum** event is the name of the event in GitHub that is fired whenever a
 
 1. Select **Add webhook** on the top-right. You may have to confirm your password for GitHub.
 
-1. In the **Payload URL** field enter the Function URL for your Azure function app from the previous exercise. Remember that it looks similar to this:
+1. In the **Payload URL** field, enter the Function URL for your Azure function app from the previous exercise. Your URL looks similar to:
 
     ```text
     https://<your-functionapp-name>.azurewebsites.net/api/HttpTrigger1?code=aUjXIpqdJ0ZHPQuB0SzFegxGJu0nAXmsQBnmkCpJ6RYxleRaoxJ8cQ==
