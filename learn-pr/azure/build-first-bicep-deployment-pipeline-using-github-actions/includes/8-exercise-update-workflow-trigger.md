@@ -98,3 +98,27 @@ You speak to your colleague about the failed deployment. Together, you decide th
    :::image type="content" source="../media/8-success.png" alt-text="Screenshot of the GitHub interface showing the successful workflow run." border="true":::
 
    The workflow shows a successful deployment. It succeeded this time because you used a valid Bicep file.
+
+## Clean up the resources
+
+Now that you've completed the exercise, you can remove the resources so you aren't billed for them.
+
+In the Visual Studio Code **Terminal**, run the following command:
+
+::: zone pivot="cli"
+
+```azurecli
+az group delete --resource-group ToyWebsite --yes --no-wait
+```
+
+The resource group is deleted in the background.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+```azurepowershell
+Remove-AzResourceGroup -Name ToyWebsite -Force
+```
+
+::: zone-end
