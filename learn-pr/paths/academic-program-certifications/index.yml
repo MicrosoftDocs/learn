@@ -31,5 +31,6 @@ products:
 - azure
 modules:
 - learn.student-evangelism.academic-program-certifications-define-requirements
+- learn.student-evangelism.academic-program-certifications-prepare-program-approval
 trophy:
   uid: learn.academic-program-certifications.trophy
