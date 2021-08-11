@@ -33,5 +33,6 @@ modules:
 - learn.student-evangelism.academic-program-certifications-define-requirements
 - learn.student-evangelism.academic-program-certifications-design-program-curricula
 - learn.student-evangelism.academic-program-certifications-prepare-program-approval
+- learn.student-evangelism.academic-program-certifications-design-program-launch
 trophy:
   uid: learn.academic-program-certifications.trophy
