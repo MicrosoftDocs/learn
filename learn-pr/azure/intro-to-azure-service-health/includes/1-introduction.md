@@ -14,7 +14,7 @@ A cloud environment is composed by different services distributed among geograph
 
 Datacenters requires planned maintenances, hardware upgrades, failover-tests and much more to improve their resiliency. So how can you be aware about the health of Azure Services within datacenters? Azure Service Health is your answer. It provides a personalized view of the status of your Azure services and regions, includes information about planned maintenance and current incidents, and offers richer functionality, including alerting, health advisories and root cause analysis. 
 
-
+:::image type="content" source="../media/1-azure-service-health.png" alt-text="Screenshot of Azure Service Health":::
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
@@ -27,10 +27,11 @@ Datacenters requires planned maintenances, hardware upgrades, failover-tests and
     Recommended: an image that visualizes the scenario
 
     [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
- -->
+
 ## Example scenario
 TODO: add your scenario
 TODO: add your image
+ -->
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
@@ -45,7 +46,7 @@ TODO: add your image
 
  -->
 ## What will we be doing?
-TODO: add your activities
+We'll evaluate what kind of information is available from Azure Service Health to understand about the health of your cloud resources.
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
@@ -61,6 +62,6 @@ TODO: add your activities
 
  -->
 ## What is the main goal?
-By the end of this session, you'll be able to (TODO)
+By the end of this session, you'll be able use Azure Service Health to be aware on service issues, planned maintenance, health, and security advisories related with your resources besides to learn how to create health alerts.
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
