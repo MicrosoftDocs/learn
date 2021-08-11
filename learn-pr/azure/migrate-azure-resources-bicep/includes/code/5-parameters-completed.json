@@ -12,10 +12,10 @@
         "value": "toytruckadmin"
     },
     "virtualNetworkAddressPrefix": {
-        "value": "YOUR-VIRTUAL-NETWORK-ADDRESS-PREFIX"
+        "value": "10.0.0.0/16"
     },
     "virtualNetworkDefaultSubnetAddressPrefix": {
-        "value": "YOUR-SUBNET-ADDRESS-PREFIX"
+        "value": "10.0.0.0/24"
     }
   }
 }
