@@ -5,7 +5,7 @@ In this exercise, you'll:
 > [!div class="checklist"]
 > * Add a Bicep file to your repository.
 > * Add a pipeline step to deploy your Bicep file.
-> * Run your pipeline again and verify that it successfully deployed an update to your website.
+> * Run your pipeline again and verify that it successfully deployed your website.
 
 ## Add your website's Bicep file to the Git repository
 
