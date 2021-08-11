@@ -11,13 +11,9 @@ In this exercise, you'll:
 
 1. In a browser, go to [GitHub](https://www.github.com?azure-portal=true). Sign in by using your GitHub account, or create a new account if you don't have one.
 
-1. Select the **Repositories** tab.
+1. Select the **+** icon in the upper right of the window, and then select **New repository**.
 
-   :::image type="content" source="../media/3-github-repositories.png" alt-text="Screenshot of the GitHub interface showing the repositories tab." border="true":::
-
-1. Select the **New** button.
-
-   :::image type="content" source="../media/3-github-repository-new.png" alt-text="Screenshot of the GitHub interface showing the new repository button." border="true":::
+   :::image type="content" source="../media/3-github-new-repository-menu.png" alt-text="Screenshot of the GitHub interface that shows the menu for creating a new repository." border="true":::
 
 1. Enter the details of your new repository:
 
@@ -64,15 +60,19 @@ When you work with Azure Repos in Visual Studio Code on macOS, you use a special
 
 In Visual Studio Code, clone your repository.
 
-1. On the repository page, select the clipboard icon.
+1. On the repository page, select the copy button to copy the URL to your Git repository.
 
-   :::image type="content" source="../media/3-github-repository-new-clipboard.png" alt-text="Screenshot of the GitHub interface showing the new empty repository, with clipboard button highlighted." border="true":::
+   :::image type="content" source="../media/3-github-repository-new-clipboard.png" alt-text="Screenshot of the GitHub interface showing the new empty repository, with the repository URL copy button highlighted." border="true":::
 
 1. Open Visual Studio Code. 
 
 1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
 
-1. navigate in the terminal to the directory where you want to clone the GitHub repository on your local computer. 
+1. Navigate in the terminal to the directory where you want to clone the GitHub repository on your local computer. For example, to clone the repository to the _toy-website-workflow_ folder, run the following command:
+
+   ```bash
+   cd toy-website-workflow
+   ```
 
 1. Type `git clone` and then paste the URL you copied earlier, which looks something like this:
 
@@ -82,11 +82,15 @@ In Visual Studio Code, clone your repository.
 
 1. This is the first time you've used this repository, so you are prompted to sign in.
 
-   Enter your GitHub username. When prompted for a password, enter the Personal Access Token you created above. <!-- TODO test on Windows and macOS -->
+   Enter <kbd>1</kbd> to authenticate using a web browser, and select <kbd>Enter</kbd>.
 
-1. Visual Studio Code prompts you to open the repository location. Select **Open**.
+   A browser window appears. Select **Authorize**.
 
-   :::image type="content" source="../media/3-open-cloned-repo.png" alt-text="Screenshot of the Visual Studio Code interface with a prompt to open the cloned repository, and the Open button highlighted." border="true":::
+1. Reopen Visual Studio Code in the repository by running the following command:
+
+   ```bash
+   code -r toy-website-workflow
+   ```
 
 > [!TIP]
 > You can also edit your GitHub Actions workflow definitions by using the GitHub web user interface. When you open a workflow definition, GitHub helps you with YAML file syntax and indentation, and provides example code snippets for the actions you might want to use. In this module, you work with the definition file in Visual Studio Code, but you can explore the GitHub editor to see how it works.
@@ -105,7 +109,7 @@ Now that you've created and cloned your repository, you're ready to create a bas
 
 1. In the *workflows* folder, create a new file named *workflow.yml*.
 
-   :::image type="content" source="../media/3-vs-code-workflow-file.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the .github/workflows folder and the workflow.yml file shown." border="true":::
+   :::image type="content" source="../media/3-visual-studio-code-workflow-file.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the .github/workflows folder and the workflow.yml file shown." border="true":::
 
 1. Copy the following workflow definition into the file: 
 
@@ -150,15 +154,15 @@ You have created a workflow definition. GitHub Actions automatically detects you
 
 ## Verify the workflow run
 
-1. Once the workflow run starts, select the run to view the run's details.
+1. Once the workflow run starts, select the run to view the run's details. Refresh the page until the job status displays **Success**.
 
-   :::image type="content" source="../media/3-workflow-running-click.png" alt-text="Screenshot of the GitHub interface showing the Actions tab, with the run highlighted." border="true":::
-
-1. Refresh the page until the job status changes to **Success**. Then, select the **say-hello Job**.
-
-   :::image type="content" source="../media/3-workflow-run-success.png" alt-text="Screenshot of the GitHub interface showing the workflow run detail, with the job in the success state and the job name highlighted." border="true":::
+   :::image type="content" source="../media/3-workflow-run-details.png" alt-text="Screenshot of the GitHub interface showing the details of the run, with the status and commit identifier highlighted." border="true":::
 
    Also, notice the page includes an identifier for the Git commit that the run used. This indicates the version of your repository's content that the workflow used.
+
+1. In the list of jobs, select **say-hello**.
+
+   :::image type="content" source="../media/3-workflow-run-job-list.png" alt-text="Screenshot of the GitHub interface showing the run details menu, with the say-hello job highlighted." border="true":::
 
 1. The job information page is displayed, which shows the log of the steps that the workflow ran for you. Notice that your **Placeholder step** is included.
 
@@ -168,7 +172,7 @@ You have created a workflow definition. GitHub Actions automatically detects you
 
 1. Select the **Placeholder step** step.
 
-   :::image type="content" source="../media/3-workflow-run-placeholder-log.png" alt-text="Screenshot of the GitHub interface showing the workflow run log, with the 'Placeholder step' highlighted." border="true":::
+   :::image type="content" source="../media/3-workflow-run-placeholder-log.png" alt-text="Screenshot of the GitHub interface showing the workflow run log, with the placeholder step log shown." border="true":::
 
    The logs for this step include the contents of the command as it was specified in your workflow's YAML file, and the _Hello world!_ text that the script emitted.
 
@@ -176,8 +180,6 @@ You have created a workflow definition. GitHub Actions automatically detects you
 
 It's good to understand how to cross-reference a workflow run to the commit the run contained. Linking workflow execution to a commit can help you trace the history of your deployments and diagnose problems.
 
-Select the **commit SHA** in the workflow run detail screen.
+1. Select **Summary** to return to the run summary.
 
-:::image type="content" source="../media/3-commit-sha.png" alt-text="Screenshot of the GitHub interface showing the workflow run detail, with the commit SHA highlighted." border="true":::
-
-This shows you that the *workflow.yml* file was added in this commit. 
+1. Select the commit identifier. GitHub displays the details of the commit that triggered the workflow run.
