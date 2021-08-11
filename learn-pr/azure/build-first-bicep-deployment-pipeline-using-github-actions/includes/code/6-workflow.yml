@@ -1,8 +1,8 @@
-name: learn-github-actions
+name: deploy-toy-website
 
 on: [workflow_dispatch]
 
-env: 
+env:
     AZURE_RESOURCEGROUP_NAME: ToyWebsite
     ENVIRONMENT: nonprod
     DEPLOYSTORAGE: false

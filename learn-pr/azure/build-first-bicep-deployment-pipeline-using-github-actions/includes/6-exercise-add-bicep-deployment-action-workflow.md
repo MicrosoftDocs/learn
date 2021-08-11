@@ -1,11 +1,11 @@
-You've created a basic workflow, and you've configured your Azure and GitHub environments to connect together. Now you're ready to deploy your website's Bicep file to Azure from your workflow.
+You've created a basic workflow, and you've configured your Azure and GitHub environments to connect. Now, you're ready to deploy your website's Bicep file to Azure from your workflow.
 
 In this exercise, you'll:
 
 > [!div class="checklist"]
 > * Add a Bicep file to your repository.
-> * Add a workflow step to download your repository source code to the runner.
-> * Add a workflow step to login to Azure.
+> * Add a workflow step to download your repository source code to the runner's file system.
+> * Add a workflow step to sign in to Azure.
 > * Add a workflow step to deploy your Bicep file.
 > * Run your workflow again and verify that it successfully deployed your website.
 
@@ -13,61 +13,62 @@ In this exercise, you'll:
 
 You've already prepared your website's Bicep file, which can be used to deploy different configurations of the website resources depending on the environment and configuration. Here, you add your Bicep file to your repository.
 
-1. Open the Visual Studio Code **Explorer**.
+1. Open the Visual Studio Code Explorer.
 
 1. Create a *deploy* folder.
-1. In the *deploy* folder, create a new file named *main.bicep*. Make sure you create the file inside the *deploy* folder and not at the root of the repository:
 
-   :::image type="content" source="../media/6-vs-code-main-bicep.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the main.bicep file highlighted and located in the deploy folder." border="true":::
+1. In the *deploy* folder, create a new file named *main.bicep*. Make sure you create the file inside the *deploy* folder, and not at the root of the repository:
 
-1. Copy the following into the *main.bicep* file:
+   :::image type="content" source="../media/6-visual-studio-code-main-bicep.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the main dot bicep file highlighted and located in the deploy folder.":::
 
-   :::code language="bicep" source="code/6-main.bicep" :::
+1. Copy the following code into the *main.bicep* file:
 
-1. Save the file.
+   :::code language="bicep" source="code/6-main.bicep":::
 
-1. In the Visual Studio Code **Terminal**, stage the changes, commit the changes and push the changes to your repository by using the following commands:
+1. Save your changes to the file.
+
+1. In the Visual Studio Code terminal, run this code to stage the changes, commit the changes, and push the changes to your repository:
 
    ```bash
-   git add .
+   git add deploy/main.bicep
    git commit -m 'Add Bicep file'
    git push
    ```
 
 ## Replace the workflow steps
 
-Here, you update your workflow definition to deploy your Bicep file to Azure by using the GitHub secret.
+Next, update your workflow definition to deploy your Bicep file to Azure.
 
 1. In Visual Studio Code, open the *.github/workflows/workflow.yml* file.
 
-1. Remove the `placeholder` step from the workflow definition by deleting the bottom two lines of the file.
+1. To remove the `placeholder` step from the workflow definition, delete the bottom two lines of the file.
 
-1. As a first step you will add a task to checkout the code on the runner. Add a new task at the bottom of the file that checks out your code. 
+1. As a first step you will add a task to check out the code to the runner's file system. Add a new step at the bottom of the file:
 
-   :::code language="yaml" source="code/6-workflow.yaml" range="7-11" highlight="11" :::
+   :::code language="yaml" source="code/6-workflow.yml" range="10-14" highlight="5" :::
 
    > [!NOTE]
-   > It's a good idea to type this in yourself instead of copying and pasting. Watch out for the file's indentation. If your indentation isn't correct, your YAML file won't be valid. Visual Studio Code indicates errors by showing you squiggly lines.
+   > It's a good idea to type this code yourself instead of copying and pasting it from this module. Pay attention to the file's indentation. If your indentation isn't correct, your YAML file won't be valid. Visual Studio Code indicates errors by displaying squiggly lines.
 
-1. Below the task you just added, add a task to sign in to your Azure environment. This task will make use of the `AZURE_CREDENTIALS` secret value you created earlier:
+1. Below the step that you just added, add a task to sign in to your Azure environment. This task will make use of the `AZURE_CREDENTIALS` secret value you created earlier:
 
-   :::code language="yaml" source="code/6-workflow.yaml" range="7-14" highlight="12-14" :::
+   :::code language="yaml" source="code/6-workflow.yml" range="10-17" highlight="6-8" :::
 
-1. Add a third task to perform the Bicep deployment:
+1. Below the step that you just added, add another step to perform the Bicep deployment:
 
-   :::code language="yaml" source="code/6-workflow.yaml" range="7-19" highlight="15-19" :::
+   :::code language="yaml" source="code/6-workflow.yml" range="10-22" highlight="9-13" :::
 
    Notice that this task uses environment variables for the resource group name, and for the two parameters that the Bicep file includes. 
 
-1. Add these variables and their values at the top of your workflow file, below the `workflow_dispatch` trigger and above the `jobs`: 
+1. Add these variables and their values at the top of your workflow file, below the `on: [workflow_dispatch]` trigger and above the `jobs`: 
 
-   :::code language="yaml" source="code/6-workflow.yaml" range="1-7" highlight="3-6" :::
+   :::code language="yaml" source="code/6-workflow.yml" range="5-8" :::
 
-1. Save the changes to the file. Your file should look like the below:
+1. Save your changes to the file. Your file should look like this example:
 
-   :::code language="yaml" source="code/6-workflow.yaml" :::
+   :::code language="yaml" source="code/6-workflow.yml" :::
 
-1. In the Visual Studio Code **Terminal**, stage your changes, commit them to your repository, and push them to Azure Repos:
+1. In the Visual Studio Code terminal, stage your changes, commit them to your repository, and push them to Azure Repos:
 
    ```bash
    git add .
@@ -77,21 +78,23 @@ Here, you update your workflow definition to deploy your Bicep file to Azure by 
 
 ## Run your workflow
 
-Now you're ready to run your workflow!
+Now, you're ready to run your workflow!
 
-1. In your browser, select **Actions** > **learn-github-actions**. 
+1. In your browser, select **Actions** > **deploy-toy-website**. 
 
-   :::image type="content" source="../media/6-select-actions.png" alt-text="Screenshot of the GitHub interface showing the workflows, with the Actions tab and the learn-github-actions workflow highlighted." border="true":::
+   :::image type="content" source="../media/6-select-actions.png" alt-text="Screenshot of the GitHub interface showing the workflows, with the Actions tab and the deploy-toy-website workflow highlighted." border="true":::
 
 1. Select **Run workflow** > **Run workflow**.
 
    :::image type="content" source="../media/6-workflow-run.png" alt-text="Screenshot of the GitHub interface showing the workflow, with the Run workflow dropdown and button highlighted." border="true":::
 
-1. A new run of your workflow will appear in the runs table. If it does not, refresh the screen. Select your running workflow to go to the detail screen of the run. 
+1. A new run of your workflow will appear in the runs list. If it doesn't appear, refresh your browser page.
+
+1. Select the running workflow to view the details of the run:
 
    :::image type="content" source="../media/6-workflow-runs.png" alt-text="Screenshot of the GitHub interface showing the workflow runs, with the running workflow highlighted." border="true":::
 
-   Wait for the run to complete.
+   Wait for the run to finish.
 
 1. Select the **deploy** job.
 
@@ -101,9 +104,9 @@ Now you're ready to run your workflow!
 
    :::image type="content" source="../media/6-log-variables.png" alt-text="Screenshot of the GitHub interface showing the workflow log, with the 'environment variables' highlighted." border="true":::
 
-   Notice that this task makes use of the environment variables you added to the workflow file.
+   Notice that this step uses the environment variables you added to the workflow file.
 
-1.  Inspect the rest of your workflow output.
+1. Inspect the rest of your workflow output.
 
    The workflow shows a successful deployment.
 
@@ -111,20 +114,20 @@ Now you're ready to run your workflow!
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
-1. On the left-side panel, select **Resource groups**.
+1. In the left menu, select **Resource groups**.
 
 1. Select **ToyWebsite**.
 
-1. In **Overview**, you can see that one deployment succeeded.
+1. In **Overview**, view the deployment status. You can see that one deployment succeeded.
 
-   :::image type="content" source="../media/6-portal-resource-group.png" alt-text="Screenshot of the Azure portal, showing the resource group with one successful deployment." border="true":::
+   :::image type="content" source="../media/6-portal-resource-group.png" alt-text="Screenshot of the Azure portal that shows the resource group with one successful deployment.":::
 
 1. Select **1 Succeeded** to see the details of the deployment.
 
-   :::image type="content" source="../media/6-portal-deployment-list.png" alt-text="Screenshot of the Azure portal, showing the resource group deployment history, and the deployment highlighted." border="true":::
+   :::image type="content" source="../media/6-portal-deployment-list.png" alt-text="Screenshot of the Azure portal that shows the resource group deployment history, with the deployment highlighted.":::
 
-   Notice that the deployment name is the same as the workflow run name.
+   The deployment name is the same as the name of the pipeline run.
 
-1. Select the deployment to see what resources were deployed, and then select **Deployment details** to expand it. In this case, there's an App Service plan and an app.
+1. To see what resources were deployed, select the deployment. To expand the deployment to see more details, select **Deployment details**. In this case, there's an Azure App Service plan and an app.
 
-   :::image type="content" source="../media/6-portal-deployment-details.png" alt-text="Screenshot of the Azure portal, showing the resource group deployment details, with the App Service resources highlighted." border="true":::
+   :::image type="content" source="../media/6-portal-deployment-details.png" alt-text="Screenshot of the Azure portal that shows the resource group deployment details, with the App Service resources highlighted.":::

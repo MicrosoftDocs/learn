@@ -55,7 +55,7 @@ In GitHub Actions, a *job* represents an ordered set of steps. You always have a
 
 Now that you know the basic concepts in GitHub Actions, let's look at a simple workflow definition in YAML:
 
-:::code language="yaml" source="code/2-simple.yaml" :::
+:::code language="yaml" source="code/2-simple.yml" :::
 
 Let's look at each part of the file in detail:
 
