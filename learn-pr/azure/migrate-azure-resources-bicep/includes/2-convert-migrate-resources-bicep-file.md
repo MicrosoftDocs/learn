@@ -6,7 +6,7 @@ The main focus for these two phases is to prepare a new Bicep file before you la
 
 ## Convert phase
 
-In the _convert_ phase of converting your templates to Bicep, the goal is to capture an initial representation of your Azure resources. The Bicep file you create in this phase isn't complete, and it's not ready to be used. However, the file gives you a starting point for your migration.
+In the _convert_ phase of migrating your resources to Bicep, the goal is to capture an initial representation of your Azure resources. The Bicep file you create in this phase isn't complete, and it's not ready to be used. However, the file gives you a starting point for your migration.
 
 The convert phase consists of two steps:
 
@@ -25,7 +25,9 @@ Azure Resource Manager is the service that's used to deploy and manage resources
 
 :::image type="content" source="../../includes/media/azure-resource-manager.png" alt-text="Diagram showing Azure Resource Manager accepting requests from all Azure clients and libraries." border="false":::
 
-Regardless of how each resource was created, information about the resource is made available in JSON format by Resource Manager. When you ask for a copy of the JSON representation of a resource, you're _exporting_ the resource. The JSON file that you export can be decompiled into Bicep.
+There are two types of operations in Azure: control plane operations and data plane operations. Control plane operations are used to manage the resources in your subscription, while data plane operations are used to access features that are exposed by a resource. For example, you use a control plane operation to create a virtual machine, but you use a data plane operation to connect to the virtual machine by using Remote Desktop Protocol (RDP).
+
+Regardless of how each resource was created, information about the resource is made available in JSON format by Resource Manager. When you ask for a copy of the JSON representation of a resource, you're _exporting_ the resource. The JSON file that you export can be decompiled into Bicep. The export process is a control plane operation, meaning it is only exporting the configuration of the Azure resources. When exporting a virtual machine, the data on a virtual machine's hard drive is not part of the export process.
 
 The Azure portal, Azure CLI, and Azure PowerShell cmdlets can all be used to export your Azure resources and resource groups to JSON ARM templates. Later in this module, you'll practice exporting JSON ARM templates yourself.
 
@@ -191,7 +193,7 @@ Once you decompile your template, you've completed the _convert_ phase and you h
 
 ## Migrate phase
 
-In the _migrate_ phase of converting your templates to Bicep, the goal is to create the first draft of your deployable Bicep file, and to ensure it defines all of the Azure resources that are in scope for the migration. In this phase, you do the following steps:
+In the _migrate_ phase of migrating your resources to Bicep, the goal is to create the first draft of your deployable Bicep file, and to ensure it defines all of the Azure resources that are in scope for the migration. In this phase, you do the following steps:
 
 1. Create a new empty Bicep file.
 1. Copy each resource from your decompiled template.
