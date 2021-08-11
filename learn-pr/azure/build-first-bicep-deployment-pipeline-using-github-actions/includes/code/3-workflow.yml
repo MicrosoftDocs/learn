@@ -1,4 +1,4 @@
-name: learn-github-actions
+name: toy-website-deployment
 
 on: [workflow_dispatch]
 
