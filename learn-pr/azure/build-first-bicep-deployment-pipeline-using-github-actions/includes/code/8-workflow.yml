@@ -10,7 +10,7 @@ on:
 env: 
     AZURE_RESOURCEGROUP_NAME: ToyWebsite
     ENVIRONMENT: nonprod
-    DEPLOYSTORAGE: true
+    DEPLOYSTORAGE: false
 
 jobs:
   deploy:

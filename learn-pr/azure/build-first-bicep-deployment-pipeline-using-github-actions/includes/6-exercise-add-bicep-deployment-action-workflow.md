@@ -15,9 +15,9 @@ You've already prepared your website's Bicep file, which can be used to deploy d
 
 1. Open the Visual Studio Code Explorer.
 
-1. Create a *deploy* folder.
+1. At the root of your repository, create a *deploy* folder.
 
-1. In the *deploy* folder, create a new file named *main.bicep*. Make sure you create the file inside the *deploy* folder, and not at the root of the repository:
+1. In the *deploy* folder, create a new file named *main.bicep*. Make sure you create the file inside the *deploy* folder:
 
    :::image type="content" source="../media/6-visual-studio-code-main-bicep.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the main dot bicep file highlighted and located in the deploy folder.":::
 
@@ -80,19 +80,13 @@ Next, update your workflow definition to deploy your Bicep file to Azure.
 
 Now, you're ready to run your workflow!
 
-1. In your browser, select **Actions** > **deploy-toy-website**. 
-
-   :::image type="content" source="../media/6-select-actions.png" alt-text="Screenshot of the GitHub interface showing the workflows, with the Actions tab and the deploy-toy-website workflow highlighted." border="true":::
+1. In your browser, open the workflow by selecting **Actions** > **deploy-toy-website**. 
 
 1. Select **Run workflow** > **Run workflow**.
 
-   :::image type="content" source="../media/6-workflow-run.png" alt-text="Screenshot of the GitHub interface showing the workflow, with the Run workflow dropdown and button highlighted." border="true":::
-
 1. A new run of your workflow will appear in the runs list. If it doesn't appear, refresh your browser page.
 
-1. Select the running workflow to view the details of the run:
-
-   :::image type="content" source="../media/6-workflow-runs.png" alt-text="Screenshot of the GitHub interface showing the workflow runs, with the running workflow highlighted." border="true":::
+1. Select the running workflow to view the details of the run.
 
    Wait for the run to finish.
 
@@ -100,7 +94,9 @@ Now, you're ready to run your workflow!
 
    :::image type="content" source="../media/6-workflow-run-deploy-job.png" alt-text="Screenshot of the GitHub interface showing the run page, with the deploy job highlighted." border="true":::
 
-1. Select **Run azure/arm-deploy@v1**. This opens up the task details. Select **Run azure/arm-deploy@v1** in the task details. 
+1. Select **Run azure/arm-deploy@v1**. This displays the task details.
+
+1. Select **Run azure/arm-deploy@v1** in the task details. 
 
    :::image type="content" source="../media/6-log-variables.png" alt-text="Screenshot of the GitHub interface showing the workflow log, with the 'environment variables' highlighted." border="true":::
 

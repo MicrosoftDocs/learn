@@ -17,7 +17,7 @@ During the process, you'll:
 
 1. Add the following trigger definition in its place:
 
-   :::code language="yaml" source="code/8-workflow.yml" range="3-7" :::
+   :::code language="yaml" source="code/8-workflow.yml" range="3-8" :::
 
 1. Save your changes to the file.
 
@@ -50,13 +50,13 @@ During the process, you'll:
 
 1. In your browser, select GitHub's **Actions** menu, and select your workflow.
 
-1. Select the most recent run to see that the workflow ran automatically. The workflow ran because you pushed your changes to a branch that the push trigger monitors. If the workflow is still running, wait a minute, and then refresh the page.
+1. Select the most recent run to see that the workflow ran automatically. The workflow ran because you pushed your changes to a branch monitored by the push trigger. If the workflow is still running, wait a minute, and then refresh the page.
 
    :::image type="content" source="../media/8-failed.png" alt-text="Screenshot of the GitHub interface showing the failed workflow run." border="true":::
 
    The workflow shows a failed deployment.
 
-1. To diagnose the failure, select the **deploy** Job, and select the failed **arm-deploy** task. Notice that it includes the following text:
+1. To diagnose the failure, select the **deploy** job, and select the failed **arm-deploy** task. Notice that it includes the following text:
 
    `There was a conflict. AlwaysOn cannot be set for this site as the plan does not allow it. For more information on pricing and features, please see: https://aka.ms/appservicepricingdetails`
 
