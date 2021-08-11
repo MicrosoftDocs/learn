@@ -32,6 +32,7 @@ units:
 - learn.wwl.explore-non-relational-data-stores-azure.query-azure-cosmos-db
 - learn.wwl.explore-non-relational-data-stores-azure.manage-azure-blob-storage
 - learn.wwl.explore-non-relational-data-stores-azure.manage-azure-file-storage
+- learn.wwl.explore-non-relational-data-stores-azure.exercise-video
 - learn.wwl.explore-non-relational-data-stores-azure.summary
 badge:
   uid: learn.wwl.explore-non-relational-data-stores-azure.badge
