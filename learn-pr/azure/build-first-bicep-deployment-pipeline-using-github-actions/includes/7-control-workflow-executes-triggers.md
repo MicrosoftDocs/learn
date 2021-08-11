@@ -72,7 +72,7 @@ on:
 
 Sometimes, you have files in your repository that don't relate to your deployment. For example, in your repository you might have a _deploy_ folder that contains your Bicep code, and you only want to trigger your workflow in case there is a change to any of the Bicep files in that deploy folder: 
 
-```YAML
+```yaml
 on:
   push:
     paths:
@@ -81,7 +81,7 @@ on:
 
 In case you have a _docs_ folder in your deploy folder with just documentation files and you don't want to trigger your workflow when anyone makes a change to those documentation files, you can ignore that subfolder with the `!` charachter: 
 
-```YAML
+```yaml
 on:
   push:
     paths:

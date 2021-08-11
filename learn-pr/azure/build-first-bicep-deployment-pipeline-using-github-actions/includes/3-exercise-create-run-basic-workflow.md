@@ -51,19 +51,19 @@ When you work with GitHub from Visual Studio Code or on the command line, you ne
 
 1. In the upper-right corner of any page on github.com, click your profile photo, then click **Settings**.
 
-2. In the sidebar, select **Developer settings**.
+1. In the sidebar, select **Developer settings**.
 
-3. In the sidebar, select **Personal access tokens**.
+1. In the sidebar, select **Personal access tokens**.
 
-4. Select **Generate new token**.
+1. Select **Generate new token**.
 
-5. Give your token a descriptive name.
+1. Give your token a descriptive name.
 
-6. You will now have to select the scopes, or permissions, you'd like to grant this token. To use your token to access repositories from the command line, select **repo**.
+1. You will now have to select the scopes, or permissions, you'd like to grant this token. To use your token to access repositories from the command line, select **repo**.
 
-7. Click **Generate token**.
+1. Click **Generate token**.
 
-8. Click the **clipboard** icon to copy the token to your clipboard. For security reasons, after you navigate off the page, you will not be able to see the token again.
+1. Click the **clipboard** icon to copy the token to your clipboard. For security reasons, after you navigate off the page, you will not be able to see the token again.
 
 ## Clone the repository
 

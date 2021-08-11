@@ -1,15 +1,14 @@
-trigger: none
+name: learn-github-actions
 
-pool:
-  vmImage: ubuntu-latest
+on: [workflow_dispatch]
 
 jobs:
-- job:
-  steps:
-  - script: echo Hello, world!
-    displayName: 'Run a one-line script'
-  
-  - script: |
-      echo We'll add more steps soon.
-      echo For example, we'll add our Bicep deployment step.
-    displayName: 'Run a multi-line script'
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Run a one-line command'
+        run: echo "hello from GitHub Actions"
+      - name: 'Run a multi-line command'
+        run: |
+          echo "We'll add more steps soon."
+          echo "For example, we'll add our Bicep deployment step."

@@ -1,45 +1,10 @@
-Now that you've created a basic workflow, you're ready to configure it to deploy your Bicep files. In this unit you'll learn how to deploy Bicep code from a workflow, and how you can configure the deployment steps.
+Now that you've created a basic workflow, you're ready to set up the workflow to deploy your Bicep files. In this unit, you'll learn how to deploy Bicep code from a workflow and how to set up the deployment steps.
 
 [!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
 
-## GitHub secrets
+## Check out your code
 
-When you deploy a Bicep file from your own computer, you use the Azure CLI or Azure PowerShell. Before you can deploy your code, you need to sign in to Azure. Usually the tools ask you to enter your email address and password in a browser. After verifying your credentials, the tools know who you are and can verify that you have permission to deploy your Bicep file.
-
-Because workflows are run without any human present, they need to authenticate to Azure by using a service principal. It's a good practice to create a service principal before you create your workflow. A service principal's credentials consist of an _application ID_ and a secret, which is usually a key or a certificate. You use a _GitHub secret_ in GitHub Actions to securely store these credentials so that your workflow can use them.
-
-GitHub encrypts the secret values before storing them. Also, GitHub tries to prevent the secret values from showing in your workflow logs.
-
-> [!WARNING]
-> GitHub will obfuscate the variable values, but this is a best-effort process and you need to follow good practices as well. Your workflow steps have access to the decrypted secret values, so if your workflow includes a step that insecurely handles a secure variable then GitHub might not be able to stop it.
-
-When you create a GitHub secret, you give it a name. Steps refer to the secret by using this name. That way, your workflow YAML code doesn't contain any secret information.
-
-To refer to a secret value in your workflow, use the following syntax:
-
-```YAML
-${{ secrets.NAME_OF_THE_SECRET }}
-```
-
-When your workflow starts, the runner that's running your deployment steps has access to the decrypted GitHub secret. 
-
-Since your workflow needs to sign in to Azure to deploy your Bicep template, you need to create a GitHub secret that contains your service principal information. You need to ensure that your service principal has the permissions it needs to be able to execute your deployment steps. For example, you might need to assign the service principal the Contributor role for the resource group that it deploys your resources to.
-
-> [!WARNING]
-> Even though a GitHub secret is an encrypted environment value, and even though it will be obfuscated in all GitHub Actions output logs, the workflow itself has access to the decrypted value of the secret. This means that in case someone maliciously would add an echo command to your workflow to write the secret in the output log of the workflow run, they could do so. This is why you should always review the source code of any workflow file when someone updates the file. 
-
-GitHub secrets are created within your GitHub repository settings. A GitHub secret will be shared by all the workflows in your repository. 
-
-> [!NOTE]
-> Repository secrets can be used by all workflows in your repository. 
-> In a later module you will also learn about environments to limit secrets to a certain environment. 
-
-You can also use GitHub secrets to store other kinds of secret values your workflows might need. For instance a database password can be created as a GitHub secret, and then provided to your Bicep file by using a secure parameter. 
-
-
-## Check out your code by using the actions/checkout action
-
-Your Bicep files are stored in the Git repository. In GitHub Actions, you need to explicitly tell the workflow to check out the files from your Git repository. Otherwise, your workflow won't have access to the files.
+Your Bicep files are stored in your Git repository. In GitHub Actions, you need to explicitly tell the workflow to check out the files from your Git repository. Otherwise, your workflow won't have access to the files. This step is usually the first thing your job does.
 
 To check out your code, you can use the `actions/checkout@v2` action:
 
@@ -49,38 +14,74 @@ To check out your code, you can use the `actions/checkout@v2` action:
     path: repo
 ```
 
-Now that the workflow includes this action, your repository's code will be checked out onto the runner and available in the file system. You specify the path the files should be stored in by using the `path` parameter.
+After the workflow includes this action, your repository's code will be checked out onto the runner's file system. You specify the path the files should be stored in by using the `path` parameter.
 
-This step is usually the first step in your job before you do anything else. 
+## GitHub secrets
 
+When you deploy a Bicep file from your own computer, you use the Azure CLI or Azure PowerShell. Before you can deploy your code, you sign in to Azure. Usually, the tools ask you to enter your email address and password in a browser. After your credentials are verified, your permissions to deploy resources are confirmed and you can use the tools to deploy your Bicep file.
 
-## Sign in to Azure by using the azure/login action
+Deployment by workflow requires authentication, too. Because workflows run without human intervention, workflows authenticate to Azure by using a service principal. A service principal's credentials consist of an *application ID* and a secret, which usually is a key or a certificate. In GitHub Actions, you use a *GitHub secret* to securely store these credentials so that your workflow can use them.
 
-Before your workflow can execute commands against your Azure environment, it also first needs to sign in. There is an action named `azure/login` that handles the login process. It uses a GitHub secret to get the credentials for your service principal:
+When you create a secret, you give it a name. Steps refer to the secret by using this name, so your workflow YAML code doesn't need to contain secret information. GitHub encrypts the secret values before storing them.
 
-```YAML
+When your workflow starts, the runner that's running your deployment steps has access to the secret value. A workflow step uses the credentials to sign in to Azure, just like you sign in yourself. Then, the steps that are defined in the workflow use the service principal's *identity*.
+
+:::image type="content" source="../media/4-service-connection.png" alt-text="Diagram that shows a workflow that includes an Azure deployment step, which accesses a secret and then deploys to Azure." border="false":::
+
+You must ensure that your service principal has the permissions it needs to execute your deployment steps. For example, you might need to assign the service principal the Contributor role for the resource group it deploys your resources to.
+
+> [!WARNING]
+> It might seem easier to store your service principal's credentials in your YAML file, and then sign in by using the `az login` command. You should never use this approach to authenticate your service principal. Credentials in a YAML file are stored in clear text. Anyone who has access to your repository can see and use the credentials. Even if you restrict access to your GitHub reposistory, whenever someone clones your repository, the YAML file that holds the credentials will be on that person's computer. It's important to use a secret whenever you work with Azure from a GitHub Actions workflow. Secrets also provide other security and access control features.
+
+Secrets are created in your GitHub repository settings. A secret is available to all of the workflows in the repository.
+
+> [!NOTE]
+> Repository secrets can be used by all workflows in your repository. In a later module, you'll learn about _environments_, which enable you to restrict the use of secrets to deployments to a specific environment. 
+
+### Use a secret in your workflow
+
+To refer to a secret value in your workflow, use the following syntax:
+
+```yaml
+${{ secrets.NAME_OF_THE_SECRET }}
+```
+
+When your workflow starts, the runner that's running your deployment steps has access to the decrypted GitHub secret value. GitHub Actions is designed to not reveal secret values in your workflow logs.
+
+> [!WARNING]
+> By default, GitHub Actions obfuscates secret variable values in workflow logs, but you need to follow good practices as well. Your workflow steps have access the values of secrets. If your workflow includes a step that doesn't handle a secret securely, there's a chance the secret value might be shown in the workflow logs. You should always carefully review the any changes to a workflow definition file to verify the secrets won't be mishandled.
+
+You can also use GitHub secrets to store other kinds of secret values your workflows might need. For instance a database password can be created as a GitHub secret, and then provided to your Bicep file by using a secure parameter. 
+
+## Sign in to Azure
+
+Before your workflow can execute commands against your Azure environment, it first needs to sign in. There is an action named `azure/login` that handles the sign-in process. The action uses a GitHub secret to get the credentials for your service principal:
+
+```yaml
 - uses: azure/login@v1
   with:
     creds: ${{ secrets.AZURE_CREDENTIALS }}
 ```
 
-Notice that the workflow includes the `uses` keyword. This indicates you want to use a pre-defined action. named `azure/login`. Actions are always versioned. In this case you use version 1, so `@v1` is appended to the action name.
+Notice that the workflow includes the `uses` keyword. This indicates you want to use a pre-defined action named `azure/login`.
+
+> [!NOTE]
+> Actions are always versioned. In this case the workflow uses version 1, so `@v1` is appended to the action name.
 
 The `azure/login` action has a `creds` parameter to specify the Azure credentials to use when signing in. In this example, the workflow uses the `AZURE_CREDENTIALS` secret value as the credentials.
 
-After this action has executed your runner will be authenticated and able to run statements against your Azure environment. 
+After this action has executed, your runner will be authenticated and able to run statements against your Azure environment. 
 
+## Deploy your Bicep file
 
-## Deploy a Bicep file by using the azure/arm-deploy action
-
-Only logging in to your Azure environment is of course not enough to deploy any Bicep template, you will also need an additional action to run the Bicep template deployment. For this you can use the `azure/arm-deploy` action. You use this action to execute an ARM deployment.
+After you've signed in to Azure, you can use the service principal's identity to run the Bicep deployment. In GitHub Actions, you use the `azure/arm-deploy` action to initiate a Bicep deployment.
 
 > [!NOTE] 
-> GitHub Actions marketplace includes an actions named _azure/CLI_. This can also be used to deploy Bicep templates. With this action you can execute plain Azure CLI statements. The _azure/arm-deploy_ task however is targetted specifically at deploying ARM templates, so we will use that one in this module. 
+> There are other ways you can deploy Bicep files from GitHub Actions. For example, you can use the `azure/CLI` action and then provide Azure CLI commands to run your deployments. However, since the `azure/arm-deploy` task is specifically designed for deployments, you'll use that in this module.
 
-Here's an example of how you can configure a step to use the azure/arm-deploy action:
+Here's an example of how you can configure a step to use the `azure/arm-deploy` action:
 
-```YAML
+```yaml
 - uses: azure/arm-deploy@v1
   with:
     resourceGroupName: github-action-arm-rg
@@ -88,38 +89,35 @@ Here's an example of how you can configure a step to use the azure/arm-deploy ac
     parameters: environmentType=Test
 ```
 
-Here as well you indicate which action you want to use with the `uses` parameter. This task makes use of the following parameters: 
+The `azure/arm-deploy` action accepts several parameters, including:
 
-- `resourceGroupName` indicates in which resource group you want to deploy your bicep template
-- `template` is the path to your bicep file
-- `parameters` indicates any parameters you want to provide a value for in the deployment. In this case we are providing a value for the _environmentType_ parameter
+- `resourceGroupName`. This indicates the name of the resource group that you want to deploy the Bicep file to.
+- `template`. This is the path to the Bicep file in your repository. The path is relative to the repository's root.
+- `parameters`. This indicates any parameter values you provide at deployment time. In this example, we provide a value for the _environmentType_ parameter.
 
-Since the previous `azure/login` action already logged you into the Azure environment, this `azure/arm-deploy` step will be running on an authenticated runner. 
-
+Because the previous `azure/login` action already signed you in to Azure, the `azure/arm-deploy` step executes on an authenticated runner.
 
 ## Variables
 
-Often, your workflows contain values that you want to reuse in multiple places in your workflow file. Or you might want to store them at the top of the workflow file for easy reference and to be able to change these values easily. For example, when you deploy a Bicep file to a resource group, you need to specify the name of the resource group. The resource group name might change when you deploy to different environments. Additionally, you might need to provide parameters to your Bicep files. For these use cases you can use _variables_.
-
-In your workflow the variables you define will be surfaced as environment variables. 
+Often, your workflows contain values that you want to reuse in multiple places in your workflow file. You might also want to store these values at the top of the workflow file for easy reference, and to be able to change the values easily. In your workflow the variables you define will be surfaced as environment variables. To define reusable values, use *variables*.
 
 ### Create a variable
 
-You can create variables at different levels in your workflow file. However, if you want them to be available for your entire workflow file, you define them near the top of the file, just below your `on` statement. To define your variables you use the `env` parameter:
+You can create variables at different levels in your workflow file. However, if you want them to be available for your whole workflow file, you define them near the top of the file, just below your `on` statement. To define your variables you use the `env` parameter:
 
 ```yaml
-env: 
+env:
     AZURE_RESOURCEGROUP_NAME: gh-actions
     AZURE_WEBAPP_NAME: webapp-gh-actions
     SQLADMIN_LOGIN: ${{ secrets.SQLADMIN_LOGIN  }}
     SQLADMIN_PASS: ${{ secrets.SQLADMIN_PASS  }}
 ```
 
-In the above example, four environment variables get created. Two of them are set to the decrypted values from GitHub secrets. 
+In the above example, we specify four environment variables. Two of them are set to the values of decrypted GitHub secrets. 
 
 ### Use a variable in your workflow
 
-Once you've created a variable, you use a special syntax to refer to it within your workflow's YAML file, like this:
+After you've created a variable, you use a special syntax to refer to it within your workflow's YAML file, like this:
 
 ```yaml
 ${{ env.AZURE_RESOURCEGROUP_NAME }}
@@ -128,13 +126,15 @@ ${{ env.AZURE_RESOURCEGROUP_NAME }}
 Notice that it's similar to referring to a secret value, but instead of `secret.` you use `env.`
 
 > [!TIP]
-> Notice that the template filename isn't stored in a variable. Just like Bicep parameters, you don't need to create variables for everything. It's a good idea to create variables for anything that might change between environments, and anything secret.
+> Just like Bicep parameters, you don't need to create variables for everything. It's a good idea to create variables for anything that might change between environments, and GitHub secrets for anything that is secret. Because the workflow will always use the same template file, you don't need to create a variable for the path.
 
-### System variables
+### Default environment variables
 
-GitHub Actions workflows also provides _default environment variables_. These contain predefined information that you might want to use in your workflow, such as:
+GitHub Actions also uses *default environment variables*. Default environment variables contain predefined information you might want to use in your workflow. Here are some of the default environment variables you can use in your workflow:
 
-- `GITHUB_SHA`, The identifier of the Git commit that triggered the workflow to execute. You might use this variable to name your Azure deployment so that you can track the deployment back to the specific Git commit that triggered it.
-- `GITHUB_RUN_NUMBER`, A unique number for each run of a particular workflow in a repository. This number begins at 1 for the workflow's first run, and increments with each new run.
+- `GITHUB_SHA`, The identifier of the Git commit that triggered the workflow to execute.
+- `GITHUB_RUN_NUMBER`, A unique number for each run of a particular workflow in a repository. This number begins at 1 for the workflow's first run, and increments with each new run. You might use this variable to name your Azure deployment, so you can track the deployment back to the specific workflow run that triggered it.
    > [!NOTE]
    > In GitHub Actions, you can re-execute a workflow run. When you do this, the `GITHUB_RUN_NUMBER` doesn't change. So, you shouldn't use the `GITHUB_RUN_NUMBER` variable to count how many times your workflow has executed.
+
+<!-- TODO use a single example workflow file -->
