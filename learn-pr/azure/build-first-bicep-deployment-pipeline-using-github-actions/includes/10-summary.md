@@ -10,5 +10,5 @@ Thanks to your efforts, anyone on your website team can automatically deploy cha
   - [Azure Login action](https://github.com/marketplace/actions/azure-login)
   - [Azure ARM Deploy action](https://github.com/marketplace/actions/deploy-azure-resource-manager-arm-template#example-on-how-to-use-failonstderr)
   - [Azure CLI action](https://github.com/marketplace/actions/azure-cli-action)
-- TODO SSH keys
+- [Connecting to GitHub with SSH](https://docs.github.com/github/authenticating-to-github/connecting-to-github-with-ssh)
 - [Webhook event triggers](https://docs.github.com/actions/reference/events-that-trigger-workflows)

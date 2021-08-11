@@ -10,10 +10,6 @@ If you don't use an automatic trigger, someone might make a change to a Bicep fi
 
 When you set up your workflow to run every time you update your files, the moment your changes are pushed, your workflow starts running. You get instant feedback on the validity of your change, and can be sure that your production environment is always up to date.
 
-<!-- TODO remove this?
-In GitHub there are several types of events that can trigger your workflow. There is the manual `workflow_dispatch` event you have been using until now. There are scheduled events, in case you want to trigger your workflow based on a schedule. There are also webhook events, which can trigger workflows based on all the webhooks that GitHub has. There is a webhook event for when someone pushes code to your repository.
--->
-
 ## Push event triggers
 
 A common type of trigger is a *push event trigger*, also called a *continuous integration trigger* or *CI trigger*. When you use a push event trigger, every time you make a change to a specific branch, the workflow runs. If you commit and push a change to a different branch, the workflow is not triggered and it doesn't run. It's common to use this type of trigger against your default or *main*  branch, with this code:
