@@ -193,12 +193,14 @@ Once you decompile your template, you've completed the _convert_ phase and you h
 
 ## Migrate phase
 
-In the _migrate_ phase of migrating your resources to Bicep, the goal is to create the first draft of your deployable Bicep file, and to ensure it defines all of the Azure resources that are in scope for the migration. In this phase, you do the following steps:
+In the _migrate_ phase of migrating your resources to Bicep, the goal is to create the first draft of your deployable Bicep file, and to ensure it defines all of the Azure resources that are in scope for the migration.
+
+The migrate phase consists of four steps:
 
 1. Create a new empty Bicep file.
-1. Copy each resource from your decompiled template.
-1. Identify and recreate any missing resources.
-1. Add parameters to make your Bicep file reusable.
+2. Copy each resource from your decompiled template.
+3. Identify and recreate any missing resources.
+4. Add parameters to make your Bicep file reusable.
 
 :::image type="content" source="../media/2-migrate.png" alt-text="Diagram of migrating a template to Bicep." border="false":::
 

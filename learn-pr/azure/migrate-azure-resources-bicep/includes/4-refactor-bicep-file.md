@@ -4,6 +4,17 @@ After the convert and migrate phases of converting your templates to Bicep, you 
 
 The main focus of this phase is to improve the quality of your Bicep code. These improvements can include changes, such as adding code comments, that bring the template in line with your template standards.
 
+The deploy phase consists of eight steps:
+
+1. Review resource API versions
+1. Review the linter suggestions in your new Bicep file
+1. Revise parameters, variables, and symbolic names
+1. Simplify expressions
+1. Review child and extension resources
+1. Modularize
+1. Add comments
+1. Follow Bicep best practices
+
 :::image type="content" source="../media/4-refactor.png" alt-text="Diagram of refactoring a Bicep template." border="false":::
 
 Here's the output of a the Bicep `decompile` command against a JSON template that creates an App Service plan:
