@@ -99,12 +99,12 @@ Now that you have your account and repository created, you're ready to create a 
 
 1. Open **Explorer** in Visual Studio Code.
 
-1. Add a new folder at the root of your current folder structure, and name it _.github_.
+1. Add a new folder at the root of your current folder structure, and name it *.github*.
 
    > [!NOTE]
    > Make sure you include the period at the start of the folder name. This indicates that this is a hidden folder, and GitHub requires the period for GitHub Actions to detect the workflow definition.
 
-1. In the _.github_ folder create another folder named _workflows_.
+1. In the *.github* folder create another folder named _workflows_.
 
 1. In the _workflows_ folder, create a new file named _workflow.yml_.
 
@@ -129,7 +129,7 @@ Now that you have your account and repository created, you're ready to create a 
 
 ## Run the workflow
 
-You have created a workflow definition. GitHub Actions will automatically pick up your workflow file, since it is located in the _.github/workflows_ directory. 
+You have created a workflow definition. GitHub Actions will automatically pick up your workflow file, since it is located in the *.github/workflows* directory. 
 
 1. In your browser, navigate to your repository. You might want to refresh the page to see the added changes. 
 

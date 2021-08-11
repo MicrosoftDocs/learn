@@ -15,12 +15,12 @@ You've already prepared your website's Bicep file, which can be used to deploy d
 
 1. Open the Visual Studio Code **Explorer**.
 
-1. Create a _deploy_ folder.
-1. In the _deploy_ folder, create a new file named _main.bicep_. Make sure you create the file inside the _deploy_ folder and not at the root of the repository:
+1. Create a *deploy* folder.
+1. In the *deploy* folder, create a new file named *main.bicep*. Make sure you create the file inside the *deploy* folder and not at the root of the repository:
 
    :::image type="content" source="../media/6-vs-code-main-bicep.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the main.bicep file highlighted and located in the deploy folder." border="true":::
 
-1. Copy the following into the _main.bicep_ file:
+1. Copy the following into the *main.bicep* file:
 
    :::code language="bicep" source="code/6-main.bicep" :::
 
@@ -38,7 +38,7 @@ You've already prepared your website's Bicep file, which can be used to deploy d
 
 Here, you update your workflow definition to deploy your Bicep file to Azure by using the GitHub secret.
 
-1. In Visual Studio Code, open the _.github/workflows/workflow.yml_ file.
+1. In Visual Studio Code, open the *.github/workflows/workflow.yml* file.
 
 1. Remove the `placeholder` step from the workflow definition by deleting the bottom two lines of the file.
 

@@ -1,15 +1,15 @@
-You previously created a workflow that can execute a Bicep deployment to your Azure environment. In this exercise you'll make the workflow run automatically whenever a file changes on your **main** branch. You'll use the updated workflow to deploy a change that your colleague requested - they want the website app to be always running, and they asked you to configure the App Service Always On feature for the site.
+You previously created a workflow that can execute a Bicep deployment to your Azure environment. In this exercise you'll make the workflow run automatically whenever a file changes on your *main* branch. You'll use the updated workflow to deploy a change that your colleague requested - they want the website app to be always running, and they asked you to configure the App Service Always On feature for the site.
 
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Update your workflow so that it triggers automatically whenever files change in the _deploy_ folder and on the **main** branch.
+> * Update your workflow so that it triggers automatically whenever files change in the *deploy* folder and on the *main* branch.
 > * Make a change to your Bicep file.
 > * Verify that the workflow runs automatically.
 
 ## Update the trigger to be branch-based
 
-1. In Visual Studio Code, open the _.github/workflows/workflow.yml_ file.
+1. In Visual Studio Code, open the *.github/workflows/workflow.yml* file.
 
 1. Remove the manual trigger on the second line.
 
@@ -28,7 +28,7 @@ During the process, you'll:
 
 ## Update your Bicep file
 
-1. In Visual Studio Code, open the _main.bicep_ file.
+1. In Visual Studio Code, open the *main.bicep* file.
 
 1. Within the `appServiceApp` resource definition's `siteConfig` property, add the `alwaysOn` property with a value of `true`:
 

@@ -1,31 +1,25 @@
-You now have a working workflow that deploys your Bicep file to your Azure environment. However, whenever you change your files, you manually start your workflow. In this unit, you'll learn how to trigger your workflow automatically whenever your Bicep code changes.
+You now have a working workflow that deploys your Bicep file to your Azure environment. However, whenever you change your file, you must manually run your workflow. In this unit, you'll learn how to workflow your pipeline to run automatically whenever your Bicep code changes.
 
 [!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
 
-## What are workflow triggers?
+## What is a workflow trigger?
 
-Triggers automatically run your workflow based on rules you specify. You can configure them to run your workflow at scheduled intervals. You can also configure triggers to run your workflow every time the files in your repository changes. You do this because it's a good idea to run all of your tests and deployment steps every time someone changes your code.
+A workflow trigger is a condition that, when met, automatically runs your workflow based on rules you create. You can set triggers to run your workflow at scheduled intervals. You can also set triggers to run your workflow every time a file in your repository changes. You might choose the second option because it's a good idea to run all your tests and deployment steps every time sometime changes your code.
 
-If you don't use an automatic trigger, someone might make a change to a Bicep file, and even commit it and push it to the repository. If they forget to run the workflow, there'll be a difference between the resource definitions in your Bicep file and the resources that are actually deployed to your Azure environment. Suppose this happens for a couple of subsequent commits and pushes. If someone introduces an error or misconfiguration in the Bicep file during one of these changes, it's hard to track down the error, since you have several commits to work through. After a while, you won't trust that your Bicep code truly represents your infrastructure, and its value is eroded.
+If you don't use an automatic trigger, someone might make a change to a Bicep file, and even commit it and push it to the repository. But if they forget to run the workflow, there will be a difference between the resource definitions in your Bicep file and the resources that are deployed to your Azure environment. Suppose a couple more commits and pushes are made but not deployed. If someone introduces an error or misconfiguration in the Bicep file in one of these changes, it might be hard to track down the error among the multiple commits that are later deployed at once. After a while, you won't trust that your Bicep code truly represents your infrastructure, and its value is eroded.
 
-When you configure your workflow to run every time you update your files, the moment your changes are pushed, your workflow will start running. This gives you instant feedback on the validity of your change and ensures that everything is always up to date.
+When you set up your workflow to run every time you update your files, the moment your changes are pushed, your workflow starts running. You get instant feedback on the validity of your change, and can be sure that your production environment is always up to date.
 
-In GitHub there are several types of events that can trigger your workflow. There is the manual _workflow_dispatch_ event we have been using up till now. There are scheduled events, in case you want to trigger your workflow based on a schedule. There are also webhook events, which can trigger workflows based on all the webhooks that GitHub has. There is a webhook event for when someone pushes code to your repository. There is also a webhook event for when someone creates an issue in your repository. In the latter case you will probably not want to deploy your Azure environment with a workflow, but you may want to run some other automation. There is quite a list of webhook events you can trigger your workflows on, however in this module we will focus on push events.  
+<!-- TODO remove this?
+In GitHub there are several types of events that can trigger your workflow. There is the manual `workflow_dispatch` event you have been using until now. There are scheduled events, in case you want to trigger your workflow based on a schedule. There are also webhook events, which can trigger workflows based on all the webhooks that GitHub has. There is a webhook event for when someone pushes code to your repository.
+-->
 
 ## Push event triggers
 
-A common trigger is a _push event trigger_, which sometimes called a _continuous integration trigger_ or _CI trigger_. When you use this trigger, every time you make a change to a specified file in the repository and this file is committed and pushed to the repository, the workflow is run. 
-
-```yaml
-on: push
-```
-
-This event type can also be configured to only run when pushes happen to certain branches. If you commit and push a change to a different branch, the workflow ignores it. It's common to use this trigger against your **main**  branch, like this:
+A common type of trigger is a *push event trigger*, also called a *continuous integration trigger* or *CI trigger*. When you use a push event trigger, every time you make a change to a specific branch, the workflow runs. If you commit and push a change to a different branch, the workflow is not triggered and it doesn't run. It's common to use this type of trigger against your default or *main*  branch, with this code:
 
 ```yaml
 on:
-  # Trigger the workflow on push or pull request,
-  # but only for the main branch
   push:
     branches:
       - main
@@ -33,7 +27,7 @@ on:
 
 ### Trigger when multiple branches change
 
-You can customize the branches that cause your workflow to run. For example, suppose you create _release branches_ that contain the code you'll deploy for a specific release of your project. You use branch names like **release/v1**, **release/v2**, and so forth. You want to run your workflow anytime your code changes on a branch that begins with the name **release/**. You can use a `*` wildcard to express this:
+You can set up triggers to run your workflow on a specific branch or on sets of branches. For example, suppose you create *release branches* that contain the code you'll deploy for a specific release of your project. You can use branch names like *release/v1*, *release/v2*, and so on. You want to run your workflow anytime your code changes on a branch that begins with the name *release/. You can use a `**` wildcard:
 
 ```yaml
 on:
@@ -43,18 +37,7 @@ on:
       - 'release/**'
 ```
 
-You can exclude certain branches with the `!` charachter. Suppose you want to trigger your workflow for your main branch and all release branches, except for the alpha releases: 
-
-```yaml
-on:
-  push:
-    branches:    
-      - main
-      - 'release/**'
-      - '!release/**-alpha'
-```
-
-You can also decide to trigger your workflow based on all branches, but exclude specific branches. Suppose you're collaborating with team members on your project. Your colleagues create _feature branches_ to try out their ideas in Bicep files. All of these feature branches are given names like **feature/add-database**, **feature/improve-performance**, and so forth. You want to run your workflow automatically on all branches, except for the feature branches that your colleagues create. By using `branches-ignore`, you ensure the workflow isn't automatically triggered for changes to feature branches:
+You can exclude specific branches, too. Suppose you're collaborating with team members on your project. Your colleagues create *feature branches* to try out their ideas in Bicep files. All feature branches have names like *feature/add-database*, *feature/improve-performance*, and so on. You want to run your workflow automatically on all branches except for the feature branches that your colleagues create. By using the `exclude` property, you ensure that the workflow isn't automatically triggered for changes to feature branches:
 
 ```yaml
 on:
@@ -64,22 +47,22 @@ on:
 ```
 
 > [!NOTE]
-> You cannot use `branches` and `branches-ignore` for the same event type, so you either go for a pattern where you indicate what branches you want to trigger on with the `branches` keyword, or you go for a pattern where you want to trigger on all branches except for the ones you indicate with `branches-ignore`. 
-> You can off course use the `branches` keyword in combination with the `!` charachter as in the above.
-
+> You can exclude certain branches by using the `!` character. Suppose you want to trigger your workflow for your main branch and all release branches, except for the alpha releases. You can use the `!` character to express this:
+> 
+> ```yaml
+> on:
+>   push:
+>     branches:    
+>       - main
+>       - 'release/**'
+>       - '!release/**-alpha'
+> ```
+>
+> You can't use `branches` and `branches-ignore` together in one trigger, so the `!` character provides you with flexibility to control your trigger's behavior.
 
 ### Path filters
 
-Sometimes, you have files in your repository that don't relate to your deployment. For example, in your repository you might have a _deploy_ folder that contains your Bicep code, and you only want to trigger your workflow in case there is a change to any of the Bicep files in that deploy folder: 
-
-```yaml
-on:
-  push:
-    paths:
-      - 'deploy/**'
-```
-
-In case you have a _docs_ folder in your deploy folder with just documentation files and you don't want to trigger your workflow when anyone makes a change to those documentation files, you can ignore that subfolder with the `!` charachter: 
+Sometimes you have files in your repository that aren't related to your deployment. For example, you might have a *deploy* folder in your repository that contains your Bicep code and a *docs* subfolder that contains your documentation files. You want to trigger your workflow when anyone makes a change to any of the Bicep files in the *deploy* folder, but you don't want to trigger the workflow if someone changes only a documentation file. To set up a trigger to respond to changes in a specific folder in your repository, you can use a *path filter*:
 
 ```yaml
 on:
@@ -89,29 +72,31 @@ on:
       - '!deploy/docs/**'
 ```
 
-> [!NOTE]
-> There is also a `paths-ignore` keyword you can use, which works in a similar manner to the `branches-ignore` keyword. Here as well you can not use `paths` and `paths-ignore` on the same event, so either you go for an inclusive setup or you go for an exclusive one.
+If someone commits a change that updates only a documentation file, the workflow doesn't run. But if someone changes a Bicep file, or even if they change a Bicep file in addition to a documentation file, the trigger runs the workflow.
 
+> [!NOTE]
+> You can also use `paths-ignore`, which works in a similar manner to the `branches-ignore` keyword. However, you can't use `paths` and `paths-ignore` in the same trigger.
 
 ## Schedule your workflow to run automatically
 
-You can also run your workflow on a schedule. For example, you might run a nightly release of your Bicep code, or automatically deploy a test environment every morning. For setting this up you use the `schedule` keyword, and specify the frequency by using a cron expression:
+You can run your workflow on a set schedule, and not in response to a file change. For example, you might run a nightly release of your Bicep code or automatically deploy a test environment every morning. Use the `schedule` keyword, and set the frequency by using a cron expression:
 
 ```yaml
 on:
   schedule:
-    # * is a special character in YAML so you have to quote this string
     - cron:  '0 0 * * *'
 ```
 
 > [!NOTE]
-> A _cron expression_ is a specially formatted sequence of characters that specify how often something should happen. In this example, `0 0 * * *` means _run every day at midnight UTC_.
+> A *cron expression* is a specially formatted sequence of characters that specify how often something should happen. In this example, `0 0 * * *` means *run every day at midnight UTC*.
+>
+> In a YAML file, you need to add quotation marks around strings that contain the `*` character, such as cron expressions.
 
-The schedule event will always run your workflow on the default branch of your repository. 
+The schedule event always runs your workflow on the default branch of your repository.
 
-## Use multiple events
+## Use multiple triggers
 
-You can combine events, like in this example:
+You can combine triggers and schedules, like in this example:
 
 ```yaml
 on:
@@ -119,11 +104,14 @@ on:
     branches:
       - main
   schedule:
-    # * is a special character in YAML so you have to quote this string
     - cron:  '0 0 * * *'
 ```
 
-When you specify a push event and a schedule event in the same workflow, then the workflow will run every time a file changes on the specified branch, _and_ on the schedule you specify. In this example, the workflow runs every day at midnight UTC, and also whenever a change is pushed to the **main** branch.
+When you create a branch trigger *and* a scheduled trigger in the same workflow, the workflow runs every time a file changes on the branch that's set in the trigger *and* on the schedule you set. In this example, the workflow runs every day at midnight UTC and also whenever a change is pushed to the *main* branch.
 
 > [!TIP]
-> It's a good practice to specify the events and branches for each workflow. If you don't, then by default your workflow will automatically run whenever any files change on any branch, which isn't often what you want.
+> It's a good practice to set triggers for each workflow. If you don't set triggers, by default, your workflow automatically runs whenever any file changes on any branch, which often isn't what you want.
+
+## Webhook triggers
+
+GitHub also provides webhook events, which run automatically when certain events happen in your repository. These events include someone creating a branch, updates to your GitHub issues, or changes to pull requests. Generally, these events don't require your Bicep deployment workflow to run, but you might run other automation instead.
