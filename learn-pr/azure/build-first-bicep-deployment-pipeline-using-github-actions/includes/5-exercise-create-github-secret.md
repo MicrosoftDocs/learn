@@ -1,39 +1,39 @@
-Before you can deploy your toy company's website from a workflow, you need to enable your workflow to authenticate to Azure. In this exercise, you'll:
+Before you can deploy your toy company's website by using a workflow, you need to enable your workflow to authenticate to Azure. In this exercise, you'll:
 
 > [!div class="checklist"]
 > * Create a resource group for your website.
 > * Create an Azure AD service principal and grant it access to the resource group.
-> * Create an GitHub secret and configure it with the service principal's credentials.
+> * Create an GitHub secret and configure it to use the service principal's credentials.
 
-This exercise requires that you have permission to create applications and service principals in your Azure Active Directory (Azure AD) directory. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
+This exercise requires that you have permissions to create applications and service principals in your Azure AD directory. If you can't meet this requirement with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
 
 ## Sign in to Azure
 
 ::: zone pivot="cli"
 
-To work with service principals in Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli) tools.
+To work with service principals in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) tools.
 
-1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
+1. To open a Visual Studio Code terminal window, select **Terminal** > **New Terminal**. The window usually opens at the bottom of your screen.
 
-1. If the dropdown control at the right displays **bash**, you have the right shell to work from, and you can skip to the next section.
+1. If the dropdown control on the right displays **bash**, the correct shell is open and you can skip to the next section.
 
-    :::image type="content" source="../../includes/media/bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with bash displayed in the dropdown control." border="true":::
+   :::image type="content" source="../../includes/media/bash.png" alt-text="Screenshot of the Visual Studio Code terminal window, with bash displayed in the dropdown control.":::
 
-    If **bash** isn't displayed, select the dropdown control, choose **Select Default Shell**, and then select **bash**.
+   If **bash** isn't displayed, select the dropdown control, choose **Select Default Shell**, and then select **bash**.
 
-    :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window, displaying the dropdown list for selecting a preferred terminal shell." border="true":::
+   :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window that displays the dropdown list for selecting a preferred terminal shell.":::
 
-1. Select the plus sign (**+**) in the terminal to create a new terminal with Bash as the shell.
+1. In the terminal, select the plus sign (**+**) to create a new terminal with Bash as the shell.
 
 [!INCLUDE [Upgrade Azure CLI](../../includes/azure-template-bicep-exercise-upgrade-cli.md)]
 
 ### Sign in to Azure by using the Azure CLI
 
-1. In the Visual Studio Code terminal, sign in to Azure by running the following command: 
+1. In the Visual Studio Code terminal, run the following command to sign in to Azure:
 
-    ```azurecli
-    az login
-    ```
+   ```azurecli
+   az login
+   ```
 
 1. In the browser that opens, sign in to your Azure account.
 
@@ -41,29 +41,29 @@ To work with service principals in Azure, you need to sign in to your Azure acco
 
 ::: zone pivot="powershell"
 
-To deploy this template to Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps), and sign in to the same account that activated the sandbox.
+To deploy this template to Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true), and sign in to the same account that you used to activate the sandbox.
 
-1. Open a Visual Studio Code terminal window by selecting **Terminal** > **New Terminal**. The window usually opens at the bottom of the screen.
+1. To open a Visual Studio Code terminal window, select **Terminal** > **New Terminal**. The window usually opens at the bottom of your screen.
 
-2. If the dropdown control at the right displays **pwsh** or **PowerShell**, you have the right shell to work from, and you can skip to the next section.
+1. If the dropdown control at the right displays **pwsh** or **PowerShell**, the correct shell is open and you can skip to the next section.
 
-    :::image type="content" source="../../includes/media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with 'pwsh' displayed in the dropdown control." border="true":::
+   :::image type="content" source="../../includes/media/pwsh.png" alt-text="Screenshot of the Visual Studio Code terminal window, with 'pwsh' displayed in the dropdown control.":::
 
-   If **pwsh** or **PowerShell** isn't displayed, select the dropdown control, choose **Select Default Shell**, and then select **pwsh** or **PowerShell**.   
+   If **pwsh** or **PowerShell** isn't displayed, select the dropdown control, choose **Select Default Shell**, and then select **pwsh** or **PowerShell**.
 
-    :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window, displaying the dropdown list for selecting your preferred terminal shell." border="true":::
+   :::image type="content" source="../../includes/media/select-shell.png" alt-text="Screenshot of the Visual Studio Code terminal window that displays the dropdown list for selecting your preferred terminal shell.":::
 
-3. Select the plus sign (**+**) in the terminal to create a new terminal with **pwsh** or **PowerShell** as the shell.
+1. In the terminal, select the plus sign (**+**) to create a new terminal with pwsh or PowerShell as the shell.
 
 [!INCLUDE [Upgrade Azure PowerShell](../../includes/azure-template-bicep-exercise-upgrade-powershell.md)]
 
 ### Sign in to Azure by using Azure PowerShell
 
-1. In the Visual Studio Code terminal, sign in to Azure by running the following command:
+1. In the Visual Studio Code terminal, run the following command to sign in to Azure:
 
-    ```azurepowershell
-    Connect-AzAccount
-    ```
+   ```azurepowershell
+   Connect-AzAccount
+   ```
 
 1. In the browser that opens, sign in to your Azure account.
 
@@ -73,13 +73,13 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 ::: zone pivot="cli"
 
-1. Run this Azure CLI command in the Visual Studio Code terminal to create a new resource group:
+1. To create a new resource group, run this Azure CLI command in the Visual Studio Code terminal:
 
    ```azurecli
    az group create --name ToyWebsite --location westus
    ```
 
-1. Look at the JSON output from the previous command. It includes an `id` property, which is the resource group's ID.
+1. Look at the JSON output from the command. It includes an `id` property, which is the resource group's ID.
 
    Copy the resource group ID somewhere safe. You'll use it soon.
 
@@ -87,13 +87,13 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 ::: zone pivot="powershell"
 
-1. Run this Azure PowerShell commands in the Visual Studio Code terminal to create a resource group:
+1. To create a resource group, run this Azure PowerShell command in the Visual Studio Code terminal:
 
    ```azurepowershell
    New-AzResourceGroup -Name ToyWebsite -Location westus
    ```
 
-1. Look at the output from the previous command. It includes a `ResourceId`, which is the resource group's fully qualified ID.
+1. Look at the output from the command. It includes a `ResourceId`, which is the resource group's fully qualified ID.
 
    Copy the resource group ID somewhere safe. You'll use it soon.
 
@@ -103,7 +103,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 ::: zone pivot="cli"
 
-1. Run this Azure CLI command in the Visual Studio Code terminal to create a service principal and assign it the Contributor role for your resource group. Replace the placeholder with the resource group ID you copied in the previous step.
+1. To create a service principal and assign it the Contributor role for your resource group, run the following Azure CLI command in the Visual Studio Code terminal. Replace the placeholder with the resource group ID you copied in the last step.
 
    ```azurecli
    az ad sp create-for-rbac \
@@ -113,7 +113,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
      --sdk-auth
    ```
 
-1. Look at the JSON output from the previous command. It will look like this:
+1. Select the JSON output from the previous command. It looks like this:
 
    ```json
    {
@@ -128,13 +128,14 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
      "galleryEndpointUrl": "https://gallery.azure.com/",
      "managementEndpointUrl": "https://management.core.windows.net/"
    }
-   Copy the entire output somewhere safe (including the curly braces). You'll use it soon. 
+
+   Copy the entire output somewhere safe, including the curly braces. You'll use it soon. 
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-1. Run these Azure PowerShell commands in the Visual Studio Code terminal to create a service principal and assign it the Contributor role for your resource group. Replace the placeholder with the resource group ID you copied in the previous step. 
+1. To create a service principal and assign it the Contributor role for your resource group, run the following Azure PowerShell code in the Visual Studio Code terminal. Replace the placeholder with the resource group ID you copied in the last step.
 
    ```azurepowershell
    $resourceGroupId = 'RESOURCE_GROUP_ID'
@@ -154,13 +155,24 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
    $output | ConvertTo-Json
    ```
 
-1. The output of these commands will give you a JSon object. Copy the entire output somewhere safe (including the curly braces). You'll use it soon.  
+1. Select the JSON output from the previous command. It looks like this:
+
+   ```json
+   {
+     "clientId": "c6bf233f-d1b8-480a-9cf7-27e2186345d2",
+     "clientSecret": "<secret value>",
+     "subscriptionId": "f0750bbe-ea75-4ae5-b24d-a92ca601da2c",
+     "tenantId": "dbd3173d-a96b-4c2f-b8e9-babeefa21304"
+   }
+   ```
+
+   Copy the entire output somewhere safe, including the curly braces. You'll use it soon.
 
 ::: zone-end
 
 ## Create a GitHub secret
 
-Now that you've created the resource group and service principal, you create a secret in your GitHub repository.
+You've created a resource group and a service principal. Next, create a secret in GitHub Actions.
 
 1. In your browser, navigate to your GitHub repository.
 
@@ -173,7 +185,9 @@ Now that you've created the resource group and service principal, you create a s
    :::image type="content" source="../media/5-create-repository-secret.png" alt-text="Screenshot of the GitHub interface showing the 'Secrets' page, with the 'Create repository secret' button highlighted." border="true":::
 
 1. Name the secret *AZURE_CREDENTIALS*.
-1. In the **Value** field, paste the JSON object that you copied in earlier in the exercise.
+
+1. In the **Value** field, paste the JSON object that you copied in the previous section.
+
 1. Select **Add secret**. 
 
    :::image type="content" source="../media/5-create-repository-secret-details-1.png" alt-text="Screenshot of the GitHub interface showing the 'Actions Secrets/New Secret' page, with the Name and Value filled out and the 'Add secret' button highlighted." border="true":::
