@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Test your knowledge.
-  ms.date: 07/01/2021
+  ms.date: 08/11/2021
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
@@ -49,4 +49,3 @@ quiz:
     - content: Credly digital badges
       isCorrect: true
       explanation: Correct! Digital badges by Credly allow students to officially share their certification exam success. The digital badges can be easily shared on professional platforms, such as LinkedIn, by embedding a link that authenticates the student as passing the exam.  
-
