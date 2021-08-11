@@ -82,7 +82,7 @@ As we described in the preceding unit, Azure provides templates that help you ge
 
 1. In the **Select a template** section, select **HTTP trigger**.
 
-1. In the **Template details** section, in the **New Function** field, enter *DriveGearTemperatureService*. Leave the **Authorization level** as *Function*, and select **Create** to create the function. Your *DriveGearTemperatureService** Function App pane appears.
+1. In the **Template details** section, in the **New Function** field, enter *DriveGearTemperatureService*. Leave the **Authorization level** as *Function*, and select **Create** to create the function. Your *DriveGearTemperatureService* Function App pane appears.
 
 1. In the left menu pane, under **Developer**, select **Code + Test**. The code editor opens with the contents of the *run.ps1* code file. The default code that the template generated for us is listed in the following snippet.
 
@@ -171,13 +171,13 @@ Because you specified *Function* when you created this function, you need to sup
 
 1. To find the function and master keys, in the left menu pane, under **Developer**, select **Function Keys**. By default, they are hidden, and you need to display them.
 
-1. Show the default Function Key, and copy it to the clipboard. Store this key to Notepad or a similar app for later use.
+1. Show the default Function Key by selecting *Hidden value. Click to show value* in the **Value** field, and copy it to the clipboard. Store this key to Notepad or a similar app for later use.
 
     :::image type="content" source="../media/5-get-function-key.png" alt-text="Screenshot of the Azure portal showing the function Manage pane with the revealed function key highlighted.":::
 
 1. At the bottom of the screen, scroll to the left, and select your function. At the top, under the **Get Function Url** section, copy your **URL** by selecting the *Copy to clipboard* icon at the end of the URL. Store this link to Notepad or a similar app for later use.
 
-1. Next, scroll to the left, and from the left menu pane, under **Functions**, select **Functions**, and then select the **HttpTrigger1**.
+1. Next, scroll to the left, and from the left menu pane, under **Functions**, select **Functions**, and then select **HttpTrigger1** (or **DriveGearTemperaturService** for PowerShell). The **HttpTrigger1** (or **DriveGearTemperatureService** for PowerShell) Function pane appears.
 
 1. In the left menu pane, under **Developer**, select **Code + Test**, and then from the top menu bar, select **Test/Run**. A **Test** pane appears.
 
@@ -245,7 +245,7 @@ We'll replace the default code in our function with the following code that impl
 
 ::: zone pivot="javascript"
 
-In the **HttpTrigger1** function pane, open the **index.js** file, and replace it with the following code. From the top menu bar, select **Save** to save the file after updating it.
+In the **HttpTrigger1** function pane, open the **index.js** file, and replace it with the following code. On the top menu bar, select **Save** to save the file after updating it.
 
 ```javascript
 module.exports = function (context, req) {
@@ -367,6 +367,10 @@ In this case, we're going to use the **Test** pane in the portal to test our fun
 
     You can see under the **Output** tab that our status field has been correctly added to each of the readings.
 
-    To see that the request has been logged to Application Insights, in the left menu pane, under **Developer**, select **Monitor**. The **Application Insights** pane appears for your trigger function.
+1. To see that the request has been logged to Application Insights, in the left menu pane, under **Developer**, select **Monitor**. The **Monitor** pane appears for your function.
 
-    ![Screenshot of the Monitor dashboard showing logging to Application Insights.](../media/5-app-insights.png)
+1. Select **Configure**. The **Application Insights** pane appears for your trigger function.
+
+1. Select **Create new resource**, and in the **New resource name** field, select your function app, and in the **Location** field, select the region you initially associated with your function app.
+
+1. Select **OK**.
