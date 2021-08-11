@@ -8,7 +8,7 @@ In the competitive higher education market, students expect more from a degree p
 
 From an employer’s perspective, certifications help prepare students for the workplace. Many employers have in-house training programs for graduates to complete when they join the company. These programs commonly include certification courses. The University of Lincoln fostered valuable relationships with companies that recognize the value of certification in the workplace. These companies view graduates who are equipped with certifications as more industry-ready because of the certification opportunities they accessed while completing their degree programs.
 
-<sup>1</sup> [Microsoft Cloud Skills Report: Closing the Cloud Skills Chasm](https://download.microsoft.com/documents/Microsoft_Cloud_Skill_Report.pdf?azure-portal=true)</br>
+<sup>1</sup> [Microsoft Cloud Skills Report: Closing the Cloud Skills Chasm](https://download.microsoft.com/download/8/6/e/86e790d8-aace-4e2f-b4b2-dd848e13a048/Microsoft_Cloud_Skill_Report.pdf?azure-portal=true)</br>
 <sup>2</sup> [Cloud Computing: Developing Contemporary Computer Science Curriculum for a Cloud-First Future](https://dl.acm.org/doi/10.1145/3293881.3295781?azure-portal=true)</br>
 <sup>3</sup> [Cloud Computing Curriculum: Developing Exemplar Modules for General Course Inclusion](https://dl.acm.org/doi/10.1145/3437800.3439206?azure-portal=true)</br>
 <sup>4</sup> [Embedding Certification into Bachelor’s Degrees](https://workcred.org/Documents/Embedding-Certifications-Into-Bachelors-Degrees-Certification-Degree-Pathways-Project-Framework-Report-November-2020.pdf?azure-portal=true)
