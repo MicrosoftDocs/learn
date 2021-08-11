@@ -1,5 +1,5 @@
 var virtualNetworkName = 'ToyTruck-vnet'
 var virtualMachineName = 'ToyTruckServer'
-var networkInterfaceName = 'toytruckserver890'
+var networkInterfaceName = 'YOUR-NETWORK-INTERFACE-NAME'
 var publicIPAddressName = 'ToyTruckServer-ip'
 var networkSecurityGroupName = 'ToyTruckServer-nsg'

@@ -32,7 +32,8 @@ var virtualMachineImageReference = {
   sku: '20_04-lts'
   version: 'latest'
 }
-var networkInterfaceName = 'toytruckserver890'
+var virtualMachineOSDiskName = 'YOUR-OS-DISK-NAME'
+var networkInterfaceName = 'YOUR-NETWORK-INTERFACE-NAME'
 var publicIPAddressName = 'ToyTruckServer-ip'
 var networkSecurityGroupName = 'ToyTruckServer-nsg'
 
@@ -93,7 +94,7 @@ resource virtualMachine 'Microsoft.Compute/virtualMachines@2021-03-01' = {
       imageReference: virtualMachineImageReference
       osDisk: {
         osType: 'Linux'
-        name: '${virtualMachineName}_disk1_23e6a144c4ea4049b3e2be24b78a9e81'
+        name: virtualMachineOSDiskName
         createOption: 'FromImage'
         caching: 'ReadWrite'
         managedDisk: {

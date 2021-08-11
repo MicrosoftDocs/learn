@@ -81,11 +81,13 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 1. Unzip the file to a folder that you can access easily, like your desktop.
 
+1. Open Visual Studio Code.
+
 ## Prepare your local environment
 
 ::: zone pivot="cli"
 
-[!include[](../../includes/azure-template-exercise-terminal-cli.md)]
+[!INCLUDE [Open VS Code terminal (CLI)](../../includes/azure-template-exercise-terminal-cli.md)]
 
 [!INCLUDE [Upgrade Azure CLI](../../includes/azure-template-bicep-exercise-upgrade-cli.md)]
 
@@ -95,11 +97,11 @@ To simulate the situation in the example scenario, you'll first deploy a virtual
 
 ::: zone pivot="powershell"
 
-[!include[](../../includes/azure-template-exercise-terminal-powershell.md)]
+[!INCLUDE [Open VS Code terminal (PowerShell)](../../includes/azure-template-exercise-terminal-powershell.md)]
 
-[!INCLUDE [Upgrade Azure CLI](../../includes/azure-template-bicep-exercise-upgrade-powershell.md)]
+[!INCLUDE [Upgrade Azure PowerShell](../../includes/azure-template-bicep-exercise-upgrade-powershell.md)]
 
-[!INCLUDE [Install Bicep (CLI)](../../includes/azure-template-bicep-exercise-install-bicep-powershell.md)]
+[!INCLUDE [Install Bicep (PowerShell)](../../includes/azure-template-bicep-exercise-install-bicep-powershell.md)]
 
 ::: zone-end
 

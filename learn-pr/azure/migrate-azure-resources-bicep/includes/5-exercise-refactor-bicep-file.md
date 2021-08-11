@@ -74,6 +74,8 @@ The parameters in the current template don't really need to be parameters. Here,
 
    :::code language="bicep" source="code/5-variables.bicep" :::
 
+   Notice that the value of the `networkInterfaceName` includes a three-digit number. The number is different between deployments. Ensure you copy the variable's value from your reference template.
+
 ## Update the resource locations
 
 All of the resources currently use a hard-coded location. Here, you'll add a parameter so that the template becomes more reusable.
@@ -111,15 +113,38 @@ Your template has some hard-coded values where parameters or variables would be 
    param publicIPAddressSkuName string = 'Basic'
    
    @description('The virtual network address range.')
-   param virtualNetworkAddressPrefix string = '10.0.0.0/16'
+   param virtualNetworkAddressPrefix string
    
    @description('The default subnet address range within the virtual network')
-   param virtualNetworkDefaultSubnetAddressPrefix string = '10.0.0.0/24'
+   param virtualNetworkDefaultSubnetAddressPrefix string
    ```
+
+   Notice that some of the parameters have default values, and others don't. Later, you'll create a parameter file to set most of these values.
 
 1. Add the following new variable declarations:
 
-   :::code language="bicep" source="code/5-main-refactored.bicep" range="26-37" highlight="2, 3-8" :::
+   ```bicep
+   var virtualNetworkDefaultSubnetName = 'default'
+   var virtualMachineImageReference = {
+     publisher: 'canonical'
+     offer: '0001-com-ubuntu-server-focal'
+     sku: '20_04-lts'
+     version: 'latest'
+   }
+   ```
+
+1. Add the following variable declaration, replacing the values with the OS disk name from your own reference template:
+
+   :::code language="bicep" source="code/5-main-refactored.bicep" range="35":::
+
+   Notice that the value of the `virtualMachineOSDiskName` is unique. The value is different between deployments. Ensure you copy the variable's value from your reference template.
+
+   > [!WARNING]
+   > Ensure you copy the values for the `virtualMachineOSDiskName` and `networkInterfaceName` variables correctly. Otherwise, Azure won't understand that you're declaring the same resources that already exist, and it might try to create new resources.
+
+   Your variable declarations should now look like this:
+
+   :::code language="bicep" source="code/5-main-refactored.bicep" range="26-38" highlight="2, 4-9, 10, 11" :::
 
 1. Update the `publicIPAddress` resource to refer to the `publicIPAddressSkuName` parameter in its `sku.name` property.
 
@@ -133,6 +158,7 @@ Your template has some hard-coded values where parameters or variables would be 
 
    - Use the `virtualMachineSizeName` parameter for the `hardwareProfile.vmSize` property.
    - Use the `virtualMachineImageReference` variable for the `storageProfile.imageReference` property.
+   - Use the `virtualMachineOSDiskName` variable for the `storageProfile.osDisk.name` property.
    - Use the `virtualMachineManagedDiskStorageAccountType` parameter for the `storageProfile.osDisk.managedDisk.storageAccountType` property.
    - Use the `virtualMachineAdminUsername` parameter for the `osProfile.adminUsername` property.
    - Directly below the `osProfile.adminUsername` property, add a new property named `adminPassword`. Set its value to the `virtualMachineAdminPassword` parameter.
@@ -180,17 +206,27 @@ Your parameters are currently defined as default values in your template. To mak
 
 1. Create a new file named *main.parameters.production.json*.
 
-1. Paste the following JSON into the *main.parameters.production.json* file:
+1. Paste the following JSON into the *main.parameters.production.json* file.
 
    :::code language="json" source="code/5-parameters.json" :::
 
-1. Update your *main.bicep* to remove the default values for the parameters you specified in the parameters file. Notice that you leave the default values for the `location` and `publicIPAddressSkuName` parameters, since they are likely to be the same for all of your environments.
+1. Update the values for the `virtualNetworkAddressPrefix` and `virtualNetworkDefaultSubnetAddressPrefix` parameters to match the IP address ranges that are specified in your reference template's virtual network resource.
+
+   For example, here's how they are specified in a reference template. Your IP addresses might be different to those in this example:
+
+   :::code language="bicep" source="code/3-main-migrated.bicep" range="31-54" highlight="7, 14" :::
+
+1. Update your *main.bicep* file to remove the default values for the parameters you specified in the parameters file. Notice that you leave the default values for the `location` and `publicIPAddressSkuName` parameters, since they are likely to be the same for all of your environments.
 
 ## Verify your template
 
 1. At the end of the _refactor_ phase, your *main.bicep* file should look similar to the following:
 
    :::code language="bicep" source="code/5-main-refactored.bicep" :::
+
+   Your *main.parameters.production.json* file should look similar to the following, although you may have different IP address ranges listed:
+
+   :::code language="json" source="code/5-parameters-completed.json" :::
 
 1. Select **View** > **Problems** to show the problems pane.
 
