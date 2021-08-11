@@ -128,6 +128,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
      "galleryEndpointUrl": "https://gallery.azure.com/",
      "managementEndpointUrl": "https://management.core.windows.net/"
    }
+   ```
 
    Copy the entire output somewhere safe, including the curly braces. You'll use it soon. 
 

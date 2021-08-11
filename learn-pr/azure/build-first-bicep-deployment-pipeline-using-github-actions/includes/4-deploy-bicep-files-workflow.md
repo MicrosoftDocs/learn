@@ -27,7 +27,7 @@ When you create a secret, you give it a name. Steps refer to the secret by using
 
 When your workflow starts, the runner that's running your deployment steps has access to the secret value. A workflow step uses the credentials to sign in to Azure, just like you sign in yourself. Then, the steps that are defined in the workflow use the service principal's *identity*.
 
-:::image type="content" source="../media/4-service-connection.png" alt-text="Diagram that shows a workflow that includes an Azure deployment step, which accesses a secret and then deploys to Azure." border="false":::
+:::image type="content" source="../media/4-secret.png" alt-text="Diagram that shows a workflow that includes an Azure deployment step, which accesses a secret and then deploys to Azure." border="false":::
 
 You must ensure that your service principal has the permissions it needs to execute your deployment steps. For example, you might need to assign the service principal the Contributor role for the resource group it deploys your resources to.
 

@@ -17,7 +17,7 @@ During the process, you'll:
 
 1. Add the following trigger definition in its place:
 
-   :::code language="yaml" source="code/8-workflow.yml" range="2-7" :::
+   :::code language="yaml" source="code/8-workflow.yml" range="3-7" :::
 
 1. Save your changes to the file.
 

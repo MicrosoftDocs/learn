@@ -10,7 +10,7 @@ You also want your colleagues to be able to make changes to the Bicep templates 
 
 ## What will you be doing?
 
-In this module, you'll learn how to automate the deployment of Bicep templates by using GitHub Actions. You'll understand the benefits of using GitHub Actions workflows to deploy your code, and you'll build a basic worfkflow that deploys a Bicep file. You'll also learn how to authorize your workflow to deploy resources to your Azure environment and how to set when a workflow runs.
+In this module, you'll learn how to automate the deployment of Bicep templates by using GitHub Actions. You'll understand the benefits of using GitHub Actions workflows to deploy your code, and you'll build a basic workflow that deploys a Bicep file. You'll also learn how to authorize your workflow to deploy resources to your Azure environment and how to set when a workflow runs.
 
 ## What is the main goal?
 
