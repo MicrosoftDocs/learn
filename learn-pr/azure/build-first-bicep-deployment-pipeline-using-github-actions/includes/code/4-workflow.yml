@@ -1,4 +1,4 @@
-name: learn-github-actions
+name: MyWorkflow
 
 on: [workflow_dispatch]
 
@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+        path: repo
     - uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
@@ -19,4 +21,4 @@ jobs:
       with:
         resourceGroupName: ${{ env.AZURE_RESOURCEGROUP_NAME }}
         template: ./deploy/main.bicep
-        parameters: environmentType=${{ env.ENVIRONMENT }} deployToyManualsStorageAccount=${{ env.DEPLOYSTORAGE }}
+        parameters: environmentType=Test

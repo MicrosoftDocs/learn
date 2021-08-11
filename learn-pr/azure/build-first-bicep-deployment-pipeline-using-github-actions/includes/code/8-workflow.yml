@@ -1,14 +1,17 @@
 name: learn-github-actions
+
 on: 
   push:
     branches: 
       - main
     paths: 
       - 'deploy/**'
+
 env: 
     AZURE_RESOURCEGROUP_NAME: ToyWebsite
     ENVIRONMENT: nonprod
     DEPLOYSTORAGE: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest

@@ -8,11 +8,12 @@ Your Bicep files are stored in your Git repository. In GitHub Actions, you need 
 
 To check out your code, you can use the `actions/checkout@v2` action:
 
-```yaml
-- uses: actions/checkout@v2
-  with:
-    path: repo
-```
+:::code language="yaml" source="code/4-workflow.yml" range="1-2, 10-16" highlight="7-9":::
+
+Notice that the workflow includes the `uses` keyword. This indicates you want to use a pre-defined action named `actions/checkout`.
+
+> [!NOTE]
+> Actions are always versioned. In this case the workflow uses version 2, so `@v2` is appended to the action name.
 
 After the workflow includes this action, your repository's code will be checked out onto the runner's file system. You specify the path the files should be stored in by using the `path` parameter.
 
@@ -57,16 +58,7 @@ You can also use GitHub secrets to store other kinds of secret values your workf
 
 Before your workflow can execute commands against your Azure environment, it first needs to sign in. There is an action named `azure/login` that handles the sign-in process. The action uses a GitHub secret to get the credentials for your service principal:
 
-```yaml
-- uses: azure/login@v1
-  with:
-    creds: ${{ secrets.AZURE_CREDENTIALS }}
-```
-
-Notice that the workflow includes the `uses` keyword. This indicates you want to use a pre-defined action named `azure/login`.
-
-> [!NOTE]
-> Actions are always versioned. In this case the workflow uses version 1, so `@v1` is appended to the action name.
+:::code language="yaml" source="code/4-workflow.yml" range="1-2, 10-19" highlight="10-12":::
 
 The `azure/login` action has a `creds` parameter to specify the Azure credentials to use when signing in. In this example, the workflow uses the `AZURE_CREDENTIALS` secret value as the credentials.
 
@@ -81,13 +73,7 @@ After you've signed in to Azure, you can use the service principal's identity to
 
 Here's an example of how you can configure a step to use the `azure/arm-deploy` action:
 
-```yaml
-- uses: azure/arm-deploy@v1
-  with:
-    resourceGroupName: github-action-arm-rg
-    template: ./deploy/main.bicep
-    parameters: environmentType=Test
-```
+:::code language="yaml" source="code/4-workflow.yml" range="1-2, 10-24" highlight="13-17":::
 
 The `azure/arm-deploy` action accepts several parameters, including:
 
@@ -95,7 +81,7 @@ The `azure/arm-deploy` action accepts several parameters, including:
 - `template`. This is the path to the Bicep file in your repository. The path is relative to the repository's root.
 - `parameters`. This indicates any parameter values you provide at deployment time. In this example, we provide a value for the _environmentType_ parameter.
 
-Because the previous `azure/login` action already signed you in to Azure, the `azure/arm-deploy` step executes on an authenticated runner.
+Because the previous `azure/login` action already signed your workflow in to Azure, the `azure/arm-deploy` step executes on an authenticated runner.
 
 ## Variables
 
@@ -136,5 +122,3 @@ GitHub Actions also uses *default environment variables*. Default environment va
 - `GITHUB_RUN_NUMBER`, A unique number for each run of a particular workflow in a repository. This number begins at 1 for the workflow's first run, and increments with each new run. You might use this variable to name your Azure deployment, so you can track the deployment back to the specific workflow run that triggered it.
    > [!NOTE]
    > In GitHub Actions, you can re-execute a workflow run. When you do this, the `GITHUB_RUN_NUMBER` doesn't change. So, you shouldn't use the `GITHUB_RUN_NUMBER` variable to count how many times your workflow has executed.
-
-<!-- TODO use a single example workflow file -->
