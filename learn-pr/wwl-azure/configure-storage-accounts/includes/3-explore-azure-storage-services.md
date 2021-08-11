@@ -29,7 +29,7 @@ File shares can be used for many common scenarios:
  -  Configuration files can be stored on a file share and accessed from multiple VMs. Tools and utilities used by multiple developers in a group can be stored on a file share, ensuring that everybody can find them, and that they use the same version.
  -  Diagnostic logs, metrics, and crash dumps are just three examples of data that can be written to a file share and processed or analyzed later.
 
-At this time, Active Directory-based authentication and access control lists (ACLs) are not supported, but they will be at some time in the future. The storage account credentials are used to provide authentication for access to the file share. This means anybody with the share mounted will have full read/write access to the share.
+The storage account credentials are used to provide authentication for access to the file share. This means anybody with the share mounted will have full read/write access to the share.
 
 ## Queue storage
 
