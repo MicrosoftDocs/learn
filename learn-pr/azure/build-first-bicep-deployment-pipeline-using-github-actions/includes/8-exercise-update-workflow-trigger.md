@@ -1,4 +1,6 @@
-You previously created a workflow that can execute a Bicep deployment to your Azure environment. In this exercise you'll make the workflow run automatically whenever a file changes on your *main* branch. You'll use the updated workflow to deploy a change that your colleague requested - they want the website app to be always running, and they asked you to configure the App Service Always On feature for the site.
+A colleague asks you to turn on the App Service Always On feature on the company website, so the website app is always running.
+
+In this exercise, you'll update the workflow you created to run automatically whenever a file changes on your *main* branch. You'll use the updated workflow to deploy the requested configuration change to the website.
 
 During the process, you'll:
 

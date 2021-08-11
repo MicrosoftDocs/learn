@@ -126,7 +126,7 @@ Now, you're ready to run your workflow!
 
    :::image type="content" source="../media/6-portal-deployment-list.png" alt-text="Screenshot of the Azure portal that shows the resource group deployment history, with the deployment highlighted.":::
 
-   The deployment name is the same as the name of the pipeline run.
+   The deployment name is the same as the name of the workflow run.
 
 1. To see what resources were deployed, select the deployment. To expand the deployment to see more details, select **Deployment details**. In this case, there's an Azure App Service plan and an app.
 

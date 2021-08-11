@@ -1,4 +1,4 @@
-You now have a working workflow that deploys your Bicep file to your Azure environment. However, whenever you change your file, you must manually run your workflow. In this unit, you'll learn how to workflow your pipeline to run automatically whenever your Bicep code changes.
+You now have a working workflow that deploys your Bicep file to your Azure environment. However, whenever you change your file, you must manually run your workflow. In this unit, you'll learn how to trigger your workflow to run automatically whenever your Bicep code changes.
 
 [!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
 
