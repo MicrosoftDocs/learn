@@ -50,7 +50,7 @@ During the process, you'll:
 
 1. In your browser, select GitHub's **Actions** menu, and select your workflow.
 
-1. Select the most recent run to see that the workflow ran automatically. The workflow ran because you pushed your changes to a branch that the push trigger monitors. If the pipeline is still running, wait a minute, and then refresh the page.
+1. Select the most recent run to see that the workflow ran automatically. The workflow ran because you pushed your changes to a branch that the push trigger monitors. If the workflow is still running, wait a minute, and then refresh the page.
 
    :::image type="content" source="../media/8-failed.png" alt-text="Screenshot of the GitHub interface showing the failed workflow run." border="true":::
 
@@ -63,7 +63,7 @@ During the process, you'll:
    This error message indicates that the deployment failed because the App Service app was deployed by using the F1 free tier, which doesn't support the Always On feature.
 
    > [!IMPORTANT]
-   > This example illustrates how it's important to test your Bicep files, including all the parameter values you use. It's easy for subtle errors to be added to your resource configuration or other code. You might not discover an issue until your pipeline deploys the code and it fails. In a future module, you'll learn some strategies you can use to verify and test your Bicep code.
+   > This example illustrates how it's important to test your Bicep files, including all the parameter values you use. It's easy for subtle errors to be added to your resource configuration or other code. You might not discover an issue until your workflow deploys the code and it fails. In a future module, you'll learn some strategies you can use to verify and test your Bicep code.
 
 ## Fix the Bicep file and see the workflow triggered again
 
