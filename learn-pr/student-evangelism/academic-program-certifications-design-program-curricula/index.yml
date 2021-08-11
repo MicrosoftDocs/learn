@@ -3,7 +3,7 @@ uid: learn.student-evangelism.academic-program-certifications-design-program-cur
 metadata:
   title: Design degree program curricula that implement certification
   description: Design academic curricula that include Microsoft certification implemented at the course and program levels, and determine how students can earn academic credit for certification courses. 
-  ms.date: 07/01/2021
+  ms.date: 08/11/2021
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
     - Familiarity with academic processes for course development in higher education.
     - Experience creating and managing learning resources for academic courses.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/student-evangelism/academic-program-certifications-design-program-curricula-social.svg
 levels:
 - beginner
 roles:
