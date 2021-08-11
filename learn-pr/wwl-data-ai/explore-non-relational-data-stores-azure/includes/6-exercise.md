@@ -1,4 +1,4 @@
-In the sample scenario, suppose that you've created the following data stores:
+In the sample scenario, suppose that you've created the following data stores: 
 
 - A Cosmos DB database for holding information about the products that Contoso manufactures.
 - A blob container in Azure Storage for holding the images of products.
