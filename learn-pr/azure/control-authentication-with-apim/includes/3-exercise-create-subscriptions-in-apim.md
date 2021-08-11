@@ -21,7 +21,7 @@ To save time, let's start by running a script to host our API in Azure. The scri
 - Configure Git locally
 - Deploy our Web API to our App Service instance
 
-1. Run the following git clone command in the Cloud Shell to clone the repo that contains the source for our app, as well as our setup script from GitHub.
+1. Run the following git clone command in Azure Cloud Shell to clone the repo that contains the source for our app, as well as our setup script from GitHub.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-control-authentication-with-apim.git
@@ -41,14 +41,14 @@ To save time, let's start by running a script to host our API in Azure. The scri
 
     The script takes about a minute to run. When the script finishes, it displays two URLs that you can use to test the app deployment. Observe that during deployment, all dependencies needed for our app to run are automatically installed on the remote App Service.
 
-1. To test that our app deployed correctly, copy and paste the first URL from the Cloud Shell output into your favorite browser. The browser should display the Swagger UI for our app and declare the following RESTful endpoints:
+1. To test that our app deployed correctly, copy and paste the first URL from Cloud Shell output into your favorite browser. The browser should display the Swagger UI for our app, and declare the following RESTful endpoints:
 
     - **api/weather/{latitude}/{longitude}**, which returns meteorological data for the current day at the specified latitude and longitude (double values).
     - **api/weather/{date}/{latitude}/{longitude}**, which returns meteorological data for the specified day (date value) at the specified latitude and longitude (double values).
 
     ![Swagger view.](../media/3-swagger.png)
 
-1. Finally, copy the last URL from the Cloud Shell output. This location is the Swagger JSON URL. You'll need it later in this exercise.
+1. Finally, copy the last URL from Cloud Shell output. This location is the Swagger JSON URL. You'll need it later in this exercise.
 
 ## Deploy an API gateway
 
@@ -95,7 +95,7 @@ After deployment has completed, import the Weather API into the API Management g
 
 1. In the **OpenAPI specification** text box, paste the Swagger JSON URL that you saved earlier in the exercise. When you click out of the box, some of the other fields will be populated for you. This data is imported from the OpenAPI specification that Swagger created.
 
-1. Leave the other settings at their defaults, and then select **Create**.
+1. Accept the defaults for all the other settings, and then select **Create**.
 
     ![Importing this API in API Management.](../media/3-import-the-api.png)
 
@@ -105,7 +105,7 @@ The final step is to add a subscription key for the weather API.
 
 1. In the left menu bar, under **APIs**, select **Subscriptions**. The **Subscriptions** pane appears for your API Management service.
 
-1. From the top menu bar, select **Add subscription**. The **New subscription** pane appears.
+1. On the top menu bar, select **Add subscription**. The **New subscription** pane appears.
 
     ![Screenshot showing how to add a new subscription.](../media/3-subscriptions.png)
 
@@ -121,9 +121,9 @@ The final step is to add a subscription key for the weather API.
 
     ![Screenshot showing how to add a new subscription again.](../media/3-add-subscription.png)
 
-1. Select **Save**. The **Subscriptions** pane reappears with your *Weather Data Subscription* entry.
+1. Select **Create**. The **Subscriptions** pane reappears with your *Weather Data Subscription* entry.
 
-1. Select the ellipsis from the end of your *Weather Data Subscription* entry, and then select **Show/hide keys***.
+1. Select the ellipsis at the end of your *Weather Data Subscription* entry, and then select **Show/hide keys**.
 
 1. Copy the *Primary key* from your newly added subscription to your clipboard. You will need this key for the next step.
 
@@ -131,7 +131,7 @@ The final step is to add a subscription key for the weather API.
 
 Now the API is secured with a key, and we can test the API with and without a key.
 
-1. To make a request without passing a subscription key, in Azure Cloud Shell, run the following cURL command, and substitute the name of the API gateway that you previously created.
+1. To make a request without passing a subscription key, in Cloud Shell, run the following cURL command, and substitute the name of the API gateway that you previously created.
 
    ```bash
    curl -X GET https://[Name Of Gateway].azure-api.net/api/Weather/53/-1
@@ -143,7 +143,7 @@ Now the API is secured with a key, and we can test the API with and without a ke
    { "statusCode": 401, "message": "Access denied due to missing subscription key. Make sure to include subscription key when making requests to an API." }
    ```
 
-1. Run the following command to add the subscription key to the request. Remember to substitute the name of the API gateway.
+1. Run the following command to add the subscription key to the request. Remember to substitute the names of both the API gateway and the primary subscription key.
 
    ```Azure Cloud Shell
    curl -X GET https://[Name Of Gateway].azure-api.net/api/Weather/53/-1 \
