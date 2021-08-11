@@ -4,7 +4,7 @@ title: Introduction
 metadata:
   unitType: introduction
   title: introduction
-  description: TODO
+  description: Introduction to building a basic deployment workflow for Bicep by using GitHub Actions.
   ms.date: 07/20/2021
   author: vermegi
   ms.author: givermei

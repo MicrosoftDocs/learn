@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - 'deploy/**'
+
 name: AzureBicepSample
 
 jobs:

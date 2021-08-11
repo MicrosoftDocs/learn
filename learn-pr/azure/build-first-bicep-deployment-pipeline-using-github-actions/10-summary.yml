@@ -4,7 +4,7 @@ title: Summary
 metadata:
   unitType: summary
   title: Summary
-  description: Summary.
+  description: Summary for building a basic deployment workflow for Bicep by using GitHub Actions.
   ms.date: 07/20/2021
   author: vermegi
   ms.author: givermei

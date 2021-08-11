@@ -4,7 +4,7 @@ title: Exercise - Create and run a basic workflow
 metadata:
   unitType: exercise
   title: Exercise - Create and run a basic workflow
-  description: Learn about workflow, steps, and runners.
+  description: Create a basic workflow to run deployments.
   ms.date: 07/20/2021
   author: vermegi
   ms.author: givermei
