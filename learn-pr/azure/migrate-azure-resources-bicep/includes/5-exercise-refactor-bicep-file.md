@@ -113,11 +113,13 @@ Your template has some hard-coded values where parameters or variables would be 
    param publicIPAddressSkuName string = 'Basic'
    
    @description('The virtual network address range.')
-   param virtualNetworkAddressPrefix string = '10.0.0.0/16'
+   param virtualNetworkAddressPrefix string
    
    @description('The default subnet address range within the virtual network')
-   param virtualNetworkDefaultSubnetAddressPrefix string = '10.0.0.0/24'
+   param virtualNetworkDefaultSubnetAddressPrefix string
    ```
+
+   Notice that some of the parameters have default values, and others don't. Later, you'll create a parameter file to set most of these values.
 
 1. Add the following new variable declarations:
 
@@ -204,17 +206,27 @@ Your parameters are currently defined as default values in your template. To mak
 
 1. Create a new file named *main.parameters.production.json*.
 
-1. Paste the following JSON into the *main.parameters.production.json* file:
+1. Paste the following JSON into the *main.parameters.production.json* file.
 
    :::code language="json" source="code/5-parameters.json" :::
 
-1. Update your *main.bicep* to remove the default values for the parameters you specified in the parameters file. Notice that you leave the default values for the `location` and `publicIPAddressSkuName` parameters, since they are likely to be the same for all of your environments.
+1. Update the values for the `virtualNetworkAddressPrefix` and `virtualNetworkDefaultSubnetAddressPrefix` parameters to match the IP address ranges that are specified in your reference template's virtual network resource.
+
+   For example, here's how they are specified in a reference template. Your IP addresses might be different to those in this example:
+
+   :::code language="bicep" source="code/3-main-migrated.bicep" range="31-54" highlight="7, 14" :::
+
+1. Update your *main.bicep* file to remove the default values for the parameters you specified in the parameters file. Notice that you leave the default values for the `location` and `publicIPAddressSkuName` parameters, since they are likely to be the same for all of your environments.
 
 ## Verify your template
 
 1. At the end of the _refactor_ phase, your *main.bicep* file should look similar to the following:
 
    :::code language="bicep" source="code/5-main-refactored.bicep" :::
+
+   Your *main.parameters.production.json* file should look similar to the following, although you may have different IP address ranges listed:
+
+   :::code language="json" source="code/5-parameters-completed.json" :::
 
 1. Select **View** > **Problems** to show the problems pane.
 
