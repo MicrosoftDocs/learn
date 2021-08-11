@@ -179,8 +179,6 @@ You've created a resource group and a service principal. Next, create a secret i
 
 1. Select **Settings** > **Secrets**.
 
-   :::image type="content" source="../media/5-settings-secrets.png" alt-text="Screenshot of the GitHub interface showing the 'Settings' page, with the Secrets menu highlighted." border="true":::
-
 1. Select **New repository secret**.
 
    :::image type="content" source="../media/5-create-repository-secret.png" alt-text="Screenshot of the GitHub interface showing the 'Secrets' page, with the 'Create repository secret' button highlighted." border="true":::
@@ -191,4 +189,4 @@ You've created a resource group and a service principal. Next, create a secret i
 
 1. Select **Add secret**. 
 
-   :::image type="content" source="../media/5-create-repository-secret-details-1.png" alt-text="Screenshot of the GitHub interface showing the 'Actions Secrets/New Secret' page, with the Name and Value filled out and the 'Add secret' button highlighted." border="true":::
+   :::image type="content" source="../media/5-create-repository-secret-details.png" alt-text="Screenshot of the GitHub interface showing the 'New Secret' page, with the name and value completed and the 'Add secret' button highlighted." border="true":::
