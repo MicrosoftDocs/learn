@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: "Migrate Azure resources to Bicep. Migrate ARM JSON templates to Bicep."
+  description: "Knowledge check"
   ms.date: 06/21/2021
   author: joshuawaddell
   ms.author: jowaddel

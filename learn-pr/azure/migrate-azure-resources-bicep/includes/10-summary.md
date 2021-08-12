@@ -4,6 +4,8 @@ In this module, you learned about the process and recommended workflow for migra
 
 To practice this workflow, you created a virtual machine via the Azure portal and exported the resources to a JSON ARM template. You used the Bicep `decompile` command to convert the JSON template to a Bicep file. After the conversion, you migrated the resources to a deployable Bicep file. You refactored the Bicep file to adjust the symbolic names, parameters, and variables. Parameter descriptions were added to provide detail about the individual settings. You tested the refactored template using the what-if operation, made adjustments, and tested again. Finally, you deployed your template to your Azure environment.
 
+Once you've successfully deployed your production environment through your Bicep code, you're done! Now go use a pipeline and automated deployments.
+
 ## References
 
 - [Bicep at Microsoft Docs](/azure/azure-resource-manager/bicep/overview)
@@ -11,4 +13,4 @@ To practice this workflow, you created a virtual machine via the Azure portal an
 - [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/)
 - [Azure ARM Template Reference](/azure/templates/)
 - [Azure Resource Explorer](/azure/azure-resource-manager/templates/view-resources#use-resource-explorer)
-- [Azure ARM Template What-if Operation](/azure/azure-resource-manager/templates/deploy-what-if?tabs=azure-powershell)
+- [Azure Resource Manager Template Deployment What-if Operation](/azure/azure-resource-manager/templates/deploy-what-if?tabs=azure-powershell)

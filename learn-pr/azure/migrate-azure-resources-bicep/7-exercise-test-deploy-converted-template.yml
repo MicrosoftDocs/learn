@@ -4,7 +4,7 @@ title: Exercise - Test and deploy your converted template
 metadata:
   unitType: exercise
   title: Exercise - Test and deploy your converted template
-  description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: Learn how to test your migrated Bicep file using the what-if operation and how to deploy your Bicep files to production.
   ms.date: 06/21/2021
   author: joshuawaddell
   ms.author: jowaddel

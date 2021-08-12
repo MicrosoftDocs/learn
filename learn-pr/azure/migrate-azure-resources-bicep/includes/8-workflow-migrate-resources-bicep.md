@@ -1,4 +1,4 @@
-TODO: Intro paragraph
+In this module, you've learned about the five phases of the recommended workflow for migrating your Azre resources to Bicep. The five phases are: convert, migrate, refactor, test, and deploy. For quick reference, here is a summary of the process.
 
 TODO: Update image
 
@@ -26,7 +26,7 @@ The migrate phase consists of four steps:
 
 ## Refactor Phase
 
-TODO: Intro paragraph
+The main focus of this phase is to improve the quality of your Bicep code. These improvements can include changes, such as adding code comments, that bring the template in line with your template standards.
 
 The deploy phase consists of eight steps:
 
@@ -50,7 +50,7 @@ The test phase consists of two steps:
 
 ## Deploy phase
 
-TODO: Intro paragraph
+In the _deploy_ phase of migrating your resources to Bicep, the goal is to deploy your final Bicep file to production. Prior to the production deployment, there a couple of things to consider.
 
 The deploy phase consists of four steps:
 

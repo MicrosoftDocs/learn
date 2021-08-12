@@ -23,7 +23,7 @@ The what-if operation provides a preview of what changes will be made when you d
 
 When you deploy new resources or modify existing resources, it's possible to introduce breaking changes to your environments. Your deployment could modify or delete existing resources, create incorrectly configured new resources, or impact the overall functionality of your application.
 
-To help you verify your converted templates before deployment, you can use the Azure Resource Manager template deployment what-if operation. When you use the what-if operation, it compares the current state of your environment with the desired state that is defined in the template. The tool outputs the list of changes that will occur *without* applying the changes to your environment. This process can help increase your confidence level in your deployments.
+To help you verify your converted templates before deployment, you can use the [Azure Resource Manager Template Deployment What-if Operation](/azure/azure-resource-manager/templates/deploy-what-if?tabs=azure-powershell). When you use the what-if operation, it compares the current state of your environment with the desired state that is defined in the template. The tool outputs the list of changes that will occur *without* applying the changes to your environment. This process can help increase your confidence level in your deployments.
 
 The what-if operation works with Azure CLI, Azure PowerShell, and the REST API. You can also use what-if with resource group, subscription, management group, and tenant deployments. Both incremental and complete deployment modes are supported by the what-if operation.
 
@@ -45,40 +45,6 @@ When you use the what-if operation, it lists six types of changes:
 
 If you don't need to know all of the change types, you can use the `-WhatIfExcludeChangeType` argument to omit the types you're not interested in.
 
-### What-if example
-
-TODO: Create an example.
-
-::: zone pivot="cli"
-
-```azurecli
-az deployment group what-if \
-  --resource-group ToyTruck \
-  --template-file main.bicep \
-  --result-format FullResourcePayloads
-```
-
-```azurecli
-show the output
-```
-
-::: zone-end
-
-::: zone pivot="powershell"
-
-```azurepowershell
-New-AzResourceGroupDeployment `
-  -WhatIf `
-  -ResourceGroupName ToyTruck `
-  -TemplateFile main.bicep `
-  -TemplateParameterFile main.parameters.production.json
-```
-
-```azurepowershell
-show the output
-```
-
-::: zone-end
 
 > [!NOTE]
 > The what-if operation sometimes shows that a resource will change when actually no change will happen. We're working to reduce these problems, but we need your help. [Please report these problems](https://aka.ms/whatifissues).
@@ -91,14 +57,11 @@ The what-if operation is unable to resolve the reference function in a template.
 
 ### Test Deployment
 
-Before introducing your converted Bicep template to production, consider running multiple test deployments. If you have multiple environments (prod, dev, test), you may want to try deploying your template to one of your non-production environments first.
-
-  > [!NOTE]
-  > If you're going to use the converted template in a pipeline, such as Azure DevOps or GitHub Actions, consider running the deployment from your local machine first. It is better to verify the functionality of the template before adding it to your production pipeline.
+Before introducing your converted Bicep template to production, consider running multiple test deployments. If you have multiple environments (prod, dev, test), you may want to try deploying your template to one of your non-production environments first. After the deployment, compare the original resources with the new resource deployments for consistency.
 
 ## Deploy phase
 
-TODO: Intro paragraph
+In the _deploy_ phase of migrating your resources to Bicep, the goal is to deploy your final Bicep file to production. Prior to the production deployment, there a couple of things to consider.
 
 The deploy phase consists of four steps:
 
@@ -107,7 +70,7 @@ The deploy phase consists of four steps:
 1. Deploy manually.
 1. Run smoke tests.
 
-TODO: Paragraph
+TODO: Insert text here.
 
 TODO: Update image
 
@@ -119,14 +82,12 @@ TODO: Insert text here.
 
 ### Run the what-if operation against production
 
-TODO: Insert text here.
+Before deploying your final Bicep file to production, run the what-if operation
 
 ### Deploy manually
 
-TODO: Insert text here.
+If you're going to use the converted template in a pipeline, such as Azure DevOps or GitHub Actions, consider running the deployment from your local machine first. It is better to verify the functionality of the template before adding it to your production pipeline.
 
 ### Run smoke tests
 
-TODO: Insert text here.
-
-Once you've successfully deployed your production environment through your Bicep code, you're done! Now go use a pipeline and automated deployments.
+After your deployment completes, it is a good idea to run a series of tests to make sure that your application or workload is functioning properly. For example, test to see if your web app is accessible through normal access channels, such as the public Internet or across a corporate VPN. For databases, attempt to make a database connection and execute a series of queries. With virtual machines, log in to the virtual machine and make sure that all services are up and running.

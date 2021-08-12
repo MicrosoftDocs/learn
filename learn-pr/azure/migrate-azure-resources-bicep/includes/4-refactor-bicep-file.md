@@ -15,8 +15,6 @@ The deploy phase consists of eight steps:
 1. Add comments
 1. Follow Bicep best practices
 
-:::image type="content" source="../media/4-refactor.png" alt-text="Diagram of refactoring a Bicep template." border="false":::
-
 Here's the output of a the Bicep `decompile` command against a JSON template that creates an App Service plan:
 
 ```bicep
