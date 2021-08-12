@@ -41,7 +41,7 @@ Before changing our workflow, we'll add the **moment** npm package to our functi
 
 1. In the top menu bar, select **Create**. The **Create function** pane appears.
 
-1. Under **Select a template**, in the **Filter** box, enter *Durable Functions activity*, and select that template from the list. TThis template creates a durable function that is run when an activity is called by an orchestrator function.
+1. Under **Select a template**, in the **Filter** box, enter *Durable Functions activity*, and select that template from the list. This template creates a durable function that is run when an activity is called by an orchestrator function.
 
 1. Under **Template details**, for the **New Function** field, enter **Escalation** for the name of the function, and select **Create**. The **escalation** pane appears for your function.
 
