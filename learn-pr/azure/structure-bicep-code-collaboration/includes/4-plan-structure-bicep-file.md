@@ -21,7 +21,7 @@ When you group your elements by type, they might look like this:
 > [!TIP]
 > If you follow this convention, consider putting the `targetScope` at the top of the file.
 
-This ordering makes sense when you're used to other infrastructure as code languages, such as JSON ARM templates. It also can make your template easy to understand, because it's clear where to look for specific types of elements. In longer templates, though, it can be challenging to navigate and jump between the elements.
+This ordering makes sense when you're used to other infrastructure as code languages (for example, the language in Azure Resource Manager templates). It also can make your template easy to understand, because it's clear where to look for specific types of elements. In longer templates, though, it can be challenging to navigate and jump between the elements.
 
 You still have to decide how to order the elements within these categories. It's a good idea to group related parameters together. For example, all parameters that are about a storage account belong together and, within that, the storage account's SKU parameters belong together. 
 
