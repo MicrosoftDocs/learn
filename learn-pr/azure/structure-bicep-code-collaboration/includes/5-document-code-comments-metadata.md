@@ -1,6 +1,6 @@
 Good Bicep code is _self-documenting_. This means that it uses clear naming and a good structure, so that when colleagues read your code they can quickly understand what's happening. If they need to make changes, they can be confident they're modifying the right places. 
 
-In some situations, though, you might need to clarify certain code by adding extra documentation to your Bicep files. After your template is deployed and resources have been created in Azure, it's important that anyone who looks at your Azure environment understands what each resource is and what it's for.
+In some situations, though, you might need to clarify certain code by adding extra documentation to your Bicep files. Also, after your template is deployed and resources have been created in Azure, it's important that anyone who looks at your Azure environment understands what each resource is and what it's for.
 
 In this unit, you'll learn how to add comments to your Bicep files and how to use resource tags to add metadata to your Azure resources. This additional documentation gives your colleagues insights into what your code does, the logic that was used to write the code, and the purpose of your Azure resources.
 
