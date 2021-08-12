@@ -80,7 +80,7 @@ You can run your workflow on a set schedule, and not in response to a file chang
 ```yaml
 on:
   schedule:
-    - cron:  '0 0 * * *'
+    - cron: '0 0 * * *'
 ```
 
 > [!NOTE]
@@ -100,7 +100,7 @@ on:
     branches:
       - main
   schedule:
-    - cron:  '0 0 * * *'
+    - cron: '0 0 * * *'
 ```
 
 When you create a branch trigger *and* a scheduled trigger in the same workflow, the workflow runs every time a file changes on the branch that's set in the trigger *and* on the schedule you set. In this example, the workflow runs every day at midnight UTC and also whenever a change is pushed to the *main* branch.

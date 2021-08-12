@@ -10,6 +10,6 @@ metadata:
   ms.author: givermei
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 7
+durationInMinutes: 6
 content: |
   [!include[](includes/3-exercise-create-run-basic-workflow.md)]

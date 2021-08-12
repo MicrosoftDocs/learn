@@ -28,34 +28,6 @@ In this exercise, you'll:
 
 1. Select **Create repository**.
 
-## Generate a Git password (macOS)
-
-<!-- TODO we may not need this for GitHub on macOS? Test this -->
-
-When you work with Azure Repos in Visual Studio Code on macOS, you use a special password that's different from the password you use to sign in.
-
-> [!NOTE]
-> If you're using Windows, skip to the next section, *Clone the repository*.
-
-> [!NOTE]
-> Here, you create a Personal Access Token (PAT) to authenticate your Visual Studio Code to GitHub. You can also authenticate by using SSH keys. SSH keys are more complicated but more secure, so it's worth considering SSH keys for authentication when you work on your own Bicep code.
-
-1. In the upper-right corner of any page on github.com, click your profile photo, then click **Settings**.
-
-1. In the sidebar, select **Developer settings**.
-
-1. In the sidebar, select **Personal access tokens**.
-
-1. Select **Generate new token**.
-
-1. Give your token a descriptive name.
-
-1. You will now have to select the scopes, or permissions, you'd like to grant this token. To use your token to access repositories from the command line, select **repo**.
-
-1. Click **Generate token**.
-
-1. Click the **clipboard** icon to copy the token to your clipboard. For security reasons, after you navigate off the page, you will not be able to see the token again.
-
 ## Clone the repository
 
 In Visual Studio Code, clone your repository.
@@ -82,9 +54,11 @@ In Visual Studio Code, clone your repository.
 
 1. This is the first time you've used this repository, so you are prompted to sign in.
 
-   Enter <kbd>1</kbd> to authenticate using a web browser, and select <kbd>Enter</kbd>.
+   On Windows, type <kbd>1</kbd> to authenticate using a web browser, and select <kbd>Enter</kbd>.
 
-   A browser window appears. Select **Authorize**.
+   On macOS, select **Authorize**.
+
+1. A browser window appears. You may need to sign in to GitHub again. Select **Authorize**.
 
 1. Reopen Visual Studio Code in the repository folder by running the following command:
 
