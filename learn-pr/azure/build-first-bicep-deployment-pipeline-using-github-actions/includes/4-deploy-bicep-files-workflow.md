@@ -118,7 +118,7 @@ Notice that it's similar to referring to a secret value, but instead of `secret.
 
 GitHub Actions also uses *default environment variables*. Default environment variables contain predefined information you might want to use in your workflow. Here are some of the default environment variables you can use in your workflow:
 
-- `GITHUB_SHA`, The identifier of the Git commit that triggered the workflow to execute.
-- `GITHUB_RUN_NUMBER`, A unique number for each run of a particular workflow in a repository. This number begins at 1 for the workflow's first run, and increments with each new run. You might use this variable to name your Azure deployment, so you can track the deployment back to the specific workflow run that triggered it.
+- `github.sha`: The identifier of the Git commit that triggered the workflow to execute.
+- `github.run_number`: A unique number for each run of a particular workflow in a repository. This number begins at 1 for the workflow's first run, and increments with each new run. You might use this variable to name your Azure deployment, so you can track the deployment back to the specific workflow run that triggered it.
    > [!NOTE]
-   > In GitHub Actions, you can re-execute a workflow run. When you do this, the `GITHUB_RUN_NUMBER` doesn't change. So, you shouldn't use the `GITHUB_RUN_NUMBER` variable to count how many times your workflow has executed.
+   > In GitHub Actions, you can re-execute a workflow run. When you do this, the run number doesn't change. So, you shouldn't use the `github.run_number` variable to count how many times your workflow has executed.

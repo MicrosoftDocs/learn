@@ -22,5 +22,5 @@ jobs:
       with:
         resourceGroupName: ${{ env.AZURE_RESOURCEGROUP_NAME }}
         template: ./deploy/main.bicep
-        parameters: environmentType=${{ env.ENVIRONMENT }} deployToyManualsStorageAccount=${{ env.DEPLOYSTORAGE }}
+        parameters: environmentType=${{ env.ENVIRONMENT }}
 ```

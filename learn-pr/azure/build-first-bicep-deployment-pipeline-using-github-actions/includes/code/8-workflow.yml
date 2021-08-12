@@ -10,7 +10,6 @@ on:
 env: 
     AZURE_RESOURCEGROUP_NAME: ToyWebsite
     ENVIRONMENT: nonprod
-    DEPLOYSTORAGE: false
 
 jobs:
   deploy:
@@ -22,6 +21,7 @@ jobs:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
     - uses: azure/arm-deploy@v1
       with:
+        deploymentName: ${{ github.run_number }}
         resourceGroupName: ${{ env.AZURE_RESOURCEGROUP_NAME }}
         template: ./deploy/main.bicep
-        parameters: environmentType=${{ env.ENVIRONMENT }} deployToyManualsStorageAccount=${{ env.DEPLOYSTORAGE }}
+        parameters: environmentType=${{ env.ENVIRONMENT }}

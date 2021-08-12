@@ -34,7 +34,7 @@ During the process, you'll:
 
 1. In the `appServiceApp` resource definition's `siteConfig` property, add the `alwaysOn` property, with a value of `true`:
 
-   :::code language="bicep" source="code/8-main-broken.bicep" range="59-75" highlight="8" :::
+   :::code language="bicep" source="code/8-main-broken.bicep" range="56-72" highlight="8" :::
 
 1. Save your changes to the file.
 
@@ -71,11 +71,11 @@ You speak to your colleague about the failed deployment. Together, you decide th
 
 1. In Visual Studio Code, add new properties for each environment type to the `environmentConfigurationMap` variable:
 
-   :::code language="bicep" source="code/8-main-fixed.bicep" range="23-56" highlight="3-5, 19-21" :::
+   :::code language="bicep" source="code/8-main-fixed.bicep" range="26-53" highlight="3-5, 19-21" :::
 
 1. Change the application's `alwaysOn` setting to use the appropriate configuration map value for the environment type:
 
-   :::code language="bicep" source="code/8-main-fixed.bicep" range="65-81" highlight="8" :::
+   :::code language="bicep" source="code/8-main-fixed.bicep" range="62-78" highlight="8" :::
 
 1. Save your changes to the file.
 

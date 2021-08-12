@@ -8,9 +8,6 @@ param location string = resourceGroup().location
 ])
 param environmentType string
 
-@description('Indicates whether to deploy the storage account for toy manuals.')
-param deployToyManualsStorageAccount bool
-
 @description('A unique suffix to add to resource names that need to be globally unique.')
 @maxLength(13)
 param resourceNameSuffix string = uniqueString(resourceGroup().id)
@@ -48,7 +45,7 @@ var environmentConfigurationMap = {
     }
   }
 }
-var toyManualsStorageAccountConnectionString = deployToyManualsStorageAccount ? 'DefaultEndpointsProtocol=https;AccountName=${toyManualsStorageAccount.name};EndpointSuffix=${environment().suffixes.storage};AccountKey=${toyManualsStorageAccount.listKeys().keys[0].value}' : ''
+var toyManualsStorageAccountConnectionString = 'DefaultEndpointsProtocol=https;AccountName=${toyManualsStorageAccount.name};EndpointSuffix=${environment().suffixes.storage};AccountKey=${toyManualsStorageAccount.listKeys().keys[0].value}'
 
 resource appServicePlan 'Microsoft.Web/serverFarms@2020-06-01' = {
   name: appServicePlanName
@@ -74,7 +71,7 @@ resource appServiceApp 'Microsoft.Web/sites@2020-06-01' = {
   }
 }
 
-resource toyManualsStorageAccount 'Microsoft.Storage/storageAccounts@2021-02-01' = if (deployToyManualsStorageAccount) {
+resource toyManualsStorageAccount 'Microsoft.Storage/storageAccounts@2021-02-01' = {
   name: toyManualsStorageAccountName
   location: resourceGroup().location
   kind: 'StorageV2'
