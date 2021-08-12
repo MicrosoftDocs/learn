@@ -97,13 +97,13 @@ In Bicep, it's important to give your resources meaningful names. Resources in B
 
 It's important to think about the symbolic names you apply to your resources. Imagine that you have colleagues who need to modify the template. Will they understand what each resource is for?
 
-For example, suppose you want to define a storage account that will contain product manuals for users to download from your website. You could give the resource a symbolic name of, for example,  *storageAccount*, but if it's in a Bicep file that contains lots of other resources, and maybe even other storage accounts, that name isn't sufficiently descriptive. So you could instead give it a symbolic name that includes some information about its purpose, such as *productManualStorageAccount*.
+For example, suppose you want to define a storage account that will contain product manuals for users to download from your website. You could give the resource a symbolic name of, for example, `storageAccount`, but if it's in a Bicep file that contains a lot of other resources, and maybe even other storage accounts, that name isn't sufficiently descriptive. So you could instead give it a symbolic name that includes some information about its purpose, such as `productManualStorageAccount`.
 
-In Bicep, you ordinarily use _camelCase_ capitalization style for the names of parameters, variables, and resource symbolic names. This means that you use a lowercase first letter for the first word, and then capitalize the first letter of the other words (as in the preceding example, *productManualStorageAccount*). You're not required to use camelCase. If you choose to use a different style, it's important to agree on one standard within your team and use it consistently.
+In Bicep, you ordinarily use _camelCase_ capitalization style for the names of parameters, variables, and resource symbolic names. This means that you use a lowercase first letter for the first word, and then capitalize the first letter of the other words (as in the preceding example, `productManualStorageAccount`). You're not required to use camelCase. If you choose to use a different style, it's important to agree on one standard within your team and use it consistently.
 
 ### Resource names
 
-Every Azure resource has a name. Names make up a part of the resource's identifier. In many cases, they also are represented as the hostnames that you use to access the resource. For example, when you create an App Service app named *myapp*, the hostname you use to access the app will be *myapp.azurewebsites.net*. Resources can't be renamed after they're deployed.
+Every Azure resource has a name. Names make up a part of the resource's identifier. In many cases, they also are represented as the hostnames that you use to access the resource. For example, when you create an App Service app named `myapp`, the hostname you use to access the app will be `myapp.azurewebsites.net`. Resources can't be renamed after they're deployed.
 
 It's important to consider how you name your Azure resources. Many organizations define their own resource naming convention. [Cloud Adoption Framework for Azure has specific guidance](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging?azure-portal=true) that can help you define yours. The purpose of a resource naming convention is to help everyone in your organization understand what each resource is for.
 
@@ -111,7 +111,7 @@ Additionally, every Azure resource has certain naming [rules and restrictions](/
 
 It can be complex to follow all of the naming conventions for your organization as well as the naming requirements for Azure. A well-written Bicep template should hide this complexity from its users and determine the names for resources automatically. One example of an approach to follow is:
 
-- Add a parameter that is used to create a _uniqueness suffix_. This helps to ensure that your resources have unique names. It's a good idea to use the `uniqueString()` function to generate a default value. People who deploy your template can override this with a specific value if they want to have a meaningful name. Be sure to use the `@maxLength()` decorator to limit the length of this suffix so that your resource names won't exceed their maximum lengths.
+- Add a parameter that's used to create a _uniqueness suffix_. This helps to ensure that your resources have unique names. It's a good idea to use the `uniqueString()` function to generate a default value. People who deploy your template can override this with a specific value if they want to have a meaningful name. Be sure to use the `@maxLength()` decorator to limit the length of this suffix so that your resource names won't exceed their maximum lengths.
 
   > [!TIP]
   > It's better to use uniqueness suffixes rather than prefixes. This approach makes it easier to sort and to quickly scan your resource names. Also, some Azure resources have restrictions about the first character of the name, and randomly generated names can sometimes violate these restrictions.
