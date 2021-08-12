@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.use-docker-container-dev-env-vs-code.11-summary
+uid: learn.use-docker-container-dev-env-vs-code.12-summary
 title: Summary
 metadata:
   title: Summary
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning
 durationInMinutes: 2
 content: |
-  [!include[](includes/11-summary.md)]
+  [!include[](includes/12-summary.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.use-docker-container-dev-env-vs-code.7-exercise-customize-settings
+uid: learn.use-docker-container-dev-env-vs-code.8-exercise-customize-settings
 title: Exercise - Customize project and editor settings
 metadata:
   title: Exercise - Customize project and editor settings
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-exercise-customize-settings.md)]
+  [!include[](includes/8-exercise-customize-settings.md)]
