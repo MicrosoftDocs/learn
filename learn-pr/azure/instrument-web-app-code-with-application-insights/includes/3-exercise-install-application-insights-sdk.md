@@ -1,4 +1,4 @@
-Business stakeholders have given you permission to add the SDK to your video sharing app, with the expectation that the app will begin generating more interesting and useful telemetry.
+Business stakeholders have given you permission to add the Application Insights SDK to your video sharing app, with the expectation that the app will begin generating more interesting and useful telemetry.
 
 In this unit, we'll create a web app and add the Application Insights SDK to it. We'll also create an App Service instance for deploying our web app, and configure it to use Application Insights.
 
@@ -89,10 +89,10 @@ After the web app is created, we can observe how it's been configured to use App
 
 1. In the Azure portal, select **All Resources**, look for the **App Service** resource type, select the App Service. The **App Service** pane for your web app appears.
 
-1. In the left menu, under **Settings**, select **Application Insights** and then, on the **Application Insights** pane, selet **Turn on Application Insights**. settings that are listed and select the `APPINSIGHTS_INSTRUMENTATIONKEY` setting to see its value. When your app runs in App Service, this value will be available as an environment variable, and the Application Insights SDK will use it as configuration.
+1. In the left menu, under **Settings**, select **Application Insights** and then, on the **Application Insights** pane, select **Turn on Application Insights**. settings that are listed and select the `APPINSIGHTS_INSTRUMENTATIONKEY` setting to see its value. When your app runs in App Service, this value will be available as an environment variable, and the Application Insights SDK will use it as configuration.
 
 1. In the left menu pane, select **Application Insights**. At the top of the Application Insights pane, see **Link to an Application Insights resource** to collect to the Application Insights resource linked to the web app.
 
 1. The instrumentation key for the Application Insights resource appears near the top of the pane. Note that it's the same as the one shown in the app's settings.
 
-We've set up our app and deployment environment, but we're not going to deploy the app quite yet. First, we're going to add some custom event telemetry.
+We've set up our app and deployment environment, but we're not going to deploy the app yet. First, we're going to add some custom event telemetry.
