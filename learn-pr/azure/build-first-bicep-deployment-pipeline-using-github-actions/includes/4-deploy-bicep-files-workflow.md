@@ -8,7 +8,7 @@ Your Bicep files are stored in your Git repository. In GitHub Actions, you need 
 
 To check out your code, you can use the `actions/checkout@v2` action:
 
-:::code language="yaml" source="code/4-workflow.yml" range="1-2, 10-16" highlight="7-9":::
+:::code language="yaml" source="code/4-workflow.yml" range="1-2, 9-15" highlight="7-9":::
 
 Notice that the workflow includes the `uses` keyword. This indicates you want to use a pre-defined action named `actions/checkout`.
 
@@ -58,7 +58,7 @@ You can also use GitHub secrets to store other kinds of secret values your workf
 
 Before your workflow can execute commands against your Azure environment, it first needs to sign in. There is an action named `azure/login` that handles the sign-in process. The action uses a GitHub secret to get the credentials for your service principal:
 
-:::code language="yaml" source="code/4-workflow.yml" range="1-2, 10-19" highlight="10-12":::
+:::code language="yaml" source="code/4-workflow.yml" range="1-2, 9-18" highlight="10-12":::
 
 The `azure/login` action has a `creds` parameter to specify the Azure credentials to use when signing in. In this example, the workflow uses the `AZURE_CREDENTIALS` secret value as the credentials.
 
@@ -73,7 +73,7 @@ After you've signed in to Azure, you can use the service principal's identity to
 
 Here's an example of how you can configure a step to use the `azure/arm-deploy` action:
 
-:::code language="yaml" source="code/4-workflow.yml" range="1-2, 10-24" highlight="13-17":::
+:::code language="yaml" source="code/4-workflow.yml" range="1-2, 9-23" highlight="13-17":::
 
 The `azure/arm-deploy` action accepts several parameters, including:
 

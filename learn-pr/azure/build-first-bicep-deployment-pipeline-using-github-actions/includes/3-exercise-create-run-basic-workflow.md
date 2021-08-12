@@ -86,7 +86,7 @@ In Visual Studio Code, clone your repository.
 
    A browser window appears. Select **Authorize**.
 
-1. Reopen Visual Studio Code in the repository by running the following command:
+1. Reopen Visual Studio Code in the repository folder by running the following command:
 
    ```bash
    code -r toy-website-workflow
@@ -144,7 +144,7 @@ You have created a workflow definition. GitHub Actions automatically detects you
 
    :::image type="content" source="../media/3-run-workflow.png" alt-text="Screenshot of the GitHub interface showing the Actions tab, with the Run workflow dropdown and button selected." border="true":::
 
-1. This will start a new run of your workflow. It might take a while, but the page will automatically refresh and show you a queued or running or even already finished workflow run.
+1. This will start a new run of your workflow. It might take a few moments, but the page will automatically refresh and show you a queued or running or even already finished workflow run.
 
    :::image type="content" source="../media/3-workflow-running.png" alt-text="Screenshot of the GitHub interface showing the Actions tab, with one workflow running." border="true":::
 

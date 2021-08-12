@@ -118,12 +118,14 @@ Now, you're ready to run your workflow!
 
    :::image type="content" source="../media/6-portal-resource-group.png" alt-text="Screenshot of the Azure portal that shows the resource group with one successful deployment.":::
 
+   Notice that the name of the deployment matches the workflow's run number in GitHub Actions, because you used the `github.run_number` environment variable to name your deployment.
+
 1. Select **1 Succeeded** to see the details of the deployment.
 
    :::image type="content" source="../media/6-portal-deployment-list.png" alt-text="Screenshot of the Azure portal that shows the resource group deployment history, with the deployment highlighted.":::
 
    The deployment name is the same as the name of the workflow run.
 
-1. To see what resources were deployed, select the deployment. To expand the deployment to see more details, select **Deployment details**. In this case, there's an Azure App Service plan and an app.
+1. To see what resources were deployed, select the deployment. To expand the deployment to see more details, select **Deployment details**. In this case, there's a storage account, an Azure App Service plan, and an app.
 
    :::image type="content" source="../media/6-portal-deployment-details.png" alt-text="Screenshot of the Azure portal that shows the resource group deployment details, with the App Service resources highlighted.":::
