@@ -50,10 +50,10 @@ products:
 - azure
 - azure-resource-manager
 modules:
-- learn.arm-template-whatif
 - learn.azure.manage-changes-bicep-code-git
 - learn.azure.structure-bicep-code-collaboration
 - learn.azure.arm-template-specs
+- learn.arm-template-whatif
 #- learn.azure.migrate-bicep
 trophy:
   uid: learn.bicep-collaborate.trophy
