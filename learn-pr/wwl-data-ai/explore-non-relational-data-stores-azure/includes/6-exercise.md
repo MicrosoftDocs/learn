@@ -40,7 +40,7 @@ You'll perform this exercise using the Azure portal and the Azure Cloud Shell.
     > [!div class="mx-imgBorder"]
     > ![Image of Home page in the Azure portal. The user has selected **All resources** from the main menu](../media/6-main-menu.png)
 
-3. On the **All resources** page, select the Cosmos DB account taht was created by the setup script. The account name will be *cosmos* followed by a random number:
+3. On the **All resources** page, select the Cosmos DB account that was created by the setup script. The account name will be *cosmos* followed by a random number:
 
     > [!div class="mx-imgBorder"]
     > ![Image of All resources page in the Azure portal. The user has selected the Cosmos DB account](../media/6-all-resources.png)
@@ -164,7 +164,7 @@ You'll perform this exercise using the Azure portal and the Azure Cloud Shell.
     > [!div class="mx-imgBorder"]
     > ![Image of the browser showing the downloaded file](../media/6-file-downloaded.png)
 
-8. The image should be displayed. By default, WIndows will use the Photo Viewer app, but if you have a different configuration then an alternative application might be used. 
+8. The image should be displayed. By default, Windows will use the Photo Viewer app, but if you have a different configuration then an alternative application might be used. 
 
     > [!div class="mx-imgBorder"]
     > ![Image of the bike lock](../media/6-bike-lock.png)
@@ -173,4 +173,4 @@ You'll perform this exercise using the Azure portal and the Azure Cloud Shell.
 
 ## Summary
 
-In this exercise, you investigated using Cosmos DB and Azure Storage to store and retrieve data. You ran a script that created a Cosmos DB database and a storage account, and uploaded sample data. You used Data Explorer in Cosmos DB to run simple queries against the data. YOu used Storage Explorer for the storage account to browse blob storage and download files.
+In this exercise, you investigated using Cosmos DB and Azure Storage to store and retrieve data. You ran a script that created a Cosmos DB database and a storage account, and uploaded sample data. You used Data Explorer in Cosmos DB to run simple queries against the data. You used Storage Explorer for the storage account to browse blob storage and download files.
