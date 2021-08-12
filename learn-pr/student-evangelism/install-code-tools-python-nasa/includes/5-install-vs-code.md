@@ -7,7 +7,7 @@ If you're following this module as part of a Learning Path, you'll probably also
 As mentioned before, Visual Studio Code is free. If you're using a Windows computer, you can download it [on the Visual Studio Code learning page](https://aka.ms/LearnOnVSCode?azure-portal=true). Download the Coding Pack for Python, which will install Python and the necessary extensions as well. When the program has finished downloading, run the executable file to start the installation process.
 
 > [!NOTE]
-> The picture below shows someone using Windows 10 with the Microsoft Edge browser. If you're using a macOS or Linux device, select **Visual Studio Code (all platforms)** and make the selection that best represents your system. We'll walk you through how to [install Python](/7-install-python.md) and all of the necessary extensions in Unit 7 of this module.
+> The picture below shows someone using Windows 10 with the Microsoft Edge browser. If you're using a macOS or Linux device, select **Visual Studio Code (all platforms)** and make the selection that best represents your system. We'll walk you through how to [install Python](/learn/modules/install-code-tools-python-nasa/7-install-python) and all of the necessary extensions in Unit 7 of this module.
 
 :::image type="content" source="../media/download-vs-code.png" alt-text="Screenshot of the VS Code download page on the Visual Studio Code website.":::
 

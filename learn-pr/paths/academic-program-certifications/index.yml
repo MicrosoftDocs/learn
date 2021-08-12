@@ -21,7 +21,7 @@ summary: |
    - Map certification outcomes to academic learning outcomes
    - Understand how to launch a new course or program with certification
 prerequisites: None
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/student-evangelism/academic-program-certifications-path.svg
 levels:
 - beginner
 roles:
@@ -33,5 +33,6 @@ modules:
 - learn.student-evangelism.academic-program-certifications-define-requirements
 - learn.student-evangelism.academic-program-certifications-design-program-curricula
 - learn.student-evangelism.academic-program-certifications-prepare-program-approval
+- learn.student-evangelism.academic-program-certifications-design-program-launch
 trophy:
   uid: learn.academic-program-certifications.trophy
