@@ -3,7 +3,7 @@ uid: learn.azure.build-first-bicep-deployment-pipeline-using-azure-pipelines.int
 title: Introduction
 metadata:
   unitType: introduction
-  title: introduction
+  title: Introduction
   description: Introduction to building a basic deployment pipeline for Bicep by using Azure Pipelines.
   ms.date: 07/20/2021
   author: vermegi
