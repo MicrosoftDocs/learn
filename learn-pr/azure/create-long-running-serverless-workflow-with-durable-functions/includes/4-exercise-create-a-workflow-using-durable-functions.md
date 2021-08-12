@@ -14,7 +14,7 @@ In this exercise, you'll use the example scenario from the previous unit to lear
     |---|---|---|
     | **Project Details** |
     | Subscription | Concierge Subscription | Specifies the subscription under which this new function app is created. |
-    | **Resource Group** | From the dropdown list, select _<rgn>[sandbox resource group name]</rgn>_ | Specifies the name of the resource group in which to create your function app. We'll create the function app in the sandbox resource group that was assigned when we activated the sandbox, namely, _<rgn>[sandbox resource group name]</rgn>_. |
+    | Resource Group | From the dropdown list, select _<rgn>[sandbox resource group name]</rgn>_ | Specifies the name of the resource group in which to create your function app. We'll create the function app in the sandbox resource group that was assigned when we activated the sandbox, namely, _<rgn>[sandbox resource group name]</rgn>_. |
     | **Instance Details** |
     | Function App name | _[Globally unique name]_ | Specifies the name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
     | Publish | _Code_ | Specifies that the function will use code instead of a container. |
