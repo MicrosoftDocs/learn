@@ -116,7 +116,7 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
 
 1. Under **Select a template**, in the **Filter** box, enter *Durable Functions HTTP starter*, and select that template from the list. This template creates a durable function that runs in response to an HTTP request.
 
-1. Under **Template details**, for the **New Function** field, enter **HttpStart** for the name of the function, and in the **Authorization level** field, select **Function**, and then select **Create**. The **HttpStart** pane appears for your function.
+1. Under **Template details**, for the **New Function** field, enter *HttpStart* for the name of the function, and in the **Authorization level** field, select **Function**, and then select **Create**. The **HttpStart** pane appears for your function.
 
 1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your function.
 
@@ -178,7 +178,7 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
 
 1. Under **Select a template**, in the **Filter** box, enter *Durable Functions orchestrator*, and select that template from the list. This template creates a durable function that orchestrates the execution of functions.
 
-1. Under **Template details**, for the **New Function** field, enter **OrchFunction** for the name of the function, and then select **Create**. The **OrchFunction** function pane appears.
+1. Under **Template details**, for the **New Function** field, enter *OrchFunction* for the name of the function, and then select **Create**. The **OrchFunction** function pane appears.
 
 1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your function.
 
@@ -219,7 +219,7 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
 
 1. Under **Select a template**, in the **Filter** box, enter *Durable Functions activity*, and select that template from the list. This template creates a durable function that is run when an activity is called by an orchestrator function.
 
-1. Under **Template details**, for the **New Function** field, enter **Approval** for the name of the function, and then select **Create**. The **Approval** pane appears for your function app.
+1. Under **Template details**, for the **New Function** field, enter *Approval* for the name of the function, and then select **Create**. The **Approval** pane appears for your function app.
 
 1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your function.
 

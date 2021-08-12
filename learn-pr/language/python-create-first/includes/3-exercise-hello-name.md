@@ -20,7 +20,7 @@ If you save and run the program now, nothing happens because you've instructed t
 
 ### Step 2 - Start writing a new program
 
-Next, add an empty line and three new lines of code, make sure your code matches the following code example:
+Next, add an empty line and a new line of code, make sure your code matches the following code example:
 
 ```python
 # print("Hello World!")
@@ -28,29 +28,29 @@ Next, add an empty line and three new lines of code, make sure your code matches
 print("What is your name?")
 ```
 
-At this point, your code is able to output to the console, but you want this program to be able to collect input from the user, so you'll be looking at using the `input()` function next.
+At this point, your code outputs to the console, but you want this program to be able to collect input from the user, so you'll be looking at using the `input()` function next.
 
 ### Step 3 - Collect user input
 
-To collect user input, use the `input()` function by adding this line at the bottom:
+To collect user input, use the `input()` function by adding this line at the bottom line of your file:
 
 ```python
 name = input()
 ```
 
-Now the program will halt, waiting for the user to input some characters. Once the user has input some characters, followed by Enter, the program will continue on the next line.
+Now the program will halt, waiting for user input. As the user, type your name at the prompt in the terminal window, and press <kbd>Enter</kbd>, the program will continue. The program also accepts <kbd>Enter</kbd>, even with no input. 
 
 ### Step 4 - Output the user's input
 
 You now have a program capable of collecting user input but no way of verifying that it works.
 
-Add the following to output the user's input:
+Add the following line to the bottom of your code to output the user's input:
 
 ```python
 print("Hello, " + name)
 ```
 
-The preceding line will concatenate the string "Hello" with the value of the `name` variable.
+The preceding line will concatenate the string "Hello " with the value of the `name` variable.
 
 ### Step 5 - Test your program
 
@@ -61,7 +61,7 @@ An important part of writing programs is running them to ensure everything works
    > [!NOTE]
    > replace `hello.py` with whatever you named the file that your program lives in.
 
-1. Type **Bob** when asked for input and use Enter to progress the program.
+1. Type **Bob** when asked for input, and press <kbd>enter</kbd> to progress the program.
 
    The output looks like so:
 
@@ -71,7 +71,7 @@ An important part of writing programs is running them to ensure everything works
    Hello, Bob
    ```
 
-    The `python3` command launches Python's compiler. You provide the source code file name as an argument. If you installed Python correctly and your command prompt is working in the same directory as your code files, this should work. Otherwise, you'll need to use the full path and file name of your code file.
+    The `python3` command launches Python's compiler. You provide the source code file name as an argument. If you installed Python correctly and your command prompt is working in the same directory as your code files, this command should work. Otherwise, you'll need to use the full path and file name of your code file.
 
     >[!NOTE]
     > Use "python" or "python3" for MacOS and Linux; use "py" for Windows.
@@ -102,7 +102,7 @@ Python has dozens of operators that perform mathematical, logical, and relationa
 
 ### Where do the functions come from?
 
-As mentioned earlier, functions such as `print()` and `input()` were created by Python developers. The functions are part of the Python Standard Library, an extensive set of functionality that's available either automatically or can be easily referenced and added as needed. The library is divided into modules. Each module contains related functions. You'll learn more about accessing the full breadth of functionality in upcoming modules.
+As mentioned earlier, functions `print()` and `input()` were created by Python developers. These functions are part of the Python Standard Library, an extensive set of functionality that's available either automatically or can be easily referenced and added, as needed. The library is divided into modules. Each module contains related functions. You'll learn more about accessing the full breadth of functionality in upcoming modules.
 
 When you say you want to "learn Python," you're really saying that you want to:
 
@@ -125,4 +125,4 @@ Let's quickly recap the most important things to remember in this unit:
 - A keyword is a command that's part of a programming language that performs some special function.
 - An operator is a symbol that's part of a programming language that performs some special operation.
 - Functions are collections of code that perform a single task in a software system.
-- The Python Standard Library contains hundreds of functions that are spread across dozens of modules, supplying common functionality for all developers. Other third-party libraries contain additional functionality to extend the capabilities of the programming language.
+- The Python Standard Library contains hundreds of functions that are spread across dozens of modules, supplying common functionality for all developers. Third-party libraries contain additional functionality to extend the capabilities of the programming language.
