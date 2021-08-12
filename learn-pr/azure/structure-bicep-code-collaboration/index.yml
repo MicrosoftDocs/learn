@@ -13,15 +13,16 @@ title: Structure your Bicep code for collaboration
 summary: |
   Build Bicep files that support collaborative development and follow best practices. Plan your parameters to make your templates easy to deploy. Use a consistent style, clear structure, and comments to make your Bicep code easy to understand, use, and modify.
 abstract: |
-  After you complete this module, you'll be able to:
-    - Select the appropriate parameters for a Bicep file.
-    - Structure your Bicep code and parameters to support team collaboration.
-    - Document your Bicep code by using comments and resource tags.
+  After completing this module, you'll be able to:
+    - Select the appropriate parameters for a Bicep file
+    - Structure your Bicep code and parameters to support team collaboration
+    - Document your Bicep code by using comments and resource tags
 prerequisites: |
-  - Familiarity with Bicep structure and syntax, including parameters, loops, conditions, and modules.
-  - To follow along with the exercises in the module, you'll need the following:
-     - [Visual Studio Code](https://code.visualstudio.com), installed locally.
-     - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally.
+    You should be familiar with Bicep structure and syntax, including parameters, loops, conditions, and modules.
+
+    To follow along with the exercises in the module, you'll need the following:
+     - [Visual Studio Code](https://code.visualstudio.com), installed locally
+     - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally
 iconUrl: /learn/achievements/bicep/structure-bicep-code-collaboration.svg
 levels:
   - intermediate
