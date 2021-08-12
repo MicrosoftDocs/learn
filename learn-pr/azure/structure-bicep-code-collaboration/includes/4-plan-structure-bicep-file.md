@@ -44,7 +44,7 @@ You also need to consider how to handle parameters and variables that are common
 
 ## How can white space help create structure?
 
-Blank lines, or _white space_, can help you add visual structure your template. By using white space thoughtfully, you can group the sections of your Bicep code logically, which can in turn help clarify the relationships between resources. To do this, consider adding a blank line between major sections, regardless of the grouping style you prefer.
+Blank lines, or _white space_, can help you add visual structure to your template. By using white space thoughtfully, you can group the sections of your Bicep code logically, which can in turn help clarify the relationships between resources. To do this, consider adding a blank line between major sections, regardless of the grouping style you prefer.
 
 ## How do you define several similar resources?
 
