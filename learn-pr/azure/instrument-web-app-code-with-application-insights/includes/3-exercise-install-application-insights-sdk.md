@@ -37,8 +37,7 @@ To initialize the Application Insights SDK, you need to call the `UseApplication
     ```bash
     code .
     ```
-
-1. Add a call to the `UseApplicationInsights` method in *Startup.cs* in the *ConfigureServices()* function. The call should look like this.
+ 1. Edit the file *Startup.cs* and add a call to `UseApplicationInsights` method in the *ConfigureServices()* function. The call should look like this.
 
     ```csharp
     services.AddApplicationInsightsTelemetry();
@@ -57,7 +56,7 @@ We'll host our app in Azure App Service. Instead of manually creating an Applica
 
 1. On the Azure portal menu, or from the **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. In the left menu pane, select **Web**, then search for and select **Web App**, and select **Create**. The **Create Web App** pane appears.
+1. In the left menu, under **Categories**,select **Web**, then select **Web App**. The **Create Web App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -73,15 +72,12 @@ We'll host our app in Azure App Service. Instead of manually creating an Applica
     | Operating System          | **Windows** |
     | Region                    | Choose location close to you. |
     | **App Service Plan** |
-    | Windows Plan              | Select **<rgn>Sandbox resource group</rgn>** |
-    | Sku and size              | Select **Change size** to open the Spec Picker wizard. On the **Dev / Test** tab, select **F1**, and then select **Apply**.    |
+    | Windows Plan              | Select **<rgn>Sandbox resource group</rgn>** or ASP-learn2ac17be8c3094f558b79eabec2-a7b0 |
+    | Sku and size              | Select **Change size** to open the Spec Picker wizard. Select **Dev / Test**, select **F1**, and then select **Apply**. |
 
-1. Select the **Monitoring** tab, and enter the following values for each setting.
+1. On the **Create Web App** pane, select **Next:Deployment (Preview)**, and then select **Next:Monitoring**. On the **Monitoring** tab, for **Enable Application Insights**, select **Yes**. 
 
-    | Setting                   | Value    |
-    |---------------------------|------------------|
-    | **Application Insights**  |
-    | Enable Application Insights | **Yes**. An alert will appear indicating that your app will be connected to an automatically created Application Insights resource with the same name as the app. |
+    An alert will appear indicating that your app will be connected to an automatically created Application Insights resource with the same name as the app.
 
 1. Select **Review + create** > **Create**.
 
@@ -91,9 +87,9 @@ We'll host our app in Azure App Service. Instead of manually creating an Applica
 
 After the web app is created, we can see how it's been configured to use Application Insights.
 
-1. In the Azure portal, go to the App Service web app you created. Select **All Resources** to do this.
+1. In the Azure portal, select **All Resources**, look for the **App Service** resource type, select the App Service. The **App Service** pane for your web app appears.
 
-1. In the left menu pane, under **Settings**, select the application settings that are listed and select the `APPINSIGHTS_INSTRUMENTATIONKEY` setting to see its value. When your app runs in App Service, this value will be available as an environment variable, and the Application Insights SDK will use it as configuration.
+1. In the left menu, under **Settings**, select **Application Insights** and then, on the **Application Insights** pane, selet **Turn on Application Insights**. settings that are listed and select the `APPINSIGHTS_INSTRUMENTATIONKEY` setting to see its value. When your app runs in App Service, this value will be available as an environment variable, and the Application Insights SDK will use it as configuration.
 
 1. In the left menu pane, select **Application Insights**. At the top of the Application Insights pane, see **Link to an Application Insights resource** to collect to the Application Insights resource linked to the web app.
 
