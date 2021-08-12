@@ -20,7 +20,7 @@ If you save and run the program now, nothing happens because you've instructed t
 
 ### Step 2 - Start writing a new program
 
-Next, add an empty line and three new lines of code, make sure your code matches the following code example:
+Next, add an empty line and a new line of code, make sure your code matches the following code example:
 
 ```python
 # print("Hello World!")
@@ -28,29 +28,29 @@ Next, add an empty line and three new lines of code, make sure your code matches
 print("What is your name?")
 ```
 
-At this point, your code is able to output to the console, but you want this program to be able to collect input from the user, so you'll be looking at using the `input()` function next.
+At this point, your code outputs to the console, but you want this program to be able to collect input from the user, so you'll be looking at using the `input()` function next.
 
 ### Step 3 - Collect user input
 
-To collect user input, use the `input()` function by adding this line at the bottom:
+To collect user input, use the `input()` function by adding this line at the bottom line of your file:
 
 ```python
 name = input()
 ```
 
-Now the program will halt, waiting for the user to input some characters. Once the user has input some characters, followed by Enter, the program will continue on the next line.
+Now the program will halt, waiting for user input. As the user, type your name at the prompt in the terminal window, and press <kbd>Enter</kbd>, the program will continue. The program also accepts <kbd>Enter</kbd>, even with no input. 
 
 ### Step 4 - Output the user's input
 
 You now have a program capable of collecting user input but no way of verifying that it works.
 
-Add the following to output the user's input:
+Add the following line to the bottom of your code to output the user's input:
 
 ```python
 print("Hello, " + name)
 ```
 
-The preceding line will concatenate the string "Hello" with the value of the `name` variable.
+The preceding line will concatenate the string "Hello " with the value of the `name` variable.
 
 ### Step 5 - Test your program
 
@@ -61,7 +61,7 @@ An important part of writing programs is running them to ensure everything works
    > [!NOTE]
    > replace `hello.py` with whatever you named the file that your program lives in.
 
-1. Type **Bob** when asked for input and use Enter to progress the program.
+1. Type **Bob** when asked for input, and press <kbd>enter</kbd> to progress the program.
 
    The output looks like so:
 
