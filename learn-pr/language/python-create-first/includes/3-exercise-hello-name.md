@@ -71,7 +71,7 @@ An important part of writing programs is running them to ensure everything works
    Hello, Bob
    ```
 
-    The `python3` command launches Python's compiler. You provide the source code file name as an argument. If you installed Python correctly and your command prompt is working in the same directory as your code files, this should work. Otherwise, you'll need to use the full path and file name of your code file.
+    The `python3` command launches Python's compiler. You provide the source code file name as an argument. If you installed Python correctly and your command prompt is working in the same directory as your code files, this command should work. Otherwise, you'll need to use the full path and file name of your code file.
 
     >[!NOTE]
     > Use "python" or "python3" for MacOS and Linux; use "py" for Windows.
@@ -102,7 +102,7 @@ Python has dozens of operators that perform mathematical, logical, and relationa
 
 ### Where do the functions come from?
 
-As mentioned earlier, functions such as `print()` and `input()` were created by Python developers. The functions are part of the Python Standard Library, an extensive set of functionality that's available either automatically or can be easily referenced and added as needed. The library is divided into modules. Each module contains related functions. You'll learn more about accessing the full breadth of functionality in upcoming modules.
+As mentioned earlier, functions `print()` and `input()` were created by Python developers. These functions are part of the Python Standard Library, an extensive set of functionality that's available either automatically or can be easily referenced and added, as needed. The library is divided into modules. Each module contains related functions. You'll learn more about accessing the full breadth of functionality in upcoming modules.
 
 When you say you want to "learn Python," you're really saying that you want to:
 
@@ -125,4 +125,4 @@ Let's quickly recap the most important things to remember in this unit:
 - A keyword is a command that's part of a programming language that performs some special function.
 - An operator is a symbol that's part of a programming language that performs some special operation.
 - Functions are collections of code that perform a single task in a software system.
-- The Python Standard Library contains hundreds of functions that are spread across dozens of modules, supplying common functionality for all developers. Other third-party libraries contain additional functionality to extend the capabilities of the programming language.
+- The Python Standard Library contains hundreds of functions that are spread across dozens of modules, supplying common functionality for all developers. Third-party libraries contain additional functionality to extend the capabilities of the programming language.
