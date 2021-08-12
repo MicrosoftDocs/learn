@@ -10,19 +10,17 @@ In this exercise, you'll use the example scenario from the previous unit to lear
 
 1. On the **Basics** tab, enter the following values for each setting.
 
-  | Setting | Value | Description |
-  |---|---|---|
-  | **Project Details** |
-  | Subscription | Concierge Subscription | Specifies the subscription under which this new function app is created. |
-  | **Resource Group** | From the dropdown list, select _<rgn>[sandbox resource group name]</rgn>_ | Specifies the name of the resource group in which to create your function app. We'll create the function app in the sandbox resource group that was assigned when we activated the sandbox, namely, _<rgn>[sandbox resource group name]</rgn>_. |
-  | **Instance Details** |
-  | Function App name | _[Globally unique name]_ | Specifies the name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
-  | Publish | _Code_ | Specifies that the function will use code instead of a container. |
-  | Runtime stack | _Node.js_ | Specifies that the sample code in this module is written in JavaScript. |
-  | Version | _12 LTS_ | Specifies the version of the runtime stack. |
-  | Region | _[Select from the list below]_ | Choose the region closest to you that is also one of the allowed *Sandbox regions* listed below. |
-
-    **Sandbox regions**
+    | Setting | Value | Description |
+    |---|---|---|
+    | **Project Details** |
+    | Subscription | Concierge Subscription | Specifies the subscription under which this new function app is created. |
+    | **Resource Group** | From the dropdown list, select _<rgn>[sandbox resource group name]</rgn>_ | Specifies the name of the resource group in which to create your function app. We'll create the function app in the sandbox resource group that was assigned when we activated the sandbox, namely, _<rgn>[sandbox resource group name]</rgn>_. |
+    | **Instance Details** |
+    | Function App name | _[Globally unique name]_ | Specifies the name that identifies your new function app. Valid characters are `a-z`, `0-9`, and `-`. |
+    | Publish | _Code_ | Specifies that the function will use code instead of a container. |
+    | Runtime stack | _Node.js_ | Specifies that the sample code in this module is written in JavaScript. |
+    | Version | _12 LTS_ | Specifies the version of the runtime stack. |
+    | Region | _[Select from the list below]_ | Choose the region closest to you that is also one of the allowed *Sandbox regions* that follow. |
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
@@ -30,23 +28,23 @@ In this exercise, you'll use the example scenario from the previous unit to lear
 
 1. On the **Hosting** tab, enter the following values for each setting.
 
-  | Setting | Value | Description |
-  |---|---|---|
-  | **Storage** |
-  | Storage account | _[Globally unique name]_ | Specifies the name of the new storage account used by your function app (which does not need to match the globally unique name that you specified for your function). Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog automatically populates the field with a unique name that is dynamically generated. However, feel free to use a different name or even an existing account. |
-  | **Operating system** |
-  | Operating System | _Windows_ | Specifies the operating system that hosts the function app. |
-  | **Plan** |
-  | Plan type | _Consumption (Serverless)_ | Specifies the hosting plan that defines how resources are allocated to your function app. In the default **Consumption** plan, resources are added dynamically as required by your functions. In this serverless hosting model, you only pay for the time your functions run. |
+    | Setting | Value | Description |
+    |---|---|---|
+    | **Storage** |
+    | Storage account | _[Globally unique name]_ | Specifies the name of the new storage account used by your function app (which does not need to match the globally unique name that you specified for your function). Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only. This dialog automatically populates the field with a unique name that is dynamically generated. However, feel free to use a different name or even an existing account. |
+    | **Operating system** |
+    | Operating System | _Windows_ | Specifies the operating system that hosts the function app. |
+    | **Plan** |
+    | Plan type | _Consumption (Serverless)_ | Specifies the hosting plan that defines how resources are allocated to your function app. In the default **Consumption** plan, resources are added dynamically as required by your functions. In this serverless hosting model, you only pay for the time your functions run. |
 
 1. Select **Next : Monitoring**.
 
 1. On the **Monitoring** tab, enter the following value for the setting.
 
-  | Setting | Value | Description |
-  |---|---|---|
-  | **Application Insights** |
-  | Enable Application Insights | _No_ | Specifies that Application Insights will be disabled for this module. |
+    | Setting | Value | Description |
+    |---|---|---|
+    | **Application Insights** |
+    | Enable Application Insights | _No_ | Specifies that Application Insights will be disabled for this module. |
 
 1. Select **Review + create** and review the options that you configured. If you're satisfied with your options, select **Create** to provision and deploy the function app.
 
@@ -66,7 +64,7 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
 
 1. In the left toolbar menu, select the **Open Console** icon.
 
-  This action starts the console. You can use this console to access the web server that hosts your functions, and write the code for your functions.
+    This action starts the console. You can use this console to access the web server that hosts your functions, and write the code for your functions.
 
 1. Create a new _package.json_ file.
 
@@ -88,7 +86,7 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
 
         Where `example` should be replaced with the name of your package. For example, you could use the globally unique name that you specified for your function earlier.
 
-    - Select <kbd>Ctrl+S</kbd> to save the file, then <kbd>Ctrl+Q</kbd> to close the document.
+1. Select <kbd>Ctrl+S</kbd> to save the file, then <kbd>Ctrl+Q</kbd> to close the document.
 
 1. Switch back to the Azure portal.
 
@@ -102,11 +100,11 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
 
     This command instructs the node package manager to install the durable-functions package and any dependencies that are required. This may take a few minutes to complete, and the node package manager may display some warnings, which you can ignore.
 
-  Wait until all packages have finished installing.
+    Wait until all packages have finished installing.
 
 1. In the left menu pane, scroll up and select **Overview**, and in the top menu bar, select **Restart**, and then select **Yes** when prompted to restart.
 
-  Wait for the restart to complete before continuing.
+    Wait for the restart to complete before continuing.
 
 ## Create the client function for submitting a design proposal
 
@@ -122,20 +120,20 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
 
 1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your function.
 
-  The code for the **index.js** file appears in the editor. Your file should resemble the following example.
+    The code for the **index.js** file appears in the editor. Your file should resemble the following example.
 
-    ```javascript
-    const df = require("durable-functions");
+      ```javascript
+      const df = require("durable-functions");
 
-    module.exports = async function (context, req) {
-        const client = df.getClient(context);
-        const instanceId = await client.startNew(req.params.functionName, undefined, req.body);
+      module.exports = async function (context, req) {
+          const client = df.getClient(context);
+          const instanceId = await client.startNew(req.params.functionName, undefined, req.body);
 
-        context.log(`Started orchestration with ID = '${instanceId}'.`);
+          context.log(`Started orchestration with ID = '${instanceId}'.`);
 
-        return client.createCheckStatusResponse(context.bindingData.req, instanceId);
-    };
-    ```
+          return client.createCheckStatusResponse(context.bindingData.req, instanceId);
+      };
+      ```
 
 1. In the dropdown list for the files in your function, select **function.json** to view the bindings associated with your new function. This information specifies any authentication requirements, together with the HTTP methods that can trigger the function. This file also specifies that the function is a client that starts the orchestration process. Your file should resemble the following example.
 
@@ -184,7 +182,7 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
 
 1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your function.
 
-  The code for the **index.js** file appears in the editor.
+    The code for the **index.js** file appears in the editor.
   
 1. Replace the existing code with the following code.
 
@@ -225,7 +223,7 @@ Because we are creating JavaScript Durable Functions, we need to install the `du
 
 1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your function.
 
-  The code for the **index.js** file appears in the editor.
+    The code for the **index.js** file appears in the editor.
   
 1. Replace the existing code with the following code.
 
