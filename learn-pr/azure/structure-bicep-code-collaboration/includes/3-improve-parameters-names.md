@@ -6,7 +6,7 @@ In this unit, you learn about some key considerations when you're planning the p
 
 Parameters help make Bicep files reusable and flexible. It's important that the purpose of each parameter is clear to anyone who uses it. When your colleagues work with your template, they use parameters to customize the behavior of their deployment.
 
-For example, suppose you need to deploy a storage account by using a Bicep file. One of the required properties of the storage account is the stock keeping unit (SKU), which defines the level of data redundancy. The SKU has several properties, the most important being `name`. When you create a parameter to set the value for the storage account's SKU, use a clearly defined name, such as \<*storageAccountSkuName*>. Using this value instead of a generic name like `sku` or `skuName` will help others understand the purpose of the parameter and the effects of setting its value.
+For example, suppose you need to deploy a storage account by using a Bicep file. One of the required properties of the storage account is the stock keeping unit (SKU), which defines the level of data redundancy. The SKU has several properties, the most important being `name`. When you create a parameter to set the value for the storage account's SKU, use a clearly defined name, such as `storageAccountSkuName`. Using this value instead of a generic name like `sku` or `skuName` will help others understand the purpose of the parameter and the effects of setting its value.
 
 Default values are an important way to make your template usable by others. It's important to use default values where they make sense. They help your template's users in two ways:
 
