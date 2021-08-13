@@ -1,12 +1,16 @@
-Create project folder, call it `uploadimage`. Then open that folder inside Visual Studio Code. Once in VS Code make sure you have the [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) installed. 
+It's time to create your application's backend. For that you are going to create an Azure Function that will serve as the REST API generating on demand Shared Access Signatures so your users can upload images to your Blob Storage container. This exercise will guide you on how to create the Azure Function, install the required libraries, and write the code that will generated on demand SAS keys.
 
-Type `ctrl+shift+p` to launch the command prompt type `Azure Functions: Create New Project`. Select the `upload_image` folder, for language choose `JavaScript`, and finally select `HttpTrigger` to add a function to your project. Call it `credentials`, and set authorization level as `anonymous`.
+## Create the Azure Function REST API
 
-Then go to the Azure Portal, navigate to your storage account, and copy the connection string.
+1. Create project folder, call it `uploadimage`. Then open that folder inside Visual Studio Code. Once in VS Code make sure you have the [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) installed. 
+
+2. Type `ctrl+shift+p` to launch the command prompt type `Azure Functions: Create New Project`. Select the `upload_image` folder, for language choose `JavaScript`, and finally select `HttpTrigger` to add a function to your project. Call it `credentials`, and set authorization level as `anonymous`.
+
+3. Go to the Azure Portal, navigate to your storage account, and copy the connection string from there.
 
 :::image type="content" source="../media/account_keys.png" alt-text="Azure Portal Copy Account Key":::
 
-Add the connection string in the `AzureWebJobsStorage` key of your project's `local.settings.json`:
+4. Add the connection string in the `AzureWebJobsStorage` key of your project's `local.settings.json`:
 
 ```json
 {
@@ -18,13 +22,15 @@ Add the connection string in the `AzureWebJobsStorage` key of your project's `lo
 }    
 ```
 
-Install the Azure SDK dependency used for generating the SAS token.
+5. Install the Azure SDK dependency used for generating the SAS token.
 
 ```bash
 npm install @azure/storage-blob
 ```
 
-Open the `index.js` file from your `credentials` folder and add the following function at the bottom:
+## Generating Shared Access Signatures
+
+1. Open the `index.js` file from your `credentials` folder and add the following function at the bottom:
 
 ```javascript
 function generateSasToken(connectionString, container, permissions) {
@@ -49,7 +55,9 @@ function generateSasToken(connectionString, container, permissions) {
 
 The function `generateSasToken` takes your Azure Blob Storage connection string, a container name, and a permissions strings, and uses that to build the SAS token. A `StorageSharedKeyCredential` is built based on your connection string. This credential will be used by `generateBlobSASQueryParameters` to generate the shared access signature that will make sure the parameters sent during the image upload can be authenticated towards your storage account credentials. Finally you provide a `expiresOn` value of 2 hours to make sure they user has enough time to upload their image, while at the same time the SAS will expire preventing abuse.
 
-To complete the required code, you'll need to add the following `extractConnectionStringParts` function to your code, which takes care of extracting the `accountKey`, `accountName`, and `url` from your storage account connection string. Create a file inside the `credentials` folder and call it `utils.js`. Paste the content from this file inside there: [utils.js](https://github.com/MicrosoftDocs/mslearn-blob-storage-image-upload-static-web-app/blob/main/credentials/utils.js)
+2. Create a file inside the `credentials` folder and call it `utils.js`. Paste the content from this file inside there: [utils.js](https://github.com/MicrosoftDocs/mslearn-blob-storage-image-upload-static-web-app/blob/main/credentials/utils.js)
+
+3. Require the `extractConnectionStringParts` function in your code, which takes care of extracting the `accountKey`, `accountName`, and `url` from your storage account connection string. 
 
 Your `require` section should now look like this:
 
@@ -62,7 +70,7 @@ const {
 const { extractConnectionStringParts } = require('./utils.js');
 ```
 
-Now it's time to implement the serverless function entry point that will send the results from `generateSasToken` to the client:
+4. Implement the serverless function entry point that will send the results from `generateSasToken` to the client:
 
 ```javascript
 module.exports = async function (context, req) {
