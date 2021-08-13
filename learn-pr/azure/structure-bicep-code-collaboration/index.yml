@@ -3,7 +3,7 @@ uid: learn.azure.structure-bicep-code-collaboration
 metadata:
   moduleType: standard
   title: Structure your Bicep code for collaboration
-  description: Learn how to create modular, reusable, and documented infrastructure as code using Bicep and enable team collaboration.
+  description: Learn how to create modular, reusable, and documented infrastructure as code by using Bicep, and enable team collaboration in the process.
   ms.date: 08/06/2021
   author: pazdedav
   ms.author: dapazd
@@ -18,11 +18,11 @@ abstract: |
     - Structure your Bicep code and parameters to support team collaboration
     - Document your Bicep code by using comments and resource tags
 prerequisites: |
-  You should be familiar with Bicep structure and syntax, including parameters, loops, conditions, and modules.
+    You should be familiar with Bicep structure and syntax, including parameters, loops, conditions, and modules.
 
-  To follow along with the exercises in the module, you'll need the following installed locally:
-  - [Visual Studio Code](https://code.visualstudio.com)
-  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
+    To follow along with the exercises in the module, you'll need the following:
+     - [Visual Studio Code](https://code.visualstudio.com), installed locally
+     - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally
 iconUrl: /learn/achievements/bicep/structure-bicep-code-collaboration.svg
 levels:
   - intermediate
