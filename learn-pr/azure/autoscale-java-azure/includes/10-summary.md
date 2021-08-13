@@ -29,7 +29,7 @@ az monitor log-analytics workspace delete --force true --resource-group <your Re
 
 ## References
 
-- [Azure monitor](/azure/azure-monitor?WT.mc_id=java-00000-ropreddy)
+- [Get started with Autoscale in Azure](/azure/azure-monitor/platform/autoscale-get-started?WT.mc_id=java-00000-ropreddy)
 
 - [Azure Spring Cloud Availability by Region](https://azure.microsoft.com/global-infrastructure/services/?products=spring-cloud?WT.mc_id=java-00000-ropreddy)
 

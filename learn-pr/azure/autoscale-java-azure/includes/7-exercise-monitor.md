@@ -2,11 +2,11 @@ In this exercise, with zero configuration, you'll effortlessly monitor autoscali
 
 ## Monitor the Application's autoscale with Log Analytics
 
-You can validate the evaluations and scale actions better using Log Analytics. In your sample application, we've routed your autoscale logs to Azure Monitor Logs (Log Analytics) through a workspace when you created the autoscale setting.
+You can validate the evaluations and scale actions better using Log Analytics. In your sample application, we've routed your autoscale logs to Azure Monitor Logs (Log Analytics) through a Log Analytics workspace you created with your sample application setup.
 
 ## Use Log Analytics
 
-1. In the Azure portal, go to your Azure Spring Cloud instance.
+1. In the Azure portal, go to your Azure Log Analytics instance.
 1. To open the Log Search pane, select Logs.
 1. In the Tables search box
 1. To get started, try this query to view the most recent autoscale evaluation logs:
