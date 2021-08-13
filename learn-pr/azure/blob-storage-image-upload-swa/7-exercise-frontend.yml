@@ -6,7 +6,7 @@ metadata:
   description: Creates the image upload fronted, showing you how to run webpack to package your JavaScript files, and how to setup a local test server for your Static Web App.
   author: videlalvaro
   ms.author: alvidela
-  ms.date: 13/08/2021
+  ms.date: 08/13/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

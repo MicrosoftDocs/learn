@@ -6,7 +6,7 @@ metadata:
   description: Describe uploading images to BLob Storage by using Shared Access Signatures and Cross-Origin Resource Sharing to provide access to storage containers.
   author: videlalvaro
   ms.author: alvidela
-  ms.date: 13/08/2021
+  ms.date: 08/13/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
