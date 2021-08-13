@@ -53,7 +53,7 @@ In this step, we'll add the Order function to the API Management resource that w
     | Name | Use a unique name within the **azure-api.net** domain |
     | Subscription | Concierge Subscription |
     | Resource group | <rgn>[sandbox resource group name]</rgn> |
-    | Location | Choose one of the following locations that supports the Consumption Plan: **West US**, **North Central US**, **West Europe**, **North Europe**, **Southeast Asia**, **Australia East**  | 
+    | Location | Choose one of the following locations that supports the Consumption Plan: **West US**, **North Central US**, **West Europe**, **North Europe**, **Southeast Asia**, **Australia East**  |
     | Organization name | OnlineStore |
     | Administrator email | Accept the default value |
     | Pricing tier | Consumption |
