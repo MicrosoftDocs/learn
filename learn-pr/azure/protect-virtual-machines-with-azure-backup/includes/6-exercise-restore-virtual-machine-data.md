@@ -95,7 +95,7 @@ The Recovery Services vaults are accessible at the subscription level. When you'
 
 1. Under **Details**, select **View details** for the *Restore* job.
 
-    ![Screenshot of the restore progress.](../media/6-restore-progress.png)
+    :::image type="content" source="../media/6-restore-progress.png" alt-text="Screenshot of the restore progress." lightbox="../media/6-restore-progress.png":::
 
     The **Backup** pane appears for nw-app01.
 
