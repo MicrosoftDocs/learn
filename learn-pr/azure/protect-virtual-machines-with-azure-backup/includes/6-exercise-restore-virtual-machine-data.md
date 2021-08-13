@@ -98,8 +98,8 @@ The Recovery Services vaults are accessible at the subscription level. When you'
     The **Restore** pane appears for nw-app01.
 
 1. You can monitor the progress of the VM restore job:
-    - **Job details**: Details about  of the job as a whole.
-    - **Job status**: Real-time percentage of the restore job.
-    - **Sub tasks**: Status of the current task within the job.
+    - **Job details**: Details about the restore job you launched for this VM.
+    - **Job status**: Real-time progress of the restore job.
+    - **Sub tasks**: Name and status of the tasks within the job.
 
     ![Screenshot of the job details.](../media/6-job-details.png)
