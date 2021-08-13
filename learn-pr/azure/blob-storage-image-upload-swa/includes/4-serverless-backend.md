@@ -2,13 +2,19 @@ For a client to be able to use anonymous authentication when sending data to Azu
 
 You are going to create an Azure Function that will return a JSON object containing two values: a URL where images should be uploaded to, and a SAS token. The browser client will use these values to authenticate its upload requests.
 
-To generate the SAS token your function will use your storage account `Connection String` and extract the `accountKey`, `accountName`, and storage `URL` from there. The first two values are going to be used to build the shared key credentials, while the URL is going to be sent directly to the browser.
+## Generating Shared Access Signatures
+
+Shared Access Signatures need to be configured with several parameters that specify things from what kind of access you are granting to users, to when that access will expire. 
+
+Also your SAS token needs to carry information that will let Azure authenticate and authorize requests made with the token. This information is extracted from your own storage account credentials. In this case your function will use your storage account `Connection String` and extract the `accountKey`, `accountName`, and storage `URL` from there. The first two values are going to be used to build the shared key credentials, while the URL is going to be sent directly to the browser.
 
 To limit how long the SAS token is going to be valid, you are going to specify an `expiresOn` value of two hours. After that time has passed the SAS token will no longer be valid. Be sure to adapt this time-frame to meet the security requirements of your application. We advice to always give as restricted access as possible.
 
 SAS tokens can be generated for different kind of resources on Azure, and with various permission levels. In this case your SAS token will grant access to your `images` container, and will allow creating blobs in that container.
 
-Once the SAS token and the URL have been generated, you serverless API will return a JSON object with the following format:
+## The Serverless API
+
+Once the SAS token and the URL have been generated, you need to return that information to the user so they can upload images with it. You will create a serverless API that will return a JSON object with the following format:
 
 ```javascript
 {
@@ -17,4 +23,4 @@ Once the SAS token and the URL have been generated, you serverless API will retu
 }
 ```
 
-You are going to use node.js to create this project. Let's move on to the exercise to implement the serverless backend.
+You are going to use node.js to create this project, along with `@azure/storage-blob` SDK provided by Microsoft. Let's move on to the exercise to implement the serverless backend.
