@@ -1,4 +1,8 @@
-Start by creating an `index.html` file in the root folder, and add the following code to it:
+Now you are going to create your application frontend. This is what your users will see. A form they will use to submit their images to your application. The web frontend will take care of contacting the Azure Functions REST API you created in the previous exercise. From the API the frontend will obtain a Shared Access Signature that will be used to authenticate and authorize users to upload their images to your storage backend. 
+
+## Create the frontend HTML
+
+1. Start by creating an `index.html` file in the root folder, and add the following code to it:
 
 ```html
 <!DOCTYPE html>
@@ -36,7 +40,9 @@ Start by creating an `index.html` file in the root folder, and add the following
 </html>
 ```
 
-To implement the `blobUpload` function, create a `src` folder and add an `index.js` file there. Then insert the following code:
+2. Create a `src` folder and add an `index.js` file there.
+
+3. Implement the `blobUpload` function like this:
 
 ```javascript
 const { BlockBlobClient, AnonymousCredential } = require("@azure/storage-blob");
@@ -57,14 +63,14 @@ function buildBlobName(file) {
 
 ## Use the Azure Blob Storage SDK with Webpack
 
-Install Webpack by running the following commands in your projects root folder:
+1. Install Webpack by running the following commands in your projects root folder:
 
 ```bash
 npm install webpack --save-dev
 npm install webpack-cli --save-dev
 ```
 
-Then edit your `package.json` file and add `"build": "webpack --mode=development"` to the `scripts` key, so it ends up looking like this:
+2. Edit your `package.json` file and add `"build": "webpack --mode=development"` to the `scripts` key, so it ends up looking like this:
 
 ```json
 "scripts": {
@@ -74,7 +80,7 @@ Then edit your `package.json` file and add `"build": "webpack --mode=development
   }
 ```
 
-Run `webpack` by typing:
+3. Run `webpack` by typing:
 
 ```bash
 npm run build
@@ -82,7 +88,11 @@ npm run build
 
 ## Run your project locally
 
-Now it's time to test your project locally. Press `F5` to start the Azure Functions project in debug mode. Once VSCode has launched your project you'll see a URL like the following in the console. Open it in your browser:
+Now it's time to test your project locally. 
+
+1. Press `F5` to start the Azure Functions project in debug mode. 
+ 
+2. Wait till VSCode has launched your project. You'll see a URL like the following in the console. Copy it and open it in your browser:
 
 ```
 http://localhost:7071/api/credentials
@@ -92,7 +102,11 @@ You will see the return value of the function displayed in your browser screen, 
 
 :::image type="content" source="../media/API_result.png" alt-text="API result in the browser":::
 
-Then it's time to run the frontend side of the project. For that you are going to use Live Server. First you need to configure Live Server so it forwards calls to your `credentials` API to the Azure Functions backend running on your machine. Add the following configuration key into your `.vscode/settings.json` file.
+## Test your project using Live Server
+
+Then it's time to run the frontend side of the project. For that you are going to use Live Server.
+
+1. You need to configure Live Server so it forwards calls to your `credentials` API to the Azure Functions backend running on your machine. Add the following configuration key into your `.vscode/settings.json` file.
 
 ```json
     "liveServer.settings.proxy": {
@@ -102,11 +116,15 @@ Then it's time to run the frontend side of the project. For that you are going t
     }
 ```
 
-Then right-click on your `index.html` file and select `Open with Live Server` from the contextual menu. Navigate to [http://localhost:5500/](http://localhost:5500/) to see your app running on the browser. It should look something like this:
+2. In the VS Code file tree, right-click on your `index.html` file and select `Open with Live Server` from the contextual menu. 
+
+3. Navigate to [http://localhost:5500/](http://localhost:5500/) to see your app running on the browser. It should look something like this:
 
 :::image type="content" source="../media/frontend.png" alt-text="Frontend app in the browser":::
 
-Select an image for uploading, and then go to your storage account in Azure Portal. Click on `Storage Explorer`, then select `Blob Storage` and click on the `images` container. Your image will be there like in the following screenshot. 
+4. Select an image for uploading, 
+
+5. Go to your storage account in Azure Portal. Click on `Storage Explorer`, then select `Blob Storage` and click on the `images` container. Your image will be there like in the following screenshot.
 
 :::image type="content" source="../media/container_image.png" alt-text="Storage Explorer listing the uploaded image":::
 
