@@ -25,9 +25,10 @@ products:
   - vs
 prerequisites: |
   -	Ability to create their own Azure Storage account
-  -	Familiarity with Static Web Apps
-  -	Familiarity with Azure Functions
+  -	Know the basic concepts of Static Web Apps
+  -	Know the basic concepts of  with Azure Functions
   -	Node.js LTS and Visual Studio Code
+  - Azure Functions Extension for Visual Studio Code installed
   - Azure Functions Core Tools installed
 units:
   - learn.blob-storage-image-upload-swa.introduction
