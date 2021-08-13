@@ -2,7 +2,7 @@
 uid: learn.blob-storage-image-upload-swa
 metadata:
   title: Upload images to Azure Blob Storage from a Static Web App
-  description: Learn how to
+  description: Learn how to securely upload images to Azure Blob Storage from a Static Web App by using an Azure Function to generate on demand Shared Access Signatures.
   ms.date: 06/04/2020
   author: videlalvaro
   ms.author: alvidela

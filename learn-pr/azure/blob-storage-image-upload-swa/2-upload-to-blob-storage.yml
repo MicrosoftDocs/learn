@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.blob-storage-image-upload-swa.2-upload-to-blob-storage
-title: Upload to Blob Storage
+title: Describe uploading to Blob Storage
 metadata:
-  title: Upload to Blob Storage
-  description: Describe unit
+  title: Describe uploading to Blob Storage
+  description: Describe uploading images to BLob Storage by using Shared Access Signatures and Cross-Origin Resource Sharing to provide access to storage containers.
   author: videlalvaro
   ms.author: alvidela
   ms.date: 04/14/2020
