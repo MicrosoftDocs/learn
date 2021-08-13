@@ -4,9 +4,9 @@ The middleware is an old ASP.NET app that while it has performed its job well, i
 
 A solution would be to leverage Azure Blog Storage directly by allowing your users to upload images right from their browsers to your storage containers. This poses a challenge though, how to grant your users access to your storage account without compromising the security of your data? You would like to find a way to allow your users to upload images while keeping your storage account secure.
 
-Using Shared Access Signatures, you could grant access to your storage account in a fine grained way. Since every new user session will require a new Shared Access Signature, you need a way to generate them on demand.
+Using Shared Access Signatures, you could grant access to your storage account in a fine grained way. Since every new user session will require a new Shared Access Signature, you need a way to generate signatures on demand.
 
-By using an Azure Function, you can generate Shared Access Signatures on demand, and deliver them to your users’ browsers via an API. In this way you modernize your infrastructure, make your developers life easier, and your users remain happy using your website.
+By using an Azure Function, you can generate Shared Access Signatures on demand, and deliver them to your users’ browsers via a REST API. In this way you modernize your infrastructure, make your developers life easier, and your users will have an improved experience by getting their images from the optimized Azure Storage servers.
 
 ## In this module you will
 
