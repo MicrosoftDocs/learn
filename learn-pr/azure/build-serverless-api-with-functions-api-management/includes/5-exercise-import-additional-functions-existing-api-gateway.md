@@ -116,7 +116,7 @@ We can use the `curl` command-line tool to submit requests to our API. It's idea
     GATEWAY_URL=<paste the URL here>
     ```
 
-1. In  the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in the middle menu bar, under **API**, select **API Management**. The **API Maangement** pane appears for your **ProductFunction** function app.
+1. In  the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in the middle menu bar, under **API**, select **API Management**. The **API Management** pane appears for your **ProductFunction** function app.
 
 1. In the top menu bar, select **Go to API Management**. The **API Management service** pane appears.
 
