@@ -76,7 +76,7 @@ Now that we have our function app deployed and tested, we'll expose the function
 
 1. In the Function App menu pane, scroll to the **API** category, and then select **API Management**. The **API Management** pane appears for your function app.
 
-1. Under the **API Management** field, select **Create new**. The **API Management service** pane appears.
+1. Under the **API Management** field, select **Create new**.
 
     ![Screenshot illustrating how to create a new API.](../media/3-create-api.png)
 
@@ -102,14 +102,14 @@ Now that we have our function app deployed and tested, we'll expose the function
 
     ![Screenshot showing the Link API button.](../media/3-link-api.png)
 
-    The **Import Azure Functions** pane opens with the **ProductDetails** function highlighted.
+    The **Import Azure Functions** pane appears with the **ProductDetails** function highlighted.
 
     ![Screenshot showing the Import Azure Functions pane.](../media/3-import-azure-functions.png)
 
-1. Select **Select** to continue. The **Create from Function App** pane appears.
+1. Select **Select** to continue. The **Create from Function App** dialog box appears.
 
     ![Screenshot showing the Create from Function app dialog box.](../media/3-create-from-function-app.png)
-    
+
 1. Change the **API URL suffix** field to **products**, and then select **Create**. Azure creates the API for the **ProductDetails** function and the **API Management** pane for your function app appears.
 
 Note that you were able to define your API, all from within the Azure Function App service.
@@ -118,14 +118,14 @@ Note that you were able to define your API, all from within the Azure Function A
 
 You now have a functional product details API in the API Management instance that you created. Let's test that API with the API Management tools in Azure.
 
-1. With the API Management pane still open, select **Test** from the menu bar.  The ProductDetails Console appears, listing the available operations in the left menu.
+1. With the **API Management** pane still open, select the **Test** tab from the interior menu bar.  The ProductDetails Console appears, listing the available operations in the left menu.
 
     ![Screenshot of the API Management tool with the Product Details API GET operation selected and the queery parameter name highlighted. ](../media/3-complete-product-details-test.png)
-    
-1. Select **GET ProductDetails** operation in the left menu.
+
+1. Select **GET ProductDetails** operation in the interior left menu pane.
 
 1. Under **Query parameters**, select **Add parameter**.
 
 1. In the **NAME** field, enter *id*, and in the **VALUE** field, enter *1*, and then select **Send** to generate a request.
 
-1. The **HTTP response** is highlighted, showing the details about the product returned in JSON format. Scroll up and notice that the **HTTP request** was sent to a destination in the **azure-api.net** domain. This location is different than the **azurewebsites.net** domain where the original function app is hosted. You can test this API with Query parameter *id=2* or *id=3*. 
+    The **HTTP response** is highlighted, showing the details about the product returned in JSON format. Scroll up and notice that the **HTTP request** was sent to a destination in the **azure-api.net** domain. This location is different than the **azurewebsites.net** domain where the original function app is hosted. You can test this API with Query parameter *id=2* or *id=3*.
