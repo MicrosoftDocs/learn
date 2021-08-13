@@ -35,9 +35,9 @@ We'll start by downloading and building an existing .NET Core application. You m
     dotnet build TransferBlobs
     ```
 
-## Examine the ArchiveBlobs application
+## Examine the TransferBlobs application
 
-1. Move to the *ArchiveBlobs* subdirectory. This subdirectory contains the source code for the sample application.
+1. Move to the *TransferBlobs* subdirectory. This subdirectory contains the source code for the sample application.
 
     ```bash
     cd TransferBlobs
@@ -60,7 +60,7 @@ We'll start by downloading and building an existing .NET Core application. You m
     Console.WriteLine($"Moving blobs modified since {transferBlobsModifiedSince}");
     ```
 
-    The *ArchiveBlobs* application takes the following command-line parameters:
+    The *TransferBlobs* application takes the following command-line parameters:
 
     - A connection string for accessing the source storage account
     - The name of the container in the source storage account containing the blobs that you want to move
@@ -170,7 +170,7 @@ We'll start by downloading and building an existing .NET Core application. You m
     await MoveMatchingBlobsAsync(sourceBlobRefs, sourceBlobContainer, destBlobContainer);
     ```
 
-## Test the ArchiveBlobs application
+## Test the TransferBlobs application
 
 1. Using the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), move to your source (hot) storage account.
 
@@ -203,12 +203,12 @@ With several blobs showing newer modification dates, you can differentiate betwe
 
 1. In the **Data storage** section, click **Containers**.
 
-1. Select **+ Container**, and create a new container named **archive-test**.
+1. Select **+ Container**, and create a new container named **transfer-test**.
 
 1. In the Cloud Shell window, run the following command. Replace *\<source connection string>* and *\<destination connection string>* with the connection strings you recorded in notepad. Replace *\<selected date and time>* with the date and time for your blobs, in the same format as it appeared in the Azure portal. Enclose the connection strings and date/time in double quotes, to prevent them being interpreted by the Bash shell:
 
     ```bash
-    dotnet run "<source connection string>" specifications "<destination connection string>" archive-test "<selected date and time>"
+    dotnet run "<source connection string>" specifications "<destination connection string>" transfer-test "<selected date and time>"
     ```
     
     > [!NOTE]
@@ -220,7 +220,7 @@ With several blobs showing newer modification dates, you can differentiate betwe
 
 1. Move to your destination (cool) storage account.
 
-1. Browse the **archive-test** folder. Verify it contains the blobs that were moved.
+1. Browse the **transfer-test** folder. Verify it contains the blobs that were moved.
 
 1. Move to your source (hot) storage account.
 
