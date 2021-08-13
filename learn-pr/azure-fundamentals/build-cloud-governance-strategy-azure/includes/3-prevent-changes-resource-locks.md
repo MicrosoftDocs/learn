@@ -1,4 +1,4 @@
-A [resource lock](/azure/azure-resource-manager/management/lock-resources?azure-portal=true) prevents resources from being accidentally deleted or changed.
+A [resource lock](/azure/azure-resource-manager/management/lock-resources) prevents resources from being accidentally deleted or changed.
 
 Even with Azure role-based access control (Azure RBAC) policies in place, there's still a risk that people with the right level of access could delete critical cloud resources. Think of a resource lock as a warning system that reminds you that a resource should not be deleted or changed.
 
@@ -12,14 +12,15 @@ To view, add, or delete locks in the Azure portal, go to the **Settings** sectio
 
 Here's an example that shows how to add a resource lock from the Azure portal. You'll apply a similar resource lock in the next part.
 
-:::image type="content" source="../media/7-portal-add-lock.png" alt-text="A screenshot of the Azure portal showing how to add a resource lock.":::
+:::image type="content" source="../media/7-portal-add-lock-ebc3d24c.png" alt-text="A screenshot of the Azure portal showing how to add a resource lock.":::
+
 
 ## What levels of locking are available?
 
 You can apply locks to a subscription, a resource group, or an individual resource. You can set the lock level to **CanNotDelete** or **ReadOnly**.
 
-* **CanNotDelete** means authorized people can still read and modify a resource, but they can't delete the resource without first removing the lock.
-* **ReadOnly** means authorized people can read a resource, but they can't delete or change the resource. Applying this lock is like restricting all authorized users to the permissions granted by the **Reader** role in Azure RBAC.
+ -  **CanNotDelete** means authorized people can still read and modify a resource, but they can't delete the resource without first removing the lock.
+ -  **ReadOnly** means authorized people can read a resource, but they can't delete or change the resource. Applying this lock is like restricting all authorized users to the permissions granted by the **Reader** role in Azure RBAC.
 
 ## How do I delete or change a locked resource?
 
