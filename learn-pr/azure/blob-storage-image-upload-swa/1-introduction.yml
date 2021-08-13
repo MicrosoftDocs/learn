@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.blob-storage-image-upload-swa.1-introduction
+uid: learn.blob-storage-image-upload-swa.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: Overview of the concepts and scenario you'll learn about in this module.
   author: videlalvaro
   ms.author: alvidela
-  ms.date: 04/14/2020
+  ms.date: 13/08/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

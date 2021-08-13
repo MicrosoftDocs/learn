@@ -34,14 +34,14 @@ prerequisites: |
   -	Node.js LTS and Visual Studio Code
   - Azure Functions Core Tools installed
 units:
-  - learn.blob-storage-image-upload-swa.1-introduction
-  - learn.blob-storage-image-upload-swa.2-upload-to-blob-storage
-  - learn.blob-storage-image-upload-swa.3-exercise-setup-blob-storage-account
-  - learn.blob-storage-image-upload-swa.4-serverless-backend
-  - learn.blob-storage-image-upload-swa.5-exercise-serverless
-  - learn.blob-storage-image-upload-swa.6-frontend
-  - learn.blob-storage-image-upload-swa.7-exercise-frontend
-  - learn.blob-storage-image-upload-swa.8-knowledge-check
-  - learn.blob-storage-image-upload-swa.9-summary
+  - learn.blob-storage-image-upload-swa.introduction
+  - learn.blob-storage-image-upload-swa.upload-to-blob-storage
+  - learn.blob-storage-image-upload-swa.exercise-setup-blob-storage-account
+  - learn.blob-storage-image-upload-swa.serverless-backend
+  - learn.blob-storage-image-upload-swa.exercise-serverless
+  - learn.blob-storage-image-upload-swa.frontend
+  - learn.blob-storage-image-upload-swa.exercise-frontend
+  - learn.blob-storage-image-upload-swa.knowledge-check
+  - learn.blob-storage-image-upload-swa.summary
 badge:
   uid: learn.blob-storage-image-upload-swa.badge
