@@ -8,7 +8,7 @@ The main focus for these two phases is to prepare a new Bicep file before you la
 
 In the _convert_ phase of migrating your resources to Bicep, the goal is to capture an initial representation of your Azure resources. The Bicep file you create in this phase isn't complete, and it's not ready to be used. However, the file gives you a starting point for your migration.
 
-The convert phase consists of two steps:
+The convert phase consists of two steps, which you complete in sequence:
 
 1. Capture a JSON representation of your Azure resources.
 2. Convert the JSON representation to Bicep using the _decompile_ command.
@@ -195,12 +195,11 @@ Once you decompile your template, you've completed the _convert_ phase and you h
 
 In the _migrate_ phase of migrating your resources to Bicep, the goal is to create the first draft of your deployable Bicep file, and to ensure it defines all of the Azure resources that are in scope for the migration.
 
-The migrate phase consists of four steps:
+The migrate phase consists of three steps, which you complete in sequence:
 
 1. Create a new empty Bicep file.
 2. Copy each resource from your decompiled template.
 3. Identify and recreate any missing resources.
-4. Add parameters to make your Bicep file reusable.
 
 :::image type="content" source="../media/2-migrate.png" alt-text="Diagram of migrating a template to Bicep." border="false":::
 

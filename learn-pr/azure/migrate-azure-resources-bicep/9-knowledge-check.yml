@@ -25,9 +25,6 @@ quiz:
     - content: "`bicep convert 'path/to/file.json'`"
       isCorrect: false
       explanation: "The `convert` command does not exist within the Bicep tooling."
-    - content: "`az bicep deconvert 'path/to/file.json'`"
-      isCorrect: false
-      explanation: "The `deconvert` command does not exist within the Bicep tooling."
   - content: "You need to export a deployed Azure resource to an ARM template. What steps do you take to complete this task?"
     choices:
     - content: "From the Azure portal, navigate to the resource you want to export, select **Export template**, and select **Download** to save a copy of the template."

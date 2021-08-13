@@ -8,7 +8,7 @@ The main focus of these two phases is to test your Bicep file using the availabl
 
 In the _test_ phase of migrating your resources to Bicep, the goal is to verify the integrity of your migrated templates and to perform a test deployment.
 
-The test phase consists of two steps:
+The test phase consists of two steps:, which you complete in sequence
 
 1. Run the ARM template deployment what-if operation.
 1. Perform a test deployment.
@@ -63,7 +63,7 @@ Before introducing your converted Bicep template to production, consider running
 
 In the _deploy_ phase of migrating your resources to Bicep, the goal is to deploy your final Bicep file to production. Prior to the production deployment, there a couple of things to consider.
 
-The deploy phase consists of four steps:
+The deploy phase consists of four steps, which you complete in sequence:
 
 1. Prepare a rollback plan.
 1. Run the what-if operation against production.
