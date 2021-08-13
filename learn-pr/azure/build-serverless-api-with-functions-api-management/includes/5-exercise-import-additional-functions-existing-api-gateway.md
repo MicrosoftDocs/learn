@@ -74,7 +74,7 @@ In this step, we'll add the Order function to the API Management resource that w
 
 1. Select **Select** at the end of the **Configure required settings** field containing the name *Function App*.
 
-    ![Screenshot of the Import Azure Functions  with the Function App Configure Required Settings option selected.](../media/5-import-azure-function-app-03.png)
+    [ ![Screenshot of the Import Azure Functions with the Function App Configure Required Settings option selected.](../media/5-import-azure-function-app-03.png) ](../media/5-import-azure-function-app-03.png#lightbox)
 
     The **Select Azure Function App** pane appears.
 
