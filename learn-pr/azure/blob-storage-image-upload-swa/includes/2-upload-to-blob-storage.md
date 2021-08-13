@@ -25,8 +25,3 @@ Since you application lives in your company's domain name, a user won't be able 
 By enabling CORS, you'll have a secure way to allow your app domain to upload files to your Azure Blob Storage account.
 
 In the next step you are going to setup your Azure Blob Storage account, and enable CORS.
-
-LINKS:
-
-[same-origin policy](https://www.w3.org/Security/wiki/Same_Origin_Policy)
-[Cross-Origin Resource Sharing](https://docs.microsoft.com/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services)
