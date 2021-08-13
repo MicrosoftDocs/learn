@@ -24,9 +24,9 @@ In order to complete the exercises, you'll need to configure your environment. I
     1. **SQL Server (mssql)**: This extension includes tools for querying SQL Server and Azure SQL resources.
     1. **Live Server**: This extension enables you to run web applications locally with ease.
 1. Sign in to GitHub in Visual Studio Code using your GitHub account. If you do not have a GitHub account, [create one here](https://github.com/join).
-1. Sign in to GitHub with your GitHub account and navigate to [this repository](https://github.com/Azure-Samples/serverless-full-stack-apps-azure-sql). In the top-right corner of your browser, select the **Fork** button.
+1. Sign in to GitHub with your GitHub account and navigate to the [Azure-Samples repository](https://github.com/Azure-Samples/serverless-full-stack-apps-azure-sql). In the top-right corner of your browser, select the **Fork** button.
 1. On the same page, select **Code** and copy the HTTPS Clone URL, for example, *`https://github.com/<github-username>/serverless-full-stack-apps-azure-sql.git`*.
-1. Back in Visual Studio Code, select **Source Control** > **...** > **Clone** and enter the URL copied in a previous step. Select the location you would like the repository to be copied locally.
+1. Back in Visual Studio Code, select **Source Control** > **...** > **Clone** (or **View** > **Command Pallette** > **Git:Clone**) and enter the Git repository URL copied in a previous step. In file explorer, select or create the location you would like the repository to be copied to locally.
 1. In Visual Studio Code, select **File** > **Open folder** and navigate to the location where you cloned the repository. This step will open the folder in your Visual Studio Code session.
 1. Select the **Explorer** blade from the left-hand taskbar. Confirm that you see the repository files.
 
@@ -119,20 +119,21 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. In a text file, notepad, or on paper, determine the connection string for your Azure SQL Database. It will be something like `Server=<server-name>.database.windows.net,1433;Initial Catalog=bus-db;User Id=cloudadmin;Password=<your-password>;Connection Timeout=30;`
 
-1. Navigate to your forked repository for this module on GitHub (make sure you are signed in). It will be something like `https://github.com/<your-git-username>/serverless-full-stack-apps-azure-sql`.
+1. In a browser, navigate to your forked repository for this module on GitHub (make sure you are signed in). It will be something like `https://github.com/<your-git-username>/serverless-full-stack-apps-azure-sql`.
 
-1. Select **Settings** for the repository.
+1. In the repository toolbar, select **Settings**.
 
-1. Select **Secrets** > **New repository secret** and enter the following items:
+1. In the Settings page navigation pane, select **Secrets** and on the Action Secrets pane, select **New repository secret**, and then enter the following items:
     1. *Name*: **AZURE_SQL_CONNECTION_STRING**
     1. *Value*: **Connection string from prior step**
 
-1. Next, you must configure the yaml file. In Visual Studio Code, select **Explorer** icon on the left-hand taskbar to view the repository files. If you don't see them, select **File** > **Open folder** and navigate to the location where you cloned the repository.
+ 1. Select **Add secret** to add an entry to the **Repository secrets** section.
+
+ 1. Next, you need to configure the yaml template for your repo. In Visual Studio Code, select **Explorer** from the left-hand taskbar. The files and folders for your **serverless-full-stack...** repository should display. If you don't see them, select **File** > **Open folder** and navigate to the location where you cloned the repository.
 
 1. Under the folder `.github\workflows`, rename **`azuresqldatabase.yml.template`** to **`azuresqldatabase.yml`**.
 
-
-1. In the file **`azuresqldatabase.yml`** update `bus-server.database.windows.net` to the name of your Azure SQL Database logical server (for example, **bus-server123456.database.windows.net**).
+1. Edit the file **`azuresqldatabase.yml`**, and update the server-name `bus-server.database.windows.net` to the name of your Azure SQL Database logical server (for example, **bus-server123456.database.windows.net**).
 
 1. Save the file.
 
@@ -143,7 +144,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     > [!TIP]
     > If the Source Control list of items is empty, you can choose to create an empty commit to push and kick off GitHub actions.
 
-1. Select the **...** > **Push**, which will kick off a build. Confirm it builds successfully by navigating to the repository in GitHub and selecting **Actions**. What you've just done is enable the GitHub SQL Action which takes care of deploying the appropriate schema that is required by the database.
+1. Select the ellipsis in the toolbar and then select **Push**, which will kick off a build. Confirm it builds successfully by opening your GitHub repository, and selecting **Actions** on the toolbar. What you've just done is enable the GitHub SQL Action which takes care of deploying the appropriate schema that is required by the database.
 
 1. By this point, the script in the Azure Cloud Shell to the right should be complete. Run the following code to start a bash session. The final step is to load in the route reference data.
 
@@ -151,11 +152,11 @@ These scripts should take three to five minutes to complete. Be sure to note you
     bash
     ```
 
-1. Start a sqlcmd session with the below commands (you may want to copy to a text file to easily modify). Note you'll need to add your server name and password.
+1. Copy the following code to a text file, update <server-name> with your server name and <password> with password. Then enter this in the Cloud Shell. This will start a sqlcmd session.
 
     ```bash
     TERM=dumb
-    sqlcmd -S [server-name].database.windows.net -P [password] -U cloudadmin -d bus-db
+    sqlcmd -S <server-name>.database.windows.net -P <password> -U cloudadmin -d bus-db
     ```
 
 1. In sqlcmd to the right, copy and paste the following script to import the flat file of routes data. For more details on what is done here, you can optionally review the previous module in the associated learning path.
@@ -196,7 +197,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     GO
     ```
 
-1. Finally, select **CTRL+C** to exit sqlcmd and run **`pwsh`** to switch back to PowerShell.
+    1. Finally, select <kbd>Ctrl+C</kbd> to exit sqlcmd and run **`pwsh`** to switch back to PowerShell.
 
 ## Deploy and configure the Azure Function app
 
