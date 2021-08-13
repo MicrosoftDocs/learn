@@ -10,5 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Enable network access to an application
 durationInMinutes: 10
+sandbox: true
+interactive: bash
 content: |
   [!include[](includes/7-exercise-expose-app.md)]

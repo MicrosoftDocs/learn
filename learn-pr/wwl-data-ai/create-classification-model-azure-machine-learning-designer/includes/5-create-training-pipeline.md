@@ -4,7 +4,7 @@ After you've used data transformations to prepare the data, you can use it to tr
 
 It's common practice to train the model using a subset of the data, while holding back some data with which to test the trained model. This enables you to compare the labels that the model predicts with the actual known labels in the original dataset.
 
-In this exercise, you're going to extend the **Diabetes Training** pipeline as shown here:
+In this exercise, you're going to work through steps to extend the **Diabetes Training** pipeline as shown here:
 
 > [!div class="centered"]
 > ![split data, then train with logistic regression and score](../media/train-score-pipeline.png)
