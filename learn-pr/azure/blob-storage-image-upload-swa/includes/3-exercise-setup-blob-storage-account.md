@@ -25,4 +25,4 @@ These values should be customized to fit the needs of your application.
 
 :::image type="content" source="../media/cors_setup.png" alt-text="Setup CORS":::
 
-Next you are going to see how the serverless backend works.
+You've now successfully setup your storage backend. Next you are going to see how the serverless backend works.

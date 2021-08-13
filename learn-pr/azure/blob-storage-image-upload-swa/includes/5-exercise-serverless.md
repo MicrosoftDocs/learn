@@ -85,4 +85,4 @@ module.exports = async function (context, req) {
 
 Your `index.js` should like like this once you have filled all the code: [index.js](https://github.com/MicrosoftDocs/mslearn-blob-storage-image-upload-static-web-app/blob/main/credentials/index.js)
 
-The next step is to implement the frontend part to contact your serverless API and upload the image to Azure Blob Storage.
+You have successfully created your serverless backend. The next step is to implement the frontend that will let you upload images to Azure Blob Storage.
