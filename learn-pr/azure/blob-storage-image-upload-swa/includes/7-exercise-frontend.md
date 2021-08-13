@@ -116,13 +116,13 @@ Then it's time to run the frontend side of the project. For that you are going t
     }
 ```
 
-2. In the VS Code file tree, right-click on your `index.html` file and select `Open with Live Server` from the contextual menu. 
+2. In the VS Code file tree, right-click on your `index.html` file and select `Open with Live Server` from the contextual menu.
 
 3. Navigate to [http://localhost:5500/](http://localhost:5500/) to see your app running on the browser. It should look something like this:
 
 :::image type="content" source="../media/frontend.png" alt-text="Frontend app in the browser":::
 
-4. Select an image for uploading, 
+4. Select an image for uploading.
 
 5. Go to your storage account in Azure Portal. Click on `Storage Explorer`, then select `Blob Storage` and click on the `images` container. Your image will be there like in the following screenshot.
 
