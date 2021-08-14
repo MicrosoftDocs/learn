@@ -140,9 +140,9 @@ Remember that CRUD stands for _Create_, _Read_, _Update_, and _Delete_. These te
 
     - Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-    - From the Azure **Home page**, under **Azure services**, select **All resources**. The **All resaources** pane appears.
+    - From the Azure **Home page**, under **Azure services**, select **All resources**. The **All resources** pane appears.
 
-    - Search for and select your database. The **Logisitcs** pane for yoru SQL database appears.
+    - Search for and select your database. The **Logistics** pane for your SQL database appears.
 
     - On the top menu bar, select **Set server firewall**. The **Firewall settings** pane appears.
 

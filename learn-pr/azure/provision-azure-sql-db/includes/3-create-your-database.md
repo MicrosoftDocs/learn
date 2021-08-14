@@ -125,7 +125,7 @@ Deployment notifications appear, enabling you to monitor the deployment process.
 
    :::image type="content" source="../media/3-notifications-complete.png" alt-text="Screenshot of the Azure portal showing the Overview pane of a newly created SQL database.":::
 
-   The **Logisitcis** pane appears for your SQL database.
+   The **Logistics** pane appears for your SQL database.
 
 ## Set the server firewall
 
