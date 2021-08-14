@@ -61,7 +61,7 @@ Each A record requires the following details:
 
 - **Name**: The name of the custom domain, for example *webserver1*.
 - **Type**: In this instance, it's A.
-- **TTL**: Represents the "time-to-live" as a whole unit, where 1 is one hour. This value indicates how long the A record lives in a DNS cache before it expires.
+- **TTL**: Represents the "time-to-live" as a whole unit, where 1 is one second. This value indicates how long the A record lives in a DNS cache before it expires.
 - **IP address**: The IP address of the server this A record should resolve to.
 
 #### CNAME record
