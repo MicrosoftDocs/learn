@@ -37,7 +37,7 @@ In order to complete the exercises, you'll need to configure your environment. I
 
 1. Below the toolbar, select the green **Code** button and copy the HTTPS Clone URL; for example, *`https://github.com/<github-username>/serverless-full-stack-apps-azure-sql.git`*.
 
-1. In Visual Studio Code, select **Source Control** > **...** > **Clone** (or select **View**, Command Pallette** and enter **Git:Clone**) and paste the Git repository URL you copied in the previous step, and then select <kbd>Enter</>. 
+1. In Visual Studio Code, select **Source Control** > **...** > **Clone** (or select **View, Command Palette** and enter **Git:Clone**), paste the Git repository URL you copied in the previous step, and then select <kbd>Enter</>. 
     
 1. In the file explorer dialog, select or create a local folder where you would like the repository to be copied to, and then select **Select Repository Location**.  Your forked repo of the Azure Samples is copied to your local folder. Visual Studio Code displays a notification that the repository was cloned. 
 
