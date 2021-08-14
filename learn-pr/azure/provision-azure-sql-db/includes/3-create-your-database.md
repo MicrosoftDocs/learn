@@ -63,64 +63,69 @@ Here you'll set up your database, which includes creating your logical server. Y
 
 Over time, if you realize you need more compute power to keep up with demand, you can adjust performance options or even switch between the DTU and vCore performance models.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Under **Azure Services**, select **Create a resource**.  The**Create a resource** pane appears.
+1. On the **home** page, under **Azure Services**, select **Create a resource**. The **Create a resource** pane appears.
 
    :::image type="content" source="../media/3-create-db.png" alt-text="Screenshot showing Create a resource pane with Databases in menu and SQL Database resource service highlighted.":::
 
-1. On the left menu pane, select **Databases**, and then select **SQL Database**. The **Create SQL Database** pane appears.
+1. In the left menu pane, select **Databases**, and then select **SQL Database**. The **Create SQL Database** pane appears.
 
-1.  On the **Basics** tab, select these values.
+1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
     | --- | --- |
-    | **Project details** | --- |
-    | **Subscription** | *Concierge Subscription* |
-    | **Resource group** | *<rgn>[sandbox resource group name]</rgn>* |
-    | **Database Details** | --- |
-    | **Database name** | *Logistics* |
-    | **Server** | _[See step 5]_ |
-    | **Want to use SQL elastic pool?** | *No* |
-    | **Compute + storage** | _[See step 6]_ |
+    | **Project details** |
+    | Subscription | *Concierge Subscription* |
+    | Resource group | *<rgn>[sandbox resource group name]</rgn>* |
+    | **Database details** |
+    | Database name | *Logistics* |
+    | Server | _[See step 5]_ |
+    | Want to use SQL elastic pool? | *No* |
+    | Compute + storage | _[See step 8]_ |
 
 1. Under **Server**, select **Create new**. The **New server** pane appears. 
- 
-1. Enter the following values.
+
+1. Enter the following values for each setting.
 
     | Setting | Value |
     | --- | --- |
     | **Server name** | A globally unique [server name](/azure/architecture/best-practices/naming-conventions). |
     | **Server admin login** | A [database identifier](/sql/relational-databases/databases/database-identifiers) that serves as your primary administrator login name. |
     | **Password** | Any valid password that has at least eight characters and contains characters from three of these categories: uppercase characters, lowercase characters, numbers, and non-alphanumeric characters. |
-    | **Location** | Any valid location from the dropdown. |
+    | **Location** | Select any valid location from the dropdown list. |
 
     [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
 
 1. Select **OK**. The Server field updates with the name of the server you created.
 
-1. Under **Compute + storage**, select **Configure database**. The **Configure** pane appears.
- 
-    1. Select the  **Service tier** dropdown and under *DTU-based purchasing model*, select **Basic, Standard, or Premium**. 
+1. Under **Compute + storage**, select the **Configure database** link. The **Configure** pane appears.
+
+    1. Under **Service and compute tier**, in the **Service tier** field, select the dropdown list, and under **DTU-based purchasing model**, select **Basic**, **Standard**, or **Premium**.
 
     1. Select **Apply**.
 
 1. Scroll up to the top of the **Create SQL Database** pane, select the **Additional settings** tab, and enter these values for each setting.
 
-    | Section | Setting | Value |
-    | --- | --- | --- |
-    | **Data source** | **Use existing data** | *None* |
-    | **Database Collation** | **Collation** | *SQL_Latin1_General_CP1_CI_AS* |
-    | **Maintenance window** | **Maintenance window** | *System default (5pm to 8am* |
+    | Setting | Value |
+    | --- | --- |
+    | **Data source** |
+    | Use existing data | None |
+    | **Database Collation** |
+    | Collation | SQL_Latin1_General_CP1_CI_AS |
+    | **Maintenance window** |
+    | Maintenance window | System default (5pm to 8am) |
 
-1. Select **Review + create** to validate your input, and then select **Create** to create your Azure SQL database. 
+1. Select **Review + create** to validate your entries, and then select **Create** to create your Azure SQL database.
 
     > [!IMPORTANT]
     > Remember your server name, admin login, and password for later.
 
-Deployment notifications display, enabling you to monitor the deployment process. When the process completes, select **Go to resource** to view your database server dashboard.
+Deployment notifications appear, enabling you to monitor the deployment process. When the process completes, select **Go to resource** to view your database server dashboard.
 
    :::image type="content" source="../media/3-notifications-complete.png" alt-text="Screenshot of the Azure portal showing the Overview pane of a newly created SQL database.":::
+
+   The **Logisitcis** pane appears for your SQL database.
 
 ## Set the server firewall
 
@@ -130,14 +135,14 @@ For your prototype, you only need to access the database from your laptop. Later
 
 For now, let's enable your development computer to access the database through the firewall.
 
-1. In the Overview pane of the Logistics database, select **Set server firewall**. The **Firewall settings** pane appears.
+1. In the Overview pane of the Logistics database, on the top menu bar, select **Set server firewall**. The **Firewall settings** pane appears.
 
     :::image type="content" source="../media/3-set-server-firewall.png" alt-text="Screenshot of the Azure portal showing a SQL database overview pane with the Set server firewall button highlighted.":::
 
-1. Select **Add client IP**. This action automatically adds the IP address for your development computer.
+1. On the top menu bar, select **Add client IP**. This action automatically adds the IP address for your development computer.
 
     :::image type="content" source="../media/3-add-client-ip.png" alt-text="Screenshot of the Azure portal showing a SQL database Firewall settings pane with the Add client IP button highlighted.":::
 
-1. Select **Save**.
+1. On the top menu bar, select **Save**. Select **OK** when prompted in the *Success* dialog box that appears.
 
 In the next unit, you'll get some hands-on practice with your new database and with Azure Cloud Shell. You'll connect to the database, create a table, add some sample data, and execute a few SQL statements.
