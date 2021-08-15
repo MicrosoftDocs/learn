@@ -1,7 +1,8 @@
-Setting up your environment and deploying the template is the first step in getting hands on with Azure SQL Database for IoT scenarios. For this sample, you'll use resources including Azure SQL Database, Azure FUnctions, Azure Virtual Machines, and Azure ARM templates.
+Setting up your environment and deploying the template is the first step in getting hands on with Azure SQL Database for IoT scenarios. For this sample, you'll use resources including Azure SQL Database, Azure Functions, Azure Virtual Machines, and Azure ARM templates.
 
 In this exercise, you'll deploy the main solution and configure your environment.
 
+<!--
 ## Configure your environment with Visual Studio Code
 
 In order to complete the exercises, you'll need to configure your environment. If you already have these components installed and configured, you do not need to repeat the steps.
@@ -23,6 +24,7 @@ In order to complete the exercises, you'll need to configure your environment. I
 1. Back in Visual Studio Code, select **Source Control** > **...** > **Clone** and enter the URL copied in a previous step. Select the location you would like the repository to be copied locally.
 1. In Visual Studio Code, select **File** > **Open folder** and navigate to the location where you cloned the repository. This step will open the folder in your Visual Studio Code session.
 1. Select the **Explorer** blade from the left-hand taskbar. Confirm that you see the repository files.
+-->
 
 ## Deploy the Azure Resource Manager (ARM) template
 
@@ -165,7 +167,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     [!div class="nextstepaction"]
     [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-1. In the *Overview* pane, select **Get publish profile** to download the Azure Function publish profile. This acts like a connection string to the function.
+1. In the *Overview* pane, select **Get publish profile** to download the Azure Function publish profile. The publish profile acts as a connection string to the function.
 
 1. Copy the contents of the file into your notes tool of choice.
 
@@ -177,14 +179,16 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. Select **Save**.
 
-**THIS FILE DOESNT EXIST YET AND NEITHER DOES THE DACPAC**
+**TODO THIS FILE DOESNT EXIST YET AND NEITHER DOES THE DACPAC**
 1. In the GitHub repository, navigate to **Code** > **.github** > **workflows** and select **azuresqldatbase.yml**.
 
 1. In the file **azuresqldatabase.yml**, select the **Edit** pencil icon.
 
 1. Update `iot-server.database.windows.net` to the name of your Azure SQL Database logical server (for example, **iot-server123456.database.windows.net**).
 
-1. Select **Commit changes**. This will kick off both the Azure Function and Azure SQL Database GitHub Actions.
+1. Select **Commit changes**. This commit will kick off both the Azure Function and Azure SQL Database GitHub Actions to deploy the latest updates.
+
+**TODO Azure Function will not deploy successfully. I am unable to get working locally either**
 
 1. Confirm both jobs build successfully by selecting **Actions** near the top of the window and reviewing the progress and completion.
 
@@ -217,11 +221,11 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 ## Connect to the Azure Virtual Machine and start the simulator
 
-1. Back in the Azure Cloud Shell on the right-hand side of this page, the script should be complete and you should see a public IP address. This is the public IP address of your Azure Virtual Machine. Note it down.
+1. Back in the Azure Cloud Shell on the right-hand side of this page, the script should be complete and you should see a public IP address, which is the public IP address of your Azure Virtual Machine. Note it down.
 
 1. Run `bash` to switch back to the bash shell.
 
-1. Using the IP address you noted earlier and replacing `0.0.0.0`, run the following and follow the prompts to login to your Azure Virtual Machine.
+1. Using the IP address you noted earlier and replacing `0.0.0.0`, run the following and follow the prompts to log in to your Azure Virtual Machine.
 
     ```bash
     ssh cloudadmin@0.0.0.0
@@ -234,7 +238,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     sudo sh get-docker.sh
     ```
 
-**CANT RUN BASIC CONTAINERS FOR SOME REASON SO CANT TEST NEXT STEPS**
+**TODO CANT RUN BASIC CONTAINERS FOR SOME REASON SO CANT TEST NEXT STEPS**
 
 1. Replace <IoTHubConnectionEndpoint> with your IoT Hub compatible endpoint connection string in the code below. Then, run it in the Azure Cloud Shell to provision the simulated devices.
 
