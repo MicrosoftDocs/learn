@@ -17,7 +17,7 @@ All non-Administrators should not have access due to the sensitive data and the 
  
 1. In the left menu, select **Users**, and then select **User settings**. The **User settings** pane appears.
 
-1. Ensure that **Restrict access to Azure AD administration portal** is set to **Yes**. Setting this value to **Yes** prevents all non-administrators from accessing any data in the Azuere AD administration portal, but does not restrict access for PowerShell or another client, such as Visual Studio.
+1. Ensure that **Restrict access to Azure AD administration portal** is set to **Yes**. Setting this value to **Yes** prevents all non-administrators from accessing any data in the Azure AD administration portal, but does not restrict access for PowerShell or another client, such as Visual Studio.
 
     ![Screenshot of the Azure portal showing the Restrict access to Azure AD administration portal option.](../media/2-restrict-access-ad-portal.png)
 
