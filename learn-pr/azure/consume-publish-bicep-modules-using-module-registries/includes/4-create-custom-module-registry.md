@@ -1,0 +1,6 @@
+- What does it take to create a registry
+    - ACR vs other registries
+- Auth
+- Publishing a module
+    - bicep pack
+    - Save to ACR

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.consume-publish-bicep-modules-using-module-registries.introduction
-title: Introduction
+uid: learn.azure.consume-publish-bicep-modules-using-module-registries.summary
+title: Summary
 metadata:
-  unitType: introduction
-  title: introduction
+  unitType: summary
+  title: summary
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 08/15/2021
   author: johndowns
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/7-summary.md)]

@@ -8,7 +8,7 @@ metadata:
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 title: Consume and publish Bicep modules by using module registries
 summary: "TODO: 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=master"
 abstract: |
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   You should be familiar with using:
 
-  - Bicep, including creating and deploying basic files.
+  - Bicep, including how to use modules, parameters, and how to deploy Bicep files to Azure.
   - Azure, including the Azure portal, subscriptions, resource groups, and resources.
 
   To work through the exercises, you'll also need the following installed locally:
@@ -37,8 +37,10 @@ products:
   - azure-resource-manager
 units:
 - learn.azure.consume-publish-bicep-modules-using-module-registries.introduction
-- learn.azure.consume-publish-bicep-modules-using-module-registries.learning-content
-- learn.azure.consume-publish-bicep-modules-using-module-registries.exercise
+- learn.azure.consume-publish-bicep-modules-using-module-registries.use-module-public-bicep-registry
+- learn.azure.consume-publish-bicep-modules-using-module-registries.exercise-deploy-module-from-registry
+- learn.azure.consume-publish-bicep-modules-using-module-registries.create-custom-module-registry
+- learn.azure.consume-publish-bicep-modules-using-module-registries.exercise-create-use-private-module-registry
 - learn.azure.consume-publish-bicep-modules-using-module-registries.knowledge-check
 - learn.azure.consume-publish-bicep-modules-using-module-registries.summary
 badge:
