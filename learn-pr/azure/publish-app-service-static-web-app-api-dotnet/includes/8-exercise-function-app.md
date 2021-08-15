@@ -34,13 +34,15 @@ Your API has routes for manipulating the products for the shopping list, but it 
 
 ## Create the HTTP GET function
 
-1. In Visual Studio, right-click the **Api** project, and then select **Add** -> **New Azure Function**.
+1. In Visual Studio, right-click the **Api** project, and then select **Add** > **New Azure Function**.
 
 1. Enter *ProductsGet* as the name of the function.
 
 1. Select **Http trigger** as the function type.
 
-1. Select **Anonymous** as the authentication level.
+1. Select **Anonymous** from the dropdown list in the **Authorization level** field.
+
+1. Select **Add**.
 
 :::image type="content" source="../media/new-azure-function.png" alt-text="Creating a new Azure Function.":::
 
@@ -132,11 +134,13 @@ Now, prompt Azure Functions to allow your web app to make HTTP requests to the A
 
 Now, it's time to watch your web app and Azure Functions project work together. Start by running your Azure Functions project locally:
 
-1. In Visual Studio, right-click the *ShoppingList* solution.
+1. In Visual Studio, right-click the **ShoppingList** solution.
 
 1. Select **Set Startup Projects**.
 
-1. Select the *Multiple startup projects* option, and set *Api* and *Client* to have **Start** as their *Action*, then select **Ok**.
+1. Select the **Multiple startup projects** option.
+
+1. Set **Api** and **Client** to have **Start** as their **Action**, and then select **Ok**.
 
 1. Launch the debugger.
 
