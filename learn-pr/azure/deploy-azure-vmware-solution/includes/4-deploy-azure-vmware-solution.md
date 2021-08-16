@@ -71,13 +71,13 @@ Follow these steps:
 
 1. After all fields are filled in, select **Review + Create**. The Azure VMware Solution deployment might take in between three to four hours before complete.
 
-1. When deployment finishes, select the resource group, and then select the private cloud. The **Status** will show as **Succeeded**:
+1. When the deployment finishes, select the resource group, and then select the private cloud. The **Status** will show as **Succeeded**:
 
     :::image type="content" source="../media/4-validate-deployment.png" alt-text="Screenshot validating deployment successfully completed.":::
 
 1. Next, you'll need to connect the Azure VMware Solution ExpressRoute circuit to an Azure virtual network.
 1. Under **Manage**, select **Connectivity**.
-1. For **Azure vNet connect**, you'll need to select an existing or create a brand new Azure virtual network. The virtual network needs a **GatewaySubnet** configured for ExpressRoute peering.
+1. For **Azure vNet connect**, you'll need to create a brand new virtual network or select an existing virtual network. The virtual network needs a **GatewaySubnet** configured for ExpressRoute peering.
 1. After the virtual network is configured, select **Save**.
 
     :::image type="content" source="../media/4-azure-vnet-connect.png" alt-text="Screenshot displaying where to select the virtual network from within Azure vNet connect and how to save the configuration.":::
@@ -88,10 +88,10 @@ Follow these steps:
     |---------|---------|
     | Virtual network | If you're building a brand new virtual network with a GatewaySubnet, the virtual network will deploy first. If you're using an existing virtual network, the build process will move to the next resource that doesn't yet exist. |
     | Virtual network gateway | This resource provides a way for the Azure VMware Solution ExpressRoute circuit to connect to an Azure virtual network. |
-    | Virtual network gateway public IP | This resource provides a public IP that is internet accessible to establish a peering between the Azure virtual network and the Azure VMware Solution ExpressRoute circuit. |
+    | Virtual network gateway public IP | This resource provides a public IP used to establish a peering between the Azure virtual network and the Azure VMware Solution ExpressRoute circuit. |
     | ExpressRoute authorizations | There are two authorizations that get created: one for inbound and one for outbound connectivity, both to and from the Azure VMware Solution private cloud. |
 
-1. After the build finishes, connectivity between the Azure VMware Solution private cloud and Azure have been established. You should see a screen like what is shown below:
+1. After the build finishes, connectivity between the Azure VMware Solution private cloud and Azure have been established. You should see a deployment complete screen like what is shown below:
 
     :::image type="content" source="../media/4-deployment-complete.png" alt-text="Screenshot displaying the additional resources created after saving the Azure vNet connect configuration.":::
 
