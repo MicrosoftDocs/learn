@@ -31,7 +31,7 @@ Before you deploy HCX Connector in the on-premises vCenter, download the VMware 
 
     :::image type="content" source="../media/3-add-hcx-key-portal.png" alt-text="Screenshot that shows where to add the HCX key in the Azure portal for use on-premises.":::
 
-1. Under **Manage** on the Azure VMware Solution private cloud, select **Identity** again.
+1. Next, under **Manage** on the Azure VMware Solution private cloud, select **Identity**.
 
 1. The URLs and user credentials for the Azure VMware Solution vCenter and NSX-T Manager will appear. Use the copy feature to paste credential information into the web browser on the jump host VM.
 
