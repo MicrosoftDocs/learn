@@ -13,19 +13,21 @@ All non-Administrators should not have access due to the sensitive data and the 
 
 1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
-1. On the top left, select the three bars, and then select **Azure Active Directory** > **Users** > **User settings**.
+1. In the left menu, select **All services**, and then select **Azure Active Directory**. The **Azure Active Directory Overview** pane appears.
+ 
+1. In the left menu, select **Users**, and then select **User settings**. The **User settings** pane appears.
 
-1. Ensure that **Restrict access to Azure AD administration portal** is set to **Yes**. Setting this value to **Yes** restricts all non-administrators from accessing any Azure AD data in the administration portal, but does not restrict such access using PowerShell or another client such as Visual Studio.
+1. Ensure that **Restrict access to Azure AD administration portal** is set to **Yes**. Setting this value to **Yes** prevents all non-administrators from accessing any data in the Azure AD administration portal, but does not restrict access for PowerShell or another client, such as Visual Studio.
 
     ![Screenshot of the Azure portal showing the Restrict access to Azure AD administration portal option.](../media/2-restrict-access-ad-portal.png)
 
 ### Enable Azure AD Multi-Factor Authentication (MFA) - Level 2
 
-Enable it for privileged and non-privileged users.
+Enable MFA for privileged and non-privileged users.
 
 1. Sign in to the <a href="https://portal.azure.com/learn.docs.microsoft.com" data-linktype="external" target="az-portal">Azure portal <span class="docon docon-navigate-external" aria-hidden="true"></span></a>.
 
-1. On the left, select **Azure Active Directory** > **Users**.
+1. In the left menu, select **Azure Active Directory**, and then select **Users**.
 
 1. Select **Multi-Factor Authentication**.
 

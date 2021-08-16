@@ -19,7 +19,7 @@ Name resolution across multiple virtual networks is probably the most common usa
 :::image type="content" source="../media/resolution-multiple-zones-c3e11b8d.png" alt-text="Two VNets, VNet1 and VNet2. VNet1 has VM1 and VM2. VNet2 has VM3, VM4, and VM5. Both VNets are connected to Azure DNS with records.":::
 
 
-In this configuration:
+In this configuration: 
 
  -  **DNS queries across the virtual networks are resolved**. A DNS query from a VM in the Resolution VNet, for a VM in the Registration VNet, will receive a DNS response containing the Private IP of VM.
  -  **Reverse DNS queries are scoped to the same virtual network**. A Reverse DNS (PTR) query from a VM in the Resolution virtual network, for a VM in the Registration VNet, will receive a DNS response containing the FQDN of the VM. But, a reverse DNS query from a VM in the Resolution VNet, for a VM in the same VNet, will receive NXDOMAIN.
