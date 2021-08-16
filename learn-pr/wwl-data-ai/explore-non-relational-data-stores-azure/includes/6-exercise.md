@@ -137,7 +137,7 @@ You'll perform this exercise using the Azure portal and the Azure Cloud Shell.
 2. On the **Home** page, select **All resources**, and then select the storage account created by the setup script.
 
     > [!div class="mx-imgBorder"]
-    > ![Image showing the page for the Storage Account in the Azure portal. The user has selected **Shared access signature**](../media/6-storage.png)
+    > ![Image showing the page for the Storage Account in the Azure portal. The user has selected **Shared access signature**](../media/6-storage-account.png)
 
 3. On the storage account page, select **Storage Explorer**.
 

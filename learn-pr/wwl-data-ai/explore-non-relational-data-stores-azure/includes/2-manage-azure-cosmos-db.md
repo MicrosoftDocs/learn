@@ -84,15 +84,40 @@ The principal use of the Table, MongoDB, and Cassandra APIs is to support existi
 Cosmos DB provides several options for uploading data to a Cosmos DB database, and querying that data. You can:
 
 - Use **Data Explorer** in the Azure portal to run ad-hoc queries. You can also use this tool to load data, but you can only load one document at a time. The data load functionality is primarily aimed at uploading a small number of documents (up to 2 MB in total size) for test purposes, rather than importing large quantities of data.
+- Use the [Cosmos DB Data Migration tool](/azure/cosmos-db/import-data) to perform a bulk-load or transfer of data from another data source.
 - Use [Azure Data Factory](/azure/data-factory/connector-azure-cosmos-db) to import data from another source.
 - Write a custom application that imports data using the Cosmos DB [BulkExecutor](/azure/cosmos-db/tutorial-sql-api-dotnet-bulk-import) library. This strategy is beyond the scope of this module.
 - Create your own application that uses the functions available through the [Cosmos DB SQL API client library](/azure/cosmos-db/create-sql-api-dotnet-v4) to store data. This approach is also beyond the scope of this module.
 
+### Load data using the Cosmos DB Data Migration tool
+
+You can use the Data Migration tool to import data to Azure Cosmos DB from a variety of sources, including:
+
+- JSON files
+- MongoDB
+- SQL Server
+- CSV files
+- Azure Table storage
+- Amazon DynamoDB
+- HBase
+- Azure Cosmos containers
+
+The Data Migration tool is available as a [download from GitHub](https://github.com/Azure/azure-documentdb-datamigrationtool	). The tool guides you through the process of migrating data into a Cosmos DB database. You're prompted for the source of the data (one of the items listed above), and the destination (the Cosmos DB database and container). The tool can either populate an existing container, or create a new one if the specified container doesn't already exist.
+
+> [!NOTE]
+> You can also use the Data Migration tool to export data from a Cosmos DB container to a JSON file, either held locally or in Azure Blob storage
+
+> [!div class="mx-imgBorder"]
+> ![Image showing the Data Migration tool](../media/2-data-migration-tool.png)
+
 ### Configure Cosmos DB to support bulk loading
 
-If you have a large amount of data, an application can make use of multiple concurrent threads to batch your data into chunks and load the chunks in parallel. Each thread acts as a separate client connection to the database. Bulk loading can become a write-intensive task.
+If you have a large amount of data, the Data Migration Tool can make use of multiple concurrent threads to batch your data into chunks and load the chunks in parallel. Each thread acts as a separate client connection to the database. Bulk loading can become a write-intensive task.
 
-When you upload data to a container, if you have insufficient throughput capacity configured to support the volume of write operations occurring concurrently, some of the upload requests will fail. Cosmos DB reports an HTTP 429 error (Request rate is large). Therefore, if you're planning on performing a large data import, you should increase the throughput resources available to the target Cosmos container.
+When you upload data to a container, if you have insufficient throughput capacity configured to support the volume of write operations occurring concurrently, some of the upload requests will fail. Cosmos DB reports an HTTP 429 error (Request rate is large). Therefore, if you're planning on performing a large data import, you should increase the throughput resources available to the target Cosmos container. If you're using the Data Migration Tool to create the container as well as populate it, the **Target information** page enables you to specify the throughput resources to allocate.
+
+> [!div class="mx-imgBorder"]
+> ![Image showing the **Target information** page in the Data Migration tool](../media/2-target-information.png)
 
 If you've already created the container, use the **Scale** settings of the database in the Data Explorer page for your database in the Azure portal to specify the maximum throughput, or set the throughput to **Autoscale**.
 
