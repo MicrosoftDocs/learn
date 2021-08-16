@@ -1,8 +1,19 @@
 One of your interviews will be about writing code. To prepare for this type of interview, you can practice, both on writing the code and explaining the process. In this exercise, you will work perform task that addresses both the code and the verbal portion.
 
-## Pick an exercise
+## Bookmark useful practice sites
 
-In the previous unit, there are several code practice sites. You will use these sites as training material.
+Here's a set of training sites you can use to practice your coding skills:
+
+- [TopCoder](https://www.topcoder.com) 
+- [Coderbyte](https://www.coderbyte.com)
+- [Project Euler](https://projecteuler.net/archives)
+- [HackerRank](https://www.hackerrank.com/)
+- [Codewars](https://www.codewars.com/)
+- [LeetCode](https://leetcode.com/)
+- [CodeChef](https://www.codechef.com/)
+- [InterviewBit](https://www.interviewbit.com/)
+- [HackerEarth](https://www.hackerearth.com/)
+- [Geeks for Geeks](https://www.geeksforgeeks.org/)
 
 1. Visit several of the code practice sites listed in the previous section. Bookmark sites that you find particularly useful.
 
@@ -28,7 +39,7 @@ To ensure your practice has the most effect, you need to establish some good pat
    Here's an example note: Problem on Roman numerals, need to work on understanding recursion better.
    ```
 
-## Deliberate practice
+## Make the most of your practice
 
 Part of practising is about learning to solve the problem in the first place, but also to become better at solving it. There are steps you can take to ensure you improve.
 
