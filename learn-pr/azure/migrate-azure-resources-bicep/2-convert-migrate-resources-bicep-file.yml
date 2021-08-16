@@ -11,6 +11,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
   zone_pivot_groups: azure-shell-interface
-durationInMinutes: 1
+durationInMinutes: 14
 content: |
   [!include[](includes/2-convert-migrate-resources-bicep-file.md)]

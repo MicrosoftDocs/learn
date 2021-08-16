@@ -284,6 +284,6 @@ The [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates
 
 For example, suppose you want to find a template that builds an App Service plan and app. In the repository, you'll notice each quickstart template gives you the option to deploy the template directly to Azure, or browse the template on GitHub.
 
-:::image type="content" source="../media/5-azure-quickstart-template.png" alt-text="Azure PowerShell error message about resources that cannot be exported.." border="true":::
+:::image type="content" source="../media/2-azure-quickstart-template.png" alt-text="Graphical example of an Azure Quickstart Template for deploying a basic Linux web app." border="true":::
 
 Keep in mind that the Azure quickstart templates are community contributions. Some of the examples can be out of date as features are added to Azure services regularly. The examples can also include resources and properties that are unnecessary for your templates. However, it's a useful resource to help you understand how to deploy your resources using ARM templates.

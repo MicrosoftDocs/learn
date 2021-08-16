@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 title: Migrate Azure resources and JSON templates to use Bicep
-summary: Export, convert, and migrate your Azure resources from JSON ARM templates to Bicep files. Refactor your Bicep files for best practices. Test your Bicep files and deploy them to production.
+summary: Export and convert your Azure resources to Bicep files, and migrate your JSON ARM templates to Bicep. Refactor your Bicep files to follow best practices. Test your Bicep files and deploy them to production.
 abstract: |
   After completing this module, you'll be able to:
     - Convert JSON templates to Bicep

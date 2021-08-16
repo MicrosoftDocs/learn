@@ -13,8 +13,6 @@ The test phase consists of two steps:, which you complete in sequence
 1. Run the ARM template deployment what-if operation.
 1. Perform a test deployment.
 
-TODO: Update image
-
 :::image type="content" source="../media/6-test.png" alt-text="Diagram that shows a Bicep file being tested and deployed to Azure." border="false":::
 
 The what-if operation provides a preview of what changes will be made when you deploy your Bicep file, while a test deployment allows you to compare and contrast your original resources with the newly deployed resources.
@@ -70,19 +68,17 @@ The deploy phase consists of four steps, which you complete in sequence:
 1. Deploy manually.
 1. Run smoke tests.
 
-TODO: Insert text here.
-
-TODO: Update image
+These steps help prepare for any possible issues you encounter with production deployments.
 
 :::image type="content" source="../media/6-deploy.png" alt-text="Diagram that shows a Bicep file being deployed to Azure." border="false":::
 
 ### Prepare a rollback plan
 
-TODO: Insert text here.
+The ability to recover from a failed deployment is crucial. Spend time developing a rollback plan in the event of any breaking changes introduced into your environments. This plan should follow your organization's BC/DR strategy closely and take into account any recovery point objectives and recovery time objectives. Take inventory of the types of resources that are deployed, such as virtual machines, web apps, and databases. Azure resource manager data plane operations should be considered as well. Do you have a way to recover a virtual machine and its data? Do you have a way to recover a database after deletion, or the data from a storage account? A well developed rollback plan will help to keep your downtime to a minimum if any issues arise from a deployment.
 
 ### Run the what-if operation against production
 
-Before deploying your final Bicep file to production, run the what-if operation
+You have already run the what-if operation against your other environments to verify that your new Bicep file won't cause any breaking changes. Before deploying your final Bicep file to production, run the what-if operation against your production environment and consider documenting the results.
 
 ### Deploy manually
 
