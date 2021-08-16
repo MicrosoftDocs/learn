@@ -4,30 +4,15 @@ In this unit, you'll configure a network security group and security rules to re
 
 ![Diagram of exercise scenario network security groups.](../media/3-exercise-first-task.svg)
 
-[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
-
 ## Create a virtual network and network security group
 
-First, you'll create a resource group, the virtual network, and subnets for your server resources. You'll then create a network security group.
+First, you'll create the virtual network, and subnets for your server resources. You'll then create a network security group.
 
-1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and log in to the directory with access to the subscription you want to create resources in. Use the Bash version of Cloud Shell.
 
-1. Find the location name for the Azure region you'd like to deploy your resources in by running the following command.
-
-    ```azurecli
-    az account list-locations -o table
-    ```
-
-1. Decide on a resource group name that will be used in the Cloud Shell and assign it to the variable `rg`. 
+1. In Azure Cloud Shell, run the following command to assign the sandbox resource group to the variable `rg`.
 
     ```azurecli
-    rg=<resource group name>
-    ```
-   
-1. Run the following command to create the resource group, replacing `<location>` with the location value from the previous step.
- 
-    ```azurecli
-    az group create --name $rg --location <location>
+    rg=<rgn>[sandbox resource group name]</rgn>
     ```
 
 1. To create the **ERP-servers** virtual network and the **Applications** subnet, in Cloud Shell, run the following command.
