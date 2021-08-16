@@ -1,9 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.interview.4-tech-interview
+uid: learn.interview.5-tech-interview
 title: The technical interview
 metadata:
   title: The technical interview
-  description: This unit describes the different tech interviews you can have when interviewing. It also describes how to carry out the interviews.
+  description: This unit describes the different tech interviews you can have when
+    interviewing. It also describes how to carry out the interviews.
   author: softchris
   ms.author: chnoring
   ms.date: 04/14/2021
@@ -11,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |
-  [!include[](includes/4-tech-interview.md)]
+  [!include[](includes/5-tech-interview.md)]
