@@ -1,4 +1,4 @@
-One of your interviews will be about writing code. To prepare for this type of interview, you can practice, both on writing the code and explaining the process. In this exercise, you will work perform task that addresses both the code and the verbal portion.
+One of your interviews will be about writing code. To prepare for this type of interview, you can practice on writing the code and improving the process. In this exercise, you will perform tasks that addresses that sets you up for solving code and give you a process for improving.
 
 ## Bookmark useful practice sites
 

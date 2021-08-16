@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.interview.6-interview
+uid: learn.interview.7-interview
 title: The behavioral interview
 metadata:
   title: The behavioral interview
@@ -13,4 +13,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-interview.md)]
+  [!include[](includes/7-interview.md)]

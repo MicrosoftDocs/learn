@@ -33,8 +33,9 @@ units:
   - learn.interview.3-exercise-practice-code
   - learn.interview.4-check-preparation
   - learn.interview.5-tech-interview
-  - learn.interview.6-interview
-  - learn.interview.7-knowledge-check
-  - learn.interview.8-summary
+  - learn.interview.6-exercise-practice-questions
+  - learn.interview.7-interview
+  - learn.interview.8-knowledge-check
+  - learn.interview.9-summary
 badge:
   uid: learn.interview.badge
