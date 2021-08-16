@@ -12,7 +12,7 @@ Watch the video to see how Conditional Access policies work.
 
 Conditional Access can use the following signals to control the who, what, and where of the policy:
 
-- **User or group membership**. Policies can be targeted to specific users and groups (including admin roles), giving administrators fine-grained control over access.
+- **User or group membership**. Policies can be targeted to all users, specific groups of users, directory roles, or external guest users, giving administrators fine-grained control over access.
 - **Named location information**. Named location information can be created using IP address ranges, and used when making policy decisions. Also, administrators can opt to block or allow traffic from an entire country's IP range.
 - **Device**. Users with devices of specific platforms or marked with a specific state can be used.
 - **Application**. Users attempting to access specific applications can trigger different Conditional Access policies.
