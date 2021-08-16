@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.aks-network-design-with-azure-cni  
+metadata:
+  title: Design an Azure Kubernetes Service network with Azure CNI
+  description: Understand Kubernetes networking concepts and how the needs of your application can affect network design and create an appropriate network for your Azure Kubernetes Service cluster using the Azure Container Networking Interface plug-in.
+  ms.date: 3/18/2021  
+  author: markwme
+  ms.author: mawhitby  
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design an Azure Kubernetes Service network with Azure CNI
+summary: Understand which Kubernetes components require IP addresses, then look at a reference application and see how the requirements of the application affect the sizing of a Kubernetes cluster and the design of the network. You'll finish by deploying an Azure Kubernetes Service cluster using the Azure CNI network plug-in.
+abstract: |
+  By the end of this module, you will be able to: 
+  - List the key Kubernetes resource types that require network access.
+  - Assess an application's needs and how that could affect network design.
+  - Understand the steps to size an Azure Kubernetes Service cluster for a workload.
+  - Design a network for an Azure Kubernetes Service cluster using Azure CNI
+prerequisites: |
+  - Understand Docker containers at a beginner level.
+  - Understand Kubernetes at a beginner level.
+  - Understand networking basics, such as IP addresses and CIDR address ranges
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - solution-architect
+products:  
+  - azure
+  - azure-kubernetes-service
+units:  
+  - learn.aks-network-design-with-azure-cni.1-introduction
+  - learn.aks-network-design-with-azure-cni.2-overview-of-kubernetes-networking
+  - learn.aks-network-design-with-azure-cni.3-estimating-cluster-size-pods
+  - learn.aks-network-design-with-azure-cni.4-estimating-cluster-size-nodes
+  - learn.aks-network-design-with-azure-cni.5-sizing the network
+  - learn.aks-network-design-with-azure-cni.6-exercise-deploy-aks
+  - learn.aks-network-design-with-azure-cni.7-knowledge-check  
+  - learn.aks-network-design-with-azure-cni.8-summary  
+badge:  
+  uid: learn.aks-network-design-with-azure-cni.badge
