@@ -81,7 +81,7 @@ You don't have any resources in this resource group yet, so the list at the bott
 
     ![Screenshot of Azure portal showing resource group overview containing two virtual network resources.](../media/2-rg-with-vnet.png)
 
-Your resource group contains two virtual network resources because you specified which resource group you wanted them to belong to when you createdthem. You could create additional resources inside this resource group, or you could create additional resource groups in the subscription to deploy resources into.
+Your resource group contains two virtual network resources because you specified which resource group you wanted them to belong to when you created them. You could create additional resources inside this resource group, or you could create additional resource groups in the subscription to deploy resources into.
 
 When creating resources, you usually have the option to create a new resource group as an alternative to using an existing resource group. This may simplify the process, but as you see in your new organization, doing so can lead to resources spread across resource groups with little thought as to how to organize them.
 
