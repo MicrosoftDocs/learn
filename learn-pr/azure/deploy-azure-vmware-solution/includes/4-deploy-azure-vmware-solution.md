@@ -50,6 +50,7 @@ Follow these steps:
 1. The pre-requisites we covered earlier in the module are highlighted in the first screen for the deployment. 
 1. If you missed any of these steps, now is a good time to review before building the Azure VMware Solution environment.
 1. After reviewing all pre-requisites one last time, select **Next: Basics >**.
+
     :::image type="content" source="../media/4-pre-requisites-create-private-cloud.png" alt-text="Screenshot that shows the pre-requisites pane before building the Azure VMware Solution environment in Azure.":::
     
 1. On the **Basics** tab, enter values for the fields:
@@ -68,9 +69,9 @@ Follow these steps:
     | **Number of hosts** | The number of hosts to add to the private cloud cluster. |
     | **Address block for private cloud** | An IP address block for the CIDR network used by the private cloud. |
 
-1. After all fields are filled in, select **Review + Create**. The Azure VMware Solution deployment might take in between three to four hours before finishing.
+1. After all fields are filled in, select **Review + Create**. The Azure VMware Solution deployment might take in between three to four hours before complete.
 
-1. When deployment is complete, select the resource group, and then select the private cloud. The **Status** will show **Succeeded**:
+1. When deployment finishes, select the resource group, and then select the private cloud. The **Status** will show as **Succeeded**:
 
     :::image type="content" source="../media/4-validate-deployment.png" alt-text="Screenshot validating deployment successfully completed.":::
 
@@ -86,8 +87,8 @@ Follow these steps:
     | Azure resource  | Description  |
     |---------|---------|
     | Virtual network | If you're building a brand new virtual network with a GatewaySubnet, the virtual network will deploy first. If you're using an existing virtual network, the build process will move to the next resource that doesn't yet exist. |
-    | Virtual network gateway | This resource provides a way for the ExpressRoute circuit that's deployed with Azure VMware Solutions to connect to an Azure virtual network. |
-    | Virtual network gateway public IP | This resource provides a public IP that is internet accessible to establish a peering between the Azure virtual network and the ExpressRoute circuit. |
+    | Virtual network gateway | This resource provides a way for the Azure VMware Solution ExpressRoute circuit to connect to an Azure virtual network. |
+    | Virtual network gateway public IP | This resource provides a public IP that is internet accessible to establish a peering between the Azure virtual network and the Azure VMware Solution ExpressRoute circuit. |
     | ExpressRoute authorizations | There are two authorizations that get created: one for inbound and one for outbound connectivity, both to and from the Azure VMware Solution private cloud. |
 
 1. After the build finishes, connectivity between the Azure VMware Solution private cloud and Azure have been established. You should see a screen like what is shown below:
