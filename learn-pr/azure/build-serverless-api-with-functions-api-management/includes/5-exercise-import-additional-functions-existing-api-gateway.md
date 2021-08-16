@@ -82,7 +82,7 @@ In this step, we'll add the Order function to the API Management resource that w
 
 1. Ensure that **OrderDetails** is checked, and then select **Select**. The **Create from Function App** dialog box reappears.
 
-1. In the **API URL suffix** field, enter **orders**, and then select **Create**.
+1. In the **API URL suffix** field, enter *orders*, and then select **Create**.
 
     ![Screenshot of the Create from Function App dialog populated with details of the Orders function.](../media/5-complete-function-import.png)
 
