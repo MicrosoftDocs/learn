@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-connected-altair-on-azure-sphere.exercise-deploy-private-mqtt-broker
+title: Exercise - How to deploy a private MQTT broker
+metadata:
+  title: Exercise - How to deploy a private MQTT broker
+  description: In this section, we deploy a private MQTT broker.
+  ms.date: 8/10/2021
+  author: dglover
+  ms.author: dglover
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+durationInMinutes: 4 # dummy number at present
+content: |
+  [!include[](includes/05-exercise-deploy-private-mqtt-broker.md)]

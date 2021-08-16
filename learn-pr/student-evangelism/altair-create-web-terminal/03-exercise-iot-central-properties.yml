@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-connected-altair-on-azure-sphere.exercise-iot-central-properties
+title: Exercise - How to customize the Altair IoT Central application
+metadata:
+  title: Exercise - How to customize the Altair IoT Central application
+  description: In this section, we customize the Altair IoT Central application.
+  ms.date: 8/10/2021
+  author: dglover
+  ms.author: dglover
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+durationInMinutes: 4 # dummy number at present
+content: |
+  [!include[](includes/03-exercise-iot-central-properties.md)]

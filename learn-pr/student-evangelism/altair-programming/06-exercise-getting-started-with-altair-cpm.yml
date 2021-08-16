@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-connected-altair-on-azure-sphere.exercise-getting-started-with-altair-cpm
+title: Exercise - Getting started with CP/M
+metadata:
+  title: Exercise - Getting started with CP/M
+  description: In this section, we learn how to use CP/M on the Altair emulator.
+  ms.date: 8/10/2021
+  author: dglover
+  ms.author: dglover
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+durationInMinutes: 4 # dummy number at present
+content: |
+  [!include[](includes/06-exercise-getting-started-with-altair-cpm.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-connected-altair-on-azure-sphere.exercise-deploy-altair-realtime-apps
+title: Exercise - How to deploy the Altair real time applications
+metadata:
+  title: Exercise - How to deploy the Altair real time applications
+  description: In this section, we deploy the Altair real time applications to the Azure Sphere.
+  ms.date: 8/10/2021
+  author: dglover
+  ms.author: dglover
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+durationInMinutes: 4 # dummy number at present
+content: |
+  [!include[](includes/05-exercise-deploy-altair-realtime-apps.md)]

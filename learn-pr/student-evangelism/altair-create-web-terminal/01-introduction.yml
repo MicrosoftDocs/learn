@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-connected-altair-on-azure-sphere.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: In this section, You will learn about the Altair 8800 and Azure Sphere.
+  ms.date: 8/10/2021
+  author: dglover
+  ms.author: dglover
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+durationInMinutes: 4 # dummy number at present
+content: |
+  [!include[](includes/01-introduction.md)]

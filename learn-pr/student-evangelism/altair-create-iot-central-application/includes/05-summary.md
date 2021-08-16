@@ -1,0 +1,1 @@
+In this module you created an Azure IoT Central application and you learnt how to retrieve the Azure IoT Central network endpoints.

@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.altair-azure-sphere-computing-fundamentals
+metadata:
+  title: Altair 8800 and Azure Sphere computing fundamentals 
+  description: Learn computing fundamentals with Altair 8800 and Azure Sphere.
+  ms.date: 08/16/2021
+  author: gloveboxes
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Altair 8800 and Azure Sphere computing fundamentals
+summary: |
+  In this learning path, you'll learn how to .
+  
+  By the end of this learning path, you will be able to: 
+   - 
+prerequisites: None
+iconUrl: /learn/achievements/student-evangelism/altair-azure-sphere-computing-fundamentals-path.svg
+levels:
+- beginner
+roles:
+- student
+- developer
+products:
+- azure
+modules:
+- learn.student-evangelism.academic-program-certifications-define-requirements
+- learn.student-evangelism.academic-program-certifications-design-program-curricula
+- learn.student-evangelism.academic-program-certifications-prepare-program-approval
+- learn.student-evangelism.academic-program-certifications-design-program-launch
+- learn.student-evangelism.academic-program-certifications-define-requirements
+- learn.student-evangelism.academic-program-certifications-design-program-curricula
+- learn.student-evangelism.academic-program-certifications-prepare-program-approval
+- learn.student-evangelism.academic-program-certifications-design-program-launch
+trophy:
+  uid: learn.altair-azure-sphere-computing-fundamentals.trophy
