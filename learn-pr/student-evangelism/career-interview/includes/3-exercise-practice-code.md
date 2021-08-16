@@ -1,4 +1,4 @@
-One of your interviews will be about writing code. To prepare for this type of interview, you can practice on writing the code and improving the process. In this exercise, you will perform tasks that addresses that sets you up for solving code and give you a process for improving.
+One of your interviews will be about writing code. To prepare for this type of interview, you can practice on writing the code and improving the process. In this exercise, you will perform tasks that addresses that set you up for solving code and give you a process for improving.
 
 ## Bookmark useful practice sites
 
@@ -15,7 +15,7 @@ Here's a set of training sites you can use to practice your coding skills:
 - [HackerEarth](https://www.hackerearth.com/)
 - [Geeks for Geeks](https://www.geeksforgeeks.org/)
 
-1. Visit several of the code practice sites listed in the previous section. Bookmark sites that you find particularly useful.
+1. Visit several of the code practice sites listed in the previous section. Bookmark sites that you find useful.
 
    ```output
    Pick [TopCoder](https://www.topcoder.com) for example, and bookmark it**.
@@ -25,7 +25,7 @@ Here's a set of training sites you can use to practice your coding skills:
 
 To ensure your practice has the most effect, you need to establish some good patterns for how to practice.
 
-1. Set a reminder each day for a given amount of days before your scheduled interview to complete one or more code challenges:
+1. Set a reminder each day for a given number of days before your scheduled interview to complete one or more code challenges:
 
    ```output
    For example, set a reminder to work on code problems between 5pm-7pm.
@@ -33,7 +33,7 @@ To ensure your practice has the most effect, you need to establish some good pat
 
    Another thing you can do is to take notes on the problems you took and how you were able to solve, or not solve, those problems.
 
-2. Make a note of any challenges that you found particularly difficult, and revisit those in future practice sessions.
+2. Make a note of any challenges that you found difficult, and revisit those in future practice sessions.
 
    ```text
    Here's an example note: Problem on Roman numerals, need to work on understanding recursion better.
@@ -41,7 +41,7 @@ To ensure your practice has the most effect, you need to establish some good pat
 
 ## Make the most of your practice
 
-Part of practising is about learning to solve the problem in the first place, but also to become better at solving it. There are steps you can take to ensure you improve.
+Part of practicing is about learning to solve the problem in the first place, but also to become better at solving it. There are steps you can take to ensure you improve.
 
 1. Challenge yourself to be able to finish a task within a given set of minutes, and then go back and explain your thought processes.
 
