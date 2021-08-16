@@ -1,10 +1,10 @@
-Now that you've identified your governance and business requirements, how do you ensure that your resources _stay_ compliant? How can you be alerted if a resource's configuration has changed? 
+Now that you've identified your governance and business requirements, how do you ensure that your resources *stay* compliant? How can you be alerted if a resource's configuration has changed?
 
 [Azure Policy](https://azure.microsoft.com/services/azure-policy?azure-portal=true) is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources. These policies enforce different rules and effects over your resource configurations so that those configurations stay compliant with corporate standards.
 
 ## How does Azure Policy define policies?
 
-Azure Policy enables you to define both individual policies and groups of related policies, known as _initiatives_. Azure Policy evaluates your resources and highlights resources that aren't compliant with the policies you've created. Azure Policy can also prevent noncompliant resources from being created.
+Azure Policy enables you to define both individual policies and groups of related policies, known as *initiatives*. Azure Policy evaluates your resources and highlights resources that aren't compliant with the policies you've created. Azure Policy can also prevent noncompliant resources from being created.
 
 Azure Policy comes with a number of built-in policy and initiative definitions that you can use, under categories such as Storage, Networking, Compute, Security Center, and Monitoring.
 
@@ -18,9 +18,9 @@ Azure Policy also integrates with Azure DevOps by applying any continuous integr
 
 Implementing a policy in Azure Policy involves these three steps:
 
-1. Create a policy definition.
-1. Assign the definition to resources.
-1. Review the evaluation results.
+1.  Create a policy definition.
+2.  Assign the definition to resources.
+3.  Review the evaluation results.
 
 Let's examine each step in more detail.
 
@@ -30,29 +30,15 @@ A policy definition expresses what to evaluate and what action to take. For exam
 
 Every policy definition has conditions under which it's enforced. A policy definition also has an accompanying effect that takes place when the conditions are met. Here are some example policy definitions:
 
-* **Allowed virtual machine SKUs**
-
-    This policy enables you to specify a set of VM SKUs that your organization can deploy.
-
-* **Allowed locations**
-
-    This policy enables you to restrict the locations that your organization can specify when it deploys resources. Its effect is used to enforce your geographic compliance requirements.
-
-* **MFA should be enabled on accounts with write permissions on your subscription**
-
-    This policy requires that multifactor authentication (MFA) be enabled for all subscription accounts with write privileges to prevent a breach of accounts or resources.
-
-* **CORS should not allow every resource to access your web applications**
-
-    Cross-origin resource sharing (CORS) is an HTTP feature that enables a web application running under one domain to access resources in another domain. For security reasons, modern web browsers restrict cross-site scripting by default. This policy allows only required domains to interact with your web app.
-
-* **System updates should be installed on your machines**
-
-    This policy enables Azure Security Center to recommend missing security system updates on your servers.
+ -  **Allowed virtual machine SKUs** This policy enables you to specify a set of VM SKUs that your organization can deploy.
+ -  **Allowed locations** This policy enables you to restrict the locations that your organization can specify when it deploys resources. Its effect is used to enforce your geographic compliance requirements.
+ -  **MFA should be enabled on accounts with write permissions on your subscription** This policy requires that multifactor authentication (MFA) be enabled for all subscription accounts with write privileges to prevent a breach of accounts or resources.
+ -  **CORS should not allow every resource to access your web applications** Cross-origin resource sharing (CORS) is an HTTP feature that enables a web application running under one domain to access resources in another domain. For security reasons, modern web browsers restrict cross-site scripting by default. This policy allows only required domains to interact with your web app.
+ -  **System updates should be installed on your machines** This policy enables Azure Security Center to recommend missing security system updates on your servers.
 
 ### 2. Assign the definition to resources
 
-To implement your policy definitions, you assign definitions to resources. A _policy assignment_ is a policy definition that takes place within a specific scope. This scope could be a management group (a collection of multiple subscriptions), a single subscription, or a resource group.
+To implement your policy definitions, you assign definitions to resources. A *policy assignment* is a policy definition that takes place within a specific scope. This scope could be a management group (a collection of multiple subscriptions), a single subscription, or a resource group.
 
 Policy assignments are inherited by all child resources within that scope. If a policy is applied to a resource group, that policy is applied to all resources within that resource group. You can exclude a subscope from the policy assignment if there are specific child resources you need to be exempt from the policy assignment.
 
@@ -70,15 +56,9 @@ For example, Azure Policy includes an initiative named **Enable Monitoring in Az
 
 Under this initiative, the following policy definitions are included:
 
-* **Monitor unencrypted SQL Database in Security Center**
-
-    This policy monitors for unencrypted SQL databases and servers.
-* **Monitor OS vulnerabilities in Security Center**
-
-    This policy monitors servers that don't satisfy the configured OS vulnerability baseline.
-* **Monitor missing Endpoint Protection in Security Center**
-
-    This policy monitors for servers that don't have an installed endpoint protection agent.
+ -  **Monitor unencrypted SQL Database in Security Center** This policy monitors for unencrypted SQL databases and servers.
+ -  **Monitor OS vulnerabilities in Security Center** This policy monitors servers that don't satisfy the configured OS vulnerability baseline.
+ -  **Monitor missing Endpoint Protection in Security Center** This policy monitors for servers that don't have an installed endpoint protection agent.
 
 In fact, the **Enable Monitoring in Azure Security Center** initiative contains over 100 separate policy definitions.
 
@@ -90,7 +70,8 @@ You define initiatives by using the Azure portal or by using command-line tools.
 
 The following image shows a few example Azure Policy initiatives in the Azure portal.
 
-:::image type="content" source="../media/3-define-initiatives.png" alt-text="Screenshot showing Azure portal defining initiatives and definitions.":::
+:::image type="content" source="../media/3-define-initiatives-a834dde7.png" alt-text="Screenshot showing Azure portal defining initiatives and definitions.":::
+
 
 ### How do I assign an initiative?
 

@@ -6,10 +6,10 @@ Instead of having to configure features like Azure Policy for each new subscript
 
 Azure Blueprints orchestrates the deployment of various resource templates and other artifacts, such as:
 
-* Role assignments
-* Policy assignments
-* Azure Resource Manager templates
-* Resource groups
+ -  Role assignments
+ -  Policy assignments
+ -  Azure Resource Manager templates
+ -  Resource groups
 
 ## Azure Blueprints in action
 
@@ -17,9 +17,9 @@ When you form a cloud center of excellence team or a cloud custodian team, that 
 
 Implementing a blueprint in Azure Blueprints involves these three steps:
 
-1. Create an Azure blueprint.
-1. Assign the blueprint.
-1. Track the blueprint assignments.
+1.  Create an Azure blueprint.
+2.  Assign the blueprint.
+3.  Track the blueprint assignments.
 
 With Azure Blueprints, the relationship between the blueprint definition (what should be deployed) and the blueprint assignment (what was deployed) is preserved. In other words, Azure creates a record that associates a resource with the blueprint that defines it. This connection helps you track and audit your deployments.
 
@@ -33,7 +33,8 @@ It is possible for artifacts to have no additional parameters (configurations). 
 
 Artifacts can also contain one or more parameters that you can configure. The following screenshot shows the **Allowed locations** policy. This policy includes a parameter that specifies the allowed locations.
 
-:::image type="content" source="../media/10-allowed-locations.png" alt-text="A screenshot showing the Allowed locations policy. This policy includes a parameter that specifies the allowed locations.":::
+:::image type="content" source="../media/10-allowed-locations-d139a119.png" alt-text="A screenshot showing the Allowed locations policy. This policy includes a parameter that specifies the allowed locations.":::
+
 
 You can specify a parameter's value when you create the blueprint definition or when you assign the blueprint definition to a scope. In this way, you can maintain one standard blueprint but have the flexibility to specify the relevant configuration parameters at each scope where the definition is assigned.
 
@@ -43,14 +44,13 @@ You can specify a parameter's value when you create the blueprint definition or 
 
 As an IT administrator, you decide to investigate the **ISO 27001: Shared Services Blueprint** definition. Here's an outline of your plan.
 
-1. Define a management group that's named **PROD-MG**.
-
-    Recall that a management group manages access, policies, and compliance across multiple Azure subscriptions. Every new Azure subscription is added to this management group when the subscription is created.
-1. Create a blueprint definition that's based on the **ISO 27001: Shared Services Blueprint** template. Then publish the blueprint.
-1. Assign the blueprint to your **PROD-MG** management group.
+1.  Define a management group that's named **PROD-MG**. Recall that a management group manages access, policies, and compliance across multiple Azure subscriptions. Every new Azure subscription is added to this management group when the subscription is created.
+2.  Create a blueprint definition that's based on the **ISO 27001: Shared Services Blueprint** template. Then publish the blueprint.
+3.  Assign the blueprint to your **PROD-MG** management group.
 
 The following image shows artifacts that are created when you run an ISO 27001 blueprint from a template.
 
-:::image type="content" source="../media/10-iso-27001-shared-blueprint.png" alt-text="Screenshot showing artifacts listed when you create an ISO 27001 blueprint from template.":::
+:::image type="content" source="../media/10-iso-27001-shared-blueprint-dc443de7.png" alt-text="Screenshot showing artifacts listed when you create an ISO 27001 blueprint from template.":::
+
 
 You see that the blueprint template contains policy assignments, Resource Manager templates, and resource groups. The blueprint deploys these artifacts to any existing subscriptions within the **PROD-MG** management group. The blueprint also deploys these artifacts to any new subscriptions as they're created and added to the management group.
