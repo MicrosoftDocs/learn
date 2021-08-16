@@ -49,7 +49,7 @@ As you get started, we recommend you continue to use the actual data type name w
 
 ## Recap
 
-The most important takeaways from this unit about the `var` keyword and implicitly type local variables:
+The most important takeaways from this unit about the `var` keyword and implicitly typed local variables:
 
 - The `var` keyword tells the compiler to infer the data type of the variable based on the value it is initialized to.
 - You'll likely see the `var` keyword as you read other people's code.  However, you should use the data type when possible.
