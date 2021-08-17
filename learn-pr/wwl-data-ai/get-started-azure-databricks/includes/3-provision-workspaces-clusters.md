@@ -20,8 +20,8 @@ A cluster is a set of computational resources on which you run your code (as not
 
 We can create:
 
-- An all-purpose cluster. Multiple users can share such clusters to do collaborative interactive analysis.
-- A job cluster to run a specific job. The cluster will be terminated when the job completes
+- An **all-purpose cluster**. Multiple users can share such clusters to do collaborative interactive analysis.
+- A **job cluster** to run a specific job. The cluster will be terminated when the job completes
 (A job is a way of running a notebook or JAR either immediately or on a scheduled basis).
 
 Before we can use a cluster, we have to choose one of the available **runtimes**.
@@ -77,13 +77,13 @@ If we use small data files on the local machine that we want to analyze with Azu
 We may also read data on cluster nodes using Spark APIs. 
 We can read data imported to DBFS into Apache Spark DataFrames. For example, if you import a CSV file, you can read the data using this code
 
-```
+```sql
 df = spark.read.csv('/FileStore/tables/nyc_taxi.csv', header="true", inferSchema="true")
 ```
 
 We can also read data imported to DBFS in programs running on the Spark driver node using local file APIs. For example:
 
-```
+```sql
 df = spark.read.csv('/dbfs/FileStore/tables/nyc_taxi.csv', header="true", inferSchema="true")
 ```
 

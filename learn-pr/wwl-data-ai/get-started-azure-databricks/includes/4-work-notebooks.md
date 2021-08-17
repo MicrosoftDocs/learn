@@ -8,6 +8,7 @@ A notebook is a collection of runnable cells (commands). When you use a notebook
 Runnable cells operate on files and tables. Cells can be run in sequence, referring to the output of previously run cells.
 
 To create a notebook, we can select **Workspace**, browse into the desired folder, right-click, and choose **Create**, then select **Notebook**.
+
 ![Create a notebook](../media/01-01-09-new-notebook.png)
 
 A name should be given to the new notebook, and a default language to be used inside the code cells. Choose a cluster to run the code in the cells.

@@ -11,9 +11,9 @@ In a nutshell: Azure Databricks offers a fast, easy, and collaborative Spark bas
 ![Azure Databricks workspace](../media/01-01-01-databricks-workspace.jpg)
 
 The landing page shows the fundamental concepts to be used in Databricks:
-1. The cluster: a set of computational resources on which we run the code.
-2. The workspace: groups all the Databricks elements, clusters, notebooks, data.
-3. The notebook: a document that contains runnable code, descriptive text, and visualizations.
+1. The **cluster**: a set of computational resources on which we run the code.
+2. The **workspace**: groups all the Databricks elements, clusters, notebooks, data.
+3. The **notebook**: a document that contains runnable code, descriptive text, and visualizations.
 
 > [!NOTE]
 > **More information:** for more information about Azure Databricks, see the [documentation](/azure/databricks/scenarios/what-is-azure-databricks).

@@ -1,5 +1,5 @@
 > [!NOTE] 
-> **Note**:  This exercise requires an Azure subscription. If you do not already have one, sign up for a free trial at [https://azure.microsoft.com](https://azure.microsoft.com?azure-portal=true).
+> This exercise requires an Azure subscription. If you do not already have one, sign up for a free trial at [https://azure.microsoft.com](https://azure.microsoft.com?azure-portal=true).
 
 Now it's your chance to get started with Azure Databricks for yourself by configuring a cluster, creating a workspace and a notebook. 
 
