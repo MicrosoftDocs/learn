@@ -114,7 +114,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
         iothub_name=$iotHub `
         server_sql_name=$serverName `
         server_admin_name=$adminSqlLogin `
-        server_admin_password=$(ConvertTo-SecureString -String $password -AsPlainText -Force) `
+        server_admin_password=$password `
         site_iot_name=$iotSite `
         serverfarm_iot_name=$iotServerFarm `
         virtualmachine_devicesimulator_name=$iotSimulator `
@@ -146,9 +146,16 @@ These scripts should take three to five minutes to complete. Be sure to note you
     > [!div class="nextstepaction"]
     > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-## Deploy the Azure Function code and Azure SQL Database schema with GitHub Actions
+## Deploy the Azure Function code with GitHub Actions
 
 1. In your notes tool of choice document the connection string for your Azure SQL Database. It will be something like `Server=<your-server-name>.database.windows.net,1433;Initial Catalog=iot-db;User Id=cloudadmin;Password=<your-password>;Connection Timeout=30;`
+
+1. Navigate to the Azure portal to your Azure Function with a name starting with **iotsite** followed by a series on numbers.
+
+    [!div class="nextstepaction"]
+    [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+
+1. In the *Overview* pane, select **Get publish profile** to download the Azure Function publish profile. The publish profile acts as a connection string to the function.
 
 1. Sign in to GitHub with your GitHub account and navigate to [this repository](https://github.com/Azure-Samples/azure-sql-iot). In the top-right corner of your browser, select the **Fork** button.
 
@@ -157,42 +164,26 @@ These scripts should take three to five minutes to complete. Be sure to note you
 1. Select **Settings** for the repository.
 
 1. Select **Secrets** > **New repository secret** and enter the following items:
-    1. *Name*: **AZURE_SQL_CONNECTION_STRING**
-    1. *Value*: **Connection string from prior step**
-
-1. Select **Save**.
-
-1. In a separate window, navigate to the Azure portal to your Azure Function with a name starting with **iotsite** followed by a series on numbers.
-
-    [!div class="nextstepaction"]
-    [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
-
-1. In the *Overview* pane, select **Get publish profile** to download the Azure Function publish profile. The publish profile acts as a connection string to the function.
-
-1. Copy the contents of the file into your notes tool of choice.
-
-1. Navigate back to the **Secrets** for your GitHub repository.
-
-1. Select **Secrets** > **New repository secret** and enter the following items:
     1. *Name*: **AZURE_FUNCTIONAPP_PUBLISH_PROFILE**
     1. *Value*: **Connection string from prior step**
 
 1. Select **Save**.
 
-**TODO THIS FILE DOESNT EXIST YET AND NEITHER DOES THE DACPAC**
-1. In the GitHub repository, navigate to **Code** > **.github** > **workflows** and select **azuresqldatbase.yml**.
+**TODO NEED INSTRUCTIONS TO KICK OFF THE BUILD - Azure Function will not deploy successfully. I am unable to get working locally either**
 
-1. In the file **azuresqldatabase.yml**, select the **Edit** pencil icon.
+1. Confirm the action completes successfully by selecting **Actions** near the top of the window and reviewing the progress and completion.
 
-1. Update `iot-server.database.windows.net` to the name of your Azure SQL Database logical server (for example, **iot-server123456.database.windows.net**).
+1. Once complete, you have deployed the code that configures the function to support the scenario.
 
-1. Select **Commit changes**. This commit will kick off both the Azure Function and Azure SQL Database GitHub Actions to deploy the latest updates.
+## Deploy the schema to Azure SQL Database
 
-**TODO Azure Function will not deploy successfully. I am unable to get working locally either**
+1. Deploy the database schema using a script from the GitHub repository. Update the code below and run the the Azure Cloud Shell (you may want to copy to a text file to easily modify). Note you'll need to add your server name and password.
 
-1. Confirm both jobs build successfully by selecting **Actions** near the top of the window and reviewing the progress and completion.
+    ```bash
+    sqlcmd -S [server-name].database.windows.net -P [password] -U cloudadmin -d bus-db -i azure-sql-iot/sql_schema/script.sql
+    ```
 
-1. Once both have completed successfully, you have deployed the code that configures the function and database to support the scenario.
+1. Finally, select **CTRL+C** to exit sqlcmd
 
 ## Configure the application settings for the `iot-workload` function
 
@@ -203,9 +194,9 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. Select the **IoT Hub** service.
 
-1. On the left-hand menu, under *Settings*, select **Built-in endpoints**.
+1. On the left-hand menu, under *Settings*, select **Shared access policies**.
 
-1. Copy the **Event Hub-compatible endpoint** and save it in your notes tool of choice.
+1. Click **iothubowner** and copy the *Primary connection string* in your notes tool of choice.
 
 1. Navigate back to your resource group in the Azure portal.
 
@@ -213,7 +204,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. On the left-hand menu, under *Settings*, select **Configuration**.
 
-1. Select **New application setting** and add **EventHubConnectionAppSetting** with your IoT Hub compatible endpoint connection string. Select **OK**.
+1. Select **New application setting** and add **EventHubConnectionAppSetting** with your IoT Hub connection string. Select **OK**.
 
 1. Select **New application setting** and add **SQLDBConnectionString** with your Azure SQL Database connection string. Select **OK**.
 
@@ -234,22 +225,25 @@ These scripts should take three to five minutes to complete. Be sure to note you
 1. Since you'll be using containers to run the simulation, run the following script to install Docker.
 
     ```bash
-    curl -fsSL https://get.docker.com -o get-docker.sh
-    sudo sh get-docker.sh
+    sudo apt install apt-transport-https ca-certificates curl software-properties-common
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu `lsb_release -cs` test"
+    sudo apt update
+    sudo apt install docker-ce
     ```
 
 **TODO CANT RUN BASIC CONTAINERS FOR SOME REASON SO CANT TEST NEXT STEPS**
 
-1. Replace <IoTHubConnectionEndpoint> with your IoT Hub compatible endpoint connection string in the code below. Then, run it in the Azure Cloud Shell to provision the simulated devices.
+1. Replace <IoTHubConnectionEndpoint> with your IoT Hub connection string in the code below. Then, run it in the Azure Cloud Shell to provision the simulated devices.
 
     ```bash
-    sudo docker run -it -e "IotHubConnectionString=<IoTHubConnectionEndpoint>" -e DeviceCount=1000 iottelemetrysimulator/azureiot-simulatordeviceprovisioning
+    sudo docker run -it -e "IotHubConnectionString=<IoTHubConnectionString>" -e DeviceCount=1000 mcr.microsoft.com/oss/azure-samples/azureiot-simulatordeviceprovisioning:latest
     ```
 
-1. Replace <IoTHubConnectionEndpoint> with your IoT Hub compatible endpoint connection string in the code below. Then, run it in the Azure Cloud Shell to start generating messages on the provisioned devices.
+1. Replace <IoTHubConnectionEndpoint> with your IoT Hub connection string in the code below. Then, run it in the Azure Cloud Shell to start generating messages on the provisioned devices.
 
     ```bash
-    sudo docker run -it -e "IotHubConnectionString=<IoTHubConnectionEndpoint>" -e Template="{ "deviceId": "$.DeviceId", "temp": $.Temp, "Ticks": $.Ticks, "Counter": $.Counter, "time": "$.Time", "engine": "$.Engine" }" -e Variables="[{name: "Temp", "random": true, "max": 42, "min": 10}, {"name":"Counter", "min":1}, {name:"Engine", values: ["on", "off"]}]" -e MessageCount=0 -e DeviceCount=1000 -e Interval=100 iottelemetrysimulator/azureiot-telemetrysimulator
+    sudo docker run -it -e "IotHubConnectionString=<IoTHubConnectionString>" -e Template="{ "deviceId": "$.DeviceId", "temp": $.Temp, "Ticks": $.Ticks, "Counter": $.Counter, "time": "$.Time", "engine": "$.Engine" }" -e Variables="[{name: "Temp", "random": true, "max": 42, "min": 10}, {"name":"Counter", "min":1}, {name:"Engine", values: ["on", "off"]}]" -e MessageCount=0 -e DeviceCount=1000 -e Interval=100 mcr.microsoft.com/oss/azure-samples/azureiot-telemetrysimulator:latest
     ```
 
 You have now successfully deployed the template and configured the resources. You are now simulating activity on 1,000 devices and using Azure Functions to ingest the data into Azure SQL Database.
