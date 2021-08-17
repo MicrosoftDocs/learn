@@ -254,6 +254,19 @@
                 "dest": "modules"
             },            
             {
+                "src": "tensorflow",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },            
+            {
                 "src": "reactors",
                 "files": [
                     "**/*.yml",
@@ -555,6 +568,18 @@
                 ],
                 "dest": "modules"
             },  
+            {
+                "src": "tensorflow",
+                "files": [
+                    "**/*.gif",
+                    "**/*.png",
+                    "**/*.svg",
+                    "**/*.jpg",
+                    "**/*.jpeg",
+                    "**/*.ipynb"
+                ],
+                "dest": "modules"
+            },            
             {
                 "src": "student-evangelism",
                 "files": [
