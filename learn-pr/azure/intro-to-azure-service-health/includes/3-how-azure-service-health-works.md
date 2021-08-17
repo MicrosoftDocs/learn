@@ -15,13 +15,13 @@
         * Connectors, triggers, actions
         * Control actions
         * Logic Apps Designer"
--->
+
 TODO: add your topic sentences(s)
 TODO: add your bulleted list of key things covered
 * TODO
 * TODO
 * TODO
-
+-->
 <!-- 2. Chunked content-------------------------------------------------------------------------------------
 
     Goal:
@@ -38,12 +38,40 @@ TODO: add your bulleted list of key things covered
 -->
 
 <!-- Pattern for simple topic -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+## How Azure Service Health works
+
+Each one of the three services of which Azure Service Health is composed, has different ways to work.
+
+### Azure Status
+
+The Azure Status Page is where you can find public information about the health of Azure services across all regions. 
+
+At the page, you can set the automatic refresh period to:
+* 2 minutes
+* 5 minutes
+* 10 minutes
+* 30 minutes
+
+This should be useful especially if you want have this information displayed in monitors at your NOC (Network Operation Center).
+
+This page has all products and services listed by geographies and regions, with four types of status to allows you easily identify if everything is good, if has some specific information or warning available, or a critical issue.
+
+On this page also is possible get the RSS feed to receive updates on this page, as well check the status history from services and regions.
+
+:::image type="content" source="../media/3-azure-status.png" alt-text="Screenshot of Azure Service Status Page":::
+
+### Service Health
+
+service impacting communications about outages, planned maintenance activities, and other health advisories because the authenticated Service Health experience knows which services and resources you currently use.
+
+set up Service Health alerts to notify you via your preferred communication channels when service issues, planned maintenance, or other changes 
+
+
+### Resource Health
+
+Resource Health along with Azure Monitor notifications will help you stay better informed about the availability of your resources minute by minute and quickly assess whether an issue is due to a problem on your side or related to an Azure platform event.
+
+
 
 <!-- Pattern for complex topic -->
 ## H2 heading
