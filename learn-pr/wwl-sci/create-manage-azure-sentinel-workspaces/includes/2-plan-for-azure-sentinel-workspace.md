@@ -45,7 +45,7 @@ To query data across workspaces, use the workspace() function before the table n
 ```kusto
 TableName
 
-| union workspace(“WorkspaceName").TableName
+| union workspace("WorkspaceName").TableName
 
 ```
 

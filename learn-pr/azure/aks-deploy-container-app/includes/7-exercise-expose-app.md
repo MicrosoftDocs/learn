@@ -197,6 +197,7 @@ To expose your website to the world via DNS, you must create an ingress controll
                    port:
                      name: http # Which port in that service
                 path: / # Which path is this rule referring to
+                pathType: Prefix # See more at https://kubernetes.io/docs/concepts/services-networking/ingress/#path-types
     ```
 
 1. Save the manifest file by pressing <kbd>Ctrl-S</kbd>, and close the editor by pressing <kbd>Ctrl-Q</kbd>.

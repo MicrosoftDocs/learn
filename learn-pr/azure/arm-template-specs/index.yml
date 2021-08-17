@@ -30,9 +30,9 @@ prerequisites: |
     - The latest [Azure CLI](/cli/azure/install-azure-cli) tools
     - The latest [Azure PowerShell](/powershell/azure/install-az-ps) version
   - Either:
-    - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
+    - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
     - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/bicep/arm-template-specs.svg
 levels:
   - advanced
 roles:

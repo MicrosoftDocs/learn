@@ -44,17 +44,17 @@ Azure Active Directory Connect synchronizes the public key on the user object cr
 
 1. Sign in a domain controller or management workstation with *Domain Admin* equivalent credentials.
 
-1. Open **Active Directory Users and Computers**.
+2. Open **Active Directory Users and Computers**.
 
-1. Click **View** and click **Advance Features**.
+3. Click **View** and click **Advance Features**.
 
-1. Expand the domain node from the navigation pane.
+4. Expand the domain node from the navigation pane.
 
-1. Right-click the **Users** container. Click **New**. Click **Group**.
+5. Right-click the **Users** container. Click **New**. Click **Group**.
 
-1. Type **KeyCredential Admins** in the **Group Name** text box.
+6. Type **KeyCredential Admins** in the **Group Name** text box.
 
-1. Click **OK**.
+7. Click **OK**.
 
 ### Create the Windows Hello for Business Users security group
 
@@ -62,15 +62,28 @@ The Windows Hello for Business Users group is used to make it easy to deploy Win
 
 1. Sign in a domain controller or management workstation with *Domain Admin* equivalent credentials.
 
-1. Open **Active Directory Users and Computers**.
+2. Open **Active Directory Users and Computers**.
 
-1. Click **View** and click **Advanced Features**.
+3. Click **View** and click **Advanced Features**.
 
-1. Expand the domain node from the navigation pane.
+4. Expand the domain node from the navigation pane.
 
-1. Right-click the **Users** container. Click **New**. Click **Group**.
+5. Right-click the **Users** container. Click **New**. Click **Group**.
 
-1. Type **Windows Hello for Business Users** in the **Group Name** text box.
+6. Type **Windows Hello for Business Users** in the **Group Name** text box.
 
-1. Click **OK**.
+7. Click **OK**.
 
+## Pluton Security Processor
+
+> [!div class="mx-imgBorder"]
+> ![Diagram showing how the new Microsoft Pluton CPU chip on the motherboard next to the CPU and TPM chips.](../media/sc300-pluton.png)
+
+Today, the heart of operating system security on most PCs lives in a chip separate from the CPU, called the Trusted Platform Module (TPM). The TPM is a hardware component which is used to help securely store keys and measurements that verify the integrity of the system. TPMs have been supported in Windows for more than 10 years and power many critical technologies such as Windows Hello and BitLocker. Given the effectiveness of the TPM at performing critical security tasks, attackers have begun to innovate ways to attack it, particularly in situations where an attacker can steal or temporarily gain physical access to a PC. These sophisticated attack techniques target the communication channel between the CPU and TPM, which is typically a bus interface. This bus interface provides the ability to share information between the main CPU and security processor, but it also provides an opportunity for attackers to steal or modify information in-transit using a physical attack.
+
+The Pluton design removes the potential for that communication channel to be attacked by building security directly into the CPU. Windows PCs using the Pluton architecture will first emulate a TPM that works with the existing TPM specifications and APIs, which will allow customers to immediately benefit from enhanced security for Windows features that rely on TPMs like BitLocker and System Guard. Windows devices with Pluton will use the Pluton security processor to protect credentials, user identities, encryption keys, and personal data. None of this information can be removed from Pluton even if an attacker has installed malware or has complete physical possession of the PC.
+
+- Built in collaboration with AMD, Intel, Qualcomm and others
+- Security Hardware Cryptographic Key (SHACK)
+- Update / replacement for the TPM chip, which hackers are starting to learn how to get around.
+- Based on technology pioneered in Azure Sphere and Xbox security.

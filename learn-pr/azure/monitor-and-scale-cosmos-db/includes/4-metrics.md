@@ -14,13 +14,15 @@ For example, let's say your configured throughput is 500 RUs per second (RU/s), 
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using your Microsoft Learn account.
 
-1. Search for and select **Azure Cosmos DB**.
+1. IN the top search bar, search for and select **Azure Cosmos DB**.
 
    ![Screenshot that shows search in the Azure portal.](../media/4-search-cosmos-db.png)
 
-1. Select your Azure Cosmos DB account.
+   The **Azure Cosmos DB** pane appears.
 
-1. In the menu pane, scroll down, and under **Monitoring**, select **Metrics (Classic)**. The Azure Cosmos DB **Metrics (Classic)** panel appears.
+1. Select your Azure Cosmos DB account. Your **Azure Cosmos DB account** pane appears.
+
+1. In the middle menu pane, scroll down, and under **Monitoring**, select **Metrics (Classic)**. The Azure Cosmos DB **Metrics (Classic)** pane appears.
 
 1. Scroll to the top of the menu pane, select **Overview**, and observe the aggregated view of all your databases and collections. Here, you see:
 
@@ -48,9 +50,9 @@ The exercises in this section have you use Data Explorer in Azure Cosmos DB. You
 
 ### Review a database document in Data Explorer
 
-1. In the Azure portal, in your Azure Cosmos DB account, go to **Data Explorer**.
+1. In the Azure portal, in your Azure Cosmos DB account, in the middle menu pane, select **Data Explorer**. The Azure Cosmos DB **Data Explorer** pane appears.
 
-1. Expand the **mslearn** database. You see the three collections that you created in the setup unit: **HotPartition**, **Orders**, and **Small**.
+1. In the top left corner of the pane, under **SQL API**, Expand the **mslearn** database. You see the three collections that you created in the setup unit: **HotPartition**, **Orders**, and **Small**.
 
 1. Expand the **Orders** collection and select **Items**. You see the first 100 documents.
 

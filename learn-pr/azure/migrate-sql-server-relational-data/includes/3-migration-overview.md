@@ -39,7 +39,7 @@ The post-migration phase is critical because it ensures that your data is both a
 
 ## Data migration tools in Azure
 
-The core of data migration in Azure is the Azure Database Migration Service. You can use this service to move bulk amounts of data in a timely way. As part of Database Migration Service, Microsoft provides Data Migration Assistant. Just as its name implies, Data Migration Assistant *assists* the service by preparing the target database.
+The core of data migration in Azure is Azure Database Migration Service. You can use this service to move bulk amounts of data in a timely way. As part of Database Migration Service, Microsoft provides Data Migration Assistant. Just as its name implies, Data Migration Assistant *assists* the service by preparing the target database.
 
 ### Data Migration Assistant
 

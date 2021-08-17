@@ -53,7 +53,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 ## Task 3: Configure Azure Sentinel Connectors
 
 1. In the Azure portal, search for **Azure Sentinel**, and then select the previously created Azure Sentinel workspace.
-2. On the **Azure Sentinel | Overview** page, on the menu bar, in the **Configuration** section, select **Data connectors**.
+2. On the **Azure Sentinel | Overview** pane, in the left menu, under **Configuration**, select **Data connectors**.
 3. In the **Data connectors** pane, search for and select **Azure Activity**. In the details pane, select **Open connector page**.
 4. In the **Azure Activity** pane, select the **Configure Azure Activity logs** link.
 5. Select your subscription, and then select **Connect**.

@@ -105,17 +105,14 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 ### Configure auditing
 
-1. Run the following to create a Log Analytics Workspace.
-
-    ```powershell
-    $WorkspaceName = "azuresql$($uniqueID)-la"
-    New-AzOperationalInsightsWorkspace -Location $Location -Name $WorkspaceName -Sku Standard -ResourceGroupName $ResourceGroupName
-    ```
-
-1. In the Azure portal, go to your Azure SQL Database to enable auditing on the database.
+1. In the Azure portal, in the search bar type **Log analytics**, and under *Marketplace* select **Log Analytics Workspace**. Select your subscription, resource group, and provide a name like **azuresql-la**. 
 
     > [!div class="nextstepaction"]
     > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+
+1. Pick the region closest to where you are located and select **Review + Create** > **Create**. 
+
+1. In the Azure portal, go to your Azure SQL Database to enable auditing on the database (not logical server).
 
 1. On the left pane, under **Security**, select **Auditing**. Review the options.
 
@@ -123,7 +120,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. Select **Enable Azure SQL Auditing**.  
 
-1. Select **Log Analytics** and under Log Analytics, select the workspace you created in step 1 of this section.
+1. Select **Log Analytics** and under Log Analytics, select the workspace you created.
 
 1. Select **Storage**, and under Storage account, select the storage account that contains *sqlva* and *a random string of letters and numbers*. In this storage account, you can collect XEvent log files that are saved as a collection of blob files within a container named **sqldbauditlogs**. In a later activity, you'll see more on how this differs from Log Analytics.
 

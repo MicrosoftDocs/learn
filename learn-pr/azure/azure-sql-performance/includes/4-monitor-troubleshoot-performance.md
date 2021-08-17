@@ -8,7 +8,7 @@ Azure SQL provides monitoring and troubleshooting capabilities in the Azure ecos
 
 Azure Monitor is part of the Azure ecosystem, and Azure SQL is integrated to support Azure metrics, alerts, and logs. You can visualize Azure Monitor data in the Azure portal, applications can access this data through Azure Event Hubs or APIs. Much like Windows Performance Monitor, Azure Monitor helps you access resource usage metrics for Azure SQL without the use of SQL Server tools.
 
-### Dynamic management views
+### Dynamic management views (DMV)
 
 Azure SQL provides the same DMV infrastructure as SQL Server, with a few differences. DMVs are crucial to performance monitoring because you can view key SQL Server performance data by using standard T-SQL queries. For example, you can view information such as active queries, resource usage, query plans, and resource wait types. Learn more details about DMVs with Azure SQL later in this unit.
 
@@ -102,7 +102,7 @@ To decide how to apply monitoring and troubleshooting performance tools and capa
 
 ### Common performance scenarios
 
-A common technique for SQL Server performance troubleshooting is to examine if a performance problem is **Running** (high CPU) or **Waiting** (waiting on a resource). The following diagram shows a decision tree to determine if a SQL Server performance issue is running or waiting, and how to use performance tools to determine the cause and solution.
+A common technique for SQL Server performance troubleshooting is to examine whether a performance problem is **Running** (high CPU) or **Waiting** (waiting on a resource). The following diagram shows a decision tree to determine if a SQL Server performance issue is running or waiting, and how to use performance tools to determine the cause and solution.
 
 :::image type="content" source="../media/4-running-vs-waiting-january-21.svg" alt-text="Diagram of running versus waiting." border="false":::
 

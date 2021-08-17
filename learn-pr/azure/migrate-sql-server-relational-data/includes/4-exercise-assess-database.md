@@ -4,15 +4,15 @@ You start by installing Data Migration Assistant on your SQL Server instance.
 
 ## Connect to a VM
 
-1. Open the [Azure portal](https://portal.azure.com?azure-portal=true) if you don't already have it open. 
+1. Open the [Azure portal](https://portal.azure.com?azure-portal=true) if you don't already have it open.
 
-1. Select **Resource groups**, and then select the **admsdemorg** resource group that you deployed.
+1. In the **Resource group** pane, the **admsdemorg** resource group that you deployed appears.
 
-1. In the list of resources in the resource group, select the **admsdemovm** virtual machine (VM).
+1. In the list of resources in the resource group, select the **admsdemovm** virtual machine.
 
-1. On the toolbar above the VM info, select **Connect**, and from the dropdown, select **RDP**.
+1. In the top menu bar, select **Connect**, and from the dropdown, select **RDP**. The **Connect** pane appears for your VM.
 
-1. On the **Connect** window, from the **RDP*** tab, under the **Connect with RDP** section, select **Download RDP File**, Save it to your computer in a location of your choice.
+1. On the **RDP** tab, under the **Connect with RDP** section, select **Download RDP File**. Save it to your computer in a location of your choice.
 
 1. Select the RDP file to open it. Select **Connect**, and supply the credentials. Use the **windowsadmin** account, and use the password that you specified for this account.
 
@@ -22,7 +22,7 @@ Before you can download Data Migration Assistant, you need to disable Enhanced S
 
 1. By default, Server Manager should be open. If you closed it, use the **Start** menu to open it.
 
-1. On the left menu, select **Local Server**.
+1. In the left menu bar, select **Local Server**.
 
 1. Select the **IE Enhanced Security Configuration** setting.
 
@@ -31,7 +31,7 @@ Before you can download Data Migration Assistant, you need to disable Enhanced S
 ## Download, install, and run Data Migration Assistant
 
 > [!NOTE]  
->  You may need to install .Net Framework 4.8.  You can do so from https://dotnet.microsoft.com/download/dotnet-framework/net48 
+> You may need to install .Net Framework 4.8. You can do so from https://dotnet.microsoft.com/download/dotnet-framework/net48.
 
 1. Open Internet Explorer, and go to the [Data Migration Assistant download page](https://www.microsoft.com/download/details.aspx?id=53595).
 
@@ -39,35 +39,36 @@ Before you can download Data Migration Assistant, you need to disable Enhanced S
 
 1. To start the assistant, on the desktop, select **Microsoft Data Migration Assistant**.
 
-1. To begin a new assessment, on the left menu, select **+**.
+1. To begin a new assessment, in the left menu bar, select **+**.
 
 1. For **Project type**, select **Assessment**.
 
-1. For **Project name**, enter **Social Database Assessment**.
+1. For **Project name**, enter *Social Database Assessment*.
 
-1. Leave the remaining fields at their default values, and select **Create**.
+1. Accept the remaining fields at their default values, and select **Create**.
 
     :::image type="content" source="../media/4-02-project-type.png" alt-text="Project type." loc-scope="azure-database-migration":::
 
 ## Configure the project
 
-1. On the **Select report type** pane, ensure both **Check database compatibility** and **Check feature parity** are selected, and then select **Next**.
+1. On the **Select report type** pane, ensure both **Check database compatibility** and **Check feature parity** are checked, and then select **Next**. The **Connect to a server** pane appears.
 
-1. Configure the source database to connect to. On the **Connect to a server** pane, configure the following settings:
+1. To configure the source database to connect to, enter the following values for each setting.
 
-    | | |
+    | Setting | Value |
     |---------|---------|
-    | **Server name** | admsdemovm |
-    | **Authentication type** | Windows Authentication |
-    | **Encrypt connection** | Selected        |
-    | **Trust server certificate** | Selected        |
+    | Server name | admsdemovm |
+    | Authentication type | Windows Authentication |
+    | **Connection properties** |
+    | Encrypt connection | Check  |
+    | Trust server certificate | Check  |
     | | |
 
     :::image type="content" source="../media/4-04-connect-to-server.png" alt-text="Connect to a server." loc-scope="azure-database-migration":::
 
-1. Select **Connect**.
+1. Select **Connect**. The **Add sources** pane appears.
 
-1. On the **Add sources** pane, select the **Social** database, and then select **Add**.
+1. Select the **Social** database, and then select **Add**.
 
 1. The assessment now shows the database you've selected. To begin the assessment, select **Start Assessment**.
 

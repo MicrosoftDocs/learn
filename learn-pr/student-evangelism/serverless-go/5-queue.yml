@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.serverless-go.queue
+title: Queue trigger
+metadata:
+  title: Queue trigger
+  description: Learn how to work with queues and queue triggers to consume messages.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 07/12/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-queue.md)]

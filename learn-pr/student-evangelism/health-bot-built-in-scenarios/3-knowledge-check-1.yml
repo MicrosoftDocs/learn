@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.health-bot-built-in-scenarios.3-knowledge-check-1
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: One multiple-choice question
+  ms.date: 07/27/2021
+  author: Dwitrisha
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-knowledge-check-1.md)]
+quiz:
+  
+  questions:
+    ##Question 1
+    - content: "Which of the following scenarios is a built-in scenario?"
+      choices:
+        - content: "The Health Bot instance allows customers to schedule appointments easily and securely."
+          isCorrect: false
+          explanation: "Scheduling appointments is an example of a custom scenario."
+        - content: "The Health Bot instance provides information about health plan details, such as pricing and benefits."
+          isCorrect: false
+          explanation: "Health plan inquiries is an example of a custom scenario."
+        - content: "The Health Bot instance provides information about medical conditions, symptoms, causes, and complications."
+          isCorrect: true
+          explanation: "Medical information requests are built-in scenarios."

@@ -12,7 +12,7 @@ resource functionApp 'Microsoft.Web/sites@2020-06-01' = {
         // ...
         {
           name: 'StorageAccountKey'
-          value: listKeys(storageAccount.id, storageAccount.apiVersion).keys[0].value
+          value: storageAccount.listKeys().keys[0].value
         }
       ]
     }

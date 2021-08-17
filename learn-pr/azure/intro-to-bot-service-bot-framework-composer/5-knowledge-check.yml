@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-bot-service-bot-framework-composer.5-knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 6/15/2021
+  author: jasonkellingtonwaypoint
+  ms.author: v-jaske
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "Which Azure Bot Service tool enables bot creation using a visual designer?"
+    choices:
+    - content: "Bot Framework Composer"
+      isCorrect: true
+      explanation: "Correct. Bot Framework Composer enables bot creation using a visual designer."
+    - content: "Bot Framework SDK"
+      isCorrect: false
+      explanation: "Incorrect. Bot Framework SDK provides tools for creating bots using code in a number of different languages."
+    - content: "Bot Framework Emulator"
+      isCorrect: false
+      explanation: "Incorrect. Bot Framework Emulator is used to test and debug bots that you've created."
+  - content: "Which of the following built-in extended capabilities provides natural language processing capability in a bot created with Bot Framework Composer?"
+    choices:
+    - content: "LUIS"
+      isCorrect: true
+      explanation: "Correct. LUIS provides language processing capability that can be used in a bot created with Bot Framework Composer."
+    - content: "QnAMaker"
+      isCorrect: false
+      explanation: "Incorrect. QnAMaker provides question- and answer-based chat bots by first building a knowledge base."
+    - content: "Text Analytics"
+      isCorrect: false
+      explanation: "Incorrect. Text Analytics provides several text-based APIs. These APIs include language detection, sentiment analysis, and key phrase extraction."
+  - content: "Which of the following Bot Framework Composer features is used exclusively to support conversation flow control?"
+    choices:
+    - content: "Dialogs"
+      isCorrect: true
+      explanation: "Correct. Dialogs provide logical conversational flow within a Bot Framework Composer bot."
+    - content: "Skills"
+      isCorrect: false
+      explanation: "Incorrect. Skills do contribute to conversation logic. However, they're more widely used to perform complex tasks and workflows within a bot."
+    - content: "Cards"
+      isCorrect: false
+      explanation: "Incorrect. Cards provide rich text presentation including text, images, and video."

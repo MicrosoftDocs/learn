@@ -3,14 +3,14 @@ uid: learn.wwl.describe-concepts-of-security-compliance-identity
 metadata:
   title: 'SC-900 part 1: Describe the concepts of security, compliance, and identity'
   description: 'SC-900 part 1: Describe the concepts of security, compliance, and identity'
-  ms.date: 06/16/2021
+  ms.date: 07/29/2021
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: 'SC-900 part 1: Describe the concepts of security, compliance, and identity'
 prerequisites: |
-  - None
+  - Recommended learning:  [Introduction to cybersecurity](/learn/modules/intro-to-cybersecurity/)
 summary: |
   Learn about core concepts, principles, and methodologies that are foundational to security, compliance, and identity solutions, including Zero-Trust, shared responsibility, the role of identity providers, and more.
 iconUrl: /learn/achievements/describe-the-concepts-of-security-compliance-and-identity.svg

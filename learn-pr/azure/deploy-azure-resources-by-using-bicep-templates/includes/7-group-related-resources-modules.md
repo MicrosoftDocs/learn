@@ -6,6 +6,8 @@ Modules are also a way to make Bicep code even more reusable. You can have a sin
 
 You also will often need to emit _outputs_ from the Bicep modules and templates. Outputs are a way for your Bicep code to send data back to whoever or whatever started the deployment. Let's look at outputs first.
 
+[!include[Note - don't run commands](../../../includes/dont-run-commands.md)]
+
 ## Outputs
 
 Bicep templates can be deployed manually by a human, or they can be deployed by some sort of automated release process. Either way, it's common to have some data from the template that you need to send back to whoever or whatever is executing the template deployment. 

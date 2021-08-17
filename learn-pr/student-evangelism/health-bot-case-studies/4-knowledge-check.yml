@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.health-bot-case-studies.4-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Two multiple-choice questions
+  ms.date: 07/27/2021
+  author: rodanthi-alexiou
+  ms.author: chnoring 
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  questions:
+    - content: "The Centers for Disease Control and Prevention (CDC) in the United States used Azure Health Bot during the COVID-19 pandemic. What use cases were implemented through the bot?"
+      choices:
+        - content: "Assess the symptoms and risk factors of people worried about infection"
+          isCorrect: false
+          explanation: "The bot had not only that use."
+        - content: "Provide information and suggest a course of action, such as contacting a medical provider"
+          isCorrect: false
+          explanation: "The bot had not only that use."
+        - content: "Advise how to manage an illness safely at home, for those who didn't need in-person medical care"
+          isCorrect: false
+          explanation: "The bot had not only that use."
+        - content: "All of the above"
+          isCorrect: true
+    - content: "The Virginia Mason health system uses Azure Health Bot. Can someone who uses the bot know if their symptoms require medical care?"
+      choices:
+        - content: "Yes"
+          isCorrect: true
+          explanation: "Helping the patient understand their medical needs is one of the bot's jobs."
+        - content: "No"
+          isCorrect: false
+          explanation: "The bot can help patients understand whether care is needed."
+
+  
