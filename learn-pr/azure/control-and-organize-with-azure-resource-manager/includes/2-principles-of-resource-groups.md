@@ -47,7 +47,7 @@ Let's walk through the steps you'd take to create a resource group in the Azure 
 
 1. Enter your resource group name; let's use **msftlearn-core-infrastructure-rg**.
 
-    :::image type="content" source="media/2-create-resource-group.png" alt-text="Screenshot of Azure portal showing the resource group creation with subscription, resource group, and region entered.":::
+    :::image type="content" source="../media/2-create-resource-group.png" alt-text="Screenshot of Azure portal showing the resource group creation with subscription, resource group, and region entered.":::
 
 1. Select **Review + Create** and then, once it is validated, select **Create** to create the resource group.
 
@@ -57,7 +57,7 @@ That's it, you've created a resource group that you can now use when you deploy 
 
 On the Azure portal menu or from the **Home** page, select **Resource groups**, and select your newly created resource group. Note that you may also see a resource group called **NetworkWatcherRG**. You can ignore this resource group, it's created automatically to enable Network Watcher in Azure virtual networks.
 
-:::image type="content" source="media/2-rg-overview.png" alt-text="Screenshot of Azure portal showing new resource group pane with no resources in it yet." lightbox="../media/2-rg-overview.png":::
+:::image type="content" source="../media/2-rg-overview.png" alt-text="Screenshot of Azure portal showing new resource group pane with no resources in it yet." lightbox="../media/2-rg-overview.png":::
 
 On the Overview pane, there's the basic information about the resource group, such as the subscription it's in, the subscription ID, any tags that are applied, and a history of the deployments to this resource group. We'll cover tags in the next unit. The deployments link takes you to a new panel with the history of all deployments to this resource group. Anytime you create a resource, it's a deployment, and you see the history for each resource group here.
 
