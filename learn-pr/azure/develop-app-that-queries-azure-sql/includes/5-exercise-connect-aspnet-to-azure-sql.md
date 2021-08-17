@@ -160,7 +160,7 @@ Now let's add to the application the code to retrieve course data from the datab
 
 1. Leave the code editor open, and switch to the Azure portal.
 
-1. On the Azure portal menu, select **SQL databases**, and then select your database.
+1. On the Azure portal menu, select **SQL databases**, and then select your database. The **SQL database** for *coursedatabase<em>NNN</em>* appears.
 
 1. In the left menu pane, under **Settings**, select **Connection strings**. Copy the **ADO.NET** connection string to the clipboard.
 
@@ -351,7 +351,7 @@ The application can now retrieve the course data. Now, update the app to display
     CoursesAndModules = dac.GetAllCoursesAndModules().ToList();
     ```
 
-1. The completed file should contain the following code.
+    The completed file should contain the following code.
 
     ```C#
     using System;
@@ -483,7 +483,7 @@ The application can now retrieve the course data. Now, update the app to display
     </div>
     ```
 
-    Save the file, and close the code editor.
+1. Save the file, and close the code editor.
 
 ## Deploy and test the updated web app
 

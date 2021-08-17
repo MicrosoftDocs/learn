@@ -115,7 +115,7 @@ Let's create the database and server to store the data for the app.
 
     The **Create SQL Database** pane appears.
 
-1. On the **Basics** tab, specify the following values for each setting.
+1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting  | Value  |
     |---|---|
@@ -128,7 +128,7 @@ Let's create the database and server to store the data for the app.
     | Want to use SQL elastic pool? | No |
     | Compute + storage | General purpose |
 
-    For the server, enter the following values for each setting, and then select **OK**.
+    For the server, enter the following values for each setting.
 
     | Setting  | Value  |
     |---|---|
@@ -138,9 +138,11 @@ Let's create the database and server to store the data for the app.
     | Confirm password | Confirm your password. |
     | Location | Central US |
 
+1. Select **OK**.
+
 1. Select **Next : Networking**.
 
-1. Under the **Networking** tab, enter the following values for each setting.
+1. On the **Networking** tab, enter the following values for each setting.
 
     | Setting  | Value  |
     |---|---|
@@ -152,13 +154,13 @@ Let's create the database and server to store the data for the app.
 
 1. Select **Review + create**.
 
-1. Select **Create**, and wait for the server and database to be created before you continue.
+1. Select **Create**. Wait for the server and database to be created before you continue.
 
 ## Create the tables
 
 You can now create the tables to store the data from the .csv files.
 
-1. Select **Got to resource**. Your **SQL database** for **coursedatabase<em>NNN</em>** appears.
+1. Select **Go to resource**. Your **SQL database** for *coursedatabase<em>NNN</em>* appears.
 
 1. In the left menu pane, select **Query editor (preview)**.
 
@@ -308,7 +310,7 @@ You can now create the tables to store the data from the .csv files.
 
 1. On the **SQL databases** pane, select **coursedatabase<em>NNN</em>**. The **coursedatabase<em>NNN</em>** pane appears.
 
-1. In the left menu pane, select **Query editor**. The **Query editor** pane for **coursedatabase<em>NNN</em>** appears.
+1. In the left menu pane, select **Query editor**. The **Query editor** pane for *coursedatabase<em>NNN</em>* appears.
 
 1. Enter the following values for each setting.
 
@@ -338,7 +340,7 @@ You can now create the tables to store the data from the .csv files.
 
     This time you should see the modules in the **Results** window. There are 16 rows.
 
-1. Switch back to Cloud Shell, and run the following command to connect to the database.
+1. Return to Cloud Shell, and run the following command to connect to the database.
 
     ```bash
     sqlcmd -S "$DATABASE_SERVER.database.windows.net" -d "$DATABASE_NAME" -U $AZURE_USER -P $AZURE_PASSWORD
