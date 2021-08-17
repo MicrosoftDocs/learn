@@ -1,4 +1,4 @@
-When you start the process of migrating to Bicep, it's important to follow a structured process to ensure your Bicep file describes your Azure resources correctly. You want to make sure that it follows best practices, and that it's fully tested and safe to use for subsequent deployments. In this unit, you learn about the first two phases for your Bicep migration: the  _convert_ phase and the _migrate_ phase.
+When you start the process of migrating to Bicep, it's important to follow a structured process to ensure your Bicep file describes your Azure resources correctly. You want to make sure that your Bicep code follows best practices, and that it's fully tested and safe to use for subsequent deployments. In this unit, you learn about the first two phases for your Bicep migration: the  _convert_ phase and the _migrate_ phase.
 
 :::image type="content" source="../media/2-convert-migrate-phases.png" alt-text="Diagram of the convert and migrate phases of the recommended workflow for migrating Azure resources to Bicep." border="false":::
 
@@ -27,7 +27,7 @@ Azure Resource Manager is the service that's used to deploy and manage resources
 
 There are two types of operations in Azure: control plane operations and data plane operations. Control plane operations are used to manage the resources in your subscription, while data plane operations are used to access features that are exposed by a resource. For example, you use a control plane operation to create a virtual machine, but you use a data plane operation to connect to the virtual machine by using Remote Desktop Protocol (RDP).
 
-Regardless of how each resource was created, information about the resource is made available in JSON format by Resource Manager. When you ask for a copy of the JSON representation of a resource, you're _exporting_ the resource. The JSON file that you export can be decompiled into Bicep. The export process is a control plane operation, meaning it is only exporting the configuration of the Azure resources. When exporting a virtual machine, the data on a virtual machine's hard drive is not part of the export process.
+Regardless of how each resource was created, information about the resource is made available in JSON format by Resource Manager. When you ask for a copy of the JSON representation of a resource, you're _exporting_ the resource. The JSON file that you export can be decompiled into Bicep. The export process is a control plane operation, meaning it is only exporting the configuration of the Azure resources. For example, when exporting a virtual machine, the data on a virtual machine's hard drive is not part of the export process, and when exporting a storage account, the blobs and other contents of the storage account aren't included in the export process either.
 
 The Azure portal, Azure CLI, and Azure PowerShell cmdlets can all be used to export your Azure resources and resource groups to JSON ARM templates. Later in this module, you'll practice exporting JSON ARM templates yourself.
 
@@ -160,7 +160,7 @@ There are a few things that you need to consider when exporting your templates u
 - The exported template shows the state of the resources at the time of deployment. It won't include any changes made after deployment.
 - You can't select specific resources from a multi-resource deployment. This option will download all resources that were part of the initial deployment.
 - The template will only include resource properties needed for deployment.
-- The template will include parameters that will allow you to redeploy the template in multiple environments.
+- The template might include parameters that you can use to redeploy the template in multiple environments.
 
 > [!TIP]
 > When you copy a template from a deployment, it probably won't include extraneous properties. You should still check that the template includes everything you expect, though.
@@ -206,9 +206,6 @@ The migrate phase consists of three steps, which you complete in sequence:
 ### Create a new Bicep file
 
 It's good practice to create a brand new Bicep file. The file you created in the _convert_ phase is a reference point for you to look at, but you shouldn't treat it as final or deploy it as-is.
-
-> [!TIP]
-> When you start the migrate phase, it can be helpful to use Visual Studio Code's split editor to open your newly created blank Bicep file side by side with your decompiled Bicep file.
 
 ### Copy resources to the new Bicep file
 

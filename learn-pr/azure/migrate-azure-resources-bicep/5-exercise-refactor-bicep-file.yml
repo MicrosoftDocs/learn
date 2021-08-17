@@ -10,6 +10,6 @@ metadata:
   ms.author: jowaddel
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/5-exercise-refactor-bicep-file.md)]
