@@ -18,9 +18,6 @@ To use self-service password reset, users must be:
 - Enabled for SSPR by an administrator.
 - Registered, with the authentication methods they want to use. Two or more authentication methods are recommended in case one is unavailable.
 
-> [!NOTE]
-> By default, administrator accounts are enabled for self-service password reset and are required to use two authentication methods to reset their password, such as an email address, authenticator app, or a phone number. Administrators don't have the ability to use security questions.
-
 The following authentication methods are available for SSPR:
 
 - Mobile app notification
@@ -29,6 +26,10 @@ The following authentication methods are available for SSPR:
 - Mobile phone
 - Office phone
 - Security questions
+
+> [!NOTE]
+> By default, administrator accounts are enabled for self-service password reset and are required to use two authentication methods to reset their password, such as an email address, authenticator app, or a phone number. Administrators don't have the ability to use security questions.
+
 
 When a user resets their password using self-service password reset, it can also be written back to an on-premises Active Directory. Password write-back allows users to use their updated credentials with on-premises devices and applications without a delay.
 
