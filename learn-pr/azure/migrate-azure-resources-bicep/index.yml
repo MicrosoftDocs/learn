@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Migrate Azure resources and JSON ARM templates to use Bicep
   description: Learn how to migrate your Azure resources to Bicep.
-  ms.date: 06/21/2021
+  ms.date: 08/17/2021
   author: joshuawaddell
   ms.author: jowaddel
   ms.topic: interactive-tutorial
