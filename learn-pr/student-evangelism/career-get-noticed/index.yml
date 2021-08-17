@@ -2,18 +2,23 @@
 uid: learn.get-noticed
 metadata:
   title: How to get noticed
-  description: Does it feel like it's hopeless to land a job or internship? Learn how to stand out by networking effectively and writing a great resume.
+  description: Does it feel like it's hopeless to land a job or internship? Learn
+    how to stand out by networking effectively and writing a great resume.
   ms.date: 2/26/2021
   author: gcordido
   ms.author: gcordido
   ms.topic: interactive-tutorial
 title: How To Get Noticed
-summary: Getting noticed is the first step to land a job in tech. Learn tips and strategies to get noticed by a prospective employer.
-abstract: |
+summary: Getting noticed is the first step to land a job in tech. Learn tips and
+  strategies to get noticed by a prospective employer.
+abstract: >
   In this module, you will: 
 
+
   - Learn the basics of networking and some scenarios to start in.
+
   - Determine the value of each of your past-experiences and define their uses as you look for a job.
+
   - Build an eye-catching resume that not only showcases your skills, but you as a person.
 prerequisites: None
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
@@ -27,10 +32,11 @@ products:
 units:
   - learn.get-noticed.1-introduction
   - learn.get-noticed.2-networking
-  - learn.get-noticed.3-resume-writing
-  - learn.get-noticed.4-resume-building
-  - learn.get-noticed.5-knowledge-check
-  - learn.get-noticed.6-summary
-
+  - learn.get-noticed.3-exercise-attend-events
+  - learn.get-noticed.4-resume-writing
+  - learn.get-noticed.5-resume-building
+  - learn.get-noticed.6-exercise-resume-building
+  - learn.get-noticed.7-knowledge-check
+  - learn.get-noticed.8-summary
 badge:
   uid: learn.get-noticed.badge

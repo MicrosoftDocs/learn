@@ -13,12 +13,7 @@ There are many types of networking that all provide both personal and career gro
 - Contribute to open-source software.
   - Join an interest group or play a sport with other people.
 
-## Mini exercise - attend events
 
-Visit an online site where you can discover local events and see if any are relevant to your technical goals and interests. Make it a point to join several and attend some events. For example, you could join a web development meetup if you are interested in building web sites.  
-
-> [!TIP]
-> More and more events are virtual these days, make it a point to attend those online, if it's hard to attend in person.
 
 ## Is networking reserved to only in-person situations?
 

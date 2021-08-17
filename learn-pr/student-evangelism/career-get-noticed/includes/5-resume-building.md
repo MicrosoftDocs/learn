@@ -91,7 +91,3 @@ The following guidelines can assist you in formatting both subsections:
 
 > [!TIP]
 > Do not add periods at the end of your bullet points. It helps with the flow of reading and will allow the recruiter to read further without feeling the need to stop too often.
-
-## Mini exercise - outline experiences
-
-With a pen and some sticky notes or cards, outline the experiences you want to highlight on your resume, one per card. Practice rearranging them for maximum impact and then translate it to your resume document.
