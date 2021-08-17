@@ -27,11 +27,16 @@ Datacenters requires planned maintenances, hardware upgrades, failover-tests and
     Recommended: an image that visualizes the scenario
 
     [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
-
+-->
 ## Example scenario
-TODO: add your scenario
-TODO: add your image
- -->
+
+As an IT Administrator you start to receive inquiries from your developer team regarding slowness on applications inside some virtual machines running on Azure.
+
+Then you start to look for issues among the application components, message queues, connectivity, logs, and alerts and you can't find anything that can explain the slowness.
+
+After spend two hours on your investigation, you discovered that there is an issue happening with your cloud service provider, which is causing a delay over the virtual machines in the region you have your resources deployed.
+
+This is an example of scenario, where the usage of Azure Service Health could have helped you to know in advance the source of the issue and start an action plan immediately to solve the issue, instead to spend two hours of investigation. A simple health alert created to track the health of your virtual machines in a specific Azure region would notify you as soon the issue started.
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
