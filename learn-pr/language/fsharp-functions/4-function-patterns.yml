@@ -3,7 +3,7 @@ uid: learn.fsharp-functions.function-patterns
 title: Function patterns
 metadata:
   title: Function patterns
-  description: In this unit, you will be made familiar with several useful patterns like composition and pipeline. 
+  description: In this unit, you'll be made familiar with several useful patterns like composition and pipeline. 
   author: softchris
   ms.author: chnoring
   ms.date: 07/26/2021

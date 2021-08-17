@@ -1,19 +1,17 @@
-In this exercise, you'll continue with your card game to build a deck of cards. You'll use looping constructs to iterate over the cards and print them to the screen. Your colleagues have been hard at work and taken what you've implemented in the first exercise and placed that code into a function.
+In this exercise, you'll build a deck of cards for a card game that's in development. You'll use looping constructs to iterate over the cards, and then print the card on the screen. Your colleagues also have been hard at work, and they incorporated the code you created in the first exercise into a function.
 
 ## Scaffold a project
 
-Start by scaffolding a new F# project in your console.
-
-Run the command `dotnet new` like so:
+Begin by scaffolding a new F# project in your console. Run the command `dotnet new`:
 
 ```bash
-dotnet run console --language F# -o Loops
+dotnet new console --language F# -o Loops
 cd Loops
 ```
 
 ## Create a card description
 
-Your colleagues have taken the code you wrote in the last exercise and turned that into a function to make it reuseable. The code now looks like so:
+Your colleagues have taken the code you wrote in the previous exercise and turned it into a function, so it's reusable. Here's what the code looks like now:
 
 ```fsharp
 let cardDescription (card: int) : string = 
@@ -25,11 +23,13 @@ let cardDescription (card: int) : string =
      else string cardNo
 ```
 
-1. Place the above code above the `main()` method in _Program.fs_.
+To create a card description:
 
-   The code in _Program.fs_ should now look like so:
+1. In *Program.fs*, add the code before the `main()` method.
 
-   ```fsharp
+    The code in *Program.fs* now looks like this example:
+
+    ```fsharp
     open System
         
     let cardDescription (card: int) : string = 
@@ -44,9 +44,9 @@ let cardDescription (card: int) : string =
     let main argv =
         // implement the rest
         0 // return an integer exit code
-   ```
+    ```
 
-   The `cardDescription` is the name of the function and `card` is the input parameter. Your colleagues have given you a code snippet to work with and what they want is for you to implement a similar function but that determines what suit  card has.  They've given you the following code snippet:
+   The function is named `cardDescription` and the input parameter is `card`. Your colleagues gave you a code snippet to work with. They want you to implement a similar function, but a function determines what suit the card is. They gave you this code snippet:
 
    ```fsharp
    let suit (no:int) : string = 
@@ -54,12 +54,12 @@ let cardDescription (card: int) : string =
        // add implementation here 
    ```
 
-   Now, use the knowledge you've been given, around `if...else` to determine what suit something is. The rules are `0` is hearts, `1` is Spades, `2` is Diamonds, and `3` is Clubs.
+   Now, use the knowledge you've gained about `if...else` to determine what suit a card is. The rules are: `0` is hearts, `1` is spades, `2` is diamonds, and `3` is clubs.
 
    > [!TIP]
-   > Think about this one for a second before moving on.
+   > Pause and think about how to apply your knowledge before you move on.
 
-1. Change the implementation above to the following code:
+1. Make the following changes to the code:
 
     ```fsharp
     let suit (no:int) : string = 
@@ -70,7 +70,7 @@ let cardDescription (card: int) : string =
         else "Clubs" 
     ```
 
-    The code in _Program.fs_ should now look in the following way:
+    The code in *Program.fs* should now look like this example:
 
     ```fsharp
     open System
@@ -100,13 +100,15 @@ Congratulations, you've finished that part of the card game.
 
 ## Print the deck
 
-Again, your colleagues have helped you create a card deck so all you have to do is to print it. Here's the code for the card deck:
+Again, your colleagues have helped you create a card deck. All you have to do is print it. Here's the code for the card deck:
 
 ```fsharp
 let cards = [ 1; 10; 2; 34 ]
 ```
 
-1. Add the `cards` definition to the `main()` method like so:
+To print the deck:
+
+1. Add the `cards` definition to the `main()` method:
 
    ```fsharp
     [<EntryPoint>]
@@ -116,23 +118,25 @@ let cards = [ 1; 10; 2; 34 ]
         0 // return an integer exit code
    ```
 
-   The deck contains only four cards. In a more real implementation, it would contain all 52 cards but this list implementation should suffice. Your colleagues have again written some code for you, so you just have to fill in what's missing. Here's a code snippet:
+   The deck contains only four cards. In a more realistic implementation, the code would contain all 52 cards, but this list will suffice for an example.
+
+   Your colleagues have again written some code for you. You just have to fill in what's missing. Here's a code snippet:
 
    ```fsharp
    // add for loop
      printfn "%s of %s" (cardDescription(card)) (suit(card))
    ```
 
-   The code above consist of a commented out line, you are supposed to add code, to implement a `for...in` loop.
+   The code consists of a commented-out line. Your task is to add code to implement a `for...in` loop.
 
-1. Add the following code, to the `main()` method to implement the `for...in` loop:
+1. Add the following code to the `main()` method to implement the `for...in` loop:
 
     ```fsharp
     for card in cards do
       printfn "%s of %s" (cardDescription(card)) (suit(card))
     ```
 
-    The `main()` method should now look like so:
+    The `main()` method should now look like this code:
 
     ```fsharp
     [<EntryPoint>]
@@ -143,7 +147,7 @@ let cards = [ 1; 10; 2; 34 ]
         0 // return an integer exit code
    ```
 
-1. Run the project by calling `dotnet run`
+1. Run the project by calling `dotnet run`:
 
    ```bash
    dotnet run
@@ -158,9 +162,9 @@ let cards = [ 1; 10; 2; 34 ]
    8 of Diamonds 
    ```
 
-Congratulations, you've managed to take the part you and your colleagues implemented and make that into more of a real looking program.
+Congratulations. You worked with code that you and your colleagues implemented and developed it into more of a realistic-looking program.
 
-The full code for _Program.fs_ looks like so:
+*Program.fs* now looks like this code:
 
 ```fsharp
 open System

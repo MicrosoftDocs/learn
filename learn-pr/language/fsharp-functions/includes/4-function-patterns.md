@@ -1,8 +1,10 @@
-So you've taken repetitious expressions and put those expressions in functions. Great, your code looks a lot better, easier to read. As you get used to using functions more, it's worth starting to look at some powerful patterns that exist in this space. By using these patterns, you will get code that's easier to read and maintain. 
+So far, you've taken repetitious expressions and put those expressions in functions. Your code now looks better and is easier to read. As you get used to using functions more, it's worth starting to look at some powerful patterns that exist in this space. By using these patterns, you'll get code that's easier to read and maintain.
 
-## Declarative versus imperative
+## Declarative vs. imperative
 
-When you start out coding, you most likely write an expression, then another expression and then another, one after another. Your focus is on solving the problem and you are being specific on how you solve the problem, this approach is referred to as an imperative approach. There's nothing wrong with it, it solves the problem at hand. However, there's another route to take, the declarative approach. You can see an example of a declarative approach when you query a database using SQL. Here's an example expression:
+When you start coding, you most likely write an expression. Then you write another expression followed by another, one after another. Your focus is on solving the problem, and you're being specific about how you solve it. This approach is referred to as an *imperative* approach. There's nothing wrong with it because it solves the problem at hand. But there's another route to take, which is the *declarative* approach. You can see an example of a declarative approach when you query a database by using SQL.
+
+Here's an example expression:
 
 ```sql
 SELECT * 
@@ -10,9 +12,9 @@ FROM Students s
 WHERE s.Location = "Ohio" 
 ```
 
-What makes this code declarative is that you ask for _what_ you want, but you don't specify _how_ you want the problem solved, you leave the _how_ to SQL.
+What makes this code declarative is that you ask for _what_ you want, but you don't specify _how_ you want the problem solved. You leave the _how_ to SQL.
 
-You can apply this approach to F# as well, the following code takes on a declarative approach:
+You can also apply this approach to F#. The following code takes on a declarative approach:
 
 ```fsharp
 let studentsFromOhio = 
@@ -20,20 +22,20 @@ let studentsFromOhio =
     |> filterLocation "Ohio"
 ```
 
-Above you're able to operate on data, asks for what you want, but without being specific on how you want it done, just like with SQL. When your code looks like the above, it's easy to read, and to reason about. But to get to this point, let's look at some useful patterns that's supported in F#.
+In the preceding code, you can operate on data and ask for what you want without being specific about how you want it done, just like with SQL. When your code looks like the preceding example, it's easy to read and to reason about. To get to this point, let's look at some useful patterns that are supported in F#.
 
 ## Functional patterns
 
-There are some useful patterns in F# that allows you to take on a more _functional_ approach. We will cover the following patterns:
+There are some useful patterns in F# that you can use to take on a more _functional_ approach. We'll cover the following patterns:
 
-- **Composition**, is how you connect several functions together into one function.
-- **Pipeline**. A pipeline starts with a value and then sequentially calls many functions using the output from one function as the input for the next function.
+- **Composition**: A composition is how you connect several functions together into one function.
+- **Pipeline**: A pipeline starts with a value and then sequentially calls many functions by using the output from one function as the input for the next function.
 
 ### Composition
 
-Authoring code, you will often find yourself calling one function and then another function right after it. For example, you want to order a list and filter out all products that's on discount. Below is an example where the function `add2()` is called and its result is fed to the `multiply3()` function.
+Composition is about combining functions and have them applied, one after the other, in a certain order. The composition operator takes two functions and returns a new function. 
 
-Here's an example:
+When you author code, you'll often find yourself calling one function and then another function right after it. For example, you might want to order a list and filter out all products that are on discount. Below is an example in which the function `add2()` is called and its result is fed to the `multiply3()` function.
 
 ```fsharp
 let add2 a = a + 2
@@ -44,25 +46,25 @@ let addAndMultiply a =
     product
 ```
 
-This pattern is so common that F# has an operator for it, the `>>`, that lets you combine two or more functions into one bigger function. By using said operator, you can it instead right the above code like so:
+This pattern is so common that F# has an operator for it, the `>>`, which lets you combine two or more functions into one bigger function. By using the **>>** operator, you can use it instead of the preceding code, like so:
 
 ```fsharp
 let addAndMultiply = add2 >> multiply3
 addAndMultiply 2 // 12
 ```
 
-What happens is that the combined function `addAndMultiply()` applies the functions it consists of from left to right, so first `add2()` happens and lastly `multiply3()`.
+The combined function `addAndMultiply()` applies the functions it consists of from left to right. In this example, `add2()` happens first and `multiply3()` happens last.
 
 ### Pipeline
 
-Composing is about combining functions and have them applied, one after the other, in a certain order. The composition operator takes two functions and returns a new function. A pipeline operator `|>` takes a function and an argument and returns a value. Let's see how the pipeline differs from composition with this example:
+The pipeline operator `|>` takes a function and an argument and returns a value. Let's see how the pipeline differs from composition with this example:
 
 ```fsharp
 let list = [4; 3; 1]
 let sort (list: int list) = List.sort list
 let print (list: int list)= List.iter(fun x-> printfn "item %i" x) list
 
-list |> sort |> print // item 1 item 3 item 3
+list |> sort |> print // item 1 item 3 item 4
 ```
 
-In the last row you start off with a list of integers, `list`, and then it serves as input to the first function `sort()` and the result of that operation is fed into `print()`. The big difference from composition is that you start with some data, a list of integers in this case, and then you lead it through a set of functions.
+In the last row, you start with a list of integers, using `list`, which serves as input to the first function, `sort()`. The result of that operation is fed into `print()`. The main difference between pipeline and composition is that with a pipeline, you start with some data, which is a list of integers in this case, and then you lead it through a set of functions.

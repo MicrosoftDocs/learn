@@ -232,23 +232,25 @@ If it doesn't, either copy the example or adjust your template to match the exam
 
 Now that you've got the template set, you can validate the new deployment script by using a parameters file with new files specified.
 
-1. Either create an *azuredeploy.parameters.json* file manually or use [the VS Code extension](/azure/azure-resource-manager/templates/quickstart-create-templates-use-visual-studio-code?tabs=CLI#create-a-parameter-file) to do so.
-1. Edit the file to have two files specified:
+::: zone pivot="jsoncli,jsonpowershell"
 
-    ```json
-    {
-        "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
-        "contentVersion": "1.0.0.0",
-        "parameters": {
-            "filesToCopy": {
-                "value": [
-                    "swagger.Staging.json",
-                    "appsettings.Staging.json"
-                ]
-            }
-        }
-    }
-    ```
+1. Either create an *azuredeploy.parameters.json* file manually or use [the VS Code extension](/azure/azure-resource-manager/templates/quickstart-create-templates-use-visual-studio-code?tabs=CLI#create-a-parameter-file) to do so.
+
+1. Edit the file to have two `filesToCopy` specified:
+
+   :::code language="json" source="code/5-parameters.json" :::
+
+::: zone-end
+
+::: zone pivot="bicepcli,biceppowershell"
+
+1. Create an *azuredeploy.parameters.json* file.
+
+1. Edit the file to have two `filesToCopy` specified:
+
+   :::code language="json" source="code/5-parameters.json" :::
+
+::: zone-end
 
 ## Deploy the template
 

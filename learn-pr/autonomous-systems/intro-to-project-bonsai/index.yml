@@ -20,7 +20,7 @@ abstract: |
     - Evaluate whether Microsoft Project Bonsai can simplify machine teaching so you can train and deploy smarter autonomous systems.
 prerequisites: |
   - Experience working with hosted platforms
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/autonomous-systems/bonsai-introduction.svg
 levels:
   - beginner
 roles:
@@ -39,4 +39,4 @@ units:
 - learn.autonomous-systems.intro-to-project-bonsai.5-knowledge-check
 - learn.autonomous-systems.intro-to-project-bonsai.6-summary
 badge:
-  uid: learn.azure.intro-to-project-bonsai.badge
+  uid: learn.autonomous-systems.intro-to-project-bonsai.badge

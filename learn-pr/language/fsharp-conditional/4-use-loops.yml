@@ -3,9 +3,7 @@ uid: learn.fsharp-conditional.use-loops
 title: Use loops to iterate over statements
 metadata:
   title: Use loops to iterate over statements
-  description: In this unit, you'll look at different loops to repeat statements.
-    Some loop constructs are meant to iterate over enumerable collections and
-    some are more focused on repeating an activity until a condition is met.
+  description: Learn about different loops to repeat statements and when to use them.
   author: softchris
   ms.author: chnoring
   ms.date: 07/23/2021

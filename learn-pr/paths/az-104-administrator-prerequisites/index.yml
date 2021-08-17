@@ -4,9 +4,9 @@ metadata:
   title: "AZ-104: Prerequisites for Azure administrators"
   description: "Learn the basic concepts you'll need to know as an Azure administrator and prepare for Exam AZ-104: Microsoft Azure Administrator."
   brand: azure
-  ms.date: 05/14/2020
-  author: cwatson-cat
-  ms.author: cwatson
+  ms.date: 08/06/2021
+  author: wwlpublish
+  ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "AZ-104: Prerequisites for Azure administrators"
@@ -76,14 +76,11 @@ products:
 - azure-container-registry
 - azure-storage
 modules:
-- learn.azure.build-cloud-governance-strategy-azure
-- learn.introduction-to-azure-virtual-machines
-- learn.azure.network-fundamentals
-- learn.azure.network-fundamentals-2
-- learn.control-azure-services-with-cli
+- learn.wwl.configure-azure-resources-tools
+- learn.wwl.use-azure-resource-manager
+- learn.wwl.configure-resources-arm-templates
 - learn.automate-azure-tasks-with-powershell
-- learn.intro-to-azure-ad
-- learn.intro-to-docker-containers
-- learn.choose-storage-approach-in-azure
+- learn.control-azure-services-with-cli
+- learn.azure.create-resource-manager-template-vs-code
 trophy:
   uid: learn.az-104-admin-prerequisites.trophy

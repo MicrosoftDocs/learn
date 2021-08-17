@@ -8866,9 +8866,59 @@
     "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/wwl-data-ai/explore-non-relational-data-stores-azure/6-exercise.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/explore-non-relational-data-stores-azure/",
-    "redirect_document_id": false
-    }    
+      "source_path": "learn-pr/azure/deploy-azure-resources-by-using-bicep-templates/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-first-bicep-template",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-resources-by-using-bicep-templates/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-first-bicep-template/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-resources-by-using-bicep-templates/2-what-is-bicep.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-first-bicep-template/2-what-bicep",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-resources-by-using-bicep-templates/3-define-resources.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-first-bicep-template/3-define-resources",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-resources-by-using-bicep-templates/4-define-resources-bicep-template.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-first-bicep-template/4-exercise-define-resources-bicep-template",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-resources-by-using-bicep-templates/5-add-flexibility-parameters-variables.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-first-bicep-template/5-add-flexibility-parameters-variables",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-resources-by-using-bicep-templates/6-add-parameters-variables-bicep-template.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-first-bicep-template/6-exercise-add-parameters-variables-bicep-template",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-resources-by-using-bicep-templates/7-group-related-resources-modules.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-first-bicep-template/7-group-related-resources-modules",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-resources-by-using-bicep-templates/8-refactor-template-modules.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-first-bicep-template/8-exercise-refactor-template-modules",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-resources-by-using-bicep-templates/9-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-first-bicep-template/9-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-azure-resources-by-using-bicep-templates/10-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/build-first-bicep-template/10-summary",
+      "redirect_document_id": true
+    }
   ]
 }
