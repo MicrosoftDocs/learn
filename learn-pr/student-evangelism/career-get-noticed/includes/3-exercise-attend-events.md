@@ -35,7 +35,7 @@ So you are going to an event, you have a plan to speak to many people. What do y
 - Any part of the talk you found interesting?
 - Be transparent, if you are looking for a job, say so, or maybe you are looking for a consultancy contract or an internship?
 
-1. Find a team either before the talk or in the break to ask a subset of the questions above.
+1. Find a time either before the talk or in the break to ask a subset of the questions above.
 
    > Here's an example interaction:
    > 
