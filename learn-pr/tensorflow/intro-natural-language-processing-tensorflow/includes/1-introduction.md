@@ -17,7 +17,7 @@ In this module, we will mostly focus on the **Text Classification** task. Howeve
 
 ## Learning objectives
 - Understand how text is processed for NLP tasks
-- Learn about Recurrent Neural Netowrks (RNNs) and Generative Neural Networks (GNNs)
+- Learn about Recurrent Neural Networks (RNNs) and Generative Neural Networks (GNNs)
 - Learn about Attention Mechanisms
 - Learn how to build text classification models
 

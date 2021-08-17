@@ -12,9 +12,9 @@ metadata:
 durationInMinutes: 5
 quiz:
   questions:
-    - content: "Suppose your text corpus contains 80000 different words. What is typically done to reduce the dimensionality of input vector to neural classifier?"
+    - content: "Suppose your text corpus contains 80000 different words. Which of the below would you complete to reduce the dimensionality of the input vector to neural classifier?"
       choices:
-        - content: "Randomly select 10% of the words and ignore the rest"
+        - content: "Randomly select 10% of the words and ignore the rest."
           isCorrect: false
           explanation: "It is definitely not a good idea, especially because you risk omitting semantically-important words"
         - content: "Use convolutional layer before fully-connected classifier layer"
@@ -25,8 +25,8 @@ quiz:
           explanation: "This is correct"
         - content: "Select 10% of most frequently used words and ignore the rest"
           isCorrect: false
-          explanation: "While ignoring some words might be a good way to limit vocabulary, leaving most frequently used words is not a good idea because they are often not semantically important"
-    - content: "We want to train a neural network to generate new funny words for avchildren's book. Which architecture can we use?"
+          explanation: "While ignoring some words might be a good way to limit vocabulary, leaving the most frequently used words is not a good idea because they are often not semantically important"
+    - content: "We want to train a neural network to generate new funny words for a children's book. Which architecture can we use?"
       choices:
         - content: "Word-level LSTM"
           isCorrect: false
@@ -39,10 +39,10 @@ quiz:
           explanation: "Word-level networks operate on pre-defined vocabulary of words, and cannot generate new words."
         - content: "Character-level perceptron"
           isCorrect: false
-          explanation: "Fully-connected linear network (perceptron) is not a good architecture for text modelling, because they cannot capture common patterns effectively."
+          explanation: "Fully-connected linear network (perceptron) is not a good architecture for text modeling, because they cannot capture common patterns effectively."
     - content: "Recurrent neural network is called recurrent, because:"
       choices:
-        - content: "A network is applied for each input element, and output from the previous application is passed to the next one"
+        - content: "A network is applied for each input element and output from the previous application is passed to the next one"
           isCorrect: true
           explanation: "This is correct."
         - content: "It is trained by a recurrent process"
