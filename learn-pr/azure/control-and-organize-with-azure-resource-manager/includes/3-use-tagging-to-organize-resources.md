@@ -34,7 +34,7 @@ Let's apply some tags to the resources you created. Recall that you created a re
 
     You should now see the tags column, but it will be empty since you haven't added any tags yet. You'll add the tags directly here.
 
-1. You can also add tags to any resource that supports this feature on the resource's **Tags** pane. In the list of resources, you should see an ellipsis (**...**) in the right coumn. Select the **...** for the **msftlearn-vnet1** resource, then select **Edit tags** to display the **Edit tags** pane. This pane enables you to create specific tags for the selected resource.
+1. You can also add tags to any resource that supports this feature on the resource's **Tags** pane. In the list of resources, you should see an ellipsis (**...**) in the right column. Select the **...** for the **msftlearn-vnet1** resource, then select **Edit tags** to display the **Edit tags** pane. This pane enables you to create specific tags for the selected resource.
 
 1. Let's add a couple tags to this virtual network. The two fields on this pane remember all of the previously used tags. You can select one or create a new tag. In the **Name** box type `Department`, and in the **Value** box type `Finance`. Click **Save** to save your changes.
 
@@ -52,7 +52,7 @@ Let's apply some tags to the resources you created. Recall that you created a re
 
     ![Screenshot of Azure portal showing the assign tags dialog to add tags in bulk.](../media/3-add-bulk-tag.PNG)
 
-    In the resource list you'll now see the **Tags** column with multiple values. If your window width is limited, you may see the tag text truncated. Hover over the title of a columm and use the vertical line to resize the column, or, if you see an ellipsis in the far right, it indicates addidional columns are available but not shown.
+    In the resource list you'll now see the **Tags** column with multiple values. If your window width is limited, you may see the tag text truncated. Hover over the title of a column and use the vertical line to resize the column, or, if you see an ellipsis in the far right, it indicates additional columns are available but not shown.
 
 1. Take a look at how you can use tags to filter your resources. On the Azure portal menu or from the **Home** page, select **All resources**.
 
