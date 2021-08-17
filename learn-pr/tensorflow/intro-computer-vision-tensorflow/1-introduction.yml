@@ -8,7 +8,7 @@ metadata:
   ms.author: dmitryso
   ms.date: 07/07/2021
   ms.topic: interactive-tutorial
-  ms.prod: vs
+  ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/1-introduction.md)

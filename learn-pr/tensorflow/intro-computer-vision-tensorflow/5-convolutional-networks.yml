@@ -8,7 +8,7 @@ metadata:
   author: shwars
   ms.author: dmitryso
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.prod: learning-azure
 durationInMinutes: 15
 sandbox: true
 notebook: notebooks/5-convolutional-networks.ipynb
@@ -39,6 +39,7 @@ quiz:
           explanation: "Color dimension goes away after applying filters. Also, do not forget that sliding window reduces the spatial dimension."
         - content: "The size of input image is 3x320x200, what would be the size of the tensor after applying 5x5 convolutional layer with 16 filters?"
           isCorrect: false
+          explanation: "Incorrect."
     - content: "Which layers do we apply to significantly reduce spatial dimension in multi-layered CNN?"
       choices:
         - content: "Convolution"
