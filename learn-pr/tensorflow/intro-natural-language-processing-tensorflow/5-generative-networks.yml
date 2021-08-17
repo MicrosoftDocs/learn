@@ -8,7 +8,7 @@ metadata:
   ms.author: dmitryso
   ms.date: 07/07/2021
   ms.topic: interactive-tutorial
-  ms.prod: azure
+  ms.prod: learning-azure
 durationInMinutes: 15
 sandbox: true
 notebook: notebooks/5-generative-networks.ipynb
