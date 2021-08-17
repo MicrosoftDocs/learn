@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.career-growth.4-knowledge-check
+uid: learn.career-growth.knowledge-check-1
 title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
 metadata:
   unitType: knowledge_check
@@ -9,7 +9,7 @@ metadata:
   author: jlooper 
   ms.author: jelooper 
   ms.topic: interactive-tutorial
-  ms.prod: "TODO"
+  ms.prod: <TODO>
 durationInMinutes: 3 # user input: the estimate time to complete the unit
 content: |
 quiz:
