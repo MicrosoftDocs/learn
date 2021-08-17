@@ -5,6 +5,8 @@ Azure Arc-enabled data services is a set of software to provide hybrid data capa
 
 One of the ways to learn about the various components that make up Azure Arc-enabled data services is to examine its architecture.
 
+:::image type="content" source="../media/azure-arc-data-services-arch.svg" alt-text="Azure Arc-enabled data services architecture" border="false":::  
+
 ## Kubernetes and infrastructure
 
 ## Connected modes
