@@ -24,6 +24,7 @@ prerequisites: |
   - Refactoring Bicep files to conform to best practices.
 
   To follow along with the exercises in the module, you'll need:
+  - An [Azure subscription](https://azure.microsoft.com/free/).
   - [Visual Studio Code](https://code.visualstudio.com), installed locally.  
   - The [Bicep extension for Visual Studio code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally.  
   - Either:
