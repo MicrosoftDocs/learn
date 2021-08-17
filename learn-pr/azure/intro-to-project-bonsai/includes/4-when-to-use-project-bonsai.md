@@ -32,7 +32,7 @@ optimization on top of that experience.
   
 Bonsai is designed to make AI development accessible to those without AI
 experience. However, having data scientists or other AI experts available can
-help in cases where the problem requires advanced useage of the platform. For example,
+help in cases where the problem requires advanced usage of the platform. For example,
 using explicit reward and terminal functions instead of goals or fine-tuning the
 learning algorithm.
 
