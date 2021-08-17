@@ -22,7 +22,7 @@ quiz:
 
       What should you do to fix this error?
     choices:
-    - content: Check your GitHub secrets. COnfirm that there is a secret named `AZURE_CREDENTIALS`. Then, regenerate your service principal and paste the service principal's details into the AZURE_CREDENTIALS secret value.
+    - content: Check your GitHub secrets. Confirm that there is a secret named `AZURE_CREDENTIALS`. Then, regenerate your service principal and paste the service principal's details into the AZURE_CREDENTIALS secret value.
       isCorrect: true
       explanation: Correct. The `azure/login` action makes use of the `AZURE_CREDENTIALS` secret. This secret should exist in your GitHub secret settings and should have a valid value.
     - content: Confirm the name of the resource group you are deploying to. It is probably incorrect.
