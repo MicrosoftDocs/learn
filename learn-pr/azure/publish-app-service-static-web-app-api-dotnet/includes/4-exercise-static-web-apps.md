@@ -26,7 +26,7 @@ This module uses the Azure sandbox to provide you with a free, temporary Azure s
    | **Azure Functions and staging details** |
    | Region for Azure Functions API and staging environments | Select the region closest to you |
    | **Deployment details** |
-   | GitHub account | Select **Sign in with GitHub**. The **Authorize Azure Static Web Apps** pane appears. Select **Authorize Azure-App-Service-Static-Web-Apps**. Enter your passord. |
+   | GitHub account | Select **Sign in with GitHub**. The **Authorize Azure Static Web Apps** pane appears. Select **Authorize Azure-App-Service-Static-Web-Apps**. Enter your password. |
    | Organization | Select the Organization where you created the repository |
    | Repository   | my-static-blazor-app                                |
    | Branch       | main                                                 |
@@ -38,7 +38,7 @@ This module uses the Azure sandbox to provide you with a free, temporary Azure s
 
 1. Select **Review + create** > **Create**.
 
-1. After deployment complettes, select **Go to resource**. Your **Static Web App** pane appears.
+1. After deployment completes, select **Go to resource**. Your **Static Web App** pane appears.
 
 ### Review the GitHub Action
 
