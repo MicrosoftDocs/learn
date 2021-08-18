@@ -22,7 +22,7 @@ Azure Security Center enables you to see which VMs require the VM Agent, and wil
 
 1. Select a workspace to use.
 
-1. On the top mneu bar, select **Save**.
+1. On the top menu bar, select **Save**.
 
 ![Screenshot ASC Auto provisioning pane.](../media/8-auto.png)
 

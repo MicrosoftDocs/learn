@@ -67,7 +67,7 @@ Azure Security Center monitors daily Windows and Linux VMs and computers for mis
 
     ![Screenshot of the Security policy Azure security Center pane.](../media/3-asc-enable-system-updates.png)
 
-1. In this example, the Aazure Security Center agent has not been deployed to a VM or physical machine so the message **AuditIfNotExists** appears. AuditIfNotExists enables auditing on resources that match the if condition. If the resource is not deployed, **NotExists** appears.
+1. In this example, the Azure Security Center agent has not been deployed to a VM or physical machine so the message **AuditIfNotExists** appears. AuditIfNotExists enables auditing on resources that match the if condition. If the resource is not deployed, **NotExists** appears.
 
     ![Screenshot again of Security policy AuditIfNotExists.](../media/3-asc-enable-auditing.png)
 
@@ -150,7 +150,7 @@ Azure Security Center will recommend that you provide security contact details f
 
 1. On the Azure **home** page, in the top search bar, search for and select *Security Center*. The **Security Center - Overview** pane appears.
 
-1. In the left menu pane, under **Management**, select **Pricing & settings**. The **Pricing & settings** pane appearsfor **Security Center**.
+1. In the left menu pane, under **Management**, select **Pricing & settings**. The **Pricing & settings** pane appears for **Security Center**.
 
 1. Select the subscription.
 
