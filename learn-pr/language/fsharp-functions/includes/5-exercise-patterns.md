@@ -8,12 +8,12 @@ As mentioned, your colleagues have been busy writing code. Here it is:
 ```fsharp
 let cards = [21; 3; 1; 7; 9; 23]
 let cardFace card = 
-       let no = card % 13
-       if no = 14 || no = 1 then "Ace"
-       elif no = 13 then "King"
-       elif no = 12 then "Queen"
-       elif no = 11 then "Jack"
-       else string no
+    let no = card % 13
+    if no = 1 then "Ace"
+    elif no = 0 then "King"
+    elif no = 12 then "Queen"
+    elif no = 11 then "Jack"
+    else string no
 
 let suit card =
     let no = card / 13
@@ -23,7 +23,7 @@ let suit card =
     else "Clubs"
 
 let shuffle list =
-    let random = new System.Random()
+    let random = System.Random()
     list |> List.sortBy (fun x -> random.Next())
 
 let take list = List.take list 
@@ -58,7 +58,6 @@ The code consists of different parts that will help you implement a card game. S
    ```
 
    You should see three cards being printed with their proper description and suit. Here's an example output of what it can look like:
-
 
     ```output
     Ace of Hearts
