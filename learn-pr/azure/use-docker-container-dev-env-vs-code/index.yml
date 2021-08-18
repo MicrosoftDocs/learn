@@ -34,13 +34,11 @@ units:
   - learn.use-docker-container-dev-env-vs-code.2-exercise-prepare-project
   - learn.use-docker-container-dev-env-vs-code.3-use-as-dev-env
   - learn.use-docker-container-dev-env-vs-code.4-exercise-add-dev-container
-  - learn.use-docker-container-dev-env-vs-code.5-forward-ports
-  - learn.use-docker-container-dev-env-vs-code.6-exercise-forward-ports
-  - learn.use-docker-container-dev-env-vs-code.7-customize-settings
-  - learn.use-docker-container-dev-env-vs-code.8-exercise-customize-settings
-  - learn.use-docker-container-dev-env-vs-code.9-add-software
-  - learn.use-docker-container-dev-env-vs-code.10-exercise-add-software
-  - learn.use-docker-container-dev-env-vs-code.11-knowledge-check
-  - learn.use-docker-container-dev-env-vs-code.12-summary
+  - learn.use-docker-container-dev-env-vs-code.5-customize-settings
+  - learn.use-docker-container-dev-env-vs-code.6-exercise-customize-settings
+  - learn.use-docker-container-dev-env-vs-code.7-add-software
+  - learn.use-docker-container-dev-env-vs-code.8-exercise-add-software
+  - learn.use-docker-container-dev-env-vs-code.9-knowledge-check
+  - learn.use-docker-container-dev-env-vs-code.10-summary
 badge:
   uid: learn.use-docker-container-dev-env-vs-code.badge

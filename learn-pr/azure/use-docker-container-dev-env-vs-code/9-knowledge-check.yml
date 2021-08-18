@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.use-docker-container-dev-env-vs-code.11-knowledge-check
+uid: learn.use-docker-container-dev-env-vs-code.9-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -29,20 +29,20 @@ quiz:
         - content: "Start the project from the terminal."
           isCorrect: false
           explanation: "Starting the project won't automatically start the container."
-    - content: "When you start a web project in a container, how do you access it from the browser?"
+    - content: "How do you run additional commands after the dev container has been created?"
       choices:
-        - content: "Use the port forwarding feature of dev containers."
+        - content: "Use the postCreateCommand property in the devcontainer.json"
           isCorrect: true
-          explanation: "Port forwarding allows you to access any port exposed in a container as if it's on your local machine."
-        - content: "Open a browser instance in the container."
+          explanation: "The postCreatecommand is for any commands that you want to have run immediately after the container is created."
+        - content: "Use the post install hook in the devcontainer.json"
           isCorrect: false
-          explanation: "The container does not have a user interface, so it's not possible to open a browser instance inside one."
-        - content: "Access it the same way as you would any other web project or URL."
+          explanation: "There is no postCreate install hook in the devcontainer.json"
+        - content: "Specify the command in the Dockerfile"
           isCorrect: false
-          explanation: "By default, applications exposed via URLs with ports like 127.0.0.1:5000 are not accessible from your local machine."
-        - content: "Expose the port in the Dockerfile."
+          explanation: "While you can run additional commands in the Dockerfile, the preferred way is to use the devcontainer.json file."
+        - content: "Pass the postCreate flag to the build command."
           isCorrect: false
-          explanation: "Although you _can_ expose ports in a Dockerfile, it's not the best way to expose processes running in a dev container."
+          explanation: "The recommended way to execute post create commands is with the devcontainer.json file."
     - content: "How would you install additional software in a container so that it's saved as part of the configuration?"
       choices:
         - content: "Use an `apt-get` command in the devcontainer.json file's `postSetupCommand` option."
