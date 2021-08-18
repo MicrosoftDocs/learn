@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-speech-services-tutorials-mrtk.2-integrating-and-using-speech-recognition-and-transcription
+title: Integrating and using speech recognition and transcription
+metadata:
+  title: Integrating and using speech recognition and transcription
+  description: Introduction for Integrating and using speech recognition and transcription
+  ms.date: 06/23/2021
+  author: "varunsiddaraju"
+  ms.author: "v-hferrone"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-integrating-and-using-speech-recognition-and-transcription.md)]

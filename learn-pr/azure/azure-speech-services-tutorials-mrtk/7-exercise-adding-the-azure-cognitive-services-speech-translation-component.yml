@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-speech-services-tutorials-mrtk.7-exercise-adding-the-azure-cognitive-services-speech-translation-component
+title: Exercise Adding the azure cognitive services speech translation component
+metadata:
+  title: Exercise Adding the azure cognitive services speech translation component
+  description: Description to Adding the azure cognitive services speech translation component
+  ms.date: 06/23/2021
+  author: "varunsiddaraju"
+  ms.author: "v-hferrone"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-exercise-adding-the-azure-cognitive-services-speech-translation-component.md)]

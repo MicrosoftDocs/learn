@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-speech-services-tutorials-mrtk.4-adding-an-offline-mode-for-local-speech-to-text-translation
+title: Adding an offline mode for local speech to text translation
+metadata:
+  title: Adding an offline mode for local speech to text translation
+  description: Introduction to Adding an offline mode for local speech to text translation
+  ms.date: 06/23/2021
+  author: "varunsiddaraju"
+  ms.author: "v-hferrone"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-adding-an-offline-mode-for-local-speech-to-text-translation.md)]

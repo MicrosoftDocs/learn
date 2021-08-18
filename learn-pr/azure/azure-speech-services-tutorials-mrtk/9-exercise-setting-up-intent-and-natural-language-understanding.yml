@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-speech-services-mrtk.9-exercise-setting-up-intent-and-natural-language-understanding
+title: Exercise Setting up intent and natural language understanding
+metadata:
+  title: Exercise Setting up intent and natural language understanding 
+  description: Exercise on Setting up intent and natural language understanding
+  ms.date: 06/23/2021
+  author: "varunsiddaraju"
+  ms.author: "v-hferrone"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-exercise-setting-up-intent-and-natural-language-understanding.md)]
