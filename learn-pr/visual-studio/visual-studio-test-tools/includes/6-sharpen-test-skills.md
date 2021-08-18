@@ -30,7 +30,7 @@ public void AddTest()
 
 ## Data driven tests
 
-[Data driven tests](https://docs.microsoft.com/visualstudio/test/how-to-create-a-data-driven-unit-test) (also known as parameterized testing or DDT) allows you to run the same test method a number of times with a variety of parameters. This allows you to avoid repetition in your code while also checking the same function with a whole set of different data inputs. You can input data in-line as shown in the example below or even connect to a database the get input.
+[Data driven tests](/visualstudio/test/how-to-create-a-data-driven-unit-test) (also known as parameterized testing or DDT) allows you to run the same test method a number of times with a variety of parameters. This allows you to avoid repetition in your code while also checking the same function with a whole set of different data inputs. You can input data in-line as shown in the example below or even connect to a database the get input.
 
 ```csharp
 [DataTestMethod]
@@ -50,8 +50,8 @@ public void AddDataTests(int x, int y, int expected)
 
 ## Mocking
 
-* Sometimes the architecture of your code is not as modular as you may want in order to unit test it well. In order to isolate the parts of your code that you are testing without re-writing it you may want to use a mocking framework. Mocking helps you isolate the code you are trying to test by creating stubs or shims of that code's dependencies. This allows the code you are testing to make the required calls to its dependencies without actually testing the dependencies. This helps you focus a unit test down to precisely the behavior you want to test. There are many popular mocking frameworks available including [MOQ](https://github.com/Moq/moq4/wiki/Quickstart) and [Microsoft Fakes](https://docs.microsoft.com/visualstudio/test/isolating-code-under-test-with-microsoft-fakes).
-* You can find a [full tutorial for Microsoft Fakes here](https://docs.microsoft.com/visualstudio/test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing), but let's explore a short overview.
+* Sometimes the architecture of your code is not as modular as you may want in order to unit test it well. In order to isolate the parts of your code that you are testing without re-writing it you may want to use a mocking framework. Mocking helps you isolate the code you are trying to test by creating stubs or shims of that code's dependencies. This allows the code you are testing to make the required calls to its dependencies without actually testing the dependencies. This helps you focus a unit test down to precisely the behavior you want to test. There are many popular mocking frameworks available including [MOQ](https://github.com/Moq/moq4/wiki/Quickstart) and [Microsoft Fakes](/visualstudio/test/isolating-code-under-test-with-microsoft-fakes).
+* You can find a [full tutorial for Microsoft Fakes here](/visualstudio/test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing), but let's explore a short overview.
   * Note that Microsoft Fakes is only available with Visual Studio Enterprise.
   * Navigate to the test project you want to isolate in the Solution Explorer, right-click on the project under the Project node that you want to mock, and select 'Add Fakes Assembly'.
 
@@ -86,3 +86,5 @@ public void AddDataTests(int x, int y, int expected)
     }
     
     ```
+
+Writing good tests can take a while to learn, just like writing good code. If you would like to learn more about different testing schools of thought, see the [Introduction to software testing concepts](/learn/modules/visual-studio-test-concepts/).

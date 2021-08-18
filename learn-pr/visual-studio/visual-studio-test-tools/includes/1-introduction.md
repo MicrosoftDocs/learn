@@ -8,7 +8,7 @@ Suppose you are creating a calculator app for school and you've been able to suc
 
 ## What will we be doing?
 
-Here, you'll start testing your program by:
+You'll start testing your program with three main tasks:
 
 * **Write a test**: Learn the basic parts of writing a test and use test projects that reference your product code.
 * **Use Visual Studio to run and debug your tests**: See the output of your tests and interact with a whole suite of tests.
@@ -18,4 +18,4 @@ If you want to familiarize yourself with the basic concepts of software testing 
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to create a test project, add references to product code, and write tests. you'll also be able to use the testing tools in Visual Studio to run, organize, and debug your tests.
+By the end of this session, you'll be able to create a test project, add references to product code, and write tests. You'll also be able to use the testing tools in Visual Studio to run, organize, and debug your tests.
