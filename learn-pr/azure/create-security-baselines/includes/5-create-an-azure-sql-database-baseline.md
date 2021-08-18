@@ -103,7 +103,7 @@ Audit logs should be preserved for security, discovery, and to meet legal and re
 
 1. For each database instance, in the left menu pane, under **Security**, select **Auditing**. The **Auditing** pane appears for your SQL database instance.
 
-1. Select your **Audit log destination***, and then expand **Advanced properties**.
+1. Select your **Audit log destination**, and then expand **Advanced properties**.
 
 1. Ensure **Retention (Days)** is *greater than 90 days*.
 
@@ -125,7 +125,7 @@ A retention of zero days means logs have unlimited retention. Otherwise, the val
 
 1. For each database instance, in the left menu pane, under **Security**, select **Auditing**. The **Auditing** pane appears for your SQL database instance.
 
-1. Select your **Audit log destination***, and then expand **Advanced properties**.
+1. Select your **Audit log destination**, and then expand **Advanced properties**.
 
 1. Ensure **Retention (Days)** is *greater than 90 days*.
 
