@@ -32,7 +32,7 @@ Your GitHub Action has now been triggered.
 
 You can stay in your browser on your repository and watch the GitHub Action's progress. Follow these steps to view the progress:
 
-1. Select ht **Actions** menu.
+1. Select the **Actions** menu.
 
 1. Under the Workflows menu, select the **Azure Static Web Apps CI/CD** workflow item.
 
