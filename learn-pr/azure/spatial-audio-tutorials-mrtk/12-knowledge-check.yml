@@ -1,0 +1,43 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.spatial-audio-tutorials-mrtk.12-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Three multiple-choice questions
+  ms.date: 06/23/2021
+  author: "varunsiddaraju"
+  ms.author: "v-hferrone"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/12-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which plugin provides easy access to the HRTF hardware so your application can use more of the processor for the operations other than spatial audio?"
+      choices:
+        - content: "ARKit XR Plugin"
+          isCorrect: false
+        - content: "Oculus XR Plugin"
+          isCorrect: false
+        - content: "Micosoft spatializer plugin"
+          isCorrect: true
+    - content: "What do you need to adjust in the Audio Source component to disable attenuation?"
+      choices:
+        - content: "Spatial Blend"
+          isCorrect: false
+        - content: "Volume curve"
+          isCorrect: true
+        - content: "Doppler Level"
+          isCorrect: false
+    - content: "Unreververated audio is called __________, and the audio after filtering with the reverb filter is called the __________"
+      choices:
+        - content: "dry path, wet path"
+          isCorrect: true
+        - content: "wet path, dry path"
+          isCorrect: false
+        - content: "white path, black path"
+          isCorrect: false
+         
+   

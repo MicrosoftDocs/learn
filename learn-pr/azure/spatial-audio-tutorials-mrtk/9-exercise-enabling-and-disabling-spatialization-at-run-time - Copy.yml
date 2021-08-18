@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.spatial-audio-tutorials-mrtk.9-exercise-enabling-and-disabling-spatialization-at-run-time
+title: Exercise Enabling and disabling spatialization at run time
+metadata:
+  title: Exercise Enabling and disabling spatialization at run time
+  description: Exercise on Enabling and disabling spatialization at run time
+  ms.date: 06/23/2021
+  author: "varunsiddaraju"
+  ms.author: "v-hferrone"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-exercise-enabling-and-disabling-spatialization-at-run-time.md)]
