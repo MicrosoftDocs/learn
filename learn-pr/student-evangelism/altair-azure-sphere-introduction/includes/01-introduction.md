@@ -1,11 +1,11 @@
 Welcome to the *Learn computing fundamentals with Altair 8800 emulator & Azure Sphere* learning path.
 
-## Introduction to the Altair 8880
+## Introduction to the Altair 8800
 
 The Altair 8800 is considered to be the computer that kick-started the Personal Computer revolution. You can learn more about the Altair at https://en.wikipedia.org/wiki/Altair_8800.
 
 ![Diagram that shows the Altair 8800.](../media/altair-8800-smithsonian-museum.png)
-[Altair 8800 image attribution - Smithsonian Museum](https://commons.wikimedia.org/wiki/File:Altair_8800_Smithsonian_Museum.jpg)
+[Altair 8800 image attribution - Smithsonian Museum](https://commons.wikimedia.org/wiki/File:Altair_8800,_Smithsonian_Museum.jpg)
 
 The Altair 8800 was built on the [Intel 8080](https://en.wikipedia.org/wiki/Intel_8080) CPU, the second 8-bit microprocessor manufactured by Intel in 1974. By today's standards, it is a very simple CPU design, perfect for learning, due to its limited instruction set. This makes it easier to understand and learn computer fundamentals.
 
