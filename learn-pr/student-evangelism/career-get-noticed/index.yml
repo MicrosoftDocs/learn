@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.get-noticed
+uid: learn.career-get-noticed
 metadata:
   title: How to get noticed
   description: Does it feel like it's hopeless to land a job or internship? Learn
@@ -30,13 +30,13 @@ roles:
 products:
   - vs-code
 units:
-  - learn.get-noticed.1-introduction
-  - learn.get-noticed.2-networking
-  - learn.get-noticed.3-exercise-attend-events
-  - learn.get-noticed.4-resume-writing
-  - learn.get-noticed.5-resume-building
-  - learn.get-noticed.6-exercise-resume-building
-  - learn.get-noticed.7-knowledge-check
-  - learn.get-noticed.8-summary
+  - learn.career-get-noticed.1-introduction
+  - learn.career-get-noticed.2-networking
+  - learn.career-get-noticed.3-exercise-attend-events
+  - learn.career-get-noticed.4-resume-writing
+  - learn.career-get-noticed.5-resume-building
+  - learn.career-get-noticed.6-exercise-resume-building
+  - learn.career-get-noticed.7-knowledge-check
+  - learn.career-get-noticed.8-summary
 badge:
   uid: learn.get-noticed.badge
