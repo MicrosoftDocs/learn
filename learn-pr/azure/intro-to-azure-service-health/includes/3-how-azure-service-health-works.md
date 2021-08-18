@@ -62,18 +62,33 @@ On this page also is possible get the RSS feed to receive updates on this page, 
 
 ### Service Health
 
-service impacting communications about outages, planned maintenance activities, and other health advisories because the authenticated Service Health experience knows which services and resources you currently use.
+Service Health is what you will be using to get information on outages, planned maintenance, health and security advisories.
 
-set up Service Health alerts to notify you via your preferred communication channels when service issues, planned maintenance, or other changes 
+It allows you to create customized views, filtering among subscription, region and services. See below what kind of information will be available to you for each case:
 
+* Service issues: Issue name; subscription, service and region impacted; start time; last update status and root cause analysis; downloadable PDF with explanations.
+* Planned maintenance: Issue name; tracking id; service and region impacted; start and end time; summary and issue updates; downloadable PDF with explanations.
+* Health advisory: Issue name; tracking id; service and region impacted; start time; any required action from you (if needed); summary and issue updates; downloadable PDF with explanations.
+* Security advisory: Issue name; tracking id; service and region impacted; start time; any required action from you (if needed); summary and issue updates; downloadable PDF with explanations.
+
+Also Service Health will allow you to create health alerts to notify you when something happens. 
 
 ### Resource Health
 
-Resource Health along with Azure Monitor notifications will help you stay better informed about the availability of your resources minute by minute and quickly assess whether an issue is due to a problem on your side or related to an Azure platform event.
+The Resource Health execute some checks minute by minute across the resources and made the information available to you. Please note that there is a specify type of resources where resource health run those checks. You can see the [full list here](https://docs.microsoft.com/en-us/azure/service-health/resource-health-checks-resource-types).
 
+As an example, for Virtual Machines the type of checks executed are like below:
 
+* Is the server hosting this virtual machine up and running?
+* Has the host OS booting completed?
+* Is there ongoing planned maintenance?
+* Is the host hardware degraded and predicted to fail soon?
 
-<!-- Pattern for complex topic -->
+The Resource Health is available through "Support + troubleshooting" blade at Azure Portal for some specific resource types on Azure. 
+
+:::image type="content" source="../media/3-azure-resource-health.png" alt-text="Screenshot of Azure Resource Health":::
+
+<!-- Pattern for complex topic 
 ## H2 heading
 Strong lead sentence; remainder of paragraph.
 Visual (image, table, list, code sample, blockquote)
@@ -87,6 +102,7 @@ Strong lead sentence; remainder of paragraph.
 Paragraph (optional)
 Visual (image, table, list, code sample, blockquote)
 Paragraph (optional)
+-->
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
