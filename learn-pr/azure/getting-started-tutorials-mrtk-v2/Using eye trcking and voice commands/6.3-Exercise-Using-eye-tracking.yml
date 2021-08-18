@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.getting-started-tutorials-mrtk.6.3-Exercise-Using-eye-tracking
+title: Exercise -  Using eye tracking
+metadata:
+  title: Exercise -  Using eye tracking
+  description: Introduction for  Using eye tracking
+  ms.date: 06/23/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 10
+content: |
+  [!include[](includes/6.3-Exercise-Using-eye-tracking.md)]

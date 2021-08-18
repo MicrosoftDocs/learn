@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.getting-started-tutorials-mrtk.4.3-exercise-position-game-objects-and-set-visibility
+title: Exercise - Position game objects and set visibility
+metadata:
+  title: Exercise - Position game objects and set visibility
+  description: Introduction for Position game objects and set visibility
+  ms.date: 06/23/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 10
+content: |
+  [!include[](includes/4.3-exercise-position-game-objects-and-set-visibility.md)]

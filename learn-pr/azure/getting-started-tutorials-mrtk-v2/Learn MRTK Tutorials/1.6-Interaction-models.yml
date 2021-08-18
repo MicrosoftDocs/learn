@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.getting-started-tutorials-mrtk.1.6-Interaction-models
+title: Interaction models
+metadata:
+  title:  Interaction models
+  description: Introduction for Interaction models
+  ms.date: 06/23/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 5
+content: |
+  [!include[](includes/1.6-Interaction-models.md)]
