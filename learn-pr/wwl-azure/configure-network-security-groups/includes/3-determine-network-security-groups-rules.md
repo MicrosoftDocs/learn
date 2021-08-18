@@ -8,7 +8,7 @@ You can add more rules by specifying:
  -  Protocol (Any, TCP, UDP)
  -  Source (Any, IP Addresses, Service tag)
  -  Destination (Any, IP Addresses, Virtual Network)
- -  Action (Allow or Deny).
+ -  Action (Allow or Deny)
 
 Azure creates the default rules in each network security group that you create. You cannot remove the default rules, but you can override them by creating rules with higher priorities.
 

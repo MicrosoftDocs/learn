@@ -59,7 +59,7 @@ Our JSON configuration specifies that our function will be triggered when a mess
 This example is a simple illustration of how we configure bindings for a function. We could change the output to be an email using a SendGrid binding, or put an event onto a Service Bus to notify some other component in our architecture, or even have multiple output bindings to push data to various services.
 
 > [!TIP]
-> To view and edit the contents of _function.json_ in the Azure portal, from Home, select your function app, and in the right pane, select **JSON View**. The Resource JSON view displays the Resourse ID and the editable JSON code. To close the JSON view, select the **X** in to top right corner of the pane.
+> To view and edit the contents of _function.json_ in the Azure portal, from the Home page, select your function app, and in the right pane, select **JSON View**. The Resource JSON view displays the Resourse ID and the editable JSON code. To close the JSON view, select the **X** in to top right corner of the pane.
 
 ## Create a function in the Azure portal
 
@@ -101,11 +101,11 @@ You can start a function by manually triggering the configured trigger. For inst
 
 ### Test in the Azure portal
 
-The portal also provides a convenient way to test your functions. As previously described, after selecting **Test/Run** from the top menu bar, on the right side of the code box, a tabbed **Input/Output** pane appears. Here, you can provide parameters to test the HTTP request. When you select **Run** in this pane, the results appear in the **Output** tab, along with a status code in the **Logs** pane.
+The portal also provides a convenient way to test your functions. As previously described, after selecting **Test/Run** from the top menu bar, on the right side of the code box, a tabbed *Test* pane appears. Here, you can provide parameters to test the HTTP request. When you select **Run** in this pane, the results appear in the **Output** tab, along with a status code in the **Logs** pane.
 
 ## Monitoring and Application Insights dashboard
 
-The ability to monitor your functions is critical during development and in production. The Azure portal provides a monitoring dashboard if you turn on the Application Insights integration. In the left menu pane of your function app, under **Monitoring**, select **Logs** and open **Application Insights**. This Application Insights dashboard provides a quick way to view the history of function executions, and displays the timestamp, result code, duration, and operation ID populated by Application Insights.
+The ability to monitor your functions is critical during development and in production. The Azure portal provides a monitoring dashboard if you turn on the Application Insights integration. In the left menu pane of your function app, under **Monitoring**, select **Logs**, and open **Application Insights**. This Application Insights dashboard provides a quick way to view the history of function executions, and displays the timestamp, result code, duration, and operation ID populated by Application Insights.
 
 :::image type="content" source="../media/4-monitor-function.png" alt-text="Screenshot showing the HTTP function Application Insights dashboard with several function results, their corresponding HTTP status codes, and the Monitoring menu item of the function highlighted." lightbox="../media/4-monitor-function.png#lightbox":::
 
