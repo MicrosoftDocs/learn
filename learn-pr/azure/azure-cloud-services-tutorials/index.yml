@@ -1,0 +1,53 @@
+### YamlMime:Module
+uid: learn.azure.azure-speech-services-tutorials-mrtk
+metadata:
+  title: Azure Speech Services Tutorials
+  description: This course explores the use of azure speech services by integrating to a hololens2 application. You can also deploy your project to a HoloLens.
+  ms.date: 06/23/2021
+  author: "varunsiddaraju"
+  ms.author: "v-hferrone"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+title: Set up a mixed reality project in Unity with the Mixed Reality Toolkit
+summary: Import and learn about Azure Speech Services to enhance your learning experience.
+abstract: |
+  By the end of this module you will be able to:
+  - You would have implemented speech recognition powered by Azure.
+  - Implemented speech commands powered by Azure.Implemented speech commands powered by Azure.
+  - Our project can now successfully translate the words you speak into several different languages.
+  - Our project now have AI-powered speech commands, allowing our application to recognize the users' intent even if they do not utter precise commands.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- windows
+- windows-mixed-reality
+- mrtk
+- hololens
+prerequisites: |
+  - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/install-the-tools)
+  - Windows 10 SDK 10.0.18362.0 or later
+  - A HoloLens 2 device configured for development
+  - Unity Hub with Unity 2020.3.X/2019.4.X installed and the Universal Windows Platform Build Support module added
+  - [Set up a mixed reality project in Unity module](/learn/modules/mixed-reality-toolkit-project-unity)
+  - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
+  - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
+
+
+
+- learn.azure.azure-speech-services-tutorials-mrtk.1-introduction
+- learn.azure.azure-speech-services-tutorials-mrtk.2-integrating-and-using-speech-recognition-and-transcription
+- learn.azure.azure-speech-services-tutorials-mrtk.3-exercise-integrating-and-using-speech-recognition-and-transcription
+- learn.azure.azure-speech-services-tutorials-mrtk.4-adding-an-offline-mode-for-local-speech-to-text-translation
+- learn.azure.azure-speech-services-tutorials-mrtk.5-exercise-adding-an-offline-mode-for-local-speech-to-text-translation
+- learn.azure.azure-speech-services-tutorials-mrtk.6-adding-the-azure-cognitive-services-speech-translation-component
+- learn.azure.azure-speech-services-tutorials-mrtk.7-exercise-adding-the-azure-cognitive-services-speech-translation-component
+- learn.azure.azure-speech-services-tutorials-mrtk.8-setting-up-intent-and-natural-language-understanding
+- learn.azure.azure-speech-services-tutorials-mrtk.9-exercise-setting-up-intent-and-natural-language-understanding
+- learn.azure.azure-speech-services-tutorials-mrtk.10-knowledge-check
+- learn.azure.azure-speech-services-tutorials-mrtk.11-summary
+
+badge:
+  uid: learn.azure.azure-speech-services-tutorials-mrtk.badge

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-cloud-services-mrtk.13-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary of azure cloud services
+  ms.date: 06/23/2021
+  author: "varunsiddaraju"
+  ms.author: "v-hferrone"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 1
+content: |
+  [!include[](includes/13-summary.md)]

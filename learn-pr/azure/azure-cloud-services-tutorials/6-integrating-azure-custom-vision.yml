@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-cloud-services-mrtk.6-integrating-azure-custom-vision
+title: Integrating azure custom vision
+metadata:
+  title: Integrating azure custom vision
+  description: Description to Integrating azure custom vision
+  ms.date: 06/23/2021
+  author: "varunsiddaraju"
+  ms.author: "v-hferrone"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-integrating-azure-custom-vision.md)]

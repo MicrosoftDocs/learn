@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-cloud-services-mrtk.11-exercise-integrating-azure-bot-service
+title: Exercise Integrating azure bot service
+metadata:
+  title: Exercise Integrating azure bot service
+  description: Exercise on Integrating azure bot service
+  ms.date: 06/23/2021
+  author: "varunsiddaraju"
+  ms.author: "v-hferrone"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 1
+content: |
+  [!include[](includes/11-exercise-integrating-azure-bot-service.md)]

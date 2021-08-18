@@ -1,0 +1,59 @@
+### YamlMime:Module
+uid: learn.azure.azure-cloud-services-mrtk
+metadata:
+  title: Azure Cloud Services Tutorials
+  description: This course explores the use of azure cloud services by integrating to a hololens2 application. You can also deploy your project to a HoloLens.
+  ms.date: 06/23/2021
+  author: "varunsiddaraju"
+  ms.author: "v-hferrone"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+title: Set up a mixed reality project in Unity with the Mixed Reality Toolkit
+summary: Import and learn about Azure Cloud Services to enhance your learning experience.
+abstract: |
+  By the end of this module you will be able to:
+  - You would have implemented cloud services p About the features you will implement and how **Azure Cloud** services tie in to making your *HoloLens 2* application happen. You added the required components into the project and prepared the scene for this module series.
+  - How Azure storage services can be used to persist unstructured data, like in our case **Tracked Objects** and binaries in form of thumbnail images for the **HoloLens 2** demo application on the cloud.
+  -  How Azure Custom Vision can be used to train images and use the classification service to detect images that match the associated **Tracked Object**.
+  - How Azure Spatial Anchors could save and retrieve the object location on Hololense 2.
+  -How **Azure Cloud services** brought new and exciting features to your application.
+You can now store data and images in the cloud with **Azure Storage**, use **Azure Custom Vision** to associate images and train a model, bring objects to a local context with **Azure Spatial Anchors**, and implement **Azure Bot Framework powered by LUIS** to add a conversational bot for a new and natural interaction pattern.
+  
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- windows
+- windows-mixed-reality
+- mrtk
+- hololens
+prerequisites: |
+  - A Windows 10 PC configured with the correct [tools installed](../../install-the-tools.md)
+  - Windows 10 SDK 10.0.18362.0 or later
+  - Some basic C# programming ability
+  - A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
+  - A connected webcam if you like to test from Unity editor
+  - <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019 LTS installed and the Universal Windows Platform Build Support module added
+
+
+
+- learn.azure.azure-cloud-services-mrtk.0-Overview
+- learn.azure.azure-cloud-services-mrtk.1-introduction
+- learn.azure.azure-cloud-services-mrtk.2-azure-cloud-services-for-holoLens 2
+- learn.azure.azure-cloud-services-mrtk.3-exercise-azure-cloud-services-for-holoLens 2
+- learn.azure.azure-cloud-services-mrtk.4-integrating-azure-storage
+- learn.azure.azure-cloud-services-mrtk.5-exercise-integrating-azure-storage
+- learn.azure.azure-cloud-services-mrtk.6-integrating-azure-custom-vision
+- learn.azure.azure-cloud-services-mrtk.7-exercise-integrating-azure-custom-vision
+- learn.azure.azure-cloud-services-mrtk.8-integrating-azure-spatial-anchors
+- learn.azure.azure-cloud-services-mrtk.9-exercise-integrating-azure-spatial-anchors
+- learn.azure.azure-cloud-services-mrtk.10-integrating-azure-bot-service
+- learn.azure.azure-cloud-services-mrtk.11-exercise-integrating-azure-bot-service
+- learn.azure.azure-cloud-services-mrtk.12-knowledge-check
+- learn.azure.azure-cloud-services-mrtk.13-summary
+- learn.azure.azure-cloud-services-mrtk.
+
+badge:
+  uid: learn.azure.azure-cloud-services-mrtk.badge
