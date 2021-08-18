@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.altair-azure-sphere-secure-emulator
 metadata:
-  title: do
-  description: do.
-  ms.date: 8/10/2021
-  author: dglover
+  title: Title
+  description: Description.
+  ms.date: 08/18/2021
+  author: gloveboxes
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-title: do
-summary: do.
+title: Title
+summary: Description.
 abstract:  |
   In this module, you will:
-  - do
+  - One, etc.
 prerequisites: |
-  A basic knowledge of do
+  A basic knowledge of  . . . or None
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -23,7 +23,8 @@ roles:
 - student
 products:
 - azure
-- github
+- azure-iot-central
+- azure-sphere
 units:
 - learn.student-evangelism.altair-azure-sphere-secure-emulator.introduction
 - learn.student-evangelism.altair-azure-sphere-secure-emulator.declare-connection-endpoints

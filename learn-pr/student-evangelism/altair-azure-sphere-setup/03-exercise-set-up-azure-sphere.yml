@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-setup.exercise-setup-azure-sphere
-title: Exercise - How to set up Azure Sphere
+title: Exercise - Set up Azure Sphere
 metadata:
-  title: Exercise - How to set up Azure Sphere
-  description: In this section, we learn how to set up Azure Sphere.
+  title: Exercise - Set up Azure Sphere
+  description: In this exercise, you'll set up Azure Sphere.
   ms.date: 8/10/2021
   author: dglover
   ms.author: dglover

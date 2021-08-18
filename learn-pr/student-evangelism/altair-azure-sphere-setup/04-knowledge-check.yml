@@ -3,7 +3,7 @@ uid: learn.student-evangelism.altair-azure-sphere-setup.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: In this section, you answer questions to validate that you've understood the learning objectives.
+  description: Check your knowledge.
   ms.date: 8/10/2021
   author: dglover
   ms.author: dglover
@@ -15,24 +15,24 @@ quiz:
   questions:
   - content: "Which of the following hardware is required to run the Altair 8800 emulator on Azure Sphere?"
     choices:
-    - content: "You can run the emulator with on a standalone Azure Sphere developer board from Avnet or Seeed Studio?"
+    - content: "You can run the emulator on a standalone Azure Sphere developer board from Avnet or Seeed Studio."
       isCorrect: true
-      explanation: "This is correct, this is the minimum requirement. The MikroE click panels and the Altair front panel provides a more authentic Altair experience you can do everything you want with a standalone Azure Sphere."
-    - content: "The Altair MikroE clicks or the MikroE Altair 8800 Retro Click"
+      explanation: "This is correct, and it's the minimum requirement. The MikroE click panels and the Altair front panel provides a more authentic Altair experience. You can do everything you want with a standalone Azure Sphere."
+    - content: "The Altair MikroE clicks or the MikroE Altair 8800 Retro Click."
       isCorrect: false
       explanation: "The MikroE clicks provide an easy way to mimic the Altair front panel and provide better visual clues as to what the Altair is doing. However, they are not a requirement, you can run the Altair emulator on a standalone Azure Sphere."
-    - content: "The Altair 8800 Front Panel"
+    - content: "The Altair 8800 Front Panel."
       isCorrect: false
       explanation: "The Altair 8800 front panel provides an authentic Altair experience. The hardware design is provided, but you must be willing to build the front panel yourself.  You can run the Altair emulator on a standalone Azure Sphere."
-  - content: "What software do you need to install onto your computer?"
+  - content: "What software do you need to install on your computer?"
     choices:
-    - content: "You must install Visual Studio 2019"
+    - content: "You must install Visual Studio 2019."
       isCorrect: false
       explanation: "On Windows and Linux, you can use Visual Studio Code. On Windows, you can also use Visual Studio 2019. "
     - content: "You need to install Visual Studio Code, CMake, Ninja, and the Azure Sphere SDK."
       isCorrect: true
       explanation: "Correct, for Windows users, you can also install Visual Studio 2019 which includes CMake and Ninja."
-    - content: "Windows 10, Linux or macOS"
+    - content: "Windows 10, Linux, or macOS."
       isCorrect: false
       explanation: "Azure Sphere development is only supported on Windows 10 and Linux. "
   - content: "How can you run real-time applications on an Azure Sphere?"

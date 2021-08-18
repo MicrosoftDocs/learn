@@ -3,18 +3,18 @@ uid: learn.altair-azure-sphere-computing-fundamentals
 metadata:
   title: Altair 8800 and Azure Sphere computing fundamentals 
   description: Learn computing fundamentals with Altair 8800 and Azure Sphere.
-  ms.date: 08/16/2021
+  ms.date: 08/18/2021
   author: gloveboxes
-  ms.author: chnoring
+  ms.author: dglover
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-azure-iot-central
 title: Altair 8800 and Azure Sphere computing fundamentals
 summary: |
   In this learning path, you'll learn how to .
   
   By the end of this learning path, you will be able to: 
-   - 
-prerequisites: None
+   - One, and so on 
+prerequisites: None or  . . .
 iconUrl: /learn/achievements/student-evangelism/altair-azure-sphere-computing-fundamentals.svg
 levels:
 - beginner
@@ -23,6 +23,8 @@ roles:
 - developer
 products:
 - azure
+- azure-iot-central
+- azure-sphere
 modules:
 - learn.student-evangelism.altair-azure-sphere-introduction
 - learn.student-evangelism.altair-azure-sphere-setup

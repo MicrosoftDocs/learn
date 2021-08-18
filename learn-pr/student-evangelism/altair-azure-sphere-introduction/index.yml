@@ -1,22 +1,20 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.altair-azure-sphere-introduction
 metadata:
-  title: Introduction to the Altair 8880 and Azure Sphere
-  description: Get an introduction to the Altair 8880, Azure Sphere, and the cloud-enabled Altair emulator.
-  ms.date: 8/10/2021
-  author: dglover
+  title: Title
+  description: Description.
+  ms.date: 08/18/2021
+  author: gloveboxes
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-title: Introduction to the Altair 8880 and Azure Sphere
-summary: Get an introduction to the Altair 8880, Azure Sphere, and the cloud-enabled Altair emulator.
+title: Title
+summary: Description.
 abstract:  |
   In this module, you will:
-  - One
-  - Two
-  - Three
+  - One, etc.
 prerequisites: |
-  A basic knowledge of X or a list of items.
+  A basic knowledge of  . . . or None
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -25,7 +23,8 @@ roles:
 - student
 products:
 - azure
-- github
+- azure-iot-central
+- azure-sphere
 units:
 - learn.student-evangelism.altair-azure-sphere-introduction.introduction
 - learn.student-evangelism.altair-azure-sphere-introduction.knowledge-check
