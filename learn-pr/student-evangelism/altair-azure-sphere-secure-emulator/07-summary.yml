@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.cloud-connected-altair-on-azure-sphere.summary
+uid: learn.student-evangelism.altair-azure-sphere-secure-emulator.summary
 title: Summary
 metadata:
   title: Summary
-  description: In this section, we summaries how the Altair emulator on Azure Sphere works and the solution architecture. 
+  description: In this section, we summaries the Altair emulator and Azure Sphere security. 
   ms.date: 8/10/2021
   author: dglover
   ms.author: dglover

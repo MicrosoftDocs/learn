@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-create-iot-central-application.set-up
+title: How to create an IoT Central application
+metadata:
+  title: How to create an IoT Central application
+  description: In this section, we will learn how to create the Altair IoT Central application.
+  ms.date: 8/10/2021
+  author: dglover
+  ms.author: dglover
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+durationInMinutes: 4 # dummy number at present
+content: |
+  [!include[](includes/02-set-up.md)]

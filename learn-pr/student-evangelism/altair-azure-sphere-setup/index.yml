@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.student-evangelism.altair-azure-sphere-setup
+metadata:
+  title: do
+  description: do.
+  ms.date: 8/10/2021
+  author: dglover
+  ms.author: dglover
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+title: do
+summary: do.
+abstract:  |
+  In this module, you will:
+  - do
+prerequisites: |
+  A basic knowledge of do
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+- github
+units:
+- learn.student-evangelism.altair-azure-sphere-setup.introduction
+- learn.student-evangelism.altair-azure-sphere-setup.azure-sphere-setup
+- learn.student-evangelism.altair-azure-sphere-setup.exercise-set-up-azure-sphere
+- learn.student-evangelism.altair-azure-sphere-setup.knowledge-check
+- learn.student-evangelism.altair-azure-sphere-setup.summary
+badge:
+  uid: learn.student-evangelism.altair-azure-sphere-setup.badge

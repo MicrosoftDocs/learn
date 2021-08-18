@@ -25,7 +25,7 @@ products:
 - azure
 modules:
 - learn.student-evangelism.altair-azure-sphere-introduction
-- learn.student-evangelism.altair-azure-sphere-set-up
+- learn.student-evangelism.altair-azure-sphere-setup
 - learn.student-evangelism.altair-azure-sphere-create-iot-central-application
 - learn.student-evangelism.altair-azure-sphere-secure-emulator
 - learn.student-evangelism.altair-azure-sphere-deploy-emulator

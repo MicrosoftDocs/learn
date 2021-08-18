@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.learn.cloud-connected-altair-on-azure-sphere.knowledge-check
+uid: learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -13,47 +13,37 @@ durationInMinutes: 3 # dummy number at present
 content: |
 quiz:
   questions:
-  - content: "In the Azure Sphere ecosystem, which component is missing from the following list: Azure Sphere SDK, Azure Sphere tenant, Azure Sphere OS?"
+  - content: "The advantage of running a private MQTT broker include?"
     choices:
-    - content: "Azure Sphere API"
+    - content: "It’s much simpler than using the public test.mosquitto.org public broker."
       isCorrect: false
-      explanation: "Azure Sphere API isn't a component of the Azure Sphere ecosystem."
-    - content: "Azure Sphere Security Service"
+      explanation: "Setting up a MQTT broker is more complex than using the public broker, but a private MQTT broker is secure and performance is more predictable."
+    - content: "It is secure, private, and performance is predicable. The virtual disk server performs faster when running on the same server as the MQTT broker."
       isCorrect: true
-      explanation: "Azure Sphere Security Service is a key component of the Azure Sphere ecosystem."
-    - content: "Azure Sphere Security Key"
+      explanation: "The Altair emulator including the virtual disk server will perform better when connected to a private MQTT broker."
+    - content: "The private MQTT broker is not security."
       isCorrect: false
-      explanation: "Azure Sphere Security Key isn't a component of the Azure Sphere ecosystem."
-  - content: "Your organization created an Azure Sphere tenant and then claims each of its devices into that tenant. What function does this accomplish?"
+      explanation: "You use self signed certificates to secure the MQTT broker and all MQTT messages between the Altair emulator are encrypted and private."
+  - content: "The advantage of installing the virtual disk server on the same server as the MQTT broker is?"
     choices:
-    - content: "So that you can manage those devices remotely and securely."
+    - content: "The Altair virtual disk drive B: will be faster as there is one less network hop for each disk sector to be read or written."
       isCorrect: true
-      explanation: "The tenant allows you to manage devices remotely and securely."
-    - content: "The tenant allows devices to communicate better with other tenants."
+      explanation: "The Altair virtual disk drive B: will be faster as there is one less network hop for each disk sector to be read or written."
+    - content: "The virtual disk server cannot be run on the same server as the MQTT broker.
       isCorrect: false
-      explanation: "The tenant doesn't enable communication between other tenants."
-    - content: "Your organization can name individual devices."
+      explanation: "The virtual disk server can be run on the same server as the MQTT broker. The Altair virtual disk drive B: will be faster as there is one less network hop for each disk sector to be read or written."
+    - content: "The virtual disk server runs on one of the Azure Sphere’s real-time cores."
       isCorrect: false
-      explanation: "The tenant doesn't enable naming of devices."
-  - content: "If the Azure Sphere Security Service were missing, what function could you not perform?"
+      explanation: "The virtual server disk cache runs on one of the Azure Sphere’s real-time cores. The virtual disk server can be run on the same server as the MQTT broker. The Altair virtual disk drive B: will be faster as there is one less network hop for each disk sector to be read or written."
+  - content: "What best describes the virtual disk server?"
     choices:
-    - content: "You can't receive alerts for anomalies."
-      isCorrect: false
-      explanation: "Lack of the security service updates isn't directly connected to anomaly alerts."
-    - content: "You can't maintain the operating system security."
-      isCorrect: false
-      explanation: "The primary impact isn't on operating system security."
-    - content: "You can't get the latest security updates to the Azure Sphere devices."
+    - content: "The virtual disk server extends the Altair emulator by providing read/write disk support for your applications running on CP/M."
       isCorrect: true
-      explanation: "You can't get the latest security updates to the Azure Sphere devices."
-  - content: "How can you run real-time applications on an Azure Sphere?"
-    choices:
-    - content: "You can't run real-time applications on an Azure Sphere."
+      explanation: "When the virtual disk server is running and it will provide a virtual disk that is accessible as drive B: from CP/Mon the Altair emulator. The virtual disk cache running on one of the Azure Sphere real-time cores will significantly import the performance of the virtual disk server."
+    - content: "The virtual disk server can only be run on your desktop."
       isCorrect: false
-      explanation: "You can run real-time applications on the Azure Sphere Cortex-M4 cores."
-    - content: "You can run real-time applications on the Azure Sphere Cortex-A7 Linux kernel core"
+      explanation: "The virtual disk server can run on your desktop or in a cloud based virtual machine. Ideally run the virtual disk server and the MQTT broker in the same machine."
+    - content: "The virtual disk server runs on the Azure Sphere to provide read/write storage for your CP/M applications."
       isCorrect: false
-      explanation: "You cannot run real-time applications on the Cortex-A7 core as the application has to compete for resources with other services running on the Linux kernel."
-    - content: "You can run real-time applications on the Azure Sphere Cortex-M4 cores."
-      isCorrect: true
-      explanation: "You can run bare-metal code, or real-time operating system such as Azure RTOS or FreeRTOS on the Azure Sphere Cortex-M4 cores."
+      explanation: "The virtual disk server runs on either your desktop or in a cloud based virtual machine."
+ 

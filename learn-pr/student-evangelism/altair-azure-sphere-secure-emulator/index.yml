@@ -1,32 +1,21 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.altair-azure-sphere-secure-emulator
 metadata:
-  title: Edit code through branching and merging in Git
-  description: Level up your Git knowledge by learning how to keep code separate in branches, and how to merge them later.
-  ms.date: 03/16/2021
-  author: softchris
-  ms.author: chnoring
+  title: do
+  description: do.
+  ms.date: 8/10/2021
+  author: dglover
+  ms.author: dglover
   ms.topic: interactive-tutorial
-  ms.prod: learning-git
-title: Edit code through branching and merging in Git
-summary: Level up your Git knowledge by learning how to keep code separate in branches, and how to merge them later.
+  ms.prod: learning-azure-iot-central
+title: do
+summary: do.
 abstract:  |
   In this module, you will:
-  - Learn how branches work in Git
-  - Create new branches and switch between branches
-  - Merge branches together
-  - Learn basic techniques for resolving merge conflicts
+  - do
 prerequisites: |
-  A basic knowledge of working with Git, including:
-  - Terms like <i>repository</i>, <i>working tree</i>, and <i>index</i>
-  - Creating repos
-  - Staging and committing changes
-  - Resetting and reverting from simple mistakes 
-  - Cloning repositories
-  - Pull requests
-  - Stashing changes
-  - Pushing changes and updating your repo by pulling
-iconUrl: /learn/achievements/student-evangelism/branch-merge-git-badge.svg
+  A basic knowledge of do
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
@@ -36,12 +25,12 @@ products:
 - azure
 - github
 units:
-- learn.student-evangelism.branch-merge-git.0-introduction
-- learn.student-evangelism.branch-merge-git.1-branch-and-merge
-- learn.student-evangelism.branch-merge-git.2-exercise-create-branch-alice
-- learn.student-evangelism.branch-merge-git.3-exercise-merge-bob
-- learn.student-evangelism.branch-merge-git.4-exercise-resolve-merge-conflicts
-- learn.student-evangelism.branch-merge-git.4a-knowledge-check
-- learn.student-evangelism.branch-merge-git.5-summary
+- learn.student-evangelism.altair-azure-sphere-secure-emulator.introduction
+- learn.student-evangelism.altair-azure-sphere-secure-emulator.declare-connection-endpoints
+- learn.student-evangelism.altair-azure-sphere-secure-emulator.exercise-get-connection-information
+- learn.student-evangelism.altair-azure-sphere-secure-emulator.create-certificates
+- learn.student-evangelism.altair-azure-sphere-secure-emulator.exercise-generate-certificates
+- learn.student-evangelism.altair-azure-sphere-secure-emulator.knowledge-check
+- learn.student-evangelism.altair-azure-sphere-secure-emulator.summary
 badge:
   uid: learn.student-evangelism.branch-merge-git.badge

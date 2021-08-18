@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-program-emulator.exercise-configure-front-panel
+title: Exercise - Understand how to program the Altair with the front panel
+metadata:
+  title: Exercise - Understand how to program the Altair with the front panel
+  description: In this section, we use the Altair front panel to program the Altair
+  ms.date: 8/10/2021
+  author: dglover
+  ms.author: dglover
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+durationInMinutes: 4 # dummy number at present
+content: |
+  [!include[](includes/07-exercise-configure-front-panel.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-setup.summary
+title: Summary
+metadata:
+  title: Summary
+  description: In this section, we summaries the hardware and software requirements for the Altair emulator on the Azure Sphere
+  ms.date: 8/10/2021
+  author: dglover
+  ms.author: dglover
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+durationInMinutes: 4 # dummy number at present
+content: |
+  [!include[](includes/05-summary.md)]

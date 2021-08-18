@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-secure-emulator.create-certificates
+title: How to create Mosquitto certificates
+metadata:
+  title: How to create Mosquitto certificates
+  description: In this section, we will learn how to create Mosquitto broker certificates.
+  ms.date: 8/10/2021
+  author: dglover
+  ms.author: dglover
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+durationInMinutes: 4 # dummy number at present
+content: |
+  [!include[](includes/04-create-certificates.md)]

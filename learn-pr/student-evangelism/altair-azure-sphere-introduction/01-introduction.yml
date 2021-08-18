@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.cloud-connected-altair-on-azure-sphere.introduction
+uid: learn.student-evangelism.altair-azure-sphere-introduction.introduction
 title: Introduction
 metadata:
   title: Introduction
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure-iot-central
 durationInMinutes: 4 # dummy number at present
 content: |
-  [!include[](includes/01-introduction.md)]
+  [!include[](includes/introduction.md)]
