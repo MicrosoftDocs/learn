@@ -77,13 +77,13 @@ If we use small data files on the local machine that we want to analyze with Azu
 We may also read data on cluster nodes using Spark APIs. 
 We can read data imported to DBFS into Apache Spark DataFrames. For example, if you import a CSV file, you can read the data using this code
 
-```sql
+```
 df = spark.read.csv('/FileStore/tables/nyc_taxi.csv', header="true", inferSchema="true")
 ```
 
 We can also read data imported to DBFS in programs running on the Spark driver node using local file APIs. For example:
 
-```sql
+```
 df = spark.read.csv('/dbfs/FileStore/tables/nyc_taxi.csv', header="true", inferSchema="true")
 ```
 
