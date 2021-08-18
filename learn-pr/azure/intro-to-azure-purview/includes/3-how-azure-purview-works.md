@@ -21,7 +21,7 @@ Each type of data source you choose, will require specific information to comple
 Each data source will have specific requirements for authenticating and configuration, to permit scanning of the assets in that data source. If you have data stored in an Amazon S3 standard bucket, you will need to provide configuration for the connection. For this service, use Purview to provide a Microsoft account with secure access to AWS, where the Purview scanner will run. The Purview scanner uses this access to your Amazon S3 buckets to read your data, and then reports the scanning results, including only the metadata and classification, back to Azure. Use the Purview classification and labeling reports to analyze and review your data scan results.
 
 > [!NOTE]
-> Check the [Azure Purview connector for Amazon S3 documentation](https://docs.microsoft.com/azure/purview/register-scan-amazon-s3) for region support related to AWS S3 sources.
+> Check the [Azure Purview connector for Amazon S3 documentation](/azure/purview/register-scan-amazon-s3) for region support related to AWS S3 sources.
 
 In Azure Purview, there are a few options to use for authentication when the service needs to scan data sources. Some of these options are:
 
