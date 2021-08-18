@@ -118,7 +118,7 @@ The MikroE Altair 8800 Retro Click (available soon) has two modes of operation, 
 
 In **Command Mode**, the buttons take on the role of the command switches on the Altair. In this mode you have access to CPU STOP, CPU RUN, SINGLE STEP, EXAMINE, EXAMINE NEXT, DEPOSIT, and DEPOSIT NEXT.
 
-![The illustration shows buttons for command mode.](../media/altair-retro-click-panel-command-mode.png)|
+![The illustration shows buttons for command mode.](../media/altair-retro-click-panel-command-mode.png)
 
 ### Input Mode
 
@@ -145,7 +145,7 @@ Follow along:
 1. Press button **8** to turn off the address just entered.
 1. Press buttons **7**, **6**, **1**, and **0** to set the Intel 8080 Jmp instruction
 
-![Image show the LEDS 7,6,1,0 set for Intel opcode jmp](../media/altair-intel-8080-jmp-opcode.png)
+![Image show the LEDS 7,6,1,0 set for Intel opcode jmp.](../media/altair-intel-8080-jmp-opcode.png)
 
 1. Press **Button B** on the Avnet Stater kit to switch to **Command** mode.
 1. Press **DEPOSIT** to deposit the first byte of the Jmp instruction at address 0x0100.
@@ -180,7 +180,7 @@ Single step: Address bus: 00000000 00000000 (0x0000), Data bus 11000011 (0xc3), 
 
 The Altair front panel board can be used with the Avnet Starter Kit and the Seeed Studio Reference Design Board.
 
-![Altair front panel](../media/altair-front-panel.png)
+![Altair front panel.](../media/altair-front-panel.png)
 
 ### Loading an Intel 8080 opcode using the Altair front panel
 

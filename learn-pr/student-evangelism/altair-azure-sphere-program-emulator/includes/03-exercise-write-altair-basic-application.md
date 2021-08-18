@@ -4,9 +4,9 @@ In this exercise, you will learn how to write your first Altair BASIC applicatio
 
 On startup, the Altair emulator will load the Altair BASIC and you will be prompted for the following information:
 
-1. **MEMORY SIZE?** If you plan to just run Altair BASIC then just press the Enter key. If you plan to boot into CP/M then enter 32000 followed by the Enter key.
-1. **TERMINAL  WIDTH?** Press the Enter key to accept the default.
-1. **WANT SIN-COS-TAN-ATN?** Y or N
+* **MEMORY SIZE?** If you plan to just run Altair BASIC then just press the Enter key. If you plan to boot into CP/M then enter 32000 followed by the Enter key.
+* **TERMINAL  WIDTH?** Press the Enter key to accept the default.
+* **WANT SIN-COS-TAN-ATN?** Y or N
 
 Altair BASIC will respond with the amount of memory and version information.
 

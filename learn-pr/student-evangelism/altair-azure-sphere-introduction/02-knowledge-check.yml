@@ -13,9 +13,9 @@ durationInMinutes: 3 # dummy number at present
 content: |
 quiz:
   questions:
-  - content: "What best describes Azure Sphere?"
+  - content: "What option best describes Azure Sphere?"
     choices:
-    - content: "The Azure Sphere developer board and microcontroller used for the Altair project."
+    - content: "The Azure Sphere consists of a developer board and microcontroller that are used for the Altair project."
       isCorrect: false
       explanation: "Azure Sphere is made up of a secure chip, a secure operating system, and a security service that together implement the 7 properties of secure devices."
     - content: "The combination of a certified microcontroller, a secure operating system, and security service."

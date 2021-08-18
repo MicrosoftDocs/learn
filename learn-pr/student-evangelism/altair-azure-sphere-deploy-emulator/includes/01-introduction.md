@@ -6,13 +6,13 @@ The Azure Sphere microcontroller unit (MCU) has three developer-accessible cores
 
 High-level applications running on the Cortex-A7 Linux kernel are used for less timing-sensitive tasks such as establishing network connections, negotiating security, updating device state, communicating with real-time core applications, and sending telemetry messages to cloud gateways such as IoT Hub and IoT Central.
 
-![Azure Sphere architecture](../media/azure-sphere-architecture.png)
+![Azure Sphere architecture.](../media/azure-sphere-architecture.png)
 
 ## The Altair emulator application architecture
 
 The Altair emulator consists of three applications, one high-level application, and two real-time applications.
 
-![Altair on Azure Sphere application architecture](../media/azure-sphere-app-architecture.png)
+![Altair on Azure Sphere application architecture.](../media/azure-sphere-app-architecture.png)
 
 1. The **AltairHL_emulator** high-level application is responsible for running the Altair emulator and managing communications.
 
@@ -37,3 +37,9 @@ The IoT Plug and Play model used by this learning module is declared in main.c.
 ```
 
 IoT Central is an IoT Plug and Play enabled application. When your device first connects to IoT Central, the IoT Plug and Play Model ID is passed to IoT Central. IoT Central then retrieves the IoT Plug and Play model from the public repository of IoT Plug and Play models and creates a device template and default views. -->
+
+In this module, you'll learn how to:
+
+## Prerequisites
+
+Add a list or write None.

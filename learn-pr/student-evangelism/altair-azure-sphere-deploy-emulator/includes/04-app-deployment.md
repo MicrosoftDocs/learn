@@ -1,6 +1,6 @@
 In this unit, you will learn about the virtual disk sector cache-aside server.
 
-## Understanding the virtual disk Cache-Aside server
+## Understand the virtual disk Cache-Aside server
 
 The cloud-enabled Altair on Azure Sphere project redirects disk read and write requests for drive B: over [MQTT](https://en.wikipedia.org/wiki/MQTT?azure-portal=true) to a cloud-based Python virtual disk server.
 
@@ -18,9 +18,6 @@ Disk writes work as follows:
 1. The Altair emulator disk driver sends the disk sector to the cache manager.
 1. The disk sector is then sent to the cloud-based virtual disk manager.
 
-> [!div class="mx-imgBorder"]
-> ![The illustration shows the architecture of the real-time disk cache server.](../media/altair-on-azure-sphere-disk-cache-server.png)
-
-<!-- :::image type="content" source="../media/altair-on-azure-sphere-disk-cache-server.png" alt-text="The illustration shows the architecture of the real-time disk cache server."::: -->
+:::image type="content" source="../media/altair-on-azure-sphere-disk-cache-server.png" alt-text="The illustration shows the architecture of the real-time disk cache server.":::
 
 In the following exercise, you will deploy the disk sector cache manager and the environment monitor real-time applications along with the Python-based Virtual Disk Server.

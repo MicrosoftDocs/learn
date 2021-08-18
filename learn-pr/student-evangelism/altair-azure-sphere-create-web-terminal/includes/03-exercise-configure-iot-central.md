@@ -6,7 +6,7 @@ In this exercise, you will configure your Altair IoT Central application.
 
     The device name is your Azure Sphere Device ID. You can display your Device ID by running the following command from the Windows **PowerShell command line** or Linux **Terminal**.
 
-   ```
+   ```azsphere
    azsphere device show-attached
    ```
 
@@ -29,10 +29,7 @@ From the Device menu bar, select **Edit template**.
 
 1. Select **Customize**, and expand the **Desired temperature** property. Update the property using the information from the table below and click **Save**.
 
-    > [!div class="mx-imgBorder"]
-    > ![The illustration shows how to customize a device template.](../media/iot-central-template-customise.png)
-
-    <!-- :::image type="content" source="../media/iot-central-template-customise.png" alt-text="The illustration shows how to customize a device template."::: -->
+     :::image type="content" source="../media/iot-central-template-customize.png" alt-text="The illustration shows how to customize a device template.":::
 
     | Display name     | Initial value      | Min value | Max value | True name | False name |
     |----------------|---------------|----------------|---------------|----------------|---------------|
@@ -47,18 +44,12 @@ From the Device menu bar, select **Edit template**.
 
 1. Click **Views** and select **Editing device and cloud data**.
 
-    > [!div class="mx-imgBorder"]
-    > ![The illustration shows how to select edit and cloud data.](../media/iot-central-view-properties-create.png)
-
-    <!-- :::image type="content" source="../media/iot-central-view-properties-create.png" alt-text="The illustration shows how to customize a device template."::: -->
+     :::image type="content" source="../media/iot-central-view-properties-create.png" alt-text="The illustration shows how to customize a device template.":::
 
 1. Name the properties form **Properties**.
 1. Expand **Properties**
 
-    > [!div class="mx-imgBorder"]
-    > ![The illustration shows how to expand properties.](../media/iot-central-template-properties-properties.png)
-
-    <!-- :::image type="content" source="../media/iot-central-template-properties-properties.png" alt-text="The illustration shows how to customize a device template."::: -->
+     :::image type="content" source="../media/iot-central-template-properties-properties.png" alt-text="The illustration shows how to customize a device template.":::
 
 1. Select the following properties.
     * Channel ID
@@ -69,17 +60,14 @@ From the Device menu bar, select **Edit template**.
 1. Click **Add section**
 1. Click **Save**
 
-    > [!div class="mx-imgBorder"]
-    > ![The illustration shows how to save a device template.](../media/iot-central-template-properties.png)
-
-    <!-- :::image type="content" source="../media/iot-central-template-properties.png" alt-text="The illustration shows how to customize a device template."::: -->
+     :::image type="content" source="../media/iot-central-template-properties.png" alt-text="The illustration shows how to customize a device template":::
 
 ### Add an Environment data visualization view
 
 1. Click **Views** and select **Visualizing the device**.
 
     > [!div class="mx-imgBorder"]
-    > ![The illustration shows how to select visualizing the device.](../media/iot-central-visualise-create.png)
+    > ![The illustration shows how to select visualizing the device.](../media/iot-central-visualize-create.png)
 
 1. Name the view **Environment**.
 1. From the **Start with a visual** list, select **Line chart**, scroll to the end of the list, and select **Add tile**.
@@ -88,7 +76,7 @@ From the Device menu bar, select **Edit template**.
 1. From the capability list, select **Temperature**.
 
     > [!div class="mx-imgBorder"]
-    > ![The illustration shows how to expand properties.](../media/iot-central-visualise-tile-capabiities.png)
+    > ![The illustration shows how to expand properties.](../media/iot-central-visualize-tile-capabilities.png)
 
 1. Click **Update**.
 1. Click **Save**.
@@ -97,10 +85,7 @@ From the Device menu bar, select **Edit template**.
 
 1. Finally, click **Publish** to publish the template into the IoT Central application.
 
-    > [!div class="mx-imgBorder"]
-    > ![The illustration shows how to publish a device template.](../media/iot-central-template-publish.png)
-
-    <!-- :::image type="content" source="../media/iot-central-template-publish.png" alt-text="The illustration shows how to customize a device template."::: -->
+    :::image type="content" source="../media/iot-central-template-publish.png" alt-text="The illustration shows how to customize a device template.":::
 
 ## View your Altair on Azure Sphere device
 
@@ -108,10 +93,7 @@ From the Device menu bar, select **Edit template**.
 
 1. Navigate the tabs to explore the device views.
 
-    > [!div class="mx-imgBorder"]
-    > ![The illustration shows the device tabs.](../media/iot-central-device-tabs.png)
-
-    <!-- :::image type="content" source="../media/iot-central-device-tabs.png" alt-text="The illustration shows how to display measurements."::: -->
+    :::image type="content" source="../media/iot-central-device-tabs.png" alt-text="The illustration shows how to display measurements.":::
 
 ## Update the Device properties tab
 

@@ -13,7 +13,7 @@ Either an Avnet or Seeed Studio Azure Sphere.
 
 | Seeed Studio Azure Sphere Developer Kit     | Avnet Azure Sphere Starter Kit Rev 1     |
 |----------------|---------------|
-| ![Seeed Studio Azure Sphere](../media/seeed-studio-azure-sphere-rdb.jpg) | ![Avnet Azure Sphere](../media/avnet-azure-sphere.jpg) |
+| ![Seeed Studio Azure Sphere](../media/seeed-studio-azure-sphere-rdb.png) | ![Avnet Azure Sphere](../media/avnet-azure-sphere.png) |
 
 ### Avnet Azure Sphere plus MikroE 4x4 key and 8x8 LED Clicks
 
@@ -21,21 +21,21 @@ An Avnet Azure Sphere Starter Kit Rev 1 with the MikroE 4x4 key click and 8x8 R 
 
 > IMPORTANT: This Click board configuration is only compatible with the Avnet Azure Sphere V1 board. The Click board solution for Avnet Azure Sphere Starter Kits Rev 1 and Rev 2 will be available shortly.
 
-![Avnet Azure Sphere with MikroE Click panel ](../media/altair-8800-with-4x4-8x8-clicks.png)
+![Avnet Azure Sphere with MikroE Click panel.](../media/altair-8800-with-4x4-8x8-clicks.png)
 
 ### Avnet Azure Sphere plus MikroE Altair 8800 Retro Click
 
 An Avnet Azure Sphere Starter Kit Rev 1 and Rev 2 with the MikroE Altair 8800 Retro Click (**Available soon**).
 
-![Avnet Azure Sphere plus MikroE Click panel ](../media/altair-8800-retro-click.png)
+![Avnet Azure Sphere plus MikroE Click panel.](../media/altair-8800-retro-click.png)
 
 ### Altair front panel
 
 The Seeed Studio or Avnet with the Altair Front Panel. See the Front Panel wiring section in the appendix.
 
-![Avnet Azure Sphere with the Altair front panel](../media/avnet-with-front-panel.png)
+![Avnet Azure Sphere with the Altair front panel.](../media/avnet-with-front-panel.png)
 
-![Seeed Studio Azure Sphere with the Altair front panel](../media/altair-front-panel.png)
+![Seeed Studio Azure Sphere with the Altair front panel.](../media/altair-front-panel.png)
 
 #### Front panel wiring
 
@@ -79,5 +79,11 @@ There are five components to the cloud-enabled Altair on Azure Sphere solution. 
 3. The Web Terminal Azure Static Website.
 4. The Virtual disk server.
 5. And optionally, a private MQTT Broker.
+
+In this module, you'll learn how to:
+
+## Prerequisites
+
+Add a list or write None.
 
 In the next unit you will learn about the software you need to install on your computer to build and deploy the Altair 8800 emulator to you Azure Sphere.

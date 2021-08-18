@@ -80,13 +80,13 @@ A>
 
 ## A bit about CP/M
 
-This is a quick introduction to CP/M from the [CP/M Wikipedia article](https://en.wikipedia.org/wiki/CP/M).
+This is a quick introduction to CP/M from the [CP/M Wikipedia article](https://en.wikipedia.org/wiki/CP/M?azure-portal=true).
 
 CP/M, originally standing for Control Program/Monitor and later Control Program for Microcomputers, is a mass-market operating system created in 1974 for Intel 8080/85-based microcomputers by Gary Kildall of Digital Research, Inc. Initially confined to single-tasking on 8-bit processors and no more than 64 kilobytes of memory, later versions of CP/M added multi-user variations and were migrated to 16-bit processors.
 
 ### CP/M Reference Manual
 
-[CP/M Reference Manual](http://www.cpm.z80.de/manuals/cpm22-m.pdf)
+[CP/M Reference Manual](http://www.cpm.z80.de/manuals/cpm22-m.pdf?azure-portal=true)
 
 ## Microsoft BASIC 80
 

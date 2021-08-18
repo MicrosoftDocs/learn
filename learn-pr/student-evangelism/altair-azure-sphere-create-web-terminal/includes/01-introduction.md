@@ -1,6 +1,6 @@
 In this module, you will learn how how to configure IoT Central, create the Altair Web Terminal and run the Altair virtual disk server.
 
-## Configuring IoT Central
+## Configure IoT Central
 
 Your Altair IoT Central application requires customization to support the Altair project. IoT Central is used to set parameters and chart data for the Altair emulator. In this module you will create IoT Central views that you will later use to control and chart data from the Altair emulator.
 
@@ -14,7 +14,7 @@ From IoT Central you will also be able to monitor the current state of the Altai
 > [!div class="mx-imgBorder"]
 > ![The illustration shows the IoT Central about view of the Altair emulator.](../media/iot-central-view-about.png)
 
-## Creating the Altair Web Terminal
+## Create the Altair Web Terminal
 
 The Altair emulator redirects keyboard and terminal messages over MQTT, via an MQTT broker, the MQTT enables web terminal. The main way you will interact with the Altair emulator running on the Azure Sphere is via the Altair Web Terminal. The Altair Web Terminal is a Azure Static Web application. In this module you will create the Static Web application.
 
@@ -25,7 +25,7 @@ The following image shows connecting to the Altair emulator from a web browser.
 > [!div class="mx-imgBorder"]
 > ![The illustration shows the Altair web terminal connecting to the Altair emulator.](../media/web-terminal-connect.png)
 
-## Running the Altair virtual disk server
+## Run the Altair virtual disk server
 
 The Azure Sphere does not have enough onboard read/write storage for you to save any applications you write. To provide read/write permanent storage for you applications you will run a virtual disk server. You have access to the read/write storage when running CP/M where the storage is accessed as drive B: on the Altair emulator. The virtual disk server can run on your desktop or in a cloud-based Azure Virtual Machine.
 
@@ -46,4 +46,8 @@ Disk writes work as follows:
 1. The Altair emulator disk driver sends the disk sector to the cache manager.
 1. The disk sector is then sent to the cloud-based virtual disk manager.
 
-In the next unit, you will learn how to configure the Altair IoT Central application.
+In this module, you'll learn how to:
+
+## Prerequisites
+
+Add a list or write None.

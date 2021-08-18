@@ -45,12 +45,12 @@ The MQTT Broker configuration is prepopulated for the **test.mosquitto.org** pub
 
 You need to configure the IoT Central settings using the IoT Central API Token and URL that you saved to notepad.
 
-1. Update the **IOT_CENTRAL_API_TOKEN** and **IOT_CENTRAL_URL** property values.
+* Update the **IOT_CENTRAL_API_TOKEN** and **IOT_CENTRAL_URL** property values.
 
 When completed, your **local.settings.json** file will look similar to the following.
 
 > [!div class="mx-imgBorder"]
-> ![The illustration shows an example of your local.settings.json file.](../media/local_settings_json.png)
+> ![The illustration shows an example of your local.settings.json file.](../media/local-settings-json.png)
 
 ## Upload the Altair Web Terminal local settings
 
@@ -70,13 +70,13 @@ The Altair Web Terminal is secure and requires authenticated users so you need t
 1. Select **All resources**.
 
 > [!div class="mx-imgBorder"]
-> ![The illustration shows how to select the all resources Azure Portal blade.](../media/azure_portal_all_resources.png)
+> ![The illustration shows how to select the all resources Azure portal blade.](../media/azure-portal-all-resources.png)
 
-1. Filter resources by name. Type **AltairWebTerminal** in the filter dialogue box.
+1. Filter resources by name. Type **AltairWebTerminal** in the filter dialog box.
 1. Click on the **AltairWebTerminal** Static Web App.
 
 > [!div class="mx-imgBorder"]
-> ![The illustration shows how to select the AltairWebTerminal Static Web App.](../media/static_web_app_select.png)
+> ![The illustration shows how to select the AltairWebTerminal Static Web App.](../media/static-web-app-select.png)
 
 1. Click **Role management**, followed by **Invite**.
 1. Select your **Authentication provider**.
@@ -94,7 +94,7 @@ The Altair Web Terminal is secure and requires authenticated users so you need t
 1. If the invite link is for someone else then send it to them and they will need to authenticate and grant consent.
 
 > [!div class="mx-imgBorder"]
-> ![The illustration shows how to copy the invite link.](../media/static_web_app_invite.png)
+> ![The illustration shows how to copy the invite link.](../media/static-web-app-invite.png)
 
 ## Connect the Altair Web Terminal to your Azure Sphere
 

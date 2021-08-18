@@ -41,13 +41,13 @@ We need the ID of the Azure Sphere tenant that is now trusted by Azure IoT Centr
 
 1. From the  Windows **PowerShell command line** or Linux **Terminal**, run the following command.
 
-   ```
+   ```azsphere
    azsphere tenant show-selected
    ```
 
    The output of this command will look similar to the following.
 
-    ```
+    ```Output
     ------------------------------------ -------------------
     Id                                   Name
     ========================================================

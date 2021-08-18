@@ -2,13 +2,13 @@ In this unit, you will learn how to generate the MQTT client certificates for th
 
 ## Mosquitto Certificates
 
-This MQTT sample is going to connect to the [mosquitto.org](https://mosquitto.org) public test MQTT broker. You need to download and copy the ```mosquitto.org``` CA certificate and generated client certificates into the Azure Sphere application **AltairHL_emulator\certs** folder.
+This MQTT sample is going to connect to the [mosquitto.org](https://mosquitto.org) public test MQTT broker. You need to download and copy the `mosquitto.org` CA certificate and generated client certificates into the Azure Sphere application *AltairHL_emulator\certs* folder.
 
 ### Install openssl
 
-For Linux users, you may need to install **openssl** if it is not installed by default. You can install OpenSSL using your Linux distributions package manager. For example, on Ubuntu ```sudo apt-get install openssl```.
+For Linux users, you may need to install **openssl** if it is not installed by default. You can install OpenSSL using your Linux distributions package manager. For example, on Ubuntu `sudo apt-get install openssl`.
 
-For Windows users either download ```openssl``` from [openssl.org](https://wiki.openssl.org/index.php/Binaries), or use [WSL](https://docs.microsoft.com/windows/wsl/install-win10) (Windows Subsystem for Linux). Depending on the WSL Linux distribution you installed you may need to install **openssl**. You can install OpenSSL using your Linux distribution's package manager. For example, on Ubuntu ```sudo apt-get install openssl```.
+For Windows users either download `openssl` from [openssl.org](https://wiki.openssl.org/index.php/Binaries), or use [Windows Subsystem for Linux (WSL))](/windows/wsl/install-win10). Depending on the WSL Linux distribution you installed you may need to install **openssl**. You can install OpenSSL using your Linux distribution's package manager. For example, on Ubuntu `sudo apt-get install openssl`.
 
 ### Download the Mosquitto Certificate Authority certificate
 

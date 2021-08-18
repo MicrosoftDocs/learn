@@ -2,7 +2,7 @@ In this exercise, we'll deploy two real-time applications to your Azure Sphere.
 
 You can either deploy the prebuilt real-time packages to the Azure Sphere or you can compile and deploy your own.
 
-## Deploying the prebuilt real-time packages
+## Deploy the prebuilt real-time packages
 
 1. If you're using Windows, open a Windows **PowerShell command line**. If you're using Linux, open **Terminal**.
 1. Navigate to the folder you cloned the **Cloud-Enabled-Altair-on-Azure-Sphere** repo into.

@@ -116,10 +116,7 @@ The  Altair on Azure Sphere project supports developer boards from Avnet and See
 
 1. Select **CMake: [Release]: Ready** from the Visual Studio Code status bar.
 
-   > [!div class="mx-imgBorder"]
-   > ![The illustration shows CMake status.](../media/visual-studio-code-start-application.png)
-
-   <!-- :::image type="content" source="../media/iot-central-certificate-verified.png" alt-text="The illustration shows CMake status."::: -->
+  :::image type="content" source="../media/iot-central-certificate-verified.png" alt-text="The illustration shows CMake status.":::
 
 1. From Visual Studio Code, press <kbd>ctrl+F5</kbd> to build, deploy, and start the application on  the Azure Sphere device.
 

@@ -4,8 +4,8 @@ Welcome to the *Learn computing fundamentals with Altair 8800 emulator & Azure S
 
 The Altair 8800 is considered to be the computer that kick-started the Personal Computer revolution. You can learn more about the Altair at https://en.wikipedia.org/wiki/Altair_8800.
 
-![](../media/Altair_8800_Smithsonian_Museum.jpg)
-[Altair 8800 image attribution - Smithsonian Museum](https://commons.wikimedia.org/wiki/File:Altair_8800,_Smithsonian_Museum.jpg)
+![Diagram that shows the Altair 8800.](../media/altair-8800-smithsonian-museum.png)
+[Altair 8800 image attribution - Smithsonian Museum](https://commons.wikimedia.org/wiki/File:Altair_8800_Smithsonian_Museum.jpg)
 
 The Altair 8800 was built on the [Intel 8080](https://en.wikipedia.org/wiki/Intel_8080) CPU, the second 8-bit microprocessor manufactured by Intel in 1974. By today's standards, it is a very simple CPU design, perfect for learning, due to its limited instruction set. This makes it easier to understand and learn computer fundamentals.
 
@@ -26,7 +26,7 @@ Together these components implement [The Seven Properties of Highly Secure Devic
 
 ![Azure Sphere end-to-end](../media/azure-sphere-end-to-end.png)
 
-# Introduction to the cloud-enabled Altair emulator on Azure Sphere
+## Introduction to the cloud-enabled Altair emulator on Azure Sphere
 
 The Azure Sphere is running an Open Source Intel 8080 emulator, and on top of the emulator, we are layering Altair BASIC and CP/M. On CP/M three languages are available: BASIC, and C, and Assembler.
 
@@ -37,3 +37,9 @@ The Altair emulator running on the Azure Sphere is accessible via a web browser-
 Three apps are running on the Azure Sphere - one on each Cortex core. The Altair emulator runs on the Cortex A7. The virtual disk cache and the environment monitor run on each of the two real-time Cortex M4 cores.
 
 ![Azure Sphere end-to-end](../media/altair-on-azure-sphere-architecture.png)
+
+In this module, you'll learn how to:
+
+## Prerequisites
+
+Add a list or write None.

@@ -1,7 +1,4 @@
-
-
-
-## Starting the Virtual Disk Server
+## Start the Virtual Disk Server
 
 From a terminal window:
 

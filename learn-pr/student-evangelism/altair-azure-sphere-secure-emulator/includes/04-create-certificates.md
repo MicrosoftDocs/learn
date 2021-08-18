@@ -6,10 +6,7 @@ The cloud-enabled Altair on Azure Sphere project connects to the Web Terminal by
 
 By default, the solution uses the publicly available **test.mosquitto.org** broker. The Altair on Azure Sphere MQTT client communicates with the broker over TLS using the wolfSSL library included with the Azure Sphere.
 
-> [!div class="mx-imgBorder"]
-> ![The illustration shows the architecture of the web terminal.](../media/altair-web-terminal.png)
-
-<!-- :::image type="content" source="../media/altair-web-terminal.png" alt-text="The illustration shows the architecture of the web terminal."::: -->
+:::image type="content" source="../media/altair-web-terminal.png" alt-text="The illustration shows the architecture of the web terminal.":::
 
 ## Generator MQTT Broker certificates
 

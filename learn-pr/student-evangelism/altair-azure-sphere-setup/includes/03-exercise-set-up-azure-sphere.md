@@ -4,7 +4,7 @@ Install the following software on your Windows 10 or Linux computer.
 
 ## Troubleshooting
 
-1. See the [Troubleshoot Azure Sphere issues](https://docs.microsoft.com/azure-sphere/install/troubleshoot-installation) article.
+1. See the [Troubleshoot Azure Sphere issues](/azure-sphere/install/troubleshoot-installation) article.
 1. If you have trouble connecting to the Azure Sphere over USB be sure to disable any VPNs you might have enabled.
 1. The **TAP-Windows Adapter V9** installed with VPN clients, including the OpenVPN client is not compatible with the **TAP-Windows Adapter V9** required and installed by the Azure Sphere SDK. You will need to uninstall the VPN client and reinstall the Azure Sphere SDK for Visual Studio.
 1. Windows Users. If running the IoT Central ShowIoTCentralConfig command fails with a missing library message then delete the folder from ShowIoTCentralConfig from AppData\\Local\\Temp\\.net.
@@ -27,7 +27,7 @@ You need to do the following:
 1. Claim your device.
 1. Configure networking for the device.
 
-The following [Quickstart: Install the Azure Sphere SDK for Windows](https://docs.microsoft.com/azure-sphere/install/install-sdk?pivots=vs-code&azure-portal=true) will step you through the process.
+The following [Quickstart: Install the Azure Sphere SDK for Windows](/azure-sphere/install/install-sdk?pivots=vs-code&azure-portal=true) will step you through the process.
 
 ### Install the Git client for Windows
 
@@ -53,7 +53,7 @@ You need to do the following:
 1. Claim your device.
 1. Configure networking for the device.
 
-The following [Quickstart: Install the Azure Sphere SDK for Linux](https://docs.microsoft.com/azure-sphere/install/install-sdk-linux?pivots=vs-code-linux&azure-portal=true) will step you through the process.
+The following [Quickstart: Install the Azure Sphere SDK for Linux]/azure-sphere/install/install-sdk-linux?pivots=vs-code-linux&azure-portal=true) will step you through the process.
 
 ### Install the Git client for Linux
 
@@ -101,13 +101,13 @@ The Peacock extension allows you to change the color of your Visual Studio Code 
 
 1. From the Windows **PowerShell command line** or Linux **Terminal**, run the following command to delete any existing applications on the device.
 
-   ```powershell
+   ```azsphere
    azsphere device sideload delete
    ```
 
 2. Restart Azure Sphere.
 
-   ```powershell
+   ```azsphere
    azsphere device restart
    ```
 
@@ -115,7 +115,7 @@ The Peacock extension allows you to change the color of your Visual Studio Code 
 
 1. From the Windows **PowerShell command line** or Linux **Terminal**, run the following command to enable high-level app development on the device.
 
-   ```powershell
+   ```azsphere
    azsphere device enable-development
    ```
 
@@ -125,7 +125,7 @@ The Peacock extension allows you to change the color of your Visual Studio Code 
 
 1. Open the Windows **PowerShell command line** as **Administrator**, and run the following command to enable real-time core development on the device.
 
-   ```powershell
+   ```azsphere
    azsphere device enable-development -r
    ```
 

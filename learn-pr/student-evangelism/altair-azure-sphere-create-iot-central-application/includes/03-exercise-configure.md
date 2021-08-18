@@ -10,17 +10,11 @@ In this exercise, you will create an Azure Iot Central application and link it t
 
 1. Expand the sidebar menu by clicking on the **Menu** icon.
 
-   > [!div class="mx-imgBorder"]
-   > ![The illustration shows how to expand the sidebar menu.](../media/iot-central-burger-menu.png)
-
-   <!-- :::image type="content" source="../media/iot-central-burger-menu.png" alt-text="The illustration shows how to expand the sidebar menu."::: -->
+    :::image type="content" source="../media/menu.png" alt-text="Diagram that shows how to expand the sidebar menu.":::
 
 1. Navigate to **Build**, select **Custom app**, and click **Create app**.
 
-   > [!div class="mx-imgBorder"]
-   > ![The illustration shows how to create custom app.](../media/iot-central-new-application.png)
-
-   <!-- :::image type="content" source="../media/iot-central-new-application.png" alt-text="The illustration shows how to create custom app."::: -->
+    :::image type="content" source="../media/new-application.png" alt-text="Screenshot that shows how to create custom app.":::
 
 1. Specify the **Application name**, specify the **URL**.
 
@@ -34,7 +28,7 @@ In this exercise, you will create an Azure Iot Central application and link it t
 
 2. Log in to your Azure Sphere tenant if you have not already done so.
 
-   ```
+   ```azsphere
    azsphere login
    ```
 
@@ -42,7 +36,7 @@ In this exercise, you will create an Azure Iot Central application and link it t
 
 4. Download the certificate authority (CA) certificate for your Azure Sphere tenant:
 
-   ```
+   ```azsphere
    azsphere ca-certificate download --destination CAcertificate.cer
    ```
 
@@ -71,10 +65,7 @@ In this exercise, you will create an Azure Iot Central application and link it t
 
 5. Copy the verification code to the clipboard.
 
-   > [!div class="mx-imgBorder"]
-   > ![The illustration shows how to verify a certificate.](../media/iot-central-certificate-verify.png)  
-
-   <!-- :::image type="content" source="../media/iot-central-certificate-verify.png" alt-text="The illustration shows how to verify a certificate."::: -->
+    :::image type="content" source="../media/verify-certificate.png" alt-text="Screenshot that shows how to verify a certificate.":::
 
 ### Verify the tenant CA certificate
 
@@ -82,7 +73,7 @@ In this exercise, you will create an Azure Iot Central application and link it t
 
 2. Download a validation certificate that proves that you own the tenant CA certificate. Replace **<code\>** in the command with the verification code from the previous step.
 
-   ```
+   ```azsphere
    azsphere ca-certificate download-proof --destination ValidationCertification.cer --verification-code <code>
    ```
 
@@ -96,10 +87,7 @@ In this exercise, you will create an Azure Iot Central application and link it t
 
 3. Click **Close** to dismiss the box.
 
-   > [!div class="mx-imgBorder"]
-   > ![The illustration shows a verified certificate.](../media/iot-central-certificate-verified.png)
-
-   <!-- :::image type="content" source="../media/iot-central-certificate-verified.png" alt-text="The illustration shows a verified certificate."::: -->
+    :::image type="content" source="../media/certificate-verified.png" alt-text="Screenshot that shows a verified certificate.":::
 
 4. Click **Save**.
 

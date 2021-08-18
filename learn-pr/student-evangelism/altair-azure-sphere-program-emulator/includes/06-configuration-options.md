@@ -4,7 +4,7 @@ The original Altair 8800 was programmed directly via the front panel. It was a p
 
 The Altair 8800 has a series of LEDs and switches that you used to load apps and determine the state of the Altair.
 
-![](../media/Altair_8800_Smithsonian_Museum.jpg)
+![Image of the Altair 8800.](../media/altair-8800-smithsonian-museum.png)
 [Altair 8800 image attribution - Smithsonian Museum](https://commons.wikimedia.org/wiki/File:Altair_8800,_Smithsonian_Museum.jpg)
 
 
@@ -25,21 +25,21 @@ An Avnet Azure Sphere Starter Kit Rev 1 with the MikroE 4x4 key click and 8x8 R 
 
 > IMPORTANT: This Click board configuration is only compatible with the Avnet Azure Sphere V1 board. The Click board solution for Avnet Azure Sphere Starter Kits Rev 1 and Rev 2 will be available shortly.
 
-![Avnet Azure Sphere with MikroE Click panel ](../media/altair-8800-with-4x4-8x8-clicks.png)
+![Avnet Azure Sphere with MikroE Click panel.](../media/altair-8800-with-4x4-8x8-clicks.png)
 
 ### Avnet Azure Sphere plus MikroE Altair 8800 Retro Click
 
 An Avnet Azure Sphere Starter Kit Rev 1 and Rev 2 with the MikroE Altair 8800 Retro Click (**Available soon**).
 
-![Avnet Azure Sphere plus MikroE Click panel ](../media/altair-8800-retro-click.png)
+![Avnet Azure Sphere plus MikroE Click panel.](../media/altair-8800-retro-click.png)
 
 ### Altair front panel
 
 The Seeed Studio or Avnet with the Altair Front Panel. See the Front Panel wiring section in the appendix.
 
-![Avnet Azure Sphere with the Altair front panel](../media/avnet-with-front-panel.png)
+![Avnet Azure Sphere with the Altair front panel.](../media/avnet-with-front-panel.png)
 
-![Seeed Studio Azure Sphere with the Altair front panel](../media/altair-front-panel.png)
+![Seeed Studio Azure Sphere with the Altair front panel.](../media/altair-front-panel.png)
 
 #### Front panel wiring
 
@@ -47,7 +47,7 @@ If you do build an Altair front panel then you will need to know how to connect 
 
 The following describes how to wire the front panel to the Avnet and Seeed Studio Azure Sphere developer kits.
 
-![Altair front panel](../media/altair-front-panel.png)
+![Altair front panel.](../media/altair-front-panel.png)
 
 ##### Seeed Studio Azure Sphere development Kit
 
