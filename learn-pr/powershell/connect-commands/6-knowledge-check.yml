@@ -22,7 +22,7 @@ quiz:
         - content: "`Get-Process 'name of process' | Get-Member -Name F`"
           isCorrect: false
           explanation: "Incorrect. This solution will not work as it only searches for a member with the exact name F"
-        - content: "Get-Process 'name of process' | Get-Members -Name F*"
+        - content: "`Get-Process 'name of process' | Get-Members -Name F*`"
           isCorrect: false
           explanation: "Incorrect. The correct command to pipe to is Get-Member"
     - content: What will this command answer with `Get-Process 'some process' | Format-Table Name,CPU | Select-Object Name, CPU`"?
