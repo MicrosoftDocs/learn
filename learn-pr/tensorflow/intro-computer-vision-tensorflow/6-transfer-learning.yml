@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.tensorflow.intro-computer-vision.transfer-learning
+title: Pretrained models and transfer learning
+metadata:
+  title: Pretrained models and transfer learning
+  description: Learn how to use models pre-trained on large datasets, and how to train our own models using them.
+  ms.date: 07/07/2021
+  author: shwars
+  ms.author: dmitryso
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+sandbox: true
+notebook: notebooks/6-transfer-learning.ipynb
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "For transfer learning, we are using a VGG-16 network pre-trained on 1000 classes. What is the number of classes we can have in our network?"
+      choices:
+        - content: "Any"
+          isCorrect: true
+          explanation: "Number of classes in pre-trained network is not important since we are training our own final classifier"
+        - content: "1000"
+          isCorrect: false
+          explanation: "Number of classes in pre-trained network is not important since we are training our own final classifier"
+        - content: "2"
+          isCorrect: false
+          explanation: "Number of classes in pre-trained network is not important since we are training our own final classifier"
+        - content: "less than 1000"
+          isCorrect: false
+          explanation: "Number of classes in pre-trained network is not important since we are training our own final classifier"
+
