@@ -1,4 +1,3 @@
-<!--# Altair on Azure Sphere Installation-->
 In this module you are going to learn about the supported Altair 8800 emulator hardware configurations and how to set up the Azure Sphere
 development environment.
 

@@ -1,5 +1,3 @@
-<!--# Introduction to the Altair 8800 on Azure Sphere-->
-
 Welcome to the *Learn computing fundamentals with Altair 8800 emulator & Azure Sphere* learning path.
 
 ## Introduction to the Altair 8880
@@ -11,7 +9,7 @@ The Altair 8800 is considered to be the computer that kick-started the Personal 
 
 The Altair 8800 was built on the [Intel 8080](https://en.wikipedia.org/wiki/Intel_8080) CPU, the second 8 bit microprocessor manufactured by Intel in 1974. By todays standards, it is a very simple CPU design, perfect for learning, due to its limited instruction set. This makes it easier to understand and learn computer fundamentals.
 
-This learning path brings the Altair 8800 to the Azure Sphere. You will learn about secure IoT, secure cloud services, computer fundamentals, and how to program the Altair with Intel 8080 Op Codes, Assembly, C, and BASIC.
+This learning path brings the Altair 8800 to the Azure Sphere. You will learn about secure IoT, secure cloud services, computer fundamentals, using caches to improve performance, and how to program the Altair with Intel 8080 Op Codes, Assembly, C, and BASIC.
 
 ## Introduction to Azure Sphere
 

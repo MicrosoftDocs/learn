@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-connected-altair-on-azure-sphere.how-getting-started-with-altair-programming-cpm
+title: How to program the Altair from CP/M
+metadata:
+  title: How to program the Altair from CP/M
+  description: In this section, we learn how to program the Altair from CP/M
+  ms.date: 8/10/2021
+  author: dglover
+  ms.author: dglover
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+durationInMinutes: 4 # dummy number at present
+content: |
+  [!include[](includes/04-how-getting-started-with-altair-cpm.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cloud-connected-altair-on-azure-sphere.how-getting-started-with-the-altair-front-panel
+title: Understand how to program the Altair with the front panel
+metadata:
+  title: Understand how to program the Altair with the front panel
+  description: In this section, we will learn how to program the Altair from the front panel
+  ms.date: 8/10/2021
+  author: dglover
+  ms.author: dglover
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+durationInMinutes: 4 # dummy number at present
+content: |
+  [!include[](includes/06-how-getting-started-with-the-altair-front-panel.md)]

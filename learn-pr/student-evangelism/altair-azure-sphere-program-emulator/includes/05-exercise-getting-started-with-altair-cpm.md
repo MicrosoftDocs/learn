@@ -180,7 +180,7 @@ Single step: Address bus: 00000000 00000000 (0x0000), Data bus 11000011 (0xc3), 
 
 The Altair front panel board can be used with the Avnet Starter Kit and the Seeed Studio Reference Design Board.
 
-![](../media/altair-front-panel.png)
+![Altair front panel](../media/altair-front-panel.png)
 
 ### Loading an Intel 8080 opcode using the Altair front panel
 

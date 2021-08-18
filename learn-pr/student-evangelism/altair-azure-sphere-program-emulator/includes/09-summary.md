@@ -1,11 +1,3 @@
-In this unit, you will learn how to get started with the Altair emulator
-
-The Altair emulator is running an Open Source Intel 8080 emulator, and on top of the emulator is layered Altair BASIC and CP/M. [CP/M](https://en.wikipedia.org/wiki/CP/M) is an early microcomputer operating system that predates DOS.
-
-The Altair Emulator can be programmed in two ways, either by entering Intel 8080 [Opcodes](https://en.wikipedia.org/wiki/Opcode) using the Altair front panel switches or with a higher-level programming language.
-
-When you first start the Altair emulator, it boots up Altair BASIC and you can program directly in BASIC. After Altair BASIC has started you can also boot the Altair emulator into CP/M. From CP/M you can program the Altair emulator using Microsoft BASIC, BD Software C, and Microsoft MACRO-80 Assembler. From CP/M you can edit files with the WordStar text editor and save files to the virtual B: drive.
-
 The following are useful reference manuals for the Altair emulator:
 
 1. [Altair 8800 BASIC Reference Manual](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/MITS_Altair8800Basic4.1Reference_April1977.pdf?azure-portal=true)
@@ -17,5 +9,3 @@ The following are useful reference manuals for the Altair emulator:
 1. [Microsoft LINK-80 Loader](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/Microsoft_L80_Linker.pdf?azure-portal=true)
 1. [Word-Master user's guide](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/Word-Master_Manual.pdf?azure-portal=true)
 1. [CP/M BDOS System Calls](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/CP_M_information_archive_BDOS_system_calls.pdf)
-
-In the following exercise you learn how to write your first Altair BASIC application, and how to start CP/M and write applications in Basic, C, and Assembler.

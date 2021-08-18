@@ -25,12 +25,12 @@ products:
 - azure
 modules:
 - learn.student-evangelism.altair-azure-sphere-introduction
-- learn.student-evangelism.altair-azure-sphere-hardware-software
-- learn.student-evangelism.altair-create-iot-central-application
+- learn.student-evangelism.altair-azure-sphere-set-up
+- learn.student-evangelism.altair-azure-sphere-create-iot-central-application
 - learn.student-evangelism.altair-azure-sphere-secure-emulator
 - learn.student-evangelism.altair-azure-sphere-deploy-emulator
-- learn.student-evangelism.altair-create-web-terminal
-- learn.student-evangelism.altair-programming
-- learn.student-evangelism.altair-deploy-private-mqtt-broker
+- learn.student-evangelism.altair-azure-sphere-create-web-terminal
+- learn.student-evangelism.altair-azure-sphere-program-emulator
+- learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker
 trophy:
   uid: learn.altair-azure-sphere-computing-fundamentals.trophy
