@@ -15,6 +15,6 @@ The criteria help you evaluate how Azure Purview can help your business catalog 
 
 [Map your data estate with Azure Purview - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/azure-purview/map-your-data-estate-with-azure-purview/ba-p/1958197)
 
-[Azure Purview for Unified Data Governance | Microsoft Azure](https://azure.microsoft.com/en-us/services/purview/)
+[Azure Purview for Unified Data Governance | Microsoft Azure](https://azure.microsoft.com/services/purview/)
 
 [Enable unified data governance with Azure Purview | Azure Friday](https://youtu.be/W2bsj3ULw0Y)
