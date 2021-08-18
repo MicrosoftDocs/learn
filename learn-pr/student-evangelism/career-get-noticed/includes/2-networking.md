@@ -37,5 +37,3 @@ Participating in open-source development, or OSS, allows you to have a direct im
 ### Participate in Hackathons
 
 Hackathons are a reliable opportunity to network with your peers and meet representatives of interesting companies. During a hackathon, you form a team around a cause or solution and then build a software-based project over a set period of time. Eventually you will be able to showcase your skills and participate in challenges posted by the hackathon hosts. In doing so, you also get access to resources and connections provided by the organizing team, which tend to include sponsoring companies' employees. This way, you can both ask questions about these companies and share a bit of your story and interests. Your conversations may lead to an interview or an invitation to apply for a job.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NA8o]

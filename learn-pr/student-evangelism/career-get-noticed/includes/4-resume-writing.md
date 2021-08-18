@@ -1,3 +1,5 @@
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NA8o]
+
 When applying for an internship, having a strong resume is the first step in getting noticed.  The way you phrase and describe your experiences will decide whether your application is noticed or overlooked.
 
 Recruiters scan hundreds of resumes daily.  While recruiters do look at every resume submitted for a role, only those resumes that catch the recruiter's attention will be read in full. Therefore, you need to ensure that your resume complies in both format and content to what the recruiters are looking for. Look at the position you are interested in and review its requirements. Ensure you at least have some of those requirements listed in your resume or you might not pass the first scan.
