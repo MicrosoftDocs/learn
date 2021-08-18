@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.interview
+uid: learn.career-interview-interview
 metadata:
   title: Successful interviewing
   description: In this module you will learn how to prepare for a technical and
@@ -28,14 +28,14 @@ products:
   - vs
 prerequisites: None
 units:
-  - learn.interview.1-introduction
-  - learn.interview.2-prepare
-  - learn.interview.3-exercise-practice-code
-  - learn.interview.4-check-preparation
-  - learn.interview.5-tech-interview
-  - learn.interview.6-exercise-practice-questions
-  - learn.interview.7-interview
-  - learn.interview.8-knowledge-check
-  - learn.interview.9-summary
+  - learn.career-interview.1-introduction
+  - learn.career-interview.2-prepare
+  - learn.career-interview.3-exercise-practice-code
+  - learn.career-interview.4-check-preparation
+  - learn.career-interview.5-tech-interview
+  - learn.career-interview.6-exercise-practice-questions
+  - learn.career-interview.7-interview
+  - learn.career-interview.8-knowledge-check
+  - learn.career-interview.9-summary
 badge:
   uid: learn.interview.badge
