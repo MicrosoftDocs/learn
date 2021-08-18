@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-introduction.summary
+title: Summary
+metadata:
+  title: Summary
+  description: In this section, we introduce the Altair 8800 emulator on Azure Sphere
+  ms.date: 08/18/2021
+  author: gloveboxes
+  ms.author: dglover
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+durationInMinutes: 4 # dummy number at present
+content: |
+  [!include[](includes/03-summary.md)]

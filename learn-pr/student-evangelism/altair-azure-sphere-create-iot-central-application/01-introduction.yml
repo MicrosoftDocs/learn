@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-create-iot-central-application.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: In this section, You will learn about the Altair 8800 and Azure Sphere.
+  ms.date: 08/18/2021
+  author: gloveboxes
+  ms.author: dglover
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+durationInMinutes: 4 # dummy number at present
+content: |
+  [!include[](includes/01-introduction.md)]

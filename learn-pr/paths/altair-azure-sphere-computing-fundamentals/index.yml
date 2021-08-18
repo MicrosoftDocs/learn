@@ -1,0 +1,38 @@
+### YamlMime:LearningPath
+uid: learn.altair-azure-sphere-computing-fundamentals
+metadata:
+  title: Altair 8800 and Azure Sphere computing fundamentals 
+  description: Learn computing fundamentals with Altair 8800 and Azure Sphere.
+  ms.date: 08/18/2021
+  author: gloveboxes
+  ms.author: dglover
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+title: Altair 8800 and Azure Sphere computing fundamentals
+summary: |
+  In this learning path, you'll learn how to .
+  
+  By the end of this learning path, you will be able to: 
+   - One, and so on 
+prerequisites: None or  . . .
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- student
+- developer
+products:
+- azure
+- azure-iot-central
+- azure-sphere
+modules:
+- learn.student-evangelism.altair-azure-sphere-introduction
+- learn.student-evangelism.altair-azure-sphere-setup
+- learn.student-evangelism.altair-azure-sphere-create-iot-central-application
+- learn.student-evangelism.altair-azure-sphere-secure-emulator
+- learn.student-evangelism.altair-azure-sphere-deploy-emulator
+- learn.student-evangelism.altair-azure-sphere-create-web-terminal
+- learn.student-evangelism.altair-azure-sphere-program-emulator
+- learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker
+trophy:
+  uid: learn.altair-azure-sphere-computing-fundamentals.trophy

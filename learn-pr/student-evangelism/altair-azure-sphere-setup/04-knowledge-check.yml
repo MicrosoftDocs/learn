@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-setup.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 08/18/2021
+  author: gloveboxes
+  ms.author: dglover
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+durationInMinutes: 3 # dummy number at present
+content: |
+quiz:
+  questions:
+  - content: "Which of the following hardware is required to run the Altair 8800 emulator on Azure Sphere?"
+    choices:
+    - content: "You can run the emulator on a standalone Azure Sphere developer board from Avnet or Seeed Studio."
+      isCorrect: true
+      explanation: "This is correct, and it's the minimum requirement. The MikroE click panels and the Altair front panel provides a more authentic Altair experience. You can do everything you want with a standalone Azure Sphere."
+    - content: "The Altair MikroE clicks or the MikroE Altair 8800 Retro Click."
+      isCorrect: false
+      explanation: "The MikroE clicks provide an easy way to mimic the Altair front panel and provide better visual clues as to what the Altair is doing. However, they are not a requirement, you can run the Altair emulator on a standalone Azure Sphere."
+    - content: "The Altair 8800 Front Panel."
+      isCorrect: false
+      explanation: "The Altair 8800 front panel provides an authentic Altair experience. The hardware design is provided, but you must be willing to build the front panel yourself.  You can run the Altair emulator on a standalone Azure Sphere."
+  - content: "What software do you need to install on your computer?"
+    choices:
+    - content: "You must install Visual Studio 2019."
+      isCorrect: false
+      explanation: "On Windows and Linux, you can use Visual Studio Code. On Windows, you can also use Visual Studio 2019. "
+    - content: "You need to install Visual Studio Code, CMake, Ninja, and the Azure Sphere SDK."
+      isCorrect: true
+      explanation: "Correct, for Windows users, you can also install Visual Studio 2019 which includes CMake and Ninja."
+    - content: "Windows 10, Linux, or macOS."
+      isCorrect: false
+      explanation: "Azure Sphere development is only supported on Windows 10 and Linux. "
+  - content: "How can you run real-time applications on an Azure Sphere?"
+    choices:
+    - content: "You can't run real-time applications on an Azure Sphere."
+      isCorrect: false
+      explanation: "You can run real-time applications on the Azure Sphere Cortex-M4 cores."
+    - content: "You can run real-time applications on the Azure Sphere Cortex-A7 Linux kernel core."
+      isCorrect: false
+      explanation: "You cannot run real-time applications on the Cortex-A7 core as the application has to compete for resources with other services running on the Linux kernel."
+    - content: "You can run real-time applications on the Azure Sphere Cortex-M4 cores."
+      isCorrect: true
+      explanation: "You can run bare-metal code, or real-time operating system such as Azure RTOS or FreeRTOS on the Azure Sphere Cortex-M4 cores.  The Altair emulator runs two applications on the real time cores and the actual Altair emulator on the high-level A7 core."

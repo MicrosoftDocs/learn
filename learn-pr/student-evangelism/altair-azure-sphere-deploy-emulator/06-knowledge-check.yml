@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.altair-azure-sphere-deploy-emulator.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: In this section, you answer questions to validate that you've understood the learning objectives.
+  ms.date: 08/18/2021
+  author: gloveboxes
+  ms.author: dglover
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+durationInMinutes: 3 # dummy number at present
+content: |
+quiz:
+  questions:
+  - content: "The Azure Sphere microcontroller consist of?"
+    choices:
+    - content: "Three developer-accessible cores, 2 high-level cores, and 1 real-time core"
+      isCorrect: false
+      explanation: "The Azure Sphere microcontroller consists of three cores developer-accessible cores, 1 high-level core, and 2 real-time cores."
+    - content: "Two developer-accessible cores, 1 high-level core, and 1 real-time core."
+      isCorrect: false
+      explanation: "The Azure Sphere microcontroller consists of three cores developer-accessible cores, 1 high-level core, and 2 real-time cores."
+    - content: "The Azure Sphere microcontroller consists of three cores developer-accessible cores, 1 high-level core, and 2 real-time cores."
+      isCorrect: true
+      explanation: "The Azure Sphere microcontroller consists of three developer-accessible cores, 1 high-level core, and 2 real-time cores."
+  - content: "The Altair emulator configuration requires the following?"
+    choices:
+    - content: "The ID Scope of the IoT Central Application, and the declaration of the IoT Central and test.mosquitto.org network endpoints, and your Azure Spere tenant ID."
+      isCorrect: true
+      explanation: "Correct, the ID Scope, network endpoints, and your Azure Sphere tenant ID are all needed."
+    - content: "Azure Sphere is secure by default, and you only need to declare the IoT Central ID Scope."
+      isCorrect: false
+      explanation: "You must declare the IoT Central ID Scope and network endpoints, along with the test.mosquitto.org network endpoint, and your Azure Sphere tenant ID."
+    - content: "You only need to declare the IoT Central ID Scope and network endpoints in the capability section of the app_manifest.json file."
+      isCorrect: false
+      explanation: "You must declare the IoT Central ID Scope and network endpoints, along with the test.mosquitto.org network endpoint, and your Azure Sphere tenant ID."
+      

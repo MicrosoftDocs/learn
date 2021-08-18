@@ -1,0 +1,33 @@
+### YamlMime:Module
+uid: learn.student-evangelism.altair-azure-sphere-introduction
+metadata:
+  title: Title altair-azure-sphere-introduction
+  description: Description altair-azure-sphere-introduction.
+  ms.date: 08/18/2021
+  author: gloveboxes
+  ms.author: dglover
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+title: Title altair-azure-sphere-introduction
+summary: Summary altair-azure-sphere-introduction.
+abstract:  |
+  In this module, you will:
+  - One, etc.
+prerequisites: |
+  A basic knowledge of  . . . or None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+- azure-iot-central
+- azure-sphere
+units:
+- learn.student-evangelism.altair-azure-sphere-introduction.introduction
+- learn.student-evangelism.altair-azure-sphere-introduction.knowledge-check
+- learn.student-evangelism.altair-azure-sphere-introduction.summary
+badge:
+  uid: learn.student-evangelism.altair-azure-sphere-introduction.badge

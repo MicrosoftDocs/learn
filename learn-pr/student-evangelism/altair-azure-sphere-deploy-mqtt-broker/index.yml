@@ -1,0 +1,35 @@
+### YamlMime:Module
+uid: learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker
+metadata:
+  title: Title altair-azure-sphere-deploy-mqtt-broker
+  description: Description altair-azure-sphere-deploy-mqtt-broker.
+  ms.date: 08/18/2021
+  author: gloveboxes
+  ms.author: dglover
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-central
+title: Title altair-azure-sphere-deploy-mqtt-broker
+summary: Summary altair-azure-sphere-deploy-mqtt-broker.
+abstract:  |
+  In this module, you will:
+  - One, etc.
+prerequisites: |
+  A basic knowledge of  . . . or None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+- azure-iot-central
+- azure-sphere
+units:
+- learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker.introduction
+- learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker.deployment
+- learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker.exercise-set-up
+- learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker.knowledge-check
+- learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker.summary
+badge:
+  uid: learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker.badge
