@@ -11,7 +11,7 @@ The criteria help you evaluate how Azure Purview can help your business catalog 
 
 ## References for more information
 
-[Introduction to Azure Purview - Azure Purview | Microsoft Docs](/azure/purview/overview.md)
+[Introduction to Azure Purview - Azure Purview | Microsoft Docs](/azure/purview/overview)
 
 [Map your data estate with Azure Purview - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/azure-purview/map-your-data-estate-with-azure-purview/ba-p/1958197)
 
