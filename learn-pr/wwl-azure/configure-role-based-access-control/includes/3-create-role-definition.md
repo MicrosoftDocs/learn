@@ -13,6 +13,7 @@ Description: Manage everything, including access to resources
 Actions: {*}
 NotActions: {}
 AssignableScopes: {/}
+
 ```
 
 ## Actions and NotActions
@@ -75,6 +76,7 @@ The AssignableScopes property of the role specifies the role scope. The scope ca
 * /subscriptions/[subscription id]
 * /subscriptions/[subscription id]/resourceGroups/[resource group name]
 * /subscriptions/[subscription id]/resourceGroups/[resource group name]/[resource]
+
 ```
 
 ## Example 1
@@ -83,6 +85,7 @@ Make a role available for assignment in two subscriptions.
 
 ```
 “/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e”, “/subscriptions/e91d47c4-76f3-4271-a796-21b4ecfe3624”
+
 ```
 
 ## Example 2
@@ -91,4 +94,5 @@ Makes a role available for assignment only in the Network resource group.
 
 ```
 “/subscriptions/c276fc76-9cd4-44c9-99a7-4fd71546436e/resourceGroups/Network”
+
 ```

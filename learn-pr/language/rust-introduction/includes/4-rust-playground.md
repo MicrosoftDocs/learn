@@ -26,7 +26,7 @@ Let's start by writing some code for a basic program.
 
 The Rust playground lets you run *lint* tests on code to find errors and areas for improvement.
 
-1. Select **Tools** > **Clippy** to check for mistakes in the code. The tool runs the checks and displays the results under the editor:
+1. Select **Tools** > **Clippy** to lint your code against common mistakes. The tool runs the checks and displays the results under the editor:
 
    :::image type="content" source="../media/rust-playground-clippy.png" alt-text="Screenshot of the Clippy tool results in the Rust playground.":::
 
