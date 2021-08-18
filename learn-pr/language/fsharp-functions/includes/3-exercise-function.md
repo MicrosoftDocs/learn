@@ -17,8 +17,8 @@ You'll start by scaffolding a new F# project, and then you'll take a piece of co
 
     ```fsharp
     let no = card % 13
-    if no = 14 || no = 1 then "Ace"
-    elif no = 13 then "King"
+    if no = 1 then "Ace"
+    elif no = 0 then "King"
     elif no = 12 then "Queen"
     elif no = 11 then "Jack"
     else string no
@@ -29,8 +29,8 @@ You'll start by scaffolding a new F# project, and then you'll take a piece of co
     ```fsharp
     let cardFace card = 
        let no = card % 13
-       if no = 14 || no = 1 then "Ace"
-       elif no = 13 then "King"
+       if no = 1 then "Ace"
+       elif no = 0 then "King"
        elif no = 12 then "Queen"
        elif no = 11 then "Jack"
        else string no
@@ -67,8 +67,8 @@ You've turned your colleague's code into a function. To make this code more read
    ```fsharp
    let cardFace (card:int) = 
        let no = card % 13
-       if no = 14 || no = 1 then "Ace"
-       elif no = 13 then "King"
+       if no = 1 then "Ace"
+       elif no = 0 then "King"
        elif no = 12 then "Queen"
        elif no = 11 then "Jack"
        else string no
@@ -80,10 +80,13 @@ You've turned your colleague's code into a function. To make this code more read
    dotnet run
    ```
 
-   You get a long error message back that starts with text "error FS0001: The 'if' expression needs to have type 'int' to satisfy context type requirements. It currently has type 'string'."
+   You now see the following output:
 
-   > [!TIP]
-   > Stop here for a second and think about what you need to do to make the code work.
+   ```output
+   Jack
+   ```
+
+   The code still works, you've just made it more clear by adding a type to the input parameter.
 
 1. Alter your `cardFace()` function to look like so:
 
@@ -97,6 +100,8 @@ You've turned your colleague's code into a function. To make this code more read
        else string no
    ```
 
+   At this point, you've added a return type to the function `:string`, means the function will return a string.
+
 1. Run the project `dotnet run`.
 
    ```bash
@@ -108,7 +113,5 @@ You've turned your colleague's code into a function. To make this code more read
    ```output
    Jack
    ```
-
-Now there's no error message because you added a return type to your function. When you look at the function header, you see the code `let cardFace (card:int) :string`, the input parameter is of type `int`, and it returns `string`.
 
 Congratulations! Your code now has types added to it.

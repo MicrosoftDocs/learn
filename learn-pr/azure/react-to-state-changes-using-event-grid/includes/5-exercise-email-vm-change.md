@@ -62,7 +62,7 @@ Next, we'll add an email action based on the logic app being triggered. The foll
 
     :::image type="content" source="../media/5-send-email-vm-update.png" alt-text="Selections for sending an email when vm updates.":::
 
-1. Select each box in the email form, and on the **Dynamic content** tab, search for and select the appropriate content type according to the following screenshot, adding text to label the items in the email body.
+1. Select each box in the email form, and on the **Dynamic content** tab, search for and select the appropriate content type according to the following screenshot, adding text to label the items in the email body. In the *To* box, add your own email address to test the workflow in the next section.
 
     :::image type="content" source="../media/5-logic-app-empty-email-action.png" alt-text="Selections for adding a subject as a dynamic email field.":::
 
