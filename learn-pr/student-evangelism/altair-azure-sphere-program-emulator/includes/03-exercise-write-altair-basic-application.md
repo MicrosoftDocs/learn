@@ -35,7 +35,7 @@ and press Enter.
 * new
 * load
 
-Refer to the [Altair 8800 BASIC Reference Manual](MITS_Altair8800Basic4.1Reference_April1977.pdf?azure-portal=true) for more information.
+Refer to the [Altair 8800 BASIC Reference Manual](https://altairclone.com/downloads/manuals/BASIC%20Manual%2075.pdf?azure-portal=true) for more information.
 
 ### Loading applications
 
