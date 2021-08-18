@@ -19,7 +19,7 @@ quiz:
         - content: "`Get-Process 'name of process' | Get-Member -Name F*`"
           isCorrect: true
           explanation: "Correct. This solution is how you search for member starting with F"
-        - content: "Get-Process 'name of process' | Get-Member -Name F"
+        - content: "`Get-Process 'name of process' | Get-Member -Name F`"
           isCorrect: false
           explanation: "Incorrect. This solution will not work as it only searches for a member with the exact name F"
         - content: "Get-Process 'name of process' | Get-Members -Name F*"
