@@ -10,5 +10,5 @@ You have a Windows 10 or Linux developer desktop and:
 
 ## Resources
 
-* [Quickstarts to set up your Azure Sphere device](https://docs.microsoft.com/en-us/azure-sphere/install/overview?azure-portal=true))
-* [Overview of Azure Sphere CLI](https://docs.microsoft.com/en-us/azure-sphere/reference/overview?azure-portal=true))
+* [Quickstarts to set up your Azure Sphere device](/azure-sphere/install/overview?azure-portal=true))
+* [Overview of Azure Sphere CLI](/azure-sphere/reference/overview?azure-portal=true))

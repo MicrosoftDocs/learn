@@ -8,7 +8,7 @@ In this module you learned how to:
 
 ## Resources
 
-* [Azure IoT Central](https://azure.microsoft.com/en-au/services/iot-central/)
+* [Azure IoT Central](https://azure.microsoft.com/services/iot-central/)
 * [Azure Static Web apps](https://azure.microsoft.com/services/app-service/static/)
 * [Python](https://www.python.org/)
 * [cache-aside](/azure/architecture/patterns/cache-aside)

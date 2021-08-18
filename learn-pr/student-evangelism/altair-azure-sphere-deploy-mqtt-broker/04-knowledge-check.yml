@@ -4,8 +4,8 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: In this section, you answer questions to validate that you've understood the learning objectives.
-  ms.date: 8/10/2021
-  author: dglover
+  ms.date: 08/18/2021
+  author: gloveboxes
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
@@ -29,9 +29,9 @@ quiz:
     - content: "The Altair virtual disk drive B: will be faster as there is one less network hop for each disk sector to be read or written."
       isCorrect: true
       explanation: "The Altair virtual disk drive B: will be faster as there is one less network hop for each disk sector to be read or written."
-    - content: "The virtual disk server cannot be run on the same server as the MQTT broker.
+    - content: "The virtual disk server cannot be run on the same server as the MQTT broker."
       isCorrect: false
-      explanation: "The virtual disk server can be run on the same server as the MQTT broker. The Altair virtual disk drive B: will be faster as there is one less network hop for each disk sector to be read or written."
+      explanation: "The virtual disk server can be run on the same server as the MQTT broker. The Altair virtual disk drive B will be faster as there is one less network hop for each disk sector to be read or written."
     - content: "The virtual disk server runs on one of the Azure Sphere’s real-time cores."
       isCorrect: false
       explanation: "The virtual server disk cache runs on one of the Azure Sphere’s real-time cores. The virtual disk server can be run on the same server as the MQTT broker. The Altair virtual disk drive B: will be faster as there is one less network hop for each disk sector to be read or written."

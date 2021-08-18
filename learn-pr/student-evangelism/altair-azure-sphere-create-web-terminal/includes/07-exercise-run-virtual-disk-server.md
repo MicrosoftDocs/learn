@@ -2,7 +2,7 @@
 
 From a terminal window:
 
-1. Ensure Python version 3 is installed on your computer. You can install Python 3 from [Python.org](www.python.org)
+1. Ensure Python version 3 is installed on your computer. You can install Python 3 from [Python.org](https://www.python.org)
 1. Install the paho-mqtt Python library.
 
     ```bash

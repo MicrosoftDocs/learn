@@ -4,8 +4,8 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: In this section, you answer questions to validate that you've understood the learning objectives.
-  ms.date: 8/10/2021
-  author: dglover
+  ms.date: 08/18/2021
+  author: gloveboxes
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
@@ -17,7 +17,7 @@ quiz:
     choices:
     - content: "You can chart data sent from the Altair emulator running on the Azure Sphere."
       isCorrect: false
-      explanation: "You can configure the Altair emulator startup parameters and chart data.
+      explanation: "You can configure the Altair emulator startup parameters and chart data."
     - content: "You can configure the Altair emulator startup parameters and chart data."
       isCorrect: true
       explanation: "You can configure the Altair emulator startup parameters and chart data."

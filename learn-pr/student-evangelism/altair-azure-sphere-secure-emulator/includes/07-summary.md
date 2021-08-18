@@ -10,8 +10,8 @@ We also learned the Altair emulator on Azure Sphere uses certificates to sign an
 
 # Resources
 
-* [Set up Azure IoT Central to work with Azure Sphere](https://docs.microsoft.com/en-us/azure-sphere/app-development/setup-iot-central?azure-portal=true)
-* [The Eclipse Mosquitto MQTT broker project](www.mosquitto.org?azure-portal=true)
+* [Set up Azure IoT Central to work with Azure Sphere](/azure-sphere/app-development/setup-iot-central?azure-portal=true)
+* [The Eclipse Mosquitto MQTT broker project](https://www.mosquitto.org?azure-portal=true)
 * [The Mosquitto public broker](http://test.mosquitto.org?azure-portal=true)
 * [MQTT](https://en.wikipedia.org/wiki/MQTT?azure-portal=true)
 * [MQTT JavaScript library](https://www.eclipse.org/paho/index.php?page=clients/js/index.php?azure-portal=true)

@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.altair-azure-sphere-setup
 metadata:
-  title: Title
-  description: Description.
+  title: Title altair-azure-sphere-setup
+  description: Description altair-azure-sphere-setup.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-title: Title
-summary: Description.
+title: Title altair-azure-sphere-setup
+summary: Summary altair-azure-sphere-setup.
 abstract:  |
   In this module, you will:
   - One, etc.

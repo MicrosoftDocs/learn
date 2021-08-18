@@ -1,12 +1,12 @@
-In this module, you will learn how how to create an Azure IoT Central application.
+In this module, you will learn how to create an Azure IoT Central application.
 
 ## Azure IoT Central
 
-Azure IoT Central is a cloud based Internet of Things (IoT) application platform. [Azure IoT Central](https://azure.microsoft.com/services/iot-central?azure-portal=true) provides an easy way to connect, monitor, and manage your IoT assets at scale. IoT Central is built on Azure IoT Hub, Azure Device Provisioning Service, Stream Analytics, and Time Series Insights.
+Azure IoT Central is a cloud-based Internet of Things (IoT) application platform. [Azure IoT Central](https://azure.microsoft.com/services/iot-central?azure-portal=true) provides an easy way to connect, monitor, and manage your IoT assets at scale. IoT Central is built on Azure IoT Hub, Azure Device Provisioning Service, Stream Analytics, and Time Series Insights.
 
-:::image type="content" source="../media/iot-central-architecture.png" alt-text="The illustration shows the architecture of Azure IoT Central." border="false":::
+:::image type="content" source="../media/architecture.png" alt-text="The illustration shows the architecture of Azure IoT Central." border="false":::
 
-Azure IoT Central is built on the [8 attributes of successful IoT solutions](https://azure.microsoft.com/resources/8-attributes-of-successful-iot-solutions?azure-portal=true)
+Azure IoT Central is built on the [8 attributes of successful IoT solutions](https://azure.microsoft.com/resources/8-attributes-of-successful-iot-solutions?azure-portal=true).
 
 ## IoT Central and Azure Sphere tenant trust
 

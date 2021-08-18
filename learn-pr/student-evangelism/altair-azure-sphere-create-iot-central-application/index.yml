@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.altair-azure-sphere-create-iot-central-application
 metadata:
-  title: do
-  description: do.
+  title: Title altair-azure-sphere-create-iot-central-application
+  description: Description altair-azure-sphere-create-iot-central-application.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-title: do
-summary: do.
+title: Title altair-azure-sphere-create-iot-central-application
+summary: Summary altair-azure-sphere-create-iot-central-application.
 abstract:  |
   In this module, you will:
-  - do
+  - One, etc.
 prerequisites: |
-  A basic knowledge of do
+  A basic knowledge of  . . . or None
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -23,7 +23,8 @@ roles:
 - student
 products:
 - azure
-- github
+- azure-iot-central
+- azure-sphere
 units:
 - learn.student-evangelism.altair-azure-sphere-create-iot-central-application.introduction
 - learn.student-evangelism.altair-azure-sphere-create-iot-central-application.set-up

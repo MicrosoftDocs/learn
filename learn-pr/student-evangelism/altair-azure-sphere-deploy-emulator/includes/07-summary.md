@@ -8,6 +8,6 @@ In this module, you learned how to:
 
 ## Resources
 
-* [What is Azure Sphere](https://docs.microsoft.com/en-us/azure-sphere/product-overview/what-is-azure-sphere?azure-portal=true)
-* [Overview of Azure Sphere applications](https://docs.microsoft.com/en-us/azure-sphere/app-development/applications-overview?azure-portal=true)
-* [Overview of Azure Sphere CLI](https://docs.microsoft.com/en-us/azure-sphere/reference/overview?azure-portal=true)
+* [What is Azure Sphere](/azure-sphere/product-overview/what-is-azure-sphere?azure-portal=true)
+* [Overview of Azure Sphere applications](/azure-sphere/app-development/applications-overview?azure-portal=true)
+* [Overview of Azure Sphere CLI](/azure-sphere/reference/overview?azure-portal=true)

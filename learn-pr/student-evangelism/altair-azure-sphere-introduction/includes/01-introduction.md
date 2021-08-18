@@ -24,7 +24,7 @@ Azure Sphere consists of the following components:
 
 Together these components implement [The Seven Properties of Highly Secure Devices](https://www.microsoft.com/research/publication/seven-properties-highly-secure-devices).
 
-![Azure Sphere end-to-end](../media/azure-sphere-end-to-end.png)
+![Azure Sphere end-to-end.](../media/azure-sphere-end-to-end.png)
 
 ## Introduction to the cloud-enabled Altair emulator on Azure Sphere
 
@@ -36,7 +36,7 @@ The Altair emulator running on the Azure Sphere is accessible via a web browser-
 
 Three apps are running on the Azure Sphere - one on each Cortex core. The Altair emulator runs on the Cortex A7. The virtual disk cache and the environment monitor run on each of the two real-time Cortex M4 cores.
 
-![Azure Sphere end-to-end](../media/altair-on-azure-sphere-architecture.png)
+![Azure Sphere architecture.](../media/altair-on-azure-sphere-architecture.png)
 
 In this module, you'll learn how to:
 

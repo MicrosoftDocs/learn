@@ -4,8 +4,8 @@ title: Exercise - How to deploy the Altair web terminal
 metadata:
   title: Exercise - How to deploy the Altair web terminal
   description: In this section, we create the Web Terminal Azure Static Web App.
-  ms.date: 8/10/2021
-  author: dglover
+  ms.date: 08/18/2021
+  author: gloveboxes
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central

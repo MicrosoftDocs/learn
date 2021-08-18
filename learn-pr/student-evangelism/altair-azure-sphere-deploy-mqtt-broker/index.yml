@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker
 metadata:
-  title: Title
-  description: Description.
+  title: Title altair-azure-sphere-deploy-mqtt-broker
+  description: Description altair-azure-sphere-deploy-mqtt-broker.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-title: Title
-summary: Description.
+title: Title altair-azure-sphere-deploy-mqtt-broker
+summary: Summary altair-azure-sphere-deploy-mqtt-broker.
 abstract:  |
   In this module, you will:
   - One, etc.

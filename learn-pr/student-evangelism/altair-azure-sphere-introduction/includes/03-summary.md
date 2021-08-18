@@ -8,6 +8,6 @@ In this module, we were:
 
 ## Resources
 
-* [Introduction to Azure Sphere](https://docs.microsoft.com/en-us/learn/modules/intro-azure-sphere?azure-portal=true)
-* [Azure Sphere Documentation](https://docs.microsoft.com/en-us/azure-sphere?azure-portal=true)
+* [Introduction to Azure Sphere](/learn/modules/intro-azure-sphere?azure-portal=true)
+* [Azure Sphere Documentation](/azure-sphere?azure-portal=true)
 * [Altair 8800](https://en.wikipedia.org/wiki/Altair_8800?azure-portal=true)

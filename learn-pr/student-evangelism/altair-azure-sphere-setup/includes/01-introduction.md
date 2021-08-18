@@ -1,7 +1,7 @@
 In this module you are going to learn about the supported Altair 8800 emulator hardware configurations and how to set up the Azure Sphere
 development environment.
 
-If you are new to Azure Sphere development and IoT Central then it’s strongly recommended you complete the [Develop secure IoT solutions for Azure Sphere, Azure RTOS and Azure IoT Central](https://docs.microsoft.com/learn/modules/develop-secure-iot-solutions-azure-sphere-iot-central/) Microsoft Learn module before attempting to set up the Altair on Azure Sphere solution.
+If you are new to Azure Sphere development and IoT Central then it’s strongly recommended you complete the [Develop secure IoT solutions for Azure Sphere, Azure RTOS and Azure IoT Central](/learn/modules/develop-secure-iot-solutions-azure-sphere-iot-central/) Microsoft Learn module before attempting to set up the Altair on Azure Sphere solution.
 
 ## Hardware requirements
 
