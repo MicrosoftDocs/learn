@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.pc-holographic-remoting-tutorials-mrtk.3-exercise-getting-started-with-pc-holographic-remoting
+title: Exercise Getting started with pc holographic remoting
+metadata:
+  title: 
+  description: Introduction for Getting started with pc holographic remoting
+  ms.date: 06/23/2021
+  author: "varunsiddaraju"
+  ms.author: "v-hferrone"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-exercise-getting-started-with-pc-holographic-remoting.md)]
