@@ -18,6 +18,6 @@ Let’s work with an example to understand the process of feature engineering. I
 
 The question is, how best to represent this data to a machine learning algorithm that can learn its cyclical nature? One approach is to engineer a set of new features that transforms the `hour of day` column using sine and cosine functions. These derived features are plotted in the figure below for the range `[0, 24]`:
 
-![Engineered Features](../media/02-01-03-engineered_features.jpg)
+![Engineered Features](../media/02-01-03-engineered-features.jpg)
 
 The cosine function provides symmetrically equal weights to corresponding AM and PM hours, and the sine function provides symmetrically opposite weights to corresponding AM and PM hours. Both functions capture the cyclical nature of `hour of day`.
