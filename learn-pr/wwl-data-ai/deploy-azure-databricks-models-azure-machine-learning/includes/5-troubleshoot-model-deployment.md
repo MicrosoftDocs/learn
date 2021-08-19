@@ -15,7 +15,7 @@ print(service.state)
 ```
 
 > [!NOTE]
-> **Note**: To view the **state** of a service, you must use the compute-specific service type (for example **AksWebservice**) and not a generic **WebService** object.
+> To view the **state** of a service, you must use the compute-specific service type (for example **AksWebservice**) and not a generic **WebService** object.
 
 For an operational service, the state should be *Healthy*.
 
