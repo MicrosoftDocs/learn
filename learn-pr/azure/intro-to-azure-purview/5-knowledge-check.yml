@@ -12,6 +12,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |
+  [!include[](includes/4-when-to-use-azure-purview.md)]
 quiz:
   questions:
   - content: "What does Azure Purview do with the data it discovers from your registered sources?"
