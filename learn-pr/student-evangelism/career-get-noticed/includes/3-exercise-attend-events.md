@@ -4,7 +4,7 @@ The first step to networking, is to attend functions and events within your sphe
 
 The first step to networking is to find out where to meet people. Within technology, there are user groups, groups that have members that all share a common interest about a technology for example. Next, you will become a member of such a group. Being a member means you will be notified about upcoming events that you can sign up for.
 
-1. Go to `http://www.meetup.com` and find meetup groups in your area and join at least a couple of groups that matches your interest:
+- Go to `http://www.meetup.com` and find meetup groups in your area and join at least a couple of groups that matches your interest:
 
    For example, join a group on JavaScript and another on Vue.js
 
@@ -16,7 +16,7 @@ User groups usually have meetings with a monthly cadence. By going to an event, 
 
    Join a JavaScript event on the 15th
 
-An event usually consists of one or more speakers and at least a break between session. Now is your chance to meet people of interest.
+   An event usually consists of one or more speakers and at least a break between session. Now is your chance to meet people of interest.
 
 1. Set a goal for meeting and conversing with many people at the event.
 
@@ -35,11 +35,14 @@ So you are going to an event, you have a plan to speak to many people. What do y
 - Any part of the talk you found interesting?
 - Be transparent, if you are looking for a job, say so, or maybe you are looking for a consultancy contract or an internship?
 
-1. Find a time either before the talk or in the break to ask a subset of the questions above.
+Find a time either before the talk or in the break to ask a subset of the questions above.
 
    Here's an example interaction:
 
-   You: What did you think of tonight's talk?
-   New person: Interesting, learned some new things.
-   You: Have you used this tech before?
-   New person: No, but eager to try it out.
+   > You: What did you think of tonight's talk?
+   > 
+   > New person: Interesting, learned some new things.
+   > 
+   > You: Have you used this tech before?
+   > 
+   > New person: No, but eager to try it out.

@@ -12,7 +12,7 @@ When you read the description of a role, pay close attention to the technical sk
 
 The employer often lists tech skills in two different ways: the tech skills you must have, labeled as minimum requirements, and the preferred skills.  
 
-- **Minimum Requirements for the position**: If you do not meet the minimum requirements, your application may not make it past the initial screening. However, remember that no internship expects an expert. Look at the minimum qualifications as guidance towards skills that you should develop, and use your resume to explain how you are gaining experience in those areas and that you will likely meet them by the time you interview.
+- **Minimum requirements for the position**: If you do not meet the minimum requirements, your application may not make it past the initial screening. However, remember that no internship expects an expert. Look at the minimum qualifications as guidance towards skills that you should develop, and use your resume to explain how you are gaining experience in those areas and that you will likely meet them by the time you interview.
 
     > [!NOTE]
     > Remember, the job you definitely won't get is the one for which you don't apply. While you shouldn't apply to a job or internship if you don't have any of the required skills, if you have a basic level in a skill and work really hard on it, a lot can happen in a matter of weeks and months to set you up for success.
@@ -53,15 +53,12 @@ In order to stand out, you must be able to condense your experience into short y
 
 Technical experience will include anything you had an impact on that can be related to technical skills. Examples of this type of experience can include, among many things:  
 
-- personal or class projects
+- Personal or class projects
+- Research positions
+- Reaching assistant or tutoring positions
+- Hackathon projects
 
-- research positions
-
-- teaching assistant or tutoring positions
-
-- hackathon projects
-
-Volunteer opportunities with nonprofit organizations in and outside of school
+### Volunteer opportunities with nonprofit organizations in and outside of school
 
 These activities are attractive to recruiters as they cover where you acquired or how you implemented both technical and human skills. They also provide the ground for a technical chat in interviews. Therefore, it is important to have these experiences written in an *efficient*, *eye-catching* way where your *impact* is highlighted.
 
@@ -70,15 +67,14 @@ To illustrate, let's create a scenario with a class project:
 Suppose you worked on a Python class project that required bug fixing for a calculator to work correctly. You identified the issues, implemented the fixes and tested before turning it in for grading. You might describe this project thus:  
 
 > Calculator Project - Programming II Class Example University 2020
-
+> 
 > - Programmed a calculator program using Python.
-
 > - Fixed bugs that were in the original code
 
 Although this example describes your project and your work, it sounds like a basic project and does not help to showcase you as an individual. By rephrasing it to focus on its impact, however, the project will better demonstrate your skills and impact:
 
 > Calculator Class Project - Example University 2020
-
+> 
 > - *Ensured* the correct functionality of a calculator program by identifying X bugs utilizing Python Exemption classes and debugging tools, implementing fixes and testing the program through Y test cases.
 
 This statement showcases the impact you had in the project right from the start, as you describe what you did (your impact). Next, the statement leads the reader to know how you did it, and provided data (X and Y) to measure your work. By following a similar template, your bullet points will not only catch the attention of recruiters, but also exemplify how you communicate your impact.
@@ -98,9 +94,7 @@ Luckily, describing a non-technical experience can be similar to describing tech
 Using the description template, we could write some bullet points like so:
 
 > - Maintained the club's nursery by monitoring and caring for number different species of plants, in collaboration with number members.
-
 > - Managed number club activities by attending bi-weekly club meetings, communicating and discussing ideas and scheduling number events.
-
 > - Increased event attendance by number of attendees by developing the marketing campaigns of the club with a group of number members.
 
 These points describe your experience while highlighting your interests as an individual. You emphasize your grasp of collaboration, communication, time management, dependability, and decision-making. Do not take non-technical experience lightly, as it could often help you as much as or more than your technical experience when it comes to standing out among other applicants.
@@ -109,6 +103,6 @@ These points describe your experience while highlighting your interests as an in
 
 Whenever you describe an ongoing experience in your resume, make sure that you write about it with action verbs in present tense. Instead of writing ensured, you would write ensure; or develop instead of developed. Even if the task has already been completed, if the experience is ongoing, the best practice is to keep it in present tense. For any other experience, you should keep using past tense.
 
-## Next Steps
+## Next steps
 
 Now that you know how to describe your experiences, the next step is to build your resume.
