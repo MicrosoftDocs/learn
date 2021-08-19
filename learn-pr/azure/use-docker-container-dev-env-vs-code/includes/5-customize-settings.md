@@ -40,10 +40,7 @@ The last section of the file deals directly with project configuration.
 // Add the IDs of extensions you want installed when the container is created.
 "extensions": [
     "ms-python.python"
-]
-
-// Use 'forwardPorts' to make a list of ports inside the container available locally.
-// "forwardPorts": [],
+],
 
 // Use 'postCreateCommand' to run commands after the container is created.
 // "postCreateCommand": "pip3 install --user -r requirements.txt",
@@ -53,8 +50,6 @@ The last section of the file deals directly with project configuration.
 ```
 
 - You can use the `extensions` array to specify which Visual Studio Code extensions should be installed in Visual Studio Code when it connects to the container. Your normal Visual Studio Code setup and all the extensions that you already have won't be present when you're using Remote - Containers. Extensions are specified here with their ID. 
-
-  You can find the ID by searching the extension gallery for an extension, right-clicking that extension, and selecting **Copy Extension ID**. When you have the Remote - Containers extension installed, you can also right-click an extension and choose **Add to devcontainer.json**.
 
 - The `postCreateCommand` option lets you run any commands that you want after the container is created. If you remember from the first exercise, you had to run the `pip3` command to install dependencies. But how would you know to do that? You might not. You can configure it here so that it will happen automatically and others won't have to worry about it.
 

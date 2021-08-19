@@ -13,7 +13,7 @@ In this exercise, you'll add a dev container and open the Products Dashboard pro
    | ------------------------------------------- | ----------- |
    | Select a container configuration definition | Python 3    |
    | Python version                              | 3 (default) |
-   | Install Nodejs                              | none        |
+   | Install Node.js                              | none        |
 
 5. Select **OK**.
 

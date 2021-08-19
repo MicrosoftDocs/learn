@@ -12,7 +12,7 @@ In this exercise, you'll clone one of the agency's projects: a Products Dashboar
     ```
 
 1.  Open a new instance of Visual Studio Code.
-1.  Select the **Clone Repository** button in the sidebar.
+1.  Select the **Clone Repository** button in the sidebar, or press <kbd>F1</kbd> to open the Command Palette and search for **Git: Clone**.
 1.  Paste in the URL from your clipboard.
 1.  Select a location on your disk where the project can be cloned to.
 1.  Select **Open** from the notification in Visual Studio Code.
@@ -22,7 +22,6 @@ The project should now be open in Visual Studio Code.
 
 > [!NOTE]
 > If you receive a warning in Visual Studio Code about selecting a Python interpreter, you can safely ignore it.
-
 
 ## Install the Remote - Containers extension
 

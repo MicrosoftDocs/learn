@@ -45,12 +45,6 @@ Uncomment the `postCreateCommand` option.
 
 The container will be rebuilt with the changes you've specified in the devcontainer.json file.
 
-## Examine the forwarded port
-
-1. Open the Command Palette.
-1. Type **remote explorer** and select **View: Show Remote Explorer**.
-1. Notice that port 5000 is already forwarded, even though you haven't started the app yet.
-
 ## Examine syntax highlighting provided by the Jinja extension
 
 1. Open the template/index.html file.
