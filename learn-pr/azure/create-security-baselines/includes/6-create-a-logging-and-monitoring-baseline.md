@@ -86,7 +86,7 @@ Monitoring for **Create or update SQL Server Firewall Rule** events provides ins
 
 1. Select **Done**.
 
-    :::image type="content" source="../media/6-sql-server.png" alt-text="Screenshot of Select SQL servers resource." lightbox="../media/6-sql-server.png#lightbox":::!
+    :::image type="content" source="../media/6-sql-server.png" alt-text="Screenshot of Select SQL servers resource." lightbox="../media/6-sql-server.png#lightbox":::
 
     > [!TIP]
     > Remember to select **Save** if you make changes to any of the settings.
