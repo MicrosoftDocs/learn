@@ -4,7 +4,7 @@ In this exercise, we will be looking at how to answer questions. By practicing h
 
 Practice makes perfect. By setting a time on a regular interval, you improve through repetition. Answering questions is no different:
 
-1. Schedule time each day before your interview, to practice some of these questions in front of a mirror or with a friend.
+Schedule time each day before your interview, to practice some of these questions in front of a mirror or with a friend.
 
    ```output
    For example, decide to practice interview questions each day between 5pm-6pm.
@@ -17,7 +17,7 @@ There are many types of questions you can practice like for example:
 - code questions, on algorithm or architecture.
 - soft skill question on how you would act in a certain situation.
 
-1. Take an example of some code you have written and challenge yourself to explain it verbally in five minutes.
+Take an example of some code you have written and challenge yourself to explain it verbally in five minutes.
 
    > Take a parser for a calculator and explain what the task was, what were the challenges, and how you approached them.
 
@@ -33,10 +33,10 @@ Practice structuring your explanation minute by minute:
 - Here is how I solved the challenge
 - Here is what I learned by completing this code
 
-1. Select a problem and use the above template for describing it:
+Select a problem and use the above template for describing it:
 
-   > Here's an example output:
-   >
+Here's an example output:
+
    > The problem:
    > The task was about designing a calculator. The input is taken from the command line.
    > First I needed to find out if there was any considerations like what operators it should support and how the input happens, if numbers and operators are input separately.
@@ -61,6 +61,6 @@ Practice structuring your explanation minute by minute:
 
 Another important part of communication is body language, how things are said and what inflections used, can make a significant difference in how you are perceived.
 
-1. Challenge yourself to observe your body language as you speak, and try to ensure that you always look confident in your answers.
+Challenge yourself to observe your body language as you speak, and try to ensure that you always look confident in your answers.
 
    > Pay attention to whether you are sitting or standing with a straight back. Relax your posture and don't have hands in your pockets. Look the interviewers in the eyes.

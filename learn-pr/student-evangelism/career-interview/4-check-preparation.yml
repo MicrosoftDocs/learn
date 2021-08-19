@@ -13,7 +13,6 @@ durationInMinutes: 1
 content: |
   [!include[](includes/4-check-preparation.md)]
 quiz:
-  title: Check your knowledge
   questions:
     - content: What's the best way to prepare for an interview at an algorithmic
         focused company?
