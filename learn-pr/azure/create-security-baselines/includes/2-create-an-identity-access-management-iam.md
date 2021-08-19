@@ -72,7 +72,7 @@ Ensure that no guest users exist, or alternatively, if the business requires gue
 
 1. In the *Search users* search box, enter *guest*, and verify that no guest users exist depending on your requirements (`USER TYPE=Guest`).
 
-    :::image type="content" source="../media/2-guest-users.png" alt-text="Screenshot of the Azure portal showing Azure AD all users listing with a single guest user shown.::::
+    :::image type="content" source="../media/2-guest-users.png" alt-text="Screenshot of the Azure portal showing Azure AD all users listing with a single guest user shown."::::
 
 ### Password options
 
