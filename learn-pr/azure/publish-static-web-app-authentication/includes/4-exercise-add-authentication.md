@@ -16,7 +16,7 @@ The Static Web Apps CLI, also known as SWA CLI, is a local development tool that
 
 1. Open a terminal on your computer.
 
-1. Install the CLI running this command:
+1. Install the CLI running the following command.
 
     ```bash
     npm install -g @azure/static-web-apps-cli
@@ -34,71 +34,71 @@ We'll now run the app and API locally with a development server. This way, you'l
 
 1. Go to the folder of your preferred front-end framework, as follows:
 
-   ::: zone pivot="angular"
+::: zone pivot="angular"
 
    ```bash
    cd angular-app
    ```
 
-   ::: zone-end
+::: zone-end
 
-   ::: zone pivot="react"
+::: zone pivot="react"
 
    ```bash
    cd react-app
    ```
 
-   ::: zone-end
+::: zone-end
 
-   ::: zone pivot="svelte"
+::: zone pivot="svelte"
 
    ```bash
    cd svelte-app
    ```
 
-   ::: zone-end
+::: zone-end
 
-   ::: zone pivot="vue"
+::: zone pivot="vue"
 
    ```bash
    cd vue-app
   ```
 
-   ::: zone-end
+::: zone-end
 
 1. Run the front-end client application using a development server.
 
-   ::: zone pivot="angular"
+::: zone pivot="angular"
 
    ```bash
    npm start
    ```
 
-   ::: zone-end
+::: zone-end
 
-   ::: zone pivot="react"
+::: zone pivot="react"
 
    ```bash
    npm start
    ```
 
-   ::: zone-end
+::: zone-end
 
-   ::: zone pivot="svelte"
+::: zone pivot="svelte"
 
    ```bash
    npm run dev
    ```
 
-   ::: zone-end
+::: zone-end
 
-   ::: zone pivot="vue"
+::: zone pivot="vue"
 
    ```bash
    npm run serve
    ```
 
-   ::: zone-end
+::: zone-end
 
    Leave this server running in the background. We'll now run the API and authentication server emulator using the SWA CLI.
 

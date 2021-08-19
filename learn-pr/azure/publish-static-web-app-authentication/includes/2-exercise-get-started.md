@@ -268,7 +268,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 1. Select **Concierge Subscription**, and press <kbd>Enter</kbd>.
 
-   :::image type="content" source="../media/extension-concierge-subscription.png" alt-text="Filter by subscription.":::
+    :::image type="content" source="../media/extension-concierge-subscription.png" alt-text="Filter by subscription.":::
 
 ### Create a Static Web App with Visual Studio Code
 
