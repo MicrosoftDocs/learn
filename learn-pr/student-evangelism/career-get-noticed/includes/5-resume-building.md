@@ -75,7 +75,7 @@ The following guidelines can assist you in formatting both subsections:
 
 1. **Dates**. Similar to the expected graduation date, list the dates for both projects and positions. If these projects or positions are ongoing, write the starting date followed by "- Current". This information should be right aligned on the same line as the name/role.
 
-1. **Describe experience**. Following the title of your project/your role, you will want to add the bullet points describing your experience. Doing so will incorporate the writings we described in the previous unit, under [Describing your experience](./resume-writing.md). Following the examples used there, the two subsections should be similar to the below text:
+1. **Describe experience**. Following the title of your project/your role, you will want to add the bullet points describing your experience. Doing so will incorporate the writings we described in the previous unit, under [Describing your experience](../resume-writing.yml). Following the examples used there, the two subsections should be similar to the below text:
 
    >**Projects**
    >```
