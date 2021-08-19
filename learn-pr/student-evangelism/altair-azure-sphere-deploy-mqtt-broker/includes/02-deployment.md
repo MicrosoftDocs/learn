@@ -1,8 +1,8 @@
-In this unit, you will learn how to deploy your own private MQTT Broker
+In this unit, you'll learn how to deploy your own private MQTT Broker
 
 ## Overview
 
-These are the steps to running a private MQTT broker.
+The following list outlines the steps to run a private MQTT broker.
 
 1. Create a Linux Ubuntu Azure Virtual Machine.
 1. Configure network ports to open.
@@ -16,6 +16,4 @@ These are the steps to running a private MQTT broker.
 1. Start the Mosquitto MQTT Broker in daemon/service mode.
 1. Autostart the virtual disk server.
 
-
-
-In the following exercise, you will learn how to install your own (and free) Mosquitto Broker.
+In the following exercise, you'll learn how to install your own (and free) Mosquitto Broker.
