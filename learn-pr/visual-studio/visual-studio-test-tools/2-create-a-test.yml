@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.visual-studio-test-tools.2-create-a-test
-title: Exercise - write a test
+title: Create a test
 metadata:
   unitType: learning-content
-  title: Exercise - write a test
+  title: Create a test
   description: Learn to create a test project, add a reference, and write a test.
   author: kendrahavens
   ms.author: kehavens

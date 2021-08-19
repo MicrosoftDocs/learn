@@ -1,12 +1,10 @@
-# Sharpen your test writing skills
-
-You can brush up on different types of tests and more testing concepts with [Introduction to software testing concepts](/learn/modules/visual-studio-test-concepts/). There are many tools out there to help you write good tests that help make your tests easy to understand, avoid repetition, and help you test any architecture. Let's go over some popular ones and their advantages.
-
 This unit will cover a few useful test writing tips:
 
 * **Fluent assertions**: Enables using assert statements that are more human-readable.
 * **Data driven tests**: Run the same test repeatedly with different parameters.
 * **Mocking**: Isolate your test by mocking parts of your code that don't affect the test outcome.
+
+You can brush up on different types of tests and more testing concepts with [Introduction to software testing concepts](/learn/modules/visual-studio-test-concepts/). There are many tools out there to help you write good tests that help make your tests easy to understand, avoid repetition, and help you test any architecture. Let's go over some popular ones and their advantages.
 
 ## Fluent Assertions
 
@@ -26,7 +24,7 @@ public void AddTest()
 }
 ```
 
-  ![image](../media/test-fluent-assertion.png)
+:::image type="content" source="../media/test-fluent-assertion.png" alt-text="Screenshot in Visual Studio of AddTest method. A hover tip on the fluent assertion describes the And constraint of fluent assertions with a generic type of int. The description reads the integral number value is exactly the same as the expected value.":::
 
 ## Data driven tests
 
@@ -46,7 +44,7 @@ public void AddDataTests(int x, int y, int expected)
 }
 ```
 
-  ![image](../media/data-driven-test.png)
+:::image type="content" source="../media/data-driven-test.png" alt-text="Screenshot in Visual Studio showing the Test Explorer and the CalculatorTests.cs side by side. The Data Test Method in the editor is failing. The Test Explorer shows 4 results for each data row of the test and shows the final data row's failure message.":::
 
 ## Mocking
 
@@ -55,7 +53,7 @@ public void AddDataTests(int x, int y, int expected)
   * Note that Microsoft Fakes is only available with Visual Studio Enterprise.
   * Navigate to the test project you want to isolate in the Solution Explorer, right-click on the project under the Project node that you want to mock, and select 'Add Fakes Assembly'.
 
-  ![image](../media/test-add-fakes.png)
+   :::image type="content" source="../media/test-add-fakes.png" alt-text="Screenshot in Visual Studio of Solution Explorer showing the projects node under the LearnMyCalculator.Tests project expanded. The right-click menu s open on the LearnMyCalculatorApp node underneath projects. The command Add Fakes Assembly is selected.":::
 
   * Add the using statements to the test file in which you'd like to use shims and stubs.
 
