@@ -1,4 +1,4 @@
-In this module, you will learn about the architecture of both the Azure Sphere and the Altair emulator. You will also learn how to deploy the emulator to your Azure Sphere.
+In this module, you'll learn about the architecture of the Azure Sphere and the Altair emulator. You'll also learn how to deploy the emulator to your Azure Sphere.
 
 ## Azure Sphere Architecture
 
@@ -18,11 +18,11 @@ The Altair emulator consists of three applications, one high-level application, 
 
 1. The **AltairRT_disk_cache_server** real-time application.
 
-    * This application provides Cache-Aside services using a Least Recently Used eviction policy for the Altair emulator virtual file system. The Altair emulator uses the cache to improve remote disk performance. The cache-aside pattern is useful in a wide range of scenarios. For example, you could cache Price Look-Up codes for retail solutions, improving application performance, and application availability, and customer satisfaction.
+    * The disk cache server application provides Cache-Aside services using a Least Recently Used eviction policy for the Altair emulator virtual file system. The Altair emulator uses the cache to improve remote disk performance. The cache-aside pattern is useful in a wide range of scenarios. For example, you could cache Price Look-Up codes for retail solutions.
 
 1. The **AltairRT_enviromon** real-time application.
 
-    * This is a bare metal real-time application responsible for sensing environmental data. If you are using the Avnet Azure Sphere, then the onboard temperature and pressure sensor are used. If you are using the Seeed Studio Azure Sphere dev kit, then random sensible environment data is generated. This data is available to BASIC apps running on the Altair emulator.
+    * The environment monitor application is a bare metal real-time application responsible for sensing temperature, pressure, and humidity. If you're using the Avnet Azure Sphere, then the onboard temperature and pressure sensor are used. If you're using the Seeed Studio Azure Sphere dev kit, then sensible random environment data is generated. This data is available to BASIC apps running on the Altair emulator.
 
 <!-- ## IoT Central IoT Plug and Play model
 

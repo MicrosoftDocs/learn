@@ -1,4 +1,4 @@
-In the following exercise, you will deploy a high-level application to your Azure Sphere.
+In the following exercise, you'll deploy a high-level application to your Azure Sphere.
 
 1. Start Visual Studio Code.
 
@@ -83,7 +83,7 @@ In the following exercise, you will deploy a high-level application to your Azur
 
 ## Step 3: Select your developer board configuration
 
-The  Altair on Azure Sphere project supports developer boards from Avnet and Seeed Studio. Set the configuration that matches your developer board. The default developer board configuration is for the Avnet Azure Sphere Starter Kit Revision 1 with **no** front panel. If you have this board, there is no other configuration required.
+The Altair project works on Azure Sphere developer boards from Avnet and Seeed Studio. The default developer board configuration is the Avnet Azure Sphere Starter Kit Revision 1 with **no** front panel. You can skip this step if this is your configuration.
 
 1. Open **CMakeLists.txt**.
 

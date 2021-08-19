@@ -1,4 +1,4 @@
-In this exercise, you will deploy two real-time applications to your Azure Sphere.
+In this exercise, you'll deploy two real-time applications to your Azure Sphere.
 
 You can either deploy the prebuilt real-time packages to the Azure Sphere or you can compile and deploy your own.
 
