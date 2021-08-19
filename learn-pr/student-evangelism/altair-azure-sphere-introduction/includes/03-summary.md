@@ -1,10 +1,10 @@
 This unit summaries the main steps completed in this module.
 
-In this module, we were:
+In this module, you learned:
 
-* Introduced to the Altair 8800, build on the second generation 8-b CPU from Intel.
-* We learned Azure Sphere comprises of three components. The certified microcontroller, the Azure Sphere Operating System, and the Azure Sphere Security Service.
-* The architecture of the Altair emulator running on Azure Sphere and the related cloud services.
+* About the Altair 8800 that was built on the second-generation 8-bit CPU from Intel.
+* That there are three components to Azure Sphere. The certified microcontroller, the Azure Sphere Operating System, and the Azure Sphere Security Service.
+* The architecture of the Altair emulator running on Azure Sphere and about the related cloud services.
 
 ## Resources
 
