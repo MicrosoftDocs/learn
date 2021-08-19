@@ -79,7 +79,7 @@ Now that you understand the basic setup of a test and test project, the next ste
 
 * **Ctrl+R, T**: the keyboard shortcut **Ctrl+R, T** will also run the tests that are currently in the context of your cursor.
 
-* **CodeLens Test icon**: Enable a small test icon to appear next to test methods by enabling CodeLens in Tools > Options. This provides a helpful UI to run the tests and shows the test result from inside the code editor.
+* **CodeLens Test icon**: Optionally, the editor can show a small test icon next to test methods. You can enable this by switching on CodeLens in Tools > Options. This provides a helpful UI to run the tests and shows the test result from inside the code editor.
 
 :::image type="content" source="../media/test-code-lens.png" alt-text="desc":::
 
@@ -99,7 +99,7 @@ This pattern provides an easy guide as you get into a programming flow. If you a
 
 ## Different assert statements
 
-Assert statements are what determine if your test passes or fails. The different types of asserts also help clearly identify what part of the code behavior is causing the test to fail.
+Assert statements are what determine if your test passes or fails. The different types of asserts also help clearly identify what part of the code behavior is causing the test to fail. Tests can also fail for reasons besides failing the assert criteria such as uncaught exceptions or hitting test timeout limits.
 
 We'll expand the `AddTest` to include some of the most common asserts. The syntax may differ slightly across testing frameworks, but the most common asserts will check for null, assert an equality, assert a condition, or check the contents of a string.
 
