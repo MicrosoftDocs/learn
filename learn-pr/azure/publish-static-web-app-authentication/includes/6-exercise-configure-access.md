@@ -120,15 +120,15 @@ After your app is redeployed, you can test that the new restrictions are effecti
 
 1. Select **AAD** in the authentication provider list to log in.
 
-  You should see a 404 error page like the following:
+   You should see a 404 error page like the following:
 
-  :::image type="content" source="../media/static-web-apps-404-error-page.png" alt-text="Screenshot of the Static Web Apps 404 error page.":::
+   :::image type="content" source="../media/static-web-apps-404-error-page.png" alt-text="Screenshot of the Static Web Apps 404 error page.":::
 
-1. Press the back button of your browser to go back to your app.
+4. Press the back button of your browser to go back to your app.
 
-1. Select **GitHub** in the authentication provider list to log in.
+5. Select **GitHub** in the authentication provider list to log in.
 
-1. Enter your GitHub credentials, if prompted, and then select **Grant Consent** on the Azure consent page.
+6. Enter your GitHub credentials, if prompted, and then select **Grant Consent** on the Azure consent page.
 
 You're now logged in and should see the products list.
 
