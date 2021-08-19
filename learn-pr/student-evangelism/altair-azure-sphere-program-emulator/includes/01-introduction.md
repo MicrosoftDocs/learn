@@ -1,4 +1,4 @@
-In this module, you will learn how how to program the Altair 8800 emulator.
+In this module, you will learn how to program the Altair 8800 emulator.
 
 The Altair emulator is running an Open Source Intel 8080 emulator, and on top of the emulator is layered Altair BASIC and CP/M. [CP/M](https://en.wikipedia.org/wiki/CP/M) is an early microcomputer operating system that predates DOS.
 
@@ -26,6 +26,8 @@ The following are useful reference manuals for the Altair emulator:
 
 In this module, you'll learn how to:
 
+TBD
+
 ## Prerequisites
 
-Add a list or write None.
+TBD
