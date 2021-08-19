@@ -6,13 +6,13 @@ Azure IoT Central is a cloud-based Internet of Things (IoT) application platform
 
 :::image type="content" source="../media/architecture.png" alt-text="The illustration shows the architecture of Azure IoT Central." border="false":::
 
-Azure IoT Central is built on the [8 attributes of successful IoT solutions](https://azure.microsoft.com/resources/8-attributes-of-successful-iot-solutions?azure-portal=true).
+Azure IoT Central is built on the [Eight attributes of successful IoT solutions](https://azure.microsoft.com/resources/8-attributes-of-successful-iot-solutions?azure-portal=true).
 
 ## IoT Central and Azure Sphere tenant trust
 
 Trust is established by sharing your Azure Sphere tenant Certificate Authority certificate with your IoT Central application.
 
-When you establish trust, the Azure Sphere devices in your Azure Sphere tenant will be provisioned in IoT Central when they first connect. Network traffic between your Azure Sphere and your IoT Central application will also be signed and secured using trusted certificates.
+With trust established, your devices will be provisioned with your Altair IoT Central application. Trusted certificates with be used to sign and secure network traffic between your Azure Sphere and IoT Central.
 
 In this module, you'll learn how to:
 
