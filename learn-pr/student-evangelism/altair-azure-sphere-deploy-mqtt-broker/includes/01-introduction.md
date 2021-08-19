@@ -10,8 +10,13 @@ The advantages of running an MQTT broker in a virtual machine include:
 * Private, secure, reliable, and predictable performance.
 * You can run the virtual disk server on the same virtual machine. The Altair virtual disk drive B: will be faster when the virtual disk server is installed on the same computer as the MQTT broker as it eliminates a network round trip.
 
-In this module, you'll learn how to:
+In this module, you will:
+
+* Create an Ubuntu virtual server.
+* Install and secure Mosquitto MQTT Broker.
+* Install Let's Encrypt to provide CA certificate authentication.
+* Run the Python virtual disk server in the virtual machine.
 
 ## Prerequisites
 
-Add a list or write None.
+TBD

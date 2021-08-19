@@ -36,8 +36,13 @@ The IoT Plug and Play model used by this learning module is declared in main.c.
 
 IoT Central is an IoT Plug and Play enabled application. When your device first connects to IoT Central, the IoT Plug and Play Model ID is passed to IoT Central. IoT Central then retrieves the IoT Plug and Play model from the public repository of IoT Plug and Play models and creates a device template and default views. -->
 
-In this module, you'll learn how to:
+In this module, you will:
+
+* Learn about the architecture of Azure Sphere. 
+* Learn about the application architecture of the Altair emulator. 
+* Start the app build and deployment process. 
+* Understand the virtual disk cache-aside server. 
 
 ## Prerequisites
 
-Add a list or write None.
+TBD

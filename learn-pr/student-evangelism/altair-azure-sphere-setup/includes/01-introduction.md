@@ -80,10 +80,14 @@ There are five components to the cloud-enabled Altair on Azure Sphere solution. 
 4. The Virtual disk server.
 5. And optionally, a private MQTT Broker.
 
-In this module, you'll learn how to:
+In this module, you will:
+
+* Learn the hardware and software requirements for the Altair 8800 emulator.
+* Learn about the five components to a cloud-enabled Altair on Azure Sphere solution.
+* Install and configure the components.
 
 ## Prerequisites
 
-Add a list or write None.
+TBD
 
 In the next unit you will learn about the software you need to install on your computer to build and deploy the Altair 8800 emulator to you Azure Sphere.
