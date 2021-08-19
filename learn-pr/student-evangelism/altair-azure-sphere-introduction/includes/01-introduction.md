@@ -7,7 +7,7 @@ The Altair 8800 is considered to be the computer that kick-started the Personal 
 ![Diagram that shows the Altair 8800.](../media/altair-8800-smithsonian-museum.png)
 [Altair 8800 image attribution - Smithsonian Museum](https://commons.wikimedia.org/wiki/File:Altair_8800,_Smithsonian_Museum.jpg)
 
-The Altair 8800 was built on the [Intel 8080](https://en.wikipedia.org/wiki/Intel_8080) CPU, the second 8-bit microprocessor manufactured by Intel in 1974. By today's standards, it is a very simple CPU design, perfect for learning, due to its limited instruction set. This makes it easier to understand and learn computer fundamentals.
+The Altair 8800 was built on the [Intel 8080](https://en.wikipedia.org/wiki/Intel_8080) CPU, the second 8-bit microprocessor manufactured by Intel in 1974. By today's standards, it is a simple CPU design, perfect for learning, due to its limited instruction set. This makes it easier to understand and learn computer fundamentals.
 
 This learning path brings the Altair 8800 to the Azure Sphere. You will learn about secure IoT, secure cloud services, computer fundamentals, using caches to improve performance, and how to program the Altair with Intel 8080 OpCodes, Assembly, C, and BASIC.
 
@@ -28,7 +28,7 @@ Together these components implement [The Seven Properties of Highly Secure Devic
 
 ## Introduction to the cloud-enabled Altair emulator on Azure Sphere
 
-The Azure Sphere is running an Open Source Intel 8080 emulator, and on top of the emulator, we are layering Altair BASIC and CP/M. On CP/M three languages are available: BASIC, and C, and Assembler.
+The Azure Sphere is running an Open Source Intel 8080 emulator, and on top of the emulator, we are layering Altair BASIC and CP/M. On CP/M, three languages are available: BASIC, and C, and Assembler.
 
 The solution integrates several Azure cloud services - IoT Central, Static Web Apps, and Azure VM for virtual disks and MQTT communications services. 
 

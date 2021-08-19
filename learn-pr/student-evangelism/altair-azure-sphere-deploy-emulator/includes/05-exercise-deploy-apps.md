@@ -1,4 +1,4 @@
-In this exercise, we'll deploy two real-time applications to your Azure Sphere.
+In this exercise, you'll deploy two real-time applications to your Azure Sphere.
 
 You can either deploy the prebuilt real-time packages to the Azure Sphere or you can compile and deploy your own.
 
@@ -17,7 +17,7 @@ You can either deploy the prebuilt real-time packages to the Azure Sphere or you
 
     1. For Avnet starter kits, deploy the **AltairRT_enviromon.avnet.imagepackage** package as it has support for the onboard environment sensors.
 
-        * If you are using the MikroE Altair 8800 retro click then deploy the folowoing image.
+        * If you're using the MikroE Altair 8800 Retro Click board, then deploy the following image.
 
             ```bash
             azsphere device sideload deploy --image-package AltairRT_enviromon.generic.imagepackage
@@ -37,7 +37,7 @@ You can either deploy the prebuilt real-time packages to the Azure Sphere or you
 
 ## Optional
 
-For reference, the source code for the disk cache and environment monitor real-time applications are found in the following folder of the GiyHub repo you cloned to your computer.
+For reference, the source code for the disk cache and environment monitor real-time applications are found in the following folder locations of the Altair emulator repo.
 
 |Project | Location|
 |----|----|
@@ -47,14 +47,14 @@ For reference, the source code for the disk cache and environment monitor real-t
 You can build and deploy the real-time applications to the Azure Sphere from Visual Studio Code.
 
 1. Start Visual Studio Code.
-1. Click **Open folder**.
+1. Select **Open folder**.
 1. Open the **Cloud-Enabled-Altair-on-Azure-Sphere** folder you cloned or downloaded.
 1. Open the **AltairRT_disk_cache_server** folder.
-1. Click **Select Folder** or the **OK** button to open the project.
+1. Select **Select Folder** or the **OK** button to open the project.
 
 ### Set Release mode
 
-For the virtual disk cache server, you **must** set the project to **Release** mode which tells the C compiler to optimize code generation for speed. This is required so the real-time cache server responds to cache lookup requests from the high-level application within the expected time frame.
+For the virtual disk cache server, you **must** set the project to **Release** mode. Release mode tells the C compiler to optimize code generation for speed. Release mode is required so the real-time cache server responds to cache lookup requests from the high-level application within the expected time frame.
 
 1. Press <kbd>F1</kbd>.
 1. Type **cmake: Select Variant**.
@@ -67,10 +67,10 @@ For the virtual disk cache server, you **must** set the project to **Release** m
 ## Deploy the AltairRT environment monitor project
 
 1. Start Visual Studio Code.
-1. Click **Open folder**.
+1. Select **Open folder**.
 1. Open the **Cloud-Enabled-Altair-on-Azure-Sphere** folder you cloned or downloaded.
 1. Open the **AltairRT_enviromon** folder.
-1. Click **Select Folder** or the **OK** button to open the project.
+1. Select **Select Folder** or the **OK** button to open the project.
 
 ### Set Release mode
 

@@ -1,4 +1,4 @@
-In this exercise, you will configure your Altair IoT Central application.
+In this exercise, you'll configure your Altair IoT Central application.
 
 1. Switch back to the **IoT Central** web portal.
 
@@ -27,7 +27,7 @@ From the Device menu bar, select **Manage device**, then **Rename**.
 
 From the Device menu bar, select **Edit template**.
 
-1. Select **Customize**, and expand the **Desired temperature** property. Update the property using the information from the table below and click **Save**.
+1. Select **Customize**, and expand the **Desired temperature** property. Update the property using the information from the table below and select **Save**.
 
      :::image type="content" source="../media/iot-central-template-customize.png" alt-text="The illustration shows how to customize a device template.":::
 
@@ -42,7 +42,7 @@ From the Device menu bar, select **Edit template**.
 
 ### Add Properties view
 
-1. Click **Views** and select **Editing device and cloud data**.
+1. Select **Views** and then select **Editing device and cloud data**.
 
      :::image type="content" source="../media/iot-central-view-properties-create.png" alt-text="The illustration shows how to view and create properties.":::
 
@@ -57,33 +57,33 @@ From the Device menu bar, select **Edit template**.
     * Desired temperature
     * LED Brightness
     * Local serial output
-1. Click **Add section**
-1. Click **Save**
+1. Select **Add section**
+1. Select **Save**
 
      :::image type="content" source="../media/iot-central-template-properties.png" alt-text="The illustration shows setting properties.":::
 
 ### Add an Environment data visualization view
 
-1. Click **Views** and select **Visualizing the device**.
+1. Select **Views** and then select **Visualizing the device**.
 
     > [!div class="mx-imgBorder"]
     > ![The illustration shows how to select visualizing the device.](../media/iot-central-visualize-create.png)
 
 1. Name the view **Environment**.
 1. From the **Start with a visual** list, select **Line chart**, scroll to the end of the list, and select **Add tile**.
-1. Click the **Configure** icon on the tile.
-1. Click **+ Capability**.
+1. Select the **Configure** icon on the tile.
+1. Select **+ Capability**.
 1. From the capability list, select **Temperature**.
 
     > [!div class="mx-imgBorder"]
     > ![The illustration shows how to expand properties.](../media/iot-central-visualize-tile-capabilities.png)
 
-1. Click **Update**.
-1. Click **Save**.
+1. Select **Update**.
+1. Select **Save**.
 
 ### Publish template
 
-1. Finally, click **Publish** to publish the template into the IoT Central application.
+1. Finally, select **Publish** to publish the template into the IoT Central application.
 
     :::image type="content" source="../media/iot-central-template-publish.png" alt-text="The illustration shows selecting the Publish button.":::
 
@@ -97,27 +97,23 @@ From the Device menu bar, select **Edit template**.
 
 ## Update the Device properties tab
 
-Set the initial state for the Altair emulator.
-
-Set as following:
+Set the initial state for the Altair emulator:
 
 1. CPU state: Running
 1. Desired Temperature (Celsius): 30
 1. LED Brightness (Avnet with LED Click): 2
 1. Local serial output: Disabled
-1. The Channel ID is for information only. It is required for the Virtual Disk Server.
+1. The Channel ID is for information only.
 
 ## Create an IoT Central API Token
 
-You need to create an IoT Central API Token for the Altair Web Terminal.
-
-The Web Terminal Static Web App includes an Azure Function that needs the API Token to connect to your IoT Central application. The Azure Function locates your device by its display name to retrieve the Channel Id used to form unique MQTT topic names used for communications between the Altair emulator running on the Azure Sphere and the console running in the Web Terminal.
+The Web Terminal uses the IoT Central device name to connect to the Altair emulator. The Web Terminal needs an IoT Central API Token to access and set the Channel ID property for the device name. The Web Terminal and the Altair emulator use the Channel ID to form unique MQTT topics. Messages flow between the Altair emulator and the Web Terminal using these MQTT topics.
 
 1. From the IoT Central sidebar menu, navigate to **Administration**, then **API Token**.
-1. Click **Generate token**.
+1. Select **Generate token**.
 1. Name your token **Altair-Web-Terminal**.
-1. Click **Generate**
-1. **Copy** the generated token to notepad as you will need for the next step.
+1. Select **Generate**
+1. **Copy** the generated token to notepad as you'll need for the next step.
 
 > [!div class="mx-imgBorder"]
 > ![The illustration shows the API Tokens tab.](../media/iot-central-api-token-generate.png)
@@ -126,7 +122,7 @@ The Web Terminal Static Web App includes an Azure Function that needs the API To
 
 You need the IoT Central URL for the Altair Web Terminal.
 
-1. From your browser address bar, **copy** the base address of your IoT Central application to notepad as you will need for the next step.
+1. From your browser address bar, **copy** the base address of your IoT Central application to notepad as you'll need for the next step.
 1. Ensure you **remove** the trailing '**/**' from the URL.
 
 > [!div class="mx-imgBorder"]

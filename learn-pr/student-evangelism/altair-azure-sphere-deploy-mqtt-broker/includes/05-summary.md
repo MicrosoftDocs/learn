@@ -1,6 +1,10 @@
 This unit summaries the main steps completed in this module.
 
-In this module, you learned how to deploy your own private secured MQTT Broker and how to set up Let's Encrypt. You also learned how to run the virtual disk server in the Azure Virtual machine.
+In this module, you learned how to:
+
+1. Deploy an MQTT Broker.
+1. Install Let's Encrypt.
+1. Install the virtual disk server.
 
 ## Resources
 

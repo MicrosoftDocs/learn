@@ -1,3 +1,5 @@
+In this exercise, you'll install and run the Altair emulator virtual disk server.
+
 ## Start the Virtual Disk Server
 
 From a terminal window:
@@ -13,13 +15,13 @@ From a terminal window:
 
 1. Start the Python Virtual Disk Server
 
-    On Windows start as follows:
+    On Windows, start as follows:
 
     ```bash
     python PyDiskSvr.py -b test.mosquitto.org -c <YOUR DEVICE CHANNEL ID FROM IOT CENTRAL>
     ```
 
-    On Linux start as follows:
+    On Linux, start as follows:
 
     ```bash
     python3 PyDiskSvr.py -b test.mosquitto.org -c <YOUR DEVICE CHANNEL ID FROM IOT CENTRAL>

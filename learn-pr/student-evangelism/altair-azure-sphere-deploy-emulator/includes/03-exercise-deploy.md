@@ -1,14 +1,14 @@
-In this exercise, we'll deploy a high-level application to your Azure Sphere.
+In the following exercise, you'll deploy a high-level application to your Azure Sphere.
 
 1. Start Visual Studio Code.
 
-2. Click **Open folder**.
+2. Select **Open folder**.
 
 3. Open the **azure-sphere-altair** folder you cloned or downloaded.
 
 4. Open the **AltairHL_emulator** folder.
 
-5. Click **Select Folder** or the **OK** button to open the project.
+5. Select **Select Folder** or the **OK** button to open the project.
 
 ## Step 2: Configure the Azure Sphere application
 
@@ -17,7 +17,7 @@ In this exercise, we'll deploy a high-level application to your Azure Sphere.
 1. Update the connection properties for the Azure IoT Central application.
 
     * Update **CmdArgs** with your Azure IoT Central ID scope.
-    * Update **DeviceAuthentication** with your Azure Sphere Tenant ID. Remember, this was the numeric value returned from running the **azsphere tenant show-selected** command.
+    * Update **DeviceAuthentication** with your Azure Sphere Tenant ID. Remember, the Tenant ID was the numeric value returned from running the **azsphere tenant show-selected** command.
 
 1. Update the **AllowedConnections** with the Azure IoT Central application endpoints you copied to Notepad.
 
@@ -83,7 +83,7 @@ In this exercise, we'll deploy a high-level application to your Azure Sphere.
 
 ## Step 3: Select your developer board configuration
 
-The  Altair on Azure Sphere project supports developer boards from Avnet and Seeed Studio. You need to set the configuration that matches your developer board. The default developer board configuration is for the Avnet Azure Sphere Starter Kit Revision 1 with **no** front panel. If you have this board, there is no additional configuration required.
+The Altair project works on Azure Sphere developer boards from Avnet and Seeed Studio. The default developer board configuration is the Avnet Azure Sphere Starter Kit Revision 1 with **no** front panel. You can skip this step if this is your configuration.
 
 1. Open **CMakeLists.txt**.
 
@@ -106,7 +106,7 @@ The  Altair on Azure Sphere project supports developer boards from Avnet and See
     # set(ALTAIR_FRONT_PANEL_RETRO_CLICK TRUE "Avnet with Altair 8800 Retro Click")
     ```
 
-5. Save the **CMakeLists.txt** file. This will autogenerate the CMake cache.
+5. Save the **CMakeLists.txt** file. Saving the file will autogenerate the CMake cache.
 
 ## Step 4: Deploy the application to Azure Sphere
 
@@ -131,6 +131,6 @@ The  Altair on Azure Sphere project supports developer boards from Avnet and See
 
 Observe the WLAN status LED on your developer board while the device establishes a secure connection to IoT Central and the MQTT Broker
 
-1. While establishing a WiFi connection the WLAN LED will blink on for 700ms, then off for 700ms.
-1. While establishing a connection to IoT Central and the MQTT Broker the WLAN LED will blink on for 100ms, then off for 1300ms.
-1. When the connection has been established with IoT Central the WLAN LED will blink on for 1300ms, then off for 100ms.
+1. While establishing a WiFi connection the WLAN LED will blink on for 700 ms, then off for 700 ms.
+1. While establishing a connection to IoT Central and the MQTT Broker the WLAN LED will blink on for 100 ms, then off for 1300 ms.
+1. When the connection has been established with IoT Central the WLAN LED will blink on for 1300 ms, then off for 100 ms.

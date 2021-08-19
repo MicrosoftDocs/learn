@@ -2,7 +2,7 @@ In this unit, you'll learn how to create a cloud-based Azure IoT Central applica
 
 ## Steps to follow
 
-These are the steps you'll follow:
+Follow these steps:
 
 1. Create an Azure IoT Central application.
 1. Set up a trusted relationship between your Azure Sphere tenant and Azure IoT Central.

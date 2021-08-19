@@ -1,10 +1,10 @@
-In this exercise, you will learn how install your own Mosquitto MQTT Broker. This is an advanced topic and assumes you are comfortable with Linux.
+In this exercise, you'll learn how to install your own Mosquitto MQTT Broker. This unit is an advanced topic and assumes you're comfortable with Linux.
 
 ## Where to install
 
-You can set up a private instance of the Mosquitto MQTT broker and run in an Azure Virtual Machine which will allow you to securely connect to your Azure Sphere from any location.
+You can run a private Mosquitto MQTT broker in an Azure Virtual Machine. Running a private MQTT broker will allow you to securely connect to your Azure Sphere from anywhere.
 
-We will set up certificates for MQTT over TLS, and the easiest and free way is to use self-signed CA (Certificate Authority) certificate and create client keys signed by your own CA certificate.
+MQTT messages between the Web Terminal and Altair emulator need to be signed and encrypted with client certificates. The easiest and free way to create TLS certificates is to create a self-signed CA (Certificate Authority) certificate. You create client keys and certificates using the self-signed CA certificate.
 
 ## What to install
 
@@ -18,30 +18,32 @@ Installing the Mosquitto MQTT Broker on Linux is the easiest option as most pack
 
 ## Installing a Mosquitto MQTT Broker on an Ubuntu Server Virtual Machine on Azure
 
-Follow these steps to set up an Azure Virtual Machine running Ubuntu 20.04 LTS. The workload is very light and can be run on a **General purpose B1 SKU** which costs approximately 0.0023 USD/hr and of course, you can shut the Virtual Machine down when you are not using it.
+Follow these steps to set up an Azure Virtual Machine running Ubuntu 20.04 LTS.
+
+To minimize costs, the MQTT broker can be run on a **General purpose B1 SKU** virtual machine and the virtual machine can be stopped when not in use.
 
 The following article is a great guide to installing an [Ubuntu Server on Azure](https://k21academy.com/microsoft-azure/az-104/az-104-create-and-connect-an-ubuntu-virtual-machine-in-azure/).
 
-### Step 1: Create a Ubuntu Virtual Server
+### Step 1: Create an Ubuntu Virtual Server
 
 1. Open the Azure Portal. From the main **burger menu**, select **create a resource**.
-1. Search for **Virtual machine**, and click create.
+1. Search for **Virtual machine**, and select create.
 1. Create a resource group, name your virtual machine, select location, the image **Ubuntu Server 20.04 LTS Gen 1**, and set the size to **Standard_B1ls - 1 vcpu, 0.5 GIB memory**, select **SSH public key**, name your **key pair** the same as your Virtual machine name.
-1. Click **Next: Disks >** and select **Standard HDD** or **Standard SSD LRS**.
-1. Click **Review + create**.
-1. Click **Create**.
+1. Select **Next: Disks >** and select **Standard HDD** or **Standard SSD LRS**.
+1. Select **Review + create**.
+1. Select **Create**.
 1. Download the SSH private key and store in your ~/.shh folder.
 1. It takes about a minute to deploy the Virtual Machine.
 
 ### Step 2: Configure the Virtual Machine
 
-1. Click **Go to resource**.
-1. Click DNS name **Not configured** and set up the DNS name and set the desired **idle timeout**.
+1. Select **Go to resource**.
+1. Select DNS name **Not configured** and set up the DNS name and set the desired **idle timeout**.
 1. Recommend increasing the idle timeout.
-1. Click **Save**.
-1. Click your browser **back** button to return to the Virtual Machine **Overview** blade.
-1. Copy the DNS name to notepad as you will need this name when configuring certificates.
-1. Click the **Networking** blade to set up inbound port rules using the **Add inbound port rule** button. Add the following rules:
+1. Select **Save**.
+1. Select your browser **back** button to return to the Virtual Machine **Overview** blade.
+1. Copy the DNS name to notepad as you will need it when configuring the certificates.
+1. Select the **Networking** blade to set up inbound port rules using the **Add inbound port rule** button. Add the following rules:
 
     | Destination Port  | Protocol     | Name   | Priority  | Description     |
     | --- | --- | --- | --- | --- |
@@ -51,14 +53,14 @@ The following article is a great guide to installing an [Ubuntu Server on Azure]
 
 ### Step 3: Enable Just-in-time access
 
-1. Click the **Configuration** blade.
-1. Click **Enable just-in-time**.
+1. Select the **Configuration** blade.
+1. Select **Enable just-in-time**.
 
 ### Step 4: Connect to the Virtual Machine from your desktop
 
-1. Click the **Connect** blade.
+1. Select the **Connect** blade.
 1. Set the **Source IP** to **My IP**
-1. Click **Request access**
+1. Select **Request access**
 1. From your desktop **SSH** into the Virtual Machine.
 
     ```bash
@@ -84,7 +86,7 @@ The following article is a great guide to installing an [Ubuntu Server on Azure]
 
 ### Step 6: Secure the Mosquitto MQTT Broker
 
-The following steps are required to set up certificates to secure the communications between the Altair emulator and the Web Terminal.  The following will generate a self-signed certificate that is valid for 2 years (730 days).
+The following steps are required to set up certificates to secure the communications between the Altair emulator and the Web Terminal.  The following will generate a self-signed certificate that is valid for two years (730 days).
 
 1. Create a bash CommonName variable set to the DNS name of your Ubuntu Server.
 
@@ -142,14 +144,14 @@ The following steps are required to set up certificates to secure the communicat
 
 [Let's Encrypt](https://letsencrypt.org/) is a nonprofit Certificate Authority providing TLS certificates to 260 million websites. We are going to use a free Let's Encrypt certificate to secure the MQTT messages between the Web Terminal and the Mosquitto MQTT Broker.
 
-We are going to install the **Certbot** ACME client on the Ubuntu Server. Let's Encrypt issued certificates expire after 6 months. The Certbot ensures the certificates are updated before they expire.
+Next, install the **Certbot** ACME client on the Ubuntu Server. Let's Encrypt issued certificates expire after six months. The Certbot ensures the certificates are updated before they expire.
 
 The following are the [instructions for installing the Certbot on Ubuntu](https://certbot.eff.org/lets-encrypt/ubuntufocal-other).
 
 1. The following ensures snapd is up to date and installs Certbot. Copy and paste the complete block of commands into the SSH session and press Enter.
 
     1. You will be prompted to enter your email address and confirm terms and conditions.
-    1. You will be prompted for the domain name of your server. You copied this to notepad.
+    1. You will be prompted for the domain name of your server. You copied the domain name to notepad.
     1. The process takes around 5 minutes to complete.
 
     ```bash
@@ -173,9 +175,9 @@ The following are the [instructions for installing the Certbot on Ubuntu](https:
 
 ### Step 8: Create the Web Terminal username and password
 
-The Web Terminal will use the Let's Encrypt certificate to encrypt MQTT traffic over the internet but it will also need to authenticate.  We need to create a Mosquitto username and password. Note, be sure to note down the username and password as you will need to configure the Web Terminal with the username and password you create.
+The Web Terminal will use the Let's Encrypt certificate to encrypt MQTT traffic over the internet. The Web Terminal will also need to authenticate with the MQTT broker using username and password.
 
-The following command will create a password file and will prompt you to enter a password for the **WebTerminal** username.
+The following command will create the MQTT broker password file and will prompt you to enter a password for the **WebTerminal** username. Note down the username and password you create as they will be needed to configure the Web Terminal Static Web App.
 
 1. Run the mosquitto password command.
 
@@ -236,10 +238,10 @@ A useful troubleshooting tip for the Mosquitto Broker is to start up in interact
     Open the Altair Web Terminal project
 
     1. Start Visual Studio Code.
-    1. From the Visual Studio Code main menu, click **File**, then **Open folder**.
+    1. From the Visual Studio Code main menu, select **File**, then **Open folder**.
     1. Open the **Cloud-Enabled-Altair-on-Azure-Sphere** folder you cloned or downloaded.
     1. Open the **Altair_Web_Terminal** folder.
-    1. Click **Select Folder** or the **OK** button to open the project.
+    1. **Select Folder** or the **OK** button to open the project.
 
     Update the **local.settings.json** file.
 
@@ -263,7 +265,7 @@ A useful troubleshooting tip for the Mosquitto Broker is to start up in interact
 
 3. Start the Web Terminal and **Connect**
 
-4. Observer the Mosquitto Broker interactive output. It will look similar to the following:
+4. Observer the Mosquitto Broker interactive output. It will look similar to the following output:
 
     ```text
     1625795690: mosquitto version 1.6.9 starting
@@ -291,7 +293,7 @@ We need to update the Altair emulator to connect to our new and secured Mosquitt
     ```cmake
     add_compile_definitions(ALTAIR_MQTT_HOST="REPLACE_WITH_YOUR_VIRTIAL_MACHINE_DNS_NAME")    ```
 
-1. Update the **app_manifest.json AllowedConnections** section the the new Virtual Machine domain name. You should remove the existing entry for test.mosquitto.org as you will no longer be using that endpoint.
+1. Update the **app_manifest.json AllowedConnections** section the new Virtual Machine domain name. Remove the entry for test.mosquitto.org as you will no longer be using that endpoint.
 1. Redeploy the Altair emulator to the Azure Sphere.
 1. Check the Web Terminal, you should see the Altair emulator prompt to enter **MEMORY SIZE**.
 1. Check the output from the Mosquitto Broker running in interactive mode. It should look similar to the following.
@@ -320,7 +322,7 @@ We need to update the Altair emulator to connect to our new and secured Mosquitt
 
 Running the Python Virtual Disk Server in the Virtual machine will significantly improve performance as it eliminates the round trip to the MQTT server from your desktop.
 
-1. Clone the Cloud Enabled Altair project to the Virtual machine.
+1. Clone the Altair project to the Virtual machine.
 
     ```bash
     cd ~/ && git clone --depth 1 https://github.com/AzureSphereCloudEnabledAltair8800/AzureSphereAltair8800.git Altair8800Emulator
@@ -364,7 +366,7 @@ Running the Python Virtual Disk Server in the Virtual machine will significantly
 
 ## Troubleshooting
 
-The **mosquitto_pub** and **mosquitto_sub** tools are very useful to test the certificates.
+The **mosquitto_pub** and **mosquitto_sub** tools are useful to test the certificates.
 
 1. In the Virtual Machine
 
@@ -376,7 +378,7 @@ The **mosquitto_pub** and **mosquitto_sub** tools are very useful to test the ce
     mosquitto_pub -h <REPLACE_WITH_YOUR_DOMAIN_NAME> -t "test" -m "hello world" -p 8884 --capath . --cafile ca.crt  --cert client.crt --key client.key
     ```
 
-    You will get an error message if the mosquitto_pub fails. The most likely issue is that the CA Common Name does not match the fully qualified domain name of your Virtual Machine.
+    If mosquitto_pub fails, an error message will be displayed. The most likely cause is the CA Common Name does not match the fully qualified domain name of your Virtual Machine.
 
 ### Test your certificates on the Server
 
