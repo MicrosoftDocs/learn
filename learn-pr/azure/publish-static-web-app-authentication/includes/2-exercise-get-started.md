@@ -199,7 +199,7 @@ It's time to see your application running locally. Each front-end application ru
 
 1. Select the link to browse to your application.
 
-   ::: zone pivot="angular"
+::: zone pivot="angular"
 
 1. Browse to `http://localhost:4200`.
 
@@ -293,7 +293,7 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
    :::image type="content" source="../media/extension-create-app.png" alt-text="Create Static Web Apps.":::
 
-1. Select the **Custom** option, and press <kbd>Enter</kbd>
+1. Select the **Custom** option, and press <kbd>Enter</kbd>.
 
    :::image type="content" source="../media/extension-custom-option.png" alt-text="Create Static Web Apps - Custom.":::
 

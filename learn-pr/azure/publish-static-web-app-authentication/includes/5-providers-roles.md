@@ -18,7 +18,7 @@ The recommended location for the `staticwebapp.config.json` is in the folder set
 
 For our use case, we'll look into routing configuration to achieve what we want.
 
-## Restricting authentication providers
+## Restrict authentication providers
 
 In a previous section, we saw that by default all authentication providers are enabled. We can change that by adding routing rules in the configuration.
 

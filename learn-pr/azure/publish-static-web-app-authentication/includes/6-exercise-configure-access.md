@@ -122,7 +122,7 @@ After your app is redeployed, you can test that the new restrictions are effecti
 
   You should see a 404 error page like the following:
 
-   :::image type="content" source="../media/static-web-apps-404-error-page.png" alt-text="Screenshot of the Static Web Apps 404 error page.":::
+  :::image type="content" source="../media/static-web-apps-404-error-page.png" alt-text="Screenshot of the Static Web Apps 404 error page.":::
 
 1. Press the back button of your browser to go back to your app.
 

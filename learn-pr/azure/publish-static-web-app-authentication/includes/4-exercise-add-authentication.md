@@ -15,6 +15,7 @@ In this exercise, you'll complete the following steps:
 The Static Web Apps CLI, also known as SWA CLI, is a local development tool that allows you to run your web app and API locally and emulate authentication and authorization servers.
 
 1. Open a terminal on your computer.
+
 1. Install the CLI running this command:
 
     ```bash
@@ -99,7 +100,7 @@ We'll now run the app and API locally with a development server. This way, you'l
 
    ::: zone-end
 
-Leave this server running in the background. We'll now run the API and authentication server emulator using the SWA CLI.
+  Leave this server running in the background. We'll now run the API and authentication server emulator using the SWA CLI.
 
 1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>.
 
@@ -915,11 +916,11 @@ Everything is now in place. The final step is to test if everything is working a
 
 1. Select **Login**.
 
-After the login, you're redirected to the previous page. You can see the login buttons have been replaced by a logout button. You can also see your username and the selected provider below the logout button.
+  After the login, you're redirected to the previous page. You can see the login buttons have been replaced by a logout button. You can also see your username and the selected provider below the logout button.
 
-Now that you checked that everything works as expected locally, it's time to deploy your changes.
+  Now that you checked that everything works as expected locally, it's time to deploy your changes.
 
-You can stop the running app and API by pressing <kbd>Ctrl-C</kbd> in both terminals.
+1. You can stop the running app and API by pressing <kbd>Ctrl-C</kbd> in both terminals.
 
 ## Deploy your changes
 
