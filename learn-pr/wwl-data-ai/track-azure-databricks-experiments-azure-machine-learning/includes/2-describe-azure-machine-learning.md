@@ -1,6 +1,6 @@
 Azure Machine Learning is a platform for operating machine learning workloads in the cloud.
 
-![Azure Machine Learning](../media/04-01-01-what-is-azure-ml.jpg)
+![Azure Machine Learning](../media/04-01-01-what-azure-machine-learning.jpg)
 
 Built on the Microsoft Azure cloud platform, Azure Machine Learning enables you to manage:
 

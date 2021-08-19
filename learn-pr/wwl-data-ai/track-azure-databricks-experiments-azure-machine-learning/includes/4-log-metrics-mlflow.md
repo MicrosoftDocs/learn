@@ -36,10 +36,10 @@ with mlflow.start_run() as run:
 
 Since Azure Machine Learning is set up as the backend for MLflow experiments, you can review all the training metrics and artifacts from within the Azure Machine Learning Studio. From within the studio, navigate to the `Experiments` tab, and open the experiment run that corresponds to the MLflow experiment. In the `Metrics` tab of the run, you will observe the model metrics that were logged via MLflow tracking APIs.
 
-![Model metrics](../media/04-01-03-01-AML-metrics.png)
+![Model metrics](../media/04-01-03-01-aml-metrics.png)
 
 Next, when you open the `Outputs + logs` tab you will observe the model artifacts that were logged via MLflow tracking APIs. 
 
-![Model artifacts](../media/04-01-03-01-AML-artifacts.png)
+![Model artifacts](../media/04-01-03-01-aml-artifacts.png)
 
 In summary, using MLflow integration with Azure Machine Learning, you can run experiments in Azure Databricks and leverage Azure Machine Learning workspace capabilities of centralized, secure, and scalable solution to store model training metrics and artifacts.
