@@ -1,6 +1,6 @@
-In this unit, we will learn how to customize an IoT Central application for the Altair emulator.
+In this unit, you'll learn how to customize an IoT Central application for the Altair emulator.
 
-In the following exercise, we will learn how to:
+In the following exercise, you'll learn how to:
 
 1. Rename your device.
 1. Customize template properties.
@@ -9,4 +9,4 @@ In the following exercise, we will learn how to:
 1. Publish the updated template
 1. Generate an IoT Central API Token
 
-In the next exercise you will configure the Altair IoT Central application.
+In the next exercise, you'll configure the Altair IoT Central application.
