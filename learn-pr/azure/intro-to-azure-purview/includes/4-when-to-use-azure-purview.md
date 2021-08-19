@@ -41,6 +41,6 @@ Azure Purview also uses pre-defined Data Plane roles to help control who has acc
 * Purview Data Curator Role - Has access to the Purview portal and can read all content in Azure Purview except for scan bindings, can edit information about assets, can edit classification definitions and glossary terms, and can apply classifications and glossary terms to assets.
 * Purview Data Source Administrator Role - Does not have access to the Purview Portal (the user needs to also be in the Data Reader or Data Curator roles) and can manage all aspects of scanning data into Azure Purview but does not have read or write access to content in Azure Purview beyond those tasks related to scanning.
 
-:::image type="content" source="../media/purview-data-roles.png" alt-text="Screenshot depicting the three Data Plane roles, which are found in the Access control (IAM) pane for the Azure Purview account, in the Azure portal. There are other roles displayed in the Roles tab, along with these three Data Plane roles.":::
+:::image type="content" source="../media/purview-data-roles.png" lightbox="../media/purview-data-roles-expanded.png" alt-text="Screenshot depicting the three Data Plane roles, which are found in the Access control (IAM) pane for the Azure Purview account, in the Azure portal. There are other roles displayed in the Roles tab, along with these three Data Plane roles.":::
 
 The role assignment is managed via Azure's role-based access control (RBAC) capabilities.
