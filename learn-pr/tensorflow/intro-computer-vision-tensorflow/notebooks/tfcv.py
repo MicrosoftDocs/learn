@@ -1,4 +1,4 @@
-# Tensorflow Computer Vision Helper
+# TensorFlow Computer Vision Helper
 
 import tensorflow as tf
 from tensorflow import keras
