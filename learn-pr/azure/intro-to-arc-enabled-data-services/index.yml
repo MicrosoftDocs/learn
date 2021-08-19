@@ -12,13 +12,14 @@ metadata:
 title: Introduction to Azure Arc-enabled data services
 summary: In this module you will learn the fundamentals of hybrid computing and Azure Arc. You will also learn the basics of Azure Arc-enabled data services including the overall architecture. Then you will learn the fundamentals of the major services in Azure Arc-enabled data services, SQL Managed Instance and PostgreSQL Hyperscale.
 abstract: |
-  In this module you will:
-  - Understand how Azure Arc-enabled-data services fits within the Azure Arc set of services.
-  - Learn how Azure Arc-enabled data services provides a hybrid data solution.
-  - Understand a comparison Azure Arc-enabled data services and counterparts for on-premises and Azure solutions.
+  By the end of this module, you will be able to:
+  - Describe why hybrid computing is an important technology strategy for many users and businesses.
+  - Describe what is Azure Arc-enabled data services and why it can be an important part of any hybrid compute and data strategy.
+  - Describe the managed capabilities and benefits of using Azure Arc-enabled SQL Managed Instance for SQL Server workloads.
+  - Describe the managed capabilities and benefits of using Azure Arc-enabled PostgreSQL Hyperscale for applications wanting to use the PostgreSQL engine.
 prerequisites: |
   - Azure Fundamentals part 1 learning Path
-  - Introduction to Azure SQL from Azure SQL Fundamentals learning Path
+  - Introduction to Azure SQL module from Azure SQL Fundamentals learning Path
   - Introduction to Docker containers module in the Administer containers in Azure learning path
   - Introduction to Kubernetes module in the Administer containers in Azure learning path
   - Working knowledge of SQL Server

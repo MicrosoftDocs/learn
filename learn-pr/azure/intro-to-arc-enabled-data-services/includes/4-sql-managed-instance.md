@@ -6,7 +6,7 @@ Azure SQL is a family of database services deployed in the Azure infrastructure:
 
 ### SQL Server in Azure Virtual Machine
 
-This Azure SQL deployment option allows a fully licensed SQL Server product to run on the version of your choice on Windows or Linux. The user manages everything inside guest virtual machine. The infrastructure is managed by Microsoft. This option is known as Infrastructure as a Service (IaaS)
+This Azure SQL deployment option allows a fully licensed SQL Server product to run on the version of your choice on Windows or Linux. The user manages everything inside the guest virtual machine. The infrastructure is managed by Microsoft. This option is known as Infrastructure as a Service (IaaS).
 
 ### Azure SQL Managed Instance
 
@@ -40,7 +40,7 @@ Like Azure SQL Managed Instance, you can deploy Azure Arc-enabled SQL Managed in
 
 - **Business critical (preview)** - This service tier is designed for workloads that require the best performance and highest level of availability. This service tier has no limits for memory or cores and uses availability groups to provide high availability with read scale-out. Instances in the business critical tier map to features supported for SQL Server Enterprise Edition.
 
-Both service tiers are billed on a per core basis but also include the ability to use Azure Hybrid Benefit licensing and a developer option for no cost. Business critical service tier is currently under preview so don't incur any charges for use.
+Both service tiers are billed on a per core basis but also include the ability to use Azure Hybrid Benefit licensing and a developer option for no cost. Business critical service tier is currently under preview so won't incur any charges for use.
 
 Each service tier also supports a free licensed option for development and test purposes.
 
@@ -52,7 +52,7 @@ Integration with Azure for Azure Arc-enabled SQL Managed instance depends on whi
 
 Integration with Azure is handled automatically with direct connected mode through Azure Arc agents and the Azure Arc data controller. All Azure interfaces such as the Azure portal can be used for deployment and configuration.
 
-If you use indirect-connected mode, a minimal amount of data must be sent to Azure for billing purposes. Optionally, you can export data such as metrics and logs. Deployment and configuration through the Azure portal isn't supported indirect-connected mode. However, interfaces such as the az CLI and kubectl can still be used for deployment and configuration.
+If you use indirect-connected mode, a minimal amount of data must be sent to Azure for billing purposes. Optionally, you can export data such as metrics and logs. Deployment and configuration through the Azure portal isn't supported with indirect-connected mode. However, interfaces such as the az CLI and kubectl can still be used for deployment and configuration.
 
 ## Comparison of management capabilities
 
@@ -66,7 +66,7 @@ Azure Arc-enabled SQL Managed instance also uses a versionless engine so updates
 
 ### Deploy and configure
 
-Azure SQL Managed Instance can be deployed using Azure interfaces such as the Azure portal and az CLI. In direct connected mode, Azure Arc-enabled SQL Managed Instance can be deployed with the Azure portal an az CLI. In any connected mode, Azure Arc-enabled SQL Managed Instance can be deployed using az CLI, kubectl, or Azure Data Studio.
+Azure SQL Managed Instance can be deployed using Azure interfaces such as the Azure portal and az CLI. In direct connected mode, Azure Arc-enabled SQL Managed Instance can be deployed with the Azure portal and az CLI. In any connected mode, Azure Arc-enabled SQL Managed Instance can be deployed using az CLI, kubectl, or Azure Data Studio.
 
 Outside of the SQL instance, Azure Arc-enabled Managed Instance can also be configured in direct connected mode using Azure interfaces. In either connected mode, certain options can be configured outside of the SQL instance with az CLI.
 
