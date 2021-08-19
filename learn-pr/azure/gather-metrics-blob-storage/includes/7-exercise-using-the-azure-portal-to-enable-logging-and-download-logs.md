@@ -25,7 +25,7 @@ First, create a virtual machine scale set by using the Azure portal:
    ```
 
 > [!NOTE]
-> For more information, see [Azure Storage Analytics logging](https://docs.microsoft.com/rest/api/storageservices/enabling-storage-logging-and-accessing-log-data).
+> For more information, see [Azure Storage Analytics logging](/rest/api/storageservices/enabling-storage-logging-and-accessing-log-data).
 
 ## Download and install Azure Storage Explorer
 

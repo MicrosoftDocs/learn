@@ -10,7 +10,7 @@ As the deadline for this project approaches, the chief information officer (CIO)
 
 This is a common experience for customers who are new to cloud migration. Engaging an experienced partner can help with these concerns, as can proper planning and data-driven decisions. 
 
-The getting-started guide for [accelerating migration](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/migrate?azure-portal=true) will help the Tailwind Traders migration team address these concerns. In particular, that guide will help the team create a data-driven dialogue with leadership around stakeholder expectations and the general strategy. It will also help the team collect data on the overall portfolio and then map that data to actionable cloud adoption plans.
+The getting-started guide for [accelerating migration](/azure/cloud-adoption-framework/get-started/migrate?azure-portal=true) will help the Tailwind Traders migration team address these concerns. In particular, that guide will help the team create a data-driven dialogue with leadership around stakeholder expectations and the general strategy. It will also help the team collect data on the overall portfolio and then map that data to actionable cloud adoption plans.
 
 ## Scenario 2: Cost misalignment
 
@@ -18,7 +18,7 @@ The Tailwind Traders migration team has gotten its migration factory processes r
 
 As cloud adoption scales, customers commonly experience issues related to proper controls. By accelerating the migration effort, the migration team has skipped important steps around governance and establishing proper guardrails. Cost is the first indicator of this missed step. Fortunately, it's the easiest to bring back under control.
 
-The getting-started guide on [managing cloud costs](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/manage-costs?azure-portal=true) is the best starting point for this common blocker. That article outlines a series of best practices to quickly optimize enterprise costs and resolve the finance director's concerns. It then builds on those best practices by establishing recurring processes to minimize budgetary surprises in the future.
+The getting-started guide on [managing cloud costs](/azure/cloud-adoption-framework/get-started/manage-costs?azure-portal=true) is the best starting point for this common blocker. That article outlines a series of best practices to quickly optimize enterprise costs and resolve the finance director's concerns. It then builds on those best practices by establishing recurring processes to minimize budgetary surprises in the future.
 
 ## Scenario 3: Operations support
 
@@ -33,4 +33,4 @@ Before operational management processes could start, the CIO asked the following
 - Are we capitalizing on the advanced operations built into the Azure platform?
 - What guardrails will ensure that all workload teams follow best practices for stable operations?
 
-You don't need to change how you operate to adopt the cloud, but you should be able to answer these basic operations management questions during any migration of a full datacenter. Transitioning to an operations team after migration is often a blocker for migration efforts. The getting-started guide on [building a cloud operations team](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/team/cloud-operations?azure-portal=true) walks through steps to answer each of these questions and determine whether you need a dedicated cloud operations team.
+You don't need to change how you operate to adopt the cloud, but you should be able to answer these basic operations management questions during any migration of a full datacenter. Transitioning to an operations team after migration is often a blocker for migration efforts. The getting-started guide on [building a cloud operations team](/azure/cloud-adoption-framework/get-started/team/cloud-operations?azure-portal=true) walks through steps to answer each of these questions and determine whether you need a dedicated cloud operations team.

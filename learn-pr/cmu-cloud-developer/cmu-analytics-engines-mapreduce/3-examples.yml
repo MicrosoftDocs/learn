@@ -5,8 +5,8 @@ metadata:
   title: Example MapReduce programs
   description: Review examples of MapReduce programs, including WordCount, Sort, and Sobel.
   ms.date: 03/20/2020
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 12

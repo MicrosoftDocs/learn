@@ -11,17 +11,17 @@ Let's enable a pizza to be added through our web API with a `POST` method.
    public IActionResult Create(Pizza pizza)
    {            
        PizzaService.Add(pizza);
-       return CreatedAtAction(nameof(Create), new { id = pizza.   Id }, pizza);
+       return CreatedAtAction(nameof(Create), new { id = pizza.Id }, pizza);
    }
    ```
 
    The preceding action:
 
    * Responds only to the HTTP POST verb, as denoted by the `[HttpPost]` attribute.
-   * Inserts the request body's `Pizza` object into the    in-memory cache.
+   * Inserts the request body's `Pizza` object into the in-memory cache.
 
    > [!NOTE]
-   > Because the controller is annotated with the `[ApiController]` attribute, it's implied that the `Pizza`    parameter will be found in the request body.
+   > Because the controller is annotated with the `[ApiController]` attribute, it's implied that the `Pizza` parameter will be found in the request body.
 
    The first parameter in the `CreatedAtAction` method call represents an action name. The `nameof` keyword is used to avoid hard-coding the action name. `CreatedAtAction` uses the action name to generate a `location` HTTP response header with a URL to the newly created pizza, as explained in the previous unit.
 
@@ -35,9 +35,12 @@ Let's enable a pizza to be updated through our web API with a `PUT` method.
    [HttpPut("{id}")]
    public IActionResult Update(int id, Pizza pizza)
    {
-       var existingPizza = PizzaService.Get(id);
-       if (id != pizza.Id || existingPizza is null)
+       if (id != pizza.Id)
            return BadRequest();
+           
+       var existingPizza = PizzaService.Get(id);
+       if(existingPizza is null)
+           return NotFound();
    
        PizzaService.Update(pizza);           
    
@@ -48,11 +51,11 @@ Let's enable a pizza to be updated through our web API with a `PUT` method.
    The preceding action:
 
    * Responds only to the HTTP PUT verb, as denoted by the `[HttpPut]` attribute.
-   * Requires that the `id` parameter's value is included in the    URL segment after `pizza/`.
-   * Returns `IActionResult` because the `ActionResult` return    type isn't known until runtime. The `BadRequest` and    `NoContent` methods return `BadRequestResult` and    `NoContentResult` types, respectively.
+   * Requires that the `id` parameter's value is included in the URL segment after `pizza/`.
+   * Returns `IActionResult` because the `ActionResult` return type isn't known until runtime. The `BadRequest`, `NotFound`, and `NoContent` methods return `BadRequestResult`, `NotFoundResult`, and `NoContentResult` types, respectively.
 
    > [!NOTE]
-   > Because the controller is annotated with the `[ApiController]` attribute, it's implied that the `Pizza`    parameter will be found in the request body.
+   > Because the controller is annotated with the `[ApiController]` attribute, it's implied that the `Pizza` parameter will be found in the request body.
 
 ## Remove a pizza
 
@@ -78,9 +81,9 @@ Let's enable a pizza to be removed through our web API with a `DELETE` method.
    The preceding action:
 
    * Responds only to the HTTP DELETE verb, as denoted by the `[HttpDelete]` attribute.
-   * Requires that `id` parameter's value is included in the URL    segment after `pizza/`.
-   * Returns `IActionResult` because the `ActionResult` return    type isn't known until runtime. The `NotFound` and    `NoContent` methods return `NotFoundResult` and    `NoContentResult` types, respectively.
-   * Queries the in-memory cache for a pizza matching the    provided `id` parameter.
+   * Requires that `id` parameter's value is included in the URL segment after `pizza/`.
+   * Returns `IActionResult` because the `ActionResult` return type isn't known until runtime. The `NotFound` and `NoContent` methods return `NotFoundResult` and `NoContentResult` types, respectively.
+   * Queries the in-memory cache for a pizza matching the provided `id` parameter.
 
 ## Build and run the finished web API
 

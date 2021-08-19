@@ -56,8 +56,7 @@ An Azure Key Vault is a resource that can be created in the [Azure portal](https
     | **Instance details** |
     | Key vault name | Enter a name for your key vault |
     | Region | Ensure to select the region that the VM resides |
-    | Pricing tier | 1 minute |
-    | Frequency of evaluation | Select either Standard or Premium for the pricing tier. The main difference is that the premium tier allows for hardware encryption-backed keys |
+    | Pricing tier | Standard. You can select either Standard or Premium for the pricing tier. The main difference is that the premium tier allows for hardware encryption-backed keys |
 
     ![Screenshot showing Key vault pane.](../media/3-create-keyvault.png)
 

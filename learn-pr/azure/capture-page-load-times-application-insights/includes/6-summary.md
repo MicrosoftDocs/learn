@@ -6,6 +6,6 @@ Use the Azure portal to delete the **mslearn-appinsights** resource group from y
 
 ## Learn more
 
-- [Monitor Azure App Service performance](https://docs.microsoft.com/azure/azure-monitor/app/azure-web-apps)
-- [Manage usage and costs for Application Insights](https://docs.microsoft.com/azure/azure-monitor/app/pricing)
+- [Monitor Azure App Service performance](/azure/azure-monitor/app/azure-web-apps)
+- [Manage usage and costs for Application Insights](/azure/azure-monitor/app/pricing)
 - [Azure Monitor pricing](https://azure.microsoft.com/pricing/details/monitor/)

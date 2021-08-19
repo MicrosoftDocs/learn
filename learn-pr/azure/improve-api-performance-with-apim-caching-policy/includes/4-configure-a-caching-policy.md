@@ -54,7 +54,7 @@ It's also possible to store individual values in the cache, instead of a complet
 </policies>
 ```
 
-## Using vary-by tags
+## Use vary-by tags
 
 It's important to ensure that, if you serve a response from the cache, it is relevant to the original request but also to use the cache as much as possible. Suppose, for example, that the board games Stock Management API received a GET request to the following URL and cached the result:
 
@@ -99,7 +99,7 @@ Azure does not, by default, examine HTTP headers to determine whether a cached r
 
 Within the `<cache-lookup>` tag, there is also the `vary-by-developer` attribute, which is required to be present and set to false by default. When this attribute is set to true, API Management examines the subscription key supplied with each request. It serves a response from the cache only if it was originally requested with the same subscription key. Set this attribute to true when each user should see a different response for the same URL. If each user group should see a different response for the same URL, set the `vary-by-developer-group` attribute to true.
 
-## Using an external cache
+## Use an external cache
 
 API Management instances usually have an internal cache, which is used to store prepared responses to requests. However, if you prefer, you can use an external cache instead. One possible external cache system that you can use is the Azure Cache for Redis service.
 
@@ -107,6 +107,6 @@ You might choose to use an external cache because:
 
 - You want to avoid the cache being cleared when the API Management service is updated.
 - You want to have greater control over the cache configuration than the internal cache allows.
-- You want to cache more data than can be store in the internal cache.
+- You want to cache more data than can be stored in the internal cache.
 
 Another reason to configure an external cache is that you want to use caching with the consumption pricing tier. This tier follows serverless design principal and you should use it  with serverless web APIs. For this reason, it has no internal cache. If you want to use caching with an API Management instance in the consumption tier, you must use an external cache.

@@ -18,5 +18,5 @@ You should now be able to determine how Azure SQL Edge and its familiar features
 
 ## References
 
-- [Azure SQL Edge documentation](https://docs.microsoft.com/azure/sql-database-edge?azure-portal=true)
-- [Deploy Azure SQL Edge](https://docs.microsoft.com/azure/azure-sql-edge/deploy-portal?azure-portal=true)
+- [Azure SQL Edge documentation](/azure/sql-database-edge?azure-portal=true)
+- [Deploy Azure SQL Edge](/azure/azure-sql-edge/deploy-portal?azure-portal=true)

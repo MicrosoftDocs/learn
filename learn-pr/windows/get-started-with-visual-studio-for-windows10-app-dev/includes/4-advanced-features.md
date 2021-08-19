@@ -24,7 +24,7 @@ Try it out on the project you created in the previous unit.
 
 4. With the **Rename** window visible, type a new name and select **Apply**. Notice how the name changes everywhere it occurs.
 
-![Renaming a method](../media/advanced1.png)
+![Renaming a method.](../media/advanced1.png)
 
 ## Code snippets
 
@@ -40,7 +40,7 @@ Let's use a snippet to quickly add a `do/while` loop to our project.
 
 4. Select **Visual C#** and then select **do** from the list.
  
-![Using a code snippet](../media/advanced2.png)
+![Using a code snippet.](../media/advanced2.png)
 
 5. Now you can enter any missing information. For example, the **do** loop requires a condition. If it's true, the loop will continue.
 
@@ -56,23 +56,23 @@ Here's how to download a project from GitHub directly into Visual Studio:
 
 1. Find the example project in GitHub. Select this link to [open the Windows coloring book sample](https://github.com/Microsoft/Windows-appsample-coloringbook) in GitHub.
 
-![Downloading a project from github](../media/github1.png)
+![Downloading a project from github.](../media/github1.png)
 
 2. Look for the green **Clone or download** button and select it. The URL for the project is listed. Select the clipboard icon to copy it.
 
-![Clone or download button](../media/github2.png)
+![Clone or download button.](../media/github2.png)
 
 3. Open Visual Studio. In the column on the right side, select the **Team Explorer** tab.
 
-![Open the Team Explorer view](../media/github3.png)
+![Open the Team Explorer view.](../media/github3.png)
 
 4. Select the **Manage Connections** icon.
 
-![Manage connections](../media/github4.png)
+![Manage connections.](../media/github4.png)
 
 5. Under **Local Git Repositories**, select **Clone**. Paste in the URL path into the upper box, where the **Enter the URL of a Git repo to clone** prompt appears.
 
-![Define the repo path](../media/github5.png)
+![Define the repo path.](../media/github5.png)
 
 6. If necessary, change the default location listed underneath the path you just entered. Your local copy of the project will be stored there.
 
@@ -82,7 +82,7 @@ The solution will be cloned (downloaded) to your computer. Note that loading a p
 
 8. Select the link to **Solutions and Folders**, and then select **ColoringBook.sln**.
 
-![Set the default project](../media/github6.png)
+![Set the default project.](../media/github6.png)
 
 9. Select the **Run** button
 

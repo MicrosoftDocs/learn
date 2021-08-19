@@ -18,7 +18,7 @@ abstract: |
   - Show and edit a list of more complex data structures.
 prerequisites: |
   - A computer running the current release of Windows 10. To verify that you are running the latest version, go to **Settings** > **Windows Update**.
-  - [The latest version of Visual Studio](https://docs.microsoft.com/visualstudio/productinfo/vs2017-system-requirements-vs) installed.
+  - [The latest version of Visual Studio](/visualstudio/productinfo/vs2017-system-requirements-vs) installed.
   - Understanding of basic concepts of Windows app layout, including `StackPanel` and `Grid`.
   - Creating new UWP projects in Visual Studio.
   - Familiarity with C#.

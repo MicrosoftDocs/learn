@@ -4,11 +4,11 @@ CIS benchmarks have been used with Azure security services and tools to make sec
 
 ### The Azure Security Benchmark
 
-A benchmark contains security recommendations for a specific technology, such as Azure. The recommendations are categorized by the control to which they belong. The Azure Security Benchmark (ASB) provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure.
+A benchmark contains security recommendations for a specific technology, such as Azure. The recommendations are categorized by the control to which they belong. The Azure Security Benchmark (ASB) provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure.  Some of the controls used in the ASB include network security, identity and access control, data protection, data recovery, incident response, and more.
 
-The ASB focuses on cloud-centric control areas. These controls are consistent with well-known security benchmarks, such as those described by the CIS. The areas covered include network security, identity management, posture and vulnerability management, and endpoint security.
+Security baselines for Azure focus on cloud-centric control areas and apply guidance from the Azure Security Benchmark.
 
-Each recommendation includes the following information:
+Each Azure security baseline includes the following information:
 
 - **Azure ID**: The Azure Security Benchmark ID that corresponds to the recommendation.
 - **Recommendation**: The recommendation provides a high-level description of the control.
@@ -16,6 +16,5 @@ Each recommendation includes the following information:
 - **Responsibility**: Who is responsible for implementing the control? Possible scenarios are customer responsibility, Microsoft responsibility, or shared responsibility.
 - **Azure Security Center monitoring**: Does Azure Security Center monitor the control?
 
-All recommendations, including the ones that don't apply to this specific service, appear in the baseline to provide a complete picture of how the Azure Security Benchmark relates to each service.
+Security baselines are included for many Azure services.   As an example, refer to the [Azure security baseline for Security Center](/azure/security-center/security-baseline).  The content is grouped by the security controls defined by the Azure Security Benchmark and the related guidance applicable to Azure Security Center. Refer to [Azure Security Benchmark documentation](/azure/security/benchmarks/) for a complete listing of the available baselines.
 
-Security baselines are included for many Azure services, including Azure security baseline for Security Center.

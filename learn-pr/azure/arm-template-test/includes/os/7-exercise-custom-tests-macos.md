@@ -102,42 +102,9 @@ Run the custom test by following these steps:
    Test-AzTemplate -TemplatePath .
    ```
 
-   Your output resembles this:
+   Your output resembles the following. Notice the highlighted lines show your test:
 
-   ```output
-    Validating deploy\azuredeploy.json                                                        deploymentTemplate
-    [+] adminUsername Should Not Be A Literal (16 ms)
-    [+] apiVersions Should Be Recent (4 ms)
-    [+] artifacts parameter (1 ms)
-    [-] Custom ParameterNaming (2 ms)  To be implemented
-    [+] DependsOn Best Practices (2 ms)
-    [+] Deployment Resources Must Not Be Debug (2 ms)
-    [+] DeploymentTemplate Must Not Contain Hardcoded Uri (4 ms)
-    [+] DeploymentTemplate Schema Is Correct (1 ms)
-    [+] Dynamic Variable References Should Not Use Concat (1 ms)
-    [+] IDs Should Be Derived From ResourceIDs (5 ms)
-    [+] Location Should Not Be Hardcoded (7 ms)
-    [+] ManagedIdentityExtension must not be used (1 ms)
-    [+] Min And Max Value Are Numbers (1 ms)
-    [+] Outputs Must Not Contain Secrets (2 ms)
-    [+] Parameters Must Be Referenced (2 ms)                                                    Unreferenced parameter: location
-    [+] Parameters Property Must Exist (1 ms)
-    [+] providers apiVersions Is Not Permitted (1 ms)
-    [+] ResourceIds should not contain (2 ms)
-    [-] Resources Should Have Location (2 ms)                                                   Resource  Location must be an expression or 'global'
-    [+] Secure String Parameters Cannot Have Default (1 ms)
-    [+] Template Should Not Contain Blanks (2 ms)
-    [+] Variables Must Be Referenced (1 ms)
-    [+] Virtual Machines Should Not Be Preview (6 ms)
-    [+] VM Images Should Use Latest Version (1 ms)
-    [+] VM Size Should Be A Parameter (5 ms)
-    ```
-
-  In the preceding output, your test is fourth from the top and indicated with this line:
-
-   ```output
-   [-] Custom ParameterNaming (4 ms)  To be implemented
-   ```
+   :::code language="plaintext" source="../resources/7-custom-test-output.txt" highlight="6-7" :::
 
    Now that you've found the test, leave this terminal window open. You'll reuse it later.
 
@@ -179,7 +146,7 @@ Now you'll give the custom test a proper implementation.
    }
    ```
 
-   The preceding code iterates through all the parameters. It inspects the name attribute and checks whether the name starts with the prefix **tailwind**. If the inspected parameter doesn't match the naming rule, the code then invokes the **Write-Error** cmdlet with a suitable error message.   
+   The preceding code iterates through all the parameters. It inspects the `name` attribute and checks whether the name starts with the prefix `tailwind`. If the inspected parameter doesn't match the naming rule, the code then invokes the `Write-Error` cmdlet with a suitable error message.   
    
 ## Update the template file
 
@@ -203,7 +170,7 @@ You'll now add a parameter to the template file.
    }
    ```
 
-   The preceding template content defines a parameter **location** that doesn't fulfill the naming rule, because it lacks the **tailwind** prefix.
+   The preceding template content defines a parameter named `location` that doesn't fulfill the naming rule, because it lacks the `tailwind` prefix.
 
 ## Rerun the test toolkit
 
@@ -218,7 +185,7 @@ In Visual Studio Code, run `Test-AzTemplate` from the integrated terminal:
 Test-AzTemplate -TemplatePath . -Test Custom-ParameterNaming
 ```
 
-The preceding command is run with the parameter **-Test**, which takes a test name as input. You've provided **Custom-ParameterNaming** as an argument, which means only your newly developed test will be run.
+The preceding command is run with the parameter named `-Test`, which takes a test name as input. You've provided `Custom-ParameterNaming` as a parameter, which means only your newly developed test will be run.
 
 > [!TIP]
 > Using this parameter is a good practice when you're developing a test because it limits what's being run and the size of the terminal output.
@@ -228,8 +195,8 @@ This command results in the following output:
 ```output
 Validating custom\azuredeploy.json
  deploymentTemplate
-
- [-] Custom ParameterNaming (2ms) Parameter 'location' must start with prefix 'tailwind'
+   [-] Custom ParameterNaming (2ms)
+       Parameter 'location' must start with prefix 'tailwind'
 ```
 
 The result indicates that your test works. Let's ensure that's the case by altering the deployment file.
@@ -256,7 +223,7 @@ At this point, you want to verify the correctness of your custom test by changin
    }
    ```
 
-   The parameter **location** has been renamed to **tailwindLocation**. In theory, this parameter should now pass the test. Let's verify.
+   The parameter named `location` has been renamed to `tailwindLocation`. In theory, this parameter should now pass the test. Let's verify.
 
 1. Continue with the same Visual Studio Code instance and run `Test-AzTemplate` in the integrated terminal:
 
@@ -267,8 +234,9 @@ At this point, you want to verify the correctness of your custom test by changin
    Your output now looks like the following:
 
    ```output
-   Validating custom\azuredeploy.json                                                        deploymentTemplate
-   [+] Custom ParameterNaming (2 ms)
+   Validating custom\azuredeploy.json
+     deploymentTemplate
+       [+] Custom ParameterNaming (2 ms)
    ```
 
 Success! You've implemented and run a custom test. You've also corrected a deployment template to match the test's condition.

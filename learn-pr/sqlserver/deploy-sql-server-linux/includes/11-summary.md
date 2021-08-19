@@ -4,6 +4,6 @@ SQL Server on Linux, and on Linux containers, gives you the benefits of the powe
 
 ## Learn more
 
-- [SQL Server on Linux](https://docs.microsoft.com/sql/linux/sql-server-linux-overview?view=sql-server-ver15)
-- [Installation guidance for SQL Server on Linux](https://docs.microsoft.com/sql/linux/sql-server-linux-setup?view=sql-server-ver15)
-- [Quickstart: Run SQL Server container images with Docker](https://docs.microsoft.com/sql/linux/quickstart-install-connect-docker?view=sql-server-ver15&pivots=cs1-bash)
+- [SQL Server on Linux](/sql/linux/sql-server-linux-overview?view=sql-server-ver15)
+- [Installation guidance for SQL Server on Linux](/sql/linux/sql-server-linux-setup?view=sql-server-ver15)
+- [Quickstart: Run SQL Server container images with Docker](/sql/linux/quickstart-install-connect-docker?pivots=cs1-bash&view=sql-server-ver15)

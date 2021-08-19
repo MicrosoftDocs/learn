@@ -18,7 +18,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
 1. Select **New alert rule**. The **Create alert rule** pane appears.
 
-    ![Screenshot that shows the button for a new alert rule on the metrics pane](../media/8-metrics-new-alert-rule-button.png)
+    ![Screenshot that shows the button for a new alert rule on the metrics pane.](../media/8-metrics-new-alert-rule-button.png)
 
 ### Select the resource
 
@@ -28,7 +28,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
 1. Under **Resource**, select **monitored-linux-vm**.
 
-    ![Screenshot that shows the VM selected on the pane for selecting a resource](../media/8-alert-select-a-resource-vm.png)
+    ![Screenshot that shows the VM selected on the pane for selecting a resource.](../media/8-alert-select-a-resource-vm.png)
 
 1. Select **Done**.
 
@@ -124,6 +124,11 @@ Wait a few minutes for this rule to activate.
     If Cloud Shell times out, select **Reconnect**.
 
 1. When you're prompted, enter **yes** to connect to the VM.
+1. Run the following command to update the list of available updates.
+
+    ```bash
+    sudo apt-get update
+    ```
 
 1. Run the following command to install the stress tool on the VM.
 
@@ -145,4 +150,4 @@ Wait a few minutes for this rule to activate.
 
 1. After a few minutes, the CPU should approach 100 percent, and you'll receive an alert email.
 
-    ![Screenshot of the alert email](../media/8-alert-email.png)
+    ![Screenshot of the alert email.](../media/8-alert-email.png)

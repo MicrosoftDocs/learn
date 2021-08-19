@@ -6,6 +6,6 @@ We talked about DevOps, and how to incorporate modern practices into your develo
 
 To learn more about incorporating operational excellence through your organization and tools you can use along the way, visit the following documents:
 
-- [Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework?azure-portal=true)
-- [What is Azure DevOps?](https://docs.microsoft.com/azure/devops/user-guide/what-is-azure-devops?view=azure-devops&azure-portal=true)
-- [Azure DevOps documentation](https://docs.microsoft.com/azure/devops/?view=azure-devops&azure-portal=true)
+- [Azure Well-Architected Framework](/azure/architecture/framework?azure-portal=true)
+- [What is Azure DevOps?](/azure/devops/user-guide/what-is-azure-devops?azure-portal=true&view=azure-devops)
+- [Azure DevOps documentation](/azure/devops/?azure-portal=true&view=azure-devops)

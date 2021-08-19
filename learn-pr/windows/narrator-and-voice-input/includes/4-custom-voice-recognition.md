@@ -12,13 +12,13 @@ We need to set several permissions and capabilities before we can start using cu
 
 1. In Visual Studio, with the calculator project loaded, open the Package.appxmainifest file, then select **Capabilities**. Turn on the **microphone** capability.
 
-![Setting the microphone capability](../media/app-manifest-capabilities.png)
+![Setting the microphone capability.](../media/app-manifest-capabilities.png)
 
 2. Setting this capability provides access to the microphone's audio feed. Save and close the manifest file.
 
 3. This is all that is required of the app, but not all that is required for speech recognition to work. The user must enable both the microphone and speech recognition for the app, and the latter is disabled by default. The developer is also the user when testing, so type in "privacy settings" to the Windows search bar.
 
-![Setting the privacy settings](../media/privacy-settings.png)
+![Setting the privacy settings.](../media/privacy-settings.png)
 
 4. Select **Speech** and ensure that **Online speech recognition** is on. Select **Microphone** and ensure **Allow apps to access your microphone** is on. Close or minimize the settings window.
 
@@ -433,7 +433,7 @@ Paste the following code into your app.
 
 9. With the microphone ready, say "what is 1.23456 times 2.789". What you say should appear on a dialog entitled **Listening**, which will close quickly after you stop speaking. The calculation should then appear in the display.
 
-![Speaking a natural addition](../media/listening-dialog1.png)
+![Speaking a natural addition.](../media/listening-dialog1.png)
 
 > [!NOTE]
 > If the Listening dialog shows **Sorry, didn't catch that** then press the space bar to bring up the Listener again.

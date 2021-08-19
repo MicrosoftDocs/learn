@@ -16,7 +16,7 @@ quiz:
   questions:
     - content: What is the chief obstacle to performing online migrations?
       choices:
-      - content: "The requirement of the Premium module for Azure SQL Database."
+      - content: "The requirement of the Premium model for Azure SQL Database."
         isCorrect: true
         explanation: "The Premium model for Azure SQL Database is expensive. This cost can be a big obstacle to doing online migrations."
       - content: "Online migrations are slower."

@@ -4,7 +4,7 @@ In this unit, you will learn how to deploy a high-level application to your Azur
 
 The following outlines how the Azure Sphere stream telemetry to IoT Hub.
 
-![Azure Sphere Streaming telemetry to IoT Hub](../media/azsure-sphere-telemetry-streaming.png)
+![Azure Sphere Streaming telemetry to IoT Hub.](../media/azsure-sphere-telemetry-streaming.png)
 
 1. The high-level application running on the Cortex-A7 reads the environment sensors every 6 seconds, serializes the data as JSON, and sends the telemetry message to IoT Hub.
 2. Azure IoT Explorer subscribes to telemetry messages sent to IoT Hub by the device and displays the data to the user.
@@ -62,7 +62,7 @@ static void MeasureSensorHandler(EventLoopTimer* eventLoopTimer)
 
 ## Introduction to IoT Plug and Play
 
-IoT Plug and Play enables solution builders to integrate smart devices with their solutions without any manual configuration. At the core of IoT Plug and Play, is a device model that a device uses to advertise its capabilities to an IoT Plug and Play enabled application. To learn more, visit "[What is IoT Plug and Play](https://docs.microsoft.com/azure/iot-pnp/overview-iot-plug-and-play?azure-portal=true)".
+IoT Plug and Play enables solution builders to integrate smart devices with their solutions without any manual configuration. At the core of IoT Plug and Play, is a device model that a device uses to advertise its capabilities to an IoT Plug and Play enabled application. To learn more, visit "[What is IoT Plug and Play](/azure/iot-pnp/overview-iot-plug-and-play?azure-portal=true)".
 
 The IoT Plug and Play model for this learning module can be found in the **IoTPlugAndPlay** directory. This model has been uploaded to the public repository of IoT Plug and Play models.
 

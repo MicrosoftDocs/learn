@@ -36,11 +36,11 @@ When the model is trained and performing with satisfactory accuracy, the model i
 
 1. Select the prediction name to open the **Quick start** page. This page has links to resources that can help you learn more about how to call the API to get predictions from the model. 
 
-1. In section **3**, select the link for the **Python Quickstart**. The [Azure Cognitive Services image classification quickstart](https://docs.microsoft.com/azure/cognitive-services/Custom-Vision-Service/quickstarts/image-classification?tabs=visual-studio&pivots=programming-language-python&azure-portal=true) for Python opens in your web browser. 
+1. In section **3**, select the link for the **Python Quickstart**. The [Azure Cognitive Services image classification quickstart](/azure/cognitive-services/Custom-Vision-Service/quickstarts/image-classification?azure-portal=true&pivots=programming-language-python&tabs=visual-studio) for Python opens in your web browser. 
 
    :::image type="content" source="../media/azure-portal-prediction-quickstart.png" alt-text="Screenshot that shows quickstart resources that describe how to call the A P I to get predictions from the model.":::
 
-   Here's an example of the sample code for calling the prediction API in Python. For the complete code, see the [quickstart](https://docs.microsoft.com/azure/cognitive-services/Custom-Vision-Service/quickstarts/image-classification?tabs=visual-studio&pivots=programming-language-python&azure-portal=true).
+   Here's an example of the sample code for calling the prediction API in Python. For the complete code, see the [quickstart](/azure/cognitive-services/Custom-Vision-Service/quickstarts/image-classification?azure-portal=true&pivots=programming-language-python&tabs=visual-studio).
 
    ```python
    from azure.cognitiveservices.vision.customvision.prediction import CustomVisionPredictionClient

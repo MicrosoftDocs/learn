@@ -12,9 +12,9 @@ In this unit, you'll:
 
 ## Create self-signed certificate
 
-First, use the Azure Cloud Shell to create a self-signed certificate, which you will use for the authentication between the client and the API Management gateway.
+First, use Cloud Shell to create a self-signed certificate, which you will use for the authentication between the client and the API Management gateway.
 
-1. To create the private key and the certificate, run these commands in the Cloud Shell.
+1. To create the private key and the certificate, run the following commands in Cloud Shell.
 
     ```bash
     pwd='Pa$$w0rd'
@@ -39,19 +39,19 @@ Because you are using the Consumption tier for API Management, you must configur
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu, or from the **Home** page, select **All resources**, and then select your API Management gateway.
+1. On the Azure portal menu, or from the **Home** page, select **All resources**, and then select your API Management service. The **API Management service** pane appears.
 
-1. Under **Deployment and infrastructure**, select **Custom domains**.
+1. In the middle menu bar, under **Deployment and infrastructure**, select **Custom domains**. The **Custom domains** pane appears for your API Management service.
 
-1. For the **Request client certificates** option, select **Yes**, and then select **Save**.
+1. Under **Client certificates**, for the **Request client certificates** option, select **Yes**, and on the top menu bar, select **Save**.
 
-    ![Configure the gateway to request certificates](../media/5-config-request-certificates.png)
+    ![Configure the gateway to request certificates.](../media/5-config-request-certificates.png)
 
 ## Get the thumbprint for the certificate
 
-In the next section, you will configure API Management to accept a request only if it has a certificate with a certain thumbprint. Let's get that thumbprint from the certificate:
+In the next section, you'll configure API Management to accept a request only if it has a certificate with a certain thumbprint. Let's get that thumbprint from the certificate.
 
-1. In the Cloud Shell, run the following command.
+1. In Cloud Shell, run the following command.
 
     ```bash
     Fingerprint="$(openssl x509 -in selfsigncert.pem -noout -fingerprint)"
@@ -65,11 +65,15 @@ In the next section, you will configure API Management to accept a request only 
 
 Now, create the authentication policy within the API Management gateway.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **All Resources**, and then select your API gateway.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **All Resources**, and then select your API Management service.
 
-1. Select **APIs**, then select **Weather Data**, and then select the **Inbound processing** policies button.
+1. In the middle menu pane, under **APIs**, select **APIs**. The **APIs** pane appears for your API Management service.
 
-    ![Inbound processing policy button](../media/5-inbound-policy.png)
+1. In the interior menu pane, under **All APIs**, select **Weather Data**.
+
+1. In the **Inbound processing** box, select **Policies </>**.
+
+    ![Inbound processing policy button.](../media/5-inbound-policy.png)
 
 1. Replace the `<inbound>` node of the policy file with the following XML, substituting the thumbprint you copied earlier for `desired-thumbprint`:
 
@@ -90,9 +94,9 @@ Now, create the authentication policy within the API Management gateway.
 
 ## Call the gateway and pass the client certificate
 
-Finally, you can test the new authentication policy. You can test without the certificate and with it.
+You can now test the new authentication policy with and without the certificate.
 
-1. To test the API without the certificate, run the following command within the Cloud Shell.
+1. To test the API without the certificate, run the following command in Cloud Shell. Remember to include your API gateway name and subscription key.
 
     ```PowerShell
     curl -X GET https://[api-gateway-name].azure-api.net/api/Weather/53/-1 \
@@ -101,10 +105,10 @@ Finally, you can test the new authentication policy. You can test without the ce
 
     This command should return a 403 Client certificate error, and no data will be returned.
 
-1. In the Azure Cloud Shell, to test the API with the certificate, copy and paste the following cURL command, using the subscription key from the first exercise.
+1. In Cloud Shell, to test the API with the certificate, copy and paste the following cURL command, using the subscription key from the first exercise. Remember to include your API gateway name.
 
     ```PowerShell
-    curl -X GET https://[gateway-name].azure-api.net/api/Weather/53/-1 \
+    curl -X GET https://[api-gateway-name].azure-api.net/api/Weather/53/-1 \
       -H 'Ocp-Apim-Subscription-Key: [subscription-key]' \
       --cert-type pem \
       --cert selfsigncert.pem

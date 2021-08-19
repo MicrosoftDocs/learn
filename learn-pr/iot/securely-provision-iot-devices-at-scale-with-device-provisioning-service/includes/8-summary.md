@@ -2,7 +2,7 @@ Completing this module should have shed valuable light into the dark world of cr
 
 In short, you've learnt how to keep your cheese maturing practices a secret!
 
-[![Photograph of mature blue cheese](../media/cheese-rect3.png)](../media/cheese-rect3.png#lightbox)
+[![Photograph of mature blue cheese.](../media/cheese-rect3.png)](../media/cheese-rect3.png#lightbox)
 
 In this module, you learned how to:
 
@@ -21,8 +21,8 @@ Learn about storing passwords and certificates:
 
 Learn more about IoT Hub:
 
-- [IoT Hub Documentation](https://docs.microsoft.com/azure/iot-hub/)
-- [Set up X.509 security in your Azure IoT hub](https://docs.microsoft.com/azure/iot-hub/iot-hub-security-x509-get-started)
+- [IoT Hub Documentation](/azure/iot-hub/)
+- [Set up X.509 security in your Azure IoT hub](/azure/iot-hub/iot-hub-security-x509-get-started)
 
 Learn more about IoT Hub devices:
 
@@ -30,6 +30,6 @@ Learn more about IoT Hub devices:
 
 Learn more about X.509 certificates:
 
-- [X.509 Digital Certification](https://docs.microsoft.com/windows/win32/seccrypto/x-509-digital-certification)
+- [X.509 Digital Certification](/windows/win32/seccrypto/x-509-digital-certification)
 
 To complete this module, there's a slightly _harder-than-usual_ knowledge check. Good luck with it!

@@ -8,6 +8,7 @@ metadata:
   ms.author: laobri
   ms.topic: interactive-tutorial
   ms.service: machine-learning
+  ms.prod: learning-azure
 title: "Create a Data Science Virtual Machine"
 durationInMinutes: 5
 content: |

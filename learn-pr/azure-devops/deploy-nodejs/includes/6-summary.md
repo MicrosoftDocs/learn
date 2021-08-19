@@ -1,4 +1,4 @@
-Great work! In this module, you built a CI/CD pipeline in Azure Pipelines that deploys a Node.js application to Azure. The pipeline automatically runs whenever you merge a change to the `master` branch of your Git repository on GitHub.
+Great work! In this module, you built a CI/CD pipeline in Azure Pipelines that deploys a Node.js application to Azure. The pipeline automatically runs whenever you merge a change to the `main` branch of your Git repository on GitHub.
 
 While this module specifically focused on a Node.js app deployed to Azure App Service, the fundamentals we cover here apply across a wide range of build and deployment targets. You can also see how Azure Pipelines can scale to support your specific requirements.
 

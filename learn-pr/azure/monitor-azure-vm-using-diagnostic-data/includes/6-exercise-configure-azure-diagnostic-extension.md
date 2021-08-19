@@ -14,11 +14,11 @@ Use the portal to enable guest-level metric monitoring of the VM. When you enabl
 
 1. In the left menu pane, under **Monitoring**, select **Diagnostic settings**. The **Diagnostics settings** pane appears for your virtual machine.
 
-    ![Screenshot that shows the monitoring section for a VM](../media/6-scroll-to-monitoring.png)
+    ![Screenshot that shows the monitoring section for a VM.](../media/6-scroll-to-monitoring.png)
 
-1. On the **Overview** tab, select **Enable guest-level monitoring**.
+1. On the **Overview** tab, select **Enable guest-level monitoring**. If the storage account isn't listed, wait several minutes and refresh the page until it appears.
 
-    ![Screenshot that shows the button for enabling guest-level monitoring](../media/6-enable-guest-level-monitoring.png)
+    ![Screenshot that shows the button for enabling guest-level monitoring.](../media/6-enable-guest-level-monitoring.png)
 
 1. Wait until the diagnostic settings are configured. This process might take a minute.
 
@@ -28,11 +28,11 @@ Use the portal to enable guest-level metric monitoring of the VM. When you enabl
 
 1. Select the **Metrics** tab.
 
-    ![Screenshot that shows the Overview page](../media/6-diagnostics-enabled.png)
+    ![Screenshot that shows the Overview page.](../media/6-diagnostics-enabled.png)
 
 1. Change all the **Sample rates** to **60** seconds, and then select **Save**.
 
-    ![Screenshot that shows changing the sample rate to 60 seconds](../media/6-change-sample-rate.png)
+    ![Screenshot that shows changing the sample rate to 60 seconds.](../media/6-change-sample-rate.png)
 
    It might take a minute to save your update.
 
@@ -106,8 +106,8 @@ Use the portal to enable guest-level metric monitoring of the VM. When you enabl
 
 1. At the top of the portal, select **Dashboard**, and then select **KPI Dashboard**.
 
-    ![Screenshot that shows the dashboard selection drop-down list](../media/6-view-dashboard.png)
+    ![Screenshot that shows the dashboard selection drop-down list.](../media/6-view-dashboard.png)
 
 1. Explore the dashboard. Try changing the **UTC Time** range to **Past 30 minutes**.
 
-    ![Screenshot that shows the new KPI dashboard with the three graphs created earlier](../media/6-explore-kpi-dashboard.png)
+    ![Screenshot that shows the new KPI dashboard with the three graphs created earlier.](../media/6-explore-kpi-dashboard.png)

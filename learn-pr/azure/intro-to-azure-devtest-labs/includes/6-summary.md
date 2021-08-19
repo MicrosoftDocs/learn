@@ -6,5 +6,5 @@ Finally, you were introduced to various ways to manage the cost of DevTest Labs.
 
 ## Learn more
 
-- [Create a new lab](https://docs.microsoft.com/azure/lab-services/devtest-lab-create-lab)
-- [About DevTest Labs](https://docs.microsoft.com/azure/lab-services/devtest-lab-overview)
+- [Create a new lab](/azure/lab-services/devtest-lab-create-lab)
+- [About DevTest Labs](/azure/lab-services/devtest-lab-overview)

@@ -1,4 +1,4 @@
-Imagine you're a photographer and you have a website where you display your pictures of the day. Because you're busy, you don't have a consistent upload schedule, but you want to notify your fans when you upload a picture. You decide to create an Azure function to automatically send a tweet whenever you upload an image to your Azure Storage blob container.
+Imagine you're a photographer and you have a website that displays your pictures of the day. Because you're busy, you don't have a consistent upload schedule, but you want to notify your fans when you upload a picture. You decide to create an Azure function to automatically send a tweet whenever you upload an image to your Azure Storage blob container.
 
 Here, you learn how to create a blob trigger and instruct it to monitor a specific location in your Azure Storage blob container.
 
@@ -15,7 +15,7 @@ We're not going to focus on Azure Storage too much. Instead, we use it to create
 
 ## What is Azure Blob storage?
 
-Azure Blob storage is an object storage solution that's designed to store large amounts of unstructured data. 
+Azure Blob storage is an object storage solution that's designed to store large amounts of unstructured data.
 
 For example, Azure Blob storage is great at doing things like:
 
@@ -32,9 +32,9 @@ A blob trigger is a trigger that executes a function when a file is uploaded or 
 
 ## How to create a blob trigger
 
-Just like the other triggers we've seen so far, we create a blob trigger in the Azure portal. Inside your Azure function, select **Blob trigger** from the list of predefined trigger types. Then, enter the logic to execute when a blob is created or updated.
+Just like the other triggers we've seen so far, you create a blob trigger in the Azure portal. Inside your Azure function, select **Blob trigger** from the list of predefined trigger types. Then, you enter the logic to that you want to execute when a blob is created or updated.
 
-One setting that you'll want to look at is the **Path**. The **Path** tells the blob trigger where to monitor to see if a blob is uploaded or updated. By default, the **Path** value is: 
+One setting that's important to understand is the **Path**. The **Path** tells the blob trigger where to monitor to see if a blob is uploaded or updated. By default, the **Path** value is:
 
 ```
 samples-workitems/{name}
@@ -46,6 +46,6 @@ Let's break down this concept into two pieces: *samples-workitems* and *{name}*.
 samples-workitems/{name}.png
 ```
 
-The last significant piece of information with this concept is the text *name*. The *name* represents a parameter in your Azure function that receives the name of the added file. For example, if we upload a file named *resume.txt*, my Azure function receives that value as a string through a parameter called *name*.
+The last significant piece of information for this concept is the text *name*. The *name* represents a parameter in your Azure function that receives the name of the added file. For example, if we upload a file named *resume.txt*, my Azure function receives that value as a string through a parameter called *name*.
 
 A blob trigger invokes an Azure function when it sees activity at a specific location in your Azure Storage blob account. You set the location to monitor by modifying the **Path** value in the Azure portal.

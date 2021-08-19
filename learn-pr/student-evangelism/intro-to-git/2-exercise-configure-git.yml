@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Try out Git
   description: Try out Git and configure it with your name and email.
   ms.date: 03/05/2021
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-git
 durationInMinutes: 5

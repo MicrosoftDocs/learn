@@ -54,10 +54,14 @@ Structured data is typically tabular data that is represented by rows and column
 
 There are other types of semi-structured data as well. Examples include *key-value* stores and *graph* databases. 
 
-A key-value store is similar to a relational table, except that each row can have any number of columns.
+A key-value database stores Associative arrays. In those arrays, a Key serves as a unique identifier to retrieve a specific value. Those values can be anything from a number or a string to a complex object, like a JSON file. 
+
+A key-value database stores data as a single collection without structure or relation. That makes them different to a relational database where tables are made up of rows and columns with predefined data types.
+
 The image below shows an example of key-value data.
 
-:::image type="content" source="../media/2-key-value.png" alt-text="Key-value data":::
+> [!div class="mx-imgBorder"]
+![Image showing an example of key-value data.](../media/2-key-value.png)
 
 You can use a graph database to store and query information about complex relationships. A graph contains nodes (information about objects), and edges (information about the relationships between objects). The image below shows an example of how you might structure the data in a graph database.
 

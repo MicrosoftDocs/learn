@@ -16,5 +16,5 @@ In this module, you will:
 
 ## Prerequisites
 
-- Installation of [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms)
+- Installation of [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms)
 - Windows computer capable of running SSMS

@@ -16,7 +16,7 @@ Azure Machine Learning and Cortana Intelligence Suite enable analysts at Microso
 
 [See how Microsoft uses blockchain](https://customers.microsoft.com/story/microsoft-financial-operations-professional-services-azure) to deliver royalty statement to Xbox game publishers faster with significant efforts reduction.
 
-Explore [Anomaly Detection API](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/apps-anomaly-detection-api) is an example built with Azure Machine Learning that detects anomalies in time series data with numerical values that are uniformly spaced in time.
+Explore [Anomaly Detection API](/azure/machine-learning/team-data-science-process/apps-anomaly-detection-api) is an example built with Azure Machine Learning that detects anomalies in time series data with numerical values that are uniformly spaced in time.
 
 * [Download PDF](https://aka.ms/AIBSCULTFINCONDWL) of the case study introduction to share with others.
 * [Download PDF](https://aka.ms/AIBSCULTFINRESDWL)  of the case study resolution to share with others.

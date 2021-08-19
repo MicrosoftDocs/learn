@@ -19,7 +19,7 @@ Data analytics is the process of gathering raw data and examining it to draw con
 
 Azure provides several technologies that you can implement to help with your organization's data analytics. These include:
 
-- Azure SQL Data Warehouse
+- Azure Synapse Analytics
 - Azure Blob Storage
 - Azure Data Lake Storage
 - Azure Data Lake Analytics
@@ -36,7 +36,7 @@ Azure Data Factory is a cloud-based data integration service that's designed to 
 
 | Community                             | Description of community needs                               |
 | ------------------------------------- | ------------------------------------------------------------ |
-| Big data community                    | This community relies on technologies for managing large amounts of diverse data. For them, Azure Data Factory provides a means to create and run pipelines in the cloud. These pipelines can access both cloud and on-premises data services. These pipelines typically work with technologies such as Azure SQL Data Warehouse, Azure Blobs, Azure Data Lake, Azure HDInsight, Azure Databricks, and Azure Machine Learning. |
+| Big data community                    | This community relies on technologies for managing large amounts of diverse data. For them, Azure Data Factory provides a means to create and run pipelines in the cloud. These pipelines can access both cloud and on-premises data services. These pipelines typically work with technologies such as Azure Synapse Analytics, Azure Blobs, Azure Data Lake, Azure HDInsight, Azure Databricks, and Azure Machine Learning. |
 | Relational data warehousing community | This community typically relies on technologies such as Microsoft SQL Server. SQL Server Integration Services (SSIS) is often used to create SSIS packages. For this community, Azure Data Factory provides the ability to run SSIS packages on Azure, thereby letting them access both cloud and on-premises data services. |
 
 > [!NOTE]
@@ -60,7 +60,7 @@ By using Azure Data Factory, you can:
 
 - Publish this transformed data to data stores for business intelligence apps to consume.
 
-In the following graphic, external data sources are connected to Azure Data Factory. A storage blob is used to ingest the data, while Azure Synapse is used as storage. These elements provide the orchestration. The analysis and visualization components, Azure Analysis Service, and Power BI are also connected to Azure Data Factory.
+In the following graphic, external data sources are connected to Azure Data Factory. A storage blob is used to ingest the data, while Azure Synapse Analytics is used as storage. These elements provide the orchestration. The analysis and visualization components, Azure Analysis Service, and Power BI are also connected to Azure Data Factory.
 
 :::image type="content" source="../media/adf-overview.png" alt-text="A graphic depicting a possible architecture for using Azure Data Factory.":::
 

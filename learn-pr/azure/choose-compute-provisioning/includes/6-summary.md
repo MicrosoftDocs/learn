@@ -8,7 +8,7 @@ With the help of the provisioning tools on Azure, we can improve the provisionin
 
 ## Learn more
 
-- [Understand the structure and syntax of Azure Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-authoring-templates)
-- [Introduction to the Azure Desired State Configuration extension handler](https://docs.microsoft.com/azure/virtual-machines/extensions/dsc-overview)
-- [Chef software on Azure documentation](https://docs.microsoft.com/azure/chef/)
-- [Terraform on Azure documentation](https://docs.microsoft.com/azure/terraform/)
+- [Understand the structure and syntax of Azure Resource Manager templates](/azure/azure-resource-manager/resource-group-authoring-templates)
+- [Introduction to the Azure Desired State Configuration extension handler](/azure/virtual-machines/extensions/dsc-overview)
+- [Chef software on Azure documentation](/azure/chef/)
+- [Terraform on Azure documentation](/azure/terraform/)

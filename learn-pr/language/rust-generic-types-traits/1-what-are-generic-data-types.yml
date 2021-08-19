@@ -3,9 +3,9 @@ uid: learn.language.rust-generic-types-traits.1-what-are-generic-data-types
 metadata:
   title: What are generic data types?
   description: Learn about generic data types and how they're used in Rust.
-  ms.date: 01/20/2021
-  author: meaghanlewis
-  ms.author: shanama
+  ms.date: 06/09/2021
+  author: danmabee
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: What are generic data types?

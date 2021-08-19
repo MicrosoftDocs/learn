@@ -32,7 +32,7 @@ If (<expression that evaluates to True or False>)
 
 You use operators to determine if an expression is `True` or `False`. There are a few operators. The basic idea is usually to determine if something on the left side of the operator matches something on the right side, given the operator's condition. An operator can express conditions like whether something is equal to something else, larger than something else, or matches a regular expression.
 
-Here's an example of using an operator. The `-le` operator determines if the value on the left side of the operator is larger than or equal to the value on the right side:
+Here's an example of using an operator. The `-le` operator determines if the value on the left side of the operator is smaller than or equal to the value on the right side:
 
 ```powershell
 $Value = 3

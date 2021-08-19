@@ -2,7 +2,7 @@ Meteors can be visible from Earth every night. But the best meteor showers are t
 
 ## Review the data science life cycle
 
-Before we jump into the code, we need to review the [data science life cycle](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/overview?azure-portal=true). *Data science* is a field that supports the discovery of new ways to view and understand our world by using data. 
+Before we jump into the code, we need to review the [data science life cycle](/azure/machine-learning/team-data-science-process/overview?azure-portal=true). *Data science* is a field that supports the discovery of new ways to view and understand our world by using data. 
 
 A typical data science project iterates through four main steps:
 1. Business understanding

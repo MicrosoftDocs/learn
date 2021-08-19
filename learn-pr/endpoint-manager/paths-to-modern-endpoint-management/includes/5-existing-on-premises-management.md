@@ -41,4 +41,4 @@ Once you decide to move to Configuration Manager or extend your existing Configu
 
 ## Next steps
 
-For detailed guidance when you currently use Microsoft Endpoint Configuration Manager as your on-premises management solution and need to understand your endpoint management options, see the [Currently use Configuration Manager](https://docs.microsoft.com/mem/intune/fundamentals/deployment-guide-intune-setup?azure-portal=true#currently-use-configuration-manager).
+For detailed guidance when you currently use Microsoft Endpoint Configuration Manager as your on-premises management solution and need to understand your endpoint management options, see the [Currently use Configuration Manager](/mem/intune/fundamentals/deployment-guide-intune-setup?azure-portal=true#currently-use-configuration-manager).

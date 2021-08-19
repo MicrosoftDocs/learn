@@ -65,7 +65,7 @@ By default, when an application is running under debug, the `DEBUG` constant is 
 </PropertyGroup>
 ```
 
-When you use `Trace` when not attached to the debugger, you'll need to configure a trace listener such as [dotnet-trace](https://docs.microsoft.com/dotnet/core/diagnostics/dotnet-trace).
+When you use `Trace` when not attached to the debugger, you'll need to configure a trace listener such as [dotnet-trace](/dotnet/core/diagnostics/dotnet-trace).
 
 ## Conditional tracing
 
@@ -90,7 +90,7 @@ You can also use these conditions with `Trace` and with flags that you define in
 bool errorFlag = false;  
 System.Diagnostics.Trace.WriteIf(errorFlag, "Error in AppendData procedure.");  
 System.Diagnostics.Debug.WriteIf(errorFlag, "Transaction abandoned.");  
-Trace.Write("Invalid value for data request");
+System.Diagnostics.Trace.Write("Invalid value for data request");
 ```
 
 ## Verify that certain conditions exist

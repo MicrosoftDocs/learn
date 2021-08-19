@@ -10,7 +10,7 @@ npm -v
 ```
 
 > [!IMPORTANT]
-> Vue CLI is typically installed globally via npm, which requires elevated permissions if you've installed Node.js directly. Using Node Version Manager (nvm) allows you to perform the installation as a regular user. You can install [nvm on Linux, Windows Subsystem for Linux (WSL), or macOS](https://github.com/nvm-sh/nvm#installing-and-updating/?azure-portal=true), or install [nvm-windows on Windows](https://docs.microsoft.com/windows/nodejs/setup-on-wsl2/?azure-portal=true).
+> Vue CLI is typically installed globally via npm, which requires elevated permissions if you've installed Node.js directly. Using Node Version Manager (nvm) allows you to perform the installation as a regular user. You can install [nvm on Linux, Windows Subsystem for Linux (WSL), or macOS](https://github.com/nvm-sh/nvm#installing-and-updating/?azure-portal=true), or install [nvm-windows on Windows](/windows/nodejs/setup-on-wsl2/?azure-portal=true).
 
 To install Vue CLI, open a command or terminal window and run the following command:
 

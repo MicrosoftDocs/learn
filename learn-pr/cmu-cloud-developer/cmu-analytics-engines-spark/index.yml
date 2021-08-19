@@ -4,11 +4,11 @@ metadata:
   title: 'Distributed computing on the cloud: Spark'
   description: Carnegie Mellon University's cloud developer course. Spark is an open-source cluster-computing framework with different strengths than MapReduce has. Learn about how Spark works.
   ms.date: 03/20/2020
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'Distributed computing on the cloud: Spark'	
+title: 'Distributed computing on the cloud: Spark'
 summary: Spark is an open-source cluster-computing framework with different strengths than MapReduce has. Learn about how Spark works.
 abstract: | 
   In this module, you will:

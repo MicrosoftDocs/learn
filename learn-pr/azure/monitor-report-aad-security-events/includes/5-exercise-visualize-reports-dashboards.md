@@ -11,13 +11,13 @@ In this exercise, you create a Log Analytics workspace in your Azure sandbox by 
 
 ## Create a Log Analytics workspace
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All services** and then, in the search box, type **Log Analytics**.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All services** and then, in the search box, enter **Log Analytics**.
 
    ![Screenshot of Log Analytics search results.](../media/3-log-analytics.png)
 
 1. In the results list, select **Log Analytics workspaces**.
 
-1. Select **New**. The **Create Log Analytics workspace** pane appears.
+1. Select **Create**. The **Create Log Analytics workspace** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -25,9 +25,9 @@ In this exercise, you create a Log Analytics workspace in your Azure sandbox by 
     | --- | --- |
     | **Project Details** |
     | Subscription | Enter your subscription  |
-    | Resource group | select **Create new**, and enter a unique resource name |
+    | Resource group | Select **Create new**, and enter a unique resource name |
     | **Instance Details** |
-    | Name | enter a name that's globally unique across all Azure Monitor subscriptions. For this exercise, enter **ContosoWorkspace**, and append it with several unique characters |
+    | Name | Enter a name that's globally unique across all Azure Monitor subscriptions. For this exercise, enter **ContosoWorkspace**, and append it with several unique characters |
     | Region     | Select the location nearest to you |
 
 1. Select **Next : Pricing tier**, and enter the following value for the setting.
@@ -39,6 +39,8 @@ In this exercise, you create a Log Analytics workspace in your Azure sandbox by 
 
 1. Select **Review + Create**. After validation succeeds, select **Create** to create the workspace.
 
+1. After deployment succeeds, select **Go to resource**. Your **Log Analytics workspace** appears.
+
 You've now created a Log Analytics workspace that you can use to store your logging data and run queries.  In the next section, you stream data to this workspace.
 
 ## Send log files to a Log Analytics workspace
@@ -47,7 +49,7 @@ To stream the audit and sign-in logs to your Log Analytics workspace, do the fol
 
 1. Open Azure Active Directory.
 
-1. In the middle menu pane, under **Monitoring**, select **Diagnostics settings**, and then select **Add diagnostics setting**.
+1. In the middle menu pane, under **Monitoring**, select **Diagnostics settings**, and then select **Add diagnostic setting**.
 
    Here, you create a connection between the two log files and your Log Analytics workspace.
 
@@ -56,9 +58,9 @@ To stream the audit and sign-in logs to your Log Analytics workspace, do the fol
     a. In the **Diagnostic setting name** box, give the new diagnostics settings a name, such as **SendToLogAnalytics**.  
     b. Under **Destination details**, select the **Send to Log Analytics workspace** check box.  
     c. Select the Log Analytics workspace that you created earlier, **ContosoWorkspace**.  
-    d. Decide which of the log files you want to stream to the workspace. For this exercise, select both **Audit** and **AllMetrics**.
+    d. Decide which of the log files you want to stream to the workspace. For this exercise, under **Category details**, select both **Audit** and **AllMetrics**.
 
-1. Select **Save**.  
+1. In the top menu bar, select **Save**.  
 
 ## Download prebuilt views
 

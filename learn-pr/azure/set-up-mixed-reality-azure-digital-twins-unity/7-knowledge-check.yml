@@ -34,11 +34,14 @@ quiz:
     - content: "A real-time development platform used for 2D, 3D, AR, VR development.  "
       isCorrect: true
       explanation: "Unity is a real-time 3D development platform for creating cross-platform 2D, 3D, AR, and VR development."
-  - content: "True or false: The Azure SignalR service allows the service to push content updates to connected clients."
+  - content: "What does the Azure SignalR service do?"
     choices:
-    - content: "True"
+    - content: "Allows the service to push content updates to connected clients"
       isCorrect: true
-      explanation: ""
-    - content: "False"
-      isCorrect: false
       explanation: "Azure Functions can use the REST API to push notifications into the Azure SignalR Service, which then pushes data to connected clients in real time. Used together with IoT Hub, the Azure SignalR Service can enable real-time sensor data to be transmitted to connected clients to support real time monitoring scenarios."
+    - content: "Creates a mesh overlay for data transmission"
+      isCorrect: false
+      explanation: "While Azure SignalR does deal with pushing data to connected clients, it is unrelated to mesh objects in Unity."
+    - content: "Extends the Unity editor's functionality to include data persistence"
+      isCorrect: false
+      explanation: "Azure SignalR is a cloud service for pushing content updates to connected clients and is not a part of the Unity engine or editor."

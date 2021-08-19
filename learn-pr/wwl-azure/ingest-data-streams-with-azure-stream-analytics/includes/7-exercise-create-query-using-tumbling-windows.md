@@ -1,4 +1,4 @@
-In this exercise, you create a Synapse Analytics query using a [Tumbling Window](https://docs.microsoft.com/stream-analytics-query/tumbling-window-azure-stream-analytics). The query will aggregate streaming data received from the Event Hub input and send it to Power BI and Azure Synapse Analytics for visualization and analysis.
+In this exercise, you create a Synapse Analytics query using a [Tumbling Window](/stream-analytics-query/tumbling-window-azure-stream-analytics). The query will aggregate streaming data received from the Event Hub input and send it to Power BI and Azure Synapse Analytics for visualization and analysis.
 
 1. From your Stream Analytics job's blade in the [Azure portal](https://portal.azure.com/), select **Query** in the left-hand navigation menu.
 

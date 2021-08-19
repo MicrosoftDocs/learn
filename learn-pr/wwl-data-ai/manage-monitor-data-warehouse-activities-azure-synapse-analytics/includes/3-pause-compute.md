@@ -4,7 +4,7 @@ In the Azure portal you can use the Pause command within the dedicated SQL pool
 > [!div class="mx-imgBorder"]  
 > ![Pause the compute in the Azure portal.](../media/pause-compute-azure-portal.png)
 
-And this can also be used within Azure Synapse Studio, in the Manage hub.
+And this can also be used within Azure Synapse Studio for Apache Spark pools too, in the Manage hub.
 > [!div class="mx-imgBorder"]  
 > ![Auto-pause Spark compute in the Azure Synapse Studio.](../media/pause-compute-azure-synapse-studio.png)
 

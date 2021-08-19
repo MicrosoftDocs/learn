@@ -117,7 +117,7 @@ To create the second event hub, complete the following steps by using PowerShell
     az eventhubs eventhub create --name "tsi-event-hub" --resource-group $rgname --namespace-name $ehnamespace
     ```
 
-1. Create an [authorization rule](https://docs.microsoft.com/cli/azure/eventhubs/eventhub/authorization-rule?view=azure-cli-latest#az-eventhubs-eventhub-authorization-rule-create) that has send and receive permissions:
+1. Create an [authorization rule](/cli/azure/eventhubs/eventhub/authorization-rule?view=azure-cli-latest#az-eventhubs-eventhub-authorization-rule-create) that has send and receive permissions:
 
     ```powershell
     # Create an authorization rule. Specify a name for the rule.
@@ -130,7 +130,7 @@ Next, you'll need to set environment variables in your function app from earlier
 
 ### Set the twins event hub connection string
 
-1. Get the twins [event hub connection string](https://docs.microsoft.com/azure/event-hubs/event-hubs-get-connection-string) by using the authorization rules you created in the previous section for the twins hub:
+1. Get the twins [event hub connection string](/azure/event-hubs/event-hubs-get-connection-string) by using the authorization rules you created in the previous section for the twins hub:
 
     ```powershell
     $adtehconnectionstring=$(az eventhubs eventhub authorization-rule keys list --resource-group $rgname --namespace-name $ehnamespace --eventhub-name twins-event-hub --name EHPolicy --query primaryConnectionString -o tsv)
@@ -144,7 +144,7 @@ Next, you'll need to set environment variables in your function app from earlier
 
 ### Set the Time Series Insights event hub connection string
 
-1. Get the Time Series Insights [event hub connection string](https://docs.microsoft.com/azure/event-hubs/event-hubs-get-connection-string) by using the authorization rules you created earlier for the Time Series Insights hub:
+1. Get the Time Series Insights [event hub connection string](/azure/event-hubs/event-hubs-get-connection-string) by using the authorization rules you created earlier for the Time Series Insights hub:
 
     ```powershell
     $tsiehconnectionstring=$(az eventhubs eventhub authorization-rule keys list --resource-group $rgname --namespace-name $ehnamespace --eventhub-name tsi-event-hub --name EHPolicy --query primaryConnectionString -o tsv)

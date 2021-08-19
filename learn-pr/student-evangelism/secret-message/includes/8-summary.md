@@ -18,8 +18,8 @@ Having decoded your first secret message, the natural next step is to determine 
 
 ## Dive deeper into Python
 
-If Python has piqued your interest, check out the rest of the [Take your first steps with Python](https://docs.microsoft.com/learn/paths/python-first-steps/?azure-portal=true) learning path.
+If Python has piqued your interest, check out the rest of the [Take your first steps with Python](../../../paths/python-first-steps/index.yml?azure-portal=true) learning path.
 
-After you complete this learning path, look for other Learn modules to continue your learning journey on our [Student page](https://docs.microsoft.com/learn/roles/student?azure-portal=true). 
+After you complete this learning path, look for other Learn modules to continue your learning journey on our [Student page](/learn/roles/student?azure-portal=true). 
 
-From [tracking global air quality with Azure Maps](https://docs.microsoft.com/learn/modules/azure-maps-track-air-pollution/?azure-portal=true) to [helping farmers protect their crops by using text message weather alerts from Azure Functions](https://docs.microsoft.com/learn/modules/send-crop-weather-alerts/?azure-portal=true), we're here to guide you as you explore new technology, develop new coding skills, and solve challenging problems!
+From [tracking global air quality with Azure Maps](/learn/modules/azure-maps-track-air-pollution/?azure-portal=true) to [helping farmers protect their crops by using text message weather alerts from Azure Functions](/learn/modules/send-crop-weather-alerts/?azure-portal=true), we're here to guide you as you explore new technology, develop new coding skills, and solve challenging problems!

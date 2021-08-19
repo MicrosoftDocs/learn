@@ -72,7 +72,7 @@ Microsoft Graph Explorer. Microsoft Graph Explorer is a web-based API
 browser which allows you to pick the API calls by choosing pre-populated
 options. Here's what it looks like:
 
-:::image type="content" source="../media/microsoft-graph-explorer.png" alt-text="Screenshot of the Microsoft Graph Explorer web page":::
+:::image type="content" source="../media/microsoft-graph-explorer.png" alt-text="Screenshot of the Microsoft Graph Explorer web page.":::
 
 We will step through a set of "Microsoft Teams" and "Microsoft Teams
 (beta)" API calls to retrieve the conversation. Each step of the way, we

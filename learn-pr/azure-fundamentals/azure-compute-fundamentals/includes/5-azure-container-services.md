@@ -48,7 +48,7 @@ Containers are managed through a container orchestrator, which can start, stop, 
 
 **Azure Kubernetes Service**
 
-The task of automating, managing, and interacting with a large number of containers is known as orchestration. [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service?azure-portal=true) is a complete orchestration service for containers with distributed architectures and large volumes of containers. Orchestration is the task of automating and managing a large number of containers and how they interact.
+The task of automating, managing, and interacting with a large number of containers is known as orchestration. [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service?azure-portal=true) is a complete orchestration service for containers with distributed architectures and large volumes of containers.
 
 
   :::column-end:::

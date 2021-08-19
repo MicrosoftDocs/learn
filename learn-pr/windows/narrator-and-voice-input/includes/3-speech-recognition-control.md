@@ -17,7 +17,7 @@ Without making any further changes to our code, let's see how the Windows speech
 
 1. In the Windows search bar, enter "speech recognition". Select **Start Speech Recognition** in the window that appears. You should see the small graphic that shows when the speech recognition system is on or off. Select the microphone icon so the **Listening** text appears.
 
-![Windows is listening](../media/windows-speech-recognition.png)
+![Windows is listening.](../media/windows-speech-recognition.png)
 
 2. Run the calculator, ensure it's in focus, and try speaking a calculation. Notice how numbers need to be spoken singularly. 741 can't be spoken as "seven hundred and forty-one", but must be said as "seven", pause, "four", pause, "one". Say "times two", then "equals" to calculate the result.
 

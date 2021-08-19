@@ -49,4 +49,4 @@ bool DeviceIsBigScreen => (Device.Idiom == TargetIdiom.Tablet) || (Device.Idiom 
 
 1. Run the app on a tablet or desktop computer supported by Xamarin.Forms, and the layout will adapt to resemble the dual-screen size-by-side appearance:
 
-    ![Tablet showing proportional TwoPaneView layout](../media/7-tablet-wide.png)
+    ![Tablet showing proportional TwoPaneView layout.](../media/7-tablet-wide.png)

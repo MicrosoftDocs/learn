@@ -8,5 +8,5 @@ Without a SAS and access policies, your company would likely have had to develop
 
 To learn more about how to use a SAS to secure your data stored in Azure Storage, see the following articles:
 
-- [Grant limited access to Azure Storage resources using shared access signatures](https://docs.microsoft.com/azure/storage/common/storage-sas-overview)
-- [Quickstart: Azure Blob storage client library v12 for .NET](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-dotnet)
+- [Grant limited access to Azure Storage resources using shared access signatures](/azure/storage/common/storage-sas-overview)
+- [Quickstart: Azure Blob storage client library v12 for .NET](/azure/storage/blobs/storage-quickstart-blobs-dotnet)

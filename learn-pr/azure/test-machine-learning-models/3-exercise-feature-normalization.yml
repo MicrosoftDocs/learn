@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.machinelearning.test-machine-learning-models.exercise-feature-normalization
+title: Exercise – Feature normalization
+metadata:
+  title: Exercise – Feature normalization
+  description: Exercise unit about feature normalization in machine learning
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+sandbox: true
+notebook: notebooks/5-3-exercise-feature-normalization.ipynb

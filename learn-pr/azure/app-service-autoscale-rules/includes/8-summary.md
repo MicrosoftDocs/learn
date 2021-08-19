@@ -13,5 +13,5 @@ Use the Azure portal to delete the **mslearn-autoscale** resource group from you
 ## Learn more
 
 - [Azure Autoscale](https://azure.microsoft.com/features/autoscale/)
-- [Best practices for Autoscale](https://docs.microsoft.com/azure/azure-monitor/platform/autoscale-best-practices)
-- [Overview of common autoscale patterns](https://docs.microsoft.com/azure/azure-monitor/platform/autoscale-common-scale-patterns)
+- [Best practices for Autoscale](/azure/azure-monitor/platform/autoscale-best-practices)
+- [Overview of common autoscale patterns](/azure/azure-monitor/platform/autoscale-common-scale-patterns)

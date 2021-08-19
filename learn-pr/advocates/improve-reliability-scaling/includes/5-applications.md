@@ -20,7 +20,7 @@ architect your applications in the cloud, and there are a number of
 scalability recommendations you can find in the application architecture
 guide at the following link:
 
-[Azure Architecture Center](https://docs.microsoft.com/azure/architecture/?WT.mc_id=msignitethetour2019-slides-ops50)
+[Azure Architecture Center](/azure/architecture/?WT.mc_id=msignitethetour2019-slides-ops50)
 
 ## Scenario: Tailwind Traders architecture
 
@@ -31,7 +31,7 @@ strengths. What’s good about it?
 Take another look at the scenario you saw in the previous unit. Here’s a
 diagram of the organization’s architecture again.
 
-:::image type="content" source="../media/application-diagram-products.png" alt-text="Full architecture diagram of application with products backend highlighted":::
+:::image type="content" source="../media/application-diagram-products.png" alt-text="Full architecture diagram of application with products backend highlighted.":::
 
 They've decomposed the application into smaller microservices, and some of
 these services are sitting as containers on Azure Kubernetes Service or

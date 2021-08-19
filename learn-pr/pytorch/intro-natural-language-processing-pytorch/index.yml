@@ -16,7 +16,7 @@ abstract: |
   - Get introduced to Recurrent Neural Networks (RNNs) and Generative Neural Networks (GNNs)
   - Learn about Attention Mechanisms
   - Learn how to build text classification models  
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/pytorch-natural-language-process.svg
 levels:
 - beginner
 roles:

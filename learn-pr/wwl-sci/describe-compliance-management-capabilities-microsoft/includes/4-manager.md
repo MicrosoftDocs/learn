@@ -27,6 +27,8 @@ Compliance Manager tracks the following types of controls:
 - **Your controls**: sometimes referred to as customer-managed controls, these are implemented and managed by the organization.
 - **Shared controls**: responsibility for implementing these controls is shared by the organization and Microsoft.
 
+Compliance Manager continuously assesses controls by scanning through your Microsoft 365 environment and detecting your system settings, continuously and automatically updating your technical action status.
+
 ## Assessments
 
 An assessment is a grouping of controls from a specific regulation, standard, or policy. Completing the actions within an assessment helps to meet the requirements of a standard, regulation, or law. For example, an organization may have an assessment that, when the admin completes all actions within it, it helps to bring the organization’s Microsoft 365 settings in line with ISO 27001 requirements.

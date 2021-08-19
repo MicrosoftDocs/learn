@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-azure-ml
+metadata:
+  title: Introduction to Azure Machine Learning
+  description: Azure Machine Learning provides your software with automated data identification and extraction from your documents. Using an SDK or REST, the AI-powered service decreases, or can completely eliminate, time spent on and errors in data entry, while also making it easier to utilize your data.
+  ms.date: 03/14/2021
+  author: tomreidnz
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure Machine Learning 
+summary: Azure Machine Learning provides an environment to create and manage the end-to-end life cycle of Machine Learning models. Azure Machine Learning’s compatibility with open-source frameworks and platforms like PyTorch and TensorFlow makes it an effective all-in-one platform for integrating and handling data and models. Azure Machine Learning is designed for all skill levels, with advanced MLOps features and simple no-code model creation and deployment.
+abstract: |
+  In this module, you will:
+  - Assess the benefits of Azure Machine Learning
+  - Describe what Azure Machine Learning is
+  - Define scenarios where Azure Machine Learning can be applied
+prerequisites: Familiarity with machine learning models and terms
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-scientist
+- solution-architect
+- student
+products:
+- azure
+- azure-machine-learning
+units:
+- learn.azure.intro-to-azure-ml.introduction
+- learn.azure.intro-to-azure-ml.what-is-azure-ml
+- learn.azure.intro-to-azure-ml.how-azure-ml-works
+- learn.azure.intro-to-azure-ml.when-to-use-azure-ml
+- learn.azure.intro-to-azure-ml.knowledge-check
+- learn.azure.intro-to-azure-ml.summary
+badge:
+  uid: learn.azure.intro-to-azure-ml.badge

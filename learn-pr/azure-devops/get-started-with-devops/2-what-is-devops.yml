@@ -3,6 +3,11 @@ uid: learn.get-started-with-devops.2-what-is-devops
 metadata:
   title: What is DevOps?
   description: What is DevOps?
+  ms.date: 05/20/2021
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: What is DevOps?
 durationInMinutes: 5
 content: |

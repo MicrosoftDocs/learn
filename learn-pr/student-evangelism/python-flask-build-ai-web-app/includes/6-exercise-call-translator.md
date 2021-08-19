@@ -161,4 +161,4 @@ Return to the integrated terminal in Visual Studio Code (or reopen it with **Ctr
 
 You've now successfully created a website that uses Translator to implement translations! Because language and communication rely on context, which isn't always clear to a computer, you might notice that the results aren't perfect. However, they're typically spot on or close enough for effective communication, which is the goal!
 
-The code we've provided here can be incorporated into any application you like. You can continue to build on the website we've created, or even [deploy it to Azure App Services](https://docs.microsoft.com/azure/developer/python/tutorial-deploy-app-service-on-linux-03?WT.mc_id=python-11210-chrhar&azure-portal=true)!
+The code we've provided here can be incorporated into any application you like. You can continue to build on the website we've created, or even [deploy it to Azure App Services](/azure/developer/python/tutorial-deploy-app-service-on-linux-03?azure-portal=true&WT.mc_id=python-11210-chrhar)!

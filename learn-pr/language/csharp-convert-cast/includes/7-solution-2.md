@@ -15,7 +15,7 @@ float result3 = value3 / value1;
 Console.WriteLine($"Divide value3 by value1, display the result as a float: {result3}");
 ```
 
-This code is merely "*one possible solution*" because there's likely several ways to solve this challenge. The proposed solution (above) relies on casting alone; however, it's possible you have another approach that works equally well. Just make sure your result matches the following output.
+This code is merely "*one possible solution*" because there's likely several ways to solve this challenge. This solution relies mostly on casting (and a call to convert); however, it's possible you have another approach that works equally well. Just make sure your result matches the following output.
 
 ```output
 Divide value1 by value2, display the result as an int: 2

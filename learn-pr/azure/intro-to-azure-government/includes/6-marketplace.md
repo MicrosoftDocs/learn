@@ -6,12 +6,12 @@ Azure Government Marketplace solutions are the same images you’ll find in Azur
 
 The Azure Government Marketplace differs from Azure Marketplace in the following ways:
 - Only Bring Your Own License (BYOL) and Pay-as-you-Go (PayGo) images are available.
-- A different set of images is available. You can find the list of available images at [https://docs.microsoft.com/azure/azure-government/documentation-government-image-gallery](https://docs.microsoft.com/azure/azure-government/documentation-government-image-gallery)
+- A different set of images is available. You can find the list of available images at [https://docs.microsoft.com/azure/azure-government/documentation-government-image-gallery](/azure/azure-government/documentation-government-image-gallery)
 
 ## How to find Azure Government Marketplace solutions
 
 You can find Azure Government Marketplace solutions in two ways:
 1.	Browse the Azure Marketplace for solutions of interest, then check the Azure Government portal for availability.
-2.	Check out the table at [https://docs.microsoft.com/azure/azure-government/documentation-government-image-gallery](https://docs.microsoft.com/azure/azure-government/documentation-government-image-gallery) to see a list of available images within the Azure Government Marketplace. Prebuilt images from Microsoft and Red Hat also include Pay-As-You-Go licensing.
+2.	Check out the table at [https://docs.microsoft.com/azure/azure-government/documentation-government-image-gallery](/azure/azure-government/documentation-government-image-gallery) to see a list of available images within the Azure Government Marketplace. Prebuilt images from Microsoft and Red Hat also include Pay-As-You-Go licensing.
 
 You’ll find services available in every category: compute, networking, storage, web + mobile, databases, Internet of Things, and enterprise integration. We’re continuously adding new solutions to help you get the most out of your investments in Azure Government.

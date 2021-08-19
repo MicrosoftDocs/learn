@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true)
   - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
-  - The [Quantum Development Kit](https://docs.microsoft.com/quantum/quickstarts/install-command-line?view=qsharp-preview&tabs=tabid-vscode&azure-portal=true)
+  - The [Quantum Development Kit](/quantum/quickstarts/install-command-line?azure-portal=true&tabs=tabid-vscode&view=qsharp-preview)
 
   You'll need basic knowledge of the principles of quantum computing: superposition, interference, entanglement, and measurement.
 

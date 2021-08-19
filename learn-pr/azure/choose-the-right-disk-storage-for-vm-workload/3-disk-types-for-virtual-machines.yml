@@ -17,9 +17,9 @@ quiz:
   questions:
   - content: "You need the best disk performance for a new virtual machine. What disk type should you use, assuming all disk types are supported in your region?"
     choices:
-    - content: "Ultra SSD"
+    - content: "Ultra Disks"
       isCorrect: true
-      explanation: "Ultra SSDs offer the best performance of disk types on Azure."
+      explanation: "Ultra Disks offer the best performance of disk types on Azure."
     - content: "Premium SSD"
       isCorrect: false
       explanation: "Premium SSDs have excellent performance, but do not offer the best performance of disk types on Azure."

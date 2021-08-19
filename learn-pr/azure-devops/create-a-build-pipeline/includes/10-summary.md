@@ -4,9 +4,9 @@ Along the way, you learned how to use variables to simplify your code.
 
 You also learned how to use templates to encapsulate sets of tasks that you can repeat throughout your build process. You used a template to build the app's Debug and Release configurations.
 
-Lastly, you practiced your Git skills by pushing commits to a branch and building from that branch. Working from a branch lets you work in isolation from the main code base. That helps you experiment and try new things without affecting the main development branch, `master`.
+Lastly, you practiced your Git skills by pushing commits to a branch and building from that branch. Working from a branch lets you work in isolation from the main code base. That helps you experiment and try new things without affecting the main development branch, `main`.
 
-Keep in mind that this build configuration focuses on building a .NET Core app. The tasks you choose will depend on the kind of app you're building, the tools you use to build it, and the programming language it's written in.
+Keep in mind that this build configuration focuses on building a .NET app. The tasks you choose will depend on the kind of app you're building, the tools you use to build it, and the programming language it's written in.
 
 When you approach your own builds, it's a good idea to start by making sure you can build the app from scratch from the terminal or from a Bash or PowerShell script. From there, you can map each command to a pipeline task that accomplishes the same thing.
 
@@ -23,17 +23,17 @@ If you're looking for a more academic approach, [*Continuous Delivery*](https://
 
 ### Learn YAML
 
-If you're interested in learning YAML, check out [Learn YAML in Y minutes](https://learnxinyminutes.com/docs/yaml?azure-portal=true). You can then review the Azure Pipelines [YAML schema reference](https://docs.microsoft.com/azure/devops/pipelines/yaml-schema?tabs=schema&azure-portal=true) to get a better sense of how pipelines are structured.
+If you're interested in learning YAML, check out [Learn YAML in Y minutes](https://learnxinyminutes.com/docs/yaml?azure-portal=true). You can then review the Azure Pipelines [YAML schema reference](/azure/devops/pipelines/yaml-schema?azure-portal=true&tabs=schema) to get a better sense of how pipelines are structured.
 
 ### Explore the documentation
 
-We provide complete [reference documentation](https://docs.microsoft.com/azure/devops/pipelines/?azure-portal=true) that goes deeper into the concepts and tasks we described here. The documentation also provides starter guides for many app types, like Java, C++, and Node.js.
+We provide complete [reference documentation](/azure/devops/pipelines/?azure-portal=true) that goes deeper into the concepts and tasks we described here. The documentation also provides starter guides for many app types, like Java, C++, and Node.js.
 
-The [Build and release tasks](https://docs.microsoft.com/azure/devops/pipelines/tasks/?azure-portal=true) section can help you map your existing build commands to built-in tasks.
+The [Build and release tasks](/azure/devops/pipelines/tasks/?azure-portal=true) section can help you map your existing build commands to built-in tasks.
 
 ### Create your own build pipeline
 
 In this module, you created the pipeline from Azure DevOps. You can repeat a similar process to create your own pipeline. You can also create a pipeline from the Azure portal or from the GitHub Marketplace app.
 
-* [Use the Azure portal](https://docs.microsoft.com/azure/devops/pipelines/get-started-azure-devops-project?azure-portal=true)
+* [Use the Azure portal](/azure/devops/pipelines/get-started-azure-devops-project?azure-portal=true)
 * [Azure Pipelines](https://github.com/marketplace/azure-pipelines?azure-portal=true) app on GitHub Marketplace

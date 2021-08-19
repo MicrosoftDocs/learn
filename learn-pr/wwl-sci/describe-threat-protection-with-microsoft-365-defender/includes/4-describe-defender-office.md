@@ -15,7 +15,7 @@ This plan offers configuration, protection, and detection tools for your Office 
 
 - **Safe Attachments**: Checks email attachments for malicious content.
 - **Safe Links**: Links are scanned for each click. A safe link remains accessible, but malicious links are blocked.
-- **Protection for SharePoint, OneDrive, and Microsoft Teams**: Protects your organization when users collaborate and share files by identifying and blocking malicious files in team sites and document libraries.
+- **Safe Attachments for SharePoint, OneDrive, and Microsoft Teams**: Protects your organization when users collaborate and share files by identifying and blocking malicious files in team sites and document libraries.
 - **Anti-phishing protection**: Detects attempts to impersonate your users and internal or custom domains.
 - **Real-time detections**: A real-time report that allows you to identify and analyze recent threats.
 

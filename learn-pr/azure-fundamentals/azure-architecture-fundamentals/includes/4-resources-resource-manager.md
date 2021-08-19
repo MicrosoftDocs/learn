@@ -1,4 +1,4 @@
-After you've created a subscription for Tailwind Traders, you're ready to start creating resources and storing them in resource groups. With that in mind, it's important to define those terms:
+Before you create a subscription for Tailwind Traders, you will need to be ready to start creating resources and storing them in resource groups. With that in mind, it's important to define those terms:
 
  -  **Resource**: A manageable item that's available through Azure. Virtual machines (VMs), storage accounts, web apps, databases, and virtual networks are examples of resources.
  -  **Resource group**: A container that holds related resources for an Azure solution. The resource group includes resources that you want to manage as a group. You decide which resources belong in a resource group based on what makes the most sense for your organization.

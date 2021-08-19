@@ -26,7 +26,7 @@ With ASP.NET you can use the same framework and patterns to build both web pages
 
 ### **Benefit**: Simple serialization
 
-ASP.NET was designed for modern web experiences. Endpoints automatically serialize your classes to properly formatted JSON out of the box. No special configuration is required. Of course, [serialization can be customized](https://docs.microsoft.com/aspnet/core/web-api/advanced/custom-formatters) for endpoints that have unique requirements.
+ASP.NET was designed for modern web experiences. Endpoints automatically serialize your classes to properly formatted JSON out of the box. No special configuration is required. Of course, [serialization can be customized](/aspnet/core/web-api/advanced/custom-formatters) for endpoints that have unique requirements.
 
 ### **Benefit**: Authentication and authorization
 

@@ -54,7 +54,7 @@ SQL Server on a virtual machine is considered IaaS. The other deployment options
 
 ### Versionless database services
 
-Versionless SQL is an additional significant difference between IaaS and PaaS. Unlike IaaS, which is tied to a specific SQL Server version, like SQL Server 2019, SQL Database and SQL Managed Instance are versionless. The main "branch" of the SQL Server engine codebase powers SQL Server 2019, SQL Database, and SQL Managed Instance.  
+Another significant difference between IaaS and PaaS is *versionless SQL*. Unlike IaaS, which is tied to a specific SQL Server version, like SQL Server 2019, SQL Database and SQL Managed Instance are versionless. The main "branch" of the SQL Server engine codebase powers SQL Server 2019, SQL Database, and SQL Managed Instance.  
 
 Although SQL Server versions come out every few years, PaaS services allow Microsoft to continually update SQL databases/instances. Microsoft rolls out fixes and features as appropriate. As a consumer of the service, you don't have control over these updates, and the result of `@@VERSION` won't line up to a specific SQL Server version. But versionless SQL allows for worry-free patching for both the underlying OS and SQL Server and for Microsoft to give you the latest bits.  
 

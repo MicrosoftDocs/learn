@@ -23,12 +23,15 @@ prerequisites: |
 iconUrl: /learn/achievements/azure-sql-high-availability.svg
 levels:
 - beginner
+- intermediate
 roles:
 - solution-architect
 - database-administrator
+- data-engineer
 products:
 - azure
 - azure-sql-database
+- azure-sql-managed-instance
 units:
 - learn.azure-sql-high-availability.1-introduction
 - learn.azure-sql-high-availability.2-backup-restore

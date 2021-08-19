@@ -6,15 +6,15 @@ Configuration of your cloud environment can be one of the biggest enablers for c
 
 Many of the top Microsoft partners provide offerings aligned to the Ready methodology of the Cloud Adoption Framework. Those offerings typically include a partner's own customized implementation of an Azure landing zone.
 
-Before you engage a partner, review the guide to evaluating [partner implementation options for Azure landing zones](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/partner-landing-zone?azure-portal=true).
+Before you engage a partner, review the guide to evaluating [partner implementation options for Azure landing zones](/azure/cloud-adoption-framework/ready/landing-zone/partner-landing-zone?azure-portal=true).
 
 ## Implementation options for starting small
 
 The following implementation options can help you start small and expand. These options are best for central operations. Each option establishes a less complex initial implementation by using Azure-native governance and operations tooling that can then be refactored to meet your needs.
 
-- **CAF Migration landing zone blueprint:** Deploys the basic foundation for migrating low-risk assets. Review the [design principles](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/migrate-landing-zone#design-principles?azure-portal=true) or [deploy](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/migrate-landing-zone?azure-portal=true) this solution to your Azure environment.
-- **CAF Foundation blueprint:** Adds the minimum tools that you need to begin developing a governance strategy. Review the [design principles](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/foundation-blueprint#design-principles?Azure-portal=true) or [deploy](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/foundation-blueprint?azure-protal=true) this solution to your Azure environment.
-- **CAF Terraform modules:** Partner path for multiple-cloud operating models. This path can limit Azure-first operating models. Review the [design principles](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/terraform-landing-zone#design-decisions?azure-portal=true) or [deploy](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/landing-zone/terraform-landing-zone#customize-and-deploy-your-first-landing-zone?azure-portal=true) this solution to your Azure environment.
+- **CAF Migration landing zone blueprint:** Deploys the basic foundation for migrating low-risk assets. Review the [design principles](/azure/cloud-adoption-framework/ready/landing-zone/migrate-landing-zone#design-principles?azure-portal=true) or [deploy](/azure/cloud-adoption-framework/ready/landing-zone/migrate-landing-zone?azure-portal=true) this solution to your Azure environment.
+- **CAF Foundation blueprint:** Adds the minimum tools that you need to begin developing a governance strategy. Review the [design principles](/azure/cloud-adoption-framework/ready/landing-zone/foundation-blueprint#design-principles?Azure-portal=true) or [deploy](/azure/cloud-adoption-framework/ready/landing-zone/foundation-blueprint?azure-protal=true) this solution to your Azure environment.
+- **CAF Terraform modules:** Partner path for multiple-cloud operating models. This path can limit Azure-first operating models. Review the [design principles](/azure/cloud-adoption-framework/ready/landing-zone/terraform-landing-zone#design-decisions?azure-portal=true) or [deploy](/azure/cloud-adoption-framework/ready/landing-zone/terraform-landing-zone#customize-and-deploy-your-first-landing-zone?azure-portal=true) this solution to your Azure environment.
 
 ## Implementation options for enterprise scale
 

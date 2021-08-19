@@ -83,4 +83,4 @@ After you commit and push your changes (and wait a little while for the GitHub a
 
 To see an example, see the static web app that we built during the creation of this module, at [https://aka.ms/LearnWithDrG/Basketball/WebApp](https://aka.ms/LearnWithDrG/Basketball/WebApp?azure-portal=true).
 
-© 2020 Warner Bros. Ent. All Rights Reserved
+© 2021 Warner Bros. Ent. All Rights Reserved

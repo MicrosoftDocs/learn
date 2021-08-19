@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" overflow="hidden" viewBox="0 0 962 578" width="400">
+  <defs/>
+  <defs>
+    <clipPath id="a">
+      <path d="M159 71h962v578H159z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)" transform="translate(-159 -71)">
+    <path fill="#FFF" d="M160 72h960v576H160z"/>
+    <path fill="none" stroke="#44546A" stroke-dasharray="16 5.333" stroke-miterlimit="8" stroke-width="5.333" d="M287.5 402.5h76"/>
+    <path fill="#8497B0" stroke="#44546A" stroke-miterlimit="8" stroke-width="3" d="M363.5 378.5h48v48h-48z"/>
+    <path fill="#44546A" fill-rule="evenodd" stroke="#44546A" stroke-miterlimit="8" stroke-width="1.333" d="M258.5 403c0-8.008 6.492-14.5 14.5-14.5s14.5 6.492 14.5 14.5-6.492 14.5-14.5 14.5-14.5-6.492-14.5-14.5z"/>
+    <path fill="none" stroke="#44546A" stroke-dasharray="16 5.333" stroke-miterlimit="8" stroke-width="5.333" d="M510.5 585.5l68.365.582"/>
+    <path fill="#8497B0" stroke="#44546A" stroke-miterlimit="8" stroke-width="3" d="M578.5 562.5h48v48h-48zM640.5 562.5h48v48h-48zM702.5 562.5h48v48h-48z"/>
+    <path fill="#44546A" fill-rule="evenodd" stroke="#44546A" stroke-miterlimit="8" stroke-width="1.333" d="M481.5 586c0-8.008 6.492-14.5 14.5-14.5s14.5 6.492 14.5 14.5-6.492 14.5-14.5 14.5-14.5-6.492-14.5-14.5z"/>
+    <path fill="none" stroke="#44546A" stroke-dasharray="16 5.333" stroke-miterlimit="8" stroke-width="5.333" d="M529.5 242.5h63.565"/>
+    <path fill="#8497B0" stroke="#44546A" stroke-miterlimit="8" stroke-width="3" d="M592.5 218.5h48v48h-48zM666.5 183.5h48v48h-48zM740.5 183.5h48v48h-48zM666.5 253.5h48v48h-48zM740.5 253.5h48v48h-48zM740.5 322.5h48v48h-48z"/>
+    <path fill="none" stroke="#44546A" stroke-miterlimit="8" stroke-width="4" d="M640 241.8h12.8V207h12.8M640 242h12.8v34.8h12.8M714 207h25.6M714 277h25.6M714 277h12.8v69.6h12.8"/>
+    <path fill="#44546A" fill-rule="evenodd" stroke="#44546A" stroke-miterlimit="8" stroke-width="1.333" d="M500.5 242c0-8.008 6.492-14.5 14.5-14.5s14.5 6.492 14.5 14.5-6.492 14.5-14.5 14.5-14.5-6.492-14.5-14.5z"/>
+    <path fill="none" stroke="#44546A" stroke-dasharray="16 5.333" stroke-miterlimit="8" stroke-width="5.333" d="M918.5 451.5l44.071 28.671"/>
+    <path fill="#44546A" fill-rule="evenodd" stroke="#44546A" stroke-miterlimit="8" stroke-width="1.333" d="M894.5 441c0-8.008 6.492-14.5 14.5-14.5s14.5 6.492 14.5 14.5-6.492 14.5-14.5 14.5-14.5-6.492-14.5-14.5z"/>
+    <path fill="#8497B0" fill-rule="evenodd" stroke="#44546A" stroke-miterlimit="8" stroke-width="3" d="M958.5 490c0-8.008 6.492-14.5 14.5-14.5s14.5 6.492 14.5 14.5-6.492 14.5-14.5 14.5-14.5-6.492-14.5-14.5zM912.5 563c0-8.008 6.268-14.5 14-14.5s14 6.492 14 14.5-6.268 14.5-14 14.5-14-6.492-14-14.5zM1009.5 543.5c0-7.732 6.49-14 14.5-14s14.5 6.268 14.5 14-6.49 14-14.5 14-14.5-6.268-14.5-14z"/>
+    <path fill="none" stroke="#44546A" stroke-dasharray="16 5.333" stroke-miterlimit="8" stroke-width="5.333" d="M962.753 500.5L936.5 552.735M983.5 500.5l30.84 33.035"/>
+    <path fill="#FFF" stroke="#44546A" stroke-miterlimit="8" stroke-width="3" d="M242.5 303.5h185v49h-185z"/>
+    <text fill="#44546A" font-family="Cascadia Code,Cascadia Code_MSFontService,sans-serif" font-size="24" font-weight="400" transform="translate(271.548 336)">
+      Key-Value
+    </text>
+    <path fill="#FFF" stroke="#44546A" stroke-miterlimit="8" stroke-width="3" d="M551.5 110.5h185v49h-185z"/>
+    <text fill="#44546A" font-family="Cascadia Code,Cascadia Code_MSFontService,sans-serif" font-size="24" font-weight="400" transform="translate(580.748 143)">
+      Documents
+    </text>
+    <path fill="#FFF" stroke="#44546A" stroke-miterlimit="8" stroke-width="3" d="M494.5 477.5h242v49h-242z"/>
+    <text fill="#44546A" font-family="Cascadia Code,Cascadia Code_MSFontService,sans-serif" font-size="24" font-weight="400" transform="translate(524.422 510)">
+      Column-Family
+    </text>
+    <path fill="#FFF" stroke="#44546A" stroke-miterlimit="8" stroke-width="3" d="M902.5 349.5h128v48h-128z"/>
+    <text fill="#44546A" font-family="Cascadia Code,Cascadia Code_MSFontService,sans-serif" font-size="24" font-weight="400" transform="translate(930.931 382)">
+      Graph
+    </text>
+  </g>
+</svg>

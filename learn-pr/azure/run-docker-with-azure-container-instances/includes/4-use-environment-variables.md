@@ -4,7 +4,7 @@ Here, you'll create an Azure Cosmos DB instance and use environment variables to
 
 ## Deploy Azure Cosmos DB
 
-1. When you deploy Azure Cosmos DB, you provide a unique database name. For learning purposes, run this command from Cloud Shell to create a Bash variable that holds a unique name.
+1. When you deploy Azure Cosmos DB, you provide a unique database name. For learning purposes, run this command in Cloud Shell to create a Bash variable that holds a unique name.
 
     ```bash
     COSMOS_DB_NAME=aci-cosmos-db-$RANDOM
@@ -46,7 +46,7 @@ The two environment variables you created in the last part, `COSMOS_DB_ENDPOINT`
     az container create \
       --resource-group learn-deploy-aci-rg \
       --name aci-demo \
-      --image microsoft/azure-vote-front:cosmosdb \
+      --image mcr.microsoft.com/azuredocs/azure-vote-front:cosmosdb \
       --ip-address Public \
       --location eastus \
       --environment-variables \
@@ -54,11 +54,11 @@ The two environment variables you created in the last part, `COSMOS_DB_ENDPOINT`
         COSMOS_DB_MASTERKEY=$COSMOS_DB_MASTERKEY
     ```
 
-    **microsoft/azure-vote-front:cosmosdb** refers to a Docker image that runs a fictitious voting app.
+    **azuredocs/azure-vote-front:cosmosdb** refers to a Docker image that runs a fictitious voting app.
 
     Note the `--environment-variables` argument. This argument specifies environment variables that are passed to the container when the container starts. The container image is configured to look for these environment variables. Here, you pass the name of the Azure Cosmos DB endpoint and its connection key.
 
-1. Run `az container show` to get your container's public IP address.
+1. Run the `az container show` command to get your container's public IP address.
 
     ```azurecli
     az container show \
@@ -68,7 +68,7 @@ The two environment variables you created in the last part, `COSMOS_DB_ENDPOINT`
       --output tsv
     ```
 
-1. From a browser, navigate to your container's IP address.
+1. In a browser, go to your container's IP address.
 
     > [!IMPORTANT]
     > Sometimes containers take a minute or two to fully start up and be able to receive connections. If there's no response when you navigate to the IP address in your browser, wait a few moments and refresh the page.
@@ -121,7 +121,7 @@ In this part, you'll learn how to prevent sensitive information, such as connect
     az container create \
       --resource-group learn-deploy-aci-rg \
       --name aci-demo-secure \
-      --image microsoft/azure-vote-front:cosmosdb \
+      --image mcr.microsoft.com/azuredocs/azure-vote-front:cosmosdb \
       --ip-address Public \
       --location eastus \
       --secure-environment-variables \

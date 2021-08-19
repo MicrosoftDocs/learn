@@ -8,6 +8,7 @@ metadata:
   author: nickwalkmsft
   ms.author: nickwalk
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: Introduction to Azure DevTest Labs
 summary: Learn how to use Azure DevTest Labs to quickly set up virtual computing environments for application development and testing.
 abstract: | 

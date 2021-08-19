@@ -10,10 +10,10 @@ Transferring data between Apache Spark pools and SQL pools can be done using Jav
 
 The Azure Synapse Apache Spark pool to Synapse SQL connector is a data source implementation for Apache Spark. It uses the Azure Data Lake Storage Gen2 and PolyBase in SQL pools to efficiently transfer data between the Spark cluster and the Synapse SQL instance.
 
-1. We have been using Python code in these cells up to this point. If we want to use the Apache Spark pool to Synapse SQL connector (`sqlanalytics`), one option is to create a temporary view of the data within the DataFrame. Execute the code below in a new cell to create a view named `top_purchases`:
+1. If we want to use the Apache Spark pool to Synapse SQL connector (`sqlanalytics`), one option is to create a temporary view of the data within the DataFrame. Execute the code below in a new cell to create a view named `top_purchases`:
 
     ```python
-    # Create a temporary view for top purchases so we can load from Scala
+    # Create a temporary view for top purchases 
     topPurchases.createOrReplaceTempView("top_purchases")
     ```
 

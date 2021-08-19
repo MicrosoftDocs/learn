@@ -5,15 +5,15 @@ You also learned about several of the services that are offered to assist in you
 ## Learn more
 To learn more about the tools and services available to help you migrate to Azure, see these articles:
 
-- [Azure Migrate](https://docs.microsoft.com/azure/migrate/migrate-overview)
-- [Azure Database Migration Service](https://docs.microsoft.com/azure/dms/dms-overview)
+- [Azure Migrate](/azure/migrate/migrate-overview)
+- [Azure Database Migration Service](/azure/dms/dms-overview)
 
 For information on optimizing your environment, see these Microsoft Learn modules:
 
-- [Plan and manage your Azure costs](https://docs.microsoft.com/learn/modules/plan-manage-azure-costs/)
-- [Design for efficiency and operations in Azure](https://docs.microsoft.com/learn/modules/design-for-efficiency-and-operations-in-azure/)
+- [Plan and manage your Azure costs](/learn/modules/plan-manage-azure-costs/)
+- [Design for efficiency and operations in Azure](/learn/modules/design-for-efficiency-and-operations-in-azure/)
 
 For information on monitoring your environment, see these articles:
 
-- [Azure Monitor overview](https://docs.microsoft.com/azure/azure-monitor/overview)
-- [Azure Sentinel overview](https://docs.microsoft.com/azure/sentinel/overview)
+- [Azure Monitor overview](/azure/azure-monitor/overview)
+- [Azure Sentinel overview](/azure/sentinel/overview)

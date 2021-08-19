@@ -18,7 +18,7 @@ To complete this module, you need your own [Azure subscription](https://azure.mi
 
 Although you don't need an Azure subscription to work with Azure DevOps, here you'll use Azure DevOps to deploy to resources that exist in your Azure subscription. To simplify the process, use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
 
-If you use different Microsoft accounts to sign in to Azure and Azure DevOps, then add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?tabs=browser&azure-portal=true). When you add the user, choose the **Basic** access level.
+If you use different Microsoft accounts to sign in to Azure and Azure DevOps, then add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, choose the **Basic** access level.
 
 Then sign out of Azure DevOps and sign in again under the Microsoft account that you use to sign in to your Azure subscription.
 
@@ -33,14 +33,14 @@ The modules in this learning path are part of a progression. You follow the Tail
 Run a template that sets up your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=manage-release-cadence&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=manage-release-cadence&azure-portal=true)
 
 On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 1. Select **Sign In** and accept the usage terms.
 1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *Space Game - web - Deployment patterns*.
 
-    ![Creating a project through the Azure DevOps Demo Generator](../media/3-create-new-project.png)
+    :::image type="content" source="../media/3-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator.":::
 
 1. Select **Yes, I want to fork this repository**. Then select **Authorize**.
 1. Select **Create Project**.
@@ -61,7 +61,7 @@ Assigning work in this way gives you a checklist to work from. It gives your tea
 
 Recall that the team settled on these top issues for the current sprint:
 
-![Azure Boards, showing the tasks for this sprint](../../shared/media/deploy-all-tasks.png)
+:::image type="content" source="../../shared/media/deploy-all-tasks.png" alt-text="A screenshot of Azure Boards, showing the tasks for this sprint.":::
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number for each work item might not match what you see here.
@@ -72,14 +72,14 @@ To set up the work item:
 
 1. In Azure DevOps, go to **Boards**, and then select **Boards** from the menu.
 
-    ![Azure DevOps, showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
+    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
 
 1. At the bottom of the **Improve release cadence** work item, select the down arrow. Then assign the work item to yourself.
 
-    ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 1. Move the work item from the **To Do** column to the **Doing** column.
 
-    ![Azure Boards, showing the card in the Doing column](../media/3-azure-boards-wi5-doing.png)
+    :::image type="content" source="../media/3-azure-boards-wi5-doing.png" alt-text="A screenshot of Azure Boards showing the card in the Doing column.":::
 
 At the end of this module, you move the card to the **Done** column after you complete the task.
 
@@ -150,12 +150,14 @@ Here you create App Service instances for the three stages that you'll deploy to
     az appservice plan create \
       --name tailspin-space-game-test-asp \
       --resource-group tailspin-space-game-rg \
-      --sku B1
+      --sku B1 \
+      --is-linux
 
     az appservice plan create \
       --name tailspin-space-game-prod-asp \
       --resource-group tailspin-space-game-rg \
-      --sku P1V2
+      --sku P1V2 \
+      --is-linux
     ```
 
     > [!IMPORTANT]
@@ -175,17 +177,20 @@ Here you create App Service instances for the three stages that you'll deploy to
     az webapp create \
       --name tailspin-space-game-web-dev-$webappsuffix \
       --resource-group tailspin-space-game-rg \
-      --plan tailspin-space-game-test-asp
+      --plan tailspin-space-game-test-asp \
+      --runtime "DOTNET|5.0"
 
     az webapp create \
       --name tailspin-space-game-web-test-$webappsuffix \
       --resource-group tailspin-space-game-rg \
-      --plan tailspin-space-game-test-asp
+      --plan tailspin-space-game-test-asp \
+      --runtime "DOTNET|5.0"
 
     az webapp create \
       --name tailspin-space-game-web-staging-$webappsuffix \
       --resource-group tailspin-space-game-rg \
-      --plan tailspin-space-game-prod-asp
+      --plan tailspin-space-game-prod-asp \
+      --runtime "DOTNET|5.0"
     ```
 
     Notice that here you apply the same App Service plan, **B1 Basic**, to the App Service instances for _Dev_ and _Test_. You apply the App Service plan **Premium P1V2** to the App Service instance for _Staging_.
@@ -213,7 +218,7 @@ Here you create App Service instances for the three stages that you'll deploy to
 
     You see this page in each environment:
 
-    ![The default home page in Azure App Service](../../shared/media/app-service-default.png)
+    :::image type="content" source="../../shared/media/app-service-default.png" alt-text="A screenshot of the default home page in Azure App Service.":::
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/learn/modules/manage-release-cadence/6-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
@@ -229,7 +234,7 @@ To add the variables:
 1. In Azure DevOps, go to your **Space Game - web - Deployment patterns** project.
 1. Under **Pipelines**, select **Library**.
 
-    ![Azure Pipelines, showing the Library menu option](../../create-release-pipeline/media/5-pipelines-library.png)
+    :::image type="content" source="../../create-release-pipeline/media/5-pipelines-library.png" alt-text="A screenshot of Azure Pipelines, showing the Library menu option.":::
 1. Select **+ Variable group**.
 1. Under **Properties**, for the variable group name, enter *Release*.
 1. Under **Variables**, select **+ Add**.
@@ -250,7 +255,33 @@ To add the variables:
 
     Your variable group resembles this one:
 
-    ![Azure Pipelines, showing the variable group](../media/3-library-variable-group.png)
+    :::image type="content" source="../media/3-library-variable-group.png" alt-text="A screenshot of Azure Pipelines, showing the variable group. The group contains three variables.":::
+
+## Create the dev, test, and staging environments
+
+In previous modules, you created environments for the **dev**, **test**, and **staging** environments. Here, you repeat the process.
+
+To create the **dev**, **test**, and **staging** environments:
+
+1. From Azure Pipelines, select **Environments**.
+
+    :::image type="content" source="../../shared/media/pipelines-environments.png" alt-text="A screenshot of Azure Pipelines showing the location of the Environments menu option.":::
+
+1. To create the **dev** environment:
+    1. Select **Create environment**.
+    1. Under **Name**, enter *dev*.
+    1. Leave the remaining fields at their default values.
+    1. Select **Create**.
+1. To create the **test** environment:
+    1. Return to the **Environments** page.
+    1. Select **New environment**.
+    1. Under **Name**, enter *test*.
+    1. Select **Create**.
+1. To create the **staging** environment:
+    1. Return to the **Environments** page.
+    1. Select **New environment**.
+    1. Under **Name**, enter *staging*.
+    1. Select **Create**.
 
 ## Create a service connection
 
@@ -292,7 +323,7 @@ This branch contains the _Space Game_ project that you worked with in the previo
 
     ```bash
     git fetch upstream blue-green
-    git checkout -b blue-green upstream/blue-green
+    git checkout -B blue-green upstream/blue-green
     ```
 
     The format of these commands enables you to get starter code from the Microsoft GitHub repository, known as `upstream`. Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
@@ -301,7 +332,7 @@ This branch contains the _Space Game_ project that you worked with in the previo
 
     The configuration resembles the ones that you created in the previous modules in this learning path. It builds only the application's **Release** configuration. For brevity, it omits the triggers, manual approvals, and tests that you set up in previous modules.
 
-    For learning purposes, this configuration promotes changes from any branch to _Dev_, _Test_, and _Staging_. A more robust approach might promote changes from only a release branch or `master`. You used this robust approach in the [Create a multistage pipeline by using Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true) module.
+    For learning purposes, this configuration promotes changes from any branch to _Dev_, _Test_, and _Staging_. A more robust approach might promote changes from only a release branch or `main`. You used this robust approach in the [Create a multistage pipeline by using Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true) module.
 
 ## Run the pipeline and see the deployed website
 
@@ -327,11 +358,11 @@ Here you push the initial configuration to GitHub so that you're up to date with
 1. In Azure Pipelines, go to the build. Then trace the build as it runs.
 1. After the build finishes, go to the summary page.
 
-    ![Azure Pipelines, showing the completed stages](../media/3-stages-complete.png)
+    :::image type="content" source="../media/3-stages-complete.png" alt-text="A screenshot of Azure Pipelines showing the completed stages.":::
 
     You see that each stage of the pipeline succeeded.
 1. Go to the URL that corresponds to each stage.
 
     You see that the _Space Game_ website successfully deployed to each App Service environment.
 
-    ![A browser showing the Space Game website in the Dev environment](../media/3-app-service-dev.png)
+    :::image type="content" source="../media/3-app-service-dev.png" alt-text="A screenshot of a web browser showing the Space Game website in the Dev environment.":::

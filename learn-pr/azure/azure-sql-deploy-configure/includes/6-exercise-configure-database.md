@@ -98,7 +98,7 @@ One thing that you might use the Azure CLI or Azure PowerShell commands for is u
     First, for anything that's outside Azure, you need to allow inbound and outbound communication on ports in the range of 11000 to 11999. This is required for the `Redirect` connection policy.  
 
     > [!NOTE]
-    > This is likely already configured on your local device. If you hit errors in the next steps, you might need to enable the ports mentioned earlier. For more guidance, see [this article](https://docs.microsoft.com/azure/sql-database/sql-database-develop-direct-route-ports-adonet-v12?azure-portal=true).  
+    > This is likely already configured on your local device. If you hit errors in the next steps, you might need to enable the ports mentioned earlier. For more guidance, see [this article](/azure/sql-database/sql-database-develop-direct-route-ports-adonet-v12?azure-portal=true).  
 
     Update the connection policy and confirm that update with the following two commands.  
 
@@ -128,4 +128,4 @@ One thing that you might use the Azure CLI or Azure PowerShell commands for is u
     az sql server conn-policy show
     ```
 
-Redirect is faster because after the initial connection, you can bypass the gateway and go straight to the database. This means fewer hops, which results in less latency. Less latency helps in preventing bottlenecks, which is especially important for chatty applications. In the performance module, you'll learn more about how to improve and optimize performance.  
+Redirect is faster because after the initial connection, you can bypass the gateway and go straight to the database. This means fewer hops, which results in less latency. Less latency helps in preventing bottlenecks, which is especially important for chatty applications. In the performance module, you'll learn more about how to improve and optimize performance.

@@ -21,4 +21,4 @@ You should now be able to determine how you can use Azure Bastion to help secure
 
 - [Azure Bastion](https://azure.microsoft.com/services/azure-bastion?azure-portal=true)
 - [Azure Bastion pricing](https://azure.microsoft.com/pricing/details/azure-bastion?azure-portal=true)
-- [Quickstart: Connect to a VM securely through a browser via private IP address](https://docs.microsoft.com/azure/bastion/quickstart-host-portal?azure-portal=true)
+- [Quickstart: Connect to a VM securely through a browser via private IP address](/azure/bastion/quickstart-host-portal?azure-portal=true)

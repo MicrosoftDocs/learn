@@ -4,7 +4,7 @@ Failure to maintain a data retention policy could mean data loss or failure to c
 
 Defining a policy for confidential data can ensure that data is stored and removed based on best practices. Also, you can create an archival policy to formalize an understanding of what data should be disposed of and when.
 
-![Conceptual art showing multiple years of data being disposed](../media/4-data-retention.png)
+![Conceptual art showing multiple years of data being disposed.](../media/4-data-retention.png)
 
 A data retention policy should address the required regulatory and compliance requirements and corporate legal retention requirements. Properly classified data should influence decisions made about retention duration. Data classification rules that pertain to data retention must be addressed when moving to the cloud. Data protection technologies such as encryption, rights management, and data loss prevention solutions are available in the cloud and can help mitigate disclosure risks.
 
@@ -26,7 +26,7 @@ Immutable storage for Azure Blob storage supports two types of WORM or immutable
 
 When a time-based retention policy or a legal hold is applied on a container, all existing blobs move to the immutable (write-protected and delete-protected) state. All new blobs that are uploaded to the container will also move to the immutable state.
 
-When a time-based retention policy is applied on a container, all blobs in the container will stay in the immutable state for the duration of the effective retention period. The effective retention period for existing blobs is equal to the difference between the blob creation time and the user-specified retention interval.
+When a time-based retention policy is applied on a container, all blobs in the container will stay in the immutable state for the duration of the effective retention period. The effective retention period for existing blobs is equal to the user-specified retention interval minus the time elapsed since the blob creation time.
 
 For new blobs, the effective retention period is equal to the user-specified retention interval. Because users can extend the retention interval, immutable storage uses the most recent value of the user-specified retention interval to calculate the effective retention period.
 

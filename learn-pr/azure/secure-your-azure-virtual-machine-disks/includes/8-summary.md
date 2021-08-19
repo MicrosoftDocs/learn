@@ -5,7 +5,7 @@ To secure Azure VM disks, Azure provides Storage Service Encryption (SSE) and Az
 
 ## Additional resources
 
-- [Azure Disk Encryption scenarios on Linux VMs](https://docs.microsoft.com/azure/virtual-machines/linux/disk-encryption-linux)
-- [Azure Disk Encryption for virtual machines and virtual machine scale sets](https://docs.microsoft.com/azure/security/fundamentals/azure-disk-encryption-vms-vmss)
+- [Azure Disk Encryption scenarios on Linux VMs](/azure/virtual-machines/linux/disk-encryption-linux)
+- [Azure Disk Encryption for virtual machines and virtual machine scale sets](/azure/security/fundamentals/azure-disk-encryption-vms-vmss)
 - [Resource Manager templates on GitHub](https://github.com/Azure/azure-quickstart-templates)
-- [Azure data security and encryption best practices](https://docs.microsoft.com/azure/security/fundamentals/data-encryption-best-practices)
+- [Azure data security and encryption best practices](/azure/security/fundamentals/data-encryption-best-practices)

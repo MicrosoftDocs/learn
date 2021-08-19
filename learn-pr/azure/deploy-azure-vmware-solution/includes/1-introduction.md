@@ -13,13 +13,3 @@ By the end of this module, you'll be able to:
 
 - Plan a successful Azure VMware Solution deployment
 - Connect to an on-premises VMware environment
-
-## Prerequisites
-
-- Experience managing VMware infrastructure, such as vSphere, vCenter, NSX-T, and vSAN
-- Basic knowledge of network concepts, such as:
-  - Classless Inter-Domain Routing (CIDR)
-  - Port mirroring
-  - Domain Name System (DNS)
-  - Dynamic Host Configuration Protocol (DHCP)
-  - Subnets

@@ -28,7 +28,6 @@ modules:
 - learn.run-docker-containers-aci
 - learn.azure-container-registry
 - learn.host-a-web-application-with-azure-web-apps
-- learn.run-web-app-background-task-with-webjobs
 - learn.azure.deploy-run-container-app-service
 - learn.intro-to-azure-kubernetes-service
 - learn.work-with-mutable-and-partial-data-in-a-redis-cache

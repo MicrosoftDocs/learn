@@ -189,7 +189,7 @@ Keep in mind that you should avoid a situation in which migrating to group-based
 
     - You can spot check individual users by looking at their license details. You will see that they have the same licenses assigned “directly” and “inherited” from groups.
 
-    - You can run a PowerShell script to [verify how licenses are assigned to users](https://docs.microsoft.com/azure/active-directory/enterprise-users/licensing-group-advanced).
+    - You can run a PowerShell script to [verify how licenses are assigned to users](/azure/active-directory/enterprise-users/licensing-group-advanced).
 
     - When the same product license is assigned to the user both directly and through a group, only one license is consumed by the user. Hence no additional licenses are required to perform migration.
 

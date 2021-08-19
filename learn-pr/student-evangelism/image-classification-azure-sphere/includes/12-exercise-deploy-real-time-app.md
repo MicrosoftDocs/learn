@@ -24,7 +24,7 @@ The pixel values of the image are converted by the Python script defined in the 
 
 2. Add evaluation image data in include\arm_nnexamples_cifar10_inputs.h to test. The image data is defined in arm_nnexamples_cifar10_inputs.h.
 
-   ![The illustration shows image data in Visual Studio Code](../media/input-image-vscode.png)
+   ![The illustration shows image data in Visual Studio Code.](../media/input-image-vscode.png)
 
 3. By default, the values are added in arm_nnexamples_cifar10_inputs.h to test. You can comment and test different images.
 

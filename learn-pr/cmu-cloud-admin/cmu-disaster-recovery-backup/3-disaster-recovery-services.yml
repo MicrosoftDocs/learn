@@ -5,8 +5,8 @@ metadata:
   title: Disaster recovery services
   description: Disaster recovery services
   ms.date: 03/15/2020
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 13

@@ -1,12 +1,15 @@
-Now that we have the data imported, we need to apply a machine learning practice known as "cleaning the data." This means taking data that looks incorrect or messy and cleaning it up by changing the value or deleting it altogether. Common examples of cleaning data are ensuring that there are no null values and making every value in a column look the same. 
+Now that we have the data imported, we need to apply a machine learning practice known as "cleaning the data." We take data that looks incorrect or messy and clean it up by changing the value or deleting it altogether. Common examples of cleaning data are:
 
-We do this because computers will get confused if they look at inconsistent data or if lots of values in the data are null.
+- Ensuring that there are no null values
+- Making every value in a column look the same
+
+We clean data because computers get confused if they look at inconsistent data or if lots of values in the data are null.
 
 ## Data cleaning
 
-The first step that you'll take to clean your data is to replace all the missing values with something. Replacing these values usually requires subject matter expertise, but in this case you'll use your best judgment. Some rows (remember, rows represent days) are missing weather or launch data. 
+The first step in cleaning your data is to replace all missing values with something. Replacing these values usually requires subject matter expertise. But in this case, you'll use your best judgment. Some rows (remember, rows represent days) are missing weather or launch data.
 
-To get started, first get an overview of the launch data by entering this command into a cell:
+To get started, first get an overview of the launch data by running this command in your *.ipynb* file:
 
 ```python
 launch_data.info()
@@ -49,11 +52,11 @@ Data columns (total 26 columns):
 
 You can see that `Hist Ave Max Wind Speed`, `Hist Ave Visibility`, and `Hist Ave Sea Level Pressure` have no data. 
 
-It makes sense that `Wind Speed at Launch Time`, `Temp at Launch Time`, `Launched`, `Crewed or Uncrewed`, `Time`, and `Name` have only 60 values, because the data includes only 60 launches. The rest are the days before and after the launch.
+It makes sense that `Wind Speed at Launch Time`, `Temp at Launch Time`, `Launched`, `Crewed or Uncrewed`, `Time`, and `Name` have only 60 values, because the data includes only 60 launches. The remaining are the days before and after the launch.
 
-Here are a few ways to clean the data:
+Here are a few ways we'll clean the data:
 
-- The rows that don't have `Y` in the `Launched` column did not have a rocket launch, so make those missing values `N`.
+- The rows that don't have `Y` in the `Launched` column didn't have a rocket launch, so make those missing values `N`.
 - For rows missing information on whether the rocket was crewed or uncrewed, assume uncrewed. Uncrewed is more likely because there were fewer crewed missions.
 - For missing wind direction, mark it as `unknown`.
 - For missing condition data, assume it was a typical day and use `fair`.

@@ -21,7 +21,7 @@ Here are several resources where you can learn more about the Azure Functions, V
 
 ### Azure Functions
 
-- Learn about the Azure Functions [local.settings.json](https://docs.microsoft.com/azure/azure-functions/functions-run-local#local-settings-file) file
+- Learn about the Azure Functions [local.settings.json](/azure/azure-functions/functions-run-local#local-settings-file) file
 - Learn how to [Deploy to Azure Using Azure Functions](https://code.visualstudio.com/tutorials/functions-extension/getting-started)
 - Learn about [Azure Functions TypeScript Support](https://azure.microsoft.com/blog/improving-the-typescript-support-in-azure-functions/)
 - Sign up for a [Free Trial of Azure](https://azure.microsoft.com/free/)

@@ -2,7 +2,7 @@ A computer program embodies a computational algorithm and comprises variable dec
 
 A **concurrent** program, in contrast, is a set of sequential programs that, while executing, share one or more CPUs in time. This **timesharing** allows multiple programs to take turns in using a single computational resource. For instance, given that a CPU can run only one program at a time, running multiple sequential programs on one processor requires the operating system (OS) to employ a scheduling strategy, such as round-robin, to allocate the resource to each program for a specified interval. 
 
-![Our taxonomy of programs](../media/taxonomy-programs.png)
+![Our taxonomy of programs.](../media/taxonomy-programs.png)
 
 _Figure 1: Our taxonomy of programs_
 
@@ -14,7 +14,7 @@ The term "thread" was popularized by Pthreads (POSIX threads)<sup>[1][^1]</sup>,
 
 _Task_ is another term that refers to a small unit of work, and in this unit, we use it to mean "process." In addition, we collectively denote tasks (possibly only one) that belong to the same program/application as a **job**. An application can encompass several jobs. For instance, a fluid dynamics application typically consists of three jobs, individually responsible for structural, fluid, and thermal analyses. In addition, each job can carry out its work through multiple tasks. The following figure demonstrates the concepts of processes, threads, tasks, jobs, and applications. 
 
-![A demonstration of the concepts of processes, threads, tasks, jobs, and applications](../media/concepts-processes.png)
+![A demonstration of the concepts of processes, threads, tasks, jobs, and applications.](../media/concepts-processes.png)
 
 _Figure 2: A demonstration of the concepts of processes, threads, tasks, jobs, and applications_
 <br>

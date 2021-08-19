@@ -5,7 +5,7 @@ metadata:
   description: Query the Metropolitan API.
   ms.date: 12/08/2020
   author: jlooper
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Query the Metropolitan API

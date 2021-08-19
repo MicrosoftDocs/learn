@@ -42,6 +42,6 @@ Try checking some of the images in the other Azure sandbox available locations:
 [!include[](../../../includes/azure-sandbox-regions-note.md)]
 
 > [!TIP]
-> These are the standard images that are provided by Azure. Keep in mind that you can also [create and upload your own custom images](https://docs.microsoft.com/azure/virtual-machines/linux/tutorial-custom-images) to create VMs based on unique configurations or less common versions or distributions of an operating system.
+> These are the standard images that are provided by Azure. Keep in mind that you can also [create and upload your own custom images](/azure/virtual-machines/linux/tutorial-custom-images) to create VMs based on unique configurations or less common versions or distributions of an operating system.
 
 Your command window is probably full now, you can type `clear` to clear the screen if you like.

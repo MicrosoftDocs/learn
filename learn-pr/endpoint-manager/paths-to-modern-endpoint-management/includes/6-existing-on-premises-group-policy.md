@@ -31,4 +31,4 @@ Many organizations are looking at cloud solutions to support the growing remote 
 
 ## Next steps
 
-For detailed steps when you currently use on-premises Group Policy as your on-premises management solution, see the [Currently use on-premises group policy](https://docs.microsoft.com/mem/intune/fundamentals/deployment-guide-intune-setup?azure-portal=true#currently-use-on-premises-group-policy).
+For detailed steps when you currently use on-premises Group Policy as your on-premises management solution, see the [Currently use on-premises group policy](/mem/intune/fundamentals/deployment-guide-intune-setup?azure-portal=true#currently-use-on-premises-group-policy).

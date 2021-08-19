@@ -135,5 +135,5 @@ Continue to the next module in this Learning path and discover how to [analyze i
 <!-- Links -->
 
 [AnacondaDownload]: https://www.anaconda.com/products/individual?azure-portal=true
-[AnalyzeImages]: https://docs.microsoft.com/learn/modules/analyze-rock-images-ai-nasa/?azure-portal=true
+[AnalyzeImages]: /learn/modules/analyze-rock-images-ai-nasa/?azure-portal=true
 [VideoDownload]: https://www.youtube.com/watch?v=5E3WMb8_T3s&list=PLlrxD0HtieHjDop2DtiCmwTTcrlwKAVHE&index=8?azure-portal=true

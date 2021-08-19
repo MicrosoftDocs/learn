@@ -6,9 +6,11 @@ Your goal is to set up the Linux VM and create an activity log monitoring rule t
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account that you activated the sandbox with.
 
-1. On the Azure portal menu, select **Monitor**. On the **Monitor|Overview** pane, in the left menu pane, select **Alerts**.
+1. On the Azure portal menu, select **Monitor**. The **Overview** pane for Monitor appears.
 
-1. Select **New alert rule**. The **Create alert rule** pane appears.
+1. In the left menu pane, select **Alerts**. The **Alerts** pane for Monitor appears.
+
+1. On the top menu bar, select **New alert rule**. The **Create alert rule** pane appears.
 
 1. Under the **Scope** section, select **Select resource**. The **Select a resource** pane appears.
 
@@ -36,7 +38,7 @@ For the previous Azure Monitor alert, you didn't add any actions. You just viewe
 
 1. Select **Create action group**. The **Create action group** pane appears.
 
-1. Under the **Basics** tab, enter the following values for each setting.
+1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting | Value |
     |---------|---------|
@@ -65,7 +67,7 @@ For the previous Azure Monitor alert, you didn't add any actions. You just viewe
 
 1. Now that you've defined the rule, select **Create**.
 
-1. The **Create alert rule** pane reappears. Under **Alert rule details**, provide the following information.
+1. The **Create alert rule** pane reappears. Under **Alert rule details**, enter the following values for each setting.
 
     | Setting | Value |
     |---------|---------|

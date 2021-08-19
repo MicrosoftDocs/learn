@@ -6,7 +6,7 @@ metadata:
   description: Apply what you've learned to modify JavaScript code, implement an enum type, and declare an array type.
   ms.date: 02/11/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

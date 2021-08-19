@@ -10,7 +10,7 @@ Now that you've reviewed this module, you should be able to:
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-* Learn more about [compliance documentation](https://docs.microsoft.com/azure/compliance/).
-* Learn more about [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview).
+* Learn more about [compliance documentation](/azure/compliance/).
+* Learn more about [Azure Blueprints](/azure/governance/blueprints/overview).
 * Learn more about the [Service Trust Portal](https://aka.ms/stp).
 * Learn more about [Azure Support Options](https://azure.microsoft.com/support/options/).

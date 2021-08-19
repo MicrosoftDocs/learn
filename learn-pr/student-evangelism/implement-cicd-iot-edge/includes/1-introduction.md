@@ -8,14 +8,13 @@ You need to create a smoke test as a subset of your main functionality. The test
 
 ![The illustration shows how you can implement CI/CD for IoT Edge in the scenario image.](../media/smoke-testing.jpg)
 
-By the end of this module, you'll be able to create a smoke test for virtual IoT Edge devices using Azure DevOps, Azure Pipelines, and Application Insights.
+By the end of this module, you'll be able to create a smoke test for virtual IoT Edge devices using Azure DevOps and Azure Pipelines.
 
 ## Learning objectives
 
 In this module, you will:
 
 - Create a pipeline that deploys a smoke test using virtual IoT Edge devices
-- Monitor the performance of the solution using a CI/CD strategy
 
 ## Prerequisites
 

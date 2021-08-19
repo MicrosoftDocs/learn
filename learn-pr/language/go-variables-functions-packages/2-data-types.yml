@@ -3,9 +3,9 @@ uid: learn.language.go-variables-functions-packages.2-data-types
 metadata:
   title: Learn about basic data types
   description: Learn about the primary data types used in Go programs.
-  ms.date: 12/15/2020
+  ms.date: 06/15/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Learn about basic data types

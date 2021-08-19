@@ -10,9 +10,9 @@ By using the various services on Azure, you can take a full stack approach to mo
 
 To learn more about monitoring solutions on Azure, see the following articles:
 
-- [Azure Monitor overview](https://docs.microsoft.com/azure/azure-monitor/overview)
-- [What is Application Insights?](https://docs.microsoft.com/azure/azure-monitor/app/app-insights-overview)
-- [Monitor virtual machines](https://docs.microsoft.com/azure/azure-monitor/vm/monitor-vm-azure)
-- [Monitor Kubernetes workloads](https://docs.microsoft.com/azure/azure-monitor/containers/container-insights-overview)
-- [What is Azure Sentinel?](https://docs.microsoft.com/azure/sentinel/overview)
+- [Azure Monitor overview](/azure/azure-monitor/overview)
+- [What is Application Insights?](/azure/azure-monitor/app/app-insights-overview)
+- [Monitor virtual machines](/azure/azure-monitor/vm/monitor-vm-azure)
+- [Monitor Kubernetes workloads](/azure/azure-monitor/containers/container-insights-overview)
+- [What is Azure Sentinel?](/azure/sentinel/overview)
 - [What is Azure Security Center?](https://azure.microsoft.com/services/security-center/)

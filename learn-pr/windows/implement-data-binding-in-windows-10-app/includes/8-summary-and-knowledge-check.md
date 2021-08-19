@@ -4,7 +4,7 @@ You've learned how to update the UI when a property of an object changes in code
 
 This separation of UI and logic is crucial when developing even moderately complex apps. It allows your business logic (code) to *think* in terms of business objects. For example, we didn't have to consider the `TextBox` control in our logic when we requested the user's name. We only had to deal with the `String` object of the text they entered. Our list of favorite colors was storing actual `ColorDescriptor` objects instead of UI-related objects, such as `ListItem`. But, thanks to data binding, the UI could still display those items in any way the designer chooses: in a `ListBox`, a `ComboBox`, a grid-like layout with cards, or even a carousel. Your business logic won't have to be changed for any of those choices. 
 
-Proper separation of logic and UI also enables you to write separate automated unit tests for your business logic. These tests can run without launching the app (for example, with <a href="https://docs.microsoft.com/visualstudio/test/live-unit-testing-intro?view=vs-2017" target="_blank">Visual Studio Live Unit Testing</a>). The tests rely on the tried and tested data binding mechanism to transfer data between the UI and your business logic code.
+Proper separation of logic and UI also enables you to write separate automated unit tests for your business logic. These tests can run without launching the app (for example, with <a href="/visualstudio/test/live-unit-testing-intro?view=vs-2017" target="_blank">Visual Studio Live Unit Testing</a>). The tests rely on the tried and tested data binding mechanism to transfer data between the UI and your business logic code.
 
 #### Simplify class coding
 

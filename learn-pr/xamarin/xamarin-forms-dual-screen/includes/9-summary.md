@@ -6,7 +6,7 @@ We can build on the classes introduced in this module to make our application ev
 
 - Further customize the view when a Surface Duo is in dual-landscape ("tall") mode.
 - Detect the hinge angle and adapt the user-interface in some way.
-- Use [XAML triggers](https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/dual-screen/triggers) to create responsive dual-screen apps.
+- Use [XAML triggers](/xamarin/xamarin-forms/app-fundamentals/dual-screen/triggers) to create responsive dual-screen apps.
 
 ## Learn more
 

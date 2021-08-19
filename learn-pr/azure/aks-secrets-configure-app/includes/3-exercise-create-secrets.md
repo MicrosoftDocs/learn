@@ -1,13 +1,55 @@
 As we previously mentioned in the ["Before We Start"](https://docs.microsoft.com/learn/modules/aks-secrets-configure-app/1-introduction) step, we'll assume there's an AKS cluster already created. So now you'll create the needed resources to support the application's backend.
 
+## Activate the Azure sandbox
+
+1. Start by **activating the Azure sandbox above.**
+
+1. Once it's activated, sign in to the [Azure portal for sandbox](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account you activated the sandbox with.
+
+## Before we start
+
+We'll assume an AKS cluster is already created and running. Before creating a new cluster, run the following commands to be sure there's no other clusters or resources already created:
+
+```azurecli-interactive
+export RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
+export CLUSTER_NAME=ship-manager-cluster
+```
+
+```azurecli-interactive
+az aks show -n $CLUSTER_NAME -g $RESOURCE_GROUP
+```
+
+If the list is empty, proceed to create your AKS cluster, running the following commands in a Cloud Shell environment:
+
+```azurecli-interactive
+az aks create \
+ -g $RESOURCE_GROUP \
+ -n $CLUSTER_NAME \
+ --node-count 1 \
+ --node-vm-size Standard_B2s \
+ --generate-ssh-keys \
+ --enable-addons http_application_routing
+```
+
+After the previous command runs, or if the list is not empty (the cluster is already created), get the administration config:
+
+```azurecli-interactive
+az aks get-credentials -n $CLUSTER_NAME -g $RESOURCE_GROUP
+```
+
+The complete cluster creation can take up to five minutes.
+
+> [!IMPORTANT]
+> Make a note of the `RESOURCE_GROUP` and `CLUSTER_NAME` variables for later use.
+
 ## Create the Secret
 
-According to the [application documentation](https://github.com/Azure-Samples/aks-contoso-ships-sample/tree/main/kubernetes), there are two parts of this application, the frontend and the backend. Only the backend will need to use a Secret as it has the MongoDB connection string as an environment variable.
+According to the [application documentation](https://github.com/Azure-Samples/aks-contoso-ships-sample/tree/main/kubernetes), there are two parts of this application: the front end and the back end. Only the back end will need to use a Secret as it has the MongoDB connection string as an environment variable.
 
-1. The first step is to deploy a MongoDB database to support this application; for that you'll use CosmosDB:
+1. The first step is to deploy a MongoDB database to support this application; for that, you'll use CosmosDB:
 
     ```azurecli-interactive
-    DATABASE_NAME=contoso-ship-manager-$RANDOM
+    export DATABASE_NAME=contoso-ship-manager-$RANDOM && \
     az cosmosdb create \
      -n $DATABASE_NAME \
      -g $RESOURCE_GROUP \
@@ -34,7 +76,7 @@ According to the [application documentation](https://github.com/Azure-Samples/ak
     touch backend-secret.yaml
     ```
 
-1. Use `code backend-secret.yaml` to open the editor and edit the file. In this file you'll create the Secret spec.
+1. Use `code backend-secret.yaml` to open the editor and edit the file. In this file, you'll create the Secret spec.
 
     ```yaml
     apiVersion: v1
@@ -49,7 +91,7 @@ According to the [application documentation](https://github.com/Azure-Samples/ak
 
     Save and close the file.
 
-1. Apply the secret using the `kubectl apply command`:
+1. Apply the secret running the `kubectl apply command`:
 
     ```azurecli-interactive
     kubectl apply -f backend-secret.yaml
@@ -85,7 +127,9 @@ Now it's time to create the application and apply the secret to this application
     Copy the output value for later use.
 
 1. Create a new file called `backend-application.yaml`.
-1. Open the file using `code backend-application.yaml`.
+
+1. Open the file running `code backend-application.yaml`.
+
 1. Create the Deployment specification as follows:
 
     ```yaml
@@ -165,18 +209,7 @@ Now it's time to create the application and apply the secret to this application
     ```
 
 1. Save and close the file.
-1. Apply the changes using `kubectl apply -f backend-application.yaml`
 
-    The changes can take up to five minutes to propagate, check the DNS creation by getting the name of your DNS zone listing with this command:
+1. Apply the changes running `kubectl apply -f backend-application.yaml`.
 
-    ```azurecli-interactive
-    az network dns zone list -o table
-    ```
-
-    Then query Azure for the record sets of this listing with:
-
-    ```azurecli-interactive
-    az network dns record-set list -g $RESOURCE_GROUP -z <your-zone-name>
-    ```
-
-    Check if there are two new records with the same DNS zone but starting with `ship-manager-backend`.
+    The changes can take up to five minutes to propagate.

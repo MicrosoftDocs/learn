@@ -144,4 +144,4 @@ for i in range(len(cols)):
 
 Sure enough, many of these columns have KDEs that have two pronounced tops. Each top represents a mode of the data, or a value around which values in the dataset concentrate. The fact that so many of the columns are bimodal indicates that the dataset represents samples from two discrete populations.
 
-© 2020 Warner Bros. Ent. All Rights Reserved.
+© 2021 Warner Bros. Ent. All Rights Reserved.

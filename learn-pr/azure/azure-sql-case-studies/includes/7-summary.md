@@ -18,8 +18,8 @@ In this module, you considered several business scenarios and how to build a sol
 - [How to Write a Problem Statement](http://www.ceptara.com/blog/how-to-write-problem-statement?azure-portal=true): Article on writing effective problem statements.
 - [Decision Matrix Analysis](https://www.mindtools.com/pages/article/newTED_03.htm?azure-portal=true): Article on creating a decision matrix.
 - [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/?azure-portal=true): Tool for creating a cost analysis of your solution.
-- [Azure data architecture guide](https://docs.microsoft.com/azure/architecture/data-guide/?azure-portal=true): Structured approach for designing data-centric solutions on Microsoft Azure. It's based on proven practices derived from customer engagements.
-- [Azure reference architectures](https://docs.microsoft.com/azure/architecture/reference-architectures/?azure-portal=true): Recommended practices, along with considerations for scalability, availability, manageability, and security.
-- [Microsoft Cloud Adoption Framework for Azure](https://docs.microsoft.com/azure/architecture/cloud-adoption/?azure-portal=true): Guidance for accelerating your cloud adoption journey.
+- [Azure data architecture guide](/azure/architecture/data-guide/?azure-portal=true): Structured approach for designing data-centric solutions on Microsoft Azure. It's based on proven practices derived from customer engagements.
+- [Azure reference architectures](/azure/architecture/reference-architectures/?azure-portal=true): Recommended practices, along with considerations for scalability, availability, manageability, and security.
+- [Microsoft Cloud Adoption Framework for Azure](/azure/architecture/cloud-adoption/?azure-portal=true): Guidance for accelerating your cloud adoption journey.
 - [Microsoft Azure Trust Center](https://azure.microsoft.com/overview/trusted-cloud/?azure-portal=true): Full reference site for Azure security, privacy, and compliance.
-- [Azure SQL security playbook](https://docs.microsoft.com/azure/sql-database/sql-database-security-best-practice?azure-portal=true): Best practices for securing your Azure SQL deployment.
+- [Azure SQL security playbook](/azure/sql-database/sql-database-security-best-practice?azure-portal=true): Best practices for securing your Azure SQL deployment.

@@ -29,7 +29,7 @@ products:
 - azure-functions
 prerequisites: | 
   - Basic familiarity with Azure Functions.
-  - Before you begin, you might want to complete the Microsoft Learn module [Create serverless logic with Azure Functions](https://docs.microsoft.com/learn/modules/create-serverless-logic-with-azure-functions/).
+  - Before you begin, you might want to complete the Microsoft Learn module [Create serverless logic with Azure Functions](/learn/modules/create-serverless-logic-with-azure-functions/).
 
 units:
 - learn.advocates.send-crop-weather-alerts.1-introduction

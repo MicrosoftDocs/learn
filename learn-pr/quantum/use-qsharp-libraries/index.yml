@@ -17,8 +17,8 @@ abstract: |
   - Get to know the API documentation and integrated help capabilities to more efficiently find and use Q# functionality.
   - Write API documentation comments to help document and explain your Q# programs.
 prerequisites: |
-  - A basic understanding of how Grover's algorithm works. If you completed the prior module, [Solving graph coloring problems using Grover's search](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search?azure-portal=true), you're all set. Otherwise, you can find the overview in the [Grover's search algorithm](https://docs.microsoft.com/learn/modules/solve-graph-coloring-problems-grovers-search/5-grovers-algorithm?azure-portal=true) unit of that module.
-  - A functioning QDK environment in [Visual Studio Code for command-line applications](https://docs.microsoft.com/quantum/quickstarts/install-command-line?tabs=tabid-vscode?azure-portal=true).
+  - A basic understanding of how Grover's algorithm works. If you completed the prior module, [Solving graph coloring problems using Grover's search](/learn/modules/solve-graph-coloring-problems-grovers-search?azure-portal=true), you're all set. Otherwise, you can find the overview in the [Grover's search algorithm](/learn/modules/solve-graph-coloring-problems-grovers-search/5-grovers-algorithm?azure-portal=true) unit of that module.
+  - A functioning QDK environment in [Visual Studio Code for command-line applications](/quantum/quickstarts/install-command-line?tabs=tabid-vscode&azure-portal=true).
 iconUrl: /learn/achievements/quantum/use-quantum-libraries.svg
 levels:
 - beginner

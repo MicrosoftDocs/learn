@@ -39,11 +39,11 @@ summary: |
   >[!TIP]
   > This learning path is part of a multimodal learning experience. Start the first module to see how you can follow along!
 
-  © 2020 Warner Bros. Ent. All Rights Reserved.
+  © 2021 Warner Bros. Ent. All Rights Reserved.
 prerequisites: |
   - [Visual Studio Code, with the Python Extension installed](https://aka.ms/LearnOnVSCode)
-  - An [Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account/)
-  - A [GitHub account](https://docs.microsoft.com/learn/modules/introduction-to-github/)
+  - An [Azure account](/learn/modules/create-an-azure-account/)
+  - A [GitHub account](/learn/modules/introduction-to-github/)
 iconUrl: /learn/achievements/student-evangelism/optimize-basketball-games-with-machine-learning.svg
 levels:
 - beginner
@@ -59,6 +59,8 @@ products:
 modules:
 - learn.student-evangelism.predict-basketball-player-efficiency-ratings
 - learn.student-evangelism.optimize-basketball-player-rest-breaks
-- learn.student-evangelism.python-flask-build-ai-web-app
+- learn.sports-machine-learning.mixed-reality-for-sports-fans
+- learn.sports-machine-learning.build-mixed-reality-with-babylonjs
+- learn.sports-machine-learning.use-mixed-reality-toolkit
 trophy:
   uid: learn.optimize-basketball-games-with-machine-learning.trophy

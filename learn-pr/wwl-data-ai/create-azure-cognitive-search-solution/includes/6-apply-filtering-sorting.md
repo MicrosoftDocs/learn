@@ -59,4 +59,4 @@ $orderby=last_modified desc
 ```
 
 > [!NOTE]
-> For more information about using filters, see [Filters in Azure Cognitive Search](https://docs.microsoft.com/azure/search/search-filters). For information about working with results, including sorting and hit highlighting, see [How to work with search results in Azure Cognitive Search](https://docs.microsoft.com/azure/search/search-pagination-page-layout).
+> For more information about using filters, see [Filters in Azure Cognitive Search](/azure/search/search-filters). For information about working with results, including sorting and hit highlighting, see [How to work with search results in Azure Cognitive Search](/azure/search/search-pagination-page-layout).

@@ -11,8 +11,8 @@ Now that you have reviewed this module, you should be able to:
 
 ## Resources
 
-- [What is hybrid identity with Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity)
-- [Integrate a single AD forest using password hash](https://docs.microsoft.com/azure/active-directory/hybrid/tutorial-password-hash-sync)
-- [Hybrid Identity documentation](https://docs.microsoft.com/azure/active-directory/hybrid/)
-- [Azure AD Connect - Configure AD DS Connector Account permission](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-configure-ad-ds-connector-account)
+- [What is hybrid identity with Azure AD](/azure/active-directory/hybrid/whatis-hybrid-identity)
+- [Integrate a single AD forest using password hash](/azure/active-directory/hybrid/tutorial-password-hash-sync)
+- [Hybrid Identity documentation](/azure/active-directory/hybrid/)
+- [Azure AD Connect - Configure AD DS Connector Account permission](/azure/active-directory/hybrid/how-to-connect-configure-ad-ds-connector-account)
 

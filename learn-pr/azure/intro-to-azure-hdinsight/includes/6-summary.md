@@ -9,9 +9,8 @@ You applied these criteria to your fictional organization. The criteria helped y
 
 ## References
 
-- [Azure HDInsight documentation?](https://docs.microsoft.com/azure/hdinsight/?azure-portal=true)
-- [What is Apache Hadoop in Azure HDInsight?](https://docs.microsoft.com/azure/hdinsight/hadoop/apache-hadoop-introduction?azure-portal=true)
-- [What is Apache Spark in Azure HDInsight?](https://docs.microsoft.com/azure/hdinsight/spark/apache-spark-overview?azure-portal=true)
-- [What is Apache HBase in Azure HDInsight?](https://docs.microsoft.com/azure/hdinsight/hbase/apache-hbase-overview?azure-portal=true)
-- [What is Apache Storm on Azure HDInsight?](https://docs.microsoft.com/azure/hdinsight/storm/apache-storm-overview?azure-portal=true)
-
+- [Azure HDInsight documentation?](/azure/hdinsight/?azure-portal=true)
+- [What is Apache Hadoop in Azure HDInsight?](/azure/hdinsight/hadoop/apache-hadoop-introduction?azure-portal=true)
+- [What is Apache Spark in Azure HDInsight?](/azure/hdinsight/spark/apache-spark-overview?azure-portal=true)
+- [What is Apache HBase in Azure HDInsight?](/azure/hdinsight/hbase/apache-hbase-overview?azure-portal=true)
+- [What is Apache Storm on Azure HDInsight?](/azure/hdinsight/storm/apache-storm-overview?azure-portal=true)

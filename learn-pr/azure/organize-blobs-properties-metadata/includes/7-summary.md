@@ -4,6 +4,6 @@ In this module, you learned about the types of properties and metadata that are 
 
 ## Learn More
 
-- [Blob Service REST API](https://docs.microsoft.com/rest/api/storageservices/blob-service-rest-api)
-- [Set and retrieve properties and metadata](https://docs.microsoft.com/azure/storage/blobs/storage-properties-metadata)
-- [Using the Azure CLI with Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-azure-cli)
+- [Blob Service REST API](/rest/api/storageservices/blob-service-rest-api)
+- [Set and retrieve properties and metadata](/azure/storage/blobs/storage-properties-metadata)
+- [Using the Azure CLI with Azure Storage](/azure/storage/common/storage-azure-cli)

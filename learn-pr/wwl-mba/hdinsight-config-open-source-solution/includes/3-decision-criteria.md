@@ -14,10 +14,6 @@ Traditionally done by on-premises relational databases such as SQL Server, and m
 
 Streaming data can be ingested from a variety of sources using HDInsight via an Event Hub or IoT Hub using Spark Streaming.   
 
-## Data science  
-
-Microsoft Machine Learning Server is available as a deployment option when you create HDInsight clusters in Azure. This capability provides data scientists, statisticians, and R programmers with on-demand access to scalable, distributed methods of analytics on HDInsight.  
-
 ## Hybrid  
 
 Some organizations already have on-premises big data infrastructures. You can extend the capability to the cloud using HDInsight. 

@@ -1,25 +1,17 @@
 The best way to learn how to process receipts with the Form Recognizer service is to explore it for yourself.
 
-## Before you start
-
 [!INCLUDE [](../../includes/ai-fundamentals-lab.md)]
 
-## Complete the exercise
+> [!NOTE]
+>A limited number of concurrent sessions are available - if the hosted environment is unavailable, try again later.
+>
+>To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free?azure-portal=true).
+>
+> Alternatively, if you would like to use a development environment on your own computer, you can use this [setup guide](https://github.com/MicrosoftLearning/mslearn-ai900/blob/main/instructions/00%20-%20Local%20development.md) and follow these [exercise instructions](https://github.com/MicrosoftLearning/mslearn-ai900/blob/main/instructions/06-lab-Instructions.md). Due to the range of possible operating systems and setup configurations, we can't provide support if you choose to complete the exercise on your own computer.
 
-After you have set up the Python environment and cloned the **ai-fundamentals** repository, you're ready to explore receipt analysis with Form Recognizer.
+When you finish the exercise, end the lab to close the VM. Don't forget to come back and complete the knowledge check to earn points for completing this module!
 
-1. Open the **06 - Receipts with Form Recognizer.ipynb** notebook in the **mslearn-ai900** folder in Visual Studio Code.
+> [!TIP]
+> After completing the exercise, if you've finished exploring Azure cognitive services, delete the Azure resources that you created during the exercise.
 
-2. Read the information in the notebook, and run the code cells it contains in order.
 
-## Clean-up
-
-It's a good idea at the end of a project to identify whether you still need the resources you created. Resources left running can cost you money. 
-
-If you are continuing on to other modules in this learning path you can keep your resources for use in other labs.
-
-If you have finished learning, you can delete the resource group or individual resources from your Azure subscription:
-
-1. In the [Azure portal](https://portal.azure.com/), in the **Resource groups** page, open the resource group you specified when creating your resource.
-
-2. Click **Delete resource group**, type the resource group name to confirm you want to delete it, and select **Delete**. You can also choose to delete individual resources by selecting the resource(s), clicking on the three dots to see more options, and clicking **Delete**.

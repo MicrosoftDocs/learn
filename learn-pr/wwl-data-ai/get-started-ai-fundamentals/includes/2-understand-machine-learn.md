@@ -22,7 +22,7 @@ For example, suppose an environmental conservation organization wants volunteers
 
 ![Machine Learning](../media/machine-learn.gif)
 
-1. A team of botanists and data scientists collects samples of wildflowers.
+1. A team of botanists and scientists collect data on wildflower samples.
 2. The team labels the samples with the correct species.
 3. The labeled data is processed using an algorithm that finds relationships between the features of the samples and the labeled species.
 4. The results of the algorithm are encapsulated in a model.

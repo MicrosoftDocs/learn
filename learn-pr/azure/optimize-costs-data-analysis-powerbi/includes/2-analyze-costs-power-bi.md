@@ -14,7 +14,7 @@ The next dialog connects to Azure and gets data required for reserved instance r
 
 :::image type="content" source="../media/2-autofit.png" alt-text="Screenshot showing connection information." :::
 
-The final installation step connects to your EA enrollment and requires an [Enterprise Administrator](https://docs.microsoft.com/azure/cost-management-billing/manage/understand-ea-roles) account. Select **Sign in** to authenticate with your EA enrollment. This step also starts a data refresh action in Power BI.
+The final installation step connects to your EA enrollment and requires an [Enterprise Administrator](/azure/cost-management-billing/manage/understand-ea-roles) account. Select **Sign in** to authenticate with your EA enrollment. This step also starts a data refresh action in Power BI.
 
 > [!NOTE]
 > The data refresh process might take quite a while to complete. The length depends on the number of months specified and the amount of data needed to sync.

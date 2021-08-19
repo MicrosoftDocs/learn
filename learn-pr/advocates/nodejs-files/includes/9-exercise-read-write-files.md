@@ -36,30 +36,30 @@ In this exercise, you'll complete the project by reading the .json files, adding
 
 ## Call the calculateSalesTotals method
 
-1. In the `main` function, add a call to the `calculateSalesTotals` function just above the `fs.writeFile` call.
+In the `main` function, add a call to the `calculateSalesTotals` function just above the `fs.writeFile` call.
 
-   ```javascript
-   async function main() {
-     const salesDir = path.join(__dirname, "stores");
-     const salesTotalsDir = path.join(__dirname, "salesTotals");
+```javascript
+async function main() {
+  const salesDir = path.join(__dirname, "stores");
+  const salesTotalsDir = path.join(__dirname, "salesTotals");
 
-     // create the salesTotal directory if it doesn't exist
-     try {
-       await fs.mkdir(salesTotalsDir);
-     } catch {
-       console.log(`${salesTotalsDir} already exists.`);
-     }
+  // create the salesTotal directory if it doesn't exist
+  try {
+    await fs.mkdir(salesTotalsDir);
+  } catch {
+    console.log(`${salesTotalsDir} already exists.`);
+  }
 
-     // find paths to all the sales files
-     const salesFiles = await findSalesFiles(salesDir);
+  // find paths to all the sales files
+  const salesFiles = await findSalesFiles(salesDir);
 
-     // read through each sales file to calculate the sales total
-     const salesTotal = await calculateSalesTotal(salesFiles);
+  // read through each sales file to calculate the sales total
+  const salesTotal = await calculateSalesTotal(salesFiles);
 
-     // write the total to the "totals.txt" file
-     await fs.writeFile(path.join(salesTotalsDir, "totals.txt"), String());
-   }
-   ```
+  // write the total to the "totals.txt" file
+  await fs.writeFile(path.join(salesTotalsDir, "totals.txt"), String());
+}
+```
 
 ## Write the total to the totals.txt file
 
@@ -92,7 +92,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
    }
    ```
 
-1. Select the <kbd>Cmd</kbd> / <kbd>Ctrl</kbd> + <kbd>S</kbd> keys to save the *index.js* file.
+1. Press <kbd>Ctrl+S</kbd> or <kbd>Cmd+S</kbd> to save the *index.js* file.
 
 ## Run the program
 

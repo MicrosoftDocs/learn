@@ -17,7 +17,7 @@ To complete this module, you need your own [Azure subscription](https://azure.mi
 
 You don't need an Azure subscription to work with Azure DevOps, but here you'll use Azure DevOps to deploy to Azure resources that exist in your Azure subscription. To simplify the process, use the same Microsoft account to sign in to both your Azure subscription and your Azure DevOps organization.
 
-If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](https://docs.microsoft.com/azure/devops/organizations/accounts/add-organization-users?tabs=browser&azure-portal=true). When you add the user, select the **Basic** access level.
+If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, select the **Basic** access level.
 
 Next, sign out of Azure DevOps and sign in. Use the Microsoft account that you use to sign in to your Azure subscription.
 
@@ -32,14 +32,14 @@ The modules in this learning path form a progression. You follow the Tailspin we
 Run a template that sets up your Azure DevOps organization:
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=create-multi-stage-pipeline&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=create-multi-stage-pipeline&azure-portal=true)
 
 From the Azure DevOps Demo Generator site, to run the template, follow these steps.
 
 1. Select **Sign In**, and accept the usage terms.
 1. On the **Create New Project** page, select your Azure DevOps organization. Enter a project name, such as *Space Game - web - Multistage*.
 
-    ![Creating a project through Azure DevOps Demo Generator](../media/4-create-new-project.png)
+    :::image type="content" source="../media/4-create-new-project.png" alt-text="A screenshot of the Azure DevOps Demo Generator showing the process for creating the project.":::
 
 1. Select **Yes, I want to fork this repository** > **Authorize**.
 
@@ -67,7 +67,7 @@ This work assignment gives you a checklist to work from. It gives other team mem
 
 Recall that the team settled on the following top issues for the current sprint.
 
-![Azure Boards showing the tasks for this sprint](../../shared/media/deploy-all-tasks.png)
+:::image type="content" source="../../shared/media/deploy-all-tasks.png" alt-text="A screenshot of Azure Boards showing the five tasks for this sprint.":::
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number for each work item might not match what you see here.
@@ -78,15 +78,15 @@ To set up the work item:
 
 1. From Azure DevOps, navigate to **Boards**. Then, from the menu, select **Boards**.
 
-    ![Azure DevOps showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
+    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
 
 1. In the **Create a multistage pipeline** work item, at the bottom of the card, select the down arrow. Then, assign the work item to yourself.
 
-    ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="Azure Boards showing the location of the down arrow.":::
 
 1. Move the work item from the **To Do** column to the **Doing** column.
 
-    ![Azure Boards showing the card in the Doing column](../media/3-azure-boards-wi1-doing.png)
+    :::image type="content" source="../media/3-azure-boards-wi1-doing.png" alt-text="A screenshot of Azure Boards showing the card in the Doing column.":::
 
 At the end of this module, you'll move the card to the **Done** column, after you complete the task.
 
@@ -108,7 +108,7 @@ In this module, you use the Azure CLI to bring up three App Service instances. Y
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true), and sign in.
 1. From the menu, select **Cloud Shell**. When prompted, select the **Bash** experience.
 
-    ![Selecting Cloud Shell from the menu bar](../../shared/media/azure-portal-menu-cloud-shell.png)
+    :::image type="content" source="../../shared/media/azure-portal-menu-cloud-shell.png" alt-text="A screenshot of the Azure portal showing the location of the Cloud Shell menu item.":::
 
     > [!NOTE]
     > Cloud Shell requires an Azure storage resource to persist any files that you create in the Cloud Shell. When you first open the Cloud Shell, you're prompted to create a resource group, storage account, and Azure Files share. This setup is automatically used for all future Cloud Shell sessions.
@@ -143,7 +143,7 @@ To make commands easier to run, start by selecting a default region. After you s
 
 ### Create the App Service instances
 
-Here, create the App Service instances for the three stages you'll deploy to: _Dev_, _Test_, and _Staging_.
+Here, you create the App Service instances for the three stages you'll deploy to: _Dev_, _Test_, and _Staging_. Here's a brief overview of the process you'll follow:
 
 1. Generate a random number that makes your web app's domain name unique.
 
@@ -163,6 +163,8 @@ Here, create the App Service instances for the three stages you'll deploy to: _D
    > [!NOTE]
    > For learning purposes, here, you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not internet routable, and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.
 
+To create your App Service instances, follow these steps:
+
 1. From the Cloud Shell, generate a random number that makes your web app's domain name unique.
 
     ```bash
@@ -181,10 +183,11 @@ Here, create the App Service instances for the three stages you'll deploy to: _D
     az appservice plan create \
       --name tailspin-space-game-asp \
       --resource-group tailspin-space-game-rg \
-      --sku B1
+      --sku B1 \
+      --is-linux
     ```
 
-    The `--sku` argument specifies the B1 plan. This plan runs on the Basic tier.
+    The `--sku` argument specifies the B1 plan. This plan runs on the Basic tier. The `--is-linux` argument specifies to use Linux workers.
 
     > [!IMPORTANT]
     > If the B1 SKU isn't available in your Azure subscription, [select a different plan](https://azure.microsoft.com/pricing/details/app-service/linux/?azure-portal=true), such as S1 (Standard).
@@ -193,22 +196,22 @@ Here, create the App Service instances for the three stages you'll deploy to: _D
 
     ```azurecli
     az webapp create \
-      --runtime "DOTNETCORE|3.1" \
       --name tailspin-space-game-web-dev-$webappsuffix \
       --resource-group tailspin-space-game-rg \
-      --plan tailspin-space-game-asp
+      --plan tailspin-space-game-asp \
+      --runtime "DOTNET|5.0"
 
     az webapp create \
-      --runtime "DOTNETCORE|3.1" \
       --name tailspin-space-game-web-test-$webappsuffix \
       --resource-group tailspin-space-game-rg \
-      --plan tailspin-space-game-asp
+      --plan tailspin-space-game-asp \
+      --runtime "DOTNET|5.0"
 
     az webapp create \
-      --runtime "DOTNETCORE|3.1" \
       --name tailspin-space-game-web-staging-$webappsuffix \
       --resource-group tailspin-space-game-rg \
-      --plan tailspin-space-game-asp
+      --plan tailspin-space-game-asp \
+      --runtime "DOTNET|5.0"
     ```
 
     For learning purposes, here, you apply the same App Service plan, B1 Basic, to each App Service instance. In practice, you would assign a plan that matches your expected workload.
@@ -240,7 +243,7 @@ Here, create the App Service instances for the three stages you'll deploy to: _D
 
     Here's what you see:
 
-    ![The default home page on Azure App Service](../../shared/media/app-service-default.png)
+    :::image type="content" source="../../shared/media/app-service-default.png" alt-text="A screenshot of a web browser showing the default home page on Azure App Service.":::
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/learn/modules/create-multi-stage-pipeline/7-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
@@ -256,7 +259,7 @@ To add the variables:
 1. In Azure DevOps, go to your **Space Game - web - Multistage** project.
 1. Under **Pipelines**, select **Library**.
 
-    ![Azure Pipelines showing the Library menu option](../../create-release-pipeline/media/5-pipelines-library.png)
+    :::image type="content" source="../../create-release-pipeline/media/5-pipelines-library.png" alt-text="A screenshot of Azure Pipelines showing the location of the Library menu option.":::
 1. Select **+ Variable group**.
 1. Under **Properties**, enter **Release** for the variable group name.
 1. Under **Variables**, select **+ Add**.
@@ -277,7 +280,28 @@ To add the variables:
 
     Your variable group resembles this one:
 
-    ![Azure Pipeline showing the variable group](../media/3-library-variable-group.png)
+    :::image type="content" source="../media/3-library-variable-group.png" alt-text="A screenshot of Azure Pipelines showing the variable group. The group contains three variables.":::
+
+## Create the dev and test environments
+
+In [Create a release pipeline with Azure Pipelines](/learn/modules/create-release-pipeline?azure-portal=true), you created an environment for the **dev** environment. Here, you'll repeat the process for both the **dev** and **test** environments. Later, you'll set up the **staging** environment, which includes additional criteria.
+
+To create the **dev** and **test** environments:
+
+1. From Azure Pipelines, select **Environments**.
+
+    :::image type="content" source="../../shared/media/pipelines-environments.png" alt-text="A screenshot of Azure Pipelines showing the location of the Environments menu option.":::
+
+1. To create the **dev** environment:
+    1. Select **Create environment**.
+    1. Under **Name**, enter *dev*.
+    1. Leave the remaining fields at their default values.
+    1. Select **Create**.
+1. To create the **test** environment:
+    1. Return to the **Environments** page.
+    1. Select **New environment**.
+    1. Under **Name**, enter *test*.
+    1. Select **Create**.
 
 ## Create a service connection
 

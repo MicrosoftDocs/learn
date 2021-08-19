@@ -5,7 +5,7 @@ metadata:
   description: Learn about structs, arrays, slices, and maps. Understand the difference between them and when to use one type over the other.
   ms.date: 02/12/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use data types and structs, arrays, slices, and maps in Go

@@ -6,7 +6,7 @@ With Azure Advisor, you can analyze your cloud environment to determine whether 
 
 ## What is Advisor and how does it work?
 
-Azure Advisor is a free service built into Azure that provides best practice recommendations for your workloads. These recommendations are personalized and actionable. They help you assess your Azure workloads against the five pillars of the [Microsoft Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework/?azure-portal=true).
+Azure Advisor is a free service built into Azure that provides best practice recommendations for your workloads. These recommendations are personalized and actionable. They help you assess your Azure workloads against the five pillars of the [Microsoft Azure Well-Architected Framework](/azure/architecture/framework/?azure-portal=true).
 
 The Azure Well-Architected Framework is a set of guiding principles that you can use to improve the quality of a workload. The framework consists of these five pillars of architecture excellence:
 
@@ -31,4 +31,4 @@ By the end of this module, you'll be able to:
 - Remediate the issues that Advisor's recommendations have surfaced
 - Understand the Advisor Score and how it can help prioritize recommendations and measure impacts
 
-The concepts discussed in this module are not all-inclusive, but they represent some important considerations when you're managing a solution on the cloud. For more details on Azure Advisor, visit the [Azure Advisor documentation page](https://docs.microsoft.com/azure/advisor/?azure-portal=true).
+The concepts discussed in this module are not all-inclusive, but they represent some important considerations when you're managing a solution on the cloud. For more details on Azure Advisor, visit the [Azure Advisor documentation page](/azure/advisor/?azure-portal=true).

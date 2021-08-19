@@ -124,4 +124,4 @@ function processPlayers(allPlayerStats) {
 }
 ```
 
-© 2020 Warner Bros. Ent. All Rights Reserved
+© 2021 Warner Bros. Ent. All Rights Reserved

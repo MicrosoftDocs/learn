@@ -12,4 +12,4 @@ In this module, you will:
 - Debug Mapping Data Flow
 - Use Wrangling Data
 - Use compute transformations with Azure Data Factory
-- Integrate SSI packages with Azure Data Factory
+- Integrate SSIS packages with Azure Data Factory

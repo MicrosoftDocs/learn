@@ -5,8 +5,8 @@ metadata:
   title: Foundations of cloud computing for administrators
   description: Cloud Admin course from Dr. Majd Sakr at Carnegie Mellon University. Learn about the cloud, including the history, building blocks, and types on your way to becoming a Cloud Administrator.
   ms.date: 08/15/2019
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   showCreativeCommonsFooter: true

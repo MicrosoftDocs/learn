@@ -1,4 +1,4 @@
-stage: Deploy
+- stage: Deploy
   displayName: 'Deploy Web App'
   dependsOn: Build
   condition: succeeded()

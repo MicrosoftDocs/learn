@@ -74,7 +74,7 @@ with Traffic Manager.
 
 The illustration shows how you can use both together.
 
-:::image type="content" source="../media/global-architecture.png" alt-text="Full architecture diagram showing both Azure Front Door and Traffic manager in the same architecture":::
+:::image type="content" source="../media/global-architecture.png" alt-text="Full architecture diagram showing both Azure Front Door and Traffic manager in the same architecture.":::
 
 This setup uses Traffic Manager for simple DNS-based load balancing to your
 static assets in storage accounts, and Front Door for path-based routing on

@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.wwl.configure-expressroute-virtual-wan
+metadata:
+  title: Configure ExpressRoute and Virtual WAN
+  description: "You will learn how to configure ExpressRoute and Virtual WAN to provide connection services."
+  ms.date: 07/27/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure ExpressRoute and Virtual WAN
+summary: You will learn how to configure ExpressRoute and Virtual WAN to provide connection services.
+abstract: |
+  After completing this module, you will be able to:
+  - Identify features and usage cases for ExpressRoute.
+  - Coexist site-to-site and ExpressRoute networks.
+  - Identify features and usage cases for virtual WAN.
+prerequisites: |
+  None
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure-expressroute
+units:
+- learn.wwl.configure-expressroute-virtual-wan.introduction
+- learn.wwl.configure-expressroute-virtual-wan.determine-expressroute-uses
+- learn.wwl.configure-expressroute-virtual-wan.determine-expressroute-capabilities
+- learn.wwl.configure-expressroute-virtual-wan.coexist-site-to-site-expressroute
+- learn.wwl.configure-expressroute-virtual-wan.compare-intersite-connection-options
+- learn.wwl.configure-expressroute-virtual-wan.determine-uses
+- learn.wwl.configure-expressroute-virtual-wan.knowledge-check
+- learn.wwl.configure-expressroute-virtual-wan.summary-resources
+badge:
+  uid: learn.wwl.configure-expressroute-virtual-wan.badge

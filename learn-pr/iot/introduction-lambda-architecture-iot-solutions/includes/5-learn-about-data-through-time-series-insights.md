@@ -8,15 +8,15 @@ Using the portal, you create the required resources, and route the data stream. 
 
 In the image below, conveyor belt data is being read and displayed. The chart shows when the belt is running fast, slow, or stopped. We usually don't want our delivery conveyor belt to stop, so checking this chart might indicate something is wrong.
 
-[![Screenshot of the chart page, when using Time Series Insights on conveyor belt data](../media/lambda-tsi-chart.png)](../media/lambda-tsi-chart.png#lightbox)
+[![Screenshot of the chart page, when using Time Series Insights on conveyor belt data.](../media/lambda-tsi-chart.png)](../media/lambda-tsi-chart.png#lightbox)
 
 The second display option is to visualize the data using a _heat map_. The time chunks show the various speeds the conveyor belt is running at, using a color code. The times when the belt is stopped are obvious here too.
 
-[![Screenshot of the heat map page, when using Time Series Insights on conveyor belt data](../media/lambda-tsi-heatmap.png)](../media/lambda-tsi-heatmap.png#lightbox)
+[![Screenshot of the heat map page, when using Time Series Insights on conveyor belt data.](../media/lambda-tsi-heatmap.png)](../media/lambda-tsi-heatmap.png#lightbox)
 
 The third option is a table of results, again divided up into time chunks. A table isn't as fun to look at as the chart or heat map. But, depending on your application, this format might indeed be a helpful way of visualizing your data.
 
-[![Screenshot of the table page, when using Time Series Insights on conveyor belt data](../media/lambda-tsi-table.png)](../media/lambda-tsi-table.png#lightbox)
+[![Screenshot of the table page, when using Time Series Insights on conveyor belt data.](../media/lambda-tsi-table.png)](../media/lambda-tsi-table.png#lightbox)
 
 ## Best practices
 

@@ -50,7 +50,7 @@ The **Analytics** home page provides the following filters:
 
 - **Severity**. Use to filter the rules by levels of severity.
 - **Rule Type**. There are currently four types of rules: Scheduled, Fusion, Microsoft Security, Machine Learning Behavior Analytics.
-- **Tactics**. Use to filter the rules based on 14 specific techniques and methodologies in ATT&amp;CK model.
+- **Tactics**. Use to filter the rules based on 14 specific methodologies in ATT&amp;CK model.
 - **Data Sources**. Use to filter the rules by the data source connector that generates the alert.
 
 > [!NOTE]

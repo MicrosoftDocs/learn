@@ -44,7 +44,7 @@ Use these resources to discover more.
 
 **Microsoft Cloud Adoption Framework for Azure:**
 
-- [Microsoft Cloud Adoption Framework for Azure documentation](https://docs.microsoft.com/azure/cloud-adoption-framework/)
+- [Microsoft Cloud Adoption Framework for Azure documentation](https://docs.microsoft.com/azure/cloud-adoption-framework/overview)
 
 **Financial planning:**
 

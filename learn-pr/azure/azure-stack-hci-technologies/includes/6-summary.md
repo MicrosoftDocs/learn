@@ -8,9 +8,9 @@ In this module, you learned about the technological foundations of Azure Stack H
 
 To learn more, review the following documents:
 
-- [Hyper-V Technology Overview](https://docs.microsoft.com/windows-server/virtualization/hyper-v/hyper-v-technology-overview)
-- [Failover Clustering in Windows Server](https://docs.microsoft.com/windows-server/failover-clustering/failover-clustering-overview)
-- [Use Cluster Shared Volumes in a failover cluster](https://docs.microsoft.com/windows-server/failover-clustering/failover-cluster-csvs)
-- [Overview of file sharing using the SMB 3 protocol in Windows Server](https://docs.microsoft.com/windows-server/storage/file-server/file-server-smb-overview)
-- [Storage Spaces Direct overview](https://docs.microsoft.com/windows-server/storage/storage-spaces/storage-spaces-direct-overview)
-- [Software Defined Networking (SDN)](https://docs.microsoft.com/windows-server/networking/sdn/)
+- [Hyper-V Technology Overview](/windows-server/virtualization/hyper-v/hyper-v-technology-overview)
+- [Failover Clustering in Windows Server](/windows-server/failover-clustering/failover-clustering-overview)
+- [Use Cluster Shared Volumes in a failover cluster](/windows-server/failover-clustering/failover-cluster-csvs)
+- [Overview of file sharing using the SMB 3 protocol in Windows Server](/windows-server/storage/file-server/file-server-smb-overview)
+- [Storage Spaces Direct overview](/windows-server/storage/storage-spaces/storage-spaces-direct-overview)
+- [Software Defined Networking (SDN)](/windows-server/networking/sdn/)

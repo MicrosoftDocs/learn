@@ -17,7 +17,7 @@ abstract: |
   - Learn about the different benefits that each migration path offers.
   - Start planning the migration process to modern endpoint management. 
 prerequisites: | 
-  - Basic knowledge of Microsoft Endpoint Manager and endpoint management concepts, see [Microsoft Endpoint Manager fundamentals](https://docs.microsoft.com/learn/paths/endpoint-manager-fundamentals/).
+  - Basic knowledge of Microsoft Endpoint Manager and endpoint management concepts, see [Microsoft Endpoint Manager fundamentals](../../paths/endpoint-manager-fundamentals/index.yml).
 iconUrl: /learn/achievements/paths-to-modern-endpoint-management.svg
 ratingEnabled: true
 levels:

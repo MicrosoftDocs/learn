@@ -44,10 +44,10 @@ Passwordless authentication with Azure AD, such as with the Microsoft Authentica
 
 Biometric sign-in uses human characteristics, such as a hand, iris, face, or fingerprint. Windows Hello uses facial or fingerprint biometric data to authenticate a user. You'll learn more about Windows Hello in the next unit. The Microsoft Authenticator app can also be used in passwordless mode, using biometric data such as a fingerprint scan, or a facial scan.
 
-## FIDO2 (in preview)
+## FIDO2
 
 FIDO is an abbreviation for Fast Identity Online, an alliance that promotes open authentication standards and aims to reduce the reliance on passwords as a form of authentication.
 
 Azure AD supports FIDO2, a passwordless authentication method that can come in different forms. FIDO2 allows users to sign in with an external security key. The external key may be a USB device, lightning connector, Bluetooth, or NFC. In whichever form FIDO2 is implemented, the user never has to enter a password.
 
-Users can also register and select a FIDO2 security key as their main means of authentication. Sign-in with FIDO2 security keys is currently in preview in Azure AD.
+Users can also register and select a FIDO2 security key as their main means of authentication.

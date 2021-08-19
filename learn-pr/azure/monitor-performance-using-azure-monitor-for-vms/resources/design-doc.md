@@ -126,22 +126,22 @@ Imagine you're newly hired into an IT department for a large financial services 
 
 ## Notes
 
-[Azure Monitor Overview](https://docs.microsoft.com/azure/azure-monitor/overview)
+[Azure Monitor Overview](/azure/azure-monitor/overview)
 
-[Azure Monitor Terminology Changes](https://docs.microsoft.com/azure/azure-monitor/terminology)
+[Azure Monitor Terminology Changes](/azure/azure-monitor/terminology)
 
-[Sources of monitoring data for Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/data-sources)
+[Sources of monitoring data for Azure Monitor](/azure/azure-monitor/platform/data-sources)
 
-[Azure Monitor data platform](https://docs.microsoft.com/azure/azure-monitor/platform/data-platform)
+[Azure Monitor data platform](/azure/azure-monitor/platform/data-platform)
 
-[Monitoring data locations in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/data-locations)
+[Monitoring data locations in Azure Monitor](/azure/azure-monitor/platform/data-locations)
 
-[Logs in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/platform/data-platform-logs)
+[Logs in Azure Monitor](/azure/azure-monitor/platform/data-platform-logs)
 
-[Log query overview](https://docs.microsoft.com/azure/azure-monitor/log-query/log-query-overview)
+[Log query overview](/azure/azure-monitor/log-query/log-query-overview)
 
-[Overview of log queries in Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/insights/vminsights-overview)
+[Overview of log queries in Azure Monitor](/azure/azure-monitor/insights/vminsights-overview)
 
-[What is monitored by Azure Monitor?](https://docs.microsoft.com/azure/azure-monitor/monitor-reference)
+[What is monitored by Azure Monitor?](/azure/azure-monitor/monitor-reference)
 
 [Kusto Query Language (KQL) from Scratch](https://www.pluralsight.com/courses/kusto-query-language-kql-from-scratch)

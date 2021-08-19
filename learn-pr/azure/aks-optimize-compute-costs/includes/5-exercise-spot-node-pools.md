@@ -176,7 +176,7 @@ The nodes in a spot node pool are assigned a taint that equals `kubernetes.azure
     ```
 
     > [!TIP]
-    > Cloud Shell includes an [integrated file editor](https://docs.microsoft.com/azure/cloud-shell/using-cloud-shell-editor). The Cloud Shell editor supports features such as language highlighting, the command palette, and a file explorer. For simple file creation and editing, start the editor by running `code .` in the Cloud Shell terminal. This action opens the editor with your active working directory set in the terminal. To open your manifest file directly for quick editing, run `code spot-node-deployment.yaml`. This command opens the editor without the file explorer.
+    > Cloud Shell includes an [integrated file editor](/azure/cloud-shell/using-cloud-shell-editor). The Cloud Shell editor supports features such as language highlighting, the command palette, and a file explorer. For simple file creation and editing, start the editor by running `code .` in the Cloud Shell terminal. This action opens the editor with your active working directory set in the terminal. To open your manifest file directly for quick editing, run `code spot-node-deployment.yaml`. This command opens the editor without the file explorer.
 
 1. Paste the following text into the file:
 

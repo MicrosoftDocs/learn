@@ -1,15 +1,15 @@
-![Tech logo](../media/tech-all.png)
+![Tech logo.](../media/tech-all.png)
 
 In this lesson, you'll learn how to create an app that shows the current time. You'll be introduced to the fundamentals of data binding, getting data from the code to the UI of your app, and refreshing it to update the clock display on the UI. This forms the basis for more complex data binding tasks in later lessons. So, let's get started!
 
 ::: zone pivot="uwp"
 
-![Tech logo](../media/tech-uwp.png)
+![Tech logo.](../media/tech-uwp.png)
 
 #### 1. Create the project
 If it's not running already, open Visual Studio 2017. Create a new C# Windows Universal project by using the **Blank App (Universal Windows)** template. Call it **DatabindingSample**. This is the project you will work with during the entire UI and Data module.
 
-![Screenshot of Visual Studio 2017 New Project dialog box](../media/createproject.png)
+![Screenshot of Visual Studio 2017 New Project dialog box.](../media/createproject.png)
 
 When you click **OK**, Visual Studio prompts you to enter the target and minimum Windows 10 versions. This is just an exercise project, and you're not planning on deploying it to computers running an older version of Windows 10. Therefore, you can select **Windows 10, version 1809** for both the minimum and the target version, and then click **OK**. 
 
@@ -56,7 +56,7 @@ public string CurrentTime
 #### 4. Run the app
 If you launch the app now (by using the F5 key or the **Debug / Start Debugging** command in the menu), the app compiles and runs. What's even better is that it seems to work! The current time is displayed in the top right-hand corner. 
 
-![Screenshot of the running app with the clock](../media/firstrun.png)
+![Screenshot of the running app with the clock.](../media/firstrun.png)
 
 However, something is not quite right. The clock doesn't update. It is stuck at the time the app was first launched. Of course, how would the app know when to refresh the value in the `TextBlock`? We have to tell the UWP runtime to update it once per second.
 
@@ -157,12 +157,12 @@ You now know how to use `{x:Bind`} to create a fast and automatic way of getting
 
 ::: zone pivot="wpf"
 
-![Tech logo](../media/tech-wpf.png)
+![Tech logo.](../media/tech-wpf.png)
 
 #### 1. Create the project
 If it's not running already, open Visual Studio 2017. Create a new C# Windows Universal project by using the **WPF App (.NET Framework)** template. Call it **DatabindingSampleWPF**, and then select **OK**. This is the project you will work with during the entire UI and Data module.
 
-![Screenshot of Visual Studio 2017 New Project dialog box](../media/createproject_wpf.png)
+![Screenshot of Visual Studio 2017 New Project dialog box.](../media/createproject_wpf.png)
 
 #### 2. Create the Clock class
 Because our task is to display the current time, it makes sense to create a `Clock` class first. Right-click the `DatabindingSampleWPF` project in **Solution Explorer**, select **Add / Class**, and enter `Clock` as the class' name. 
@@ -216,7 +216,7 @@ The object the data binding refers to is instantiated in the `DataContext` of th
 #### 4. Run the app
 If you launch the app now (by using the F5 key or the **Debug / Start Debugging** command in the menu), the app compiles and runs. What's even better is that it seems to work! The current time is displayed in the top right-hand corner. 
 
-![Screenshot of the running app with the clock](../media/firstrun_wpf.png)
+![Screenshot of the running app with the clock.](../media/firstrun_wpf.png)
 
 However, something is not quite right. The clock doesn't update. It is stuck at the time the app was first launched. Of course, how would the app know when to refresh the value in the `TextBlock`? We have to tell the WPF runtime to update it once per second.
 

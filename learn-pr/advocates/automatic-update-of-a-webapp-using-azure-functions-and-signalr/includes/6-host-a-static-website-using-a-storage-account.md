@@ -1,4 +1,4 @@
-![Deploy to static website](../media/serverless-app-static-concept.png)
+![Deploy to static website.](../media/serverless-app-static-concept.png)
 
 Now that we've tested the application on your local machine, it's time to publish it to the cloud. There are two aspects of your application that require attention before publishing. First, you need to deploy the local functions into Azure and then you need to make the static HTML and JavaScript files available on the web.
 

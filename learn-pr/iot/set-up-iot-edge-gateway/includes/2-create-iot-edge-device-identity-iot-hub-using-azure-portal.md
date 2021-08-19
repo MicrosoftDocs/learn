@@ -2,7 +2,7 @@ It's the first day on the job as lead IoT Solutions Engineer.  You've been told 
 
 The implementation of this solution is seen as high-impact, with lots of teams across the company counting on it's success.  Our Machine Learning and Data Analysts believe that we can automate a majority of our operations and the supply chain folks think that it could help optimize material usage and delivery of product.  If we successfully capture data from the manufacturing floor into Microsoft Azure, all of our business units can theoretically access and make use of it.
 
-[![First day of work](../media/work.png)](../media/work.png#lightbox)
+[![First day of work.](../media/work.png)](../media/work.png#lightbox)
 
 The first thing we need, is a registered identity for our IoT Edge Gateway.  This entity will ensure that the Azure cloud is ready for our eventual on-site deployment within the manufacturing site network.
 
@@ -35,7 +35,7 @@ In this unit, you will create a new IoT Edge Device identity in Azure IoT Hub fo
 
 1. On the IoT Hub summary, click **IoT Edge** under the **Automatic Device Management** section. This section of the IoT Hub summary allows you to manage the IoT Edge devices connected to the IoT Hub.
 
-    [![Transparent Gateway Devices Diagram](../media/portal-view-devices.png)](../media/portal-view-devices.png#lightbox)
+    [![Transparent Gateway Devices Diagram.](../media/portal-view-devices.png)](../media/portal-view-devices.png#lightbox)
 
 1. Click the **Add an IoT Edge device** button to begin adding a new IoT Edge Device to the IoT Hub.
 
@@ -65,7 +65,7 @@ In this unit, you will create a new IoT Edge Device identity in Azure IoT Hub fo
     The `FROM /*` part of the message route will match all device-to-cloud messages or twin change notifications from any module or leaf device. Then, the `INTO $upstream` tells the route to send those messages to the Azure IoT Hub.
  
     >[!NOTE]
-    >To learn more about configuring message routing within Azure IoT Edge, reference the [Learn how to deploy modules and establish routes in IoT Edge documentation article](https://docs.microsoft.com/azure/iot-edge/module-composition).
+    >To learn more about configuring message routing within Azure IoT Edge, reference the [Learn how to deploy modules and establish routes in IoT Edge documentation article](/azure/iot-edge/module-composition).
 
 1. Click the **Next: Review + create >** button.
 

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-to-azure-api-management.how-azure-api-management-works
+title: How Azure API Management works
+metadata:
+  unitType: learning-content
+  title: How Azure API Management Works
+  description: Learn how Azure API Management works
+  ms.date: 06/16/2021
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-how-azure-api-management-works.md)]

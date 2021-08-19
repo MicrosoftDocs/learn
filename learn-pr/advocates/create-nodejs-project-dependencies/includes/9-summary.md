@@ -1,4 +1,4 @@
-You started by learning how to install dependencies that your app can use. Using dependencies in your application allows you to create the application faster because the code is already written. Also, it's a good idea to rely on tried and tested libraries rather than writing something yourself. Using these libraries is an especially good idea when you're adding authentication and authorization to your app.
+You started by learning how to install dependencies that your app can use. Using dependencies in your application allows you to create the application faster because the code is already written. Also, it's a good idea to rely on tried-and-tested libraries rather than writing something yourself. Using these libraries is an especially good idea when you're adding authentication and authorization to your app.
 
 You were then introduced to various ways to install a dependency: local, global, and via the npx tool. For the most part, you'll install dependencies locally.
 

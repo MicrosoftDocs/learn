@@ -173,7 +173,7 @@ After you've created a virtual network and assigned a subnet to it, you can crea
 
 1. Set the **Target dedicated nodes** to **1**, and set **Target low-priority nodes** to **0**.
 
-   To learn more about low-priority VMs, see [Use low-priority VMs with Batch](https://docs.microsoft.com/azure/batch/batch-low-pri-vms).
+   To learn more about low-priority VMs, see [Use low-priority VMs with Batch](/azure/batch/batch-low-pri-vms).
 
 1. For **Virtual Network**, select the virtual network that you created earlier.
 

@@ -21,7 +21,7 @@ Azure offers tools and services that can help organizations build machine learni
 
 ### Azure Cognitive Services
 
-[Azure Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/what-are-cognitive-services?azure-portal=true) contains prebuilt models that don't require machine learning expertise to introduce AI functionality to an application. Azure Cognitive Services encompasses many areas, such as vision, speech, language, decision, and search. It's easy to use, so organizations can use the power of AI without extensive machine learning skills.
+[Azure Cognitive Services](/azure/cognitive-services/what-are-cognitive-services?azure-portal=true) contains prebuilt models that don't require machine learning expertise to introduce AI functionality to an application. Azure Cognitive Services encompasses many areas, such as vision, speech, language, decision, and search. It's easy to use, so organizations can use the power of AI without extensive machine learning skills.
 
 Tailwind Traders sees a high potential in Azure Cognitive Services, because its data science department is not fully operational. The company will evaluate these features to innovate the e-commerce application:
 
@@ -33,7 +33,7 @@ Other Azure Cognitive Services features have potential for Tailwind Traders, but
 
 ### Knowledge mining and Azure Cognitive Search
 
-[Azure Cognitive Search](https://docs.microsoft.com/azure/search/search-what-is-azure-search?azure-portal=true) helps introduce knowledge mining and flexible search engines into applications with little coding effort. Not only can the service index massive amounts of data, it can also add enrichments to augment the information available to search.
+[Azure Cognitive Search](/azure/search/search-what-is-azure-search?azure-portal=true) helps introduce knowledge mining and flexible search engines into applications with little coding effort. Not only can the service index massive amounts of data, it can also add enrichments to augment the information available to search.
 
 One of the areas where the Tailwind Traders application needs to be improved is the product search. Customers spend too much time trying to find the product they're looking for. Replacing the existing search engine with Azure Cognitive Search will allow the company to expose rich search controls such as faceted navigation (multiple-category filters), relevance tuning, and autocomplete.
 
@@ -43,13 +43,13 @@ Internet users are used to sophisticated search engines, so Tailwind Traders can
 
 The next area where surveys have surfaced user dissatisfaction is customer support. Long resolution times and congested phone lines are common complaints.
 
-Tailwind Traders is considering [Azure Bot Service](https://docs.microsoft.com/azure/bot-service?azure-portal=true) to implement a chat-based support system where users can resolve their issues quicker at a lower cost. Azure Bot Service can be implemented in various languages, like C#, JavaScript, and Python. This makes it easier to find developers in the organization who can use a familiar programming language to create the chat functionality.
+Tailwind Traders is considering [Azure Bot Service](/azure/bot-service?azure-portal=true) to implement a chat-based support system where users can resolve their issues quicker at a lower cost. Azure Bot Service can be implemented in various languages, like C#, JavaScript, and Python. This makes it easier to find developers in the organization who can use a familiar programming language to create the chat functionality.
 
 Azure Bot Service can be implemented in various channels, but Tailwind Traders is mostly interested in offering it as a web-based chat for users who visit the e-commerce website.
 
 ### Azure Machine Learning
 
-[Azure Machine Learning](https://docs.microsoft.com/azure/machine-learning/overview-what-is-azure-ml?azure-portal=true) facilitates the process of creating custom machine learning models, deploying those models to production, and managing versions of all deployed models across the organization.
+[Azure Machine Learning](/azure/machine-learning/overview-what-is-azure-ml?azure-portal=true) facilitates the process of creating custom machine learning models, deploying those models to production, and managing versions of all deployed models across the organization.
 
 Azure Machine Learning makes the job of data scientists easier, by helping them to share experiment results and manage different models at scale. It can refine models with hyperparameter tuning and even create new ones with automated learning. It can then deploy the selected models to Kubernetes clusters to offer highly scalable, enterprise-grade APIs that will run the organization's machine learning models in production.
 
@@ -59,6 +59,6 @@ Tailwind Traders is considering using custom models for a next-generation produc
 
 Tailwind Traders has formulated the hypothesis "A recommendation engine would increase cross-sales." Ideally, Tailwind Traders would use the Azure Machine Learning service to build a recommendation engine that's tailored to the organization's needs. However, the company has no data science expertise at the moment.
 
-For now, Tailwind Traders has decided to use the Personalizer feature in Azure Cognitive Services to enrich the application without the need for data scientists. If the hypothesis is validated, the data science team that's eventually hired will evolve the prototype with custom machine learning models built with Azure. An example is in the article [Build a real-time Recommendation API on Azure](https://docs.microsoft.com/azure/architecture/reference-architectures/ai/real-time-recommendation?azure-portal=true).
+For now, Tailwind Traders has decided to use the Personalizer feature in Azure Cognitive Services to enrich the application without the need for data scientists. If the hypothesis is validated, the data science team that's eventually hired will evolve the prototype with custom machine learning models built with Azure. An example is in the article [Build a real-time Recommendation API on Azure](/azure/architecture/reference-architectures/ai/real-time-recommendation?azure-portal=true).
 
 Additionally, Tailwind Traders has decided to validate the existing hypothesis around building a support chat with Azure Bot Service and improving the e-commerce site with Azure Cognitive Search. Both prototypes can be built with relatively low effort, so Tailwind Traders can start its foray into machine learning and AI at full speed.

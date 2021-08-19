@@ -3,24 +3,23 @@ uid: learn.azdo.manage-build-dependencies
 metadata:
   title: Manage build dependencies with Azure Artifacts
   description: In this module, the Space Game web team guides you through creating a build pipeline that produces a package that can be used by multiple applications.
-  ms.date: 01/21/2020
+  ms.date: 05/28/2021
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
-  #ms.learn-contact: thpetche
   ms.prod: learning-azure
 title: Manage build dependencies with Azure Artifacts
 summary: Manage your application and the packages it uses across build pipelines.
 abstract: |
-  In this module, you will:
-  - Learn ways to create and share packages that can be used by multiple applications
+  After completing this module, you'll be able to:
+  - Create and share packages that can be used by multiple applications
   - Create a build pipeline for your package and publish your package to Azure Artifacts
   - Connect an application to your package and build the application in Azure Pipelines
-  - Push up a change to your package and update your application to use it
+  - Push changes to your package and update your application to use them
 prerequisites: |
   - An Azure DevOps organization
   - Visual Studio Code
-  - .NET Core 3.1
+  - .NET 5.0 SDK
   - Git
   - A GitHub account
 iconUrl: /learn/achievements/azure-devops/manage-dependencies-in-your-build-pipeline.svg
@@ -37,6 +36,7 @@ products:
 units:
 - learn.azdo.manage-build-dependencies.1-introduction
 - learn.azdo.manage-build-dependencies.2-plan-build-dependencies-for-your-pipeline
+- learn.azdo.manage-build-dependencies.2b-what-is-azure-artifacts
 - learn.azdo.manage-build-dependencies.3-set-up-environment
 - learn.azdo.manage-build-dependencies.4-create-feed
 - learn.azdo.manage-build-dependencies.5-create-package-pipeline

@@ -12,7 +12,7 @@ You've learned through step-by-step examples how Advisor gives you *actionable* 
 
 ## Learn more
 
-- Read a more detailed [Overview of Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-overview?azure-portal=true).
-- Learn more about the [Azure Well-Architected Framework](https://docs.microsoft.com/azure/architecture/framework?azure-portal=true).
-- Review a comprehensive guide on [Getting started with Azure Advisor](https://docs.microsoft.com/azure/advisor/advisor-get-started?azure-portal=true).
-- Understand everything there is to know about [Advisor Score](https://docs.microsoft.com/azure/advisor/azure-advisor-score?azure-portal=true).
+- Read a more detailed [Overview of Azure Advisor](/azure/advisor/advisor-overview?azure-portal=true).
+- Learn more about the [Azure Well-Architected Framework](/azure/architecture/framework?azure-portal=true).
+- Review a comprehensive guide on [Getting started with Azure Advisor](/azure/advisor/advisor-get-started?azure-portal=true).
+- Understand everything there is to know about [Advisor Score](/azure/advisor/azure-advisor-score?azure-portal=true).

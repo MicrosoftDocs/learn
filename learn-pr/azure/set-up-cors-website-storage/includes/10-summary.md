@@ -19,15 +19,15 @@ The following resources will provide you with detailed information about the des
 
 #### Azure Support for CORS
 
-- [CORS Support for the Azure Storage Services](https://docs.microsoft.com/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services)
-- [CORS using Azure CLI](https://docs.microsoft.com/cli/azure/storage/cors)
-- [CORS using Azure Powershell](https://docs.microsoft.com/powershell/module/azure.storage/set-azurestoragecorsrule)
-- [Authorization for the Azure Storage Services](https://docs.microsoft.com/rest/api/storageservices/authorization-for-the-azure-storage-services)
-- [Versioning for the Azure Storage Services](https://docs.microsoft.com/rest/api/storageservices/versioning-for-the-azure-storage-services)
+- [CORS Support for the Azure Storage Services](/rest/api/storageservices/cross-origin-resource-sharing--cors--support-for-the-azure-storage-services)
+- [CORS using Azure CLI](/cli/azure/storage/cors)
+- [CORS using Azure Powershell](/powershell/module/azure.storage/set-azurestoragecorsrule)
+- [Authorization for the Azure Storage Services](/rest/api/storageservices/authorization-for-the-azure-storage-services)
+- [Versioning for the Azure Storage Services](/rest/api/storageservices/versioning-for-the-azure-storage-services)
 
 #### Azure CORS REST APIs
 
-- [Blob Service REST API](https://docs.microsoft.com/rest/api/storageservices/blob-service-rest-api)
-- [File Service REST API](https://docs.microsoft.com/rest/api/storageservices/file-service-rest-api)
-- [Queue Service REST API](https://docs.microsoft.com/rest/api/storageservices/queue-service-rest-api)
-- [Table Service REST API](https://docs.microsoft.com/rest/api/storageservices/table-service-rest-api)
+- [Blob Service REST API](/rest/api/storageservices/blob-service-rest-api)
+- [File Service REST API](/rest/api/storageservices/file-service-rest-api)
+- [Queue Service REST API](/rest/api/storageservices/queue-service-rest-api)
+- [Table Service REST API](/rest/api/storageservices/table-service-rest-api)

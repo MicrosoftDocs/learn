@@ -6,7 +6,7 @@ In this module, you learned how to customize routes in an Azure virtual network 
 
 For more information on using routes in your network infrastructure, see the following articles:
 
-- [Virtual network traffic routing](https://docs.microsoft.com/azure/virtual-network/virtual-networks-udr-overview)
-- [Tutorial: Route network traffic with a route table using the Azure portal](https://docs.microsoft.com/azure/virtual-network/tutorial-create-route-table-portal)
-- [Deploy highly available network virtual appliances](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/nva-ha)
-- [Implement a DMZ between Azure and the Internet](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)
+- [Virtual network traffic routing](/azure/virtual-network/virtual-networks-udr-overview)
+- [Tutorial: Route network traffic with a route table using the Azure portal](/azure/virtual-network/tutorial-create-route-table-portal)
+- [Deploy highly available network virtual appliances](/azure/architecture/reference-architectures/dmz/nva-ha)
+- [Implement a DMZ between Azure and the Internet](/azure/architecture/reference-architectures/dmz/secure-vnet-dmz)

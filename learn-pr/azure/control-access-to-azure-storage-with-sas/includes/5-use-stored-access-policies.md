@@ -20,7 +20,7 @@ The stored access policy you create for a blob container can be used for all the
 - **Expiry time**: A DateTimeOffset value for the date and time when the policy expires. After this time, requests to the storage will fail with a 403 error-code message.
 - **Permissions**: The list of permissions as a string that can be one or all of **acdlrw**.
 
-![Screenshot of the Azure portal that shows a stored access policy](../media/5-shared-acces-policy.png)
+![Screenshot of the Azure portal that shows a stored access policy.](../media/5-shared-acces-policy.png)
 
 ### Create stored access policies
 
@@ -48,7 +48,7 @@ In the portal, go to the storage account and then go to the blob storage contain
 
 You can then enter all the required parameters.
 
-![Screenshots for the options when you add an access policy](../media/5-add-a-policy.png)
+![Screenshots for the options when you add an access policy.](../media/5-add-a-policy.png)
 
 #### With Azure CLI commands
 

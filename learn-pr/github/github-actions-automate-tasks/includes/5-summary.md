@@ -22,7 +22,7 @@ Here are some links to more information on the topics we discussed in this modul
 - [Workflow syntax for GitHub Actions](https://help.github.com/actions/reference/workflow-syntax-for-github-actions?azure-portal=true)
 - [Events that trigger workflows](https://help.github.com/actions/reference/events-that-trigger-workflows?azure-portal=true)
 - [GitHub Actions usage limits](https://help.github.com/actions/reference/workflow-syntax-for-github-actions#usage-limits?azure-portal=true)
-- [Introduction to Docker Containers](https://docs.microsoft.com/learn/modules/intro-to-docker-containers/?azure-portal=true)
+- [Introduction to Docker Containers](/learn/modules/intro-to-docker-containers/?azure-portal=true)
 - [GitHub-hosted runners](https://docs.github.com/actions/using-github-hosted-runners/about-github-hosted-runners)
 - [Self-hosted runners](https://docs.github.com/actions/hosting-your-own-runners/about-self-hosted-runners)
 - [The components of GitHub Actions](https://docs.github.com/actions/learn-github-actions/introduction-to-github-actions#the-components-of-github-actions)

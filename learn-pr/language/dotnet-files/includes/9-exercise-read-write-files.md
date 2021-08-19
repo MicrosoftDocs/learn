@@ -32,7 +32,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
     using System.IO;
     using System.Collections.Generic;
     using Newtonsoft.Json; 
-      ```
+    ```
 
 ## Create a method to calculate sales totals
 
@@ -52,7 +52,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
 1. Within that method, replace `// READ FILES LOOP` with a loop that iterates over the `salesFiles`, reads the file, parses the content as JSON, and then increments the `salesTotal` variable with the `total` value from the file.
 
     ```csharp
-    double CalculateSalesTotal(IEnumerable<string> salesFiles)
+    static double CalculateSalesTotal(IEnumerable<string> salesFiles)
     {
         double salesTotal = 0;
         
@@ -125,7 +125,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
     dotnet run
     ```
 
-   There's no output from the program. If you look in the *salesTotals/totals.txt* file, you'll see the total of all the sales from the *sales.json* file.
+   There's no output from the program. If you look in the *salesTotalsDir/totals.txt* file, you'll see the total of all the sales from the *sales.json* file.
 
 1. Run the program from the terminal again.
 

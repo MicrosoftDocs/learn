@@ -4,7 +4,7 @@ title: Exercise - Create the pipeline
 metadata:
   title: Exercise - Create the pipeline
   description: Create an Azure Pipelines project and produce your first build artifact.
-  ms.date: 01/21/2020
+  ms.date: 05/24/2021
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial

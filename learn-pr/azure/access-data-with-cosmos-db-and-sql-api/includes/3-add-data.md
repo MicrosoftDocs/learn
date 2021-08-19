@@ -15,7 +15,7 @@ The Azure Cosmos DB Data Explorer is a tool included in the Azure portal that is
 
 1. Select **Databases**, then **Azure Cosmos DB**, and then select the DB you just created.
 
-1. Select **Data Explorer**, then expane the **Products** database in the **SQL API** pane.
+1. Select **Data Explorer**, then expand the **Products** database in the **SQL API** pane.
 
 ## Add data using the Data Explorer
 

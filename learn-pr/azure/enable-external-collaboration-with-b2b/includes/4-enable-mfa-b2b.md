@@ -13,7 +13,7 @@ Before allowing access, multi-factor authentication asks the user to complete ch
 - Something the user has
 - Something the user is
 
-![Graphic showing multi-factor authentication challenges](../media/5-mfa.png)
+![Graphic showing multi-factor authentication challenges.](../media/5-mfa.png)
 
 A secret password or answer to a security question should be something that only the user knows. Users also have devices that can be classified as something they have. For example, a user might have a cell phone and be able to receive a text message with a secret, one-time-use code. You might also make successful authentication contingent on the user, through biometrics collected from them. This biometric information is classified as something the user is. For example, you might make authentication rely on the user's fingerprints or voice as an additional step.
 
@@ -38,14 +38,14 @@ Azure supports different forms of second factor methods, including:
 
 When you create a conditional access policy, you specify which users or groups the policy should apply to, the conditions that must be met, and which applications the policy should be enforced on. You can then set multi-factor authentication to be a required control in this policy. If you're happy with the configuration, you then enable the policy.
 
-![Screenshot of configuring a conditional access policy](../media/5-conditional-access.png)
+![Screenshot of configuring a conditional access policy.](../media/5-conditional-access.png)
 
 When your policy is configured and enabled, you test it by using the **What If** tool in the Azure portal.
 
-![Screenshot of the What If tool test](../media/5-what-if.png)
+![Screenshot of the What If tool test.](../media/5-what-if.png)
 
 This tool helps simulate a user signing in, and shows you which policies are applied, based on your test simulation. If successful, the test shows your policy in the list that will apply, based on your simulation.
 
-![Screenshot of the What If tool result](../media/5-what-if-result.png)
+![Screenshot of the What If tool result.](../media/5-what-if-result.png)
 
 You then do a final test by attempting to sign in as the user for the application. Test the conditional access policy by verifying whether multi-factor authentication is enforced correctly.

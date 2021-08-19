@@ -8,16 +8,16 @@ As you might have noticed, even the most straightforward program in Go has to be
 
 In other words, when you use the `main` package, your program will produce a standalone executable. But when a program is part of a package other than `main`, Go doesn't generate a binary file. It generates a package archive file (a file with an .a extension).
 
-By convention, the package name is the same as the last element of the import path. For example, to import the `math/rand` package, you need to import it like this:
+In Go, package names follow a convention. A package uses the last part of its import path as its name. For example, the Go standard library contains a package called `math/cmplx`, which provides useful code for working with complex numbers. The import path of this package is `math/cmplx`, and you import it like this:
 
 ```go
-import "math/rand"
+import "math/cmplx"
 ```
 
-And to refer to objects in the package, you do it like this:
+To refer to objects in the package, you use the package name, `cmplx`, like this:
 
 ```go
-rand.Int()
+cmplx.Inf()
 ```
 
 Let's create a package.
@@ -74,7 +74,7 @@ To confirm that everything is working, you can run the `go build` command in the
 
 ## Create a module
 
-You've grouped the calculator functionality into a package. Now it's time to group the package into a module. Why? Your package's module specifies the context that Go needs to run the code you've grouped together. This contextual information includes the Go version your code is written for.
+You've placed the calculator functionality inside a package. Now it's time to put that package into a module. Go modules typically contain packages that offer related functionality. A package's module also specifies the context that Go needs to run the code you've grouped together. This contextual information includes the Go version your code is written for.
 
 Also, modules help other developers reference specific versions of your code and make working with dependencies easier. Another benefit is that our program's source code doesn't strictly need to exist in the `$GOPATH/src` directory. Freeing that restriction makes it more convenient to work with different package versions in other projects at the same time.
 
@@ -84,7 +84,7 @@ So, to create a module for the `calculator` package, run this command in the roo
 go mod init github.com/myuser/calculator
 ```
 
-After you run this command, `github.com/myuser/calculator` becomes the package's name. You'll use that name to reference it in other programs. The command also creates a new file called `go.mod`. Finally, the tree directory now looks like this directory:
+After you run this command, `github.com/myuser/calculator` becomes the module's name. You'll use that name to reference it in other programs. The command also creates a new file called `go.mod`. Finally, the tree directory now looks like this directory:
 
 ```output
 src/
@@ -101,7 +101,7 @@ module github.com/myuser/calculator
 go 1.14
 ```
 
-To reference this package in other programs, you need to import it by using the module name. In this case, the name is `github.com/myuser/calculator`. Now let's look at an example of how to use this package.
+To reference your `calculator` package in other programs, you need to import it by using the module name. In this case, the name is `github.com/myuser/calculator`. Now let's look at an example of how to use this package.
 
 > [!NOTE]
 > Historically, managing dependencies in Go hasn't been easy. The dependency management system is still a work in progress. If you want to learn more about modules, see this [series of posts published in the Go blog](https://blog.golang.org/using-go-modules?azure-portal=true).
@@ -135,7 +135,7 @@ func main() {
 }
 ```
 
-Notice that the import statement uses the name of the package you created: `calculator`. To call the `Sum` function from that package, you need to specify the package name as `calculator.Sum`. Finally, you now also have access to the `Version` variable. You call it like this: `calculator.Version`.
+Notice that the import statement uses the name of the package you created: `calculator`. To call the `Sum` function from that package, you need to include the package name, as in `calculator.Sum`. Finally, you now also have access to the `Version` variable. You call it like this: `calculator.Version`.
 
 If you try to run the program now, it won't work. You need to inform Go that you're using modules to reference other packages. To do so, run this command in the `$GOPATH/src/helloworld` directory:
 

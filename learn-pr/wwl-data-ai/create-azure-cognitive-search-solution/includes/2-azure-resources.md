@@ -23,4 +23,4 @@ Depending on the pricing tier you select, you can optimize your solution for sca
 The combination of replicas and partitions you configure determines the *search units* used by your solution. Put simply, the number of search units is the number of replicas multiplied by the number of partitions (R x P = SU). For example, a resource with four replicas and three partitions is using 12 search units.
 
 > [!TIP]
-> You can learn more about pricing tiers and capacity management in the [Azure Cognitive Search documentation](https://docs.microsoft.com/azure/search/search-sku-tier).
+> You can learn more about pricing tiers and capacity management in the [Azure Cognitive Search documentation](/azure/search/search-sku-tier).

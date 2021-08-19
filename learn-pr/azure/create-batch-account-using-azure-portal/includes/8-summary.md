@@ -6,10 +6,10 @@ You've seen in this module how convenient it is to use the Azure portal to creat
 
 ## Learn more
 
-* [Batch documentation](https://docs.microsoft.com/azure/batch/)
+* [Batch documentation](/azure/batch/)
 
-* [Batch security and compliance best practices](https://docs.microsoft.com/azure/batch/security-best-practices)
+* [Batch security and compliance best practices](/azure/batch/security-best-practices)
 
-* [Monitor Batch solutions](https://docs.microsoft.com/azure/batch/monitoring-overview)
+* [Monitor Batch solutions](/azure/batch/monitoring-overview)
 
-* [Batch REST API reference](https://docs.microsoft.com/rest/api/batchservice/)
+* [Batch REST API reference](/rest/api/batchservice/)

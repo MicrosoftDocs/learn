@@ -157,7 +157,7 @@ You can write a function app in Azure Functions in the Azure portal or externall
    var isPolarBear = probability > 0.8; // 80% threshold
    ```
 
-   Another notable aspect of this code is its use of a [shared access signature](https://docs.microsoft.com/azure/storage/common/storage-dotnet-shared-access-signature-part-1?azure-portal=true). 
+   Another notable aspect of this code is its use of a [shared access signature](/azure/storage/common/storage-dotnet-shared-access-signature-part-1?azure-portal=true). 
 
    The `photos` container that you created is private. To access the blobs stored there, you must have access to the storage account or have the storage account's access key. A shared access signature allows other users and services to access individual blobs, but only for a specified length of time and optionally with read-only access.
 

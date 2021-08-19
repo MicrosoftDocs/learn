@@ -12,4 +12,4 @@ If end users were to enter these settings instead, they could do this incorrectl
 
 The available configuration parameters are ultimately decided by the developers of the app. Documentation from the application vendor should be reviewed to see if an app supports configuration and what configurations are available. For some applications, Intune will populate the available configuration settings.
 
-For more information about app configuration, see [App configuration policies for Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-overview?azure-portal=true) and [Plan for and configure application management in Configuration Manager](https://docs.microsoft.com/mem/configmgr/apps/plan-design/plan-for-and-configure-application-management?azure-portal=true).
+For more information about app configuration, see [App configuration policies for Microsoft Intune](/mem/intune/apps/app-configuration-policies-overview?azure-portal=true) and [Plan for and configure application management in Configuration Manager](/mem/configmgr/apps/plan-design/plan-for-and-configure-application-management?azure-portal=true).

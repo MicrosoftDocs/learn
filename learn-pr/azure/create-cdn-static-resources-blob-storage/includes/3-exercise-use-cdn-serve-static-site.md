@@ -22,7 +22,7 @@ Now, you'll create a CDN and connect that CDN to the website that you've created
 
 1. Ensure that **Create a new CDN endpoint now** isn't selected, then select **Create**.
 
-![Create a new CDN Endpoint in the Azure](../media/3-cdn-new-profile.png)
+![Create a new CDN Endpoint in the Azure.](../media/3-cdn-new-profile.png)
 
 When you've created the profile, select the Notifications (bell) icon, then select **Successfully created a CDN profile** to display the CDN profile pane.
 
@@ -45,4 +45,4 @@ You now need to create a CDN profile that connects to the source web server in t
 
 1. After 10 minutes has elapsed, select the **Endpoint hostname** link. The web site should display.
 
-![Create a new CDN endpoint in the Azure portal](../media/3-new-cdn-endpoint.PNG)
+![Create a new CDN endpoint in the Azure portal.](../media/3-new-cdn-endpoint.PNG)

@@ -6,7 +6,7 @@ metadata:
   description: Learn about when to use generics, the purpose of type variables and identify scenarios for using multiple type variables.
   ms.date: 02/11/2021
   author: GeekTrainer
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

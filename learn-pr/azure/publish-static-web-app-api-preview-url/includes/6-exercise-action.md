@@ -52,25 +52,25 @@ Notice that the preview URL contains a hyphen followed by a number. The number m
 
 ::: zone pivot="angular"
 
-:::image type="content" source="../media/my-shopping-list-app-angular.png" alt-text="Your angular web app":::
+:::image type="content" source="../media/my-shopping-list-app-angular.png" alt-text="Your angular web app.":::
 
 ::: zone-end
 
 ::: zone pivot="react"
 
-:::image type="content" source="../media/my-shopping-list-app-react.png" alt-text="Your react web app":::
+:::image type="content" source="../media/my-shopping-list-app-react.png" alt-text="Your react web app.":::
 
 ::: zone-end
 
 ::: zone pivot="svelte"
 
-:::image type="content" source="../media/my-shopping-list-app-svelte.png" alt-text="Your svelte web app":::
+:::image type="content" source="../media/my-shopping-list-app-svelte.png" alt-text="Your svelte web app.":::
 
 ::: zone-end
 
 ::: zone pivot="vue"
 
-:::image type="content" source="../media/my-shopping-list-app-vue.png" alt-text="Your vue web app":::
+:::image type="content" source="../media/my-shopping-list-app-vue.png" alt-text="Your vue web app.":::
 
 ::: zone-end
 

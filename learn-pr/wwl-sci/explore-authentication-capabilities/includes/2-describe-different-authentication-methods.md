@@ -33,4 +33,4 @@ Security defaults are a set of basic identity security mechanisms recommended by
 - Forcing administrators to use multifactor authentication.
 - Requiring all users to complete multifactor authentication when needed.
 
-Security defaults are a great option for organizations that want to increase their security posture but don’t know where to start, or for organizations using the free tier of Azure AD licensing.  Security defaults may not be appropriate for organizations with Azure AD premium licenses or more complex security requirements. To find out more, see **What are security defaults?** in the Learn More section in the summary.
+Security defaults are a great option for organizations that want to increase their security posture but don’t know where to start, or for organizations using the free tier of Azure AD licensing.  Security defaults may not be appropriate for organizations with Azure AD premium licenses or more complex security requirements. To learn more, visit [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)

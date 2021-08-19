@@ -21,7 +21,7 @@ from openrowset(
     firstrow = 2 ) as rows
 ```
 
-The option **firstrow** is used to skip the first row in the CSV file that represents the header in this case. Make sure that you can access this file. If your file is protected with a SAS key or custom identity, you would need to [setup server level credential for sql login]( https://docs.microsoft.com/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature#server-scoped-credential).
+The option **firstrow** is used to skip the first row in the CSV file that represents the header in this case. Make sure that you can access this file. If your file is protected with a SAS key or custom identity, you would need to [setup server level credential for sql login]( /azure/synapse-analytics/sql/develop-storage-files-storage-access-control#server-scoped-credential).
 
 ## Data source usage
 
@@ -45,7 +45,7 @@ from openrowset(
     ) as rows
 ```
 
-If a data source is protected with SAS key or custom identity, you can configure [data source with database scoped credential]( https://docs.microsoft.com/azure/synapse-analytics/sql/develop-storage-files-storage-access-control?tabs=shared-access-signature#database-scoped-credential).
+If a data source is protected with SAS key or custom identity, you can configure [data source with database scoped credential]( /azure/synapse-analytics/sql/develop-storage-files-storage-access-control#database-scoped-credential).
 
 ## Explicitly specify a schema
 
@@ -136,22 +136,17 @@ The following query shows how to read a file with a header row, with a Unix-styl
 The code to achieve this is as follows where you use the **firstrow** variable to omit the header row.
 
 ```sql
-SELECT * 
-FROM OPENROWSET( 
-    BULK 'csv/population-unix-hdr/population.csv', 
-    DATA_SOURCE = 'SqlOnDemandDemo', 
-    FORMAT = 'CSV', PARSER_VERSION = '2.0', 
-    FIELDTERMINATOR =',', 
-    FIRSTROW = 2 ) 
-WITH ( 
-    [country_code] VARCHAR (5) COLLATE Latin1_General_BIN2, 
-    [country_name] VARCHAR (100) COLLATE Latin1_General_BIN2, 
-    [year] smallint, [population] bigint 
-) AS [r] 
-WHERE 
-    country_name = 'Luxembourg' 
-    AND year = 2017;
+SELECT *
+FROM OPENROWSET(
+        BULK 'csv/population-unix-hdr/population.csv',
+        DATA_SOURCE = 'SqlOnDemandDemo',
+        FORMAT = 'CSV', PARSER_VERSION = '2.0',
+        FIELDTERMINATOR =',',
+        HEADER_ROW = TRUE
+    ) AS [r]
 ```
+
+`HEADER_ROW = TRUE` will result in reading column names from the header row in file. It is great for exploration purposes when you are not familiar with file content. For best performance see [Use appropriate data types section in Best practices](/azure/synapse-analytics/sql/best-practices-serverless-sql-pool#use-appropriate-data-types). Also, you can read more about [OPENROWSET syntax here](/azure/synapse-analytics/sql/develop-openrowset#syntax).
 
 ## Work with custom quote character
 

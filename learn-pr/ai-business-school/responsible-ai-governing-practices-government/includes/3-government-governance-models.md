@@ -57,4 +57,4 @@ There is one more important voice for governments to consider: their citizens. M
 Next, let’s learn more about how governments can approach policy discussions regarding responsible AI.
 
 > [!TIP]
-> For more on how enterprises and other organizations are governing their use of responsible AI, see this module: [Identify governing practices for responsible AI](https://docs.microsoft.com/learn/modules/responsible-ai-governing-practices/index).
+> For more on how enterprises and other organizations are governing their use of responsible AI, see this module: [Identify governing practices for responsible AI](/learn/modules/responsible-ai-governing-practices/index).

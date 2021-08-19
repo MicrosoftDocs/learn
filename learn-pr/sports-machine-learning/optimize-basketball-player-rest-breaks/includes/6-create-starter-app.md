@@ -77,4 +77,4 @@ You might have to authorize Visual Studio Code to open a new browser window or t
 
 Congratulations! You just deployed a static web app in Azure! Now, it's time to make the app usable with our data.
 
-© 2020 Warner Bros. Ent. All Rights Reserved
+© 2021 Warner Bros. Ent. All Rights Reserved

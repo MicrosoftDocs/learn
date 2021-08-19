@@ -4,7 +4,7 @@ title: Exercise - Fix a failed test
 metadata:
   title: Exercise - Fix a failed test
   description: See how a failed test can help uncover defects before the build reaches others.
-  ms.date: 01/21/2020
+  ms.date: 05/26/2021
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial

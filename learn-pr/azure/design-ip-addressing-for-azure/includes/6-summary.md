@@ -10,5 +10,5 @@ Now that you understand how to plan IP addressing for Azure networks, you unders
 
 For more information about IP addressing in Azure, see the following articles:
 
-- [IP address types and allocation methods in Azure](https://docs.microsoft.com/azure/virtual-network/virtual-network-ip-addresses-overview-arm)
-- [Public IP address prefix](https://docs.microsoft.com/azure/virtual-network/public-ip-address-prefix)
+- [IP address types and allocation methods in Azure](/azure/virtual-network/virtual-network-ip-addresses-overview-arm)
+- [Public IP address prefix](/azure/virtual-network/public-ip-address-prefix)

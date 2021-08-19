@@ -4,7 +4,7 @@ Deciding whether you want to sell your SaaS offer through Microsoft is the most 
 
 Regardless of whether you sell through Microsoft, you’ll need to provide the following basic information to publish your offer:
 
-- Customer Relationship Management (CRM) connection to receive [customer leads](https://docs.microsoft.com/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads).
+- Customer Relationship Management (CRM) connection to receive [customer leads](/azure/marketplace/partner-center-portal/commercial-marketplace-get-customer-leads).
 
 - Offer categories & industries that describe your application and help customers find your product in the marketplace.
 
@@ -13,7 +13,7 @@ Regardless of whether you sell through Microsoft, you’ll need to provide the f
 - Details and descriptions of your offer and the value it provides for customers.
 
 > [!TIP]
-> To help you provide the information listed above, we’ve created a separate learning module that shares information and best practices that will help you make the most of your company’s presence in the Microsoft commercial marketplace. To learn more, you can complete **["Go to market through the Microsoft commercial marketplace."](https://aka.ms/GTMlearnmarketplace)**
+> To help you provide the information listed above, we’ve created a separate learning module that shares information and best practices that will help you make the most of your company’s presence in the Microsoft commercial marketplace. To learn more, you can complete **["Go to market through the Microsoft commercial marketplace."](/learn/modules/go-to-market-commercial-marketplace/)**
 
 We’ll spend the rest of our time in this unit discussing considerations for publishers that sell their SaaS offers through Microsoft.
 
@@ -24,7 +24,7 @@ Let’s spend some time reviewing concepts that will help you decide how you wan
 
 ### SaaS offer plans and pricing
 
-SaaS offers that are sold through Microsoft must have at least one plan. You can create a variety of different plans with different pricing and availability for the same offer to give your customers choices to purchase your application. Plans can differ in price, billing terms, and levels of functionality. For more detailed information on offer plans and available SaaS pricing models, you can check out our [documentation on planning a SaaS offer](https://docs.microsoft.com/azure/marketplace/plan-saas-offer).
+SaaS offers that are sold through Microsoft must have at least one plan. You can create a variety of different plans with different pricing and availability for the same offer to give your customers choices to purchase your application. Plans can differ in price, billing terms, and levels of functionality. For more detailed information on offer plans and available SaaS pricing models, you can check out our [documentation on planning a SaaS offer](/azure/marketplace/plan-saas-offer).
 
 :::image type="content" source="../media/4-plans-pricing-setup.png" alt-text="Screenshot of the pricing and availability configuration page in Partner Center.":::
 
@@ -57,7 +57,7 @@ Let’s look at an example to help illustrate this concept:
 > [!TIP]
 > You can also use the marketplace metering service to create a fully consumption-based pricing model for your SaaS offer. To do this, set the flat rate price to $0 and use the metering service to dictate an associated price per unit of measure.
 
-For more detailed information about using the marketplace metering service, check out our [documentation on metered billing for SaaS](https://docs.microsoft.com/azure/marketplace/partner-center-portal/saas-metered-billing).
+For more detailed information about using the marketplace metering service, check out our [documentation on metered billing for SaaS](/azure/marketplace/partner-center-portal/saas-metered-billing).
 
 #### Enabling SaaS offer free trials
 
@@ -77,4 +77,4 @@ When you set up your SaaS offer plans in Partner Center, you’ll be able to dic
 > [!NOTE]
 > To publish a private plan, you’ll need to know the Azure tenant IDs of the customer that wants to use your software. Private plans are only possible for SaaS offers sold through Azure Marketplace.
 
-For more information on private offers, reference our [documentation on private offers in the commercial marketplace](https://docs.microsoft.com/azure/marketplace/private-offers).
+For more information on private offers, reference our [documentation on private offers in the commercial marketplace](/azure/marketplace/private-offers).

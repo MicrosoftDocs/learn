@@ -20,7 +20,7 @@ abstract: |
  > [!TIP]
  > This module is part of a multimodal learning experience. Start the module to see how you can follow along!
 prerequisites: |
- - [Predict rocket launch delays with machine learning](https://docs.microsoft.com/learn/paths/machine-learning-predict-launch-delay-nasa/?azure-portal=true)
+ - [Predict rocket launch delays with machine learning](../../paths/machine-learning-predict-launch-delay-nasa/index.yml?azure-portal=true)
  - [Visual Studio Code with Python installed](https://aka.ms/LearnOnVSCode?azure-portal=true)
 iconUrl: /learn/achievements/student-evangelism/machine-learning-model-nasa.svg
 levels:
@@ -42,4 +42,4 @@ units:
 - learn.student-evangelism.machine-learning-model-nasa.8a-knowledge-check
 - learn.student-evangelism.machine-learning-model-nasa.9-summary
 badge:
-  uid: learn.student-evangelism.learn.student-evangelism.machine-learning-model-nasa.badge 
+  uid: learn.student-evangelism.learn.student-evangelism.machine-learning-model-nasa.badge

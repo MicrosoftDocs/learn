@@ -6,13 +6,15 @@ When done correctly, DevOps practices and processes touch nearly every aspect of
 
 DevOps requires a fundamental mindset change from the top down. Organizations can't merely install software tools or adopt services and hope to get all of the benefits promised by DevOps.
 
-In this module, we'll focus only on the Microsoft tools that can help accomplish some of the DevOps objectives.  Alternately, organizations that aren't ready to fully embrace the power of DevOps can support technical teams in their cloud development activities.  If you're interested in learning more about DevOps in general, Microsoft Learn has [several learning paths and modules](https://docs.microsoft.com/learn/browse/?terms=DevOps&azure-portal=true) that can help you.
+In this module, we'll focus only on the Microsoft tools that can help accomplish some of the DevOps objectives.  Alternately, organizations that aren't ready to fully embrace the power of DevOps can support technical teams in their cloud development activities.  If you're interested in learning more about DevOps in general, Microsoft Learn has [several learning paths and modules](/learn/browse/?azure-portal=true&terms=DevOps) that can help you.
 
 Microsoft offers tools to enable source-code management, continuous integration and continuous delivery (CI/CD), and automating the creation of testing environments.  Sometimes, it seems as though these tools overlap in functionality, so in this module you'll learn about several product options, and when to choose one product over another.
 
 ## Product options
 
 At a high level, there are three primary offerings, each of which is aimed at a specific audience and use case and provides a diverse set of tools, services, programmatic APIs, and more.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWGtHv]
 
 ### Azure DevOps Services
 
@@ -23,6 +25,8 @@ Azure DevOps Services is a suite of services that address every stage of the sof
 - **Azure Pipelines** is a CI/CD pipeline automation tool.
 - **Azure Artifacts** is a repository for hosting artifacts, such as compiled source code, which can be fed into testing or deployment pipeline steps.
 - **Azure Test Plans** is an automated test tool that can be used in a CI/CD pipeline to ensure quality before a software release.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWHb6A]
 
 Azure DevOps is a mature tool with a large feature set that began as on-premises server software and evolved into a software as a service (SaaS) offering from Microsoft.
 

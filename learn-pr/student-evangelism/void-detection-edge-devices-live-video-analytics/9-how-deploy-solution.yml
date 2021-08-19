@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.void-detection-edge-devices-lva.how-deploy-solution
+title: How to deploy your solution
+metadata:
+  title: How to deploy your solution
+  description: The module helps learner deploy solution through web application.
+  ms.date: 04/30/2021
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 3 # dummy number at present
+content: |
+  [!include[](includes/9-how-deploy-solution.md)]

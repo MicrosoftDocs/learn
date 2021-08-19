@@ -6,7 +6,7 @@ The components for this unit:
 
 **Azure IoT Central** This service is an Internet of Things (IoT) application platform. [Azure IoT Central](https://azure.microsoft.com/services/iot-central?azure-portal=true) provides an easy way to connect, monitor, and manage your IoT assets at scale. IoT Central is built on Azure IoT Hub, Azure Device Provisioning Service, Stream Analytics, and Time Series Insights.
 
-![IoT Central Architecture](../media/iot-central-architecture.png)
+![IoT Central Architecture.](../media/iot-central-architecture.png)
 
 Azure IoT Central is built on the [8 attributes of successful IoT solutions](https://azure.microsoft.com/resources/8-attributes-of-successful-iot-solutions?azure-portal=true)
 

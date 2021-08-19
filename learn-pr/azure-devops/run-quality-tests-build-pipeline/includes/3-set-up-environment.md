@@ -18,7 +18,7 @@ The modules in this learning path form a progression, where you follow the Tails
 Run a template that sets up everything for you in your Azure DevOps organization.
 
 > [!div class="nextstepaction"]
-> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?name=run-quality-tests&azure-portal=true)
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=run-quality-tests&azure-portal=true)
 
 To run the template, on the Azure DevOps Demo Generator site, do the following:
 
@@ -31,7 +31,7 @@ To run the template, on the Azure DevOps Demo Generator site, do the following:
 
 1. Select **Create Project**.
 
-    ![Screenshot of the Azure DevOps Demo Generator Create New Project screen with the Create Project button highlighted.](../media/3-create-new-project.png)
+    :::image type="content" source="../media/3-create-new-project.png" alt-text="A screenshot of the Azure DevOps Demo Generator Create New Project screen with the Create Project button highlighted.":::
 
     It takes a few moments for the template to run.
 1. Select **Navigate to project** to go to your project in Azure DevOps.
@@ -49,7 +49,7 @@ Assigning work in this way gives you a checklist to work from. It gives others o
 
 Recall that the team settled on these seven top issues:
 
-![Screenshot of Azure DevOps showing the To Do backlog of tasks.](../../shared/media/build-all-tasks.png)
+:::image type="content" source="../../shared/media/build-all-tasks.png" alt-text="A screenshot of Azure Boards showing a backlog of issues.":::
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number that's assigned to each work item might not match what you see here.
@@ -58,21 +58,21 @@ Here you move the third item, **Create unit tests**, to the **Doing** column and
 
 Recall that **Create unit tests** relates to running unit tests during the build so that Amita doesn't have to deal with so many regression bugs when she tests out new builds.
 
-![Screenshot of Azure DevOps work item details for adding unit tests.](../media/3-work-item-details.png)
+:::image type="content" source="../media/3-work-item-details.png" alt-text="A screenshot of Azure DevOps work item details for adding unit tests.":::
 
 To set up the work item:
 
 1. In Azure DevOps, go to **Boards** and then, in the left pane, select **Boards**.
 
-    ![Screenshot of Azure DevOps navigation with the Boards menu and Boards menu item highlighted.](../../shared/media/azure-devops-boards-menu.png)
+    :::image type="content" source="../../shared/media/azure-devops-boards-menu.png" alt-text="A screenshot of Azure DevOps showing the location of the Boards menu.":::
 
 1. In the **Create unit tests** work item, select the **To Do** down arrow, and then assign the work item to yourself.
 
-    ![Screenshot of Azure DevOps State field with the down chevron button highlighted.](../../shared/media/azure-boards-down-chevron.png)
+    :::image type="content" source="../../shared/media/azure-boards-down-chevron.png" alt-text="A screenshot of Azure Boards showing the location of the down arrow.":::
 1. Drag the work item from the **To Do** column to the **Doing** column.
 
-    ![Screenshot of Azure Boards showing the unit test card now in the Doing column.](../media/3-azure-boards-wi3-doing.png)
+    :::image type="content" source="../media/3-azure-boards-wi3-doing.png" alt-text="A screenshot of Azure Boards showing the unit test card now in the Doing column.":::
 
-At the end of this module, after you've completed the task, you'll move the card to the **Done** column. 
+At the end of this module, after you've completed the task, you'll move the card to the **Done** column.
 
 [!include[](../../shared/includes/build-local-setup.md)]

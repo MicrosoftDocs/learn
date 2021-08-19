@@ -19,7 +19,7 @@ Publish a web app to Azure by using Maven Plugin for Azure App Service
 ## Product(s)
 
 - [Azure Web Apps](https://azure.microsoft.com/services/app-service/web/)
-- [Maven Plugin for Azure App Service](https://docs.microsoft.com/java/api/overview/azure/maven/azure-webapp-maven-plugin/readme)
+- [Maven Plugin for Azure App Service](/java/api/overview/azure/maven/azure-webapp-maven-plugin/readme)
 
 ## Prerequisites
 

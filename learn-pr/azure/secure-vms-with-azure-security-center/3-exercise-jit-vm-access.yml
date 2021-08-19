@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-security.secure-vms-with-security-center.exercise-jit-vm-access
-title: Exercise - enable JIT VM access
+title: Exercise - Enable JIT VM access
 metadata:
-  title: Exercise - enable JIT VM access
-  description: Exercise - enable JIT VM access
+  title: Exercise - Enable JIT VM access
+  description: Exercise - Enable JIT VM access
   ms.date: 09/30/2019
   author: adrianstevens
   ms.author: adsteven

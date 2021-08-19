@@ -7,7 +7,7 @@ While this lesson does not cover migration to HANA (DMO) running on Azure, many 
 
 ## High-level overview
 
-A fully optimized VLDB migration should achieve around 2 TB per hour migration throughput or more. The data transfer component of a 20-TB migration can be done in approximately 10 hours. After which, th post-processing and validation steps are then performed. In general, with sufficient time for preparation and testing, any customer system of any size can be moved to Azure.
+A fully optimized VLDB migration should achieve around 2 TB per hour migration throughput or more. The data transfer component of a 20-TB migration can be done in approximately 10 hours. After which, the post-processing and validation steps are then performed. In general, with sufficient time for preparation and testing, any customer system of any size can be moved to Azure.
 
 VLDB Migrations require  considerable skill, attention to detail, and analysis. For example, the net impact of Table Splitting must be measured and analyzed. Splitting a large table into more than 50 parallel exports may  decrease the time taken to Export a table. However, too many Table Splits may result in increased Import times. Therefore, the net impact of table splitting must be calculated and tested. An expert licensed OS/DB migration consultant will be familiar with the concepts and tools. 
 

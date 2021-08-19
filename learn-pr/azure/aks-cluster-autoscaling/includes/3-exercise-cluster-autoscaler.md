@@ -1,7 +1,7 @@
 Now that you know how the cluster autoscaler works, it's time to implement it.
 
 > [!IMPORTANT]
-> If you haven't deployed the example cluster, please refer back to [the introduction](https://docs.microsoft.com/learn/modules/aks-cluster-autoscaling/1-introduction).
+> If you haven't deployed the example cluster, please refer back to [the introduction](/learn/modules/aks-cluster-autoscaling/1-introduction).
 
 ## Enable the cluster autoscaler on an existing cluster
 
@@ -45,7 +45,7 @@ contoso-website-wb45271o4-30u0y           0/1     Pending   0          5m12s
 
 ## Tweak the cluster autoscaler profiles
 
-It's possible to fine-tune the autoscaler profiles by setting a series of flags in its configuration. All the available flags can be found in [this Microsoft documentation](https://docs.microsoft.com/azure/aks/cluster-autoscaler#using-the-autoscaler-profile). For now, you'll only fine-tune the autoscaler to be faster when scaling and polling the API, and decreasing the time for it to decrease the node count.
+It's possible to fine-tune the autoscaler profiles by setting a series of flags in its configuration. All the available flags can be found in [this Microsoft documentation](/azure/aks/cluster-autoscaler#using-the-autoscaler-profile). For now, you'll only fine-tune the autoscaler to be faster when scaling and polling the API, and decreasing the time for it to decrease the node count.
 
 ```azurecli-interactive
 az aks update \

@@ -3,9 +3,9 @@ uid: learn.language.go-variables-functions-packages
 metadata:
   title: Understand how to use packages, variables, and functions in Go
   description: Learn about the basic data types in Go and about how to declare variables, write functions, and use packages.
-  ms.date: 02/12/2021
+  ms.date: 06/15/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Understand how to use packages, variables, and functions in Go

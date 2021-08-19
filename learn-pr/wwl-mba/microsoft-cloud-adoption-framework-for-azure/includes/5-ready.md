@@ -27,7 +27,7 @@ Before you begin to build and deploy solutions with Azure services, make sure yo
 > For an interactive experience, view the environment-readiness content in the Azure portal. Go to the Azure Quickstart Center in the Azure portal, and select introduction to Azure setup. Then follow the step-by-step instructions.
 
 > [!TIP]
-> Standards-based Azure Blueprints samples are available and ready to use. Visit the list of available samples that are ready to use or modify for your needs, linked in the *Summary and resources_* unit at the end of this module.
+> Standards-based Azure Blueprints samples are available and ready to use. Visit the list of available samples that are ready to use or modify for your needs, linked in the *Summary and resources* unit at the end of this module.
 
 :::row:::
 ![Icon of key](../media/key-takeaway.png)

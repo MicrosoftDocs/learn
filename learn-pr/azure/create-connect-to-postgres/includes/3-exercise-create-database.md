@@ -14,7 +14,7 @@ The Azure Sandbox gives you a safe, sandboxed environment to use Azure resources
 
 1. Select **Create a resource** > **Databases** > **Azure Database for PostgreSQL**. You can also use the **Search** functionality to find this category.
 
-    :::image type="content" source="../media/3a-create.png" alt-text="Create Azure Database for PostgreSQL":::
+    :::image type="content" source="../media/3a-create.png" alt-text="Create Azure Database for PostgreSQL.":::
 
 1. In the **Single server** box, select **Create**.
 

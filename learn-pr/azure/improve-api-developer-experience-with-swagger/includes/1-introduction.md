@@ -20,3 +20,4 @@ In this module, you will:
 
 - Experience with REST API design and implementation.
 - Experience developing basic ASP.NET Core apps.
+- Local installations of [.NET SDK](https://dotnet.microsoft.com/download), [Visual Studio Code](https://code.visualstudio.com), and the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.

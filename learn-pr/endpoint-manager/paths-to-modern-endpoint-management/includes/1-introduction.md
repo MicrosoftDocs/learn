@@ -21,4 +21,4 @@ In this module, you will:
 
 ## Prerequisites
 
-  - Basic knowledge of Microsoft Endpoint Manager and endpoint management concepts, see [Microsoft Endpoint Manager fundamentals](https://docs.microsoft.com/learn/paths/endpoint-manager-fundamentals/).
+  - Basic knowledge of Microsoft Endpoint Manager and endpoint management concepts, see [Microsoft Endpoint Manager fundamentals](../../../paths/endpoint-manager-fundamentals/index.yml).

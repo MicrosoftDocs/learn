@@ -22,12 +22,16 @@ prerequisites: |
 iconUrl: /learn/achievements/azure-sql-performance.svg
 levels:
 - beginner
+- intermediate
 roles:
 - solution-architect
 - database-administrator
+- data-engineer
+- developer
 products:
 - azure
 - azure-sql-database
+- azure-sql-managed-instance
 units:
 - learn.azure-sql-performance.1-introduction
 - learn.azure-sql-performance.2-performance-capabilities

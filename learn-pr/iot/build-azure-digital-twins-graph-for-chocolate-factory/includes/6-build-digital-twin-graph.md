@@ -1,12 +1,14 @@
 In this unit, you'll get an overview of the layout and features of the Azure Digital Twins explorer sample application on a conceptual level before applying these features to your chocolate factory digital twin in the next unit.
 
-The explorer sample app is run from a terminal window after installing a number of dependencies.
+The explorer sample app is run from the [Azure portal](https://portal.azure.com/).
 
-## Sign in
+## Access the Azure Digital Twins Explorer
 
-It's necessary to sign in and validate a digital twins instance. You need the host URL of your instance. You also need to authenticate the explorer sample with Azure Digital Twins within your local environment.
+To access the explorer, you'll need to navigate to your Azure Digital Twins instance. In the overview pane of your instance, you'll be able to access the explorer by selecting the **Open Azure Digital Twins Explorer (preview)** button.
 
-After signing in, you'll probably want to either upload your models, or upload a graph you created previously. In the following image, note the model import icon to the left, and the graph import icon in the center. The image also highlights the `localhost:3000` address, and the icon to save updates to your digital twins.
+:::image type="content" source="../media/azure-digital-twins-explorer-portal-access.png" alt-text="Terminal help output when running npm install." lightbox="../media/azure-digital-twins-explorer-portal-access.png":::
+
+Once you've accessed the explorer, you'll probably want to either upload your models, or upload a graph you created previously. In the following image, note the model import icon to the left, and the graph import icon in the center. The image also highlights the `localhost:3000` address, and the icon to save updates to your digital twins.
 
 :::image type="content" source="../media/explorer-intro.png" alt-text="Screenshot showing the layout of the Azure Digital Twins explorer sample." lightbox="../media/explorer-intro.png":::
 

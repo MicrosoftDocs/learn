@@ -8,9 +8,9 @@ This module has focused on the code you can write to handle transient errors, us
 
 Resources:
 
-- [Microsoft Best Practice](https://docs.microsoft.com/azure/architecture/best-practices/transient-faults)
-- [Retry guidance for specific services](https://docs.microsoft.com/azure/architecture/best-practices/retry-service-specific) 
-- [Azure Transient Fault Handling](https://docs.microsoft.com/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling)
+- [Microsoft Best Practice](/azure/architecture/best-practices/transient-faults)
+- [Retry guidance for specific services](/azure/architecture/best-practices/retry-service-specific) 
+- [Azure Transient Fault Handling](/aspnet/aspnet/overview/developing-apps-with-windows-azure/building-real-world-cloud-apps-with-windows-azure/transient-fault-handling)
 
 Error Handling Libraries:
 

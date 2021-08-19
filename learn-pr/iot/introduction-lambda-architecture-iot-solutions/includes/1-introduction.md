@@ -20,7 +20,7 @@ In this module you will:
 
 The concept of the Internet of Things (IoT) is that one or more, could be thousands, of remote sensor devices are pumping out telemetry values. These values are received by an IoT Hub, an Azure resource designed to handle telemetry readings from all these devices. The IoT Hub routes the data to the storage, or analysis, processes that you specify.
 
-[![Graph illustration of telemetry](../media/lambda-telemetry.png)](../media/lambda-telemetry.png#lightbox)
+[![Graph illustration of telemetry.](../media/lambda-telemetry.png)](../media/lambda-telemetry.png#lightbox)
 
 There are several distinct purposes of recording telemetry readings:
 

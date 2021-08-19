@@ -121,7 +121,7 @@ parser.add_argument('--ds', type=str, dest='ds_ref')
 args = parser.parse_args()
 run = Run.get_context()
 
-imgs = glob.glob(ds_ref + "/*.jpg")
+imgs = glob.glob(args.ds_ref + "/*.jpg")
 ```
 
 #### Use a named input for a file dataset

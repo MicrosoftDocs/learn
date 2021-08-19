@@ -20,12 +20,12 @@ If you're using this as a guide to perform your own web application migration, y
 
 If your next step is to migrate your data from an on-premises SQL Server database to an Azure SQL database, you might find the following module useful:
 
-[Assess and convert SQL Server Databases using the Data Migration Assistant (DMA)](https://docs.microsoft.com/learn/modules/assess-convert-sql-server-databases-using-dma/)
+[Assess and convert SQL Server Databases using the Data Migration Assistant (DMA)](/learn/modules/assess-convert-sql-server-databases-using-dma/)
 
 ## Additional reading
 
 - [Azure App Service Migration Assistant wiki](https://github.com/Azure/App-Service-Migration-Assistant/wiki/Readiness-Checks)
-- [Azure App Service Hybrid Connections](https://docs.microsoft.com/azure/app-service/app-service-hybrid-connections)
-- [Overview of Data Migration Assistant](https://docs.microsoft.com/sql/dma/dma-overview?view=sql-server-2017)
-- [App Service overview](https://docs.microsoft.com/azure/app-service/overview)
-- [Assess and convert SQL Server Databases using the Data Migration Assistant (DMA)](https://docs.microsoft.com/learn/modules/assess-convert-sql-server-databases-using-dma/)
+- [Azure App Service Hybrid Connections](/azure/app-service/app-service-hybrid-connections)
+- [Overview of Data Migration Assistant](/sql/dma/dma-overview?view=sql-server-2017)
+- [App Service overview](/azure/app-service/overview)
+- [Assess and convert SQL Server Databases using the Data Migration Assistant (DMA)](/learn/modules/assess-convert-sql-server-databases-using-dma/)

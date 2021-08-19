@@ -40,7 +40,7 @@ We'll use five questions to determine which of the following four super sleuth c
 - Curious Cam
 - Inquisitive Indy
 
-If you haven't already, set up your local developer environment by following the [Set up your Python beginner development environment with Visual Studio Code](https://docs.microsoft.com/learn/modules/python-install-vscode/?azure-portal=true) Learn module.
+If you haven't already, set up your local developer environment by following the [Set up your Python beginner development environment with Visual Studio Code](/learn/modules/python-install-vscode/?azure-portal=true) Learn module.
 
 ## Learning objectives
 

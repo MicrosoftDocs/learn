@@ -7,7 +7,7 @@ In this module, you learned how to:
 - Add code to both apps to provide a _direct method_
 - Add code to both apps to show the role of _device twins_
 
-[![Photograph of a matured slice of cheese](../media/cheese-circle2.png)](../media/cheese-circle2.png#lightbox)
+[![Photograph of a matured slice of cheese.](../media/cheese-circle2.png)](../media/cheese-circle2.png#lightbox)
 
 ## Clean up
 
@@ -19,9 +19,9 @@ No need to delete your project code though, keep it for future reference!
 
 Take your interest further with:
 
-- [Azure IoT Hub Documentation](https://docs.microsoft.com/azure/iot-hub//)
+- [Azure IoT Hub Documentation](/azure/iot-hub//)
 - [Azure Certified for IoT device catalog](https://catalog.azureiotsolutions.com/)
-- [Develop IoT Edge modules for Windows devices](https://docs.microsoft.com/azure/iot-edge/tutorial-develop-for-windows#set-up-visual-studio-and-tools)
+- [Develop IoT Edge modules for Windows devices](/azure/iot-edge/tutorial-develop-for-windows#set-up-visual-studio-and-tools)
 
 And look out for additional Learn modules on IoT Hub.
 

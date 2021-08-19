@@ -59,7 +59,7 @@ Additional information for the permission overview:
 
 - The Reviewers cannot create own searches or modify the search settings and locations, but they can see the results of an eDiscovery case they are assigned to.
 
-- The Search and Purge role is the only role that can remove actively remove content from multiple locations, but this role cannot search for data or see content.
+- The Search and Purge role is the only role that can remove content actively from multiple locations, but this role cannot search for data or see content.
 
 > [!NOTE]
 > eDiscovery is not limited to mailbox content only, it includes documents and files stored in other locations too.

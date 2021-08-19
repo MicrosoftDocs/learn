@@ -98,19 +98,6 @@
                 "dest": "modules"
             },
             {
-                "src": "bicep",
-                "files": [
-                    "**/*.yml",
-                    "**/*.md"
-                ],
-                "exclude": [
-                    "**/includes/**",
-                    "**/design/**",
-                    "**/resources/**"
-                ],
-                "dest": "modules"
-            },
-            {
                 "src": "azure-networking",
                 "files": [
                     "**/*.yml",
@@ -252,6 +239,32 @@
                     "**/resources/**"
                 ],
                 "dest": "modules"
+            },
+            {
+                "src": "machine-learning",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },            
+            {
+                "src": "tensorflow",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
             },            
             {
                 "src": "reactors",
@@ -293,7 +306,7 @@
                 "dest": "modules"
             },
             {
-                "src": "student-evangelism",
+                "src": "sports-machine-learning",
                 "files": [
                     "**/*.yml",
                     "**/*.md"
@@ -302,6 +315,21 @@
                     "**/includes/**",
                     "**/design/**",
                     "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "student-evangelism",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**",
+                    "predict-basketball-player-efficiency-ratings/**",
+                    "optimize-basketball-player-rest-breaks/**"
                 ],
                 "dest": "modules"
             },
@@ -471,6 +499,19 @@
                     "**/resources/**"
                 ],
                 "dest": "modules"
+            },
+            {
+                "src": "visual-studio",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
             },           
             {
                 "files": [
@@ -489,19 +530,6 @@
                     "**/design/**",
                     "**/resources/**"
                 ]
-            },
-            {
-                "src": "sports-machine-learning",
-                "files": [
-                    "**/*.yml",
-                    "**/*.md"
-                ],
-                "exclude": [
-                    "**/includes/**",
-                    "**/design/**",
-                    "**/resources/**"
-                ],
-                "dest": "modules"
             }
         ],
         "resource": [{
@@ -511,7 +539,8 @@
                     "**/*.png",
                     "**/*.svg",
                     "**/*.jpg",
-                    "**/*.jpeg"
+                    "**/*.jpeg",
+                    "**/*.ipynb"
                 ],
                 "dest": "modules"
             },
@@ -522,7 +551,32 @@
                     "**/*.png",
                     "**/*.svg",
                     "**/*.jpg",
-                    "**/*.jpeg"
+                    "**/*.jpeg",
+                    "**/*.ipynb"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "machine-learning",
+                "files": [
+                    "**/*.gif",
+                    "**/*.png",
+                    "**/*.svg",
+                    "**/*.jpg",
+                    "**/*.jpeg",
+                    "**/*.ipynb"
+                ],
+                "dest": "modules"
+            },  
+            {
+                "src": "tensorflow",
+                "files": [
+                    "**/*.gif",
+                    "**/*.png",
+                    "**/*.svg",
+                    "**/*.jpg",
+                    "**/*.jpeg",
+                    "**/*.ipynb"
                 ],
                 "dest": "modules"
             },            
@@ -534,7 +588,8 @@
                     "**/*.svg",
                     "**/*.jpg",
                     "**/*.jpeg",
-                    "**/*.txt"
+                    "**/*.txt",
+                    "**/*.ipynb"
                 ],
                 "dest": "modules"
             },
@@ -546,7 +601,8 @@
                     "**/*.svg",
                     "**/*.jpg",
                     "**/*.jpeg",
-                    "**/*.txt"
+                    "**/*.txt",
+                    "**/*.ipynb"
                 ],
                 "dest": "modules"
             },
@@ -664,25 +720,6 @@
                     "ko-kr",
                     "zh-cn",
                     "zh-tw"
-                ],
-                "bicep/**/*.yml": [
-                    "de-de",
-                    "es-es",
-                    "fr-fr",
-                    "it-it",
-                    "ru-ru",
-                    "pt-br",
-                    "ja-jp",
-                    "ko-kr",
-                    "zh-cn",
-                    "zh-tw",
-                    "cs-cz",
-                    "hu-hu",
-                    "nl-nl",
-                    "pl-pl",
-                    "pt-pt",
-                    "tr-tr",
-                    "sv-se"
                 ],
                 "cmu-cloud-admin/**/*.yml": [
                     "de-de",
@@ -894,6 +931,25 @@
                     "sv-se"
                 ],
                 "student-evangelism/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
+                "machine-learning/**/*.yml": [
                     "de-de",
                     "es-es",
                     "fr-fr",

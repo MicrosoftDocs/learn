@@ -8,6 +8,6 @@ Without Identity Protection, your organization's identities wouldn't be protecte
 
 To learn more about Azure Active Directory Identity Protection, see these articles:
 
-- [What is Azure Active Directory Identity Protection?](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
-- [Azure Active Directory Identity Protection - Security overview](https://docs.microsoft.com/azure/active-directory/identity-protection/concept-identity-protection-security-overview)
-- [What is risk?](https://docs.microsoft.com/azure/active-directory/identity-protection/concept-identity-protection-risks)
+- [What is Azure Active Directory Identity Protection?](/azure/active-directory/identity-protection/overview-identity-protection)
+- [Azure Active Directory Identity Protection - Security overview](/azure/active-directory/identity-protection/concept-identity-protection-security-overview)
+- [What is risk?](/azure/active-directory/identity-protection/concept-identity-protection-risks)

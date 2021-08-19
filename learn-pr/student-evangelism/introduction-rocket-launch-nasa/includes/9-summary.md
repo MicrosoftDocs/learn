@@ -14,5 +14,4 @@ All pictures came from [commons.wikimedia.org](https://commons.wikimedia.org/?az
 
 ## Next steps
 
-Continue with the NASA-inspired series with [Data collection and manipulation](https://docs.microsoft.com/learn/paths/classify-space-rocks-artificial-intelligence-nasa/index).
-
+Continue with the NASA-inspired series with [Data collection and manipulation](../../../paths/classify-space-rocks-artificial-intelligence-nasa/index.yml).

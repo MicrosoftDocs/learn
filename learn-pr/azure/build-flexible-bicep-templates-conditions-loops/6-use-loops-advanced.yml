@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.bicep-conditions-loops.use-loops-advanced
+title: Control loop execution and nest loops
+metadata:
+  unitType: learning-content
+  title: Control loop execution and nest loops
+  description: Learn how to control the execution of copy loops, and how to use resource property loops and nested loops in Bicep.
+  ms.date: 05/09/2021
+  author: akasnik
+  ms.author: akasnik
+  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-use-loops-advanced.md)]

@@ -1,4 +1,4 @@
-Throughout the [Quantum Computing Foundations](/learn/paths/quantum-computing-fundamentals?azure-portal=true) learning path, you've been carrying out various tasks alongside the crew of the spaceship. In this module, you will be faced with an emergency scenario that requires you to work with the maintenance crew to repair critical systems onboard. To achieve this as quickly as possible while still following safety procedure, you will use the Azure Quantum optimization service to optimize the order in which you tackle repair tasks.
+Throughout the [Quantum Computing Foundations](../../../paths/quantum-computing-fundamentals/index.yml?azure-portal=true) learning path, you've been carrying out various tasks alongside the crew of the spaceship. In this module, you will be faced with an emergency scenario that requires you to work with the maintenance crew to repair critical systems onboard. To achieve this as quickly as possible while still following safety procedure, you will use the Azure Quantum optimization service to optimize the order in which you tackle repair tasks.
 
 This scenario is an example of the **job shop scheduling** problem. Job shop scheduling is a common and important problem in many industries. For example, in the automobile industry manufacturing a car involves many different types of operations. These operations are performed by a number of specialized machines - optimizing the production line to minimize manufacturing time can make for significant cost savings.
 
@@ -23,3 +23,8 @@ After completing this module, you'll be able to:
 - An Azure Quantum workspace
 
 If you don't have these tools yet, we recommend that you follow the [Get started with Azure Quantum](/learn/modules/get-started-azure-quantum/?azure-portal=true) module first.
+
+> [!IMPORTANT]
+> This module makes use of paid services on Azure Quantum. If you are just starting out with Microsoft QIO, the cost of running the code in this module in a Pay-As-You-Go subscription should be < $0.01 USD (Azure infrastructure charges, can be covered with subscription credits), as the first compute hour on Microsoft QIO solvers is free. For reference, this module should roughly consume 2 compute seconds. You can refer to the [Microsoft QIO pricing page](https://azure.microsoft.com/pricing/details/azure-quantum/) for more details.
+>
+> Note that you can always elect to complete the lessons in this module while skipping the job submission to Azure Quantum if you would like to avoid any charges to your Azure account.

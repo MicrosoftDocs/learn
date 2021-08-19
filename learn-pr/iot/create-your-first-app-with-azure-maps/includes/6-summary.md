@@ -8,19 +8,19 @@ In this module, you learned how to:
 
 On a less serious note, you've learned more about hazardous materials than probably you ever thought you'd need, and you learned that if you ever wanted to bicycle from Seattle to New York, that Azure Maps is there for you!
 
-  [![Screenshot showing map section of bike, car, and truck, routes from Seattle to New York](../media/maps-seattle-newyork.png)](../media/maps-seattle-newyork.png#lightbox)
+  [![Screenshot showing map section of bike, car, and truck, routes from Seattle to New York.](../media/maps-seattle-newyork.png)](../media/maps-seattle-newyork.png#lightbox)
 
 ## Next steps
 
 Take your interest further with:
 
-- [Azure Maps Documentation](https://docs.microsoft.com/azure/azure-maps/)
-- [Tutorial: Set up a geofence by using Azure Maps](https://docs.microsoft.com/azure/azure-maps/tutorial-geofence)
-- [Migrate from Google Maps to Azure Maps](https://docs.microsoft.com/azure/azure-maps/migrate-from-google-maps)
+- [Azure Maps Documentation](/azure/azure-maps/)
+- [Tutorial: Set up a geofence by using Azure Maps](/azure/azure-maps/tutorial-geofence)
+- [Migrate from Google Maps to Azure Maps](/azure/azure-maps/migrate-from-google-maps)
 
 Azure Maps are an integral part of other Learn modules. Check out:
 
-- [Create your first Azure IoT Central app](https://docs.microsoft.com/learn/modules/create-your-first-iot-central-app/)
-- [Set up rules and take action on telemetry data in Azure IoT Central](https://docs.microsoft.com/learn/modules/set-up-rules-take-actions-telemetry-data-azure-iot-central/)
+- [Create your first Azure IoT Central app](/learn/modules/create-your-first-iot-central-app/)
+- [Set up rules and take action on telemetry data in Azure IoT Central](/learn/modules/set-up-rules-take-actions-telemetry-data-azure-iot-central/)
 
 Finally, to end your journey in this module, complete, and pass the knowledge check.

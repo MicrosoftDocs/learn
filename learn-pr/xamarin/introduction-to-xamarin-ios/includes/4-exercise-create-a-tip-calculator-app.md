@@ -3,7 +3,7 @@ In this exercise, you walk through the creation of a new Xamarin.iOS application
 The primary goal of this exercise is to disable the default Storyboard UI from the TipCalculator project you created in the previous exercise. After that, you replace it with a code-based `UIViewController`, which will be set as the `RootViewController` for the application.
 
 > [!NOTE]
-> Running Xamarin.iOS apps on devices or simulators requires a connected macOS build host machine. For more information, review the [Pair to Mac for Xamarin.iOS development doc](https://docs.microsoft.com/xamarin/ios/get-started/installation/windows/connecting-to-mac/).
+> Running Xamarin.iOS apps on devices or simulators requires a connected macOS build host machine. For more information, review the [Pair to Mac for Xamarin.iOS development doc](/xamarin/ios/get-started/installation/windows/connecting-to-mac/).
 
 ## Create Single View App
 
@@ -166,7 +166,7 @@ Start the application by selecting the **Play** button in the toolbar. This acti
 
 Remember, the simulator is hosted on your Mac build host. With the **Remoted iOS Simulator** installed, a window launches on your Windows development machine to preview and interact with the iOS simulator directly. If the Remoted iOS Simulator isn't installed, the simulator window appears and deploys on your **Mac** build host. Switch to your Mac to see the window there.
 
-For more information, see the [Remoted iOS Simulator documentation](https://docs.microsoft.com/xamarin/tools/ios-simulator/).
+For more information, see the [Remoted iOS Simulator documentation](/xamarin/tools/ios-simulator/).
 
 Congratulations! You've created a new iOS application with the **Single View App** template.
 

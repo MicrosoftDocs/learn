@@ -6,11 +6,11 @@ A Device Provisioning Service (DPS) can be linked to one or more hubs. So, it's 
 
 1. Type "provisioning" in the search box, and select **IoT Hub Device Provisioning Service**. Click **Create**.
 
-    [![Screenshot showing the selection of the IoT Hub Device Provisioning Service](../media/iot-hub-provisioning-resource-create.png)](../media/iot-hub-provisioning-resource-create.png#lightbox)
+    [![Screenshot showing the selection of the IoT Hub Device Provisioning Service.](../media/iot-hub-provisioning-resource-create.png)](../media/iot-hub-provisioning-resource-create.png#lightbox)
 
 1. Specify the resource, with a name such as "CheeseCave-DPS". Use the sandbox subscription and resource group options. And choose your **Location**.
 
-    [![Screenshot showing the completed fields for a new DPS](../media/iot-hub-provisioning-resource-name.png)](../media/iot-hub-provisioning-resource-name.png#lightbox)
+    [![Screenshot showing the completed fields for a new DPS.](../media/iot-hub-provisioning-resource-name.png)](../media/iot-hub-provisioning-resource-name.png#lightbox)
 
 1. Create the resource, and wait for it to deploy. It can take a minute or two for the deployment message to appear.
 
@@ -26,11 +26,11 @@ A Device Provisioning Service (DPS) can be linked to one or more hubs. So, it's 
 
 1. Locate the name of your IoT hub, and select **iothubowner** as the **Access Policy**. Click **Save**.
 
-    [![Screenshot showing how to link an IoT Hub to the DPS](../media/iot-hub-provisioning-resource-hub-link.png)](../media/iot-hub-provisioning-resource-hub-link.png#lightbox)
+    [![Screenshot showing how to link an IoT Hub to the DPS.](../media/iot-hub-provisioning-resource-hub-link.png)](../media/iot-hub-provisioning-resource-hub-link.png#lightbox)
 
 1. Click **Manage allocation policy**, and verify the policy is set to **Evenly weighted distribution**.
 
-    [![Screenshot showing the DPS allocation policies](../media/iot-hub-provisioning-resource-policy.png)](../media/iot-hub-provisioning-resource-policy.png#lightbox)
+    [![Screenshot showing the DPS allocation policies.](../media/iot-hub-provisioning-resource-policy.png)](../media/iot-hub-provisioning-resource-policy.png#lightbox)
 
 1. On the **Overview** page, copy the **ID Scope** string to a text file. The string is displayed top-right of the page.
 

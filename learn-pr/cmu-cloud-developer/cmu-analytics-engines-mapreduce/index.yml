@@ -4,8 +4,8 @@ metadata:
   title: 'Distributed computing on the cloud: MapReduce'
   description: Carnegie Mellon University's cloud developer course. MapReduce was a breakthrough in big data processing that has become mainstream and been improved upon significantly. Learn about how MapReduce works.
   ms.date: 03/20/2020
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: 'Distributed computing on the cloud: MapReduce'

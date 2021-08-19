@@ -47,7 +47,7 @@ The following table summarizes some of these planning issues. The remainder are 
 |                           |  Point to site            | Site to site                          |  ExpressRoute                 |
 | -------------             | -------------             | -------------                         | ---------                     |
 | Azure supported services  | Cloud services and VMs    | Cloud services and VMs                | All supported services        |
-| Typical bandwidth         | Depends on [VPN Gateway SKU](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku)    | Depends on [VPN Gateway SKU](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku)       | See [ExpressRoute bandwidth options](https://docs.microsoft.com/azure/expressroute/expressroute-introduction#bandwidth-options)       |
+| Typical bandwidth         | Depends on [VPN Gateway SKU](/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku)    | Depends on [VPN Gateway SKU](/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku)       | See [ExpressRoute bandwidth options](/azure/expressroute/expressroute-introduction#bandwidth-options)       |
 | Protocols supported       | SSTP and IPsec            | IPsec                                 | Direct connection, VLANs      |
 | Routing                   | RouteBased (dynamic)      | PolicyBased (static) and RouteBased   | BGP                           |
 | Connection resiliency     | Active-passive            | Active-passive or active-active       | Active-active                 |
@@ -55,7 +55,7 @@ The following table summarizes some of these planning issues. The remainder are 
 
 ### Gateway SKUs
 
-It's important that you choose the right SKU. If you have set up your VPN gateway with the wrong one, you'll have to take it down, and rebuild the gateway, which can be time consuming. For the latest information about gateway SKUs, including throughput, see [What is VPN Gateway? - Gateway SKUs](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku).
+It's important that you choose the right SKU. If you have set up your VPN gateway with the wrong one, you'll have to take it down, and rebuild the gateway, which can be time consuming. For the latest information about gateway SKUs, including throughput, see [What is VPN Gateway? - Gateway SKUs](/azure/vpn-gateway/vpn-gateway-about-vpngateways#gwsku).
 
 ## Workflow
 

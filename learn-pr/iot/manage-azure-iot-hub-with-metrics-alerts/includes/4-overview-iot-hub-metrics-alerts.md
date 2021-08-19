@@ -2,7 +2,7 @@ The focus of this module is on the **Monitoring** features of IoT Hub. This unit
 
 Locate the monitoring section in the left-hand menu.
 
-  [![Screenshot showing the left-hand menu in the portal, for an IoT Hub](../media/metrics-alerts-monitoring.png)](../media/metrics-alerts-monitoring.png#lightbox)
+  [![Screenshot showing the left-hand menu in the portal, for an IoT Hub.](../media/metrics-alerts-monitoring.png)](../media/metrics-alerts-monitoring.png#lightbox)
 
 ## Alerts
 
@@ -12,7 +12,7 @@ _Alerts_ are one of the more dynamic, and fun, features of an IoT Hub. An alert 
 
 When adding an action group to your hub, there are eight types of action you can consider.
 
-  [![Screenshot showing the range of action types available when creating an action group](../media/metrics-alerts-action-type.png)](../media/metrics-alerts-action-type.png#lightbox)
+  [![Screenshot showing the range of action types available when creating an action group.](../media/metrics-alerts-action-type.png)](../media/metrics-alerts-action-type.png#lightbox)
 
 ### Action types
 
@@ -21,13 +21,13 @@ The following table summarizes the eight action types. There are links to more d
   | Action | Description | More info |
   | -- | -- | -- |
   | **Automation Runbook** | A series of automation rules | [Getting Started With Azure Automation – Runbook Management](https://azure.microsoft.com/blog/azure-automation-runbook-management/) |
-  | **Azure Function** | Trigger an Azure Function, which is a specific code function written to a given Azure spec. | [An introduction to Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) |
-  | **Email Azure Resource Manager Role** | Send an email to the specific RBAC Resource Manager role. | [RBAC for Azure resources documentation](https://docs.microsoft.com/azure/role-based-access-control/) |
-  | **Email SMS/Push/Voice** | Send an email, text message, or voice message, to a specific address. | [Create and manage action groups in the Azure portal](https://docs.microsoft.com/azure/azure-monitor/platform/action-groups) |
-  | **ITSM (IT Service Management)** | The ITSM connector provides a bi-directional connection between Azure and ITSM tools. These tools can help resolve issues faster.| [Connect Azure to ITSM tools using IT Service Management Connector](https://docs.microsoft.com/azure/azure-monitor/platform/itsmc-overview) |
+  | **Azure Function** | Trigger an Azure Function, which is a specific code function written to a given Azure spec. | [An introduction to Azure Functions](/azure/azure-functions/functions-overview) |
+  | **Email Azure Resource Manager Role** | Send an email to the specific RBAC Resource Manager role. | [RBAC for Azure resources documentation](/azure/role-based-access-control/) |
+  | **Email SMS/Push/Voice** | Send an email, text message, or voice message, to a specific address. | [Create and manage action groups in the Azure portal](/azure/azure-monitor/platform/action-groups) |
+  | **ITSM (IT Service Management)** | The ITSM connector provides a bi-directional connection between Azure and ITSM tools. These tools can help resolve issues faster.| [Connect Azure to ITSM tools using IT Service Management Connector](/azure/azure-monitor/platform/itsmc-overview) |
   | **LogicApp** | Azure Logic Apps enable automated business-style workflows, without writing any code. | [Logic Apps](https://azure.microsoft.com/services/logic-apps/) |
-  | **Secure Webhook** | A secure webhook app will, for example, validate ownership of the webhook endpoint before allowing events to be delivered. | [Publish events to Azure Active Directory protected endpoints](https://docs.microsoft.com/azure/event-grid/secure-webhook-delivery) |
-  | **Webhook** | With webhook actions, an external process is invoked through a single HTTP POST request. The service that's called must support webhooks, and also determine how to use any payload in the message. | [Webhook actions for log alert rules](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-log-webhook) |
+  | **Secure Webhook** | A secure webhook app will, for example, validate ownership of the webhook endpoint before allowing events to be delivered. | [Publish events to Azure Active Directory protected endpoints](/azure/event-grid/secure-webhook-delivery) |
+  | **Webhook** | With webhook actions, an external process is invoked through a single HTTP POST request. The service that's called must support webhooks, and also determine how to use any payload in the message. | [Webhook actions for log alert rules](/azure/azure-monitor/platform/alerts-log-webhook) |
 
 ### Azure Functions
 
@@ -105,11 +105,11 @@ There are various charting options available in the portal, such as line charts,
 
 The following image shows a metric being created, for the number of telemetry messages sent.
 
-   [![Screenshot showing how to set up a metric showing the number of telemetry messages sent](../media/metrics-alerts-telemetry-messages-sent.png)](../media/metrics-alerts-telemetry-messages-sent.png#lightbox)
+   [![Screenshot showing how to set up a metric showing the number of telemetry messages sent.](../media/metrics-alerts-telemetry-messages-sent.png)](../media/metrics-alerts-telemetry-messages-sent.png#lightbox)
 
 The following image shows the number of telemetry messages being sent, shown below a bar chart showing the data usage. A number of charts can be rendered this way, enabling an operator to correlate the values of multiple metrics.
 
-   [![Screenshot showing the current IoT Hub dashboard, with two charts rendered](../media/metrics-alerts-sum-data.png)](../media/metrics-alerts-sum-data.png#lightbox)
+   [![Screenshot showing the current IoT Hub dashboard, with two charts rendered.](../media/metrics-alerts-sum-data.png)](../media/metrics-alerts-sum-data.png#lightbox)
 
 In addition to charting, metrics can be used to trigger alerts.
 
@@ -119,7 +119,7 @@ _Diagnostic settings_ are used to send auditing, and diagnostic, information to 
 
 For example, to archive the data telemetry for a period of 50 days into a storage account, you might set up a Diagnostic setting as follows.
 
-  [![Screenshot showing how to set up a diagnostic setting, and send the results to a storage account](../media/metrics-alerts-diagnostic-settings.png)](../media/metrics-alerts-diagnostic-settings.png#lightbox)
+  [![Screenshot showing how to set up a diagnostic setting, and send the results to a storage account.](../media/metrics-alerts-diagnostic-settings.png)](../media/metrics-alerts-diagnostic-settings.png#lightbox)
 
 We'll not be taking this feature any further in this module. However, follow the link in the **Summary** page for more details, if interested.
 
@@ -127,7 +127,7 @@ We'll not be taking this feature any further in this module. However, follow the
 
 _Logs_ in Azure IoT Hub are formed from SQL queries that are run on the incoming messages. There are a number of sample queries that are available for immediate use.
 
-  [![Screenshot showing the range of predefined queries for activity logs](../media/metrics-alerts-activity-samples.png)](../media/metrics-alerts-activity-samples.png#lightbox)
+  [![Screenshot showing the range of predefined queries for activity logs.](../media/metrics-alerts-activity-samples.png)](../media/metrics-alerts-activity-samples.png#lightbox)
 
 For example, the following sample is named **Latest 50 logs**:
 
@@ -142,7 +142,7 @@ When the query is run, the output is presented in table or chart form, in the po
 
 A user must select **Pin to dashboard** for the query to be persisted. Columns of a table can be selected or removed, and the resulting output exported if needed.
 
-   [![Screenshot showing the export options available, after generating logging data](../media/metrics-alerts-log-export.png)](../media/metrics-alerts-log-export.png#lightbox)
+   [![Screenshot showing the export options available, after generating logging data.](../media/metrics-alerts-log-export.png)](../media/metrics-alerts-log-export.png#lightbox)
 
 We'll not be taking the logs feature any further in this module. Follow the link on the **Summary** page, for more details.
 

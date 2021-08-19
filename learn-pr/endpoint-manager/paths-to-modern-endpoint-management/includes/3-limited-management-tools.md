@@ -29,4 +29,4 @@ When you enroll Configuration Manager clients in co-management, you gain the fol
 
 ## Next steps
 
-For detailed steps when you currently don't use an endpoint management solution and want to use Microsoft Intune, see the [Deployment guide: Setup or move to Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/deployment-guide-intune-setup?azure-portal=true#currently-dont-use-anything).
+For detailed steps when you currently don't use an endpoint management solution and want to use Microsoft Intune, see the [Deployment guide: Setup or move to Microsoft Intune](/mem/intune/fundamentals/deployment-guide-intune-setup?azure-portal=true#currently-dont-use-anything).

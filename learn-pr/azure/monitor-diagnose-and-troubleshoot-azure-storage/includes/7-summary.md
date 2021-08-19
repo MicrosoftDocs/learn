@@ -6,6 +6,6 @@ You also saw how to use the desktop version of Azure Storage Explorer and Micros
 
 ## Learn more
 
-- [Azure Storage analytics logging](https://docs.microsoft.com/azure/storage/common/storage-analytics-logging)
-- [Get started with AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy)
-- [End-to-end troubleshooting using Azure Storage metrics and logging, AzCopy, and Message Analyzer](https://docs.microsoft.com/azure/storage/common/storage-e2e-troubleshooting)
+- [Azure Storage analytics logging](/azure/storage/common/storage-analytics-logging)
+- [Get started with AzCopy](/azure/storage/common/storage-use-azcopy)
+- [End-to-end troubleshooting using Azure Storage metrics and logging, AzCopy, and Message Analyzer](/azure/storage/common/storage-e2e-troubleshooting)

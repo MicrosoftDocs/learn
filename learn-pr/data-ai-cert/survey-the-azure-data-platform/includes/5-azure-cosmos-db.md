@@ -10,7 +10,7 @@ Because of the multimodel architecture of Azure Cosmos DB, you benefit from each
 
 > [!NOTE]
 >
-> For more information about the APIs that are available in Azure Cosmos DB, see [Choose the appropriate API for Azure Cosmos DB storage](https://docs.microsoft.com/learn/modules/choose-api-for-cosmos-db/).
+> For more information about the APIs that are available in Azure Cosmos DB, see [Choose the appropriate API for Azure Cosmos DB storage](/learn/modules/choose-api-for-cosmos-db/).
 
 ## When to use Azure Cosmos DB
 
@@ -40,4 +40,4 @@ As a data engineer, you can create stored procedures, triggers, and user-defined
 
 Azure Cosmos DB supports data encryption, IP firewall configurations, and access from virtual networks. Data is encrypted automatically. User authentication is based on tokens, and Azure Active Directory provides role-based security. 
 
-Azure Cosmos DB meets many security compliance certifications, including HIPAA, FedRAMP, SOCS, and HITRUST.
+Azure Cosmos DB meets many security compliance certifications, including HIPAA, FedRAMP, SOX, and HITRUST.

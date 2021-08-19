@@ -9,8 +9,6 @@ metadata:
   ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
-interactive: bash
-azureSandbox: true
 durationInMinutes: 4
 content: |
   [!include[](includes/7-exercise-create-files-directories.md)]

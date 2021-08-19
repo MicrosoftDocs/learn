@@ -4,10 +4,10 @@ In this module, you have seen how you can use Azure API Management to modify the
 
 ## Learn more
 
-- [What is API Management?](https://docs.microsoft.com/azure/api-management/api-management-key-concepts)
-- [Policies in Azure API Management](https://docs.microsoft.com/azure/api-management/api-management-howto-policies)
-- [How to set or edit Azure API Management policies](https://docs.microsoft.com/azure/api-management/set-edit-policies)
-- [API Management caching policies](https://docs.microsoft.com/azure/api-management/api-management-caching-policies)
-- [Add caching to improve performance in Azure API Management](https://docs.microsoft.com/azure/api-management/api-management-howto-cache)
-- [API Management policies reference index](https://docs.microsoft.com/azure/api-management/api-management-policies)
-- [Use an external Azure Cache for Redis in Azure API Management](https://docs.microsoft.com/azure/api-management/api-management-howto-cache-external)
+- [What is API Management?](/azure/api-management/api-management-key-concepts)
+- [Policies in Azure API Management](/azure/api-management/api-management-howto-policies)
+- [How to set or edit Azure API Management policies](/azure/api-management/set-edit-policies)
+- [API Management caching policies](/azure/api-management/api-management-caching-policies)
+- [Add caching to improve performance in Azure API Management](/azure/api-management/api-management-howto-cache)
+- [API Management policies reference index](/azure/api-management/api-management-policies)
+- [Use an external Azure Cache for Redis in Azure API Management](/azure/api-management/api-management-howto-cache-external)

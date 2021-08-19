@@ -73,7 +73,7 @@ In this exercise, you'll create a storage account and upload some example patien
 
 1. Change AccountName to the randomly generated name.
 
-1. In the editor, copy the string after the `AccountKey=` parameter up to the `;` in the connection string.
+1. In the editor, copy the string after the `AccountKey=` parameter up to the `"` in the connection string.
 
 1. Replace the `"[account key]"` string with the account key you copied.
 
@@ -98,7 +98,7 @@ In this exercise, you'll create a storage account and upload some example patien
 
     Make sure you have the `==` at the end of the `AccountKey` line.
 
-1. Save and close the code editor by selecting <kbd>Ctrl</kbd>+<kbd>S</kbd> and then selecting <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
+1. Save and close the code editor by selecting <kbd>Ctrl+S</kbd>, and then selecting <kbd>Ctrl+Q</kbd>.
 
 1. To access your web app when it's running in Cloud Shell, you need to open a port.
 
@@ -145,7 +145,7 @@ In this exercise, you'll create a storage account and upload some example patien
     code Controllers/PatientRecordController.cs
     ```
 
-1. Add this code to the bottom of the class under the `GET PatientRecord/patient-nnnnnn` method.
+1. Add the following code to the bottom of the class under the `GET PatientRecord/patient-nnnnnn` method.
 
     ```C#
     // GET PatientRecord/patient-nnnnnn/secure
@@ -188,7 +188,7 @@ In this exercise, you'll create a storage account and upload some example patien
 
     The method uses the passed `BlobClient` object to create a `BlobSasBuilder`. You'll generate a SAS that is read-only and expires in one minute.
 
-1. Save and quit the editor by selecting <kbd>Ctrl</kbd>+<kbd>S</kbd> and then selecting <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
+1. Save and quit the editor by selecting <kbd>Ctrl+S</kbd>, and then selecting <kbd>Ctrl+Q</kbd>.
 
 ### Add code to use the SAS
 
@@ -212,7 +212,7 @@ In this exercise, you'll create a storage account and upload some example patien
 
     This jQuery code adds a click listener on the `btn-getKey` button. The code executes an Ajax call to the new secure URL for the given image file. When it returns, it populates the key input box with the SAS.
 
-1. Save the changes, and quit the editor by selecting <kbd>Ctrl</kbd>+<kbd>S</kbd> and then selecting <kbd>Ctrl</kbd>+<kbd>Q</kbd>.
+1. Save the changes, and quit the editor by selecting <kbd>Ctrl+S</kbd>, and then selecting <kbd>Ctrl+Q</kbd>.
 
 ### Test your changes
 
@@ -235,7 +235,7 @@ In this exercise, you'll create a storage account and upload some example patien
 
 1. Select **Get Key**, which should populate the **Key** field with a SAS.
 
-1. Select **View scan**. The patient's diagnostic image should be displayed.
+1. Select **View scan**. The patient's diagnostic image should appear.
 
     :::image type="content" source="../media/4-viewing-image.png" alt-text="Screenshot of the patient diagnostic image web app showing a patient's image." loc-scope="other":::
 
@@ -258,4 +258,4 @@ In this exercise, you'll create a storage account and upload some example patien
     > [!NOTE]
     > To see this message, you need to use a new browser window that won't have cached the image.
 
-1. In Cloud Shell, quit the web app by selecting <kbd>Ctrl</kbd>+<kbd>C</kbd>.
+1. In Cloud Shell, quit the web app by selecting <kbd>Ctrl+C</kbd>.

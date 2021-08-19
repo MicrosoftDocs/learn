@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-cyclecloud-high-performance-computing.describe-basics
+title: Describe the basics of Azure CycleCloud
+metadata:
+  unitType: learning-content
+  title: Describe the basics of Azure CycleCloud
+  description: This unit describes the basics of Azure CycleCloud.
+  ms.date: 06/07/2021
+  author: anhoward
+  ms.author: anhoward
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-describe-basics.md)]

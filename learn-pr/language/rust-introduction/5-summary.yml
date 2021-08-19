@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-introduction.5-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 07/26/2021
+  author: GitHubber17
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-summary.md)]

@@ -16,7 +16,7 @@ However, because each VM is a complete virtual computer, with a separate operati
 
 Containers provide a solution to this problem. The operating system and the virtual hardware in a container are shared with the host computer. Only the software is unique to the container. The software within the container is isolated, as it is in a VM, and interacts with the operating system as it does when installed on a physical computer. But you don't need to run separate copies of the operating system and hardware for each container.
 
-![Comparing VMs and Containers](../media/2-compare-vms-containers.png)
+![Comparing VMs and Containers.](../media/2-compare-vms-containers.png)
 
 This architecture makes containers much smaller and more scalable than VMs. It also means that a container is easier and quicker to deploy or move. Containers are, however, dependent on the host operating system. For example, you can't run a Linux container on a Windows host, as you could with VMs.
 

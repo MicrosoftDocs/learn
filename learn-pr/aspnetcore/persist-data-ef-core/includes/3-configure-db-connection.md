@@ -1,7 +1,7 @@
-In this unit, you'll configure a database connection to an existing, empty *ContosoPets* Azure SQL database. The Code-First workflow will be used to create tables in the database from C# code. The [.NET Core Secret Manager](https://docs.microsoft.com/aspnet/core/security/app-secrets#secret-manager) will be used as a development-grade mechanism for securely storing secrets, such as database credentials.
+In this unit, you'll configure a database connection to an existing, empty *ContosoPets* Azure SQL database. The Code-First workflow will be used to create tables in the database from C# code. The [.NET Core Secret Manager](/aspnet/core/security/app-secrets#secret-manager) will be used as a development-grade mechanism for securely storing secrets, such as database credentials.
 
 > [!IMPORTANT]
-> Secret Manager isn't intended for production deployments. Consider using [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-overview).
+> Secret Manager isn't intended for production deployments. Consider using [Azure Key Vault](/azure/key-vault/key-vault-overview).
 
 1. Run the following command to initialize Secret Manager for use in the *:::no-loc text="ContosoPets.Api":::* project:
 

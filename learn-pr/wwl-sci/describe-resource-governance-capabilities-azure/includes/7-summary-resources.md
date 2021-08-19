@@ -2,12 +2,13 @@ You’ve seen how admins can use the resource governance capabilities in Azure t
 
 Now that you’ve completed this module, you should be able to:
 
-- Describe some of the resource governance capabilities in Azure
-- Describe the cloud adoption framework
+- Describe the capabilities of Azure resource locks.
+- Describe the function of Azure Blueprints.
+- Describe how Azure policy helps organizations assess compliance.
 
 ## Learn more
 
-- [Lock resources to prevent unexpected changes](https://docs.microsoft.com/azure/azure-resource-manager/management/lock-resources)
-- [What is Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)
-- [What is Azure Blueprints?](https://docs.microsoft.com/azure/governance/blueprints/overview)
-- [What is the Microsoft Cloud Adoption Framework for Azure?](https://docs.microsoft.com/azure/cloud-adoption-framework/overview)
+- [Lock resources to prevent unexpected changes](/azure/azure-resource-manager/management/lock-resources)
+- [What is Azure Resource Manager](/azure/azure-resource-manager/management/overview)
+- [What is Azure Blueprints?](/azure/governance/blueprints/overview)
+- [What is Azure Policy?](/azure/governance/policy/overview)

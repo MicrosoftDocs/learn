@@ -9,4 +9,4 @@ In this module, you will:
 - Explore the choices available to run Python apps
 - Use the Python interpreter to execute statements and scripts
 - Learn how to declare variables
-- Build a simple Python app that takes input and produces output
+- Build a Python app that takes input and produces output

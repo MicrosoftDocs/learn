@@ -14,7 +14,7 @@ With an active Azure subscription, your crew is ready to create an Azure Quantum
    * **Subscription:** The subscription that you want to associate with this workspace.
    * **Resource group:** The resource group that you want to assign this workspace to.
    * **Name:** The name of your workspace.
-   * **Region:** The region for the workspace. For this preview, select  **(US) West US**.
+   * **Region:** The region for the workspace. For this preview, select  **(US) West US** (a user's default region is determined by their location. In this tutorial we use West US as a default region).
    * **Storage Account**: The Azure storage account to store your jobs and results. If you don't have an existing storage account, select **Create a new storage account** and complete the necessary fields. For this preview, we recommend using the default values.
 
    ![Screenshot that shows the properties for the Azure Quantum workspace.](../media/3-azure-quantum-properties.png)
@@ -28,6 +28,10 @@ With an active Azure subscription, your crew is ready to create an Azure Quantum
 
    >[!NOTE]
    > By default, the Azure Quantum service adds the Microsoft quantum solution provider to every workspace.
+
+\
+When adding a new provider, make sure to click on the available **SKU**.
+
 
 1. After you add the providers that you want to use, select **Review + create**.
 

@@ -1,4 +1,4 @@
-![UWP and WPF logos](../media/tech-all.png)
+:::image type="icon" source="../media/tech-all.png":::
 
 Media is a major feature of any modern platform or application. Windows apps make adding media support to an application easier, requiring as little as a couple lines of code.
 
@@ -15,13 +15,13 @@ Let's get started!
 
 ::: zone pivot="uwp"
 
-![Technology logos with UWP highlighted](../media/tech-uwp.png)
+:::image type="icon" source="../media/tech-uwp.png":::
 
 #### 1. Create a project
 
 In Visual Studio, create a UWP C# project. Give the project a meaningful name that's based on this lesson, like **MediaPlayerApp.Uwp**.
 
-![Create the project](../media/new-project-uwp.png)
+![Screenshot of Visual Studio New Project dialog with highlights on the Windows Universal category, Blank App project template, and the project name.](../media/new-project-uwp.png)
 
 #### 2. The powerful `MediaElement` control
 
@@ -81,9 +81,9 @@ Run the application.
 
 When `MainPage` opens, the `MediaElement` will use the URL to the video file and start streaming the video!
 
-![Automatic streaming](../media/uwp-playingmedia-autoplay.png)
+![Screenshot of app running and showing video streaming started.](../media/uwp-playingmedia-autoplay.png)
 
-The media's source can be a URL path, a file path, a [MediaStreamSource](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.mediaelement.setmediastreamsource), or a [RandomAccessStream when you use SetSource](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.mediaelement.setsource).
+The media's source can be a URL path, a file path, a [MediaStreamSource](/uwp/api/windows.ui.xaml.controls.mediaelement.setmediastreamsource), or a [RandomAccessStream when you use SetSource](/uwp/api/windows.ui.xaml.controls.mediaelement.setsource).
 
 #### 3. Playback controls and status
 
@@ -225,15 +225,15 @@ This is why the **CurrentStateChanged** event is so useful. You can do all the U
 
 When the `Page` first loads, you'll see the text "Opening" and the `Button` is hidden:
 
-![Opening](../media/uwp-playingmedia-opening.png)
+![Annotated screenshot of app with the text "Opening" and stating MediaElement is opening the media source.](../media/uwp-playingmedia-opening.png)
 
 When the video starts playing, the text changes to "Playing." The `Button` is visible and contains the text "Pause":
 
-![Playing](../media/uwp-playingmedia-playing.png)
+![Annotated screenshot of app with the text "Playing" and a video shown, stating MediaElement is playing the media.](../media/uwp-playingmedia-playing.png)
 
 Select the `Button` to pause the video. The text will change to "Paused" and the `Button` label will change to "Play":
 
-![Paused](../media/uwp-playingmedia-paused.png)
+![Annotated screenshot of app with the text "Paused" and a video paused, stating MediaElement has paused the media.](../media/uwp-playingmedia-paused.png)
 
 To see the `MediaElementState.Buffering` state in action, try the high definition version of the video: *download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_1080p_stereo.avi*
 
@@ -400,17 +400,17 @@ The logic in the **MediaTypeComboBox_OnSelectionChanged** event handler changes 
 
 Here's a screenshot of where the audio media source.
 
-![Paused](../media/uwp-playingmedia-audiosource.png)
+![Screenshot of code showing a mediaSourceUrl variable set to an MP3 audio file and then used as a URI value for the media source.](../media/uwp-playingmedia-audiosource.png)
 
 **Deploy the app and try the different media type selections**
 
 By default, the `ComboBox` selection will be the first item, **Video**. You'll see the video load and play when the app starts, like it did in the last test.
 
-![Video selected](../media/uwp-playingmedia-videoselected.png)
+![Annotated screenshot showing the app with the Video value selected in a drop-down and stating Video is currently selected and playing.](../media/uwp-playingmedia-videoselected.png)
 
 If you select **Audio** in the `ComboBox`, the `MediaElement` **Source** will change to the MP3 source. The audio book will start playing.
 
-![Audio selected](../media/uwp-playingmedia-audioselected.png)
+![Annotated screenshot showing the app with the Audio value selected in a drop-down and stating Audio is currently selected and playing.](../media/uwp-playingmedia-audioselected.png)
 
 #### 5. UWP bonus: Built-in transport controls
 
@@ -429,22 +429,22 @@ This gives you a powerful set of automatically hiding transport controls, out of
 - Audio controls (volume and mute).
 - Timeline (current time position and total length).
 
-![Transport controls](../media/uwp-playingmedia-transportcontrols.png)
+![Annotated screenshot showing the app with the transport controls showing for playback control.](../media/uwp-playingmedia-transportcontrols.png)
 
-`MediaElement` is a powerful tool for getting great user experiences with little effort, as simple as pointing it to a media file location. It can also be configured for more advanced functionality. See the [MediaElement documentation](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.MediaElement) to learn more.
+`MediaElement` is a powerful tool for getting great user experiences with little effort, as simple as pointing it to a media file location. It can also be configured for more advanced functionality. See the [MediaElement documentation](/uwp/api/Windows.UI.Xaml.Controls.MediaElement) to learn more.
 
 
 ::: zone-end
 
 ::: zone pivot="wpf"
 
-![Technology logos with WPF highlighted](../media/tech-wpf.png)
+:::image type="icon" source="../media/tech-wpf.png":::
 
 #### 1. Create a project
 
 In Visual Studio, create a WPF C# project. Give the project a meaningful name that's based on this lesson, like **MediaPlayerApp.Wpf**.
 
-![Create the project](../media/new-project-wpf.png)
+![Screenshot of Visual Studio New Project dialog with highlights on the Windows Desktop category, WPF App project template, and the project name.](../media/new-project-wpf.png)
 
 #### 2. The powerful `MediaElement` control
 
@@ -505,7 +505,7 @@ Run the application.
 
 When `MainWindow` opens, the `MediaElement` will use the URL to the video file and start streaming the video!
 
-![Automatic streaming](../media/wpf-playingmedia-autoplay.png)
+![Screenshot of app running and showing video streaming started.](../media/wpf-playingmedia-autoplay.png)
 
 #### 3. Playback controls and status
 
@@ -682,11 +682,11 @@ The code comments explain this code in detail, but let's walk through the life c
 
 When the `Window` first opens, the video starts playing and the text changes to "Playing." The `Button` is visible and contains the text "Pause":
 
-![Playing](../media/wpf-playingmedia-playing.png)
+![Annotated screenshot of app with the text "Playing" and a video shown, stating MediaElement is playing the media.](../media/wpf-playingmedia-playing.png)
 
 Select the `Button` to pause the video. The text will change to "Paused" and the `Button` label will change to "Play":
 
-![Paused](../media/wpf-playingmedia-paused.png)
+![Annotated screenshot of app with the text "Paused" and a video paused, stating MediaElement has paused the media.](../media/wpf-playingmedia-paused.png)
 
 To see the buffering events in action, try the high definition version of the video: *download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_1080p_stereo.avi*
 
@@ -883,20 +883,20 @@ The logic in the **MediaTypeComboBox_OnSelectionChanged** event handler changes 
 
 Here's a screenshot of where the audio media source.
 
-![Paused](../media/wpf-playingmedia-audiosource.png)
+![Screenshot of code showing a mediaSourceUrl variable set to an MP3 audio file and then used as a URI value for the media source.](../media/wpf-playingmedia-audiosource.png)
 
 **Deploy the application and try the different media type selections**
 
 By default, the `ComboBox` selection will be the first item, **Video**. You'll see the video load and play when the app starts, like it did in the last test.
 
-![Video selected](../media/wpf-playingmedia-videoselected.png)
+![Annotated screenshot showing the app with the Video value selected in a drop-down and stating Video is currently selected and playing.](../media/wpf-playingmedia-videoselected.png)
 
 If you select **Audio** in the `ComboBox`, the `MediaElement` **Source** will change to the MP3 source. The audio book will start playing.
 
-![Audio selected](../media/wpf-playingmedia-audioselected.png)
+![Annotated screenshot showing the app with the Audio value selected in a drop-down and stating Audio is currently selected and playing.](../media/wpf-playingmedia-audioselected.png)
 
 
-`MediaElement` is a powerful tool for getting great user experiences with little effort, as simple as pointing it to a media file location. It can also be configured for more advanced functionality. See the [MediaElement documentation](https://docs.microsoft.com/dotnet/api/system.windows.controls.mediaelement?view=netframework-4.7.2) to learn more.
+`MediaElement` is a powerful tool for getting great user experiences with little effort, as simple as pointing it to a media file location. It can also be configured for more advanced functionality. See the [MediaElement documentation](/dotnet/api/system.windows.controls.mediaelement?view=netframework-4.7.2) to learn more.
 
 ::: zone-end
 

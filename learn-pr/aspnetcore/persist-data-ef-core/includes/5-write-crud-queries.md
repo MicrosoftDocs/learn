@@ -1,4 +1,4 @@
-There are two query composition styles used with EF Core: Language-Integrated Query (**LINQ**) and **fluent**. [LINQ](https://docs.microsoft.com/dotnet/csharp/linq/) uses a declarative SQL-like query syntax. At compile time, the LINQ statements are translated into method calls for the .NET Common Language Runtime (CLR). Fluent uses method chaining and lambda expressions. Instructions for both styles have been provided. Select your preference using the toggle above.
+There are two query composition styles used with EF Core: Language-Integrated Query (**LINQ**) and **fluent**. [LINQ](/dotnet/csharp/linq/) uses a declarative SQL-like query syntax. At compile time, the LINQ statements are translated into method calls for the .NET Common Language Runtime (CLR). Fluent uses method chaining and lambda expressions. Instructions for both styles have been provided. Select your preference using the toggle above.
 
 A business requirement for the web API is to provide limited order information to protect customer privacy from unauthorized users. The details are as follows:
 
@@ -31,8 +31,8 @@ Your team decides to implement these requirements in the *:::no-loc text="Contos
 
     In the preceding code:
 
-    * [Constructor injection](https://docs.microsoft.com/aspnet/core/mvc/controllers/dependency-injection#constructor-injection) provides an instance of `ContosoPetsContext` to the service.
-    * A read-only field is defined. Don't confuse the C# `readonly` keyword with any read/write capabilities of `ContosoPetsContext`. See [readonly (C# Reference)](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/readonly#readonly-field-example).
+    * [Constructor injection](/aspnet/core/mvc/controllers/dependency-injection#constructor-injection) provides an instance of `ContosoPetsContext` to the service.
+    * A read-only field is defined. Don't confuse the C# `readonly` keyword with any read/write capabilities of `ContosoPetsContext`. See [readonly (C# Reference)](/dotnet/csharp/language-reference/keywords/readonly#readonly-field-example).
 
 1. Replace the comment `// Add the GetAll code` with the following code. Save your changes.
 
@@ -69,7 +69,7 @@ Your team decides to implement these requirements in the *:::no-loc text="Contos
     * An asynchronous method returns a `Task<List<CustomerOrder>>`.
     * The target entity, `_context.Orders`, is referenced in the `from` clause.
     * Change tracking of entities is disabled, via `AsNoTracking`, to denote a read-only query to EF Core. The result is reduced overhead and improved performance.
-    * The `select` clause projects the result set into a `CustomerOrder` object. This practice allows us to shape the result set to satisfy the business requirements. In some cases, it may be appropriate to use the domain model without projection, however. [See this tutorial for an example](https://docs.microsoft.com/aspnet/core/tutorials/razor-pages/).
+    * The `select` clause projects the result set into a `CustomerOrder` object. This practice allows us to shape the result set to satisfy the business requirements. In some cases, it may be appropriate to use the domain model without projection, however. [See this tutorial for an example](/aspnet/core/tutorials/razor-pages/).
     * The `orderby` clause sorts the result set in a descending manner, by the order placed date.
     * Each `CustomerOrder` object's `OrderLineItems` property in the result set is populated by a nested LINQ query.
 
@@ -106,7 +106,7 @@ Your team decides to implement these requirements in the *:::no-loc text="Contos
     * The target entity, `_context.Orders`, represents all `Order` entities in the context.
     * Change tracking of entities is disabled, via `AsNoTracking`, to denote a read-only query to EF Core. The result is reduced overhead and improved performance.
     * The `OrderByDescending` method sorts the results in a descending manner, by the order placed date.
-    * The `Select` method projects the result set into a `CustomerOrder` object. This practice allows us to shape the result set to satisfy the business requirements. In some cases, it may be appropriate to use the domain model without projection, however. [See this tutorial for an example](https://docs.microsoft.com/aspnet/core/tutorials/razor-pages/).
+    * The `Select` method projects the result set into a `CustomerOrder` object. This practice allows us to shape the result set to satisfy the business requirements. In some cases, it may be appropriate to use the domain model without projection, however. [See this tutorial for an example](/aspnet/core/tutorials/razor-pages/).
     * Each `CustomerOrder` object's `OrderLineItems` property in the result set is populated by a nested query.
 
     ::: zone-end

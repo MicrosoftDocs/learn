@@ -6,5 +6,5 @@ You can now take advantage of the advanced routing and load-balancing capabiliti
 
 Visit the following documentation to learn more about Application Gateway.
 
-- [How Application Gateway Works](https://docs.microsoft.com/azure/application-gateway/how-application-gateway-works)
-- [Application gateway components](https://docs.microsoft.com/azure/application-gateway/application-gateway-components)
+- [How Application Gateway Works](/azure/application-gateway/how-application-gateway-works)
+- [Application gateway components](/azure/application-gateway/application-gateway-components)

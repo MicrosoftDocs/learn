@@ -4,8 +4,8 @@ The connector uses OAuth 2.0 for authentication with Azure and identifies users 
 
 To connect, you must use one of the following account types. Other account types aren't supported.
 
-- [Enterprise Administrator](https://docs.microsoft.com/azure/billing/billing-understand-ea-roles) account for Enterprise Agreements
-- [Billing account owner](https://docs.microsoft.com/azure/billing/billing-understand-mca-roles) for Microsoft Customer Agreements
+- [Enterprise Administrator](/azure/billing/billing-understand-ea-roles) account for Enterprise Agreements
+- [Billing account owner](/azure/billing/billing-understand-mca-roles) for Microsoft Customer Agreements
 
 You must have Power BI Desktop installed.
 

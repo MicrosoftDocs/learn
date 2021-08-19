@@ -13,4 +13,4 @@ To learn more about data security on Azure, see the following articles:
 - [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db/)
 - [Azure Storage](https://azure.microsoft.com/services/storage/)
 - [Azure Security Center](https://azure.microsoft.com/services/security-center/)
-- [Azure encryption overview](https://docs.microsoft.com/azure/security/security-azure-encryption-overview)
+- [Azure encryption overview](/azure/security/security-azure-encryption-overview)

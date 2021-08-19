@@ -59,12 +59,12 @@ There are also resource type-specific benefits, such as:
   - Support for Advanced data security using Azure Security Center and Azure Sentinel.
   - The ability to perform SQL Environment health checks using the on-demand SQL Assessment feature, which also provides best practices recommendations.
 
-- **Azure Arc enabled Kubernetes and AKS on Azure Stack HCI**
+- **Azure Arc enabled Kubernetes Service (AKS) on Azure Stack HCI**
 
-  - Enforcement of run-time policies by using Azure Policy for Kubernetes and centralized reporting of the corresponding policy compliance. This allows you, for example to enforce HTTPS ingress in Kubernetes cluster or ensure that containers listen only on allowed ports.
+  - Enforcement of run-time policies by using Azure Policy for Kubernetes and centralized reporting of the corresponding policy compliance. This allows you, for example, to enforce HTTPS ingress in a Kubernetes cluster or ensure that containers listen only on allowed ports.
   - Support for automated updates to cluster configuration by using GitOps. GitOps is the practice of automatic deployment of code residing in a Git repository. In this scenario, that code describes the desired state of Kubernetes configuration. You have the option to enforce specific GitOps-based configurations by using Azure Policy, which also provide centralized reporting of the corresponding policy compliance.
-  - Automatic upgrades and updates without any service downtime. Azure Arc enabled data services receive updates on a frequent basis including servicing patches and new features, which mirror the update management model of their Azure counterparts.
-  - Support for automatic scaling. Azure Arc enabled data services can autoscale dynamically to limits dependent on the capacity of your infrastructure. 
+  - Automatic upgrades and updates without any service downtime. Azure Arc enabled Kuberenetes Service receives updates on a frequent basis including servicing patches and new features, which mirror the update management model of their Azure counterparts.
+  - Support for automatic scaling. Azure Arc enabled Kuberenetes service can autoscale dynamically to limits dependent on the capacity of your infrastructure. 
 
 - **Azure Arc enabled data services**
 
@@ -75,13 +75,13 @@ There are also resource type-specific benefits, such as:
 
 You can learn more by visiting the following webpages:
 
-- [What is Azure Resource Manager?](https://docs.microsoft.com/azure/azure-resource-manager/management/overview/?azure-portal=true)
-- [Azure Arc overview](https://docs.microsoft.com/azure/azure-arc/overview/?azure-portal=true)
-- [What is Azure Arc enabled servers?](https://docs.microsoft.com/azure/azure-arc/servers/overview/?azure-portal=true)
-- [Connect Azure Stack HCI to Azure](https://docs.microsoft.com/azure-stack/hci/deploy/register-with-azure/?azure-portal=true)
-- [Azure Arc enabled SQL Server (preview)](https://docs.microsoft.com/sql/sql-server/azure-arc/overview?view=sql-server-ver15/?azure-portal=true)
-- [What is Azure Arc enabled Kubernetes Preview?](https://docs.microsoft.com/azure/azure-arc/kubernetes/overview/?azure-portal=true)
-- [What is Azure Kubernetes Service on Azure Stack HCI?](https://docs.microsoft.com/azure-stack/aks-hci/overview/?azure-portal=true)
-- [What are Azure Arc enabled data services (preview)?](https://docs.microsoft.com/azure/azure-arc/data/overview/?azure-portal=true)
+- [What is Azure Resource Manager?](/azure/azure-resource-manager/management/overview/?azure-portal=true)
+- [Azure Arc overview](/azure/azure-arc/overview/?azure-portal=true)
+- [What is Azure Arc enabled servers?](/azure/azure-arc/servers/overview/?azure-portal=true)
+- [Connect Azure Stack HCI to Azure](/azure-stack/hci/deploy/register-with-azure/?azure-portal=true)
+- [Azure Arc enabled SQL Server (preview)](/sql/sql-server/azure-arc/overview?view=sql-server-ver15&azure-portal=true)
+- [What is Azure Arc enabled Kubernetes?](/azure/azure-arc/kubernetes/overview/?azure-portal=true)
+- [What is Azure Kubernetes Service on Azure Stack HCI?](/azure-stack/aks-hci/overview/?azure-portal=true)
+- [What are Azure Arc enabled data services (preview)?](/azure/azure-arc/data/overview/?azure-portal=true)
 
 Choose the best response for each of the following questions. Then select "Check your answers".

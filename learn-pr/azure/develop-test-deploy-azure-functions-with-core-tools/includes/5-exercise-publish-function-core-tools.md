@@ -2,11 +2,11 @@ In this exercise, we'll create a function app in Azure and publish our project.
 
 ## Create a function app
 
-Before we can use the Core Tools to publish our code to a function app, we need to create the app in Azure. We'll use the Azure CLI in the Cloud Shell to do that.
+Before we can use the Core Tools to publish our code to a function app, we need to create the app in Azure. We'll use the Azure CLI in Azure Cloud Shell to do that.
 
-This tutorial's sandbox gives you free, temporary access to Azure, and the Azure CLI in the Cloud Shell pane on the right has already been signed in to your account and configured to use your free access.
+This tutorial's sandbox gives you free, temporary access to Azure, and the Azure CLI in Cloud Shell pane on the right has already been signed in to your account and configured to use your free access.
 
-Run the following commands in the Cloud Shell to create a function app in Azure.
+Run the following commands in Cloud Shell to create a function app in Azure.
 
 ```azurecli
 RESOURCEGROUP=<rgn>[sandbox resource group]</rgn>
@@ -40,7 +40,7 @@ Here's what these commands do:
 
 Now that our function app has been created in Azure, we can publish our project to it with the Core Tools.
 
-Run the following commands in the Cloud Shell to publish. Here, we use `cd` first to make sure we're still in the functions project folder before publishing.
+Run the following commands in Cloud Shell to publish. Here, we use `cd` first to make sure we're still in the functions project folder before publishing.
 
 ```azurecli
 cd ~/loan-wizard
@@ -48,7 +48,7 @@ func azure functionapp publish "$FUNCTIONAPP"
 ```
 
 > [!NOTE]
-> If this command displays an error that it can't find your app, wait a moment and try again. New function apps take a few seconds to become discoverable by the Core Tools after they're created. You can also try adding `--force` to update the function app version mismatch.
+> If this command displays an error that it can't find your app, wait two minutes and try again. New function apps take a few seconds to become discoverable by the Core Tools after they're created. You can also try appending `--force` to the end of the command to update the function app version mismatch.
 
 Unlike the previous exercise, where you temporarily hosted your function locally from the Core Tools, your function is now live on the web and will remain globally available until the sandbox for this tutorial expires.
 

@@ -40,7 +40,7 @@ Monitor the AKS cluster's health by following these steps:
 1. Select the **Live** toggle button to enable live monitoring.
 1. After waiting about 30 seconds, hover over the horizontal **Running** line in the **Active pod count** chart.
 
-    :::image type="content" source="../media/6-azure-monitor-containers/active-pod-count.png" alt-text="Active pod count chart for the AKS cluster" border="true" lightbox="../media/6-azure-monitor-containers/active-pod-count.png":::
+    :::image type="content" source="../media/6-azure-monitor-containers/active-pod-count.png" alt-text="Active pod count chart for the AKS cluster." border="true" lightbox="../media/6-azure-monitor-containers/active-pod-count.png":::
 
     In the preceding screenshot, notice there are 27 pods in a running state.
 1. Back in the command shell, run the following command to list all running pods:
@@ -214,7 +214,7 @@ To troubleshoot a production issue, you've been asked to monitor requests for th
 1. In the **Results** panel, note the value of the `Val` column. This value represents the number of requests to `/catalog-api/api/v1/catalog/items`.
 1. Select the chevron to expand the row. Select the chevron next to **Tags** to expand the `Tags` column. Notice the `endpoint` and `method` tags that were added by your changes in the previous section.
 
-    :::image type="content" source="../media/6-azure-monitor-containers/expanded-log.png" alt-text="The expanded log entry" border="true" lightbox="../media/6-azure-monitor-containers/expanded-log.png":::
+    :::image type="content" source="../media/6-azure-monitor-containers/expanded-log.png" alt-text="The expanded log entry." border="true" lightbox="../media/6-azure-monitor-containers/expanded-log.png":::
 
 1. In the storefront app, browse the catalog items. Refresh the page to force a request to the catalog service.
 1. Return to the Azure portal. After a couple minutes, select the **Run** button. Notice the count in the `Val` column reflects your activity browsing the catalog items.

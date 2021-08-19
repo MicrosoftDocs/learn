@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.machinelearning.test-machine-learning-models
+metadata:
+  title: Refine and test machine learning models
+  description: When we think of machine learning, we often focus on the training process. A small amount of preparation before this process can not only speed up and improve learning but also give us some confidence about how well our models will work when faced with data we have never seen before.
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Refine and test machine learning models
+summary: When we think of machine learning, we often focus on the training process. A small amount of preparation before this process can not only speed up and improve learning but also give us some confidence about how well our models will work when faced with data we have never seen before.
+abstract: | 
+  In this module, you will:
+  - Define feature normalization
+  - Create and work with test datasets
+  - Articulate how testing models can both improve and harm training
+prerequisites: Familiarity with machine learning models
+iconUrl: /learn/achievements/machine-learning/test-machine-learning-models.svg
+levels: 
+- beginner
+roles: 
+- ai-engineer
+- data-scientist
+- student
+products: 
+- azure
+units: 
+- learn.machinelearning.test-machine-learning-models.introduction
+- learn.machinelearning.test-machine-learning-models.normalization-and-standardization
+- learn.machinelearning.test-machine-learning-models.exercise-feature-normalization
+- learn.machinelearning.test-machine-learning-models.test-training-datasets
+- learn.machinelearning.test-machine-learning-models.exercise-test-training-datasets
+- learn.machinelearning.test-machine-learning-models.nuance-tests
+- learn.machinelearning.test-machine-learning-models.exercise-test-set-nuances
+- learn.machinelearning.test-machine-learning-models.knowledge-check
+- learn.machinelearning.test-machine-learning-models.summary
+badge: 
+  uid: learn.machinelearning.test-machine-learning-models.badge #add the uid for your achievement badge.

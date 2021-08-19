@@ -139,7 +139,7 @@ Describe possible investigatory and remediation steps for the following scenario
        - Is the *Deny All* NSG rule in effect
        - Verify whether any of the rules are blocking the traffic
   
-Also summarize the current limitations of Azure Load Balancer - see [limitations](https://docs.microsoft.com/azure/load-balancer/load-balancer-overview#limitations). In these cases, it may be necessary to adopt and alternative approach, such as using a proxy or [Application Gateway](https://docs.microsoft.com/azure/application-gateway/application-gateway-introduction)
+Also summarize the current limitations of Azure Load Balancer - see [limitations](/azure/load-balancer/load-balancer-overview#limitations). In these cases, it may be necessary to adopt and alternative approach, such as using a proxy or [Application Gateway](/azure/application-gateway/application-gateway-introduction)
 
 Add three knowledge check questions
 
@@ -187,7 +187,7 @@ Remove any resources created in Sandbox.
 
 ## Resources
 
-- [Troubleshoot Azure Load Balancer](https://docs.microsoft.com/azure/load-balancer/load-balancer-troubleshoot)
-- [Metrics and health diagnostics for Standard Load Balancer](https://docs.microsoft.com/azure/load-balancer/load-balancer-standard-diagnostics)
-- [Load Balancer health probes](https://docs.microsoft.com/azure/load-balancer/load-balancer-custom-probe-overview)
-- [Quickstart: Create a Standard Load Balancer to load balance VMs using the Azure portal](https://docs.microsoft.com/azure/load-balancer/quickstart-load-balancer-standard-public-portal)
+- [Troubleshoot Azure Load Balancer](/azure/load-balancer/load-balancer-troubleshoot)
+- [Metrics and health diagnostics for Standard Load Balancer](/azure/load-balancer/load-balancer-standard-diagnostics)
+- [Load Balancer health probes](/azure/load-balancer/load-balancer-custom-probe-overview)
+- [Quickstart: Create a Standard Load Balancer to load balance VMs using the Azure portal](/azure/load-balancer/quickstart-load-balancer-standard-public-portal)

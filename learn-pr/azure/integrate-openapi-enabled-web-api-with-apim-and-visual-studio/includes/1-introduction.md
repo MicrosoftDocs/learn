@@ -9,5 +9,5 @@ The professional development team at VanArsdel, led by Kiana, have built several
 Throughout this module, you'll explore how Visual Studio can offer frictionless development experiences for web API application development from code to deploy.
 
 
-[az appsvc]: https://docs.microsoft.com/azure/app-service/overview
-[az apim]: https://docs.microsoft.com/azure/api-management/api-management-key-concepts
+[az appsvc]: /azure/app-service/overview
+[az apim]: /azure/api-management/api-management-key-concepts

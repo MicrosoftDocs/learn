@@ -63,7 +63,7 @@ Your first task is to create a scale set. You'll configure it to run a web serve
     > [!NOTE]
     > The `custom-data` flag specifies that the VM configuration should use the settings in the *cloud-init.yaml* file after the VM has been created. You can use a cloud-init file to install additional packages, configure security, and write to files when the machine is first installed. 
     >
-    > For more information, see [Cloud-init support for VMs in Azure](https://docs.microsoft.com/azure/virtual-machines/linux/using-cloud-init).
+    > For more information, see [Cloud-init support for VMs in Azure](/azure/virtual-machines/linux/using-cloud-init).
 
 ## Configure the virtual machine scale set
 

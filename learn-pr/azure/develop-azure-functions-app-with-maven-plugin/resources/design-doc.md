@@ -19,7 +19,7 @@ Develop your Azure Functions App by using Maven Plugin for Azure Functions
 ## Product(s)
 
 - [Azure Functions](https://azure.microsoft.com/services/functions/)
-- [Maven Plugin for Azure Functions](https://docs.microsoft.com/java/api/overview/azure/maven/azure-functions-maven-plugin/readme)
+- [Maven Plugin for Azure Functions](/java/api/overview/azure/maven/azure-functions-maven-plugin/readme)
 
 ## Prerequisites
 

@@ -24,7 +24,7 @@ Most GitHub repositories include a file named *README.md*, which is a Markdown f
 
 Here's an example build badge:
 
-![The build badge on GitHub](../media/6-final-build-badge.png)
+:::image type="content" border="false" source="../media/6-final-build-badge.png" alt-text="A screenshot of GitHub showing the build badge. The status shows that the most recent build succeeded.":::
 
 For this exercise, you make your build badge visible to everyone. This might not be a good idea for your private projects since your build information will be made available to the public.
 
@@ -35,11 +35,12 @@ To make sure your build badge is visible:
 1. Under **Pipelines**, select **Settings**.
 1. Turn off **Disable anonymous access to badges**.
 
-    ![Azure DevOps showing how to disable anonymous access to badges](../media/6-devops-disable-anonymous-badge-access.png)
+    :::image type="content" source="../media/6-devops-disable-anonymous-badge-access.png" alt-text="A screenshot Azure DevOps showing how to disable anonymous access to badges.":::
 
 You need to make a similar change to your project:
 
-1. Navigate to **Project settings** in the left pane of your Azure DevOps project.
+1. Go to your project.
+1. Navigate to **Project settings** from the bottom corner.
 1. Under **Pipelines**, select **Settings**.
 1. Turn off **Disable anonymous access to badges**.
 
@@ -50,42 +51,42 @@ Up until now, you created Git branches locally to make changes to the _Space Gam
 1. In Azure DevOps, in the left pane, select **Pipelines**, and then select your pipeline.
 1. Select the ellipsis (...) in the upper right, and then select **Status badge**.
 
-    ![Azure Pipelines showing the options menu to set the build badge](../media/6-pipeline-options-menu.png)
+    :::image type="content" source="../media/6-pipeline-options-menu.png" alt-text="A screenshot of Azure Pipelines showing the options menu to set the build badge.":::
 
 1. Under **Sample Markdown**, select the **Copy** button to copy the Markdown code to the clipboard.
 1. In GitHub, go to your project.
-1. Make sure you're on the `master` branch. In the files area, open the *README.md* file.
+1. Make sure you're on the `main` branch. In the files area, open the *README.md* file.
 1. Select the pencil icon to open the file in the editor.
 1. At the top of the page, add a blank line, and then paste the contents of the clipboard.
-1. Select the **Preview changes** tab to see your proposed changes.
+1. Select the **Preview** tab to see your proposed changes.
 
     GitHub renders the Markdown file and shows you the build badge.
 
-    ![Previewing the build badge on GitHub](../media/6-github-preview-changes.png)
+    :::image type="content" source="../media/6-github-preview-changes.png" alt-text="A screenshot of GitHub showing a preview of the build badge.":::
 
-## Commit your changes to master
+## Commit your changes to main
 
-In this section, you commit your changes to the `master` branch on GitHub.
+In this section, you commit your changes to the `main` branch on GitHub.
 
 1. Scroll to the bottom of the page and specify a commit message, such as "Add build badge".
 
-    ![Specifying commit change details on GitHub](../media/6-github-commit-changes.png)
+    :::image type="content" source="../media/6-github-commit-changes.png" alt-text="A screenshot of GitHub showing the commit message.":::
 
-1. Leave the **Commit directly to the master branch** option selected, and then select **Commit changes** to commit your changes to the `master` branch.
+1. Leave the **Commit directly to the `main` branch** option selected, and then select **Commit changes** to commit your changes to the `main` branch.
 
     Your badge is displayed on the *README.md* page.
 
-    ![The build badge on GitHub](../media/6-final-build-badge.png)
+    :::image type="content" border="false" source="../media/6-final-build-badge.png" alt-text="The final build badge as it appears on the README page.":::
 
     This process is a more basic way to merge code into GitHub. Instead of committing directly, you could have created a pull request with your changes for others to review.
 
-    In practice, you would switch to the `master` branch and pull the latest changes from GitHub the next time you need to add a feature or address a bug.
+    In practice, you would switch to the `main` branch and pull the latest changes from GitHub the next time you need to add a feature or address a bug.
 
-**Andy:** Mara, you just made a change directly to `master`. Why didn't you use the flow you taught me? You know, with the feature branches.
+**Andy:** Mara, you just made a change directly to `main`. Why didn't you use the flow you taught me? You know, with the feature branches.
 
-**Mara:** We could have done that. But sometimes when people are changing only the README file or other documentation files, they commit to `master` right then. Plus, you and I were able to verify the work together before we merged the change.
+**Mara:** We could have done that. But sometimes when people are changing only the README file or other documentation files, they commit to `main` right then. Plus, you and I were able to verify the work together before we merged the change.
 
-But this brings up a good point. If we can all just commit to `master` when we want to, we could be letting problems in the code slip into our `master` branch.
+But this brings up a good point. If we can all just commit to `main` when we want to, we could be letting problems in the code slip into our `main` branch.
 
 **Andy:** I've been meaning to talk to you about that.
 

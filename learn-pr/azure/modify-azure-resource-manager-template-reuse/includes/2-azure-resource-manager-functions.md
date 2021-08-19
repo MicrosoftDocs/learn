@@ -1,6 +1,6 @@
 In this scenario, you want to make deploying your Azure Resource Manager (ARM) template to different environments as easy as possible. One of the areas of contention is coming up with a unique name for the Azure storage account.
 
-To solve this problem, you decide to create an expression by using [ARM template functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions?azure-portal=true).
+To solve this problem, you decide to create an expression by using [ARM template functions](/azure/azure-resource-manager/templates/template-functions?azure-portal=true).
 
 ## What are ARM template functions?
 
@@ -36,7 +36,7 @@ There are a few rules to follow when you work with functions:
    "objectValue": "[json('null')]"
    ```
 
-Resource Manager provides several [ARM template functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions?azure-portal=true) for you. The functions are listed in groups based on their type:
+Resource Manager provides several [ARM template functions](/azure/azure-resource-manager/templates/template-functions?azure-portal=true) for you. The functions are listed in groups based on their type:
 
 - **Array functions** for working with arrays. For example, ```first``` and ```last```.
 - **Comparison functions** for making comparisons in your templates. For example, ```equals``` and ```greater```.
@@ -58,13 +58,13 @@ You can use several template functions together to create your own expressions. 
 
 Let's walk through this expression.
 
-Starting with [concat](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions-string#concat?azure-portal=true), this function takes any number of arguments, and can accept either strings or arrays for the parameters. Here, you use a literal string `"Storage"` and concatenate it with the result of another function, [uniqueString](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions-string#uniquestring?azure-portal=true). The `uniqueString` function creates a deterministic hash string based on the parameters. In this expression, you create a hash of the current resource group ID by using another function, [resourceGroup](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions-resource#resourcegroup?azure-portal=true).
+Starting with [concat](/azure/azure-resource-manager/templates/template-functions-string#concat?azure-portal=true), this function takes any number of arguments, and can accept either strings or arrays for the parameters. Here, you use a literal string `"Storage"` and concatenate it with the result of another function, [uniqueString](/azure/azure-resource-manager/templates/template-functions-string#uniquestring?azure-portal=true). The `uniqueString` function creates a deterministic hash string based on the parameters. In this expression, you create a hash of the current resource group ID by using another function, [resourceGroup](/azure/azure-resource-manager/templates/template-functions-resource#resourcegroup?azure-portal=true).
 
 Here's the output from what we've discussed so far:
 
 :::image type="content" source="../media/2-storage-account-name-function.png" alt-text="Picture of a string created by concatenating the word Storage with a 13-character hash that contains both uppercase and lowercase letters." border="false":::
 
-To comply with the naming conventions, you need this string to be all lowercase. Here, you add the [toLower](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions-string#tolower?azure-portal=true) function as the outer function.
+To comply with the naming conventions, you need this string to be all lowercase. Here, you add the [toLower](/azure/azure-resource-manager/templates/template-functions-string#tolower?azure-portal=true) function as the outer function.
 
 Here's what the resulting string looks like:
 

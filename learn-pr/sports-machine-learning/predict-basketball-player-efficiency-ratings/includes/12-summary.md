@@ -1,4 +1,4 @@
-Code is only as useful as what it's used for. Coding for data science discoveries is becoming more prominent in all aspects of the technical world. It's critical in almost every industry. Maybe you're gathering data about the [Moon to drive space exploration decisions](https://aka.ms/LearnInSpace?azure-portal=true). Or maybe you're being inspired by basketball champion LeBron James to use data to learn more about the sport. Whatever you pursue, you can develop new skills to help you explore what *you* are passionate about.
+Code is only as useful as what it's used for. Coding for data science discoveries is becoming more prominent in all aspects of the technical world. It's critical in almost every industry. Maybe you're gathering data about the [Moon to drive space exploration decisions](/learn/topics/nasa?azure-portal=true&WT.mc_id=LearnDrG-c9-niner). Or maybe you're being inspired by basketball champion LeBron James to use data to learn more about the sport. Whatever you pursue, you can develop new skills to help you explore what *you* are passionate about.
 
 *Space Jam: A New Legacy* isn't just a film about basketball. Through LeBron and the Tune Squad characters, it also explores ways in which people can combine their passions to reach a greater outcome. LeBron is clearly a leader in the world of basketball. He succeeded by learning from failures, persisting through challenging times, and practicing. These skills aren't unique to basketball. They're just as critical for learners starting their coding journey. 
 
@@ -13,6 +13,6 @@ You can use the `player_data_final.csv` file that you created to determine the b
 
 And don't forget to watch [_Space Jam: A New Legacy_](https://www.facebook.com/SpaceJamMovie?azure-portal=true) coming Summer 2021!
 
-:::image type="content" source="../media/space-jam-end-card.png" alt-text="Logo for SPACE JAM: A NEW LEGACY.":::
+:::image type="content" source="../media/space-jam-a-new-legacy-end-card.png" alt-text="Logo for SPACE JAM: A NEW LEGACY.":::
 
-© 2020 Warner Bros. Ent. All Rights Reserved.
+© 2021 Warner Bros. Ent. All Rights Reserved.

@@ -11,7 +11,7 @@
         CustomerId < 900000
     ```
 
-2. DELETE is a fully logged operation. If you need to delete a large amount of data in a table or a partition, it often makes more sense to SELECT the data you wish to keep, which can be run as a minimally logged operation. To select the data, create a new table with [CTAS](https://docs.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-ctas). Once created, use RENAME to swap out your old table with the newly created table. Use the following CTAS query to isolate the transaction items that should be kept:
+2. DELETE is a fully logged operation. If you need to delete a large amount of data in a table or a partition, it often makes more sense to SELECT the data you wish to keep, which can be run as a minimally logged operation. To select the data, create a new table with [CTAS](/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-develop-ctas). Once created, use RENAME to swap out your old table with the newly created table. Use the following CTAS query to isolate the transaction items that should be kept:
 
     ```sql
     CREATE TABLE [wwi_perf].[Sale_Hash_v2]

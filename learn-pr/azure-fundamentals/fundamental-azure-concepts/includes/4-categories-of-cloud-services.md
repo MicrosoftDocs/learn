@@ -123,7 +123,7 @@ SaaS provides the same benefits as IaaS, but again there are some additional ben
 
 :::row:::
   :::column:::
-    **IaaS**
+     **IaaS**
   :::column-end:::
   :::column:::
     **PaaS**

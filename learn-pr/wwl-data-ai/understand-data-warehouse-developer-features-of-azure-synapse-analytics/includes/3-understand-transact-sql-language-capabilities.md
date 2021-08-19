@@ -9,7 +9,7 @@ The Azure Synapse SQL query language supports different features based on the re
 |UPDATE statement|Yes|No|
 |DELETE statement|Yes|No|
 |MERGE statement|No|No|
-|Transactions|Yes|No|
+|Transactions|Yes|Yes|
 |Labels|Yes|No|
 |Data load|Yes|No|
 |Data export|Yes, using CETAS|Yes, using CETAS|

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.manage-changes-bicep-code-git.exercise-initialize-git-repository
+title: Exercise - Initialize a Git repository
+metadata:
+  unitType: exercise
+  title: Exercise - Initialize a Git repository
+  description: Learn how to install Git and initialize a Git repository to store your Bicep code.
+  ms.date: 07/08/2021
+  author: johndowns
+  ms.author: jodowns
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-exercise-initialize-git-repository.md)]

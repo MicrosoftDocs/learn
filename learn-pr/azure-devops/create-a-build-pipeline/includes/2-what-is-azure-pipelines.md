@@ -30,7 +30,7 @@ And Azure Pipelines works with many different languages and app types. If we wan
 
 Continuous integration (CI) is the process of automating the build and testing of code every time a team member commits changes to version control.
 
-CI encourages developers to share their code and unit tests by merging their changes into a shared version control repository after every small task completion. Committing code triggers an automated build system to grab the latest code from the shared repository and to build, test, and validate the full master branch (also known as the trunk or main).
+CI encourages developers to share their code and unit tests by merging their changes into a shared version control repository after every small task completion. Committing code triggers an automated build system to grab the latest code from the shared repository and to build, test, and validate the full main branch (also known as the trunk).
 
 In this short video, Abel Wang, Cloud Advocate at Microsoft, explains the concept of continuous integration.
 
@@ -44,17 +44,17 @@ In this short video, Abel Wang, Cloud Advocate at Microsoft, explains the concep
 
 Mara moves to the whiteboard and draws the pipeline.
 
-![A hand-drawn illustration of a CI pipeline](../media/2-whiteboard-pipeline-with-callouts.png)
+:::image type="content" source="../media/2-whiteboard-pipeline-with-callouts.png" alt-text="A hand-drawn illustration of a CI pipeline. The Build, Test, and Verify stages act on code. The build artifact is the output.":::
 
 This is my CI pipeline. *CI* is the process of automating the build and testing of code every time a team member commits changes to version control. I know we don't do automated testing yet, but give it time.
 
-A *pipeline* defines the continuous integration process for the app. It's made up of steps called *tasks* ![Callout 1](../../shared/media/callout-01.png). It can be thought of as a script that defines how your build, test, and deployment steps are run. I'm going to try to map our scripts to tasks.
+A *pipeline* defines the continuous integration process for the app. It's made up of steps called *tasks* :::image type="icon" source="../../shared/media/callout-01.png":::. It can be thought of as a script that defines how your build, test, and deployment steps are run. I'm going to try to map our scripts to tasks.
 
-The pipeline runs when you submit code changes ![Callout 2](../../shared/media/callout-02.png). You can configure the pipeline to run automatically, or you can run it manually. You connect your pipeline to a source repository like GitHub, Bitbucket, or Subversion. We'll use GitHub. One of our tasks for this sprint is to start using GitHub.
+The pipeline runs when you submit code changes :::image type="icon" source="../../shared/media/callout-02.png":::. You can configure the pipeline to run automatically, or you can run it manually. You connect your pipeline to a source repository like GitHub, Bitbucket, or Subversion. We'll use GitHub. One of our tasks for this sprint is to start using GitHub.
 
-A *build agent* ![Callout 3](../../shared/media/callout-03.png) builds or deploys the code. When your build or deployment runs, the system begins one or more jobs. An agent is installable software that runs one build or deployment job at a time. Because we're using Azure Pipelines, we can use a Microsoft-hosted agent. With Microsoft-hosted agents, maintenance and upgrades are taken care of for us. Each time we run a pipeline, we'll get a fresh virtual machine. There are six virtual machine images to choose from, including Ubuntu 18.04, which is what we use.
+A *build agent* :::image type="icon" source="../../shared/media/callout-03.png"::: builds or deploys the code. When your build or deployment runs, the system begins one or more jobs. An agent is installable software that runs one build or deployment job at a time. Because we're using Azure Pipelines, we can use a Microsoft-hosted agent. With Microsoft-hosted agents, maintenance and upgrades are taken care of for us. Each time we run a pipeline, we'll get a fresh virtual machine. There are several virtual machine images to choose from, including Ubuntu 20.04, which is what we use.
 
-The final product of the pipeline is a *build artifact* ![Callout 4](../../shared/media/callout-04.png). Think of an artifact as the smallest compiled unit that we need to test or deploy the app. For example, an artifact can be:
+The final product of the pipeline is a *build artifact* :::image type="icon" source="../../shared/media/callout-04.png":::. Think of an artifact as the smallest compiled unit that we need to test or deploy the app. For example, an artifact can be:
 
 * A Java or .NET app packaged into a .jar or .zip file.
 * A C++ or JavaScript library.
@@ -116,7 +116,7 @@ You can run concurrent pipelines (also called parallel jobs) in Azure Pipelines.
 
 #### Microsoft-hosted CI/CD
 
-If you want to run your builds and releases on machines that Microsoft manages, use Microsoft-hosted parallel jobs. Your jobs run on the pool of hosted agents. Microsoft provides a free tier of service by default for every organization. [Consult the Azure DevOps documentation](https://docs.microsoft.com/azure/devops/pipelines/licensing/concurrent-jobs?azure-portal=true) to see the criteria.
+If you want to run your builds and releases on machines that Microsoft manages, use Microsoft-hosted parallel jobs. Your jobs run on the pool of hosted agents. Microsoft provides a free tier of service by default for every organization. [Consult the Azure DevOps documentation](/azure/devops/pipelines/licensing/concurrent-jobs?azure-portal=true) to see the criteria.
 
 If you want Azure Pipelines to orchestrate your builds and releases, but use your own machines to run them, use self-hosted parallel jobs. You start by deploying agents on your machines. You can register any number of these self-hosted agents in your organization. Microsoft charges based on the number of jobs you want to run at a time, not the number of agents registered.
 

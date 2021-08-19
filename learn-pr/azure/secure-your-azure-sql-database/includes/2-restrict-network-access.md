@@ -24,7 +24,7 @@ These rules enable clients to access your entire Azure SQL server, that is, all 
 
 The **Allow access to Azure services** rule allows services within Azure to connect to your Azure SQL Database. When enabled, this setting allows communications from all Azure public IP addresses. This includes all Azure Platform as a Service (PaaS) services, such as Azure App Service and Azure Container Service, as well as Azure VMs that have outbound Internet access. This rule can be configured through the **ON/OFF** option in the firewall pane in the portal, or by an IP rule that has 0.0.0.0 as the start and end IP addresses.
 
-![Allow access to Azure services network diagram](../media/2-allow-azure-services.png)
+![Allow access to Azure services network diagram.](../media/2-allow-azure-services.png)
 
 This rule is used when you have applications running on PaaS services in Azure, such as Azure Logic Apps or Azure Functions, that need to access your Azure SQL Database. Many of these services don't have a static IP address, so this rule is needed to ensure they are able to connect to the database.
 
@@ -33,13 +33,13 @@ This rule is used when you have applications running on PaaS services in Azure, 
 
 **IP address rules** are rules that are based on specific public IP address ranges. IP addresses connecting from an allowed public IP range will be permitted to connect to the database.
 
-![IP address rule network diagram](../media/2-server-ip-rule-1.png)
+![IP address rule network diagram.](../media/2-server-ip-rule-1.png)
 
 These rules can be used when you have a static public IP address that needs to access your database.
 
 **Virtual network rules** allow you to explicitly allow connection from specified subnets inside one or more Azure virtual networks (VNets). Virtual network rules can provide greater access control to your databases and can be a preferred option depending on your scenario. Since Azure VNet address spaces are private, you can effectively eliminate exposure to public IP addresses and secure connectivity to those addresses you control.
 
-![VNet rule network diagram](../media/2-vnet-rule.png)
+![VNet rule network diagram.](../media/2-vnet-rule.png)
 
 Virtual network rules are used when you have Azure VMs that need to access your database.
 
@@ -49,7 +49,7 @@ For server-level rules, all of the above can be created and manipulated through 
 
 These rules allow access to an individual database on a logical server and are stored in the database itself. For database-level rules, only **IP address rules** can be configured. They function the same as when applied at the server-level, but are scoped to the database only.
 
-![Database IP address rule network diagram](../media/2-db-ip-rule-1.png)
+![Database IP address rule network diagram.](../media/2-db-ip-rule-1.png)
 
 The benefits of database-level rules are their portability. When replicating a database to another server, the database-level rules will be replicated, since they are stored in the database itself.
 
@@ -63,7 +63,7 @@ Whenever possible, as a best practice, use database-level IP firewall rules to e
 
 Let's take a look at how these work in practice, and how you can secure network access to only allow what is necessary. Recall that we created an Azure SQL Database logical server, a database, and the _appServer_ Linux VM acting as an application server. This scenario is often seen when a database has been migrated to Azure SQL Database and resources inside of a virtual network need to access it. The firewall feature of Azure SQL Database can be used in many scenarios, but this is an example that has practical applicability and demonstrates how each of the rules functions.
 
-Let's go through the firewall settings and see how they work. We'll use both the Cloud Shell and the portal for these exercises.
+Let's go through the firewall settings and see how they work. We'll use both the portal and Cloud Shell for these exercises.
 
 The database we created currently does not allow access from any connections. This is by design based on the commands that we ran to create the logical server and database. Let's confirm this.
 
@@ -131,7 +131,7 @@ EXECUTE sp_set_database_firewall_rule N'My Firewall Rule', '40.112.128.214', '40
     > When running T-SQL commands such as the following, the `GO` on the second line may not copy through to the `sqlcmd` prompt, so you will likely need to type this out. The T-SQL command won't execute without it, so make sure to run the `GO` command.
 
     ```sql
-    EXECUTE sp_set_database_firewall_rule N'Allow appServer database level rule', '[From IP Address]', '[To IP Address]';
+    EXECUTE sp_set_database_firewall_rule N'My Firewall Rule', '[From IP Address]', '[To IP Address]';
     GO
     ```
 
@@ -162,7 +162,7 @@ Let's now use a server-level IP rule to restrict the systems that can connect.
 1. While still at the sqlcmd prompt, run the following command to delete the database-level IP address rule.
 
     ```sql
-    EXECUTE sp_delete_database_firewall_rule N'Allow appServer database level rule';
+    EXECUTE sp_delete_database_firewall_rule N'My Firewall Rule';
     GO
     ```
 

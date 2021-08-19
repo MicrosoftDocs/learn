@@ -21,7 +21,7 @@ Before you start this module, you need to have Visual Studio installed. If you'v
 
 1. If the **Update** button appears, as in the following image, select it. Visual Studio will download and install any updates.
 
-![Visual Studio Installer](../media/vsupdateimage.png)
+![Visual Studio Installer.](../media/vsupdateimage.png)
 
 ## Some definitions
 
@@ -41,7 +41,7 @@ IntelliSense is a set of features that displays information about your code dire
 
 Here's a look at the Visual Studio UI with a solution open:
 
-![The Visual Studio UI](../media/visualstudioide.png)
+![The Visual Studio UI.](../media/visualstudioide.png)
 
 *Solution Explorer* (top right) lets you view, navigate, and manage your code files. Solution Explorer can help organize your code by grouping the files into solutions and projects.
 
@@ -53,7 +53,7 @@ The *Output window* (bottom center) is where Visual Studio sends notifications l
 
 The previous image shows C# code, but you can also design the appearance of your app in the editor window. If you select a XAML file (for example, MainPage.xaml), the editor shows something like this:
 
-![Visual Studio Design view](../media/visualstudiodesign.png)
+![Visual Studio Design view.](../media/visualstudiodesign.png)
 
 This view shows the preview of your UI in the upper window, and the XAML used to define it underneath. You can switch between views by using the arrow button in the border between the Design and Code views near the words **Design** and **XAML**. When you make changes in the XAML file, the preview changes, and vice versa.
 
@@ -70,11 +70,11 @@ Now that you have Visual Studio ready and waiting to go, let's quickly create a 
 
 2. Create a new project by selecting  **File** > **New** > **Project**.
 
-   ![The Visual Studio new project menu option](../media/vs-file-new-project.png)
+   ![The Visual Studio new project menu option.](../media/vs-file-new-project.png)
 
 3. In the list of project types, select **Installed** > **Visual C#** > **Windows Universal** > **Blank App (Universal Windows)**.
 
-   ![Visual Studio project types](../media/vs-new-project-types.png)
+   ![Visual Studio project types.](../media/vs-new-project-types.png)
 
 4. Enter **Hello World** for the name of your app. You don't need to change the **Location** and **Solution name** default values.
 
@@ -82,16 +82,16 @@ Now that you have Visual Studio ready and waiting to go, let's quickly create a 
 
 6. You'll be asked to set a **Target version** and **Minimum version** for your app. For the exercises to come, you need to set the **Minimum version** to **Windows 10, version 1803** or later.
 
-  ![ Visual Studio versions](../media/vs-select-version.png)
+  ![ Visual Studio versions.](../media/vs-select-version.png)
 
    Your project will be created. The project won't be entirely empty: some files and settings are created for you.
 
 7. Make sure your settings are the same as those shown in the following screenshot, and then select the green **Run** button in the middle of the menu bar to build and run your app (or select F5).
 
-   ![ Visual Studio build](../media/vs-build.png)
+   ![ Visual Studio build.](../media/vs-build.png)
 
 8. Soon you'll see an empty window. This is your app running. (The small black rectangle containing icons at the top of your app's window is added by Visual Studio to help debugging. It won't be in your final app.)
 
-   ![ Visual Studio build](../media/vs-running.png)
+   ![ Visual Studio build.](../media/vs-running.png)
 
 10. Stop your app by selecting the red square on the menu bar.

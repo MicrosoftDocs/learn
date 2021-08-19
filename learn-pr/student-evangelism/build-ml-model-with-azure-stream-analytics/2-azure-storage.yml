@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create a storage account and deploy virtual cameras
   description: Create a storage account to store wildlife photos and deploy virtual cameras to upload photos.
   ms.date: 12/21/2020
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

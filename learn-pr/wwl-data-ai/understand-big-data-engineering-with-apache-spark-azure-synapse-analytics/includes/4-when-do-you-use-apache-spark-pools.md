@@ -26,4 +26,3 @@ HDI is an implementation by Microsoft of open-source Apache Spark, managed on th
 Azure Databricks is a managed Apache Spark-as-a-Service propriety solution that provides an end-to-end data engineering/data science platform. Azure Databricks is of interest for many data engineers and data scientists working on big data projects today. It provides the platform in which you can create and manage the big data/data science projects all on one platform.
 
 These services are not mutually exclusive. It is common to find customers who use a combination of these technologies working together.
-

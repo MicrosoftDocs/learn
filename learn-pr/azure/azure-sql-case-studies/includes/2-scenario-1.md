@@ -53,7 +53,7 @@ Wherever possible, the customer wants to eliminate hard-coding passwords or secr
 1. List the possible technologies and processes that might potentially be used in a solution. Feel free to adapt the scenario to have more information where you want clarity. You can make assumptions in this case.
     
     > [!TIP]
-    > For the security challenges, you might consider using the [playbook for Azure SQL security best practices](https://docs.microsoft.com/azure/sql-database/sql-database-security-best-practice?azure-portal=true).  
+    > For the security challenges, you might consider using the [playbook for Azure SQL security best practices](/azure/sql-database/sql-database-security-best-practice?azure-portal=true).  
 1. By using a decision matrix or some other decision process, select technologies and processes that will make up your preliminary solution.
 1. Take some notes that present your project goals and constraints, as well as the recommended solution design.
 

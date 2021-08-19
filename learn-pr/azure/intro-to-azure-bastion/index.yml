@@ -7,7 +7,8 @@ metadata:
   ms.date: 03/12/2021             
   author: micrum
   ms.author: micrum
-  ms.topic: interactive-tutorial  
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure  
 title: Introduction to Azure Bastion
 summary: Describe how Microsoft Azure can help to reduce the risk of unauthorized access to your cloud-based virtual machines (VMs). Evaluate whether Azure Bastion can help secure administrative access to your VMs.
 abstract: |

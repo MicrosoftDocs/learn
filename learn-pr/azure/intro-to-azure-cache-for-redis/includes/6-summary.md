@@ -12,5 +12,5 @@ You also determined how Azure Cache for Redis provides critical low-latency and 
 
 ## References
 
-- [Best practices for Azure Cache for Redis](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-best-practices?azure-portal=true).
-- [Choosing the right tier](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview#choosing-the-right-tier?azure-portal=true).
+- [Best practices for Azure Cache for Redis](/azure/azure-cache-for-redis/cache-best-practices?azure-portal=true).
+- [Choosing the right tier](/azure/azure-cache-for-redis/cache-overview#choosing-the-right-tier?azure-portal=true).

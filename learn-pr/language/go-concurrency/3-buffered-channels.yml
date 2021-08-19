@@ -5,7 +5,7 @@ metadata:
   description: Understand how buffered channels behave like a queue and send and receive data without blocking a program.
   ms.date: 01/25/2021
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Learn about buffered channels

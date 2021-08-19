@@ -26,7 +26,7 @@ After selecting the operating system option, the supported deployment options ar
 
 - Local script
 
-- VDI onboarding script for non-presistent devices
+- VDI onboarding script for non-persistent devices
 
 :::image type="content" source="../media/onboard-windows.png" alt-text="Windows 10 Deployment options.":::
 

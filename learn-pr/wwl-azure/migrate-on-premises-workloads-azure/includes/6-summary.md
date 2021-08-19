@@ -1,3 +1,5 @@
+## Summary
+
 In this module, you learned how to implement a migration of your on-premises workloads to Azure with Azure Migrate. First, you saw how to register your Hyper-V host server with Azure Migrate Server Migration. Second, you learned how to configure your on-premises Hyper-V VMs for replication. 
 
 You also learned how to monitor and test that your on-premises workloads could successfully failover to Azure with no data loss. You then saw how to complete a cutover of your VMs to complete the migration.

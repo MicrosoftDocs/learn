@@ -4,6 +4,6 @@ In this module, you have learned about API Management and how policies can be us
 
 ## Learn more
 
-- [API Management documentation](https://docs.microsoft.com/azure/api-management/)
-- [Transform and protect your API](https://docs.microsoft.com/azure/api-management/transform-api)
-- [Advanced request throttling with Azure API Management](https://docs.microsoft.com/azure/api-management/api-management-sample-flexible-throttling)
+- [API Management documentation](/azure/api-management/)
+- [Transform and protect your API](/azure/api-management/transform-api)
+- [Advanced request throttling with Azure API Management](/azure/api-management/api-management-sample-flexible-throttling)

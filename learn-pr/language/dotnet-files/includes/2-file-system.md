@@ -10,7 +10,7 @@ Tailwind Traders has each of its stores write its sales total to a file, and sen
 
 ## Include the System.IO namespace
 
-In the .NET, `System.IO` namespaces contain types to interact with files and directories. For example, you can get and set properties for files and directories, and retrieve collections of files and directories based on search criteria.
+In .NET, `System.IO` namespaces contain types to interact with files and directories. For example, you can get and set properties for files and directories, and retrieve collections of files and directories based on search criteria.
 
 You can also use the types in the `System.IO` namespaces to read and write, both synchronously and asynchronously, data streams and files.
 

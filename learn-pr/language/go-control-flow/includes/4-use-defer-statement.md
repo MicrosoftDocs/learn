@@ -1,6 +1,5 @@
-Now consider some less-common control flows in Go: `defer`, `panic`, and `recover`. As you've already seen, Go is idiomatic in several ways, and these three control flows are ones that are unique to Go.
+Now let's look at some control flows that are unique to Go: `defer`, `panic`, and `recover`. Each of these functions has several use cases. We'll explore the most important use cases here.
 
-Each of these functions has several use cases. You'll explore the most important use cases here. Let's get started with the first function.
 
 ## Defer function
 
@@ -38,7 +37,7 @@ deferred -1
 
 In this example, notice that every time `fmt.Println("deferred", -i)` was deferred, the value for `i` was stored, and its run task was added to a queue. After the `main()` function finished printing the `regular` values, all the deferred calls ran. That's why you see the output in reverse order (last in, first out).
 
-A typical use case for the `defer` function is to close a file when you finish using it. Here's an example:
+A typical use case for the `defer` function is to close a file after you finish using it. Here's an example:
 
 ```go
 package main
@@ -46,149 +45,140 @@ package main
 import (
     "io"
     "os"
+    "fmt"
 )
 
 func main() {
-    f, err := os.Create("notes.txt")
-    if err != nil {
+    newfile, error := os.Create("learnGo.txt")
+    if error != nil {
+        fmt.Println("Error: Could not create file.")
         return
     }
-    defer f.Close()
+    defer newfile.Close()
 
-    if _, err = io.WriteString(f, "Learning Go!"); err != nil {
+    if _, error = io.WriteString(newfile, "Learning Go!"); error != nil {
+	    fmt.Println("Error: Could not write to file.")
         return
     }
 
-    f.Sync()
+    newfile.Sync()
 }
 ```
 
-After you create or open a file, you defer the `f.Close()` function to avoid forgetting to close the file after you write something into it.
+After you create or open a file, you defer the `.Close()` function to avoid forgetting to close the file after you're done.
+
 
 ## Panic function
 
-Runtime errors make a Go program panic. You can force a program to panic, but a panic can also result from runtime errors like out-of-bounds array access and nil pointer dereferences. 
+Runtime errors make a Go program panic, such as attempting to access an array by using an out-of-bounds index or dereferencing a nil pointer. You can also force a program to panic.
 
-The built-in `panic()` function stops the normal flow of control. All the deferred function calls run normally. The process continues up the stack until all functions return. The program then crashes with a log message. The message includes any error and a stack trace to help you diagnose the problem's root cause.
+The built-in `panic()` function stops the normal flow of control in a Go program. When you use a `panic` call, any deferred function calls run normally. The process continues up the stack until all functions return. The program then crashes with a log message. The message includes any error information and a stack trace to help you diagnose the problem's root cause.
 
 When you call the `panic()` function, you can add any value as an argument. Usually, you send an error message about why you're panicking.
 
-For instance, combine the `panic` and `defer` functions to see how the control flow is interrupted. But continue running any cleanup processes. Use the following code snippet:
+For instance, the following code combines the `panic` and `defer` functions. Try running this code to see how the control flow is interrupted. Notice that the clean-up processes still run.
 
 ```go
 package main
 
 import "fmt"
 
-func main() {
-    g(0)
-    fmt.Println("Program finished successfully!")
+func highlow(high int, low int) {
+    if high < low {
+        fmt.Println("Panic!")
+        panic("highlow() low greater than high")
+    }
+    defer fmt.Println("Deferred: highlow(", high, ",", low, ")")
+    fmt.Println("Call: highlow(", high, ",", low, ")")
+
+    highlow(high, low + 1)
 }
 
-func g(i int) {
-    if i > 3 {
-        fmt.Println("Panicking!")
-        panic("Panic in g() (major)")
-    }
-    defer fmt.Println("Defer in g()", i)
-    fmt.Println("Printing in g()", i)
-    g(i + 1)
+func main() {
+    highlow(2, 0)
+    fmt.Println("Program finished successfully!")
 }
 ```
 
-When you run the code, the output looks like this:
+Here's the output:
 
 ```output
-Printing in g() 0
-Printing in g() 1
-Printing in g() 2
-Printing in g() 3
-Panicking!
-Defer in g() 3
-Defer in g() 2
-Defer in g() 1
-Defer in g() 0
-panic: Panic in g() (major)
+Call: highlow( 2 , 0 )
+Call: highlow( 2 , 1 )
+Call: highlow( 2 , 2 )
+Panic!
+Deferred: highlow( 2 , 2 )
+Deferred: highlow( 2 , 1 )
+Deferred: highlow( 2 , 0 )
+panic: highlow() low greater than high
 
 goroutine 1 [running]:
-main.g(0x4)
-        /Users/johndoe/go/src/helloworld/main.go:13 +0x22e
-main.g(0x3)
-        /Users/johndoe/go/src/helloworld/main.go:17 +0x17a
-main.g(0x2)
-        /Users/johndoe/go/src/helloworld/main.go:17 +0x17a
-main.g(0x1)
-        /Users/johndoe/go/src/helloworld/main.go:17 +0x17a
-main.g(0x0)
-        /Users/johndoe/go/src/helloworld/main.go:17 +0x17a
+main.highlow(0x2, 0x3)
+	/tmp/sandbox/prog.go:13 +0x34c
+main.highlow(0x2, 0x2)
+	/tmp/sandbox/prog.go:18 +0x298
+main.highlow(0x2, 0x1)
+	/tmp/sandbox/prog.go:18 +0x298
+main.highlow(0x2, 0x0)
+	/tmp/sandbox/prog.go:18 +0x298
 main.main()
-        /Users/johndoe/go/src/helloworld/main.go:6 +0x2a
-exit status 2
+	/tmp/sandbox/prog.go:6 +0x37
+
+Program exited: status 2.
 ```
 
 Here's what happens when the code runs: 
 
-1. Everything runs normally. The program prints the value that the function `g()` receives. 
+1. Everything runs normally. The program prints the high and low values passed into the `highlow()` function. 
 
-1. When `i` is greater than 3, the program panics. You see the `Panicking!` message. At this point, the control flow is interrupted, and all the deferred functions start to print the `Defer in g()` message. 
+1. When the value of `low` is greater than the value of `high`, the program panics. You see the `Panic!` message. At this point, the control flow is interrupted, and all the deferred functions start to print the `Deferred...` message. 
 
 1. The program crashes, and you see the full stack trace. You don't see the `Program finished successfully!` message.
 
-A call to `panic()` usually runs when grave errors aren't expected. To avoid a program crash, you can use the `recover()` function. You'll learn about this function in the next section.
+A call to the `panic()` function usually runs when grave errors aren't expected. To avoid a program crash, you can use another function named `recover()`.
+
 
 ## Recover function
 
-Sometimes you might want to avoid a program crash and instead report the error internally. Or perhaps you want to clean up the mess before letting the program crash. For instance, you might want to close any connection to a resource to avoid more problems. 
+Sometimes you might want to avoid a program crash and instead report the error internally. Or perhaps you want to clean up the mess before letting the program crash. For instance, you might want to close any connection to a resource to avoid more problems.
 
-Go provides the built-in function `recover()` to allow you to regain control after a panic. You can use this function only in a deferred function. If you call the `recover()` function, it returns `nil` and has no other effect in normal running.
+Go provides the built-in `recover()` function to allow you to regain control after a panic. You only call `recover` in a function where you're also calling `defer`. If you call the `recover()` function, it returns `nil` and has no other effect in normal running.
 
-Try modifying the previous code to add a call to the `recover()` function, like this:
+Try modifying the `main` function in the previous code to add a call to the `recover()` function, like this:
 
 ```go
-package main
-
-import "fmt"
-
 func main() {
     defer func() {
-        if r := recover(); r != nil {
-            fmt.Println("Recovered in main", r)
+	handler := recover()
+        if handler != nil {
+            fmt.Println("main(): recover", handler)
         }
     }()
-    g(0)
-    fmt.Println("Program finished successfully!")
-}
 
-func g(i int) {
-    if i > 3 {
-        fmt.Println("Panicking!")
-        panic("Panic in g() (major)")
-    }
-    defer fmt.Println("Defer in g()", i)
-    fmt.Println("Printing in g()", i)
-    g(i + 1)
+    highlow(2, 0)
+    fmt.Println("Program finished successfully!")
 }
 ```
 
 When you run the program, the output should look like this:
 
 ```output
-Printing in g() 0
-Printing in g() 1
-Printing in g() 2
-Printing in g() 3
-Panicking!
-Defer in g() 3
-Defer in g() 2
-Defer in g() 1
-Defer in g() 0
-Recovered in main Panic in g() (major)
+Call: highlow( 2 , 0 )
+Call: highlow( 2 , 1 )
+Call: highlow( 2 , 2 )
+Panic!
+Deferred: highlow( 2 , 2 )
+Deferred: highlow( 2 , 1 )
+Deferred: highlow( 2 , 0 )
+main(): recover from panic highlow() low greater than high
+
+Program exited.
 ```
 
 Do you see the difference from the previous version? The main difference is that you no longer see the stack trace error. 
 
-In the `main()` function, you defer an anonymous function where you call the `recover()` function. A call to `recover()` fails to return `nil` when the program is panicking. You can do something here to clean up the mess, but in this case you're simply printing something.
+In the `main()` function, you defer an anonymous function where you call the `recover()` function. A call to `recover()` fails to return `nil` when the program is panicking. You can do something here to clean up the mess, but in this example, you simply print something.
 
-The combination of `panic` and `recover` is the idiomatic way that Go handles exceptions. Other programming languages use the `try/catch` block. Go prefers the approach you explored here. 
+The combination of the `panic` and `recover` functions is the idiomatic way that Go handles exceptions. Other programming languages use the `try/catch` block. Go prefers the approach you explored here. 
 
 For more information, check out the [proposal to add a built-in `try` function in Go](https://go.googlesource.com/proposal/+/master/design/32437-try-builtin.md?azure-portal=true).

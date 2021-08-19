@@ -19,7 +19,7 @@ abstract: |
 iconUrl: /learn/achievements/introduction-to-visual-studio-for-windows10-dev.svg
 prerequisites: |
  - A computer running the current release of Windows 10. To verify that you're running the latest version, go to Windows Update in Settings.
- - On the same computer, [Visual Studio 2017](https://docs.microsoft.com/visualstudio/productinfo/vs2017-system-requirements-vs).
+ - On the same computer, [Visual Studio 2017](/visualstudio/productinfo/vs2017-system-requirements-vs).
 levels:
 - beginner
 roles:

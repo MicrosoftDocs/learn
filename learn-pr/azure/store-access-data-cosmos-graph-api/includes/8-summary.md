@@ -10,6 +10,6 @@ You've learned how to:
 
 ## Further reading
 
-- [Introduction to Azure Cosmos DB: Gremlin API](https://docs.microsoft.com/azure/cosmos-db/graph-introduction)
-- [Quickstart: Create, query, and traverse an Azure Cosmos DB graph database using the Gremlin console](https://docs.microsoft.com/azure/cosmos-db/create-graph-gremlin-console)
-- [Tutorial: Query Azure Cosmos DB Gremlin API by using Gremlin](https://docs.microsoft.com/azure/cosmos-db/tutorial-query-graph)
+- [Introduction to Azure Cosmos DB: Gremlin API](/azure/cosmos-db/graph-introduction)
+- [Quickstart: Create, query, and traverse an Azure Cosmos DB graph database using the Gremlin console](/azure/cosmos-db/create-graph-gremlin-console)
+- [Tutorial: Query Azure Cosmos DB Gremlin API by using Gremlin](/azure/cosmos-db/tutorial-query-graph)

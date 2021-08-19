@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-elastic-azure.introduction
+title: Introduction
+metadata:
+  unitType: introduction
+  title: Introduction
+  description: Find out what you will be doing in this module and what the end goal is.
+  ms.date: 06/15/2021
+  author: yenchiho
+  ms.author: yenchiho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

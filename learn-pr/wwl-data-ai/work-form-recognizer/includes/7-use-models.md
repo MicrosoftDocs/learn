@@ -45,7 +45,7 @@ The specific structure of the results depends on the fields in your forms, and t
 
 ## Using a prebuilt model 
 
-To extract form data using a prebuilt model, use the **Analyze** REST API function (or [equivalent SDK method](https://docs.microsoft.com/azure/cognitive-services/form-recognizer/quickstarts/client-library)).
+To extract form data using a prebuilt model, use the **Analyze** REST API function (or [equivalent SDK method](/azure/cognitive-services/form-recognizer/quickstarts/client-library)).
 
 - [**Analyze Receipt**](https://westcentralus.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2-1-preview-3/operations/AnalyzeReceiptAsync)
 - [**Analyze Business Card**](https://westcentralus.dev.cognitive.microsoft.com/docs/services/form-recognizer-api-v2-1-preview-3/operations/AnalyzeBusinessCardAsync) 

@@ -3,8 +3,8 @@ uid: learn.student-evangelism.collect-manipulate-data-python-nasa
 metadata:
   title: Data collection and manipulation
   description: Learn about the steps to import data into Python and clean the data for use in creating machine learning models.
-  ms.date: 03/10/2021
-  author: sguthals
+  ms.date: 05/19/2021
+  author: drguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

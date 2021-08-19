@@ -106,7 +106,7 @@ Next, let's see what this looks like in the Azure portal.
 
     Your Event Hub appears with a status of **Activating**, and default values for **Message Retention** (*7*) and **Partition Count** of (*4*).
 
-    ![Event Hub displayed in the Azure portal](../media/3-event-hub.png)
+    ![Event Hub displayed in the Azure portal.](../media/3-event-hub.png)
 
 ## Summary
 

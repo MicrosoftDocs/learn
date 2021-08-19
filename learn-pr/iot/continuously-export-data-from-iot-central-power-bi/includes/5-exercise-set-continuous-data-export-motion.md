@@ -10,7 +10,7 @@ In this section, you create a Blob storage resource outside of your IoT Central 
 
 1. From among the many storage options, select **Storage account - blob, file, table, queue**.
 
-    [![Screenshot showing the Create button for new storage](../media/continuous-data-new-storage.png)](../media/continuous-data-new-storage.png#lightbox)
+    [![Screenshot showing the Create button for new storage.](../media/continuous-data-new-storage.png)](../media/continuous-data-new-storage.png#lightbox)
 
 1. Select **Create**.
 
@@ -50,7 +50,7 @@ Now you're going to connect the data export feature to the storage account by us
 
 1. You'll notice that there are two keys under **key1**. You need the full connection string, so select the **Copy** button next to the **Connection string** box to copy the **key1** connection string to the clipboard.
 
-    [![Screenshot showing the Blob storage key1 connection string Copy button](../media/continuous-data-blob-key.png)](../media/continuous-data-blob-key.png#lightbox)
+    [![Screenshot showing the Blob storage key1 connection string Copy button.](../media/continuous-data-blob-key.png)](../media/continuous-data-blob-key.png#lightbox)
 
 1. Paste the copied connection string in the text file that you created earlier.
 
@@ -62,7 +62,7 @@ Great, you've now set up everything you need. Leave the Blob storage overview pa
 
 1. On the left pane, select **Data export** and then, in the **New** drop-down list, select **Azure Blob Storage**.
 
-    [![Screenshot showing the menu options for new data export](../media/continuous-data-new-export.png)](../media/continuous-data-new-export.png#lightbox)
+    [![Screenshot showing the menu options for new data export.](../media/continuous-data-new-export.png)](../media/continuous-data-new-export.png#lightbox)
 
 1. On the **Create data export** pane, enter the connection string that you saved in the preceding section.
 
@@ -72,7 +72,7 @@ Great, you've now set up everything you need. Leave the Blob storage overview pa
 
    The **Data export** page is displayed, and your data export **Status** is *Running*.
 
-    [![Screenshot showing that the data export service is up and running](../media/continuous-data-export-running.png)](../media/continuous-data-export-running.png#lightbox)
+    [![Screenshot showing that the data export service is up and running.](../media/continuous-data-export-running.png)](../media/continuous-data-export-running.png#lightbox)
 
 Good work. The final step of this unit is to verify that the telemetry is reaching your container.
 

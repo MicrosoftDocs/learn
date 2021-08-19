@@ -24,7 +24,7 @@ Access to the Trust Center doesn't require an Azure subscription or a Microsoft 
 
     :::image type="content" source="../media/4-trust-center-compliance.png" alt-text="A screenshot of the compliance offerings section on the Trust Center.":::
 
-    You're taken to [Microsoft compliance offerings](https://docs.microsoft.com/microsoft-365/compliance/offering-home?azure-portal=true).
+    You're taken to [Microsoft compliance offerings](/microsoft-365/compliance/offering-home?azure-portal=true).
 
     The offerings are grouped into four categories: **Global**, **US Government**, **Industry**, and **Regional**.
 

@@ -8,8 +8,8 @@ Now that you’ve completed this module, you should be able to:
 
 ## Learn more
 
-- [Insider risk management in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management?view=o365-worldwide)
-- [eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20?view=o365-worldwide )
-- [Privileged access management](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-overview?view=o365-worldwide )
-- [Customer Lockbox in Office 365](https://docs.microsoft.com/microsoft-365/compliance/customer-lockbox-requests?view=o365-worldwide )
-- [Get started with communication compliance](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-configure?view=o365-worldwide#before-you-begin )
+- [Insider risk management in Microsoft 365](/microsoft-365/compliance/insider-risk-management)
+- [eDiscovery](/microsoft-365/compliance/overview-ediscovery-20)
+- [Privileged access management](/microsoft-365/compliance/privileged-access-management-overview)
+- [Customer Lockbox in Office 365](/microsoft-365/compliance/customer-lockbox-requests)
+- [Get started with communication compliance](/microsoft-365/compliance/communication-compliance-configure#before-you-begin )

@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.azdo.evolve-your-devops-practices
 metadata:
-  title: Evolve your DevOps practices learning path
+  title: Get started with Azure DevOps learning path
   description: In this learning path, find out how Azure DevOps enables transparency and cooperation with continuous delivery and deployment for your development lifecycle.
   brand: azure
   ms.date: 9/1/2019
@@ -10,7 +10,7 @@ metadata:
   #ms.learn-contact: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Evolve your DevOps practices
+title: Get started with Azure DevOps
 summary: |
   DevOps is the union of people, process, and products to enable continuous delivery of value to your end users. Azure DevOps is a set of services that gives you the tools you need to do just that. With Azure DevOps, you can build, test, and deploy any application, either to the cloud or on premises. DevOps practices that enable transparency, cooperation, continuous delivery and continuous deployment become embedded in your software development lifecycle.
 
@@ -18,38 +18,20 @@ summary: |
 
   :::row:::
   :::column:::
-    <img src="/learn/achievements/azure-devops/evolve-your-devops-practices.svg" width="101" height="84" alt="The trophy for the Evolve your DevOps practices learning path." role="presentation"></img>
+    <img src="/learn/achievements/azure-devops/evolve-your-devops-practices.svg" width="101" height="84" alt="The trophy for the Get started with Azure DevOps learning path." role="presentation"></img>
 
-    Part 1: Evolve your DevOps practices
+    Part 1: Get started with Azure DevOps
   :::column-end:::
   :::column:::
     <img src="/learn/achievements/azure-devops/build-applications-with-azure-devops.svg" width="101" height="84" alt="The trophy for the Build applications with Azure DevOps learning path." role="presentation"></img>
 
-    [Part 2: Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops/)
+    [Part 2: Build applications with Azure DevOps](../build-applications-with-azure-devops/index.yml)
   :::column-end:::
   :::column:::
-    <img src="/learn/achievements/azure-devops/deploy-applications-with-azure-devops.svg" width="101" height="84" alt="The trophy for the Deploy applications with Azure DevOps learning path." role="presentation"></img>
+    <img src="/learn/achievements/azure-devops/deploy-applications-with-azure-devops.svg" width="91" height="84" alt="The trophy for the Deploy applications with Azure DevOps learning path." role="presentation"></img>
 
-    [Part 3: Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops/)
+    [Part 3: Deploy applications with Azure DevOps](../deploy-applications-with-azure-devops/index.yml)
   :::column-end:::
-  :::row-end:::
-
-  :::row:::
-  :::column:::
-    <img src="/learn/achievements/azure-devops/automate-deployments-azure-devops.svg" width="101" height="84" alt="The trophy for the Automate your deployments with Azure DevOps learning path." role="presentation"></img>
-
-    [Part 4: Automate your deployments with Azure DevOps](/learn/paths/automate-deployments-azure-devops/)
-  :::column-end:::
-  :::column:::
-    <img src="/learn/achievements/azure-devops/capture-feedback-monitoring.svg" width="101" height="84" alt="The trophy for the Capture feedback and monitoring data to continuously improve your software learning path." role="presentation"></img>
-
-    [Part 5: Capture feedback and monitoring data to continuously improve your software](/learn/paths/capture-feedback-monitoring/)
-  :::column-end:::
-
-  :::column:::
-    <!-- Padding -->
-  :::column-end:::
-
   :::row-end:::
 
   In this learning path, you will get started on your DevOps journey. You will:

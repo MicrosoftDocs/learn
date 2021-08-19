@@ -1,6 +1,6 @@
 :::row:::
   :::column:::
-        ![Product road map missions](../media/mission.png)
+        ![Product road map missions.](../media/mission.png)
   :::column-end:::
         :::column span="3":::
 

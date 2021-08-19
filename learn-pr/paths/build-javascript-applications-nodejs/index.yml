@@ -27,5 +27,6 @@ modules:
 - learn.azure.debug-nodejs
 - learn.azure.nodejs-files
 - learn.azure.build-web-api-nodejs-express
+- learn.student-evangelism.node-web-routes
 trophy:
   uid: learn.build-javascript-applications-nodejs.trophy

@@ -1,4 +1,3 @@
-
 Tailwind Traders has begun the process of migrating some existing workloads to the cloud and ensuring that new workloads are cloud native where appropriate. Instead of having all workloads hosted on-premises or in Azure, Tailwind Traders will be taking advantage of the technologies that best suit its needs.
 
 In this module, you learned about a variety of Azure hybrid technologies, including those related to networking, identity, compute, data, and security. You also learned how these technologies might function to provide Tailwind Traders with appropriate solutions to its problems. 
@@ -44,34 +43,34 @@ You can also learn more by reviewing the following Microsoft Learn modules:
 - [Implement hybrid network infrastructure][implement-hybrid-network-infrastructure]
 - [Implement hybrid backup and recovery with Windows Server IaaS][implement-hybrid-backup-recovery-windows-server-iaas]
 
-[vpn-gateway-about-vpngateways]: https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways?azure-portal=true
-[expressroute-introduction]: https://docs.microsoft.com/azure/expressroute/expressroute-introduction?azure-portal=true
-[virtual-wan-about]: https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about?azure-portal=true
-[whatis-azure-ad-connect]: https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect?azure-portal=true
-[adds-overview]: https://docs.microsoft.com/azure/active-directory-domain-services/overview?azure-portal=true
-[azure-arc-servers-overview]: https://docs.microsoft.com/azure/azure-arc/servers/overview?azure-portal=true
-[azure-stack-hci-overview]: https://docs.microsoft.com/azure-stack/hci/overview?azure-portal=true
-[high-performance-computing]: https://docs.microsoft.com/azure/architecture/topics/high-performance-computing?azure-portal=true
-[kubernetes-overview]: https://docs.microsoft.com/azure/azure-arc/kubernetes/overview?azure-portal=true
+[vpn-gateway-about-vpngateways]: /azure/vpn-gateway/vpn-gateway-about-vpngateways?azure-portal=true
+[expressroute-introduction]: /azure/expressroute/expressroute-introduction?azure-portal=true
+[virtual-wan-about]: /azure/virtual-wan/virtual-wan-about?azure-portal=true
+[whatis-azure-ad-connect]: /azure/active-directory/hybrid/whatis-azure-ad-connect?azure-portal=true
+[adds-overview]: /azure/active-directory-domain-services/overview?azure-portal=true
+[azure-arc-servers-overview]: /azure/azure-arc/servers/overview?azure-portal=true
+[azure-stack-hci-overview]: /azure-stack/hci/overview?azure-portal=true
+[high-performance-computing]: /azure/architecture/topics/high-performance-computing?azure-portal=true
+[kubernetes-overview]: /azure/azure-arc/kubernetes/overview?azure-portal=true
 [bring-azure-data-services-to-your-infrastructure-with-azure-arc]: https://azure.microsoft.com/blog/bring-azure-data-services-to-your-infrastructure-with-azure-arc/?azure-portal=true
-[site-recovery-overview]: https://docs.microsoft.com/azure/site-recovery/site-recovery-overview?azure-portal=true
-[azure-relay-relay-what-is-it]: https://docs.microsoft.com/azure/azure-relay/relay-what-is-it?azure-portal=true
-[app-service-hybrid-connections]: https://docs.microsoft.com/azure/app-service/app-service-hybrid-connections?azure-portal=true
-[application-proxy]: https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy?azure-portal=true
-[application-proxy-configure-single-sign-on-with-kcd]: https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd?azure-portal=true
-[application-proxy-configure-single-sign-on-with-ping-access]: https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-ping-access?azure-portal=true
-[application-proxy-integrate-with-remote-desktop-services]: https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-remote-desktop-services?azure-portal=true
-[storage-how-to-create-file-share]: https://docs.microsoft.com/azure/storage/files/storage-how-to-create-file-share?azure-portal=true
-[storage-sync-files-deployment-guide]: https://docs.microsoft.com/azure/storage/files/storage-sync-files-deployment-guide?azure-portal=true
-[stretch-database]: https://docs.microsoft.com/sql/sql-server/stretch-database/stretch-database?azure-portal=true
-[security-center]: https://docs.microsoft.com/azure/security-center/?azure-portal=true
-[azure-sentinel]: https://docs.microsoft.com/azure/sentinel?azure-portal=true
-[update-mgmt-overview]: https://docs.microsoft.com/azure/automation/update-management/update-mgmt-overview?azure-portal=true
-[design-a-hybrid-network-architecture]: https://docs.microsoft.com/learn/modules/design-a-hybrid-network-architecture?azure-portal=true
-[expose-hybrid-services-with-azure-relay]: https://docs.microsoft.com/learn/modules/expose-hybrid-services-with-azure-relay?azure-portal=true
-[manage-hybrid-workloads-azure-arc]: https://docs.microsoft.com/learn/modules/manage-hybrid-workloads-azure-arc?azure-portal=true
-[implement-hybrid-identity-windows-server]: https://docs.microsoft.com/learn/modules/implement-hybrid-identity-windows-server?azure-portal=true
-[implement-hybrid-file-server-infrastructure]: https://docs.microsoft.com/learn/modules/implement-hybrid-file-server-infrastructure?azure-portal=true
-[monitor-windows-server-iaas-virtual-machines-hybrid-instances]: https://docs.microsoft.com/learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances?azure-portal=true
-[implement-hybrid-network-infrastructure]: https://docs.microsoft.com/learn/modules/implement-hybrid-network-infrastructure?azure-portal=true
-[implement-hybrid-backup-recovery-windows-server-iaas]: https://docs.microsoft.com/learn/modules/implement-hybrid-backup-recovery-windows-server-iaas?azure-portal=true
+[site-recovery-overview]: /azure/site-recovery/site-recovery-overview?azure-portal=true
+[azure-relay-relay-what-is-it]: /azure/azure-relay/relay-what-is-it?azure-portal=true
+[app-service-hybrid-connections]: /azure/app-service/app-service-hybrid-connections?azure-portal=true
+[application-proxy]: /azure/active-directory/manage-apps/application-proxy?azure-portal=true
+[application-proxy-configure-single-sign-on-with-kcd]: /azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd?azure-portal=true
+[application-proxy-configure-single-sign-on-with-ping-access]: /azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-ping-access?azure-portal=true
+[application-proxy-integrate-with-remote-desktop-services]: /azure/active-directory/manage-apps/application-proxy-integrate-with-remote-desktop-services?azure-portal=true
+[storage-how-to-create-file-share]: /azure/storage/files/storage-how-to-create-file-share?azure-portal=true
+[storage-sync-files-deployment-guide]: /azure/storage/files/storage-sync-files-deployment-guide?azure-portal=true
+[stretch-database]: /sql/sql-server/stretch-database/stretch-database?azure-portal=true
+[security-center]: /azure/security-center/?azure-portal=true
+[azure-sentinel]: /azure/sentinel?azure-portal=true
+[update-mgmt-overview]: /azure/automation/update-management/update-mgmt-overview?azure-portal=true
+[design-a-hybrid-network-architecture]: /learn/modules/design-a-hybrid-network-architecture?azure-portal=true
+[expose-hybrid-services-with-azure-relay]: /learn/modules/expose-hybrid-services-with-azure-relay?azure-portal=true
+[manage-hybrid-workloads-azure-arc]: /learn/modules/manage-hybrid-workloads-azure-arc?azure-portal=true
+[implement-hybrid-identity-windows-server]: /learn/modules/implement-hybrid-identity-windows-server?azure-portal=true
+[implement-hybrid-file-server-infrastructure]: /learn/modules/implement-hybrid-file-server-infrastructure?azure-portal=true
+[monitor-windows-server-iaas-virtual-machines-hybrid-instances]: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances?azure-portal=true
+[implement-hybrid-network-infrastructure]: /learn/modules/implement-hybrid-network-infrastructure?azure-portal=true
+[implement-hybrid-backup-recovery-windows-server-iaas]: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas?azure-portal=true

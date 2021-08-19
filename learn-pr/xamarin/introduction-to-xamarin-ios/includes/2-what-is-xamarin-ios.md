@@ -34,7 +34,7 @@ Apple has strict requirements when it comes to building apps. For example, you n
 Xamarin.iOS also uses the Xcode tools to create the final binary and distribution packages for iOS apps. This requirement means you need a Mac that runs macOS and Xcode to complete the final compilation and deployment of a Xamarin.iOS app. Before you distribute your app, you also need to deploy your app to an iOS device for testing.
 
 > [!NOTE]
-> From time to time, Apple requires you to upgrade to the latest versions of all operating systems as well as the native development environment. You also need to update the Xamarin tools to match. You should keep Xcode up-to-date and use the latest Xamarin stable releases. See the [Xamarin installation instructions](https://docs.microsoft.com/xamarin/ios/get-started/installation/index).
+> From time to time, Apple requires you to upgrade to the latest versions of all operating systems as well as the native development environment. You also need to update the Xamarin tools to match. You should keep Xcode up-to-date and use the latest Xamarin stable releases. See the [Xamarin installation instructions](/xamarin/ios/get-started/installation/index).
 
 ## Write code for Xamarin.iOS apps
 

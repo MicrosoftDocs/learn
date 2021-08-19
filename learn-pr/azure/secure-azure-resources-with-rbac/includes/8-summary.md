@@ -4,4 +4,4 @@ In this module, you learned about Azure role-based access control (Azure RBAC) a
 
 Here are some additional resources you can use to continue learning about Azure RBAC.
 
-- [Azure built-in roles](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)
+- [Azure built-in roles](/azure/role-based-access-control/built-in-roles)

@@ -8,6 +8,7 @@ metadata:
   author: nickwalkmsft
   ms.author: nickwalk
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: How Azure DevTest Labs works
 durationInMinutes: 10
 content: |

@@ -5,8 +5,8 @@ metadata:
   title: Data structure and graph flow
   description: Data structure and graph flow
   ms.date: 03/20/2020
-  author: shanamatthews
-  ms.author: shanama
+  author: softchris
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true
@@ -73,7 +73,7 @@ quiz:
 # LaTeX dollar sign syntax not supported in 'explanation' property. Using HTML 'sub' subscript syntax.
   - content: |
       Assume the following graph: <br><br>
-      <img src=./media/quiz-units-2-and-4-vertices-graph.png></img> <br><br>
+      <img alt="Diagram of graph showing vertex V1 connected to V2, V3, and V6; then vertex V2 connected to V4 and V3 connected to V4 and V5." src=./media/quiz-units-2-and-4-vertices-graph.png /><br><br>
       Assume that the scope of a vertex $v$ in this graph is defined as the immediate neighboring vertices of $v$. <br>
       Which vertices have the largest scope?
     choices:

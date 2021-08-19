@@ -1,6 +1,6 @@
 Microsoft Intune is available for different organization sizes and needs, from a simple-to-use management experience for schools and small businesses, to more advanced functionality required by enterprise customers. An admin must have a license assigned to them to administer Intune (unless you have selected to allow unlicensed admins).
 
-Whether you added users one at a time or all at once, you must assign each user an Intune license before users can enroll their devices in Intune. The Microsoft Intune free trial provides 25 Intune licenses. For a list of licenses, see [Licenses that include Intune](https://docs.microsoft.com/mem/intune/fundamentals/licenses?azure-portal=true).
+Whether you added users one at a time or all at once, you must assign each user an Intune license before users can enroll their devices in Intune. The Microsoft Intune free trial provides 25 Intune licenses. For a list of licenses, see [Licenses that include Intune](/mem/intune/fundamentals/licenses?azure-portal=true).
 
 > [!NOTE]
 > 
@@ -30,7 +30,7 @@ The following steps allow you to assign Intune licenses to multiple users all at
 4. Click **Assign** > **Add users and groups**.
 5. If you have created a group of users, click the group to add it to the **Selected items** list. Otherwise, select individual users that you have created earlier. Click **Select** to confirm your selection.
 
-   [ ![Screenshot of Azure AD admin center with users selected](../media/sign-up-for-intune-15.png) ](../media/sign-up-for-intune-15.png#lightbox)
+   [ ![Screenshot of Azure AD admin center with users selected.](../media/sign-up-for-intune-15.png) ](../media/sign-up-for-intune-15.png#lightbox)
   
 6. Click **Next: Assignment options** to confirm **Microsoft Intune** is **On**.
 7. Click **Review + assign** to confirm your license assignment settings.

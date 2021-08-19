@@ -7,13 +7,13 @@ In this unit, you'll learn:
 
 ## Identify your resource types
 
-First you need to identify the resource type of the resources you want to move. In the Azure portal, you can see the resource type for each resource on the **All resources** page. The same **Type** column is also included in the list of resources in a resource group.
+First, you need to identify the resource type of the resources you want to move. In the Azure portal, you can see the resource type for each resource on the **All resources** pane. The same **Type** column is also included in the list of resources in a resource group.
 
-![Screenshot that shows the resource type column on the All resources page](../media/4-view-resource-types.png)
+![Screenshot that shows the resource type column on the All resources page.](../media/4-view-resource-types.png)
 
 ## Check the limitations on resource types
 
-After identifying the resource types of your resources, you must investigate whether they can be moved, and the restrictions that might be in place. Check your resource types against the [move support for resources](https://docs.microsoft.com/azure/azure-resource-manager/move-support-resources) list. The list shows whether each resource type can be moved between resource groups or between subscriptions. For example, these resources can be moved:
+After identifying the resource types of your resources, you must investigate whether they can be moved, and the restrictions that might be in place. Check your resource types against the [move support for resources](/azure/azure-resource-manager/move-support-resources) list. The list shows whether each resource type can be moved between resource groups or between subscriptions. For example, these resources can be moved:
 
 - Azure Storage accounts
 - Azure virtual machines

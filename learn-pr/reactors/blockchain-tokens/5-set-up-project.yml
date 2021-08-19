@@ -5,7 +5,7 @@ metadata:
   description: Create a new project with Truffle and integrate the OpenZeppelin contracts library.
   ms.date: 10/16/2020
   author: meaghanlewis
-  ms.author: shanama
+  ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Set up a new project and integrate OpenZeppelin

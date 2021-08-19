@@ -80,7 +80,7 @@ Identify the subtasks of *Deploy Azure virtual machines from VHD templates*
       - It is a point in time copy of your system. 
 
     - Where are VHD images stored
-      - VHD disk images are stored in an Azure Managed disk account.  A managed disk is an abstraction over page blobs, blob container storage, and Azure Storage accounts.  To learn more about managed disks click [here](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview)
+      - VHD disk images are stored in an Azure Managed disk account.  A managed disk is an abstraction over page blobs, blob container storage, and Azure Storage accounts.  To learn more about managed disks click [here](/azure/virtual-machines/windows/managed-disks-overview)
 
     Ask three questions as a Knowledge Check
       - What is the tool for Generalizing a Windows Server
@@ -103,7 +103,7 @@ Identify the subtasks of *Deploy Azure virtual machines from VHD templates*
     - How to Generalize a Linux VM
       - Within a Linux VM the Windows Azure Agent 'waagent' can be used using the syntax `waagent -deprovision+user -force` as root via ssh.
       - This command does not guarantee the image is cleared of all sensitive information.  The `+user` parameter removes the last provisioned user account. To keep user credentials in the image, use only the `-deprovision` setting.
-      - To learn how to install waagent click [here](https://docs.microsoft.com/azure/virtual-machines/extensions/agent-linux)
+      - To learn how to install waagent click [here](/azure/virtual-machines/extensions/agent-linux)
 
     - Approaches to creating an image
       - Images can be created in a variety of ways:
@@ -118,14 +118,14 @@ Identify the subtasks of *Deploy Azure virtual machines from VHD templates*
           - If you want the ability to use the image in any availability zone, select On for Zone resiliency.
           - Select Create to create the image.
           - After the image is created, you can find it as an Image resource in the list of resources in the resource group.
-        - Using PowerShell [Link](https://docs.microsoft.com/azure/virtual-machines/windows/capture-image-resource#create-an-image-of-a-vm-using-powershell)
+        - Using PowerShell [Link](/azure/virtual-machines/windows/capture-image-resource#create-an-image-of-a-vm-using-powershell)
         - From a snapshot created,  this gives you the ability to failback as you still have the original VHD. 
 
 1. **Exercise - Create an image of an Azure VM from the Azure CLI and provision a new VM.**
 
     (Exercise uses zone pivots for Windows and Linux; each pivot starts by running a script to create a VM).
 
-    You need to take an existing VM and turn it into a reusable custom image that you can use to create new VM instances. To complete the example in this tutorial, you must have an existing virtual machine. If needed, this [script](https://docs.microsoft.com/azure/virtual-machines/scripts/virtual-machines-linux-cli-sample-create-vm-nginx) sample can create one for you. When working through the tutorial, replace the resource group and VM names and IPs where needed.
+    You need to take an existing VM and turn it into a reusable custom image that you can use to create new VM instances. To complete the example in this tutorial, you must have an existing virtual machine. If needed, this [script](/azure/virtual-machines/scripts/virtual-machines-linux-cli-sample-create-vm-nginx) sample can create one for you. When working through the tutorial, replace the resource group and VM names and IPs where needed.
 
     Windows pivot
 

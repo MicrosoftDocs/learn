@@ -16,7 +16,7 @@ While working on a branch is great for individual developer productivity, it ope
 
 A pull request is a mechanism used to communicate that changes from one branch are ready to be merged into another. They offer an opportunity for stakeholders to review and discuss the proposed changes to ensure that the code quality in the base branch is kept as high as possible.
 
-![A pull request](../media/2-pull-request.png)
+![A pull request.](../media/2-pull-request.png)
 
 > [!NOTE]
 > This unit discusses working with pull requests within the context of a browser. There are also many development platforms, like [Visual Studio](https://visualstudio.microsoft.com/?azure-portal=true), that offer integrated pull request experiences.
@@ -27,7 +27,7 @@ The author of a pull request is the person who created the pull request. They're
 
 Before creating a pull request, the author is responsible for ensuring the merge can succeed. It's best practice to often pull down changes from the remote to your local copy to confirm that the code builds with the latest base changes.
 
-![Creating a pull request](../media/2-creating-pull-request.png)
+![Creating a pull request.](../media/2-creating-pull-request.png)
 
 Learn more about [Proposing changes to your work with pull requests](https://help.github.com/github/collaborating-with-issues-and-pull-requests/proposing-changes-to-your-work-with-pull-requests?azure-portal=true).
 
@@ -37,7 +37,7 @@ Reviewers may be assigned to review the pull request based on their expertise wi
 
 GitHub offers a visual experience for reviewing code that allows reviewers to see code changes in a *diff* view where changes are highlighted. They can then leave comments inline, suggest changes, or approve. Reviewer feedback is kept as part of the repository history so that changes and decisions can be easily traced within their original context.
 
-![Reviewing a pull request](../media/2-reviewing-pull-request.png)
+![Reviewing a pull request.](../media/2-reviewing-pull-request.png)
 
 As the name implies, reviewers are responsible for reviewing changes. When feedback is minor, such as typos, reviewers may leave comments, edit the files directly, or suggest changes within specific files being modified. To recommend more substantive changes, a pull request should be opened against the author's branch.
 

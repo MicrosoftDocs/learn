@@ -35,5 +35,5 @@ In this module, you created resources by using your Azure subscription. The foll
 
 ## Learn more
 
-- [Scalability concepts](https://docs.microsoft.com/azure/aks/concepts-scale)
+- [Scalability concepts](/azure/aks/concepts-scale)
 - [Other types of pods that prevent scaling down](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md#what-types-of-pods-can-prevent-ca-from-removing-a-node)

@@ -19,6 +19,6 @@ Delete the Azure File Sync resources individually, in the reverse order from whi
 
 ## Learn more
 
-- [Planning for an Azure File Sync deployment](https://docs.microsoft.com/azure/storage/files/storage-sync-files-planning)
-- [Deploy Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-deployment-guide)
-- [Troubleshoot Azure File Sync](https://docs.microsoft.com/azure/storage/files/storage-sync-files-troubleshoot)
+- [Planning for an Azure File Sync deployment](/azure/storage/files/storage-sync-files-planning)
+- [Deploy Azure File Sync](/azure/storage/files/storage-sync-files-deployment-guide)
+- [Troubleshoot Azure File Sync](/azure/storage/files/storage-sync-files-troubleshoot)

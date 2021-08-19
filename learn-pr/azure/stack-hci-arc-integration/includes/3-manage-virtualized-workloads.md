@@ -57,8 +57,8 @@ For example, Contoso could use Azure Policy to implement the following rules:
 
 You can learn more by visiting the following webpages:
 
-- [Virtual machine extension management with Azure Arc enabled servers](https://docs.microsoft.com/azure/azure-arc/servers/manage-vm-extensions/?azure-portal=true)
-- [Azure Policy built-in definitions for Azure Arc for servers](https://docs.microsoft.com/azure/azure-arc/servers/policy-reference/?azure-portal=true)
-- [QuickStart: Create a policy assignment to identify non-compliant resources](https://docs.microsoft.com/azure/governance/policy/assign-policy-portal/?azure-portal=true)
+- [Virtual machine extension management with Azure Arc enabled servers](/azure/azure-arc/servers/manage-vm-extensions/?azure-portal=true)
+- [Azure Policy built-in definitions for Azure Arc for servers](/azure/azure-arc/servers/policy-reference/?azure-portal=true)
+- [QuickStart: Create a policy assignment to identify non-compliant resources](/azure/governance/policy/assign-policy-portal/?azure-portal=true)
 
 Choose the best response for each of the following questions. Then select "Check your answers".

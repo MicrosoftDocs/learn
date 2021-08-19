@@ -8,8 +8,8 @@ After migration, you want to resume the high level of service that your company 
 
 ## Further reading
 
-For a full and in-depth look at the new features in SQL Server 2019, see: [What's new in SQL Server 2019 (15.x)](https://docs.microsoft.com/sql/sql-server/what-s-new-in-sql-server-ver15)
+For a full and in-depth look at the new features in SQL Server 2019, see: [What's new in SQL Server 2019 (15.x)](/sql/sql-server/what-s-new-in-sql-server-ver15)
 
-To compare the features between editions, see: [Editions and supported features of SQL Server 2019 (15.x)](https://docs.microsoft.com/sql/sql-server/editions-and-components-of-sql-server-version-15)
+To compare the features between editions, see: [Editions and supported features of SQL Server 2019 (15.x)](/sql/sql-server/editions-and-components-of-sql-server-version-15)
 
-For more information about Query Store and how to use it during migrations, see: [Change the Database Compatibility Level and use the Query Store](https://docs.microsoft.com/sql/database-engine/install-windows/change-the-database-compatibility-mode-and-use-the-query-store)
+For more information about Query Store and how to use it during migrations, see: [Change the Database Compatibility Level and use the Query Store](/sql/database-engine/install-windows/change-the-database-compatibility-mode-and-use-the-query-store)
