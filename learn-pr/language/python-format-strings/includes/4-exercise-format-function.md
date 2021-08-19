@@ -46,7 +46,7 @@ Sneezergen - Take 10 ML by mouth every 6 hours
 
 ### Step 3 - Comment out the previous code, and add code to use formatted string literals, or "f-strings"
 
-The `format()` function is powerful and flexible. You can achieve the same functionality, with less typing, by using formatted string literals, also known as *f-strings*.
+The `format()` function is powerful and flexible. You can do the same thing with less typing using formatted string literals, also known as *f-strings*.
 
 Comment out the code from the previous step, and add the following code listing:
 
