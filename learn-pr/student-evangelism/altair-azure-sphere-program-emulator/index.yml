@@ -1,20 +1,23 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.altair-azure-sphere-program-emulator
 metadata:
-  title: Title altair-azure-sphere-program-emulator
-  description: Description altair-azure-sphere-program-emulator.
+  title: Program the Altair 8800 emulator
+  description: Learn how to program the Altair 8800 emulator.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-title: Title altair-azure-sphere-program-emulator
-summary: Summary altair-azure-sphere-program-emulator.
+title: Program the Altair 8800 emulator
+summary: Learn how to program the Altair 8800 emulator.
 abstract:  |
   In this module, you will:
-  - One, etc.
+  - Understand Altair BASIC and CP/M, and how to use them.
+  - Learn how to program the Altair emulator using Altair BASIC. 
+  - Write an Altair BASIC application.
+  - Learn about programming options and configurations for the Altair emulator.
 prerequisites: |
-  A basic knowledge of  . . . or None
+  TBD
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner

@@ -1,20 +1,23 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.altair-azure-sphere-create-iot-central-application
 metadata:
-  title: Title altair-azure-sphere-create-iot-central-application
-  description: Description altair-azure-sphere-create-iot-central-application.
+  title: Create an Azure IoT Central application for Altair 8800 and Azure Sphere
+  description: Learn how to create a cloud-based Azure IoT Central application for the Altair 8800 emulator and Azure Sphere.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-title: Title altair-azure-sphere-create-iot-central-application
-summary: Summary altair-azure-sphere-create-iot-central-application.
+title: Create an Azure IoT Central application
+summary: Learn how to create a cloud-based Azure IoT Central application for the Altair 8800 emulator and Azure Sphere.
 abstract:  |
   In this module, you will:
-  - One, etc.
+  - Create an Azure IoT Central application. 
+  - Set up a trusted relationship between your Azure Sphere tenant and Azure IoT Central.
+  - Create an enrollment group.
+  - Create and validate a tenant CA certificate.
 prerequisites: |
-  A basic knowledge of  . . . or None
+  TBD
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner

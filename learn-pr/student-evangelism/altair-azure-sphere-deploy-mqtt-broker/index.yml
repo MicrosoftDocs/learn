@@ -1,20 +1,23 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.altair-azure-sphere-deploy-mqtt-broker
 metadata:
-  title: Title altair-azure-sphere-deploy-mqtt-broker
-  description: Description altair-azure-sphere-deploy-mqtt-broker.
+  title: Deploy a private MQTT broker
+  description: Learn how to deploy your own private MQTT broker.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-title: Title altair-azure-sphere-deploy-mqtt-broker
-summary: Summary altair-azure-sphere-deploy-mqtt-broker.
+title: Deploy your own private MQTT broker
+summary: Learn how to deploy your own private MQTT broker.
 abstract:  |
   In this module, you will:
-  - One, etc.
+  - Create an Ubuntu virtual server. 
+  - Install and secure Mosquitto MQTT Broker.
+  - Install Let's Encrypt to provide CA certificate authentication. 
+  - Run the Python virtual disk server in the virtual machine. 
 prerequisites: |
-  A basic knowledge of  . . . or None
+  Be comfortable working with Linux.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner

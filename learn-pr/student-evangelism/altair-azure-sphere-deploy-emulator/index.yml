@@ -1,20 +1,23 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.altair-azure-sphere-deploy-emulator
 metadata:
-  title: Title altair-azure-sphere-deploy-emulator
-  description: Description altair-azure-sphere-deploy-emulator.
+  title: Deploy an Altair emulator to Azure Sphere
+  description: Learn how to deploy an Altair 8800 emulator to Azure Sphere.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-title: Title altair-azure-sphere-deploy-emulator
-summary: Summary altair-azure-sphere-deploy-emulator.
+title: Deploy an Altair emulator to Azure Sphere
+summary: Learn how to deploy an Altair 8800 emulator to Azure Sphere.
 abstract:  |
   In this module, you will:
-  - One, etc.
+  - Learn about the architecture of Azure Sphere. 
+  - Learn about the application architecture of the Altair emulator. 
+  - Start the app build and deployment process. 
+  - Understand the virtual disk cache-aside server. 
 prerequisites: |
-  A basic knowledge of  . . . or None
+  TBD
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner

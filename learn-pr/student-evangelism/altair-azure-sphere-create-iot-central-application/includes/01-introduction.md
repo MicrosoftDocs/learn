@@ -14,8 +14,13 @@ Trust is established by sharing your Azure Sphere tenant Certificate Authority c
 
 When you establish trust, the Azure Sphere devices in your Azure Sphere tenant will be provisioned in IoT Central when they first connect. Network traffic between your Azure Sphere and your IoT Central application will also be signed and secured using trusted certificates.
 
-In this module, you'll learn how to:
+In this module, you will:
+
+* Create an Azure IoT Central application. 
+* Set up a trusted relationship between your Azure Sphere tenant and Azure IoT Central.
+* Create an enrollment group.
+* Create and validate a tenant CA certificate.
 
 ## Prerequisites
 
-Add a list or write None.
+TBD
