@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.career-get-noticed
+metadata:
+  title: How to get noticed
+  description: Does it feel like it's hopeless to land a job or internship? Learn
+    how to stand out by networking effectively and writing a great resume.
+  ms.date: 2/26/2021
+  author: gcordido
+  ms.author: gcordido
+  ms.topic: interactive-tutorial
+title: How To Get Noticed
+summary: Getting noticed is the first step to land a job in tech. Learn tips and
+  strategies to get noticed by a prospective employer.
+abstract: >
+  In this module, you will: 
+
+
+  - Learn the basics of networking and some scenarios to start in.
+
+  - Determine the value of each of your past-experiences and define their uses as you look for a job.
+
+  - Build an eye-catching resume that not only showcases your skills, but you as a person.
+prerequisites: None
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs-code
+units:
+  - learn.career-get-noticed.1-introduction
+  - learn.career-get-noticed.2-networking
+  - learn.career-get-noticed.3-exercise-attend-events
+  - learn.career-get-noticed.4-resume-writing
+  - learn.career-get-noticed.5-resume-building
+  - learn.career-get-noticed.6-exercise-resume-building
+  - learn.career-get-noticed.7-knowledge-check
+  - learn.career-get-noticed.8-summary
+badge:
+  uid: learn.get-noticed.badge
