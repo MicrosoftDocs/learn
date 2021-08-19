@@ -44,7 +44,7 @@ Each column in a given DataFrame has a name, a type, and a nullable flag.
 ```python
 df.printSchema
 ```
-![DataFrame schema](../media/01-02-04-spark-df-printSchema.png)
+![DataFrame schema](../media/01-02-04-spark-df-printschema.png)
 
 ## DataFrame contents
 

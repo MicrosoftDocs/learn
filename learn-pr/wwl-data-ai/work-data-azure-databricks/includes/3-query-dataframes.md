@@ -140,4 +140,4 @@ df.corr('tripDistance', 'totalAmount')
 ```
 
 > [!NOTE]
-> **More information:** for more information about the Spark API, see the [DataFrame API](https://spark.apache.org/docs/2.4.0/api/python/pyspark.sql.html#pyspark.sql.DataFrame) and the [Column API](https://spark.apache.org/docs/2.4.0/api/python/pyspark.sql.html#pyspark.sql.Column) in the Spark documentation.
+> **More information:** for more information about the Spark API, see the [DataFrame API](https://spark.apache.org/docs/2.4.0/api/python/pyspark.sql.html#pyspark.sql.DataFrame?azure-portal=true) and the [Column API](https://spark.apache.org/docs/2.4.0/api/python/pyspark.sql.html#pyspark.sql.Column?azure-portal=true) in the Spark documentation.
