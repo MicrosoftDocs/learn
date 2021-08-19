@@ -35,7 +35,7 @@ You just created a GitHub repository named **my-static-web-app-authn** in your G
 
 ### Configure CORS locally
 
-You won't have to worry about cross-origin reource sharing (CORS) when you publish to Azure Static Web Apps. Azure Static Web Apps automatically configures your app so it can communicate with your API on Azure using a reverse proxy. But when running locally, you need to configure CORS to allow your web app and API to communicate.
+You won't have to worry about cross-origin resource sharing (CORS) when you publish to Azure Static Web Apps. Azure Static Web Apps automatically configures your app so it can communicate with your API on Azure using a reverse proxy. But when running locally, you need to configure CORS to allow your web app and API to communicate.
 
 Now, instruct Azure Functions to allow your web app to make HTTP requests to the API on your computer.
 
