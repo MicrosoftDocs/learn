@@ -6,7 +6,7 @@ Recruiters scan hundreds of resumes daily.  While recruiters do look at every re
 
 ## What to look for in the job description
 
-When you read the description of a role, pay close attention to the technical skills of the role and required human skills. As you tailor your resume to fit this role, make sure you give examples of using both these types of skills. 
+When you read the description of a role, pay close attention to the technical skills of the role and required human skills. As you tailor your resume to fit this role, make sure you give examples of using both these types of skills.
 
 ## Tech skills
 
@@ -15,13 +15,13 @@ The employer often lists tech skills in two different ways: the tech skills you 
 - **Minimum Requirements for the position**: If you do not meet the minimum requirements, your application may not make it past the initial screening. However, remember that no internship expects an expert. Look at the minimum qualifications as guidance towards skills that you should develop, and use your resume to explain how you are gaining experience in those areas and that you will likely meet them by the time you interview.
 
     > [!NOTE]
-    > Remember, the job you definitely won't get is the one for which you don't apply. While you shouldn't apply to a job or internship if you don't have any of the required skills, if you have a basic level in a skill and work really hard on it, a lot can happen in a matter of weeks and months to set you up for success.   
+    > Remember, the job you definitely won't get is the one for which you don't apply. While you shouldn't apply to a job or internship if you don't have any of the required skills, if you have a basic level in a skill and work really hard on it, a lot can happen in a matter of weeks and months to set you up for success.
 
 - **Technical skills that are listed as 'preferred'**: List these skills and determine which ones you already have and notate which ones are achievable before interviewing.
 
 ## Human skills
 
-Human skills, sometimes called ‘soft skills’, are skills that are not technical in nature but are important to succeed as part of a team. When reading a description for a job, it's important to identify what those skills are and demonstrate in your resume that you do have these skills. 
+Human skills, sometimes called 'soft skills', are skills that are not technical in nature but are important to succeed as part of a team. When reading a description for a job, it's important to identify what those skills are and demonstrate in your resume that you do have these skills. 
 
 It's often difficult to make out what human skills are required according to a job description. The way to spot these skills is to look for keywords. Required human skills such as teamwork and collaboration might be written into a job description:
 
@@ -33,7 +33,7 @@ Think about times when you showed the above listed skills and mention them in yo
 
 Once you have analyzed the job posting's requirements, your next step is to identify your alignment with these requirements.
 
-1. Create two lists from the requirements you gathered, one for technical skills and one for human skills. 
+1. Create two lists from the requirements you gathered, one for technical skills and one for human skills.
 
 1. Compare the list of technical skills required with the technical skills you possess.
 
@@ -41,7 +41,7 @@ Once you have analyzed the job posting's requirements, your next step is to iden
 
 1. Determine any overlaps, such as a project where you acquired and implemented one or more of these technical skills and assign them a priority.  
 
-> Be brief! Resumes are only expected to be one page long for a student, so you will need to choose your most relevant experience.
+   Be brief! Resumes are only expected to be one page long for a student, so you will need to choose your most relevant experience.
 
 1. Now, using the list of human skills you created, identify which of these skills were used in the higher priority experiences. Make a note to include them in the descriptions you will write. 
 
@@ -53,37 +53,37 @@ In order to stand out, you must be able to condense your experience into short y
 
 Technical experience will include anything you had an impact on that can be related to technical skills. Examples of this type of experience can include, among many things:  
 
-- personal or class projects 
+- personal or class projects
 
-- research positions 
+- research positions
 
-- teaching assistant or tutoring positions 
+- teaching assistant or tutoring positions
 
-- hackathon projects 
+- hackathon projects
 
-Volunteer opportunities with nonprofit organizations in and outside of school 
+Volunteer opportunities with nonprofit organizations in and outside of school
 
-These activities are attractive to recruiters as they cover where you acquired or how you implemented both technical and human skills. They also provide the ground for a technical chat in interviews. Therefore, it is important to have these experiences written in an *efficient*, *eye-catching* way where your *impact* is highlighted. 
+These activities are attractive to recruiters as they cover where you acquired or how you implemented both technical and human skills. They also provide the ground for a technical chat in interviews. Therefore, it is important to have these experiences written in an *efficient*, *eye-catching* way where your *impact* is highlighted.
 
-To illustrate, let's create a scenario with a class project: 
+To illustrate, let's create a scenario with a class project:
 
 Suppose you worked on a Python class project that required bug fixing for a calculator to work correctly. You identified the issues, implemented the fixes and tested before turning it in for grading. You might describe this project thus:  
 
-> Calculator Project - Programming II Class Example University 2020 
+> Calculator Project - Programming II Class Example University 2020
 
-> - Programmed a calculator program using Python. 
+> - Programmed a calculator program using Python.
 
-> - Fixed bugs that were in the original code 
+> - Fixed bugs that were in the original code
 
 Although this example describes your project and your work, it sounds like a basic project and does not help to showcase you as an individual. By rephrasing it to focus on its impact, however, the project will better demonstrate your skills and impact:
 
-> Calculator Class Project - Example University 2020 
+> Calculator Class Project - Example University 2020
 
-> - *Ensured* the correct functionality of a calculator program by identifying X bugs utilizing Python Exemption classes and debugging tools, implementing fixes and testing the program through Y test cases. 
+> - *Ensured* the correct functionality of a calculator program by identifying X bugs utilizing Python Exemption classes and debugging tools, implementing fixes and testing the program through Y test cases.
 
-This statement showcases the impact you had in the project right from the start, as you describe what you did (your impact). Next, the statement leads the reader to know how you did it, and provided data (X and Y) to measure your work. By following a similar template, your bullet points will not only catch the attention of recruiters, but also exemplify how you communicate your impact. 
+This statement showcases the impact you had in the project right from the start, as you describe what you did (your impact). Next, the statement leads the reader to know how you did it, and provided data (X and Y) to measure your work. By following a similar template, your bullet points will not only catch the attention of recruiters, but also exemplify how you communicate your impact.
 
-An easy-to-follow impact statement template can look like this: 
+An easy-to-follow impact statement template can look like this:
 
 > Achieved (or any impact-driven action verb) _____ (what you achieved) by doing ____ (how you achieved it), measured by ____ (any number that serves as context for your description. Though not always necessary, it helps bring value to your actions).
 
@@ -91,11 +91,11 @@ An easy-to-follow impact statement template can look like this:
 
 A common misconception when applying to technical internships is that non-technical experience has no value in a resume. Most students believe that companies only care about how good or experienced a candidate is in programming languages, software concepts, data structures or math. However, non-technical experience provides unique ways to showcase who you are, a critical aspect to convey when applying for a job.
 
-Luckily, describing a non-technical experience can be similar to describing technical experiences. In fact, the template mentioned above can be used and adapted to non-technical skills: 
+Luckily, describing a non-technical experience can be similar to describing technical experiences. In fact, the template mentioned above can be used and adapted to non-technical skills:
 
-> You are a member of a gardening club, where you care for some of the plants at the club's nursery, participate in bi-weekly meetings and provide assistance in some of the events held by the club. 
+> You are a member of a gardening club, where you care for some of the plants at the club's nursery, participate in bi-weekly meetings and provide assistance in some of the events held by the club.
 
-Using the description template, we could write some bullet points like so: 
+Using the description template, we could write some bullet points like so:
 
 > - Maintained the club's nursery by monitoring and caring for number different species of plants, in collaboration with number members.
 
@@ -111,4 +111,4 @@ Whenever you describe an ongoing experience in your resume, make sure that you w
 
 ## Next Steps
 
-Now that you know how to describe your experiences, the next step is to build your resume. 
+Now that you know how to describe your experiences, the next step is to build your resume.

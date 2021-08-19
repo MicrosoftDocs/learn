@@ -4,10 +4,12 @@ title: Networking
 metadata:
   title: Networking
   description: Being good at networking is an acquired skill, often leading to a new job or better opportunities within your current company.
-  ms.date: 2/26/2021  
+  ms.date: 08/25/2021  
   author: gcordido  
   ms.author: gcordido  
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 2
+hidden: true
 content: |
   [!include[](includes/2-networking.md)]

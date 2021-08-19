@@ -1,6 +1,6 @@
-To build your resume, you will need to separate it into sections. By having sections, you follow an agreed standard that will make it easier for the recruiter to understand things like your educational background, work experience, and, skills. 
+To build your resume, you will need to separate it into sections. By having sections, you follow an agreed standard that will make it easier for the recruiter to understand things like your educational background, work experience, and, skills.
 
-First off, you must ensure that your name and personal email are clearly visible at the top. They are followed by the different sections that will be described in this unit. Resume design is personal choice, so we will focus on how to divide each section and understand their contents. 
+First off, you must ensure that your name and personal email are clearly visible at the top. They are followed by the different sections that will be described in this unit. Resume design is personal choice, so we will focus on how to divide each section and understand their contents.
 
 ## Sections
 
@@ -8,9 +8,9 @@ A student resume should include a minimum of three different sections: Education
 
 ### Education
 
-This section in a student resume is important as it lists not only your areas of study but your *graduation date*. Including your expected graduation date provides recruiters with an idea of how advanced you might be in your courses. It can also determine the internships for which you qualify. Some companies host freshman and sophomore year internships alongside the most common junior and senior year ones, and depending on your graduation date you could qualify for both. 
+This section in a student resume is important as it lists not only your areas of study but your *graduation date*. Including your expected graduation date provides recruiters with an idea of how advanced you might be in your courses. It can also determine the internships for which you qualify. Some companies host freshman and sophomore year internships alongside the most common junior and senior year ones, and depending on your graduation date you could qualify for both.
 
-> How should you write your education section and what information should you include?
+_How should you write your education section and what information should you include?_
 
 1. **What you are studying**. First and foremost you must include what you are studying, that is, the degree you are aiming to obtain. The title of the degree should be written left aligned, and it may be bolded, italicized, or capitalized as a way to highlight it from the rest of the text.
 
@@ -18,25 +18,25 @@ This section in a student resume is important as it lists not only your areas of
 
 1. **The program**. In the following line, specify your program of study, and just like you did for the expected graduation date, include where the program is located.
 
-1. **Coursework**. The last part should be a concise list of *related coursework*. While optional, this list can help a recruiter assess your level of knowledge. Most junior and senior year internships expect some courses to be in your repertoire, like *Data Structures and Algorithms* for Computer Science students. Make sure to read the requirements for the position to which you are applying, and tailor your course list to match the knowledge that the position requires. 
+1. **Coursework**. The last part should be a concise list of *related coursework*. While optional, this list can help a recruiter assess your level of knowledge. Most junior and senior year internships expect some courses to be in your repertoire, like *Data Structures and Algorithms* for Computer Science students. Make sure to read the requirements for the position to which you are applying, and tailor your course list to match the knowledge that the position requires.
 
 An example of a properly written education section would look like this:
 
-> Education (aim for a bigger font for section titles) 
+> Education (aim for a bigger font for section titles)
 
-> BACHELOR OF SCIENCE IN COMPUTER SCIENCE                            Expected: May 2023 
+> BACHELOR OF SCIENCE IN COMPUTER SCIENCE                            Expected: May 2023
 
-> Learn University                                                          Redmond, WA 
+> Learn University                                                          Redmond, WA
 
 > Related Coursework: Data Structures, Programming in C#, Algorithms, Web Development I
 
 ## Education FAQS
 
-Q: If I have attended multiple colleges, should I include every single one of them in this section? 
+Q: If I have attended multiple colleges, should I include every single one of them in this section?
 
 A: Usually, no. More often than not, your current education will suffice. *However*, if you have multiple degrees in applicable for a specific position, you can definitely include them.  
 
-Q: How many courses should I include in the related coursework? 
+Q: How many courses should I include in the related coursework?
 
 A: As many as you deem representative of your technical knowledge, especially if you do not have experience or projects in one of the areas covered by a course that is required for the position. 
 
@@ -48,13 +48,13 @@ In addition to listing your skills, you will want to match your description of p
 
 A skills section should look similar to this text:
 
-> **Skills** 
+> **Skills**
 
 > Programming Languages: Intermediate proficiency in Python, C#, Java; beginner proficiency in Swift 
 
 > Software: Visual Studio, Anaconda, XCode, Azure PowerTools
 
-> Frameworks: ASP.NET, Django 
+> Frameworks: ASP.NET, Django
 
 > [!TIP]
 > Make use of columns to reduce the vertical space taken by this section
@@ -71,21 +71,21 @@ The following guidelines can assist you in formatting both subsections:
     >
     > Learn University Gardening Club Member
 
-1. **Dates**. Similar to the expected graduation date, list the dates for both projects and positions. If these projects or positions are ongoing, write the starting date followed by "- Current". This information should be right aligned on the same line as the name/role. 
+1. **Dates**. Similar to the expected graduation date, list the dates for both projects and positions. If these projects or positions are ongoing, write the starting date followed by "- Current". This information should be right aligned on the same line as the name/role.
 
-1. **Describe experience**. Following the title of your project/your role, you will want to add the bullet points describing your experience. Doing so will incorporate the writings we described in the previous unit, under [Describing your experience] (./resume-writing.md). Following the examples used there, the two subsections should be similar to the below text: 
+1. **Describe experience**. Following the title of your project/your role, you will want to add the bullet points describing your experience. Doing so will incorporate the writings we described in the previous unit, under [Describing your experience] (./resume-writing.md). Following the examples used there, the two subsections should be similar to the below text:
 
     > **Projects**
 
-    > Calculator Class Project - Example University             December 2020 
+    > Calculator Class Project - Example University             December 2020
 
-    > - Ensured the correct functionality of a calculator program by identifying 15 bugs utilizing Python Exemption classes and debugging tools, implementing fixes and testing the program through 24 test cases 
+    > - Ensured the correct functionality of a calculator program by identifying 15 bugs utilizing Python Exemption classes and debugging tools, implementing fixes and testing the program through 24 test cases
 
     >
 
     > **Experience**
 
-    > Learn University Gardening Club Member               June 2020 - Current 
+    > Learn University Gardening Club Member               June 2020 - Current
 
     > - Maintained the club's nursery by monitoring and caring for number different species of plants, in collaboration with number members
 

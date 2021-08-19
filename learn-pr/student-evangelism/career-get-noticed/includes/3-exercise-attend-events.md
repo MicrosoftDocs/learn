@@ -6,21 +6,21 @@ The first step to networking is to find out where to meet people. Within technol
 
 1. Go to `http://www.meetup.com` and find meetup groups in your area and join at least a couple of groups that matches your interest:
 
-   > For example, join a group on JavaScript and another on Vue.js
+   For example, join a group on JavaScript and another on Vue.js
 
 ## Go to an event
 
 User groups usually have meetings with a monthly cadence. By going to an event, you will be able to meet peers with a similar interest. Your goal for attending such an event should be to establish a personal connection. Sometimes the people you meet is future colleague or a recruiter. If a hiring manager has met you in person at an event, they might ask you to submit a resume there and then or keep you updated on future opportunities.
 
-1. Sign up for an event
+1. Sign up for an event.
 
-   > Join a JavaScript event on the 15th
+   Join a JavaScript event on the 15th
 
 An event usually consists of one or more speakers and at least a break between session. Now is your chance to meet people of interest.
 
 1. Set a goal for meeting and conversing with many people at the event.
 
-   > For example, decide to speak to at least three different people at the event.
+   For example, decide to speak to at least three different people at the event.
 
    > [!TIP]
    > It's usually a good idea to talk to the organizer at the event as they tend to know a lot of folks. Additionally, the organizer is more often than not a company looking to hiring people, so bring your resume.
@@ -37,9 +37,9 @@ So you are going to an event, you have a plan to speak to many people. What do y
 
 1. Find a time either before the talk or in the break to ask a subset of the questions above.
 
-   > Here's an example interaction:
-   > 
-   > You: What did you think of tonights talk?
-   > New person: Interesting, learned some new things
-   > Have you used this tech before?
-   > New person: No, but eager to try it out
+   Here's an example interaction:
+
+   You: What did you think of tonight's talk?
+   New person: Interesting, learned some new things.
+   You: Have you used this tech before?
+   New person: No, but eager to try it out.

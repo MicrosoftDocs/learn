@@ -9,11 +9,9 @@ There are many types of networking that all provide both personal and career gro
 - Join and attend organizational meetings.
 - Become part of your school's clubs.
 - Attend tutoring sessions and workshops.
-- Participate in a hackathon and build something you’re passionate about.
+- Participate in a hackathon and build something you're passionate about.
 - Contribute to open-source software.
   - Join an interest group or play a sport with other people.
-
-
 
 ## Is networking reserved to only in-person situations?
 
@@ -28,7 +26,7 @@ There are multiple ways to get started with networking. Here are some ideas to g
 Student organizations provide one of the best opportunities for networking. The members of these organizations can interact with you as peers and will most likely share common interests with you. With that in mind, connecting with them and learning about their experiences while also sharing your own is a great first step in networking. In addition to joining a student organization, participating and collaborating in such an organization will promote the development of incredibly valuable human skills such as communication, time management, and teamwork through events and socials such as service projects, excursions, and hackathons.
 
 > [!TIP]
-> Joining a program such as Microsoft’s Learn Student Ambassadors is a great idea when you are looking for networking opportunities both with professionals and other students. Learn more about [The Student ambassador program](https://studentambassadors.microsoft.com).
+> Joining a program such as Microsoft's Learn Student Ambassadors is a great idea when you are looking for networking opportunities both with professionals and other students. Learn more about [The Student ambassador program](https://studentambassadors.microsoft.com).
 
 ### Collaborate in open-source projects that interest you
 

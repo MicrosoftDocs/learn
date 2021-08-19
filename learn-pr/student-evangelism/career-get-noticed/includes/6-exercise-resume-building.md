@@ -1,4 +1,4 @@
-Creating your resume is an important task. A great resume can land you a job or at least enough interest for a company to reach out. An interesting question though is what do you put on the resume and how do you describe it? In this exercise, you'll learn how to recall experiences and describe them in various interesting ways. 
+Creating your resume is an important task. A great resume can land you a job or at least enough interest for a company to reach out. An interesting question though is what do you put on the resume and how do you describe it? In this exercise, you'll learn how to recall experiences and describe them in various interesting ways.
 
 ## Get it on paper
 
@@ -37,4 +37,3 @@ Next, try to think about impact and internally grade your notes by it. Your expe
    > University IT Support
 
    The two experiences at the top are all about software development and having code to show for makes this arrangement ideal. However, depending on the nature of your job, an IT support job can be a great experience to have as it shows service minded, empathy and many other skills being put to the test.
-

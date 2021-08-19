@@ -5,10 +5,12 @@ metadata:
   title: Resume building
   description: This unit describes the sections that comprise your resume and how
     to write them in an appealing way.
-  ms.date: 4/16/2021
+  ms.date: 08/25/2021
   author: gcordido
   ms.author: gcordido
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 6
+hidden: true
 content: |
   [!include[](includes/5-resume-building.md)]
