@@ -21,7 +21,7 @@ All non-administrators should not have access due to the sensitive data and the 
 
 1. Under **Administration portal**, ensure that **Restrict access to Azure AD administration portal** is set to **Yes**. Setting this value to **Yes** prevents all non-administrators from accessing any data in the Azure AD administration portal, but does not restrict access for PowerShell or another client, such as Visual Studio.
 
-    ![Screenshot of the Azure portal showing the Restrict access to Azure AD administration portal option.](../media/2-restrict-access-ad-portal.png)
+    :::image type="content" source="../media/2-restrict-access-ad-portal.png" alt-text="Screenshot of the Azure portal showing the Restrict access to Azure AD administration portal option.":::
 
 ### Enable Azure AD Multi-Factor Authentication (MFA) - Level 2
 
@@ -72,7 +72,7 @@ Ensure that no guest users exist, or alternatively, if the business requires gue
 
 1. In the *Search users* search box, enter *guest*, and verify that no guest users exist depending on your requirements (`USER TYPE=Guest`).
 
-    ![Screenshot of the Azure portal showing Azure AD all users listing with a single guest user shown.](../media/2-guest-users.png)
+    :::image type="content" source="../media/2-guest-users.png" alt-text="Screenshot of the Azure portal showing Azure AD all users listing with a single guest user shown.::::
 
 ### Password options
 
@@ -94,7 +94,7 @@ With MFA set, an attacker would require compromising both the identity forms bef
 
 1. Set the **Number of methods required to reset** to *2*.
 
-    ![Screenshot of the Azure portal showing Azure AD password reset authentication methods pane with number of methods required to reset set to 2.](../media/2-require-two-methods.png)
+    :::image type="content" source="../media/2-require-two-methods.png" alt-text="Screenshot of the Azure portal showing Azure AD password reset authentication methods pane with number of methods required to reset set to 2.":::
 
 ### Establish an interval for reconfirming user authentication methods - Level 1
 
@@ -112,7 +112,7 @@ If authentication reconfirmation is set to disabled, registered users will never
 
 1. Ensure that **Number of days before users are asked to reconfirm their authentication information** is not set to *0*. The default is 180 days.
 
-    ![Screenshot of the Azure portal showing the form for number of days to re-confirm info.](../media/2-days-till-re-confirm.png)
+    :::image type="content" source="../media/2-days-till-re-confirm.png" alt-text="Screenshot of the Azure portal showing the form for number of days to re-confirm info.":::
 
 ### Members and guests can invite - Level 2
 
