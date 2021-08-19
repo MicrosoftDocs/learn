@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check for the "How to Get Noticed" learn module.
-  ms.date: 08/25/2021
+  ms.date: 08/19/2021
   author: gcordido
   ms.author: gcordido
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
-hidden: true
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:

@@ -6,10 +6,9 @@ metadata:
   description: In this exercise, you learn how to describe your experiences and arrange them by impact.
   author: softchris
   ms.author: chnoring
-  ms.date: 08/25/2021
+  ms.date: 08/19/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
-hidden: true
 content: |
   [!include[](includes/6-exercise-resume-building.md)]

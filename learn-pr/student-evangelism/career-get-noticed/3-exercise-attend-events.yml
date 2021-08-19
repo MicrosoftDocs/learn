@@ -6,10 +6,9 @@ metadata:
   description: In this unit, you learn how to join a user group, attend an event and network.
   author: softchris
   ms.author: chnoring
-  ms.date: 08/25/2021
+  ms.date: 08/19/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
-hidden: true
 content: |
   [!include[](includes/3-exercise-attend-events.md)]
