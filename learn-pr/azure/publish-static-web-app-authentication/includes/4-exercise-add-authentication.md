@@ -34,71 +34,71 @@ We'll now run the app and API locally with a development server. This way, you'l
 
 1. Go to the folder of your preferred front-end framework, as follows:
 
-   ::: zone pivot="angular"
+  ::: zone pivot="angular"
 
-   ```bash
-   cd angular-app
-   ```
+  ```bash
+  cd angular-app
+  ```
 
-   ::: zone-end
+  ::: zone-end
 
-   ::: zone pivot="react"
+  ::: zone pivot="react"
 
-   ```bash
-   cd react-app
-   ```
+  ```bash
+  cd react-app
+  ```
 
-   ::: zone-end
+  ::: zone-end
 
-   ::: zone pivot="svelte"
+  ::: zone pivot="svelte"
 
-   ```bash
-   cd svelte-app
-   ```
+  ```bash
+  cd svelte-app
+  ```
 
-   ::: zone-end
+  ::: zone-end
 
-   ::: zone pivot="vue"
+  ::: zone pivot="vue"
 
-   ```bash
-   cd vue-app
-   ```
+  ```bash
+  cd vue-app
+  ```
 
-   ::: zone-end
+  ::: zone-end
 
 1. Run the front-end client application using a development server.
 
-   ::: zone pivot="angular"
+  ::: zone pivot="angular"
 
-   ```bash
-   npm start
-   ```
+  ```bash
+  npm start
+  ```
 
-   ::: zone-end
+  ::: zone-end
 
-   ::: zone pivot="react"
+  ::: zone pivot="react"
 
-   ```bash
-   npm start
-   ```
+  ```bash
+  npm start
+  ```
 
-   ::: zone-end
+  ::: zone-end
 
-   ::: zone pivot="svelte"
+  ::: zone pivot="svelte"
 
-   ```bash
-   npm run dev
-   ```
+  ```bash
+  npm run dev
+  ```
 
-   ::: zone-end
+  ::: zone-end
 
-   ::: zone pivot="vue"
+  ::: zone pivot="vue"
 
-   ```bash
-   npm run serve
-   ```
+  ```bash
+  npm run serve
+  ```
 
-   ::: zone-end
+  ::: zone-end
 
   Leave this server running in the background. We'll now run the API and authentication server emulator using the SWA CLI.
 
@@ -108,37 +108,37 @@ We'll now run the app and API locally with a development server. This way, you'l
 
 1. Run the SWA CLI using this command:
 
-   ::: zone pivot="angular"
+  ::: zone pivot="angular"
 
-   ```bash
-   swa start http://localhost:4200 --api ./api
-   ```
+  ```bash
+  swa start http://localhost:4200 --api ./api
+  ```
 
-   ::: zone-end
+  ::: zone-end
 
-   ::: zone pivot="react"
+  ::: zone pivot="react"
 
-   ```bash
-   swa start http://localhost:3000 --api ./api
-   ```
+  ```bash
+  swa start http://localhost:3000 --api ./api
+  ```
 
-   ::: zone-end
+  ::: zone-end
 
-   ::: zone pivot="svelte"
+  ::: zone pivot="svelte"
 
-   ```bash
-   swa start http://localhost:5000 --api ./api
-   ```
+  ```bash
+  swa start http://localhost:5000 --api ./api
+  ```
 
-   ::: zone-end
+  ::: zone-end
 
-   ::: zone pivot="vue"
+  ::: zone pivot="vue"
 
-   ```bash
-   swa start http://localhost:8080 --api ./api
-   ```
+  ```bash
+  swa start http://localhost:8080 --api ./api
+  ```
 
-   ::: zone-end
+  ::: zone-end
 
 1. Browse to `http://localhost:4280`.
 
@@ -908,9 +908,9 @@ Everything is now in place. The final step is to test if everything is working a
 
 1. You'll be redirected to this page:
 
-    :::image type="content" source="../media/static-web-apps-cli-auth-screen.png" alt-text="Screenshot showing SWA CLI fake authentication screen.":::
+  :::image type="content" source="../media/static-web-apps-cli-auth-screen.png" alt-text="Screenshot showing SWA CLI fake authentication screen.":::
 
-    This is a fake authentication screen, provided by the SWA CLI, allowing you to test authentication locally by providing yourself user details.
+  This is a fake authentication screen, provided by the SWA CLI, allowing you to test authentication locally by providing yourself user details.
 
 1. Enter `mslearn` as username and `1234` for the user ID.
 

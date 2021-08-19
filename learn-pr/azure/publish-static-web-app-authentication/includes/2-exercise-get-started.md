@@ -201,7 +201,7 @@ It's time to see your application running locally. Each front-end application ru
 
 ::: zone pivot="angular"
 
-1. Browse to `http://localhost:4200`.
+2. Browse to `http://localhost:4200`.
 
    :::image type="content" source="../media/my-shopping-list-app-angular.png" alt-text="Browsing to your Angular web app.":::
 
@@ -209,7 +209,7 @@ It's time to see your application running locally. Each front-end application ru
 
 ::: zone pivot="react"
 
-1. Browse to `http://localhost:3000`.
+2. Browse to `http://localhost:3000`.
 
    :::image type="content" source="../media/my-shopping-list-app-react.png" alt-text="Browsing to your React web app.":::
 
@@ -217,7 +217,7 @@ It's time to see your application running locally. Each front-end application ru
 
 ::: zone pivot="svelte"
 
-1. Browse to `http://localhost:5000`.
+2. Browse to `http://localhost:5000`.
 
    :::image type="content" source="../media/my-shopping-list-app-svelte.png" alt-text="Browsing to your Svelte web app.":::
 
@@ -225,7 +225,7 @@ It's time to see your application running locally. Each front-end application ru
 
 ::: zone pivot="vue"
 
-1. Browse to `http://localhost:8080`.
+2. Browse to `http://localhost:8080`.
 
    :::image type="content" source="../media/my-shopping-list-app-vue.png" alt-text="Browsing to your Vue web app.":::
 
@@ -233,7 +233,7 @@ It's time to see your application running locally. Each front-end application ru
 
    Your app should display a list of products.
 
-1. Now, stop your running app by pressing <kbd>Ctrl-C</kbd> in the terminal.
+3. Now, stop your running app by pressing <kbd>Ctrl-C</kbd> in the terminal.
 
 You built your application and now it's running locally in your browser.
 

@@ -130,7 +130,7 @@ After your app is redeployed, you can test that the new restrictions are effecti
 
 1. Enter your GitHub credentials, if prompted, and then select **Grant Consent** on the Azure consent page.
 
-  You're now logged in and should see the products list.
+You're now logged in and should see the products list.
 
 ## Next steps
 
