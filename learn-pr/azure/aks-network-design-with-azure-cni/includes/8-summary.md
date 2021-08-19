@@ -8,8 +8,9 @@ The design process for a Kubernetes cluster network can be complicated. But by s
 
 Here are some links to more information about the areas we've covered in this module.
 
-- [Configure Azure CNI networking in Azure Kubernetes Service](https://docs.microsoft.com/azure/aks/configure-azure-cni?azure-portal=true)
-- [Network concepts for applications in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/concepts-network?azure-portal=true)
-- [Scaling options for applications in Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/concepts-scale?azure-portal=true)
-- [Automatically scale a cluster to meet application demands on Azure Kubernetes Service (AKS)](https://docs.microsoft.com/azure/aks/cluster-autoscaler?azure-portal=true)
-- [Upgrade an Azure Kubernetes Service (AKS) cluster](https://docs.microsoft.com/azure/aks/upgrade-cluster?azure-portal=true)
+- [Configure Azure CNI networking in Azure Kubernetes Service](/azure/aks/configure-azure-cni)
+- [Network concepts for applications in Azure Kubernetes Service (AKS)](/azure/aks/concepts-network)
+- [Scaling options for applications in Azure Kubernetes Service (AKS)](/azure/aks/concepts-scale)
+- [Automatically scale a cluster to meet application demands on Azure Kubernetes Service (AKS)](/azure/aks/cluster-autoscaler)
+- [Upgrade an Azure Kubernetes Service (AKS) cluster](/azure/aks/upgrade-cluster)
+- IP address planning section in the [Baseline architecture for an Azure Kubernetes Service (AKS) cluster](/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks#plan-the-ip-addresses)
