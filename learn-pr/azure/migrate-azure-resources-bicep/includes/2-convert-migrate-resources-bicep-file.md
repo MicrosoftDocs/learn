@@ -27,18 +27,18 @@ Azure Resource Manager is the service that's used to deploy and manage resources
 
 There are two types of operations in Azure: control plane operations and data plane operations. Control plane operations are used to manage the resources in your subscription, while data plane operations are used to access features that are exposed by a resource. For example, you use a control plane operation to create a virtual machine, but you use a data plane operation to connect to the virtual machine by using Remote Desktop Protocol (RDP).
 
-Regardless of how each resource was created, information about the resource is made available in JSON format by Resource Manager. When you ask for a copy of the JSON representation of a resource, you're _exporting_ the resource. The JSON file that you export can be decompiled into Bicep. The export process is a control plane operation, meaning it is only exporting the configuration of the Azure resources. For example, when exporting a virtual machine, the data on a virtual machine's hard drive is not part of the export process, and when exporting a storage account, the blobs and other contents of the storage account aren't included in the export process either.
+### Export Resources
 
-The Azure portal, Azure CLI, and Azure PowerShell cmdlets can all be used to export your Azure resources and resource groups to JSON ARM templates. Later in this module, you'll practice exporting JSON ARM templates yourself.
+Regardless of how your Azure resources are created, information about each resource is made available in JSON format by Resource Manager. When you ask for a copy of the JSON representation of a resource, you're _exporting_ the resource. The JSON file that you export can be decompiled into Bicep. The export process is a control plane operation, meaning it is only exporting the configuration of the Azure resources. For example, when exporting a virtual machine, the data on a virtual machine's hard drive is not part of the export process, and when exporting a storage account, the blobs and other contents of the storage account aren't included in the export process either.
+
+Resource manager provides multiple ways to export Azure resources to a template. You can use the Azure portal, Azure CLI, and Azure PowerShell cmdlets to export single resources, multiple resources, and entire resource groups. Additionally, the Azure portal allows you to export deployments, both prior to and after their execution.
 
 > [!NOTE]
-> The export feature is unable to export more than 200 resources from a resource group at one time. If your resource group contains more than 200 resources, you'll need to export multiple times to capture all resources.
+> However you export a template, either from existing resources or deployments, treat it as a starting point and don't use it directly. Instead, use it as inspiration for your final template.
 
-### Export resources
+#### Exporting existing resources
 
-Azure provides multiple methods of exporting Azure resources to a template. You can export single resources, multiple resources, and entire resource groups. Additionally, the Azure portal gives you the option of viewing the template for a resource before you create it.
-
-There are a few things that you need to consider when exporting a resource:
+There are a few things that you need to consider when exporting existing resources:
 
 - The exported resource definition is a snapshot of that resource's current state. It will include all changes made to the resource since its initial deployment.
 - The exported template may include some default resource properties that are normally omitted from a Bicep definition. For example, it might include read-only properties that Azure sets automatically. Consider removing these properties from the resource definitions when you migrate to Bicep, to keep your Bicep files free of unnecessary code that might cause confusion.
@@ -46,109 +46,11 @@ There are a few things that you need to consider when exporting a resource:
 - Some resources can't be exported using this approach, and you need to define them manually in your Bicep file. You'll learn how to recreate these resources later in this unit.
 
 > [!NOTE]
-> However you export a template, treat it as a starting point and don't use it directly. Instead, use it as inspiration for your final template.
+> The export feature is unable to export more than 200 resources from a resource group at one time. If your resource group contains more than 200 resources, you'll need to export multiple times to capture all resources.
 
-#### Export a single resource
+#### Exporting deployments
 
-A single resource's definition can be exported to a JSON template by using the Azure portal. After you open a resource, select the **Export template** menu item to view the template:
-
-:::image type="content" source="../media/2-export-single-resource.png" alt-text="Screenshot of the Azure portal showing a storage account, with the Export template menu item highlighted.":::
-
-::: zone pivot="cli"
-
-Alternatively, you can export a resource's definition through a script by using the `az group export` command and by specifying the resource ID:
-
-```azurecli
-virtualMachineResourceId=$(az resource show \
-   --resource-group 'rg-app-prod-truckline' \
-   --name 'vm-prod-001' \
-   --resource-type 'Microsoft.Compute/virtualMachines' \
-   --query id \
-   --output tsv)
-az group export \
-   --resource-group 'rg-app-prod-truckline' \
-   --resource-ids $virtualMachineResourceId
-```
-
-::: zone-end
-
-::: zone pivot="powershell"
-
-Alternatively, you can export a resource's definition through a script by using the `Export-AzResourceGroup` cmdlet and by specifying the resource ID:
-
-```azurepowershell
-$virtualMachine = Get-AzResource `
-   -ResourceGroupName 'rg-app-prod-truckline' `
-   -ResourceName 'vm-prod-001' `
-   -ResourceType 'Microsoft.Compute/virtualMachines'
-Export-AzResourceGroup `
-   -ResourceGroupName 'rg-app-prod-truckline' `
-   -Resource $virtualMachine.ResourceId
-```
-
-::: zone-end
-
-#### Export multiple resources
-
-You can export all of the resources in a resource group by using the Azure portal by opening up the resource group blade and selecting **Export template**:
-
-:::image type="content" source="../media/2-export-resource-group.png" alt-text="Screenshot of the Azure portal showing a resource group, with the Export template menu item highlighted.":::
-
-::: zone pivot="cli"
-
-To use the Azure CLI to export all of the resources in a resource group, you use the `az group export` command and specify the resource group name:
-
-```azurecli
-az group export --name 'rg-app-prod-truckline'
-```
-
-::: zone-end
-
-::: zone pivot="powershell"
-
-To use Azure PowerShell to export all of the resources in a resource group, you use the `Export-AzResourceGroup` cmdlet and specify the resource group name:
-
-```azurepowershell
-Export-AzResourceGroup -ResourceGroupName 'rg-app-prod-truckline'
-```
-
-::: zone-end
-
-Sometimes, you might want to export multiple resources from a resource group, but not everything. In the resource group view, check the resources you want to export, and then select the **Export template** menu item:
-
-:::image type="content" source="../media/2-export-multiple-resources.png" alt-text="Screenshot of the Azure portal showing a resource group, with two resources checked and the Export template menu item highlighted.":::
-
-::: zone pivot="cli"
-
-To export multiple resources by using the Azure CLI, you need to pass the resource IDs, separated by a space, to the `az group export` command:
-
-```azurecli
-az group export \
-   --resource-group 'rg-app-prod-truckline' \
-   --resource-ids $resource1Id $resource2Id $resource3Id
-```
-
-::: zone-end
-
-::: zone pivot="powershell"
-
-To export multiple resources by using Azure PowerShell, you need to pass the resource IDs in an array to the `Export-Az-ResourceGroup` command:
-
-```azurepowershell
-Export-AzResourceGroup `
-   -ResourceGroupName 'rg-app-prod-truckline' `
-   -Resource @($resource1.ResourceId, $resource3.ResourceId, $resource3.ResourceId,)
-```
-
-::: zone-end
-
-#### Use the Azure portal to view a template before you create a resource
-
-If you've ever deployed a resource manually from the Azure portal, you may have noticed the option to **Download a template for automation** before the deployment of the resource. This option exports a JSON ARM template based on the names and properties you've set while building the resource in the portal:
-
-:::image type="content" source="../media/2-download-template-automation.png" alt-text="Screenshot of the Azure portal showing the deployment of a new resource, with the 'Download template for automation' button highlighted." border="true":::
-
-#### View the template for a previous deployment
+If you've ever deployed a resource manually from the Azure portal, you may have noticed the option to **Download a template for automation** on the **Review + create** page. This option exports a JSON ARM template based on the names and properties you've set while building the resource in the portal.
 
 Resource Manager tracks all resources and resource deployments. If the deployments were created using a compatible tool, you can access the deployment template from the resource group's deployment history.
 
@@ -161,27 +63,10 @@ There are a few things that you need to consider when exporting your templates u
 - You can't select specific resources from a multi-resource deployment. This option will download all resources that were part of the initial deployment.
 - The template will only include resource properties needed for deployment.
 - The template might include parameters that you can use to redeploy the template in multiple environments.
-
-> [!TIP]
-> When you copy a template from a deployment, it probably won't include extraneous properties. You should still check that the template includes everything you expect, though.
-
-To view a deployment and its template from the Azure portal, open a resource group and select **Deployments**, then select the deployment you want to export. Select **Template** to view and copy the template.
-
-:::image type="content" source="../media/2-deployment-template.png" alt-text="Screenshot of the Azure portal showing a resource group deployment, with the Template menu item highlighted.":::
-
-::: zone pivot="cli"
+- The template probably won't include extraneous properties, but you should still check that the template includes everything that you expect.
 
 > [!NOTE]
-> You can also export a deployment from the Azure CLI by using the `az deployment group export` command.
-
-::: zone-end
-
-::: zone pivot="powershell"
-
-> [!NOTE]
-> You can also export a deployment from Azure PowerShell by using the `Save-AzResourceGroupDeploymentTemplate` cmdlet.
-
-::: zone-end
+> You can also export a deployment from the Azure CLI by using the `az deployment group export` command or from Azure PowerShell by using the `Save-AzResourceGroupDeploymentTemplate` cmdlet.
 
 ### Decompile the source JSON ARM template
 
@@ -221,7 +106,7 @@ For any resource that wasn't exported, such as virtual machine extensions, you'l
 
 #### Azure Resource Explorer
 
-[Azure Resource Explorer](/azure/azure-resource-manager/templates/view-resources#use-resource-explorer) is a tool embedded into the Azure portal that allows you to view a JSON representation of your deployed resources. The portal doesn't show certain resource types, but Resource Explorer can provide a JSON representation of those resources. You can find Resource Explorer in the Azure portal by searching for the tool in the search bar as shown below:
+[Azure Resource Explorer](/azure/azure-resource-manager/templates/view-resources?azure-portal=true#use-resource-explorer) is a tool embedded into the Azure portal that allows you to view a JSON representation of your deployed resources. The portal doesn't show certain resource types, but Resource Explorer can provide a JSON representation of those resources. You can find Resource Explorer in the Azure portal by searching for the tool in the search bar as shown below:
 
 :::image type="content" source="../media/2-resource-explorer-1.png" alt-text="Screenshot of Azure portal showing the search box with 'resource explorer' entered.":::
 
@@ -271,13 +156,13 @@ resource dependencyAgentWindows 'Microsoft.Compute/virtualMachines/extensions@20
 
 #### ARM template reference documentation
 
-The [ARM template reference documentation](/azure/templates/) is a source of information for ARM template structure, resource types, API versions, and property definitions for Azure resources. Both JSON and Bicep examples are included.
+The [ARM template reference documentation](/azure/templates/?azure-portal=true) is a source of information for ARM template structure, resource types, API versions, and property definitions for Azure resources. Both JSON and Bicep examples are included.
 
 It allows you to choose specific resource providers and resource types, such as `Microsoft.Web/serverFarms` and their API versions. You can review which resource properties are required and which are optional. Most properties include documentation to help you understand what they do.
 
 #### Azure Quickstart Templates
 
-The [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/) repository is a collection of community-contributed templates. This repository of searchable templates provides examples of many Azure resources and solutions. In some quickstarts, both a JSON ARM template and a Bicep ARM template are available to view. These templates can be used as a reference point to help you build and verify your templates for deployment.
+The [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates?azure-portal=true) repository is a collection of community-contributed templates. This repository of searchable templates provides examples of many Azure resources and solutions. In some quickstarts, both a JSON ARM template and a Bicep ARM template are available to view. These templates can be used as a reference point to help you build and verify your templates for deployment.
 
 For example, suppose you want to find a template that builds an App Service plan and app. In the repository, you'll notice each quickstart template gives you the option to deploy the template directly to Azure, or browse the template on GitHub.
 

@@ -64,11 +64,11 @@ If you deploy this Bicep template as-is, the deployment would succeed, but there
 
 When you use Bicep to interact with your Azure resources, you specify an _API version_ to use. As Azure's products change and improve, newer API versions are released that provide access to new functionality. When exporting Azure resources, the exported template may not have the latest API version for a resource type. If there are specific properties that you need for future deployments, update the API to the appropriate version. It's good practice to review the API versions for each exported resource.
 
-Consider using the [Azure ARM Template Reference](/azure/templates/) documentation to help verify the appropriate API versions and resource properties for your template.
+Consider using the [Azure ARM Template Reference](/azure/templates/?azure-portal=true) documentation to help verify the appropriate API versions and resource properties for your template.
 
 ### Review the linter suggestions in your new Bicep file
 
-When creating Bicep files using the [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), the linter runs automatically and highlights suggestions and errors in your code. Many of the suggestions and errors include an option to apply a quick fix of the issue. Review these recommendations and adjust your Bicep file.
+When creating Bicep files using the [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true), the linter runs automatically and highlights suggestions and errors in your code. Many of the suggestions and errors include an option to apply a quick fix of the issue. Review these recommendations and adjust your Bicep file.
 
 ### Revise parameters, variables, and symbolic names
 
@@ -122,7 +122,7 @@ Single-line comments can be added as headers for sections of code, or on individ
 
 ### Follow Bicep best practices
 
-Make sure your Bicep file is following the standard recommendations. Review the [Bicep best practices](/azure/azure-resource-manager/bicep/best-practices) reference document for anything you might have missed.
+Make sure your Bicep file is following the standard recommendations. Review the [Bicep best practices](/azure/azure-resource-manager/bicep/best-practices?azure-portal=true) reference document for anything you might have missed.
 
 ### The converted template
 

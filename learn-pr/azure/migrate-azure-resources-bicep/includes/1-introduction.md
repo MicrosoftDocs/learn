@@ -32,8 +32,8 @@ To follow along with the exercises in the module, you'll need:
 - An Azure account, with the ability to create resource groups.
   > [!TIP]
   > If you can't meet these requirements with your current Azure account, you can get a [free trial](https://azure.microsoft.com/free/?azure-portal=true) and create a new Azure subscription and tenant.
-- [Visual Studio Code](https://code.visualstudio.com), installed locally.  
-- The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), installed locally.  
+- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true), installed locally.  
+- The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true), installed locally. 
 - Either:
-  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools, installed locally.  
-  - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps), installed locally.
+  - The latest [Azure CLI](/cli/azure/install-azure-cli/?azure-portal=true) tools, installed locally.  
+  - The latest version of [Azure PowerShell](/powershell/azure/install-az-ps/?azure-portal=true), installed locally.
