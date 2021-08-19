@@ -13,11 +13,14 @@ Generate certificates to secure communications with the public test.mosquitto.or
 
 1. Communications between Azure Sphere and IoT Central are secured with certificates. In the previous module, you linked the Azure Sphere tenant Certificate Authority certificate with IoT Central. IoT Central will trust messages signed by the Azure Sphere certificates in the trusted Azure Sphere tenant.
 
+In this module, you will:
 
-In this module, you'll learn how to:
+* Declare the network endpoints for the Altair emulator.
+* Get connection information for Azure IoT Central.
+* Secure communications to the test.mosquitto.org MQTT broker.
 
 ## Prerequisites
 
-Add a list or write None.
+TBD
 
 In the next unit, you will learn how to declare the network endpoints required by the Altair emulator.

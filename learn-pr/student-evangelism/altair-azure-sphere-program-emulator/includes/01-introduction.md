@@ -24,9 +24,12 @@ The following are useful reference manuals for the Altair emulator:
 * [Word-Master user's guide](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/Word-Master_Manual.pdf?azure-portal=true)
 * [CP/M BDOS System Calls](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/CP_M_information_archive_BDOS_system_calls.pdf)
 
-In this module, you'll learn how to:
+In this module, you will:
 
-TBD
+* Understand Altair BASIC and CP/M, and how to use them.
+* Learn how to program the Altair emulator using Altair BASIC.
+* Write an Altair BASIC application.
+* Learn about programming options and configurations for the Altair emulator.
 
 ## Prerequisites
 

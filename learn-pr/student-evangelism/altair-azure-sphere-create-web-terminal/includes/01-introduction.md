@@ -45,8 +45,13 @@ Disk writes work as follows:
 1. The Altair emulator disk driver sends the disk sector to the cache manager.
 1. The disk sector is then sent to the cloud-based virtual disk manager.
 
-In this module, you'll learn how to:
+In this module, you will:
+
+* Set up IoT Central to run with the Altair 8800 emulator.
+* Customize the Altair emulator in an Azure Sphere template.
+* Create an Altair Web Terminal as an Azure static web app.
+* Install and run the Altair Python virtual disk server.
 
 ## Prerequisites
 
-Add a list or write None.
+TBD

@@ -2,7 +2,7 @@
 uid: learn.altair-azure-sphere-computing-fundamentals
 metadata:
   title: Altair 8800 and Azure Sphere computing fundamentals 
-  description: Learn computing fundamentals with Altair 8800 and Azure Sphere.
+  description: Learn computing fundamentals for creating a cloud terminal Altair 8800 and Azure Sphere solution.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover
@@ -10,11 +10,11 @@ metadata:
   ms.prod: learning-azure-iot-central
 title: Altair 8800 and Azure Sphere computing fundamentals
 summary: |
-  In this learning path, you'll learn how to .
+  In this learning path, you will TBD
   
   By the end of this learning path, you will be able to: 
-   - One, and so on 
-prerequisites: None or  . . .
+   - TBD
+prerequisites: TBD
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - beginner
