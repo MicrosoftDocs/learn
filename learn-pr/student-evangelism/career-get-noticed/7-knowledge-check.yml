@@ -19,7 +19,7 @@ quiz:
         - content: Up to 10 seconds.
           isCorrect: true
           explanation: Due to the amount of resumes they receive on a daily basis,
-            recruiters can only afford to fully read those that comply with the
+            recruiters can only afford to fully read resumes that comply with the
             position's requirements and peak their interest.
         - content: Anytime between 30 seconds and a minute.
           isCorrect: false
