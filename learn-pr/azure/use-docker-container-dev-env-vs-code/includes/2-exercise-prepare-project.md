@@ -23,13 +23,6 @@ The project should now be open in Visual Studio Code.
 > [!NOTE]
 > If you receive a warning in Visual Studio Code about selecting a Python interpreter, you can safely ignore it.
 
-### Windows Only : Configure Docker
-
-If you are using Windows and are **not** using the [Windows Subsystem For Linux (WSL)](https://docs.microsoft.com/windows/wsl/about?WT.mc_id=aiml-24635-ayyonet) backend, you will need to allow Docker to access the sample project through the File Sharing settings.
-
-1. Right-click on the Docker task bar item, select Settings > Resources > File Sharing and add the location where you cloned the sample project in the previous step. This option is not available if you have enabled the WSL 2 back-end.
-
-   :::image type="content" source="../media/docker-file-sharing.png" alt-text="Screenshot of the Docker Desktop client with File Sharing settings open." loc-scope="other"::: <!-- no-loc -->
 
 ## Install the Remote - Containers extension
 
@@ -40,3 +33,11 @@ If you are using Windows and are **not** using the [Windows Subsystem For Linux 
    :::image type="content" source="../media/install-remote-containers.png" alt-text="Screenshot of the Visual Studio Code extension gallery showing Remote Containers extension." loc-scope="other"::: <!-- no-loc -->
 
 The Remote - Containers extension will be installed, and you'll have access to the commands that it adds to Visual Studio Code.
+
+### Windows Only : Configure Docker
+
+If you are using Windows and are **not** using the Windows Subsystem For Linux (WSL) backend, you will need to allow Docker to access the sample project through the File Sharing settings.
+
+1. Right-click on the Docker task bar item, select Settings > Resources > File Sharing and add the location where you cloned the sample project in the previous step. This option is not available if you have enabled the WSL 2 back-end.
+
+   :::image type="content" source="../media/docker-file-sharing.png" alt-text="Screenshot of the Docker Desktop client with File Sharing settings open." loc-scope="other"::: <!-- no-loc -->
