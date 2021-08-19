@@ -2,7 +2,7 @@ In this module, you will learn about the architecture of Azure Sphere and the ap
 
 ## Azure Sphere Architecture
 
-The Azure Sphere microcontroller unit (MCU) has three developer-accessible cores, a Cortex-A7 which runs a Linux kernel, and two Cortex-M4 cores that can run bare-metal code, or a real-time operating system such as Azure RTOS or FreeRTOS.
+The Azure Sphere microcontroller unit (MCU) has three developer-accessible cores, a Cortex-A7 that runs a Linux kernel, and two Cortex-M4 cores that can run bare-metal code, or a real-time operating system such as Azure RTOS or FreeRTOS.
 
 High-level applications running on the Cortex-A7 Linux kernel are used for less timing-sensitive tasks such as establishing network connections, negotiating security, updating device state, communicating with real-time core applications, and sending telemetry messages to cloud gateways such as IoT Hub and IoT Central.
 
@@ -24,7 +24,7 @@ The Altair emulator consists of three applications, one high-level application, 
 
 1. The **AltairRT_enviromon** real-time application.
 
-    * This is a bare metal real-time application responsible for sensing environmental data. If you are using the Avnet Azure Sphere then the onboard temperature and pressure sensor are used. If you are using the Seeed Studio Azure Sphere dev kits then random sensible environment data is generated. This data is available to BASIC apps running on the Altair emulator.
+    * A bare-metal real-time application responsible for sensing environmental data. If you're using the Avnet Azure Sphere, the onboard temperature and pressure sensor are used. If you're using the Seeed Studio Azure Sphere dev kits, random sensible environment data is generated. This data is available to BASIC apps running on the Altair emulator.
 
 <!-- ## IoT Central IoT Plug and Play model
 
