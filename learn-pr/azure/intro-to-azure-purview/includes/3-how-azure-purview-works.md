@@ -46,7 +46,7 @@ A scan rule set is a container for grouping a set of scan rules together so that
 
 Scanning the data sources will require the entry of credentials for these sources. You can store the credentials in an Azure Key Vault for security and ease of access by your scan rules. Purview Studio comes with existing system scan rule sets that you can select when creating a new scan rule, or you can specify a custom scan rule set.
 
-:::image type="content" source="../media/scan-rule-sets.png" alt-text="Screenshot depicting the Management panel selected in Purview Studio and the Scan rule sets option also selected.  Displayed is a list of System provided scan rule sets that pre-configured for the various data sources such as Azure File Service, SQL Server, etc.":::
+:::image type="content" source="../media/scan-rule-sets.png" lightbox="../media/scan-rule-sets-expanded.png" alt-text="Screenshot depicting the Management panel selected in Purview Studio and the Scan rule sets option also selected.  Displayed is a list of System provided scan rule sets that pre-configured for the various data sources such as Azure File Service, SQL Server, etc.":::
 
 You can also select the file types to include in the scan. The file types will be used in the schema extraction and classification of the data. Built-in file type support includes the following types:
 
@@ -104,4 +104,4 @@ Data lineage can offer insights into the data lifecycle by looking at the data p
 
 Azure Purview represents this data lineage in a visual form, showing data movement from source to destination.
 
-:::image type="content" source="../media/lineage-end-end.png" alt-text="Screen shot depicting a sample data lineage graph in Azure Purview":::
+:::image type="content" source="../media/lineage-end-end.png" lightbox="../media/lineage-end-end-expanded.png" alt-text="Screen shot depicting a sample data lineage graph in Azure Purview":::
