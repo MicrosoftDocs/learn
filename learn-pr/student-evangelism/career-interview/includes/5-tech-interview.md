@@ -2,7 +2,7 @@
 
 You made it to the interview. Congratulations, that means someone looked through your resume and liked what they saw. It most likely also means you passed a phone screening or a take -home test.
 
-You are already a winner. The interview step is a bit stressful but if you've made it thus far you are in a good place. Let’s think of this phase as consisting of a _before_, _during_ and _after_. Mastering each of these phases will maximize your chances to land that job.
+You are already a winner. The interview step is a bit stressful but if you've made it thus far you are in a good place. Let's think of this phase as consisting of a _before_, _during_ and _after_. Mastering each of these phases will maximize your chances to land that job.
 
 ## The take home assignment
 
@@ -11,7 +11,7 @@ You might be asked to complete a take home assignment. What's important to consi
 > [!TIP]
 > If you're not sure about a requirement or how to interpret part of the task, reach out and ask for clarification. In fact, some companies make the task unclear on purpose and want to see if the candidate will reach out.  
 
-Your solution should fulfill the following: 
+Your solution should fulfill the following:
 
 - **Well-structured code**. You should divide up the code into a reasonable number of files and components. Nobody wants to see all the code in one file. Think about how someone maintaining the code would want it structured.  
 
@@ -31,15 +31,14 @@ Your solution should fulfill the following:
 
 ### What if time is too tight?
 
-Sometimes you won’t have a chance to finish a task in the allotted time. Don't worry, reach out at that point. Most companies are understanding and might give you more time if you explain the circumstances.
+Sometimes you won't have a chance to finish a task in the allotted time. Don't worry, reach out at that point. Most companies are understanding and might give you more time if you explain the circumstances.
 
 > [!TIP]
-
 > Even if you don't finish the entire task, submit what you have. Usually appraisers want to see your reasoning, rather than a full-blown solution of a task.
 
 ## Day before interview
 
-Before your interview, you can do a lot to prepare your mind and body for your test. Practice various exercises but more importantly, take care of yourself. Rest well, exercise, drink plenty of fluids, and eat well. Prepare like you would to win a marathon. After all, you're running a kind of race where the goal is a great future. 
+Before your interview, you can do a lot to prepare your mind and body for your test. Practice various exercises but more importantly, take care of yourself. Rest well, exercise, drink plenty of fluids, and eat well. Prepare like you would to win a marathon. After all, you're running a kind of race where the goal is a great future.
 
 ## Interview day
 

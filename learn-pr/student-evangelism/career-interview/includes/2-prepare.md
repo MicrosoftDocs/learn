@@ -1,4 +1,4 @@
-As a software developer, you are likely to encounter more than one type of interview. Depending on the type of interview, you need to prepare differently. Different types of interviews assess your tech skill level and analyze your ability to function in a team. Candidates often spend all their time honing their technical skills yet working in teams and collaborating with people from many disciplines will be crucial! 
+As a software developer, you are likely to encounter more than one type of interview. Depending on the type of interview, you need to prepare differently. Different types of interviews assess your tech skill level and analyze your ability to function in a team. Candidates often spend all their time honing their technical skills yet working in teams and collaborating with people from many disciplines will be crucial!
 
 ## Types of interviews
 
@@ -20,7 +20,7 @@ No two tech companies are the same, so knowing how to prepare for different inte
 
 - **Enterprise focused**. Some technical interviews are focus on enterprise software, so called line-of-business applications or LOB. Challenges might revolve around maintaining applications, refactoring old code, and the interview focus is less on performance and more on integrating systems.
 
-So, how can you guess the kind of interview your prospective company will assign? You can do research to discover your target position’s expectations. You should also ask your recruiter what to expect and if they have materials to help you prepare.  
+So, how can you guess the kind of interview your prospective company will assign? You can do research to discover your target position's expectations. You should also ask your recruiter what to expect and if they have materials to help you prepare.  
 
 ### Algorithm focused
 
@@ -54,7 +54,7 @@ These platforms offer many problems to try to solve and will let you use differe
 
 ## Mini exercise, work on a task
 
-Visit several of these sites and try a coding task. 
+Visit several of these sites and try a coding task.
 
 Pick your favorite and set yourself a goal to practice a task a day, or choose a cadence that works for you.
 
@@ -63,7 +63,7 @@ Pick your favorite and set yourself a goal to practice a task a day, or choose a
 
 ### Additional practice - books
 
-Another way to practice includes well-known books which contain both sample interview questions and their solutions as well as strategies for interview success. Here are some examples 
+Another way to practice includes well-known books which contain both sample interview questions and their solutions as well as strategies for interview success. Here are some examples:
 
 - [Cracking the Coding Interview](https://www.amazon.com/Cracking-Coding-Interview-6th-Programming/dp/0984782850) by Gayle Laakmann McDowell 
 
@@ -91,7 +91,7 @@ To prepare for these types of interviews, you need to read up on patterns. It's 
 
 Below is a list of links regarding these two topics:
 
-- [Software design patterns](https://en.wikipedia.org/wiki/Software_design_pattern) 
+- [Software design patterns](https://en.wikipedia.org/wiki/Software_design_pattern)
 
 - [Design Patterns: Elements of Reusable Object-Oriented Software](https://www.amazon.com/Design-Patterns-Object-Oriented-Addison-Wesley-Professional-ebook/dp/B000SEIBB8) by Erich Gamma et al. 
 
@@ -101,7 +101,7 @@ Below is a list of links regarding these two topics:
 
 ## Context matters
 
-Another thing to consider when preparing for a tech interview is that some companies will let you program a problem in your language of choice but others want you to use a specific language or framework. To prepare for such interviews, you need to read up on how to best "do things" in a language or framework.  For example, for JavaScript you are likely to get questions on how the language works and its patterns, but for .NET you might be asked how to solve problems given the framework. 
+Another thing to consider when preparing for a tech interview is that some companies will let you program a problem in your language of choice but others want you to use a specific language or framework. To prepare for such interviews, you need to read up on how to best "do things" in a language or framework.  For example, for JavaScript you are likely to get questions on how the language works and its patterns, but for .NET you might be asked how to solve problems given the framework.
 
 ### How to prepare for context?
 
@@ -113,7 +113,7 @@ You can usually use a search engine to find the most common questions asked for 
 
 A great way to prepare for questions about a given language or framework is to implement many small projects that will make you learn things in a better way. Here are some suggestions: 
 
-- [40 JavaScript projects to build](https://www.freecodecamp.org/news/javascript-projects-for-beginners/) 
+- [40 JavaScript projects to build](https://www.freecodecamp.org/news/javascript-projects-for-beginners/)
 
 - [Web Dev For Beginners](https://github.com/microsoft/Web-Dev-For-Beginners). 24 lessons with exercises. Seven major projects and available in 11+ languages.
 
@@ -121,8 +121,7 @@ A great way to prepare for questions about a given language or framework is to i
 
 Spend as much time as possible preparing by trying to solve various problems but also don't be afraid to reach out to the recruiter or recruitment team and ask for guidelines and materials. Some companies actually offer interview coaches. Having these kind of materials can help you focus on what this company believes is important. Some companies will send "how to prepare" material to the candidate; however, it is not recommended that you reach out proactively to ask for interview preparation materials if you do not receive them from the company.
 
-> [!TIP] 
-
+> [!TIP]
 > Be brave! Ask for guidance and preparation content. Doing so shows interest and might increase the likelihood that you pass the interview.
 
 ## General guidelines

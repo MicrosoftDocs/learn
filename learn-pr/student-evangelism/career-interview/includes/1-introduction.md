@@ -4,7 +4,7 @@ Congratulations on landing the interview! What are your next steps? When it come
 
 An interview is usually the last step before being offered a job.
 
-You're likely to go through a number of them with an organization. Additionally, there are different types of interviews with different expectations. 
+You're likely to go through a number of them with an organization. Additionally, there are different types of interviews with different expectations.
 
 As a software developer, you will encounter interviews that not only test your technical skills but also your ability to clearly communicate. Your soft skills will also be appraised.
 

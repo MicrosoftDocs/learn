@@ -19,7 +19,7 @@ There are many types of questions you can practice like for example:
 
 1. Take an example of some code you have written and challenge yourself to explain it verbally in five minutes.
 
-   > Take a parser for a calculator and explain, what the task was, what were the challenges and how you approached them.
+   > Take a parser for a calculator and explain what the task was, what were the challenges, and how you approached them.
 
 ## Structure your answer
 
@@ -38,8 +38,8 @@ Practice structuring your explanation minute by minute:
    > Here's an example output:
    >
    > The problem:
-   The task was about designing a calculator. The input is taken from the command line. 
-   First I needed to find out if there was any considerations like what operators it should support and how the input happens, if numbers and operators are input separately. 
+   > The task was about designing a calculator. The input is taken from the command line.
+   > First I needed to find out if there was any considerations like what operators it should support and how the input happens, if numbers and operators are input separately.
    >
    > Answer: Input is on the form of an expression `1 + 1`
    >

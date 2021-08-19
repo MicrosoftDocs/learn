@@ -1,25 +1,26 @@
 ### YamlMime:Module
-uid: learn.career-interview-interview
+uid: learn.career-interview
 metadata:
   title: Successful interviewing
-  description: In this module you will learn how to prepare for a technical and
+  description: In this module, you'll learn how to prepare for a technical and
     non-technical interview. You will also get recommendations on how to best
     carry out the interview.
-  ms.date: 06/04/2020
+  ms.date: 08/019/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Successful interviewing
-summary: In this module you will learn how to prepare for a technical and
+summary: In this module you'll learn how to prepare for a technical and
   non-technical interview. You will also get recommendations on how to best
   carry out the interview.
 abstract: |
-  - Understand what types of interviews exist.
-  - How to practice for the interviews.
-  - Tips on carrying out the interviews in the most efficient way.
+  - Understand what types of interviews exist
+  - How to practice for the interviews
+  - Tips on carrying out the interviews in the most efficient way
   - Following up
-iconUrl: /learn/achievements/interview.svg
+iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels:
   - beginner
 roles:
@@ -38,4 +39,4 @@ units:
   - learn.career-interview.8-knowledge-check
   - learn.career-interview.9-summary
 badge:
-  uid: learn.interview.badge
+  uid: learn.career-interview.badge
