@@ -1,8 +1,8 @@
 ## Scenario
 
-Your company needs to ensure virtual machine deployments are consistent across the organization.
+You company needs to ensure virtual machine deployments are consistent across the organization.
 
-Your use Azure Resource Manager templates to deploy resources including virtual machines.
+You use Azure Resource Manager templates to deploy resources including virtual machines.
 
 ## Skills measured
 
