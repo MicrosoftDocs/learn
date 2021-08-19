@@ -4,7 +4,7 @@ title: Exercise - write a test
 metadata:
   unitType: learning-content
   title: Exercise - write a test
-  description: Learn to create a test project, add a reference, and write a test.
+  description: Build out a sample app by adding a test project, adding references, and writing asserts in your first test.
   author: kendrahavens
   ms.author: kehavens
   ms.date: 07/19/2021

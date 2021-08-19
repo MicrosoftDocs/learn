@@ -4,7 +4,7 @@ This unit will cover a few useful test writing tips:
 * **Data driven tests**: Run the same test repeatedly with different parameters.
 * **Mocking**: Isolate your test by mocking parts of your code that don't affect the test outcome.
 
-You can brush up on different types of tests and more testing concepts with [Introduction to software testing concepts](/learn/modules/visual-studio-test-concepts/). There are many tools out there to help you write good tests that help make your tests easy to understand, avoid repetition, and help you test any architecture. Let's go over some popular ones and their advantages.
+You can learn about different types of tests and more testing concepts with [Introduction to software testing concepts](/learn/modules/visual-studio-test-concepts/). There are many tools to help make tests easy to understand, avoid repetition, and get coverage for any architecture. Let's go over some popular ones and their advantages.
 
 ## Fluent Assertions
 
@@ -28,7 +28,7 @@ public void AddTest()
 
 ## Data driven tests
 
-[Data driven tests](/visualstudio/test/how-to-create-a-data-driven-unit-test) (also known as parameterized testing or DDT) allows you to run the same test method a number of times with a variety of parameters. This allows you to avoid repetition in your code while also checking the same function with a whole set of different data inputs. You can input data in-line as shown in the example below or even connect to a database the get input.
+[Data driven tests](/visualstudio/test/how-to-create-a-data-driven-unit-test) allows you to run the same test method many times with various parameters. This test may also be refered to as parameterized testing or DDT. This ability allows you to avoid repetition in your code while also checking the same function with a whole set of different data inputs. You can input data in-line as shown in the example below or even connect to a database to get input.
 
 ```csharp
 [DataTestMethod]
@@ -48,10 +48,10 @@ public void AddDataTests(int x, int y, int expected)
 
 ## Mocking
 
-* Sometimes the architecture of your code is not as modular as you may want in order to unit test it well. In order to isolate the parts of your code that you are testing without re-writing it you may want to use a mocking framework. Mocking helps you isolate the code you are trying to test by creating stubs or shims of that code's dependencies. This allows the code you are testing to make the required calls to its dependencies without actually testing the dependencies. This helps you focus a unit test down to precisely the behavior you want to test. There are many popular mocking frameworks available including [MOQ](https://github.com/Moq/moq4/wiki/Quickstart) and [Microsoft Fakes](/visualstudio/test/isolating-code-under-test-with-microsoft-fakes).
+* Sometimes the architecture of your code isn't modular enough to unit test it well. In order to isolate the parts of your code that you're testing without rewriting it you may want to use a mocking framework. Mocking helps you isolate the code you're trying to test by creating stubs or shims of that code's dependencies. Stubs and shims allow the code you're testing to make the required calls to its dependencies without actually testing the dependencies. This ability helps you focus a unit test down to precisely the behavior you want to test. There are many popular mocking frameworks available including [MOQ](https://github.com/Moq/moq4/wiki/Quickstart) and [Microsoft Fakes](/visualstudio/test/isolating-code-under-test-with-microsoft-fakes).
 * You can find a [full tutorial for Microsoft Fakes here](/visualstudio/test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing), but let's explore a short overview.
-  * Note that Microsoft Fakes is only available with Visual Studio Enterprise.
-  * Navigate to the test project you want to isolate in the Solution Explorer, right-click on the project under the Project node that you want to mock, and select 'Add Fakes Assembly'.
+  * Microsoft Fakes is only available with Visual Studio Enterprise.
+  * Navigate to the test project you want to isolate in the Solution Explorer. Right-click on the project under the Project node that you want to mock and select 'Add Fakes Assembly'.
 
    :::image type="content" source="../media/test-add-fakes.png" alt-text="Screenshot in Visual Studio of Solution Explorer showing the projects node under the LearnMyCalculator.Tests project expanded. The right-click menu s open on the LearnMyCalculatorApp node underneath projects. The command Add Fakes Assembly is selected.":::
 

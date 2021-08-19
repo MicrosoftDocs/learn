@@ -13,17 +13,17 @@ metadata:
 durationInMinutes: 5
 content: |
   [!include[](includes/2-create-a-test.md)]
-  quiz:
+quiz:
   questions:
   - content: You don't need to import the namespace of your product code if your test project already references the target project.
     choices:
     - content: "True"
       isCorrect: false
-      explanation: "Incorrect, you need to both importing the namespace and add a reference to the project you'd like to test."
+      explanation: "Incorrect, you need to import both the namespace and add a reference to the project you'd like to test."
     - content: "False"
       isCorrect: true
-      explanation: "Correct! You need to both importing the namespace and add a reference to the project you'd like to test."
-  - content: If one assert statement fails the test will fail.
+      explanation: "Correct! You need to import both the namespace and add a reference to the project you'd like to test."
+  - content: If one assert statement fails, the test will fail.
     choices:
     - content: "True"
       isCorrect: true

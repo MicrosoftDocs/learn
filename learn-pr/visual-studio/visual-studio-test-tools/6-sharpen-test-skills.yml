@@ -15,15 +15,15 @@ content: |
   [!include[](includes/6-sharpen-test-skills.md)]
 quiz:
   questions:
-  - content: If you have one method that you'd like to test with multiple different inputs, what testing tool could help you?
+  - content: Say you have one method that you'd like to test with multiple different inputs. What testing tool could help you?
     choices:
     - content: "Data driven tests"
       isCorrect: true
-      explanation: "You are correct! Data driven tests can reduce repetition in your code by letting you run a test with multiple different inputs."
+      explanation: "You're correct! Data driven tests can reduce repetition in your code by letting you run a test with multiple different inputs."
     - content: "Mocking"
       isCorrect: false
       explanation: "Not quite! Try again."
-    - content: "No framework is needed, you should simply copy and paste the test multiple times and only change the parameters."
+    - content: "No framework is needed, you should copy and paste the test multiple times and only change the parameters."
       isCorrect: false
       explanation: "Not quite! Try again."
   - content: Stubs and shims are found in what testing tool?
@@ -36,4 +36,4 @@ quiz:
       explanation: "Not quite! Try again."
     - content: "Mocking"
       isCorrect: true
-      explanation: "Correct! Mocking uses stubs and shims to isolate code so you are only testing one specific piece of your project at a time."
+      explanation: "Correct! Mocking uses stubs and shims to isolate code so you're only testing one specific piece of your project at a time."

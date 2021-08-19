@@ -1,4 +1,4 @@
-Now that you can write and run tests let's go over some of the test tools built-in to Visual Studio to help you get the most out of testing.
+Now let's go over some of the test tools built-in to Visual Studio to help you get the most out of testing.
 
 * View your test suite in the Test Explorer
 * Run test suites
@@ -7,7 +7,7 @@ Now that you can write and run tests let's go over some of the test tools built-
 ## View your test suite in the Test Explorer
 
 * A test suite is any collection of tests. There are many ways you can group tests depending on what task is at hand.
-* You can view a list of all your tests in the Test Explorer in Visual Studio. To open this window use the top-level "Test" menu and select "Test Explorer."
+* You can view a list of all your tests in the Test Explorer in Visual Studio. To open this window, use the top-level "Test" menu and select "Test Explorer."
 
    :::image type="content" source="../media/test-menu-test-explorer.png" alt-text="Screenshot in Visual Studio of top-level menu item Test open and Test Explorer highlighted within the sub menu.":::
 
@@ -26,7 +26,7 @@ Now that you can write and run tests let's go over some of the test tools built-
 
    :::image type="content" source="../media/test-explorer-customized-groupby.png" alt-text="Screenshot in Visual Studio of Test Explorer groupby showing two new groupings selected Project as the first selection and Namespace as the second. The test list shows tests grouped by Project and then Namespace.":::
 
-In the next exercise we'll delve deeper into Test Explorer functionality, but if you want a full list of capabilities of this window you can read more in the [Test Explorer docs](/visualstudio/test/run-unit-tests-with-test-explorer).
+In the next exercise we'll delve deeper into Test Explorer functionality. If you want a full list of capabilities of this window you can read more in the [Test Explorer docs](/visualstudio/test/run-unit-tests-with-test-explorer).
 
 ## Run test suites
 
@@ -34,18 +34,18 @@ In the next exercise we'll delve deeper into Test Explorer functionality, but if
 
    :::image type="content" source="../media/test-explorer-run-all.png" alt-text="Screenshot of Visual Studio Test Explorer toolbar with the green run button selected and a hover tip that reads Run All Tests In View (CTRL+R,V)":::
 
-* After the first test run the small CodeLens test icons now show the test result in the code editor at every test method.
+* After the first test run, the small CodeLens test glyphs now show the test result in the code editor at every test method.
 
-   :::image type="content" source="../media/test-code-lens.png" alt-text="Screenshot in Visual Studio of editor where the CodeLens test icon at the top of test method signatures is now green to signify a passing test.":::
+   :::image type="content" source="../media/test-code-lens.png" alt-text="Screenshot in Visual Studio of editor where the CodeLens test glyphs at the top of test method signatures are now green to signify passing tests.":::
 
 ## Debugging tests
 
-* Debugging lets you pause the application to explore variables and what is happening during the execution of your test. Debugging tests is especially helpful because you can precisely isolate which function you'd like the debugger to step through programmatically rather than manually using your app until you trigger the method you would like to test.
+* Debugging lets you pause the application to explore variables and what is happening during the execution of your test. Debugging tests is especially helpful because you can precisely isolate which function you'd like the debugger to step through programmatically. This avoids having to manually navigate your app until you trigger the method you would like to test.
 
-* Select `Debug test(s)` in the right-click context menu in order to hit a breakpoint.
+* Select **Debug test(s)** in the right-click context menu in order to hit a breakpoint.
 
    :::image type="content" source="../media/test-debug.png" alt-text="Screenshot of Visual Studio editor with the right click menu open inside the AddTest method. Debug Tests is selected.":::
 
-* Just as in debugging a regular app, when you debug a test you can hover or pin variables to see there values and step through the execution of the code.
+* As in debugging a regular app, when you debug a test you can hover or pin variables to see their values and step through the execution of the code.
 
    :::image type="content" source="../media/test-breakpoint.png" alt-text="Screenshot of Visual Studio paused during debugging at a breakpoint set inside the AddTest method on the Assert line. Debugger windows are visible as well as a quick info window showing the value of the actual variable in the test.":::

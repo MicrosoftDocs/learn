@@ -4,7 +4,7 @@ This module will help familiarize you with the Visual Studio testing tools. The 
 
 ## Example scenario
 
-Suppose you are creating a calculator app for school and you've been able to successfully debug, enter numbers as input, and get the expected results. You have a list of calculations you check each time you make code changes, to make sure that you haven't altered existing behavior as you add methods. As you make changes to your logic, you notice it takes longer and longer to manually make sure all your test inputs still get the correct results as you add more cases. With testing, you can automatically run your app with many different inputs and assert the expected results. This eliminates the need to manually enter your test data into your app as you debug because testing can put your app through its paces with the click of a button. This automated ability to check functionality is the purpose of testing.
+Suppose you're creating a calculator app for school. You can successfully debug, enter numbers as input, and get the expected results. You have a list of calculations you check each time you make code changes to make sure that existing behavior remains unchanged as you add methods. As you make changes to your logic, you continue to add more cases. You notice it takes longer and longer to manually make sure all your test inputs still get the correct results. With testing, you can automatically run your app with many different inputs and assert the expected results. This automation eliminates the need to manually enter your test data into your app as you debug. Testing can put your app through its paces with the click of a button. This automated ability to check functionality is the purpose of testing.
 
 ## What will we be doing?
 
@@ -18,4 +18,4 @@ If you want to familiarize yourself with the basic concepts of software testing 
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to create a test project, add references to product code, and write tests. You'll also be able to use the testing tools in Visual Studio to run, organize, and debug your tests.
+By the end of this session, you'll be able to create a test project, add references to product code, and write tests. You'll also learn to use the testing tools in Visual Studio to run, organize, and debug your tests.
