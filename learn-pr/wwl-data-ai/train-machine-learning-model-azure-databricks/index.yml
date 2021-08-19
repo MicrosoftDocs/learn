@@ -3,7 +3,7 @@ uid: learn.wwl.train-machine-learning-model-azure-databricks
 metadata:
   title: Train a machine learning model with Azure Databricks
   description: "Train a machine learning model with Azure Databricks"
-  ms.date: 08/17/2021
+  ms.date: 08/19/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
