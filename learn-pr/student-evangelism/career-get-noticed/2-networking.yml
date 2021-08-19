@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.career-get-noticed.2-networking
+title: Networking
+metadata:
+  title: Networking
+  description: Being good at networking is an acquired skill, often leading to a new job or better opportunities within your current company.
+  ms.date: 08/19/2021  
+  author: gcordido  
+  ms.author: gcordido  
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-networking.md)]
