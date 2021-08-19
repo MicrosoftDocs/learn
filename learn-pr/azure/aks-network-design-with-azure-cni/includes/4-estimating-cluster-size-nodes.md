@@ -23,6 +23,10 @@ Your application should always be available and able to handle failure of the un
 
 The Azure Kubernetes Service also has the concept of node pools, which groups virtual machines of the same type together. You could have multiple node pools, with one node pool that contains general purpose virtual machines, another node pool with memory optimized virtual machines, or a node pool with GPU equipped virtual machines. You then use the native scheduling features of Kubernetes to ensure workloads are deployed to the appropriate node pool and virtual machine type.
 
+Node pools can support one of two modes, either System mode or User mode. System node pools run critical system pods, essential to the operation of your Kubernetes cluster, including services such as storage drivers, DNS, or metrics servers. User node pools run your applications.
+
+In a default configuration, an Azure Kubernetes Service cluster contains a single System mode node pool, which is used to run everything. However, you can add extra System or User mode node pools, then configure things so your application pods run exclusively in the User mode node pools, and critical system pods run only in the System mode node pools. Using System and User mode node pools can prevent incorrectly configured applications from affecting the operation of critical system services and potentially causing the cluster to fail.
+
 Along with scaling the number of pods in response to demand, Kubernetes can also add or remove nodes when necessary. If you plan to use this feature, define an upper limit for the maximum number of nodes that Kubernetes can scale up to. Then, plan your network design around that maximum number.
 
 Your Kubernetes cluster will be updated frequently. Updates keep the cluster safe from security problems and add new features for both the operating system and Kubernetes components. The update process avoids affecting the normal running of the cluster by temporarily adding new nodes to the cluster. The new nodes maintain the distribution of workloads while nodes are being updated. So, you need to account for at least one extra node per cluster.

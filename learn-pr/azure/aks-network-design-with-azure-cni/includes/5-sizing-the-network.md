@@ -10,7 +10,16 @@ By default, an Azure Kubernetes Service cluster using the Azure CNI network plug
 
 **8 virtual machines x 30 pods per node maximum = 240 pod IP addresses**
 
-We're going to need 8 IP addresses for nodes and 240 IP addresses for pods. Simple addition gives us a requirement of 248 IP addresses. So, you can now approach the team responsible for network allocation in your organization and request a subnet supporting 248 IP addresses. When you create a subnet in an Azure Virtual Network, five IP addresses are reserved for system use. A /24 address range would have 251 usable IP addresses, which would make it a good fit for our cluster.
+> [!NOTE]
+> Today, the Azure CNI pre-allocates IP addresses for pods. So, if the default value of 30 pods per node is used, then 30 IP addresses will be pre-allocated in the subnet for each node. A new version of Azure CNI is currently in preview which will support dynamic IP address allocation.
+
+We're going to need 8 IP addresses for nodes and 240 IP addresses for pods. Simple addition gives us a requirement of 248 IP addresses. 
+> [!TIP]
+> If you plan to use an internal Azure Load Balancer with your cluster, this will also require an IP address. It's a common practice to use a dedicated subnet for load balancers, but if you plan to use the same subnet as your nodes, then you'll need to account for that.
+
+In this design, we've decided to stay with the default node pool configuration. The default uses a single System Mode node pool that runs everything. If we wanted to ensure that we isolate system components from applications, then we would need at least two node pools and should adjust our IP address range calculations to include that.
+
+So, you can now approach the team responsible for network allocation in your organization and request a subnet supporting 248 IP addresses. When you create a subnet in an Azure Virtual Network, five IP addresses are reserved for system use. A /24 address range would have 251 usable IP addresses, which would make it a good fit for our cluster.
 
 ## Selecting a Kubernetes Service Address Range
 
