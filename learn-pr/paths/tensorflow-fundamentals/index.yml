@@ -27,6 +27,7 @@ products:
 modules:
 - learn.tensorflow.intro-machine-learning-keras
 - learn.tensorflow.intro-computer-vision
+- learn.tensorflow.intro-natural-language-processing
 - learn.tensorflow.intro-audio-classification-tensorflow
 - learn.tensorflow.intro-machine-learning-tensorflow
 trophy:
