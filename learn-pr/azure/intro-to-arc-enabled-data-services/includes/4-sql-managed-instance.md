@@ -66,9 +66,11 @@ Azure Arc-enabled SQL Managed instance also uses a versionless engine so updates
 
 ### Deploy and configure
 
-Azure SQL Managed Instance can be deployed using Azure interfaces such as the Azure portal and az CLI. In direct connected mode, Azure Arc-enabled SQL Managed Instance can be deployed with the Azure portal and az CLI. In any connected mode, Azure Arc-enabled SQL Managed Instance can be deployed using az CLI, kubectl, or Azure Data Studio.
+Azure SQL Managed Instance can be deployed using Azure interfaces such as the Azure portal and az CLI. In direct connected mode, Azure Arc-enabled SQL Managed Instance can be deployed with the Azure portal and az CLI. In either connected mode, Azure Arc-enabled SQL Managed Instance can be deployed using az CLI, kubectl, or Azure Data Studio.
 
-Outside of the SQL instance, Azure Arc-enabled Managed Instance can also be configured in direct connected mode using Azure interfaces. In either connected mode, certain options can be configured outside of the SQL instance with az CLI.
+When you deploy an Azure Arc-enabled SQL Managed Instance, you can specify a service tier, core and memory limits, storage class specifications, and SQL configuration options such as SQL Server Agent, collation, and trace flags.
+
+Outside of the SQL instance, Azure Arc-enabled Managed Instance can also be configured in direct connected mode using Azure interfaces. In either connected mode, certain options can be configured outside of the SQL instance with az CLI or kubectl.
 
 Inside the SQL instance, standard SQL Server interfaces such as sp_configure, ALTER SERVER CONFIGURATION, and ALTER DATABASE can be used to configure the instance and database options.
 
