@@ -1,14 +1,14 @@
-In this unit, you will learn how to generate the MQTT client certificates for the test.mosquitto.org MQTT Broker.
+In this exercise, you'll generate the MQTT client certificates for the test.mosquitto.org MQTT Broker.
 
 ## Mosquitto Certificates
 
-This MQTT sample is going to connect to the [mosquitto.org](https://mosquitto.org) public test MQTT broker. You need to download and copy the `mosquitto.org` CA certificate and generated client certificates into the Azure Sphere application *AltairHL_emulator\certs* folder.
+This MQTT sample is going to connect to the [mosquitto.org](https://mosquitto.org) public test MQTT broker. Download and copy the `mosquitto.org` CA certificate and generated client certificates into the Azure Sphere application *AltairHL_emulator\certs* folder.
 
 ### Install openssl
 
-For Linux users, you may need to install **openssl** if it is not installed by default. You can install OpenSSL using your Linux distributions package manager. For example, on Ubuntu `sudo apt-get install openssl`.
+For Linux users, you may need to install **openssl**. You can install OpenSSL using your Linux distributions package manager. For example, on Ubuntu `sudo apt-get install openssl`.
 
-For Windows users either download `openssl` from [openssl.org](https://wiki.openssl.org/index.php/Binaries), or use [Windows Subsystem for Linux (WSL))](/windows/wsl/install-win10). Depending on the WSL Linux distribution you installed you may need to install **openssl**. You can install OpenSSL using your Linux distribution's package manager. For example, on Ubuntu `sudo apt-get install openssl`.
+For Windows users either download `openssl` from [openssl.org](https://wiki.openssl.org/index.php/Binaries), or use [Windows Subsystem for Linux (WSL))](/windows/wsl/install-win10). Depending on the WSL Linux distribution, you installed you may need to install **openssl**. You can install OpenSSL using your Linux distribution's package manager. For example, on Ubuntu `sudo apt-get install openssl`.
 
 ### Download the Mosquitto Certificate Authority certificate
 
@@ -26,9 +26,9 @@ For Windows users either download `openssl` from [openssl.org](https://wiki.open
 
 2. Generate the CSR.
 
-    * At a minimum, the CSR must include the Country, Organisation and Common Name fields.
+    * At a minimum, the CSR must include the Country, Organization, and Common Name fields.
 
-    * The **Common Name** must match the [FQDN](https://en.wikipedia.org/wiki/Fully_qualified_domain_name) of the MQTT broker. When prompted to enter the Common Name ensure you set it to **test.mosquitto.org**.
+    * The **Common Name** must match the [FQDN](https://en.wikipedia.org/wiki/Fully_qualified_domain_name) of the MQTT broker. When prompted to enter the Common Name, set it to **test.mosquitto.org**.
 
     ```bash
     openssl req -out client.csr -key client.key -new
@@ -38,9 +38,9 @@ For Windows users either download `openssl` from [openssl.org](https://wiki.open
 
 4. Copy both the ```client.key``` and the ```client.crt``` into the AltairHL_emulator\certs.
 
-When you have completed the certificate step you should have **three** certificate files in the **AltairHL_emulator\certs** folder.
+When you've completed the certificate step, you should have **three** certificate files in the **AltairHL_emulator\certs** folder.
 
-They will be named:
+The files will be named:
 
 1. ca.crt
 2. client.key

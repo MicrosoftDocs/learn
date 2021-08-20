@@ -1,4 +1,4 @@
-In this exercise, you will get the connection information for Azure IoT Central. 
+In this exercise, you'll get the connection information for Azure IoT Central. 
 
 ## Step 1: List your IoT Central network endpoints
 
@@ -9,13 +9,13 @@ In this exercise, you will get the connection information for Azure IoT Central.
    - On Windows, navigate to the **Samples\AzureIoT\Tools\win-x64** folder.
    - On Linux, navigate to the **Samples/AzureIoT/Tools/linux-x64** folder. On Linux, you may need to explicitly set execution permissions for the **ShowIoTCentralConfig** tool. From a terminal, run `chmod +x ShowIoTCentralConfig` to add execution permissions for the tool.
 
-3. When you run the **ShowIoTCentralConfig** tool, you will be prompted for the following information:
+3. When you run the **ShowIoTCentralConfig** tool, you'll be prompted for the following information:
 
    | Prompt                                                 | Response                                                         |
    | ------------------------------------------------------------ | ------------------------------------------------------------ |
    | **Are you using a legacy (2018) IoT Central application (Y/N)** | Respond **N**.                                                |
-   | **IoT Central App URL**                                      | This can be found in your browser address bar. For example https://apps.azureiotcentral.com |
-   | **API token**                                                | This can be generated from your Azure IoT Central application. In the Azure IoT Central application, select **Administration**, select **API Tokens**, select **Generate Token**, provide a name for the token (for example, "AzureSphere"), select **Administrator** as the role, and click **Generate**. Copy the token to the clipboard. The token starts with **SharedAccessSignature**. |
+   | **IoT Central App URL**                                      | The IoT Central URL can be found in your browser address bar. For example, https://apps.azureiotcentral.com |
+   | **API token**                                                | The API token can be generated from your Azure IoT Central application. In the Azure IoT Central application, select **Administration**, select **API Tokens**, select **Generate Token**, provide a name for the token (for example, "AzureSphere"), select **Administrator** as the role, and select **Generate**. Copy the token to the clipboard. The token starts with **SharedAccessSignature**. |
    | **ID Scope**                                                 | In the Azure IoT Central application, select **Administration** > **Device Connection** and then copy the **ID Scope**. |
 
 4. Run the **ShowIoTCentralConfig** tool and follow the prompts that the tool provides.
@@ -57,4 +57,4 @@ We need the ID of the Azure Sphere tenant that is now trusted by Azure IoT Centr
 
 2. Copy the Azure Sphere tenant ID to Notepad, as you'll need it soon.
 
-In the next unit, you will learn how to create the certificates required to secure the communications to the test.mosquitto.org MQTT broker.
+In the next unit, you'll learn how to create the certificates required to secure the communications to the test.mosquitto.org MQTT broker.
