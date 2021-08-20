@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.tensorflow.intro-natural-language-processing.attention-transformers
+title: Attention models and transformers
+metadata:
+  title: Attention models and transformers
+  description: In this unit, we learn about the next step of evolution beyond recurrent networks - so-called transformer models, which are based on the mechanism of attention.
+  author: shwars
+  ms.author: dmitryso
+  ms.date: 07/07/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+sandbox: true
+notebook: notebooks/6-attention-transformers.ipynb

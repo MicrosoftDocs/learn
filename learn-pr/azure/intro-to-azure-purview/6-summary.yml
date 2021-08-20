@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-purview.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: summary
+  description: "Summary unit for the Introduction to Azure Purview module on Microsoft Learn."
+  ms.date: 8/19/2021
+  author: gerryaobrien
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]
