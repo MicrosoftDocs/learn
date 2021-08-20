@@ -4,7 +4,7 @@ In this exercise, we'll create a function app in Azure and publish our project.
 
 Before we can use the Core Tools to publish our code to a function app, we need to create the app in Azure. We'll use the Azure CLI in Azure Cloud Shell to do that.
 
-This tutorial's sandbox gives you free, temporary access to Azure, and the Azure CLI in Cloud Shellto the right has already been signed in to your account and configured to use your free access.
+This tutorial's sandbox gives you free, temporary access to Azure, and the Azure CLI in Cloud Shell to the right has already been signed in to your account and configured to use your free access.
 
 To create a function app in Azure, run the following commands in Azure Cloud Shell.
 
