@@ -1,5 +1,5 @@
-In this unit, you will learn how to program the Altair emulator using the virtual panel, the MikroE button click, or the Altair front panel.
+In this unit, you'll learn how to boot CP/M and start programming.
 
 
 
-In the following exercise, you will learn how to program the Altair emulator using the Altair front panel.
+In the following exercise, you'll learn how to boot CP/M and start programming.

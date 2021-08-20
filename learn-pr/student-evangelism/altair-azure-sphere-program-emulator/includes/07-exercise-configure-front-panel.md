@@ -1,35 +1,27 @@
-## Understanding the Altair front panel configurations
-
-The Altair front panel is made up of status LEDs and switches used to set the state of the Altair emulated Intel 8080 CPU.
-
-The Altair emulator on the Azure Sphere has three possible front panel configurations:
-
-1. Virtual Front Panel
-1. The 4x4 keypad and 8x8 LED panel MikroE Click boards
-1. The Altair Front panel
+In this exercise, you'll learn how to program the Altair emulator using the Altair front panel.
 
 ## The Virtual Front Panel
 
-To access the Virtual Front panel you must be connected to the Altair emulator via the Web Terminal.
+To access the Virtual Front panel, you must be connected to the Altair emulator via the Web Terminal.
 
 1. From the Web Terminal, press <kbd>ctrl+M</kbd> to enter the CPU Monitor.
-1. You can enter binary strings to represent the switches on a real Altair front panel. For example, if you entered *0000000011110000* followed by Enter, then you are setting 12 switches off and 4 switches on.
+1. You can enter binary strings to represent the switches on a real Altair front panel. For example, if you entered *0000000011110000* followed by Enter, then you're setting 12 switches off and 4 switches on.
 1. You can enter Altair control commands as follows:
     * **e** = EXAMINE
     * **en** = EXAMINE NEXT
     * **d** = DEPOSIT
     * **dn** = DEPOSIT
     * **s** = SINGLE STEP
-1. If you wanted to load the three byte [Intel 8080 Jmp](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/8080asm.pdf?azure-portal=true) at address 0x0100 then you would do the following:
+1. If you wanted to load the three byte [Intel 8080 Jmp](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/8080asm.pdf?azure-portal=true) at address 0x0100 then you would:
     * Type **100000000** (0x0100) followed by Enter.
     * Type **e** for EXAMINE, followed by Enter to set the CPU current instruction pointer to address 0x0100.
     * Type **11000011** (The Intel 8080 opcode for Jmp) followed by Enter.
     * Type **d** followed by Enter to DEPOSIT the instruction at address 0x0000.
     * Type **0** followed by Enter to set the **low** order address for the Jump instruction.
-    * Type **dn** followed by Enter to DEPOSIT NEXT to increment the CPU instruction pointer to the next address location and deposit the high order byte of the Jmp instruction.
+    * Type **dn** followed by Enter to DEPOSIT NEXT to increment the CPU instruction pointer to the next address location and deposit the high-order byte of the Jmp instruction.
     * Type **dn** followed by Enter to DEPOSIT NEXT to increment the CPU instruction pointer to the next address location and deposit the **high** order byte of the Jmp instruction.
 
-1. To execute the instructions you entered you would type:
+1. To execute the instructions you entered you would:
     1. Type **100000000** (0x0100) followed by Enter
     1. Type **e"" followed by Enter to set the CPU instruction pointer to address 0x0100.
     1. Type **s** followed by Enter to SINGLE STEP the CPU.
@@ -48,7 +40,7 @@ The [MikroE 4x4 Key Click](https://www.mikroe.com/4x4-key-click) has two modes o
 
 ### Command Mode
 
-In **Command Mode**, the buttons take on the role of the command switches on the Altair. In this mode you have access to CPU STOP, CPU RUN, SINGLE STEP, EXAMINE, EXAMINE NEXT, DEPOSIT, and DEPOSIT NEXT.
+In **Command Mode**, the buttons take on the role of the command switches on the Altair. In this mode, you have access to CPU STOP, CPU RUN, SINGLE STEP, EXAMINE, EXAMINE NEXT, DEPOSIT, and DEPOSIT NEXT.
 
 ![The illustration shows the buttons in command mode.](../media/altair-command-mode-buttons.png)|
 
@@ -66,7 +58,7 @@ The top row of LEDs are the Altair status indicators. In **CPU STOP** mode, the 
 
 ### Loading an Intel 8080 opcode using the Click front panel
 
-Taking the same example as the virtual front panel. We are going to load the three byte [Intel 8080 Jmp](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/8080asm.pdf?azure-portal=true) at address 0x0100.
+Using the same example as the virtual front panel. We're going to load the 3 byte [Intel 8080 Jmp](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/8080asm.pdf?azure-portal=true) at address 0x0100.
 
 Follow along:
 
@@ -132,7 +124,7 @@ The top row of LEDs are the Altair status indicators. In **CPU STOP** mode, the 
 
 ### Loading an Intel 8080 opcode using the Click front panel
 
-Taking the same example as the virtual front panel. We are going to load the three byte [Intel 8080 Jmp](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/8080asm.pdf?azure-portal=true) at address 0x0100.
+Taking the same example as the virtual front panel. We are going to load the 3 byte [Intel 8080 Jmp](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/8080asm.pdf?azure-portal=true) at address 0x0100.
 
 Follow along:
 
@@ -184,7 +176,7 @@ The Altair front panel board can be used with the Avnet Starter Kit and the Seee
 
 ### Loading an Intel 8080 opcode using the Altair front panel
 
-Taking the same example as the virtual front panel. We are going to load the three byte [Intel 8080 Jmp](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/8080asm.pdf?azure-portal=true) at address 0x0100.
+Using the same example as the virtual front panel. We are going to load the 3 byte [Intel 8080 Jmp](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/8080asm.pdf?azure-portal=true) at address 0x0100.
 
 Follow along:
 
@@ -192,7 +184,7 @@ Follow along:
 1. Turn on address/data bus switch **8** by moving to the up position to set address 0x0100. Ensure all other switches are down in the off position.
 1. Flick the **EXAMINE** switch to set the CPU instruction pointer.
 1. Set address/data bus switch 8 to the off position.
-1. Set address/data bus switches 7, 6, 1 and 0 on (moved to the up position). This is the Intel 8080 jmp instruction.
+1. Set address/data bus switches 7, 6, 1 and 0 on (moved to the up position). These switch settings are the Intel 8080 jmp instruction.
 1. Flick the **DEPOSIT** switch.
 1. Turn off all address/data bus switches.
 1. Flick the **DEPOSIT NEXT** switch to load zero into the **low** order jump address

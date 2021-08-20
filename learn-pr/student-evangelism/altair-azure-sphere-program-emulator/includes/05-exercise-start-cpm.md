@@ -1,18 +1,20 @@
+In this exercise, you'll learn how to boot CP/M and start programming.
+
 ## Starting CPM
 
 There are several ways that you can boot up CP/M depending on your hardware configuration.
 
-When the Altair emulator starts it loads Altair 8k Basic at address 0x0000 and the diskette loader at address 0xff00 HEX (111111110000000 Binary).
+When the Altair emulator starts, it loads Altair 8k BASIC at address 0x0000 and the diskette loader at address 0xff00 HEX (111111110000000 Binary).
 
-To load CP/M we are going to set the CPU instruction pointer to 0xff00 HEX and tell the CPU to run the code from that address. The disk loader will run and will load CP/M from (virtual) disk 1 aka Disk A:.
+To load CP/M, you're going to set the CPU instruction pointer to 0xff00 HEX and tell the Altair emulator to run the code from that address. The disk loader code runs and CP/M is loaded.
 
 ### For all hardware configurations
 
 ### Press Button A
 
-This is the simplest way to boot CP/M. This button is wired to **CPU STOP**, sets the CPU instruction pointer to 0xFF00, does an **EXAMINE**, the **CPU RUN**.
+The simplest way to boot CP/M is to press Button A. This button is wired to **CPU STOP**, sets the CPU instruction pointer to 0xFF00, does an **EXAMINE**, the **CPU RUN**.
 
-Depending on the state of the Altair emulator you may need to press Button A twice.
+Depending on the state of the Altair emulator, you may need to press Button A twice.
 
 CP/M will load with the following response.
 
@@ -80,9 +82,9 @@ A>
 
 ## A bit about CP/M
 
-This is a quick introduction to CP/M from the [CP/M Wikipedia article](https://en.wikipedia.org/wiki/CP/M?azure-portal=true).
+For more information about CP/M, see [CP/M Wikipedia article](https://en.wikipedia.org/wiki/CP/M?azure-portal=true).
 
-CP/M, originally standing for Control Program/Monitor and later Control Program for Microcomputers, is a mass-market operating system created in 1974 for Intel 8080/85-based microcomputers by Gary Kildall of Digital Research, Inc. Initially confined to single-tasking on 8-bit processors and no more than 64 kilobytes of memory, later versions of CP/M added multi-user variations and were migrated to 16-bit processors.
+CP/M, originally stood for Control Program/Monitor, then later became known as Control Program for Microcomputers. It was a mass-market operating system created in 1974 for Intel 8080/85-based microcomputers by Gary Kildall of Digital Research, Inc. The first version was single-tasking on 8-bit processors with support up to 64 kilobytes of memory. Later versions of CP/M added multi-user variations and were migrated to 16-bit processors.
 
 ### CP/M Reference Manual
 
@@ -114,19 +116,19 @@ To quit Basic type
 system
 ```
 
-For more information on Microsoft Basic refer to the [Microsoft Basic 80](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/Microsoft_BASIC-80.pdf?azure-portal=true) reference guide.
+For more information on Microsoft Basic, see [Microsoft Basic 80](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/Microsoft_BASIC-80.pdf?azure-portal=true).
 
 ## Word-Master Text Editor
 
-The CP/M disk image includes the Word-Master text editor. Word-Master is a character-based text editor and you must switch the Web Terminal to **Character Mode**. In Character Mode, the Web Terminal sends each character you type as an individual MQTT message to the Altair emulator, it is not very efficient, but it is required to use Word-Master.
+The CP/M disk image includes the Word-Master text editor. To use Word-Master, you must switch the Web Terminal to **Character Mode**. In Character Mode, the Web Terminal sends each character you type as an MQTT message to the Altair emulator.
 
-To toggle between **Line input mode** and **Character input mode** press <kbd>ctrl+L</kbd>. When you have finished using Word-Master switch back to **Line input mode** as the Web Terminal communications over MQTT in "Line input mode" is much more efficient.
+To toggle between **Line input mode** and **Character input mode** press <kbd>ctrl+L</kbd>. When finished with Word-Master switch back to **Line input mode** as the Web Terminal communications over MQTT in "Line input mode" is more efficient.
 
 ![Altair running Word Master text editor](../media/word-master-character-mode.png)
 
 View the [Word-Master user's guide](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/Word-Master_Manual.pdf?azure-portal=true).
 
-The following is a summary of the ctrl characters used by Word-Master sourced from the [Experiencing the Altair 8800](https://glasstty.com/?p=1235) blog.
+The following table lists the ctrl characters used by Word-Master. This list is sourced from the [Experiencing the Altair 8800](https://glasstty.com/?p=1235) blog.
 
 ```text
 VIDEO MODE SUMMARY
@@ -150,10 +152,10 @@ VIDEO MODE SUMMARY
 
 ### Word-Master key mappings
 
-When the Web Terminal is operating the **Character input mode** the following keyboard mappings will improve your editing experience.
+In **Character input mode**, the following keyboard mappings will improve your editing experience.
 
 ```text
-Keyboard                Word-Master Ctrl Sequence
+Keyboard key            Word-Master Ctrl Sequence
 ----------------------------------------------
 Insert                  ^O   INSERTION ON/OFF
 Delete                  ^G   DELETE CHR RIGHT
@@ -163,9 +165,9 @@ Cursor Up               ^E   CURSOR UP LINE
 Cursor Down             ^X   CURSOR DOWN LINE
 ```
 
-## Compiling ASM applications
+## Compiling Assembler applications
 
-The CP/M disk image includes a simple assembler application. Follow these steps to edit and assemble and load the demo file.
+The CP/M disk image includes a demo assembler application. Follow these steps to edit and assemble and load the demo file.
 
 ### Step 1: Copy the demo app to the B: drive
 
