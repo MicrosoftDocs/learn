@@ -3,7 +3,7 @@ uid: learn.student-evangelism.altair-azure-sphere-setup.introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: In this section, You will learn about the Altair 8800 and Azure Sphere.
+  description: Introduction to setting up an Altair emulator and Azure Sphere.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover

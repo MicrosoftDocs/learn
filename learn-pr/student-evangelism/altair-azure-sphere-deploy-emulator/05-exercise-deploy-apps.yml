@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-deploy-emulator.exercise-deploy-apps
-title: Exercise - How to deploy the Altair real time applications
+title: Exercise - Deploy the Altair real-time applications
 metadata:
-  title: Exercise - How to deploy the Altair real time applications
-  description: In this section, we deploy the Altair real time applications to the Azure Sphere.
+  title: Exercise - Deploy the Altair real-time applications
+  description: In this exercise, deploy the Altair real-time applications to Azure Sphere.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover

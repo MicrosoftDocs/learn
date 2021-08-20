@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-program-emulator.configuration-options
-title: Understand how to program the Altair with the front panel
+title: Program the Altair by using the front panel
 metadata:
-  title: Understand how to program the Altair with the front panel
-  description: In this section, we will learn how to program the Altair from the front panel
+  title: Program the Altair by using the front panel
+  description: Learn how to program the Altair by using the front panel.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover

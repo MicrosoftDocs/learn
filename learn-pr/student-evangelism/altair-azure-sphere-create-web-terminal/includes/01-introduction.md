@@ -26,7 +26,7 @@ The virtual disk server provides read/write permanent storage for your CP/M appl
 
 Drive B: disk sector reads and writes are redirected over MQTT to an MQTT enabled Python-based virtual disk server. Drive B: disk sectors are also cached on one of the real-time cores. Caching significantly improves read/write performance.
 
-:::image type="content" source="../media/altair-on-azure-sphere-disk-cache-server.png" alt-text="Diagram of the Altair virtual disk architecture." border="false":::
+:::image type="content" source="../media/altair-azure-sphere-disk-cache-server.png" alt-text="Diagram of the Altair virtual disk architecture." border="false":::
 
 Disk reads work as follows:
 

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-program-emulator.exercise-write-altair-basic-application
-title: Exercise - How to program the Altair emulator using Altair BASIC
+title: Exercise - Program the Altair emulator by using Altair BASIC
 metadata:
-  title: Exercise - How to program the Altair emulator using Altair BASIC
-  description: In this section, we learn how to program the Altair emulator with Altair BASIC
+  title: Exercise - Program the Altair emulator by using Altair BASIC
+  description: In this exercise, program the Altair emulator by using Altair BASIC.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-secure-emulator.declare-connection-endpoints
-title: How to secure an Azure Sphere
+title: Declare connection endpoints
 metadata:
-  title: How to secure an Azure Sphere
-  description: In this section, learn how to secure an Azure Sphere.
+  title: Declare connection endpoints
+  description: Learn how to declare connection endpoints.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover

@@ -22,6 +22,6 @@ Disk writes work as follows:
 1. The Altair emulator disk driver sends the disk sector to the cache manager.
 1. The disk sector is then sent to the cloud-based virtual disk manager.
 
-:::image type="content" source="../media/altair-on-azure-sphere-disk-cache-server.png" alt-text="Diagram that shows the architecture of the real-time disk cache server." border="false":::
+:::image type="content" source="../media/altair-azure-sphere-disk-cache-server.png" alt-text="Diagram that shows the architecture of the real-time disk cache server." border="false":::
 
 In the following exercise, you'll deploy the disk sector cache manager and the environment monitor real-time applications along with the Python-based Virtual Disk Server.
