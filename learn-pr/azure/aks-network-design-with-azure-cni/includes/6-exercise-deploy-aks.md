@@ -42,11 +42,18 @@ az network vnet subnet create \
 
 ## Create an Azure Managed Identity
 
-We need to create an Azure Managed Identity. The Azure Kubernetes Service uses this identity to access resources within the Azure subscription. The following two lines will create an Azure Managed Identity, then store its unique ID value in an environment variable for later use.
+We need to create an Azure Managed Identity. The Azure Kubernetes Service uses this identity to access resources within the Azure subscription. The following two commands will create an Azure Managed Identity, then store its unique ID value in an environment variable for later use.
 
 ```bash
-az identity create -n AKSIdentity -g <rgn>[sandbox resource group name]</rgn>
-identityId=$(az identity show --name AKSIdentity -g <rgn>[sandbox resource group name]</rgn> --query id -o tsv)
+az identity create \
+    --name AKSIdentity \
+    --resource-group <rgn>[sandbox resource group name]</rgn>
+
+identityId=$(az identity show \
+    --name AKSIdentity \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --query id \
+    --output tsv)
 ```
 
 ## Create the Azure Kubernetes Service cluster
@@ -56,7 +63,11 @@ Now we'll create the AKS cluster and will pass in the values we've determined pr
 We need to know the resource ID of the subnet we created previously. We can store it in an environment variable that we can use later.
 
 ```bash
-subnetId=$(az network vnet subnet list --vnet-name AKSVirtualNetwork --resource-group <rgn>[sandbox resource group name]</rgn> --query "[?name=='AKSSubnet'].id" -o tsv)
+subnetId=$(az network vnet subnet list \
+    --vnet-name AKSVirtualNetwork \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --query "[?name=='AKSSubnet'].id" \
+    --output tsv)
 ```
 
 In Azure Cloud Shell, run the following command to create the **AKSCluster** Azure Kubernetes Service cluster:
@@ -101,10 +112,15 @@ az aks create | Command to create an AKS cluster instance.
 --min-count **3** | Tell the autoscaler that we don't want to run fewer than three nodes.
 --max-count **7** | Tell the autoscaler that we don't want to run more than 7 nodes. Remember that we've sized our network for 7 nodes plus 1 spare node for upgrades.
 
+## Confirm node pool details for the new cluster
+
 Once the cluster has been deployed, we can use the following command to confirm the details of the node pool:
 
 ```bash
-az aks nodepool list --cluster-name AKSCluster --resource-group <rgn>[sandbox resource group name]</rgn> -o table
+az aks nodepool list \
+    --cluster-name AKSCluster \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --output table
 ```
 
 The output should look like this
@@ -115,28 +131,42 @@ Name       OsType    VmSize           Count    MaxPods    ProvisioningState    M
 nodepool1  Linux     Standard_F8s_v2  3        30         Succeeded            System
 ```
 
-From the output, we can see that we have three nodes and a MaxPods value of 30.
+From the output, we can see that we have three Standard_F8s_v2 type nodes, a MaxPods value of 30 and the node pool mode is "System".
 
-Let's check how many IP addresses have been allocated.
+## Confirm IP address usage for the cluster
+
+Let's check how many IP addresses have been used by the cluster.
 
 ```bash
-az network vnet subnet list --vnet-name AKSVirtualNetwork --resource-group <rgn>[sandbox resource group name]</rgn> --query "[].ipConfigurations.length(@)" -o tsv
+az network vnet subnet list \
+    --vnet-name AKSVirtualNetwork \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --query "[].ipConfigurations.length(@)" \
+    --output table
 ```
 
 This command uses a JMESPath query string to determine how many `ipConfigurations` are defined in the subnet. The answer should be **93**. 
 
 We've deployed three nodes to start with, so each node has one IP address each. We've left the maximum pods value at its default setting of 30, so each node has 30 IP addresses pre-allocated for pods to use. The total number of IP addresses that has been allocated so far is **3 x nodes + (30 pods * 3 nodes) = 93**
 
-Finally, let's scale up the cluster and add one more node.
+## Add an extra node to the cluster
+
+Finally, let's scale up the cluster and add one more node to see how IP address usage is affected.
 
 ```bash
-az aks scale --name AKSCluster --resource-group <rgn>[sandbox resource group name]</rgn> --node-count=4
+az aks scale \
+    --name AKSCluster \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --node-count=4
 ```
 
 Once the scale command completes, let's confirm the new details for our node pool:
 
 ```bash
-az aks nodepool list --cluster-name AKSCluster --resource-group <rgn>[sandbox resource group name]</rgn> -o table
+az aks nodepool list \
+    --cluster-name AKSCluster \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --output table
 ```
 
 The output should reflect that we now have four nodes.
@@ -150,7 +180,11 @@ nodepool1  Linux     Standard_F8s_v2  4        30         Succeeded            S
 Now, we can rerun the command to get a count of IP addresses.
 
 ```bash
-az network vnet subnet list --vnet-name AKSVirtualNetwork --resource-group <rgn>[sandbox resource group name]</rgn> --query "[].ipConfigurations.length(@)" -o tsv
+az network vnet subnet list \
+    --vnet-name AKSVirtualNetwork \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --query "[].ipConfigurations.length(@)" \
+    --output table
 ```
 
-This time, the result is **124**, which is 31 more than last time. That's one more IP address for the new node, plus 30 more IP addresses pre-allocated for pods for that node.
+This time, the result is **124**, which is 31 more than last time. That's one more IP address for the new node, plus another 30 IP addresses pre-allocated for the pods that will run on that node.
