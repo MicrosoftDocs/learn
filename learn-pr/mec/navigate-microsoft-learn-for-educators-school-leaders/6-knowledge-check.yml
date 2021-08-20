@@ -41,7 +41,7 @@ quiz:
       explanation: "This is a great place to see your progress, but your badges will appear elsewhere. "
   - content: "Why would I want to use collections?"
     choices:
-    - content: "Collections shows you what you need to do to earn trophies."
+    - content: "Collections show you what you need to do to earn trophies."
       isCorrect: false
       explanation: "Not quite, think more about how a collection can be shared and organized."
     - content: "Collections show you what your badges look like."
@@ -71,4 +71,4 @@ quiz:
       explanation: "This is true! Your profile URL can help connect peers and school leaders to your achievements."
     - content: "You can't link more than one Microsoft account to your Learn profile"
       isCorrect: true
-      explanation: "This is false. Learn is allows you to combine multiple Microsoft accounts on your profile."
+      explanation: "This is false. Learn allows you to combine multiple Microsoft accounts on your profile."
