@@ -1,12 +1,12 @@
-Azure Functions Core Tools give you a way to get started developing functions locally by creating the files and folders you need and letting you run your functions on your own computer.
+Azure Functions Core Tools enable you to start developing functions on your own computer by creating the necessary files and folders for a functions project and providing a Functions host that runs locally from the root directory of your project.
 
 You've decided to start your work with Azure Functions by locally developing a function that computes simple interest. Eventually you'll work your way up to more complex functions that work together and call other services and databases, but using Core Tools to build a function that performs a basic loan calculation is a good start. You also want to try calling your function on your own computer before publishing it to Azure.
 
-In this exercise, we'll create and run our first function from Azure Cloud Shell command line using Core Tools.
+In this exercise, you'll create and run your first function from Azure Cloud Shell using Core Tools.
 
 ## Create a local Azure Functions project
 
-In this exercise, we'll use Cloud Shell to develop our function. Cloud Shell system has Core Tools and Azure CLI preinstalled, as well as an editor we'll use to write code. Make sure to activate the sandbox above before proceeding.
+In this exercise, you'll use Cloud Shell to develop your function. The Azure Cloud Shell system has Core Tools and Azure CLI preinstalled, and an editor you can use to write code. Make sure to activate the sandbox above before proceeding.
 
 1. In the Cloud Shell on the right, create a new directory called `loan-wizard` and open that directory.
 
@@ -39,7 +39,7 @@ Let's create our function!
     func new
     ```
 
-    Note that we're running `func new` within the `loan-wizard` project folder we just created, which is important.
+    Remember, you are running `func new` within the `loan-wizard` project folder you just created, which is important.
 
 1. When prompted to select a template, enter **8** (for **HTTP trigger**).
 
