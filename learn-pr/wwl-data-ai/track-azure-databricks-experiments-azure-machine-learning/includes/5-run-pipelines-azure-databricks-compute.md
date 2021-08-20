@@ -1,16 +1,16 @@
-Azure Machine Learning supports multiple types of compute for experimentation and training. Specifically, you can run an **Azure Machine Learning Pipeline** on Databricks compute.
+Azure Machine Learning supports multiple types of compute for experimentation and training. Specifically, you can run an **Azure Machine Learning pipeline** on Databricks compute.
 
-## What is an Azure Machine Learning Pipeline?
+## What is an Azure Machine Learning pipeline?
 
 In Azure Machine Learning, a *pipeline* is a workflow of machine learning tasks in which each task is implemented as a *step*. Steps can be arranged sequentially or in parallel, enabling you to build sophisticated flow logic to orchestrate machine learning operations. Each step can be run on a specific compute target, making it possible to combine different types of processing as required to achieve an overall goal.
 
-## Running Pipeline Step on Databricks Compute
+## Running pipeline step on Databricks Compute
 
 Azure Machine Learning supports a specialized pipeline step called **DatabricksStep** with which you can run a notebook, script, or compiled JAR on an Azure Databricks cluster. In order to run a pipeline step on a Databricks cluster, you need to do the following steps:
 
 - Attach Azure Databricks Compute to Azure Machine Learning workspace.
-- Define DatabricksStep in a Pipeline.
-- Submit the Pipeline.
+- Define DatabricksStep in a pipeline.
+- Submit the pipeline.
 
 ### Attaching Azure Databricks Compute
 
@@ -39,7 +39,7 @@ databricks_compute = ComputeTarget.attach(ws, compute_name, db_config)
 databricks_compute.wait_for_completion(True)
 ```
 
-### Defining DatabricksStep in a Pipeline
+### Defining DatabricksStep in a pipeline
 
 To create a pipeline, you must first define each step and then create a pipeline that includes the steps. The specific configuration of each step depends on the step type. For example, the following code defines a **DatabricksStep** step to run a python script, `process_data.py`, on the attached Databricks compute.
 
@@ -74,7 +74,7 @@ databricksStep = DatabricksStep(name = "process_data",
 
 The above step defines the configuration to create a new Databricks job cluster to run the Python script. The cluster is created on the fly to run the script and the cluster is subsequently deleted after the step execution is completed.
 
-### Submit the Pipeline
+### Submit the pipeline
 
 After defining the step, you can assign it to a pipeline, and run it as an experiment:
 

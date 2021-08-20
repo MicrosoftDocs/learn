@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/19/2021
+  ms.date: 08/20/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -16,13 +16,13 @@ quiz:
   questions:
   - content: "What is the correct method to log a model metric, `_rmse`, in MLflow?"
     choices:
-    - content: "`mlflow.log(\"rmse\", _rmse)`"
+    - content: "`mlflow.log(\"RMSE\", _rmse)`"
       isCorrect: false
       explanation: "That's incorrect. MLflow module provides “fluent” APIs and log_metric() is the correct method to log a model metric."
-    - content: "`mlflow.log_artifact(\"rmse\", _rmse)`"
+    - content: "`mlflow.log_artifact(\"RMSE\", _rmse)`"
       isCorrect: false
       explanation: "That's incorrect. MLflow module provides “fluent” APIs and log_metric() is the correct method to log a model metric."
-    - content: "`mlflow.log_metric(\"rmse\", _rmse)`"
+    - content: "`mlflow.log_metric(\"RMSE\", _rmse)`"
       isCorrect: true
       explanation: "That's correct. MLflow module provides “fluent” APIs and log_metric() is the correct method to log a model metric."
   - content: "Leon wants to run an Azure Machine Learning experiment in Azure Databricks. An MLflow experiment is configured and Leon is about to run it. He realizes he forgot a step. What should have been done first?"
