@@ -1,12 +1,12 @@
 **MLflow** is an open-source product designed to manage the Machine Learning development lifecycle. That is, MLflow allows data scientists to train models, register those models, deploy the models to a web server, and manage model updates.
 
-## The Importance of MLflow
+## The importance of MLflow
 
 MLflow is an important part of machine learning with Azure Databricks, as it integrates key operational processes with the Azure Databricks interface. MLflow makes it easy for data scientists to train models and make them available without writing a great deal of code.
 
 As a side note, MLflow will also operate on workloads outside of Azure Databricks. The examples in this module will all use Azure Databricks but this is not a requirement.
 
-## MLflow Product Components
+## MLflow product components
 
 There are four components to MLflow: 
 - MLflow Tracking
@@ -38,4 +38,4 @@ The MLflow Model Registry allows data scientists to register models in a registr
 
 From there, MLflow Models and MLflow Projects combine with the MLflow Model Registry to allow operations team members to deploy models in the registry, serving them either through a REST API or as part of a batch inference solution using Azure Databricks.
 
-![Serving a model stored in the MLflow Model Registry.](../media/03-01-01-serving.png)
+![Serving a model stored in the MLflow Model Registry.](../media/03-01-01-deploy.png)
