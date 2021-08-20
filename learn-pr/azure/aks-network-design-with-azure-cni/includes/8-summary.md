@@ -13,4 +13,6 @@ Here are some links to more information about the areas we've covered in this mo
 - [Scaling options for applications in Azure Kubernetes Service (AKS)](/azure/aks/concepts-scale)
 - [Automatically scale a cluster to meet application demands on Azure Kubernetes Service (AKS)](/azure/aks/cluster-autoscaler)
 - [Upgrade an Azure Kubernetes Service (AKS) cluster](/azure/aks/upgrade-cluster)
+- [Manage system node pools in Azure Kubernetes Service (AKS)](/azure/aks/use-system-pools)
+- [Use an internal load balancer with Azure Kubernetes Service (AKS)](/azure/aks/internal-lb)
 - IP address planning section in the [Baseline architecture for an Azure Kubernetes Service (AKS) cluster](/azure/architecture/reference-architectures/containers/aks/secure-baseline-aks#plan-the-ip-addresses)
