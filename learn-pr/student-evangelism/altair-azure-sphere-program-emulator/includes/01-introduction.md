@@ -1,13 +1,13 @@
 In this module, you'll learn how to program the Altair 8800 emulator.
 
-The Altair emulator is running an Open Source Intel 8080 emulator. Layered on the Intel 8080 emulator is Altair BASIC and CP/M. You may not have heard of [CP/M](https://en.wikipedia.org/wiki/CP/M), it was an early microcomputer operating system that predates DOS.
+The Altair emulator is running an Open Source Intel 8080 emulator. Layered on the Intel 8080 emulator is Altair BASIC and CP/M. You may not have heard of [CP/M](https://en.wikipedia.org/wiki/CP/M?azure-portal=true), it was an early microcomputer operating system that predates DOS.
 
 The Altair Emulator can be programmed in two ways:
 
-1. Entering Intel 8080 [Opcodes](https://en.wikipedia.org/wiki/Opcode) using the Altair front panel switches
+1. Entering Intel 8080 [Opcodes](https://en.wikipedia.org/wiki/Opcode?azure-portal=true) using the Altair front panel switches
 1. or, using a higher-level programming language.
 
-![Altair on Azure Sphere application architecture.](../media/azure-sphere-app-architecture.png)
+:::image type="content" source="../media/azure-sphere-app-architecture.png" alt-text="Diagram that shows the Altair on Azure Sphere application architecture." border="false":::
 
 When you start the Altair emulator, it boots up Altair BASIC ready for your first program. You can boot CP/M after the Altair emulator has started. From CP/M you can program the Altair emulator using Microsoft BASIC, BD Software C, and Microsoft MACRO-80 Assembler.
 

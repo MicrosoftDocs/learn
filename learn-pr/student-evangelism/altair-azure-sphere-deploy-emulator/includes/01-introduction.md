@@ -1,16 +1,16 @@
 In this module, you'll learn about the architecture of the Azure Sphere and the Altair emulator. You'll also learn how to deploy the emulator to your Azure Sphere.
 
-## Azure Sphere Architecture
+## Azure Sphere architecture
 
 The Azure Sphere microcontroller unit (MCU) has three developer-accessible cores. There is a Cortex-A7 high-level core that runs a Linux kernel and two Cortex-M4 real-time cores. The Cortex-A7 is responsible for running system services and your custom high-level application. The Cortex-M4 cores can run your custom bare-metal apps, or real-time operating systems such as Azure RTOS or FreeRTOS.
 
-![Azure Sphere architecture.](../media/azure-sphere-architecture.png)
+:::image type="content" source="../media/azure-sphere-architecture.png" alt-text="Diagram that shows the Azure Sphere architecture." border="false":::
 
 ## The Altair emulator application architecture
 
 The Altair emulator consists of three applications, one high-level application, and two real-time applications.
 
-![Altair on Azure Sphere application architecture.](../media/azure-sphere-app-architecture.png)
+:::image type="content" source="../media/azure-sphere-app-architecture.png" alt-text="Diagram that shows the Altair on Azure Sphere application architecture." border="false":::
 
 1. The **AltairHL_emulator** high-level application is responsible for running the Altair emulator and managing communications.
 

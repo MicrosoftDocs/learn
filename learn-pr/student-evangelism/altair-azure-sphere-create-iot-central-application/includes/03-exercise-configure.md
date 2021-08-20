@@ -14,7 +14,7 @@ In this exercise, you'll create an Azure Iot Central application and link it to 
 
 1. Navigate to **Build**, select **Custom app**, and select **Create app**.
 
-    :::image type="content" source="../media/new-application.png" alt-text="Screenshot that shows how to create custom app.":::
+    :::image type="content" source="../media/new-application.png" alt-text="Screenshot that shows how to create a custom app.":::
 
 1. Specify the **Application name**, specify the **URL**.
 
