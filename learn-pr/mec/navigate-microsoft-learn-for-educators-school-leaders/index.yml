@@ -19,23 +19,22 @@ summary: |
   This module will give you the essentials for using Microsoft Learn and provide a gateway to exciting content for the latest and greatest educator tools.  
 abstract: | 
   By the end of this module, you'll be able to:
-    - Identify why and how the Microsoft Educator Center is moving to Learn
     - Set up your Learn profile
     - Find your completion history and achievements
     - Browse content for K-12 educators, higher-ed educators, parents/guardians and school leaders
     - Provide feedback to improve the experience 
 prerequisites: | 
-  - Familiarity with the Microsoft Educator Center (optional)
+  - Familiarity with the Microsoft Educator Center
 iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels: 
   - beginner
 roles: 
   - k-12-educator
   - higher-ed-educator
   - school-leader
-  - parent-guardian
 products:
-- industry-solutions
+- m365	
 units:
 - learn.navigate-microsoft-learn-for-educators-school-leaders.introduction
 - learn.navigate-microsoft-learn-for-educators-school-leaders.find-educator-content-in-learn
