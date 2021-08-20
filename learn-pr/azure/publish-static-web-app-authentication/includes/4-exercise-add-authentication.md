@@ -34,79 +34,79 @@ We'll now run the app and API locally with a development server. This way, you'l
 
 1. Go to the folder of your preferred front-end framework, as follows:
 
-::: zone pivot="angular"
+   ::: zone pivot="angular"
 
    ```bash
    cd angular-app
    ```
 
-::: zone-end
+:  :: zone-end
 
-::: zone pivot="react"
+   ::: zone pivot="react"
 
    ```bash
    cd react-app
    ```
 
-::: zone-end
+   ::: zone-end
 
-::: zone pivot="svelte"
+   ::: zone pivot="svelte"
 
    ```bash
    cd svelte-app
    ```
 
-::: zone-end
+   ::: zone-end
 
-::: zone pivot="vue"
+  ::: zone pivot="vue"
 
    ```bash
    cd vue-app
-  ```
+   ```
 
-::: zone-end
+   ::: zone-end
 
 1. Run the front-end client application using a development server.
 
-::: zone pivot="angular"
+   ::: zone pivot="angular"
 
    ```bash
    npm start
    ```
 
-::: zone-end
+   ::: zone-end
 
-::: zone pivot="react"
+   ::: zone pivot="react"
 
    ```bash
    npm start
    ```
 
-::: zone-end
+   ::: zone-end
 
-::: zone pivot="svelte"
+   ::: zone pivot="svelte"
 
    ```bash
    npm run dev
    ```
 
-::: zone-end
+   ::: zone-end
 
-::: zone pivot="vue"
+   ::: zone pivot="vue"
 
    ```bash
    npm run serve
    ```
 
-::: zone-end
+   ::: zone-end
 
-   Leave this server running in the background. We'll now run the API and authentication server emulator using the SWA CLI.
+    Leave this server running in the background. We'll now run the API and authentication server emulator using the SWA CLI.
 
 1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>.
 
 1. Enter and select **Terminal: Create New Integrated Terminal**.
 
-1. Run the SWA CLI using this command:
+1. Run the SWA CLI using the following command:
 
    ::: zone pivot="angular"
 
@@ -207,7 +207,7 @@ First, we need to access the user login status by making a query to `/.auth/me` 
 
 ::: zone pivot="react"
 
-1. Edit the file `react-app/src/components/NavBar.js`, and to add the following code at the top of the function and update the imports.
+Edit the file `react-app/src/components/NavBar.js`, and to add the following code at the top of the function and update the imports.
 
     ```jsx
     import React, { useState, useEffect } from 'react';
@@ -244,7 +244,7 @@ First, we need to access the user login status by making a query to `/.auth/me` 
 
 ::: zone pivot="svelte"
 
-1. Edit the file `svelte-app/src/components/NavBar.svelte`, and add the following code in the script part.
+Edit the file `svelte-app/src/components/NavBar.svelte`, and add the following code in the script part.
 
     ```javascript
     import { onMount } from 'svelte';
