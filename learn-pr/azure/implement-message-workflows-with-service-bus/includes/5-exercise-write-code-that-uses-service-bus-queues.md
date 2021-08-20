@@ -341,7 +341,7 @@ To complete the component that sends messages about sales, follow these steps:
 
     ```azurecli
     az servicebus queue show \
-        --resource-group learn-cdb2ffc0-da9c-439c-a4e0-082076224e71 \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
         --name salesmessages \
         --query messageCount \
         --namespace-name <namespace-name>
