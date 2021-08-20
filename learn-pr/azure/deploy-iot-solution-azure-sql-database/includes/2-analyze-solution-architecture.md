@@ -8,7 +8,7 @@ Here, you will learn about the canonical IoT architecture, how Azure SQL Databas
 
 A typical IoT solution typically has the following components:
 
-:::image type="content" source="../media/2-generic-iot.png" alt-text="Diagram of the canonical IoT architecture." border="false":::
+:::image type="content" source="../media/2-generic-iot.svg" alt-text="Diagram of the canonical IoT architecture." border="false":::
 
 Let's identify and describe the roles and responsibilities of each of these components:
 
@@ -20,7 +20,7 @@ Let's identify and describe the roles and responsibilities of each of these comp
 
 Fortunately, the Azure platform offers a full portfolio of platform-as-a-service (PaaS) services that integrate seamlessly and cover all the needs of modern, scalable IoT solutions. A sample architecture shows a selection of services available.
 
-:::image type="content" source="../media/2-azure-iot.png" alt-text="Diagram of the canonical IoT architecture using Azure services." border="false":::
+:::image type="content" source="../media/2-azure-iot.svg" alt-text="Diagram of the canonical IoT architecture using Azure services." border="false":::
 
 For device connectivity and management, IoT Hub provides secure and reliable communication for your (IoT) applications, connecting virtually any device and offering comprehensive per-device authentication options, built-in device management, predictable performance and availability. IoT Hub, which is built on Azure Event Hub (event store), can process and manage millions of events per second, with easy consumption through APIs and several Azure services.
 
@@ -57,10 +57,6 @@ Here are some considerations for achieving scale with Azure SQL Database:
 
 You now understand how and why Azure SQL Database is a good fit for IoT applications. Following the distributor scenario, you'll deploy and configure a baseline IoT solution and implement the best practices for achieving scale. The template you deploy can be a great starting point for other IoT scenarios that you or your organization seek to create.
 
-:::image type="content" source="../media/2-azure-sql-iot.png" alt-text="Diagram of the architecture for an IoT solution with Azure SQL Database." border="false":::
+:::image type="content" source="../media/2-azure-sql-iot.svg" alt-text="Diagram of the architecture for an IoT solution with Azure SQL Database." border="false":::
 
-The template is an Azure Resource Manager (ARM) template, which uses JSON files to define the infrastructure and configuration for a solution. Typically, there is a template file and a parameters file, which contain what to deploy and specifications respectively. You can then deploy the template and parameters with the Azure CLI or Azure PowerShell. Let's break down what the template deploys:
-
-- TODO
-- TODO
-- TODO
+The template is an Azure Resource Manager (ARM) template, which uses JSON files to define the infrastructure and configuration for a solution. Typically, there is a template file and a parameters file, which contain what to deploy and specifications respectively. You can then deploy the template and parameters with the Azure CLI or Azure PowerShell. In the exercises that follow, you will explore the contents and configurations of what's deployed and the associated code samples.

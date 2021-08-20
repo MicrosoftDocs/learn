@@ -6,7 +6,7 @@ Recall in the distributor scenario, your IoT solution will be taking in real-tim
 
 A common design pattern for systems, like the truck fleet example, involves a **landing zone** (or staging area) that is optimized for absorbing the shock of the high and spiky input rate. After, the data flows into its final destination (usually one or more tables) that instead is optimized for persistence and analysis. There are few knobs we can use to optimize our data models for these different purposes. Different indexing approaches can be taken for databases in general, for example, a light one to privilege higher ingestion rate versus a more comprehensive to favor query and retrieval. Azure SQL Database also provides specialized capabilities like in-memory OLTP tables and columnstore indexes that can be used together to implement what is often referred to as a **shock absorber** pattern for IoT solutions. Let's dive into the pattern you see below.
 
-:::image type="content" source="../media/4-shock-absorber.png" alt-text="Diagram of the shock absorber pattern for Azure SQL." border="false":::
+:::image type="content" source="../media/4-shock-absorber.svg" alt-text="Diagram of the shock absorber pattern for Azure SQL." border="false":::
 
 ### In-memory OLTP
 
@@ -20,7 +20,7 @@ With billions of events potentially ingested per day, the maximum in-memory OLTP
 
 A columnstore-based table contains data that's logically organized as a table with rows and columns, and physically stored in a column-wise data format. Bulk loading is the most performant way to move data into a columnstore index because it operates on batches of rows. Bulk loading fills rowgroups to maximum capacity and compresses them directly into the columnstore. Only rows that don't meet the minimum of 102,400 rows per rowgroup go to the deltastore. To perform a bulk load, often the [bcp Utility](https://docs.microsoft.com/sql/tools/bcp-utility) is used.
 
-:::image type="content" source="../media/4-columnstore.png" alt-text="Diagram illustrating how columnstore works in Azure SQL." border="false":::
+:::image type="content" source="../media/4-columnstore.svg" alt-text="Diagram illustrating how columnstore works in Azure SQL." border="false":::
 
 By selecting the right batch size (for example, between 102,400 and 1,048,576, depending on your events generation rate and logic) you can maximize efficiency. Appropriate batching eliminates the need to move new data rows into columnstore's delta rowgroup and wait for the Tuple Mover to compress them. Instead, batching allows you to go straight to a compressed rowgroup, which reduces logging and increases overall throughput by at least 10 times. Plus, you still achieve a similar level of data compression, which is important when you're dealing with hundreds of billions of events.
 
@@ -44,7 +44,7 @@ Storing large amounts of data efficiently may not be enough, as you may struggle
 
 Azure SQL Database provides full functionality and support for JSON data. With JSON functions in T-SQL, like `ISJSON`, `JSON_VALUE`, and `JSON_QUERY`, you can treat JSON data like any other SQL data type. You can extract values from the JSON test to use JSON data in the `SELECT` statement or in a search predicate. If your JSON structure happens to be stable and known upfront, the best option is to design your relational schema to accommodate the most relevant attributes from JSON data. You can then use `OPENJSON` to transform these attributes to row fields when inserting new data.
 
-:::image type="content" source="../media/4-json-data-support.png" alt-text="Diagram illustrating how JSON is supported with T-SQL." border="false":::
+:::image type="content" source="../media/4-json-data-support.svg" alt-text="Diagram illustrating how JSON is supported with T-SQL." border="false":::
 
 The result is fully relational columns (with optimized SQL data types) that can be used for retrieval and analytical purposes, including complex filtering and aggregations. This data will be properly indexed to support various access paths. You can additionally decide to keep the entire JSON fragment and store it in a NVARCHAR(MAX) field in the same table if further processing may be needed.
 
@@ -63,7 +63,7 @@ Depending on your workload requirements, it may be beneficial to separate your r
 
 Regardless of the option you select, you can use replicas to scale out IoT data consumers without impacting the ingestion process. These replicas can support read workloads like alerting, dashboards, analytics, and machine learning.
 
-:::image type="content" source="../media/4-read-scale.png" alt-text="Diagram illustrating how replicas can support read workloads." border="false":::
+:::image type="content" source="../media/4-read-scale.svg" alt-text="Diagram illustrating how replicas can support read workloads." border="false":::
 
 ## Manage large IoT data stores with Azure SQL Database
 
