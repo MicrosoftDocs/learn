@@ -9,8 +9,9 @@ The original Altair 8800 was programmed directly using the front panel. It was a
 
 The Altair 8800 had a series of LEDs and switches that you used to load apps and determine the state of the Altair.
 
-![Image of the Altair 8800.](../media/altair-8800-smithsonian-museum.png)
-[Altair 8800 image attribution - Smithsonian Museum](https://commons.wikimedia.org/wiki/File:Altair_8800,_Smithsonian_Museum.jpg)
+:::image type="content" source="../media/altair-8800-smithsonian-museum.png" alt-text="Image that shows the Altair 8800." border = "false":::
+
+[Altair 8800 image attribution - Smithsonian Museum](https://commons.wikimedia.org/wiki/File:Altair_8800,_Smithsonian_Museum.jpg?azure-portal=true)
 
 ## Overview
 
@@ -18,7 +19,7 @@ The Altair emulator supports several front panel configurations.
 
 1. The virtual front panel, the advantage is that no extra hardware is required. The virtual front panel works with both the Avnet and Seeed Studio Azure Sphere developer kits.
 2. If you have an Avnet Azure Sphere, then the Click front panel is an option. The MikroE clicks can be used to simulate the front panel. The advantage is a more authentic experience programming the Altair. The LED panel also indicates the current state of the Altair and your application.
-3. The Altair front panel is the most authentic experience, you'll need to build the panel, but it operates just like the original Altair. You can find the hardware design in the [MT3620 Azure Sphere Based Altair 8800 Hardware](https://github.com/AzureSphereCloudEnabledAltair8800/AzureSphereAltair8800.Hardware?azure-portal=true)) repo.
+3. The Altair front panel is the most authentic experience, you'll need to build the panel, but it operates just like the original Altair. You can find the hardware design in the [MT3620 Azure Sphere Based Altair 8800 Hardware](https://github.com/AzureSphereCloudEnabledAltair8800/AzureSphereAltair8800.Hardware?azure-portal=true) repo.
 
 ## Hardware configurations
 
@@ -26,23 +27,24 @@ The Altair emulator supports several front panel configurations.
 
 An Avnet Azure Sphere Starter Kit Rev 1 with the MikroE 4x4 key Click and 8x8 R Click LED matrix display.
 
-> IMPORTANT: This Click board configuration is only compatible with the Avnet Azure Sphere V1 board. The Click board solution for Avnet Azure Sphere Starter Kits Rev 1 and Rev 2 will be available shortly.
+> [!IMPORTANT]
+> This Click board configuration is only compatible with the Avnet Azure Sphere V1 board. The Click board solution for Avnet Azure Sphere Starter Kits Rev 1 and Rev 2 will be available shortly.
 
-![Avnet Azure Sphere with MikroE Click panel.](../media/altair-8800-with-4x4-8x8-clicks.png)
+:::image type="content" source="../media/altair-8800-4x4-8x8-clicks.png" alt-text="Image that shows Avnet Azure Sphere with the MikroE 4x4 and 8x8 Click panels." border = "false":::
 
 ### Avnet Azure Sphere plus MikroE Altair 8800 Retro Click
 
 An Avnet Azure Sphere Starter Kit Rev 1 and Rev 2 with the MikroE Altair 8800 Retro Click (**Available soon**).
 
-![Avnet Azure Sphere plus MikroE Click panel.](../media/altair-8800-retro-click.png)
+:::image type="content" source="../media/altair-8800-retro-click.png" alt-text="Image that shows Avnet Azure Sphere and the MikroE Click panel." border = "false":::
 
 ### Altair front panel
 
 The Seeed Studio or Avnet with the Altair Front Panel. See the Front Panel wiring section in the appendix.
 
-![Avnet Azure Sphere with the Altair front panel.](../media/avnet-with-front-panel.png)
+:::image type="content" source="../media/avnet-front-panel.png" alt-text="Image that shows Avnet Azure Sphere with the Altair front panel." border = "false":::
 
-![Seeed Studio Azure Sphere with the Altair front panel.](../media/altair-front-panel.png)
+:::image type="content" source="../media/altair-front-panel.png" alt-text="Image that shows Seeed Studio Azure Sphere with the Altair front panel." border = "false":::
 
 #### Front panel wiring
 
@@ -50,9 +52,9 @@ If you do build an Altair front panel, then you will need to know how to connect
 
 The following describes how to wire the front panel to the Avnet and Seeed Studio Azure Sphere developer kits.
 
-![Altair front panel.](../media/altair-front-panel.png)
+:::image type="content" source="../media/altair-front-panel.png" alt-text="Photo of the Altair front panel." border = "false":::
 
-##### Seeed Studio Azure Sphere development Kit
+##### Seeed Studio Azure Sphere development kit
 
 Pin No. | Function | MT3620 Pin | MT3620 Pin Function | Description |
 --------|----------|------------|---------------------|------------ |

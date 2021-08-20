@@ -6,7 +6,7 @@ The Altair emulator connects to the Web Terminal by redirecting the keyboard and
 
 The Web Terminal is an HTML/CSS/JavaScript application built on the [MQTT](https://www.eclipse.org/paho/index.php?page=clients/js/index.php&azure-portal=true) and [Xterm](https://xtermjs.org?azure-portal=true) JavaScript libraries.
 
-:::image type="content" source="../media/altair-web-terminal.png" alt-text="The illustration shows the architecture of the web terminal.":::
+:::image type="content" source="../media/altair-web-terminal.png" alt-text="Diagram that shows the architecture of the web terminal."  border="false":::
 
 ## Generator MQTT Broker certificates
 

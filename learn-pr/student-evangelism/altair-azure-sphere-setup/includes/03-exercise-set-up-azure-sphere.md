@@ -9,7 +9,7 @@ Install the following software on your Windows 10 or Linux computer.
 
 ## Troubleshooting
 
-1. See the [Troubleshoot Azure Sphere issues](/azure-sphere/install/troubleshoot-installation) article.
+1. See the [Troubleshoot Azure Sphere issues](/azure-sphere/install/troubleshoot-installation?azure-portal=true) article.
 1. If you have trouble connecting to the Azure Sphere over USB be sure to disable any VPNs you might have enabled.
 1. The **TAP-Windows Adapter V9** installed with VPN clients, including the OpenVPN client is not compatible with the **TAP-Windows Adapter V9** required and installed by the Azure Sphere SDK. You'll need to uninstall the VPN client and reinstall the Azure Sphere SDK for Visual Studio.
 1. Windows Users. If running the IoT Central ShowIoTCentralConfig command fails with a missing library message, then delete the folder from ShowIoTCentralConfig from AppData\\Local\\Temp\\.net.

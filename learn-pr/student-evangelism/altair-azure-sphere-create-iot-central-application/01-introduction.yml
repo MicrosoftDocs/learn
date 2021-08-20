@@ -3,7 +3,7 @@ uid: learn.student-evangelism.altair-azure-sphere-create-iot-central-application
 title: Introduction
 metadata:
   title: Introduction
-  description: In this section, You will learn about the Altair 8800 and Azure Sphere.
+  description: Introduction to how to create an Azure IoT Central application for Altair 8800 and Azure Sphere.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover

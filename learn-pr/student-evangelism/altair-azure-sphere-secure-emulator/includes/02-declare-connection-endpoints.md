@@ -1,6 +1,6 @@
 In this unit, you'll learn how to declare the network endpoints for the Altair emulator.
 
-## Granting access to Mosquitto.org
+## Granting access to `Mosquitto.org`
 
 The Altair emulator will be connecting to test.mosquitto.org. The network endpoint must be declared in the **AllowedConnections** section in the application manifest file.
 

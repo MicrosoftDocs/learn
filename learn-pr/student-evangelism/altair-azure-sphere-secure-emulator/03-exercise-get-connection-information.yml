@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-secure-emulator.exercise-get-connection-information
-title: Exercise - How to secure an Azure Sphere
+title: Exercise - Get connection information
 metadata:
-  title: Exercise - How to secure an Azure Sphere
-  description: In this section, we secure an Azure Sphere application.
+  title: Exercise - Get connection information
+  description: In this exercise, complete the steps to get connection information and secure an Azure Sphere application.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover

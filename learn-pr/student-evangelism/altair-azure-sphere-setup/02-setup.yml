@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-setup.setup
-title: How to set up Azure Sphere
+title: Set up Azure Sphere
 metadata:
-  title: How to set up Azure Sphere
+  title: Set up Azure Sphere
   description: Learn how to set up Azure Sphere for development.
   ms.date: 08/18/2021
   author: gloveboxes

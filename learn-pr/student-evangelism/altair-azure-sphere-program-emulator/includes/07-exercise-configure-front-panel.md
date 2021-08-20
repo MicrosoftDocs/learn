@@ -42,19 +42,19 @@ The [MikroE 4x4 Key Click](https://www.mikroe.com/4x4-key-click) has two modes o
 
 In **Command Mode**, the buttons take on the role of the command switches on the Altair. In this mode, you have access to CPU STOP, CPU RUN, SINGLE STEP, EXAMINE, EXAMINE NEXT, DEPOSIT, and DEPOSIT NEXT.
 
-![The illustration shows the buttons in command mode.](../media/altair-command-mode-buttons.png)|
+:::image type="content" source="../media/altair-command-mode-buttons.png" alt-text="Photo that shows the buttons in command mode." border="false":::
 
 ### Input Mode
 
 In **Input Mode**, the buttons take on the role of the 16 address/data switches on the Altair. Using the 16 buttons on the MikroE 4x4 Key Click you can set the bit values to be loaded onto the data bus or address bus.
 
-![The illustration shows the buttons in input mode.](../media/altair-input-mode-buttons.png)
+:::image type="content" source="../media/altair-input-mode-buttons.png" alt-text="Photo that shows the buttons in input mode." border="false":::
 
 ## The 8x8 LED Click layout
 
 The top row of LEDs are the Altair status indicators. In **CPU STOP** mode, the middle row of LEDs displays the 8 bits on the Data Bus, the bottom two rows display the 16 bits set on the Address Bus. In **CPU RUN** mode, the Data and Address bus LEDs are sampled every 20 milliseconds and are an indicator of activity.
 
-![The illustration shows the 8x8 LED layout.](../media/altair-click-panel-leds.png)
+:::image type="content" source="../media/altair-click-panel-leds.png" alt-text="Photo that shows the 8x8 LED layout." border="false":::
 
 ### Loading an Intel 8080 opcode using the Click front panel
 
@@ -71,7 +71,7 @@ Follow along:
 1. Press button **8** to turn off the address just entered.
 1. Press buttons **7**, **6**, **1**, and **0** to set the Intel 8080 Jmp instruction
 
-![Image show the LEDS 7,6,1,0 set for Intel opcode jmp](../media/altair-intel-8080-jmp-opcode.png)
+:::image type="content" source="../media/altair-intel-8080-jmp-opcode.png" alt-text="Photo that shows the LEDS 7,6,1,0 set for the Intel opcode jmp." border="false":::
 
 1. Press **Button B** on the Avnet Stater kit to switch to **Command** mode.
 1. Press **DEPOSIT** to deposit the first byte of the Jmp instruction at address 0x0100.
@@ -110,13 +110,13 @@ The MikroE Altair 8800 Retro Click (available soon) has two modes of operation, 
 
 In **Command Mode**, the buttons take on the role of the command switches on the Altair. In this mode you have access to CPU STOP, CPU RUN, SINGLE STEP, EXAMINE, EXAMINE NEXT, DEPOSIT, and DEPOSIT NEXT.
 
-![The illustration shows buttons for command mode.](../media/altair-retro-click-panel-command-mode.png)
+:::image type="content" source="../media/altair-retro-click-panel-command-mode.png" alt-text="Photo that shows buttons for command mode." border="false":::
 
 ### Input Mode
 
 In **Input Mode**, the buttons take on the role of the 16 address/data switches on the Altair. Using the 16 buttons on the ALtair 8800 Retro Click you can set the bit values to be loaded onto the data bus or address bus.
 
-![The illustration shows for input mode.](../media/altair-retro-click-panel-input-mode.png)
+:::image type="content" source="../media/altair-retro-click-panel-input-mode.png" alt-text="Screenshot that shows input mode." border="false":::
 
 ### CPU RUN STOP Status LEDs
 
@@ -137,7 +137,7 @@ Follow along:
 1. Press button **8** to turn off the address just entered.
 1. Press buttons **7**, **6**, **1**, and **0** to set the Intel 8080 Jmp instruction
 
-![Image show the LEDS 7,6,1,0 set for Intel opcode jmp.](../media/altair-intel-8080-jmp-opcode.png)
+:::image type="content" source="../media/altair-intel-8080-jmp-opcode.png" alt-text="Photo that show the LEDS 7,6,1,0 set for Intel opcode jmp." border="false":::
 
 1. Press **Button B** on the Avnet Stater kit to switch to **Command** mode.
 1. Press **DEPOSIT** to deposit the first byte of the Jmp instruction at address 0x0100.
@@ -172,7 +172,7 @@ Single step: Address bus: 00000000 00000000 (0x0000), Data bus 11000011 (0xc3), 
 
 The Altair front panel board can be used with the Avnet Starter Kit and the Seeed Studio Reference Design Board.
 
-![Altair front panel.](../media/altair-front-panel.png)
+:::image type="content" source="../media/altair-front-panel.png" alt-text="Photo that shows the Altair front panel." border="false":::
 
 ### Loading an Intel 8080 opcode using the Altair front panel
 

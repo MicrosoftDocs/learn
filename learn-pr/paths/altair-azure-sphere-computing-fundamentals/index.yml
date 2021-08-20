@@ -2,7 +2,7 @@
 uid: learn.altair-azure-sphere-computing-fundamentals
 metadata:
   title: Altair 8800 and Azure Sphere computing fundamentals 
-  description: Learn computing fundamentals for creating a cloud-enabled Altair 8800 and Azure Sphere solution.
+  description: In this learning path, learn the computing fundamentals of the Altair 8800 and Azure Sphere by creating a cloud-enabled Altair on Azure Sphere solution.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover
@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure-iot-central
 title: Altair 8800 and Azure Sphere computing fundamentals
 summary: |
-  In this learning path, you will learn computing fundamentals for creating a cloud-enabled Altair 8800 and Azure Sphere solution.
+  In this learning path, learn the computing fundamentals of the Altair 8800 and Azure Sphere by creating a cloud-enabled Altair on Azure Sphere solution.
   
   By the end of this learning path, you will be able to: 
    - TBD

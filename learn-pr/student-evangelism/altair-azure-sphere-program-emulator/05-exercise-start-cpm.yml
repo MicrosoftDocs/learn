@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-program-emulator.exercise-start-cpm
-title: Exercise - How to program the Altair from CP/M
+title: Exercise - Program the Altair by using CP/M
 metadata:
-  title: Exercise - How to program the Altair from CP/M
-  description: In this section, we learn how to program the Altair from CP/M
+  title: Exercise - Program the Altair by using CP/M
+  description: In this exercise, program the Altair by using CP/M.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover

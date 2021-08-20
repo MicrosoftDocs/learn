@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.altair-azure-sphere-create-web-terminal.exercise-deploy-web-terminal
-title: Exercise - How to deploy the Altair web terminal
+title: Exercise - Deploy an Altair web terminal
 metadata:
-  title: Exercise - How to deploy the Altair web terminal
-  description: In this section, we create the Web Terminal Azure Static Web App.
+  title: Exercise - Deploy an Altair web terminal
+  description: In this exercise, deploy the Web Terminal Azure Static Web App.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover

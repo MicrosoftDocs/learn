@@ -10,8 +10,7 @@ On startup, the Altair emulator loads Altair BASIC. You'll be prompted for the f
 
 Altair BASIC will respond with the amount of memory and version information.
 
-> [!div class="mx-imgBorder"]
-> ![The illustration shows Altair BASIC starting.](../media/altair-basic-init.png)
+:::image type="content" source="../media/altair-basic-init.png" alt-text="Screenshot that shows the Altair BASIC starting.":::
 
 ### Type your first program
 
