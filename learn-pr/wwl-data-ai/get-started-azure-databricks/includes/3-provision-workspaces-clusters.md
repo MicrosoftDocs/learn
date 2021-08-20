@@ -37,7 +37,7 @@ To create and configure a new cluster, we have to select the **Create Cluster** 
 
 We will see your new cluster appearing in the clusters list. 
 
-![The clusters](../media/01-01-03-clusters.png)
+![Clusters list](../media/01-01-03-clusters.png)
 
 To launch the cluster, we have to select the **Start** button and then confirm to launch it. It is recommended to wait until the cluster is started.
 
@@ -45,7 +45,7 @@ A cluster can be customized in many ways. In case you want to make third-party c
 
 Once the cluster is running, we can select **Edit** to change its properties. In case we want to provision your cluster with additional libraries, we can select the **Libraries** and then choose **Install New**.
 
-![The clusters](../media/01-01-04-provision-cluster.png)
+![Provision cluster with additional libraries](../media/01-01-04-provision-cluster.png)
 
 We can pick a library and it will be available later to be used in your notebooks.
 

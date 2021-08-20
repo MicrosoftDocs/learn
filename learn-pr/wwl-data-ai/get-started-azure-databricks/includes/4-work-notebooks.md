@@ -9,14 +9,14 @@ Runnable cells operate on files and tables. Cells can be run in sequence, referr
 
 To create a notebook, we can select **Workspace**, browse into the desired folder, right-click, and choose **Create**, then select **Notebook**.
 
-![Create a notebook](../media/01-01-09-new-notebook.png)
+![Create a notebook from workspace](../media/01-01-09-new-notebook.png)
 
 A name should be given to the new notebook, and a default language to be used inside the code cells. Choose a cluster to run the code in the cells.
 
 For runnable cells, the following programming languages are supported: Python, Scala, R, and SQL.
 You may choose the default language for the cells in a notebook. You may also override that language later.
 
-![Create a notebook](../media/01-01-10-new-notebook.png)
+![Configuration to create notebook](../media/01-01-10-new-notebook.png)
 
 The notebook editor opens with a first empty cell
 
