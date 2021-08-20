@@ -106,7 +106,7 @@ We'll now run the app and API locally with a development server. This way, you'l
 
 7. Enter and select **Terminal: Create New Integrated Terminal**.
 
-8. Run the SWA CLI using the following command:
+8. Run the SWA CLI by running the following command:
 
    ::: zone pivot="angular"
 
