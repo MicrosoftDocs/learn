@@ -66,7 +66,7 @@ We'll now run the app and API locally with a development server. This way, you'l
 
    ::: zone-end
 
-1. Run the front-end client application using a development server.
+5. Run the front-end client application using a development server.
 
    ::: zone pivot="angular"
 
@@ -102,11 +102,11 @@ We'll now run the app and API locally with a development server. This way, you'l
 
     Leave this server running in the background. We'll now run the API and authentication server emulator using the SWA CLI.
 
-1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>.
+6. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>.
 
-1. Enter and select **Terminal: Create New Integrated Terminal**.
+7. Enter and select **Terminal: Create New Integrated Terminal**.
 
-1. Run the SWA CLI using the following command:
+8. Run the SWA CLI using the following command:
 
    ::: zone pivot="angular"
 
@@ -140,7 +140,7 @@ We'll now run the app and API locally with a development server. This way, you'l
 
    ::: zone-end
 
-1. Browse to `http://localhost:4280`.
+9. Browse to `http://localhost:4280`.
 
 The final port used by the SWA CLI is different than the one you've seen before, because it uses a reverse proxy to forward requests to the three different components:
 
