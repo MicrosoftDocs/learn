@@ -10,7 +10,7 @@ Spark DataFrames can be created from various sources, such as CSV files, JSON, P
 ## Using Spark to load table data
 
 Assuming we have this data available in a table:
-![Table data](../media/01-02-01-select-sql.png)
+[![Table data](../media/01-02-01-select-sql.png)](../media/01-02-01-select-sql.png#lightbox)
 
 We can use Spark to load the table data by using the `sql` method:
 ```python
@@ -44,7 +44,7 @@ Each column in a given DataFrame has a name, a type, and a nullable flag.
 ```python
 df.printSchema
 ```
-![DataFrame schema](../media/01-02-04-spark-df-printschema.png)
+[![DataFrame schema](../media/01-02-04-spark-dataframe-printschema.png)](../media/01-02-04-spark-dataframe-printschema.png#lightbox)
 
 ## DataFrame contents
 
