@@ -1,12 +1,12 @@
 Azure Functions Core Tools give you a way to get started developing functions locally by creating the files and folders you need and letting you run your functions on your own computer.
 
-You've decided to start your work with Azure Functions by locally developing a function that computes simple interest. Eventually you'll work your way up to more complex functions that work together and call other services and databases, but using the Core Tools to build a function that performs a basic loan calculation is a good start. You also want to try calling your function on your own computer before publishing it to Azure.
+You've decided to start your work with Azure Functions by locally developing a function that computes simple interest. Eventually you'll work your way up to more complex functions that work together and call other services and databases, but using Core Tools to build a function that performs a basic loan calculation is a good start. You also want to try calling your function on your own computer before publishing it to Azure.
 
-In this exercise, we'll create and run our first function from Azure Cloud Shell command line using the Core Tools.
+In this exercise, we'll create and run our first function from Azure Cloud Shell command line using Core Tools.
 
 ## Create a local Azure Functions project
 
-In this exercise, we'll use Cloud Shell to develop our function. Cloud Shell system has the Core Tools and Azure CLI preinstalled, as well as an editor we'll use to write code. Make sure to activate the sandbox above before proceeding.
+In this exercise, we'll use Cloud Shell to develop our function. Cloud Shell system has Core Tools and Azure CLI preinstalled, as well as an editor we'll use to write code. Make sure to activate the sandbox above before proceeding.
 
 1. In the Cloud Shell on the right, create a new directory called `loan-wizard` and open that directory.
 
@@ -104,7 +104,7 @@ To run our new function locally and try it out, we'll use `func start` to start 
 
     This localhost URL is not published to the web, it's only reachable from tools running in Cloud Shell. 
     
-    We're going to use a command line tool, `curl`, to interact with our function. To do that, we need to restart the Functions host as a background process so we can use the command line while it's running. If you were using the Core Tools from your own computer, you probably wouldn't need to do this. You could use `curl` from a second terminal window, and the output produced by the Core Tools would appear in real time in the first window. In Cloud Shell, we are limited to a single terminal, so this technique is necessary for this tutorial.
+    We're going to use a command line tool, `curl`, to interact with our function. To do that, we need to restart the Functions host as a background process so we can use the command line while it's running. If you were using Core Tools from your own computer, you probably wouldn't need to do this. You could use `curl` from a second terminal window, and the output produced by Core Tools would appear in real time in the first window. In Cloud Shell, we are limited to a single terminal, so this technique is necessary for this tutorial.
 
 1. Press <kbd>Ctrl+C</kbd> to stop the Functions host. The Cloud Shell should respond **Application is shutting down...**.
 
