@@ -1,6 +1,6 @@
 Machine learning is a data science technique used to extract patterns from data allowing computers to identify related data, forecast future outcomes, behaviors, and trends.
 
-## Machine Learning as the new programming paradigm
+## Machine learning as the new programming paradigm
 
 ### Traditional programming
 
