@@ -81,7 +81,7 @@ let otherCardList = ["Jack", "10"]
 let fullList = cards @ otherCardList // "Ace", "King", "Queen", "Jack", "10"
 ```
 
-However, there is an `append()` function in the list module. The `append()` function exists for both sequence and array collections, so it's better to use that, should you ever need to switch the collection type for example or learn things once. Let's revisit our two examples and instead use `append()`:
+There's an `append()` function in the list module, and it works for both array and sequence collections. It's preferable to use `append()` if, for example, you need to switch the collection type from list to sequence or you want to avoid having to learn a new way to add items. Using the at sign (`@`) to add elements to a list works only for a list structure. Let's revisit our two examples and instead use `append()`:
 
 ```fsharp
 let cards = ["Ace"; "King"; "Queen"]
