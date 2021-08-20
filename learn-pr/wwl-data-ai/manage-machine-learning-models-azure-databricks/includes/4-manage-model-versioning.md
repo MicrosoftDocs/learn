@@ -1,6 +1,6 @@
 With machine learning, model training is not a one-time process. Instead, models will update over time. Keeping track of these changes is possible in MLflow using versioning.
 
-## The Versioning Process
+## The versioning process
 
 Versioning a model using the Azure Databricks UI is essentially the same as the model registration process. First, start with an experiment run.
 
@@ -20,7 +20,7 @@ At this point, you will have a new version of the model. Navigate to the **Model
 
 ![Review the versions of a model.](../media/03-02-03-model-versions.png)
 
-## Staging Model Versions
+## Stage model versions
 
 In addition to creating versions of models, MLflow allows model versions to be in certain specified stages. These include:
 
@@ -30,7 +30,7 @@ In addition to creating versions of models, MLflow allows model versions to be i
 
 Model versions start out without a stage. There are two ways of doing this: through the Azure Databricks UI as well as through code.
 
-### Staging Model Versions through the UI
+### Stage model versions through the UI
 
 In order to transition a model version to a stage through the Azure Databricks UI, select the version link and in the **Stage** drop-down, select the new stage, either by requesting a transition or performing the transition. Performing a transition requires one of the following permissions: **Manage Staging Versions**, **Manage Production Versions**, or **Manage**. Any user with **Read** permissions or better may request a transition.
 
@@ -40,7 +40,7 @@ After performing this transition, return to the model details and the **Stage** 
 
 ![Reviewing model versions.](../media/03-02-03-transition-complete.png)
 
-### Staging Model Versions through Code
+### Stage model versions through code
 
 In order to transition a model version to a stage through code, use the following method:
 

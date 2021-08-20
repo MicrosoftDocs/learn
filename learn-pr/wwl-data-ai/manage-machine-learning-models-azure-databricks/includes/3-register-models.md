@@ -1,6 +1,6 @@
 Once you have a model trained using the library of your choice, the next step is to register that model. Registration allows MLflow to keep track of the model, saving details on how the model performed in training, as well as the contents of the model itself.
 
-## The Registration Process
+## The registration process
 
 Registration is possible through the Azure Databricks UI and through code.
 
@@ -24,7 +24,7 @@ Choose an appropriate name for the model and then select **Register**.
 
 At this point, model registration will occur and you will have a new model. Navigate to the **Models** menu to view the model.
 
-### Registration through Code
+### Registration through code
 
 The other method to register a model is through code. There are two ways we can register a model. The first method is to register directly from an experiment.
 
@@ -50,7 +50,7 @@ model = mlflow.sklearn.load_model(
     model_uri=f"models:/{model_name}/{model_version}")
 ```
 
-## The Importance of Model Registration
+## The importance of model registration
 
 Model registration allows MLflow and Azure Databricks to keep track of models. This is important for two reasons. First, registering a model allows you to serve the model for real-time or batch scoring. This makes the process of using a trained model easy, as now data scientists will not need to develop application code; the serving process builds that wrapper and exposes a REST API or method for batch scoring automatically.
 
