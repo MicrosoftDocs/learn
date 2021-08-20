@@ -35,7 +35,7 @@ quiz:
       explanation: "You got it! Keep taking more modules to earn more badges."
     - content: "Profile>Settings"
       isCorrect: false
-      explanation: "There are a lot of great things you can do in settings, however, your badges will display elsewhere."
+      explanation: "There are many great things you can do in settings, however, your badges will display elsewhere."
     - content: "Profile>Activities"
       isCorrect: false
       explanation: "This is a great place to see your progress, but your badges will appear elsewhere. "
