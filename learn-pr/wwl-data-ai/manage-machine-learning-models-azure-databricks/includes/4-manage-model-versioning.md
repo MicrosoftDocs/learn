@@ -2,23 +2,23 @@ With machine learning, model training is not a one-time process. Instead, models
 
 ## The versioning process
 
-Versioning a model using the Azure Databricks UI is essentially the same as the model registration process. First, start with an experiment run.
+1. Versioning a model using the Azure Databricks UI is essentially the same as the model registration process. First, start with an experiment run.
 
-![The External Link option for a given run.](../media/03-01-03-external-link.png)
+   ![The External Link option for a given run.](../media/03-01-03-external-link.png)
 
-On the run details page, select the folder, which contains the model and then select **Register Model**.
+2. On the run details page, select the folder, which contains the model and then select **Register Model**.
 
-![Register a model.](../media/03-02-02-register-model.png)
+   ![Register a model.](../media/03-02-02-register-model.png)
 
-Because you have already created a model, select the **Model** drop-down list and choose the appropriate model name.
+3. Because you have already created a model, select the **Model** drop-down list and choose the appropriate model name.
 
-![Register a new version of a model.](../media/03-02-03-version-model.png)
+   ![Register a new version of a model.](../media/03-02-03-version-model.png)
 
-Select **Register** to complete model versioning.
+4. Select **Register** to complete model versioning.
 
-At this point, you will have a new version of the model. Navigate to the **Models** menu to view the model and its versions.
+   At this point, you will have a new version of the model. Navigate to the **Models** menu to view the model and its versions.
 
-![Review the versions of a model.](../media/03-02-03-model-versions.png)
+   ![Review the versions of a model.](../media/03-02-03-model-versions.png)
 
 ## Stage model versions
 

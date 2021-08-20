@@ -6,23 +6,23 @@ Registration is possible through the Azure Databricks UI and through code.
 
 ### Registration through the UI
 
-Registering a model is fairly straightforward. First, start with an experiment run.
+1. Registering a model is fairly straightforward. First, start with an experiment run.
 
-![The External Link option for a given run.](../media/03-01-03-external-link.png)
+    ![The External Link option for a given run.](../media/03-01-03-external-link.png)
 
-On the run details page, select the folder, which contains the model and then select **Register Model**.
+2. On the run details page, select the folder, which contains the model and then select **Register Model**.
 
-![Register a model.](../media/03-02-02-register-model.png)
+    ![Register a model.](../media/03-02-02-register-model.png)
 
-If you have not already created the model before, select the **Model** drop-down list and choose **+ Create New Model**.
+3. If you have not already created the model before, select the **Model** drop-down list and choose **+ Create New Model**.
 
-![Create a new model.](../media/03-02-02-create-model.png)
+    ![Create a new model.](../media/03-02-02-create-model.png)
 
-Choose an appropriate name for the model and then select **Register**.
+4. Choose an appropriate name for the model and then select **Register**.
 
-![Register a new model.](../media/03-02-02-name-model.png)
+    ![Register a new model.](../media/03-02-02-name-model.png)
 
-At this point, model registration will occur and you will have a new model. Navigate to the **Models** menu to view the model.
+5. At this point, model registration will occur and you will have a new model. Navigate to the **Models** menu to view the model.
 
 ### Registration through code
 
