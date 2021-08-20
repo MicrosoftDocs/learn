@@ -40,7 +40,7 @@ We'll now run the app and API locally with a development server. This way, you'l
    cd angular-app
    ```
 
-:  :: zone-end
+   ::: zone-end
 
    ::: zone pivot="react"
 
