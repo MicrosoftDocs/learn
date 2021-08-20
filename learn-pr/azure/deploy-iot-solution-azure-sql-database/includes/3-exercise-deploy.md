@@ -82,7 +82,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 1. Run the following script to clone the repository that contains the ARM template and deploy it to Azure.
 
     ```powershell
-    $appRepository =  "https://github.com/Azure-Samples/azure-sql-iot.git" #Read-Host "Enter your GitHub repository URL (for example, 'https://github.com/[username]/azure-sql-iot'):"
+    $appRepository =  "https://github.com/Azure-Samples/azure-sql-iot.git"
     $cloneRepository = git clone $appRepository
     az deployment group create -g $resourceGroupName `
     --template-file ./azure-sql-iot/azure_deployment/template.json `
@@ -114,14 +114,32 @@ These scripts should take three to five minutes to complete. Be sure to note you
     az vm show --resource-group $resourceGroupName --name $iotSimulator --show-details --query publicIps
     ```
 
-    The script will take several minutes to complete.
+    The script will take 5-10 minutes to complete.
 
     > [!TIP]
     > If you have any issues or want to confirm the resources were deployed, you can review in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true).
 
+1. When the script completes, the last output is the public IP address of your Azure Linux VM. Take note of this IP address.
+
+## Deploy the schema to Azure SQL Database
+
+1. Deploy the database schema using a script from the GitHub repository. First, switch to bash.
+
+    ```powershell
+    bash
+    ```
+
+1. Update the code below and run the the Azure Cloud Shell (you may want to copy to a text file to easily modify). Note you'll need to add your server name and password.
+
+    ```bash
+    sqlcmd -S [server-name].database.windows.net -P [password] -U cloudadmin -d iot-db -i azure-sql-iot/sql_schema/script.sql
+    ```
+
+You have now deployed and configured the appropriate schema for the scenario.
+
 ## Configure the application settings for the `iot-workload` function
 
-1. In your notes tool of choice document the connection string for your Azure SQL Database. It will be something like `Server=<your-server-name>.database.windows.net,1433;Initial Catalog=iot-db;User Id=cloudadmin;Password=<your-password>;Connection Timeout=30;`
+1. In your notes tool of choice document the connection string for your Azure SQL Database. It will be something like `Server=tcp:<your-server-name>.database.windows.net,1433;Database=iot-db;User Id=cloudadmin;Password=<your-password>;Connection Timeout=30;`
 
 1. Navigate in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true) to your resource group for the exercises.
 
@@ -141,7 +159,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. Under *Security + networking*, select **Access keys**.
 
-1. Copy the *Primary connection string* in your notes tool of choice.
+1. Select **Show keys** and copy the *key1 Connection string* in your notes tool of choice.
 
 1. Navigate back to your resource group in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true).
 
@@ -159,17 +177,19 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 ## Deploy the Azure Function code with GitHub Actions
 
+1. Navigate to the *Overview* pane of your Azure Functions app in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true).
+
+1. Select **Get publish profile** to download the Azure Function publish profile. The publish profile acts as a connection string to the function.
+
+1. Copy the contents of the downloaded file to your notes tool of choice.
+
 1. Navigate to [this repository](https://github.com/Azure-Samples/azure-sql-iot) and sign in to GitHub with your GitHub account.
 
 1. In the top-right corner of your browser, select the **Fork** button.
 
 1. Go to your forked repository for this module on GitHub (make sure you are signed in). It will be something like `https://github.com/<your-git-username>/azure-sql-iot`.
 
-1. In a separate window, navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true) to your Azure Function with a name starting with **iotsite** followed by a series on numbers.
-
-1. In the *Overview* pane, select **Get publish profile** to download the Azure Function publish profile. The publish profile acts as a connection string to the function.
-
-1. Returning to your GitHub repository window, Select **Settings** for the repository.
+1. Select **Settings** for the repository.
 
 1. Select **Secrets** > **New repository secret** and enter the following items:
     1. *Name*: **AZURE_FUNCTIONAPP_PUBLISH_PROFILE**
@@ -187,7 +207,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 1. At the bottom of the page, select **Commit changes** to kick off the GitHub Action that will deploy the code sample to your Azure Functions app.
 
-1. Confirm the action completes successfully by selecting **Actions** near the top of the window and reviewing the progress and completion.
+1. Confirm the action completes successfully (takes about 2-3 minutes) by selecting **Actions** near the top of the window and reviewing the progress and completion.
 
 1. If you face any errors, confirm you have included the right connection strings in the right places in the previous section of this exercise.
 
@@ -195,21 +215,24 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 ## Deploy the schema to Azure SQL Database
 
+1. Run `bash` to switch from PowerShell to bash.
+
 1. Deploy the database schema using a script from the GitHub repository. Update the code below and run the the Azure Cloud Shell (you may want to copy to a text file to easily modify). Note you'll need to add your server name and password.
 
     ```bash
-    sqlcmd -S [server-name].database.windows.net -P [password] -U cloudadmin -d bus-db -i azure-sql-iot/sql_schema/script.sql
+    sqlcmd -S [server-name].database.windows.net -P [password] -U cloudadmin -d iot-db -i azure-sql-iot/sql_schema/script.sql
     ```
 
-1. Finally, select **CTRL+C** to exit sqlcmd
+> [!NOTE]
+> The script may result with `Nonqualified transactions are being rolled back. Estimated rollback completion: 100%`. That is OK for the purposes of this exercise.
+
+1. Finally, select **CTRL+C** to exit sqlcmd.
 
 ## Connect to the Azure Virtual Machine and start the simulator
 
-1. Back in the Azure Cloud Shell on the right-hand side of this page, the script should be complete and you should see a public IP address, which is the public IP address of your Azure Virtual Machine. Note it down.
+1. Return to the Azure Cloud Shell on the right-hand side of this page.
 
-1. Run `bash` to switch back to the bash shell.
-
-1. Using the IP address you noted earlier and replacing `0.0.0.0`, run the following and follow the prompts to log in to your Azure Virtual Machine.
+1. Using the IP address you noted earlier and replacing `0.0.0.0` with it, run the following and follow the prompts to log in to your Azure Virtual Machine.
 
     ```bash
     ssh cloudadmin@0.0.0.0
@@ -247,4 +270,16 @@ These scripts should take three to five minutes to complete. Be sure to note you
     sudo docker run -it -e "IotHubConnectionString=<IoTHubConnectionString>" -e Template="{ \"deviceId\": \"$.DeviceId\", \"temp\": $.Temp, \"Ticks\": $.Ticks, \"Counter\": $.Counter, \"time\": \"$.Time\", \"engine\": \"$.Engine\" }" -e Variables="[{name: \"Temp\", \"random\": true, \"max\": 25, \"min\": 23}, {\"name\":\"Counter\", \"min\":100}, {name:\"Engine\", values: [\"on\", \"off\"]}]" -e MessageCount=0 -e DeviceCount=1000 -e Interval=100  mcr.microsoft.com/oss/azure-samples/azureiot-telemetrysimulator:latest
     ```
 
-You have now successfully deployed the template and configured the resources. You are now simulating activity on 1,000 devices and using Azure Functions to ingest the data into Azure SQL Database.
+1. To confirm everything is working properly, navigate to your Azure SQL Database called **iot-db** in the Azure portal.
+
+1. On the left-hand menu, select **Query editor (preview)**.
+
+1. Log in with the username **cloudadmin** and the password you set earlier.
+
+1. Run the following query. If you see results, the simulation is working and Azure Functions is inserting the data into your database.
+
+    ```sql
+    SELECT TOP(1000) * FROM dbo.events;
+    ```
+
+You have now successfully deployed the template and configured the resources. You are now simulating activity on 1,000 devices and using Azure Functions to ingest the data into Azure SQL Database. Let this continue to run so the simulation continues for the rest of the module.
