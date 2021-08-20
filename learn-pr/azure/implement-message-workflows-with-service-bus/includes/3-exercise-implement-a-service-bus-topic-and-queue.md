@@ -77,7 +77,7 @@ To create a Service Bus topic and subscriptions, follow these steps:
 
 1. In the top menu bar, select **Subscription**. The **Create subscription** pane appears.
 
-1. For your first subscription, enter **Americas** for the **Name**, then enter **100** for the **Max delivery count**, and then select **Create**. The subscription you created appears at the bottom of your salesteam app messages page.
+1. For your first subscription, enter **Americas** for the **Name**, then enter **100** for the **Max delivery count**, and then select **Create**. The subscription you created appears at the bottom of your sales team app messages page.
 
 1. In the top menu bar, select **Subscription** to create a second subscription. The **Create subscription** pane appears.
 
