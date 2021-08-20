@@ -4,7 +4,7 @@ Let's say you're a developer at a casual games company. You've been asked to wri
 
 A card deck has 52 cards, of course, but to make it easier to read the console print, let's reduce the deck to five cards. You can create a number series by inserting two dots (`..`), surrounded by spaces, between the first and last numbers in the list.
 
-1. Create a new project by running `dotnet new`:
+1. In the console, create a new project by running `dotnet new`:
 
    ```bash
    dotnet new console --language F# -o Cards
