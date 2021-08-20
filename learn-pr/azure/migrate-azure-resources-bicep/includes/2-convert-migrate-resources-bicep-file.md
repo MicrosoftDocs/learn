@@ -27,46 +27,42 @@ Azure Resource Manager is the service that's used to deploy and manage resources
 
 There are two types of operations in Azure: control plane operations and data plane operations. Control plane operations are used to manage the resources in your subscription, while data plane operations are used to access features that are exposed by a resource. For example, you use a control plane operation to create a virtual machine, but you use a data plane operation to connect to the virtual machine by using Remote Desktop Protocol (RDP).
 
-### Export Resources
+### Exporting resources and saving deployments
 
 Regardless of how your Azure resources are created, information about each resource is made available in JSON format by Resource Manager. When you ask for a copy of the JSON representation of a resource, you're _exporting_ the resource. The JSON file that you export can be decompiled into Bicep. The export process is a control plane operation, meaning it is only exporting the configuration of the Azure resources. For example, when exporting a virtual machine, the data on a virtual machine's hard drive is not part of the export process, and when exporting a storage account, the blobs and other contents of the storage account aren't included in the export process either.
 
-Resource manager provides multiple ways to export Azure resources to a template. You can use the Azure portal, Azure CLI, and Azure PowerShell cmdlets to export single resources, multiple resources, and entire resource groups. Additionally, the Azure portal allows you to export deployments, both prior to and after their execution.
+Resource Manager provides multiple ways to export Azure resources to a template. You can use the Azure portal, Azure CLI, and Azure PowerShell cmdlets to export single resources, multiple resources, and entire resource groups. Additionally, the Azure portal allows you to save deployments to a template, both prior to and after their execution.
 
 > [!NOTE]
-> However you export a template, either from existing resources or deployments, treat it as a starting point and don't use it directly. Instead, use it as inspiration for your final template.
+> However you export resources, either from exporting existing resources or saving deployments, treat it as a starting point and don't use it directly. Instead, use it as inspiration for your final template.
 
-#### Exporting existing resources
+#### Export existing resources to a JSON template
 
 There are a few things that you need to consider when exporting existing resources:
 
-- The exported resource definition is a snapshot of that resource's current state. It will include all changes made to the resource since its initial deployment.
-- The exported template may include some default resource properties that are normally omitted from a Bicep definition. For example, it might include read-only properties that Azure sets automatically. Consider removing these properties from the resource definitions when you migrate to Bicep, to keep your Bicep files free of unnecessary code that might cause confusion.
-- The exported template likely won't include all of the parameters you'll need to make the template reusable. When you export a template, many of the properties will be hard-coded into the template.
+- The exported resource definition is a snapshot of that resource's current state. It includes all changes made to the resource since its initial deployment.
+- The exported template might include some default resource properties that are normally omitted from a Bicep definition. For example, the export process might add read-only properties that Azure sets automatically, and it doesn't make sense to include them since they're read-only. Consider removing these properties from the resource definitions when you migrate to Bicep, to keep your Bicep files free of unnecessary code that might cause confusion.
+- The exported template likely won't include all of the parameters you'll need to make the template reusable. When you export a template, many of the properties will be hard-coded into the template. You'll see how to add parameters later in the module.
 - Some resources can't be exported using this approach, and you need to define them manually in your Bicep file. You'll learn how to recreate these resources later in this unit.
 
-> [!NOTE]
-> The export feature is unable to export more than 200 resources from a resource group at one time. If your resource group contains more than 200 resources, you'll need to export multiple times to capture all resources.
+#### Save deployments to a JSON template
 
-#### Exporting deployments
+If you've ever deployed a resource manually from the Azure portal, you may have noticed the option to **Download a template for automation** on the **Review + create** page. This option saves a JSON ARM template based on the names and properties you've set while building the resource in the portal.
 
-If you've ever deployed a resource manually from the Azure portal, you may have noticed the option to **Download a template for automation** on the **Review + create** page. This option exports a JSON ARM template based on the names and properties you've set while building the resource in the portal.
+Resource Manager also tracks resource *deployments*. Deployment operations include changes submitted by the Azure portal's resource creation experience, and any ARM template deployments. Changes to existing resources made by using the Azure portal, the Azure PowerShell cmdlets, the Azure CLI, or other tools usually don't create deployments.
 
-Resource Manager tracks all resources and resource deployments. If the deployments were created using a compatible tool, you can access the deployment template from the resource group's deployment history.
+If the deployments were created using a compatible tool, you can access the deployment template from the resource group's deployment history.
 
-> [!IMPORTANT]
-> Some methods of creating resources don't create deployments, so this option might not be available for all of your Azure resources.
+There are a few things that you need to consider when saving your templates using this method.
 
-There are a few things that you need to consider when exporting your templates using this method.
-
-- The exported template shows the state of the resources at the time of deployment. It won't include any changes made after deployment.
-- You can't select specific resources from a multi-resource deployment. This option will download all resources that were part of the initial deployment.
+- The saved template shows the state of the resources at the time of deployment. It doesn't include any changes made after deployment.
+- If the deployment contained multiple resources, you can't select specific resources to include and exclude. This operation downloads the definition of all resources that were part of the initial deployment. However, when you move to the *migrate* phase of the process, you can manually ignore the resources you don't need.
 - The template will only include resource properties needed for deployment.
-- The template might include parameters that you can use to redeploy the template in multiple environments.
-- The template probably won't include extraneous properties, but you should still check that the template includes everything that you expect.
+- The template might include parameters that you can use to redeploy the template in multiple environments. However, you need to confirm that these parameters suit your needs.
+- The template probably doesn't include extraneous properties, but you should still check that the template includes everything that you expect and remove any properties that shouldn't be there.
 
 > [!NOTE]
-> You can also export a deployment from the Azure CLI by using the `az deployment group export` command or from Azure PowerShell by using the `Save-AzResourceGroupDeploymentTemplate` cmdlet.
+> You can also save a deployment from the Azure CLI by using the `az deployment group export` command or from Azure PowerShell by using the `Save-AzResourceGroupDeploymentTemplate` cmdlet.
 
 ### Decompile the source JSON ARM template
 
