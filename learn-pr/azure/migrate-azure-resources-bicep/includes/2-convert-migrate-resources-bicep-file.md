@@ -27,16 +27,13 @@ Azure Resource Manager is the service that's used to deploy and manage resources
 
 There are two types of operations in Azure: control plane operations and data plane operations. Control plane operations are used to manage the resources in your subscription, while data plane operations are used to access features that are exposed by a resource. For example, you use a control plane operation to create a virtual machine, but you use a data plane operation to connect to the virtual machine by using Remote Desktop Protocol (RDP).
 
-### Exporting resources and saving deployments
+### Export existing resources to a JSON template
 
-Regardless of how your Azure resources are created, information about each resource is made available in JSON format by Resource Manager. When you ask for a copy of the JSON representation of a resource, you're _exporting_ the resource. The JSON file that you export can be decompiled into Bicep. The export process is a control plane operation, meaning it is only exporting the configuration of the Azure resources. For example, when exporting a virtual machine, the data on a virtual machine's hard drive is not part of the export process, and when exporting a storage account, the blobs and other contents of the storage account aren't included in the export process either.
+Regardless of how your Azure resources are created, information about each resource is made available in JSON format by Resource Manager. When you ask for a copy of the JSON representation of a resource, you're _exporting_ the resource. The JSON file that you export can be decompiled into Bicep. 
 
-Resource Manager provides multiple ways to export Azure resources to a template. You can use the Azure portal, Azure CLI, and Azure PowerShell cmdlets to export single resources, multiple resources, and entire resource groups. Additionally, the Azure portal allows you to save deployments to a template, both prior to and after their execution.
+Resource Manager provides multiple ways to export Azure resources to a template. You can use the Azure portal, Azure CLI, and Azure PowerShell cmdlets to export single resources, multiple resources, and entire resource groups.
 
-> [!NOTE]
-> However you export resources, either from exporting existing resources or saving deployments, treat it as a starting point and don't use it directly. Instead, use it as inspiration for your final template.
-
-#### Export existing resources to a JSON template
+The export process is a control plane operation, meaning it is only exporting the configuration of the Azure resources. For example, when exporting a virtual machine, the data on a virtual machine's hard drive is not part of the export process, and when exporting a storage account, the blobs and other contents of the storage account aren't included in the export process either.
 
 There are a few things that you need to consider when exporting existing resources:
 
@@ -45,13 +42,13 @@ There are a few things that you need to consider when exporting existing resourc
 - The exported template likely won't include all of the parameters you'll need to make the template reusable. When you export a template, many of the properties will be hard-coded into the template. You'll see how to add parameters later in the module.
 - Some resources can't be exported using this approach, and you need to define them manually in your Bicep file. You'll learn how to recreate these resources later in this unit.
 
-#### Save deployments to a JSON template
+### Save deployments to a JSON template
 
 If you've ever deployed a resource manually from the Azure portal, you may have noticed the option to **Download a template for automation** on the **Review + create** page. This option saves a JSON ARM template based on the names and properties you've set while building the resource in the portal.
 
 Resource Manager also tracks resource *deployments*. Deployment operations include changes submitted by the Azure portal's resource creation experience, and any ARM template deployments. Changes to existing resources made by using the Azure portal, the Azure PowerShell cmdlets, the Azure CLI, or other tools usually don't create deployments.
 
-If the deployments were created using a compatible tool, you can access the deployment template from the resource group's deployment history.
+If the deployments were created using a compatible tool, you can access the deployment template from the resource group's deployment history. You can use the Azure portal, the Azure CLI, and Azure PowerShell to save deployments.
 
 There are a few things that you need to consider when saving your templates using this method.
 
@@ -62,7 +59,7 @@ There are a few things that you need to consider when saving your templates usin
 - The template probably doesn't include extraneous properties, but you should still check that the template includes everything that you expect and remove any properties that shouldn't be there.
 
 > [!NOTE]
-> You can also save a deployment from the Azure CLI by using the `az deployment group export` command or from Azure PowerShell by using the `Save-AzResourceGroupDeploymentTemplate` cmdlet.
+> However you export resources, either from exporting existing resources or saving deployments, treat it as a starting point and don't use it directly. Instead, use it as inspiration for your final template.
 
 ### Decompile the source JSON ARM template
 
