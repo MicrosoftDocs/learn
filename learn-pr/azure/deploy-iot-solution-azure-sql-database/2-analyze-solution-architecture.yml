@@ -12,20 +12,20 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Which component of the architecture will help with X?"
+  - content: "In the typical IoT solution mentioned, what is the purpose of warm storage?"
     choices:
-    - content: "TODO"
+    - content: "Optimized storage for large data volumes at a reasonable cost."
       isCorrect: false
-      explanation: "Incorrect. TODO"
-    - content: "TODO"
+      explanation: "Incorrect. Cold storage should be optimized for large data volumes at a reasonable cost."
+    - content: "Perform real-time streaming for capturing low latency events."
       isCorrect: false
-      explanation: "Incorrect. TODO"
-    - content: "TODO"
+      explanation: "Incorrect. Event processing has this purpose."
+    - content: "Persist low latency events and messages that need to be ingested efficiently at a high rate."
       isCorrect: true
-      explanation: "Correct! TODO"
-    - content: "TODO"
+      explanation: "Correct!"
+    - content: "Manage bi-directional communications with devices, like queuing events and messages."
       isCorrect: false
-      explanation: "Incorrect. TODO"      
+      explanation: "Incorrect. The cloud gateway has this purpose."      
   - content: "What is the advantage of using Azure SQL Database for IoT scenarios?"
     choices:
     - content: "Azure SQL Database can ingest millions of events per second"

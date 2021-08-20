@@ -20,6 +20,7 @@ prerequisites: |
 iconUrl: http://via.placeholder.com/120x120
 levels:
 - intermediate
+- advanced
 roles:
 - developer
 - solution-architect
@@ -39,7 +40,6 @@ units:
 - learn.azure.deploy-iot-solution-azure-sql-database.3-exercise-deploy
 - learn.azure.deploy-iot-solution-azure-sql-database.4-store-iot-data
 - learn.azure.deploy-iot-solution-azure-sql-database.5-exercise-configure
-- learn.azure.deploy-iot-solution-azure-sql-database.6-exercise-power-bi
-- learn.azure.deploy-iot-solution-azure-sql-database.7-summary
+- learn.azure.deploy-iot-solution-azure-sql-database.6-summary
 badge:
   uid: learn.azure.deploy-iot-solution-azure-sql-database.badge

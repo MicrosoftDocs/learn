@@ -1,10 +1,10 @@
-Azure SQL Database provides a great platform for the distributor scenario. In the scenario, you were responsible for monitoring thousands of devices on trucks across the country. With Azure SQL Database, you can insert millions of events per second, use replicas for read scale, and obtain limitless storage through the Hyperscale tier. You deployed a template that allows you to simulate the scenario, which also involved configuring and optimizing your database and setting up dashboards to view both in the Azure portal and Power BI. With this solution, you can monitor the health of your fleet of trucks, and you're one step closer to identifying when preventative maintenance should occur.
+Azure SQL Database provides a great platform for the distributor scenario. In the scenario, you were responsible for monitoring thousands of devices on trucks across the country. With Azure SQL Database, you can insert millions of events per second, use replicas for read scale, and obtain limitless storage through the Hyperscale tier. You deployed a template that allows you to simulate the scenario, which also involved configuring and optimizing your database. With this solution, you can monitor the health of your fleet of trucks, and you're one step closer to identifying when preventative maintenance should occur. Next steps for this scenario could include building a Power BI dashboard or using Azure Machine Learning to build the model that predicts when failures may occur.
 
 The solution you've now learned how to deploy and monitor is not just applicable to the distributor scenario. This solution can be modified to fit the needs of any IoT scenario you want to tackle. In the references section, there are several customer stories for you to take a closer look at. These customers were able to use Azure SQL Database to meet their IoT needs for industries including real estate, health, electricity, workspace management, manufacturing,
 
 ## References for further learning
 
-The following references are available for you to go as deep as your scenario requires. They include best practices, customer stories, and more.
+The following references are available for you to go as deep as your scenario requires. They include best practices, customer stories, and more. Also, remember that the full code sample is available here: https://github.com/Azure-Samples/azure-sql-iot.
 
 ### Ingest millions of events per second
 

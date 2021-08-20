@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.deploy-iot-solution-azure-sql-database.5-exercise-configure
-title: Exercise - Configure streaming simulation for the IoT solution
+title: Exercise - Optimize storage and retrieval of IoT data in Azure SQL Database
 metadata:
-  title: Exercise - Configure streaming simulation for the IoT solution
-  description: In this exercise, you'll configure IoT Hub and Azure SQL Database for streaming data for use and storage.
+  title: Exercise - Optimize storage and retrieval of IoT data in Azure SQL Database
+  description: In this exercise, you'll learn how to view and optimize the IoT data ingested into Azure SQL Database.
   ms.date: 07/19/2021
   author: amthomas46
   ms.author: antho
