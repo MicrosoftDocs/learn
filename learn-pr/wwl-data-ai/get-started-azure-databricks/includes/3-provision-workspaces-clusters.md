@@ -104,12 +104,12 @@ Once the data is uploaded, it will be available as a table or as a mountpoint un
 
 Databricks can create a table automatically if we select **Create Table with UI**.
 
-![Create Table with UI](../media/01-01-07-table-ui.png)
+[![Create Table with UI](../media/01-01-07-table-ui.png)](../media/01-01-07-table-ui.png#lightbox)
 
 Alternately, we can have full control over the structure of the new table by choosing **Create Table in Notebook**. 
 Azure Databricks will generate Spark code that loads your data (and we can customize it via the Spark API).
 
-![Create Table with Spark](../media/01-01-08-table-spark.png)
+[![Create Table with Spark](../media/01-01-08-table-spark.png)](../media/01-01-08-table-spark.png#lightbox)
 
 ### Using DBFS mounted data
 
