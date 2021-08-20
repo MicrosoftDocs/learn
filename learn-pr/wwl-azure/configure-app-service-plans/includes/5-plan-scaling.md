@@ -2,7 +2,7 @@ Autoscale allows you to have the right amount of resources running to handle the
 
 ## Autoscale settings
 
-An autoscale setting is read by the autoscale engine to determine whether to scale up or down. Autoscale settings are grouped into profiles.
+An autoscale setting is read by the autoscale engine to determine whether to scaling out or in. Autoscale settings are grouped into profiles.
 
 :::image type="content" source="../media/web-app-autoscale-94c4da54.png" alt-text="Screenshot of the Create a Scale Condition page. The scale mode selection is Scale Based on Metric. The Scale to specific instance count selection is also shown.":::
 
