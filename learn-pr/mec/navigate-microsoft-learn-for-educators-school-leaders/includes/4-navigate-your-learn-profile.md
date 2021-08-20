@@ -38,19 +38,27 @@ You may wish to customize your profile to better fit your personality. You can d
 > To enable private mode:
 >
 > 1. Navigate to your avatar image.
-> 1. Select Profile, then Settings.
-> 1. Scroll down to the privacy area and move the slider to the right, then select Save.
-> To undo it, move the slider back to the left, then select Save.
+> 1. Select **Profile**, then **Settings**.
+> 1. Scroll down to the privacy area and move the slider to the right, then select **Save**.
+> To undo it, move the slider back to the left, then select **Save**.
 
 ## Adding and removing accounts
 
-You can also add and remove Microsoft accounts linked to your Learn profile. For example, if you have both a personal and work account that you would like to access Learn with, you can link them to your account. You can have up to five school or work accounts and one personal account linked to your profile. Linking a school or work account will allow your organization to see your learning progress data.
+One important benefit of Learn is that you can have multiple Microsoft accounts associated with your Learn profile. Do you have a personal and school account that you wish to separate? Have you moved to another school district and need to merge your old account with your new account?
+
+No problem, you can do this in the account management area of your settings. To find this setting:
+
+1. Navigate to your avatar image.
+1. Select **Profile**, then **Settings**.
+1. Then choose either **+Add account** or **Remove account**.
+
 
 ## Badges, trophies and reputation points
 
 :::image type="content" source="../media/Screenshot of achievements tab.png" alt-text="screenshot of achievements tab selected in Learn profile":::
  
-Badges and trophies are achievements that you receive after completing training content. You will get a badge after completing a module and a trophy after completing all the modules in a learning path. You can also earn XP points and increase in level as you continue to progress through content.
+Badges and trophies are your reward for finishing a module or learning path. All content for educators and school leaders earns this reward upon completion and passing the knowledge check.
 
-> [!CAUTION]
-> Reputation points are points received for participation on Q&A, Microsoft’s technical question and answer platform, unless you are a technical educator, this may not be very relevant to you at this time.
+Keep going on in this module and as you’ll see, you will earn yourself a badge.
+
+Of note, you can also earn experience points (XP) and “level up” the longer you spend in Learn.
