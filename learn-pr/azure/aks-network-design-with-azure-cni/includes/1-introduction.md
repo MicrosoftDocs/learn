@@ -2,7 +2,7 @@ You're an architect working for a business that wants to build an innovative new
 
 You want to build the application using containers and will be adopting DevOps practices. The application consists of multiple discrete services and some services need to communicate with other services in Azure. This diagram provides a high-level overview of the architecture of the application.
 
-:::image type="content" source="../media/1-introduction-app-architecture.svg" alt-text="Diagram that shows two types of pipeline triggers.":::
+:::image type="content" source="../media/1-introduction-app-architecture.svg" alt-text="Diagram that shows two types of pipeline triggers." border="false":::
 
 Your company has recently standardized on Kubernetes to host all container-based workloads. You've been asked to design the cluster for the new service, but you quickly come to realize that involves the design of the network, which is heavily influenced by the needs of the application. Where do you begin with designing your network?
 
