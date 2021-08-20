@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/19/2021
+  ms.date: 08/20/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -25,7 +25,7 @@ quiz:
     - content: "SMB"
       isCorrect: false
       explanation: "That's incorrect. SMB or Server Message Block is not a data source that can be mounted under DBFS."
-  - content: "You have a dataframe `df` and want to visualize the results. Which function should you use to plot the data as a bar chart or other type of graph?"
+  - content: "Dataframe `df` needs to be visualized so that the results can be presented to the business users. Which function should be used to plot the data as a bar chart or other type of graph?"
     choices:
     - content: "`df.show()`"
       isCorrect: false
