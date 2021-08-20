@@ -124,7 +124,7 @@ The CP/M disk image includes the Word-Master text editor. To use Word-Master, yo
 
 To toggle between **Line input mode** and **Character input mode** press <kbd>ctrl+L</kbd>. When finished with Word-Master switch back to **Line input mode** as the Web Terminal communications over MQTT in "Line input mode" is more efficient.
 
-![Altair running Word Master text editor](../media/word-master-character-mode.png)
+:::image type="content" source="../media/word-master-character-mode.png" alt-text="Screenshot that shows the Altair running Word Master text editor.":::
 
 View the [Word-Master user's guide](https://github.com/AzureSphereCloudEnabledAltair8800/Altair8800.manuals/blob/master/Word-Master_Manual.pdf?azure-portal=true).
 
