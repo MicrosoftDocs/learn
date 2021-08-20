@@ -1,6 +1,6 @@
 Learn how to prepare data for machine learning in Azure Databricks.
 
-## Learning objectives
+## Learning objectives 
 
 After completing this module, you’ll be able to:
 
