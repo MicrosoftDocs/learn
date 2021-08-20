@@ -3,13 +3,13 @@ The process of training and validating a machine learning model using Spark ML i
 2. Training a model.
 3. Validating a model.
 
-## Splitting Data
+## Splitting data
 
 The first step involves splitting data between **training** and **validation** datasets. Doing so allows a data scientist to train a model with a representative portion of the data, while still retaining some percentage as a hold-out dataset. This hold-out dataset can be useful for determining whether the training model is **overfitting** - that is, latching onto the peculiarities of the training dataset rather than finding generally applicable relationships between variables.
 
 DataFrames support a `randomSplit()` method, which makes this process of splitting data simple.
 
-## Training a Model
+## Training a model
 
 Training a model relies on three key abstractions: a **transformer**, an **estimator**, and a **pipeline**.
 
@@ -19,7 +19,7 @@ An estimator takes a DataFrame as an input and returns a model. It takes a DataF
 
 Pipelines combine together estimators and transformers and implement a `.fit()` method. By breaking out the training process into a series of stages, it's easier to combine multiple algorithms.
 
-## Validating a Model
+## Validating a model
 
 Once a model has been trained, it becomes possible to validate its results. Spark ML includes built-in summary statistics for models based on the algorithm of choice. Using linear regression for example, the model contains a `summary` object, which includes scores such as Root Mean Square Error (RMSE), Mean Absolute Error (MAE), and coefficient of determination (R<sup>2</sup>, pronounced R-squared). These will be the summary measures based on the **training** data.
 
