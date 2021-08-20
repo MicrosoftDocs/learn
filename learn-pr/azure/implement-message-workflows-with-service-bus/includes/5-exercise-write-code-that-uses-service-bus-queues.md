@@ -337,7 +337,7 @@ To complete the component that sends messages about sales, follow these steps:
     dotnet run -p privatemessagereceiver
     ```
 
-1. Check your Messages chart at the bottom of your Service Bus Queue in the Azure console. When you see that the message has been received and displayed in the console, in the Cloud Shell, press <kbd>Enter</kbd> to stop the app. Then, run the same command as before to confirm that all of the messages have been removed from the queue. Remember to replace <namespace-name> with your Service Bus Namespace.
+1. Check the notifications in Cloud Shell and your Messages chart at the bottom of your Service Bus Queue in the Azure console. When you see that the messages have received in the Cloud Shell, press <kbd>Enter</kbd> to stop the app. Then, run the following code to confirm that all of the messages have been removed from the queue. Remember to replace <namespace-name> with your Service Bus Namespace.
 
     ```azurecli
     az servicebus queue show \
