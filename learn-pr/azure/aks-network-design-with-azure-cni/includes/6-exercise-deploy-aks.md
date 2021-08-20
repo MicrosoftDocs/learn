@@ -85,10 +85,7 @@ az aks create \
     --enable-managed-identity \
     --assign-identity $identityId \
     --node-vm-size  Standard_F8s_v2 \
-    --node-count 3 \
-    --enable-cluster-autoscaler \
-    --min-count 3 \
-    --max-count 7
+    --node-count 3
 ```
 
 Let's walk through what the above command is doing:
@@ -104,13 +101,10 @@ az aks create | Command to create an AKS cluster instance.
 --service-cidr **10.240.0.0/24** | The Kubernetes service address range that was given to us by the IT department.
 --dns-service-ip **10.240.0.10** | The IP address we've decided to use for DNS.
 --generate-ssh-keys | Creates a set of SSH keys that are used to secure the nodes.
---enable-managed-identity | Enables use of Azure Managed Identity for access to resource in the Azure subscription.
+--enable-managed-identity | Enables use of Azure Managed Identity for access to resources in the Azure subscription.
 --assign-identity **$identityId** | Passes the ID value of the Azure Managed Identity that we created earlier.
 --node-vm-size **Standard_F8s_v2** | We determined previously that an F8s v2 virtual machine would be the best option for our application.
--- node-count **3** | We want to start with three nodes.
--- enable-cluster-autoscaler | We want to enable the Kubernetes Cluster Autoscaler so that our cluster will scale up and down as demand on the application dictates.
---min-count **3** | Tell the autoscaler that we don't want to run fewer than three nodes.
---max-count **7** | Tell the autoscaler that we don't want to run more than 7 nodes. Remember that we've sized our network for 7 nodes plus 1 spare node for upgrades.
+--node-count **3** | We want to start with three nodes.
 
 ## Confirm node pool details for the new cluster
 
