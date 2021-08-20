@@ -1,7 +1,6 @@
-In this module you are going to learn about the supported Altair 8800 emulator hardware configurations and how to set up the Azure Sphere
-development environment.
+In this module, you're going to learn about the supported Altair 8800 emulator hardware configurations and how to set up the Azure Sphere development environment.
 
-If you are new to Azure Sphere development and IoT Central then it’s strongly recommended you complete the [Develop secure IoT solutions for Azure Sphere, Azure RTOS and Azure IoT Central](/learn/modules/develop-secure-iot-solutions-azure-sphere-iot-central/) Microsoft Learn module before attempting to set up the Altair on Azure Sphere solution.
+If you're new to Azure Sphere and IoT Central, then it’s recommended you complete the [Develop secure IoT solutions for Azure Sphere, Azure RTOS, and Azure IoT Central](/learn/modules/develop-secure-iot-solutions-azure-sphere-iot-central/) Microsoft Learn module.
 
 ## Hardware requirements
 
@@ -51,7 +50,7 @@ Pin No. | Function | MT3620 Pin | MT3620 Pin Function | Description
 7 | CLK | H4/P7 | SCLK1 | Clock input
 8 | LED Store | H4/P8 | GPIO36 | Clocks data from the shift registers into the storage registers that control the LEDs
 9 | LED Output Enable | H4/P6 | GPIO38 | Active low output enable for the shift registers that control the LEDs
-10 | VCC | H3/P3 | 3.3v | +3.3V
+10 | VCC | H3/P3 | 3.3 V | +3.3 V
 11 | GND | H3/P2 | GND | Ground
 
 ##### Avnet Azure Sphere Starter Kit Rev 1 & 2
@@ -66,13 +65,13 @@ Pin No. | Function | Click Pin | MT3620 Pin Function | Description
 7 | CLK | CLICK 1: SCK | SCLK1 | Clock input
 8 | LED Store | CLICK 1: INT | GPIO2 | Clocks data from the shift registers into the storage registers that control the LEDs
 9 | LED Output Enable | CLICK 1: RX | GPIO28 | Active low output enable for the shift registers that control the LEDs
-10 | VCC | CLICK 1: 3.3 | 3.3v | +3.3V
+10 | VCC | CLICK 1: 3.3 | 3.3 V | +3.3 V
 11 | GND | CLICK 1: GND | GND | Ground
 
 
 ## Software requirements
 
-There are five components to the cloud-enabled Altair on Azure Sphere solution. These are:
+There are five components to the cloud-enabled Altair on Azure Sphere solution. The components are:
 
 1. The Altair emulator running on the Azure Sphere.
 2. An IoT Central application for configuration and reporting.
@@ -90,4 +89,4 @@ In this module, you will:
 
 TBD
 
-In the next unit you will learn about the software you need to install on your computer to build and deploy the Altair 8800 emulator to you Azure Sphere.
+In the next unit, you'll learn how to install the required software and deploy the Altair 8800 emulator to your Azure Sphere.

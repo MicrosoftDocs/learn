@@ -1,7 +1,6 @@
 This unit summaries the main steps completed in this module.
 
-In this module, you learned how to program the Altair emulator using Altair BASIC or starting CP/M and programing with MBASIC, C, Assembler. 
-From the front panel, you also learned how to load and execute Intel 8080 machine code instructions.
+In this module, you learned how to program the Altair emulator with Altair BASIC. You also learned how to start CP/M and programing with MBASIC, C, and Assembler. Using the front panel, you also learned how to load and execute Intel 8080 OpCodes.
 
 ## Resources
 

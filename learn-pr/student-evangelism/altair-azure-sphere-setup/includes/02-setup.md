@@ -1,4 +1,8 @@
-In this unit, you'll learn how to install the Azure Sphere SDK, claim your device, and set up Azure Sphere for application deployments. You need to set up the Azure Sphere development environment on a PC running Windows 10 or Linux 20.04.
+In this unit, you'll learn how to:
+
+1. Install the Azure Sphere SDK on your Windows 10 or Linux computer.
+1. Claim your Azure Sphere device.
+1. Set up Azure Sphere for application deployments.
 
 ## Steps to install
 
@@ -15,7 +19,7 @@ The steps you follow are:
 1. Install Visual Studio Code
 1. Install the Azure Sphere SDK.
 1. Claim your Azure Sphere device.
-   1. Log in to Azure Sphere.
+   1. Sign in to Azure Sphere.
    1. Create a new tenant.
    1. Set the default Azure Sphere tenant.
    1. Claim your Azure Sphere device.

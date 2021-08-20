@@ -1,10 +1,10 @@
-In this exercise, you will learn how to write your first Altair BASIC application, and how to start CP/M and write applications in Basic, C, and Assembler.
+In this exercise, you'll learn how to write your first Altair BASIC application. Following that, you'll learn how to start CP/M and write applications with Basic, C, and Assembler.
 
 ## Altair Basic
 
-On startup, the Altair emulator will load the Altair BASIC and you will be prompted for the following information:
+On startup, the Altair emulator loads Altair BASIC. You'll be prompted for the following information:
 
-* **MEMORY SIZE?** If you plan to just run Altair BASIC then just press the Enter key. If you plan to boot into CP/M then enter 32000 followed by the Enter key.
+* **MEMORY SIZE?** If you only plan to run Altair BASIC, press the Enter key. If you plan to boot into CP/M, then enter 32000 followed by the Enter key.
 * **TERMINAL  WIDTH?** Press the Enter key to accept the default.
 * **WANT SIN-COS-TAN-ATN?** Y or N
 
@@ -35,7 +35,7 @@ and press Enter.
 * new
 * load
 
-Refer to the [Altair 8800 BASIC Reference Manual](https://altairclone.com/downloads/manuals/BASIC%20Manual%2075.pdf?azure-portal=true) for more information.
+For more information about Altair BASIC, see the [Altair 8800 BASIC Reference Manual](https://altairclone.com/downloads/manuals/BASIC%20Manual%2075.pdf?azure-portal=true).
 
 ### Loading applications
 
@@ -59,4 +59,3 @@ Then run the application.
 ```text
 run
 ```
-
