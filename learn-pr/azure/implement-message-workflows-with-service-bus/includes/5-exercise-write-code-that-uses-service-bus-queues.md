@@ -76,7 +76,7 @@ To complete the component that sends messages about sales, follow these steps:
     ```C#
     queueClient = new QueueClient(ServiceBusConnectionString, QueueName);
     ```
-    Note that the editor automatically prepended **new** to the the line of code you pasted.
+    Note that the editor automatically prepended **new** to the line of code you pasted.
     
 1. Within the `try...catch` block, locate the following line of code.
 
@@ -174,7 +174,7 @@ To complete the component that sends messages about sales, follow these steps:
     > [!NOTE]
     > The apps you run during this exercise may take a moment to start up, as `dotnet` has to restore packages from remote sources and build the apps the first time they are run.
 
-    As the program executes, you'll see messages printed indicating that it's sending a message. Each time you run the app, one additional message will be added to the queue.
+    As the program executes, you'll see messages printed indicating that it's sending a message. Each time you run the app, a new message will be added to the queue.
 
 1. After it's finished, run the following command to see how many messages are in the queue. Replace \<namespace-name\> with the name of your Service Bus Namespace.
 
@@ -185,7 +185,7 @@ To complete the component that sends messages about sales, follow these steps:
         --query messageCount \
         --namespace-name <namespace-name>
     ```
-    Run the dotnet command again, and then the servicebus queue show again, you'll see the messagecount return increase each time.
+    Run the dotnet command again, and then run the servicebus queue show again. You'll see the messageCount increase each time you run th dotnet command.
     
 ## Write code that receives a message from the queue
 
