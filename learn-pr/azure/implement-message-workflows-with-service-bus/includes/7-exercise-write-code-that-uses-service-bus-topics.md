@@ -128,7 +128,7 @@ To complete the component that sends messages about sales performance, follow th
 
     As the program executes, you'll see notifications in the Azure Cloud Shell indicating that it's sending a message. Each time you run the app, one additional message will be added to the topic and each subscriber will receive a copy.
 
-1. When you see **Message was sent succssfully**, run the following command to see how many messages are in the Americas subscription. Remember to replace <namespace-name> with your Service Bus Namespace.
+1. When you see **Message was sent succssfully**, run the following command to see how many messages are in the Americas subscription. Remember to replace \namespace-name\> with your Service Bus Namespace.
 
     ```azurecli
     az servicebus topic subscription show \
@@ -289,7 +289,7 @@ To complete the component that retrieves messages about sales performance, follo
     dotnet run -p performancemessagereceiver
     ```
 
-1. When the program stops printing notifications that it is receiving messages, press <kbd>Enter</kbd> to stop the app. Then, run the command to confirm that there are zero remaining messages in the `Americas` subscription, if copying, be sure to replace <namespace-name> with your Service Bus Namespace.
+1. When the program stops printing notifications that it is receiving messages, press <kbd>Enter</kbd> to stop the app. Then, run the command to confirm that there are zero remaining messages in the `Americas` subscription, if copying, be sure to replace \<namespace-name\> with your Service Bus Namespace.
 
     ```azurecli
     az servicebus topic subscription show \
