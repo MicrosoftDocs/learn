@@ -16,11 +16,10 @@ summary: |
   Take this learning path to learn how to:
 
   * Use Bicep's language features like comments, decorators, and modules to make your templates clear, understandable, and maintainable.
-  * Work effectively with example Bicep code, auto-generated Bicep files, and the Azure Resource Manager documentation.
   * Ensure consistency and compliance by creating libraries of templates.
-  * Use the what-if command to check the effects of your deployments.
-  * Migrate ARM templates to Bicep.
-  * Use Bicep to work with resources you've previously deployed using the Azure portal or other tooling.
+  * Use the what-if command to check the effects of your Bicep files before you deploy them.
+  * Migrate JSON ARM templates to Bicep to make your existing Azure deployment templates easier to read and maintain.
+  * Use Bicep to work with resources you've previously deployed using the Azure portal or other tooling to make your deployments repeatable and consistent.
 
   To learn about Bicep, we recommend you take these two learning paths:
 
