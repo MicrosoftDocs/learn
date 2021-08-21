@@ -176,7 +176,7 @@ To complete the component that sends messages about sales, follow these steps:
 
     As the program executes, you'll see messages printed indicating that it's sending a message. Each time you run the app, one additional message will be added to the queue.
 
-1. After it's finished, run the following command to see how many messages are in the queue. Replace <namespace-name> with the name of your Service Bus Namespace.
+1. After it's finished, run the following command to see how many messages are in the queue. Replace \<namespace-name\> with the name of your Service Bus Namespace.
 
     ```azurecli
     az servicebus queue show \
@@ -337,7 +337,7 @@ To complete the component that sends messages about sales, follow these steps:
     dotnet run -p privatemessagereceiver
     ```
 
-1. Check the notifications in Cloud Shell and your Messages chart at the bottom of your Service Bus Queue in the Azure console. When you see that the messages have received in the Cloud Shell, press <kbd>Enter</kbd> to stop the app. Then, run the following code to confirm that all of the messages have been removed from the queue. Remember to replace <namespace-name> with your Service Bus Namespace.
+1. Check the notifications in Cloud Shell and your Messages chart at the bottom of your Service Bus Queue in the Azure console. When you see that the messages have received in the Cloud Shell, press <kbd>Enter</kbd> to stop the app. Then, run the following code to confirm that all of the messages have been removed from the queue. Remember to replace \<namespace-name\> with your Service Bus Namespace.
 
     ```azurecli
     az servicebus queue show \
