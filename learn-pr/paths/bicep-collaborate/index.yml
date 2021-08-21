@@ -4,7 +4,7 @@ metadata:
   title: Build Azure infrastructure in a team environment by using Bicep
   description: Learn how to use Bicep and Azure features to improve your collaboration and quality of your infrastructure deployments.
   brand: azure
-  ms.date: 08/08/2021
+  ms.date: 08/20/2021
   author: johndowns
   ms.author: jodowns
   ms.topic: interactive-tutorial
@@ -53,6 +53,5 @@ modules:
 - learn.azure.structure-bicep-code-collaboration
 - learn.azure.arm-template-specs
 - learn.arm-template-whatif
-#- learn.azure.migrate-bicep
 trophy:
   uid: learn.bicep-collaborate.trophy
