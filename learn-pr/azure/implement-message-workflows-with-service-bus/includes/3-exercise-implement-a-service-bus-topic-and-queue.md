@@ -1,17 +1,15 @@
-Suppose you have an application for the sales team in your global company. Each team member has a mobile phone where your app will be installed. A web service hosted in Azure implements the business logic for your application and stores information in Azure SQL Database. There is one instance of the web service for each geographical region. You have identified the following purposes for sending messages between the mobile app and the web service:
+Suppose you have an application for the sales team in your global company. Each team member has a mobile phone where your app will be installed. A web service hosted in Azure implements the business logic for your application and stores information in Azure SQL Database. There's one instance of the web service for each geographical region. You've identified the following purposes for sending messages between the mobile app and the web service:
 
 - Messages that relate to individual sales must be sent only to the web service instance in the user's region.
 - Messages that relate to sales performance must be sent to all instances of the web service.
 
-You have decided to implement a Service Bus queue for the first use case, and the Service Bus topic for the second use case.
+You've decided to implement a Service Bus queue for the first use case, and the Service Bus topic for the second use case.
 
-In this exercise, you will create a Service Bus namespace, which will contain both a queue and a topic with subscriptions.
+In this exercise, you'll create a Service Bus namespace, which will contain both a queue and a topic with subscriptions.
 
 ## Create a Service Bus namespace
 
-In Azure Service Bus, a namespace is a container, with a unique fully qualified domain name, for queues, topics, and relays. You must start by creating the namespace.
-
-Each namespace has primary and secondary shared access signature encryption keys. To gain access to the objects within the namespace, a sending or receiving component must provide these keys when it connects.
+Start by creating the namespace. In Azure Service Bus, a namespace is a container with a unique, fully-qualified domain name for queues, topics, and relays. Each namespace has primary and secondary shared access signature encryption keys. To gain access to the objects within a namespace, a sending or receiving component must provide these keys when it connects.
 
 To create a Service Bus namespace using the Azure portal, follow these steps:
 
@@ -49,7 +47,7 @@ When your namespace had been created, you can create a queue for messages about 
 
 To create a Service Bus queue, follow these steps:
 
-1. After deployment completes, select **Go to resource**. The Service Bus Namespace you just created appears.
+1. After deployment completes, select **Go to resource**. The Service Bus Namespace you created appears.
 
 1. In the top menu bar, select **Queue**. The **Create queue** pane appears.
 
