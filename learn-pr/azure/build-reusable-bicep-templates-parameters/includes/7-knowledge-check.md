@@ -38,7 +38,7 @@ You deploy the template by using this Azure CLI command:
 az deployment group create \
   --template-file main.bicep \
   --parameters main.parameters.production.json \
-               projectName=charlie
+               projectName=echo
 ```
 
 ::: zone-end
@@ -51,7 +51,7 @@ You deploy the template by using this Azure PowerShell command:
 New-AzResourceGroupDeployment `
   -TemplateFile main.bicep `
   -TemplateParameterFile main.parameters.production.json `
-  -projectName charlie
+  -projectName echo
 ```
 
 ::: zone-end

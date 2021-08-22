@@ -24,7 +24,7 @@ quiz:
     - content: "`bravo`"
       isCorrect: false
       explanation: Incorrect. Parameter files override default parameter values. Also, any values specified in the parameter files are overridden by the values you specify explicitly when you deploy your template.
-    - content: "`charlie`"
+    - content: "`echo`"
       isCorrect: true
       explanation: Correct. Parameter files override default parameter values. Also, any values specified in the parameter files are overridden by the values you specify explicitly when you deploy your template.
   - content: Which of these values for the `projectName` parameter would result in a deployment error?
