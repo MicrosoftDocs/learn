@@ -1,6 +1,6 @@
 You have chosen to use an Azure Service Bus topic to distribute messages about sales performance in your sales force distributed application. The app used by sales personnel on their mobile devices will send messages that summarize sales figures for each area and time period. Those messages will be distributed to web services located in the company's operational regions, including the Americas and Europe.
 
-You have already implemented the necessary infrastructure in your Azure subscription, including the topic and subscriptions. Now, you want to write the code that sends messages to the topic and retrieves messages from a subscription. Before you begin, you'll need to make sure you are working in the correct directory with the code editor open by executing the following commands in the Cloud Shell:
+You have already implemented the necessary infrastructure in your Azure subscription, including the topic and subscriptions. Now, you want to write the code that sends messages to the topic and retrieves messages from a subscription. Before you begin, you'll need to make sure you are working in the correct directory with the code editor open by executing the following commands in Cloud Shell:
 
 ```bash
 cd ~/mslearn-connect-services-together/implement-message-workflows-with-service-bus/src/start
@@ -120,7 +120,7 @@ To complete the component that sends messages about sales performance, follow th
 
 ## Send a message to the topic
 
-1. To run the component that sends a message about a sale, run the following command in the Cloud Shell.
+1. To run the component that sends a message about a sale, run the following command in Cloud Shell.
 
     ```bash
     dotnet run -p performancemessagesender
