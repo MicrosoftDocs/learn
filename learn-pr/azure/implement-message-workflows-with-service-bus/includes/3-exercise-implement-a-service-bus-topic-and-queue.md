@@ -17,9 +17,9 @@ To create a Service Bus namespace using the Azure portal, follow these steps:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. Select **Create a resource**.
+1. Under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
-1. Enter **Service Bus** in the search box, select **Service Bus**, and then select **Create**. The **Create namespace** pane appears.
+1. In the *Marketplace* search box, search for and select **Service Bus**, and then select **Create**. The **Create namespace** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -49,11 +49,11 @@ When your namespace had been created, you can create a queue for messages about 
 
 To create a Service Bus queue, follow these steps:
 
-1. After deployment completes, select **Go to resource**. The namespace you just created appears.
+1. After deployment completes, select **Go to resource**. Your **Service Bus Namespace** pane appears.
 
-1. In the top menu bar of the namespace pane, select **Queue**. The **Create queue** pane appears.
+1. In the top menu bar, select **Queue**. The **Create queue** pane appears.
 
-1. In the **Name** text box, enter **salesmessages**, and then select **Create**. Azure creates the queue in your namespace.
+1. In the **Name** text box, enter *salesmessages*, and then select **Create**. Azure creates the queue in your namespace.
 
     ![Screenshot of the Create queue pane with the Create button highlighted.](../media/3-create-queue.png)
 
@@ -65,7 +65,7 @@ To create a Service Bus topic and subscriptions, follow these steps:
 
 1. In the top menu bar of the **Service Bus Namespace** pane, select **Topic**. The **Create topic** pane appears.
 
-1. In the **Name** text box, enter **salesperformancemessages**, and then select **Create**. Azure creates the topic in your namespace.
+1. In the **Name** text box, enter *salesperformancemessages*, and then select **Create**. Azure creates the topic in your namespace.
 
     ![Screenshot of the Create topic pane with the Create button highlighted.](../media/3-create-topic.png)
 
@@ -73,14 +73,14 @@ To create a Service Bus topic and subscriptions, follow these steps:
 
 1. In the left pane, under **Entities**, select **Topics**.
 
-1. In the list of topics, select **salesperformancemessages**.
+1. In the list of topics, select **salesperformancemessages**. Your **Service Bus Topic** pane appears.
 
-1. Select **Subscription** to open the **Create subscription** pane for your first subscription.
+1. In the top menu bar, select **Subscription**. The **Create subscription** pane appears for your first subscription.
 
-1. Enter **Americas** for the **Name**, then enter **100** for the **Max delivery count**, and then select **Create**.
+1. Enter *Americas* for the **Name**, and enter *100* for the **Max delivery count**, and then select **Create**. The **Service Bus Topic** pane reappears.
 
-1. Select **Subscription** to open the **Create subscription** pane for your second subscription.
+1. In the top menu bar, select **Subscription**, The **Create subscription** pane appears for your second subscription.
 
-1. Enter **EuropeAndAfrica** for the **Name**, and then enter **100** for the **Max delivery count**, and then select **Create**.
+1. Enter *EuropeAndAfrica* for the **Name**, and enter *100* for the **Max delivery count**, and then select **Create**. The **Service Bus Topic** pane reappears.
 
 You have built the infrastructure required to use Service Bus to increase the resilience of your sales force distributed application. You have created a queue for messages about individual sales, and a topic for messages about sales performance. The topic includes multiple subscriptions because messages sent to that topic can be delivered to multiple recipient web services around the world.
