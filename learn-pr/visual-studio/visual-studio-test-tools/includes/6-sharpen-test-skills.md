@@ -1,4 +1,6 @@
-This unit will cover a few useful test writing tips:
+Being able to write tests and applying a red, green, refactoring pattern is a good start. One challenge you will face is test readability, it might be hard to understand why certain asserts exist when you look at a colleague's code or a piece of code you wrote 6 months ago. Another difficult thing about testing, is that you want to test in isolation, you don't want a unit test to make a network call or write files to a disk or a database, most likely. 
+
+In this unit we will cover the following topics to try to address these problems:
 
 * **Fluent assertions**: Enables using assert statements that are more human-readable.
 * **Data driven tests**: Run the same test repeatedly with different parameters.

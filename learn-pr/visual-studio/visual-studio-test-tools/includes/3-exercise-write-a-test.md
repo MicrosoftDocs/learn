@@ -46,7 +46,8 @@ In this exercise, we'll write tests with a few basic steps:
 
    :::image type="content" source="../media/create-unit-tests-generation.png" alt-text="Screenshot in Visual Studio showing right-click menu inside editor. The file open in editor is the Calculator class. The command selected in the right click menu is Create Unit Tests.":::
 
-1. To add a test project template open the the Solution Explorer. Right-click on the solution and select **Add project**. Select a MSTest project template from the new project dialog. There are multiple popular test frameworks in .NET. [MSTest](/visualstudio/test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests) is the built-in option for .NET produced by the .NET team.
+1. Right-click on the solution and select **Add project**, to add a test project template open the the Solution Explorer. .
+1. Select a MSTest project template from the new project dialog, there are multiple popular test frameworks in .NET. [MSTest](/visualstudio/test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests) is the built-in option for .NET produced by the .NET team.
 
    :::image type="content" source="../media/add-new-test-project.png" alt-text="Screenshot in Visual Studio of Add New Project dialog with MSTest Test Project selected.":::
 
@@ -60,7 +61,9 @@ In this exercise, we'll write tests with a few basic steps:
 
 ## Add a reference to the product code from the test project
 
-1. Now that you have a test project, it needs to reference the code you want to test. With a reference, you can make calls to your app from within your tests. Right-click on the test project in the Solution Explorer and select **Add Reference**. Select the project you would like to test. In this case, the console project you created that contains the `Calculator.cs`.
+Now that you have a test project, it needs to reference the code you want to test. With a reference, you can make calls to your app from within your tests. 
+
+1. Right-click on the test project in the Solution Explorer and select **Add Reference**. Select the project you would like to test. In this case, the console project you created that contains the `Calculator.cs`.
 
    :::image type="content" source="../media/add-project-reference.png" alt-text="Screenshot in Visual Studio of Solution Explorer. The right-click menu of the dependencies node under the test project is open and Add Project Reference is selected.":::
 
@@ -70,7 +73,9 @@ In this exercise, we'll write tests with a few basic steps:
 
 ## Add assert statements
 
-1. The templates come with a pre-written test. Add an assert statement to check if a type in your product code is null.
+The templates come with a pre-written test. 
+
+1. Add an assert statement `Assert.IsNotNull()`, at the end of the method, to check if a type in your product code is null.
 
     ```csharp
     [TestMethod]
@@ -82,7 +87,7 @@ In this exercise, we'll write tests with a few basic steps:
     ```
 
 1. Run your test with right-click **Run Tests**. Your test should pass since the `calculator` variable isn't null.
-1. Add an assert statement that causes your test to fail. You can use the example below which asserts IsTrue on a false boolean.
+1. Add an assert statement to the end of the method `CalculatorNullTest()` that causes your test to fail. You can use the example below which asserts IsTrue on a false boolean.
 
     ```csharp
     Assert.IsTrue(false); // Will fail the test

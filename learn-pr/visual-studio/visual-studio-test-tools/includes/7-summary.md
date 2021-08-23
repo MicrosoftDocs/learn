@@ -1,6 +1,6 @@
 Our goal was to help you understand how to write and run tests with Visual Studio test tools.
 
-* **Write a test**: Created a test project, added references, and implemented the three As.
+* **Write a test**: Created a test project, added references, and implemented the three As, arrange, act and assert.
 * **View, run, and debug tests**: View and run tests with the various test tools in Visual Studio including the Test Explorer and the editor test tools.
 * **Sharpen your test skills**: Expanded test writing skills with fluent assertions, data driven tests and mocking.
 
