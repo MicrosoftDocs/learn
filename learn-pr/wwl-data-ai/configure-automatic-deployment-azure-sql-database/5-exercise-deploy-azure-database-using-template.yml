@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: false
 labId: 85886
-labModal: true
+labModal: false
 durationInMinutes: 12
 content: |
   [!include[](includes/5-exercise-deploy-azure-database-using-template.md)]
