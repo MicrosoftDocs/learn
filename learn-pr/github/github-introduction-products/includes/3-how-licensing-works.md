@@ -87,7 +87,7 @@ Organization or enterprise owners who are responsible for multiple accounts need
 
 As an owner, you can click on your profile photo and choose the option to switch to a different account.
 
-![Multiple accounts](../media/multiple-accounts.png)
+:::image type="content" source="../media/multiple-accounts.png" alt-text="Screenshot of multiple accounts dropdown menu.":::
 
 Context switching demonstrates GitHub's capability to enable usage management across accounts.
 
@@ -97,11 +97,11 @@ An Organization owner seeking to manage and monitor the number of seats licensed
 
 As it is possible to have multiple organizations, the user interface requires the organization owner to select the organization for which they would like to view licensing. 
 
-![Select and organization](../media/select-org.png)
+:::image type="content" source="../media/select-org.png" alt-text="Screenshot of settings option.":::
 
 After selecting their organization, they can view their current plan and choose to add to or remove seats from it. 
 
-![Manage seats](../media/remove-seats.png)
+:::image type="content" source="../media/remove-seats.png" alt-text="Screenshot of remove seats option.":::
 
 ### Manage licenses across enterprises and instances
 
@@ -119,8 +119,9 @@ The *Billing & plans* provides an overview of your current plans, up-to-date min
 
 In addition to viewing data in the GitHub user interface, you can also have CSV reports sent to your email.
 
-![Actions usage overview](../media/actions.png)
-![Storage usage overview](../media/storage.png)
+:::image type="content" source="../media/actions.png" alt-text="Screenshot of actions usage overview.":::
+
+:::image type="content" source="../media/storage.png" alt-text="Screenshot of storage usage overview.":::
 
 ### Set spending limits
 
@@ -134,7 +135,7 @@ When misconfiguration is not the case, a spending limit simply assists you in bu
 
 The GitHub user interface enables management of Git LFS (Large File Storage) Data providing feedback on the amount of storage and bandwidth used. Every account using Git Large File Storage receives 1 GB of free storage and 1 GB a month of free bandwidth. You pay when assets are pushed to or downloaded from your account. 
 
-![Git LFS usage overview](../media/lfs.png)
+:::image type="content" source="../media/lfs.png" alt-text="Screenshot of Git LFS usage overview.":::
 
 ## Further reading
 
