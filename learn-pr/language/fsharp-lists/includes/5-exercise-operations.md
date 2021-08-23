@@ -4,7 +4,7 @@ For this exercise, you'll use some of the functions in the list module.
 
 ## Calculate a hand for the game 31
 
-In the card game "31," each of two or more players is dealt a hand consisting of three cards. The player wins whose card point total is closest to 31. Each cards has its own face value, except that the jack, queen, and king are worth 10 points each, and aces are worth 11 points. A player holding, for example, a 10, a jack, and an ace, would have 31 points, and that hand would be the winner.
+In the card game "31," each of two or more players is dealt a hand consisting of three cards. The player wins whose card point total is closest to 31. Each card has its own face value, except that the jack, queen, and king are worth 10 points each, and aces are worth 11 points. A player holding, for example, a 10, a jack, and an ace, would have 31 points, and that hand would be the winner.
 
 In an earlier unit, you created a deck of cards, each represented as a number from 0 to 51. To begin calculating a hand, you need to translate those numbers into something that makes sense within the domain of cards. For example, you would replace the number "0" with the name "Ace of Hearts." 
 
