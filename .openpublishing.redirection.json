@@ -8921,7 +8921,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/tensorflow/intro-natural-language-processing-tensorflow/6-attention-transformers.yml",
+      "source_path": "learn-pr/tensorflow/intro-natural-language-processing-tensorflow/6-attention-transformers.ipynb",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-natural-language-processing-tensorflow/5-generative-networks",
       "redirect_document_id": false
     },
@@ -8931,12 +8931,12 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/tensorflow/intro-computer-vision-tensorflow/7-mobilenet.yml",
+      "source_path": "learn-pr/tensorflow/intro-computer-vision-tensorflow/7-mobilenet.ipynb",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-computer-vision-tensorflow/7-summary",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/tensorflow/intro-computer-vision-tensorflow/8-summary.yml",
+      "source_path": "learn-pr/tensorflow/intro-computer-vision-tensorflow/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-computer-vision-tensorflow/7-summary",
       "redirect_document_id": false
     }
