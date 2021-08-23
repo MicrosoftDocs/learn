@@ -36,11 +36,11 @@ Traditional backup solutions, such as disk and tape, don't offer the highest lev
 
 Azure Backup also offers the ability to back up virtual machines encrypted with Azure Disk Encryption.
 
-**High availability**: Azure Backup offers three types of replication:
-    - Locally redundant storage (LRS)
-    - Geo-redundant storage (GRS)
-    - Read-access geo-redundant storage (RA-GRS) (to enable customer-controlled, cross-region restore)
-to keep your backup data highly available.
+**High availability**: Azure Backup offers four types of replication:
+    - Locally redundant storage (LRS): This is the lowest-cost option with basic protection against server rack and drive failures. We recommend it for non-critical scenarios.
+    - Geo-redundant storage (GRS): This intermediate option has failover capabilities in a secondary region. We recommend it for backup scenarios.
+    - Zone-redundant storage (ZRS): This intermediate option has protection against datacenter-level failures. We recommend it for high availability scenarios.
+    - Geo-zone-redundant storage (GZRS): This is the optimal data protection solution that includes the offerings of both GRS and ZRS. We recommmend it for critical data scenarios.
 
 **Centralized monitoring and management**: Azure Backup provides built-in monitoring and alerting capabilities in a Recovery Services vault. These capabilities are available without any additional management infrastructure.  
 
