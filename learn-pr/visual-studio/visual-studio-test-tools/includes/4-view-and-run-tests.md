@@ -49,3 +49,8 @@ In the next exercise we'll delve deeper into Test Explorer functionality. If you
 * As in debugging a regular app, when you debug a test you can hover or pin variables to see their values and step through the execution of the code.
 
    :::image type="content" source="../media/test-breakpoint.png" alt-text="Screenshot of Visual Studio paused during debugging at a breakpoint set inside the AddTest method on the Assert line. Debugger windows are visible as well as a quick info window showing the value of the actual variable in the test.":::
+
+## Additional learning
+
+* [Test Explorer documentation](/visualstudio/test/run-unit-tests-with-test-explorer)
+* [Advanced Visual Studio testing tools documentation](/visualstudio/test/improve-code-quality)

@@ -15,14 +15,17 @@ content: |
   [!include[](includes/4-view-and-run-tests.md)]
 quiz:
   questions:
-  - content: I can only run tests from the Test Explorer.
+  - content: How can you run tests in Visual Studio?
     choices:
-    - content: "True"
+    - content: "You can **only** run tests from the right-click menu in Visual Studio."
       isCorrect: false
-      explanation: "Incorrect, you can run tests with the right-click menu, keyboard shortcuts, or the CodeLens icons. Whatever feels natural to you and helps you get into your most productive coding flow.."
-    - content: "False"
+      explanation: "Incorrect, you can run tests with several other options."
+    - content: "You can only run tests from the Test Explorer in Visual Studio."
+      isCorrect: false
+      explanation: "Incorrect, you can run tests with several other options."
+    - content: "You can run tests with the right-click menu, keyboard shortcuts, or the CodeLens icons."
       isCorrect: true
-      explanation: "Correct! You can run tests with the right-click menu, keyboard shortcuts, or the CodeLens icons. Whatever feels natural to you and helps you get into your most productive coding flow."
+      explanation: "Correct! You can run tests from several locations in Visual Studio. Whatever feels natural to you and helps you get into your most productive coding flow."
   - content: The Test Explorer group by allows me to view tests groupings according to (Check all that apply)
     choices:
     - content: "by Project"
