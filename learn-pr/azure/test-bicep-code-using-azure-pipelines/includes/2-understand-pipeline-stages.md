@@ -33,7 +33,7 @@ This is sometimes called *shifting left*. Imagine a timeline moving from left to
 
 Every pipeline contains at least one stage. If your pipeline only has a single stage, you don't need to explicitly define it - Azure Pipelines automatically does it for you. When you have multiple stages in a pipeline, you need to define each one.
 
-Imagine we have built some code that will be deployed to infrastructure in the United States and Europe. Here's an illustration of a multistage pipeline to deploy the code:
+Imagine we have built a Bicep file that will be deployed to infrastructure in both the United States and Europe. Here's an illustration of a multistage pipeline to deploy the code:
 
 :::image type="content" source="../media/2-stages-sequential.png" alt-text="TODO" border="false":::
 
@@ -62,7 +62,7 @@ When you use the `dependsOn` keyword, Azure Pipelines waits for the dependent st
 
 You use the `condition` keyword to specify a condition that should be met before a stage executes:
 
-:::code language="yaml" source="code/2-stages-condition.yml" highlight="11" :::
+:::code language="yaml" source="code/2-stages-condition.yml" highlight="12" :::
 
 In the preceding example, when everything goes well, Azure Pipelines runs the **Test** stage first, then it runs the **Deploy** stage. It skips the **Rollback** stage. However, if the **Deploy** stage fails, it runs the **Rollback** stage.
 
@@ -76,7 +76,7 @@ A typical Bicep deployment pipeline contains several stages. As the pipeline mov
 1. **Validate:** Check that the Bicep file is well-formed and doesn't contain any obvious errors. In this module, we'll split this stage into two: linting and preflight validation. You'll learn more about these on the next page.
 1. **What-if:** Validate the list of changes that will be applied against your Azure environment. Ask a human to manually review the what-if results and approve the pipeline to proceed.
 1. **Deploy.**
-1. **Smoke testing:** Perform post-deployment validation against some of the important resources that you've deployed.
+1. **Smoke test:** Perform post-deployment validation against some of the important resources that you've deployed.
 
 > [!NOTE]
 > Your organization might have a different sequence of stages, or you might need to integrate your Bicep deployments into a pipeline that deploys other components. Once you understand how the stages above work, you can design a pipeline to suit your needs.
