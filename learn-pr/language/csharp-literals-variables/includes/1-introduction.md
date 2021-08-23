@@ -8,7 +8,7 @@ In this module, you'll create hard-coded literal values that contain different d
 
 By the end of this module, you'll be able to create literal values and store and retrieve data in variables.
 
-## Learning Objectives
+## Learning objectives
 
 In this module, you will:
 
