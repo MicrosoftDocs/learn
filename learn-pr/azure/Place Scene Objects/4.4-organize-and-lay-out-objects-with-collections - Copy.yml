@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.getting-started-tutorials-mrtk.4.6-create-intelligent-object-placements-with-solvers
+title: Create intelligent object placements with solvers
+metadata:
+  title: Create intelligent object placements with solvers
+  description: Introduction for Create intelligent object placements with solvers
+  ms.date: 06/23/2021
+  author: Sean-Kerawala
+  ms.author: sekerawa
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 5
+content: |
+  [!include[](includes/4.6-create-intelligent-object-placements-with-solvers.md)]
