@@ -132,7 +132,7 @@ This failure is due to the service connection that is being used. This service c
 
 1. Inspect the failure messages. Navigate back to Visual Studio Code and fix the errors. Once fixed save the Bicep template file again, commit and push it to the repository to trigger another run. If all syntax errors were fixed, your first stage should now succeed. If your first stage still does not succeed, inspect the errors again and try and fix them again. Your second stage will fail, but don't worry, we will fix that as a next step. Your fixed Bicep template might look like this: 
 
-   :::code language="yaml" source="code/4-main-fix1.bicep" :::
+   :::code language="bicep" source="code/4-main-fix1.bicep" :::
 
 1. In your browser, navigate to the most recent run of your pipeline. It will now show the second stage failing. Select the failing **PreFlight** stage to see its details.
 
@@ -140,7 +140,7 @@ This failure is due to the service connection that is being used. This service c
 
 1. Inspect the failure message. Navigate back to Visual Studio Code and fix the error. Once fixed save the Bicep template file again, commit and push it to the repository to trigger another run. If all pre-flight errors were fixed, your second stage should now succeed as well as the third and final stage. If your second stage still does not succeed, inspect the error again and try and fix them again. Your fixed Bicep template might look like this: 
 
-   :::code language="yaml" source="code/4-main.bicep" :::
+   :::code language="bicep" source="code/4-main.bicep" :::
 
 Notice that for fixing this error, your need to remove the dash from the name of the storage account, since this is an illegal charachter for a storage account, as well as add the resourceNameSuffix to it, to make it unique. Both errors will make the pre-flight check fail. 
 
