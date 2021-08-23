@@ -10,7 +10,7 @@ In this unit, you'll use the Azure portal to create a new registry in Container 
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) with your Azure subscription.
 
-1. On the Azure portal ***home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure portal **home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
 
 1. In the left menu pane, select **Containers**, and under *Popular offers*, select **Container Registry**.
 
