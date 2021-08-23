@@ -14,16 +14,16 @@ Now, do some research about the various social groups in your company.
 
 1. Note some details about groups that interest you, including upcoming activities
 
-> Example: HOLA, your organization's Hispanic group, hosts a cooking class the first Wednesday of each month.
+   > Example: HOLA, your organization's Hispanic group, hosts a cooking class the first Wednesday of each month.
 
 Groups to watch for:
 
-- outdoors clubs
-- music groups
-- cooking clubs
-- social-good clubs
-- ethnic or multicultural groups
-- art groups
+- Outdoors clubs
+- Music groups
+- Cooking clubs
+- Social-good clubs
+- Ethnic or multicultural groups
+- Art groups
 
 ## Attend an activity and network
 
