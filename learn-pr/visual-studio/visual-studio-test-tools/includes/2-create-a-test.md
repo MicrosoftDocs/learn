@@ -72,7 +72,7 @@ There are two approaches you can use to add tests to your production code:
 
    :::image type="content" source="../media/create-unit-tests-generation.png" alt-text="Screenshot in Visual Studio showing right-click menu inside editor. The file open in editor is the Calculator class. The command selected in the right click menu is Create Unit Tests.":::
 
-* You can also manually create a test project, add tests, and add the product code reference. You can do this at the command-line or with Visual Studio tooling as described in the next unit.
+* You can also manually create a test project, add tests, and add the product code reference. You can do this at the command line or with Visual Studio tooling as described in the next unit.
 
 ## The three A's: assert, act, and arrange
 
@@ -105,7 +105,7 @@ Now that you understand the basic setup of a test and test project, the next ste
 Red, green, refactor is a recommended pattern for testing. When you're writing a test, it's good to see it fail at least once so that you know it *can* fail. A common issue is believing a test covers a certain scenario only to find a bug in production. It's no fun to realize your test wasn't making the right calls or never correctly asserted the expected outcome.
 
 * **Red**: Write a failing "red" test.
-* **Green**: Add the necessary product code to make the test pass or turn "green".
+* **Green**: Add the necessary product code to make the tests pass or turn "green".
 * **Refactor**: "Refactor" now that you have the correct functionality.
 
 This pattern provides an easy guide as you get into a programming flow. If you're interested in learning more about different testing schools of thought see [Introduction to software testing concepts](/learn/modules/visual-studio-test-concepts/5-testing-schools-of-thought), which covers more on TDD or Test Driven Development.
