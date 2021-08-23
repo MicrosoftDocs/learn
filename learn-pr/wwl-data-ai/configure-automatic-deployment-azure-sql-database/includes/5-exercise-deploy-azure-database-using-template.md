@@ -4,12 +4,13 @@ You've been hired as a Senior Data Engineer to help automate day to day operatio
 
 1. When the VM lab environment opens, use the password on the **Resources** tab above for the **Student** account to sign in to Windows.
 
-1. In the virtual machine, open the **Microsoft Edge** browser, and in the `https://portal.azure.com' page, sign into Microsaoft Azure using the Azure Portal username and password provided on the **Resources** tab above.
+1. In the virtual machine, open the **Microsoft Edge** browser, and in the `https://portal.azure.com` page, sign into Microsaoft Azure using the Azure Portal username and password provided on the **Resources** tab above.
 1. In Microsoft Edge, open a new tab and navigate to the following path in a GitHub repository, which contains an ARM template to deploy a SQL Database resource
 
     ```
     https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.sql/sql-database
     ```
+
 1. Right-click **azuredeploy.json**, and select **Open link in new tab** to view the ARM template, which should look similar to this
 
     ```JSON
@@ -86,7 +87,7 @@ You've been hired as a Senior Data Engineer to help automate day to day operatio
 
 1. Close the **azuredeploy.json** tab and return to the tab containing the **sql-database** GitHub folder.
 
-1. On the GitHub webpage, scroll down select **Deploy to Azure**.
+1. On the GitHub web page, scroll down and select **Deploy to Azure**.
 
     :::image type="content" source="../media/deploy-to-azure.png" alt-text="Deploy to Azure button":::
 
@@ -95,11 +96,10 @@ You've been hired as a Senior Data Engineer to help automate day to day operatio
     - Sql Administrator Login: **labadmin**
     - Sql Administrator Login Password: Enter a strong password
 
-
 1. Select **Review + create**, and then select **Create**.
 
     Your deployment will take 5 minutes or so to deploy.
 
-1. Whend eployment has completed, select **Go to resource group**. You'll be taken to the Azure Resource Group your, which contains a randomly named **SQL Server** resource created by the deployment.
+1. When deployment has completed, select **Go to resource group**. You'll be taken to the Azure Resource Group your, which contains a randomly named **SQL Server** resource created by the deployment.
 
 You've just seen how, with a single click on an Azure Resource Manager template link, you can create both an Azure SQL server and database in minutes.
