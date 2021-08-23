@@ -8,7 +8,7 @@ Anytime resources are created, updated or deleted, there's a risk that things co
 
 Resource Manager provides the what-if operation, which you can run on your Bicep file within your pipeline stage:
 
-TODO image
+:::image type="content" source="../media/5-stages-what-if.png" alt-text="TODO" border="false":::
 
 You use the `az deployment group what-if` command from within your pipeline definition to run the what-if step:
 
