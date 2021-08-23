@@ -36,7 +36,7 @@ quiz:
         - content: It returns `4`. 
           isCorrect: false
           explanation: Incorrect. The element `4` is the last one in the list. `Head` returns the first element in the list, which has the value `1`.
-    - content: What is the correct way to return the average value from a list ?
+    - content: What is the correct way to return the average value from a list?
       choices: 
         - content: Use `let list = [2;4]`, and calculate the average value by using `let average = List.average list`.
           isCorrect: false
