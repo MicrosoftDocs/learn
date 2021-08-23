@@ -1,11 +1,11 @@
-In this module, you first covered the topic of collections. There are three main collections lists, sequences, and arrays. Each type of collection has their own pros and cons. 
+In this module, you first learned about collections. There are three main types of collections: lists, arrays, and sequences. Each type has its own purpose. 
 
-We then focused on lists and list properties. Lists are implemented as linked lists which facilities accessing items at the start of the list but also using a zero based index.
+You then learned about lists and list properties. Lists are implemented as linked lists, which facilitate accessing items at the start of the list and use a zero-based index.
 
-Then we focused on operation in the list module that allows you to do things like iterating, mathematical operations, sorting and more.
+Finally, you learned about operations in the list module, which allow you to iterate, perform mathematical operations, sort, and much more.
 
-## Additional learning
+## Learn more about F# collections
 
-- [List in F#](/dotnet/fsharp/language-reference/lists?azure-portal=true)
-- [Arrays in F#](/dotnet/fsharp/language-reference/arrays?azure-portal=true)
-- [Sequences in F#](/dotnet/fsharp/language-reference/sequences?azure-portal=true)
+- [Lists in F#](/dotnet/fsharp/language-reference/lists)
+- [Arrays in F#](/dotnet/fsharp/language-reference/arrays)
+- [Sequences in F#](/dotnet/fsharp/language-reference/sequences)
