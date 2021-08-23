@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.language.rust-create-program.3-data-types
+metadata:
+  title: 'Primary data types: Numbers, text, true/fase, and groups'
+  description: Review the primary data types in Rust. Explore how integers and floating point numbers, and characters and text strings are defined. Discover how true or false boolean values are used, and how groups of different type values are defined.
+  ms.date: 08/19/2021
+  author: GitHubber17
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Primary data types: Numbers, text, true/false, and groups'
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-data-types.md)]
+
+quiz:
+  questions:
+
+  - content: "Which statement describes how integer number values are defined in Rust?"
+    choices:
+    - content: "Integers in Rust are identified primarily by their bit size, such as 8-bit, 16-bit, and so on."
+      isCorrect: false
+      explanation: "Incorrect. Integers are identified by both their bit size _and_ their __signed__ property value."
+    - content: "Integers in Rust are identified by their bit size and the __signed__ property."
+      isCorrect: true
+      explanation: "Correct! An integer is identified by a combination of its bit size and whether it's signed (`i`) or unsigned (`u`)."
+    - content: "A positive or negative integer in Rust can be defined as an unsigned (`u`) or signed (`i`) value."
+      isCorrect: false
+      explanation: "Incorrect. While a signed (`i`) integer can be a positive or negative number, an unsigned (`u`) integer can be *only* a positive number."
+
+  - content: "Which statement correctly describes how Rust supports text character values?"
+    choices:
+    - content: "Rust has one data type that can be used for both single characters and multi-character text strings."
+      isCorrect: false
+      explanation: "Incorrect. Rust has two basic types for multi-character text strings (`str` and `String`) and another for a single character (`char`)."
+    - content: "A character (`char`) can be only a single alpha letter like 'A' or 'z'. A string can be a series of any characters: letters, numbers, images, and so on."
+      isCorrect: false
+      explanation: "Incorrect. A character (`char`) in Rust can be any single character, including alpha letters, numbers, images, and so on."
+    - content: "In Rust, all text types are valid UTF-8 representations."
+      isCorrect: true
+      explanation: "Correct! All text types in Rust are valid UTF-8 representations." 
+
+  - content: "What's a `tuple` in Rust?"
+    choices:
+    - content: "A tuple is a collection of values of different types. The data type is based on the data types of its elements, and the length is fixed based on the number of elements."
+      isCorrect: true
+      explanation: "Correct! A tuple is a grouping of values of different data types that are collected into a compound value."
+    - content: "A tuple is a collection of values of different types. The data type is based on the data types of its elements. The length can grow and shrink as elements are added or removed."
+      isCorrect: false
+      explanation: "Incorrect. After a tuple is declared, the length is fixed based on the number of its elements. A tuple can't grow and shrink after it's declared."     
+    - content: "A tuple is a collection of values of the same data type. All elements in the tuple must have the same data type. The tuple length is fixed based on the number of its elements."
+      isCorrect: false
+      explanation: "Incorrect. A tuple combines elements of different data types together into a compound value, such as `i8`, `char`, and `boolean`." 
