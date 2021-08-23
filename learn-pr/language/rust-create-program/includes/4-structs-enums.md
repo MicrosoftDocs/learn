@@ -108,7 +108,7 @@ The enum in our example has three variants of different types:
 - `WEKeys` has two fields with data types `String` and `char`.
 - `WEMClick` contains an anonymous struct with named fields `x` and `y`, and their data types (`i64`).
 
-We define an enum with variants similar to how we define different kinds of struct types. All the variants are grouped together in the same `WebEvent` enum type. Each variant in the enum **isn't** its own type. Any function that uses a variant of the `WebEvent` enum must accept all the variants in the enum. We can't have a function that accepts only the `KeyPress` variant, but not the other variants.
+We define an enum with variants similar to how we define different kinds of struct types. All the variants are grouped together in the same `WebEvent` enum type. Each variant in the enum **isn't** its own type. Any function that uses a variant of the `WebEvent` enum must accept all the variants in the enum. We can't have a function that accepts only the `WEClick` variant, but not the other variants.
 
 
 ## Define an enum with structs
