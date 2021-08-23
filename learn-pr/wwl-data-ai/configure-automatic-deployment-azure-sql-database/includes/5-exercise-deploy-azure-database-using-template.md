@@ -4,7 +4,7 @@ You've been hired as a Senior Data Engineer to help automate day to day operatio
 
 1. When the VM lab environment opens, use the password on the **Resources** tab above for the **Student** account to sign in to Windows.
 
-1. In the virtual machine, open the **Microsoft Edge** browser, and in the `https://portal.azure.com` page, sign into Microsaoft Azure using the Azure Portal username and password provided on the **Resources** tab above.
+1. In the virtual machine, open the **Microsoft Edge** browser, and in the `https://portal.azure.com` page, sign into Microsoft Azure using the Azure portal username and password provided on the **Resources** tab above.
 1. In Microsoft Edge, open a new tab and navigate to the following path in a GitHub repository, which contains an ARM template to deploy a SQL Database resource
 
     ```
