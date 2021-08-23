@@ -1,0 +1,16 @@
+stages:
+- stage: Test
+  jobs:
+  - job: Test
+
+- stage: DeployToPreProduction
+  jobs:
+  - job: DeployToPreProduction
+
+- stage: DeployToProductionUS
+  jobs: 
+  - job: DeployToProductionUS
+
+- stage: DeployToProductionEurope
+  jobs: 
+  - job: DeployToProductionEurope
