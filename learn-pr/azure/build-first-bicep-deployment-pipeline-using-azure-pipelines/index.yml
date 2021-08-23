@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 title: Build your first Bicep deployment pipeline by using Azure Pipelines
 summary: |
-  Build a basic deployment pipeline for Bicep code. You'll use a service connection to securely identify your pipeline to Azure, and then set when the pipeline runs by using triggers and schedules.
+  Create an automated pipeline in Azure Pipelines that securely deploys resources to Azure from Bicep code. Configure your pipeline to run on a schedule or when your configuration changes.
 abstract: |
   After completing this module, you'll be able to:
     - Automate Bicep deployments by using a pipeline in Azure Pipelines
