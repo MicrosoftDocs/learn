@@ -1,3 +1,5 @@
+Let's put that test creation knowledge to use. Imagine you are developing the calculator app mentioned at the beginning of this module. As part of development you now need to set up your test project and write your first test.
+
 In this exercise, we'll write tests with a few basic steps:
 
 * Set up product code to be tested
@@ -6,6 +8,8 @@ In this exercise, we'll write tests with a few basic steps:
 * Add assert statements
 
 ## Set up product code to be tested
+
+Your product code is a calculator app, as such, it supports addition, subtraction, multiplication and division. You will create the program as a console app.
 
 1. Start a .NET console project called `LearnMyCalculatorApp`.
 1. Add a new `Calculator.cs` with the code below.
@@ -42,11 +46,9 @@ In this exercise, we'll write tests with a few basic steps:
 
 ## Create a test project
 
-1. The easiest way to add a test project for testing a specific method in your code is to right-click in that method and select **Create unit tests**. This option to autogenerate test methods is available for most .NET projects, but let's describe how to manually set up test projects as well.
+As mentioned in the previous unit, the easiest way to add a test project for testing a specific method in your code is to right-click in that method and select **Create unit tests**. However, for this exercise let's manually set up test projects to better understand the relationship between tests and the code that is being tested.
 
-   :::image type="content" source="../media/create-unit-tests-generation.png" alt-text="Screenshot in Visual Studio showing right-click menu inside editor. The file open in editor is the Calculator class. The command selected in the right click menu is Create Unit Tests.":::
-
-1. Right-click on the solution and select **Add project**, to add a test project template open the the Solution Explorer. .
+1. Right-click on the solution and select **Add project**, to add a test project template open the Solution Explorer.
 1. Select a MSTest project template from the new project dialog, there are multiple popular test frameworks in .NET. [MSTest](/visualstudio/test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests) is the built-in option for .NET produced by the .NET team.
 
    :::image type="content" source="../media/add-new-test-project.png" alt-text="Screenshot in Visual Studio of Add New Project dialog with MSTest Test Project selected.":::
@@ -61,7 +63,7 @@ In this exercise, we'll write tests with a few basic steps:
 
 ## Add a reference to the product code from the test project
 
-Now that you have a test project, it needs to reference the code you want to test. With a reference, you can make calls to your app from within your tests. 
+Now that you have a test project, it needs to reference the code you want to test. With a reference, you can make calls to your app from within your tests.
 
 1. Right-click on the test project in the Solution Explorer and select **Add Reference**. Select the project you would like to test. In this case, the console project you created that contains the `Calculator.cs`.
 
@@ -69,11 +71,14 @@ Now that you have a test project, it needs to reference the code you want to tes
 
 1. Make sure to add an import statement to the top of your C# test files so that references to any types in your product code's namespaces are resolved.
 
-   :::image type="content" source="../media/add-import-statement.png" alt-text="Screenshot in Visual Studio of editor open on a file titled Calculator.cs. The second import statement is using Learn My Calculator App;.":::
+    ```csharp
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using LearnMyCalculatorApp;
+    ```
 
 ## Add assert statements
 
-The templates come with a pre-written test. 
+Now let's add an assert statement to instruct the test runner under what conditions the test should succeed. The templates come with a pre-written test. Let's add a test to check that the Calculator type is not null after initialization.
 
 1. Add an assert statement `Assert.IsNotNull()`, at the end of the method, to check if a type in your product code is null.
 
@@ -87,7 +92,7 @@ The templates come with a pre-written test.
     ```
 
 1. Run your test with right-click **Run Tests**. Your test should pass since the `calculator` variable isn't null.
-1. Add an assert statement to the end of the method `CalculatorNullTest()` that causes your test to fail. You can use the example below which asserts IsTrue on a false boolean.
+1. Add an assert statement to the end of the method `CalculatorNullTest` that causes your test to fail. You can use the example below which asserts IsTrue on a false boolean.
 
     ```csharp
     Assert.IsTrue(false); // Will fail the test
@@ -96,3 +101,5 @@ The templates come with a pre-written test.
 1. Confirm your test fails by running again.
 
    :::image type="content" source="../media/test-run-first-test.png" alt-text="Screenshot in Visual Studio of editor window right-clicking in a test method with Run Tests selected.":::
+
+Congratulations! You've managed to successfully create and run a test on your product code. You are in a great position to keep adding tests and build a reliable product.

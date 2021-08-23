@@ -15,19 +15,25 @@ content: |
   [!include[](includes/2-create-a-test.md)]
 quiz:
   questions:
-  - content: You don't need to import the namespace of your product code if your test project already references the target project.
+  - content: What do you need to add a reference from your test project to product code?
     choices:
-    - content: "True"
+    - content: "Add a reference to the target project."
       isCorrect: false
       explanation: "Incorrect, you need to import both the namespace and add a reference to the project you'd like to test."
-    - content: "False"
+    - content: "Both import the namespace and add a project reference"
       isCorrect: true
       explanation: "Correct! You need to import both the namespace and add a reference to the project you'd like to test."
-  - content: If one assert statement fails, the test will fail.
-    choices:
-    - content: "True"
-      isCorrect: true
-      explanation: "Correct! Even when there are multiple assert statements, if one fails, the test will fail."
-    - content: "False"
+    - content: "Import the namespace, add a project reference, and add @test decorator on the test method."
       isCorrect: false
-      explanation: "Incorrect, the test will fail even if only one assert statement fails."
+      explanation: "Incorrect, the @test decorator is a java idiom. .NET uses [TestMethod], but this is normally already included as part of the template."
+  - content: Which of the following cause a test to fail?
+    choices:
+    - content: "A failing assert statement is the only reason a test would fail."
+      isCorrect: false
+      explanation: "Incorrect, tests can fail even if all the assert statements are passing."
+    - content: "A test fails when **most** asserts in the test are failing."
+      isCorrect: false
+      explanation: "Tests will fail if there is at least one failing assert."
+    - content: "Tests can fail for a variety of reasons including at least one failing assert, an uncaught exception, or if the test times out."
+      isCorrect: true
+      explanation: "Correct! There are several reasons a test may fail. Always check the test output to determine the cause of a failure."

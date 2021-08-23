@@ -1,4 +1,6 @@
-In this exercise, we'll build out a test suite a little further and exercise the Test Explorer.
+In the last exercise, you added product code for the calculator app and a first test method. Now you'll keep building out your test project.
+
+In this exercise, we'll build out a test suite and exercise the Test Explorer.
 
 * Add more tests
 * Filter to failing test in Test Explorer
@@ -8,6 +10,9 @@ In this exercise, we'll build out a test suite a little further and exercise the
 
 ## Add more tests
 
+Next, you are looking to add more tests to ensure you test all the functionality of your calculator product code.
+
+1. Add the following test method to your test class:
 
     ```csharp
     [TestMethod]
@@ -23,22 +28,25 @@ In this exercise, we'll build out a test suite a little further and exercise the
         Assert.AreEqual(2, actual);
     }
     ```
-   The code above demonstrates a simple test for inputting two numbers into the `Add()` method and asserting a result. 
-   
-   **Challenge**: Can you create similar tests for the `Subtract()`, `Multiply()`, and `Divide()` methods?
-   Now you should have tests for the `Subtract()`, `Multiply()`, and `Divide()` methods. 
-   
+
+   The code above demonstrates a simple test for inputting two numbers into the `Add` method and asserting a result.
+
+   **Challenge**: Can you create similar tests for the `Subtract`, `Multiply`, and `Divide` methods?
+   Now you should have tests for the `Subtract`, `Multiply`, and `Divide` methods.
+
    > [!NOTE]
    > If you want to check your code, see the [expected examples](#Expected-examples-for-`Subtract`,-`Multiply`,-and-`Divide`-tests) section at the end of this page.
 
-1. Add another test for the `Divide(()` method that fails. The `Divide()` method in our calculator cannot yet handle dividing by zero. Create a test method that inputs zero as the divisor. Run the new test to confirm it fails.
-   It doesn't matter what is in your assert statement since an uncaught exception fails the test. For now, let's say the `Divide()` method should return null when dividing by zero. What assert should you use?
+1. Add another test for the `Divide` method that fails. The `Divide` method in our calculator cannot yet handle dividing by zero. Create a test method that inputs zero as the divisor. Run the new test to confirm it fails.
+   It doesn't matter what is in your assert statement since an uncaught exception fails the test. For now, let's say the `Divide` method should return null when dividing by zero. What assert should you use?
    > [!NOTE]
    > If you want to check your code, see the [expected divide by zero test](#Expected-divide-by-zero-test) at the end of this page.
 
 Now that you're accumulating a test suite, let's learn more about managing multiple tests with the Visual Studio Test Explorer.
 
 ## Filter to failing tests
+
+In a larger project, you might have hundreds of tests running in the Test Explorer, to quickly identify which tests failed, you can use the filter functionality.
 
 1. Select the "failed test button" in the Test Explorer toolbar, to show only failed tests. This button also summarizes how many tests are failing in the current view.
 
@@ -54,7 +62,7 @@ Now that you're accumulating a test suite, let's learn more about managing multi
 
 ## Use the Group By options
 
-By using groupings it makes it easier to work with large amount of tests. Let's explore some of the Group By settings. 
+By using groupings it makes it easier to work with large amount of tests. Let's explore some of the Group By settings.
 
 1. Try a new grouping by de-selecting the presets and only grouping by State (passed, failed, not run, and so on) and then Class.
 
@@ -65,7 +73,9 @@ By using groupings it makes it easier to work with large amount of tests. Let's 
    :::image type="content" source="../media/test-explorer-groupby-state-class.png" alt-text="Screenshot in Visual Studio of Test Explorer where the test list now organizes tests into a hierarchy of the State grouping and then the class grouping. The first group is of failed tests and then it's organized by class within that group. The second group is passed tests that are also then organized within that group by class.":::
 
 ## Debug a test
-Sometimes, it's not obvious why a test fails. You might need to do a closer inspection by setting a breakpoint and _debug_ the test while it's running. 
+
+Sometimes, it's not obvious why a test fails. You might need to do a closer inspection by setting a breakpoint and _debug_ the test while it's running.
+
 1. Set a breakpoint in `DivideByZeroTest` at the `Assert` line by clicking in the margin of the code editor.
 1. Right-click in the test method in the code editor and select **Debug Test**.
 
@@ -76,24 +86,39 @@ Sometimes, it's not obvious why a test fails. You might need to do a closer insp
    :::image type="content" source="../media/test-debug-exception.png" alt-text="Screenshot in Visual Studio throwing a divide by zero system exception in the midst of debugging. The exception appears in a call out above the Divide method on the return statement.":::
 
 ## Red, green, refactor
+
 Red, green, refactor is all about starting with a failing test, to see the test can fail but also that the product code might not be written yet. Let's adapt this mindset in the upcoming steps.
-`DivideByZeroTest()` will fail until you update the `Divide` method in the `Calculator.cs` to gracefully handle when the divisor is zero, thereby this test is on "Red", it's waiting for you to write missing product code.
+`DivideByZeroTest` will fail until you update the `Divide` method in the `Calculator.cs` to gracefully handle when the divisor is zero, thereby this test is on "Red", it's waiting for you to write missing product code.
 
-1. Write some code to catch the exception if the divisor is zero, and notify the user with a console message such as, "Cannot divide by zero." After catching the exception, the `Divide()` method can then return null. Edit the `Divide()` method signature to allow a nullable int return type.
-   * If you want to check your code, see the [expected divide by zero update](#Expected-divide-by-zero-update) at the end of this page.
+1. Write some code to catch the exception if the divisor is zero, and notify the user with a console message such as, "Cannot divide by zero." After catching the exception, the `Divide` method can then return null. Edit the `Divide` method signature to allow a nullable int return type.
 
-1. Rerun your `DivideByZero()` test to confirm it now passes! The `Divide` method now returns null when the divisor is zero. Note the output that warns the user they cannot divide by zero appears in the test detail summary in the Test Explorer.
+    Your `Divide` method should now look similar to the code below.
+
+    ```csharp
+    public int? Divide(int x, int y)
+    {
+        try
+        {
+            return x / y;
+        }
+        catch (DivideByZeroException)
+        {
+            Console.WriteLine("Cannot divide by zero.");
+            return null;
+        }
+    }
+    ```
+
+1. Rerun your `DivideByZero` test to confirm it now passes! The `Divide` method now returns null when the divisor is zero. Note the output that warns the user they cannot divide by zero appears in the test detail summary in the Test Explorer.
 
    :::image type="content" source="../media/test-explorer-output.png" alt-text="Screenshot in Visual Studio of Test Explorer showing passing Divide By Zero Test. The lower pane of the Test Explorer window shows the test details including the Console.Writeline output.":::
    Thereby your test went from "Red" to "Green" as you added  product code to get the test to pass.
-   Now that you have working product code, and a test, it's time to refactor your product code to create an even better and more robust solution, if possible.   
-   
+   Now that you have working product code, and a test, it's time to refactor your product code to create an even better and more robust solution, if possible.
+
   > [!TIP]
   > Consider scenarios that might need to be updated because of your recent changes. Feel free to add comments to describe new functionality.
 
-Congratulations!  You've managed to add more tests and learned to use a Red, Green, Refactor pattern. You started with the red failing `DivideByZeroTest()` and modified the product code until it got to green. The last step before moving on was refactoring.
-
-## Check the sample code
+Congratulations!  You've managed to add more tests and learned to use a Red, Green, Refactor pattern. You started with the red failing `DivideByZeroTest` and modified the product code until it got to green. The last step before moving on was refactoring.
 
 ## Expected examples for `Subtract`, `Multiply`, and `Divide` tests
 
@@ -152,22 +177,5 @@ public void DivideByZeroTest()
 
     // Assert
     Assert.IsNull(actual);
-}
-```
-
-## Expected divide by zero update
-
-```csharp
-public int? Divide(int x, int y)
-{
-    try
-    {
-        return x / y;
-    }
-    catch (DivideByZeroException)
-    {
-        Console.WriteLine("Cannot divide by zero.");
-        return null;
-    }
 }
 ```

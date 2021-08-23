@@ -1,6 +1,9 @@
+When writing tests there are a few things to keep track of including the test's internal organization, how to run the test, good test writing patterns, and finally how to define under what conditions the test succeeds.
+
 In this unit, we'll cover a few basics:
 
 * **Unit tests**: The most basic type of test.
+* **How to add tests to your production code**
 * **The three A's**: Arrange, act, and assert make up the basic structure of tests.
 * **Run a test**: Visual Studio provides a few helpful tools to run tests in context.
 * **Red, green, refactor**: Every test you write should fail at least once!
@@ -60,6 +63,16 @@ public void AddTest()
     Assert.AreEqual(2, actual);
 }
 ```
+
+## How to add tests to your production code
+
+There are two approaches you can use to add tests to your production code:
+
+* The easiest way to add a test project for testing a specific method in your code is to right-click in that method and select **Create unit tests**. This option to autogenerate test methods is available for most .NET projects.
+
+   :::image type="content" source="../media/create-unit-tests-generation.png" alt-text="Screenshot in Visual Studio showing right-click menu inside editor. The file open in editor is the Calculator class. The command selected in the right click menu is Create Unit Tests.":::
+
+* You can also manually create a test project, add tests, and add the product code reference. You can do this at the command-line or with Visual Studio tooling as described in the next unit.
 
 ## The three A's: assert, act, and arrange
 

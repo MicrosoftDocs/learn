@@ -1,4 +1,4 @@
-Being able to write tests and applying a red, green, refactoring pattern is a good start. One challenge you will face is test readability, it might be hard to understand why certain asserts exist when you look at a colleague's code or a piece of code you wrote 6 months ago. Another difficult thing about testing, is that you want to test in isolation, you don't want a unit test to make a network call or write files to a disk or a database, most likely. 
+Being able to write tests and applying a red, green, refactoring pattern is a good start. One challenge you will face is test readability, it might be hard to understand why certain asserts exist when you look at a colleague's code or a piece of code you wrote 6 months ago. Another difficult thing about testing, is that you want to test in isolation, you don't want a unit test to make a network call or write files to a disk or a database, most likely.
 
 In this unit we will cover the following topics to try to address these problems:
 
@@ -16,12 +16,16 @@ You can learn about different types of tests and more testing concepts with [Int
 using FluentAssertions;
 ...
 [TestMethod]
-public void AddTest()
+public void AddTestFluentassertion()
 {
     var calculator = new Calculator();
     var actual = calculator.Add(1, 1);
 
-    // Fluent assertion
+    // Non-fluent asserts:
+    // Assert.AreEqual(actual, 2);
+    // Assert.AreNotEqual(actual, 1);
+
+    // Same asserts as what is commented out above, but using Fluent assertion
     actual.Should().Be(2).And.NotBe(1);
 }
 ```
@@ -30,7 +34,7 @@ public void AddTest()
 
 ## Data driven tests
 
-[Data driven tests](/visualstudio/test/how-to-create-a-data-driven-unit-test) allows you to run the same test method many times with various parameters. This test may also be refered to as parameterized testing or DDT. This ability allows you to avoid repetition in your code while also checking the same function with a whole set of different data inputs. You can input data in-line as shown in the example below or even connect to a database to get input.
+[Data driven tests](/visualstudio/test/how-to-create-a-data-driven-unit-test) allows you to run the same test method many times with various parameters. This test may also be referred to as parameterized testing or DDT. This ability allows you to avoid repetition in your code while also checking the same function with a whole set of different data inputs. You can input data in-line as shown in the example below or even connect to a database to get input.
 
 ```csharp
 [DataTestMethod]

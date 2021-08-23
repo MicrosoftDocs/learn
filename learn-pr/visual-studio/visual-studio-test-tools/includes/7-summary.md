@@ -11,3 +11,4 @@ Recall the calculator app example from the beginning of this module. As the func
 * [Introduction to software testing concepts](/learn/modules/visual-studio-test-concepts/)
 * [Testing cross-platform with the command-line](/dotnet/core/testing/unit-testing-with-mstest)
 * [Run tests in Azure DevOps](/learn/modules/run-functional-tests-azure-pipelines)
+* [Test Explorer documentation](/visualstudio/test/run-unit-tests-with-test-explorer)
