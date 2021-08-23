@@ -2,37 +2,36 @@ Now that you know what pipeline stages are for, let's consider the steps that ma
 
 In this unit, you'll learn about validating Bicep templates. 
 
-## What does it mean for a Bicep template to be valid?
+## What does it mean for a Bicep file to be valid?
 
-A valid Bicep template is one that you can confidently deploy to your Azure environment without errors. The template file itself doesn't contain any syntax errors. Also, the definitions for the Azure resources you plan to deploy are valid. And it stays within the quotas and limits that exist in your Azure subscription.
+A valid Bicep file is one that you can confidently deploy to your Azure environment. The file itself doesn't contain any syntax errors. Also, the definitions for the Azure resources you plan to deploy are valid. And when the resources defined in the file are deployed, they stay within the quotas and limits that exist in your Azure subscription.
 
-Some of the validation steps are performed on your Bicep file, like the checks for syntax errors and for valid usage of Azure resource definitions. This is called *linting*. To check for other problems, you need to request that the Azure Resource Manager service verifies your Bicep template against your Azure environment.
+Some of the validation steps are performed on your Bicep file in isolation, like the checks for syntax errors, for valid Azure resource definitions, and for code quality. These steps are called *linting*. To check for other problems, you need to request that the Azure Resource Manager service verifies your template against your Azure environment.
 
-A valid Bicep template has a greater chance of deploying successfully. You'll get faster feedback to validate it without actually deploying your Bicep template. This is a good practice because, if you deploy a Bicep file that isn't valid, Azure might only deploy some of the resources described in your template. This could mean that the state of your environment is inconsistent and it might not behave the way you expect.
+A valid Bicep template has a greater chance of deploying successfully. You'll get feedback without actually deploying your Bicep template. This is a good practice because, if you deploy a Bicep file that isn't valid, Azure might only deploy or change a subset of the resources described in your template. This could mean that the state of your environment is inconsistent and it might not behave the way you expect.
 
-## What is linting and why would you do it in a pipeline?
+## Building and linting Bicep code
 
-A first step in validating a Bicep template is called _linting_. Linting is the process of checking code, like your Bicep template, against a set of recommendations. It check your templates against best practices for maintainability, correctness, flexibility and extensibility. A linter contains a pre-defined set of rules for checking rules in each of these categories.
+When you deploy a Bicep file, the Bicep tooling first runs some basic validation steps. These steps are the same ones that run when you modify your file using Visual Studio Code. They check that you've used Bicep's language keywords correctly and that you've defined your Azure resources according to the rules for each resource type.
 
-The Bicep linter runs automatically when you use the Bicep tooling. Every time you build a Bicep file, the linter checks it against its best practices. This happens automatically when you deploy a Bicep file to Azure. You can also run the linter separately by using the `bicep build` command:
+In addition, the Bicep linter validates your files. Linting is the process of checking your code against a set of recommendations. The Bicep linter looks at your file and verifies you've followed best practices for maintainability, correctness, flexibility and extensibility. A linter contains a pre-defined set of rules for checking rules in each of these categories. Some example linter rules include:
+
+- **Unused parameters.** To reduce confusion in your template, it's good practice to delete any parameters that are defined but not used. This check finds any parameters that aren't used anywhere in the Bicep file. By eliminating unused parameters, you also make it easier to deploy your template because you don't have to provide unnecessary values.
+- **String interpolation.** The linter checks if your file uses the `concat()` function instead of Bicep string interpolation. String interpolation makes your Bicep files more readable.
+- **Defaults for secure parameters.** Avoid setting default values for secure parameters. This is a bad practice since it will give the secure parameter a human-readable value, and people might not change it before they deploy.
+
+The Bicep linter runs automatically when you use the Bicep tooling. Every time you build a Bicep file, the linter checks it against its best practices. This happens automatically when you deploy a Bicep file to Azure. But in a pipeline, you typically want to run the validation and linting steps before you deploy the file. So, you can tell Bicep to verify your file by using the `bicep build` command:
 
 ```cli
 bicep build main.bicep
 ```
 
-Running the build command checks your Bicep template against a set of pre-defined rules. 
-
 > [!NOTE]
 > When you run the `bicep build` command, Bicep also transpiles your Bicep code to a JSON ARM template. Often, you don't need the file it outputs, so you can ignore it.
 
-Some example linter rules include:
+## Customize the linter's behavior
 
-- **no-hardcoded-env-urls**: The linter checks whether you are using hardcoded environment urls. These are urls like "management.azure.com" or "database.windows.net". In case any of these urls are hard coded in your Bicep template, the linter will emit a warning. A better practice is to use the environment() function in your Bicep template. The 2 mentioned urls are available as environment().resourceManager and environment().sqlServerHostname respectively. 
-- **no-unused-params**: The linter checks for any unused parameters. In case there are unused parameters, the linter will emit a warning. To reduce confusion in your template, delete any parameters that are defined but not used. This test finds any parameters that aren't used anywhere in the template. Eliminating unused parameters also makes it easier to deploy your template because you don't have to provide unnecessary values.
-- **no-unused-vars**: The linter checks for any unused variables. To reduce confusion in your template, delete any variables that are defined but not used. 
-- **prefer-interpolation**: The linter emits a warning in case it sees usage of the concat function instead of string interpolation. Using string interpolation will lead to a more readable Bicep template. 
-- **secure-parameter-default**: The linter emits a warning in case you set a default value to a secure parameter. This is a bad practice since it will give the secure parameter a human-readable value. You are allowed to give the secure parameter an empty string value or asign a GUID to it by using the newGuid() function.
-- **simplify-interpolation**: In case you are using string interpolation to reference a single parameter or value, the linter will emit a warning. Using the parameter or variable directly, without the string interpolation will make the template better readable. 
+<!-- TODO here down -->
 
 By default the linter emits a warning for all of the above rules. You can change this default behavior by adding a *bicepconfig.json* file to the same directory that holds your templates. In this file you could then define to emit an error on each of the above rule violations and hence make the linter more strict: 
 
