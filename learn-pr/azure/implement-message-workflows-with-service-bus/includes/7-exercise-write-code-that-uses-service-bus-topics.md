@@ -122,7 +122,7 @@ To complete the component that sends messages about sales performance, follow th
 
 ## Send a message to the topic
 
-1. To run the component that sends a message about a sale, run the following command in the Cloud Shell.
+1. To run the component that sends a message about a sale, run the following command in Cloud Shell.
 
     ```bash
     dotnet run -p performancemessagesender

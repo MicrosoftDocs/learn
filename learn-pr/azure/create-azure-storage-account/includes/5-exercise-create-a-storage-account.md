@@ -14,7 +14,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
 
 1. On the Azure portal menu, or from the **Home** page, under **Azure services**, select **Storage accounts**. The **Storage accounts** pane appears.
 
-1. Tin the toolbar, select **Create.** The **Create a storage account** pane appears.
+1. On the menu bar, select **Create.** The **Create a storage account** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -46,6 +46,7 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     | Access tier | *Hot*. This setting is only used for Blob storage. The *Hot* access tier is ideal for frequently accessed data; the *Cool* access tier is better for infrequently accessed data. This setting only sets the _default_ value. When you create a Blob, you can set a different value for the data. In our case, we want the videos to load quickly, so we'll use the high-performance option for our blobs. |
     | **Azure Files**| |
     | Enable large file shares | *Uncheck*. Large file shares provide support up to a 100 TiB, however this type of storage account can't convert to a Geo-redundant storage offering, and upgrades are permanent. |
+    | **Tables and Queues** |
     | Enable support for customer-managed keys | *Uncheck*. Not necessary for this implementation. |
 
     > [!WARNING]
@@ -65,14 +66,14 @@ To fulfill these requirements, you decide to buffer uploaded content in an Azure
     | Setting | Value |
     |---|---|
     | **Recovery**| |
-    | Enable point-in-time restore for containers | *Uncheck*. Not necessary for this implementation. | 
+    | Enable point-in-time restore for containers | *Uncheck*. Not necessary for this implementation. |
     | Enable soft delete for blobs | *Uncheck*. Soft delete lets you recover blob data in cases where blobs or blob snapshots are deleted accidentally or overwritten. |
-    | Enable soft delete for containers | *Uncheck*. Soft delete lets you recover your containers that deleted accidentally. | 
+    | Enable soft delete for containers | *Uncheck*. Soft delete lets you recover your containers that deleted accidentally. |
     | Enable soft delete for file shares | *Uncheck*. File share soft delete lets you recover your blob data more easily at the folder level. |
  | **Tracking**| |
     | Enable versioning for blobs | *Uncheck*. Not necessary for this implementation. | 
     | Enable blob change feed | *Uncheck*. Not necessary for this implementation. |
-    
+
 1. Select **Next : Tags**. Here, you can associate key/value pairs to the account for your categorization to determine if a feature is available to any Azure resource.
 
 1. Select **Review + create** to review the settings. This will do a quick validation of your options to make sure all the required fields are selected. If there are issues, they'll be reported here.
