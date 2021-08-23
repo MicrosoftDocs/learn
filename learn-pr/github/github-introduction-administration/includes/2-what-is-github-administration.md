@@ -51,7 +51,7 @@ We recommend setting up only one organization for your users and repositories. I
 
 ## Administration at enterprise level
 
-:::image type="content" source="../media/avocado_corp.png" alt-text="Enterprise screen":::
+:::image type="content" source="../media/avocado-corp.png" alt-text="Enterprise screen":::
 
 Enterprise accounts include GitHub Enterprise Cloud and Enterprise Server instances and enable owners to centrally manage policy and billing for multiple organizations.
 

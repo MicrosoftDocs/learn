@@ -34,7 +34,7 @@ An organization owner can also promote any member of the organization to be a ma
 
 To audit access to a repository that you administer, you can view a combined list of teams and users with access to your repository in your settings:
 
-:::image type="content" source="../media/audit_access.png" alt-text="Manage access screen":::
+:::image type="content" source="../media/audit-access.png" alt-text="Manage access screen":::
 
 ## Organization permission levels
 
@@ -48,7 +48,7 @@ There are three levels of permissions at the organizational level:
 
 In addition to these 3 levels, you can also set default permissions for all members of your organization:
 
-:::image type="content" source="../media/org_base_permissions.png" alt-text="Member privileges screen with base permissions dropdown displayed":::
+:::image type="content" source="../media/org-base-permissions.png" alt-text="Member privileges screen with base permissions dropdown displayed":::
 
 For improved management and security, you might also consider giving default read permissions to all members of your organization and adjusting their access to repositories on a case-by-case basis. On the other hand, if you have a relatively small organization (with a low number of users and/or low number of repositories) and trust everyone with pushing changes to any repository, you might want to give all members of your organization write permissions by default.
 
@@ -66,6 +66,6 @@ There are three levels of permission at the enterprise level:
 
 In addition to these 3 levels, you can also set a policy of default repository permissions across all your organizations:
 
-:::image type="content" source="../media/enterprise_base_permissions.png" alt-text="Policies screen with default permissions dropdown displayed":::
+:::image type="content" source="../media/enterprise-base-permissions.png" alt-text="Policies screen with default permissions dropdown displayed":::
 
 For improved management and security, you might want to give default read permissions to all members of your enterprise and adjust their access to repositories on a case-by-case basis. On the other hand, if your enterprise has a single, relatively small organization (with a low number of users and/or low number of repositories) and you trust everyone with pushing changes to any repository, you might want to give all members of your enterprise write permissions by default.
