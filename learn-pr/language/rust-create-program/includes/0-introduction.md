@@ -5,7 +5,7 @@ In this module, we learn common concepts in programming languages, and discover 
 
 The [Rust Playground][RustPlay] is a browser interface to the Rust compiler. You can use the Playground to experiment writing Rust code before you install the language locally, or when you might not have the compiler available. Throughout this course, we'll give Playground links to the example code and exercises. You can interact with the code, even if you don't have the Rust toolchain available at the moment.
 
-All code that runs on the Rust Playground can also compile and run in your local development environment. Don't be discouraged to interact with the Rust compiler from your computer. You can learn more about the Rust Playground in the [What is Rust?](Rust-intro) module.
+All code that runs on the Rust Playground can also compile and run in your local development environment. Don't be discouraged to interact with the Rust compiler from your computer. You can learn more about the Rust Playground in the [What is Rust?][Rust-intro] module.
 
 
 ## Learning objectives

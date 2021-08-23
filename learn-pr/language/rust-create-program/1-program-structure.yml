@@ -40,7 +40,7 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. The keyword to use is a shorter form of the abbreviation `func`."
 
-  - content: "What's the output from this call to the `println!` macro?<br> |
+  - content: "What's the output from this call to the `println!` macro?<br>
              `println!(\"{} is number. {} is a word.\", 1, \"Two\");`"
     choices:
     - content: "1 Two"
