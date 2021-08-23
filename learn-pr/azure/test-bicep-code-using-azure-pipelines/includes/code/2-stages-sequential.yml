@@ -3,14 +3,10 @@ stages:
   jobs:
   - job: Test
 
-- stage: DeployToPreProduction
-  jobs:
-  - job: DeployToPreProduction
-
-- stage: DeployToProductionUS
+- stage: DeployUS
   jobs: 
-  - job: DeployToProductionUS
+  - job: DeployUS
 
-- stage: DeployToProductionEurope
+- stage: DeployEurope
   jobs: 
-  - job: DeployToProductionEurope
+  - job: DeployEurope

@@ -2,17 +2,12 @@ stages:
 - stage: Test
   jobs:
   - job: Test
-
-- stage: DeployToPreProduction
-  jobs:
-  - job: DeployToPreProduction
-
-- stage: DeployToProduction
-  dependsOn: DeployToPreProduction
+- stage: Deploy
+  dependsOn: Test
   jobs: 
-  - job: DeployToProduction
+  - job: Deploy
 
 - stage: Rollback
-  condition: failed('DeployToProduction')
+  condition: failed('Deploy')
   jobs: 
   - job: Rollback

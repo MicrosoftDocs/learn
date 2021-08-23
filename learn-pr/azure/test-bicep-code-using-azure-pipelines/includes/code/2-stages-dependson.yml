@@ -3,16 +3,12 @@ stages:
   jobs:
   - job: Test
 
-- stage: DeployToPreProduction
-  jobs:
-  - job: DeployToPreProduction
-
-- stage: DeployToProductionUS
-  dependsOn: DeployToPreProduction
+- stage: DeployUS
+  dependsOn: Test
   jobs: 
-  - job: DeployToProductionUS
+  - job: DeployUS
 
-- stage: DeployToProductionEurope
-  dependsOn: DeployToPreProduction
+- stage: DeployEurope
+  dependsOn: Test
   jobs: 
-  - job: DeployToProductionEurope
+  - job: DeployEurope
