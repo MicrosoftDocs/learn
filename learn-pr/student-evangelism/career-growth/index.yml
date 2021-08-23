@@ -3,10 +3,11 @@ uid: learn.career-growth
 metadata:
   title: Grow your Career
   description: As a new employee in tech, discover ways to grow your career from the inside
-  ms.date: 4/15/2021
+  ms.date: 08/23/2021
   author: jlooper
   ms.author: jelooper
-  ms.topic: interactive-tutorial # do we need ms.topic?
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: career-growth
 summary: You've just landed your first job in tech. Now what? Learn strategies to growth-hack your career inside your company.
 abstract: | 
@@ -17,7 +18,8 @@ abstract: |
 prerequisites: | 
   - Learn module on Career Skilling
   - Learn module on Interviewing
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/generic-badge.svg
+hidden: true
 levels:
   - beginner
 roles:
