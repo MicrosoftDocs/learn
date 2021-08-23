@@ -1,5 +1,3 @@
-# How does GitHub authentication work?
-
 In the previous unit, you learned about typical administration tasks at the team, organization, and enterprise level. In this unit, you will deep dive into one of the most common administrative tasks performed by organization owners: setting up and controlling users' authentication to GitHub.
 
 ## GitHub's authentication options
@@ -34,7 +32,7 @@ GitHub also offers the following additional security options.
 
 ### Multi-factor authentication
 
-:::image type="content" source="../media/2FA.png" alt-text="Two-factor authentication screen":::
+:::image type="content" source="../media/2-factor-authentication.png" alt-text="Two-factor authentication screen":::
 
 Multi-factor authentication (MFA), also known as two-factor authentication (2FA), is an extra layer of security used when logging into websites or apps. With 2FA, users have to log in with their username and password and provide another form of authentication that only they have access to.
 

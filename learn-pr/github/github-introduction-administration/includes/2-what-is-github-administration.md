@@ -1,5 +1,3 @@
-# What is GitHub administration?
-
 As a GitHub administrator, your goal is to keep everything working smoothly for your users. In this unit, you'll learn about the different levels in the GitHub organizational hierarchy and the administration tasks associated with each level.
 
 ## Administration at team level

@@ -1,5 +1,3 @@
-# Summary
-
 The goal of this module was to help you develop a mental model of the roles and responsibilities of users who perform GitHub administrative tasks for companies. Whether it is setting up authentication schemes and enforcing organization or enterprise-wide policies, or designing cascading structures that represent the natural groupings within the company for the purpose of restricting access to appropriate repositories, GitHub supplies administrators with the tools they need to flexibly control and protect their company's GitHub usage.
 
 Hierarchical levels like teams, organizations, and enterprises enable ways of setting up and controlling authentication and other security measures. Permission levels allow for fine-grained control of specific tasks. Repository permissions can be applied to individual users or teams of users, and these permissions cascade down to child teams.

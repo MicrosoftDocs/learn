@@ -1,5 +1,3 @@
-# How do GitHub permissions work?
-
 In the previous unit, you explored the different ways that users can authenticate themselves with GitHub. In this unit, you'll learn about permissions for each hierarchical level:
 
 - Repository permissions 
