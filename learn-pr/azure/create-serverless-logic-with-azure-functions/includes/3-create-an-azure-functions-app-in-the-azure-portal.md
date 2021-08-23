@@ -40,7 +40,7 @@ Let's create a function app in the Azure portal.
     | --- | --- |
     | **Project Details** |
     | Subscription | Concierge Subscription |
-    | Resource Group | **<rgn>[sandbox resource group name]</rgn>** |
+    | Resource Group | From the dropdown list, select **<rgn>[sandbox resource group name]</rgn>** |
     | **Instance Details** |
     | Function App name  | Enter a globally unique app name. The function app name will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the seven (7) x's can be replaced with your initials and your birth year. If this isn't globally unique, try any other combination. Valid characters are a-z, 0-9 and - |
     | Publish  | Code |
@@ -72,7 +72,7 @@ Let's create a function app in the Azure portal.
     | --- | --- |
     | **Project Details** |
     | Subscription | Concierge Subscription |
-    | Resource Group | **<rgn>[sandbox resource group name]</rgn>** |
+    | Resource Group | From the dropdown list, select **<rgn>[sandbox resource group name]</rgn>** |
     | **Instance Details** |
     | Function App name  | Enter a globally unique app name. The function app name will serve as the base URL of your service. For example, you can name it **escalator-functions-xxxxxxx**, where the seven (7) x's can be replaced with your initials and your birth year. If this isn't globally unique, try any other combination. Valid characters are a-z, 0-9 and - |
     | Publish  | Code |
