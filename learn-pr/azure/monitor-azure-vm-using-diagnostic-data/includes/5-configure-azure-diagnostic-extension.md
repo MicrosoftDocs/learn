@@ -6,9 +6,9 @@ In this unit, you'll see how to install the Azure Monitor Agent to monitor the h
 
 ## Install the Azure Monitor Agent using Data Collection Rules
 
-The Azure Monitor Agent allows you to collect real-time performance metrics from the guest operating system, along with log events, and store the results in Azure Monitor Metrics and Azure Monitor Logs.
+The Azure Monitor Agent allows you to collect near real-time performance metrics from the guest operating system, along with log events, and store the results in Azure Monitor Metrics and Azure Monitor Logs.
 
-If you've already created the VM, the easiest way to add the agent is by going to **Azure Monitor, Data Collection Rules** to create a new Data Collection Rule and add the VM as a data source. Data collection rules define the scope of VMs where data will be captured, the metrics or logs to be collected, and the destination(s) where the data will be stored.
+If you've already created the VM, the easiest way to add the agent is by going to **Azure Monitor, Data Collection Rules** to create a new Data Collection Rule and add the VM as a resource. Data collection rules define the scope of VMs where data will be captured, the metrics or logs to be collected, and the destination(s) where the data will be stored.
 
 ![Screenshot of the Data Collection Rules Landing Page with rule](../media/5-dcr-landing-page.png)
 
@@ -16,7 +16,7 @@ Resources allow you to select which VM(s) to collect data from for monitoring. D
 
 ![Screenshot of the Data Collection Rules definition](../media/5-dcr-definition.png)
 
-Performance Counters to be collected can be selected from a basic or customized and filtered from an expanded list.
+Performance Counters to be collected can be selected from a basic set or customized and filtered from an expanded list.
 
 ![Screenshot of the Data Collection Rules Data Sources](../media/5-dcr-data-sources.png)
 

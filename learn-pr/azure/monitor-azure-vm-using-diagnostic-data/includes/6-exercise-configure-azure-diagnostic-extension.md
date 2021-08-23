@@ -29,7 +29,7 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
     ![Screenshot of the Data Collection Rules Performance Counters Destination](../media/6-add-dcr-destinations.png)
 
-    Confirm your settings for the Collect and deliver step of the wizard.
+    Confirm your settings include a Destination Type of Azure Monitor Metrics for the Collect and deliver step of the wizard.
 
 1. **Review and create** your new data collection rule. This will install the Azure Monitor Agent on the selected VM, and start data collection using the parameters defined in the rule created above.
 
@@ -47,8 +47,8 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
    |Field     |Value |
    |---------|---------|
-   |Metric Namespace    |   Guest (classic) |
-   |Metric    |   Network in guest OS  |
+   |Metric Namespace    |   azure.vm.linux.guestmetrics |
+   |Metric    |   net/bytes_total  |
    |Aggregation    |    Max     |
 
 1. Select the **Finish editing metric** check mark.
@@ -73,8 +73,8 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
    |Field     |Value |
    |---------|---------|
-   |Metric Namespace    |   Guest (classic)      |
-   |Metric     |   Mem. percent available  |
+   |Metric Namespace    |   azure.vm.linux.guestmetrics      |
+   |Metric     |   mem/available_percent  |
    |Aggregation    |    Max     |
 
 1. Select the **Finish editing metric** check mark.
@@ -93,8 +93,8 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
    |Field     |Value |
    |---------|---------|
-   |Metric Namespace    |   Guest (classic)   |
-   |Metric     |   CPU percentage guest OS   |
+   |Metric Namespace    |   azure.vm.linux.guestmetrics  |
+   |Metric     |   cpu/usage_active  |
    |Aggregation    |    Max     |
 
 1. Select the **Finish editing metric** check mark.
@@ -113,4 +113,4 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
 1. Explore the dashboard. Try changing the **UTC Time** range to **Past 30 minutes**.
 
-    ![Screenshot that shows the new KPI dashboard with the three graphs created earlier](../media/6-explore-kpi-dashboard.png)
+    ![Screenshot that shows the new KPI dashboard with the three graphs created earlier](../media/6-kpi-dashboard.png)
