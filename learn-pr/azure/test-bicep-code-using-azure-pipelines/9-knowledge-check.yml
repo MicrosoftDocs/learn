@@ -12,60 +12,52 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
+  [!include[](includes/9-knowledge-check.md)]
 quiz:
   questions:
-  - content: ""
+  - content: In which order will the stages be run?
     choices:
-    - content: ""
+    - content: TODO
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: TODO
+    - content: TODO
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: TODO
+    - content: TODO
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: TODO
+  - content: |
+      Consider the pipeline above. Currently, the pipeline deploys to the test environment, but you want to manually verify the state of the deployment before deploying to the test environment. What's the best way to achieve this?
     choices:
-    - content: ""
+    - content: Add an approval gate to the service connection used by the test environment.
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: Correct. TODO
+    - content: Monitor the pipeline execution. Press the **Stop** button just before the deployment to the test environment begins.
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: Incorrect. TODO
+    - content: Add a variable to pipeline named **StopBeforeTestDeploy** with a value of **true**.
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: Incorrect. TODO
+  - content: |
+      You are designing a pipeline and want to verify the Bicep file is valid before you deploy it. Which of these should you do?
     choices:
-    - content: ""
+    - content: Run `az bicep check`.
+      isCorrect: false
+      explanation: Incorrect. TODO
+    - content: Deploy the Bicep file and wait to see if there are errors.
+      isCorrect: false
+      explanation: Incorrect. TODO
+    - content: Run `az deployment group validate`.
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: Correct. TODO
+  - content: Which of these statements is true?
     choices:
-    - content: ""
+    - content: Every linting warning in Bicep should cause the pipeline to stop.
+      isCorrect: false
+      explanation: Incorrect. TODO
+    - content: A template with no linting warnings or errors is guaranteed to deploy successfully.
+      isCorrect: false
+      explanation: Incorrect. TODO
+    - content: Linting ensures that your Bicep file meets a minimum code style quality level.
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: Correct. TODO
