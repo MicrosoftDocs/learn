@@ -93,7 +93,7 @@ Context switching demonstrates GitHub's capability to enable usage management ac
 
 ### Manage licenses across organizations
 
-An Organization owner seeking to manage and monitor the amount of seats licensed to their organization can click on their profile photo and then navigate to *Billing & plans*. 
+An Organization owner seeking to manage and monitor the number of seats licensed to their organization can click on their profile photo and then navigate to *Billing & plans*. 
 
 As it is possible to have multiple organizations, the user interface requires the organization owner to select the organization for which they would like to view licensing. 
 
