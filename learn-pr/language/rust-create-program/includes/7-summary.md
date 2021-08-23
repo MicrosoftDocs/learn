@@ -56,6 +56,7 @@ Visit the following links to learn more about some of the items we explored in t
 [Rust-int]: https://doc.rust-lang.org/book/ch03-02-data-types.html#integer-types?azure-portal=true
 [Rust-string]: https://doc.rust-lang.org/book/ch08-02-strings.html?azure-portal=true
 [Rust-struct]: https://doc.rust-lang.org/book/ch05-01-defining-structs.html?azure-portal=true
+[Rust-tuple]: https://doc.rust-lang.org/book/ch03-02-data-types.html#the-tuple-type?azure-portal=true
 
 [Rust-vars]: https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html?azure-portal=true
 [Rust-func]: https://doc.rust-lang.org/book/ch03-03-how-functions-work.html?azure-portal=true
