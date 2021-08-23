@@ -10,7 +10,7 @@ Administrators can allow users to continue using the default username and passwo
 
 ### Personal access tokens
 
-:::image type="content" source="../media/PAT.png" alt-text="Personal access token screen":::
+:::image type="content" source="../media/personal-access-token.png" alt-text="Screenshot of personal access token screen.":::
 
 Personal access tokens (PATs) are an alternative to using passwords for authentication to GitHub when using the GitHub API or the command line. Users generate a token via the GitHub's settings option, and tie the token permissions to a repository or organization. When users interact with GitHub using the git command-line tool, they can enter the token information when they're asked for their username and password.
 
@@ -32,7 +32,7 @@ GitHub also offers the following additional security options.
 
 ### Multi-factor authentication
 
-:::image type="content" source="../media/2-factor-authentication.png" alt-text="Two-factor authentication screen":::
+:::image type="content" source="../media/2-factor-authentication.png" alt-text="Screenshot of two-factor authentication screen.":::
 
 Multi-factor authentication (MFA), also known as two-factor authentication (2FA), is an extra layer of security used when logging into websites or apps. With 2FA, users have to log in with their username and password and provide another form of authentication that only they have access to.
 

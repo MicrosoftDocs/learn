@@ -2,11 +2,11 @@ As a GitHub administrator, your goal is to keep everything working smoothly for 
 
 ## Administration at team level
 
-:::image type="content" source="../media/teams.png" alt-text="Organization screen with Teams tab highlighted":::
+:::image type="content" source="../media/teams.png" alt-text="Screenshot of organization screen with Teams tab highlighted.":::
 
 In GitHub, each user is an organization member that can be added to a team. You can create teams in your organization with cascading access permissions and mentions to reflect your company or group's structure. Teams are useful for refining repository permissions on a more granular level and enabling communication and notification between team members.
 
-Additionally, GitHub allows you to sync your teams with identity provider (IdP) groups such as Azure Active Directory (AD). When you synchronize a GitHub team with an Azure AD, changes to the AD group are automatically reflected on GitHub, reducing the need for manual updates and custom scripts. You can use an Azure AD with team synchronization to manage administrative tasks such as onboarding new members, granting new permissions for movements within an organization, and removing member access from the organization.
+Additionally, GitHub allows you to sync your teams with identity provider (IdP) groups such as Azure Active Directory (AD). When you synchronize a GitHub team with an Azure AD, changes to the Azure AD group are automatically reflected on GitHub, reducing the need for manual updates and custom scripts. You can use an Azure AD with team synchronization to manage administrative tasks such as onboarding new members, granting new permissions for movements within an organization, and removing member access from the organization.
 
 Members of a team with *team maintainer* or repository *admin* permissions can:
 
@@ -49,7 +49,7 @@ We recommend setting up only one organization for your users and repositories. I
 
 ## Administration at enterprise level
 
-:::image type="content" source="../media/avocado-corp.png" alt-text="Enterprise screen":::
+:::image type="content" source="../media/avocado-corp.png" alt-text="Screenshot of enterprise screen.":::
 
 Enterprise accounts include GitHub Enterprise Cloud and Enterprise Server instances and enable owners to centrally manage policy and billing for multiple organizations.
 
@@ -66,4 +66,4 @@ At the enterprise level, members of an enterprise with the *owner* permissions c
 
 This link provides more information about the topics covered in this module:
 
-[GitHub documentation on nested teams](https://docs.github.com/en/organizations/organizing-members-into-teams/about-teams#nested-teams)
+[GitHub documentation on nested teams](https://docs.github.com/organizations/organizing-members-into-teams/about-teams#nested-teams)
