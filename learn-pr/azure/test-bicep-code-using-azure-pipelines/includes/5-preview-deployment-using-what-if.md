@@ -1,76 +1,45 @@
-You've now learned about pipeline stages, how you can add a pipeline stage to validate your Bicep code. The next step in building confidence with your deployment is to add another stage to check what will actually be created, updated and deleted in your environment before you actually run a deployment. 
+You've now learned about pipeline stages, and how you can add a pipeline stage to validate your Bicep code. The next step in building confidence with your deployment is to add another stage to check what will actually be created, updated and deleted in your environment your deployment starts. In this unit you'll learn about using what-if command in a pipeline, and adding approvals to verify its output. 
 
-In this unit you will learn about what-if deployment and stage approvals. 
+## The what-if operation
 
-## The importance of verifying the deployment actions, especially for production 
+A Bicep file describes the state you want your Azure environment to be in at the end of a deployment. When you deploy your Bicep template, Azure Resource Manager changes your Azure environment to match the state that's described in your Bicep template. When you deploy a Bicep file, it can result in new resources being deployed into your environment, or existing resources being updated. When you run a deployment in complete mode, it can even result in existing resources to be deleted. 
 
-A Bicep file describes the state you want your environment to be in at the completion of a deployment. When you deploy your Bicep template, Azure Resource Manager changes your Azure environment to match the state that's described in your Bicep template. When you deploy a Bicep file, it can result in new resources being deployed into your environment, or existing resources being updated. When you run a deployment in complete mode, it can even result in existing resources to be deleted. 
+Anytime resources are created, updated or deleted, there's a risk that things could change in a way you didn't expect. It's a good practice to add an extra step to verify what exactly will be created, updated and deleted. This adds a lot of value to your automation process. And when you're deploying to a production environment, it's particularly important to confirm any changes that will happen to your environment. 
 
-Anytime resources are created, updated or deleted , there's a potential risk that things are changing in a way you didn't expect. It's a good practice to add an extra step to verify what exactly will be created, updated and deleted. This adds a lot of value to your automation process. And when you're deploying to a production environment, it's particularly important to confirm any changes that will happen to your environment. 
+Resource Manager provides the what-if operation, which you can run on your Bicep file within your pipeline stage:
 
-Resource Manager provides the what-if operation, which you can run on your Bicep file: 
+TODO image
 
-```cli
-az deployment group what-if --resource-group RESOURCEGROUP_NAME --template-file deploy/main.bicep -p environmentType=Test
-```
+You use the `az deployment group what-if` command from within your pipeline definition to run the what-if step:
+
+:::code language="yaml" source="code/5-what-if.yml" highlight="7-9" :::
 
 The what-if operation doesn't make any changes to your environment. Instead, it describes the resources that will get created, the properties of resources that will be updated, and lists the resources that will be deleted: 
 
-```text
-Resource and property changes are indicated with these symbols:
-  - Delete
-  + Create
-  ~ Modify
+> [!NOTE]
+> The command gives you plain text output. If you use the `--no-pretty-print` switch, the output will be a JSON object that your can further automate on if needed. In this module, you'll work with the plain text output.
 
-The deployment will update the following scope:
+## Stage checks and approvals
 
-Scope: /subscriptions/./resourceGroups/ExampleGroup
+After you see the output of the what-if operation, you can determine whether to continue on to the actual deployment. In your deployment pipeline, you achieve this by using *approvals and checks*. Approvals and checks can control whether a certain stage should run or not. Azure Pipelines provides many different kinds of checks, which you can use to verify many different conditions before a pipeline stage begins. An approval is a type of check that requires a human provide manual approval.
 
-  ~ Microsoft.Network/virtualNetworks/vnet-001 [2018-10-01]
-    - tags.Owner: "Team A"
-    ~ properties.addressSpace.addressPrefixes: [
-      - 0: "10.0.0.0/16"
-      + 0: "10.0.0.0/15"
-      ]
-    ~ properties.subnets: [
-      - 0:
-
-          name:                     "subnet001"
-          properties.addressPrefix: "10.0.0.0/24"
-
-      ]
-
-Resource changes: 1 to modify.
-```
+Recall that a *service connection* stores the credentials the pipeline uses to access your Azure environment. The owner of a service connection can define checks that must be satisfied before the service connection can be used. These checks apply to any pipeline stage that uses the service connection. For example, you can configure a service connection to require a manual approval check. This means that a pipeline can only use the service connection after a specified user has reviewed the pipeline's logs up to that point, and has approved the continuing execution.
 
 > [!NOTE]
-> The command will give you plain text output. If you use the `--no-pretty-print` switch, the output will be a JSON object that your can further automate on if needed. 
+> Agent pools can also have checks configured on them. However, we don't use agent pool approvals in this module. There are other resources in pipelines that can use checks as well, including *environments*, but these are out of scope for this module.
 
-There are 6 different types of changes that the `what-if` operation reports on: 
+Because checks are defined on the resources that a pipeline uses, the editors of the pipeline YAML file cannot remove or add these approvals and checks. Only the administrators of the resources can manage the approvals and checks on them. In many organizations, the owner of a service connection is the person responsible for the environment it deploys to, so this helps to ensure the right people are involved in the deployment process.
 
-- **Create**: The resource does not currently exist and will be created.
-- **Delete**: The resource already exists, but it not present in the Bicep template and will be deleted. You will only get this change type in case you add the `--mode complete` switch to the `what-if` operation.
-- **Ignore**: The resource exists, but is not present in your Bicep template. The resource won't be deployed or modified.
-- **NoChange**: The resource exists both in your Azure environment and is defined in your Bicep template. Both are the same and hence no change is needed. 
-- **Modify**: The resource exists both in your Azure environment and is defined in your Bicep template. However the property values between the two are different, hence the resource properties will be updated. 
-- **Deploy**: The resource exists both in your Azure environment and is defined in your Bicep template. However there is not enough information to determine what will change, hence the tool is reporting a probable redeploy. 
+### How do checks and approvals work?
 
-## Stage approvals
-
-After you see the output of the `what-if` operation for a specific environment, you can determine whether to continue to the actual deployment. In your deployment pipeline, you achieve this by using approvals and checks. Approvals and checks can control whether a certain stage should run or not.
-
-In Azure Pipelines, a *service connection* stores the credentials the pipeline uses to access your Azure environment. The owner of a service connection can define approvals and checks that must be satisfied before the service connection can be used. These approvals and checks apply to the pipeline stage that uses the service connection.
-
-For example, you can configure a service connection to include a manual approval check. This means that a pipeline can only use the service connection after a specified user or users have reviewed the changes being deployed and approved it.
-
-Before a stage is allowed to run, all approvals and checks that exist on the resources that it uses need to be satisfied. These approvals and checks are reevaluated at a certain interval. In case they are not satisfied, the stage will not execute. After a configurable timeout period expires, the stage will fail.
+When Azure Pipelines is about to run a pipeline stage, it looks at all of the resources that stage uses. These include service connections and agent pools. These resources can have checks that need to be satisfied. An approval is one type of check. When you configure an approval check, you assign one or more users who need to approve the continuation of your pipeline.
 
 > [!NOTE]
-> Agent pools can also have approvals and checks configured on them. However, we don't use agent pool approvals in this module. There are other resources in pipelines that can use approvals and checks as well, but these are out of scope for this module. 
+> Azure Pipelines provides other types of check, too. For example, you can call an API to run some custom logic, control the business hours during which a stage can run, and even query Azure Monitor to ensure a deployment has succeeded. In this module we only discuss approval checks, but we provide links to more information about checks in the summary.
 
-Since approvals and checks are defined on the resources that a pipeline uses, editors of the pipeline YAML file cannot remove or add these approvals and checks. Only the administrators of the resources can manage the approvals and checks on them. 
+After your pipeline begins and reaches a stage that requires an approval check, the pipeline execution pauses. All of the users who have been designated as approvers are sent a message in Azure DevOps and by email. They can inspect the pipeline result, including the changes that the what-if operation detects. Based on the information they see, they then approve or decline the change. If they approve the change, the pipeline resumes. If they decline, or if they don't respond within a configurable timeout period, the stage fails.
 
-Azure Pipelines supports several different types of approvals and checks. In this module, we only consider approval checks. With an approval check you can assign one or more users who need to approve or decline the continuation of your pipeline. When your pipeline executes and reaches the stage that requires an approval check, execution will halt. All of the users who have been designated as approvers will get a message, both in Azure DevOps and by email. They can inspect the pipeline result, including the changes that the what-if operation detects. Based on the information they see, they then approve or decline the change. If they approve the change, the pipeline will resume execution. If they decline, the stage fails.
+:::image type="content" source="../media/5-stages-approval-check.png" alt-text="TODO" border="false":::
 
 > [!NOTE]
-> This illustrates the importance of planning your service connections, and service principals, properly. If you need to add an approval check for deployments to a production environment but not to a test environment, it's very important to ensure the two environments use different service connections so that they can have different approval checks configured.
+> This illustrates the importance of properly planning your service connections and service principals. If you need to add an approval check for deployments to a production environment but not to a test environment, it's very important to ensure the two environments use different service connections so that they can have different approval checks configured. You'll learn more about deploying to multiple environments in a future module.

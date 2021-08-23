@@ -1,0 +1,9 @@
+stages:
+- stage: Preview
+  jobs: 
+  - job: Preview
+    steps:
+      - script: |
+          az deployment group what-if \
+            --resource-group $(ResourceGroupName) \
+            --template-file deploy/main.bicep

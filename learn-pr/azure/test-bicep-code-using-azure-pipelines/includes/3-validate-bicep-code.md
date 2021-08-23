@@ -27,7 +27,11 @@ bicep build main.bicep
 > [!NOTE]
 > When you run the `bicep build` command, Bicep also transpiles your Bicep code to a JSON ARM template. Often, you don't need the file it outputs, so you can ignore it.
 
-Because you would like your Bicep templates to be linted each time anyone checks in code to your repository, you can add a validation job to your pipeline: 
+Because you would like your Bicep templates to be linted each time anyone checks in code to your repository, you can add a validation job to your pipeline:
+
+:::image type="content" source="../media/3-stages-lint.png" alt-text="TODO" border="false":::
+
+You express this in your pipeline YAML file like this:
 
 :::code language="yaml" source="code/3-lint.yml" highlight="7" :::
 
@@ -44,7 +48,11 @@ You also should check whether your Bicep template is likely to deploy to your Az
 - Are the names you've specified for your Bicep resources already taken?
 - Are the regions you're deploying your resources to valid?
 
-Preflight validation requires communication with Azure, but it doesn't actually deploy any resources. You use the `az deployment group validate` command to submit a Bicep file for preflight validation:
+Preflight validation requires communication with Azure, but it doesn't actually deploy any resources.
+
+:::image type="content" source="../media/3-stages-preflight.png" alt-text="TODO" border="false":::
+
+You use the `az deployment group validate` command to submit a Bicep file for preflight validation:
 
 :::code language="yaml" source="code/3-preflight.yml" highlight="7-9" :::
 
