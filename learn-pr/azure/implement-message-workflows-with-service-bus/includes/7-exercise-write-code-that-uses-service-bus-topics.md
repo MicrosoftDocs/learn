@@ -130,7 +130,7 @@ To complete the component that sends messages about sales performance, follow th
 
     As the program executes, you'll see notifications in the Azure Cloud Shell indicating that it's sending a message. Each time you run the app, one more message will be added to the topic and each subscriber will receive a copy.
 
-1. When you see **Message was sent successfully**, run the following command to see how many messages are in the Americas subscription. Remember to replace \namespace-name\> with your Service Bus Namespace.
+1. When you see **Message was sent successfully**, run the following command to see how many messages are in the Americas subscription. Remember to replace \<namespace-name\> with your Service Bus Namespace.
 
     ```azurecli
     az servicebus topic subscription show \
