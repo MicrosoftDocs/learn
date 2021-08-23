@@ -20,11 +20,13 @@ Stages run in a sequence. You can control how and when each stage runs. For exam
 
 ## Shifting left
 
-CI stages also often get linked to pull requests in Azure DevOps. Pull requests typically represent changes that someone on your team wants to make to the code on your main branch.
+By using stages, you can verify the quality of your code before you deploy it. This is sometimes called *shifting left*. Consider a timeline of the activities you perform when you write code, starting from the planning and design phases, through to the building and testing phases, to when you finally deploy and then have to support your code:
 
-It's helpful to run your CI stages during pull request review. This acts as a check to ensure that the code still builds and tests successfully, even with the proposed changes. If the check succeeds, you have some confidence that the change won't cause problems when it's merged to your main branch. If the check fails, you know there's more work to do to before the pull request is ready to merge.
+:::image type="content" source="../media/2-shift-left.png" alt-text="TODO" border="false":::
 
-This is sometimes called *shifting left*. Imagine a timeline moving from left to right. The earlier in the process - the closer to the left of the timeline - that you find errors, the easier and quicker it is to fix them. The later in your process that you catch an error, the harder and more complicated it is to fix. 
+It's a well-understood rule in software development that the earlier in the process that you find errors - the closer to the left of the timeline - the easier and quicker it is to fix them. The later in your process that you catch an error, the harder and more complicated it is to fix.
+
+For this reason, CI stages also often gets linked to pull requests in Azure DevOps. Pull requests typically represent changes that someone on your team wants to make to the code on your main branch. It's helpful to run your CI stages during the pull request review process. This acts as a check to ensure that the code still builds and tests successfully, even with the proposed changes. If the check succeeds, you have some confidence that the change won't cause problems when it's merged to your main branch. If the check fails, you know there's more work to do to before the pull request is ready to merge.
 
 > [!TIP]
 > Automated checks and tests in pull requests and other pipelines are only as effective as the tests you write. So, it's important that you consider the things you need to test and the steps you need to perform to be confident that your deployment is OK.
