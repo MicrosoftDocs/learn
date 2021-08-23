@@ -13,7 +13,7 @@ Have you ever had something explained to you with terms such as 'simply' or 'jus
 
 If you're afraid of being annoying, don't be. This is your moment to get clarifications, although you should always try to find the answer yourself before asking for help. You have the power to ask for clarifications when you feel something is unclear. Common knowledge isn't common if it hasn't yet arrived for the interns, and acronyms are probably confusing for other people as well as yourself.
 
-## Asking 'Why', not 'How'
+## Asking 'why', not 'how'
 
 When you ask questions, make sure to ask not only how to do something, but _why_ it's important to do it. Having this context will let you learn how the business operates and what are its underlying values. Always keep in mind that your questions will help you deepen your technical skills as well as your domain expertise, both of which you will use throughout your evolving career path.
 

@@ -16,7 +16,7 @@ Let's think about some ways to growth-hack your learning process and thereby cul
 
 ## Self-study
 
-As Socrates said, "know thyself". How do you learn? Are you a very visual learner? You might benefit from doodling, or drawing sketchnotes as you learn a new concept. If you need structured frameworks around your learning, consider bullet-journaling as you read.  
+As Socrates said, "know thyself". How do you learn? Are you a very visual learner? You might benefit from doodling, or drawing sketch notes as you learn a new concept. If you need structured frameworks around your learning, consider bullet-journaling as you read.  
 
 Do you prefer learning via videos? Make a curated playlist for yourself on YouTube. Are you someone who learns with articles and books? You can get online copies and add highlights and margin notes using various software. You are the owner of your own learning, but there are lots of helpful tools and techniques to aid your process. 
 
@@ -30,7 +30,7 @@ Take the time to learn in-depth. Taking formal courses is a great way to deepen 
 
 Don't compare yourself to others as you learn either formally or on your own. You know yourself best, so go at your own pace.
 
-## Finding a safe place to build, break and fix things
+## Finding a safe place to build, break, and fix things
 
 It seems strange, but it's actually important to break things (not in production, of course, and not such that it impacts your coworkers!). Find opportunities and safe places to build things, rebuild them, fix them, and break them.  
 
@@ -50,7 +50,7 @@ Keep track of your wins and build a 'hype doc' as a personal database that you c
 
 ## Side projects
 
-If you can, take time to build side projects on GitHub to crystalize your learning and build your technical portfolio. Learning in this way takes the risk out of breaking code and gives you the opportunity to get 'code muscle memory' as you iterate on your ideas.  
+If you can, take time to build side projects on GitHub to crystallize your learning and build your technical portfolio. Learning in this way takes the risk out of breaking code and gives you the opportunity to get 'code muscle memory' as you iterate on your ideas.  
 
 You will also have the opportunity to practice what you learn using various open-source libraries, perhaps with the eventual outcome that you might contribute to them, furthering your advancement as a good community member. Employees often appreciate these kind of contributions.
 

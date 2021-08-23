@@ -1,23 +1,23 @@
 ### YamlMime:Module
 uid: learn.career-growth
 metadata:
-  title: Grow your Career
-  description: As a new employee in tech, discover ways to grow your career from the inside
+  title: Grow your career
+  description: As a new employee in tech, discover ways to grow your career from the inside.
   ms.date: 08/23/2021
   author: jlooper
   ms.author: jelooper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: career-growth
+title: Career growth
 summary: You've just landed your first job in tech. Now what? Learn strategies to growth-hack your career inside your company.
 abstract: | 
   By the end of this module, you'll be able to:
-    - designate strategies to growth-hack your career
-    - discover networking techniques
-    - set expectations for yourself as you grow your career
+    - Designate strategies to growth-hack your career
+    - Discover networking techniques
+    - Set expectations for yourself as you grow your career
 prerequisites: | 
-  - Learn module on Career Skilling
-  - Learn module on Interviewing
+#  - [Learn module on getting noticed](/learn/modules/career-get-noticed/)
+#  - [Learn module on interviewing](/learn/modules/career-interview/)
 iconUrl: /learn/achievements/generic-badge.svg
 hidden: true
 levels:

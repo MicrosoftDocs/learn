@@ -1,6 +1,6 @@
 One way to meet people in your new organization is to join clubs and social groups. In this exercise, you will create a series of activities that will help you integrate into the group.
 
-## Make a list 
+## Make a list
 
 What do you like to do? Make a list of your hobbies. Try to include both indoor and outdoor activities. Think outside the box: if you had unlimited time, what's a hobby you would like to try?
 
