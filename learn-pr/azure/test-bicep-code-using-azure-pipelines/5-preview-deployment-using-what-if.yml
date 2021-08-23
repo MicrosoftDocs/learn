@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.test-bicep-code-using-azure-pipelines.validate-deployment-using-what-if
-title: Validate your deployment by using what-if
+uid: learn.azure.test-bicep-code-using-azure-pipelines.preview-deployment-using-what-if
+title: Preview your deployment by using what-if
 metadata:
   unitType: learning-content
-  title: Validate your deployment by using what-if
+  title: Preview your deployment by using what-if
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 08/22/2021
   author: vermegi
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-validate-deployment-using-what-if.md)]
+  [!include[](includes/5-preview-deployment-using-what-if.md)]

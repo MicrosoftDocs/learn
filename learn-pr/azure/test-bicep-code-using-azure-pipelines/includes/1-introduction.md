@@ -16,16 +16,19 @@ After completing this module, you'll be able to update your pipeline with tests 
 
 ## Prerequisites
 
-You should have: 
+You should be familiar with using:
 
-  - Familiarity with basic Bicep template deployments.
-  - Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resources.
-  - Familiarity with basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
-  - Familiarity with basic YAML pipelines, and basic experience deploying Bicep code using Azure Pipelines.
+  - Bicep, including creating and deploying basic files.
+  - Azure, including the Azure portal, subscriptions, resource groups, and resources.
+  - The what-if operation.
+  - Basic Git commands, including cloning, committing files, and pushing changes to Azure Repos.
+  - Basic YAML pipelines using Azure Pipelines, including service connections.
 
-To follow along with the exercises in the module, you'll need:
-
-- [Visual Studio Code](https://code.visualstudio.com) installed locally.
-- The [Azure Pipelines extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azure-devops.azure-pipelines) installed
-- Azure account and subscription
-- Git
+To work through the exercises in the module, you'll need an Azure account, with the ability to create resource groups, Azure Active Directory applications, and service principals.
+  
+You'll also need the following installed locally:
+  
+  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
+  - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep&azure-portal=true).
+  - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps).
+  - [Git](https://git-scm.com/download?azure-portal=true).

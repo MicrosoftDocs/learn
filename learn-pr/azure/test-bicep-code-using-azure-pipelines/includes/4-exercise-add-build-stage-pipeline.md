@@ -112,6 +112,9 @@ This failure is due to the service connection that is being used. This service c
 
    :::code language="json" source="code/4-bicepconfig.json" :::
 
+   > [!NOTE]
+   > The *bicepconfig.json* file also controls how Visual Studio Code shows errors and warnings in the editor. It displays red and yellow squiggly lines under misconfigured parts in your Bicep template. This gives you even quicker feedback when you're writing your Bicep code, further reducing the chance of an error.
+
 1. Save your file.
 
 1. Commit and push your changes to your Git repository by using the following commands: 
