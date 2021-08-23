@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.career-growth.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Strategies to growth-hack your career by networking, continually learning, and providing value as a trusted employee
+  ms.date: 4/15/2021
+  author: jlooper
+  ms.author: jelooper
+  ms.topic: interactive-tutorial # do we need ms.topic?
+durationInMinutes: 4
+content: |
+  [!include[](includes/13-summary.md)]
