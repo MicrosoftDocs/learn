@@ -1,0 +1,14 @@
+name: learn-github-actions
+
+on: [workflow_dispatch]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Run a one-line command'
+        run: echo "hello from GitHub Actions"
+      - name: 'Run a multi-line command'
+        run: |
+          echo "We'll add more steps soon."
+          echo "For example, we'll add our Bicep deployment step."

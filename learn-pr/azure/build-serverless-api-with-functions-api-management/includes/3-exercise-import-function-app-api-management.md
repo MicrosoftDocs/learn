@@ -41,7 +41,7 @@ Now, let's test the ProductDetails function to see how it behaves before we add 
 
 1. From the list, select **ProductDetails**. The **ProductDetails** pane appears for your function.
   
-1. In the ProductDetails left menu, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your function.
+1. In the left menu, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for your function.
 
 1. On the top menu bar, select **Test/Run**.
 
@@ -98,7 +98,7 @@ Now that we have our function app deployed and tested, we'll expose the function
 
 1. Select **Export** to create the API Management instance. This may take several minutes.
 
-1. After the API Management instance as been created, select **Link API**.
+1. After the API Management instance has been created, select **Link API**.
 
     ![Screenshot showing the Link API button.](../media/3-link-api.png)
 
@@ -110,7 +110,7 @@ Now that we have our function app deployed and tested, we'll expose the function
 
     ![Screenshot showing the Create from Function app dialog box.](../media/3-create-from-function-app.png)
 
-1. Change the **API URL suffix** field to **products**, and then select **Create**. Azure creates the API for the **ProductDetails** function and the **API Management** pane for your function app appears.
+1. Change the **API URL suffix** field to *products*, and then select **Create**. Azure creates the API for the **ProductDetails** function. The **API Management** pane for your function app appears.
 
 Note that you were able to define your API, all from within the Azure Function App service.
 
