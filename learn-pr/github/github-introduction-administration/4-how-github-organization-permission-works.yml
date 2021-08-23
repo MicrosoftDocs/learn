@@ -6,7 +6,7 @@ metadata:
   description: Deep dive into the hierarchical structure of GitHub's permission levels.
   ms.date: 8/23/2021
   author: lucie-docs
-  ms.author: rotabor
+  ms.author: lucielenaour
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4
