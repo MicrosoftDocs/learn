@@ -17,7 +17,7 @@ abstract:  |
   - Create, compile, and run a basic Rust program
   - Discover how to print output from your program
 prerequisites: | 
-  - Have your [Rust environment ready for development](../../rust-set-up-environment/index.yml?azure-portal=true)
+  - Have your [Rust environment ready for development](../rust-set-up-environment/index.yml?azure-portal=true)
 iconUrl: /learn/achievements/rust-understand-common-concepts.svg 
 levels:
 - beginner
@@ -36,5 +36,6 @@ units:
 - learn.language.rust-create-program.5-functions
 - learn.language.rust-create-program.6-exercise
 - learn.language.rust-create-program.7-summary
+# Change badge UID value back to learn.language.rust-understand-common-concepts.badge after split is complete
 badge:
-  uid: learn.language.rust-understand-common-concepts.badge
+  uid: learn.language.rust-create-program.badge
