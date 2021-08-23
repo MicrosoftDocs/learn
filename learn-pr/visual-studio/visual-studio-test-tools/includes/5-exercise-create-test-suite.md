@@ -112,6 +112,7 @@ Red, green, refactor is all about starting with a failing test, to see the test 
 1. Rerun your `DivideByZero` test to confirm it now passes! The `Divide` method now returns null when the divisor is zero. Note the output that warns the user they cannot divide by zero appears in the test detail summary in the Test Explorer.
 
    :::image type="content" source="../media/test-explorer-output.png" alt-text="Screenshot in Visual Studio of Test Explorer showing passing Divide By Zero Test. The lower pane of the Test Explorer window shows the test details including the Console.Writeline output.":::
+
    Thereby your test went from "Red" to "Green" as you added  product code to get the test to pass.
    Now that you have working product code, and a test, it's time to refactor your product code to create an even better and more robust solution, if possible.
 
