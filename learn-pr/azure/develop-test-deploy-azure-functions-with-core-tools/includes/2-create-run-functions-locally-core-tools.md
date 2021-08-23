@@ -18,13 +18,13 @@ The Core Tools are packaged as a single command-line utility named `func`. If yo
 
 :::image type="content" source="../media/2-func-help-output.png" alt-text="A portion of the help text output by func." loc-scope="other":::
 
-The Core Tools are standalone utilities, not an extension of a larger integrated development environment or tool. You can accomplish the above tasks with nothing but the command line and the Core Tools, and use any text editor you like to write code and modify configuration. In practice, you'll also need the Azure CLI or Azure PowerShell to log in to Azure and perform other management tasks.
+The Core Tools are standalone utilities, not an extension of a larger integrated development environment or tool. You can accomplish the above tasks with nothing but the command line and the Core Tools, and use any text editor you like to write code and modify a configuration. In practice, you'll also need the Azure CLI or Azure PowerShell to log in to Azure and perform other management tasks.
 
-Other Functions development tools, such as the Functions-related features in Visual Studio and the Azure Functions extension for Visual Studio Code, are built on top of the Core Tools.
+Other Functions development tools, such as the Functions-related features in Visual Studio and the Azure Functions extension for Visual Studio Code, are built on top of Core Tools.
 
 ### Core Tools versions
 
-In other documentation, you may see references to two different versions of the Core Tools: versions **1.x** and **2.x**. We recommend using the newest available revision of version 2.x, as it offers the best support for most scenarios and it can be installed on Windows, macOS and Linux computers.
+In other documentation, you may see references to two different versions of the Core Tools: versions **1.x** and **2.x**. We recommend using the newest available revision of version 2.x, as it offers the best support for most scenarios, and it can be installed on Windows, macOS, and Linux computers.
 
 We'll be discussing and using version 2.x in this tutorial, but you won't need to install anything on your own computer to complete it. We'll use the in-browser Cloud Shell environment for development, and the Core Tools are already installed there, along with the Azure CLI and a code editor.
 
@@ -42,9 +42,9 @@ Every function published to Azure belongs to a *function app*: a collection of f
 
 When you develop functions locally, you work within a *functions project*: a folder that contains the code and configuration files that define your functions. A functions project on your computer is equivalent to a function app in Azure, and can contain multiple functions that use the same language runtime.
 
-To get started developing, you need to create a functions project folder that's organized correctly. Every new function you add to the project requires additional code and configuration that must be complete and correctly structured, or your functions will not be able to run. If you wanted to, you could become familiar with the names and contents of the files needed in a functions project folder and create them yourself, but doing so would be time-consuming and error-prone.
+To get started developing, you need to create a functions project folder that's organized correctly. Every new function you add to the project requires additional code and a configuration that must be complete and correctly structured, or your functions will not be able to run. If you wanted to, you could become familiar with the names and contents of the files needed in a functions project folder and create them yourself, but doing so would be time-consuming and error-prone.
 
-With the Azure Functions Core Tools, you'll never need to do this! You can use the Core Tools to generate function projects and functions from scratch.
+With the Azure Functions Core Tools, you'll never need to do this! You can use Core Tools to generate function projects and functions from scratch.
 
 ### Create a new functions project with `func init`
 
@@ -63,7 +63,7 @@ Functions projects that `func init` generates don't have any functions in them. 
 
 ### Create a new function with `func new`
 
-Each individual function in a project requires code and configuration to define its behavior. Running `func new` in a functions project folder will create a new function and all the files you need to get started developing.
+Each individual function in a project requires code and a configuration to define its behavior. Running `func new` in a functions project folder will create a new function and all the files you need to get started developing.
 
 :::image type="content" source="../media/2-func-new-output.png" alt-text="Output from func new creating a JavaScript function." loc-scope="other":::
 
@@ -73,7 +73,7 @@ In the next part of this tutorial, we'll use `func new` to create an HTTP-trigge
 
 ## Run functions locally
 
-Functions aren't programs that can be run on their own: they must be hosted by the functions host. The host is what powers everything outside of your function code: it loads configuration, listens for triggers and HTTP requests, starts the worker process for the language your functions are written in, writes log output and more. In Azure, function apps run the function host automatically when they start.
+Functions aren't programs that can be run on their own: they must be hosted. The function host is what powers everything outside of your function code: it loads the configuration, listens for triggers and HTTP requests, starts the worker process for the language your functions are written in, writes log output, and more. In Azure, function apps run the function host automatically when they start.
 
 You can use the Core Tools to run your own instance of the functions host and try out your functions locally before you publish them. By running your functions before publishing them, you can make sure your configuration and code loads correctly and test out your functions by making real HTTP calls to them without the need for Azure resources.
 

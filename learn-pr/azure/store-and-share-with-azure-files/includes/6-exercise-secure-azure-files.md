@@ -32,7 +32,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 1. In the Azure portal you should still have open, select the storage account you previously created, named **learnazurefileshare** followed by random numbers.
 
-1. In the middle menu pane, under **Data storage**, select **File shares**.
+1. In the left menu pane, under **Data storage**, select **File shares**. The **File shares** pane appears for your storage account.
 
     ![Screenshot of the Azure portal showing the storage account overview.](../media/4-select-file-shares.png)
 
@@ -44,7 +44,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 1. Select the **Add your client IP address** check box, and in the top menu bar, select **Save**.
 
-1. In the middle menu pane, Select **Overview**, and under **Data storage**, select **File shares**.
+1. In the left menu pane, select **Overview**, and under **Data storage**, select **File shares**.
 
 1. Select the **data** file share. You can now browse the file share in your local browser.
 
@@ -94,7 +94,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 1. In the Azure portal you should still have open, select the storage account you previously created, named **learnazurefileshare** followed by random numbers.
 
-1. In the middle menu pane, under **Security + networking**, select **Shared access signature**.
+1. In the left menu pane, under **Security + networking**, select **Shared access signature**.
 
     :::image type="content" source="../media/6-sas-connection-string.png" alt-text="Screenshot showing Shared access signatures.":::
 
@@ -143,7 +143,7 @@ In this exercise, you'll check that secure transfers are enforced on the file sh
 
 1. In the Azure portal you should still have open, select the storage account you previously created, named **learnazurefileshare** followed by random numbers.
 
-1. In the middle menu pane, under **Data storage**, select **File shares**. The Storage account **File shares** pane appears.
+1. In the left menu pane, under **Data storage**, select **File shares**. The Storage account **File shares** pane appears.
 
 1. Select the **data** share.
 

@@ -35,5 +35,3 @@ When you first come into Visual Studio Code, you'll be greeted with a welcome wi
 - **Source control:** Helps you write/share code with others
 - **Run:** Runs the code you write
 - **Extensions:** Shows all the additions people from across the globe have made. There are different color themes, programming languages, and more. You can install and customize Visual Studio Code as you like
-- **Azure:** An optional extension that helps integrate Microsoft Azure into Visual Studio Code
-- **Docker:** Beyond the scope of this lesson

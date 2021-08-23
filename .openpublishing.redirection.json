@@ -8816,54 +8816,54 @@
       "redirect_document_id": true
     },
     {
-    "source_path": "learn-pr/paths/evaluate-text-with-language-services/index.md",
-    "redirect_url": "https://docs.microsoft.com/learn/paths/process-translate-text-azure-cognitive-services/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/paths/evaluate-text-with-language-services/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/process-translate-text-azure-cognitive-services/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/paths/create-bots-with-the-azure-bot-service/index.md",
-    "redirect_url": "https://docs.microsoft.com/learn/paths/create-conversational-ai-solutions/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/paths/create-bots-with-the-azure-bot-service/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-conversational-ai-solutions/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/index.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/1-introduction.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/2-overview-of-luis.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/2-overview-of-luis.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/3-exercise-create-luis-service.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/3-exercise-create-luis-service.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/4-exercise-add-intents-and-entities.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/4-exercise-add-intents-and-entities.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/5-exercise-train-luis-model.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/5-exercise-train-luis-model.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/6-knowledge-check.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
+      "redirect_document_id": false
     },
     {
-    "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/7-summary.md",
-    "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
-    "redirect_document_id": false
+      "source_path": "learn-pr/data-ai-cert/create-and-publish-a-LUIS-model/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-language-understanding-app/",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/azure/deploy-azure-resources-by-using-bicep-templates/index.md",
@@ -8921,6 +8921,36 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/build-chat-bot-azure-portal/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-bot-with-bot-framework-composer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-chat-bot-azure-portal/3-create-basic-bot.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-bot-with-bot-framework-composer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-chat-bot-azure-portal/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-bot-with-bot-framework-composer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-chat-bot-azure-portal/2-introduction-bot-service.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-bot-with-bot-framework-composer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-chat-bot-azure-portal/4-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-bot-with-bot-framework-composer/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/build-chat-bot-azure-portal/5-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-bot-with-bot-framework-composer/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/tensorflow/intro-natural-language-processing-tensorflow/6-attention-transformers.ipynb",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-natural-language-processing-tensorflow/5-generative-networks",
       "redirect_document_id": false
@@ -8936,7 +8966,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/tensorflow/intro-computer-vision-tensorflow/8-summary.md",
+      "source_path": "learn-pr/tensorflow/intro-computer-vision-tensorflow/8-summary.mb",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-computer-vision-tensorflow/7-summary",
       "redirect_document_id": false
     }
