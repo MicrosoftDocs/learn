@@ -1,6 +1,4 @@
-Now that you know what pipeline stages are for, let's consider the steps that make sense to add to a validation stage in your Bicep deployment pipeline.
-
-In this unit, you'll learn about validating Bicep templates. 
+Now that you know what pipeline stages are for, let's consider the steps that make sense to add to a validation stage in your Bicep deployment pipeline. In this unit, you'll learn about validating Bicep templates, and the two activities that a validation stage typically performs: linting and preflight validation.
 
 ## What does it mean for a Bicep file to be valid?
 
@@ -29,63 +27,18 @@ bicep build main.bicep
 > [!NOTE]
 > When you run the `bicep build` command, Bicep also transpiles your Bicep code to a JSON ARM template. Often, you don't need the file it outputs, so you can ignore it.
 
-## Customize the linter's behavior
-
-<!-- TODO here down -->
-
-By default the linter emits a warning for all of the above rules. You can change this default behavior by adding a *bicepconfig.json* file to the same directory that holds your templates. In this file you could then define to emit an error on each of the above rule violations and hence make the linter more strict: 
-
-```json
-{
-  "analyzers": {
-    "core": {
-      "enabled": true,
-      "verbose": true,
-      "rules": {
-        "no-hardcoded-env-urls": {
-          "level": "error"
-        },
-        "no-unused-params": {
-          "level": "error"
-        },
-        "no-unused-vars": {
-          "level": "error"
-        },
-        "prefer-interpolation": {
-          "level": "error"
-        },
-        "secure-parameter-default": {
-          "level": "error"
-        },
-        "simplify-interpolation": {
-          "level": "error"
-        }
-      }
-    }
-  }
-}
-```
-
-> [!NOTE]
-> The *bicepconfig.json* file also controls how Visual Studio Code shows errors and warnings in the editor. It displays red and yellow squiggly lines under misconfigured parts in your Bicep template. This gives you even quicker feedback when you're writing your Bicep code, further reducing the chance of an error.
-
 Because you would like your Bicep templates to be linted each time anyone checks in code to your repository, you can add a validation job to your pipeline: 
 
-```yaml
-stages:
-- stage: Validate
-  jobs: 
-  - job: Validate
-    steps:
-      - script: |
-          bicep build deploy/main.bicep
-```
+:::code language="yaml" source="code/3-lint.yml" highlight="7" :::
 
-Warnings emitted by the Bicep linter won't stop the execution of your pipeline. If you reconfigure the linter to emit errors, then whenever the linter detects an issue, your pipeline stops execution and subsequent jobs or stages don't execute.
+> [!NOTE]
+> By default the linter emits a warning when it discovers a Bicep file has violated a rule. Warnings emitted by the Bicep linter won't be treated as a failure, so they won't stop the execution of your pipeline or stop subsequent stages from running.
+>
+> You can change this default behavior by configuring Bicep to treat the linter rule violations as errors instead of warnings. You do this by add a *bicepconfig.json* file to the same directory that holds your templates. If you reconfigure the linter to emit errors, then whenever the linter detects an issue, your pipeline stops execution and subsequent jobs or stages don't execute. 
 
-## What is preflight validation and why would you do it in a pipeline?
+## Preflight validation
 
-You also should check whether your Bicep template is likely to deploy in your Azure environment successfully. This is called *preflight validation*, and it runs additional checks that need Azure to provide information. These kinds of checks include:
+You also should check whether your Bicep template is likely to deploy to your Azure environment successfully. This is called *preflight validation*, and it runs additional checks that need Azure to provide information. These kinds of checks include:
 
 - Are the names you've specified for your Bicep resources valid?
 - Are the names you've specified for your Bicep resources already taken?
@@ -93,15 +46,15 @@ You also should check whether your Bicep template is likely to deploy in your Az
 
 Preflight validation requires communication with Azure, but it doesn't actually deploy any resources. You use the `az deployment group validate` command to submit a Bicep file for preflight validation:
 
-```cli
-az deployment group create --resource-group RESOURCEGROUP_NAME --template-file deploy/main.bicep -p environmentType=$(environment)
-```
+:::code language="yaml" source="code/3-preflight.yml" highlight="7-9" :::
 
-This command is very similar to the `az deployment group create` command, but it doesn't actually deploy any resources. It will, however, perform the same linter rule validation as the `bicep build` command, and it also performs the extra checks against the resources that are being used in your template. 
+This command is very similar to the `az deployment group create` command, but it doesn't actually deploy any resources. It will, however, perform the same linter rule validation as the `bicep build` command, and it also performs the extra checks against the resources that are being used in your template.
+
+<!-- TODO note that even though the linter is run by the validate command, it's worth running it explicitly so it runs quickly -->
 
 For example, suppose your Bicep file contains a storage account. Preflight validation will check whether the name you've specified has already been taken by another storage account. It also checks whether the name you chose for the storage account complies with storage account naming conventions. 
 
 > [!NOTE]
 > When you run a preflight validation, each of the Azure resource providers performs their own checks. Some resource providers currently don't run many checks, while others do. This means that you can't rely on preflight validation to give any certainty that your file is valid. Nevertheless, it's a useful tool and is worth including in your pipeline.
 
-By adding a validation stage to your pipeline, which checks the linter rules and performs a preflight validation, you'll have more confidence before you actually deploy your Bicep file.
+By adding a validation stage to your pipeline, which first runs the linter and then performs a preflight validation, you'll have more confidence before you actually deploy your Bicep file.

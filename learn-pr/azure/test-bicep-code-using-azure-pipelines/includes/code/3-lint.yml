@@ -1,0 +1,7 @@
+stages:
+- stage: Validate
+  jobs: 
+  - job: Validate
+    steps:
+      - script: |
+          bicep build deploy/main.bicep

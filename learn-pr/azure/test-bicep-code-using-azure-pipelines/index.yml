@@ -46,7 +46,7 @@ products:
 units:
 - learn.azure.test-bicep-code-using-azure-pipelines.introduction
 - learn.azure.test-bicep-code-using-azure-pipelines.understand-pipeline-stages
-- learn.azure.test-bicep-code-using-azure-pipelines.lint-validate-bicep-code
+- learn.azure.test-bicep-code-using-azure-pipelines.validate-bicep-code
 - learn.azure.test-bicep-code-using-azure-pipelines.exercise-add-build-stage-pipeline
 - learn.azure.test-bicep-code-using-azure-pipelines.validate-deployment-using-what-if
 - learn.azure.test-bicep-code-using-azure-pipelines.exercise-add-preview-stage-pipeline
