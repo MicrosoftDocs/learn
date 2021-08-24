@@ -4,6 +4,6 @@ stages:
   - job: Validate
     steps:
       - script: |
-          az deployment group create \
+          az deployment group validate \
             --resource-group $(ResourceGroupName) \
             --template-file deploy/main.bicep

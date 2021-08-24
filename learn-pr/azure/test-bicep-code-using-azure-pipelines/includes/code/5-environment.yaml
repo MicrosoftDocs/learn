@@ -1,0 +1,22 @@
+stages:
+- stage: Preview
+  jobs: 
+  - job: Preview
+    steps:
+      - script: |
+          az deployment group what-if \
+            --resource-group $(ResourceGroupName) \
+            --template-file deploy/main.bicep
+
+- stage: Deploy
+  jobs:
+  - deployment: Deploy
+    environment: MyAzureEnvironment
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - script: |
+              az deployment group validate \
+                --resource-group $(ResourceGroupName) \
+                --template-file deploy/main.bicep
