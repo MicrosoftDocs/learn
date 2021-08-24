@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.test-bicep-code-using-azure-pipelines.validate-bicep-code
+uid: learn.azure.test-bicep-code-using-azure-pipelines.lint-validate-bicep-code
 title: Lint and validate your Bicep code
 metadata:
   unitType: learning-content
