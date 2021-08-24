@@ -1,10 +1,10 @@
-Now that you know what pipeline stages are for, let's consider the steps that make sense to add to a validation stage in your Bicep deployment pipeline. In this unit, you'll learn about validating Bicep templates, and the two activities that a validation stage typically performs: linting and preflight validation.
+Now that you know what pipeline stages are for, let's consider the first set of validation steps you can add to your Bicep deployment pipeline. In this unit, you'll learn about validating Bicep templates, and the two activities that a validation stage typically performs: linting and preflight validation.
 
-## What does it mean for a Bicep file to be valid?
+## What is a valid Bicep file?
 
-A valid Bicep file is one that you can confidently deploy to your Azure environment. The file itself doesn't contain any syntax errors. Also, the definitions for the Azure resources you plan to deploy are valid. And when the resources defined in the file are deployed, they stay within the quotas and limits that exist in your Azure subscription.
+A valid Bicep file is one that doesn't contain any syntax errors. Also, the definitions for the Azure resources you plan to deploy are valid, and when the resources defined in the file are deployed, they stay within the quotas and limits that exist in your Azure subscription.
 
-Some of the validation steps are performed on your Bicep file in isolation, like the checks for syntax errors, for valid Azure resource definitions, and for code quality. These steps are called *linting*. To check for other problems, you need to request that the Azure Resource Manager service verifies your template against your Azure environment.
+Some of the validation steps are performed on your Bicep file in isolation, like the checks for syntax errors, for valid Azure resource definitions, and for code quality. These steps are part of a process called *linting*. To check for other problems, you need to request that the Azure Resource Manager service validates your template and takes your Azure environment into consideration.
 
 A valid Bicep template has a greater chance of deploying successfully. You'll get feedback without actually deploying your Bicep template. This is a good practice because, if you deploy a Bicep file that isn't valid, Azure might only deploy or change a subset of the resources described in your template. This could mean that the state of your environment is inconsistent and it might not behave the way you expect.
 
@@ -27,9 +27,9 @@ bicep build main.bicep
 > [!NOTE]
 > When you run the `bicep build` command, Bicep also transpiles your Bicep code to a JSON ARM template. Often, you don't need the file it outputs, so you can ignore it.
 
-Because you would like your Bicep templates to be linted each time anyone checks in code to your repository, you can add a validation job to your pipeline:
+Because you would like your Bicep templates to be linted each time anyone checks in code to your repository, you can add a lint stage and job to your pipeline:
 
-:::image type="content" source="../media/3-stages-lint.png" alt-text="TODO" border="false":::
+:::image type="content" source="../media/3-stages-lint.png" alt-text="Diagram showing a pipeline with a lint stage containing a single job that runs the linter on the file." border="false":::
 
 You express this in your pipeline YAML file like this:
 
@@ -50,11 +50,11 @@ You also should check whether your Bicep template is likely to deploy to your Az
 
 Preflight validation requires communication with Azure, but it doesn't actually deploy any resources.
 
-:::image type="content" source="../media/3-stages-preflight.png" alt-text="TODO" border="false":::
+:::image type="content" source="../media/3-stages-preflight.png" alt-text="Diagram showing a pipeline with a lint and validate stage, each containing a single job. The validate stage communicates with Azure." border="false":::
 
 You use the `az deployment group validate` command to submit a Bicep file for preflight validation:
 
-:::code language="yaml" source="code/3-preflight.yml" highlight="7-9" :::
+:::code language="yaml" source="code/3-preflight.yml" highlight="13-21" :::
 
 This command is very similar to the `az deployment group create` command, but it doesn't actually deploy any resources. However, it performs extra checks against the resources that are being used in your template. For example, suppose your Bicep file contains a storage account. Preflight validation will check whether the name you've specified has already been taken by another storage account. It also checks whether the name you chose for the storage account complies with storage account naming conventions. 
 

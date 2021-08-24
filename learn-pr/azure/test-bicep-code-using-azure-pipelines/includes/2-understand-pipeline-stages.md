@@ -22,7 +22,7 @@ Stages run in a sequence. You can control how and when each stage runs. For exam
 
 By using stages, you can verify the quality of your code before you deploy it. This is sometimes called *shifting left*. Consider a timeline of the activities you perform when you write code, starting from the planning and design phases, through to the building and testing phases, to when you finally deploy and then have to support your code:
 
-:::image type="content" source="../media/2-shift-left.png" alt-text="TODO" border="false":::
+:::image type="content" source="../media/2-shift-left.png" alt-text="Chart with a timeline on the horizontal axis, cost on the vertical axis, and a line showing that the cost increases the later an error is identified." border="false":::
 
 It's a well-understood rule in software development that the earlier in the process that you find errors - the closer to the left of the timeline - the easier and quicker it is to fix them. The later in your process that you catch an error, the harder and more complicated it is to fix. Throughout this module, you'll see how you can add increasingly more validation and testing to your pipeline as it progresses.
 
@@ -38,7 +38,7 @@ Every pipeline contains at least one stage. If your pipeline only has a single s
 
 Imagine we have built a Bicep file that we need to deploy twice - once to infrastructure in the United States, and also to infrastructure in Europe. Before you deploy, you validate your Bicep code. Here's an illustration of a multistage pipeline to deploy the code:
 
-:::image type="content" source="../media/2-stages-sequential.png" alt-text="TODO" border="false":::
+:::image type="content" source="../media/2-stages-sequential.png" alt-text="Diagram showing a pipeline with a validate stage, a Deploy U S stage, and a Deploy Europe stage, running in sequence." border="false":::
 
 Notice that in this example, there are three stages:
 
@@ -53,7 +53,7 @@ Here's how this is defined in a pipeline YAML file:
 
 By default, the stages run in the order you define them, and a stage only runs if the previous stage was successful. You can add dependencies between them to change the order. Continuing the example above, imagine you want to run both of our deployments in parallel, like this:
 
-:::image type="content" source="../media/2-stages-dependson.png" alt-text="TODO" border="false":::
+:::image type="content" source="../media/2-stages-dependson.png" alt-text="Diagram showing a pipeline with a validate stage, a Deploy U S stage, and a Deploy Europe stage, with the two deployment stages running in parallel." border="false":::
 
 > [!TIP]
 > Although you can configure your pipeline stages to run in parallel, in reality, they won't run in parallel unless you have enough agents to run multiple jobs at the same time. When you use Microsoft-hosted agents, you need to purchase additional *parallel jobs*.
@@ -64,7 +64,7 @@ You can specify the dependencies between stages by using the `dependsOn` keyword
 
 When you use the `dependsOn` keyword, Azure Pipelines waits for the dependent stage to complete successfully before it starts the next stage. Sometimes, though, you want to run a stage when a previous stage fails. For example, here's a different pipeline. If the deployment fails, a stage called **Rollback** runs immediately afterwards:
 
-:::image type="content" source="../media/2-stages-condition.png" alt-text="TODO" border="false":::
+:::image type="content" source="../media/2-stages-condition.png" alt-text="Diagram showing a pipeline with a deploy stage, and a condition so that a failure in the deploy stage results in the rollback stage running." border="false":::
 
 You use the `condition` keyword to specify a condition that should be met before a stage executes:
 
@@ -76,7 +76,7 @@ In the preceding example, when everything goes well, Azure Pipelines runs the **
 
 A typical Bicep deployment pipeline contains several stages. As the pipeline moves through the stages, the goal is to become increasingly confident that the later stages will succeed. Here are the common stages for a Bicep deployment pipeline:
 
-:::image type="content" source="../media/2-stages.png" alt-text="TODO" border="false":::
+:::image type="content" source="../media/2-stages.png" alt-text="Diagram showing a pipeline with five stages: Lint, Validate, Preview, Deploy, and Test." border="false":::
 
 1. **Lint:** Check that the Bicep file is well-formed and doesn't contain any obvious errors.
 1. **Validate:** Use the Resource Manager *preflight validation* process to check for problems that might occur when you deploy.

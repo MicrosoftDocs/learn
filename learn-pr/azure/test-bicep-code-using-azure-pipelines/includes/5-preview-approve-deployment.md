@@ -8,11 +8,11 @@ Anytime resources are created, updated or deleted, there's a risk that things co
 
 Resource Manager provides the what-if operation, which you can run on your Bicep file within your pipeline stage:
 
-:::image type="content" source="../media/5-stages-what-if.png" alt-text="TODO" border="false":::
+:::image type="content" source="../media/5-stages-what-if.png" alt-text="Diagram showing a pipeline that includes Lint, Validate, and Preview stages. The Preview stage executes a what-if operation against Azure." border="false":::
 
 You use the `az deployment group what-if` command from within your pipeline definition to run the what-if step:
 
-:::code language="yaml" source="code/5-what-if.yml" highlight="7-9" :::
+:::code language="yaml" source="code/5-what-if.yml" highlight="12-14" :::
 
 The what-if operation doesn't make any changes to your environment. Instead, it describes the resources that will get created, the properties of resources that will be updated, and lists the resources that will be deleted: 
 
@@ -27,7 +27,7 @@ In Azure Pipelines, you can create a resource called an *environment*. Environme
 
 You use *jobs* to define a sequence of steps within a pipeline stage. When you use environments, you use a special kind of job called a *deployment job*. A deployment job is similar to a normal job, but it provides some extra functionality, including defining the environment that the deployment job uses:
 
-:::code language="yaml" source="code/5-environment.yml" highlight="13-22" :::
+:::code language="yaml" source="code/5-environment.yml" highlight="18-32" :::
 
 Notice that in the YAML definition for a deployment job, there are some key differences from a normal job:
 
@@ -51,7 +51,7 @@ Approvals and checks are evaluated just before a pipeline stage begins. When Azu
 
 After your pipeline begins and reaches a stage that requires an approval check, the pipeline execution pauses. All of the users who have been designated as approvers are sent a message in Azure DevOps and by email. They can inspect the pipeline result, including the changes that the what-if operation detects. Based on the information they see, they then approve or decline the change. If they approve the change, the pipeline resumes. If they decline, or if they don't respond within a configurable timeout period, the stage fails.
 
-:::image type="content" source="../media/5-stages-approval-check.png" alt-text="TODO" border="false":::
+:::image type="content" source="../media/5-stages-approval-check.png" alt-text="Diagram showing a pipeline that includes Lint, Validate, Preview, and Deploy stages, with an approval check before the Deploy stage." border="false":::
 
 > [!WARNING]
 > The environments feature in Azure Pipelines provides you with the ability to link your deployments to an environment, and then the deployment inherits the approvals and checks defined by the environment owner. However, there's nothing to require that new pipelines use environments. It's important that you and your organization establish good practices to review your pipeline definitions, such as by configuring your repository to require pull request reviews on any changes to your *main* branch by using branch protection policies. You'll learn more about this in a future module.

@@ -1,7 +1,7 @@
 stages:
-- stage: Validate
+- stage: Lint
   jobs: 
-  - job: Validate
+  - job: Lint
     steps:
       - script: |
           bicep build deploy/main.bicep
