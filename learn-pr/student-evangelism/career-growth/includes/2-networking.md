@@ -46,5 +46,5 @@ Talk to your coworkers and ask them what they wish they had done in their last y
 
 As a new employee, take the opportunity to build your network as broadly as you can from inside your organization.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4OPAi]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OPAi]
 > Software engineer Eleanor Lewis encourages you to explore your options as an intern.
