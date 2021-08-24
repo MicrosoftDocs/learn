@@ -8,9 +8,9 @@ In Azure Machine Learning, a *pipeline* is a workflow of machine learning tasks 
 
 Azure Machine Learning supports a specialized pipeline step called **DatabricksStep** with which you can run a notebook, script, or compiled JAR on an Azure Databricks cluster. In order to run a pipeline step on a Databricks cluster, you need to do the following steps:
 
-- Attach Azure Databricks Compute to Azure Machine Learning workspace.
-- Define DatabricksStep in a pipeline.
-- Submit the pipeline.
+1. Attach Azure Databricks Compute to Azure Machine Learning workspace.
+2. Define DatabricksStep in a pipeline.
+3. Submit the pipeline.
 
 ### Attaching Azure Databricks Compute
 
@@ -29,7 +29,8 @@ compute_name = 'db_cluster'
 # Define configuration for existing Azure Databricks cluster
 db_workspace_name = 'db_workspace'
 db_resource_group = 'db_resource_group'
-db_access_token = '1234-abc-5678-defg-90...' # Get this from the Databricks workspace
+# Get the access token from the Databricks workspace
+db_access_token = '1234-abc-5678-defg-90...' 
 db_config = DatabricksCompute.attach_configuration(resource_group=db_resource_group,
                                                    workspace_name=db_workspace_name,
                                                    access_token=db_access_token)

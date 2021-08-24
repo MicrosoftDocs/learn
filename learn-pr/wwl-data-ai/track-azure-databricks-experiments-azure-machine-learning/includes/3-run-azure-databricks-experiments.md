@@ -1,16 +1,16 @@
-[MLflow](https://www.mlflow.org/) is an open-source library for managing the life cycle of your machine learning experiments. [MLFlow Tracking](https://mlflow.org/docs/latest/quickstart.html#using-the-tracking-api) is a component of MLflow that logs and tracks your training run metrics and model artifacts, no matter your experiment's environment. 
+[MLflow](https://www.mlflow.org/) is an open-source library for managing the life cycle of your machine learning experiments. [MLFlow Tracking](https://mlflow.org/docs/latest/quickstart.html#using-the-tracking-api) is a component of MLflow that logs and tracks your training run metrics and model artifacts, no matter your experiment's environment.
 
 A recommended approach for running Azure Machine Learning (AML) Experiments on Azure Databricks cluster is to use MLflow Tracking and connect Azure Machine Learning as the backend for MLflow experiments.
 
 The following diagram illustrates that with MLflow Tracking, you track an experiment's run metrics and store model artifacts in your Azure Machine Learning workspace.
 
-![MLFlow Tracking](../media/04-01-02-mlflow-diagram-track.png)
+![MLFlow Tracking](../media/04-01-02-mlflow-diagram.png)
 
 ## Track AML Experiments in Azure Databricks
 
 When running AML experiments in Azure Databricks, there are three key steps:
 
-1. Configure MLflow tracking URI to use AML. 
+1. Configure MLflow tracking URI to use AML.
 2. Configure a MLflow experiment.
 3. Run your experiment.
 
