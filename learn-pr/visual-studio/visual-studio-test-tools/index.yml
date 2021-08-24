@@ -2,7 +2,7 @@
 uid: learn-visualstudio.visual-studio-test-tools
 metadata:
   moduleType: standard
-  title: C# Testing Tutorial
+  title: C# Testing in Visual Studio Tutorial
   description: Start testing your C# apps with the testing tools in Visual Studio. Learn to write tests, use the Visual Studio Test Explorer, create test suites, and apply the red, green, refactor pattern to write code.
   ms.date: 07/20/2021
   author: kendrahavens
