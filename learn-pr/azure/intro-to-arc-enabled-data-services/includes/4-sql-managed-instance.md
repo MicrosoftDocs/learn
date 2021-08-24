@@ -66,7 +66,7 @@ Azure Arc-enabled SQL Managed instance also uses a versionless engine so updates
 
 ### Deploy and configure
 
-Azure SQL Managed Instance can be deployed using Azure interfaces such as the Azure portal and az CLI. In direct connected mode, Azure Arc-enabled SQL Managed Instance can be deployed with the Azure portal and az CLI. In either connected mode, Azure Arc-enabled SQL Managed Instance can be deployed using az CLI, kubectl, or Azure Data Studio.
+Azure SQL Managed Instance can be deployed using Azure interfaces such as the Azure portal and az CLI. In direct connected mode, Azure Arc-enabled SQL Managed Instance can be deployed with the Azure portal. In indirect connected mode, Azure Arc-enabled SQL Managed Instance can be deployed using az CLI (using the arcdata extension), kubectl, or Azure Data Studio.
 
 When you deploy an Azure Arc-enabled SQL Managed Instance, you can specify a service tier, core and memory limits, storage class specifications, and SQL configuration options such as SQL Server Agent, collation, and trace flags.
 
@@ -128,11 +128,11 @@ If you are using direct connected mode, you can create, view, and manage Azure A
 
 ### az CLI
 
-You can use the arcdata extension with the multi-platform [az](https://docs.microsoft.com/cli/azure/) command-line interface (CLI) to create, view, and manage Azure Arc-enabled data services such as SQL Managed Instance. You can use az CLI with either connection mode. az CLI is the primary interface to upload billing, metrics, and logs when using indirect connected mode.
+You can use the arcdata extension with the multi-platform [az](https://docs.microsoft.com/cli/azure/) command-line interface (CLI) to create, view, and manage Azure Arc-enabled data services such as SQL Managed Instance. Az CLI can only be used in indirect connected mode to deploy an Azure Arc-enabled SQL Managed Instance. The az CLI is the primary interface to upload billing, metrics, and logs when using indirect connected mode.
 
 ### kubectl
 
-You can use the multi-platform [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) command-line interface (CLI) to create, view, and manage Azure Arc-enabled data services including SQL Managed Instance. The az CLI tool is the preferred command line interface to use with Azure Arc-enabled SQL Managed Instance, but you can use yaml files with kubectl to create and manage resources. There are some scenarios, such as editing the default point-in-time restore configuration, which requires the use of kubectl.
+You can use the multi-platform [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) command-line interface (CLI) to create, view, and manage Azure Arc-enabled data services including SQL Managed Instance. The az CLI tool is the preferred command line interface to use with Azure Arc-enabled SQL Managed Instance, but you can use yaml files with kubectl to create and manage resources. Kubectl can only be used in indirect connected mode to deploy an Azure Arc-enabled SQL Managed Instance. There are some scenarios, such as editing the default point-in-time restore configuration, which requires the use of kubectl.
 
 ### SQL drivers
 
