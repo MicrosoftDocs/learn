@@ -1,10 +1,10 @@
 When you run your virtual machine (VM) on Azure, you can view basic metrics without installing any additional software. You can quickly create a VM by using the Azure portal, the Azure CLI, or PowerShell. You can connect boot diagnostics when you create the VM.
 
-You want move to a new version of Ubuntu, so you deploy a new VM. You need to monitor only the basic metrics. So you're going to create only a VM and a storage account.
+You want to move to a new version of Ubuntu, so you deploy a new VM. You need to monitor only the basic metrics. So you're going to create only a VM and a storage account.
 
 In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After the VM is created, you'll quickly set up a graph to view the CPU usage and inbound traffic. You'll also check that the boot diagnostics are working correctly.
 
-## Create a storage account and VM
+## Task 1: Create a storage account and VM
 
 1. On the right, use Azure Cloud Shell to create a storage account to store boot diagnostics.
 
@@ -34,7 +34,7 @@ In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After th
 
    Creating the VM might take a couple of minutes.
 
-## View basic metrics for the VM
+## Task 2: View basic metrics for the VM
 
 1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and sign in with the account that you used to enable the sandbox.
 
@@ -46,7 +46,7 @@ In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After th
 
 1. Select the following values:
 
-    ![Screenshot of the metrics page for a VM](../media/3-view-host-level-metrics.png)
+    ![Screenshot of the metrics page for a VM.](../media/3-view-host-level-metrics.png)
 
    |Field     |Value |
    |---------|---------|
@@ -68,11 +68,11 @@ In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After th
 
 1. You should now have a graph that looks something like the following:
 
-    ![Screenshot that shows a graph of CPU usage and inbound traffic](../media/3-metric-graph.png)
+    :::image type="content" source="../media/3-metric-graph.png" alt-text=" Screenshot that shows a graph of CPU usage and inbound traffic.":::
 
 Azure collects this data without requiring you to install anything extra on Ubuntu or Windows VMs.
 
-## View boot diagnostics
+## Task 3: View boot diagnostics
 
 1. On the left menu pane, under **Support + troubleshooting**, select **Boot diagnostics**.
 
@@ -82,6 +82,6 @@ Azure collects this data without requiring you to install anything extra on Ubun
 
 1. After boot diagnostics successfully deploys, scroll to your left, and on the **Boot diagnostics** pane for your virtual machine, review the screenshot to verify that your virtual machine started correctly.
 
-    ![Screenshot that shows the boot diagnostic image captured](../media/3-boot-diagnostics.png)
+    :::image type="content" source="../media/3-boot-diagnostics.png" alt-text=" Screenshot that shows the boot diagnostic image captured.":::
 
 You can also select **Serial log** to view log messages created when the VM started.

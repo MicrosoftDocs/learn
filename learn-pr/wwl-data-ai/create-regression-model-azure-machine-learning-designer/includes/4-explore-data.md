@@ -4,16 +4,16 @@ To train a regression model, you need a dataset that includes historical *featur
 
 To use the Azure Machine Learning designer, you create a *pipeline* that you will use to train a machine learning model. This pipeline starts with the dataset from which you want to train the model.
 
-1. in [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Designer** page (under **Author**), and select **+** to create a new pipeline.
-2. In the **Settings** pane, change the default pipeline name (**Pipeline-Created-on-*date***) to **Auto Price Training** (if the **Settings** pane is not visible, select the **&#9881;** icon next to the pipeline name at the top).
-3. Observe that you need to specify a compute target on which to run the pipeline. In the **Settings** pane, use **Select compute target** to select the compute cluster you created previously.
+1. In [Azure Machine Learning studio](https://ml.azure.com?azure-portal=true), view the **Designer** page (under **Author**), and select **+** to create a new pipeline.
+2. At the top left-hand side of the screen, click on the  default pipeline name (**Pipeline-Created-on-*date***) and change it to **Auto Price Training**. 
+3. You need to specify a compute target on which to run the pipeline. In the **Settings** pane, click on **Select compute target** to select the compute cluster you created previously (if the **Settings** pane is not visible, select the **&#9881;** icon next to the pipeline name at the top).  
 
 ## Add and explore a dataset
 
 In this module, you'll train a regression model that predicts the price of an automobile based on its characteristics. Azure Machine Learning includes a sample dataset that you can use for this model.
 
-1. On the left side of the designer, expand the **Sample datasets** section, and drag the **Automobile price data (Raw)** dataset from the **Samples** section onto the canvas.
-2. Right-click (Ctrl+click on a Mac) the **Automobile price data (Raw)** dataset on the canvas, and on the **Visualize** menu, select **Dataset output**.
+1. Next to the pipeline name on the left, select the button **>>** to expand the panel. Find the **Sample datasets** section, and drag the **Automobile price data (Raw)** dataset from the **Samples** section onto the canvas.
+2. Right-click (Ctrl+click on a Mac) the **Automobile price data (Raw)** dataset on the canvas, and on the **Outputs** menu, select **Dataset output** by clicking on the *Preview data* graph icon.
 3. Review the schema of the data, noting that you can see the distributions of the various columns as histograms.
 4. Scroll to the right of the dataset until you see the **Price** column. This is the label your model will predict.
 5. Select the column header for the **price** column and view the details that are displayed in the pane to the right. These include various statistics for the column values, and a histogram showing the distribution of the column values.
@@ -40,7 +40,7 @@ You typically apply data transformations to prepare the data for modeling. In th
 > [!div class="centered"]
 > ![all columns other than normalized_losses](../media/select-columns.png)
 
-In the rest of this exercise, you're going to create a pipeline that looks like this:
+In the rest of this exercise, you'll go through steps to create a pipeline that looks like this:
 
 > [!div class="centered"]
 > ![Automobile price data (Raw) dataset with Select Columns in Dataset, Clean Missing Data, and Normalize Data modules](../media/data-transforms.png)

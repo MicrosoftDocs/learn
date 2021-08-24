@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.health-bot-language-understanding
+metadata:
+  title: Language understanding in Azure Health Bot
+  description: Language Understanding plays a fundamental role in the working of Azure Health Bot. 
+  ms.date: 07/27/2021
+  author: nrd26
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Language understanding in Azure Health Bot
+summary: Language understanding plays a fundamental role in the working of Azure Health Bot. 
+abstract: |
+  In this module, you'll:
+  - Learn about LUIS and concepts like intents, utterances, and entities in the context of Health Bot.
+  - Understand the importance of different language models and how to add them to your Health Bot instance.
+  - Learn how to integrate LUIS into your Health Bot instance.
+iconUrl: /learn/achievements/student-evangelism/health-bot-language-understanding.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - student
+products:
+  - vs
+prerequisites: |
+ - Introduction to Azure Health Bot
+ - Basic Azure Health Bot
+units:
+- learn.health-bot-language-understanding.1-introduction
+- learn.health-bot-language-understanding.2-language-understanding-luis
+- learn.health-bot-language-understanding.3-language-models
+- learn.health-bot-language-understanding.4-knowledge-check-1
+- learn.health-bot-language-understanding.5-create-luis-conversation-app
+- learn.health-bot-language-understanding.6-integrate-luis
+- learn.health-bot-language-understanding.7-knowledge-check-2
+- learn.health-bot-language-understanding.8-summary
+badge:
+  uid: learn.student-evangelism.health-bot-language-understanding.badge

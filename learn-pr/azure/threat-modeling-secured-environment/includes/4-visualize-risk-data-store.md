@@ -1,6 +1,6 @@
 ### Data-store
 
-![Data store Element Image](../media/elements/data-store-50.png)
+![Data store Element Image.](../media/elements/data-store-50.png)
 
 #### What is data store?
 

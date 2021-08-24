@@ -1,16 +1,18 @@
 [!INCLUDE [Sandbox explanation](../../includes/azure-template-exercise-sandbox-subscription.md)]
 
-At your toy company, your team has worked with Azure for a while now, and you've created lots of templates that you use on a daily basis. You decide to take one template and create a template spec, and you decide to start with the template you use to create Cosmos DB accounts. Your team has decided that continuous backup needs to be configured on all of your Cosmos DB accounts, so you want to include this in the default configuration of Cosmos DB accounts that are provisioned using the template spec.
+At your toy company, your team has worked with Azure for a while now, and you've created lots of templates that you use on a daily basis. You decide to take one template and create a template spec. You're starting with the template that you use to create Azure Cosmos DB accounts. 
 
-In this exercise, you publish the Cosmos DB template as a template spec.
+Your team has decided that continuous backup needs to be configured on all of your Azure Cosmos DB accounts. So you want to include this in the default configuration of Azure Cosmos DB accounts that are provisioned through the template spec.
+
+In this exercise, you publish the Azure Cosmos DB template as a template spec.
 
 During the process, you'll:
 
 > [!div class="checklist"]
 > * Create a template that you'll use as the template spec.
-> * Update the template to ensure the parameters are easy to understand and work with.
+> * Update the template to ensure that the parameters are easy to understand and work with.
 > * Publish the template spec.
-> * Verify the template spec using the Azure portal.
+> * Verify the template spec by using the Azure portal.
 > * Deploy the template spec to test it.
 > * Verify the deployment.
 
@@ -22,7 +24,7 @@ During the process, you'll:
 
 ## Create the template
 
-You start with one of the templates that your team has already created. The template deploys a Cosmos DB account, and configures it to enable continuous backup on the Cosmos DB account.
+You start with one of the templates that your team has already created. The template deploys an Azure Cosmos DB account and configures it to enable continuous backup.
 
 ::: zone pivot="bicepcli,biceppowershell"
 
@@ -34,11 +36,11 @@ You start with one of the templates that your team has already created. The temp
  
    You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 
-1. Copy the following code into *main.bicep*.
+1. Copy the following code into *main.bicep*:
 
    :::code language="bicep" source="code/5-starting.bicep" :::
 
-   Notice that you set the `backupPolicy` to `Continuous`. This configures Cosmos DB to take backups of your data on a continuous basis instead of periodically.
+   Notice that you set `backupPolicy` to `Continuous`. This value configures Azure Cosmos DB to take backups of your data on a continuous basis instead of periodically.
 
 1. Save the file.
 
@@ -50,15 +52,15 @@ You start with one of the templates that your team has already created. The temp
 
 1. Create a new file called *azuredeploy.json*.
 
-1. Save the empty file so that Visual Studio Code loads the ARM template tooling. 
+1. Save the empty file so that Visual Studio Code loads the Azure Resource Manager template (ARM template) tooling. 
  
    You can either select **File** > **Save As** or select <kbd>Ctrl+S</kbd> in Windows (<kbd>⌘+S</kbd> on macOS). Be sure to remember where you've saved the file. For example, you might want to create a *scripts* folder to save it in.
 
-1. Copy the following code into *azuredeploy.json*.
+1. Copy the following code into *azuredeploy.json*:
 
    :::code language="json" source="code/5-starting.json" :::
 
-   Notice that you set the `backupPolicy` to `Continuous`. This configures Cosmos DB to take backups of your data on a continuous basis instead of periodically.
+   Notice that you set the `backupPolicy` to `Continuous`. This value configures Azure Cosmos DB to take backups of your data on a continuous basis instead of periodically.
 
 1. Save the file.
 
@@ -66,7 +68,7 @@ You start with one of the templates that your team has already created. The temp
 
 ## Make the parameters easier to understand
 
-When you work with template specs, it's important you consider how others will use your template. This is especially important for parameters, since they're the main way other people will interact with your code. The parameters in your team's template don't include descriptions or other hints about how they should be use, so here you add this information in.
+When you work with template specs, it's important to consider how others will use your template. This is especially important for parameters, because they're the main way that other people will interact with your code. The parameters in your team's template don't include descriptions or other hints about how they should be used, so you add this information here.
 
 ::: zone pivot="bicepcli,biceppowershell"
 
@@ -96,7 +98,7 @@ When you work with template specs, it's important you consider how others will u
 
 ::: zone-end
 
-## Sign into Azure
+## Sign in to Azure
 
 ::: zone pivot="bicepcli"
 
@@ -126,7 +128,7 @@ When you work with template specs, it's important you consider how others will u
 
 ## Convert the Bicep file to a JSON ARM template
 
-Template specs don't yet support Bicep files directly. You need to convert your Bicep file to a JSON template before you publish it, using this command:
+Template specs don't yet support Bicep files directly. You need to convert your Bicep file to a JSON template before you publish it, by using this command:
 
 ::: zone-end
 
@@ -177,7 +179,7 @@ Publish the template spec by using this Azure CLI command in the Visual Studio C
 
    :::image type="content" source="../media/5-resource-group-template-spec.png" alt-text="Screenshot of the Azure portal interface for the resource group overview, with the template spec included in the list of resources." border="true":::
 
-1. Select **ToyCosmosDBAccount** to open the template spec. Notice you can see the versions and the template file.
+1. Select **ToyCosmosDBAccount** to open the template spec. The versions and the template file are visible.
 
    :::image type="content" source="../media/5-template-spec.png" alt-text="Screenshot of the Azure portal interface for the template spec." border="true":::
 
@@ -187,7 +189,7 @@ For simplicity, you'll deploy the template spec into the same sandbox resource g
 
 ::: zone pivot="biceppowershell,jsonpowershell"
 
-1. Get the template spec version's resource ID by executing the following Azure PowerShell command:
+1. Get the template spec version's resource ID by running the following Azure PowerShell command:
 
    ```azurepowershell
    $templateSpecVersionResourceId = (`
@@ -210,7 +212,7 @@ For simplicity, you'll deploy the template spec into the same sandbox resource g
 
 ::: zone pivot="bicepcli,jsoncli"
 
-1. Get the template spec version's resource ID by executing the following Azure CLI command:
+1. Get the template spec version's resource ID by running the following Azure CLI command:
 
    ```azurecli
    templateSpecVersionResourceId=$(az ts show \
@@ -225,7 +227,7 @@ For simplicity, you'll deploy the template spec into the same sandbox resource g
 
 ::: zone-end
 
-This can take a minute or two to complete, and then you'll see a successful deployment.
+The deployment can take a minute or two to finish.
 
 ## Verify your deployment
 
@@ -239,8 +241,8 @@ This can take a minute or two to complete, and then you'll see a successful depl
 
    :::image type="content" source="../media/5-deployment.png" alt-text="Screenshot of the Azure portal interface for the deployments, with the one deployment listed." border="true":::
 
-   Your deployment's name might look different to ours.
+   Your deployment's name might look different from the one in the example.
 
-1. Select **Deployment details** to expand it. Notice that a Cosmos DB account has been deployed.
+1. Select **Deployment details** to expand it. Notice that an Azure Cosmos DB account has been deployed.
 
-   :::image type="content" source="../media/5-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with three Cosmos DB resources listed." border="true":::
+   :::image type="content" source="../media/5-deployment-details.png" alt-text="Screenshot of the Azure portal interface for the specific deployment, with three Azure Cosmos D B resources listed." border="true":::

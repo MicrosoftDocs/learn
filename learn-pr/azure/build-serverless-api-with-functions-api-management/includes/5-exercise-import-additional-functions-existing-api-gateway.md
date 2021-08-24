@@ -6,19 +6,25 @@ In this exercise, you'll add the Orders function app to the API and use the `cur
 
 Before we add the Orders function app to the API, let's test the function it hosts - OrderDetails.
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the **OrderFunction** Function App.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**. The **All resources** pane appears.
 
-1. In the left menu pane, under the **Functions** section, select **Functions**, and then select **OrderDetails**.
+1. Select the Function App whose name begins with **OrderFunction**. The Function App pane appears for this order function.
 
-1. In the left menu pane, select **Code + Test**, and in the upper menu bar, select **Test/Run**.
+1. In the middle menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your Function App.
+
+1. From the list, select **OrderDetails**. The **OrderDetails** pane appears for function.
+
+1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears for the **OrderDetails** function.
+
+1. In the top menu bar, select **Test/Run**.
 
     :::image type="content" source="../media/5-test-order-details.png" alt-text="Order details code is displayed.":::
 
-    The Input/Output pane appears.
+    The *Test* pane appears.
 
 1. On the **Input** tab, in the **HTTP method** dropdown, select **GET**, and then under **Query**, select **Add parameter**.
 
-1. In the **Name** field, enter *name*, and in the **Value** field, enter *Chiba*. The parameter name and value are both case-sensitive.
+1. In the **Name** field, enter *name*, and in the **Value** field, enter *Chiba*. The value is case-sensitive.
 
 1. Select **Run**, examine the results on the **Output** tab, and then select **Close**.
 
@@ -26,39 +32,61 @@ Before we add the Orders function app to the API, let's test the function it hos
 
     The output pane displays the details of an order in JSON format. You can also test the function with the names "Henri" and "Barriclough" for different orders.
 
-1. At the top of the page, select **Get function URL**. Notice that the URL is the name of the function within the **azurewebsites.net** domain. Make a note of this URL for later comparison.
+1. On the top menu bar of the **Code + Test** pane for your **OrderDetails** function, select **Get function URL**. Notice that the URL is the name of the function within the **azurewebsites.net** domain. Make a note of this URL for later comparison.
 
 ## Add another function app to existing API
 
-In this step, we'll add the Order function to the API Management resource that we created in the preceding exercise. In that exercise, we used the API Management interface from within the function app UI. Here, we'll navigate to our API Management instance through the portal main navigation pane, just to demonstrate that both approaches are available.
+In this step, we'll add the Order function to the API Management resource that we created in the preceding exercise. In that exercise, we used the API Management interface from within the function app interface. Here, we'll navigate to our API Management instance through the portal main navigation pane, just to demonstrate that both approaches are available.
 
-1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **All resources**, then select the App Service whose name begins with **OrderFunction**.
+1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **All resources**. The **All resources** pane appears.
 
-1. In the left menu bar, under the **API** section, select **API Management**.
+1. Select the Function App whose name begins with **OrderFunction**. The **OrderFunction** pane appears for the function app.
 
-1. On the top menu pane, select **Go to API Management**.
+1. In the middle menu bar, under **API**, select **API Management**. The **API Management** pane appears for the **OrderFunction** function app.
 
-1. In the left menu pane, under the **APIs** section, select **APIs**. In the **APIs** page for your API Management service, in the left menu pane, select **Add API**.
+1. Under the **API Management** field, select **Create new**. The **API Management service** pane appears.
 
-1. In the **Add a new API** window, select **Function App**.
+1. Enter the following API Management values for each setting.
+
+    | Setting | Value |
+    | --- | --- |
+    | Name | Use a unique name within the **azure-api.net** domain |
+    | Subscription | Concierge Subscription |
+    | Resource group | <rgn>[sandbox resource group name]</rgn> |
+    | Location | Choose one of the following locations that supports the Consumption Plan: **West US**, **North Central US**, **West Europe**, **North Europe**, **Southeast Asia**, **Australia East**  |
+    | Organization name | OnlineStore |
+    | Administrator email | Accept the default value |
+    | Pricing tier | Consumption |
+
+1. Select **Export** to create the API Management instance. This may take several minutes.
+
+1. On the top menu bar, select **Go to API Management**. The **API Management service** pane appears.
+
+1. In the left menu pane, under **APIs**, select **APIs**. In the **APIs** page for your API Management service, in the left menu pane, select **Add API**. The **APIs** pane appears for the API Management service.
+
+1. Under **Create from Azure resource**, select **Function App**.
 
     ![Screenshot of the Add a New API screen with a callout highlighting the Azure Function App option.](../media/5-import-azure-function-app.png)
 
-    The **Create from Function App** dialog appears.
+    The **Create from Function App** dialog box appears.
 
-1. To select your function, select **Browse**, and then select the **Function App** section.
+1. To select your function, select **Browse**. The **Import Azure Functions** pane appears.
 
-    ![Screenshot of the Import Azure Functions  with the Function App Configure Required Settings option selected.](../media/5-import-azure-function-app-03.png)
+1. Select **Select** at the end of the **Configure required settings** field containing the name *Function App*.
+
+    [ ![Screenshot of the Import Azure Functions with the Function App Configure Required Settings option selected.](../media/5-import-azure-function-app-03-inline.png) ](../media/5-import-azure-function-app-03-expanded.png#lightbox)
 
     The **Select Azure Function App** pane appears.
 
-1. In the list of Function Apps, select the **OrderFunction**, and then select **Select**.
+1. In the list of Function Apps, select the **OrderFunction**, and then select **Select**. The **Import Azure Functions** pane reappears.
 
 1. Ensure that **OrderDetails** is checked, and then select **Select**. The **Create from Function App** dialog box reappears.
 
-1. In the **API URL suffix** field, enter **orders**, and then select **Create**.
+1. In the **API URL suffix** field, enter *orders*, and then select **Create**.
 
     ![Screenshot of the Create from Function App dialog populated with details of the Orders function.](../media/5-complete-function-import.png)
+
+    The **APIs** pane reappears for the API Management service.
 
 ## Test the OnlineStore orders endpoint in the portal
 
@@ -78,23 +106,25 @@ Now that we've added OrderDetails to our API, let's test it by using the API Man
 
 We can use the `curl` command-line tool to submit requests to our API. It's ideal because we can use it to include the correct subscription key with our requests. To submit requests, we also need the location of the API, which is hosted in Azure API Management and consists of the Products and Orders functions.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources**, and then select your **Azure API Management** service instance (ProductFunction Function App).
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), select **All resources**, and then select your ProductFunction instance (ProductFunction as Function App type). The **ProductFunction** pane appears for the Function App.
 
-1. In the **Overview** pane,  select the **Copy to clipboard** icon to the right of the **URL** value.
+1. In the **Essentials** section of the **Overview** pane, select the **Copy to clipboard** icon to the right of the **URL** field.
 
-1. In Cloud Shell, run the following command, paste the **Gateway URL** value that you copied in place of the token, and then press <kbd>Enter</kbd>.
+1. In Cloud Shell, run the following command, paste the **URL** value that you just copied in place of the token, and then press <kbd>Enter</kbd>.
 
     ```bash
     GATEWAY_URL=<paste the URL here>
     ```
 
-1. In  the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in the left menu bar, under the **API** section, select **API Management**, and in the top menu pane, select **Go to API Management**.
+1. In  the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in the middle menu bar, under **API**, select **API Management**. The **API Management** pane appears for your **ProductFunction** function app.
 
-1. In the left menu pane, under the **APIs** section, select **Subscriptions**. The **Subscriptions** page appears for your service instance.
+1. In the top menu bar, select **Go to API Management**. The **API Management service** pane appears.
+
+1. In the left menu pane, under **APIs**, select **Subscriptions**. The **Subscriptions** pane appears for your API Management service instance.
 
 1. To the far right of **Built-in all-access subscription**, select the ellipsis **...**, and then select **Show/hide keys**.
 
-1. To the right of **Primary key** field, select the **Copy to clipboard** icon.
+1. To the right of **Primary key** field, select the *Copy to clipboard* icon.
 
 1. In Cloud Shell, run the following command, paste the **PRIMARY KEY** value that you copied in place of the token, and then press <kbd>Enter</kbd>.
 
@@ -110,7 +140,7 @@ We can use the `curl` command-line tool to submit requests to our API. It's idea
 
     The command returns the details of a product. You can also try the command with IDs 1 and 3 for different results.
 
-1. To request the details of an order, execute the following command, and then press <kbd>Enter</kbd>.
+1. To request the details of an order, run the following command, and then press <kbd>Enter</kbd>.
 
     ```bash
     curl -X GET "$GATEWAY_URL/orders/OrderDetails?name=Henri" -H "Ocp-Apim-Subscription-Key: $SUB_KEY"

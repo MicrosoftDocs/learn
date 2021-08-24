@@ -1,0 +1,54 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.run-clustered-applications-azure-shared-disks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 06/23/2021
+  author: ndelgado
+  ms.author: nedelgad
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+ 
+  - content: "An administrator plans to use an Azure shared disk for a clustered database. Which one of the following SQL deployment options can benefit from Azure shared disks?"
+    choices:
+    - content: "A single instance SQL"
+      isCorrect: false
+      explanation: "Single instance SQL is deployed on only one VM and doesn't require Azure shared disk."
+    - content: "An Always On availability group"
+      isCorrect: false
+      explanation: "An Always On availability group provides high availability SQL deployment, but it doesn't use Azure shared disks."
+    - content: "A SQL Server failover cluster instance (FCI)"
+      isCorrect: true
+      explanation: "A SQL Server FCI takes advantage of failover cluster scenarios, where multiple VMs access and use an Azure shared disk."
+ 
+  - content: "Which one of the following statements is true about Azure shared disks?"
+    choices:
+    - content: "Shared managed disks offer a fully managed file system that can be accessed by using SMB/NFS."
+      isCorrect: false
+      explanation: "Shared managed disks don't natively offer a fully managed file system that can be accessed by using SMB/NFS. You need to use a cluster manager, such as Windows Server Failover Cluster (WSFC) or Pacemaker, that handles cluster node communication and write locking."
+    - content: "I can use a shared disk as an OS Disk."
+      isCorrect: false
+      explanation: "You can use Azure shared disks only as data disks."
+    - content: "You can use SCSI PR commands to enable failover from one node to another when you use Azure shared disks."
+      isCorrect: true
+      explanation: "Azure shared disks support SCSI PR standards. After you've mounted the shared disk to the VMs in your cluster, you can establish a quorum and read/write access to the disk by using SCSI PR."
+ 
+  - content: "An administrator plans to create an Azure VM that will use an Azure shared disk. Which one of the following disk types can use the shared disk functionality?"
+    choices:
+    - content: "Data disk"
+      isCorrect: true
+      explanation: "Azure shared disks can be shared only as data disks."
+    - content: "OS disk"
+      isCorrect: false
+      explanation: "Azure shared disks can be shared only as data disks."
+    - content: "Temporary disk"
+      isCorrect: false
+      explanation: "Azure shared disks can be shared only as data disks."
+
+content: |
+  [!include[](includes/6-knowledge-check.md)]

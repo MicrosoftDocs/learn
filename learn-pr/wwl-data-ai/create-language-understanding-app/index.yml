@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.create-language-understanding-app
+metadata:
+  title: Create a Language Understanding app
+  description: "Create a Language Understanding app"
+  ms.date: 08/20/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create a Language Understanding app
+summary: The Language Understanding service enables you to train a language model that apps can use to extract semantic meaning from natural language.
+abstract: |
+  After completing this module, you will be able to:
+  - Provision Azure resources for Language Understanding
+  - Define intents and utterances
+  - Define entities
+  - Use patterns to differentiate similar utterances
+  - Use pre-built models
+  - Train, test, publish, and review a Language Understanding app
+prerequisites: |
+  Before starting this module, you should already have:
+  - Familiarity with Azure and the Azure portal.
+  - Experience programming with C# or Python.
+  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/learn/paths/csharp-first-steps/) or [Take your first steps with Python](/learn/paths/python-first-steps/) learning path first.
+iconUrl: /learn/achievements/language-understanding-create-app.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+products:
+- azure-cognitive-services
+- azure-language-understanding
+units:
+- learn.wwl.create-language-understanding-app.introduction
+- learn.wwl.create-language-understanding-app.provision-azure-resources
+- learn.wwl.create-language-understanding-app.define-intents-utterances
+- learn.wwl.create-language-understanding-app.define-entities
+- learn.wwl.create-language-understanding-app.use-patterns-to-differentiate-similar-utterances
+- learn.wwl.create-language-understanding-app.use-pre-built-models
+- learn.wwl.create-language-understanding-app.train-test-publish-review
+- learn.wwl.create-language-understanding-app.exercise
+- learn.wwl.create-language-understanding-app.knowledge-check
+- learn.wwl.create-language-understanding-app.summary
+badge:
+  uid: learn.wwl.create-language-understanding-app.badge

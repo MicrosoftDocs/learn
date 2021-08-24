@@ -1,6 +1,6 @@
 When a user submits a job, the associated HDFS data blocks are loaded and fed to the map tasks in the map phase (see Figure 2). Each map task processes one or many HDFS blocks encapsulated in what is called a **split**. A split can contain one or many references (not actual data) to one or many HDFS blocks. Split size, how many HDFS blocks a split references, is a configurable parameter. Each map task is always responsible for processing only one split. Thus, the number of splits dictates the number of map tasks in a MapReduce job, which in return dictates the overall map parallelism. If a split points to only one HDFS block, the number of map tasks becomes equal to the number of HDFS blocks.<sup>**1**</sup>,<sup>[3][^3]</sup> For data-locality reasons, a common practice in Hadoop is to have each split encapsulate only one HDFS block. Specifically, MapReduce attempts to schedule map tasks in proximity to input splits so as to diminish network traffic and improve application performance. Hence, when a split references more than one block, the probability of these blocks existing at the same node where the respective map task will run becomes low. This leads to a network transfer of at least one block (64 MB by default) per map task. With a one-to-one mapping between splits and blocks, however, a map task can run at a node at which the required block exists and, subsequently, leverage data locality and reduce network traffic. 
 
-![A full, simplified view of the phases, stages, tasks, data input, data output, and data flow in the MapReduce analytics engine](../media/mapreduce-analytics-engine.png)
+![A full, simplified view of the phases, stages, tasks, data input, data output, and data flow in the MapReduce analytics engine.](../media/mapreduce-analytics-engine.png)
 
 _Figure 2: A full, simplified view of the phases, stages, tasks, data input, data output, and data flow in the MapReduce analytics engine_
 
@@ -8,7 +8,7 @@ In the presence of a reduce phase, map tasks store partitions on local disks (no
 
 Figure 2 demonstrates a simplified view of what the Hadoop MapReduce engine actually does. For instance, MapReduce overlaps the map and the reduce phases for performance reasons. In particular, reduce tasks are scheduled after only a certain percentage (by default 5%) of map tasks finish so they can gradually start shuffling their partitions. Specifically, the shuffle and the merge and sort stages execute simultaneously so that partitions are continuously merged while being fetched. The rationale behind such a strategy is to interleave execution of map and reduce tasks and enhance, accordingly, the turnaround times of MapReduce jobs. Such an interleaving technique is commonly called the _early shuffle technique_.<sup>[2][^2], [4][^4]</sup>
 
-![The key-value data model that MapReduce employs, and the input and the output to and from the map and reduce functions](../media/key-value.png)
+![The key-value data model that MapReduce employs, and the input and the output to and from the map and reduce functions.](../media/key-value.png)
 
 _Figure 3: The key-value data model that MapReduce employs, and the input and the output to and from the map and reduce functions_
 

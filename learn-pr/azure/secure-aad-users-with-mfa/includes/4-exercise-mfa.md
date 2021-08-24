@@ -11,11 +11,11 @@ Let's walk through the basic steps necessary to configure and enable Azure AD Mu
 1. Navigate to the Azure Active Directory dashboard using the **Azure Active Directory** option in the sidebar.
 1. Select **MFA** under the **Security** group. Here you will find options for Multi-Factor authentication.
 
-    ![Screenshot showing MFA options in the dashboard](../media/4-mfa-options.png)
+    ![Screenshot showing MFA options in the dashboard.](../media/4-mfa-options.png)
 
 1. Select the **Additional cloud-based MFA settings** link under **Configure**. A new browser page will open, where you can see all the MFA options for Azure.
 
-    ![Screenshot showing MFA configuration](../media/4-set-mfa.png)
+    ![Screenshot showing MFA configuration.](../media/4-set-mfa.png)
 
     This is where you would select the supported authentication methods, in the screen above, all of them are selected.
 
@@ -29,7 +29,7 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
 1. Select **New policy** from the top menu.
 
-    ![Screenshot highlighting the New Policy button in the Azure portal](../media/4-new-policy.png)
+    ![Screenshot highlighting the New Policy button in the Azure portal.](../media/4-new-policy.png)
 
 1. Name your policy, for example "All guests"
 
@@ -53,6 +53,6 @@ Next let's examine how to set up Conditional Access policy rules that would enfo
 
 1. Select **Create** to create the policy.
 
-    ![Screenshot showing the complete Add Policy dialog](../media/4-create-policy.png)
+    ![Screenshot showing the complete Add Policy dialog.](../media/4-create-policy.png)
 
 MFA is now enabled for your selected application(s). The next time a guest tries to sign into that app they will be prompted to register for MFA.

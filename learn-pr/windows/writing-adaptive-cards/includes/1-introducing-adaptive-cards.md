@@ -13,19 +13,19 @@ First, let's look at some sample JSON scripts for Adaptive Cards. Open another b
 
 Use the **Select a sample** list to choose a sample, and then examine the JSON script and its visual interpretation. You can see that it was built by using simple graphics and a column type layout. Also note the types of applications you can create: weather updates, requests for approval, flight schedules, surveys, and so on. A singular focus is key to the successful use of Adaptive Cards.
 
- ![Using the sample sandbox](../media/cards-sandbox.png)
+ ![Using the sample sandbox.](../media/cards-sandbox.png)
 
 ### Adaptive Card layout
 
 The typical layout of an Adaptive Card consists of a title, perhaps some descriptive text, and then one or more columns of detail. This type of layout works in many situations. Because each column can contain other columns and containers, you can create cards of greater complexity by nesting objects inside each other. By varying the fonts, font sizes, colors, spacing, background images, and so on, you can create different results.
 
-| ![Adaptive Card column layout](../media/show-card-action.svg) |
+| ![Adaptive Card column layout.](../media/show-card-action.svg) |
 |:--:|
 | _A three-column layout_ |
 
 Column and text sizes are mostly determined by the system that's rendering the card, and they aren't specifically stated. For example, the widths of the three columns in the previous image are determined by the width of the whole card, taking into account the specified *spacing* between each element. Spacing (and font size) is not specified in pixels, but by using enumerations with terms such as `"Small"`, `"Medium"`, and `"Large"`.
 
-| ![Submit action](../media/submit-action.svg) | 
+| ![Submit action.](../media/submit-action.svg) | 
 |:--:|
 | _A two-column layout, with the title, description, and fact set in one column and an image in the other_ |
 

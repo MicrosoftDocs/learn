@@ -6,25 +6,25 @@ The first order of business is to create a new Azure Notebook. Azure Notebooks a
 
 1. Click **My Projects** in the top menubar.
 
-    ![Navigating to the Projects page](../media/1-add-project-1.png)
+    ![Navigating to the Projects page.](../media/1-add-project-1.png)
 
     _Navigating to the Projects page_
 
 1. Click **+ New Project**. Enter "Climate Change" (without quotation marks) for the project name and "climate-change" as the project ID. Uncheck the **Public project** box, and then click **Create**.
 
-    ![Creating a project](../media/1-add-project-2.png)
+    ![Creating a project.](../media/1-add-project-2.png)
 
     _Creating a project_
 
 1. Click the **+** sign to add a notebook to the project.
 
-    ![Adding a notebook to the project](../media/1-add-notebook-1.png)
+    ![Adding a notebook to the project.](../media/1-add-notebook-1.png)
 
     _Adding a notebook to the project_
 
 1. Name the notebook "climatechange.ipynb" and select **Python 3.6 Notebook** as the item type. This will create a notebook with a Python 3.6 kernel. One of the strengths of Jupyter notebooks is that you can use different languages by choosing different kernels.
 
-    ![Creating a notebook](../media/1-add-notebook-2.png)
+    ![Creating a notebook.](../media/1-add-notebook-2.png)
 
     _Creating a notebook_
 
@@ -32,7 +32,7 @@ The first order of business is to create a new Azure Notebook. Azure Notebooks a
 
 1. Click the new notebook. This will launch the notebook and allow you to start editing it.
 
-    ![Opening the notebook](../media/1-open-notebook.png)
+    ![Opening the notebook.](../media/1-open-notebook.png)
 
     _Opening the notebook_
 

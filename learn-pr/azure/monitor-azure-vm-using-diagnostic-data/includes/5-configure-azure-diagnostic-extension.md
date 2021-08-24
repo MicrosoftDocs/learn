@@ -25,3 +25,4 @@ Performance counters can be sent to Azure Monitor Metrics and/or Azure Monitor L
 ![Screenshot of the Data Collection Rules Destinations](../media/5-dcr-destinations.png)
 
 The Azure Monitor Agent can collect metrics and logs and can send the data to Azure Monitor metrics and/or multiple Azure Monitor Logs workspaces. However, note that this unit only focused on the metric collection capabilities of the agent.
+

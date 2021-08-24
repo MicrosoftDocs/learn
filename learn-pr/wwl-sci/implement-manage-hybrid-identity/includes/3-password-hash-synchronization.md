@@ -16,7 +16,7 @@ The first time you enable the password hash synchronization feature, it performs
 When you install Azure AD Connect by using the **Express Settings** option, password hash synchronization is automatically enabled. If you use custom settings when you install Azure AD Connect, password hash synchronization is available on the user sign-in page.
 
 > [!div class="mx-imgBorder"]
-> ![Enabling password hash synchronization](../media/user-sign-in-2.png)
+> ![Enabling password hash synchronization](../media/single-sign-on-3.png)
 
 ### Password hash synchronization and Federal Information Processing standard
 
@@ -35,18 +35,13 @@ If your server has been locked down according to Federal Information Processing 
 1. Save your changes.
 
 For reference, this snippet is what it should look like:
-
+```
     <configuration>
-
         <runtime>
-
             <enforceFIPSPolicy enabled="false"/>
-
         </runtime>
-
     </configuration>
-
-
+```
 ## Using PingFederate
 
 Configure PingFederate with Azure AD Connect to set up federation with the domain you want connected. The following prerequisites are required:

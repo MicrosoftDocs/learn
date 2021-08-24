@@ -4,7 +4,7 @@ Cloud computing offers the use of computing resources as a service over the netw
 
 Here, we introduce a stacked abstraction of the cloud through presenting typical building blocks and discuss their association with three service models in cloud computing. We present four main building blocks in cloud computing: application software, development platforms, resource sharing, and infrastructure, as shown in Figure 7. The infrastructure includes the physical resources in a datacenter. The resource sharing layer typically entails software and hardware techniques that allow the sharing of the physical resources while offering a certain level of isolation. The development platforms are utilized to develop cloud applications.
 
-![Cloud computing building blocks](../media/cloud-computing-stack.png)
+![Cloud computing building blocks.](../media/cloud-computing-stack.png)
 
 _Figure 7: Cloud computing building blocks_
 

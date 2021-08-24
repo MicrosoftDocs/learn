@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-app-services.create-custom-domain-names
+title: Create custom domain names
+metadata:
+  title: Create custom domain names
+  description: "Create custom domain names"
+  ms.date: 08/24/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-create-custom-domain-names.md)]

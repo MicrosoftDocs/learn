@@ -64,7 +64,7 @@ The Overview tab displays the cards for active alerts, logged on users, and secu
 
 **Active alerts**
 
-The Azure Advanced Threat Protection card will display a high-level overview of active alerts related to the device and their risk level if you have enabled the Azure ATP feature. More information is available in the "Alerts" drill-down.
+You can view the overall number of active alerts from the last 30 days in your network from the tile. Alerts are grouped into New and In progress. Each group is further sub-categorized into their corresponding alert severity levels. Click the number of alerts inside each alert ring to see a sorted view of that category's queue (New or In progress).
 
 **Logged on users**
 

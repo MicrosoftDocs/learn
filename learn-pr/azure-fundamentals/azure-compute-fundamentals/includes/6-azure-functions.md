@@ -15,6 +15,7 @@ After consulting with several of your fellow developers at Tailwind Traders, you
   :::column-end:::
 :::row-end:::
 
+
 Serverless computing includes the abstraction of servers, an event-driven scale, and micro-billing:
 
  -  **Abstraction of servers**: Serverless computing abstracts the servers you run on. You never explicitly reserve server instances. The platform manages that for you. Each function execution can run on a different compute instance. This execution context is transparent to the code. With serverless architecture, you deploy your code, which then runs with high availability.

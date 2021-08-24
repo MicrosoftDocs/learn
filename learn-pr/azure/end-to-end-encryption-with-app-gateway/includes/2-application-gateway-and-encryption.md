@@ -8,7 +8,7 @@ To help secure this data, you can use Azure Application Gateway. It encrypts dat
 
 Azure Application Gateway is an application delivery controller. It provides features such as load balancing HTTP traffic, web application firewall, and support for SSL encryption of your data. Application Gateway supports encrypting traffic between users and an application gateway, and between application servers and an application gateway.
 
-![A representation of Application Gateway](../media/2-application-gateway.svg)
+![A representation of Application Gateway.](../media/2-application-gateway.svg)
 
 When you terminate the SSL connection at the application gateway, it offloads the CPU-intensive SSL termination workload from your servers. Also, you don’t need to install certificates and configure SSL on your servers.
 
@@ -22,7 +22,7 @@ Application Gateway has several components. The main parts for encryption are th
 
 The following image shows how incoming traffic from a client to Application Gateway over SSL is decrypted and then re-encrypted when it's sent to a server in the backend pool.
 
-![Illustration of how messages are decrypted and re-encrypted in an end-to-end SSL configuration with Application Gateway](../media/2-components.svg)
+![Illustration of how messages are decrypted and re-encrypted in an end-to-end SSL configuration with Application Gateway.](../media/2-components.svg)
 
 ### Frontend port and listener
 

@@ -6,7 +6,7 @@ It is important to note that in a distributed file system, the client views a si
 
 As with a shared file system, DFSs require metadata management so that clients can locate the required files and file blocks across the file servers. The metadata server can be asymmetric (single metadata server) or symmetric (metadata servers on each file server), similar to shared file systems.
 
-![Distributed file system](../media/distributed-fs.png)
+![Distributed file system.](../media/distributed-fs.png)
 
 _Figure 12: Distributed file system_<sup>[1][^1]</sup>
 

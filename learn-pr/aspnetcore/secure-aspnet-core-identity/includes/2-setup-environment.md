@@ -47,13 +47,13 @@ The following diagram depicts the Identity architecture used in this module:
 
 ::: zone pivot="pg"
 
-![architecture diagram](../media/2-architecture-diagram-pg.png)
+![architecture diagram.](../media/2-architecture-diagram-pg.png)
 
 ::: zone-end
 
 ::: zone pivot="sql"
 
-![architecture diagram](../media/2-architecture-diagram-sql.png)
+![architecture diagram.](../media/2-architecture-diagram-sql.png)
 
 ::: zone-end
 

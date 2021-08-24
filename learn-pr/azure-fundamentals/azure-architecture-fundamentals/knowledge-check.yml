@@ -4,12 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/13/2021
+  ms.date: 08/17/2021
   author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  adobe-target: true
 azureSandbox: false
 durationInMinutes: 4
 content: |
@@ -60,4 +59,7 @@ quiz:
       explanation: "That's incorrect. You'll need some type of subscription to be able to use Azure resources."
     - content: "An Azure subscription is a logical unit of Azure services."
       isCorrect: true
-      explanation: "That's correct. A subscription is a set of Azure services bundled together for tracking and billing purposes.()You can't have more than one subscription."
+      explanation: "That's correct. A subscription is a set of Azure services bundled together for tracking and billing purposes."
+    - content: "You can't have more than one subscription."
+      isCorrect: false
+      explanation: "That's incorrect. Using multiple subscriptions is a common method in companies to spread out and document Azure costs."

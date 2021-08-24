@@ -20,13 +20,12 @@ iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
-- ai-engineer
 - data-scientist
-- developer
 - solution-architect
 - student
 products:
 - azure
+- azure-machine-learning
 units:
 - learn.azure.intro-to-azure-ml.introduction
 - learn.azure.intro-to-azure-ml.what-is-azure-ml

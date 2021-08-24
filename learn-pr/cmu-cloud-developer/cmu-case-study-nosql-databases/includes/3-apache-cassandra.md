@@ -18,7 +18,7 @@ Cassandra allows for data to be stored in the key or value parts of each key-val
 
 Cassandra supports data operations similar to HBase, with a few exceptions. Typical operations in Cassandra are expressed as **Gets**, **Inserts**, and **Deletes**. Operations can be performed on a single row or a set of rows (called a **range**). In addition, operations<!-- they --> can be performed on a set of columns of a database (called a **slice**): 
 
-![Ranges and slices in Cassandra](../media/cassandra-range.png)
+![Ranges and slices in Cassandra.](../media/cassandra-range.png)
 
 _Figure 8: Ranges and slices in Cassandra_
 
@@ -34,7 +34,7 @@ Client requests to read or write data in Cassandra can be serviced by any node i
 
 Cassandra automatically distributes rows among the various nodes in the cluster using the hash value of the key of each row. In the default case, Cassandra uses a Message Digest 5 (MD5) hashing algorithm on the key of each row, generating hashes that are 128 bits long. The hash value of a key determines where the row is stored in the cluster. In order to distribute rows across the nodes in a Cassandra cluster evenly, each node in the cluster is given a unique token. A token is a range of hash values that is assigned to each node. By default, node tokens are a range of values from 0 to 2127, which are equally divided by the number of nodes in the cluster. The collection of all of the nodes of the cluster is collectively referred to as a **token ring**, with the nodes arranged in order. Every node in the token ring is aware of the other nodes in the token ring and the range of hash values for which they are responsible. An example is illustrated in the following figure.
 
-![Nodes organized as a circular ring of hash values in consistent hashing](../media/cassandra-nodes-token-ring.png)
+![Nodes organized as a circular ring of hash values in consistent hashing.](../media/cassandra-nodes-token-ring.png)
 
 _Figure 9: Nodes organized as a circular ring of hash values in consistent hashing_
 
@@ -51,7 +51,7 @@ Nodes can be added to a Cassandra cluster at any time, which is handled in two w
 
 The process of keeping replicas up to date in Cassandra is called **antientropy**. Antientropy in Cassandra is achieved using Merkle trees. A Merkle tree<sup>[1][^1]</sup> (Figure 10) is a hash tree in which the leaves are hashes of the values of individual keys. Parent nodes higher in the tree are hashes of their respective children. The principal advantage of Merkle trees is that each branch of the tree can be checked independently without having to scan the entire branch. Cassandra periodically computes the Merkle trees for each column family and exchanges it among replica members to quickly compute differences in the tables so that they can be synchronized. Compared to other techniques in Cassandra, antientropy is an expensive operation that is not performed often. Cassandra also has techniques to perform instantaneous repairs to replicas during reads (called a **read repair**, which is described later). 
 
-![Merkle trees](../media/merkle-trees.png)
+![Merkle trees.](../media/merkle-trees.png)
 
 _Figure 10: Merkle trees_
 

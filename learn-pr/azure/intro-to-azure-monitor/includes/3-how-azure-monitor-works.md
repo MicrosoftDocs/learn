@@ -21,7 +21,7 @@ Azure Monitor Metrics is a feature of Azure Monitor that collects numeric data f
 
 As soon as you create a resource in Azure, the Azure Monitor begins collecting data. You choose the values to display in the metrics graph for that resource. You can find **Metrics** under the **Monitoring** category of the resource pane in the Azure portal. Once you select **Metrics**, you will be able to select the **Metric Namespace**, **Metric** category, and **Aggregation** from the drop-down menu choices above the graph.
 
-:::image type="content" source="../media/azure-metrics.png" alt-text="Screenshot of metrics graph selected for a web app depicting average memory working set in a line graph format":::
+:::image type="content" source="../media/azure-metrics.png" alt-text="Screenshot of metrics graph selected for a web app depicting average memory working set in a line graph format.":::
 
 ## Azure Monitor agents
 Virtual machines and other compute resources require an agent to collect monitoring data required to measure the performance and availability of their guest operating system and workloads. The Azure Monitor agent (AMA) collects monitoring data from the guest operating system of virtual machines and delivers it to Azure Monitor.

@@ -1,10 +1,10 @@
-Once you've created and published your template spec, you can deploy it. In this unit you learn about the ways you can deploy a template spec.
+After you've created and published your template spec, you can deploy it. In this unit, you learn about the ways to deploy a template spec.
 
 ## Create a deployment by using a template spec
 
 ::: zone pivot="biceppowershell,jsonpowershell"
 
-To deploy a template spec to a resource group, you use the same `New-AzResourceGroupDeployment` cmdlet you're used to. Instead of specifying a template file, you specify a template spec resource ID, as shown in this example:
+To deploy a template spec to a resource group, you use the same `New-AzResourceGroupDeployment` cmdlet that you're used to. Instead of specifying a template file, you specify a template spec's resource ID, as shown in this example:
 
 ```azurepowershell
 New-AzResourceGroupDeployment `
@@ -27,7 +27,7 @@ Each of these cmdlets accepts the `-TemplateSpecId` parameter to initiate a temp
 
 ::: zone pivot="bicepcli,jsoncli"
 
-To deploy a template spec to a resource group, you use the same `az deployment group create` command you're used to. Instead of specifying a template file, you specify a template spec resource ID, as shown in this example:
+To deploy a template spec to a resource group, you use the same `az deployment group create` command that you're used to. Instead of specifying a template file, you specify a template spec's resource ID, as shown in this example:
 
 ```azurecli
 az deployment group create \
@@ -52,9 +52,9 @@ Each of these commands accepts the `--template-spec` argument to initiate a temp
 
 ## Use a template spec as a linked deployment
 
-To use a template spec from within another ARM template, you create a deployment that uses that template spec. This is called a _linked deployment_ because you are linking to a deployment template specified externally.
+To use a template spec from within another Azure Resource Manager template (ARM template), you create a deployment that uses that template spec. This is called a _linked deployment_ because you're linking to a deployment template specified externally.
 
-In Azure, a deployment is actually a resource, and it has the resource type `Microsoft.Resources/deployments`. When you deploy an ARM template, you're creating a deployment resource. The same concept applies when you deploy a template spec, like this:
+In Azure, a deployment is a resource that has the resource type `Microsoft.Resources/deployments`. When you deploy an ARM template, you're creating a deployment resource. The same concept applies when you deploy a template spec, like this:
 
 :::code language="json" source="code/4-template.json" range="15-22, 28-30" highlight="7-9" :::
 
@@ -70,15 +70,15 @@ When you have parameters to provide to the template spec deployment, you use the
 
 To use a template spec from within a Bicep file, you create a reference to the template spec, and then you create a deployment that uses that reference. Let's take a look at how to do this.
 
-First, you use the `existing` keyword to create a reference to the template spec, and to the version of the template spec you're using:
+First, you use the `existing` keyword to create a reference to the template spec, and to the version of the template spec that you're using:
 
 :::code language="bicep" source="code/4-template.bicep" range="6-12" :::
 
-Now that you have a reference to the template spec, you can create a deployment. In Azure, a deployment is actually a resource, and it has the resource type `Microsoft.Resources/deployments`. When you deploy a Bicep file, you're creating a deployment resource. The same concept applies when you deploy a template spec, like this:
+Now that you have a reference to the template spec, you can create a deployment. In Azure, a deployment is a resource that has the resource type `Microsoft.Resources/deployments`. When you deploy a Bicep file, you're creating a deployment resource. The same concept applies when you deploy a template spec, like this:
 
 :::code language="bicep" source="code/4-template.bicep" range="14-20, 26-27" highlight="5-7" :::
 
-Notice that the deployment includes a reference to the template spec version, and it uses the child resource accessor operator (`::`) to refer to the version, since the template spec version is a child resource of the template spec resource.
+Notice that the deployment includes a reference to the template spec version. It uses the child resource accessor operator (`::`) to refer to the version, because the template spec version is a child resource of the template spec resource.
 
 When you have parameters to provide to the template spec deployment, you use the `parameters` property:
 

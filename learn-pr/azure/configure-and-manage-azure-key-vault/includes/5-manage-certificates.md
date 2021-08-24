@@ -8,7 +8,7 @@ First, you can create self-signed certificates directly in the Azure portal. Thi
 
 Second, you can create an X.509 certificate signing request (CSR). This creates a public/private key pair in Key Vault along with a CSR you can pass over to your certification authority (CA). The signed X.509 certificate can then be merged with the held key pair to finalize the certificate in Key Vault as shown in the following diagram.
 
-![Diagram showing the process to create a certificate with your own certificate authority](../media/5-certificate-authority-1.png)
+![Diagram showing the process to create a certificate with your own certificate authority.](../media/5-certificate-authority-1.png)
 
 1. In the previous diagram, your application is creating a certificate which internally begins by creating a key in your Azure Key Vault.
 1. Key Vault returns a Certificate Signing Request (CSR) to your application.
@@ -20,7 +20,7 @@ This approach works with any certificate issuer and provides better security tha
 
 Third, you can connect your Key Vault with a trusted certificate issuer (referred to as an _integrated_ CA) and create the certificate directly in Azure Key Vault. This approach requires a one-time setup to connect the certificate authority. You can then request to create a certificate and the Key Vault will interact directly with the CA to fulfill the request in a similar process to the manual CSR creation process shown above. The full details of this process are presented in the following diagram.
 
-![Diagram showing the process to create a certificate with an integrated certificate authority](../media/5-certificate-authority-2.png)
+![Diagram showing the process to create a certificate with an integrated certificate authority.](../media/5-certificate-authority-2.png)
 
 1. In the previous diagram, your application is creating a certificate which internally begins by creating a key in your key vault.
 1. Key Vault sends a SSL Certificate Request to the CA.
@@ -54,7 +54,7 @@ Set-AzKeyVaultSecret -VaultName <vault-name> -Name <key-name> -SecretValue $secr
 
 Once a certificate is stored in your Azure Key Vault, you can use the Azure portal to explore the certificate properties as well as enable or disable a certificate to make it unavailable to clients.
 
-![Screenshot showing the certificate properties in the Azure portal](../media/5-certificate-properties.png)
+![Screenshot showing the certificate properties in the Azure portal.](../media/5-certificate-properties.png)
 
 ### Azure App Service integration
 
@@ -64,7 +64,7 @@ Once you have a public/private key pair certificate in your Azure Key Vault, you
 1. Select the **Private Key Certificate (.pfx)** tab.
 1. Select **+ Import Key Vault Certificate** as shown in the following screenshot.
 
-    ![Screenshot of the Azure portal where you can load a Key Vault certificate to an Azure App Service web app](../media/5-add-cert-to-webapp.png)
+    ![Screenshot of the Azure portal where you can load a Key Vault certificate to an Azure App Service web app.](../media/5-add-cert-to-webapp.png)
 
 1. You can then select the vault, which must be in the same subscription, and the secret containing the certificate.
     - The certificate must be an X.509 cert with a content type of `application/x-pkcs12` and cannot have a password. 

@@ -56,10 +56,10 @@ The following snippet is the _function.json_ file for this scenario.
 
 Our JSON configuration specifies that our function will be triggered when a message is added to a queue named **myqueue-items**. The return value of our function is then written to the **outTable** table in Azure Table storage. For PowerShell functions, output bindings are explicitly written to with the `Push-OutputBinding` cmdlet.
 
-This example is a simple illustration about how we configure bindings for a function. We could change the output to be an email using a SendGrid binding, or put an event onto a Service Bus to notify some other component in our architecture, or even have multiple output bindings to push data to various services.
+This example is a simple illustration of how we configure bindings for a function. We could change the output to be an email using a SendGrid binding, or put an event onto a Service Bus to notify some other component in our architecture, or even have multiple output bindings to push data to various services.
 
 > [!TIP]
-> To view and edit the contents of _function.json_ in the Azure portal, in the left menu pane of your function, under **Developer**, select **Code + Test**. In the function's path above the code box, select *function.json* from the dropdown list.
+> To view and edit the contents of _function.json_ in the Azure portal, from the Home page, select your function app, and in the right pane, select **JSON View**. The Resource JSON view displays the Resourse ID and the editable JSON code. To close the JSON view, select the **X** in to top right corner of the pane.
 
 ## Create a function in the Azure portal
 
@@ -84,30 +84,30 @@ The functions you create in a function app appear by selecting **Functions** und
 
 When you select a function in your function app, your function pane appears. To display and edit your code for your function, in the left menu pane, under **Developer**, select **Code + Test**. In the function's path above the code box, select *function.json* from the dropdown list, and then select **Test/Run** from the top menu bar for the Input/Output pane to appear. See the following screenshot.
 
-![Screenshot of the Azure portal showing the function editor pane, including the expanded Test/Run menu, with the selected "HttpTrigger1" function in our app service navigation and the Input tab highlighted.](../media/4-file-navigation.png)
+:::image type="content" source="../media/4-file-navigation.png" alt-text="Screenshot of the function editor pane showing the expanded Test/Run menu, with HttpTrigger1 function selected in app service navigation and Input tab highlighted." lightbox="../media/4-file-navigation.png":::
 
-As you can see, there's a pane on the right that includes tabs for **Input** and **Output**. Selecting the **Input** tab provides parameters to test the HTTP request for your function.
+As you can see, the pane on the right has tabs for **Input** and **Output**. Selecting the **Input** tab provides parameters to test the HTTP request for your function.
 
 ## Test your Azure function
 
-After you've created a function, you'll want to test it. There are a couple of approaches:
+After you've created a function, you'll want to test it. There are two approaches:
 
-- Manual execution
-- Testing from within the Azure portal itself
+- Running it manually
+- Testing it from within the Azure portal itself
 
-### Manual execution
+### Run function manually
 
-You can start a function by manually triggering the configured trigger. For instance, if you are using an HTTP trigger, you can use a tool, such as Postman or cURL, to initiate an HTTP request to your function endpoint URL, which is available from the HTTP trigger definition (**Get function URL**).
+You can start a function by manually triggering the configured trigger. For instance, if you are using an HTTP trigger, you can use a tool, such as Postman or cURL, to initiate an HTTP request to your function endpoint URL, which is available from the function definition (**Get function URL**).
 
 ### Test in the Azure portal
 
-The portal also provides a convenient way to test your functions. As previously described, after selecting **Test/Run** from the top menu bar, on the right side of the code box, a tabbed **Input/Output** pane appears. Here, you can provide parameters to test the HTTP request. When you select **Run** in this pane, the results appear in the **Output** tab, along with a status code in the **Logs** pane.
+The portal also provides a convenient way to test your functions. As previously described, after selecting **Test/Run** from the top menu bar, on the right side of the code box, a tabbed *Test* pane appears. Here, you can provide parameters to test the HTTP request. When you select **Run** in this pane, the results appear in the **Output** tab, along with a status code in the **Logs** pane.
 
 ## Monitoring and Application Insights dashboard
 
-The ability to monitor your functions is critical during development and in production. The Azure portal provides a monitoring dashboard if you turn on the Application Insights integration. In the left menu pane of your function app, under **Monitoring**, select **Logs** and open **Application Insights**. This Application Insights dashboard provides a quick way to view the history of function executions, and displays the timestamp, result code, duration, and operation ID populated by Application Insights.
+The ability to monitor your functions is critical during development and in production. The Azure portal provides a monitoring dashboard if you turn on the Application Insights integration. In the left menu pane of your function app, under **Monitoring**, select **Logs**, and open **Application Insights**. This Application Insights dashboard provides a quick way to view the history of function executions, and displays the timestamp, result code, duration, and operation ID populated by Application Insights.
 
-![Screenshot of the Azure portal showing an HTTP function Application Insights dashboard with several function results and their corresponding HTTP status codes, with the Monitoring menu item of the function highlighted.](../media/4-monitor-function.png)
+:::image type="content" source="../media/4-monitor-function.png" alt-text="Screenshot showing the HTTP function Application Insights dashboard with several function results, their corresponding HTTP status codes, and the Monitoring menu item of the function highlighted." lightbox="../media/4-monitor-function.png#lightbox":::
 
 ## Streaming logs pane
 

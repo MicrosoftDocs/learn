@@ -25,7 +25,7 @@ In this exercise, you'll add a Razor component to the home page of our applicati
 
 Save the file and the `dotnet watch run` command you executed in the previous module will restart the app and refresh it in the browser so that the `Counter` component shows up on the Home page.
 
-![Counter component on Home page](../media/counter-homepage.png)
+![Counter component on Home page.](../media/counter-homepage.png)
 
 ## Modify a component
 
@@ -74,4 +74,4 @@ Welcome to your new app.
 
 The `Index` component now has its own counter that increments by ten each time the **Click me** button is selected, as shown in the following image. The `Counter` component (`Counter.razor`) at `/counter` continues to increment by one. 
 
-![Home page with Counter update](../media/counter-homepage-modify.png)
+![Home page with Counter update.](../media/counter-homepage-modify.png)

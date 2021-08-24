@@ -16,7 +16,7 @@ The first step toward using Spark Structured Streaming is setting up Azure Event
 
 1. In the Azure portal, select **+ Create a resource**. Enter **event hubs** into the **Search the Marketplace** box, select **Event Hubs** from the results, and then select **Create**.
 
-    ![Screenshot of the Azure portal with selections for creating an event hub](../media/create-event-hubs.png)
+    ![Screenshot of the Azure portal with selections for creating an event hub.](../media/create-event-hubs.png)
 
 1. In the **Create Namespace** pane, enter the following information:
 
@@ -34,7 +34,7 @@ The first step toward using Spark Structured Streaming is setting up Azure Event
 
 1. After your Event Hubs namespace is provisioned, browse to it and add a new event hub by selecting the **+ Event Hub** button on the toolbar.
  
-   ![Screenshot of an Event Hubs namespace with the button for adding an event hub highlighted](../media/add-event-hub.png)
+   ![Screenshot of an Event Hubs namespace with the button for adding an event hub highlighted.](../media/add-event-hub.png)
 
 1. On the **Create Event Hub** pane, enter:
 
@@ -53,7 +53,7 @@ The first step toward using Spark Structured Streaming is setting up Azure Event
 
 2. Copy the connection string for the primary key by selecting the copy button.
 
-   ![Selected shared access policy with information about connection string and primary key](../media/copy-sas-key.png)
+   ![Selected shared access policy with information about connection string and primary key.](../media/copy-sas-key.png)
 
 3. Save the copied primary key to Notepad.exe or another text editor for later reference.
 
@@ -84,7 +84,7 @@ The first step toward using Spark Structured Streaming is setting up Azure Event
 
 1. Select **Create Cluster** to add a new cluster.
 
-    ![The create cluster page](../media/create-cluster.png)
+    ![The create cluster page.](../media/create-cluster.png)
 
 1. Enter a name for your cluster. Use your name or initials to easily differentiate your cluster from your coworkers.
 
@@ -104,7 +104,7 @@ The first step toward using Spark Structured Streaming is setting up Azure Event
 1. In the left pane, select **Workspace** > **Users**, and select your username (the entry with the house icon).
 1. In the pane that appears, select the arrow next to your name, and select **Import**.
 
-    ![The menu option to import the archive](../media/import-archive.png)
+    ![The menu option to import the archive.](../media/import-archive.png)
 
 1. In the **Import Notebooks** dialog box, select the URL and paste in the following URL:
 

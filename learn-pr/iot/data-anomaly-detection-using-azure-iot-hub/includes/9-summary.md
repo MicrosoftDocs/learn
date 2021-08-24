@@ -8,7 +8,7 @@ In this module, you learned how to:
 - Create a query to apply a built-in ML model for anomaly detection, using SQL
 - Create a dashboard to visualize data anomalies, using Power BI
 
-[![Graph of smooth vibrations](../media/vibration3.png)](../media/vibration3.png#lightbox)
+[![Graph of smooth vibrations.](../media/vibration3.png)](../media/vibration3.png#lightbox)
 
 ## Clean up
 

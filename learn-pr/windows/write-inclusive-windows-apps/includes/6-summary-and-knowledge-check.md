@@ -12,7 +12,7 @@ There are some tools available that can assist in pointing out which UI elements
 
 3. Change to inspecting more UI element properties, rather than just the shortlist, by selecting the following element in the tool. Unfortunately, not all properties are picked up, such as the accelerator keys we've added, so the tool has its limitations.
 
-![Setting all properties for inspection](../media/acessibility-insights-all-properties.png)
+![Setting all properties for inspection.](../media/acessibility-insights-all-properties.png)
 
 Of course, there's always more to do with inclusivity. We haven't addressed hearing impairment, nor addressed some severe impairments such as mental illness. But hopefully, this module has given you a good start when it comes to adding accessibility to your app, and you're now encouraged to design with it in mind.
 

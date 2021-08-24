@@ -57,17 +57,17 @@ Now that you've created a test environment, you're ready to set up the Azure ali
     | Type | **A**. Even though we're creating an alias, the base record type must still be either A, AAAA, or CNAME. |
     | Alias record set | **Yes** |
     | Alias type | You can select either **Azure resource** or **Zone record set**. In this case, select the **Azure resource**. |
-    | Azure resource | From the list of resources, select **myPublicIP**. |
+    | Azure resource | From the list of resources, select **myPublicIP**. If this resource isn't listed, wait several minutes and try creating the record set again. |
 
     When you're done, it should look like this.
 
-    ![Screenshot of Add record set](../media/6-aliasrecord-azurelb.png)
+    ![Screenshot of Add record set.](../media/6-aliasrecord-azurelb.png)
 
 1. Select **OK** to add the record to your zone.
 
 When the new alias record is created, it should look something like this:
 
-![Screenshot of the DNS zone, with an alias record created](../media/6-aliasrecord04.png)
+![Screenshot of the DNS zone, with an alias record created.](../media/6-aliasrecord04.png)
 
 ## Verify that the alias resolves to the load balancer
 
@@ -75,7 +75,7 @@ Now, you need to verify that the alias record is set up correctly. In a real-wor
 
 1. If you didn't copy the public IP address in a previous step, go to the resource group, and select **myPublicIP**. The IP address is on the upper-right side.
 
-   ![Screenshot of the DNS zone with an alias record created](../media/6-publicIpaddress.png)
+   ![Screenshot of the DNS zone with an alias record created.](../media/6-publicIpaddress.png)
 
 1. In a web browser, paste the public IP address as the URL.
 

@@ -1,6 +1,6 @@
 ## Functionality
 
-![Functionality category](../media/supporting-icons/functionality.png)
+![Functionality category.](../media/supporting-icons/functionality.png)
 
 ### Why ask these questions
 

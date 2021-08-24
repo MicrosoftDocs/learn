@@ -31,5 +31,6 @@ products:
 modules:
 - learn.student-evangelism.intro-to-python
 - learn.student-evangelism.python-object-oriented-programming
+- learn.student-evangelism.python-flask-build-ai-web-app
 trophy:
   uid: learn.languages.python-apps.trophy

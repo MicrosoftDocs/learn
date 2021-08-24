@@ -20,7 +20,7 @@ In this unit, you create an instance of a digital twins resource and collect the
 
 1. Under **Grant access to resource**, select **Assign Azure Digital Twins Data Owner Role**.
 
-    :::image type="content" source="../media/create-digital-twins-instance.png" alt-text="Screenshot showing the completed Create Resource pane for a digital twins instance" lightbox="../media/create-digital-twins-instance.png":::
+    :::image type="content" source="../media/create-digital-twins-instance.png" alt-text="Screenshot showing the completed Create Resource pane for a digital twins instance." lightbox="../media/create-digital-twins-instance.png":::
 
 1. Select **Review + create**. Then Select **Create**.
 
@@ -51,7 +51,7 @@ The next step is to save some important data used to connect other resources to 
 
     > [!NOTE]
     > If you get the following warning message, ignore it. You don't need to see other role assignments.
-    > :::image type="content" source="../media/permission-error.png" alt-text="Screenshot showing a permissions warning message" lightbox="../media/permission-error.png":::
+    > :::image type="content" source="../media/permission-error.png" alt-text="Screenshot showing a permissions warning message." lightbox="../media/permission-error.png":::
 
 1. Select **+ Add**, then select **Add role assignment**.
 

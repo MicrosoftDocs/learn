@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.monitor-java-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check of what you've learned
+  ms.date: 07/07/2021
+  author: roryp
+  ms.author: ropreddy
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+quiz:
+  questions:
+  - content: "Which of the following monitoring forms involve records of events?"
+    choices:
+    - content: "Traces"
+      isCorrect: false
+      explanation: "Incorrect. Traces are records of the paths of execution for programs and services."
+    - content: "Logs"
+      isCorrect: true
+      explanation: "Correct. Logs are records of events stored in a consistent, tabular format."
+    - content: "Metrics"
+      isCorrect: false
+      explanation: "Incorrect. Metrics are values that represent the relative health, stability, and availability of resources."    
+  - content: "Which feature of Application Insights allow you to view your application's performance in real time?"
+    choices:
+    - content: Availability.
+      isCorrect: false
+      explanation: "This feature is a recurring test to monitor the availability and responsiveness of applications at regular intervals."
+    - content: Custom Metrics.
+      isCorrect: false
+      explanation: "Incorrect. These metrics consist of custom performance indicators or business-specific metrics to provide deeper insights."
+    - content: Live Metrics.
+      isCorrect: true
+      explanation: "Correct. Live Metrics Stream enables you to probe the real-time metrics of your live application"
+  - content: "What query language is supported in Log Analytics to query logs, metrics and traces?"
+    choices:
+    - content: "Java"
+      isCorrect: false
+      explanation: "Incorrect. Java is a general purpose programming language and not supported in Query Analytics."
+    - content: "Kusto Query Language (KQL)"
+      isCorrect: true
+      explanation: "Log queries in Query Analytics are written in the Kusto Query Language (KQL)."
+    - content: "SQL"
+      isCorrect: false
+      explanation: "Incorrect. SQL is a database query language and not supported in Query Analytics."

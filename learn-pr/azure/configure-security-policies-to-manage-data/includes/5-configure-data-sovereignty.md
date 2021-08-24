@@ -11,7 +11,7 @@ Azure operates in multiple geographies around the world. Azure geography is a de
 
 Each Azure region is paired with another region within the same geography, forming a _region pair_. The exception is Brazil South, which is paired with a region outside its geography. Across the region pairs, Azure serializes platform updates (or planned maintenance) so that only one region is updated at a time. If an outage affecting multiple regions occurs, one region in each pair will be prioritized for recovery.
 
-![A Geography box contains a regional pair box, which in turn contains two region boxes, each with a box in it labeled datacenter. ](../media/M4_01_04_01.png)
+![A Geography box contains a regional pair box, which in turn contains two region boxes, each with a box in it labeled datacenter.](../media/M4_01_04_01.png)
 
 It's recommended that you configure business continuity and disaster recovery (BCDR) across regional pairs to benefit from Azure's isolation and VM policies. For apps that support multiple active regions, we recommend using both regions in a region pair, where possible. This approach will ensure optimal availability for apps and minimized recovery time in the event of a disaster.
 
@@ -23,7 +23,7 @@ The following illustration shows a hypothetical app that uses a regional pair fo
 
 ### Cross-region activities number key
 
-* **Azure Compute (IaaS)** - To ensure resources are available in another region during a disaster, you must provision additional compute resources in advance. For more information, see [Designing resilient apps for Azure](/azure/resiliency/resiliency-technical-guidance).
+* **Azure Compute (IaaS)** - To ensure resources are available in another region during a disaster, you must provision additional compute resources in advance. For more information, see [Designing resilient apps for Azure](/azure/architecture/framework/resiliency/design-resiliency).
 * **Azure Storage**- Geo-redundant storage (GRS) is configured by default when an Azure Storage account is created. With GRS, data is automatically replicated three times within the primary region, and three times in a paired region. For more information, see [Azure Storage redundancy](/azure/storage/common/storage-redundancy).
 * **Azure SQL Database** - With Azure SQL Database geo-replication, you can configure asynchronous replication of transactions to any region in the world; however, we recommend you deploy these resources in a paired region for most disaster recovery scenarios. For more information, see [Configure active geo-replication for Azure SQL Database in the Azure portal](/azure/sql-database/sql-database-active-geo-replication-portal).
 * **Azure Resource Manager** - Resource Manager inherently provides logical isolation of components across regions. This means that logical failures in one region are less likely to impact other regions.

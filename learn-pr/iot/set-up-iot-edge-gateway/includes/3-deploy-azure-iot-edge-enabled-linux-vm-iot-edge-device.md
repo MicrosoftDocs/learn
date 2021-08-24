@@ -1,6 +1,6 @@
 We can now deploy a virtual machine that uses our newly registered device identity to securely connect to the Azure cloud.  Since we are in the development phase, using a virtual machine will be a great way to test out our deployment before installing onto a physical device within the manufacturing facility.
 
-[![Developer](../media/developer.png)](../media/developer.png#lightbox)
+[![Developer.](../media/developer.png)](../media/developer.png#lightbox)
 
 In this unit, you'll deploy an Ubuntu Server VM with Azure IoT Edge runtime support from the Azure Marketplace.
 
@@ -12,13 +12,13 @@ If necessary, log in to your Azure portal using your Azure account credentials.
 
 1. We'll deploy an Azure IoT Edge enabled Linux VM using the iotedge-vm-deploy ARM Template.  To begin, click the button below:
 
-    [![Deploy to Azure Button for iotedge-vm-deploy](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fazure%2Fiotedge-vm-deploy%2Fms-learn%2FedgeDeploy.json)
+    [![Deploy to Azure Button for iotedge-vm-deploy.](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fazure%2Fiotedge-vm-deploy%2Fms-learn%2FedgeDeploy.json)
 
 1. Ensure that you're logged in with the account used to create the sandbox and make sure that you're using the "Microsoft Learn Sandbox" subscription.
 
 1. We will now fill in the available form fields:
 
-    [![Screenshot showing the iotedge-vm-deploy template](../media/iot-edge-vm-deploy.png)](../media/iot-edge-vm-deploy.png#lightbox)
+    [![Screenshot showing the iotedge-vm-deploy template.](../media/iot-edge-vm-deploy.png)](../media/iot-edge-vm-deploy.png#lightbox)
 
     **Subscription**: Ensure "Concierge Subscription" is selected.
 
@@ -43,6 +43,6 @@ If necessary, log in to your Azure portal using your Azure account credentials.
     The **DNS Name** can be obtained from the **Overview** section of the newly deployed virtual machine within the Azure portal.
 
     > [!div class="mx-imgBorder"]
-    > [![Screenshot showing the dns name of the IoT Edge virtual machine](../media/iot-edge-vm-dns-name.png)](../media/iot-edge-vm-dns-name.png)
+    > [![Screenshot showing the dns name of the IoT Edge virtual machine.](../media/iot-edge-vm-dns-name.png)](../media/iot-edge-vm-dns-name.png)
 
 Congratulations, that's the end of the unit! In the next unit, we will generate and configure IoT Edge Device CA Certificates to allow devices to securely connect to our IoT Edge Gateway.

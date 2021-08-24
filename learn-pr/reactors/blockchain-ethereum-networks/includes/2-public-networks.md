@@ -53,7 +53,6 @@ More details:
 - Supported client: [OpenEthereum](https://openethereum.github.io/?azure-portal=true)
 - Block time: 4 seconds
 - Kovan-specific links:
-  - [Faucet](https://faucet.kovan.network/?azure-portal=true)
   - [Explorer](https://kovan.etherscan.io/?azure-portal=true)
   - [GitHub](https://github.com/kovan-testnet/proposal/?azure-portal=true)
   - [Website](https://kovan-testnet.github.io/website/?azure-portal=true)

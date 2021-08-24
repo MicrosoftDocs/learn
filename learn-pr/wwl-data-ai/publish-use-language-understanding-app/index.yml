@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.publish-use-language-understanding-app
+metadata:
+  title: Publish and use a Language Understanding app
+  description: "Publish and use a Language Understanding app"
+  ms.date: 08/20/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Publish and use a Language Understanding app
+summary: After creating a Language Understanding app, you can publish it and consume it from client applications.
+abstract: |
+  After completing this module, you will be able to:
+  - Set publishing configuration options for a Language Understanding app
+  - Process predictions from a Language Understanding app
+  - Deploy a language understanding app in a container
+prerequisites: |
+  Before starting this module, you should already have:
+  - Familiarity with Azure and the Azure portal.
+  - Experience programming with C# or Python.
+  - Experience creating a Language Understanding app
+  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/learn/paths/csharp-first-steps/) or [Take your first steps with Python](/learn/paths/python-first-steps/) learning path first.
+iconUrl: /learn/achievements/language-understanding-publish.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+products:
+- azure-cognitive-services
+- azure-language-understanding
+units:
+- learn.wwl.publish-use-language-understanding-app.introduction
+- learn.wwl.publish-use-language-understanding-app.set-publishing-configuration-options
+- learn.wwl.publish-use-language-understanding-app.process-predictions
+- learn.wwl.publish-use-language-understanding-app.use-container
+- learn.wwl.publish-use-language-understanding-app.exercise-create-client-app
+- learn.wwl.publish-use-language-understanding-app.knowledge-check
+- learn.wwl.publish-use-language-understanding-app.summary
+badge:
+  uid: learn.wwl.publish-use-language-understanding-app.badge

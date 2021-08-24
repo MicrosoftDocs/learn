@@ -59,33 +59,33 @@ Policies applied at the global scope affect all APIs within the instance of API 
 
 To use the global scope, in your API Management service pane, in the left menu pane, under **API Management**, select **APIs**, and then select **All APIs** in the middle menu pane. You can open the XML editor by selecting the tag symbol **</>** in the **Inbound processing**, **Outbound processing**, or **Backend** sections:
 
-![Global All API Scope](../media/2-global-scope.png)
+![Global All API Scope.](../media/2-global-scope.png)
 
 The policy editor that appears contains default XML content. On the right, you can see shortcuts that add policies:
 
-![Global Scope Editor](../media/2-global-scope-editor.png)
+![Global Scope Editor.](../media/2-global-scope-editor.png)
 
 To create policy, you can manually edit the XML in the policy editor. Alternatively, on the **All APIs** pane, you can select **Add policy** to start a wizard that helps you to add policy with the correct syntax:
 
-![Global All API Scope to add policy](../media/2-global-policy-wizard.png)
+![Global All API Scope to add policy.](../media/2-global-policy-wizard.png)
 
 ### Product
 
 In API Management, you can assemble one or more APIs into a single product and then manage access to that product as a single entity. Policies applied to the product scope affect all the APIs in that product. APIs in other products are unaffected. When you manage a product in the Azure portal, select the **Policies** pane to bring up the XML policy editor:
 
-![Product Scope](../media/2-products-scope.png)
+![Product Scope.](../media/2-products-scope.png)
 
 ### API
 
 Policies applied at the API scope affect only a single API. To set a policy at the API scope, on the API Management home page, select **APIs**, and then select the API you want to manage. Finally, under the **Design** tab, select **All operations**:
 
-![API Scope](../media/2-api-scope.png)
+![API Scope.](../media/2-api-scope.png)
 
 ### Operation
 
 Policies applied at the operation scope affect only one operation within the API. In the example below, the administrator has selected the **GetSpeaker** operation within the **Demo Conference API** and can set inbound, outbound, or backend policies that apply only to that operation:
 
-![API Operation Scope](../media/2-operation-scope.png)
+![API Operation Scope.](../media/2-operation-scope.png)
 
 ## Which order are policies applied in?
 

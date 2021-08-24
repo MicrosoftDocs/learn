@@ -112,7 +112,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
    Your file should look like this example:
 
-    ```yaml
+    ```yml
     name: Build and push the tagged build to production
 
     on:
@@ -130,11 +130,41 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
     Leave the `checkout` option like you did when you created the staging image.
 
+1. Create a new step that will gather the necessary version information. To do this you'll use the `::set-output` internal command. Add the following lines below the checkout action:
+
+    ```yml
+    - name: Fetch latest version
+      id: fetch_version
+      run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
+    ```
+
+    Your YAML file should be looking like this:
+
+    ```yaml
+    name: Build and push the tagged build to production
+
+    on:
+      push:
+        tags:
+          - 'v*'
+
+    jobs:
+      build_push_image:
+        runs-on: ubuntu-20.04
+
+        steps:
+          - uses: actions/checkout@v2
+
+          - name: Fetch latest version
+            id: fetch_version
+            run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
+    ```
+
 1. In the right panel, search for **Docker Login**
 
     In the panel for the search result item, under **Installation**, select the copy icon to copy the usage YAML.
 
-    :::image type="content" source="../media/6-3-docker-login.png" alt-text="Screenshot showing the search results listing Docker Login":::
+    :::image type="content" source="../media/6-3-docker-login.png" alt-text="Screenshot showing the search results listing Docker Login.":::
 
     > [!NOTE]
     > Docker action prior to version 2 had the login flow built-in, however, on versions 2 and above, these actions were separated. This is why we need two actions to set the entire workflow correctly.
@@ -155,6 +185,10 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
 
         steps:
           - uses: actions/checkout@v2
+
+          - name: Fetch latest version
+            id: fetch_version
+            run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
 
           - name: Docker Login
             # You may pin to the exact commit or the version.
@@ -196,6 +230,10 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
         steps:
           - uses: actions/checkout@v2
 
+          - name: Fetch latest version
+            id: fetch_version
+            run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
+
           - name: Docker Login
             # You may pin to the exact commit or the version.
             # uses: docker/login-action@f3364599c6aa293cdc2b8391b1b56d0c30e45c8a
@@ -235,7 +273,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
     |password     |`docker/login`|`${{ secrets.ACR_PASSWORD }}`                   |
     |registry     |`docker/login`|`${{ secrets.ACR_NAME }}`                       |
     |repository   |`docker/build-and-push`|contoso-website                                 |
-    |tags         |`docker/build-and-push`|the version number obtained by `${GITHUB_REF#refs/tags}` |
+    |tags         |`docker/build-and-push`|the version number obtained by the `fetch_version` step |
     |context      |`docker/build-and-push`|`.`                                             |
     |push      |`docker/build-and-push`|`true`                                             |
 
@@ -258,6 +296,10 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
         steps:
           - uses: actions/checkout@v2
 
+          - name: Fetch latest version
+            id: fetch_version
+            run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
+
           - name: Docker Login
             uses: docker/login-action@v1
             with:
@@ -269,9 +311,11 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
             uses: docker/build-push-action@v2
             with:
               context: .
-              tags: ${{secrets.ACR_NAME}}/contoso-website:latest,${{secrets.ACR_NAME}}/contoso-website:${GITHUB_REF#refs/tags}
+              tags: ${{secrets.ACR_NAME}}/contoso-website:latest,${{secrets.ACR_NAME}}/contoso-website:${{ steps.fetch_version.outputs.TAG }}
               push: true
     ```
+
+    Using `steps.` in the YAML is a common practice to refer to previous steps in the pipeline. When we used `set-output` in the `fetch_version` step, we set the output of the step to the value of the `GITHUB_REF` variable. This output is now available in the pipeline inside the `steps` object.
 
 1. Before you save the file, we'll also add another action between the checkout action and the login action to set up the build engine for Docker to use. This action is called `docker/setup-buildx-action` and you'll use `v1`.
 
@@ -299,8 +343,9 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
         steps:
           - uses: actions/checkout@v2
 
-          - name: Set up Buildx
-            uses: docker/setup-buildx-action@v1
+          - name: Fetch latest version
+            id: fetch_version
+            run: echo ::set-output name=TAG::${GITHUB_REF#refs/tags/}
 
           - name: Docker Login
             uses: docker/login-action@v1
@@ -313,7 +358,7 @@ The `jobs` key is set to run on `ubuntu-latest`, let's fix that version to `ubun
             uses: docker/build-push-action@v2
             with:
               context: .
-              tags: ${{secrets.ACR_NAME}}/contoso-website:latest,${{secrets.ACR_NAME}}/contoso-website:${GITHUB_REF#refs/tags}
+              tags: ${{secrets.ACR_NAME}}/contoso-website:latest,${{secrets.ACR_NAME}}/contoso-website:${{ steps.fetch_version.outputs.TAG }}
               push: true
     ```
 

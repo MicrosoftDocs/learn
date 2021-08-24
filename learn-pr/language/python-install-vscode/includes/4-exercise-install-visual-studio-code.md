@@ -2,7 +2,7 @@ With Python installed on your system, it's time to turn our attention to a tool 
 
 ## Tools to write Python code
 
-You typically write Python syntax in a text file and save it to your local hard drive. You can write code by using a simple text file editor, like Notepad in Windows. Notepad edits ASCII text, a simple standard text file format.  
+You typically write Python syntax in a text file and save it to your local hard drive. You can write code by using a text file editor, like Notepad in Windows. Notepad edits ASCII text, a simple standard text file format.  
 
 You always want to avoid any text editor that includes formatting options, like bold, underline, or italics, or any other program that has word-processing features. So you shouldn't write code in Microsoft Word or TextEdit on macOS. These programs will include additional formatting instructions that the Python compiler won't understand.
 
@@ -16,23 +16,18 @@ Microsoft also provides the Python extension for Visual Studio Code. This extens
 
 This section will walk you through downloading the installer from the Visual Studio Code website.
 
-### Step 1 - Download the installer
+1. In your browser, navigate to [Visual Studio Code download page](https://code.visualstudio.com/Download?azure-portal=true).
 
-Go to the [Visual Studio Code download page](https://code.visualstudio.com/Download?azure-portal=true).
+    The web page displays logos for Windows, Linux, and Mac.
 
-The web page displays logos for Windows, Linux, and Mac.
+1. Select and download the Windows installer. Most browsers give you the option to save the file to your local computer (usually in your Downloads folder) or immediately run the installer file.
 
-Download the Windows installer. Most browsers give you the option to save the file to your local computer (usually in your Downloads folder) or immediately run the installer file.
+    > [!NOTE]
+    > If you downloaded the installer, you might need to open File Explorer and go to your _Downloads_ folder, or wherever your web browser saved the installer file.
 
-### Step 2 - Start the installer
+1. Double-click the installer file to start the installation process.
 
-If you downloaded the installer, you might need to open File Explorer and go to your Downloads folder, or wherever your web browser saved the installer file.
-
-Double-click the installer file to start the installation process.
-
-### Step 3 - Start Visual Studio Code
-
-After the installation is done, you can immediately start Visual Studio Code.
+    After the installation is done, you can immediately start Visual Studio Code.
 
 ::: zone-end
 
@@ -46,31 +41,26 @@ This section will walk you through downloading the installer from the Visual Stu
 
 For instructions on using a package manager like APT or YUM to install Visual Studio Code from a terminal session, see [Visual Studio Code on Linux](https://code.visualstudio.com/docs/setup/linux?azure-portal=true).
 
-### Step 1 - Download the installer 
+1. In your browser, navigate to [Visual Studio Code download page](https://code.visualstudio.com/Download?azure-portal=true).
 
-Go to the [Visual Studio Code download page](https://code.visualstudio.com/Download?azure-portal=true).
+    The web page displays logos for Windows, Linux, and Mac.
 
-The web page displays logos for Windows, Linux, and Mac.
+1. Under the Linux logo, select either the **.deb** installer (for .deb-based package managers) or the **.rpm** installer (for .rpm-based package managers).
 
-Under the Linux logo, select either the **.deb** installer (for .deb-based package managers) or the **.rpm** installer (for .rpm-based package managers).
+    > [!NOTE]
+    > If you downloaded the installer, you might need to open your file explorer and go to your Downloads folder, or wherever your web browser saved the installer file.
 
-### Step 2 - Start the installer
+1. Double-click the installer file to start the installation. On Ubuntu and Fedora, double-clicking the installer opens the Software application. This application provides a convenient way to view details about the application you're about to install. In this case, select **Install**.
 
-If you downloaded the installer, you might need to open your file explorer and go to your Downloads folder, or wherever your web browser saved the installer file.
+    You might be asked to authenticate by using your account password.
 
-Double-click the installer file to start the installation. On Ubuntu and Fedora, double-clicking the installer opens the Software application. This application provides a convenient way to view details about the application you're about to install. In this case, select **Install**.
+    After a moment, Visual Studio Code should be installed.
 
-You might be asked to authenticate by using your account password.
-
-After a moment, Visual Studio Code should be installed.
-
-### Step 3 - Start Visual Studio Code
-
-The instructions for installing Visual Studio Code differ, depending on which desktop environment your distribution of Linux uses. You'll need to search through the list of applications installed on your computer.
-
-For example, if your distribution uses the GNOME desktop, you should be able to locate the Show Applications icon (a grid of dots) docked on the left side of the screen, usually near the bottom. This icon will open a full-screen listing of all applications installed on your system. The Visual Studio Code icon should be included in the list.
-
-Select the Visual Studio Code icon to start the application.
+    > [!NOTE]
+    > The instructions for installing Visual Studio Code differ, depending on which desktop environment your distribution of Linux uses. You'll need to search through the list of applications installed on your computer.
+    > For example, if your distribution uses the GNOME desktop, you should be able to locate the Show Applications icon (a grid of dots) docked on the left side of the screen, usually near the bottom. This icon will open a full-screen listing of all applications installed on your system. The Visual Studio Code icon should be included in the list.
+    
+1. Select the Visual Studio Code icon to start the application.
 
 ::: zone-end
 
@@ -80,25 +70,19 @@ Select the Visual Studio Code icon to start the application.
 
 This section will walk you through downloading and installing Visual Studio Code.
 
-### Step 1 - Download Visual Studio Code
+1. In your browser, navigate to [Visual Studio Code download page](https://code.visualstudio.com/Download?azure-portal=true).
 
-Go to the [Visual Studio Code download page](https://code.visualstudio.com/Download?azure-portal=true).
+    The web page displays logos for Windows, Linux, and Mac.
 
-The web page displays logos for Windows, Linux, and Mac.
+1. Download the Mac version. Most browsers give you the option to save the file to your local computer (usually in your Downloads folder), or immediately run the file.
 
-Download the Mac version. Most browsers give you the option to save the file to your local computer (usually in your Downloads folder), or immediately run the file.
+    You should move the file to the Applications folder before you open it, as described in the next step.
 
-You should move the file to the Applications folder before you open it, as described in the next step.
+1. Open Finder. Drag the Visual Studio Code file from the Downloads stack on the Dock to the Applications folder in Finder.
 
-### Step 2 - Move the app from the Downloads folder to the Applications folder
+1. Double-click the **Visual Studio Code** app from the Applications folder.  
 
-Open Finder. Drag the Visual Studio Code file from the Downloads stack on the Dock to the Applications folder in Finder.
-
-### Step 3 - Start Visual Studio Code from the Applications folder
-
-Double-click the **Visual Studio Code** app from the Applications folder.  
-
-> [!IMPORTANT]
-> You might see a warning that Visual Studio Code can't be opened because Apple can't check it for malicious software. If that happens, select **OK** to dismiss the message. Then right-click **Visual Studio Code** in the Applications folder, and select **Open menu**. If you select this option, Visual Studio Code should open without any further issues.
+    > [!IMPORTANT]
+    > You might see a warning that Visual Studio Code can't be opened because Apple can't check it for malicious software. If that happens, select **OK** to dismiss the message. Then right-click **Visual Studio Code** in the Applications folder, and select **Open menu**. If you select this option, Visual Studio Code should open without any further issues.
 
 ::: zone-end

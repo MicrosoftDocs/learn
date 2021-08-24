@@ -32,7 +32,7 @@ The integration with Microsoft Defender for Identity allows you to pivot directl
 
 ### Microsoft Secure Score
 
-Forwards Defender for Endpoint signals to Microsoft Secure Score in the Microsoft 365 security center. Turning on this feature gives Microsoft Secure Score visibility into the devices security posture. Forwarded data is stored and processed in the same location as the your Microsoft Secure Score data.
+Forwards Defender for Endpoint signals to Microsoft Secure Score in the Microsoft 365 security center. Turning on this feature gives Microsoft Secure Score visibility into the devices security posture. Forwarded data is stored and processed in the same location as the Microsoft Secure Score data.
 
 ### Office 365 Threat Intelligence connection
 

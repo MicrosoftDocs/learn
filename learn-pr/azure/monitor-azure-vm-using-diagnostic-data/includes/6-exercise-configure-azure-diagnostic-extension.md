@@ -109,8 +109,9 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
 1. At the top of the portal, select **Dashboard**, and then select **KPI Dashboard**.
 
-    ![Screenshot that shows the dashboard selection drop-down list](../media/6-view-dashboard.png)
+    ![Screenshot that shows the dashboard selection drop-down list.](../media/6-view-dashboard.png)
 
 1. Explore the dashboard. Try changing the **UTC Time** range to **Past 30 minutes**.
 
     ![Screenshot that shows the new KPI dashboard with the three graphs created earlier](../media/6-kpi-dashboard.png)
+

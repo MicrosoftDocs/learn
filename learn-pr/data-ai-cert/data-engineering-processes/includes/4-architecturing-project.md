@@ -39,4 +39,4 @@ The holistic workflow:
 
 The following diagram provides a high-level visualization of the solution:
 
-![Diagram of the solution's high-level architecture](../media/4-high-level-architecture.png)
+![Diagram of the solution's high-level architecture.](../media/4-high-level-architecture.png)

@@ -15,7 +15,8 @@ In this exercise, you'll complete the following steps:
 The Static Web Apps CLI, also known as SWA CLI, is a local development tool that allows you to run your web app and API locally and emulate authentication and authorization servers.
 
 1. Open a terminal on your computer.
-1. Install the CLI using this command:
+
+1. Install the CLI running the following command.
 
     ```bash
     npm install -g @azure/static-web-apps-cli
@@ -23,12 +24,15 @@ The Static Web Apps CLI, also known as SWA CLI, is a local development tool that
 
 ## Run the app locally
 
-We'll now run the app and API locally with a development server. This way you'll be able to see and test your changes, as your make them in the code.
+We'll now run the app and API locally with a development server. This way, you'll be able to see and test your changes, as your make them in the code.
 
 1. Open the project in Visual Studio Code.
-1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
-1. Type and select **Terminal: Create New Integrated Terminal**
-1. Go to the folder of your preferred front-end framework, as shown below:
+
+1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>.
+
+1. Enter and select **Terminal: Create New Integrated Terminal**.
+
+1. Go to the folder of your preferred front-end framework, as follows:
 
    ::: zone pivot="angular"
 
@@ -54,7 +58,7 @@ We'll now run the app and API locally with a development server. This way you'll
 
    ::: zone-end
 
-   ::: zone pivot="vue"
+  ::: zone pivot="vue"
 
    ```bash
    cd vue-app
@@ -62,7 +66,7 @@ We'll now run the app and API locally with a development server. This way you'll
 
    ::: zone-end
 
-1. Run the front-end client application using a development server.
+5. Run the front-end client application using a development server.
 
    ::: zone pivot="angular"
 
@@ -96,11 +100,13 @@ We'll now run the app and API locally with a development server. This way you'll
 
    ::: zone-end
 
-Leave this server running in the background. We'll now run the API and authentication server emulator using the SWA CLI.
+    Leave this server running in the background. We'll now run the API and authentication server emulator using the SWA CLI.
 
-1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
-1. Type and select **Terminal: Create New Integrated Terminal**
-1. Run the SWA CLI using this command:
+6. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>.
+
+7. Enter and select **Terminal: Create New Integrated Terminal**.
+
+8. Run the SWA CLI by running the following command:
 
    ::: zone pivot="angular"
 
@@ -134,7 +140,7 @@ Leave this server running in the background. We'll now run the API and authentic
 
    ::: zone-end
 
-1. Browse to `http://localhost:4280`
+9. Browse to `http://localhost:4280`.
 
 The final port used by the SWA CLI is different than the one you've seen before, because it uses a reverse proxy to forward requests to the three different components:
 
@@ -142,9 +148,9 @@ The final port used by the SWA CLI is different than the one you've seen before,
 - The authentication and authorization emulator
 - The API hosted by the Functions runtime
 
-:::image type="content" source="../media/static-web-apps-cli-architecture.png" alt-text="Static Web Apps CLI architecture":::
+:::image type="content" source="../media/static-web-apps-cli-architecture.png" alt-text="Static Web Apps CLI architecture.":::
 
-Now let the application running while we modify the code.
+Now, let the application running while we modify the code.
 
 ## Get the user login status
 
@@ -152,7 +158,7 @@ First, we need to access the user login status by making a query to `/.auth/me` 
 
 ::: zone pivot="angular"
 
-1. Create the file `angular-app/src/app/core/models/user-info.ts`:
+1. Create the file `angular-app/src/app/core/models/user-info.ts`.
 
    ```typescript
     export interface UserInfo {
@@ -163,7 +169,7 @@ First, we need to access the user login status by making a query to `/.auth/me` 
     }
     ```
 
-1. Edit the file `angular-app/src/app/core/components/nav.component.ts` and add this method in the `NavComponent` class:
+1. Edit the file `angular-app/src/app/core/components/nav.component.ts`, and add the following method in the `NavComponent` class.
 
     ```typescript
     async getUserInfo() {
@@ -179,7 +185,7 @@ First, we need to access the user login status by making a query to `/.auth/me` 
     }
     ```
 
-1. Create a new class property `userInfo` and store the result of `getUserInfo()` when the component is initialized. For that, you also need to implement the `OnInit` interface and update the imports:
+1. Create a new class property `userInfo`, and store the result of `getUserInfo()` when the component is initialized. For that, you also need to implement the `OnInit` interface and update the imports.
 
     ```typescript
     import { Component, OnInit } from '@angular/core';
@@ -201,7 +207,7 @@ First, we need to access the user login status by making a query to `/.auth/me` 
 
 ::: zone pivot="react"
 
-1. Edit the file `react-app/src/components/NavBar.js` and to add this code at the top of the function and update the imports:
+Edit the file `react-app/src/components/NavBar.js`, and to add the following code at the top of the function and update the imports.
 
     ```jsx
     import React, { useState, useEffect } from 'react';
@@ -238,7 +244,7 @@ First, we need to access the user login status by making a query to `/.auth/me` 
 
 ::: zone pivot="svelte"
 
-1. Edit the file `svelte-app/src/components/NavBar.svelte` and add this code in the script part:
+Edit the file `svelte-app/src/components/NavBar.svelte`, and add the following code in the script part.
 
     ```javascript
     import { onMount } from 'svelte';
@@ -266,7 +272,7 @@ First, we need to access the user login status by making a query to `/.auth/me` 
 
 ::: zone pivot="vue"
 
-1. Edit the file `vue-app/src/components/nav-bar.vue` and add `userInfo` to the data object:
+1. Edit the file `vue-app/src/components/nav-bar.vue`, and add `userInfo` to the data object.
 
     ```javascript
     ...
@@ -280,7 +286,7 @@ First, we need to access the user login status by making a query to `/.auth/me` 
       },
     ```
 
-1. Add the `getUserInfo()` method:
+1. Add the `getUserInfo()` method.
 
     ```javascript
     ...
@@ -299,7 +305,7 @@ First, we need to access the user login status by making a query to `/.auth/me` 
     },
     ```
 
-1. Finally, add the `created` lifecycle hook to the component:
+1. Finally, add the `created` lifecycle hook to the component.
 
     ```javascript
     async created() {
@@ -313,23 +319,23 @@ First, we need to access the user login status by making a query to `/.auth/me` 
 
 ## Add login and logout buttons
 
-The user information will be `undefined` if we're not logged in, our changes won't be visible for now. It's time to add login buttons for the different providers.
+The user information will be `undefined` if we're not logged in, so our changes won't be visible for now. It's time to add login buttons for the different providers.
 
 ::: zone pivot="angular"
 
-1. Edit the file `angular-app/src/app/core/components/nav.component.ts` to add a list of providers in the `NavComponent` class:
+1. Edit the file `angular-app/src/app/core/components/nav.component.ts` to add a list of providers in the `NavComponent` class.
 
     ```typescript
     providers = ['twitter', 'github', 'aad'];
     ```
 
-1. Add the `redirect` property below, to capture the current URL for the post login redirection:
+1. Add the following `redirect` property to capture the current URL for the post login redirection.
 
     ```typescript
     redirect = window.location.pathname;
     ```
 
-1. Add this code at the bottom of the template to display the login and logout buttons.
+1. Add the following code at the bottom of the template to display the login and logout buttons.
 
     ```typescript
     <nav class="menu auth">
@@ -347,31 +353,31 @@ The user information will be `undefined` if we're not logged in, our changes won
     </nav>
     ```
 
-    If the user isn't logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>` and sets the redirection URL to the current page.
+    If the user isn't logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>`, and sets the redirection URL to the current page.
 
-    Otherwise if the user is already logged in, we display a logout button that links to `/.auth/logout` and also set the redirection URL to the current page.
+    Otherwise, if the user is already logged in, we display a logout button that links to `/.auth/logout`, and also sets the redirection URL to the current page.
 
-You should now see this in your browser:
+You should now see this webpage in your browser.
 
-:::image type="content" source="../media/my-shopping-list-app-auth-angular.png" alt-text="Angular web app with login buttons":::
+:::image type="content" source="../media/my-shopping-list-app-auth-angular.png" alt-text="Angular web app with login buttons.":::
 
 ::: zone-end
 
 ::: zone pivot="react"
 
-1. Edit the file `react-app/src/components/NavBar.js` to add a list of providers at the top of the function:
+1. Edit the file `react-app/src/components/NavBar.js` to add a list of providers at the top of the function.
 
     ```jsx
     const providers = ['twitter', 'github', 'aad'];
     ```
 
-1. Add the `redirect` variable just below, to capture the current URL for the post login redirection:
+1. Add the following `redirect` variable below the first variable to capture the current URL for the post login redirection.
 
     ```jsx
     const redirect = window.location.pathname;
     ```
 
-1. Add this code at the bottom of the JSX template to display the login and logout buttons.
+1. Add the following code to the bottom of the JSX template to display the login and logout buttons.
 
     ```jsx
     ...
@@ -396,31 +402,31 @@ You should now see this in your browser:
     </div>
     ```
 
-    If the user isn't logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>` and sets the redirection URL to the current page.
+    If the user isn't logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>`, and sets the redirection URL to the current page.
 
-    Otherwise if the user is already logged in, we display a logout button that links to `/.auth/logout` and also set the redirection URL to the current page.
+    Otherwise, if the user is already logged in, we display a logout button that links to `/.auth/logout`, and also sets the redirection URL to the current page.
 
-You should now see this in your browser:
+You should now see this webpage in your browser.
 
-:::image type="content" source="../media/my-shopping-list-app-auth-react.png" alt-text="React web app with login buttons":::
+:::image type="content" source="../media/my-shopping-list-app-auth-react.png" alt-text="React web app with login buttons.":::
 
 ::: zone-end
 
 ::: zone pivot="svelte"
 
-1. Edit the file `svelte-app/src/components/NavBar.svelte` to add a list of providers at the top of the script:
+1. Edit the file `svelte-app/src/components/NavBar.svelte` to add a list of providers at the top of the script.
 
     ```javascript
     const providers = ['twitter', 'github', 'aad'];
     ```
 
-1. Add the `redirect` variable just below, to capture the current URL for the post login redirection:
+1. Add the following `redirect` variable below the first variable to capture the current URL for the post login redirection.
 
     ```javascript
     const redirect = window.location.pathname;
     ```
 
-1. Add this code at the bottom of the template to display the login and logout buttons.
+1. Add the following code to the bottom of the template to display the login and logout buttons.
 
     ```html
     ...
@@ -447,19 +453,19 @@ You should now see this in your browser:
     </div>
     ```
 
-    If the user isn't logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>` and sets the redirection URL to the current page.
+    If the user isn't logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>`, and sets the redirection URL to the current page.
 
-    Otherwise if the user is already logged in, we display a logout button that links to `/.auth/logout` and also set the redirection URL to the current page.
+    Otherwise, if the user is already logged in, we display a logout button that links to `/.auth/logout`, and also sets the redirection URL to the current page.
 
-You should now see this in your browser:
+You should now see this webpage in your browser.
 
-:::image type="content" source="../media/my-shopping-list-app-auth-svelte.png" alt-text="Svelte web app with login buttons":::
+:::image type="content" source="../media/my-shopping-list-app-auth-svelte.png" alt-text="Svelte web app with login buttons.":::
 
 ::: zone-end
 
 ::: zone pivot="vue"
 
-1. Edit the file `vue-app/src/components/nav-bar.vue` and add a list of providers to the data object:
+1. Edit the file `vue-app/src/components/nav-bar.vue`, and add a list of providers to the data object.
 
     ```javascript
     ...
@@ -471,7 +477,7 @@ You should now see this in your browser:
       },
     ```
 
-1. Add the `redirect` property below, to capture the current URL for the post login redirection:
+1. Add the following`redirect` property to capture the current URL for the post login redirection.
 
     ```javascript
     ...
@@ -483,7 +489,7 @@ You should now see this in your browser:
       },
     ```
 
-1. Add this code at the bottom of the template to display the login and logout buttons.
+1. Add the following code to the bottom of the template to display the login and logout buttons.
 
     ```html
     ...
@@ -509,23 +515,23 @@ You should now see this in your browser:
     </template>
     ```
 
-    If the user isn't logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>` and sets the redirection URL to the current page.
+    If the user isn't logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>`, and sets the redirection URL to the current page.
 
-    Otherwise if the user is already logged in, we display a logout button that links to `/.auth/logout` and also set the redirection URL to the current page.
+    Otherwise, if the user is already logged in, we display a logout button that links to `/.auth/logout`, and also sets the redirection URL to the current page.
 
-You should now see this in your browser:
+You should now see this webpage in your browser.
 
-:::image type="content" source="../media/my-shopping-list-app-auth-vue.png" alt-text="Vue web app with login buttons":::
+:::image type="content" source="../media/my-shopping-list-app-auth-vue.png" alt-text="Vue web app with login buttons.":::
 
 ::: zone-end
 
 ## Display the user login status
 
-Before testing our authentication workflow, let's display the user details about the logged in user.
+Before testing our authentication workflow, let's display the user details about the logged-in user.
 
 ::: zone pivot="angular"
 
-Edit the file `angular-app/src/app/core/components/nav.component.ts` and add this code at the bottom of the template:
+Edit the file `angular-app/src/app/core/components/nav.component.ts`, and add this code to the bottom of the template.
 
 ```html
 <div class="user" *ngIf="userInfo">
@@ -538,7 +544,7 @@ Edit the file `angular-app/src/app/core/components/nav.component.ts` and add thi
 > [!NOTE]
 > The `userDetails` property can be either a username or email address, depending on the identity provided used to log in.
 
-Your completed file should now look like this:
+Your completed file should now look like the following:
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -605,7 +611,7 @@ export class NavComponent implements OnInit {
 
 ::: zone pivot="react"
 
-Edit the file `react-app/src/components/NavBar.js` and add this code at the bottom of the JSX template to display the login status:
+Edit the file `react-app/src/components/NavBar.js`, and add this code to the bottom of the JSX template to display the login status.
 
 ```jsx
 ...
@@ -628,7 +634,7 @@ Edit the file `react-app/src/components/NavBar.js` and add this code at the bott
 > [!NOTE]
 > The `userDetails` property can be either a username or email address, depending on the identity provided used to log in.
 
-Your completed file should now look like this:
+Your completed file should now look like the following:
 
 ```jsx
 import React, { useState, useEffect } from 'react';
@@ -706,7 +712,7 @@ export default NavBar;
 
 ::: zone pivot="svelte"
 
-Edit the file `svelte-app/src/components/NavBar.svelte` and add this code at the bottom of the template to display the login status:
+Edit the file `svelte-app/src/components/NavBar.svelte`, and add this code to the bottom of the template to display the login status.
 
 ```html
 ...
@@ -727,7 +733,7 @@ Edit the file `svelte-app/src/components/NavBar.svelte` and add this code at the
 > [!NOTE]
 > The `userDetails` property can be either a username or email address, depending on the identity provided used to log in.
 
-Your completed file should now look like this:
+Your completed file should now look like the following:
 
 ```html
 <script>
@@ -802,7 +808,7 @@ Your completed file should now look like this:
 
 ::: zone pivot="vue"
 
-Edit the file `vue-app/src/components/nav-bar.vue` and add this code at the bottom of the template to display the login status:
+Edit the file `vue-app/src/components/nav-bar.vue`, and add this code to the bottom of the template to display the login status:
 
 ```html
 ...
@@ -821,7 +827,7 @@ Edit the file `vue-app/src/components/nav-bar.vue` and add this code at the bott
 > [!NOTE]
 > The `userDetails` property can be either a username or email address, depending on the identity provided used to log in.
 
-Your completed file should now look like this:
+Your completed file should now look like the following:
 
 ```html
 <script>
@@ -896,33 +902,37 @@ export default {
 
 ## Test authentication locally
 
-Everything is now in place, the final step is to test if everything is working as expected.
+Everything is now in place. The final step is to test if everything is working as expected.
 
 1. In your web app, select one of the identity providers to log in.
+
 1. You'll be redirected to this page:
 
-    :::image type="content" source="../media/static-web-apps-cli-auth-screen.png" alt-text="Screenshot showing SWA CLI fake authentication screen":::
+   :::image type="content" source="../media/static-web-apps-cli-auth-screen.png" alt-text="Screenshot showing SWA CLI fake authentication screen.":::
 
-    This is a fake authentication screen provided by the SWA CLI, allowing you to test authentication locally by providing yourself user details.
+   This is a fake authentication screen, provided by the SWA CLI, allowing you to test authentication locally by providing yourself user details.
 
-1. Enter `mslearn` as username and `1234` for the user ID.
-1. Select **Login**.
+3. Enter `mslearn` as username and `1234` for the user ID.
 
-After the login, you're redirected to the previous page. You can see the login buttons have been replaced by a logout button. You can also see your username and the selected provider below the logout button.
+4. Select **Login**.
 
-Now that you checked that everything works as expected locally, it's time to deploy your changes.
+   After the login, you're redirected to the previous page. You can see the login buttons have been replaced by a logout button. You can also see your username and the selected provider below the logout button.
 
-You can stop the running app and API by pressing <kbd>Ctrl-C</kbd> in both terminals.
+   Now that you checked that everything works as expected locally, it's time to deploy your changes.
+
+5. You can stop the running app and API by pressing <kbd>Ctrl-C</kbd> in both terminals.
 
 ## Deploy your changes
 
-1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
-1. Type and select **Git: Commit All**
-1. Enter `Add authentication` as the commit message.
-1. Press <kbd>Enter</kbd>
-1. Open the command palette by pressing <kbd>F1</kbd>
-1. Type and select **Git: Push**
-1. Press <kbd>Enter</kbd>
+1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>.
+
+1. Enter and select **Git: Commit All**.
+
+1. Enter `Add authentication` as the commit message, and press <kbd>Enter</kbd>.
+
+1. Open the command palette by pressing <kbd>F1</kbd>.
+
+1. Enter and select **Git: Push**, and press <kbd>Enter</kbd>.
 
 After you pushed your changes, wait for the build and deploy process to run. The changes should be visible on your deployed app after that.
 

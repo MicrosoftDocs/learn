@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.detect-objects-images.consider-options-for-labeling-images
+title: Consider options for labeling images
+metadata:
+  title: Consider options for labeling images
+  description: "Consider options for labeling images"
+  ms.date: 07/12/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-consider-options-for-labeling-images.md)]

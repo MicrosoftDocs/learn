@@ -18,7 +18,7 @@ Time-based autoscaling is appropriate when loads fluctuate in a predictable mann
 
 Either scenario is a candidate for time-based autoscaling. Figure 7 shows how scheduled autoscaling is enacted in Azure. In this example, a cloud administrator configures an Azure App Service that hosts the organization's web site to run two instances by default, but scale up to four instances between 6:00 a.m. and 6:00 p.m. six days a week excluding Sunday. By selecting the "Specify start/end dates" option instead, the administrator could just as easily configure the App Service to scale out to 10 instances on Super Bowl Sunday. And she could define multiple scale conditions to scale out on other dates, too.
 
-![Figure 7: Scheduled autoscaling in Azure](../media/fig5-7.png)
+![Figure 7: Scheduled autoscaling in Azure.](../media/fig5-7.png)
 
 _Figure 7: Scheduled autoscaling in Azure._
 
@@ -30,7 +30,7 @@ There are several aspects of resources that are monitored in order to trigger sc
 
 In practice, service providers usually monitor a combination of several different metrics of a resource node to evaluate when to scale resources. Some of these include CPU utilization, memory consumption, throughput, and latency. AWS uses CloudWatch to monitor EC2 resources and provide scaling metrics (Figure 8). CloudWatch tracks metrics for all the EC2 instances in a scaling group and raises an alarm when a specified metric crosses a threshold -- for example, when CPU utilization exceeds 70%. AWS then increases or decreases the EC2 instance count based on scaling policies configured by an administrator.
 
-![Figure 8: Autoscaling EC2 instances in AWS](../media/fig5-8.png)
+![Figure 8: Autoscaling EC2 instances in AWS.](../media/fig5-8.png)
 
 _Figure 8: autoscaling EC2 instances in AWS._
 

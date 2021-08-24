@@ -12,7 +12,7 @@ We'll use a scientific calculator app in this module, so we can show how to make
 
 2. When prompted about the versions of Windows that the app should support, change the minimum version from the default to the one shown in the following image. There are some newer features of Windows that we need to include.
 
-![Setting the Minimum version](../media/windows-minimum.png)
+![Setting the Minimum version.](../media/windows-minimum.png)
 
 3. Navigate to [this GitHub repo](https://github.com/MicrosoftDocs/mslearn-write-inclusive-Windows-apps), and open the `MainPage.xaml` file. Select all the contents of the file, and copy and paste it over the entire contents of the MainPage.xaml file in your project.
 
@@ -20,6 +20,6 @@ We'll use a scientific calculator app in this module, so we can show how to make
 
 5. Select **Start without debugging** from the **Debug** menu of Visual Studio. You should see something like the following image. If not, double-check that everything was copied correctly.
 
-![Showing the default light calculator](../media/non-light.png)
+![Showing the default light calculator.](../media/non-light.png)
 
 If this is your first time using this app, feel free to explore the features. We won't be directly changing the UI in this module, though, so don't worry too much about the specifics.

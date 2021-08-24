@@ -15,7 +15,7 @@ Applications that call a protected API must include the key in request calls.
 
 You can regenerate these subscription keys at any time, for example, if you suspect that a key has been shared with unauthorized users.
 
-![Subscription keys](../media/6-subscription-keys.png)
+![Subscription keys.](../media/6-subscription-keys.png)
 
 Every subscription has two keys, a primary and a secondary. Having two keys makes it easier when you do need to regenerate a key. For example, if you want to change the primary key and avoid downtime, use the secondary key in your apps.
 

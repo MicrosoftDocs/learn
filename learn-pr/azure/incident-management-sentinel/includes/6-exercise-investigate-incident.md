@@ -26,7 +26,7 @@ In this task, you'll create an analytics rule that will create an incident when 
 
     ```kusto
    AzureActivity
-   | where OperationName == 'Delete Virtual Machine'
+   | where OperationNameValue == "MICROSOFT.COMPUTE/VIRTUALMACHINES/DELETE"
    | where ActivityStatus == 'Succeeded'
    | extend AccountCustomEntity = Caller
    | extend IPCustomEntity = CallerIpAddress

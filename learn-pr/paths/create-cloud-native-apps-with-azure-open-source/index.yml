@@ -1,0 +1,50 @@
+### YamlMime:LearningPath
+uid: learn.azure.cna-architect-modern-apps
+metadata:
+  title: Create cloud native apps with Azure and open-source software
+  description: Cloud-native apps represent a modern approach to app development, where software systems are designed with cloud scale and capabilities in mind. Cloud-native apps build on open source technologies where feasible, with a focus on architectural modularity.
+  ms.date: 06/30/2021
+  author: jasallen
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create cloud native apps with Azure and open-source software
+summary: |
+  Cloud-native apps represent a modern approach to app development, where software systems are designed with cloud scale and capabilities in mind. Cloud-native apps build on open source technologies where feasible, with a focus on architectural modularity. In focusing on open technologies, "Cloud Native", means flexibility of deployment target, while still being able to use Azure-specific services like Azure Cosmos DB and Azure Active Directory.
+
+  This hands-on learning path covers the essentials of selecting components for cloud-native apps, building the integrations, and deploying to Azure.
+
+  You'll create multiple services, processing both large scale of messages from devices and streaming data from IoT devices.
+
+prerequisites: None
+iconUrl: /learn/achievements/create-cloud-native-apps-with-azure-open-source.svg
+levels:
+- intermediate
+roles:
+- administrator
+- developer
+- solution-architect
+- student
+products:
+- azure
+- azure-kubernetes-service
+- azure-app-service
+- azure-container-registry
+- azure-cosmos-db
+- azure-iot-central
+- azure-pipelines
+- github
+- azure-database-postgresql
+- azure-monitor
+- azure-application-insights
+- azure-active-directory
+modules:
+- learn.azure.intro-to-cloud-native-apps
+- learn.azure.cna-orchestrate-containers
+- learn.azure.cna-build-basic-service
+- learn.azure.cna-stream-iot-data
+- learn.azure.cna-build-iot-service
+- learn.azure.cna-deploy-maintain-cloud-native-apps
+- learn.azure.cna-set-up-apps-use-scale
+trophy:
+  uid: learn.azure.cna-architect-modern-apps.trophy

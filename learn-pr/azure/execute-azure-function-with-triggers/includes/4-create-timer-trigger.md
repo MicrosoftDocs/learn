@@ -14,7 +14,7 @@ Let’s start by creating an Azure Function App in the portal.
 
     The **Create a resource** pane appears.
 
-1. In the left menu pane, under **Categories**, select **Compute**, and then under **Popular offers**, select **Function App**. Optionally, you can enter **Function App** in the search bar, and press <kbd>Enter</kbd>. On the **Function App** pane that appears, select **Create**. The **Create Function App** pane appears.
+1. In the left menu pane, under **Categories**, select **Compute**, and then under *Popular offers*, select **Function App**. Optionally, you can enter **Function App** in the search bar, and press <kbd>Enter</kbd>. On the **Function App** pane that appears, select **Create**. The **Create Function App** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -51,15 +51,15 @@ Now, we're going to create a timer trigger inside our function.
 
 1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane for your Function App appears.
 
-1. On the top menu bar, select **Add**. This action starts the function creation process. The **Add function** pane appears.
+1. On the top menu bar, select **Create**. This action starts the function creation process. The **Create function** pane appears.
 
-1. Under the **Select a template** section, select **Timer trigger**, and then select **Add**. The **TimerTrigger1** pane appears for your Function.
+1. Under the **Select a template** section, select **Timer trigger**, and then select **Create**. The **TimerTrigger1** pane appears for your function.
 
 ## Configure the timer trigger
 
 We have an Azure function app with logic to print a message to the log window. We're going to set the schedule of the timer to execute every 20 seconds.
 
-1. In the left menu pane, under **Developer**, select **Integration**. The **Integration** pane appears for your Function.
+1. In the left menu pane, under **Developer**, select **Integration**. The **Integration** pane appears for your function.
 
 1. In the **Trigger** box, select the **Trigger (myTimer)** link. The **Edit Trigger** pane appears.
 
@@ -149,7 +149,7 @@ Now that we've configured the timer, it will invoke the function on the interval
     > [!NOTE]
     > **TimerTrigger1** is a default name. It's automatically selected when you create the trigger.
 
-1. In the top menu bar, select **Test/Run**. From the adjacent *Input/Output* pane, select **Run**. The **Logs** pane appears at the bottom of the page.
+1. In the top menu bar, select **Test/Run**. From the adjacent *Test* pane with **Input** and **Output** tabs, select **Run**. The **Logs** pane appears at the bottom of the page.
 
 1. Observe new messages arrive every 20 seconds in the log window.
 

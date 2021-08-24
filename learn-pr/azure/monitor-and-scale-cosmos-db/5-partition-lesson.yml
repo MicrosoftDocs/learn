@@ -33,7 +33,7 @@ quiz:
     choices: 
     - content: "Minimize the number of queries to the database."
       isCorrect: false
-      explanation: "Running fewer queries does reduce the demands on your database. But that's not practical in most operational scenarios."
+      explanation: "Running fewer queries does reduce the demands on your database, but that's not practical in most operational scenarios."
     - content: "Spread your write workload across partitions."
       isCorrect: false
       explanation: "To use your allocated throughput efficiently, distribute both write and query workloads across partitions."

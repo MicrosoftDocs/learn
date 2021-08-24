@@ -44,7 +44,7 @@ step1 = PythonScriptStep(name = 'prepare data',
 # Step to run an estimator
 step2 = PythonScriptStep(name = 'train model',
                          source_directory = 'scripts',
-                         script_name = 'data_prep.py',
+                         script_name = 'train_model.py',
                          compute_target = 'aml-cluster',
                          # Pass as script argument
                          arguments=['--training-data', prepped_data.as_input()])

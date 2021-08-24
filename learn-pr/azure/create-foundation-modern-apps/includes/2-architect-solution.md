@@ -45,7 +45,7 @@ Knowing that such feed is available, the other thing to do is to figure out how 
 
 Based on the scenario and the ideal solution, here's a possible architecture:
 
-:::image type="content" source="../media/1-catch-the-bus.svg" alt-text="Catch the bus microservices architecture diagram" border="false":::
+:::image type="content" source="../media/1-catch-the-bus.svg" alt-text="Catch the bus microservices architecture diagram." border="false":::
 
 The architecture uses several different services to minimize the amount of code you need to write, and to take advantage as much as possible of the scalability and infrastructure benefits provided by Azure.
 
@@ -63,7 +63,7 @@ The aforementioned features are built on the rock-solid foundations of the relat
 
 With Azure SQL it is also easy to access static data, like the route information provided by the GTFS standard, that can be stored in an Azure Blob Storage account. By using the `OPENROWSET` function, importing data from a text file can be done without any other service, keeping solution complexity to a minimum.
 
-For these reasons, Azure SQL Database is a great fit for applications like the bus-catching app, where you're dealing with JSON and geospatial data, but also want to take advantage of the data access and procedure capabilities built into the engine. Azure SQL Database serverless is a great option to satisfy the autoscaling requirement, enabling the application to handle busy times during the day when more people are trying to catch the bus. Azure SQL Database also supports CI/CD technologies like Azure DevOps and GitHub Actions, which simplifies deployment automation.
+For these reasons, Azure SQL Database is a great fit for applications like the bus-catching app, where you're dealing with JSON and geospatial data, but also want to take advantage of the data access and procedure capabilities built into the engine. Azure SQL Database serverless is a great option to satisfy the autoscaling requirement, enabling the application to handle busy times during the day when more people are trying to catch the bus. Azure SQL Database also supports continuous integration and continuous delivery/continuous deployment (CI/CD) technologies like Azure DevOps and GitHub Actions, which simplifies deployment automation.
 
 ### Build an API service with Azure Functions
 

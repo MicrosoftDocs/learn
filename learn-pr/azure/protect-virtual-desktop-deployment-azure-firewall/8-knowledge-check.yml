@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.protect-virtual-desktop-deployment-azure-firewall.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 07/05/2021 
+  author: cwatson-cat 
+  ms.author: cwatson  
+  ms.topic: interactive-tutorial 
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+quiz:
+  questions:
+  - content: "How does Azure Firewall protect network traffic for Azure Virtual Desktop?"
+    choices:
+    - content: "Only allows network traffic that's routed to the Azure Virtual Desktop service."
+      isCorrect: false
+      explanation: "Incorrect. Route network traffic to Azure Firewall and create firewall rules to allow the appropriate network traffic for Azure Virtual Desktop."
+    - content: "Denies all network traffic to the internet."
+      isCorrect: false
+      explanation: "Incorrect. If all outbound network traffic is denied, then Azure Virtual Desktop won't work."
+    - content: "Denies all network traffic routed to the firewall except traffic explicitly allowed with firewall rules or policies."
+      isCorrect: true
+      explanation: "Correct. Create firewall rules to allow network traffic that's required for the Azure Virtual Desktop deployment."
+  - content: "What's one firewall application rule that's required for Azure Virtual Desktop to work?"
+    choices:
+    - content: "A rule that allows network traffic from the host pool virtual network to the Azure Virtual Desktop service."
+      isCorrect: true
+      explanation: "Correct. Use the FQDN tag 'WindowsVirtualDesktop' to allow traffic from the host pool virtual network to the service."
+    - content: "A rule to allow access to the host pool virtual network from storage and service bus accounts"
+      isCorrect: false
+      explanation: "Incorrect. Create a rule to allow access from the host pool virtual network to the set of storage and service bus accounts used by the host pool."
+    - content: "A rule to allow traffic from the Windows activation service to the host pool virtual network."
+      isCorrect: false
+      explanation: "Incorrect. Create a firewall network rule to allow traffic from the host pool virtual network to the Windows activation service."
+  - content: "Before someone deploys Azure Firewall, what must they set up in Azure?"
+    choices:
+    - content: "Peering between the virtual networks for the firewall and the workload."
+      isCorrect: false
+      explanation: "Incorrect. Peering can be done after deploying the firewall. But virtual networks must be peered before routing all traffic through the firewall."
+    - content: "A virtual network with a subnet named 'AzureFirewallSubnet'."
+      isCorrect: true
+      explanation: "Correct. Deploy Azure Firewall to a virtual network that has a subnet named 'AzureFirewallSubnet'."
+    - content: "A default route to send all traffic to a firewall."
+      isCorrect: false
+      explanation: "Incorrect. After you deploy Azure Firewall, route all network traffic for the workload's virtual network to the firewall."

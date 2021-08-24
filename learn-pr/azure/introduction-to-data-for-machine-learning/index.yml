@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.machinelearning.introduction-to-data-for-machine-learning
+metadata:
+  title: Introduction to data for machine learning
+  description: The power of machine learning models comes from the data that is used to train them. Through content and exercises, we explore how to understand your data, how to encode it so that the computer can interpret it properly, how to clean it of errors, and tips that will help you create models that perform well.
+  ms.date: 05/25/2021
+  author: TomReidNZ
+  ms.author: jasdeb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to data for machine learning
+summary: The power of machine learning models comes from the data that is used to train them. Through content and exercises, we explore how to understand your data, how to encode it so that the computer can interpret it properly, how to clean it of errors, and tips that will help you create models that perform well.
+abstract: | 
+  In this module, you will:
+  - Visualize large datasets with Exploratory Data Analysis (EDA)
+  - Clean a dataset of errors
+  - Predict unknown values using numeric and categorical data
+prerequisites: Some familiarity with machine learning concepts, such as models and cost, is helpful, but not essential
+iconUrl: /learn/achievements/machine-learning/introduction-to-data-for-machine-learning.svg
+levels: 
+- beginner
+roles: 
+- ai-engineer
+- data-scientist
+- student
+products: 
+- azure
+units: 
+- learn.machinelearning.introduction-to-data-for-machine-learning.introduction
+- learn.machinelearning.introduction-to-data-for-machine-learning.detect-correct-data
+- learn.machinelearning.introduction-to-data-for-machine-learning.exercise-detect-visualize-missing-data
+- learn.machinelearning.introduction-to-data-for-machine-learning.examine-data-types
+- learn.machinelearning.introduction-to-data-for-machine-learning.exercise-normalize-data-predict-missing-values
+- learn.machinelearning.introduction-to-data-for-machine-learning.evaluate-image-language-data
+- learn.machinelearning.introduction-to-data-for-machine-learning.exercise-one-hot-vectors
+- learn.machinelearning.introduction-to-data-for-machine-learning.knowledge-check
+- learn.machinelearning.introduction-to-data-for-machine-learning.summary
+
+badge: 
+  uid: learn.machinelearning.introduction-to-data-for-machine-learning.badge #add the uid for your achievement badge.

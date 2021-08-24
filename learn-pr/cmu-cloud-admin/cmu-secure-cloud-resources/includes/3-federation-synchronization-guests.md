@@ -12,7 +12,7 @@ Suppose two companies named Contoso and Fabrikam forge a business alliance. Cont
 
 Federation isn't limited to connecting different organizations' on-premises networks; it can also be used to extend on-premises identities to the cloud. Azure, AWS, and GCP offer identity-management solutions that enable on-premises directory services such as Active Directory to provide identity information to cloud services as well. If a user attempts to access a secured cloud resource, the request is redirected to the on-premises directory solution, which then authenticates the user as if they were accessing an on-premises resource (Figure 3.4). This provides for centralized management of users, credentials, and permissions. It also prevents users from having to use a separate account to access their own organization's cloud resources.
 
-![Figure 3.4: Federated identity flow](../media/fig3-4.png)
+![Figure 3.4: Federated identity flow.](../media/fig3-4.png)
 
 _Figure 3.4: Federated identity flow._
 
@@ -24,7 +24,7 @@ Synchronization is an alternative to federation. With synchronization, on-premis
 
 Synchronization is implemented by installing a synchronization service within the organization's on-premises systems (Figure 3.5). The service periodically synchronizes the user information between the on-premises directory and the cloud directory. All authentication is then performed against the cloud directory, which contains the same information as the on-premises directory.
 
-![Figure 3.5: Synchronized identity flow](../media/fig3-5.png)
+![Figure 3.5: Synchronized identity flow.](../media/fig3-5.png)
 
 _Figure 3.5: Synchronized identity flow._
 

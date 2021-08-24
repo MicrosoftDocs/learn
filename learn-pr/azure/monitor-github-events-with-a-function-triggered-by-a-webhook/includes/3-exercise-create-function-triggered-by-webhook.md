@@ -48,11 +48,11 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
 
 1. In the left menu pane, under **Functions**, select **Functions**. The **Functions** pane appears for your Function App.
 
-1. On the top menu bar, select **Add**. The **Add function** pane appears.
+1. On the top menu bar, select **Create**. The **Create function** pane appears.
 
-1. Under **Select a template**, select **HTTP trigger**, and then select **Add**. The **HttpTrigger1** pane appears.
+1. Under **Select a template**, select **HTTP trigger**, and then select **Create**. The **HttpTrigger1** pane appears.
 
-1. In the left menu pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears with the JavaScript function that the portal created looking like the following code.
+1. In the left menu for this pane, under **Developer**, select **Code + Test**. The **Code + Test** pane appears with the JavaScript function that the portal created from the template. It should look like the following code.
 
     ```JavaScript
     module.exports = async function (context, req) {
@@ -96,7 +96,7 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
     }
     ```
 
-    The binding specifies that the function is triggered by HTTP GET and POST requests directed towards the URL of the function app.
+    The bindings specify that the function is triggered by HTTP GET and POST requests directed towards the URL of the function app.
 
 ## Test triggering your function
 

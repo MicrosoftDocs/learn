@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-language-understanding-app.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/20/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Your app must interpret a command such as \"turn on the light\" or \"switch the light on\". What do these phrases represent in a language model?"
+    choices:
+    - content: "Intents."
+      isCorrect: false
+      explanation: "That's incorrect. An intent is a possible semantic meaning to be identified by the model."
+    - content: "Utterances."
+      isCorrect: true
+      explanation: "That's correct. Utterances are example phrases that indicate a specific intent."
+    - content: "Entities."
+      isCorrect: false
+      explanation: "That's incorrect. Entities are specific items to which an intent should be applied."
+  - content: "Your app must interpret a command to book a flight to a specified city, such as \"Book a flight to Paris.\" How should you model the city element of the command?"
+    choices:
+    - content: "As an intent."
+      isCorrect: false
+      explanation: "That's incorrect. The city is an entity to which the intent (booking a flight) should be applied."
+    - content: "As an utterance."
+      isCorrect: false
+      explanation: "That's incorrect. The city is an entity to which the intent (booking a flight) should be applied."
+    - content: "As an entity."
+      isCorrect: true
+      explanation: "That's correct. The city is an entity to which the intent (booking a flight) should be applied."
+  - content: "Your language model has multiple intents with similar utterances and many possible entity values. How can you minimize the number of utterances required to train the model?"
+    choices:
+    - content: "Use Regular Expression entities."
+      isCorrect: false
+      explanation: "That's incorrect. When a language model has similar utterances with many possible entity values, patterns can reduce the number of utterances required to train an effective model."
+    - content: "Use Patterns and Pattern.any() entities."
+      isCorrect: true
+      explanation: "That's correct. When a language model has similar utterances with many possible entity values, patterns can reduce the number of utterances required to train an effective model."
+    - content: "Use List entities."
+      isCorrect: false
+      explanation: "That's incorrect. When a language model has similar utterances with many possible entity values, patterns can reduce the number of utterances required to train an effective model."

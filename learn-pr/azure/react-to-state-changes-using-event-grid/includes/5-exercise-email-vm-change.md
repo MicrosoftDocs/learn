@@ -1,74 +1,78 @@
 You're ready to perform an action based on receiving a published event within your logic app.
 
-You've finished the initial setup of the logic app. You now need to send an email notification that details any change to the virtual machines in your resource group.
+You've finished the initial setup of the logic app. You now need to send an email notification that contains details whenever any change occurs to the virtual machines in your resource group.
 
-You're going to learn how to set up a condition that enables you to inspect an event, respond with a logic app action, and send an email.
+You're going to learn how to set up a condition that enables the logic app to inspect an event, respond with a logic app action, and send an email.
 
 ## Add a condition
 
-First, let's create a condition that runs the logic app only when a certain event is published. Select the Logic app you just created > Logic app designer from the left-hand menu.
+First, let's create a condition that runs the logic app whenever a certain event is published. 
 
-1. In Logic Apps Designer, under the **Event Grid** trigger, select **New step**.
+1. Select the Logic app you just created. Select **Home**, then **Logic apps**, and then select the Logic app name from the Recent resources list.
 
-    ![Button for a new logic app step](../media/5-choose-new-step-condition.png)
+1. In the left menu pane, under **Development Tools**, select **Logic app designer**.
 
-1. Under **Choose an operation**, in the search box, enter **condition** as your filter.
+1. In the Logic Apps Designer pane for your app, an **Event Grid** trigger **When a resource event occurs** appears. Select **+ New step**.
 
-1. On the **Actions** tab, select **Condition**.
+    :::image type="content" source="../media/5-choose-new-step-condition.png" alt-text="Button for a new logic app step.":::
 
-    ![Selections for choosing an action](../media/5-select-condition.png)
+1. Under **Choose an operation**, in the search box, enter **condition** as your filter. Select **Control**.
 
-    The Logic Apps Designer adds an empty condition to your workflow, including action paths to follow, based on a true or false condition.
+1. On the **Actions** tab, select **Condition** *Control*.
 
-    ![Empty condition](../media/5-empty-condition.png)
+    :::image type="content" source="../media/5-select-condition.png" alt-text="Selections for choosing an action.":::
 
-1. On the condition's title bar, select the ellipsis (...) button, and select **Rename**. Rename the condition to **If a virtual machine in your resource group has changed**.
+    The Logic app designer adds an empty condition to your workflow, including action paths to follow, based on a true or false condition.
 
-    ![Selections for renaming a condition](../media/5-rename-condition.png)
+    :::image type="content" source="../media/5-empty-condition.png" alt-text="Empty condition."::: 
 
-1. On the first row under **And**, click inside the left box, and then select the **Choose a value** box. In the content list that appears, select the **Expression** tab.
+1. Select ellipsis on the right side of the **Condition** text box, select **Rename**, and enter **If a virtual machine in your resource group has changed**.
 
-    ![Selections for choosing an expression as a value](../media/5-condition-choose-expression.png)
+    :::image type="content" source="../media/5-rename-condition.png" alt-text="Selections for renaming a condition.":::
+
+1. In the area under the new name, select the check box under **And** to generate a checkmark, and then select the **Choose a value** box. In the Dynamic content list, select the **Expression** tab.
+
+    :::image type="content" source="../media/5-condition-choose-expression.png" alt-text="Selections for choosing an expression as a value.":::
 
 1. In the expression editor, enter `triggerBody()?['data']['operationName']`, and select **OK**.
 
-    ![Entered expression for a data operation](../media/5-condition-add-data-operation-name.png)
+    :::image type="content" source="../media/5-condition-add-data-operation-name.png" alt-text="Entered expression for a data operation.":::
 
-1. Leave the middle box as **is equal to**, and in the right box, enter `Microsoft.Compute/virtualMachines/write`.
+1. Leave the middle box as **is equal to**, select the right box, and enter `Microsoft.Compute/virtualMachines/write`.
 
-    ![Completed condition](../media/5-complete-condition.png)
+    :::image type="content" source="../media/5-complete-condition.png" alt-text="Completed condition."::: 
 
-1. In the top menu bar, select **Save**.
+1. In the **Logic app designer** menu bar, select **Save**.
 
 ## Send an email notification
 
 Next, we'll add an email action based on the logic app being triggered. The following steps use the Office 365 Outlook action. If you don't have an Office 365 account, you can also use Outlook.com or Gmail. The configuration for these may be slightly different, so you may need to adjust accordingly.
 
-1. In the condition's **True** box, select **Add an action**.
+1. In the condition's **True** box, select **+Add an action**.
 
-    ![Button for adding an action](../media/5-condition-true-add-action.png)
+    :::image type="content" source="../media/5-condition-true-add-action.png" alt-text="Add an action button.":::
 
-1. Under **Choose an operation**, in the search box, enter **send an email** as your filter, and select the **Office 365 Outlook** provider.
+1. In the search box under **Choose an operation**, enter **send an email** as your filter, and select the **Office 365 Outlook** provider.
 
-    ![Selections for sending an email action](../media/5-logic-app-send-email.png)
+    :::image type="content" source="../media/5-logic-app-send-email.png" alt-text="Selections for sending an email action.":::
 
 1. If you don't already have a connection for your email provider, sign in to your email account when you're asked for authentication.
 
-1. On the action's title bar, select the ellipsis (...) button, and select **Rename**.
+1. On the action's title bar to the right, rename the action to **Send email when virtual machine updated**.
 
-1. Rename the action to **Send email when virtual machine updated**.
+    :::image type="content" source="../media/5-send-email-vm-update.png" alt-text="Selections for sending an email when vm updates.":::
 
-1. Select each box in the email form, and on the **Dynamic content** tab, search for and select the appropriate content type as follows in the following screenshot.
+1. Select each box in the email form, and on the **Dynamic content** tab, search for and select the appropriate content type according to the following screenshot, adding text to label the items in the email body. In the *To* box, add your own email address to test the workflow in the next section.
 
-    ![Selections for adding a subject as a dynamic email field](../media/5-logic-app-empty-email-action.png)
+    :::image type="content" source="../media/5-logic-app-empty-email-action.png" alt-text="Selections for adding a subject as a dynamic email field.":::
 
-1. Your email action should look similar to the following. If you selected a different email account type (Outlook.com or Gmail), your options might be different.
+1. Your email action should look similar to the following. If you selected a different email account type (Outlook.com or Gmail), your inputs might be different.
 
-    ![Email action view](../media/5-logic-app-send-email-details.png)
+    :::image type="content" source="../media/5-logic-app-send-email-details.png" alt-text="Email action view.":::
 
-1. Your finished logic app should now look similar to the following.
+1. Your finished logic app should now look similar to the following screenshot.
 
-    ![View of a finished logic app](../media/5-logic-app-completed.png)
+    :::image type="content" source="../media/5-logic-app-completed.png" alt-text="View of a finished logic app.":::
 
 1. Select **Save** to save your logic app.
 
@@ -82,8 +86,8 @@ The final step is to test the complete workflow.
 
 1. In the left menu pane, under **Settings**, select **Size**.
 
-1. Select a new size of **DS2_v2** for the virtual machine, and then select **Resize**. Wait to be notified that your virtual machine has been resized.
+1. Select a new size of **DS2_v2** for the virtual machine, and then select **Resize**. 
 
-1. After the virtual machine has been resized, you should receive an email that looks similar to the following:
+1. Wait to be notified that your virtual machine has been resized, allowing time for the email to be generated and processed. After a few minutes, you should receive an email that looks similar to the following:
 
-    ![Email notification example](../media/5-email.png)
+    :::image type="content" source="../media/5-email.png" alt-text="Email notification example":::

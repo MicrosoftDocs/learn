@@ -45,7 +45,7 @@ The output is:
 
 \<BarContainer object of 12 artists\>
 
-![BarContainer object](..\media\bar-container-object-12-artists.png)
+![BarContainer object.](..\media\bar-container-object-12-artists.png)
 
 Let's look at the preceding code snippet. We passed two parameters to the bar function in pyplot. The first defines the index for the x-axis, and the second defines the data to use for the bars (the y-axis). To create the index, we use the NumPy function `arange` to create a sequence of numbers. (This is the same `arange` we came across earlier in this section.) We know that the length of our array is 12. But it's a good habit to pass the length of an array programmatically in case it changes or you don't know it with specificity. We also added 1 to both the start and the end of the `arange` to accommodate for Python zero-indexing (because there's no "month zero" in the calendar).
 

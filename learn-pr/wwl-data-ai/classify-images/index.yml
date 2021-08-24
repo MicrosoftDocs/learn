@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.classify-images
+metadata:
+  title: Classify images
+  description: "Classify images"
+  ms.date: 08/20/2021
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Classify images
+summary: Image classification is used to determine the main subject of an image. You can use the Custom Vision services to train a model that classifies images based on your own categorizations.
+abstract: |
+  After completing this module, you will be able to:
+  - Provision Azure resources for Custom Vision
+  - Understand image classification
+  - Train an image classifier
+prerequisites: |
+  Before starting this module, you should already have:
+  - Familiarity with Azure and the Azure portal.
+  - Experience programming with C# or Python.
+  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/learn/paths/csharp-first-steps/) or [Take your first steps with Python](/learn/paths/python-first-steps/) learning path first.
+iconUrl: /learn/achievements/images-classify.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- developer
+products:
+- azure-cognitive-services
+- azure-custom-vision
+units:
+- learn.wwl.classify-images.introduction
+- learn.wwl.classify-images.provision-azure-resources-for-custom-vision
+- learn.wwl.classify-images.understand-image-classification
+- learn.wwl.classify-images.train-image-classifier
+- learn.wwl.classify-images.exercise-custom-vision
+- learn.wwl.classify-images.knowledge-check
+- learn.wwl.classify-images.summary
+badge:
+  uid: learn.wwl.classify-images.badge

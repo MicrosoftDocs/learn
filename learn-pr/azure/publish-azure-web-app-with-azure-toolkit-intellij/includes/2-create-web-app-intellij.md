@@ -33,7 +33,7 @@ The Azure Toolkit for IntelliJ is an extension for IntelliJ IDEA that provides t
 
 You also use the Azure Explorer with the Azure Toolkit for IntelliJ, which provides an additional window within IntelliJ IDEA where you can see and manage the resources that exist in your Azure subscription. In the Azure Explorer window you can create new web apps, storage accounts, and other resources, or configure Azure resources that you have created.
 
-![Azure Explorer in IntelliJ IDEA](../media/2-azure-explorer.png)
+![Azure Explorer in IntelliJ IDEA.](../media/2-azure-explorer.png)
 
 There are alternatives to the Azure Toolkit for IntelliJ to deploy your web app. For example, you could use `git` to deploy code and publish it to Azure. However, the Azure Toolkit for IntelliJ provides close integration within IntelliJ IDEA itself. Developers can package and deploy an app, and create and configure resources in Azure, all without leaving their favorite IDE.
 

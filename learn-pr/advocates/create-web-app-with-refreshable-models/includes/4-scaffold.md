@@ -18,7 +18,7 @@ After you have Node, NPM, and the Vue CLI installed, creating a new app is easy.
 
 When the CLI asks whether you want to use presets or a manual scaffold, choose 'manual.' This way you have control over the plugins you want to install.
 
-![The Vue CLI](../media/cli.png)
+![The Vue CLI.](../media/cli.png)
 
 Make sure you choose 'Progressive Web App' in the choices on this screen of the CLI setup routine. You want to create an app that works both online and offline.
 
@@ -30,7 +30,7 @@ Once the basic app is built, run it by entering:
 
 You should see a basic Vue.js app scaffolded in your browser locally.
 
-![Your app](../media/web-app.png)
+![Your app.](../media/web-app.png)
 
 In the Developer Tools, select **Audits**, and review the Lighthouse area of your app. You can test how your Progressive Web App performs using this tool, but you won't do this until later when you deploy the app to azurewebsites.net.
 

@@ -96,4 +96,4 @@ Azure API Management solves the API policy problem by enabling you to set polici
 - **outbound**: The policies in this section are applied to each outgoing API response.
 - **on-error**: The policies in this section are applied when an API request or response generates an error.
 
-:::image type="content" source="../media/2-what-is-azure-api-management-policies.png" alt-text="A consumer's API request enters the Azure API Management gateway where it passes through inbound and backend policies before being sent to the backend server. The API response then passes though the gateway's outbound policies before being sent to the originating API consumer." lightbox="../media/2-what-is-azure-api-management-policies.png":::
+:::image type="content" source="../media/2-what-is-azure-api-management-policies.png" alt-text="A consumer's API request enters the Azure API Management gateway where it passes through inbound policies before being sent to the backend server. The API response then passes though the gateway's outbound policies before being sent to the originating API consumer." lightbox="../media/2-what-is-azure-api-management-policies.png":::

@@ -27,7 +27,7 @@ prerequisites: |
   To complete this module's exercises, you'll need:
   -	An Azure subscription
   -	A Microsoft account or an Azure Active Directory (Azure AD) account with the Owner role in the Azure subscription.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/configure-application-kubernetes-arc.svg
 levels:
 - advanced
 roles:

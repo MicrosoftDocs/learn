@@ -10,7 +10,7 @@ You can provision a Cosmos DB account interactively using the Azure portal, or y
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4AwNK]
 
-If you prefer to use the Azure CLI or Azure PowerShell, you can run the following commands to create a Cosmos DB account. The parameters to these commands correspond to many of the options you can select using the Azure portal. The examples shown below create an account for the Core(SQL) API, with geo-redundancy between the EastUS and WestUS regions, and support for multi-region writes. For more information about these commands, see the [az cosmosdb create](/cli/azure/cosmosdb#az-cosmosdb-create) page for the Azure CLI, or the [New-AzCosmosDBAccount](/powershell/module/az.cosmosdb/new-azcosmosdbaccount) page for PowerShell.
+If you prefer to use the Azure CLI or Azure PowerShell, you can run the following commands to create a Cosmos DB account. The parameters to these commands correspond to many of the options you can select using the Azure portal. The examples shown below create an account for the Core(SQL) API, with geo-redundancy between the EastUS and WestUS regions, and support for multi-region writes. For more information about these commands, see the [az cosmosdb create](/cli/azure/cosmosdb page for PowerShell.
 
 ```azurecli
 ## Azure CLI

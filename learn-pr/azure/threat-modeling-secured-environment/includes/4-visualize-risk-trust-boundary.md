@@ -1,6 +1,6 @@
 ### Trust boundary
 
-![Trust boundary](../media/elements/trust-boundary-box-50.png)
+![Trust boundary.](../media/elements/trust-boundary-box-50.png)
 
 #### What is trust boundary?
 

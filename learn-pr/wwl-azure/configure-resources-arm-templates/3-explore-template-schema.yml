@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-resources-arm-templates.explore-arm-template-schema
+title: Explore the Azure Resource Manager template schema
+metadata:
+  title: Explore the Azure Resource Manager template schema
+  description: "Explore the Azure Resource Manager template schema"
+  ms.date: 08/18/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-explore-template-schema.md)]

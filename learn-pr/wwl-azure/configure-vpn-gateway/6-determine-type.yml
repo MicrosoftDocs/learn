@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-vpn-gateway.determine-type
+title: Determine the VPN gateway type
+metadata:
+  title: Determine the VPN gateway type
+  description: "Determine the VPN gateway type"
+  ms.date: 07/26/2021
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-determine-type.md)]

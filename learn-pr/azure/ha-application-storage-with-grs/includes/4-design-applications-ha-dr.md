@@ -6,7 +6,7 @@ In this unit, you look at how to design and configure an application that can ha
 
 When you configure a storage account GRS or RA-GRS, the client writes data to the primary endpoint or region. The data is then automatically replicated across to the secondary region, as shown in the following image:
 
-![The replication workflow](../media/4-primary-secondary-replication.png)
+![The replication workflow.](../media/4-primary-secondary-replication.png)
 
 If the primary region that hosts your geo-redundant storage becomes unavailable, you can fail over to the secondary region.
 
@@ -14,7 +14,7 @@ When failover occurs, the secondary region becomes your new primary region, and 
 
 A failure in the primary region is shown in the following image:
 
-![The replication failover process](../media/4-primary-account-failover.png)
+![The replication failover process.](../media/4-primary-account-failover.png)
 
 > [!IMPORTANT]
 > Failover is automatic and controlled by Microsoft. A manual failover of an Azure storage account isn't possible in a majority of the Azure regions. However, Microsoft has made a new feature available in WestUS2 and CentralUS regions, with which you can manually failover the storage account by using the following command:

@@ -17,7 +17,7 @@ Azure role-based access control (Azure RBAC) is an authorization system built on
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yEvk]
 
-You grant access by assigning the appropriate Azure role to users, groups, and applications at a certain scope. The scope of a role assignment can be a subscription, a resource group, or a single resource. A role assigned at a parent scope also grants access to the child scopes contained within it. For example, a user with access to a resource group can manage all the resources it contains, like websites, virtual machines, and subnets. The Azure role that you assign dictates what resources the user, group, or application can manage within that scope.
+You grant access by assigning the appropriate Azure role to users, groups, and applications at a certain scope. The scope of a role assignment can be a management group, subscription, a resource group, or a single resource. A role assigned at a parent scope also grants access to the child scopes contained within it. For example, a user with access to a resource group can manage all the resources it contains, like websites, virtual machines, and subnets. The Azure role that you assign dictates what resources the user, group, or application can manage within that scope.
 
 The following diagram depicts how the classic subscription administrator roles, Azure roles, and Azure AD roles are related at a high level. Roles assigned at a higher scope, like an entire subscription, are inherited by child scopes, like service instances.
 
@@ -42,7 +42,7 @@ In several areas in the Azure portal, you'll see a pane named **Access control (
 
 The following shows an example of the Access control (IAM) pane for a resource group. In this example, Alain Charon has been assigned the Backup Operator role for this resource group.
 
-![Screenshot of the Azure portal showing the Access control-Role assignment pane with the Backup operator section highlighted](../media/2-resource-group-access-control.png)
+![Screenshot of the Azure portal showing the Access control-Role assignment pane with the Backup operator section highlighted.](../media/2-resource-group-access-control.png)
 
 ## How does Azure RBAC work?
 

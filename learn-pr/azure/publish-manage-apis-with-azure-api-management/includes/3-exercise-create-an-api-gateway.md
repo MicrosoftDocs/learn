@@ -44,32 +44,34 @@ The script takes about a minute to run. When the script finishes, it will displa
 
 :::image type="content" source="../media/3-swagger.png" alt-text="Overview of API management." loc-scope="third-party"::: <!-- no-loc -->
 
-Finally, copy the last URL from the Cloud Shell output, this is the swagger JSON URL, you will need this in the next exercise
+Finally, copy the last URL from the Cloud Shell output. This is the swagger JSON URL, which you will need in the next exercise.
 
 ## Deploy an API gateway
 The final step in this exercise is to create an API gateway in the Azure portal. In the next exercise, you'll use this gateway to publish your API.
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
 
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-1. Click **Integration**, and then click **API management**.
+1. Select **Integration**, and then click **API management**.
 
-1. In the **API Management service** page, enter the following details: 
+1. The **Create API Management** pane opens. In the **Basics** tab, enter the following details: 
 
    Field | Details
    --- | ---
-   **Name** | `apim-NorthWindShoes<random number>`; the random number is to ensure that the name is globally unique.
+   **Project details** | 
    **Subscription** | Concierge Subscription
    **Resource group** | Select the existing resource group **<rgn>[sandbox resource group name]</rgn>**
-   **Location** | Select from one of the following: North Central US, West US, West Europe, North Europe, Southeast Asia, and Australia East. The Consumption tier used in this exercise is only available in these regions.
-   **Organization Name** | `NorthWindShoes`. This name is used to identify your resources in the developer portal.
+   **Instance details | 
+   **Region** | Select from one of the following: North Central US, West US, West Europe, North Europe, Southeast Asia, and Australia East. The Consumption tier used in this exercise is only available in these regions.
+    **Resource Name** | `apim-NorthWindShoes<random number>`; the random number is to ensure that the name is globally unique.
+    **Organization Name** | `NorthWindShoes`. This name is used to identify your resources in the developer portal.
    **Administrator Email** | This address is used for system notifications, and defaults to your Azure account email address.
    **Pricing Tier** | `Consumption`.
 
    > [!NOTE]
    > Note: You're using the consumption plan because it is much faster to create whilst testing. The overall experience is very similar to the other pricing tiers.
 
-1. Click **Create**.
+1. Select **Review+create**.
 
-1. Deployment may take several minutes. You'll get a message to your specified email address when the deployment has completed. You'll also see the gateway listed in Azure resources.
+1. When validation has passed, select **Create**. Deployment may take several minutes to complete. You'll receive an email message when deployment has completed. You'll also see the gateway listed in Azure resources.

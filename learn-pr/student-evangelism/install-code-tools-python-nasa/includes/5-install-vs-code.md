@@ -1,13 +1,13 @@
 While it was great reading about these technologies, a much more exciting way to learn about them is to install them and begin playing around. This unit teaches you how to install Visual Studio Code.
 
-If you're following along in all of the modules of the [Discover the role of Python in space exploration Learning Path](../../../paths/introduction-python-space-exploration-nasa/index.yml), you'll have a chance to write all of the code in an in-browser notebook experience from the Microsoft Learn module itself, so you don't *have* to install these developer tools to complete the module. However, setting up these tools is a great place to start on your personal developer journey, so we still encourage it.
+If you're following this module as part of a Learning Path, you'll probably also have a chance to write all of the code in an in-browser notebook experience from within the Microsoft Learn module itself, so you don't *have* to install these developer tools to complete the module. However, setting up these tools is a great place to start on your personal developer journey, so we still encourage it.
 
 ## Install Visual Studio Code
 
-As mentioned before, Visual Studio Code is free. You can download it [on the Visual Studio Code learning page](https://aka.ms/LearnOnVSCode?azure-portal=true). Download the Coding Pack for Python, which will install Python and the necessary extensions as well. When the program has finished downloading, run the executable file to start the installation process.
+As mentioned before, Visual Studio Code is free. If you're using a Windows computer, you can download it [on the Visual Studio Code learning page](https://aka.ms/LearnOnVSCode?azure-portal=true). Download the Coding Pack for Python, which will install Python and the necessary extensions as well. When the program has finished downloading, run the executable file to start the installation process.
 
 > [!NOTE]
-> The picture below shows someone using Windows 10 with the Microsoft Edge browser, but you should make the selection that best represents your system.
+> The picture below shows someone using Windows 10 with the Microsoft Edge browser. If you're using a macOS or Linux device, select **Visual Studio Code (all platforms)** and make the selection that best represents your system. We'll walk you through how to [install Python](/learn/modules/install-code-tools-python-nasa/7-install-python) and all of the necessary extensions in Unit 7 of this module.
 
 :::image type="content" source="../media/download-vs-code.png" alt-text="Screenshot of the VS Code download page on the Visual Studio Code website.":::
 
@@ -35,5 +35,3 @@ When you first come into Visual Studio Code, you'll be greeted with a welcome wi
 - **Source control:** Helps you write/share code with others
 - **Run:** Runs the code you write
 - **Extensions:** Shows all the additions people from across the globe have made. There are different color themes, programming languages, and more. You can install and customize Visual Studio Code as you like
-- **Azure:** An optional extension that helps integrate Microsoft Azure into Visual Studio Code
-- **Docker:** Beyond the scope of this lesson

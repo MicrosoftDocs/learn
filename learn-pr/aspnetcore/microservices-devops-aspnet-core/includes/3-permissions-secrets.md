@@ -28,14 +28,14 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 
 1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically, every 10 seconds.
 
-    :::image type="content" source="../media/3-permissions-secrets/health-check.png" alt-text="Health check page" border="true" lightbox="../media/3-permissions-secrets/health-check.png":::
+    :::image type="content" source="../media/3-permissions-secrets/health-check.png" alt-text="Health check page." border="true" lightbox="../media/3-permissions-secrets/health-check.png":::
 
     > [!NOTE]
     > While the app is starting up, you might initially receive an HTTP 503 or 502 response from the server. Retry after about one minute. The :::no-loc text="Seq"::: logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
 
 1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
-    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app" border="true" lightbox="../../media/microservices/eshop-spa.png":::
+    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app." border="true" lightbox="../../media/microservices/eshop-spa.png":::
 
 1. Complete a purchase as follows:
     1. Select the **:::no-loc text="LOGIN":::** link in the upper right to sign into the app. The credentials are provided on the page.
@@ -44,7 +44,7 @@ Even though the app has been deployed, it might take a few minutes to come onlin
     1. Select the **:::no-loc text="CHECKOUT":::** button.
     1. Enter the code *:::no-loc text="DISC-10":::* in the **:::no-loc text="HAVE A DISCOUNT CODE?":::** text box for a 10 USD discount, and select **:::no-loc text="APPLY":::**.
 
-        :::image type="content" source="../media/3-permissions-secrets/discount-code-field.png" alt-text="Shopping basket with the discount code text box" border="true" lightbox="../media/3-permissions-secrets/discount-code-field.png":::
+        :::image type="content" source="../media/3-permissions-secrets/discount-code-field.png" alt-text="Shopping basket with the discount code text box." border="true" lightbox="../media/3-permissions-secrets/discount-code-field.png":::
 
     1. Select **:::no-loc text="PLACE ORDER":::** to complete the purchase.
 
@@ -90,7 +90,7 @@ The service principal and the credentials for the container registry are sensiti
 
     At this point, you should have something like this:
 
-    :::image type="content" source="../media/3-permissions-secrets/add-github-secrets.png" alt-text="AZURE_CREDENTIALS environment variable secrets page" border="true" lightbox="../media/3-permissions-secrets/add-github-secrets.png":::
+    :::image type="content" source="../media/3-permissions-secrets/add-github-secrets.png" alt-text="AZURE_CREDENTIALS environment variable secrets page." border="true" lightbox="../media/3-permissions-secrets/add-github-secrets.png":::
 1. Select the **:::no-loc text="Add secret":::** button.
 1. Create four additional secrets. Run the following command to get the values for the new secrets:
 
@@ -107,6 +107,6 @@ The service principal and the credentials for the container registry are sensiti
 
 With all five secrets configured, you'll see the following page:
 
-:::image type="content" source="../media/3-permissions-secrets/github-secrets.png" alt-text="Page displaying three GitHub secrets" border="true" lightbox="../media/3-permissions-secrets/github-secrets.png":::
+:::image type="content" source="../media/3-permissions-secrets/github-secrets.png" alt-text="Page displaying three GitHub secrets." border="true" lightbox="../media/3-permissions-secrets/github-secrets.png":::
 
 In this unit, you verified the app was deployed correctly. You then created an Azure Active Directory service principal and stored related sensitive information as GitHub secrets.

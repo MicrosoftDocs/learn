@@ -11,11 +11,11 @@ To choose the right disk type, it's critical to understand its performance. Perf
 
 For physical disks, solid-state disks (SSDs) usually realize higher IOPS and throughput than hard disk drives (HDDs). Virtual disks that you can choose for an Azure virtual machine are based on SSDs of several types or HDDs. Their performance varies widely based on the disk type that you choose. Let's examine the types that are available.
 
-## Ultra SSD
+## Ultra Disks
 
-Ultra SSDs provide the highest disk performance available in Azure. Choose them when you need the fastest storage performance, which includes high throughput, high IOPS, and low latency.
+Ultra Disks provide the highest disk performance available in Azure. Choose them when you need the fastest storage performance, which includes high throughput, high IOPS, and low latency.
 
-The performance of an Ultra SSD depends on the size you select, as you can see from examples in this table:
+The performance of an Ultra Disks depends on the size you select, as you can see from examples in this table:
 
 | Disk size (GB) | IOPS | Throughput (MBps) |
 | --- | --- | --- |
@@ -26,21 +26,19 @@ The performance of an Ultra SSD depends on the size you select, as you can see f
 | Over 1,024 | 160,000 | 2,000 |
 | | |
 
-Ultra disks can have capacities from 4 GB up to 64 TB. A unique feature of ultra disks is that you can adjust the IOPS and throughput values while they're running and without detaching them from the host virtual machine. Performance adjustments can take up to an hour to take effect.
+Ultra Disks can have capacities from 4 GB up to 64 TB. A unique feature of Ultra Disks is that you can adjust the IOPS and throughput values while they're running and without detaching them from the host virtual machine. Performance adjustments can take up to an hour to take effect.
 
-Ultra disks are a new disk type and currently have some limitations:
+Ultra Disks are a new disk type and currently have some limitations:
 
-- They're only available in a subset of Azure regions.
 - They can only be attached to virtual machines that are in availability zones.
-- They can only be attached to ES/DS v3 virtual machines.
 - They can only be used as data disks and can only be created as empty disks.
-- They don't support disk snapshots, virtual machine images, scale sets, Azure Disk Encryption, Azure Backup, or Azure Site Recovery.
+- They don't support disk snapshots, virtual machine images, Azure Disk Encryption, Azure Backup, or Azure Site Recovery.
 
-Some workloads place intensive loads on disk storage. For example, top-tier databases and SAP HANA need fast performance and are transaction heavy. If you have such a workload, and if premium SSDs have caused performance bottlenecks, consider using ultra SSDs.
+Some workloads place intensive loads on disk storage. For example, top-tier databases and SAP HANA need fast performance and are transaction heavy. If you have such a workload, and if Premium SSDs have caused performance bottlenecks, consider using Ultra Disks.
 
 ## Premium SSD
 
-Premium SSDs are the next tier down from ultra disks in terms of performance, but they still provide high throughput and IOPS with low latency. Premium disks don't have the current limitations of ultra disks. For example, they're available in all regions and can be used with virtual machines that are outside of availability zones.
+Premium SSDs are the next tier down from Ultra Disks in terms of performance, but they still provide high throughput and IOPS with low latency. Premium disks don't have the current limitations of Ultra Disks. For example, they're available in all regions and can be used with virtual machines that are outside of availability zones.
 
 You can't adjust performance without detaching these disks from their virtual machine. Also, you can only use premium SSDs with larger virtual machine sizes, which are compatible with premium storage.
 
@@ -54,19 +52,19 @@ This table has examples that illustrate the high performance of premium SSDs:
 | P80 | 32 TiB | 20,000 | 900 |
 | | | |
 
-With premium SSDs, these performance figures are guaranteed. There's no such guarantee for standard tier disks, which can be impacted occasionally by high demand.
+With Premium SSDs, these performance figures are guaranteed. There's no such guarantee for standard tier disks, which can be impacted occasionally by high demand.
 
-If you need higher performance than standard disks provide, or if you can't sustain occasional drops in performance, use premium SSDs. Also use premium SSDs when you want the highest performance but can't use ultra disks because of their current limitations. Premium SSDs are a good fit for mission-critical workloads in medium and large organizations.
+If you need higher performance than standard disks provide, or if you can't sustain occasional drops in performance, use Premium SSDs. Also use Premium SSDs when you want the highest performance but can't use Ultra disks because of their current limitations. Premium SSDs are a good fit for mission-critical workloads in medium and large organizations.
 
-You can migrate a disk to a premium SSD at any time, if you've found that its performance isn't good enough.
+You can migrate a disk to a Premium SSD at any time, if you've found that its performance isn't good enough.
 
-![Creating a premium SSD](../media/3-create-premium-ssd.png)
+![Creating a premium SSD.](../media/3-create-premium-ssd.png)
 
 ## Standard SSD
 
-Standard SSDs in Azure are a cost-effective storage option for virtual machines that need consistent performance at lower speeds. Standard SSDs aren't as fast as premium or ultra SSDs, but they still have latencies in the range of 1 millisecond to 10 milliseconds and up to 6,000 IOPS. They're available to attach to any virtual machine, no matter what size it is.
+Standard SSDs in Azure are a cost-effective storage option for virtual machines that need consistent performance at lower speeds. Standard SSDs aren't as fast as premium or Ultra Disks, but they still have latencies in the range of 1 millisecond to 10 milliseconds and up to 6,000 IOPS. They're available to attach to any virtual machine, no matter what size it is.
 
-This table has examples that illustrate the performance characteristics of standard SSDs in several sizes:
+This table has examples that illustrate the performance characteristics of Standard SSDs in several sizes:
 
 | Disk size name | Disk size (GB) | IOPS | Throughput (MBps) |
 | --- | --- | --- | --- |
@@ -78,13 +76,13 @@ This table has examples that illustrate the performance characteristics of stand
 
 These performance figures aren't guaranteed but are achieved 99% of the time.
 
-Use standard SSDs when you have budgetary constraints and a workload that isn't disk intensive. For example, web servers, lightly used enterprise applications, and test servers can all run on standard SSDs.
+Use Standard SSDs when you have budgetary constraints and a workload that isn't disk intensive. For example, web servers, lightly used enterprise applications, and test servers can all run on standard SSDs.
 
-![Selecting a size for a standard SSD](../media/3-select-standard-ssd-size.png)
+![Selecting a size for a standard SSD.](../media/3-select-standard-ssd-size.png)
 
 ## Standard HDD
 
-If you choose to use standard HDDs, data is stored on conventional magnetic disk drives with moving spindles. Disks are slower and speeds are more variable than for SSDs, but latencies are under 10 ms for write operations and 20 ms for reads. As for standard SSDs, you can use standard HDDs for any virtual machine.
+If you choose to use Standard HDDs, data is stored on conventional magnetic disk drives with moving spindles. Disks are slower and speeds are more variable than for SSDs, but latencies are under 10 ms for write operations and 20 ms for reads. As for Standard SSDs, you can use Standard HDDs for any virtual machine.
 
 This table illustrates the performance characteristics of standard HDDs in several sizes:
 
@@ -96,4 +94,4 @@ This table illustrates the performance characteristics of standard HDDs in sever
 | S80 | 32,767 | 2,000 | 500 |
 | | | |
 
-Use standard HDDs when you want to minimize costs for less critical workloads and development or test environments.
+Use Standard HDDs when you want to minimize costs for less critical workloads and development or test environments.

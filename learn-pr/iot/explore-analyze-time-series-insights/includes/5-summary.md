@@ -1,4 +1,4 @@
-![Time Series Insights Banner](../media/explore-and-analyze-time-stamped-data-with-time-series-insights.png)
+![Time Series Insights Banner.](../media/explore-and-analyze-time-stamped-data-with-time-series-insights.png)
 
 Time Series Insights allows you to quickly and easily get sense of IoT generated date. Your analysis can span across the last hours or the last years.
 

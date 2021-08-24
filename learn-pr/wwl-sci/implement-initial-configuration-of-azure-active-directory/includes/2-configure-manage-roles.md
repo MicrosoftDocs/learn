@@ -17,9 +17,7 @@ In Azure AD, if one of your users needs permission to manage Azure AD resources,
 If you are new to Azure, you may find it a little challenging to understand all the different roles in Azure. The following section helps explain the following roles and provides additional information on Azure roles and Azure AD roles:
 
 - Classic subscription administrator roles
-
 - Azure roles
-
 - Azure AD roles
 
 ## Azure AD roles
@@ -59,6 +57,21 @@ Several Azure AD roles span Azure AD and Microsoft 365, such as the Global Admin
 
 ## Assign roles
 
+There are multiple ways to assign roles within Azure AD.  You need to pick the one the best meets your needs.  The user interface might be slightly different each method, however the configuration options are similar.  Methods for assigning roles include:
+
+- Assign a role to a user or group
+   - **Azure AD** --> **Roles and administration** --> **Select a role** --> **+ Add Assignment**
+- Assign a user or group to a role
+   - **Azure AD** --> Open **Users** (or Groups) --> Select an **User** (or group) --> **Assigned roles** --> **+ Add Assignment**
+- Assign a role to a broad-scope, like a Subscription, Resource Group, or Management Group
+   - Done via the **Access control (IAM)** within each blade
+- Assign a role using PowerShell or Microsoft Graph API
+- Assign a role using Privileged Identity Management (PIM)
+
+The best method for your configuration needs can be used, but care must be taken as there are no built in restrictions.  You could good to assign an administrative role to a group with users who do not need administratrive access.  This could lead to a solution accidentally modified by a user without proper knowledge of what they are doing, or even a potential avenue for attackers.  Proper identity governance is the key.
+
+### Example - using PIM to assign a role
+
 A common way to assign Azure AD roles to a user is on the Assigned roles page for a user. You can also configure the user eligibility to be elevated just-in-time into a role using **Privileged Identity Management (PIM)**.
 
 > [!NOTE]
@@ -69,27 +82,23 @@ A common way to assign Azure AD roles to a user is on the Assigned roles page fo
 
 ## Create and assign a custom role in Azure Active Directory
 
-This section describes how to create new custom roles in Azure AD. For the basics of custom roles, see the [custom roles overview](https://docs.microsoft.com/azure/active-directory/roles/custom-overview). The role can be assigned either at the directory-level scope or an app registration resource scope only.
+This section describes how to create new custom roles in Azure AD. For the basics of custom roles, see the [custom roles overview](/azure/active-directory/roles/custom-overview). The role can be assigned either at the directory-level scope or an app registration resource scope only.
 
 Custom roles can be created in the [Roles and administrators](https://portal.azure.com/) tab on the Azure AD overview page.
 
-### Create a new custom role to grant access to manage app registrations
-
-1. Sign in to the [Azure AD admin center](https://aad.portal.azure.com/) with Privileged role administrator or Global administrator permissions in the Azure AD organization.
-
-2. Select **Azure Active Directory** > **Roles and administrators** > **New custom role**.
+1. Select **Azure Active Directory** > **Roles and administrators** > **New custom role**.
 
    > [!div class="mx-imgBorder"]
    > ![Create or edit roles from the Roles and administrators page.](../media/new-custom-role.png)
 
-3. On the **Basics** tab, provide a name and description for the role and then click **Next**.
+2. On the **Basics** tab, provide a name and description for the role and then click **Next**.
 
    > [!div class="mx-imgBorder"]
    > ![provide a name and description for a custom role on the Basics tab.](../media/basics-tab.png)
 
-4. On the **Permissions** tab, select the permissions necessary to manage basic properties and credential properties of app registrations.
+3. On the **Permissions** tab, select the permissions necessary to manage basic properties and credential properties of app registrations.
 
-5. First, enter "credentials" in the search bar and select the `microsoft.directory/applications/credentials/update `permission.
+4. First, enter "credentials" in the search bar and select the `microsoft.directory/applications/credentials/update `permission.
 
    > [!div class="mx-imgBorder"]
    > ![Select the permissions for a custom role on the Permissions tab.](../media/permissions-tab.png)
@@ -99,23 +108,4 @@ Custom roles can be created in the [Roles and administrators](https://portal.azu
 7. On the **Review + create** tab, review the permissions and select **Create**.
 
 Your custom role will show up in the list of available roles to assign.
-
-## Assign a custom role scoped to a resource
-
-Like built-in roles, custom roles are assigned by default at the default organization-wide scope to grant access permissions over all app registrations in your organization. This approach allows you to give the user the permission to update credentials and basic properties of a single app without having to create a second custom role.
-
-1. Sign in to the [Azure AD admin center](https://aad.portal.azure.com/) with Application developer permissions in the Azure AD organization.
-
-2. Select **App registrations**.
-
-3. Select the app registration to which you are granting access to manage. You might have to select **All applications** to see the complete list of app registrations in your Azure AD organization.
-
-   > [!div class="mx-imgBorder"]
-   > ![Select the app registration as a resource scope for a role assignment.](../media/app-registration-apps.png)
-
-4. In the app registration, select **Roles and administrators**. If you haven't already created one, instructions are in the [preceding procedure](https://docs.microsoft.com/azure/active-directory/roles/custom-create).
-
-5. Select the role to open the **Assignments** page.
-
-6. Select **Add assignment** to add a user. The user will be granted any permissions over only the selected app registration.
 

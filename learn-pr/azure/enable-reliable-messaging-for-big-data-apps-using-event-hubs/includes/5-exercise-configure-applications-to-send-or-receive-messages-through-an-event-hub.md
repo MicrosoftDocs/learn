@@ -132,7 +132,7 @@ You'll now build the Java application running **mvn** commands.
 
     The build process may take several minutes to complete. Ensure that you see the **[INFO] BUILD SUCCESS** message before continuing.
 
-    ![Build results for sender application](../media/5-sender-build.png)
+    ![Build results for sender application.](../media/5-sender-build.png)
 
 ## Edit EventProcessorSample.java
 

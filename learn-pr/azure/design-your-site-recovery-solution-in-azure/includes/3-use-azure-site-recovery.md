@@ -24,7 +24,7 @@ If you're using other BCDR technologies, you may be able to integrate them too. 
 
 Let's look at a solution that incorporates Azure Backup and Site Recovery.
 
-![Site Recovery and Azure Backup](../media/3-asr-backup-diagram.png)
+![Site Recovery and Azure Backup.](../media/3-asr-backup-diagram.png)
 
 Here we have an on-premises environment that has a Hyper-V host server for hosting virtual machines. You want to back up all the files and folders in this virtual machine to Azure. You also want to protect any workloads running on the virtual machine, and keep running them even if the virtual machine fails. Azure Backup and Site Recovery can be used together as part of a single solution.
 

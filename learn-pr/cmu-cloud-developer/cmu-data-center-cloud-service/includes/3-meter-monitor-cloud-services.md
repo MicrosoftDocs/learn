@@ -8,7 +8,7 @@ From the customer's point of view, the cost of cloud resources forms an importan
 
 There are various costs included in cloud resources. Fixed costs such as facilities, staff, and servers are easy to calculate. Variable costs, however, require constant metering and monitoring. The advantage of using CSPs comes from paying only for the resources that are used. For example, provisioning an VM instance includes the cost of instance usage per hour, storage per GB-month for each storage type, and data transfer per GB-month. Even for this one resource, the cloud provider has to keep track of these metrics for every instance and attached volume. In Figure 3, a possible breakdown of various cost for services can be found. If we imagine doing this for more than 1 million cloud customers for tens of different types of services, this will require the metering and monitoring of gigabytes of logs every minute and charging customers accordingly. The most popular model that is used to define such metrics is called the chargeback model.
 
-![Metering in different types of cloud services](../media/meter-1.png)
+![Metering in different types of cloud services.](../media/meter-1.png)
 
 _Figure 3: Metering in different types of cloud services_
 
@@ -24,7 +24,7 @@ From the customer's point of view, verifiable metering is an important issue. Th
 
 Although the underlying architecture of metering and measuring is hidden by corporate CSPs, Ceilometer is designed for OpenStack metering, billing, and rating. The high-level architecture of OpenStack Ceilometer can be summarized as follows (Figure 4): 
 
-![Ceilometer architecture](../media/meter-2.png)
+![Ceilometer architecture.](../media/meter-2.png)
 
 _Figure 4: Ceilometer architecture_
 
