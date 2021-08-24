@@ -15,7 +15,7 @@ Here's a set of training sites you can use to practice your coding skills:
 - [HackerEarth](https://www.hackerearth.com/)
 - [Geeks for Geeks](https://www.geeksforgeeks.org/)
 
-1. Visit several of the code practice sites listed in the previous section. Bookmark sites that you find useful.
+Visit several of the code practice sites listed in the previous section. Bookmark sites that you find useful.
 
    > Pick [TopCoder](https://www.topcoder.com) for example, and bookmark it.
 

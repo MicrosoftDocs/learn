@@ -6,7 +6,7 @@ So much for the tech interview. While that is an important one, the other interv
 
 You will get questions to see how much of a team player you are. For example, you might get asked about your strengths and weaknesses and how you would handle a conflict. Both those questions are hard to answer. Strengths are easy to list but what about weaknesses? Do I really want to let an employer know my weaknesses?
 
-> Turn a weakness into a strength
+> Turn a weakness into a strength.
 
 The way to answer that question is to talk about a moment where you learned about an area where you can improve and how you grew from the process. You can think out such an answer ahead of time as it's a common question to get.
 

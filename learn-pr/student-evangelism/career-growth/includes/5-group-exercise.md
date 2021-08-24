@@ -4,7 +4,7 @@ One way to meet people in your new organization is to join clubs and social grou
 
 What do you like to do? Make a list of your hobbies. Try to include both indoor and outdoor activities. Think outside the box: if you had unlimited time, what's a hobby you would like to try?
 
-1. What kind of hobby can be best done with a group?
+What kind of hobby can be best done with a group?
 
    > For example, if you are a painter, there might be an art club to join.
 
@@ -12,7 +12,7 @@ What do you like to do? Make a list of your hobbies. Try to include both indoor 
 
 Now, do some research about the various social groups in your company.
 
-1. Note some details about groups that interest you, including upcoming activities
+Note some details about groups that interest you, including upcoming activities
 
    > Example: HOLA, your organization's Hispanic group, hosts a cooking class the first Wednesday of each month.
 

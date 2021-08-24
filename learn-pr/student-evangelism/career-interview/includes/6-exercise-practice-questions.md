@@ -14,8 +14,8 @@ Schedule time each day before your interview, to practice some of these question
 
 There are many types of questions you can practice like for example:
 
-- code questions, on algorithm or architecture.
-- soft skill question on how you would act in a certain situation.
+- Code questions, on algorithm or architecture.
+- Soft skill question on how you would act in a certain situation.
 
 Take an example of some code you have written and challenge yourself to explain it verbally in five minutes.
 

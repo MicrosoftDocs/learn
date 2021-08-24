@@ -27,6 +27,8 @@ roles:
 - developer
 products:
 - azure
+- vs
+- vs-code
 modules:
 - learn.career-get-noticed
 - learn.career-interview
