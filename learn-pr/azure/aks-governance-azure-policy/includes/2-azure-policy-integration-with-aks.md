@@ -14,7 +14,7 @@ Azure Policy works by assigning a policy definition or an initiative to a scope 
 
 Policy assignments get evaluated during the creation or update of Azure resources, if the definition or scope is changed and periodically (every 24 hours) for continuous monitoring. Practically, this means that when you create new resources the policy will immediately take effect. Any historical resources will also be scanned, so you get a continuous view on the compliance of all your resources.
 
-### Integration of Azure Policy with AKS
+## Integration of Azure Policy with AKS
 
 There are two ways in which Azure Policy integrates with AKS. There is a set of policies that enforce compliance on the Azure control plane for AKS, and there is another set of policies that enforces compliance on the workload running in your cluster. The first set of policies is focused more on cluster design itself, whereas the second set of policies is focused on workload design.
 
@@ -26,7 +26,7 @@ The first set of policies works against the Azure API itself. The second set of 
 
 The Azure Policy add-on for AKS uses a number of components under the covers, which will be explained in the next section. 
 
-### Understanding how Azure Policy for AKS works under the covers
+## Understanding how Azure Policy for AKS works under the covers
 
 To enforce policies on top of the Kubernetes API, Azure Policy for Kubernetes makes use of a number of tools: namely admission webhooks, Open Policy Agent (OPA), GateKeeper and finally an Azure Policy pod.
 
