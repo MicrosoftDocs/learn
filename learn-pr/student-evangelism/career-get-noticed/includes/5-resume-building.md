@@ -23,13 +23,12 @@ _How should you write your education section and what information should you inc
 An example of a properly written education section would look like this:
 
 > #### Education (aim for a bigger font for section titles)
-> ```
-> BACHELOR OF SCIENCE IN COMPUTER SCIENCE                   Expected: May 2023
+> 
+> BACHELOR OF SCIENCE IN COMPUTER SCIENCE &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; Expected: May 2023
 >  
-> Learn University                                          Redmond, WA
+> Learn University &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Redmond, WA
 > 
 > Related Coursework: Data Structures, Programming in C#, Algorithms, Web Development I
-> ```
 
 ## Education FAQS
 
@@ -50,13 +49,12 @@ In addition to listing your skills, you will want to match your description of p
 A skills section should look similar to this text:
 
 > #### Skills
-> ```
+> 
 > Programming Languages: Intermediate proficiency in Python, C#, Java; beginner proficiency in Swift 
 > 
 > Software: Visual Studio, Anaconda, XCode, Azure PowerTools
 > 
 > Frameworks: ASP.NET, Django
-> ```
 
 > [!TIP]
 > Make use of columns to reduce the vertical space taken by this section
@@ -77,18 +75,17 @@ The following guidelines can assist you in formatting both subsections:
 
 1. **Describe experience**. Following the title of your project/your role, you will want to add the bullet points describing your experience. Doing so will incorporate the writings we described in the previous unit, under [Describing your experience](../4-resume-writing.yml). Following the examples used there, the two subsections should be similar to the below text:
 
-   >**Projects**
-   >```
-   > Calculator Class Project - Example University             December 2020
+   >#### Projects
+   >
+   > Calculator Class Project - Example University  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; December 2020
    > 
    > - Ensured the correct functionality of a calculator program by identifying 15 bugs utilizing Python Exemption classes and debugging tools, implementing fixes and testing the program through 24 test cases
    >
-   > **Experience**
+   >#### Experience
    >
-   > Learn University Gardening Club Member               June 2020 - Current
+   > Learn University Gardening Club Member  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;  June 2020 - Current
    > 
    > - Maintained the club's nursery by monitoring and caring for number different species of plants, in collaboration with number members
-   >```
 
 > [!TIP]
 > Do not add periods at the end of your bullet points. It helps with the flow of reading and will allow the recruiter to read further without feeling the need to stop too often.

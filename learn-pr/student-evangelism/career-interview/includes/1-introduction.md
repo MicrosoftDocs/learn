@@ -1,6 +1,8 @@
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4O7NF]
+![Cartoon showing your first day in a new job](../media/interview.png)
 
-Congratulations on landing the interview! What are your next steps? When it comes to interviews, it is helpful to understand the different phases of the process that, depending on your performance, can impact the outcome.
+Congratulations on landing the interview! What are your next steps? When it comes to interviews, it is helpful to understand the different phases of the process that, depending on your performance, can impact the outcome. <br /> <br />
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4O7NF]
 
 An interview is usually the last step before being offered a job.
 

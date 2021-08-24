@@ -2,7 +2,7 @@
 
 You made it to the interview. Congratulations, that means someone looked through your resume and liked what they saw. It most likely also means you passed a phone screening or a take -home test.
 
-You are already a winner. The interview step is a bit stressful but if you've made it thus far you are in a good place. Let's think of this phase as consisting of a _before_, _during_ and _after_. Mastering each of these phases will maximize your chances to land that job.
+You are already a winner. The interview step is a bit stressful but if you've made it thus far you are in a good place. Let's think of this phase as consisting of a _before_, _during_, and _after_. Mastering each of these phases will maximize your chances to land that job.
 
 ## The take home assignment
 
@@ -46,13 +46,13 @@ You should feel excited on this day! Keep in mind that no one wants to see you f
 
 The interviewers should do what they can to make you feel relaxed.
 
-> Ask questions
+> Ask questions.
 
 Ask questions for clarification, since your context isn't their context. You should feel empowered to ask questions: how will this code be used? Can you use a library? Are there other limitations?
 
-> Remember: you've made it already
+> Remember: you've made it already.
 
-Interviewing for most companies in person means that you have already passed some bar already by means of a phone screen or take-home test, Now the company is interested in knowing who you are. You are presented to your potential future colleagues and might be given a tour of the premises. No matter what happens, you should view your path so far as a success! 
+Interviewing for most companies in person means that you have already passed some bar already by means of a phone screen or take-home test, Now the company is interested in knowing who you are. You are presented to your potential future colleagues and might be given a tour of the premises. No matter what happens, you should view your path so far as a success!
 
 ## Tech interview
 

@@ -1,3 +1,5 @@
+![Cartoon showing you getting noticed, networking.](../media/get-noticed.png)
+
 You're looking for a job, but how can you get noticed by an organization? As you begin your search for internships or full-time roles, you will notice that there seems to be much information on how to best prepare for interviews. However, one key element often left forgotten is how to get your application noticed in the first place. In order for you to land an interview, you need to have been "*screened*" by a  recruiter or person in the job role you're seeking. A screening will only happen if you are able to stand out from other applicants during this process. Let's jump to a scenario to further illustrate the case.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NNvJ]
