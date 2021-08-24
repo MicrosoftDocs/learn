@@ -6,6 +6,7 @@ Now, you can be more confident that your automated deployments will succeed and 
 
 <!-- TODO
 
-/azure/devops/pipelines/process/approvals?view=azure-devops&tabs=check-pass#query-azure-monitor-alerts
+/azure/devops/pipelines/process/approvals#query-azure-monitor-alerts
+/azure/devops/repos/git/branch-policies
 
 -->

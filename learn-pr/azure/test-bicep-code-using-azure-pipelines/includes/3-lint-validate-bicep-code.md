@@ -56,13 +56,12 @@ You use the `az deployment group validate` command to submit a Bicep file for pr
 
 :::code language="yaml" source="code/3-preflight.yml" highlight="7-9" :::
 
-This command is very similar to the `az deployment group create` command, but it doesn't actually deploy any resources. It will, however, perform the same linter rule validation as the `bicep build` command, and it also performs the extra checks against the resources that are being used in your template.
+This command is very similar to the `az deployment group create` command, but it doesn't actually deploy any resources. However, it performs extra checks against the resources that are being used in your template. For example, suppose your Bicep file contains a storage account. Preflight validation will check whether the name you've specified has already been taken by another storage account. It also checks whether the name you chose for the storage account complies with storage account naming conventions. 
 
-<!-- TODO note that even though the linter is run by the validate command, it's worth running it explicitly so it runs quickly -->
+> [!TIP]
+> The preflight validation command runs the Bicep linter too. However, it's usually a good idea to run the linter separately. That way, if there are any linter errors, you'll detect them quickly instead of waiting for the validation process to complete, which takes longer.
 
-For example, suppose your Bicep file contains a storage account. Preflight validation will check whether the name you've specified has already been taken by another storage account. It also checks whether the name you chose for the storage account complies with storage account naming conventions. 
-
-> [!NOTE]
+> [!IMPORTANT]
 > When you run a preflight validation, each of the Azure resource providers performs their own checks. Some resource providers currently don't run many checks, while others do. This means that you can't rely on preflight validation to give any certainty that your file is valid. Nevertheless, it's a useful tool and is worth including in your pipeline.
 
-By adding a validation stage to your pipeline, which first runs the linter and then performs a preflight validation, you'll have more confidence before you actually deploy your Bicep file.
+By adding validation stages to your pipeline to run the linter and perform a preflight validation, you'll have more confidence before you actually deploy your Bicep file.

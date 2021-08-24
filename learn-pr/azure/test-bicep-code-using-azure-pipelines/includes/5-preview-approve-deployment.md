@@ -54,6 +54,6 @@ After your pipeline begins and reaches a stage that requires an approval check, 
 :::image type="content" source="../media/5-stages-approval-check.png" alt-text="TODO" border="false":::
 
 > [!WARNING]
-> The environments feature in Azure Pipelines provides you with the ability to link your deployments to an environment, and then the deployment inherits the approvals and checks defined by the environment owner. However, there's nothing to require that new pipelines use environments. It's important that you and your organization establish good practices to review your pipeline definitions, such as by reviewing pipeline pull requests.
+> The environments feature in Azure Pipelines provides you with the ability to link your deployments to an environment, and then the deployment inherits the approvals and checks defined by the environment owner. However, there's nothing to require that new pipelines use environments. It's important that you and your organization establish good practices to review your pipeline definitions, such as by configuring your repository to require pull request reviews on any changes to your *main* branch by using branch protection policies. You'll learn more about this in a future module.
 >
 > You can also add approvals and checks to service connections. This ensures that approval is obtained before a deployment can use a service principal's credentials. However, this would also affect your pipeline's ability to run preflight validation and the what-if operation, since they require a service connection too.
