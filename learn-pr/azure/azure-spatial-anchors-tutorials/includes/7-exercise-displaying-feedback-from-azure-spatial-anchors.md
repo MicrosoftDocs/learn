@@ -7,7 +7,7 @@
 :::image type="content" source="../media/asa-04-section1-step1-1.png" alt-text="ASA feedback panel" lightbox="asa-04-section1-step1-1.png":::
 
 >![Tip]
->To make it easier to work with your scene, set the <a herf = "https://docs.unity3d.com/Manual/SceneVisibility.html">Scene Visibility </a>for the ParentAnchor object to off by clicking the eye icon to the left of the object. This hides the object in the Scene window without changing their in-game visibility.
+>To make it easier to work with your scene, set the [Scene Visibility](https://docs.unity3d.com/Manual/SceneVisibility.html) for the ParentAnchor object to off by clicking the eye icon to the left of the object. This hides the object in the Scene window without changing their in-game visibility.
 
 2. Rename the newly created Text (TMP) object **Feedback**, then, in the Inspector window, change its position and size, so it is placed neatly underneath the instruction text, for example:
 

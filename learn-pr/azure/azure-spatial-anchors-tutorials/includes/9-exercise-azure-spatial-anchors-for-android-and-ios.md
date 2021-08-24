@@ -27,7 +27,7 @@ In this section, you will learn how to configure MRTK for deploying to a mobile 
 
 4. Using the **Type** dropdown, change the type to **Microsoft.MixedReality.Toolkit.Experimental.UnityAR** > **UnityARCameraSettings**:
 
-:::image type="content" source="../media/asa-05-section2-step1-4.png" alt-text="Add camera setting provider" lightbox="asa-05-section2-step1-4.png":::
+:::image type="content" source="../media/asa-05-section2-step1-4.png" alt-text="Change the type of the added camera setting provider" lightbox="asa-05-section2-step1-4.png":::
 
 5. Update the MRTK UnityAR scripting defines by invoking the menu item: **Mixed Reality** > **Toolkit** > **Utilities** > **UnityAR** > Update Scripting Defines
 
@@ -46,7 +46,7 @@ Close the Build Settings window.
 
 2. In the Unity menu, select **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Project for MRTK** to open the **MRTK Project Configurator** window, ensure all options are selected, then click the **Apply** button to apply the settings:
 
-:::image type="content" source="../media/asa-05-section3-step1-2.png" alt-text="MRTK project configurator" lightbox="asa-05-section3-step1-2.png":::
+:::image type="content" source="../media/asa-05-section3-step1-2.png" alt-text="MRTK project configurator window" lightbox="asa-05-section3-step1-2.png":::
 
 3. In the Unity menu, select **Edit** > **Project Settings**... to open the Player Settings window, then locate the **Player** > **Other Settings** section, select **Vulkan** and remove it by clicking the "-" symbol:
 
@@ -107,7 +107,7 @@ Close the Player Settings window and open the **Build Settings** window again.
 
 :::image type="content" source="../media/asa-05-section4-step1-5.png" alt-text="Select folder" lightbox="asa-05-section4-step1-5.png":::
 
-When the build process is complete, follow the [Export the Xcode project](https://docs.microsoft.com/en-us/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project) instructions to learn to deploy your Xcode project to your iOS device.
+When the build process is complete, follow the [Export the Xcode project](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project) instructions to learn to deploy your Xcode project to your iOS device.
 
 
 

@@ -32,7 +32,7 @@ In this section, you will prepare the scene by adding some of the tutorial prefa
 :::image type="content" source="../media/asa-02-section4-step1-1.png" alt-text="Prefabs" lightbox="asa-02-section4-step1-1.png":::
 
 >![Tip]
->If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by <a herf = "https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html">toggling the Gizmos</a> to the off position, as shown in the image above.
+>If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by [toggling the Gizmos](https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html) to the off position, as shown in the image above.
 
 2. Select **MixedRealityToolkit** object in the Hierarchy window, use the **Add Component** button in the Inspector window to add the following components:
 
