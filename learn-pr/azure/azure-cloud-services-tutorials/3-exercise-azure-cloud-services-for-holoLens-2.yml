@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-cloud-services-mrtk.3-exercise-azure-cloud-services-for-holoLens 2
+uid: learn.azure.azure-cloud-services-mrtk.3-exercise-azure-cloud-services-for-holoLens-2
 title: Exercise Azure cloud services for holoLens 2
 metadata:
-  title: 
+  title: Exercise Azure cloud services for holoLens 2
   description: Introduction for Azure cloud services for holoLens 2
   ms.date: 06/23/2021
   author: "varunsiddaraju"
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-exercise-azure-cloud-services-for-holoLens 2.md)]
+  [!include[](includes/3-exercise-azure-cloud-services-for-holoLens-2.md)]
