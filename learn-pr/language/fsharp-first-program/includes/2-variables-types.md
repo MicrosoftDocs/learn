@@ -2,7 +2,7 @@ All programs usually consist of many steps where the program operates on data. A
 
 ## Variables, bind a value
 
-Variables are named references to a value, that you want to keep referring to in your code. In F#, it's thought of as binding a value. So what you do is to assign, or _bind_, a value to a named reference, a variable. To bind a value, you use the `let` keyword, a name for your reference and assign a value to it, like in the below code:
+Variables are named references bound to a value, that you want to keep referring to in your code. In F#, it's thought of as binding a value. So what you do is to assign, or _bind_, a value to a named reference, a variable. To bind a value, you use the `let` keyword, a name for your reference and assign a value to it, like in the below code:
 
 ```fsharp
 let name = "Chris"
