@@ -23,7 +23,7 @@ You should carefully [plan](https://docs.microsoft.com/azure/azure-arc/data/plan
 
 Microsoft has worked with several industry partners to validate specific infrastructure and Kubernetes solutions. Learn more at the Azure Arc-enabled data services [validation program](https://docs.microsoft.com/azure/azure-arc/data/validation-program).
 
-Azure arc-enabled data services are deployed as a set of pods based on Microsoft Container Registry (MCR) container images running on Kubernetes nodes. All services utilize one of the key components of the Kubernetes platform, the Kubernetes API.
+Azure arc-enabled data services are deployed as a set of pods based on Microsoft Container Registry (MCR) container images running on Kubernetes nodes. All services use one of the key components of the Kubernetes platform, the Kubernetes API.
 
 ## Connected modes
 
@@ -31,15 +31,15 @@ Before you deploy Azure Arc-enabled data services components, you should decide 
 
 ### Direct connected mode
 
-With direct connected mode, users can use the Azure Resource Manager through the az CLI and Azure Portal to deploy and manage Azure Arc-enabled data services. Azure Active Directory and Azure Role-Based Access Control (RBAC) can be used for security authentication and control. Also, inventory, logs, metrics, and billing information is automatically sent to Azure.
+With direct connected mode, users can use the Azure Resource Manager through the az CLI (using the arcdata extension) and Azure Portal to deploy and manage Azure Arc-enabled data services. Azure Active Directory and Azure Role-Based Access Control (RBAC) can be used for security authentication and control. Also, inventory, logs, metrics, and billing information is automatically sent to Azure.
 
 ### Indirect connected mode
 
-With indirect connected mode, all deployment and management operations for Azure Arc-enabled data services are done using the az CLI (using the arcdata extension) or tools like kubectl or Azure Data Studio. These tools interact directly with the Kubernetes API to manage Azure Arc-enabled data services. You are not required to be always connected to Azure when you use indirect connected mode. Inventory, logs, metrics, and billing can be manually exported and uploaded to Azure using the az CLI.
+With indirect connected mode, all deployment and management operations for Azure Arc-enabled data services are done using the az CLI (using the arcdata extension) or tools like kubectl or Azure Data Studio. These tools interact directly with the Kubernetes API to manage Azure Arc-enabled data services. You aren't required to be always connected to Azure when you use indirect connected mode. Inventory and billing can be manually exported and uploaded to Azure using the az CLI. Logs and metrics can be optionally uploaded to Azure Monitor.
 
 ## Azure Arc data controller
 
-Once you have deployed the Kubernetes platform of your choice, you will first deploy an Azure Arc data controller. The Azure Arc data controller is a series of Kubernetes pods that provide coordination and orchestration of Azure Arc enabled-data services using the Kubernetes API including a concept called custom resource definitions.
+Once you've deployed the Kubernetes platform of your choice, you'll first deploy an Azure Arc data controller. The Azure Arc data controller is a series of Kubernetes pods that provide coordination and orchestration of Azure Arc enabled-data services using the Kubernetes API and Custom Resource Definitions(CRD).
 
 The Azure Arc data controller can be deployed in direct connected mode using the Azure portal. In order to deploy with direct connected mode, you must first [connect](https://docs.microsoft.com/azure/azure-arc/kubernetes/quickstart-connect-cluster?tabs=azure-cli) your Kubernetes cluster using Azure Arc-enabled Kubernetes. This connection will deploy Azure Arc agents on your Kubernetes cluster and connect it to Azure.
 
@@ -63,6 +63,16 @@ You can deploy an Azure Arc-enabled PostgreSQL Hyperscale through the Azure port
 
 An Azure Arc-enabled PostgreSQL server group is a series of Kubernetes stateful-set pods (the number depends on how many worker nodes you deploy), giving it built-in basic high availability. Each pod includes containers for the PostgreSQL engine, metrics, and log collection.
 
-## Azure integration
+## Unified Azure experience
+
+When you use direct connected mode, you now have the ability to manage Azure Arc-enabled data services with the Azure Resource Manager through the Azure portal or az CLI. For example, you can deploy an Azure Arc-enabled SQL Managed Instance in the Azure portal. Azure Arc resource providers will coordinate this request with Azure Arc agents and the Azure Arc data controller in the Kubernetes cluster to complete the deployment of Kubernetes pods and services. Also, Azure Arc agents will automatically consume inventory, metrics, logs, and billing collected by the Azure Arc data controller to upload to Azure.
+
+You can use the az CLI tool to manually export and upload inventory, metrics, logs, and billing collected by the Azure Arc data controller when you use indirect connected mode.
+
+The Azure portal and az CLI can be used to view deployed Azure Arc-enabled data services and corresponding usage, billing, metrics, and logs.
 
 ## Connecting and managing data services
+
+After you have deployed Azure Arc-enabled data services, you can use compatible tools or [client drivers](https://docs.microsoft.com/sql/connect/sql-connection-libraries) to connect, query, and manage these services. A great example of a compatible tool to query and manage Azure Arc-enabled SQL Managed Instance is SQL Server Management Studio (SSMS) and Azure Data Studio (ADS).
+
+You can also use az CLI (with the [arcdata extension](https://docs.microsoft.com/Azure/azure-arc/data/install-arcdata-extension)) and kubectl to manage Azure Arc-enabled data services.

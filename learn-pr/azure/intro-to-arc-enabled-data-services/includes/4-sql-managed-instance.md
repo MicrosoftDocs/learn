@@ -16,7 +16,9 @@ This Azure SQL deployment option provides a pre-installed, versionless SQL Serve
 
 This Azure SQL deployment option provides a contained SQL Server database powered by a pre-installed, versionless SQL Server as a fully managed service. The user manages the database while Microsoft manages the underlying SQL instance, platform, and infrastructure. This option is also an example of a Platform as a Service (PaaS).
 
-**Azure Arc-enabled SQL Managed Instance** is similar to Azure SQL Managed Instance. It has similar features and management capabilities. The intention of Azure Arc-enabled SQL Managed Instance is to provide the same Platform as a Service (PaaS) capabilities and experience of Azure, while the customer chooses and manages the infrastructure using the Kubernetes platform.
+### Azure Arc-enabled SQL Managed Instance
+
+Azure Arc-enabled SQL Managed Instance is similar to Azure SQL Managed Instance. It has similar features and management capabilities. The intention of Azure Arc-enabled SQL Managed Instance is to provide the same Platform as a Service (PaaS) capabilities and experience of Azure, while the customer chooses and manages the infrastructure using the Kubernetes platform.
 
 ## Comparison of features
 
@@ -26,17 +28,15 @@ To understand the capabilities of Azure Arc-enabled SQL Managed Instance, it's i
 
 Since Azure Arc-enabled SQL Managed Instance is based on the SQL Server engine, it provides core instance [features](https://docs.microsoft.com/azure/azure-arc/data/managed-instance-features) almost 100% compatible with SQL Server and Azure SQL Managed Instance. The instance includes a compatible T-SQL language interface and all the features of security, performance, and availability.
 
-Like Azure SQL Managed instance, when you deploy Azure Arc-enabled SQL Managed instance you get a pre-installed, versionless SQL Server. Azure Arc-enabled SQL Managed instance uses container images from the Microsoft container registry.
+Like Azure SQL Managed instance, when you deploy Azure Arc-enabled SQL Managed instance you get a pre-installed, versionless SQL Server. Azure Arc-enabled SQL Managed instance uses container images from the Microsoft Container Registry (MCR).
 
-In direct connected mode, authentication to Azure Arc-enabled SQL Managed instance can be done using SQL or Azure Active Directory authentication. SQL authentication can be used if you use indirect connected mode.
-
-Azure SQL Managed Instance uses gateway servers to abstract the application from underlying connectivity details. Azure Arc-enabled SQL Managed Instance also provides connection abstraction using Kubernetes LoadBalancers or NodePorts.
+Azure SQL Managed Instance uses gateway servers to abstract the application from underlying connectivity details. Azure Arc-enabled SQL Managed Instance also provides connection abstraction using Kubernetes LoadBalancer or NodePort services.
 
 ### Service tiers
 
 Like Azure SQL Managed Instance, you can deploy Azure Arc-enabled SQL Managed instance with two deployment options called [service tiers](https://docs.microsoft.com/azure/azure-arc/data/service-tiers):
 
-- **General purpose** - As its name implies, this service tier is for most workloads.This service tier has a limit for resources such as core and memory but comes with built-in basic high availability through Kubernetes and shared storage. Instances in the general purpose tier map to features supported in SQL Server Standard Edition.
+- **General purpose** - As its name implies, this service tier is for most workloads. This service tier has a limit for resources such as core and memory but comes with built-in basic high availability through Kubernetes and shared storage. Instances in the general purpose tier map to features supported in SQL Server Standard Edition.
 
 - **Business critical (preview)** - This service tier is designed for workloads that require the best performance and highest level of availability. This service tier has no limits for memory or cores and uses availability groups to provide high availability with read scale-out. Instances in the business critical tier map to features supported for SQL Server Enterprise Edition.
 
@@ -92,19 +92,19 @@ For the Business Critical service tier (Preview), built in high availability is 
 
 Kubernetes LoadBalancers and NodePorts provide connection abstraction for the application should the instance move nodes within the cluster. In addition, a read-only connection abstraction point is provided for Business Critical service tiers.
 
-Since Microsoft manages the complete platform and infrastructure of Azure SQL Managed Instance, users get the benefit of a Service Level Agreement (SLA) for availability. Since customers must manage the infrastructure for Azure Arc-enabled SQL Managed Instance, a SLA isn't provided.
+Since Microsoft manages the complete platform and infrastructure of Azure SQL Managed Instance, users get the benefit of a Service Level Agreement (SLA) for availability. Since customers must manage the infrastructure for Azure Arc-enabled SQL Managed Instance, an SLA isn't provided.
 
 ### Disaster Recovery
 
 Like Azure SQL Managed Instance, Azure Arc-enabled SQL Managed Instance provides an automatic backup system for databases including point-in-time restore. Users can manually execute COPY_ONLY backups and restore them at any time.
 
-Users configure a desired Recovery Point Objective (RPO) and Recovery Time Objective (RTO). These settings determined how often transaction log backups are taken and how long backups are kept.
+Users configure a desired Recovery Point Objective (RPO) and retention period. These settings determined how often transaction log backups are taken and how long backups are kept.
 
 Azure SQL Managed Instance provides built in redundancy for backups using Azure storage. Users for Azure Arc-enabled SQL Managed Instance can configure a specific Kubernetes storage class to be used for SQL backups but are responsible for any redundancy needs.
 
 ## Migration
 
-Because Azure Arc-enabled SQL Managed Instances uses a SQL Server engine, existing SQL Server versions can be migrated using database backup and restore. Databases can be restored directly from Azure Storage or by copying the backup into the container for the SQL Managed Instance.
+Because Azure Arc-enabled SQL Managed Instances uses a SQL Server engine, existing SQL Server versions can be migrated using database backup and restore. Databases can be restored directly from Azure Storage or by copying a local backup into the container for the SQL Managed Instance.
 
 ## Interfaces for Azure Arc-enabled SQL Managed Instance
 

@@ -2,7 +2,7 @@
 uid: learn.azure.intro-to-arc-enabled-data-services.3-fundamentals
 metadata:
   title: Azure Arc-enabled data services fundamentals
-  description: In this unit you'll learn about the basics and architecture of Azure Arc-enabled data services.
+  description: In this unit, you'll learn about the basics and architecture of Azure Arc-enabled data services.
   ms.date: 06/28/2021
   author: bobward
   ms.author: bobward
@@ -16,31 +16,51 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which namespace hosts the Azure Arc enabled Kubernetes agents"
+  - content: "Which key component of Kubernetes does Azure Arc-enabled data services use?"
     choices:
-    - content: "azure-arc"
+    - content: "Kubernetes API"
       isCorrect: true
-      explanation: "Azure Arc enabled Kubernetes agents run in the azure-arc namespace"
-    - content: "default"
+      explanation: "All services use one of the key components of the Kubernetes platform, the Kubernetes API"
+    - content: "az CLI"
       isCorrect: false
-      explanation: "This namespace is used by application workloads"
-    - content: "kube-system"
+      explanation: "az CLI is not a key component of Kubernetes"
+    - content: "kubectl"
       isCorrect: false
-      explanation: "This namespace is used by core system workloads"
-    - content: "kube-public"
+      explanation: "kubectl is a tool used with Kubernetes but is not a key component used by Azure Arc-enabled data services"
+    - content: "Azure Arc Agents"
       isCorrect: false
-      explanation: "This namespace is meant by shared application workloads"
-  - content: "Which of the following is NOT an advantage of Azure Arc enabled Kubernetes?"
+      explanation: "Azure Arc Agents are deployed on the Kubernetes cluster but not a component of Kubernetes"
+  - content: "Which connected mode supports the Azure Resource Manager?"
     choices:
-    - content: "GitOps-based configuration and workload management"
+    - content: "indirect connected mode"
       isCorrect: false
-      explanation: "GitOps-based configuration and workload management is the benefit of Azure Arc enabled Kubernetes"
-    - content: "Use of Azure Policy for Kubernetes"
-      isCorrect: false
-      explanation: "Azure Policy-based runtime policies is the benefit of Azure Arc enabled Kubernetes"
-    - content: "Use of Azure Monitor for Containers"
-      isCorrect: false
-      explanation: "Azure Monitor for Containers is a benefit provided by Azure Resource Manager"
-    - content: "Managing cluster creation"
+      explanation: "indirect connected mode cannot use the Azure Resource Manager. You cannot use tools like the Azure portal to deploy or manage Azure Arc-enabled data services"
+    - content: "direct connected mode"
       isCorrect: true
-      explanation: "Azure Arc enabled Kubernetes does not provide the ability to manage cluster creation"
+      explanation: "With direct connected mode, users can use the Azure Resource Manager through the az CLI and Azure Portal"
+    - content: "azure connected mode"
+      isCorrect: false
+      explanation: "The only connected mode options are direct or connected"
+  - content: "The Azure Arc data controller requires a Kubernetes cluster to be connected to Azure"
+    choices:
+    - content: "true"
+      isCorrect: false
+      explanation: "An Azure Arc data controller can be deployed in indirect connected mode which does not require the Kubernetes cluster to be connected to Azure"
+    - content: "false"
+      isCorrect: true
+      explanation: "An Azure Arc data controller can be deployed in indirect connected mode which does not require the Kubernetes cluster to be connected to Azure"
+  - content: "What component coordinates Azure Resource Manager requests to deploy and manage Azure Arc-enabled data services on Kubernetes?"
+    choices:
+    - content: "Azure Arc data controller"
+      isCorrect: false
+      explanation: "The Azure Arc data controller coordinates only within in the Kubernetes cluster"
+    - content: "Azure portal"
+      isCorrect: false
+      explanation: "The Azure portal is an interface that uses the Azure Resource Manager"
+    - content: "Azure Arc resource providers"
+      isCorrect: true
+      explanation: "Azure Arc resource providers will coordinate this request with Azure Arc agents and the Azure Arc data controller in the Kubernetes cluster to complete the deployment of Kubernetes pods and services"
+    - content: "az CLI"
+      isCorrect: false
+      explanation: "The az CLI is an interface that uses the Azure Resource Manager"
+      
