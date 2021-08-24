@@ -24,12 +24,13 @@ By using stages, you can verify the quality of your code before you deploy it. T
 
 :::image type="content" source="../media/2-shift-left.png" alt-text="TODO" border="false":::
 
-It's a well-understood rule in software development that the earlier in the process that you find errors - the closer to the left of the timeline - the easier and quicker it is to fix them. The later in your process that you catch an error, the harder and more complicated it is to fix.
-
-For this reason, CI stages also often gets linked to pull requests in Azure DevOps. Pull requests typically represent changes that someone on your team wants to make to the code on your main branch. It's helpful to run your CI stages during the pull request review process. This acts as a check to ensure that the code still builds and tests successfully, even with the proposed changes. If the check succeeds, you have some confidence that the change won't cause problems when it's merged to your main branch. If the check fails, you know there's more work to do to before the pull request is ready to merge.
+It's a well-understood rule in software development that the earlier in the process that you find errors - the closer to the left of the timeline - the easier and quicker it is to fix them. The later in your process that you catch an error, the harder and more complicated it is to fix. Throughout this module, you'll see how you can add increasingly more testing to your pipeline as it progresses.
 
 > [!TIP]
-> Automated checks and tests in pull requests and other pipelines are only as effective as the tests you write. So, it's important that you consider the things you need to test and the steps you need to perform to be confident that your deployment is OK.
+> Pull requests typically represent changes that someone on your team wants to make to the code on your main branch. It's helpful to create another pipeline that runs your CI steps during the pull request review process. This acts as a way to validate that the code still builds and tests successfully, even with the proposed changes. If the validation succeeds, you have some confidence that the change won't cause problems when it's merged to your main branch. If the check fails, you know there's more work to do to before the pull request is ready to merge.
+
+> [!IMPORTANT]
+> Automated validation and tests are only as effective as the tests you write. So, it's important that you consider the things you need to test and the steps you need to perform to be confident that your deployment is OK.
 
 ## Define a pipeline stage
 
@@ -50,11 +51,14 @@ Here's how this is defined in a pipeline YAML file:
 
 ## Control the sequence of stages
 
-By default, the stages run in the order you define them, and a stage only runs if the previous stage was successful. You can add dependencies between them to change the order. Continuing the example above, imagine we want to run both of our deployments in parallel, like this:
+By default, the stages run in the order you define them, and a stage only runs if the previous stage was successful. You can add dependencies between them to change the order. Continuing the example above, imagine you want to run both of our deployments in parallel, like this:
 
 :::image type="content" source="../media/2-stages-dependson.png" alt-text="TODO" border="false":::
 
-We can specify the dependencies between stages by using the `dependsOn` keyword:
+> [!TIP]
+> Although you can configure your pipeline stages to run in parallel, in reality, they won't run in parallel unless you have enough agents to run multiple jobs at the same time. When you use Microsoft-hosted agents, you need to purchase additional *parallel jobs*.
+
+You can specify the dependencies between stages by using the `dependsOn` keyword:
 
 :::code language="yaml" source="code/2-stages-dependson.yml" highlight="7, 12" :::
 
