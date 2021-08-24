@@ -44,7 +44,7 @@ Members of an organization with the *owner* permission can perform a wide range 
 We recommend setting up only one organization for your users and repositories. If specific constraints in your company require you to create multiple organizations, be aware that:
 
 - It is not possible to duplicate an organization or share configurations between two organizations. This means that you must set up everything from scratch every time you create an organization, which increases the risk of errors in your settings.
-- Depending on your software providers' policies, you might incur additional costs if you need to install some applications in multiple organizations.
+- Depending on your software providers' policies, you might incur extra costs if you need to install some applications in multiple organizations.
 - Managing multiple organizations is generally more difficult!
 
 ## Administration at enterprise level
