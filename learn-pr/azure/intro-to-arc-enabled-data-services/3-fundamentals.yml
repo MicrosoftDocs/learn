@@ -23,7 +23,7 @@ quiz:
       explanation: "All services use one of the key components of the Kubernetes platform, the Kubernetes API"
     - content: "az CLI"
       isCorrect: false
-      explanation: "az CLI is not a key component of Kubernetes"
+      explanation: "az CLI isn't a key component of Kubernetes"
     - content: "kubectl"
       isCorrect: false
       explanation: "kubectl is a tool used with Kubernetes but is not a key component used by Azure Arc-enabled data services"
@@ -34,7 +34,7 @@ quiz:
     choices:
     - content: "indirect connected mode"
       isCorrect: false
-      explanation: "indirect connected mode cannot use the Azure Resource Manager. You cannot use tools like the Azure portal to deploy or manage Azure Arc-enabled data services"
+      explanation: "indirect connected mode can't use the Azure Resource Manager. You can't use tools like the Azure portal to deploy or manage Azure Arc-enabled data services"
     - content: "direct connected mode"
       isCorrect: true
       explanation: "With direct connected mode, users can use the Azure Resource Manager through the az CLI and Azure Portal"
@@ -45,10 +45,10 @@ quiz:
     choices:
     - content: "true"
       isCorrect: false
-      explanation: "An Azure Arc data controller can be deployed in indirect connected mode which does not require the Kubernetes cluster to be connected to Azure"
+      explanation: "An Azure Arc data controller can be deployed in indirect connected mode, which doesn't require the Kubernetes cluster to be connected to Azure"
     - content: "false"
       isCorrect: true
-      explanation: "An Azure Arc data controller can be deployed in indirect connected mode which does not require the Kubernetes cluster to be connected to Azure"
+      explanation: "An Azure Arc data controller can be deployed in indirect connected mode, which doesn't require the Kubernetes cluster to be connected to Azure"
   - content: "What component coordinates Azure Resource Manager requests to deploy and manage Azure Arc-enabled data services on Kubernetes?"
     choices:
     - content: "Azure Arc data controller"
