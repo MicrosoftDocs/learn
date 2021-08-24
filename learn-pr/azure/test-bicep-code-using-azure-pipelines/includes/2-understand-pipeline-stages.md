@@ -84,7 +84,7 @@ A typical Bicep deployment pipeline contains several stages. As the pipeline mov
 1. **Validate:** Check that the Bicep file is well-formed and doesn't contain any obvious errors. In this module, we'll split this stage into two: linting and preflight validation. You'll learn more about these on the next page.
 1. **Preview:** Use the what-if command to validate the list of changes that will be applied against your Azure environment. Ask a human to manually review the what-if results and approve the pipeline to proceed.
 1. **Deploy.**
-1. **Smoke test:** Perform post-deployment validation against some of the important resources that you've deployed.
+1. **Test:** Run post-deployment tests against some of the important resources that you've deployed.
 
 > [!NOTE]
 > Your organization might have a different sequence of stages, or you might need to integrate your Bicep deployments into a pipeline that deploys other components. Once you understand how the stages above work, you can design a pipeline to suit your needs.
