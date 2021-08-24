@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-network-design-with-azure-cni.1-introduction  
+title: Introduction  
+metadata:
+  unitType: introduction  
+  title: Introduction
+  description: Introduction
+  ms.date: 8/20/2021  
+  author: markwme  
+  ms.author: mawhitby  
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]
