@@ -29,6 +29,6 @@ roles:
 modules:
 - learn.career-get-noticed
 - learn.career-interview
-- learn-career-growth
+- learn.career-growth
 trophy:
   uid: learn.start-career-in-tech.trophy
