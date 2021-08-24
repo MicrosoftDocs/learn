@@ -4,7 +4,7 @@ Congratulations! You've successfully completed your path into tech and landed an
 
  You also impressed your interviewer with your proficiency of 'human' skills; you're a good communicator, work well with others, and will be a valuable asset to the company. You are ready to start your first day. Now what?
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Oxoy]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Oxoy]
 > Software engineer Eleanor Lewis describes her work as an intern.
 
 ## Hello, world!
