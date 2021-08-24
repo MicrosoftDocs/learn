@@ -34,7 +34,6 @@ units:
 - learn.tensorflow.intro-natural-language-processing.embeddings
 - learn.tensorflow.intro-natural-language-processing.recurrent-networks
 - learn.tensorflow.intro-natural-language-processing.generative-networks
-- learn.tensorflow.intro-natural-language-processing.attention-transformers
 - learn.tensorflow.intro-natural-language-processing.knowledge-check
 - learn.tensorflow.intro-natural-language-processing.summary
 badge:
