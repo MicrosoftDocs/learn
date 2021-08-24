@@ -4,7 +4,7 @@ It's an old saying that "you don't know what you don't know", but there's truth 
 
 Ask for specific feedback from your manager, teammates, and colleagues. What is expected of you? It's best to know this up front so that you can perform a task and then ask how you can improve in execution. Make notes of this feedback and review your documentation periodically. Here is [a course](https://www.linkedin.com/learning/asking-for-feedback-as-an-employee/why-you-should-ask-for-feedback?u=3322) on how to ask for feedback as an employee.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Oxol]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Oxol]
 > Developer Advocate Gustavo Cordido discusses the importance of asking questions.
 
 ## Asking for clarifications
