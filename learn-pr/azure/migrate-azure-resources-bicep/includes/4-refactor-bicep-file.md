@@ -78,7 +78,7 @@ It's possible the names of parameters, variables, and symbolic names generated b
 
 For example, in the converted template above, the variable named `appServicePlanName_var` has `_var` appended to the end of the original variable name:
 
-:::code language="bicep" source="code/2-app-service-plan.bicep" range="20-27" highlight="6" :::
+:::code language="bicep" source="code/4-app-service-plan.bicep" range="20-27" highlight="6" :::
 
 For clarity, it's a good idea to remove the `_var`. But, when you rename the variable, its new name conflicts with the symbolic name of the App Service plan resource. So, it's a good idea to rename resources first, and then rename the variables used in its definition.
 
@@ -118,7 +118,7 @@ You can add a multi-line comment at the beginning of the file as shown below:
 
 Single-line comments can be added as headers for sections of code, or on individual lines to describe the code.
 
-:::code language="bicep" source="code/2-app-service-plan-updated.bicep" range="34-46" highlight="1,6,9,12" :::
+:::code language="bicep" source="code/4-app-service-plan-updated.bicep" range="34-46" highlight="1,6,9,12" :::
 
 ### Follow Bicep best practices
 
