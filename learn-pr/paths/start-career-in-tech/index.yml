@@ -24,8 +24,8 @@ levels:
 - beginner
 roles:
 - developer
-# products:
-# - vs
+products:
+- azure
 modules:
 - learn.career-get-noticed
 - learn.career-interview
