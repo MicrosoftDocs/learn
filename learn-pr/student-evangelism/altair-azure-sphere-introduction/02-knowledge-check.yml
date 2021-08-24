@@ -37,13 +37,13 @@ quiz:
       explanation: "The Altair was built on the Intel 8080, the second 8-bit microprocessor manufactured by Intel in 1974."
   - content: "The Altair 8800 emulator solution is made up of the following components."
     choices:
-    - content: "Three applications running on the Azure Sphere."
+    - content: "Two applications running on the Azure Sphere microcontroller."
       isCorrect: false
-      explanation: "This is partially true, there are three applications running on each core of the Azure Sphere."
+      explanation: "This is partially true, there are two applications running on the Azure Sphere."
     - content: "Applications running on the Azure Sphere, cloud services, and the Web Terminal"
       isCorrect: true
-      explanation: "The cloud enabled Altair 8800 project consists of three applications running on the Azure Sphere, cloud services consisting of IoT Central and an Azure Virtual Machine, along with a Web Terminal built with HTML/CSS/JavaScript."
+      explanation: "The cloud enabled Altair 8800 project consists of two applications running on the Azure Sphere, cloud services consisting of IoT Central and an Azure Virtual Machine, along with a Web Terminal built with HTML/CSS/JavaScript."
     - content: "Azure IoT Central, an Azure Static Web App, and an Azure Virtual machine."
       isCorrect: false
-      explanation: "These cloud services certainly form part of the Altair solution. The Altair solutions consists of three applications running on the Azure Sphere, cloud services consisting of IoT Central, a static web app, and an Azure Virtual Machine, along with a Web Terminal built with HTML/CSS/JavaScript."
+      explanation: "These cloud services certainly form part of the Altair solution. The Altair solutions consists of two applications running on the Azure Sphere, cloud services consisting of IoT Central, a static web app, and an Azure Virtual Machine, along with a Web Terminal built with HTML/CSS/JavaScript."
   

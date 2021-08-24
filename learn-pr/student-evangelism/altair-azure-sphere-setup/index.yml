@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.altair-azure-sphere-setup
 metadata:
-  title: Set up an Altair emulator and Azure Sphere
-  description: Learn how to set up an Altair 8800 emulator and an Azure Sphere development environment.
+  title: Set up the Altair emulator and Azure Sphere
+  description: Learn how to set up the Altair 8800 emulator and the Azure Sphere development environment.
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-title: Set up an Altair emulator and Azure Sphere
-summary: Learn how to set up an Altair 8800 emulator and an Azure Sphere development environment.
+title: Set up the Altair emulator and Azure Sphere
+summary: Learn how to set up the Altair 8800 emulator and the Azure Sphere development environment.
 abstract:  |
   In this module, you will:
   - Learn the hardware and software requirements for the Altair 8800 emulator. 

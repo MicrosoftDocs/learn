@@ -24,13 +24,13 @@ An Avnet Azure Sphere Starter Kit Rev 1 with the MikroE 4x4 key click and 8x8 R 
 
 ### Avnet Azure Sphere plus MikroE Altair 8800 Retro Click
 
-An Avnet Azure Sphere Starter Kit Rev 1 and Rev 2 with the MikroE Altair 8800 Retro Click (**Available soon**).
+An Avnet Azure Sphere Starter Kit Rev 1 or Rev 2 with the MikroE Altair 8800 Retro Click (**Available soon**).
 
 ![Avnet Azure Sphere plus MikroE Click panel.](../media/altair-8800-retro-click.png)
 
 ### Altair front panel
 
-The Seeed Studio or Avnet with the Altair Front Panel. See the Front Panel wiring section in the appendix.
+The Seeed Studio or Avnet with the Altair Front Panel. See the Front Panel wiring section in the table below.
 
 ![Avnet Azure Sphere with the Altair front panel.](../media/avnet-with-front-panel.png)
 

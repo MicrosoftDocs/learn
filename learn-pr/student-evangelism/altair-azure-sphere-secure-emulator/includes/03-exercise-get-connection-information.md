@@ -4,7 +4,7 @@ In this exercise, you'll get the connection information for Azure IoT Central.
 
 1. Open the command prompt.
 
-2. Navigate to the **azure-sphere-samples** folder in the Altair8800Emulator folder you cloned to your desktop.
+2. Navigate to the **azure-sphere-samples** folder in the Altair8800Emulator folder you cloned to your computer.
 
    - On Windows, navigate to the **Samples\AzureIoT\Tools\win-x64** folder.
    - On Linux, navigate to the **Samples/AzureIoT/Tools/linux-x64** folder. On Linux, you may need to explicitly set execution permissions for the **ShowIoTCentralConfig** tool. From a terminal, run `chmod +x ShowIoTCentralConfig` to add execution permissions for the tool.
