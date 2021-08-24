@@ -12,23 +12,33 @@ For example, imagine that you deploy a new Azure SQL server by using a Bicep dep
 Even when you're just deploying basic Bicep files, it's worth considering how you can validate that the resources you deploy actually work and meet your requirements. Here are some examples of how you can apply this principle:
 
 - When you deploy a website, try to reach the web application from your pipeline. Verify that your pipeline connects to the website successfully and receives a valid response code.
-- When you deploy a database server and database, try to connect to the database. Run a basic query. Ensure you get the response you expect.
+- When you deploy a database server and database, try to connect to the database.
 
-It's also a good idea to perform *negative testing*. Negative testing helps you to confirm that your resources don't have undesired behavior. For example, when you deploy a virtual machine, it's good practice to use Azure Bastion to access the virtual machine securely. You could add a negative test to your pipeline to verify that you can't access the virtual machine directly using Remote Desktop Connection or SSH.
+These tests are sometimes called *infrastructure smoke tests*. Smoke testing is a simple form of testing designed to uncover major issues in your deployment.
+
+It's also a good idea to perform *negative testing*. Negative testing helps you to confirm that your resources don't have undesired behavior. For example, when you deploy a virtual machine, it's good practice to use Azure Bastion to access the virtual machine securely. You could add a negative test to your pipeline to verify that you can't connect to the virtual machine directly using Remote Desktop Connection or SSH.
 
 > [!NOTE]
-> TODO: don't want to test the tools. e.g. don't check that each resource is created. Instead, check they behave as you expect.
+> The goal of these tests isn't to verify that Bicep has actually deployed your resources correctly. By using Bicep, you're making the assumption that it will deploy the resources that you specify in your Bicep files. Instead, the goal is to verify that the resources that you've defined will actually work for your requirements.
 
 ### Other test types
 
-*Functional tests* are often used to validate that the resources deployed are behaving as you expect. In a future module, you'll see how functional tests can be added to your pipeline.
+*Functional tests* and *integration tests* are often used to validate that the resources deployed are behaving as you expect and that they work correctly for the solution you're deploying. For example, an integration test might connect to your website and submit a test transaction, then wait to confirm the transaction completes successfully. By using integration tests, you can test the solution your team builds as well as the infrastructure it's running on. In a future module, you'll see how functional tests can be added to your pipeline.
 
-<!-- TODO Application functional tests Load testing, automated penetration testing, and other forms of testing that you can add -->
+It's also possible to run other types of tests from a deployment pipeline, including performance tests and security penetration tests. These are outside the scope of this module.
 
 ## Rolling back and rolling forward
 
-In case the changes you made are not as you expected, there is always the option to rollback to the last version that you deployed. 
+Suppose your pipeline deploys your resources successfully, but your tests fail. What should you do then?
 
-- Rolling back by re-executing the pipeline, or re-running the last successful deployment
-- Complexities of rollback when you have other components, especially those with state
-- Rolling forward
+Earlier in this module, you learned that Azure Pipelines enables you to create *rollback stages* that execute when a previous stage fails. You can use this approach to create a rollback stage when your test stage reports an unexpected result. You also could manually roll back your changes, or re-execute your entire pipeline if you think the failure was a temporary issue.
+
+> [!NOTE]
+> When you submit a deployment to Azure Resource Manager, you can request that Resource Manager automatically re-run your last successful deployment if it fails. To do this, use the `--rollback-on-error` command.
+
+However, it's often challenging to work out what steps a rollback stage should perform. Bicep deployments are generally quite complex, and it's not easy to roll back changes. It's especially difficult to roll back when your deployment includes other components. For example, imagine your pipeline deploys a Bicep file that defines an Azure SQL database, and then adds some data to the database. When your deployment is rolled back, should the data be deleted? Should the database be removed too? It's difficult to predict how every failure and every rollback could impact your running environment.
+
+For this reason, many organizations now prefer to *roll forward*, which means they quickly fix the reason for the failure and then deploy again. By building a high-quality automated deployment process, and by following all of the best practices you've learned throughout these learning paths, you'll be able to quickly fix issues and redeploy your Bicep files while maintaining high quality.
+
+> [!TIP]
+> One of the principles of a DevOps mindset is to learn from mistakes. If you have to roll back a deployment, carefully consider why the error happened, and add automated testing before your deployment starts to detect the same issue if it happens in future.

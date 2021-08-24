@@ -2,7 +2,7 @@ Pipelines enable you to automate the steps in your deployment process. Your proc
 
 ## What are pipeline stages?
 
-*Stages* help you to divide your pipeline into multiple logical blocks. Each stage can contain one or more jobs. Stages run in a sequence that you specify.
+*Stages* help you to divide your pipeline into multiple logical blocks. Each stage can contain one or more jobs, and as you learned previously, jobs contain an ordered list of steps to run, like running command-line scripts.
 
 Stages can be used in your pipeline to mark separation of concerns. When you work with Bicep code, *validating* the code is a separate concern to *deploying* your Bicep file. When you use an automated pipeline, building and testing your code are often referred to as *continuous integration*, or CI for short. Deploying code in an automated pipeline is often called *continuous deployment*, or CD for short.
 
@@ -24,25 +24,25 @@ By using stages, you can verify the quality of your code before you deploy it. T
 
 :::image type="content" source="../media/2-shift-left.png" alt-text="TODO" border="false":::
 
-It's a well-understood rule in software development that the earlier in the process that you find errors - the closer to the left of the timeline - the easier and quicker it is to fix them. The later in your process that you catch an error, the harder and more complicated it is to fix. Throughout this module, you'll see how you can add increasingly more testing to your pipeline as it progresses.
+It's a well-understood rule in software development that the earlier in the process that you find errors - the closer to the left of the timeline - the easier and quicker it is to fix them. The later in your process that you catch an error, the harder and more complicated it is to fix. Throughout this module, you'll see how you can add increasingly more validation and testing to your pipeline as it progresses.
 
 > [!TIP]
-> Pull requests typically represent changes that someone on your team wants to make to the code on your main branch. It's helpful to create another pipeline that runs your CI steps during the pull request review process. This acts as a way to validate that the code still builds and tests successfully, even with the proposed changes. If the validation succeeds, you have some confidence that the change won't cause problems when it's merged to your main branch. If the check fails, you know there's more work to do to before the pull request is ready to merge.
+> Pull requests typically represent changes that someone on your team wants to make to the code on your main branch. It's helpful to create another pipeline that runs your CI steps during the pull request review process. This acts as a way to validate that the code still works, even with the proposed changes. If the validation succeeds, you have some confidence that the change won't cause problems when it's merged to your main branch. If the check fails, you know there's more work to do to before the pull request is ready to merge.
 
 > [!IMPORTANT]
 > Automated validation and tests are only as effective as the tests you write. So, it's important that you consider the things you need to test and the steps you need to perform to be confident that your deployment is OK.
 
 ## Define a pipeline stage
 
-Every pipeline contains at least one stage. If your pipeline only has a single stage, you don't need to explicitly define it - Azure Pipelines automatically does it for you. When you have multiple stages in a pipeline, you need to define each one.
+Every pipeline contains at least one stage. If your pipeline only has a single stage, you don't need to explicitly define it - Azure Pipelines automatically does it for you. When you have multiple stages in a pipeline, you need to define each one. Stages run in a sequence that you specify.
 
-Imagine we have built a Bicep file that will be deployed to infrastructure in both the United States and Europe. Here's an illustration of a multistage pipeline to deploy the code:
+Imagine we have built a Bicep file that we need to deploy twice - once to infrastructure in the United States, and also to infrastructure in Europe. Before you deploy, you validate your Bicep code. Here's an illustration of a multistage pipeline to deploy the code:
 
 :::image type="content" source="../media/2-stages-sequential.png" alt-text="TODO" border="false":::
 
-Notice that in this example, there are four stages:
+Notice that in this example, there are three stages:
 
-- **Test**, which includes two jobs.
+- **Validate**.
 - **DeployUS** and **DeployEurope**, each of which deploys the code to one of the environments.
 
 Here's how this is defined in a pipeline YAML file:
@@ -70,10 +70,7 @@ You use the `condition` keyword to specify a condition that should be met before
 
 :::code language="yaml" source="code/2-stages-condition.yml" highlight="12" :::
 
-In the preceding example, when everything goes well, Azure Pipelines runs the **Test** stage first, then it runs the **Deploy** stage. It skips the **Rollback** stage. However, if the **Deploy** stage fails, it runs the **Rollback** stage.
-
-> [!NOTE]
-> Although Azure Pipelines provides the ability to create and execute rollback stages, it's often challenging to work out what steps a rollback stage should perform. Bicep deployments are generally quite complex, and it's not easy to roll back changes. Many organizations now prefer to *roll forward*, which means they quickly fix the reason for the failure and then deploy again. Rollback and roll forward is outside the scope of this module.
+In the preceding example, when everything goes well, Azure Pipelines runs the **Validate** stage first, then it runs the **Deploy** stage. It skips the **Rollback** stage. However, if the **Deploy** stage fails, it runs the **Rollback** stage. You'll learn more about rollback later in this module.
 
 ## Bicep deployment stages
 
@@ -81,9 +78,10 @@ A typical Bicep deployment pipeline contains several stages. As the pipeline mov
 
 :::image type="content" source="../media/2-stages.png" alt-text="TODO" border="false":::
 
-1. **Validate:** Check that the Bicep file is well-formed and doesn't contain any obvious errors. In this module, we'll split this stage into two: linting and preflight validation. You'll learn more about these on the next page.
+1. **Lint:** Check that the Bicep file is well-formed and doesn't contain any obvious errors.
+1. **Validate:** Use the Resource Manager *preflight validation* process to check for problems that might occur when you deploy.
 1. **Preview:** Use the what-if command to validate the list of changes that will be applied against your Azure environment. Ask a human to manually review the what-if results and approve the pipeline to proceed.
-1. **Deploy.**
+1. **Deploy:** Submit your deployment to Resource Manager and wait for it to complete.
 1. **Test:** Run post-deployment tests against some of the important resources that you've deployed.
 
 > [!NOTE]
