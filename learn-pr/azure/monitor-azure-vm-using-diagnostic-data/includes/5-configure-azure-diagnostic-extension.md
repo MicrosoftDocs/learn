@@ -16,7 +16,7 @@ Resources allow you to select which VM(s) to collect data from for monitoring. D
 
 ![Screenshot of the Data Collection Rules definition](../media/5-dcr-definition.png)
 
-Performance Counters to be collected can be selected from a basic set or customized and filtered from an expanded list.
+Performance Counters to be collected can be selected from a **Basic** set or customized and filtered from an expanded **Custom** list.
 
 ![Screenshot of the Data Collection Rules Data Sources](../media/5-dcr-data-sources.png)
 
