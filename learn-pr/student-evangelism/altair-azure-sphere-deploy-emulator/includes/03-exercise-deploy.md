@@ -4,7 +4,7 @@ In the following exercise, you'll deploy a high-level application to your Azure 
 
 2. Select **Open folder**.
 
-3. Open the **azure-sphere-altair** folder you cloned or downloaded.
+3. Open the **Altair8800Emulator** folder you cloned to your computer.
 
 4. Open the **AltairHL_emulator** folder.
 
