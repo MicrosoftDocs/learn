@@ -17,6 +17,6 @@ stages:
         deploy:
           steps:
           - script: |
-              az deployment group validate \
+              az deployment group create \
                 --resource-group $(ResourceGroupName) \
                 --template-file deploy/main.bicep
