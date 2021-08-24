@@ -32,14 +32,14 @@ In this section, you will prepare the scene by adding some of the tutorial prefa
 :::image type="content" source="../media/asa-02-section4-step1-1.png" alt-text="Prefabs" lightbox="asa-02-section4-step1-1.png":::
 
 >![Tip]
->If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by <a herf = " ">toggling the Gizmos</a> to the off position, as shown in the image above.
+>If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by <a herf = "https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html">toggling the Gizmos</a> to the off position, as shown in the image above.
 
 2. Select **MixedRealityToolkit** object in the Hierarchy window, use the **Add Component** button in the Inspector window to add the following components:
 
 * AR Anchor Manager (Script)
 * DisableDiagnosticsSystem (Script)
 
-:::image type="content" source="../media/asa-02-section5-step1-1.png" alt-text="Prefabs" lightbox="asa-02-section5-step1-1.png":::
+:::image type="content" source="../media/asa-02-section5-step1-1.png" alt-text="Add components to the MixedRealityToolkit" lightbox="asa-02-section5-step1-1.png":::
 
 >![Warning]
 >There is a known issue with ASA v2.9.0 and v2.10.0-preview.1 that requires two additional objects to be placed in the scene. Please use the Add Component button in the inspector window to add an AR Camera Manager (Script) and an AR Session (Script) to the **MixedRealityToolkit** object. Be sure to disable the Camera that is created automatically while adding the AR Camera Manager (Script) by unchecking the checkbox next to the Camera object in the inspector window. This issue will be addressed in the full release of ASA v2.10.0.
@@ -80,7 +80,7 @@ In this section, you will add scripts to the scene to create a series of button 
 * Assign the **ParentAnchor** object to the empty **None (Game Object)** field to make it the argument for the **RemoveLocalAnchor** () function
 Unity with **RemoveLocalAnchor** button **OnClick** event configured
 
-:::image type="content" source="../media/asa-02-section5-step1-5.png" alt-text="Unity with CreateAzureAnchor button OnClick event configured" lightbox="asa-02-section5-step1-5.png":::
+:::image type="content" source="../media/asa-02-section5-step1-5.png" alt-text="Unity with RemoveLocalAnchor button OnClick event configured" lightbox="asa-02-section5-step1-5.png":::
 
 6. In the Hierarchy window, select the next button named **FindAzureAnchor**,then in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
