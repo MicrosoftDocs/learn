@@ -8951,8 +8951,18 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/tensorflow/intro-natural-language-processing-tensorflow/6-attention-transformers.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-natural-language-processing-tensorflow/5-generative-networks",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/tensorflow/intro-natural-language-processing-tensorflow/7-knowledge-check.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/intro-natural-language-processing-tensorflow/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/tensorflow/intro-computer-vision-tensorflow/7-mobilenet.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-computer-vision-tensorflow/7-summary",
       "redirect_document_id": false
     },
     {
