@@ -95,7 +95,7 @@ Another thing you might want to do is to find a specific element. To do so, you 
 
    ```fsharp
    let list = [1;2;3;4]
-   List.find( fun x -> x % 2 = 0) list 
+   List.find( fun x -> x % 2 = 0) list // 2, 4
    ```
 
 - `tryFind()`. This function takes a function (predicate) that tells how to find the value and list to look into. It returns an option. Here's how you can use it:
@@ -130,7 +130,7 @@ Carrying out mathematical operations on a list can be valuable. Among many funct
 - `sum()`: By using this function, you iterate over each item to sum all values in the list. Here's how you can use it:
 
    ```fsharp
-   let sum - List.sum [1 .. 5] // sum = 15 
+   let sum = List.sum [1 .. 5] // sum = 15 
    ```
 
 - `sumBy()`: With this function, the idea is to point out how to sum the values. One way to do so is to point out which fields to sum, as in the following example:
