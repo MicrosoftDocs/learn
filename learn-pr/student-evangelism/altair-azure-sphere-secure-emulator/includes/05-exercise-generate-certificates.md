@@ -1,22 +1,18 @@
 In this exercise, you'll generate the MQTT client certificates for the test.mosquitto.org MQTT Broker.
 
-## Mosquitto Certificates
-
-This MQTT sample is going to connect to the [mosquitto.org](https://mosquitto.org) public test MQTT broker. Download and copy the `mosquitto.org` CA certificate and generated client certificates into the Azure Sphere application *AltairHL_emulator\certs* folder.
-
-### Install openssl
+## Install openssl
 
 For Linux users, you may need to install **openssl**. You can install OpenSSL using your Linux distributions package manager. For example, on Ubuntu `sudo apt-get install openssl`.
 
 For Windows users either download `openssl` from [openssl.org](https://wiki.openssl.org/index.php/Binaries), or use [Windows Subsystem for Linux (WSL))](/windows/wsl/install-win10). Depending on the WSL Linux distribution, you installed you may need to install **openssl**. You can install OpenSSL using your Linux distribution's package manager. For example, on Ubuntu `sudo apt-get install openssl`.
 
-### Download the Mosquitto Certificate Authority certificate
+## Download the Mosquitto Certificate Authority certificate
 
 1. Download the Mosquitto Certificate Authority certificate [mosquitto.org.crt (PEM format)](https://test.mosquitto.org/).
 1. Rename the **mosquitto.org.crt** file to **ca.crt**.
 1. Copy the **ca.crt** file to the **AltairHL_emulator\certs** folder.
 
-### Generate the client certificates with OpenSSL
+## Generate the client certificates with OpenSSL
 
 1. Generate a Certificate Signing Request (CSR) using the OpenSSL utility. Generate a private key:
 

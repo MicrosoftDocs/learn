@@ -10,7 +10,7 @@ The Web Terminal is an HTML/CSS/JavaScript application built on the [MQTT](https
 
 ## Generator MQTT Broker certificates
 
-By default, the solution uses the public **test.mosquitto.org** MQTT broker. The Altair emulator communicates with the MQTT broker over TLS using the wolfSSL library.
+By default, the solution uses the public **test.mosquitto.org** MQTT broker. The Altair emulator communicates with the MQTT broker over TLS using the wolfSSL library included with Azure Sphere.
 
 You'll generate certificates the MQTT client will use to sign and encrypt the traffic between the Azure Sphere and the MQTT Broker.
 
