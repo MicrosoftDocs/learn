@@ -3,7 +3,7 @@ uid: learn.career-growth.knowledge-check-1
 title: Knowledge check ### Do not edit: use "Knowledge check" as the title; also, don't add another title in the quiz element or an associated markdown page (if such a markdown page exists which is rare)
 metadata:
   unitType: knowledge_check
-  title: From Student to Employee - Growing your Career # user input: module title for browser tab and search results
+  title: From student to employee - Growing your career # user input: module title for browser tab and search results
   description: Test your knowledge on collaborating, time management, and asking questions # user input: a description for site search and SEO
   ms.date: 08/23/2021 
   author: jlooper 
