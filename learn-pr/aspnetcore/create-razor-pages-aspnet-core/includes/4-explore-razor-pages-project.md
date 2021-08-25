@@ -1,9 +1,8 @@
-In this unit, you'll use the .NET Core CLI to compile and run a web app within the Cloud Shell's command shell. The app will be deployed to a public endpoint on Azure. Finally, you'll tour the running app to understand the UI experience it provides.
+In this unit, you'll use the .NET Core CLI to compile and run a web app. You'll tour the running app to understand the UI experience it provides.
 
 The .NET Core CLI:
 
 * Offers the simplest way to create, compile, and run an ASP.NET Core web app.
-* Is already installed in the Cloud Shell environment.
 * Provides a consistent experience across Windows, Linux, and macOS.
 
 ## Run the Razor Pages project and explore its UI
@@ -42,29 +41,8 @@ The .NET Core CLI:
 
 1. Press <kbd>Ctrl+C</kbd> to stop the app.
 
-If running this app on your own machine, you could direct a browser to `https://localhost:5001` to view the resulting page. To view the app, deploy it to a public endpoint hosted on Azure App Service.
+If running this app on your own machine, you could direct a browser to `https://localhost:5001` to view the resulting page.
 
-### Deploy your app to Azure App Service
-
-Run the following command in the command shell:
-
-```azurecli
-az webapp up
-```
-
-The preceding Azure CLI command this project to Azure App Service. Be patient, as the initial app deployment takes longer. A variation of the following output eventually displays:
-
-```console
-Starting zip deployment. This operation can take a while to complete ...
-```
-
-Once your project has been successfully hosted, a variation of the following output appears:
-
-```console
-You can launch the app at http://webapp<random instance ID number here>.azurewebsites.net
-```
-
-Now that your app is deployed, let's tour the unfinished app.
 
 ## Tour the app
 

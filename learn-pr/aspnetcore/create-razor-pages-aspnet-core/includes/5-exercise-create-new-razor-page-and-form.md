@@ -1,31 +1,30 @@
-In this unit, you'll create a form in the *:::no-loc text="ContosoPets.Ui":::* project using Razor Pages to separate the logic of the page from its presentation.
+In this unit, you'll create a form in the *RazorPagesPizza* project using Razor Pages to separate the logic of the page from its presentation.
 
 ## Create a page
 
-The *:::no-loc text="ContosoPets.Ui":::* project directory is currently open in the [Azure Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor). Run the following .NET Core CLI command in the command shell:
+The *RazorPagesPizza* project directory is currently open in the Visual Studio Code. Run the following .NET Core CLI command in the command shell:
 
 ```dotnetcli
 dotnet new page --name Create \
-    --namespace ContosoPets.Ui.Pages.Products \
     --output Pages/Products
 ```
 
 The preceding command:
 
-* Creates the following files in the `ContosoPets.Ui.Pages.Products` namespace:
-  * *:::no-loc text="Create.cshtml":::*&mdash;The Razor page
-  * *:::no-loc text="Create.cshtml.cs":::*&mdash;The accompanying `PageModel` class
-* Stores both files in the project's *:::no-loc text="Pages/Products":::* directory.
+* Creates the following files in the `RazorPagesPizza.Pages.Products` namespace:
+  * *Create.cshtml*&mdash;The Razor page
+  * *Create.cshtml.cs*&mdash;The accompanying `PageModel` class
+* Stores both files in the project's *Pages/Products* directory.
 
 ## Examine the Razor page's structure
 
 1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)]
 
-1. Open the new *:::no-loc text="Pages/Products/Create.cshtml":::* Razor page. Examine the file's markup:
+1. Open the new *Pages/Products/Create.cshtml* Razor page. Examine the file's markup:
 
 	```cshtml
 	@page
-	@model ContosoPets.Ui.Pages.Products.CreateModel
+	@model RazorPagesPizza.Pages.Products.CreateModel
 	@{
 	}
 	```
@@ -33,7 +32,7 @@ The preceding command:
     The preceding Razor page contains reserved Razor keywords:
 
     * The `@page` directive is what makes the page a Razor page. It indicates the page can handle HTTP requests. The `@page` directive must be the first directive on a Razor page.
-    * The `@model` directive specifies the model type made available to the Razor page. In this case, the type is the `PageModel`-derived class name, prefixed with its namespace. As you recall, that class is defined in *:::no-loc text="Pages/Products/Create.cshtml.cs":::*.
+    * The `@model` directive specifies the model type made available to the Razor page. In this case, the type is the `PageModel`-derived class name, prefixed with its namespace. As you recall, that class is defined in *Pages/Products/Create.cshtml.cs*.
 
 ## Render HTML and transition to C#
 
@@ -45,15 +44,15 @@ The following markup is an example of an `@` symbol followed by C# code. The cod
 }
 ```
 
-A Razor page supports Razor syntax, which is HTML and C# combined. The C# code defines the dynamic rendering logic for the page on the server. The default Razor language is HTML. Rendering HTML from Razor markup is no different than rendering HTML from an HTML file. HTML markup in *:::no-loc text=".cshtml":::* Razor page files is rendered by the server unchanged. In Razor Pages, HTML can be used as you're used to. At the same time, you can take advantage of powerful and time-saving Razor features as you learn to use them.
+A Razor page supports Razor syntax, which is HTML and C# combined. The C# code defines the dynamic rendering logic for the page on the server. The default Razor language is HTML. Rendering HTML from Razor markup is no different than rendering HTML from an HTML file. HTML markup in *.cshtml* Razor page files is rendered by the server unchanged. In Razor Pages, HTML can be used as you're used to. At the same time, you can take advantage of powerful and time-saving Razor features as you learn to use them.
 
 ## Add form markup to the *Create* Razor page
 
-Replace the contents of *:::no-loc text="Pages/Products/Create.cshtml":::* with the following markup. Save your changes.
+Replace the contents of *Pages/Products/Create.cshtml* with the following markup. Save your changes.
 
 ```cshtml
 @page
-@model ContosoPets.Ui.Pages.Products.CreateModel
+@model RazorPagesPizza.Pages.Products.CreateModel
 @{
     ViewData["Title"] = "Create";
 }
@@ -83,7 +82,7 @@ Replace the contents of *:::no-loc text="Pages/Products/Create.cshtml":::* with 
 
 [!INCLUDE[OS-specific keyboard shortcuts](../../includes/keyboard-shortcuts-table.md)]
 
-The *:::no-loc text="Create":::* Razor page uses HTML and Razor to support a product creation form. The form accepts **:::no-loc text="Name":::** and **:::no-loc text="Price":::** values for the product to be created. With relatively little markup, dynamic features have been provided through Razor Tag Helpers. Client-side form input validation is enabled via the inclusion of the *:::no-loc text="Pages/Shared/_ValidationScriptsPartial.cshtml":::* partial view. The partial view's contents are injected into the layout page's `Scripts` section.
+The *Create* Razor page uses HTML and Razor to support a product creation form. The form accepts **Name** and **Price** values for the product to be created. With relatively little markup, dynamic features have been provided through Razor Tag Helpers. Client-side form input validation is enabled via the inclusion of the *Pages/Shared/_ValidationScriptsPartial.cshtml* partial view. The partial view's contents are injected into the layout page's `Scripts` section.
 
 ## Review Razor Tag Helpers
 
@@ -136,9 +135,9 @@ The Input Tag Helper:
 * Adds an `id` and `name` HTML attribute based on that property.
 * Sets the input type appropriately. For example, if the specified property type is `bool`, an input type of `checkbox` is used in the generated HTML. In this case, the `Product.Name` property type is `string`. The `Product.Name` property is set by the model's data annotation attributes, which will be reviewed later in this module.
 * Provides client-side validation using jQuery, based on the model's data annotation attributes provided through the `PageModel`.
-* Prompts the Razor engine to provide additional, more robust server-side validation, if client-side validation was successful. The *:::no-loc text="Create":::* Razor page's HTTP POST event lifecycle, which includes client-side and server-side input validation, is walked through later in this module.
+* Prompts the Razor engine to provide additional, more robust server-side validation, if client-side validation was successful. The *Create* Razor page's HTTP POST event lifecycle, which includes client-side and server-side input validation, is walked through later in this module.
 
-The following HTML output is generated from the Input Tag Helper located in the *:::no-loc text="Create":::* page:
+The following HTML output is generated from the Input Tag Helper located in the *Create* page:
 
 ```html
 <input name="Product.Name" class="form-control" id="Product_Name" type="text" value="" data-val-required="The Name field is required." data-val="true">
