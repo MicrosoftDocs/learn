@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.student-evangelism.visual-studio-test
+uid: learn.visual-studio.visual-studio-test
 metadata:
   title: Test your code with Visual Studio
   description: Want to learn more about testing with .NET and Visual Studio, but don't know where to start? Start here!
@@ -23,7 +23,7 @@ roles:
 products:
 - azure
 modules:
-- learn.student-evangelism.visual-studio-test.visual-studio-test-concepts
-- learn.student-evangelism.visual-studio-test.visual-studio-test-tools
+- learn.visual-studio.visual-studio-test-concepts
+- learn.visual-studio.visual-studio-test-tools
 trophy:
-  uid: learn.student-evangelism.visual-studio-test.trophy
+  uid: learn.visual-studio.visual-studio-test.trophy
