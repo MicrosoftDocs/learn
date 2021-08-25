@@ -31,15 +31,17 @@ Before you deploy Azure Arc-enabled data services components, you should decide 
 
 ### Direct connected mode
 
-With direct connected mode (currently in preview), users can use the Azure Resource Manager through the az CLI (using the arcdata extension) and Azure Portal to deploy and manage Azure Arc-enabled data services. Azure Role-Based Access Control (RBAC) can be used for security authentication and control. Also, inventory, logs, metrics, and billing information is automatically sent to Azure.
+With direct connected mode (currently in preview), users can use the Azure Resource Manager with Azure portal to deploy and manage Azure Arc-enabled data services. Azure Role-Based Access Control (RBAC) can be used for security  authentication and control. Also, inventory, logs, metrics, and billing information is automatically sent to Azure.
 
 ### Indirect connected mode
 
-With indirect connected mode, all deployment and management operations for Azure Arc-enabled data services are done using the az CLI (using the arcdata extension) or tools like kubectl or Azure Data Studio. These tools interact directly with the Kubernetes API to manage Azure Arc-enabled data services. You aren't always required to be connected to Azure when you use indirect connected mode. Inventory and billing can be manually exported and uploaded to Azure using the az CLI. Logs and metrics can be optionally uploaded to Azure Monitor.
+With indirect connected mode, all deployment and management operations for Azure Arc-enabled data services are done using the az CLI (using the [arcdata extension](https://docs.microsoft.com/Azure/azure-arc/data/install-arcdata-extension)) or tools like kubectl or Azure Data Studio. These tools interact directly with the Kubernetes API to manage Azure Arc-enabled data services. You aren't always required to be connected to Azure when you use indirect connected mode. Inventory and billing can be manually exported and uploaded to Azure using the az CLI. Logs and metrics can be optionally uploaded to Azure Monitor.
+
+After deployment, az CLI, kubectl, and Azure Data Studio can interact with the Kubernetes API to manage Azure Arc-enabled data services in both direct and indirect connected mode.
 
 ## Azure Arc data controller
 
-Once you've deployed the Kubernetes platform of your choice, you'll first deploy an Azure Arc data controller. The Azure Arc data controller is a series of Kubernetes pods that provide coordination and orchestration of Azure Arc enabled-data services using the Kubernetes API and Custom Resource Definitions(CRD).
+Once you've deployed the Kubernetes platform of your choice, you'll first deploy an Azure Arc data controller. The Azure Arc data controller is a series of Kubernetes pods that provide coordination and orchestration of Azure Arc enabled-data services using the Kubernetes API and Custom Resource Definitions (CRD).
 
 The Azure Arc data controller can be deployed in direct connected mode using the Azure portal. To deploy with direct connected mode, you must first [connect](https://docs.microsoft.com/azure/azure-arc/kubernetes/quickstart-connect-cluster?tabs=azure-cli) your Kubernetes cluster using Azure Arc-enabled Kubernetes. This connection will deploy Azure Arc agents on your Kubernetes cluster and connect it to Azure. Azure Arc agents are used in direct connected mode to coordinate Azure Resource Manager requests in the Kubernetes cluster and upload inventory, billing, logs, and metrics collected by the Azure Arc data controller.
 
@@ -55,7 +57,7 @@ Azure Arc-enabled data services are based on Kubernetes Custom Resource Definiti
 
 Azure Arc-enabled SQL Managed Instance is a Kubernetes stateful-set pod, giving it built-in basic high availability. The pod includes containers for the SQL Server instance, metrics, and log collection. The SQL Server instance container includes the SQL Server engine and agents to assist with management capabilities.
 
-In direct connected mode, you can deploy an Azure Arc-enabled SQL Managed Instance using the Azure portal. In indirect connected mode, you can use the az CLI (using the arcdata extension), kubectl, or Azure Data Studio.
+In direct connected mode, you can deploy and manage an Azure Arc-enabled SQL Managed Instance using the Azure portal. In indirect connected mode, you can use the az CLI (using the arcdata extension), kubectl, or Azure Data Studio.
 
 ### Azure Arc-enabled PostgreSQL Hyperscale
 
@@ -65,14 +67,10 @@ You can deploy an Azure Arc-enabled PostgreSQL Hyperscale through the Azure port
 
 ## Unified Azure experience
 
-When you use direct connected mode, you can manage Azure Arc-enabled data services with the Azure Resource Manager through the Azure portal or az CLI. For example, you can deploy an Azure Arc-enabled SQL Managed Instance in the Azure portal. Azure Arc resource providers will coordinate the request with Azure Arc agents and the Azure Arc data controller in the Kubernetes cluster to complete the deployment. Also, Azure Arc agents will automatically consume inventory, metrics, logs, and billing collected by the Azure Arc data controller to upload to Azure.
+When you use direct connected mode, you can manage Azure Arc-enabled data services with the Azure Resource Manager through the Azure portal. For example, you can deploy an Azure Arc-enabled SQL Managed Instance in the Azure portal. Azure Arc resource providers will coordinate the request with Azure Arc agents and the Azure Arc data controller in the Kubernetes cluster to complete the deployment. Also, Azure Arc agents will automatically consume inventory, metrics, logs, and billing collected by the Azure Arc data controller to upload to Azure.
 
-You can use the az CLI tool manually to export and upload inventory, metrics, logs, and billing collected by the Azure Arc data controller when you use indirect connected mode.
-
-The Azure portal and az CLI can be used to view deployed Azure Arc-enabled data services and corresponding usage, billing, metrics, and logs.
+You can use the az CLI tool manually to export and upload inventory, metrics, logs, and billing collected by the Azure Arc data controller when you use indirect connected mode. The Azure portal can be used to view deployed Azure Arc-enabled data services and corresponding usage, billing, metrics, and logs.
 
 ## Connecting and managing data services
 
-After you have deployed Azure Arc-enabled data services, you can use compatible tools or [client drivers](https://docs.microsoft.com/sql/connect/sql-connection-libraries) to connect, query, and manage these services. SQL Server Management Studio (SSMS) and Azure Data Studio (ADS) are examples of tools to query and managed Azure Arc-enabled SQL Managed Instance.
-
-You can also use az CLI (with the [arcdata extension](https://docs.microsoft.com/Azure/azure-arc/data/install-arcdata-extension)) and kubectl to manage Azure Arc-enabled data services.
+After you have deployed Azure Arc-enabled data services, you can use compatible tools or [client drivers](https://docs.microsoft.com/sql/connect/sql-connection-libraries) to connect, query, and manage these services. SQL Server Management Studio (SSMS) and Azure Data Studio (ADS) are examples of tools to query and manage Azure Arc-enabled SQL Managed Instance.
