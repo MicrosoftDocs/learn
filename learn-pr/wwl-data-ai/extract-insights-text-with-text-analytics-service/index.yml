@@ -3,7 +3,7 @@ uid: learn.wwl.extract-insights-text-with-text-analytics-service
 metadata:
   title: Extract insights from text with the Text Analytics service
   description: "Extract insights from text with the Text Analytics service"
-  ms.date: 06/28/2021
+  ms.date: 08/19/2021
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ prerequisites: |
   Before starting this module, you will need
   - Familiarity with Microsoft Azure and the Azure portal.
   - Experience programming with C# or Python.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/extract-insights-from-text-with-the-text-analytics-service.svg
 levels:
 - intermediate
 roles:

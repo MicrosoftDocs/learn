@@ -18,6 +18,7 @@ A Resource Manager template can contain sections that are expressed using JSON n
     "resources": [],​
     "outputs": {}​
 }
+
 ```
 
 :::row:::

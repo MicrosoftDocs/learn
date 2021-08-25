@@ -89,8 +89,34 @@ You speak to your colleague about the failed deployment. Together, you decide th
 
 ## Verify that the pipeline succeeds
 
-In Azure DevOps, return to the **Pipelines** list and select your pipeline. Select the most recent run. If the pipeline is still running, wait a minute, and then refresh the page.
+1. In Azure DevOps, return to the **Pipelines** list and select your pipeline.
 
-:::image type="content" source="../media/8-success.png" alt-text="Screenshot of Azure DevOps that shows the successful pipeline run.":::
+1. Select the most recent run. If the pipeline is still running, wait a minute, and then refresh the page.
 
-The pipeline shows a successful deployment. It succeeded this time because you used a valid Bicep file.
+   :::image type="content" source="../media/8-success.png" alt-text="Screenshot of Azure DevOps that shows the successful pipeline run.":::
+
+   The pipeline shows a successful deployment. It succeeded this time because you used a valid Bicep file.
+
+## Clean up the resources
+
+Now that you've completed the exercise, you can remove the resources so you aren't billed for them.
+
+In the Visual Studio Code **Terminal**, run the following command:
+
+::: zone pivot="cli"
+
+```azurecli
+az group delete --resource-group ToyWebsite --yes --no-wait
+```
+
+The resource group is deleted in the background.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+```azurepowershell
+Remove-AzResourceGroup -Name ToyWebsite -Force
+```
+
+::: zone-end

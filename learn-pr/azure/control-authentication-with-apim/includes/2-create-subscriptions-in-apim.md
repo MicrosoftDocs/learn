@@ -20,7 +20,7 @@ The three main subscription scopes are:
 |Scope|Details|
 |-----|-------|
 | All APIs | Applies to every API accessible from the gateway. |
-| Single API | This scope applies to a single imported API and all of its endpoints. |
+| Single API | Applies to a single imported API and all of its endpoints. |
 | Product | A product is a collection of one or more APIs that you configure in API Management. You can assign APIs to more than one product. Products can have different access rules, usage quotas, and terms of use. So, if you want your partners and suppliers to have different access rights to your **WeatherData** API, assign the API to a product. You use the Azure portal to associate APIs with a product. |
 | | |
 

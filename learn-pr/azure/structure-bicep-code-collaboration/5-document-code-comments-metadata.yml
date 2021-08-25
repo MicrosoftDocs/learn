@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.structure-bicep-code-collaboration.document-code-comments-metadata
-title: Document your code using comments and add resource metadata
+title: Document your code by adding comments and resource metadata
 metadata:
   unitType: learning-content
-  title: Document your code using comments and add resource metadata
+  title: Document your code by adding comments and resource metadata
   description: Learn how to use comments and resource metadata and tags in your Bicep code.
   ms.date: 08/06/2021
   author: pazdedav

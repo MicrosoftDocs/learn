@@ -39,9 +39,9 @@ Because you are using the Consumption tier for API Management, you must configur
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. On the Azure portal menu, or from the **Home** page, select **All resources**, and then select your API Management gateway.
+1. On the Azure portal menu, or from the **Home** page, select **All resources**, and then select your API Management service. The **API Management service** pane appears.
 
-1. In the left menu bar, Under **Deployment and infrastructure**, select **Custom domains**. The **Custom domains** pane appears for your API Management service.
+1. In the middle menu bar, under **Deployment and infrastructure**, select **Custom domains**. The **Custom domains** pane appears for your API Management service.
 
 1. Under **Client certificates**, for the **Request client certificates** option, select **Yes**, and on the top menu bar, select **Save**.
 
@@ -65,11 +65,11 @@ In the next section, you'll configure API Management to accept a request only if
 
 Now, create the authentication policy within the API Management gateway.
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **All Resources**, and then select your API gateway.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu, or from the **Home** page, select **All Resources**, and then select your API Management service.
 
-1. In the left menu pane, under **APIs**, select **APIs**. The **APIs** pane appears for your API Management service.
+1. In the middle menu pane, under **APIs**, select **APIs**. The **APIs** pane appears for your API Management service.
 
-1. In the middle menu pane, under **All APIs**, select **Weather Data**.
+1. In the interior menu pane, under **All APIs**, select **Weather Data**.
 
 1. In the **Inbound processing** box, select **Policies </>**.
 

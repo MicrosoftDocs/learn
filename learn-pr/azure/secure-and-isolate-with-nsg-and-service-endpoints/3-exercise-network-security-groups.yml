@@ -10,5 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Create and manage network security groups
 durationInMinutes: 15
+sandbox: true
+interactive: bash
 content: |
   [!include[](includes/3-exercise-network-security-groups.md)]
