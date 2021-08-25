@@ -8,7 +8,7 @@ pool:
 
 variables:
   ServiceConnectionName: ToyWebsite
-  ResourceGroupName: validator-control-plane-test
+  ResourceGroupName: ToyWebsite
   EnvironmentType: Test
 
 stages:
@@ -18,7 +18,7 @@ stages:
     steps:
       - script: |
           bicep build deploy/main.bicep
-        displayName: Lint
+        name: Lint
 
 - stage: Validate
   jobs: 
@@ -62,20 +62,25 @@ stages:
           steps:
             - checkout: self
             - task: AzureCLI@2
+              name: Deploy
               displayName: Deploy to Azure
               inputs:
                 azureSubscription: $(ServiceConnectionName)
                 scriptType: 'bash'
                 scriptLocation: 'inlineScript'
                 inlineScript: |
-                    az deployment group create \
-                      --resource-group $(ResourceGroupName) \
-                      --template-file deploy/main.bicep \
-                      --parameters environmentType=$(EnvironmentType)
+                  deploymentOutput=$(az deployment group create \
+                    --resource-group $(ResourceGroupName) \
+                    --template-file deploy/main.bicep \
+                    --parameters environmentType=$(EnvironmentType))
+                  appServiceAppHostName=$(echo $deploymentOutput | jq -r '.properties.outputs.appServiceAppHostName.value')
+                  echo "##vso[task.setvariable variable=appServiceAppHostName;isOutput=true]$appServiceAppHostName"
 
 - stage: Test
   jobs:
   - job: Test
+    variables:
+      appServiceAppHostName: $[ stageDependencies.Deploy.Deploy.outputs['deploy.Deploy.appServiceAppHostName'] ]
     steps:
       - task: PowerShell@2
         displayName: Run tests
@@ -84,7 +89,7 @@ stages:
           script: |
             $container = New-PesterContainer `
               -Path 'deploy/tests/Website.Tests.ps1' `
-              -Data @{ HostName = 'TODO' }
+              -Data @{ HostName = '$(appServiceAppHostName)' }
             Invoke-Pester `
               -Container $container `
               -CI
