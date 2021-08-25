@@ -31,7 +31,7 @@ Before you deploy Azure Arc-enabled data services components, you should decide 
 
 ### Direct connected mode
 
-With direct connected mode (currently in preview), users can use the Azure Resource Manager with Azure portal to deploy and manage Azure Arc-enabled data services. Azure Role-Based Access Control (RBAC) can be used for security  authentication and control. Also, inventory, logs, metrics, and billing information is automatically sent to Azure.
+With direct connected mode (currently in preview), users can use the Azure Resource Manager with the Azure portal to deploy and manage Azure Arc-enabled data services. Azure Role-Based Access Control (RBAC) can be used for security  authentication and control. Also, inventory, logs, metrics, and billing information is automatically sent to Azure.
 
 ### Indirect connected mode
 
