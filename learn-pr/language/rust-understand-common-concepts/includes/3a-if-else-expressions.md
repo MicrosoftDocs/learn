@@ -20,12 +20,12 @@ Unlike most other languages, `if` blocks in Rust can also act as expressions. Al
 
 ```rust
 let formal = true;
-let greeting = if formal { // if used here as an expression
-    "Good day to you."     // return a String
+let greeting = if formal { // "if" keyword used here as an expression
+    "Good day to you."     // Returns the string "Good day to you."
 } else {
-    "Hey!"                 // return a String
+    "Hey!"                 // Returns the string "Hey!" 
 };
-println!("{}", greeting)   // prints "Good day to you."
+println!("{}", greeting)   // Prints "Good day to you."
 ```
 
 In this example, we assign a value to the `greeting` variable based on the result of the `if formal` expression. When the expression `if formal` is true, the `greeting` value is set to the string "Good day to you." When the expression is false, the `greeting` value is set to the string "Hey!". Because we initialized the `formal` variable to true, we know the result of the expression `if formal` is also true.
