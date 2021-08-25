@@ -1,0 +1,97 @@
+trigger:
+  branches:
+    include:
+    - main
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  ServiceConnectionName: ToyWebsite
+  ResourceGroupName: validator-control-plane-test
+  EnvironmentType: Test
+
+stages:
+- stage: Lint
+  jobs: 
+  - job: Lint
+    steps:
+      - script: |
+          bicep build deploy/main.bicep
+        displayName: Lint
+
+- stage: Validate
+  jobs: 
+  - job: Validate
+    steps:
+      - task: AzureCLI@2
+        displayName: Run preflight validation
+        inputs:
+          azureSubscription: $(ServiceConnectionName)
+          scriptType: 'bash'
+          scriptLocation: 'inlineScript'
+          inlineScript: |
+            az deployment group validate \
+              --resource-group $(ResourceGroupName) \
+              --template-file deploy/main.bicep \
+              --parameters environmentType=$(EnvironmentType)
+
+- stage: Preview
+  jobs: 
+  - job: Preview
+    steps:
+      - task: AzureCLI@2
+        displayName: Run what-if
+        inputs:
+          azureSubscription: $(ServiceConnectionName)
+          scriptType: 'bash'
+          scriptLocation: 'inlineScript'
+          inlineScript: |
+            az deployment group what-if \
+              --resource-group $(ResourceGroupName) \
+              --template-file deploy/main.bicep \
+              --parameters environmentType=$(EnvironmentType)
+
+- stage: Deploy
+  jobs:
+  - deployment: Deploy
+    environment: Website
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+            - checkout: self
+            - task: AzureCLI@2
+              displayName: Deploy to Azure
+              inputs:
+                azureSubscription: $(ServiceConnectionName)
+                scriptType: 'bash'
+                scriptLocation: 'inlineScript'
+                inlineScript: |
+                    az deployment group create \
+                      --resource-group $(ResourceGroupName) \
+                      --template-file deploy/main.bicep \
+                      --parameters environmentType=$(EnvironmentType)
+
+- stage: Test
+  jobs:
+  - job: Test
+    steps:
+      - task: PowerShell@2
+        displayName: Run tests
+        inputs:
+          targetType: inline
+          script: |
+            $container = New-PesterContainer `
+              -Path 'deploy/tests/Website.Tests.ps1' `
+              -Data @{ HostName = 'TODO' }
+            Invoke-Pester `
+              -Container $container `
+              -CI
+
+      - task: PublishTestResults@2
+        displayName: Publish test results
+        condition: always()
+        inputs:
+          testResultsFormat: NUnit
+          testResultsFiles: 'testResults.xml'

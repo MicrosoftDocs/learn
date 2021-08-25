@@ -1,6 +1,6 @@
 By validating and previewing your Bicep deployment, you were able to build up confidence that your Bicep files would successfully deploy. But this isn't the whole story. After the deployment completes, it's also helpful to check that your deployment did what you expected. In this unit, you'll learn about tests you can run after your deployment completes. You'll also learn about rolling back your deployment, if things don't turn out as you expected.
 
-## Testing your resources once they're deployed
+## Testing your resources after they're deployed
 
 When you define resources in a Bicep file, your goal isn't just to create resources in Azure - it's to deliver some sort of value to your organization. When you validate and preview your Bicep files, you gain confidence that the resource definitions are valid. But you don't necessarily know that the resources will actually do what you want.
 

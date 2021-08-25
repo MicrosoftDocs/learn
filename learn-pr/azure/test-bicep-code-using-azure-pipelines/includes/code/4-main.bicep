@@ -49,6 +49,7 @@ resource appServiceApp 'Microsoft.Web/sites@2020-06-01' = {
   location: location
   properties: {
     serverFarmId: appServicePlan.id
+    httpsOnly: true
     siteConfig: {
       appSettings: [
         {
@@ -81,3 +82,5 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2021-04-01' = {
     name: 'Standard_LRS'
   }
 }
+
+output appServiceAppHostName string = appServiceApp.properties.defaultHostName
