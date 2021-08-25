@@ -37,7 +37,7 @@ quiz:
       explanation: "indirect connected mode can't use the Azure Resource Manager. You can't use tools like the Azure portal to deploy or manage Azure Arc-enabled data services"
     - content: "direct connected mode"
       isCorrect: true
-      explanation: "With direct connected mode, users can use the Azure Resource Manager through the az CLI and Azure Portal"
+      explanation: "With direct connected mode, users can use the Azure Resource Manager through the az CLI and Azure portal"
     - content: "azure connected mode"
       isCorrect: false
       explanation: "The only connected mode options are direct or connected"
