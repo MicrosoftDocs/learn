@@ -105,5 +105,5 @@ Can you guess the output? Visit the [Rust Playground][RustPlay-shadow] to run th
 
 
 <!-- Links -->
-[RustPlay-shadow]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e6f06e06abb37c9ee15e25de0d510f5a?azure-portal=true
-[RustPlay-variables]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=ece8cff9611f109439db2645d75e98d6?azure-portal=true
+[RustPlay-shadow]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=ece8cff9611f109439db2645d75e98d6?azure-portal=true
+[RustPlay-variables]: https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=7619f3a57e95b1c161d410641f9e88fb?azure-portal=true
