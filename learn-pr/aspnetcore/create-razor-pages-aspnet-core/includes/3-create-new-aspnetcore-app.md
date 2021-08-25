@@ -80,7 +80,7 @@ Models in ASP.NET Core often make use of data annotations to constrain or custom
 
 ## The *Pages/Shared* directory
 
-Partial markup elements that are shared across several Razor pages are located by convention in a *Pages/Shared* directory. The *ContosoPets.Ui* app uses two shared partial views, which are included when you create a new **ASP.NET Core Web Application** project:
+Partial markup elements that are shared across several Razor pages are located by convention in a *Pages/Shared* directory. The *RazorPagesPizza* app uses two shared partial views, which are included when you create a new **ASP.NET Core Web Application** project:
 
 * *_Layout.cshtml*: Provides common layout elements across multiple pages.
 * *_ValidationScriptsPartial.cshtml*: Provides validation functionality such as client-side form input validation and cross-site antiforgery validation. This partial view is available to all pages in the project.
@@ -95,7 +95,7 @@ Layouts and partial views are outside of the scope of this module. At the end of
 
 ## The *Pages* directory structure and routing requests
 
-Razor Pages uses the directory structure within the *Pages* directory as the convention for routing requests by default. An index page located in the root of the *Pages* directory, for example, is the default page for the app's site. In the *ContosoPets.Ui* project's *Pages/Products* directory, you'll find a collection of Razor pages, including an *Index.cshtml* page. Requests routed to */Product/* will be directed to use the default *Index.cshtml* page physically located at *Products/Index.cshtml*, for example. The project's Razor pages (*.cshtml*) and accompanying `PageModel` classes (*.cshtml.cs*) are grouped conveniently in *Pages/Products*. Any passed route parameter values are made accessible through a property. ASP.NET Core offers robust routing features.
+Razor Pages uses the directory structure within the *Pages* directory as the convention for routing requests by default. An index page located in the root of the *Pages* directory, for example, is the default page for the app's site. In the *RazorPagesPizza* project's *Pages/Products* directory, you'll find a collection of Razor pages, including an *Index.cshtml* page. Requests routed to */Product/* will be directed to use the default *Index.cshtml* page physically located at *Products/Index.cshtml*, for example. The project's Razor pages (*.cshtml*) and accompanying `PageModel` classes (*.cshtml.cs*) are grouped conveniently in *Pages/Products*. Any passed route parameter values are made accessible through a property. ASP.NET Core offers robust routing features.
 
 The following table provides routes to be used in this module's completed project.
 
@@ -108,8 +108,4 @@ The following table provides routes to be used in this module's completed projec
 
 ### Organize groups of related Razor pages
 
-The *ContosoPets.Ui* project's purpose is to provide a UI to execute CRUD operations through your company's web API endpoint to manage product listings. The *Pages/Products* directory groups all the Razor pages that provide the UI for those CRUD operations and their `PageModel` class files. For the *ContosoPets.Ui* app, the same model validation will be used for more than one Razor page for HTTP requests to the hosted web API.
-
-### The HTTP request service
-
-This *ContosoPets.Ui* project has its `Product`-related HTTP request logic and properties encapsulated in a class. It handles all `Product`-related requests to the web API endpoint. It's made available for use throughout the scope of the app as a service. That service's class file has been stored in a *Services* directory, by convention. You'll examine this service in detail later in this module.
+The *RazorPagesPizza* project's purpose is to provide a UI to execute CRUD operations through your company's web API endpoint to manage product listings. The *Pages/Products* directory groups all the Razor pages that provide the UI for those CRUD operations and their `PageModel` class files. For the *RazorPagesPizza* app, the same model validation will be used for more than one Razor page for HTTP requests to the hosted web API.
