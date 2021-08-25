@@ -2,8 +2,6 @@ In this module, you examined the Razor Pages architecture in an ASP.NET Core app
 
 [!INCLUDE[download files](../../includes/summary-download.md)]
 
-[!INCLUDE[](../../../includes/azure-sandbox-cleanup.md)]
-
 ## Next steps
 
 Take a deeper dive into the documentation. The following ASP.NET Core features and concepts were introduced in this module:

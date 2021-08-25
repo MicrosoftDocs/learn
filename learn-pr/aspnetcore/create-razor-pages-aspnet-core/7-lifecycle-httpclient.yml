@@ -9,8 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Review the HTTP request logic lifecycle
-azureSandbox: true
-interactive: bash
 durationInMinutes: 4
 content: |
   [!include[](includes/7-lifecycle-httpclient.md)]

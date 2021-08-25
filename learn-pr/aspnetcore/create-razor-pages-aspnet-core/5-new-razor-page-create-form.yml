@@ -9,8 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Exercise - Add a product creation page
-azureSandbox: true
-interactive: bash
 durationInMinutes: 8
 content: |
   [!include[](includes/5-new-razor-page-create-form.md)]

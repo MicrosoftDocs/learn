@@ -9,8 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Exercise - Handle the product creation form submission
-azureSandbox: true
-interactive: bash
 durationInMinutes: 8
 content: |
   [!include[](includes/6-create-pagemodel.md)]
