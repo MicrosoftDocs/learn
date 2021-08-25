@@ -1,8 +1,15 @@
 In this unit, you'll learn about the virtual disk sector cache-aside server.
 
+The cloud-connected Altair emulator file system supports two models for drive B: read/drive access.
+
+1. The virtual disk server running on your desktop or cloud.
+    Install the virtual disk cache server on the Azure Sphere to improve the performance of the file system.
+1. The SD Card server running on the Azure Sphere.
+    This requires an Avnet Azure Sphere Starter Kit Rev 2 and the MikroE microSD Card Click. Files are stored on to a micro SD Cards.  
+
 ## Understand the virtual disk Cache-Aside server
 
-The cloud-enabled Altair on Azure Sphere project redirects disk read and write requests for drive B: over [MQTT](https://en.wikipedia.org/wiki/MQTT?azure-portal=true) to a cloud-based Python virtual disk server.
+The cloud-connected Altair emulator redirects disk read and write requests for drive B: over [MQTT](https://en.wikipedia.org/wiki/MQTT?azure-portal=true) to a cloud-based Python virtual disk server.
 
 A [cache-aside](/azure/architecture/patterns/cache-aside) cache is used to improve the virtual disk performance and runs on one of the real-time cores.
 

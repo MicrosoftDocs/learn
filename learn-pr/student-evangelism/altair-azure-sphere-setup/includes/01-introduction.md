@@ -71,7 +71,7 @@ Pin No. | Function | Click Pin | MT3620 Pin Function | Description
 
 ## Software requirements
 
-There are five components to the cloud-enabled Altair on Azure Sphere solution. The components are:
+There are five components to the cloud-connected Altair on Azure Sphere solution. The components are:
 
 1. The Altair emulator running on the Azure Sphere.
 2. An IoT Central application for configuration and reporting.
@@ -82,7 +82,7 @@ There are five components to the cloud-enabled Altair on Azure Sphere solution. 
 In this module, you will:
 
 * Learn the hardware and software requirements for the Altair 8800 emulator.
-* Learn about the five components to a cloud-enabled Altair on Azure Sphere solution.
+* Learn about the five components to a cloud-connected Altair on Azure Sphere solution.
 * Install and configure the components.
 
 ## Prerequisites

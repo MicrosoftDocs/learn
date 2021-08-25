@@ -43,7 +43,7 @@ In this module, you will:
 
 - Learn about the Altair 8800.
 - Learn about Azure Sphere.
-- Learn about the cloud-enabled Altair emulator on Azure Sphere.
+- Learn about the cloud-connected Altair emulator on Azure Sphere.
 
 ## Prerequisites
 

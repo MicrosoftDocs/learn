@@ -13,7 +13,7 @@ summary: Learn how to set up the Altair 8800 emulator and the Azure Sphere devel
 abstract:  |
   In this module, you will:
   - Learn the hardware and software requirements for the Altair 8800 emulator. 
-  - Learn about the five components to a cloud-enabled Altair on Azure Sphere solution.
+  - Learn about the five components to a cloud-connected Altair on Azure Sphere solution.
   - Install and configure the components.
 prerequisites: |
   TBD

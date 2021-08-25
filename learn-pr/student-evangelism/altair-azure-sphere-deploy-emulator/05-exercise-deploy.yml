@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure-iot-central
 durationInMinutes: 4 # dummy number at present
 content: |
-  [!include[](includes/03-exercise-deploy.md)]
+  [!include[](includes/05-exercise-deploy.md)]

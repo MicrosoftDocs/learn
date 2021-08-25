@@ -1,4 +1,4 @@
-In this unit, you'll learn how to deploy the Altair on Azure Sphere high-level and real-time applications to your Azure Sphere.
+In this unit, you'll learn how to deploy the Altair emulator to your Azure Sphere.
 
 ## Steps to follow
 
