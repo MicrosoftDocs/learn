@@ -8949,6 +8949,31 @@
       "source_path": "learn-pr/wwl-data-ai/build-chat-bot-azure-portal/5-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/create-bot-with-bot-framework-composer/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/tensorflow/intro-natural-language-processing-tensorflow/6-attention-transformers.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-natural-language-processing-tensorflow/5-generative-networks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/tensorflow/intro-natural-language-processing-tensorflow/7-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-natural-language-processing-tensorflow/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/tensorflow/intro-natural-language-processing-tensorflow/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-natural-language-processing-tensorflow/7-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/tensorflow/intro-computer-vision-tensorflow/7-mobilenet.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-computer-vision-tensorflow/7-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/tensorflow/intro-computer-vision-tensorflow/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/intro-computer-vision-tensorflow/7-summary",
+      "redirect_document_id": false
     }
   ]
 }

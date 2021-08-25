@@ -29,7 +29,7 @@ To iterate means to go through each element in a list, from a starting point to 
      { FirstName="Albert"; LastName="Einstein" }
      { FirstName="Marie"; LastName="Curie" }
    ]
-   let nobelPrizeWinners = people.map(fun person -> person.FirstName + person.LastName) // "Albert Einstein", "Marie Curie"
+   let nobelPrizeWinners = List.map (fun person -> person.FirstName + person.LastName) people // "Albert Einstein", "Marie Curie"
    ```
 
    In the preceding code, the list of `Person` objects is transformed into a list of strings.
@@ -61,7 +61,7 @@ Sorting lists is something you're likely to do often. Here are three functions t
 
    ```fsharp
    let fruits = ["Banana", "Apple", "Pineapple"]
-   let sortedFruits = List.sortBy(fun fruit -> fruit.Length) // Apple, Banana, Pineapple
+   let sortedFruits = List.sortBy(fun fruit -> fruit.Length) fruits // Apple, Banana, Pineapple
    ```
 
 - `sortWith()`: With this function, you can provide a comparator function, because it might not be apparent at first which of several items should be sorted before any other item. Here's some example code:
@@ -82,7 +82,7 @@ Sorting lists is something you're likely to do often. Here are three functions t
        else if c1.Attack > c2.Attack then 1
        else 0
 
-   let sorted = List.sortWidth compareCreatures creatures // { Name="Orc"; Level=1; Attack=5 }, { Name="Demon"; Level=2; Attack=10 }, { Name="Dragon"; Level=2; Attack=20 }
+   let sorted = List.sortWith compareCreatures creatures // { Name="Orc"; Level=1; Attack=5 }, { Name="Demon"; Level=2; Attack=10 }, { Name="Dragon"; Level=2; Attack=20 }
    ```
 
    The preceding comparison function `compareCreatures()` first tries to compare by `Level`. If the level is equal, it tries to compare by using `Attack`. It returns `-1` if something is considered smaller, `1` if it's larger, and `0` if it's equal.
@@ -95,7 +95,7 @@ Another thing you might want to do is to find a specific element. To do so, you 
 
    ```fsharp
    let list = [1;2;3;4]
-   List.find( fun x -> x % 2 = 0) list 
+   List.find( fun x -> x % 2 = 0) list // 2, 4
    ```
 
 - `tryFind()`. This function takes a function (predicate) that tells how to find the value and list to look into. It returns an option. Here's how you can use it:
@@ -130,7 +130,7 @@ Carrying out mathematical operations on a list can be valuable. Among many funct
 - `sum()`: By using this function, you iterate over each item to sum all values in the list. Here's how you can use it:
 
    ```fsharp
-   let sum - List.sum [1 .. 5] // sum = 15 
+   let sum = List.sum [1 .. 5] // sum = 15 
    ```
 
 - `sumBy()`: With this function, the idea is to point out how to sum the values. One way to do so is to point out which fields to sum, as in the following example:
