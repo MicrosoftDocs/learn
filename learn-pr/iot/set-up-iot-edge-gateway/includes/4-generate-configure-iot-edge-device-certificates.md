@@ -53,7 +53,7 @@ You'll complete these steps on the Azure IoT Edge Gateway that was deployed in t
     username@az-220-vm-edgegw-{YOUR-ID}:~$
     ```
 
-1. The `Azure/]` GitHub project contains scripts to generate non-production certificates. These scripts will help you create the necessary scripts to set up a Transparent IoT Edge Gateway. Run the following command:
+1. The `Azure/iotedge` GitHub project contains scripts to generate non-production certificates. These scripts will help you create the necessary scripts to set up a Transparent IoT Edge Gateway. Run the following command:
 
     ```bash
      git clone https://github.com/Azure/iotedge.git
