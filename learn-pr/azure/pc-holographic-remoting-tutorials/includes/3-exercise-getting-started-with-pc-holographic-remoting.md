@@ -53,10 +53,10 @@ In this section, you will prepare the scene by adding some of the tutorial prefa
 
 To focus in on the objects in the scene, you can double-click on the ModelParent object, and then zoom slightly in again:
 
-:::image type="content" source="../media/e.png" alt-text="Adding prefabs 2." lightbox="e.png":::
+:::image type="content" source="../media/e.png" alt-text="Focus objects on scene" lightbox="e.png":::
 
 >[!Tip]
->If you find the large icons in your scene, such as, the large framed 'T' icons distracting, you can hide these by <a herf =" ">toggling the Gizmos</a> to the off position.
+>If you find the large icons in your scene, such as, the large framed 'T' icons distracting, you can hide these by [toggling the Gizmos](https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html) to the off position.
 
 # Configuring the buttons to operate the scene
 
@@ -93,17 +93,17 @@ We have provided six different 3D models for demonstration, expand the **ModelPa
 
     In the **Size** field, enter the number of 3D models you would like to have in your scene. In this case, it would be six. It will create fields for adding new 3D models.
 
-:::image type="content" source="../media/i.png" alt-text="View Button Control Script." lightbox="i.png":::
+:::image type="content" source="../media/i.png" alt-text="Enter the number of 3D models." lightbox="i.png":::
 
 2. Drag and drop each child object of ModelParent Object into these fields.
 
-:::image type="content" source="../media/j.png" alt-text="View Button Control Script." lightbox="j.png":::
+:::image type="content" source="../media/j.png" alt-text="Drag and drop each child object." lightbox="j.png":::
 
 3. Drag and drop the **ClippingObjects** object from the Hierarchy window to the **Toggle Button (Script)** component **Clipping Object** field.
 
 >[!Note]
 >Stay in button parent object only.
-:::image type="content" source="../media/k.png" alt-text="View Button Control Script." lightbox="k.png":::
+:::image type="content" source="../media/k.png" alt-text="Drag and drop clipping object." lightbox="k.png":::
 
 4. In the Hierarchy window, select the ClippingObjects prefab and enable it in the Inspector window to turn on the **Clipping objects**.
 
@@ -115,7 +115,7 @@ In the Hierarchy window, expand the **ClippingObjects** object to expose the thr
 
 1. To configure the **ClippingSphere** object, click on it, and in the Inspector window, locate the **Clipping Sphere (Script)** component. Enter the number of renderers in the size field that you need to add for your 3D model. In this case, add 10 for MarsCuriosityRover child objects. It will create fields for adding renderers, drag and drop MarsCuriosityRover Object's child model objects into these fields.
 
-:::image type="content" source="../media/i.png" alt-text="Clipping Objects." lightbox="i.png":::
+:::image type="content" source="../media/i.png" alt-text="Configure Clipping Objects to enable clipping feature." lightbox="i.png":::
 
 2. In the Hierarchy window, select the ClippingObjects prefab and enable it in the Inspector window to turn on the Clipping objects.
 
@@ -139,15 +139,15 @@ In the Hierarchy window, select the ModelParent object. Expand the **MarsCuriosi
 * To **None (Object)** field, assign the **POI-Camera ToolTip** object
 * From **No Function** dropdown of **While Looking At Target ()**event, select **GameObject > SetActive (bool)**. Select the Checkbox under it to highlight the tooltip as the action that is triggered when you look at the target object.
 
-:::image type="content" source="../media/n.png" alt-text="Confiure eye-tracking." lightbox="n.png":::
+:::image type="content" source="../media/n.png" alt-text="Confiure While Looking At Target ()." lightbox="n.png":::
 
 * Follow the same process and click on the **No Function** dropdown of the **On Look Away ()** event listener. Then select **GameObject > SetActive (bool)** and leave the Checkbox empty to hide the tooltip as the action that is triggered when you look away from the target object.
 
-:::image type="content" source="../media/o.png" alt-text="Confiure eye-tracking." lightbox="o.png":::
+:::image type="content" source="../media/o.png" alt-text="Confiure On Look Away ()." lightbox="o.png":::
 
 Follow the same process and assign respective tooltip objects to their same MarsCuriosityRover parts While Looking At Target () & On Look Away () events.
 
-To enable eye tracking, please follow these <a herf="https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-base-ch5#5-enable-simulated-eye-tracking-for-in-editor-simulations">guidelines</a>.
+To enable eye tracking, please follow these [guidelines](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch5#5-enable-simulated-eye-tracking-for-in-editor-simulations).
 
 
 

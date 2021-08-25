@@ -18,9 +18,6 @@ In unity ,the precision of the render texture's depth buffer in bits (0, 16, 24/
 # Eye Gaze Interaction
 The Eye Tracking Interaction extension provided by Khronos is supported by Unity OpenXR. To get the posture data that the extension returns, use this layout.
 
-This device is currently unavailable in the Unity Input System drop-down options. To bind, go to the gaze position/rotation and utilise the binding paths listed below.
-Position	<EyeGaze>/pose/position
-Rotation	<EyeGaze>/pose/rotation
 
 # Microsoft Hand Interaction 
 The Hololens 2 Hand interaction profile is supported by Unity OpenXR. Bindings that use XR Controller and are available on this device (for example, XRController>/devicePosition) will bind appropriately because this layout inherits from XRController>.
