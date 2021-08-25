@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-razor-pages-aspnet-core.7-deploy-test
+uid: learn.create-razor-pages-aspnet-core.7-exercise-create-pagemodel
 metadata:
   title: Exercise - Deploy and test the Razor Pages project
   description: Deploy and test the Razor Pages project.
@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Deploy and test the Razor Pages project
 durationInMinutes: 7
 content: |
-  [!include[](includes/7-deploy-test.md)]
+  [!include[](includes/7-exercise-create-pagemodel.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-razor-pages-aspnet-core.6-create-pagemodel
+uid: learn.create-razor-pages-aspnet-core.6-handle-interactions-in-pagemodel
 metadata:
   title: Exercise - Handle the product creation form submission
   description: Review a Razor Pages `PageModel` class and add an HTTP POST handler.
@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Handle the product creation form submission
 durationInMinutes: 8
 content: |
-  [!include[](includes/6-create-pagemodel.md)]
+  [!include[](includes/6-handle-interactions-in-pagemodel.md)]
