@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/11/2021
+  ms.date: 08/25/2021
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -25,17 +25,6 @@ quiz:
     - content: "General settings"
       isCorrect: true
       explanation: "That's correct. This category is used to configure stack, platform, debugging, and incoming client certificate settings."
-    - content: "Deployment slots"
-      isCorrect: false
-      explanation: "That's incorrect. Deployment slots is a completely different category for managing code deployment pipelines."
-  - content: "The free App Service managed certificate is a turn-key solution for securing your custom DNS name in App Service. **True** or **False**: The App Service managed certificate is supported in App Service Environments?"
-    choices:
-    - content: "True"
-      isCorrect: false
-      explanation: "That's incorrect. The free managed certificate is not supported in App Service Environment."
-    - content: "False"
-      isCorrect: true
-      explanation: "That's incorrect. The free managed certificate is not supported in App Service Environment."
   - content: "Which of the following types of application logging is supported on the Linux platform?"
     choices:
     - content: "Web server logging"
@@ -47,6 +36,3 @@ quiz:
     - content: "Deployment logging"
       isCorrect: true
       explanation: "That's correct. Deployment logging is supported on the Linux platform."
-    - content: "Detailed error logging"
-      isCorrect: false
-      explanation: "That's incorrect. Detailed error logging is not supported on the Linux platform."
