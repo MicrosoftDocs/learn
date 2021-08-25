@@ -4,8 +4,8 @@ metadata:
   title: Understand when and why to use Razor Pages
   description: Learn when and why to use Razor Pages for your ASP.NET Core app.
   ms.date: 08/24/2021
-  author: wadepickett
-  ms.author: wpickett
+  author: jongalloway
+  ms.author: jogallow
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Understand when and why to use Razor Pages

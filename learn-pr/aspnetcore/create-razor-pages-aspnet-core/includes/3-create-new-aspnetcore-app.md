@@ -10,21 +10,21 @@ To set up a .NET project to work with a web app, we'll use Visual Studio Code. V
 
 1. In Visual Studio Code, select **File** > **Open Folder**.
 
-1. Create a new folder named **ContosoPizza** in the location of your choice, and then click **Select Folder**.
+1. Create a new folder named **RazorPagesPizza** in the location of your choice, and then click **Select Folder**.
 
 1. Open the integrated terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
 
 1. In the terminal window, copy and paste the following command.
 
     ```dotnetcli
-    dotnet new webapp --name ContosoPizza
+    dotnet new webapp --output RazorPagesPizza
     ```
 
-    This command creates the files for a basic web API project, along with a C# project file named **ContosoPizza.csproj** that will return a list of weather forecasts.
+    This command creates the files for a basic web API project, along with a C# project file named **RazorPagesPizza.csproj** that will return a list of weather forecasts.
 
     You may receive a prompt from Visual Studio Code to add assets to debug the project. Click `Yes` on the dialog.
 
-    The command uses an ASP.NET Core project template to scaffold a C#-based web app project. A *ContosoPizza:* directory is created, which contains an ASP.NET Core project running on .NET. The project name matches the *ContosoPizza* directory name.
+    The command uses an ASP.NET Core project template to scaffold a C#-based web app project. A *RazorPagesPizza* directory is created, which contains an ASP.NET Core project running on .NET. The project name matches the *RazorPagesPizza* directory name.
 
     You should now have access to these files.
 
@@ -34,22 +34,30 @@ To set up a .NET project to work with a web app, we'll use Visual Studio Code. V
     -| Properties
     -| appsettings.Development.json
     -| appsettings.json
-    -| ContosoPizza.csproj
+    -| RazorPagesPizza.csproj
     -| Pages
+       - | Shared
+       - | _ViewImports.cshtml
+       - | _ViewStart.cshtml
+       - | Error.cshtml
+       - | Error.cshtml.cs
+       - | Index.cshtml
+       - | Index.cshtml.cs
+       - | Privacy.cshtml
+       - | Privacy.cshtml.cs
     -| Program.cs
     -| Startup.cs
     ```
 
 ## Examine the project
 
-The *ContosoPets.Ui* project directory is currently open in the Cloud Shell editor. The following table outlines noteworthy project files and directories. Examine each of them in the Cloud Shell editor window.
+The *RazorPagesPizza* project directory is currently open in the Visual Studio Code editor. The following table outlines noteworthy project files and directories. Examine each of them in the Visual Studio Code editor window.
 
 | Name                                        | Description                                                                                                                     |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | *Pages/*                | Contains Razor Pages and supporting files. Each Razor page is a pair of files:<br>* A *.cshtml* file that contains markup with C# code using Razor syntax.<br>* A *.cshtml.cs* `PageModel` class file that defines page handler methods and data used to render the page.                                      |
-| *wwwroot/*              | Contains static asset files, such as HTML, JavaScript, and CSS.                                                                 |
-| *Models/*               | Contains Model files. This project uses one central model file for model validation.                                            |
-| *ContosoPets.Ui.csproj* | Contains configuration metadata for the project, such as dependencies.                                                          |
+| *wwwroot/*              | Contains static asset files, such as HTML, JavaScript, and CSS.
+| *RazorPagesPizza.csproj* | Contains configuration metadata for the project, such as dependencies.                                                          |
 | *Program.cs*            | Serves as the app's managed entry point.                                                                                        |
 | *Startup.cs*            | Configures app behavior, such as routing between pages.                                                                         |
 
@@ -65,12 +73,6 @@ A model object defines data properties and encapsulates logic or operations rela
 * Defines page handlers for requests sent to the page and for the data used to render the page.
 
 A *page handler* is the method that's executed as a result of an HTTP request. For example, an `OnGet` method in the Razor page's `PageModel` class is automatically executed for an HTTP GET request.
-
-## Models and the *Models* directory
-
-By convention, model files are located in a *Models* directory. As previously mentioned, a model object defines data properties and encapsulates logic or operations related to those data properties.
-
-The project has a `Product` model in *Models/Product.cs*. The `Product` model is implemented as a C# class that defines the data properties for a product. Each `PageModel` that focuses on CRUD operations for products uses this `Product` model.
 
 ### Data annotations
 
