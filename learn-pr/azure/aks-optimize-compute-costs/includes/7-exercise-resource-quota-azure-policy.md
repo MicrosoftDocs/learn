@@ -146,7 +146,7 @@ To configure the new Azure Policy, use the Policy service in the Azure portal.
 
     The Policy dashboard opens with an overview that shows all your assigned policies, the status of resources, and how the policies affect them. If you haven't assigned any policies, the dashboard will be empty.
 
-1. In the left menu pane, under **Authoring**, select **Authoring**:
+1. In the left menu pane, under **Authoring**, select **Assignments**:
 
     :::image type="content" source="../media/7-assignment-option.png" alt-text="Screenshot of the Policy service navigation panel that shows the location of the Assignments option.":::
 
