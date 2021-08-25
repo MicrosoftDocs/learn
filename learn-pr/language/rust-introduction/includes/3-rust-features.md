@@ -6,7 +6,7 @@ In this unit, we'll review some of the features and limitations of Rust:
 - Rust standard libraries and third-party crates
 - The Rust Cargo tool and dependency manager
 - The Rust playground
-- Limitations of Rust
+- Rust strengths
 
 
 ## Manage code with the Rust module system
