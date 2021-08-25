@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-razor-pages-aspnet-core.3-exercise-create-new-aspnetcore-app
+uid: learn.create-razor-pages-aspnet-core.3-setup-environment
 metadata:
   title: Exercise - Create new ASP.NET Core app
   description: Create a new ASP.NET Core starter project, tour the project, then run and browse it.
