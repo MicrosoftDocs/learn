@@ -120,7 +120,7 @@ Just-in-time (JIT) VM access can be used to lock down inbound traffic to your Az
 
 ### Enable Adaptive Application Controls (\*) - Level 1
 
-Adaptive application control is an intelligent, automated end-to-end application whitelisting solution from Azure Security Center. It helps you control which applications can run on your Azure and non-Azure VMs (Windows and Linux), which, among other benefits, helps harden your VMs against malware. Security Center uses machine learning to analyze the applications running on your VMs, and helps you apply the specific whitelisting rules using this intelligence. This capability greatly simplifies the process of configuring and maintaining application whitelisting policies.
+Adaptive application control is an intelligent, automated end-to-end approved application listing solution from Azure Security Center. It helps you control which applications can run on your Azure and non-Azure VMs (Windows and Linux), which, among other benefits, helps harden your VMs against malware. Security Center uses machine learning to analyze the applications running on your VMs, and helps you apply the specific approval rules using this intelligence. This capability greatly simplifies the process of configuring and maintaining approved application policies.
 
 ### Enable SQL Auditing & Threat Detection (\*) - Level 1
 
