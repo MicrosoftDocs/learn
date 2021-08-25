@@ -182,8 +182,6 @@ To configure the new Azure Policy, use the Policy service in the Azure portal.
     | --- | --- |
     | Max allowed CPU units | Set the value to **200m**. The policy matches this value to both the workload resource-request value and the workload limit value specified in the workload's manifest file. |
     | Max allowed memory bytes | Set the value to **256Mi**. The policy matches this value to both the workload resource-request value and the workload limit value specified in the workload's manifest file. |
-    | **Effect** | Set the value to **deny**. |
-    | **Namespace exclusions** | Leave the default values set to **kube-system;gatekeeper-system;azure-arc**. |
 
     Here's an example of the completed **Parameters** tab:
 
