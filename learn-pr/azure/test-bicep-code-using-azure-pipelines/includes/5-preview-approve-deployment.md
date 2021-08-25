@@ -1,4 +1,4 @@
-You've now learned about pipeline stages, and how you can add a pipeline stage to validate your Bicep code. The next step in building confidence with your deployment is to add another stage to check what will actually be created, updated and deleted in your environment your deployment starts. In this unit you'll learn about using what-if command in a pipeline, and adding approvals to verify its output. 
+You've now learned about pipeline stages, and how you can add a pipeline stage to validate your Bicep code. The next step in building confidence with your deployment is to add another stage to check exactly what will be created, updated and deleted by your deployment. In this unit you'll learn about using what-if command in a pipeline, and adding approvals to verify its output. 
 
 ## The what-if operation
 
