@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.visual-studio-test-tools.4-view-and-run-tests
+uid: learn.visual-studio.visual-studio-test-tools.view-run-tests
 title: View, run, and debug tests in Visual Studio
 metadata:
   unitType: learning-content
@@ -12,7 +12,7 @@ metadata:
   ms.prod: learning-visual-studio
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-view-and-run-tests.md)]
+  [!include[](includes/4-view-run-tests.md)]
 quiz:
   questions:
   - content: How can you run tests in Visual Studio?

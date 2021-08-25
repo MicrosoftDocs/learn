@@ -1,15 +1,15 @@
 ### YamlMime:Module
-uid: learn-visualstudio.visual-studio-test-tools
+uid: learn.visual-studio.visual-studio-test-tools
 metadata:
   moduleType: standard
-  title: C# Testing in Visual Studio Tutorial
+  title: C# testing in Visual Studio Tutorial
   description: Start testing your C# apps with the testing tools in Visual Studio. Learn to write tests, use the Visual Studio Test Explorer, create test suites, and apply the red, green, refactor pattern to write code.
   ms.date: 07/20/2021
   author: kendrahavens
   ms.author: kehavens
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio
-title: C# Testing in Visual Studio Tutorial
+title: C# testing in Visual Studio Tutorial
 summary: Start testing your C# apps with the testing tools in Visual Studio.
 abstract: |
   By the end of this module, you'll be able to: 
@@ -29,12 +29,12 @@ roles:
 products:
   - vs
 units:
-  - learn.visual-studio-test-tools.1-introduction
-  - learn.visual-studio-test-tools.2-create-a-test
-  - learn.visual-studio-test-tools.3-exercise-write-a-test
-  - learn.visual-studio-test-tools.4-view-and-run-tests
-  - learn.visual-studio-test-tools.5-exercise-create-test-suite
-  - learn.visual-studio-test-tools.6-sharpen-test-skills
-  - learn.visual-studio-test-tools.7-summary
+  - learn.visual-studio.visual-studio-test-tools.introduction
+  - learn.visual-studio.visual-studio-test-tools.create-test
+  - learn.visual-studio.visual-studio-test-tools.exercise-write-test
+  - learn.visual-studio.visual-studio-test-tools.view-run-tests
+  - learn.visual-studio.visual-studio-test-tools.exercise-create-test-suite
+  - learn.visual-studio.visual-studio-test-tools.sharpen-test-skills
+  - learn.visual-studio.visual-studio-test-tools.summary
 badge:
-  uid: /learn/achievements/generic-badge.svg
+  uid: learn.visual-studio.visual-studio-test-tools.badge

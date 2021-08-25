@@ -35,12 +35,12 @@ Next, you are looking to add more tests to ensure you test all the functionality
    Now you should have tests for the `Subtract`, `Multiply`, and `Divide` methods.
 
    > [!NOTE]
-   > If you want to check your code, see the [expected examples](#Expected-examples-for-`Subtract`,-`Multiply`,-and-`Divide`-tests) section at the end of this page.
+   > If you want to check your code, see the [expected examples](#expected-examples-for-subtract-multiply-and-divide-tests) section at the end of this page.
 
 1. Add another test for the `Divide` method that fails. The `Divide` method in our calculator cannot yet handle dividing by zero. Create a test method that inputs zero as the divisor. Run the new test to confirm it fails.
    It doesn't matter what is in your assert statement since an uncaught exception fails the test. For now, let's say the `Divide` method should return null when dividing by zero. What assert should you use?
    > [!NOTE]
-   > If you want to check your code, see the [expected divide by zero test](#Expected-divide-by-zero-test) at the end of this page.
+   > If you want to check your code, see the [expected divide by zero test](#expected-divide-by-zero-test) at the end of this page.
 
 Now that you're accumulating a test suite, let's learn more about managing multiple tests with the Visual Studio Test Explorer.
 
@@ -121,7 +121,7 @@ Red, green, refactor is all about starting with a failing test, to see the test 
 
 Congratulations!  You've managed to add more tests and learned to use a Red, Green, Refactor pattern. You started with the red failing `DivideByZeroTest` and modified the product code until it got to green. The last step before moving on was refactoring.
 
-## Expected examples for `Subtract`, `Multiply`, and `Divide` tests
+## Expected examples for Subtract, Multiply, and Divide tests
 
 ```csharp
 [TestMethod]
