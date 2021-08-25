@@ -42,15 +42,13 @@ Like Azure SQL Managed Instance, you can deploy Azure Arc-enabled SQL Managed in
 
 Both service tiers are billed on a per core basis but also include the ability to use Azure Hybrid Benefit licensing and a developer option for no cost. Business critical service tier is currently under preview so won't incur any charges for use.
 
-Each service tier also supports a free licensed option for development and test purposes.
-
 ### Azure integration
 
-When you deploy an Azure SQL Managed instance, billing, usage, metrics, and logs are all integrated with Azure automatically. Furthermore, by default you can use Azure interfaces such as the portal and CLI to deploy and configure an Azure SQL Managed Instance.
+When you deploy an Azure SQL Managed instance, billing, usage, metrics, and logs can all integrated with Azure. Furthermore, you can use Azure interfaces such as the portal and CLI to deploy and configure an Azure SQL Managed Instance.
 
 Integration with Azure for Azure Arc-enabled SQL Managed instance depends on which [connectivity mode](https://docs.microsoft.com/azure/azure-arc/data/connectivity) you use.
 
-Integration with Azure is handled automatically with direct connected mode through Azure Arc agents and the Azure Arc data controller. All Azure interfaces such as the Azure portal can be used for deployment and configuration.
+Integration with Azure is handled automatically with direct connected mode through Azure Arc agents and the Azure Arc data controller. Azure interfaces such as the Azure portal can be used for deployment and configuration.
 
 If you use indirect-connected mode, a minimal amount of data must be sent to Azure for billing purposes. Optionally, you can export data such as metrics and logs. Deployment and configuration through the Azure portal isn't supported with indirect-connected mode. However, interfaces such as the az CLI and kubectl can still be used for deployment and configuration.
 
@@ -66,11 +64,11 @@ Azure Arc-enabled SQL Managed instance also uses a versionless engine so updates
 
 ### Deploy and configure
 
-Azure SQL Managed Instance can be deployed using Azure interfaces such as the Azure portal and az CLI. In direct connected mode, Azure Arc-enabled SQL Managed Instance can be deployed with the Azure portal. In indirect connected mode, Azure Arc-enabled SQL Managed Instance can be deployed using az CLI (using the arcdata extension), kubectl, or Azure Data Studio.
+Deployment of Azure Arc-enabled SQL Managed Instance is an easy, declarative process much like Azure SQL Managed Instance. When you deploy an Azure Arc-enabled SQL Managed Instance, you can specify a service tier, core and memory limits, storage class specifications, and SQL configuration options such as SQL Server Agent, collation, and trace flags.
 
-When you deploy an Azure Arc-enabled SQL Managed Instance, you can specify a service tier, core and memory limits, storage class specifications, and SQL configuration options such as SQL Server Agent, collation, and trace flags.
+In direct connected mode, Azure Arc-enabled SQL Managed Instance can be deployed with the Azure portal. In indirect connected mode, Azure Arc-enabled SQL Managed Instance can be deployed using az CLI (using the arcdata extension), kubectl, or Azure Data Studio.
 
-Outside of the SQL instance, Azure Arc-enabled Managed Instance can also be configured in direct connected mode using Azure interfaces. In either connected mode, certain options can be configured outside of the SQL instance with az CLI or kubectl.
+Outside of the SQL instance, Azure Arc-enabled Managed Instance can also be configured in direct connected mode using the Azure portal. In either connected mode, options can be configured outside of the SQL instance with az CLI or kubectl.
 
 Inside the SQL instance, standard SQL Server interfaces such as sp_configure, ALTER SERVER CONFIGURATION, and ALTER DATABASE can be used to configure the instance and database options.
 
@@ -78,7 +76,7 @@ Inside the SQL instance, standard SQL Server interfaces such as sp_configure, AL
 
 Like Azure SQL Managed Instance, you can monitor Azure Arc-enabled SQL Managed instance using Azure monitor for key metrics. Locally within the cluster, you can also use built in monitoring with Grafana dashboards for nodes or the SQL instance.
 
-Like Azure SQL Managed Instance, logs for Azure Arc-enabled SQL Managed Instance are available to view in the Azure portal through log analytics. Locally within the cluster, you can also use built in logging with Kibana.
+Logs for Azure Arc-enabled SQL Managed Instance are available to view in the Azure portal through log analytics. Locally within the cluster, you can also use built in logging with Kibana.
 
 Since Azure Arc-enabled SQL Managed Instance is based on SQL Server, the standard ERRORLOG files are available to view SQL errors and instance details. Azure Arc-enabled SQL Managed Instance also supports all available Dynamic Management Views (DMV) and Extended Events.
 
@@ -88,17 +86,17 @@ One of the benefits of using a managed service like Azure Arc-enabled SQL Manage
 
 For the General Purpose service tier, the built-in high availability of Kubernetes StatefulSets is used with shared storage.
 
-For the Business Critical service tier (Preview), built in high availability is provided using a combination of Kubernetes StatefulSets and SQL Server Always On Availability Group replicas. Like Azure SQL Managed Instance, a read-only replica is available to offload read workloads. System databases such as master and model are part of the availability group. System level objects such as SQL Agent jobs will automatically be available after a failover event.
+For the Business Critical service tier (Preview), built in high availability is provided using a combination of Kubernetes StatefulSets and SQL Server Always On Availability Group replicas. Availability Group replicas are automatically setup and configured for the user. Like Azure SQL Managed Instance, a read-only replica is available to offload read workloads. System databases such as master and model are part of the availability group. System level objects such as SQL Agent jobs will automatically be available after a failover event.
 
-Kubernetes LoadBalancers and NodePorts provide connection abstraction for the application should the instance move nodes within the cluster. In addition, a read-only connection abstraction point is provided for Business Critical service tiers.
+Kubernetes LoadBalancers and NodePorts provide connection abstraction for the application should the instance move within the cluster. In addition, a read-only connection abstraction point is provided for Business Critical service tiers.
 
-Since Microsoft manages the complete platform and infrastructure of Azure SQL Managed Instance, users get the benefit of a Service Level Agreement (SLA) for availability. Since customers must manage the infrastructure for Azure Arc-enabled SQL Managed Instance, an SLA isn't provided.
+Since Microsoft manages the complete platform and infrastructure of Azure SQL Managed Instance, users get the benefit of a Service Level Agreement (SLA) for availability. Since customers must manage the infrastructure for Azure Arc-enabled SQL Managed Instance, any SLA is managed by the customer.
 
 ### Disaster Recovery
 
 Like Azure SQL Managed Instance, Azure Arc-enabled SQL Managed Instance provides an automatic backup system for databases including point-in-time restore. Users can manually execute COPY_ONLY backups and restore them at any time.
 
-Users configure a desired Recovery Point Objective (RPO) and retention period. These settings determined how often transaction log backups are taken and how long backups are kept.
+Users configure a desired Recovery Point Objective (RPO) and retention period. These settings determine how often transaction log backups are taken and how long backups are kept.
 
 Azure SQL Managed Instance provides built in redundancy for backups using Azure storage. Users for Azure Arc-enabled SQL Managed Instance can configure a specific Kubernetes storage class to be used for SQL backups but are responsible for any redundancy needs.
 
