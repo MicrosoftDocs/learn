@@ -53,13 +53,13 @@ You'll complete these steps on the Azure IoT Edge Gateway that was deployed in t
     username@az-220-vm-edgegw-{YOUR-ID}:~$
     ```
 
-1. The `Azure/IoTEdge` GitHub project contains scripts to generate non-production certificates. These scripts will help you create the necessary scripts to set up a Transparent IoT Edge Gateway. Run the following command:
+1. The `Azure/]` GitHub project contains scripts to generate non-production certificates. These scripts will help you create the necessary scripts to set up a Transparent IoT Edge Gateway. Run the following command:
 
     ```bash
      git clone https://github.com/Azure/iotedge.git
     ```
     >[!NOTE]
-    >The Azure/iotedge open source project is the official open source project for Azure IoT Edge. This project contains source code for the Edge Agent, Edge Hub, and IoT Edge Security Daemon; in addition to the helper script used in this unit.
+    >The Azure/IoTedge open source project is the official open source project for Azure IoT Edge. This project contains source code for the Edge Agent, Edge Hub, and IoT Edge Security Daemon; in addition to the helper script used in this unit.
 
 1. Run the following commands to create a working directory named ~/certificates that will be used for generating the certificates, then move to that directory:
 
@@ -73,7 +73,7 @@ You'll complete these steps on the Azure IoT Edge Gateway that was deployed in t
      cp ../iotedge/tools/CACertificates/*.cnf .
      cp ../iotedge/tools/CACertificates/certGen.sh .
     ```
-    These commands will copy just the necessary files for running the helper script for generating test CA certificates. The rest of the source files within the Azure/iotedge repository are not needed for this unit.
+    These commands will copy just the necessary files for running the helper script for generating test CA certificates. The rest of the source files within the Azure/IoTedge repository are not needed for this unit.
 
 1. Within the working directory, run the following command to verify the helper script files have been copied correctly.
 
