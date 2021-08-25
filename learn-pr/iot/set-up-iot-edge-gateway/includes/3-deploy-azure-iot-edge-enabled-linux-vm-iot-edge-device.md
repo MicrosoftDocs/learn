@@ -37,6 +37,6 @@ If necessary, log in to your Azure portal using your Azure account credentials.
 
     The **DNS Name** can be obtained from the **Overview** section of the newly deployed virtual machine within the Azure portal.
 
-    :::image type="content" source="../media/iot-edge-vm-dns-name.png" alt-text="Screenshot showing the dns name of the IoT Edge virtual machine. lightbox="../media/iot-edge-vm-dns-name.png":::
+    :::image type="content" source="../media/iot-edge-vm-dns-name.png" alt-text="Screenshot showing the dns name of the IoT Edge virtual machine." lightbox="../media/iot-edge-vm-dns-name.png":::
 
 Congratulations, that's the end of this unit! In the next unit, we will generate and configure IoT Edge Device CA Certificates to allow devices to securely connect to our IoT Edge Gateway.
