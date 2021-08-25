@@ -33,7 +33,7 @@ By default, Get, Scan, and Delete operations on an HBase table are performed on 
 
 ### HBase architecture
 
-HBase is organized as a cluster of HBase nodes. These nodes are of two types: a master node and one or more slave nodes (called **RegionServers**; see Figure 3). HBase uses Apache ZooKeeper as a distribution coordination service for the entire HBase cluster. For example, it handles master selection (choosing one of the nodes to be the master node), the lookup for the `-ROOT-` catalog table (explained shortly), and node registration (when new regionservers are added)<!-- , and so on -->. The master node that is chosen by ZooKeeper handles such functions as region allocation, failover, and load balancing<!-- , among others -->. 
+HBase is organized as a cluster of HBase nodes. These nodes are of two types: a primary node and one or more slave nodes (called **RegionServers**; see Figure 3). HBase uses Apache ZooKeeper as a distribution coordination service for the entire HBase cluster. For example, it handles primary selection (choosing one of the nodes to be the primary node), the lookup for the `-ROOT-` catalog table (explained shortly), and node registration (when new regionservers are added)<!-- , and so on -->. The primary node that is chosen by ZooKeeper handles such functions as region allocation, failover, and load balancing<!-- , among others -->. 
 
 ![HBase architecture.](../media/hbase-architecture.png)
 
@@ -61,7 +61,7 @@ The client also caches the `-ROOT-` and `.META.` tables after the first access s
 
 A regionserver handles write operations in the following manner: the write operation is appended to a commit log on HDFS (which is triple replicated by default), after which the write operation is added to an in-memory cache. When this in-memory cache of the regionserver becomes full, its content is flushed to the file system. 
 
-Because the commit log is stored on HDFS, it remains available through a regionserver crash. When the master notices that a regionserver is no longer reachable, it retrieves the commit log and splits the changes across regions. Each regionserver gets a portion of the commit log and replays the edits to bring the file system to its prefailure, consistent state. 
+Because the commit log is stored on HDFS, it remains available through a regionserver crash. When the primary notices that a regionserver is no longer reachable, it retrieves the commit log and splits the changes across regions. Each regionserver gets a portion of the commit log and replays the edits to bring the file system to its prefailure, consistent state. 
 
 #### Read operations
 

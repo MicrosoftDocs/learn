@@ -1,7 +1,7 @@
 - The Hadoop Distributed File System (HDFS) is an open-source clone of Google File System (GFS).
 - HDFS is designed to run on a cluster of nodes and supports the MapReduce programming model by providing a distributed file system (DFS) for the model's I/O<!-- input and output --> data.
 - HDFS has a common, cluster-wide namespace; is able to store large files; is optimized for write-once, read-many access; and is designed to provide high availability in the presence of node failures. 
-- HDFS follows a master-slave topology; the NameNode handles the metadata, and the data is stored on the DataNodes.
+- HDFS follows a primary-secondary topology; the NameNode handles the metadata, and the data is stored on the DataNodes.
 - Files in HDFS are split into blocks (also called _chunks_), with a default size of 128MB.
 - Blocks are replicated by default three times (<!-- also -->called _replication factor_) over the entire cluster.
 - HDFS assumes a tree-style cluster topology, <!-- and -->optimizes file access to improve performance, and attempts to place block replicas across racks. 
