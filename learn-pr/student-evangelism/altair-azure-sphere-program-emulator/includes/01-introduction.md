@@ -13,7 +13,7 @@ When you start the Altair emulator, it boots up Altair BASIC ready for your firs
 
 ## Saving files
 
-Files can only be saved from CP/M on the Altair emulator and you must have the virtual disk server running. From CP/M you can start **MBASIC (Microsoft Basic)**, and write and save apps to the virtual B: drive. For **C** and **Assembler** applications you can edit with the WordStar text editor and save files to the virtual B: drive.
+Files can only be saved from CP/M on the Altair emulator. You must have the virtual disk server running or an Avnet Azure Sphere Rev 2 with the MikroE microSD Click. From CP/M you can start **MBASIC (Microsoft Basic)**, and write and save apps to the virtual B: drive. For **C** and **Assembler** applications you can edit with the WordStar text editor and save files to the virtual B: drive.
 
 In this module, you will:
 
