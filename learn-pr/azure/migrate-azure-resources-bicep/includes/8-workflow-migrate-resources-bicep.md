@@ -1,4 +1,4 @@
-In this module, you've learned about the five phases of the recommended workflow for migrating your Azre resources to Bicep. The five phases are: convert, migrate, refactor, test, and deploy. For quick reference, here is a summary of the process.
+In this module, you've learned about the five phases of the recommended workflow for migrating your Azure resources to Bicep. The five phases are: convert, migrate, refactor, test, and deploy. For quick reference, here is a summary of the process.
 
 :::image type="content" source="../media/8-migrate-bicep-numbers.png" alt-text="Diagram of the recommended workflow for migrating Azure resources to Bicep." border="false":::
 
