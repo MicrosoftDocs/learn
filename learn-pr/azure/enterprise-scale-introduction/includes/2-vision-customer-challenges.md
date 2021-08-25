@@ -16,7 +16,7 @@ To build a sustainable cloud platform on Azure, an organization should establish
   - Align architecture with the Azure product lifecycle and roadmap.
   - Design management and governance for scale.
 
-- **Cloud operating model**: To support the platform architecture, ensure that a cross-functional capability combining engineering and operations is in place. Cloud operation teams should have the required skillsets, understand best practices, and have a consistent toolset for day-to-day operations.
+- **Cloud operating model**: To support the platform architecture, ensure that a cross-functional capability that combines engineering and operations is in place. Cloud operation teams should have the required skillsets, understand best practices, and have a consistent toolset for day-to-day operations.
 
 - **Democratization**: Ensure that subscriptions, aligned with the platform architecture, are unblocked and provided to business units for the design, development, and testing that are needed to migrate workloads.
 
