@@ -1,7 +1,4 @@
-- **Problem**: Classifying images manually is time consuming and difficult to scale. Training an effective machine learning model to classify images is a complex task that requires considerable expertise in data science and machine learning.
-- **Solution**: You can use the Custom Vision service to train image classification models and deploy as AI solutions in applications.
-- **Advantages**: The Custom Vision service simplifies the process for creating custom image classification models. You can use the service with minimal knowledge of deep learning techniques. 
-- **Impact**: You can automate and accelerate processes especially as projects scale in size. 
+The Custom Vision service simplifies the process for creating custom image classification models and deploying AI solutions. You can use the service to automate processes with minimal knowledge of deep learning techniques. 
 
 You can find out more about the Custom Vision service in the [service documentation](/azure/cognitive-services/custom-vision-service).
 

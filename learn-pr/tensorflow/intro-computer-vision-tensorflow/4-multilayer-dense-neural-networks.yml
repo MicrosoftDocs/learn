@@ -1,0 +1,43 @@
+### YamlMime:ModuleUnit
+uid: learn.tensorflow.intro-computer-vision.multilayer-dense-neural-networks
+title: Multi-layer networks
+metadata:
+  title: Multi-layer networks
+  description: Learn how multi-layer neural networks can be constructed to improve model accuracy
+  ms.date: 07/07/2021
+  author: shwars
+  ms.author: dmitryso
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+sandbox: true
+notebook: notebooks/4-multilayer-dense-neural-networks.ipynb
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following is true when the model overfits during training?"
+    choices:
+    - content: "Training and validation accuracy start to decrease"
+      isCorrect: false
+      explanation: "Not correct"
+    - content: "Validation accuracy increases, training accuracy stops to increase"
+      isCorrect: false
+      explanation: "Not correct"
+    - content: "Training accuracy continues to increase, validation accuracy starts decreasing"
+      isCorrect: true
+      explanation: "This is correct"
+    - content: "Validation accuracy becomes significantly smaller than training accuracy"
+      isCorrect: false
+      explanation: "This is not an indication of overfitting"
+  - content: "We have defined two-layer model, and it does not show any benefits comparing to one-layer model. What could be the problem?"
+    choices:
+    - content: "The size of the hidden layer is larger than the size of the output layer"
+      isCorrect: false
+      explanation: "This is quite normal case, and we can expect higher accuracy than one-layer model"
+    - content: "The size of the hidden layer is the same as the size of the output layer"
+      isCorrect: false
+      explanation: "Even in this case we can expect higher accuracy than one-layer model"
+    - content: "We have forgotten to specify activation function between layers"
+      isCorrect: true
+      explanation: "When we do not specify non-linear activation, two layers are equivalent to one layer"
+

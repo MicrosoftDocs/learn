@@ -346,4 +346,3 @@ To understand the impact Identity Protection risk-based policies have on your or
 GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers?$filter=riskDetail eq 'userPassedMFADrivenByRiskBasedPolicy'
 
 ```
-

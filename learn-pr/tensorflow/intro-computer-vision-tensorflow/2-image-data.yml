@@ -1,0 +1,31 @@
+### YamlMime:ModuleUnit
+uid: learn.tensorflow.intro-computer-vision.image-data
+title: Introduction to image data
+metadata:
+  title: Introduction to image data
+  description: Learn how image data can be represented as tensors for neural network training
+  ms.date: 07/07/2021
+  author: shwars
+  ms.author: dmitryso
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+sandbox: true
+notebook: notebooks/2-image-data.ipynb
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "When training image classification task on color images of size 32x32 pixels, what would be the dimension of input tensor?"
+    choices:
+    - content: "32x32 tensor of floats in the range 0..1"
+      isCorrect: false
+      explanation: "Do not forget to take into account that the image has color"
+    - content: "32x32x3 tensor of floats in the range 0..1"
+      isCorrect: true
+      explanation: "Correct. We have 3 color channels, and each channel is normalized to the range of 0..1"
+    - content: "32x32x3 tensor of integers in the range 0..255"
+      isCorrect: false
+      explanation: "Neural networks are trained with float numbers, and they should be normalized in the range 0..1"
+    - content: "32x32x3 tensor of floats in the range 0..255"
+      isCorrect: false
+      explanation: "All values should be normalized in the range 0..1"

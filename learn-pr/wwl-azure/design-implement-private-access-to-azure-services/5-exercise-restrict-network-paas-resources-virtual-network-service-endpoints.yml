@@ -4,7 +4,7 @@ title: 'Exercise: Restrict network access to PaaS resources with virtual network
 metadata:
   title: 'Exercise: Restrict network access to PaaS resources with virtual network service endpoints using the Azure portal'
   description: "Exercise: Restrict network access to PaaS resources with virtual network service endpoints using the Azure portal"
-  ms.date: 08/03/2021
+  ms.date: 08/20/2021
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial

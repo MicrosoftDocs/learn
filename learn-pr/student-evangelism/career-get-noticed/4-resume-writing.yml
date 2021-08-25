@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.career-get-noticed.4-resume-writing
+title: Writing your resume
+metadata:
+  title: Writing your resume
+  ms.date: 08/19/2021
+  description: This unit describes the various elements of your resume and how its
+    presentation can make a recruiter take an extra interest in your resume.
+  author: gcordido
+  ms.author: gcordido
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-resume-writing.md)]
