@@ -161,14 +161,14 @@ To configure the new Azure Policy, use the Policy service in the Azure portal.
     | Setting | Value |
     | --- | --- |
     | **Scope** |
-    | Scope | Select the ellipsis button. The **Scopr** pane appears. Under **subscription**, select the subscription that holds your resource group. For **Resource Group**, select **akscostsavinggrp**, and then select **Select**. |
+    | Scope | Select the ellipsis button. The **Scope** pane appears. Under **subscription**, select the subscription that holds your resource group. For **Resource Group**, select **akscostsavinggrp**, and then select **Select**. |
     | Exclusions | Leave empty. |
     | **Basics** |
     | Policy definition | Select the ellipsis button. The **Available Definitions** pane appears. In the **Search** box, filter the selection by entering *CPU*. On the **Policy Definitions** tab, select the **Kubernetes cluster containers CPU and memory resource limits should not exceed the specified limits**. and then select **Select**. |
     | Assignment name | Accept default. |
     | Description | Leave empty. |
     | Policy enforcement | Make sure this option is set to **Enabled**. |
-    | Assigned by | Accpet default. |
+    | Assigned by | Accept default. |
 
     Here's an example of the completed **Basics** tab:
 
