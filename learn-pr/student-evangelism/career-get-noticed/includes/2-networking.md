@@ -1,4 +1,4 @@
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NAu8]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NIMy]
 
 Networking is one of the most important factors in starting your career, yet it is often overlooked, particularly as you are starting your career. Networking encompasses an array of elements that can be helpful in advancing your career. These elements not only provide opportunities for you to grow and learn, but also increase your skills in communication and teamwork.  
 
@@ -18,6 +18,8 @@ There are many types of networking that all provide both personal and career gro
 Not at all! Connecting with others via online interactions is also a form of networking. Asking or answering questions on forums and collaborating in websites such as GitHub or in other types of open-source projects provide the same opportunities of learning and professional growth as any in-person situations. Another great site where you can connect with people is LinkedIn. LinkedIn is a great online platform to build your professional network, thoughtfully engage with your peers, and learn new skills.
 
 ## How can I get started in networking?
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NAu8]
 
 There are multiple ways to get started with networking. Here are some ideas to get started.
 
