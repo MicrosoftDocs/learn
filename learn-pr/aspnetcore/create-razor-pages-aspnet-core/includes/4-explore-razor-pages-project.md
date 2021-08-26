@@ -39,14 +39,12 @@ The .NET Core CLI:
           Content root path: /home/<user>/aspnet-learn/src/ContosoPets.Ui
     ```
 
-1. Press <kbd>Ctrl+C</kbd> to stop the app.
-
 If running this app on your own machine, you could direct a browser to `https://localhost:5001` to view the resulting page.
 
 
 ## Tour the app
 
-1. Open the app in your browser by selecting the URL provided in the "**You can launch the app at...**" text.
+1. Open the app in your browser by browsing to https://localhost:5001.
 
 1. Select the **:::no-loc text="Products Admin":::** link near the top of the page.
 
