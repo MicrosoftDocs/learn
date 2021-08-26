@@ -36,15 +36,15 @@ There are two primary interfaces for monitoring and managing an Azure Arc-enable
 ### Tools and Utilities
 In general, you can use graphical tools for discovery and exploration, and command-line tools for standardization and automation. These tools include:
 
-- The PostgreSQL *pgcli* utility
-- The PostgreSQL *psql* utility
-- The PostgreSQL *pgAdmin* tool
-- The Azure Portal interface
-- Azure Data Studio
-- The Microsoft Azure *az* command utility
-- Kubernetes native tools
-- Azure Arc-enabled PostgreSQL Hyperscale interfaces
-- Standard API calls to documented Microsoft Azure and Microsoft Azure Arc-enabled PostgreSQL
+- [The PostgreSQL *pgcli* utility](https://www.pgcli.com/)
+- [The PostgreSQL *psql* utility](https://www.postgresql.org/docs/9.2/app-psql.html)
+- [The PostgreSQL *pgAdmin* tool](https://www.pgadmin.org/)
+- [The Azure Portal interface](https://azure.microsoft.com/en-us/features/azure-portal/)
+- [Azure Data Studio](https://azure.microsoft.com/en-us/services/developer-tools/data-studio/#overview)
+- [The Microsoft Azure *az* command utility](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest)
+- [Kubernetes native tools](https://kubernetes.io/docs/concepts/cluster-administration/)
+- [Azure Arc-enabled PostgreSQL Hyperscale interfaces](https://docs.microsoft.com/en-us/azure/azure-arc/data/using-extensions-in-postgresql-hyperscale-server-group)
+- [Standard API calls to documented Microsoft Azure and Microsoft Azure Arc-enabled PostgreSQL](https://docs.microsoft.com/en-us/azure/azure-arc/data/connectivity)
 
 ### Deployment Model
 Your deployment for your Azure Arc-enabled PostgreSQL environment is based on the management you need. You can use your own infrastructure for more control over security, hardware, and backups. Using an Azure infrastructure gives you more automated patching, higher availability and disaster recover, and a complete Service Level Agreement. 

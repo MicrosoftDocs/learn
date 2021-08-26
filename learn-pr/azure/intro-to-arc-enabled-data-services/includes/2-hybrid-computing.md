@@ -11,20 +11,21 @@ Governance is the process of monitoring and controlling information technology t
 Another important factor in the governance of a hybrid computing system is ensuring security and compliance. Hybrid computing systems need pro-active monitoring, reporting, and a process for correcting issues. There are also regulatory statutes required by government and industry. This level of security and compliance requires "zones" for the storage processing of sensitive data. Hybrid computing systems also need a consistent and cohesive auditing mechanism to ensure compliance. 
 
 ### Management
-Management for hybrid computing environment need to be as consistent and comprehensive as possible, using both scripted and exploratory (graphical interface) tools.  These tools must work on all components in the system and completely cover the DevOps cycle. 
-Hybrid computing systems may not always be connected. The management and control of the system must allow for both direct (connected) and indirect (periodically connected) aspects, without materally affecting the operation of the tools. 
+Management for a hybrid computing environment needs to be as consistent and comprehensive as possible, using both scripted and exploratory (graphical interface) tools.  These tools must work on all components in the system and completely cover the DevOps cycle. 
+Hybrid computing systems may not always be connected. The management and control of the system must allow for both direct (connected) and indirect (periodically connected) aspects, without materially affecting the operation of the tools. 
 
 ## Microsoft Azure Arc and Hybrid Computing Systems
 Microsoft provides several environments for working with hybrid computing environments, such as:
- - Azure hybrid cloud solutions
- - Azure hybrid benefit
- - Azure Defender
- - Azure VMware solution
- - Azure Stack
- - Azure Sentinel
- - Azure VPN Gateway
- - Azure ExpressRoute
- - Azure Arc
+
+ - [Azure hybrid cloud solutions](https://azure.microsoft.com/en-us/solutions/hybrid-cloud-app/#overview)
+ - [Azure hybrid benefit](https://docs.microsoft.com/en-us/azure/azure-sql/azure-hybrid-benefit?tabs=azure-powershell)
+ - [Azure Defender](https://docs.microsoft.com/en-us/azure/security-center/azure-defender)
+ - [Azure VMware solution](https://azure.microsoft.com/en-us/services/azure-vmware/#product-overview)
+ - [Azure Stack](https://azure.microsoft.com/en-us/overview/azure-stack/)
+ - [Azure Sentinel](https://docs.microsoft.com/en-us/azure/sentinel/overview)
+ - [Azure VPN Gateway](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways)
+ - [Azure ExpressRoute](https://azure.microsoft.com/en-us/services/expressroute/#overview)
+ - [Azure Arc](https://azure.microsoft.com/en-us/services/azure-arc/#product-overview)
 
 Microsoft Azure Arc meets the requirements for a Hybrid computing environment. It provides tools for deployment, monitoring, and management of your infrastructure. Microsoft Azure Arc also gives you deployment options for Microsoft Windows, Linux, and Kubernetes clusters. Microsoft Azure Arc allows you to combine on-premises and multi-cloud services.
 
@@ -38,5 +39,5 @@ Using Azure Arc, organizations can connect Kubernetes clusters located anywhere 
 SQL Server on Azure Arc-enabled servers extends Azure services to existing SQL Server instances hosted outside of Azure in the customer’s datacenter, on the edge, or in a multi-cloud environment.
 
 ### Azure Arc-enabled data services
-Azure Arc-enabled data services makes it possible to run Azure data services such as Azure Arc-enabled-SQL Managed Instance and PostgreSQL Hyperscale. You can run these systems on-premises, at the edge, in Azure and in other public clouds. 
+Azure Arc-enabled data services makes it possible to run Azure data services such as Azure Arc-enabled-SQL Managed Instance and Azure Arc enabled PostgreSQL Hyperscale. You can run these systems on-premises, at the edge, in Azure and in other public clouds. 
 Using Kubernetes allows you to use the infrastructure of your choice. You get an always-current, elastically scaled, self-provisioning deployment. You also get a unified command-line and graphical management and monitoring system. Azure Arc-enabled data services has both direct and indirect connected modes. Azure Arc-enabled data services also provides deep security and compliance monitoring.
