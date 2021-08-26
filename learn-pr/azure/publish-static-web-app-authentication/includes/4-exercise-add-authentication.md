@@ -233,7 +233,7 @@ First, you need to access the user login status by making a query to `/.auth/me`
      }
 
      return (
-   // ...
+     // ...
    ```
 
 ::: zone-end
@@ -681,7 +681,7 @@ Edit the file `svelte-app/src/components/NavBar.svelte`, and add this code to th
 
 Your completed file should now look like the following:
 
-```html
+```javascript
 <script>
   import { onMount } from 'svelte';
   import { Link } from 'svelte-routing';
@@ -769,7 +769,7 @@ Edit the file `vue-app/src/components/nav-bar.vue`, and add this code to the bot
 
 Your completed file should now look like the following:
 
-```html
+```javascript
 <script>
   export default {
     name: 'NavBar',
@@ -801,6 +801,7 @@ Your completed file should now look like the following:
     },
   };
 </script>
+
 <template>
   <div column is-2>
     <nav class="menu">
