@@ -1,4 +1,4 @@
-In this unit, you'll learn how to create a cloud-based Azure IoT Central application for the Altair 8800 emulator. From IoT Central application, you can set Altair parameters, review diagnostic information, and chart memory usage and weather data.
+In this unit, you'll learn how to create a cloud-based Azure IoT Central application for the Altair 8800 emulator. From IoT Central application, you can set Altair parameters, review diagnostic information, chart memory usage, and environment data.
 
 ## Steps to follow
 
