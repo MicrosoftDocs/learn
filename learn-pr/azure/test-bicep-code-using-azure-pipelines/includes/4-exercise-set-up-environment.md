@@ -41,6 +41,8 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 ## Generate a Git password (macOS)
 
+<!-- TODO can we simplify this section? Maybe fold into the 'If you're using macOS' thing below? -->
+
 When you work with Azure Repos in Visual Studio Code on macOS, you use a special password that's different from the password you use to sign in.
 
 > [!NOTE]
@@ -71,16 +73,6 @@ In Visual Studio Code, clone your repository.
 1. Visual Studio Code prompts you to open the repository. Select **Open**.
 
     :::image type="content" source="../../build-first-bicep-deployment-pipeline-using-azure-pipelines/media/3-open-cloned-repo.png" alt-text="Screenshot of Visual Studio Code that shows a prompt to open the cloned repository, with the Open button highlighted.":::
-
-## Install the Azure Pipelines extension
-
-Microsoft publishes an Azure Pipelines extension for Visual Studio Code. The extension can help you write pipeline YAML files. It's a good idea to install this extension, so your YAML files are validated as you work.
-
-1. In Visual Studio Code, select **View** > **Extensions**.
-
-1. In **Search**, enter **Azure Pipelines**, and then find the Azure Pipelines extension published by Microsoft. Select **Install**.
-
-    :::image type="content" source="../../build-first-bicep-deployment-pipeline-using-azure-pipelines/media/3-visual-studio-code-extension.png" alt-text="Screenshot of the Visual Studio Code Extensions, with the search field displaying 'Azure Pipelines' and the Install button for the Microsoft Azure Pipelines extension highlighted.":::
 
 ## Sign in to Azure
 
