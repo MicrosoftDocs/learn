@@ -64,6 +64,8 @@ Let's browse to our application to see it live. The last line of text output fro
 
 Once it loads, you'll see the greeting message from your app &mdash; you've deployed successfully!
 
+ :::image type="content" source="../media/7-webapp-in-browser.pg" alt-text="Screenshot of welcome page.":::
+
 ::: zone-end
 
 ::: zone pivot="java"
@@ -127,3 +129,5 @@ Let's browse to our application to see it live. The last line of text output fro
 Once it loads, you'll see the greeting message from your app &mdash; you've deployed successfully!
 
 ::: zone-end
+
+
