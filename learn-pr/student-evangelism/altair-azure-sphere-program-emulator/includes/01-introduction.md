@@ -32,5 +32,6 @@ In this module, you will:
   * An Avnet Azure Sphere Starter Kit Rev 1 or 2.
   * Or, a Seeed Studio Azure Sphere MT3620 Development Kit.
 * A GitHub account.
+* An Azure Account. Sign up for a free [Student Azure account](https://azure.microsoft.com/free/students?azure-portal=true), or free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
 
 In the next unit, you'll learn how to program the Altair emulator using Altair BASIC.

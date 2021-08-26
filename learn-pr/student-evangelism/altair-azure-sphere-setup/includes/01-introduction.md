@@ -1,24 +1,24 @@
 In this module, you're going to learn about the supported Altair 8800 emulator hardware configurations and how to set up the Azure Sphere development environment.
 
-If you're new to Azure Sphere and IoT Central, then it’s recommended you complete the [Develop secure IoT solutions for Azure Sphere, Azure RTOS, and Azure IoT Central](/learn/modules/develop-secure-iot-solutions-azure-sphere-iot-central/) Microsoft Learn module.
+If you're new to Azure Sphere and IoT Central, then it’s recommended you complete the [Develop secure IoT solutions for Azure Sphere, Azure RTOS, and Azure IoT Central](/learn/modules/develop-secure-iot-solutions-azure-sphere-iot-central?azure-portal=true) Microsoft Learn module.
 
 ## Hardware requirements
 
-There are three supported configurations for the Altair project on the Azure Sphere.
+There are five supported configurations for the Altair project on the Azure Sphere.
 
 ## Standalone Azure Sphere
 
 Either an Avnet or Seeed Studio Azure Sphere.
 
-| Seeed Studio Azure Sphere Developer Kit     | Avnet Azure Sphere Starter Kit Rev 1     |
+| Seeed Studio Azure Sphere Developer Kit     | Avnet Azure Sphere Starter Kit Rev 1 or Rev 2    |
 |----------------|---------------|
 | ![Seeed Studio Azure Sphere](../media/seeed-studio-azure-sphere-rdb.png) | ![Avnet Azure Sphere](../media/avnet-azure-sphere.png) |
 
 ### Avnet Azure Sphere plus MikroE 4x4 key and 8x8 LED Clicks
 
-An Avnet Azure Sphere Starter Kit Rev 1 with the MikroE 4x4 key click and 8x8 R Click LED matrix display.
+An Avnet Azure Sphere Starter Kit **Rev 1** with the MikroE 4x4 key click and 8x8 R Click LED matrix display.
 
-> IMPORTANT: This Click board configuration is only compatible with the Avnet Azure Sphere V1 board. The Click board solution for Avnet Azure Sphere Starter Kits Rev 1 and Rev 2 will be available shortly.
+> IMPORTANT: This Click board configuration is only compatible with the Avnet Azure Sphere Rev 1 board. The Click board solution for Avnet Azure Sphere Starter Kits Rev 1 and Rev 2 will be available shortly.
 
 ![Avnet Azure Sphere with MikroE Click panel.](../media/altair-8800-with-4x4-8x8-clicks.png)
 
@@ -36,7 +36,7 @@ An Avnet Azure Sphere Starter Kit **Rev 2** with the MikroE Altair 8800 Retro Cl
 
 ### Altair front panel
 
-The Seeed Studio or Avnet with the Altair Front Panel. See the Front Panel wiring section in the table below.
+The Seeed Studio or Avnet with the Altair Front Panel. See the front panel wiring section in the table below.
 
 ![Avnet Azure Sphere with the Altair front panel.](../media/avnet-with-front-panel.png)
 
@@ -100,5 +100,6 @@ In this module, you will:
   * An Avnet Azure Sphere Starter Kit Rev 1 or 2.
   * Or, a Seeed Studio Azure Sphere MT3620 Development Kit.
 * A GitHub account.
+* An Azure Account. Sign up for a free [Student Azure account](https://azure.microsoft.com/free/students?azure-portal=true), or free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
 
 In the next unit, you'll learn how to install the required software and deploy the Altair 8800 emulator to your Azure Sphere.

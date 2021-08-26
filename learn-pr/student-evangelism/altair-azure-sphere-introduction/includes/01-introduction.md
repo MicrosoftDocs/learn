@@ -1,13 +1,13 @@
-Welcome to the *Learn computing fundamentals with Altair 8800 emulator & Azure Sphere* learning path.
+Welcome to the "Learn Computing fundamentals with Altair 8800 emulator & Azure Sphere" learning path.
 
 ## Introduction to the Altair 8800
 
-The Altair 8800 is considered to be the computer that kick-started the Personal Computer revolution. You can learn more about the Altair at https://en.wikipedia.org/wiki/Altair_8800.
+The Altair 8800 is considered to be the computer that kick-started the Personal Computer revolution. You can learn more about the Altair at https://en.wikipedia.org/wiki/Altair_8800?azure-portal=true.
 
 ![Diagram that shows the Altair 8800.](../media/altair-8800-smithsonian-museum.png)
 [Altair 8800 image attribution - Smithsonian Museum](https://commons.wikimedia.org/wiki/File:Altair_8800,_Smithsonian_Museum.jpg)
 
-The Altair 8800 was built on the [Intel 8080](https://en.wikipedia.org/wiki/Intel_8080) CPU, the second 8-bit microprocessor manufactured by Intel in 1974. By today's standards, it's a simple CPU design, perfect for learning computing fundamentals due to its small instruction set.
+The Altair 8800 was built on the [Intel 8080](https://en.wikipedia.org/wiki/Intel_8080?azure-portal=true) CPU, the second 8-bit microprocessor manufactured by Intel in 1974. By today's standards, it's a simple CPU design, perfect for learning computing fundamentals due to its small instruction set.
 
 This learning path brings together the Open Source Altair 8800 emulator and Azure Sphere. You will learn about:
 
@@ -29,13 +29,13 @@ Azure Sphere consists of the following components:
 - **Azure Sphere OS** adds layers of protection and ongoing security updates to create a trustworthy platform for new IoT experiences.
 - **Azure Sphere Security Service** brokers trust for device-to-cloud communication, detects threats, and renews device security.
 
-Together these components implement [The Seven Properties of Highly Secure Devices](https://www.microsoft.com/research/publication/seven-properties-highly-secure-devices).
+Together these components implement [The Seven Properties of Highly Secure Devices](https://www.microsoft.com/research/publication/seven-properties-highly-secure-devices?azure-portal=true).
 
 ![Azure Sphere end-to-end.](../media/azure-sphere-end-to-end.png)
 
 ## Introduction to the cloud-connected Altair emulator on Azure Sphere
 
-The core of the system is the Open Source Intel 8080 CPU emulator that runs compiled Intel 8080 binaries. Layered on the emulator is Altair BASIC and the CP/M operating system. On CP/M, three languages are available: BASIC, and C, and Assembly.
+The core of the system is the Open Source Intel 8080 CPU emulator that runs compiled Intel 8080 binaries. Layered on the emulator is Altair BASIC and the CP/M operating system. On CP/M, three languages are available: BASIC, C, and Assembly.
 
 - The solution integrates several Azure cloud services including:
   - Azure IoT Central to configure the Altair emulator and reporting.
