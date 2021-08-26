@@ -24,7 +24,7 @@ The Static Web Apps CLI, also known as SWA CLI, is a local development tool that
 
 ## Run the app locally
 
-We'll now run the app and API locally with a development server. This way, you'll be able to see and test your changes, as your make them in the code.
+Now run the app and API locally with a development server. This way, you'll be able to see and test your changes, as your make them in the code.
 
 1. Open the project in Visual Studio Code.
 
@@ -100,7 +100,7 @@ cd vue-app
 
    ::: zone-end
 
-   Leave this server running in the background. We'll now run the API and authentication server emulator using the SWA CLI.
+   Leave this server running in the background. Now run the API and authentication server emulator using the SWA CLI.
 
 6. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>.
 
@@ -150,11 +150,11 @@ The final port used by the SWA CLI is different than the one you've seen before,
 
 :::image type="content" source="../media/static-web-apps-cli-architecture.png" alt-text="Static Web Apps CLI architecture.":::
 
-Let the application remain running while we modify the code.
+Let the application remain running while you modify the code.
 
 ## Get the user login status
 
-First, we need to access the user login status by making a query to `/.auth/me` in the client.
+First, you need to access the user login status by making a query to `/.auth/me` in the client.
 
 ::: zone pivot="angular"
 
@@ -312,7 +312,7 @@ First, we need to access the user login status by making a query to `/.auth/me` 
 
 ## Add login and logout buttons
 
-The user information will be `undefined` if we're not logged in, so our changes won't be visible for now. It's time to add login buttons for the different providers.
+The user information will be `undefined` if they're not logged in, so the changes won't be visible for now. It's time to add login buttons for the different providers.
 
 ::: zone pivot="angular"
 
@@ -346,9 +346,9 @@ The user information will be `undefined` if we're not logged in, so our changes 
    </nav>
    ```
 
-   If the user isn't logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>`, and sets the redirection URL to the current page.
+   If the user isn't logged in, you display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>`, and sets the redirection URL to the current page.
 
-   Otherwise, if the user is already logged in, we display a logout button that links to `/.auth/logout`, and also sets the redirection URL to the current page.
+   Otherwise, if the user is already logged in, a logout button displays that links to `/.auth/logout`, and also sets the redirection URL to the current page.
 
 You should now see this webpage in your browser.
 
@@ -395,9 +395,9 @@ You should now see this webpage in your browser.
    </div>
    ```
 
-   If the user isn't logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>`, and sets the redirection URL to the current page.
+   If the user isn't logged in, you display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>`, and sets the redirection URL to the current page.
 
-   Otherwise, if the user is already logged in, we display a logout button that links to `/.auth/logout`, and also sets the redirection URL to the current page.
+   Otherwise, if the user is already logged in, you display a logout button that links to `/.auth/logout`, and also sets the redirection URL to the current page.
 
 You should now see this webpage in your browser.
 
@@ -446,9 +446,9 @@ You should now see this webpage in your browser.
    </div>
    ```
 
-   If the user isn't logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>`, and sets the redirection URL to the current page.
+   If the user isn't logged in, you display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>`, and sets the redirection URL to the current page.
 
-   Otherwise, if the user is already logged in, we display a logout button that links to `/.auth/logout`, and also sets the redirection URL to the current page.
+   Otherwise, if the user is already logged in, you display a logout button that links to `/.auth/logout`, and also sets the redirection URL to the current page.
 
 You should now see this webpage in your browser.
 
@@ -508,9 +508,9 @@ You should now see this webpage in your browser.
    </template>
    ```
 
-   If the user isn't logged in, we display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>`, and sets the redirection URL to the current page.
+   If the user isn't logged in, you display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>`, and sets the redirection URL to the current page.
 
-   Otherwise, if the user is already logged in, we display a logout button that links to `/.auth/logout`, and also sets the redirection URL to the current page.
+   Otherwise, if the user is already logged in, you display a logout button that links to `/.auth/logout`, and also sets the redirection URL to the current page.
 
 You should now see this webpage in your browser.
 
@@ -520,7 +520,7 @@ You should now see this webpage in your browser.
 
 ## Display the user login status
 
-Before testing our authentication workflow, let's display the user details about the logged-in user.
+Before testing the authentication workflow, let's display the user details about the logged-in user.
 
 ::: zone pivot="angular"
 
