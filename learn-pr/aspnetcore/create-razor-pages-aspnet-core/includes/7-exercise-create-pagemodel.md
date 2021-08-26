@@ -106,17 +106,17 @@ The *Pizza* page has been created and implemented. Let's allow users to navigate
 
 1. In *Pages/Shared/_Layout_.cshtml*, add the following code to the `<nav>` section between the `Home` and `Privacy` links:
 
-  ```razor
-  <li class="nav-item">
-      <a class="nav-link text-dark" asp-area="" asp-page="/Pizza">Pizza List</a>
-  </li>
-  ```
+```razor
+<li class="nav-item">
+    <a class="nav-link text-dark" asp-area="" asp-page="/Pizza">Pizza List</a>
+</li>
+```
 
-  The result will appear as follows:
+The result will appear as follows:
 
-     [!code-cshtml[](../code/layout.cs?highlight=25)]
+   [!code-cshtml[](../code/layout.cs?highlight=25)]
 
-1. Save your changes.
+2. Save your changes.
 
 The preceding highlighted code uses an Anchor Tag Helper. The Tag Helper:
 
