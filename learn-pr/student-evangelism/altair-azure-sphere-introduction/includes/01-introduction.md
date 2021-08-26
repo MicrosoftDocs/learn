@@ -2,7 +2,7 @@ Welcome to the "Learn Computing fundamentals with Altair 8800 emulator & Azure S
 
 ## Introduction to the Altair 8800
 
-The Altair 8800 is considered to be the computer that kick-started the Personal Computer revolution. You can learn more about the Altair at https://en.wikipedia.org/wiki/Altair_8800?azure-portal=true.
+The Altair 8800 is considered to be the computer that kick-started the Personal Computer revolution. You can learn more about the Altair from the [Altair 8800 Wikipedia page](https://en.wikipedia.org/wiki/Altair_8800?azure-portal=true).
 
 ![Diagram that shows the Altair 8800.](../media/altair-8800-smithsonian-museum.png)
 [Altair 8800 image attribution - Smithsonian Museum](https://commons.wikimedia.org/wiki/File:Altair_8800,_Smithsonian_Museum.jpg)
