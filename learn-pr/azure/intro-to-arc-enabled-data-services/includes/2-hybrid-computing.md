@@ -17,15 +17,15 @@ Hybrid computing systems may not always be connected. The management and control
 ## Microsoft Azure Arc and Hybrid Computing Systems
 Microsoft provides several environments for working with hybrid computing environments, such as:
 
- - [Azure hybrid cloud solutions](https://azure.microsoft.com/en-us/solutions/hybrid-cloud-app/#overview)
- - [Azure hybrid benefit](https://docs.microsoft.com/en-us/azure/azure-sql/azure-hybrid-benefit?tabs=azure-powershell)
- - [Azure Defender](https://docs.microsoft.com/en-us/azure/security-center/azure-defender)
- - [Azure VMware solution](https://azure.microsoft.com/en-us/services/azure-vmware/#product-overview)
- - [Azure Stack](https://azure.microsoft.com/en-us/overview/azure-stack/)
- - [Azure Sentinel](https://docs.microsoft.com/en-us/azure/sentinel/overview)
- - [Azure VPN Gateway](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways)
- - [Azure ExpressRoute](https://azure.microsoft.com/en-us/services/expressroute/#overview)
- - [Azure Arc](https://azure.microsoft.com/en-us/services/azure-arc/#product-overview)
+ - [Azure hybrid cloud solutions](https://azure.microsoft.com/solutions/hybrid-cloud-app/#overview)
+ - [Azure hybrid benefit](https://docs.microsoft.com/azure/azure-sql/azure-hybrid-benefit?tabs=azure-powershell)
+ - [Azure Defender](https://docs.microsoft.com/azure/security-center/azure-defender)
+ - [Azure VMware solution](https://azure.microsoft.com/services/azure-vmware/#product-overview)
+ - [Azure Stack](https://azure.microsoft.com/overview/azure-stack/)
+ - [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview)
+ - [Azure VPN Gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)
+ - [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/#overview)
+ - [Azure Arc](https://azure.microsoft.com/services/azure-arc/#product-overview)
 
 Microsoft Azure Arc meets the requirements for a Hybrid computing environment. It provides tools for deployment, monitoring, and management of your infrastructure. Microsoft Azure Arc also gives you deployment options for Microsoft Windows, Linux, and Kubernetes clusters. Microsoft Azure Arc allows you to combine on-premises and multi-cloud services.
 
