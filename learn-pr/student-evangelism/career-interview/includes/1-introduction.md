@@ -1,19 +1,21 @@
-![Cartoon showing your first day in a new job](../media/interview.png)
+![Cartoon that shows examples of the first day in a new job.](../media/interview.png)
 
-Congratulations on landing the interview! What are your next steps? When it comes to interviews, it is helpful to understand the different phases of the process that, depending on your performance, can impact the outcome.
+You've landed an interview. Congratulations! What are your next steps? This module will help you understand the interview process and how your performance can affect the outcome. 
+
+This quick video is a good place to start:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4O7NF]
 
-An interview is usually the last step before being offered a job.
+An interview is usually the last step before you're offered a job. You're likely to go through a number of them with an organization. There are different types of interviews, with different expectations.
 
-You're likely to go through a number of them with an organization. Additionally, there are different types of interviews with different expectations.
+As a software developer, you'll encounter interviews that test not only your technical skills but also your ability to communicate clearly. Interviewers will also appraise your interpersonal skills.
 
-As a software developer, you will encounter interviews that not only test your technical skills but also your ability to clearly communicate. Your soft skills will also be appraised.
-
-Remember, the interview process goes both ways.  While the company is assessing you through the interview process, you should also use this time to evaluate the company culture and whether the company or team is the right place for you and your career goals.
+Remember, the interview process goes both ways. While the company is assessing you through the interview process, you should also use that time to evaluate whether the company or team is the right place for you and your career goals.
 
 ## Learning objectives
 
-- Describe the types of interviews you many encounter.
+After you finish this module, you'll be able to:
+
+- Describe the types of interviews you might encounter.
 - Prepare for your interviews by practicing.
 - Identify how and when to follow up after an interview.

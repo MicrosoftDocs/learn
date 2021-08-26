@@ -18,4 +18,8 @@ It's easy to think, as a beginner, that this is a question you can just answer b
 
 ## After the final interview
 
-One thing that candidates often forget about is following up after the interview. An elegant and nice thing to do is to send a "thank you" email to your recruiter and interviewers  right after the interview and thank them for the opportunity to speak to the company. You can use this as an opportunity to keep the conversation open in case they have more questions, and it also gives the prospective employer a chance to come back to you with updates on next steps. If you aren't selected for the role this time, they might come back to you in the future if new positions open up; everybody remembers a highly qualified candidate. Also if you don't receive an offer for the role, ask for feedback to improve your interview skills for future success.
+One thing that candidates often forget about is following up after the interview. An elegant and nice thing to do is to send a "thank you" email to your recruiter and interviewers  right after the interview and thank them for the opportunity to speak to the company. 
+
+You can use this as an opportunity to keep the conversation open in case they have more questions, and it also gives the prospective employer a chance to come back to you with updates on next steps. 
+
+If you aren't selected for the role this time, they might come back to you in the future if new positions open up; everybody remembers a highly qualified candidate. Also if you don't receive an offer for the role, ask for feedback to improve your interview skills for future success.

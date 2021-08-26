@@ -2,22 +2,22 @@
 uid: learn.career-interview
 metadata:
   title: Successful interviewing
-  description: In this module, you'll learn how to prepare for a technical and
-    non-technical interview. You will also get recommendations on how to best
-    carry out the interview.
+  description: In this module, you'll learn how to prepare for technical and
+    non-technical interviews. You'll also get recommendations on how to best
+    carry out an interview.
   ms.date: 08/19/2021
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Successful interviewing
-summary: In this module you'll learn how to prepare for a technical and
-  non-technical interview. You will also get recommendations on how to best
-  carry out the interview.
+summary: In this module, you'll learn how to prepare for a technical and
+  non-technical interviews. You'll also get recommendations on how to best
+  carry out an interview.
 abstract: |
-  - Understand what types of interviews exist
-  - How to practice for the interviews
-  - Tips on carrying out the interviews in the most efficient way
+  - Types of interviews
+  - How to practice for interviews
+  - Interview tips
   - Following up
 iconUrl: /learn/achievements/generic-badge.svg
 hidden: true
