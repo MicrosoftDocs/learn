@@ -62,7 +62,7 @@ From the Device menu bar, select **Edit template**.
 
      :::image type="content" source="../media/iot-central-template-properties.png" alt-text="The illustration shows setting properties.":::
 
-### Add an Environment data visualization view
+### Add an environment data visualization view
 
 1. Select **Views** and then select **Visualizing the device**.
 

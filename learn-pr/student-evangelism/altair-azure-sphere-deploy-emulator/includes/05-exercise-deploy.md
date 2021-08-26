@@ -33,7 +33,7 @@ In the following exercise, you'll config and deploy the Altair emulator to your 
       "Name": "AltairHL_emulator",
       "ComponentId": "ac8d863a-4424-11eb-b378-0242ac130002",
       "EntryPoint": "/bin/app",
-      "CmdArgs": [ "--ConnectionType", "DPS", "--ScopeID", "0ne0099999D" ],
+      "CmdArgs": [ "--ScopeID", "0ne0099999D" ],
       "Capabilities": {
         "MutableStorage": { "SizeKB": 8 },
         "Gpio": [
@@ -45,10 +45,14 @@ In the following exercise, you'll config and deploy the Altair emulator to your 
             "$LED_STORE",
             "$LED_OUTPUT_ENABLE",
             "$BUTTON_A",
-            "$BUTTON_B"
+            "$BUTTON_B",,
+            "$LED_RED",
+            "$LED_GREEN",
+            "$LED_BLUE"
         ],
         "Uart": [ "$MT3620_ISU3_UART" ],
         "SpiMaster": [ "$MT3620_ISU1_SPI" ],
+        "I2cMaster": [ "$ISU2" ],
         "PowerControls": [ "ForceReboot" ],
         "AllowedConnections": [
             "test.mosquitto.org",
@@ -78,8 +82,6 @@ In the following exercise, you'll config and deploy the Altair emulator to your 
     ```
 
 1. Save the updated app_manifest.json file.
-
-1. **IMPORTANT**. Copy the contents of your **app_manifest.json** file to Notepad or your text editor of choice, as you'll need this configuration information for the next labs.
 
 ## Step 3: Select your developer board configuration
 
