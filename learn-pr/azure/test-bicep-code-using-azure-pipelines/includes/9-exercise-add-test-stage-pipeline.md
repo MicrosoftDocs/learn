@@ -90,3 +90,27 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
 1. TODO approve
 
 1. TODO open test, observe success
+
+## Clean up the resources
+
+Now that you've completed the exercise, you can remove the resources so you aren't billed for them.
+
+In the Visual Studio Code **Terminal**, run the following command:
+
+::: zone pivot="cli"
+
+```azurecli
+az group delete --resource-group ToyWebsiteTest --yes --no-wait
+```
+
+The resource group is deleted in the background.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+```azurepowershell
+Remove-AzResourceGroup -Name ToyWebsiteTest -Force
+```
+
+::: zone-end

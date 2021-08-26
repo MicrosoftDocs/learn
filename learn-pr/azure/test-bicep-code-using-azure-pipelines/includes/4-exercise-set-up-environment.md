@@ -1,31 +1,43 @@
-TODO
+In this section, you make sure that your Azure DevOps organization is set up to complete the rest of this module.
 
-<!-- TODO decide if we want to go this route, and if so, move to include files -->
+To meet these objectives, you:
 
-## Create a project in Azure DevOps
+> [!div class="checklist"]
+> * Set up an Azure DevOps project for this module.
+> * Clone the project's repository to your computer.
+> * Create a resource group and service principal in Azure.
+> * Create a service connection in Azure Pipelines.
 
-1. In a browser, go to [dev.azure.com](https://dev.azure.com?azure-portal=true). Sign in or create a new account.
+## Get the Azure DevOps project
 
-1. If you created a new account, follow the prompts to create an Azure DevOps organization. Azure DevOps then prompts you to create a new project. Continue to the next step to set up the project.
+Here you make sure that your Azure DevOps organization is set up to complete the rest of this module. You set it up by running a template that creates a project in Azure DevOps.
 
-    If you signed in to an existing Azure DevOps organization, select **New project** to create a new project.
+The modules in this learning path are part of a progression. For learning purposes, each module has an associated Azure DevOps project.
 
-    :::image type="content" source="../../includes/media/azure-devops-create-project.png" alt-text="Screenshot of Azure DevOps that shows the button to create a new project.":::
+> [!TIP]
+> Even if you completed the previous module in the learning path, please follow these instructions to create a new project.
 
-1. Enter the details of your new project:
+### Run the template
 
-    * **Project name**: Use a meaningful but short name. For this exercise, enter **toy-website**.
-    * **Visibility**: You can use Azure DevOps to create public and private repositories. You create a private repository because your toy company website files should be accessed only by people inside your organization. You can grant access to other users later.
+Run a template that sets up your Azure DevOps organization.
 
-    When you're finished, your project configuration should look like this example:
+> [!div class="nextstepaction"]
+> [Run the template](https://azuredevopsdemogenerator.azurewebsites.net/?x-ms-routing-name=self&name=deliveryplans&azure-portal=true)
 
-    :::image type="content" source="../../includes/media/azure-devops-new-project-details.png" alt-text="Screenshot of Azure DevOps that shows the configuration for the project to create.":::
+On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
-1. Select **Create project**.
+1. Select **Sign In** and accept the usage terms.
+1. On the **Create New Project** page, select your Azure DevOps organization. Then enter a project name, such as *toy-website-test*.
 
-1. On the project page, in the left menu, select **Repos**.
+    <!--:::image type="content" source="../media/4-create-new-project.png" alt-text="Creating a project through the Azure DevOps Demo Generator.":::-->
 
-    :::image type="content" source="../../includes/media/azure-devops-repos-menu.png" alt-text="Screenshot of Azure DevOps that shows the menu, with the Repos menu item highlighted.":::
+1. Select **Create Project**.
+
+    The template takes a few moments to run.
+1. Select **Navigate to project** to go to your project in Azure DevOps.
+
+> [!IMPORTANT]
+> The final exercise in this module contains important cleanup steps. Be sure to follow the cleanup steps even if you don't complete this module.
 
 ## Generate a Git password (macOS)
 
@@ -69,63 +81,6 @@ Microsoft publishes an Azure Pipelines extension for Visual Studio Code. The ext
 1. In **Search**, enter **Azure Pipelines**, and then find the Azure Pipelines extension published by Microsoft. Select **Install**.
 
     :::image type="content" source="../../build-first-bicep-deployment-pipeline-using-azure-pipelines/media/3-visual-studio-code-extension.png" alt-text="Screenshot of the Visual Studio Code Extensions, with the search field displaying 'Azure Pipelines' and the Install button for the Microsoft Azure Pipelines extension highlighted.":::
-
-## Create a YAML pipeline definition
-
-Now that you've created your organization, project, and repository, you're ready to create a basic pipeline definition.
-
-1. In Visual Studio Code, open the Explorer.
-
-1. At the root of your current folder structure, create a new folder named *deploy*.
-
-1. In the *deploy* folder, create a new file named *azure-pipelines.yml*.
-
-    :::image type="content" source="../../build-first-bicep-deployment-pipeline-using-azure-pipelines/media/3-visual-studio-code-pipeline-file.png" alt-text="Screenshot of the Visual Studio Code Explorer, with the deploy folder and the azure-pipelines dot Y M L file shown.":::
-
-1. Copy the following pipeline definition into the file:
-
-    :::code language="yaml" source="code/4-pipeline.yml":::
-
-1. To open the Visual Studio Code terminal window, select **Terminal** > **New Terminal**. The window usually opens at the bottom of your screen.
-
-1. To commit and push the *azure-pipelines.yml* file to your Git repository, run this code:
-
-    ```bash
-    git add deploy/azure-pipelines.yml
-    git commit -m "Add initial pipeline definition"
-    git push
-    ```
-
-## Set up the pipeline in Azure Pipelines
-
-You've created a pipeline definition. Next, register the pipeline with Azure Pipelines.
-
-1. In Azure DevOps in your browser, select **Pipelines** > **Create Pipeline**.
-
-    :::image type="content" source="../../build-first-bicep-deployment-pipeline-using-azure-pipelines/media/3-create-pipeline.png" alt-text="Screenshot of Azure DevOps that shows the Pipelines page and the Create Pipeline button highlighted.":::
-
-1. Select **Azure Repos Git**.
-
-    :::image type="content" source="../../build-first-bicep-deployment-pipeline-using-azure-pipelines/media/3-create-pipeline-repo-type.png" alt-text="Screenshot of Azure DevOps that shows the Create Pipeline flow's Connect step, with the Azure Repos Git option selected.":::
-
-1. Select **toy-website**.
-
-    :::image type="content" source="../../build-first-bicep-deployment-pipeline-using-azure-pipelines/media/3-create-pipeline-repo.png" alt-text="Screenshot of Azure DevOps that shows the Create Pipeline flow's Select step, with the toy-website repository selected.":::
-
-1. Select **Existing Azure Pipelines YAML file**.
-
-    :::image type="content" source="../../build-first-bicep-deployment-pipeline-using-azure-pipelines/media/3-create-pipeline-configure.png" alt-text="Screenshot of Azure DevOps that shows the Create Pipeline flow's Configure step, with the Existing Azure Pipelines YAML File option selected.":::
-
-1. In **Path**, select */deploy/azure-pipelines.yml*. Then, select **Continue**.
-
-    :::image type="content" source="../../build-first-bicep-deployment-pipeline-using-azure-pipelines/media/3-create-pipeline-yaml-file.png" alt-text="Screenshot of the Azure DevOps 'Select an existing YAML file' pane, with Path set to the pipeline file and the Continue button highlighted.":::
-
-    Your YAML pipeline definition is shown.
-
-    > [!TIP]
-    > The Azure Pipelines web interface provides an editor that you can use to manage your pipeline definition. In this module, you work with the definition file in Visual Studio Code, but you can explore the Azure Pipelines editor to see how it works.
-
-1. TODO select Save
 
 ## Sign in to Azure
 
@@ -196,7 +151,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 1. To create a new resource group, run this Azure CLI command in the Visual Studio Code terminal:
 
    ```azurecli
-   az group create --name ToyWebsite --location westus
+   az group create --name ToyWebsiteTest --location westus
    ```
 
 1. Look at the JSON output from the command. It includes an `id` property, which is the resource group's ID.
@@ -210,7 +165,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 1. To create a resource group, run this Azure PowerShell command in the Visual Studio Code terminal:
 
    ```azurepowershell
-   New-AzResourceGroup -Name ToyWebsite -Location westus
+   New-AzResourceGroup -Name ToyWebsiteTest -Location westus
    ```
 
 1. Look at the output from the command. It includes a `ResourceId`, which is the resource group's fully qualified ID.
@@ -221,13 +176,15 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 ## Create a service principal and grant it access to the resource group
 
+<!-- TODO looks like Azure DevOps service connection auto creation now behaves correctly! Replace this with that -->
+
 ::: zone pivot="cli"
 
 1. To create a service principal and assign it the Contributor role for your resource group, run the following Azure CLI command in the Visual Studio Code terminal. Replace the placeholder with the resource group ID you copied in the last step.
 
    ```azurecli
    az ad sp create-for-rbac \
-     --name ToyWebsitePipeline \
+     --name ToyWebsiteTestPipeline \
      --role Contributor \
      --scopes RESOURCE_GROUP_ID
    ```
@@ -261,7 +218,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
    ```azurepowershell
    $servicePrincipal = New-AzADServicePrincipal `
-     -DisplayName ToyWebsitePipeline `
+     -DisplayName ToyWebsiteTestPipeline `
      -Role Contributor `
      -Scope RESOURCE_GROUP_ID
 
@@ -314,7 +271,7 @@ You've created a resource group and a service principal. Next, create a service 
    > [!NOTE]
    > If the verification doesn't succeed, check that you copied the correct values for the service principal, subscription, and tenant. Wait a few minutes to allow time for Azure's role assignments to replicate globally, and then try again.
 
-1. In **Service connection name**, enter **ToyWebsite**. Ensure that the **Grant access permission to all pipelines** checkbox is selected. Select **Verify and save**.
+1. In **Service connection name**, enter **ToyWebsiteTest**. Ensure that the **Grant access permission to all pipelines** checkbox is selected. Select **Verify and save**.
 
    :::image type="content" source="../../build-first-bicep-deployment-pipeline-using-azure-pipelines/media/5-create-service-connection-principal-details-3.png" alt-text="Screenshot of the Azure DevOps 'Create service connection' page, with the 'Verify and save' button highlighted.":::
 

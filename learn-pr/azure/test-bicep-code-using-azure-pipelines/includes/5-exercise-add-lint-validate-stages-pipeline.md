@@ -33,6 +33,21 @@ First, you need to update your pipeline file to define a stage. Azure Pipelines 
 
 1. Save the file.
 
+## Configure the linter
+
+TODO explanation
+
+1. Add a new file in the *deploy* folder and name it `bicepconfig.json`.
+
+1. Copy the following into the file:    
+
+   :::code language="json" source="code/5-bicepconfig.json" :::
+
+   > [!NOTE]
+   > The *bicepconfig.json* file also controls how Visual Studio Code shows errors and warnings in the editor. It displays red and yellow squiggly lines under misconfigured parts in your Bicep template. This gives you even quicker feedback when you're writing your Bicep code, further reducing the chance of an error.
+
+1. Save the file.
+
 1. Commit and push your changes to your Git repository by running the following commands in the Visual Studio Code terminal:
 
    ```bash
@@ -42,18 +57,6 @@ First, you need to update your pipeline file to define a stage. Azure Pipelines 
    ```
 
 ## View the pipeline run
-
-<!--
-1. Add a new file in the deploy folder and call it `bicepconfig.json`. Copy the following into the file:    
-
-   :::code language="json" source="code/4-bicepconfig.json" :::
-
-1. Save the file.
-
-   > [!NOTE]
-   > The *bicepconfig.json* file also controls how Visual Studio Code shows errors and warnings in the editor. It displays red and yellow squiggly lines under misconfigured parts in your Bicep template. This gives you even quicker feedback when you're writing your Bicep code, further reducing the chance of an error.
-
--->
 
 1. In your browser, navigate to your pipeline.
 
