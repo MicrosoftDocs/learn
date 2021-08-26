@@ -38,16 +38,18 @@ prerequisites: |
 units: 
 - learn.azure.azure-cloud-services-tutorials-mrtk.0-Overview
 - learn.azure.azure-cloud-services-tutorials-mrtk.1-introduction
-- learn.azure.azure-cloud-services-tutorials-mrtk.2-integrating-and-using-speech-recognition-and-transcription
-- learn.azure.azure-cloud-services-tutorials-mrtk.3-exercise-integrating-and-using-speech-recognition-and-transcription
-- learn.azure.azure-cloud-services-tutorials-mrtk.4-adding-an-offline-mode-for-local-speech-to-text-translation
-- learn.azure.azure-cloud-services-tutorials-mrtk.5-exercise-adding-an-offline-mode-for-local-speech-to-text-translation
-- learn.azure.azure-cloud-services-tutorials-mrtk.6-adding-the-azure-cognitive-services-speech-translation-component
-- learn.azure.azure-cloud-services-tutorials-mrtk.7-exercise-adding-the-azure-cognitive-services-speech-translation-component
-- learn.azure.azure-cloud-services-tutorials-mrtk.8-setting-up-intent-and-natural-language-understanding
-- learn.azure.azure-cloud-services-tutorials-mrtk.9-exercise-setting-up-intent-and-natural-language-understanding
-- learn.azure.azure-cloud-services-tutorials-mrtk.10-knowledge-check
-- learn.azure.azure-cloud-services-tutorials-mrtk.11-summary
+- learn.azure.azure-cloud-services-tutorials-mrtk.2-azure-cloud-services-for-holoLens-2
+- learn.azure.azure-cloud-services-tutorials-mrtk.3-exercise-azure-cloud-services-for-holoLens-2
+- learn.azure.azure-cloud-services-tutorials-mrtk.4-integrating-azure-storage
+- learn.azure.azure-cloud-services-tutorials-mrtk.5-exercise-integrating-azure-storage
+- learn.azure.azure-cloud-services-tutorials-mrtk.6-integrating-azure-custom-vision
+- learn.azure.azure-cloud-services-tutorials-mrtk.7-exercise-integrating-azure-custom-vision
+- learn.azure.azure-cloud-services-tutorials-mrtk.8-integrating-azure-spatial-anchors
+- learn.azure.azure-cloud-services-tutorials-mrtk.9-exercise-integrating-azure-spatial-anchors
+- learn.azure.azure-cloud-services-tutorials-mrtk.10-integrating-azure-bot-service
+- learn.azure.azure-cloud-services-tutorials-mrtk.11-exercise-integrating-azure-bot-service
+- learn.azure.azure-cloud-services-tutorials-mrtk.12-knowledge-check
+- learn.azure.azure-cloud-services-tutorials-mrtk.13-summary
 
 badge:
   uid: learn.azure.azure-cloud-services-tutorials-mrtk.badge
