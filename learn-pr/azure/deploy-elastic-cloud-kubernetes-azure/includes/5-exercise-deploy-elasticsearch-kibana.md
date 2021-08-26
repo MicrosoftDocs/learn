@@ -27,7 +27,7 @@ Elastic Stack provides tools, including Elasticsearch and Kibana, to help you se
 1. Run the following command in Cloud Shell to see the status of the Elasticsearch cluster as it gets created.
 
     ```bash
-    kubecctl get elasticsearch
+    kubectl get elasticsearch
     ```
 
     :::image type="content" source="../media/get-elasticsearch-output.png" alt-text="A screenshot of the Elasticsearch cluster status in Azure Cloud Shell.":::
