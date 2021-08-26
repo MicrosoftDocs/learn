@@ -58,7 +58,7 @@ In this case
 
 There are cases where you may have to set multiple rules in a profile. The following set of autoscale rules are used by services when multiple rules are set.
 
-On *scale out*, autoscale runs if any rule is met. On *scale-in*, autoscale require all rules to be met.
+On *scale-out*, autoscale runs if any rule is met. On *scale-in*, autoscale require all rules to be met.
 
 To illustrate, assume that you have the following four autoscale rules:
 
