@@ -6,6 +6,6 @@ You viewed the various metrics, built a dashboard, and created an alert to monit
 
 ## Learn more
 
-- [Monitor Virtual Machines with Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/vm/monitor-virtual-machine)
+- [Monitor Virtual Machines with Azure Monitor](/azure/azure-monitor/vm/monitor-virtual-machine)
 - [Supported metrics with Azure Monitor - Microsoft.Compute/virtualMachines](/azure/azure-monitor/platform/metrics-supported#microsoftcomputevirtualmachines)
-- [Azure Monitor Agent](https://docs.microsoft.com/azure/azure-monitor/agents/azure-monitor-agent-overview)
+- [Azure Monitor Agent](/azure/azure-monitor/agents/azure-monitor-agent-overview)
