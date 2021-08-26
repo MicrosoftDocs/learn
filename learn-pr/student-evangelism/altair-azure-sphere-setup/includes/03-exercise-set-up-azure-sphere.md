@@ -1,9 +1,11 @@
 In this unit, you will:
 
-1. Install Visual Studio Code (or Visual Studio 2019).
+1. Install Visual Studio Code
 1. Install the Azure Sphere SDK.
-1. Claim your device.
-1. Set up Azure Sphere for application deployments.
+1. Claim your Azure Sphere device.
+1. Configure the Azure Sphere Wi-Fi network.
+1. Update the Azure Sphere OS.
+1. Enable app development on the device.
 
 Install the following software on your Windows 10 or Linux computer.
 
