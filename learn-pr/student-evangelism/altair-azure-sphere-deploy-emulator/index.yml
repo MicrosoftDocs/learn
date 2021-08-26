@@ -30,10 +30,10 @@ products:
 - azure-sphere
 units:
 - learn.student-evangelism.altair-azure-sphere-deploy-emulator.introduction
-- learn.student-evangelism.altair-azure-sphere-deploy-emulator.deployment
-- learn.student-evangelism.altair-azure-sphere-deploy-emulator.exercise-deploy
 - learn.student-evangelism.altair-azure-sphere-deploy-emulator.app-deployment
 - learn.student-evangelism.altair-azure-sphere-deploy-emulator.exercise-deploy-apps
+- learn.student-evangelism.altair-azure-sphere-deploy-emulator.deployment
+- learn.student-evangelism.altair-azure-sphere-deploy-emulator.exercise-deploy
 - learn.student-evangelism.altair-azure-sphere-deploy-emulator.knowledge-check
 - learn.student-evangelism.altair-azure-sphere-deploy-emulator.summary
 badge:

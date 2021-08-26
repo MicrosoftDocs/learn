@@ -6,12 +6,6 @@ You must declare all network endpoints, peripherals, and inter-core communicatio
 
 The Altair emulator connects to two cloud services. IoT Central for configuration and reporting, and an [MQTT](https://en.wikipedia.org/wiki/MQTT?azure-portal=true) broker. The MQTT broker is used to relay messages between the Altair emulator, the Web Terminal, and the virtual disk server.
 
-In this module, you'll learn how to:
-
-1. Declare network endpoints for IoT Central and [test.mosquitto.org](https://test.mosquitto.org?azure-portal=true), a public MQTT broker.
-
-1. Generate certificates to secure communications with the public test.mosquitto.org MQTT broker.
-
 In this module, you will:
 
 * Declare the network endpoints for the Altair emulator.

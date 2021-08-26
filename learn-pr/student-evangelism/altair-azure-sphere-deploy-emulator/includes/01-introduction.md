@@ -18,7 +18,7 @@ The Altair emulator consists of two applications, one high-level application, an
 
 1. The **AltairRT_disk_cache_server** real-time application.
 
-    * The disk cache server application provides Cache-Aside services using a Least Recently Used eviction policy for the Altair emulator virtual file system. The Altair emulator uses the cache to improve remote disk performance. The cache-aside pattern is useful in a wide range of scenarios. For example, you could cache Price Look-Up codes for retail solutions.
+    * The disk cache server application provides Cache-Aside services using a Least Recently Used eviction policy for the Altair emulator virtual file system. The Altair emulator uses the cache to improve virtual disk performance. The cache-aside pattern is useful in a wide range of scenarios. For example, you could cache Price Look-Up codes for retail solutions.
 
 1. The **AltairRT_sd_card_server** real-time application.
 

@@ -26,7 +26,7 @@ In this exercise, you'll get the connection information for Azure IoT Central.
 5. Review the output from the **ShowIoTCentralConfig** tool. It will look similar to the following text.
 
    ```json
-   "CmdArgs": [ "--ConnectionType", "DPS", "--ScopeID", "0ne0099999D" ],
+   "CmdArgs": [ "--ScopeID", "0ne0099999D" ],
    "Capabilities": {
       "AllowedConnections": [ "global.azure-devices-provisioning.net", "iotc-9999bc-3305-99ba-885e-6573fc4cf701.azure-devices.net", "iotc-789999fa-8306-4994-b70a-399c46501044.azure-devices.net", "iotc-7a099966-a8c1-4f33-b803-bf29998713787.azure-devices.net", "iotc-97299997-05ab-4988-8142-e299995acdb7.azure-devices.net", "iotc-d099995-7fec-460c-b717-e99999bf4551.azure-devices.net", "iotc-789999dd-3bf5-49d7-9e12-f6999991df8c.azure-devices.net", "iotc-29999917-7344-49e4-9344-5e0cc9999d9b.azure-devices.net", "iotc-99999e59-df2a-41d8-bacd-ebb9999143ab.azure-devices.net", "iotc-c0a9999b-d256-4aaf-aa06-e90e999902b3.azure-devices.net", "iotc-f9199991-ceb1-4f38-9f1c-13199992570e.azure-devices.net" ],
       "DeviceAuthentication": "--- YOUR AZURE SPHERE TENANT ID---",
@@ -36,8 +36,6 @@ In this exercise, you'll get the connection information for Azure IoT Central.
 6. Copy the output from the **ShowIoTCentralConfig** tool to Notepad, as you'll need this information soon.
 
 ## Step 2: Get your Azure Sphere tenant ID
-
-We need the ID of the Azure Sphere tenant that is now trusted by Azure IoT Central.
 
 1. From the  Windows **PowerShell command line** or Linux **Terminal**, run the following command.
 
