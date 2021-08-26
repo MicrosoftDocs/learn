@@ -9,6 +9,6 @@ metadata:
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-durationInMinutes: 4 # dummy number at present
+durationInMinutes: 1 # dummy number at present
 content: |
   [!include[](includes/02-app-deployment.md)]
