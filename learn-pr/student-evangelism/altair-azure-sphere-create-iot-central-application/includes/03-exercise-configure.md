@@ -2,7 +2,7 @@ In this exercise, you'll create an Azure Iot Central application and link it to 
 
 ## Step 1: Create a new Azure IoT Central application
 
-1. Open this link in a new window: [Azure IoT Central](https://azure.microsoft.com/services/iot-central?azure-portal=true).
+1. Open the IoT Central web portal by selecting this link [Azure IoT Central](https://azure.microsoft.com/services/iot-central?azure-portal=true).
 
 1. Select **Build a solution**.
 
@@ -34,7 +34,7 @@ In this exercise, you'll create an Azure Iot Central application and link it to 
 
 3. Make a note of the current folder. You'll need the name of this folder in the next step.
 
-4. Download the certificate authority (CA) certificate for your Azure Sphere tenant:
+4. Download the Azure Sphere tenant certificate authority (CA) certificate:
 
    ```azsphere
    azsphere ca-certificate download --destination CAcertificate.cer
@@ -71,7 +71,7 @@ In this exercise, you'll create an Azure Iot Central application and link it to 
 
 1. Return to the PowerShell Command Line or Linux Terminal.
 
-2. Download a validation certificate that proves that you own the tenant CA certificate. Replace **<code\>** in the command with the verification code from the previous step.
+2. Download a validation certificate that proves you own the Azure Sphere tenant CA certificate. Replace **<code\>** in the command with the verification code from the previous step.
 
    ```azsphere
    azsphere ca-certificate download-proof --destination ValidationCertification.cer --verification-code <code>
