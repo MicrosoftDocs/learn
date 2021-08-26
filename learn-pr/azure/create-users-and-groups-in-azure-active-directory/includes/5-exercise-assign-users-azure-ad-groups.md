@@ -21,7 +21,7 @@ In this exercise, you'll create an Azure Active Directory (Azure AD) group to ma
     | Group name | Developer group |
     | Group description | Developer team |
 
-1. Select **Create**. Thew **Groups | All groups** pane appears, including the new group in the list of Groups.
+1. Select **Create**. The **Groups | All groups** pane appears, including the new group in the list of Groups.
 
 ## Use direct assignment to add a user to this group
 
@@ -51,7 +51,7 @@ If you didn't activate the free trial for Azure AD Premium 2, you won't be able 
 
 1. Change **Membership type** to **Dynamic User**.
 
-1. Under **Dynamic user memebers**, select **Add dynamic query**.
+1. Under **Dynamic user members**, select **Add dynamic query**.
 
    :::image type="content" source="../media/5-add-dynamic-query.png" alt-text="Screenshot that shows the Add dynamic query link.":::
 

@@ -34,7 +34,7 @@ After you add a guest user to the organization, send them a direct link to a sha
 
 1. Search for the guest account you added to the organization.
 
-1. Select the account, and select **Select**. The **Members** pane for your develper group appears.
+1. Select the account, and select **Select**. The **Members** pane for your developer group appears.
 
     You now see the user in the list of members for this group.
 
