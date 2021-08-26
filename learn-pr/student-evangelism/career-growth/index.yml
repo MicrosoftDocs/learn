@@ -32,12 +32,10 @@ units:
 - learn.career-growth.asking-questions
 - learn.career-growth.seek-diversity
 - learn.career-growth.group-exercise
-- learn.career-growth.knowledge-check-1
 - learn.career-growth.time-management
 - learn.career-growth.day-exercise
 - learn.career-growth.continual-learning
 - learn.career-growth.building-trust
-- learn.career-growth.knowledge-check-2
 - learn.career-growth.summary
 badge:
   uid: learn.career-growth.badge

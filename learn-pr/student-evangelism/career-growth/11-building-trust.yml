@@ -10,6 +10,19 @@ metadata:
   ms.author: jelooper 
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 2
 content: |
   [!include[](includes/11-building-trust.md)]
+quiz:
+  questions:
+  - content: "'Managing Up' includes:"
+    choices:
+    - content: "Asking appropriate questions of a manager."
+      isCorrect: true
+      explanation: "Correct, it's possible to lead a conversation with a manager to help them understand an employee's perspectives."
+    - content: "Implies that a manager is incompetent."
+      isCorrect: false
+      explanation: "False, managing up can help both an employee and their manager."
+    - content: "Does not work when both a manager and an employee are working remotely."
+      isCorrect: false
+      explanation: "False, it's possible to use communication tactics such as these both online and in person."
