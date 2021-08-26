@@ -34,6 +34,7 @@ and press Enter.
 * list
 * new
 * load
+* <kbd>ctrl+c</kbd> to halt a program
 
 For more information about Altair BASIC, see the [Altair 8800 BASIC Reference Manual](https://altairclone.com/downloads/manuals/BASIC%20Manual%2075.pdf?azure-portal=true).
 
@@ -62,9 +63,9 @@ run
 
 ## The Altair emulator and Internet of Things
 
-The BASIC language has extensibility mechanism called ports. The Altair emulator includes support for ports and these are used by the **IOT.BAS** application. The IOT.BAS application calls **in** port 43 to read the temperature and port 44 to read the air pressure. These calls are routed to the C sphere_port_in in main.c of the Altair emulator.
+The BASIC language has extensibility mechanism called ports. The Altair emulator includes support for ports and these ports are used by the **IOT.BAS** application. The IOT.BAS application calls **in** port 43 to read the temperature and port 44 to read the air pressure. These calls are routed to the C sphere_port_in in main.c of the Altair emulator.
 
-If you have an Avnet Azure Sphere Starter Kit, then the temperature and pressure data is from the onboard sensors. If you have a SEEED Azure Sphere then random temperature and pressure data is used.
+If you have an Avnet Azure Sphere Starter Kit, then the temperature and pressure data is read from the onboard sensors. If you have a SEEED Azure Sphere then random temperature and pressure data is used.
 
 The following BASIC program is a listing of IOT.BAS.
 
@@ -88,7 +89,7 @@ The following BASIC program is a listing of IOT.BAS.
 
 ```
 
-To run IOT.BAS follow these steps.
+To run IOT.BAS, follow these steps.
 
 ```text
 new
@@ -104,9 +105,19 @@ Then run the application.
 run
 ```
 
-When you run this application, temperature and pressure telemetry will be published to IoT Central. You can view the data on the Environment tab for your device.
+When you run this application, temperature and pressure data will be published to IoT Central. You can view the data on the Environment tab for your device.
 
 > [!div class="mx-imgBorder"]
 > ![The illustration shows Altair BASIC starting.](../media/iot-central-environment-chart.png)
+
+## Extend the IOT.BAS app
+
+Make the IOT.BAS application read the temperature and pressure every 5 seconds. When the temperature and pressure are read, the data is sent to IoT Central and plotted on the Environment chart.
+
+To pause the app for approximately 5 seconds, just add a loop.
+
+```basic
+250 FOR J = 0 TO 50000: NEXT J
+```
 
 In the follow unit, you'll learn how to boot CP/M and start programming.

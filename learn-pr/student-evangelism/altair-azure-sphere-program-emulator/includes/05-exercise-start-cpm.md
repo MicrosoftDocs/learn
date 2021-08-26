@@ -4,9 +4,9 @@ In this exercise, you'll learn how to boot CP/M and start programming.
 
 There are several ways that you can boot up CP/M depending on your hardware configuration.
 
-When the Altair emulator starts, it loads Altair 8k BASIC at address 0x0000 and the diskette loader at address 0xff00 HEX (111111110000000 Binary).
+When the Altair emulator starts, it loads Altair 8k BASIC at address 0x0000 and the disk driver at address 0xff00 HEX (111111110000000 Binary).
 
-To load CP/M, you're going to set the CPU instruction pointer to 0xff00 HEX and tell the Altair emulator to run the code from that address. The disk loader code runs and CP/M is loaded.
+To load CP/M, you're going to set the CPU instruction pointer to 0xff00 HEX and tell the Altair emulator to run the code from that address. The disk driver code runs and loads CP/M.
 
 ### For all hardware configurations
 
@@ -48,6 +48,7 @@ A>
 1. Press **STOP CPU**.
 1. Press **Button B** on the Avnet Stater kit to switch to **Input** mode.
 1. Press buttons **15, 14, 13, 12, 11, 10, 9, 8** to set address 0xff00.
+1. Press **Button B** on the Avnet Stater kit to switch back to **Command** mode.
 1. Press **EXAMINE** to set the CPU instruction pointer.
 1. Press **STOP RUN**.
 
@@ -80,16 +81,6 @@ Copyright 1980 by Burcon Inc.
 A>
 ```
 
-## A bit about CP/M
-
-For more information about CP/M, see [CP/M Wikipedia article](https://en.wikipedia.org/wiki/CP/M?azure-portal=true).
-
-CP/M, originally stood for Control Program/Monitor, then later became known as Control Program for Microcomputers. It was a mass-market operating system created in 1974 for Intel 8080/85-based microcomputers by Gary Kildall of Digital Research, Inc. The first version was single-tasking on 8-bit processors with support up to 64 kilobytes of memory. Later versions of CP/M added multi-user variations and were migrated to 16-bit processors.
-
-### CP/M Reference Manual
-
-[CP/M Reference Manual](http://www.cpm.z80.de/manuals/cpm22-m.pdf?azure-portal=true)
-
 ## Microsoft BASIC 80
 
 Microsoft BASIC 80 is also included on the A: drive.
@@ -100,7 +91,7 @@ To Start Microsoft Basic, type
 mbasic B:TEST.BAS
 ```
 
-You can save and load files from Basic.
+This will start Microsoft Basic and create a file on the B: drive called TEST.BAS. You can save and load files from Basic.
 
 ```basic
 save "B:TEST.BAS"

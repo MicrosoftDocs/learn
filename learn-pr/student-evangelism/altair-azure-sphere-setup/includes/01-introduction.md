@@ -28,6 +28,12 @@ An Avnet Azure Sphere Starter Kit Rev 1 or Rev 2 with the MikroE Altair 8800 Ret
 
 ![Avnet Azure Sphere plus MikroE Click panel.](../media/altair-8800-retro-click.png)
 
+### Avnet Azure Sphere plus MikroE Altair 8800 Retro Click and microSD Card
+
+An Avnet Azure Sphere Starter Kit **Rev 2** with the MikroE Altair 8800 Retro Click (**Available soon**) and MikroE microSD Card Click.
+
+![Avnet Azure Sphere plus MikroE Click panel and MikroE microSD Card.](../media/avnet-azure-sphere-rev-2-microSD-click.png)
+
 ### Altair front panel
 
 The Seeed Studio or Avnet with the Altair Front Panel. See the Front Panel wiring section in the table below.

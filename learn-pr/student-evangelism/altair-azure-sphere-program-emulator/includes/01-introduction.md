@@ -17,9 +17,9 @@ Files can only be saved from CP/M on the Altair emulator. You must have the virt
 
 In this module, you will:
 
+
 * Understand Altair BASIC and CP/M, and how to use them.
 * Learn how to program the Altair emulator using Altair BASIC.
-* Write an Altair BASIC application.
 * Learn about programming options and configurations for the Altair emulator.
 
 ## Prerequisites
