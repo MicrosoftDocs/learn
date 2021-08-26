@@ -157,7 +157,7 @@ Make the IOT.BAS application read the temperature and pressure every 5 seconds. 
 To pause the app for approximately 5 seconds, just add a loop.
 
 ```basic
-250 FOR J = 0 TO 50000: NEXT J
+250 FOR J = 0 TO 30000: NEXT J
 ```
 
 In the follow unit, you'll learn how to boot CP/M and start programming.
