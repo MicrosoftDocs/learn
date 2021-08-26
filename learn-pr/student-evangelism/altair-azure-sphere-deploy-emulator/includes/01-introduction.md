@@ -8,7 +8,7 @@ The Azure Sphere microcontroller unit (MCU) has three developer-accessible cores
 
 ## The Altair emulator application architecture
 
-The Altair emulator consists of three applications, one high-level application, and two real-time applications.
+The Altair emulator consists of two applications, one high-level application, and one real-time core application.
 
 :::image type="content" source="../media/azure-sphere-app-architecture.png" alt-text="Diagram that shows the Altair on Azure Sphere application architecture." border="false":::
 
@@ -18,11 +18,11 @@ The Altair emulator consists of three applications, one high-level application, 
 
 1. The **AltairRT_disk_cache_server** real-time application.
 
-    * The disk cache server application provides Cache-Aside services using a Least Recently Used eviction policy for the Altair emulator virtual file system. The Altair emulator uses the cache to improve remote disk performance. The cache-aside pattern is useful in a wide range of scenarios. For example, you could cache Price Look-Up codes for retail solutions.
+    * The disk cache server application provides Cache-Aside services using a Least Recently Used eviction policy for the Altair emulator virtual file system. The Altair emulator uses the cache to improve virtual disk performance. The cache-aside pattern is useful in a wide range of scenarios. For example, you could cache Price Look-Up codes for retail solutions.
 
-1. The **AltairRT_enviromon** real-time application.
+1. The **AltairRT_sd_card_server** real-time application.
 
-    * The environment monitor application is a bare metal real-time application responsible for sensing temperature, pressure, and humidity. If you're using the Avnet Azure Sphere, then the onboard temperature and pressure sensor are used. If you're using the Seeed Studio Azure Sphere dev kit, then sensible random environment data is generated. This data is available to BASIC apps running on the Altair emulator.
+    * SD card support for the Altair emulator read/write disk drive B: is supported on the Avnet Azure Sphere **Rev 2** developer board with the MikroE microSD Click. The MikroE microSD Click must be plugged into socket 1 of the Avnet Azure Sphere Rev 2 developer board.
 
 <!-- ## IoT Central IoT Plug and Play model
 
@@ -38,11 +38,21 @@ IoT Central is an IoT Plug and Play enabled application. When your device first 
 
 In this module, you will:
 
-* Learn about the architecture of Azure Sphere. 
-* Learn about the application architecture of the Altair emulator. 
-* Start the app build and deployment process. 
-* Understand the virtual disk cache-aside server. 
+* Learn about the architecture of Azure Sphere.
+* Learn about the application architecture of the Altair emulator.
+* Start the app build and deployment process.
+* Understand the virtual disk cache-aside server.
 
 ## Prerequisites
 
-TBD
+* You have completed the previous module of the learning path.
+* A computer with an x86-64-based processor running:
+  * Windows 10 Anniversary Update or later.
+  * Or, 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS.
+* An Azure Sphere developer board. Either:
+  * An Avnet Azure Sphere Starter Kit Rev 1 or 2.
+  * Or, a Seeed Studio Azure Sphere MT3620 Development Kit.
+* A GitHub account.
+* An Azure Account. Sign up for a free [Student Azure account](https://azure.microsoft.com/free/students?azure-portal=true), or free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
+
+In the next unit, you'll learn about the virtual disk sector cache-aside server.

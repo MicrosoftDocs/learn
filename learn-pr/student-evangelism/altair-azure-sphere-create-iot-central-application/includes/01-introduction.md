@@ -12,7 +12,7 @@ Azure IoT Central is built on the [Eight attributes of successful IoT solutions]
 
 Trust is established by sharing your Azure Sphere tenant Certificate Authority certificate with your IoT Central application.
 
-With trust established, your devices will be provisioned with your Altair IoT Central application. Trusted certificates with be used to sign and secure network traffic between your Azure Sphere and IoT Central.
+With trust established, your devices will be provisioned with your Altair IoT Central application. Trusted certificates are used to sign and secure network traffic between your Azure Sphere and IoT Central.
 
 In this module, you will:
 
@@ -23,4 +23,14 @@ In this module, you will:
 
 ## Prerequisites
 
-TBD
+* You have completed the previous module of the learning path.
+* A computer with an x86-64-based processor running:
+  * Windows 10 Anniversary Update or later.
+  * Or, 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS.
+* An Azure Sphere developer board. Either:
+  * An Avnet Azure Sphere Starter Kit Rev 1 or 2.
+  * Or, a Seeed Studio Azure Sphere MT3620 Development Kit.
+* A GitHub account.
+* An Azure Account. Sign up for a free [Student Azure account](https://azure.microsoft.com/free/students?azure-portal=true), or free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
+
+In the next unit, you'll learn how to create a cloud-based Azure IoT Central application for the Altair 8800 emulator.

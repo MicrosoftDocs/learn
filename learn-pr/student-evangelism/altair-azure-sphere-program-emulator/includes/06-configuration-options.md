@@ -5,7 +5,7 @@ You have the following options to program with the front panel:
 1. The MikroE 4x4 Button Click.
 1. The Altair front panel board.
 
-The original Altair 8800 was programmed directly using the front panel. It was a painstaking, error-prone process to load and execute a program. Programming the Altair emulator using the front panel and Intel OpCodes is a great way for you to understand how computers work.
+The original Altair 8800 was programmed directly using the front panel. It was a painstaking, error-prone process to load and execute a program. Programming the Altair emulator using the front panel and Intel opcodes is a great way for you to understand how computers work.
 
 The Altair 8800 had a series of LEDs and switches that you used to load apps and determine the state of the Altair.
 
@@ -37,6 +37,12 @@ An Avnet Azure Sphere Starter Kit Rev 1 with the MikroE 4x4 key Click and 8x8 R 
 An Avnet Azure Sphere Starter Kit Rev 1 and Rev 2 with the MikroE Altair 8800 Retro Click (**Available soon**).
 
 :::image type="content" source="../media/altair-8800-retro-click.png" alt-text="Image that shows Avnet Azure Sphere and the MikroE Click panel." border = "false":::
+
+### Avnet Azure Sphere plus MikroE Altair 8800 Retro Click and microSD Card
+
+An Avnet Azure Sphere Starter Kit **Rev 2** with the MikroE Altair 8800 Retro Click (**Available soon**) and MikroE microSD Card Click.
+
+![Avnet Azure Sphere plus MikroE Click panel and MikroE microSD Card.](../media/avnet-azure-sphere-rev-2-microSD-click.png)
 
 ### Altair front panel
 

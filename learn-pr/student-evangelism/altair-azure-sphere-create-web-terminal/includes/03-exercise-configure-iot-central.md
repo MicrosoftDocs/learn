@@ -1,6 +1,6 @@
 In this exercise, you'll configure your Altair IoT Central application.
 
-1. Switch back to the **IoT Central** web portal.
+1. Switch back to the **IoT Central** [web portal](https://azure.microsoft.com/services/iot-central?azure-portal=true).
 
 1. From the sidebar menu, select **Devices**, then the **Altair on Azure Sphere** template, then your **device**.
 
@@ -61,7 +61,7 @@ From the Device menu bar, select **Edit template**.
 
     :::image type="content" source="../media/iot-central-template-properties.png" alt-text="Screenshot that shows setting properties.":::
 
-### Add an Environment data visualization view
+### Add an environment data visualization view
 
 1. Select **Views** and then select **Visualizing the device**.
 
@@ -72,6 +72,8 @@ From the Device menu bar, select **Edit template**.
 1. Select the **Configure** icon on the tile.
 1. Select **+ Capability**.
 1. From the capability list, select **Temperature**.
+1. Select **+ Capability**.
+1. From the capability list, select **Pressure**.
 
     :::image type="content" source="../media/iot-central-visualize-tile-capabilities.png" alt-text="Screenshot that shows how to expand properties.":::
 

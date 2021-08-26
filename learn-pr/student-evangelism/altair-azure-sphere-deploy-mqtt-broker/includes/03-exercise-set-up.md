@@ -142,7 +142,7 @@ The following steps are required to set up certificates to secure the communicat
 
 ### Step 7: Install Lets Encrypt
 
-[Let's Encrypt](https://letsencrypt.org/?azure-portal=true) is a nonprofit Certificate Authority providing TLS certificates to 260 million websites. We are going to use a free Let's Encrypt certificate to secure the MQTT messages between the Web Terminal and the Mosquitto MQTT Broker.
+[Let's Encrypt](https://letsencrypt.org?azure-portal=true) is a nonprofit Certificate Authority providing TLS certificates to 260 million websites. We are going to use a free Let's Encrypt certificate to secure the MQTT messages between the Web Terminal and the Mosquitto MQTT Broker.
 
 Next, install the **Certbot** ACME client on the Ubuntu Server. Let's Encrypt issued certificates expire after six months. The Certbot ensures the certificates are updated before they expire.
 
@@ -291,7 +291,7 @@ We need to update the Altair emulator to connect to our new and secured Mosquitt
 1. Open the Altair emulator project in Visual Studio and update the **ALTAIR_MQTT_HOST** definition in the CMakeLists.txt file with the dns name of your Mosquitto broker.
 
     ```cmake
-    add_compile_definitions(ALTAIR_MQTT_HOST="REPLACE_WITH_YOUR_VIRTIAL_MACHINE_DNS_NAME")    ```
+    add_compile_definitions(ALTAIR_MQTT_HOST="REPLACE_WITH_YOUR_VIRTUAL_MACHINE_DNS_NAME")    ```
 
 1. Update the **app_manifest.json AllowedConnections** section the new Virtual Machine domain name. Remove the entry for test.mosquitto.org as you will no longer be using that endpoint.
 1. Redeploy the Altair emulator to the Azure Sphere.

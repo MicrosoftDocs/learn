@@ -9,7 +9,7 @@ metadata:
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-durationInMinutes: 3 # dummy number at present
+durationInMinutes: 2 # dummy number at present
 content: |
 quiz:
   questions:
@@ -17,33 +17,22 @@ quiz:
     choices:
     - content: "You can chart data sent from the Altair emulator running on the Azure Sphere."
       isCorrect: false
-      explanation: "You can configure the Altair emulator startup parameters and chart data."
+      explanation: "You can set the Altair emulator configuration and chart data."
     - content: "You can configure the Altair emulator startup parameters and chart data."
       isCorrect: true
       explanation: "You can configure the Altair emulator startup parameters and chart data."
     - content: "You can configure the Altair emulator startup parameters."
       isCorrect: false
       explanation: "You can configure the Altair emulator startup parameters and chart data."
-  - content: "What best describes the the Web Terminal?"
+  - content: "What best describes the Web Terminal?"
     choices:
     - content: "You can run the Altair emulator as an Azure Static Web app and connect from the Web Terminal."
       isCorrect: false
-      explanation: "The Altair emulator runs on the Azure Sphere, keyboard and terminal messages are routed over MQTT and via a MQTT broker to the Web Terminal running in your web browser."
-    - content: "The Altair emulator redirects keyboard and terminal messages over MQTT. These messages are routed to the Web Terminal via a MQTT broker. "
+      explanation: "The Altair emulator runs on the Azure Sphere, keyboard and terminal messages are routed over MQTT and via an MQTT broker to the Web Terminal running in your web browser."
+    - content: "The Altair emulator redirects keyboard and terminal messages over MQTT. These messages are routed to the Web Terminal via an MQTT broker. "
       isCorrect: true
-      explanation: "The Altair emulator runs on the Azure Sphere, keyboard and terminal messages are routed over MQTT and via a MQTT broker to the Web Terminal running in your web browser."
+      explanation: "The Altair emulator runs on the Azure Sphere, keyboard and terminal messages are routed over MQTT and via an MQTT broker to the Web Terminal running in your web browser."
     - content: "The Web Terminal runs on the Azure Sphere alongside the Altair emulator."
       isCorrect: false
-      explanation: "The Altair emulator runs on the Azure Sphere, keyboard and terminal messages are routed over MQTT and via a MQTT broker to the Web Terminal running in your web browser."
-  - content: "What best describes the virtual disk server?"
-    choices:
-    - content: "The virtual disk server extends the Altair emulator by providing read/write disk support for your applications running on CP/M."
-      isCorrect: true
-      explanation: "When the virtual disk server is running and it will provide a virtual disk that is accessible as drive B: from CP/Mon the Altair emulator. The virtual disk cache running on one of the Azure Sphere real-time cores will significantly import the performance of the virtual disk server."
-    - content: "The virtual disk server can only be run on your desktop."
-      isCorrect: false
-      explanation: "The virtual disk server can run on your desktop or in a cloud based virtual machine. Ideally run the virtual disk server and the MQTT broker in the same machine."
-    - content: "The virtual disk server runs on the Azure Sphere to provide read/write storage for your CP/M applications."
-      isCorrect: false
-      explanation: "The virtual disk server runs on either your desktop or in a cloud based virtual machine."
-  
+      explanation: "The Altair emulator runs on the Azure Sphere, keyboard and terminal messages are routed over MQTT and via an MQTT broker to the Web Terminal running in your web browser."
+ 

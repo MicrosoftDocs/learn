@@ -9,24 +9,24 @@ metadata:
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-durationInMinutes: 3 # dummy number at present
+durationInMinutes: 2 # dummy number at present
 content: |
 quiz:
   questions:
-  - content: "The Azure Sphere microcontroller consist of?"
+  - content: "Which does the Azure Sphere microcontroller consist of?"
     choices:
-    - content: "Three developer-accessible cores, 2 high-level cores, and 1 real-time core"
+    - content: "Three developer-accessible cores, two high-level cores, and one real-time core"
       isCorrect: false
-      explanation: "The Azure Sphere microcontroller consists of three cores developer-accessible cores, 1 high-level core, and 2 real-time cores."
-    - content: "Two developer-accessible cores, 1 high-level core, and 1 real-time core."
+      explanation: "The Azure Sphere microcontroller consists of three cores developer-accessible cores, one high-level core, and two real-time cores."
+    - content: "Two developer-accessible cores, one high-level core, and one real-time core."
       isCorrect: false
-      explanation: "The Azure Sphere microcontroller consists of three cores developer-accessible cores, 1 high-level core, and 2 real-time cores."
-    - content: "The Azure Sphere microcontroller consists of three cores developer-accessible cores, 1 high-level core, and 2 real-time cores."
+      explanation: "The Azure Sphere microcontroller consists of three cores developer-accessible cores, one high-level core, and two real-time cores."
+    - content: "The Azure Sphere microcontroller consists of three cores developer-accessible cores, one high-level core, and two real-time cores."
       isCorrect: true
-      explanation: "The Azure Sphere microcontroller consists of three developer-accessible cores, 1 high-level core, and 2 real-time cores."
+      explanation: "The Azure Sphere microcontroller consists of three developer-accessible cores, one high-level core, and two real-time cores."
   - content: "The Altair emulator configuration requires the following?"
     choices:
-    - content: "The ID Scope of the IoT Central Application, and the declaration of the IoT Central and test.mosquitto.org network endpoints, and your Azure Spere tenant ID."
+    - content: "The ID Scope of the IoT Central Application, and the declaration of the IoT Central and test.mosquitto.org network endpoints, and your Azure Sphere tenant ID."
       isCorrect: true
       explanation: "Correct, the ID Scope, network endpoints, and your Azure Sphere tenant ID are all needed."
     - content: "Azure Sphere is secure by default, and you only need to declare the IoT Central ID Scope."

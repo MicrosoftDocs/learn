@@ -1,6 +1,6 @@
 In this unit, you'll learn how to deploy the Altair Web Terminal.
 
-The cloud-enabled Altair on Azure Sphere project connects to the Web Terminal by redirecting standard input and output over [MQTT](https://en.wikipedia.org/wiki/MQTT?azure-portal=true). 
+The cloud-connected Altair on Azure Sphere project connects to the Web Terminal by redirecting standard input and output over [MQTT](https://en.wikipedia.org/wiki/MQTT?azure-portal=true). 
 
 The Web Terminal is an HTML/CSS/JavaScript application built on the [MQTT](https://www.eclipse.org/paho/index.php?page=clients/js/index.php&azure-portal=true) and [Xterm](https://xtermjs.org?azure-portal=true) JavaScript libraries.
 

@@ -2,7 +2,7 @@ In this exercise, you'll deploy the Altair Web Terminal Azure Static Web App.
 
 ## Install the Visual Studio Static Web Apps Extension
 
-Install the Static Web Apps Extension from the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-marketplace?azure-portal=true), or in Visual Studio Code, search for Static Web Apps in the Extension Marketplace and install it.
+Install the Visual Studio Code Static Web Apps Extension from the [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-marketplace?azure-portal=true), or in Visual Studio Code, search for Static Web Apps in the Extension Marketplace and install it.
 
 ## Open the Altair Web Terminal project
 
@@ -10,7 +10,7 @@ Install the Static Web Apps Extension from the [Extension Marketplace](https://c
 1. From the Visual Studio Code main menu, select **File**, then **Open folder**.
 1. Open the **Cloud-Enabled-Altair-on-Azure-Sphere** folder you cloned or downloaded.
 1. Open the **Altair_Web_Terminal** folder.
-1. Select **Select Folder** or the **OK** button to open the project.
+1. **Select Folder** or the **OK** button to open the project.
 
 ## Deploy the Altair Web Terminal
 
@@ -37,7 +37,7 @@ The action will take 2 or 3 minutes to run.
 ## Create the Altair Web Terminal settings
 
 1. From Visual Studio Code, navigate to the Altair Web Terminal **api** folder.
-1. Right mouse click on the **local.settings.sample.json** file and rename the file to **local.settings.json**.
+1. Rename the **local.settings.sample.json** file to **local.settings.json**.
 1. Open the **local.settings.json** file.
 
 The MQTT Broker configuration is prepopulated for the **test.mosquitto.org** public MQTT Broker.
@@ -64,7 +64,7 @@ The setting will then be uploaded.
 
 The Altair Web Terminal is secure and requires authenticated users so you need to invite users, including yourself to the Altair Web Terminal Static Web App.
 
-1. From the [Azure Portal](https://portal.azure.com?azure-portal=true).
+1. From the [Microsoft Azure Portal](https://portal.azure.com?azure-portal=true).
 1. Select **All resources**.
 
 :::image type="content" source="../media/azure-portal-all-resources.png" alt-text="Screenshot that shows how to select the all resources Azure portal blade.":::
