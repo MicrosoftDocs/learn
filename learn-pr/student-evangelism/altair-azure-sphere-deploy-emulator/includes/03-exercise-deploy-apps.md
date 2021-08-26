@@ -24,13 +24,17 @@ Skip this step is you have the Avnet Azure Sphere Rev 2 Starter Kit and the Mikr
 
 Deploy the SD Card server if you have an Avnet Azure Sphere **Rev 2** Starter Kit and the MikroE microSD Click.
 
-### Step 1: Deploy the SD Card server
+### Step 1: Insert Micro SD Card
+
+Ensure you have inserted a SD Card into the MikroE microSD Card Click.
+
+### Step 2: Deploy the SD Card server
 
 ```bash
 azsphere device sideload deploy --image-package AltairRT_sd_card_server.imagepackage
 ```
 
-### Step 2: Format the A: drive
+### Step 3: Format the A: drive
 
 1. Format the A: drive. Deploy the following application image.
 
@@ -40,7 +44,7 @@ azsphere device sideload deploy --image-package AltairRT_sd_card_server.imagepac
 
 1. Press **Button A** on the Avnet Azure Sphere. The status LED will turn green while formatting. The status LED will turn off when the formatting is complete. The status LED will turn red to indicate formatting failed. If formatting fails, try another SD Card.
 
-### Step 3: Format the B: drive
+### Step 4: Format the B: drive
 
 1. Format the B: drive. Deploy the following application image.
 
