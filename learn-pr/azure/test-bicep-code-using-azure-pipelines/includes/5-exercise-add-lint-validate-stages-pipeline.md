@@ -35,7 +35,7 @@ First, you need to update your pipeline file to define a stage. Azure Pipelines 
 
 ## Configure the linter
 
-TODO explanation
+By default, the Bicep linter provides a warning when it detects a problem with your file. Azure Pipelines doesn't treat linter warnings as issues that should stop your pipeline. To customize this behavior, you create a *bicepconfig.json* that reconfigures the linter.
 
 1. Add a new file in the *deploy* folder and name it `bicepconfig.json`.
 
@@ -56,6 +56,8 @@ TODO explanation
    git push
    ```
 
+   Immediately after you push, Azure Pipelines starts a new pipeline run.
+
 ## View the pipeline run
 
 1. In your browser, navigate to your pipeline.
@@ -72,7 +74,11 @@ TODO explanation
 
 1. In Visual Studio Code, open the *deploy/main.bicep* file.
 
-1. TODO fix error
+1. Notice that the Bicep linter has detected that a parameter isn't used. In Visual Studio Code, it indicates this by displaying a squiggly line. Normally this would be yellow, but because you customized the *bicepconfig.json* file, it treats it as an error and displays the squiggly line in red.
+
+   :::code language="bicep" source="code/5-template-1.bicep" range="15" :::
+
+1. Delete the `storageAccountNameParam` parameter.
 
 1. Save the file.
 
@@ -80,7 +86,7 @@ TODO explanation
 
    ```bash
    git add .
-   git commit -m "TODO"
+   git commit -m "Remove unused parameter"
    git push
    ```
 
@@ -100,7 +106,15 @@ TODO explanation
 
 1. In Visual Studio Code, open the *deploy/main.bicep* file.
 
-1. TODO fix error
+1. Look at the definition of the `storageAccountName` variable:
+
+   :::code language="bicep" source="code/5-template-2.bicep" range="16-19" highlight="4" :::
+
+   There seems to be a typo and the string interpolation hasn't been configured correctly.
+
+1. Update the `storageAccountName` variable to use string interpolation correctly:
+
+   :::code language="bicep" source="code/5-template-3.bicep" range="19" :::
 
 1. Save the file.
 
@@ -108,7 +122,7 @@ TODO explanation
 
    ```bash
    git add .
-   git commit -m "TODO"
+   git commit -m "Fix string interpolation"
    git push
    ```
 
