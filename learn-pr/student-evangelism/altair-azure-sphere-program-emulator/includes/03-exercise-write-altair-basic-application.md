@@ -2,7 +2,7 @@ In this exercise, you'll learn how to write your first Altair BASIC application.
 
 ## Altair Basic
 
-The Altair emulator would have started running before your connected to the Web Terminal. So, press the **RESET** button on the Azure Sphere to restart the Altair emulator. When it restarts you will be prompted for the following information:
+The Altair emulator would have started running before your connected to the Web Terminal. So, press the **RESET** button on the Azure Sphere to restart the Altair emulator. When it restarts, you will be prompted for the following information:
 
 * **MEMORY SIZE?** If you only plan to run Altair BASIC, press the Enter key. If you plan to boot into CP/M, then enter 32000 followed by the Enter key.
 * **TERMINAL  WIDTH?** Press the Enter key to accept the default.
@@ -86,7 +86,47 @@ The following BASIC program is a listing of IOT.BAS.
 170 GOTO 140
 180 PRINT "Air pressure is ";A$;" hPa."
 210 PRINT
+```
 
+This is the sphere_port_in C function found in main.c of the Altair emulator application.
+
+```c
+/// <summary>
+/// Support for BASIC Port In for IOT.BAS temperature and pressure example
+/// Example shows environment temperature and pressure example
+/// </summary>
+/// <param name="port"></param>
+/// <returns></returns>
+static uint8_t sphere_port_in(uint8_t port) {
+  static bool reading_data = false;
+  static char data[10];
+  static int readPtr = 0;
+  uint8_t retVal = 0;
+  if (port == 43) {
+    if (!reading_data) {
+      readPtr = 0;
+      snprintf(data, 10, "%d", onboard_telemetry.latest.temperature);
+      publish_telemetry(onboard_telemetry.latest.temperature, onboard_telemetry.latest.pressure);
+      reading_data = true;
+    }
+    retVal = data[readPtr++];
+    if (retVal == 0x00) {
+      reading_data = false;
+    }
+  }
+  if (port == 44) {
+    if (!reading_data) {
+      readPtr = 0;
+      snprintf(data, 10, "%d", onboard_telemetry.latest.pressure);
+      reading_data = true;
+    }
+    retVal = data[readPtr++];
+    if (retVal == 0x00) {
+      reading_data = false;
+    }
+  }
+  return retVal;
+}
 ```
 
 To run IOT.BAS, follow these steps.
