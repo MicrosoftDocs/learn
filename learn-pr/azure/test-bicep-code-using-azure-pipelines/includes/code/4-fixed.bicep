@@ -12,12 +12,11 @@ param environmentType string
 @maxLength(13)
 param resourceNameSuffix string = uniqueString(resourceGroup().id)
 
-param storageAccountName string = 'my-storage'
-
 // Define the names for resources.
 var appServiceAppName = 'toy-website-${resourceNameSuffix}'
 var appServicePlanName = 'toy-website'
 var applicationInsightsName = 'toywebsite'
+var storageAccountName = 'mystorage${resourceNameSuffix}'
 
 // Define the SKUs for each component based on the environment type.
 var environmentConfigurationMap = {
@@ -33,19 +32,18 @@ var environmentConfigurationMap = {
     appServicePlan: {
       sku: {
         name: 'F1'
-        capacity: 1
       }
     }
   }
 }
 
-resource appServicePlan 'Microsoft.Web/serverfarms@2020-06-01' = {
+resource appServicePlan 'Microsoft.Web/serverfarms@2021-01-15' = {
   name: appServicePlanName
   location: location
   sku: environmentConfigurationMap[environmentType].appServicePlan.sku
 }
 
-resource appServiceApp 'Microsoft.Web/sites@2020-06-01' = {
+resource appServiceApp 'Microsoft.Web/sites@2021-01-15' = {
   name: appServiceAppName
   location: location
   properties: {
@@ -65,12 +63,14 @@ resource appServiceApp 'Microsoft.Web/sites@2020-06-01' = {
   }
 }
 
-resource applicationInsights 'Microsoft.Insights/components@2018-05-01-preview' = {
+resource applicationInsights 'Microsoft.Insights/components@2020-02-02' = {
   name: applicationInsightsName
   location: location
   kind: 'web'
   properties: {
     Application_Type: 'web'
+    Request_Source: 'rest'
+    Flow_Type: 'Bluefield'
   }
 }
 
@@ -82,3 +82,5 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2021-04-01' = {
     name: 'Standard_LRS'
   }
 }
+
+output appServiceAppHostName string = appServiceApp.properties.defaultHostName

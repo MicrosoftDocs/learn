@@ -21,6 +21,16 @@ It's also a good idea to perform *negative testing*. Negative testing helps you 
 > [!NOTE]
 > The goal of these tests isn't to verify that Bicep has actually deployed your resources correctly. By using Bicep, you're making the assumption that it will deploy the resources that you specify in your Bicep files. Instead, the goal is to verify that the resources that you've defined will actually work for your requirements.
 
+### Run tests from Azure Pipelines
+
+There are many ways you can run tests in your pipeline. In this module, we use Pester, which is an open-source tool that runs tests written using PowerShell. You might choose to use a different test framework, or even to run your tests without a testing tool.
+
+When you use a supported test framework, Azure Pipelines understands the results of each test. It displays the test results alongside the pipeline run information, and it tracks the history of each test over time. In the next exercise, you'll see how you can use Azure Pipelines with infrastructure smoke tests.
+
+### Pass data between steps and stages
+
+TODO to be able to run tests, you need to pass data around
+
 ### Other test types
 
 *Functional tests* and *integration tests* are often used to validate that the resources deployed are behaving as you expect and that they work correctly for the solution you're deploying. For example, an integration test might connect to your website and submit a test transaction, then wait to confirm the transaction completes successfully. By using integration tests, you can test the solution your team builds as well as the infrastructure it's running on. In a future module, you'll see how functional tests can be added to your pipeline.
