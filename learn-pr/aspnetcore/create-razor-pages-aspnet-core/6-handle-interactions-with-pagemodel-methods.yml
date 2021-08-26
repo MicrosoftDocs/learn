@@ -11,7 +11,7 @@ metadata:
 title: Handle interactions in PageModel handler methods
 durationInMinutes: 8
 content: |
-  [!include[](includes/6-handle-interactions-in-pagemodel.md)]
+  [!include[](includes/6-handle-interactions-with-pagemodel-methods.md)]
 quiz:
   title: Check your knowledge
   questions:
