@@ -99,5 +99,6 @@ In this module, you will:
 * An Azure Sphere developer board. Either:
   * An Avnet Azure Sphere Starter Kit Rev 1 or 2.
   * Or, a Seeed Studio Azure Sphere MT3620 Development Kit.
+* A GitHub account.
 
 In the next unit, you'll learn how to install the required software and deploy the Altair 8800 emulator to your Azure Sphere.
