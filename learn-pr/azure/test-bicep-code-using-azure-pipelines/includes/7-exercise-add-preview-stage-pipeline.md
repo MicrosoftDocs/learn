@@ -8,11 +8,6 @@ You want to add an extra stage to your pipeline so you can check what changes wi
 - Approve the pipeline run.
 - Observe the successful deployment.
 
-## Add a second service principal with read permissions on your resource group and a corresponding service connection
-
-<TODO John: Add steps for SP creation with read permissions on the RG>
-<TODO John: Add steps for SC creation>
-
 ## Update your service connection to need an approval
 
 1. In your browser, navigate to your **Project settings**.

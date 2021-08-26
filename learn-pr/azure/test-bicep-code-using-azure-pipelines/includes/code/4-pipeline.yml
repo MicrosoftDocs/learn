@@ -6,33 +6,24 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-variables:
-  ServiceConnectionName: ToyWebsite
-  ResourceGroupName: ToyWebsite
-  EnvironmentType: Test
+jobs:
+- job:
+  steps:
+  - task: AzureCLI@2
+    inputs:
+      azureSubscription: $(ServiceConnectionName)
+      scriptType: 'bash'
+      scriptLocation: 'inlineScript'
+      inlineScript: 'az bicep upgrade'
 
-stages:
-
-- stage: Deploy
-  jobs:
-  - job: Deploy
-    steps:
-      - task: AzureCLI@2
-        inputs:
-          azureSubscription: $(ServiceConnectionName)
-          scriptType: 'bash'
-          scriptLocation: 'inlineScript'
-          inlineScript: 'az bicep upgrade'
-
-      - task: AzureCLI@2
-        name: Deploy
-        displayName: Deploy to Azure
-        inputs:
-          azureSubscription: $(ServiceConnectionName)
-          scriptType: 'bash'
-          scriptLocation: 'inlineScript'
-          inlineScript: |
-            az deployment group create \
-              --resource-group $(ResourceGroupName) \
-              --template-file deploy/main.bicep \
-              --parameters environmentType=$(EnvironmentType)
+  - task: AzureCLI@2
+    inputs:
+      azureSubscription: $(ServiceConnectionName)
+      scriptType: 'bash'
+      scriptLocation: 'inlineScript'
+      inlineScript: |
+        az deployment group create \
+          --name $(Build.BuildNumber) \
+          --resource-group $(ResourceGroupName) \
+          --template-file deploy/main.bicep \
+          --parameters environmentType=$(EnvironmentType) deployToyManualsStorageAccount=$(DeployToyManualsStorageAccount)

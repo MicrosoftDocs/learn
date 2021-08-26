@@ -6,11 +6,6 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-variables:
-  ServiceConnectionName: ToyWebsite
-  ResourceGroupName: ToyWebsite
-  EnvironmentType: Test
-
 stages:
 - stage: Lint
   jobs: 
