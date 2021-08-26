@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn-pr.azure.azure-speech-services-tutorials-mrtk.introduction
-title: Introduction
+uid: learn.azure.azure-speech-services-tutorials-mrtk.1-introduction
+title: Introduction to Azure Speech Services
 metadata:
   title: Introduction
   description: Introduction
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-mrtk
 durationInMinutes: 1
 content: |
-  [!include[](includes/introduction.md)]
+  [!include[](includes/1-introduction.md)]
