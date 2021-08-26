@@ -109,7 +109,7 @@ Now that we have a function app, it's time to create a function. A function is a
 
 1. In the top menu bar, select **Get Function Url**. The **Get Function Url** dialog box appears.
 
-1. Select **default (function key)** from the dropdown list, then select the *Copy to clipboard* icon at the end of the URL.
+1. Select **default (function key)** from the dropdown list, then select the *Copy to clipboard* icon at the end of the URL, and then select **OK**.
 
 1. Paste the function URL you copied into the address bar of a new tab in your browser.
 
