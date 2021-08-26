@@ -33,7 +33,6 @@ units:
 - learn.tensorflow.intro-computer-vision.multilayer-dense-neural-networks
 - learn.tensorflow.intro-computer-vision.convolutional-networks
 - learn.tensorflow.intro-computer-vision.transfer-learning
-- learn.tensorflow.intro-computer-vision.mobilenet
 - learn.tensorflow.intro-computer-vision.summary
 badge:
   uid: learn.tensorflow.intro-computer-vision.badge

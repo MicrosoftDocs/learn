@@ -75,7 +75,7 @@ You don't have any resources in this resource group yet, so the list at the bott
 
 1. Select **Review + create**, and then, after validation passes, select **Create** to add the virtual network to your resource group.
 
-1. Repeat the virtual network creation steps again to create one more virtual network. Make sure to place the virtual network in the resource group that you created earlier, and name  the virtual network `msftlearn-vnet1`. 
+1. Repeat the virtual network creation steps again to create one more virtual network. Make sure to place the virtual network in the resource group that you created earlier, and name  the virtual network `msftlearn-vnet2`. 
 
 1. Go back to your resource group, and on the **Overview** pane you should see the two virtual networks you created.
 

@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 title: Build your first Bicep deployment workflow by using GitHub Actions
 summary: |
-  Build a basic deployment workflow for Bicep code. Use a secret to securely identify your GitHub Actions workflow to Azure, and then set when the workflow runs by using triggers and schedules.
+  Create an automated workflow in GitHub Actions that securely deploys resources to Azure from Bicep code. Configure your workflow to run on a schedule or when your configuration changes.
 abstract: |
   After completing this module, you'll be able to:
     - Automate Bicep deployments by using a workflow in GitHub Actions
