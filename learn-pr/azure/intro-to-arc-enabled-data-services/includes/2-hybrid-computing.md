@@ -30,7 +30,7 @@ Microsoft provides several environments for working with hybrid computing enviro
 Microsoft Azure Arc meets the requirements for a Hybrid computing environment. It provides tools for deployment, monitoring, and management of your infrastructure. Microsoft Azure Arc also gives you deployment options for Microsoft Windows, Linux, and Kubernetes clusters. Microsoft Azure Arc allows you to combine on-premises and multi-cloud services.
 
 ### Azure Arc-enabled servers
-Azure Arc-enabled servers expands support to server-based resources that run outside of Azure. You can register a Windows or Linux server running in an on-premises data center with Azure Arc and use many of the resource management capabilities available on Azure. You can use a Windows or Linux server hosted by another cloud provider for your deployment.
+Azure Arc-enabled servers expand support to server-based resources that run outside of Azure. You can register a Windows or Linux server running in an on-premises data center with Azure Arc and use many of the resource management capabilities available on Azure. You can use a Windows or Linux server hosted by another cloud provider for your deployment.
 
 ### Azure Arc Enabled Kubernetes
 Using Azure Arc, organizations can connect Kubernetes clusters located anywhere to Azure. You can manage clusters in a consistent way. Azure Arc enabled Kubernetes lets you control the cluster configuration and workloads at scale, using git repositories for the clusters. It also lets organizations use management capabilities in Azure for cluster management needs such as inventory, monitoring, policy compliance, security, user access, and more.
@@ -39,5 +39,5 @@ Using Azure Arc, organizations can connect Kubernetes clusters located anywhere 
 SQL Server on Azure Arc-enabled servers extends Azure services to existing SQL Server instances hosted outside of Azure in the customer’s datacenter, on the edge, or in a multi-cloud environment.
 
 ### Azure Arc-enabled data services
-Azure Arc-enabled data services makes it possible to run Azure data services such as Azure Arc-enabled-SQL Managed Instance and Azure Arc enabled PostgreSQL Hyperscale. You can run these systems on-premises, at the edge, in Azure and in other public clouds. 
-Using Kubernetes allows you to use the infrastructure of your choice. You get an always-current, elastically scaled, self-provisioning deployment. You also get a unified command-line and graphical management and monitoring system. Azure Arc-enabled data services has both direct and indirect connected modes. Azure Arc-enabled data services also provides deep security and compliance monitoring.
+Azure Arc-enabled data services make it possible to run Azure data services such as Azure Arc-enabled-SQL Managed Instance and Azure Arc enabled PostgreSQL Hyperscale. You can run these systems on-premises, at the edge, in Azure and in other public clouds. 
+Using Kubernetes allows you to use the infrastructure of your choice. You get an always-current, elastically scaled, self-provisioning deployment. You also get a unified command-line and graphical management and monitoring system. Azure Arc-enabled data services have both direct and indirect connected modes. Azure Arc-enabled data services also provide deep security and compliance monitoring.
