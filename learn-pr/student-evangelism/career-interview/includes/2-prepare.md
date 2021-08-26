@@ -18,11 +18,11 @@ No two tech companies are the same, so knowing how to prepare for different inte
 
 - **Algorithm focused**. This type of interview involves tasks where you are asked to implement things like binary trees, shortest path problems and so on.
 
-- **Enterprise focused**. Some technical interviews are focus on enterprise software, so called line-of-business applications or LOB. Challenges might revolve around maintaining applications, refactoring old code, and the interview focus is less on performance and more on integrating systems.
+- **Enterprise focused**. Some technical interviews are focused on enterprise software, so called line-of-business applications or LOB. Challenges might revolve around maintaining applications, refactoring old code, and the interview focus is less on performance and more on integrating systems.
 
 So, how can you guess the kind of interview your prospective company will assign? You can do research to discover your target position's expectations. You should also ask your recruiter what to expect and if they have materials to help you prepare.  
 
-### Algorithm focused
+## Algorithm focused
 
 > What does an interview that focuses on algorithm challenges look for?
 
@@ -51,15 +51,6 @@ These platforms offer many problems to try to solve and will let you use differe
 
 > [!TIP]
 > It's worth bookmarking some of the above sites for later study.
-
-## Mini exercise, work on a task
-
-Visit several of these sites and try a coding task.
-
-Pick your favorite and set yourself a goal to practice a task a day, or choose a cadence that works for you.
-
-> [!TIP]
-> Keep yourself on track by taking notes of your progress as you work through the problems.
 
 ### Additional practice - books
 
@@ -139,8 +130,3 @@ Now that you hopefully have some bookmarks for resources, lets focus on some gen
 
 - **Convey being a team player**. Being a developer is about being a team player. As such, you should make it clear in an interview that you understand that you didn't deliver a big project by yourself. Explain your role in it but try not to boast. Be humble but confident.
 
-## Mini exercise - practice questions
-
-Take a few minutes each day before your interview to practice some of these questions in front of a mirror, or with a friend.
-
-Challenge yourself to observe your body language as you speak, and try to ensure that you always look confident in your answers.

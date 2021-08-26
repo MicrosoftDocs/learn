@@ -1,6 +1,6 @@
 ![Cartoon showing your first day in a new job](../media/interview.png)
 
-Congratulations on landing the interview! What are your next steps? When it comes to interviews, it is helpful to understand the different phases of the process that, depending on your performance, can impact the outcome. <br /> <br />
+Congratulations on landing the interview! What are your next steps? When it comes to interviews, it is helpful to understand the different phases of the process that, depending on your performance, can impact the outcome.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4O7NF]
 
