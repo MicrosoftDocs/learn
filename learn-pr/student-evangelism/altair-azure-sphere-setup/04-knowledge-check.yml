@@ -13,7 +13,7 @@ durationInMinutes: 2 # dummy number at present
 content: |
 quiz:
   questions:
-  - content: "Which of the following hardware is required to run the Altair 8800 emulator on Azure Sphere?"
+  - content: "What hardware is required to run the Altair 8800 emulator on Azure Sphere?"
     choices:
     - content: "You can run the emulator on a standalone Azure Sphere developer board from Avnet or Seeed Studio."
       isCorrect: true
@@ -40,7 +40,7 @@ quiz:
     - content: "You can't run real-time applications on an Azure Sphere."
       isCorrect: false
       explanation: "You can run real-time applications on the Azure Sphere Cortex-M4 cores."
-    - content: "You can run real-time applications on the Azure Sphere Cortex-A7 Linux kernel core."
+    - content: "You can run real-time applications on the Azure Sphere Cortex-A7 core."
       isCorrect: false
       explanation: "You cannot run real-time applications on the Cortex-A7 core as the application has to compete for resources with other services running on the Linux kernel."
     - content: "You can run real-time applications on the Azure Sphere Cortex-M4 cores."
