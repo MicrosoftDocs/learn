@@ -45,6 +45,116 @@ The following markup is an example of an `@` symbol followed by C# code. The cod
 
 A Razor page supports Razor syntax, which is HTML and C# combined. The C# code defines the dynamic rendering logic for the page on the server. The default Razor language is HTML. Rendering HTML from Razor markup is no different than rendering HTML from an HTML file. HTML markup in *.cshtml* Razor page files is rendered by the server unchanged. In Razor Pages, HTML can be used as you're used to. At the same time, you can take advantage of powerful and time-saving Razor features as you learn to use them.
 
+## Add Pizza and PizzaService classes
+
+Before we start to implement our form to manage pizzas, we need to have a data store that we can perform operations on.
+
+A *model* class is needed to represent a pizza in inventory. The model contains properties that represent the characteristics of a pizza. The model is used to pass data in the web app and to persist pizza options in the data store. In this unit, that data store will be a simple local in-memory caching service. In a real-world application, you would consider using a database, such as SQL Server, with Entity Framework Core.
+
+## Create a pizza model
+
+1. Run the following command to create a `Models` folder:
+
+    ```bash
+    mkdir Models
+    ```
+
+    Select the `Models` folder in Visual Studio Code and add a new File called `Pizza.cs`.
+
+    The project root now contains a *Models* directory with an empty *Pizza.cs* file. The directory name *Models* is a convention.
+
+1. Add the following code to *Models/Pizza.cs* to define a pizza. Save your changes.
+
+    ```csharp
+    namespace RazorPagesPizza.Models
+    {
+        public class Pizza
+        {
+            public int Id { get; set; }
+    
+            [Required]
+            public string Name { get; set; }
+            public PizzaSize Size { get; set; }
+            public bool IsGlutenFree { get; set; }
+    
+            [Range(0.01, 9999.99)]
+            public decimal Price { get; set; }
+        }
+    
+        public enum PizzaSize { Small, Medium, Large }
+    }
+    ```
+
+    [!INCLUDE[OS-specific keyboard shortcuts](../../includes/keyboard-shortcuts-table.md)]
+
+## Add data service
+
+1. Run the following command to create a `Services` folder:
+
+    ```bash
+    mkdir Services
+    ```
+
+    Select the folder in Visual Studio Code and add a new File called `PizzaService.cs`. 
+
+1. Add the following code to *Services/PizzaService.cs* to create an in-memory pizza data service. Save your changes.
+
+    ```csharp
+    using RazorPagesPizza.Models;
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+    
+    namespace RazorPagesPizza.Services
+    {
+        public static class PizzaService
+        {
+            static List<Pizza> Pizzas { get; }
+            static int nextId = 3;
+            static PizzaService()
+            {
+                Pizzas = new List<Pizza>
+                {
+                    new Pizza { Id = 1, Name = "Classic Italian", Price=20.00M, Size=PizzaSize.Large, IsGlutenFree = false },
+                    new Pizza { Id = 2, Name = "Veggie", Price=15.00M, Size=PizzaSize.Small, IsGlutenFree = true }
+                };
+            }
+    
+            public static List<Pizza> GetAll() => Pizzas;
+    
+            public static Pizza Get(int id) => Pizzas.FirstOrDefault(p => p.Id == id);
+    
+            public static void Add(Pizza pizza)
+            {
+                pizza.Id = nextId++;
+                Pizzas.Add(pizza);
+            }
+    
+            public static void Delete(int id)
+            {
+                var pizza = Get(id);
+                if (pizza is null)
+                    return;
+    
+                Pizzas.Remove(pizza);
+            }
+    
+            public static void Update(Pizza pizza)
+            {
+                var index = Pizzas.FindIndex(p => p.Id == pizza.Id);
+                if (index == -1)
+                    return;
+    
+                Pizzas[index] = pizza;
+    
+            }
+        }
+    }
+    ```
+
+    This service provides a simple in-memory data caching service with two pizzas by default that our web app will use for demo purposes. When we stop and start the web app the in-memory data cache will be reset to the two default pizzas from the constructor of the `PizzaService`.
+
 ## Add form markup to the *Create* Razor page
 
 Replace the contents of *Pages/Pizza.cshtml* with the following markup. Save your changes.
@@ -107,7 +217,7 @@ Replace the contents of *Pages/Pizza.cshtml* with the following markup. Save you
 
 [!INCLUDE[OS-specific keyboard shortcuts](../../includes/keyboard-shortcuts-table.md)]
 
-The *Create* Razor page uses HTML and Razor to support a product creation form. The form accepts **Name** and **Price** values for the product to be created. With relatively little markup, dynamic features have been provided through Razor Tag Helpers. Client-side form input validation is enabled via the inclusion of the *Pages/Shared/_ValidationScriptsPartial.cshtml* partial view. The partial view's contents are injected into the layout page's `Scripts` section.
+The *Pizza* Razor page uses HTML and Razor to support a product creation form. The form accepts **Name** and **Price** values for the product to be created. With relatively little markup, dynamic features have been provided through Razor Tag Helpers. Client-side form input validation is enabled via the inclusion of the *Pages/Shared/_ValidationScriptsPartial.cshtml* partial view. The partial view's contents are injected into the layout page's `Scripts` section.
 
 ## Review Razor Tag Helpers
 
@@ -118,7 +228,7 @@ There are four Tag Helpers on this page:
 * Partial
 * Label
 * Input
-* Validation Message
+* Validation Summary Message
 
 ### Partial Tag Helper
 
@@ -168,17 +278,17 @@ The following HTML output is generated from the Input Tag Helper located in the 
 <input name="NewPizza.Name" class="form-control" id="NewPizza_Name" type="text" value="" data-val-required="The Name field is required." data-val="true">
 ```
 
-### Validation Message Tag Helper
+### Validation Summary Tag Helper
 
-The following markup uses the Validation Message Tag Helper. It displays a validation message for a single property on the model.
+The following markup uses the Validation Summary Tag Helper. It displays a validation message for a single property on the model.
 
 ```cshtml
-<span asp-validation-for="NewPizza.Price" class="text-danger"></span>
+<div asp-validation-summary="All"></div>
 ```
 
 The Input Tag Helper adds HTML5 `data-` attributes to input elements. The attributes are based on properties in the C# model classes. While responsive client-side validation occurs, validation is also done on the server, which is more secure.
 
-The following HTML is rendered by the Validation Message Tag Helper:
+The following HTML is rendered by the Validation Summary Tag Helper:
 
 ```html
 <input name="NewPizza.Price" class="form-control" id="NewPizza_Price" type="text" value="" data-val-required="The Price field is required." data-val="true" data-val-range-min="0.01" data-val-range-max="9999.99" data-val-range="The field Price must be between 0.01 and 9999.99." data-val-number="The field Price must be a number.">
@@ -186,4 +296,4 @@ The following HTML is rendered by the Validation Message Tag Helper:
 
 The `type`, `data-val-range-min`, `data-val-range-max`, and error response are dynamically set by the model's data annotations for the model's `Product.Price` property.
 
-The product creation Razor page has been created. Let's explore its `PageModel` class and modify it to handle the form's HTTP POST request.
+The product creation Razor page has been created. In order to process form interactions, we'll need to modify the `PageModel` class to handle the form's HTTP POST request. We'll explore `PageModel` interactions next.

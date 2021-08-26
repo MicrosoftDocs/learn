@@ -1,64 +1,126 @@
-You've added a product creation page, so it's time to test and run the completed project.
+In this unit, you'll add a HTTP POST page handler for the *Pizza* Razor page form. Finally, you'll walk through the `Pizza` model and its data annotations that drive both client-side and server-side validation.
 
-## Compile, deploy, and test the updated project
+## Examine the structure of a Razor Pages `PageModel` class
 
-### Compile the project
+Open the *Pages/Pizza.cshtml.cs* `PageModel` class file. You may remember, that when you created a new Razor page called *Pizza*, its `PageModel` class file named *Pizza.cshtml.cs* was generated. Examine the contents. It contains the following C# code:
 
-Run the following command:
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
-```dotnetcli
-dotnet build
+namespace RazorPagesPizza.Pages
+{
+    public class PizzaModel : PageModel
+    {
+        public void OnGet()
+        {
+        }
+    }
+}
 ```
 
-The preceding command compiles the project with your latest saved changes.
+## Update the HTTP Get page handler to display the list of Pizzas
 
-### Redeploy the app to Azure App Service
+Currently, the `PizzaModel` class handles the HTTP GET request with an empty `OnGet` page handler. Let's update this to display a list of pizzas from the `PizzaService`.
 
-Run the following command in the command shell:
+### Update the `OnGet` page handler
 
-```azurecli
-az webapp up
+Update the `OnGet` method as follows:
+
+```csharp
+public void OnGet()
+{
+    pizzas = PizzaService.GetAll();
+}
 ```
 
-The preceding command updates the web app that was previously deployed to Azure App Service. Be patient, as it may take a few minutes to complete. Once your changes have been deployed, a variation of the following output appears:
+### Use a utility method to format the Gluten Free information in the list
 
-```console
-You can launch the app at http://webapp<random ID number here>.azurewebsites.net
+Our `IsGlutenFree` property is a boolean value. We can use a utility method to format the boolean value as a string. Add the following utility method to the `PizzaModel` class:
+
+```csharp
+public string GlutenFreeText(Pizza pizza)
+{
+    if (pizza.IsGlutenFree)
+        return "Gluten Free";
+    return "Not Gluten Free";
+}
 ```
 
-## Tour the app
+## Add an HTTP POST page handler to the `PageModel`
 
-1. Return to the web app in your browser window.
+Add the following method to the *Pages/Pizza.cshtml.cs* `PageModel` class. Save your changes.
 
-1. Select the **:::no-loc text="Products Admin":::** link.
+```csharp
+public IActionResult OnPost()
+{
+    if (!ModelState.IsValid)
+    {
+        return Page();
+    }
+    PizzaService.Add(NewPizza);
+    return RedirectToAction("Get");
+}
+```
 
-    Notice the presence of the new **:::no-loc text="Add Product":::** link:
+The `PizzaModel` class now has an asynchronous `OnPost` page handler. `OnPost` executes when the user posts the *Pizza* page's form. You can also use the optional *Async* naming suffix, `OnPostAsync`.
 
-    :::image type="content" source="../media/8-deploy-test/products-admin-updated.png" alt-text="Screenshot of the updated products administration page." border="true" lightbox="../media/8-deploy-test/products-admin-updated.png":::
+The `OnPost` page handler needs to perform the following tasks for this app:
 
-1. Select the **:::no-loc text="Add Product":::** link:
+* Verify the user-submitted data posted to the `PageModel` is valid.
+* If the attempted `PageModel` changes are invalid, the *Pizza* page is presented again to the user. A message is displayed clarifying the input requirements.
+* If the `PageModel` update is valid, then data changes are passed to a service called `PizzaService`. `PizzaService` will handle the concern of HTTP requests and responses to the web API.
 
-    Your new *:::no-loc text="Create":::* page displays:
+## Bind the model
 
-    :::image type="content" source="../media/8-deploy-test/product-creation-page.png" alt-text="Screenshot of the product creation page." border="true" lightbox="../media/8-deploy-test/product-creation-page.png":::
+The `PizzaModel` class needs access to the `Pizza` model. It will validate and pass `Pizza` entries from the *Pizza* form using the `[BindProperty]` attribute. Add the following code to your `PizzaModel` class:
 
-1. Leave the **:::no-loc text="Name":::** text box empty. Enter `asdf` in the **:::no-loc text="Price":::** text box. Move focus away from the **:::no-loc text="Price":::** text box.
+```csharp
+[BindProperty]
+public NewPizza Pizza { get; set; }
+```
 
-    Client-side validation occurs. A validation message appears next to the text box because the provided value isn't numeric:
+## Add an HTTP POST handler for the Delete buttons
 
-    :::image type="content" source="../media/8-deploy-test/product-creation-client-validation.png" alt-text="Screenshot of a client-side validation message on the product creation form." border="true" lightbox="../media/8-deploy-test/product-creation-client-validation.png":::
+A Razor page can include multiple forms. Since the Delete buttons in our list of pizzas modifies data, an HTTP POST rather that an HTTP GET is required.
 
-1. Leave the **:::no-loc text="Name":::** text box empty. Enter `0` in the **:::no-loc text="Price":::** text box. Select the **:::no-loc text="Save":::** button.
+Add the following `OnPostDelete` method to the `PizzaModel` class:
 
-    Server-side validation occurs. Validation messages appear next to the text boxes because the provided values are invalid:
+```csharp
+public IActionResult OnPostDelete(int id)
+{
+    PizzaService.Delete(id);
+    return RedirectToAction("Get");
+}
+```
 
-    :::image type="content" source="../media/8-deploy-test/product-creation-server-validation.png" alt-text="Screenshot of the product creation form validation messages." border="true" lightbox="../media/8-deploy-test/product-creation-server-validation.png":::
+## Link to the *Pizza* page
 
-1. Enter any product name in the **:::no-loc text="Name":::** text box. Enter `30` in the **:::no-loc text="Price":::** text box. Select the **:::no-loc text="Save":::** button.
+The *Pizza* page has been created and implemented. Let's allow users to navigate to it.
 
-    The form fields passed validation. For that reason:
+### Add an Anchor Tag Helper to the *Index* page
 
-    * The form data is sent to the web API via an HTTP POST request.
-    * You're returned to the products page, which displays the new product in the list.
+1. In *Pages/Shared/_Layout_.cshtml*, add the following code to the `<nav>` section between the `Home` and `Privacy` links:
 
-1. When you're finished testing your app, close the browser.
+```razor
+<li class="nav-item">
+    <a class="nav-link text-dark" asp-area="" asp-page="/Pizza">Pizza List</a>
+</li>
+```
+
+The result will appear as follows:
+
+   [!code-cshtml[](../code/layout.cs?highlight=25)]
+
+1. Save your changes.
+
+The preceding highlighted code uses an Anchor Tag Helper. The Tag Helper:
+
+* Directs the user to the *Pages/Pizzas/Create.cshtml* Razor page, located in the same directory as the *Index* page.
+* Enhances the standard HTML anchor (`<a>`) tag by adding custom HTML attributes, such as `asp-page-handler`.
+
+The `asp-page-handler` attribute is used to route to a specific page handler for the Razor page defined in the `asp-page` attribute. The `asp-page` attribute is used set an anchor tag's `href` attribute value to a specific Razor page.

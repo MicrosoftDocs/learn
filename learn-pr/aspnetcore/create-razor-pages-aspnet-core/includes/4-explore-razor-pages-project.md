@@ -1,59 +1,54 @@
 In this unit, you'll use the .NET Core CLI to compile and run a web app. You'll tour the running app to understand the UI experience it provides.
 
-The .NET Core CLI:
+## Examine the project
 
-* Offers the simplest way to create, compile, and run an ASP.NET Core web app.
-* Provides a consistent experience across Windows, Linux, and macOS.
+The *RazorPagesPizza* project directory is currently open in the Visual Studio Code editor. The following table outlines noteworthy project files and directories. Examine each of them in the Visual Studio Code editor window.
 
-## Run the Razor Pages project and explore its UI
+| Name                                        | Description                                                                                                                     |
+|---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| *Pages/*                | Contains Razor Pages and supporting files. Each Razor page is a pair of files:<br>* A *.cshtml* file that contains markup with C# code using Razor syntax.<br>* A *.cshtml.cs* `PageModel` class file that defines page handler methods and data used to render the page.                                      |
+| *wwwroot/*              | Contains static asset files, such as HTML, JavaScript, and CSS.
+| *RazorPagesPizza.csproj* | Contains configuration metadata for the project, such as dependencies.                                                          |
+| *Program.cs*            | Serves as the app's managed entry point.                                                                                        |
+| *Startup.cs*            | Configures app behavior, such as routing between pages.                                                                         |
 
-### Compile and run the project
+### Razor page files and their paired `PageModel` class file
 
-1. Run the following .NET Core CLI command in the command shell:
+By convention, the *Pages* directory is where all Razor Pages are stored and organized in an ASP.NET Core app.
 
-    ```dotnetcli
-    dotnet run
-    ```
+A Razor page has a *.cshtml* file extension. By convention, its associated `PageModel` C# class file uses the same name but with a *.cs* appended. For example, the Razor page *Index.cshtml* has an associated `PageModel` class file for *Index.cshtml.cs*.
 
-    The preceding command:
+A model object defines data properties and encapsulates logic or operations related to those data properties. A `PageModel` is essentially the same thing, but is a model that more specifically encapsulates the data properties and logic operations scoped just to its Razor page. The `PageModel` class:
 
-    * Locates the project file at the current directory.
-    * Retrieves and installs any required project dependencies for this project.
-    * Compiles the project code.
-    * Hosts the web app with ASP.NET Core's Kestrel web server at both `http://localhost:5000` and `https://localhost:5001`.
+* Allows for separation of the logic of a Razor page from its presentation.
+* Defines page handlers for requests sent to the page and for the data used to render the page.
 
-    This module uses the secure localhost URL beginning with `https`. You can't view the app's pages in a browser, since it isn't yet hosted on a public endpoint. You'll host the app on a public endpoint in a following step.
+A *page handler* is the method that's executed as a result of an HTTP request. For example, an `OnGet` method in the Razor page's `PageModel` class is automatically executed for an HTTP GET request.
 
-    A variation of the following output displays to indicate your app is running:
+## The *Pages/Shared* directory
 
-    ```console
-    info: Microsoft.Hosting.Lifetime[0]
-          Now listening on: https://localhost:5001
-    info: Microsoft.Hosting.Lifetime[0]
-          Now listening on: http://localhost:5000
-    info: Microsoft.Hosting.Lifetime[0]
-          Application started. Press Ctrl+C to shut down.
-    info: Microsoft.Hosting.Lifetime[0]
-          Hosting environment: Development
-    info: Microsoft.Hosting.Lifetime[0]
-          Content root path: /home/<user>/aspnet-learn/src/ContosoPets.Ui
-    ```
+Partial markup elements that are shared across several Razor pages are located by convention in a *Pages/Shared* directory. The *RazorPagesPizza* app uses two shared partial views, which are included when you create a new **ASP.NET Core Web Application** project:
 
-If running this app on your own machine, you could direct a browser to `https://localhost:5001` to view the resulting page.
+* *_Layout.cshtml*: Provides common layout elements across multiple pages.
+* *_ValidationScriptsPartial.cshtml*: Provides validation functionality such as client-side form input validation and cross-site antiforgery validation. This partial view is available to all pages in the project.
 
+### Layouts and partial view files
 
-## Tour the app
+* Layouts: In ASP.NET Core, layouts are *.cshtml* files that define a top-level template for views in the app. Apps don't require a layout. Apps can define more than one layout, with different views specifying different layouts. Most web apps have a common layout that provides a consistent user experience. The layout typically includes common UI elements such as the app header, navigation or menu elements, and footer. Common HTML structures such as scripts and stylesheets are also frequently used by many pages within an app. All of these shared elements may be defined in a layout file, which can then be referenced by any view used within the app. Layouts reduce duplicate code in views.
 
-1. Open the app in your browser by browsing to https://localhost:5001.
+* Partial view: A partial view is a Razor markup file (*.cshtml*) that renders HTML output within another markup file's rendered output. Partial views are used to break up large markup files into smaller components. They also reduce the duplication of common markup content across markup files. Partial views aren't used to maintain common layout elements. Common layout elements are specified in a *_Layout.cshtml* file.
 
-1. Select the **:::no-loc text="Products Admin":::** link near the top of the page.
+Layouts and partial views are outside of the scope of this module. At the end of the module, links are provided to take a deeper dive on features and concepts introduced here.
 
-    The following page appears:
+## The *Pages* directory structure and routing requests
 
-    :::image type="content" source="../media/4-run-razor-pages-project/products-admin.png" alt-text="The ASP.NET Core Razor Pages app's products administration page." border="true" lightbox="../media/4-run-razor-pages-project/products-admin.png":::
+Razor Pages uses the directory structure within the *Pages* directory as the convention for routing requests by default. An index page located in the root of the *Pages* directory, for example, is the default page for the app's site. In the *RazorPagesPizza* project's *Pages/Products* directory, you'll find a collection of Razor pages, including an *Index.cshtml* page. Requests routed to */Product/* will be directed to use the default *Index.cshtml* page physically located at *Products/Index.cshtml*, for example. The project's Razor pages (*.cshtml*) and accompanying `PageModel` classes (*.cshtml.cs*) are grouped conveniently in *Pages/Products*. Any passed route parameter values are made accessible through a property. ASP.NET Core offers robust routing features.
 
-    This screenshot represents the rendered *:::no-loc text="Index.cshtml":::* Razor page located in the *:::no-loc text="Pages/Products":::* directory. The URL ends with *:::no-loc text="Products":::*. By convention, Razor Pages apps map page routes to the files within the *:::no-loc text="Pages":::* directory structure.
+The following table provides routes to be used in this module's completed project.
 
-    This Razor page has requested a list of available products from the web API. Currently, you can only choose to read the current list of products and edit or delete an existing product.
-
-You've verified you can successfully compile, run, and deploy the project. Let's modify it so the user can create new product entries that are validated and sent to the web API.
+| URL                                                  | Maps to this Razor page                            |
+|------------------------------------------------------|----------------------------------------------------|
+| *www.domain.com*                 | *Pages/Index.cshtml*           |
+| *www.domain.com/index*           | *Pages/Index.cshtml*           |
+| *www.domain.com/products*        | *Pages/Products/Index.cshtml*  |
+| *www.domain.com/products/create* | *Pages/Products/Create.cshtml* |

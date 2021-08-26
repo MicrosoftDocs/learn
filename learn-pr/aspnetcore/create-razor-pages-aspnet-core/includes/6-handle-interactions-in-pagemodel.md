@@ -1,8 +1,8 @@
-In this unit, you'll review the structure of a Razor page `PageModel` class and its components. You'll add an HTTP POST page handler for the *Create* Razor page form. Finally, you'll walk through the `Pizza` model and its data annotations that drive both client-side and server-side validation.
+In this unit, you'll review the structure of a Razor page `PageModel` class and its components. You'll learn how page handlers interact with our Razor page. Finally, you'll walk through the `Pizza` model and its data annotations that drive both client-side and server-side validation.
 
 ## Examine the structure of a Razor Pages `PageModel` class
 
-Open the *Pages/Pizza.cshtml.cs* `PageModel` class file. You may remember, that when you created a new Razor page called *Create*, its `PageModel` class file named *Create.cshtml.cs* was generated. Examine the contents. It contains the following C# code:
+A new `PageModel` class file contains the following C# code:
 
 ```csharp
 using System;
@@ -30,61 +30,15 @@ Currently, the `PizzaModel` class handles the HTTP GET request with an empty `On
 * `OnGet` to initialize state needed for the page.
 * `OnPost` to handle form submissions.
 
-The *Create* page contains a form and therefore requires an HTTP POST page handler.
+The *Pizza* page contains a form and therefore requires an HTTP POST page handler.
 
-## Add an HTTP POST page handler to the `PageModel`
-
-Replace the code in the *Pages/Pizza.cshtml.cs* `PageModel` class with the following code. Save your changes.
-
-```csharp
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using RazorPagesPizza.Models;
-using RazorPagesPizza.Services;
-using System.Collections.Generic;
-
-namespace RazorPagesPizza.Pages
-{
-    public class PizzaModel : PageModel
-    {
-        public List<Pizza> pizzas;
-        public void OnGet()
-        {
-            pizzas = PizzaService.GetAll();
-        }
-
-        public IActionResult OnPostDelete(int id)
-        {
-            PizzaService.Delete(id);
-            return RedirectToAction("Get");
-        }
-
-        [BindProperty]
-        public Pizza NewPizza { get; set; }
-
-        public IActionResult OnPost()
-        {
-            PizzaService.Add(NewPizza);
-            return RedirectToAction("Get");
-        }
-
-        public string GlutenFreeText(Pizza pizza)
-        {
-            if (pizza.IsGlutenFree)
-                return "Gluten Free";
-            return "Not Gluten Free";
-        }
-    }
-}
-```
-
-The `PizzaModel` class now has an asynchronous `OnPostAsync` page handler. `OnPostAsync` executes when the user posts the *Create* page's form. The *Async* naming suffix is optional but is a common naming convention for asynchronous methods.
+## HTTP POST page handlers in a `PageModel`
 
 The `OnPostAsync` page handler needs to perform the following tasks for this app:
 
 * Verify the user-submitted data posted to the `PageModel` is valid.
 * If the attempted `PageModel` changes are invalid, the *Create* page is presented again to the user. A message is displayed clarifying the input requirements.
-* If the `PageModel` update is valid, then data changes are passed to a service called `PizzaService`. `PizzaService` will handle the concern of HTTP requests and responses to the web API.
+* If the `PageModel` update is valid, then data changes are passed to a service called `PizzaService`. The `PizzaService` will handle the concern persisting the data.
 
 ## Bind the model
 
@@ -92,7 +46,7 @@ The `PizzaModel` class needs access to the `Pizza` model. It will validate and p
 
 ```csharp
 [BindProperty]
-public Pizza Pizza { get; set; }
+public NewPizza Pizza { get; set; }
 ```
 
 Binding to properties can reduce the amount of code you have to write. Binding reduces code by using the same property to render fields such as in `<input asp-for="Pizza.Name">`.
@@ -110,13 +64,7 @@ if (!ModelState.IsValid)
 
 In the preceding code, `ModelState` represents errors from model binding and validation. If the `ModelState` is invalid, then the *Create* page is presented again to the user. In the previous unit, you saw how the *Create* Razor page uses ASP.NET Core's built-in client-side form input validation to responsively provide the user with input validation feedback.
 
-If the `ModelState` is valid, the `OnPostAsync` page handler calls upon an instance of `PizzaService`. `PizzaService` is responsible for HTTP requests and responses for the web API.
-
-```csharp
-await _PizzaService.CreatePizza(Pizza);
-
-return RedirectToPage("Index");
-```
+If the `ModelState` is valid, the `OnPostAsync` page handler calls upon an instance of `PizzaService`. `PizzaService` is responsible for storing the information - in this case, using an in-memory data store.
 
 ## Define validation rules for the Pizza model using data annotations
 
@@ -166,61 +114,6 @@ A comprehensive set of data annotation attributes is available to you in the `Sy
 
 ## The *Pizza* model as a data transfer object
 
-The `Pizza` model also serves as a Data Transfer Object (DTO). A DTO is an object that defines the data that will be sent over the network, in this case to the web API. The *RazorPagesPizza* project's `PizzaService` class that handles all HTTP requests uses the `Pizza` model as a DTO that defines valid *Pizza* data that can be sent to and received from the web API.
+The `Pizza` model also serves as a Data Transfer Object (DTO). A DTO is an object that defines the data that will be sent over the network, in this case to the web API. In a more advanced version of this application, the *RazorPagesPizza* project's `PizzaService` class would use the `Pizza` model as a DTO that defines valid *Pizza* data that can be sent to and received from the web API or backing database.
 
-## Inject the service that handles HTTP requests
-
-As a final step, the `OnPostAsync` method in your `PizzaModel` class passes the validated data to a service class named `PizzaService`. The `PizzaService` class is an example of a typed `HttpClient` service architecture. The `PizzaService` class manages all HTTP requests to the web API so that code is maintained in one place. Furthermore, it's registered at startup as a service so that it may be injected where needed. It's injected in this project for all `PageModel` classes that require CRUD operations for their Razor pages. You'll walk through an example of `PizzaService` HTTP request logic lifecycle in the next unit.
-
-The `PizzaService` class was made available to the `Create` `PageModel` class with the following `using` statement:
-
-```csharp
-using RazorPagesPizza.Services;
-```
-
-The `PizzaService` service is injected directly into `PizzaModel` by including it as a constructor parameter, using dependency injection (DI):
-
-```csharp
-public class PizzaModel : PageModel
-{
-    private readonly PizzaService _PizzaService;
-
-    [BindProperty]
-    public Pizza Pizza { get; set; }
-
-    public PizzaModel(PizzaService PizzaService)
-    {
-        _PizzaService = PizzaService;
-    }
-```
-
-ASP.NET Core supports the Inversion of Control (IoC) principle using DI. DI allows the `PizzaService` service to be injected directly into the constructor of the `PageModel` class that needs it. .NET creates an instance of the `PizzaService` class and disposes of the resulting object when it's no longer needed. DI allows developers to avoid tightly coupling a specific class to another class.
-
-The following code calls the `CreatePizza` method, passing the `Pizza` DTO. The DTO will be sent by HTTP request to the web API:
-
-```csharp
-await _PizzaService.CreatePizza(Pizza);
-```
-
-The lifecycle of the *RazorPagesPizza* project's `PizzaService` HTTP request logic is explored later in this module.
-
-## Link to the *Create* page
-
-The *Create* page has been created and implemented. Let's allow users to navigate to it.
-
-### Add an Anchor Tag Helper to the *Index* page
-
-1. In *Pages/Pizzas/Index.cshtml*, replace the comment `<!-- Replace with link to Create page -->` with the markup highlighted below:
-
-   [!code-cshtml[](../code/create-pagemodel.cs?highlight=34)]
-
-1. Save your changes.
-
-The preceding highlighted code uses an Anchor Tag Helper. The Tag Helper:
-
-* Directs the user to the *Pages/Pizzas/Create.cshtml* Razor page, located in the same directory as the *Index* page.
-* Enhances the standard HTML anchor (`<a>`) tag by adding custom HTML attributes, such as `asp-page-handler`.
-
-The `asp-page-handler` attribute is used to route to a specific page handler for the Razor page defined in the `asp-page` attribute. The `asp-page` attribute is used set an anchor tag's `href` attribute value to a specific Razor page.
-
-Next, you'll explore the lifecycle of the project's `PizzaService` HTTP request logic.
+Next, you'll update the `PizzaModel` interact with the `PizzaService` class to list existing pizzas and create new ones.

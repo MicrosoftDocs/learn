@@ -2,7 +2,7 @@ Imagine you're an employee of a pizza company named Contoso Pizza. Your manager 
 
 The .NET CLI is the simplest way to create an ASP.NET Core web app. The CLI is pre-installed when you installed the .NET SDK. In this unit, you'll use the .NET CLI to create an ASP.NET Core web app locally. You'll also gain an understanding of the resulting project.
 
-## Create and explore a web app project
+## Create a web app project
 
 To set up a .NET project to work with a web app, we'll use Visual Studio Code. Visual Studio Code includes an integrated terminal, which makes creating a new project easy. If you don't want to use another code editor, you can run the commands in this module in a terminal.
 
@@ -15,7 +15,7 @@ To set up a .NET project to work with a web app, we'll use Visual Studio Code. V
 1. In the terminal window, copy and paste the following command.
 
     ```dotnetcli
-    dotnet new webapp
+    dotnet new webapp -f net5.0
     ```
 
     This command creates the files for a basic web API project, along with a C# project file named **RazorPagesPizza.csproj** that will return a list of weather forecasts.
@@ -27,12 +27,7 @@ To set up a .NET project to work with a web app, we'll use Visual Studio Code. V
     You should now have access to these files.
 
     ```bash
-    -| Controllers
     -| obj
-    -| Properties
-    -| appsettings.Development.json
-    -| appsettings.json
-    -| RazorPagesPizza.csproj
     -| Pages
        - | Shared
        - | _ViewImports.cshtml
@@ -43,59 +38,54 @@ To set up a .NET project to work with a web app, we'll use Visual Studio Code. V
        - | Index.cshtml.cs
        - | Privacy.cshtml
        - | Privacy.cshtml.cs
+    -| Properties
+    -| appsettings.Development.json
+    -| appsettings.json
     -| Program.cs
+    -| RazorPagesPizza.csproj
     -| Startup.cs
     ```
 
-## Examine the project
+## Run the Razor Pages project and explore its UI
 
-The *RazorPagesPizza* project directory is currently open in the Visual Studio Code editor. The following table outlines noteworthy project files and directories. Examine each of them in the Visual Studio Code editor window.
+### Compile and run the project
 
-| Name                                        | Description                                                                                                                     |
-|---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| *Pages/*                | Contains Razor Pages and supporting files. Each Razor page is a pair of files:<br>* A *.cshtml* file that contains markup with C# code using Razor syntax.<br>* A *.cshtml.cs* `PageModel` class file that defines page handler methods and data used to render the page.                                      |
-| *wwwroot/*              | Contains static asset files, such as HTML, JavaScript, and CSS.
-| *RazorPagesPizza.csproj* | Contains configuration metadata for the project, such as dependencies.                                                          |
-| *Program.cs*            | Serves as the app's managed entry point.                                                                                        |
-| *Startup.cs*            | Configures app behavior, such as routing between pages.                                                                         |
+1. Run the following .NET Core CLI command in the command shell:
 
-### Razor page files and their paired `PageModel` class file
+    ```dotnetcli
+    dotnet run
+    ```
 
-By convention, the *Pages* directory is where all Razor Pages are stored and organized in an ASP.NET Core app.
+    The preceding command:
 
-A Razor page has a *.cshtml* file extension. By convention, its associated `PageModel` C# class file uses the same name but with a *.cs* appended. For example, the Razor page *Index.cshtml* has an associated `PageModel` class file for *Index.cshtml.cs*.
+    * Locates the project file at the current directory.
+    * Retrieves and installs any required project dependencies for this project.
+    * Compiles the project code.
+    * Hosts the web app with ASP.NET Core's Kestrel web server at both `http://localhost:5000` and `https://localhost:5001`.
 
-A model object defines data properties and encapsulates logic or operations related to those data properties. A `PageModel` is essentially the same thing, but is a model that more specifically encapsulates the data properties and logic operations scoped just to its Razor page. The `PageModel` class:
+    This module uses the secure localhost URL beginning with `https`. You can't view the app's pages in a browser, since it isn't yet hosted on a public endpoint. You'll host the app on a public endpoint in a following step.
 
-* Allows for separation of the logic of a Razor page from its presentation.
-* Defines page handlers for requests sent to the page and for the data used to render the page.
+    A variation of the following output displays to indicate your app is running:
 
-A *page handler* is the method that's executed as a result of an HTTP request. For example, an `OnGet` method in the Razor page's `PageModel` class is automatically executed for an HTTP GET request.
+    ```console
+    info: Microsoft.Hosting.Lifetime[0]
+          Now listening on: https://localhost:5001
+    info: Microsoft.Hosting.Lifetime[0]
+          Now listening on: http://localhost:5000
+    info: Microsoft.Hosting.Lifetime[0]
+          Application started. Press Ctrl+C to shut down.
+    info: Microsoft.Hosting.Lifetime[0]
+          Hosting environment: Development
+    info: Microsoft.Hosting.Lifetime[0]
+          Content root path: /home/<user>/aspnet-learn/src/RazorPagesPizza
+    ```
 
-## The *Pages/Shared* directory
+If running this app on your own machine, you could direct a browser to `https://localhost:5001` to view the resulting page.
 
-Partial markup elements that are shared across several Razor pages are located by convention in a *Pages/Shared* directory. The *RazorPagesPizza* app uses two shared partial views, which are included when you create a new **ASP.NET Core Web Application** project:
+## Tour the app
 
-* *_Layout.cshtml*: Provides common layout elements across multiple pages.
-* *_ValidationScriptsPartial.cshtml*: Provides validation functionality such as client-side form input validation and cross-site antiforgery validation. This partial view is available to all pages in the project.
+1. Open the app in your browser by browsing to https://localhost:5001.
 
-### Layouts and partial view files
+1. Navigate to the **Privacy** page by clicking on the link in the navigation bar at the top of the page. Notice that the URL ends with *Privacy*. By convention, Razor Pages apps map page routes to the files within the *Pages* directory structure.
 
-* Layouts: In ASP.NET Core, layouts are *.cshtml* files that define a top-level template for views in the app. Apps don't require a layout. Apps can define more than one layout, with different views specifying different layouts. Most web apps have a common layout that provides a consistent user experience. The layout typically includes common UI elements such as the app header, navigation or menu elements, and footer. Common HTML structures such as scripts and stylesheets are also frequently used by many pages within an app. All of these shared elements may be defined in a layout file, which can then be referenced by any view used within the app. Layouts reduce duplicate code in views.
-
-* Partial view: A partial view is a Razor markup file (*.cshtml*) that renders HTML output within another markup file's rendered output. Partial views are used to break up large markup files into smaller components. They also reduce the duplication of common markup content across markup files. Partial views aren't used to maintain common layout elements. Common layout elements are specified in a *_Layout.cshtml* file.
-
-Layouts and partial views are outside of the scope of this module. At the end of the module, links are provided to take a deeper dive on features and concepts introduced here.
-
-## The *Pages* directory structure and routing requests
-
-Razor Pages uses the directory structure within the *Pages* directory as the convention for routing requests by default. An index page located in the root of the *Pages* directory, for example, is the default page for the app's site. In the *RazorPagesPizza* project's *Pages/Products* directory, you'll find a collection of Razor pages, including an *Index.cshtml* page. Requests routed to */Product/* will be directed to use the default *Index.cshtml* page physically located at *Products/Index.cshtml*, for example. The project's Razor pages (*.cshtml*) and accompanying `PageModel` classes (*.cshtml.cs*) are grouped conveniently in *Pages/Products*. Any passed route parameter values are made accessible through a property. ASP.NET Core offers robust routing features.
-
-The following table provides routes to be used in this module's completed project.
-
-| URL                                                  | Maps to this Razor page                            |
-|------------------------------------------------------|----------------------------------------------------|
-| *www.domain.com*                 | *Pages/Index.cshtml*           |
-| *www.domain.com/index*           | *Pages/Index.cshtml*           |
-| *www.domain.com/products*        | *Pages/Products/Index.cshtml*  |
-| *www.domain.com/products/create* | *Pages/Products/Create.cshtml* |
+You've verified you can successfully compile, run, and deploy the project. Let's modify it so the user can display and update a list of pizzas.
