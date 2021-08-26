@@ -37,12 +37,12 @@ The *Pizza* page contains a form and therefore requires an HTTP POST page handle
 The `OnPostAsync` page handler needs to perform the following tasks for this app:
 
 * Verify the user-submitted data posted to the `PageModel` is valid.
-* If the attempted `PageModel` changes are invalid, the *Create* page is presented again to the user. A message is displayed clarifying the input requirements.
+* If the attempted `PageModel` changes are invalid, the *Pizza* page is presented again to the user. A message is displayed clarifying the input requirements.
 * If the `PageModel` update is valid, then data changes are passed to a service called `PizzaService`. The `PizzaService` will handle the concern persisting the data.
 
 ## Bind the model
 
-The `PizzaModel` class needs access to the `Pizza` model. It will validate and pass `Pizza` entries from the *Create* form. It does so by using the `[BindProperty]` attribute in the following code:
+The `PizzaModel` class needs access to the `Pizza` model. It will validate and pass `Pizza` entries from the *Pizza* form. It does so by using the `[BindProperty]` attribute in the following code:
 
 ```csharp
 [BindProperty]
@@ -62,7 +62,7 @@ if (!ModelState.IsValid)
 }
 ```
 
-In the preceding code, `ModelState` represents errors from model binding and validation. If the `ModelState` is invalid, then the *Create* page is presented again to the user. In the previous unit, you saw how the *Create* Razor page uses ASP.NET Core's built-in client-side form input validation to responsively provide the user with input validation feedback.
+In the preceding code, `ModelState` represents errors from model binding and validation. If the `ModelState` is invalid, then the *Pizza* page is presented again to the user. In the previous unit, you saw how the *Pizza* Razor page uses ASP.NET Core's built-in client-side form input validation to responsively provide the user with input validation feedback.
 
 If the `ModelState` is valid, the `OnPostAsync` page handler calls upon an instance of `PizzaService`. `PizzaService` is responsible for storing the information - in this case, using an in-memory data store.
 

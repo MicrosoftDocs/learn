@@ -155,7 +155,7 @@ A *model* class is needed to represent a pizza in inventory. The model contains 
 
     This service provides a simple in-memory data caching service with two pizzas by default that our web app will use for demo purposes. When we stop and start the web app the in-memory data cache will be reset to the two default pizzas from the constructor of the `PizzaService`.
 
-## Add form markup to the *Create* Razor page
+## Add form markup to the *Pizza* Razor page
 
 Replace the contents of *Pages/Pizza.cshtml* with the following markup. Save your changes.
 
@@ -270,9 +270,9 @@ The Input Tag Helper:
 * Adds an `id` and `name` HTML attribute based on that property.
 * Sets the input type appropriately. For example, if the specified property type is `bool`, an input type of `checkbox` is used in the generated HTML. In this case, the `NewPizza.Name` property type is `string`. The `NewPizza.Name` property is set by the model's data annotation attributes, which will be reviewed later in this module.
 * Provides client-side validation using jQuery, based on the model's data annotation attributes provided through the `PageModel`.
-* Prompts the Razor engine to provide additional, more robust server-side validation, if client-side validation was successful. The *Create* Razor page's HTTP POST event lifecycle, which includes client-side and server-side input validation, is walked through later in this module.
+* Prompts the Razor engine to provide additional, more robust server-side validation, if client-side validation was successful. The *Pizza* Razor page's HTTP POST event lifecycle, which includes client-side and server-side input validation, is walked through later in this module.
 
-The following HTML output is generated from the Input Tag Helper located in the *Create* page:
+The following HTML output is generated from the Input Tag Helper located in the *Pizza* page:
 
 ```html
 <input name="NewPizza.Name" class="form-control" id="NewPizza_Name" type="text" value="" data-val-required="The Name field is required." data-val="true">
