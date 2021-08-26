@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.career-growth
 metadata:
-  title: Grow your career
-  description: As a new employee in tech, discover ways to grow your career from the inside.
+  title: From intern to full-time position
+  description: As an intern in tech, discover ways to grow so that after the internship it becomes a full-time position.
   ms.date: 08/23/2021
   author: jlooper
   ms.author: jelooper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Career growth
-summary: You've just landed your first job in tech. Now what? Learn strategies to growth-hack your career inside your company.
+title: From intern to full-time position
+summary: You've just landed your first job in tech as an intern. Now what? Learn strategies to growth-hack your career inside your company and ensure you get an offer to join the company full-time once the internship is over.
 abstract: | 
   By the end of this module, you'll be able to:
-    - Designate strategies to growth-hack your career
+    - Designate strategies to growth technically and professionally
     - Discover networking techniques
-    - Set expectations for yourself as you grow your career
+    - Set expectations for yourself
 prerequisites: | 
 #  - [Learn module on getting noticed](/learn/modules/career-get-noticed/)
 #  - [Learn module on interviewing](/learn/modules/career-interview/)
@@ -32,12 +32,10 @@ units:
 - learn.career-growth.asking-questions
 - learn.career-growth.seek-diversity
 - learn.career-growth.group-exercise
-- learn.career-growth.knowledge-check-1
 - learn.career-growth.time-management
 - learn.career-growth.day-exercise
 - learn.career-growth.continual-learning
 - learn.career-growth.building-trust
-- learn.career-growth.knowledge-check-2
 - learn.career-growth.summary
 badge:
   uid: learn.career-growth.badge
