@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.test-bicep-code-using-azure-pipelines.summary
-title: Summary
+uid: learn.azure.test-bicep-code-using-azure-pipelines.exercise-prepare-environment
+title: Exercise - Prepare your environment
 metadata:
-  unitType: summary
-  title: Summary
+  unitType: exercise
+  title: Exercise - Prepare your environment
   description: "TODO: this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 08/22/2021
   author: vermegi
@@ -12,4 +12,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/10-summary.md)]
+  [!include[](includes/4-exercise-prepare-environment.md)]

@@ -12,7 +12,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/9-knowledge-check.md)]
+  [!include[](includes/10-knowledge-check.md)]
 quiz:
   questions:
   - content: In which order will the stages be run?
