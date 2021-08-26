@@ -15,14 +15,14 @@ content: |
   [!include[](includes/4-seek-diversity.md)]
 quiz:
   questions:
-  - content: "To broaden your horizons, seeking out opinions from a diverse group of people"
+  - content: "To broaden your horizons, you should seek out opinions from a diverse group of people."
     choices:
-    - content: "This is true, as it will help you broaden your horizons."
+    - content: "True. It will help you broaden your horizons."
       isCorrect: true
       explanation: "Gathering perspectives from people who do not look like you will serve you well in life."
-    - content: "False, it is not an important aspect of your job."
+    - content: "False. It's not an important aspect of your job."
       isCorrect: false
-      explanation: "This is false, gathering diverse feedback will help improve your work experience."
-    - content: "True, but it is not a very important part of your job."
+      explanation: "False. Gathering diverse feedback will help improve your work experience."
+    - content: "True, but it's not a very important part of your job."
       isCorrect: false
       explanation: "You should prioritize gathering diverse perspectives."
