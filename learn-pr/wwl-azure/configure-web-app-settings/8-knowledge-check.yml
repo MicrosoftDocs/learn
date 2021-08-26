@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/25/2021
+  ms.date: 08/26/2021
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -36,3 +36,14 @@ quiz:
     - content: "Deployment logging"
       isCorrect: true
       explanation: "That's correct. Deployment logging is supported on the Linux platform."
+  - content: "Which of the following choices correctly lists the two parts of a feature flag?"
+    choices:
+    - content: "Name, App Settings"
+      isCorrect: false
+      explanation: "That's incorrect. App settings is not one of the two parts of a feature flag, though you can store evaluation filters in *appsettings.json*."
+    - content: "Name, one or more filters"
+      isCorrect: true
+      explanation: "That's correct. Each feature flag has two parts: a name and a list of one or more filters that are used to evaluate if a feature's state is *on*."
+    - content: "Feature manager, one or more filters"
+      isCorrect: false
+      explanation: "That's incorrect. A feature manager is an application package that handles the lifecycle of all the feature flags in an application.."
