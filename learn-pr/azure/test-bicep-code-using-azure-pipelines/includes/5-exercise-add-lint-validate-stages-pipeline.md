@@ -1,6 +1,6 @@
 You want to further automate your deployment and build better confidence in what you deploy by adding a validation stages to your pipeline. 
 
-During the process you will: 
+During the process, you'll: 
 
 > [!div class="checklist"]
 > * Update your existing pipeline to add two validation stages. 

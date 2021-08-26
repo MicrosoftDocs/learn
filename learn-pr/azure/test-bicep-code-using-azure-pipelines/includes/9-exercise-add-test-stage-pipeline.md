@@ -1,7 +1,92 @@
-1. Update the pipeline YAML file to add a new test stage after the deployment stage.
-    1. The test will try to access the site over HTTPS (should work) and HTTP (should not work).
-    1. Now the stages will be: Validate > Preview > Deploy > Test
-    1. Ensure the test will fail.
-1. Run the pipeline and observe the failed test.
-1. Fix the test by updating the App Service Bicep definition to only support HTTPs.
-1. Run the pipeline again and observe the successful deployment.
+TODO
+
+During the process, you'll: 
+
+> [!div class="checklist"]
+> * Add a test script to your repository.
+> * Update your pipeline definition to add a test stage.
+> * Run the pipeline and observe the test fail.
+> * Fix the Bicep file and observe the pipeline run successfully.
+
+## Add a test script
+
+Here, you add a test script to verify that the website is accessible when HTTPS is used, and not accessible when accessed using the insecure HTTP protocol.
+
+1. In Visual Studio Code, create a new file in the *deploy* folder named *Website.Tests.ps1*.
+
+1. Paste the following test code into the file:
+
+   :::code language="powershell" source="code/9-test.ps1" :::
+
+   > [!NOTE]
+   > TODO explain the test
+
+## Add a test stage to your pipeline
+
+1. In Visual Studio Code, open the *deploy/azure-pipelines.yaml* file.
+
+1. In the **Deploy** stage, update the `inlineScript` to the following:
+
+   :::code language="yaml" source="code/9-pipeline.yml" range="72-77" :::
+
+   > [!NOTE]
+   > TODO explain this
+
+1. At the bottom of the file, add the following definition for the **Test** stage:
+
+   :::code language="yaml" source="code/9-pipeline.yml" range="79-102" :::
+
+   > [!NOTE]
+   > TODO explain this
+
+1. Save the file.
+
+## Verify and commit your pipeline definition
+
+1. Verify that your *azure-pipelines.yml* file looks like the following:
+
+   :::code language="yaml" source="code/9-pipeline.yml" highlight="72-77, 79-102" :::
+
+   If it doesn't, update it to match this example, then save it.
+
+1. Commit and push your changes to your Git repository by running the following commands in the Visual Studio Code terminal:
+
+   ```bash
+   git add .
+   git commit -m "Add test stage"
+   git push
+   ```
+
+## Run the pipeline and review the test result
+
+1. In your browser, navigate to your pipeline runs. 
+
+1. TODO approve
+
+1. TODO open test, observe failure
+
+## Update the Bicep file
+
+1. In Visual Studio Code, open the *deploy/main.bicep* file.
+
+1. Find the definition for the App Service app, and update it to include the `httpsOnly` property in its `properties`:
+
+   :::code language="bicep" source="code/9-fixed.bicep" range="46-65" highlight="6" :::
+
+1. Save the file.
+
+1. Commit and push your changes to your Git repository by running the following commands in the Visual Studio Code terminal:
+
+   ```bash
+   git add .
+   git commit -m "Configure HTTPS on website"
+   git push
+   ```
+
+## Run the pipeline again
+
+1. In your browser, navigate to your pipeline runs. 
+
+1. TODO approve
+
+1. TODO open test, observe success

@@ -1,36 +1,43 @@
 You want to add an extra stage to your pipeline so you can check what changes will be made to your Azure environment. During the process you will: 
 
-- Add a second service principal with read permissions on your resource group and a corresponding service connection.
-- Update your original service connection to need an approval.
-- Update the pipeline YAML file to add a new what-if preview stage.
-- Update the Bicep file to make a change.
-- Run the pipeline and observe the what-if outputs.
-- Approve the pipeline run.
-- Observe the successful deployment.
+During the process, you'll: 
 
-## Update your service connection to need an approval
+> [!div class="checklist"]
+> * Add an environment to Azure Pipelines.
+> * Configure the environment to require an approval.
+> * Update the pipeline YAML file to add a new preview stage.
+> * View the what-if results and approve a pipeline run.
 
-1. In your browser, navigate to your **Project settings**.
+## Add an environment
 
-   :::image type="content" source="../media/6-project-settings.png" alt-text="Screenshot of the Azure DevOps interface, with the Project settings highlighted." border="false":::
+1. In your browser, navigate to **Pipelines** > **Environments**.
 
-1. Select **Service connections**.
+1. Select **New environment**.
 
-   :::image type="content" source="../media/6-service-connections.png" alt-text="Screenshot of the Azure DevOps interface, with the Service connections menu item highlighted." border="false":::
+1. Enter the environment name **Website**.
 
-1. Select your **ToyWebsite** service connection.
+   Don't enter a description. For the **Resource**, select **None**.
 
-   :::image type="content" source="../media/6-service-connection.png" alt-text="Screenshot of the Azure DevOps interface, Service connections screen, with the ToyWebsite Service connection highlighted." border="false":::
+   > [!NOTE]
+   > TODO explain what the other resource types mean
 
-1. Select the **Three dots** button and select **Approvals and checks** from the popup menu.
+1. Select **Create**.
 
-   :::image type="content" source="../media/6-three-dots.png" alt-text="Screenshot of the Azure DevOps interface, Service connection detail screen, with the three dots button and Approvals and checks menu item highlighted." border="false":::
+## Add an approval check to the environment
+
+1. Near the top-right of the page, select the button with three dots and select **Approvals and checks** from the popup menu.
+
+   :::image type="content" source="../media/6-three-dots.png" alt-text="Screenshot of the Azure DevOps interface, Environments detail screen, with the three dots button and Approvals and checks menu item highlighted." border="false":::
 
 1. Select **Approvals**.
 
    :::image type="content" source="../media/6-approvals-and-checks.png" alt-text="Screenshot of the Azure DevOps interface, Approvals and checks screen, with the Approvals option highlighted." border="false":::
 
-1. Fill out your own user name in the **Approvers** textbox. Select the **down arrow** next to **Advanced** and notice that by default approvers are allowed to approve their own runs. We will keep this checkbox checked. 
+1. Enter own user name in the **Approvers** textbox.
+
+1. Select the down arrow button next to **Advanced**.
+
+   Notice that, by default, approvers are allowed to approve the runs they've triggered. Leave this checkbox selected.
 
    :::image type="content" source="../media/6-Approvals.png" alt-text="Screenshot of the Azure DevOps interface, Approvals flyout, with the Approvers textbox, the Advanced dropdown and the Allow approvers to approve their own runs checkbox highlighted." border="false":::
 
@@ -38,115 +45,68 @@ You want to add an extra stage to your pipeline so you can check what changes wi
 
    :::image type="content" source="../media/6-Approval-create.png" alt-text="Screenshot of the Azure DevOps interface, Approvers flyout, with the Create button highlighted." border="false":::
 
-## Update the pipeline YAML file to add a new what-if preview stage
+## Update the pipeline definition to add a preview stage
 
-1. Select **Pipelines**. 
+1. In Visual Studio Code, open the *deploy/azure-pipelines.yaml* file.
 
-   :::image type="content" source="../media/6-pipelines.png" alt-text="Screenshot of the Azure DevOps interface, with the Pipelines menu item highlighted." border="false":::
+1. Between the **Validate** and **Deploy** stages, add the following definition for the **Preview** stage:
 
-1. Select the **bicep** pipeline.
+   :::code language="yaml" source="code/7-pipeline.yml" range="34-48" :::
 
-   :::image type="content" source="../media/6-pipeline-bicep.png" alt-text="Screenshot of the Azure DevOps interface, Pipelines screen, with the bicep pipeline highlighted." border="false":::
+## Update the pipeline definition to require an environment and approval
 
-1. Select **Edit**.
+Here, you configure the **Deploy** stage to run against the **Website** environment you created previously. You convert the **Deploy** stage to run a deployment job instead of a standard job, and configure it to deploy to the environment.
 
-   :::image type="content" source="../media/6-edit.png" alt-text="Screenshot of the Azure DevOps interface, pipeline runs screen, with the Edit button highlighted." border="false":::
+1. Update the **Deploy** stage definition to the following:
 
-1. Select **Variables**.
+   :::code language="yaml" source="code/7-pipeline.yml" range="50-70" :::
 
-   :::image type="content" source="../media/6-variables.png" alt-text="Screenshot of the Azure DevOps interface, pipeline detail screen, with the Variables button highlighted." border="false":::
+   > [!NOTE]
+   > TODO note the checkout step
 
-1. Select the **Plus** button.
+1. Save the file.
 
-   :::image type="content" source="../media/6-variables.png" alt-text="Screenshot of the Azure DevOps interface,Variables flyout, with the plus button highlighted." border="false":::
+## Verify and commit your pipeline definition
 
-1. Fill out **serviceConnectionReadOnly** as the name for the variable and **ToyWebsiteReadOnly** as the value for the variable. Select **Ok**.
+1. Verify that your *azure-pipelines.yml* file looks like the following:
 
-   :::image type="content" source="../media/6-variable.png" alt-text="Screenshot of the Azure DevOps interface, New variable flyout, with the Name and Value textboxes and the Ok button highlighted." border="false":::
+   :::code language="yaml" source="code/7-pipeline.yml" highlight="34-48, 52-70" :::
 
-1. Select **Save**.
+   If it doesn't, update it to match this example, then save it.
 
-   :::image type="content" source="../media/6-save.png" alt-text="Screenshot of the Azure DevOps interface, Variables flyout, with the Save button highlighted." border="false":::
-
-1. Go to Visual Studio Code and open your **azure-pipelines.yml** file. 
-
-1. Add the following WhatIf stage after your PreFlight stage, but before your Deploy stage: 
-
-   ```yaml
-   - stage: WhatIf
-     jobs: 
-     - job: WhatIf
-       steps:
-         - task: AzureCLI@2
-           displayName: Run what-if checks
-           inputs:
-             azureSubscription: $(serviceConnectionReadOnly)
-             scriptType: 'bash'
-             scriptLocation: 'inlineScript'
-             inlineScript: 'az deployment group what-if --resource-group $(resourcegroup) --template-file deploy/main.bicep -p environmentType=$(environment)'
-   ```
-
-1. In the PreFlight stage, change the **azureSubscription** parameter name to **serviceConnectionReadOnly**: 
-
-   ```yaml
-   azureSubscription: $(serviceConnectionReadOnly)
-   ```
-
-1. Your full azure-pipelines.yml file should now look like this: 
-
-   :::code language="json" source="code/6-azure-pipelines.yml" :::
-
-1. Save the file. 
-
-## Update the Bicep file to make a change
-
-1. Open your bicep.main template and add the following resource at the bottom of the file: 
-
-   ```bicep
-   resource secondStorageAccount 'Microsoft.Storage/storageAccounts@2021-04-01' = {
-     name: '${storageAccountName}2'
-     location: location
-     kind: 'StorageV2'
-     sku: {
-       name: 'Standard_LRS'
-     }
-   }
-   ```
-
-1. Save your changes.
-
-1. Commit and push your changes to your Git repository by using the following commands: 
+1. Commit and push your changes to your Git repository by running the following commands in the Visual Studio Code terminal:
 
    ```bash
    git add .
-   git commit -m "Added resource"
+   git commit -m "Add preview stage"
    git push
    ```
 
-## Run the pipeline and observe the what-if outputs
+## Run the pipeline and review the what-if outputs
 
 1. In your browser, navigate to your pipeline runs. 
 
-   :::image type="content" source="../media/4-pipeline-runs.png" alt-text="Screenshot of the Azure DevOps interface, with the Pipelines menu item and the pipeline highlighted." border="false":::
+<!-- TODO here down -->
 
 1. You will notice that your pipeline is now running multiple stages one after the other. At the **Deploy** stage execution will halt and a message will be shown asking you to **Review** the changes.  It might be that you need to refresh your page to see this message. You will also receive an email in your mailbox for this approval. 
 
    :::image type="content" source="../media/4-approve.png" alt-text="Screenshot of the Azure DevOps interface, Pipeline run screen, with the halted Deploy stage and the Review message highlighted." border="false":::
 
-1. Select the **WhatIf** stage. 
+1. Select the **Preview** stage. 
 
    :::image type="content" source="../media/4-what-if.png" alt-text="Screenshot of the Azure DevOps interface, Pipeline run screen, with the WhatIf stage highlighted." border="false":::
 
-1. Select the **Run what-if checks** section of the WhatIf stage. Inspect the changes that the what-if command reports on. 
+1. Select the **Run what-if** step.
+
+   Inspect the changes that the what-if command reports on. 
 
    :::image type="content" source="../media/4-what-if-checks.png" alt-text="Screenshot of the Azure DevOps interface, Pipeline run details screen, with the Run what-if checks section highlighted." border="false":::
 
-> [!NOTE]
-> It might be that you see more changes reported by the what-if command than changes you performed in your main.bicep file. This happens because during deployment certain defaults are taken for resource parameters without you needing to specify these values in your Bicep file. 
+   <!-- TODO note what the output means -->
 
 ## Approve the pipeline run
 
-1. Navigate back to your pipeline run details screen. 
+1. Navigate to the pipeline run details screen. 
 
    :::image type="content" source="../media/4-run-details.png" alt-text="Screenshot of the Azure DevOps interface, Pipeline run output screen, with the run details link highlighted." border="false":::
 
@@ -160,8 +120,8 @@ You want to add an extra stage to your pipeline so you can check what changes wi
 
 ## Observe the successful deployment
 
-1. Once approved, you will notice the **Deploy** stage starting execution. 
+1. After you've approved the pipeline run, notice the **Deploy** stage starting execution. Wait for the stage to complete.
 
    :::image type="content" source="../media/4-deploy.png" alt-text="Screenshot of the Azure DevOps interface, Pipeline run details screen, with the running Deploy stage highlighted." border="false":::
 
-1. The Deploy stage will successfully deploy your resources. 
+1. Notice that the pipeline run completes successfully.
