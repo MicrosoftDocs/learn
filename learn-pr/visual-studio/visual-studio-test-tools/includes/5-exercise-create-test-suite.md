@@ -79,11 +79,11 @@ Sometimes, it's not obvious why a test fails. You might need to do a closer insp
 1. Set a breakpoint in `DivideByZeroTest` at the `Assert` line by clicking in the margin of the code editor.
 1. Right-click in the test method in the code editor and select **Debug Test**.
 
-   :::image type="content" source="../media/test-debug-divide-zero.png" alt-text="Screenshot in Visual Studio of editor window inside DivideByZero test method. A breakpoint is set on the Assert statement. The right-click menu is open and debug test is selected.":::
+   :::image type="content" source="../media/debug-divide-zero.png" alt-text="Screenshot in Visual Studio of editor window inside DivideByZero test method. A breakpoint is set on the Assert statement. The right-click menu is open and debug test is selected.":::
 
    You'll notice the debugger doesn't reach your breakpoint because it fails on the `System.DivideByZeroException` as expected.
 
-   :::image type="content" source="../media/test-debug-exception.png" alt-text="Screenshot in Visual Studio throwing a divide by zero system exception in the midst of debugging. The exception appears in a call out above the Divide method on the return statement.":::
+   :::image type="content" source="../media/debug-exception.png" alt-text="Screenshot in Visual Studio throwing a divide by zero system exception in the midst of debugging. The exception appears in a call out above the Divide method on the return statement.":::
 
 ## Red, green, refactor
 

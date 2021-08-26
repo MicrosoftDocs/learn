@@ -33,7 +33,7 @@ public class CalculatorTests
 
 This test class is a part of a test project that references the app that needs to be tested. In this case, the LearnMyCalculatorApp project.
 
-:::image type="content" source="../media/test-solution-explorer.png" alt-text="Screenshot of a test project and a calculator project in the Visual Studio Solution Explorer":::
+:::image type="content" source="../media/solution-explorer.png" alt-text="Screenshot of a test project and a calculator project in the Visual Studio Solution Explorer":::
 
 Tests reference and call your product code (another way of saying your non-test code). For example, let's say there's an `Add` method in the calculator class that we need to test.
 
@@ -88,13 +88,13 @@ Now that you understand the basic setup of a test and test project, the next ste
 
 * **Run tests with a right-click**: right-clicking allows you to run tests from the context menu. A helpful tip: this command will run tests according to the scope your cursor is in. For example, if you right-click in a test class and select **Run Test(s)** it will run all of the tests in that class. If you right-click in a test namespace, the command will run all the tests in the namespace.
 
-   :::image type="content" source="../media/test-right-click-run.png" alt-text="Screenshot of Visual Studio with right-click context menu open in editor inside a test method.":::
+   :::image type="content" source="../media/right-click-run.png" alt-text="Screenshot of Visual Studio with right-click context menu open in editor inside a test method.":::
 
 * **Ctrl+R, T**: the keyboard shortcut **Ctrl+R, T** will also run the tests that are currently in the context of your cursor.
 
 * **CodeLens Test glyph**: Optionally, the editor can show a small test glyph next to test methods. You can enable this glyph by switching on CodeLens in Tools > Options. This helpful UI provides a way to run the tests and shows the test result from inside the code editor.
 
-   :::image type="content" source="../media/test-code-lens.png" alt-text="Screenshot in Visual Studio of CodeLens test glyph opened from the top of the method signature.":::
+   :::image type="content" source="../media/code-lens.png" alt-text="Screenshot in Visual Studio of CodeLens test glyph opened from the top of the method signature.":::
 
 * **Test Explorer**: once you have multiple tests you may find yourself using the Test Explorer more for running, viewing, and organizing your test suite. We'll dive into the Test Explorer more later on.
 
@@ -142,6 +142,6 @@ public void AddTest()
 
 If one of these asserts fail, it helps track down what behavior is unexpected in the code. For example, if everything worked correctly with the calculator except for an overloaded `ToString` method. Only the `StringAssert` would fail and immediately bubble up what specific behavior is failing.
 
-:::image type="content" source="../media/test-failed-assert.png" alt-text="Screenshot in Visual Studio of AddTest method with Test Explorer open showing StringAssert.Contains failure message.":::
+:::image type="content" source="../media/failed-assert.png" alt-text="Screenshot in Visual Studio of AddTest method with Test Explorer open showing StringAssert.Contains failure message.":::
 
 You can read more on the different Assert classes and explore the API in [Use Assert classes for unit testing](/visualstudio/test/using-the-assert-classes).

@@ -1,6 +1,6 @@
 This module will help familiarize you with the Visual Studio testing tools. The examples will use C# and .NET, but much of the run functionality is the same for the many languages that the Visual Studio test tools support.
 
-:::image type="content" source="../media/test-introduction-collage.png" alt-text="Collage showing screenshots of Visual Studio including the new test project dialog, debugging a test, a test using fluent assertions, and the Test Explorer.":::
+:::image type="content" source="../media/introduction-collage.png" alt-text="Collage showing screenshots of Visual Studio including the new test project dialog, debugging a test, a test using fluent assertions, and the Test Explorer.":::
 
 ## Example scenario
 

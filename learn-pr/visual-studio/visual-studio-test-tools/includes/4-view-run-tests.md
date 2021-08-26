@@ -9,7 +9,7 @@ Now let's go over some of the test tools built-in to Visual Studio to help you g
 * A test suite is any collection of tests. There are many ways you can group tests depending on what task is at hand.
 * You can view a list of all your tests in the Test Explorer in Visual Studio. To open this window, use the top-level "Test" menu and select "Test Explorer."
 
-   :::image type="content" source="../media/test-menu-test-explorer.png" alt-text="Screenshot in Visual Studio of top-level menu item Test open and Test Explorer highlighted within the sub menu.":::
+   :::image type="content" source="../media/test-explorer-menu.png" alt-text="Screenshot in Visual Studio of top-level menu item Test open and Test Explorer highlighted within the sub menu.":::
 
    :::image type="content" source="../media/test-explorer.png" alt-text="Screenshot in Visual Studio of Test Explorer window. 6 tests are visible with 5 passing tests and 1 failing test in the list.":::
 
@@ -36,7 +36,7 @@ In the next exercise we'll delve deeper into Test Explorer functionality. If you
 
 * After the first test run, the small CodeLens test glyphs now show the test result in the code editor at every test method.
 
-   :::image type="content" source="../media/test-code-lens.png" alt-text="Screenshot in Visual Studio of editor where the CodeLens test glyphs at the top of test method signatures are now green to signify passing tests.":::
+   :::image type="content" source="../media/code-lens.png" alt-text="Screenshot in Visual Studio of editor where the CodeLens test glyphs at the top of test method signatures are now green to signify passing tests.":::
 
 ## Debugging tests
 
@@ -44,11 +44,11 @@ In the next exercise we'll delve deeper into Test Explorer functionality. If you
 
 * Select **Debug test(s)** in the right-click context menu in order to hit a breakpoint.
 
-   :::image type="content" source="../media/test-debug.png" alt-text="Screenshot of Visual Studio editor with the right click menu open inside the AddTest method. Debug Tests is selected.":::
+   :::image type="content" source="../media/debug.png" alt-text="Screenshot of Visual Studio editor with the right click menu open inside the AddTest method. Debug Tests is selected.":::
 
 * As in debugging a regular app, when you debug a test you can hover or pin variables to see their values and step through the execution of the code.
 
-   :::image type="content" source="../media/test-breakpoint.png" alt-text="Screenshot of Visual Studio paused during debugging at a breakpoint set inside the AddTest method on the Assert line. Debugger windows are visible as well as a quick info window showing the value of the actual variable in the test.":::
+   :::image type="content" source="../media/breakpoint.png" alt-text="Screenshot of Visual Studio paused during debugging at a breakpoint set inside the AddTest method on the Assert line. Debugger windows are visible as well as a quick info window showing the value of the actual variable in the test.":::
 
 ## Additional learning
 

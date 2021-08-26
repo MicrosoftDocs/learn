@@ -100,6 +100,6 @@ Now let's add an assert statement to instruct the test runner under what conditi
 
 1. Confirm your test fails by running again.
 
-   :::image type="content" source="../media/test-run-first-test.png" alt-text="Screenshot in Visual Studio of editor window right-clicking in a test method with Run Tests selected.":::
+   :::image type="content" source="../media/run-first-test.png" alt-text="Screenshot in Visual Studio of editor window right-clicking in a test method with Run Tests selected.":::
 
 Congratulations! You've managed to successfully create and run a test on your product code. You are in a great position to keep adding tests and build a reliable product.

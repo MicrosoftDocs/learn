@@ -30,7 +30,7 @@ public void AddTestFluentassertion()
 }
 ```
 
-:::image type="content" source="../media/test-fluent-assertion.png" alt-text="Screenshot in Visual Studio of AddTest method. A hover tip on the fluent assertion describes the And constraint of fluent assertions with a generic type of int. The description reads the integral number value is exactly the same as the expected value.":::
+:::image type="content" source="../media/fluent-assertion.png" alt-text="Screenshot in Visual Studio of AddTest method. A hover tip on the fluent assertion describes the And constraint of fluent assertions with a generic type of int. The description reads the integral number value is exactly the same as the expected value.":::
 
 ## Data driven tests
 
@@ -59,7 +59,7 @@ public void AddDataTests(int x, int y, int expected)
   * Microsoft Fakes is only available with Visual Studio Enterprise.
   * Navigate to the test project you want to isolate in the Solution Explorer. Right-click on the project under the Project node that you want to mock and select 'Add Fakes Assembly'.
 
-   :::image type="content" source="../media/test-add-fakes.png" alt-text="Screenshot in Visual Studio of Solution Explorer showing the projects node under the LearnMyCalculator.Tests project expanded. The right-click menu s open on the LearnMyCalculatorApp node underneath projects. The command Add Fakes Assembly is selected.":::
+   :::image type="content" source="../media/add-fakes.png" alt-text="Screenshot in Visual Studio of Solution Explorer showing the projects node under the LearnMyCalculator.Tests project expanded. The right-click menu s open on the LearnMyCalculatorApp node underneath projects. The command Add Fakes Assembly is selected.":::
 
   * Add the using statements to the test file in which you'd like to use shims and stubs.
 
