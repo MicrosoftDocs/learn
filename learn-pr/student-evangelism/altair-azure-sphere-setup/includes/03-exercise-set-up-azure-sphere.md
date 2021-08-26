@@ -19,7 +19,7 @@ Install the following software on your Windows 10 or Linux computer.
 
 ## Azure Sphere SDK version
 
-This learning module requires the 21.07 SDK release or newer.
+This learning module requires the Azure Sphere SDK 21.07 release or newer.
 
 ## Windows 10 users
 

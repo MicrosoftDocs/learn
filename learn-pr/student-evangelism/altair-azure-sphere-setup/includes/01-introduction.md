@@ -4,7 +4,7 @@ If you're new to Azure Sphere and IoT Central, then it’s recommended you compl
 
 ## Hardware requirements
 
-There are five supported configurations for the Altair project on the Azure Sphere.
+There are five supported configurations for the Altair emulator on the Azure Sphere.
 
 ## Standalone Azure Sphere
 
