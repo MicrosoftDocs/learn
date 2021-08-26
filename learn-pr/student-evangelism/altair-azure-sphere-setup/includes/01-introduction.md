@@ -74,7 +74,6 @@ Pin No. | Function | Click Pin | MT3620 Pin Function | Description
 10 | VCC | CLICK 1: 3.3 | 3.3 V | +3.3 V
 11 | GND | CLICK 1: GND | GND | Ground
 
-
 ## Software requirements
 
 There are five components to the cloud-connected Altair on Azure Sphere solution. The components are:
@@ -93,6 +92,12 @@ In this module, you will:
 
 ## Prerequisites
 
-TBD
+* You have completed the previous module of the learning path.
+* A computer with an x86-64-based processor running:
+  * Windows 10 Anniversary Update or later.
+  * Or, 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS.
+* An Azure Sphere developer board. Either:
+  * An Avnet Azure Sphere Starter Kit Rev 1 or 2.
+  * Or, a Seeed Studio Azure Sphere MT3620 Development Kit.
 
 In the next unit, you'll learn how to install the required software and deploy the Altair 8800 emulator to your Azure Sphere.
