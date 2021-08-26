@@ -5,26 +5,25 @@ In this unit, you'll create a form in the *RazorPagesPizza* project using Razor 
 The *RazorPagesPizza* project directory is currently open in the Visual Studio Code. Run the following .NET Core CLI command in the command shell:
 
 ```dotnetcli
-dotnet new page --name Create \
-    --output Pages/Products
+dotnet new page --name Pizza
 ```
 
 The preceding command:
 
-* Creates the following files in the `RazorPagesPizza.Pages.Products` namespace:
-  * *Create.cshtml*&mdash;The Razor page
-  * *Create.cshtml.cs*&mdash;The accompanying `PageModel` class
+* Creates the following files in the `RazorPagesPizza.Pages` namespace:
+  * *Pizza.cshtml*&mdash;The Razor page
+  * *Pizza.cshtml.cs*&mdash;The accompanying `PageModel` class
 * Stores both files in the project's *Pages/Products* directory.
+
+Note that there's nothing magical about using the CLI to create these files. You can also create the files manually; the CLI command is just a shortcut for doing so.
 
 ## Examine the Razor page's structure
 
-1. [!INCLUDE[refresh file explorer](../../includes/refresh-file-explorer.md)]
-
-1. Open the new *Pages/Products/Create.cshtml* Razor page. Examine the file's markup:
+1. Open the new *Pages/Pizza.cshtml* Razor page. Examine the file's markup:
 
 	```cshtml
 	@page
-	@model RazorPagesPizza.Pages.Products.CreateModel
+	@model RazorPagesPizza.Pages.PizzaModel
 	@{
 	}
 	```
@@ -32,7 +31,7 @@ The preceding command:
     The preceding Razor page contains reserved Razor keywords:
 
     * The `@page` directive is what makes the page a Razor page. It indicates the page can handle HTTP requests. The `@page` directive must be the first directive on a Razor page.
-    * The `@model` directive specifies the model type made available to the Razor page. In this case, the type is the `PageModel`-derived class name, prefixed with its namespace. As you recall, that class is defined in *Pages/Products/Create.cshtml.cs*.
+    * The `@model` directive specifies the model type made available to the Razor page. In this case, the type is the `PageModel`-derived class name, prefixed with its namespace. As you recall, that class is defined in *Pages/Pizza.cshtml.cs*.
 
 ## Render HTML and transition to C#
 
@@ -40,7 +39,7 @@ The following markup is an example of an `@` symbol followed by C# code. The cod
 
 ```cshtml
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Pizza";
 }
 ```
 
@@ -48,35 +47,61 @@ A Razor page supports Razor syntax, which is HTML and C# combined. The C# code d
 
 ## Add form markup to the *Create* Razor page
 
-Replace the contents of *Pages/Products/Create.cshtml* with the following markup. Save your changes.
+Replace the contents of *Pages/Pizza.cshtml* with the following markup. Save your changes.
 
 ```cshtml
 @page
-@model RazorPagesPizza.Pages.Products.CreateModel
+@using RazorPagesPizza.Models
+@model RazorPagesPizza.Pages.PizzaModel
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Pizza List";
 }
 
-<h1>Create Product</h1>
-
-<form method="post">
-    <div class="form-group">
-        <label asp-for="Product.Name" class="control-label"></label>
-        <input asp-for="Product.Name" class="form-control" />
-        <span asp-validation-for="Product.Name" class="text-danger"></span>
+<h1>Pizza List 🍕</h1>
+<form method="post" class="card p-3">
+    <div class="row">
+        <div asp-validation-summary="All"></div>
     </div>
-    <div class="form-group">
-        <label asp-for="Product.Price" class="control-label"></label>
-        <input asp-for="Product.Price" class="form-control" />
-        <span asp-validation-for="Product.Price" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <input type="submit" value="Save" class="btn btn-primary" />
+    <div class="form-group mb-0 align-middle">
+        <label asp-for="NewPizza.Name">Name</label>
+        <input type="text" asp-for="NewPizza.Name" class="mr-5">
+        <label asp-for="NewPizza.Size">Size</label>
+        <select asp-for="NewPizza.Size" asp-items="Html.GetEnumSelectList<PizzaSize>()" class="mr-5"></select>
+        <label asp-for="NewPizza.Price"></label>
+        <input asp-for="NewPizza.Price" class="mr-5" />
+        <label asp-for="NewPizza.IsGlutenFree">Gluten Free</label>
+        <input type="checkbox" asp-for="NewPizza.IsGlutenFree" class="mr-5">
+        <button class="btn btn-primary">Add</button>
     </div>
 </form>
+<table class="table mt-5">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Size</th>
+            <th scope="col">Gluten Free</th>
+            <th scope="col">Delete</th>
+        </tr>
+    </thead>
+    @foreach (var pizza in Model.pizzas)
+    {
+        <tr>
+            <td>@pizza.Name</td>
+            <td>@($"{pizza.Price:C}")</td>
+            <td>@pizza.Size</td>
+            <td>@Model.GlutenFreeText(pizza)</td>
+            <td>
+                <form method="post" asp-page-handler="Delete" asp-route-id="@pizza.Id">
+                    <button class="btn btn-danger">Delete</button>
+                </form>
+            </td>
+        </tr>
+    }
+</table>
 
 @section Scripts {
-    <partial name="_ValidationScriptsPartial" />
+<partial name="_ValidationScriptsPartial" />
 }
 ```
 
@@ -116,7 +141,7 @@ This Tag Helper syntax is an alternative to the following HTML Helper syntax:
 The following markup uses the Label Tag Helper:
 
 ```cshtml
-<label asp-for="Product.Name" class="control-label"></label>
+<label asp-for="NewPizza.Name" class="control-label"></label>
 ```
 
 The Label Tag Helper extends the standard HTML `<label>` element. As is common for many Tag Helpers, it uses an `asp-for` attribute. The attribute accepts a specified `PageModel` property. In this case, the value of the `PageModel` `Name` property will be rendered as the content for an HTML `<label>` element. The `asp-for` attribute is scoped to the `PageModel` for the Razor page, so the `@` symbol isn't used. The label is dynamic as is needed here, but remains compact and easy to add in your markup.
@@ -126,21 +151,21 @@ The Label Tag Helper extends the standard HTML `<label>` element. As is common f
 The following markup uses the Input Tag Helper. It extends the standard HTML `<input>` element. It also uses an `asp-for` attribute to specify a `PageModel` property.
 
 ```cshtml
-<input asp-for="Product.Name" class="form-control" />
+<input asp-for="NewPizza.Name" class="form-control" />
 ```
 
 The Input Tag Helper:
 
-* Evaluates the `Product.Name` property, like the Label Tag Helper.
+* Evaluates the `NewPizza.Name` property, like the Label Tag Helper.
 * Adds an `id` and `name` HTML attribute based on that property.
-* Sets the input type appropriately. For example, if the specified property type is `bool`, an input type of `checkbox` is used in the generated HTML. In this case, the `Product.Name` property type is `string`. The `Product.Name` property is set by the model's data annotation attributes, which will be reviewed later in this module.
+* Sets the input type appropriately. For example, if the specified property type is `bool`, an input type of `checkbox` is used in the generated HTML. In this case, the `NewPizza.Name` property type is `string`. The `NewPizza.Name` property is set by the model's data annotation attributes, which will be reviewed later in this module.
 * Provides client-side validation using jQuery, based on the model's data annotation attributes provided through the `PageModel`.
 * Prompts the Razor engine to provide additional, more robust server-side validation, if client-side validation was successful. The *Create* Razor page's HTTP POST event lifecycle, which includes client-side and server-side input validation, is walked through later in this module.
 
 The following HTML output is generated from the Input Tag Helper located in the *Create* page:
 
 ```html
-<input name="Product.Name" class="form-control" id="Product_Name" type="text" value="" data-val-required="The Name field is required." data-val="true">
+<input name="NewPizza.Name" class="form-control" id="NewPizza_Name" type="text" value="" data-val-required="The Name field is required." data-val="true">
 ```
 
 ### Validation Message Tag Helper
@@ -148,7 +173,7 @@ The following HTML output is generated from the Input Tag Helper located in the 
 The following markup uses the Validation Message Tag Helper. It displays a validation message for a single property on the model.
 
 ```cshtml
-<span asp-validation-for="Product.Price" class="text-danger"></span>
+<span asp-validation-for="NewPizza.Price" class="text-danger"></span>
 ```
 
 The Input Tag Helper adds HTML5 `data-` attributes to input elements. The attributes are based on properties in the C# model classes. While responsive client-side validation occurs, validation is also done on the server, which is more secure.
@@ -156,7 +181,7 @@ The Input Tag Helper adds HTML5 `data-` attributes to input elements. The attrib
 The following HTML is rendered by the Validation Message Tag Helper:
 
 ```html
-<input name="Product.Price" class="form-control" id="Product_Price" type="text" value="" data-val-required="The Price field is required." data-val="true" data-val-range-min="0.01" data-val-range-max="9999.99" data-val-range="The field Price must be between 0.01 and 9999.99." data-val-number="The field Price must be a number.">
+<input name="NewPizza.Price" class="form-control" id="NewPizza_Price" type="text" value="" data-val-required="The Price field is required." data-val="true" data-val-range-min="0.01" data-val-range-max="9999.99" data-val-range="The field Price must be between 0.01 and 9999.99." data-val-number="The field Price must be a number.">
 ```
 
 The `type`, `data-val-range-min`, `data-val-range-max`, and error response are dynamically set by the model's data annotations for the model's `Product.Price` property.

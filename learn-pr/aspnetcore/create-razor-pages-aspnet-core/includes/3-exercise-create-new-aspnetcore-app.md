@@ -1,8 +1,6 @@
 Imagine you're an employee of a pizza company named Contoso Pizza. Your manager has asked you to develop an internal pizza inventory management site. The site has to support adding, viewing, modifying, and removing types of pizza.
 
-The .NET CLI is the simplest way to create an ASP.NET Core web app. The CLI is pre-installed when you installed the .NET SDK.
-
-In this unit, you'll use the .NET CLI to create an ASP.NET Core web app locally. You'll also gain an understanding of the resulting project.
+The .NET CLI is the simplest way to create an ASP.NET Core web app. The CLI is pre-installed when you installed the .NET SDK. In this unit, you'll use the .NET CLI to create an ASP.NET Core web app locally. You'll also gain an understanding of the resulting project.
 
 ## Create and explore a web app project
 
@@ -17,7 +15,7 @@ To set up a .NET project to work with a web app, we'll use Visual Studio Code. V
 1. In the terminal window, copy and paste the following command.
 
     ```dotnetcli
-    dotnet new webapp --output RazorPagesPizza
+    dotnet new webapp
     ```
 
     This command creates the files for a basic web API project, along with a C# project file named **RazorPagesPizza.csproj** that will return a list of weather forecasts.
@@ -74,10 +72,6 @@ A model object defines data properties and encapsulates logic or operations rela
 
 A *page handler* is the method that's executed as a result of an HTTP request. For example, an `OnGet` method in the Razor page's `PageModel` class is automatically executed for an HTTP GET request.
 
-### Data annotations
-
-Models in ASP.NET Core often make use of data annotations to constrain or customize model properties. Data annotations are C# attributes used to specify behaviors to enforce on the model properties to which they're applied. For example, a range of minimum and maximum acceptable values. The project has a model file named *Product.cs* that uses data annotations to define constraints for its data properties. For example, a `Name` property is always required, and a `Price` property must have a value between the range of `0.01` and `9999.99`. Since this module often refers to the `Product` model and its data properties, it's important to understand where that model's class is stored.
-
 ## The *Pages/Shared* directory
 
 Partial markup elements that are shared across several Razor pages are located by convention in a *Pages/Shared* directory. The *RazorPagesPizza* app uses two shared partial views, which are included when you create a new **ASP.NET Core Web Application** project:
@@ -105,7 +99,3 @@ The following table provides routes to be used in this module's completed projec
 | *www.domain.com/index*           | *Pages/Index.cshtml*           |
 | *www.domain.com/products*        | *Pages/Products/Index.cshtml*  |
 | *www.domain.com/products/create* | *Pages/Products/Create.cshtml* |
-
-### Organize groups of related Razor pages
-
-The *RazorPagesPizza* project's purpose is to provide a UI to execute CRUD operations through your company's web API endpoint to manage product listings. The *Pages/Products* directory groups all the Razor pages that provide the UI for those CRUD operations and their `PageModel` class files. For the *RazorPagesPizza* app, the same model validation will be used for more than one Razor page for HTTP requests to the hosted web API.
