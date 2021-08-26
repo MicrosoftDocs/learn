@@ -6,7 +6,7 @@ There are several ways that you can boot up CP/M depending on your hardware conf
 
 When the Altair emulator starts, it loads Altair 8k BASIC at address 0x0000 and the disk driver at address 0xff00 HEX (111111110000000 Binary).
 
-To load CP/M, you're going to set the CPU instruction pointer to 0xff00 HEX and tell the Altair emulator to run the code from that address. The disk driver code runs and loads CP/M.
+To load CP/M, you're going to set the CPU instruction pointer to 0xff00 HEX and tell the Altair emulator to run the code from that address. The disk driver code runs and loads CP/M from the A: drive image that is included in the Altair emulator application.
 
 ### For all hardware configurations
 

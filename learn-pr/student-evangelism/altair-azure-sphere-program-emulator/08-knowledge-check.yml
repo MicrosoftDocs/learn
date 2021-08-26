@@ -13,47 +13,25 @@ durationInMinutes: 2 # dummy number at present
 content: |
 quiz:
   questions:
-  - content: "In the Azure Sphere ecosystem, which component is missing from the following list: Azure Sphere SDK, Azure Sphere tenant, Azure Sphere OS?"
+  - content: "Which of the following options is true about Altair BASIC?"
     choices:
-    - content: "Azure Sphere API"
+    - content: "From Altair BASIC you can run and save BASIC apps."
       isCorrect: false
-      explanation: "Azure Sphere API isn't a component of the Azure Sphere ecosystem."
-    - content: "Azure Sphere Security Service"
+      explanation: "From Altair BASIC you can only run BASIC applications. You need to boot CP/M to access the B: read/write drive."
+    - content: "From Altair BASIC you can only run BASIC apps. You can't save changes you make."
       isCorrect: true
-      explanation: "Azure Sphere Security Service is a key component of the Azure Sphere ecosystem."
-    - content: "Azure Sphere Security Key"
+      explanation: "From Altair BASIC you can only run BASIC applications. You need to boot CP/M to access the B: read/write drive."
+    - content: "Altair BASIC runs on CP/M and you can run and save BASIC apps."
       isCorrect: false
-      explanation: "Azure Sphere Security Key isn't a component of the Azure Sphere ecosystem."
-  - content: "Your organization created an Azure Sphere tenant and then claims each of its devices into that tenant. What function does this accomplish?"
+      explanation: "Microsoft Basic runs on CP/M. It can run and save files to the B: drive."
+  - content: "The Altair emulator can run Altair BASIC and CP/M. Which option is true?"
     choices:
-    - content: "So that you can manage those devices remotely and securely."
+    - content: "When the Altair emulator starts it is running CP/M."
+      isCorrect: false
+      explanation: "When the Altair emulator starts it is running Altair BASIC. You need to manual boot up CP/M."
+    - content: "When the emulator starts it is running Altair BASIC, you can then boot CP/M"
       isCorrect: true
-      explanation: "The tenant allows you to manage devices remotely and securely."
-    - content: "The tenant allows devices to communicate better with other tenants."
+      explanation: "When the Altair emulator starts it is running Altair BASIC. You need to manual boot up CP/M"
+    - content: "When the Altair emulator starts you can program in Altair BASIC, Microsoft Basic, C, and Assembler."
       isCorrect: false
-      explanation: "The tenant doesn't enable communication between other tenants."
-    - content: "Your organization can name individual devices."
-      isCorrect: false
-      explanation: "The tenant doesn't enable naming of devices."
-  - content: "If the Azure Sphere Security Service were missing, what function could you not perform?"
-    choices:
-    - content: "You can't receive alerts for anomalies."
-      isCorrect: false
-      explanation: "Lack of the security service updates isn't directly connected to anomaly alerts."
-    - content: "You can't maintain the operating system security."
-      isCorrect: false
-      explanation: "The primary impact isn't on operating system security."
-    - content: "You can't get the latest security updates to the Azure Sphere devices."
-      isCorrect: true
-      explanation: "You can't get the latest security updates to the Azure Sphere devices."
-  - content: "How can you run real-time applications on an Azure Sphere?"
-    choices:
-    - content: "You can't run real-time applications on an Azure Sphere."
-      isCorrect: false
-      explanation: "You can run real-time applications on the Azure Sphere Cortex-M4 cores."
-    - content: "You can run real-time applications on the Azure Sphere Cortex-A7 Linux kernel core"
-      isCorrect: false
-      explanation: "You cannot run real-time applications on the Cortex-A7 core as the application has to compete for resources with other services running on the Linux kernel."
-    - content: "You can run real-time applications on the Azure Sphere Cortex-M4 cores."
-      isCorrect: true
-      explanation: "You can run bare-metal code, or real-time operating system such as Azure RTOS or FreeRTOS on the Azure Sphere Cortex-M4 cores."
+      explanation: "The Altair emulator runs Altair BASIC on startup. You can then boot CP/M and then you can program with Microsoft Basic, C, and Assembler."
