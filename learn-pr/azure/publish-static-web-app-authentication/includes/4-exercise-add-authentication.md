@@ -16,7 +16,7 @@ The Static Web Apps CLI, also known as SWA CLI, is a local development tool that
 
 1. Open a terminal on your computer.
 
-1. Install the CLI running the following command.
+1. Install the SWA CLI running the following command.
 
     ```bash
     npm install -g @azure/static-web-apps-cli
@@ -150,7 +150,7 @@ The final port used by the SWA CLI is different than the one you've seen before,
 
 :::image type="content" source="../media/static-web-apps-cli-architecture.png" alt-text="Static Web Apps CLI architecture.":::
 
-Now, let the application running while we modify the code.
+Let the application remain running while we modify the code.
 
 ## Get the user login status
 
@@ -207,7 +207,7 @@ First, we need to access the user login status by making a query to `/.auth/me` 
 
 ::: zone pivot="react"
 
-Edit the file `react-app/src/components/NavBar.js`, and to add the following code at the top of the function and update the imports.
+1. Edit the file `react-app/src/components/NavBar.js`, and to add the following code at the top of the function and update the imports.
 
     ```jsx
     import React, { useState, useEffect } from 'react';
@@ -244,7 +244,7 @@ Edit the file `react-app/src/components/NavBar.js`, and to add the following cod
 
 ::: zone pivot="svelte"
 
-Edit the file `svelte-app/src/components/NavBar.svelte`, and add the following code in the script part.
+1. Edit the file `svelte-app/src/components/NavBar.svelte`, and add the following code in the script part.
 
     ```javascript
     import { onMount } from 'svelte';
