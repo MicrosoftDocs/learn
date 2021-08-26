@@ -108,7 +108,7 @@ run
 When you run this application, temperature and pressure data will be published to IoT Central. You can view the data on the Environment tab for your device.
 
 > [!div class="mx-imgBorder"]
-> ![The illustration shows Altair BASIC starting.](../media/iot-central-environment-chart.png)
+> ![The illustration shows an IoT Central chart.](../media/iot-central-environment-chart.png)
 
 ## Extend the IOT.BAS app
 
