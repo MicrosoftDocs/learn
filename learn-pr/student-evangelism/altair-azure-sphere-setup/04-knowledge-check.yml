@@ -35,14 +35,4 @@ quiz:
     - content: "Windows 10, Linux, or macOS."
       isCorrect: false
       explanation: "Azure Sphere development is only supported on Windows 10 and Linux. "
-  - content: "How can you run real-time applications on an Azure Sphere?"
-    choices:
-    - content: "You can't run real-time applications on an Azure Sphere."
-      isCorrect: false
-      explanation: "You can run real-time applications on the Azure Sphere Cortex-M4 cores."
-    - content: "You can run real-time applications on the Azure Sphere Cortex-A7 core."
-      isCorrect: false
-      explanation: "You cannot run real-time applications on the Cortex-A7 core as the application has to compete for resources with other services running on the Linux kernel."
-    - content: "You can run real-time applications on the Azure Sphere Cortex-M4 cores."
-      isCorrect: true
-      explanation: "You can run bare-metal code, or real-time operating system such as Azure RTOS or FreeRTOS on the Azure Sphere Cortex-M4 cores.  The Altair emulator runs two applications on the real time cores and the actual Altair emulator on the high-level A7 core."
+  
