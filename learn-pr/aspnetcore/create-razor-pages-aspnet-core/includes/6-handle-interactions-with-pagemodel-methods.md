@@ -23,7 +23,7 @@ namespace RazorPagesPizza.Pages
 }
 ```
 
-A Razor page's `PageModel` class file defines any page handlers for HTTP requests sent to the page, and data used to render the page. The `PageModel` keeps those concerns separate from the Razor page, your app more modular, and easier to maintain. By convention, the `PageModel` class is named *<PageName>Model* and resides in the same namespace as the Razor page. In this case, the `PizzaModel` class in the namespace of `RazorPagesPizza.Pages`.
+A Razor page's `PageModel` class file defines any page handlers for HTTP requests sent to the page, and data used to render the page. The `PageModel` keeps those concerns separate from the Razor page, your app more modular, and easier to maintain. By convention, the `PageModel` class is named *[PageName]Model* and resides in the same namespace as the Razor page. In this case, the `PizzaModel` class in the namespace of `RazorPagesPizza.Pages`.
 
 Currently, the `PizzaModel` class handles the HTTP GET request with an empty `OnGet` page handler. You can add handlers for any HTTP verb. The most common handlers are:
 
