@@ -1,4 +1,4 @@
-In this unit, you'll learn how to deploy your own private MQTT Broker
+In this unit, you'll learn how to deploy your own private MQTT Broker.
 
 ## Overview
 

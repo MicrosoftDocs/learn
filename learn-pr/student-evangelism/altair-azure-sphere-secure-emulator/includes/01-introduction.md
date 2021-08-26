@@ -6,13 +6,6 @@ You must declare all network endpoints, peripherals, and inter-core communicatio
 
 The Altair emulator connects to two cloud services. IoT Central for configuration and reporting, and an [MQTT](https://en.wikipedia.org/wiki/MQTT?azure-portal=true) broker. The MQTT broker is used to relay messages between the Altair emulator, the Web Terminal, and the virtual disk server.
 
-In this module, you'll learn how to:
-
-1. Declare network endpoints for IoT Central and [test.mosquitto.org](https://test.mosquitto.org?azure-portal=true), a public MQTT broker.
-Generate certificates to secure communications with the public test.mosquitto.org MQTT broker.
-
-1. Communications between Azure Sphere and IoT Central are secured with certificates. In the previous module, you linked the Azure Sphere tenant Certificate Authority certificate with IoT Central. IoT Central will trust messages signed by the Azure Sphere certificates in the trusted Azure Sphere tenant.
-
 In this module, you will:
 
 * Declare the network endpoints for the Altair emulator.
@@ -21,6 +14,14 @@ In this module, you will:
 
 ## Prerequisites
 
-TBD
+* You have completed the previous module of the learning path.
+* A computer with an x86-64-based processor running:
+  * Windows 10 Anniversary Update or later.
+  * Or, 64-bit Ubuntu 20.04 LTS or Ubuntu 18.04 LTS.
+* An Azure Sphere developer board. Either:
+  * An Avnet Azure Sphere Starter Kit Rev 1 or 2.
+  * Or, a Seeed Studio Azure Sphere MT3620 Development Kit.
+* A GitHub account.
+* An Azure Account. Sign up for a free [Student Azure account](https://azure.microsoft.com/free/students?azure-portal=true), or free [Azure account](https://azure.microsoft.com/free?azure-portal=true).
 
 In the next unit, you'll learn how to declare the network endpoints required by the Altair emulator.

@@ -1,29 +1,31 @@
 In this unit, you will:
 
-1. Install Visual Studio Code (or Visual Studio 2019).
+1. Install Visual Studio Code
 1. Install the Azure Sphere SDK.
-1. Claim your device.
-1. Set up Azure Sphere for application deployments.
+1. Claim your Azure Sphere device.
+1. Configure the Azure Sphere Wi-Fi network.
+1. Update the Azure Sphere OS.
+1. Enable app development on the device.
 
 Install the following software on your Windows 10 or Linux computer.
 
 ## Troubleshooting
 
-1. See the [Troubleshoot Azure Sphere issues](/azure-sphere/install/troubleshoot-installation?azure-portal=true) article.
-1. If you have trouble connecting to the Azure Sphere over USB be sure to disable any VPNs you might have enabled.
+1. See the [Troubleshoot Azure Sphere issues](/azure-sphere/install/troubleshoot-installation) article.
+1. If you have trouble connecting to the Azure Sphere over USB, try disabling any active VPNs.
 1. The **TAP-Windows Adapter V9** installed with VPN clients, including the OpenVPN client is not compatible with the **TAP-Windows Adapter V9** required and installed by the Azure Sphere SDK. You'll need to uninstall the VPN client and reinstall the Azure Sphere SDK for Visual Studio.
 1. Windows Users. If running the IoT Central ShowIoTCentralConfig command fails with a missing library message, then delete the folder from ShowIoTCentralConfig from AppData\\Local\\Temp\\.net.
-1. Windows and VS Code users. You must add the Ninja and cmake to the Windows path. To do add these applications to the Windows path, press the Windows key, type ```path```, select **Edit the system environment variables**, click the **Environment Variables** button, double click on **path** in the **User variables for ...** and add the paths for "ninja-win" and "CMake\bin", then click **OK**.
+1. Windows and VS Code users. Add the Ninja and CMake to the Windows path. To do add these applications to the Windows path, press the Windows key, type ```path```, select **Edit the system environment variables**, select **Environment Variables**, select **Path** in the **User variables for ...**, select **edit**, and add the paths for "ninja-win" and "CMake\bin", then select **OK**.
 
 ## Azure Sphere SDK version
 
-This learning module requires the 21.01 SDK release or newer.
+This learning module requires the Azure Sphere SDK 21.07 release or newer.
 
 ## Windows 10 users
 
-This learning module uses Visual Studio Code. However, if you are a Windows user comfortable using Visual Studio then you can still complete the exercises appreciating that the IDE screenshots included in this module will be different.
+This learning module uses Visual Studio Code. However, if you are a Windows user comfortable with Visual Studio then you can still complete the exercises appreciating that the IDE screenshots included in this module will be different.
 
-You need to do the following:
+Complete the following steps:
 
 1. Install the latest Azure Sphere SDK.
 1. Install CMake and Ninja.
@@ -32,7 +34,7 @@ You need to do the following:
 1. Claim your device.
 1. Configure networking for the device.
 
-The following [Quickstart: Install the Azure Sphere SDK for Windows](/azure-sphere/install/install-sdk?pivots=vs-code&azure-portal=true) will step you through the process.
+The following [Quickstart: Install the Azure Sphere SDK for Windows](https://docs.microsoft.com/en-us/azure-sphere/install/install-sdk?pivots=vs-code&azure-portal=true) will step you through the process.
 
 ### Install the Git client for Windows
 
@@ -40,14 +42,14 @@ The Git client is required to clone the Learning Path Labs and the Azure Sphere 
 
 Install [Git for Windows](https://git-scm.com/downloads?azure-portal=true).
 
-### Install the real time core GNU Arm Embedded Toolchain for Windows
+### Install the real-time core GNU Arm Embedded Toolchain for Windows
 
 1. Download the latest [GNU Arm Embedded Toolchain](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads?azure-portal=true) for Windows.
 2. Install the GNU Arm Embedded Toolchain
 
 ## Ubuntu 18.04 or 20.04 LTS users
 
-You need to complete the following steps:
+Complete the following steps:
 
 1. Install the Azure Sphere SDK.
     **Ensure you install the new azsphere CLI v2**.
@@ -58,7 +60,7 @@ You need to complete the following steps:
 1. Claim your device.
 1. Configure networking for the device.
 
-The [Quickstart: Install the Azure Sphere SDK for Linux]/azure-sphere/install/install-sdk-linux?pivots=vs-code-linux&azure-portal=true) will step you through the process.
+The [Quickstart: Install the Azure Sphere SDK for Linux](https://docs.microsoft.com/en-us/azure-sphere/install/install-sdk-linux?pivots=vs-code-linux&azure-portal=true) will step you through the process.
 
 ### Install the Git client for Linux
 
@@ -76,13 +78,13 @@ Install the GNU Arm Embedded Toolchain for Linux
 2. Install the downloaded package. The following installs the toolchain in the /opt folder.
 
     ```bash
-    sudo tar -xjvf gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux.tar.bz2 -C /opt
+    sudo tar -xjvf gcc-arm-none-eabi-<version-number>-major-x86_64-linux.tar.bz2 -C /opt
     ```
 
 3. Update your path. Open ~/.bashrc and add to the end.
 
     ```bash
-    export PATH=$PATH:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin
+    export PATH=$PATH:/opt/gcc-arm-none-eabi-<version-number>-major/bin
     ```
 
 4. Optional: The real-time core debugger relies on the *libncurses.so.5* library. Depending on your system setup, this library may already be install, if not, then run the following commands.
@@ -96,11 +98,10 @@ Install the GNU Arm Embedded Toolchain for Linux
 
 The Peacock extension allows you to change the color of your Visual Studio Code workspace. The Peacock extension is useful when you have multiple instances of Visual Studio Code open.
 
-   1. Open Extensions sideBar panel in Visual Studio Code
-      - Or choose the menu options for View → Extensions
-   1. Search for Peacock
-   1. Select Install
-   1. Select Reload, if necessary
+   1. Open Extensions sideBar panel in Visual Studio Code, or from the menu, select View → Extensions.
+   1. Search for Peacock.
+   1. Select Install.
+   1. Select Reload, if necessary.
 
 ## Delete existing applications on Azure Sphere
 
