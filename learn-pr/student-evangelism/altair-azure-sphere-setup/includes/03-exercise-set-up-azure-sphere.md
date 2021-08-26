@@ -19,11 +19,11 @@ Install the following software on your Windows 10 or Linux computer.
 
 ## Azure Sphere SDK version
 
-This learning module requires the 21.01 SDK release or newer.
+This learning module requires the 21.07 SDK release or newer.
 
 ## Windows 10 users
 
-This learning module uses Visual Studio Code. However, if you are a Windows user comfortable using Visual Studio then you can still complete the exercises appreciating that the IDE screenshots included in this module will be different.
+This learning module uses Visual Studio Code. However, if you are a Windows user comfortable with Visual Studio then you can still complete the exercises appreciating that the IDE screenshots included in this module will be different.
 
 You need to do the following:
 
@@ -34,7 +34,7 @@ You need to do the following:
 1. Claim your device.
 1. Configure networking for the device.
 
-The following [Quickstart: Install the Azure Sphere SDK for Windows](/azure-sphere/install/install-sdk?pivots=vs-code&azure-portal=true) will step you through the process.
+The following [Quickstart: Install the Azure Sphere SDK for Windows](https://docs.microsoft.com/en-us/azure-sphere/install/install-sdk?pivots=vs-code&azure-portal=true) will step you through the process.
 
 ### Install the Git client for Windows
 
@@ -60,7 +60,7 @@ You need to complete the following steps:
 1. Claim your device.
 1. Configure networking for the device.
 
-The [Quickstart: Install the Azure Sphere SDK for Linux]/azure-sphere/install/install-sdk-linux?pivots=vs-code-linux&azure-portal=true) will step you through the process.
+The [Quickstart: Install the Azure Sphere SDK for Linux](https://docs.microsoft.com/en-us/azure-sphere/install/install-sdk-linux?pivots=vs-code-linux&azure-portal=true) will step you through the process.
 
 ### Install the Git client for Linux
 
