@@ -2,8 +2,6 @@ In this module, you'll learn how to configure IoT Central, create the Altair Web
 
 ## Configure IoT Central
 
-In this module, you'll create IoT Central views to control and chart data from the Altair emulator.
-
 When your Altair emulator connects to IoT Central, you can set several properties, including startup CPU State and LED brightness. You also can report memory usage and environment data.
 
 > [!div class="mx-imgBorder"]
@@ -16,7 +14,7 @@ From IoT Central, you can monitor the current state of the Altair emulator inclu
 
 ## Create the Altair Web Terminal
 
-In this module, you'll create the Altair web terminal. The Altair emulator redirects keyboard and terminal messages over MQTT, via an MQTT broker to the MQTT enabled web terminal. The Altair web terminal is how you'll connect to the Altair emulator.
+The Altair emulator redirects keyboard and terminal messages over MQTT, via an MQTT broker to the MQTT enabled web terminal. The Altair web terminal is how you'll connect to the Altair emulator.
 
 The following image shows connecting to the Altair emulator from a web browser.
 
