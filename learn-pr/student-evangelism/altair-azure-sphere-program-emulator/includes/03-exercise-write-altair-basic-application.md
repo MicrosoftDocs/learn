@@ -2,7 +2,7 @@ In this exercise, you'll learn how to write your first Altair BASIC application.
 
 ## Altair Basic
 
-The Altair emulator would have started running before your connected to the Web Terminal. So, press the **RESET** button on the Azure Sphere to restart the Altair emulator. When it restarts, you will be prompted for the following information:
+The Altair emulator would have started running before you connected to the Web Terminal. So, press the **RESET** button on the Azure Sphere to restart the Altair emulator. When it restarts, you will be prompted for the following information:
 
 * **MEMORY SIZE?** If you only plan to run Altair BASIC, press the Enter key. If you plan to boot into CP/M, then enter 32000 followed by the Enter key.
 * **TERMINAL  WIDTH?** Press the Enter key to accept the default.
@@ -145,7 +145,7 @@ Then run the application.
 run
 ```
 
-When you run this application, temperature and pressure data will be published to IoT Central. You can view the data on the Environment tab for your device.
+When you run this application, temperature and pressure data will be published to IoT Central. You can view the data in the IoT Central web portal under the Environment tab for your device.
 
 > [!div class="mx-imgBorder"]
 > ![The illustration shows an IoT Central chart.](../media/iot-central-environment-chart.png)
