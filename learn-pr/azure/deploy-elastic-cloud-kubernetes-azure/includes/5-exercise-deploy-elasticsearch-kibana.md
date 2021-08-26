@@ -80,11 +80,11 @@ Elastic Stack provides tools, including Elasticsearch and Kibana, to help you se
     kubectl apply -f kibana.yaml    
     ```
 
-1. You can use `watch kubectl get kibana` command to see the status of Kibana deployment. Once the health of the deployment turns green, stop the watch command and run `kubectl get service quickstart-kb-http` to get details for Kibana.
+1. You can use `watch kubectl get kibana` command to see the status of Kibana deployment. Once the health of the deployment turns green, stop the `watch` command and run `kubectl get service quickstart-kb-http` to get details for Kibana.
 
-1. Copy the EXTERNAL-IP from the output and open https://<EXTERNAL-IP>:5601. Caution: Since we are using self-signed certificates for this tutorial you should see a “Your connection isn’t private” message in the browser. Please ensure to use valid certificates for any production deployments. Please refer to the TLS certificates section for more details.
+1. Copy the EXTERNAL-IP from the output and open `https://<EXTERNAL-IP>:5601`. **Caution**: Since we are using self-signed certificates for this tutorial you should see a “Your connection isn’t private” message in the browser. Please use valid certificates for any production deployments. Please refer to the TLS certificates section for more details.
 
-1. Click on Advanced and proceed to the Kibana Login page. Use the ***elastic*** user to log in.
+1. Select Advanced and proceed to the Kibana Login page. Use the ***elastic*** user to log in.
 
 1. On Azure Cloud Shell, run the following command to get the password for the elastic user and use the value to log in to the Kibana Login page in the browser.
 
