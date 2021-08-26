@@ -58,15 +58,15 @@ Now run the app and API locally with a development server. This way, you'll be a
 
    ::: zone-end
 
-::: zone pivot="vue"
+   ::: zone pivot="vue"
 
-```bash
-cd vue-app
-```
+   ```bash
+   cd vue-app
+   ```
 
-::: zone-end
+   ::: zone-end
 
-5. Run the front-end client application using a development server.
+1. Run the front-end client application using a development server.
 
    ::: zone pivot="angular"
 
@@ -102,11 +102,11 @@ cd vue-app
 
    Leave this server running in the background. Now run the API and authentication server emulator using the SWA CLI.
 
-6. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>.
+1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>.
 
-7. Enter and select **Terminal: Create New Integrated Terminal**.
+1. Enter and select **Terminal: Create New Integrated Terminal**.
 
-8. Run the SWA CLI by running the following command:
+1. Run the SWA CLI by running the following command:
 
    ::: zone pivot="angular"
 
@@ -140,7 +140,7 @@ cd vue-app
 
    ::: zone-end
 
-9. Browse to `http://localhost:4280`.
+1. Browse to `http://localhost:4280`.
 
 The final port used by the SWA CLI is different than the one you've seen before, because it uses a reverse proxy to forward requests to the three different components:
 
@@ -185,7 +185,7 @@ First, you need to access the user login status by making a query to `/.auth/me`
    }
    ```
 
-1. Create a new class property `userInfo`, and store the result of the async function `getUserInfo()` when the component is initialized. Implement the `OnInit` interface and update the import statements to import `OnInit` and `getUserInfo`. This code fetches the user information when the component is initialized.
+1. Create a new class property `userInfo`, and store the result of the async function `getUserInfo()` when the component is initialized. Implement the `OnInit` interface and update the import statements to import `OnInit` and `UserInfo`. This code fetches the user information when the component is initialized.
 
    ```typescript
    import { Component, OnInit } from '@angular/core';
@@ -269,15 +269,14 @@ First, you need to access the user login status by making a query to `/.auth/me`
 1. Edit the file `vue-app/src/components/nav-bar.vue`, and add `userInfo` to the data object.
 
    ```javascript
-   ...
-     data() {
-       return {
-         userInfo: {
-           type: Object,
-           default() {},
-         },
-       };
-     },
+    data() {
+      return {
+        userInfo: {
+          type: Object,
+          default() {},
+        },
+      };
+    },
    ```
 
 1. Add the `getUserInfo()` method to the _methods_ section.
@@ -328,9 +327,9 @@ The user information will be `undefined` if they're not logged in, so the change
    redirect = window.location.pathname;
    ```
 
-1. Add the following code at the bottom of the template to display the login and logout buttons.
+1. Add the following code to the template after the first `</nav>` element to display the login and logout buttons.
 
-   ```typescript
+   ```html
    <nav class="menu auth">
      <p class="menu-label">Auth</p>
      <div class="menu-list auth">
@@ -360,39 +359,31 @@ You should now see this webpage in your browser.
 
 1. Edit the file `react-app/src/components/NavBar.js` to add a list of providers at the top of the function.
 
-   ```jsx
+   ```javascript
    const providers = ['twitter', 'github', 'aad'];
    ```
 
 1. Add the following `redirect` variable below the first variable to capture the current URL for the post login redirection.
 
-   ```jsx
+   ```javascript
    const redirect = window.location.pathname;
    ```
 
-1. Add the following code to the bottom of the JSX template to display the login and logout buttons.
+1. Add the following code to the JSX template after the first `</nav>` element to display the login and logout buttons.
 
    ```jsx
-   ...
-     </nav>
-     // Login and logout buttons
-     <nav className="menu auth">
-       <p className="menu-label">Auth</p>
-       <div className="menu-list auth">
-         {!userInfo && providers.map((provider) => (
+   <nav className="menu auth">
+     <p className="menu-label">Auth</p>
+     <div className="menu-list auth">
+       {!userInfo &&
+         providers.map((provider) => (
            <a key={provider} href={`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`}>
              {provider}
            </a>
          ))}
-         {userInfo && (
-           <a href={`/.auth/logout?post_logout_redirect_uri=${redirect}`}>
-             Logout
-           </a>
-         )}
-       </div>
-     </nav>
-     // End of login and logout buttons
-   </div>
+       {userInfo && <a href={`/.auth/logout?post_logout_redirect_uri=${redirect}`}>Logout</a>}
+     </div>
+   </nav>
    ```
 
    If the user isn't logged in, you display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>`, and sets the redirection URL to the current page.
@@ -419,31 +410,26 @@ You should now see this webpage in your browser.
    const redirect = window.location.pathname;
    ```
 
-1. Add the following code to the bottom of the template to display the login and logout buttons.
+1. Add the following code to the template after the first `</nav>` element to display the login and logout buttons.
 
    ```html
-   ...
-     </nav>
-     <!-- Login and logout buttons -->
-     <nav class="menu auth">
-       <p class="menu-label">Auth</p>
-       <div class="menu-list auth">
-         {#if !userInfo}
-           {#each providers as provider (provider)}
-             <a href={`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`}>
-               {provider}
-             </a>
-           {/each}
-         {/if}
-         {#if userInfo}
-           <a href={`/.auth/logout?post_logout_redirect_uri=${redirect}`}>
-             Logout
-           </a>
-         {/if}
-       </div>
-     </nav>
-     <!-- end of login and logout buttons -->
-   </div>
+    <nav class="menu auth">
+      <p class="menu-label">Auth</p>
+      <div class="menu-list auth">
+        {#if !userInfo}
+          {#each providers as provider (provider)}
+            <a href={`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`}>
+              {provider}
+            </a>
+          {/each}
+        {/if}
+        {#if userInfo}
+          <a href={`/.auth/logout?post_logout_redirect_uri=${redirect}`}>
+            Logout
+          </a>
+        {/if}
+      </div>
+    </nav>
    ```
 
    If the user isn't logged in, you display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>`, and sets the redirection URL to the current page.
@@ -461,51 +447,31 @@ You should now see this webpage in your browser.
 1. Edit the file `vue-app/src/components/nav-bar.vue`, and add a list of providers to the data object.
 
    ```javascript
-   ...
-     data() {
-       return {
-         ...
-         providers: ['twitter', 'github', 'aad'],
-       };
-     },
+    providers: ['twitter', 'github', 'aad'],
    ```
 
 1. Add the following`redirect` property to capture the current URL for the post login redirection.
 
    ```javascript
-   ...
-     data() {
-       return {
-         ...
-         redirect: window.location.pathname,
-       };
-     },
+    redirect: window.location.pathname,
    ```
 
-1. Add the following code to the bottom of the template to display the login and logout buttons.
+1. Add the following code to the template after the first `</nav>` element to display the login and logout buttons.
 
    ```html
-   ...
-       </nav>
-       <!-- Login and logout buttons -->
-       <nav class="menu auth">
-         <p class="menu-label">Auth</p>
-         <div class="menu-list auth">
-           <template v-if="!userInfo">
-             <template v-for="provider in providers">
-               <a :key="provider" :href="`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`">
-                 {{ provider }}
-               </a>
-             </template>
-           </template>
-           <a v-if="userInfo" :href="`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`">
-             Logout
+   <nav class="menu auth">
+     <p class="menu-label">Auth</p>
+     <div class="menu-list auth">
+       <template v-if="!userInfo">
+         <template v-for="provider in providers">
+           <a :key="provider" :href="`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`">
+             {{ provider }}
            </a>
-         </div>
-       </nav>
-       <!-- end of login and logout buttons -->
+         </template>
+       </template>
+       <a v-if="userInfo" :href="`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`"> Logout </a>
      </div>
-   </template>
+   </nav>
    ```
 
    If the user isn't logged in, you display the login button for each provider. Each button links to `/.auth/login/<AUTH_PROVIDER>`, and sets the redirection URL to the current page.
@@ -524,7 +490,7 @@ Before testing the authentication workflow, let's display the user details about
 
 ::: zone pivot="angular"
 
-Edit the file `angular-app/src/app/core/components/nav.component.ts`, and add this code to the bottom of the template.
+Edit the file `angular-app/src/app/core/components/nav.component.ts`, and add this code to the bottom of the template after the final closing `</nav>` tag.
 
 ```html
 <div class="user" *ngIf="userInfo">
@@ -604,13 +570,11 @@ export class NavComponent implements OnInit {
 
 ::: zone pivot="react"
 
-Edit the file `react-app/src/components/NavBar.js`, and add this code to the bottom of the JSX template to display the login status.
+Edit the file `react-app/src/components/NavBar.js`, and add this code to the bottom of the JSX template after the final closing `</nav>` tag, to display the login status.
 
 ```jsx
-...
-  </nav>
-  // User infos
-  {userInfo && (
+{
+  userInfo && (
     <div>
       <div className="user">
         <p>Welcome</p>
@@ -618,10 +582,8 @@ Edit the file `react-app/src/components/NavBar.js`, and add this code to the bot
         <p>{userInfo && userInfo.identityProvider}</p>
       </div>
     </div>
-  )}
-  // End of User infos
-</div>
-...
+  );
+}
 ```
 
 > [!NOTE]
@@ -702,22 +664,16 @@ export default NavBar;
 
 ::: zone pivot="svelte"
 
-Edit the file `svelte-app/src/components/NavBar.svelte`, and add this code to the bottom of the template to display the login status.
+Edit the file `svelte-app/src/components/NavBar.svelte`, and add this code to the bottom of the template after the final closing `</nav>` tag, to display the login status.
 
 ```html
-...
-  </nav>
-  <!-- User infos -->
-  {#if userInfo}
-    <div class="user">
-      <p>Welcome</p>
-      <p>{userInfo && userInfo.userDetails}</p>
-      <p>{userInfo && userInfo.identityProvider}</p>
-    </div>
-  {/if}
-  <!-- End of user infos -->
+{#if userInfo}
+<div class="user">
+  <p>Welcome</p>
+  <p>{userInfo && userInfo.userDetails}</p>
+  <p>{userInfo && userInfo.identityProvider}</p>
 </div>
-...
+{/if}
 ```
 
 > [!NOTE]
@@ -798,20 +754,14 @@ Your completed file should now look like the following:
 
 ::: zone pivot="vue"
 
-Edit the file `vue-app/src/components/nav-bar.vue`, and add this code to the bottom of the template to display the login status:
+Edit the file `vue-app/src/components/nav-bar.vue`, and add this code to the bottom of the template after the final closing `</nav>` tag, to display the login status:
 
 ```html
-...
-    </nav>
-    <!-- User infos -->
-    <div class="user" v-if="userInfo">
-      <p>Welcome</p>
-      <p>{{ userInfo.userDetails }}</p>
-      <p>{{ userInfo.identityProvider }}</p>
-    </div>
-    <!-- End of user infos -->
-  </div>
-</template>
+<div class="user" v-if="userInfo">
+  <p>Welcome</p>
+  <p>{{ userInfo.userDetails }}</p>
+  <p>{{ userInfo.identityProvider }}</p>
+</div>
 ```
 
 > [!NOTE]
