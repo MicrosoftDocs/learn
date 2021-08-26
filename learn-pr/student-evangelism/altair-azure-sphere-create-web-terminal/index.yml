@@ -1,25 +1,15 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.altair-azure-sphere-create-web-terminal
 metadata:
-<<<<<<< HEAD
-  title: Create an Altair Web Terminal and run an Altair virtual disk server
-  description: Learn how to set up Azure IoT Central, create an Altair Web Terminal, and install and run an Altair Python virtual disk server.
-=======
   title: Customize Iot Central, create an Altair Web Terminal and run an Altair virtual disk server.
   description: Learn how to customize IoT Central, create the Altair Web Terminal, and run the Altair virtual disk server.
->>>>>>> 370787a0a54274db300dfec01b57742d2dfc2024
   ms.date: 08/18/2021
   author: gloveboxes
   ms.author: dglover
   ms.topic: interactive-tutorial
   ms.prod: learning-azure-iot-central
-<<<<<<< HEAD
-title: Create an Altair Web Terminal and run an Altair virtual disk server
-summary: Learn how to set up Azure IoT Central, create an Altair Web Terminal, and install and run an Altair Python virtual disk server.
-=======
 title: Customize Iot Central, create an Altair Web Terminal and run an Altair virtual disk server.
 summary: Learn how to customize IoT Central, create the Altair Web Terminal, and run the Altair virtual disk server.
->>>>>>> 370787a0a54274db300dfec01b57742d2dfc2024
 abstract:  |
   In this module, you will:
   - Customize IoT Central.
