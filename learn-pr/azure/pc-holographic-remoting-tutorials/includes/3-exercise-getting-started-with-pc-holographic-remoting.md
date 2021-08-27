@@ -148,7 +148,7 @@ In the Hierarchy window, select the ModelParent object. Expand the **MarsCuriosi
 
 Follow the same process and assign respective tooltip objects to their same MarsCuriosityRover parts While Looking At Target () & On Look Away () events.
 
-To enable eye tracking, please follow these [guidelines](windows/mixed-reality/mrlearning-base-ch5#5-enable-simulated-eye-tracking-for-in-editor-simulations).
+
 
 
 

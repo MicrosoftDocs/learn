@@ -5,5 +5,5 @@ You also learnt how to create a Holographic Remoting remote app and connect to H
 
  References
  
-* https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/add-holographic-remoting
-* https://www.microsoft.com/p/holographic-remoting-player/9nblggh4sv40?activetab=pivot:overviewtab 
+* windows/mixed-reality/develop/platform-capabilities-and-apis/add-holographic-remoting
+* p/holographic-remoting-player/9nblggh4sv40?activetab=pivot:overviewtab 
