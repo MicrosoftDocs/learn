@@ -4,8 +4,8 @@ metadata:
   title: Azure Speech Services Tutorials
   description: This course explores the use of azure speech services by integrating to a hololens2 application. You can also deploy your project to a HoloLens.
   ms.date: 06/23/2021
-  author: "varunsiddaraju"
-  ms.author: "v-hferrone"
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 title: Set up a mixed reality project in Unity with the Mixed Reality Toolkit

@@ -5,8 +5,8 @@ metadata:
   title: Adding an offline mode for local speech to text translation
   description: Introduction to Adding an offline mode for local speech to text translation
   ms.date: 06/23/2021
-  author: "varunsiddaraju"
-  ms.author: "v-hferrone"
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 durationInMinutes: 1

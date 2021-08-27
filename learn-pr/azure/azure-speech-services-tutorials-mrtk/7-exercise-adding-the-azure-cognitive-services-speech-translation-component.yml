@@ -5,8 +5,8 @@ metadata:
   title: Exercise Adding the azure cognitive services speech translation component
   description: Description to Adding the azure cognitive services speech translation component
   ms.date: 06/23/2021
-  author: "varunsiddaraju"
-  ms.author: "v-hferrone"
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 durationInMinutes: 1
