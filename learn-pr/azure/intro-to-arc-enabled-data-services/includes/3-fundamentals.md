@@ -27,7 +27,7 @@ Azure arc-enabled data services are deployed as a set of pods based on Microsoft
 
 ## Connected modes
 
-Before you deploy Azure Arc-enabled data services components, you should decide which connected mode you would like to use. You can choose between the following connected modes:
+Before you deploy Azure Arc-enabled data services components, you should decide which [connected mode](https://docs.microsoft.com/azure/azure-arc/data/connectivity) you would like to use. You can choose between the following connected modes:
 
 ### Direct connected mode
 
@@ -35,7 +35,7 @@ With direct connected mode (currently in preview), users can use the Azure Resou
 
 ### Indirect connected mode
 
-With indirect connected mode, all deployment and management operations for Azure Arc-enabled data services are done using the az CLI (using the [arcdata extension](https://docs.microsoft.com/Azure/azure-arc/data/install-arcdata-extension)) or tools like kubectl or Azure Data Studio. These tools interact directly with the Kubernetes API to manage Azure Arc-enabled data services. You aren't always required to be connected to Azure when you use indirect connected mode. Inventory and billing can be manually exported and uploaded to Azure using the az CLI. Logs and metrics can be optionally uploaded to Azure Monitor.
+With indirect connected mode, all deployment and management operations for Azure Arc-enabled data services are done using the az command-line interface (CLI), using the [arcdata extension](https://docs.microsoft.com/Azure/azure-arc/data/install-arcdata-extension), or tools like kubectl or Azure Data Studio. These tools interact directly with the Kubernetes API to manage Azure Arc-enabled data services. You aren't always required to be connected to Azure when you use indirect connected mode. Inventory and billing can be manually exported and uploaded to Azure using the az CLI. Logs and metrics can be optionally uploaded to Azure Monitor.
 
 After deployment, az CLI, kubectl, and Azure Data Studio can interact with the Kubernetes API to manage Azure Arc-enabled data services in both direct and indirect connected mode.
 

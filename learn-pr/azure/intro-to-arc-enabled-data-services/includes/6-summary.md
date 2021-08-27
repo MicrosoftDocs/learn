@@ -18,7 +18,7 @@ Read this [overview](https://docs.microsoft.com/azure/azure-arc/data/managed-ins
 
 ### Azure Arc-enabled PostgreSQL Hyperscale (Preview)
 
-Read this [overview](https://docs.microsoft.com/azure/azure-arc/data/what-is-azure-arc-enabled-postgres-hyperscale) to learn more about Azure Arc-enabled PostgreSQL Hyperscale] and how to get started.
+Read this [overview](https://docs.microsoft.com/azure/azure-arc/data/what-is-azure-arc-enabled-postgres-hyperscale) to learn more about Azure Arc-enabled PostgreSQL Hyperscale and how to get started.
 
 ### Azure Arc Jumpstart
 

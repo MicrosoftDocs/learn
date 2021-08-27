@@ -86,7 +86,7 @@ One of the benefits of using a managed service like Azure Arc-enabled SQL Manage
 
 For the General Purpose service tier, the built-in high availability of Kubernetes StatefulSets is used with shared storage.
 
-For the Business Critical service tier (Preview), built in high availability is provided using a combination of Kubernetes StatefulSets and SQL Server Always On Availability Group replicas. Availability Group replicas are automatically setup and configured for the user. Like Azure SQL Managed Instance, a read-only replica is available to offload read workloads. System databases such as master and model are part of the availability group. System level objects such as SQL Agent jobs will automatically be available after a failover event.
+For the Business Critical service tier (Preview), built in high availability is provided using a combination of Kubernetes StatefulSets and SQL Server Always On Availability Group replicas. Availability Group replicas are automatically deployed and configured for the user. Like Azure SQL Managed Instance, a read-only replica is available to offload read workloads. System databases such as master and model are part of the availability group. System level objects such as SQL Agent jobs will automatically be available after a failover event.
 
 Kubernetes LoadBalancers and NodePorts provide connection abstraction for the application should the instance move within the cluster. In addition, a read-only connection abstraction point is provided for Business Critical service tiers.
 
@@ -110,15 +110,15 @@ The following interfaces can be used with Azure Arc-enabled SQL Managed Instance
 
 ### SQL Server Management Studio (SSMS)
 
-[SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) (SSMS) is fully compatible to connect, query, and manage an Azure Arc-enabled SQL Managed Instance.
+[SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms) (SSMS) is fully compatible to query and manage an Azure Arc-enabled SQL Managed Instance.
 
 ### Azure Data Studio (ADS)
 
-[Azure Data Studio](https://azure.microsoft.com/services/developer-tools/data-studio/) (ADS) is a multi-platform tool that can connect, query, and manage an Azure Arc-enabled SQL Managed Instance. ADS supports queries using T-SQL along with T-SQL notebooks. Also, you can use the ADS Azure Arc extension (Preview) to create and manage Azure Arc-enabled data services resources such as the data controller, SQL Managed Instance, and PostgreSQL Hyperscale.
+[Azure Data Studio](https://azure.microsoft.com/services/developer-tools/data-studio/) (ADS) is a multi-platform tool that can query and manage an Azure Arc-enabled SQL Managed Instance. ADS supports queries using T-SQL along with T-SQL notebooks. Also, you can use the ADS Azure Arc extension (Preview) to create and manage Azure Arc-enabled data services resources such as the data controller, SQL Managed Instance, and PostgreSQL Hyperscale.
 
-### SQL command line tools
+### SQL command-line tools
 
-SQL command line tools like sqlcmd and bcp are supported with Azure Arc-enabled SQL Managed Instance.
+SQL command-line tools like sqlcmd and bcp are supported with Azure Arc-enabled SQL Managed Instance.
 
 ### Azure portal
 
@@ -130,7 +130,7 @@ You can use the arcdata extension with the multi-platform [az](https://docs.micr
 
 ### kubectl
 
-You can use the multi-platform [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) command-line interface (CLI) to create, view, and manage Azure Arc-enabled data services including SQL Managed Instance. The az CLI tool is the preferred command line interface to use with Azure Arc-enabled SQL Managed Instance, but you can use yaml files with kubectl to create and manage resources. Kubectl can only be used in indirect connected mode to deploy an Azure Arc-enabled SQL Managed Instance. There are some scenarios, such as editing the default point-in-time restore configuration, which requires the use of kubectl.
+You can use the multi-platform [kubectl](https://kubernetes.io/docs/reference/kubectl/overview/) command-line interface (CLI) to create, view, and manage Azure Arc-enabled data services including SQL Managed Instance. The az CLI tool is the preferred command-line interface to use with Azure Arc-enabled SQL Managed Instance, but you can use yaml files with kubectl to create and manage resources. Kubectl can only be used in indirect connected mode to deploy an Azure Arc-enabled SQL Managed Instance. There are some scenarios, such as editing the default point-in-time restore configuration, which requires the use of kubectl.
 
 ### SQL drivers
 
