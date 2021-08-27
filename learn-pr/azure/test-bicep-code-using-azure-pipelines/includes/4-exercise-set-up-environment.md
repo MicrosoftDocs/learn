@@ -39,6 +39,30 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 > [!IMPORTANT]
 > The final exercise in this module contains important cleanup steps. Be sure to follow the cleanup steps even if you don't complete this module.
 
+### Update the pipeline settings
+
+TODO explain
+
+1. In the left menu, select **Pipelines**.
+
+1. Select **toy-website-test**.
+
+1. Select the **Edit** button.
+
+1. Select the button with three dots and select **Triggers** from the popup menu.
+
+1. Deselect the checkbox next to **Override the YAML continuous integration trigger from here**.
+
+1. Select the **YAML** tab.
+
+1. Select **Pipeline**.
+
+1. In the **Default agent pool for YAML**, select **Azure Pipelines**.
+
+1. Select the down arrow next to **Save and queue**, and select **Save**.
+
+1. Select **Save**.
+
 ## Generate a Git password (macOS)
 
 <!-- TODO can we simplify this section? Maybe fold into the 'If you're using macOS' thing below? -->
@@ -78,7 +102,7 @@ In Visual Studio Code, clone your repository.
 
 ::: zone pivot="cli"
 
-To work with service principals in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) tools.
+To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've installed the [Azure CLI](/cli/azure/install-azure-cli?azure-portal=true) tools.
 
 1. To open a Visual Studio Code terminal window, select **Terminal** > **New Terminal**. The window usually opens at the bottom of your screen.
 
@@ -108,7 +132,7 @@ To work with service principals in Azure, sign in to your Azure account from the
 
 ::: zone pivot="powershell"
 
-To deploy this template to Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true), and sign in to the same account that you used to activate the sandbox.
+To work with resource groups in Azure, sign in to your Azure account from the Visual Studio Code terminal. Be sure that you've [installed Azure PowerShell](/powershell/azure/install-az-ps?azure-portal=true).
 
 1. To open a Visual Studio Code terminal window, select **Terminal** > **New Terminal**. The window usually opens at the bottom of your screen.
 
@@ -166,74 +190,9 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 
 ::: zone-end
 
-## Create a service principal and grant it access to the resource group
-
-<!-- TODO looks like Azure DevOps service connection auto creation now behaves correctly! Replace this with that -->
-
-::: zone pivot="cli"
-
-1. To create a service principal and assign it the Contributor role for your resource group, run the following Azure CLI command in the Visual Studio Code terminal. Replace the placeholder with the resource group ID you copied in the last step.
-
-   ```azurecli
-   az ad sp create-for-rbac \
-     --name ToyWebsiteTestPipeline \
-     --role Contributor \
-     --scopes RESOURCE_GROUP_ID
-   ```
-
-1. Look at the JSON output from the command. It includes the following properties:
-
-    * `appId`: The service principal's application ID.
-    * `password`: The service principal's key.
-    * `tenant`: Your Azure AD tenant ID.
-
-   Copy these values somewhere safe. You'll use them soon.
-
-1. To view information about your Azure subscription, run this Azure CLI command:
-
-   ```azurecli
-   az account show
-   ```
-
-1. Look at the JSON output from the command. It includes the following properties:
-
-    * `id`: Your Azure subscription ID.
-    * `name`: Your Azure subscription name.
-
-   Copy these values somewhere safe. You'll use them soon.
-
-::: zone-end
-
-::: zone pivot="powershell"
-
-1. To create a service principal and assign it the Contributor role for your resource group, run the following Azure PowerShell code in the Visual Studio Code terminal. Replace the placeholder with the resource group ID you copied in the last step.
-
-   ```azurepowershell
-   $servicePrincipal = New-AzADServicePrincipal `
-     -DisplayName ToyWebsiteTestPipeline `
-     -Role Contributor `
-     -Scope RESOURCE_GROUP_ID
-
-   $plaintextSecret = [System.Net.NetworkCredential]::new('', $servicePrincipal.Secret).Password
-   ```
-
-1. Run this code to show the service principal's application ID, the key, and your Azure AD tenant ID:
-
-   ```azurepowershell
-   Write-Output "Service principal application ID: $($servicePrincipal.ApplicationId)"
-   Write-Output "Service principal key: $($plaintextSecret)"
-   Write-Output "Azure subscription ID: $((Get-AzContext).Subscription.Id)"
-   Write-Output "Azure subscription name: $((Get-AzContext).Subscription.Name)"
-   Write-Output "Azure AD tenant ID: $((Get-AzContext).Tenant.Id)"
-   ```
-
-   Copy the values somewhere safe. You'll use them soon.
-
-::: zone-end
-
 ## Create a service connection in Azure Pipelines
 
-You've created a resource group and a service principal. Next, create a service connection in Azure Pipelines.
+You've created a resource group. Next, create a service connection in Azure Pipelines. This automatically creates a service principal and grants the service principal the Contributor role on your resource group.
 
 1. In your browser, select **Project settings** > **Service connections** > **Create service connection**.
 
@@ -243,33 +202,12 @@ You've created a resource group and a service principal. Next, create a service 
 
    :::image type="content" source="../../build-first-bicep-deployment-pipeline-using-azure-pipelines/media/5-create-service-connection-type.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with the Azure Resource Manager service connection type highlighted.":::
 
-1. Select **Service principal (manual)** > **Next**.
+1. Select **Service principal (automatic)** > **Next**.
 
-   :::image type="content" source="../../build-first-bicep-deployment-pipeline-using-azure-pipelines/media/5-create-service-connection-principal-type.png" alt-text="Screenshot of the Azure DevOps 'Create service connection' page, with the 'Service principal (manual)' authentication method highlighted.":::
+1. In the **Subscription** drop-down, select your Azure subscription. A popup window may appear, asking you to sign in to Azure. If it does, enter your credentials and sign in.
 
-   > [!NOTE]
-   > It's a good idea to manually create service principals like you're doing here, rather than using the automatic service principal creation that's available in Azure Pipelines. When you use the automatic method, Azure Pipelines grants the service principal permissions to your entire subscription. It's more secure to grant permissions with a narrower scope, like a resource group. Granting specific permissions requires you to use the manual creation process.
+1. In the **Resource group** drop-down, select **ToyWebsiteTest**.
 
-1. In **Subscription Id** and **Subscription Name**, enter the subscription ID and subscription name that you saved earlier.
+1. In **Service connection name**, enter **ToyWebsiteTest**. Ensure that the **Grant access permission to all pipelines** checkbox is selected.
 
-   :::image type="content" source="../../build-first-bicep-deployment-pipeline-using-azure-pipelines/media/5-create-service-connection-principal-details-1.png" alt-text="Screenshot of Azure DevOps that shows the 'Create service connection' page, with a subscription ID and subscription name entered.":::
-
-1. In **Service principal Id** and **Service principal key**, enter the service principal's application ID and the key that you saved earlier. In **Tenant ID**, enter the Azure tenant ID that you saved earlier. Select **Verify**.
-
-   :::image type="content" source="../../build-first-bicep-deployment-pipeline-using-azure-pipelines/media/5-create-service-connection-principal-details-2.png" alt-text="Screenshot of the Azure DevOps 'Create service connection' page, with the details completed and the Verify button highlighted.":::
-
-1. Azure Pipelines verifies that it can access your Azure subscription. Check that*Verification succeeded* is shown.
-
-   > [!NOTE]
-   > If the verification doesn't succeed, check that you copied the correct values for the service principal, subscription, and tenant. Wait a few minutes to allow time for Azure's role assignments to replicate globally, and then try again.
-
-1. In **Service connection name**, enter **ToyWebsiteTest**. Ensure that the **Grant access permission to all pipelines** checkbox is selected. Select **Verify and save**.
-
-   :::image type="content" source="../../build-first-bicep-deployment-pipeline-using-azure-pipelines/media/5-create-service-connection-principal-details-3.png" alt-text="Screenshot of the Azure DevOps 'Create service connection' page, with the 'Verify and save' button highlighted.":::
-
-   > [!TIP]
-   > For simplicity, you're giving every pipeline access to your service connection. When you create real service connections that work with production resources, consider restricting access to only the pipelines that need them.
-
-1. In **Service connections**, verify that your new service connection is shown in the list of service connections.
-
-   :::image type="content" source="../../build-first-bicep-deployment-pipeline-using-azure-pipelines/media/5-service-connection-created.png" alt-text="Screenshot of Azure DevOps that shows the list of service connections, with the ToyWebsite service connection included.":::
+1. Select **Save**.

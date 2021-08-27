@@ -107,6 +107,8 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
 
    Wait until the pipeline completes the **Lint**, **Validate**, and **Preview** stages. While Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
 
+   <!-- TODO mention review what-if to see the new property -->
+
 1. Select the **Review** button.
 
 1. Select **Approve**. Wait for the pipeline execution to finish.
