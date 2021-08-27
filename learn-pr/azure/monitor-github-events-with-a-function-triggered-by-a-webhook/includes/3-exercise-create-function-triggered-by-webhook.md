@@ -51,7 +51,7 @@ In this first exercise, you'll create your code to parse the GitHub wiki event m
 
 1. On the command bar, select **Create**. In a moment, the **Create function** pane appears.
 
-1. In the list of available templates, select **HTTP trigger**, and then select **Create**. The **HttpTrigger1** pane appears, displaying configuration essentials for your new trigger.
+1. In the list of available templates, select **HTTP trigger**, and then select **Create**. The **HttpTrigger1** pane appears, displaying essentials for your new trigger.
 
 1. In the resource menu, select **Code + Test**. The **Code + Test** pane appears, displaying the JavaScript file that was created from the template. It should look like the following code.
 
