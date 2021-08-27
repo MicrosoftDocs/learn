@@ -6,12 +6,8 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-variables:
-  ServiceConnectionName: ToyWebsite
-  ResourceGroupName: ToyWebsite
-  EnvironmentType: Test
-
 stages:
+
 - stage: Lint
   jobs: 
   - job: Lint
@@ -70,6 +66,7 @@ stages:
                 scriptLocation: 'inlineScript'
                 inlineScript: |
                   deploymentOutput=$(az deployment group create \
+                    --name $(Build.BuildNumber) \
                     --resource-group $(ResourceGroupName) \
                     --template-file deploy/main.bicep \
                     --parameters environmentType=$(EnvironmentType))
@@ -88,7 +85,7 @@ stages:
           targetType: inline
           script: |
             $container = New-PesterContainer `
-              -Path 'deploy/tests/Website.Tests.ps1' `
+              -Path 'deploy/Website.Tests.ps1' `
               -Data @{ HostName = '$(appServiceAppHostName)' }
             Invoke-Pester `
               -Container $container `

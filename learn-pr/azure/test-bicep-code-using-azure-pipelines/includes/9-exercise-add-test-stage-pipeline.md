@@ -27,14 +27,14 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
 
 1. In the **Deploy** stage, update the `inlineScript` to the following:
 
-   :::code language="yaml" source="code/9-pipeline.yml" range="72-77" :::
+   :::code language="yaml" source="code/9-pipeline.yml" range="68-74" :::
 
    > [!NOTE]
    > TODO explain this
 
 1. At the bottom of the file, add the following definition for the **Test** stage:
 
-   :::code language="yaml" source="code/9-pipeline.yml" range="79-102" :::
+   :::code language="yaml" source="code/9-pipeline.yml" range="76-99" :::
 
    > [!NOTE]
    > TODO explain this
@@ -45,7 +45,7 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
 
 1. Verify that your *azure-pipelines.yml* file looks like the following:
 
-   :::code language="yaml" source="code/9-pipeline.yml" highlight="72-77, 79-102" :::
+   :::code language="yaml" source="code/9-pipeline.yml" highlight="68-74, 76-99" :::
 
    If it doesn't, update it to match this example, then save it.
 
@@ -59,11 +59,25 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
 
 ## Run the pipeline and review the test result
 
-1. In your browser, navigate to your pipeline runs. 
+1. In your browser, navigate to your pipeline. 
 
-1. TODO approve
+1. Select the most recent run of your pipeline.
 
-1. TODO open test, observe failure
+   Wait until the pipeline completes the **Lint**, **Validate**, and **Preview** stages. While Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+
+1. Select the **Review** button.
+
+1. Select **Approve**. Wait for the pipeline execution to finish.
+
+   Notice that the **Deploy** stage completes successfully. The **Test** stage completes with an error.
+
+1. Select the **Tests** tab.
+
+   Notice that the test summary shows that two tests ran: one passed and one failed.
+
+1. Notice that the test that failed is listed as *Toy Website.Does not serve pages over HTTP*.
+
+   This indicates that the website hasn't been correctly configured to meet your security team's requirement.
 
 ## Update the Bicep file
 
@@ -87,9 +101,17 @@ Here, you add a test script to verify that the website is accessible when HTTPS 
 
 1. In your browser, navigate to your pipeline runs. 
 
-1. TODO approve
+1. In your browser, navigate to your pipeline. 
 
-1. TODO open test, observe success
+1. Select the most recent run of your pipeline.
+
+   Wait until the pipeline completes the **Lint**, **Validate**, and **Preview** stages. While Azure Pipelines automatically updates the page with the latest status, it's a good idea to refresh your page occasionally.
+
+1. Select the **Review** button.
+
+1. Select **Approve**. Wait for the pipeline execution to finish.
+
+   Notice that the entire pipeline completes successfully, including the **Test** stage. This indicates that both tests passed.
 
 ## Clean up the resources
 
