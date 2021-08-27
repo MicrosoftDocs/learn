@@ -18,9 +18,9 @@ In this section, you will learn how to save and retrieve the Azure Anchor ID to 
 
 1. In the Hierarchy window, expand the **ButtonParent** object and locate the two buttons named **SaveAzureAnchorIdToDisk** and **GetAzureAnchorIdFromDisk**:
 
-
 ![Locate SaveAzure and GetAzure](../media/asa-03-section2-step1-1.png)
-2. Follow the same steps as in the [configuring the buttons to operate the scene](../../) instructions from the previous tutorial to configure the **Interactable (Script)** component on each of the two buttons:
+
+2. Follow the same steps as in the configuring the buttons to operate the scene instructions from the previous tutorial to configure the **Interactable (Script)** component on each of the two buttons:
 
 * For the **SaveAzureAnchorIdToDisk** button object, assign the **AnchorModuleScript** > **SaveAzureAnchorIdToDisk ()** function.
 * For the **GetAzureAnchorIdFromDisk** button object, assign the **AnchorModuleScript** > **GetAzureAnchorIdFromDisk ()** function.
@@ -47,9 +47,9 @@ There are many ways to transfer Azure Anchor IDs between devices. In this exampl
 
 1. In the Hierarchy window, expand the **ButtonParent** object. Locate the two buttons named **ShareAzureAnchorIdToNetwork** and **GetAzureAnchorIdFromNetwork**:
 
-
 ![ShareAzure and GetAzure"](../media/asa-03-section3-step1-1.png)
-2. Follow the same steps as in the [configuring the buttons to operate the scene](3-exercise-getting-started-with-azure-spatial-anchors.md) instructions from the previous tutorial to configure the **Interactable (Script)** component on each of the two buttons:
+
+2. Follow the same steps as in the configuring the buttons to operate the scene instructions from the previous tutorial to configure the **Interactable (Script)** component on each of the two buttons:
 
 * For the ShareAzureAnchorIdToNetwork object, assign the AnchorModuleScript > ShareAzureAnchorIdToNetwork () function.
 * For the GetAzureAnchorIdFromNetwork object, assign the AnchorModuleScript > GetAzureAnchorIdFromNetwork () function.

@@ -5,13 +5,13 @@ In this tutorial, you will explore the various steps required to start and stop 
 ## Creating and preparing the Unity project
 In this section, you will create a new Unity project and get it ready for MRTK development.
 
-First, follow the [Initializing your project and deploying your first application](../../), excluding the Build your application to your device instructions, which includes the following steps:
+First, follow the Initializing your project and deploying your first application in the learn introduction module, excluding the Build your application to your device instructions, which includes the following steps:
 
-1. [Creating the Unity project](../../) and give it a suitable name, for example, MRTK Tutorials
-2. [Switching the build platform](../../)
-3. [Importing the TextMeshPro Essential Resources](../../)
-4. [Importing the Mixed Reality Toolkit and Configuring the Unity project](../../)
-5. [Creating and configuring the scene](../../) and give the scene a suitable name, for example, AzureSpatialAnchors
+1. Creating the Unity project and give it a suitable name, for example, MRTK Tutorials
+2. Switching the build platform
+3. Importing the TextMeshPro Essential Resources
+4. Importing the Mixed Reality Toolkit and Configuring the Unity project
+5. Creating and configuring the scene and give the scene a suitable name, for example, AzureSpatialAnchors
 
 Then follow the Changing the Spatial Awareness Display Option instructions to ensure the MRTK configuration profile for your scene is DefaultHoloLens2ConfigurationProfile and change the display options for the spatial awareness mesh to Occlusion.
 
@@ -58,7 +58,7 @@ In this section, you will add scripts to the scene to create a series of button 
 * Assign the **ParentAnchor** object to the **None (Object)** field
 * From the **No Function** dropdown, select **AnchorModuleScript** > **StartAzureSession** () to set this function as the action to be executed when the event is triggered
 
-:::image type="content" source="../media/asa-02-section5-step1-2.png" alt-text="Unity with StartAzureSession button OnClick event configured" lightbox="asa-02-section5-step1-2.png":::
+![Unity with StartAzureSession button OnClick event configured](../media/asa-02-section5-step1-2.png)
 
 3. In the Hierarchy window, select the next button named **StopAzureSession**, then in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
@@ -92,7 +92,6 @@ Unity with **RemoveLocalAnchor** button **OnClick** event configured
 * Assign the **ParentAnchor** object to the **None (Object)** field
 * From the No Function dropdown, select **AnchorModuleScript** > **FindAzureAnchor** () to set this function as the action to be executed when the event is triggered
 
-:::image type="content" source="../media/asa-02-section5-step1-6.png" alt-text="Unity with FindAzureAnchor button OnClick event configured" lightbox="asa-02-section5-step1-6.png":::
 ![Unity with FindAzureAnchor button OnClick event configured](../media/asa-02-section5-step1-6.png)
 
 7. In the Hierarchy window, select the next button named **DeleteAzureAnchor**, then in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click** () event as follows:
@@ -105,7 +104,7 @@ Unity with **RemoveLocalAnchor** button **OnClick** event configured
 
 ## Connecting the scene to the Azure resource
 
-In the Hierarchy window, select the **ParentAnchor** object, then in the Inspector window, locate the **Spatial Anchor Manager** (Script) component. Configure the **Credentials** section with the credentials from the Azure Spatial Anchors account created as part of the [Prerequisites](../../) for this tutorial series:
+In the Hierarchy window, select the **ParentAnchor** object, then in the Inspector window, locate the **Spatial Anchor Manager** (Script) component. Configure the **Credentials** section with the credentials from the Azure Spatial Anchors account created as part of the Prerequisites for this tutorial series:
 
 * In the **Spatial Anchors Account ID** field, paste the **Account ID** from your Azure Spatial Anchors account
 * In the **Spatial Anchors Account Key** field, paste the primary or secondary **Access Key** from your Azure Spatial Anchors account
@@ -135,9 +134,6 @@ When the app runs on your device, follow the on-screen instructions displayed on
 9. Delete Azure Anchor
 10. Stop Azure session
 
-
-
-
 ![Unity with Instructions object selected](../media/asa-02-section7-step1-1.png)
 
 >![Caution]
@@ -151,17 +147,16 @@ In the previous sections, you learned the fundamentals of Azure Spatial Anchors.
 * Change **Scale X** to 1.1
 * Change **Scale Z** to 1.1
 
-
 ![Unity with ParentAnchor object selected, positioned, and scaled](../media/asa-02-section8-step1-1.png)
 
 2. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** > **Rover** folder, then click-and-drag the **RoverExplorer_Complete** prefab into the Hierarchy window to add it to the scene:
 
-
 ![Unity with newly added RoverExplorer Complete prefab selected](../media/asa-02-section8-step1-2.png)
+
 3. With the newly added RoverModule_Complete object still selected in the Hierarchy window, drag it onto the **ParentAnchor** object to make it a child of the ParentAnchor object:
 
-
 ![Unity with RoverExplorer_Complete object set as child of ParentAnchor](../media/asa-02-section8-step1-3.png)
+
 If you now rebuild the project and deploy the app to your device, you can now reposition the entire Rover Explorer experience by moving the resized cube.
 
 >![Tip]
