@@ -4,7 +4,8 @@
 
 1. In the Hierarchy window, right-click on the **Instructions** > **TextContent** object. Select **3D Object** > **Text - TextMeshPro** to create a TextMeshPro text object as a child of the Instructions > TextContent object:
 
-:::image type="content" source="../media/asa-04-section1-step1-1.png" alt-text="ASA feedback panel" lightbox="asa-04-section1-step1-1.png":::
+
+![ASA feedback panel](../media/asa-04-section1-step1-1.png)
 
 >![Tip]
 >To make it easier to work with your scene, set the [Scene Visibility](https://docs.unity3d.com/Manual/SceneVisibility.html) for the ParentAnchor object to off by clicking the eye icon to the left of the object. This hides the object in the Scene window without changing their in-game visibility.
@@ -20,10 +21,10 @@ Then choose font properties, so the text fits nicely within the text area, for e
 * Change the TextMeshPro - Text component's **Font Size** to 0.17.
 * Change the TextMeshPro - Text component's **Alignment** to Center and Middle.
 
-:::image type="content" source="../media/asa-04-section1-step1-2.png" alt-text="Rename the newly created text object" lightbox="asa-04-section1-step1-2.png":::
+![Rename the newly created text object](../media/asa-04-section1-step1-2.png)
 
 3. In the Hierarchy window, select the **Feedback** object still, then in the Inspector window, use the **Add Component** button to add the **Anchor Feedback Script (Script)** component and configure it as follows:
 
 * Assign the **Feedback** object itself to the **Anchor Feedback Script (Script)** component's **Feedback Text** field.
 
-:::image type="content" source="../media/asa-04-section1-step1-3.png" alt-text="Assign the components to the script" lightbox="asa-04-section1-step1-3.png":::
+![Assign the components to the script](../media/asa-04-section1-step1-3.png)
