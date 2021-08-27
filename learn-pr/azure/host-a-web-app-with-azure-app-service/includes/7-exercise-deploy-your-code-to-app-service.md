@@ -4,7 +4,7 @@ In this unit, you'll deploy your web application to App Service.
 
 ## Deploy with ZIP deploy
 
-Let's deploy our .NET application with ZIP deploy.
+Let's deploy the .NET application with ZIP deploy.
 
 First, use `dotnet publish` to build the final app files and `zip` to package them into a zip file.
 
@@ -124,7 +124,7 @@ The deployment will take a couple minutes, during which time you'll see status o
 
 ## Verify the deployment
 
-Let's browse to our application to see it live. The last line of text output from `az webapp up`, before the JSON output, has a link to your app. Click it to navigate there in a new browser tab. The page will take a moment to load, as App Service is initializing your app for the first time.
+Let's browse to your application to see it live. The last line of text output from `az webapp up`, before the JSON output, has a link to your app. Click it to navigate there in a new browser tab. The page will take a moment to load, as App Service is initializing your app for the first time.
 
 Once it loads, you'll see the greeting message from your app &mdash; you've deployed successfully!
 
