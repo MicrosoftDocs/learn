@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.develop-growth-mindset.6-strategies-change-mindset
+title: Strategies to change your mindset to a growth mindset
+metadata:
+  title: Strategies to change your mindset to a growth mindset
+  description: Strategies to change your mindset to a growth mindset.
+  ms.date: 08/27/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-strategies-change-mindset.md)]

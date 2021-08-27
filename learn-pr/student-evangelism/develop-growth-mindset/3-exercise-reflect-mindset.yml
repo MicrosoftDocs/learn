@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.develop-growth-mindset.3-exercise-reflect-mindset
+title: Unit
+metadata:
+  title: Unit
+  description: Describe unit
+  author: softchris
+  ms.author: chnoring
+  ms.date: 08/27/2021
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/3-exercise-reflect-mindset.md)]

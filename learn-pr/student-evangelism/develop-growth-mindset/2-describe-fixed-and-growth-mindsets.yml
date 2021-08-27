@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.develop-growth-mindset.2-describe-fixed-and-growth-mindsets
+title: What are fixed and growth mindsets?
+metadata:
+  title: What are fixed and growth mindsets?
+  description: What are fixed and growth mindsets?
+  ms.date: 08/27/2021
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-describe-fixed-and-growth-mindsets.md)]
