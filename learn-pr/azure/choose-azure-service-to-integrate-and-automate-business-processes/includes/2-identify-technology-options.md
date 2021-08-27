@@ -124,7 +124,7 @@ In most cases, the simple administration and more flexible coding model provided
 | Development and testing in a browser | No | Yes |
 | Pay-per-use pricing | No | Yes |
 | Integration with Logic Apps | No | Yes |
-| Package managers | NuGet if you are using the WebJobs SDK | Nuget and NPM |
+| Package managers | NuGet if you are using the WebJobs SDK | NuGet and NPM |
 | Can be part of an App Service application | Yes | Yes (hosted under App Service plan) |
 | Provides close control of `JobHost` | Yes | No |
 

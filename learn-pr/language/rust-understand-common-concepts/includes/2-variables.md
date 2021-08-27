@@ -20,7 +20,7 @@ let a_number = 10;
 > As with other programming languages, certain *keywords* like `fn` and `let` are reserved for use only by Rust. Keywords can't be used as names of functions or variables.
 
 
-Let's look at another example. The following code declares two variables. The first variable is declared and bound to a number value. The second variable is declared, but it's not bound to a value. Later in the program, the value for the second variable is bound to a word. The code calls the `println!` macro to display the variable values.
+Let's look at another example. The following code declares two variables. The first variable is declared, but not bound to a value. The second variable is declared and bound to the string "Ten." Later in the program, the value for the first variable is bound to the value 10. The code calls the `println!` macro to display the variable values.
 
 ```rust
 // Declare a variable
@@ -86,7 +86,7 @@ This code compiles without errors because the variable `a_number` can now be mut
 
 You can declare a new variable that uses the same name of an existing variable. The new declaration creates a new binding. In Rust, this operation is called "shadowing" because the new variable shadows the previous variable. The old variable still exists, but you can't refer to it in this scope anymore.
 
-The following code demonstrates the use of shadowing. We declare a variable named `shadow_num`. We don't define the variable as mutable because each `let` operation creates a new variable named `number` while shadowing the previous variable binding.
+The following code demonstrates the use of shadowing. We declare a variable named `shadow_num`. We don't define the variable as mutable because each `let` operation creates a new variable named `shadow_num` while shadowing the previous variable binding.
 
 ```rust
 // Declare first variable binding with name "shadow_num"
