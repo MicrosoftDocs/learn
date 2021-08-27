@@ -43,7 +43,7 @@ During the process, you'll:
 
 1. Between the **Validate** and **Deploy** stages, add the following definition for the **Preview** stage:
 
-   :::code language="yaml" source="code/7-pipeline.yml" range="34-48" :::
+   :::code language="yaml" source="code/7-pipeline.yml" range="35-49" :::
 
 ## Update the pipeline definition to require an environment and approval
 
@@ -51,7 +51,7 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
 1. Update the **Deploy** stage definition to the following:
 
-   :::code language="yaml" source="code/7-pipeline.yml" range="50-71" :::
+   :::code language="yaml" source="code/7-pipeline.yml" range="51-72" :::
 
    > [!NOTE]
    > Notice that you define a new `checkout` step. Unlike normal jobs, deployment jobs need to be configured to check out (download) the files from your Git repository. If you don't do this, the deployment job won't be able to read your Bicep file.
@@ -62,7 +62,7 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
 1. Verify that your *azure-pipelines.yml* file looks like the following:
 
-   :::code language="yaml" source="code/7-pipeline.yml" highlight="34-48, 52-71" :::
+   :::code language="yaml" source="code/7-pipeline.yml" highlight="35-49, 53-72" :::
 
    If it doesn't, update it to match this example, then save it.
 

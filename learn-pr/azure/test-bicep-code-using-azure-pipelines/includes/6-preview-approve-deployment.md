@@ -27,7 +27,7 @@ In Azure Pipelines, you can create a resource called an *environment*. Environme
 
 You use *jobs* to define a sequence of steps within a pipeline stage. When you use environments, you use a special kind of job called a *deployment job*. A deployment job is similar to a normal job, but it provides some extra functionality, including defining the environment that the deployment job uses:
 
-:::code language="yaml" source="code/6-environment.yml" highlight="18-32" :::
+:::code language="yaml" source="code/6-environment.yml" highlight="18-33" :::
 
 Notice that in the YAML definition for a deployment job, there are some key differences from a normal job:
 
