@@ -51,7 +51,7 @@ In this exercise, you'll create an Azure Cosmos DB  database, and container usin
 
     ![Bash Shell and Code Editor.](../media/5-azure-cosmos-db-new-shell-editor-csharp.png)
 
-1. Click *myApp.csproj* in the Explorer pane to open the file in the code editor.
+1. Select *myApp.csproj* in the Explorer pane to open the file in the code editor.
 
     1. Add a new `<PropertyGroup>` XML element to the project configuration within the Project element. To do so, locate the existing `<PropertyGroup>` element, and add the following lines beneath it:
 
@@ -837,7 +837,7 @@ Container Id:   Clothing
     }
     ```
 
-1. Finally, create the `Clothing` container with the `cosmosdb collection create` command in the Cloud Shell, where you will specify your partition key and throughput values:
+1. Finally, create the `Clothing` container with the `cosmosdb sql container create` command in the Cloud Shell, where you will specify your partition key and throughput values:
 
     ```azurecli
     az cosmosdb sql container create \
