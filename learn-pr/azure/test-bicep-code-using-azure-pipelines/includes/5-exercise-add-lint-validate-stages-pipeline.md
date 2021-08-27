@@ -62,9 +62,9 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 1. In your browser, navigate to your pipeline.
 
-1. Select the last run of your pipeline.
+1. Select the most recent run of your pipeline.
 
-   Notice that the pipeline run now shows the three stages you defined in the YAML file. Also notice that the **Lint** stage has failed. (TODO)
+   Notice that the pipeline run now shows the three stages you defined in the YAML file. Also notice that the **Lint** stage has failed.
 
 1. Select the **Lint** stage to see its details.
 
@@ -102,13 +102,13 @@ By default, the Bicep linter provides a warning when it detects a problem with y
 
 1. Select the most recent run of your pipeline.
 
-   Notice that the **Lint** stage completed successfully, but now the **Validate** stage has failed. (TODO)
+   Notice that the **Lint** stage completed successfully, but now the **Validate** stage has failed.
 
 1. Select the **Validate** stage to see its details.
 
 1. Select the **Run preflight validation** step to view the pipeline log.
 
-   Notice that the error displayed includes the following:
+   Notice that the error displayed includes the following message:
 
    > mystorageresourceNameSuffix is not a valid storage account name. Storage account name must be between 3 and 24 characters in length and use numbers and lower-case letters only.
 

@@ -19,7 +19,7 @@ During the process, you'll:
    Don't enter a description. For the **Resource**, select **None**.
 
    > [!NOTE]
-   > TODO explain what the other resource types mean
+   > In Azure Pipelines, environments are used to enable a number of deployment features. These only apply when you're deploying to Kubernetes or to virtual machines. In this module, we don't use these features and you can ignore them.
 
 1. Select **Create**.
 
@@ -27,11 +27,7 @@ During the process, you'll:
 
 1. Near the top-right of the page, select the button with three dots and select **Approvals and checks** from the popup menu.
 
-   :::image type="content" source="../media/6-three-dots.png" alt-text="Screenshot of the Azure DevOps interface, Environments detail screen, with the three dots button and Approvals and checks menu item highlighted." border="false":::
-
 1. Select **Approvals**.
-
-   :::image type="content" source="../media/6-approvals-and-checks.png" alt-text="Screenshot of the Azure DevOps interface, Approvals and checks screen, with the Approvals option highlighted." border="false":::
 
 1. Select yourself in the **Approvers** textbox.
 
@@ -39,11 +35,7 @@ During the process, you'll:
 
    Notice that, by default, approvers are allowed to approve the runs they've triggered. Leave this checkbox selected.
 
-   :::image type="content" source="../media/6-Approvals.png" alt-text="Screenshot of the Azure DevOps interface, Approvals flyout, with the Approvers textbox, the Advanced dropdown and the Allow approvers to approve their own runs checkbox highlighted." border="false":::
-
 1. Select **Create**.
-
-   :::image type="content" source="../media/6-Approval-create.png" alt-text="Screenshot of the Azure DevOps interface, Approvers flyout, with the Create button highlighted." border="false":::
 
 ## Update the pipeline definition to add a preview stage
 
@@ -62,7 +54,7 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
    :::code language="yaml" source="code/7-pipeline.yml" range="50-71" :::
 
    > [!NOTE]
-   > TODO note the checkout step
+   > Notice that you define a new `checkout` step. Unlike normal jobs, deployment jobs need to be configured to check out (download) the files from your Git repository. If you don't do this, the deployment job won't be able to read your Bicep file.
 
 1. Save the file.
 
@@ -92,15 +84,9 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
 
 1. Notice that pipeline prompts yu to approve the pipeline. You also receive an email informing you that the pipeline needs your approval.
 
-   :::image type="content" source="../media/4-approve.png" alt-text="Screenshot of the Azure DevOps interface, Pipeline run screen, with the halted Deploy stage and the Review message highlighted." border="false":::
-
 1. Select the **Preview** stage.
 
-   :::image type="content" source="../media/4-what-if.png" alt-text="Screenshot of the Azure DevOps interface, Pipeline run screen, with the WhatIf stage highlighted." border="false":::
-
 1. Select the **Run what-if** step to inspect the changes that the what-if command reports on.
-
-   :::image type="content" source="../media/4-what-if-checks.png" alt-text="Screenshot of the Azure DevOps interface, Pipeline run details screen, with the Run what-if checks section highlighted." border="false":::
 
 1. Notice that the pipeline log provides the following what-if results:
 
@@ -125,30 +111,22 @@ Here, you configure the **Deploy** stage to run against the **Website** environm
    Resource changes: 1 to modify, 3 no change.   
    ```
 
-   TODO explanation of what these mean
+   The what-if operation has detected a change to the website resource. However, the changes it's detected are called *noise*. They don't represent real changes to your resource. Over time, the Azure team works to reduce the noise. In the meantime, for these two specific properties, you can ignore the detected changes.
 
 ## Approve the pipeline run
 
 1. Select the left arrow to return to the pipeline run details.
 
-   :::image type="content" source="../media/4-run-details.png" alt-text="Screenshot of the Azure DevOps interface, Pipeline run output screen, with the run details link highlighted." border="false":::
-
 1. Select the **Review** button.
-
-   :::image type="content" source="../media/4-review.png" alt-text="Screenshot of the Azure DevOps interface, Pipeline run details screen, with the Review button highlighted." border="false":::
 
 1. In the **Comment** field, enter *Reviewed what-if results*.
 
 1. Select **Approve**.
-
-   :::image type="content" source="../media/4-approve.png" alt-text="Screenshot of the Azure DevOps interface, Approval flyout, with the Approve button highlighted." border="false":::
 
 ## Observe the successful deployment
 
 1. After you've approved the pipeline run, notice the **Deploy** stage starts execution.
 
    Wait for the stage to complete.
-
-   :::image type="content" source="../media/4-deploy.png" alt-text="Screenshot of the Azure DevOps interface, Pipeline run details screen, with the running Deploy stage highlighted." border="false":::
 
 1. Notice that the pipeline run completes successfully.

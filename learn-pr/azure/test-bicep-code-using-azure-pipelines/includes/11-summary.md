@@ -4,9 +4,7 @@ In this module, you learned how to add validation and tests to your Bicep deploy
 
 Now, you can be more confident that your automated deployments will succeed and that they won't cause issues for your environments.
 
-<!-- TODO
+## References
 
-/azure/devops/pipelines/process/approvals#query-azure-monitor-alerts
-/azure/devops/repos/git/branch-policies
-
--->
+- [Pipeline approvals](/azure/devops/pipelines/process/approvals)
+- [Branch policies](/azure/devops/repos/git/branch-policies)

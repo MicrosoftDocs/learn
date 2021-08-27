@@ -41,7 +41,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template:
 
 ### Update the pipeline settings
 
-TODO explain
+The project created by the template needs a couple of changes so that your pipeline runs correctly.
 
 1. In the left menu, select **Pipelines**.
 
@@ -64,8 +64,6 @@ TODO explain
 1. Select **Save**.
 
 ## Generate a Git password (macOS)
-
-<!-- TODO can we simplify this section? Maybe fold into the 'If you're using macOS' thing below? -->
 
 When you work with Azure Repos in Visual Studio Code on macOS, you use a special password that's different from the password you use to sign in.
 
