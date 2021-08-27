@@ -6,20 +6,20 @@ In this tutorial, you will learn how to save Azure Spatial Anchors across multip
 
 1. In the Hierarchy window, expand the **ButtonParent** object. Select the last four child button objects. In the Inspector window, check the checkbox next to the name field to make all the objects active.
 
-:::image type="content" source="../media/asa-03-section1-step1-1.png" alt-text="Activating Objects" lightbox="asa-03-section1-step1-1.png":::
 
+![Activating Objects](../media/asa-03-section1-step1-1.png)
 2. In the Hierarchy window, select the **ButtonParent** objects. Then in the Inspector window, locate the **GridObjectCollection** component and click the **Update Collection** button to update the position of all the ButtonParent object's child objects.
 
-:::image type="content" source="../media/asa-03-section1-step1-2.png" alt-text="update position of ButtonParent" lightbox="asa-03-section1-step1-2.png":::
 
+![update position of ButtonParent](../media/asa-03-section1-step1-2.png)
 ## Persisting Azure Spatial Anchors between app sessions
 
 In this section, you will learn how to save and retrieve the Azure Anchor ID to and from the HoloLens' local disk. This will allow you to query Azure for the same anchor ID between different app sessions. It will enable the anchored holograms to be positioned at the same location as in the previous app session.
 
 1. In the Hierarchy window, expand the **ButtonParent** object and locate the two buttons named **SaveAzureAnchorIdToDisk** and **GetAzureAnchorIdFromDisk**:
 
-:::image type="content" source="../media/asa-03-section2-step1-1.png" alt-text="Locate SaveAzure and GetAzure" lightbox="asa-03-section2-step1-1.png":::
 
+![Locate SaveAzure and GetAzure](../media/asa-03-section2-step1-1.png)
 2. Follow the same steps as in the [configuring the buttons to operate the scene](../../) instructions from the previous tutorial to configure the **Interactable (Script)** component on each of the two buttons:
 
 * For the **SaveAzureAnchorIdToDisk** button object, assign the **AnchorModuleScript** > **SaveAzureAnchorIdToDisk ()** function.
@@ -47,8 +47,8 @@ There are many ways to transfer Azure Anchor IDs between devices. In this exampl
 
 1. In the Hierarchy window, expand the **ButtonParent** object. Locate the two buttons named **ShareAzureAnchorIdToNetwork** and **GetAzureAnchorIdFromNetwork**:
 
-:::image type="content" source="../media/asa-03-section3-step1-1.png" alt-text="ShareAzure and GetAzure" lightbox="asa-03-section3-step1-1.png":::
 
+![ShareAzure and GetAzure"](../media/asa-03-section3-step1-1.png)
 2. Follow the same steps as in the [configuring the buttons to operate the scene](3-exercise-getting-started-with-azure-spatial-anchors.md) instructions from the previous tutorial to configure the **Interactable (Script)** component on each of the two buttons:
 
 * For the ShareAzureAnchorIdToNetwork object, assign the AnchorModuleScript > ShareAzureAnchorIdToNetwork () function.
