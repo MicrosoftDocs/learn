@@ -72,7 +72,7 @@ On your RDP session, you need to disable Enhanced Security Configuration in Inte
 
 1. Select the **Social** database, and then select **Add**.
 
-1. The assessment now shows the database you've selected. To begin the assessment, in the upper right taskbar, select **Start Assessment**.
+1. The assessment now shows the database you've selected. To begin the assessment, select **Start Assessment**.
 
     :::image type="content" source="../media/4-06-select-sources.png" alt-text="Screenshot of select sources." loc-scope="azure-database-migration" lightbox="../media/4-06-select-sources.png":::
 
